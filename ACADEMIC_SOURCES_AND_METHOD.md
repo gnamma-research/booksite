@@ -2,7 +2,7 @@
 
 ## What this edition is, and what it is not
 
-The bilingual part of this release contains **103 independently prepared, non-consecutive translated excerpt cards**, of which **14 are newly translated complete consecutive Arabic paragraphs** from the preface and initial architecture of al-Ghazālī’s treatise (OpenITI digital witness V01P003–V01P007). Other cards are shorter previously prepared selections, with overlapping loci. **There is no complete English translation of al-Mustaṣfā or a complete critical Arabic edition in this release**. The new 14 paragraphs have been compared with the identified Arabic digital witness, but **not systematically collated against a print edition, manuscript, or Hammad's page-by-page English**. The complete Arabic is offered as a separately labelled digital reading witness, not as editorially established text.
+The bilingual part of this release contains **103 independently prepared, non-consecutive translated excerpt cards**, of which **14 are newly translated intact Arabic source-paragraph units (selected in page order, but not a gapless continuous run)** from the preface and initial architecture of al-Ghazālī’s treatise (OpenITI digital witness V01P003–V01P007). Other cards are shorter previously prepared selections, with overlapping loci. **There is no complete English translation of al-Mustaṣfā or a complete critical Arabic edition in this release**. The new 14 paragraphs have been compared with the identified Arabic digital witness, but **not systematically collated against a print edition, manuscript, or Hammad's page-by-page English**. The complete Arabic is offered as a separately labelled digital reading witness, not as editorially established text.
 
 ## Basis and hierarchy
 
