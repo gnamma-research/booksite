@@ -1004,6 +1004,7 @@ body.header-collapsed #restoreHeader[hidden]{display:none!important}
 #readingControls .reader-action-menu>summary{list-style:none;cursor:pointer}
 #readingControls .reader-action-menu>summary::-webkit-details-marker{display:none}
 #readingControls .reader-action-menu[open]>summary{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
+#readingControls #readerActionMenu:not([open]) .reader-action-menu-pop{display:none!important}
 #readingControls .reader-action-menu-pop{position:absolute;right:0;top:calc(100% + 10px);width:214px;max-width:calc(100vw - 22px);z-index:80;border:1px solid var(--border);border-radius:12px;background:var(--surface);box-shadow:0 12px 38px rgba(0,0,0,.17);padding:6px;display:grid;gap:2px;color:var(--text);text-align:left}
 #readingControls .reader-action-menu-pop button{display:flex;gap:12px;align-items:center;width:100%;min-height:43px;text-align:left;font:500 13px/1.25 var(--sans);background:transparent;border:0;border-radius:7px;color:var(--text);padding:9px 12px;cursor:pointer}
 #readingControls .reader-action-menu-pop button:hover,#readingControls .reader-action-menu-pop button:focus-visible{background:var(--accent-soft);color:var(--accent);outline-offset:0}
