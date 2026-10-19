@@ -1,3 +1,17 @@
+<div align="center">
+  <img src="assets/gnamma-mark.svg" alt="Gnamma — natural rock hollow holding water" width="94" />
+
+  # gnamma
+
+  **Research · Texts · Essays**
+
+  [Explore the library](https://gnamma-research.github.io/booksite/) · [About Gnamma](https://gnamma-research.github.io/booksite/about/) · [Browse the texts](https://gnamma-research.github.io/booksite/texts/)
+</div>
+
+Gnamma takes its name from a natural hollow in rock where water collects. It is a place of encounter: between texts and their contexts, between traditions, and between scholarly interpretation and the world to which it speaks. The project develops connected reading spaces that make sources, concepts, translations, and their wider relationships available for careful investigation.
+
+---
+
 # Gnamma Research · multi-book scholarly library
 
 This is the **library repository**, not the al-Mustaṣfā-only project.
