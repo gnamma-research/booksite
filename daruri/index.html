@@ -833,6 +833,14 @@ body.focus-mode #readingControls:not([hidden]){display:block!important}
 .reader .meta-row{gap:6px 12px}
 @media(max-width:590px){.reader .reader-heading{margin-bottom:12px}.reader .reader-heading .hero{padding-bottom:10px}}
 </style>
+<style id="gnamma-reader-header-control-20261019">
+/* Header control stays in the compact reader toolbar even when the masthead is hidden. */
+body.header-collapsed #readingControls:not([hidden]){display:flex!important;top:0!important}
+#headerToolbar[aria-pressed="true"]{color:var(--accent)}
+#headerToolbar svg,#restoreHeader svg{flex-shrink:0}
+#restoreHeader svg{width:17px;height:17px}
+@media(max-width:360px){#headerToolbar{width:34px;flex-basis:34px;min-width:34px}#readingControls .reading-controls-inner{gap:2px}}
+</style>
 <style id="gnamma-single-column-share-20261019">
 /* Retired context panel: one uncluttered reading canvas, with optional contents at left. */
 #contextRail,#contextToolbar,#rightPanelButton,#contextShade,[data-side-toggle="right"],.fb-context-panel,.fb-context-mobile,.fb-context-desktop{display:none!important}
@@ -1325,7 +1333,7 @@ Contents I · Source headings
 </div>
 </div>
 </header>
-<div aria-label="Reader controls" class="reading-controls" hidden="" id="readingControls"><div class="reading-controls-inner"><div aria-label="Visible languages" class="persistent-languages" id="persistentLanguages" role="group"></div><button aria-label="Hide Arabic vowel marks" title="Arabic vowel marks" aria-pressed="true" data-vowel-toggle="" id="quickVowels" class="compact-reader-control" type="button"><span aria-hidden="true" class="vowel-glyph" lang="ar" dir="rtl">حَ</span></button><button id="apparatusToolbar" class="compact-reader-control" type="button" data-open-apparatus aria-haspopup="dialog" aria-controls="apparatusOverlay" aria-label="Choose reading apparatus" title="Reading apparatus"><svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg></button><button id="focusToolbar" class="compact-reader-control" type="button" data-focus-toggle aria-pressed="false" aria-label="Enter focus mode" title="Focus on the text"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 3H4v5M15 3h5v5M4 16v5h5M20 16v5h-5"/></svg></button></div></div>
+<div aria-label="Reader controls" class="reading-controls" hidden="" id="readingControls"><div class="reading-controls-inner"><div aria-label="Visible languages" class="persistent-languages" id="persistentLanguages" role="group"></div><button aria-label="Hide Arabic vowel marks" title="Arabic vowel marks" aria-pressed="true" data-vowel-toggle="" id="quickVowels" class="compact-reader-control" type="button"><span aria-hidden="true" class="vowel-glyph" lang="ar" dir="rtl">حَ</span></button><button id="focusToolbar" class="compact-reader-control" type="button" data-focus-toggle aria-pressed="false" aria-label="Enter focus mode" title="Focus on the text"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 3H4v5M15 3h5v5M4 16v5h5M20 16v5h-5"/></svg></button><button id="headerToolbar" class="compact-reader-control" type="button" data-header-toggle aria-pressed="true" aria-label="Hide top header" title="Hide top header"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></button><button id="apparatusToolbar" class="compact-reader-control" type="button" data-open-apparatus aria-haspopup="dialog" aria-controls="apparatusOverlay" aria-label="Choose reading apparatus" title="Reading apparatus"><svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg></button></div></div>
 <div class="page-shell" id="shell">
 <div class="drawer-shade" hidden="" id="drawerShade"></div>
 <aside aria-label="Reader navigation" class="left-nav" id="leftNav">
@@ -1372,10 +1380,9 @@ Contents I · Source headings
 <label class="toggle-row"><span>Concepts <small>Subject tags and related concepts.</small></span><input checked="" data-apparatus="concepts" type="checkbox"/></label>
 <label class="toggle-row"><span>Reading notes <small>Critical footnotes, scholarly notes and their anchored references.</small></span><input checked="" data-apparatus="notes" type="checkbox"/></label>
 <label class="toggle-row"><span>Bidāya applications <small>Illustrative fiqh cases below the text.</small></span><input checked="" data-apparatus="applications" type="checkbox"/></label>
-<label class="toggle-row"><span>Top header <small>Hide the title header; the floating Display button remains available.</small></span><input checked="" data-apparatus="header" type="checkbox"/></label>
 <label class="toggle-row"><span>Left contents panel</span><input checked="" data-apparatus="left" type="checkbox"/></label>
 
-</fieldset><p class="fineprint">Select which annotations and reference panels appear alongside the text.</p></div></div>
+</fieldset><p class="fineprint">Choose the scholarly annotations that appear while reading. Header visibility is controlled from the reader toolbar.</p></div></div>
 <div class="overlay" hidden="" id="settingsOverlay" role="presentation">
 <div aria-labelledby="settingsTitle" aria-modal="true" class="settings-dialog" role="dialog">
 <div class="detail-top"><h2 id="settingsTitle">Type &amp; appearance</h2><button aria-label="Close preferences" class="icon-btn" id="settingsClose" type="button"><svg class="icon"><use href="#i-close"></use></svg></button></div>
@@ -1387,7 +1394,7 @@ Contents I · Source headings
 <p class="fineprint">Reading preferences and bookmarks are stored locally in your browser.</p>
 </div>
 </div>
-<button aria-label="Restore top header and exit focus mode" hidden="" id="restoreHeader" title="Restore header" type="button"><svg aria-hidden="true" class="icon"><use href="#i-sliders"></use></svg> Show header</button>
+<button aria-label="Restore top header and exit focus mode" hidden="" id="restoreHeader" title="Restore header" type="button"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg> Show header</button>
 <div class="overlay" id="shareOverlay" role="presentation" hidden><div class="settings-dialog share-dialog" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
  <div class="detail-top"><h2 id="shareTitle">Share a passage</h2><button type="button" class="icon-btn" id="shareClose" aria-label="Close share options"><svg class="icon"><use href="#i-close"></use></svg></button></div>
  <p class="fineprint">Share a direct link to this section, with the heading or text you choose.</p>
@@ -1884,6 +1891,8 @@ function syncReadingChrome() {
   const contextControl=$('#contextToolbar');if(contextControl){contextControl.setAttribute('aria-pressed',String(state.rightVisible));contextControl.classList.toggle('active',state.rightVisible);}
   const focus=$('#focusToolbar');
   if(focus){focus.setAttribute('aria-pressed',String(state.focusMode));focus.setAttribute('aria-label',state.focusMode?'Exit focus mode':'Enter focus mode');focus.title=focus.getAttribute('aria-label');focus.classList.toggle('active',state.focusMode);}
+  const headerControl=$('#headerToolbar');
+  if(headerControl){headerControl.setAttribute('aria-pressed',String(state.showHeader));headerControl.setAttribute('aria-label',state.showHeader?'Hide top header':'Show top header');headerControl.title=headerControl.getAttribute('aria-label');headerControl.classList.toggle('active',state.showHeader);}
   const section = sections.get(state.n);
   const currentIndex = sectionOrder.indexOf(state.n);
   const part = partFor(section);
@@ -2175,6 +2184,7 @@ function bindReaderEnhancements() {
     if(el.dataset.sideToggle){e.preventDefault();toggleSide(el.dataset.sideToggle);return}
     if(el.dataset.palette){e.preventDefault();selectPalette(el.dataset.palette);return}
     if(el.hasAttribute('data-focus-toggle')){e.preventDefault();toggleFocus();return}
+    if(el.hasAttribute('data-header-toggle')){e.preventDefault();setVisibility('header',!state.showHeader);syncReadingChrome();return}
     if(el.dataset.searchMatchStep){e.preventDefault();goHighlight(Number(el.dataset.searchMatchStep));return}
     if(el.hasAttribute('data-clear-search')){e.preventDefault();clearSearchHighlight();return}
     if(el.hasAttribute('data-open-jump')){e.preventDefault();openJump();}
