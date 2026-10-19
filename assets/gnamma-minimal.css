@@ -106,3 +106,13 @@ body.gn-ambient .gn-iconnav a:focus .gn-tooltip{opacity:1}
 .gn-index-screen .gn-index-row{grid-template-columns:32px minmax(0,1fr)!important}
 .gn-index-screen .gn-index-arrow{display:none!important}
 @media(max-width:680px){.gn-index-screen .gn-index-row{grid-template-columns:22px minmax(0,1fr)!important}}
+
+/* A quiet, visible section title inside the small collection panel. */
+.gn-index-screen .gn-index-panel .gn-index-title{
+  font:400 clamp(19px,2.1vw,24px)/1.22 Georgia,"Iowan Old Style","Palatino Linotype",serif;
+  letter-spacing:.008em;color:#443329;
+  padding:2px 3px 12px;margin:0 0 1px;
+}
+@media(max-width:680px){
+  .gn-index-screen .gn-index-panel .gn-index-title{font-size:20px;padding:2px 3px 10px}
+}
