@@ -1638,6 +1638,13 @@ function formatVisibleMatn(n){
 function copyVisibleMatn(n){const value=formatVisibleMatn(n);if(value)copyText(value);}
 function cite(n){const s=sections.get(String(n));if(!s)return;copyText(`Ibn Rushd, al-Ḍarūrī fī uṣūl al-fiqh, ${sectionRef(n)}, printed Arabic ed. ${origPage(s)} (ed. Jamāl al-Dīn al-ʿAlawī, 1994); English translation in the Uṣūl–Law–Rushd bilingual study edition (2026).`)}
 let shareSectionId=null,shareSelectionText='';
+let shareSelectionCache={section:null,text:''};
+document.addEventListener('selectionchange',()=>{
+ const selection=window.getSelection(),anchor=selection?.anchorNode;
+ if(!anchor||!document.querySelector('#reader .parallel-text')?.contains(anchor))return;
+ const chosen=String(selection).trim();
+ if(chosen)shareSelectionCache={section:String(state.n),text:chosen};
+});
 function sectionPermalink(n){return location.href.split('#')[0]+'#section='+encodeURIComponent(n);}
 function shareMode(){return document.querySelector('input[name="shareMode"]:checked')?.value||'editorial';}
 function shareMessage(n,mode,withLink){
@@ -1668,7 +1675,7 @@ function share(n){
  shareSectionId=String(n);
  const selection=window.getSelection();
  const start=selection?.anchorNode;
- shareSelectionText=start&&document.querySelector('#reader .parallel-text')?.contains(start)?String(selection).trim():'';
+ shareSelectionText=(start&&document.querySelector('#reader .parallel-text')?.contains(start)?String(selection).trim():'')||(shareSelectionCache.section===String(n)?shareSelectionCache.text:'');
  const originalOption=$('#shareOriginalOption'), selectionOption=$('#shareSelectionOption');
  if(originalOption){originalOption.hidden=!sec.headingAr;const i=originalOption.querySelector('input');if(i)i.disabled=!sec.headingAr;}
  if(selectionOption){selectionOption.hidden=!shareSelectionText;const i=selectionOption.querySelector('input');if(i)i.disabled=!shareSelectionText;}
