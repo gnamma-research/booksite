@@ -49,3 +49,11 @@ Branch: master
 - Static checks passed for both inline JS programs on master (V8 compilation) and verified source structure: 259 reader records; 47 original Arabic headings with English translations; dictionary view tabs, mobile grid, and sorted index code present.
 - This is NOT evidence of an end-to-end iPhone browser test. Test reader §102 (three language modes, vowel on/off, header E, copy, focus/sharing); dictionary tabs, search, native select sizing and exact back-to-reading; alphabetic index/jump; theme propagation; PDF link; and no-JavaScript fallback before definitive sign-off.
 - Before applying later Darūrī 2 content, inspect current master and make content-only diffs; avoid overwriting these interface updates.
+
+
+## Header switch revision · 19 October 2026
+- The compact reader toolbar order is **Arabic / English / parallel → حَ/ح → Focus → Header → Reading apparatus (book icon)**.
+- Header is a direct, reversible switch using a recognizable **panel-with-top-header** glyph. It is **not** an option within the Reading apparatus dialog; retain technical terms, concepts, notes, applications and left contents there.
+- When the header is hidden, the compact reader toolbar remains accessible at the top, with the header button indicating its current on/off state. A floating **Show header** recovery control uses the same header glyph instead of a settings gear, and can also exit Focus mode.
+- Keep the separate appearance/preferences screen and no-JavaScript fallback intact. Do not add the retired right context sidebar.
+- The Darūrī 2 editorial content-only updates must preserve these controls, event handlers and CSS.
