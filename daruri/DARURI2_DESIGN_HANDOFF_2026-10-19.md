@@ -7,7 +7,7 @@ Reader: https://gnamma-research.github.io/booksite/daruri/
 Dictionary: https://gnamma-research.github.io/booksite/daruri/dictionary.html
 
 ## Currently adopted presentation and behaviour
-- Compact on-page reading toolbar: Arabic-only `ع`, English-only `EN`, bilingual `ع/EN`, vowel toggle `حَ/ح`, apparatus button and reversible focus mode. The right-hand context pane and every control that opened it have been removed. Duplicate options should not be reintroduced in display settings.
+- Compact reading toolbar: independent `ع` and `EN` switches (both selected displays both; at least one stays selected), Focus, Save / Copy / Share, Header, and Apparatus. Tashkīl appears only inside the apparatus dialog. The retired right-hand context pane and its controls are not reinstated.
 - Editorial English heading `(E)` sits next to the original Arabic rubric (when present); in English/bilingual view the original rubric's **English translation** also appears. Arabic-only view shows the original Arabic rubric (with the source's original part/section wording where present), without fabricated editorial Arabic.
 - Integrated top heading + part/section and compact page references. Do not display “aligned passage” counts, repeat the title in a large location banner, or include a redundant Browse button.
 - Tap `(E)` for the editorial/source legend. The page references currently retained in `origPage(s)` are from **al-ʿAlawī (1994)**; the comparative Arabic text draws on **Bou Akl (2015)**. A rigorous Bou Akl page-by-page crosswalk is needed before relabelling the former as Bou Akl pagination. `PDF` links refer to Gnamma's 170-page bilingual translation.
