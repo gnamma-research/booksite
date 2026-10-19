@@ -1,6 +1,6 @@
 # Gnamma · al-Mustaṣfā, scholarly working reader v0.5
 
-This release provides a **mobile-responsive searchable full Arabic reading witness**, alongside **103 independent English selected passage cards** (with overlapping excerpts). The newly extended **14 paragraph-length, sequentially collated translations** cover portions of the opening preface and introduction. **This is NOT the complete English translation.** English coverage must never be inferred from the Arabic page count.
+This release provides a **mobile-responsive searchable full Arabic reading witness**, alongside **103 independent English selected passage cards** (with overlapping excerpts). The newly extended **14 intact source-paragraph translation units, sampled in source order with some gaps between them** cover portions of the opening preface and introduction. **This is NOT the complete English translation.** English coverage must never be inferred from the Arabic page count.
 
 ## Use on your phone
 
