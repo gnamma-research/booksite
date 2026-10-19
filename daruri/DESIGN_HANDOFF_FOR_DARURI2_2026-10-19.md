@@ -86,3 +86,18 @@ Implementation commits for this revision: `7124acff` (grouped controls), `32e42f
 
 **Validation limitation:** structural checks and JavaScript syntax checks were performed, but independent iPhone Safari interaction and layout regression testing remains necessary. Do not describe that testing as completed.
 
+
+## 19 October 2026 — Integrated headings, copy and dictionary update
+
+This section preserves the latest reader/dictionary fixes and **supersedes any older descriptions** of those elements. Apply scholarly revisions to content data only; preserve these features intact:
+
+- **Original headings:** The editorial English title has a clickable (E) key. The original printed Arabic heading, when available, and its existing English translation are shown alongside the editorial title, rather than as another full-width heading. The Arabic-only setting displays the original Arabic rubric and any part/order words actually printed there. Do not invent Arabic text for editorial-only titles.
+- **Copy:** The Section actions → Copy text action copies the **complete matn in all currently visible languages**, with editorial title (E) only in English/parallel modes, original Arabic/English rubric as appropriate, section number, accurately attributed source page and the translation PDF page. It excludes apparatus and editor-only alignment metadata.
+- **Arabic page authority:** The reader knows six independently checked Bou Akl (2015) Arabic page correspondences: reader §§2→118, 3→120, 20→132, 21→132, 203→284 and 218→294. These show `Bou Akl ’15`. **All other Arabic pages are labelled al-ʿAlawī ’94**, not falsely relabelled Bou Akl; add 2015 locators only from a separately verified crosswalk. `PDF` indicates the Gnamma 170-page bilingual translation, not either printed Arabic edition.
+- **Technical terms:** The left-menu entry is a single **Dictionary · معجم**, with Quick definitions and Historical dictionary linked as complementary views. In the historical dictionary, the source/explanation/occurrences tabs remain; the headword browser uses a responsive two-column-or-more grid on mobile, with an explicit Show all button instead of a horizontally draggable or clipped strip. The source-author dropdown has iOS-friendly 16px font and sufficient height.
+- **Concept index:** All 302 main entries sort alphabetically for display. A source-to-index verification of the 947 section concept links on current master found all 947 had a matching canonical subtopic in the correct section; preserve this mapping and the target-focus navigation.
+- **Apparatus navigation:** Do not add a Contents panel checkbox to Reading apparatus. Contents is opened by the top-left navigation button; the right-hand contextual sheet is separately toggled beside Focus.
+- **No jargon:** Do not display “aligned passage(s)” in the public reader. Editors may retain alignment metadata internally.
+- **Design validation:** JavaScript and JSON script blocks passed compilation/parsing checks on the committed reader and dictionary; **this does not establish iPhone Safari end-to-end testing or confirm CDN propagation**.
+
+Relevant commits: `3b3a692f` (remove redundant Contents option), `44edcaf8` (heading/page/copy), `0af2ac1c` (dictionary browser). The master branch may contain later improvements; always merge onto its current tree.
