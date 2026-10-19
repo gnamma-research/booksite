@@ -1,0 +1,27 @@
+{
+  "edition": "0.8",
+  "source_witness": "OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1",
+  "coverage_pages": [
+    "V00P000",
+    "V01P003",
+    "V01P004",
+    "V01P005",
+    "V01P006",
+    "V01P007",
+    "V01P008",
+    "V01P009",
+    "V01P010",
+    "V01P011",
+    "V01P012",
+    "V01P013",
+    "V01P014",
+    "V01P015",
+    "V01P016",
+    "V01P017"
+  ],
+  "aligned_paragraphs": 105,
+  "complete_english": false,
+  "english_rights": "Gnamma working translation",
+  "arabic_witness": "Shared Arabic digital file elsewhere in booksite",
+  "method": "source-paragraph aligned; boundary ellipses preserve continuations"
+}
