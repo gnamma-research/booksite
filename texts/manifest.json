@@ -39,9 +39,9 @@
         "uṣūl al-fiqh",
         "logic"
       ],
-      "status": "migration-pending",
-      "url": null,
-      "note": "A separate working translation exists; not yet imported into this repository"
+      "status": "selected-source-excerpts-preview",
+      "url": "texts/ibn-rushd/al-daruri/",
+      "note": "A separate working translation exists; not yet imported into this repository. A limited scholarly reader preview is now available; source corpus still awaits import."
     },
     {
       "id": "ibn-rushd-bidaya",
@@ -54,9 +54,9 @@
         "fiqh",
         "comparative law"
       ],
-      "status": "migration-pending",
-      "url": null,
-      "note": "Representative fiqh analysis underway elsewhere; public reader not imported"
+      "status": "research-preview",
+      "url": "texts/ibn-rushd/bidayat-al-mujtahid/",
+      "note": "Representative fiqh analysis underway elsewhere; public reader not imported. A limited scholarly reader preview is now available; source corpus still awaits import."
     },
     {
       "id": "ibn-ajiba-bahr",
@@ -69,9 +69,9 @@
         "tafsīr",
         "ishārāt"
       ],
-      "status": "migration-pending",
-      "url": null,
-      "note": "Translation project exists separately; not yet migrated into this repository"
+      "status": "editorial-preview",
+      "url": "texts/ibn-ajiba/al-bahr-al-madid/",
+      "note": "Translation project exists separately; not yet migrated into this repository. A limited scholarly reader preview is now available; source corpus still awaits import."
     },
     {
       "id": "jurjani-mawaqif",
@@ -84,9 +84,9 @@
         "kalām",
         "natural philosophy"
       ],
-      "status": "migration-pending",
-      "url": null,
-      "note": "Separate ongoing translation; not yet migrated into this repository"
+      "status": "editorial-preview",
+      "url": "texts/al-jurjani/sharh-al-mawaqif/",
+      "note": "Separate ongoing translation; not yet migrated into this repository. A limited scholarly reader preview is now available; source corpus still awaits import."
     }
   ]
 }

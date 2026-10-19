@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-labelledby="gnamma-title gnamma-desc">
-<title id="gnamma-title">Gnamma Research</title><desc id="gnamma-desc">A natural rock hollow holding water, rendered as a simple hand-drawn mark.</desc>
-<path d="M36.8 7.5C23.5 6.9 12.4 14.6 8.9 27.6c-3.1 11.8 2.4 23.4 13.2 29.9 8.5 5.2 24.1 7.1 34.6-.8 11.8-8.9 11.4-27.6 2C51 12 45 8.3 36.8 7.5Z" fill="#efe3d2" stroke="#936d54" stroke-width="3" stroke-linejoin="round"/>
-<path d="M18.5 41c.6-6.4 7.7-11.4 17.1-12.3 9.8-.9 17.1 3.2 18.5 10 1.5 7.2-6.1 13.2-17.3 13.9-13.2.8-19.9-5.3-19.3-11.6Z" fill="#4d7880"/>
-<path d="M22.1 40c5.5-2.1 10.9-2.8 17.1-2.2 5 .5 8.4 1.6 11.2 3" fill="none" stroke="#d4e5dd" stroke-width="2" stroke-linecap="round" opacity=".9"/>
-<path d="M17.6 23.4c5-4.3 11.1-5.9 16.4-5.8M50.7 20.6c3.6 2.7 5.8 6.3 6.3 10.4" fill="none" stroke="#bb9578" stroke-width="2" stroke-linecap="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 330" role="img" aria-label="Gnamma natural rock waterhole"><path d="M203 21 C243 20 264 46 292 53 C332 62 361 91 366 128 C377 169 356 213 318 239 C286 263 263 297 214 301 C175 304 139 282 111 260 C83 239 45 224 30 184 C16 147 27 106 60 80 C91 56 123 54 153 38 C171 28 190 22 203 21Z" fill="#A85D3F"/><path d="M200 72 C230 69 252 87 280 99 C308 112 326 136 321 165 C317 191 297 210 268 228 C245 243 230 256 203 254 C172 251 148 226 124 212 C103 198 81 189 79 161 C78 136 89 113 112 99 C139 82 168 76 200 72Z" fill="#FBF9F4"/><path d="M202 112 C225 108 253 122 268 140 C284 158 277 179 263 193 C247 209 230 215 207 208 C182 200 170 190 149 181 C130 171 126 154 139 138 C152 123 181 115 202 112Z" fill="#255969"/></svg>

@@ -37,3 +37,10 @@ Use GitHub Pages from this repository's default branch `/ (root)` when Pages is 
 The live Gnamma library is published via GitHub Pages at **https://gnamma-research.github.io/booksite/**; GitHub's Pages deployment workflow reported success on 19 October 2026. The al-Mustaṣfā reader is at **https://gnamma-research.github.io/booksite/texts/al-ghazali/al-mustasfa/**. Check Settings → Pages and the deployment history to confirm subsequent releases.
 
 The download ZIP intentionally omits the full 1.8 MB Arabic corpus already committed under `arabic/full-arabic-pages.json`. Its reader falls back to that public GitHub source online if a local copy is missing. For a fully offline Arabic archive, add that file at the matching path.
+## Gnamma visual and reader controls (19 October 2026)
+
+The public homepage, text chooser, research and essay sections use the landscape-led Gnamma identity (the natural waterhole mark, editorial lowercase wordmark, minimally dense overlays and icon navigation with hover/focus labels). Book readers have a **Background** control to choose the book's **native appearance** or the **Gnamma landscape**. Preferences are saved locally per work; the Mustaṣfā reader retains its existing native light, dark and sepia settings.
+
+The four non-Mustaṣfā titles linked from the collection now have **labeled preliminary previews** with reading lenses, a technical glossary, source notes and related-reading trails. These are not complete original readers; the missing full editions still need importing. Do not silently equate a preview with publication of the source.
+
+See [branding and backgrounds](docs/GNAMMA_BRANDING_AND_BACKGROUNDS.md). The scenic image has a local SVG fallback; high-resolution photo in the project delivery package can replace the lightweight site background.
