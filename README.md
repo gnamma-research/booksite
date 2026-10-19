@@ -34,6 +34,6 @@ Use GitHub Pages from this repository's default branch `/ (root)` when Pages is 
 
 ## Mobile deployment status
 
-All paths are prepared for a mobile-first GitHub Pages site. GitHub's repository metadata currently reports `has_pages: true`, but a successful public deployment and its URL have not been independently confirmed. Check Settings → Pages for the live address and deployment state; if no publishing source is configured, select Deploy from a branch → `master` / `(root)` and save. GitHub Pages activation and successful deployment are separate from committing files.
+The live Gnamma library is published via GitHub Pages at **https://gnamma-research.github.io/booksite/**; GitHub's Pages deployment workflow reported success on 19 October 2026. The al-Mustaṣfā reader is at **https://gnamma-research.github.io/booksite/texts/al-ghazali/al-mustasfa/**. Check Settings → Pages and the deployment history to confirm subsequent releases.
 
 The download ZIP intentionally omits the full 1.8 MB Arabic corpus already committed under `arabic/full-arabic-pages.json`. Its reader falls back to that public GitHub source online if a local copy is missing. For a fully offline Arabic archive, add that file at the matching path.
