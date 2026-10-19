@@ -10,7 +10,7 @@ home:'<path d="M3 10L12 3L21 10V21H15V14H9V21H3Z"/>',
 texts:'<path d="M12 5C9 3 5 2 2 3V20C6 19 9.5 20 12 22C15 20 18 19 22 20V3C18 2 15 3 12 5Z"/><path d="M12 5V22"/>',
 essays:'<path d="M6 3H18V21H6Z"/><path d="M9 8H15M9 12H15M9 16H13"/>',
 research:'<path d="M12 3L4 9L12 15L20 9L12 3Z"/><path d="M3 15L12 21L21 15"/>',
-about:'<circle cx="12" cy="12" r="9"/><path d="M12 11V17M12 7V8"/>'
+about:'<path d="M12 3.5c-1.6 2.1-2.5 3.7-2.5 5a2.5 2.5 0 0 0 5 0c0-1.3-.9-2.9-2.5-5Z"/><ellipse cx="12" cy="16" rx="6.3" ry="2.25"/><path d="M3.5 19.5c2.35-1.35 5.2-2 8.5-2s6.15.65 8.5 2"/>'
 };
 const content={
 texts:[
@@ -40,7 +40,8 @@ const landing=route()!==null;
 const relative=location.pathname.startsWith(root.pathname)?location.pathname.slice(root.pathname.length):"";
 const ancestor=relative.split("/")[0];
 let current=landing?route():(sections.includes(ancestor)?ancestor:"home");
-let open=landing&&current!=="home";
+const isAboutPage=route()==="about";
+let open=landing&&current!=="home"&&!isAboutPage;
 function make(tag,cls,value){
  const n=document.createElement(tag);
  if(cls)n.className=cls;
@@ -63,7 +64,7 @@ sections.forEach(section=>{
  a.setAttribute("aria-controls","gn-bottom-panel");
  a.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true">'+glyphs[section]+"</svg>";
  a.addEventListener("click",event=>{
-  if(!landing)return;
+  if(!landing||section==="about"||isAboutPage)return;
   event.preventDefault();
   if(section==="home" || (current===section&&open)){
     navigate("home");
