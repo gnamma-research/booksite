@@ -60,7 +60,7 @@ assert(!html.includes('<span>Previous<small>')&&!html.includes('<span>Next<small
        'Static dock has regressed to wide Previous/Next labels');
 const staticNumbers=(html.match(/class="fb-step-number"/g)||[]).length;
 assert(staticNumbers>=510,'Static dock section numbers missing');
-const nativePageIds=[...html.matchAll(/class="fb-page fb-reading-page" data-native-section="([^"]+)"/g)].map(m=>m[1]);
+const nativePageIds=[...html.matchAll(/class="fb-page fb-reading-page(?: [^"]*)?" data-native-section="([^"]+)"/g)].map(m=>m[1]);
 assert.equal(nativePageIds.length,book.sections.length,'Static reading pages missing');
 assert.equal(new Set(nativePageIds).size,nativePageIds.length,'Static section IDs are duplicated');
 console.log('Darūrī heading/navigation contract passed: '+book.sections.length+
