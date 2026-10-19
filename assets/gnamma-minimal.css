@@ -81,3 +81,20 @@ body.gn-ambient .gn-iconnav a:focus .gn-tooltip{opacity:1}
 
 .gn-index-status{display:block;margin-top:5px;font:10px/1.4 system-ui,sans-serif;color:#816859;letter-spacing:0}
 .gn-index-status:hover{text-decoration:none}
+
+/* Quiet collection indexes: navigation makes the section clear; titles alone are enough. */
+.gn-index-screen .gn-index-panel {
+ padding: 11px clamp(14px,2vw,23px);
+ width: min(465px,calc(100vw - 140px));
+ background: rgba(255,250,242,.45)!important;
+ -webkit-backdrop-filter:blur(8px);
+ backdrop-filter:blur(8px);
+}
+.gn-index-screen .gn-index-list {border-top:0}
+.gn-index-screen .gn-index-row:first-child {padding-top:16px}
+.gn-index-screen .gn-index-row:last-child {border-bottom:0;padding-bottom:16px}
+.gn-index-screen .gn-index-position {align-items:center}
+@media(max-width:680px) {
+ .gn-index-screen .gn-index-position {align-items:flex-end}
+ .gn-index-screen .gn-index-panel {width:100%;padding:9px 14px;max-height:54svh}
+}

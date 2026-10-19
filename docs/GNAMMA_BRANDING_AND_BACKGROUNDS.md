@@ -34,3 +34,6 @@ The homepage and all collection selection screens are scenery-first; main naviga
 **Essays** are compact written arguments and summaries of research, with appropriate citations and cross-references. **Research** is a multi-source, layered workspace in which textual witnesses, dictionaries, citations and commentary can be compared. Both use the fuller scholarly apparatus with a reversible reading path.
 
 The approved high-resolution source landscape is stored in `assets/gnamma-landscape.webp` with an SVG fallback. The logo SVG is a traced version of the approved single organic rock-pool mark. The landscape is illustrative rather than geographic documentary evidence.
+
+## Minimal collection menus (October 2026)
+The landing pages for Texts, Essays, Research and About display **only selectable titles** against the shared landscape, without redundant section headings, explanatory copy, or unpublished placeholder entries. Their meaning is conveyed by the selected icon and its accessible hover/focus label. The About page links to a separate purpose statement and source policy. Research and essay pages retain the scholarly reading workspace; each book retains its own apparatus and native appearance choices. The ENCHANT concept is withheld from the public navigation and publication for now, while its earlier content remains recoverable in Git version history.
