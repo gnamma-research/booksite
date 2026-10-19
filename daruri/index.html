@@ -2438,6 +2438,7 @@ function toggleReadingContextSheet(){
  const panel=$('#readingContextPanel'),shade=$('#readingContextShade'),button=$('#contextToolbar');
  if(!panel||state.route!=='reader')return;
  if(!panel.hidden){closeReadingContextSheet();return}
+ if(state.focusMode){state.focusMode=false;save();applyCleanReader();syncReadingChrome();}
  const actions=$('#readerActionMenu');if(actions)actions.open=false;
  renderReadingContextSheet();panel.hidden=false;if(shade)shade.hidden=false;
  if(button){button.classList.add('active');button.setAttribute('aria-expanded','true');button.setAttribute('aria-pressed','true');button.setAttribute('aria-label','Close reading context panel');button.title='Close reading context panel';}
