@@ -41,3 +41,10 @@ Published scholarly status: a bilingual reading edition with editorial apparatus
 - Remove public-facing “aligned passages” jargon; counts may say “text passages,” while editorial notes can still explain what text passages represent.
 - Preserve all current Darūrī 2 revised Arabic and English text, original headings, (E) markers, Gnamma palette, dual-language toggles, copy/save/share actions, dynamic study apparatus, source notes, concept navigation, dictionary theme and exact return-to-reading handling.
 - As of this update, static JavaScript syntax and DOM markers were checked against the committed source. No claim of live mobile-browser interaction testing is made.
+
+## Reader UI correction — current canonical design
+- [Commit 5227bad](https://github.com/gnamma-research/booksite/commit/5227bad86742ff4a5a8967933729c40aa4a79843) supersedes the adjacent-section navigation styling previously documented above. The persistent bottom dock's **left and right controls display only the adjacent section numbers plus arrows**, not titles. The **central control gets almost all available width** and shows the current part, section and current title; it opens the jump picker.
+- Only the **post-matn page-end** adjacent-section navigation may present full preceding/following section titles.
+- The page-top heading's part label and section reference are now one continuous same-style eyebrow, e.g., **Part II · §102**. There is no independent section-number row inside the integrated original/editorial heading.
+- Maintain the existing original Arabic headings, their English translations as appropriate for display language, and the clickable editorial (E) marker. Preserve all current Darūrī 2 revisions.
+- **Pagination priority**: Bou Akl 2015 should become the default Arabic edition only as a verified concordance is established. Current independently checked Bou Akl loci are §§2, 3, 20, 21, 203, 218. All other identifiers currently show an explicitly labelled al-ʿAlawī 1994 Arabic page rather than conjecturally mapping those numbers into Bou Akl. Do not silently relabel page systems.
