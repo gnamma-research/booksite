@@ -1,24 +1,21 @@
-# Darūrī 2 — current Gnamma web reader design handoff
-Updated 19 October 2026. Read this alongside `QA_AND_DARURI2_HANDOFF_2026-10-19.md`.
+# Darūrī 2 — canonical Gnamma reader design handoff
+Updated 19 October 2026 after the revised heading-source and bottom-dock navigation request.
 
-## Canonical principle
-The live layout/stylesheet and application logic in `daruri/index.html` are the current Gnamma reader design. **Integrate subsequent Darūrī 2 textual, translation, notes, variant and pagination updates into this reader; do not replace the current HTML/CSS/JS with an older self-contained reader.** Keep matching stable section IDs and alignment units, dictionary navigation, themes and mobile accessibility.
+## Primary and mandatory source
+The **latest** `master/daruri/index.html` is the canonical UI/CSS/JavaScript shell. Apply Darūrī 2's revised Arabic base, English translation, grammatical explanations, editorial notes and verified pagination **to this shell**, not an earlier copy. `daruri/daruri.pdf` and `daruri/bou-akl-2015-variant-report.pdf` are the currently published comparative PDF and associated report. Do not replace them with an older PDF.
 
-## Current reader interface
-- The top reading toolbar is a single row, left to right: **Arabic / English language visibility** | **Save / Copy / Share**, three individually visible actions distributed across the available width | **Apparatus / Context** | **Header / Focus** at the far right. Thin dividers separate the groups. Actions are icon-first on narrow screens but independently focusable with meaningful accessible labels.
-- The full apparatus opens a dialog with its detailed visibility options. Focus and header are separate toggles; when the header is hidden, the two independent floating recovery buttons must remain reachable.
-- At the bottom *fixed dock*, the previous/next controls are **arrows only**, without adjacent section numbers or titles. The large middle section picker displays the *current* part, section reference and title. Do not conflate this dock with the different previous/next title links at the bottom of the reading page itself.
-- Main reader header integrates the original Arabic rubric (and its English translation when English is displayed) with the editorial English title, marked with a clickable **(E)** explanation. The editorial section reference follows the **part heading on the same line and in the same font, weight and colour**, not in a separate secondary heading line. Keep the original Arabic rubric free of editorial page labels.
-- Header citations identify the actual Arabic edition employed and the separate Gnamma translation PDF; do not assert that an al-ʿAlawī pagination field is a verified Bou Akl edition page.
-- Copy acts on the whole visible matn, in the languages selected, with a concise header; it does not copy apparatus cards, hidden languages or unselected text.
-- The full dictionary inherits the chosen palette/theme and offers accurate return-to-reading positions. Academic concept navigation must not reuse an unrelated stale search filter.
+## Active design rules (supersede earlier handoffs)
+1. **Top reader controls:** Arabic and English visibility as terse icon toggles; three distinct Save, Copy, Share controls; Apparatus and Context; Header and Focus. Use a separate subtle tashkīl control inside the apparatus. Focus is a one-press on/off choice, never buried in a paragraph of instructions. App settings retain detailed apparatus visibility switches without duplicating the top toolbar.
+2. **Main heading:** Show the original Arabic printed rubric in Arabic mode and its true English translation in English or bilingual mode, adjacent to the editorial reading title, while respecting the chosen language. Do not insert the English word “heading” into the printed Arabic wording. Include the section reference directly after the part label **on the same line with identical typography**.
+3. **Heading-source marker:** A tiny superscript-style **†** beside the combined heading replaces **(E)**. Tapping it opens the reference dialog: identify editorial English title versus printed Arabic rubric; original Arabic heading and English rendering if available; where in the book the heading belongs; verified source-edition Arabic pagination; and a clickable page in **our Gnamma Darūrī bilingual translation PDF**. No edition/PDF page labels are to appear in a separate row below the heading.
+4. **Edition accuracy:** Do not mislabel al-ʿAlawī 1994 pagination as Bou Akl 2015. The current reader verifies Bou Akl Arabic pages only at a controlled subset (sections 2, 3, 20, 21, 203, 218); elsewhere preserve the distinct al-ʿAlawī printed page metadata and explicitly state that the equivalent Bou Akl page is not verified. Never invent edition pages.
+5. **Copy:** Copy the complete visible matn, in the user-selected language(s), including the displayed heading and authentic printed Arabic rubric when visible. Do not include unshown languages or apparatus cards. Metadata concealed inside the † note is not part of the copied visible heading.
+6. **Bottom fixed reader dock:** Keep **compact left/right arrow buttons with small adjacent section numbers** and make the centre **wide** for the current section title. The centre also supplies the section picker and short current part/section reference. The bottom-of-article previous/next title links are a *different* component and must remain unchanged.
+7. **Page after text:** Reading apparatus follows the matn and is controlled by the apparatus dialog; the article-ending navigation remains separate from the fixed dock. No “aligned passages” count is needed in the visible reading interface.
+8. **Dictionary/index:** Preserve Gnamma palette and dark/light preference across reader and full dictionary. Preserve exact return-to-reading position. The concept index must clear stale searches when following a concept link, and index headings remain alphabetical and reachable on narrow screens. Keep simple glossary access and full historical dictionary sources distinguishable by view/filter, not by duplicate entries.
+9. **Accessibility and responsive operation:** Keyboard focus, visible focus states, descriptive ARIA labels, large enough touch targets, responsive layout at 320–430px, and JS-free fallback remain important. Do not confuse static no-script page navigation with the interactive bottom dock.
 
-## Do not regress
-1. Keep the Gnamma palettes and theme synchronization across reader, dictionary and apparatus.
-2. Keep the 170-page bilingual Darūrī PDF, its PDF page map, and Bou Akl variant report aligned to the web reader unless Darūrī 2 supplies a *newer, verified replacement*.
-3. Preserve the scholarly distinction between printed heading, editorial title, translation, and copyist text.
-4. Retain the JS-free static reading fallback and keyboard/touch accessibility.
-5. Changes to the text or source apparatus may require review of the index, word links, PDF destinations, translation and offline cache.
+## Current status and limits
+This file documents the required UI behaviour, not a certification of complete Darūrī 2 editorial collation. The 170-page Bou Akl comparative PDF, variant report, 259 reader records, 416 alignment units and 302 concept index headings were verified in a preceding source/DOM QA pass. Any later Darūrī 2 content-only ZIP should be checked against its own checksum and merged into the existing edition JSON/notes rather than overwriting CSS, navigation, themes or link anchors. In-app iPhone behaviour still needs manual verification where browser test access is unavailable.
 
-## Current publication status
-The Gnamma repo incorporates Darūrī 2 comparative refinements and the 170-page PDF. The full content-only ZIP named `Gnamma_Daruri_BouAkl2015_ContentOnly_WebDev3_v2_2026-10-19.zip` was not verifiably merged as an intact source package when the QA note was written. Recheck this status before claiming complete editorial parity. Source/DOM checks are not equivalent to end-to-end iPhone testing.
+To continue Darūrī 2: fetch **latest master**, read this handoff, insert only newly verified text/translation/apparatus content, then recheck cross-references, copying, Arabic and English heading display, PDF links, dictionary return state, and mobile controls.
