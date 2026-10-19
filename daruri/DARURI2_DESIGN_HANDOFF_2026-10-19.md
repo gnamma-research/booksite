@@ -60,3 +60,16 @@ Implementation commits for this revision: `7124acff` (grouped controls), `32e42f
 
 **Validation limitation:** structural checks and JavaScript syntax checks were performed, but independent iPhone Safari interaction and layout regression testing remains necessary. Do not describe that testing as completed.
 
+
+## Navigation and post-matn cards — 19 October 2026 (supersedes earlier footer/header directions)
+
+- **Use the latest master `daruri/index.html` as the canonical Gnamma interface.** This update is presentation-only; preserve its Darūrī 2 Arabic/English matn, Bou Akl/ʿAlawī attribution distinctions, note links, dictionary and PDF assets.
+- **Integrated title:** Show the navigation section reference (`sectionRef(s.id)`, for example §102) immediately alongside the editorial/original section title, *not* as a separate line beneath the editorial title. The section number must remain visible in Arabic-only, English-only and parallel modes. The paired source/English rubrics and clickable `(E)` editorial key remain as before. The small Arabic-edition and Gnamma-PDF page citations remain separate.
+- **Post-matn apparatus:** The concepts, technical vocabulary, Bidāya applications and reading notes live in individually bordered, theme-aware, responsive cards inside `.gn-reading-aftertext` (added on master). Keep their anchors, author/source distinctions, buttons and toggles; do not flatten them back into continuous text or discard notes. On narrow devices these stack vertically.
+- **Section navigation:** At the bottom of the matn, the two adjoining section buttons show **destination section titles** with small directional arrows, but without visible “Previous” or “Next”. The persistent bottom reader dock similarly presents the preceding/following section titles (two-line ellipsis where needed); the centre retains the current section and jump control. Their accessible labels still explain direction.
+- **Section picker:** Keep part-selection buttons and searchable sections, but **remove the redundant “Previous part” and “Next part” controls** and their unused container.
+- **Full header hiding:** Switching Header off hides the complete top navigation, compact reader controls, reading progress and reader dock, not merely the Darūrī masthead. A single floating recovery icon restores them. Explicit high-specificity CSS takes precedence over previous rules that unintentionally kept the toolbar visible. Focus remains a separate reversible mode.
+- **Copy matn:** Keep full visible selected-language content, with the section reference grouped in the copied header rather than repeated in the page metadata.
+- **QA:** The structural checks and inline runtime-script syntax check have passed. Independent iPhone/Safari UI verification remains outstanding. Once changes to Darūrī 2 source files are merged, bump `daruri/sw.js` cache and retest all navigation, dictionary and apparatus controls.
+
+Implementation: GitHub commit `d5fa5a8` (interface), followed by an offline cache update. This handoff supersedes earlier contradictory “toolbar remains visible with Header off” language.
