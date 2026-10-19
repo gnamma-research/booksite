@@ -16,7 +16,7 @@ const content={
 texts:[
  {heading:"Uṣūl al-fiqh",items:[
  {name:"al-Mustaṣfā min ʿIlm al-Uṣūl",href:"texts/al-ghazali/al-mustasfa/"},
- {name:"al-Ḍarūrī fī Uṣūl al-Fiqh",href:"texts/ibn-rushd/al-daruri/"}
+ {name:"al-Ḍarūrī fī Uṣūl al-Fiqh",href:"daruri/"}
  ]},
  {heading:"Tafsīr",items:[{name:"al-Baḥr al-Madīd",href:"texts/ibn-ajiba/al-bahr-al-madid/"}]},
  {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"}]}
