@@ -1,4 +1,4 @@
-const NAME='daruri-reader-v20261019-section-nav';const CORE=['./','index.html','dictionary.html'];const OPTIONAL=['daruri.pdf','bou-akl-2015-variant-report.pdf'];
+const NAME='daruri-reader-v20261019-nav-numbered';const CORE=['./','index.html','dictionary.html'];const OPTIONAL=['daruri.pdf','bou-akl-2015-variant-report.pdf'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(NAME).then(async cache=>{await cache.addAll(CORE);await Promise.allSettled(OPTIONAL.map(path=>cache.add(path)));await self.skipWaiting()})));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('daruri-')&&key!==NAME).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{if(event.request.method!=='GET')return;const url=new URL(event.request.url);if(url.origin!==self.location.origin)return;event.respondWith(fetch(event.request).then(response=>{if(response.ok){const copy=response.clone();caches.open(NAME).then(cache=>cache.put(event.request,copy)).catch(()=>{})}return response}).catch(()=>caches.match(event.request)))});
