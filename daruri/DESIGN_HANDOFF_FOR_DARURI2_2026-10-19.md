@@ -1,4 +1,12 @@
 # Gnamma al-Ḍarūrī reader — design handoff for Darūrī 2
+
+## Latest bottom-dock and heading correction (19 October 2026 — supersedes earlier side-number rules)
+- Canonical reader: `master/daruri/index.html`, starting from commit `812d081fee996c9438c9f172f0969a378fcaf873` (offline cache updated in `de5b78defd9724eb204431937b73da44dfeb6d29`). Always fetch current master when integrating new Darūrī 2 text.
+- **Fixed bottom dock:** previous/next buttons contain **arrows only**, *no section numbers, no destination titles*. They retain explanatory accessible labels. The middle jump button is wider and displays the **full part name** (`part.label`, e.g. “Part II · Sources of proof”), **current section number**, and **section title**. On narrow screens, the title may wrap to two lines.
+- **At the bottom of each actual reading page**, retain the two previous/next article **titles** (this is separate from the fixed dock). Do not revert those end-of-text links to section numbers.
+- **Main page heading:** show the part label and section number together on **one line** and in exactly the same colour, font and size; not in a second row. The original printed Arabic and editorial headings continue to obey the chosen language; their heading-source link is unchanged.
+- Preserve Gnamma CSS/JS shell, current source-controlled Darūrī 2 Arabic–English readings, corrected PDF, concept navigation, dictionary, return state and all note/citation IDs. Do not replace the live reader with an older design package.
+
 Date: 2026-10-19
 Repository: https://github.com/gnamma-research/booksite
 Canonical live reader: https://gnamma-research.github.io/booksite/daruri/
