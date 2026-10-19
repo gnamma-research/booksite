@@ -1,0 +1,9 @@
+# al-Mustaṣfā continuation handoff · Gnamma v0.5
+
+The current unit is a MOBILE WEBSITE with a COMPLETE ARABIC digital reading witness and an INCOMPLETE English translation. Baseline: 89 earlier selected cards plus 14 independent full Arabic paragraph translations = 103 bilingual cards, some overlapping; not 103 complete chapters. Full Arabic OpenITI 381 page objects, 2977 paragraphs, hosted in connected GitHub `gnamma-research/booksite` repository, file `arabic/full-arabic-pages.json`. Hammad scans 303+489 pages image-only and user-owned; not redistributed.
+
+Translation next: (1) complete original preface and initial methodological prolegomenon sequentially from Arabic; (2) entire logic introduction; (3) Axis I; (4) Axis II; (5) Axis III; (6) Axis IV; (7) collate Hammad Volume I against every Arabic text; (8) verify other Ghazālī books and philosophical/legal studies; (9) complete historical dictionaries in Arabic/English; (10) print/source audit. Each paragraph must show unique stable source id, Arabic transcription, independently drafted technical English, textual note, prior translation comparison, and scholarly support or explicitly unverified evidence.
+
+README, source register, method, scholarly terminology, attribution and audits are separate files. Never state 'full translated al-Mustaṣfā' until all 181,750 Arabic words/tokens represented in the OpenITI witness are actually independently translated and checked; this material has NOT met that threshold.
+
+To make mobile address live, activate GitHub Pages on `gnamma-research/booksite` Settings → Pages → Deploy from master /(root). Avoid modifying personal GitHub Pages repos or implying enabled hosting until checked.
