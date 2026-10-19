@@ -1,0 +1,50 @@
+{
+  "edition": "0.5",
+  "publication_status": "partial English translation; full Arabic digital witness",
+  "source": "OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1; Hammad English scanned comparator",
+  "counts": {
+    "selected_translation_cards": 103,
+    "new_complete_arabic_paragraph_translations": 14,
+    "whole_arabic_digital_page_objects": 381,
+    "whole_arabic_transcribed_paragraphs": 2977,
+    "technical_terms": 47,
+    "author_works": 14,
+    "crosswork_evidence_records": 24,
+    "historical_lexicon_excerpts": 17,
+    "Hammad_selective_comparisons": 8,
+    "academic_studies_used": 4
+  },
+  "selected_card_coverage_labels": {
+    "complete source paragraph": 14,
+    "selected excerpt": 47,
+    "continuous excerpt": 19,
+    "selected paragraph": 23
+  },
+  "passage_parts": {
+    "preface": 9,
+    "prelim": 35,
+    "logic": 18,
+    "hukm": 7,
+    "evidence": 7,
+    "maslaha": 8,
+    "inference": 7,
+    "ijtihad": 12
+  },
+  "limitations": [
+    "English selected excerpts are not continuous and overlap. No complete English book or chapter.",
+    "Arabic source is a digital reading witness not collated manuscript or printed edition.",
+    "New English paragraph translations not systematically compared with Hammad throughout.",
+    "No claim full historical dictionary entries, full lexicon or verified crosswork concordance.",
+    "Mobile site published in connected GitHub repository; GitHub Pages must be enabled by user in repository settings."
+  ],
+  "validation": {
+    "mobile_routes_exercised": [
+      "reader",
+      "continuous",
+      "technical",
+      "wholearabic(mock source)"
+    ],
+    "browser_page_errors": 0,
+    "real_network_wholearabic_check": "NOT tested in local browser; full JSON file separately published on GitHub."
+  }
+}
