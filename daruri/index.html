@@ -1575,7 +1575,7 @@ async function copyText(value){try{if(navigator.clipboard&&window.isSecureContex
 function copyVisibleMatn(n){
  const s=sections.get(String(n));if(!s)return;
  const ar=state.lang!=='english',en=state.lang!=='arabic';
- const head=[];
+ const head=['Ibn Rushd · al-Ḍarūrī'];
  if(en){head.push(s.title+' (E)');if(s.headingAr&&s.headingEn)head.push(s.headingEn);}
  if(ar&&s.headingAr)head.push(state.vowels?(s.headingVocalized||s.headingAr):bareArabic(s.headingAr));
  head.push(sectionRef(s.id)+' · Arabic ed. '+origPage(s)+(s.pdfPage?' · Darūrī PDF '+s.pdfPage:''));
@@ -1584,7 +1584,7 @@ function copyVisibleMatn(n){
   if(en)parts.push(seg.en||'');
   return parts.filter(Boolean).join('\n\n');
  }).filter(Boolean);
- copyText(head.concat([''],paragraphs).join('\n\n'));
+ copyText(head.join('\n')+'\n\n'+paragraphs.join('\n\n'));
 }
 function cite(n){const s=sections.get(String(n));if(!s)return;copyText(`Ibn Rushd, al-Ḍarūrī fī uṣūl al-fiqh, ${sectionRef(n)}, printed Arabic ed. ${origPage(s)} (ed. Jamāl al-Dīn al-ʿAlawī, 1994); English translation in the Uṣūl–Law–Rushd bilingual study edition (2026).`)}
 function share(n){const url=location.href.split('#')[0]+'#section='+encodeURIComponent(n);copyText(url)}
