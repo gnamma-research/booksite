@@ -1386,64 +1386,6 @@ body.focus-mode .reader .chapter-nav{display:none!important}
 .reader .reader-heading .gn-heading-link:hover,#fallbackReader .fb-hero .gn-heading-link:hover{background:var(--accent-soft);opacity:1}
 .reader .reader-heading .gn-heading-link:focus-visible,#fallbackReader .fb-hero .gn-heading-link:focus-visible{outline:2px solid var(--accent);outline-offset:2px;opacity:1;background:var(--accent-soft)}
 @media print{.reader .reader-heading .gn-heading-link,#fallbackReader .fb-hero .gn-heading-link{display:none!important}}
-</style><style id="gnamma-toolbar-border-group-20261019">
-/* Compact, equal-status outlined actions beside reading-language / tashkīl controls. */
-#readingControls .reader-language-and-actions{display:flex!important;align-items:center!important;gap:5px!important;min-width:0}
-#readingControls #readerTashkil{
- display:inline-flex!important;flex:0 0 40px!important;align-items:center;justify-content:center;
- box-sizing:border-box!important;min-width:40px!important;width:40px!important;height:40px!important;
- padding:0!important;border:1px solid var(--border)!important;border-radius:8px!important;
- background:var(--surface)!important;color:var(--text-soft)!important;cursor:pointer;
-}
-#readingControls #readerTashkil .tashkil-glyph{display:block;font:600 21px/1.2 var(--arabic,serif)}
-#readingControls #readerTashkil[aria-pressed="true"]{border-color:var(--accent)!important;background:var(--accent-soft)!important;color:var(--accent)!important}
-#readingControls #readerTashkil:hover{background:var(--accent-soft)!important}
-#readingControls #readerTashkil:focus-visible{outline:2px solid var(--accent)!important;outline-offset:2px}
-#readingControls .reader-action-slot{
- display:flex!important;flex:0 1 auto!important;align-items:center!important;
- justify-content:flex-start!important;gap:4px!important;min-width:0;
- margin:0!important;padding:0 clamp(7px,1.1vw,13px)!important;
- border:0!important;border-inline-start:1px solid var(--line)!important;
-}
-#readingControls .reader-action-slot .reader-action-item{
- display:inline-flex!important;flex:0 0 auto!important;align-items:center!important;
- justify-content:center!important;gap:6px!important;
- box-sizing:border-box!important;width:auto!important;min-width:40px!important;
- min-height:40px!important;padding:7px 9px!important;
- border:1px solid var(--border)!important;border-radius:8px!important;
- color:var(--accent)!important;background:var(--surface)!important;box-shadow:none!important;
-}
-#readingControls .reader-action-slot .reader-action-item:hover{border-color:var(--accent)!important;background:var(--accent-soft)!important}
-#readingControls .reader-action-slot .reader-action-item:focus-visible{outline:2px solid var(--accent)!important;outline-offset:2px}
-#readingControls .reader-action-slot .reader-action-item[aria-pressed="true"]{border-color:var(--accent)!important;background:var(--accent-soft)!important}
-@media(max-width:980px){
- #readingControls .reader-action-slot .reader-action-item{width:40px!important;min-width:40px!important;padding:5px!important}
- #readingControls .reader-action-slot .reader-action-caption{display:none!important}
-}
-@media(max-width:520px){
- :root{--reading-controls-height:96px}
- #readingControls .reading-controls-inner{
-  display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;
-  grid-template-rows:40px 40px!important;gap:5px 8px!important;
-  align-items:center!important;justify-content:stretch!important;
-  min-height:96px!important;padding:5px 8px!important;
- }
- #readingControls .reader-language-and-actions{grid-column:1!important;grid-row:1!important;justify-self:start!important;gap:4px!important}
- #readingControls .reader-action-slot{grid-column:2!important;grid-row:1!important;justify-self:end!important;gap:3px!important;padding:0 0 0 8px!important}
- #readingControls .reader-display-controls{grid-column:1!important;grid-row:2!important;justify-self:start!important;border:0!important;padding:0!important;gap:5px!important}
- #readingControls .reader-focus-controls{grid-column:2!important;grid-row:2!important;justify-self:end!important;border:0!important;padding:0!important;gap:5px!important}
- #readingControls .reader-action-slot .reader-action-item{width:38px!important;min-width:38px!important;min-height:38px!important;padding:5px!important}
- #readingControls #readerTashkil{width:38px!important;min-width:38px!important;height:38px!important;flex-basis:38px!important}
- #readingControls .persistent-languages button{min-width:36px!important;width:36px!important;min-height:38px!important;padding:4px!important}
- #readingControls .compact-reader-control{min-width:38px!important;width:38px!important;max-width:38px!important;height:38px!important;min-height:38px!important;flex:0 0 38px!important}
-}
-@media(max-width:360px){
- #readingControls .reading-controls-inner{gap:4px!important;padding-inline:5px!important}
- #readingControls .reader-action-slot{gap:3px!important;padding-inline-start:5px!important}
- #readingControls .reader-action-slot .reader-action-item{min-width:36px!important;width:36px!important}
- #readingControls #readerTashkil{width:36px!important;min-width:36px!important;flex-basis:36px!important}
- #readingControls .persistent-languages button{min-width:34px!important;width:34px!important}
-}
 </style>
 <style id="gnamma-tashkil-and-action-buttons-oct19">
 /* Arabic / tashkīl / English are neighbouring, but separate, choices. */
@@ -1979,7 +1921,6 @@ Contents I · Source headings
  <div class="reading-controls-inner">
   <div class="reader-language-and-actions" role="group" aria-label="Reading languages and Arabic vocalization">
    <div aria-label="Visible languages; at least one must remain active" class="persistent-languages" id="persistentLanguages" role="group"></div>
-   <button id="readerTashkil" class="compact-reader-control reader-tashkil-control" type="button" data-vowel-toggle aria-pressed="true" aria-label="Hide Arabic tashkīl" title="Hide Arabic tashkīl"><span class="tashkil-glyph" lang="ar" aria-hidden="true">حَ</span></button>
   </div>
   <div class="reader-action-slot" role="group" aria-label="Save, copy and share section">
    <button id="readerSaveAction" class="reader-action-item" type="button" data-bookmark="1" aria-pressed="false" aria-label="Save section"><svg class="icon" aria-hidden="true"><use href="#i-bookmark"></use></svg><span class="reader-action-caption" id="readerSaveLabel">Save</span></button>
@@ -2565,7 +2506,7 @@ function languageButtons() {
  if(split<9)return buttons;
  const label=state.vowels?'Remove Arabic tashkīl':'Add Arabic tashkīl';
  const tash=`<button type="button" id="quickVowels" class="compact-reader-control tashkeel-control" data-vowel-toggle aria-pressed="${state.vowels}" aria-label="${label}" title="${label}"><span class="vowel-glyph" lang="ar" dir="rtl">${state.vowels?'تَ':'ت'}</span></button>`;
- return buttons.slice(0,split)+tash+buttons.slice(split);
+ return buttons+tash;
 }
 function toggleLanguageVisibility(value){
  const ar=state.lang!=='english',en=state.lang!=='arabic';
@@ -2582,16 +2523,6 @@ function syncReadingChrome() {
   if (!reading) {closeReadingContextSheet();return;}
   $('#persistentLanguages').innerHTML = languageButtons();
   const tash=$('#apparatusTashkil');if(tash)tash.checked=state.vowels;
-  const quickTash=$('#readerTashkil');
-  if(quickTash){
-    const enabled=Boolean(state.vowels),label=enabled?'Hide Arabic tashkīl':'Show Arabic tashkīl';
-    quickTash.setAttribute('aria-pressed',String(enabled));
-    quickTash.setAttribute('aria-label',label);
-    quickTash.title=label;
-    quickTash.classList.toggle('active',enabled);
-    const glyph=quickTash.querySelector('.tashkil-glyph');
-    if(glyph)glyph.textContent=enabled?'حَ':'ح';
-  }
   if(!reading||state.focusMode||!state.showHeader)closeReadingContextSheet();
   else if(!$('#readingContextPanel').hidden)renderReadingContextSheet();
   const contextControl=$('#contextToolbar');if(contextControl){const on=!$('#readingContextPanel').hidden;contextControl.setAttribute('aria-pressed',String(on));contextControl.setAttribute('aria-expanded',String(on));contextControl.setAttribute('aria-label',on?'Close reading context panel':'Open reading context panel');contextControl.title=contextControl.getAttribute('aria-label');contextControl.classList.toggle('active',on);}
