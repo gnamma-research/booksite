@@ -44,21 +44,6 @@
       "note": "A separate working translation exists; not yet imported into this repository. A limited scholarly reader preview is now available; source corpus still awaits import."
     },
     {
-      "id": "ibn-rushd-bidaya",
-      "title": "Bidāyat al-Mujtahid",
-      "arabic": "بداية المجتهد",
-      "author": "Ibn Rushd",
-      "author_slug": "ibn-rushd",
-      "work_slug": "bidayat-al-mujtahid",
-      "area": [
-        "fiqh",
-        "comparative law"
-      ],
-      "status": "research-preview",
-      "url": "texts/ibn-rushd/bidayat-al-mujtahid/",
-      "note": "Representative fiqh analysis underway elsewhere; public reader not imported. A limited scholarly reader preview is now available; source corpus still awaits import."
-    },
-    {
       "id": "ibn-ajiba-bahr",
       "title": "al-Baḥr al-Madīd",
       "arabic": "البحر المديد",
@@ -88,5 +73,45 @@
       "url": "texts/al-jurjani/sharh-al-mawaqif/",
       "note": "Separate ongoing translation; not yet migrated into this repository. A limited scholarly reader preview is now available; source corpus still awaits import."
     }
-  ]
+  ],
+  "research": [
+    {
+      "id": "bidaya-daruri",
+      "title": "Bidāya–Ḍarūrī",
+      "area": [
+        "uṣūl al-fiqh",
+        "fiqh",
+        "comparative legal reasoning"
+      ],
+      "status": "research-preview",
+      "url": "research/usul-law-rushd/",
+      "note": "A multi-text research synthesis using Ibn Rushd’s al-Ḍarūrī and Bidāyat al-Mujtahid; not a separate book, and not a complete translation of Bidāya."
+    }
+  ],
+  "navigation": {
+    "texts_groups": [
+      {
+        "name": "Uṣūl al-fiqh",
+        "ids": [
+          "ghazali-mustasfa",
+          "ibn-rushd-daruri"
+        ]
+      },
+      {
+        "name": "Tafsīr",
+        "ids": [
+          "ibn-ajiba-bahr"
+        ]
+      },
+      {
+        "name": "Kalām",
+        "ids": [
+          "jurjani-mawaqif"
+        ]
+      }
+    ],
+    "research_ids": [
+      "bidaya-daruri"
+    ]
+  }
 }

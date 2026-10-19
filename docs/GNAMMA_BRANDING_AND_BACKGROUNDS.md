@@ -37,3 +37,7 @@ The approved high-resolution source landscape is stored in `assets/gnamma-landsc
 
 ## Minimal collection menus (October 2026)
 The landing pages for Texts, Essays, Research and About display **only selectable titles** against the shared landscape, without redundant section headings, explanatory copy, or unpublished placeholder entries. Their meaning is conveyed by the selected icon and its accessible hover/focus label. The About page links to a separate purpose statement and source policy. Research and essay pages retain the scholarly reading workspace; each book retains its own apparatus and native appearance choices. The ENCHANT concept is withheld from the public navigation and publication for now, while its earlier content remains recoverable in Git version history.
+
+## Bottom icon dock — live trial (October 2026)
+
+The shared landscape stays unobstructed when no category is selected. Five high-contrast, individual icons (Home, Texts, Essays, Research, About) are centred along the bottom, without a shared navigation enclosure, floating hover labels or decorative arrows. On opening a category, a compact ivory translucent panel appears immediately above the dock. The small category heading is retained. Texts are grouped into Uṣūl al-fiqh, Tafsīr and Kalām, with subtle blue-water/terracotta-rock dot markers beside each actual book title. Research includes Bidāya–Ḍarūrī, which is not a single book edition. The book-reading interfaces remain individually controlled, while Essays and Research use their extended scholarly reference tools.

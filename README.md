@@ -44,3 +44,9 @@ The public homepage, text chooser, research and essay sections use the landscape
 The four non-Mustaṣfā titles linked from the collection now have **labeled preliminary previews** with reading lenses, a technical glossary, source notes and related-reading trails. These are not complete original readers; the missing full editions still need importing. Do not silently equate a preview with publication of the source.
 
 See [branding and backgrounds](docs/GNAMMA_BRANDING_AND_BACKGROUNDS.md). The scenic image has a local SVG fallback; high-resolution photo in the project delivery package can replace the lightweight site background.
+
+## Bottom navigation / book taxonomy (October 2026)
+
+The homepage and category screens use a five-icon dock centred at the bottom. Tapping Texts, Essays, Research or About opens a small translucent list immediately above the dock, without hiding the mountain landscape. The list includes small category titles and, for Texts, waterhole-dot bullets and three scholarly groups: Uṣūl al-fiqh, Tafsīr, Kalām. Icons remain text-free; their aria-labels support assistive technology. Tapping the same icon, the Home icon, or the landscape closes the list. The category URL updates so back/forward navigation works. Static HTML lists remain as an accessible no-JavaScript fallback.
+
+**Bidāya–Ḍarūrī** is under **Research**, linked to the comparative legal-method study, not under Texts. The standalone al-Ḍarūrī fī Uṣūl al-Fiqh reader remains under Uṣūl. The old texts/ibn-rushd/bidayat-al-mujtahid/ preview remains available at its original address but is no longer in the catalogue. Individual books retain their own native reading apparatus and background themes; essays/research retain the full scholarly workspace.
