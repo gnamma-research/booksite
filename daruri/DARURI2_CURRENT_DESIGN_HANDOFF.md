@@ -1,5 +1,15 @@
 # Darūrī 2 — canonical Gnamma reader design handoff
 
+
+## Toolbar correction — 19 October 2026 (current; supersedes earlier two-row mobile instruction)
+- Site commit `94cb4edf750dd2e07fe33c54a13f38a2b8c8e590` is the authoritative compact toolbar override. Always preserve it when merging new Darūrī 2 Arabic, English, notes or pagination.
+- **All ten controls on ONE horizontal row**, including 320–430 px phones. Never reinstate the historical `@media(max-width:560px)` two-row grid. See `<style id="gnamma-one-line-toolbar-and-classical-reference-20261019">` appended as the final style before `</head>`.
+- Keep four compact icon groups in sequence: Arabic/English/tashkīl | Save/Copy/Share (three individually bordered actions) | apparatus/context | header/focus. Separate groups with subtle 1 px hairlines and avoid unused horizontal padding. Maintain the existing actions, accessible labels, reader state, hide-header recovery, focus mode and dictionary return paths.
+- The editorial/source-reference icon beside the Part · §Section heading uses a **classical fleuron ❧** instead of the previous chain icon. The inline textual note anchors also use the fleuron while retaining their actual numbered N-identifiers and note destinations. Preserve the complete editorial note corpus.
+- The fixed bottom dock is NOT changed: previous arrow + adjacent section number | wide current full section title | next arrow + adjacent section number. At the end of each article, the **separate previous/next title links** retain their descriptive titles.
+- Main part and §Section remain together on **one typographic line** with same font, size and colour. Heading de-duplication, original Arabic headings and English rendering remain in force.
+- Toolbar layout was checked statically for estimated button widths across 280, 320, 360, 375, 390, 414, 430, 560 and 768 px. Live Safari/iPhone rendering remains to be confirmed. Do not describe that check as browser-level QA.
+
 ## Latest non-negotiable heading and dock regression contract — 19 October 2026
 This block takes precedence over any older, conflicting toolbar/dock instructions below.
 - **Single readable title per meaning.** Retain a distinct printed Arabic rubric, its English translation when selected, and the editorial heading only when it adds genuinely different information. When the editorial English and printed original English describe substantially the same thing, render **only the original English heading** while retaining the Arabic rubric; never place the same heading twice or repeat a chapter subtitle underneath. The dynamic site uses \`headingsNearDuplicate\` and \`collapseDuplicateHeadings\`; its 259 static fallback headings are de-duplicated too.
