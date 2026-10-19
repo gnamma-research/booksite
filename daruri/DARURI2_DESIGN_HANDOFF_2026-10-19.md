@@ -29,3 +29,11 @@ Current published PDF: `daruri/daruri.pdf` (170-page Bou Akl comparative bilingu
 4. Validate regenerated PDF and HTML together after future translation revisions; refresh service worker cache.
 
 This file is the handoff for the separate Darūrī 2 conversation: treat the GitHub master reader as the canonical design and apply subsequent editorial text updates to it.
+
+
+## Header switch revision · 19 October 2026
+- The compact reader toolbar order is **Arabic / English / parallel → حَ/ح → Focus → Header → Reading apparatus (book icon)**.
+- Header is a direct, reversible switch using a recognizable **panel-with-top-header** glyph. It is **not** an option within the Reading apparatus dialog; retain technical terms, concepts, notes, applications and left contents there.
+- When the header is hidden, the compact reader toolbar remains accessible at the top, with the header button indicating its current on/off state. A floating **Show header** recovery control uses the same header glyph instead of a settings gear, and can also exit Focus mode.
+- Keep the separate appearance/preferences screen and no-JavaScript fallback intact. Do not add the retired right context sidebar.
+- The Darūrī 2 editorial content-only updates must preserve these controls, event handlers and CSS.
