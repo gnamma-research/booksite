@@ -57,3 +57,13 @@ Branch: master
 - When the header is hidden, the compact reader toolbar remains accessible at the top, with the header button indicating its current on/off state. A floating **Show header** recovery control uses the same header glyph instead of a settings gear, and can also exit Focus mode.
 - Keep the separate appearance/preferences screen and no-JavaScript fallback intact. Do not add the retired right context sidebar.
 - The Darūrī 2 editorial content-only updates must preserve these controls, event handlers and CSS.
+
+## Toolbar and apparatus revision — 19 October 2026 (latest)
+- The current published `daruri/index.html` on master is the design authority. This revision is **interface-only**: it must not be overwritten by a PDF conversion, scholarly data export, or older reader version.
+- The toolbar has **exactly two independent language buttons**: `ع` for Arabic and `EN` for English. Turning on both uses `state.lang='parallel'`; turning one off shows the other alone. The last selected language cannot be turned off. No third “Both” button appears.
+- Tashkīl is **not** a separate reader-toolbar button. It is an on/off switch at the top of the **Reading apparatus** dialog (`id="apparatusTashkil"`), updating `state.vowels`; the Arabic and English selections remain independent of it.
+- Apparatus order matches the reading page: Tashkīl (matn), Concepts, Technical vocabulary, Bidāya applications, Reading notes. Contents navigation is in a separate `Navigation` fieldset. Header has its own dedicated toolbar switch.
+- Next to **Focus**, the persistent toolbar has **Save**, **Copy**, and **Share** controls. They retain the same functions as the former actions beside the section heading, but the duplicate heading actions are now removed. Save updates the bookmark state; Copy exports the complete visible matn and displayed headings/metadata in the currently selected languages; Share opens the existing share composer.
+- Compact toolbar remains accessible in focus mode; at phone width controls are tighter while labels remain available to screen readers via `aria-label` and `title`.
+- Keep the reader’s source and apparatus data blocks unchanged. The 170-page PDF and separate Bou Akl variant report remain linked. Never assert that the displayed Arabic source page numbers are Bou Akl’s when they are from al-ʿAlawī 1994.
+- Important QA still needed: interactively test the actual deployed page on iPhone/Safari, keyboard and screen reader interactions, last-language lock, apparatus tashkīl persistence, Save/Copy/Share actions after navigating sections, and returning from the full dictionary.
