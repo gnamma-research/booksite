@@ -32,3 +32,12 @@ When its original ZIP becomes available:
 6. Recheck reader PDF page mapping to the 170-page edition, then bump the offline cache and repeat iOS/mobile navigation QA.
 
 Published scholarly status: a bilingual reading edition with editorial apparatus and comparative PDF, **not** a newly established manuscript recension.
+
+## Updated Gnamma UI — bottom navigation and jump dialog
+- The persistent bottom dock now uses **only arrows and the adjacent section numbers** (no visible Previous/Next captions); accessible names still identify direction and destination.
+- The central dock button opens the section/part navigator. Its repeated visible “Go to a part or section” title is removed; an accessible screen-reader heading remains. The existing “MOVE THROUGH THE WORK” label identifies the panel.
+- Mobile part selection is compact (three columns down to narrow widths), with reduced padding and **a much taller, independently scrollable section list** to show more sections at once. On very narrow devices it may fall back to two columns.
+- The central dock’s extra “Jump to a part or section” hint is omitted as the action is evident from the current section and navigation icon.
+- Remove public-facing “aligned passages” jargon; counts may say “text passages,” while editorial notes can still explain what text passages represent.
+- Preserve all current Darūrī 2 revised Arabic and English text, original headings, (E) markers, Gnamma palette, dual-language toggles, copy/save/share actions, dynamic study apparatus, source notes, concept navigation, dictionary theme and exact return-to-reading handling.
+- As of this update, static JavaScript syntax and DOM markers were checked against the committed source. No claim of live mobile-browser interaction testing is made.
