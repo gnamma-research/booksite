@@ -48,3 +48,15 @@ Published scholarly status: a bilingual reading edition with editorial apparatus
 - The page-top heading's part label and section reference are now one continuous same-style eyebrow, e.g., **Part II · §102**. There is no independent section-number row inside the integrated original/editorial heading.
 - Maintain the existing original Arabic headings, their English translations as appropriate for display language, and the clickable editorial (E) marker. Preserve all current Darūrī 2 revisions.
 - **Pagination priority**: Bou Akl 2015 should become the default Arabic edition only as a verified concordance is established. Current independently checked Bou Akl loci are §§2, 3, 20, 21, 203, 218. All other identifiers currently show an explicitly labelled al-ʿAlawī 1994 Arabic page rather than conjecturally mapping those numbers into Bou Akl. Do not silently relabel page systems.
+
+
+## 19 October 2026 — Latest hidden-header Focus recovery (supersedes any contrary guidance above)
+Canonical live reader source: `daruri/index.html` on master, UI commit `3f2c94e630d273e62eb7eb94c220c78c322fbacc`; offline update `dbe98f8a23db954c4d096c5cdfca83c96e00b44c`.
+
+- **Preserve the bottom reader dock**: previous **arrow + section number** | broad central **current section title/jump** | next **section number + arrow**. Do **not** put adjacent section titles back into these narrow side controls. Longer adjacent titles belong only in the separate **post-matn** navigation.
+- **Page-top heading**: the part designation and section reference occupy **one same-style line**, e.g. `Part II · §102`. Retain the adjacent editorial (E) heading, its English translation of an original rubric and original Arabic wording as selected.
+- **Hide header**: continue hiding all top/navigation chrome. At bottom-right a small **two-button recovery group** (`#hiddenHeaderRecovery`) appears: **Restore header** (`#restoreHeader`) and **Focus** (`#hiddenHeaderFocus`); both stay usable.
+- **Focus may now be activated while the header is hidden.** Its on/off state is visibly indicated (`aria-pressed`); Focus hides the post-matn cards (`.gn-reading-aftertext`) and extra chapter navigation. Press the same Focus icon again to return to the normal hidden-header reading view. Restoring the header returns to the normal chrome view and exits Focus.
+- **Focus without Hide header** keeps its normal compact-toolbar Focus control and **does not** show the floating group. This latest user-requested dual recovery **explicitly supersedes** earlier instructions that prohibited a secondary Focus control whenever the header was hidden.
+- Do not overwrite the current Gnamma UI/HTML/CSS/JS while merging Darūrī 2 scholarly text and annotations. Source edits only; keep the 170-page PDF map, theme, dictionary return positions and corrected index links.
+- Verified syntactically and in four simulated UI-state combinations (header shown/hidden × Focus on/off). Full live iPhone Safari testing is **not yet confirmed**.
