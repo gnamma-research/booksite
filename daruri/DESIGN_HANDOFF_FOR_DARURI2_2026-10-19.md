@@ -20,9 +20,9 @@ Branch: master
 - Display title and Arabic rubric with no extra literal “heading” label in the Arabic matn.
 
 ## Controls
-- Language selector: Arabic / English / parallel symbol buttons.
-- Tashkīl/vowel control uses **حَ / ح** (ḥarakāt), distinct from the Arabic language button.
-- Single reading-apparatus modal with switches for technical vocabulary, concepts, notes, applications, the header and left contents panel. Header visibility is always recoverable using the fixed **Show header** control, which also exits Focus mode.
+- Language selector: exactly two independent buttons (`ع` and `EN`); selecting both shows parallel text and the final selected language cannot be deselected.
+- Tashkīl appears as a checkbox inside the Reading apparatus dialogue, separate from the two persistent language buttons.
+- The reading-apparatus modal has Tashkīl, Concepts, Technical vocabulary, Bidāya applications and Reading notes in displayed order; Contents navigation is in its own fieldset. The header has a direct toolbar switch and recoverable **Show header** control.
 - Focus button remains in the compact reader toolbar. The right-hand context pane, its toolbar button, its header button and its apparatus preference have been retired entirely; the reader is a two-column desktop layout (contents + main text) and one-column mobile layout.
 - Copy button uses `copyVisibleMatn(n)` to copy ALL section matn text in the selected language(s), including headings and precise Arabic source and Gnamma PDF page metadata. It does not copy apparatus footnotes.
 - The separate Share button opens a genuine share-composition dialog, offering editorial title, original rubric (with English translation), first passage, highlighted selection (when any), full visible section, or link only. It generates a section permalink. Where supported it opens the native share sheet; otherwise the composed message is copied, distinct from Copy Matn.
@@ -52,7 +52,7 @@ Branch: master
 
 
 ## Header switch revision · 19 October 2026
-- The compact reader toolbar order is **Arabic / English / parallel → حَ/ح → Focus → Header → Reading apparatus (book icon)**.
+- The compact reader toolbar order is **Arabic / English (both independently selectable) → Focus → Save / Copy / Share → Header → Reading apparatus (book icon)**; Tashkīl is inside the apparatus dialog.
 - Header is a direct, reversible switch using a recognizable **panel-with-top-header** glyph. It is **not** an option within the Reading apparatus dialog; retain technical terms, concepts, notes, applications and left contents there.
 - When the header is hidden, the compact reader toolbar remains accessible at the top, with the header button indicating its current on/off state. A floating **Show header** recovery control uses the same header glyph instead of a settings gear, and can also exit Focus mode.
 - Keep the separate appearance/preferences screen and no-JavaScript fallback intact. Do not add the retired right context sidebar.
