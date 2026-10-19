@@ -1,0 +1,98 @@
+[
+  {
+    "term": "taṣawwur",
+    "ar": "تصور",
+    "preferred": "conception / grasp of an individual meaning",
+    "avoid": "mere imagination",
+    "why": "It supplies the individual conceptual content prior to propositionally assessable assent.",
+    "source": "al-Mustaṣfā, OpenITI V01P009–010; Miʿyār and Miḥakk cited in V01P009"
+  },
+  {
+    "term": "taṣdīq",
+    "ar": "تصديق",
+    "preferred": "assent to a proposition / assertoric assent",
+    "avoid": "simple belief without structure",
+    "why": "Negation or affirmation between two conceived terms creates the truth-apt proposition.",
+    "source": "al-Mustaṣfā, OpenITI V01P009–010"
+  },
+  {
+    "term": "ḥadd lafẓī",
+    "ar": "حد لفظي",
+    "preferred": "nominal definition",
+    "avoid": "literal definition",
+    "why": "It explains the linguistic expression by a known synonym rather than defining the thing.",
+    "source": "al-Mustaṣfā, OpenITI V01P010–011"
+  },
+  {
+    "term": "ḥadd rasmī",
+    "ar": "حد رسمي",
+    "preferred": "descriptive definition",
+    "avoid": "official limit",
+    "why": "Distinguishes its object by a set of attributes without recovering all essential constituents.",
+    "source": "al-Mustaṣfā, OpenITI V01P010–011"
+  },
+  {
+    "term": "ḥadd ḥaqīqī",
+    "ar": "حد حقيقي",
+    "preferred": "real / essential definition",
+    "avoid": "realistic definition",
+    "why": "States constitutive essentials of the quiddity; distinct from the fact that the thing exists.",
+    "source": "al-Mustaṣfā, OpenITI V01P011–012"
+  },
+  {
+    "term": "māhiyya",
+    "ar": "ماهية",
+    "preferred": "quiddity (whatness)",
+    "avoid": "physical material",
+    "why": "The answer to mā huwa, asking what the thing is essentially.",
+    "source": "al-Mustaṣfā, OpenITI V01P010–012"
+  },
+  {
+    "term": "dhātī",
+    "ar": "ذاتي",
+    "preferred": "essential constituent",
+    "avoid": "personal",
+    "why": "Constitutive of what the thing is, not merely inseparable from it.",
+    "source": "al-Mustaṣfā, OpenITI V01P011–012"
+  },
+  {
+    "term": "lāzim",
+    "ar": "لازم",
+    "preferred": "inseparable concomitant",
+    "avoid": "essential constituent",
+    "why": "Can accompany a thing necessarily while remaining conceptually subsequent to its quiddity.",
+    "source": "al-Mustaṣfā, OpenITI V01P011–012"
+  },
+  {
+    "term": "ʿāriḍ",
+    "ar": "عارض",
+    "preferred": "incidental attribute",
+    "avoid": "accident without qualification",
+    "why": "May depart, or can be conceived as absent, without loss of quiddity. Not every occurrence equals Aristotelian accidental substance.",
+    "source": "al-Mustaṣfā, OpenITI V01P011–012"
+  },
+  {
+    "term": "jins / nawʿ",
+    "ar": "جنس / نوع",
+    "preferred": "logical genus / logical species",
+    "avoid": "modern biological taxonomic species",
+    "why": "Relative places in the Porphyrian ordering described in the text.",
+    "source": "al-Mustaṣfā, OpenITI V01P012"
+  },
+  {
+    "term": "burhān",
+    "ar": "برهان",
+    "preferred": "demonstration; conclusive proof when epistemically warranted",
+    "avoid": "any juridical argument",
+    "why": "A formally valid inference does not yield certainty unless the premises are certain; compare Opwis’s analysis of Ghazālī’s qiyās.",
+    "source": "al-Mustaṣfā, OpenITI V01P009–010; Opwis, “Syllogistic Logic in Islamic Legal Theory”"
+  },
+  {
+    "term": "ʿilla",
+    "ar": "علة",
+    "preferred": "explanatory cause (logic); operative ground (legal analogy), by context",
+    "avoid": "universal physical efficient cause",
+    "why": "The same term serves different functions in the first support on definition and in legal analysis.",
+    "source": "al-Mustaṣfā, V01P011 vs V01P007; Hallaq and Opwis"
+  }
+]
