@@ -1,0 +1,7 @@
+# OpenITI Arabic witness — license and attribution
+
+Text: Abū Ḥāmid al-Ghazālī, *al-Mustaṣfā min ʿIlm al-Uṣūl* (المستصفى من علم الأصول), OpenITI version `0505Ghazali.Mustasfa.Shamela0005459-ara1`, within `OpenITI/0525AH` (GitHub). Source: https://github.com/OpenITI/0525AH/blob/master/data/0505Ghazali/0505Ghazali.Mustasfa/0505Ghazali.Mustasfa.Shamela0005459-ara1
+
+The text is presented as a **digital reading witness**, not a critically collated edition. It has been regrouped into JSON page objects and paragraphs for display. This processing may affect paragraph boundaries, but Arabic lexical content remains from the source except removal of OpenITI formatting/page delimiters. OpenITI texts are under [Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless a specific version stipulates otherwise. Attribution, noncommercial use and share-alike obligations should be preserved by redistributors. The English renderings and original editorial notes are not the old Hammad translation.
+
+The hosted file is `arabic/full-arabic-pages.json` under GitHub's source directory. Opening `index.html` locally loads this public file from the network; the bilingual selections and term apparatus are embedded locally.
