@@ -1727,10 +1727,10 @@ body.focus-mode .reader .note-ref-symbol{display:none!important}
 </style>
 
 <style id="gnamma-sidebar-and-header-preview-20261019">
-/* Small optical adjustment requested for header icons, applied equally to all four buttons. */
-.topbar :is(#menuBtn,#searchBtn,#themeBtn,#settingsBtn){position:relative!important;top:5px!important;}
-/* Keep the static reader's drawer opener in the same lowered optical position. */
-#fallbackReader .fb-top-leading .fb-icon-button{position:relative;top:5px;}
+/* Shared optical baseline: all four header icons sit visibly lower, without altering the centred book title. */
+.topbar :is(#menuBtn,#searchBtn,#themeBtn,#settingsBtn){position:relative!important;top:12px!important;}
+/* The no-JavaScript drawer opener follows the same optical baseline. */
+#fallbackReader .fb-top-leading .fb-icon-button{position:relative;top:12px;}
 /* Book identity replaces the redundant left-pane “Contents & references” title. */
 .left-nav .gn-sidebar-book-title,.fb-left-panel .gn-sidebar-book-title{font:500 17px/1.3 var(--serif,Georgia,serif);color:var(--text);margin:1px 0 0;letter-spacing:0;overflow-wrap:normal;}
 .gn-sidebar-book-title cite{font-style:italic;font-weight:600;}
@@ -1741,7 +1741,7 @@ body.focus-mode .reader .note-ref-symbol{display:none!important}
 .nav-bottom .gn-pdf-edition,.fb-publisher-footer .gn-pdf-edition{display:flex;align-items:center;justify-content:space-between;gap:8px;text-decoration:none;border-radius:5px;padding:7px 3px;color:var(--text-soft);font:500 12px/1.3 var(--sans,system-ui,sans-serif);}
 .nav-bottom .gn-pdf-edition span,.fb-publisher-footer .gn-pdf-edition span{font-size:13px;color:var(--accent);opacity:.6;}
 .nav-bottom .gn-pdf-placeholder,.fb-publisher-footer .gn-pdf-placeholder{cursor:default;}
-@media(max-width:840px){.topbar :is(#menuBtn,#searchBtn,#themeBtn,#settingsBtn){top:4px!important;}#fallbackReader .fb-top-leading .fb-icon-button{top:4px;}}
+@media(max-width:840px){.topbar :is(#menuBtn,#searchBtn,#themeBtn,#settingsBtn){top:10px!important;}#fallbackReader .fb-top-leading .fb-icon-button{top:10px;}}
 @media print{.gn-pdf-editions{display:none!important}}
 </style>
 </head>
