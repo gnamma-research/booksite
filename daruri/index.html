@@ -3688,7 +3688,7 @@ function takeDictionaryReturn(){
     const root=document.querySelector('#jumpOverlay .settings-dialog, #jumpOverlay [role="dialog"]');
     if(root&&!root.querySelector('.gn-reader-jump-sites')){
       const nav=document.createElement('nav');nav.className='gn-reader-jump-sites';nav.setAttribute('aria-label','Other library views');
-      nav.innerHTML='<button type="button" data-route="home">Home</button><button type="button" data-route="contents">Contents</button><button type="button" data-route="study">Study guide</button><button type="button" data-route="glossary">Dictionary</button>';
+      nav.innerHTML='<button type="button" data-route="home">Home</button><button type="button" data-route="contents">Contents</button><button type="button" data-route="study">Study guide</button><button type="button" data-route="index">Concept index</button><button type="button" data-route="applications">Bidāya applications</button><button type="button" data-route="glossary">Dictionary</button><button type="button" data-route="bookmarks">Saved sections</button><button type="button" data-route="about">About</button>';
       root.appendChild(nav);
     }
   };
