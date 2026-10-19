@@ -101,3 +101,8 @@ body.gn-ambient .gn-iconnav a:focus .gn-tooltip{opacity:1}
 
 /* Menu icons are intentionally unlabelled visually, including hover and keyboard focus. Screen-reader aria-labels remain. */
 .gn-iconnav .gn-tooltip{display:none!important}
+
+/* List items are fully clickable; decorative arrow glyphs and columns are unnecessary. */
+.gn-index-screen .gn-index-row{grid-template-columns:32px minmax(0,1fr)!important}
+.gn-index-screen .gn-index-arrow{display:none!important}
+@media(max-width:680px){.gn-index-screen .gn-index-row{grid-template-columns:22px minmax(0,1fr)!important}}
