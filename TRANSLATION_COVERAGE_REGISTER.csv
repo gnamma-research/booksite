@@ -1,2 +1,104 @@
-<PARSED TEXT FOR SHEET: 1 / 1 TABS
-TAB NAME: _bridge_v05_TRANSLATION_COVERAGE_REGISTER_csv>
+passage_id,part,title,arabic_source_locus,coverage_type,source_witness,collation_status,arabic_characters,english_words,note
+R01,preface,The transmitted sciences and the mixed character of jurisprudence,OpenITI V01P003,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,408,117,Not a complete chapter. Some selections overlap.
+R02,preface,How al-Ghazālī situates his earlier writings,OpenITI V01P003,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,478,152,Not a complete chapter. Some selections overlap.
+R03,preface,A deliberate middle course between earlier uṣūl works,OpenITI V01P003,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,778,211,Not a complete chapter. Some selections overlap.
+R04,prelim,The opening: prolegomenon and four axes,OpenITI V01P004,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,448,111,Not a complete chapter. Some selections overlap.
+R05,prelim,Technical fiqh versus ordinary understanding,OpenITI V01P004,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,633,173,Not a complete chapter. Some selections overlap.
+R06,prelim,Uṣūl is about proof and indication at the general level,OpenITI V01P004,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,410,118,Not a complete chapter. Some selections overlap.
+R07,prelim,The three evidentiary foundations and methods of indication,OpenITI V01P004–V01P005,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,454,151,Not a complete chapter. Some selections overlap.
+R08,prelim,The sciences and the discipline of inward purification,OpenITI V01P005,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,237,76,Not a complete chapter. Some selections overlap.
+R09,prelim,Why kalām is classed as comprehensive,OpenITI V01P005,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,610,136,Not a complete chapter. Some selections overlap.
+R10,prelim,The relative autonomy of legal theory,OpenITI V01P006,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,529,134,Not a complete chapter. Some selections overlap.
+R11,prelim,The jurist’s and uṣūlī’s borrowed premises,OpenITI V01P006,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,527,149,Not a complete chapter. Some selections overlap.
+R12,prelim,The four parts follow from derivation itself,OpenITI V01P006,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,399,99,Not a complete chapter. Some selections overlap.
+R13,prelim,"The fruits, the productive proofs, and the modes of drawing them",OpenITI V01P006,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,344,95,Not a complete chapter. Some selections overlap.
+R14,prelim,The jurist as harvester and the four axes,OpenITI V01P006–V01P007,complete source paragraph,OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1,Arabic digital witness matched; not independently proofed against print or Hammad,562,142,Not a complete chapter. Some selections overlap.
+P04,preface,Three kinds of knowledge,I:4,selected excerpt,linked Arabic transcription,not fully collated,100,28,Not a complete chapter. Some selections overlap.
+P05,preface,Knowledge transmitted without inference,I:4,selected excerpt,linked Arabic transcription,not fully collated,125,36,Not a complete chapter. Some selections overlap.
+P06,preface,The value of legal theory as a mixed science,I:4,selected excerpt,linked Arabic transcription,not fully collated,62,20,Not a complete chapter. Some selections overlap.
+P01,preface,The meeting of reason and revelation,I:4,continuous excerpt,linked Arabic transcription,not fully collated,260,70,Not a complete chapter. Some selections overlap.
+P02,preface,"Earlier theological, juristic, and spiritual writing",I:5,continuous excerpt,linked Arabic transcription,not fully collated,198,62,Not a complete chapter. Some selections overlap.
+P03,preface,Between excessive length and excessive brevity,I:5,continuous excerpt,linked Arabic transcription,not fully collated,261,65,Not a complete chapter. Some selections overlap.
+O01,prelim,The design of the book,I:6,continuous excerpt,linked Arabic transcription,not fully collated,170,47,Not a complete chapter. Some selections overlap.
+O02,prelim,The five introductory questions,I:6,continuous excerpt,linked Arabic transcription,not fully collated,244,61,Not a complete chapter. Some selections overlap.
+O03,prelim,From fiqh as understanding to fiqh as jurisprudence,I:6,continuous excerpt,linked Arabic transcription,not fully collated,231,74,Not a complete chapter. Some selections overlap.
+O04,prelim,The distinct object of jurisprudence,I:6,continuous excerpt,linked Arabic transcription,not fully collated,233,71,Not a complete chapter. Some selections overlap.
+O05,prelim,Rational predicates versus legal qualifications,I:6,continuous excerpt,linked Arabic transcription,not fully collated,167,47,Not a complete chapter. Some selections overlap.
+O06,prelim,What uṣūl actually investigates,I:6,continuous excerpt,linked Arabic transcription,not fully collated,221,56,Not a complete chapter. Some selections overlap.
+O07,prelim,General principles and particular cases,I:6,continuous excerpt,linked Arabic transcription,not fully collated,261,83,Not a complete chapter. Some selections overlap.
+O08,prelim,What counts as uṣūl,I:6,selected excerpt,linked Arabic transcription,not fully collated,104,28,Not a complete chapter. Some selections overlap.
+O09,prelim,The three established textual sources,I:6,selected excerpt,linked Arabic transcription,not fully collated,54,16,Not a complete chapter. Some selections overlap.
+O10,prelim,Religious sciences include an inward science,I:7,selected paragraph,linked Arabic transcription,not fully collated,165,46,Not a complete chapter. Some selections overlap.
+O11,prelim,The disciplinary domain of theology and law,I:7,selected paragraph,linked Arabic transcription,not fully collated,339,73,Not a complete chapter. Some selections overlap.
+A01,prelim,Rational and religious sciences,I:7,selected excerpt,linked Arabic transcription,not fully collated,236,65,Not a complete chapter. Some selections overlap.
+A02,prelim,Why kalām is universal here,I:7,selected excerpt,linked Arabic transcription,not fully collated,286,58,Not a complete chapter. Some selections overlap.
+F01,prelim,From evidence to derivation,I:8,continuous excerpt,linked Arabic transcription,not fully collated,268,61,Not a complete chapter. Some selections overlap.
+F02,prelim,"Fruit, productive source, method, and harvester",I:8,continuous excerpt,linked Arabic transcription,not fully collated,260,67,Not a complete chapter. Some selections overlap.
+F03,prelim,The four modes of indication,I:8,continuous excerpt,linked Arabic transcription,not fully collated,170,49,Not a complete chapter. Some selections overlap.
+F04,prelim,The jurist and the four axes,I:8,continuous excerpt,linked Arabic transcription,not fully collated,353,83,Not a complete chapter. Some selections overlap.
+F05,prelim,Interpretation has several routes,I:8,selected excerpt,linked Arabic transcription,not fully collated,45,20,Not a complete chapter. Some selections overlap.
+F06,prelim,The inquirer and the follower,I:8,selected excerpt,linked Arabic transcription,not fully collated,85,33,Not a complete chapter. Some selections overlap.
+F07,prelim,"Rules as legal addresses, not properties of acts",I:8,selected excerpt,linked Arabic transcription,not fully collated,104,41,Not a complete chapter. Some selections overlap.
+S09,prelim,Why the definitions of knowledge and evidence arose,I:10,selected paragraph,linked Arabic transcription,not fully collated,233,65,Not a complete chapter. Some selections overlap.
+S10,prelim,The danger of importing another discipline wholesale,I:10,selected paragraph,linked Arabic transcription,not fully collated,214,66,Not a complete chapter. Some selections overlap.
+S11,prelim,The limit of legitimate prolegomena,I:10,selected paragraph,linked Arabic transcription,not fully collated,123,43,Not a complete chapter. Some selections overlap.
+S04,prelim,The proper boundary of legal theory,I:10,selected excerpt,linked Arabic transcription,not fully collated,61,17,Not a complete chapter. Some selections overlap.
+L14,logic,Single concepts cannot yet be true or false,I:11,selected paragraph,linked Arabic transcription,not fully collated,168,57,Not a complete chapter. Some selections overlap.
+L15,logic,Every assent presupposes conceptual grasp,I:11,selected paragraph,linked Arabic transcription,not fully collated,168,47,Not a complete chapter. Some selections overlap.
+L16,logic,Primary and sought concepts,I:11,selected paragraph,linked Arabic transcription,not fully collated,277,73,Not a complete chapter. Some selections overlap.
+L17,logic,Definition and demonstration have different tasks,I:11,selected paragraph,linked Arabic transcription,not fully collated,174,49,Not a complete chapter. Some selections overlap.
+L01,logic,The universal prolegomenon,I:11,continuous excerpt,linked Arabic transcription,not fully collated,177,49,Not a complete chapter. Some selections overlap.
+L02,logic,Why logic is not the exclusive property of uṣūl,I:11,continuous excerpt,linked Arabic transcription,not fully collated,189,58,Not a complete chapter. Some selections overlap.
+L03,logic,Two kinds of apprehension,I:11,continuous excerpt,linked Arabic transcription,not fully collated,209,51,Not a complete chapter. Some selections overlap.
+L06,logic,The knowledge of a single meaning,I:11,selected excerpt,linked Arabic transcription,not fully collated,70,22,Not a complete chapter. Some selections overlap.
+L07,logic,The knowledge of an affirmative or negative relation,I:11,selected excerpt,linked Arabic transcription,not fully collated,63,20,Not a complete chapter. Some selections overlap.
+L08,logic,Truth or falsity requires predication,I:11,selected excerpt,linked Arabic transcription,not fully collated,90,27,Not a complete chapter. Some selections overlap.
+L09,logic,Conception and assent,I:11,selected excerpt,linked Arabic transcription,not fully collated,108,26,Not a complete chapter. Some selections overlap.
+L10,logic,The two instruments of inquiry,I:11,selected excerpt,linked Arabic transcription,not fully collated,112,24,Not a complete chapter. Some selections overlap.
+L11,logic,What is prior and what is sought,I:11,selected excerpt,linked Arabic transcription,not fully collated,103,36,Not a complete chapter. Some selections overlap.
+L12,logic,Demonstration depends on the premises,I:31,selected excerpt,linked Arabic transcription,not fully collated,51,19,Not a complete chapter. Some selections overlap.
+L13,logic,The law of contradiction as a primary truth,I:31,selected excerpt,linked Arabic transcription,not fully collated,96,27,Not a complete chapter. Some selections overlap.
+S06,logic,What demonstration consists in,I:31,selected excerpt,linked Arabic transcription,not fully collated,85,21,Not a complete chapter. Some selections overlap.
+L04,logic,"Demonstrative, dialectical, and juristic premises",I:31,continuous excerpt,linked Arabic transcription,not fully collated,141,48,Not a complete chapter. Some selections overlap.
+L05,logic,A direct reference to Asās al-Qiyās,I:31,continuous excerpt,linked Arabic transcription,not fully collated,94,26,Not a complete chapter. Some selections overlap.
+H01,hukm,The ruling is a divine legal address,I:45,selected excerpt,linked Arabic transcription,not fully collated,75,27,Not a complete chapter. Some selections overlap.
+H02,hukm,Three elementary responses,I:45,selected excerpt,linked Arabic transcription,not fully collated,80,31,Not a complete chapter. Some selections overlap.
+H03,hukm,Optional choice is also expressed by address,I:45,selected excerpt,linked Arabic transcription,not fully collated,54,21,Not a complete chapter. Some selections overlap.
+H06,hukm,Why original permissibility is not a prior enacted permission,I:52,selected excerpt,linked Arabic transcription,not fully collated,56,17,Not a complete chapter. Some selections overlap.
+H04,hukm,The five evaluative categories,I:53,selected excerpt,linked Arabic transcription,not fully collated,85,19,Not a complete chapter. Some selections overlap.
+H05,hukm,Obligation and recommendation distinguished,I:53,selected excerpt,linked Arabic transcription,not fully collated,105,30,Not a complete chapter. Some selections overlap.
+S08,hukm,Ruling and the divine address,I:67,selected excerpt,linked Arabic transcription,not fully collated,45,16,Not a complete chapter. Some selections overlap.
+E01,evidence,Consensus as an object of proof,I:148,selected excerpt,linked Arabic transcription,not fully collated,81,20,Not a complete chapter. Some selections overlap.
+E02,evidence,The meaning of consensus,I:148,selected excerpt,linked Arabic transcription,not fully collated,78,16,Not a complete chapter. Some selections overlap.
+E03,evidence,Silence is not spoken agreement,I:156,selected excerpt,linked Arabic transcription,not fully collated,77,31,Not a complete chapter. Some selections overlap.
+E04,evidence,Three positions of legal interest relative to the sources,I:173–174,selected excerpt,linked Arabic transcription,not fully collated,85,24,Not a complete chapter. Some selections overlap.
+E05,evidence,Why an expedient preference cannot override text,I:174,selected excerpt,linked Arabic transcription,not fully collated,80,27,Not a complete chapter. Some selections overlap.
+E06,evidence,Why maṣlaḥa cannot be an autonomous fifth source,I:175–176,selected excerpt,linked Arabic transcription,not fully collated,70,28,Not a complete chapter. Some selections overlap.
+E07,evidence,Where the law’s purposes are known,I:175–176,selected excerpt,linked Arabic transcription,not fully collated,41,15,Not a complete chapter. Some selections overlap.
+M06,maslaha,Ordinary advantage is not the technical criterion,I:174,selected paragraph,linked Arabic transcription,not fully collated,190,55,Not a complete chapter. Some selections overlap.
+M07,maslaha,The five protected fundamentals,I:174,selected paragraph,linked Arabic transcription,not fully collated,173,48,Not a complete chapter. Some selections overlap.
+M01,maslaha,Common benefit and technical maṣlaḥa,I:174,selected excerpt,linked Arabic transcription,not fully collated,145,42,Not a complete chapter. Some selections overlap.
+M02,maslaha,The five protected fundamentals,I:174,selected excerpt,linked Arabic transcription,not fully collated,218,58,Not a complete chapter. Some selections overlap.
+M03,maslaha,The three ranks of interests,I:174,selected excerpt,linked Arabic transcription,not fully collated,126,19,Not a complete chapter. Some selections overlap.
+M04,maslaha,The five fundamentals and deprivation,I:174–175,selected excerpt,linked Arabic transcription,not fully collated,90,23,Not a complete chapter. Some selections overlap.
+M05,maslaha,Conflicts require prioritization,I:175–176,selected excerpt,linked Arabic transcription,not fully collated,71,24,Not a complete chapter. Some selections overlap.
+M08,maslaha,Why maṣlaḥa is not an independent fifth source,I:179,selected paragraph,linked Arabic transcription,not fully collated,245,66,Not a complete chapter. Some selections overlap.
+Q05,inference,The operative definition of juristic analogy,I:281,selected paragraph,linked Arabic transcription,not fully collated,114,50,Not a complete chapter. Some selections overlap.
+Q06,inference,Not every association warrants analogical transfer,I:281,selected paragraph,linked Arabic transcription,not fully collated,120,35,Not a complete chapter. Some selections overlap.
+Q07,inference,The four indispensable members of an analogy,I:281,selected paragraph,linked Arabic transcription,not fully collated,112,44,Not a complete chapter. Some selections overlap.
+Q01,inference,Four grades of analogical reasoning,I:320,selected excerpt,linked Arabic transcription,not fully collated,65,20,Not a complete chapter. Some selections overlap.
+Q02,inference,The higher end of the spectrum,I:320,selected excerpt,linked Arabic transcription,not fully collated,74,29,Not a complete chapter. Some selections overlap.
+Q03,inference,Recognizing effective legal attributes,I:320,selected excerpt,linked Arabic transcription,not fully collated,48,22,Not a complete chapter. Some selections overlap.
+Q04,inference,Analogy generates different degrees of probability,I:321,selected excerpt,linked Arabic transcription,not fully collated,86,30,Not a complete chapter. Some selections overlap.
+I05,ijtihad,Three arts of the final division,I:342,selected paragraph,linked Arabic transcription,not fully collated,113,30,Not a complete chapter. Some selections overlap.
+I06,ijtihad,Exertion must involve real difficulty,I:342,selected paragraph,linked Arabic transcription,not fully collated,154,50,Not a complete chapter. Some selections overlap.
+I07,ijtihad,The full technical definition of juristic effort,I:342,selected paragraph,linked Arabic transcription,not fully collated,158,48,Not a complete chapter. Some selections overlap.
+I08,ijtihad,The first qualification: mastery of legal evidence,I:343,selected paragraph,linked Arabic transcription,not fully collated,111,43,Not a complete chapter. Some selections overlap.
+I09,ijtihad,The second qualification: whose fatwā may be relied upon,I:343,selected paragraph,linked Arabic transcription,not fully collated,192,71,Not a complete chapter. Some selections overlap.
+I10,ijtihad,The proper subject of juristic effort,I:344,selected paragraph,linked Arabic transcription,not fully collated,132,52,Not a complete chapter. Some selections overlap.
+I03,ijtihad,Subject matter of juristic inquiry,I:346,selected excerpt,linked Arabic transcription,not fully collated,42,18,Not a complete chapter. Some selections overlap.
+I04,ijtihad,Reasoned error and conclusive proof,I:346,selected excerpt,linked Arabic transcription,not fully collated,80,23,Not a complete chapter. Some selections overlap.
+I11,ijtihad,Complete inquiry in its place removes blame,I:348,selected paragraph,linked Arabic transcription,not fully collated,149,55,Not a complete chapter. Some selections overlap.
+I01,ijtihad,An inquiry into predominant probability,I:362–363,selected excerpt,linked Arabic transcription,not fully collated,134,45,Not a complete chapter. Some selections overlap.
+I02,ijtihad,The sea-crossing analogy,I:362–363,selected excerpt,linked Arabic transcription,not fully collated,227,74,Not a complete chapter. Some selections overlap.
+I12,ijtihad,Why adjudicated decisions may stand,I:368,selected paragraph,linked Arabic transcription,not fully collated,209,77,Not a complete chapter. Some selections overlap.
