@@ -2374,7 +2374,7 @@ function syncReadingChrome() {
     if (target) button.dataset.section = String(target.id); else delete button.dataset.section;
     button.title = target ? `${label}: ${sectionRef(target.id)} · ${target.title}` : `No ${label.toLowerCase()} section`;
     button.setAttribute('aria-label', button.title);
-    button.querySelector('small').textContent = target ? sectionRef(target.id) : (label==='Previous'?'Start':'End');
+    button.querySelector('small').textContent = target ? sectionRef(target.id) : '';
   }
   $('#dockPart').textContent = section.id === 'colophon' ? 'Manuscript record' : (part.id === 0 ? 'Introduction' : 'Part '+['','I','II','III','IV'][part.id]);
   $('#dockSection').textContent = sectionRef(section.id);
