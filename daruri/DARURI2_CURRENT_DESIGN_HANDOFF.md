@@ -1,5 +1,13 @@
 # Darūrī 2 — canonical Gnamma reader design handoff
 
+## Editorial source popup — latest override (19 October 2026)
+- Reader commit `cdb8e136ca6ff575783c260c47af702e03eaa0c0` shortens the interactive and all 259 fallback heading-source popups. Preserve the exact no-original wording: **“Note: title editorial, no distinct original heading.”** Where an original Arabic rubric exists, instead display **“Note: title editorial; Arabic heading original.”** Do not restore earlier explanatory paragraphs about the editorial heading or icon.
+- Keep separate, honest bibliographic locators. The presently verified **Bou Akl (2015) Arabic page** mappings are §2 p.118, §3 p.120, §§20–21 p.132, §203 p.284 and §218 p.294. Other sections display explicitly attributed **al-ʿAlawī (1994)** Arabic pagination until their Bou Akl page is source-verified. Do not relabel the 170-page Gnamma bilingual PDF as a Bou Akl Arabic edition.
+- The source popup now has a concise **“Bou Akl (2015) · variant notes”** link to `bou-akl-2015-variant-report.pdf`, rather than a repetitive warning about unverified page numbers. PDF pagination remains a separately labelled **Gnamma translation** link to `daruri.pdf`.
+- The editorial-source trigger's existing symbol remains **unchanged** for now; the user explicitly asked to discuss a possible information icon before replacing it. Do not alter that icon until the user chooses.
+- Preserve the established bottom dock (**numbered arrows | spacious current section title | numbered arrows**) and inline part/section label; this update changes **source-popup wording only** and does not change translation/content or original heading semantics. The offline cache version was bumped in `daruri/sw.js`.
+
+
 ## Canonical header/dock correction — 19 October 2026, evening (latest and overriding all older instructions below)
 - Preserve the existing Gnamma book design and the latest Darūrī 2 Arabic text, English translation, historical apparatus, concept index, and 170-page PDF. These changes are **presentation only**. The GitHub source of truth is `master/daruri/index.html`.
 - **Normal desktop and mobile header:** one balanced row, with the Contents icon alone on the left, the book title centred, and three icon-only controls on the right: **Search**, **Theme (moon/sun)** and **Display (sliders)**. No visible words “Contents”, “Search the text” or “Display” by the icons; preserve their accessible names. The **PDF link is removed from the header** in both enhanced and static fallbacks but retained within the reading experience. Source anchor, PDF links from edition details, and end-of-text PDF references remain.
