@@ -1,6 +1,15 @@
 # Darūrī 2 — canonical Gnamma reader design handoff
 Updated 19 October 2026 after the inline heading-link revision (commit 86c41358).
 
+## Latest reader-toolbar revision — 19 October 2026 (supersedes prior toolbar placement rules)
+- Canonical UI commit: `85ee66c2ef9b0c089d0a1aa80455c72767d2c51c`; keep latest `daruri/index.html` on `master`.
+- Reader controls now put **Arabic (ع), separate clickable tashkīl (تَ on / ت off), then English (EN)** next to each other. Arabic/English determine visible language(s); tashkīl independently adds/removes vowel marks, even in parallel mode. It is accessible in the apparatus too.
+- **Save, Copy and Share** appear directly to the right as **three compact, separate bordered buttons inside their own outlined group**, with clear ARIA labels. Apparatus/Context and Header/Focus remain in subsequent groups. Narrow screens use a two-row layout so buttons are not crushed or clipped.
+- **Fixed bottom dock** retains `← §N` | **wide current section title / jump picker** | `§N →`, with *numbers, not previous/next titles* in the small side controls. The **end-of-article** previous/next title links remain unchanged.
+- **Main reading heading** keeps Part/section number together on one typographic line, without a duplicated section-number row.
+- Preserve Gnamma themes, dictionary return state, concept repairs, Bou Akl collation, and current 170-page bilingual PDF, all without replacing the source-controlled text when changing the UI.
+- JavaScript syntax was checked before publishing. Real-device visual interaction is still to be verified.
+
 ## Primary and mandatory source
 The **latest** `master/daruri/index.html` is the canonical UI/CSS/JavaScript shell. Apply Darūrī 2's revised Arabic base, English translation, grammatical explanations, editorial notes and verified pagination **to this shell**, not an earlier copy. `daruri/daruri.pdf` and `daruri/bou-akl-2015-variant-report.pdf` are the currently published comparative PDF and associated report. Do not replace them with an older PDF.
 
