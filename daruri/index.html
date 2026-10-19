@@ -2125,7 +2125,7 @@ function syncReadingChrome() {
   document.body.classList.toggle('reading-active', reading);
   const controls = $('#readingControls'); const dock = $('#readerDock');
   controls.hidden = !reading; dock.hidden = !reading;
-  if (!reading) return;
+  if (!reading) {closeReadingContextSheet();return;}
   $('#persistentLanguages').innerHTML = languageButtons();
   const tash=$('#apparatusTashkil');if(tash)tash.checked=state.vowels;
   if(!reading||state.focusMode||!state.showHeader)closeReadingContextSheet();
@@ -2450,7 +2450,7 @@ function bindReaderEnhancements() {
    const close=e.target.closest('[data-reading-context-close]');
    if(close){e.preventDefault();closeReadingContextSheet();return;}
    const jump=e.target.closest('[data-reading-context-jump]');
-   if(jump){e.preventDefault();const dest=jump.dataset.readingContextJump;closeReadingContextSheet();document.getElementById(dest)?.scrollIntoView({block:'start',behavior:'smooth'});return;}
+   if(jump){e.preventDefault();const dest=jump.dataset.readingContextJump;closeReadingContextSheet();if(dest==='notes'&&!state.showNotes)setVisibility('notes',true);if(dest==='applications'&&!state.showApplications)setVisibility('applications',true);requestAnimationFrame(()=>document.getElementById(dest)?.scrollIntoView({block:'start',behavior:'smooth'}));return;}
   },true);
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#readingContextPanel').hidden)closeReadingContextSheet();});
   document.addEventListener('click',e=>{if(!$('#readingContextPanel').hidden&&!e.target.closest('#readingContextPanel,#contextToolbar'))closeReadingContextSheet();});
