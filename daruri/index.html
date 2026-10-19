@@ -2088,7 +2088,7 @@ function sendToDictionary(term=''){
    anchor:readerReturn.anchor||null,hit:readerReturn.hit||null};
  try{sessionStorage.setItem('daruri-return-location',JSON.stringify({point,created:Date.now()}))}catch(e){}
  const hash=term?'#term='+encodeURIComponent(term):'';
- window.location.href='dictionary.html'+hash;
+ try{localStorage.setItem('daruri-reader-v2',JSON.stringify({...JSON.parse(localStorage.getItem('daruri-reader-v2')||'{}'),theme:state.theme,palette:state.palette}))}catch(e){};window.location.href='dictionary.html'+hash;
 }
 document.addEventListener('click',e=>{
  const el=e.target.closest('[data-dictionary-atlas]');if(!el)return;
