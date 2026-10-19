@@ -2179,7 +2179,7 @@ function bindReaderEnhancements() {
   },true);
   document.addEventListener('click',e=>{
     const el=e.target.closest('button,a');if(!el)return;
-    if(el.hasAttribute('data-header-restore')){e.preventDefault();setVisibility('header',true);return}
+    if(el.hasAttribute('data-header-restore')){e.preventDefault();setVisibility('header',true);syncReadingChrome();return}
     if(el.dataset.apparatusToggle){e.preventDefault();toggleApparatus(el.dataset.apparatusToggle);return}
     if(el.dataset.sideToggle){e.preventDefault();toggleSide(el.dataset.sideToggle);return}
     if(el.dataset.palette){e.preventDefault();selectPalette(el.dataset.palette);return}
@@ -2319,7 +2319,7 @@ function setVisibility(kind,on){
 function openSettings(){closeDrawer();state.rightOpen=false;applyCleanReader();renderSettingsOptions();updateScale();showOverlay('settingsOverlay');$('#settingsClose').focus();}
 function toggleFocus(){state.focusMode=!state.focusMode;closeDrawer();state.rightOpen=false;save();applyCleanReader();if(state.route==='reader'){const y=window.scrollY;renderReader();syncReadingChrome();applyCleanReader();window.scrollTo(0,y);}}
 function bindResponsiveRepairs(){
- $('#restoreHeader').addEventListener('click',()=>setVisibility('header',true));
+ $('#restoreHeader').addEventListener('click',()=>{setVisibility('header',true);syncReadingChrome();});
  $('#rightPanelButton')?.addEventListener('click',toggleContextPanel);
  $('#contextShade')?.addEventListener('click',closeContextPanel);
  $('#fullFocusToggle')?.addEventListener('change',()=>toggleFocus());
