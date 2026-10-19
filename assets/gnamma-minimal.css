@@ -1,0 +1,83 @@
+
+/* Landscape is the page; controls are individually accessible, not a corporate menu box. */
+html{color-scheme:light}
+body.gn-ambient{margin:0;min-height:100svh;background-color:#bda793;
+ background-image:url("./gnamma-landscape.webp"),url("./gnamma-scene.svg");
+ background-size:cover,cover;background-position:50% 50%;background-repeat:no-repeat;background-attachment:fixed;
+ font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif;color:#302723}
+body.gn-ambient:before{background:linear-gradient(90deg,rgba(244,229,211,.05),transparent 52%);z-index:0}
+body.gn-ambient:after{background:linear-gradient(0deg,rgba(32,24,18,.08),transparent 27%,rgba(252,235,218,.03));z-index:0}
+body.gn-ambient .gn-header{position:fixed;inset:0 0 auto 0;height:0;min-height:0;margin:0;padding:0;z-index:50;pointer-events:none}
+body.gn-ambient .gn-brand{pointer-events:auto;position:fixed;left:clamp(16px,3.9vw,68px);top:18px;align-items:center;
+ filter:drop-shadow(0 1px 9px rgba(255,249,244,.7));}
+body.gn-ambient .gn-brand img{width:58px;height:52px}
+body.gn-ambient .gn-brand>span{font-size:31px;letter-spacing:.12em;color:#332923;text-shadow:0 1px 9px rgba(255,250,244,.84)}
+body.gn-ambient .gn-brand small{font-size:8px;letter-spacing:.23em;color:#6f4a37}
+body.gn-ambient .gn-iconnav{position:fixed;top:50%;right:clamp(13px,2.7vw,48px);
+ transform:translateY(-50%);pointer-events:auto;display:flex;flex-direction:column;align-items:center;gap:11px;
+ padding:0!important;background:none!important;border:0!important;border-radius:0!important;
+ box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+body.gn-ambient .gn-iconnav a{position:relative;width:52px;height:52px;display:grid;place-items:center;
+ border-radius:50%;background:rgba(255,250,239,.84);
+ border:1px solid rgba(104,74,54,.38);color:#503527;
+ box-shadow:0 2px 8px rgba(33,30,28,.16), 0 0 0 1px rgba(255,255,255,.3) inset;
+ transition:color .17s,background-color .17s,transform .17s;
+ text-shadow:none}
+body.gn-ambient .gn-iconnav a svg{width:23px;height:23px;stroke-width:1.95}
+body.gn-ambient .gn-iconnav a:hover,body.gn-ambient .gn-iconnav a:focus,
+body.gn-ambient .gn-iconnav a.gn-current{background:rgba(255,249,236,.97);color:#955439;transform:scale(1.06)}
+body.gn-ambient .gn-tooltip{position:absolute;right:calc(100% + 14px);left:auto;top:50%;transform:translateY(-50%);
+ width:max-content;min-width:75px;text-align:center;white-space:nowrap;opacity:0;pointer-events:none;
+ background:rgba(255,249,239,.85);color:#403028;
+ font:12px/1.3 system-ui,sans-serif;letter-spacing:.025em;
+ border:1px solid rgba(255,255,255,.65);border-radius:6px;padding:7px 10px;
+ box-shadow:0 3px 12px rgba(41,31,23,.12);
+ transition:opacity .14s}
+body.gn-ambient .gn-iconnav a:hover .gn-tooltip,
+body.gn-ambient .gn-iconnav a:focus-visible .gn-tooltip,
+body.gn-ambient .gn-iconnav a:focus .gn-tooltip{opacity:1}
+.gn-scene-home{position:relative;min-height:100svh}
+.gn-visually-hidden{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;
+ clip-path:inset(50%)!important;white-space:nowrap!important;padding:0!important;margin:0!important;border:0!important}
+.gn-index-position{min-height:100svh;display:flex;align-items:center;padding:100px clamp(15px,7vw,120px) 70px}
+.gn-index-panel{width:min(435px,calc(100vw - 140px));border-radius:9px;padding:25px 27px 18px;
+ background:rgba(255,250,241,.54)!important;border:1px solid rgba(255,255,255,.38)!important;
+ backdrop-filter:blur(11px);-webkit-backdrop-filter:blur(11px);box-shadow:0 14px 43px rgba(56,36,24,.05)!important}
+.gn-index-panel h1{font-size:clamp(35px,4vw,48px);font-weight:400;line-height:1.13;margin:0 0 20px;letter-spacing:-.028em}
+.gn-index-list{border-top:1px solid rgba(89,60,44,.19)}
+.gn-index-row{display:grid;grid-template-columns:32px 1fr 19px;align-items:baseline;gap:9px;width:100%;
+ padding:14px 4px;border-bottom:1px solid rgba(89,60,44,.19);color:#3b2a24!important;text-decoration:none!important}
+.gn-index-row:hover,.gn-index-row:focus-visible{background:rgba(255,253,247,.36)}
+.gn-index-number{font:11px system-ui,sans-serif;font-variant-numeric:tabular-nums;color:#9b583b}
+.gn-index-name{font-size:17px;line-height:1.38}
+.gn-index-arrow{font-size:15px;color:#875137}
+.gn-index-quiet{font:9px system-ui,sans-serif;color:#a18a7d;align-self:center;text-align:right}
+.gn-unreleased{opacity:.71}
+.gn-about-quiet p{font-size:16px;line-height:1.7;margin:9px 0 18px}
+.gn-index-link{text-decoration:underline!important;text-underline-offset:5px;color:#76452f!important}
+.gn-trace{position:fixed;bottom:12px;left:clamp(16px,3.9vw,68px);z-index:15;font:10px system-ui,sans-serif}
+.gn-trace a{color:rgba(59,44,35,.66)!important;text-decoration:none!important}
+.gn-trace a:hover{text-decoration:underline!important}
+@media(max-width:680px){
+ body.gn-ambient .gn-brand{left:14px;top:14px}
+ body.gn-ambient .gn-brand img{width:46px;height:42px}
+ body.gn-ambient .gn-brand>span{font-size:24px}
+ body.gn-ambient .gn-brand small{font-size:6.5px}
+ body.gn-ambient .gn-iconnav{top:54%;right:12px;gap:10px}
+ body.gn-ambient .gn-iconnav a{width:45px;height:45px}
+ body.gn-ambient .gn-iconnav a svg{width:21px;height:21px}
+ body.gn-ambient .gn-tooltip{right:calc(100% + 9px);font-size:11px}
+ .gn-index-position{padding:100px 72px 70px 13px;align-items:flex-end}
+ .gn-index-panel{width:100%;padding:19px 17px 12px;max-height:54svh;overflow-y:auto}
+ .gn-index-panel h1{font-size:37px;margin-bottom:14px}
+ .gn-index-row{grid-template-columns:22px 1fr 14px;gap:6px;padding:12px 3px}
+ .gn-index-name{font-size:15px;line-height:1.36}
+ .gn-index-arrow{font-size:12px}
+ .gn-index-quiet{font-size:8px}
+ .gn-trace{left:15px;bottom:9px}
+}
+@media(max-width:370px){body.gn-ambient .gn-iconnav a{width:43px;height:43px}.gn-index-position{padding-right:64px}}
+@media(prefers-reduced-motion:reduce){body.gn-ambient .gn-iconnav a,body.gn-ambient .gn-tooltip{transition:none!important}}
+
+.gn-index-status{display:block;margin-top:5px;font:10px/1.4 system-ui,sans-serif;color:#816859;letter-spacing:0}
+.gn-index-status:hover{text-decoration:none}

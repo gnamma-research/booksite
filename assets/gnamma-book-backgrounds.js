@@ -1,8 +1,19 @@
 (()=>{"use strict";
-const script=document.currentScript,book=script?.dataset.book||location.pathname.replace(/[^a-z0-9]/gi,"-"),key="gnamma:background:"+book;
-let selection="native";try{selection=localStorage.getItem(key)==="gnamma"?"gnamma":"native"}catch{}
-function apply(which){selection=which;document.documentElement.dataset.gnBg=which;try{localStorage.setItem(key,which)}catch{};const root=document.getElementById("gn-bg-control");if(root){root.querySelectorAll("[data-gn-bg-choice]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.gnBgChoice===which)));root.querySelector(".gn-bg-btn").textContent=which==="gnamma"?"◉ Gnamma backdrop":"◉ Background";}}
-function init(){const root=document.createElement("div");root.id="gn-bg-control";root.dataset.open="false";root.innerHTML='<button class="gn-bg-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose reading background">◉ Background</button><div class="gn-bg-menu" role="group" aria-label="Reading backgrounds"><button type="button" class="gn-bg-choice" data-gn-bg-choice="native">Native book appearance</button><button type="button" class="gn-bg-choice" data-gn-bg-choice="gnamma">Gnamma landscape</button></div>';
-document.body.appendChild(root);const button=root.querySelector(".gn-bg-btn");button.addEventListener("click",()=>{const opened=root.dataset.open==="true";root.dataset.open=String(!opened);button.setAttribute("aria-expanded",String(!opened))});root.querySelectorAll("[data-gn-bg-choice]").forEach(b=>b.addEventListener("click",()=>{apply(b.dataset.gnBgChoice);root.dataset.open="false";button.setAttribute("aria-expanded","false")}));document.addEventListener("keydown",e=>{if(e.key==="Escape"){root.dataset.open="false";button.setAttribute("aria-expanded","false")}});document.addEventListener("pointerdown",e=>{if(!root.contains(e.target)){root.dataset.open="false";button.setAttribute("aria-expanded","false")}});apply(selection);}
-apply(selection);if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+const tag=document.currentScript,book=tag?.dataset.book||location.pathname,key="gnamma:background:"+book;
+const saved=()=>{try{return localStorage.getItem(key)==="gnamma"?"gnamma":"native"}catch{return"native"}};
+const set=(value)=>{document.documentElement.dataset.gnBg=value;try{localStorage.setItem(key,value)}catch{};const menu=document.getElementById("gn-appearance-menu");if(menu)menu.querySelectorAll("[data-appearance]").forEach(x=>{x.setAttribute("aria-checked",String(x.dataset.appearance===value))})};
+set(saved());
+function init(){
+const target=document.getElementById("p-mode");if(!target)return;
+const btn=document.createElement("button");btn.id="gn-appearance-toggle";btn.type="button";btn.textContent="◐";btn.title="Reading appearance";btn.setAttribute("aria-label","Reading appearance");btn.setAttribute("aria-expanded","false");target.before(btn);
+const menu=document.createElement("div");menu.id="gn-appearance-menu";menu.hidden=true;menu.setAttribute("role","group");menu.setAttribute("aria-label","Reading background");
+menu.innerHTML='<div class="gn-appearance-head">Reading appearance</div><button type="button" data-appearance="native" role="radio">Native book theme</button><button type="button" data-appearance="gnamma" role="radio">Gnamma landscape</button>';
+document.body.appendChild(menu);
+const close=()=>{menu.hidden=true;btn.setAttribute("aria-expanded","false")};
+btn.addEventListener("click",()=>{menu.hidden=!menu.hidden;btn.setAttribute("aria-expanded",String(!menu.hidden));set(saved())});
+menu.querySelectorAll("[data-appearance]").forEach(x=>x.addEventListener("click",()=>{set(x.dataset.appearance);close()}));
+document.addEventListener("pointerdown",e=>{if(!menu.contains(e.target)&&e.target!==btn)close()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();

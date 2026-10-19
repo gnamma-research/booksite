@@ -24,3 +24,13 @@ The *al-Mustaṣfā* reader has full Arabic and selected English, not full Engli
 The GitHub Pages site is served at `https://gnamma-research.github.io/booksite/`. Keep links relative to the repository root so it works as a project site. Avoid any Higgsfield dependency or AI-generative runtime in the website.
 
 **Landscape disclosure.** The background is an illustrative generated rendering inspired by natural gnamma waterholes. It is not documentary photography of a named place. The site should never imply that the scene depicts a verified geographic location.
+
+## Catalogue and reader architecture — October 2026
+
+The homepage and all collection selection screens are scenery-first; main navigation is a right-side vertical high-contrast icon rail with its label displayed unobtrusively to the left on hover and keyboard focus. The homepage has no promotional copy or modal. Selecting a section opens a plain numbered index, without redundant definitions of Essays or Research.
+
+**Books** are work-specific: each original edition retains its own native reader, editorial notes, references and typography. Background selection belongs to the existing moon/appearance control, not a second floating button. The full Daruri, Ibn Ajiba and Mawaqif editions still need importing; labelled previews must never masquerade as them.
+
+**Essays** are compact written arguments and summaries of research, with appropriate citations and cross-references. **Research** is a multi-source, layered workspace in which textual witnesses, dictionaries, citations and commentary can be compared. Both use the fuller scholarly apparatus with a reversible reading path.
+
+The approved high-resolution source landscape is stored in `assets/gnamma-landscape.webp` with an SVG fallback. The logo SVG is a traced version of the approved single organic rock-pool mark. The landscape is illustrative rather than geographic documentary evidence.
