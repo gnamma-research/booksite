@@ -41,3 +41,22 @@ This file is the handoff for the separate Darūrī 2 conversation: treat the Git
 ## 19 October toolbar update — supersedes old control list
 
 The earlier “Currently adopted presentation” toolbar sentence above is now obsolete. Follow **master `daruri/index.html`** and `daruri/DESIGN_HANDOFF_FOR_DARURI2_2026-10-19.md` as the updated design contract. The controls now have **two independent language switches** (`ع`, `EN`), with at least one always selected and both selected meaning parallel mode. **No third Both button.** The separate toolbar vowel button is removed; the **Tashkīl** switch lives inside the Reading apparatus dialog. Its options are ordered in page sequence: Tashkīl, Concepts, Technical vocabulary, Bidāya applications, Reading notes; Contents navigation is a distinct fieldset. **Focus → Save / Copy / Share → Header → Apparatus** are clustered in the persistent toolbar, and section-heading action duplicates are removed. This is interface-only and preserves the Darūrī 2 scholarly data already present in the reader, the current 170-page PDF, and the comparative variant report. Do not reintroduce the retired right context sidebar.
+
+## Canonical toolbar and context design — 19 October 2026 (latest; supersedes conflicting directions above)
+
+The authoritative implementation is `daruri/index.html` on GitHub master. **Do not restore any older toolbar layout, source text, or stylesheet while applying Darūrī 2 editorial corrections.** The reader now uses one compact line of controls, in this exact visual order:
+
+**`ع` + `EN` independent language switches | outlined Header | Reading apparatus | ⋯ Section actions | Reading context | Focus (last, far right)**.
+
+- **Header:** one outlined button, using the same paper/transparent surface, accent ink and border as adjacent display buttons; no borderless grey styling. Hiding the complete header/chrome intentionally shows a single floating recovery button near the lower right; earlier wording claiming the toolbar stays visible after full chrome hiding is superseded.
+- **Reading apparatus:** the book icon opens the existing switches for tashkīl, concepts, technical vocabulary, applications and notes. Do not duplicate them in other menus. `ع` and `EN` can be on independently, with at least one active.
+- **Section actions:** the standalone Save, Copy and Share icons are **no longer three visible peers of the display toggles**. An outlined `⋯` icon opens a separate accessible menu labelled **Save section / Copy text / Share…**. Bookmark state, complete selected-language matn copying, and the existing share composer are retained; the menu closes after use, on outside click, or Escape.
+- **Reading context:** the user expressly requested a right-hand control beside Focus. Its button opens a **new, responsive context sheet**, with the current section's indexed concepts, definitions, notes and Bidāya cross-references. The old permanent/right-rail implementation stays retired. The contextual sheet can be closed or dismissed, and is a mobile-friendly overlay. Do not remove the new button on the grounds that the older sidebar had been retired.
+- **Focus:** always the furthest-right control, toggling concentrated reading on/off. Opening context while Focus is active exits Focus.
+- **Responsive layout:** maintain distinct groups at narrow widths; do not reintroduce individual always-visible Save/Copy/Share icons or shrink controls to unreadable labels. Tooltips/ARIA labels carry the explanatory wording, while the toolbar remains icon-led.
+- **Data integrity:** retain the already integrated Darūrī 2 readings, section IDs, notes, concept references, 170-page bilingual PDF and variant-report link. Changes listed here are **interface-only**. Existing source-page numbers are attributed to al-ʿAlawī 1994 unless an independently checked Bou Akl page crosswalk replaces them.
+
+Implementation commits for this revision: `7124acff` (grouped controls), `32e42f86` (working responsive context sheet), `01058219` (Focus/context interaction).
+
+**Validation limitation:** structural checks and JavaScript syntax checks were performed, but independent iPhone Safari interaction and layout regression testing remains necessary. Do not describe that testing as completed.
+
