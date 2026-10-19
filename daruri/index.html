@@ -2108,12 +2108,12 @@ Contents I · Source headings
    <button id="readerCopyAction" class="reader-action-item" type="button" data-copy-matn="1" aria-label="Copy complete visible section"><svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg><span class="reader-action-caption">Copy</span></button>
    <button id="readerShareAction" class="reader-action-item" type="button" data-share="1" aria-label="Share section"><svg class="icon" aria-hidden="true"><use href="#i-share"></use></svg><span class="reader-action-caption">Share</span></button>
   </div>
-  <div class="reader-display-controls" role="group" aria-label="Apparatus and reading context">
+  <div class="reader-display-controls" role="group" aria-label="Reading apparatus">
    <button id="apparatusToolbar" class="compact-reader-control" type="button" data-open-apparatus aria-haspopup="dialog" aria-controls="apparatusOverlay" aria-label="Choose reading apparatus" title="Reading apparatus"><svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg></button>
-   <button id="contextToolbar" class="compact-reader-control" type="button" data-reading-context-toggle aria-controls="readingContextPanel" aria-expanded="false" aria-pressed="false" aria-label="Open reading context panel" title="Reading context"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M15 4v16"/></svg></button>
-  </div>
-  <div class="reader-focus-controls" role="group" aria-label="Header and focus">
+     </div>
+  <div class="reader-focus-controls" role="group" aria-label="Header, reading context and focus">
    <button id="headerToolbar" class="compact-reader-control" type="button" data-header-toggle aria-pressed="true" aria-label="Hide top header" title="Hide top header"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></button>
+   <button id="contextToolbar" class="compact-reader-control" type="button" data-reading-context-toggle aria-controls="readingContextPanel" aria-expanded="false" aria-pressed="false" aria-label="Open reading context panel" title="Reading context"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M15 4v16"/></svg></button>
    <button id="focusToolbar" class="compact-reader-control" type="button" data-focus-toggle aria-pressed="false" aria-label="Enter focus mode" title="Focus on the text"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 3H4v5M15 3h5v5M4 16v5h5M20 16v5h-5"/></svg></button>
   </div>
  </div>
@@ -2165,7 +2165,6 @@ Contents I · Source headings
 </div>
 </div>
 <div class="overlay" hidden="" id="apparatusOverlay" role="presentation"><div class="settings-dialog apparatus-dialog" role="dialog" aria-modal="true" aria-labelledby="apparatusTitle"><div class="detail-top"><h2 id="apparatusTitle">Reading apparatus</h2><button aria-label="Close reading apparatus" class="icon-btn" id="apparatusClose" type="button"><svg class="icon"><use href="#i-close"></use></svg></button></div><fieldset class="setting-row" id="apparatusSettings"><legend>Text and apparatus, in reading order</legend>
-<label class="toggle-row"><span>Tashkīl <small>Show Arabic vowel marks within the text and headings.</small></span><input checked id="apparatusTashkil" type="checkbox" aria-label="Show Arabic tashkīl"/></label>
 <label class="toggle-row"><span>Concepts <small>Subject links immediately after the text.</small></span><input checked data-apparatus="concepts" type="checkbox"/></label>
 <label class="toggle-row"><span>Technical vocabulary <small>Links in the text and definitions beneath it.</small></span><input checked data-apparatus="terms" type="checkbox"/></label>
 <label class="toggle-row"><span>Bidāya applications <small>Related jurisprudential examples.</small></span><input checked data-apparatus="applications" type="checkbox"/></label>
@@ -2744,7 +2743,7 @@ function syncReadingChrome() {
   controls.hidden = !reading; dock.hidden = !reading;
   if (!reading) {closeReadingContextSheet();return;}
   $('#persistentLanguages').innerHTML = languageButtons();
-  const tash=$('#apparatusTashkil');if(tash)tash.checked=state.vowels;
+  
   if(!reading||state.focusMode||!state.showHeader)closeReadingContextSheet();
   else if(!$('#readingContextPanel').hidden)renderReadingContextSheet();
   const contextControl=$('#contextToolbar');if(contextControl){const on=!$('#readingContextPanel').hidden;contextControl.setAttribute('aria-pressed',String(on));contextControl.setAttribute('aria-expanded',String(on));contextControl.setAttribute('aria-label',on?'Close reading context panel':'Open reading context panel');contextControl.title=contextControl.getAttribute('aria-label');contextControl.classList.toggle('active',on);}
@@ -3078,7 +3077,7 @@ function bindReaderEnhancements() {
   document.addEventListener('click',e=>{const menu=$('#readerActionMenu');if(menu?.open&&(!e.target.closest('#readerActionMenu')||e.target.closest('#readerActionMenu .reader-action-item')))menu.open=false;});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){const menu=$('#readerActionMenu');if(menu?.open){menu.open=false;e.stopPropagation();}}});
   $('#apparatusClose').addEventListener('click',()=>closeOverlay('apparatusOverlay'));
-  $('#apparatusTashkil').addEventListener('change',e=>setVowels(e.target.checked));
+  
   $('#shareClose').addEventListener('click',()=>closeOverlay('shareOverlay'));
   $('#shareOverlay').addEventListener('change',refreshSharePreview);
   $('#shareNow').addEventListener('click',shareNow);
