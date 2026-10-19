@@ -73,3 +73,15 @@ Implementation commits for this revision: `7124acff` (grouped controls), `32e42f
 - **QA:** The structural checks and inline runtime-script syntax check have passed. Independent iPhone/Safari UI verification remains outstanding. Once changes to Darūrī 2 source files are merged, bump `daruri/sw.js` cache and retest all navigation, dictionary and apparatus controls.
 
 Implementation: GitHub commit `d5fa5a8` (interface), followed by an offline cache update. This handoff supersedes earlier contradictory “toolbar remains visible with Header off” language.
+
+
+## 19 October 2026 — Latest hidden-header Focus recovery (supersedes any contrary guidance above)
+Canonical live reader source: `daruri/index.html` on master, UI commit `3f2c94e630d273e62eb7eb94c220c78c322fbacc`; offline update `dbe98f8a23db954c4d096c5cdfca83c96e00b44c`.
+
+- **Preserve the bottom reader dock**: previous **arrow + section number** | broad central **current section title/jump** | next **section number + arrow**. Do **not** put adjacent section titles back into these narrow side controls. Longer adjacent titles belong only in the separate **post-matn** navigation.
+- **Page-top heading**: the part designation and section reference occupy **one same-style line**, e.g. `Part II · §102`. Retain the adjacent editorial (E) heading, its English translation of an original rubric and original Arabic wording as selected.
+- **Hide header**: continue hiding all top/navigation chrome. At bottom-right a small **two-button recovery group** (`#hiddenHeaderRecovery`) appears: **Restore header** (`#restoreHeader`) and **Focus** (`#hiddenHeaderFocus`); both stay usable.
+- **Focus may now be activated while the header is hidden.** Its on/off state is visibly indicated (`aria-pressed`); Focus hides the post-matn cards (`.gn-reading-aftertext`) and extra chapter navigation. Press the same Focus icon again to return to the normal hidden-header reading view. Restoring the header returns to the normal chrome view and exits Focus.
+- **Focus without Hide header** keeps its normal compact-toolbar Focus control and **does not** show the floating group. This latest user-requested dual recovery **explicitly supersedes** earlier instructions that prohibited a secondary Focus control whenever the header was hidden.
+- Do not overwrite the current Gnamma UI/HTML/CSS/JS while merging Darūrī 2 scholarly text and annotations. Source edits only; keep the 170-page PDF map, theme, dictionary return positions and corrected index links.
+- Verified syntactically and in four simulated UI-state combinations (header shown/hidden × Focus on/off). Full live iPhone Safari testing is **not yet confirmed**.
