@@ -1,0 +1,92 @@
+{
+  "schema": "gnamma-library-manifest-v1",
+  "project": "Gnamma Research",
+  "updated": "2026-10-19",
+  "collections": [
+    "texts",
+    "essays",
+    "research"
+  ],
+  "texts": [
+    {
+      "id": "ghazali-mustasfa",
+      "title": "al-Mustaṣfā min ʿIlm al-Uṣūl",
+      "arabic": "المستصفى من علم الأصول",
+      "author": "Abū Ḥāmid al-Ghazālī",
+      "author_slug": "al-ghazali",
+      "work_slug": "al-mustasfa",
+      "area": [
+        "uṣūl al-fiqh",
+        "logic",
+        "legal theory"
+      ],
+      "status": "working-reader",
+      "language": [
+        "ar",
+        "en-selected"
+      ],
+      "url": "texts/al-ghazali/al-mustasfa/",
+      "note": "Full Arabic witness; selected technical English translation, glossary and intertextual apparatus; English not complete"
+    },
+    {
+      "id": "ibn-rushd-daruri",
+      "title": "al-Ḍarūrī fī Uṣūl al-Fiqh",
+      "arabic": "الضروري في أصول الفقه",
+      "author": "Ibn Rushd",
+      "author_slug": "ibn-rushd",
+      "work_slug": "al-daruri",
+      "area": [
+        "uṣūl al-fiqh",
+        "logic"
+      ],
+      "status": "migration-pending",
+      "url": null,
+      "note": "A separate working translation exists; not yet imported into this repository"
+    },
+    {
+      "id": "ibn-rushd-bidaya",
+      "title": "Bidāyat al-Mujtahid",
+      "arabic": "بداية المجتهد",
+      "author": "Ibn Rushd",
+      "author_slug": "ibn-rushd",
+      "work_slug": "bidayat-al-mujtahid",
+      "area": [
+        "fiqh",
+        "comparative law"
+      ],
+      "status": "migration-pending",
+      "url": null,
+      "note": "Representative fiqh analysis underway elsewhere; public reader not imported"
+    },
+    {
+      "id": "ibn-ajiba-bahr",
+      "title": "al-Baḥr al-Madīd",
+      "arabic": "البحر المديد",
+      "author": "Ibn ʿAjība",
+      "author_slug": "ibn-ajiba",
+      "work_slug": "al-bahr-al-madid",
+      "area": [
+        "tafsīr",
+        "ishārāt"
+      ],
+      "status": "migration-pending",
+      "url": null,
+      "note": "Translation project exists separately; not yet migrated into this repository"
+    },
+    {
+      "id": "jurjani-mawaqif",
+      "title": "Sharḥ al-Mawāqif",
+      "arabic": "شرح المواقف",
+      "author": "al-Jurjānī",
+      "author_slug": "al-jurjani",
+      "work_slug": "sharh-al-mawaqif",
+      "area": [
+        "kalām",
+        "natural philosophy"
+      ],
+      "status": "migration-pending",
+      "url": null,
+      "note": "Separate ongoing translation; not yet migrated into this repository"
+    }
+  ]
+}

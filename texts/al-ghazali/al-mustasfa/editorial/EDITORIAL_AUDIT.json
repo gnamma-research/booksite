@@ -1,0 +1,42 @@
+{
+  "edition": "0.6",
+  "date": "2026-10-19",
+  "source": "OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1",
+  "counts": {
+    "bilingual_excerpt_records": 111,
+    "complete_source_paragraph_records": 16,
+    "selected_excerpt_records": 53,
+    "terminology_records": 47,
+    "other_works_in_register": 14,
+    "evidence_graded_crosswork_records": 24,
+    "later_dictionary_excerpts_not_full_entries": 17,
+    "Hammad_comparison_dossiers": 8,
+    "full_Arabic_witness_pages": 381,
+    "full_Arabic_witness_paragraphs": 2977,
+    "complete_English_chapters": 0,
+    "manuscript_variants_collated": 0
+  },
+  "by_part": {
+    "preface": 9,
+    "prelim": 43,
+    "logic": 18,
+    "hukm": 7,
+    "evidence": 7,
+    "maslaha": 8,
+    "inference": 7,
+    "ijtihad": 12
+  },
+  "scope_limitations": [
+    "The full Arabic witness is a transcription, not a manuscript-based critical edition",
+    "The English translations are selected excerpts; the full work remains untranslated",
+    "Multiple excerpts overlap, so record count is not a measure of continuous coverage",
+    "Hammad comparison is selective, without exhaustive word-for-word collation",
+    "Cross-work evidence grades must not be conflated with exact authorial identity",
+    "Later dictionary records are excerpts and sense summaries, not complete entries"
+  ],
+  "validation": {
+    "unique_ids": true,
+    "referenced_terms_exist": true,
+    "source_links_exist": true
+  }
+}
