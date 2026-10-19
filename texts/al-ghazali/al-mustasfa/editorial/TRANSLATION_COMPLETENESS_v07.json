@@ -1,0 +1,10 @@
+{
+  "edition": "0.7",
+  "totalArabicPageUnits": 381,
+  "openingSequentialTranslatedPageUnits": 14,
+  "remainingArabicOnlyPageUnits": 367,
+  "firstUntranslatedPage": "V01P016",
+  "englishStatuses": "Working page-aligned translation, not critical proofed",
+  "sourceURI": "0505Ghazali.Mustasfa.Shamela0005459-ara1",
+  "method": "Paragraph-count equivalence checked for each page; no claim of complete Arabic critical collation or full English work."
+}
