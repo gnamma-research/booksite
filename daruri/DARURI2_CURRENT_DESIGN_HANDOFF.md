@@ -1,5 +1,14 @@
 # Darūrī 2 — canonical Gnamma reader design handoff
 
+## Latest UI override — Arabic tri-state and dock, 19 October 2026 (supersedes older tashkīl instructions)
+- Canonical source is the **latest master** `daruri/index.html`; UI commits `2aea4d71` and `e19fed9d`, offline cache `33f32014`. Merge Darūrī 2 **scholarly text/data only** into that current shell, never overwrite the toolbar, headings, right-pane control, numbered dock, dictionary, notes or PDF addresses.
+- The main toolbar shows **two independently usable glyph controls**, **ع** and **EN**, without a third `ت / تَ` button. Pressing Arabic when hidden turns it on **without vowels**; pressing it again adds vowel marks (**عَ**); pressing it again hides Arabic **only when English remains visible**. If English is off, that third press simply returns to **unvowelled Arabic**. If English is the sole active language, pressing EN does not blank the page. This behavior is implemented by `nextLanguageControlState(lang,vowels,value)` and `toggleLanguageVisibility(value)` and retains the existing saved preferences and scroll position.
+- The redundant tashkīl switch has been removed from the reading-apparatus dialog; concept, vocabulary, Bidāya-application and critical-note switches remain available. The right-side reading-context button is now **immediately beside Focus** in the same toolbar group.
+- The **persistent bottom dock** is unchanged: narrow previous **arrow + destination §number**, wide middle **current part, §number, and full current section title**, narrow next **arrow + destination §number**. The separate previous/next **titles at the end of the matn** remain. Page-top part name and section number remain **on the same typographic line** with identical styling.
+- The old no-JavaScript fallback retains accessible HTML-only language and voweling controls; JavaScript-enhanced pages use the tri-state cycle. Do not remove the fallback or claim JS-free HTML can cycle through three states without scripting.
+- **Regression test**: `node daruri/qa/verify-language-cycle.js` along with `node daruri/qa/verify-heading-contract.js`. The main JavaScript was syntax-parsed and nine language-state transitions were checked before the commits. This does not constitute live iPhone/Safari QA. The currently published 170-page Bou Akl comparative PDF, its variant report and the historical source distinctions are unchanged.
+
+
 
 ## Toolbar correction — 19 October 2026 (current; supersedes earlier two-row mobile instruction)
 - Site commit `94cb4edf750dd2e07fe33c54a13f38a2b8c8e590` is the authoritative compact toolbar override. Always preserve it when merging new Darūrī 2 Arabic, English, notes or pagination.
