@@ -1749,7 +1749,7 @@ body.reading-active .gn-reader-global-actions{display:flex;align-items:center;ga
 .gn-reader-global-actions button{display:inline-flex!important;justify-content:center;align-items:center;width:32px!important;min-width:32px!important;height:36px!important;padding:4px!important;border:0!important;background:transparent!important;color:var(--text-soft)}
 .reading-controls-inner{justify-content:center!important;gap:3px!important}
 .gn-reader-global-actions svg{height:17px;width:17px}
-body:not(.reading-active) .topbar .header-leading{min-height:36px}
+body:not(.reading-active) .topbar .header-leading{min-height:36px} body.reading-active #gnHomeContents{display:none!important}
 .reader .gn-reading-aftertext,.reader .section-foot{background:transparent!important;box-shadow:none!important;border:0!important}
 .reader .gn-reading-aftertext{border-top:1px solid var(--line)!important;padding-top:8px}
 .reader .gn-aftertext-kicker{display:none!important}
@@ -2223,7 +2223,7 @@ Contents I · Source headings
 </svg>
 <div aria-hidden="true" class="reading-progress"><div id="progressIndicator"></div></div>
 <header class="topbar">
-<div class="topbar-inner"><div class="header-leading"></div>
+<div class="topbar-inner"><div class="header-leading"><button id="gnHomeContents" class="icon-btn" type="button" aria-label="Open contents" title="Contents" onclick="document.getElementById('menuBtn').click()"><svg class="icon"><use href="#i-menu"></use></svg></button></div>
 <a aria-label="al-Ḍarūrī · Ibn Rushd · Home" class="brand daruri-brand" href="#home"><strong>al-Ḍarūrī</strong><small dir="rtl" lang="ar">الضَّرُورِيّ · ابْن رُشْد</small></a>
 <div class="header-tools"></div>
 </div>
