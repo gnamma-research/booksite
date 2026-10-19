@@ -2897,8 +2897,8 @@ function syncReadingChrome() {
   $('#persistentLanguages').innerHTML = languageButtons();
   
   if(!reading||state.focusMode||!state.showHeader)closeReadingContextSheet();
-  else if(!$('#readingContextPanel').hidden)renderReadingContextSheet();
-  const contextControl=$('#contextToolbar');if(contextControl){const on=!$('#readingContextPanel').hidden;contextControl.setAttribute('aria-pressed',String(on));contextControl.setAttribute('aria-expanded',String(on));contextControl.setAttribute('aria-label',on?'Close reading context panel':'Open reading context panel');contextControl.title=contextControl.getAttribute('aria-label');contextControl.classList.toggle('active',on);}
+  else if(Boolean($('#readingContextPanel') && !$('#readingContextPanel').hidden))renderReadingContextSheet();
+  const contextControl=$('#contextToolbar');if(contextControl){const on=Boolean($('#readingContextPanel') && !$('#readingContextPanel').hidden);contextControl.setAttribute('aria-pressed',String(on));contextControl.setAttribute('aria-expanded',String(on));contextControl.setAttribute('aria-label',on?'Close reading context panel':'Open reading context panel');contextControl.title=contextControl.getAttribute('aria-label');contextControl.classList.toggle('active',on);}
   const current=String(state.n),savedHere=getBookmarked(current);
   const saveAction=$('#readerSaveAction'),copyAction=$('#readerCopyAction'),shareAction=$('#readerShareAction');
   if(saveAction){saveAction.dataset.bookmark=current;saveAction.setAttribute('aria-pressed',String(savedHere));saveAction.setAttribute('aria-label',savedHere?'Remove saved section':'Save section');saveAction.title=saveAction.getAttribute('aria-label');saveAction.classList.toggle('is-saved',savedHere);const label=$('#readerSaveLabel');if(label)label.textContent=savedHere?'Remove bookmark':'Save section';}
@@ -3261,8 +3261,8 @@ function bindReaderEnhancements() {
    const jump=e.target.closest('[data-reading-context-jump]');
    if(jump){e.preventDefault();const dest=jump.dataset.readingContextJump;closeReadingContextSheet();if(dest==='notes'&&!state.showNotes)setVisibility('notes',true);if(dest==='applications'&&!state.showApplications)setVisibility('applications',true);requestAnimationFrame(()=>document.getElementById(dest)?.scrollIntoView({block:'start',behavior:'smooth'}));return;}
   },true);
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#readingContextPanel').hidden)closeReadingContextSheet();});
-  document.addEventListener('click',e=>{if(!$('#readingContextPanel').hidden&&!e.target.closest('#readingContextPanel,#contextToolbar'))closeReadingContextSheet();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&Boolean($('#readingContextPanel') && !$('#readingContextPanel').hidden))closeReadingContextSheet();});
+  document.addEventListener('click',e=>{if(Boolean($('#readingContextPanel') && !$('#readingContextPanel').hidden)&&!e.target.closest('#readingContextPanel,#contextToolbar'))closeReadingContextSheet();});
   // The actions dropdown is distinct from the reading controls, and closes after use.
   document.addEventListener('click',e=>{const menu=$('#readerActionMenu');if(menu?.open&&(!e.target.closest('#readerActionMenu')||e.target.closest('#readerActionMenu .reader-action-item')))menu.open=false;});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){const menu=$('#readerActionMenu');if(menu?.open){menu.open=false;e.stopPropagation();}}});
