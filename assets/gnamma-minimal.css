@@ -98,3 +98,6 @@ body.gn-ambient .gn-iconnav a:focus .gn-tooltip{opacity:1}
  .gn-index-screen .gn-index-position {align-items:flex-end}
  .gn-index-screen .gn-index-panel {width:100%;padding:9px 14px;max-height:54svh}
 }
+
+/* Menu icons are intentionally unlabelled visually, including hover and keyboard focus. Screen-reader aria-labels remain. */
+.gn-iconnav .gn-tooltip{display:none!important}
