@@ -101,3 +101,12 @@ This section preserves the latest reader/dictionary fixes and **supersedes any o
 - **Design validation:** JavaScript and JSON script blocks passed compilation/parsing checks on the committed reader and dictionary; **this does not establish iPhone Safari end-to-end testing or confirm CDN propagation**.
 
 Relevant commits: `3b3a692f` (remove redundant Contents option), `44edcaf8` (heading/page/copy), `0af2ac1c` (dictionary browser). The master branch may contain later improvements; always merge onto its current tree.
+
+## 19 October 2026 — Framed post-matn reading apparatus (latest)
+
+Keep the Reading Context button in the toolbar, but do not confuse its contextual side sheet with the apparatus beneath the main bilingual text.
+On every reading section, the latter now has a light dividing rule, a small 'Reading apparatus' caption, and independent theme-aware, bordered cards for Concepts, Technical vocabulary, Bidāya applications, and Textual & editorial notes.
+The authoritative code is in daruri/index.html on master: CSS style block gnamma-aftertext-cards-20261019; HTML rendered by the afterText variable inside renderReader(), wrapping existing tags, defs, appCards, and noteCards without altering their content or section IDs.
+On phones the card padding/gap scales down; Focus mode hides the post-matn apparatus. Maintain all existing sections, content and links while integrating future Daruri2 editorial corrections.
+Implementation: https://github.com/gnamma-research/booksite/commit/b8aae518fdd10173a3ec556bca37aa852d69252d
+Quality limit: GitHub markup/source checks only so far; an independent interactive mobile Safari run remains to be completed.
