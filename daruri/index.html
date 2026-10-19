@@ -2719,6 +2719,8 @@ function closeContextPanel(){state.rightOpen=false;if(!compactContext())state.ri
 function toggleSide(side){if(side==='left')toggleContentsPanel();}
 function readPreference(kind){return ({terms:state.showTerms,concepts:state.showConcepts,notes:state.showNotes,applications:state.showApplications,left:compactNavigation()?state.drawerOpen:state.leftVisible,right:false,header:state.showHeader})[kind]??false;}
 function applyCleanReader(){
+ // Do not allow persisted Focus + hidden header to strand the reader without controls.
+ if(!state.showHeader && state.focusMode)state.focusMode=false;
  const cls={'hide-terms':!state.showTerms,'hide-concepts':!state.showConcepts,'hide-notes':!state.showNotes,'hide-applications':!state.showApplications,'left-collapsed':!state.leftVisible,'right-collapsed':!state.rightVisible,'focus-mode':state.focusMode,'header-collapsed':!state.showHeader,'context-open':state.rightOpen&&compactContext()};
  for(const [name,value] of Object.entries(cls))document.body.classList.toggle(name,value);
  const shownHeader=state.showHeader&&!state.focusMode;
@@ -2743,7 +2745,7 @@ function setVisibility(kind,on){
  if(kind==='right'&&compactContext()){
   state.rightOpen=Boolean(on);if(on){closeOverlays();closeDrawer();}
  }
- if(on&&['header','left','right'].includes(kind))state.focusMode=false;
+ if(kind==='header'||(on&&['left','right'].includes(kind)))state.focusMode=false;
  save();applyCleanReader();
  if(state.route==='reader'){
   const y=window.scrollY;
