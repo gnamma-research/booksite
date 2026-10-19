@@ -39,9 +39,13 @@
         "uṣūl al-fiqh",
         "logic"
       ],
-      "status": "selected-source-excerpts-preview",
-      "url": "texts/ibn-rushd/al-daruri/",
-      "note": "A separate working translation exists; not yet imported into this repository. A limited scholarly reader preview is now available; source corpus still awaits import."
+      "status": "working-bilingual-reader",
+      "url": "daruri/",
+      "note": "Bilingual scholarly reading edition with 258 authorial sections plus colophon, 416 aligned passages, explanatory notes, and selected classical dictionary excerpts. AI-assisted, not manuscript-collated.",
+      "language": [
+        "ar",
+        "en"
+      ]
     },
     {
       "id": "ibn-ajiba-bahr",
