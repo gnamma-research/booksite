@@ -110,3 +110,15 @@ The authoritative code is in daruri/index.html on master: CSS style block gnamma
 On phones the card padding/gap scales down; Focus mode hides the post-matn apparatus. Maintain all existing sections, content and links while integrating future Daruri2 editorial corrections.
 Implementation: https://github.com/gnamma-research/booksite/commit/b8aae518fdd10173a3ec556bca37aa852d69252d
 Quality limit: GitHub markup/source checks only so far; an independent interactive mobile Safari run remains to be completed.
+
+
+## 19 October 2026 — Focus and hidden-header state correction (supersedes older conflicting advice)
+
+**Canonical source:** `daruri/index.html` on master, commits `60fc0095` and `d6abc985`. Do not apply an earlier CSS shell that changes these states.
+
+- **Focus** and **Hide header** are different actions. Focus suppresses the masthead and peripheral apparatus but keeps the compact control strip visible, with its Focus control usable to exit. Focus **never** shows the floating `#restoreHeader` control at lower right.
+- **Hide header** deliberately removes **all** reading chrome as one group: masthead, language switches, header toggle, book/apparatus menu, section Save/Copy/Share, reading context, Focus, progress display, bottom dock/navigation, and left contents. The main matn remains. While the header is intentionally hidden and Focus is off, one small lower-right `#restoreHeader` recovery button is visible to restore the full chrome.
+- State sync: `applyCleanReader()` sets `#restoreHeader.hidden = state.showHeader || state.focusMode`, and normalizes an impossible legacy state where Focus and hidden header are both saved. `setVisibility('header', …)` also exits Focus to avoid trapping the user without a recovery control. The final CSS override is `#gnamma-independent-focus-header-20261019`.
+- **No duplicate controls.** Do not add a second floating Focus toggle, duplicate language buttons, or restore button in Focus mode. Keep the right-hand Reading Context sheet toggle immediately before the far-right Focus icon when chrome is shown.
+- **Source integrity:** These commits are UI-only; no Darūrī 2 text, headings, editorial notes, concept mappings, dictionary entries, 170-page PDF or variants were changed. Cache key updated to `daruri-reader-v20261019m`.
+- **QA:** JavaScript source compiles and structural DOM/CSS selector checks pass. A live iPhone/Safari end-to-end interaction test is still required, particularly Focus on/off, Hide header / floating restore, and reload with a saved hidden-header preference.
