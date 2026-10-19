@@ -4574,7 +4574,7 @@
   "wholeArabic": {
     "witness": "OpenITI 0505Ghazali.Mustasfa.Shamela0005459-ara1",
     "source": "https://github.com/OpenITI/0525AH/blob/master/data/0505Ghazali/0505Ghazali.Mustasfa/0505Ghazali.Mustasfa.Shamela0005459-ara1",
-    "json": "../../../arabic/full-arabic-pages.json",
+    "json": "https://raw.githubusercontent.com/gnamma-research/booksite/master/arabic/full-arabic-pages.json",
     "license": "CC BY-NC-SA 4.0",
     "pages": 381,
     "paragraphs": 2977,

@@ -9,3 +9,7 @@ The Gnamma Research digital working edition of *al-Mustaṣfā min ʿIlm al-Uṣ
 - `../../../arabic/full-arabic-pages.json` — shared full Arabic witness (also retained in its initial GitHub location for link stability).
 
 This is **not** a finished full English translation. Read `editorial/EDITORIAL_STATUS.md` first.
+
+## Offline and mobile
+
+The full GitHub-hosted reader uses the shared Arabic JSON at `arabic/full-arabic-pages.json`. If that file is not available beside an unzipped offline copy, the reader tries the public GitHub raw-source URL when online. Selected English passages, terminology and apparatus are embedded in `assets/data.js`. A separate standalone HTML version is available as a downloadable export.

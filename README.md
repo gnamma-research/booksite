@@ -31,3 +31,9 @@ No copyrighted Hammad dissertation PDFs are committed. The Arabic transcription 
 ### Hosting
 
 Use GitHub Pages from this repository's default branch `/ (root)` when Pages is activated in Settings → Pages. Deployment is separate from committing files; don't assume the website is live until GitHub Pages returns an active site.
+
+## Mobile deployment status
+
+All paths are prepared for a mobile-first GitHub Pages site. As of this publication pass, GitHub Pages was not enabled on the `booksite` repository. Enable Settings → Pages → Deploy from a branch → `master` / `(root)` and save. GitHub Pages activation is not automatically performed by commits; no live site should be claimed without verification.
+
+The download ZIP intentionally omits the full 1.8 MB Arabic corpus already committed under `arabic/full-arabic-pages.json`. Its reader falls back to that public GitHub source online if a local copy is missing. For a fully offline Arabic archive, add that file at the matching path.
