@@ -1214,30 +1214,28 @@ body.header-collapsed .topbar,body.header-collapsed .reading-progress,
 body.header-collapsed #readerDock:not([hidden]),
 body.header-collapsed .bottom-nav{display:none!important}
 </style>
-<style id="gnamma-nav-numbers-20261019">
-/* Adjacent-section dock: number-only arrows and a generously sized central title. */
-#readerDock.reader-dock{
-  grid-template-columns:64px minmax(0,1fr) 64px;
-  width:min(800px,calc(100% - 24px));
-  gap:4px;
-}
-#readerDock .reader-step{min-width:0;justify-content:center;text-align:center;gap:4px;padding:7px 3px}
-#readerDock .reader-step.next{justify-content:center;text-align:center}
-#readerDock .reader-step-number{min-width:0;flex:0 1 auto;overflow:hidden}
-#readerDock .reader-step-number small{font-size:12px;font-weight:700;color:var(--accent);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-#readerDock .reader-location{min-width:0;padding:5px 8px}
+<style id="gnamma-nav-arrows-20261019">
+/* Previous/next buttons are arrows alone; their destination titles remain accessible. */
+#readerDock.reader-dock{grid-template-columns:52px minmax(0,1fr) 52px;width:min(860px,calc(100% - 20px));gap:4px;padding:4px}
+#readerDock .reader-step,#readerDock .reader-step.next{display:flex;align-items:center;justify-content:center;min-width:0;min-height:50px;padding:5px;gap:0}
+#readerDock .reader-step>.icon{display:block;width:20px;height:20px;flex:0 0 auto;align-self:center;margin:0}
+#readerDock .reader-location{min-width:0;padding:6px 12px}
 #readerDock .reader-location-text{min-width:0;width:100%}
-#readerDock #dockTitle{font-size:clamp(12px,1.75vw,15px);max-width:100%}
-#readerDock .reader-location .icon{width:14px;flex-shrink:0}
+#readerDock #dockTitle{max-width:100%;font-size:clamp(13px,1.75vw,16px)}
+#readerDock .reader-location .icon{width:15px;flex-shrink:0}
 @media(max-width:540px){
- #readerDock.reader-dock{grid-template-columns:45px minmax(0,1fr) 45px;gap:1px;padding:4px;width:calc(100% - 12px)}
- #readerDock .reader-step{padding:5px 1px;gap:2px}
- #readerDock .reader-step .icon{width:13px;height:13px}
- #readerDock .reader-step-number small{font-size:10px}
- #readerDock .reader-location{padding:5px 3px}
+ #readerDock.reader-dock{grid-template-columns:44px minmax(0,1fr) 44px;width:calc(100% - 12px);gap:2px;padding:3px}
+ #readerDock .reader-step,#readerDock .reader-step.next{min-height:50px;padding:4px}
+ #readerDock .reader-step>.icon{width:19px;height:19px}
+ #readerDock .reader-location{padding:5px 4px}
  #readerDock #dockTitle{font-size:13px}
  #readerDock .reader-location .icon{display:none}
 }
+/* Section reference is appended to the visible main title in its own typeface. */
+.reader .reader-heading .eyebrow .gn-heading-part{font:inherit;color:inherit;letter-spacing:inherit}
+.reader .reader-heading .eyebrow .gn-section-number-ar-only{display:none;white-space:nowrap;font:inherit;color:inherit;letter-spacing:inherit}
+.reader.mode-arabic .reader-heading .eyebrow .gn-section-number-ar-only{display:inline}
+.reader .paired-heading .gn-heading-ref{display:inline;white-space:nowrap;font:inherit;color:inherit;letter-spacing:inherit;font-weight:inherit}
 </style><style id="gnamma-navigation-layout-oct19">
 #readingControls .reading-controls-inner{display:flex!important;justify-content:space-between!important;align-items:center!important;gap:clamp(3px,.8vw,10px)!important}
 #readingControls .reader-language-and-actions{display:flex;align-items:center;gap:5px;flex:0 0 auto}
@@ -1855,9 +1853,9 @@ Contents I · Source headings
  </div></div>
 <div aria-live="polite" class="toast" id="toast" role="status"></div>
 <nav aria-label="Adjacent sections and section picker" class="reader-dock" hidden="" id="readerDock">
-<button class="reader-step previous" id="readerPrevious" type="button"><svg aria-hidden="true" class="icon"><use href="#i-left"></use></svg><span class="reader-step-number"><small></small></span></button>
+<button class="reader-step previous" id="readerPrevious" type="button"><svg aria-hidden="true" class="icon"><use href="#i-left"></use></svg></button>
 <button class="reader-location" data-open-jump="" id="openJump" type="button"><span class="reader-location-text"><span class="reader-location-meta"><span id="dockPart"></span><span aria-hidden="true">·</span><span id="dockSection"></span></span><span id="dockTitle"></span></span><svg aria-hidden="true" class="icon"><use href="#i-list"></use></svg></button>
-<button class="reader-step next" id="readerNext" type="button"><span class="reader-step-number"><small></small></span><svg aria-hidden="true" class="icon"><use href="#i-right"></use></svg></button>
+<button class="reader-step next" id="readerNext" type="button"><svg aria-hidden="true" class="icon"><use href="#i-right"></use></svg></button>
 </nav>
 <div aria-atomic="true" aria-live="polite" class="sr-only" id="readingStatus" role="status"></div>
 <div class="overlay" hidden="" id="jumpOverlay" role="presentation">
@@ -2025,7 +2023,7 @@ function renderReader(){const s=sections.get(state.n);if(!s)return;const edition
  const noteCards=critical.length?`<div class="section-foot" id="notes"><h2 class="subheading">Textual &amp; editorial notes <small style="font:12px var(--sans);color:var(--muted)">(${critical.length})</small></h2><div class="note-grid">${critical.map(note=>`<details class="note-item ${note.kind==='crux'?'crux':''}" id="note-${esc(note.id)}"><summary><span class="note-id">${esc(note.id)}</span><span>${esc(note.kind==='crux'?'Textual difficulty':note.kind[0].toUpperCase()+note.kind.slice(1)+' note')}</span><span class="note-kind">${esc(note.kind)}</span></summary>${noteScopeHTML(note)}<p>${esc(note.text)}</p></details>`).join('')}</div></div>`:'';
  const afterText=(tags||defs||appCards||noteCards)?'<section class="gn-reading-aftertext" aria-label="Reading apparatus"><div class="gn-aftertext-kicker" aria-hidden="true">Reading apparatus</div>'+tags+defs+appCards+noteCards+'</section>':'';
  const nextN=isCol?null:pn===258?'colophon':pn+1,prevN=isCol?258:pn===1?null:pn-1;
- $('#mainContent').innerHTML=`<div class="reader mode-${state.lang}" id="reader"><div class="reader-heading"><div class="hero"><div class="eyebrow"><span class="rule"></span>${isCol?'LATER MANUSCRIPT RECORD':esc(p.label)} · ${esc(sectionRef(s.id))}</div><h1 class="paired-heading"><span class="editorial-heading">${esc(s.title)} <button type="button" class="editorial-key" data-editorial-marker aria-label="Explain editorial heading marker E" title="Editorial heading">(E)</button></span>${s.headingAr?`<span class="source-heading-en" title="English translation of original Arabic heading">${esc(s.headingEn||s.title)}</span><span class="arabic-rubric source-heading-ar" dir="rtl" lang="ar" title="${esc(s.headingEn||'Printed Arabic heading')}">${esc(state.vowels?(s.headingVocalized||s.headingAr):bareArabic(s.headingAr))}</span>`:''}</h1><p class="subtitle">${isCol?'Copyist’s addition, not part of Ibn Rushd’s authorial text.':esc(p.caption)}</p><div class="meta-row"><span title="${esc(edition.title)}" aria-label="${esc(edition.long)}">Ar. ${esc(edition.short)} ${esc(edition.page)}</span>${s.pdfPage?`<span><a title="Gnamma Darūrī bilingual translation PDF, page ${s.pdfPage}" href="daruri.pdf#page=${s.pdfPage}" target="_blank" rel="noopener">PDF ${s.pdfPage} ↗</a></span>`:''}</div></div></div><div id="searchLocator" class="search-locator" hidden aria-live="polite"></div><div class="reading-frame"><div class="parallel-text">${segments}</div></div>${afterText}<div class="chapter-nav" aria-label="Adjacent sections">${prevN?`<button type="button" aria-label="Read preceding section: ${esc(sections.get(String(prevN)).title)}" data-section="${esc(prevN)}"><span class="chapter-nav-direction" aria-hidden="true">${icon('left')}</span><span class="next-title">${esc(sections.get(String(prevN)).title)}</span></button>`:'<div style="flex:1"></div>'}${nextN?`<button type="button" aria-label="Read following section: ${esc(sections.get(String(nextN)).title)}" data-section="${esc(nextN)}"><span class="next-title">${esc(sections.get(String(nextN)).title)}</span><span class="chapter-nav-direction" aria-hidden="true">${icon('right')}</span></button>`:'<div style="flex:1"></div>'}</div></div>`;
+ $('#mainContent').innerHTML=`<div class="reader mode-${state.lang}" id="reader"><div class="reader-heading"><div class="hero"><div class="eyebrow"><span class="rule"></span><span class="gn-heading-part">${isCol?'LATER MANUSCRIPT RECORD':esc(p.label)}<span class="gn-section-number-ar-only">&nbsp;·&nbsp;${esc(sectionRef(s.id))}</span></span></div><h1 class="paired-heading"><span class="editorial-heading">${esc(s.title)} <button type="button" class="editorial-key" data-editorial-marker aria-label="Explain editorial heading marker E" title="Editorial heading">(E)</button>${!s.headingAr?`<span class="gn-heading-ref" title="Editorial section number">&nbsp;${esc(sectionRef(s.id))}</span>`:''}</span>${s.headingAr?`<span class="source-heading-en" title="English translation of original Arabic heading">${esc(s.headingEn||s.title)}<span class="gn-heading-ref" title="Editorial section number, not part of the printed Arabic heading">&nbsp;${esc(sectionRef(s.id))}</span></span><span class="arabic-rubric source-heading-ar" dir="rtl" lang="ar" title="${esc(s.headingEn||'Printed Arabic heading')}">${esc(state.vowels?(s.headingVocalized||s.headingAr):bareArabic(s.headingAr))}</span>`:''}</h1><p class="subtitle">${isCol?'Copyist’s addition, not part of Ibn Rushd’s authorial text.':esc(p.caption)}</p><div class="meta-row"><span title="${esc(edition.title)}" aria-label="${esc(edition.long)}">Ar. ${esc(edition.short)} ${esc(edition.page)}</span>${s.pdfPage?`<span><a title="Gnamma Darūrī bilingual translation PDF, page ${s.pdfPage}" href="daruri.pdf#page=${s.pdfPage}" target="_blank" rel="noopener">PDF ${s.pdfPage} ↗</a></span>`:''}</div></div></div><div id="searchLocator" class="search-locator" hidden aria-live="polite"></div><div class="reading-frame"><div class="parallel-text">${segments}</div></div>${afterText}<div class="chapter-nav" aria-label="Adjacent sections">${prevN?`<button type="button" aria-label="Read preceding section: ${esc(sections.get(String(prevN)).title)}" data-section="${esc(prevN)}"><span class="chapter-nav-direction" aria-hidden="true">${icon('left')}</span><span class="next-title">${esc(sections.get(String(prevN)).title)}</span></button>`:'<div style="flex:1"></div>'}${nextN?`<button type="button" aria-label="Read following section: ${esc(sections.get(String(nextN)).title)}" data-section="${esc(nextN)}"><span class="next-title">${esc(sections.get(String(nextN)).title)}</span><span class="chapter-nav-direction" aria-hidden="true">${icon('right')}</span></button>`:'<div style="flex:1"></div>'}</div></div>`;
  applyReadingState();
 }
 function appCard(a){return `<article class="application-callout" id="application-${esc(a.id)}"><div class="app-label">APPLICATION ${esc(a.id)} · ${esc(a.book)}</div><h3>${esc(a.title)}</h3><div class="app-locator"><b>Bidāyat al-Mujtahid</b> · ${esc(a.locator)}</div><p>${esc(a.text)}</p><div class="application-links"><a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">Read the Arabic source ${icon('external')}</a><button type="button" data-app="${esc(a.id)}">Reference details</button>${a.also?.length?`<span class="fineprint">Related: ${a.also.map(x=>sectionButton(x)).join(' · ')}</span>`:''}</div></article>`}
@@ -2374,7 +2372,6 @@ function syncReadingChrome() {
     if (target) button.dataset.section = String(target.id); else delete button.dataset.section;
     button.title = target ? `${label}: ${sectionRef(target.id)} · ${target.title}` : `No ${label.toLowerCase()} section`;
     button.setAttribute('aria-label', button.title);
-    button.querySelector('small').textContent = target ? sectionRef(target.id) : '';
   }
   $('#dockPart').textContent = section.id === 'colophon' ? 'Manuscript record' : (part.id === 0 ? 'Introduction' : 'Part '+['','I','II','III','IV'][part.id]);
   $('#dockSection').textContent = sectionRef(section.id);
