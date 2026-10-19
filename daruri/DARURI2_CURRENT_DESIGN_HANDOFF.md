@@ -1,11 +1,19 @@
 # Darūrī 2 — canonical Gnamma reader design handoff
+
+## Latest bottom-dock and heading correction (19 October 2026 — supersedes earlier side-number rules)
+- Canonical reader: `master/daruri/index.html`, starting from commit `812d081fee996c9438c9f172f0969a378fcaf873` (offline cache updated in `de5b78defd9724eb204431937b73da44dfeb6d29`). Always fetch current master when integrating new Darūrī 2 text.
+- **Fixed bottom dock:** previous/next buttons contain **arrows only**, *no section numbers, no destination titles*. They retain explanatory accessible labels. The middle jump button is wider and displays the **full part name** (`part.label`, e.g. “Part II · Sources of proof”), **current section number**, and **section title**. On narrow screens, the title may wrap to two lines.
+- **At the bottom of each actual reading page**, retain the two previous/next article **titles** (this is separate from the fixed dock). Do not revert those end-of-text links to section numbers.
+- **Main page heading:** show the part label and section number together on **one line** and in exactly the same colour, font and size; not in a second row. The original printed Arabic and editorial headings continue to obey the chosen language; their heading-source link is unchanged.
+- Preserve Gnamma CSS/JS shell, current source-controlled Darūrī 2 Arabic–English readings, corrected PDF, concept navigation, dictionary, return state and all note/citation IDs. Do not replace the live reader with an older design package.
+
 Updated 19 October 2026 after the inline heading-link revision (commit 86c41358).
 
 ## Latest reader-toolbar revision — 19 October 2026 (supersedes prior toolbar placement rules)
 - Canonical UI commit: `85ee66c2ef9b0c089d0a1aa80455c72767d2c51c`; keep latest `daruri/index.html` on `master`.
 - Reader controls now put **Arabic (ع), separate clickable tashkīl (تَ on / ت off), then English (EN)** next to each other. Arabic/English determine visible language(s); tashkīl independently adds/removes vowel marks, even in parallel mode. It is accessible in the apparatus too.
 - **Save, Copy and Share** appear directly to the right as **three compact, separate bordered buttons inside their own outlined group**, with clear ARIA labels. Apparatus/Context and Header/Focus remain in subsequent groups. Narrow screens use a two-row layout so buttons are not crushed or clipped.
-- **Fixed bottom dock** retains `← §N` | **wide current section title / jump picker** | `§N →`, with *numbers, not previous/next titles* in the small side controls. The **end-of-article** previous/next title links remain unchanged.
+- **Fixed bottom dock** now has **arrow-only previous/next** | **wide part title, §number and section title / jump picker** | **arrow-only next**. The end-of-article previous/next title links remain unchanged. The **end-of-article** previous/next title links remain unchanged.
 - **Main reading heading** keeps Part/section number together on one typographic line, without a duplicated section-number row.
 - Preserve Gnamma themes, dictionary return state, concept repairs, Bou Akl collation, and current 170-page bilingual PDF, all without replacing the source-controlled text when changing the UI.
 - JavaScript syntax was checked before publishing. Real-device visual interaction is still to be verified.
