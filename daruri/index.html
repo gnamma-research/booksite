@@ -3595,7 +3595,7 @@ function takeDictionaryReturn(){
         blocks.push('<h2 class="gn-continuous-part-heading">'+esc(partLabel)+'</h2>');
         lastPart=partLabel;
       }
-      const duplicate=Boolean(sec.headingEn&&nearDuplicate(sec.title,sec.headingEn));
+      const duplicate=Boolean(sec.headingEn&&headingsNearDuplicate(sec.title,sec.headingEn));
       const bilingualOriginal=sec.headingAr?
         '<span class="source-heading-en'+(duplicate?' single-english-heading':'')+'">'+esc(sec.headingEn||sec.title)+'</span>'+
         '<span class="arabic-rubric source-heading-ar" lang="ar" dir="rtl">'+esc(state.vowels?(sec.headingVocalized||sec.headingAr):bareArabic(sec.headingAr))+'</span>':'';
