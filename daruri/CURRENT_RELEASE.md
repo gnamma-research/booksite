@@ -128,3 +128,10 @@ Selected English type is applied to reader prose, notes, definitions, dictionary
 Validation: existing heading/navigation, language-cycle and focus-mode gates pass (259 sections and 416 passages). All 38 focused checks pass: 18 English/integration and 20 Arabic regression checks, including native reset, failed/timeout loading, stale requests, storage restrictions, independent selections, persistence, and same-frame/separate-frame scroll preservation. The font files retain cmap, layout and variation tables. These checks use static inspection and controlled runtime mocks; no physical-phone visual test is claimed. Publication and deployed-byte verification are recorded in the release-coordination file after deployment.
 
 The separate saved Usul ZIP/pointer access blocker from the preceding release remains recorded; no duplicate saved-package upload is in progress.
+
+
+## Navigation and menu consistency — 20 October 2026
+
+Menu, Search, Appearance and Display now stay available on the reader's reference views, including the academic index and study guide. Reading-only controls appear only in the reader, while the existing return-to-reading action preserves the saved passage. A shared responsive size aligns the toolbar buttons; saved Focus/header preferences apply to reading rather than hiding reference navigation. The standalone historical dictionary also has a compact site menu. This release preserves the newer source-note cards and independent Arabic-side/stacked-order preferences and selectable Arabic and English fonts, and bumps the offline cache to navigation1.
+
+Validation: global navigation runtime regression across 128 view/mode/header/viewport combinations and nine return paths, plus focus, language-cycle and heading-contract checks. Live deployment is checked after publication.
