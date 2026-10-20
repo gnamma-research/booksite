@@ -42,6 +42,14 @@ Verification: all 84 lesson print cases pass, including complete bilingual readi
 
 For this release, repeated standalone blob uploads of the approximately 3.4 MB reader stalled. A single Git tree request with the large HTML in the tree entry’s `content` and small supporting files referenced by their blob SHAs completed successfully. This is an observed fallback for this repository, not evidence that GitHub’s deployment queue caused the delays.
 
+## Approved compact navigation and appearance — preparation, 20 October 2026
+
+The user explicitly authorized implementation and publication at 16:33 UTC in the font/design chat. The font/design publisher is preparing a focused change on current master `40f72e59856a3fec686eead58ee3a306c3efcd88`; no reader upload is running yet. Planned overlapping targets: `daruri/index.html`, `daruri/sw.js`, `daruri/download-bundle.js`, plus new isolated reading-style/menu assets and focused QA.
+
+Approved scope: retain direct Read the text, Contents, Study guide, Dictionary, Academic index, Bidāya applications and Saved passages destinations; collapse Downloads and Jump to part/Quickly continue; provide Quiet reading / Book page / Structured page through one compact Page style selector; retain the three Arabic and three English font choices with Amiri + Original defaults; remove menu sample/Preview text; keep Page layout visible with responsive Arabic/English position glyphs and accessible labels; keep existing colours expanded as visual palettes. Style changes must preserve notes availability/state, font/palette settings, independent column/stack language order, exact reading returns, print and recent accessibility/source updates. This supersedes the earlier preview-only proposal and its Text & notes label.
+
+Other chats should preserve this queued scope and avoid overlapping reader publication while the publisher prepares it. The publisher will claim the actual upload only after validation, refresh latest master, and use an expected-head check. Existing PDFs and completed releases are retained.
+
 ## Self-contained lesson print release — 20 October 2026
 
 **Published and live:** [`d6f320e`](https://github.com/gnamma-research/booksite/commit/d6f320ee4e405c50ccba74100933e4421dc9dfce). [Pages run 39454086832](https://github.com/gnamma-research/booksite/actions/runs/39454086832) succeeded at 16:04:49 UTC. Preserves the menu/navigation release `e68fb88`, both font selectors, source-note cards, language order and current PDF editions.
