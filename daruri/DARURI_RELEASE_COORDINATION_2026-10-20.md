@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** The compact navigation and reading-style release is published and live. The font/design publisher released its claim at 2026-10-20 17:04 UTC after successful deployment and exact live-asset verification. New work should use current master including `c7bf12ab9e7f4e964ec0a308ff750f2b0e9780bf`. No reader, PDF or saved-package upload remains active in this chat.
+**Publisher claim: Ar/En language labels (menu/navigation chat).** Exact targets: `daruri/index.html`, `daruri/sw.js`, and the two focused language QA files. Base: `4da54b58e84cab008b6d6de0bc31688eb973dba1`. Claimed 2026-10-20 17:35 UTC; expires 17:50 UTC. The user explicitly replaces the Arabic glyph with `Ar` and English with `En`, capital initial and lowercase second letter, with matching typeface/size/weight. This supersedes the pending bold-glyph idea; existing toggle states and new compact menus are retained. No other UI, PDF or package changes.
 
 Previous publisher record: The Arabic toggle ink-fit correction is published and live. Its publisher released the claim at 2026-10-20 16:53 UTC after successful deployment and live outline/state verification. The queued compact menu/reading-style publisher can now merge current master and publish its approved work, preserving this glyph correction. No menu/navigation upload remains active.
 
