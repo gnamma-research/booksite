@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** The matching Ar/En language-label update is published and verified live. The menu/navigation publisher released its claim at 2026-10-20 17:54:34 UTC. New work should retain source commit `896bd3c9c4ca95c6c2fe6ab5259c3ee38775a729`. No menu/navigation upload remains active.
+**Publisher claim: contents, subject index and PDF structure (study/contents chat).** Targets: `daruri/index.html`, subject/heading assets, all five reading PDFs, build sources and metadata, PDF manifest/page maps, offline package and cache, plus focused QA/release records. Base: `dccf1180c8be69694fcc6794cf2435f26fd49783`; incorporates the live Ar/En update `896bd3c`. Claimed 2026-10-20 17:56 UTC; expires 18:11 UTC. PDFs are rebuilt and staged; combined runtime gates and exact publication checks are completing. No other publisher should replace these overlapping targets while this claim is active.
 
 Previous publisher record: The Arabic toggle ink-fit correction is published and live. Its publisher released the claim at 2026-10-20 16:53 UTC after successful deployment and live outline/state verification. The queued compact menu/reading-style publisher can now merge current master and publish its approved work, preserving this glyph correction. No menu/navigation upload remains active.
 
