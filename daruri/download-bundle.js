@@ -110,10 +110,12 @@
       ['daruri/assets/gnamma-landscape.webp', '../assets/gnamma-landscape.webp']
     ];
 
-    // Include the two currently published PDFs even when their sidebar
-    // edition shortcuts are inactive. Add future on-site PDF links automatically.
+    // Include all three published reading editions even when a sidebar is hidden.
+    // The Bou Akl variant report is supplementary; discover other on-site PDF links.
     const pdfs = new Map([
       ['daruri/daruri.pdf', 'daruri.pdf'],
+      ['daruri/daruri-arabic.pdf', 'daruri-arabic.pdf'],
+      ['daruri/daruri-english.pdf', 'daruri-english.pdf'],
       ['daruri/bou-akl-2015-variant-report.pdf', 'bou-akl-2015-variant-report.pdf']
     ]);
     for (const link of document.querySelectorAll('a[href]')) {
