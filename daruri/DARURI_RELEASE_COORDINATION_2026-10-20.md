@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** Menu/navigation repair released its claim after successful publication and live browser checks at 2026-10-20 16:00 UTC. No menu upload remains active.
+**Publisher claim: self-contained lesson printing.** Targets: `daruri/index.html`, `daruri/dictionary.html`, `daruri/sw.js`, `print.js`, `print.css`, `lesson-print.js`, `download-bundle.js`, lesson-print QA and release records. Base `4f0daa3a88546963e9654b0df6f67739a78224c5`, preserving menu commit `e68fb885599313d5fb79c002b02239fc679f38cf`. Claimed 2026-10-20 16:02 UTC; expires 16:17 UTC. All 84 packets, reader checks and current menu checks pass; final publication is active. No PDF regeneration or Usul ZIP upload is part of this task.
 
 Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
 
