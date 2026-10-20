@@ -1,5 +1,7 @@
 # Darūrī publication QA and Darūrī 2 content handoff — 19 October 2026
 
+> **Historical handoff:** For the current five-PDF release, contents structure and coordination status, read [CURRENT_RELEASE.md](CURRENT_RELEASE.md) and fetch the latest `master` source. The 170-page PDF references, old page mappings and pending-work statements below record the 19 October state; recheck them against current artifacts before acting.
+
 ## Deployed files
 - `daruri/index.html` — existing Gnamma scholarly reader and static no-JavaScript fallback. Keep its layout, themes, apparatus UI, accessible controls and navigation.
 - `daruri/dictionary.html` — full historical dictionary; uses the reader's palette and theme.

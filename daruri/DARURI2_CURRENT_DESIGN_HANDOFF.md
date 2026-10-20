@@ -1,5 +1,7 @@
 # Darūrī 2 — canonical Gnamma reader design handoff
 
+> **Historical handoff:** For the current five-PDF release, contents structure and coordination status, read [CURRENT_RELEASE.md](CURRENT_RELEASE.md) and fetch the latest `master` source. The 170-page PDF references and superseded control descriptions below are historical; do not use them to overwrite the current release.
+
 ## Latest Gnamma reading-mode override — 19 October 2026 (supersedes legacy binary Focus guidance)
 
 - Canonical source: `master/daruri/index.html`. Published reader: https://gnamma-research.github.io/booksite/daruri/. Release commits: `5a004337` initial implementation, `dc355955` helper fix, `a0fa9b3e` complete mobile navigation; offline cache update `2724123e`.

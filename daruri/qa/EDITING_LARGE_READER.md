@@ -1,5 +1,7 @@
 # Editing the large Darūrī reader through the GitHub connector
 
+Read [the current release record](../CURRENT_RELEASE.md) and [shared coordination note](../DARURI_RELEASE_COORDINATION_2026-10-20.md) before integrating parallel work.
+
 The canonical page is `daruri/index.html` on the default branch. It includes the reader, no-JavaScript fallback, inlined editorial/dictionary JSON, styles and scripts. **Do not recreate this file from a PDF or an earlier copy.**
 
 ## GitHub connector workaround
@@ -25,7 +27,7 @@ This sequence succeeded on 19 October 2026. The UI change was committed in `4ad9
 - `node daruri/qa/verify-heading-contract.js` and `node daruri/qa/verify-language-cycle.js` when a local checkout/runner is available.
 - Test mobile and desktop rendering, as source checks alone do not establish visual-browser correctness.
 
-The five sidebar PDF links are live: `daruri.pdf` (259-page bilingual reference), `daruri-study.pdf` (129-page bilingual study), `daruri-english.pdf` (98 pages), `daruri-arabic.pdf` (81 pages), and `daruri-arabic-vowelled.pdf` (92 pages). The reference PDF is the daruri4 full-headwords release of 20 October 2026 and remains the destination for text links. `pdf-editions-manifest.json` records the exact source filenames, SHA-256 checksums, sizes, and page counts. Do not reintroduce pending-upload labels. The 304 contents links and 259 heading popups, plus every dynamic `sections[].pdfPage`, use physical pages from this reference PDF. When replacing it, remap by stable section ID using the PDF bookmarks: an old page may contain sections that move to different new pages, so a global old-page offset is unsafe. Keep both five-link download panels, the offline bundle defaults, and the service worker cache in sync.
+The five sidebar PDF links are live: `daruri.pdf` (259-page bilingual reference), `daruri-study.pdf` (129-page bilingual study), `daruri-english.pdf` (98 pages), `daruri-arabic.pdf` (81 pages), and `daruri-arabic-vowelled.pdf` (92 pages). The reference PDF is the daruri4 full-headwords release of 20 October 2026 and remains the destination for text links. `pdf-editions-manifest.json` records the exact source filenames, SHA-256 checksums, sizes, and page counts. Do not reintroduce pending-upload labels. The 306 contents links (including the separate colophon in each guide) and 259 heading popups, plus every dynamic `sections[].pdfPage`, use physical pages from this reference PDF. When replacing it, remap by stable section ID using the PDF bookmarks: an old page may contain sections that move to different new pages, so a global old-page offset is unsafe. Keep both five-link download panels, the offline bundle defaults, and the service worker cache in sync.
 
 The large scholarly payloads are now loaded by `edition-r3-20261020.js` and `dictionary-r3-20261020.js`. The initial `{}` in the inline data elements is intentional; use `qa/load-book.js` for source-only tests, or read the populated element after the browser loads the external scripts. Never replace those placeholders with an old corpus.
 
@@ -34,3 +36,11 @@ Reference returns preserve filters, expanded entries, nested scroll positions an
 ## Longer-term maintenance option
 
 Extract CSS and JavaScript, then scholarly data, into source-controlled modules *only after* checksum verification and regression tests. That may reduce editor friction and improve caching, but is not a prerequisite for GitHub updates. Preserve the fully functional no-JavaScript fallback.
+
+## Contents routes
+
+Original headings uses the 46 recorded main-text headings and the conservative parent map documented in `ORIGINAL_HEADINGS.md`. Keep the unheaded opening access link and the later colophon separate. The original hierarchy is always visible and uses ordinary page scrolling; Editorial titles retains all 258 descriptive titles. Filtering Original must retain ancestors and search the displayed heading fields, not hidden editorial titles. Mode changes must retain the reading-return control and keyboard focus. Keep the enhanced and no-JavaScript guides consistent.
+
+## Published study guide
+
+The three-level guide was published in `e5e44918994cfa568553f3af6fbc68b045417a9c`: 28 questions at Basic, Intermediate and Advanced levels, giving 84 lesson versions, plus the separate 85-page `daruri-study-guide.pdf` companion. Preserve `study-guide-data.js`, `study-guide.js`, `study-guide.css`, the shared `study/` lesson sources, the companion, and their reader/download/cache integration when applying unrelated contents changes. The companion is distinct from `daruri-study.pdf`. When revising lessons, generate the website and companion from the same source JSON and run the relevant guide checks alongside the reader contracts.
