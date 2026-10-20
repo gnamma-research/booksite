@@ -43,5 +43,15 @@
       "pages": 92,
       "default_for_text_links": false
     }
+  },
+  "companions": {
+    "daruri-study-guide.pdf": {
+      "title": "Three-level study guide",
+      "source": "Shared 28-question lesson JSON; 84 levels",
+      "sha256": "47e5b48860a2829f018342d1ed21145c160563d6a41101e33fff310919d22f0b",
+      "size_bytes": 567609,
+      "pages": 85,
+      "default_for_text_links": false
+    }
   }
 }

@@ -1,0 +1,505 @@
+[
+  {
+    "number": 19,
+    "id": "qualifications",
+    "unit": 5,
+    "title": "What do exceptions and qualifications change?",
+    "summary": "Work out what a qualification modifies, and what evidence permits it to reach beyond its immediate wording.",
+    "prerequisites": ["Distinguish an expression’s grammatical form from its understood meaning.", "Know the difference between a general expression and a specific instance."],
+    "terms": [
+      {"term": "istithnāʾ", "definition": "An exception attached to the expression from which something is excepted; §183 distinguishes this attachment from specification more generally."},
+      {"term": "muttaṣil / munqaṭiʿ", "definition": "Connected and disconnected exception: the latter appears to except something outside the genus named in the preceding wording."},
+      {"term": "muṭlaq / muqayyad", "definition": "Unqualified and qualified wording; whether a qualification transfers between contexts requires attention to their relation."},
+      {"term": "qarīna", "definition": "A contextual indication that helps establish the scope or intended meaning of an expression."}
+    ],
+    "applications": [],
+    "levels": {
+      "basic": {
+        "objective": "Explain why the scope of an exception must be established from the statement and its context.",
+        "sections": [183, 184, 186, 187],
+        "explanation": [
+          "An exception removes something from what a statement includes. In §183 Ibn Rushd treats its attachment to the statement as essential. Section 184 then separates two questions: whether the excepted item belongs to the named genus, and whether an exception follows one sentence or several.",
+          "The first question cannot always be settled by the named genus alone. In §186 the surrounding communication can show that a narrower expression conveys a wider meaning. In §187 a later exception can concern several coordinated clauses, but its reach depends on whether they combine in one meaning. When that is unclear, further evidence is needed."
+        ],
+        "example": {"title": "‘No man … except a woman’ (§186)", "text": "Ibn Rushd explains this expression through an understood denial that anyone is present. The exception concerns that wider understood meaning. He does not classify a woman as a man."},
+        "tasks": ["Identify the named genus and the wider understood meaning in §186.", "Explain why ‘an exception always applies only to the nearest clause’ is too simple for §187."],
+        "feedback": ["The named genus is men; the wider meaning can include people generally. Context must warrant that extension.", "Section 187 distinguishes clauses sharing one meaning from clauses conveying several meanings. In the latter case, evidence must identify the exception’s reach; position alone does not settle it."]
+      },
+      "intermediate": {
+        "objective": "Compare the evidence needed for a disconnected exception and for transferring a qualification between statements.",
+        "sections": [185, 186, 187, 189],
+        "explanation": [
+          "Section 185 presents two inadequate stopping points: rejecting disconnected exceptions because they seem incoherent, and proving that they occur without explaining how they make sense. Ibn Rushd’s answer in §186 reconstructs the communicative meaning that makes the exception intelligible.",
+          "Section 189 asks a related but different question: when should an unqualified statement be read through a qualified statement? It reports disagreement even when both concern the same context. Moving a qualification into a different context requires proof or a contextual indication. Thus explaining a possible reading and establishing that it governs this case are distinct tasks."
+        ],
+        "example": {"title": "Two witnesses and two upright witnesses (§189)", "text": "The reported majority connects the qualified wording with the unqualified wording. The alternative preserves the latter’s scope and treats the qualification as emphasis. Identify the evidential disagreement before choosing between them."},
+        "tasks": ["Reconstruct §186 as an answer to the objection reported in §185.", "State what additional premise is needed before transferring a qualification into a different context."],
+        "feedback": ["The answer locates inclusion in the understood general meaning, rather than forcing the excepted item into the literal genus. Actual usage receives an explanation.", "The missing premise must connect the contexts through evidence. Mere similarity of wording does not establish identical scope or justify transferring every qualification."]
+      },
+      "advanced": {
+        "objective": "Test a scope interpretation while separating linguistic possibility, contextual warrant and a reported juristic preference.",
+        "sections": [183, 185, 186, 187, 189, 193],
+        "explanation": [
+          "Develop a short argument about how §§186–189 distribute the burden of proof. Section 186 explains apparent departure from literal inclusion through the intended general meaning. Section 187 permits suspension about scope, while §189 distinguishes same-context and different-context qualifications. None supplies permission to enlarge meaning merely because a preferred result would follow.",
+          "Use §193 to ask how strong the contextual warrant is: decisive, preponderant, or unresolved. Keep that assessment separate from whether the proposed reading is linguistically intelligible. If comparing another author, retrieve the actual passage and record its edition and wording before attributing agreement."
+        ],
+        "example": {"title": "The repentance exception (§187)", "text": "The passage places several consequences before an exception for those who repent. Treat the reach of the exception as the problem to investigate, rather than importing a school’s final ruling as its linguistic solution."},
+        "tasks": ["Write 200 words identifying two possible scopes and the evidence needed to choose between them.", "Distinguish Ibn Rushd’s own explanation from positions he reports in §189."],
+        "feedback": ["A strong response states exactly which clauses each scope modifies and supplies a relevant indication, or explains why the evidence remains insufficient.", "Credit a comparison only when its speaker, wording and evidential basis are identified. A list of final rulings does not by itself explain the disagreement about scope."]
+      }
+    }
+  },
+  {
+    "number": 20,
+    "id": "unstated-meaning",
+    "unit": 5,
+    "title": "How does an unstated meaning bind?",
+    "summary": "Distinguish what context supplies with certainty from what it makes probable or leaves unresolved.",
+    "prerequisites": ["Distinguish verbal form from understood meaning.", "Recognise that evidence can be decisive, preponderant or unresolved."],
+    "terms": [
+      {"term": "mafhūm", "definition": "Understood meaning, including meanings supplied through omission, substitution or other contextual interpretation."},
+      {"term": "dalīl al-khiṭāb", "definition": "Inference that a ruling attached to a qualification does not apply when that qualification is absent; its force is examined rather than assumed."},
+      {"term": "naṣṣ / ẓāhir / mujmal", "definition": "Here, decisive, preponderant and unresolved signification; §193 applies these ranks to understood meanings as well as verbal forms."},
+      {"term": "ghāya", "definition": "An endpoint marked by expressions such as ‘until’ or ‘up to’, whose significance depends on the ruling’s relation to that limit."}
+    ],
+    "applications": ["B09"],
+    "levels": {
+      "basic": {
+        "objective": "Classify three unstated meanings according to the strength of their contextual support.",
+        "sections": [193, 194, 195],
+        "explanation": [
+          "Words can communicate more than their explicit grammatical parts. Section 193 explains that omission and related processes depend on contextual indications. An unstated meaning can therefore be certain; it need not be a speculative addition. Conversely, an interpreter cannot supply any missing meaning that seems useful.",
+          "Section 194 gives three different strengths. Asking a village certainly means asking its inhabitants. A report denying a fast may deny completeness or acceptance, with one reading more apparent. Catching a prayer cycle can concern merit, legal effect or time, leaving a question to resolve. The important contrast is the strength of the warrant, rather than whether every word is spoken."
+        ],
+        "example": {"title": "‘Ask the village’ (§194)", "text": "The inhabitants are not named, but the communicative situation supplies them. This is Ibn Rushd’s example of an understood meaning with the force of an unambiguous expression."},
+        "tasks": ["Explain why ‘unstated’ does not mean ‘uncertain’.", "Identify what remains undecided in the prayer-cycle example."],
+        "feedback": ["Context can determine an omitted element decisively. Certainty concerns the evidence for the meaning, not simply the presence of its words.", "The uncertainty concerns what has been attained: merit, legal effect or the appointed time. Choosing one requires more than repeating the report’s wording."]
+      },
+      "intermediate": {
+        "objective": "Distinguish supplying an omitted meaning from inferring a contrary ruling when a qualification is absent.",
+        "sections": [193, 194, 195],
+        "explanation": [
+          "Section 194 moves from omitted meanings to dalīl al-khiṭāb. These should not be collapsed. Supplying ‘inhabitants’ explains what asking a village means. Inferring a ruling for a case lacking a mentioned qualification asks a further question: does the ruling depend on that qualification in the relevant way?",
+          "Section 195 examines descriptions, conditions, restrictive expressions and endpoints. Their grammatical labels do not replace an assessment of force. Ibn Rushd allows decisive, apparent and unresolved cases within this field. The key is whether dependence on the qualification is known, probable or insufficiently established."
+        ],
+        "example": {"title": "Fasting until night (§195)", "text": "The endpoint indicates a change in the obligation to continue this fast. Compare its clarity with the reported disagreement about descriptions such as ‘grazing’ in the sheep example."},
+        "tasks": ["Explain why mentioning a description does not automatically establish every proposed contrary implication.", "Compare the village example with the fasting endpoint: what different interpretive work occurs?"],
+        "feedback": ["The inference requires a warranted connection between the qualification and the ruling. The passage reports disagreement about that connection across kinds and cases.", "The village example supplies an omitted object; the endpoint delimits the reach of an obligation. Both depend on context, but they solve different interpretive problems."]
+      },
+      "advanced": {
+        "objective": "Reconstruct how the classification of implied meanings connects to the later account of legal qiyās.",
+        "sections": [193, 194, 195, 213, 214],
+        "explanation": [
+          "Section 195 explicitly postpones fuller treatment of contextual ranks to the discussion of qiyās. Follow that cross-reference to §§213–214 and explain why the same degrees of signification reappear. The research question is whether a particular proposed implication has the requisite warrant, rather than whether ‘implication’ is accepted as one undifferentiated method.",
+          "For an applied comparison, B09 concerns an omitted condition in the traveller’s fasting verse. Treat the application card as an editorial lead. Retrieve its Bidāya passage, identify the proposed omission and the accompanying reports, and assess what each contributes. Do not assume grammar settles the complete legal dispute."
+        ],
+        "example": {"title": "The transition promised in §195", "text": "The text links the force of conditional or restricted speech to the ranks of indications later discussed under qiyās. This supplies an internal research connection without requiring a speculative historical influence claim."},
+        "tasks": ["Map one decisive and one unresolved case to §§213–214, stating the difference in their evidence.", "Specify the source evidence required before accepting the proposed B09 comparison."],
+        "feedback": ["A strong map explains the indication and its strength; attaching the labels naṣṣ or mujmal without reasons is insufficient.", "The comparison needs the actual Bidāya wording, a precise locator and an account of the reports’ role. It remains proposed until those materials have been examined."]
+      }
+    }
+  },
+  {
+    "number": 21,
+    "id": "imperatives",
+    "unit": 5,
+    "title": "What does an imperative require?",
+    "summary": "Separate a demand’s legal force from its timing, repetition and surrounding circumstances.",
+    "prerequisites": ["Know the difference between obligation and recommendation.", "Understand how contextual indications affect an expression’s force."],
+    "terms": [
+      {"term": "amr", "definition": "Command; §197 distinguishes it from request and supplication through the relation between speakers."},
+      {"term": "ṣīgha", "definition": "The verbal form, whose contribution must be distinguished from legal usage and surrounding indications."},
+      {"term": "ʿurf sharʿī", "definition": "Established legal usage: a source for determining a command’s legal force beyond its ordinary linguistic form."},
+      {"term": "fawr / takrār", "definition": "Immediacy and repetition; §201 treats these as distinct questions that the imperative alone does not settle."}
+    ],
+    "applications": ["B01", "B16"],
+    "levels": {
+      "basic": {
+        "objective": "Explain why recognising an imperative does not settle every question about the required action.",
+        "sections": [197, 199, 200, 201, 203],
+        "explanation": [
+          "A verbal form can function differently according to who speaks and to whom. Section 197 distinguishes command, request and supplication through those relations. Sections 199–200 then separate ordinary linguistic convention from legal usage: obligation and recommendation are legal meanings whose evidence must be investigated.",
+          "Once a demand is identified, further questions remain. Does it require immediate performance? Must the act recur? Section 201 says the form alone does not supply those answers. Section 203 adds that a command after a temporary prohibition may remove a restriction. The circumstance can therefore alter what the imperative communicates."
+        ],
+        "example": {"title": "Hunting after consecration (§203)", "text": "The passage reports al-Ghazālī’s explanation: a command to hunt when consecration ends more apparently lifts the preceding restriction. It does not make every person obliged to hunt."},
+        "tasks": ["Name three distinct questions that can be asked about one command.", "Explain the relevance of the earlier prohibition in the hunting example."],
+        "feedback": ["Distinguish obligation or recommendation, timing, and repetition. An answer to one does not automatically answer the others.", "The command is linked to the disappearance of the reason for restriction. That connection supports permission here; it is not a rule that every command always means permission."]
+      },
+      "intermediate": {
+        "objective": "Reconstruct the evidence Ibn Rushd proposes for a command’s legal force without conflating it with timing or repetition.",
+        "sections": [198, 199, 200, 201, 203],
+        "explanation": [
+          "Section 198 lays out competing classifications before Ibn Rushd investigates them. Section 200 reports the majority’s apparent-obligation reading and a view suspending judgement. His proposed inquiry is inductive: examine legal usage and how the Companions received commands without accompanying indications. His preference for obligation as more prudent should be read with that evidential argument.",
+          "Section 201 preserves the alternative if an established legal convention cannot be shown. It also separates the demand’s strength from when and how often the act is performed. Section 203 is explicitly attributed to Abū Ḥāmid at its decisive point; do not silently erase that attribution when summarising the discussion."
+        ],
+        "example": {"title": "The sensible question ‘When?’ (§201)", "text": "A recipient may understand that an action is demanded while still needing its time clarified. The possibility of that question shows why temporal force needs its own indication."},
+        "tasks": ["Distinguish the disputed positions, proposed investigation and tentative preference in §200.", "Explain why absence of an intrinsic immediacy marker does not prove that delay is always permitted."],
+        "feedback": ["A good reconstruction keeps reported views separate from the author’s reasons and identifies legal usage as evidence to investigate.", "Another indication may require immediate action. Section 201 denies that the form alone settles timing; it does not remove all possible temporal requirements."]
+      },
+      "advanced": {
+        "objective": "Test an application of the command discussion against an actual dispute without reducing that dispute to a grammatical slogan.",
+        "sections": [199, 200, 201, 203, 204, 205],
+        "explanation": [
+          "Construct a matrix separating legal force, time, repetition, completion and sufficiency. Sections 204–205 show why those distinctions matter: completing a commanded act and satisfying the original duty are not interchangeable descriptions when a defect remains. Identify which proposition each passage establishes before carrying it into an applied case.",
+          "Use B16 as a proposed comparison. Its pilgrimage dispute involves the structure of the available time and the risk of postponement. Retrieve the Bidāya discussion and determine whether the unrestricted-command question actually explains the disagreement. A successful comparison may reveal a limit on a proposed application rather than confirm it."
+        ],
+        "example": {"title": "Completing an invalidated pilgrimage (§205)", "text": "The obligation to complete an observance does not show that its defective performance discharges the original duty. Ibn Rushd’s correction adds completeness, prescribed character and all required conditions."},
+        "tasks": ["Write two propositions that distinguish commanded completion from sufficient performance.", "State the exact evidence needed to assess B16 and any textual supplements visible in the selected Darūrī passages."],
+        "feedback": ["The first proposition concerns what must now be done; the second concerns whether the original requirement has been satisfied. The text’s conditions explain why these can diverge.", "Use the actual applied argument and precise locators. Where the edition supplies wording, consult its note rather than treating that wording as an uncontested reading."]
+      }
+    }
+  },
+  {
+    "number": 22,
+    "id": "qiyas",
+    "unit": 6,
+    "title": "Is legal qiyās a syllogism?",
+    "summary": "Follow Ibn Rushd’s reconstruction of much legal qiyās as the warranted understanding of a universal through particular wording.",
+    "prerequisites": ["Understand the difference between an expression’s form and its intended meaning.", "Read the examples of specific wording and contextual warrant in §§191 and 193."],
+    "terms": [
+      {"term": "aṣl / farʿ", "definition": "The original case, where the ruling is clearer, and the derivative case to which the ruling is extended."},
+      {"term": "ʿilla", "definition": "The operative ground or shared attribute relevant to the ruling; identifying it requires evidence."},
+      {"term": "ibdāl", "definition": "Substitution: here, using particular wording for an intended more general meaning."},
+      {"term": "qiyās", "definition": "A term whose use among jurists Ibn Rushd investigates; he distinguishes most such uses here from syllogistic derivation."},
+      {"term": "qarīna", "definition": "An accompanying indication warranting the understood meaning; §213 requires a kind demonstrably taken into account by the Law."}
+    ],
+    "applications": ["B22", "B23"],
+    "levels": {
+      "basic": {
+        "objective": "Explain the movement from a stated case to a wider intended meaning without reducing it to superficial similarity.",
+        "sections": [191, 193, 210, 212, 213],
+        "explanation": [
+          "Begin with §191: particular wording can convey a wider intended meaning when context warrants it. Section 210 then introduces the jurists’ original case, derivative case and shared ground. Ibn Rushd asks what those jurists are actually doing when they use qiyās.",
+          "Section 212 distinguishes an expressly stated general ground from one understood through context. In the latter case, the interpreter establishes the intended universal and then investigates whether another case falls under it. Section 213 restricts the warrant: resemblance alone is insufficient; the relevant kind of indication must be one the Law takes into account."
+        ],
+        "example": {"title": "Silver and gold vessels (§212)", "text": "Ibn Rushd presents extravagance as the understood wider meaning behind the prohibition concerning silver vessels, and gold vessels as another instance. This is his example of contextual extension, not permission to invent any convenient purpose."},
+        "tasks": ["Identify the original case, proposed universal and derivative case in this example.", "State the two things an interpreter must establish before extending the ruling."],
+        "feedback": ["Silver vessels supply the stated case, extravagance the proposed universal, and gold vessels the additional case.", "One must warrant that this universal is intended and establish that the new case falls under it. Simply observing a likeness does neither by itself."]
+      },
+      "intermediate": {
+        "objective": "Reconstruct why Ibn Rushd distinguishes most juristic qiyās from syllogistic derivation while retaining a role for reasoning.",
+        "sections": [210, 212, 213, 223, 224],
+        "explanation": [
+          "The contrast concerns the source of the ruling. In §§212–213 the ruling is reached through what revealed discourse signifies, including its warranted understood meaning. Inquiry identifies that meaning and determines whether another case belongs under it. Calling this a semantic operation does not eliminate the inquiry needed to justify it.",
+          "Section 223 repeatedly qualifies the claim: it concerns most cases of what jurists call qiyās. It distinguishes a case whose wording provides no indication of the proposed ground from one whose understood meaning includes it. Section 224 then challenges accepting apparent verbal forms while refusing equally warranted apparent meanings."
+        ],
+        "example": {"title": "The cat’s expressly stated ground (§212)", "text": "The example about a cat circulating among people has its ground stated in the report. Ibn Rushd classifies that generality differently from a ground inferred through the understood meaning of particular wording."},
+        "tasks": ["Contrast the cat example with the vessel example using the location of the operative ground.", "Correct the sentence ‘Ibn Rushd rejects all qiyās and thinks legal interpretation involves no reasoning’."],
+        "feedback": ["In the first, the ground is expressed; in the second, context must establish it. Both require attention to scope, but their immediate evidential routes differ.", "His account reclassifies and evaluates much qiyās; it neither rejects every extension nor removes reasoning. Preserve ‘most cases’ and the demand for contextual warrant."]
+      },
+      "advanced": {
+        "objective": "Evaluate the force and limits of Ibn Rushd’s answer to the objection that legal rulings cannot be inferred from things’ essences.",
+        "sections": [191, 213, 219, 221, 223, 224, 225],
+        "explanation": [
+          "Reconstruct the objection reported in §223 and specify precisely which practice it defeats. Ibn Rushd’s answer turns on whether the given discourse contains an indication of the ground. Section 225 adds a restriction: testing and division cannot manufacture a legitimate semantic alteration when the requisite indications are absent.",
+          "Distinguish three operations in your reconstruction: establishing that substitution occurs, determining the intended universal, and identifying an instance under it. If comparing Aristotle, al-Ghazālī or the Bidāya, present that as a further investigation. The present passage alone does not establish equivalence with a named external theory."
+        ],
+        "example": {"title": "Wine-drinking and accusation penalties (§223)", "text": "The text contrasts an analogy lacking an indication of its proposed ground with an extension grounded in the original discourse’s understood meaning. The decisive issue is the warrant, not simply whether two cases can be compared."},
+        "tasks": ["Write a premise-and-conclusion reconstruction of the objection and the limited reply.", "Use B23 as a research lead: what evidence would distinguish genuine shared meaning from a merely verbal resemblance?"],
+        "feedback": ["A strong reconstruction preserves the qualified scope of the reply and does not infer a ruling from an essential property independently of legal discourse.", "A completed comparison requires the actual dower argument and its locator. Show how the shared description relates to each ruling; matching words alone cannot establish a common operative meaning."]
+      }
+    }
+  },
+  {
+    "number": 23,
+    "id": "extensions",
+    "unit": 6,
+    "title": "Which extensions are stronger?",
+    "summary": "Compare the evidence behind a fortiori, equal, suitable and resemblance-based extensions, including their internal variations.",
+    "prerequisites": ["Understand the source of an intended universal in §§212–213.", "Distinguish decisive evidence from preponderant and unresolved indications."],
+    "terms": [
+      {"term": "faḥwā al-khiṭāb", "definition": "The purport of discourse, illustrated where an unmentioned case has a stronger claim to the ruling than the stated case."},
+      {"term": "qiyās fī maʿnā al-aṣl", "definition": "Extension to a case sharing the original case’s relevant meaning with respect to the ruling."},
+      {"term": "munāsib", "definition": "A suitable ground connected with a kind of benefit acknowledged by the Law; proximity and remoteness matter."},
+      {"term": "qiyās al-shabah", "definition": "Comparison through resemblance suggesting an unidentified suitable ground; §218 treats most instances as unresolved."},
+      {"term": "sabr wa-taqsīm", "definition": "Testing and division: enumerating candidate meanings and eliminating alternatives, subject to the limits discussed in §§221 and 225."}
+    ],
+    "applications": ["B20", "B21", "B22"],
+    "levels": {
+      "basic": {
+        "objective": "Explain why a stronger relevant case and an uncertain resemblance do not have the same evidential force.",
+        "sections": [214, 215, 216, 217, 218],
+        "explanation": [
+          "Section 214 frames the discussion through certainty, preponderance and unresolved meaning. The following sections examine stronger relevant cases, equal relevant meanings, suitable grounds and resemblance. These labels describe different kinds of support, not four interchangeable ways to get a desired ruling.",
+          "The stronger-case example in §215 makes the unstated case clearer than the stated one. By contrast, §218 describes resemblance where the suitable ground remains unidentified. Section 217 also warns that invoking benefit in a very remote and general way can exceed deriving a ruling from the Law. Calling something beneficial is therefore not the end of the argument."
+        ],
+        "example": {"title": "From ‘Uff’ to greater mistreatment (§215)", "text": "The prohibition of a slight expression of disrespect supports the stronger case of more serious mistreatment. The relevant relation is the greater degree of the prohibited meaning, rather than an accidental resemblance between actions."},
+        "tasks": ["Explain what makes the unstated case stronger in §215.", "State what remains unknown in the resemblance described in §218."],
+        "feedback": ["The prohibited meaning is present more strongly, which warrants the extension. Mere greater physical size or inconvenience would not supply the same relation.", "The appropriate operative ground has not been securely identified. A suggested resemblance therefore does not automatically give decisive or even preponderant evidence."]
+      },
+      "intermediate": {
+        "objective": "Distinguish a ranking of kinds from a claim that every instance in a kind has identical certainty.",
+        "sections": [215, 216, 217, 218, 219, 221],
+        "explanation": [
+          "Ibn Rushd qualifies his rankings. Sections 215–216 allow differences in clarity within their kinds. Section 217 places suitable grounds third because they are usually less clear, while distinguishing proximate, intermediate and very remote benefits. Section 218 treats most resemblance arguments as unresolved, while allowing that some approach the second rank.",
+          "Sections 219 and 221 identify two separate uncertainties: whether particular wording stands for any universal, and which universal is intended. Eliminating candidate grounds addresses the second question only after the first has been established or independently investigated. Keep those burdens of proof distinct."
+        ],
+        "example": {"title": "The named foodstuffs (§218)", "text": "Candidates include staple nourishment, edibility and measure. The difficulty is not merely finding a shared feature; it is establishing which feature, if any, gives the legally relevant intended universal."},
+        "tasks": ["Describe the two uncertainties using the foodstuffs example.", "Explain why ‘all suitable grounds are certain’ and ‘all resemblance is worthless’ both overstate these passages."],
+        "feedback": ["First establish whether extension beyond the named items is warranted; then establish the intended universal. A list of shared properties does not settle either automatically.", "The text grades kinds and recognises variation within them. Suitability can become too remote, while some apparent resemblance may amount to the original case’s relevant meaning."]
+      },
+      "advanced": {
+        "objective": "Evaluate a proposed ground through its textual warrant, legal recognition and degree of proximity.",
+        "sections": [213, 217, 218, 221, 222, 225],
+        "explanation": [
+          "Prepare an evidence table with four columns: proposed universal, indication that it is intended, evidence that its kind is legally recognised, and uncertainty remaining. Section 222 prevents mere accompanying presence and absence from being treated as an automatically sufficient identification of the ground. Section 225 limits testing and division where contextual indications are missing.",
+          "Choose B21 or B22 for a proposed Bidāya investigation. The former examines deathbed divorce, already mentioned in §217; the latter concerns rival grounds in the foodstuffs discussion. Compare the actual reasoning and possible differences of assessment. Do not force either work into blanket approval or rejection of every purposive argument."
+        ],
+        "example": {"title": "Remote benefit in deathbed divorce (§217)", "text": "The text uses this case while criticising excessively general welfare reasoning. A research comparison must establish the precise ground, its proximity and its legal warrant before claiming consistency or contradiction with another treatment."},
+        "tasks": ["Fill the four-column table for one candidate ground from §218.", "State what would count as evidence for, or against, your proposed cross-work comparison."],
+        "feedback": ["A strong table distinguishes an attractive rationale from evidence that it is intended and legally recognised; it may legitimately end with unresolved uncertainty.", "Use exact passages and locators, distinguish reported views from Ibn Rushd’s assessments, and identify the disputed inference. Similar vocabulary alone establishes neither doctrinal identity nor inconsistency."]
+      }
+    }
+  },
+  {
+    "number": 24,
+    "id": "prophetic-action",
+    "unit": 7,
+    "title": "What do action and silence establish?",
+    "summary": "Identify the circumstances that make a Prophetic action or approval evidence for a particular ruling.",
+    "prerequisites": ["Understand why contextual indications can carry legal meaning.", "Distinguish obligation, recommendation and permission."],
+    "terms": [
+      {"term": "iqrār", "definition": "Tacit approval; §227 requires certain knowledge that the Prophet saw and approved the relevant act."},
+      {"term": "fiʿl", "definition": "Action, whose legal force depends on its role and circumstances rather than an imperative verbal form."},
+      {"term": "bayān", "definition": "Explanation or clarification: an action can explain a revealed expression and share that expression’s legal ruling."},
+      {"term": "khuṣūṣiyya", "definition": "A feature peculiar to the Prophet, established by an indication; it cannot simply be assumed to bind others."}
+    ],
+    "applications": ["B24"],
+    "levels": {
+      "basic": {
+        "objective": "Distinguish an explanatory action, an action known to be peculiar to the Prophet, and an action whose force remains unclear.",
+        "sections": [226, 227, 228, 229],
+        "explanation": [
+          "Section 226 treats action and approval as contextual evidence. Section 227 specifies an act in the Prophet’s presence that he certainly saw and approved. Approval shows that the act may occur in that manner; it can confirm a legal judgement’s binding force or establish permissibility where an act was thought forbidden. The conclusion must preserve the relevant circumstances.",
+          "Section 228 considers actions explaining a revealed expression. Their ruling follows what they explain: obligation where the expression obliges, recommendation where it recommends. Section 229 separates actions known to be peculiar to him from actions whose explanatory or peculiar status is unknown. For the unresolved kind, the text does not assign one fixed ruling merely because an action occurred."
+        ],
+        "example": {"title": "Learning prayer through an action (§228)", "text": "The instruction to pray as the Prophet was seen praying establishes an explanatory connection. That connection matters when determining what the observed action teaches about the commanded observance."},
+        "tasks": ["Explain why seeing an action and knowing what ruling it establishes are different achievements.", "List the conditions specified for tacit approval in §227."],
+        "feedback": ["The action may explain an obligation, explain a recommendation, be peculiar to the Prophet, or have an unresolved status. Observation alone does not decide among these.", "The passage requires certainty that the act occurred in his presence, was seen and was approved. The proposed conclusion must preserve its relevant circumstances."]
+      },
+      "intermediate": {
+        "objective": "Compare rival interpretations of Prophetic action without treating the same observation as decisive for incompatible conclusions.",
+        "sections": [227, 228, 229],
+        "explanation": [
+          "Section 229 reports obligation, recommendation and suspension as competing interpretations of actions whose status is unknown. It explicitly identifies suspension as Abū Ḥāmid’s preference, then discusses arguments and replies before giving the more apparent conclusion that no definite ruling can be assigned from that kind alone.",
+          "An important feature of the discussion is the reuse of evidence: Companions’ imitation can be invoked by advocates of recommendation or obligation. A reply therefore asks whether those Companions possessed an additional indication that the action explained an existing duty or recommendation. Their conduct cannot be isolated from what they may have known."
+        ],
+        "example": {"title": "Removing sandals during prayer (§229)", "text": "The Companions’ imitation is reported as evidence in the debate. The passage shows why imitation by itself does not uniquely select obligation rather than recommendation or context-dependent explanation."},
+        "tasks": ["Identify the extra premise each interpretation needs in the sandals example.", "Explain why an explanatory action differs from an action of unresolved status."],
+        "feedback": ["Each view must establish what the Companions understood the action to signify. The same observed imitation cannot settle that understanding without further evidence.", "An explanatory action already has an evidential relation to a revealed expression. The unresolved kind lacks a settled relation from which one definite legal force can be drawn."]
+      },
+      "advanced": {
+        "objective": "Assess the exact object of a claimed approval and the evidential limits of an action without verbal form.",
+        "sections": [226, 227, 228, 229],
+        "explanation": [
+          "Construct an argument with separate premises for occurrence, awareness, approval and the legal identity of the act. Section 227 supplies conditions for approval; §229 shows why an action’s occurrence leaves several possible legal statuses open. Do not replace either analysis with a general slogan that every action is obligatory or every silence is permission.",
+          "B24 offers a proposed comparison concerning a divorce utterance after mutual imprecation. Retrieve the Bidāya passage and examine whether the relevant marriage still subsisted. Also consult the edition’s note on the supplied transition in §229 before treating its threefold division as wholly uncontested wording."
+        ],
+        "example": {"title": "An unresolved action’s competing statuses (§229)", "text": "The text leaves obligation, recommendation, permission and Prophetic peculiarity among the possibilities. Its conclusion concerns the absence of evidence selecting one, rather than the impossibility of finding further evidence."},
+        "tasks": ["State the missing premise needed to move from observed silence to the precise ruling claimed in B24.", "Explain how a textual supplement affects the confidence of an argument based on §229’s enumeration."],
+        "feedback": ["A strong answer verifies the legal object and circumstances of the act. Approval of an utterance without an existing marriage would not automatically establish the same ruling for divorce within a subsisting marriage.", "The substantive distinction may still have support, but identify supplied wording and consult the apparatus. Do not present editorial reconstruction as an independently verified manuscript reading."]
+      }
+    }
+  },
+  {
+    "number": 25,
+    "id": "competence",
+    "unit": 8,
+    "title": "Who is qualified to inquire?",
+    "summary": "Relate knowledge of sources and methods to the precise question on which independent inquiry is undertaken.",
+    "prerequisites": ["Distinguish a source of a ruling from the rule used to interpret it.", "Recognise the importance of transmission, Arabic usage and consensus in the preceding discussions."],
+    "terms": [
+      {"term": "ijtihād", "definition": "Exerting one’s utmost capacity to seek an answer using the required instruments, as defined in §231."},
+      {"term": "mujtahid", "definition": "An inquirer possessing the relevant sources, rules and conditions needed to derive a ruling."},
+      {"term": "qawānīn", "definition": "Methodological rules governing the derivation of rulings; access to sources alone does not supply them."},
+      {"term": "taʿdīl", "definition": "Accreditation of a transmitter; §233 discusses qualified reliance on another scholar’s assessment and methodology."}
+    ],
+    "applications": [],
+    "levels": {
+      "basic": {
+        "objective": "Explain why having a source collection and being qualified to use it are different requirements.",
+        "sections": [231, 232, 233, 234, 236],
+        "explanation": [
+          "Section 231 defines inquiry through effort and the instruments it requires. The inquirer must know the sources and possess the rules and conditions for deriving rulings. The following sections describe relevant Qurʾānic material, reports, consensus and sufficient Arabic. These are connected capacities, rather than a list of titles to collect.",
+          "The text permits concessions concerning memorisation: knowing where relevant material is found can suffice in the circumstances described. That does not dispense with understanding it. Section 236 also allows inquiry on a particular question when the person’s requirements are sufficient for that question, while distinguishing this from competence to answer every case."
+        ],
+        "example": {"title": "Knowing where to find a verse (§232)", "text": "The passage distinguishes memorising the relevant verses from knowing their locations and being able to consult them when a question arises. It retains the preceding requirement to know how the evidence bears on rulings."},
+        "tasks": ["Name one concession about access and one substantive requirement it does not remove.", "Explain the difference between limited knowledge and sufficient knowledge for a limited question."],
+        "feedback": ["Memorisation may be relaxed; the ability to understand relevant evidence and use the required rules remains.", "A limited question can still demand substantial knowledge. Section 236 requires sufficiency for that question, rather than granting permission merely because someone knows a few relevant texts."]
+      },
+      "intermediate": {
+        "objective": "Analyse how the concessions in §§232–236 preserve evidential responsibility rather than replacing it with unrestricted reliance.",
+        "sections": [231, 232, 233, 234, 235, 236],
+        "explanation": [
+          "The requirements are calibrated to what inquiry needs. Section 233 permits reliance on a leading scholar’s transmitter accreditation under a further condition: the inquirer knows the accreditor’s approach and finds it compatible with his own. Reliance is therefore qualified by methodological understanding.",
+          "Section 234 supplies linguistic competence before the other operations can succeed. Section 235 makes the disputed theological requirement conditional on a particular account of the first obligation. Section 236 then restricts issue-specific inquiry by sufficiency, not by the person’s general reputation. Track what each concession changes and what it leaves necessary."
+        ],
+        "example": {"title": "Using a hadith authority’s accreditation (§233)", "text": "The permitted reliance is more demanding than recognising a famous name. The text requires knowledge of the authority’s approach to criticism and accreditation and its agreement with the inquirer’s approach."},
+        "tasks": ["Explain why this concession is not identical to independent verification of every transmitter.", "Build a short competence checklist for one interpretive question, explaining why each item is relevant."],
+        "feedback": ["It remains a form of following authority, which §233 expressly acknowledges. The concession addresses practical difficulty while retaining conditions on the reliability of that reliance.", "A useful checklist links Arabic, transmission, relevant sources and contrary evidence to the actual question. A generic list without those connections does not demonstrate sufficiency."]
+      },
+      "advanced": {
+        "objective": "Formulate and test a defensible boundary for issue-specific competence from the text’s stated requirements.",
+        "sections": [231, 233, 234, 235, 236, 251],
+        "explanation": [
+          "Read §236 as a relation between possessed capacities and a defined question. The proposed inquiry must establish that omitted fields are genuinely irrelevant, rather than assuming that they contain no counterevidence. Develop an argument about where that burden of proof lies using §231’s sources, rules and conditions.",
+          "Compare qualified reliance in §233 with the more knowledgeable jurist in §251. The former concerns source accreditation; the latter concerns confidence in another’s judgement relative to one’s own inquiry. If extending the comparison to a modern research tool or institution, distinguish that proposed application from what the medieval text itself establishes."
+        ],
+        "example": {"title": "The limited inquirer’s relation to one question (§236)", "text": "Ibn Rushd compares that relation with the unrestricted jurist’s relation to all questions. The analogy concerns sufficiency of the relevant requirements, not equality in every branch of learning."},
+        "tasks": ["Write a justified boundary for one imagined inquiry, naming a possible source of evidence that could defeat it.", "Distinguish access, comprehension, methodological competence and warranted reliance."],
+        "feedback": ["A strong boundary is revisable when relevant counterevidence appears; it does not make ignorance itself a reason for excluding a field.", "Source retrieval supplies material, comprehension grasps it, method governs inference, and warranted reliance concerns justified confidence in another’s work. The passages allow concessions without merging these functions."]
+      }
+    }
+  },
+  {
+    "number": 26,
+    "id": "truth-error",
+    "unit": 8,
+    "title": "Can a jurist be wrong without sinning?",
+    "summary": "Separate the truth of a ruling, the strength of the inquiry and the conditions of culpability.",
+    "prerequisites": ["Distinguish decisive evidence from preponderant probability.", "Understand the competence and effort required for independent inquiry."],
+    "terms": [
+      {"term": "taṣwīb", "definition": "Declaring the independent jurists correct; the claim that all conflicting conclusions are correct is disputed in §§237–245."},
+      {"term": "khaṭaʾ", "definition": "Error; Ibn Rushd distinguishes its occurrence from culpability for it."},
+      {"term": "ithm", "definition": "Sin or culpability, whose presence cannot simply be inferred from every mistaken conclusion."},
+      {"term": "ẓann rājiḥ", "definition": "Preponderant judgement supported by evidence; it is distinguished from a merely personal inclination or an evenly balanced uncertainty."}
+    ],
+    "applications": ["B25", "B26"],
+    "levels": {
+      "basic": {
+        "objective": "Explain why an excused mistake does not make a contradictory conclusion true.",
+        "sections": [237, 239, 243, 244, 245],
+        "explanation": [
+          "Section 237 opens a question: is there a determinate ruling to seek, or is every jurist correct upon reaching a preponderant judgement? Section 239 gives Ibn Rushd’s own answer. Discourse signifies a determinate ruling, even when its evidence is probable rather than decisive. Conflicting conclusions therefore do not all become true simply because they were sincerely reached.",
+          "Sections 243–245 distinguish error from sin. Fallible inquiry into probable evidence can produce a pardoned mistake. Section 244 adds qualifications concerning the clarity of evidence and impediments such as partiality. The account is therefore neither universal correctness nor a blanket exemption for every person who claims to have tried."
+        ],
+        "example": {"title": "Unintentional mistake (§243)", "text": "The text appeals to forgetfulness, inattention and inadvertence to show that an error can be pardoned. Pardon changes the person’s culpability; it does not turn the mistaken conclusion into the correct one."},
+        "tasks": ["Separate the questions ‘Is the conclusion correct?’ and ‘Is the person blameworthy?’.", "Identify one reason the qualifications in §244 matter."],
+        "feedback": ["Truth concerns what the evidence signifies. Culpability concerns the person’s relation to the error, including knowledge and the conditions of inquiry.", "The clarity of evidence and possible partiality affect responsibility. The text does not promise that every mistake by any claimant to inquiry is excused."]
+      },
+      "intermediate": {
+        "objective": "Reconstruct Ibn Rushd’s replies to the two arguments attributed here to al-Ghazālī.",
+        "sections": [239, 240, 241, 242, 243, 244, 245],
+        "explanation": [
+          "Mark the speakers before reconstructing the argument. Section 240 reports al-Ghazālī’s first route: a determinate obligatory result would require decisive evidence, otherwise attaining it would exceed capacity. Section 241 replies that evidence can itself yield a preponderant indication on which action is required; personal inclination does not create its force.",
+          "Section 242 reports a second route from the absence of sin to the absence of error. Section 243 rejects that entailment. Section 244 prevents the reply from becoming an unqualified pardon for every failure. These are distinct disputes about evidential attainability and culpability; answering one does not remove the need to answer the other."
+        ],
+        "example": {"title": "The disputed entailment (§§242–243)", "text": "The reported argument moves from ‘not sinful’ to ‘not erroneous’. Ibn Rushd’s reply identifies pardoned error as the missing possibility, breaking that inference without denying that pardon occurs."},
+        "tasks": ["Write each reported argument and its reply in two or three propositions.", "Explain why preponderant evidence is not equivalent to evidence balanced equally between contradictories."],
+        "feedback": ["Keep §240’s capacity argument distinct from §242’s culpability argument, and attribute the replies to Ibn Rushd rather than to the position he criticises.", "Section 241 treats an evenly balanced indication as unresolved, while preponderance belongs to what the evidence signifies. An interpreter’s preference alone does not supply that evidential superiority."]
+      },
+      "advanced": {
+        "objective": "Evaluate the relation between determinate truth and fallible obligation while controlling speaker attribution and the scope of pardon.",
+        "sections": [237, 239, 240, 241, 242, 243, 244, 245],
+        "explanation": [
+          "Separate three claims in a short analytical essay: the discourse has a determinate signification; available evidence can warrant a fallible conclusion; and a mistaken inquirer may be excused. Explain how Ibn Rushd connects them without making certainty the only basis of action. Then identify exactly where §244 limits a general claim about excuse.",
+          "Any assessment of al-Ghazālī’s own position requires the relevant Mustaṣfā passage, its context and a precise locator. The Darūrī gives Ibn Rushd’s report and criticism, not independent verification of every feature of his opponent’s view. B25 and B26 can supply further applied comparisons after their sources are checked."
+        ],
+        "example": {"title": "Evidence and natural inclination (§§240–241)", "text": "Ibn Rushd rejects the reported claim that preponderance arises only from individual inclination. His criticism concerns the source of evidential force, not the assertion that all qualified people invariably recognise it correctly."},
+        "tasks": ["Defend or challenge one step in Ibn Rushd’s reasoning while preserving all three distinctions.", "Give the evidence required to compare this account with al-Ghazālī or the mistaken-qibla case in B25."],
+        "feedback": ["A useful critique identifies a premise and its textual support rather than replacing the position with ‘everyone is right’ or ‘every error is sinful’.", "A completed comparison needs exact passages, speaker identification and attention to what is at issue: truth, required inquiry, repetition of an act or culpability. These questions cannot be treated as synonyms."]
+      }
+    }
+  },
+  {
+    "number": 27,
+    "id": "conflicting-proofs",
+    "unit": 8,
+    "title": "What should happen when proofs conflict?",
+    "summary": "Distinguish apparent conflict, unresolved equality and justified evidential preference.",
+    "prerequisites": ["Understand why probable evidence can warrant action.", "Distinguish a stronger indication from a personal preference."],
+    "terms": [
+      {"term": "taʿāruḍ", "definition": "Conflict between evidence as it appears to an inquirer; §247 distinguishes this from contradiction within the Law itself."},
+      {"term": "tarjīḥ", "definition": "Establishing and following the evidentially stronger judgement, rather than selecting a preferred result without warrant."},
+      {"term": "tawaqquf", "definition": "Suspending judgement; §246 asks what this can mean when a person must act in one of two opposed ways."},
+      {"term": "iḥtiyāṭ", "definition": "Caution; the text weighs avoiding omission against the danger of adding an unsupported requirement."},
+      {"term": "barāʾa aṣliyya", "definition": "Original nonliability, invoked by the Ẓāhirī response reported in §247 when apparently equal evidence does not establish an obligation."}
+    ],
+    "applications": ["B14", "B27", "B28"],
+    "levels": {
+      "basic": {
+        "objective": "Explain why conflicting evidence does not automatically authorise free choice or the strictest possible action.",
+        "sections": [246, 247, 256, 257],
+        "explanation": [
+          "Section 246 considers suspension, caution and choice. Each needs examination. Choice would itself amount to a permission requiring justification. Suspension can be practically impossible when one must act one way or another. Caution avoids one possible omission but may introduce something the Law does not require.",
+          "Section 247 reports the Ẓāhirī return to original nonliability under apparent equality and locates conflict in the inquirer’s situation. Sections 256–257 then address cases where one judgement is stronger. The aim is to establish that superiority from evidence, not to treat all disagreement as equal or to choose whichever result is most attractive."
+        ],
+        "example": {"title": "The ritual-bathing reports (§246)", "text": "The passage uses conflicting reports about what requires bathing to show why practical suspension can fail: the person must either undertake the relevant act or refrain. The example raises an evidential problem rather than supplying a general shortcut."},
+        "tasks": ["Give the objection to unrestricted choice and the difficulty with automatic caution.", "Distinguish equal evidence from two opinions of unequal evidential strength."],
+        "feedback": ["Choice adds a claim of permission; caution can add an unsupported obligation. Both need justification.", "The existence of two opinions does not establish equal support. Section 257 concerns following the judgement whose supporting evidence is stronger."]
+      },
+      "intermediate": {
+        "objective": "Compare the four responses to apparent conflict and identify the condition under which each is being discussed.",
+        "sections": [246, 247, 256, 257],
+        "explanation": [
+          "Construct the sequence carefully. Section 246 reports three responses and raises distinct objections; §247 introduces the Ẓāhirī response as a fourth. Do not silently attribute every reported proposal to Ibn Rushd as his own settled rule. The discussion explains how an inquirer can face apparently contradictory evidence because of incomplete access or failure to distinguish relevant circumstances.",
+          "Section 256 declines an exhaustive catalogue of preferences, directing particular considerations back to transmission and meaning. Section 257 establishes following the stronger judgement. These passages do not license intuition without reasons: the relevant question is what produces evidential preponderance in this case."
+        ],
+        "example": {"title": "Missing the abrogating report (§247)", "text": "The text names failure to distinguish abrogating from abrogated evidence as one source of apparent conflict. A change in the inquirer’s knowledge can alter the assessment without introducing a contradiction into the Law."},
+        "tasks": ["Tabulate suspension, caution, choice and original nonliability with the reason offered for or against each.", "Explain why learning a report’s chronology can change the problem rather than merely break a tie."],
+        "feedback": ["Preserve attribution and the distinction between practical action and evidential judgement. No response becomes universally correct merely because it appears in the list.", "Chronology may show that two statements do not govern the same circumstances at the same time. The supposed conflict may then be redescribed, rather than settled by arbitrary preference."]
+      },
+      "advanced": {
+        "objective": "Audit a proposed resolution of conflicting evidence by identifying exactly what changes the balance or removes the conflict.",
+        "sections": [246, 247, 256, 257],
+        "explanation": [
+          "Choose a reported conflict and distinguish authenticity, meaning, scope and chronology. A stronger transmission route and a narrower interpretation solve different problems. Section 256 places preference considerations within the relevant discussions, while §257 requires the resulting stronger judgement. Explain which operation a proposed solution performs.",
+          "B27 concerns cupping while fasting; B28 concerns deferred animal exchange. These editorial cards are leads to primary passages. Retrieve one, record its actual alternatives and determine whether the reasoning prefers, reconciles or sets aside apparently conflicting evidence. Do not announce the comparison completed from the card’s summary alone."
+        ],
+        "example": {"title": "Adding a precaution can also require proof (§246)", "text": "The passage recognises that avoiding blame for omission is not the only concern: adding a requirement unsupported by the Law can also be objectionable. A resolution must justify its normative consequence."},
+        "tasks": ["Write a short case analysis identifying the exact evidential operation and the conclusion it supports.", "Explain what further evidence would make you revise your proposed resolution."],
+        "feedback": ["A strong analysis shows why the evidence is stronger, or why the apparent contradiction disappears. Merely choosing the stricter, easier or more familiar result does not perform that work.", "Name a concrete defeater: a stronger report, a different established context, a chronology or a scope distinction. This makes the proposed judgement accountable to evidence rather than insulated from it."]
+      }
+    }
+  },
+  {
+    "number": 28,
+    "id": "authority",
+    "unit": 8,
+    "title": "When is following an authority legitimate?",
+    "summary": "Examine justified trust, the communal need for expertise and the continuing responsibility to investigate new questions.",
+    "prerequisites": ["Know the requirements for independent inquiry in §§231–236.", "Distinguish probable confidence from certainty and from unsupported preference."],
+    "terms": [
+      {"term": "taqlīd", "definition": "Accepting another’s statement with preponderant confidence in its truth because of trust in that person, as defined in §249."},
+      {"term": "farḍ kifāya", "definition": "A collective obligation whose adequate performance by some suffices for others; §250 applies it to maintaining juristic expertise."},
+      {"term": "mujtahid", "definition": "A qualified independent inquirer; §§251–254 distinguish possessing that competence from merely transmitting earlier opinions."},
+      {"term": "ẓann", "definition": "Probable judgement: here it can arise from warranted trust in an expert as well as from the expert’s examination of evidence."}
+    ],
+    "applications": [],
+    "levels": {
+      "basic": {
+        "objective": "Explain why Ibn Rushd requires both qualified inquiry and legitimate reliance within a community.",
+        "sections": [249, 250, 251, 255],
+        "explanation": [
+          "Section 249 defines following authority through preponderant confidence in a trusted person’s statement. It distinguishes this from following the Prophet, which the text grounds in certainty. Ordinary reliance is therefore not presented as possessing exactly the same evidential status as revelation.",
+          "Section 250 examines three social arrangements. If everyone undertook independent inquiry, the activities sustaining livelihood would be disrupted. If no one were qualified, many rulings would be neglected. A community therefore needs qualified people who preserve, teach and investigate, alongside people who legitimately rely on them. This is described as a collective obligation."
+        ],
+        "example": {"title": "The three possible arrangements (§250)", "text": "Everyone is a jurist; no one is a jurist; or some investigate and others rely. The passage rejects the first two and explains how the third serves both knowledge and the wider requirements of communal life."},
+        "tasks": ["State the problem with each of the first two arrangements.", "Explain why the third requires more than preserving an expert’s name or reputation."],
+        "feedback": ["Universal specialist inquiry disrupts livelihood; universal absence of competence leaves duties and new questions unattended.", "The community needs actual preservation, teaching and derivation. Trust has a necessary object: qualified people performing the relevant work, rather than prestige standing in for that work."]
+      },
+      "intermediate": {
+        "objective": "Distinguish legitimate reliance, qualified transmission and the claim to derive new rulings from inherited opinions.",
+        "sections": [250, 251, 252, 253, 254, 255],
+        "explanation": [
+          "Section 251 allows a qualified jurist to rely on someone more knowledgeable when confidence in that person’s judgement outweighs the judgement reached through his own inquiry. The relevant condition is comparative warranted confidence, not mere seniority or fame.",
+          "Section 252 then criticises people who transmit school opinions without possessing independent competence and turn those opinions into sources for new derivation. Sections 253–254 add a temporal argument: past inquiry cannot discharge the communal task forever, because new cases continue to arise. Keep this criticism distinct from rejecting every use of transmitted learning or every instance of reliance."
+        ],
+        "example": {"title": "Transmitting an opinion and treating it as a source (§252)", "text": "The passage distinguishes reporting an earlier jurist’s judgement from deriving additional rulings as though that judgement were itself an independent source. The second move requires an argument about authority and competence that the first does not supply."},
+        "tasks": ["Explain the condition governing a mujtahid’s reliance in §251.", "State why ongoing transmission alone does not satisfy §§253–254."],
+        "feedback": ["Confidence in the more knowledgeable jurist must outweigh one’s own probable judgement about the matter. The text does not grant unrestricted deference on every question.", "Transmission preserves earlier conclusions, but the passage argues that unbounded new cases require living inquiry. The collective obligation must be discharged in each period."]
+      },
+      "advanced": {
+        "objective": "Reconstruct the institutional argument for continuing expertise without turning a specific historical criticism into a blanket judgement on every school.",
+        "sections": [236, 249, 250, 251, 252, 253, 254],
+        "explanation": [
+          "Connect three levels of the argument: the individual’s justified trust in §249, the communal distribution of duties in §250, and the requirement for continuing inquiry in §§253–254. Ask how issue-specific competence in §236 affects that distribution. Distinguish what the text explicitly states from your proposed institutional implications.",
+          "Section 254 distinguishes attaining the rank of inquiry from actually practising it. This gives the argument a further dimension: possessing expertise is insufficient if the work remains undone. A comparison with another school’s account requires its own primary passage and an analysis of what it permits by transmission, interpretation and derivation."
+        ],
+        "example": {"title": "Qualified but not practising (§254)", "text": "Ibn Rushd allows that someone might have attained the relevant rank while continuing to act only as a follower. His complaint concerns the discharge of the communal task, not simply the total absence of learned persons."},
+        "tasks": ["Write a reconstruction showing why past expertise cannot permanently discharge the collective obligation.", "Identify one institutional implication and label the inferential step that takes it beyond the explicit text."],
+        "feedback": ["The argument joins continuing new cases with the requirement that someone perform the task in each period. Explain both premises rather than assuming that novelty alone proves the full conclusion.", "A defensible implication remains tied to actual competence and performance. Do not use §§252–254 to condemn every later school practice without examining its account of sources, authority and qualified derivation."]
+      }
+    }
+  }
+]

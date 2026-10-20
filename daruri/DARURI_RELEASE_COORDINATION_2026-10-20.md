@@ -19,4 +19,8 @@ The user has asked the current Darūrī chats to coordinate site and PDF updates
 
 ## Publication status
 
-Coordination note published before the guide release. The guide implementation and companion are in progress; this note is not a claim that those files are already live. Initial implementation baseline: `9071d49a584e807b7000a7446843d4da2e9aa92b`. The release completion update will record tested guide scope and PDF status.
+This release includes all 28 questions at all three levels and an 85-page companion built from the same JSON sources. Publication is independent of the separate contents/PDF work. Existing five reading PDFs are retained with their verified checksums and section destinations. Initial implementation baseline: `9071d49a584e807b7000a7446843d4da2e9aa92b`; merged the coordination note from `6a2fd23` before publication.
+
+Validation: all 84 lesson renders, 28 assigned-reading sequences and returns, feedback/scroll restoration, level-specific progress, filter/search navigation, print/share behavior, reader preferences, and malformed/direct URLs; existing heading, language and focus checks; all 258 reference-PDF destinations; full PDF content/link/bookmark verification and rendered layout review. Guide companion build provenance is in `study/companion-metadata.json`.
+
+The other chats’ original-versus-editorial contents changes were not yet committed at integration time. Those future releases should preserve the study runtime files and companion, and use the shared source files when updating the guide.

@@ -228,15 +228,18 @@ function backToReader(section,focusTerm){
 function backToDictionaryEntryOrigin(){
  const o=dictionaryEntryOrigin;
  if(o&&o.route&&o.route!=='reader'&&dictionaryReturnNames[o.route]){
+   const hash=o.route==='study'&&typeof o.hash==='string'&&/^#study(?:\?|$)/.test(o.hash)?o.hash:'#'+encodeURIComponent(o.route);
    try{sessionStorage.setItem('daruri-restore-reference-view',JSON.stringify({
-     route:o.route,y:o.y,snapshot:o.snapshot||{},ui:o.ui||null,created:Date.now()
+     route:o.route,hash,y:o.y,snapshot:o.snapshot||{},ui:o.ui||null,created:Date.now()
    }))}catch(e){}
-   window.location.href='index.html#'+encodeURIComponent(o.route);return;
+   window.location.href='index.html'+hash;return;
  }
  if(o&&o.route==='reader'&&o.point){
+   const savedHash=typeof o.hash==='string'?o.hash:'';
+   const hash=savedHash.startsWith('#section=')&&new URLSearchParams(savedHash.slice(1)).get('section')===String(o.point.section)?savedHash:'#section='+encodeURIComponent(o.point.section);
    try{sessionStorage.removeItem('daruri-dictionary-jump-origin');if(o.returnOrigin)sessionStorage.setItem('daruri-reader-source-origin',JSON.stringify(o.returnOrigin));}catch(e){}
    try{sessionStorage.setItem('daruri-return-location',JSON.stringify({point:o.point,created:Date.now()}))}catch(e){}
-   window.location.href='index.html#section='+encodeURIComponent(o.point.section);return;
+   window.location.href='index.html'+hash;return;
  }
  // Direct visits, without a recorded source, may still return to the last section.
  backToReader(null,null);

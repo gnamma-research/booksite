@@ -104,6 +104,9 @@
       ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js'],
       ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js'],
       ['daruri/download-bundle.js', 'download-bundle.js'],
+      ['daruri/study-guide-data.js', 'study-guide-data.js'],
+      ['daruri/study-guide.js', 'study-guide.js'],
+      ['daruri/study-guide.css', 'study-guide.css'],
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json'],
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
       ['daruri/sw.js', 'sw.js'],
@@ -122,6 +125,7 @@
       ['daruri/daruri-arabic.pdf', 'daruri-arabic.pdf'],
       ['daruri/daruri-english.pdf', 'daruri-english.pdf'],
       ['daruri/daruri-study.pdf', 'daruri-study.pdf'],
+      ['daruri/daruri-study-guide.pdf', 'daruri-study-guide.pdf'],
       ['daruri/daruri-arabic-vowelled.pdf', 'daruri-arabic-vowelled.pdf'],
       ['daruri/bou-akl-2015-variant-report.pdf', 'bou-akl-2015-variant-report.pdf']
     ]);

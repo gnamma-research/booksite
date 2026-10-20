@@ -1,0 +1,1092 @@
+[
+  {
+    "number": 10,
+    "id": "transmission",
+    "unit": 3,
+    "title": "How are the Qurʾān and Sunna known?",
+    "summary": "Distinguish the authority of revelation, the strength of its transmission, and the warrant for acting on probable evidence.",
+    "prerequisites": [
+      "Distinguish a source of a ruling from the ruling derived from it.",
+      "Recognize certainty, preponderant judgement, and unresolved doubt as different states."
+    ],
+    "terms": [
+      {
+        "term": "tawātur",
+        "definition": "Recurrent transmission producing certainty under the relevant conditions; §75 rejects a fixed number that would produce it in every case."
+      },
+      {
+        "term": "khabar al-āḥād",
+        "definition": "A report below the recurrent-transmission threshold discussed here; its practical authority requires an account distinct from certainty."
+      },
+      {
+        "term": "taṣdīq",
+        "definition": "Assent: accepting something as true, with the rank of that acceptance examined in §§74–79."
+      },
+      {
+        "term": "ghalabat al-ẓann",
+        "definition": "Preponderant judgement: an evidentially stronger judgement whose legal role is explained in §81."
+      },
+      {
+        "term": "qarīna",
+        "definition": "An accompanying indication that strengthens, weakens, or helps determine what a report warrants."
+      }
+    ],
+    "applications": [
+      "B10"
+    ],
+    "levels": {
+      "basic": {
+        "objective": "Explain why acting on a report and being certain of its transmission are different questions.",
+        "sections": [
+          64,
+          66,
+          74,
+          75,
+          81
+        ],
+        "explanation": [
+          "Begin with §66. Ibn Rushd distinguishes hearing the Prophet directly from receiving his words through transmitters. The authority of the original speaker does not remove the need to examine how a later hearer receives the report. §64 separately discusses establishing what belongs to the Qurʾānic corpus.",
+          "In §§74–75 the question is the strength of assent: when does transmission produce certainty? Multiplicity matters, but Ibn Rushd rejects a fixed number that works independently of the surrounding indications. Counting narrators is therefore not a complete account.",
+          "§81 supplies the practical bridge. Preponderant judgement can be appointed as a sign that a ruling applies. Ibn Rushd connects this with witnesses, legal opinions, and finding the qibla when it is unseen. A requirement to act does not turn each individual report into certain knowledge."
+        ],
+        "example": {
+          "title": "Finding an unseen direction",
+          "text": "§81 invokes facing the Kaʿba when it cannot be seen. The person must use warranted evidence to act; lack of direct sight does not make every direction equally acceptable."
+        },
+        "tasks": [
+          "Name the three questions separated by this lesson: original authority, transmission, and practical action.",
+          "Why would requiring recurrent transmission for every report cause the difficulty described in §81?"
+        ],
+        "feedback": [
+          "The speaker’s authority concerns why the original statement binds; transmission concerns our evidence that the statement was made; practical action concerns what strength of evidence suffices to act.",
+          "Ibn Rushd argues that most particular reports need not be recurrently transmitted. Requiring recurrence in every case would suspend many rulings and obstruct securing rights. This supports a warranted role for probability, not indiscriminate acceptance of reports."
+        ]
+      },
+      "intermediate": {
+        "objective": "Reconstruct the argument from degrees of transmission to warranted action without confusing its separate premises.",
+        "sections": [
+          75,
+          76,
+          77,
+          79,
+          81,
+          82
+        ],
+        "explanation": [
+          "Read §§75–79 as an account of how assent arises, then §81 as an argument about action. §77 allows contextual indications to strengthen or weaken a report. §79 also acknowledges the unusual possibility that a single report produces certainty for a particular recipient in particular circumstances; its defective textual construction is marked in the reader.",
+          "In §81 distinguish a position Ibn Rushd reports, al-Ghazālī’s objection, and Ibn Rushd’s reply. The reply contrasts rare ignorance of the Law altogether with the ordinary absence of recurrent transmission for particular reports. §82 then separates the existence of a duty to warn from the evidential force of a particular scriptural argument for accepting the warning."
+        ],
+        "example": {
+          "title": "The reported death in the marketplace",
+          "text": "In §77, a report that the king was killed publicly is weakened when people returning from the marketplace say nothing about it. The surrounding circumstances matter because the reported event would normally have consequences visible in their behaviour."
+        },
+        "tasks": [
+          "Explain why “one narrator always means the same probability” misrepresents §§77–79.",
+          "In §82, distinguish the verse’s apparent meaning from a claim that it decisively proves the required conclusion."
+        ],
+        "feedback": [
+          "Probability varies with relevant circumstances and the recipient’s evidence. This variation does not authorize treating a preferred impression as an indication without an argument.",
+          "Ibn Rushd finds the verse more apparently supportive of action on reports from a small group, but observes that the word for “group” can also denote a large number. The lexical possibility prevents the argument from being unambiguous even where it remains persuasive."
+        ]
+      },
+      "advanced": {
+        "objective": "Test the relation between epistemic certainty, legal authority, and evidence of a proposition’s precise scope.",
+        "sections": [
+          64,
+          75,
+          76,
+          77,
+          81,
+          82
+        ],
+        "explanation": [
+          "Treat three claims separately: a report produces certainty; a practice of acting on reports is certainly established; and a particular reported ruling must be acted on. §81’s concluding appeal to the Prophet’s emissaries concerns the warrant for the practice. It does not certify every report subsequently offered.",
+          "The basmala discussion in §64 and application B10 add a further distinction: recognizing transmitted wording as Qurʾānic and assigning it to the beginning of every sūra are different propositions. Use the application as an explicitly labelled illustrative parallel, then examine its linked source before making stronger claims.",
+          "For comparative research, locate al-Ghazālī’s own discussion corresponding to §§76–82. This is a proposed investigation: Ibn Rushd’s report of his position is evidence about Ibn Rushd’s argument, not a substitute for reading the comparator."
+        ],
+        "example": {
+          "title": "An authority claim with the wrong scope",
+          "text": "A researcher writes: “Certainty establishes the authority of solitary reports; therefore each solitary report is certain.” Identify the shift from a rule governing practice to the truth of each item admitted under conditions."
+        },
+        "tasks": [
+          "Write a 300-word reconstruction with separate propositions for transmission, authority, and action.",
+          "Check one passage in the proposed al-Ghazālī comparison or B10’s source and record the exact edition locator."
+        ],
+        "feedback": [
+          "A strong reconstruction states which proposition is certain, which remains probable, and what conditions connect evidence to action. It answers the apparent tension rather than replacing “probable” with “certain.”",
+          "Assess the comparison by accurate attribution, a bounded quotation or translation, an exact source locator, and a stated limit: agreement on one proposition does not establish agreement on all three."
+        ]
+      }
+    }
+  },
+  {
+    "number": 11,
+    "id": "narrators",
+    "unit": 3,
+    "title": "How should narrators be judged?",
+    "summary": "Examine truthfulness, retention, stated grounds of evaluation, and the difference between categorical denial and forgetfulness.",
+    "prerequisites": [
+      "Complete the transmission lesson’s distinction between certainty and warranted action."
+    ],
+    "terms": [
+      {
+        "term": "ʿadāla",
+        "definition": "Probity: the qualification whose meaning is disputed in §§86–90 and whose purpose Ibn Rushd relates to probable truthfulness."
+      },
+      {
+        "term": "ḍabṭ",
+        "definition": "Accurate retention; §85 distinguishes the danger of habitual inattention from the evaluation of moral reliability."
+      },
+      {
+        "term": "jarḥ",
+        "definition": "Criticism of a transmitter, whose grounds and evidential force are examined in §96."
+      },
+      {
+        "term": "taʿdīl",
+        "definition": "Attestation of probity; its meaning and grounds must be distinguished from merely acting on a report."
+      }
+    ],
+    "applications": [],
+    "levels": {
+      "basic": {
+        "objective": "Separate the narrator’s memory, truthfulness, and relation to a particular report.",
+        "sections": [
+          83,
+          85,
+          86,
+          90,
+          96,
+          107
+        ],
+        "explanation": [
+          "§83 refuses to import the numerical requirements of testimony automatically into report transmission. Once action on a single report is established, someone demanding additional narrators must justify that extra requirement.",
+          "Accuracy and truthfulness are separate concerns. §85 discusses retention; §§86–90 discuss probity and the disagreement about what establishes it. Ibn Rushd’s conclusion in §90 relates probity to a preponderant judgement of truthfulness under the circumstances, rather than an arbitrary fixed threshold.",
+          "§96 asks what an evaluator knows and whether the grounds are stated. §107 then distinguishes a teacher’s categorical denial from simple failure to remember. Neither “a teacher denied it” nor “the narrator is reliable” is enough by itself to summarize every case."
+        ],
+        "example": {
+          "title": "“That is false” and “I do not remember”",
+          "text": "In §107, categorical denial by a teacher produces a conflict between two persons of probity. Uncertain recollection is different: the teacher may simply have forgotten what the transmitter remembers with certainty."
+        },
+        "tasks": [
+          "Why is failing to act on one disputed report not necessarily a judgement that its narrator is dishonest?",
+          "State one difference between retention and probity."
+        ],
+        "feedback": [
+          "The problem may be conflict between reliable sources or another defect in the evidence. §107 explicitly withholds action after categorical denial without thereby discrediting the transmitter.",
+          "Retention concerns preserving what was heard accurately. Probity concerns the grounds for confidence in truthfulness. A person may be sincere yet inattentive, so one qualification cannot replace the other."
+        ]
+      },
+      "intermediate": {
+        "objective": "Explain whose certainty or probability matters at each stage of transmission.",
+        "sections": [
+          90,
+          96,
+          97,
+          106,
+          107
+        ],
+        "explanation": [
+          "§106 rejects an equivocation about probability. The recipient may have probable confidence in a teacher’s truthfulness, while the transmitter must be certain of hearing where certainty is possible. The fact that a later judgement is probable does not lower every earlier requirement to probability.",
+          "§96 likewise qualifies the preference for criticism over praise. Criticism ordinarily adds information, but if the favourable evaluator directly addresses the very matter alleged by the critic, the two evaluations conflict. Read §97 to see why action on a report does not always accredit its transmitter: the action could rest on another proof."
+        ],
+        "example": {
+          "title": "Two evaluators, one alleged event",
+          "text": "One evaluator reports a specific fault; another merely gives general praise. Compare this with a second case in which the favourable evaluator directly rebuts that same allegation. These are teaching variations on §96’s stated distinction."
+        },
+        "tasks": [
+          "Draw a three-step chain: the speaker’s utterance, the transmitter’s hearing, and the recipient’s judgement. Label the relevant assurance at each step.",
+          "Explain why “criticism always wins” and “acting on a report always accredits its narrator” both require correction."
+        ],
+        "feedback": [
+          "A satisfactory chain distinguishes the source event from certainty about having heard it and from probable confidence in the person now transmitting it. It does not assign one undifferentiated probability to the entire process.",
+          "Criticism’s added information can itself be contested, producing conflict. Acting on a report may rely on independent evidence. The conclusion depends on what the evaluator or actor actually knows and relies upon."
+        ]
+      },
+      "advanced": {
+        "objective": "Evaluate a rule of transmitter assessment by its stated grounds and exceptions.",
+        "sections": [
+          83,
+          90,
+          95,
+          96,
+          97,
+          106,
+          107,
+          233
+        ],
+        "explanation": [
+          "Build an argument table rather than a checklist of reputations. For each judgement record its object, evaluator, grounds, and the competing information. Distinguish rejecting a report, discrediting a person, and withholding a conclusion. §§96–107 supply cases where those outcomes come apart.",
+          "Compare this with §233 on a jurist relying on another scholar’s accreditation: the jurist should know the accreditor’s approach and its agreement with his own. The methodological issue is how second-hand expertise is responsibly used, not whether every jurist must independently repeat every biographical inquiry.",
+          "A possible external comparison is al-Ghazālī’s treatment of criticism and accreditation. Locate and read that text before asserting dependence, agreement, or correction; the current exercise establishes no such conclusion in advance."
+        ],
+        "example": {
+          "title": "A compact research dossier",
+          "text": "Take the teacher’s denial in §107. Set out categorical contradiction, uncertain recollection, the transmitter’s certainty, and the recipient’s probable judgement in separate rows. Explain why the legal handling changes when only one feature changes."
+        },
+        "tasks": [
+          "Write a 250–400 word critique of an unqualified rule that adverse criticism always defeats favourable accreditation.",
+          "Add one verified comparison with §233 or the proposed external source."
+        ],
+        "feedback": [
+          "Assess the critique by its treatment of §96’s exception, the reasons for preference, and the distinction between uncertainty about a report and an accusation against its narrator.",
+          "A good comparison identifies what is delegated to expertise, what the recipient must still understand, and where the two passages address different questions. External claims require the actual passage and edition locator."
+        ]
+      }
+    }
+  },
+  {
+    "number": 12,
+    "id": "wording-transmission",
+    "unit": 3,
+    "title": "Can wording be changed in transmission?",
+    "summary": "Distinguish an added phrase, a translation, an excerpt, and an omitted transmitter; each changes the evidence differently.",
+    "prerequisites": [
+      "Distinguish a report from an interpretation of that report.",
+      "Understand why an accompanying indication can strengthen or weaken a report."
+    ],
+    "terms": [
+      {
+        "term": "ziyāda",
+        "definition": "Additional wording transmitted by one narrator; §108 weighs its circumstances rather than issuing a uniform verdict."
+      },
+      {
+        "term": "riwāya bi-l-maʿnā",
+        "definition": "Transmission by meaning rather than original wording; §§109–110 distinguish linguistic equivalence from another person’s interpretation."
+      },
+      {
+        "term": "ibdāl",
+        "definition": "Substitution of an expression; in this lesson the question is whether the replacement preserves what the recipient needs to judge."
+      },
+      {
+        "term": "irsāl",
+        "definition": "Transmission with an omitted link, discussed in §111."
+      },
+      {
+        "term": "taqlīd",
+        "definition": "Following another person’s judgement; §110 explains when a reported meaning would make an independent jurist depend on someone else’s interpretation."
+      }
+    ],
+    "applications": [],
+    "levels": {
+      "basic": {
+        "objective": "Identify what has changed in a report before deciding whether the change matters.",
+        "sections": [
+          108,
+          109,
+          110,
+          111
+        ],
+        "explanation": [
+          "Four different problems occur here. §108 concerns extra wording found in one transmission. §109 concerns replacing words while conveying meaning. §110 concerns both the independent jurist’s need for the original expression and the conditions of excerpting. §111 concerns a missing link in the chain.",
+          "Ibn Rushd rejects the simple argument that a reliable narrator’s addition must be accepted just as an entire report from him would be. Other accurate narrators’ omission is relevant evidence, but they may not have heard that part. §108 therefore leaves the judgement sensitive to the case.",
+          "For translation, §110 distinguishes explaining a meaning to someone relying on a jurist from supplying an independent jurist with another interpreter’s conclusion. Where understanding the wording is disputed, the independent inquiry needs access to that wording."
+        ],
+        "example": {
+          "title": "Replacing two words for sitting",
+          "text": "§109 uses quʿūd and julūs as an example of a replacement some permit where equivalence is beyond doubt. The difficult case is a replacement whose alleged equivalence already depends on an interpretation."
+        },
+        "tasks": [
+          "Why is an addition to a jointly transmitted report different from a wholly separate report?",
+          "What must remain true of an excerpt under §110?"
+        ],
+        "feedback": [
+          "The other narrators’ version now supplies comparison evidence. Their omission may weaken the addition, although it does not by itself prove they denied or heard it.",
+          "The excerpt must convey an independent intelligible meaning, and omitted material must not introduce an ambiguity or remove what is needed to understand it. Brevity alone does not establish that condition."
+        ]
+      },
+      "intermediate": {
+        "objective": "Separate preservation of meaning from transfer of interpretive responsibility.",
+        "sections": [
+          108,
+          109,
+          110,
+          111
+        ],
+        "explanation": [
+          "Reconstruct the two positions reported in §109 before identifying Ibn Rushd’s own judgement in §110. One allows a knowledgeable person to transmit meaning; another demands a replacement whose equivalence is beyond doubt. The appeal to translation does not by itself settle whose interpretive judgement a later recipient is accepting.",
+          "In §110 the intended recipient matters. A jurist may explain or translate for followers while an independent jurist may require the Lawgiver’s wording to perform his own inquiry. §111 makes a parallel evidential point about chains: the formula “from” is not by itself proof that there was direct hearing."
+        ],
+        "example": {
+          "title": "An interpretation hidden inside a translation",
+          "text": "Imagine a translator rendering an expression capable of two relevant senses by only one of them. This teaching example illustrates §110: the reader may unknowingly receive a juristic choice as though it were simply the transmitted wording."
+        },
+        "tasks": [
+          "Explain how a translation can be useful and still insufficient for a particular independent inquiry.",
+          "List the extra evidence §111 asks for before treating a “from” chain as connected."
+        ],
+        "feedback": [
+          "The explanation may faithfully convey the translator’s judgement for its audience. If the disputed legal conclusion depends on choosing among senses, however, another jurist needs the underlying wording and its alternatives.",
+          "An explicit statement of direct hearing or accompanying indications may establish connection. Without either, the formula alone leaves uncertainty between a connected report and one with an omitted link; no universal judgement about every such chain follows."
+        ]
+      },
+      "advanced": {
+        "objective": "Design a transparent editorial treatment of reported words, interpretation, and missing evidence.",
+        "sections": [
+          108,
+          109,
+          110,
+          111,
+          158,
+          167
+        ],
+        "explanation": [
+          "Apply §§109–110 to the scholarly reader itself. A translation is an interpretation whose decisions should be inspectable. Choose a disputed expression in §158 or §167, retain its Arabic, and distinguish a literal lexical possibility from the contextual or legal reason for selecting it.",
+          "Then construct two abstracts of the chosen passage: one preserving the argument and one deliberately omitting a necessary qualification. Label the second as an editorial counterexample. Use §110’s conditions to explain precisely why that omission changes what the reader can infer.",
+          "For a source comparison, locate al-Ghazālī’s discussion corresponding to transmission by meaning. Compare his proposed audience and the required linguistic competence with Ibn Rushd’s distinctions. This remains a proposed comparison until the source passage is checked."
+        ],
+        "example": {
+          "title": "A translation note with an accountable choice",
+          "text": "A useful note states the Arabic expression, the plausible senses, the contextual reason for the preferred rendering, and the legal difference that another rendering would make. It does not use a dictionary gloss as a substitute for the whole argument."
+        },
+        "tasks": [
+          "Prepare a 300-word translation-and-excerpt dossier with one documented interpretive choice.",
+          "Explain whether your excerpt preserves the issue, the attributed positions, and Ibn Rushd’s qualification."
+        ],
+        "feedback": [
+          "Assess the dossier by accurate quotation, explicit separation of wording from explanation, and preservation of a material alternative. More literal wording is not automatically more informative if it conceals the ambiguity.",
+          "The strongest answer identifies a specific inference that becomes possible or impossible after omission. It also records uncertainty instead of silently repairing a disputed expression or missing link."
+        ]
+      }
+    }
+  },
+  {
+    "number": 13,
+    "id": "abrogation",
+    "unit": 4,
+    "title": "When is a ruling abrogated?",
+    "summary": "Distinguish removing an earlier ruling from explaining its scope, and ask what evidence establishes the change.",
+    "prerequisites": [
+      "Distinguish the wording of a source from the ruling established through it.",
+      "Understand that evidence differs in certainty and transmission."
+    ],
+    "terms": [
+      {
+        "term": "naskh",
+        "definition": "Abrogation: the later removal of a revealed ruling, with competing definitions discussed in §115."
+      },
+      {
+        "term": "nāsikh",
+        "definition": "The abrogating discourse; its relationship to the earlier ruling and its later date must be established."
+      },
+      {
+        "term": "mansūkh",
+        "definition": "The ruling or text said to be abrogated; specify exactly what is alleged to cease."
+      },
+      {
+        "term": "takhṣīṣ",
+        "definition": "Specification of a general expression’s scope; §126 distinguishes clarification from removal."
+      },
+      {
+        "term": "tawātur",
+        "definition": "Recurrent transmission, relevant here to the evidential standard for claims about the Qurʾān and other certain texts."
+      }
+    ],
+    "applications": [],
+    "levels": {
+      "basic": {
+        "objective": "Explain why apparent conflict alone does not establish abrogation.",
+        "sections": [
+          115,
+          116,
+          122,
+          126,
+          128,
+          129
+        ],
+        "explanation": [
+          "§115 records different definitions: removal of an earlier ruling, or disclosure of its intended time limit. In §116 Ibn Rushd distinguishes the theological dispute about possibility from what a jurist needs to establish in a particular legal inquiry.",
+          "For a first reading ask three questions. What earlier revealed ruling is claimed to cease? What later discourse removes it? What evidence establishes that temporal relationship? §128 excludes treating the mere end of an already stated period, or the original absence of obligation, as the same phenomenon.",
+          "§126 separates specification, which clarifies scope, from abrogation, which removes a ruling. §122 says consensus cannot itself abrogate after revelation has ceased; it can provide evidence that an earlier abrogating text existed."
+        ],
+        "example": {
+          "title": "Knowing the date of the report",
+          "text": "§129 accepts explicit wording identifying an earlier prohibition and a later permission, known dates, or the stated evidential role of consensus. A transmitter’s later conversion to Islam does not by itself date the event he reports."
+        },
+        "tasks": [
+          "Why does a younger transmitter not prove a later ruling?",
+          "How can consensus be evidence of abrogation without being its cause?"
+        ],
+        "feedback": [
+          "The transmitter’s biography and the date of the reported ruling are different facts. A later convert may report earlier material; the required chronology needs evidence.",
+          "On §122’s account, consensus can disclose an earlier abrogating revelation that has not reached us. It does not enact a new abrogation after revelation has ended."
+        ]
+      },
+      "intermediate": {
+        "objective": "Determine what changes when an addition, omission, or later text alters an obligation.",
+        "sections": [
+          115,
+          117,
+          118,
+          121,
+          123,
+          126,
+          129
+        ],
+        "explanation": [
+          "§118 does not treat every addition alike. The question is whether the addition makes the original prescribed act a different individual whole. The example of additional prayer cycles is contrasted with adding a distinct obligation, and with adding a quantity that does not alter the act’s identity in the same way.",
+          "§121 further separates recitation from ruling and then scrutinizes the proof for particular claimed instances. Notice the move from reporting that a category is accepted to asking whether a given historical claim meets the required evidential standard.",
+          "§123 also distinguishes circumstances during the Prophet’s lifetime from later transmission. Read its argument about access to the Prophet and accompanying indications before extracting a slogan about one report overriding another."
+        ],
+        "example": {
+          "title": "More prayer cycles and a new obligation",
+          "text": "In §118, adding cycles can change which complete prayer is required. Prescribing almsgiving alongside prayer does not replace prayer merely because the total set of duties has increased. The contrast concerns identity, not simple numerical increase."
+        },
+        "tasks": [
+          "Compare §118’s three kinds of addition and state the criterion doing the work.",
+          "Identify one place in §121 where Ibn Rushd asks for stronger proof rather than simply repeating a reported example."
+        ],
+        "feedback": [
+          "The criterion is whether the addition changes the prescribed act into a different individual whole. Distinct duties and some quantitative additions therefore receive different treatment; Ibn Rushd also records disagreement.",
+          "He questions accepting former Qurʾānic wording on solitary routes. A valid answer separates the general possibility of the category from the transmission required to establish that a particular wording was once Qurʾān."
+        ]
+      },
+      "advanced": {
+        "objective": "Audit an abrogation claim by distinguishing its semantic, chronological, and transmission premises.",
+        "sections": [
+          116,
+          121,
+          122,
+          123,
+          125,
+          126,
+          127,
+          129,
+          181,
+          182
+        ],
+        "explanation": [
+          "Construct a dossier for one claim actually discussed in these sections. Record the competing texts, what each establishes, the proposed conflict, the alleged temporal order, and the strength of the evidence for each step. §127 warns that calling something “abrogation” can conceal an interpreter’s classification rather than transmit a Prophetic statement.",
+          "Compare §126 with §§181–182. The latter discuss whether apparently general and specific evidence must be ordered chronologically or can be read as mutually clarifying. Do not settle that dispute by assuming that every restriction is removal, or that every later text leaves the earlier ruling untouched.",
+          "An external extension could compare al-Ghazālī’s treatment of the same example. Verify the source before attributing the shared category or a particular conclusion to both authors."
+        ],
+        "example": {
+          "title": "A claim whose chronology is weaker than its texts",
+          "text": "§126 leaves open examination of whether a solitary report can establish which of two decisive texts is later. The certainty of the texts and the certainty of their chronological relationship are distinct evidential questions."
+        },
+        "tasks": [
+          "Write a 350-word assessment of one abrogation claim, with a separate line for each required premise.",
+          "State what evidence would favour specification rather than abrogation in your chosen comparison."
+        ],
+        "feedback": [
+          "Assess the dossier by exact attribution, preservation of Ibn Rushd’s open questions, and separation of proof of wording, proof of meaning, and proof of chronology.",
+          "A strong answer identifies which proposition is actually disputed. It does not manufacture a date, convert a Companion’s interpretive label into a direct report, or treat consensus as a new post-revelatory act of repeal."
+        ]
+      }
+    }
+  },
+  {
+    "number": 14,
+    "id": "consensus",
+    "unit": 4,
+    "title": "What counts as consensus?",
+    "summary": "Distinguish qualified agreement, majority opinion, silence, and transmitted practice; identify the warrant claimed for each.",
+    "prerequisites": [
+      "Distinguish a source’s authority from the evidence that a particular instance exists."
+    ],
+    "terms": [
+      {
+        "term": "ijmāʿ",
+        "definition": "Agreement of the qualified practitioners of independent judgement on a revealed ruling, as defined in §130."
+      },
+      {
+        "term": "mujtahid",
+        "definition": "A qualified practitioner of independent juristic inquiry; the relevant participants in §130’s definition."
+      },
+      {
+        "term": "sukūt",
+        "definition": "Silence; §137 asks what, if anything, the circumstances show about a silent person’s judgement."
+      },
+      {
+        "term": "ʿamal",
+        "definition": "Practice; §138 examines Medinan practice through the possibility of transmission from the Prophet’s time."
+      }
+    ],
+    "applications": [
+      "B21"
+    ],
+    "levels": {
+      "basic": {
+        "objective": "Explain why “many agree” and “nobody objected” do not automatically establish consensus.",
+        "sections": [
+          130,
+          133,
+          134,
+          137,
+          139
+        ],
+        "explanation": [
+          "§130 defines consensus by agreement of qualified jurists on a revealed ruling. §133 explains why lay agreement does not add an independent source for a jurist: in the relevant matters it either follows qualified judgement or concerns already recurrently transmitted knowledge.",
+          "§134 requires the qualified jurists of one age, rather than every person of every future age. §137 asks whether all or merely most must agree. Ibn Rushd takes the apparent scope of the relevant formulas to include them all, while recognizing the inquiry into these conditions as disputed.",
+          "Silence has several possible explanations. A person may have no settled view, face an obstacle to speaking, or consider the matter open to inquiry. §137 allows circumstances to indicate approval; it does not authorize counting every silence as assent."
+        ],
+        "example": {
+          "title": "A jurist who has not spoken",
+          "text": "If one jurist remains silent while others announce an opinion, you still need evidence of what the silence means. Fear, uncertainty, or a belief that disagreement is permissible would undermine the inference of agreement."
+        },
+        "tasks": [
+          "What is missing from the claim “the majority accepted it, so consensus exists”?",
+          "According to §139, must an agreeing generation die before its consensus can bind?"
+        ],
+        "feedback": [
+          "The claim has not established agreement of all the relevant qualified jurists. A majority may be important evidence without satisfying the definition being defended.",
+          "Ibn Rushd rejects requiring the generation’s extinction. Once consensus has genuinely existed, later dissent does not undo it in his account. Establishing that genuine prior agreement remains the crucial evidential task."
+        ]
+      },
+      "intermediate": {
+        "objective": "Reconstruct the distinct arguments for consensus, reported agreement, and Medinan practice.",
+        "sections": [
+          75,
+          130,
+          131,
+          132,
+          135,
+          136,
+          137,
+          138
+        ],
+        "explanation": [
+          "§131 offers a cumulative scriptural warrant: texts that are not individually unambiguous on this point are considered together with reports transmitted in meaning. §132 rejects replacing that warrant with a simple inference from numbers. Agreement on error is not excluded merely by having many people.",
+          "§138 similarly refuses to ground Medinan practice’s authority in an early numerical majority. The proposed justification traces practice by transmission to the Prophet’s time and approval. Without that history, local practice might instead reflect a later ruler’s imposition.",
+          "§§135–136 show why consensus disputes depend on other principles. Whether later agreement can follow earlier disagreement, and whether consensus can rest on analogy, require analysis of the underlying evidence rather than a bare label."
+        ],
+        "example": {
+          "title": "The measure of the ṣāʿ",
+          "text": "§138 recalls the encounter involving Mālik and Abū Yūsuf over the ṣāʿ measure. Ibn Rushd’s methodological point is the transmission of practice across generations, not that a city’s current agreement establishes authority by itself."
+        },
+        "tasks": [
+          "Compare the reason numbers matter in §75 with the rejected argument from numbers in §132.",
+          "Give the missing step in “Medinans do this; therefore the Prophet approved it.”"
+        ],
+        "feedback": [
+          "In §75 multiplicity is one contextual factor affecting assent to a transmitted event. In §132 the authority of juristic consensus is grounded in a revealed warrant, not an assurance that a large group cannot make an intellectual mistake.",
+          "The practice must be traced through transmission to the relevant Prophetic period and approval. Present agreement cannot supply that historical link merely by being called practice."
+        ]
+      },
+      "advanced": {
+        "objective": "Test a historical consensus claim against its participants, proposition, and evidence of agreement.",
+        "sections": [
+          130,
+          131,
+          132,
+          135,
+          136,
+          137,
+          138,
+          139,
+          217
+        ],
+        "explanation": [
+          "Choose a bounded claim of consensus rather than a whole school’s doctrine. Identify the exact proposition, the qualified participants whose agreement is required, the period, and the evidence for their views. Record silence separately from an explicit judgement unless contextual grounds justify combining them.",
+          "Application B21, on deathbed divorce, reports an express challenge to a Companion-consensus claim because a dissenter is known. Read the linked Bidāya passage before reconstructing it. Its relation to §217 also raises a separate question about welfare reasoning; do not let that second issue obscure whether consensus has been established.",
+          "A further research exercise compares §131’s cumulative warrant with §132’s rejection of a purely numerical one. Distinguish defending the institution’s authority from proving a particular historical instance."
+        ],
+        "example": {
+          "title": "A dissent that changes the classification",
+          "text": "If a documented dissent concerns the same proposition, it defeats a claim of unanimity in the relevant group. First check that the supposed dissent is actually about the same ruling, qualifications, and period."
+        },
+        "tasks": [
+          "Prepare a 300–400 word consensus dossier using B21’s verified source or one claim examined within the Darūrī.",
+          "Explain how your evidence treats silence, later agreement, and a purported dissenter."
+        ],
+        "feedback": [
+          "Assess the dossier by precision of the proposition, identified participants, exact source references, and a justified account of what the evidence proves. “No dissent found” must not silently become “all agreed.”",
+          "A strong result can be qualified or negative. It distinguishes an unproved consensus claim from a refutation of consensus as a source, and it does not suppress differences between transmission of practice and agreement in judgement."
+        ]
+      }
+    }
+  },
+  {
+    "number": 15,
+    "id": "presumption",
+    "unit": 4,
+    "title": "What follows when evidence is absent?",
+    "summary": "Trace the burden of proof when no obligation is established, and when an established ruling’s subject changes.",
+    "prerequisites": [
+      "Distinguish an unestablished obligation from an obligation already established by revelation.",
+      "Recognize that apparent evidential conflict can depend on what a particular inquirer has received."
+    ],
+    "terms": [
+      {
+        "term": "barāʾa aṣliyya",
+        "definition": "Original freedom from liability: an obligation requiring revelation is presumed absent until evidence establishes it."
+      },
+      {
+        "term": "istiṣḥāb",
+        "definition": "Presumption of continuity; §142 distinguishes several applications rather than one unrestricted rule."
+      },
+      {
+        "term": "dalīl",
+        "definition": "An indication or proof; this lesson asks what must be established and on whom the evidential burden falls."
+      },
+      {
+        "term": "taʿāruḍ",
+        "definition": "Apparent conflict of evidence, relevant to the position reported in §247."
+      }
+    ],
+    "applications": [
+      "B27"
+    ],
+    "levels": {
+      "basic": {
+        "objective": "Distinguish the absence of an established duty from continuity of an already established ruling.",
+        "sections": [
+          141,
+          142,
+          247
+        ],
+        "explanation": [
+          "§141 gives the example of a supposed sixth obligatory prayer. Where the obligation could be established only through revelation, the person asserting it must supply the relevant evidence. Ibn Rushd resists demanding equal proof for its absence and its existence.",
+          "§142 explains that presumption of continuity has several uses. Continuing original freedom from liability is only one. Others concern maintaining a text, its general scope, or an established ruling. These cannot be collapsed into “nothing ever changes.”",
+          "§247 reports a Ẓāhirī response to apparently balanced evidence: return to original nonliability. The passage distinguishes the Law’s evidence from what a particular person has received or successfully understood. A learner’s failure to find a proof is therefore not, by itself, a demonstrated absence of relevant evidence."
+        ],
+        "example": {
+          "title": "The asserted sixth prayer",
+          "text": "The example in §141 concerns the burden on someone who would add a revealed obligation. It illustrates how a claim is established; it does not turn a person’s present ignorance into unrestricted permission."
+        },
+        "tasks": [
+          "Who bears the primary burden when a new revealed obligation is asserted?",
+          "Why is keeping an existing ruling a different case from presuming that no ruling was established?"
+        ],
+        "feedback": [
+          "The person asserting the obligation must produce its warrant. Ibn Rushd says either no proof, or a lighter burden, should be required for the better-known state of absence.",
+          "An existing ruling already has a warrant. The question then concerns whether changed circumstances remove it. §142 expressly describes this as a reversal of the earlier allocation of the burden."
+        ]
+      },
+      "intermediate": {
+        "objective": "Compare the five applications of continuity and explain why a changed subject produces disagreement.",
+        "sections": [
+          141,
+          142,
+          239,
+          246,
+          247
+        ],
+        "explanation": [
+          "List §142’s applications: original nonliability; general wording until specification; a text until abrogation; a ruling when its attaching circumstance recurs; and an established ruling when the subject is thought to have changed. The fifth introduces a dispute that the earlier labels alone cannot resolve.",
+          "Ibn Rushd explains how the Ẓāhirī position fits its rejection of juristic analogy: the established ruling continues until evidence removes it. Someone accepting analogy can treat a changed attribute as making the subject a new case requiring inquiry. This is a reconstruction of how positions follow from principles, not a claim that every physical change is legally relevant.",
+          "Compare §§246–247 carefully. Failure to establish a preponderance and freedom to choose any result are different responses; the text does not make caution costless either."
+        ],
+        "example": {
+          "title": "One historical subject, a changed legal description",
+          "text": "§142 uses the historical case of an enslaved woman who has borne her master a child. The methodological question is whether her changed description leaves the earlier ruling applicable; the example belongs to its historical legal setting."
+        },
+        "tasks": [
+          "Explain why the debate cannot be resolved simply by saying “keep the old rule.”",
+          "What further question must be asked before treating a changed attribute as a new case?"
+        ],
+        "feedback": [
+          "The parties disagree about whether the original evidential warrant still covers the subject. Repeating the presumption assumes the very point under dispute.",
+          "One must establish the attribute’s legal relevance and how the relevant principles handle it. The argument concerns scope and warranted inference, not change considered in the abstract."
+        ]
+      },
+      "advanced": {
+        "objective": "Evaluate presumptions as structured allocations of evidential burden, with attention to the inquirer’s position.",
+        "sections": [
+          141,
+          142,
+          239,
+          246,
+          247
+        ],
+        "explanation": [
+          "Construct two diagrams: one beginning with no established obligation, the other with an established ruling whose subject changes. Show what is initially warranted, what new claim is made, and which evidence could defeat the initial position. Keep §142’s competing commitments to analogy visible.",
+          "Then analyse §247’s account of apparently conflicting proofs. It makes the conflict relative to recipients or periods lacking some evidence or distinctions; this is not an assertion that the Law itself contains equally warranted contradictions. Ask whether the practical conclusion follows from absence, inaccessible evidence, or unresolved conflict.",
+          "B27 offers an illustrative parallel in the cupping-and-fasting discussion. Use its linked source to examine how return to an original rule differs from reconciliation or preference. Do not attribute a fully developed comparison to Ibn Rushd merely because the editor links the passages."
+        ],
+        "example": {
+          "title": "A comparison with different evidential starting points",
+          "text": "“No duty has been proved” and “a proved duty no longer applies” request different conclusions from different starting points. A satisfactory analysis states the change in the evidential burden instead of calling both simply doubt."
+        },
+        "tasks": [
+          "Write a 300-word comparison of the two starting points using §§141–142.",
+          "Check B27’s source or analyse §247’s recipient-relative conflict and identify the precise missing evidence."
+        ],
+        "feedback": [
+          "Assess the argument by its preservation of the five uses, accurate attribution of the Ẓāhirī position, and an explicit account of what would change the judgement.",
+          "An adequate research result distinguishes an illustrative parallel from an express cross-reference and identifies a determinate evidential gap. Personal uncertainty alone is not proof that no stronger judgement is available."
+        ]
+      }
+    }
+  },
+  {
+    "number": 16,
+    "id": "meaning",
+    "unit": 5,
+    "title": "Where is a word’s meaning found?",
+    "summary": "Read verbal form, established usage, and accompanying indications together; distinguish ambiguity from generality.",
+    "prerequisites": [
+      "Understand that a transmitted expression and a conclusion drawn from it are different objects of inquiry."
+    ],
+    "terms": [
+      {
+        "term": "lafẓ",
+        "definition": "Expression or wording, whose form and understood import are distinguished in §149."
+      },
+      {
+        "term": "qarīna",
+        "definition": "An accompanying indication through which intended meaning can be understood or its evidential strength assessed."
+      },
+      {
+        "term": "naṣṣ",
+        "definition": "Unambiguous indication in this classification; §§153–155 distinguish clarity through form from clarity through understood import."
+      },
+      {
+        "term": "mujmal",
+        "definition": "Indeterminate indication: relevant meanings remain unresolved without further clarification."
+      },
+      {
+        "term": "ẓāhir",
+        "definition": "The apparent, preponderant meaning in the relevant usage and circumstances; it is not always the oldest dictionary sense."
+      }
+    ],
+    "applications": [
+      "B12",
+      "B13"
+    ],
+    "levels": {
+      "basic": {
+        "objective": "Distinguish an expression’s possible meanings from the meaning warranted in a particular utterance.",
+        "sections": [
+          148,
+          149,
+          150,
+          151,
+          153,
+          158,
+          164
+        ],
+        "explanation": [
+          "Begin with §§148–151, which explain why this part matters. Understanding prophetic teaching involves wording and indications; wording can signify through its form or through its understood import. The four principal classes are unambiguous, indeterminate, apparent, and interpreted beyond the apparent meaning.",
+          "§153 adds established legal usage. If a term has acquired a specialized legal meaning, that can be its apparent meaning within the Law. Looking up an older ordinary sense does not by itself overturn the relevant usage.",
+          "§158 illustrates lexical ambiguity with ʿayn, which has several senses, and ambiguity in a statement’s reference. §164 explains transfer by resemblance or another relation. The task is not to collect all dictionary meanings as though all were intended together."
+        ],
+        "example": {
+          "title": "Which sense of ʿayn?",
+          "text": "§158 lists a spring of water and the seeing eye among the senses of ʿayn. Knowing this list identifies a problem; the expression’s occurrence in a sentence and its accompanying indications must help determine which sense is intended."
+        },
+        "tasks": [
+          "Why is a dictionary list insufficient to decide the meaning of this occurrence?",
+          "Can a specialized legal meaning be more apparent here than an ordinary linguistic meaning?"
+        ],
+        "feedback": [
+          "The list supplies possible senses, while the interpretive question concerns one use in its setting. Selecting the intended sense requires wording, usage, and relevant indications.",
+          "Yes. §153 expressly treats the legal sense as apparent in the relevant legal usage. Returning to an ordinary sense can itself need an interpretive justification."
+        ]
+      },
+      "intermediate": {
+        "objective": "Explain how clarity can arise through understood import and why delayed explanation has different cases.",
+        "sections": [
+          153,
+          154,
+          155,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165
+        ],
+        "explanation": [
+          "§§154–155 extend the fourfold classification beyond verbal form. An altered expression can be unambiguous through its understood import because accompanying indications settle the intended meaning. Conversely, familiar words do not ensure that their composition or references are clear.",
+          "§§161–163 distinguish wholly unresolved meaning from partial knowledge awaiting specification. In §163, knowing a universal description can convey something real while leaving a further question. Ibn Rushd therefore rejects unqualified answers that group every case of delayed clarification together.",
+          "§165 also announces his technical use of substitution for the relation between universal and particular expressions. Preserve this local definition instead of assuming every occurrence of “transfer” and “substitution” marks exactly the same subdivision."
+        ],
+        "example": {
+          "title": "The cow awaiting further description",
+          "text": "In §163 the command to slaughter a cow supplies intelligible information before the particular cow is identified. On Ibn Rushd’s account, the addressees understand that further inquiry remains. This differs from an expression whose competing senses leave them with no resolved meaning."
+        },
+        "tasks": [
+          "Contrast “I know the relevant kind but need a specification” with “I do not know which meaning is intended.”",
+          "Why can a figurative expression be unambiguous?"
+        ],
+        "feedback": [
+          "The first contains genuine partial knowledge; the second leaves the relevant sense unresolved. The distinction supports Ibn Rushd’s differentiated answer about clarification.",
+          "Clarity can come from decisive accompanying indications rather than the isolated form. Calling an expression figurative identifies how it signifies; it does not by itself classify its certainty."
+        ]
+      },
+      "advanced": {
+        "objective": "Reconstruct an interpretation through lexical, syntactic, conventional, and contextual evidence.",
+        "sections": [
+          148,
+          149,
+          153,
+          155,
+          158,
+          161,
+          163,
+          164,
+          165
+        ],
+        "explanation": [
+          "Select either the ambiguous reference in §158 or the contrast between ordinary and specialized usage in §153. Produce an evidence table: possible senses, grammatical relations, established usage, relevant indications, and the conclusion each supports. Do not let a later dictionary entry substitute for evidence about this occurrence.",
+          "Use B12, touching women, to distinguish a choice between meanings from a dispute about the scope of a chosen meaning. Alternatively, verify B13’s source for an express argument about clarification at the time of need. The application labels tell you whether the relation is illustrative or an express methodological discussion.",
+          "For further comparison, investigate the corresponding classification in al-Mustaṣfā. State the question to be tested before searching: does the same vocabulary divide the same operations? No identity of doctrine follows from matching labels alone."
+        ],
+        "example": {
+          "title": "A two-stage ambiguity",
+          "text": "The touching example can raise two questions: whether the expression denotes bodily contact or intercourse, and, if bodily contact is selected, which instances matter. The first concerns meaning; the second concerns scope under that meaning."
+        },
+        "tasks": [
+          "Write a 300-word interpretation showing how at least two kinds of evidence cooperate.",
+          "Verify one bounded passage in B12 or B13 and state exactly what comparison it supports."
+        ],
+        "feedback": [
+          "Assess the interpretation by its explicit alternatives, grammatical accuracy, attention to usage, and a reasoned conclusion proportional to the evidence. It may properly remain qualified.",
+          "A good comparison keeps semantic selection distinct from scope and records its source. An illustrative case should not be presented as proof that Ibn Rushd explicitly cross-referred the two works."
+        ]
+      }
+    }
+  },
+  {
+    "number": 17,
+    "id": "interpretation",
+    "unit": 5,
+    "title": "How strong must an interpretation be?",
+    "summary": "Relate the departure from an apparent meaning to the strength of the evidence offered for it.",
+    "prerequisites": [
+      "Distinguish apparent meaning from an unresolved or unambiguous indication.",
+      "Read the meaning lesson’s account of established usage and context."
+    ],
+    "terms": [
+      {
+        "term": "taʾwīl",
+        "definition": "Interpretation away from the apparent meaning on the strength of an indication; §166 requires proportionate evidence."
+      },
+      {
+        "term": "ẓuhūr",
+        "definition": "Apparentness: the degree to which an expression favours a particular meaning."
+      },
+      {
+        "term": "qarīna",
+        "definition": "An indication supporting, weakening, or determining an interpretation."
+      },
+      {
+        "term": "takhṣīṣ",
+        "definition": "Restriction of general scope; §§170–173 illustrate how such interpretations differ in plausibility."
+      }
+    ],
+    "applications": [
+      "B12",
+      "B14",
+      "B15"
+    ],
+    "levels": {
+      "basic": {
+        "objective": "Explain why merely possible alternative meanings do not all deserve equal weight.",
+        "sections": [
+          166,
+          167,
+          168,
+          171,
+          172
+        ],
+        "explanation": [
+          "§166 begins from acting on apparent meaning unless evidence supports another reading. It gives a proportional requirement: the stronger the apparent meaning, the stronger the evidence needed to depart from it. An imaginable interpretation is therefore not yet a warranted interpretation.",
+          "§167 orders examples by their distance from ordinary understanding: clothing interpreted as rain, the balance as justice, and touching as intercourse. The point is their differing linguistic plausibility, not that one instruction automatically settles every legal dispute involving those words.",
+          "§168 ties apparentness to usage and allows interpretations to be probable or certain. “Interpreted” does not mean “uncertain” by definition. §§171–172 apply the same attention to strength when a broad expression is restricted to narrower cases."
+        ],
+        "example": {
+          "title": "Clothing and rain",
+          "text": "In §167, understanding clothing as rain requires substantial evidence because clothing strongly signifies what covers a person. The fact that rain may contribute indirectly to producing clothing does not by itself show that this is the intended meaning."
+        },
+        "tasks": [
+          "What is missing from the statement “this word could mean something else”?",
+          "Why should a weaker apparent meaning require less evidence to interpret differently?"
+        ],
+        "feedback": [
+          "It lacks a reason to prefer the alternative in this occurrence. Possibility establishes an option; a relevant indication must support the choice.",
+          "Less weight must be overcome where established usage already makes the alternative plausible. The comparison concerns the relative force of the evidence, not permission to choose whichever reading one likes."
+        ]
+      },
+      "intermediate": {
+        "objective": "Compare restrictions by their evidential fit rather than their convenience for a doctrinal conclusion.",
+        "sections": [
+          166,
+          167,
+          168,
+          170,
+          171,
+          172,
+          173,
+          181,
+          182
+        ],
+        "explanation": [
+          "§170 says evidence for interpretation must signify more strongly than the form being interpreted. §§171–173 then compare restrictions of general statements. The ordering demonstrates that different departures from apparent scope carry different burdens; it is not a list of automatically correct conclusions.",
+          "In §171 a restriction of the guardian-permission report faces difficulty from the same report’s treatment of dower. A further narrowing tries to evade that difficulty, but Ibn Rushd calls the result remote. The entire report must remain available as evidence.",
+          "§§181–182 add two dimensions: the strength of wording and the strength of transmission. An explicit specifying expression may still raise a question about whether its transmission is strong enough to qualify a more firmly transmitted source."
+        ],
+        "example": {
+          "title": "A narrowing that creates another problem",
+          "text": "The guardian-report interpretation in §171 first restricts the woman described, then narrows again after the dower clause causes difficulty. Each extra adjustment needs warrant; avoiding a contradiction with a preferred view is not sufficient evidence."
+        },
+        "tasks": [
+          "Explain why interpreting the first clause while ignoring the dower clause weakens the proposed reading.",
+          "Give two distinct strengths a researcher must compare when one report specifies another."
+        ],
+        "feedback": [
+          "The second clause is part of the same evidence and constrains who or what the first can mean. A reading must account for the coherent whole, not merely rescue an isolated phrase.",
+          "Compare semantic force and transmission force. A narrow or explicit wording does not automatically settle how securely that wording is known or how it relates to the other source."
+        ]
+      },
+      "advanced": {
+        "objective": "Assess a contested interpretation with an explicit comparison of the evidence on each side.",
+        "sections": [
+          166,
+          167,
+          168,
+          171,
+          172,
+          181,
+          182,
+          256
+        ],
+        "explanation": [
+          "Use B14, the sales-session option, or B15, guardianship, to construct a bounded interpretive dispute. Verify the linked Bidāya passage and list lexical possibilities, relevant reports, practice, and other arguments separately. The supplied application is a starting description, not the full proof.",
+          "For each proposed interpretation specify what apparent meaning it displaces and how strongly the alternative is supported. §168 prevents a crude equation of literal with certain and interpreted with doubtful. §§181–182 require attention to both wording and transmission.",
+          "An external comparison with al-Ghazālī should investigate the same disputed expression or principle, using an exact passage. Identify differences in premises or evidential ranking before claiming that the authors agree or that one refutes the other."
+        ],
+        "example": {
+          "title": "The meaning of separation in a sale",
+          "text": "B14 describes a disagreement about bodily separation and the completion of bargaining. The case also involves transmission, practice, and other legal evidence. A dictionary showing both senses would leave the principal adjudicative task unfinished."
+        },
+        "tasks": [
+          "Write a 350-word assessment of one verified case with a table of evidence for each interpretation.",
+          "State what additional finding would most strongly change your current assessment."
+        ],
+        "feedback": [
+          "Assess the work by fair reconstruction of both readings, identification of the apparent meaning, and a proportionate reason for preferring or suspending judgement. Preserve any qualification in Ibn Rushd’s own conclusion.",
+          "A strong answer names a determinate evidential issue, such as the authenticity, scope, or relevance of an opposing indication. It does not make an interpretation compelling merely by calling it purposive, literal, or school-authoritative."
+        ]
+      }
+    }
+  },
+  {
+    "number": 18,
+    "id": "general-specific",
+    "unit": 5,
+    "title": "General, specific or equivocal?",
+    "summary": "Distinguish many instances of one meaning from several different meanings, and trace when context narrows or widens scope.",
+    "prerequisites": [
+      "Distinguish a possible sense from the intended meaning of an occurrence.",
+      "Understand the apparent meaning and the need for evidence to depart from it."
+    ],
+    "terms": [
+      {
+        "term": "ʿāmm",
+        "definition": "General: an expression understood to encompass instances under its meaning, subject to warranted specification."
+      },
+      {
+        "term": "khāṣṣ",
+        "definition": "Specific: relative to a broader class; §191 explains that the same expression can be specific in one relation and general in another."
+      },
+      {
+        "term": "mushtarak",
+        "definition": "Equivocal: one expression has distinct meanings; §177 rejects treating their collection as ordinary general scope."
+      },
+      {
+        "term": "kullī / juzʾī",
+        "definition": "Universal and particular; here they help describe relations of scope and the substitution of one expression for another."
+      },
+      {
+        "term": "ibdāl",
+        "definition": "Substitution, including a particular expression standing for an intended universal when indications warrant that reading."
+      }
+    ],
+    "applications": [
+      "B12",
+      "B22"
+    ],
+    "levels": {
+      "basic": {
+        "objective": "Distinguish selecting a meaning from including the instances that fall under it.",
+        "sections": [
+          169,
+          174,
+          176,
+          177,
+          191
+        ],
+        "explanation": [
+          "§169 defends general meaning as a real feature of language. A general expression includes instances under one relevant meaning. By contrast, an equivocal expression has several different senses. §177 rejects treating all those senses as automatically included whenever the word occurs.",
+          "§174 shows that context can restrict apparently general wording. §176 shows the converse caution: a statement answering a particular question can still be general in its wording. The occasion alone does not confine its scope.",
+          "§191 makes generality and specificity relative. A term can be narrower than one class while broader than another. It also introduces the possibility that particular wording conveys a wider intended meaning when accompanying indications warrant it."
+        ],
+        "example": {
+          "title": "A question about one well",
+          "text": "In §176 the answer about water, given in response to a question concerning the well of Buḍāʿa, is framed generally. Ibn Rushd does not restrict it to that well simply because the question began with a particular place."
+        },
+        "tasks": [
+          "Why is including every kind of water unlike including every sense of ʿayn?",
+          "Can a general answer arise from a particular occasion?"
+        ],
+        "feedback": [
+          "The water cases fall under one meaning. The senses of ʿayn, such as spring and eye, are distinct meanings requiring interpretation; listing them does not make the occurrence general over them all.",
+          "Yes. §176 distinguishes the occasion from the scope of the answer. The wording and other relevant evidence must establish any restriction; the particular occasion alone does not do so."
+        ]
+      },
+      "intermediate": {
+        "objective": "Trace the direction and warrant of a change between general and specific scope.",
+        "sections": [
+          165,
+          169,
+          170,
+          174,
+          177,
+          180,
+          191
+        ],
+        "explanation": [
+          "Distinguish two directions: apparently general wording with a specific intention, and particular wording standing for an intended universal. §174 illustrates the first; §191 illustrates the second. In both, the departure from apparent scope needs an indication.",
+          "§191 further distinguishes knowing that the intended meaning is wider from knowing which wider meaning is intended. In the named-foodstuffs example, nourishment, edibility, and measure are competing candidates. Recognizing possible generalization does not settle the legally relevant universal.",
+          "§180 makes a similar methodological point about plural expressions: an attested extended use does not erase the distinction between ordinary signification and a use supported by an indication. Do not infer that every sense a form can bear is equally apparent."
+        ],
+        "example": {
+          "title": "A general complaint about children",
+          "text": "§174 describes a person disciplining a child and making a general complaint about children. The circumstances may show that the intention is specific. The illustration concerns contextual scope; it does not make every general expression merely a reference to its occasion."
+        },
+        "tasks": [
+          "Compare the direction of substitution in §174 with that in §191.",
+          "What remains unresolved when a reader knows that wheat represents something wider but cannot choose among nourishment, food, and measure?"
+        ],
+        "feedback": [
+          "In §174 general wording can intend something specific. In §191 a specific expression can stand for something more general. An accurate answer tracks the intended meaning separately from the form used.",
+          "The candidate universal remains unresolved. The reader needs evidence identifying the relevant ground, rather than confidence that some wider ground probably exists."
+        ]
+      },
+      "advanced": {
+        "objective": "Test whether a legal disagreement concerns meaning, scope, or the warrant for extending a particular expression.",
+        "sections": [
+          158,
+          165,
+          169,
+          174,
+          177,
+          180,
+          191,
+          212,
+          218
+        ],
+        "explanation": [
+          "Compare B12, touching women, with B22, ribā in foodstuffs. Verify the bounded source passages. For each disagreement identify whether participants select different meanings, disagree about instances under a selected meaning, or reconstruct different universals from particular wording.",
+          "§177 places the burden on someone claiming a specialized legal convention that would encompass distinct senses together. Such a claim needs evidence of that convention; it cannot be established by the bare existence of several dictionary meanings.",
+          "Use §§191 and 212 as preparation for the qiyās lessons. Recovering a wider indicated meaning and comparing two cases without that semantic warrant are not interchangeable operations. In §218 the rival proposed grounds remain sensitive to evidential strength."
+        ],
+        "example": {
+          "title": "Two kinds of disagreement behind similar labels",
+          "text": "B12 can involve bodily contact versus intercourse, followed by disputes about which contact matters. B22 involves rival accounts of what the named foodstuffs signify for the ruling. A single label, “generality,” would obscure these different questions."
+        },
+        "tasks": [
+          "Write a 300–400 word comparison classifying each disputed step and quoting or translating its supporting passage.",
+          "Identify what evidence would be needed to justify a special inclusive legal usage in one disputed case."
+        ],
+        "feedback": [
+          "Assess the comparison by correct direction of substitution, separation of meaning from scope, and a precise statement of the warrant for each extension. Do not import a general verdict on qiyās before examining the operation.",
+          "A strong answer distinguishes an observed usage from a merely possible one and gives an exact source locator. It preserves the application records’ stated limits instead of treating editorial parallels as authorial cross-references."
+        ]
+      }
+    }
+  }
+]
