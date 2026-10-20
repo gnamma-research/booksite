@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: iOS Visuals touch fixes (font/design chat).** Claimed 2026-10-20 19:37 UTC; expires 19:52 UTC. Base: `d47a983e6791d501f7cf0d478adf86dc606d02d2`. Targets: `daruri/index.html`, `daruri/compact-menu.css`, `daruri/sw.js`, `daruri/download-bundle.js`, focused QA and this coordination record. Correct equal-width A−/percentage/A+ cells, suppress double-tap zoom on Visuals controls without disabling pinch zoom globally, and enlarge/isolate the contents-pane hamburger touch target on iPhone. Preserve the completed Home/sidebar icon release, Visuals typography, Reading Desk work, source/index/study assets and unchanged PDFs. No other chat should upload overlapping files during this claim.
+**Publisher claim: unclaimed.** The iOS Visuals/contents touch correction is published in [`6742835`](https://github.com/gnamma-research/booksite/commit/674283564191bdb2cbd79eaada7b0cd9c9353e9f); [Pages run 39485752105](https://github.com/gnamma-research/booksite/actions/runs/39485752105) succeeded at 19:43:16 UTC. The font/design publisher has released this claim. Future overlapping work must start from current master and preserve both the preceding Home/sidebar navigation changes and this touch fix. The PDF editions remain unchanged.
 
 Previous claim: unclaimed. The icon-led Visuals refinement is published in `df4563ee43e50296fbf0bd0863fe3643b560c121`; GitHub Pages run [39480333437](https://github.com/gnamma-research/booksite/actions/runs/39480333437) completed successfully at 19:05 UTC. The font/design publisher releases its claim here. New work must start from current master and preserve the Visuals panel, the newer homepage/contents/subject-index structure, and the rebuilt five-PDF release.
 
@@ -31,6 +31,14 @@ Previous publisher record: The Arabic toggle and menu accessibility follow-up is
 Previous claim: unclaimed. The self-contained lesson printing release is published and live. Its publisher released the claim at 2026-10-20 16:06 UTC after successful deployment and exact verification of all seven changed live runtime/page assets. No print, PDF or saved-package upload remains active.
 
 Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
+
+### Safari Visuals spacing and contents touch target — completed, 20 October 2026
+
+**Published and deployed:** [`6742835`](https://github.com/gnamma-research/booksite/commit/674283564191bdb2cbd79eaada7b0cd9c9353e9f). [Pages run 39485752105](https://github.com/gnamma-research/booksite/actions/runs/39485752105) succeeded at 19:43:16 UTC. Updates are limited to `daruri/compact-menu.css`, `index.html` asset versions, `download-bundle.js`, `sw.js`, and focused `qa/verify-visuals-panel.js`; the preceding Home/nav icon release is preserved.
+
+The legacy 46px button width had left unused space in the three-column text-size control: A− and A+ are now stretched to full equal-width 48px-high cells alongside the percentage readout. The entire Visuals control row and its buttons/swatch controls use `touch-action: manipulation`, intended to prevent Safari's double-tap-to-zoom on rapid or between-button taps while preserving touch scrolling and pinch zoom. The contents/navigation hamburger receives a distinct 44×44px hit area on ordinary phones (40px wide on very narrow viewports under 361px), a clearer bordered surface, slightly larger icon and a small separating margin; the underlying navigation event handler is unchanged.
+
+Checks: Node syntax checks for the current main reader script and focused QA, static asset/cache/ZIP reference consistency, all amended CSS rule/viewport assertions, and a local headless Chromium geometry fixture at 320, 375, 390, 430 and 768 CSS-pixel widths. In the fixture the three size cells fill the available row evenly and have computed `touch-action: manipulation`. The full physical Safari double-tap behaviour, live-device hit-test geometry and visual appearance are not claimed to have been tested. The scholarly corpus, reading fonts, contents/index/home, current PDFs, study and Notes assets remain unchanged. Runtime/cache revision: `20261020-visuals-touch1`.
 
 ### Icon-led Visuals controls — completed, 20 October 2026
 
