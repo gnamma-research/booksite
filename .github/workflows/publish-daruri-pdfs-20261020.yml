@@ -1,0 +1,79 @@
+name: Publish verified Daruri PDF editions
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/publish-daruri-pdfs-20261020.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    if: github.repository == 'gnamma-research/booksite'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Download and verify three user-authorized Daruri editions
+        env:
+          ARCHIVE_URL: 'https://d2ol7oe51mr4n9.cloudfront.net/user_3Kbwwq282Bos3FdSjqXEkSRrLRL/21e23d46-457e-4728-a457-5de9992c2392.zip'
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error --retry 3 "$ARCHIVE_URL" -o /tmp/daruri-editions.zip
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import hashlib, json, re
+          archive=Path('/tmp/daruri-editions.zip')
+          manifest={
+            'daruri.pdf':('Gnamma_Al_Daruri_Bilingual_Scholarly_Lexicon_Updated_2026-10-20.pdf','c887757d8cf8b4be7990cd634b5888adb5a0a2cbe18b00066ba452ba0f0b765d',200),
+            'daruri-arabic.pdf':('Gnamma_Al_Daruri_Arabic_Reading.pdf','64ba960c59b89142978c572a923243b3935a80fdf88b16eea5b1c035b955f6d9',128),
+            'daruri-english.pdf':('Gnamma_Al_Daruri_English_Reading_Illustrated_Guide.pdf','eeda055c3a92a1fc3eb9304205a9e326f12d0564a1ca4ceed205746b197ca79e',163),
+          }
+          with ZipFile(archive) as z:
+              assert z.testzip() is None, 'ZIP CRC check failed'
+              files={Path(n).name:n for n in z.namelist() if n.lower().endswith('.pdf')}
+              assert len(files)==3, f'Expected exactly three PDF files: {files.keys()}'
+              for target,(original,want,pages) in manifest.items():
+                  data=z.read(files[original])
+                  got=hashlib.sha256(data).hexdigest()
+                  assert got==want, f'Wrong bytes for {target}: {got}'
+                  assert data.startswith(b'%PDF-') and b'%%EOF' in data[-8192:]
+                  Path('daruri',target).write_bytes(data)
+                  print(f'Validated {target}: {len(data)} bytes, {pages} verified source pages, sha256={got}')
+          path=Path('daruri/index.html')
+          s=path.read_text(encoding='utf-8')
+          for name,file in [('Bilingual','daruri.pdf'),('Arabic','daruri-arabic.pdf'),('English','daruri-english.pdf')]:
+              regex=r'<a class="gn-pdf-edition gn-pdf-placeholder"[^>]*>'+name+r' PDF <span aria-hidden="true">↗</span></a>'
+              replacement=f'<a class="gn-pdf-edition" href="{file}" target="_blank" rel="noopener">{name} PDF <span aria-hidden="true">↗</span></a>'
+              s,n=re.subn(regex,replacement,s)
+              assert n==2, f'Expected two inactive links for {name}, got {n}'
+          page_refs=[int(v) for v in re.findall(r'daruri\.pdf#page=(\d+)',s)]
+          assert len(page_refs)>=200 and max(page_refs)<=200, 'Existing section map invalid for bilingual PDF'
+          path.write_text(s,encoding='utf-8')
+          swpath=Path('daruri/sw.js')
+          sw=swpath.read_text(encoding='utf-8')
+          old="const OPTIONAL=['daruri.pdf','bou-akl-2015-variant-report.pdf']"
+          new="const OPTIONAL=['daruri.pdf','daruri-arabic.pdf','daruri-english.pdf','bou-akl-2015-variant-report.pdf']"
+          assert old in sw, 'Service worker changed unexpectedly'
+          sw=sw.replace(old,new)
+          sw=re.sub(r'daruri-reader-v20261020-[a-z0-9-]+','daruri-reader-v20261020-3pdf-final',sw,count=1)
+          swpath.write_text(sw,encoding='utf-8')
+          Path('daruri/pdf-editions-manifest.json').write_text(json.dumps({
+            'edition_date':'2026-10-20',
+            'source':'user-provided three-edition archive',
+            'files':{key:{'source_filename':name,'sha256':digest,'pages':pages}
+                     for key,(name,digest,pages) in manifest.items()}
+          },indent=2)+'\n',encoding='utf-8')
+          PY
+      - name: Publish all three PDFs and reader links in one commit
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add daruri/daruri.pdf daruri/daruri-arabic.pdf daruri/daruri-english.pdf daruri/pdf-editions-manifest.json daruri/index.html daruri/sw.js
+          git diff --cached --check
+          git diff --cached --stat
+          git commit -m 'Publish three Daruri PDF editions and link them in reader'
+          git push origin HEAD:master
