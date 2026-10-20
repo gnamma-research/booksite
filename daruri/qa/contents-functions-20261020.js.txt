@@ -1,0 +1,55 @@
+// Only headings recorded in the Arabic edition are nodes in this hierarchy.
+// See qa/ORIGINAL_HEADINGS.md for the explicit divisions and boundary cases.
+const gnOriginalHeadingParent=Object.freeze({
+ 10:null,11:10,17:10,18:17,23:17,26:17,28:17,32:17,36:10,54:10,55:54,56:54,57:54,60:54,
+ 62:null,63:62,66:62,81:66,83:66,94:66,95:94,96:94,97:94,98:94,101:66,102:66,103:66,104:66,105:66,115:62,130:62,141:62,
+ 148:null,151:148,164:148,191:148,193:148,197:148,210:148,227:148,228:148,
+ 230:null,231:230,249:230,252:249,256:230
+});
+function renderContents(){
+ const original=state.contentsMode==='original';
+ const count=BOOK.sections.filter(s=>s.id!=='colophon'&&(!original||s.headingAr)).length;
+ const description=original?
+  `${count} headings recorded from the Arabic edition, arranged in their hierarchy. Generic headings such as “Chapter” are retained. The later colophon is listed separately.`:
+  `${count} descriptive titles, one for each section of the main text. These titles are supplied by the editor; the later colophon is listed separately.`;
+ $('#mainContent').innerHTML=panelHead('NAVIGATE THE WORK','Two ways through the text','Browse the Arabic edition’s headings in their hierarchy, or use the editor’s descriptive titles to reach any section.')+
+ `<div class="panel-controls"><div class="segmented" role="group" aria-label="Table of contents type"><button type="button" data-contents-mode="original" aria-pressed="${original}" class="${original?'active':''}">Original headings</button><button type="button" data-contents-mode="editorial" aria-pressed="${!original}" class="${!original?'active':''}">Editorial titles</button></div><label class="filter-input">${icon('search')}<input id="contentsFilter" placeholder="${original?'Find an original heading…':'Find an editorial title…'}" autocomplete="off" value="${esc(state.contentsQuery)}" aria-label="Filter contents"></label></div>
+ <header class="contents-mode-note"><h2>${original?'Headings in the Arabic edition':'Editorial section titles'}</h2><p>${description}</p></header>
+ <p class="micro-desc">Page references refer to the 1994 Arabic edition. Section numbers §1–§258 are stable; select a heading or title to begin reading.</p><p id="contentsResults" class="micro-desc contents-results" role="status" aria-live="polite"></p><div id="contentsList"></div>`;
+ updateContentsList();updateReturnBar();
+}
+function originalContentsRow(s,root=false){
+ const label=`${esc(s.headingEn)}<span lang="ar" dir="rtl" class="toc-original-ar">${esc(s.headingAr)}</span>`;
+ const button=`<button type="button" data-section="${esc(s.id)}">${label}</button>`;
+ return `<div class="contents-row contents-source-row${root?' contents-source-root':''}" data-contents-source="${esc(s.id)}"><span class="contents-n">${esc(sectionRef(s.id))}</span>${root?`<h3 id="contents-heading-${esc(s.id)}">${button}</h3>`:button}<span class="pages">${esc(origPage(s))}</span></div>`;
+}
+function contentsColophon(s,original){
+ return `<section class="part-block contents-colophon" aria-labelledby="contents-colophon-heading"><header class="contents-record-heading"><h3 id="contents-colophon-heading">Later manuscript record</h3><p>Copyist’s colophon and ownership notice, separate from the authorial text.</p></header><div class="contents-row" data-contents-record="colophon"><span class="contents-n">Colophon</span><button type="button" data-section="colophon">${esc(original?s.headingEn:s.title)}${original?`<span lang="ar" dir="rtl" class="toc-original-ar">${esc(s.headingAr)}</span>`:''}</button><span class="pages">${esc(origPage(s))}</span></div></section>`;
+}
+function updateContentsList(){
+ const original=state.contentsMode==='original',q=state.contentsQuery.trim();
+ const col=BOOK.sections.find(s=>s.id==='colophon');
+ const colMatch=!q||contains([original?col.headingEn:col.title,original?col.headingAr:'','colophon','Later manuscript record'].join(' '),q);
+ let content='',matches=0;
+ if(original){
+  const source=BOOK.sections.filter(s=>s.id!=='colophon'&&s.headingAr);
+  const direct=source.filter(s=>!q||contains([s.headingEn,s.headingAr,s.id].join(' '),q));
+  const visible=new Set(direct.map(s=>String(s.id)));
+  // Keep every matching heading beneath its recorded ancestors.
+  for(const s of direct){let parent=gnOriginalHeadingParent[s.id];while(parent!==null&&parent!==undefined){visible.add(String(parent));parent=gnOriginalHeadingParent[parent];}}
+  const children=parent=>source.filter(s=>gnOriginalHeadingParent[s.id]===parent&&visible.has(String(s.id)));
+  const tree=parent=>{const nodes=children(parent);return nodes.length?`<ol class="contents-tree" role="list">${nodes.map(s=>`<li>${originalContentsRow(s)}${tree(s.id)}</li>`).join('')}</ol>`:'';};
+  const opening=!q||contains('[Opening text] Introduction 1 9',q);
+  const openingNote=opening?'<div class="contents-opening"><button type="button" data-section="1">[Opening text · §§1–9]</button><p>No separate heading is recorded for the opening text; this label is a navigation aid.</p></div>':'';
+  content=openingNote+children(null).map(s=>`<section class="part-block contents-source-part" aria-labelledby="contents-heading-${esc(s.id)}">${originalContentsRow(s,true)}${tree(s.id)}</section>`).join('');
+  matches=direct.length+(opening?1:0)+(colMatch?1:0);
+ }else{
+  const groups=BOOK.parts.map(p=>({p,sections:BOOK.sections.filter(s=>s.part===p.id&&(!q||contains([s.title,s.id].join(' '),q)))})).filter(g=>g.sections.length);
+  matches=groups.reduce((sum,g)=>sum+g.sections.length,0)+(colMatch?1:0);
+  content=groups.map(g=>`<details class="part-block" ${(!!q||g.p.id===partFor(sections.get(state.n))?.id)?'open':''}><summary><span class="part-number">${g.p.id===0?'✧':g.p.id.toString().padStart(2,'0')}</span><span><strong>${esc(g.p.label)}</strong><small>${g.sections.length} section ${g.sections.length===1?'title':'titles'}</small></span><span class="expand-symbol" aria-hidden="true">＋</span></summary><div class="contents-list">${g.sections.map(s=>`<div class="contents-row"><span class="contents-n">${esc(sectionRef(s.id))}</span><button type="button" data-section="${esc(s.id)}">${esc(s.title)}</button><span class="pages">${esc(origPage(s))}</span></div>`).join('')}</div></details>`).join('');
+ }
+ if(colMatch)content+=contentsColophon(col,original);
+ $('#contentsResults').textContent=q?`${matches} matching ${matches===1?'entry':'entries'}.${original&&matches?' Parent headings are retained for context.':''}`:'';
+ $('#contentsList').innerHTML=content?`<nav class="contents-parts ${original?'contents-source-view':'contents-editorial-view'}" aria-label="${original?'Arabic edition headings':'Editorial section titles'}">${content}</nav>`:'<div class="empty-state">No headings or titles match your filter. Try a broader word or switch contents mode.</div>';
+}
+
