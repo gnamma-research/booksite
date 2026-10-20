@@ -10,9 +10,43 @@
     "nativeLinkTargetsExist": true,
     "paletteInitializerPreserved": true,
     "renderAboutSourcesAndManuscriptCaveat": true,
-    "unchangedSourceOutsideHomeAboutAndListedStyleVersionChanges": true
+    "unchangedSourceOutsideHomeAboutAndListedStyleVersionChanges": true,
+    "actualReaderHomeRender": true,
+    "sixPaletteChoicesAndSelection": true,
+    "contentsStudyIndexDictionaryBookmarksAboutNavigation": true,
+    "actualResumeToSection49": true,
+    "readerSectionCount259": true
   },
   "readingPdfRevision": "daruri8-structure-20261020",
   "pdfsRebuilt": false,
-  "verificationScope": "JavaScript parsing, isolated Home/About rendering, native destinations and exact preservation checks; no new browser visual check."
+  "verificationScope": "All inline/runtime scripts parse; actual reader navigation, palettes and resume tested in the existing DOM harness. Exact source-preservation and live deployed-byte checks passed. No new physical-device visual test.",
+  "live": {
+    "commit": "bfb6127b95ea3484a1ce1c779c20b8dc50ac6c07",
+    "revision": "20261020-home1",
+    "verified_at_utc": "2026-10-20T18:35:00Z",
+    "pages_run": "https://github.com/gnamma-research/booksite/actions/runs/39475729350",
+    "pages_status": "completed",
+    "pages_conclusion": "success",
+    "files": [
+      {
+        "path": "daruri/index.html",
+        "status": 200,
+        "git_blob": "4d0a2a13e7045eaa8d1b916705e98cbbe7136272",
+        "matches": true
+      },
+      {
+        "path": "daruri/sw.js",
+        "status": 200,
+        "git_blob": "6d8bc972875e09d99e90fd5d9160f07842dfe3c3",
+        "matches": true
+      },
+      {
+        "path": "daruri/download-bundle.js",
+        "status": 200,
+        "git_blob": "24df5048936118e1d100127816feeecc1ed7bd6c",
+        "matches": true
+      }
+    ],
+    "ok": true
+  }
 }

@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: concise homepage and source description.** Claimed 2026-10-20 18:30 UTC; expires 18:45 UTC. Base: `5601a4e35dcf19d8239929d775f1d8dd764bd34f`. Targets: `daruri/index.html` Home/About copy, service-worker/offline-package versions, and release documentation. The patch preserves the reading text, PDFs, study lessons, index, typography and navigation work. Other chats should prepare narrow changes and coordinate before publishing these overlapping files.
+**Publisher claim: unclaimed.** The concise homepage/source update is published and verified live in `bfb6127b95ea3484a1ce1c779c20b8dc50ac6c07`. This publisher released its claim at 2026-10-20 18:35 UTC. New work must start from this commit or newer, preserve current Home/About text and cache versions, and retain the completed contents, PDF, index-print, font, language and menu work.
 
 Previous publisher record: The contents, subject index and five-PDF structure release is published and verified live. This study/contents publisher released its claim at 2026-10-20 18:03 UTC. New work must preserve its rebuilt page maps, current Ar/En labels, subject assets and heading hierarchy.
 
@@ -29,6 +29,14 @@ Previous publisher record: The Arabic toggle and menu accessibility follow-up is
 Previous claim: unclaimed. The self-contained lesson printing release is published and live. Its publisher released the claim at 2026-10-20 16:06 UTC after successful deployment and exact verification of all seven changed live runtime/page assets. No print, PDF or saved-package upload remains active.
 
 Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
+
+### Concise homepage and source explanation — completed, 20 October 2026
+
+**Published and live:** [`bfb6127`](https://github.com/gnamma-research/booksite/commit/bfb6127b95ea3484a1ce1c779c20b8dc50ac6c07); [Pages run 39475729350](https://github.com/gnamma-research/booksite/actions/runs/39475729350) succeeded. The reader, service worker and Complete package script all returned HTTP 200 and matched the committed Git blobs. Runtime revision: `20261020-home1`.
+
+Enhanced and native Home views now briefly describe the work, current study/navigation/bookmark features, all five PDF editions, self-contained lesson printing and font/colour choices. The architectural palettes are described as inspiration and the later Nasrid period is distinguished. A short source summary explains al-ʿAlawī’s base and Bou Akl’s selected corrections. About adds primary edition links, mediated Escorial MS 1235 evidence and the historical/technical dictionary basis of the AI-assisted translation. It no longer claims unimplemented personal notes. The long production checklist is replaced by the concise introduction.
+
+Actual reader checks passed for the home route, all six palette choices and selection, all five PDF links, Contents/Study/Subject index/Dictionary/Bookmarks/About navigation, the manuscript explanation and resume to §49. All 259 section records are present; exact comparison confirms no changes outside Home/About and the specified style/version edits. PDFs, main text, notes and study data are unchanged. See `qa/home-introduction-release-20261020.json`. No new physical-device visual test is claimed. Other chats should merge from this release before publishing overlapping reader/cache assets.
 
 ### Subject index and contents print follow-up — completed, 20 October 2026
 

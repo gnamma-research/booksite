@@ -8,11 +8,13 @@ Canonical reader: [https://gnamma-research.github.io/booksite/daruri/](https://g
 
 ## Concise homepage and edition sources — `20261020-home1`
 
+**Published and live:** [`bfb6127`](https://github.com/gnamma-research/booksite/commit/bfb6127b95ea3484a1ce1c779c20b8dc50ac6c07). [Pages run 39475729350](https://github.com/gnamma-research/booksite/actions/runs/39475729350) succeeded. All three changed public assets returned HTTP 200 and matched the committed Git blob hashes. Actual reader checks passed for Home, all six colour choices and selection, five PDF links, six destination routes, the About statement and resume to §49.
+
 The Home view now briefly describes Ibn Rushd’s work, Arabic/English reading, three study levels, the Subject index, historical Dictionary, section bookmarks, five PDF editions and self-contained lesson printouts. Font, text-size, Focus and architectural colour choices are described without claiming a historically reconstructed palette. The enhanced and native home views share the same introduction; the palette chooser is a compact disclosure.
 
 The Arabic-source summary identifies al-ʿAlawī’s 1994 edition and selected consequential corrections from Bou Akl’s 2015 critical edition. About identifies Escorial MS 1235 evidence as mediated through Bou Akl’s apparatus and distinguishes manuscript support from conjecture. The translation account names grammatical/contextual checking and historical/technical dictionaries while retaining the AI-assistance disclosure. The stale personal-note claim, old home counts and long production checklist were removed from the introduction. Source links are available in About.
 
-Validation: both inline JavaScript blocks and the changed service worker/package script parse; isolated Home/About renders preserve saved-section resume, five current PDF links and the palette initializer; native destinations exist. Exact comparison confirms all source outside Home/About and the listed style/version updates is unchanged. Reading PDFs remain `daruri8-structure-20261020`. Runtime revisions are coordinated in the reader, service worker and Complete package. See `qa/home-introduction-release-20261020.json`. Live deployment verification is recorded below after publication.
+Validation: both inline JavaScript blocks and the changed service worker/package script parse; isolated Home/About renders preserve saved-section resume, five current PDF links and the palette initializer; native destinations exist. Exact comparison confirms all source outside Home/About and the listed style/version updates is unchanged. Reading PDFs remain `daruri8-structure-20261020`. Runtime revisions are coordinated in the reader, service worker and Complete package. See `qa/home-introduction-release-20261020.json`. The same record includes successful live deployment and actual reader checks.
 
 ## Index and contents printing follow-up — `20261020-indexprint1`
 
