@@ -8,11 +8,11 @@
 }
 :root[data-english-font="source-serif"],
 #fallbackReader:has(#fb-font-source-serif:checked) {
-  --reader-english-font: 'Source Serif 4', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  --reader-english-font: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 :root[data-english-font="literata"],
 #fallbackReader:has(#fb-font-literata:checked) {
-  --reader-english-font: 'Literata', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  --reader-english-font: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 /* Keep the interface, headings, and Arabic typography independent. */

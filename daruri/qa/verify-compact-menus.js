@@ -82,23 +82,37 @@ test('quick navigation and downloads are closed native disclosures with real lin
  const nav=fallback.find(node=>node.hasClass('fb-left-panel'));
  descendants(nav,node=>node.tag==='a'&&node.attrs.href?.startsWith('#')).forEach(link=>assert.ok(staticIds.has(decodeURIComponent(link.attrs.href.slice(1))),'Existing native destination '+link.attrs.href));
 });
-test('native style/font selects retain values, names and defaults',()=>{
+test('enhanced Visuals controls are direct while hidden selects preserve state contracts',()=>{
  const definitions=[['pageStyleSelect',['quiet','book','structured']],['fb-page-style-select',['quiet','book','structured']],['arabicFontChoice',['amiri','scheherazade','noto']],['fb-arabic-font-choice',['amiri','scheherazade','noto']],['englishFontChoice',['original','source-serif','literata']],['fb-english-font-choice',['original','source-serif','literata']]];
- for(const [id,values]of definitions){const node=byId(id);assert.equal(node.tag,'select');assert.deepEqual(optionValues(node),values);assert.ok(nodes.some(label=>label.tag==='label'&&label.attrs.for===id),'Visible label for '+id);const selected=options(node).filter(option=>Object.hasOwn(option.attrs,'selected'));assert.ok(selected.length<=1);assert.equal((selected[0]||options(node)[0]).attrs.value,values[0]);}
- for(const id of ['pageStyleSelect','fb-page-style-select'])assert.deepEqual(options(byId(id)).map(node=>node.text()),['Quiet reading','Book page','Structured page']);
- for(const node of [...byId('settingsOverlay').all(),...byId('fb-settings').all()].filter(node=>node.attrs['aria-describedby']||node.attrs['aria-labelledby']))for(const attr of ['aria-describedby','aria-labelledby'])for(const id of (node.attrs[attr]||'').split(/\s+/).filter(Boolean))byId(id);
+ for(const [id,values]of definitions){
+  const node=byId(id);assert.equal(node.tag,'select');assert.deepEqual(optionValues(node),values);
+  const selected=options(node).filter(option=>Object.hasOwn(option.attrs,'selected'));assert.ok(selected.length<=1);assert.equal((selected[0]||options(node)[0]).attrs.value,values[0]);
+ }
+ assert.equal(byId('settingsTitle').text(),'Visuals');
+ const settings=byId('settingsOverlay');
+ assert.equal(descendants(settings,node=>Object.hasOwn(node.attrs,'data-page-style-choice')).length,3);
+ assert.equal(descendants(settings,node=>Object.hasOwn(node.attrs,'data-arabic-font-choice')).length,3);
+ assert.equal(descendants(settings,node=>Object.hasOwn(node.attrs,'data-english-font-choice')).length,3);
+ assert.ok(byId('pageStyleSelect').hasClass('gn-hidden-control'));
+ assert.ok(byId('arabicFontChoice').hasClass('gn-hidden-control'));
+ assert.ok(byId('englishFontChoice').hasClass('gn-hidden-control'));
+ assert.deepEqual(options(byId('englishFontChoice')).map(node=>node.text()),['Original','Source Sans 3','Lexend']);
+ assert.deepEqual(options(byId('fb-english-font-choice')).map(node=>node.text()),['Original','Source Sans 3','Lexend']);
 });
-test('layout glyphs are named, defaulted and exposed; colours and controls remain available',()=>{
+test('layout and palette glyphs are named; duplicate theme mode is hidden from Visuals',()=>{
  const settings=byId('settingsOverlay');
  for(const [attribute,expected,active]of [['data-parallel-side',['left','right'],'right'],['data-stacked-order',['top','bottom'],'top']]){
   const buttons=descendants(settings,node=>Object.hasOwn(node.attrs,attribute));assert.deepEqual(buttons.map(button=>button.attrs[attribute]),expected);
-  for(const button of buttons){assert.equal(button.tag,'button');assert.equal(button.attrs.type,'button');assert.ok(button.attrs['aria-label']?.includes('Arabic'));assert.ok(button.find(node=>node.hasClass('gn-layout-glyph')&&node.attrs['aria-hidden']==='true'));assert.equal(button.attrs['aria-pressed'],String(button.attrs[attribute]===active));assert.ok(!withinClosedDetails(button,settings));}
+  for(const button of buttons){assert.equal(button.tag,'button');assert.equal(button.attrs.type,'button');assert.ok(button.attrs['aria-label']?.includes('Arabic'));assert.ok(button.find(node=>node.hasClass('gn-layout-glyph')&&node.attrs['aria-hidden']==='true'));assert.equal(button.attrs['aria-pressed'],String(button.attrs[attribute]===active));assert.ok(!Object.hasOwn(button.attrs,'title'));}
  }
  for(const id of ['fb-arabic-left','fb-arabic-right','fb-arabic-top','fb-arabic-bottom']){const node=byId(id);assert.equal(node.tag,'input');assert.equal(node.attrs.type,'radio');assert.ok(node.attrs['aria-label']||node.parent.attrs['aria-label']||node.parent.text().includes('Arabic'),'Named native glyph '+id);}
- for(const id of ['settingsTheme','palettePicker','smallerType','largerType','arabicFontStatus','englishFontStatus']){const node=byId(id);assert.ok(!Object.hasOwn(node.attrs,'hidden'));assert.ok(!withinClosedDetails(node,settings));}
- assert.ok(settings.find(node=>node.tag==='legend'&&node.text()==='Colours'));
+ assert.ok(Object.hasOwn(byId('settingsTheme').attrs,'hidden'),'Duplicate theme mode remains only as hidden compatibility hook');
+ assert.ok(!withinClosedDetails(byId('palettePicker'),settings));
+ assert.ok(!withinClosedDetails(byId('smallerType'),settings));assert.ok(!withinClosedDetails(byId('largerType'),settings));
+ assert.ok(settings.find(node=>node.attrs['aria-label']==='Colour palette'));
+ assert.ok(settings.find(node=>node.attrs['aria-label']==='Page style'));
+ assert.ok(!settings.find(node=>node.tag==='legend'&&node.text()==='Colours'));
  assert.ok(!settings.find(node=>node.tag==='summary'&&/preview text/i.test(node.text())));
- assert.ok(!settings.find(node=>node.hasClass('arabic-font-preview')||node.hasClass('english-font-preview')));
 });
 test('fallback bindings and screen-only style scope retain independent layout/font contracts',()=>{
  for(const [id,values]of [['fb-arabic-font-choice',['amiri','scheherazade','noto']],['fb-english-font-choice',['original','source-serif','literata']]])for(const value of values)assert.ok(menuCSS.includes('#'+id+' option[value="'+value+'"]:checked'));
