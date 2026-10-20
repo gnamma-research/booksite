@@ -1,0 +1,21 @@
+{
+  "edition_date": "2026-10-20",
+  "source": "user-provided three-edition archive",
+  "files": {
+    "daruri.pdf": {
+      "source_filename": "Gnamma_Al_Daruri_Bilingual_Scholarly_Lexicon_Updated_2026-10-20.pdf",
+      "sha256": "c887757d8cf8b4be7990cd634b5888adb5a0a2cbe18b00066ba452ba0f0b765d",
+      "pages": 200
+    },
+    "daruri-arabic.pdf": {
+      "source_filename": "Gnamma_Al_Daruri_Arabic_Reading.pdf",
+      "sha256": "64ba960c59b89142978c572a923243b3935a80fdf88b16eea5b1c035b955f6d9",
+      "pages": 128
+    },
+    "daruri-english.pdf": {
+      "source_filename": "Gnamma_Al_Daruri_English_Reading_Illustrated_Guide.pdf",
+      "sha256": "eeda055c3a92a1fc3eb9304205a9e326f12d0564a1ca4ceed205746b197ca79e",
+      "pages": 163
+    }
+  }
+}
