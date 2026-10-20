@@ -2282,6 +2282,7 @@ body:not(.reading-active) .reading-return-bar{
 <script src="reading-styles.js?v=20261020-menu1"></script>
 <script src="visuals-controls.js?v=20261020-visuals1"></script>
 <link href="reader-structure.css?v=20261020-structure1" rel="stylesheet"/>
+<link rel="stylesheet" href="reading-desk.css?v=20261020-readingdesk1"/>
 </head>
 <body><noscript><section aria-label="Complete Darūrī reader" id="fallbackReader"><input class="fb-drawer-check" id="fb-open-left" type="checkbox"/><details class="fb-settings" id="fb-settings"><summary><svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6M15 14v6"></path></svg><span class="fb-settings-open">Display</span><span class="fb-settings-close">Close ×</span></summary><div aria-label="Display and reading tools" class="fb-settings-card" role="group"><h2>Type &amp; appearance</h2>
 <div class="gn-setting-row"><label for="fb-page-style-select">Page style</label><select id="fb-page-style-select"><option value="quiet" selected="">Quiet reading</option><option value="book">Book page</option><option value="structured">Structured page</option></select></div>
@@ -3649,7 +3650,7 @@ body:not(.reading-active) .reading-return-bar{
 <button class="nav-item" data-route="applications" type="button"><svg class="icon" aria-hidden="true"><use href="#i-balance"></use></svg>Bidāya applications</button>
 <button class="nav-item" data-route="index" type="button"><svg class="icon" aria-hidden="true"><use href="#i-subject"></use></svg>Subject index</button>
 <button class="nav-item" data-route="glossary" type="button"><svg class="icon" aria-hidden="true"><use href="#i-dictionary"></use></svg>Dictionary · معجم</button>
-<button class="nav-item" data-route="bookmarks" type="button"><svg class="icon" aria-hidden="true"><use href="#i-library"></use></svg>Saved passages</button>
+<button class="nav-item" data-route="bookmarks" type="button"><svg class="icon" aria-hidden="true"><use href="#i-library"></use></svg>Reading Desk</button>
 </nav>
 
 <div class="nav-bottom"><details class="gn-nav-group" id="jumpToPartMenu"><summary><svg class="icon" aria-hidden="true"><use href="#i-jump"></use></svg><span>Jump to part</span></summary><div class="nav-parts" id="quickParts"></div></details><details class="gn-nav-group" id="downloadsMenu"><summary><svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg><span>Downloads</span></summary><div class="gn-pdf-editions" aria-label="Five PDF editions"><span class="gn-pdf-editions-label">PDF EDITIONS · 5</span><a class="gn-pdf-edition gn-pdf-edition-primary" data-pdf-edition="reference" href="daruri.pdf?v=daruri8-structure-20261020" target="_blank" rel="noopener noreferrer" aria-label="Bilingual reference edition, PDF, 243 pages, 2.7 MB. Opens in a new tab."><span class="gn-pdf-copy"><strong class="gn-pdf-title">Bilingual reference</strong><small class="gn-pdf-meta">243 pages · 2.7 MB</small></span><span class="gn-pdf-arrow" aria-hidden="true">↗</span></a><a class="gn-pdf-edition" data-pdf-edition="study" href="daruri-study.pdf?v=daruri8-structure-20261020" target="_blank" rel="noopener noreferrer" aria-label="Bilingual study edition, PDF, 131 pages, 1.5 MB. Opens in a new tab."><span class="gn-pdf-copy"><strong class="gn-pdf-title">Bilingual study</strong><small class="gn-pdf-meta">131 pages · 1.5 MB</small></span><span class="gn-pdf-arrow" aria-hidden="true">↗</span></a><a class="gn-pdf-edition" data-pdf-edition="english" href="daruri-english.pdf?v=daruri8-structure-20261020" target="_blank" rel="noopener noreferrer" aria-label="English reading edition, PDF, 97 pages, 0.8 MB. Opens in a new tab."><span class="gn-pdf-copy"><strong class="gn-pdf-title">English reading</strong><small class="gn-pdf-meta">97 pages · 0.8 MB</small></span><span class="gn-pdf-arrow" aria-hidden="true">↗</span></a><a class="gn-pdf-edition" data-pdf-edition="arabic" href="daruri-arabic.pdf?v=daruri8-structure-20261020" target="_blank" rel="noopener noreferrer" aria-label="Arabic reading edition, PDF, 73 pages, 0.5 MB. Opens in a new tab."><span class="gn-pdf-copy"><strong class="gn-pdf-title">Arabic reading</strong><small class="gn-pdf-meta">73 pages · 0.5 MB</small></span><span class="gn-pdf-arrow" aria-hidden="true">↗</span></a><a class="gn-pdf-edition" data-pdf-edition="vowelled" href="daruri-arabic-vowelled.pdf?v=daruri8-structure-20261020" target="_blank" rel="noopener noreferrer" aria-label="Arabic · fully vowelled edition, PDF, 69 pages, 0.8 MB. Opens in a new tab."><span class="gn-pdf-copy"><strong class="gn-pdf-title">Arabic · fully vowelled</strong><small class="gn-pdf-meta">69 pages · 0.8 MB</small></span><span class="gn-pdf-arrow" aria-hidden="true">↗</span></a><a class="gn-pdf-edition gn-offline-bundle-link" data-daruri-bundle href="https://github.com/gnamma-research/booksite/archive/refs/heads/master.zip" title="Download the HTML reader, dictionary, supporting files and available PDFs in one ZIP">Complete package (ZIP) <span class="gn-pdf-arrow" aria-hidden="true">↓</span></a><span class="gn-offline-bundle-status" role="status" aria-live="polite"></span></div></details><div class="sidebar-publisher"><svg aria-hidden="true" class="gnamma-mark" viewbox="0 0 400 330" xmlns="http://www.w3.org/2000/svg"><path d="M203 21 C243 20 264 46 292 53 C332 62 361 91 366 128 C377 169 356 213 318 239 C286 263 263 297 214 301 C175 304 139 282 111 260 C83 239 45 224 30 184 C16 147 27 106 60 80 C91 56 123 54 153 38 C171 28 190 22 203 21Z" fill="var(--gnamma-stone)"></path><path d="M200 72 C230 69 252 87 280 99 C308 112 326 136 321 165 C317 191 297 210 268 228 C245 243 230 256 203 254 C172 251 148 226 124 212 C103 198 81 189 79 161 C78 136 89 113 112 99 C139 82 168 76 200 72Z" fill="var(--gnamma-hollow)"></path><path d="M202 112 C225 108 253 122 268 140 C284 158 277 179 263 193 C247 209 230 215 207 208 C182 200 170 190 149 181 C130 171 126 154 139 138 C152 123 181 115 202 112Z" fill="var(--gnamma-water)"></path></svg><div class="publisher-copy"><strong>gnamma</strong><span>RESEARCH</span></div></div></div>
@@ -3657,7 +3658,7 @@ body:not(.reading-active) .reading-return-bar{
 <main class="main-region" id="mainContent" tabindex="-1"><div class="loading-card"><span class="ornament">✧</span><p>Opening the bilingual edition…</p></div></main>
 
 </div>
-<nav aria-label="Mobile navigation" class="bottom-nav"><button type="button" data-route="home" aria-label="Home"><svg class="icon" aria-hidden="true"><use href="#i-home"></use></svg><span>Home</span></button><button type="button" data-route="reader" aria-label="Read"><svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg><span>Read</span></button><button type="button" data-route="contents" aria-label="Contents"><svg class="icon" aria-hidden="true"><use href="#i-toc"></use></svg><span>Contents</span></button><button type="button" data-route="study" aria-label="Study"><svg class="icon" aria-hidden="true"><use href="#i-study"></use></svg><span>Study</span></button><button type="button" data-route="index" aria-label="Index"><svg class="icon" aria-hidden="true"><use href="#i-subject"></use></svg><span>Index</span></button><button type="button" data-route="bookmarks" aria-label="Saved passages"><svg class="icon" aria-hidden="true"><use href="#i-library"></use></svg><span>Saved</span></button></nav></nav>
+<nav aria-label="Mobile navigation" class="bottom-nav"><button type="button" data-route="home" aria-label="Home"><svg class="icon" aria-hidden="true"><use href="#i-home"></use></svg><span>Home</span></button><button type="button" data-route="reader" aria-label="Read"><svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg><span>Read</span></button><button type="button" data-route="contents" aria-label="Contents"><svg class="icon" aria-hidden="true"><use href="#i-toc"></use></svg><span>Contents</span></button><button type="button" data-route="study" aria-label="Study"><svg class="icon" aria-hidden="true"><use href="#i-study"></use></svg><span>Study</span></button><button type="button" data-route="index" aria-label="Index"><svg class="icon" aria-hidden="true"><use href="#i-subject"></use></svg><span>Index</span></button><button type="button" data-route="bookmarks" aria-label="Reading Desk"><svg class="icon" aria-hidden="true"><use href="#i-library"></use></svg><span>Saved</span></button></nav></nav>
 <div class="overlay" hidden="" id="searchOverlay" role="presentation">
 <div aria-labelledby="searchTitle" aria-modal="true" class="search-dialog" role="dialog">
 <div class="search-box"><svg class="icon"><use href="#i-search"></use></svg><label class="sr-only" for="globalSearch">Search the edition</label><input autocomplete="off" id="globalSearch" placeholder="Search Arabic, English, rulings, concepts…" spellcheck="false" type="search"/><button aria-label="Close search" class="icon-btn" id="searchClose" type="button"><svg class="icon"><use href="#i-close"></use></svg></button></div>
@@ -3772,12 +3773,12 @@ body:not(.reading-active) .reading-return-bar{
 
 </div>
 </div>
-</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=daruri8-structure-20261020"></script><script defer src="download-bundle.js?v=20261020-visuals-touch1"></script>
+</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=daruri8-structure-20261020"></script><script defer src="download-bundle.js?v=20261020-readingdesk1"></script>
 <script src="source-reference-data.js?v=daruri8-structure-20261020"></script>
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
 <script src="study-guide-data.js?v=daruri6-sources-20261020"></script>
-<script src="study-guide.js?v=daruri6-sources-20261020"></script><script>
+<script src="study-guide.js?v=daruri6-sources-20261020"></script><script src="reading-desk.js?v=20261020-readingdesk1"></script><script>
 (() => {
 'use strict';
 const BOOK = JSON.parse(document.getElementById('editionData').textContent);
@@ -4326,7 +4327,7 @@ function renderGlossary(){$('#mainContent').innerHTML=panelHead('TECHNICAL LANGU
 function updateGlossaryList(){const q=state.glossaryQuery;const arr=BOOK.glossary.filter(g=>!q||contains([g.term,g.ar,g.definition].join(' '),q)).sort((a,b)=>a.term.localeCompare(b.term,'en',{sensitivity:'base'}));$('#glossaryCount').textContent=arr.length+' entries';$('#glossaryList').innerHTML=arr.length?arr.map(g=>`<div class="list-card glossary-card"><div><h2>${esc(g.term)}</h2><div class="term-ar" lang="ar" dir="rtl">${esc(g.ar)}</div></div><p class="definition">${esc(g.definition)}</p><div class="jump-list">${(g.sections||[]).map(n=>sectionButton(n)).join('')}</div></div>`).join(''):'<div class="empty-state">No dictionary entries match that spelling. Arabic text is searched without vowel marks.</div>'}
 function renderBookmarks(){
  const marks=state.bookmarks.filter(n=>sections.has(String(n))).map(n=>sections.get(String(n)));
- $('#mainContent').innerHTML=panelHead('YOUR READING','Saved passages','Keep a list of sections to revisit. Bookmarks stay in your browser; personal note-taking is not enabled in this edition.')+
+ $('#mainContent').innerHTML=panelHead('YOUR READING','Reading Desk','Keep a list of sections to revisit. Bookmarks stay in your browser; personal note-taking is not enabled in this edition.')+
  `<h2 class="subheading">Bookmarked passages <small>(${marks.length})</small></h2>${marks.length?marks.map(s=>`<div class="list-card"><h2>${sectionButton(s.id,`§${s.id} · ${esc(s.title)}`)}</h2><p>${esc(s.segments[0].en.slice(0,185))}…</p><div class="footline">${sectionButton(s.id,'Open section')}<button data-bookmark="${esc(s.id)}" type="button">Remove bookmark</button></div></div>`).join(''):'<div class="empty-state">No bookmarks yet. Use the bookmark symbol at the top of a section.</div>'}`;
 }
 function pdfEditorialAppendices(){
@@ -4646,7 +4647,7 @@ function syncReadingChrome() {
   const viewLabel=$('#globalViewLabel');
   if(viewLabel){
     viewLabel.hidden=reading;
-    viewLabel.textContent=({home:'Home',contents:'Contents',study:'Study guide',index:'Academic index',applications:'Bidāya applications',glossary:'Dictionary',bookmarks:'Saved passages',about:'About this edition'})[state.route]||'';
+    viewLabel.textContent=({home:'Home',contents:'Contents',study:'Study guide',index:'Academic index',applications:'Bidāya applications',glossary:'Dictionary',bookmarks:'Reading Desk',about:'About this edition'})[state.route]||'';
   }
   if (!reading) {closeReadingContextSheet();return;}
   $('#persistentLanguages').innerHTML = languageButtons();
@@ -5537,7 +5538,7 @@ function takeDictionaryReturn(){
     const root=document.querySelector('#jumpOverlay .settings-dialog, #jumpOverlay [role="dialog"]');
     if(root&&!root.querySelector('.gn-reader-jump-sites')){
       const nav=document.createElement('nav');nav.className='gn-reader-jump-sites';nav.setAttribute('aria-label','Other library views');
-      nav.innerHTML='<button type="button" data-route="home">Home</button><button type="button" data-route="contents">Contents</button><button type="button" data-route="study">Study guide</button><button type="button" data-route="index">Concept index</button><button type="button" data-route="applications">Bidāya applications</button><button type="button" data-route="glossary">Dictionary</button><button type="button" data-route="bookmarks">Saved sections</button><button type="button" data-route="about">About</button>';
+      nav.innerHTML='<button type="button" data-route="home">Home</button><button type="button" data-route="contents">Contents</button><button type="button" data-route="study">Study guide</button><button type="button" data-route="index">Concept index</button><button type="button" data-route="applications">Bidāya applications</button><button type="button" data-route="glossary">Dictionary</button><button type="button" data-route="bookmarks">Reading Desk</button><button type="button" data-route="about">About</button>';
       root.appendChild(nav);
     }
   };
@@ -5739,9 +5740,35 @@ if(window.GnammaStudyGuide&&window.DARURI_STUDY_DATA?.lessons?.length===28){
   routeURL=function(route,n){return route==='reader'?(studyGuide.assignmentURL(n||state.n)||studyURLBefore(route,n)):studyURLBefore(route,n);};
 }
 
+
+/* Private Reading Desk: site-side hooks preserve the current edition data. */
+const rdNoteCatalog=new Map(notes);
+for(const application of BOOK.apps)for(const item of gnApplicationSourceNotes(application))if(item?.id)rdNoteCatalog.set(item.id,item);
+const rd=window.GnammaReadingDesk?.create({
+ book:BOOK,state,sections,apps,notes:rdNoteCatalog,sectionRef,notify,
+ termExists:term=>termMap.has(term)||Boolean(DICTIONARIES.terms?.[term]),
+ setLegacyBookmarks:(items,write)=>{state.bookmarks=items;if(write)save();},
+ syncChrome:()=>syncReadingChrome(),
+ navigate:(route,n)=>navigate(route,n),goSection:n=>goSection(n),
+ showTermDetail:term=>showTermDetail(term),showAppDetail:id=>showAppDetail(id),
+ jumpToNote:id=>jumpToNote(id)
+});
+const priorBookmarks=renderBookmarks;
+renderBookmarks=function(){if(rd){rd.render();return;}priorBookmarks();};
+const priorBookmarkToggle=toggleBookmark;
+toggleBookmark=function(n){if(rd){rd.toggleSection(n);return;}priorBookmarkToggle(n);};
+const priorReader=renderReader;
+renderReader=function(){priorReader();rd?.afterReader();};
+const priorReadingApply=applyReadingState;
+applyReadingState=function(){priorReadingApply();rd?.afterReader();};
+const priorRoute=renderRoute;
+renderRoute=function(route,n){priorRoute(route,n);rd?.afterRender(route);};
+const priorScholarLayer=gnShowLayer;
+gnShowLayer=function(...args){priorScholarLayer(...args);rd?.decorate();};
+
 window.DaruriReadingStyles?.init({value:state.pageStyle,preserve:preserveVisiblePassage,onChange:value=>{state.pageStyle=value;save();}});
 applyParallelOrder();applyArabicFont();applyEnglishFont();bind();bindReaderEnhancements();applyTheme();updateScale();syncRoute();bindResponsiveRepairs();takeDictionaryReturn();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261020-visuals-touch1').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261020-readingdesk1').catch(()=>{});
 })();
 
 </script></body>
