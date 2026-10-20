@@ -107,6 +107,8 @@
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
       ['daruri/study-guide.css', 'study-guide.css'],
+      ['daruri/print.css', 'print.css'],
+      ['daruri/print.js', 'print.js'],
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json'],
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
       ['daruri/sw.js', 'sw.js'],

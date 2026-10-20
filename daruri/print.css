@@ -1,0 +1,294 @@
+/* Shared, ink-saving print layout. Linked last with media="print".
+   The media guard also protects the screen if the link is reused elsewhere. */
+@media print {
+  @page { margin: 18mm 16mm; }
+
+  :root, body {
+    color-scheme: light !important;
+    --bg: #fff !important;
+    --surface: #fff !important;
+    --surface-alt: #fff !important;
+    --paper: #fff !important;
+    --nav: #fff !important;
+    --text: #000 !important;
+    --ink: #000 !important;
+    --text-soft: #000 !important;
+    --soft: #000 !important;
+    --muted: #000 !important;
+    --accent: #000 !important;
+    --gold: #000 !important;
+    --danger: #000 !important;
+    --border: #000 !important;
+    --line: #000 !important;
+    --accent-soft: #fff !important;
+    --gold-soft: #fff !important;
+    --focus: #fff !important;
+    --shadow: none !important;
+    --font-scale: 1 !important;
+    --serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif !important;
+    --sans: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif !important;
+    --arabic: 'Amiri', 'Noto Naskh Arabic', 'Scheherazade New', 'Geeza Pro', 'Traditional Arabic', serif !important;
+  }
+
+  html:root, html:root body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    color: #000 !important;
+    font: 11pt/1.5 var(--serif) !important;
+    min-height: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+    scroll-behavior: auto !important;
+    -webkit-print-color-adjust: economy !important;
+    print-color-adjust: economy !important;
+  }
+
+  html:root body *, html:root body *::before, html:root body *::after {
+    background: transparent !important;
+    background-image: none !important;
+    color: #000 !important;
+    border-color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    text-decoration-color: #000 !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Remove controls and decoration, keeping content-bearing links/buttons. */
+  html:root body :is(
+    .topbar, .hd, .left-nav, .context-rail, .bottom-nav, .sidebar,
+    .reading-controls, #readingControls, .reader-dock, #readerDock,
+    .reader-tools, .reading-actions, .chapter-nav, .reader-inline-help,
+    .reading-progress, .location-jump, .location-banner, .flank-nav,
+    .reading-return-bar, .reference-back-to-text, .sticky-back,
+    .gn-source-return, #gn-app-return, #restoreHeader, #hiddenHeaderRecovery,
+    .gn-reading-context, .gn-reading-context-shade, .gn-scholar-layer,
+    .overlay, [role="dialog"], dialog, [popover], .drawer-shade, .context-shade,
+    .settings-dialog, .jump-dialog, .toast, .sr-only,
+    .header-tools, .header-pdf-link, .gn-pdf-editions, .gn-offline-bundle-status,
+    .gn-heading-link, .gnamma-mark, .brand-seal, .publisher, .sidebar-publisher,
+    .ornament, .rule, svg.icon, svg.symbols,
+    img, picture, video, canvas, svg image,
+    .stats-row, .stat-box, .hero .button-row, .hero .reading-actions,
+    .dict-view-tabs, .lexicon-view-switch, .lexicon-mode-nav, .lex-tabbar,
+    .filterbar, .filter-select, .searchline, .search-locator,
+    .sg-levels, .sg-level-help, .sg-breadcrumb, .sg-lesson-tools,
+    .sg-completion, .sg-sequence, .sg-assignment, .sg-start, .sg-filters,
+    .sg-progress, .sg-card-go, .sg-copy-link, .sg-link-button,
+    .fb-settings, .fb-topbar, .fb-reading-strip, .fb-left-panel,
+    .fb-context-panel, .fb-dock, .fb-inline-tools, .fb-quick-return,
+    .fb-return, .fb-control-inputs, .fb-heading-source-popup,
+    input, select, textarea, progress, [data-sg-print], [data-sg-copy],
+    [data-reader-return], [data-dictionary-atlas], [data-daruri-bundle]
+  ) { display: none !important; }
+
+  html:root body::before, html:root body::after,
+  html:root[data-palette] body::before, html:root[data-palette] body::after,
+  html:root body[data-landscape]::before, html:root body[data-landscape]::after,
+  html:root body .note-ref-symbol::before { display: none !important; content: none !important; }
+
+  /* Screen grids, sticky panels and bounded lists must become pageable text. */
+  html:root body :is(
+    .app-shell, .page-shell, #shell, .main, .main-region, #mainContent,
+    #lexArticle, .reader, .reading-frame, .parallel-text,
+    .fb-layout, .fb-page-inner, .fb-main-text, .fb-reference-page,
+    .contents-list, .part-block, .index-list, .glossary-list,
+    .gn-reading-aftertext, .sg-guide, .sg-fallback, .sg-cards,
+    .static, .static-content, .lex-card, .hist-source, .source-body
+  ) {
+    display: block !important;
+    position: static !important;
+    float: none !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    contain: none !important;
+    transform: none !important;
+    columns: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  html:root body :is(.gn-part-title, .gn-heading-part, .contents-record-heading) {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    max-height: none !important;
+    -webkit-line-clamp: unset !important;
+  }
+  html:root body .contents-colophon .contents-row { display: block !important; }
+  html:root body .contents-colophon :is(.contents-n, .pages) {
+    display: block !important;
+    width: auto !important;
+  }
+
+  html:root body :is(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--serif) !important;
+    color: #000 !important;
+    break-after: avoid-page;
+    page-break-after: avoid;
+    line-height: 1.25 !important;
+  }
+  html:root body h1 { font-size: 23pt !important; margin: 0 0 12pt !important; }
+  html:root body h2 { font-size: 16pt !important; margin: 18pt 0 7pt !important; }
+  html:root body h3 { font-size: 13pt !important; margin: 13pt 0 6pt !important; }
+  html:root body :is(h4, h5, h6) { font-size: 11pt !important; }
+  html:root body :is(p, li, dt, dd, blockquote, summary, td, th, .appendix-copy) {
+    font-family: var(--serif) !important;
+    orphans: 3;
+    widows: 3;
+  }
+  html:root body :is(p, li, dd) { font-size: 11pt !important; line-height: 1.5 !important; }
+  html:root body :is(.eyebrow, .sg-eyebrow, .sg-meta, .entry-meta, .micro, .disclaimer, .sg-editorial) {
+    font-size: 9pt !important;
+    letter-spacing: normal !important;
+  }
+  html:root body .gn-print-context {
+    display: block !important;
+    font: 9pt/1.4 var(--serif) !important;
+    margin: 0 0 8pt !important;
+    padding: 0 !important;
+    border: 0 !important;
+    letter-spacing: normal !important;
+    break-after: avoid-page;
+  }
+  html:root body .hero {
+    padding: 0 !important;
+    margin: 0 0 12pt !important;
+    border: 0 !important;
+  }
+  html:root body .hero .subtitle { font-size: 10pt !important; margin: 5pt 0 0 !important; }
+  html:root body a { color: #000 !important; text-decoration: underline; }
+  html:root body a[href]::after { content: none !important; }
+  html:root body :is(button, .inline-term, .note-anchored, .note-phrase) {
+    appearance: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    font: inherit !important;
+    color: #000 !important;
+    white-space: normal !important;
+    text-decoration: none !important;
+  }
+  html:root body :is(.note-ref-symbol, .search-hit, mark) {
+    background: none !important;
+    color: #000 !important;
+    outline: none !important;
+  }
+  html:root[data-theme] body .search-hit { background: none !important; color: #000 !important; }
+
+  /* Stack paired passages: long Arabic/English passages can break across pages. */
+  html:root body :is(.passage-grid, .fb-passage-grid) {
+    display: block !important;
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+    border: 0 !important;
+    border-bottom: .5pt solid #000 !important;
+    border-radius: 0 !important;
+    padding: 0 0 9pt !important;
+    margin: 0 0 12pt !important;
+    overflow: visible !important;
+  }
+  html:root body :is(.passage-ar, .passage-en, .fb-ar, .fb-en) {
+    width: auto !important;
+    max-width: none !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 0 8pt !important;
+    font: 11pt/1.5 var(--serif) !important;
+    overflow: visible !important;
+    overflow-wrap: break-word !important;
+    break-inside: auto !important;
+  }
+  html:root body :is(:lang(ar), [dir="rtl"], .passage-ar, .fb-ar, .arabic-term),
+  html:root body :is(:lang(ar), [dir="rtl"]) * {
+    font-family: var(--arabic) !important;
+    line-height: 1.85 !important;
+    letter-spacing: normal !important;
+    word-break: normal !important;
+  }
+  html:root body :is(.passage-ar, .fb-ar, .arabic-term, blockquote[lang="ar"]) { font-size: 14pt !important; }
+  html:root body :is(.passage-ar, .fb-ar, blockquote[lang="ar"]) { direction: rtl; text-align: right; }
+
+  /* Replace coloured cards with restrained rules; retain their complete text. */
+  html:root body :is(
+    .sg-card, .sg-objective, .sg-example, .sg-completion, .sg-block,
+    .sg-guide details, .sg-fallback details, .sg-readings > li,
+    .section-foot, .context-card, .note-item, .note-scope,
+    .editorial-meaning, .compare, .hist-source, .occurrence, .unattested,
+    .app-card, .glossary-card, .contents-record, .index-entry
+  ) {
+    border: 0 !important;
+    border-radius: 0 !important;
+    border-top: .5pt solid #000 !important;
+    padding: 9pt 0 0 !important;
+    margin: 11pt 0 !important;
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+    overflow: visible !important;
+  }
+  html:root body :is(.sg-guide summary, .sg-fallback summary, .hist-source > summary, .static-term > summary) {
+    min-height: 0 !important;
+    padding: 0 !important;
+    font-weight: bold !important;
+    break-after: avoid-page;
+  }
+  html:root body summary::marker { content: '' !important; }
+  html:root body summary::-webkit-details-marker { display: none !important; }
+  html:root body summary > [aria-hidden="true"] { display: none !important; }
+  html:root body :is(.sg-readings > li > a, .sg-citation, .source-body, .source-body blockquote) {
+    min-height: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  html:root body :is(.sg-terms dl, .redirect-grid) { display: block !important; }
+  html:root body .sg-terms dd { margin: 0 0 8pt !important; }
+  html:root body :is(.sg-editorial, .section-foot) { break-inside: auto !important; }
+  html:root body .sg-editorial > a { display: none !important; }
+
+  html:root body table { width: 100% !important; border-collapse: collapse !important; font-size: 10pt !important; }
+  html:root body :is(th, td) { border: .5pt solid #000 !important; padding: 4pt 6pt !important; }
+  html:root body thead { display: table-header-group; }
+  html:root body tr { break-inside: avoid-page; }
+  html:root body pre { white-space: pre-wrap !important; overflow-wrap: anywhere; }
+
+  /* Preserve semantic SVG diagrams as black line drawings, including labels. */
+  html:root body svg { max-width: 100% !important; }
+  html:root body svg :is(path, rect, circle, ellipse, line, polyline, polygon, use) {
+    fill: none !important;
+    stroke: #000 !important;
+    stroke-width: 1px;
+  }
+  html:root body svg :is(text, tspan), html:root body svg marker * { fill: #000 !important; stroke: none !important; }
+  html:root body :is(figure, svg) { break-inside: avoid-page; }
+
+  /* Native fallback disclosures remain printable without opening every route. */
+  html:root body :is(#fallbackReader, .static) details::details-content {
+    content-visibility: visible !important;
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  html:root body :is(#fallbackReader, .static) details:not([open]) > :not(summary) {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Do not print every fallback route when JavaScript is disabled. */
+  html:root body #fallbackMain > .fb-page { display: none !important; }
+  html:root body #fallbackMain > .fb-page:target,
+  html:root body #fallbackMain > .fb-page:has(:target) { display: block !important; }
+  html:root body #fallbackMain:not(:has(.fb-page:target, .fb-page :target)) > [id="section=1"] { display: block !important; }
+}

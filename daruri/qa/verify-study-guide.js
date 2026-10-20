@@ -49,7 +49,7 @@ async function makeDOM(hash, seed = {}) {
       w.CSS = {escape:s => String(s).replace(/[^a-zA-Z0-9_-]/g, '\\$&'),supports:() => true};
       w.TextEncoder = TextEncoder;
       w.TextDecoder = TextDecoder;
-      w.print = () => {w.dispatchEvent(new w.Event('afterprint'));};
+      w.print = () => {w.dispatchEvent(new w.Event('beforeprint'));w.dispatchEvent(new w.Event('afterprint'));};
       w.navigator.clipboard = {writeText:async s => {w.__copied = s;}};
       w.localStorage.setItem('daruri-reader-v2', JSON.stringify({lang:'english', vowels:false, theme:'dark',fontScale:1.1,...seed}));
     }
@@ -61,8 +61,10 @@ async function makeDOM(hash, seed = {}) {
 }
 const settle = () => new Promise(resolve => setTimeout(resolve, 110));
 const url = (id,level) => '#study?topic=' + id + '&level=' + level;
-async function navigate(w, hash) {w.location.hash = hash; await settle();}
-async function click(w, d, selector) {const el = d.querySelector(selector); assert.ok(el, 'Missing control ' + selector); el.click(); await settle();}
+// Reference-view restoration deliberately runs after two animation frames.
+async function settleView(w) {await settle(); await new Promise(resolve => w.requestAnimationFrame(() => w.requestAnimationFrame(resolve)));}
+async function navigate(w, hash) {w.location.hash = hash; await settleView(w);}
+async function click(w, d, selector) {const el = d.querySelector(selector); assert.ok(el, 'Missing control ' + selector); el.click(); await settleView(w);}
 
 (async () => {
   const {dom,w,d,errors} = await makeDOM('#study');
@@ -109,7 +111,7 @@ async function click(w, d, selector) {const el = d.querySelector(selector); asse
     }
     await click(w,d,'#sg-assignment [data-sg-back]');
     assert.equal(w.location.hash,url(l.id,'basic'));
-    assert.equal(d.querySelector('.sg-feedback').open,true,'Open feedback restored');
+    assert.equal(d.querySelector('.sg-feedback').open,true,'Open feedback restored for ' + l.id);
     assert.equal(w.scrollY,480,'Lesson scroll restored');
   }
   // Search/filter state and level selection stay independent of reading preferences.
@@ -133,6 +135,14 @@ async function click(w, d, selector) {const el = d.querySelector(selector); asse
   await click(w,d,'[data-sg-copy]');
   assert.equal(w.__copied,'https://gnamma-research.github.io/booksite/daruri/' + url('transmission','advanced'));
   const oldDetails = [...d.querySelectorAll('#mainContent details')].map(x=>x.open);
+  w.dispatchEvent(new w.Event('beforeprint'));
+  assert.ok([...d.querySelectorAll('.sg-lesson details')].every(x=>x.open), 'Browser print includes all lesson disclosures');
+  assert.equal(d.querySelector('.gn-print-context')?.textContent, 'Advanced · Research', 'Printed lesson identifies its level');
+  w.dispatchEvent(new w.Event('beforeprint'));
+  assert.equal(d.querySelectorAll('.gn-print-context').length, 1, 'Print preparation is idempotent');
+  w.dispatchEvent(new w.Event('afterprint'));
+  assert.deepEqual([...d.querySelectorAll('#mainContent details')].map(x=>x.open),oldDetails,'Browser print restores disclosure state');
+  assert.equal(d.querySelector('.gn-print-context'), null, 'Print metadata is removed from screen');
   await click(w,d,'[data-sg-print]');
   assert.deepEqual([...d.querySelectorAll('#mainContent details')].map(x=>x.open),oldDetails,'Print restores disclosure state');
   await click(w,d,'#searchBtn');

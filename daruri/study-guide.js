@@ -184,10 +184,7 @@
         ctx.state.studyQuery = ''; ctx.state.studyUnit = ''; render();
         document.getElementById('sg-filter')?.focus();
       } else if (el.hasAttribute('data-sg-print')) {
-        const details = [...main.querySelectorAll('details')], opened = details.map(x => x.open);
-        details.forEach(x => {x.open = true;});
-        const restore = () => {details.forEach((x,i) => {x.open = opened[i];});};
-        window.addEventListener('afterprint', restore, {once:true}); window.print();
+        if (window.GnammaPrint) window.GnammaPrint.print(); else window.print();
       } else if (el.hasAttribute('data-sg-copy')) {
         const view = route();
         const url = new URL(lessonURL(view?.lesson?.id, view?.level), location.href).href;
