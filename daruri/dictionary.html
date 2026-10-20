@@ -1,4 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#eee8de"><title>al-Ḍarūrī · Historical Dictionary</title><meta name="description" content="A searchable scholarly dictionary for Ibn Rushd's al-Daruri, with Arabic historical dictionary passages, English translations and linked original sources."><link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any"><link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180"><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#eee8de"><title>al-Ḍarūrī · Historical Dictionary</title><meta name="description" content="A searchable scholarly dictionary for Ibn Rushd's al-Daruri, with Arabic historical dictionary passages, English translations and linked original sources."><link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any"><link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180"><link href="arabic-fonts.css?v=20261020-fonts1" rel="stylesheet">
+<script>
+/* Restore the reading font before the first Arabic text is laid out. */
+try {
+ const fontPreference=JSON.parse(localStorage.getItem('daruri-reader-v2')||'{}')?.arabicFont;
+ if(['amiri','scheherazade','noto'].includes(fontPreference))document.documentElement.setAttribute('data-arabic-font',fontPreference);
+} catch (_) {}
+</script>
+<style>
 :root{--bg:#f3eee6;--paper:#fffdf8;--nav:#faf6ee;--ink:#2a3735;--soft:#65716e;--accent:#275f5d;--accent-soft:#e6f0eb;--line:#ddd8cf;--gold:#9a8159;--focus:#eadab9;--shadow:0 12px 36px rgba(27,43,39,.09)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,input,select{font:inherit}button{cursor:pointer}button,a,summary{outline-offset:3px}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--gold)}
 body[data-theme="dark"]{--bg:#1e2625;--paper:#263331;--nav:#28332f;--ink:#ecede6;--soft:#b0c3bd;--accent:#add8c7;--accent-soft:#334e44;--line:#465750;--gold:#d9bd83;--focus:#4f4732;--shadow:0 12px 36px rgba(0,0,0,.20)}
@@ -33,18 +41,18 @@ body[data-landscape="yes"] .reader{background:rgba(255,252,247,.80);backdrop-fil
 .hero{padding:10px 0 20px;border-bottom:1px solid var(--line)}.eyebrow{letter-spacing:.14em;font-size:10px;text-transform:uppercase;font-weight:650;color:var(--gold);margin:5px 0}
 .hero h1,.lex-title{font:500 clamp(34px,4vw,51px)/1.17 Georgia,serif;margin:10px 0 8px;letter-spacing:-.025em}.hero p{font:17px/1.6 Georgia,serif;color:var(--soft)}
 .entry-meta{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:9px;color:var(--soft);font-size:12px}
-.lex-card{padding:0 0 20px}.arabic-term{font:400 clamp(26px,3vw,38px)/1.8 'Amiri','Noto Naskh Arabic','Geeza Pro',serif;text-align:right;direction:rtl;color:var(--accent)}
+.lex-card{padding:0 0 20px}.arabic-term{font:400 clamp(26px,3vw,38px)/1.8 var(--arabic);text-align:right;direction:rtl;color:var(--accent)}
 .editorial-meaning{font:17px/1.68 Georgia,serif;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0 25px;box-shadow:var(--shadow)}
 .compare{margin:8px 0 22px;border-left:3px solid var(--gold);padding:6px 14px;color:var(--soft);background:var(--nav)}.compare b{color:var(--ink)}
 .sechead{font:500 22px Georgia,serif;margin:28px 0 10px}.hist-source{border:1px solid var(--line);border-radius:9px;background:var(--paper);margin:10px 0;overflow:hidden}
 .hist-source>summary{padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;list-style:none}.hist-source>summary::-webkit-details-marker{display:none}.hist-source>summary strong{font-size:14px}.hist-source>summary small{display:block;color:var(--soft);font-size:11px;line-height:1.55;margin-top:3px}
-.source-body{padding:0 18px 17px;border-top:1px solid var(--line)}.source-body blockquote{margin:8px 0 18px;padding:11px 0;font:400 clamp(20px,2.3vw,25px)/1.8 'Amiri','Noto Naskh Arabic','Geeza Pro',serif;text-align:right;color:var(--ink)}
+.source-body{padding:0 18px 17px;border-top:1px solid var(--line)}.source-body blockquote{margin:8px 0 18px;padding:11px 0;font:400 clamp(20px,2.3vw,25px)/1.8 var(--arabic);text-align:right;color:var(--ink)}
 .source-body .translate{font:15px/1.67 Georgia,serif;margin:8px 0 14px}.comment{color:var(--soft);font:13px/1.6 system-ui,sans-serif;border-top:1px dotted var(--line);padding-top:11px}.source-body>a{display:inline-block;margin-top:4px;border-bottom:1px solid var(--accent);font-size:13px}.disclaimer{display:block;margin-top:11px;color:var(--soft);font-size:10px}
 .unattested{padding:17px;border:1px dashed var(--line);border-radius:8px;color:var(--soft);background:var(--nav)}
 .related-pills{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.related-pills button,.related-pills a{border-radius:16px;border:1px solid var(--line);background:var(--paper);padding:7px 11px;color:var(--accent);font-size:12px}
-.occurrence{border-left:2px solid var(--gold);padding:9px 13px;margin:12px 0;background:var(--paper);border-radius:0 7px 7px 0}.occurrence blockquote{font:18px/1.8 'Amiri','Noto Naskh Arabic',serif;text-align:right;margin:10px 0}.occurrence p{font:13px/1.5 Georgia,serif;color:var(--soft)}
+.occurrence{border-left:2px solid var(--gold);padding:9px 13px;margin:12px 0;background:var(--paper);border-radius:0 7px 7px 0}.occurrence blockquote{font:18px/1.8 var(--arabic);text-align:right;margin:10px 0}.occurrence p{font:13px/1.5 Georgia,serif;color:var(--soft)}
 .sticky-back{position:fixed;bottom:max(15px,env(safe-area-inset-bottom));right:clamp(14px,4vw,35px);z-index:30;background:var(--accent);color:white;border:1px solid transparent;padding:11px 15px;border-radius:30px;box-shadow:0 8px 24px rgba(9,24,25,.22);font-size:12px;display:flex;align-items:center;gap:8px}.sticky-back:focus-visible{outline-color:var(--gold)}
-.mobile-filter{display:none}.static{max-width:900px;margin:auto;padding:20px}.static-term{border-bottom:1px solid var(--line)}.static-term>summary{padding:14px 8px;font:16px Georgia,serif;cursor:pointer}.static-term>summary b{font:23px 'Amiri',serif}.static-term>summary small{float:right;color:var(--soft);font:11px system-ui}.static-content{padding:10px 15px}.js-ready .static{display:none!important}
+.mobile-filter{display:none}.static{max-width:900px;margin:auto;padding:20px}.static-term{border-bottom:1px solid var(--line)}.static-term>summary{padding:14px 8px;font:16px Georgia,serif;cursor:pointer}.static-term>summary b{font:23px var(--arabic)}.static-term>summary small{float:right;color:var(--soft);font:11px system-ui}.static-content{padding:10px 15px}.js-ready .static{display:none!important}
 @media(max-width:880px){.main{grid-template-columns:1fr}.sidebar{position:relative;top:0;height:auto;min-height:0;padding:12px 13px 13px;max-height:46svh;overflow:auto;border-bottom:1px solid var(--line);border-right:0}.sidebar h2{display:none}.sidebar-footer{display:none}.results{display:flex;gap:6px;overflow:auto;max-width:100vw;padding-bottom:6px;scrollbar-width:thin}.term-choice{display:block;min-width:128px;width:150px;border:1px solid var(--line);white-space:nowrap}.term-choice span{display:block}.reader{padding-top:24px}.hd-inner{padding:9px 12px}.hd-title{font-size:18px}.logo-small{display:none}.hd-tools .action:first-child{display:none}.sidebar .helper{display:none}.sidebar .micro{display:none}.filter-select{margin:1px 0 5px}}
 @media(max-width:540px){.hd-inner{grid-template-columns:1fr auto}.hd-title{text-align:left}.hd-tools{gap:5px}.hd-tools .action{font-size:11px;padding:8px 9px}.sidebar{max-height:34svh}.reader{padding:20px 13px 90px}.hero h1,.lex-title{font-size:33px}.editorial-meaning{font-size:16px;padding:13px}.source-body{padding:0 12px 12px}.hist-source>summary{padding:12px}.sticky-back{left:15px;right:15px;justify-content:center;bottom:max(10px,env(safe-area-inset-bottom))}.term-choice{min-width:120px;width:130px}.source-body blockquote{font-size:21px}.filterbar{margin-bottom:6px}}
 
@@ -189,7 +197,7 @@ body[data-palette="gnamma-air"][data-landscape="yes"] .reader{
  body[data-palette="gnamma-air"] .reader{background:#fff!important;box-shadow:none!important}
 }
 </style>
-<link rel="stylesheet" href="print.css?v=20261020-print1" media="print"/>
+<link rel="stylesheet" href="print.css?v=20261020-fonts1" media="print"/>
 <script defer src="print.js?v=20261020-print1"></script>
 </head>
 <body data-landscape="no" data-theme="light"><header class="hd"><div class="hd-inner"><div class="logo-small">Ibn Rushd · al-Ḍarūrī</div><a class="hd-title" href="index.html#glossary">Dictionary · معجم المصطلحات</a></div></header>

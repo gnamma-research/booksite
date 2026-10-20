@@ -27,7 +27,7 @@
     --font-scale: 1 !important;
     --serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif !important;
     --sans: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif !important;
-    --arabic: 'Amiri', 'Noto Naskh Arabic', 'Scheherazade New', 'Geeza Pro', 'Traditional Arabic', serif !important;
+    --arabic: var(--reader-arabic-font, 'Amiri', 'Noto Naskh Arabic', 'Scheherazade New', 'Geeza Pro', 'Traditional Arabic', serif) !important;
   }
 
   html:root, html:root body {

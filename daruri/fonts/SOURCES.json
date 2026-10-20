@@ -1,0 +1,283 @@
+{
+  "prepared_for": "Daruri Arabic reader",
+  "prepared_on": "2026-10-20",
+  "tool": "fontTools 4.61.1",
+  "conversion": "Full fonts, without subsetting. Amiri and Scheherazade New are WOFF2 compression wrappers of the official static TTFs. Noto Naskh Arabic was instantiated at wght=400 and wght=700 with fontTools.varLib.instancer, then compressed as WOFF2.",
+  "source_repository": "https://github.com/google/fonts",
+  "sources": [
+    {
+      "family": "amiri",
+      "name": "Amiri-Regular.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/amiri/Amiri-Regular.ttf",
+      "bytes": 431116,
+      "sha256": "ab391c4147d054c48976e98322ad0eefe1427aa0e0502a12a4c75d80a70cfcd7",
+      "git_blob_sha1": "14dfa0d6c80db50460d23daa306a7ac92e74676f"
+    },
+    {
+      "family": "amiri",
+      "name": "Amiri-Bold.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/amiri/Amiri-Bold.ttf",
+      "bytes": 413480,
+      "sha256": "cfccb794268e7d573d857e6d6a67f89cf8a053e8ffd85dfa0c8ec1bb36fc4827",
+      "git_blob_sha1": "017afa9adb8ce417b08796d22d9204569ad211c7"
+    },
+    {
+      "family": "amiri",
+      "name": "OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/amiri/OFL.txt",
+      "bytes": 4389,
+      "sha256": "72de68e5954f4fdd24702292ef5a32f003ca960ec9330dc86e5eefb5dffb9b22",
+      "git_blob_sha1": "a6051797e5f1910347b586dc06d4c1130f00da28"
+    },
+    {
+      "family": "amiri",
+      "name": "METADATA.pb",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/amiri/METADATA.pb",
+      "bytes": 1857,
+      "sha256": "3df4f62489d9b01bb900d36e73120c06dfed0c49b585ff4398fd8a11410fd114",
+      "git_blob_sha1": "b16ef87c3d6f2916f035bdcd86c1b2f7daef979f"
+    },
+    {
+      "family": "scheherazadenew",
+      "name": "ScheherazadeNew-Regular.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/scheherazadenew/ScheherazadeNew-Regular.ttf",
+      "bytes": 331504,
+      "sha256": "794bac8dc9e83d1d620bc471ea694f5f31d0965ce8006490a79dfc51a2d283b3",
+      "git_blob_sha1": "80e1be589d5d687b0764904bf5a37627587d9bd6"
+    },
+    {
+      "family": "scheherazadenew",
+      "name": "ScheherazadeNew-Bold.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/scheherazadenew/ScheherazadeNew-Bold.ttf",
+      "bytes": 593472,
+      "sha256": "91363517a63dbc7448b5814226d33d845b26b32a461cd159ea0b3f23c7effd2d",
+      "git_blob_sha1": "2a00cce1d5b318cc7e5e347375a758a862d6e7eb"
+    },
+    {
+      "family": "scheherazadenew",
+      "name": "OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/scheherazadenew/OFL.txt",
+      "bytes": 4495,
+      "sha256": "5b9fd21ce2377fc542debebd9edfe1c48f2d3525e78a2a8abdba4a0ec3280163",
+      "git_blob_sha1": "5681491c71182e5872d885886fc54935b74c6f08"
+    },
+    {
+      "family": "scheherazadenew",
+      "name": "METADATA.pb",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/scheherazadenew/METADATA.pb",
+      "bytes": 2674,
+      "sha256": "a2f4a3301ee5fdc7c711e12bf97acbe6107723d41f845672f0b34be152f48a35",
+      "git_blob_sha1": "b1387b634b50436352faee9029c3b9c61ccff652"
+    },
+    {
+      "family": "notonaskharabic",
+      "name": "NotoNaskhArabic[wght].ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic%5Bwght%5D.ttf",
+      "bytes": 307592,
+      "sha256": "67b5a525a661b607971fbd3f96a81b89d3a768e74534fca84f18ac97e6fab72f",
+      "git_blob_sha1": "a8d2867262dc7bb28492ad746de5d56235735c8b"
+    },
+    {
+      "family": "notonaskharabic",
+      "name": "OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/OFL.txt",
+      "bytes": 4382,
+      "sha256": "a7a5a25eb188bf1cd96982030d53e23c33485c69b1044a562254226857ee13af",
+      "git_blob_sha1": "d4e170557fc8bcf8d1dcb317d9f1accaf8acf223"
+    },
+    {
+      "family": "notonaskharabic",
+      "name": "METADATA.pb",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/METADATA.pb",
+      "bytes": 4340,
+      "sha256": "764bf357c5009432b715b931271f59ae0f7588c99ff2537bfc0c7dbe56b3b1bb",
+      "git_blob_sha1": "37dc7d09fcbf15c9f92f70bb6296b13c4ef27452"
+    }
+  ],
+  "fonts": [
+    {
+      "file": "amiri-regular.woff2",
+      "family": "Amiri",
+      "subfamily": "Regular",
+      "weight": 400,
+      "version": "Version 1.002",
+      "bytes": 149120,
+      "glyphs": 6710,
+      "mapped_codepoints": 1699,
+      "sha256": "c89b5cd2d54bfaa574cc656b17503e03794eb712b02a6b61e47419081857ad9d",
+      "static": true,
+      "subset": false,
+      "gpos_features": [
+        "curs",
+        "kern",
+        "mark",
+        "mkmk",
+        "ss05"
+      ],
+      "all_core_vowel_marks_present": true,
+      "arabic_codepoints_in_reader": 59,
+      "missing_reader_arabic_codepoints": [],
+      "source_font": "Amiri-Regular.ttf",
+      "licence": "OFL-Amiri.txt",
+      "preserved_tables": [
+        "GSUB",
+        "GPOS",
+        "GDEF",
+        "name",
+        "cmap"
+      ]
+    },
+    {
+      "file": "amiri-bold.woff2",
+      "family": "Amiri",
+      "subfamily": "Bold",
+      "weight": 700,
+      "version": "Version 1.002",
+      "bytes": 140184,
+      "glyphs": 6551,
+      "mapped_codepoints": 1548,
+      "sha256": "36975d0b69a8a45c33c478006e725725b0c0c57eebeed36be2b3f41705a00c2c",
+      "static": true,
+      "subset": false,
+      "gpos_features": [
+        "curs",
+        "kern",
+        "mark",
+        "mkmk",
+        "ss05"
+      ],
+      "all_core_vowel_marks_present": true,
+      "arabic_codepoints_in_reader": 59,
+      "missing_reader_arabic_codepoints": [],
+      "source_font": "Amiri-Bold.ttf",
+      "licence": "OFL-Amiri.txt",
+      "preserved_tables": [
+        "GSUB",
+        "GPOS",
+        "GDEF",
+        "name",
+        "cmap"
+      ]
+    },
+    {
+      "file": "scheherazade-new-regular.woff2",
+      "family": "Scheherazade New",
+      "subfamily": "Regular",
+      "weight": 400,
+      "version": "Version 4.500",
+      "bytes": 122972,
+      "glyphs": 1822,
+      "mapped_codepoints": 800,
+      "sha256": "76cb3a5a91e811011cac303ffc1bf094a6016cb8602fb608fdcacdb04fd9b6e3",
+      "static": true,
+      "subset": false,
+      "gpos_features": [
+        "kern",
+        "mark",
+        "mkmk"
+      ],
+      "all_core_vowel_marks_present": true,
+      "arabic_codepoints_in_reader": 59,
+      "missing_reader_arabic_codepoints": [],
+      "source_font": "ScheherazadeNew-Regular.ttf",
+      "licence": "OFL-Scheherazade-New.txt",
+      "preserved_tables": [
+        "GSUB",
+        "GPOS",
+        "GDEF",
+        "name",
+        "cmap"
+      ]
+    },
+    {
+      "file": "scheherazade-new-bold.woff2",
+      "family": "Scheherazade New",
+      "subfamily": "Bold",
+      "weight": 700,
+      "version": "Version 4.500",
+      "bytes": 135304,
+      "glyphs": 1805,
+      "mapped_codepoints": 800,
+      "sha256": "59323ae2f0326b86437538c4b1a373345a10d30189ebb0592ec55beffc6cb48f",
+      "static": true,
+      "subset": false,
+      "gpos_features": [
+        "kern",
+        "mark",
+        "mkmk"
+      ],
+      "all_core_vowel_marks_present": true,
+      "arabic_codepoints_in_reader": 59,
+      "missing_reader_arabic_codepoints": [],
+      "source_font": "ScheherazadeNew-Bold.ttf",
+      "licence": "OFL-Scheherazade-New.txt",
+      "preserved_tables": [
+        "GSUB",
+        "GPOS",
+        "GDEF",
+        "name",
+        "cmap"
+      ]
+    },
+    {
+      "file": "noto-naskh-arabic-regular.woff2",
+      "family": "Noto Naskh Arabic",
+      "subfamily": "Regular",
+      "weight": 400,
+      "version": "Version 2.021",
+      "bytes": 70592,
+      "glyphs": 1719,
+      "mapped_codepoints": 1551,
+      "sha256": "0e0aa75cae2e045a6f36d021c5cdca346a14bc40d4353ed3407f6092163c4eec",
+      "static": true,
+      "subset": false,
+      "gpos_features": [
+        "kern",
+        "mark",
+        "mkmk"
+      ],
+      "all_core_vowel_marks_present": true,
+      "arabic_codepoints_in_reader": 59,
+      "missing_reader_arabic_codepoints": [],
+      "source_font": "NotoNaskhArabic[wght].ttf",
+      "licence": "OFL-Noto-Naskh-Arabic.txt",
+      "preserved_tables": [
+        "GSUB",
+        "GPOS",
+        "GDEF",
+        "name",
+        "cmap"
+      ]
+    },
+    {
+      "file": "noto-naskh-arabic-bold.woff2",
+      "family": "Noto Naskh Arabic",
+      "subfamily": "Bold",
+      "weight": 700,
+      "version": "Version 2.021",
+      "bytes": 71672,
+      "glyphs": 1719,
+      "mapped_codepoints": 1551,
+      "sha256": "156118478e0d4c11d9ac9cc89d588f40220ab0f2d2eb40a6af80e95f5151bf15",
+      "static": true,
+      "subset": false,
+      "gpos_features": [
+        "kern",
+        "mark",
+        "mkmk"
+      ],
+      "all_core_vowel_marks_present": true,
+      "arabic_codepoints_in_reader": 59,
+      "missing_reader_arabic_codepoints": [],
+      "source_font": "NotoNaskhArabic[wght].ttf",
+      "licence": "OFL-Noto-Naskh-Arabic.txt",
+      "preserved_tables": [
+        "GSUB",
+        "GPOS",
+        "GDEF",
+        "name",
+        "cmap"
+      ]
+    }
+  ]
+}
