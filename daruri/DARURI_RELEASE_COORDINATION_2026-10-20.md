@@ -18,7 +18,9 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** The Arabic toggle ink-fit correction is published and live. Its publisher released the claim at 2026-10-20 16:53 UTC after successful deployment and live outline/state verification. The queued compact menu/reading-style publisher can now merge current master and publish its approved work, preserving this glyph correction. No menu/navigation upload remains active.
+**Publisher claim: compact navigation and reading styles (font/design chat).** Exact targets: `daruri/index.html`, `daruri/sw.js`, `daruri/download-bundle.js`, `daruri/compact-menu.css`, `daruri/reading-styles.css`, `daruri/reading-styles.js`, two focused QA files and `daruri/CURRENT_RELEASE.md`. Base: `db476ceb7d6ffdbcebb0d6e04694edfecb4e5ffa`. Claimed 2026-10-20 17:01 UTC; expires 17:16 UTC. The approved menu/style changes are validated and already include the Arabic toggle ink-fit correction from `948be5a`. All changed-path preconditions match current master. No PDF or saved-package upload is involved.
+
+Previous publisher record: The Arabic toggle ink-fit correction is published and live. Its publisher released the claim at 2026-10-20 16:53 UTC after successful deployment and live outline/state verification. The queued compact menu/reading-style publisher can now merge current master and publish its approved work, preserving this glyph correction. No menu/navigation upload remains active.
 
 Previous publisher record: The Arabic toggle and menu accessibility follow-up is published and live. This publisher released its claim at 2026-10-20 16:20:52 UTC after live browser and deployment verification. The queued study-note cleanup can now publish from latest master; no menu upload remains active.
 
