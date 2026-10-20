@@ -679,15 +679,15 @@ body.focus-mode #restoreHeader:not([hidden]),body.header-collapsed #restoreHeade
 </style><style id="fallback-dictionary-return">.fb-dictionary-translation{font:15px/1.7 Georgia,serif;margin:9px 0 15px;border-left:3px solid var(--accent);padding:11px 14px;background:var(--paper);color:var(--text)}.fb-source small{display:block;margin:7px 0;font-size:10px;color:var(--muted)}.fb-quick-return{position:sticky;top:var(--fb-header,65px);z-index:9;background:var(--surface);border-bottom:1px solid var(--border);padding:8px 12px;margin-bottom:15px}.fb-quick-return a{color:var(--accent);text-decoration:none;font-size:13px;font-weight:650}@media(max-width:590px){.fb-quick-return{top:calc(var(--fb-header,65px) + var(--fb-strip,56px))}}</style><style id="gnammaDictionaryEnhancements">
 /* Gnamma site landscape: an optional calm, semi-transparent reading environment. */
 :root[data-palette="gnamma"]{
- --bg:#ddd2c5;--surface:rgba(255,252,246,.91);--surface-alt:rgba(243,237,227,.9);--paper:rgba(255,252,246,.85);
+ --bg:#ddd2c5;--surface:rgba(255,250,240,.71);--surface-alt:rgba(243,237,227,.70);--paper:rgba(255,252,246,.76);
  --text:#24332f;--text-soft:#51605a;--muted:#6d746c;--border:#c6c6bb;--line:#dedad0;
- --accent:#285e63;--accent-soft:rgba(230,242,236,.90);--gold:#8f734f;--gold-soft:#e7decf;
+ --accent:#285e63;--accent-soft:rgba(230,242,236,.76);--gold:#8f734f;--gold-soft:#e7decf;
  --gnamma-stone:#956449;--gnamma-hollow:#f8f0e3;--gnamma-water:#275e6a;
 }
 :root[data-theme="dark"][data-palette="gnamma"]{
- --bg:#212726;--surface:rgba(28,36,35,.92);--surface-alt:rgba(40,48,44,.95);--paper:rgba(32,40,38,.93);
+ --bg:#212726;--surface:rgba(28,36,35,.79);--surface-alt:rgba(40,48,44,.77);--paper:rgba(32,40,38,.82);
  --text:#f0ede5;--text-soft:#c7d0c7;--muted:#a2b0a7;--border:#64706c;--line:#485652;
- --accent:#9bd4ca;--accent-soft:rgba(47,80,72,.95);--gold:#dfbe85;--gold-soft:#494030;
+ --accent:#9bd4ca;--accent-soft:rgba(47,80,72,.79);--gold:#dfbe85;--gold-soft:#494030;
  --gnamma-stone:#b48861;--gnamma-hollow:#263332;--gnamma-water:#86bcb4;
 }
 :root[data-palette="gnamma"] body{background:var(--bg);isolation:isolate}
@@ -695,11 +695,11 @@ body.focus-mode #restoreHeader:not([hidden]),body.header-collapsed #restoreHeade
 :root[data-palette="gnamma"] body>#fallbackReader{position:relative;z-index:1}
 :root[data-palette="gnamma"] body::before{
  content:"";pointer-events:none;position:fixed;inset:0;z-index:0;
- background-image:linear-gradient(rgba(246,239,226,.53),rgba(249,242,230,.61)),url('../assets/gnamma-landscape.webp');
+ background-image:linear-gradient(rgba(246,239,226,.13),rgba(249,242,230,.22)),url('../assets/gnamma-landscape.webp');
  background-size:cover;background-position:50% 55%;background-repeat:no-repeat;
 }
 :root[data-palette="gnamma"][data-theme="dark"] body::before{
- background-image:linear-gradient(rgba(17,28,28,.61),rgba(17,24,24,.70)),url('../assets/gnamma-landscape.webp');
+ background-image:linear-gradient(rgba(17,28,28,.25),rgba(17,24,24,.34)),url('../assets/gnamma-landscape.webp');
 }
 :root[data-palette="gnamma"] .page-shell,
 :root[data-palette="gnamma"] .main-region,
@@ -714,13 +714,18 @@ body.focus-mode #restoreHeader:not([hidden]),body.header-collapsed #restoreHeade
 }
 :root[data-palette="gnamma"] .reader .location-banner{background:var(--surface);border-radius:8px}
 #fallbackReader:has(#fb-pal-gnamma:checked){
- --bg:#ded3c8;--surface:rgba(255,251,243,.93);--surface-alt:rgba(246,237,225,.93);--paper:rgba(255,253,249,.9);
+ --bg:#ded3c8;--surface:rgba(255,251,243,.72);--surface-alt:rgba(246,237,225,.70);--paper:rgba(255,253,249,.76);
  --text:#27342f;--text-soft:#57635b;--border:#c7c7b9;--line:#ddd6c9;--accent:#295963;--accent-soft:#dfebe5;--gold:#8d744e;
- background-image:linear-gradient(rgba(245,236,222,.48),rgba(248,240,226,.61)),url('../assets/gnamma-landscape.webp');
+ background-image:linear-gradient(rgba(245,236,222,.13),rgba(248,240,226,.22)),url('../assets/gnamma-landscape.webp');
  background-size:cover;background-position:center;background-attachment:fixed;
 }
 #fallbackReader:has(#fb-pal-gnamma:checked) .fb-reading-grid,#fallbackReader:has(#fb-pal-gnamma:checked) .fb-reading-content{
  background:var(--surface);border-radius:9px;
+}
+
+/* Only this palette gets wider landscape gutters; the other four palettes keep their exact layout. */
+@media(min-width:1150px){
+ :root[data-palette="gnamma"] .reader .reading-frame .parallel-text{max-width:960px}
 }
 /* Restore focus on the exact technical expression that opened the reference. */
 .lex-return-focus{outline:2px solid var(--gold)!important;outline-offset:4px;background:var(--gold-soft)!important;
