@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: lesson study-note cleanup.** Targets: `daruri/lesson-print.js`, its QA, `daruri/index.html`, `daruri/sw.js` and release records. Base `fa3bb45aa4eb9ac6b3bb4769afc928de960b71ba`. Claimed 2026-10-20 16:21 UTC; expires 16:36 UTC. All 84 print cases pass. The completed menu/accessibility and Bidāya-link releases are retained; publication and live-byte verification are in progress.
+**Publisher claim: unclaimed.** The lesson study-note cleanup is published and live. Its publisher released the claim at 2026-10-20 16:23 UTC after successful deployment and exact verification of all three changed live assets. No print-note upload remains active.
 
 Previous publisher record: The Arabic toggle and menu accessibility follow-up is published and live. This publisher released its claim at 2026-10-20 16:20:52 UTC after live browser and deployment verification. The queued study-note cleanup can now publish from latest master; no menu upload remains active.
 
@@ -26,19 +26,13 @@ Previous claim: unclaimed. The self-contained lesson printing release is publish
 
 Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
 
-### Queued lesson print-note cleanup
+### Lesson print-note cleanup — completed 20 October 2026
 
-The study-guide/printing chat is preparing the user’s requested removal of manuscript/collation apparatus from lesson handouts. Its local code is ready: `lesson-print.js` keeps 441 study-note records, excludes 187 apparatus/editorial-only records, and makes 17 print-only adaptations so grammar, interpretation and source explanations survive. The full 628-note scholarly corpus is untouched. Endnote numbering and links are being checked across all 84 lesson versions.
+**Published and live:** [`5fca4e2`](https://github.com/gnamma-research/booksite/commit/5fca4e28c7be9eeb5606f7a05e653a85a15a46cd). [Pages run 39456749409](https://github.com/gnamma-research/booksite/actions/runs/39456749409) succeeded at 16:22:23 UTC. The release integrates the completed menu/accessibility and Arabic-glyph update (`8a466ee`), Bidāya application links (`f2d4286`) and current font/printing work. The other publisher’s released claim and queued handoff were respected before the combined upload.
 
-**Coordination:** the menu accessibility / Arabic glyph publisher retains its active claim above. The print publisher will merge that completed release before changing `index.html` and `sw.js`; its only reader integration edits are the lesson-print asset URL and cache revision. Please preserve `lesson-print.js`, `print.js`, `print.css`, source data and all completed printing work. The print-note upload will not change fonts, menus, application links, PDFs or saved packages. This is an explicit queued handoff, not a second claim on the current upload.
+Lesson printouts omit 187 manuscript/collation/editorial-only note records and select from 441 study records, keeping all grammar, Qur’an/hadith source, interpretation and scholarly-context records. Seventeen mixed records receive print-only trims or vocabulary explanations. Full Arabic/English readings, source qualifications, selected fonts and monochrome layout remain. The canonical 628-note scholarly corpus, screen Notes cards, downloadable PDFs and saved packages are unchanged.
 
-### Page styles and compact appearance menu — proposal for review
-
-Updated 2026-10-20 16:20 UTC by the Arabic/English typefaces and aesthetic-preview chat. The user has asked to make all three previewed page styles available compactly, and is reviewing the menu arrangement before the next aesthetic implementation.
-
-**Proposed scope:** one `Page style` selector inside `Type & appearance`, with `Quiet reading`, `Book page` and `Text & notes` (the earlier `Text and commentary` preview). Keep Arabic and English font selectors independent, retaining Amiri + Original defaults. Quiet reading is the recommended new page-style default for the user's review. Compact the appearance panel by consolidating its two persistent font previews into one optional bilingual sample, shortening repeated helper prose, and folding the colour choices into one expandable row. A compact page-layout row can expose the already responsive Arabic side/order preference. Navigation discussion also proposes collapsible Downloads and Quickly continue groups while keeping main destinations directly accessible.
-
-**Coordination:** the active menu accessibility / Arabic-glyph publisher and the queued lesson print-note cleanup retain their order and scope. Please preserve the completed font selectors and font assets, all palettes, language order, reading apparatus and exact return behavior. This chat will start from their combined latest master if an aesthetic implementation proceeds; no stale full-reader replacement will be uploaded. It has no active publisher claim, no runtime upload and no PDF or saved-package upload. This is a design-scope handoff; the compact menu preview is being shown to the user in conversation.
+Verification: all 84 lesson print cases pass, including complete bilingual readings, useful-note retention, excluded apparatus, consecutive numbering, resolved note calls/references and exact screen-state restoration; heading/language/focus gates also pass. All five changed source-file hashes match tested local files. The deployed `index.html`, `lesson-print.js` and `sw.js` each returned HTTP200 and matched byte for byte. Cache/asset revision: `20261020-studynotes1`. No duplicate print/PDF upload is needed.
 
 1. Before uploading, fetch this file and latest `master`. Check whether the intended change is already present. Completed work above needs no further upload.
 2. A chat ready to publish should claim its exact overlapping targets here (for example `daruri/index.html` and the Usul reader ZIP), recording its chat/task name, current base commit, UTC claim time and expiry. Use the current file blob SHA when updating the claim: if another claimant wins, reread rather than overwrite it. Allow 15 minutes per claim, renewing only while an operation is actually active. An expired claim does not authorize a stale publisher to continue.
