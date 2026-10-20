@@ -1,0 +1,93 @@
+{
+  "revision": "2026-10-20-contents",
+  "original_headings": 46,
+  "editorial_sections": 258,
+  "files": {
+    "daruri.pdf": {
+      "pages": 261,
+      "previous_pages": 259,
+      "modified_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        260,
+        261
+      ],
+      "unchanged_pages_text_verified": 254,
+      "original_link_count_preserved": 4431,
+      "original_bookmarks_preserved": 757,
+      "bookmark_count": 806,
+      "valid_internal_links": true,
+      "size_bytes": 3718481,
+      "sha256": "bc58b6ecdfa9706779e8676e0a531c89afe7ee27e40212fafe5ee43944ea8a32"
+    },
+    "daruri-study.pdf": {
+      "pages": 129,
+      "previous_pages": 129,
+      "modified_pages": [
+        2,
+        3
+      ],
+      "unchanged_pages_text_verified": 127,
+      "original_link_count_preserved": 267,
+      "original_bookmarks_preserved": 10,
+      "bookmark_count": 10,
+      "valid_internal_links": true,
+      "size_bytes": 866610,
+      "sha256": "1f707554f74ec8a3abf14c54fd36d2e862b9532a2b653f908eab5ce58a684a10"
+    },
+    "daruri-english.pdf": {
+      "pages": 98,
+      "previous_pages": 98,
+      "modified_pages": [
+        2,
+        3
+      ],
+      "unchanged_pages_text_verified": 96,
+      "original_link_count_preserved": 1605,
+      "original_bookmarks_preserved": 496,
+      "bookmark_count": 496,
+      "valid_internal_links": true,
+      "size_bytes": 1015178,
+      "sha256": "10044c35ab4de48071d076ea8282075f2f942e6d96e7b83369649f46899bb552"
+    },
+    "daruri-arabic.pdf": {
+      "pages": 81,
+      "previous_pages": 81,
+      "modified_pages": [
+        2,
+        3
+      ],
+      "unchanged_pages_text_verified": 79,
+      "original_link_count_preserved": 514,
+      "original_bookmarks_preserved": 164,
+      "bookmark_count": 164,
+      "valid_internal_links": true,
+      "size_bytes": 1342008,
+      "sha256": "e328d62be61afe027b10ed3ed5a925afd5f85ec16113edd10aa43c3b128eff74"
+    },
+    "daruri-arabic-vowelled.pdf": {
+      "pages": 92,
+      "previous_pages": 92,
+      "modified_pages": [
+        1,
+        2
+      ],
+      "unchanged_pages_text_verified": 90,
+      "original_link_count_preserved": 6,
+      "original_bookmarks_preserved": 266,
+      "bookmark_count": 266,
+      "valid_internal_links": true,
+      "size_bytes": 1227496,
+      "sha256": "5a77befa2a2d938c48384217c8c2247cf789a458762972f913b04818fbfed559"
+    }
+  },
+  "visual_review": {
+    "changed_pages_rendered_and_inspected": 15,
+    "result": "Pass: no clipped text, overlapping labels, missing Arabic glyphs, or unintended page shifts.",
+    "reopened_all_pages_without_mupdf_warnings": true,
+    "new_reference_clickable_labels_verified": true
+  }
+}

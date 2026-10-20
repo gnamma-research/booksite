@@ -6,42 +6,64 @@
     "daruri.pdf": {
       "title": "Bilingual reference",
       "source_filename": "03_Daruri_Bilingual_Scholarly_Full_Headwords_2026-10-20.pdf",
-      "sha256": "fc82ca3d8ad742d7f19c26af66a21c052db1559f8218b98fe047131260494324",
-      "size_bytes": 3124195,
-      "pages": 259,
-      "default_for_text_links": true
+      "sha256": "bc58b6ecdfa9706779e8676e0a531c89afe7ee27e40212fafe5ee43944ea8a32",
+      "size_bytes": 3718481,
+      "pages": 261,
+      "default_for_text_links": true,
+      "source_sha256": "fc82ca3d8ad742d7f19c26af66a21c052db1559f8218b98fe047131260494324",
+      "body_page_destinations_preserved": true,
+      "contents_pages": {
+        "editorial_section_titles": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "original_headings": [
+          260,
+          261
+        ]
+      }
     },
     "daruri-study.pdf": {
       "title": "Bilingual study",
       "source_filename": "04_Daruri_Bilingual_Study_2026-10-20.pdf",
-      "sha256": "429dc9f436fd93e59b964d014c5e85132ee21111d510575473ef8953dc80f109",
-      "size_bytes": 808368,
+      "sha256": "1f707554f74ec8a3abf14c54fd36d2e862b9532a2b653f908eab5ce58a684a10",
+      "size_bytes": 866610,
       "pages": 129,
-      "default_for_text_links": false
+      "default_for_text_links": false,
+      "source_sha256": "429dc9f436fd93e59b964d014c5e85132ee21111d510575473ef8953dc80f109",
+      "body_page_destinations_preserved": true
     },
     "daruri-english.pdf": {
       "title": "English reading",
       "source_filename": "02_Daruri_English_Reading_2026-10-20.pdf",
-      "sha256": "29db181b82000443ba6def47fa16cf52e835195dc530cee8df5b66ffbbb402de",
-      "size_bytes": 943689,
+      "sha256": "10044c35ab4de48071d076ea8282075f2f942e6d96e7b83369649f46899bb552",
+      "size_bytes": 1015178,
       "pages": 98,
-      "default_for_text_links": false
+      "default_for_text_links": false,
+      "source_sha256": "29db181b82000443ba6def47fa16cf52e835195dc530cee8df5b66ffbbb402de",
+      "body_page_destinations_preserved": true
     },
     "daruri-arabic.pdf": {
       "title": "Arabic reading",
       "source_filename": "01_Daruri_Arabic_Reading_2026-10-20.pdf",
-      "sha256": "8b115e51e70e1c618fe10363ecb366d06bdbdd7dcc02bf73a83487ae72bbcb6d",
-      "size_bytes": 893793,
+      "sha256": "e328d62be61afe027b10ed3ed5a925afd5f85ec16113edd10aa43c3b128eff74",
+      "size_bytes": 1342008,
       "pages": 81,
-      "default_for_text_links": false
+      "default_for_text_links": false,
+      "source_sha256": "8b115e51e70e1c618fe10363ecb366d06bdbdd7dcc02bf73a83487ae72bbcb6d",
+      "body_page_destinations_preserved": true
     },
     "daruri-arabic-vowelled.pdf": {
       "title": "Arabic fully vowelled",
       "source_filename": "Daruri_Arabic_Fully_Vowelled_2026-10-20.pdf",
-      "sha256": "2e488e07635760dddbb9388aa3c980e26af8aa1e66333048a8eeb5e21cbbb263",
-      "size_bytes": 786004,
+      "sha256": "5a77befa2a2d938c48384217c8c2247cf789a458762972f913b04818fbfed559",
+      "size_bytes": 1227496,
       "pages": 92,
-      "default_for_text_links": false
+      "default_for_text_links": false,
+      "source_sha256": "2e488e07635760dddbb9388aa3c980e26af8aa1e66333048a8eeb5e21cbbb263",
+      "body_page_destinations_preserved": true
     }
   },
   "companions": {
@@ -53,5 +75,7 @@
       "pages": 85,
       "default_for_text_links": false
     }
-  }
+  },
+  "navigation_revision": "2026-10-20-contents",
+  "navigation_note": "The reference includes an overview of parts, editorial section titles on pages 3–6, and original headings on pages 260–261. The four reading editions use clearly labelled part overviews. Existing body page destinations are preserved."
 }

@@ -12,13 +12,13 @@ The five-PDF release was published in `f7fe0c8460e7d70f141166fba277f9ed7d9bd7d5`
 
 | Stable website filename | Edition | Current pages |
 | --- | --- | ---: |
-| `daruri.pdf` | Large bilingual reference, with full headwords | 259 |
+| `daruri.pdf` | Large bilingual reference, with full headwords | 261 |
 | `daruri-study.pdf` | Bilingual study | 129 |
 | `daruri-english.pdf` | English reading | 98 |
 | `daruri-arabic.pdf` | Arabic reading | 81 |
 | `daruri-arabic-vowelled.pdf` | Arabic fully vowelled | 92 |
 
-`daruri.pdf` is the destination for reader text and heading-reference links. The other four editions are separate download choices. The manifest records exact source filenames, byte sizes, SHA-256 checksums, page counts and the default-for-text-links flag; update it with every PDF replacement. The current files come from the 20 October daruri4 release and its separate vowelled Arabic edition.
+`daruri.pdf` is the destination for reader text and heading-reference links. The other four editions are separate download choices. The manifest records exact source filenames, byte sizes, SHA-256 checksums, page counts and the default-for-text-links flag; update it with every PDF replacement. The current files use the 20 October daruri4 release and its separate vowelled Arabic edition, with the contents-clarity correction recorded in the manifest. Existing physical body pages are preserved; original-heading contents are appended to the reference on pp. 260–261.
 
 The separate `daruri-study-guide.pdf` companion is also published: **85 pages**, generated from the same **28 questions × three levels (84 lesson versions)** as the website guide. It is additional to the five reading editions above and does not replace `daruri-study.pdf`. Its checksum and size are recorded under `companions` in the PDF manifest; build provenance is in `study/companion-metadata.json`.
 
@@ -30,7 +30,7 @@ Commit `27213bbeeb8f4a04a29f1862261b938721a48688` publishes the contents integra
 - **Editorial titles:** 258 descriptive titles, one for every numbered main-text section, grouped by the editor's topical part labels.
 - The unheaded opening, §§1–9, has a separate access link explicitly marked as a navigation aid. Do not manufacture an original Arabic rubric for it.
 - The copyist's colophon and ownership record remain separate from the main-text hierarchy. They add one entry to each guide.
-- Original-heading filtering retains ancestors for context and searches displayed heading fields. Mode changes preserve the reading-return control and keyboard focus. Following a section and returning to Contents must retain the selected mode, query and place.
+- Original-heading filtering retains ancestors for context and searches displayed heading fields. The website labels the two choices “Original headings · 46” and “Editorial section titles · 258” under “Two contents lists, one text”. Mode changes preserve the reading-return control and keyboard focus, and the selected view is saved. Following a section and returning to Contents must retain the selected mode, query and place.
 
 The existence of a heading in the Arabic edition is not by itself proof of its manuscript provenance or attribution to Ibn Rushd. Keep printed-source headings, editorial navigation labels and later manuscript records distinct.
 
@@ -38,10 +38,10 @@ The existence of a heading in the Arabic edition is not by itself proof of its m
 
 | Workstream | Recorded scope | Verified integration status at this audit |
 | --- | --- | --- |
-| “Check Daruri Text Ways” | Clarify the two contents systems in the PDFs as well as on the website; regenerate and upload the affected PDFs. | No finished replacement PDF artifact or publication commit was confirmed. The five files in the manifest remain the verified publication base. |
+| “Check Daruri Text Ways” | Clarify the two contents systems in the PDFs as well as on the website; regenerate and upload the affected PDFs. | Completed in this release: all five reading PDFs are corrected, verified and included with matching metadata/cache URLs. Reference 261 pages; others 129/98/81/92. Existing body destinations are unchanged. See `qa/pdf-contents-audit-20261020.json`. |
 | “Study Guide Improvement Review” | Develop basic, intermediate and advanced study routes across the 28 study questions, and correct identified issues. | Published in `e5e44918994cfa568553f3af6fbc68b045417a9c`: all 84 lesson versions across 28 questions and an 85-page companion, with shared lesson sources and reader integration. Preserve these files and any subsequent guide fixes when merging contents/PDF work. |
 
-These statuses come from recorded updates and repository inspection. They do not imply acknowledgement from another live chat. The shared coordination note was published at `6a2fd23ffcfd670c82a6b4e54b9a11186f4007f1`, followed by the study-guide release at `e5e44918994cfa568553f3af6fbc68b045417a9c`. This record incorporates the latter publication status, while the revised contents PDFs remain pending until their actual finished files and matching page maps are verified. Recheck current artifacts and `master` before integrating; this table is not evidence that work remains unfinished indefinitely.
+These statuses come from recorded updates and repository inspection. They do not imply acknowledgement from another live chat. The shared coordination note was published at `6a2fd23ffcfd670c82a6b4e54b9a11186f4007f1`, followed by the study-guide release at `e5e44918994cfa568553f3af6fbc68b045417a9c`. This record incorporates the published guide, the original-heading hierarchy, and the completed five-PDF contents correction. The PDF audit verifies 6,823 existing links, 1,693 existing bookmarks and 646 unchanged pages; all 15 changed/new pages were rendered and inspected. Recheck current artifacts and `master` before integrating; this table is not evidence that work remains unfinished indefinitely.
 
 All current workstreams remain authorized to update both PDFs and reader wherever their task requires it. This record is a merge guide, not a file lock or a freeze on later improvements.
 
