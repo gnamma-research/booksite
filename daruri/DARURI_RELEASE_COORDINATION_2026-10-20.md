@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: Home and contents-pane navigation.** Claimed 2026-10-20 19:22 UTC; expires 19:37 UTC. Targets: `daruri/index.html`, `daruri/dictionary.html`, `daruri/compact-menu.css`, `daruri/sw.js`, and navigation QA/release notes. The previous Reading Desk claim expired at 19:22 UTC without a recorded publication; this publisher will preserve any new Reading Desk commit by rebasing from actual master before publication. The former Reading Desk publisher should not upload from its stale base while this claim is active. PDFs, study materials and the Visuals panel remain unchanged.
+**Publisher claim: unclaimed.** The Home, sidebar navigation and icon release is published in [`3826049`](https://github.com/gnamma-research/booksite/commit/382604902c3463c3c2e208479feec9101c17273a). [Pages run 39484436760](https://github.com/gnamma-research/booksite/actions/runs/39484436760) succeeded at 19:33:46 UTC. This publisher releases its claim. Future work, including the separately prepared Reading Desk, must use this commit or newer and preserve the concise Home/source description, unique navigation icons, restored Downloads alignment, newer Visuals controls, index and five-PDF structure. No PDF was rebuilt.
 
 Previous claim: unclaimed. The icon-led Visuals refinement is published in `df4563ee43e50296fbf0bd0863fe3643b560c121`; GitHub Pages run [39480333437](https://github.com/gnamma-research/booksite/actions/runs/39480333437) completed successfully at 19:05 UTC. The font/design publisher releases its claim here. New work must start from current master and preserve the Visuals panel, the newer homepage/contents/subject-index structure, and the rebuilt five-PDF release.
 
@@ -51,6 +51,13 @@ Static validation confirms three page-style, three Arabic-font and three English
 Enhanced and native Home views now briefly describe the work, current study/navigation/bookmark features, all five PDF editions, self-contained lesson printing and font/colour choices. The architectural palettes are described as inspiration and the later Nasrid period is distinguished. A short source summary explains al-ʿAlawī’s base and Bou Akl’s selected corrections. About adds primary edition links, mediated Escorial MS 1235 evidence and the historical/technical dictionary basis of the AI-assisted translation. It no longer claims unimplemented personal notes. The long production checklist is replaced by the concise introduction.
 
 Actual reader checks passed for the home route, all six palette choices and selection, all five PDF links, Contents/Study/Subject index/Dictionary/Bookmarks/About navigation, the manuscript explanation and resume to §49. All 259 section records are present; exact comparison confirms no changes outside Home/About and the specified style/version edits. PDFs, main text, notes and study data are unchanged. See `qa/home-introduction-release-20261020.json`. No new physical-device visual test is claimed. Other chats should merge from this release before publishing overlapping reader/cache assets.
+
+
+### Home and navigation — published 20 October 2026
+
+The Home/contents-pane release `3826049` makes Home the first destination and gives distinct symbols to Reading, Contents, Study, Bidāya applications, Subject index, Dictionary and Saved passages. Utility disclosures follow in consistent alignment: Jump to part, then Downloads. The mobile dock prioritizes Home, Reading, Contents, Study, Index and Saved; the standalone dictionary menu and no-JavaScript navigation follow the same reading-led order.
+
+The Home page now carries the short work/reader/source introduction and a collapsed scholarly source-method section; it does not contain a second contents grid or a colour-picker. Instead it mentions the Andalusian-inspired themes in Visuals. The legacy About route remains valid and opens the source detail on Home. Home is available at the top of the main sidebar and in mobile navigation as a straightforward return destination. No PDF, scholarly text or saved data changed. Validation: inline JavaScript compiled; eight unique primary icon destinations, mobile/fallback/dictionary route ordering, source disclosure, CSS/cache revision and download disclosure markup were checked. GitHub Pages deployment succeeded; no physical-device visual check is claimed.
 
 ### Subject index and contents print follow-up — completed, 20 October 2026
 
