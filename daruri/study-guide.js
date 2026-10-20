@@ -96,7 +96,7 @@
       out.innerHTML = selected.length ? UNITS.map((unit, i) => {
         const items = selected.filter(l => l.unit === i + 1);
         if (!items.length) return '';
-        return '<section class="sg-unit"><h2><span>Unit ' + (i + 1) + '</span>' + esc(unit) + '</h2><div class="sg-cards">' + items.map(l => '<article class="sg-card"><p class="sg-meta">Question ' + String(l.number).padStart(2, '0') + (completion(l.id, level) ? ' · Studied ✓' : '') + '</p><h3><a data-sg-nav href="' + lessonURL(l.id, level) + '">' + esc(l.title) + '</a></h3><p>' + esc(l.summary) + '</p><p class="sg-card-go">' + LEVELS[level].title + ' →</p></article>').join('') + '</div></section>';
+        return '<section class="sg-unit"><h2><span>Unit ' + (i + 1) + '</span>' + esc(unit) + '</h2><div class="sg-cards">' + items.map(l => '<article class="sg-card"><p class="sg-meta">Question ' + String(l.number).padStart(2, '0') + (completion(l.id, level) ? ' · Studied ✓' : '') + '</p><h3><a data-sg-nav href="' + lessonURL(l.id, level) + '">' + esc(l.title) + '</a></h3><p>' + esc(l.summary) + '</p><a class="sg-card-go" data-sg-nav href="' + lessonURL(l.id, level) + '" aria-label="' + esc(LEVELS[level].title + ': ' + l.title) + '">' + LEVELS[level].title + ' <span aria-hidden="true">→</span></a></article>').join('') + '</div></section>';
       }).join('') : '<div class="sg-notice"><p>No questions match that search and unit.</p><button class="sg-button" data-sg-clear type="button">Show all questions</button></div>';
     }
     function lessonPage(lesson, level) {

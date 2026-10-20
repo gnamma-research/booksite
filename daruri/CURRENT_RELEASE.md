@@ -57,3 +57,7 @@ All current workstreams remain authorized to update both PDFs and reader whereve
 8. Run the relevant checks described in [qa/EDITING_LARGE_READER.md](qa/EDITING_LARGE_READER.md), including heading, language and focus checks. Verify the deployed files and navigation, including both contents routes, filtered ancestor paths, return position, all five PDF downloads and the offline bundle. Distinguish source checks, browser checks and real-device checks in the release report.
 
 When parallel work is incorporated, update this record with its actual artifact/checksum and publication status. Keep planned, implemented and deployed work distinguishable.
+
+## Study-card links correction — 20 October 2026
+
+The Foundations, Close Reading and Research labels at the bottom of all 28 study cards are now actual links to the question at the selected level. Each link has a 44-pixel minimum tap height and an accessible label naming the question; heading links remain available. The guide integration check verifies all 84 footer destinations, clicks through the nested arrow at all three levels, and checks heading focus. Runtime and stylesheet URLs use `20261020-study2`; the service-worker cache is refreshed while preserving the newer contents/PDF versions. This interface correction does not alter lesson sources or PDF content.

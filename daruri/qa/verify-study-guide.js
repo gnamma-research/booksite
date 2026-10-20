@@ -70,6 +70,21 @@ async function click(w, d, selector) {const el = d.querySelector(selector); asse
   assert.equal(d.querySelectorAll('.sg-unit').length,8);
   assert.equal(d.querySelectorAll('.sg-levels a').length,3);
   const readingPrefs = JSON.parse(w.localStorage.getItem('daruri-reader-v2'));
+  // Card footers must be real links, including each level's distinct destination.
+  for (const level of levels) {
+    await navigate(w, '#study?level=' + level);
+    const links = [...d.querySelectorAll('a.sg-card-go[data-sg-nav]')];
+    assert.equal(links.length, 28, 'Every card footer is a link at ' + level);
+    for (const [i, link] of links.entries()) {
+      assert.equal(link.getAttribute('href'), url(lessons[i].id, level));
+      assert.ok(link.getAttribute('aria-label').includes(lessons[i].title));
+    }
+    // Clicking the arrow also exercises the delegated handler's nested target.
+    await click(w, d, '.sg-card-go span');
+    assert.equal(w.location.hash, url(lessons[0].id, level));
+    assert.equal(d.querySelector('#sg-title')?.textContent, lessons[0].title);
+    assert.equal(d.activeElement.id, 'sg-title');
+  }
   for (const l of lessons) for (const level of levels) {
     await navigate(w, url(l.id,level));
     assert.equal(d.querySelector('#sg-title')?.textContent,l.title);
@@ -149,5 +164,5 @@ async function click(w, d, selector) {const el = d.querySelector(selector); asse
   assert.equal(direct.w.location.hash,url('transmission','intermediate'));
   assert.equal(direct.errors.length,0,direct.errors.join('\n'));
   direct.dom.window.close();
-  console.log('PASS: all 84 lessons render; 28 reading sequences and contextual returns; feedback/scroll, filters, keyboard focus, independent progress, print, share, global search, preferences, direct URLs and malformed URLs.');
+  console.log('PASS: all 84 card footer destinations and all three level clicks; all 84 lessons render; 28 reading sequences and contextual returns; feedback/scroll, filters, keyboard focus, independent progress, print, share, global search, preferences, direct URLs and malformed URLs.');
 })().catch(error => {console.error(error);process.exitCode=1;});
