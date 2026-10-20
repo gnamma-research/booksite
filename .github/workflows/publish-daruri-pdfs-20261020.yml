@@ -73,7 +73,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add daruri/daruri.pdf daruri/daruri-arabic.pdf daruri/daruri-english.pdf daruri/pdf-editions-manifest.json daruri/index.html daruri/sw.js
-          git diff --cached --check
+          git diff --cached --check -- daruri/index.html daruri/sw.js daruri/pdf-editions-manifest.json
           git diff --cached --stat
           git commit -m 'Publish three Daruri PDF editions and link them in reader'
           git push origin HEAD:master
