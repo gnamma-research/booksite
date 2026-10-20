@@ -302,7 +302,7 @@
   }
   .gn-visuals-panel .gn-layout-glyph.gn-layout-stack {
     width: 42px !important;
-    height: 40px !important;
+    height: 36px !important;
     grid-template-columns: minmax(0,1fr) !important;
     grid-template-rows: repeat(2,minmax(0,1fr)) !important;
   }
@@ -329,13 +329,19 @@
   .gn-visuals-panel .gn-layout-arabic-icon {
     display: block !important;
     box-sizing: content-box;
-    flex: 0 0 18px !important;
-    width: 18px !important;
-    height: 18px !important;
+    flex: 0 0 16px !important;
+    width: 16px !important;
+    height: 16px !important;
     margin: 0 !important;
     padding: 0 !important;
     fill: currentColor !important;
     stroke: none !important;
+  }
+  .gn-visuals-panel .gn-layout-options button {
+    padding-block: 5px !important;
+  }
+  .gn-visuals-panel .gn-layout-options button[aria-pressed="true"] {
+    padding-block: 4px !important;
   }
   @media(max-width:360px) {
     .gn-visuals-panel {
