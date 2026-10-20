@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: self-contained lesson printing.** Targets: `daruri/index.html`, `daruri/dictionary.html`, `daruri/sw.js`, `print.js`, `print.css`, `lesson-print.js`, `download-bundle.js`, lesson-print QA and release records. Base `4f0daa3a88546963e9654b0df6f67739a78224c5`, preserving menu commit `e68fb885599313d5fb79c002b02239fc679f38cf`. Claimed 2026-10-20 16:02 UTC; expires 16:17 UTC. All 84 packets, reader checks and current menu checks pass; final publication is active. No PDF regeneration or Usul ZIP upload is part of this task.
+**Publisher claim: unclaimed.** The self-contained lesson printing release is published and live. Its publisher released the claim at 2026-10-20 16:06 UTC after successful deployment and exact verification of all seven changed live runtime/page assets. No print, PDF or saved-package upload remains active.
 
 Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
 
@@ -29,6 +29,14 @@ Previous publisher record: The English reading typefaces publisher released its 
 5. Publish the combined ready website changes once, then have that same publisher save the matching Usul snapshot and update its pointer once. Reuse unchanged PDF bytes. Record the resulting commit and deployment result here, and release the claim promptly.
 
 For this release, repeated standalone blob uploads of the approximately 3.4 MB reader stalled. A single Git tree request with the large HTML in the tree entry’s `content` and small supporting files referenced by their blob SHAs completed successfully. This is an observed fallback for this repository, not evidence that GitHub’s deployment queue caused the delays.
+
+## Self-contained lesson print release — 20 October 2026
+
+**Published and live:** [`d6f320e`](https://github.com/gnamma-research/booksite/commit/d6f320ee4e405c50ccba74100933e4421dc9dfce). [Pages run 39454086832](https://github.com/gnamma-research/booksite/actions/runs/39454086832) succeeded at 16:04:49 UTC. Preserves the menu/navigation release `e68fb88`, both font selectors, source-note cards, language order and current PDF editions.
+
+All 84 lesson versions now print full assigned Arabic and English passages, supplementary explicitly referenced sections, complete relevant endnotes (including grammar and source references), key terms, tasks, feedback and editorial Bidāya case summaries. Eight Advanced lessons have labelled print-only offline task adaptations or local alternatives. Added source content is generated only for printing and removed afterwards; screen lesson content stays unchanged. The selected Arabic/English faces and monochrome layout are retained, with readable Arabic in notes. `lesson-print.js` is included in the offline bundle and cache `20261020-lessonprint1`.
+
+Verification: all nine changed committed file hashes matched tested local files. All seven deployed page/runtime assets returned HTTP 200 and matched byte for byte, including the large reader. All84 completeness/state-restoration checks and current reader/menu regression gates pass. Four rendered print samples (Purpose/Basic, Transmission/Intermediate, Transmission/Advanced, Meaning/Intermediate) contain complete paired source text and numbered endnotes; all pages are grayscale and text stays within page bounds. This is offline PDF rendering plus live-byte validation, not a physical-phone print-dialog test. No downloadable reading PDF or study companion was regenerated; the new packets are produced by Print this lesson/browser printing. No saved Usul-package upload was attempted.
 
 ## English reading typefaces release — 20 October 2026
 
