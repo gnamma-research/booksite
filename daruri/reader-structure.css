@@ -1,0 +1,70 @@
+/* Source rubrics organize the reader; editorial topic descriptions remain
+   visibly secondary. Load after reading-styles.css. Existing language,
+   font, colour, layout and Focus preferences remain independent. */
+@media screen {
+  html .reader .reader-heading .gn-source-heading .source-heading-en,
+  #fallbackReader .fb-reading-page .gn-source-heading .fb-original-heading-en {
+    font-family: var(--serif) !important;
+    font-size: clamp(1.3rem, 2.4vw, 1.95rem) !important;
+    font-weight: 500 !important;
+    line-height: 1.35 !important;
+    color: var(--text) !important;
+  }
+  html .reader .reader-heading .gn-source-heading .source-heading-ar,
+  #fallbackReader .fb-reading-page .gn-source-heading .fb-heading-original {
+    font-family: var(--arabic) !important;
+    font-size: clamp(1.4rem, 2.5vw, 1.95rem) !important;
+    font-weight: 500 !important;
+    line-height: 1.7 !important;
+    color: var(--text) !important;
+  }
+  html .reader .reader-heading .gn-editorial-section-caption,
+  #fallbackReader .fb-reading-page .gn-editorial-section-caption {
+    margin: 7px 0 9px;
+    font: 400 14px/1.65 var(--sans);
+    color: var(--text-soft);
+    overflow-wrap: anywhere;
+  }
+  .gn-editorial-caption-label { font-weight: 600; }
+  html .reader .reader-heading .gn-editorial-section-label,
+  #fallbackReader .fb-reading-page .gn-editorial-section-label {
+    margin: 7px 0 0;
+    font: 500 11px/1.5 var(--sans);
+    letter-spacing: .03em;
+    color: var(--text-soft);
+  }
+}
+/* Hide the whole editorial aid, including its label, in Arabic-only reading.
+   Unheaded reading units retain their part/section locator above the text. */
+html .reader.mode-arabic .reader-heading .gn-editorial-section-caption,
+html .reader.mode-arabic .reader-heading .gn-editorial-section-label,
+html .reader.mode-arabic .reader-heading .gn-editorial-only-heading,
+#fallbackReader:has(#fb-language-ar:checked) .fb-reading-page .gn-editorial-section-caption,
+#fallbackReader:has(#fb-language-ar:checked) .fb-reading-page .gn-editorial-section-label,
+#fallbackReader:has(#fb-language-ar:checked) .fb-reading-page .gn-editorial-only-heading {
+  display: none !important;
+}
+#fallbackReader:has(#fb-language-ar:checked) .gn-source-heading .fb-original-heading-en,
+#fallbackReader:has(#fb-language-en:checked) .gn-source-heading .fb-heading-original {
+  display: none !important;
+}
+@media (max-width: 840px) {
+  #fallbackReader:has(#fb-language-auto:checked) .gn-source-heading .fb-heading-original {
+    display: none !important;
+  }
+}
+@media print {
+  html .reader .gn-source-heading .source-heading-en,
+  #fallbackReader .gn-source-heading .fb-original-heading-en {
+    font-size: inherit !important;
+    font-weight: 500 !important;
+    color: #000 !important;
+  }
+  html .reader .gn-source-heading .source-heading-ar,
+  #fallbackReader .gn-source-heading .fb-heading-original {
+    font: 500 18pt/1.55 var(--arabic) !important;
+    color: #000 !important;
+  }
+  .gn-editorial-section-label,
+  .gn-editorial-caption-label { font-size: 9pt !important; }
+}

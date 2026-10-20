@@ -6,6 +6,28 @@ Canonical repository: `gnamma-research/booksite`, branch `master`.
 
 Canonical reader: [https://gnamma-research.github.io/booksite/daruri/](https://gnamma-research.github.io/booksite/daruri/).
 
+## Source structure, subject browsing and compact PDF contents — `daruri8-structure-20261020`
+
+The user approved the complete contents/index redesign on 20 October 2026, explicitly retaining a compact editorial section guide in the bilingual reference, bilingual study and English reading editions. The two Arabic editions use only the recorded-heading contents. This release integrates the live `Ar`/`En` button labels (`896bd3c`) and preserves the compact menus, three reading styles, fonts, source notes and self-contained study printing.
+
+The website now presents **Book structure** and **Editorial section titles** within the same collapsible part frame. The opening starts open and the four parts closed; saved disclosure state, Expand all / Collapse all, search ancestry and exact reference returns work in both modes. The 46 recorded Arabic rubrics and English translations retain their verified hierarchy. Generic headings receive explicitly identified prose-supported or editorial topic captions. Source rubrics are primary in normal, continuous and native reading; distinct editorial descriptions are subordinate and labelled, while unheaded units are labelled Editorial section. The later colophon remains separate.
+
+**Subject index** precedes **Dictionary** in both menus. Its By subject and A–Z views share the unchanged 302 headings and 1,011 subentries. Eight editorial subject groups cross-list related entries; People and schools and Edition/source control filters, four question routes, Arabic/alias/subtopic search, and saved view preferences improve access. Section jumps and returns restore the query, selected view/filter/question, disclosures, focus and scroll. A matching native subject browser and alphabetical index remain available without JavaScript. The canonical taxonomy is `subject-index-data.json`; its browser export and PDF subject guides use the same definitions.
+
+| Stable filename | Pages | Recorded contents | Editorial section guide |
+| --- | ---: | --- | --- |
+| `daruri.pdf` | 243 | p. 3 | pp. 4–7 |
+| `daruri-study.pdf` | 131 | p. 3 | pp. 4–7 |
+| `daruri-english.pdf` | 97 | p. 3 | pp. 4–7 |
+| `daruri-arabic.pdf` | 73 | p. 3 | None |
+| `daruri-arabic-vowelled.pdf` | 69 | p. 3 | None |
+
+Each PDF has a one-page recorded-heading contents list. The three English-containing editions add a compact four-page guide to all 258 editorial titles, explicitly distinguished from Ibn Rushd's headings. Full editorial descriptions no longer interrupt the PDF body. The recorded rubrics and small R/BA reference markers organize the text. Primary bookmarks follow the validated source hierarchy; the editorial bookmark branch is separate, the colophon is outside Part IV, and Arabic editions have Arabic structural navigation. Subject indexes precede dictionaries/glossaries. All text is black, with no images or decorative fills. Each edition is shorter than its predecessor.
+
+All 565 static and 259 dynamic website PDF destinations are rederived from verified visible section anchors, including headings that move across a page break. The manifest, five PDFs, page maps, offline assets and cache are updated together. The 85-page teaching companion, 28 questions/84 lesson versions, all 628 main-text notes, 416 aligned passages and source qualifications are preserved. Per-edition build metadata and the PDF verification record are retained in `build/release/`.
+
+Validation covers all five PDF source/footnote contracts, all 46 source outline entries, the 258-entry editorial outlines in the three requested editions, 47 visible source/colophon destinations, monochrome text and page bounds. The rendered contents and representative bilingual/Arabic chapter and reference pages were visually reviewed. Website gates cover the complete heading/corpus, language and Focus contracts, compact menus, source-first headings, contents disclosure/search/returns, full subject-index navigation, application returns, reader source notes and all 84 lesson printouts. Website DOM geometry is simulated; an attempted live visual browser connection was unavailable, so physical-device visual verification is not claimed. Publication and deployed-byte results are recorded in the shared coordination note.
+
 ## Compact navigation and reading styles — `20261020-menu1`
 
 The user approved these changes on 20 October 2026. The main menu keeps Read the text, Contents, Study guide, Dictionary, Academic index, Bidāya applications and Saved passages as ordinary direct destinations. Home and About remain in the footer. Jump to part and Downloads are closed native disclosures; all five reading PDFs and the complete offline package remain accessible. The no-JavaScript navigation retains its working static destinations.

@@ -30,7 +30,7 @@ const expectedRefs = {
   B25:['237','245'], B28:['256','257']
 };
 const coreAssets = new Set(['reading-styles.js', 'dictionary-r3-20261020.js', 'edition-r3-20261020.js',
-  'source-reference-data.js', 'study-guide-data.js', 'study-guide.js']);
+  'source-reference-data.js', 'subject-index-data.js', 'subject-index.js', 'study-guide-data.js', 'study-guide.js']);
 const optionalAssets = new Set(['print.js', 'lesson-print.js', 'download-bundle.js']);
 const tests = [];
 const test = (name, work) => tests.push({name, work});

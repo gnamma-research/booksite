@@ -84,7 +84,7 @@ def standalone_fragment(full, notes, scholarly, scholarly_url):
         'This companion reproduces the complete selected dictionary articles from the scholarly edition.')
     fragment = fragment.replace(
         'Select a term below. Its section references lead back to the main text in the integrated edition. '
-        'The subject index and R/BA concordance are retained after this appendix.',
+        'The subject index precedes this dictionary; the R/BA concordance follows it.',
         'Select a term below. Its section references open the corresponding page of the online scholarly PDF. '
         'The scholarly edition also contains the analytical subject index and R/BA concordance.')
     fragment = fragment.replace(
@@ -121,7 +121,7 @@ def export(output, scholarly_metadata, scholarly_url=SCHOLARLY_URL):
     fragment, mapped = standalone_fragment(full, notes, scholarly, scholarly_url)
     counts = validate_html(fragment, full, notes)
     footer = '<div class="footer"><a href="#lexicon-directory">Term directory</a><a href="#lexicon-sources">Sources</a><a href="#lexicon-relations">Headword relations</a></div>'
-    cover = '<section class="cover"><div class="brand">GNAMMA RESEARCH</div><p class="arabic-title" lang="ar">الضَّرُورِيُّ فِي أُصُولِ الْفِقْهِ</p><h1>Historical Lexicon</h1><p class="author">A companion to Ibn Rushd’s<br><i>Al-Ḍarūrī fī Uṣūl al-Fiqh</i></p><p class="edition">Complete selected historical dictionary articles</p><p class="scope">153 term dossiers · 157 full articles · 8 dictionaries<br>Arabic and full working English translations<br>13 source notes · source records · headword-relation audit</p><p class="date">20 October 2026 · Source-reference revision</p><p class="small" style="text-align:center"><a href="#lexicon-directory">Term directory</a> · <a href="' + html.escape(scholarly_url + '#page=1', quote=True) + '">Scholarly edition ↗</a></p></section>'
+    cover = '<section class="cover"><div class="brand">GNAMMA RESEARCH</div><p class="arabic-title" lang="ar">الضَّرُورِيُّ فِي أُصُولِ الْفِقْهِ</p><h1>Historical Lexicon</h1><p class="author">A companion to Ibn Rushd’s<br><i>Al-Ḍarūrī fī Uṣūl al-Fiqh</i></p><p class="edition">Complete selected historical dictionary articles</p><p class="scope">153 term dossiers · 157 full articles · 8 dictionaries<br>Arabic and full working English translations<br>13 source notes · source records · headword-relation audit</p><p class="date">20 October 2026 · Structure and contents revision</p><p class="small" style="text-align:center"><a href="#lexicon-directory">Term directory</a> · <a href="' + html.escape(scholarly_url + '#page=1', quote=True) + '">Scholarly edition ↗</a></p></section>'
     css = MAIN_TEXT_CSS + '\n' + LEXICON_CSS + '\n' + (ROOT / 'styles.css').read_text()
     document_html = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="Gnamma Research"><meta name="description" content="Complete selected historical dictionary articles with full Arabic and English texts and source notes"><title>Historical Lexicon · Al-Ḍarūrī</title><style>' + css + '</style></head><body>' + footer + cover + fragment + '</body></html>'
     output.mkdir(parents=True, exist_ok=True)

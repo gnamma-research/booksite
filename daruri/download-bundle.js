@@ -5,8 +5,8 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "daruri6-sources-20261020";
-  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "download-bundle.js", "pdf-editions-manifest.json", "sw.js", "daruri-study-guide.pdf", "study-guide-data.js", "study-guide.js"]);
+  const RELEASE_VERSION = "daruri8-structure-20261020";
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "download-bundle.js", "pdf-editions-manifest.json", "sw.js"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -101,6 +101,11 @@
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
+      ['daruri/reader-structure.css', 'reader-structure.css?v=20261020-structure1'],
+      ['daruri/subject-index.css', 'subject-index.css?v=20261020-structure1'],
+      ['daruri/subject-index-data.js', 'subject-index-data.js?v=20261020-structure1'],
+      ['daruri/subject-index.js', 'subject-index.js?v=20261020-structure1'],
+      ['daruri/subject-index-data.json', 'subject-index-data.json?v=20261020-structure1'],
       ['daruri/reading-styles.css', 'reading-styles.css'],
       ['daruri/reading-styles.js', 'reading-styles.js'],
       ['daruri/compact-menu.css', 'compact-menu.css'],
@@ -132,19 +137,19 @@
       ['daruri/icon-192.png', 'icon-192.png'],
       ['daruri/icon-512.png', 'icon-512.png'],
       ['daruri/dictionary.html', 'dictionary.html'],
-      ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js'],
-      ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js'],
-      ['daruri/source-reference-data.js', 'source-reference-data.js?v=daruri7-notes-20261020'],
-      ['daruri/download-bundle.js', 'download-bundle.js'],
+      ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri8-structure-20261020'],
+      ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=daruri8-structure-20261020'],
+      ['daruri/source-reference-data.js', 'source-reference-data.js?v=daruri8-structure-20261020'],
+      ['daruri/download-bundle.js', 'download-bundle.js?v=daruri8-structure-20261020'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
       ['daruri/study-guide.css', 'study-guide.css'],
       ['daruri/print.css', 'print.css'],
       ['daruri/print.js', 'print.js'],
       ['daruri/lesson-print.js', 'lesson-print.js'],
-      ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json'],
+      ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js'],
+      ['daruri/sw.js', 'sw.js?v=daruri8-structure-20261020'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
@@ -156,12 +161,12 @@
     // Include all five published reading editions even when a sidebar is hidden.
     // The Bou Akl variant report is supplementary; discover other on-site PDF links.
     const pdfs = new Map([
-      ['daruri/daruri.pdf', 'daruri.pdf'],
-      ['daruri/daruri-arabic.pdf', 'daruri-arabic.pdf'],
-      ['daruri/daruri-english.pdf', 'daruri-english.pdf'],
-      ['daruri/daruri-study.pdf', 'daruri-study.pdf'],
+      ['daruri/daruri.pdf', 'daruri.pdf?v=daruri8-structure-20261020'],
+      ['daruri/daruri-arabic.pdf', 'daruri-arabic.pdf?v=daruri8-structure-20261020'],
+      ['daruri/daruri-english.pdf', 'daruri-english.pdf?v=daruri8-structure-20261020'],
+      ['daruri/daruri-study.pdf', 'daruri-study.pdf?v=daruri8-structure-20261020'],
       ['daruri/daruri-study-guide.pdf', 'daruri-study-guide.pdf'],
-      ['daruri/daruri-arabic-vowelled.pdf', 'daruri-arabic-vowelled.pdf'],
+      ['daruri/daruri-arabic-vowelled.pdf', 'daruri-arabic-vowelled.pdf?v=daruri8-structure-20261020'],
       ['daruri/bou-akl-2015-variant-report.pdf', 'bou-akl-2015-variant-report.pdf']
     ]);
     for (const link of document.querySelectorAll('a[href]')) {

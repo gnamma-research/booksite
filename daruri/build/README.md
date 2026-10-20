@@ -1,6 +1,6 @@
 # Daruri PDF source-reference build
 
-This build uses the current `edition-r3-20261020.js` reader payload as its authoritative text. It produces the scholarly bilingual, study bilingual, English, Arabic and fully vowelled Arabic PDFs. It retains the two scholarly contents routes, the separate colophon, the existing applications and indexes, and the complete selected historical dictionary articles.
+This build uses the current `edition-r3-20261020.js` reader payload as its authoritative text. It produces the scholarly bilingual, study bilingual, English, Arabic and fully vowelled Arabic PDFs. All five editions have a compact contents list based on the 46 recorded headings. The scholarly bilingual, study bilingual and English editions also contain a clearly labelled editorial guide to all 258 reading units; the Arabic editions do not. Full editorial section descriptions are confined to that guide and its separate bookmark branch, while recorded rubrics govern the reading text. The separate colophon, applications, indexes and complete selected historical dictionary articles are retained.
 
 ## Citation policy
 
@@ -49,3 +49,13 @@ Fetch the latest `master` before publishing and preserve concurrent reader and s
 Do not infer a page map from a constant offset. The scholarly PDF is the default reference target. Keep its metadata, all 565 static PDF destinations and all 259 dynamic section destinations together in the same release.
 
 When the teaching companion has also changed, pass `--refresh-study-companion` to the release updater. This explicitly checks the installed companion against `daruri/study/companion-metadata.json`, refreshes its manifest identity and the changed guide asset URLs, and preserves newer print and stylesheet assets. Use the same flag for the final `--check`.
+
+## Source structure and compact contents
+
+The source parent map is the prose-aware hierarchy documented in `qa/ORIGINAL_HEADINGS.md`. A custom PDF outline uses the exact section-anchor coordinates; source parts and subdivisions are primary, the later colophon is separate, and editorial reading titles form a separately identified branch only in editions with English. Arabic editions use Arabic source headings in their outline. Guide subheads no longer compete with main divisions.
+
+The two contents lists use compact two-column typography. The first translates the recorded headings in English-containing editions; the Arabic editions print the Arabic rubrics. The second contains all numbered editorial titles with an explicit attribution. Original parts and detailed reading titles are different finding aids to the same preserved text.
+
+The subject index precedes the dictionary. A compact subject-group guide uses the same `subject-index-data.json` taxonomy as the website; its example links lead to alphabetical entries or, in the basic study index, directly to passages. All PDF text is black with white backgrounds and fine rules. Existing source-note inclusion rules remain unchanged.
+
+Metadata records the source and editorial contents page ranges, validates 46 source-outline entries and 258 editorial entries where applicable, and preserves all259 exact section destinations for website remapping.

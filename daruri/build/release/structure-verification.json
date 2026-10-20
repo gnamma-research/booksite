@@ -1,0 +1,106 @@
+{
+  "release": "daruri8-structure-20261020",
+  "editions": [
+    {
+      "filename": "daruri.pdf",
+      "pages": 243,
+      "source_headings": 46,
+      "visible_source_destinations": 47,
+      "editorial_titles": 258,
+      "contents_pages": {
+        "original": [
+          3
+        ],
+        "editorial": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "all_text_black": true,
+      "images": 0,
+      "out_of_page_spans": 0,
+      "ok": true
+    },
+    {
+      "filename": "daruri-study.pdf",
+      "pages": 131,
+      "source_headings": 46,
+      "visible_source_destinations": 47,
+      "editorial_titles": 258,
+      "contents_pages": {
+        "original": [
+          3
+        ],
+        "editorial": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "all_text_black": true,
+      "images": 0,
+      "out_of_page_spans": 0,
+      "ok": true
+    },
+    {
+      "filename": "daruri-english.pdf",
+      "pages": 97,
+      "source_headings": 46,
+      "visible_source_destinations": 47,
+      "editorial_titles": 258,
+      "contents_pages": {
+        "original": [
+          3
+        ],
+        "editorial": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "all_text_black": true,
+      "images": 0,
+      "out_of_page_spans": 0,
+      "ok": true
+    },
+    {
+      "filename": "daruri-arabic.pdf",
+      "pages": 73,
+      "source_headings": 46,
+      "visible_source_destinations": 47,
+      "editorial_titles": 0,
+      "contents_pages": {
+        "original": [
+          3
+        ],
+        "editorial": []
+      },
+      "all_text_black": true,
+      "images": 0,
+      "out_of_page_spans": 0,
+      "ok": true
+    },
+    {
+      "filename": "daruri-arabic-vowelled.pdf",
+      "pages": 69,
+      "source_headings": 46,
+      "visible_source_destinations": 47,
+      "editorial_titles": 0,
+      "contents_pages": {
+        "original": [
+          3
+        ],
+        "editorial": []
+      },
+      "all_text_black": true,
+      "images": 0,
+      "out_of_page_spans": 0,
+      "ok": true
+    }
+  ],
+  "ok": true
+}

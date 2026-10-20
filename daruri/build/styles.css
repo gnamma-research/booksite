@@ -112,3 +112,63 @@ bdi{unicode-bidi:isolate}
 .lexicon .lex-term-ar,.lexicon .lex-headword-ar,.lexicon .lex-inline-ar{font-family:"Noto Naskh Arabic"}
 .lexicon .lex-en{font-size:9.6pt;line-height:1.39}
 .lexicon .lex-source-notes{break-inside:auto}
+
+/* Source-structured, low-ink reading editions. The editorial section labels
+   belong to their compact finding aid, not to the authorial reading text. */
+*{color:#000!important;background:transparent!important;box-shadow:none!important;text-shadow:none!important}
+@page{
+ @top-left{color:#000}
+ @top-right{color:#000}
+ @bottom-right{color:#000}
+ @footnote{border-top:.45pt solid #000}
+}
+.guide h2{bookmark-level:2;margin-top:12pt}
+.guide p{font-size:9.2pt;line-height:1.42;margin-bottom:6pt}
+.guide.ar-guide p{font-size:12.5pt;line-height:1.6}
+.contents h1{font-size:18pt;margin-bottom:8pt}
+.contents p{font-size:8.5pt;line-height:1.35;margin-bottom:8pt}
+.toc-columns{column-gap:21pt}
+.toc-item{margin-bottom:2.3pt}
+.toc-link{font:9pt/1.25 "Noto Sans","Noto Naskh Arabic";margin:0}
+.toc-link::after{font-size:8pt}
+.original-toc .toc-link{font-size:9pt;margin:0;line-height:1.3}
+.original-toc .toc-item{padding-left:calc(var(--depth,0)*8pt);margin-bottom:4.8pt}
+.original-toc .toc-root{font-weight:700;margin-top:5pt;padding-left:0}
+.original-toc .toc-root .toc-link{font-weight:700}
+.toc-ref{font-size:7.7pt;font-weight:400;white-space:nowrap}
+.toc-part{font-size:9pt;line-height:1.25;margin:8pt 0 4pt}
+.editorial-toc .toc-item{margin-bottom:2.4pt}
+.editorial-toc .toc-link{font-size:9pt;line-height:1.22}
+.contents-reference{margin-top:12pt;border-top:.45pt solid #000;padding-top:7pt;break-inside:avoid}
+.contents-reference h2{font-size:10pt;margin:0 0 7pt;bookmark-level:none}
+.reference-columns{column-count:2;column-gap:21pt}
+.reference-columns .toc-link{font-size:8.2pt}
+.contents .contents-follow{margin-top:10pt;font-size:8pt}
+.ar-toc .toc-columns{direction:rtl}
+.ar-toc .toc-item{padding-left:0;padding-right:calc(var(--depth,0)*8pt);margin-bottom:5pt}
+.ar-toc .toc-link{font:11.5pt/1.35 "Noto Naskh Arabic";direction:rtl;text-align:right}
+.ar-toc .toc-root .toc-link{font-weight:700}
+.ar-toc .toc-ref{font:7.7pt "Noto Sans";direction:ltr;unicode-bidi:isolate}
+.ar-toc h1,.ar-toc p{font-family:"Noto Naskh Arabic";direction:rtl;text-align:right}
+.ar-toc p{font-size:11.5pt;line-height:1.5}
+.main-text .part-divider{margin-bottom:10pt}
+.main-text .part-label{font:8pt "Noto Sans","Noto Naskh Arabic";letter-spacing:.06em;string-set:running-title content();margin:0 0 9pt;padding-bottom:5pt;border-bottom:.45pt solid #000}
+.main-text .part-label[lang=ar]{letter-spacing:0;font-size:10.5pt}
+.main-text .text-section{margin-bottom:9pt}
+.main-text .editorial-meta{font:7.3pt/1.3 "Noto Sans","Noto Naskh Arabic";margin:0 0 5pt;break-after:avoid}
+.main-text .original-heading{margin:12pt 0 7pt;padding-top:6pt;border-top:.45pt solid #000;break-after:avoid}
+.main-text .source-part-heading{border-top:0;padding-top:0;margin-top:0}
+.main-text .original-heading .source-heading.english{font:600 12pt/1.3 "Noto Serif","Noto Naskh Arabic"}
+.main-text .original-heading .source-heading.arabic{font:600 16pt/1.5 "Noto Naskh Arabic"}
+.main-text .source-part-heading .source-heading.english{font-size:16pt}
+.main-text .source-part-heading .source-heading.arabic{font-size:19pt}
+.main-text .heading-parallel{margin-bottom:0}
+.main-text .heading-parallel td{padding-bottom:0}
+.main-text .colophon-title{font-size:17pt}
+.main-text .colophon .original-heading{border-top:0}
+.subject-guide{margin:8pt 0 12pt;column-count:2;column-gap:21pt}
+.subject-guide article{break-inside:avoid;margin-bottom:8pt}
+.subject-guide h3{font:600 9pt/1.3 "Noto Sans";margin:0 0 2pt;bookmark-level:none}
+.subject-guide p{font:8pt/1.35 "Noto Sans","Noto Naskh Arabic";margin:0 0 3pt}
+.subject-guide .subject-links{font-size:7.7pt}
+.index-alphabetical-title{font-size:12pt;margin:12pt 0 8pt;bookmark-level:2}

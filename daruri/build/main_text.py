@@ -358,19 +358,23 @@ class _Renderer:
             if value is None:
                 return ''
             cls, lang, direction = ('english', 'en', 'ltr') if language == 'en' else ('arabic', 'ar', 'rtl')
+            primary = self.ar_field if self.bilingual else ('en' if self.edition == 'english' else self.ar_field)
+            anchor = f'section-{key}' if language == primary else f'heading-{key}-{language}'
+            alias = f'<span id="heading-{key}-{language}"></span>' if language == primary else ''
             return (
-                f'<p class="source-heading {cls}" id="heading-{key}-{language}" '
+                f'<p class="source-heading {cls}" id="{anchor}" '
                 f'data-source-role="heading" data-section-id="{key}" data-language="{language}" '
-                f'lang="{lang}" dir="{direction}">{escape(str(value))}</p>'
+                f'lang="{lang}" dir="{direction}">{alias}{escape(str(value))}</p>'
             )
-        label = '<div class="source-heading-label">Source heading</div>'
+        label = ''
         if self.bilingual:
             inner = ('<table class="parallel-text heading-parallel"><tbody><tr>'
                      f'<td class="arabic">{text(self.ar_field)}</td><td class="english">{text("en")}</td>'
                      '</tr></tbody></table>')
         else:
             inner = text('en' if self.edition == 'english' else self.ar_field)
-        return f'<div class="original-heading">{label}{inner}</div>'
+        root = ' source-part-heading' if key in {'10', '62', '148', '230'} else ''
+        return f'<div class="original-heading{root}">{label}{inner}</div>'
 
     def _source_apparatus(self, section: dict) -> str:
         if self.edition != 'scholarly':
@@ -419,8 +423,8 @@ class _Renderer:
     def _metadata(self, section: dict) -> str:
         key = _section_key(section['id'])
         if key == 'colophon':
-            return 'Later copyist and owner · separate from Ibn Rushd’s authorial conclusion'
-        parts = [f'Editorial divisions: R {key}']
+            return ('قيد الناسخ والمالك؛ منفصل عن متن المؤلف' if self.edition.startswith('arabic') else 'Later copyist and owner · separate from Ibn Rushd’s authorial conclusion')
+        parts = [f'R {key}']
         ba = section.get('bouAkl')
         if ba and ba.get('start') is not None:
             begin, end = ba['start'], ba.get('end', ba['start'])
@@ -442,25 +446,28 @@ class _Renderer:
             part_key = _section_key(section.get('part', ''))
             if key != 'colophon' and part_key != current_part and part_key in parts:
                 part = parts[part_key]
+                labels = (['النص الافتتاحي', 'الجزء الأول', 'الجزء الثاني', 'الجزء الثالث', 'الجزء الرابع']
+                          if self.edition.startswith('arabic') else ['Opening discussion', 'Part I', 'Part II', 'Part III', 'Part IV'])
+                language = 'ar' if self.edition.startswith('arabic') else 'en'
                 output.append(
                     f'<header class="part-divider" id="part-{escape(part_key, quote=True)}">'
-                    f'<h1>{escape(str(part.get("label", "")))}</h1>'
-                    f'<p class="part-caption">{escape(str(part.get("caption", "")))}</p>'
-                    f'<p class="part-description">{escape(str(part.get("desc", "")))}</p></header>'
+                    f'<p class="part-label" lang="{language}">{labels[int(part_key)]}</p></header>'
                 )
                 current_part = part_key
             colophon = ' colophon' if key == 'colophon' else ''
             alias = 'R' + key if key.isdigit() else 'colophon'
             section_break = ' style="break-before: page"' if f'{key}:0' in self.footnote_breaks else ''
-            output.append(f'<section class="text-section{colophon}" id="section-{key}" data-section-id="{key}"{section_break}>')
+            output.append(f'<section class="text-section{colophon}" data-section-id="{key}"{section_break}>')
             output.append(f'<a class="anchor-alias" id="{alias}"></a>')
-            prefix = f'{key}. ' if key.isdigit() else ''
+            if key == 'colophon':
+                record_label = 'خاتمة الناسخ وقيد الملكية' if self.edition.startswith('arabic') else 'Later copyist’s colophon and ownership notice'
+                output.append(f'<h1 class="colophon-title">{record_label}</h1>')
+            output.append(self._source_heading(section))
+            marker_anchor = f' id="section-{key}"' if not section.get('headingAr') and not section.get('headingEn') else ''
             output.append(
                 '<header class="section-header">'
-                f'<h2 class="editorial-title">{escape(prefix + str(section.get("title", "")))}</h2>'
-                f'<p class="editorial-meta">{escape(self._metadata(section))}</p></header>'
+                f'<p class="editorial-meta"{marker_anchor}>{escape(self._metadata(section))}</p></header>'
             )
-            output.append(self._source_heading(section))
             if self.bilingual and self.edition != 'study':
                 output.append('<table class="parallel-text"><tbody>')
             for index, _ in enumerate(section['segments']):

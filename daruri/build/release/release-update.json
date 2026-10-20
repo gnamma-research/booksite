@@ -1,0 +1,67 @@
+{
+  "revision": "daruri8-structure-20261020",
+  "pdfs": {
+    "daruri.pdf": {
+      "pages": 243,
+      "size_bytes": 2660384,
+      "sha256": "5fcedd45daeac5b9b08ef1fdd8517c06d223c11c873b051a5d27322dfa33dab3",
+      "installed_matches": true
+    },
+    "daruri-study.pdf": {
+      "pages": 131,
+      "size_bytes": 1513503,
+      "sha256": "0e72c8670dd698c25a989a35ee487c8c5218ac19ca072edba5b4cbcc55bbb6bc",
+      "installed_matches": true
+    },
+    "daruri-english.pdf": {
+      "pages": 97,
+      "size_bytes": 831971,
+      "sha256": "adcb955e4e4140408898e8ec94cd2e6a8b5fd27355cf53d40ba79f4e9d829ead",
+      "installed_matches": true
+    },
+    "daruri-arabic.pdf": {
+      "pages": 73,
+      "size_bytes": 531748,
+      "sha256": "a3a7ec0e87cff9e858f1cf1ce390503b517c00b53ed3d08f9a467a464a1728d7",
+      "installed_matches": true
+    },
+    "daruri-arabic-vowelled.pdf": {
+      "pages": 69,
+      "size_bytes": 833252,
+      "sha256": "18c75ac09f91d5f0e308d0ab7f55e449738a095816af74b526a43db1e3e823c8",
+      "installed_matches": true
+    }
+  },
+  "companion_pages_preserved": 85,
+  "study_companion": {
+    "bytes": 568637,
+    "sha256": "69f8bd820f1f48ce9c1f168986e4ce36532698030992a715936a806fc000dc80",
+    "pages": 85,
+    "refreshed": false
+  },
+  "static_destinations": 565,
+  "static_heading_destinations": 259,
+  "static_contents_destinations": 306,
+  "static_page_numbers_changed": 0,
+  "download_panels": 2,
+  "download_links": 10,
+  "study_fallback_levels_preserved": 84,
+  "dynamic_destinations": 259,
+  "dynamic_page_numbers_changed": 0,
+  "notes_preserved": 628,
+  "files_needing_update": [],
+  "all_installed_pdfs_match": true,
+  "ready": true,
+  "mode": "apply",
+  "files_written": [
+    "download-bundle.js"
+  ],
+  "files_updated": [
+    {
+      "path": "download-bundle.js",
+      "before_sha256": "4ebe30938bc1af3eb4700592adfd4452217d56e37fdce71287b2d4b5fb7ddd52",
+      "after_sha256": "c80c51bd3aff4f85df98579fb1dab8c36a17ad73362637954c3fdd2de615de20",
+      "size_bytes": 13462
+    }
+  ]
+}

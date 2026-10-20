@@ -34,7 +34,7 @@ import tempfile
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 
-DEFAULT_REVISION = "daruri6-sources-20261020"
+DEFAULT_REVISION = "daruri8-structure-20261020"
 EDITION_JS = "edition-r3-20261020.js"
 TARGETS = ("index.html", EDITION_JS, "pdf-editions-manifest.json", "download-bundle.js", "sw.js")
 EDITIONS = {
@@ -289,8 +289,13 @@ def contents_pages(info):
     require(starts and starts[-1][0] == "main-text", "Metadata missing main-text anchor")
     labels = {"contents": "part_overview", "original-contents": "original_headings", "editorial-contents": "editorial_section_titles"}
     result = {}
-    for (key, start), (_, end) in zip(starts, starts[1:]):
-        require(1 <= start < end <= info["pages"], "Invalid contents-page anchor order")
+    require(all(a[1] <= b[1] for a, b in zip(starts, starts[1:])), "Invalid contents-page anchor order")
+    # The compact source contents also carries the part/reference overview.
+    # Its two named anchors may therefore share a physical page. Both labels
+    # identify that same range, ending at the next distinct contents/body page.
+    for i, (key, start) in enumerate(starts[:-1]):
+        end = next((page for _, page in starts[i + 1:] if page > start), None)
+        require(end is not None and 1 <= start < end <= info["pages"], "Invalid contents-page anchor range")
         result[labels[key]] = list(range(start, end))
     return result
 
@@ -300,11 +305,12 @@ def update_manifest(source, metadata, revision, edition_date, companion=None):
     original_companions = copy.deepcopy(manifest.get("companions"))
     require(set(manifest["files"]) == set(EDITIONS), "Manifest must contain exactly the five reading editions")
     manifest["edition_date"] = edition_date
-    manifest["source"] = "daruri6: Qur’an source notes in all five reading editions; hadith source notes in the scholarly edition"
+    manifest["source"] = "daruri8: source-based contents and bookmarks in all five editions; compact editorial section guides in scholarly, study and English editions; subject index before dictionary"
+    manifest["citation_policy"] = "Qur’an source notes in all five reading editions; hadith source notes in the scholarly edition; original scholarly and study-note selections preserved"
     manifest["release_revision"] = revision
     manifest["generator"] = "daruri/build/build_editions.py"
     manifest["navigation_revision"] = revision
-    manifest["navigation_note"] = "Reader PDF destinations are remapped by stable section ID from the rebuilt scholarly PDF's verified section anchors. Original headings and editorial section titles remain distinct contents lists. The separate study-guide companion is recorded under companions with its current verified identity."
+    manifest["navigation_note"] = "Reader PDF destinations are remapped by stable section ID from the rebuilt scholarly PDF's verified section anchors. All five editions have source-based contents and hierarchical bookmarks; scholarly, bilingual study and English editions also have explicitly editorial numbered section guides. Arabic editions use Arabic structural navigation. The later colophon is separate. The unchanged three-level study-guide companion is recorded under companions."
     for filename, info in metadata.items():
         row = manifest["files"][filename]
         if row.get("source_filename") != filename:
@@ -341,6 +347,14 @@ def update_bundle(source, revision, assets=RELEASE_ASSETS):
     if old + stamp not in source:
         require(source.count(old) == 1, "Offline bundle readFile signature changed")
         source = source.replace(old, old + stamp, 1)
+    # Keep the explicit fetch URLs in sourceFiles() aligned with the reader and
+    # worker as well as the runtime override. Archive entry names stay stable.
+    def source_asset(match):
+        archive, fetch = match[1], match[2]
+        if urlsplit(fetch).path not in assets:
+            return match[0]
+        return "['" + archive + "', '" + versioned_url(fetch, revision) + "']"
+    source = re.sub(r"\['(daruri/[^']+)',\s*'([^']+)'\]", source_asset, source)
     return source
 
 

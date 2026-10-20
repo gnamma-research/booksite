@@ -1,31 +1,29 @@
 {
   "edition_date": "2026-10-20",
-  "source": "daruri6: Qur’an source notes in all five reading editions; hadith source notes in the scholarly edition",
+  "source": "daruri8: source-based contents and bookmarks in all five editions; compact editorial section guides in scholarly, study and English editions; subject index before dictionary",
   "default_pdf": "daruri.pdf",
   "files": {
     "daruri.pdf": {
       "title": "Bilingual reference",
       "source_filename": "daruri.pdf",
-      "sha256": "bb146b0390978178977b66b1cbbdc7b5adb206b63e262b5cdd1319797474e5b8",
-      "size_bytes": 2417632,
-      "pages": 254,
+      "sha256": "5fcedd45daeac5b9b08ef1fdd8517c06d223c11c873b051a5d27322dfa33dab3",
+      "size_bytes": 2660384,
+      "pages": 243,
       "default_for_text_links": true,
-      "source_sha256": "bb146b0390978178977b66b1cbbdc7b5adb206b63e262b5cdd1319797474e5b8",
+      "source_sha256": "5fcedd45daeac5b9b08ef1fdd8517c06d223c11c873b051a5d27322dfa33dab3",
       "body_page_destinations_preserved": false,
       "contents_pages": {
         "part_overview": [
           3
         ],
         "original_headings": [
-          4,
-          5
+          3
         ],
         "editorial_section_titles": [
+          4,
+          5,
           6,
-          7,
-          8,
-          9,
-          10
+          7
         ]
       },
       "baseline_source": {
@@ -36,11 +34,11 @@
     "daruri-study.pdf": {
       "title": "Bilingual study",
       "source_filename": "daruri-study.pdf",
-      "sha256": "f20a83c415e763f89fea20304bdd0901780f4e1c4c0fa3c2b10ae617158db12c",
-      "size_bytes": 1295948,
-      "pages": 139,
+      "sha256": "0e72c8670dd698c25a989a35ee487c8c5218ac19ca072edba5b4cbcc55bbb6bc",
+      "size_bytes": 1513503,
+      "pages": 131,
       "default_for_text_links": false,
-      "source_sha256": "f20a83c415e763f89fea20304bdd0901780f4e1c4c0fa3c2b10ae617158db12c",
+      "source_sha256": "0e72c8670dd698c25a989a35ee487c8c5218ac19ca072edba5b4cbcc55bbb6bc",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "04_Daruri_Bilingual_Study_2026-10-20.pdf",
@@ -49,17 +47,26 @@
       "contents_pages": {
         "part_overview": [
           3
+        ],
+        "original_headings": [
+          3
+        ],
+        "editorial_section_titles": [
+          4,
+          5,
+          6,
+          7
         ]
       }
     },
     "daruri-english.pdf": {
       "title": "English reading",
       "source_filename": "daruri-english.pdf",
-      "sha256": "d6985648c5ae13ea284ea4a4f4ad2d2de37434ec6b397284db7828cab4a2b065",
-      "size_bytes": 532786,
-      "pages": 105,
+      "sha256": "adcb955e4e4140408898e8ec94cd2e6a8b5fd27355cf53d40ba79f4e9d829ead",
+      "size_bytes": 831971,
+      "pages": 97,
       "default_for_text_links": false,
-      "source_sha256": "d6985648c5ae13ea284ea4a4f4ad2d2de37434ec6b397284db7828cab4a2b065",
+      "source_sha256": "adcb955e4e4140408898e8ec94cd2e6a8b5fd27355cf53d40ba79f4e9d829ead",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "02_Daruri_English_Reading_2026-10-20.pdf",
@@ -68,17 +75,26 @@
       "contents_pages": {
         "part_overview": [
           3
+        ],
+        "original_headings": [
+          3
+        ],
+        "editorial_section_titles": [
+          4,
+          5,
+          6,
+          7
         ]
       }
     },
     "daruri-arabic.pdf": {
       "title": "Arabic reading",
       "source_filename": "daruri-arabic.pdf",
-      "sha256": "a2cccceb5aaeb5e807ea0f36ebf38034a91547345a29cfc722cac16847d1c6c6",
-      "size_bytes": 466853,
-      "pages": 80,
+      "sha256": "a3a7ec0e87cff9e858f1cf1ce390503b517c00b53ed3d08f9a467a464a1728d7",
+      "size_bytes": 531748,
+      "pages": 73,
       "default_for_text_links": false,
-      "source_sha256": "a2cccceb5aaeb5e807ea0f36ebf38034a91547345a29cfc722cac16847d1c6c6",
+      "source_sha256": "a3a7ec0e87cff9e858f1cf1ce390503b517c00b53ed3d08f9a467a464a1728d7",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "01_Daruri_Arabic_Reading_2026-10-20.pdf",
@@ -87,17 +103,20 @@
       "contents_pages": {
         "part_overview": [
           3
+        ],
+        "original_headings": [
+          3
         ]
       }
     },
     "daruri-arabic-vowelled.pdf": {
       "title": "Arabic fully vowelled",
       "source_filename": "daruri-arabic-vowelled.pdf",
-      "sha256": "f23933d9e2ccf5a9be3a01160da90e92aef633e2710708feeae5259a9ded1628",
-      "size_bytes": 818371,
-      "pages": 76,
+      "sha256": "18c75ac09f91d5f0e308d0ab7f55e449738a095816af74b526a43db1e3e823c8",
+      "size_bytes": 833252,
+      "pages": 69,
       "default_for_text_links": false,
-      "source_sha256": "f23933d9e2ccf5a9be3a01160da90e92aef633e2710708feeae5259a9ded1628",
+      "source_sha256": "18c75ac09f91d5f0e308d0ab7f55e449738a095816af74b526a43db1e3e823c8",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "Daruri_Arabic_Fully_Vowelled_2026-10-20.pdf",
@@ -105,6 +124,9 @@
       },
       "contents_pages": {
         "part_overview": [
+          3
+        ],
+        "original_headings": [
           3
         ]
       }
@@ -122,8 +144,9 @@
       "build_metadata": "study/companion-metadata.json"
     }
   },
-  "navigation_revision": "daruri6-sources-20261020",
-  "navigation_note": "Reader PDF destinations are remapped by stable section ID from the rebuilt scholarly PDF's verified section anchors. Original headings and editorial section titles remain distinct contents lists. The separate study-guide companion is recorded under companions with its current verified identity.",
-  "release_revision": "daruri6-sources-20261020",
-  "generator": "daruri/build/build_editions.py"
+  "navigation_revision": "daruri8-structure-20261020",
+  "navigation_note": "Reader PDF destinations are remapped by stable section ID from the rebuilt scholarly PDF's verified section anchors. All five editions have source-based contents and hierarchical bookmarks; scholarly, bilingual study and English editions also have explicitly editorial numbered section guides. Arabic editions use Arabic structural navigation. The later colophon is separate. The unchanged three-level study-guide companion is recorded under companions.",
+  "release_revision": "daruri8-structure-20261020",
+  "generator": "daruri/build/build_editions.py",
+  "citation_policy": "Qur’an source notes in all five reading editions; hadith source notes in the scholarly edition; original scholarly and study-note selections preserved"
 }

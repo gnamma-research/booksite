@@ -59,8 +59,8 @@ const withinClosedDetails=(node,until)=>{for(let p=node.parent;p&&p!==until;p=p.
 test('seven primary destinations stay direct and ordinary',()=>{
  const nav=byId('leftNav').find(node=>node.hasClass('primary-nav'));
  const items=nav.children.filter(node=>Object.hasOwn(node.attrs,'data-route'));
- assert.deepEqual(items.map(node=>node.attrs['data-route']),['reader','contents','study','glossary','index','applications','bookmarks']);
- const labels=['Read the text','Contents','Study guide','Dictionary','Academic index','Bidāya applications','Saved passages'];
+ assert.deepEqual(items.map(node=>node.attrs['data-route']),['reader','contents','study','index','glossary','applications','bookmarks']);
+ const labels=['Read the text','Contents','Study guide','Subject index','Dictionary','Bidāya applications','Saved passages'];
  items.forEach((node,i)=>{assert.equal(node.tag,'button');assert.equal(node.attrs.type,'button');assert.ok(node.text().startsWith(labels[i]));assert.ok(node.hasClass('nav-item'));assert.ok(!node.hasClass('primary'));});
  assert.ok(byId('leftNav').find(node=>node.attrs['data-route']==='home'));
  assert.ok(byId('leftNav').find(node=>node.attrs['data-route']==='about'));

@@ -50,53 +50,58 @@ def cover(edition):
     scopes={
       'scholarly':'Arabic and English · linguistic, textual and source notes<br>153 glossary terms · 157 complete selected historical dictionary articles',
       'study':'Arabic and English · translation and interpretive footnotes<br>Qur’an references · basic subject index',
-      'english':'Complete English translation · Qur’an footnotes<br>Bidāya applications · technical glossary · analytical subject index',
+      'english':'Complete English translation · Qur’an footnotes<br>Bidāya applications · subject index · technical dictionary',
       'arabic':'النص العربي الكامل · إحالات قرآنية في الحواشي · فهرس المصطلحات',
       'arabic-vowelled':'النص العربي المشكول كاملاً · إحالات قرآنية في الحواشي'}
-    return '<section class="cover"><div class="brand">GNAMMA RESEARCH</div><p class="arabic-title" lang="ar">الضَّرُورِيُّ فِي أُصُولِ الْفِقْهِ</p><h1>Al-Ḍarūrī fī Uṣūl al-Fiqh</h1><p class="author">Abū al-Walīd Ibn Rushd<br><span lang="ar">أبو الوليد ابن رشد</span></p><p class="edition">'+label+'</p><p class="scope">'+scopes[edition]+'</p><p class="date">20 October 2026 · Source-reference revision</p></section>'
+    return '<section class="cover"><div class="brand">GNAMMA RESEARCH</div><p class="arabic-title" lang="ar">الضَّرُورِيُّ فِي أُصُولِ الْفِقْهِ</p><h1>Al-Ḍarūrī fī Uṣūl al-Fiqh</h1><p class="author">Abū al-Walīd Ibn Rushd<br><span lang="ar">أبو الوليد ابن رشد</span></p><p class="edition">'+label+'</p><p class="scope">'+scopes[edition]+'</p><p class="date">20 October 2026 · Structure and contents revision</p></section>'
 
 def guide(edition):
     if edition.startswith('arabic'):
-      return '<section class="guide ar-guide" lang="ar" dir="rtl" id="guide"><h1>حول هذه الطبعة</h1><p>هذه نسخة عربية كاملة للقراءة. تُحفظ ألفاظ النص، ويشير الترقيم المتتابع من 1 إلى 258 إلى أقسام هذه الطبعة التحريرية. وتبيّن إحالات R وBA مقابلة ترقيم طبعة القراءة بترقيم طبعة زياد بوعقل (2015)؛ وليست هذه أرقام مخطوطين مستقلين.</p><p>التشكيل وسيلة قراءة تحريرية، ولم يُقابل المخطوط الإسكوريالي مقابلة مستقلة في إعداد هذه الطبعة. تُفصل خاتمة الناسخ وقيد الملكية عن متن المؤلف.</p><h2>الإحالات القرآنية</h2><p>تُذكر السورة ورقم الآية في حاشية موضع الاستشهاد. وتُبيّن الحاشية بإيجاز الاقتباس بالمعنى أو اللفظ المركّب أو القراءة المنقولة، حيث يلزم ذلك لفهم إحالة النص.</p><h2>كيف تقرأ الفهرس؟</h2><p>الفهرس التالي نظرة عامة إلى المقدمة وأجزاء الكتاب الأربعة وملحقاته. أسماء الأجزاء الوصفية وسائل إرشادية تحريرية. أما فهرس العناوين المثبتة في الطبعة العربية وفهرس العناوين التحريرية المفصلة في الطبعة الثنائية العلمية والموقع، فيقودان إلى النص نفسه باستعمال عناوين مختلفة.</p><p>تؤدي روابط الفهرس والعناوين والإحالات الداخلية إلى مواضعها في هذه النسخة.</p></section>'
-    shared='<p>The reading text derives from the al-ʿAlawī 1994 edition, with comparison to Bou Akl’s printed 2015 Arabic edition, French translation and apparatus. The Escorial manuscript has not been independently inspected. English translation, vocalization and descriptive headings are editorial.</p><p><b>Numbering.</b> R identifies the 258 sections of this reading edition; BA identifies Bou Akl’s 311 numbered units. They are editorial reference systems. The later copyist’s colophon and ownership notice remain separate from the authorial text.</p>'
+      return '<section class="guide ar-guide" lang="ar" dir="rtl" id="guide"><h1>حول هذه الطبعة</h1><p>هذه نسخة عربية كاملة للقراءة. تُحفظ ألفاظ النص، ويشير الترقيم المتتابع من 1 إلى 258 إلى وحدات الإحالة في هذه الطبعة. وتبيّن إحالات R وBA مقابلة ترقيم طبعة القراءة بترقيم طبعة زياد بوعقل (2015)؛ وليست هذه أرقام مخطوطين مستقلين.</p><p>التشكيل وسيلة قراءة تحريرية، ولم يُقابل المخطوط الإسكوريالي مقابلة مستقلة في إعداد هذه الطبعة. تُفصل خاتمة الناسخ وقيد الملكية عن متن المؤلف.</p><h2>الإحالات القرآنية</h2><p>تُذكر السورة ورقم الآية في حاشية موضع الاستشهاد. وتُبيّن الحاشية بإيجاز الاقتباس بالمعنى أو اللفظ المركّب أو القراءة المنقولة، حيث يلزم ذلك لفهم إحالة النص.</p><h2>الأجزاء والفصول</h2><p>يثبت الفهرس عناوين الأجزاء والفصول والمباحث الواردة في الطبعة العربية، مع بيان مراتبها. وتُذكر المقدمة غير المعنونة وخاتمة الناسخ منفصلتين. عناوين الموضوعات التحريرية المفصلة ليست جزءاً من متن المؤلف، ولا ترد في هذه الطبعة العربية.</p><p>تعتمد العلامات المرجعية على هذا البناء نفسه، وتؤدي إحالات الأقسام إلى مواضعها في هذه النسخة.</p></section>'
+    shared='<p>The reading text derives from the al-ʿAlawī 1994 edition, with comparison to Bou Akl’s printed 2015 Arabic edition, French translation and apparatus. The Escorial manuscript has not been independently inspected. English translation and vocalization are editorial.</p><p><b>Numbering.</b> R identifies this edition’s 258 reading units; BA identifies Bou Akl’s 311 numbered units. These are reference systems, not original chapter numbers. The later copyist’s colophon and ownership notice remain separate.</p>'
+    contents='<h2>Two complementary contents lists</h2><p><a href="#original-contents"><b>1. Recorded parts and chapters</b></a> translates the 46 headings in the Arabic edition and preserves their hierarchy. <a href="#editorial-contents"><b>2. Editorial section guide</b></a> gives our descriptive titles for all 258 numbered reading units. These titles are editorial aids, not headings in Ibn Rushd’s text; they are confined to the guide and its detailed bookmarks.</p><p>The body gives prominence to the recorded rubrics, with small section references for lookup. The opening discussion has no separately recorded heading. A printed rubric alone does not establish manuscript provenance.</p>'
     if edition=='scholarly':
-      body='<p>Arabic appears on the physical left and English on the right. The notes following each section distinguish textual, linguistic and interpretive discussion from <b>Qur’an source</b> and <b>Hadith source</b> references. Source parallels, shortened quotations and unresolved attributions are identified explicitly.</p>'+shared+'<h2>Full dictionary articles in the back matter</h2><p>The appendix retains 153 glossary-term dossiers and 157 complete selected historical headword or root articles, each with its full working English translation. Shared articles are printed once and cross-linked. The headword-relation audit distinguishes exact matches, derived forms, internal discussions and related lexical evidence.</p><p>“Complete” describes each selected article, not an exhaustive collection from every relevant dictionary. In particular, the compound <i>ʿumūm al-balwā</i> has related lexical support rather than a verified historical article under that exact compound. Full <i>Tāj al-ʿArūs</i> coverage and comprehensive <i>Kashshāf</i> or <i>Lisān</i> coverage are not claimed. Translations remain editorial working translations; source difficulties retain their existing qualifications.</p><h2>Two contents lists, one text</h2><p>The short overview maps the parts and reference sections. The <a href="#original-contents">original-heading contents</a> reproduce the 46 headings recorded in the Arabic edition, with their existing English translations. The <a href="#editorial-contents">editorial contents</a> supply descriptive titles for all 258 sections. Both lead to the same text. A printed heading is not, by itself, proof of manuscript provenance.</p><p>The running footer links to Contents, the historical lexicon and the analytical subject index. Dictionary occurrence links return to the exact section; the R/BA concordance preserves the printed Arabic edition references.</p>'
+      body='<p>Arabic appears on the physical left and English on the right. Notes distinguish textual, linguistic and interpretive discussion from <b>Qur’an source</b> and <b>Hadith source</b> references. Source parallels, shortened quotations and unresolved attributions remain qualified.</p>'+shared+contents+'<h2>Reference tools</h2><p>The subject index precedes the historical dictionary. The dictionary retains 153 term dossiers and 157 selected complete historical articles with full working English translations. Shared articles are printed once. Its source-control and headword-relation sections distinguish exact matches, derived forms and related evidence.</p><p>“Complete” describes each selected article, not exhaustive coverage of every dictionary. In particular, <i>ʿumūm al-balwā</i> has related lexical support, not a verified historical article under that exact compound. Comprehensive <i>Tāj al-ʿArūs</i>, <i>Kashshāf</i> and <i>Lisān</i> coverage is not claimed. Translations remain editorial working translations.</p>'
     elif edition=='study':
-      body='<p>Arabic appears on the physical left and English on the right. Read continuously or use the linked overview and section bookmarks. Simple section numbers are accompanied by smaller R/BA references for comparison with the scholarly edition.</p>'+shared+'<h2>Footnotes</h2><p>Translation and interpretive notes appear as numbered page footnotes. Qur’an references share the same footnote sequence; corresponding Arabic and English quotations use one reference. Short wording qualifications identify a paraphrase, a combined quotation or a reported reading where necessary.</p><h2>Contents and index</h2><p>This edition has a short overview of parts and a basic subject index. The scholarly edition and website also offer two detailed routes: headings recorded in the Arabic edition and modern descriptive section titles. Those routes organize the same text differently.</p>'
+      body='<p>Arabic appears on the physical left and English on the right. Read continuously, follow the recorded chapters, or use the compact editorial section guide to locate a particular discussion.</p>'+shared+contents+'<h2>Footnotes and subject index</h2><p>Translation and interpretive notes appear as numbered page footnotes. Qur’an references share that sequence; corresponding Arabic and English quotations use one note. Wording qualifications identify paraphrases, combined quotations and reported readings where necessary.</p><p>A compact subject guide and basic alphabetical index provide further routes into the text.</p>'
     else:
-      body='<p>This edition presents the complete English translation in a continuous reading format. The introduction and four main parts are followed by illustrative Bidāya applications, a technical glossary and the analytical subject index.</p>'+shared+'<h2>Qur’an references</h2><p>Numbered page footnotes identify quoted verses and explicit Qur’an references. Brief qualifications preserve the difference between the verse itself and Ibn Rushd’s paraphrase, combined wording or discussion of a reported reading.</p><h2>Contents</h2><p>The overview is a short map of the work. Descriptive part and section titles are editorial aids. The scholarly edition and website additionally distinguish the headings recorded in the Arabic edition from the descriptive titles of all 258 reading sections; both routes lead to the same text.</p>'
+      body='<p>This edition presents the complete English translation. The text is followed by illustrative Bidāya applications, a subject index and a technical dictionary.</p>'+shared+contents+'<h2>Qur’an references</h2><p>Numbered page footnotes identify quoted verses and explicit Qur’an references. Qualifications distinguish the verse itself from paraphrase, combined wording or a reported reading.</p>'
     return '<section class="guide" id="guide"><div class="kicker">GNAMMA RESEARCH · '+E(NAMES[edition][1].upper())+'</div><h1>Guide to this edition</h1>'+body+'</section>'
 
-def overview(book,edition):
-    ar=edition.startswith('arabic'); title='نظرة عامة إلى أقسام الكتاب' if ar else 'Overview of parts'
-    out=['<section class="contents" id="contents"><h1>'+title+'</h1>']
-    if not ar:out.append('<p>A short map of the introduction, four main parts and reference sections. Descriptive part labels are editorial.</p>')
-    out.append('<ol class="overview-list">')
-    for p in book['parts']:
-      label=PART_AR[p['id']] if ar else p['label']
-      out.append(f'<li><a class="toc-link" href="#section-{p["start"]}">{E(label)}</a>')
-      if not ar:out.append('<span class="small">'+E(p['desc'])+'</span>')
-      out.append('</li>')
-    items=[('section-colophon','خاتمة الناسخ وقيد الملكية' if ar else 'Copyist’s colophon and ownership notice')]
+def reference_items(edition):
+    ar=edition.startswith('arabic')
+    items=[]
     if edition in ['scholarly','english']:items.append(('applications','Applications in the Bidāyat al-mujtahid'))
-    if edition=='scholarly':items.extend([('lexicon-introduction','Historical dictionary articles'),('lexicon-sources','Dictionaries and source control'),('lexicon-relations','Headword-relation audit'),('subject-index','Analytical subject index'),('concordance','R/BA textual reference concordance')])
-    elif edition=='english':items.extend([('glossary','Technical glossary'),('subject-index','Analytical subject index')])
+    if edition=='scholarly':items.extend([('subject-index','Subject index'),('lexicon-introduction','Historical dictionary'),('lexicon-sources','Dictionary sources'),('lexicon-relations','Headword-relation audit'),('concordance','R/BA concordance')])
+    elif edition=='english':items.extend([('subject-index','Subject index'),('glossary','Technical dictionary')])
     elif edition=='study':items.append(('subject-index','Basic subject index'))
     elif edition=='arabic':items.append(('glossary','فهرس المصطلحات'))
-    for dest,label in items:out.append(f'<li><a class="toc-link" href="#{dest}">{E(label)}</a></li>')
-    out.append('</ol>')
-    if edition=='scholarly':out.append('<p><a href="#original-contents">Original headings</a> · <a href="#editorial-contents">Editorial section titles</a></p>')
-    out.append('</section>');return ''.join(out)
+    return items
 
-def detailed_contents(book):
-    out=['<section class="contents original-toc" id="original-contents"><h1>Original headings</h1><p>The 46 headings recorded in the Arabic edition, in the established hierarchy. Unheaded opening text and the later scribal record are identified separately. These entries preserve the printed rubrics and their existing translations.</p><p><a href="#editorial-contents">Use editorial section titles instead</a> · <a href="#contents">Overview</a></p><div class="toc-columns"><div class="toc-item"><a class="toc-link" href="#section-1">§§1–9 · Opening text (navigation aid)</a></div>']
+def detailed_contents(book,edition):
+    ar=edition.startswith('arabic')
+    title='فهرس الأجزاء والفصول' if ar else 'Contents 1 · Recorded parts and chapters'
+    desc=('العناوين المثبتة في الطبعة العربية، مرتبة بحسب أجزاء الكتاب وتقسيماته. الأرقام إحالات إلى وحدات هذه الطبعة، وليست ترقيم الفصول الأصلي.' if ar else 'The headings recorded in the Arabic edition, translated in their established hierarchy. Section references identify this edition’s reading units; they are not original chapter numbers.')
+    opening='النص الافتتاحي غير المعنون' if ar else 'Opening discussion (unheaded)'
+    colophon='خاتمة الناسخ وقيد الملكية' if ar else 'Later copyist’s colophon and ownership notice'
+    lang=' lang="ar" dir="rtl"' if ar else ''
+    out=[f'<section class="contents original-toc{ " ar-toc" if ar else ""}" id="contents"{lang}><a id="original-contents"></a><h1>{title}</h1><p>{desc}</p><div class="toc-columns"><div class="toc-item toc-root"><a class="toc-link" href="#section-1">{E(opening)} <span class="toc-ref">(§§1–9)</span></a></div>']
     for s in book['sections']:
       if not isinstance(s['id'],int) or not s.get('headingAr'):continue
       n=s['id'];depth=0;par=PARENTS.get(n)
       while par is not None:depth+=1;par=PARENTS.get(par)
-      out.append(f'<div class="toc-item" style="--depth:{depth}"><a class="toc-link" href="#section-{n}">§{n} · {E(s.get("headingEn") or "")}</a><span class="toc-ar" lang="ar">{E(s["headingAr"])}</span></div>')
-    out.append('<div class="toc-item"><a class="toc-link" href="#section-colophon">Later copyist’s colophon and ownership notice</a></div></div></section>')
-    out.append('<section class="contents" id="editorial-contents"><h1>Editorial section titles</h1><p>Descriptive titles for all 258 reading sections. Each title leads to the same passage as its corresponding original-heading route.</p><p><a href="#original-contents">Use original headings instead</a> · <a href="#contents">Overview</a></p><div class="toc-columns">')
+      label=s['headingAr'] if ar else s.get('headingEn') or s['headingAr']
+      out.append(f'<div class="toc-item{ " toc-root" if depth==0 else ""}" style="--depth:{depth}"><a class="toc-link" href="#section-{n}">{E(label)} <span class="toc-ref">(§{n})</span></a></div>')
+    out.append(f'<div class="toc-item toc-root"><a class="toc-link" href="#section-colophon">{E(colophon)}</a></div></div>')
+    items=reference_items(edition)
+    if items:
+      out.append('<div class="contents-reference"><h2>'+('أدوات الرجوع' if ar else 'Reference tools')+'</h2><div class="reference-columns">')
+      for dest,label in items:out.append(f'<div class="toc-item"><a class="toc-link" href="#{dest}">{E(label)}</a></div>')
+      out.append('</div></div>')
+    if not ar:out.append('<p class="contents-follow"><a href="#editorial-contents">Next: our numbered editorial section guide</a></p>')
+    out.append('</section>')
+    if ar:return ''.join(out)
+    out.append('<section class="contents editorial-toc" id="editorial-contents"><h1>Contents 2 · Editorial section guide</h1><p>Our descriptive labels for all 258 numbered reading units. These are editorial reading aids, not headings in Ibn Rushd’s text. The recorded parts and chapters appear in Contents 1; both lists lead to the same passages.</p><div class="toc-columns">')
     for p in book['parts']:
       out.append('<h2 class="toc-part">'+E(p['label'])+'</h2>')
       for s in book['sections']:
@@ -185,7 +190,7 @@ def validate_application_pagination(document,application_html):
       'markup_errors':markup_errors}
 
 def render_glossary(book,edition):
-    ar=edition=='arabic';out=['<section class="page-start" id="glossary"><h1 class="backmatter-title">'+('فهرس المصطلحات' if ar else 'Technical glossary')+'</h1><p class="small">'+('المصطلحات مرتبة هجائياً بحسب صيغتها العربية، مع روابط إلى مواضعها في النص.' if ar else 'Short editorial definitions for use with the reading translation. Section references return to the text.')+'</p><div class="'+('arabic-glossary' if ar else 'glossary-columns')+'">']
+    ar=edition=='arabic';out=['<section class="page-start" id="glossary"><h1 class="backmatter-title">'+('فهرس المصطلحات' if ar else 'Technical dictionary')+'</h1><p class="small">'+('المصطلحات مرتبة هجائياً بحسب صيغتها العربية، مع روابط إلى مواضعها في النص.' if ar else 'Short editorial definitions for use with the reading translation. Section references return to the text.')+'</p><div class="'+('arabic-glossary' if ar else 'glossary-columns')+'">']
     terms=sorted(book['glossary'],key=lambda g:re.sub(r'[\u064b-\u065f\u0670]','',g['ar'])) if ar else sorted(book['glossary'],key=lambda g:alpha(g['term']))
     for i,g in enumerate(terms):
       out.append(f'<article class="glossary-entry" id="glossary-{i}"><h3>'+('<span lang="ar">'+E(g['ar'])+'</span> <span class="small">('+E(g['term'])+')</span>' if ar else E(g['term'])+' <span class="ar" lang="ar">'+E(g['ar'])+'</span>')+'</h3>')
@@ -193,11 +198,34 @@ def render_glossary(book,edition):
       out.append('<p class="micro">'+refs(g['sections'])+'</p></article>')
     out.append('</div></section>');return ''.join(out)
 
+def subject_guide(book,basic=False):
+    taxonomy=json.loads((DARURI/'subject-index-data.json').read_text())
+    ordered=sorted(book['index'],key=lambda t:alpha(t['term']))
+    lookup={t['term']:(i,t) for i,t in enumerate(ordered)}
+    out=['<div class="subject-guide">']
+    for g in taxonomy['groups']:
+      terms=g.get('examples') or g['terms'][:3]
+      terms=terms[:3]
+      links=[]
+      for term in terms:
+        if term not in lookup:raise ValueError('Unknown taxonomy term: '+term)
+        i,t=lookup[term]
+        if basic:
+          sections=list(dict.fromkeys(n for sub in t['sub'] for n in sub['sections']))[:2]
+          links.append(E(term)+' '+refs(sections))
+        else:links.append(f'<a href="#index-{i}">{E(term)}</a>')
+      out.append('<article><h3>'+E(g['title'])+'</h3><p>'+E(g['description'])+'</p><p class="subject-links">'+' · '.join(links)+'</p></article>')
+    out.append('</div>');return ''.join(out)
+
 def render_index(book,basic=False):
+    title='Basic subject index' if basic else 'Subject index'
+    intro=('A compact guide to subjects, followed by a short alphabetical finding aid. R numbers refer to the small reference markers in the text.' if basic else 'Begin with a subject below or use the alphabetical entries. The groupings are editorial browsing aids; a concept may belong to several subjects. Each subentry links to its exact numbered passage.')
+    out=['<section class="page-start" id="subject-index"><h1 class="backmatter-title">'+title+'</h1><p class="small">'+intro+'</p>'+subject_guide(book,basic)+'<h2 class="index-alphabetical-title">Alphabetical index</h2>']
     if basic:
       data=json.loads((DATA/'basic-index.json').read_text())
-      return '<section class="page-start" id="subject-index"><h1 class="backmatter-title">Basic subject index</h1><p class="small">A short finding aid. Section numbers refer to the numbered text headings.</p><div class="basic-index">'+''.join('<p>'+E(t['term'])+' · '+refs(t['sections'])+'</p>' for t in data)+'</div></section>'
-    out=['<section class="page-start" id="subject-index"><h1 class="backmatter-title">Analytical subject index</h1><p class="small">Topical headings and subtopics link to the exact numbered section. Alphabetical arrangement; repeated references identify multiple relevant passages.</p><div class="index-columns">']
+      out.append('<div class="basic-index">'+''.join('<p>'+E(t['term'])+' · '+refs(t['sections'])+'</p>' for t in data)+'</div></section>')
+      return ''.join(out)
+    out.append('<div class="index-columns">')
     for i,t in enumerate(sorted(book['index'],key=lambda t:alpha(t['term']))):
       out.append(f'<article class="index-entry" id="index-{i}"><h3>{E(t["term"])}</h3>')
       for sub in t['sub']:out.append('<p>'+E(sub['label'])+' · '+refs(sub['sections'])+'</p>')
@@ -213,19 +241,69 @@ def render_concordance(book):
       out.append(f'<p><a href="#section-{s["id"]}">R {s["id"]:03d}</a> · BA {E(ba)} · Arabic 1994 p. {E(", ".join(map(str,s.get("pages",[]))))} / 2015 p. {E(str(b.get("arabicPrintedStart","—")))}</p>')
     out.append('</div></section>');return ''.join(out)
 
+def apply_structure_bookmarks(pdf,book,edition,anchors):
+    """Build source and editorial outlines from exact named destinations.
+
+    Source headings retain the validated prose-aware hierarchy. Descriptive
+    reading titles form their own explicitly editorial branch; never infer
+    their source parent from the last preceding rubric.
+    """
+    import fitz
+    ar=edition.startswith('arabic');toc=[]
+    def add(level,label,anchor):
+      point=anchors[anchor]
+      toc.append([level,label,point['page'],{'kind':fitz.LINK_GOTO,'page':point['page']-1,'to':fitz.Point(point['x'],point['y']),'zoom':0}])
+    add(1,'حول هذه الطبعة' if ar else 'Guide to this edition','guide')
+    add(1,'فهرس الأجزاء والفصول' if ar else 'Contents 1 · Recorded parts and chapters','contents')
+    if not ar:add(1,'Contents 2 · Editorial section guide','editorial-contents')
+    add(1,'متن الكتاب: الأجزاء والفصول' if ar else 'Text · recorded parts and chapters','section-1')
+    add(2,'النص الافتتاحي غير المعنون' if ar else 'Opening discussion (unheaded)','section-1')
+    source_count=0
+    for section in book['sections']:
+      n=section['id']
+      if not isinstance(n,int) or not section.get('headingAr'):continue
+      depth=0;parent=PARENTS[n]
+      while parent is not None:depth+=1;parent=PARENTS[parent]
+      label=section['headingAr'] if ar else section.get('headingEn') or section['headingAr']
+      add(depth+2,f'{label} (§{n})','section-'+str(n));source_count+=1
+    add(1,'خاتمة الناسخ وقيد الملكية' if ar else 'Later copyist’s colophon and ownership notice','section-colophon')
+    editorial_count=0
+    if not ar:
+      add(1,'Editorial section titles · our descriptive labels','editorial-contents')
+      for part in book['parts']:
+        add(2,part['label'],'section-'+str(part['start']))
+        for section in book['sections']:
+          if isinstance(section['id'],int) and section['part']==part['id']:
+            add(3,f"{section['id']}. {section['title']}",'section-'+str(section['id']));editorial_count+=1
+    items=reference_items(edition)
+    if items:
+      first=min(anchors[dest]['page'] for dest,_ in items)
+      add(1,'أدوات الرجوع' if ar else 'Reference tools',items[0][0])
+      for entry in pdf.get_toc(simple=False):
+        if entry[2]>=first:
+          # All generated reference roots are level 1; their original internal
+          # hierarchy remains intact beneath this one reference-tools branch.
+          entry[0]+=1;toc.append(entry)
+    if source_count!=46 or editorial_count!=(0 if ar else 258):raise ValueError('Incomplete structural outline')
+    if any(toc[i][0]>toc[i-1][0]+1 for i in range(1,len(toc))):raise ValueError('Outline level jump')
+    pdf.set_toc(toc,collapse=2)
+    got=pdf.get_toc(simple=False)
+    if len(got)!=len(toc):raise ValueError('Outline write was incomplete')
+    if any(row[2]<1 or row[2]>len(pdf) for row in got):raise ValueError('Invalid outline page')
+    return {'source_headings':source_count,'editorial_titles':editorial_count,'colophon_level':1,'arabic_labels':ar,'ok':True}
+
 def build(edition,output):
     from weasyprint import HTML,CSS
     from weasyprint.text.fonts import FontConfiguration
     from main_text import render_main,MAIN_TEXT_CSS,validate_main,repeat_footnote_plan,footnote_break_plan,validate_pagination
     from backmatter import render_lexicon,LEXICON_CSS
     book=read_book();q=json.loads((DATA/'quran-source-notes.json').read_text());h=json.loads((DATA/'hadith-source-notes.json').read_text());bm=json.loads((DATA/'backmatter-source-notes.json').read_text());full=json.loads((DATA/'full-headwords.json').read_text())
-    footer='<div class="footer"><a href="#contents">Contents</a>'
-    if edition=='scholarly':footer+='<a href="#lexicon-introduction">Historical lexicon</a>'
+    footer='<div class="footer"><a href="#contents">'+('الفهرس' if edition.startswith('arabic') else 'Contents')+'</a>'
     if edition in ['scholarly','study','english']:footer+='<a href="#subject-index">Subject index</a>'
+    if edition=='scholarly':footer+='<a href="#lexicon-introduction">Dictionary</a>'
     elif edition=='arabic':footer+='<a href="#glossary">فهرس المصطلحات</a>'
     footer+='</div>'
-    body=footer+cover(edition)+guide(edition)+overview(book,edition)
-    if edition=='scholarly':body+=detailed_contents(book)
+    body=footer+cover(edition)+guide(edition)+detailed_contents(book,edition)
     main_html=render_main(book,q,h,edition)
     main_check=validate_main(book,q,h,edition,main_html)
     if not main_check['ok']:raise ValueError('Main text validation failed: '+json.dumps(main_check,ensure_ascii=False))
@@ -233,11 +311,10 @@ def build(edition,output):
     application_html=''
     if edition in ['scholarly','english']:
       application_html=render_applications(book,edition,bm);body+=application_html
-    if edition=='scholarly':body+=render_lexicon(full,bm)+render_index(book)+render_concordance(book)
+    if edition=='scholarly':body+=render_index(book)+render_lexicon(full,bm)+render_concordance(book)
     elif edition=='study':body+=render_index(book,True)
-    elif edition in ['english','arabic']:
-      body+=render_glossary(book,edition)
-      if edition=='english':body+=render_index(book)
+    elif edition=='english':body+=render_index(book)+render_glossary(book,edition)
+    elif edition=='arabic':body+=render_glossary(book,edition)
     css=MAIN_TEXT_CSS+'\n'+LEXICON_CSS+'\n'+(ROOT/'styles.css').read_text()
     if edition!='scholarly':
       # WeasyPrint 68 moves unrelated footnotes when enforcing later paragraph widows.
@@ -286,9 +363,10 @@ def build(edition,output):
           p.update_link(link);expanded_note_links+=1
         if link['kind']==fitz.LINK_GOTO and not 0<=link['page']<len(pdf):bad_links.append((i+1,link))
     if bad_links:raise ValueError('Invalid PDF destinations: '+str(bad_links[:3]))
-    if expanded_note_links:pdf.saveIncr()
+    outline_check=apply_structure_bookmarks(pdf,book,edition,anchors)
+    pdf.saveIncr()
     temporary_pdf.replace(pdf_path)
-    meta={'edition':edition,'filename':filename,'pages':len(pdf),'bytes':pdf_path.stat().st_size,'sha256':hashlib.sha256(pdf_path.read_bytes()).hexdigest(),'links':links,'bookmarks':len(pdf.get_toc()),'section_pages':{str(i):anchors['section-'+str(i)]['page'] for i in list(range(1,259))+['colophon']},'anchors':anchors,'source_notes':{'quran':len(q.get('notes',[])),'hadith':len(h.get('notes_by_section',{})) if edition=='scholarly' else 0},'main_text_validation':main_check,'repeated_footnotes':plan,'forced_footnote_breaks':forced_breaks,'footnote_pagination':pagination_check,'expanded_note_links':expanded_note_links}
+    meta={'edition':edition,'filename':filename,'pages':len(pdf),'bytes':pdf_path.stat().st_size,'sha256':hashlib.sha256(pdf_path.read_bytes()).hexdigest(),'links':links,'bookmarks':len(pdf.get_toc()),'section_pages':{str(i):anchors['section-'+str(i)]['page'] for i in list(range(1,259))+['colophon']},'anchors':anchors,'source_notes':{'quran':len(q.get('notes',[])),'hadith':len(h.get('notes_by_section',{})) if edition=='scholarly' else 0},'main_text_validation':main_check,'repeated_footnotes':plan,'forced_footnote_breaks':forced_breaks,'footnote_pagination':pagination_check,'expanded_note_links':expanded_note_links,'structural_outline':outline_check,'contents_pages':{'original':list(range(anchors['contents']['page'],anchors['editorial-contents']['page'] if 'editorial-contents' in anchors else anchors['section-1']['page'])),'editorial':list(range(anchors['editorial-contents']['page'],anchors['section-1']['page'])) if 'editorial-contents' in anchors else []}}
     if application_check is not None:meta['application_footnote_pagination']=application_check
     (output/(filename+'.metadata.json')).write_text(json.dumps(meta,ensure_ascii=False,indent=2))
     print(json.dumps({k:v for k,v in meta.items() if k not in ['anchors','section_pages']},ensure_ascii=False),flush=True)
