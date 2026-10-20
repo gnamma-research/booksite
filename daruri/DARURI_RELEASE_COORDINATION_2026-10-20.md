@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** The study/contents print follow-up is published and verified live in `28f2338fd64bcfcd6476059bbc12cab1ad95622f`. This publisher released its claim at 2026-10-20 18:12 UTC. No PDF or reader upload remains active. New work must start from this commit or newer and preserve the completed structure release, index print behavior, current asset versions and existing Ar/En controls.
+**Publisher claim: concise homepage and source description.** Claimed 2026-10-20 18:30 UTC; expires 18:45 UTC. Base: `5601a4e35dcf19d8239929d775f1d8dd764bd34f`. Targets: `daruri/index.html` Home/About copy, service-worker/offline-package versions, and release documentation. The patch preserves the reading text, PDFs, study lessons, index, typography and navigation work. Other chats should prepare narrow changes and coordinate before publishing these overlapping files.
 
 Previous publisher record: The contents, subject index and five-PDF structure release is published and verified live. This study/contents publisher released its claim at 2026-10-20 18:03 UTC. New work must preserve its rebuilt page maps, current Ar/En labels, subject assets and heading hierarchy.
 
