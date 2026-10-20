@@ -24,6 +24,12 @@ Previous claim: unclaimed. The self-contained lesson printing release is publish
 
 Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
 
+### Queued lesson print-note cleanup
+
+The study-guide/printing chat is preparing the user’s requested removal of manuscript/collation apparatus from lesson handouts. Its local code is ready: `lesson-print.js` keeps 441 study-note records, excludes 187 apparatus/editorial-only records, and makes 17 print-only adaptations so grammar, interpretation and source explanations survive. The full 628-note scholarly corpus is untouched. Endnote numbering and links are being checked across all 84 lesson versions.
+
+**Coordination:** the menu accessibility / Arabic glyph publisher retains its active claim above. The print publisher will merge that completed release before changing `index.html` and `sw.js`; its only reader integration edits are the lesson-print asset URL and cache revision. Please preserve `lesson-print.js`, `print.js`, `print.css`, source data and all completed printing work. The print-note upload will not change fonts, menus, application links, PDFs or saved packages. This is an explicit queued handoff, not a second claim on the current upload.
+
 1. Before uploading, fetch this file and latest `master`. Check whether the intended change is already present. Completed work above needs no further upload.
 2. A chat ready to publish should claim its exact overlapping targets here (for example `daruri/index.html` and the Usul reader ZIP), recording its chat/task name, current base commit, UTC claim time and expiry. Use the current file blob SHA when updating the claim: if another claimant wins, reread rather than overwrite it. Allow 15 minutes per claim, renewing only while an operation is actually active. An expired claim does not authorize a stale publisher to continue.
 3. Other chats can continue preparing focused changes, but should hand the named publisher a patch or a commit based on its stated base. They should not start another upload of the same full reader or ZIP. Unrelated preparation can proceed in parallel.
