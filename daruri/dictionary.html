@@ -168,15 +168,41 @@ let selected=ENT[0].term,filter='all',viewMode='all',resultsLimit=24;
 const termsByArabic=(t)=>t.ar.replace(/[\u064b-\u065f\u0670]/g,'');
 let readerPoint=null;try{const r=JSON.parse(sessionStorage.getItem('daruri-return-location')||'null');readerPoint=r?.point||null}catch(e){}
 let saved={};try{saved=JSON.parse(localStorage.getItem('daruri-reader-v2')||'{}')}catch(e){}
-const origReaderSection=String(readerPoint?.section||saved.n||'1');
+let dictionaryEntryOrigin=null;
+try{const item=JSON.parse(sessionStorage.getItem('daruri-dictionary-open-origin')||'null');
+ if(item&&Date.now()-item.created<86400000)dictionaryEntryOrigin=item;
+}catch(e){}
+const origReaderSection=String(dictionaryEntryOrigin?.point?.section||readerPoint?.section||saved.n||'1');
+const dictionaryReturnNames={home:'Home',index:'Index',contents:'Contents',glossary:'Glossary',applications:'Bidāya applications',study:'Study guide',bookmarks:'Bookmarks',about:'About'};
 function backToReader(section,focusTerm){
  const selectedSection=String(section||origReaderSection);
  let point=readerPoint;
  if(!point||String(point.section)!==selectedSection){point={section:selectedSection,y:0,anchor:{segment:'0',top:145},hit:null}}
  try{sessionStorage.setItem('daruri-return-location',JSON.stringify({point,created:Date.now(),targetTerm:focusTerm||null}));}catch(e){}
+ // A passage reached from the dictionary also needs a way back to this term.
+ try{sessionStorage.setItem('daruri-dictionary-jump-origin',JSON.stringify({
+   term:selected,y:window.scrollY,view:viewMode,created:Date.now()}))}catch(e){}
  window.location.href='index.html#section='+encodeURIComponent(selectedSection);
 }
-function renderReturnLabels(){document.querySelectorAll('[data-reader-return]').forEach(b=>{const s=b.querySelector('span');if(s)s.textContent='Back to reading · §'+origReaderSection;});}
+function backToDictionaryEntryOrigin(){
+ const o=dictionaryEntryOrigin;
+ if(o&&o.route&&o.route!=='reader'&&dictionaryReturnNames[o.route]){
+   try{sessionStorage.setItem('daruri-restore-reference-view',JSON.stringify({
+     route:o.route,y:o.y,snapshot:o.snapshot||{},created:Date.now()
+   }))}catch(e){}
+   window.location.href='index.html#'+encodeURIComponent(o.route);return;
+ }
+ if(o&&o.route==='reader'&&o.point){
+   try{sessionStorage.setItem('daruri-return-location',JSON.stringify({point:o.point,created:Date.now()}))}catch(e){}
+   window.location.href='index.html#section='+encodeURIComponent(o.point.section);return;
+ }
+ // Direct visits, without a recorded source, may still return to the last section.
+ backToReader(null,null);
+}
+function renderReturnLabels(){document.querySelectorAll('[data-reader-return]').forEach(b=>{
+ const span=b.querySelector('span');const title=dictionaryEntryOrigin&&dictionaryReturnNames[dictionaryEntryOrigin.route];
+ if(span)span.textContent=title?'Back to '+title:'Back to reading · §'+origReaderSection;
+});}
 function sourcesInline(t){if(!t.sources.length)return '<p class="unattested">No independently checked historical dictionary excerpt is attached to this compound headword. The meaning above is an editorial explanation for this edition. This does not mean the word or root is absent from the lexica.</p>';
  let sources=[...t.sources],seen=new Set();sources=sources.filter(s=>{let k=s.author+'|'+s.quote.replace(/\s+/g,' ');if(seen.has(k))return false;seen.add(k);return true;});
  sources.sort((a,b)=>(a.kind==='technical'?0:1)-(b.kind==='technical'?0:1)||a.author.localeCompare(b.author,'en'));
@@ -216,7 +242,7 @@ document.addEventListener('click',e=>{
  const el=e.target.closest('button,a');if(!el)return;
  if(el.dataset.dictView){e.preventDefault();viewMode=el.dataset.dictView;applyDictView();}
  else if(el.dataset.term){e.preventDefault();selectTerm(el.dataset.term);if(matchMedia('(max-width:880px)').matches)document.getElementById('lexBrowse').open=false;}
- else if(el.hasAttribute('data-reader-return')){e.preventDefault();backToReader(null,null)}
+ else if(el.hasAttribute('data-reader-return')){e.preventDefault();backToDictionaryEntryOrigin()}
  else if(el.dataset.readSection){e.preventDefault();backToReader(el.dataset.readSection,selected)}
 
 
@@ -226,4 +252,10 @@ try{const p=JSON.parse(localStorage.getItem('daruri-reader-v2')||'{}');const pal
 
 renderReturnLabels();const params=new URLSearchParams(location.hash.slice(1));const from=params.get('term')||'';const requestedView=params.get('view');viewMode=['meaning','sources','occurrences','all'].includes(requestedView)?requestedView:'all';if(matchMedia('(max-width:880px)').matches)document.getElementById('lexBrowse').open=!from;
 selectTerm(BYNAME.has(from)?from:ENT.find(t=>t.term==='qiyās')?.term||ENT[0].term);
+try{const point=JSON.parse(sessionStorage.getItem('daruri-dictionary-restore')||'null');
+ sessionStorage.removeItem('daruri-dictionary-restore');
+ if(point&&Date.now()-point.created<86400000){
+   requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo({top:Math.max(0,Number(point.y)||0),behavior:'instant'})));
+ }
+}catch(e){}
 </script></body></html>
