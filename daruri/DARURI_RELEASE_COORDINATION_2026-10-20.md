@@ -18,7 +18,9 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
+**Publisher claim: menu/navigation repair chat.** Targets: `daruri/index.html`, `daruri/dictionary.html`, `daruri/sw.js`, navigation QA and release records. Base `760234ee9f4f8c082193a4b07023045ebd9e18b2`. Claimed 2026-10-20 15:57 UTC; expires 16:12 UTC. Ready changes are being merged over the published English fonts; other overlapping publishers should wait or hand over a focused patch. No Usul ZIP upload is part of this menu task.
+
+Previous claim: unclaimed. The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
 
 1. Before uploading, fetch this file and latest `master`. Check whether the intended change is already present. Completed work above needs no further upload.
 2. A chat ready to publish should claim its exact overlapping targets here (for example `daruri/index.html` and the Usul reader ZIP), recording its chat/task name, current base commit, UTC claim time and expiry. Use the current file blob SHA when updating the claim: if another claimant wins, reread rather than overwrite it. Allow 15 minutes per claim, renewing only while an operation is actually active. An expired claim does not authorize a stale publisher to continue.
