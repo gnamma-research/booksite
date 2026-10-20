@@ -109,7 +109,7 @@
       ['daruri/reading-styles.css', 'reading-styles.css'],
       ['daruri/reading-styles.js', 'reading-styles.js'],
       ['daruri/visuals-controls.js', 'visuals-controls.js?v=20261020-visuals1'],
-      ['daruri/compact-menu.css', 'compact-menu.css?v=20261020-visuals1'],
+      ['daruri/compact-menu.css', 'compact-menu.css?v=20261020-home-nav2'],
       ['daruri/english-fonts.css', 'english-fonts.css?v=20261020-fonts3'],
       ['daruri/fonts/english-font-faces.css', 'fonts/english-font-faces.css'],
       ['daruri/fonts/source-sans-3-normal.ttf', 'fonts/source-sans-3-normal.ttf'],
