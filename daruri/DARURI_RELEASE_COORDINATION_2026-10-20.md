@@ -18,7 +18,9 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** The self-contained lesson printing release is published and live. Its publisher released the claim at 2026-10-20 16:06 UTC after successful deployment and exact verification of all seven changed live runtime/page assets. No print, PDF or saved-package upload remains active.
+**Publisher claim: Bidāya application prose links chat.** Targets: `daruri/index.html`, `daruri/sw.js`, `daruri/qa/verify-application-links.js`, `daruri/CURRENT_RELEASE.md` and this coordination record. Base `00189840e313b62a6ff86821b8f03264ebf6d259`. Claimed 2026-10-20 16:07 UTC; expires 2026-10-20 16:22 UTC. The tested application prose links and exact window return are being integrated with the latest published font, menu and printing releases. No Usul ZIP or PDF upload is part of this task.
+
+Previous claim: unclaimed. The self-contained lesson printing release is published and live. Its publisher released the claim at 2026-10-20 16:06 UTC after successful deployment and exact verification of all seven changed live runtime/page assets. No print, PDF or saved-package upload remains active.
 
 Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
 
