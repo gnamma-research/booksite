@@ -3544,6 +3544,15 @@ function sendToDictionary(term=''){
  const point={section:readerReturn.section||String(state.n),y:readerReturn.y||0,
    anchor:readerReturn.anchor||null,hit:readerReturn.hit||null};
  try{sessionStorage.setItem('daruri-return-location',JSON.stringify({point,created:Date.now()}))}catch(e){}
+ // Opening the separate dictionary does not mean the user came from reading.
+ // Keep the actual source and its active filters for an accurate return.
+ try{sessionStorage.setItem('daruri-dictionary-open-origin',JSON.stringify({
+   route:state.route,hash:location.hash,y:window.scrollY,
+   point:state.route==='reader'?point:null,created:Date.now(),
+   snapshot:{indexQuery:state.indexQuery,indexFocus:state.indexFocus,indexLimit:state.indexLimit,
+     glossaryQuery:state.glossaryQuery,contentsQuery:state.contentsQuery,contentsMode:state.contentsMode,
+     applicationQuery:state.applicationQuery,applicationBook:state.applicationBook}
+ }))}catch(e){}
  const hash=term?'#term='+encodeURIComponent(term):'';
  try{localStorage.setItem('daruri-reader-v2',JSON.stringify({...JSON.parse(localStorage.getItem('daruri-reader-v2')||'{}'),theme:state.theme,palette:state.palette}))}catch(e){};window.location.href='dictionary.html'+hash;
 }
@@ -3774,6 +3783,8 @@ try{
   const restore=JSON.parse(sessionStorage.getItem('daruri-restore-reference-view')||'null');
   sessionStorage.removeItem('daruri-restore-reference-view');
   if(restore&&Date.now()-restore.created<86400000&&restore.route&&restore.route===location.hash.slice(1)){
+    const fields=['indexQuery','indexFocus','indexLimit','glossaryQuery','contentsQuery','contentsMode','applicationQuery','applicationBook'];
+    for(const key of fields)if(restore.snapshot&&Object.prototype.hasOwnProperty.call(restore.snapshot,key))state[key]=restore.snapshot[key];
     gnCrossView.pending=restore;
   }
 }catch(e){}
