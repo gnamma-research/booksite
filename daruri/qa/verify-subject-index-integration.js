@@ -139,7 +139,7 @@ async function roundTrip(h,{section,scroll=382}={}){
  assert.equal(h.d.activeElement.closest('.subentry-list').scrollTop,37,'Nested index scroll restored');
  const after=h.qa.capture();assert.deepEqual(after.ui.details,before.ui.details,'Exact disclosures restored');
 }
-(async()=>{
+if(require.main===module)(async()=>{
  const h=await harness();
  try{
   assert(h.w.DaruriSubjectIndex,'Module loaded from declared scripts');
@@ -173,3 +173,4 @@ async function roundTrip(h,{section,scroll=382}={}){
   console.log('PASS: full reader loads all local scripts; static302-entryA–Z/9groups; subject/A–Z/facet/search; exact section-return state, focus, scroll and disclosures; question route; redirects; reader concept jump; Arabic search.');
  }finally{h.close();}
 })().catch(error=>{console.error(error.stack||error);process.exitCode=1;});
+module.exports={harness};

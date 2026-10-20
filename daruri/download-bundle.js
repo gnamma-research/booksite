@@ -102,9 +102,9 @@
     const files = [
       ['daruri/index.html', 'index.html'],
       ['daruri/reader-structure.css', 'reader-structure.css?v=20261020-structure1'],
-      ['daruri/subject-index.css', 'subject-index.css?v=20261020-structure1'],
+      ['daruri/subject-index.css', 'subject-index.css?v=20261020-indexprint1'],
       ['daruri/subject-index-data.js', 'subject-index-data.js?v=20261020-structure1'],
-      ['daruri/subject-index.js', 'subject-index.js?v=20261020-structure1'],
+      ['daruri/subject-index.js', 'subject-index.js?v=20261020-indexprint1'],
       ['daruri/subject-index-data.json', 'subject-index-data.json?v=20261020-structure1'],
       ['daruri/reading-styles.css', 'reading-styles.css'],
       ['daruri/reading-styles.js', 'reading-styles.js'],
@@ -140,16 +140,16 @@
       ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri8-structure-20261020'],
       ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=daruri8-structure-20261020'],
       ['daruri/source-reference-data.js', 'source-reference-data.js?v=daruri8-structure-20261020'],
-      ['daruri/download-bundle.js', 'download-bundle.js?v=daruri8-structure-20261020'],
+      ['daruri/download-bundle.js', 'download-bundle.js?v=20261020-indexprint1'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
       ['daruri/study-guide.css', 'study-guide.css'],
-      ['daruri/print.css', 'print.css'],
+      ['daruri/print.css', 'print.css?v=20261020-indexprint1'],
       ['daruri/print.js', 'print.js'],
       ['daruri/lesson-print.js', 'lesson-print.js'],
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=daruri8-structure-20261020'],
+      ['daruri/sw.js', 'sw.js?v=20261020-indexprint1'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
@@ -188,7 +188,7 @@
 
   async function readFile(name, path) {
     const url = new URL(path, root);
-    if (RELEASE_ASSETS.has(path.split('?')[0])) url.searchParams.set('v', RELEASE_VERSION);
+    if (RELEASE_ASSETS.has(path.split('?')[0]) && !url.searchParams.has('v')) url.searchParams.set('v', RELEASE_VERSION);
     const response = await fetch(url.href, { cache: 'no-store', credentials: 'same-origin' });
     if (!response.ok) throw new Error('Could not fetch ' + name + ' (HTTP ' + response.status + ').');
     const bytes = new Uint8Array(await response.arrayBuffer());

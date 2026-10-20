@@ -24,3 +24,17 @@
 .subject-group .subentry-row{align-items:baseline}
 @media(max-width:600px){.subject-question-list{grid-template-columns:1fr}.subject-index-facet{width:100%}.subject-index-facet select{max-width:100%;flex:1}.subject-group>summary{padding:.8rem}.subject-group-body{padding:0 .75rem .6rem}.subject-group-title{font-size:1rem}.subject-group-description{margin-left:0}.subject-disclosure-controls{gap:.65rem}}
 @media print{.subject-index-controls,.subject-index-questions,.subject-disclosure-controls,.subject-question-active button{display:none!important}.subject-group,.subject-group-body,.subject-group>summary,.index-record{background:transparent!important;box-shadow:none!important;color:#000!important;border-color:#000!important}.subject-group{border:0;border-top:.5pt solid #000;border-radius:0;margin:8pt 0}.subject-group>summary{padding:6pt 0;break-after:avoid}.subject-group-description{opacity:1}.subject-group-body{padding:0}.subject-index-status{margin:4pt 0}.subject-group .subentry-row{break-inside:avoid}}
+@media print{
+ html:root body #indexExplorer :is(.subject-group,.subject-group-body,.index-record,.subentry-list,.subentry-row){display:block!important;position:static!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;contain:none!important;break-inside:auto!important;page-break-inside:auto!important}
+ html:root body #indexExplorer .index-record{padding:5pt 0!important;margin:0!important;border:0!important;border-bottom:.35pt solid #000!important}
+ html:root body #indexExplorer .index-record>summary{display:block!important;padding:3pt 0!important;font-size:11pt!important;font-weight:700!important;break-after:avoid-page;page-break-after:avoid}
+ html:root body #indexExplorer :is(.subject-group,.index-record)>summary::after{content:none!important;display:none!important}
+ html:root body #indexExplorer :is(.subject-group,.index-record)>summary .badge{display:none!important}
+ html:root body #indexExplorer .subentry-list{padding:0 0 4pt 9pt!important;margin:0!important;border:0!important}
+ html:root body #indexExplorer .subentry-row{padding:2pt 0!important;font-size:10pt!important;line-height:1.4!important;break-inside:avoid-page!important;page-break-inside:avoid!important}
+ html:root body #indexExplorer :is(.subentry-title,.jump-list){display:inline!important;min-width:0!important}
+ html:root body #indexExplorer .jump-list{margin-left:5pt!important;white-space:normal!important}
+ html:root body #indexExplorer .jump-list button{display:inline!important;margin-right:5pt!important}
+ html:root body :is(#indexExplorer,#fallbackReader #index) details::details-content{content-visibility:visible!important;display:block!important;height:auto!important;overflow:visible!important}
+ html:root body :is(#indexExplorer,#fallbackReader #index) details:not([open])>:not(summary){display:block!important;height:auto!important;overflow:visible!important}
+}

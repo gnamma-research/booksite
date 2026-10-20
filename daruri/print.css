@@ -77,6 +77,7 @@
     .stats-row, .stat-box, .hero .button-row, .hero .reading-actions,
     .dict-view-tabs, .lexicon-view-switch, .lexicon-mode-nav, .lex-tabbar,
     .filterbar, .filter-select, .searchline, .search-locator,
+    .panel-controls:has([data-contents-mode]), .fb-toc-tabs,
     .sg-levels, .sg-level-help, .sg-breadcrumb, .sg-lesson-tools,
     .sg-completion, .sg-sequence, .sg-assignment, .sg-start, .sg-filters,
     .sg-progress, .sg-card-go, .sg-copy-link, .sg-link-button,

@@ -4,7 +4,7 @@ Prepared 20 October 2026 against `6d7025a00bd3bd7161d317bfc1ae9fbaae088e9e`.
 
 **Subsequent implementation:** the user approved this redesign, including compact editorial contents in the reference, study and English editions. It is published and live in [`52ee8a1`](https://github.com/gnamma-research/booksite/commit/52ee8a18952304b8315770e0c7822e2a02840662). The audit below records the earlier baseline; current publication details are in `../CURRENT_RELEASE.md`.
 
-**Status: audit and redesign recommendation, not an implemented site or PDF release.** The current request asks for a deep investigation and suggested subject groupings. This record lets parallel work reuse the findings without confusing a proposal with published behavior. The current compact menus, fonts, page styles, print packets and citation release remain the release baseline.
+**Historical status: this document records the pre-implementation audit and recommendation.** The redesign has since been implemented and published in the release linked above. The findings and old page counts below describe the earlier baseline; they are not outstanding tasks or the current release state. Use `../CURRENT_RELEASE.md` and the current PDF manifest for integration.
 
 ## Recommendation
 

@@ -7,7 +7,33 @@
  if(!data)return;
  const groups=data.groups,facets=data.facets||[],questions=data.questions||[];
  const byTerm=new Map();
+ const printToggles=new WeakSet();
  let context=null;
+ let printSnapshot=null;
+ function setPrintOpen(detail,opened){
+  if(detail.open===opened)return;
+  // Native toggle events are queued and may arrive after afterprint has run.
+  // Suppress each print-driven transition without changing saved preferences.
+  printToggles.add(detail);detail.open=opened;
+ }
+ function preparePrint(){
+  if(printSnapshot)return;
+  const root=document.getElementById('indexExplorer');if(!root)return;
+  const details=[...root.querySelectorAll('#indexList .subject-group, #indexList .index-record')];
+  printSnapshot={root,details:details.map(el=>[el,el.open]),focus:document.activeElement,
+   x:global.scrollX,y:global.scrollY,
+   scrollers:[...root.querySelectorAll('*')].filter(el=>el.scrollTop||el.scrollLeft).map(el=>[el,el.scrollLeft,el.scrollTop])};
+  details.forEach(el=>setPrintOpen(el,true));
+ }
+ function restorePrint(){
+  if(!printSnapshot)return;
+  const saved=printSnapshot;printSnapshot=null;
+  saved.details.forEach(([el,opened])=>{if(el.isConnected)setPrintOpen(el,opened);});
+  if(!saved.root.isConnected||document.getElementById('indexExplorer')!==saved.root)return;
+  saved.scrollers.forEach(([el,x,y])=>{if(el.isConnected){el.scrollLeft=x;el.scrollTop=y;}});
+  if(saved.focus?.isConnected&&typeof saved.focus.focus==='function')saved.focus.focus({preventScroll:true});
+  global.scrollTo({left:saved.x,top:saved.y,behavior:'instant'});
+ }
  function remembered(){try{return JSON.parse(localStorage.getItem(prefKey)||'{}')}catch(e){return {}}}
  function remember(state){try{localStorage.setItem(prefKey,JSON.stringify({view:state.indexView,facet:state.indexFacet}))}catch(e){}}
  function initialize(ctx){
@@ -94,8 +120,11 @@
   root.addEventListener('change',event=>{if(event.target.id==='indexFacet'&&context){context.state.indexFacet=event.target.value;context.state.indexQuestion='';context.state.indexFocus=null;remember(context.state);update(context);}});
   root.addEventListener('toggle',event=>{
    const el=event.target;if(!el.isConnected||!el.dataset.indexOpenKey||!context)return;
+   if(printToggles.has(el)){printToggles.delete(el);return;}
    if(!context.state.indexQuery&&!context.state.indexQuestion)context.state.indexOpen[el.dataset.indexOpenKey]=el.open;
   },true);
  }
+ global.addEventListener('beforeprint',preparePrint);
+ global.addEventListener('afterprint',restorePrint);
  global.DaruriSubjectIndex={render,update,data};
 })(window);
