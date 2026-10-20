@@ -159,3 +159,17 @@
   @media(max-width:380px){.gn-visuals-panel{padding:14px 11px}.gn-visual-row{grid-template-columns:42px minmax(0,1fr);gap:7px}.gn-direct-options{gap:5px}.gn-visuals-panel #palettePicker{gap:5px}.gn-font-specimen{font-size:15px}.gn-font-amiri,.gn-font-scheherazade,.gn-font-noto{font-size:20px}}
   @media(pointer:coarse){.gn-direct-options>button,.gn-size-control>button,.gn-size-control output,.gn-visuals-panel #palettePicker .palette-option{min-height:48px}}
 }
+
+/* 20 October: shared navigation left edge and low-ink home link. */
+@media screen {
+ #leftNav .nav-bottom{margin:0!important;padding:0!important;border-top:0!important;gap:0!important;display:block!important}
+ #leftNav #downloadsMenu{margin:0!important}
+ #leftNav #downloadsMenu>summary{padding-inline:9px!important}
+ #leftNav #downloadsMenu>.gn-pdf-editions{padding:2px 9px 9px!important}
+ #leftNav .gn-nav-footer-links{margin:9px 9px 0!important}
+ #fallbackReader .fb-publisher-footer{margin:0!important;padding:0!important;border-top:0!important}
+ #fallbackReader #fb-downloads-menu{margin:0!important}
+ #fallbackReader #fb-downloads-menu>.gn-pdf-editions{padding:2px 9px 9px!important}
+ .gnamma-home .home-source-link{font:inherit;color:var(--accent);background:transparent;border:0;padding:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+ .gnamma-home .home-source-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+}
