@@ -3813,7 +3813,7 @@ try{
 function gnShowSourceReturn(){
   document.querySelectorAll('.gn-source-return').forEach(x=>x.remove());
   if(state.route!=='reader'||!gnCrossView.origin)return;
-  const name=gnViewNames[gnCrossView.origin.route]||'reference';
+  const name=gnCrossView.origin.route==='reading-point'?'Reading '+sectionRef(gnCrossView.origin.point?.section||state.n):(gnViewNames[gnCrossView.origin.route]||'reference');
   const bar=document.createElement('nav');bar.className='gn-source-return';bar.setAttribute('aria-label','Return to the source of this section link');
   const back=document.createElement('button');back.type='button';back.dataset.gnSourceBack='';back.textContent='← Back to '+name;back.title='Return to '+name+' at the previous location';
   const dismiss=document.createElement('button');dismiss.type='button';dismiss.dataset.gnSourceDismiss='';dismiss.className='gn-source-dismiss';dismiss.textContent='×';dismiss.setAttribute('aria-label','Dismiss return link');
@@ -3829,6 +3829,18 @@ navigate=function(route,n){
   }
   gnNavigateBefore(route,n);
 };
+// Only cross-reference jumps from search/reference dialogs create a
+// section-to-section return; ordinary next/previous/jump controls do not.
+document.addEventListener('click',event=>{
+  const link=event.target.closest('[data-section]');
+  if(!link||state.route!=='reader'||String(link.dataset.section)===String(state.n))return;
+  const overlay=link.closest('#searchOverlay:not([hidden]),#infoOverlay:not([hidden])');
+  if(!overlay)return;
+  if(!readerReturn.initialized)captureReaderReturn();
+  const point={section:String(readerReturn.section||state.n),y:readerReturn.y||0,
+    anchor:readerReturn.anchor||null,hit:readerReturn.hit||null};
+  gnCrossView.origin={route:'reading-point',point,created:Date.now()};
+},true);
 const gnRenderReaderBefore=renderReader;
 renderReader=function(){gnRenderReaderBefore();gnShowSourceReturn();if(gnAppReturn&&state.route==='reader')gnShowAppBack()};
 const gnRenderRouteBefore=renderRoute;
@@ -3855,6 +3867,16 @@ document.addEventListener('click',event=>{
   if(origin.route==='dictionary'){
     try{sessionStorage.setItem('daruri-dictionary-restore',JSON.stringify({y:origin.y,created:Date.now()}))}catch(e){}
     location.href=origin.href||'dictionary.html';return;
+  }
+  if(origin.route==='reading-point'&&origin.point){
+    if(state.focusLevel===3){
+      goSection(origin.point.section);
+      requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo({top:origin.point.y||0,behavior:'instant'})));
+    }else{
+      pendingReturn.value=origin.point;
+      navigate('reader',origin.point.section);
+    }
+    return;
   }
   gnCrossView.pending=origin;
   navigate(origin.route);
