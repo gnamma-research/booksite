@@ -2704,7 +2704,7 @@ const VERIFIED_BOU_AKL_ARABIC_PAGES=Object.freeze({'2':118,'3':120,'20':132,'21'
 function arabicCitation(s){
  const page=VERIFIED_BOU_AKL_ARABIC_PAGES[String(s.id)];
  if(page!=null)return {short:"Bou Akl ’15",page:String(page),long:"Bou Akl (2015), Arabic p. "+page,title:"Verified Arabic page in Bou Akl’s 2015 edition; other page systems are distinct."};
- return {short:"ʿAlawī ’94",page:String(origPage(s)),long:"al-ʿAlawī (1994), Arabic p. "+origPage(s),title:"Arabic page in al-ʿAlawī’s 1994 edition. The equivalent Bou Akl (2015) page has not yet been independently verified."};
+ return {short:"ʿAlawī ’94",page:String(origPage(s)),long:"al-ʿAlawī (1994), Arabic "+origPage(s),title:"Arabic page in al-ʿAlawī’s 1994 edition. The equivalent Bou Akl (2015) page has not yet been independently verified."};
 }
 
 // Reader's single-title contract. Original headings must remain available
