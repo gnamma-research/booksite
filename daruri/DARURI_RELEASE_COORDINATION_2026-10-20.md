@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** The Bidāya application prose links release is published and live. Its publisher released the claim at 2026-10-20 16:14:02 UTC after successful deployment and exact verification of the live reader and service-worker bytes. No application-link upload remains active.
+**Publisher claim: menu accessibility and Arabic glyph follow-up.** Targets: `daruri/index.html`, `daruri/sw.js`, menu accessibility QA and release records. Base `3c4bfb2a66eaf4fd7dd317d0cab8f7a618498299`, preserving all completed font, menu, lesson-print and Bidāya-link releases. Claimed 2026-10-20 16:15 UTC; expires 16:30 UTC. Scope: a 1pt smaller Arabic toggle glyph, keyboard focus in compact navigation, and header-recovery controls behind modal dialogs. No font files, print data, PDFs or saved packages are being changed.
 
 Previous claim: unclaimed. The self-contained lesson printing release is published and live. Its publisher released the claim at 2026-10-20 16:06 UTC after successful deployment and exact verification of all seven changed live runtime/page assets. No print, PDF or saved-package upload remains active.
 
