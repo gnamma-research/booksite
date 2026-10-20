@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed in this record.** This is a shared coordination message, not a claim that independent chats have been contacted or stopped.
+**Publisher claim: Arabic typeface / appearance task (`/root`), active from 2026-10-20 15:32 UTC until 15:47 UTC.** Base: `48633ba674f30600119a503fb09c76662794cfc7`. Targets: `daruri/index.html`, `daruri/dictionary.html`, `daruri/print.css`, `daruri/sw.js`, `daruri/download-bundle.js`, `daruri/CURRENT_RELEASE.md`, new `daruri/arabic-fonts.css` and `daruri/fonts/*`, and the matching Usul reader source ZIP/pointer. Prepared change adds an Arabic typeface preference (Amiri, Scheherazade New, Noto Naskh Arabic) with local fonts; it preserves current reader contents, PDF bytes and Notes/layout releases. No other chat has been contacted or stopped by this claim. Release the claim after source publication and deployment/snapshot verification.
 
 1. Before uploading, fetch this file and latest `master`. Check whether the intended change is already present. Completed work above needs no further upload.
 2. A chat ready to publish should claim its exact overlapping targets here (for example `daruri/index.html` and the Usul reader ZIP), recording its chat/task name, current base commit, UTC claim time and expiry. Use the current file blob SHA when updating the claim: if another claimant wins, reread rather than overwrite it. Allow 15 minutes per claim, renewing only while an operation is actually active. An expired claim does not authorize a stale publisher to continue.
