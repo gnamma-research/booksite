@@ -1,0 +1,18 @@
+{
+  "revision": "20261020-home1",
+  "sourceBase": "5601a4e35dcf19d8239929d775f1d8dd764bd34f",
+  "checks": {
+    "inlineJavaScriptParses": true,
+    "serviceWorkerAndBundleParse": true,
+    "renderHomeWithSavedSection49": true,
+    "fiveCurrentPdfLinks": true,
+    "nativeHomeCopyMatches": true,
+    "nativeLinkTargetsExist": true,
+    "paletteInitializerPreserved": true,
+    "renderAboutSourcesAndManuscriptCaveat": true,
+    "unchangedSourceOutsideHomeAboutAndListedStyleVersionChanges": true
+  },
+  "readingPdfRevision": "daruri8-structure-20261020",
+  "pdfsRebuilt": false,
+  "verificationScope": "JavaScript parsing, isolated Home/About rendering, native destinations and exact preservation checks; no new browser visual check."
+}

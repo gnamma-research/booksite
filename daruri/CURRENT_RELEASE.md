@@ -6,6 +6,14 @@ Canonical repository: `gnamma-research/booksite`, branch `master`.
 
 Canonical reader: [https://gnamma-research.github.io/booksite/daruri/](https://gnamma-research.github.io/booksite/daruri/).
 
+## Concise homepage and edition sources — `20261020-home1`
+
+The Home view now briefly describes Ibn Rushd’s work, Arabic/English reading, three study levels, the Subject index, historical Dictionary, section bookmarks, five PDF editions and self-contained lesson printouts. Font, text-size, Focus and architectural colour choices are described without claiming a historically reconstructed palette. The enhanced and native home views share the same introduction; the palette chooser is a compact disclosure.
+
+The Arabic-source summary identifies al-ʿAlawī’s 1994 edition and selected consequential corrections from Bou Akl’s 2015 critical edition. About identifies Escorial MS 1235 evidence as mediated through Bou Akl’s apparatus and distinguishes manuscript support from conjecture. The translation account names grammatical/contextual checking and historical/technical dictionaries while retaining the AI-assistance disclosure. The stale personal-note claim, old home counts and long production checklist were removed from the introduction. Source links are available in About.
+
+Validation: both inline JavaScript blocks and the changed service worker/package script parse; isolated Home/About renders preserve saved-section resume, five current PDF links and the palette initializer; native destinations exist. Exact comparison confirms all source outside Home/About and the listed style/version updates is unchanged. Reading PDFs remain `daruri8-structure-20261020`. Runtime revisions are coordinated in the reader, service worker and Complete package. See `qa/home-introduction-release-20261020.json`. Live deployment verification is recorded below after publication.
+
 ## Index and contents printing follow-up — `20261020-indexprint1`
 
 **Published and live:** [28f2338](https://github.com/gnamma-research/booksite/commit/28f2338fd64bcfcd6476059bbc12cab1ad95622f). [Pages run 39472504421](https://github.com/gnamma-research/booksite/actions/runs/39472504421) succeeded. All seven changed public reader/runtime/style files returned HTTP 200 and matched the tested bytes; see [the live verification record](qa/index-print-live-release-20261020.json).
