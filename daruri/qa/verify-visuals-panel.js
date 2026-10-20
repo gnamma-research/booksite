@@ -56,9 +56,9 @@ for(const asset of ['visuals-controls.js?v=20261020-visuals1','fonts/source-sans
 }
 assert.match(sw,/20261020-visuals1/);
 assert.match(html,/english-fonts\.css\?v=20261020-fonts3/);
-assert.match(html,/compact-menu\.css\?v=20261020-visuals-touch1/);
+assert.match(html,/compact-menu\.css\?v=20261020-visualsframe1/);
 assert.match(html,/visuals-controls\.js\?v=20261020-visuals1/);
-assert.match(html,/sw\.js\?v=20261020-visuals-touch1/);
+assert.match(html,/sw\.js\?v=20261020-visualsframe1/);
 
 console.log('PASS: icon-led Visuals panel, direct page/font/palette controls, fixed language markers, A−/percentage/A+, proper layout/palette icons, distinct English families, no visible duplicate theme row, syntax and offline assets.');
 
@@ -67,7 +67,30 @@ assert(css.includes('touch-action: manipulation !important'),'Visuals controls s
 assert(css.includes('#readingControls:not([hidden]) .gn-reader-global-leading #menuBtn'),'Contents opener has dedicated touch area');
 assert(css.includes('width: 44px !important')&&css.includes('height: 44px !important'),'Contents opener receives 44px touch target');
 assert(html.includes('download-bundle.js?v=20261020-visuals-touch1'),'Package version updated');
-assert(sw.includes('compact-menu.css?v=20261020-visuals-touch1'),'Offline CSS uses the same version');
-assert(sw.includes('download-bundle.js?v=20261020-visuals-touch1'),'Offline package uses the same version');
-assert(bundle.includes('compact-menu.css?v=20261020-visuals-touch1'),'ZIP uses updated Visuals CSS');
+assert(sw.includes('compact-menu.css?v=20261020-visualsframe1'),'Offline CSS uses the same version');
+assert(sw.includes('download-bundle.js?v=20261020-visualsframe1'),'Offline package uses the same version');
+assert(bundle.includes('compact-menu.css?v=20261020-visualsframe1'),'ZIP uses updated Visuals CSS');
 console.log('PASS: fixed-width Safari tap targets, equal size cells and coherent cache/offline versions');
+
+
+// The four enhanced layout buttons use bounded, font-independent Arabic glyphs
+// rather than raw Amiri letters that straddled the divider on iOS.
+const glyphTags=[...panel.matchAll(/<svg class="gn-layout-arabic-icon" viewBox="([^"]+)"[^>]*>/g)];
+assert.equal(glyphTags.length,4,'All four side/stack diagrams have bounded Arabic glyphs');
+for(const tag of glyphTags)assert.equal(tag[1],'6.2 8.1 11.6 14.5');
+assert(!panel.includes('<bdi lang="ar" dir="rtl">ع</bdi>'),'Enhanced layout buttons no longer use baseline-dependent text glyphs');
+for(const id of ['settingsParallelSide','settingsStackedOrder']){
+ const re=new RegExp('id="'+id+'"[\\s\\S]*?</div>');
+ assert(re.test(panel),'Retain both responsive reading orders: '+id);
+}
+assert(css.includes('width: min(460px, calc(100vw - 44px)) !important;'),'Slightly narrower default panel');
+assert(css.includes('width: calc(100vw - 32px) !important;'),'Small phones retain useful width');
+assert(css.includes('.gn-visuals-panel .gn-layout-glyph.gn-layout-stack'),'Stacked glyphs use dedicated geometry');
+assert(css.includes('.gn-visuals-panel .gn-layout-arabic-icon'),'Arabic outline uses a fixed, centered box');
+assert(css.includes('height: 18px !important;'),'Arabic glyph keeps fixed height');
+assert(css.includes('height: 48px !important;'),'Existing 48px touch-target fix is preserved');
+assert(css.includes('touch-action: manipulation !important'),'Existing mobile double-tap mitigation is preserved');
+assert(sw.includes('daruri-reader-20261020-readingdesk1-visualsframe1'),'Reading Desk cache retained');
+assert(bundle.includes("['daruri/reading-desk.js'"),'Reading Desk survives the bundle change');
+assert(bundle.includes('sw.js?v=20261020-visualsframe1'),'Offline bundle contains current service worker');
+console.log('PASS: narrower Visuals frame, centered font-independent Arabic order glyphs, preserved 48px tap targets and current Reading Desk cache.');
