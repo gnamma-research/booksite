@@ -14,9 +14,17 @@ const lessons = runtime.window.DARURI_STUDY_DATA.lessons;
 const levels = ['basic', 'intermediate', 'advanced'];
 assert.equal(lessons.length, 28);
 assert.equal((html.match(/class="sg-fallback-level"/g) || []).length, 84);
+const fallbackDOM = new JSDOM(html.slice(html.indexOf('<!-- STUDY GUIDE GENERATED START -->'), html.indexOf('<!-- STUDY GUIDE GENERATED END -->')));
 for (const l of lessons) for (const level of levels) {
   assert.ok(html.includes(l.levels[level].objective.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;')), 'Fallback objective: ' + l.id + '/' + level);
+  for (const source of l.levels[level].example.quran_sources || []) {
+    const document = fallbackDOM.window.document;
+    assert.equal(document.querySelectorAll('#' + source.id).length, 1, 'Unique fallback source note');
+    assert.ok(document.getElementById(source.id).textContent.includes(source.text));
+    assert.equal(document.getElementById(source.id).querySelector('a').getAttribute('href'), source.url);
+  }
 }
+fallbackDOM.window.close();
 class LocalAssets extends ResourceLoader {
   fetch(url) {
     const u = new URL(url);
@@ -95,6 +103,23 @@ async function click(w, d, selector) {const el = d.querySelector(selector); asse
     assert.equal(d.querySelectorAll('#sg-task>ol>li').length,l.levels[level].tasks.length);
     assert.equal(d.querySelectorAll('.sg-feedback>ol>li').length,l.levels[level].feedback.length);
     for (const a of d.querySelectorAll('.sg-readings a[data-sg-source]')) assert.ok(a.getAttribute('href').includes('&lesson=' + l.id + '&level=' + level));
+    const quranSources = l.levels[level].example.quran_sources || [];
+    assert.equal(d.querySelectorAll('.sg-lesson .sg-example .sg-source-note').length, quranSources.length);
+    for (const source of quranSources) {
+      const noteId = 'sg-source-' + source.id;
+      const note = d.getElementById(noteId);
+      assert.equal(d.querySelectorAll('#' + noteId).length, 1, 'Unique enhanced source note');
+      assert.equal(note.querySelector('a').getAttribute('href'), source.url);
+      assert.ok(note.textContent.includes(source.text));
+      const call = d.querySelector('[data-sg-note="' + noteId + '"]');
+      assert.equal(call.parentElement.previousSibling.textContent.endsWith(source.quote), true, 'Source call follows its quotation');
+      await click(w, d, '[data-sg-note="' + noteId + '"]');
+      assert.equal(w.location.hash, url(l.id, level), 'Source-note call preserves the lesson route');
+      assert.equal(d.activeElement.id, noteId, 'Source-note call focuses the local note');
+      w.dispatchEvent(new w.Event('beforeprint'));
+      assert.ok(d.getElementById(noteId).textContent.includes(source.text), 'Source note remains available for lesson printing');
+      w.dispatchEvent(new w.Event('afterprint'));
+    }
   }
   // Each question's actual reader jump, next assigned passage and contextual return.
   for (const l of lessons) {
@@ -174,5 +199,5 @@ async function click(w, d, selector) {const el = d.querySelector(selector); asse
   assert.equal(direct.w.location.hash,url('transmission','intermediate'));
   assert.equal(direct.errors.length,0,direct.errors.join('\n'));
   direct.dom.window.close();
-  console.log('PASS: all 84 card footer destinations and all three level clicks; all 84 lessons render; 28 reading sequences and contextual returns; feedback/scroll, filters, keyboard focus, independent progress, print, share, global search, preferences, direct URLs and malformed URLs.');
+  console.log('PASS: all 84 card footer destinations and all three level clicks; all 84 lessons render; 28 reading sequences and contextual returns; feedback/scroll, filters, keyboard focus, independent progress, Qur’an source notes in enhanced/fallback/print views, print, share, global search, preferences, direct URLs and malformed URLs.');
 })().catch(error => {console.error(error);process.exitCode=1;});

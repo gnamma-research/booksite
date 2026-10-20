@@ -1,26 +1,42 @@
 # Darūrī — current release and coordination record
 
-Updated 20 October 2026. Read the shared [active release coordination note](DARURI_RELEASE_COORDINATION_2026-10-20.md) alongside this record, [the PDF manifest](pdf-editions-manifest.json), and the latest `master` source when integrating parallel work. The dated 19 October handoffs are historical; their 170-page PDF references and superseded control descriptions do not describe this release.
+Updated 20 October 2026. Read the shared [active release coordination note](DARURI_RELEASE_COORDINATION_2026-10-20.md) alongside this record, [the PDF manifest](pdf-editions-manifest.json), and the latest `master` source when integrating parallel work. The dated 19 October handoffs are historical; their 170-page PDF references and superseded control descriptions do not describe the citation release.
 
 Canonical repository: `gnamma-research/booksite`, branch `master`.
 
 Canonical reader: [https://gnamma-research.github.io/booksite/daruri/](https://gnamma-research.github.io/booksite/daruri/).
 
-## Verified publication base
+## Citation release — `daruri6-sources-20261020`
 
-The five-PDF release was published in `f7fe0c8460e7d70f141166fba277f9ed7d9bd7d5`. Commit `9071d49a584e807b7000a7446843d4da2e9aa92b` then versioned the changed PDF/data URLs for returning readers. Its GitHub Pages deployment completed successfully. The study guide was then published in `e5e44918994cfa568553f3af6fbc68b045417a9c`. The contents integration accompanying this record preserves that newer release; these historical commit references are not instructions to check out an older revision.
+**Artifact validation complete: all five reading PDFs and the study companion are built and checked locally.** The central release handoff records the publication commit and subsequent deployed-byte verification. The citation work incorporates the current public base `c4958e20dfca358e702570dc1f2f8c23bb9fec89`, including the study-card link correction and shared monochrome browser printing recorded below.
 
-| Stable website filename | Edition | Current pages |
+| Stable website filename | Edition | Pages |
 | --- | --- | ---: |
-| `daruri.pdf` | Large bilingual reference, with full headwords | 261 |
-| `daruri-study.pdf` | Bilingual study | 129 |
-| `daruri-english.pdf` | English reading | 98 |
-| `daruri-arabic.pdf` | Arabic reading | 81 |
-| `daruri-arabic-vowelled.pdf` | Arabic fully vowelled | 92 |
+| `daruri.pdf` | Bilingual scholarly reference, with full headwords | 254 |
+| `daruri-study.pdf` | Bilingual study | 139 |
+| `daruri-english.pdf` | English reading | 105 |
+| `daruri-arabic.pdf` | Arabic reading | 80 |
+| `daruri-arabic-vowelled.pdf` | Arabic fully vowelled | 76 |
 
-`daruri.pdf` is the destination for reader text and heading-reference links. The other four editions are separate download choices. The manifest records exact source filenames, byte sizes, SHA-256 checksums, page counts and the default-for-text-links flag; update it with every PDF replacement. The current files use the 20 October daruri4 release and its separate vowelled Arabic edition, with the contents-clarity correction recorded in the manifest. Existing physical body pages are preserved; original-heading contents are appended to the reference on pp. 260–261.
+**Citation policy:** Qur’an source footnotes appear in all five editions. Hadith source references belong to the scholarly edition only. Arabic and English quotations in the bilingual editions share a source note. Sources are identified separately from translation, textual and interpretive comments; qualifications for composites, ellipses and transmitted readings are retained.
 
-The separate `daruri-study-guide.pdf` companion is also published: **85 pages**, generated from the same **28 questions × three levels (84 lesson versions)** as the website guide. It is additional to the five reading editions above and does not replace `daruri-study.pdf`. Its checksum and size are recorded under `companions` in the PDF manifest; build provenance is in `study/companion-metadata.json`.
+The scholarly main-text apparatus contains **628 notes**: the previous 542 notes, with **22 mixed notes split while preserving their commentary**, plus **53 Qur’an source notes and 33 hadith source notes**. The bilingual study edition contains **121 distinct footnotes**. The release preserves **259 section records** (258 numbered authorial sections and the separate colophon), **416 aligned passages**, **157 full-headword articles** and **153 term dossiers**. The authorial text, existing translations, original headings and Bou Akl source distinctions remain intact.
+
+The scholarly PDF places **Original headings on pp. 4–5** and begins **Editorial section titles on p. 6**. Its new pagination requires a fresh map from stable section IDs to physical PDF pages. The release updater rederives **565 static destinations** (306 contents links and 259 heading-popup links) and **259 dynamic `sections[].pdfPage` values** from the rebuilt scholarly PDF metadata. Source-edition Arabic page references remain a separate system.
+
+`daruri.pdf` remains the destination for reader text and heading-reference links. The other four editions remain separate download choices. The manifest is the authoritative record of each current filename, byte size, SHA-256 checksum, page count and default-for-text-links flag. Both download panels, their accessible labels, the offline ZIP and service-worker versions must accompany each PDF replacement.
+
+The separate `daruri-study-guide.pdf` companion has **85 pages**, generated from the same **28 questions × three levels (84 lesson versions)** as the website guide. It now includes numbered source footnotes for “Ask the village” (Qur’an 12:82, companion p. 57) and “Uff” (Qur’an 17:23, companion p. 65). Both appear on the same page as their quotations, and the shared website examples have corresponding local source notes in enhanced and no-JavaScript views. This companion is additional to the five reading editions and does not replace `daruri-study.pdf`. Its current checksum and size belong under `companions` in the manifest; build provenance is in `study/companion-metadata.json`. The standalone Historical Lexicon is a separate companion; its updated central copy does not add a sixth reading edition.
+
+### Canonical files for future Darūrī and Usul chats
+
+Use [this record on current `master`](https://github.com/gnamma-research/booksite/blob/master/daruri/CURRENT_RELEASE.md), the [current PDF manifest](https://github.com/gnamma-research/booksite/blob/master/daruri/pdf-editions-manifest.json), and the [live reader](https://gnamma-research.github.io/booksite/daruri/) to identify the release. Central copies in the Usul project should point here and match the manifest hashes; dated handoffs and ZIPs retain their historical provenance.
+
+Reproducible publication sources are `edition-r3-20261020.js`, `dictionary-r3-20261020.js`, the source mappings under `build/data/`, and [build/build_editions.py](build/build_editions.py). [build/update_release.py](build/update_release.py) provides read-only dry-run/check modes and the final metadata/page-map update. The current source-reference release checks are recorded in [qa/source-reference-release-20261020.json](qa/source-reference-release-20261020.json). Preserve the printed Arabic base, private Bou Akl material and manuscript-evidence qualifications recorded in earlier handoffs; the generated PDFs are reading products, not replacement witnesses.
+
+## Publication history before the citation release
+
+The five-PDF release was published in `f7fe0c8460e7d70f141166fba277f9ed7d9bd7d5`. Commit `9071d49a584e807b7000a7446843d4da2e9aa92b` then versioned the changed PDF/data URLs for returning readers. Its GitHub Pages deployment completed successfully. The study guide was published in `e5e44918994cfa568553f3af6fbc68b045417a9c`. The audit began from the later public source `4ca2f7bba12092b05ceb1d51536d5d8c850fa216`. These commit references document the timeline; current `master` is the integration source.
 
 ## Published contents update
 
@@ -34,25 +50,25 @@ Commit `27213bbeeb8f4a04a29f1862261b938721a48688` publishes the contents integra
 
 The existence of a heading in the Arabic edition is not by itself proof of its manuscript provenance or attribution to Ibn Rushd. Keep printed-source headings, editorial navigation labels and later manuscript records distinct.
 
-## Parallel work and publication status
+## Earlier contents and guide workstreams
 
-| Workstream | Recorded scope | Verified integration status at this audit |
+| Workstream | Recorded scope | Status of the earlier contents release |
 | --- | --- | --- |
-| “Check Daruri Text Ways” | Clarify the two contents systems in the PDFs as well as on the website; regenerate and upload the affected PDFs. | Completed in this release: all five reading PDFs are corrected, verified and included with matching metadata/cache URLs. Reference 261 pages; others 129/98/81/92. Existing body destinations are unchanged. See `qa/pdf-contents-audit-20261020.json`. |
+| “Check Daruri Text Ways” | Clarify the two contents systems in the PDFs as well as on the website; regenerate and upload the affected PDFs. | Completed before the citation rebuild: reference 261 pages, others 129/98/81/92. Original-heading contents were appended on pp. 260–261, with existing body destinations unchanged. See the historical `qa/pdf-contents-audit-20261020.json`. The current citation pagination is recorded above. |
 | “Study Guide Improvement Review” | Develop basic, intermediate and advanced study routes across the 28 study questions, and correct identified issues. | Published in `e5e44918994cfa568553f3af6fbc68b045417a9c`: all 84 lesson versions across 28 questions and an 85-page companion, with shared lesson sources and reader integration. Preserve these files and any subsequent guide fixes when merging contents/PDF work. |
 
-These statuses come from recorded updates and repository inspection. They do not imply acknowledgement from another live chat. The shared coordination note was published at `6a2fd23ffcfd670c82a6b4e54b9a11186f4007f1`, followed by the study-guide release at `e5e44918994cfa568553f3af6fbc68b045417a9c`. This record incorporates the published guide, the original-heading hierarchy, and the completed five-PDF contents correction. The PDF audit verifies 6,823 existing links, 1,693 existing bookmarks and 646 unchanged pages; all 15 changed/new pages were rendered and inspected. Recheck current artifacts and `master` before integrating; this table is not evidence that work remains unfinished indefinitely.
+These historical statuses come from recorded updates and repository inspection. They do not imply acknowledgement from another live chat. The shared coordination note was published at `6a2fd23ffcfd670c82a6b4e54b9a11186f4007f1`, followed by the study-guide release at `e5e44918994cfa568553f3af6fbc68b045417a9c`. The earlier PDF contents audit verified 6,823 existing links, 1,693 existing bookmarks and 646 unchanged pages; all 15 changed/new pages were rendered and inspected. Those figures describe the contents patch, not the later citation rebuild. Recheck current artifacts and `master` before integrating.
 
 All current workstreams remain authorized to update both PDFs and reader wherever their task requires it. This record is a merge guide, not a file lock or a freeze on later improvements.
 
 ## Merge and publication invariants
 
 1. Fetch the latest `master` HEAD and relevant blobs immediately before preparing a publication. Apply surgical changes to that current source. Do not replace `daruri/index.html` with an older ZIP, PDF-derived reconstruction or stale handoff copy.
-2. Preserve unrelated work, especially the study-guide runtime, `study/` lesson sources, `daruri-study-guide.pdf`, reader integration, themes, Arabic/English and vowel controls, focus modes, numbered dock, dictionary/context returns, scholarly text, notes, source labels and stable section anchors. The current corpus has 259 section records, including the separate colophon, and 416 aligned passages.
+2. Preserve unrelated work, especially the study-guide runtime, `study/` lesson sources, `daruri-study-guide.pdf`, shared `print.css`/`print.js`, reader integration, themes, Arabic/English and vowel controls, focus modes, numbered dock, dictionary/context returns, scholarly text, notes, source labels and stable section anchors. The current corpus has 259 section records, including the separate colophon, and 416 aligned passages.
 3. Publish related files in one commit/tree, using a compare-and-swap `expected_sha` check on the branch update with `force: false`. If HEAD changed, fetch it and merge the actual differences before retrying. Never force an older whole-file version over another chat's work.
 4. Replace PDFs at the stable filenames above. Every reference-PDF replacement requires a fresh **section-ID to physical-PDF-page map**, derived from the new PDF's bookmarks or verified destinations. Do not apply a global page offset: sections that formerly shared a page can move to different pages.
 5. Update all **306 static contents PDF links** and **259 static heading-popup PDF links**—565 static destinations in total—plus all **259 dynamic `sections[].pdfPage` values**. Update the displayed PDF page text and accessible labels with the destinations. Source-edition Arabic pagination is a separate reference system and must not be overwritten with Gnamma PDF page numbers.
-6. Update the manifest's source filenames, byte sizes, SHA-256 checksums and page counts. Keep both five-link download panels, their edition descriptions/page counts, and the five main PDF entries in `download-bundle.js` consistent. Preserve the published study-guide companion/runtime assets, supplementary Bou Akl variant report and the rest of the offline package.
+6. Update the manifest's source filenames, byte sizes, SHA-256 checksums and page counts. Keep both five-link download panels, their edition descriptions/page counts, and the five main PDF entries in `download-bundle.js` consistent. Any revised study companion must match its build metadata and receive matching manifest and cache updates; preserve its runtime, the supplementary Bou Akl variant report, print assets and the rest of the offline package.
 7. Version changed PDF/data/script URLs and align service-worker cache URLs with them. Increment the service-worker cache name for the release. Returning readers must receive the new page map together with its matching PDF.
 8. Run the relevant checks described in [qa/EDITING_LARGE_READER.md](qa/EDITING_LARGE_READER.md), including heading, language and focus checks. Verify the deployed files and navigation, including both contents routes, filtered ancestor paths, return position, all five PDF downloads and the offline bundle. Distinguish source checks, browser checks and real-device checks in the release report.
 
@@ -60,8 +76,8 @@ When parallel work is incorporated, update this record with its actual artifact/
 
 ## Study-card links correction — 20 October 2026
 
-The Foundations, Close Reading and Research labels at the bottom of all 28 study cards are now actual links to the question at the selected level. Each link has a 44-pixel minimum tap height and an accessible label naming the question; heading links remain available. The guide integration check verifies all 84 footer destinations, clicks through the nested arrow at all three levels, and checks heading focus. Runtime and stylesheet URLs use `20261020-study2`; the service-worker cache is refreshed while preserving the newer contents/PDF versions. This interface correction does not alter lesson sources or PDF content.
+Commit `3dafec5db27f4b1ff59eec7e9a92f496055a7a55` made the Foundations, Close Reading and Research labels at the bottom of all 28 study cards actual links to the question at the selected level. Each link has a 44-pixel minimum tap height and an accessible label naming the question; heading links remain available. The guide integration check verifies all 84 footer destinations, clicks through the nested arrow at all three levels, and checks heading focus. At that commit, runtime and stylesheet URLs used `20261020-study2`, with a refreshed service-worker cache. The subsequent print and citation updates retain this behavior while advancing the changed asset versions. The link correction itself did not alter lesson sources or PDF content.
 
 ## Monochrome website printing — 20 October 2026
 
-A shared `print.css` now applies to the reader, study guide, contents/reference views and standalone dictionary. It overrides every screen palette with white paper and black text, removes decorative images/controls/fills/shadows, uses English serif and Arabic Naskh-style font stacks, and retains fine rules and semantic line diagrams. Print layouts release scrolling containers and long passage pairs for pagination. Browser printing and lesson buttons share `print.js`; lesson disclosures and the current dictionary view are prepared for print and restored afterwards, and printed lessons identify their study level. The offline ZIP and service-worker cache include both print assets. Screen themes and the existing PDF editions are not reformatted by this website-print change.
+Commit `c4958e20dfca358e702570dc1f2f8c23bb9fec89` added a shared `print.css` for the reader, study guide, contents/reference views and standalone dictionary. It overrides every screen palette with white paper and black text, removes decorative images/controls/fills/shadows, uses English serif and Arabic Naskh-style font stacks, and retains fine rules and semantic line diagrams. Print layouts release scrolling containers and long passage pairs for pagination. Browser printing and lesson buttons share `print.js`; lesson disclosures and the current dictionary view are prepared for print and restored afterwards, and printed lessons identify their study level. The offline ZIP and service-worker cache include both print assets. Screen themes and the PDF editions were not reformatted by that website-print change. Its guide QA passes on the citation-integrated reader, including disclosure preparation/restoration, all 84 lesson versions, all three footer-link levels, both Qur’an source-note calls without route changes, matching no-JavaScript notes and notes retained during printing.

@@ -1,0 +1,960 @@
+{
+  "schema_version": 1,
+  "scope": "Additive source notes for the scholarly edition only. Notes contain human-readable collection and report numbers; source_urls supplies optional link metadata. No main-text wording changes are proposed.",
+  "notes_by_section": {
+    "R31": {
+      "id": "HAD-R031",
+      "section_id": 31,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "For prayer in a bathhouse, see Sunan Abī Dāwūd 492; for prayer where camels rest, Ṣaḥīḥ Muslim 360a. These are separate reports. The precise source of the prohibition concerning the valley mentioned here remains unidentified.",
+      "source_urls": [
+        "https://sunnah.com/abudawud:492",
+        "https://sunnah.com/muslim:360a"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 492, Prayer (bathhouse)",
+          "url": "https://sunnah.com/abudawud:492"
+        },
+        {
+          "reference": "Ṣaḥīḥ Muslim 360a, Menstruation (camel resting places)",
+          "url": "https://sunnah.com/muslim:360a"
+        }
+      ],
+      "audit_ids": [
+        "H43"
+      ],
+      "related_existing_note_ids": [
+        "N015"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": true,
+      "preserve_body_wording": true
+    },
+    "R49": {
+      "id": "HAD-R049",
+      "section_id": 49,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "Sunan Abī Dāwūd 4928, with the fuller opening إني نهيت عن قتل المصلين. Ibn Rushd quotes the report in abbreviated form.",
+      "source_urls": [
+        "https://sunnah.com/abudawud:4928"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 4928, Adab",
+          "url": "https://sunnah.com/abudawud:4928"
+        }
+      ],
+      "audit_ids": [
+        "H01"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R64": {
+      "id": "HAD-R064",
+      "section_id": 64,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "For the seven aḥruf, see the report of ʿUmar and Hishām in Ṣaḥīḥ al-Bukhārī 4992; the term should not be silently equated with a later classification of canonical readings. The expiation example appears to refer to the reading فصيام ثلاثة أيام متتابعات, transmitted from Ibn Masʿūd and his school, and from Ubayy, in al-Ṭabarī, Jāmiʿ al-bayān, on Qurʾān 5:89. Al-Ṭabarī expressly distinguishes this addition from the text in the muṣḥafs. For revelation of the basmala marking the division between sūras, compare Sunan Abī Dāwūd 788; that report does not itself establish obligatory recitation in prayer.",
+      "source_urls": [
+        "https://sunnah.com/bukhari:4992",
+        "https://quran.ksu.edu.sa/tafseer/tabary/sura5-aya89.html",
+        "https://sunnah.com/abudawud:788"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 4992, Virtues of the Qurʾān",
+          "url": "https://sunnah.com/bukhari:4992"
+        },
+        {
+          "reference": "Al-Ṭabarī, Jāmiʿ al-bayān, commentary on Qurʾān 5:89; displayed reports 9751–9756 (Ibn Masʿūd and his companions), also 9750 (Ubayy)",
+          "url": "https://quran.ksu.edu.sa/tafseer/tabary/sura5-aya89.html"
+        },
+        {
+          "reference": "Sunan Abī Dāwūd 788, Prayer (basmala marking sūra divisions)",
+          "url": "https://sunnah.com/abudawud:788"
+        }
+      ],
+      "audit_ids": [
+        "H41",
+        "H42"
+      ],
+      "related_existing_note_ids": [
+        "N025"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R82": {
+      "id": "HAD-R082",
+      "section_id": 82,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "The first quotation has parallels in Jāmiʿ al-Tirmidhī 2658 and Sunan Abī Dāwūd 3660, with different wording for retaining and conveying what was heard; Ibn Rushd’s formulation is retained. For the abbreviated report about a continuing group of the community, see Ṣaḥīḥ al-Bukhārī 7311 and its chapter heading.",
+      "source_urls": [
+        "https://sunnah.com/tirmidhi:2658",
+        "https://sunnah.com/abudawud:3660",
+        "https://sunnah.com/bukhari:7311"
+      ],
+      "source_references": [
+        {
+          "reference": "Jāmiʿ al-Tirmidhī 2658, Knowledge",
+          "url": "https://sunnah.com/tirmidhi:2658"
+        },
+        {
+          "reference": "Sunan Abī Dāwūd 3660, Knowledge",
+          "url": "https://sunnah.com/abudawud:3660"
+        },
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 7311, Holding Fast to the Qurʾān and Sunna",
+          "url": "https://sunnah.com/bukhari:7311"
+        }
+      ],
+      "audit_ids": [
+        "H02",
+        "H03"
+      ],
+      "related_existing_note_ids": [
+        "N033"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R88": {
+      "id": "HAD-R088",
+      "section_id": 88,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "For Fāṭima bt. Qays’s report and ʿUmar’s response, see Jāmiʿ al-Tirmidhī 1180. The classification of that response as rejection of an unknown transmitter belongs to the argument summarized by Ibn Rushd. The precise source of the separate rejection attributed here to ʿAlī remains unidentified.",
+      "source_urls": [
+        "https://sunnah.com/tirmidhi:1180"
+      ],
+      "source_references": [
+        {
+          "reference": "Jāmiʿ al-Tirmidhī 1180, Divorce and Liʿān",
+          "url": "https://sunnah.com/tirmidhi:1180"
+        }
+      ],
+      "audit_ids": [
+        "H04",
+        "H05"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": true,
+      "preserve_body_wording": true
+    },
+    "R89": {
+      "id": "HAD-R089",
+      "section_id": 89,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "Sunan Abī Dāwūd 2340; Jāmiʿ al-Tirmidhī 691. Al-Tirmidhī records disagreement over the transmission and states that most transmitters from Simāk narrate it in mursal form, omitting the Companion between ʿIkrima and the Prophet. This qualification concerns the transmission of the report used in the argument.",
+      "source_urls": [
+        "https://sunnah.com/abudawud:2340",
+        "https://sunnah.com/tirmidhi:691"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 2340, Fasting",
+          "url": "https://sunnah.com/abudawud:2340"
+        },
+        {
+          "reference": "Jāmiʿ al-Tirmidhī 691, Fasting",
+          "url": "https://sunnah.com/tirmidhi:691"
+        }
+      ],
+      "audit_ids": [
+        "H06"
+      ],
+      "related_existing_note_ids": [
+        "N035"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R112": {
+      "id": "HAD-R112",
+      "section_id": 112,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "The allusion is to the report of Busra bt. Ṣafwān requiring ablution after touching the penis: Sunan Abī Dāwūd 181.",
+      "source_urls": [
+        "https://sunnah.com/abudawud:181"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 181, Purification",
+          "url": "https://sunnah.com/abudawud:181"
+        }
+      ],
+      "audit_ids": [
+        "H07"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R118": {
+      "id": "HAD-R118",
+      "section_id": 118,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "Compare ʿĀʾisha’s report in Ṣaḥīḥ al-Bukhārī 350: prayer was initially prescribed as two cycles, the traveller’s prayer remained so, and the resident’s prayer was increased. Ibn Rushd’s qualification, ‘if it is correct’, is retained.",
+      "source_urls": [
+        "https://sunnah.com/bukhari:350"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 350, Prayer",
+          "url": "https://sunnah.com/bukhari:350"
+        }
+      ],
+      "audit_ids": [
+        "H08"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R119": {
+      "id": "HAD-R119",
+      "section_id": 119,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "Ṣaḥīḥ Muslim 977a records permission to keep sacrificial meat after an earlier prohibition on keeping it beyond three days. The same report supplies a concrete example of the abrogation formula discussed in §129.",
+      "source_urls": [
+        "https://sunnah.com/muslim:977a"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ Muslim 977a, Funerals",
+          "url": "https://sunnah.com/muslim:977a"
+        }
+      ],
+      "audit_ids": [
+        "H09"
+      ],
+      "related_existing_note_ids": [
+        "N046"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R120": {
+      "id": "HAD-R120",
+      "section_id": 120,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "For the prohibition of temporary marriage, see Ṣaḥīḥ Muslim 1406d. For the earlier observance of ʿĀshūrāʾ and the subsequent obligation of Ramaḍān, see Ṣaḥīḥ al-Bukhārī 2002.",
+      "source_urls": [
+        "https://sunnah.com/muslim:1406d",
+        "https://sunnah.com/bukhari:2002"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ Muslim 1406d, Marriage",
+          "url": "https://sunnah.com/muslim:1406d"
+        },
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 2002, Fasting",
+          "url": "https://sunnah.com/bukhari:2002"
+        }
+      ],
+      "audit_ids": [
+        "H10",
+        "H11"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R121": {
+      "id": "HAD-R121",
+      "section_id": 121,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "‘No bequest for an heir’: Sunan Abī Dāwūd 2870. For ʿUmar’s report concerning the stoning verse, compare Ṣaḥīḥ Muslim 1691a. The latter concerns reported former recitation, not a verse in the present muṣḥaf. Ibn Rushd expressly questions whether such former Qurʾānic status may be accepted without recurrent transmission.",
+      "source_urls": [
+        "https://sunnah.com/abudawud:2870",
+        "https://sunnah.com/muslim:1691a"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 2870, Wills",
+          "url": "https://sunnah.com/abudawud:2870"
+        },
+        {
+          "reference": "Ṣaḥīḥ Muslim 1691a, Prescribed Punishments",
+          "url": "https://sunnah.com/muslim:1691a"
+        }
+      ],
+      "audit_ids": [
+        "H12",
+        "H13"
+      ],
+      "related_existing_note_ids": [
+        "N047",
+        "N048",
+        "N049"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R123": {
+      "id": "HAD-R123",
+      "section_id": 123,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "For the people of Qubāʾ changing their direction in prayer after receiving a report that the qibla had changed, see Ṣaḥīḥ al-Bukhārī 403.",
+      "source_urls": [
+        "https://sunnah.com/bukhari:403"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 403, Prayer",
+          "url": "https://sunnah.com/bukhari:403"
+        }
+      ],
+      "audit_ids": [
+        "H14"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R124": {
+      "id": "HAD-R124",
+      "section_id": 124,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "‘No bequest for an heir’: Sunan Abī Dāwūd 2870; see also §121. ‘God has now appointed a way for them’ and the penalties that follow: Ṣaḥīḥ Muslim 1690a. These are separately transmitted reports; the latter begins with خذوا عني خذوا عني before the portion quoted here.",
+      "source_urls": [
+        "https://sunnah.com/abudawud:2870",
+        "https://sunnah.com/muslim:1690a"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 2870, Wills",
+          "url": "https://sunnah.com/abudawud:2870"
+        },
+        {
+          "reference": "Ṣaḥīḥ Muslim 1690a, Prescribed Punishments",
+          "url": "https://sunnah.com/muslim:1690a"
+        }
+      ],
+      "audit_ids": [
+        "H12",
+        "H15"
+      ],
+      "related_existing_note_ids": [
+        "N050"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R126": {
+      "id": "HAD-R126",
+      "section_id": 126,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "The report of Muʿādh’s proposed method of judgement is in Sunan Abī Dāwūd 3592 and Jāmiʿ al-Tirmidhī 1327–1328. At 1328 al-Tirmidhī expressly states that he does not regard its chain as connected. The report’s use here in legal argument should be read with that transmission qualification.",
+      "source_urls": [
+        "https://sunnah.com/abudawud:3592",
+        "https://sunnah.com/tirmidhi:1327",
+        "https://sunnah.com/tirmidhi:1328"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 3592, Judiciary",
+          "url": "https://sunnah.com/abudawud:3592"
+        },
+        {
+          "reference": "Jāmiʿ al-Tirmidhī 1327–1328, Judgements",
+          "url": "https://sunnah.com/tirmidhi:1327"
+        },
+        {
+          "reference": "Al-Tirmidhī’s chain observation at 1328",
+          "url": "https://sunnah.com/tirmidhi:1328"
+        }
+      ],
+      "audit_ids": [
+        "H16"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R129": {
+      "id": "HAD-R129",
+      "section_id": 129,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "This is a schematic formula, with ‘such-and-such’ standing for the earlier prohibition. For a concrete transmitted example, compare Ṣaḥīḥ Muslim 977a on visiting graves and storing sacrificial meat; see also §119.",
+      "source_urls": [
+        "https://sunnah.com/muslim:977a"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ Muslim 977a, Funerals",
+          "url": "https://sunnah.com/muslim:977a"
+        }
+      ],
+      "audit_ids": [
+        "H09"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R131": {
+      "id": "HAD-R131",
+      "section_id": 131,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "The no-error formulations have a parallel in Jāmiʿ al-Tirmidhī 2167, with ‘upon misguidance’ (على ضلالة). Al-Tirmidhī calls this route gharīb; Darussalam grades it weak. The Paradise clause is separately transmitted in 2165, with من أراد بحبوحة الجنة; al-Tirmidhī calls that report ḥasan ṣaḥīḥ gharīb. ‘God’s hand is with the congregation’ occurs independently in 2166. These distinct reports require separate references even where their clauses are joined in the text. Their individual chains should be distinguished from Ibn Rushd’s claim of recurrent transmission in their shared meaning.",
+      "source_urls": [
+        "https://sunnah.com/tirmidhi:2167",
+        "https://sunnah.com/tirmidhi:2165",
+        "https://sunnah.com/tirmidhi:2166"
+      ],
+      "source_references": [
+        {
+          "reference": "Jāmiʿ al-Tirmidhī 2167, Trials",
+          "url": "https://sunnah.com/tirmidhi:2167"
+        },
+        {
+          "reference": "Jāmiʿ al-Tirmidhī 2165, Trials",
+          "url": "https://sunnah.com/tirmidhi:2165"
+        },
+        {
+          "reference": "Jāmiʿ al-Tirmidhī 2166, Trials",
+          "url": "https://sunnah.com/tirmidhi:2166"
+        }
+      ],
+      "audit_ids": [
+        "H17",
+        "H18",
+        "H19"
+      ],
+      "related_existing_note_ids": [
+        "N052"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R135": {
+      "id": "HAD-R135",
+      "section_id": 135,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "Compare Jāmiʿ al-Tirmidhī 2167, which uses ‘upon misguidance’ (على ضلالة). See the source note to §131 for the different formulations, their separate transmission, and the distinction from Ibn Rushd’s argument about recurrent transmission in meaning.",
+      "source_urls": [
+        "https://sunnah.com/tirmidhi:2167"
+      ],
+      "source_references": [
+        {
+          "reference": "Jāmiʿ al-Tirmidhī 2167, Trials",
+          "url": "https://sunnah.com/tirmidhi:2167"
+        }
+      ],
+      "audit_ids": [
+        "H17"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R171": {
+      "id": "HAD-R171",
+      "section_id": 171,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "Jāmiʿ al-Tirmidhī 1102 contains both the guardian’s-permission ruling and the woman’s entitlement to the dower. The following statement that a slave woman’s dower belongs to her master is Ibn Rushd’s explanation, as distinguished in note N071.",
+      "source_urls": [
+        "https://sunnah.com/tirmidhi:1102"
+      ],
+      "source_references": [
+        {
+          "reference": "Jāmiʿ al-Tirmidhī 1102, Marriage",
+          "url": "https://sunnah.com/tirmidhi:1102"
+        }
+      ],
+      "audit_ids": [
+        "H20"
+      ],
+      "related_existing_note_ids": [
+        "N071"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R172": {
+      "id": "HAD-R172",
+      "section_id": 172,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "Compare Sunan Abī Dāwūd 2454, ‘Whoever has not resolved upon fasting before dawn’, and Sunan al-Nasāʾī 2334, ‘Whoever has not resolved upon fasting during the night’. Abū Dāwūd also records versions stopping at Ḥafṣa; the cited online text of al-Nasāʾī 2334 labels that route weak. Ibn Rushd’s concise formulation is retained; it recurs in §194.",
+      "source_urls": [
+        "https://sunnah.com/abudawud:2454",
+        "https://sunnah.com/nasai:2334"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 2454, Fasting",
+          "url": "https://sunnah.com/abudawud:2454"
+        },
+        {
+          "reference": "Sunan al-Nasāʾī 2334, Fasting",
+          "url": "https://sunnah.com/nasai:2334"
+        }
+      ],
+      "audit_ids": [
+        "H21"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R173": {
+      "id": "HAD-R173",
+      "section_id": 173,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "Ṣaḥīḥ al-Bukhārī 1483. Ibn Rushd abbreviates the report specifying a tenth for crops watered by rain or natural water and half a tenth for crops irrigated by drawing water.",
+      "source_urls": [
+        "https://sunnah.com/bukhari:1483"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 1483, Zakāt",
+          "url": "https://sunnah.com/bukhari:1483"
+        }
+      ],
+      "audit_ids": [
+        "H22"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R176": {
+      "id": "HAD-R176",
+      "section_id": 176,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "The Buḍāʿa-well report is in Sunan Abī Dāwūd 66. Its wording is الماء طهور لا ينجسه شيء, ‘Water is purifying; nothing renders it impure’. The opening خلق الله, ‘God created’, in Ibn Rushd’s quotation is absent from that version.",
+      "source_urls": [
+        "https://sunnah.com/abudawud:66"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 66, Purification",
+          "url": "https://sunnah.com/abudawud:66"
+        }
+      ],
+      "audit_ids": [
+        "H23"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R189": {
+      "id": "HAD-R189",
+      "section_id": 189,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "The two witness formulations are retained as quoted by Ibn Rushd. Their precise transmitted sources have not been identified for this edition; a report concerning a guardian alone would not establish these two witness clauses.",
+      "source_urls": [],
+      "source_references": [],
+      "audit_ids": [
+        "H24"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": true,
+      "preserve_body_wording": true
+    },
+    "R191": {
+      "id": "HAD-R191",
+      "section_id": 191,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "For ‘the thread and the needle’, see Sunan al-Nasāʾī 3688; note N083 explains the vocabulary. For garlic and entry to the mosque, see Ṣaḥīḥ al-Bukhārī 855; for drinking from silver vessels, al-Bukhārī 5634. For the exchange of wheat and the other commodities, compare Ṣaḥīḥ Muslim 1587c. That report names six commodities: the four foods—wheat, barley, dates and salt—together with gold and silver. Ibn Rushd’s ‘four’ refers to the foods. See also §§212, 215 and 218.",
+      "source_urls": [
+        "https://sunnah.com/nasai:3688",
+        "https://sunnah.com/bukhari:855",
+        "https://sunnah.com/bukhari:5634",
+        "https://sunnah.com/muslim:1587c"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan al-Nasāʾī 3688, Gifts",
+          "url": "https://sunnah.com/nasai:3688"
+        },
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 855, Call to Prayer",
+          "url": "https://sunnah.com/bukhari:855"
+        },
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 5634, Drinks",
+          "url": "https://sunnah.com/bukhari:5634"
+        },
+        {
+          "reference": "Ṣaḥīḥ Muslim 1587c, Transactions",
+          "url": "https://sunnah.com/muslim:1587c"
+        }
+      ],
+      "audit_ids": [
+        "H25",
+        "H26",
+        "H27",
+        "H28"
+      ],
+      "related_existing_note_ids": [
+        "N081",
+        "N082",
+        "N083"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R194": {
+      "id": "HAD-R194",
+      "section_id": 194,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "For the nightly intention to fast, compare Sunan Abī Dāwūd 2454 and Sunan al-Nasāʾī 2334; the wording and transmission variants are noted at §172. ‘Whoever has caught one cycle of the prayer has caught the prayer’ is in Ṣaḥīḥ al-Bukhārī 580.",
+      "source_urls": [
+        "https://sunnah.com/abudawud:2454",
+        "https://sunnah.com/nasai:2334",
+        "https://sunnah.com/bukhari:580"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 2454, Fasting",
+          "url": "https://sunnah.com/abudawud:2454"
+        },
+        {
+          "reference": "Sunan al-Nasāʾī 2334, Fasting",
+          "url": "https://sunnah.com/nasai:2334"
+        },
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 580, Prayer Times",
+          "url": "https://sunnah.com/bukhari:580"
+        }
+      ],
+      "audit_ids": [
+        "H21",
+        "H29"
+      ],
+      "related_existing_note_ids": [
+        "N085",
+        "N086"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R195": {
+      "id": "HAD-R195",
+      "section_id": 195,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "The grazing-sheep rule summarizes the zakāt schedule transmitted in Abū Bakr’s letter: Ṣaḥīḥ al-Bukhārī 1454, which specifies وفي صدقة الغنم في سائمتها. For clientage belonging to the emancipator, see al-Bukhārī 6754, whose wording فإنما الولاء لمن أعتق preserves the restrictive innamā discussed here.",
+      "source_urls": [
+        "https://sunnah.com/bukhari:1454",
+        "https://sunnah.com/bukhari:6754"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 1454, Zakāt",
+          "url": "https://sunnah.com/bukhari:1454"
+        },
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 6754, Inheritance",
+          "url": "https://sunnah.com/bukhari:6754"
+        }
+      ],
+      "audit_ids": [
+        "H30",
+        "H31"
+      ],
+      "related_existing_note_ids": [
+        "N087"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R212": {
+      "id": "HAD-R212",
+      "section_id": 212,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "For the cat’s remaining water, see Sunan Abī Dāwūd 75. That version reads إنها ليست بنجس إنها من الطوافين عليكم والطوافات; Ibn Rushd’s quotation instead has لأنها and أو. Note N097 preserves this wording distinction. For the silver-vessel report used in the following example, see Ṣaḥīḥ al-Bukhārī 5634.",
+      "source_urls": [
+        "https://sunnah.com/bukhari:5634",
+        "https://sunnah.com/abudawud:75"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 5634, Drinks",
+          "url": "https://sunnah.com/bukhari:5634"
+        },
+        {
+          "reference": "Sunan Abī Dāwūd 75, Purification",
+          "url": "https://sunnah.com/abudawud:75"
+        }
+      ],
+      "audit_ids": [
+        "H27",
+        "H32"
+      ],
+      "related_existing_note_ids": [
+        "N096",
+        "N097"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R215": {
+      "id": "HAD-R215",
+      "section_id": 215,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "‘Hand over the thread and the needle’: Sunan al-Nasāʾī 3688. See §191 and the lexical explanation in N083, to which N099 refers.",
+      "source_urls": [
+        "https://sunnah.com/nasai:3688"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan al-Nasāʾī 3688, Gifts",
+          "url": "https://sunnah.com/nasai:3688"
+        }
+      ],
+      "audit_ids": [
+        "H25"
+      ],
+      "related_existing_note_ids": [
+        "N098",
+        "N099"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R216": {
+      "id": "HAD-R216",
+      "section_id": 216,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "Compare Ṣaḥīḥ al-Bukhārī 2522. Ibn Rushd abbreviates the report for the analogy between male and female slaves. The full report conditions payment for the remaining share on the emancipator’s having sufficient wealth, and specifies the alternative when he does not.",
+      "source_urls": [
+        "https://sunnah.com/bukhari:2522"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 2522, Manumission",
+          "url": "https://sunnah.com/bukhari:2522"
+        }
+      ],
+      "audit_ids": [
+        "H33"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R218": {
+      "id": "HAD-R218",
+      "section_id": 218,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "Compare Ṣaḥīḥ Muslim 1587c; see also §191. Ibn Rushd abbreviates the exchange report. The ‘four’ are its four food commodities—wheat, barley, dates and salt—within a full list that also includes gold and silver.",
+      "source_urls": [
+        "https://sunnah.com/muslim:1587c"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ Muslim 1587c, Transactions",
+          "url": "https://sunnah.com/muslim:1587c"
+        }
+      ],
+      "audit_ids": [
+        "H28"
+      ],
+      "related_existing_note_ids": [
+        "N102",
+        "N103",
+        "N104"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R228": {
+      "id": "HAD-R228",
+      "section_id": 228,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "These clauses come from separately transmitted reports: ‘Pray as you have seen me pray’ is in Ṣaḥīḥ al-Bukhārī 631; for the pilgrimage rites, compare Ṣaḥīḥ Muslim 1297. Muslim’s wording is لتأخذوا مناسككم, whereas Ibn Rushd quotes خذوا عني مناسككم. The latter clause is not part of al-Bukhārī 631.",
+      "source_urls": [
+        "https://sunnah.com/bukhari:631",
+        "https://sunnah.com/muslim:1297"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 631, Call to Prayer",
+          "url": "https://sunnah.com/bukhari:631"
+        },
+        {
+          "reference": "Ṣaḥīḥ Muslim 1297, Pilgrimage",
+          "url": "https://sunnah.com/muslim:1297"
+        }
+      ],
+      "audit_ids": [
+        "H34",
+        "H35"
+      ],
+      "related_existing_note_ids": [],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R229": {
+      "id": "HAD-R229",
+      "section_id": 229,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "For the Companions removing their sandals after seeing the Prophet do so, see Sunan Abī Dāwūd 650. For sacrifice and shaving at al-Ḥudaybiyya, see Ṣaḥīḥ al-Bukhārī 2731–2732. The two incidents provide separate examples of imitation.",
+      "source_urls": [
+        "https://sunnah.com/abudawud:650",
+        "https://sunnah.com/bukhari:2731"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 650, Prayer",
+          "url": "https://sunnah.com/abudawud:650"
+        },
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 2731–2732, Conditions",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ],
+      "audit_ids": [
+        "H36",
+        "H37"
+      ],
+      "related_existing_note_ids": [
+        "N110",
+        "N111"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R243": {
+      "id": "HAD-R243",
+      "section_id": 243,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "Compare Sunan Ibn Mājah 2043: إن الله تجاوز عن أمتي الخطأ والنسيان وما استكرهوا عليه. That version uses تجاوز, ‘has pardoned’, and includes coercion; Ibn Rushd’s quotation uses رفع, ‘has lifted’, and omits the final clause. His wording is retained.",
+      "source_urls": [
+        "https://sunnah.com/ibnmajah:2043"
+      ],
+      "source_references": [
+        {
+          "reference": "Sunan Ibn Mājah 2043, Divorce",
+          "url": "https://sunnah.com/ibnmajah:2043"
+        }
+      ],
+      "audit_ids": [
+        "H38"
+      ],
+      "related_existing_note_ids": [
+        "N117"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    },
+    "R246": {
+      "id": "HAD-R246",
+      "section_id": 246,
+      "kind": "source",
+      "audience": "scholarly",
+      "text": "For ‘water is required because of water’ (الماء من الماء), compare Ṣaḥīḥ Muslim 343a; for bathing on the meeting of the circumcised parts, Muslim 349. These are the two reports contrasted in the example. Note N118 explains the reference to emission and intercourse.",
+      "source_urls": [
+        "https://sunnah.com/muslim:343a",
+        "https://sunnah.com/muslim:349"
+      ],
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ Muslim 343a, Menstruation",
+          "url": "https://sunnah.com/muslim:343a"
+        },
+        {
+          "reference": "Ṣaḥīḥ Muslim 349, Menstruation",
+          "url": "https://sunnah.com/muslim:349"
+        }
+      ],
+      "audit_ids": [
+        "H39",
+        "H40"
+      ],
+      "related_existing_note_ids": [
+        "N118"
+      ],
+      "optional_existing_note_adjustments": [],
+      "contains_unresolved_attribution_notice": false,
+      "preserve_body_wording": true
+    }
+  },
+  "coverage": {
+    "section_count": 33,
+    "note_count": 33,
+    "audit_items_covered": 43,
+    "audit_item_section_occurrences_covered": 50,
+    "verified_additional_support": "R64 includes Abū Dāwūd 788, already verified during the audit, for the basmala allusion.",
+    "all_43_explicit_audit_items_and_their_repetitions_covered": true,
+    "optional_general_historical_annotations": "The audit’s optional, nonspecific contextual annotations are not converted into unsupported source notes.",
+    "existing_notes_rewritten": 0
+  },
+  "integration_notes": [
+    "Map kind=source and audience=scholarly to the edition’s actual note-kind/filter mechanism; do not expose these notes in the four non-scholarly PDF editions.",
+    "Append each proposed note ID to its section’s noteIds and add the corresponding note object through the existing edition data mechanism. Keep existing textual, translation and lexical notes.",
+    "Source references are stated in note text; hyperlinking source_urls is optional. Do not substitute URL-only citations for collection and report numbers.",
+    "The literal § cross-references denote stable R-section numbers, not PDF pages. They remain valid after pagination changes.",
+    "R88 and R189 explicitly retain unresolved attribution notices; R31’s valley reference is only partly resolved. These notices avoid assigning unrelated reports as exact sources.",
+    "R131 and R172 include attributed route-specific qualifications. Neither note assigns a blanket grade to all versions of a report.",
+    "No adjustment to N025, N049, N050, N052, N071, N083, N097, N099, N118 or N122 is necessary solely to add these source notes."
+  ]
+}

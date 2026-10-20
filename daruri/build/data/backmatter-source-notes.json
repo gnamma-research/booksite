@@ -1,0 +1,1467 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-10-20",
+  "scope": "Additive Qurʾān, hadith and athar source notes for the scholarly Darūrī only: complete historical dictionary articles and clearly invoked sources in Bidāya applications. No edition files have been modified by this preparation script.",
+  "source_snapshot": "/workspace/scratch/bf0f1e2d96ce/daruri_citation_audit/published/daruri.pdf",
+  "source_snapshot_page_count": 259,
+  "audited_inventory": "/workspace/scratch/bf0f1e2d96ce/daruri_citation_audit/backmatter_findings.json",
+  "page_number_note": "PDF and printed page numbers refer to the frozen 259-page scholarly PDF. After reflow, use the term/article and exact English anchors rather than these old page numbers.",
+  "publication_conventions": [
+    "English publication copy is in each note’s text field; source_urls and source_references supply verified source locator metadata.",
+    "Dictionary quotations belong to the named lexicographers. Do not attach their embedded reports to Ibn Rushd’s authorial section merely because the glossary links to that section.",
+    "Retain every complete historical dictionary article, its Arabic quotation, translation, source attribution, and existing editorial note. Add source notes outside the historical quotation.",
+    "Keep the existing Bidāya book/chapter/issue citations. New application notes identify a report or verse actually invoked in the application; cf. marks a representative parallel where appropriate.",
+    "Report numbers follow the linked editions. No source citation by itself implies authentication. Earlier lexical witnesses are explicitly distinguished from independent transmissions.",
+    "Use only for the scholarly edition. Do not add this apparatus to the non-scholarly Arabic, vowelled, English, or study editions."
+  ],
+  "notes_by_dictionary_article": {
+    "ijzāʾ / j-z-ʾ": {
+      "term_number": 5,
+      "term": "ijzāʾ",
+      "article_headword_ar": "جزأ",
+      "article_headword_transliteration": "j-z-ʾ",
+      "dictionary_author": "al-Muṭarrizī",
+      "dictionary_work": "al-Mughrib fī tartīb al-Muʿrib",
+      "source_pdf_pages": [
+        155,
+        156
+      ],
+      "notes": [
+        {
+          "id": "SRC-BH01",
+          "audit_ids": [
+            "BH01"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "A sacrificial camel suffices for seven people.",
+          "source_pdf_page": 155,
+          "source_printed_page": 155,
+          "text": "Cf. Ṣaḥīḥ Muslim 1318a, Jābir’s report of seven persons sharing a camel at al-Ḥudaybiyya. The dictionary gives a condensed formulation.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Ṣaḥīḥ Muslim 1318a, Kitāb al-Ḥajj",
+              "url": "https://sunnah.com/muslim:1318a",
+              "verification_status": "substantive_primary_parallel_verified",
+              "audit_web_ref": "turn24view0"
+            }
+          ],
+          "source_urls": [
+            "https://sunnah.com/muslim:1318a"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Prophetic-practice report summarized in a lexical example",
+          "verification_status": "substantive_primary_parallel_verified",
+          "source_article_id": "U-jaza"
+        },
+        {
+          "id": "SRC-BH02",
+          "audit_ids": [
+            "BH02"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "It will not suffice for anyone after you",
+          "source_pdf_page": 156,
+          "source_printed_page": 156,
+          "text": "Ṣaḥīḥ al-Bukhārī 5557, al-Barāʾ’s report concerning Abū Burda’s young goat. The dictionary varies the negative particle.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Ṣaḥīḥ al-Bukhārī 5557, Kitāb al-Aḍāḥī",
+              "url": "https://sunnah.com/bukhari:5557",
+              "verification_status": "primary_match_verified_with_minor_wording_variant",
+              "audit_web_ref": "turn35view0"
+            }
+          ],
+          "source_urls": [
+            "https://sunnah.com/bukhari:5557"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Prophetic saying to Abū Burda",
+          "verification_status": "primary_match_verified",
+          "source_article_id": "U-jaza"
+        },
+        {
+          "id": "SRC-BH03",
+          "audit_ids": [
+            "BH03"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "In the report that Ibn Masʿūd bought land from a dihqān on condition that the seller take care of its jizya for him",
+          "source_pdf_page": 156,
+          "source_printed_page": 156,
+          "text": "Abū ʿUbayd, Kitāb al-Amwāl, ed. Muḥammad Khalīl Harrās, no. 199, p. 100. This is an athar concerning Ibn Masʿūd; Abū ʿUbayd discusses interpreting the transaction as a lease.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Abū ʿUbayd, Kitāb al-Amwāl, ed. Muḥammad Khalīl Harrās, no. 199, p. 100",
+              "url": "https://ablibrary.net/book_content/b/14235/100",
+              "verification_status": "primary_report_with_chain_verified_no_grade_asserted",
+              "audit_web_ref": "turn39view0"
+            }
+          ],
+          "source_urls": [
+            "https://ablibrary.net/book_content/b/14235/100"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Companion athar, not Prophetic hadith",
+          "verification_status": "primary_report_with_chain_verified",
+          "source_article_id": "U-jaza"
+        }
+      ],
+      "source_article_id": "U-jaza",
+      "source_key": "U",
+      "source_article_locator": "root جزأ"
+    },
+    "tawqīf / w-q-f": {
+      "term_number": 40,
+      "term": "tawqīf",
+      "article_headword_ar": "وقف",
+      "article_headword_transliteration": "w-q-f",
+      "dictionary_author": "al-Muṭarrizī",
+      "dictionary_work": "al-Mughrib fī tartīb al-Muʿrib",
+      "source_pdf_pages": [
+        174
+      ],
+      "notes": [
+        {
+          "id": "SRC-BH04",
+          "audit_ids": [
+            "BH04"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "Whoever gives a gift and then wishes to reclaim it should be stopped/apprised and made to know the ugliness of his action",
+          "source_pdf_page": 174,
+          "source_printed_page": 174,
+          "text": "Cf. Sunan Abī Dāwūd 3540, on reclaiming a gift. The dictionary expands the report’s instruction to stop the giver and make him aware; its explanatory wording is retained.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Sunan Abī Dāwūd 3540, Kitāb al-Ijāra, Bāb al-rujūʿ fī l-hiba",
+              "url": "https://sunnah.com/abudawud:3540",
+              "verification_status": "primary_parallel_verified_wording_caveat",
+              "audit_web_ref": "turn7view0"
+            }
+          ],
+          "source_urls": [
+            "https://sunnah.com/abudawud:3540"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Prophetic saying with lexical expansion",
+          "verification_status": "primary_parallel_verified_wording_caveat",
+          "source_article_id": "U-waqafa"
+        }
+      ],
+      "source_article_id": "U-waqafa",
+      "source_key": "U",
+      "source_article_locator": "root وقف"
+    },
+    "sibār / s-b-r": {
+      "term_number": 66,
+      "term": "sibār",
+      "article_headword_ar": "سبر",
+      "article_headword_transliteration": "s-b-r",
+      "dictionary_author": "Ibn Manẓūr",
+      "dictionary_work": "Lisān al-ʿArab",
+      "dictionary_locator": "7:108–109, root s-b-r",
+      "source_pdf_pages": [
+        187,
+        188,
+        189,
+        190
+      ],
+      "grouping_option": "The seven notes may be grouped as “Sources of the reports” within this complete root article, with each quoted anchor retained as a subheading. Retain the existing general authentication qualification.",
+      "notes": [
+        {
+          "id": "SRC-BH05",
+          "audit_ids": [
+            "BH05"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "Do not enter it until I have examined it before you",
+          "source_pdf_page": 187,
+          "source_printed_page": 187,
+          "text": "Ibn al-Athīr, al-Nihāya, 2:333, s.v. s-b-r, records the same wording. An independent transmission for this sentence has not been established in the present edition.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Ibn al-Athīr, al-Nihāya fī gharīb al-ḥadīth wa-l-athar, 2:333, s.v. s-b-r",
+              "url": "https://www.islamweb.net/ar/library/content/121/1703/",
+              "verification_status": "earlier_lexical_witness_verified_not_independent_authentication",
+              "audit_web_ref": "turn22view0"
+            }
+          ],
+          "source_urls": [
+            "https://www.islamweb.net/ar/library/content/121/1703/"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Abū Bakr cave narrative",
+          "verification_status": "earlier_lexical_witness_verified_primary_isnad_unresolved",
+          "contains_unresolved_attribution_notice": true,
+          "source_article_id": "L-sabr"
+        },
+        {
+          "id": "SRC-BH06",
+          "audit_ids": [
+            "BH06"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "A man will emerge from the Fire after his ḥibr and sibr have disappeared",
+          "source_pdf_page": 188,
+          "source_printed_page": 188,
+          "text": "Abū ʿUbayd, Gharīb al-ḥadīth, 1:221–222, no. 52, records disagreement over the attribution: some transmit it from the Prophet, others as a saying of Muṭarrif b. ʿAbd Allāh b. al-Shikhkhīr. Cf. Ibn al-Athīr, al-Nihāya, 2:333, s.v. s-b-r.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Abū ʿUbayd, Gharīb al-ḥadīth, 1:221–222, entry 52",
+              "url": "https://www.islamweb.net/ar/library/index.php?ID=52&bk_no=1085&flag=1&page=bookcontents",
+              "verification_status": "early_lexical_report_and_attribution_dispute_verified",
+              "audit_web_ref": "turn7view1"
+            },
+            {
+              "reference": "Ibn al-Athīr, al-Nihāya fī gharīb al-ḥadīth wa-l-athar, 2:333, s.v. s-b-r",
+              "url": "https://www.islamweb.net/ar/library/content/121/1703/",
+              "verification_status": "earlier_lexical_witness_verified_not_independent_authentication",
+              "audit_web_ref": "turn22view0"
+            }
+          ],
+          "source_urls": [
+            "https://www.islamweb.net/ar/library/index.php?ID=52&bk_no=1085&flag=1&page=bookcontents",
+            "https://www.islamweb.net/ar/library/content/121/1703/"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Report with disputed Prophetic attribution",
+          "verification_status": "primary_lexical_report_and_attribution_dispute_verified",
+          "contains_disputed_prophetic_attribution_notice": true,
+          "source_article_id": "L-sabr"
+        },
+        {
+          "id": "SRC-BH07",
+          "audit_ids": [
+            "BH07"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "Tell your sons to marry outside their kin, for Abū Bakr’s appearance and slenderness have become predominant in them.",
+          "source_pdf_page": 188,
+          "source_printed_page": 188,
+          "text": "Cf. Ibn al-Athīr, al-Nihāya, 2:333, s.v. s-b-r. The speaker is an unnamed adviser to al-Zubayr; an independent transmission remains unverified.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Ibn al-Athīr, al-Nihāya fī gharīb al-ḥadīth wa-l-athar, 2:333, s.v. s-b-r",
+              "url": "https://www.islamweb.net/ar/library/content/121/1703/",
+              "verification_status": "earlier_lexical_witness_verified_not_independent_authentication",
+              "audit_web_ref": "turn22view0"
+            }
+          ],
+          "source_urls": [
+            "https://www.islamweb.net/ar/library/content/121/1703/"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Report about al-Zubayr, not expressly a Prophetic saying",
+          "verification_status": "earlier_lexical_witness_verified_primary_isnad_unresolved",
+          "contains_unresolved_attribution_notice": true,
+          "source_article_id": "L-sabr"
+        },
+        {
+          "id": "SRC-BH08",
+          "audit_ids": [
+            "BH08"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "Over going to the Friday congregations and completing ablution on cold mornings.",
+          "source_pdf_page": 189,
+          "source_printed_page": 189,
+          "text": "Cf. Jāmiʿ al-Tirmidhī 3233–3235. The lexicon has “Friday congregations” and “cold mornings”; these Tirmidhī versions have “congregations” and “hardships”. For the sabarāt wording, see Ibn al-Athīr, al-Nihāya, 2:333, s.v. s-b-r.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Jāmiʿ al-Tirmidhī 3233, Kitāb al-Tafsīr",
+              "url": "https://sunnah.com/tirmidhi:3233",
+              "verification_status": "primary_report_family_verified_wording_variant",
+              "audit_web_ref": "turn35view1"
+            },
+            {
+              "reference": "Jāmiʿ al-Tirmidhī 3234, Kitāb al-Tafsīr",
+              "url": "https://sunnah.com/tirmidhi:3234",
+              "verification_status": "primary_report_family_verified_wording_variant",
+              "audit_web_ref": "turn35view2"
+            },
+            {
+              "reference": "Jāmiʿ al-Tirmidhī 3235, Kitāb al-Tafsīr",
+              "url": "https://sunnah.com/tirmidhi:3235",
+              "verification_status": "primary_report_family_verified_wording_variant",
+              "audit_web_ref": "turn24view2"
+            },
+            {
+              "reference": "Ibn al-Athīr, al-Nihāya fī gharīb al-ḥadīth wa-l-athar, 2:333, s.v. s-b-r",
+              "url": "https://www.islamweb.net/ar/library/content/121/1703/",
+              "verification_status": "earlier_lexical_witness_verified_not_independent_authentication",
+              "audit_web_ref": "turn22view0"
+            }
+          ],
+          "source_urls": [
+            "https://sunnah.com/tirmidhi:3233",
+            "https://sunnah.com/tirmidhi:3234",
+            "https://sunnah.com/tirmidhi:3235",
+            "https://www.islamweb.net/ar/library/content/121/1703/"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Prophetic report quoted in a lexical variant",
+          "verification_status": "primary_report_family_verified_exact_lexical_wording_not_matched",
+          "additional_anchor_en": "Over what does the highest assembly dispute, Muḥammad?",
+          "source_article_id": "L-sabr"
+        },
+        {
+          "id": "SRC-BH09",
+          "audit_ids": [
+            "BH09"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "the Messenger of God, God bless him and grant him peace, entered her room on a cold morning.",
+          "source_pdf_page": 189,
+          "source_printed_page": 189,
+          "text": "Ibn al-Athīr, al-Nihāya, 2:333, s.v. s-b-r, records this wording concerning Fāṭima’s marriage. An independent transmission has not been established in the present edition.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Ibn al-Athīr, al-Nihāya fī gharīb al-ḥadīth wa-l-athar, 2:333, s.v. s-b-r",
+              "url": "https://www.islamweb.net/ar/library/content/121/1703/",
+              "verification_status": "earlier_lexical_witness_verified_not_independent_authentication",
+              "audit_web_ref": "turn22view0"
+            }
+          ],
+          "source_urls": [
+            "https://www.islamweb.net/ar/library/content/121/1703/"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Prophetic biographical report",
+          "verification_status": "earlier_lexical_witness_verified_primary_isnad_unresolved",
+          "contains_unresolved_attribution_notice": true,
+          "source_article_id": "L-sabr"
+        },
+        {
+          "id": "SRC-BH10",
+          "audit_ids": [
+            "BH10"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "there is no harm in a man praying with a sabbūra in his sleeve.",
+          "source_pdf_page": 189,
+          "source_printed_page": 189,
+          "text": "Cf. Ibn al-Athīr, al-Nihāya, 2:334, s.v. s-b-r. The speaker is not identified in this lexical report; no independent transmission is established here.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Ibn al-Athīr, al-Nihāya fī gharīb al-ḥadīth wa-l-athar, 2:334, s.v. s-b-r",
+              "url": "https://www.islamweb.net/ar/library/content/121/1703/",
+              "verification_status": "earlier_lexical_witness_verified_not_independent_authentication",
+              "audit_web_ref": "turn22view0"
+            }
+          ],
+          "source_urls": [
+            "https://www.islamweb.net/ar/library/content/121/1703/"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Anonymous report; speaker not established",
+          "verification_status": "earlier_lexical_witness_verified_attribution_unresolved",
+          "contains_unresolved_attribution_notice": true,
+          "source_article_id": "L-sabr"
+        },
+        {
+          "id": "SRC-BH11",
+          "audit_ids": [
+            "BH11"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "I saw Ibn ʿAbbās wearing a sābirī garment through which I could see.",
+          "source_pdf_page": 190,
+          "source_printed_page": 190,
+          "text": "Ibn al-Athīr, al-Nihāya, 2:334, s.v. s-b-r, records this athar of Ḥabīb b. Abī Thābit concerning Ibn ʿAbbās. A source with an isnād independent of the lexical tradition has not been established.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Ibn al-Athīr, al-Nihāya fī gharīb al-ḥadīth wa-l-athar, 2:334, s.v. s-b-r",
+              "url": "https://www.islamweb.net/ar/library/content/121/1703/",
+              "verification_status": "earlier_lexical_witness_verified_not_independent_authentication",
+              "audit_web_ref": "turn22view0"
+            }
+          ],
+          "source_urls": [
+            "https://www.islamweb.net/ar/library/content/121/1703/"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Companion-related athar, not a Prophetic saying",
+          "verification_status": "earlier_lexical_witness_verified_primary_isnad_unresolved",
+          "contains_unresolved_attribution_notice": true,
+          "source_article_id": "L-sabr"
+        }
+      ],
+      "source_article_id": "L-sabr",
+      "source_key": "L",
+      "source_article_locator": "7:108–109"
+    },
+    "ʿumūm al-balwā / b-l-y and b-l-w": {
+      "term_number": 93,
+      "term": "ʿumūm al-balwā",
+      "article_headword_ar": "بلي / بلو",
+      "article_headword_transliteration": "b-l-y and b-l-w",
+      "dictionary_author": "Aḥmad b. Muḥammad al-Fayyūmī",
+      "dictionary_work": "al-Miṣbāḥ al-munīr fī gharīb al-Sharḥ al-kabīr",
+      "source_pdf_pages": [
+        203
+      ],
+      "notes": [
+        {
+          "id": "SRC-BQ01",
+          "audit_ids": [
+            "BQ01"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "Does man think that We shall not gather his bones? Yes indeed!",
+          "source_pdf_page": 203,
+          "source_printed_page": 203,
+          "text": "Qurʾān 75:3–4 (al-Qiyāma); the quotation ends with balā at the beginning of verse 4.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Qurʾān 75:3–4 (al-Qiyāma)",
+              "url": "https://quran.com/75/3-4",
+              "verification_status": "primary_verse_text_verified",
+              "audit_web_ref": "turn22view3"
+            }
+          ],
+          "source_urls": [
+            "https://quran.com/75/3-4"
+          ],
+          "insertion": "Add [Q 75:3–4] after the English quotation and [القيامة 75:3–4] after its Arabic counterpart, or use a paired editorial source note. Do not alter the quoted wording.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "anchor_ar_normalized": "أيحسب الإنسان أن لن نجمع عظامه بلى",
+          "note_ar": "القرآن الكريم، سورة القيامة 75:3–4؛ تنتهي العبارة المنقولة بكلمة «بلى» في أول الآية الرابعة.",
+          "verification_status": "definite_missing_reference_primary_verse_text_verified",
+          "source_article_id": "F-baliya"
+        }
+      ],
+      "source_article_id": "F-baliya",
+      "source_key": "F",
+      "source_article_locator": "Kitāb al-bāʾ, root b-l-y / b-l-w"
+    },
+    "qurʾ / q-r-ʾ": {
+      "term_number": 102,
+      "term": "qurʾ",
+      "article_headword_ar": "قرأ",
+      "article_headword_transliteration": "q-r-ʾ",
+      "dictionary_author": "al-Rāghib al-Iṣfahānī",
+      "dictionary_work": "al-Mufradāt fī gharīb al-Qurʾān",
+      "source_pdf_pages": [
+        207,
+        208
+      ],
+      "notes": [
+        {
+          "id": "SRC-BH12",
+          "audit_ids": [
+            "BH12"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "Refrain from prayer during the days of your aqrāʾ",
+          "source_pdf_page": 207,
+          "source_printed_page": 207,
+          "text": "Cf. Sunan Abī Dāwūd 297 and 280. No. 297 reads tadaʿu al-ṣalāta ayyāma aqrāʾihā; al-Rāghib gives a shortened imperative formulation. The consulted Mufradāt editor traces it to no. 297. These references identify related versions without authenticating the lexicon’s exact wording.",
+          "language": "en",
+          "source_references": [
+            {
+              "reference": "Sunan Abī Dāwūd 297, Kitāb al-Ṭahāra",
+              "url": "https://sunnah.com/abudawud:297",
+              "verification_status": "related_primary_version_verified_not_exact_imperative_wording",
+              "audit_web_ref": "turn35view3"
+            },
+            {
+              "reference": "Sunan Abī Dāwūd 280, Kitāb al-Ṭahāra",
+              "url": "https://sunnah.com/abudawud:280",
+              "verification_status": "related_primary_version_verified",
+              "audit_web_ref": "turn24view1"
+            },
+            {
+              "reference": "Al-Rāghib al-Iṣfahānī, al-Mufradāt, q-r-ʾ, consulted edition with editor’s source note",
+              "url": "https://quranpedia.app/uloom/raghib/w/q0r0a2.html",
+              "verification_status": "lexicon_editor_source_note_verified",
+              "audit_web_ref": "turn39view1"
+            }
+          ],
+          "source_urls": [
+            "https://sunnah.com/abudawud:297",
+            "https://sunnah.com/abudawud:280",
+            "https://quranpedia.app/uloom/raghib/w/q0r0a2.html"
+          ],
+          "insertion": "Add an editorial source note at this quoted passage or in the same dictionary article’s source-note block.",
+          "preserve_body_wording": true,
+          "preserve_existing_notes": true,
+          "apply": true,
+          "report_type": "Prophetic saying in shortened lexicographical wording",
+          "verification_status": "related_primary_versions_verified",
+          "editorial_internal_caveat": "The Mufradāt editor calls the route weak; the linked Abū Dāwūd 297 text displays al-Albānī’s ṣaḥīḥ assessment. Do not add an unqualified grade to the lexicon quotation. Retain the existing p. 208 notice that translation does not certify transmission.",
+          "source_article_id": "R-qara"
+        }
+      ],
+      "source_article_id": "R-qara",
+      "source_key": "R",
+      "source_article_locator": "s.v. قرأ"
+    }
+  },
+  "application_notes_by_section": {
+    "R23": {
+      "id": "SRC-APP-R023",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R23"
+      ],
+      "application_id": "B02",
+      "application_section": 23,
+      "title": "Wiping the head: a minimum performance and a contested particle",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "reports describing the Prophet’s wiping",
+      "source_pdf_page": 147,
+      "source_printed_page": 147,
+      "text": "For a description of the Prophet’s head-wiping, cf. Ṣaḥīḥ al-Bukhārī 185.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 185",
+          "url": "https://sunnah.com/bukhari:185",
+          "verification_status": "verified_representative_primary_report",
+          "audit_web_ref": "turn40view0"
+        }
+      ],
+      "source_urls": [
+        "https://sunnah.com/bukhari:185"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Purification from ritual impurity",
+        "locator": "Book of Wuḍūʾ, ch. 2, issue 6: the extent of wiping the head",
+        "url": "https://www.islamweb.net/ar/library/content/97/8/الباب-الثاني-معرفة-أعمال-الوضوء"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true,
+      "match_scope": "Representative report from the family invoked, not an exhaustive identification of every report in the Bidāya discussion."
+    },
+    "R28": {
+      "id": "SRC-APP-R028",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R28"
+      ],
+      "application_id": "B03",
+      "application_section": 28,
+      "title": "Proposing over another proposal: prohibition and contractual effect",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "the prohibition of intervening in an existing proposal",
+      "source_pdf_page": 147,
+      "source_printed_page": 147,
+      "text": "For the prohibition of proposing over another man’s proposal, see Ṣaḥīḥ al-Bukhārī 5142.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 5142",
+          "url": "https://sunnah.com/bukhari:5142",
+          "verification_status": "primary_report_verified",
+          "audit_web_ref": "turn40view1"
+        }
+      ],
+      "source_urls": [
+        "https://sunnah.com/bukhari:5142"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Marriage",
+        "locator": "ch. 1, preliminaries, issue 3: proposing over another man’s proposal",
+        "url": "https://ar.wikisource.org/wiki/بداية_المجتهد_-_كتاب_النكاح"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true
+    },
+    "R58": {
+      "id": "SRC-APP-R058",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R58"
+      ],
+      "application_id": "B09",
+      "application_section": 58,
+      "title": "A traveller who fasts: an implied condition in the verse",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "reports allowing travelling Companions to fast or refrain",
+      "source_pdf_page": 148,
+      "source_printed_page": 148,
+      "text": "Cf. Ṣaḥīḥ al-Bukhārī 1947: Anas reports that fasting and non-fasting Companions travelling with the Prophet did not reproach one another.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 1947",
+          "url": "https://sunnah.com/bukhari:1947",
+          "verification_status": "primary_report_verified",
+          "audit_web_ref": "turn40view2"
+        }
+      ],
+      "source_urls": [
+        "https://sunnah.com/bukhari:1947"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Fasting",
+        "locator": "ch. on those permitted to break the fast; the traveller’s performance of the fast",
+        "url": "https://ar.wikisource.org/wiki/بداية_المجتهد_-_كتاب_الصيام"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true
+    },
+    "R64": {
+      "id": "SRC-APP-R064",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R64"
+      ],
+      "application_id": "B10",
+      "application_section": 64,
+      "title": "The basmala: Qurʾānic wording and membership in a sūra",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "its status as a verse of al-Fātiḥa from denying that the wording is Qurʾānic at all",
+      "source_pdf_page": 148,
+      "source_printed_page": 148,
+      "text": "For the basmala within the Qurʾānic text, see Qurʾān 27:30; this reference does not settle its membership in al-Fātiḥa.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Qurʾān 27:30",
+          "url": "https://quran.com/27/30",
+          "verification_status": "primary_verse_text_verified",
+          "audit_web_ref": "turn44view0"
+        }
+      ],
+      "source_urls": [
+        "https://quran.com/27/30"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Prayer",
+        "locator": "third division, verbal constituents, issue 4: reciting the basmala",
+        "url": "https://ar.wikisource.org/wiki/بداية_المجتهد_-_كتاب_الصلاة"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true
+    },
+    "R158": {
+      "id": "SRC-APP-R158",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R158"
+      ],
+      "application_id": "B12",
+      "application_section": 158,
+      "title": "Touching women: equivocation, generality and counterevidence",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "touching in Arabic can mean contact by the hand or signify intercourse",
+      "source_pdf_page": 148,
+      "source_printed_page": 148,
+      "text": "For the disputed wording, see Qurʾān 4:43 and 5:6. For a report of contact between the Prophet and ʿĀʾisha during prayer, cf. Ṣaḥīḥ al-Bukhārī 382.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Qurʾān 4:43",
+          "url": "https://quran.com/4/43",
+          "verification_status": "primary_verse_text_verified_in_main_quran_audit"
+        },
+        {
+          "reference": "Qurʾān 5:6",
+          "url": "https://quran.com/5/6",
+          "verification_status": "primary_verse_text_verified_in_main_quran_audit"
+        },
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 382",
+          "url": "https://sunnah.com/bukhari:382",
+          "verification_status": "verified_representative_primary_report",
+          "audit_web_ref": "turn40view3"
+        }
+      ],
+      "source_urls": [
+        "https://quran.com/4/43",
+        "https://quran.com/5/6",
+        "https://sunnah.com/bukhari:382"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Purification from ritual impurity",
+        "locator": "Book of Wuḍūʾ, ch. 4, issue on touching women",
+        "url": "https://ar.wikisource.org/wiki/بداية_المجتهد_-_كتاب_الطهارة"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true,
+      "additional_anchor_en": "reports about contact between the Prophet and ʿĀʾisha enter the assessment",
+      "match_scope": "The verse wording is directly identified. Bukhārī 382 is a verified representative contact report, cited as a comparison; this note does not identify all reports assessed in Bidāya."
+    },
+    "R160": {
+      "id": "SRC-APP-R160",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R160"
+      ],
+      "application_id": "B13",
+      "application_section": 160,
+      "title": "Minimum dower: clarification cannot be postponed beyond need",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "In Sahl’s marriage report, the request for even an iron ring is taken against a fixed minimum.",
+      "source_pdf_page": 149,
+      "source_printed_page": 149,
+      "text": "For Sahl b. Saʿd’s report and the request for an iron ring, see Ṣaḥīḥ al-Bukhārī 5135.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 5135",
+          "url": "https://sunnah.com/bukhari:5135",
+          "verification_status": "primary_report_verified",
+          "audit_web_ref": "turn41view0"
+        }
+      ],
+      "source_urls": [
+        "https://sunnah.com/bukhari:5135"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Marriage",
+        "locator": "ch. 2; conditions of contract; dower, first topic, issue 2: its amount",
+        "url": "https://www.islamweb.net/ar/library/content/97/450/الموضع-الأول-في-حكمه-وأركانه"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true
+    },
+    "R167": {
+      "id": "SRC-APP-R167",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R167"
+      ],
+      "application_id": "B14",
+      "application_section": 167,
+      "title": "The sales-session option: what counts as “separation”?",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "He weighs the strong Ibn ʿUmar report",
+      "source_pdf_page": 149,
+      "source_printed_page": 149,
+      "text": "For Ibn ʿUmar’s report on the parties’ option before separation, see Ṣaḥīḥ al-Bukhārī 2111; for the command to fulfil contracts, Qurʾān 5:1.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 2111",
+          "url": "https://sunnah.com/bukhari:2111",
+          "verification_status": "primary_report_verified",
+          "audit_web_ref": "turn41view1"
+        },
+        {
+          "reference": "Qurʾān 5:1",
+          "url": "https://quran.com/5/1",
+          "verification_status": "primary_verse_text_verified",
+          "audit_web_ref": "turn44view1"
+        }
+      ],
+      "source_urls": [
+        "https://sunnah.com/bukhari:2111",
+        "https://quran.com/5/1"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Sales",
+        "locator": "part 3, conditions of validity, ch. 1: the contract and the parties’ option before separation",
+        "url": "https://www.islamweb.net/ar/library/content/97/571/الباب-الأول-في-العقد"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true,
+      "additional_anchor_en": "the general command to fulfil contracts"
+    },
+    "R171": {
+      "id": "SRC-APP-R171",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R171"
+      ],
+      "application_id": "B15",
+      "application_section": 171,
+      "title": "Guardianship: a disputed condition cannot be established by ambiguity alone",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "the guardian-permission reports",
+      "source_pdf_page": 149,
+      "source_printed_page": 149,
+      "text": "For the report requiring the guardian’s permission, cf. Sunan Abī Dāwūd 2083.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 2083",
+          "url": "https://sunnah.com/abudawud:2083",
+          "verification_status": "primary_report_verified",
+          "audit_web_ref": "turn41view2"
+        }
+      ],
+      "source_urls": [
+        "https://sunnah.com/abudawud:2083"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Marriage",
+        "locator": "ch. 2, conditions of validity; guardians, first topic: whether guardianship is a condition",
+        "url": "https://ar.wikisource.org/wiki/بداية_المجتهد_-_كتاب_النكاح"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true
+    },
+    "R206": {
+      "id": "SRC-APP-R206",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R206"
+      ],
+      "application_id": "B18",
+      "application_section": 206,
+      "title": "Menstrual divorce: a forbidden act may still have legal effect",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "the command that Ibn ʿUmar take his wife back",
+      "source_pdf_page": 149,
+      "source_printed_page": 149,
+      "text": "For the command that Ibn ʿUmar take his wife back after divorcing her during menstruation, see Ṣaḥīḥ al-Bukhārī 5251.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 5251",
+          "url": "https://sunnah.com/bukhari:5251",
+          "verification_status": "primary_report_verified",
+          "audit_web_ref": "turn41view3"
+        }
+      ],
+      "source_urls": [
+        "https://sunnah.com/bukhari:5251"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Divorce",
+        "locator": "first division, ch. 2: Sunnī and irregular divorce; divorce during menstruation",
+        "url": "https://ar.wikisource.org/wiki/بداية_المجتهد_-_كتاب_الطلاق"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true
+    },
+    "R227": {
+      "id": "SRC-APP-R227",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R227"
+      ],
+      "application_id": "B24",
+      "application_section": 227,
+      "title": "Triple divorce after mutual imprecation: the limits of tacit approval",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "when ʿUwaymir pronounced three divorces after mutual imprecation (liʿān)",
+      "source_pdf_page": 150,
+      "source_printed_page": 150,
+      "text": "For ʿUwaymir’s pronouncement after mutual imprecation, see Ṣaḥīḥ al-Bukhārī 5259. Its legal significance is the subject of Ibn Rushd’s discussion.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 5259",
+          "url": "https://sunnah.com/bukhari:5259",
+          "verification_status": "primary_report_verified",
+          "audit_web_ref": "turn42view0"
+        }
+      ],
+      "source_urls": [
+        "https://sunnah.com/bukhari:5259"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Divorce",
+        "locator": "first division, ch. 2: whether three divorces may be pronounced together; the report of ʿUwaymir",
+        "url": "https://ar.wikisource.org/wiki/بداية_المجتهد_-_كتاب_الطلاق"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true
+    },
+    "R246": {
+      "id": "SRC-APP-R246",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R246"
+      ],
+      "application_id": "B27",
+      "application_section": 246,
+      "title": "Cupping while fasting: three ways of treating conflicting reports",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "A report invalidating the fast of cupper and cupped is set beside the report that the Prophet was cupped while fasting.",
+      "source_pdf_page": 151,
+      "source_printed_page": 151,
+      "text": "For the report that cupper and cupped have broken their fast, see Sunan Abī Dāwūd 2367; for the Prophet being cupped while fasting, Ṣaḥīḥ al-Bukhārī 1939.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 2367, cupper and cupped",
+          "url": "https://sunnah.com/abudawud:2367",
+          "verification_status": "primary_report_verified",
+          "audit_web_ref": "turn42view3"
+        },
+        {
+          "reference": "Ṣaḥīḥ al-Bukhārī 1939, the Prophet cupped while fasting",
+          "url": "https://sunnah.com/bukhari:1939",
+          "verification_status": "primary_report_verified",
+          "audit_web_ref": "turn42view2"
+        }
+      ],
+      "source_urls": [
+        "https://sunnah.com/abudawud:2367",
+        "https://sunnah.com/bukhari:1939"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Fasting",
+        "locator": "ch. on acts from which the fasting person abstains; cupping",
+        "url": "https://ar.wikisource.org/wiki/بداية_المجتهد_-_كتاب_الصيام"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true
+    },
+    "R256": {
+      "id": "SRC-APP-R256",
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R256"
+      ],
+      "application_id": "B28",
+      "application_section": 256,
+      "title": "Deferred animal barter: conflict can concern scope as well as authenticity",
+      "audience": "scholarly",
+      "kind": "source",
+      "anchor_en": "Reports allowing an animal to be exchanged for more animals with later delivery stand against a prohibition of deferred animal-for-animal exchange.",
+      "source_pdf_page": 151,
+      "source_printed_page": 151,
+      "text": "For the one-for-two camel report of ʿAbd Allāh b. ʿAmr, see Sunan Abī Dāwūd 3357; for Samura’s prohibition of deferred animal-for-animal exchange, no. 3356.",
+      "language": "en",
+      "source_references": [
+        {
+          "reference": "Sunan Abī Dāwūd 3357, ʿAbd Allāh b. ʿAmr’s one-for-two report",
+          "url": "https://sunnah.com/abudawud:3357",
+          "verification_status": "primary_report_verified_no_unqualified_grade",
+          "audit_web_ref": "turn43view1"
+        },
+        {
+          "reference": "Sunan Abī Dāwūd 3356, Samura’s prohibition",
+          "url": "https://sunnah.com/abudawud:3356",
+          "verification_status": "primary_report_verified",
+          "audit_web_ref": "turn43view0"
+        }
+      ],
+      "source_urls": [
+        "https://sunnah.com/abudawud:3357",
+        "https://sunnah.com/abudawud:3356"
+      ],
+      "existing_bidaya_reference": {
+        "book": "Sales",
+        "locator": "part 2, ribā; exchanging animals with deferred delivery",
+        "url": "https://ar.wikisource.org/wiki/بداية_المجتهد_-_كتاب_البيوع"
+      },
+      "insertion": "Append a separate primary-source note to this Bidāya application in the scholarly edition. Preserve the existing Bidāya book/chapter/issue citation and the commentary text.",
+      "preserve_body_wording": true,
+      "preserve_existing_notes": true,
+      "apply": true,
+      "editorial_internal_caveat": "The linked 3357 text displays al-Albānī’s weak assessment; evaluations differ by route. The note locates the reports without imposing an unqualified authenticity judgement."
+    }
+  },
+  "preserve_existing_material": {
+    "all_existing_dictionary_quran_references": "Retain the 61 already-cited verse locations inventoried in 24 page/term groups; do not duplicate them as new omissions.",
+    "inherited_source_correction_notes": [
+      {
+        "pdf_page": 167,
+        "term": "taʾwīl",
+        "inherited_label": "al-Anbiyāʾ 95",
+        "existing_correction": "Q6:95; Q30:19",
+        "action": "No new missing citation; retain witness and explicit existing correction."
+      },
+      {
+        "pdf_page": 196,
+        "term": "muḍmar under ḍamīr",
+        "inherited_label": "al-Māʾida9",
+        "existing_correction": "Q5:8",
+        "action": "No new missing citation; existing note already repairs it."
+      },
+      {
+        "pdf_page": 234,
+        "term": "wājib",
+        "inherited_label": "corrupt sūra label الجمع36",
+        "existing_correction": "Q22:36",
+        "action": "No new missing citation; existing note already repairs it."
+      }
+    ],
+    "other_existing_quran_textual_notes": [
+      "p. 158, istiḥsān: retain the English Qurʾān 39:17–18 range and the source’s inherited 39:18 label.",
+      "p. 194, ṣalāḥ: retain the note concerning the corrupt tashbīh reading and the corrected sense supported by Qurʾān 9:102."
+    ],
+    "critical_authentication_qualifications": [
+      {
+        "pdf_page": 190,
+        "article": "sibār / s-b-r",
+        "exact_existing_text": "The reported traditions are translated as lexical witnesses, without a separate authentication judgement."
+      },
+      {
+        "pdf_page": 208,
+        "article": "qurʾ / q-r-ʾ",
+        "exact_existing_text": "The source’s brief ḥadīth quotations are translated as quotations, without certifying their transmission."
+      }
+    ],
+    "other_article_notes": "Retain the complete p. 174 tawqīf distinction of lexical senses, p. 190 sibār text/translation qualifications, and p. 208 qurʾ interpretation and witness qualifications."
+  },
+  "held_back_not_for_automatic_insertion": [
+    {
+      "audit_ids": [
+        "BE01"
+      ],
+      "location": "p. 207, qurʾ / q-r-ʾ, Ibn ʿAbbās’s explanation of Qurʾān 75:17–18",
+      "anchor_en": "Ibn ʿAbbās explains: when We have gathered it and established it in your breast, act upon it.",
+      "apply": false,
+      "reason": "The verse and transmitting dictionary source are already cited. An independent early source for this particular “act upon it” formulation was not established; do not substitute Bukhārī’s distinct listen-and-remain-silent explanation.",
+      "optional_qualification": "This attribution is transmitted here through al-Rāghib, al-Mufradāt, s.v. q-r-ʾ; an independent early source for this wording has not been established.",
+      "verified_source_urls": [
+        "https://quranpedia.app/uloom/raghib/w/q0r0a2.html"
+      ]
+    },
+    {
+      "audit_ids": [
+        "BE02"
+      ],
+      "location": "p. 221, mudrak / d-r-k, saying attributed to Abū Bakr",
+      "anchor_en": "O You, the limit of whose knowledge is falling short of knowing You!",
+      "apply": false,
+      "reason": "The attribution is already explicitly through the cited dictionary article; an independent early transmission was not established.",
+      "optional_qualification": "The attribution to Abū Bakr is reported by al-Rāghib, al-Mufradāt, s.v. d-r-k; no independent early transmission is established here."
+    },
+    {
+      "audit_ids": [
+        "BE03"
+      ],
+      "location": "p. 222, mudrak / d-r-k, al-Ḥasan’s explanation of Qurʾān 27:66",
+      "anchor_en": "Al-Ḥasan says it means that they were ignorant of the Hereafter",
+      "apply": false,
+      "reason": "The verse and dictionary source are already identified. Independent tafsīr tracing would be additional research, not repair of a missing verse citation."
+    },
+    {
+      "audit_ids": [
+        "BAQ01",
+        "BAQ02",
+        "BAQ03",
+        "BAQ04",
+        "BAQ05",
+        "BAQ06",
+        "BAQ07",
+        "BAQ08"
+      ],
+      "location": "Eight contextual Qurʾānic allusions identified separately in backmatter_findings.json",
+      "apply": false,
+      "reason": "These are contextual or illustrative allusions, not definite unattributed direct quotations; excluded from the present definite-omission implementation set.",
+      "inventory": [
+        {
+          "id": "BAQ01",
+          "pdf_page": 183,
+          "printed_page": 183,
+          "term": "59. khiṭāb",
+          "dictionary_source": "al-Rāghib al-Iṣfahānī, al-Mufradāt fī gharīb al-Qurʾān",
+          "short_phrase": "Faṣl al-khiṭāb is speech by which an affair is decisively resolved.",
+          "proposed_citation": "cf. Qurʾān 38:20",
+          "source_url": "https://quran.com/38/20",
+          "web_ref": "turn33view0",
+          "status": "contextual_or_lexical_allusion_reference_recommended",
+          "note": "The expression is Qurʾānic; the dictionary is defining it rather than quoting a complete verse. The three preceding verses are already cited."
+        },
+        {
+          "id": "BAQ02",
+          "pdf_page": 192,
+          "printed_page": 192,
+          "term": "71. sharṭ",
+          "dictionary_source": "al-Sharīf al-Jurjānī, Kitāb al-Taʿrīfāt",
+          "short_phrase": "the signs of the Hour",
+          "proposed_citation": "cf. Qurʾān 47:18",
+          "source_url": "https://quran.com/47/18",
+          "web_ref": "turn33view1",
+          "status": "contextual_or_lexical_allusion_reference_recommended",
+          "note": "Lexical allusion through ashrāṭ al-sāʿa; the verse says its signs, not this exact two-word phrase."
+        },
+        {
+          "id": "BAQ03",
+          "pdf_page": 194,
+          "printed_page": 194,
+          "term": "74. ṣalāḥ",
+          "dictionary_source": "ʿAbd al-Raʾūf al-Munāwī, al-Tawqīf ʿalā muhimmāt al-taʿārīf",
+          "short_phrase": "In the Qurʾān, it is contrasted at one time with corruption",
+          "proposed_citation": "cf. Qurʾān 7:56",
+          "source_url": "https://quran.com/7/56",
+          "web_ref": "turn39view3",
+          "status": "contextual_or_lexical_allusion_reference_recommended",
+          "note": "Support for an explicit claim about Qurʾānic usage. The second contrast, bad action, is already supported by Q9:102 in the editorial note."
+        },
+        {
+          "id": "BAQ04",
+          "pdf_page": 204,
+          "printed_page": 204,
+          "term": "94. ghāya",
+          "dictionary_source": "Editorial contextual gloss",
+          "short_phrase": "until night",
+          "proposed_citation": "cf. Qurʾān 2:187",
+          "source_url": "https://quran.com/2/187",
+          "web_ref": "turn39view4",
+          "status": "contextual_or_lexical_allusion_reference_recommended",
+          "note": "Two-word example alludes to fasting endpoint in §195. Also appears in daruri-english.pdf p77. Cross-reference to §195 is already present, so a repeated verse citation is optional."
+        },
+        {
+          "id": "BAQ05",
+          "pdf_page": 213,
+          "printed_page": 213,
+          "term": "107. qiyās al-shabah / shabah",
+          "dictionary_source": "Muḥammad ʿAlī al-Tahānawī, Kashshāf iṣṭilāḥāt al-funūn",
+          "short_phrase": "seeking an equivalent in compensation for hunted game",
+          "proposed_citation": "cf. Qurʾān 5:95",
+          "source_url": "https://quran.com/5/95",
+          "web_ref": "turn46view1",
+          "status": "contextual_or_lexical_allusion_reference_recommended",
+          "note": "Legal allusion, not a verbatim Qurʾān quotation. Citation supplies the scriptural premise of the dictionary example."
+        },
+        {
+          "id": "BAQ06",
+          "pdf_page": 213,
+          "printed_page": 213,
+          "term": "107. qiyās al-shabah / shabah",
+          "dictionary_source": "Muḥammad ʿAlī al-Tahānawī, Kashshāf iṣṭilāḥāt al-funūn",
+          "short_phrase": "mutual imprecation (liʿān) is an oath rather than testimony",
+          "proposed_citation": "cf. Qurʾān 24:6–9",
+          "source_url": "https://quran.com/24/6-9",
+          "web_ref": "turn46view0",
+          "status": "contextual_or_lexical_allusion_reference_recommended",
+          "note": "Legal allusion to the wording grounding the oath/testimony classification; not a complete quotation."
+        },
+        {
+          "id": "BAQ07",
+          "pdf_page": 220,
+          "printed_page": 220,
+          "term": "119. mujmal",
+          "dictionary_source": "al-Sharīf al-Jurjānī, Kitāb al-Taʿrīfāt",
+          "short_phrase": "halūʿ",
+          "proposed_citation": "cf. Qurʾān 70:19–21",
+          "source_url": "https://quran.com/70/19-21",
+          "web_ref": "turn33view2",
+          "status": "contextual_or_lexical_allusion_reference_recommended",
+          "note": "Unfamiliar Qurʾānic word used as an example of indeterminate wording. Word in verse19; verses20–21 explain it."
+        },
+        {
+          "id": "BAQ08",
+          "pdf_page": 221,
+          "printed_page": 221,
+          "term": "123. mudrak / root d-r-k",
+          "dictionary_source": "al-Rāghib al-Iṣfahānī, al-Mufradāt fī gharīb al-Qurʾān",
+          "short_phrase": "the Fire ... is called Hāwiya, the abyss",
+          "proposed_citation": "cf. Qurʾān 101:9–11",
+          "source_url": "https://quran.com/al-qariah/9-11",
+          "web_ref": "turn39view2",
+          "status": "contextual_or_lexical_allusion_reference_recommended",
+          "note": "Qurʾānic name in verse9, explained as fire in verse11. Nearby other quotations already carry verse numbers."
+        }
+      ]
+    },
+    {
+      "audit_ids": [
+        "BS01"
+      ],
+      "location": "p. 187, ziyāda; optional Muslim 181a support for tafsīr",
+      "apply": false,
+      "reason": "The quotation and its Qurʾānic verse are already cited; the hadith is optional explanatory support rather than an omitted quotation source."
+    },
+    {
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R237"
+      ],
+      "location": "Application 237, mistaken qibla",
+      "apply": false,
+      "reason": "Tirmidhī 345 is a verified relevant parallel, but the précis does not identify the report precisely enough to attach that number. Keep the specified Bidāya source; no speculative primary citation is proposed."
+    },
+    {
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R214",
+        "backmatter_findings:bidaya_application_inventory:R204"
+      ],
+      "location": "Applications 214 (jewellery) and 204 (ʿumra)",
+      "apply": false,
+      "reason": "The summaries refer to unspecified conflicting reports. Their Bidāya locations are already cited; no collection numbers are assigned without matching the actual reports. The existing Qurʾān 2:196 citation in application 204 is retained."
+    },
+    {
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R217"
+      ],
+      "location": "Application 217, Ibn al-Zubayr’s dissent",
+      "apply": false,
+      "reason": "This Companion position is already attributed through a specified Bidāya discussion. No independent athar source was verified, and it is not a Prophetic quotation."
+    },
+    {
+      "audit_ids": [
+        "backmatter_findings:bidaya_application_inventory:R218"
+      ],
+      "location": "Application 218, ribā foodstuffs",
+      "apply": false,
+      "reason": "Muslim 1587a is a verified contextual source for the named commodities, but the application does not explicitly invoke that individual report. Retain the existing Bidāya citation without adding speculative bibliography."
+    }
+  ],
+  "counts": {
+    "dictionary_articles_with_additions": 5,
+    "dictionary_quran_notes": 1,
+    "dictionary_hadith_athar_notes": 12,
+    "dictionary_notes_total": 13,
+    "dictionary_reports_with_only_earlier_lexical_witness_and_unresolved_independent_transmission": 5,
+    "dictionary_reports_with_explicit_disputed_prophetic_attribution": 1,
+    "application_notes": 12,
+    "application_notes_with_hadith_references": 11,
+    "application_notes_with_quran_references": 3,
+    "application_quran_locations": 4,
+    "application_hadith_report_locations": 13,
+    "publication_notes_total": 25,
+    "note": "The 12 dictionary report notes are not 12 authenticated Prophetic hadiths. Application Quran and hadith note counts overlap in R158 and R167. Optional/held-back material is excluded from these addition counts."
+  },
+  "anchor_validation": {
+    "method": "Every English anchor matched the designated frozen PDF page after whitespace normalization; application anchors also matched current_edition.json.",
+    "results": [
+      {
+        "id": "SRC-BH01",
+        "field": "anchor_en",
+        "pdf_page": 155,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH02",
+        "field": "anchor_en",
+        "pdf_page": 156,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH03",
+        "field": "anchor_en",
+        "pdf_page": 156,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH04",
+        "field": "anchor_en",
+        "pdf_page": 174,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH05",
+        "field": "anchor_en",
+        "pdf_page": 187,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH06",
+        "field": "anchor_en",
+        "pdf_page": 188,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH07",
+        "field": "anchor_en",
+        "pdf_page": 188,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH08",
+        "field": "anchor_en",
+        "pdf_page": 189,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH08",
+        "field": "additional_anchor_en",
+        "pdf_page": 189,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH09",
+        "field": "anchor_en",
+        "pdf_page": 189,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH10",
+        "field": "anchor_en",
+        "pdf_page": 189,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH11",
+        "field": "anchor_en",
+        "pdf_page": 190,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BQ01",
+        "field": "anchor_en",
+        "pdf_page": 203,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-BH12",
+        "field": "anchor_en",
+        "pdf_page": 207,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R023",
+        "field": "anchor_en",
+        "pdf_page": 147,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R028",
+        "field": "anchor_en",
+        "pdf_page": 147,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R058",
+        "field": "anchor_en",
+        "pdf_page": 148,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R064",
+        "field": "anchor_en",
+        "pdf_page": 148,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R158",
+        "field": "anchor_en",
+        "pdf_page": 148,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R158",
+        "field": "additional_anchor_en",
+        "pdf_page": 148,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R160",
+        "field": "anchor_en",
+        "pdf_page": 149,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R167",
+        "field": "anchor_en",
+        "pdf_page": 149,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R167",
+        "field": "additional_anchor_en",
+        "pdf_page": 149,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R171",
+        "field": "anchor_en",
+        "pdf_page": 149,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R206",
+        "field": "anchor_en",
+        "pdf_page": 149,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R227",
+        "field": "anchor_en",
+        "pdf_page": 150,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R246",
+        "field": "anchor_en",
+        "pdf_page": 151,
+        "exact_normalized_match": true
+      },
+      {
+        "id": "SRC-APP-R256",
+        "field": "anchor_en",
+        "pdf_page": 151,
+        "exact_normalized_match": true
+      }
+    ],
+    "passed": true
+  },
+  "structural_edits_needed": [
+    "Render additive source notes in the scholarly historical-lexicon appendix, immediately after the relevant passage or article; retain the full root articles and existing editorial notes.",
+    "For sibār, a compact grouped “Sources of the reports” block can avoid seven repeated long footers while preserving the seven distinct attributions and anchors.",
+    "Render application primary-source notes alongside the application’s existing Bidāya citation, not as substitutions for that citation and not inside Ibn Rushd’s main text.",
+    "The Q75:3–4 reference should be visible for both the Arabic quotation and its English translation. Both language options are supplied in SRC-BQ01.",
+    "Reflow will change page numbers; regenerate scholarly pagination, contents, indexes and links using the existing pipeline."
+  ]
+}

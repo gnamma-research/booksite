@@ -4,6 +4,11 @@
 (() => {
   'use strict';
 
+  // BEGIN DARURI RELEASE ASSETS
+  const RELEASE_VERSION = "daruri6-sources-20261020";
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "download-bundle.js", "pdf-editions-manifest.json", "sw.js", "daruri-study-guide.pdf", "study-guide-data.js", "study-guide.js"]);
+  // END DARURI RELEASE ASSETS
+
   const root = new URL('.', document.baseURI);
   const encoder = new TextEncoder();
   const crcTable = new Uint32Array(256);
@@ -150,6 +155,7 @@
 
   async function readFile(name, path) {
     const url = new URL(path, root);
+    if (RELEASE_ASSETS.has(path.split('?')[0])) url.searchParams.set('v', RELEASE_VERSION);
     const response = await fetch(url.href, { cache: 'no-store', credentials: 'same-origin' });
     if (!response.ok) throw new Error('Could not fetch ' + name + ' (HTTP ' + response.status + ').');
     const bytes = new Uint8Array(await response.arrayBuffer());

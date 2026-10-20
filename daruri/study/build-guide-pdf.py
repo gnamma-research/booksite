@@ -183,6 +183,9 @@ class GuideDocument(BaseDocTemplate):
         self.edition_date = edition_date
         self.anchor_pages = {}
         self.level_pages = {}
+        self.quran_page_notes = {}
+        self.quran_source_pages = {}
+        self.page_content_bottom = {}
         frame = Frame(MARGIN, 18 * mm, WIDTH, PAGE_H - 38 * mm,
                       leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
         super().__init__(filename, pagesize=A4, leftMargin=MARGIN, rightMargin=MARGIN,
@@ -197,11 +200,36 @@ class GuideDocument(BaseDocTemplate):
         self.current_unit = 'Reading companion'
         self.anchor_pages = {}
         self.level_pages = {}
+        self.quran_page_notes = {}
+        self.quran_source_pages = {}
+        self.page_content_bottom = {}
 
     def footer(self, canvas, doc):
         if doc.page == 1:
             return
         canvas.saveState()
+        notes = self.quran_page_notes.get(doc.page, [])
+        if notes:
+            # These compact source notes use the space above the running footer.
+            # Refuse a later layout that cannot accommodate them safely, instead
+            # of silently painting a footnote over lesson text.
+            baseline = 17.5 * mm + (len(notes) - 1) * 11
+            separator = baseline + 11
+            if self.page_content_bottom.get(doc.page, PAGE_H) < separator + 3:
+                raise ValueError(f'Page {doc.page} needs more space for its Qur’an footnotes.')
+            canvas.setStrokeColor(LINE)
+            canvas.setLineWidth(.45)
+            canvas.line(MARGIN, separator, MARGIN + 95, separator)
+            canvas.setFont('GuideSans', 8.2)
+            canvas.setFillColor(WATER)
+            for source in notes:
+                canvas.bookmarkHorizontalAbsolute(source['id'], baseline + 9)
+                label = f'{source["number"]}. {clean(source["text"])}'
+                canvas.drawString(MARGIN, baseline, label)
+                canvas.linkURL(source['url'],
+                               (MARGIN, baseline - 2, MARGIN + pdfmetrics.stringWidth(label, 'GuideSans', 8.2), baseline + 9),
+                               relative=0, thickness=0)
+                baseline -= 11
         canvas.setStrokeColor(LINE)
         canvas.setLineWidth(.45)
         canvas.line(MARGIN, PAGE_H - 13.5 * mm, PAGE_W - MARGIN, PAGE_H - 13.5 * mm)
@@ -220,6 +248,14 @@ class GuideDocument(BaseDocTemplate):
         canvas.restoreState()
 
     def afterFlowable(self, flowable):
+        if isinstance(flowable, (Paragraph, Table)):
+            # CondPageBreak can consume unused frame space; track actual content
+            # flowables so that empty space is not mistaken for printed text.
+            bottom = self.frame._y + flowable.getSpaceAfter()
+            self.page_content_bottom[self.page] = min(self.page_content_bottom.get(self.page, PAGE_H), bottom)
+        for source in getattr(flowable, '_quran_sources', []):
+            self.quran_page_notes.setdefault(self.page, []).append(source)
+            self.quran_source_pages[source['id']] = self.page
         if getattr(flowable, '_unit_name', None):
             self.current_unit = flowable._unit_name
         anchor = getattr(flowable, '_anchor', None)
@@ -379,7 +415,16 @@ def guide_story(lessons, book, sty, edition_date):
             for text in level['explanation']:
                 add_text(text, retain=True)
             example = level['example']
-            example_items = [para('Example: '+example['title'], sty['label']), para(example['text'], sty['body'])]
+            example_title = esc('Example: '+example['title'])
+            for source in example.get('quran_sources', []):
+                quote = esc(source['quote'])
+                if example_title.count(quote) != 1:
+                    raise ValueError(f'Quotational anchor must be unique: {source["id"]}')
+                marker = f'<super><a href="#{esc(source["id"])}" color="#35616b">{source["number"]}</a></super>'
+                example_title = example_title.replace(quote, quote + marker, 1)
+            example_heading = para(example_title, sty['label'], True)
+            example_heading._quran_sources = example.get('quran_sources', [])
+            example_items = [example_heading, para(example['text'], sty['body'])]
             story.append(KeepTogether(example_items))
             retained_text += [example['title'], example['text']]
             add_text('Try it before reading the feedback', 'label')
@@ -437,6 +482,14 @@ def validate_pdf(path, lessons, retained_text):
     full_text = '\n'.join((p.extract_text() or '').split('\nGNAMMA  |', 1)[0]
                           for p in reader.pages)
     compact = normalized(full_text)
+    quran_sources = [source for lesson in lessons for level in lesson['levels'].values()
+                     for source in level['example'].get('quran_sources', [])]
+    for source in quran_sources:
+        # Ignore only the inserted superscript when checking the unaltered title.
+        with_call = normalized(source['quote']) + str(source['number'])
+        if compact.count(with_call) != 1:
+            raise ValueError(f'Missing or duplicated Qur’an quotation marker: {source["id"]}')
+        compact = compact.replace(with_call, normalized(source['quote']), 1)
     missing = []
     for i, text in enumerate(retained_text):
         if normalized(text) not in compact:
@@ -455,8 +508,21 @@ def validate_pdf(path, lessons, retained_text):
         raise ValueError(f'Missing lesson hyperlinks: {sorted(expected-urls)}')
     if '\ufffd' in full_text or '\u25a0' in full_text:
         raise ValueError('Replacement or black-square glyph found in extracted text.')
+    source_pages = {}
+    for source in quran_sources:
+        matches = [i + 1 for i, page in enumerate(reader.pages)
+                   if normalized(source['quote']) + str(source['number']) in normalized(page.extract_text() or '')]
+        if len(matches) != 1:
+            raise ValueError(f'Cannot locate Qur’an quotation call: {source["id"]}')
+        page_number = matches[0]
+        if normalized(source['text']) not in normalized(reader.pages[page_number - 1].extract_text() or ''):
+            raise ValueError(f'Qur’an footnote is not on its quotation page: {source["id"]}')
+        if source['url'] not in urls:
+            raise ValueError(f'Missing Qur’an source hyperlink: {source["id"]}')
+        source_pages[source['id']] = page_number
     return dict(pageCount=len(reader.pages), retainedFieldsChecked=len(retained_text),
-                lessonLinksChecked=len(expected), distinctExternalLinks=len(urls))
+                lessonLinksChecked=len(expected), distinctExternalLinks=len(urls),
+                quranFootnotesChecked=len(quran_sources), quranFootnotePages=source_pages)
 
 
 def main():

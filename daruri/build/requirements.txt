@@ -1,0 +1,4 @@
+WeasyPrint==68.0
+fonttools>=4.59
+PyMuPDF>=1.26
+lxml>=5
