@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** The concise homepage/source update is published and verified live in `bfb6127b95ea3484a1ce1c779c20b8dc50ac6c07`. This publisher released its claim at 2026-10-20 18:35 UTC. New work must start from this commit or newer, preserve current Home/About text and cache versions, and retain the completed contents, PDF, index-print, font, language and menu work.
+**Publisher claim: visuals controls refinement (font/design chat).** Claimed 2026-10-20 18:43 UTC; expires 18:58 UTC. Base head: `c4844f53c496c10a060e41e4c09d5b2abbc630b9`. Exact overlapping targets: `daruri/index.html`, `daruri/compact-menu.css`, `daruri/english-fonts.css`, `daruri/fonts/english-font-faces.css`, English font provenance/assets, `daruri/download-bundle.js`, `daruri/sw.js`, focused appearance QA, and this coordination record. Scope: implement the user-approved icon-led Visuals panel, retain a persistent Visuals heading with selection information beside it, use direct page-style/font/palette buttons, keep A− / percentage / A+ for size, remove duplicate System/Light/Dark from this dialog, and preserve all current homepage/contents/index/PDF/navigation work. No PDF regeneration or saved-package upload.
 
 Previous publisher record: The contents, subject index and five-PDF structure release is published and verified live. This study/contents publisher released its claim at 2026-10-20 18:03 UTC. New work must preserve its rebuilt page maps, current Ar/En labels, subject assets and heading hierarchy.
 
