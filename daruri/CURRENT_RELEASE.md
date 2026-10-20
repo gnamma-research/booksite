@@ -8,6 +8,8 @@ Canonical reader: [https://gnamma-research.github.io/booksite/daruri/](https://g
 
 ## Source structure, subject browsing and compact PDF contents — `daruri8-structure-20261020`
 
+**Published and live:** [52ee8a1](https://github.com/gnamma-research/booksite/commit/52ee8a18952304b8315770e0c7822e2a02840662). [Pages run 39471054037](https://github.com/gnamma-research/booksite/actions/runs/39471054037) succeeded. All 15 changed public reader/PDF/assets returned HTTP 200 and matched the tested files byte for byte, including all five reading PDFs.
+
 The user approved the complete contents/index redesign on 20 October 2026, explicitly retaining a compact editorial section guide in the bilingual reference, bilingual study and English reading editions. The two Arabic editions use only the recorded-heading contents. This release integrates the live `Ar`/`En` button labels (`896bd3c`) and preserves the compact menus, three reading styles, fonts, source notes and self-contained study printing.
 
 The website now presents **Book structure** and **Editorial section titles** within the same collapsible part frame. The opening starts open and the four parts closed; saved disclosure state, Expand all / Collapse all, search ancestry and exact reference returns work in both modes. The 46 recorded Arabic rubrics and English translations retain their verified hierarchy. Generic headings receive explicitly identified prose-supported or editorial topic captions. Source rubrics are primary in normal, continuous and native reading; distinct editorial descriptions are subordinate and labelled, while unheaded units are labelled Editorial section. The later colophon remains separate.

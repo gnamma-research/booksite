@@ -1,0 +1,111 @@
+{
+  "commit": "52ee8a18952304b8315770e0c7822e2a02840662",
+  "files": [
+    {
+      "path": "daruri/daruri-arabic-vowelled.pdf",
+      "status": 200,
+      "bytes": 833252,
+      "sha256": "18c75ac09f91d5f0e308d0ab7f55e449738a095816af74b526a43db1e3e823c8",
+      "matches": true
+    },
+    {
+      "path": "daruri/daruri-arabic.pdf",
+      "status": 200,
+      "bytes": 531748,
+      "sha256": "a3a7ec0e87cff9e858f1cf1ce390503b517c00b53ed3d08f9a467a464a1728d7",
+      "matches": true
+    },
+    {
+      "path": "daruri/daruri-english.pdf",
+      "status": 200,
+      "bytes": 831971,
+      "sha256": "adcb955e4e4140408898e8ec94cd2e6a8b5fd27355cf53d40ba79f4e9d829ead",
+      "matches": true
+    },
+    {
+      "path": "daruri/daruri-study.pdf",
+      "status": 200,
+      "bytes": 1513503,
+      "sha256": "0e72c8670dd698c25a989a35ee487c8c5218ac19ca072edba5b4cbcc55bbb6bc",
+      "matches": true
+    },
+    {
+      "path": "daruri/daruri.pdf",
+      "status": 200,
+      "bytes": 2660384,
+      "sha256": "5fcedd45daeac5b9b08ef1fdd8517c06d223c11c873b051a5d27322dfa33dab3",
+      "matches": true
+    },
+    {
+      "path": "daruri/download-bundle.js",
+      "status": 200,
+      "bytes": 13462,
+      "sha256": "c80c51bd3aff4f85df98579fb1dab8c36a17ad73362637954c3fdd2de615de20",
+      "matches": true
+    },
+    {
+      "path": "daruri/edition-r3-20261020.js",
+      "status": 200,
+      "bytes": 1453767,
+      "sha256": "eff95f30241574f1cb1c05b49b7130ddc6b2a00a4c27e1a57ca496658cb66229",
+      "matches": true
+    },
+    {
+      "path": "daruri/index.html",
+      "status": 200,
+      "bytes": 3491443,
+      "sha256": "091d8567a0ca57ae44dde04cf0f7e55f79d2d9b07cf24466cd1015b9dfd8d838",
+      "matches": true
+    },
+    {
+      "path": "daruri/pdf-editions-manifest.json",
+      "status": 200,
+      "bytes": 5664,
+      "sha256": "ee8db20c823225496f4152eb2cf6b09e5fd1641d9fb8f3828905933c93b76b90",
+      "matches": true
+    },
+    {
+      "path": "daruri/reader-structure.css",
+      "status": 200,
+      "bytes": 3042,
+      "sha256": "47a5119346155ff2bc984056c98314114943585cc37ae51e1e1f5545423a34e8",
+      "matches": true
+    },
+    {
+      "path": "daruri/subject-index-data.js",
+      "status": 200,
+      "bytes": 12240,
+      "sha256": "ddeae5ef29674e8675e5f960d9733c94f84a1390bfd2443f494fd9d8f97d2f75",
+      "matches": true
+    },
+    {
+      "path": "daruri/subject-index-data.json",
+      "status": 200,
+      "bytes": 17832,
+      "sha256": "a75e07d9f1bbf77e77e376fe4695955fe9aae988c3b93d42c777ccd31852e49a",
+      "matches": true
+    },
+    {
+      "path": "daruri/subject-index.css",
+      "status": 200,
+      "bytes": 3229,
+      "sha256": "c2d4aacf88558cc55680476cc6b94670a31666c8f310c27b3eac52a053e9dc30",
+      "matches": true
+    },
+    {
+      "path": "daruri/subject-index.js",
+      "status": 200,
+      "bytes": 9482,
+      "sha256": "2e2dffc2d3d5ffcb6671fb82738a12a515e43021bf4d6eb58b9f80dda4edd630",
+      "matches": true
+    },
+    {
+      "path": "daruri/sw.js",
+      "status": 200,
+      "bytes": 2747,
+      "sha256": "6dfd18fb1d1a407067db2becd26ed5dcc82a3525c09c7fa37a9531eef3bd6968",
+      "matches": true
+    }
+  ],
+  "ok": true
+}
