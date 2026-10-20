@@ -1,0 +1,111 @@
+/* Compact preferences and navigation; keep the reader's established tokens. */
+/* Native fallback font selects also apply during browser printing. */
+#fallbackReader:has(#fb-arabic-font-choice option[value="amiri"]:checked) {
+  --reader-arabic-font: 'Amiri', 'Geeza Pro', 'Traditional Arabic', serif;
+  --arabic: var(--reader-arabic-font);
+}
+#fallbackReader:has(#fb-arabic-font-choice option[value="scheherazade"]:checked) {
+  --reader-arabic-font: 'Scheherazade New', 'Amiri', 'Geeza Pro', serif;
+  --arabic: var(--reader-arabic-font);
+}
+#fallbackReader:has(#fb-arabic-font-choice option[value="noto"]:checked) {
+  --reader-arabic-font: 'Noto Naskh Arabic', 'Amiri', 'Geeza Pro', serif;
+  --arabic: var(--reader-arabic-font);
+}
+#fallbackReader:has(#fb-english-font-choice option[value="original"]:checked) { --reader-english-font: initial; }
+#fallbackReader:has(#fb-english-font-choice option[value="source-serif"]:checked) { --reader-english-font: 'Source Serif 4', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif; }
+#fallbackReader:has(#fb-english-font-choice option[value="literata"]:checked) { --reader-english-font: 'Literata', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif; }
+
+@media screen {
+  .gn-nav-group { margin: 12px 0 0; padding: 0; border: 0; border-top: 1px solid var(--border); }
+  .gn-nav-group > summary { padding: 13px 9px; min-height: 44px; color: var(--text-soft); font: 500 13px/1.4 var(--sans); cursor: pointer; }
+  .gn-nav-group[open] > summary { color: var(--text); }
+  .gn-nav-group .nav-parts, .gn-nav-group .fb-part-nav { margin: 0 0 8px; }
+  .gn-nav-group .gn-pdf-editions { margin-top: 2px; padding-top: 0; border-top: 0; }
+  .gn-nav-group .gn-pdf-editions-label { margin-bottom: 8px; }
+  #leftNav .primary-nav { gap: 2px; }
+  #leftNav .primary-nav .nav-item { min-height: 42px; padding-top: 9px; padding-bottom: 9px; }
+  #leftNav .primary-nav .mini-count { display: none; }
+  #leftNav .nav-bottom, #fallbackReader .fb-publisher-footer { margin-top: 0; padding-top: 0; border-top: 0; }
+  .gn-nav-footer-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 12px 0; }
+  .gn-nav-footer-links .text-btn, .gn-nav-footer-links a { margin: 0; padding: 5px 0; color: var(--text-soft); font: 400 12px/1.5 var(--sans); }
+  .gn-nav-footer-links .text-btn.active { color: var(--accent); }
+  .gn-compact-settings { width: min(480px, calc(100vw - 24px)); padding: 20px; background: var(--surface); }
+  .gn-compact-settings > .detail-top { margin: 0 0 8px; padding: 0 0 12px; background: var(--surface); }
+  .gn-compact-settings > .detail-top h2 { font-size: 23px; font-weight: 400; }
+  .gn-compact-settings .gn-setting-row, #fb-settings .gn-setting-row {
+    display: grid; grid-template-columns: minmax(95px, .8fr) minmax(0, 1.2fr); align-items: center; gap: 12px;
+    min-width: 0; margin: 0; padding: 6px 0; border: 0;
+  }
+  .gn-compact-settings .gn-setting-row > label, .gn-compact-settings .gn-setting-row > span,
+  #fb-settings .gn-setting-row > label, #fb-settings .gn-setting-row > span { color: var(--text); font: 400 13px/1.4 var(--sans); }
+  .gn-setting-control { min-width: 0; }
+  .gn-compact-settings select, #fb-settings .gn-setting-row select {
+    display: block; width: 100%; min-width: 0; max-width: none; min-height: 40px; padding: 7px 9px;
+    border: 1px solid var(--border); border-radius: 5px; color: var(--text); background: var(--paper); font: 400 16px/1.4 var(--sans);
+  }
+  .gn-compact-settings select:focus-visible, #fb-settings select:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .gn-compact-settings .scale-controls { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: 0; width: 100%; }
+  .gn-compact-settings .scale-controls button { min-width: 44px; min-height: 40px; padding: 6px; font-family: var(--serif); }
+  .gn-compact-settings .scale-controls output { min-width: 0; text-align: center; font: 400 13px/1.4 var(--sans); }
+  .gn-compact-settings .gn-setting-control .fineprint { margin: 5px 0 0; font-size: 12px; }
+  .gn-compact-settings .gn-layout-setting { margin-top: 8px; padding-top: 12px; padding-bottom: 12px; border-top: 1px solid var(--border); }
+  .gn-layout-options, #fb-settings .gn-layout-options { display: flex; flex-wrap: nowrap; align-items: center; gap: 8px; border: 0; background: transparent; }
+  .gn-compact-settings .gn-layout-options button,
+  #fb-settings .gn-layout-options .fb-choice > span {
+    display: flex; align-items: center; justify-content: center; position: relative; flex: 0 0 58px;
+    width: 58px; min-width: 58px; min-height: 48px; padding: 6px 9px; border: 1px solid var(--border); border-radius: 5px;
+    color: var(--text); background: var(--paper);
+  }
+  .gn-compact-settings .gn-layout-options button[aria-pressed="true"],
+  #fb-settings .gn-layout-options .fb-choice input:checked + span { color: var(--accent); background: var(--accent-soft); border: 2px solid var(--accent); padding: 5px 8px; }
+  .gn-compact-settings .gn-layout-options button[aria-pressed="true"]::after,
+  #fb-settings .gn-layout-options .fb-choice input:checked + span::after { content: '✓'; position: absolute; right: 3px; top: 1px; font: 500 10px/1.2 var(--sans); }
+  .gn-layout-glyph { direction: ltr; unicode-bidi: isolate; display: grid; align-items: center; justify-items: center; width: 34px; color: inherit; }
+  .gn-layout-glyph > span { font: 400 17px/1.1 var(--serif); }
+  .gn-layout-glyph > bdi { font: 400 23px/1.1 'Amiri', serif; }
+  .gn-layout-columns { grid-template-columns: 1fr 1fr; column-gap: 5px; }
+  .gn-layout-columns > :first-child { border-right: 1px solid currentColor; padding-right: 5px; }
+  .gn-layout-stack { grid-template-columns: 1fr; grid-template-rows: 17px 17px; row-gap: 1px; }
+  .gn-layout-stack > span { font-size: 13px; }
+  .gn-layout-stack > bdi { font-size: 19px; }
+  .gn-layout-stack > :first-child { border-bottom: 1px solid currentColor; width: 24px; text-align: center; }
+  .gn-compact-settings #settingsStackedOrderRow { display: none; }
+  .gn-compact-settings #settingsParallelSideRow { display: grid; }
+  .gn-compact-settings .gn-colour-setting, #fb-settings .gn-colour-setting { margin: 3px 0 0; padding: 12px 0 0; border: 0; border-top: 1px solid var(--border); }
+  .gn-compact-settings .gn-colour-setting > legend, #fb-settings .gn-colour-setting > legend { padding: 0 8px 0 0; color: var(--text); font: 400 13px/1.4 var(--sans); }
+  .gn-compact-settings .gn-colour-mode { display: flex; width: fit-content; max-width: 100%; margin: 0 0 12px; }
+  .gn-compact-settings .gn-colour-mode button { min-width: 66px; min-height: 36px; padding: 7px 12px; font-size: 12px; }
+  .gn-compact-settings #palettePicker, #fb-settings .fb-palettes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .gn-compact-settings #palettePicker .palette-option, #fb-settings .fb-palette > span { min-width: 0; min-height: 72px; padding: 10px; border-radius: 5px; background: var(--paper); }
+  .gn-compact-settings #palettePicker .palette-swatches, #fb-settings .fb-swatches { margin-bottom: 7px; gap: 4px; }
+  .gn-compact-settings #palettePicker .palette-swatches span, #fb-settings .fb-swatches i { height: 10px; }
+  .gn-compact-settings #palettePicker strong, #fb-settings .fb-palette strong { font: 400 12px/1.35 var(--sans); overflow-wrap: anywhere; }
+  .gn-compact-settings #palettePicker small, #fb-settings .fb-palette small { display: none; }
+  #fb-settings .fb-settings-card { width: min(480px, calc(100vw - 24px)); padding: 20px; background: var(--surface); }
+  #fb-settings .fb-settings-card > h2 { margin: 0 0 12px; font: 400 23px/1.3 var(--serif); }
+  #fb-settings .fb-order-side, #fb-settings .fb-order-stacked { margin-top: 8px; padding-top: 12px; padding-bottom: 12px; border-top: 1px solid var(--border); }
+  #fb-settings .fb-order-stacked { display: none; }
+  #fb-settings .fb-order-side { display: grid; }
+  #fb-settings .gn-size-options { display: flex; flex-wrap: wrap; gap: 5px; }
+  #fb-settings .gn-size-options .fb-choice > span { min-height: 40px; padding: 9px 10px; }
+  #fb-settings .fb-meta { margin: 14px 0 0; font-size: 11px; line-height: 1.5; }
+  @media (max-width: 840px) {
+    #fb-settings .fb-order-side { display: none; }
+    #fb-settings .fb-order-stacked { display: grid; }
+  }
+  @media (max-width: 590px) {
+    .gn-compact-settings #settingsParallelSideRow { display: none; }
+    .gn-compact-settings #settingsStackedOrderRow { display: grid; }
+  }
+  @media (max-width: 380px) {
+    .gn-compact-settings, #fb-settings .fb-settings-card { padding: 16px 12px; }
+    .gn-compact-settings .gn-setting-row, #fb-settings .gn-setting-row { grid-template-columns: 84px minmax(0, 1fr); gap: 8px; }
+    .gn-compact-settings #palettePicker .palette-option, #fb-settings .fb-palette > span { padding: 9px 8px; }
+  }
+  @media (pointer: coarse) {
+    .gn-compact-settings select, #fb-settings .gn-setting-row select,
+    .gn-compact-settings .scale-controls button, .gn-compact-settings .gn-colour-mode button,
+    #fb-settings .gn-size-options .fb-choice > span { min-height: 44px; }
+  }
+}

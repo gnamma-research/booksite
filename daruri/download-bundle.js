@@ -101,6 +101,9 @@
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
+      ['daruri/reading-styles.css', 'reading-styles.css'],
+      ['daruri/reading-styles.js', 'reading-styles.js'],
+      ['daruri/compact-menu.css', 'compact-menu.css'],
       ['daruri/english-fonts.css', 'english-fonts.css'],
       ['daruri/fonts/english-font-faces.css', 'fonts/english-font-faces.css'],
       ['daruri/fonts/source-serif-4-normal.woff2', 'fonts/source-serif-4-normal.woff2'],

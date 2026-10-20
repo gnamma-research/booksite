@@ -6,6 +6,18 @@ Canonical repository: `gnamma-research/booksite`, branch `master`.
 
 Canonical reader: [https://gnamma-research.github.io/booksite/daruri/](https://gnamma-research.github.io/booksite/daruri/).
 
+## Compact navigation and reading styles — `20261020-menu1`
+
+The user approved these changes on 20 October 2026. The main menu keeps Read the text, Contents, Study guide, Dictionary, Academic index, Bidāya applications and Saved passages as ordinary direct destinations. Home and About remain in the footer. Jump to part and Downloads are closed native disclosures; all five reading PDFs and the complete offline package remain accessible. The no-JavaScript navigation retains its working static destinations.
+
+Type & appearance uses compact rows for page style, reading size and the two font choices. The three styles are **Quiet reading** (default), **Book page** and **Structured page**. They adjust screen spacing, heading hierarchy, rules, gutters and apparatus surfaces; notes availability and open/closed state remain independent. The new label Structured page supersedes the earlier proposal Text & notes. Arabic stays Amiri by default, with Scheherazade New and Noto Naskh Arabic; English stays Original by default, with Source Serif 4 and Literata.
+
+Menu sample text and font-preview paragraphs are removed. Page layout remains visible, using accessible Arabic/English letter diagrams: side-by-side choices for two columns, stacked choices at the reader's narrow breakpoint. The independent right/left and top/bottom preferences retain their existing defaults and saved values. Colours stays expanded with System/Light/Dark and all six existing visual palette choices. Gnamma landscape backgrounds and palette preferences remain available.
+
+The isolated `reading-styles.css`, `reading-styles.js` and `compact-menu.css` are included in the service worker and offline ZIP. `pageStyle` joins the existing preference record and uses the shared visible-passage anchor when changed. Native fallback style/font selects work with CSS, including font selection during printing. Screen-style rules leave the existing monochrome print treatment and current PDF bytes untouched.
+
+Validation: heading/corpus (259 sections, 416 passages), language, Focus 0–3, 11 menu-accessibility groups, 128 global-navigation cases plus nine exact returns, ten compact-menu/style groups, ten application-link groups, all 84 lesson render/print variants, 28 study reading/return sequences, and the full 259-section Notes/source checks pass. Static reading/study content and scholarly data are preserved. Deployment and live-browser verification are recorded in the shared coordination note once complete; local runtime checks do not by themselves establish visual-browser correctness.
+
 ## Reader Notes cards — `daruri7-notes-20261020`
 
 The Notes link beneath each passage includes the verified Qur’an and hadith sources from the scholarly PDF. The card presents these sources first, with clear kind labels, the original reference text and clickable sources, followed by separately scoped Bidāya application references and the remaining textual, grammatical, translation and interpretive notes. The adjacent summary reports source-note counts; these are not counts of verses or external links.

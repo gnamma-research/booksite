@@ -1,0 +1,270 @@
+/* Three screen reading styles. Colour and typeface values remain the reader's
+   existing preferences; no rule changes language order or apparatus visibility.
+   Load after the reader's inline screen styles. Printing keeps print.css. */
+@media screen {
+  :root,
+  #fallbackReader {
+    --rs-heading-gap: 24px;
+    --rs-passage-space: 22px;
+    --rs-text-rule: 1px solid var(--line);
+    --rs-text-surface: transparent;
+    --rs-text-inset: 0px;
+    --rs-apparatus-gap: 34px;
+    --rs-apparatus-surface: transparent;
+    --rs-apparatus-inset: 0px;
+  }
+
+  :root[data-reading-style="book"],
+  #fallbackReader:has(#fb-page-style-select option[value="book"]:checked) {
+    --rs-heading-gap: 32px;
+    --rs-passage-space: 24px;
+    --rs-text-rule: 0px solid transparent;
+    --rs-apparatus-gap: 40px;
+  }
+
+  :root[data-reading-style="structured"],
+  #fallbackReader:has(#fb-page-style-select option[value="structured"]:checked) {
+    --rs-heading-gap: 24px;
+    --rs-text-rule: 0px solid transparent;
+    --rs-text-surface: var(--surface);
+    --rs-text-inset: clamp(14px, 2.2vw, 26px);
+    --rs-apparatus-gap: 22px;
+    --rs-apparatus-surface: var(--paper);
+    --rs-apparatus-inset: clamp(14px, 2.2vw, 26px);
+  }
+
+  /* A continuous translucent sheet retains legibility on both water palettes.
+     The photograph, palette values, and contrast preference stay unchanged. */
+  :root:is([data-palette="gnamma"], [data-palette="gnamma-air"]) {
+    --rs-text-surface: var(--paper);
+    --rs-text-inset: clamp(12px, 2vw, 22px);
+  }
+  #fallbackReader:has(#fb-pal-gnamma:checked, #fb-pal-gnamma-air:checked) {
+    --rs-text-surface: var(--paper);
+    --rs-text-inset: clamp(12px, 2vw, 22px);
+  }
+
+  /* Quiet reading supplies the shared rhythm and three-level heading scale. */
+  html .reader .reader-heading .hero,
+  #fallbackReader .fb-reading-page .fb-hero {
+    border-bottom: 0;
+    margin-bottom: var(--rs-heading-gap);
+    padding-bottom: 8px;
+  }
+  html .reader .paired-heading {
+    gap: 6px 12px !important;
+    margin: 9px 0 10px !important;
+  }
+  html .reader .paired-heading .editorial-heading,
+  html .reader .paired-heading .single-english-heading {
+    font-size: clamp(1.3rem, 2.4vw, 1.95rem) !important;
+    line-height: 1.3 !important;
+    font-weight: 500 !important;
+  }
+  #fallbackReader .fb-reading-page .fb-dual-heading {
+    font-size: clamp(1.3rem, 2.4vw, 1.95rem);
+    line-height: 1.3;
+  }
+  #fallbackReader .fb-reading-page .fb-dual-heading .fb-original-heading-en {
+    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+    line-height: 1.4;
+  }
+  #fallbackReader .fb-reading-page .fb-dual-heading:not(:has(.fb-editorial-heading)) .fb-original-heading-en {
+    font-size: 1em;
+    line-height: 1.3;
+  }
+  #fallbackReader .fb-reading-page .fb-heading-original {
+    font-size: clamp(1.18rem, 2vw, 1.58rem);
+    line-height: 1.65;
+  }
+  html .reader .reader-heading .eyebrow,
+  #fallbackReader .fb-reading-page .fb-hero > .eyebrow {
+    color: var(--text-soft);
+    letter-spacing: .08em;
+    line-height: 1.6;
+  }
+  html .reader .reader-heading .meta-row,
+  #fallbackReader .fb-reading-page .fb-hero > .meta-row {
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  html .reader .reading-frame .parallel-text {
+    padding-inline: var(--rs-text-inset);
+    border-block: var(--rs-text-rule);
+    background: var(--rs-text-surface);
+    border-radius: 0;
+  }
+  html .reader .passage-grid,
+  #fallbackReader .fb-reading-page .fb-passage-grid {
+    margin-block: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  html .reader .passage-grid {
+    padding: 0;
+    background: transparent !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  html .reader :is(.passage-ar, .passage-en),
+  #fallbackReader .fb-reading-page :is(.fb-ar, .fb-en) {
+    padding-block: var(--rs-passage-space);
+  }
+  #fallbackReader .fb-reading-page .fb-passage-grid {
+    background: var(--rs-text-surface);
+    padding-inline: var(--rs-text-inset);
+  }
+  #fallbackReader .fb-reading-page .fb-passage-grid:first-of-type {
+    border-top: var(--rs-text-rule);
+  }
+  #fallbackReader .fb-reading-page .fb-passage-grid:last-of-type {
+    border-bottom: var(--rs-text-rule);
+  }
+
+  html .reader .gn-reading-aftertext.gn-tidy-apparatus {
+    margin-top: var(--rs-apparatus-gap);
+    padding: 18px var(--rs-apparatus-inset) !important;
+    background: var(--rs-apparatus-surface) !important;
+    border: 0 !important;
+    border-top: 1px solid var(--line) !important;
+    border-radius: 0;
+    box-shadow: none !important;
+    gap: 14px;
+  }
+  html .reader .gn-apparatus-row {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+  }
+  html .reader .gn-reading-aftertext .application-callout {
+    border: 0;
+    border-top: 1px solid var(--line);
+    border-radius: 0;
+    padding: 18px 0 0;
+    margin: 4px 0 0;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  html .reader .gn-reading-aftertext .application-callout h3 {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+  #fallbackReader .fb-reading-page .fb-apparatus {
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+  }
+  #fallbackReader .fb-reading-page .fb-apparatus > summary {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+  #fallbackReader .fb-reading-page .fb-note {
+    border-color: var(--line);
+    padding-block: 16px;
+  }
+
+  /* Notes remain one sheet; the existing open/closed state and note calls are
+     untouched. These rules also apply after a dynamically opened Notes card. */
+  html #gn-scholar-layer .gn-unified-notes .gn-note-entry p,
+  #fallbackReader .fb-reading-page .fb-note > p:not(.micro-label) {
+    line-height: 1.75;
+  }
+  html #gn-scholar-layer .gn-unified-notes .gn-note-entry h3 {
+    line-height: 1.4;
+  }
+
+  /* Book page: open headings and a wider gutter replace internal dividing
+     lines. We do not set order, direction, grid columns, or display. */
+  :root[data-reading-style="book"] .reader .reader-heading .hero,
+  #fallbackReader:has(#fb-page-style-select option[value="book"]:checked) .fb-reading-page .fb-hero {
+    text-align: center;
+    padding-bottom: 14px;
+  }
+  :root[data-reading-style="book"] .reader .paired-heading,
+  :root[data-reading-style="book"] .reader .reader-heading .eyebrow,
+  #fallbackReader:has(#fb-page-style-select option[value="book"]:checked) .fb-reading-page .fb-dual-heading,
+  #fallbackReader:has(#fb-page-style-select option[value="book"]:checked) .fb-reading-page .fb-hero > .eyebrow {
+    justify-content: center !important;
+  }
+  :root[data-reading-style="book"] .reader .reader-heading {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  :root[data-reading-style="book"] .reader :is(.passage-ar, .passage-en),
+  #fallbackReader:has(#fb-page-style-select option[value="book"]:checked) .fb-reading-page :is(.fb-ar, .fb-en) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+  }
+  :root[data-reading-style="book"] .reader .gn-reading-aftertext.gn-tidy-apparatus {
+    padding-top: 20px !important;
+  }
+
+  /* Structured page: a single calm apparatus surface, with labels and fine
+     separators rather than nested cards. Native details join into one sheet. */
+  :root[data-reading-style="structured"] .reader .gn-reading-aftertext > .gn-apparatus-row + .gn-apparatus-row {
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+  }
+  :root[data-reading-style="structured"] .reader .gn-reading-aftertext .gn-small-label {
+    color: var(--text-soft);
+  }
+  #fallbackReader:has(#fb-page-style-select option[value="structured"]:checked) .fb-reading-page .fb-apparatus {
+    margin-top: 0;
+    padding: 16px var(--rs-apparatus-inset);
+    background: var(--rs-apparatus-surface);
+    border: 0;
+    border-top: 1px solid var(--line);
+    border-radius: 0;
+  }
+  #fallbackReader:has(#fb-page-style-select option[value="structured"]:checked) .fb-reading-page .fb-passage-grid:last-of-type {
+    margin-bottom: var(--rs-apparatus-gap);
+  }
+  #fallbackReader:has(#fb-page-style-select option[value="structured"]:checked) .fb-reading-page .fb-case {
+    padding-inline: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  @media (min-width: 591px) {
+    :root[data-reading-style="book"] .reader.mode-parallel .passage-grid {
+      column-gap: 36px;
+    }
+  }
+  @media (min-width: 841px) {
+    :root[data-reading-style="book"] .reader.mode-parallel .passage-grid,
+    #fallbackReader:has(#fb-page-style-select option[value="book"]:checked):has(#fb-language-both:checked, #fb-language-auto:checked) .fb-passage-grid {
+      column-gap: clamp(56px, 5vw, 72px);
+    }
+  }
+  @media (max-width: 590px) {
+    :root,
+    #fallbackReader {
+      --rs-heading-gap: 20px;
+      --rs-passage-space: 19px;
+    }
+    :root[data-reading-style="book"],
+    #fallbackReader:has(#fb-page-style-select option[value="book"]:checked) {
+      --rs-heading-gap: 26px;
+      --rs-passage-space: 22px;
+    }
+  }
+  @media (orientation: landscape) and (max-height: 500px) and (max-width: 1024px) and (pointer: coarse) {
+    :root,
+    #fallbackReader {
+      --rs-heading-gap: 14px !important;
+      --rs-passage-space: 16px !important;
+      --rs-apparatus-gap: 24px !important;
+    }
+    html .reader .reader-heading .hero,
+    #fallbackReader .fb-reading-page .fb-hero {
+      padding-bottom: 6px;
+    }
+  }
+}
