@@ -263,7 +263,7 @@ function searchList(){let q=norm(inp.value),which=srcFilter.value;
   if(which!=='all'&&!t.sources.some(s=>s.author===which))return false;
   return !q||norm([t.term,t.ar,t.definition,t.root,...(t.aliasesAr||[]),...(t.aliasesEn||[]),...t.sources.map(x=>x.entry+' '+x.author)].join(' ')).includes(q);
  }).sort((a,b)=>a.term.localeCompare(b.term,'en',{sensitivity:'base',ignorePunctuation:true}));
- count.textContent=candidates.length+' terms';
+ count.textContent=candidates.length+' entries';
  const visible=candidates.slice(0,resultsLimit);
  list.innerHTML=visible.map(t=>`<button class="term-choice" type="button" data-term="${escapeHTML(t.term)}" ${selected===t.term?'aria-current="true"':''}><strong>${escapeHTML(t.term)}</strong><span class="term-original" lang="ar" dir="rtl">${escapeHTML(t.ar)}</span><small>${t.sources.length} ${t.sources.length===1?'source':'sources'}</small></button>`).join('')||'<p class="helper">No match. Try another spelling.</p>';
  const more=document.getElementById('lexMore');
