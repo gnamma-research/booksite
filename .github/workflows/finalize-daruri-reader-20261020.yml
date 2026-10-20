@@ -1,0 +1,80 @@
+name: Finalize verified Daruri reader update
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/finalize-daruri-reader-20261020.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daruri-reader-final-update
+  cancel-in-progress: false
+jobs:
+  finalize:
+    if: github.repository == 'gnamma-research/booksite'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Fetch exact tested patch and preserve the current reader
+        env:
+          PATCH_URL: https://d2ol7oe51mr4n9.cloudfront.net/user_3Kbwwq282Bos3FdSjqXEkSRrLRL/ecd56c7a-07a5-43a4-9619-e627c169b6fc.txt
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error --retry 3 "$PATCH_URL" -o /tmp/daruri-final.patch
+          echo 'ce7ce1b535e86e0fdd89e11defb37cd6d6d39e36a2b47b94613f4611b90b7550  /tmp/daruri-final.patch' | sha256sum --check
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, subprocess, hashlib, json
+          allowed = {
+              'daruri/index.html','daruri/dictionary.html','daruri/sw.js',
+              'daruri/qa/load-book.js','daruri/qa/verify-heading-contract.js',
+              'daruri/qa/verify-focus-modes.js','daruri/qa/verify-language-cycle.js',
+              'daruri/qa/EDITING_LARGE_READER.md'
+          }
+          stats=subprocess.check_output(['git','apply','--numstat','/tmp/daruri-final.patch'],text=True)
+          changed={line.split('\t',2)[2] for line in stats.splitlines()}
+          assert changed==allowed, f'Unexpected patch paths: {changed}'
+          before=Path('daruri/index.html').read_text(encoding='utf-8')
+          dictionary=Path('daruri/dictionary.html').read_text(encoding='utf-8')
+          subprocess.run(['git','apply','--check','/tmp/daruri-final.patch'],check=True)
+          subprocess.run(['git','apply','/tmp/daruri-final.patch'],check=True)
+          after=Path('daruri/index.html').read_text(encoding='utf-8')
+          assert re.findall(r'<style[^>]*>[\s\S]*?</style>',before)==re.findall(r'<style[^>]*>[\s\S]*?</style>',after), 'CSS changed'
+          assert before[:before.rfind('<script>')]==after[:after.rfind('<script>')], 'Static reader or corpus containers changed'
+          newdict=Path('daruri/dictionary.html').read_text(encoding='utf-8')
+          assert dictionary[:dictionary.rfind('<script>')]==newdict[:newdict.rfind('<script>')], 'Dictionary sources or static fallback changed'
+          assert not re.search(r'upload pending|awaiting upload|awaiting retrieval',after,re.I)
+          manifest=json.loads(Path('daruri/pdf-editions-manifest.json').read_text())
+          for name,entry in manifest['files'].items():
+              assert hashlib.sha256(Path('daruri',name).read_bytes()).hexdigest()==entry['sha256'], f'PDF changed: {name}'
+          print('Verified all patch paths, unchanged styles and scholarly data, and exact PDF checksums.')
+          PY
+      - name: Run regression checks
+        run: |
+          set -euo pipefail
+          node daruri/qa/verify-heading-contract.js
+          node daruri/qa/verify-focus-modes.js
+          node daruri/qa/verify-language-cycle.js
+          node --check daruri/sw.js
+          node --check daruri/download-bundle.js
+          python3 - <<'PY'
+          from pathlib import Path
+          import re,subprocess
+          text=Path('daruri/dictionary.html').read_text(encoding='utf-8')
+          code=text[text.rfind('<script>')+8:text.rfind('</script>')]
+          Path('/tmp/daruri-dictionary-final.js').write_text(code,encoding='utf-8')
+          subprocess.run(['node','--check','/tmp/daruri-dictionary-final.js'],check=True)
+          PY
+      - name: Commit only the verified reader changes
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add daruri/index.html daruri/dictionary.html daruri/sw.js daruri/qa/load-book.js daruri/qa/verify-heading-contract.js daruri/qa/verify-focus-modes.js daruri/qa/verify-language-cycle.js daruri/qa/EDITING_LARGE_READER.md
+          git diff --cached --check
+          git diff --cached --stat
+          git commit -m 'Finish Daruri source-aware returns, dictionary context, and release checks'
+          git push origin HEAD:master
