@@ -101,6 +101,16 @@
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
+      ['daruri/english-fonts.css', 'english-fonts.css'],
+      ['daruri/fonts/english-font-faces.css', 'fonts/english-font-faces.css'],
+      ['daruri/fonts/source-serif-4-normal.woff2', 'fonts/source-serif-4-normal.woff2'],
+      ['daruri/fonts/source-serif-4-italic.woff2', 'fonts/source-serif-4-italic.woff2'],
+      ['daruri/fonts/literata-normal.woff2', 'fonts/literata-normal.woff2'],
+      ['daruri/fonts/literata-italic.woff2', 'fonts/literata-italic.woff2'],
+      ['daruri/fonts/OFL-Source-Serif-4.txt', 'fonts/OFL-Source-Serif-4.txt'],
+      ['daruri/fonts/OFL-Literata.txt', 'fonts/OFL-Literata.txt'],
+      ['daruri/fonts/ENGLISH-SOURCES.json', 'fonts/ENGLISH-SOURCES.json'],
+      ['daruri/fonts/ENGLISH-README.md', 'fonts/ENGLISH-README.md'],
       ['daruri/arabic-fonts.css', 'arabic-fonts.css'],
       ['daruri/fonts/OFL-Amiri.txt', 'fonts/OFL-Amiri.txt'],
       ['daruri/fonts/OFL-Noto-Naskh-Arabic.txt', 'fonts/OFL-Noto-Naskh-Arabic.txt'],

@@ -1,0 +1,66 @@
+/* English reading choices. Original preserves each surface's native font stack. */
+@import url("fonts/english-font-faces.css");
+
+:root,
+:root[data-english-font="original"],
+#fallbackReader:has(#fb-font-original:checked) {
+  --reader-english-font: initial;
+}
+:root[data-english-font="source-serif"],
+#fallbackReader:has(#fb-font-source-serif:checked) {
+  --reader-english-font: 'Source Serif 4', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+}
+:root[data-english-font="literata"],
+#fallbackReader:has(#fb-font-literata:checked) {
+  --reader-english-font: 'Literata', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+}
+
+/* Keep the interface, headings, and Arabic typography independent. */
+html :is(
+  .passage-en, .fb-en, .note-item p, .gn-layer-note p,
+  .gn-unified-notes .gn-note-entry p, .glossary-card .definition,
+  .application-callout p, .detail-content p, .dictionary-translation
+):not(:lang(ar), [dir="rtl"], .arabic-detail) {
+  font-family: var(--reader-english-font, var(--serif));
+  font-optical-sizing: auto;
+}
+html :is(.editorial-meaning, .source-body .translate, .occurrence p, .fb-dictionary-translation):not(:lang(ar), [dir="rtl"]) {
+  font-family: var(--reader-english-font, Georgia, serif);
+  font-optical-sizing: auto;
+}
+html :is(
+  .lex-authorial p, .dictionary-source .source-context, .fb-lex-examples p,
+  .fb-apparatus p, .fb-case p, .fb-glossary-entry p
+):not(:lang(ar), [dir="rtl"], .micro-label, .fb-dictionary-translation) {
+  font-family: var(--reader-english-font, var(--sans)) !important;
+  font-optical-sizing: auto;
+}
+html :is(.sg-guide, .sg-fallback) :is(p, li, dt, dd, blockquote):not(:lang(ar), [dir="rtl"]) {
+  font-family: var(--reader-english-font, inherit);
+  font-optical-sizing: auto;
+}
+
+.english-font-setting select {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--paper);
+  color: var(--text);
+  font: inherit;
+  font-size: 16px;
+}
+.english-font-setting select:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+.english-font-preview {
+  margin: 13px 0 7px;
+  font: 400 19px/1.7 var(--reader-english-font, var(--serif));
+  font-optical-sizing: auto;
+  color: var(--text);
+}
+#englishFontStatus:empty { display: none; }

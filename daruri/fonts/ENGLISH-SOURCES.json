@@ -1,0 +1,904 @@
+{
+  "prepared_for": "Daruri English reader typeface choices",
+  "prepared_on": "2026-10-20",
+  "tool": "fontTools 4.61.1",
+  "conversion": "Complete official variable TrueType fonts compressed to WOFF2 without subsetting, axis pinning, or changes to glyphs, names, layout, or variation tables.",
+  "original_native_default": "'Iowan Old Style','Palatino Linotype','Book Antiqua',Georgia,serif",
+  "sources": [
+    {
+      "family": "sourceserif4",
+      "name": "SourceSerif4[opsz,wght].ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourceserif4/SourceSerif4%5Bopsz%2Cwght%5D.ttf",
+      "bytes": 1209508,
+      "sha256": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b",
+      "git_blob_sha1": "40bbb58cb58e893ad0470f0bb291e096c73d3554"
+    },
+    {
+      "family": "sourceserif4",
+      "name": "SourceSerif4-Italic[opsz,wght].ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourceserif4/SourceSerif4-Italic%5Bopsz%2Cwght%5D.ttf",
+      "bytes": 855432,
+      "sha256": "15fbc7e4679489a501998c3669272637a6646388ef7e4bd77eebb5bf967a1f42",
+      "git_blob_sha1": "ccb969aa6847e1169ff9c8c8bdc28daff6966861"
+    },
+    {
+      "family": "sourceserif4",
+      "name": "OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourceserif4/OFL.txt",
+      "bytes": 4400,
+      "sha256": "5f94c3fd3a23131a417ab5a0c8452de57e70c3cfb9f604d88241f7065ebf9fd9",
+      "git_blob_sha1": "318074ec9d43c936a56ee1dae92999f4df073ce8"
+    },
+    {
+      "family": "sourceserif4",
+      "name": "METADATA.pb",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourceserif4/METADATA.pb",
+      "bytes": 1132,
+      "sha256": "f7b88902c1d2f41839a3f7bf6723d1e64044c7c183b82871ce770a95f24b84e3",
+      "git_blob_sha1": "d11fa635f826bd90df219bf574e0fe83fff531a6"
+    },
+    {
+      "family": "literata",
+      "name": "Literata[opsz,wght].ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/literata/Literata%5Bopsz%2Cwght%5D.ttf",
+      "bytes": 955132,
+      "sha256": "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440",
+      "git_blob_sha1": "0a81b4984a4a4eb101e0ddc28babc85bb137efef"
+    },
+    {
+      "family": "literata",
+      "name": "Literata-Italic[opsz,wght].ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/literata/Literata-Italic%5Bopsz%2Cwght%5D.ttf",
+      "bytes": 902728,
+      "sha256": "d483dfaeba9cbf4ce71d32a52ee65df82f7e35b15fff8d1011cdb242d1fcd465",
+      "git_blob_sha1": "8690209cd1bb4d9be1c1a0e976ee2f740c94093b"
+    },
+    {
+      "family": "literata",
+      "name": "OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/literata/OFL.txt",
+      "bytes": 4389,
+      "sha256": "8742963604cd89dc81437811a850018fc03b2bfad686d7422c8235967c87614e",
+      "git_blob_sha1": "9d3b4e3b1e9068fbda799f57833ff831d05cc271"
+    },
+    {
+      "family": "literata",
+      "name": "METADATA.pb",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/literata/METADATA.pb",
+      "bytes": 1408,
+      "sha256": "8dbc5c48f254be32c879f006391cb5f6781941beb1a643c13acf66fa989b6a83",
+      "git_blob_sha1": "66ac59e0dc32de37c917cbd0bfb085f8349da472"
+    }
+  ],
+  "coverage_check": {
+    "file": "daruri/index.html",
+    "source_sha256": "f1138965cd90e895bdac58ece625398782230c55aa73edd26bde422fafc5637d",
+    "method": "HTML character references decoded; script and style contents excluded. Checked visible Latin letters, modifier letters, non-Arabic combining marks, ASCII, and NFD-equivalent marks, plus the explicit Arabic-transliteration repertoire. Rare punctuation and UI-symbol fallbacks reported separately.",
+    "visible_latin_letters_and_modifier_letters": [
+      {
+        "codepoint": "U+0041",
+        "character": "A",
+        "name": "LATIN CAPITAL LETTER A"
+      },
+      {
+        "codepoint": "U+0042",
+        "character": "B",
+        "name": "LATIN CAPITAL LETTER B"
+      },
+      {
+        "codepoint": "U+0043",
+        "character": "C",
+        "name": "LATIN CAPITAL LETTER C"
+      },
+      {
+        "codepoint": "U+0044",
+        "character": "D",
+        "name": "LATIN CAPITAL LETTER D"
+      },
+      {
+        "codepoint": "U+0045",
+        "character": "E",
+        "name": "LATIN CAPITAL LETTER E"
+      },
+      {
+        "codepoint": "U+0046",
+        "character": "F",
+        "name": "LATIN CAPITAL LETTER F"
+      },
+      {
+        "codepoint": "U+0047",
+        "character": "G",
+        "name": "LATIN CAPITAL LETTER G"
+      },
+      {
+        "codepoint": "U+0048",
+        "character": "H",
+        "name": "LATIN CAPITAL LETTER H"
+      },
+      {
+        "codepoint": "U+0049",
+        "character": "I",
+        "name": "LATIN CAPITAL LETTER I"
+      },
+      {
+        "codepoint": "U+004A",
+        "character": "J",
+        "name": "LATIN CAPITAL LETTER J"
+      },
+      {
+        "codepoint": "U+004B",
+        "character": "K",
+        "name": "LATIN CAPITAL LETTER K"
+      },
+      {
+        "codepoint": "U+004C",
+        "character": "L",
+        "name": "LATIN CAPITAL LETTER L"
+      },
+      {
+        "codepoint": "U+004D",
+        "character": "M",
+        "name": "LATIN CAPITAL LETTER M"
+      },
+      {
+        "codepoint": "U+004E",
+        "character": "N",
+        "name": "LATIN CAPITAL LETTER N"
+      },
+      {
+        "codepoint": "U+004F",
+        "character": "O",
+        "name": "LATIN CAPITAL LETTER O"
+      },
+      {
+        "codepoint": "U+0050",
+        "character": "P",
+        "name": "LATIN CAPITAL LETTER P"
+      },
+      {
+        "codepoint": "U+0051",
+        "character": "Q",
+        "name": "LATIN CAPITAL LETTER Q"
+      },
+      {
+        "codepoint": "U+0052",
+        "character": "R",
+        "name": "LATIN CAPITAL LETTER R"
+      },
+      {
+        "codepoint": "U+0053",
+        "character": "S",
+        "name": "LATIN CAPITAL LETTER S"
+      },
+      {
+        "codepoint": "U+0054",
+        "character": "T",
+        "name": "LATIN CAPITAL LETTER T"
+      },
+      {
+        "codepoint": "U+0055",
+        "character": "U",
+        "name": "LATIN CAPITAL LETTER U"
+      },
+      {
+        "codepoint": "U+0056",
+        "character": "V",
+        "name": "LATIN CAPITAL LETTER V"
+      },
+      {
+        "codepoint": "U+0057",
+        "character": "W",
+        "name": "LATIN CAPITAL LETTER W"
+      },
+      {
+        "codepoint": "U+0058",
+        "character": "X",
+        "name": "LATIN CAPITAL LETTER X"
+      },
+      {
+        "codepoint": "U+0059",
+        "character": "Y",
+        "name": "LATIN CAPITAL LETTER Y"
+      },
+      {
+        "codepoint": "U+005A",
+        "character": "Z",
+        "name": "LATIN CAPITAL LETTER Z"
+      },
+      {
+        "codepoint": "U+0061",
+        "character": "a",
+        "name": "LATIN SMALL LETTER A"
+      },
+      {
+        "codepoint": "U+0062",
+        "character": "b",
+        "name": "LATIN SMALL LETTER B"
+      },
+      {
+        "codepoint": "U+0063",
+        "character": "c",
+        "name": "LATIN SMALL LETTER C"
+      },
+      {
+        "codepoint": "U+0064",
+        "character": "d",
+        "name": "LATIN SMALL LETTER D"
+      },
+      {
+        "codepoint": "U+0065",
+        "character": "e",
+        "name": "LATIN SMALL LETTER E"
+      },
+      {
+        "codepoint": "U+0066",
+        "character": "f",
+        "name": "LATIN SMALL LETTER F"
+      },
+      {
+        "codepoint": "U+0067",
+        "character": "g",
+        "name": "LATIN SMALL LETTER G"
+      },
+      {
+        "codepoint": "U+0068",
+        "character": "h",
+        "name": "LATIN SMALL LETTER H"
+      },
+      {
+        "codepoint": "U+0069",
+        "character": "i",
+        "name": "LATIN SMALL LETTER I"
+      },
+      {
+        "codepoint": "U+006A",
+        "character": "j",
+        "name": "LATIN SMALL LETTER J"
+      },
+      {
+        "codepoint": "U+006B",
+        "character": "k",
+        "name": "LATIN SMALL LETTER K"
+      },
+      {
+        "codepoint": "U+006C",
+        "character": "l",
+        "name": "LATIN SMALL LETTER L"
+      },
+      {
+        "codepoint": "U+006D",
+        "character": "m",
+        "name": "LATIN SMALL LETTER M"
+      },
+      {
+        "codepoint": "U+006E",
+        "character": "n",
+        "name": "LATIN SMALL LETTER N"
+      },
+      {
+        "codepoint": "U+006F",
+        "character": "o",
+        "name": "LATIN SMALL LETTER O"
+      },
+      {
+        "codepoint": "U+0070",
+        "character": "p",
+        "name": "LATIN SMALL LETTER P"
+      },
+      {
+        "codepoint": "U+0071",
+        "character": "q",
+        "name": "LATIN SMALL LETTER Q"
+      },
+      {
+        "codepoint": "U+0072",
+        "character": "r",
+        "name": "LATIN SMALL LETTER R"
+      },
+      {
+        "codepoint": "U+0073",
+        "character": "s",
+        "name": "LATIN SMALL LETTER S"
+      },
+      {
+        "codepoint": "U+0074",
+        "character": "t",
+        "name": "LATIN SMALL LETTER T"
+      },
+      {
+        "codepoint": "U+0075",
+        "character": "u",
+        "name": "LATIN SMALL LETTER U"
+      },
+      {
+        "codepoint": "U+0076",
+        "character": "v",
+        "name": "LATIN SMALL LETTER V"
+      },
+      {
+        "codepoint": "U+0077",
+        "character": "w",
+        "name": "LATIN SMALL LETTER W"
+      },
+      {
+        "codepoint": "U+0078",
+        "character": "x",
+        "name": "LATIN SMALL LETTER X"
+      },
+      {
+        "codepoint": "U+0079",
+        "character": "y",
+        "name": "LATIN SMALL LETTER Y"
+      },
+      {
+        "codepoint": "U+007A",
+        "character": "z",
+        "name": "LATIN SMALL LETTER Z"
+      },
+      {
+        "codepoint": "U+00F3",
+        "character": "ó",
+        "name": "LATIN SMALL LETTER O WITH ACUTE"
+      },
+      {
+        "codepoint": "U+0100",
+        "character": "Ā",
+        "name": "LATIN CAPITAL LETTER A WITH MACRON"
+      },
+      {
+        "codepoint": "U+0101",
+        "character": "ā",
+        "name": "LATIN SMALL LETTER A WITH MACRON"
+      },
+      {
+        "codepoint": "U+012A",
+        "character": "Ī",
+        "name": "LATIN CAPITAL LETTER I WITH MACRON"
+      },
+      {
+        "codepoint": "U+012B",
+        "character": "ī",
+        "name": "LATIN SMALL LETTER I WITH MACRON"
+      },
+      {
+        "codepoint": "U+016A",
+        "character": "Ū",
+        "name": "LATIN CAPITAL LETTER U WITH MACRON"
+      },
+      {
+        "codepoint": "U+016B",
+        "character": "ū",
+        "name": "LATIN SMALL LETTER U WITH MACRON"
+      },
+      {
+        "codepoint": "U+02BE",
+        "character": "ʾ",
+        "name": "MODIFIER LETTER RIGHT HALF RING"
+      },
+      {
+        "codepoint": "U+02BF",
+        "character": "ʿ",
+        "name": "MODIFIER LETTER LEFT HALF RING"
+      },
+      {
+        "codepoint": "U+1E0C",
+        "character": "Ḍ",
+        "name": "LATIN CAPITAL LETTER D WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E0D",
+        "character": "ḍ",
+        "name": "LATIN SMALL LETTER D WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E24",
+        "character": "Ḥ",
+        "name": "LATIN CAPITAL LETTER H WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E25",
+        "character": "ḥ",
+        "name": "LATIN SMALL LETTER H WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E62",
+        "character": "Ṣ",
+        "name": "LATIN CAPITAL LETTER S WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E63",
+        "character": "ṣ",
+        "name": "LATIN SMALL LETTER S WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E6C",
+        "character": "Ṭ",
+        "name": "LATIN CAPITAL LETTER T WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E6D",
+        "character": "ṭ",
+        "name": "LATIN SMALL LETTER T WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E92",
+        "character": "Ẓ",
+        "name": "LATIN CAPITAL LETTER Z WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E93",
+        "character": "ẓ",
+        "name": "LATIN SMALL LETTER Z WITH DOT BELOW"
+      }
+    ],
+    "visible_non_arabic_combining_marks": [],
+    "nfd_equivalent_combining_marks": [
+      {
+        "codepoint": "U+0301",
+        "character": "́",
+        "name": "COMBINING ACUTE ACCENT"
+      },
+      {
+        "codepoint": "U+0304",
+        "character": "̄",
+        "name": "COMBINING MACRON"
+      },
+      {
+        "codepoint": "U+0323",
+        "character": "̣",
+        "name": "COMBINING DOT BELOW"
+      }
+    ],
+    "explicit_transliteration_repertoire": [
+      {
+        "codepoint": "U+0100",
+        "character": "Ā",
+        "name": "LATIN CAPITAL LETTER A WITH MACRON"
+      },
+      {
+        "codepoint": "U+0101",
+        "character": "ā",
+        "name": "LATIN SMALL LETTER A WITH MACRON"
+      },
+      {
+        "codepoint": "U+012A",
+        "character": "Ī",
+        "name": "LATIN CAPITAL LETTER I WITH MACRON"
+      },
+      {
+        "codepoint": "U+012B",
+        "character": "ī",
+        "name": "LATIN SMALL LETTER I WITH MACRON"
+      },
+      {
+        "codepoint": "U+016A",
+        "character": "Ū",
+        "name": "LATIN CAPITAL LETTER U WITH MACRON"
+      },
+      {
+        "codepoint": "U+016B",
+        "character": "ū",
+        "name": "LATIN SMALL LETTER U WITH MACRON"
+      },
+      {
+        "codepoint": "U+02BB",
+        "character": "ʻ",
+        "name": "MODIFIER LETTER TURNED COMMA"
+      },
+      {
+        "codepoint": "U+02BE",
+        "character": "ʾ",
+        "name": "MODIFIER LETTER RIGHT HALF RING"
+      },
+      {
+        "codepoint": "U+02BF",
+        "character": "ʿ",
+        "name": "MODIFIER LETTER LEFT HALF RING"
+      },
+      {
+        "codepoint": "U+1E0C",
+        "character": "Ḍ",
+        "name": "LATIN CAPITAL LETTER D WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E0D",
+        "character": "ḍ",
+        "name": "LATIN SMALL LETTER D WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E24",
+        "character": "Ḥ",
+        "name": "LATIN CAPITAL LETTER H WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E25",
+        "character": "ḥ",
+        "name": "LATIN SMALL LETTER H WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E62",
+        "character": "Ṣ",
+        "name": "LATIN CAPITAL LETTER S WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E63",
+        "character": "ṣ",
+        "name": "LATIN SMALL LETTER S WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E6C",
+        "character": "Ṭ",
+        "name": "LATIN CAPITAL LETTER T WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E6D",
+        "character": "ṭ",
+        "name": "LATIN SMALL LETTER T WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E92",
+        "character": "Ẓ",
+        "name": "LATIN CAPITAL LETTER Z WITH DOT BELOW"
+      },
+      {
+        "codepoint": "U+1E93",
+        "character": "ẓ",
+        "name": "LATIN SMALL LETTER Z WITH DOT BELOW"
+      }
+    ]
+  },
+  "fonts": [
+    {
+      "file": "source-serif-4-normal.woff2",
+      "family": "Source Serif 4",
+      "style": "normal",
+      "font_weight_descriptor": "200 900",
+      "axes": {
+        "wght": {
+          "min": 200.0,
+          "default": 400.0,
+          "max": 900.0
+        },
+        "opsz": {
+          "min": 8.0,
+          "default": 20.0,
+          "max": 60.0
+        }
+      },
+      "version": "Version 4.004;hotconv 1.0.116;makeotfexe 2.5.65601",
+      "bytes": 427556,
+      "sha256": "4453d73855919eb67a8291bf2bad07782ecaf8af0e4e363d58948ff993209d51",
+      "glyphs": 1463,
+      "mapped_codepoints": 918,
+      "subset": false,
+      "source_font": "SourceSerif4[opsz,wght].ttf",
+      "licence": "OFL-Source-Serif-4.txt",
+      "latin_and_transliteration_coverage_pass": true,
+      "nfd_combining_mark_coverage_pass": true,
+      "missing_visible_non_arabic_punctuation": [
+        {
+          "codepoint": "U+203B",
+          "character": "※",
+          "name": "REFERENCE MARK"
+        },
+        {
+          "codepoint": "U+27E8",
+          "character": "⟨",
+          "name": "MATHEMATICAL LEFT ANGLE BRACKET"
+        },
+        {
+          "codepoint": "U+27E9",
+          "character": "⟩",
+          "name": "MATHEMATICAL RIGHT ANGLE BRACKET"
+        }
+      ],
+      "missing_visible_spaces": [],
+      "missing_other_visible_non_arabic_characters": [
+        {
+          "codepoint": "U+203B",
+          "character": "※",
+          "name": "REFERENCE MARK"
+        },
+        {
+          "codepoint": "U+2302",
+          "character": "⌂",
+          "name": "HOUSE"
+        },
+        {
+          "codepoint": "U+2727",
+          "character": "✧",
+          "name": "WHITE FOUR POINTED STAR"
+        },
+        {
+          "codepoint": "U+27E8",
+          "character": "⟨",
+          "name": "MATHEMATICAL LEFT ANGLE BRACKET"
+        },
+        {
+          "codepoint": "U+27E9",
+          "character": "⟩",
+          "name": "MATHEMATICAL RIGHT ANGLE BRACKET"
+        }
+      ],
+      "tables_verified_unchanged": [
+        "name",
+        "cmap",
+        "GDEF",
+        "GSUB",
+        "GPOS",
+        "fvar",
+        "avar",
+        "gvar",
+        "HVAR",
+        "STAT"
+      ]
+    },
+    {
+      "file": "source-serif-4-italic.woff2",
+      "family": "Source Serif 4",
+      "style": "italic",
+      "font_weight_descriptor": "200 900",
+      "axes": {
+        "wght": {
+          "min": 200.0,
+          "default": 400.0,
+          "max": 900.0
+        },
+        "opsz": {
+          "min": 8.0,
+          "default": 20.0,
+          "max": 60.0
+        }
+      },
+      "version": "Version 4.004;hotconv 1.0.116;makeotfexe 2.5.65601",
+      "bytes": 346088,
+      "sha256": "a5e93099350c2768f7939fa51503641c961550830fb2a02083f5cf11adf227b5",
+      "glyphs": 1093,
+      "mapped_codepoints": 918,
+      "subset": false,
+      "source_font": "SourceSerif4-Italic[opsz,wght].ttf",
+      "licence": "OFL-Source-Serif-4.txt",
+      "latin_and_transliteration_coverage_pass": true,
+      "nfd_combining_mark_coverage_pass": true,
+      "missing_visible_non_arabic_punctuation": [
+        {
+          "codepoint": "U+203B",
+          "character": "※",
+          "name": "REFERENCE MARK"
+        },
+        {
+          "codepoint": "U+27E8",
+          "character": "⟨",
+          "name": "MATHEMATICAL LEFT ANGLE BRACKET"
+        },
+        {
+          "codepoint": "U+27E9",
+          "character": "⟩",
+          "name": "MATHEMATICAL RIGHT ANGLE BRACKET"
+        }
+      ],
+      "missing_visible_spaces": [],
+      "missing_other_visible_non_arabic_characters": [
+        {
+          "codepoint": "U+203B",
+          "character": "※",
+          "name": "REFERENCE MARK"
+        },
+        {
+          "codepoint": "U+2302",
+          "character": "⌂",
+          "name": "HOUSE"
+        },
+        {
+          "codepoint": "U+2727",
+          "character": "✧",
+          "name": "WHITE FOUR POINTED STAR"
+        },
+        {
+          "codepoint": "U+27E8",
+          "character": "⟨",
+          "name": "MATHEMATICAL LEFT ANGLE BRACKET"
+        },
+        {
+          "codepoint": "U+27E9",
+          "character": "⟩",
+          "name": "MATHEMATICAL RIGHT ANGLE BRACKET"
+        }
+      ],
+      "tables_verified_unchanged": [
+        "name",
+        "cmap",
+        "GDEF",
+        "GSUB",
+        "GPOS",
+        "fvar",
+        "avar",
+        "gvar",
+        "HVAR",
+        "STAT"
+      ]
+    },
+    {
+      "file": "literata-normal.woff2",
+      "family": "Literata",
+      "style": "normal",
+      "font_weight_descriptor": "200 900",
+      "axes": {
+        "opsz": {
+          "min": 7.0,
+          "default": 12.0,
+          "max": 72.0
+        },
+        "wght": {
+          "min": 200.0,
+          "default": 400.0,
+          "max": 900.0
+        }
+      },
+      "version": "Version 3.103;gftools[0.9.29]",
+      "bytes": 397212,
+      "sha256": "230e5b1de4f4ace4d49c9fda9c8cf0851acb5425dce9067d89ff88aed93f325d",
+      "glyphs": 1789,
+      "mapped_codepoints": 1163,
+      "subset": false,
+      "source_font": "Literata[opsz,wght].ttf",
+      "licence": "OFL-Literata.txt",
+      "latin_and_transliteration_coverage_pass": true,
+      "nfd_combining_mark_coverage_pass": true,
+      "missing_visible_non_arabic_punctuation": [
+        {
+          "codepoint": "U+203B",
+          "character": "※",
+          "name": "REFERENCE MARK"
+        },
+        {
+          "codepoint": "U+27E8",
+          "character": "⟨",
+          "name": "MATHEMATICAL LEFT ANGLE BRACKET"
+        },
+        {
+          "codepoint": "U+27E9",
+          "character": "⟩",
+          "name": "MATHEMATICAL RIGHT ANGLE BRACKET"
+        }
+      ],
+      "missing_visible_spaces": [],
+      "missing_other_visible_non_arabic_characters": [
+        {
+          "codepoint": "U+203B",
+          "character": "※",
+          "name": "REFERENCE MARK"
+        },
+        {
+          "codepoint": "U+2197",
+          "character": "↗",
+          "name": "NORTH EAST ARROW"
+        },
+        {
+          "codepoint": "U+2302",
+          "character": "⌂",
+          "name": "HOUSE"
+        },
+        {
+          "codepoint": "U+2727",
+          "character": "✧",
+          "name": "WHITE FOUR POINTED STAR"
+        },
+        {
+          "codepoint": "U+27E8",
+          "character": "⟨",
+          "name": "MATHEMATICAL LEFT ANGLE BRACKET"
+        },
+        {
+          "codepoint": "U+27E9",
+          "character": "⟩",
+          "name": "MATHEMATICAL RIGHT ANGLE BRACKET"
+        }
+      ],
+      "tables_verified_unchanged": [
+        "name",
+        "cmap",
+        "GDEF",
+        "GSUB",
+        "GPOS",
+        "fvar",
+        "avar",
+        "gvar",
+        "HVAR",
+        "MVAR",
+        "STAT"
+      ]
+    },
+    {
+      "file": "literata-italic.woff2",
+      "family": "Literata",
+      "style": "italic",
+      "font_weight_descriptor": "200 900",
+      "axes": {
+        "opsz": {
+          "min": 7.0,
+          "default": 12.0,
+          "max": 72.0
+        },
+        "wght": {
+          "min": 200.0,
+          "default": 400.0,
+          "max": 900.0
+        }
+      },
+      "version": "Version 3.103;gftools[0.9.29]",
+      "bytes": 396676,
+      "sha256": "38060b182b46a8b6c5f521982e86c59480f8811e77852ed563ce8a66a4adecb6",
+      "glyphs": 1769,
+      "mapped_codepoints": 1163,
+      "subset": false,
+      "source_font": "Literata-Italic[opsz,wght].ttf",
+      "licence": "OFL-Literata.txt",
+      "latin_and_transliteration_coverage_pass": true,
+      "nfd_combining_mark_coverage_pass": true,
+      "missing_visible_non_arabic_punctuation": [
+        {
+          "codepoint": "U+203B",
+          "character": "※",
+          "name": "REFERENCE MARK"
+        },
+        {
+          "codepoint": "U+27E8",
+          "character": "⟨",
+          "name": "MATHEMATICAL LEFT ANGLE BRACKET"
+        },
+        {
+          "codepoint": "U+27E9",
+          "character": "⟩",
+          "name": "MATHEMATICAL RIGHT ANGLE BRACKET"
+        }
+      ],
+      "missing_visible_spaces": [],
+      "missing_other_visible_non_arabic_characters": [
+        {
+          "codepoint": "U+203B",
+          "character": "※",
+          "name": "REFERENCE MARK"
+        },
+        {
+          "codepoint": "U+2197",
+          "character": "↗",
+          "name": "NORTH EAST ARROW"
+        },
+        {
+          "codepoint": "U+2302",
+          "character": "⌂",
+          "name": "HOUSE"
+        },
+        {
+          "codepoint": "U+2727",
+          "character": "✧",
+          "name": "WHITE FOUR POINTED STAR"
+        },
+        {
+          "codepoint": "U+27E8",
+          "character": "⟨",
+          "name": "MATHEMATICAL LEFT ANGLE BRACKET"
+        },
+        {
+          "codepoint": "U+27E9",
+          "character": "⟩",
+          "name": "MATHEMATICAL RIGHT ANGLE BRACKET"
+        }
+      ],
+      "tables_verified_unchanged": [
+        "name",
+        "cmap",
+        "GDEF",
+        "GSUB",
+        "GPOS",
+        "fvar",
+        "avar",
+        "gvar",
+        "HVAR",
+        "MVAR",
+        "STAT"
+      ]
+    }
+  ]
+}

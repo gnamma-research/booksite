@@ -35,7 +35,7 @@
     padding: 0 !important;
     background: #fff !important;
     color: #000 !important;
-    font: 11pt/1.5 var(--serif) !important;
+    font: 11pt/1.5 var(--reader-english-font, var(--serif)) !important;
     min-height: 0 !important;
     height: auto !important;
     overflow: visible !important;
@@ -142,7 +142,7 @@
   html:root body h3 { font-size: 13pt !important; margin: 13pt 0 6pt !important; }
   html:root body :is(h4, h5, h6) { font-size: 11pt !important; }
   html:root body :is(p, li, dt, dd, blockquote, summary, td, th, .appendix-copy) {
-    font-family: var(--serif) !important;
+    font-family: var(--reader-english-font, var(--serif)) !important;
     orphans: 3;
     widows: 3;
   }
@@ -206,7 +206,7 @@
     border: 0 !important;
     padding: 0 !important;
     margin: 0 0 8pt !important;
-    font: 11pt/1.5 var(--serif) !important;
+    font: 11pt/1.5 var(--reader-english-font, var(--serif)) !important;
     overflow: visible !important;
     overflow-wrap: break-word !important;
     break-inside: auto !important;

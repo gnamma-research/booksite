@@ -1,9 +1,11 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#eee8de"><title>al-Ḍarūrī · Historical Dictionary</title><meta name="description" content="A searchable scholarly dictionary for Ibn Rushd's al-Daruri, with Arabic historical dictionary passages, English translations and linked original sources."><link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any"><link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180"><link href="arabic-fonts.css?v=20261020-fonts1" rel="stylesheet">
+<link href="english-fonts.css?v=20261020-fonts2" rel="stylesheet">
 <script>
-/* Restore the reading font before the first Arabic text is laid out. */
+/* Restore the reading fonts before the first text is laid out. */
 try {
- const fontPreference=JSON.parse(localStorage.getItem('daruri-reader-v2')||'{}')?.arabicFont;
- if(['amiri','scheherazade','noto'].includes(fontPreference))document.documentElement.setAttribute('data-arabic-font',fontPreference);
+ const fontPreferences=JSON.parse(localStorage.getItem('daruri-reader-v2')||'{}');
+ if(['amiri','scheherazade','noto'].includes(fontPreferences?.arabicFont))document.documentElement.setAttribute('data-arabic-font',fontPreferences.arabicFont);
+ if(['original','source-serif','literata'].includes(fontPreferences?.englishFont))document.documentElement.setAttribute('data-english-font',fontPreferences.englishFont);
 } catch (_) {}
 </script>
 <style>
@@ -197,7 +199,7 @@ body[data-palette="gnamma-air"][data-landscape="yes"] .reader{
  body[data-palette="gnamma-air"] .reader{background:#fff!important;box-shadow:none!important}
 }
 </style>
-<link rel="stylesheet" href="print.css?v=20261020-fonts1" media="print"/>
+<link rel="stylesheet" href="print.css?v=20261020-fonts2" media="print"/>
 <script defer src="print.js?v=20261020-print1"></script>
 </head>
 <body data-landscape="no" data-theme="light"><header class="hd"><div class="hd-inner"><div class="logo-small">Ibn Rushd · al-Ḍarūrī</div><a class="hd-title" href="index.html#glossary">Dictionary · معجم المصطلحات</a></div></header>
