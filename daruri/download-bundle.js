@@ -108,6 +108,7 @@
       ['daruri/dictionary.html', 'dictionary.html'],
       ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js'],
       ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js'],
+      ['daruri/source-reference-data.js', 'source-reference-data.js?v=daruri7-notes-20261020'],
       ['daruri/download-bundle.js', 'download-bundle.js'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],

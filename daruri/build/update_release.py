@@ -46,7 +46,7 @@ EDITIONS = {
 }
 SECTION_IDS = {str(i) for i in range(1, 259)} | {"colophon"}
 RELEASE_ASSETS = tuple(EDITIONS) + (
-    EDITION_JS, "dictionary-r3-20261020.js", "download-bundle.js",
+    EDITION_JS, "dictionary-r3-20261020.js", "source-reference-data.js", "download-bundle.js",
     "pdf-editions-manifest.json", "sw.js",
 )
 STUDY_RELEASE_ASSETS = ("daruri-study-guide.pdf", "study-guide-data.js", "study-guide.js")

@@ -12,6 +12,14 @@ This build uses the current `edition-r3-20261020.js` reader payload as its autho
 
 The data files retain exact quotation anchors, source URLs, identification qualifications and the 22 narrowly specified changes that separate source locators from existing mixed notes. They preserve the original note IDs and explanatory content.
 
+## Website Notes cards
+
+The reader uses the same 53 Qur’an and 33 hadith source records already present in `edition-r3-20261020.js`. `sections[].noteIds` is the authoritative association with a passage; legacy `note.n` values are not reliable ownership keys. The Notes link counts all displayed records once by ID. Its card shows main-text sources first, separately scoped Bidāya application sources next, and the other notes afterwards. Source qualifications remain verbatim.
+
+Run `python daruri/build/build_source_reference_data.py` to refresh `source-reference-data.js` from the back-matter mappings; `--check` verifies that the export is current. The reader attaches the 12 application-source notes only to each application’s primary section and displays them in the application itself. The 13 dictionary source notes retain their full-article IDs in the export and PDF apparatus. Do not attach those notes to authorial passages or to website excerpts that omit the cited wording.
+
+`qa/verify-reader-source-notes.js` exercises all 259 section routes, complete note bodies/links, counts, source-first presentation and return behavior. Keep the new data script in the HTML, service-worker core and browser download package. The release updater versions it alongside the other scholarly data assets.
+
 ## Build
 
 Install `requirements.txt` in an isolated Python environment, with Pango and HarfBuzz available. The retained Noto font files and their SIL Open Font Licenses make font selection reproducible.
