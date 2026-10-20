@@ -104,6 +104,7 @@
       ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js'],
       ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js'],
       ['daruri/download-bundle.js', 'download-bundle.js'],
+      ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json'],
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
       ['daruri/sw.js', 'sw.js'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
@@ -114,12 +115,14 @@
       ['daruri/assets/gnamma-landscape.webp', '../assets/gnamma-landscape.webp']
     ];
 
-    // Include all three published reading editions even when a sidebar is hidden.
+    // Include all five published reading editions even when a sidebar is hidden.
     // The Bou Akl variant report is supplementary; discover other on-site PDF links.
     const pdfs = new Map([
       ['daruri/daruri.pdf', 'daruri.pdf'],
       ['daruri/daruri-arabic.pdf', 'daruri-arabic.pdf'],
       ['daruri/daruri-english.pdf', 'daruri-english.pdf'],
+      ['daruri/daruri-study.pdf', 'daruri-study.pdf'],
+      ['daruri/daruri-arabic-vowelled.pdf', 'daruri-arabic-vowelled.pdf'],
       ['daruri/bou-akl-2015-variant-report.pdf', 'bou-akl-2015-variant-report.pdf']
     ]);
     for (const link of document.querySelectorAll('a[href]')) {

@@ -1,21 +1,47 @@
 {
   "edition_date": "2026-10-20",
-  "source": "user-provided three-edition archive",
+  "source": "daruri4: Four Editions Full Headwords release and separate fully vowelled Arabic edition",
+  "default_pdf": "daruri.pdf",
   "files": {
     "daruri.pdf": {
-      "source_filename": "Gnamma_Al_Daruri_Bilingual_Scholarly_Lexicon_Updated_2026-10-20.pdf",
-      "sha256": "c887757d8cf8b4be7990cd634b5888adb5a0a2cbe18b00066ba452ba0f0b765d",
-      "pages": 200
+      "title": "Bilingual reference",
+      "source_filename": "03_Daruri_Bilingual_Scholarly_Full_Headwords_2026-10-20.pdf",
+      "sha256": "fc82ca3d8ad742d7f19c26af66a21c052db1559f8218b98fe047131260494324",
+      "size_bytes": 3124195,
+      "pages": 259,
+      "default_for_text_links": true
     },
-    "daruri-arabic.pdf": {
-      "source_filename": "Gnamma_Al_Daruri_Arabic_Reading.pdf",
-      "sha256": "64ba960c59b89142978c572a923243b3935a80fdf88b16eea5b1c035b955f6d9",
-      "pages": 128
+    "daruri-study.pdf": {
+      "title": "Bilingual study",
+      "source_filename": "04_Daruri_Bilingual_Study_2026-10-20.pdf",
+      "sha256": "429dc9f436fd93e59b964d014c5e85132ee21111d510575473ef8953dc80f109",
+      "size_bytes": 808368,
+      "pages": 129,
+      "default_for_text_links": false
     },
     "daruri-english.pdf": {
-      "source_filename": "Gnamma_Al_Daruri_English_Reading_Illustrated_Guide.pdf",
-      "sha256": "eeda055c3a92a1fc3eb9304205a9e326f12d0564a1ca4ceed205746b197ca79e",
-      "pages": 163
+      "title": "English reading",
+      "source_filename": "02_Daruri_English_Reading_2026-10-20.pdf",
+      "sha256": "29db181b82000443ba6def47fa16cf52e835195dc530cee8df5b66ffbbb402de",
+      "size_bytes": 943689,
+      "pages": 98,
+      "default_for_text_links": false
+    },
+    "daruri-arabic.pdf": {
+      "title": "Arabic reading",
+      "source_filename": "01_Daruri_Arabic_Reading_2026-10-20.pdf",
+      "sha256": "8b115e51e70e1c618fe10363ecb366d06bdbdd7dcc02bf73a83487ae72bbcb6d",
+      "size_bytes": 893793,
+      "pages": 81,
+      "default_for_text_links": false
+    },
+    "daruri-arabic-vowelled.pdf": {
+      "title": "Arabic fully vowelled",
+      "source_filename": "Daruri_Arabic_Fully_Vowelled_2026-10-20.pdf",
+      "sha256": "2e488e07635760dddbb9388aa3c980e26af8aa1e66333048a8eeb5e21cbbb263",
+      "size_bytes": 786004,
+      "pages": 92,
+      "default_for_text_links": false
     }
   }
 }
