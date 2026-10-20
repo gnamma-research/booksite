@@ -105,9 +105,9 @@ body.focus-mode ::highlight(gn-rd-bookmark),body.focus-mode ::highlight(gn-rd-no
 }
 @media (prefers-reduced-motion:reduce){.gn-rd-page *{scroll-behavior:auto!important}}
 @media print{
- body.gn-rd-print > :not(#gn-rd-print-root){display:none!important}
- body.gn-rd-print{background:#fff!important;color:#000!important;overflow:visible!important}
- body.gn-rd-print #gn-rd-print-root{display:block!important;position:static!important;background:#fff;color:#000;max-width:none;padding:0;margin:0;font-size:10.5pt;line-height:1.55}
+ html:root body.gn-rd-print > :not(#gn-rd-print-root){display:none!important}
+ html:root body.gn-rd-print{background:#fff!important;color:#000!important;overflow:visible!important}
+ html:root body.gn-rd-print #gn-rd-print-root{display:block!important;position:static!important;background:#fff;color:#000;max-width:none;padding:0;margin:0;font-size:10.5pt;line-height:1.55}
  #gn-rd-print-root article{break-inside:avoid;page-break-inside:avoid;border-bottom:1px solid #999;margin:0 0 18px;padding:0 0 14px}
  #gn-rd-print-root h1,#gn-rd-print-root h2,#gn-rd-print-root h3{font-family:Georgia,serif;color:#000!important}
  #gn-rd-print-root h1{font-size:20pt}
