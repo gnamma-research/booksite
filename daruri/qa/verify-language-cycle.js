@@ -57,9 +57,10 @@ assert(!/id=["']quickVowels["']/.test(html),'Old tashkeel toolbar button should 
 assert(!/id=["']apparatusTashkil["']/.test(html),'Apparatus duplicates Arabic state');
 const contextPos=html.indexOf('id="contextToolbar"');
 const focusPos=html.indexOf('id="focusToolbar"');
-assert(contextPos>0&&focusPos>contextPos&&focusPos-contextPos<850,'Context should be immediately before Focus');
+assert(focusPos>0,'Focus control missing');
+assert(html.includes('function toggleContextPanel(){ /* Retired right pane. */ }'),'Retired right Context pane must not be reactivated');
 for(const id of ['readerPreviousNumber','readerNextNumber','dockPart','dockSection','dockTitle']){
  assert(html.includes('id="'+id+'"'),'Missing dock '+id);
 }
 assert(html.includes('gn-section-number-ar-only'),'Part and section heading must remain inline');
-console.log('PASS: nine Arabic/English state cases, rendered glyphs, 9-button toolbar, adjacent context/focus, numbered dock, JS syntax');
+console.log('PASS: nine Arabic/English state cases, rendered glyphs, preserved controls, retired context pane, numbered dock, JS syntax');

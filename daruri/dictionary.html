@@ -219,18 +219,22 @@ function backToReader(section,focusTerm){
  try{sessionStorage.setItem('daruri-return-location',JSON.stringify({point,created:Date.now(),targetTerm:focusTerm||null}));}catch(e){}
  // A passage reached from the dictionary also needs a way back to this term.
  try{sessionStorage.setItem('daruri-dictionary-jump-origin',JSON.stringify({
-   term:selected,y:window.scrollY,view:viewMode,created:Date.now()}))}catch(e){}
+   term:selected,y:window.scrollY,view:viewMode,query:inp.value,source:srcFilter.value,filter,resultsLimit,
+   browseOpen:document.getElementById('lexBrowse').open,
+   openSources:[...article.querySelectorAll('details')].map((el,i)=>el.open?i:-1).filter(i=>i>=0),
+   listY:list.scrollTop,entryOrigin:dictionaryEntryOrigin,created:Date.now()}))}catch(e){}
  window.location.href='index.html#section='+encodeURIComponent(selectedSection);
 }
 function backToDictionaryEntryOrigin(){
  const o=dictionaryEntryOrigin;
  if(o&&o.route&&o.route!=='reader'&&dictionaryReturnNames[o.route]){
    try{sessionStorage.setItem('daruri-restore-reference-view',JSON.stringify({
-     route:o.route,y:o.y,snapshot:o.snapshot||{},created:Date.now()
+     route:o.route,y:o.y,snapshot:o.snapshot||{},ui:o.ui||null,created:Date.now()
    }))}catch(e){}
    window.location.href='index.html#'+encodeURIComponent(o.route);return;
  }
  if(o&&o.route==='reader'&&o.point){
+   try{sessionStorage.removeItem('daruri-dictionary-jump-origin');if(o.returnOrigin)sessionStorage.setItem('daruri-reader-source-origin',JSON.stringify(o.returnOrigin));}catch(e){}
    try{sessionStorage.setItem('daruri-return-location',JSON.stringify({point:o.point,created:Date.now()}))}catch(e){}
    window.location.href='index.html#section='+encodeURIComponent(o.point.section);return;
  }
@@ -293,7 +297,18 @@ selectTerm(BYNAME.has(from)?from:ENT.find(t=>t.term==='qiyās')?.term||ENT[0].te
 try{const point=JSON.parse(sessionStorage.getItem('daruri-dictionary-restore')||'null');
  sessionStorage.removeItem('daruri-dictionary-restore');
  if(point&&Date.now()-point.created<86400000){
-   requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo({top:Math.max(0,Number(point.y)||0),behavior:'instant'})));
+   if(point.entryOrigin){dictionaryEntryOrigin=point.entryOrigin;renderReturnLabels();}
+   if(typeof point.query==='string')inp.value=point.query;
+   if(typeof point.source==='string'&&[...srcFilter.options].some(o=>o.value===point.source))srcFilter.value=point.source;
+   if(['all','sourced','contextual'].includes(point.filter))filter=point.filter;
+   resultsLimit=Math.max(24,Math.min(ENT.length,Number(point.resultsLimit)||24));
+   document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===filter)));
+   searchList();
+   if(typeof point.browseOpen==='boolean')document.getElementById('lexBrowse').open=point.browseOpen;
+   if(point.openSources){const opens=new Set(point.openSources);article.querySelectorAll('details').forEach((el,i)=>{el.open=opens.has(i)});}
+   const restore=()=>{list.scrollTop=Number(point.listY)||0;window.scrollTo({top:Math.max(0,Number(point.y)||0),behavior:'instant'});};
+   requestAnimationFrame(()=>requestAnimationFrame(restore));
+   Promise.resolve(document.fonts?.ready).then(()=>setTimeout(restore,80));
  }
 }catch(e){}
 </script></body></html>

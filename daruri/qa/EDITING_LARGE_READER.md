@@ -25,7 +25,11 @@ This sequence succeeded on 19 October 2026. The UI change was committed in `4ad9
 - `node daruri/qa/verify-heading-contract.js` and `node daruri/qa/verify-language-cycle.js` when a local checkout/runner is available.
 - Test mobile and desktop rendering, as source checks alone do not establish visual-browser correctness.
 
-The sidebar now shows three **deliberately inactive** PDF placeholders (Bilingual, Arabic, English). Connect them only to verified Darūrī 2 export URLs.
+The three sidebar PDF links are live: `daruri.pdf` (200 pages), `daruri-arabic.pdf` (128 pages), and `daruri-english.pdf` (163 pages). `pdf-editions-manifest.json` records their SHA-256 checksums. Do not reintroduce pending-upload labels. The 304 contents links and 259 heading popups use physical pages from the published bilingual PDF.
+
+The large scholarly payloads are now loaded by `edition-r3-20261020.js` and `dictionary-r3-20261020.js`. The initial `{}` in the inline data elements is intentional; use `qa/load-book.js` for source-only tests, or read the populated element after the browser loads the external scripts. Never replace those placeholders with an old corpus.
+
+Reference returns preserve filters, expanded entries, nested scroll positions and keyboard focus. The standalone dictionary also preserves its selected term, display tab and source filter; its same-site links use the reader’s source-aware navigation. The Contents launcher remains usable in Normal mode and hidden in Focus 1–3. The retired right Context pane must stay retired.
 
 ## Longer-term maintenance option
 

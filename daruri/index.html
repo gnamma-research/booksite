@@ -3015,7 +3015,7 @@ function gnOpenDictionaryStack(term){
  const cfg=DICTIONARIES.terms[term]||{};
  const sources=(cfg.sources||[]).map(id=>DICTIONARIES.sources[id]).filter(Boolean);
  const cards=sources.map(src=>'<article class="gn-layer-note"><h3>'+esc(src.author)+' <small>'+esc((src.chronology?src.chronology+' · ':'')+(src.sourceDate||gnDictionaryEra(src.author))+(src.semanticMatch&&!['exact','exact_historical_phrase','exact_early_lemma'].includes(src.semanticMatch)?' · related evidence':''))+'</small></h3><small>'+esc(src.work)+'</small><blockquote lang="ar" dir="rtl">'+esc(src.quote||'')+'</blockquote><p lang="en">'+esc(src.translation||'Translation not verified')+'</p><a href="'+esc(src.url)+'" target="_blank" rel="noopener noreferrer">Open complete original Arabic entry ↗</a></article>').join('');
- gnShowLayer(term,'<p class="gn-layer-qualification">Checked Arabic excerpts and their English translations. Complete historical entries are linked at their original sources; they have not all been translated in full.</p>'+cards+'<a class="gn-layer-main-link" href="dictionary.html" target="_blank" rel="noopener noreferrer">Open Dictionary · Historical sources ↗</a>','dictionary');
+ gnShowLayer(term,'<p class="gn-layer-qualification">Checked Arabic excerpts and their English translations. Complete historical entries are linked at their original sources; they have not all been translated in full.</p>'+cards+'<a class="gn-layer-main-link" href="dictionary.html#term='+encodeURIComponent(term)+'" data-dictionary-atlas="'+esc(term)+'">Open Dictionary · Historical sources ↗</a>','dictionary');
 }
 document.addEventListener('click',e=>{
  const term=e.target.closest('[data-gn-dictionary]');if(term){e.preventDefault();gnOpenDictionaryStack(term.dataset.gnDictionary);return}
@@ -3181,7 +3181,7 @@ function bindReaderEnhancements() {
 function renderHome(){
  const p=BOOK.parts, last=state.n||'1';
  $('#mainContent').innerHTML=`<div class="gnamma-home"><p class="eyebrow"><span class="rule"></span> IBN RUSHD · BILINGUAL EDITION</p><h1 lang="ar" dir="rtl" class="home-arabic">الضَّرُورِيُّ فِي أُصُولِ الفِقْهِ</h1><h2>al-Ḍarūrī fī uṣūl al-fiqh</h2><p class="home-author">Ibn Rushd (Averroes) · Bilingual scholarly reading edition</p><p class="home-lead">Read and examine the Arabic and English together, follow the reasoning across sections, and consult the critical notes, terminology and juristic comparisons without leaving the text.</p><div class="home-actions"><button class="action-btn primary" type="button" data-section="${esc(last)}">Resume at ${sectionRef(last)}</button><button class="action-btn" type="button" data-section="1">Start from §1</button><a class="action-btn" href="daruri.pdf" target="_blank" rel="noopener">Complete PDF ↗</a><a class="action-btn" href="dictionary.html" data-dictionary-atlas="">Dictionary · Historical sources ↗</a></div>
- <div class="home-stats"><span><b>258</b> authorial sections</span><span><b>123</b> editorial notes</span><span><b>28</b> Bidāya cases</span><span><b>302</b> index headings</span></div>
+ <div class="home-stats"><span><b>258</b> authorial sections</span><span><b>${esc(BOOK.notes.length)}</b> editorial notes</span><span><b>28</b> Bidāya cases</span><span><b>302</b> index headings</span></div>
  <section class="home-block"><h3>Read by part</h3><div class="home-parts">${p.map(x=>`<button type="button" data-section="${x.start}"><small>${x.id===0?'INTRODUCTION':'PART '+['','I','II','III','IV'][x.id]}</small><strong>${esc(x.caption)}</strong><span>§§${x.start}–${x.end} ↗</span></button>`).join('')}</div></section>
  <section class="home-block home-notice"><h3>Reading this edition</h3><p>Arabic text and original rubrics are kept distinct from editorial headings, translation and interpretation. The Arabic vocalisation (<i>tashkīl</i>) is a model-assisted editorial reading, <b>not</b> independently certified grammatical or manuscript evidence. Turn vowels off at any time.</p><p>Dotted-underlined technical terms open local contextual definitions, and selected terms reproduce short, attributed classical dictionary excerpts. Numbered markers refer to notes on a particular reading or passage; some apply to a whole section. The glossary definitions are editorial unless expressly attributed to a source.</p><p>Use the <b>Reading preferences</b> controls to switch languages, remove annotations and concepts, collapse both side panels, or enter <b>Focus reading</b>. The existing bottom navigation provides Previous, Next, and section jumps.</p></section>
  
@@ -3314,6 +3314,7 @@ function sendToDictionary(term=''){
  // Keep the actual source and its active filters for an accurate return.
  try{sessionStorage.setItem('daruri-dictionary-open-origin',JSON.stringify({
    route:state.route,hash:location.hash,y:window.scrollY,
+   ui:gnCaptureReferenceView().ui,returnOrigin:gnCrossView.origin,
    point:state.route==='reader'?point:null,created:Date.now(),
    snapshot:{indexQuery:state.indexQuery,indexFocus:state.indexFocus,indexLimit:state.indexLimit,
      glossaryQuery:state.glossaryQuery,contentsQuery:state.contentsQuery,contentsMode:state.contentsMode,
@@ -3546,13 +3547,41 @@ function takeDictionaryReturn(){
    filters and scroll position when a reference opens an authorial section.
    Does not interfere with reader's existing exact-passage "Back to reading". */
 const gnCrossView={origin:null,pending:null};
+// Preserve reference filters, expanded entries, nested scroll and keyboard focus.
+// Snapshots are local to this tab; no user notes or browsing history leave the browser.
+const gnReferenceViews=new Map();
+function gnCaptureReferenceView(){
+ const main=document.getElementById('mainContent');
+ const fields=['indexQuery','indexFocus','indexLimit','glossaryQuery','contentsQuery','contentsMode','applicationQuery','applicationBook'];
+ const snapshot={};for(const key of fields)snapshot[key]=state[key];
+ const all=main?[...main.querySelectorAll('*')]:[];
+ const details=main?[...main.querySelectorAll('details')]:[];
+ const focusables=main?[...main.querySelectorAll('button,a,input,select,summary,textarea')]:[];
+ return {route:state.route,hash:location.hash,y:window.scrollY,created:Date.now(),snapshot,
+   ui:{details:details.map((el,i)=>el.open?i:-1).filter(i=>i>=0),
+     scrollers:all.map((el,i)=>({i,y:el.scrollTop,x:el.scrollLeft})).filter(x=>x.y||x.x),
+     focus:focusables.indexOf(document.activeElement)}};
+}
+function gnRestoreReferenceView(view){
+ const main=document.getElementById('mainContent');if(!view||!main||state.route!==view.route)return;
+ const ui=view.ui;if(ui){
+   const open=new Set(ui.details||[]);
+   main.querySelectorAll('details').forEach((el,i)=>{el.open=open.has(i)});
+   const all=[...main.querySelectorAll('*')];
+   for(const pos of ui.scrollers||[]){const el=all[pos.i];if(el){el.scrollTop=pos.y;el.scrollLeft=pos.x;}}
+   const focus=[...main.querySelectorAll('button,a,input,select,summary,textarea')][ui.focus];
+   if(focus&&focus.getClientRects().length)focus.focus({preventScroll:true});
+ }
+ window.scrollTo({top:Math.max(0,Number(view.y)||0),behavior:'instant'});
+}
+
 const gnViewNames={index:'Index',contents:'Contents',glossary:'Dictionary · Quick definitions',study:'Study guide',applications:'Bidāya applications',bookmarks:'Bookmarks',home:'Home',about:'About',dictionary:'Dictionary · Historical sources'};
 try{
   const external=JSON.parse(sessionStorage.getItem('daruri-dictionary-jump-origin')||'null');
   sessionStorage.removeItem('daruri-dictionary-jump-origin');
   if(external&&Date.now()-external.created<86400000&&location.hash.startsWith('#section=')){
-    gnCrossView.origin={route:'dictionary',href:'dictionary.html#term='+encodeURIComponent(external.term||''),
-      y:Number(external.y)||0,created:external.created};
+    gnCrossView.origin={route:'dictionary',href:'dictionary.html#view='+encodeURIComponent(external.view||'all')+'&term='+encodeURIComponent(external.term||''),
+      y:Number(external.y)||0,snapshot:external,created:external.created};
   }
 }catch(e){}
 try{
@@ -3574,10 +3603,15 @@ function gnShowSourceReturn(){
   bar.append(back,dismiss);
   document.getElementById('mainContent')?.prepend(bar);
 }
+try{
+ const savedOrigin=JSON.parse(sessionStorage.getItem('daruri-reader-source-origin')||'null');
+ sessionStorage.removeItem('daruri-reader-source-origin');
+ if(!gnCrossView.origin&&savedOrigin&&Date.now()-savedOrigin.created<86400000&&location.hash.startsWith('#section='))gnCrossView.origin=savedOrigin;
+}catch(e){}
 const gnNavigateBefore=navigate;
 navigate=function(route,n){
   if(route==='reader'&&state.route!=='reader'&&!gnCrossView.pending){
-    gnCrossView.origin={route:state.route,hash:location.hash,y:window.scrollY,created:Date.now()};
+    gnCrossView.origin=gnCaptureReferenceView();
   }else if(state.route==='reader'&&route!=='reader'&&!gnCrossView.pending){
     gnCrossView.origin=null;
   }
@@ -3593,20 +3627,25 @@ document.addEventListener('click',event=>{
   if(!readerReturn.initialized)captureReaderReturn();
   const point={section:String(readerReturn.section||state.n),y:readerReturn.y||0,
     anchor:readerReturn.anchor||null,hit:readerReturn.hit||null};
-  gnCrossView.origin={route:'reading-point',point,created:Date.now()};
+  gnCrossView.origin={route:'reading-point',point,parentOrigin:gnCrossView.origin,created:Date.now()};
 },true);
 const gnRenderReaderBefore=renderReader;
 renderReader=function(){gnRenderReaderBefore();gnShowSourceReturn();if(gnAppReturn&&state.route==='reader')gnShowAppBack()};
 const gnRenderRouteBefore=renderRoute;
 renderRoute=function(route,n){
+  if(state.route!==route){closeOverlays();gnCloseLayer();}
+  if(state.route!=='reader'&&document.getElementById('mainContent')?.children.length)gnReferenceViews.set(state.route,gnCaptureReferenceView());
+  const remembered=gnCrossView.pending?.route===route?gnCrossView.pending:gnReferenceViews.get(route);
+  if(route!=='reader'&&remembered?.snapshot)for(const [key,value] of Object.entries(remembered.snapshot))if(Object.prototype.hasOwnProperty.call(state,key))state[key]=value;
   gnRenderRouteBefore(route,n);
   gnShowSourceReturn();
+  if(route!=='reader'&&remembered)requestAnimationFrame(()=>requestAnimationFrame(()=>gnRestoreReferenceView(remembered)));
   if(route!=='reader'){gnAppReturn=null;document.getElementById('gn-app-return')?.remove();}
   const pending=gnCrossView.pending;
   if(pending&&pending.route===route){
     gnCrossView.pending=null;
     requestAnimationFrame(()=>requestAnimationFrame(()=>{
-      if(state.route===route)window.scrollTo({top:Math.max(0,Number(pending.y)||0),behavior:'instant'});
+      if(state.route===route)gnRestoreReferenceView(pending);
     }));
   }
 };
@@ -3619,10 +3658,11 @@ document.addEventListener('click',event=>{
   const origin=gnCrossView.origin;if(!origin)return;
   gnCrossView.origin=null;
   if(origin.route==='dictionary'){
-    try{sessionStorage.setItem('daruri-dictionary-restore',JSON.stringify({y:origin.y,created:Date.now()}))}catch(e){}
+    try{sessionStorage.setItem('daruri-dictionary-restore',JSON.stringify({...origin.snapshot,y:origin.y,created:Date.now()}))}catch(e){}
     location.href=origin.href||'dictionary.html';return;
   }
   if(origin.route==='reading-point'&&origin.point){
+    gnCrossView.origin=origin.parentOrigin||null;
     if(state.focusLevel===3){
       goSection(origin.point.section);
       requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo({top:origin.point.y||0,behavior:'instant'})));

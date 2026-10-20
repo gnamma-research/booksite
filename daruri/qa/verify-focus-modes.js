@@ -13,7 +13,7 @@ const html=fs.readFileSync(path.resolve(__dirname,'..','index.html'),'utf8');
 const iconFile=fs.readFileSync(path.resolve(__dirname,'..','..','assets','gnamma-reading-modes.svg'),'utf8');
 const match=html.match(/<script id="editionData" type="application\/json">([\s\S]*?)<\/script>/);
 assert(match,'No embedded edition data');
-const data=JSON.parse(match[1]);
+const data=require('./load-book.js')(html);
 assert.equal(data.sections.length,259,'259 section identities must survive unchanged');
 assert.equal(data.stats.passages,416,'416 aligned passages must be retained');
 assert.equal(data.sections[258].id,'colophon','The final copyist note was lost');
@@ -37,7 +37,7 @@ assert(html.includes("body.focus-level-2 .reader .gn-reading-aftertext"),'Focus 
 assert(html.includes("body.focus-level-3 .reader .gn-reading-aftertext"),'Focus 3 apparatus rule missing');
 assert(html.includes("#readerDock .reader-step{display:none!important}"),'Focus 3 dock arrows must be hidden');
 assert(html.includes('data-gn-notes-open aria-haspopup="dialog"'), 'Notes trigger missing');
-assert(html.includes('Notes (${critical.length}) <sup aria-hidden="true">↗</sup>'),'Keep Notes arrow');
+assert(html.includes('data-gn-notes-open aria-haspopup="dialog">Notes (${critical.length})'), 'Keep accessible Notes popup trigger');
 assert(html.includes("data-open-jump"),'Central dock jump must remain');
 assert(html.includes("readerPreviousNumber") && html.includes("readerNextNumber"),'Normal dock navigation must remain');
 console.log('PASS: focus 0–3 structural checks, apparatus, continuous headings/dock, concepts, notes, corpus, inline JS syntax.');

@@ -12,7 +12,7 @@ const assert=require('node:assert/strict');
 const html=fs.readFileSync(path.resolve(__dirname,'..','index.html'),'utf8');
 const sourceData=html.match(/<script[^>]*\bid="editionData"[^>]*>([\s\S]*?)<\/script>/);
 assert(sourceData,'Missing editionData');
-const book=JSON.parse(sourceData[1]);
+const book=require('./load-book.js')(html);
 assert.equal(book.sections.length,259,'The original 258 sections plus colophon must remain');
 assert.equal(book.stats.passages,416,'Aligned textual units changed unexpectedly');
 const codeStart=html.lastIndexOf('<script>');
