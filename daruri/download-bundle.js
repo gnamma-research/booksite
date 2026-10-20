@@ -96,6 +96,10 @@
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
+      ['daruri/favicon.svg', 'favicon.svg'],
+      ['daruri/apple-touch-icon.png', 'apple-touch-icon.png'],
+      ['daruri/icon-192.png', 'icon-192.png'],
+      ['daruri/icon-512.png', 'icon-512.png'],
       ['daruri/dictionary.html', 'dictionary.html'],
       ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js'],
       ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js'],
