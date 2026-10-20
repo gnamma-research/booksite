@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: Arabic typeface / appearance task (`/root`), active from 2026-10-20 15:32 UTC until 15:47 UTC.** Base: `48633ba674f30600119a503fb09c76662794cfc7`. Targets: `daruri/index.html`, `daruri/dictionary.html`, `daruri/print.css`, `daruri/sw.js`, `daruri/download-bundle.js`, `daruri/CURRENT_RELEASE.md`, new `daruri/arabic-fonts.css` and `daruri/fonts/*`, and the matching Usul reader source ZIP/pointer. Prepared change adds an Arabic typeface preference (Amiri, Scheherazade New, Noto Naskh Arabic) with local fonts; it preserves current reader contents, PDF bytes and Notes/layout releases. No other chat has been contacted or stopped by this claim. Release the claim after source publication and deployment/snapshot verification.
+**Publisher claim: unclaimed.** The Arabic typeface / appearance publisher released its claim at 2026-10-20 15:36 UTC after verifying source publication and deployment. The separate Usul saved-package refresh was blocked by saved-file access; its existing ZIP and pointer were not changed. See the Arabic typeface release record below.
 
 1. Before uploading, fetch this file and latest `master`. Check whether the intended change is already present. Completed work above needs no further upload.
 2. A chat ready to publish should claim its exact overlapping targets here (for example `daruri/index.html` and the Usul reader ZIP), recording its chat/task name, current base commit, UTC claim time and expiry. Use the current file blob SHA when updating the claim: if another claimant wins, reread rather than overwrite it. Allow 15 minutes per claim, renewing only while an operation is actually active. An expired claim does not authorize a stale publisher to continue.
@@ -27,6 +27,16 @@ The user has requested coordination because several chats are attempting to uplo
 5. Publish the combined ready website changes once, then have that same publisher save the matching Usul snapshot and update its pointer once. Reuse unchanged PDF bytes. Record the resulting commit and deployment result here, and release the claim promptly.
 
 For this release, repeated standalone blob uploads of the approximately 3.4 MB reader stalled. A single Git tree request with the large HTML in the tree entry’s `content` and small supporting files referenced by their blob SHAs completed successfully. This is an observed fallback for this repository, not evidence that GitHub’s deployment queue caused the delays.
+
+## Arabic typeface release — 20 October 2026
+
+**Published and live:** [`04a4faf`](https://github.com/gnamma-research/booksite/commit/04a4fafc6b9a5c87eb49d4700ce4fa61cde01dcd), based on the current Notes and layout releases plus the shared upload coordination. [Pages run 39449359301](https://github.com/gnamma-research/booksite/actions/runs/39449359301) succeeded at 15:33:01 UTC.
+
+The existing Type & appearance panel now offers Amiri (default), Scheherazade New and Noto Naskh Arabic, with a preview and a saved reader preference. Six full-repertoire local font files cover regular and bold; selection also applies to the standalone dictionary and browser printing. Offline assets and caches were updated. Scholarly text, navigation, source notes, PDFs and their maps are retained.
+
+Verification: all 19 committed file hashes match the prepared change; all 13 deployed runtime, stylesheet and font files match local bytes, and the six fonts are served as `font/woff2`. The existing heading/language/focus gates and 20 focused preference/loading/race checks pass. Browser visual rendering and a physical-phone check were not performed.
+
+**Saved-package status:** the matching source snapshot is available from the pinned GitHub commit. Updating `/Usul-law-rushd/Daruri_Current_Reader_Website_2026-10-20.zip` and `DARURI_CURRENT_READER.txt` could not proceed because authenticated saved-file access failed. Both existing saved files remain unchanged. A future publisher should refresh them from the latest master through the normal authorized file route; do not repeat the completed reader/font upload.
 
 ## Completed source-reference work
 

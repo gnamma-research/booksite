@@ -112,3 +112,7 @@ All six full-repertoire WOFF2 files are self-hosted in `fonts/`, with their OFL 
 
 Validation: the heading/navigation, language and Focus contracts pass. Focused Node runtime checks cover valid/invalid/default saved choices, save/reload, both weights, load failures and timeout, unavailable storage/API and competing selections. Font coverage and shaping-table checks are recorded in the font provenance. Local visual-browser and real-device testing was unavailable; do not describe those as completed. Scholarly text, source payloads, stable section destinations, PDF bytes, themes and the independent language-order controls are preserved. Publication is identified by the containing commit and its Pages deployment.
 
+
+Publication: source commit [`04a4faf`](https://github.com/gnamma-research/booksite/commit/04a4fafc6b9a5c87eb49d4700ce4fa61cde01dcd); [GitHub Pages run 39449359301](https://github.com/gnamma-research/booksite/actions/runs/39449359301) completed successfully on 2026-10-20 at 15:33:01 UTC. All 13 deployed runtime, stylesheet and font assets were fetched from the public site and matched the prepared local bytes; all six fonts were served as `font/woff2`. This is deployed-byte verification, in addition to the automated checks above; no real-device visual check is claimed.
+
+Saved source package: the separate Usul ZIP/pointer refresh was blocked by authenticated saved-file access. Those existing saved files remain unchanged; the pinned source commit above contains the complete published font change.
