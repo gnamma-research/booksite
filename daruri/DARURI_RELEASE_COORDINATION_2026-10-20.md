@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: visuals controls refinement (font/design chat).** Claimed 2026-10-20 18:43 UTC; expires 18:58 UTC. Base head: `c4844f53c496c10a060e41e4c09d5b2abbc630b9`. Exact overlapping targets: `daruri/index.html`, `daruri/compact-menu.css`, `daruri/english-fonts.css`, `daruri/fonts/english-font-faces.css`, English font provenance/assets, `daruri/download-bundle.js`, `daruri/sw.js`, focused appearance QA, and this coordination record. Scope: implement the user-approved icon-led Visuals panel, retain a persistent Visuals heading with selection information beside it, use direct page-style/font/palette buttons, keep A− / percentage / A+ for size, remove duplicate System/Light/Dark from this dialog, and preserve all current homepage/contents/index/PDF/navigation work. No PDF regeneration or saved-package upload.
+**Publisher claim: unclaimed.** The icon-led Visuals refinement is published in `df4563ee43e50296fbf0bd0863fe3643b560c121`; GitHub Pages run [39480333437](https://github.com/gnamma-research/booksite/actions/runs/39480333437) completed successfully at 19:05 UTC. The font/design publisher releases its claim here. New work must start from current master and preserve the Visuals panel, the newer homepage/contents/subject-index structure, and the rebuilt five-PDF release.
 
 Previous publisher record: The contents, subject index and five-PDF structure release is published and verified live. This study/contents publisher released its claim at 2026-10-20 18:03 UTC. New work must preserve its rebuilt page maps, current Ar/En labels, subject assets and heading hierarchy.
 
@@ -29,6 +29,18 @@ Previous publisher record: The Arabic toggle and menu accessibility follow-up is
 Previous claim: unclaimed. The self-contained lesson printing release is published and live. Its publisher released the claim at 2026-10-20 16:06 UTC after successful deployment and exact verification of all seven changed live runtime/page assets. No print, PDF or saved-package upload remains active.
 
 Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
+
+### Icon-led Visuals controls — completed, 20 October 2026
+
+**Published:** [`df4563e`](https://github.com/gnamma-research/booksite/commit/df4563ee43e50296fbf0bd0863fe3643b560c121); [Pages run 39480333437](https://github.com/gnamma-research/booksite/actions/runs/39480333437) succeeded at 19:05 UTC. Runtime/cache revision: `20261020-visuals1`.
+
+The enhanced appearance dialog is now **Visuals**. The word Visuals remains fixed in the header; the space beside it reports the last selected category and option while the dialog is open. Page style, Arabic font, English font and palette are direct icon/specimen buttons rather than visible dropdowns. Text size stays **A− / percentage / A+**. Page layout keeps the responsive Arabic-left/right or Arabic-above/below diagrams. The palette category uses an artist’s-palette icon; the page-style and page-layout rows use dedicated page/layout line icons. Direct option buttons deliberately omit `title` tooltips and retain accessible names.
+
+Arabic font specimens use the actual installed Amiri, Scheherazade New and Noto Naskh Arabic faces while the left Arabic category marker remains fixed. English choices are now **Original**, **Source Sans 3** and **Lexend**, using self-hosted official Google Fonts files so the three specimens and reading faces are visually distinct. Existing saved preference keys are retained for backward compatibility. The duplicate System / Light / Dark row is hidden from Visuals; the existing main appearance control remains authoritative. The no-JavaScript fallback retains its theme controls because that top-level scripted control is unavailable there.
+
+Focused asset versions, service-worker entries and the Complete package include the Visuals controller and current font files/licences. The standalone historical dictionary uses the same saved English font preference through the shared stylesheet. The commit does **not** alter any reading PDF, scholarly text, Notes records, study data, homepage/source prose, subject-index data or contents hierarchy. Commit inspection confirms the changed paths are limited to appearance/runtime/font/offline/QA assets.
+
+Static validation confirms three page-style, three Arabic-font and three English-font direct choices, the palette and layout icons, no visible duplicate theme group, current asset versions, main-reader JavaScript syntax, Visuals-controller syntax and offline asset wiring. The committed index blob is `e1edc6a6f677831933843654b62f3d069cd35824`; compact Visuals CSS `75d475871c7efbbccd1307b7c86927e328401cfb`; controller `29df00cd7990b04c06e89415c35b894b243af719`. A full physical-device visual pass is not claimed.
 
 ### Concise homepage and source explanation — completed, 20 October 2026
 
