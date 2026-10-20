@@ -1,0 +1,67 @@
+{
+  "commit": "28f2338fd64bcfcd6476059bbc12cab1ad95622f",
+  "revision": "20261020-indexprint1",
+  "verified_at_utc": "2026-10-20T18:12:04.832843+00:00",
+  "pages_run": "https://github.com/gnamma-research/booksite/actions/runs/39472504421",
+  "files": [
+    {
+      "path": "daruri/index.html",
+      "status": 200,
+      "bytes": 3491432,
+      "sha256": "a90383e1e8f49525748cee0ecf4e31aec64748a27a2a35862d8b258e265f2538",
+      "matches": true
+    },
+    {
+      "path": "daruri/dictionary.html",
+      "status": 200,
+      "bytes": 778338,
+      "sha256": "cf7fafd8ffc9b537c37eea4bde80cf71dc005d8a37bf11ce126f2d799537bd4d",
+      "matches": true
+    },
+    {
+      "path": "daruri/subject-index.js",
+      "status": 200,
+      "bytes": 11071,
+      "sha256": "1bed7fe6b85027daefec79f7d40d6accb136b5a89a2b0e5fd5599b0aeba94ca7",
+      "matches": true
+    },
+    {
+      "path": "daruri/subject-index.css",
+      "status": 200,
+      "bytes": 5148,
+      "sha256": "278139d13cf7ab39e3e7f3167ed35cc811ca3fa0f24c70c1ab72a8f9c5b1f06d",
+      "matches": true
+    },
+    {
+      "path": "daruri/print.css",
+      "status": 200,
+      "bytes": 16852,
+      "sha256": "eba13b7a3c353e63c62c08f60f7af34be19889ee3edc83b8ddac5ec814c7d5be",
+      "matches": true
+    },
+    {
+      "path": "daruri/download-bundle.js",
+      "status": 200,
+      "bytes": 13505,
+      "sha256": "1537adc75b0def721bf8099ecdc4c8de419af80f1d0164e95bbd0953e4e42ba9",
+      "matches": true
+    },
+    {
+      "path": "daruri/sw.js",
+      "status": 200,
+      "bytes": 2754,
+      "sha256": "3dd6acb2c7d7b20568c8831c2180eba51849c20aa3fa5522a73f0896cf7e5207",
+      "matches": true
+    }
+  ],
+  "ok": true,
+  "checks": [
+    "subject-index print/cancel and exact restoration",
+    "full-reader subject-index integration",
+    "all 46 source and 258 editorial contents destinations",
+    "63 offline bundle source files and runtime asset-version consistency"
+  ],
+  "reading_pdf_release": "daruri8-structure-20261020",
+  "reading_pdfs_unchanged": true,
+  "visual_verification_limit": "Runtime and deployed-byte checks; no new live visual browser or physical-device print test."
+}

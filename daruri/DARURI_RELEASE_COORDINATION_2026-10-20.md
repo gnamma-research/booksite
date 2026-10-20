@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: study/contents print follow-up.** Claimed 2026-10-20 18:08 UTC; expires 18:23 UTC. Base: `5e274249a4d14f9b6ffc9b624759ae15919e534e`. Targets: subject-index print preparation/styles and focused QA, shared print CSS, asset-version references in the reader/service worker/offline bundle, and release documentation. The five completed reading PDFs are unchanged. Other chats should continue preparing narrow changes and coordinate before publishing these overlapping files.
+**Publisher claim: unclaimed.** The study/contents print follow-up is published and verified live in `28f2338fd64bcfcd6476059bbc12cab1ad95622f`. This publisher released its claim at 2026-10-20 18:12 UTC. No PDF or reader upload remains active. New work must start from this commit or newer and preserve the completed structure release, index print behavior, current asset versions and existing Ar/En controls.
 
 Previous publisher record: The contents, subject index and five-PDF structure release is published and verified live. This study/contents publisher released its claim at 2026-10-20 18:03 UTC. New work must preserve its rebuilt page maps, current Ar/En labels, subject assets and heading hierarchy.
 
@@ -29,6 +29,14 @@ Previous publisher record: The Arabic toggle and menu accessibility follow-up is
 Previous claim: unclaimed. The self-contained lesson printing release is published and live. Its publisher released the claim at 2026-10-20 16:06 UTC after successful deployment and exact verification of all seven changed live runtime/page assets. No print, PDF or saved-package upload remains active.
 
 Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
+
+### Subject index and contents print follow-up — completed, 20 October 2026
+
+**Published and live:** [`28f2338`](https://github.com/gnamma-research/booksite/commit/28f2338fd64bcfcd6476059bbc12cab1ad95622f); [Pages run 39472504421](https://github.com/gnamma-research/booksite/actions/runs/39472504421) succeeded. All seven changed public reader/runtime/style files returned HTTP 200 and matched the tested bytes. Cache/runtime revision: `20261020-indexprint1`.
+
+The new subject browser had a real print gap: closed groups and index records omitted their subtopics. A module-owned beforeprint/afterprint cycle now expands only the current matching result set and restores disclosures, saved preferences, question/filter/view, focus and page/nested scroll. Queued print-only toggle events cannot overwrite the user's choices. Monochrome print rules make subtopics pageable, suppress unused controls/markers and reveal the native fallback entries. Contents printouts also hide mode-selection controls while retaining the selected guide's heading and explanation. Matching reader, dictionary, service-worker and Complete package asset URLs are published together.
+
+Focused print/cancel checks, the full-reader subject-index integration and all eight contents groups pass. All 63 offline bundle source files exist, and explicit runtime versions plus default current-PDF versions are verified. Reader/dictionary text was preserved byte for byte apart from asset URLs; the five PDF hashes remain unchanged. Historical release statements now explicitly identify old pagination and snapshots. The standalone Historical Lexicon is not a linked public download, so no stale supplementary PDF was replaced. See `qa/index-print-live-release-20261020.json`. These are runtime and deployed-byte checks; no new physical-device or live visual print test is claimed.
 
 ### Contents, subject index and PDF structure — completed, 20 October 2026
 

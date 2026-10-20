@@ -8,6 +8,8 @@ Canonical reader: [https://gnamma-research.github.io/booksite/daruri/](https://g
 
 ## Index and contents printing follow-up — `20261020-indexprint1`
 
+**Published and live:** [28f2338](https://github.com/gnamma-research/booksite/commit/28f2338fd64bcfcd6476059bbc12cab1ad95622f). [Pages run 39472504421](https://github.com/gnamma-research/booksite/actions/runs/39472504421) succeeded. All seven changed public reader/runtime/style files returned HTTP 200 and matched the tested bytes; see [the live verification record](qa/index-print-live-release-20261020.json).
+
 The subject index now prints all subtopics and section references in the current By subject or A–Z result set, including entries that are collapsed on screen. Printing retains the selected search, filter and question. Closing or cancelling print restores the exact disclosures, preferences, focus, page scroll and nested scroll; queued print-only toggle events cannot change saved choices. The print layout hides controls and decorative disclosure/count markers and allows the text to paginate. Native fallback index entries are also exposed in print.
 
 Contents printouts hide their mode-selection controls while retaining the selected guide's heading and explanatory text. Their existing disclosure restoration is preserved. Runtime URLs, the service-worker cache and the Complete package include the matching print assets. Historical sections in this record and the coordination note are explicitly distinguished from the current release to prevent reuse of old PDF pagination.
