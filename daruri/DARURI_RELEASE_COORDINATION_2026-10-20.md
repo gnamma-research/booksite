@@ -2,7 +2,33 @@
 
 The user has asked the current Darūrī chats to coordinate site and PDF updates. Use the latest `master` as the shared publication source; make narrow changes and never replace the reader from an older handoff ZIP.
 
-## Active work
+## Shared upload coordination — 20 October 2026, 15:28 UTC
+
+The user has requested coordination because several chats are attempting to upload the same reader. **This Notes/PDF chat has finished publishing and has no upload running. Do not repeat its reader, PDF or Usul ZIP upload.**
+
+### Confirmed publication state
+
+| Work | Confirmed state |
+| --- | --- |
+| Qur’an/hadith Notes cards | Published in [`89cdd5f`](https://github.com/gnamma-research/booksite/commit/89cdd5fe3e097a6f825af1460de17a5c37561bc9); Pages run [39445052306](https://github.com/gnamma-research/booksite/actions/runs/39445052306) succeeded. |
+| Desktop/mobile language order and landscape layout | Published in [`7f5eaef`](https://github.com/gnamma-research/booksite/commit/7f5eaef6977fd25c1e863f4373aef2e43cb37ce8), directly on top of the Notes commit; Pages run [39446189017](https://github.com/gnamma-research/booksite/actions/runs/39446189017) succeeded at 15:12:47 UTC. |
+| Usul reader source package | `Daruri_Current_Reader_Website_2026-10-20.zip` is already saved in `/Usul-law-rushd`. Its snapshot is the Notes commit `89cdd5f`; fetch current master for later layout or other changes. |
+| Current GitHub deployment queue | At 15:26:53 UTC: zero queued and zero in-progress Actions runs. This does not show another chat’s unfinished local work or API upload calls. |
+| Menu visibility / appearance work | No completion or live publisher acknowledgement established by this coordination check. Inspect current master and the relevant task before assuming work is pending or duplicating it. |
+
+### Next upload: one publisher for each overlapping target
+
+**Publisher claim: unclaimed in this record.** This is a shared coordination message, not a claim that independent chats have been contacted or stopped.
+
+1. Before uploading, fetch this file and latest `master`. Check whether the intended change is already present. Completed work above needs no further upload.
+2. A chat ready to publish should claim its exact overlapping targets here (for example `daruri/index.html` and the Usul reader ZIP), recording its chat/task name, current base commit, UTC claim time and expiry. Use the current file blob SHA when updating the claim: if another claimant wins, reread rather than overwrite it. Allow 15 minutes per claim, renewing only while an operation is actually active. An expired claim does not authorize a stale publisher to continue.
+3. Other chats can continue preparing focused changes, but should hand the named publisher a patch or a commit based on its stated base. They should not start another upload of the same full reader or ZIP. Unrelated preparation can proceed in parallel.
+4. Immediately before committing, verify both the claim and latest branch head. Merge newer changes and publish with the expected head check; never force-push or replace the live reader from an older ZIP. If a tool times out, check the actual branch/file result before retrying.
+5. Publish the combined ready website changes once, then have that same publisher save the matching Usul snapshot and update its pointer once. Reuse unchanged PDF bytes. Record the resulting commit and deployment result here, and release the claim promptly.
+
+For this release, repeated standalone blob uploads of the approximately 3.4 MB reader stalled. A single Git tree request with the large HTML in the tree entry’s `content` and small supporting files referenced by their blob SHAs completed successfully. This is an observed fallback for this repository, not evidence that GitHub’s deployment queue caused the delays.
+
+## Completed source-reference work
 
 **Reader Notes-card revision: `daruri7-notes-20261020`.** Main-text source references appear first in the existing Notes card, with source counts beside the opener. The 628 main-text notes are unchanged; 12 clearly scoped application-source notes add to the appropriate passage/application cards. Source text, qualifications, section IDs, PDFs and page maps are preserved. `source-reference-data.js` is generated from the scholarly mappings and included in the page, offline package and service-worker core. The Usul project’s complete website snapshot is identified by `DARURI_CURRENT_READER.txt`; refresh latest `master` before editing it. See [CURRENT_RELEASE.md](CURRENT_RELEASE.md) and `qa/verify-reader-source-notes.js`.
 
