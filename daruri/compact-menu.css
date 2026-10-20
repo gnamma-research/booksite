@@ -183,3 +183,77 @@
  .gnamma-home .home-source-details>summary:focus-visible,.fb-page#home .home-source-details>summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
  .gnamma-home .home-source-copy p,.fb-page#home .home-source-details p{margin:6px 0 12px}
 }
+
+/* iPhone touch corrections — spacing, deliberate taps, and contents opener.
+   touch-action:manipulation prevents double-tap zoom in these controls but
+   deliberately leaves normal scrolling and pinch zoom available. */
+@media screen {
+  .gn-visuals-panel,
+  .gn-visuals-panel .gn-visual-row,
+  .gn-visuals-panel .gn-size-control,
+  .gn-visuals-panel .gn-direct-options,
+  .gn-visuals-panel .gn-direct-options > button,
+  .gn-visuals-panel .gn-size-control > button,
+  .gn-visuals-panel .gn-size-control > output,
+  .gn-visuals-panel .palette-option {
+    touch-action: manipulation;
+  }
+  .gn-visuals-panel .gn-size-control {
+    box-sizing: border-box;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    justify-items: stretch !important;
+    gap: 7px !important;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0 !important;
+  }
+  .gn-visuals-panel .gn-size-control > button,
+  .gn-visuals-panel .gn-size-control > output {
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    margin: 0 !important;
+    border-radius: 9px;
+    touch-action: manipulation !important;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn {
+    box-sizing: border-box !important;
+    flex: 0 0 44px !important;
+    width: 44px !important;
+    min-width: 44px !important;
+    max-width: 44px !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    margin-inline-end: 4px !important;
+    padding: 8px !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 9px !important;
+    color: var(--text-soft) !important;
+    background: var(--surface-alt) !important;
+    touch-action: manipulation !important;
+  }
+  #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn .icon {
+    display: block;
+    width: 20px !important;
+    height: 20px !important;
+  }
+  @media (max-width: 360px) {
+    #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn {
+      flex-basis: 40px !important;
+      width: 40px !important;
+      min-width: 40px !important;
+      max-width: 40px !important;
+      margin-inline-end: 1px !important;
+    }
+  }
+}

@@ -56,8 +56,18 @@ for(const asset of ['visuals-controls.js?v=20261020-visuals1','fonts/source-sans
 }
 assert.match(sw,/20261020-visuals1/);
 assert.match(html,/english-fonts\.css\?v=20261020-fonts3/);
-assert.match(html,/compact-menu\.css\?v=20261020-visuals1/);
+assert.match(html,/compact-menu\.css\?v=20261020-visuals-touch1/);
 assert.match(html,/visuals-controls\.js\?v=20261020-visuals1/);
-assert.match(html,/sw\.js\?v=20261020-visuals1/);
+assert.match(html,/sw\.js\?v=20261020-visuals-touch1/);
 
 console.log('PASS: icon-led Visuals panel, direct page/font/palette controls, fixed language markers, A−/percentage/A+, proper layout/palette icons, distinct English families, no visible duplicate theme row, syntax and offline assets.');
+
+assert(css.includes('grid-template-columns: repeat(3, minmax(0, 1fr)) !important'),'Size controls fill three equal columns');
+assert(css.includes('touch-action: manipulation !important'),'Visuals controls suppress double-tap zoom without disabling pinch');
+assert(css.includes('#readingControls:not([hidden]) .gn-reader-global-leading #menuBtn'),'Contents opener has dedicated touch area');
+assert(css.includes('width: 44px !important')&&css.includes('height: 44px !important'),'Contents opener receives 44px touch target');
+assert(html.includes('download-bundle.js?v=20261020-visuals-touch1'),'Package version updated');
+assert(sw.includes('compact-menu.css?v=20261020-visuals-touch1'),'Offline CSS uses the same version');
+assert(sw.includes('download-bundle.js?v=20261020-visuals-touch1'),'Offline package uses the same version');
+assert(bundle.includes('compact-menu.css?v=20261020-visuals-touch1'),'ZIP uses updated Visuals CSS');
+console.log('PASS: fixed-width Safari tap targets, equal size cells and coherent cache/offline versions');
