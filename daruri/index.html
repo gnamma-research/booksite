@@ -3847,7 +3847,17 @@ function takeDictionaryReturn(){
       el.setAttribute('aria-label',levels[level]+'. Select '+levels[next]);
       el.title=levels[level]+' → '+levels[next];
       el.classList.toggle('active',level>0);
-      el.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="../assets/gnamma-reading-modes.svg#gn-'+(level?'focus-'+level:'normal')+'"></use></svg>';
+      // Keep the SVG node stable. Scroll tracking updates the section and calls
+      // this function repeatedly; replacing innerHTML on every call flashes an
+      // external <use> icon (particularly on mobile Safari).
+      const iconHref='../assets/gnamma-reading-modes.svg#gn-'+(level?'focus-'+level:'normal');
+      const symbol=el.querySelector('svg use');
+      if(symbol){
+        if(symbol.getAttribute('href')!==iconHref)symbol.setAttribute('href',iconHref);
+      }else{
+        // Initial upgrade only: replace the original inline placeholder once.
+        el.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="'+iconHref+'"></use></svg>';
+      }
     }
   }
   syncReadingChrome=function(){oldSync();if(state.route==='reader')refreshFocusButton();};
