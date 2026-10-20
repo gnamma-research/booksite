@@ -15,7 +15,7 @@ const short=(v,n=110)=>clamp(v,30000).length>n?clamp(v,n-1)+'…':String(v||'');
 const category=it=>it.kind==='note'||it.kind==='footnote'?'notes':['quote','paragraph','section'].includes(it.kind)?'text':it.kind==='application'?'bidaya':it.kind==='lesson'?'lessons':it.kind;
 function create(ctx){
  const state=ctx.state, book=ctx.book;
- let records=[],available=true,selection=null,editor=null,origin=null,printRoot=null,returnFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
+ let records=[],available=true,selection=null,editor=null,origin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
  const ui={category:'all',query:'',selected:'',context:'both',expanded:false,filterTarget:'',bin:false,listScroll:0};
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
@@ -227,7 +227,7 @@ function create(ctx){
   const tabs=CATEGORIES.map(k=>'<button type="button" data-rd="filter" data-value="'+k+'" aria-pressed="'+(ui.category===k)+'">'+LABELS[k]+'</button>').join('');
   let html='<section class="gn-rd-page"><header class="gn-rd-hero"><p class="gn-rd-kicker">YOUR PRIVATE READING COLLECTION</p><h1>Reading Desk</h1><p>Keep precise quotations, complete passages, book notes, dictionary terms, index topics, Bidāya applications and study lessons together. Your work stays in this browser until you transfer a backup.</p></header>';
   if(!available)html+='<p class="gn-rd-warning" role="alert">Browser storage is unavailable or full. Export a backup before leaving this page.</p>';
-  html+='<div class="gn-rd-toolbar"><button type="button" data-rd="new-note">+ New note</button><button type="button" data-rd="export">Download backup</button><button type="button" data-rd="share-backup">Share backup…</button><button type="button" data-rd="import">Import</button><button type="button" data-rd="print-list">Print list</button><button type="button" data-rd="filter" data-value="bin" class="gn-rd-bin" aria-pressed="'+bin+'">Bin ('+records.filter(x=>x.deleted).length+')</button><input class="gn-rd-file" type="file" id="gn-rd-file" accept="application/json,.json" aria-label="Select Reading Desk backup file" hidden></div>';
+  html+='<div class="gn-rd-toolbar" role="group" aria-label="Reading Desk actions"><div class="gn-rd-toolbar-main"><button type="button" data-rd="new-note">+ New note</button><button type="button" data-rd="export">Download backup</button><button type="button" data-rd="share-backup">Share backup…</button><button type="button" data-rd="import">Import</button></div><div class="gn-rd-toolbar-utilities"><button type="button" data-rd="print-list">Print visible items</button><button type="button" data-rd="filter" data-value="bin" class="gn-rd-bin" aria-pressed="'+bin+'">Bin ('+records.filter(x=>x.deleted).length+')</button></div><input class="gn-rd-file" type="file" id="gn-rd-file" accept="application/json,.json" aria-label="Select Reading Desk backup file" hidden></div>';
   if(ui.filterTarget)html+='<p class="gn-rd-scoped">Items from '+esc(ctx.sectionRef(ui.filterTarget))+' <button data-rd="unscoped" type="button">Show all</button></p>';
   html+='<div class="gn-rd-tabs" role="group" aria-label="Reading Desk categories">'+tabs+'</div><label class="gn-rd-search">Search Reading Desk <input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search text, terms, notes…" value="'+esc(ui.query)+'"></label>';
   html+='<p class="gn-rd-count" aria-live="polite">'+visible.length+' '+(bin?'items in Bin':'saved items')+'</p>';
@@ -537,19 +537,44 @@ function create(ctx){
   reader.onerror=()=>ctx.notify('Could not read the chosen backup file.');
   reader.readAsText(file);
  }
- function preparePrint(selected){
-  const items=selected||matching(),all=items.filter(Boolean);
-  if(!all.length){ctx.notify('Nothing to print in this view.');return;}
-  printRoot?.remove();
-  printRoot=document.createElement('main');printRoot.id='gn-rd-print-root';
-  printRoot.innerHTML='<header><h1>Reading Desk</h1><p>al-Ḍarūrī · Personal reading collection</p></header>'+all.map(r=>'<article><h2>'+esc(r.title||titleOf(r.target))+'</h2><p class="gn-rd-print-label">'+esc(subOf(r.target))+'</p>'+detailsForPrint(r)+'<p class="gn-rd-print-url">'+esc(canonicalURL(r.target))+'</p></article>').join('');
-  document.body.append(printRoot);document.body.classList.add('gn-rd-print');
-  const cleanup=()=>{document.body.classList.remove('gn-rd-print');printRoot?.remove();printRoot=null;window.removeEventListener('afterprint',cleanup);};
-  window.addEventListener('afterprint',cleanup,{once:true});
-  Promise.resolve(document.fonts?.ready).then(()=>window.print()).catch(()=>window.print());
-  setTimeout(()=>{if(!window.matchMedia('print').matches)cleanup();},18000);
+ function closePrintPreview(){
+  if(!printRoot)return;
+  const focus=printFocus;printFocus=null;
+  printRoot.remove();printRoot=null;
+  document.body.classList.remove('gn-rd-print');
+  if(focus?.isConnected)focus.focus({preventScroll:true});
  }
- function detailsForPrint(r){
+ function preparePrint(selected){
+  const all=(selected||matching()).filter(Boolean);
+  if(!all.length){ctx.notify('Nothing to print in this view.');return;}
+  // Keep the print content present until explicitly dismissed. On some mobile
+  // browsers afterprint is raised as soon as the preview opens.
+  closePrintPreview();
+  printFocus=document.activeElement;
+  printRoot=document.createElement('div');printRoot.id='gn-rd-print-root';
+  printRoot.setAttribute('role','dialog');
+  printRoot.setAttribute('aria-modal','true');
+  printRoot.setAttribute('aria-label','Reading Desk print preview');
+  const single=Boolean(selected),count=all.length;
+  const label=single?'1 selected entry':count+' visible '+(count===1?'entry':'entries');
+  const verb=single?'Print this item':'Print these '+count+' items';
+  printRoot.innerHTML=
+   '<div class="gn-rd-print-actions"><div><h2>Print preview · '+label+'</h2>'+
+   '<p>Only the '+(single?'selected entry':'items shown in your filtered Reading Desk')+
+   ' will be printed.</p></div><div class="gn-rd-print-buttons">'+
+   '<button type="button" data-rd="print-now">'+esc(verb)+'</button>'+
+   '<button type="button" data-rd="close-print">Close preview</button></div></div>'+
+   '<main class="gn-rd-print-sheet"><header><h1>Reading Desk</h1>'+
+   '<p>al-Ḍarūrī · '+esc(label)+'</p></header>'+
+   all.map(row=>'<article data-rd-print-id="'+esc(row.id)+'"><h2>'+esc(row.title||titleOf(row.target))+
+   '</h2><p class="gn-rd-print-label">'+esc(subOf(row.target))+'</p>'+
+   detailsForPrint(row)+'<p class="gn-rd-print-url">'+esc(canonicalURL(row.target))+
+   '</p></article>').join('')+'</main>';
+  document.body.append(printRoot);
+  document.body.classList.add('gn-rd-print');
+  printRoot.querySelector('[data-rd="print-now"]')?.focus({preventScroll:true});
+ } 
+  function detailsForPrint(r){
   const t=r.target;if(!t)return '<p>'+esc(r.body)+'</p>';
   let out='';
   if(['quote','paragraph','section'].includes(t.kind)){
@@ -616,6 +641,8 @@ function create(ctx){
   if(action==='email'&&row){shareItem(row,true);return;}
   if(action==='print'&&row){preparePrint([row]);return;}
   if(action==='print-list'){preparePrint();return;}
+  if(action==='print-now'){if(!printRoot)return;window.print();return;}
+  if(action==='close-print'){closePrintPreview();return;}
   if(action==='export'){download(backup(),'Reading-Desk-'+new Date().toISOString().slice(0,10)+'.json');ctx.notify('Reading Desk backup downloaded.');return;}
   if(action==='share-backup'){shareBackup();return;}
   if(action==='import'){$('#gn-rd-file')?.click();return;}
@@ -634,10 +661,17 @@ function create(ctx){
   document.addEventListener('keyup',e=>{if(e.key==='Shift'||e.key.startsWith('Arrow'))scheduleProbe();});
   document.addEventListener('keydown',e=>{
    if(e.key!=='Escape')return;
+   if(printRoot){e.preventDefault();e.stopImmediatePropagation();closePrintPreview();return;}
    if($('#gn-rd-editor-shade')){e.preventDefault();e.stopImmediatePropagation();closeEditor();}
    else if(!$('#gn-rd-selection-bar')?.hidden)hideSelection();
   },true);
   document.addEventListener('keydown',e=>{
+   if(printRoot&&e.key==='Tab'){
+    const nodes=[...printRoot.querySelectorAll('button')].filter(x=>!x.disabled);if(!nodes.length)return;
+    if(e.shiftKey&&document.activeElement===nodes[0]){e.preventDefault();nodes.at(-1).focus();}
+    else if(!e.shiftKey&&document.activeElement===nodes.at(-1)){e.preventDefault();nodes[0].focus();}
+    return;
+   }
    if(!$('#gn-rd-editor-shade')||e.key!=='Tab')return;
    const nodes=[...$('#gn-rd-editor-shade').querySelectorAll('button,input,textarea')].filter(x=>!x.disabled);
    if(!nodes.length)return;const first=nodes[0],last=nodes.at(-1);
