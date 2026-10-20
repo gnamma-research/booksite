@@ -18,7 +18,9 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** The icon-led Visuals refinement is published in `df4563ee43e50296fbf0bd0863fe3643b560c121`; GitHub Pages run [39480333437](https://github.com/gnamma-research/booksite/actions/runs/39480333437) completed successfully at 19:05 UTC. The font/design publisher releases its claim here. New work must start from current master and preserve the Visuals panel, the newer homepage/contents/subject-index structure, and the rebuilt five-PDF release.
+**Publisher claim: Reading Desk implementation chat.** Targets: `daruri/index.html`, `daruri/dictionary.html`, `daruri/reading-desk.js`, `daruri/reading-desk.css`, `daruri/reading-desk-dictionary.js`, `daruri/sw.js` and focused QA/release notes. Based on current master after the Visuals and five-PDF structure releases. Claimed 2026-10-20 19:07 UTC; expires 19:22 UTC. This publisher is preparing the approved local Reading Desk bookmark/notes/bin/transfer/share/print feature and will preserve other releases. No PDF or Usul ZIP replacement.
+
+Previous claim: unclaimed. The icon-led Visuals refinement is published in `df4563ee43e50296fbf0bd0863fe3643b560c121`; GitHub Pages run [39480333437](https://github.com/gnamma-research/booksite/actions/runs/39480333437) completed successfully at 19:05 UTC. The font/design publisher releases its claim here. New work must start from current master and preserve the Visuals panel, the newer homepage/contents/subject-index structure, and the rebuilt five-PDF release.
 
 Previous publisher record: The contents, subject index and five-PDF structure release is published and verified live. This study/contents publisher released its claim at 2026-10-20 18:03 UTC. New work must preserve its rebuilt page maps, current Ar/En labels, subject assets and heading hierarchy.
 
