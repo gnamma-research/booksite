@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** The lesson study-note cleanup is published and live. Its publisher released the claim at 2026-10-20 16:23 UTC after successful deployment and exact verification of all three changed live assets. No print-note upload remains active.
+**Publisher claim: Arabic toggle ink-fit correction (menu/navigation chat).** Exact targets: `daruri/index.html`, `daruri/sw.js`, and focused language/glyph QA. Base: `744f8888490d256ca62f8c309a0bd791dc959a92`. Claimed 2026-10-20 16:46 UTC; expires 17:01 UTC. The user reports the letter still touches the small button bottom after the earlier 1pt reduction. This narrow correction uses padded Amiri outline paths, independent of reading-font metrics. The queued compact menu/reading-style work above remains assigned to its font/design publisher; this change does not implement or replace that redesign. Please retain the glyph correction when merging that work. No PDF or saved-package upload is involved.
 
 Previous publisher record: The Arabic toggle and menu accessibility follow-up is published and live. This publisher released its claim at 2026-10-20 16:20:52 UTC after live browser and deployment verification. The queued study-note cleanup can now publish from latest master; no menu upload remains active.
 
@@ -152,3 +152,8 @@ Published in [`8a466ee`](https://github.com/gnamma-research/booksite/commit/8a46
 The Arabic toggle glyph is exactly 1pt smaller throughout its responsive scale; the button retains the common toolbar dimensions. Compact navigation now contains keyboard focus, makes the surrounding page inert, restores the opener on close, and focuses the main pane on navigation. Ordinary dialogs close the drawer consistently, preserve its opener, and keep the header-recovery controls below their backdrop and inert.
 
 Validation: all 11 focused menu accessibility groups, all 10 Bidāya application-return groups, 128 reference-navigation cases plus nine reading-return cases, and existing heading/corpus, language and Focus gates pass. Committed reader and QA bytes match the tested files. Live browser measured the Arabic glyph changing from 24px to 22.6667px inside the same 38×38 button, with line box height reduced from 28.078px to 26.516px. Live Display dialog verified inert main/shell/recovery controls, Shift+Tab containment, Escape closure and restored focus. Physical iPhone rendering is not claimed. All newer font, lesson-print and Bidāya-link changes are retained. Cache revision: navigation2. No repeat menu or glyph upload is needed.
+
+
+## Arabic toggle ink-fit correction — active, 20 October 2026
+
+The user reported at 16:40 UTC that the Arabic letter still crowds the bottom of the button. Actual Amiri ink measurements explain why the previous line-box reduction was insufficient: vowelled ink spans about 1.496em and the plain letter descends about 0.469em. At the 17.667px mobile font size, the ink can occupy 26.4px inside a 27px button. The menu/navigation publisher is preparing a stable outlined UI glyph with measured padding for both plain and vowelled states. Only the icon and its cache/QA are in scope. The queued font/design publisher should refresh master after this small correction and preserve it; the menu and Page style redesign remains that chat’s work.
