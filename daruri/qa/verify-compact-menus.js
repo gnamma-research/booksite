@@ -56,14 +56,15 @@ const options=node=>node.children.filter(child=>child.tag==='option');
 const optionValues=node=>options(node).map(option=>option.attrs.value);
 const withinClosedDetails=(node,until)=>{for(let p=node.parent;p&&p!==until;p=p.parent)if(p.tag==='details'&&!Object.hasOwn(p.attrs,'open'))return true;return false;};
 
-test('seven primary destinations stay direct and ordinary',()=>{
+test('eight distinct primary destinations start with Home',()=>{
  const nav=byId('leftNav').find(node=>node.hasClass('primary-nav'));
  const items=nav.children.filter(node=>Object.hasOwn(node.attrs,'data-route'));
- assert.deepEqual(items.map(node=>node.attrs['data-route']),['reader','contents','study','index','glossary','applications','bookmarks']);
- const labels=['Read the text','Contents','Study guide','Subject index','Dictionary','Bidāya applications','Saved passages'];
+ assert.deepEqual(items.map(node=>node.attrs['data-route']),['home','reader','contents','study','applications','index','glossary','bookmarks']);
+ const labels=['Home','Read the text','Contents','Study guide','Bidāya applications','Subject index','Dictionary','Saved passages'];
  items.forEach((node,i)=>{assert.equal(node.tag,'button');assert.equal(node.attrs.type,'button');assert.ok(node.text().startsWith(labels[i]));assert.ok(node.hasClass('nav-item'));assert.ok(!node.hasClass('primary'));});
- assert.ok(byId('leftNav').find(node=>node.attrs['data-route']==='home'));
- assert.ok(byId('leftNav').find(node=>node.attrs['data-route']==='about'));
+ assert.deepEqual(items.map(node=>node.find(child=>child.tag==='use')?.attrs.href),['#i-home','#i-book','#i-toc','#i-study','#i-balance','#i-subject','#i-dictionary','#i-library']);
+ assert.equal(items[0].attrs['data-route'],'home');
+ assert.ok(!byId('leftNav').find(node=>node.attrs['data-route']==='about'));
 });
 test('quick navigation and downloads are closed native disclosures with real links',()=>{
  for(const [id,title]of [['jumpToPartMenu','Jump to part'],['downloadsMenu','Downloads'],['fb-jump-to-part','Jump to part'],['fb-downloads-menu','Downloads']]){

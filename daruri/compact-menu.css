@@ -159,3 +159,27 @@
   @media(max-width:380px){.gn-visuals-panel{padding:14px 11px}.gn-visual-row{grid-template-columns:42px minmax(0,1fr);gap:7px}.gn-direct-options{gap:5px}.gn-visuals-panel #palettePicker{gap:5px}.gn-font-specimen{font-size:15px}.gn-font-amiri,.gn-font-scheherazade,.gn-font-noto{font-size:20px}}
   @media(pointer:coarse){.gn-direct-options>button,.gn-size-control>button,.gn-size-control output,.gn-visuals-panel #palettePicker .palette-option{min-height:48px}}
 }
+
+@media screen {
+ #leftNav .primary-nav>.nav-item[data-route="home"]{font-weight:650;margin-bottom:5px}
+ #leftNav .primary-nav>.nav-item[data-route="applications"],#leftNav .primary-nav>.nav-item[data-route="bookmarks"]{margin-top:5px}
+ #leftNav .nav-bottom{margin:10px 0 0!important;padding:0!important;display:grid;gap:0;border-top:1px solid var(--border)}
+ #leftNav .nav-bottom>.gn-nav-group{margin:0!important;padding:0!important;border:0!important}
+ #leftNav .nav-bottom>.gn-nav-group+.gn-nav-group{border-top:1px solid var(--border)!important}
+ #leftNav .nav-bottom>.gn-nav-group>summary{list-style:none;display:flex;align-items:center;gap:11px;box-sizing:border-box;min-height:44px;width:100%;padding:10px 12px;border-radius:7px;font:550 12.8px/1.4 var(--sans);cursor:pointer}
+ #leftNav .nav-bottom>.gn-nav-group>summary::-webkit-details-marker{display:none}
+ #leftNav .nav-bottom>.gn-nav-group>summary>.icon{flex:0 0 18px;width:18px;height:18px}
+ #leftNav .nav-bottom>.gn-nav-group>summary:after{content:'';margin-left:auto;flex:0 0 7px;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+ #leftNav .nav-bottom>.gn-nav-group[open]>summary:after{transform:translateY(2px) rotate(225deg)}
+ #leftNav #downloadsMenu>.gn-pdf-editions{box-sizing:border-box;margin:0!important;padding:4px 0 9px 31px!important;width:100%;max-width:100%}
+ #leftNav #jumpToPartMenu>.nav-parts{box-sizing:border-box;margin:0!important;padding:3px 0 8px 31px;width:100%}
+ #leftNav .nav-bottom>.gn-nav-group>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+ #fallbackReader .fb-left-panel .fb-publisher-footer{margin:0!important;padding:0!important;border:0!important}
+ #fallbackReader .fb-left-panel>.gn-nav-group,#fallbackReader .fb-left-panel .fb-publisher-footer>.gn-nav-group{margin:0!important}
+ #fallbackReader .fb-left-panel .gn-nav-group>summary{box-sizing:border-box;padding-inline-start:12px;min-height:44px}
+ #fallbackReader .fb-left-panel #fb-downloads-menu>.gn-pdf-editions{margin:0!important;padding:4px 0 9px 12px!important;max-width:100%;box-sizing:border-box}
+ .gnamma-home .home-source-details,.fb-page#home .home-source-details{margin:12px 0 0;padding:9px 0 0;border-top:1px solid var(--border)}
+ .gnamma-home .home-source-details>summary,.fb-page#home .home-source-details>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--accent);font:600 13px/1.5 var(--sans);padding:9px 0}
+ .gnamma-home .home-source-details>summary:focus-visible,.fb-page#home .home-source-details>summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+ .gnamma-home .home-source-copy p,.fb-page#home .home-source-details p{margin:6px 0 12px}
+}
