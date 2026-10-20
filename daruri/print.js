@@ -18,7 +18,9 @@
     } else {
       details = [...document.querySelectorAll('#mainContent .contents-parts .part-block, #mainContent .reader .note-item')];
     }
-    saved = {details:details.map(detail => [detail, detail.open]), label:null};
+    if (lesson && !window.GnammaLessonPrint) throw new Error('The lesson print component has not loaded.');
+    const cleanupLesson = lesson ? window.GnammaLessonPrint.prepare(lesson) : null;
+    saved = {details:details.map(detail => [detail, detail.open]), label:null, cleanupLesson};
     details.forEach(detail => { detail.open = true; });
 
     if (lesson) {
@@ -37,10 +39,28 @@
     if (!saved) return;
     saved.details.forEach(([detail, opened]) => { if (detail.isConnected) detail.open = opened; });
     saved.label?.remove();
+    saved.cleanupLesson?.();
     saved = null;
   }
 
   window.addEventListener('beforeprint', prepare);
   window.addEventListener('afterprint', restore);
-  window.GnammaPrint = {print() { prepare(); window.print(); }};
+  window.GnammaPrint = {print() {
+    try { prepare(); }
+    catch (error) { alert('The complete lesson could not be prepared. Please reload this page before printing. ' + error.message); return; }
+    const printingView = location.href;
+    if (!document.fonts?.load) { window.print(); return; }
+    const style = getComputedStyle(document.documentElement);
+    const fonts = [
+      ['--reader-arabic-font', 'Amiri', 'العربية'],
+      ['--reader-english-font', 'Georgia', 'Study lesson']
+    ];
+    const ready = Promise.allSettled(fonts.map(([property, fallback, sample]) => document.fonts.load('14px ' + (style.getPropertyValue(property).trim() || fallback), sample)));
+    // Give a newly used print face a chance to load without trapping printing
+    // on a slow or unavailable font request. System fallback remains available.
+    Promise.race([ready, new Promise(resolve => setTimeout(resolve, 1800))]).then(() => {
+      if (location.href !== printingView) { restore(); return; }
+      if (saved) window.print();
+    });
+  }};
 })();

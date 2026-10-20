@@ -257,6 +257,122 @@
   html:root body :is(.sg-editorial, .section-foot) { break-inside: auto !important; }
   html:root body .sg-editorial > a { display: none !important; }
 
+  /* A printed lesson carries its readings and apparatus on the paper. These
+     nodes are injected only for printing and stay hidden on the screen. */
+  html:root body .sg-lesson .sg-print-only { display: block !important; }
+  html:root body .sg-lesson li.sg-print-task { display: list-item !important; }
+  html:root body .sg-lesson .sg-screen-only { display: none !important; }
+  html:root body .sg-lesson :is(
+    .sg-readings, .sg-readings > li, .sg-print-excerpt, .sg-print-pair,
+    .sg-print-supplement, .sg-print-endnotes, .sg-print-study-sources,
+    .sg-print-note-list, .sg-print-note-list > li
+  ) {
+    display: block !important;
+    position: static !important;
+    width: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+  html:root body .sg-lesson .sg-readings > li > a {
+    display: block !important;
+    margin: 0 0 5pt !important;
+    font-size: 13pt !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+  html:root body .sg-lesson .sg-readings > li > a > strong {
+    display: inline !important;
+    margin-right: 6pt !important;
+  }
+  html:root body .sg-lesson :is(.sg-print-citation, .sg-print-note-calls) {
+    font: 9pt/1.4 var(--reader-english-font, var(--serif)) !important;
+    margin: 3pt 0 8pt !important;
+    padding: 0 !important;
+  }
+  html:root body .sg-lesson .sg-print-citation {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+  html:root body .sg-lesson .sg-print-note-calls a {
+    white-space: nowrap;
+    text-decoration: none !important;
+  }
+  html:root body .sg-lesson .sg-print-pair {
+    margin: 0 0 11pt !important;
+    padding: 0 0 8pt !important;
+    border: 0 !important;
+    border-bottom: .35pt solid #000 !important;
+    border-radius: 0 !important;
+  }
+  html:root body .sg-lesson .sg-print-pair:last-child { border-bottom: 0 !important; }
+  html:root body .sg-lesson :is(.sg-print-ar, .sg-print-en) {
+    display: block !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 0 7pt !important;
+    padding: 0 !important;
+    border: 0 !important;
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+    overflow-wrap: break-word !important;
+    orphans: 3;
+    widows: 3;
+  }
+  html:root body .sg-lesson .sg-print-ar {
+    font: 14pt/1.85 var(--arabic) !important;
+    direction: rtl !important;
+    text-align: right !important;
+  }
+  html:root body .sg-lesson .sg-print-en {
+    font: 11pt/1.5 var(--reader-english-font, var(--serif)) !important;
+    direction: ltr !important;
+    text-align: left !important;
+  }
+  html:root body .sg-lesson .sg-print-supplement {
+    margin: 15pt 0 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  html:root body .sg-lesson :is(.sg-print-endnotes, .sg-print-study-sources) {
+    margin: 16pt 0 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-top: .5pt solid #000 !important;
+  }
+  html:root body .sg-lesson .sg-print-note-list {
+    list-style: none !important;
+    margin: 8pt 0 0 !important;
+    padding: 0 !important;
+  }
+  html:root body .sg-lesson .sg-print-note-list > li {
+    margin: 0 0 9pt !important;
+    padding: 0 !important;
+    border: 0 !important;
+    font-size: 10pt !important;
+    line-height: 1.45 !important;
+  }
+  html:root body .sg-lesson .sg-print-note-label {
+    display: block !important;
+    font: bold 9.5pt/1.4 var(--reader-english-font, var(--serif)) !important;
+    margin: 0 0 3pt !important;
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+  html:root body .sg-lesson .sg-print-note-text {
+    font: 10pt/1.45 var(--reader-english-font, var(--serif)) !important;
+    margin: 0 0 4pt !important;
+    overflow-wrap: anywhere;
+  }
+  html:root body .sg-lesson .sg-print-note-text .sg-print-inline-ar {
+    font-size: 12pt !important;
+    line-height: 1.7 !important;
+  }
+
   html:root body table { width: 100% !important; border-collapse: collapse !important; font-size: 10pt !important; }
   html:root body :is(th, td) { border: .5pt solid #000 !important; padding: 4pt 6pt !important; }
   html:root body thead { display: table-header-group; }

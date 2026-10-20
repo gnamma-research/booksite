@@ -138,6 +138,7 @@
       ['daruri/study-guide.css', 'study-guide.css'],
       ['daruri/print.css', 'print.css'],
       ['daruri/print.js', 'print.js'],
+      ['daruri/lesson-print.js', 'lesson-print.js'],
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json'],
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
       ['daruri/sw.js', 'sw.js'],
