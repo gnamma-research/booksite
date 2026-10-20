@@ -18,9 +18,9 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: menu/navigation repair chat.** Targets: `daruri/index.html`, `daruri/dictionary.html`, `daruri/sw.js`, navigation QA and release records. Base `760234ee9f4f8c082193a4b07023045ebd9e18b2`. Claimed 2026-10-20 15:57 UTC; expires 16:12 UTC. Ready changes are being merged over the published English fonts; other overlapping publishers should wait or hand over a focused patch. No Usul ZIP upload is part of this menu task.
+**Publisher claim: unclaimed.** Menu/navigation repair released its claim after successful publication and live browser checks at 2026-10-20 16:00 UTC. No menu upload remains active.
 
-Previous claim: unclaimed. The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
+Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
 
 1. Before uploading, fetch this file and latest `master`. Check whether the intended change is already present. Completed work above needs no further upload.
 2. A chat ready to publish should claim its exact overlapping targets here (for example `daruri/index.html` and the Usul reader ZIP), recording its chat/task name, current base commit, UTC claim time and expiry. Use the current file blob SHA when updating the claim: if another claimant wins, reread rather than overwrite it. Allow 15 minutes per claim, renewing only while an operation is actually active. An expired claim does not authorize a stale publisher to continue.
@@ -97,3 +97,12 @@ Verification of that contents patch: 6,823 existing PDF links and 1,693 bookmark
 ### Concurrent study and print corrections retained
 
 `3dafec5db27f4b1ff59eec7e9a92f496055a7a55` made all 84 study-card footer destinations usable links, with accessible question labels and 44-pixel minimum tap targets. `c4958e20dfca358e702570dc1f2f8c23bb9fec89` added shared monochrome browser printing for reader, study, contents/reference and standalone dictionary views, including disclosure preparation and restoration and level labels on printed lessons. The citation integration retains both corrections and the print assets in the offline bundle and service worker. The final study/print QA passes with both source-note calls, unchanged lesson routes, enhanced and no-JavaScript source notes, print preparation/restoration, all 84 lesson renders and the existing reading-return checks. Verify publication separately.
+
+
+## Menu visibility and sizing — completed 20 October 2026
+
+Published in [`e68fb88`](https://github.com/gnamma-research/booksite/commit/e68fb885599313d5fb79c002b02239fc679f38cf). [Pages run 39453282052](https://github.com/gnamma-research/booksite/actions/runs/39453282052) succeeded at 15:58:57 UTC. The final source was merged over the completed English/Arabic fonts, Notes and language-order releases; unchanged source and font assets are retained.
+
+Menu, Search, Appearance and Display remain visible across reference views. Reading-specific language/actions/Focus controls are scoped to reading; saved reading Focus/header choices no longer hide reference navigation. A shared responsive toolbar size resolves conflicting button dimensions. The standalone dictionary has an eight-destination site menu.
+
+Verified: 128 runtime route/mode/header/viewport cases and nine exact-reading-return cases, plus existing focus, heading/corpus and language gates. The committed reader, dictionary and new QA hashes match the tested local files. Live browser confirmed four equal 38×38 toolbar buttons on Academic index; persistent Study guide toolbar; Display dialog with both font groups; return to §49 with all ten visible reader buttons equal 38×38; and the historical dictionary menu opening and navigating to Study guide. Mobile state logic is covered; physical iPhone visual testing is not claimed. This task did not rewrite the Usul saved ZIP or PDFs. No repeat menu upload is needed.
