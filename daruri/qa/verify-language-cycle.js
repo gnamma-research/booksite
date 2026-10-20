@@ -49,13 +49,13 @@ assert(languageSource,'Language button renderer missing');
 const context={state:{lang:'english',vowels:false}};
 const buttonMarkup=vm.runInNewContext(languageSource[0]+'\nlanguageButtons()',context);
 assert(buttonMarkup.includes('data-arabic-state="off"'));
-assert(buttonMarkup.includes('>EN</button>'));
+assert(/<span\b[^>]*class="gn-language-label"[^>]*>En<\/span>/.test(buttonMarkup),'English label uses the requested En case');
 context.state={lang:'parallel',vowels:true};
 const vowelled=vm.runInNewContext(languageSource[0]+'\nlanguageButtons()',context);
-const arabicGlyph=vowelled.match(/<svg\b[^>]*class="gn-arabic-cycle-glyph"[^>]*>[\s\S]*?<\/svg>/)?.[0];
-assert(arabicGlyph,'Vowelled Arabic uses the bounded glyph icon');
-assert(/aria-hidden="true"/.test(arabicGlyph),'The button label, rather than its decorative glyph, names the Arabic state');
-assert.equal((arabicGlyph.match(/<path\b/g)||[]).length,2,'Vowelled Arabic includes ayn and its fatḥa');
+const arabicLabel=vowelled.match(/<span\b[^>]*class="gn-language-label"[^>]*>Ar<\/span>/)?.[0];
+assert(arabicLabel,'Arabic label uses the requested Ar case in the vowelled state');
+assert(/aria-hidden="true"/.test(arabicLabel),'The descriptive button label names the Arabic state');
+assert(!/<svg\b/.test(vowelled),'Language toggles use text labels rather than the retired outlined glyph');
 assert(!/id=["']quickVowels["']/.test(html),'Old tashkeel toolbar button should be removed');
 assert(!/id=["']apparatusTashkil["']/.test(html),'Apparatus duplicates Arabic state');
 const contextPos=html.indexOf('id="contextToolbar"');
@@ -66,5 +66,5 @@ for(const id of ['readerPreviousNumber','readerNextNumber','dockPart','dockSecti
  assert(html.includes('id="'+id+'"'),'Missing dock '+id);
 }
 assert(html.includes('gn-section-number-ar-only'),'Part and section heading must remain inline');
-console.log('PASS: nine Arabic/English state cases, rendered glyphs, preserved controls, retired context pane, numbered dock, JS syntax');
+console.log('PASS: nine Arabic/English state cases, Ar/En labels, preserved controls, retired context pane, numbered dock, JS syntax');
 
