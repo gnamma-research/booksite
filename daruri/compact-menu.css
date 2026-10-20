@@ -257,3 +257,20 @@
     }
   }
 }
+
+
+/* Tighter Visuals spacing. Only surrounding whitespace changes: the font
+   specimens, 48px touch targets, and the iPhone tap/zoom fix stay intact. */
+@media screen {
+  .gn-visuals-panel {padding:14px 16px !important;}
+  .gn-visuals-panel .gn-visuals-header {
+    gap:12px;
+    padding-bottom:8px !important;
+    margin-bottom:2px !important;
+  }
+  .gn-visuals-panel .gn-visual-row {padding-block:5px !important;}
+  .gn-visuals-panel .gn-palette-row {padding-bottom:2px !important;}
+}
+@media screen and (max-width:380px) {
+  .gn-visuals-panel {padding-inline:11px !important;}
+}
