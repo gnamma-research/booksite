@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: English reading typefaces task (`/root`), active from 2026-10-20 15:44 UTC until 15:59 UTC.** Base: `a2311270ef896319403392d82bd58239ad835acf`. Targets: `daruri/index.html`, `daruri/dictionary.html`, `daruri/print.css`, `daruri/sw.js`, `daruri/download-bundle.js`, `daruri/CURRENT_RELEASE.md`, new `daruri/english-fonts.css` and the new English-specific files under `daruri/fonts/`. Prepared change offers Original, Source Serif 4 and Literata beside the Arabic choices, with Amiri + Original as the initial pair. The separately recorded saved-package access blocker remains unresolved; no saved ZIP/pointer upload is in progress. No other chat has been contacted or stopped by this claim.
+**Publisher claim: unclaimed.** The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
 
 1. Before uploading, fetch this file and latest `master`. Check whether the intended change is already present. Completed work above needs no further upload.
 2. A chat ready to publish should claim its exact overlapping targets here (for example `daruri/index.html` and the Usul reader ZIP), recording its chat/task name, current base commit, UTC claim time and expiry. Use the current file blob SHA when updating the claim: if another claimant wins, reread rather than overwrite it. Allow 15 minutes per claim, renewing only while an operation is actually active. An expired claim does not authorize a stale publisher to continue.
@@ -27,6 +27,16 @@ The user has requested coordination because several chats are attempting to uplo
 5. Publish the combined ready website changes once, then have that same publisher save the matching Usul snapshot and update its pointer once. Reuse unchanged PDF bytes. Record the resulting commit and deployment result here, and release the claim promptly.
 
 For this release, repeated standalone blob uploads of the approximately 3.4 MB reader stalled. A single Git tree request with the large HTML in the tree entry’s `content` and small supporting files referenced by their blob SHAs completed successfully. This is an observed fallback for this repository, not evidence that GitHub’s deployment queue caused the delays.
+
+## English reading typefaces release — 20 October 2026
+
+**Published and live:** [`6d431dc`](https://github.com/gnamma-research/booksite/commit/6d431dca575243e05e023548bc2095012cff5b5b). [Pages run 39451749601](https://github.com/gnamma-research/booksite/actions/runs/39451749601) succeeded at 15:48:40 UTC.
+
+Type & appearance now offers Original (default), Source Serif 4 and Literata beside the Arabic choices. New readers start with **Amiri + Original**. Each language has an independent saved preference and preview; Original preserves the reader's native serif stack. Optional English fonts include normal/italic variable forms, with local assets, licences and provenance. Prose choices carry through notes, dictionary translations, study text and browser printing, with native fallback controls. Interface/title fonts stay independent.
+
+Verification: 16 committed file hashes match the prepared change. All 11 changed runtime, stylesheet and font assets were fetched from the live site and matched exact local bytes; the four new fonts are served as `font/woff2`. Existing heading/language/focus gates and 38 focused behavior checks pass. Same-frame and separate-frame font changes preserve the first visible passage in controlled geometry checks. Physical-phone/browser visual testing is not claimed. The earlier Notes, language-layout, Arabic font and PDF releases are retained.
+
+The saved Usul ZIP/pointer was not rewritten: the preceding authenticated saved-file access blocker remains unresolved. The canonical published source is on GitHub. Do not repeat the completed reader/font upload.
 
 ## Arabic typeface release — 20 October 2026
 
