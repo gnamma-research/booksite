@@ -28,6 +28,12 @@ Previous claim: unclaimed. The self-contained lesson printing release is publish
 
 Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
 
+### Contents, subject index and PDF structure — audit, 20 October 2026
+
+The latest user request asks for a deep investigation of original parts/chapters, subject-index groupings and placing the dictionary after the academic index. The completed [audit and concrete design recommendation](qa/CONTENTS_AND_SUBJECT_INDEX_AUDIT_2026-10-20.md) uses current master `6d7025a` and all five actual reading PDFs. **This is an audit record, not a website/PDF redesign release; no publisher claim is held for it.**
+
+The existing 46-heading parent map is valid. The website's original-contents tree is always expanded; the PDFs preserve the rubrics in the body but do not use them in bookmarks. Only the scholarly PDF has a detailed original-heading contents list. The audit specifies the four-part source structure, safe boundary cases, eight proposed subject groups with exact existing index examples, index-before-dictionary order, Arabic navigation corrections and the coordinated rebuild/page-remapping requirements. Reuse these findings when implementing; preserve the current compact-menu, font, source-note and study-print releases. Proposed topic groups are editorial browsing aids, not new authorial chapters.
+
 ### Lesson print-note cleanup — completed 20 October 2026
 
 **Published and live:** [`5fca4e2`](https://github.com/gnamma-research/booksite/commit/5fca4e28c7be9eeb5606f7a05e653a85a15a46cd). [Pages run 39456749409](https://github.com/gnamma-research/booksite/actions/runs/39456749409) succeeded at 16:22:23 UTC. The release integrates the completed menu/accessibility and Arabic-glyph update (`8a466ee`), Bidāya application links (`f2d4286`) and current font/printing work. The other publisher’s released claim and queued handoff were respected before the combined upload.
