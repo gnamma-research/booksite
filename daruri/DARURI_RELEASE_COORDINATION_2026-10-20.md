@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: Ar/En language labels (menu/navigation chat).** Exact targets: `daruri/index.html`, `daruri/sw.js`, and the two focused language QA files. Base: `4da54b58e84cab008b6d6de0bc31688eb973dba1`. Claimed 2026-10-20 17:35 UTC; expires 17:50 UTC. The user explicitly replaces the Arabic glyph with `Ar` and English with `En`, capital initial and lowercase second letter, with matching typeface/size/weight. This supersedes the pending bold-glyph idea; existing toggle states and new compact menus are retained. No other UI, PDF or package changes.
+**Publisher claim: unclaimed.** The matching Ar/En language-label update is published and verified live. The menu/navigation publisher released its claim at 2026-10-20 17:54:34 UTC. New work should retain source commit `896bd3c9c4ca95c6c2fe6ab5259c3ee38775a729`. No menu/navigation upload remains active.
 
 Previous publisher record: The Arabic toggle ink-fit correction is published and live. Its publisher released the claim at 2026-10-20 16:53 UTC after successful deployment and live outline/state verification. The queued compact menu/reading-style publisher can now merge current master and publish its approved work, preserving this glyph correction. No menu/navigation upload remains active.
 
@@ -179,3 +179,12 @@ The Arabic button now uses the existing Amiri ayn and fatḥa as inline outline 
 Verification: the new geometry QA evaluates actual quadratic-curve extrema and every button size from 24 to 38px in 0.25px steps, retaining at least 4.250px clearance inside a hypothetical 1px border. All nine language transitions, 128 reference-navigation cases plus nine exact reading returns, and existing Focus/corpus/inline-syntax checks pass. All four committed file hashes match tested local files. Live browser verified the new outlined glyph, 26px SVG inside a 38px button, actual ink bottom clearance of 9.25px for both plain and vowelled states, and a working off → plain → vowelled cycle. The vowelled union has equal 9.25px top/bottom clearance. Physical iPhone testing is not claimed.
 
 Changed runtime files: `daruri/index.html`, `daruri/sw.js`; cache revision `20261020-arabicfit1`. New `qa/verify-arabic-toggle-geometry.js` and adjusted `qa/verify-language-cycle.js` protect the geometry and state semantics. The queued compact-menu publisher should keep the inline paths and their dedicated CSS, run both QA checks on its merged reader, and retain the uniform toolbar-size contract. No PDFs or saved packages were uploaded.
+
+
+## Matching Ar / En language labels — completed, 20 October 2026
+
+Published in [`896bd3c`](https://github.com/gnamma-research/booksite/commit/896bd3c9c4ca95c6c2fe6ab5259c3ee38775a729). [Pages run 39468284065](https://github.com/gnamma-research/booksite/actions/runs/39468284065) status: completed; conclusion: success. The user explicitly requested replacement of the Arabic letter with `Ar` and English with `En` (capital initial, lowercase second letter), superseding both earlier outline revisions and the pending bold-glyph proposal.
+
+Both visible labels now use a single shared rule with the same sans typeface, responsive size, weight600, line-height1, opacity1 and exact casing. The old outlined glyph and its font/size/opacity rules are removed. Existing Arabic off/plain/vowelled semantics, accessible names, English visibility, uniform button dimensions and the completed compact-menu/reading-style release are retained. Cache revision: `20261020-language-labels1`.
+
+Verification: all nine language transitions and six language/vowelling renderer combinations pass; inline reader JavaScript parses; committed reader and QA hashes match the tested files. Live browser confirmed actual `Ar` and `En` labels with identical Inter14px, weight600, line-height14px and opacity1 inside matching38×38px buttons; both labels were visually inspected together. The historical geometry-QA entrypoint now checks text-label consistency so shared release checks continue to work. No PDF or saved-package upload was performed.
