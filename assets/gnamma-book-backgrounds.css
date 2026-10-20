@@ -19,3 +19,58 @@ html[data-gn-bg="gnamma"] #modalShade{background:rgba(27,24,20,.33)}
 #gn-appearance-menu [data-appearance][aria-checked="true"]{background:rgba(243,224,202,.7)}
 @media(max-width:700px){#gn-appearance-menu{top:132px;right:18px;max-width:calc(100vw - 36px)}}
 @media print{#gn-appearance-menu,#gn-appearance-toggle{display:none!important}html[data-gn-bg="gnamma"] body{background:#fff!important}}
+
+
+/* Optional Gnamma open landscape: low-opacity surfaces leave the rock pool visible. */
+:root[data-gn-bg="gnamma-air"]{
+ color-scheme:light;--canvas:rgba(242,229,211,.28);--paper:rgba(255,251,244,.65);
+ --sidebar:rgba(255,250,242,.58);--ink:#292d29;--muted:#5d534c;
+ --rule:rgba(98,78,62,.26);--green:#285c64;
+ --greenlight:rgba(226,239,232,.62);--accent:#9d6043;
+}
+html[data-gn-bg="gnamma-air"] body{
+ background-color:#c7ae98!important;
+ background-image:linear-gradient(155deg,rgba(250,239,222,.10),rgba(248,238,221,.24)),url("gnamma-landscape.webp"),url("gnamma-scene.svg")!important;
+ background-size:cover,cover,cover!important;background-position:50% 55%,50% 55%,center!important;
+ background-repeat:no-repeat!important;background-attachment:fixed,fixed,fixed!important;
+}
+html[data-gn-bg="gnamma-air"] #app,
+html[data-gn-bg="gnamma-air"] #content{background:transparent!important}
+html[data-gn-bg="gnamma-air"] .container{max-width:1180px;padding-inline:clamp(20px,6vw,88px)}
+html[data-gn-bg="gnamma-air"] .reading-card{max-width:940px;margin:clamp(14px,2.6vw,27px) auto}
+html[data-gn-bg="gnamma-air"] .panel-wrap,
+html[data-gn-bg="gnamma-air"] .continuous-intro,
+html[data-gn-bg="gnamma-air"] .arabic-complete-page{max-width:970px;margin-inline:auto}
+html[data-gn-bg="gnamma-air"] #sidebar,
+html[data-gn-bg="gnamma-air"] #topbar,
+html[data-gn-bg="gnamma-air"] .reading-card,
+html[data-gn-bg="gnamma-air"] .panel-wrap,
+html[data-gn-bg="gnamma-air"] .continuous-intro,
+html[data-gn-bg="gnamma-air"] .arabic-complete-page{
+ background:var(--paper)!important;backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);
+ border-color:var(--rule);box-shadow:0 8px 29px rgba(35,28,23,.06);
+}
+html[data-gn-bg="gnamma-air"] #sidebar{background:var(--sidebar)!important}
+html[data-gn-bg="gnamma-air"] #topbar{background:rgba(255,250,242,.69)!important}
+html[data-gn-bg="gnamma-air"] .term-modal{
+ background:rgba(255,251,244,.94)!important;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
+}
+html[data-gn-bg="gnamma-air"] #modalShade{background:rgba(25,26,23,.42)}
+@media(max-width:980px){
+ html[data-gn-bg="gnamma-air"] #app.nav-open #sidebar{background:rgba(255,251,244,.95)!important}
+}
+@media(max-width:650px){
+ html[data-gn-bg="gnamma-air"] body{background-position:48% 54%,48% 54%,center!important}
+ html[data-gn-bg="gnamma-air"] .container{padding-inline:12px}
+ html[data-gn-bg="gnamma-air"] .reading-card{margin:12px auto}
+ html[data-gn-bg="gnamma-air"] .panel-wrap{margin:15px 0}
+}
+@media(prefers-contrast:more){
+ :root[data-gn-bg="gnamma-air"]{--paper:rgba(255,251,244,.94);--sidebar:rgba(255,251,244,.96)}
+}
+@media print{
+ html[data-gn-bg="gnamma-air"] body{background:#fff!important}
+ html[data-gn-bg="gnamma-air"] .reading-card,
+ html[data-gn-bg="gnamma-air"] .panel-wrap,
+ html[data-gn-bg="gnamma-air"] .arabic-complete-page{background:#fff!important;backdrop-filter:none!important;box-shadow:none!important}
+}
