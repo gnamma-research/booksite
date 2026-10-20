@@ -2,7 +2,39 @@
    No source text is fetched during printing or added to the normal lesson. */
 (() => {
   'use strict';
-  const KIND = {grammar:'Grammar', textual:'Textual note', lexical:'Vocabulary', translation:'Translation', crux:'Textual difficulty', quotation:'Quotation', scholarship:'Scholarly context', interpretive:'Interpretation', 'quran-source':'Qur’an source', 'hadith-source':'Hadith source'};
+  const KIND = {grammar:'Grammar', lexical:'Vocabulary', translation:'Translation', quotation:'Quotation', scholarship:'Scholarly context', interpretive:'Interpretation', 'quran-source':'Qur’an source', 'hadith-source':'Hadith source'};
+  // A lesson handout needs study help, not the scholarly collation apparatus.
+  // Keep the canonical notes intact; these edits apply to print copies only.
+  // Exact, note-specific trims preserve interpretation and source qualifications
+  // without accidentally treating a hadith's witnesses as manuscript evidence.
+  const STUDY_EDITS = {
+    N001:[['The reading is interpretive; neither French nor the proposed English is an independent manuscript witness.', 'The reading is interpretive.']],
+    N021:[[' This supplies a grammatical reading without altering the consonants.', ''], [' In the last segment the printed مَكَانُهُ is preserved, although the English follows the likely sense of إِمْكَانُهُ.', '']],
+    N055:[['The printed تجوز فيه العبارة', 'The phrase تجوز فيه العبارة'], [' without silently changing the consonants.', '.']],
+    N092:[['The imperative paradigm is printed أفعل. Here it is normalized as اِفْعَلْ (“Do!”), with hamzat al-waṣl and fatḥa on the second radical, rather than the distinct form-IV command أَفْعِلْ. This is an explicitly recorded orthographic correction; it does not change the quoted command فَاصْطَادُوا.', 'The imperative pattern اِفْعَلْ (“Do!”) has hamzat al-waṣl and fatḥa on the second radical; distinguish it from the form-IV command أَفْعِلْ. The quoted command here is فَاصْطَادُوا.']],
+    N096:[[' The editor’s suggestion on p126 that الكلي and الجزئي should be reversed is not adopted: the printed order agrees with §§191 and 221.', '']],
+    N121:[[' The following 606 AH copying notice and ownership statement belong to later manuscript voices and are presented separately.', '']],
+    BA001:[[' For the current edition’s completed 2015 collation of this passage, see textual note BA15-V002.', '']],
+    BA008:[['This is a comparison, not a report of a passage-specific 2015 French translation variant.', 'This is a comparison.']],
+    BA011:[['This remains an interpretive argument; not a silently adopted manuscript reading.', 'This remains an interpretive argument.']],
+    BA018:[[' The current Arabic wording remains that of al-ʿAlawī 1994, not a verified 2015 variant.', '']],
+    'BA15-I01':[['The 2015 textual introduction (pp.107–116) documents the historical titles Mukhtaṣar al-Mustaṣfā and al-Ḍarūrī, an Escorial unique manuscript, and a 552 AH authorial colophon.', 'The titles Mukhtaṣar al-Mustaṣfā and al-Ḍarūrī are documented by Bou Akl (2015, pp.107–116).']],
+    'BA15-T01':[['Bou Akl (2015), Arabic p. 318, §299, preserves «كذلك ما تضادت فيه الدلائل، وكما أن ما عليه دليل ساقط في حق من لم يبلغه» (Escorial reading [أ]), omitted by al-ʿAlawī [ع]. ', ''], [' The English already distinguished both comparisons.', '']],
+    'G-BA-270':[['The accusative printed by Bou Akl is retained; one syntactic reading', 'One syntactic reading']],
+    'HAD-R171':[[', as distinguished in note N071.', '.']],
+    'HAD-R191':[['; note N083 explains the vocabulary.', '; the words mean thread and needle.']],
+    'HAD-R215':[['See §191 and the lexical explanation in N083, to which N099 refers.', 'The terms denote thread and needle.']]
+  };
+  function studyNote(note) {
+    // This crux also contains a useful lexical distinction, retained without
+    // its discussion of printed consonants or editorial intervention.
+    if (note.id === 'N027') return {...note, kind:'lexical', text:'Distinguish الْأَمْر (al-amr, “the command”) from الْآمِر (al-āmir, “the commander”). Here the contrast between the Prophet and other rulers concerns the person commanding.'};
+    // These translation-labelled notes only discuss editorial interventions.
+    if (!Object.prototype.hasOwnProperty.call(KIND, note.kind) || ['N050', 'N091'].includes(note.id)) return null;
+    let text = note.text;
+    for (const [original, replacement] of STUDY_EDITS[note.id] || []) text = text.replace(original, replacement);
+    return {...note, text};
+  }
   // These explicit print adaptations keep the research lessons workable with
   // the supplied text. They do not claim the case summaries are primary texts.
   const OFFLINE = {
@@ -68,6 +100,7 @@
     const book = JSON.parse(document.getElementById('editionData').textContent);
     const sections = new Map(book.sections.map(item => [Number(item.id), item]));
     const notes = new Map(book.notes.map(item => [item.id, item]));
+    const studyNotes = new Map(book.notes.map(studyNote).filter(Boolean).map(item => [item.id, item]));
     const apps = lesson.applications.map(id => book.apps.find(app => app.id === id)).filter(Boolean);
     const assigned = [...new Set(version.sections.map(Number))];
     const adaptation = level === 'advanced' ? OFFLINE[lesson.id] : null;
@@ -126,7 +159,7 @@
         ar.lang = 'ar'; ar.dir = 'rtl'; out.append(ar);
         if (section.headingEn) out.append(mixedText(element('p', 'sg-print-en sg-print-source-heading'), section.headingEn));
       }
-      const relevant = (section.noteIds || []).map(id => notes.get(id));
+      const relevant = (section.noteIds || []).map(id => studyNotes.get(id)).filter(Boolean);
       // Keep note numbering stable in source order, even when calls follow a passage.
       relevant.forEach(note => register(note, '§' + section.id));
       const positioned = new Set();
@@ -188,18 +221,18 @@
         hideOnPaper(old); hideOnPaper(call);
         article.querySelector('.sg-example').append(printOnly(calls([{...source, kind:'quran-source'}], 'Teaching example', 'Example source: ')));
       }
-      // Resolve explicitly named apparatus notes; do not expand edition-specific
-      // section references in notes into unrelated reader passages.
+      // Resolve explicitly named study notes without reintroducing excluded
+      // apparatus. Edition-specific section numbers are not reader passages.
       for (let i = 0; i < entries.length; i++) {
         for (const match of String(entries[i].note.text).matchAll(/\b(?:N\d{3}|BA\d{3}|BA15-[A-Z]\d{3}|G-B2-\d{4})\b/g)) {
-          if (match[0] !== entries[i].note.id && notes.has(match[0])) register(notes.get(match[0]), 'Referenced by note ' + entries[i].number);
+          if (match[0] !== entries[i].note.id && studyNotes.has(match[0])) register(studyNotes.get(match[0]), 'Referenced by note ' + entries[i].number);
         }
       }
       if (entries.length) {
         const end = printOnly(element('section', 'sg-print-endnotes'));
         end.setAttribute('role', 'doc-endnotes');
-        end.append(element('h2', '', 'Reading notes and sources'));
-        end.append(element('p', '', 'The bracketed numbers beside the readings refer to these notes. Each note identifies its section or teaching example. Notes retain the current edition’s wording and source qualifications.'));
+        end.append(element('h2', '', 'Study notes and sources'));
+        end.append(element('p', '', 'The bracketed numbers beside the readings refer to these selected notes on Qur’an and hadith sources, interpretation, scholarly context, grammar, vocabulary and translation. Each note identifies its section or teaching example. Source qualifications are retained.'));
         const list = element('ol', 'sg-print-note-list');
         entries.forEach(({note, number, scopes, anchor}) => {
           const item = element('li'); item.id = anchor; item.dataset.printNote = note.id; item.setAttribute('role', 'doc-endnote');

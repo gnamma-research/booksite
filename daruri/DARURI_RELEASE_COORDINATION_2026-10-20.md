@@ -18,7 +18,9 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: unclaimed.** The Arabic toggle and menu accessibility follow-up is published and live. This publisher released its claim at 2026-10-20 16:20:52 UTC after live browser and deployment verification. The queued study-note cleanup can now publish from latest master; no menu upload remains active.
+**Publisher claim: lesson study-note cleanup.** Targets: `daruri/lesson-print.js`, its QA, `daruri/index.html`, `daruri/sw.js` and release records. Base `fa3bb45aa4eb9ac6b3bb4769afc928de960b71ba`. Claimed 2026-10-20 16:21 UTC; expires 16:36 UTC. All 84 print cases pass. The completed menu/accessibility and Bidāya-link releases are retained; publication and live-byte verification are in progress.
+
+Previous publisher record: The Arabic toggle and menu accessibility follow-up is published and live. This publisher released its claim at 2026-10-20 16:20:52 UTC after live browser and deployment verification. The queued study-note cleanup can now publish from latest master; no menu upload remains active.
 
 Previous claim: unclaimed. The self-contained lesson printing release is published and live. Its publisher released the claim at 2026-10-20 16:06 UTC after successful deployment and exact verification of all seven changed live runtime/page assets. No print, PDF or saved-package upload remains active.
 
