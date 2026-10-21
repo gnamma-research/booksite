@@ -34,6 +34,7 @@ HEADINGS={
  230:('Part IV · Ijtihād','القسم الرابع: الاجتهاد')}
 MODES={
  'bilingual':{'ar':'vocalized','margin':13,'en':9.8,'el':1.39,'arpt':12.6,'al':1.48,'gap':3.4,'s':2},
+ 'bilingual-unvowelled':{'ar':'ar','margin':13,'en':9.8,'el':1.39,'arpt':12.6,'al':1.48,'gap':3.4,'s':2},
  'english':{'ar':None,'margin':12.5,'en':10.2,'el':1.43,'gap':4,'s':4},
  'arabic':{'ar':'ar','margin':13,'arpt':13.2,'al':1.48,'gap':3.5,'s':3},
  'arabic-vowelled':{'ar':'vocalized','margin':13,'arpt':13.1,'al':1.53,'gap':3.5,'s':3}}
@@ -71,7 +72,7 @@ def css(c,mode):
   out+='''.reading-editorial-title{bookmark-level:3;bookmark-state:closed;font:600 9pt/1.32 "Noto Sans";color:#30383a;margin:6pt 0 3pt;break-after:avoid;break-inside:avoid}
   .reading-editorial-title small{font:600 7pt "Noto Sans";text-transform:uppercase;color:#5d6568;padding-right:5pt}
   '''
-  if mode=='bilingual':
+  if mode.startswith('bilingual'):
     out+='''.parallel{width:100%%;table-layout:fixed;direction:ltr;border-collapse:collapse;margin:0 0 %spt}
     .parallel td{width:50%%;vertical-align:top;padding:0 0 %spt}
     .parallel .english{padding-right:6pt;border-right:.45pt solid #bbb}
@@ -106,6 +107,7 @@ def front(mode,chosen,scope,title):
   else:
     title='Al-Ḍarūrī <span lang="ar" dir="rtl">الضروري في أصول الفقه</span>' if scope=='full' else E(title)
     note='Complete authorial §§1–258. No scholarly apparatus, notes, dictionary, cases or exercises.' if scope=='full' else 'Selected complete source sections; not a continuous abridgement.'
+    if mode=='bilingual-unvowelled':note+=' Arabic text without editorial vowel marks.'
     result='<section class="opening"><h1>'+title+'</h1><p>Ibn Rushd · Gnamma Research · Printable A4</p><p>'+note+' Full commentary remains in the scholarly reference edition.</p></section>'
     result+='<nav class="toc"><strong>Reading map</strong>'+''.join('<span><a href="#section-'+str(n)+'">§'+str(n)+' · '+E(values[0])+'</a></span>' for n,values in HEADINGS.items() if n in chosen)+'</nav>'
   return result
@@ -114,7 +116,7 @@ def build(mode,selection,scope,title,pdf,editorial_titles=False):
   assert chosen and chosen <= set(SECTIONS)
   sections=[SECTIONS[i] for i in range(1,259) if i in chosen]
   content=[front(mode,chosen,scope,title)]
-  if mode!='bilingual':content.append('<article class="textflow">')
+  if not mode.startswith('bilingual'):content.append('<article class="textflow">')
   for s in sections:
     n=s['id']
     if n in HEADINGS:
@@ -125,11 +127,11 @@ def build(mode,selection,scope,title,pdf,editorial_titles=False):
       content.append('<header class="reading-editorial-title"'+extra+'><small>Editorial §'+str(n)+'</small> '+E(str(s['title']))+'</header>')
     ha,he=s.get('headingAr') or '',s.get('headingEn') or ''
     if ha or he:
-      if mode=='bilingual':
+      if mode.startswith('bilingual'):
         content.append('<header class="section-head"><span class="english">'+E(he)+'</span><span class="arabic" lang="ar" dir="rtl">'+E(ha)+'</span></header>')
       elif mode=='english':content.append('<header class="section-head">'+E(he)+'</header>')
       else:content.append('<header class="section-head" lang="ar" dir="rtl">'+E(ha)+'</header>')
-    if mode=='bilingual':
+    if mode.startswith('bilingual'):
       cells=[]
       for i,seg in enumerate(s['segments']):
         label='<b class="number">'+str(n)+'</b> ' if i==0 else ''
@@ -142,7 +144,7 @@ def build(mode,selection,scope,title,pdf,editorial_titles=False):
         source_id=' id="section-'+str(n)+'"' if i==0 else ''
         label='<b class="number">'+str(n)+'</b> ' if i==0 else ''
         content.append('<p'+attrs+source_id+'>'+label+E(body)+'</p>')
-  if mode!='bilingual':content.append('</article>')
+  if not mode.startswith('bilingual'):content.append('</article>')
   if scope=='full':
     content.append('<p class="afterword">The later copyist’s record and scholarly apparatus remain in the reference edition.</p>' if not mode.startswith('arabic') else '<p class="afterword" dir="rtl" lang="ar">توجد خاتمة الناسخ والحواشي النقدية والشروح في الطبعة العلمية.</p>')
   html_text='<!doctype html><html><head><meta charset="utf-8"><style>'+css(c,mode)+'</style></head><body>'+''.join(content)+'</body></html>'
