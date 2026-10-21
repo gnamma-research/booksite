@@ -88,6 +88,7 @@ function create(ctx){
  function isResolved(r){
   if(!r)return false;
   if(!r.target)return r.kind==='note'&&r.standalone===true;
+  if(r.kind!=='note'&&r.kind!==r.target.kind)return false;
   return Boolean(validateTarget(r.target));
  }
  function load(){
@@ -225,7 +226,7 @@ function create(ctx){
    if(restore&&!r.deleted||!restore&&r.deleted)continue;
    r.deleted=restore?0:now;r.updated=now;count++;
   }
-  if(count){persist();syncLegacy(true);if(state.route==='reader')afterReader();if(state.route==='bookmarks')render();}
+  if(count){if(!persist()){ctx.notify('Storage unavailable: change was not saved.');return 0;}syncLegacy(true);if(state.route==='reader')afterReader();if(state.route==='bookmarks')render();}
   return count;
  }
  function trash(id){if(moveMany([id])){lastUndo=id;showUndo();}}
@@ -303,10 +304,11 @@ function create(ctx){
  }
  function htmlCard(r){
   const own=r.kind==='note',related=own?[]:active().filter(x=>x.kind==='note'&&x.target&&sourceKey(x.target)===sourceKey(r.target));
-  const canOpen=!!r.target;
+  const canOpen=!!r.target&&isResolved(r);
   const parts=['<article class="gn-rd-card'+(r.id===ui.selected?' gn-rd-selected':'')+'">'];
   parts.push('<button type="button" class="gn-rd-card-open" data-rd="select" data-id="'+esc(r.id)+'" aria-label="View '+esc(own?'personal note':'bookmark')+': '+esc(short(r.title||titleOf(r.target),95))+'">');
   parts.push('<span class="gn-rd-card-heading"><small>'+esc(grouped(r))+' · '+esc(subOf(r.target))+'</small><time title="'+esc(dateLine(r,true))+'">'+esc(dateLine(r))+'</time></span>');
+  if(!isResolved(r))parts.push('<span class="gn-rd-unresolved-status" role="status">Source unavailable · saved content preserved</span>');
   parts.push('<strong>'+esc(r.title||titleOf(r.target))+'</strong>');
   if(own)parts.push('<span>'+esc(short(r.body,175))+'</span>');
   else if(related.length)parts.push('<span>'+related.length+' linked personal '+(related.length===1?'note':'notes')+'</span>');
@@ -328,7 +330,8 @@ function create(ctx){
   parts.push('<p>Saved passages, personal observations and source-linked references. Your work stays in this browser unless you export it.</p>');
   if(readingOrigin)parts.push('<button type="button" class="gn-rd-back-reading" data-rd="return-reading">← Back to text</button>');
   parts.push('</header>');
-  if(!available)parts.push('<p class="gn-rd-warning" role="alert">Browser storage is unavailable or full. Download a backup before leaving.</p>');
+  if(loadFailure)parts.push('<div class="gn-rd-warning" role="alert"><strong>Saved data protected.</strong> This browser contains Reading Desk data that could not be read. No new writes will overwrite it. <button type="button" data-rd="download-original">Download untouched original data</button></div>');
+  else if(!available)parts.push('<p class="gn-rd-warning" role="alert">Browser storage is unavailable or full. Download a backup before leaving.</p>');
   parts.push('<div class="gn-rd-toolbar" role="group" aria-label="Reading Desk actions"><div class="gn-rd-toolbar-main">');
   parts.push('<button type="button" data-rd="new-note">+ New note</button><button type="button" data-rd="print-list">Print / save PDF</button>');
   parts.push('<details class="gn-rd-tools-menu"><summary>Tools</summary><div>');
@@ -359,6 +362,7 @@ function create(ctx){
    parts.push('<button class="gn-rd-mobile-back" type="button" data-rd="detail-back">← Reading Desk</button>');
    if(ui.mobileDetail&&readingOrigin)parts.push('<button class="gn-rd-back-reading gn-rd-mobile-source-back" type="button" data-rd="return-reading">← Back to text</button>');
    parts.push('<header><small>'+esc(selected.kind==='note'?'MY NOTE':grouped(selected).toUpperCase())+'</small><h2>'+esc(selected.title||titleOf(selected.target))+'</h2></header>');
+   if(!isResolved(selected))parts.push('<div class="gn-rd-unresolved-detail" role="status"><strong>Original source unavailable in this edition.</strong><p>The saved words, note, dates and previous source reference remain preserved. You can read or export this item and optionally reconnect it to an existing paragraph.</p></div>');
    parts.push(detailsFor(selected));
    parts.push('<footer class="gn-rd-date-details"><small>'+esc(dateLine(selected,true))+'</small></footer>');
    const relatives=selected.target?active().filter(r=>r.id!==selected.id&&r.target&&sourceKey(r.target)===sourceKey(selected.target)):[];
@@ -370,7 +374,8 @@ function create(ctx){
    parts.push('<div class="gn-rd-detail-actions">');
    if(bin)parts.push('<button type="button" data-rd="restore" data-id="'+esc(selected.id)+'">Restore</button>');
    else{
-    if(selected.target)parts.push('<button type="button" data-rd="open" data-id="'+esc(selected.id)+'">Open in source</button><button type="button" data-rd="add-note" data-id="'+esc(selected.id)+'">Add note</button>');
+    if(selected.target&&isResolved(selected))parts.push('<button type="button" data-rd="open" data-id="'+esc(selected.id)+'">Open in source</button><button type="button" data-rd="add-note" data-id="'+esc(selected.id)+'">Add note</button>');
+    if(!isResolved(selected))parts.push('<button type="button" data-rd="relink" data-id="'+esc(selected.id)+'">Relink source…</button>');
     if(selected.kind==='note')parts.push('<button type="button" data-rd="edit" data-id="'+esc(selected.id)+'">Edit</button>');
    }
    parts.push('<button type="button" data-rd="share" data-id="'+esc(selected.id)+'">Share</button><button type="button" data-rd="email" data-id="'+esc(selected.id)+'">Email</button><button type="button" data-rd="print" data-id="'+esc(selected.id)+'">Print</button></div>');
@@ -380,6 +385,62 @@ function create(ctx){
   parts.push('<p class="gn-rd-privacy">Personal data is stored on this device. Download a JSON backup to transfer it. Markdown export is for reading, not re-importing.</p></section>');
   main.innerHTML=parts.join('');
   return main.innerHTML;
+ }
+ function closeRelink(){
+  $('#gn-rd-relink-shade')?.remove();
+ }
+ function showRelink(row){
+  if(!row||isResolved(row))return;
+  closeRelink();
+  const old=row.target||{};
+  const ids=[...ctx.sections.keys()];
+  const dlg=document.createElement('div');dlg.id='gn-rd-relink-shade';dlg.className='gn-rd-relink-shade';
+  dlg.setAttribute('role','presentation');dlg.dataset.itemId=row.id;
+  dlg.innerHTML='<section class="gn-rd-relink" role="dialog" aria-modal="true" aria-labelledby="gn-rd-relink-title" tabindex="-1">'+
+   '<h2 id="gn-rd-relink-title">Reconnect saved source</h2>'+
+   '<p>The previous source reference will be retained in the item history. Your note and original quotation will not be changed.</p>'+
+   '<label>Section<select id="gn-rd-relink-section">'+ids.map(id=>{
+    const sec=ctx.sections.get(id);
+    return '<option value="'+esc(id)+'"'+(id===String(old.section||'')?' selected':'')+'>'+esc(ctx.sectionRef(id))+' · '+esc(short(sec?.title||'Section',90))+'</option>';
+   }).join('')+'</select></label>'+
+   '<label>Paragraph<select id="gn-rd-relink-segment"></select></label>'+
+   (old.quote?'<blockquote>'+esc(short(old.quote,400))+'</blockquote>':'')+
+   '<footer><button type="button" data-rd="relink-close">Cancel</button>'+
+   '<button type="button" data-rd="relink-save">Save new source</button></footer></section>';
+  document.body.append(dlg);updateRelinkSegments();
+  dlg.querySelector('#gn-rd-relink-section')?.focus({preventScroll:true});
+ }
+ function updateRelinkSegments(){
+  const node=$('#gn-rd-relink-section'),sel=$('#gn-rd-relink-segment');
+  if(!node||!sel)return;
+  const n=String(node.value),segments=ctx.sections.get(n)?.segments||[];
+  const previous=$('#gn-rd-relink-shade')?.dataset.itemId;
+  const row=records.find(r=>r.id===previous),preferred=row?.target?.section===n?Number(row.target?.segment)||0:0;
+  sel.innerHTML=segments.map((seg,i)=>'<option value="'+i+'"'+(i===preferred?' selected':'')+'>'+
+    'Paragraph '+(i+1)+' · '+esc(short(seg.en||seg.ar||'',70))+'</option>').join('');
+ }
+ function saveRelink(){
+  const dlg=$('#gn-rd-relink-shade'),row=records.find(r=>r.id===dlg?.dataset.itemId);
+  if(!row||isResolved(row))return;
+  const sectionId=$('#gn-rd-relink-section')?.value,segment=Number($('#gn-rd-relink-segment')?.value);
+  if(!ctx.sections.has(String(sectionId))||!Number.isInteger(segment)||!ctx.sections.get(String(sectionId))?.segments?.[segment]){
+   ctx.notify('Select an existing section and paragraph.');return;
+  }
+  const original=row.target?JSON.parse(JSON.stringify(row.target)):null,kind=original?.kind;
+  const newKind=kind==='quote'&&original?.quote?'quote':kind==='paragraph'?'paragraph':'paragraph';
+  const target={...(original||{}),kind:newKind,section:String(sectionId),segment,
+   lang:original?.lang==='ar'?'ar':'en'};
+  if(newKind==='quote'){
+   target.quote=clamp(original.quote,5000);
+   if(!target.quote.trim()){ctx.notify('Original quotation is missing.');return;}
+  }
+  const validated=validateTarget(target);
+  if(!validated){ctx.notify('Could not resolve this source in the current edition.');return;}
+  const prev={kind:row.kind,target:row.target,sourceHistory:row.sourceHistory,updated:row.updated};
+  row.kind=row.kind==='note'?'note':newKind;row.target=validated;row.updated=Date.now();
+  row.sourceHistory=[...(Array.isArray(row.sourceHistory)?row.sourceHistory:[]),{target:original,relinkedAt:row.updated}];
+  if(!persist()){Object.assign(row,prev);ctx.notify('Changes not saved; the original record remains intact.');return;}
+  closeRelink();if(state.route==='bookmarks')render();ctx.notify('Source reconnected; original reference preserved in history.');
  }
  function showEditor(target,existing){
   editor=existing||null;const t=target||existing?.target||null;
@@ -413,7 +474,10 @@ function create(ctx){
   const target=JSON.parse($('#gn-rd-editor-shade')?.dataset.target||'null');
   if(editor){
    if(editor.title!==title||editor.body!==body){
-    editor.title=title;editor.body=body;editor.updated=Date.now();editor.modified=editor.updated;persist();ctx.notify('Personal note updated.');
+    const previous={title:editor.title,body:editor.body,updated:editor.updated,modified:editor.modified};
+    editor.title=title;editor.body=body;editor.updated=Date.now();editor.modified=editor.updated;
+    if(!persist()){Object.assign(editor,previous);ctx.notify('The note could not be saved; keep the editor open and download a backup.');return;}
+    ctx.notify('Personal note updated.');
    }else ctx.notify('No changes to save.');
   }else upsert('note',target,body,title);
   closeEditor(true);
@@ -754,7 +818,7 @@ function create(ctx){
   if(navigator.share){try{await navigator.share({title:r.title||titleOf(r.target),text:value,url:canonicalURL(r.target)});return;}catch(e){if(e.name==='AbortError')return;}}
   try{await navigator.clipboard.writeText(value);ctx.notify('Text and source link copied for sharing.');}catch(e){ctx.notify('Sharing unavailable. Use Email or Print.');}
  }
- function backup(){return JSON.stringify({format:FORMAT,version:VERSION,exported:new Date().toISOString(),items:records},null,2);}
+ function backup(){if(loadFailure)return untouchedStorage||'';return JSON.stringify({format:FORMAT,version:VERSION,exported:new Date().toISOString(),items:records},null,2);}
  function download(text,name){
   const blob=new Blob([text],{type:name.endsWith('.md')?'text/markdown;charset=utf-8':'application/json;charset=utf-8'}),url=URL.createObjectURL(blob);
   const a=document.createElement('a');a.href=url;a.download=name;a.style.display='none';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
@@ -974,7 +1038,10 @@ function create(ctx){
   if(action==='undo'&&lastUndo){moveMany([lastUndo],true);lastUndo=null;const t=$('#gn-rd-undo');if(t)t.hidden=true;return;}
   if(action==='restore-all'){moveMany(records.filter(r=>r.deleted).map(r=>r.id),true);return;}
   if(action==='empty-bin'){if(confirm('Permanently delete everything in Bin? This cannot be undone.')){records=records.filter(r=>!r.deleted);persist();render();}return;}
-  if(action==='open'&&row){openSource(row);return;}
+  if(action==='open'&&row){if(!isResolved(row)){ctx.notify('Source unavailable: the saved item has been preserved. Open its details to relink.');return;}openSource(row);return;}
+  if(action==='relink'&&row){showRelink(row);return;}
+  if(action==='relink-close'){closeRelink();return;}
+  if(action==='relink-save'){saveRelink();return;}
   if(action==='add-note'&&row){showEditor(row.target);return;}
   if(action==='edit'&&row){showEditor(row.target,row);return;}
   if(action==='share'&&row){shareItem(row);return;}
@@ -983,7 +1050,8 @@ function create(ctx){
   if(action==='print-list'){preparePrint();return;}
   if(action==='print-now'){if(!printRoot)return;window.print();return;}
   if(action==='close-print'){closePrintPreview();return;}
-  if(action==='export'){download(backup(),'Reading-Desk-'+new Date().toISOString().slice(0,10)+'.json');ctx.notify('Reading Desk backup downloaded.');return;}
+  if(action==='export'){if(loadFailure){download(untouchedStorage||'','Reading-Desk-original-recovery.txt');ctx.notify('Original, unmodified browser data downloaded.');}else{download(backup(),'Reading-Desk-'+new Date().toISOString().slice(0,10)+'.json');ctx.notify('Reading Desk backup downloaded.');}return;}
+  if(action==='download-original'){if(untouchedStorage!==null){download(untouchedStorage,'Reading-Desk-original-recovery.txt');ctx.notify('Untouched original data downloaded.');}return;}
   if(action==='share-backup'){shareBackup();return;}
   if(action==='import'){$('#gn-rd-file')?.click();return;}
   if(action==='export-markdown'){exportMarkdown();return;}
@@ -1004,6 +1072,7 @@ function create(ctx){
   document.addEventListener('keydown',e=>{
    if(e.key!=='Escape')return;
    if(printRoot){e.preventDefault();e.stopImmediatePropagation();closePrintPreview();return;}
+   if($('#gn-rd-relink-shade')){e.preventDefault();closeRelink();return;}
    if($('#gn-rd-editor-shade')){e.preventDefault();e.stopImmediatePropagation();closeEditor();}
    else if($('#gn-rd-inline-panel'))closeContext();
    else if(!$('#gn-rd-selection-bar')?.hidden)hideSelection();
@@ -1023,6 +1092,7 @@ function create(ctx){
   },true);
   document.addEventListener('change',e=>{
    const element=e.target;
+   if(element?.id==='gn-rd-relink-section'){updateRelinkSegments();return;}
    if(element?.id==='gn-rd-file'){importFile(element.files?.[0]);element.value='';}
    if(element?.id==='gn-rd-source'){ui.sourceType=element.value;ui.selected='';ui.mobileDetail=false;render();}
    if(element?.id==='gn-rd-sort'){ui.sort=element.value;ui.selected='';ui.mobileDetail=false;render();}
