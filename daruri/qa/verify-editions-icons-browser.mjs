@@ -41,6 +41,8 @@ try {
   assert.ok(symbols.markers>=10,'Every custom control has a category icon');
   assert.equal(await page.locator('[data-ep-published="reading"] .gn-ed-icon-options[data-ep-icon-kind="language"] [role=radio]').count(),4);
   const readyReading=page.locator('[data-ep-published="reading"]');
+  assert.ok(await readyReading.locator('.gn-ed-field-name').first().evaluate(
+    element=>element.getBoundingClientRect().width<=1), 'Ready PDF language label is visually hidden');
   assert.match(await page.locator('[data-ep-info-detail]').textContent(),/76 A4 pages/,'Initial selection described');
   await readyReading.locator('[data-ep-icon-kind="language"]').getByRole('radio',{name:'English only'}).click();
   assert.equal(await page.locator('.gn-ed-status [data-ep-info-kind]').textContent(),'Language');
@@ -70,6 +72,13 @@ try {
   await page.setViewportSize({width:1200,height:900});
   await readingDrawer.locator('summary').click();
   const custom=page.locator('[data-ep-tier="reading"]');
+  const sample=custom.locator('.gn-ed-preview-details');
+  assert.ok(!(await sample.getAttribute('open')), 'Print preview starts collapsed');
+  assert.equal(await sample.locator('.gn-ed-paper').isVisible(),false);
+  await sample.locator('summary').click();
+  assert.equal(await sample.locator('.gn-ed-paper').isVisible(),true,'Preview can be opened');
+  await sample.locator('summary').click();
+  assert.equal(await sample.locator('.gn-ed-paper').isVisible(),false,'Preview can be closed');
   await custom.locator('[data-ep-icon-kind="language"]').getByRole('radio',{name:'English only'}).click();
   assert.equal(await custom.locator('[data-ep-icon-kind="columns"] [role=radio]:not([hidden])').count(),2,
     'Side-by-side bilingual layouts are hidden for English-only');
@@ -98,6 +107,8 @@ try {
   });
   assert.ok(geometry.overflow<=2,'No mobile horizontal overflow: '+JSON.stringify(geometry));
   assert.ok(geometry.minHeight>=42,'Touch controls are comfortably sized: '+JSON.stringify(geometry));
+  assert.equal(await page.locator('.gn-ed-top').evaluate(
+    el=>getComputedStyle(el).position),'sticky','Selection status stays available when scrolling custom options');
   await page.setViewportSize({width:320,height:700});
   const narrow=await page.evaluate(()=>Math.round(document.documentElement.scrollWidth-window.innerWidth));
   assert.ok(narrow<=2,'No overflow at 320px viewport: '+narrow);
