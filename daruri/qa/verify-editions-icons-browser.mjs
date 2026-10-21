@@ -78,11 +78,11 @@ try {
   assert.match(await currentPDF(),/reading-english-titles-off\.pdf$/);
   assert.equal(await page.locator('[data-ep-info-value]').textContent(),'English only');
   assert.match(await page.locator('[data-ep-info-detail]').textContent(),/43 A4 pages/);
-  await en.focus();
+  assert.equal(await en.isDisabled(),true,'English cannot be switched off while it is the sole language');
+  await ar.focus();
   await page.keyboard.press('Space');
-  assert.equal(await en.getAttribute('aria-pressed'),'true',
-    'At least one language stays selected under keyboard Space');
-  await ar.click();
+  assert.equal(await ar.getAttribute('aria-pressed'),'true',
+    'Keyboard Space re-enables Arabic alongside English');
   assert.equal(await marks.isVisible(),true,'Vowel switch comes back with Arabic');
   assert.equal(await marks.getAttribute('aria-pressed'),'true','Vowel preference survives English-only selection');
   await marks.click();
