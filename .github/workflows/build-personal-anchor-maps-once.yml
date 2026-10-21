@@ -1,0 +1,73 @@
+name: Rebuild five PDF word maps after canonical PDF revision
+on:
+  push:
+    branches: [feature/personal-pdf-search-precise-highlights-20261021]
+    paths: ['.github/workflows/build-personal-anchor-maps-once.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    name: Word map — ${{ matrix.edition }}
+    timeout-minutes: 20
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        edition: [scholarly, study, english, arabic, arabic-vowelled]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned build requirements
+        run: pip install -r daruri/build/requirements.txt
+      - name: Build and check selected edition
+        run: python daruri/build/build_personal_anchor_maps.py --edition "${{ matrix.edition }}" --publish
+      - uses: actions/upload-artifact@v4
+        with:
+          name: word-map-${{ matrix.edition }}
+          path: daruri/personal-anchor-maps/*.json
+          if-no-files-found: error
+          retention-days: 7
+  publish:
+    name: Publish verified word maps without overwriting concurrent changes
+    needs: [generate]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: word-map-*
+          path: daruri/personal-anchor-maps
+          merge-multiple: true
+      - name: Validate all five edition maps
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          base=Path('daruri')
+          for name in ('daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'):
+              m=json.loads((base/'personal-anchor-maps'/(name+'.json')).read_text())
+              p=hashlib.sha256((base/name).read_bytes()).hexdigest()
+              assert p==m['source_sha256'],name
+              assert m['coverage']>0.99,name
+              assert len(m['segments'])>400,name
+              print(name,'segments',len(m['segments']),'coverage',m['coverage'])
+          PY
+      - name: Commit maps and rebase safely against concurrent branch updates
+        run: |
+          git config user.name "gnamma-research-ci"
+          git config user.email "gnamma-research-ci@users.noreply.github.com"
+          git add daruri/personal-anchor-maps
+          git commit -m "Refresh SHA-verified exact word geometry for regenerated Daruri PDFs"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin feature/personal-pdf-search-precise-highlights-20261021
+            git rebase FETCH_HEAD
+            if git push origin HEAD:feature/personal-pdf-search-precise-highlights-20261021; then exit 0; fi
+            sleep 2
+          done
+          echo "Concurrent modifications persisted after retries; no force-push performed."
+          exit 1
