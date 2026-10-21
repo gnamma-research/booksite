@@ -51,7 +51,7 @@ const reserve=[];
 for(const desired of [90,90,90,90,90,90]){
   const top=api.allocateMarginTop(reserve,desired,842);
   assert(top!==null&&top>=57&&top<=792);
-  assert(reserve.filter(v=>Math.abs(v-top)<14).length===1);
+  assert(reserve.filter(v=>Math.abs(v-top)<20).length===1);
 }
 assert(api.sourceTop({section:'12'},null,{anchors:{'section-12':{page:3,y:170}}},2)===170);
 assert(api.sourceTop({section:'12'},null,{anchors:{'section-12':{page:4,y:170}}},2)===82);
