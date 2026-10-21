@@ -8,7 +8,7 @@ for(const name of ['matching','render','dateLine','sortItems','showContext','aft
  const pattern=new RegExp('function '+name+'\\(');
  assert(pattern.test(js),'missing Reading Desk function '+name);
 }
-for(const mark of ["dateSource:'legacy-unknown'","dateSource:'recorded'","modified:editor.updated","data-section=","data-rd-print-option","sourceKey(r.target)","gn-rd-visuals-toggle","gn-rd-indicators"]){
+for(const mark of ["dateSource:'legacy-unknown'","dateSource:'recorded'","editor.modified=editor.updated","data-section=","data-rd-print-option","sourceKey(r.target)","gn-rd-visuals-toggle","gn-rd-indicators"]){
  assert(js.includes(mark),'missing functionality '+mark);
 }
 assert(js.includes("contentFields=['kind','target','title','body','deleted','standalone']"),'backup merge should ignore metadata-only differences');
