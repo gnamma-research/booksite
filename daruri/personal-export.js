@@ -282,6 +282,7 @@
     if(window.PDFLib?.PDFDocument)return;
     // Versions are pinned. Loading libraries does not transmit note content.
     const origins=[
+      new URL('vendor/pdf-lib-1.17.1.min.js',URL_ROOT).href,
       'https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js',
       'https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js'
     ];
