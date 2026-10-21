@@ -178,7 +178,8 @@
     // substitutions in the invisible text layer. Visible Arabic is already
     // rasterized; text runs below use isolated codepoints for ToUnicode.
     const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:true})));
-    return {latin,arabic,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
+    const actualTextAnchor=await pdf.embedFont(window.PDFLib.StandardFonts.Helvetica);
+    return {latin,arabic,actualTextAnchor,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
   }
   function fontRuns(text,fonts,size){
     const runs=[];let last=null;
@@ -236,7 +237,7 @@
           const rtl=Array.from(arabic).reverse().join('');
           page.pushOperators(PDFOperator.of('BDC',[PDFName.of('Span'),
             pdf.context.obj({ActualText:PDFHexString.fromText(rtl)})]));
-          page.drawText('A',{x:12,y:y-13,size,font:fonts.latin,opacity:0});
+          page.drawText('A',{x:12,y:y-13,size,font:fonts.actualTextAnchor,opacity:0});
           page.pushOperators(PDFOperator.of('EMC'));
           n++;
         }
