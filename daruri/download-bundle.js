@@ -101,10 +101,10 @@
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
-      ['daruri/reading-desk.js', 'reading-desk.js?v=20261021-ai1'],
-      ['daruri/ask-ai.js', 'ask-ai.js?v=20261021-ai1'],
-      ['daruri/ask-ai.css', 'ask-ai.css?v=20261021-ai1'],
-      ['daruri/reading-desk.css', 'reading-desk.css?v=20261021-readingdesk6'],
+      ['daruri/reading-desk.js', 'reading-desk.js?v=20261021-icon-tools1'],
+      ['daruri/ask-ai.js', 'ask-ai.js?v=20261021-icon-tools1'],
+      ['daruri/ask-ai.css', 'ask-ai.css?v=20261021-icon-tools1'],
+      ['daruri/reading-desk.css', 'reading-desk.css?v=20261021-icon-tools1'],
       ['daruri/reading-desk-dictionary.js', 'reading-desk-dictionary.js?v=20261021-readingdesk6'],
       ['daruri/reader-structure.css', 'reader-structure.css?v=20261020-structure1'],
       ['daruri/subject-index.css', 'subject-index.css?v=20261020-indexprint1'],
@@ -175,7 +175,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261021-ai1'],
+      ['daruri/sw.js', 'sw.js?v=20261021-icon-tools1'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],

@@ -36,3 +36,11 @@
 .gn-rd-selection-bar button[data-ai-launch]{background:var(--surface-alt,#e7ede7);font-weight:650}
 @media(max-width:620px){.gn-ai-overlay{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}.gn-ai-dialog{max-height:100dvh;height:100dvh;border-radius:0;width:100%}.gn-ai-head{padding:10px 17px}.gn-ai-scroll{padding:12px 16px 25px}.gn-ai-tabs button{flex:1 1 auto;font-size:.9rem;padding:8px 10px}#gn-ai-frame{height:40dvh;min-height:230px}.gn-ai-tools button{min-height:44px}.gn-ai-overlay textarea{font-size:16px}.gn-ai-overlay input,.gn-ai-overlay select{font-size:16px}}
 @media print{.gn-ai-overlay{display:none!important}}
+
+/* Top reader and non-reader Ask AI: the bottom six destinations stay untouched. */
+#readingControls #globalAskAIAction[hidden],#readingControls #readerAskAIAction[hidden]{display:none!important}
+#readingControls .reader-action-slot .reader-action-caption{display:none!important}
+#readingControls #readerAskAIAction svg,#readingControls #globalAskAIAction svg{display:block;width:19px;height:19px;flex:none}
+#readingControls #readerAskAIAction,#readingControls #globalAskAIAction{color:var(--text-soft,var(--muted,#546660));cursor:pointer}
+#readingControls #readerAskAIAction:hover,#readingControls #globalAskAIAction:hover{color:var(--accent,#356258)}
+#readingControls #readerAskAIAction:focus-visible,#readingControls #globalAskAIAction:focus-visible{outline:2px solid var(--accent,#356258);outline-offset:2px}

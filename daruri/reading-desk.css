@@ -262,3 +262,19 @@ body.hide-notes:not(.focus-mode) ::highlight(gn-rd-note){background:rgba(61,135,
 .gn-rd-history summary{cursor:pointer;color:var(--ink,#2d4138);font-weight:600;min-height:30px}
 .gn-rd-history p{line-height:1.6;margin:7px 0;overflow-wrap:anywhere}
 .gn-rd-print-unavailable{color:#555;font-size:.8rem;font-style:italic;margin:5px 0 9px}
+
+/* Icon-only scholarly tools; full labels remain available to screen readers and tooltips. */
+.gn-rd-section-tools,.gn-rd-passage-tools{gap:3px!important;align-items:center!important}
+.gn-rd-section-tools{margin:2px 0 9px!important;padding:0!important}
+.gn-rd-passage-tools{justify-content:flex-end!important;margin:0 0 7px!important;padding:1px 0 2px!important;border-bottom:0!important}
+.gn-rd-section-tools button.gn-rd-tool-icon,.gn-rd-passage-tools button.gn-rd-tool-icon,.gn-rd-selection-bar button.gn-rd-tool-icon{position:relative;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;flex:0 0 36px;width:36px;min-width:36px;height:36px;min-height:36px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--muted,var(--soft,#596a64));padding:7px;opacity:.82;cursor:pointer}
+.gn-rd-tool-icon svg{display:block;width:19px;height:19px;flex:none}
+.gn-rd-tool-icon.is-on{color:var(--accent,#365f55)!important;background:var(--accent-soft,rgba(75,120,105,.08))!important;opacity:1!important}
+.gn-rd-tool-icon.is-on svg path{fill:currentColor;fill-opacity:.14}
+.gn-rd-tool-icon.has-content:after{content:'';position:absolute;width:4px;height:4px;border-radius:50%;background:var(--accent,#365f55);right:4px;top:4px}
+.gn-rd-tool-icon:hover,.gn-rd-tool-icon:focus-visible{color:var(--accent,#365f55)!important;opacity:1!important;background:var(--accent-soft,rgba(75,120,105,.08))!important;border-color:var(--line,#d7ded7)!important}
+.gn-rd-tool-icon:focus-visible{outline:2px solid var(--accent,#365f55)!important;outline-offset:1px}
+.gn-rd-selection-bar{gap:3px!important;padding:6px!important}
+.gn-rd-selection-bar button.gn-rd-tool-icon{flex-basis:44px;width:44px;min-width:44px;height:44px;min-height:44px;padding:11px;opacity:1}
+@media(pointer:coarse){.gn-rd-section-tools button.gn-rd-tool-icon,.gn-rd-passage-tools button.gn-rd-tool-icon{flex-basis:44px;width:44px;min-width:44px;height:44px;min-height:44px;padding:11px;opacity:.94}}
+@media(hover:hover) and (pointer:fine){.gn-rd-passage-tools button.gn-rd-tool-icon{opacity:.66}.gn-rd-passage-tools:hover button.gn-rd-tool-icon,.gn-rd-passage-tools:focus-within button.gn-rd-tool-icon{opacity:1}}
