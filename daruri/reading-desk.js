@@ -308,7 +308,7 @@ function create(ctx){
   parts.push('</header>');
   if(!available)parts.push('<p class="gn-rd-warning" role="alert">Browser storage is unavailable or full. Download a backup before leaving.</p>');
   parts.push('<div class="gn-rd-toolbar" role="group" aria-label="Reading Desk actions"><div class="gn-rd-toolbar-main">');
-  parts.push('<button type="button" data-rd="new-note">+ New note</button><button type="button" data-rd="print-list">Print / save PDF</button>');
+  parts.push('<button type="button" data-rd="new-note">+ New note</button><button type="button" data-rd="print-list">Print / save PDF</button><button type="button" data-rd="personal-pdf">Book PDF + personal notes</button>');
   parts.push('<details class="gn-rd-tools-menu"><summary>Tools</summary><div>');
   parts.push('<button type="button" data-rd="export">Download backup (JSON)</button><button type="button" data-rd="share-backup">Share backup…</button>');
   parts.push('<button type="button" data-rd="export-markdown">Export notes (Markdown)</button><button type="button" data-rd="import">Import backup</button>');
@@ -958,6 +958,7 @@ function create(ctx){
   if(action==='email'&&row){shareItem(row,true);return;}
   if(action==='print'&&row){preparePrint([row]);return;}
   if(action==='print-list'){preparePrint();return;}
+   if(action==='personal-pdf'){location.href=new URL('personal-export.html',location.href).href;return;}
   if(action==='print-now'){if(!printRoot)return;window.print();return;}
   if(action==='close-print'){closePrintPreview();return;}
   if(action==='export'){download(backup(),'Reading-Desk-'+new Date().toISOString().slice(0,10)+'.json');ctx.notify('Reading Desk backup downloaded.');return;}
