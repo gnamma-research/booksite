@@ -42,13 +42,13 @@ def validate_and_publish(source: Path, site: Path):
             link_count = sum(len(page.get_links()) for page in document)
             assert link_count > 100, (filename, link_count)
             if filename == 'daruri.pdf':
-                text_pages = [p for p in document if 'Verse wording' in p.get_text()]
-                assert text_pages, 'Verified Quran source excerpt missing'
-                example = '\n'.join(p.get_text() for p in text_pages)
-                assert example.count('Verse wording') >= 3, 'Expected three exact comparison excerpts'
+                text_pages = [p for p in document if 'Verified Qurʾān excerpt' in p.get_text()]
+                assert text_pages, 'Direct Quran quotation excerpt missing'
+                example = '\\n'.join(p.get_text() for p in text_pages)
                 assert 'https://quran.com/' not in example, 'Raw Quran URL visibly printed'
                 external = [link.get('uri', '') for p in text_pages for link in p.get_links()]
-                assert any(u.startswith('https://quran.com/') for u in external), 'Source link URI lost'
+                assert any(u == 'https://quran.com/4/43' for u in external), 'True direct quotation source URI missing'
+                assert all('Cf. Qurʾān, al-Raḥmān 55:4' not in p.get_text() for p in document), 'Weak §1 allusion remains in scholarly apparatus'
             old_pages = manifest['files'][filename]['pages']
             # Source/contents structural changes beyond source-note typography
             # require separate editorial approval; do not silently publish them.
