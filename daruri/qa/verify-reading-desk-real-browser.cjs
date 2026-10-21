@@ -152,9 +152,12 @@ async function exercise(engine, width, touch) {
     const position = async () => page.evaluate(() => {
       const page=document.querySelector('.gn-rd-page');
       const detail=document.querySelector('.gn-rd-mobile-detail-open #gn-rd-detail');
+      const heading=detail?.querySelector(':scope > header');
       const bar=document.querySelector('.gn-rd-hero');
       return {scrollY, height:innerHeight, pageTop:page?.getBoundingClientRect().top,
         detailTop:detail?.getBoundingClientRect().top,
+        detailHeadingTop:heading?.getBoundingClientRect().top,
+        detailHeadingBottom:heading?.getBoundingClientRect().bottom,
         heroTop:bar?.getBoundingClientRect().top};
     });
     const earlyPosition=await position();
@@ -163,9 +166,9 @@ async function exercise(engine, width, touch) {
     console.log('RETURN VIEWPORT '+id+' initial='+JSON.stringify(earlyPosition)+
       ' settled='+JSON.stringify(settledPosition));
     if(touch) {
-      check(settledPosition.detailTop!==undefined &&
-        settledPosition.detailTop<settledPosition.height*0.8,
-        id+': selected mobile detail displaced below viewport after returning from source: '+
+      check(settledPosition.detailHeadingBottom>=130 &&
+        settledPosition.detailHeadingTop<settledPosition.height*0.7,
+        id+': selected mobile item heading not visible after returning from source: '+
           JSON.stringify(settledPosition));
       check(settledPosition.pageTop<settledPosition.height*0.6,
         id+': entire Reading Desk displaced below the phone viewport: '+
