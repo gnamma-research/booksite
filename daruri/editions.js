@@ -7,6 +7,11 @@
   const TIERS=['reading','study','reference'];
   const TIER_LABELS={reading:'Reading',study:'Study',reference:'Reference'};
   let activeTier='reading';
+  // Independent Reading-edition language switches; preserve vowels when Arabic is hidden.
+  const readyLanguage={en:true,ar:true,vowels:true};
+  const readyKey=()=>readyLanguage.en?(readyLanguage.ar?(readyLanguage.vowels?'bilingual':'bilingual-unvowelled'):'english'):
+    (readyLanguage.vowels?'arabic-vowelled':'arabic');
+  const readyLabel=()=>readyLanguage.en?(readyLanguage.ar?'Bilingual':'English only'):'Arabic only';
   const PARTS=[
     {id:'intro',label:'Introduction · §§1–9',ar:'المقدمة',from:1,to:9},
     {id:'rulings',label:'Part I · Rulings · §§10–61',ar:'الأحكام',from:10,to:61},
@@ -125,65 +130,126 @@
     '<div class="gn-ed-notice" data-ep-message="'+tier+'" role="status" hidden></div>'+
   '</div>';
 
-  // Download choices appear only after the PDFs and verified manifest exist.
-  // Browser-local print/Save-as-PDF remains available independently.
+  // Published PDF selection: EN and AR are independent. The vowel-mark button
+  // is available whenever Arabic is active, including bilingual readings.
+  function readyLanguageControls() {
+    return '<div class="gn-ed-ready-language" role="group" aria-label="Reading PDF languages">'+
+      '<span class="gn-ed-field-marker" aria-hidden="true">'+svg('book')+'</span>'+
+      '<div class="gn-ed-ready-switches">'+
+      '<button type="button" class="gn-ed-lang-toggle" data-ep-ready-toggle="en" data-ep-info-kind="Language" data-ep-info-label="English" aria-label="Include English text" aria-pressed="true">EN</button>'+
+      '<button type="button" class="gn-ed-lang-toggle" data-ep-ready-toggle="ar" data-ep-info-kind="Language" data-ep-info-label="Arabic" aria-label="Include Arabic text" aria-pressed="true">AR</button>'+
+      '<button type="button" class="gn-ed-lang-toggle gn-ed-vowel-switch" data-ep-ready-toggle="vowels" data-ep-info-kind="Arabic" data-ep-info-label="Vowel marks" aria-label="Arabic vowel marks" aria-pressed="true" lang="ar" dir="rtl">عَ</button>'+
+      '</div><select class="gn-ed-native-select" data-ep-ready-lang data-ep-iconified="manual" aria-hidden="true" tabindex="-1">'+
+      [['bilingual','Bilingual · vowelled'],['bilingual-unvowelled','Bilingual · unvowelled'],
+        ['english','English only'],['arabic','Arabic only · unvowelled'],['arabic-vowelled','Arabic only · vowelled']]
+        .map(([key,label])=>'<option value="'+key+'">'+esc(label)+'</option>').join('')+
+      '</select></div>';
+  }
+  function syncReadyLanguage(panel) {
+    if(!panel)return;
+    const select=panel.querySelector('[data-ep-ready-lang]');
+    if(select)select.value=readyKey();
+    for(const button of panel.querySelectorAll('[data-ep-ready-toggle]')) {
+      const key=button.dataset.epReadyToggle;
+      button.setAttribute('aria-pressed',String(Boolean(readyLanguage[key])));
+      button.hidden=key==='vowels'&&!readyLanguage.ar;
+      button.disabled=(key==='en'&&readyLanguage.en&&!readyLanguage.ar)||
+        (key==='ar'&&readyLanguage.ar&&!readyLanguage.en);
+    }
+  }
+  function syncCustomReading() {
+    const setting=memory.reading;
+    setting.language=readyLanguage.en?(readyLanguage.ar?'bilingual':'english'):'arabic';
+    setting.vowels=readyLanguage.vowels;
+    const config=host?.querySelector('[data-ep-tier="reading"]');
+    const language=config?.querySelector('[data-ep-control="language"]');
+    const vowels=config?.querySelector('[data-ep-control="vowels"]');
+    if(language)language.value=setting.language;
+    if(vowels)vowels.checked=setting.vowels;
+    update('reading');
+    window.GnammaEditions?.syncIcons?.();
+  }
+  function changeReadyLanguage(key,panel) {
+    if(!['en','ar','vowels'].includes(key))return;
+    if((key==='en'||key==='ar')&&readyLanguage[key]&&!readyLanguage[key==='en'?'ar':'en'])return;
+    readyLanguage[key]=!readyLanguage[key];
+    syncReadyLanguage(panel);
+    syncCustomReading();
+    const select=panel?.querySelector('[data-ep-ready-lang]');
+    if(select)select.dispatchEvent(new Event('change',{bubbles:true}));
+    host.dataset.gnEpInteracted='1';
+    showInfo(key==='vowels'?'Arabic vowel marks':'Language',
+      key==='vowels'?(readyLanguage.vowels?'Vowelled':'Unvowelled'):readyLabel(),
+      panel?.dataset.epDescription||'');
+  }
   function showReadyPDFs() {
     if (!host || typeof fetch !== 'function') return;
-    fetch('editions/manifest.json?v=20261021-a4', {cache:'no-store'})
+    fetch('editions/manifest.json?v=20261021-bilingual-vowels1', {cache:'no-store'})
       .then(response => response.ok ? response.json() : null)
       .then(data => {
         if (!host || !data || data.status !== 'verified' || !Array.isArray(data.files)) return;
-        const approved = data.files.filter(file => file &&
+        const approved=data.files.filter(file=>file &&
           ['reading','study'].includes(file.tier) &&
-          ['bilingual','english','arabic','arabic-vowelled'].includes(file.language) &&
-          typeof file.editorial_titles === 'boolean' &&
-          Number.isInteger(file.pages) && file.pages > 0 &&
-          typeof file.file === 'string' &&
-          /^(reading|study)\/daruri-(reading|study)-(bilingual|english|arabic|arabic-vowelled)-titles-(on|off)\.pdf$/.test(file.file));
-        for (const tier of ['reading','study']) {
-          const panel = host.querySelector('[data-ep-published="' + tier + '"]');
-          if (!panel) continue;
-          const records = approved.filter(x => x.tier === tier);
-          if (records.length !== (tier === 'reading' ? 8 : 2)) continue;
-          const language = tier === 'reading' ?
-            '<label class="gn-ed-field"><span class="gn-ed-field-name">Language</span><select data-ep-ready-lang>' +
-              [['bilingual','Arabic & English'],['english','English only'],
-               ['arabic','Arabic without vowel marks'],['arabic-vowelled','Arabic fully vowelled']]
-                .map(([key,title]) => '<option value="' + key + '">' + esc(title) + '</option>').join('') +
-            '</select></label>' : '';
-          panel.innerHTML = '<div class="gn-ed-fields">' + language +
-              '<label class="gn-ed-field"><span class="gn-ed-field-name">Editorial section titles</span><select data-ep-ready-titles>' +
-                '<option value="off">Off · original headings</option>' +
-                '<option value="on">On · include descriptive headings</option></select></label>' +
-            '</div><p class="gn-ed-pdf-detail" data-ep-ready-detail role="status"></p>' +
-            '<div class="gn-ed-pdf-actions"><a class="gn-ed-primary" data-ep-ready-download download aria-label="Download selected '+tier+' PDF">'+svg('download')+'</a>' +
-            '<a class="gn-ed-secondary" data-ep-ready-open target="_blank" rel="noopener noreferrer" aria-label="Read selected '+tier+' PDF">'+svg('open')+'</a></div>';
-          panel.hidden = false;
-          // Hide the older Study link only after the verified release catalog is loaded.
-          if (tier === 'study') { const legacy = host.querySelector('[data-ep-legacy-study]'); if (legacy) legacy.hidden = true; }
-          const update = () => {
-            const lang = tier === 'study' ? 'bilingual' :
-              panel.querySelector('[data-ep-ready-lang]').value;
-            const editorial = panel.querySelector('[data-ep-ready-titles]').value === 'on';
-            const file = records.find(x => x.language === lang && x.editorial_titles === editorial);
-            if (!file) return;
-            const href = 'editions/' + file.file;
-            panel.querySelector('[data-ep-ready-open]').href = href;
-            panel.querySelector('[data-ep-ready-download]').href = href;
-            const description=file.pages+' A4 pages · '+file.bookmarks+' PDF bookmarks · '+
-              (editorial?'Editorial titles':'Original headings')+
+          ['bilingual','bilingual-unvowelled','english','arabic','arabic-vowelled'].includes(file.language) &&
+          typeof file.editorial_titles==='boolean' &&
+          Number.isInteger(file.pages)&&file.pages>0 &&
+          typeof file.file==='string' &&
+          /^(reading|study)\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english|arabic|arabic-vowelled)-titles-(on|off)\.pdf$/.test(file.file));
+        for(const tier of ['reading','study']){
+          const panel=host.querySelector('[data-ep-published="'+tier+'"]');
+          if(!panel)continue;
+          const records=approved.filter(x=>x.tier===tier);
+          // A partial catalog must not make an unsupported combination download
+          // the previous PDF. Preserve verified choices until the new PDFs exist.
+          if(records.length<(tier==='reading'?8:2))continue;
+          panel.innerHTML='<div class="gn-ed-fields">'+
+            (tier==='reading'?readyLanguageControls():'')+
+            '<label class="gn-ed-field"><span class="gn-ed-field-name">Editorial section titles</span>'+
+              '<select data-ep-ready-titles><option value="off">Off · original headings</option>'+
+                '<option value="on">On · include descriptive headings</option></select></label>'+
+            '</div><p class="gn-ed-pdf-detail" data-ep-ready-detail role="status"></p>'+
+            '<div class="gn-ed-pdf-actions">'+
+              '<a class="gn-ed-primary" data-ep-ready-download download aria-label="Download selected '+tier+' PDF">'+svg('download')+'</a>'+
+              '<a class="gn-ed-secondary" data-ep-ready-open target="_blank" rel="noopener noreferrer" aria-label="Read selected '+tier+' PDF">'+svg('open')+'</a></div>';
+          panel.hidden=false;
+          if(tier==='study'){
+            const legacy=host.querySelector('[data-ep-legacy-study]');
+            if(legacy)legacy.hidden=true;
+          }else{syncReadyLanguage(panel);syncCustomReading();}
+          const refresh=()=>{
+            const lang=tier==='study'?'bilingual':readyKey();
+            const editorial=panel.querySelector('[data-ep-ready-titles]').value==='on';
+            const file=records.find(x=>x.language===lang&&x.editorial_titles===editorial);
+            const reading=panel.querySelector('[data-ep-ready-open]');
+            const download=panel.querySelector('[data-ep-ready-download]');
+            if(!file){
+              for(const a of [reading,download]){a.removeAttribute('href');a.setAttribute('aria-disabled','true');}
+              panel.dataset.epDescription='PDF not published · use custom print';
+              panel.querySelector('[data-ep-ready-detail]').textContent=panel.dataset.epDescription;
+              if(tier===activeTier)showInfo('PDF edition',readyLabel(),panel.dataset.epDescription);
+              return;
+            }
+            const href='editions/'+file.file;
+            for(const a of [reading,download]){a.href=href;a.removeAttribute('aria-disabled');}
+            const desc=file.pages+' A4 pages · '+(editorial?'Editorial titles':'Original headings')+
+              (tier==='reading'&&lang!=='english'?' · '+(readyLanguage.vowels?'vowelled':'unvowelled')+' Arabic':'')+
               (tier==='study'?' · study notes':'');
-            panel.querySelector('[data-ep-ready-detail]').textContent=description;
-            panel.dataset.epDescription=description;
-            if(tier===activeTier&&!host.dataset.gnEpInteracted)
-              setTier(tier,false);
+            panel.dataset.epDescription=desc;
+            panel.querySelector('[data-ep-ready-detail]').textContent=desc;
+            if(tier===activeTier&&!host.dataset.gnEpInteracted)setTier(tier,false);
           };
-          panel.addEventListener('change', event => {
-            if (event.target.matches('[data-ep-ready-lang], [data-ep-ready-titles]')) update();
+          panel.addEventListener('change',event=>{
+            if(event.target.matches('[data-ep-ready-lang], [data-ep-ready-titles]'))refresh();
           });
-          update();
+          panel.addEventListener('click',event=>{
+            const button=event.target.closest('[data-ep-ready-toggle]');
+            if(button){event.preventDefault();changeReadyLanguage(button.dataset.epReadyToggle,panel);}
+          });
+          refresh();
         }
-      }).catch(() => {});
+      }).catch(error=>{
+        showInfo('PDF editions','Catalog unavailable','Custom printing remains available');
+      });
   }
 
   function render(main,payload) {
@@ -432,6 +498,15 @@
     if(!container)return;
     const tier=container.dataset.epTier,key=input.dataset.epControl;
     memory[tier][key]=input.type==='checkbox'?input.checked:input.type==='number'?Number(input.value):input.value;
+    if(tier==='reading' && (key==='language'||key==='vowels')) {
+      if(key==='language'){
+        readyLanguage.en=memory.reading.language!=='arabic';
+        readyLanguage.ar=memory.reading.language!=='english';
+      }else readyLanguage.vowels=memory.reading.vowels;
+      const ready=host.querySelector('[data-ep-published="reading"]');
+      syncReadyLanguage(ready);
+      ready?.querySelector('[data-ep-ready-lang]')?.dispatchEvent(new Event('change',{bubbles:true}));
+    }
     update(tier);
     host.dataset.gnEpInteracted='1';
     const names={editorial:'Editorial titles',vowels:'Vowel marks',columns:'Page layout',
