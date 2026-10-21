@@ -80,8 +80,13 @@ function create(ctx){
   const kind=clamp(r.kind||'unavailable',30),rawTarget=r.target||((r.kind&&r.section)?r:null);
   const parsed=validateTarget(rawTarget),target=archiveTarget(rawTarget);
   if(target&&parsed){for(const key of ['kind','section','segment','lang','offset'])if(key in parsed)target[key]=parsed[key];}
-  return {...r,id:clamp(r.id,100)||uuid(),kind,target,title:String(r.title??''),
-   body:String(r.body??''),created:Math.max(0,Number(r.created)||0),
+  const title=typeof r.title==='string'?r.title:r.title==null?'':JSON.stringify(r.title);
+  const body=typeof r.body==='string'?r.body:r.body==null?'':JSON.stringify(r.body);
+  return {...r,id:clamp(r.id,100)||uuid(),kind,target,title,body,
+   ...(r.body!=null&&typeof r.body!=='string'?{archivedBodyValue:r.body}:{}),
+   ...(r.title!=null&&typeof r.title!=='string'?{archivedTitleValue:r.title}:{}),
+   ...(rawTarget&&target&&JSON.stringify(rawTarget)!==JSON.stringify(target)?{sourceTargetOriginal:archiveTarget(rawTarget)}:{}),
+   created:Math.max(0,Number(r.created)||0),
    updated:Math.max(0,Number(r.updated)||0),modified:Math.max(0,Number(r.modified)||0),
    dateSource:['recorded','legacy-unknown','unverified'].includes(r.dateSource)?r.dateSource:'unverified',
    deleted:Math.max(0,Number(r.deleted)||0),standalone:kind==='note'&&!!r.standalone};
@@ -309,8 +314,8 @@ function create(ctx){
    (!q||norm([r.title,titleOf(r.target),r.body,r.target?.quote,r.target?.term,r.target?.app,subOf(r.target)].join(' ')).toLocaleLowerCase().includes(q)));
   return bin?rows.sort((a,b)=>b.deleted-a.deleted):sortItems(rows,ui.sort);
  }
- function htmlCard(r){
-  const own=r.kind==='note',related=own?[]:active().filter(x=>x.kind==='note'&&x.target&&sourceKey(x.target)===sourceKey(r.target));
+ function htmlCard(r,linkedCounts){
+  const own=r.kind==='note',relatedCount=own||!r.target?0:linkedCounts.get(sourceKey(r.target))||0;
   const canOpen=!!r.target&&isResolved(r);
   const parts=['<article class="gn-rd-card'+(r.id===ui.selected?' gn-rd-selected':'')+'">'];
   parts.push('<button type="button" class="gn-rd-card-open" data-rd="select" data-id="'+esc(r.id)+'" aria-label="View '+esc(own?'personal note':'bookmark')+': '+esc(short(r.title||titleOf(r.target),95))+'">');
@@ -318,7 +323,7 @@ function create(ctx){
   if(!isResolved(r))parts.push('<span class="gn-rd-unresolved-status" role="status">Source unavailable · saved content preserved</span>');
   parts.push('<strong>'+esc(r.title||titleOf(r.target))+'</strong>');
   if(own)parts.push('<span>'+esc(short(r.body,175))+'</span>');
-  else if(related.length)parts.push('<span>'+related.length+' linked personal '+(related.length===1?'note':'notes')+'</span>');
+  else if(relatedCount)parts.push('<span>'+relatedCount+' linked personal '+(relatedCount===1?'note':'notes')+'</span>');
   parts.push('</button><div class="gn-rd-card-ops">');
   if(!r.deleted&&canOpen)parts.push('<button type="button" data-rd="open" data-id="'+esc(r.id)+'">Open source</button>');
   if(r.deleted)parts.push('<button type="button" data-rd="restore" data-id="'+esc(r.id)+'">Restore</button>');
@@ -332,6 +337,8 @@ function create(ctx){
  function render(){
   const main=$('#mainContent');if(!main)return;
   const visible=matching(),selected=records.find(r=>r.id===ui.selected),bin=ui.category==='bin';
+  const linkedCounts=new Map();
+  for(const r of active())if(r.kind==='note'&&r.target){const k=sourceKey(r.target);linkedCounts.set(k,(linkedCounts.get(k)||0)+1);}
   const parts=['<section class="gn-rd-page'+(ui.mobileDetail?' gn-rd-mobile-detail-open':'')+'">'];
   parts.push('<header class="gn-rd-hero"><p class="gn-rd-kicker">YOUR PRIVATE READING COLLECTION</p><h1>Reading Desk</h1>');
   parts.push('<p>Saved passages, personal observations and source-linked references. Your work stays in this browser unless you export it.</p>');
@@ -356,12 +363,14 @@ function create(ctx){
   parts.push('<label>Sort by <select id="gn-rd-sort">'+Object.entries(SORTS).map(([value,name])=>'<option value="'+value+'"'+(ui.sort===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label></div>');
   parts.push('<p class="gn-rd-count" aria-live="polite">'+visible.length+' '+(bin?'items in Bin':'saved items')+'</p>');
   parts.push('<div class="gn-rd-layout"><div class="gn-rd-cards" id="gn-rd-cards">');
-  let lastGroup='';
+  let lastGroup='',lastPassage='';
   for(const r of visible){
    const group=(!bin&&ui.sort==='source'&&r.target?.section)?String(r.target.section):'';
    if(group&&group!==lastGroup)parts.push('<h3 class="gn-rd-source-heading">'+esc(ctx.sectionRef(group))+'</h3>');
-   lastGroup=group;
-   parts.push(htmlCard(r));
+   const key=group&&r.target?.segment!=null?group+':'+r.target.segment:'';
+   if(key&&key!==lastPassage)parts.push('<h4 class="gn-rd-paragraph-heading">Paragraph '+(Number(r.target.segment)+1)+'</h4>');
+   lastGroup=group;lastPassage=key;
+   parts.push(htmlCard(r,linkedCounts));
   }
   if(!visible.length)parts.push('<p class="gn-rd-empty">'+(bin?'Bin is empty.':ui.query?'No items match the search.':'No saved items here yet. Select words in the reader or bookmark a source entry to begin.')+'</p>');
   parts.push('</div><div class="gn-rd-detail" id="gn-rd-detail">');
