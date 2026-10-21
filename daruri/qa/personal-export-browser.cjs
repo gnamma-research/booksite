@@ -134,22 +134,23 @@ const file='daruri.pdf';
   const unattachedPdf=await PDFDocument.load(fs.readFileSync(unattachedFile));
   assert(unattachedPdf.getPageCount()>manifest.files['daruri-arabic.pdf'].pages,'unattached notes must remain in the appendix');
   fs.unlinkSync(unattachedFile);
-  // The existing A4 builder must also keep personal notes opt-in and printable.
+  // Public Editions actions now download verified static PDFs; the older
+  // device-local A4 assembler remains available internally for compatibility.
+  // Verify its P-numbered notes without exposing a second long print UI.
   await page.goto(host+'/daruri/index.html#editions',{waitUntil:'networkidle'});
-  await page.locator('.gn-editions').waitFor({timeout:30000});
-  // Editions now uses tabs and starts with advanced Custom Print collapsed.
-  // Explicitly open Reading's optional configurator before exercising its A4
-  // builder; preserve the original user-facing collapsed default.
-  const readingDisclosure=page.locator('#gn-ed-reading > .gn-ed-reading-custom');
-  if(await readingDisclosure.count() && !(await readingDisclosure.getAttribute('open'))){
-    await readingDisclosure.locator(':scope > summary').click();
-  }
-  const reading=page.locator('[data-ep-tier=reading]');
+  await page.locator('.gn-es').waitFor({timeout:30000});
+  assert.equal(await page.locator('.gn-es-edition-tabs [role=tab]').count(),3);
+  assert.equal(await page.locator('.gn-es-legacy').isVisible(),false);
+  const reading=page.locator('.gn-es-legacy [data-ep-tier=reading]');
   assert.equal(await reading.locator('select[data-ep-control=personal]').inputValue(),'none');
-  await reading.locator('[data-ep-action=prepare]').click();
+  await page.evaluate(()=>window.GnammaEditions.buildPrintable('reading'));
   assert(!await page.locator('#gnEpPacket').innerText().then(s=>s.includes('My Reading Desk · personal observations')));
-  await reading.locator('select[data-ep-control=personal]').selectOption('notes');
-  await reading.locator('[data-ep-action=prepare]').click();
+  await page.evaluate(()=>{
+    const input=document.querySelector('.gn-es-legacy [data-ep-tier=reading] select[data-ep-control=personal]');
+    input.value='notes';
+    input.dispatchEvent(new Event('change',{bubbles:true}));
+    window.GnammaEditions.buildPrintable('reading');
+  });
   const printText=await page.locator('#gnEpPacket').innerText();
   assert(printText.includes('My Reading Desk · personal observations'),'personal appendix should appear only after opting in');
   assert(printText.includes('A personal reflection'),'personal note title should appear in print packet');
