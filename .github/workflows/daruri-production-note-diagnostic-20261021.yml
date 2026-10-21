@@ -1,0 +1,114 @@
+name: Verify live Daruri Quran note deployment
+
+on:
+  push:
+    branches: [qa/live-daruri-quran-note-deployment-20261021]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check actual GitHub Pages response and source files
+        run: |
+          python - <<'PY'
+          from urllib.request import Request,urlopen
+          from urllib.error import URLError
+          import hashlib,time,re
+          base='https://gnamma-research.github.io/booksite/daruri/'
+          for name in ('?deployed=qinline4','source-note-ui.js?v=20261021-qinline4','source-reference-data.js?v=20261021-qinline4'):
+              url=base+name
+              for attempt in range(3):
+                  try:
+                      with urlopen(Request(url,headers={'Cache-Control':'no-cache','User-Agent':'Gnamma-production-QA/1'}),timeout=25) as r:
+                          data=r.read()
+                          print('PRODUCTION_FETCH',url,'status',r.status,'final',r.url,'bytes',len(data),'etag',r.headers.get('etag'),'last-modified',r.headers.get('last-modified'),'cache-control',r.headers.get('cache-control'),'sha256',hashlib.sha256(data).hexdigest(),flush=True)
+                          text=data.decode('utf-8')
+                          if name.startswith('?'):
+                              assert 'GN_SECTION1_QURAN_PAIRS' in text, 'DEPLOYMENT_STALE: live HTML lacks inline source note rendering'
+                              assert '﴿' in text and 'gnSection1QuranFigure' in text
+                              print('PASS live HTML contains native Quran verse/source rendering')
+                          else:
+                              assert 'source-note-ui.js' not in name or '20261021-qinline4' in text
+                          break
+                  except Exception as e:
+                      if attempt==2: raise
+                      print('RETRY',name,repr(e),flush=True); time.sleep(4)
+          PY
+      - name: Install WebKit and Chromium
+        run: |
+          python -m pip install 'playwright==1.57.0'
+          python -m playwright install --with-deps chromium webkit
+      - name: Verify production note dialogs on real deployed HTML and block optional JS
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          from playwright.sync_api import sync_playwright
+          base='https://gnamma-research.github.io/booksite/daruri/'
+          out=pathlib.Path('daruri/qa/live-quran-note-results')
+          out.mkdir(parents=True,exist_ok=True)
+          log=[]
+          with sync_playwright() as pw:
+              for engine in ('chromium','webkit'):
+                  browser=getattr(pw,engine).launch(headless=True)
+                  for width in (390,320):
+                      for offline_script in (False,True):
+                          ctx=browser.new_context(viewport={'width':width,'height':844},is_mobile=True,has_touch=True,service_workers='block',ignore_https_errors=False)
+                          page=ctx.new_page()
+                          errors=[]
+                          page.on('pageerror',lambda e:errors.append(str(e)))
+                          if offline_script:page.route('**/source-note-ui.js*',lambda r:r.abort())
+                          url=base+'?gnqurancheck=20261021-810da4-'+engine+'-'+str(width)+'-'+str(offline_script)+'#section=1'
+                          response=page.goto(url,wait_until='domcontentloaded',timeout=60000)
+                          print('BROWSER_RESPONSE',engine,width,offline_script,'url',page.url,'status',response.status if response else 'null',flush=True)
+                          try:
+                              page.wait_for_selector('#reader [data-gn-notes-open]',timeout=30000)
+                              page.locator('#reader [data-gn-notes-open]').first.click(timeout=15000)
+                              for note_id,author,verse in (
+                                  ('QUR-R001-Q049','معلّم البيان','عَلَّمَهُ ٱلْبَيَانَ'),
+                                  ('QUR-R001-Q050','الحجج البالغة','فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ'),
+                              ):
+                                  card=page.locator('.gn-note-entry[data-note-id="'+note_id+'"]')
+                                  assert card.count()==1,('missing card',note_id)
+                                  figure=card.locator('figure.gn-verse-source-excerpt')
+                                  assert figure.count()==1,('missing canonical verse figure',note_id)
+                                  qwords=figure.locator('.gn-quran-words').inner_text()
+                                  assert qwords==verse,(note_id,qwords)
+                                  assert figure.locator('.gn-quran-bracket').all_inner_texts()==['﴿','﴾'],(note_id,'wrong Quran brackets')
+                                  author_span=card.locator('span.gn-ibn-rushd-words')
+                                  assert author_span.count()==1,(note_id,'missing author')
+                                  actual=author_span.inner_text()
+                                  assert actual=='“'+author+'”',(note_id,'wrong author quote',actual)
+                                  prose=card.locator(':scope > p').first.inner_text()
+                                  assert verse not in prose,(note_id,'verse appears outside Quranic brackets')
+                                  assert 'possible verbal allusion' in card.inner_text(),note_id
+                              assert not page.evaluate('document.documentElement.scrollWidth>innerWidth'), 'horizontal overflow'
+                              path=out/f'{engine}-{width}-blocked{offline_script}.png'
+                              page.screenshot(path=str(path),full_page=True)
+                              print('PRODUCTION_PASS',engine,width,'enhancerBlocked',offline_script,'pageerrors',errors[:3],flush=True)
+                              log.append({'engine':engine,'width':width,'blocked':offline_script,'status':'PASS','errors':errors[:3]})
+                          except Exception as e:
+                              print('PRODUCTION_FAIL',engine,width,'enhancerBlocked',offline_script,'error',repr(e),'pageerrors',errors[:3],flush=True)
+                              page.screenshot(path=str(out/f'{engine}-{width}-FAILED.png'),full_page=True)
+                              log.append({'engine':engine,'width':width,'blocked':offline_script,'status':'FAIL','error':str(e),'errors':errors[:3]})
+                          finally:ctx.close()
+                  browser.close()
+          (out/'summary.json').write_text(json.dumps(log,ensure_ascii=False,indent=2))
+          assert all(x['status']=='PASS' for x in log), 'Production note display failed in at least one browser; see diagnostics.'
+          print('PRODUCTION_VALIDATION_COMPLETE',len(log),'passed')
+          PY
+      - name: Preserve screenshots and production report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-daruri-quran-note-evidence
+          path: daruri/qa/live-quran-note-results/
+          if-no-files-found: warn
