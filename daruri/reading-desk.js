@@ -415,10 +415,10 @@ function create(ctx){
    parts.push('<footer class="gn-rd-date-details"><small>'+esc(dateLine(selected,true))+'</small></footer>');
    if(Array.isArray(selected.sourceHistory)&&selected.sourceHistory.length){
     parts.push('<details class="gn-rd-history"><summary>Previous source references ('+selected.sourceHistory.length+')</summary>');
-    parts.push(selected.sourceHistory.map(h=>'<p>'+esc(h.target?.section?'Originally '+ctx.sectionRef(h.target.section):'Earlier source')+
-     (h.target?.segment!=null?' · paragraph '+(Number(h.target.segment)+1):'')+
-     (h.target?.quote?' · '+esc(short(h.target.quote,170)):'')+
-     (h.relinkedAt?' · reconnected '+esc(dateDisplay(h.relinkedAt,true)):'')+'</p>').join(''));
+    parts.push(selected.sourceHistory.map(h=>'<p>'+esc(h?.target?.section?'Originally '+ctx.sectionRef(h.target.section):'Earlier source')+
+     (h?.target?.segment!=null?' · paragraph '+(Number(h.target.segment)+1):'')+
+     (h?.target?.quote?' · '+esc(short(h.target.quote,170)):'')+
+     (h?.relinkedAt?' · reconnected '+esc(dateDisplay(h.relinkedAt,true)):'')+'</p>').join(''));
     parts.push('</details>');
    }
    const relatives=selected.target?active().filter(r=>r.id!==selected.id&&r.target&&sourceKey(r.target)===sourceKey(selected.target)):[];
