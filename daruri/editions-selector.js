@@ -303,19 +303,21 @@
         'daruri.pdf?v='+encodeURIComponent((record.sha256||'published').slice(0,12)):
         'editions/'+record.file+'?v='+encodeURIComponent((record.sha256||'published').slice(0,12));
     }else action.removeAttribute('href');
-    root.querySelector('[data-es-private-hint]').hidden=!isPersonal;
+    const mapped=hasCurrent&&(tier==='reference'||Boolean(result.record.map_file));
+    const privateHint=root.querySelector('[data-es-private-hint]');
+    privateHint.hidden=!isPersonal;
+    privateHint.textContent=!mapped?
+      'This exact PDF has no verified personal-note map. Choose a published apparatus edition for a mapped copy; no different PDF will be substituted.':
+      'The public PDF contains no private data. Use Make personal PDF to append linked P-pages locally.';
     const local=root.querySelector('.gn-es-personal-link');
-    // Preselect this exact verified apparatus PDF in the browser-local
-    // personal exporter. Unavailable variants cannot create invalid exports.
-    if(hasCurrent && result.record.map_file){
-      const path='editions/'+result.record.file;
-      local.href='personal-export.html?pdf='+encodeURIComponent(path)+
+    // Never silently select the canonical scholarly PDF when a different
+    // Reading/Study PDF has no verified personal export map.
+    if(mapped){
+      const target=tier==='reference'?'daruri.pdf':'editions/'+result.record.file;
+      local.href='personal-export.html?pdf='+encodeURIComponent(target)+
         '&personal='+(s.personalNotes?'1':'0')+
         '&bookmarks='+(s.personalBookmarks?'1':'0');
-    }else{
-      local.href='personal-export.html'+(isPersonal?
-        '?personal='+(s.personalNotes?'1':'0')+'&bookmarks='+(s.personalBookmarks?'1':'0'):'');
-    }
+    }else local.removeAttribute('href');
     root.querySelector('[data-es-study-guide]').hidden=tier!=='study';
     root.querySelector('[data-es-personal]').setAttribute('aria-pressed',String(s.personalNotes));
     for(const node of root.querySelectorAll('[data-es-personal]')){
@@ -323,7 +325,7 @@
       node.setAttribute('aria-pressed',String(s[key]));
       node.querySelector('[data-es-flag]').textContent=s[key]?'On':'Off';
     }
-    local.hidden=!isPersonal||!hasCurrent;
+    local.hidden=!isPersonal||!mapped;
     root.querySelector('[data-es-note-policy]').textContent=
       tier==='reading'?'Reading: no publisher notes.':
       tier==='study'?'Study: selected publisher notes with a basic index.':
