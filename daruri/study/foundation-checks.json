@@ -1,0 +1,1059 @@
+{
+  "version": "2026-10-21-six-stage1",
+  "method": "Editorial formative checks; 10 checks for opening orientation and 2 for every subsequent question. Source passages control answers; stage 1 is recognition and stage 2 is discrimination, followed by guided explanation, reconstruction, evaluation and application at later levels.",
+  "topics": [
+    {
+      "id": "purpose",
+      "questions": [
+        {
+          "question": "Which kind of knowledge has belief or assent as its end?",
+          "options": [
+            "Knowledge of what action to perform",
+            "Knowledge of rules for deciding proofs",
+            "Knowledge concerning propositions to be believed",
+            "Knowledge of the qualifications of jurists"
+          ],
+          "answer": 2,
+          "explanation": "In §2 Ibn Rushd first identifies knowledge whose end is belief, before describing practical and instrumental knowledge.",
+          "sections": [
+            2
+          ]
+        },
+        {
+          "question": "What kind of knowledge concerns a ruling on a particular prayer?",
+          "options": [
+            "Particular practical knowledge",
+            "Rules of correct inquiry",
+            "Universal theoretical knowledge",
+            "The qualifications of a mujtahid"
+          ],
+          "answer": 0,
+          "explanation": "Prayer rulings are Ibn Rushd’s example of particular knowledge directed towards action.",
+          "sections": [
+            2
+          ]
+        },
+        {
+          "question": "Which activity is closest to Ibn Rushd’s third kind of knowledge?",
+          "options": [
+            "Learning the name of a prayer",
+            "Learning a general class of rulings",
+            "Memorising a specific fatwā",
+            "Determining when an indication genuinely proves something"
+          ],
+          "answer": 3,
+          "explanation": "The third kind supplies rules and conditions by which the mind judges indications, not merely a practical conclusion.",
+          "sections": [
+            2
+          ]
+        },
+        {
+          "question": "In the four-part arrangement, where are the proofs used to derive rulings examined?",
+          "options": [
+            "Part I: rulings",
+            "Part III: methods of derivation",
+            "Part II: sources",
+            "Part IV: qualifications of the jurist"
+          ],
+          "answer": 1,
+          "explanation": "§5 assigns evidential methods and their use to the third part; the fourth is about the competent jurist.",
+          "sections": [
+            5
+          ]
+        },
+        {
+          "question": "What does the compass-and-straightedge example chiefly illustrate?",
+          "options": [
+            "How tools substitute for every act of thought",
+            "Why all legal results are certain",
+            "How methodological rules check reasoning",
+            "Why legal cases must be measured physically"
+          ],
+          "answer": 2,
+          "explanation": "§2 compares these instruments to rules that guard inquiry against error; it does not make every inference demonstratively certain.",
+          "sections": [
+            2
+          ]
+        },
+        {
+          "question": "A scholar knows the general divisions of legal rulings. Does universality alone make this methodological knowledge?",
+          "options": [
+            "Yes, because every universal proposition is a rule of inference",
+            "No, because its end can still be practical knowledge",
+            "Yes, because only particulars are practical",
+            "No, because rulings cannot be universal"
+          ],
+          "answer": 1,
+          "explanation": "§§2 and 6 distinguish universal knowledge about rulings from knowledge of the procedures for deriving them.",
+          "sections": [
+            2,
+            6
+          ]
+        },
+        {
+          "question": "Why did formal rules become more necessary after the earliest generations?",
+          "options": [
+            "The relevant reasoning capacity ceased to exist",
+            "The Qurʾān no longer counted as a source",
+            "All early legal opinions became invalid",
+            "The discipline grew complex amid dispersed and divergent transmission"
+          ],
+          "answer": 3,
+          "explanation": "§3 cites increasing complexity, dispersal and differences in reports, not a loss of all earlier reasoning competence.",
+          "sections": [
+            3
+          ]
+        },
+        {
+          "question": "What does Ibn Rushd claim about the Companions’ legal reasoning?",
+          "options": [
+            "They used the capacity without studying it as a separate discipline",
+            "They never used rules of inference in any form",
+            "They all independently compiled full uṣūl manuals",
+            "They rejected examining evidence"
+          ],
+          "answer": 0,
+          "explanation": "§4 explicitly distinguishes using the capacity from formally investigating a science bearing its name.",
+          "sections": [
+            4
+          ]
+        },
+        {
+          "question": "What is the scope of §4's induction claim?",
+          "options": [
+            "Every principle was deduced from one report",
+            "No universals can be drawn from individual fatwās",
+            "Many universal notions were inferred from case-by-case legal opinions",
+            "Individual opinions become infallible once collected"
+          ],
+          "answer": 2,
+          "explanation": "Ibn Rushd says many universal notions were established inductively from early fatwās, not that all opinions or principles were certain.",
+          "sections": [
+            4
+          ]
+        },
+        {
+          "question": "In §6, why is the third part the distinctive inquiry of uṣūl?",
+          "options": [
+            "It lists the highest-ranked jurists",
+            "It examines the method used to derive rulings from sources",
+            "It simply catalogues particular acts",
+            "It establishes the history of textual transmission"
+          ],
+          "answer": 1,
+          "explanation": "§6 identifies the third part’s concern with rules of derivation as distinct in kind from knowledge directed towards action.",
+          "sections": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ruling",
+      "questions": [
+        {
+          "question": "Which pair of rulings differs chiefly over threatened omission in §17?",
+          "options": [
+            "Obligatory and recommended",
+            "Forbidden and disliked",
+            "Permissible and recommended",
+            "Valid and invalid"
+          ],
+          "answer": 0,
+          "explanation": "Both obligation and recommendation favour doing the act; obligation includes a threat concerning unqualified omission.",
+          "sections": [
+            17
+          ]
+        },
+        {
+          "question": "A child’s property is subject to a legal consequence, but the guardian must act. Which distinction explains this?",
+          "options": [
+            "Source versus transmission",
+            "Proof versus report",
+            "Addressee versus what the ruling concerns",
+            "Analogy versus syllogism"
+          ],
+          "answer": 2,
+          "explanation": "§36 distinguishes the addressee of a command from the act or thing to which its consequences relate.",
+          "sections": [
+            36,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obligation",
+      "questions": [
+        {
+          "question": "Which is an example of an obligation allowing a choice rather than demanding one determinate act?",
+          "options": [
+            "One named prayer with no alternatives",
+            "An obligation satisfied by one of several specified acts",
+            "A forbidden act with an exception",
+            "A permission without any demand"
+          ],
+          "answer": 1,
+          "explanation": "§18 distinguishes a determinate duty from a duty discharged by choosing an authorised alternative.",
+          "sections": [
+            18
+          ]
+        },
+        {
+          "question": "A prayer may be performed early or later within its appointed period. What follows?",
+          "options": [
+            "All performance within the period is merely recommended",
+            "The duty disappears when its earliest moment passes",
+            "Postponement equals resolving to omit prayer altogether",
+            "The duty remains, though the timing can be chosen within limits"
+          ],
+          "answer": 3,
+          "explanation": "§§21–22 allow postponement within a defined window without converting the obligation into a recommendation.",
+          "sections": [
+            21,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "id": "command-prohibition",
+      "questions": [
+        {
+          "question": "What two respects are distinguished in prayer on usurped land?",
+          "options": [
+            "Language and translation",
+            "Performance of prayer and wrongful occupation",
+            "Consensus and report",
+            "Ablution and fasting"
+          ],
+          "answer": 1,
+          "explanation": "§31 separates the commanded performance of prayer from the prohibited occupation of another’s land.",
+          "sections": [
+            31
+          ]
+        },
+        {
+          "question": "If a prayer has legal validity, what does that by itself establish about wrongful occupation?",
+          "options": [
+            "It is also obligatory",
+            "It is always excused",
+            "It is independently permitted",
+            "It does not make the separate wrong permissible"
+          ],
+          "answer": 3,
+          "explanation": "Legal validity is a specific judgement about discharging a duty; it does not justify a different wrongful description.",
+          "sections": [
+            31,
+            56
+          ]
+        }
+      ]
+    },
+    {
+      "id": "responsibility",
+      "questions": [
+        {
+          "question": "Who is the relevant addressee in the child’s-property case of §38?",
+          "options": [
+            "The guardian responsible for the act",
+            "The property itself",
+            "The child as a fully responsible adult",
+            "The transmitter of the report"
+          ],
+          "answer": 0,
+          "explanation": "Ibn Rushd’s response directs the demand to the guardian while discussing consequences connected with the child’s property.",
+          "sections": [
+            38
+          ]
+        },
+        {
+          "question": "How does §42 treat puberty in relation to developed reason?",
+          "options": [
+            "As a proof that every individual is intellectually identical",
+            "As proof that reason cannot be legally relevant",
+            "As a general practical sign rather than an instant physical creation of reason",
+            "As the only condition for every legal ruling"
+          ],
+          "answer": 2,
+          "explanation": "Puberty serves as an administrable sign; it is not claimed to manufacture mature reason at that exact moment.",
+          "sections": [
+            42
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coercion",
+      "questions": [
+        {
+          "question": "What distinction is central to §47's account of an action performed under pressure?",
+          "options": [
+            "The actor’s nationality and age",
+            "The type of legal school",
+            "The form of textual transmission",
+            "An initial external motive and an intention present when acting"
+          ],
+          "answer": 3,
+          "explanation": "An initial extrinsic cause of action need not prevent a later intention of obedience at performance.",
+          "sections": [
+            47
+          ]
+        },
+        {
+          "question": "A threatened person could physically refuse. Does that alone settle coercion for legal purposes?",
+          "options": [
+            "Yes, because physical alternatives remove coercion",
+            "No, because threatened harm and the demanded act still matter",
+            "Yes, because intentions are legally irrelevant",
+            "No, because every pressure is equally decisive"
+          ],
+          "answer": 1,
+          "explanation": "The availability of a physical alternative does not alone determine the legal classification of coercion.",
+          "sections": [
+            43,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conditions-signs",
+      "questions": [
+        {
+          "question": "What is the key issue when ablution is a condition for prayer?",
+          "options": [
+            "Whether a person can obtain the required condition",
+            "Whether there can be no condition for any act",
+            "Whether ablution is identical to praying",
+            "Whether a legal duty is solely a physical event"
+          ],
+          "answer": 0,
+          "explanation": "§49 discusses conditions that can be obtained and rejects using failure to obtain them to erase a duty.",
+          "sections": [
+            49
+          ]
+        },
+        {
+          "question": "What must not be inferred from a prayer obligation where ablution is obtainable?",
+          "options": [
+            "The condition has an order relative to the act",
+            "The prayer may require preparatory action",
+            "The person may validly pray without the required purity",
+            "The inability to walk differs from obtainable purity"
+          ],
+          "answer": 2,
+          "explanation": "Ibn Rushd’s point is not to authorise an invalid prayer but to show why an obtainable precondition cannot be bypassed.",
+          "sections": [
+            23,
+            49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "validity-repetition",
+      "questions": [
+        {
+          "question": "Which distinction is essential when an act must be made up later?",
+          "options": [
+            "Translation versus transliteration",
+            "The later obligation versus blame for earlier nonperformance",
+            "Legal command versus prophetic action",
+            "Silence versus consensus"
+          ],
+          "answer": 1,
+          "explanation": "§57 shows that a later duty of make-up performance does not in itself prove culpable earlier omission.",
+          "sections": [
+            57
+          ]
+        },
+        {
+          "question": "A person performs an act described as commanded. Is that by itself enough to prove legal sufficiency?",
+          "options": [
+            "Yes, every performed command is valid",
+            "Yes, provided the agent meant well",
+            "No, because acts do not have prescribed conditions",
+            "No, because the act’s prescribed conditions and character still matter"
+          ],
+          "answer": 3,
+          "explanation": "§205 distinguishes the fact of a command from fulfilment of its legally sufficient prescribed form.",
+          "sections": [
+            205
+          ]
+        }
+      ]
+    },
+    {
+      "id": "concession",
+      "questions": [
+        {
+          "question": "What makes a legal concession different from an unrestricted permission?",
+          "options": [
+            "It applies only to textual reports",
+            "It necessarily cancels all earlier law",
+            "It is tied to a relevant excuse or condition",
+            "It is reserved for jurists who memorise the Qurʾān"
+          ],
+          "answer": 2,
+          "explanation": "§60 treats exceptional permissions in relation to the excuse or necessity that qualifies their scope.",
+          "sections": [
+            60
+          ]
+        },
+        {
+          "question": "In §58’s discussion of travellers and fasting, what understood condition is significant?",
+          "options": [
+            "That the traveller actually breaks the fast",
+            "That every traveller must never fast",
+            "That travel makes every duty disappear",
+            "That the traveller has no intention"
+          ],
+          "answer": 0,
+          "explanation": "The dispute concerns whether make-up fasting is predicated on having broken the fast rather than travel alone.",
+          "sections": [
+            58
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transmission",
+      "questions": [
+        {
+          "question": "What must be distinguished from the Prophet’s own authority when later hearers receive a report?",
+          "options": [
+            "The number of legal schools",
+            "The strength of evidence that the words were transmitted",
+            "The language of modern translations",
+            "The jurist’s preferred style"
+          ],
+          "answer": 1,
+          "explanation": "§66 distinguishes direct hearing from mediated transmission; the latter raises an evidential question.",
+          "sections": [
+            66
+          ]
+        },
+        {
+          "question": "Why can a solitary report warrant action without creating certainty about every individual report?",
+          "options": [
+            "Because all solitary reports are equally reliable",
+            "Because certainty never matters",
+            "Because action on preponderant evidence can be authorised",
+            "Because the original speaker was not authoritative"
+          ],
+          "answer": 2,
+          "explanation": "§81 defends legally warranted action on stronger probable evidence without identifying probability with certainty.",
+          "sections": [
+            81
+          ]
+        }
+      ]
+    },
+    {
+      "id": "narrators",
+      "questions": [
+        {
+          "question": "What is 'retention' principally concerned with when assessing a transmitter?",
+          "options": [
+            "Holding a legal office",
+            "Having the majority opinion",
+            "Belonging to a particular town",
+            "Accurately preserving what was heard"
+          ],
+          "answer": 3,
+          "explanation": "Retention concerns reliability of memory and reproduction; probity concerns confidence in truthfulness.",
+          "sections": [
+            83,
+            85
+          ]
+        },
+        {
+          "question": "A trustworthy teacher firmly denies having said what a trustworthy student reports. What follows?",
+          "options": [
+            "A real conflict may prevent action without proving either dishonest",
+            "The student is necessarily a liar",
+            "The report is automatically certain",
+            "The teacher’s probity becomes irrelevant"
+          ],
+          "answer": 0,
+          "explanation": "§107 separates unresolved contradictory claims from an accusation of personal dishonesty.",
+          "sections": [
+            107
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wording-transmission",
+      "questions": [
+        {
+          "question": "Which change most clearly requires checking whether an omitted context alters sense?",
+          "options": [
+            "A report transmitted repeatedly",
+            "A completely new legal subject",
+            "An excerpt taken from a longer report",
+            "A jurist’s opinion without an isnād"
+          ],
+          "answer": 2,
+          "explanation": "§110 permits abbreviation only when the remainder is independently intelligible and the omitted words do not distort it.",
+          "sections": [
+            110
+          ]
+        },
+        {
+          "question": "Why might an addition to a jointly transmitted report be treated differently from a separate report?",
+          "options": [
+            "Every addition is necessarily invented",
+            "Parallel transmissions provide relevant comparison evidence",
+            "All omission by others proves denial",
+            "A joint report cannot have variant wording"
+          ],
+          "answer": 1,
+          "explanation": "The omitted detail in other witnesses is evidence to weigh, not an automatic refutation of the addition.",
+          "sections": [
+            108
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abrogation",
+      "questions": [
+        {
+          "question": "Which is necessary to establish that one otherwise applicable ruling abrogated another?",
+          "options": [
+            "An actual chronological basis for the later ruling",
+            "A younger narrator",
+            "A majority preference",
+            "A difference of wording alone"
+          ],
+          "answer": 0,
+          "explanation": "§§115–129 distinguish proof of a later replacement from a merely apparent conflict or biographical inference.",
+          "sections": [
+            115,
+            129
+          ]
+        },
+        {
+          "question": "In §122, how might consensus relate to an abrogating revelation?",
+          "options": [
+            "By enacting fresh revelation after the Prophet",
+            "By replacing the need for any evidence",
+            "By proving every consensus member’s infallibility",
+            "By evidencing an earlier abrogation rather than causing it"
+          ],
+          "answer": 3,
+          "explanation": "The account allows consensus to disclose a prior abrogating warrant, not to create revelation anew.",
+          "sections": [
+            122
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consensus",
+      "questions": [
+        {
+          "question": "Why does 'most jurists agree' not by itself prove consensus?",
+          "options": [
+            "Most jurists cannot discuss any ruling",
+            "Consensus has no relation to qualified jurists",
+            "The relevant agreement of all qualified participants has not been shown",
+            "Agreement cannot ever count as evidence"
+          ],
+          "answer": 2,
+          "explanation": "§130’s definition requires an adequately established scope of agreement, not simply a majority tally.",
+          "sections": [
+            130
+          ]
+        },
+        {
+          "question": "Which argument does §139 reject when genuine consensus has already been established?",
+          "options": [
+            "It binds only when the entire agreeing generation has died",
+            "Agreement needs suitable participants",
+            "A claim of consensus needs evidence",
+            "Later disagreement differs from an original failure to agree"
+          ],
+          "answer": 0,
+          "explanation": "Ibn Rushd rejects making the generation’s extinction a condition of an already genuine consensus.",
+          "sections": [
+            139
+          ]
+        }
+      ]
+    },
+    {
+      "id": "presumption",
+      "questions": [
+        {
+          "question": "Who ordinarily must provide evidence when a new revealed obligation is claimed?",
+          "options": [
+            "The person denying all duties",
+            "The person asserting the new obligation",
+            "The youngest witness",
+            "Every legal school simultaneously"
+          ],
+          "answer": 1,
+          "explanation": "§141 places the burden of establishing a new revealed duty on its claimant.",
+          "sections": [
+            141
+          ]
+        },
+        {
+          "question": "What changes when an already warranted ruling is said to have ceased?",
+          "options": [
+            "The old ruling was never evidenced",
+            "All earlier proof becomes impossible",
+            "The situation is identical to positing a new duty",
+            "The question becomes whether contrary evidence defeats the established continuity"
+          ],
+          "answer": 3,
+          "explanation": "§142 treats preservation of an established ruling as a different evidential starting point from original nonliability.",
+          "sections": [
+            142
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meaning",
+      "questions": [
+        {
+          "question": "A dictionary gives several meanings of ʿayn. What does that list by itself establish?",
+          "options": [
+            "Which meaning Ibn Rushd necessarily intends",
+            "That every legal use shares all meanings",
+            "The available senses, not the intended sense in a given occurrence",
+            "That no contextual evidence can guide meaning"
+          ],
+          "answer": 2,
+          "explanation": "§158’s multiple senses illustrate an ambiguity that is resolved by usage and contextual indications.",
+          "sections": [
+            158
+          ]
+        },
+        {
+          "question": "Can specialised legal usage make a sense more apparent than its general lexical meaning?",
+          "options": [
+            "Yes; §153 allows the legal sense to be apparent in its setting",
+            "No; dictionary order always decides",
+            "No; specialised usage has no semantic force",
+            "Yes; every technical expression is certainly unambiguous"
+          ],
+          "answer": 0,
+          "explanation": "§153 distinguishes what is apparent in legal usage from a general-language sense; neither is an automatic universal rule.",
+          "sections": [
+            153
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interpretation",
+      "questions": [
+        {
+          "question": "What is missing when someone offers a merely possible alternative to an apparent reading?",
+          "options": [
+            "A longer quotation only",
+            "Any preference for the alternative grounded in evidence",
+            "A second language without context",
+            "A larger number of examples"
+          ],
+          "answer": 1,
+          "explanation": "§§166–168 demand a relevant indication rather than a bare possibility of another meaning.",
+          "sections": [
+            166,
+            167
+          ]
+        },
+        {
+          "question": "How should the strength of an apparent meaning affect the warrant needed to interpret otherwise?",
+          "options": [
+            "It never affects interpretation",
+            "Every metaphor requires the same proof",
+            "The interpreter may choose freely",
+            "A stronger apparent meaning requires correspondingly stronger countervailing evidence"
+          ],
+          "answer": 3,
+          "explanation": "§167 links the burden on interpretation to how strongly the expression already indicates its apparent sense.",
+          "sections": [
+            167
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general-specific",
+      "questions": [
+        {
+          "question": "Why is 'all kinds of water' unlike 'all senses of ʿayn'?",
+          "options": [
+            "Water must be restricted to one well",
+            "The meaning of ʿayn is legally forbidden",
+            "Kinds of water share one sense; senses of ʿayn are distinct lexical meanings",
+            "A general term can never describe a kind"
+          ],
+          "answer": 2,
+          "explanation": "§§169–177 distinguish coverage within one general meaning from selection among equivocal meanings.",
+          "sections": [
+            169,
+            176
+          ]
+        },
+        {
+          "question": "A generally worded answer addresses a question about one well. What alone does not restrict it?",
+          "options": [
+            "The particular occasion that prompted the answer",
+            "The answer’s general wording",
+            "A relevant contextual indication",
+            "An explicit restriction in the answer"
+          ],
+          "answer": 0,
+          "explanation": "§176 cautions against equating a particular occasion with a restriction on otherwise general wording.",
+          "sections": [
+            176
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qualifications",
+      "questions": [
+        {
+          "question": "What makes an exception in §186 intelligible when the excepted term lies outside the named genus?",
+          "options": [
+            "The named genus necessarily changes its literal identity",
+            "All grammatical exceptions are invalid",
+            "Only the first noun in the sentence matters",
+            "A broader understood communicative meaning can govern the exception"
+          ],
+          "answer": 3,
+          "explanation": "The ‘man … except a woman’ example invokes a contextual denial of anyone, not reclassification of a woman as a man.",
+          "sections": [
+            186
+          ]
+        },
+        {
+          "question": "For an exception following multiple clauses, what is relevant to its scope?",
+          "options": [
+            "Its distance from the beginning alone",
+            "Whether the clauses express one meaning or several, and the evidence",
+            "Whether the shortest clause is first",
+            "Whether all the clauses are equally long"
+          ],
+          "answer": 1,
+          "explanation": "§187 distinguishes shared meanings from separate meanings and may require further evidence of scope.",
+          "sections": [
+            187
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unstated-meaning",
+      "questions": [
+        {
+          "question": "In 'Ask the village,' what is supplied by understood meaning?",
+          "options": [
+            "The village’s inhabitants",
+            "A different legal source",
+            "The name of a particular jurist",
+            "A new command invented by the interpreter"
+          ],
+          "answer": 0,
+          "explanation": "§194 treats inhabitants as understood from the communicative setting without their being named.",
+          "sections": [
+            194
+          ]
+        },
+        {
+          "question": "Does an unstated element automatically make the intended meaning uncertain?",
+          "options": [
+            "Yes, absence of wording prevents any certainty",
+            "Yes, all implied meaning is mere conjecture",
+            "No, contextual evidence can establish the omitted element decisively",
+            "No, because every possible omission has equal authority"
+          ],
+          "answer": 2,
+          "explanation": "§§193–194 distinguish linguistic omission from the degree of certainty warranted by context.",
+          "sections": [
+            193,
+            194
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imperatives",
+      "questions": [
+        {
+          "question": "What is still open after recognising an imperative form?",
+          "options": [
+            "Whether it occurs in Arabic",
+            "Its legal force, timing and requirement of repetition",
+            "Whether a transmitter exists",
+            "Whether all legal duties were abrogated"
+          ],
+          "answer": 1,
+          "explanation": "§§197–203 treat force, timing and repetition as distinct issues rather than a single conclusion from the form.",
+          "sections": [
+            197,
+            199
+          ]
+        },
+        {
+          "question": "Why can a command to hunt after leaving consecration indicate permission?",
+          "options": [
+            "Every imperative always means permission",
+            "Hunting cannot be forbidden in any situation",
+            "The command is itself a repeated obligation",
+            "It can remove a previous restriction without imposing a new duty to hunt"
+          ],
+          "answer": 3,
+          "explanation": "§203 relates the command to an earlier restriction and its removal; this reading is context-dependent.",
+          "sections": [
+            203
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qiyas",
+      "questions": [
+        {
+          "question": "In §212's extension from silver to gold vessels, what broader meaning is proposed?",
+          "options": [
+            "Purity of metals",
+            "A change of date",
+            "Extravagance as an intended relevant universal",
+            "Agreement of all jurists"
+          ],
+          "answer": 2,
+          "explanation": "The extension is based on an alleged wider intended meaning of extravagance rather than metal resemblance alone.",
+          "sections": [
+            212
+          ]
+        },
+        {
+          "question": "What two warrants are required before extending the ruling to a new case?",
+          "options": [
+            "That the universal meaning is intended and that the new case falls under it",
+            "That both cases have identical names and prices",
+            "That the later case has more narrators",
+            "That both cases are found in one dictionary"
+          ],
+          "answer": 0,
+          "explanation": "§§210–213 separate establishing the law’s intended universal from establishing the new case as one of its instances.",
+          "sections": [
+            210,
+            212
+          ]
+        }
+      ]
+    },
+    {
+      "id": "extensions",
+      "questions": [
+        {
+          "question": "Why can a stronger unmentioned case inherit a prohibition of a lesser harm?",
+          "options": [
+            "Every larger object receives a stricter ruling",
+            "The prohibited relevant meaning is even more present in it",
+            "All unstated meanings are equal",
+            "The new case has a longer description"
+          ],
+          "answer": 1,
+          "explanation": "§215’s example of stronger mistreatment depends on intensified disrespect, not arbitrary material magnitude.",
+          "sections": [
+            215
+          ]
+        },
+        {
+          "question": "Why is a merely suggested resemblance in §218 insufficient for a decisive extension?",
+          "options": [
+            "It is already a demonstration",
+            "It always counts as consensus",
+            "It replaces the original text",
+            "The operative ground has not been securely identified"
+          ],
+          "answer": 3,
+          "explanation": "A resemblance is not yet an adequately justified legal ground for transferring the ruling.",
+          "sections": [
+            218
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prophetic-action",
+      "questions": [
+        {
+          "question": "What must be established beyond the bare observation of a Prophetic action?",
+          "options": [
+            "Whether the action occurred in daylight",
+            "Whether later jurists preferred it",
+            "What legal significance it had in its context",
+            "Whether an exact English translation exists"
+          ],
+          "answer": 2,
+          "explanation": "§228 distinguishes actions that explain obligations or recommendations, actions particular to the Prophet, and uncertain cases.",
+          "sections": [
+            228
+          ]
+        },
+        {
+          "question": "What makes an appeal to tacit approval evidentially relevant under §227?",
+          "options": [
+            "Reliable knowledge that the act occurred in his presence, was seen, and was approved",
+            "A later author’s silence in a separate book",
+            "The absence of every contrary opinion",
+            "The fact that the action was physically possible"
+          ],
+          "answer": 0,
+          "explanation": "§227 requires sufficiently established presence, observation and approval, with attention to the circumstances.",
+          "sections": [
+            227
+          ]
+        }
+      ]
+    },
+    {
+      "id": "competence",
+      "questions": [
+        {
+          "question": "Which qualification can be relaxed without removing the need for understanding evidence?",
+          "options": [
+            "The ability to evaluate relevant indications",
+            "Memorising every relevant text rather than knowing how to find it",
+            "Knowing the issue’s legal conditions",
+            "Using appropriate methods of inquiry"
+          ],
+          "answer": 1,
+          "explanation": "§232 distinguishes ready access to passages from memorisation while preserving substantive juristic competence.",
+          "sections": [
+            232
+          ]
+        },
+        {
+          "question": "When may inquiry be confined to one question under §236?",
+          "options": [
+            "Whenever the issue sounds simple",
+            "When a scholar memorises a single report",
+            "When some other jurist agrees",
+            "When the person has sufficient knowledge for that specific question"
+          ],
+          "answer": 3,
+          "explanation": "Partial competence must still be sufficient for the whole question under investigation.",
+          "sections": [
+            236
+          ]
+        }
+      ]
+    },
+    {
+      "id": "truth-error",
+      "questions": [
+        {
+          "question": "Which two questions does the discussion of excused error keep distinct?",
+          "options": [
+            "Which school is oldest and which is largest",
+            "Which book came first and which second",
+            "Whether a judgement is true and whether its author is culpable",
+            "Whether every report was memorised and translated"
+          ],
+          "answer": 2,
+          "explanation": "§§237–245 distinguish correct legal judgement from personal blame for a mistaken effort.",
+          "sections": [
+            237,
+            243
+          ]
+        },
+        {
+          "question": "What is the proper implication of pardon for an inadvertent mistake?",
+          "options": [
+            "The agent may be excused without making the mistaken judgement true",
+            "All opposed conclusions become simultaneously true",
+            "Every careless judgement is excused",
+            "No jurist can ever be mistaken"
+          ],
+          "answer": 0,
+          "explanation": "§243’s appeal to inadvertence mitigates culpability without changing the truth value of a conclusion.",
+          "sections": [
+            243,
+            244
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conflicting-proofs",
+      "questions": [
+        {
+          "question": "Why does Ibn Rushd question automatic adoption of the strictest rule when proofs conflict?",
+          "options": [
+            "Every disputed ruling is void",
+            "A stricter requirement can itself add an unwarranted duty",
+            "The strictest option always creates consensus",
+            "Differences in evidence cannot affect action"
+          ],
+          "answer": 1,
+          "explanation": "§246 notes that automatic caution may impose obligations without the proof required for doing so.",
+          "sections": [
+            246
+          ]
+        },
+        {
+          "question": "What does the existence of two juristic opinions prove about their evidential strength?",
+          "options": [
+            "That both are certain",
+            "That choice is always unrestricted",
+            "That neither may be followed",
+            "Nothing by itself; one may be better supported than the other"
+          ],
+          "answer": 3,
+          "explanation": "§257 concerns weighing actual evidence rather than treating a plurality of opinions as equally strong.",
+          "sections": [
+            257
+          ]
+        }
+      ]
+    },
+    {
+      "id": "authority",
+      "questions": [
+        {
+          "question": "Which community arrangement does §250 treat as necessary and sustainable?",
+          "options": [
+            "Every person is a full-time jurist",
+            "No one learns the legal methods",
+            "Some acquire expertise while others legitimately rely on them",
+            "Only inherited prestige decides every case"
+          ],
+          "answer": 2,
+          "explanation": "Ibn Rushd criticises universal specialisation and universal ignorance and defends divided but real competence.",
+          "sections": [
+            250
+          ]
+        },
+        {
+          "question": "Why is legitimate reliance more than attaching oneself to a famous jurist’s name?",
+          "options": [
+            "It depends on actual qualified inquiry, preservation and teaching",
+            "Names alone make every new question settled",
+            "It means no community must investigate new questions",
+            "It is unrelated to the preservation of legal knowledge"
+          ],
+          "answer": 0,
+          "explanation": "§§249–255 describe reliance as a relation to substantive scholarly work, not a substitute for it.",
+          "sections": [
+            249,
+            250,
+            255
+          ]
+        }
+      ]
+    }
+  ]
+}
