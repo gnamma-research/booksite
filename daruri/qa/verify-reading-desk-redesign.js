@@ -114,8 +114,8 @@ function boot(source,opts={}){
   notifyExternalChange(){for(const fn of events['window:storage']||[])fn({key:'gnamma-reading-desk-v1',newValue:opts.sharedStore?.value??raw})}};
 }
 test('source scripts compile and cache version matches',()=>{
- ensure(sw.includes('20261021-readingdesk4'),'service worker cache not updated');
- ensure(bundle.includes('20261021-readingdesk4'),'offline bundle not updated');
+ ensure(sw.includes('20261021-readingdesk6'),'service worker cache not updated');
+ ensure(bundle.includes('20261021-readingdesk6'),'offline bundle not updated');
  ensure(dict.includes("dateSource:'recorded'"),'dictionary dates missing');
 });
 test('mobile list and detail are mutually exclusive',()=>{
@@ -136,6 +136,12 @@ test('missing-source notes and unknown future records remain visible and survive
  ensure(current.items.some(x=>x.id==='orphan'&&x.body===archived.body),'orphan dropped during save');
  ensure(current.items.find(x=>x.id==='future')?.extra.version===17,'future fields changed');
  ensure(current.editionExtra.retainMe===1,'envelope metadata lost');
+});
+test('exported JSON backups preserve opaque top-level metadata and saved notes',()=>{
+ const h=boot(backup([note('original','190','Retain this observation')],{futureEnvelope:{origin:'later edition'}}));
+ const payload=JSON.parse(h.desk.backup());
+ ensure(payload.futureEnvelope?.origin==='later edition','export discarded unknown envelope fields');
+ ensure(payload.items.find(r=>r.id==='original')?.body==='Retain this observation','export lost saved note');
 });
 test('corrupt and future-format storage is protected against writes',()=>{
  for(const contents of ['{broken JSON',JSON.stringify({format:'gnamma-reading-desk',version:2,items:[archived]})]){
@@ -163,6 +169,19 @@ test('importing a previous-edition backup preserves missing-source notes',()=>{
   'imported unresolvable note discarded');
  ensure(JSON.parse(h.stored).items.some(r=>r.id==='imported-orphan'),
   'imported unresolvable note not persisted');
+});
+test('long imported notes display and print their full text without silent clipping',()=>{
+ const trailing=' COMPLETE FINAL PARAGRAPH — محفوظ إلى النهاية';
+ const full='Beginning of very long personal note. '+('x'.repeat(110000))+trailing;
+ const item=note('full-detail','190',full),h=boot(backup([item]));
+ h.event('click',{dataset:{rd:'select',id:'full-detail'}});
+ ensure(h.main.innerHTML.includes(trailing),'long note detail clipped its ending');
+ h.event('click',{dataset:{rd:'print',id:'full-detail'}});
+ ensure(h.printed.includes(trailing),'native print preview clipped long note content');
+});
+test('sharing large personal notes discloses excerpt limits',()=>{
+ ensure(js.includes('Excerpt only: this shared text was shortened'),'share preview lacks disclosure');
+ ensure(js.includes('Email excerpt shortened'),'mailto excerpt lacks disclosure');
 });
 test('long imported notes can be edited without forced truncation',()=>{
  ensure(js.includes("const body=String($('#gn-rd-note-body')?.value??'').trim()"),
@@ -242,5 +261,35 @@ test('legacy migration is not re-applied when refreshing externally changed reco
  instance.event('click',{dataset:{rd:'refresh-storage'}});
  ensure(instance.desk.records().length===1&&instance.desk.records()[0].id==='newer',
  'refresh resurrected stale item from earlier in-memory storage');
+});
+test('unresolved legacy section bookmarks and duplicate identifiers survive a save',()=>{
+ const damaged={id:'damaged',kind:'section',target:null,body:'Preserve malformed source',created:at,updated:at};
+ const same1={...note('duplicate','190'),title:'First author observation',body:'First'};
+ const same2={...note('duplicate','191'),title:'Second author observation',body:'Second'};
+ const h=boot(backup([damaged,same1,same2]));
+ ensure(h.desk.records().length===3,'corrupt section or duplicate record dropped during load');
+ const ids=h.desk.records().map(x=>x.id);
+ ensure(new Set(ids).size===3,'duplicate identifiers were not safely disambiguated');
+ h.desk.toggleSection('191');
+ const saved=JSON.parse(h.stored).items;
+ ensure(saved.some(r=>r.body==='Preserve malformed source'),'malformed section not preserved');
+ ensure(saved.some(r=>r.body==='First')&&saved.some(r=>r.body==='Second'),'one duplicate record lost');
+});
+test('older exported backup with over three thousand records can be reimported',()=>{
+ const h=boot(backup([]));
+ const items=Array.from({length:3010},(_,i)=>({...note('archived-'+i,'190'),body:'Study observation '+i}));
+ const encoded=backup(items);
+ h.event('change',{id:'gn-rd-file',files:[{size:encoded.length,text:encoded}],value:encoded});
+ ensure(h.desk.records().length===3010,'large historical backup rejected or truncated');
+ ensure(JSON.parse(h.stored).items.length===3010,'large backup not written intact');
+});
+test('damaged source-history entries are displayed without changing the saved note',()=>{
+ const record={...archived,id:'history-mixed',sourceHistory:[null,'old',{target:{section:'999',segment:0}},{relinkedAt:at,target:null}]};
+ const h=boot(backup([record]));
+ h.event('click',{dataset:{rd:'select',id:'history-mixed'}});
+ ensure(h.main.innerHTML.includes('Previous source references (4)'),'history list hidden');
+ ensure(h.desk.records()[0].sourceHistory.length===4,'history data changed');
+ h.desk.toggleSection('191');
+ ensure(JSON.parse(h.stored).items.find(x=>x.id==='history-mixed').sourceHistory.length===4,'history entries lost on save');
 });
 console.log('PASS '+checks.length+' Reading Desk tests (synthetic DOM; physical iOS Safari and Pages deployment require separate checks)');

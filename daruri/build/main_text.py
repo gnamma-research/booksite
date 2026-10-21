@@ -227,6 +227,27 @@ def _resolve_anchor(text: str, descriptor: Mapping[str, Any], context: str) -> i
     return end
 
 
+# Only exact verse wording checked against Quran.com. These are comparison
+# snippets, not changes to Ibn Rushd's wording or a reported variant reading.
+_VERIFIED_VERSE_EXCERPTS = {
+    'QUR-R001-Q049': ('عَلَّمَهُ ٱلۡبَيَانَ', 'Verse wording · al-Raḥmān 55:4'),
+    'QUR-R001-Q050': ('فَلِلَّهِ ٱلۡحُجَّةُ ٱلۡبَٰلِغَةُ', 'Verse wording · al-Anʿām 6:149'),
+    'QUR-R001-Q051': ('وَخَاتَمَ ٱلنَّبِيِّـۧنَ', 'Verse wording · al-Aḥzāb 33:40'),
+}
+
+
+def _verified_verse_excerpt(note: Mapping[str, Any]) -> str:
+    datum = _VERIFIED_VERSE_EXCERPTS.get(str(note.get('id', '')))
+    if not datum:
+        return ''
+    wording, source = datum
+    return ('<span class="quran-source-excerpt">'
+            '<span class="quran-source-arabic" lang="ar" dir="rtl">'
+            '﴿ ' + escape(wording) + ' ﴾</span>'
+            '<span class="quran-source-caption">' + escape(source) + '</span>'
+            '</span>')
+
+
 class _Renderer:
     def __init__(self, book: Mapping[str, Any], quran_data: Any, hadith_data: Any, edition: str, show_editorial_titles: bool = False):
         if edition not in EDITIONS:
@@ -425,7 +446,8 @@ class _Renderer:
             f'<p class="apparatus-note source-note" id="{escape(str(note["id"]), quote=True)}" '
             f'data-note-id="{escape(str(note["id"]), quote=True)}" data-note-kind="{escape(str(note.get("kind", "source")), quote=True)}">'
             f'<span class="apparatus-label">{label}.</span> '
-            f'<span class="note-prose" data-note-prose-id="{escape(str(note["id"]), quote=True)}">{_rich_text(text, refs)}</span></p>'
+            f'<span class="note-prose" data-note-prose-id="{escape(str(note["id"]), quote=True)}">{_rich_text(text, refs)}</span>'
+            f'{_verified_verse_excerpt(note)}</p>'
             for note, label, text, refs in notes
         )
         return ('<tr class="source-apparatus-row"><td class="english">'

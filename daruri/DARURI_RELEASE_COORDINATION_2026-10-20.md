@@ -2,6 +2,10 @@
 
 The user has asked the current Darūrī chats to coordinate site and PDF updates. Use the latest `master` as the shared publication source; make narrow changes and never replace the reader from an older handoff ZIP.
 
+### Active publisher claim — Quran source links and quotation typography
+
+**Publisher claim: active (this task)** from 2026-10-21T06:25:14.341Z until 2026-10-21T07:25:14.341Z UTC. Working branch `feature/quran-notes-typography-20261021`. Targets: `daruri/source-reference-data.js`, `daruri/source-note-ui.js`, `daruri/source-note-ui.css`, `daruri/build/build_source_reference_data.py`, `daruri/build/main_text.py`, `daruri/build/styles.css`, `daruri/build/README.md`, focused QA, PDF release/update workflow, and optionally `daruri/download-bundle.js`, `daruri/sw.js`, five PDFs and their manifest after verified builds. **No modification of `daruri/index.html`, Reading Desk, Visuals, or lesson assets.** Base source-note data SHA `3627dca072f0dd08995d296671311af3a4da8d45`. Other publishers please preserve these targets while claim active; this branch keeps simultaneous master updates safe. This record should be changed to released after verification.
+
 ## Shared upload coordination — 20 October 2026, 15:28 UTC
 
 The user has requested coordination because several chats are attempting to upload the same reader. **This Notes/PDF chat has finished publishing and has no upload running. Do not repeat its reader, PDF or Usul ZIP upload.**
@@ -333,3 +337,35 @@ Current source of truth: [READING_DESK_AUDIT_2026-10-21.md](READING_DESK_AUDIT_2
 The attached iPhone screenshot exposed a redundant Back-to-Reading-Desk button in a visible inline detail; the mobile CSS now makes list/detail states mutually exclusive and shows the return control only for the dedicated detail state. Source-order grouping and exact linked-note counts were corrected. Continuous reading highlights now use actual section identifiers. Printed bilingual note-only selections retain exact quotations, and externally shared source links include paragraphs and optional bounded quote text. The separate dictionary return state retains the originating reading position.
 
 Published asset/cache suffix: `20261021-readingdesk4`. Updated reader HTML, dictionary HTML, reading-desk.js, reading-desk.css, dictionary bridge, offline bundle and service worker (v3/v2 offline compatibility preserved). QA: 11 reproducible synthetic-DOM tests in `qa/verify-reading-desk-redesign.js` passed, and `.github/workflows/daruri-reading-desk-quality.yml` supplies future CI checks. Physical Safari and live Pages verification are **not** claimed; follow the audit's remaining priority list. Preserve concurrent reader, Visuals, compact-print editions, PDF and study-guide edits.
+
+
+## Reading Desk v5 integrated release — 21 October 2026
+
+Final audit and QA: [READING_DESK_AUDIT_2026-10-21.md](READING_DESK_AUDIT_2026-10-21.md). The original screenshot defect (a redundant mobile Back to Reading Desk button displayed beside an inline item preview) is corrected by separating mobile collection and detail modes. The confirmed note-loss bug on missing/renamed source references is corrected with lossless archival display, recoverable source relinking and preservation of source history; corrupted storage and stale tabs cannot silently overwrite newer notes. Edits to unusually large imported notes no longer truncate their text, and malfunctioning or duplicate-ID records remain archived. Long bilingual quotation printing and continuous-reading marks were corrected without altering edition content.
+
+**Version consistency checked:** main reader and historical dictionary use `20261021-readingdesk5`, as do the offline service worker and package generator; older asset references remain cached. **Validation:** 19 synthetic DOM regression checks and 9 version-integration checks passed on connector-fetched source. GitHub Actions workflow is installed; runner and live Pages/iOS Safari status remain unconfirmed. Do not claim physical-device QA from synthetic checks. Preserve concurrent PDF/print editions and personal-export page work.
+
+## Reading Desk v5 — preservation, navigation, and cache release (21 October 2026)
+
+Scope: Narrow fixes to the private Reading Desk, its CSS, the historical dictionary hook, the offline/download asset manifest, and regression tests. Scholarly PDF editions, the separate personal PDF export, study guide, dictionaries, themes, and editorial notes were not replaced.
+
+Safety: Previously saved notes remain in their collection even when a section, paragraph, editorial note, dictionary term, or future-format source is unavailable. Malformed records, duplicate IDs, long historical notes, extra metadata, and previous collections over 3,000 items are preserved; corrupted/unsupported collections are protected from overwrites and can be downloaded untouched. Unresolved records remain accessible and may be relinked, preserving old source history; quotations are validated before relinking. Failed storage writes roll back in-memory edits/deletions. Stale parallel browser tabs cannot overwrite a newer collection and may reload it.
+
+Interface: Mobile Reading Desk list view no longer shows a meaningless Back button or stacks a selected detail beneath the list; a true dedicated detail route has its own Back action. Source locations, precise share links, continuous-reading annotation marks, bilingual context, dates, and personal-mark preferences are preserved. Printing retains exact saved quotations, even from the end of very long paragraphs; users retain Arabic/English and private-note inclusion controls.
+
+Activation: index.html, dictionary.html, download-bundle.js and sw.js now reference 20261021-readingdesk5; the service worker cache name was bumped. Older v4/v3 reader script paths remain in the cache for offline compatibility. Reproducible check: node daruri/qa/verify-reading-desk-redesign.js.
+
+Verification: 19 synthetic-DOM regressions passed in the JavaScript runtime (data preservation, malformed imports, duplicate IDs, chronology, mobile states, source relinking, long-print excerpts, continuous reading, and stale-tab conflict recovery). All 13 reader/dictionary/offline asset reference and source syntax checks passed. Physical iPhone Safari and live Pages deployment were not accessible for independent verification. A new service worker may require a fresh page load to take control. Keep this v5 release when merging concurrent edits.
+
+
+## Reading Desk v5 and personal PDF export v2 — 21 October 2026, follow-up
+
+The main bilingual reader and historical dictionary use Reading Desk v5 JS/CSS with cache-busted references. The same release preserves offline v4/v3/v2 compatibility. The Reading Desk JSON export now preserves unfamiliar top-level backup metadata as well as opaque record fields. A new regression checks JSON backup round trips.
+
+Personal-PDF export v2 resolves a previously silent archival-data truncation: it reads the complete saved collection rather than only 3,000 records and retains the full original personal note text instead of cropping at 30,000 characters. Duplicate historical IDs become distinct export-only selection keys without altering localStorage. Legacy unknown/archived saved items can be selected for the appendix. The picker displays the first 240 matches and instructs readers to refine search for the rest, avoiding an unbounded mobile DOM. If the chosen PDF pop-up annotations cannot contain all source material, personal-PDF creation requires the complete appendix and explains why rather than discarding words. The unchanged published-PDF option remains the default, with no personal material included.
+
+Versions: personal-export.html loads personal-export.js?v=2; service worker caches v2 and previously referenced v1; downloadable bundle also fetches v2. The separate personal-PDF implementation is not replaced and the five scholarly/reading edition PDFs have not been altered.
+
+**Verified against current GitHub source in this session:** 20 Reading Desk synthetic-DOM regression checks and 18 personal-export model/invariant tests passed. All five JSON PDF section maps were checked: each metadata SHA-256 and page count matches its manifest edition and all 259 section pages for each fall within that edition. The continuous-reader user-note safety, mobile list/detail state, source relinking, long notes, old backups, duplicate IDs, and multi-tab protection remain covered by Reading Desk tests. Automated GitHub Actions definitions were expanded to run both suites on relevant pushes.
+
+**Unverified:** GitHub Actions remote job completion, GitHub Pages live deployment/cache freshness, actual iPhone Safari/VoiceOver interaction, and native PDF annotation rendering in Apple Files/Acrobat. The public deployed pages could not be fetched through this chat's browsing interface. Further browser/physical-device QA is needed before asserting device compatibility. The full personal appendix uses image-backed pages and is not equivalent to a selectable, text-searchable tagged PDF; native PDF comment appearance varies by viewer. The underlying JSON backup should be saved separately, particularly before major upgrades.

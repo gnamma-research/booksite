@@ -10,6 +10,9 @@ on:
       - 'daruri/sw.js'
       - 'daruri/download-bundle.js'
       - 'daruri/qa/verify-reading-desk-redesign.js'
+      - 'daruri/personal-export.js'
+      - 'daruri/personal-export.html'
+      - 'daruri/qa/verify-personal-export-safety.js'
   workflow_dispatch:
 
 permissions:
@@ -26,3 +29,5 @@ jobs:
           node-version: '22'
       - name: Verify preserved notes, source anchors, mobile and printing
         run: node daruri/qa/verify-reading-desk-redesign.js
+      - name: Verify full personal PDF export content and note privacy
+        run: node daruri/qa/verify-personal-export-safety.js

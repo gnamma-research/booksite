@@ -106,3 +106,43 @@ The main-text PDF renderer selects the actual note language for text and page
 layout independently of its requested display language; Arabic Qur'an source
 notes supplied in Arabic remain in Arabic, whereas an English editorial note
 included in an Arabic-text study PDF remains English.
+
+
+## Source-note link and muṣḥaf typography (21 October 2026)
+
+The main reader loads `source-reference-data.js`, which now boots the separately
+maintained `source-note-ui.js` and `source-note-ui.css`. The URL remains an
+ordinary HTTPS anchor with its original destination, new-tab behavior, keyboard
+focus, and native iOS long-press. Its *visible* text is a compact external-arrow
+control beside the source label. Desktop hover and keyboard focus disclose the
+full URL in a viewport-clamped tooltip. No database, login, or external UI service
+is used. The no-JavaScript fallback retains its legible source names and links.
+
+Only the three exact Quranic comparison snippets in R001 (Q049, Q050, Q051)
+are typeset in Uthmani wording between ornamental brackets. The phrase inventory
+was checked against Quran.com. Allusions remain labelled as allusions, and
+transmitted variants, source disagreements and paraphrases are **not** silently
+restyled as literal muṣḥaf quotations. No authorial text or translation was changed.
+
+PDF source-note citation links retain their URI annotations. Raw long URLs are
+visually suppressed in the PDF stylesheet, rather than deleted from the notes or
+from the validator's underlying text. The scholarly apparatus displays the three
+verified Arabic comparison excerpts in a compact right-to-left box. Hadith
+references still appear only in the scholarly PDF, as before. Printed PDFs
+identify their source without relying on tooltips. Other fonts and colour themes
+are not modified.
+
+`qa/refresh_note_pdf_manifest.py` gates releases on all 259 section destinations,
+actual source URI links, PDF outline counts, footnote pagination, source-preservation
+validation, and a four-page maximum reflow bound per edition. The isolated
+`.github/workflows/daruri-source-note-pdfs.yml` builds and checks all five from
+the latest repository source, then commits *only* the PDFs and their manifest
+to the source-note feature branch. Do not replace those five current PDFs with
+a binary from the older 20 October handoff archive.
+
+Browser smoke tests (local Chromium rendering, 21 October) covered 1280, 390
+and 320-pixel layouts: icon links, desktop hover/keyboard tooltip, Escape,
+accessible labels, 44-pixel mobile touch targets, unchanged URLs, no visible
+raw URLs, no horizontal overflow and verified Arabic excerpt brackets.
+Native Safari/iOS long-press and a deployed GitHub Pages build require separate
+device-side confirmation; the real anchors have been preserved for that reason.

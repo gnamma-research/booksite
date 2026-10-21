@@ -1,0 +1,84 @@
+name: Publish Daruri A4 Reading and Study PDFs
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - ".github/workflows/daruri-a4-editions.yml"
+      - "daruri/build/publish_editions.py"
+      - "daruri/build/print_editions.py"
+      - "daruri/build/build_editions.py"
+      - "daruri/build/main_text.py"
+      - "daruri/build/styles.css"
+permissions:
+  contents: write
+concurrency:
+  group: daruri-pdf-editions-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install PDF layout dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install --upgrade pip
+          python -m pip install -r daruri/build/requirements.txt "pypdf==5.9.0" "PyMuPDF==1.26.7"
+      - name: Build and verify all ten PDF variants
+        run: |
+          python daruri/build/publish_editions.py --output-dir daruri/editions
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path("daruri/editions")
+          data=json.loads((root/"manifest.json").read_text())
+          assert len(data["files"]) == 10
+          assert sum(row["tier"]=="reading" for row in data["files"]) == 8
+          assert sum(row["tier"]=="study" for row in data["files"]) == 2
+          for entry in data["files"]:
+              path=root/entry["file"]
+              assert path.is_file() and path.stat().st_size==entry["bytes"]
+              assert entry["bookmarks"] >= 52
+              assert entry["pages"] >= 25
+          print("Verified ten PDFs with usable outlines, live text and A4 geometry.")
+          PY
+      - name: Retain generated PDFs as workflow artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-a4-reading-and-study
+          path: |
+            daruri/editions/reading/*.pdf
+            daruri/editions/study/*.pdf
+            daruri/editions/manifest.json
+          retention-days: 30
+      - name: Commit additive PDF assets without replacing other reader work
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A daruri/editions/reading daruri/editions/study daruri/editions/manifest.json
+          if git diff --cached --quiet; then
+            echo "Edition assets already current"
+            exit 0
+          fi
+          git commit -m "Publish verified A4 Daruri Reading and Study PDF editions"
+          for n in 1 2 3 4 5; do
+            git fetch origin master
+            git rebase origin/master
+            if git push origin HEAD:master; then
+              echo "Published edition assets on master"
+              exit 0
+            fi
+            echo "Concurrent GitHub update; retrying safely ($n)"
+            sleep 5
+          done
+          echo "Could not publish automatically; PDF artifact remains available" >&2
+          exit 1

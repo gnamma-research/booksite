@@ -111,6 +111,11 @@ function create(ctx){
      throw Error('Unsupported saved Reading Desk format');
     storedEnvelope=Object.fromEntries(Object.entries(data).filter(([key])=>!['format','version','items'].includes(key)));
     records=data.items.map(sanitize); // Never truncate records when restoring.
+    const ids=new Set();
+    for(const item of records){
+     if(ids.has(item.id)){item.originalDuplicateId=item.id;item.id=uuid();}
+     ids.add(item.id);
+    }
    }
   }catch(e){
    loadFailure=true;available=false;records=[];
@@ -161,7 +166,7 @@ function create(ctx){
   return true;
  }
  function syncLegacy(doSave){
-  const list=records.filter(r=>r.kind==='section'&&!r.deleted).map(r=>String(r.target.section));
+  const list=records.filter(r=>r.kind==='section'&&!r.deleted&&r.target?.kind==='section'&&section(r.target.section)).map(r=>String(r.target.section));
   ctx.setLegacyBookmarks(list,doSave);
  }
  function active(){return records.filter(r=>!r.deleted);}
@@ -236,7 +241,7 @@ function create(ctx){
   const now=Date.now();
   if(records.length>2999){ctx.notify('Reading Desk is full; export and remove unused entries before adding more.');return null;}
   if(kind!=='note'){
-   const existing=records.find(x=>x.kind===kind&&keyOf(x.target)===keyOf(target));
+   const existing=records.find(x=>x.kind===kind&&x.target&&keyOf(x.target)===keyOf(target));
    if(existing){if(existing.deleted){const prior={deleted:existing.deleted,updated:existing.updated};existing.deleted=0;existing.updated=now;if(!persist()){Object.assign(existing,prior);return null;}ctx.notify('Restored to Reading Desk.');}else ctx.notify('Already in Reading Desk.');return existing;}
   }
   const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target});
@@ -302,7 +307,7 @@ function create(ctx){
  }
  function detailsFor(r){
   const t=r.kind==='note'?r.target:r.target,expanded=ui.expanded;
-  if(r.kind==='note'&&r.standalone)return '<p class="gn-rd-muted">Free-standing personal note</p><div class="gn-rd-personal-body">'+esc(r.body)+'</div>';
+  if(r.kind==='note'&&r.standalone)return '<p class="gn-rd-muted">Free-standing personal note</p><div class="gn-rd-personal-body">'+escFull(r.body)+'</div>';
   let html='<p class="gn-rd-source-label">'+esc(subOf(t))+'</p>';
   if(t&&['section','paragraph','quote'].includes(t.kind)){
    html+='<div class="gn-rd-language-tabs" role="group" aria-label="Context language">'+['both','ar','en'].map(v=>'<button type="button" data-rd="language" data-value="'+v+'" aria-pressed="'+(ui.context===v)+'">'+({both:'Both',ar:'Arabic',en:'English'}[v])+'</button>').join('')+'</div>';
@@ -326,7 +331,7 @@ function create(ctx){
    const l=window.DARURI_STUDY_DATA?.lessons?.find(x=>x.id===t.lesson);
    html+='<p>'+esc(l?.summary||'')+'</p><p class="gn-rd-muted">'+esc(t.level)+'</p>';
   }
-  if(r.kind==='note')html+='<div class="gn-rd-personal-body"><h3>Your note</h3><p>'+esc(r.body).replace(/\n/g,'<br>')+'</p></div>';
+  if(r.kind==='note')html+='<div class="gn-rd-personal-body"><h3>Your note</h3><p>'+escFull(r.body).replace(/\n/g,'<br>')+'</p></div>';
   return html;
  }
  function grouped(r){return r.kind==='note'?'My note':r.kind==='footnote'?'Book note':LABELS[typeOf(r)]||'Bookmark';}
@@ -410,10 +415,10 @@ function create(ctx){
    parts.push('<footer class="gn-rd-date-details"><small>'+esc(dateLine(selected,true))+'</small></footer>');
    if(Array.isArray(selected.sourceHistory)&&selected.sourceHistory.length){
     parts.push('<details class="gn-rd-history"><summary>Previous source references ('+selected.sourceHistory.length+')</summary>');
-    parts.push(selected.sourceHistory.map(h=>'<p>'+esc(h.target?.section?'Originally '+ctx.sectionRef(h.target.section):'Earlier source')+
-     (h.target?.segment!=null?' · paragraph '+(Number(h.target.segment)+1):'')+
-     (h.target?.quote?' · '+esc(short(h.target.quote,170)):'')+
-     (h.relinkedAt?' · reconnected '+esc(dateDisplay(h.relinkedAt,true)):'')+'</p>').join(''));
+    parts.push(selected.sourceHistory.map(h=>'<p>'+esc(h?.target?.section?'Originally '+ctx.sectionRef(h.target.section):'Earlier source')+
+     (h?.target?.segment!=null?' · paragraph '+(Number(h.target.segment)+1):'')+
+     (h?.target?.quote?' · '+esc(short(h.target.quote,170)):'')+
+     (h?.relinkedAt?' · reconnected '+esc(dateDisplay(h.relinkedAt,true)):'')+'</p>').join(''));
     parts.push('</details>');
    }
    const relatives=selected.target?active().filter(r=>r.id!==selected.id&&r.target&&sourceKey(r.target)===sourceKey(selected.target)):[];
@@ -628,7 +633,7 @@ function create(ctx){
  function actions(target,compact){
   const row=document.createElement('div');row.className='gn-rd-attach-actions'+(compact?' gn-rd-compact':'');
   const serialized=encodeURIComponent(JSON.stringify(target));
-  const stored=active().some(r=>r.kind===target.kind&&keyOf(r.target)===keyOf(target));
+  const stored=active().some(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
   row.innerHTML='<button type="button" data-rd="attach-bookmark" data-target="'+esc(serialized)+'" aria-pressed="'+stored+'">'+(stored?'✓ Saved · View':'◇ Bookmark')+'</button>'+
    '<button type="button" data-rd="attach-note" data-target="'+esc(serialized)+'">+ Add personal note</button>';
   return row;
@@ -636,7 +641,7 @@ function create(ctx){
  function syncActionStates(){
   document.querySelectorAll('[data-rd="attach-bookmark"]').forEach(btn=>{
    let target;try{target=JSON.parse(decodeURIComponent(btn.dataset.target||''));}catch(_){return;}
-   const stored=active().some(r=>r.kind===target.kind&&keyOf(r.target)===keyOf(target));
+   const stored=active().some(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
    btn.textContent=stored?'✓ Saved · View':'◇ Bookmark';btn.setAttribute('aria-pressed',String(stored));
   });
  }
@@ -893,7 +898,8 @@ function create(ctx){
   else if(t?.kind==='dictionary')txt+='\n\n'+(book.glossary.find(x=>x.term===t.term)?.definition||'');
   else if(t?.kind==='application')txt+='\n\n'+(ctx.apps.get(t.app)?.text||'');
   txt+='\n\nSource: '+canonicalURL(t);
-  return txt.slice(0,15000);
+  if(txt.length>15000)return txt.slice(0,14500)+'\n\n[Excerpt only: this shared text was shortened. The full saved note remains in Reading Desk; export Markdown or JSON for complete content.]';
+  return txt;
  }
  function canonicalURL(t){
   const base=new URL('index.html',location.href).href.split('#')[0];
@@ -912,11 +918,11 @@ function create(ctx){
  }
  async function shareItem(r,email=false){
   const value=textForShare(r);
-  if(email){location.href='mailto:?subject='+encodeURIComponent('Reading Desk · '+(r.title||titleOf(r.target)).slice(0,80))+'&body='+encodeURIComponent(value.slice(0,7000));return;}
+  if(email){const body=value.length>7000?value.slice(0,6450)+'\n\n[Email excerpt shortened; export Markdown or JSON for complete content.]':value;location.href='mailto:?subject='+encodeURIComponent('Reading Desk · '+(r.title||titleOf(r.target)).slice(0,80))+'&body='+encodeURIComponent(body);return;}
   if(navigator.share){try{await navigator.share({title:r.title||titleOf(r.target),text:value,url:canonicalURL(r.target)});return;}catch(e){if(e.name==='AbortError')return;}}
   try{await navigator.clipboard.writeText(value);ctx.notify('Text and source link copied for sharing.');}catch(e){ctx.notify('Sharing unavailable. Use Email or Print.');}
  }
- function backup(){if(loadFailure)return untouchedStorage||'';return JSON.stringify({format:FORMAT,version:VERSION,exported:new Date().toISOString(),items:records},null,2);}
+ function backup(){if(loadFailure)return untouchedStorage||'';return JSON.stringify({...storedEnvelope,format:FORMAT,version:VERSION,exported:new Date().toISOString(),items:records},null,2);}
  function download(text,name){
   const blob=new Blob([text],{type:name.endsWith('.md')?'text/markdown;charset=utf-8':'application/json;charset=utf-8'}),url=URL.createObjectURL(blob);
   const a=document.createElement('a');a.href=url;a.download=name;a.style.display='none';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
@@ -934,13 +940,13 @@ function create(ctx){
  }
  function importFile(file){
   if(!file)return;
-  if(file.size>5*1024*1024){ctx.notify('Backup is too large (maximum 5 MB).');return;}
+  if(file.size>12*1024*1024){ctx.notify('Backup is too large (maximum 12 MB). The existing collection is unchanged.');return;}
   const reader=new FileReader();
   reader.onload=()=>{
    try{
     const parsed=JSON.parse(reader.result);
     if(parsed?.format!==FORMAT||parsed.version!==VERSION||!Array.isArray(parsed.items))throw Error('not a Reading Desk backup');
-    if(parsed.items.length>3000)throw Error('too many items');
+    if(parsed.items.length>20000)throw Error('too many items (maximum 20,000)');
     const incoming=parsed.items.map(sanitize).filter(Boolean);if(parsed.items.length&&!incoming.length)throw Error('No valid entries found');
     const merged=records.slice(),byId=new Map(merged.map(r=>[r.id,r])),now=Date.now();let changes=0;
     for(const row of incoming){
@@ -964,7 +970,7 @@ function create(ctx){
      const copy={...row,id:uuid(),title:(row.title||titleOf(row.target))+' · Imported version',updated:now};
      merged.push(copy);changes++;
     }
-    if(merged.length>3000)throw Error('too many combined items');
+    if(merged.length>20000)throw Error('too many combined items (maximum 20,000)');
     const before=records;records=merged;if(!persist()){records=before;throw Error('Browser storage unavailable');}ui.category='all';ui.filterTarget='';ui.selected='';render();
     ctx.notify(changes+' items merged. Existing and newer items were kept.');
    }catch(e){ctx.notify('Could not import this Reading Desk backup: '+short(e.message,80));}
@@ -1041,7 +1047,7 @@ function create(ctx){
    if(r.kind==='note'){
     if(!printPrefs.personal)continue;
     html+='<section class="gn-rd-print-personal"><h3>'+esc(r.title||'My note')+'</h3>'+
-      '<p>'+esc(r.body).replace(/\n/g,'<br>')+'</p>'+
+      '<p>'+escFull(r.body).replace(/\n/g,'<br>')+'</p>'+
       (printPrefs.dates?'<small>'+esc(dateLine(r,true))+'</small>':'')+'</section>';
    }else{
     if(printPrefs.bookmarkDates)html+='<p class="gn-rd-print-record-date">'+esc(dateLine(r,true))+'</p>';
@@ -1141,7 +1147,7 @@ function create(ctx){
   if(action==='attach-bookmark'||action==='attach-note'){
    let target;try{target=validateTarget(JSON.parse(decodeURIComponent(btn.dataset.target)))}catch(e){}
    if(!target){ctx.notify('Cannot bookmark this entry.');return;}
-   if(action==='attach-note')showEditor(target);else{const found=active().find(r=>r.kind===target.kind&&keyOf(r.target)===keyOf(target));if(found){if(target.section)enterDeskFromText(target.section,target.segment==null?null:target.segment,found.id);else{ui.category='all';ui.sourceType='all';ui.selected=found.id;ui.filterTarget='';ui.filterSegment=null;ui.mobileDetail=matchMedia('(max-width:760px)').matches;ctx.navigate('bookmarks');}}else upsert(target.kind,target);}
+   if(action==='attach-note')showEditor(target);else{const found=active().find(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));if(found){if(target.section)enterDeskFromText(target.section,target.segment==null?null:target.segment,found.id);else{ui.category='all';ui.sourceType='all';ui.selected=found.id;ui.filterTarget='';ui.filterSegment=null;ui.mobileDetail=matchMedia('(max-width:760px)').matches;ctx.navigate('bookmarks');}}else upsert(target.kind,target);}
    return;
   }
   if(action==='new-note'){showEditor(null);return;}

@@ -94,3 +94,14 @@
 @media print{
  body:not(.gn-ed-print-ready) #gnEpPacket{display:none!important}
 }
+
+/* Released, directly downloadable A4 PDFs within each tier. */
+.gn-editions .gn-ed-published{margin:12px 0 24px;background:var(--surface)}
+.gn-editions .gn-ed-published h3{margin-bottom:8px}
+.gn-editions .gn-ed-published .gn-ed-pdf-detail{margin:14px 0 10px;font:600 calc(13px * var(--font-scale,1))/1.5 var(--sans,system-ui);color:var(--text-soft)}
+.gn-editions .gn-ed-pdf-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:12px 0 14px}
+.gn-editions .gn-ed-pdf-actions a{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:10px 15px;border:1px solid var(--border);border-radius:7px;font:700 calc(14px * var(--font-scale,1))/1.45 var(--sans,system-ui);text-decoration:none;max-width:100%}
+.gn-editions .gn-ed-pdf-actions a.gn-ed-primary{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+.gn-editions .gn-ed-pdf-actions a.gn-ed-secondary{background:var(--paper);color:var(--accent);border-color:var(--border)}
+.gn-editions .gn-ed-pdf-actions a:hover{filter:brightness(.94)}
+@media(max-width:480px){.gn-editions .gn-ed-pdf-actions{display:grid}.gn-editions .gn-ed-pdf-actions a{width:100%}}

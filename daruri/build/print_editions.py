@@ -72,7 +72,7 @@ def css(c,mode):
   .reading-editorial-title small{font:600 7pt "Noto Sans";text-transform:uppercase;color:#5d6568;padding-right:5pt}
   '''
   if mode=='bilingual':
-    out+='''.parallel{width:100%;table-layout:fixed;direction:ltr;border-collapse:collapse;margin:0 0 %spt}
+    out+='''.parallel{width:100%%;table-layout:fixed;direction:ltr;border-collapse:collapse;margin:0 0 %spt}
     .parallel td{width:50%%;vertical-align:top;padding:0 0 %spt}
     .parallel .english{padding-right:6pt;border-right:.45pt solid #bbb}
     .parallel .arabic{padding-left:6pt}
