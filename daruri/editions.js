@@ -12,8 +12,8 @@
     {id:'authority',label:'Part IV · Juristic authority · §§230–258',ar:'الاجتهاد والتقليد',from:230,to:258}
   ];
   const defaults={
-    reading:{language:'bilingual',columns:'parallel',vowels:true,density:'balanced',editorial:false,notes:'none',scope:'full',part:'rulings',lesson:'purpose',from:1,to:9},
-    study:{language:'bilingual',columns:'parallel',vowels:true,density:'comfortable',editorial:true,notes:'study',scope:'full',part:'rulings',lesson:'purpose',from:1,to:9}
+    reading:{language:'bilingual',columns:'parallel',vowels:true,density:'balanced',editorial:false,notes:'none',personal:'none',scope:'full',part:'rulings',lesson:'purpose',from:1,to:9},
+    study:{language:'bilingual',columns:'parallel',vowels:true,density:'comfortable',editorial:true,notes:'study',personal:'none',scope:'full',part:'rulings',lesson:'purpose',from:1,to:9}
   };
   const memory=Object.fromEntries(KEYS.map(key=>[key,{...defaults[key]}]));
   let book=null,host=null;
@@ -32,6 +32,7 @@
     reading:[['none','None (shortest)'],['essential','Essential clarifications only']],
     study:[['none','None'],['essential','Essential clarifications'],['study','Translation, interpretation & Qurʾān sources'],['sources','Study notes + hadith sources']]
   };
+  const personalChoices=[['none','None (default)'],['notes','My notes'],['all','My notes and bookmarks']];
   const toggleEditorial=(tier)=>'<label class="gn-ed-toggle"><input data-ep-control="editorial" type="checkbox" '+
     (memory[tier].editorial?'checked ':'')+'/><span><strong>Include editorial section titles</strong>'+
     '<small>Extra descriptive titles for numbered §§, clearly marked as editorial—not Ibn Rushd’s original chapter headings. The existing English editorial labels are shown even in Arabic-only output.</small></span></label>';
@@ -41,6 +42,7 @@
     field(tier,'Column arrangement','columns',columns)+
     field(tier,'Page density','density',density)+
     field(tier,'Notes','notes',noteChoices[tier])+
+    field(tier,'Reading Desk · private material','personal',personalChoices)+
     field(tier,'What to print','scope',scope)+
     '<label class="gn-ed-toggle gn-ed-vowels"><input data-ep-control="vowels" type="checkbox" '+(memory[tier].vowels?'checked ':'')+
     '/><span>Arabic with editorial vowel marks</span></label>'+
@@ -117,6 +119,57 @@
         ['interpretive','lexical','translation','quran-source','hadith-source'];
     return (section.noteIds||[]).map(id=>noteById.get(id)).filter(n=>n&&kinds.includes(n.kind));
   }
+  function personalPrintRows(tier,sections) {
+    const setting=memory[tier];
+    if(setting.personal==='none')return [];
+    try {
+      const raw=localStorage.getItem('gnamma-reading-desk-v1');
+      if(!raw)return [];
+      const data=JSON.parse(raw);
+      if(data?.format!=='gnamma-reading-desk'||data.version!==1||!Array.isArray(data.items))return [];
+      const ids=new Set(sections.map(s=>String(s.id)));
+      const includeUnattached=setting.scope==='full';
+      const filtered=data.items.filter(r=>r&&typeof r==='object'&&!r.deleted&&
+        ((r.kind==='note'&&typeof r.body==='string'&&r.body.trim())||
+          (setting.personal==='all'&&r.kind!=='note'&&r.target)) &&
+        (ids.has(String(r.target?.section))||(includeUnattached&&!r.target?.section)));
+      return filtered.sort((a,b)=>{
+        const n=t=>Number(t?.target?.section)||999999;
+        return n(a)-n(b)||(Number(a.target?.segment??-1)-Number(b.target?.segment??-1))||
+          (Number(a.created)||0)-(Number(b.created)||0);
+      }).slice(0,500).map((r,i)=>({row:r,n:i+1}));
+    }catch(_){return [];}
+  }
+  function personalDate(row){
+    if(row.dateSource!=='recorded'||!Number(row.created))return 'Original date unknown';
+    const date=n=>new Intl.DateTimeFormat(undefined,{dateStyle:'medium',timeStyle:'short'}).format(new Date(n));
+    try{return 'Saved '+date(row.created)+(row.modified?' · Edited '+date(row.modified):'');}
+    catch(_){return 'Date unavailable';}
+  }
+  function personalRefs(rows,id,segment){
+    const matched=rows.filter(({row})=>String(row.target?.section)===String(id)&&
+      (segment==null?row.target?.segment==null:Number(row.target?.segment)===Number(segment)));
+    if(!matched.length)return '';
+    return '<span class="gn-ep-personal-refs" aria-label="Your Reading Desk references">Personal '+
+      matched.map(({n})=>'<a href="#gn-ep-personal-'+n+'">['+n+']</a>').join(' ')+'</span>';
+  }
+  function personalAppendix(rows){
+    if(!rows.length)return '';
+    return '<section class="gn-ep-personal-appendix" role="doc-endnotes"><h2>My Reading Desk · personal observations</h2>'+
+      '<p class="gn-ep-personal-notice">These are reader-created notes and bookmarks, not Ibn Rushd’s original text or Gnamma editorial notes.</p>'+
+      rows.map(({row,n})=>{
+        const t=row.target||{},name=t.section?'§'+esc(t.section)+(t.segment!=null?' · paragraph '+(Number(t.segment)+1):''):
+          (t.term?'Dictionary / index: '+esc(t.term):t.lesson?'Study lesson: '+esc(t.lesson):
+            t.app?'Bidāya application: '+esc(t.app):'Unattached personal note');
+        const link=t.section?'<a href="#gn-ep-section-'+esc(t.section)+'">Return to §'+esc(t.section)+'</a>':'';
+        const body=row.kind==='note'?esc(String(row.body||'').slice(0,30000)).replace(/\n/g,'<br>'):
+          '<em>Saved bookmark</em>';
+        const quote=t.quote?'<blockquote lang="'+(t.lang==='ar'?'ar':'en')+'" dir="'+(t.lang==='ar'?'rtl':'ltr')+'">'+esc(t.quote)+'</blockquote>':'';
+        return '<article id="gn-ep-personal-'+n+'"><h3>'+n+'. '+name+'</h3>'+
+          '<h4>'+esc(row.title||'Personal observation')+'</h4>'+body+quote+
+          '<p class="gn-ep-personal-meta">'+esc(personalDate(row))+' · '+link+'</p></article>';
+      }).join('')+'</section>';
+  }
   function paragraph(text,lang,number) {
     return '<p class="gn-ep-paragraph '+(lang==='ar'?'gn-ep-ar':'gn-ep-en')+'"'+
       (lang==='ar'?' lang="ar" dir="rtl"':' lang="en" dir="ltr"')+'>'+
@@ -124,6 +177,7 @@
   }
   function bodySections(tier,sections,preview=false) {
     const settings=memory[tier],lang=settings.language,all=[],endnotes=[];
+    const personal=preview?[]:personalPrintRows(tier,sections);
     for(const section of sections){
       const id=Number(section.id),english=lang!=='arabic',arabic=lang!=='english';
       const part=PARTS.find(x=>x.from===id);
@@ -150,7 +204,9 @@
         if(lang==='bilingual'&&settings.columns==='stacked')sectionParts.push('<div class="gn-ep-stacked">'+ar+en+'</div>');
         else if(lang==='bilingual')sectionParts.push('<table class="gn-ep-pair"><tbody><tr><td class="gn-ep-left">'+en+'</td><td class="gn-ep-right">'+ar+'</td></tr></tbody></table>');
         else sectionParts.push(en||ar);
+        if(personal.length)sectionParts.push(personalRefs(personal,id,i));
       }
+      if(personal.length)sectionParts.push(personalRefs(personal,id,null));
       if(keys.length)sectionParts.push('<span class="gn-ep-note-refs" aria-label="Notes for this section">'+keys.join(' ')+'</span>');
       all.push('<section class="gn-ep-section" id="gn-ep-section-'+id+'">'+sectionParts.join('')+'</section>');
     }
@@ -158,6 +214,7 @@
       all.push('<section class="gn-ep-endnotes"><h2>Selected explanatory notes</h2>'+
         endnotes.map(item=>'<p><strong>'+item.index+'. §'+item.section+' · '+esc(item.note.kind)+'</strong> '+esc(item.note.text)+'</p>').join('')+'</section>');
     }
+    if(personal.length)all.push(personalAppendix(personal));
     return all.join('');
   }
   function printStyle(tier) {
@@ -186,6 +243,15 @@
       '.gn-ep-sheet .gn-ep-endnotes{margin-top:14pt;break-before:page;}'+
       '.gn-ep-sheet .gn-ep-endnotes p{font:8.7pt/1.4 Georgia,serif;margin:0 0 8pt;}'+
       '.gn-ep-sheet .gn-ep-note-refs{font-size:8pt;}'+
+       '.gn-ep-sheet .gn-ep-personal-refs{display:block;font:7.5pt Arial,sans-serif;margin:0 0 4pt;color:#424242;}'+
+       '.gn-ep-sheet .gn-ep-personal-appendix{column-span:all;break-before:page;margin-top:14pt;font:9.6pt/1.5 Georgia,serif;}'+
+       '.gn-ep-sheet .gn-ep-personal-appendix article{break-inside:avoid-page;margin:0 0 13pt;}'+
+       '.gn-ep-sheet .gn-ep-personal-appendix h3{font-size:11pt;margin:12pt 0 3pt;}'+
+       '.gn-ep-sheet .gn-ep-personal-appendix h4{font-size:10pt;margin:3pt 0 5pt;}'+
+       '.gn-ep-sheet .gn-ep-personal-appendix blockquote{border-left:1pt solid #888;padding-left:8pt;margin:5pt 0;}'+
+       '.gn-ep-sheet .gn-ep-personal-appendix [lang=ar]{font-family:"Noto Naskh Arabic",Amiri,serif;direction:rtl;text-align:right;font-size:12pt;}'+
+       '.gn-ep-sheet .gn-ep-personal-meta{font:8pt Arial,sans-serif;color:#555;}'+
+       '.gn-ep-sheet .gn-ep-personal-notice{font-style:italic;}'+
       '.gn-ep-sheet .gn-ep-head{border-bottom:.6pt solid #888;margin:0 0 12pt;padding:0 0 7pt;font:11pt/1.4 Georgia,serif;}'+
       '.gn-ep-sheet .gn-ep-head small{display:block;font:8pt/1.4 Arial,sans-serif;}';
   }
@@ -222,7 +288,7 @@
     preview.dataset.epFormat=s.language;
     preview.dataset.epColumns=s.columns;
     preview.dataset.epDensity=s.density;
-    config.querySelector('[data-ep-count]').textContent=sample.sections.length+' numbered source sections selected · '+(s.notes==='none'?'no notes':'selected notes at the end')+' · complete text retained.';
+    config.querySelector('[data-ep-count]').textContent=sample.sections.length+' numbered source sections selected · '+(s.notes==='none'?'no editorial notes':'selected editorial notes at the end')+' · '+(s.personal==='none'?'no private notes':'Reading Desk material at the end')+' · complete text retained.';
   }
   function message(tier,text) {
     const box=host?.querySelector('[data-ep-message="'+tier+'"]');
