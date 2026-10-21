@@ -41,14 +41,26 @@ def validate_and_publish(source: Path, site: Path):
             assert all(1 <= int(page) <= pages for page in destinations.values()), filename
             link_count = sum(len(page.get_links()) for page in document)
             assert link_count > 100, (filename, link_count)
+            # Verify the live PDF annotations, not just possibly wrapped extracted prose.
+            all_uris = [link.get('uri', '') for page in document for link in page.get_links()]
+            first_page = document[int(meta['section_pages']['1']) - 1]
+            section1_uris = {link.get('uri', '') for link in first_page.get_links()}
+            assert 'https://quran.com/55/4' in section1_uris, filename + ' §1 55:4 source missing'
+            assert 'https://quran.com/6/149' in section1_uris, filename + ' §1 6:149 source missing'
+            assert 'https://quran.com/33/40' not in section1_uris, filename + ' §1 33:40 false citation'
             if filename == 'daruri.pdf':
                 text_pages = [p for p in document if 'Verified Qurʾān excerpt' in p.get_text()]
                 assert text_pages, 'Direct Quran quotation excerpt missing'
                 example = '\\n'.join(p.get_text() for p in text_pages)
                 assert 'https://quran.com/' not in example, 'Raw Quran URL visibly printed'
                 external = [link.get('uri', '') for p in text_pages for link in p.get_links()]
-                assert any(u == 'https://quran.com/4/43' for u in external), 'True direct quotation source URI missing'
-                assert all('Cf. Qurʾān, al-Raḥmān 55:4' not in p.get_text() for p in document), 'Weak §1 allusion remains in scholarly apparatus'
+                assert 'https://quran.com/4/43' in external, 'True direct quotation source URI missing'
+                # These comparison excerpts must never be mislabelled as authorial quotations.
+                section1_text = first_page.get_text().replace('\\n', ' ')
+                assert 'possible verbal allusion' in section1_text, 'Qualification missing in scholarly §1 apparatus'
+                # The caution text can flow onto a following physical page.
+                # Source-map/reader tests independently require both notes to state
+                # that these are possible echoes, never authorial quotations.
             old_pages = manifest['files'][filename]['pages']
             # Source/contents structural changes beyond source-note typography
             # require separate editorial approval; do not silently publish them.
@@ -64,8 +76,8 @@ def validate_and_publish(source: Path, site: Path):
         record.update(sha256=sha, source_sha256=sha, size_bytes=pdf_path.stat().st_size, pages=pages)
         report[filename] = {'pages': pages, 'links': link_count, 'bookmarks': len(outline), 'sha256': sha}
     manifest['edition_date'] = '2026-10-21'
-    manifest['release_revision'] = 'daruri10-conservative-quran-20261021'
-    manifest['citation_presentation_revision'] = '20261021-qpolicy1'
+    manifest['release_revision'] = 'daruri11-section1-qualified-quran-20261021'
+    manifest['citation_presentation_revision'] = '20261021-section1-qparallels1'
     manifest_file.write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     (source/'source-note-pdf-qa.json').write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(report, indent=2))

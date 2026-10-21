@@ -1,0 +1,150 @@
+name: Daruri Section 1 Quran parallels QA and PDF release
+
+on:
+  push:
+    branches:
+      - fix/daruri-section1-two-quran-parallels-20261021
+    paths:
+      - 'daruri/build/data/quran-source-notes.json'
+      - 'daruri/build/main_text.py'
+      - 'daruri/edition-r3-20261020.js'
+      - 'daruri/source-note-ui.js'
+      - 'daruri/qa/verify-section1-quran-parallels.js'
+      - 'daruri/qa/verify-reader-source-notes.js'
+      - 'daruri/qa/refresh_note_pdf_manifest.py'
+      - 'daruri/qa/verify-ios-source-note-touch.py'
+      - '.github/workflows/daruri-section1-quran-release.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daruri-section1-restore-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  reader-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Verify Quran attribution, exact anchors and source inventory
+        run: node daruri/qa/verify-section1-quran-parallels.js
+      - name: Verify public source-note loader reproduces its asset
+        run: python daruri/build/build_source_reference_data.py --check
+      - name: Install reader DOM regression dependency without changing repo lockfiles
+        run: npm install --no-save --no-package-lock jsdom@24
+      - name: Check all 259 reader sections, source cards and offline URLs
+        run: node daruri/qa/verify-reader-source-notes.js
+
+  webkit-mobile-qa:
+    needs: reader-qa
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install WebKit and Chromium
+        run: |
+          python -m pip install 'playwright==1.57.0'
+          python -m playwright install --with-deps webkit chromium
+      - name: Test real reader Section 1 citation modal at iPhone widths
+        run: python daruri/qa/verify-ios-source-note-touch.py
+      - name: Keep visual browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: section1-qualified-quran-browser-qa
+          path: daruri/qa/source-note-touch-results/
+          if-no-files-found: warn
+
+  build-pdfs:
+    needs: reader-qa
+    runs-on: ubuntu-latest
+    timeout-minutes: 105
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Arabic PDF shaping dependencies and pinned renderers
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b libgdk-pixbuf-2.0-0
+          python -m pip install --upgrade pip
+          python -m pip install -r daruri/build/requirements.txt 'PyMuPDF>=1.24,<2' 'pypdf==5.9.0'
+      - name: Build the five canonical PDFs with updated citations
+        run: python daruri/build/build_editions.py --output-dir /tmp/daruri-section1-quran-build
+      - name: Verify and install full PDF editions, checksums and exact section maps
+        run: python daruri/qa/refresh_note_pdf_manifest.py --output-dir /tmp/daruri-section1-quran-build --site-dir daruri
+      - name: Rebuild 10 compact A4 variants (8 annotation-free reading + 2 study)
+        run: python daruri/build/publish_editions.py --output-dir daruri/editions
+      - name: Verify A4 study source links and exclusion of 33:40 attribution
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import fitz, json
+          root=Path('daruri/editions')
+          manifest=json.loads((root/'manifest.json').read_text())
+          assert len(manifest['files'])==10
+          for row in manifest['files']:
+              with fitz.open(root / row['file']) as pdf:
+                  links={l.get('uri','') for page in pdf for l in page.get_links()}
+                  if row['tier']=='study':
+                      assert 'https://quran.com/55/4' in links, row['file']
+                      assert 'https://quran.com/6/149' in links, row['file']
+                      assert 'https://quran.com/33/40' not in links, row['file']
+                  else:
+                      assert 'https://quran.com/55/4' not in links, 'Reading edition must remain apparatus-free'
+          print('PASS: 10 A4 PDFs, two study editions with qualified sources, eight note-free reading editions')
+          PY
+      - name: Rebuild checksum-locked personal quotation maps for these exact PDF bytes
+        run: python daruri/build/build_personal_anchor_maps.py --publish
+      - name: Check personal PDF export and stable section link safety
+        run: node daruri/qa/verify-personal-export-safety.js
+      - name: Render Section 1 example pages for PDF layout inspection
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import fitz, json
+          out=Path('daruri/qa/section1-pdf-renders')
+          out.mkdir(exist_ok=True)
+          for stem in ['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf']:
+              meta=json.loads((Path('daruri/build/release')/(stem+'.metadata.json')).read_text())
+              with fitz.open(Path('daruri')/stem) as pdf:
+                  p=pdf[int(meta['section_pages']['1'])-1]
+                  p.get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False).save(out/(stem+'.png'))
+          print('PASS: rendered five rebuilt PDF Section 1 pages')
+          PY
+      - name: Keep rebuilt PDF metadata, notes QA and visual pages
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: section1-quran-five-pdf-verification
+          path: |
+            /tmp/daruri-section1-quran-build/*.metadata.json
+            /tmp/daruri-section1-quran-build/source-note-pdf-qa.json
+            daruri/qa/section1-pdf-renders/*.png
+          if-no-files-found: warn
+      - name: Commit only rebuilt PDFs, release maps and A4 editions to the isolated branch
+        run: |
+          git config user.name 'gnamma-research-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add daruri/daruri.pdf daruri/daruri-study.pdf daruri/daruri-english.pdf daruri/daruri-arabic.pdf daruri/daruri-arabic-vowelled.pdf
+          git add daruri/pdf-editions-manifest.json daruri/build/release/*.metadata.json
+          git add daruri/personal-anchor-maps/*.json
+          git add daruri/editions/reading/*.pdf daruri/editions/study/*.pdf daruri/editions/manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish validated qualified Quran citation PDF variants and aligned personal maps [skip ci]'
+            git push origin HEAD:${GITHUB_REF_NAME}
+          else
+            echo 'Canonical and compact PDF bytes already current'
+          fi

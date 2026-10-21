@@ -230,6 +230,8 @@ def _resolve_anchor(text: str, descriptor: Mapping[str, Any], context: str) -> i
 # Only exact verse wording checked against Quran.com. These are comparison
 # snippets, not changes to Ibn Rushd's wording or a reported variant reading.
 _VERIFIED_VERSE_EXCERPTS = {
+    'QUR-R001-Q049': ('عَلَّمَهُ ٱلْبَيَانَ', 'Qurʾānic comparison only · al-Raḥmān 55:4 · possible verbal allusion, NOT an authorial quotation'),
+    'QUR-R001-Q050': ('فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ', 'Qurʾānic comparison only · al-Anʿām 6:149 · possible verbal allusion, NOT an authorial quotation'),
     'QUR-R038-Q001': ('يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَقْرَبُوا۟ ٱلصَّلَوٰةَ وَأَنتُمْ سُكَـٰرَىٰ حَتَّىٰ تَعْلَمُوا۟ مَا تَقُولُونَ', 'Verified Qurʾān excerpt · al-Nisāʾ 4:43'),
 }
 
