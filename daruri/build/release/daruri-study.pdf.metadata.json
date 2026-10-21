@@ -2,9 +2,9 @@
   "edition": "study",
   "filename": "daruri-study.pdf",
   "pages": 131,
-  "bytes": 1517417,
-  "sha256": "4ed51bb649c4c795a5421a1f8dbf5cb30c0fc54ee5e1c471120d94c28bd9b38c",
-  "links": 1894,
+  "bytes": 1512772,
+  "sha256": "7d8c105574f9da5ee80e70e2c6802110a11d486033cd1cbea60f704da7b3a813",
+  "links": 1869,
   "bookmarks": 319,
   "section_pages": {
     "1": 8,
@@ -318,45 +318,15 @@
       "x": 43.937007874015755,
       "y": 86.18983852116142
     },
-    "qcall--QUR-R001-Q049--0--en": {
-      "page": 8,
-      "x": 145.23315045214076,
-      "y": 105.76392934147393
-    },
-    "qcall--QUR-R001-Q050--0--en": {
-      "page": 8,
-      "x": 293.35888287401576,
-      "y": 138.09377699772392
-    },
-    "qcall--QUR-R001-Q051--0--en": {
-      "page": 8,
-      "x": 100.05956646776576,
-      "y": 181.42277699772396
-    },
     "call-BA15-I01": {
       "page": 8,
-      "x": 219.11693951464073,
+      "x": 215.66576763964073,
       "y": 342.01770082584915
     },
     "segment-1-0-vocalized": {
       "page": 8,
       "x": 312.26102362204733,
       "y": 86.18983852116142
-    },
-    "qcall--QUR-R001-Q049--0--vocalized": {
-      "page": 8,
-      "x": 428.03651805487215,
-      "y": 92.45547816959892
-    },
-    "qcall--QUR-R001-Q050--0--vocalized": {
-      "page": 8,
-      "x": 317.59462352362215,
-      "y": 115.55547816959893
-    },
-    "qcall--QUR-R001-Q051--0--vocalized": {
-      "page": 8,
-      "x": 330.85219188299715,
-      "y": 138.65547816959892
     },
     "R2": {
       "page": 8,
@@ -382,21 +352,6 @@
       "page": 8,
       "x": 312.26102362204733,
       "y": 382.7566178795523
-    },
-    "QUR-R001-Q049": {
-      "page": 8,
-      "x": 43.937007874015755,
-      "y": 707.7064960629923
-    },
-    "QUR-R001-Q050": {
-      "page": 8,
-      "x": 43.937007874015755,
-      "y": 719.1814960629922
-    },
-    "QUR-R001-Q051": {
-      "page": 8,
-      "x": 43.937007874015755,
-      "y": 730.6564960629921
     },
     "BA15-I01": {
       "page": 8,
@@ -738,25 +693,10 @@
       "x": 43.937007874015755,
       "y": 428.3657176734744
     },
-    "qcall--QUR-R011-Q052--0--en": {
-      "page": 12,
-      "x": 92.84740826464076,
-      "y": 520.154808493787
-    },
     "segment-11-1-vocalized": {
       "page": 12,
       "x": 312.26102362204733,
       "y": 428.3657176734744
-    },
-    "qcall--QUR-R011-Q052--0--vocalized": {
-      "page": 12,
-      "x": 318.74379344549715,
-      "y": 503.93135732191183
-    },
-    "QUR-R011-Q052": {
-      "page": 12,
-      "x": 43.937007874015755,
-      "y": 776.556496062992
     },
     "pair-11-2": {
       "page": 13,
@@ -1745,7 +1685,7 @@
     },
     "qcall--QUR-R038-Q001--0--vocalized": {
       "page": 24,
-      "x": 335.17714305487215,
+      "x": 340.54213328924715,
       "y": 627.0119099332553
     },
     "R39": {
@@ -2033,35 +1973,20 @@
       "x": 43.937007874015755,
       "y": 563.7903543307085
     },
-    "qcall--QUR-R047-Q053--0--en": {
-      "page": 27,
-      "x": 117.01586529589076,
-      "y": 655.579445151021
-    },
     "segment-47-1-vocalized": {
       "page": 27,
       "x": 312.26102362204733,
       "y": 563.7903543307085
     },
-    "qcall--QUR-R047-Q053--0--vocalized": {
-      "page": 27,
-      "x": 364.43373485174715,
-      "y": 662.4559939791459
-    },
     "QUR-R045-Q002": {
-      "page": 27,
-      "x": 43.937007874015755,
-      "y": 742.1314960629921
-    },
-    "N020": {
       "page": 27,
       "x": 43.937007874015755,
       "y": 753.6064960629922
     },
-    "QUR-R047-Q053": {
+    "N020": {
       "page": 27,
       "x": 43.937007874015755,
-      "y": 776.556496062992
+      "y": 765.0814960629921
     },
     "pair-47-2": {
       "page": 28,
@@ -9265,12 +9190,12 @@
     },
     "qcall--QUR-R215-Q040--0--vocalized": {
       "page": 108,
-      "x": 341.76601024237215,
+      "x": 347.13100047674715,
       "y": 575.800993979146
     },
     "qcall--QUR-R215-Q041--0--vocalized": {
       "page": 108,
-      "x": 386.97108836737215,
+      "x": 423.70863719549715,
       "y": 598.9009939791459
     },
     "R216": {
@@ -11145,7 +11070,7 @@
     }
   },
   "source_notes": {
-    "quran": 53,
+    "quran": 48,
     "hadith": 0
   },
   "main_text_validation": {
@@ -11163,18 +11088,18 @@
     "missing_section_ids": [],
     "duplicate_ids": {},
     "missing_internal_link_targets": [],
-    "expected_note_count": 121,
-    "rendered_note_count": 121,
+    "expected_note_count": 116,
+    "rendered_note_count": 116,
     "missing_note_ids": [],
     "unexpected_note_ids": [],
     "note_text_mismatches": [],
-    "quran_note_count": 53,
-    "quran_anchor_pair_count": 57,
-    "quran_marker_count": 114,
+    "quran_note_count": 48,
+    "quran_anchor_pair_count": 52,
+    "quran_marker_count": 104,
     "missing_quran_markers": [],
     "unexpected_quran_markers": [],
     "hadith_notes_visible": [],
-    "footnote_count": 121,
+    "footnote_count": 116,
     "footnote_number_conflicts": {},
     "footnote_numbers_contiguous": true,
     "ok": true
@@ -11188,13 +11113,13 @@
   "footnote_pagination": {
     "ok": true,
     "page_count": 131,
-    "calls_checked": 182,
-    "footnote_bodies_checked": 122,
+    "calls_checked": 172,
+    "footnote_bodies_checked": 117,
     "mismatches": [],
     "missing_body_anchors": [],
     "suggested_breaks": []
   },
-  "expanded_note_links": 183,
+  "expanded_note_links": 173,
   "structural_outline": {
     "source_headings": 46,
     "editorial_titles": 258,
@@ -11212,10 +11137,5 @@
       6,
       7
     ]
-  },
-  "source_map_verified": {
-    "pdf_sha256": "4ed51bb649c4c795a5421a1f8dbf5cb30c0fc54ee5e1c471120d94c28bd9b38c",
-    "method": "All 259 named PDF section destinations match recorded source pages",
-    "count": 259
   }
 }

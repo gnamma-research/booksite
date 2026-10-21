@@ -146,3 +146,33 @@ accessible labels, 44-pixel mobile touch targets, unchanged URLs, no visible
 raw URLs, no horizontal overflow and verified Arabic excerpt brackets.
 Native Safari/iOS long-press and a deployed GitHub Pages build require separate
 device-side confirmation; the real anchors have been preserved for that reason.
+
+## Conservative Qurʾānic source attribution (21 October 2026)
+
+The initial 53-claim map admitted five literary/thematic **allusions** as compulsory
+passage-level Qurʾān citations, despite their not being direct quotations:
+`QUR-R001-Q049` (معلم البيان / 55:4), `QUR-R001-Q050` (الحجج البالغة /
+6:149), `QUR-R001-Q051` (خاتم الرسل / 33:40),
+`QUR-R011-Q052` (29:45), and `QUR-R047-Q053` (12:53).
+These five are now **withheld** from reader Notes, reading/study footnotes and
+scholarly source apparatus. Their complete provenance remains in the source
+map under `withheld_editorial_allusions`; no authorial text is deleted or
+rewritten.
+
+The published map now contains **48** Qurʾān records, supported by explicit
+quotation, explicit invocation of revelation, or separately qualified
+paraphrase, composite citation, wording variation or transmitted reading.
+One- or two-word matches, ordinary Arabic idioms and generic legal themes do
+not establish that Ibn Rushd intentionally cited a particular verse. Such
+correspondences remain editorial hypotheses, not source citations.
+
+The public reading payload retains all **542** pre-existing explanatory notes,
+**33** hadith sources and **48** Qurʾān source notes. The reader and PDF tests
+compare the retained section ownership with the earlier published digest,
+reinstating the five withheld IDs *only for that comparison*. The ornamental
+Qurʾān excerpt demonstration has been moved from the conjectural §1 allusions
+to a demonstrable authorial quotation in **§38 / al-Nisāʾ 4:43**; the reader
+labels it an excerpt and separates its own explanatory translation from the
+canonical Arabic text. Recheck these editorial judgements against a scholarly
+edition before making further additions. Do not regenerate the five allusions
+into any present or future PDF/HTML edition.

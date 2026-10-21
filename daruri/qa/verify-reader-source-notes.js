@@ -16,7 +16,15 @@ const digest = value => crypto.createHash('sha256').update(JSON.stringify(value)
 const payload = {textContent:''};
 vm.runInNewContext(read('edition-r3-20261020.js'), {document:{getElementById:() => payload}});
 const book = JSON.parse(payload.textContent);
-const sourceContext = {window:{}};
+const sourceContext = {
+  window:{}, URL,
+  document:{
+    baseURI:'https://gnamma-research.github.io/booksite/daruri/',
+    currentScript:{src:'https://gnamma-research.github.io/booksite/daruri/source-reference-data.js'},
+    createElement:()=>({}),
+    head:{appendChild(){}}
+  }
+};
 vm.runInNewContext(read('source-reference-data.js'), sourceContext);
 const supplement = JSON.parse(JSON.stringify(sourceContext.window.DARURI_SOURCE_REFERENCES));
 const quranMap = JSON.parse(read('build/data/quran-source-notes.json'));
@@ -32,16 +40,29 @@ const dictionarySources = Object.values(supplement.dictionaryArticles).flat();
 const ownership = new Map();
 
 assert.equal(book.sections.length, 259, 'All authorial sections and the colophon remain available');
-assert.equal(book.notes.length, 628);
-assert.equal(book.stats.notes, 628);
-assert.equal(book.stats.noteCount, 628);
+assert.equal(book.notes.length, 623);
+assert.equal(book.stats.notes, 623);
+assert.equal(book.stats.noteCount, 623);
 assert.equal(oldNotes.length, 542);
-assert.equal(textSources.length, 86);
-assert.equal(textSources.filter(note => note.source_type === 'quran').length, 53);
+assert.equal(textSources.length, 81);
+assert.equal(textSources.filter(note => note.source_type === 'quran').length, 48);
 assert.equal(textSources.filter(note => note.source_type === 'hadith').length, 33);
 assert.equal(digest(oldNotes), '4d8a6eda38a7918413a3d8e086564624cfb6999596a607ec0055b02a8ef4e8ad', 'All 542 original note records are unchanged');
-assert.equal(digest(textSources), '379ef656f84397a6f4d59558e7d8111064a01db23f564a3a6556133575120962', 'All 86 verified source-note records are unchanged');
-assert.equal(digest(book.sections.map(section => [String(section.id), section.noteIds || []])), '9ab9a4096a8741da8cc5708f627a55561072c85c3c618bc9beb09b74041fffba', 'Original section-to-note ownership is unchanged');
+const withheld = quranMap.withheld_editorial_allusions || [];
+const withheldIds = ['QUR-R001-Q049','QUR-R001-Q050','QUR-R001-Q051','QUR-R011-Q052','QUR-R047-Q053'];
+assert.deepEqual(withheld.map(note => note.id), withheldIds, 'Five weak allusions are retained only in the provenance record');
+assert.ok(withheld.every(note => note.reference_type === 'allusion'), 'Genuine Quran quotations may not be silently withheld');
+assert.equal(quranMap.counts.notes, 48);
+assert.equal(quranMap.counts.withheld_allusions, 5);
+assert.ok(textSources.every(note => !withheldIds.includes(note.id)), 'No weak allusion in reader Notes');
+assert.ok(quranMap.notes.every(note => !withheldIds.includes(note.id)), 'No weak allusion in PDF source notes');
+const originalSectionNotes = book.sections.map(section => [
+  String(section.id),
+  [...(section.noteIds || []),
+   ...withheld.filter(note => String(note.section_id) === String(section.id)).map(note => note.id)]
+]);
+assert.equal(digest(originalSectionNotes), '9ab9a4096a8741da8cc5708f627a55561072c85c3c618bc9beb09b74041fffba',
+  'Only the five weak source references were removed from the original section-note order');
 assert.equal(digest(book.apps), 'ae24ec973dfbadbea112b4f9cf729bfd4fa914341352169b253aba8576140a5c', 'All existing application texts and primary/related section mappings are unchanged');
 assert.equal(byID.size, book.notes.length, 'Main note IDs are unique');
 for (const section of book.sections) for (const id of section.noteIds || []) {
@@ -49,7 +70,7 @@ for (const section of book.sections) for (const id of section.noteIds || []) {
   assert.ok(!ownership.has(id), 'Note has a single section owner: ' + id);
   ownership.set(id, String(section.id));
 }
-assert.equal(ownership.size, 628, 'No original or source note is orphaned');
+assert.equal(ownership.size, 623, 'No original or source note is orphaned');
 assert.equal(ownership.get('N015'), '31', 'Legacy note ordinal n must not determine ownership');
 assert.equal(ownership.get('BA15-I01'), '1', 'Bou Akl note retains its original section');
 
@@ -69,7 +90,7 @@ for (const note of Object.values(hadithMap.notes_by_section)) {
 assert.equal(references(byID.get('HAD-R189')).length, 0, 'Unresolved attribution notice intentionally has no invented source URL');
 assert.equal(appSources.length, 12, 'Exactly 12 explicitly scoped application sources');
 assert.equal(dictionarySources.length, 13);
-assert.equal(new Set([...book.notes, ...appSources, ...dictionarySources].map(note => note.id)).size, 653, 'Main, application and dictionary source IDs are distinct');
+assert.equal(new Set([...book.notes, ...appSources, ...dictionarySources].map(note => note.id)).size, 648, 'Main, application and dictionary source IDs are distinct');
 for (const source of Object.values(backmatterMap.application_notes_by_section)) {
   const notes = supplement.applications[source.application_id] || [];
   const note = notes.find(item => item.id === source.id);
@@ -150,7 +171,7 @@ function assertBodyAndLinks(element, note) {
   body.querySelector('.source-note-links')?.remove();
   assert.equal(body.textContent, note.text, 'Exact rendered body: ' + note.id);
   const links = [...element.querySelectorAll('.source-note-links a')];
-  assert.deepEqual(links.map(link => ({reference:link.textContent, url:link.getAttribute('href')})), references(note), 'Exact labelled source links: ' + note.id);
+  assert.deepEqual(links.map(link => ({reference:link.closest('.gn-source-citation')?.querySelector('.gn-source-label')?.textContent || link.textContent, url:link.getAttribute('href')})), references(note), 'Exact labelled source links: ' + note.id);
   for (const link of element.querySelectorAll('a')) {
     assert.match(link.href, /^https?:\/\//, 'External note link');
     assert.equal(link.target, '_blank');
@@ -257,7 +278,7 @@ function assertOfflineAsset() {
     noteCards++;
     if ((index + 1) % 65 === 0) console.log('Checked ' + (index + 1) + ' of 259 reader sections.');
   }
-  assert.equal(visited.size, 640, 'Every original note and all 98 main/application sources rendered once in its owned section');
+  assert.equal(visited.size, 635, 'Every original note and all 98 main/application sources rendered once in its owned section');
   for (const note of [...book.notes, ...appSources]) assert.ok(visited.has(note.id), 'Rendered note ' + note.id);
   for (const note of dictionarySources) assert.ok(!visited.has(note.id));
   // Application popups display the same source body beside the cited material.
@@ -284,5 +305,5 @@ function assertOfflineAsset() {
   assert.equal(errors.length, 0, errors.join('\n'));
   dom.window.close();
   assertOfflineAsset();
-  console.log('PASS: all 259 section ownership/count checks; ' + noteCards + ' Notes cards; 542 original notes, 53 Qur’an and 33 hadith notes unchanged; all 12 application source notes scoped only to their primary sections and popups; exact bodies/labelled links and URL-less HAD-R189 preserved; source groups first; no duplicate DOM/source IDs; Tab/Shift-Tab wrap, close/Escape focus, route, scroll and preferences retained; source data included in offline ZIP and service worker.');
+  console.log('PASS: all 259 section ownership/count checks; ' + noteCards + ' Notes cards; 542 original notes, 48 warranted Quran references, 33 hadith notes and five withheld short allusions; all 12 application source notes scoped only to their primary sections and popups; exact bodies/labelled links and URL-less HAD-R189 preserved; source groups first; no duplicate DOM/source IDs; Tab/Shift-Tab wrap, close/Escape focus, route, scroll and preferences retained; source data included in offline ZIP and service worker.');
 })().catch(error => {console.error(error); process.exitCode = 1;});

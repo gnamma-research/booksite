@@ -5,7 +5,7 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "daruri8-structure-20261020";
+  const RELEASE_VERSION = "20261021-qpolicy1";
   const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
@@ -141,11 +141,11 @@
       ['daruri/icon-512.png', 'icon-512.png'],
       ['daruri/dictionary.html', 'dictionary.html'],
       ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri8-structure-20261020'],
-      ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=daruri8-structure-20261020'],
-      ['daruri/source-reference-data.js', 'source-reference-data.js?v=daruri8-structure-20261020'],
-      ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-source-notes2'],
-      ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-source-notes2'],
-      ['daruri/download-bundle.js', 'download-bundle.js?v=20261021-no-ai1'],
+      ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=20261021-qpolicy1'],
+      ['daruri/source-reference-data.js', 'source-reference-data.js?v=20261021-qpolicy1'],
+      ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-qpolicy1'],
+      ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-qpolicy1'],
+      ['daruri/download-bundle.js', 'download-bundle.js?v=20261021-qpolicy1-no-ai1'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
       ['daruri/study-guide.css', 'study-guide.css'],
@@ -173,7 +173,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261021-no-ai1'],
+      ['daruri/sw.js', 'sw.js?v=20261021-qpolicy1-no-ai1'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
