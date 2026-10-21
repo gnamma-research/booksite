@@ -237,14 +237,14 @@ function create(ctx){
    return sort==='created-asc'?av-bv||sourceSort(a,b):bv-av||sourceSort(a,b);
   });
  }
- function upsert(kind,target,body='',title=''){
+ function upsert(kind,target,body='',title='',aiMeta=null){
   const now=Date.now();
   if(records.length>2999){ctx.notify('Reading Desk is full; export and remove unused entries before adding more.');return null;}
   if(kind!=='note'){
    const existing=records.find(x=>x.kind===kind&&x.target&&keyOf(x.target)===keyOf(target));
    if(existing){if(existing.deleted){const prior={deleted:existing.deleted,updated:existing.updated};existing.deleted=0;existing.updated=now;if(!persist()){Object.assign(existing,prior);return null;}ctx.notify('Restored to Reading Desk.');}else ctx.notify('Already in Reading Desk.');return existing;}
   }
-  const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target});
+  const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target,...(aiMeta?{ai:aiMeta}:{})});
   if(!row)return null;
   records.unshift(row);
   if(!persist()){records.shift();return null;}
@@ -252,6 +252,17 @@ function create(ctx){
   if(state.route==='bookmarks')render();
   if(state.route==='reader')afterReader();
   return row;
+ }
+ function saveAIAssistedNote(data){
+  if(!data||typeof data!=='object')return {ok:false,error:'Invalid AI note.'};
+  const body=typeof data.body==='string'?data.body:'';
+  if(!body.trim()||body.length>60000)return {ok:false,error:'The AI response is empty or too long.'};
+  const target=data.target?validateTarget(data.target):null;
+  if(data.target&&!target)return {ok:false,error:'The original source could not be verified. Keep the draft and try again.'};
+  const provider=clamp(data.provider||'Unspecified AI',180);
+  const question=clamp(data.question||'',16000);
+  const entry=upsert('note',target,body,clamp(data.title||'AI-assisted note',240),{type:'ai-assisted',provider,question,importedAt:Date.now(),verified:false});
+  return entry?{ok:true,id:entry.id}:{ok:false,error:'Reading Desk could not save this note. The imported answer is still available.'};
  }
  function toggleSection(n){
   n=String(n);const row=records.find(r=>r.kind==='section'&&!r.deleted&&r.target?.section===n);
@@ -1251,7 +1262,7 @@ function create(ctx){
   const main=$('#mainContent');if(main){let scheduled=false;new MutationObserver(()=>{if(scheduled||decorating)return;scheduled=true;queueMicrotask(()=>{scheduled=false;decorate();});}).observe(main,{subtree:true,childList:true});}
  }
  install();
- return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records};
+ return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records,saveAIAssistedNote};
 }
 window.GnammaReadingDesk={create};
 })();
