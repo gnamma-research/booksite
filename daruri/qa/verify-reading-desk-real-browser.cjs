@@ -149,6 +149,28 @@ async function exercise(engine, width, touch) {
     await page.locator('.gn-rd-return [data-rd="return"]').waitFor({timeout:25000});
     await page.locator('.gn-rd-return [data-rd="return"]').click();
     await page.locator('.gn-rd-page').waitFor({timeout:25000});
+    const position = async () => page.evaluate(() => {
+      const page=document.querySelector('.gn-rd-page');
+      const detail=document.querySelector('.gn-rd-mobile-detail-open #gn-rd-detail');
+      const bar=document.querySelector('.gn-rd-hero');
+      return {scrollY, height:innerHeight, pageTop:page?.getBoundingClientRect().top,
+        detailTop:detail?.getBoundingClientRect().top,
+        heroTop:bar?.getBoundingClientRect().top};
+    });
+    const earlyPosition=await position();
+    await page.waitForTimeout(600); // Allow scroll-restoration animation frames to complete.
+    const settledPosition=await position();
+    console.log('RETURN VIEWPORT '+id+' initial='+JSON.stringify(earlyPosition)+
+      ' settled='+JSON.stringify(settledPosition));
+    if(touch) {
+      check(settledPosition.detailTop!==undefined &&
+        settledPosition.detailTop<settledPosition.height*0.8,
+        id+': selected mobile detail displaced below viewport after returning from source: '+
+          JSON.stringify(settledPosition));
+      check(settledPosition.pageTop<settledPosition.height*0.6,
+        id+': entire Reading Desk displaced below the phone viewport: '+
+          JSON.stringify(settledPosition));
+    }
 
     const widthInfo=await page.evaluate(() => {
       const desk=document.querySelector('.gn-rd-page');
