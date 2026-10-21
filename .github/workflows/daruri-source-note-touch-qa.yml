@@ -2,9 +2,11 @@ name: Daruri source-note Safari touch QA
 
 on:
   push:
-    branches: [fix/ios-note-longpress-focus-20261021]
+    branches: [fix/ios-note-longpress-focus-20261021, fix/daruri-quran-allusion-audit-20261021]
     paths:
       - 'daruri/source-note-ui.js'
+      - 'daruri/edition-r3-20261020.js'
+      - 'daruri/index.html'
       - 'daruri/source-note-ui.css'
       - 'daruri/source-reference-data.js'
       - 'daruri/build/build_source_reference_data.py'
