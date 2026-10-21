@@ -6,7 +6,7 @@
   if (window.__gnSourceNoteUIInstalled) return;
   window.__gnSourceNoteUIInstalled = true;
 
-  const REVISION = '20261021-source-notes2';
+  const REVISION = '20261021-qpolicy1';
   const ARROW = '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
   const NOTE_LINKS = '.source-note-links a[href], .gn-note-entry a[href], .gn-app-source-notes a[href], .fb-note a[href], .gn-unified-notes a[href]';
   // Excerpts transcribed from Quran.com Uthmani text, solely to distinguish the
