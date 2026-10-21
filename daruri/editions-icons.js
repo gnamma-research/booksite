@@ -52,7 +52,16 @@
   }
 
   function upgrade(select) {
-    if(select.dataset.epIconified === '1') return;
+    if(select.dataset.epIconified) return;
+    // A five-part selector and 28-lesson course list are navigation data, not
+    // toolbar choices. Keep the accessible native picker for longer lists.
+    const key=kindOf(select);
+    const options=Array.from(select.options);
+    if(!options.length)return;
+    if((key==='part'||key==='lesson') && options.length>4){
+      select.dataset.epIconified='native';
+      return;
+    }
     const originalField=select.closest('label.gn-ed-field');
     if(originalField) {
       const replacement=document.createElement('div');
@@ -62,9 +71,6 @@
     }
     const wrapper=select.closest('.gn-ed-field') || select.parentElement;
     if(!wrapper) return;
-    const key=kindOf(select);
-    const options=Array.from(select.options);
-    if(!options.length) return;
     const heading=wrapper.querySelector('span')?.textContent?.trim() ||
       (key==='editorial'?'Editorial section titles':key==='language'?'Language':'Options');
     const group=document.createElement('div');
@@ -81,7 +87,20 @@
       button.dataset.epIconValue=option.value;
       button.dataset.epIconIndex=String(Array.from(select.options).indexOf(option));
       const span=document.createElement('span');span.className='gn-ed-icon-label';
-      span.textContent=option.textContent.trim();
+      const full=option.textContent.trim();
+      // Short captions give the compact Visuals-style choices room on phones;
+      // the complete wording remains their accessible name.
+      const short={
+        language:{bilingual:'AR + EN',english:'English',arabic:'Arabic','arabic-vowelled':'Arabic · vowelled'},
+        columns:{parallel:'Side by side',stacked:'Stacked','1':'One column','2':'Two columns'},
+        density:{comfortable:'Comfortable',balanced:'Balanced',compact:'Compact'},
+        notes:{none:'No notes',essential:'Essential',study:'Study notes'},
+        personal:{none:'None',notes:'My notes',all:'Notes + bookmarks'},
+        scope:{full:'Full text',part:'Part',lesson:'Lesson',range:'Section range'},
+        editorial:{off:'Original',on:'Editorial'}
+      };
+      span.textContent=(short[key] && short[key][option.value]) || full;
+      button.setAttribute('aria-label',full);
       button.innerHTML=icon(key,option.value);
       button.append(span);
       group.append(button);
