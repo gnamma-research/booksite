@@ -356,11 +356,13 @@
     progress('Loading PDF processing library…',6);
     await loadPdfLib();
     progress('Checking source PDF and section map…',14);
-    const metaResponse=await fetch(new URL('build/release/'+file+'.metadata.json',URL_ROOT),{cache:'no-cache'});
+    const docData=manifest.files[file];
+    const metadataPath=docData.metadata_path||('build/release/'+file+'.metadata.json');
+    const metaResponse=await fetch(new URL(metadataPath,URL_ROOT),{cache:'no-cache'});
     if(!metaResponse.ok)throw Error('This PDF has no verified section map. Choose another edition or the unchanged file.');
     const metadata=await metaResponse.json();
-    if(!metadata.section_pages||metadata.filename!==file)throw Error('Section map does not match the selected edition.');
-    const docData=manifest.files[file];
+    if(!metadata.section_pages||metadata.filename!==file.split('/').pop())
+      throw Error('Section map does not match the selected edition.');
     if(metadata.sha256!==docData.sha256)throw Error('The edition and its page map are out of sync. Reload later; the original PDF is available.');
     const bytes=await checkedBytes(fileUrl(file),docData.sha256);
     progress('Preparing annotations…',34);
@@ -368,25 +370,52 @@
     const basePageCount=pdf.getPageCount();
     const upgrade=window.GnammaPdfUpgrade;
     if(!upgrade)throw Error('Personal PDF navigation component missing. Reload the page.');
-    let wordMap=null,precise=0;
-    if(p.annotations&&rows.some(r=>r.target?.kind==='quote')){
+    let wordMap=null,verifiedMap=null,precise=0;
+    if(docData.map_path){
+      const mapResp=await fetch(new URL(docData.map_path,URL_ROOT),{cache:'no-cache'});
+      if(!mapResp.ok)throw Error('This apparatus PDF has no verified personal-note map.');
+      const raw=await mapResp.arrayBuffer();
+      if(!crypto?.subtle)throw Error('Secure checksum validation is required for apparatus maps.');
+      const computed=await crypto.subtle.digest('SHA-256',raw);
+      const hash=Array.from(new Uint8Array(computed),v=>v.toString(16).padStart(2,'0')).join('');
+      if(hash!==docData.map_sha256)throw Error('The apparatus map checksum does not match its published manifest.');
+      verifiedMap=JSON.parse(new TextDecoder().decode(raw));
+      if(verifiedMap.source_sha256!==metadata.sha256||
+         verifiedMap.base_sha256!==metadata.base_sha256||
+         Number(verifiedMap.section_count)!==258||Number(verifiedMap.coverage)!==1||
+         Object.keys(verifiedMap.section_pages||{}).length!==258)
+        throw Error('The apparatus PDF and its source map are out of sync.');
+    }else if(p.annotations&&rows.some(r=>r.target?.kind==='quote')){
       try{
         const mapResp=await fetch(new URL('personal-anchor-maps/'+file+'.json',URL_ROOT),{cache:'no-cache'});
         if(mapResp.ok){
           const candidate=await mapResp.json();
-          if(candidate.source_sha256===metadata.sha256&&candidate.coverage>=0.92&&candidate.segments)
+          if(candidate.source_sha256===metadata.sha256&&candidate.coverage>=0.92&&
+             candidate.segments&&Object.keys(candidate.segments).length)
             wordMap=candidate;
         }
-      }catch(_){/* Exact geometry is optional. Use the verified section fallback. */}
+      }catch(_){/* Exact word-map geometry is optional; verified canonical section fallback remains. */}
     }
     // Prepare destinations before appending notes: this keeps page references
     // stable and lets each appendix entry return to the exact source locus.
     const sourcePositions=rows.map(r=>{
-      const sectionIndex=verifiedPage(r.target?.section,metadata,basePageCount);
-      if(sectionIndex<0)return {index:-1,top:82,hit:null};
       const target=r.target||{};
+      const sectionIndex=verifiedPage(target.section,metadata,basePageCount);
+      if(sectionIndex<0){
+        // Source-verified terminology entries in an appended glossary/index
+        // can link P-notes to that entry's actual page and vertical position.
+        const norm=s=>String(s||'').normalize('NFKC').trim().toLowerCase();
+        const key=norm(target.term);
+        const kind=norm(target.kind);
+        const index=verifiedMap?.entry_positions?.terms||{};
+        const entry=index[(kind==='index'?'index:':'glossary:')+key]||index[key];
+        if(entry&&Number.isInteger(entry.page)&&entry.page>=1&&entry.page<=basePageCount)
+          return {index:entry.page-1,top:Number(entry.y)||82,hit:null};
+        return {index:-1,top:82,hit:null};
+      }
       const lang=target.lang==='ar'?
-        (file==='daruri-arabic-vowelled.pdf'||file==='daruri.pdf'||file==='daruri-study.pdf'?'vocalized':'ar'):'en';
+        (docData.arabic_form||(file==='daruri-arabic-vowelled.pdf'||
+          file==='daruri.pdf'||file==='daruri-study.pdf'?'vocalized':'ar')):'en';
       const words=wordMap?.segments?.[[target.section,target.segment,lang].join(':')]||[];
       let hit=p.annotations&&target.kind==='quote'?upgrade.sourceMatch(words,target):null;
       if(hit&&(!Number.isInteger(hit.page)||hit.page<1||hit.page>basePageCount))hit=null;
@@ -453,7 +482,7 @@
     busy=true;$('pe-result').hidden=true;info('');syncForm();
     try{
       const {blob,pages,linked,precise,unmapped,unsupported,hadWordMap}=await generate(file,rows,p);
-      const stem=file.replace(/\.pdf$/,'');
+      const stem=file.split('/').pop().replace(/\.pdf$/,'');
       startResult(blob,stem+'-personal-'+new Date().toISOString().slice(0,10)+'.pdf');
       info(rows.length+' personal item'+(rows.length===1?'':'s')+' included; '+linked+' linked P reference'+(linked===1?'':'s')+
         '; '+precise+' clickable phrase highlight'+(precise===1?'':'s')+'; '+pages+' searchable appendix page'+(pages===1?'':'s')+'.'+
