@@ -369,7 +369,7 @@ class _Renderer:
         label = ''
         if self.bilingual:
             inner = ('<table class="parallel-text heading-parallel"><tbody><tr>'
-                     f'<td class="arabic">{text(self.ar_field)}</td><td class="english">{text("en")}</td>'
+                     f'<td class="english">{text("en")}</td><td class="arabic">{text(self.ar_field)}</td>'
                      '</tr></tbody></table>')
         else:
             inner = text('en' if self.edition == 'english' else self.ar_field)
@@ -396,9 +396,9 @@ class _Renderer:
             f'<span class="note-prose" data-note-prose-id="{escape(str(note["id"]), quote=True)}">{_rich_text(text, refs)}</span></p>'
             for note, label, text, refs in notes
         )
-        return ('<tr class="source-apparatus-row"><td class="arabic"></td><td class="english">'
+        return ('<tr class="source-apparatus-row"><td class="english">'
                 f'<div class="source-apparatus" aria-label="Sources for section {key}">{body}</div>'
-                '</td></tr>')
+                '</td><td class="arabic"></td></tr>')
 
     def _existing_apparatus(self, section: dict) -> str:
         if self.edition != 'scholarly':
@@ -475,13 +475,13 @@ class _Renderer:
                 self.pending_footnotes = []
                 if self.bilingual:
                     # Resolve the owner column first so both languages share numbers;
-                    # Arabic is nevertheless emitted first, on the physical left.
+                    # Render English on the physical left; Arabic on the physical right.
                     en = self._segment(section, index, 'en', owner=True)
                     if last and self.edition == 'study':
                         ending = self._study_ending(section)
                         en = en[:-4] + ending + '</p>'
                     ar = self._segment(section, index, self.ar_field, owner=False)
-                    row = f'<tr><td class="arabic" dir="rtl">{ar}</td><td class="english" dir="ltr">{en}</td></tr>'
+                    row = f'<tr><td class="english" dir="ltr">{en}</td><td class="arabic" dir="rtl">{ar}</td></tr>'
                     if self.edition == 'study':
                         has_notes = ' contains-footnotes' if self.pending_footnotes else ''
                         pair_break = ' style="break-before: page"' if index and f'{key}:{index}' in self.footnote_breaks else ''
