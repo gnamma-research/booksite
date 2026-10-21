@@ -4,7 +4,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const root=path.resolve(__dirname,'..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
-const js=read('personal-export.js'),html=read('personal-export.html'),
+const js=read('personal-export.js'),helper=read('personal-pdf-enhancements.js'),html=read('personal-export.html'),
   editions=read('editions.js'),desk=read('reading-desk.js'),
   bundle=read('download-bundle.js'),sw=read('sw.js');
 new Function(js);new Function(editions);new Function(desk);
@@ -12,15 +12,17 @@ assert.match(html,/name="pe-mode" value="none" checked/,'personal notes must be 
 assert.match(editions,/personal:'none'/,'existing print editions must stay clean');
 assert.match(js,/data\.version!==1/,'Reading Desk schema must be explicitly checked');
 assert.match(js,/metadata\.sha256!==docData\.sha256/,'PDF page mapping must match exact revision');
-assert.match(js,/if\(col>=3\)return false/,'crowded source pages must not place unlimited annotation pins');
+assert.match(helper,/allocateMarginTop/,'P references must detect crowded page margins');
 assert.match(js,/unmapped/,'missing page anchors must be reported');
-assert.match(js,/PDFHexString\.fromText/,'Unicode PDF comments must use UTF-16 hex strings');
-assert.match(js,/PDFName\.of\('Text'\)/i.test(js)?/PDFName\.of\('Text'\)/:/Subtype:PDFName\.of\('Text'\)/,'PDF comment annotation type');
-assert.match(js,/annots\.push\(ref\)/,'real PDF annotation references');
+assert.match(js,/noteTargets/,'all P references need personal appendix destinations');
+assert.doesNotMatch(js,/Subtype:PDFName\.of\('Text'\)/,'private notes must not generate comment boxes');
+assert.match(helper,/Subtype:PDFName\.of\('Link'\)/,'personal navigation must use non-comment PDF links');
 assert.match(js,/docData\.sha256/,'verify edition checksum');
-assert.match(js,/p\.appendix/,'appendix configurable');
+assert.match(js,/if\(!p\.appendix\)throw Error/,'P-marker navigation requires full private appendix');
+assert.match(js,/P'\+\(i\+1\)/,'personal notes need a distinct P reference system');
 assert.match(js,/link\.download=name/,'client-side download without upload');
 assert.match(bundle,/personal-export\.html/,'offline bundle must include export screen');
+assert.match(bundle,/personal-pdf-enhancements\.js/,'offline package must contain P-reference navigation code');
 assert.match(sw,/personal-export\.js/,'service worker should include export app');
 assert.match(desk,/data-rd="personal-pdf"/,'Reading Desk export entry point');
 assert.match(editions,/href="personal-export\.html"/,'Editions export entry point');
