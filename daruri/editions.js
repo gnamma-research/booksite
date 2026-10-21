@@ -79,8 +79,8 @@
       '<label class="gn-ed-field"><span>From §</span><input data-ep-control="from" type="number" min="1" max="258" value="'+memory[tier].from+'"></label>'+
       '<label class="gn-ed-field"><span>Through §</span><input data-ep-control="to" type="number" min="1" max="258" value="'+memory[tier].to+'"></label>'+
     '</div>'+
-    '<div class="gn-ed-preview-label" aria-hidden="true">'+svg('eye')+'</div>'+
-    '<div class="gn-ed-paper" data-ep-preview="'+tier+'"></div>'+
+    '<details class="gn-ed-preview-details"><summary aria-label="Preview print layout" data-ep-info-kind="Preview" data-ep-info-label="Sample text layout">'+svg('eye')+'</summary>'+
+    '<div class="gn-ed-paper" data-ep-preview="'+tier+'"></div></details>'+
     '<p class="gn-ed-print-count" data-ep-count="'+tier+'" role="status"></p>'+
     '<div class="gn-ed-actions"><button type="button" class="gn-ed-primary" data-ep-action="print" data-ep-tier="'+tier+'" aria-label="Print or save selected passages as PDF">'+svg('printer')+'</button>'+
       '<button type="button" class="gn-ed-secondary" data-ep-action="prepare" data-ep-tier="'+tier+'" aria-label="Show full preview">'+svg('eye')+'</button></div>'+
@@ -108,7 +108,7 @@
           const records = approved.filter(x => x.tier === tier);
           if (records.length !== (tier === 'reading' ? 8 : 2)) continue;
           const language = tier === 'reading' ?
-            '<label class="gn-ed-field"><span>Language</span><select data-ep-ready-lang>' +
+            '<label class="gn-ed-field"><span class="gn-ed-field-name">Language</span><select data-ep-ready-lang>' +
               [['bilingual','Arabic & English'],['english','English only'],
                ['arabic','Arabic without vowel marks'],['arabic-vowelled','Arabic fully vowelled']]
                 .map(([key,title]) => '<option value="' + key + '">' + esc(title) + '</option>').join('') +
@@ -390,11 +390,13 @@
     memory[tier][key]=input.type==='checkbox'?input.checked:input.type==='number'?Number(input.value):input.value;
     update(tier);
     host.dataset.gnEpInteracted='1';
-    const fieldName=input.closest('.gn-ed-field, .gn-ed-toggle')?.querySelector('.gn-ed-field-name')?.textContent?.trim()||key;
+    const names={editorial:'Editorial titles',vowels:'Vowel marks',columns:'Page layout',
+      density:'Page density',personal:'Reading Desk',scope:'Print selection',
+      part:'Major part',lesson:'Course lesson',from:'First section',to:'Last section'};
     const value=input.type==='checkbox'?(input.checked?'On':'Off'):
       input.tagName==='SELECT'?(input.selectedOptions[0]?.textContent||input.value):String(input.value);
-    const count=host.querySelector('[data-ep-count="'+tier+'"]')?.textContent||'';
-    showInfo(fieldName,value,tier.charAt(0).toUpperCase()+tier.slice(1)+' · '+count);
+    showInfo(names[key]||'Language',value,
+      tier.charAt(0).toUpperCase()+tier.slice(1)+' · '+selection(tier).length+' sections');
   }
   function onInput(event) {
     if(event.target.matches('input[type="number"][data-ep-control]'))onChange(event);
@@ -434,7 +436,13 @@
       } else {
         const details=host.querySelector('[data-ep-tier="'+tier+'"]');
         const paper=details?.querySelector('[data-ep-preview]');
-        if(paper){paper.innerHTML=document.getElementById('gnEpPacket').innerHTML;paper.classList.add('gn-ed-full-preview');paper.scrollIntoView({block:'nearest'});}
+        if(paper){
+          paper.innerHTML=document.getElementById('gnEpPacket').innerHTML;
+          paper.classList.add('gn-ed-full-preview');
+          const disclosure=paper.closest('details');
+          if(disclosure)disclosure.open=true;
+          paper.scrollIntoView({block:'nearest'});
+        }
       }
       return;
     }
