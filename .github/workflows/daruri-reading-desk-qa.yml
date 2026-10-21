@@ -1,0 +1,50 @@
+name: Daruri Reading Desk regressions
+
+on:
+  push:
+    paths:
+      - 'daruri/reading-desk.js'
+      - 'daruri/reading-desk.css'
+      - 'daruri/reading-desk-dictionary.js'
+      - 'daruri/qa/verify-reading-desk-redesign.js'
+      - 'daruri/sw.js'
+      - 'daruri/download-bundle.js'
+      - '.github/workflows/daruri-reading-desk-qa.yml'
+  pull_request:
+    paths:
+      - 'daruri/reading-desk.js'
+      - 'daruri/reading-desk.css'
+      - 'daruri/reading-desk-dictionary.js'
+      - 'daruri/qa/verify-reading-desk-redesign.js'
+      - 'daruri/sw.js'
+      - 'daruri/download-bundle.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daruri-reading-desk-qa-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  regression:
+    name: Browser-local notes integrity regression
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        shell: bash
+        run: |
+          node --check daruri/reading-desk.js
+          node --check daruri/reading-desk-dictionary.js
+          node --check daruri/sw.js
+          node --check daruri/download-bundle.js
+      - name: Test note preservation and navigation
+        run: node daruri/qa/verify-reading-desk-redesign.js
