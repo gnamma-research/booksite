@@ -16,7 +16,15 @@ const digest = value => crypto.createHash('sha256').update(JSON.stringify(value)
 const payload = {textContent:''};
 vm.runInNewContext(read('edition-r3-20261020.js'), {document:{getElementById:() => payload}});
 const book = JSON.parse(payload.textContent);
-const sourceContext = {window:{}};
+const sourceContext = {
+  window:{}, URL,
+  document:{
+    baseURI:'https://gnamma-research.github.io/booksite/daruri/',
+    currentScript:{src:'https://gnamma-research.github.io/booksite/daruri/source-reference-data.js'},
+    createElement:()=>({}),
+    head:{appendChild(){}}
+  }
+};
 vm.runInNewContext(read('source-reference-data.js'), sourceContext);
 const supplement = JSON.parse(JSON.stringify(sourceContext.window.DARURI_SOURCE_REFERENCES));
 const quranMap = JSON.parse(read('build/data/quran-source-notes.json'));
