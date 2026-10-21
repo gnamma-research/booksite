@@ -2,7 +2,7 @@ name: Daruri source-note Safari touch QA
 
 on:
   push:
-    branches: [fix/ios-note-longpress-focus-20261021, fix/daruri-section1-two-quran-parallels-20261021, fix/daruri-quran-brackets-ui-20261021, fix/daruri-inline-quran-notes-20261021]
+    branches: [fix/ios-note-longpress-focus-20261021, fix/daruri-section1-two-quran-parallels-20261021, fix/daruri-quran-brackets-ui-20261021, fix/daruri-inline-quran-notes-20261021, fix/daruri-fallback-quran-brackets-20261021]
     paths:
       - 'daruri/source-note-ui.js'
       - 'daruri/source-note-ui.css'
