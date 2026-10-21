@@ -10,6 +10,9 @@ on:
       - "daruri/build/build_editions.py"
       - "daruri/build/main_text.py"
       - "daruri/build/styles.css"
+      - "daruri/build/data/quran-source-notes.json"
+      - "daruri/build/data/hadith-source-notes.json"
+      - "daruri/edition-r3-20261020.js"
 permissions:
   contents: write
 concurrency:
@@ -65,25 +68,64 @@ jobs:
             daruri/editions/study/*.pdf
             daruri/editions/manifest.json
           retention-days: 30
-      - name: Commit additive PDF assets without replacing other reader work
+      - name: Publish complete A4 catalog safely above the current master
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A daruri/editions/reading daruri/editions/study daruri/editions/manifest.json
-          if git diff --cached --quiet; then
-            echo "Edition assets already current"
-            exit 0
-          fi
-          git commit -m "Publish verified A4 Daruri Reading and Study PDF editions"
+
+          # A previous version rebased regenerated binary PDFs onto later
+          # reader/PDF-note commits. That produced unresolvable binary conflicts
+          # and could also have discarded newer source-note PDFs.
+          # Save only the 12 built edition PDFs and their verified manifest;
+          # never stage canonical daruri/*.pdf or annotation-map files.
+          BUILD_ROOT="$RUNNER_TEMP/daruri-a4-safe-release"
+          mkdir -p "$BUILD_ROOT/reading" "$BUILD_ROOT/study"
+          cp -a daruri/editions/reading/*.pdf "$BUILD_ROOT/reading/"
+          cp -a daruri/editions/study/*.pdf "$BUILD_ROOT/study/"
+          cp daruri/editions/manifest.json "$BUILD_ROOT/manifest.json"
+          BUILD_SHA="$GITHUB_SHA"
+
           for n in 1 2 3 4 5; do
-            git fetch origin master
-            git rebase origin/master
-            if git push origin HEAD:master; then
-              echo "Published edition assets on master"
+            git fetch --quiet origin master
+            TARGET_SHA="$(git rev-parse origin/master)"
+
+            # Fail closed when another chat updated the source text, source
+            # notes, builder or A4 PDF catalog during this run. Its release
+            # must win; rebuilding from fresh sources is safer than replaying
+            # obsolete PDF binaries and SHA256 catalog entries.
+            if [ "$TARGET_SHA" != "$BUILD_SHA" ] &&
+               ! git diff --quiet "$BUILD_SHA" "$TARGET_SHA" -- \
+                 daruri/build/ \
+                 daruri/edition-r3-20261020.js \
+                 daruri/editions/; then
+              echo "::error::A newer Daruri source, note or A4 PDF release arrived. Refusing to overwrite it."
+              exit 1
+            fi
+
+            # Reset the *temporary CI checkout* to latest master, not the
+            # remote branch. Reapply only this run's verified 12 A4 files.
+            # This avoids Git rebases/conflicts on binary PDFs entirely.
+            git reset --hard "$TARGET_SHA"
+            cp -a "$BUILD_ROOT/reading/." daruri/editions/reading/
+            cp -a "$BUILD_ROOT/study/." daruri/editions/study/
+            cp "$BUILD_ROOT/manifest.json" daruri/editions/manifest.json
+            git add -A \
+              daruri/editions/reading \
+              daruri/editions/study \
+              daruri/editions/manifest.json
+            if git diff --cached --quiet; then
+              echo "All 12 verified A4 PDFs and their catalog are already current."
               exit 0
             fi
-            echo "Concurrent GitHub update; retrying safely ($n)"
+            git commit -m "Publish all 12 verified A4 Daruri editions [skip ci]"
+            if git push origin HEAD:master; then
+              echo "Published all 12 PDFs and manifest without rewriting other work."
+              exit 0
+            fi
+            echo "Unrelated concurrent GitHub update; retrying safely ($n)"
             sleep 5
           done
-          echo "Could not publish automatically; PDF artifact remains available" >&2
+          echo "::error::Could not safely publish A4 artifacts; files remain available as workflow artifacts."
           exit 1
