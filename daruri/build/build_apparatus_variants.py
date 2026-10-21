@@ -265,7 +265,10 @@ def generate_one(output: Path, base_records: dict, cache: dict,
             spans[component] = {"start_page": p}
             # Each component is built once separately to resolve its extent,
             # rather than estimating page boundaries from generated text.
-            cpdf = fitz.open(stream=build_appendix((component,)), filetype="pdf")
+            component_key=(component,)
+            if component_key not in cache:
+                cache[component_key] = build_appendix(component_key)
+            cpdf = fitz.open(stream=cache[component_key], filetype="pdf")
             p += cpdf.page_count
             spans[component]["end_page"] = p - 1
             cpdf.close()
