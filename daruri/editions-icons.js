@@ -94,7 +94,57 @@
     refresh(group);
   }
 
+
+  function upgradeToggle(input) {
+    if(input.dataset.epIconified === '1') return;
+    const original=input.closest('label.gn-ed-toggle');
+    if(!original)return;
+    const field=document.createElement('div');
+    field.className=original.className;
+    while(original.firstChild)field.append(original.firstChild);
+    original.replaceWith(field);
+    const descriptive=field.querySelector('span');
+    const label=descriptive?.querySelector('strong')?.textContent?.trim() ||
+      descriptive?.textContent?.trim() || 'On or off';
+    const key=input.dataset.epControl;
+    const group=document.createElement('div');
+    group.className='gn-ed-icon-options gn-ed-icon-toggle-options';
+    group.setAttribute('role','radiogroup');
+    group.setAttribute('aria-label',label);
+    group.dataset.epIconKind=key;
+    group.__originalToggle=input;
+    for(const [value,name] of [['off','Off'],['on','On']]){
+      const button=document.createElement('button');
+      button.type='button';
+      button.setAttribute('role','radio');
+      button.className='gn-ed-icon-option';
+      button.dataset.epIconValue=value;
+      const span=document.createElement('span');
+      span.className='gn-ed-icon-label';
+      span.textContent=name;
+      button.innerHTML=icon(key,value);
+      button.append(span);
+      group.append(button);
+    }
+    field.append(group);
+    input.dataset.epIconified='1';
+    input.classList.add('gn-ed-native-select');
+    input.tabIndex=-1;
+    input.setAttribute('aria-hidden','true');
+    refresh(group);
+  }
+
   function refresh(group) {
+    const toggle=group.__originalToggle;
+    if(toggle){
+      if(!toggle.isConnected)return;
+      for(const button of group.querySelectorAll('.gn-ed-icon-option')){
+        const selected=button.dataset.epIconValue === (toggle.checked ? 'on' : 'off');
+        button.setAttribute('aria-checked',String(selected));
+        button.tabIndex=selected?0:-1;
+      }
+      return;
+    }
     const select=group.__originalSelect;
     if(!select || !select.isConnected) return;
     const buttons=Array.from(group.querySelectorAll('.gn-ed-icon-option'));
@@ -118,6 +168,7 @@
     changing=true;
     try {
       activeRoot.querySelectorAll('.gn-editions select:not([data-ep-iconified])').forEach(upgrade);
+      activeRoot.querySelectorAll('.gn-editions .gn-ed-toggle input[type=checkbox]:not([data-ep-iconified])').forEach(upgradeToggle);
       activeRoot.querySelectorAll('.gn-ed-icon-options').forEach(refresh);
     } finally {changing=false;}
   }
@@ -126,6 +177,12 @@
     const button=event.target.closest('.gn-ed-icon-option');
     if(!button || !activeRoot.contains(button))return;
     const group=button.closest('.gn-ed-icon-options');
+    const toggle=group?.__originalToggle;
+    if(toggle) {
+      const next=button.dataset.epIconValue === 'on';
+      if(toggle.checked!==next){toggle.checked=next;toggle.dispatchEvent(new Event('change',{bubbles:true}));}
+      update();button.focus();return;
+    }
     const select=group?.__originalSelect;
     if(!select || button.disabled)return;
     if(select.value!==button.dataset.epIconValue) {
