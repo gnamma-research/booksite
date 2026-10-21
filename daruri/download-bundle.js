@@ -101,9 +101,9 @@
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
-      ['daruri/reading-desk.js', 'reading-desk.js?v=20261020-readingdesk2'],
-      ['daruri/reading-desk.css', 'reading-desk.css?v=20261020-readingdesk2'],
-      ['daruri/reading-desk-dictionary.js', 'reading-desk-dictionary.js?v=20261020-readingdesk1'],
+      ['daruri/reading-desk.js', 'reading-desk.js?v=20261021-readingdesk3'],
+      ['daruri/reading-desk.css', 'reading-desk.css?v=20261021-readingdesk3'],
+      ['daruri/reading-desk-dictionary.js', 'reading-desk-dictionary.js?v=20261021-readingdesk3'],
       ['daruri/reader-structure.css', 'reader-structure.css?v=20261020-structure1'],
       ['daruri/subject-index.css', 'subject-index.css?v=20261020-indexprint1'],
       ['daruri/subject-index-data.js', 'subject-index-data.js?v=20261020-structure1'],
