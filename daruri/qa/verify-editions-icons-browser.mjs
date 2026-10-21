@@ -70,6 +70,7 @@ try {
   await selected.focus();
   await page.keyboard.press('ArrowRight');
   assert.equal(await language.getByRole('radio',{checked:true}).count(),1,'Keyboard arrow selects a single option');
+  await readyReading.locator('[data-ep-icon-kind="language"]').getByRole('radio',{name:'Arabic fully vowelled'}).click();
   await studyTab.focus();
   assert.equal(await page.locator('[data-ep-info-value]').textContent(),'Study');
   assert.deepEqual(await visiblePanels(),['gn-ed-reading'],'Tab focus alone does not change edition');
