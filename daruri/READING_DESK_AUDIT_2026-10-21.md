@@ -1,4 +1,4 @@
-# Reading Desk v4 — preservation, navigation and scholarly usability audit
+# Reading Desk v5 — preservation, navigation and scholarly usability audit
 
 **Date:** 21 October 2026. **Status:** Code committed to master; synthetic regression checks passed. **Not yet confirmed:** live Pages deployment, physical iOS Safari interaction and independent accessibility testing.
 
@@ -30,7 +30,7 @@ A more serious loss-of-data path was reproduced before correction: old JSON cont
 
 ## Verification record
 
-The deterministic, dependency-free regression suite is `daruri/qa/verify-reading-desk-redesign.js`: **16 tests passed** against the v4 script set in a synthetic DOM harness. This covers orphan retention and future metadata, corrupted storage, long notes, failed storage operations, mobile list/detail state, relinking with history, quotation printing, saved-note categorisation, continuous-section marks, and shared-link invariants.
+The deterministic, dependency-free regression suite is `daruri/qa/verify-reading-desk-redesign.js`: **19 tests passed** against the v5 script set in a synthetic DOM harness. This covers orphan retention and future metadata, corrupted storage, long notes, failed storage operations, mobile list/detail state, relinking with history, quotation printing, saved-note categorisation, continuous-section marks, and shared-link invariants.
 
 Additional directed runtime tests passed for:
 - Saving new items without dropping orphan notes.
@@ -43,7 +43,7 @@ The CI workflow is `.github/workflows/daruri-reading-desk-quality.yml` and is co
 
 ## Cache and release integration
 
-Live HTML: `daruri/index.html` and `daruri/dictionary.html` reference `20261021-readingdesk4`. The service worker `daruri/sw.js` uses a matching cache generation and also pre-caches the previous v3/v2 Reader assets for offline compatibility. `download-bundle.js` includes the current Reader JS, CSS and dictionary bridge. All work must be rebased on current master, not applied from a historical Darūrī ZIP or reader snapshot; preserve concurrent PDFs, Visuals and six-stage Study Guide updates.
+Live HTML: `daruri/index.html` and `daruri/dictionary.html` reference `20261021-readingdesk5`. The service worker `daruri/sw.js` uses a matching cache generation and also pre-caches the previous v4/v3/v2 Reader assets for offline compatibility. `download-bundle.js` includes the current Reader JS, CSS and dictionary bridge. All work must be rebased on current master, not applied from a historical Darūrī ZIP or reader snapshot; preserve concurrent PDFs, Visuals and six-stage Study Guide updates.
 
 ## Unverified or optional later work
 
@@ -60,8 +60,12 @@ Live HTML: `daruri/index.html` and `daruri/dictionary.html` reference `20261021-
 
 The note editor now uses lossless HTML escaping for the complete existing note body and dynamically preserves the length of older, oversized titles and bodies. Editing a title does not shorten an imported note whose text exceeds current new-note limits. Direct runtime verification preserved a 124,019-character note through an edit.
 
-A concurrent narrow Reading Desk commit also added optimistic cross-tab storage comparisons. Changes detected in another tab now block overwriting writes and offer Reload saved items; the refresh path omits re-importing stale legacy section bookmarks. Its regression checks are included in the 16-test suite. The user's concurrent work on a separate Book PDF + personal notes export page was preserved rather than replaced by this audit.
+A concurrent narrow Reading Desk commit also added optimistic cross-tab storage comparisons. Changes detected in another tab now block overwriting writes and offer Reload saved items; the refresh path omits re-importing stale legacy section bookmarks. Its regression checks are included in the 19-test suite. The user's concurrent work on a separate Book PDF + personal notes export page was preserved rather than replaced by this audit.
 
 ### Test-environment limitations
 
-All 16 regression checks were executed against the current connector-fetched v4 sources in a JavaScript synthetic DOM runtime. Script compilation and 13 cross-file release-reference checks also passed. A real iPhone browser session, VoiceOver, live GitHub Pages cache freshness, and a complete native print/PDF engine have not been instrumented from this chat. The associated GitHub Actions workflow is installed; successful remote runner execution has not been independently established.
+All 16 regression checks were executed against the current connector-fetched v5 sources in a JavaScript synthetic DOM runtime. Script compilation and 13 cross-file release-reference checks also passed. A real iPhone browser session, VoiceOver, live GitHub Pages cache freshness, and a complete native print/PDF engine have not been instrumented from this chat. The associated GitHub Actions workflow is installed; successful remote runner execution has not been independently established.
+
+### Final v5 publication reconciliation
+
+A parallel update completed the same release safely: main reader HTML, historical dictionary HTML, offline bundle and service worker now all reference `20261021-readingdesk5` and retain prior cache compatibility. The regression harness currently passes **19 checks**, including malformed legacy IDs, broken source-history entries, previous-edition imports, and stale multi-tab write conflict handling. A nine-point cross-file reference check also passed. The substantive fixes described above remain valid; the cache suffix was advanced from v4 after final code hardening to prevent stale client assets.
