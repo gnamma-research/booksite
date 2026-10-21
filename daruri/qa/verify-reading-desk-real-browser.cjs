@@ -145,22 +145,11 @@ async function exercise(engine, width, touch) {
     check(reloadCards===6,
       id+': data did not survive a full page reload; cards='+reloadCards);
     await page.locator('.gn-rd-card-open[data-id="saved-section"]').click();
-    await page.locator('#gn-rd-detail [data-rd="open"]').click();
+    const sourceOpen=page.locator('#gn-rd-detail [data-rd="open"]');
+    await sourceOpen.scrollIntoViewIfNeeded();
+    const leavePosition=await page.evaluate(()=>window.scrollY);
+    await sourceOpen.click();
     await page.locator('.gn-rd-return [data-rd="return"]').waitFor({timeout:25000});
-    await page.evaluate(() => {
-      window.__rdScrollCalls=[];
-      const scrollToOriginal=window.scrollTo;
-      window.scrollTo=function(...args){
-        window.__rdScrollCalls.push({method:'scrollTo',args,stack:String(new Error().stack).slice(0,800)});
-        return scrollToOriginal.apply(this,args);
-      };
-      const scrollIntoOriginal=Element.prototype.scrollIntoView;
-      Element.prototype.scrollIntoView=function(...args){
-        window.__rdScrollCalls.push({method:'scrollIntoView',element:this.tagName+'.'+this.className,args,
-          stack:String(new Error().stack).slice(0,800)});
-        return scrollIntoOriginal.apply(this,args);
-      };
-    });
     await page.locator('.gn-rd-return [data-rd="return"]').click();
     await page.locator('.gn-rd-page').waitFor({timeout:25000});
     const position = async () => page.evaluate(() => {
@@ -170,6 +159,7 @@ async function exercise(engine, width, touch) {
       const bar=document.querySelector('.gn-rd-hero');
       return {scrollY, height:innerHeight, pageTop:page?.getBoundingClientRect().top,
         detailTop:detail?.getBoundingClientRect().top,
+        detailBottom:detail?.getBoundingClientRect().bottom,
         detailHeadingTop:heading?.getBoundingClientRect().top,
         detailHeadingBottom:heading?.getBoundingClientRect().bottom,
         heroTop:bar?.getBoundingClientRect().top};
@@ -179,15 +169,13 @@ async function exercise(engine, width, touch) {
     const settledPosition=await position();
     console.log('RETURN VIEWPORT '+id+' initial='+JSON.stringify(earlyPosition)+
       ' settled='+JSON.stringify(settledPosition));
-    console.log('RETURN SCROLL CALLS '+id+' '+JSON.stringify(await page.evaluate(
-      () => window.__rdScrollCalls?.slice(-12))));
+    check(Math.abs(settledPosition.scrollY-leavePosition)<=4,
+      id+': return did not preserve the exact point previously used to open the source: '+
+        JSON.stringify({leavePosition,settledPosition}));
     if(touch) {
-      check(settledPosition.detailHeadingBottom>=130 &&
-        settledPosition.detailHeadingTop<settledPosition.height*0.7,
-        id+': selected mobile item heading not visible after returning from source: '+
-          JSON.stringify(settledPosition));
-      check(settledPosition.pageTop<settledPosition.height*0.6,
-        id+': entire Reading Desk displaced below the phone viewport: '+
+      check(settledPosition.detailBottom>130 &&
+        settledPosition.detailTop<settledPosition.height*0.8,
+        id+': mobile saved-item details do not intersect the visible viewport: '+
           JSON.stringify(settledPosition));
     }
 
