@@ -118,6 +118,25 @@ test('source scripts compile and cache version matches',()=>{
  ensure(bundle.includes('20261021-readingdesk6'),'offline bundle not updated');
  ensure(dict.includes("dateSource:'recorded'"),'dictionary dates missing');
 });
+test('one-click section removal makes exactly one storage write',()=>{
+ const h=boot(backup([legacy]));const before=h.writes;
+ h.desk.toggleSection('191');
+ ensure(h.writes===before+1,'section deselection repeated an expensive save');
+ ensure(h.desk.records().find(x=>x.id==='legacy').deleted>0,'section bookmark not moved to Bin');
+});
+test('a labelled paragraph bookmark saves the entire bilingual passage',()=>{
+ const h=boot(backup([]));h.state.route='reader';h.desk.afterReader();
+ ensure(h.grids[0].nextElementSibling.innerHTML.includes('Save paragraph'),
+  'paragraph bookmark must be discoverable without hover or selecting text');
+ const before=h.writes;
+ h.event('click',{dataset:{rd:'paragraph-bookmark',section:'190',segment:'0'}});
+ const item=h.desk.records().find(r=>r.kind==='paragraph'&&!r.deleted&&r.target?.section==='190');
+ ensure(item&&item.target.segment===0,'whole-paragraph bookmark missing');
+ ensure(h.writes===before+1,'paragraph save should make one storage write');
+ h.event('click',{dataset:{rd:'paragraph-bookmark',section:'190',segment:'0'}});
+ ensure(item.deleted>0,'paragraph bookmark not removed');
+ ensure(h.writes===before+2,'paragraph removal should make one more storage write');
+});
 test('mobile list and detail are mutually exclusive',()=>{
  ensure(css.includes('.gn-rd-page:not(.gn-rd-mobile-detail-open) .gn-rd-detail{display:none!important}'),'inline mobile detail not hidden');
  ensure(css.includes('.gn-rd-mobile-detail-open .gn-rd-mobile-back{display:inline-flex'),'mobile back button unconditional');
