@@ -19,7 +19,7 @@ function create(ctx){
  let records=[],available=true,selection=null,editor=null,origin=null,readingOrigin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
  const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
  const printPrefs={order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
- let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='';
+ let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='',relinkFocus=null;
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
  function validateTarget(raw){
@@ -211,7 +211,7 @@ function create(ctx){
   if(records.length>2999){ctx.notify('Reading Desk is full; export and remove unused entries before adding more.');return null;}
   if(kind!=='note'){
    const existing=records.find(x=>x.kind===kind&&keyOf(x.target)===keyOf(target));
-   if(existing){if(existing.deleted){existing.deleted=0;existing.updated=now;persist();ctx.notify('Restored to Reading Desk.');}else ctx.notify('Already in Reading Desk.');return existing;}
+   if(existing){if(existing.deleted){const prior={deleted:existing.deleted,updated:existing.updated};existing.deleted=0;existing.updated=now;if(!persist()){Object.assign(existing,prior);return null;}ctx.notify('Restored to Reading Desk.');}else ctx.notify('Already in Reading Desk.');return existing;}
   }
   const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target});
   if(!row)return null;
@@ -404,12 +404,15 @@ function create(ctx){
  }
  function closeRelink(){
   $('#gn-rd-relink-shade')?.remove();
+  const old=relinkFocus;relinkFocus=null;
+  if(old?.isConnected)old.focus({preventScroll:true});
  }
  function showRelink(row){
   if(!row||isResolved(row))return;
   closeRelink();
   const old=row.target||{};
   const ids=[...ctx.sections.keys()];
+  relinkFocus=document.activeElement;
   const dlg=document.createElement('div');dlg.id='gn-rd-relink-shade';dlg.className='gn-rd-relink-shade';
   dlg.setAttribute('role','presentation');dlg.dataset.itemId=row.id;
   dlg.innerHTML='<section class="gn-rd-relink" role="dialog" aria-modal="true" aria-labelledby="gn-rd-relink-title" tabindex="-1">'+
@@ -876,11 +879,11 @@ function create(ctx){
   const a=document.createElement('a');a.href=url;a.download=name;a.style.display='none';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
  }
  async function shareBackup(){
-  const fileName='Reading-Desk-'+new Date().toISOString().slice(0,10)+'.json',data=backup();
+  const fileName=loadFailure?'Reading-Desk-original-recovery.txt':'Reading-Desk-'+new Date().toISOString().slice(0,10)+'.json',data=backup();
   if(typeof File!=='undefined'&&navigator.share){
    const file=new File([data],fileName,{type:'application/json'});
    if(!navigator.canShare||navigator.canShare({files:[file]})){
-    try{await navigator.share({files:[file],title:'Reading Desk backup',text:'Private Reading Desk data — import into Darūrī.'});return;}
+    try{await navigator.share({files:[file],title:loadFailure?'Original Reading Desk data (recovery)':'Reading Desk backup',text:loadFailure?'The original file has not been changed.':'Private Reading Desk data — import into Darūrī.'});return;}
     catch(e){if(e?.name==='AbortError')return;}
    }
   }
@@ -978,6 +981,7 @@ function create(ctx){
   if(!items.length)return '';
   const first=items[0],t=first.target;
   let html='<article class="gn-rd-print-entry"><h2>'+esc(subOf(t))+'</h2>';
+  if(items.some(r=>!isResolved(r)))html+='<p class="gn-rd-print-unavailable">Original source unavailable in this edition; saved content preserved</p>';
   const pass=items.find(r=>r.target&&['quote','paragraph','section'].includes(r.target.kind));
   if(pass)html+=printSourcePreview(pass.target);
   else if(t?.kind==='footnote'){
@@ -1000,7 +1004,7 @@ function create(ctx){
     if(printPrefs.bookmarkDates)html+='<p class="gn-rd-print-record-date">'+esc(dateLine(r,true))+'</p>';
    }
   }
-  html+='<p class="gn-rd-print-url">Source: '+esc(canonicalURL(t))+'</p></article>';
+  html+='<p class="gn-rd-print-url">'+(items.some(r=>!isResolved(r))?'Original source reference: ':'Source: ')+esc(canonicalURL(t))+'</p></article>';
   return html;
  }
  function printGroups(rows){
@@ -1146,6 +1150,13 @@ function create(ctx){
    else if(!$('#gn-rd-selection-bar')?.hidden)hideSelection();
   },true);
   document.addEventListener('keydown',e=>{
+   if($('#gn-rd-relink-shade')&&e.key==='Tab'){
+    const nodes=[...$('#gn-rd-relink-shade').querySelectorAll('button,select')].filter(x=>!x.disabled);
+    if(!nodes.length)return;
+    if(e.shiftKey&&document.activeElement===nodes[0]){e.preventDefault();nodes.at(-1).focus();}
+    else if(!e.shiftKey&&document.activeElement===nodes.at(-1)){e.preventDefault();nodes[0].focus();}
+    return;
+   }
    if(printRoot&&e.key==='Tab'){
     const nodes=[...printRoot.querySelectorAll('button,input,select')].filter(x=>!x.disabled);if(!nodes.length)return;
     if(e.shiftKey&&document.activeElement===nodes[0]){e.preventDefault();nodes.at(-1).focus();}
