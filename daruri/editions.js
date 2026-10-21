@@ -67,7 +67,7 @@
       if(tab) {
         tab.setAttribute('aria-selected',String(key===tier));
         tab.tabIndex=key===tier?0:-1;
-        tab.dataset.epInfoDetail=tierDescription(key);
+        tab.dataset.epTabDetail=tierDescription(key);
       }
       if(panel)panel.hidden=key!==tier;
     }
