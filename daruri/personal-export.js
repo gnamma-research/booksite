@@ -17,29 +17,49 @@
     if(t.lesson)return 'Study lesson: '+cap(t.lesson,60);
     return 'Saved reference';
   };
-  const isNote=r=>r&&r.kind==='note'&&typeof r.body==='string'&&r.body.trim().length>0;
-  const isBookmark=r=>r&&r.kind!=='note'&&r.target&&typeof r.target==='object';
+  const isNote=r=>r&&r.kind==='note';
+  const isBookmark=r=>Boolean(r&&r.kind!=='note'&&(
+    r.target&&typeof r.target==='object'||String(r.title||'').trim()||
+    String(r.body||'').trim()||r.archivedValue!==undefined
+  ));
   function available(records,prefs){
-    return records.filter(r=>r&&!r.deleted&&r.target!==undefined&&(
+    return records.filter(r=>r&&!r.deleted&&(
       (prefs.personal&&isNote(r))||(prefs.bookmarks&&isBookmark(r))
     ));
   }
+  function normalizeDesk(data){
+    if(data?.format!=='gnamma-reading-desk'||data.version!==1||!Array.isArray(data.items))
+      throw Error('Unknown Reading Desk backup format');
+    const ids=new Set();
+    return data.items.map((entry,i)=>{
+      const r=entry&&typeof entry==='object'&&!Array.isArray(entry)?
+        entry:{kind:'unavailable',title:'Unrecognized saved entry',archivedValue:entry};
+      const sourceId=String(r.id??'saved-'+(i+1));
+      let id=sourceId||'saved-'+(i+1),n=0;
+      while(ids.has(id))id=sourceId+' · record '+(i+1)+(n++?' ('+n+')':'');
+      ids.add(id);
+      const kind=typeof r.kind==='string'?r.kind:'unavailable';
+      const title=typeof r.title==='string'?r.title:r.title==null?'':JSON.stringify(r.title);
+      const body=typeof r.body==='string'?r.body:r.body==null?'':JSON.stringify(r.body);
+      const target=r.target&&typeof r.target==='object'&&!Array.isArray(r.target)?r.target:null;
+      return {...r,id,originalId:sourceId,kind,title,body,target,
+        deleted:Number(r.deleted)||0,created:Number(r.created)||0,
+        modified:Number(r.modified)||0,updated:Number(r.updated)||0,
+        dateSource:typeof r.dateSource==='string'?r.dateSource:'unverified'};
+    });
+  }
+  let loadError='';
   function loadDesk(){
     try{
       const raw=localStorage.getItem(STORAGE);
       if(!raw)return [];
-      const data=JSON.parse(raw);
-      if(data?.format!=='gnamma-reading-desk'||data.version!==1||!Array.isArray(data.items))throw Error('Unknown Reading Desk backup format');
-      return data.items.slice(0,3000).filter(r=>r&&typeof r==='object'&&!Array.isArray(r)
-        &&typeof r.kind==='string'&&(!r.target||typeof r.target==='object')
-        &&(r.kind!=='note'||typeof r.body==='string')).map(r=>({
-        id:cap(r.id,100),kind:cap(r.kind,40),
-        title:cap(r.title,240),body:r.kind==='note'?cap(r.body,30000):'',
-        target:r.target||null,standalone:Boolean(r.standalone),deleted:Number(r.deleted)||0,
-        created:Number(r.created)||0,modified:Number(r.modified)||0,updated:Number(r.updated)||0,
-        dateSource:cap(r.dateSource,30)
-      }));
-    }catch(error){showError('Your Reading Desk could not be read in this browser: '+error.message+'. Your original data has not been changed.');return [];}
+      loadError='';
+      return normalizeDesk(JSON.parse(raw));
+    }catch(error){
+      loadError='Your Reading Desk could not be read in this browser: '+error.message+'. Your original data has not been changed.';
+      showError(loadError);
+      return [];
+    }
   }
   function orderItems(rows,order){
     const num=v=>{const n=Number(v);return Number.isFinite(n)?n:1e9;};
@@ -64,7 +84,7 @@
   function entryText(r,i,dates){
     const h='['+(i+1)+'] '+nameOf(r.target);
     const title=cap(r.title|| (isNote(r)?'Personal note':'Saved passage'),240);
-    const text=isNote(r)?r.body:(r.target?.quote||'Saved passage / bookmark');
+    const text=isNote(r)?r.body:(r.target?.quote||r.body||(r.archivedValue!==undefined?JSON.stringify(r.archivedValue):'Saved passage / bookmark'));
     const quote=r.target?.quote&&isNote(r)?'\nSelected text: '+cap(r.target.quote,1000):'';
     return h+'\n'+title+'\n'+cap(text,30000)+quote+(dates?'\n'+dateLine(r):'');
   }
@@ -73,7 +93,7 @@
     const n=Number(metadata?.section_pages?.[String(section)]);
     return Number.isInteger(n)&&n>0&&n<=pdfPages?n-1:-1;
   }
-  const model={available,orderItems,dateLine,entryText,verifiedPage,isNote,isBookmark};
+  const model={available,orderItems,dateLine,entryText,verifiedPage,isNote,isBookmark,normalizeDesk};
   window.GnammaPersonalExportModel=model;
   let manifest=null,records=[],selectedIds=new Set(),busy=false,resultURL=null,resultFile=null;
   let lastFilename='';
@@ -117,7 +137,8 @@
     $('pe-generate').disabled=busy||!pdf|| (has&&(!rows.length||(!p.appendix&&!p.annotations)||rows.length>MAX_ITEMS));
     if(has&&rows.length>MAX_ITEMS)$('pe-count').textContent+=' · Too many for one export. Choose up to '+MAX_ITEMS+' items.';
     if(mode()==='choose')renderPicker();
-    if(!has){$('pe-result').hidden=true;info('');}
+    if(!has){$('pe-result').hidden=true;if(!loadError)info('');}
+    if(loadError)showError(loadError);
   }
   function renderPicker(){
     const p=prefs(),eligible=available(records,p),q=String($('pe-search').value||'').toLowerCase().trim();
@@ -267,9 +288,11 @@
       if(isNote(r)){
         for(const para of r.body.split(/\n/))await line(para);
       }else if(r.target?.quote){
-        await line('Saved quotation: '+cap(r.target.quote,5000));
-      }else await line('Saved bookmark / reference');
-      if(r.target?.quote&&isNote(r))await line('Selected text: '+cap(r.target.quote,1500),'meta');
+        await line('Saved quotation: '+String(r.target.quote));
+      }else if(r.body)for(const para of String(r.body).split(/\n/))await line(para);
+      else if(r.archivedValue!==undefined)await line('Archived value: '+JSON.stringify(r.archivedValue));
+      else await line('Saved bookmark / reference');
+      if(r.target?.quote&&isNote(r))await line('Selected text: '+String(r.target.quote),'meta');
       if(p.dates)await line(dateLine(r),'meta');
       if(source<0)await line('No safe page anchor; included in the appendix only.','meta');
       sheet.y+=27;
@@ -319,6 +342,12 @@
     if(!rows.length)throw Error('Choose at least one Reading Desk item, or select the unchanged PDF option.');
     if(rows.length>MAX_ITEMS)throw Error('Choose at most '+MAX_ITEMS+' items per PDF.');
     if(!p.annotations&&!p.appendix)throw Error('Enable annotations, the appendix, or both.');
+    if(p.annotations&&!p.appendix&&rows.some((r,i)=>
+      String(r.body||'').length>30000||
+      (r.kind==='note'&&String(r.target?.quote||'').length>1000)||
+      (r.kind!=='note'&&String(r.target?.quote||'').length>30000)||
+      entryText(r,i,p.dates).length>24000))
+      throw Error('One or more saved items are too long for PDF pop-up comments alone. Enable the full personal notes appendix to prevent text being omitted.');
     progress('Loading PDF processing library…',6);
     await loadPdfLib();
     progress('Checking source PDF and section map…',14);
