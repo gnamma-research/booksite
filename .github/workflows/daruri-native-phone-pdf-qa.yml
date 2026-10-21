@@ -1,0 +1,106 @@
+name: Daruri native phone PDF testing
+on:
+  push:
+    branches: [feature/mobile-native-pdf-phone-tests-20261021]
+    paths:
+      - '.github/workflows/daruri-native-phone-pdf-qa.yml'
+      - 'daruri/qa/native-phone/**'
+      - 'daruri/personal-export.js'
+      - 'daruri/personal-pdf-enhancements.js'
+      - 'daruri/qa/verify-semantic-personal-pdf.cjs'
+  workflow_dispatch:
+concurrency:
+  group: phone-pdf-qa-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  synthetic-pdf-fixture:
+    name: Generate safe local-only personal PDF fixture
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare browser PDF generator
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1 pdfjs-dist@5.4.296
+          npx --prefix daruri/qa playwright install --with-deps chromium
+      - name: Generate multilingual P1/P2 synthetic notes PDF
+        env:
+          GNAMMA_QA_VISUAL_PATH: daruri/qa/phone-output/personal-pdf-sample.pdf
+          GNAMMA_PHONE_FIXTURE_ONLY: '1'
+        run: node daruri/qa/verify-semantic-personal-pdf.cjs
+      - name: Keep a synthetic PDF artifact even when the Unicode test fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-pdf-debug-${{ github.run_id }}
+          path: daruri/qa/phone-output/personal-pdf-sample.pdf
+          retention-days: 1
+          if-no-files-found: warn
+      - name: Publish safe fixture only to dependent CI jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-pdf-for-phone-tests
+          path: daruri/qa/phone-output/personal-pdf-sample.pdf
+          retention-days: 3
+          if-no-files-found: error
+  native-android:
+    name: Pixel emulator - tap P1 and Return in PdfRenderer
+    needs: synthetic-pdf-fixture
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: synthetic-pdf-for-phone-tests
+          path: daruri/qa/phone-output
+      - name: Make KVM accessible to Android Emulator
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' |
+            sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Boot native Android device and physically inject two on-screen link taps
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          target: google_apis
+          arch: x86_64
+          profile: pixel_7
+          emulator-options: -no-window -no-snapshot -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          disable-animations: true
+          script: bash daruri/qa/native-phone/android/run.sh
+      - name: Upload Android device screenshots and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-android-phone-evidence
+          path: daruri/qa/phone-results/android/
+          retention-days: 7
+          if-no-files-found: warn
+  native-ios:
+    name: iPhone Simulator - native PDFKit links and text search
+    needs: synthetic-pdf-fixture
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: synthetic-pdf-for-phone-tests
+          path: daruri/qa/phone-output
+      - name: Boot iPhone and test native PDFKit on Simulator
+        run: bash daruri/qa/native-phone/ios/run.sh
+      - name: Upload iOS device screenshot and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-iphone-pdfkit-evidence
+          path: daruri/qa/phone-results/ios/
+          retention-days: 7
+          if-no-files-found: warn
