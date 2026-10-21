@@ -174,7 +174,9 @@
       if(!res.ok)throw Error('Locally hosted Unicode font unavailable: '+name);
       return res.arrayBuffer();
     }));
-    const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:true})));
+    // Full custom-font embedding yields a more portable ToUnicode map in
+    // Android PDFium; the Arabic Noto font is only ~200 KB.
+    const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:false})));
     return {latin,arabic,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
   }
   function fontRuns(text,fonts,size){
