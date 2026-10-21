@@ -7,10 +7,13 @@ on:
       - ".github/workflows/daruri-editions-qa.yml"
       - "daruri/editions/**"
       - "daruri/editions.js"
+      - "daruri/editions-icons.js"
+      - "daruri/editions-icons.css"
       - "daruri/editions.css"
       - "daruri/index.html"
       - "daruri/sw.js"
       - "daruri/qa/verify-ready-editions.js"
+      - "daruri/qa/verify-editions-icons.cjs"
       - "daruri/qa/verify-editions-configurator.js"
 jobs:
   qa:
@@ -26,8 +29,11 @@ jobs:
       - name: JavaScript syntax
         run: |
           node --check daruri/editions.js
+          node --check daruri/editions-icons.js
+          node --check daruri/qa/verify-editions-icons.cjs
           node --check daruri/qa/verify-ready-editions.js
       - name: Source and edition downloads
         run: |
           node daruri/qa/verify-editions-configurator.js
           node daruri/qa/verify-ready-editions.js
+          node daruri/qa/verify-editions-icons.cjs
