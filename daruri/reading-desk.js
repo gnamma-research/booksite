@@ -315,7 +315,7 @@ function create(ctx){
   return bin?rows.sort((a,b)=>b.deleted-a.deleted):sortItems(rows,ui.sort);
  }
  function htmlCard(r,linkedCounts){
-  const own=r.kind==='note',relatedCount=own||!r.target?0:linkedCounts.get(sourceKey(r.target))||0;
+  const own=r.kind==='note',relatedCount=own||!r.target?0:linkedCounts.get(keyOf(r.target))||0;
   const canOpen=!!r.target&&isResolved(r);
   const parts=['<article class="gn-rd-card'+(r.id===ui.selected?' gn-rd-selected':'')+'">'];
   parts.push('<button type="button" class="gn-rd-card-open" data-rd="select" data-id="'+esc(r.id)+'" aria-label="View '+esc(own?'personal note':'bookmark')+': '+esc(short(r.title||titleOf(r.target),95))+'">');
@@ -338,7 +338,7 @@ function create(ctx){
   const main=$('#mainContent');if(!main)return;
   const visible=matching(),selected=records.find(r=>r.id===ui.selected),bin=ui.category==='bin';
   const linkedCounts=new Map();
-  for(const r of active())if(r.kind==='note'&&r.target){const k=sourceKey(r.target);linkedCounts.set(k,(linkedCounts.get(k)||0)+1);}
+  for(const r of active())if(r.kind==='note'&&r.target){const k=keyOf(r.target);linkedCounts.set(k,(linkedCounts.get(k)||0)+1);}
   const parts=['<section class="gn-rd-page'+(ui.mobileDetail?' gn-rd-mobile-detail-open':'')+'">'];
   parts.push('<header class="gn-rd-hero"><p class="gn-rd-kicker">YOUR PRIVATE READING COLLECTION</p><h1>Reading Desk</h1>');
   parts.push('<p>Saved passages, personal observations and source-linked references. Your work stays in this browser unless you export it.</p>');
@@ -381,6 +381,14 @@ function create(ctx){
    if(!isResolved(selected))parts.push('<div class="gn-rd-unresolved-detail" role="status"><strong>Original source unavailable in this edition.</strong><p>The saved words, note, dates and previous source reference remain preserved. You can read or export this item and optionally reconnect it to an existing paragraph.</p></div>');
    parts.push(detailsFor(selected));
    parts.push('<footer class="gn-rd-date-details"><small>'+esc(dateLine(selected,true))+'</small></footer>');
+   if(Array.isArray(selected.sourceHistory)&&selected.sourceHistory.length){
+    parts.push('<details class="gn-rd-history"><summary>Previous source references ('+selected.sourceHistory.length+')</summary>');
+    parts.push(selected.sourceHistory.map(h=>'<p>'+esc(h.target?.section?'Originally '+ctx.sectionRef(h.target.section):'Earlier source')+
+     (h.target?.segment!=null?' · paragraph '+(Number(h.target.segment)+1):'')+
+     (h.target?.quote?' · '+esc(short(h.target.quote,170)):'')+
+     (h.relinkedAt?' · reconnected '+esc(dateDisplay(h.relinkedAt,true)):'')+'</p>').join(''));
+    parts.push('</details>');
+   }
    const relatives=selected.target?active().filter(r=>r.id!==selected.id&&r.target&&sourceKey(r.target)===sourceKey(selected.target)):[];
    if(relatives.length){
     parts.push('<section class="gn-rd-related"><h3>Related saved items</h3>');
@@ -455,6 +463,13 @@ function create(ctx){
   }
   const validated=validateTarget(target);
   if(!validated){ctx.notify('Could not resolve this source in the current edition.');return;}
+  if(newKind==='quote'){
+   const seg=ctx.sections.get(String(sectionId)).segments[segment];
+   const current=target.lang==='ar'?(seg.vocalized||seg.ar||''):(seg.en||'');
+   if(!clean(current).includes(clean(target.quote))){
+    ctx.notify('The original quotation is not present in that paragraph. Choose a matching paragraph; the saved words remain safe.');return;
+   }
+  }
   const prev={kind:row.kind,target:row.target,sourceHistory:row.sourceHistory,updated:row.updated};
   row.kind=row.kind==='note'?'note':newKind;row.target=validated;row.updated=Date.now();
   row.sourceHistory=[...(Array.isArray(row.sourceHistory)?row.sourceHistory:[]),{target:original,relinkedAt:row.updated}];
