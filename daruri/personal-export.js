@@ -1,6 +1,6 @@
 /* Gnamma personal PDF editions: statically hosted, browser-only.
-   Published edition bytes are never written back to GitHub.
-   Native PDF comments are section-level: do NOT invent quote coordinates. */
+   P1, P2... uniquely identify user-authored notes; publisher notes are unchanged.
+   Exact quotes receive clickable visual highlights, not comment-sidebars popups. */
 (() => {
   'use strict';
   const STORAGE='gnamma-reading-desk-v1';
@@ -82,7 +82,7 @@
     catch(_){return 'Date unavailable';}
   }
   function entryText(r,i,dates){
-    const h='['+(i+1)+'] '+nameOf(r.target);
+    const h='P'+(i+1)+' · '+nameOf(r.target);
     const title=cap(r.title|| (isNote(r)?'Personal note':'Saved passage'),240);
     const text=isNote(r)?r.body:(r.target?.quote||r.body||(r.archivedValue!==undefined?JSON.stringify(r.archivedValue):'Saved passage / bookmark'));
     const quote=r.target?.quote&&isNote(r)?'\nSelected text: '+cap(r.target.quote,1000):'';
@@ -140,10 +140,10 @@
       'Original published PDF only. No Reading Desk items or personal data are added.':
       (rows.length+' Reading Desk item'+(rows.length===1?'':'s')+' selected. A new PDF will be created locally; the original edition stays unchanged.');
     $('pe-count').textContent=has?rows.length+' qualifying item'+(rows.length===1?'':'s')+
-      (rows.some(r=>r.target?.section)?' · in-text entries will be pinned to source section pages where mapping is verified':' · appendix-only references'):'';
-    const overflow=has&&requiresAppendix(rows,p);
-    $('pe-generate').disabled=busy||!pdf|| (has&&(!rows.length||(!p.appendix&&!p.annotations)||rows.length>MAX_ITEMS||overflow));
-    if(overflow)$('pe-count').textContent+=' · The selected material is too long for pop-up notes alone; enable the full notes appendix.';
+      (rows.some(r=>r.target?.section)?' · P references identify personal notes at their original passages':' · appendix-only personal entries'):'';
+    const missingAppendix=has&&!p.appendix;
+    $('pe-generate').disabled=busy||!pdf|| (has&&(!rows.length||missingAppendix||rows.length>MAX_ITEMS));
+    if(missingAppendix)$('pe-count').textContent+=' · Include the personal appendix: P references need somewhere to link to.';
     if(has&&rows.length>MAX_ITEMS)$('pe-count').textContent+=' · Too many for one export. Choose up to '+MAX_ITEMS+' items.';
     if(mode()==='choose')renderPicker();
     if(!has){$('pe-result').hidden=true;if(!loadError)info('');}
