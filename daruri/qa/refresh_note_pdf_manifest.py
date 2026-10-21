@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Validate five fresh, structure-preserving al-Daruri PDF builds.
 
-Only replaces the five PDF binaries and their hash/page manifest. Never rewrites
+Updates the five PDF binaries, their hash/page manifest and the five matching\nsource-to-PDF section metadata files required by the personal-note exporter. Never rewrites
 reader HTML, navigation, study materials, personal annotations, or Arabic text.
 """
 import argparse
@@ -20,6 +20,8 @@ def validate_and_publish(source: Path, site: Path):
     manifest_file = site / 'pdf-editions-manifest.json'
     manifest = json.loads(manifest_file.read_text(encoding='utf-8'))
     report = {}
+    release_dir = site / 'build' / 'release'
+    release_dir.mkdir(parents=True, exist_ok=True)
     for index, filename in enumerate(NAMES):
         pdf_path = source / filename
         meta_path = source / (filename + '.metadata.json')
@@ -54,6 +56,10 @@ def validate_and_publish(source: Path, site: Path):
         sha = hashlib.sha256(pdf_path.read_bytes()).hexdigest()
         assert sha == meta['sha256'], filename + ' checksum mismatch'
         shutil.copy2(pdf_path, site / filename)
+        # Personal-annotation PDF exports must use metadata from the exact same PDF bytes.
+        target_meta = release_dir / (filename + '.metadata.json')
+        shutil.copy2(meta_path, target_meta)
+        assert json.loads(target_meta.read_text(encoding='utf-8'))['sha256'] == sha
         record = manifest['files'][filename]
         record.update(sha256=sha, source_sha256=sha, size_bytes=pdf_path.stat().st_size, pages=pages)
         report[filename] = {'pages': pages, 'links': link_count, 'bookmarks': len(outline), 'sha256': sha}
