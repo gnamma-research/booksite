@@ -16,6 +16,7 @@ a.gn-source-icon-link {
   color: var(--accent, #386676); text-decoration: none!important;
   transition: background-color .15s ease, box-shadow .15s ease;
   touch-action: manipulation; -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: default; /* retain native iOS link preview and copy menu */
 }
 a.gn-source-icon-link:hover {background: var(--hover, rgba(107,128,119,.14));}
 a.gn-source-icon-link:focus-visible {outline: 2px solid var(--accent, #386676); outline-offset: 2px;}
