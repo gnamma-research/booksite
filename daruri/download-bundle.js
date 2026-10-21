@@ -150,7 +150,7 @@
       ['daruri/editions.js', 'editions.js?v=20261021-editions1'],
       ['daruri/editions.css', 'editions.css?v=20261021-editions1'],
       ['daruri/personal-export.html', 'personal-export.html'],
-      ['daruri/personal-export.js', 'personal-export.js?v=1'],
+      ['daruri/personal-export.js', 'personal-export.js?v=2'],
       ['daruri/personal-export.css', 'personal-export.css?v=1'],
       ['daruri/vendor/pdf-lib-1.17.1.min.js', 'vendor/pdf-lib-1.17.1.min.js'],
       ['daruri/vendor/LICENSE-pdf-lib.md', 'vendor/LICENSE-pdf-lib.md'],
