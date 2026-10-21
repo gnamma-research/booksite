@@ -21,3 +21,8 @@
 @media(max-width:380px){.gn-editions .gn-ed-icon-option{gap:6px;padding:8px 6px;font-size:12px}.gn-editions .gn-ed-choice-glyph{height:20px;width:20px;flex-basis:20px}}
 @media(prefers-reduced-motion:reduce){.gn-editions .gn-ed-icon-option{transition:none}}
 @media print{.gn-editions .gn-ed-icon-options{display:none!important}}
+
+/* Boolean choices are also icon radios, not bare checkboxes. */
+.gn-editions .gn-ed-toggle:has(.gn-ed-icon-toggle-options){display:grid;gap:8px;grid-column:1/-1}
+.gn-editions .gn-ed-icon-toggle-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:450px}
+.gn-editions .gn-ed-toggle .gn-ed-icon-label{display:block;font-size:calc(13px * var(--font-scale,1));color:inherit}
