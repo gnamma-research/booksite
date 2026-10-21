@@ -18,7 +18,7 @@ The user has requested coordination because several chats are attempting to uplo
 
 ### Next upload: one publisher for each overlapping target
 
-**Publisher claim: Visuals compact-height refinement (appearance chat).** Claimed 2026-10-21T03:13:21.437Z; expires 2026-10-21T03:28:21.437Z. Scope: `daruri/compact-menu.css`, `daruri/index.html` (asset versions only), `daruri/sw.js`, `daruri/download-bundle.js`, focused QA and this release record. Narrow edit to reduce Visuals vertical whitespace about 10–15%, preserve all 48px touch targets, iOS touch-action, 460px dialog width, and current Reading Desk/navigation/PDF work. Based on latest master. One publisher; do not replace assets from older ZIP.
+**Publisher claim: unclaimed.** The compact-height Visuals refinement was published in [`7b6f2bc`](https://github.com/gnamma-research/booksite/commit/7b6f2bc5389feb6b18ac2c55d73f95158e38c4e0); [GitHub Pages run 39537658134](https://github.com/gnamma-research/booksite/actions/runs/39537658134) succeeded on 21 October 2026 at 03:16:45 UTC. The appearance chat releases its 15-minute claim. All newer Reading Desk, Visuals, home/navigation, and five-PDF work is preserved; future publishers must start from current master.
 
 Previous publisher record: **Publisher claim: Reading Desk Bin/printing QA repair chat.** Exact targets: `daruri/reading-desk.css`, `daruri/reading-desk.js`, `daruri/index.html`, `daruri/sw.js`, `daruri/download-bundle.js`, focused QA, release and coordination records. Base 98726e8595769e815ca5638a82b51a09e1670671. Claimed 2026-10-20T20:27:24.922Z; expires 2026-10-20T20:42:24.922Z. Surgical Bin alignment and single-entry print-scope fix, preserving all current Visuals, sources, PDFs and menus. No PDFs or Usul ZIP changed.
 
@@ -37,6 +37,14 @@ Previous publisher record: The Arabic toggle and menu accessibility follow-up is
 Previous claim: unclaimed. The self-contained lesson printing release is published and live. Its publisher released the claim at 2026-10-20 16:06 UTC after successful deployment and exact verification of all seven changed live runtime/page assets. No print, PDF or saved-package upload remains active.
 
 Previous publisher record: The English reading typefaces publisher released its claim at 2026-10-20 15:49 UTC after source and live-deployment verification. The earlier saved Usul ZIP/pointer access blocker remains recorded; no saved-package upload is running.
+
+### Compact Visuals vertical spacing — completed, 21 October 2026
+
+**Published:** [`7b6f2bc`](https://github.com/gnamma-research/booksite/commit/7b6f2bc5389feb6b18ac2c55d73f95158e38c4e0); [GitHub Pages 39537658134](https://github.com/gnamma-research/booksite/actions/runs/39537658134) completed successfully at 03:16:45 UTC. Runtime/cache version: `20261021-visualscompact1`. Exact targets changed: `daruri/compact-menu.css`, reader `index.html` asset references, service worker, Complete package, and focused Visuals QA.
+
+The six Visuals rows now have 5px vertical padding instead of 10px; outer dialog padding and the heading separator were also tightened. Expected reduction is roughly 70–75 CSS pixels, or about 10–15% for a typical phone-height panel. Page-style icons, all three genuine Arabic and three English font samples, language-order diagrams, colour swatches, and touch-target sizes remain unchanged. The earlier 48px buttons, equal-width A−/percentage/A+ row, `touch-action: manipulation` Safari mitigation, and 44px navigation opener were explicitly retained. The narrower 460px modal width and responsive iPhone correction remain unchanged.
+
+Main-reader JavaScript parses and new Visuals QA assertions cover size and version contracts; source diff contains only the 25-line CSS spacing override, new asset versions and regression assertions. Reading Desk, Notes, scholarly content, PDFs, saved preferences, and current route maps are untouched. GitHub Pages deployment is confirmed; no physical Safari visual/tap test or independent live-byte comparison is claimed because direct Pages HTTP retrieval was unavailable in this environment.
 
 ### Visuals frame width and Arabic layout glyph correction — completed, 20 October 2026
 
