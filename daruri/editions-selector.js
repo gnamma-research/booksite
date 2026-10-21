@@ -1,6 +1,6 @@
 /* Daruri published-edition selector.
-   No server-side or browser-generated public PDFs: every Read/Download/Print
-   action must resolve to a verified existing file, never a substitute.
+   No server-side public PDF generation: Open PDF resolves to a verified file,
+   never an unrelated substitute.
    The historical local A4 assembler remains internal for older consumers,
    but is not attached to these public PDF actions. */
 (() => {
@@ -10,6 +10,13 @@
   const TIERS = ['reading','study','reference'];
   const LABELS = {reading:'Reading',study:'Study',reference:'Reference'};
   const STORAGE_KEY = 'gnamma-published-editions-state-v1';
+  // These are the apparatus already included in the twelve published A4 PDFs
+  // and the canonical scholarly Reference PDF. Other choices need new PDFs.
+  const APPARATUS = {
+    reading:{glossary:'none',index:'none',applications:'off',concordance:'off'},
+    study:{glossary:'none',index:'basic',applications:'off',concordance:'off'},
+    reference:{glossary:'historical',index:'full',applications:'on',concordance:'on'}
+  };
   const PARTS = [
     ['intro','Introduction · §§1–9'],
     ['rulings','I · Rulings · §§10–61'],
@@ -28,6 +35,7 @@
       personalNotes:false,personalBookmarks:false,scope:'full',part:'rulings',
       lesson:'',from:1,to:258,layout:'parallel',density:'standard'}
   };
+  for(const name of TIERS)Object.assign(PRESETS[name],APPARATUS[name]);
   let state = Object.fromEntries(TIERS.map(t=>[t,{...PRESETS[t]}]));
   let tier = 'reading',category = 'layout',customOpen = false;
   let mainRoot = null, catalog = null, canonical = null, requestId = 0;
@@ -80,6 +88,16 @@
   function notesLabel(notes){
     return {none:'None',selected:'Selected',full:'Full'}[notes]||notes;
   }
+  function apparatusLabel(s){
+    const items=[];
+    if(s.glossary==='technical')items.push('Technical glossary');
+    if(s.glossary==='historical')items.push('Historical dictionary');
+    if(s.index==='basic')items.push('Basic index');
+    if(s.index==='full')items.push('Full index');
+    if(s.applications==='on')items.push('Bidāya applications');
+    if(s.concordance==='on')items.push('R/BA concordance');
+    return items.length?items.join(' · '):'None';
+  }
   function resolve(){
     const s=state[tier];
     const reply={record:null,reason:'',status:'unavailable'};
@@ -87,6 +105,12 @@
     if(s.scope!=='full'){reply.reason='No published PDF for this text selection. Only the complete work is currently available here.';return reply;}
     if(s.en&&s.ar&&s.layout!=='parallel'){reply.reason='Stacked bilingual layout has not been published.';return reply;}
     if(s.density!=='standard'){reply.reason='This print-density variant has not been published.';return reply;}
+    for(const key of Object.keys(APPARATUS[tier])){
+      if(s[key]!==APPARATUS[tier][key]){
+        reply.reason='No published '+LABELS[tier]+' PDF matches the selected glossary, index, applications and concordance options.';
+        return reply;
+      }
+    }
     if(tier==='reading'){
       if(s.notes!=='none'){reply.reason='Reading PDFs without publisher notes are available. The chosen publisher-note profile is not published.';return reply;}
       reply.record=catalog.find(x=>x.tier==='reading'&&x.language===language(s)&&
