@@ -577,3 +577,21 @@ body.gn-rd-print #gn-rd-print-root{box-sizing:border-box}
  html:root body.gn-rd-print #gn-rd-print-root .gn-rd-print-fields,
  html:root body.gn-rd-print #gn-rd-print-root .gn-rd-print-check-group{display:none!important}
 }
+
+
+/* Final visual review: mobile detail must hide list-only filtering controls;
+   PDF scopes need full-width labels; selected-item actions stay on one row. */
+@media(max-width:760px){
+ .gn-rd-page.gn-rd-mobile-detail-open .gn-rd-controls{display:none!important}
+ .gn-rd-page .gn-rd-detail-actions{gap:5px;flex-wrap:nowrap}
+ .gn-rd-page .gn-rd-detail-actions>button,
+ .gn-rd-page .gn-rd-item-more>summary{
+  padding:8px 9px;font-size:.76rem;min-height:44px
+ }
+}
+@media(max-width:540px){
+ #gn-rd-print-root .gn-rd-print-fields{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:360px){
+ .gn-rd-page .gn-rd-detail-actions{flex-wrap:wrap}
+}
