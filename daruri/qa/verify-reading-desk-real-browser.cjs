@@ -147,6 +147,20 @@ async function exercise(engine, width, touch) {
     await page.locator('.gn-rd-card-open[data-id="saved-section"]').click();
     await page.locator('#gn-rd-detail [data-rd="open"]').click();
     await page.locator('.gn-rd-return [data-rd="return"]').waitFor({timeout:25000});
+    await page.evaluate(() => {
+      window.__rdScrollCalls=[];
+      const scrollToOriginal=window.scrollTo;
+      window.scrollTo=function(...args){
+        window.__rdScrollCalls.push({method:'scrollTo',args,stack:String(new Error().stack).slice(0,800)});
+        return scrollToOriginal.apply(this,args);
+      };
+      const scrollIntoOriginal=Element.prototype.scrollIntoView;
+      Element.prototype.scrollIntoView=function(...args){
+        window.__rdScrollCalls.push({method:'scrollIntoView',element:this.tagName+'.'+this.className,args,
+          stack:String(new Error().stack).slice(0,800)});
+        return scrollIntoOriginal.apply(this,args);
+      };
+    });
     await page.locator('.gn-rd-return [data-rd="return"]').click();
     await page.locator('.gn-rd-page').waitFor({timeout:25000});
     const position = async () => page.evaluate(() => {
@@ -165,6 +179,8 @@ async function exercise(engine, width, touch) {
     const settledPosition=await position();
     console.log('RETURN VIEWPORT '+id+' initial='+JSON.stringify(earlyPosition)+
       ' settled='+JSON.stringify(settledPosition));
+    console.log('RETURN SCROLL CALLS '+id+' '+JSON.stringify(await page.evaluate(
+      () => window.__rdScrollCalls?.slice(-12))));
     if(touch) {
       check(settledPosition.detailHeadingBottom>=130 &&
         settledPosition.detailHeadingTop<settledPosition.height*0.7,
