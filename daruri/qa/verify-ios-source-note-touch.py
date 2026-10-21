@@ -91,9 +91,10 @@ def exercise(engine, browser, width, mobile):
         assert tip.count() == 0 or not tip.is_visible(), 'touch focus showed desktop tooltip'
         link.blur()
         page.keyboard.press('Tab')
-        # Tab may already have focused this link; force a genuine refocus event.
-        link.blur()
-        link.focus()
+        # Preserve the genuine keyboard input while avoiding scroll events
+        # that can hide a tooltip between focus and an immediate assertion.
+        link.evaluate("e => { e.blur(); e.focus({preventScroll:true}); }")
+        page.wait_for_function("document.querySelector('#gn-source-url-tooltip') && !document.querySelector('#gn-source-url-tooltip').hidden",timeout=6000)
         assert tip.is_visible(), 'keyboard focus lost URL tooltip'
         page.keyboard.press('Escape')
         assert not tip.is_visible()
