@@ -5,6 +5,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path'),os=require('node:os');
 const {spawn}=require('node:child_process'),{chromium}=require('playwright');
 const {PDFDocument,PDFArray,PDFName}=require('pdf-lib');
+const navigationDestination=require('./native-phone/resolve-pdf-link.cjs');
 const root=path.resolve(__dirname,'../..');
 const host='http://127.0.0.1:8765';
 const server=spawn('python3',['-m','http.server','8765','--bind','127.0.0.1'],{cwd:root,stdio:'ignore'});
@@ -65,8 +66,7 @@ const file='daruri.pdf';
    const type=a.lookup(PDFName.of('Subtype'));
    if(String(type)==='/Text')throw Error('Personal PDF exports must not create comment boxes');
    if(String(type)==='/Link'){
-     const raw=a.get(PDFName.of('Dest'));
-     const dest=raw?pdf.context.lookup(raw):null;
+     const dest=navigationDestination(pdf,a);
      if(dest instanceof PDFArray&&refSet.has(String(dest.get(0))))hasPersonalLink=true;
    }
   }
@@ -84,8 +84,7 @@ const file='daruri.pdf';
     for(let i=0;i<list.size();i++){
       const item=pdf.context.lookup(list.get(i));
       if(String(item.lookup(PDFName.of('Subtype')))!=='/Link')continue;
-      const raw=item.get(PDFName.of('Dest'));
-      const dest=raw?pdf.context.lookup(raw):null;
+      const dest=navigationDestination(pdf,item);
       if(dest instanceof PDFArray){hasReturn=true;break;}
     }
   }
