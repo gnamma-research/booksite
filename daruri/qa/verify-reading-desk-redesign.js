@@ -114,8 +114,8 @@ function boot(source,opts={}){
   notifyExternalChange(){for(const fn of events['window:storage']||[])fn({key:'gnamma-reading-desk-v1',newValue:opts.sharedStore?.value??raw})}};
 }
 test('source scripts compile and cache version matches',()=>{
- ensure(sw.includes('20261021-readingdesk5'),'service worker cache not updated');
- ensure(bundle.includes('20261021-readingdesk5'),'offline bundle not updated');
+ ensure(sw.includes('20261021-readingdesk6'),'service worker cache not updated');
+ ensure(bundle.includes('20261021-readingdesk6'),'offline bundle not updated');
  ensure(dict.includes("dateSource:'recorded'"),'dictionary dates missing');
 });
 test('mobile list and detail are mutually exclusive',()=>{
