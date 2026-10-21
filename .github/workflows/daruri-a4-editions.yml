@@ -7,6 +7,7 @@ on:
       - ".github/workflows/daruri-a4-editions.yml"
       - "daruri/build/publish_editions.py"
       - "daruri/build/print_editions.py"
+      - "daruri/build/publish_unvowelled_reading.py"
       - "daruri/build/build_editions.py"
       - "daruri/build/main_text.py"
       - "daruri/build/styles.css"
@@ -119,7 +120,7 @@ jobs:
               echo "All 12 verified A4 PDFs and their catalog are already current."
               exit 0
             fi
-            git commit -m "Publish all 12 verified A4 Daruri editions [skip ci]"
+            git commit -m "Publish all 12 verified A4 Daruri editions"
             if git push origin HEAD:master; then
               echo "Published all 12 PDFs and manifest without rewriting other work."
               exit 0
