@@ -19,7 +19,7 @@
 <main id="pe-main">
  <p class="eyebrow">AL-ḌARŪRĪ · READING DESK</p>
  <h1>Print or save a personal edition</h1>
- <p class="lead">Start with an unchanged published PDF, or add your private Reading Desk observations as PDF comments and a printable personal notes appendix. Everything is assembled in this browser: no login, server-side account or upload of your notes.</p>
+ <p class="lead">Start with an unchanged published PDF, or add your private Reading Desk observations as discreet P-number references and a searchable personal endnotes appendix. Everything is assembled in this browser: no login, server-side account or upload of your notes.</p>
  <div id="pe-alert" class="alert" role="status" aria-live="polite" hidden></div>
  <form id="pe-form" autocomplete="off">
   <section class="panel" aria-labelledby="edition-title">
@@ -40,13 +40,13 @@
     <div class="choices">
      <label><input type="checkbox" id="pe-personal" checked> Personal notes</label>
      <label><input type="checkbox" id="pe-bookmarks"> Bookmarks and saved quotations</label>
-     <label><input type="checkbox" id="pe-annotations" checked> Add PDF comments and precise highlights when the quotation is verified</label>
-     <label><input type="checkbox" id="pe-appendix" checked> Append printable personal notes pages</label>
+     <label><input type="checkbox" id="pe-annotations" checked> Add linked P1, P2… references and clickable quotation highlights</label>
+     <label><input type="checkbox" id="pe-appendix" checked> Include searchable personal endnotes (required for linked P references)</label>
      <label><input type="checkbox" id="pe-dates" checked> Include reliable created/edited timestamps</label>
     </div>
     <label for="pe-order">Appendix ordering</label>
     <select id="pe-order"><option value="source">Source/section order (recommended)</option><option value="created">When saved, oldest first</option><option value="newest">When saved, newest first</option></select>
-    <p class="hint">Included notes appear in a <strong>searchable, selectable Unicode appendix</strong>, including English and Arabic. Saved quotations receive exact-word highlights when their coordinates are verified against the edition. Ambiguous quotations retain safe section-level comments. Dictionary and free-standing notes remain in the appendix.</p>
+    <p class="hint">Your observations are labelled <strong><span class="personal-example">P1</span>, <span class="personal-example">P2</span>, … (P = personal)</strong> in subdued teal. Publisher footnotes and scholarly references retain their original numbers and styling. Select a P marker or a verified highlighted phrase to reach your endnote; select its underlined <em>Return to original text</em> link to go back. The appendix remains searchable and selectable in English, Arabic and French. Unanchored notes stay in the appendix.</p>
     <div id="pe-picker" class="picker" hidden>
      <label for="pe-search">Find an item</label><input type="search" id="pe-search" placeholder="Search your note title, body or section">
      <div class="picker-tools"><button type="button" id="pe-check-all">Select all qualifying</button><button type="button" id="pe-check-none">Clear selection</button></div>
@@ -65,8 +65,8 @@
   </section>
  </form>
  <details class="help"><summary>Technical notes and limitations</summary>
-  <p>PDF comments may appear as pop-up annotations or icons depending on the PDF application. Apple Files, browsers and Acrobat differ. The appendix has readable visual pages plus a Unicode text layer for search and copying.</p>
-  <p>Exact-word highlights use verified coordinates, never guessed positions; otherwise the exporter attaches the note to the correct section. Bookmarks and notes outside the book text are preserved in the appendix. PDF viewer support for search and highlighting varies; keep your independent Reading Desk JSON backup for editing or transferring notes.</p>
+  <p>Personal references are drawn as small P labels linked through standard PDF navigation; they do not create new popup comments or crowd the right-hand comments sidebar. Publisher references remain untouched. The appendix has readable pages plus a Unicode text layer for search and copying.</p>
+  <p>Exact-word highlights use verified coordinates and navigation links, never guessed positions; otherwise the exporter places a small P marker beside the correct section. Bookmarks and notes outside the book text are preserved in the appendix. PDF viewer support for search and highlighting varies; keep your independent Reading Desk JSON backup for editing or transferring notes.</p>
   <p>If opening a downloaded HTML ZIP directly using a <code>file://</code> URL, browser security restrictions may block access to the PDF and page-map files. Use the hosted website or serve the package from a local HTTP server; notes are still processed locally.</p>
   <p>Personalized PDF generation uses a locally executed, version-pinned PDF and Unicode text libraries hosted with this website. No third-party script is executed, even if the local library cannot be loaded. The original PDF and your notes are processed on your device. The site does not send personal note content to a server. The unchanged PDF option does not need this library.</p>
  </details>
