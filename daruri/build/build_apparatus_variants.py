@@ -371,8 +371,8 @@ def main():
         "release":"20261022-complete-a4-apparatus-matrix",
         "status":"verified",
         "source_a4_manifest_sha256":digest((A4/"manifest.json").read_bytes()),
-        "notes":"120 static, full-work Reading/Study apparatus profiles across compatible published base editions. SHA-bound maps cover all 258 source sections. Word-level precision remains unverified; canonical PDFs and the twelve A4 base PDFs remain unchanged.",
-        "files":built,
+        "notes":"Compact manifest: full coordinate maps are held in linked, SHA-verified map files, not repeated 120 times. 120 static, full-work Reading/Study apparatus profiles across compatible published base editions. SHA-bound maps cover all 258 source sections. Word-level precision remains unverified; canonical PDFs and the twelve A4 base PDFs remain unchanged.",
+        "files":[{k:v for k,v in row.items() if k not in ("section_pages","anchors")} for row in built],
     }
     (output / "manifest.json").write_text(json.dumps(final,ensure_ascii=False,indent=2) + "\n")
     print("PASS",len(built),"verified variants and checksum-bound section maps",flush=True)
