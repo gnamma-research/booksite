@@ -409,7 +409,7 @@
         const kind=norm(target.kind);
         const index=verifiedMap?.entry_positions?.terms||{};
         const entry=index[(kind==='index'?'index:':'glossary:')+key]||index[key];
-        if(entry&&Number.isInteger(entry.page)&&entry.page>=1&&entry.page<=basePageCount)
+        if(entry&&Number.isInteger(entry.page)&&entry.page>=1&&entry.page<=pdf.getPageCount())
           return {index:entry.page-1,top:Number(entry.y)||82,hit:null};
         return {index:-1,top:82,hit:null};
       }
@@ -502,7 +502,40 @@
       const data=await res.json();
       if(!data.files||!data.default_pdf)throw Error('Edition list is incomplete');
       manifest=data;
-      const entries=Object.entries(data.files).filter(([file,x])=>/^[a-z0-9-]+\.pdf$/.test(file)&&x?.sha256&&x?.pages);
+      // Add SHA-verified static apparatus PDFs and their individual personal-note
+      // maps; no visitor-facing server processes PDF files.
+      try{
+        const resExtra=await fetch(new URL('editions/apparatus/manifest.json',URL_ROOT),{cache:'no-cache'});
+        if(resExtra.ok){
+          const extra=await resExtra.json();
+          if(extra?.status==='verified'&&Array.isArray(extra.files)){
+            for(const record of extra.files){
+              if(!/^apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled)-(glossary|index|glossary-index|concordance|applications)\.pdf$/.test(record.file||''))continue;
+              if(record.map_coverage!==1||record.verified_sections!==258||
+                !/^[0-9a-f]{64}$/.test(record.sha256||'')||
+                !/^[0-9a-f]{64}$/.test(record.map_sha256||'')||
+                !Number.isInteger(record.pages)||record.pages<40)continue;
+              if(!/^apparatus\/maps\/daruri-[a-z-]+\.pdf\.json$/.test(record.map_file||'')||
+                 !/^apparatus\/maps\/daruri-[a-z-]+\.pdf\.metadata\.json$/.test(record.metadata_file||''))continue;
+              const file='editions/'+record.file;
+              data.files[file]={
+                sha256:record.sha256,pages:record.pages,size_bytes:record.bytes,
+                title:(record.tier==='study'?'Study':'Reading')+' · '+
+                  (record.language==='bilingual-unvowelled'?'Unvowelled':'Vowelled')+
+                  ' · '+record.apparatus.join(' + '),
+                metadata_path:'editions/'+record.metadata_file,
+                map_path:'editions/'+record.map_file,
+                map_sha256:record.map_sha256,
+                arabic_form:record.language==='bilingual-unvowelled'?'ar':'vocalized'
+              };
+            }
+          }
+        }
+      }catch(_){/* The original five PDFs remain selectable without the apparatus catalogue. */}
+      const entries=Object.entries(data.files).filter(([file,x])=>
+        (/^[a-z0-9-]+\.pdf$/.test(file)||
+         /^editions\/apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled)-(glossary|index|glossary-index|concordance|applications)\.pdf$/.test(file))&&
+        x?.sha256&&x?.pages);
       $('pe-edition').replaceChildren();
       const labels={ 'daruri.pdf':'Scholarly reference · bilingual',
         'daruri-study.pdf':'Study · bilingual','daruri-english.pdf':'Reading · English',
@@ -512,7 +545,16 @@
         op.textContent=(labels[file]||x.title||file)+' · '+x.pages+' pages';
         $('pe-edition').append(op);
       }
-      $('pe-edition').value=entries.some(([f])=>f===data.default_pdf)?data.default_pdf:entries[0]?.[0]||'';
+      const query=new URL(location.href).searchParams;
+      const requested=query.get('pdf');
+      $('pe-edition').value=requested&&entries.some(([f])=>f===requested)?requested:
+        entries.some(([f])=>f===data.default_pdf)?data.default_pdf:entries[0]?.[0]||'';
+      if(query.get('personal')==='1'||query.get('bookmarks')==='1'){
+        const all=document.querySelector('input[name="pe-mode"][value="all"]');
+        if(all)all.checked=true;
+        $('pe-personal').checked=query.get('personal')==='1';
+        $('pe-bookmarks').checked=query.get('bookmarks')==='1';
+      }
       if(!$('pe-edition').value)throw Error('No published editions available');
     }catch(error){showError('Could not load the edition list: '+error.message);$('pe-edition').innerHTML='<option value="">Edition list unavailable</option>';}
     document.querySelectorAll('input[name="pe-mode"]').forEach(e=>e.addEventListener('change',syncForm));
