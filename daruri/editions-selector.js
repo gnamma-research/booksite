@@ -65,10 +65,11 @@
     eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
     download:'<path d="M12 3v12M7 10l5 5 5-5M4 18v3h16v-3"/>',
     print:'<path d="M6 8V3h12v5M6 17H4V9h16v8h-2M7 14h10v7H7z"/><path d="M17 11h.01"/>',
-    sliders:'<path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.5" fill="currentColor" stroke="none"/><circle cx="16" cy="17" r="2.5" fill="currentColor" stroke="none"/>'
+    sliders:'<path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.5" fill="currentColor" stroke="none"/><circle cx="16" cy="17" r="2.5" fill="currentColor" stroke="none"/>',
+    chevron:'<path d="m6 9 6 6 6-6"/>'
   };
-  function icon(name){
-    return '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+paths[name]+'</svg>';
+  function icon(name,className=''){
+    return '<svg'+(className?' class="'+escape(className)+'"':'')+' aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+paths[name]+'</svg>';
   }
   function language(s){
     if(s.en&&s.ar)return s.vowels?'bilingual':'bilingual-unvowelled';
@@ -174,7 +175,7 @@
           '<p class="gn-es-spec-notes" data-es-spec-notes></p>'+
           '<p class="gn-es-spec-apparatus" data-es-spec-apparatus></p>'+
         '</section>'+
-        '<div class="gn-es-custom-head"><button type="button" class="gn-es-custom-trigger" data-es-custom aria-expanded="false" aria-controls="gn-es-custom">'+icon('sliders')+'<span>Customize</span><span class="gn-es-custom-arrow" aria-hidden="true">⌄</span></button></div>'+
+        '<div class="gn-es-custom-head"><button type="button" class="gn-es-custom-trigger" data-es-custom aria-expanded="false" aria-controls="gn-es-custom">'+icon('sliders')+'<span>Customize</span>'+icon('chevron','gn-es-custom-arrow')+'</button></div>'+
         '<div id="gn-es-custom" class="gn-es-custom" hidden>'+
           '<div class="gn-es-category-tabs" role="tablist" aria-label="Customize PDF settings">'+
             ['content','layout','notes','apparatus'].map(c=>'<button type="button" class="gn-es-category" role="tab" data-es-category="'+c+'" aria-selected="false" aria-controls="gn-es-options" tabindex="-1">'+c.charAt(0).toUpperCase()+c.slice(1)+'</button>').join('')+
@@ -439,7 +440,7 @@
           Number.isInteger(x.pages)&&x.pages>0&&/^[0-9a-f]{64}$/.test(x.sha256||'')):null;
       apparatusCatalog=extra?.status==='verified'&&Array.isArray(extra.files)?
         extra.files.filter(row=>row && ['reading','study'].includes(row.tier) &&
-          /^apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled)-(glossary|index|glossary-index|concordance|applications)\.pdf$/.test(row.file||'') &&
+          /^apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english)-[a-z-]+\.pdf$/.test(row.file||'') &&
           Number.isInteger(row.pages)&&row.pages>40&&row.verified_sections===258 &&
           row.map_coverage===1 &&
           /^[0-9a-f]{64}$/.test(row.sha256||'') &&
