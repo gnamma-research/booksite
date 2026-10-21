@@ -25,3 +25,4 @@ jobs:
           git add daruri/personal-anchor-maps
           git commit -m "Publish verified English and Arabic PDF word geometry maps"
           git push origin HEAD:feature/personal-pdf-search-precise-highlights-20261021
+# Rerun after checked bilingual lane-translation correction.
