@@ -14,6 +14,17 @@ const norm=v=>clean(v).replace(/\s+/g,' ').trim();
 const keyOf=t=>[t.kind,t.section||'',t.segment==null?'':t.segment,t.kind==='paragraph'?'':t.lang||'',t.quote?norm(t.quote).slice(0,400):'',t.term||'',t.app||'',t.lesson||'',t.level||'',t.noteId||''].join('\u241f');
 const uuid=()=>typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID():'desk-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
 const short=(v,n=110)=>clamp(v,30000).length>n?clamp(v,n-1)+'…':String(v||'');
+
+const RD_ICON={
+ bookmark:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/></svg>',
+ note:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>',
+ saved:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
+ ai:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M11 2.5l2.25 6.25L19.5 11l-6.25 2.25L11 19.5l-2.25-6.25L2.5 11l6.25-2.25zM19.2 16l.75 2.05L22 18.8l-2.05.75L19.2 21.6l-.75-2.05-2.05-.75 2.05-.75z"/></svg>',
+ close:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>'
+};
+function rdTool(label,data,icon,selected=false,filled=false){
+ return '<button type="button" class="gn-rd-tool-icon'+(selected?' is-on':'')+(filled?' has-content':'')+'" title="'+esc(label)+'" aria-label="'+esc(label)+'" '+data+'>'+RD_ICON[icon]+'</button>';
+}
 const category=it=>it.kind==='note'||it.kind==='footnote'?'notes':['quote','paragraph','section'].includes(it.kind)?'text':it.kind==='application'?'bidaya':it.kind==='lesson'?'lessons':it.kind;
 function create(ctx){
  const state=ctx.state, book=ctx.book;
@@ -268,6 +279,7 @@ function create(ctx){
   n=String(n);const row=records.find(r=>r.kind==='section'&&!r.deleted&&r.target?.section===n);
   if(row)trash(row.id);else upsert('section',{kind:'section',section:n});
   ctx.syncChrome();
+  if(state.route==='reader')afterReader();
   if(state.route==='bookmarks')render();
  }
  function moveMany(ids,restore=false){
@@ -593,7 +605,11 @@ function create(ctx){
   selection=next;
   let bar=$('#gn-rd-selection-bar');
   if(!bar){bar=document.createElement('div');bar.id='gn-rd-selection-bar';bar.className='gn-rd-selection-bar';bar.setAttribute('role','toolbar');bar.setAttribute('aria-label','Save selected text');document.body.append(bar);}
-  bar.hidden=false;bar.innerHTML='<span>'+esc(short(next.quote,72))+'</span><button type="button" data-rd="selection-bookmark">Bookmark</button><button type="button" data-rd="selection-note">Add note</button><button type="button" data-rd="selection-dismiss" aria-label="Dismiss selection tools">×</button>';
+  bar.setAttribute('aria-label','Actions for selected text');bar.hidden=false;
+  bar.innerHTML=rdTool('Bookmark selected words','data-rd="selection-bookmark"','bookmark')+
+   rdTool('Add a personal note for selected words','data-rd="selection-note"','note')+
+   rdTool('Ask AI about selected words','data-ai-launch="1" data-ai-selection="1"','ai')+
+   rdTool('Dismiss selection actions','data-rd="selection-dismiss"','close');
  }
  function hideSelection(){const bar=$('#gn-rd-selection-bar');if(bar)bar.hidden=true;}
  function scheduleProbe(){clearTimeout(probeTimer);probeTimer=setTimeout(probe,200);}
@@ -703,22 +719,28 @@ function create(ctx){
   }
   const header=reader.querySelector(':scope > .reader-heading');
   if(header){
-   const n=String(state.n),count=active().filter(x=>x.target?.section===n).length;
+   const n=String(state.n),items=active().filter(x=>x.target?.section===n);
+   const count=items.length,saved=items.some(x=>x.kind==='section');
    let tools=header.nextElementSibling;
    if(!tools?.classList.contains('gn-rd-section-tools')){tools=document.createElement('div');tools.className='gn-rd-section-tools';header.after(tools);}
-   tools.innerHTML='<button type="button" data-rd="section-note" data-section="'+esc(n)+'">+ Personal note</button>'+
-    (count?'<button type="button" data-rd="view-section" data-section="'+esc(n)+'">Reading Desk · '+count+' saved in this section</button>':'');
+   tools.setAttribute('role','toolbar');tools.setAttribute('aria-label','Section actions');
+   const a=' data-section="'+esc(n)+'"';
+   tools.innerHTML=rdTool(saved?'Remove section bookmark':'Bookmark section','data-rd="section-bookmark"'+a+' aria-pressed="'+saved+'"','bookmark',saved)+
+    rdTool('Add personal note to section','data-rd="section-note"'+a,'note',false,items.some(x=>x.kind==='note'&&x.target?.kind==='section'))+
+    (count?rdTool('View '+count+' saved items from this section','data-rd="view-section"'+a,'saved',false,true):'');
   }
   reader.querySelectorAll('.passage-grid').forEach(grid=>{
    const segment=Number(grid.dataset.segment),n=String(grid.closest('[data-reading-section]')?.dataset.readingSection||state.n);
    const relevant=active().filter(r=>r.target?.section===n&&r.target?.segment===segment);
-   const bookmarks=relevant.filter(r=>r.kind!=='note').length,notesCount=relevant.filter(r=>r.kind==='note').length;
+   const bookmark=relevant.some(r=>r.kind==='paragraph'),notesCount=relevant.filter(r=>r.kind==='note').length;
    let tools=grid.nextElementSibling;
    if(!tools?.classList.contains('gn-rd-passage-tools')){tools=document.createElement('div');tools.className='gn-rd-passage-tools';grid.after(tools);}
+   tools.setAttribute('role','toolbar');tools.setAttribute('aria-label','Passage '+(segment+1)+' actions');
    const attrs=' data-section="'+esc(n)+'" data-segment="'+segment+'"';
-   tools.innerHTML=(bookmarks||notesCount?'<button type="button" data-rd="view-paragraph"'+attrs+' aria-label="View saved items for paragraph '+(segment+1)+'">'+
-    (bookmarks?'◇ '+bookmarks:'')+(bookmarks&&notesCount?' · ':'')+(notesCount?'✎ '+notesCount:'')+' saved</button>':'')+
-    '<button type="button" data-rd="paragraph-menu"'+attrs+' aria-expanded="false">◇ Save / Note</button>';
+   tools.innerHTML=rdTool(bookmark?'Remove paragraph bookmark':'Bookmark paragraph','data-rd="paragraph-bookmark"'+attrs+' aria-pressed="'+bookmark+'"','bookmark',bookmark)+
+    rdTool('Add personal note to paragraph','data-rd="paragraph-note"'+attrs,'note',false,notesCount>0)+
+    rdTool('Ask AI about paragraph','data-ai-launch="1" data-ai-section="'+esc(n)+'" data-ai-segment="'+segment+'"','ai')+
+    (relevant.length?rdTool('View '+relevant.length+' saved items for paragraph '+(segment+1),'data-rd="view-paragraph"'+attrs,'saved',false,true):'');
   });
   markReader();decorate();syncActionStates();ensureVisualsToggle();
  }
@@ -1134,21 +1156,16 @@ function create(ctx){
   if(action==='selection-dismiss'){hideSelection();return;}
   if(action==='selection-bookmark'&&selection){upsert('quote',selection);hideSelection();window.getSelection()?.removeAllRanges();return;}
   if(action==='selection-note'&&selection){const chosen={...selection};hideSelection();window.getSelection()?.removeAllRanges();showEditor(chosen);return;}
-  if(action==='paragraph-menu'){
-   const seg=Number(btn.dataset.segment),n=String(btn.dataset.section||state.n),controls=btn.parentElement;
-   const expanded=controls.querySelector('.gn-rd-paragraph-options');
-   if(expanded){expanded.remove();btn.setAttribute('aria-expanded','false');return;}
-   const attrs=' data-section="'+esc(n)+'" data-segment="'+seg+'"',wrap=document.createElement('span');
-   wrap.className='gn-rd-paragraph-options';
-   wrap.innerHTML='<button type="button" data-rd="paragraph-bookmark"'+attrs+'>Bookmark paragraph</button>'+
-    '<button type="button" data-rd="paragraph-note"'+attrs+'>Add personal note</button>';
-   controls.append(wrap);btn.setAttribute('aria-expanded','true');return;
-  }
+  if(action==='section-bookmark'){toggleSection(String(btn.dataset.section||state.n));return;}
   if(action==='paragraph-bookmark'||action==='paragraph-note'){
-   const target={kind:'paragraph',section:String(btn.dataset.section||state.n),segment:Number(btn.dataset.segment),lang:state.lang==='arabic'?'ar':'en'};
-   action==='paragraph-note'?showEditor(target):upsert('paragraph',target);return;
+   const n=String(btn.dataset.section||state.n),segment=Number(btn.dataset.segment);
+   const target={kind:'paragraph',section:n,segment,lang:state.lang==='arabic'?'ar':'en'};
+   if(action==='paragraph-note'){showEditor(target);return;}
+   const prior=active().find(x=>x.kind==='paragraph'&&x.target?.section===n&&x.target?.segment===segment);
+   if(prior)trash(prior.id);else upsert('paragraph',target);
+   return;
   }
-  if(action==='view-paragraph'){showContext(String(btn.dataset.section||state.n),Number(btn.dataset.segment),btn);return;}
+    if(action==='view-paragraph'){showContext(String(btn.dataset.section||state.n),Number(btn.dataset.segment),btn);return;}
   if(action==='view-section'){enterDeskFromText(String(btn.dataset.section||state.n));return;}
   if(action==='section-note'){showEditor({kind:'section',section:String(btn.dataset.section||state.n)});return;}
   if(action==='close-context'){closeContext();return;}
@@ -1262,7 +1279,7 @@ function create(ctx){
   const main=$('#mainContent');if(main){let scheduled=false;new MutationObserver(()=>{if(scheduled||decorating)return;scheduled=true;queueMicrotask(()=>{scheduled=false;decorate();});}).observe(main,{subtree:true,childList:true});}
  }
  install();
- return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records,saveAIAssistedNote};
+ return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records,saveAIAssistedNote,selectionTarget:()=>$('#gn-rd-selection-bar')&&!$('#gn-rd-selection-bar').hidden?selection:null};
 }
 window.GnammaReadingDesk={create};
 })();

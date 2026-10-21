@@ -25,8 +25,30 @@ function chosenText(){
  const section=String(grid.closest('[data-reading-section]')?.dataset.readingSection||reader?.state?.n||'');
  return {kind:'quote',section,segment:Number(grid.dataset.segment||0),lang:side.classList.contains('passage-ar')?'ar':'en',quote:value,offset:0};
 }
+function nonReadingLocus(){
+ const state=reader?.state||{},book=reader?.book||{},route=state.route||'';
+ if(route==='study'){
+  const params=new URLSearchParams((global.location.hash||'').split('?').slice(1).join('?'));
+  const id=params.get('topic')||state.studyTopic||'';
+  const lesson=global.DARURI_STUDY_DATA?.lessons?.find(x=>x.id===id);
+  if(lesson){
+   const level=['basic','intermediate','advanced'].includes(params.get('level'))?params.get('level'):['basic','intermediate','advanced'].includes(state.studyLevel)?state.studyLevel:'basic';
+   const summary=String(lesson.summary||lesson.levels?.[level]?.objective||'').slice(0,900);
+   return {key:'lesson:'+id+':'+level,target:{kind:'lesson',lesson:id,level},ref:'Study guide · '+lesson.title,heading:lesson.title,arabic:'',english:'',supplement:summary};
+  }
+ }
+ if(route==='glossary'){
+  const term=String(state.glossaryQuery||'').trim(),item=book.glossary?.find(x=>x.term===term);
+  if(item)return {key:'dictionary:'+term,target:{kind:'dictionary',term},ref:'Dictionary · '+term,heading:term,arabic:'',english:'',supplement:String(item.definition||'').slice(0,900)};
+ }
+ if(route==='index'){
+  const term=String(state.indexFocus?.term||state.indexQuery||'').trim(),item=book.index?.find(x=>x.term===term);
+  if(item)return {key:'index:'+term,target:{kind:'index',term},ref:'Concept index · '+term,heading:term,arabic:'',english:'',supplement:(item.sub||[]).map(x=>x.label).slice(0,15).join(' · ')};
+ }
+ return {key:'general',target:null,ref:'General inquiry',arabic:'',english:'',heading:'',supplement:''};
+}
 function locus(target){
- if(!reader)return {key:'general',target:null,ref:'General inquiry',arabic:'',english:'',heading:''};
+ if(!reader||(!target&&reader.state?.route!=='reader'))return nonReadingLocus();
  const section=String(target?.section|| (reader.state?.route==='reader'?reader.state?.n:'')||'');
  const item=reader.sections?.get(section);
  if(!item)return {key:'general',target:null,ref:'General inquiry',arabic:'',english:'',heading:''};
@@ -40,10 +62,11 @@ function locus(target){
 }
 const QUESTIONS={explain:'Explain the argument carefully. Distinguish what Ibn Rushd states from any further interpretation.',translate:'Translate closely, identifying consequential Arabic grammar and technical vocabulary.',analyse:'Identify the claim, premises, inferential steps and any objections. Distinguish certainty from conjecture.',terms:'Explain the technical terms in their local context and distinguish plausible alternative meanings.'};
 function prepare(loc,kind='explain'){
- const lines=[QUESTIONS[kind]||QUESTIONS.explain,'Use the following supplied primary-text passage as the basis of your answer. Do not invent quotations or citations. If something is uncertain, say so.','Work: Ibn Rushd, al-Ḍarūrī fī uṣūl al-fiqh.',loc.ref+(loc.heading?' — '+loc.heading:'')];
+ const lines=[QUESTIONS[kind]||QUESTIONS.explain,(loc.arabic||loc.english)?'Use the supplied primary-text passage; do not invent quotations or citations. If uncertain, say so.':'Use the supplied editorial study context only as orientation, not as a verified primary-text quotation. If uncertain, say so.','Work: Ibn Rushd, al-Ḍarūrī fī uṣūl al-fiqh.',loc.ref+(loc.heading?' — '+loc.heading:'')];
  if(loc.arabic)lines.push('Arabic:\n'+loc.arabic);
  if(loc.english)lines.push('English translation:\n'+loc.english);
- if(!loc.arabic&&!loc.english)lines.push('No source passage attached. Ask for the exact text before offering claims about any particular section.');
+ if(loc.supplement)lines.push('Editorial reader context (not a primary-text quotation):\n'+loc.supplement);
+ if(!loc.arabic&&!loc.english&&!loc.supplement)lines.push('No source passage attached. Ask for the exact text before offering claims about any particular section.');
  return lines.join('\n\n');
 }
 function fresh(loc){return {key:loc.key,target:loc.target,ref:loc.ref,kind:'explain',prompt:prepare(loc),answer:'',provider:'',comments:'',updated:Date.now()};}
@@ -115,19 +138,38 @@ function refreshQuestion(){persist();const loc=locus(draft?.target);draft.kind=$
 function reset(){persist();if(draft?.answer?.trim()&&!global.confirm('Discard the current unsaved answer and begin a new question?'))return;draft=fresh(locus(null));updateFields();persist();status('New question prepared.');}
 function hideFree(hide){persist();prefs.hideFree=hide;prefs.mode=hide?'own':'free';write(localStorage,PREF,prefs);if(hide){const f=$('#gn-ai-frame');f.removeAttribute('src');iframeLoaded=false;}setMode(prefs.mode);status(hide?'Embedded Free.ai hidden on this device; your own AI and note import remain available.':'Free.ai restored.');}
 function targetForButton(btn){if(btn.dataset.aiSection){const t={kind:'section',section:btn.dataset.aiSection};if(btn.hasAttribute('data-ai-segment'))return {kind:'paragraph',section:t.section,segment:Number(btn.dataset.aiSegment),lang:'en'};return t;}return null;}
-function addButton(host,attributes,text){if(!host||host.querySelector('[data-ai-launch]'))return;const b=document.createElement('button');b.type='button';b.dataset.aiLaunch='1';b.textContent=text;b.setAttribute('aria-label','Ask AI about this text');Object.entries(attributes||{}).forEach(([k,v])=>b.setAttribute(k,v));host.append(b);}
-function inject(){
- const nav=document.querySelector('#leftNav .primary-nav');
- if(nav&&!nav.querySelector('[data-ai-launch]')){
-  const btn=document.createElement('button');btn.className='nav-item gn-ai-nav';btn.type='button';btn.dataset.aiLaunch='1';btn.innerHTML='<span aria-hidden="true">✧</span> Ask AI';nav.append(btn);
+
+const AI_ICON="<svg class=\"icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M11 2.5l2.25 6.25L19.5 11l-6.25 2.25L11 19.5l-2.25-6.25L2.5 11l6.25-2.25zM19.2 16l.75 2.05L22 18.8l-2.05.75L19.2 21.6l-.75-2.05-2.05-.75 2.05-.75z\"/></svg>";
+function syncToolbar(){
+ let top=document.getElementById('readerAskAIAction');
+ if(!top){
+  top=document.getElementById('readerSaveAction');
+  if(top){
+   top.removeAttribute('data-bookmark');top.removeAttribute('aria-pressed');
+   top.id='readerAskAIAction';top.dataset.aiLaunch='1';top.setAttribute('aria-haspopup','dialog');
+   top.setAttribute('aria-label','Ask AI about selected text or this section');top.title='Ask AI';
+   top.innerHTML=AI_ICON+'<span class="sr-only">Ask AI</span>';
+   top.closest('.reader-action-slot')?.setAttribute('aria-label','Ask AI, copy and share');
+   const copy=document.getElementById('readerCopyAction'),share=document.getElementById('readerShareAction');
+   if(copy)copy.title='Copy section';if(share)share.title='Share section';
+  }
  }
- const readerArea=document.querySelector('#reader');if(!readerArea)return;
- readerArea.querySelectorAll('.gn-rd-section-tools').forEach(el=>addButton(el,{'data-ai-section':String(reader?.state?.n||'')},'✧ Ask AI'));
- readerArea.querySelectorAll('.gn-rd-passage-tools').forEach(el=>{
-  const sample=el.querySelector('[data-segment]');if(sample)addButton(el,{'data-ai-section':sample.dataset.section||String(reader?.state?.n||''),'data-ai-segment':sample.dataset.segment},'✧ Ask AI');
- });
- const bar=document.getElementById('gn-rd-selection-bar');if(bar&&!bar.hidden)addButton(bar,{'data-ai-selection':'1'},'✧ Ask AI');
+ let globalButton=document.getElementById('globalAskAIAction');
+ if(!globalButton){
+  const search=document.getElementById('searchBtn');
+  if(search){
+   globalButton=search.cloneNode(false);globalButton.id='globalAskAIAction';
+   globalButton.className=search.className+' gn-ai-global-control';
+   globalButton.removeAttribute('aria-expanded');globalButton.removeAttribute('aria-controls');
+   globalButton.dataset.aiLaunch='1';globalButton.setAttribute('aria-haspopup','dialog');
+   globalButton.setAttribute('aria-label','Ask AI about this page');globalButton.title='Ask AI';
+   globalButton.innerHTML=AI_ICON;search.after(globalButton);
+  }
+ }
+ if(globalButton)globalButton.hidden=reader?.state?.route==='reader';
+ document.querySelector('#leftNav .gn-ai-nav')?.remove();
 }
+function inject(){syncToolbar();}
 let scheduled=false;
 function scheduleInject(){if(scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;inject();});}
 function keydown(event){if(!overlay)return;
@@ -139,7 +181,7 @@ function keydown(event){if(!overlay)return;
  else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
 }
 function onClick(event){
- const launch=event.target.closest?.('[data-ai-launch]');if(launch){event.preventDefault();event.stopPropagation();const target=launch.dataset.aiSelection?chosenText():targetForButton(launch);if(launch.closest('#leftNav'))document.getElementById('closeNav')?.click();open(target);return;}
+ const launch=event.target.closest?.('[data-ai-launch]');if(launch){event.preventDefault();event.stopPropagation();const target=launch.dataset.aiSelection?(reader?.desk?.selectionTarget?.()||chosenText()):targetForButton(launch);if(launch.closest('#leftNav'))document.getElementById('closeNav')?.click();open(target);return;}
  if(!overlay)return;
  if(event.target===overlay){close();return;}
  const mode=event.target.closest?.('[data-ai-mode]');if(mode){persist();setMode(mode.dataset.aiMode);return;}
@@ -154,7 +196,7 @@ function install(){document.addEventListener('click',onClick,true);document.addE
  document.addEventListener('input',event=>{if(overlay?.contains(event.target))persist();});
  document.addEventListener('change',event=>{if(event.target?.id==='gn-ai-task')refreshQuestion();});
  document.addEventListener('visibilitychange',()=>{if(overlay)persist();});
- document.addEventListener('selectionchange',()=>setTimeout(scheduleInject,260));
+ // Text-selection icon is rendered by Reading Desk, without polling.
  const host=document.getElementById('mainContent');if(host)new MutationObserver(scheduleInject).observe(host,{childList:true,subtree:true});
  inject();}
 function connect(data){reader=data;if(connected)return;connected=true;if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});else install();global.addEventListener('hashchange',()=>{if(overlay)close();});}

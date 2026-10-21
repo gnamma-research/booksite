@@ -1,0 +1,43 @@
+name: Daruri source-note Safari touch QA
+
+on:
+  push:
+    branches: [fix/ios-note-longpress-focus-20261021]
+    paths:
+      - 'daruri/source-note-ui.js'
+      - 'daruri/source-note-ui.css'
+      - 'daruri/source-reference-data.js'
+      - 'daruri/build/build_source_reference_data.py'
+      - 'daruri/sw.js'
+      - 'daruri/download-bundle.js'
+      - 'daruri/qa/verify-ios-source-note-touch.py'
+      - '.github/workflows/daruri-source-note-touch-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  webkit-and-chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Playwright and native browser engines
+        run: |
+          python -m pip install 'playwright==1.57.0'
+          python -m playwright install --with-deps chromium webkit
+      - name: Check the source-note content generator is reproducible
+        run: python daruri/build/build_source_reference_data.py --check
+      - name: Verify desktop, iPhone-sized and iPhone-SE touch UX in WebKit and Chromium
+        run: python daruri/qa/verify-ios-source-note-touch.py
+      - name: Keep screenshots and test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-source-note-webkit-touch
+          path: daruri/qa/source-note-touch-results/
+          if-no-files-found: warn

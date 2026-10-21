@@ -7,10 +7,14 @@ on:
       - ".github/workflows/daruri-editions-qa.yml"
       - "daruri/editions/**"
       - "daruri/editions.js"
+      - "daruri/editions-icons.js"
+      - "daruri/editions-icons.css"
       - "daruri/editions.css"
       - "daruri/index.html"
       - "daruri/sw.js"
       - "daruri/qa/verify-ready-editions.js"
+      - "daruri/qa/verify-editions-icons.cjs"
+      - "daruri/qa/verify-editions-icons-browser.mjs"
       - "daruri/qa/verify-editions-configurator.js"
 jobs:
   qa:
@@ -26,8 +30,32 @@ jobs:
       - name: JavaScript syntax
         run: |
           node --check daruri/editions.js
+          node --check daruri/editions-icons.js
+          node --check daruri/qa/verify-editions-icons.cjs
           node --check daruri/qa/verify-ready-editions.js
       - name: Source and edition downloads
         run: |
           node daruri/qa/verify-editions-configurator.js
           node daruri/qa/verify-ready-editions.js
+          node daruri/qa/verify-editions-icons.cjs
+
+      - name: Browser interaction and mobile rendering
+        shell: bash
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+          python3 -m http.server 8123 --bind 127.0.0.1 > /tmp/daruri-editions-http.log 2>&1 &
+          server=$!
+          trap 'kill $server || true' EXIT
+          for i in {1..40}; do
+            if curl --silent --fail http://127.0.0.1:8123/daruri/ > /dev/null; then break; fi
+            sleep 0.25
+          done
+          node daruri/qa/verify-editions-icons-browser.mjs
+      - name: Upload desktop and mobile visual proofs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-editions-desktop-mobile
+          path: test-artifacts/*.png
+          if-no-files-found: ignore
