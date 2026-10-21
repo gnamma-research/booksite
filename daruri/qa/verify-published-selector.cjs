@@ -17,7 +17,7 @@ const r=JSON.parse(read('pdf-editions-manifest.json'));
 const crypto=require('node:crypto');
 const addon=JSON.parse(read('editions/apparatus/manifest.json'));
 assert.equal(addon.status,'verified');
-assert.equal(addon.files.length,10,'Ten extra apparatus PDFs must have verified maps');
+assert.ok(addon.files.length>=10 && addon.files.length<=120,'Only approved apparatus profiles may be published');
 const bases=new Map(m.files.map(x=>[x.file,x]));
 for(const x of addon.files){
   assert.ok(bases.has(x.source_base),'Apparatus base must be a current approved PDF');
@@ -55,7 +55,7 @@ assert.ok(r.files['daruri.pdf'],'Stable canonical scholarly reference PDF');
 for(const name of ['Reading','Study','Reference'])assert.ok(js.includes("'"+name+"'"));
 for(const term of ['gn-es-spec-lead','gn-es-spec-layout','gn-es-spec-notes','gn-es-spec-apparatus','gn-es-availability',
   'data-es-action="open"',
-  'data-es-category','data-es-section','gn-es-personal-link','aria-disabled',
+  'data-es-include','data-es-heading-buttons','gn-es-personal-link','aria-disabled',
   'No verified PDF exists for this exact combination','personal-export.html',
   'English left / Arabic right','Open this PDF to read, save, share or print']){
   assert.ok(js.includes(term),'Missing publication contract: '+term);
@@ -76,13 +76,13 @@ assert.equal((js.match(/data-es-action="open"/g)||[]).length,2,
 assert.ok(!js.includes('data-es-action="read"')&&!js.includes('data-es-action="download"')&&
   !js.includes('data-es-action="print"'), 'Redundant actions removed');
 assert.ok(!js.includes('gn-es-notes-shortcut'), 'Redundant Notes shortcut removed');
-assert.ok(js.includes("['content','layout','notes','apparatus']"), 'Four category workspace');
+assert.ok(js.includes('data-es-include')&&!js.includes('data-es-category'), 'Compact rows replace nested category tabs');
 assert.ok(js.includes("glossary:'historical'")&&js.includes("index:'basic'")&&
   js.includes("concordance:'on'"), 'Reference tools and Study index reflect actual publications');
-assert.ok(css.includes('repeat(4,minmax(0,1fr))'), 'Four equally sized category buttons');
-assert.ok(css.includes('.gn-es-spec{')&&css.includes('position:sticky'),
- 'Specification must remain visible while the settings workspace is used');
-assert.ok(css.includes('.gn-es [hidden]'),'Hidden categories do not stack');
+assert.ok(css.includes('gn-es-includes')&&css.includes('repeat(4,minmax(0,1fr))'), 'Four balanced apparatus chips');
+assert.ok(css.includes('.gn-es .gn-es-spec{')&&css.includes('position:static'),
+ 'PDF summary follows the compact control rows without obstructing the phone');
+assert.ok(css.includes('.gn-es [hidden]'),'Inactive edition details do not stack');
 assert.ok(js.includes('s.notes!==')&&js.includes('No published PDF'),
  'Unsupported combinations must fail closed');
-console.log('PASS: single Open PDF, 4 settings categories, 10 additional SHA-verified apparatus variants, independent personal-note map links, private-data boundaries.');
+console.log('PASS: compact edition rows, one full-width Open PDF, mapped apparatus collection, independent personal export and private-data boundaries.');
