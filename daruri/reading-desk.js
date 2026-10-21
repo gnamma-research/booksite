@@ -8,6 +8,7 @@ const SORTS={'created-desc':'Newest saved','created-asc':'Oldest saved','modifie
 const KINDS=new Set(['section','paragraph','quote','footnote','dictionary','index','application','lesson','note']);
 const clamp=(v,max=1000)=>String(v==null?'':v).slice(0,max);
 const esc=v=>clamp(v,100000).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const escFull=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const clean=v=>String(v||'').replace(/[\u064b-\u065f\u0670\u0640\u06d6-\u06ed]/g,'').normalize('NFC');
 const norm=v=>clean(v).replace(/\s+/g,' ').trim();
 const keyOf=t=>[t.kind,t.section||'',t.segment==null?'':t.segment,t.kind==='paragraph'?'':t.lang||'',t.quote?norm(t.quote).slice(0,400):'',t.term||'',t.app||'',t.lesson||'',t.level||'',t.noteId||''].join('\u241f');
@@ -512,8 +513,8 @@ function create(ctx){
    '<button type="button" data-rd="close-editor" aria-label="Close editor">×</button></header>'+
    '<p class="gn-rd-source-label">'+esc(subOf(t))+'</p>'+
    (t?'<blockquote>'+esc(short(titleOf(t),350))+'</blockquote>':'')+date+
-   '<label>Title <small>(optional)</small><input id="gn-rd-note-title" maxlength="240" placeholder="Give this thought a short title" value="'+esc(existing?.title||'')+'"></label>'+
-   '<label>Your note<textarea id="gn-rd-note-body" rows="7" maxlength="30000" placeholder="Write your observation, question or comparison…" dir="auto">'+esc(existing?.body||'')+'</textarea></label>'+
+   '<label>Title <small>(optional)</small><input id="gn-rd-note-title" maxlength="'+Math.max(240,String(existing?.title||'').length+240)+'" placeholder="Give this thought a short title" value="'+escFull(existing?.title||'')+'"></label>'+
+   '<label>Your note<textarea id="gn-rd-note-body" rows="7" maxlength="'+Math.max(30000,String(existing?.body||'').length+30000)+'" placeholder="Write your observation, question or comparison…" dir="auto">'+escFull(existing?.body||'')+'</textarea></label>'+
    '<footer><button type="button" data-rd="close-editor">Cancel</button><button type="button" class="gn-rd-primary" data-rd="save-note">Save note</button></footer></section>';
   returnFocus=document.activeElement;document.body.append(shade);document.body.classList.add('gn-rd-editor-open');
   shade.dataset.target=JSON.stringify(t);$('#gn-rd-note-body').focus({preventScroll:true});
@@ -528,9 +529,9 @@ function create(ctx){
   if(focus?.isConnected)focus.focus({preventScroll:true});
  }
  function saveEditor(){
-  const body=clamp($('#gn-rd-note-body')?.value,30000).trim();
+  const body=String($('#gn-rd-note-body')?.value??'').trim();
   if(!body){$('#gn-rd-note-body')?.focus();ctx.notify('Write a note before saving.');return;}
-  const title=clamp($('#gn-rd-note-title')?.value,240).trim()||short(body.split('\n').find(Boolean)||'Personal note',85);
+  const title=String($('#gn-rd-note-title')?.value??'').trim()||short(body.split('\n').find(Boolean)||'Personal note',85);
   const target=JSON.parse($('#gn-rd-editor-shade')?.dataset.target||'null');
   if(editor){
    if(editor.title!==title||editor.body!==body){
