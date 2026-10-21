@@ -32,7 +32,7 @@ for(const ext of ['css','js']){
   assert.ok(page.includes(filename),'HTML route lacks '+filename);
   assert.ok(sw.includes(filename),'Offline shell lacks '+filename);
 }
-assert.ok(script.includes('load')===false||script.includes('showReadyPDFs'));
+assert.ok(script.includes('editions/manifest.json') && script.includes('showReadyPDFs'));
 assert.ok(script.includes('showReadyPDFs();'));
 assert.ok(page.includes('data-route="editions"'));
 console.log('PASS: 10 verified PDF files, manifest checksums, edition links and offline shell.');
