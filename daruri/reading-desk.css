@@ -394,3 +394,204 @@ body.gn-rd-print #gn-rd-print-root{box-sizing:border-box}
  html:root body.gn-rd-print #gn-rd-print-root .gn-rd-pdf-result{display:none!important}
  html:root body.gn-rd-print #gn-rd-print-root .gn-rd-print-options{display:none!important}
 }
+
+
+/* Reading Desk 2026-10-21: clarify collection/item scope and progressive disclosure.
+   Scoped to Reading Desk/print overlays; no global theme changes. */
+.gn-rd-page .gn-rd-hero{padding-bottom:12px}
+.gn-rd-page .gn-rd-hero h1{margin:5px 0 6px}
+.gn-rd-page .gn-rd-hero p:last-child{margin:0;line-height:1.5;font-size:.87rem}
+.gn-rd-page .gn-rd-simplified-toolbar{
+ display:flex;flex-wrap:nowrap;align-items:center;justify-content:flex-start;
+ margin:14px 0 12px;gap:0;overflow:visible
+}
+.gn-rd-page .gn-rd-simplified-toolbar .gn-rd-toolbar-main{
+ flex:0 1 auto;display:flex;align-items:center;flex-wrap:nowrap;gap:7px;
+ overflow:visible;width:auto;min-width:0
+}
+.gn-rd-page .gn-rd-simplified-toolbar .gn-rd-main-action,
+.gn-rd-page .gn-rd-manage-menu>summary{
+ box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:7px;
+ min-height:44px;min-width:0;white-space:nowrap;flex-shrink:0;
+ padding:9px 13px;border:1px solid var(--line,#d9d6cd);border-radius:9px;
+ background:var(--paper,#fffdf9);color:var(--ink,#263633);
+ font:600 .84rem/1.3 var(--sans,system-ui);cursor:pointer;text-decoration:none
+}
+.gn-rd-page .gn-rd-simplified-toolbar .gn-rd-main-action svg{
+ width:18px;height:18px;flex:none;display:block
+}
+.gn-rd-page .gn-rd-simplified-toolbar [data-rd="print-list"]{
+ border-color:var(--accent,#537567);color:var(--accent,#3e6b5a)
+}
+.gn-rd-page .gn-rd-manage-menu{position:relative;flex:0 0 auto;z-index:35}
+.gn-rd-page .gn-rd-manage-menu>summary{list-style:none;user-select:none}
+.gn-rd-page .gn-rd-manage-menu>summary::-webkit-details-marker{display:none}
+.gn-rd-page .gn-rd-manage-menu[open]>summary{background:var(--accent-soft,#e8efeb);border-color:var(--accent,#487568)}
+.gn-rd-page .gn-rd-manage-menu>summary>span,
+.gn-rd-page .gn-rd-item-more>summary>span{font-size:1rem;line-height:1;opacity:.65}
+.gn-rd-page .gn-rd-manage-items,.gn-rd-page .gn-rd-item-more-items{
+ position:absolute;z-index:80;right:0;top:calc(100% + 5px);
+ min-width:238px;max-width:min(85vw,330px);
+ padding:6px;border:1px solid var(--line,#d5d1c8);border-radius:11px;
+ background:var(--paper,#fffdf9);box-shadow:0 10px 30px rgba(18,30,25,.16);
+ display:flex;flex-direction:column;gap:2px
+}
+.gn-rd-page .gn-rd-manage-items button,.gn-rd-page .gn-rd-item-more-items button{
+ width:100%;min-height:43px;text-align:left;display:block;
+ padding:9px 12px;border:0;border-radius:7px;background:transparent;color:var(--ink,#263633);
+ font:500 .84rem/1.35 var(--sans,system-ui);white-space:normal;cursor:pointer
+}
+.gn-rd-page .gn-rd-manage-items button:hover,.gn-rd-page .gn-rd-item-more-items button:hover{
+ background:var(--accent-soft,rgba(75,110,95,.09))
+}
+.gn-rd-page .gn-rd-manage-items button:focus-visible,
+.gn-rd-page .gn-rd-item-more-items button:focus-visible,
+.gn-rd-page .gn-rd-manage-menu>summary:focus-visible,
+.gn-rd-page .gn-rd-item-more>summary:focus-visible,
+.gn-rd-page .gn-rd-main-action:focus-visible{
+ outline:2px solid var(--accent,#396a5d);outline-offset:2px
+}
+/* Navigation tabs are words, not icon buttons or ambiguous action buttons. */
+.gn-rd-page .gn-rd-tabs{
+ display:flex;flex-wrap:nowrap;gap:16px;margin:3px 0 11px;
+ padding:0;border-bottom:1px solid var(--line,#d9d6cd)
+}
+.gn-rd-page .gn-rd-tabs button{
+ min-height:43px;min-width:auto;display:inline-flex;align-items:center;justify-content:center;
+ padding:10px 4px 12px;position:relative;white-space:nowrap;
+ border:0!important;border-radius:0!important;box-shadow:none;
+ font:500 .9rem/1.3 var(--sans,system-ui);
+ background:transparent!important;color:var(--muted,#60716a)!important
+}
+.gn-rd-page .gn-rd-tabs button[aria-pressed="true"]{
+ font-weight:700;color:var(--accent,#386857)!important
+}
+.gn-rd-page .gn-rd-tabs button[aria-pressed="true"]:after{
+ content:'';height:2px;position:absolute;left:0;right:0;bottom:-1px;
+ background:var(--accent,#386857)
+}
+.gn-rd-page .gn-rd-tabs button:focus-visible{outline:2px solid var(--accent,#386857);outline-offset:2px}
+.gn-rd-page .gn-rd-search{margin:9px 0 10px;font-weight:600;font-size:.76rem}
+.gn-rd-page .gn-rd-search input{
+ max-width:100%;width:100%;margin-top:5px;min-height:44px
+}
+/* Two labelled selectors replace twelve icon choices. */
+.gn-rd-page .gn-rd-controls{
+ display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));
+ align-items:end;gap:10px;min-width:0;margin:8px 0 7px
+}
+.gn-rd-page .gn-rd-controls label{
+ display:flex;flex-direction:column;gap:5px;min-width:0;
+ font:600 .76rem/1.4 var(--sans,system-ui);color:var(--muted,#617066)
+}
+.gn-rd-page .gn-rd-controls select{
+ box-sizing:border-box;display:block;min-width:0;width:100%;min-height:44px;
+ padding:9px 28px 9px 10px;overflow:hidden;text-overflow:ellipsis;
+ font:500 .85rem/1.35 var(--sans,system-ui)
+}
+.gn-rd-page .gn-rd-count{margin:10px 0 8px}
+.gn-rd-page .gn-rd-card{padding:12px 13px}
+.gn-rd-page .gn-rd-card-open{min-height:68px}
+.gn-rd-page .gn-rd-card-open:hover strong{text-decoration:underline;text-underline-offset:2px}
+.gn-rd-page .gn-rd-card-open:focus-visible{outline:2px solid var(--accent,#396a5d);outline-offset:3px;border-radius:4px}
+/* Show context-specific labelled actions above the passage, never duplicate each card. */
+.gn-rd-page .gn-rd-detail>header h2{margin:5px 0 7px}
+.gn-rd-page .gn-rd-detail-actions{
+ display:flex;flex-wrap:wrap;align-items:center;gap:7px;
+ padding:0 0 13px;margin:10px 0 14px;border-top:0;
+ border-bottom:1px solid var(--line,#d9d6cd)
+}
+.gn-rd-page .gn-rd-detail-actions>button,
+.gn-rd-page .gn-rd-item-more>summary{
+ box-sizing:border-box;min-height:44px;display:inline-flex;align-items:center;justify-content:center;
+ padding:9px 12px;border:1px solid var(--line,#d9d6cd);
+ border-radius:8px;background:var(--paper,#fffdf9);color:var(--ink,#283b34);
+ font:600 .82rem/1.3 var(--sans,system-ui);cursor:pointer;white-space:nowrap
+}
+.gn-rd-page .gn-rd-detail-actions>.gn-rd-detail-primary{
+ border-color:var(--accent,#507766);color:var(--accent,#33634f);
+ background:var(--accent-soft,rgba(75,125,98,.07))
+}
+.gn-rd-page .gn-rd-detail-actions>.gn-rd-detail-secondary{background:transparent}
+.gn-rd-page .gn-rd-item-more{position:relative;min-width:0}
+.gn-rd-page .gn-rd-item-more>summary{list-style:none}
+.gn-rd-page .gn-rd-item-more>summary::-webkit-details-marker{display:none}
+.gn-rd-page .gn-rd-item-more-items{z-index:100}
+.gn-rd-page .gn-rd-item-more-items button[data-rd="delete-permanent"],
+.gn-rd-page .gn-rd-item-more-items button[data-rd="trash"]{color:#a44837}
+/* PDF dialog switches to familiar labelled selectors/checkboxes. */
+#gn-rd-print-root .gn-rd-print-options{
+ display:grid!important;grid-template-columns:minmax(0,1fr);gap:9px;
+ max-width:820px;margin:0 auto 11px;padding:12px 14px
+}
+#gn-rd-print-root .gn-rd-print-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#gn-rd-print-root .gn-rd-print-fields>label{
+ display:flex;flex-direction:column;align-items:stretch;gap:5px;
+ min-width:0;font:600 .78rem/1.35 var(--sans,system-ui)
+}
+#gn-rd-print-root .gn-rd-print-fields select{
+ width:100%;max-width:none;box-sizing:border-box;min-width:0;min-height:44px;
+ overflow:hidden;text-overflow:ellipsis
+}
+#gn-rd-print-root .gn-rd-print-single{align-self:center;margin:0;padding:8px 0;font-size:.82rem}
+#gn-rd-print-root .gn-rd-print-check-group{
+ border:0;border-top:1px solid var(--line,#ddd9ce);
+ margin:3px 0 0;padding:7px 0 0;min-width:0;
+ display:flex;flex-wrap:wrap;gap:5px 16px;align-items:center
+}
+#gn-rd-print-root .gn-rd-print-check-group legend{
+ padding:0 5px 0 0;font:600 .79rem/1.35 var(--sans,system-ui);color:var(--muted,#55675e)
+}
+#gn-rd-print-root .gn-rd-print-check{
+ display:inline-flex;align-items:center;gap:7px;min-height:38px;
+ padding:4px 0;font:500 .82rem/1.4 var(--sans,system-ui);white-space:nowrap
+}
+#gn-rd-print-root .gn-rd-print-check input{width:19px;height:19px;flex:none}
+@media(max-width:760px){
+ .gn-rd-page .gn-rd-simplified-toolbar{margin:11px 0 9px}
+ .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-toolbar-main{
+  flex-wrap:nowrap;gap:5px;width:100%;justify-content:flex-start
+ }
+ .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-main-action,
+ .gn-rd-page .gn-rd-manage-menu>summary{
+  min-height:44px;padding:8px 10px;font-size:.78rem;gap:5px
+ }
+ .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-main-action svg{width:17px;height:17px}
+ .gn-rd-page .gn-rd-tabs{gap:13px}
+ .gn-rd-page .gn-rd-tabs button{font-size:.86rem;padding:10px 2px 11px}
+ .gn-rd-page .gn-rd-controls{gap:8px}
+ .gn-rd-page .gn-rd-controls select{font-size:.79rem;padding-left:8px}
+ .gn-rd-page .gn-rd-hero h1{font-size:clamp(1.7rem,7vw,2.1rem)}
+ .gn-rd-page .gn-rd-hero p:last-child{font-size:.79rem}
+ .gn-rd-page .gn-rd-detail-actions{margin:8px 0 12px}
+}
+@media(max-width:340px){
+ .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-main-action,
+ .gn-rd-page .gn-rd-manage-menu>summary{padding:8px 6px;font-size:.73rem}
+ .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-main-action svg{width:15px;height:15px}
+ .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-toolbar-main{gap:3px}
+ .gn-rd-page .gn-rd-tabs{gap:8px}
+ #gn-rd-print-root .gn-rd-print-fields{grid-template-columns:1fr}
+}
+@media print{
+ html:root body.gn-rd-print #gn-rd-print-root .gn-rd-print-fields,
+ html:root body.gn-rd-print #gn-rd-print-root .gn-rd-print-check-group{display:none!important}
+}
+
+
+/* Final visual review: mobile detail must hide list-only filtering controls;
+   PDF scopes need full-width labels; selected-item actions stay on one row. */
+@media(max-width:760px){
+ .gn-rd-page.gn-rd-mobile-detail-open .gn-rd-controls{display:none!important}
+ .gn-rd-page .gn-rd-detail-actions{gap:5px;flex-wrap:nowrap}
+ .gn-rd-page .gn-rd-detail-actions>button,
+ .gn-rd-page .gn-rd-item-more>summary{
+  padding:8px 9px;font-size:.76rem;min-height:44px
+ }
+}
+@media(max-width:540px){
+ #gn-rd-print-root .gn-rd-print-fields{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:360px){
+ .gn-rd-page .gn-rd-detail-actions{flex-wrap:wrap}
+}

@@ -65,6 +65,14 @@ async function exercise(engine, width, touch) {
       await page.locator('.gn-rd-mobile-detail-open').waitFor();
       check(!(await page.locator('#gn-rd-cards').isVisible()),
         id+': item list remains visible beside mobile details');
+      check(!(await page.locator('.gn-rd-controls').isVisible()),
+        id+': collection filtering controls remain visible in mobile note detail');
+      const actionBounds=await Promise.all([
+        page.locator('#gn-rd-detail [data-rd="edit"]').boundingBox(),
+        page.locator('#gn-rd-detail [data-rd="relink"]').boundingBox(),
+        page.locator('#gn-rd-detail .gn-rd-item-more > summary').boundingBox()]);
+      check(actionBounds.every(Boolean)&&actionBounds.every(b=>Math.abs(b.y-actionBounds[0].y)<4),
+        id+': contextual mobile note actions wrap onto multiple rows');
       check(await page.locator('#gn-rd-detail').isVisible(),
         id+': saved item details are hidden on mobile');
       check(await page.locator('#gn-rd-detail .gn-rd-mobile-back:visible').count()===1,
@@ -80,6 +88,7 @@ async function exercise(engine, width, touch) {
     check((await page.locator('#gn-rd-detail').innerText()).includes('Original source unavailable'),
       id+': archival note silently treated as an ordinary source');
 
+    await page.locator('#gn-rd-detail .gn-rd-item-more > summary').click();
     await page.locator('#gn-rd-detail [data-rd="print"]').click();
     await page.locator('#gn-rd-print-root').waitFor();
     check((await page.locator('#gn-rd-print-sheet-body').innerText()).includes(endMark),

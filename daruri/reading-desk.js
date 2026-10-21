@@ -59,7 +59,7 @@ function create(ctx){
  let records=[],available=true,selection=null,editor=null,origin=null,readingOrigin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
  let deskPdfPromise=null,deskPdfFile=null,deskPdfURL=null,printRevision=0,printingPDF=false;
  const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
- const printPrefs={order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
+ const printPrefs={scope:'visible',order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
  let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,writeConflict=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='',relinkFocus=null;
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
@@ -396,14 +396,7 @@ function create(ctx){
   parts.push('<strong>'+esc(r.title||titleOf(r.target))+'</strong>');
   if(own)parts.push('<span>'+esc(short(r.body,175))+'</span>');
   else if(relatedCount)parts.push('<span>'+relatedCount+' linked personal '+(relatedCount===1?'note':'notes')+'</span>');
-  parts.push('</button><div class="gn-rd-card-ops" role="group" aria-label="Saved item tools">');
-  const data='data-id="'+esc(r.id)+'"';
-  if(!r.deleted&&canOpen)parts.push(deskButton('open','Open original source','book','',null,data));
-  if(r.deleted)parts.push(deskButton('restore','Restore item','history','',null,data));
-  if(!r.deleted&&own)parts.push(deskButton('edit','Edit note','edit','',null,data));
-  if(!r.deleted)parts.push(deskButton('share','Share item','share','',null,data));
-  parts.push(deskButton(r.deleted?'delete-permanent':'trash',r.deleted?'Delete permanently':'Move to Bin','trash','',null,data));
-  parts.push('</div></article>');
+  parts.push('</button></article>');
     return parts.join('');
  }
  function render(){
@@ -413,39 +406,36 @@ function create(ctx){
   for(const r of active())if(r.kind==='note'&&r.target){const k=keyOf(r.target);linkedCounts.set(k,(linkedCounts.get(k)||0)+1);}
   const parts=['<section class="gn-rd-page'+(ui.mobileDetail?' gn-rd-mobile-detail-open':'')+'">'];
   parts.push('<header class="gn-rd-hero"><p class="gn-rd-kicker">YOUR PRIVATE READING COLLECTION</p><h1>Reading Desk</h1>');
-  parts.push('<p>Saved passages, personal observations and source-linked references. Your work stays in this browser unless you export it.</p>');
+  parts.push('<p>Private bookmarks and personal notes, saved in this browser.</p>');
   if(readingOrigin)parts.push('<button type="button" class="gn-rd-back-reading" data-rd="return-reading">← Back to text</button>');
   parts.push('</header>');
   if(loadFailure)parts.push('<div class="gn-rd-warning" role="alert"><strong>Saved data protected.</strong> This browser contains Reading Desk data that could not be read. No new writes will overwrite it. <button type="button" data-rd="download-original">Download untouched original data</button></div>');
   else if(writeConflict)parts.push('<div class="gn-rd-warning" role="alert"><strong>Reading Desk changed in another tab.</strong> New writes are paused to protect the newer collection. <button type="button" data-rd="refresh-storage">Reload saved items</button></div>');
   else if(!available)parts.push('<p class="gn-rd-warning" role="alert">Browser storage is unavailable or full. Download a backup before leaving.</p>');
-  parts.push('<div class="gn-rd-toolbar" role="toolbar" aria-label="Reading Desk tools"><div class="gn-rd-toolbar-main">');
-  parts.push(deskButton('new-note','New personal note','plus','New note'));
-  parts.push(deskButton('print-list','Print or download Reading Desk PDF','print','Print / PDF'));
-  parts.push('</div><div class="gn-rd-toolbar-utilities" role="group" aria-label="Backups and utilities">');
-  parts.push(deskButton('export','Download full JSON backup','download'));
-  parts.push(deskButton('import','Import a JSON backup','upload'));
-  parts.push(deskButton('export-markdown','Export notes as Markdown','saved'));
-  parts.push(deskButton('share-backup','Share JSON backup','share'));
-  parts.push(deskButton('toggle-marks','Show personal marks while reading','eye','',showPersonalMarks()));
+  parts.push('<div class="gn-rd-toolbar gn-rd-simplified-toolbar" role="group" aria-label="Reading Desk actions"><div class="gn-rd-toolbar-main">');
+  parts.push('<button type="button" class="gn-rd-main-action" data-rd="new-note">'+RD_ICON.plus+'<span>New note</span></button>');
+  parts.push('<button type="button" class="gn-rd-main-action" data-rd="print-list">'+RD_ICON.print+'<span>Print / PDF</span></button>');
+  parts.push('<details class="gn-rd-manage-menu"><summary>Manage <span aria-hidden="true">⌄</span></summary><div class="gn-rd-manage-items" role="group" aria-label="Manage Reading Desk data">');
+  parts.push('<button type="button" data-rd="export">Download backup (.json)</button>');
+  parts.push('<button type="button" data-rd="import">Import backup (.json)</button>');
+  parts.push('<button type="button" data-rd="export-markdown">Export readable notes (.md)</button>');
+  parts.push('<button type="button" data-rd="share-backup">Share backup</button>');
   const binCount=records.filter(r=>r.deleted).length;
-  parts.push('<span class="gn-rd-bin-tool">'+deskChoice('filter','bin','Bin ('+binCount+')','trash','',ui.category==='bin')+
-   (binCount?'<span class="gn-rd-tool-count" aria-hidden="true">'+binCount+'</span>':'')+'</span>');
+  parts.push('<button type="button" data-rd="filter" data-value="'+(bin?'all':'bin')+'">'+
+   (bin?'Return to saved items':'Open Bin'+(binCount?' ('+binCount+')':''))+'</button></div></details>');
   parts.push('</div><input class="gn-rd-file" type="file" id="gn-rd-file" accept="application/json,.json" aria-label="Select Reading Desk backup file" hidden></div>');
     if(ui.filterTarget)parts.push('<p class="gn-rd-scoped">Items from '+esc(ctx.sectionRef(ui.filterTarget))+(ui.filterSegment!==null?' · paragraph '+(ui.filterSegment+1):'')+' <button data-rd="unscoped" type="button">Show all</button></p>');
   if(bin)parts.push('<p class="gn-rd-scoped">Bin <button type="button" data-rd="filter" data-value="all">← Back to saved items</button></p>');
   else parts.push('<div class="gn-rd-tabs" role="group" aria-label="Saved item categories">'+
-   deskChoice('filter','all','All saved items','saved','All',ui.category==='all')+
-   deskChoice('filter','bookmarks','Bookmarks','bookmark','Saved',ui.category==='bookmarks')+
-   deskChoice('filter','mine','My notes','note','Notes',ui.category==='mine')+'</div>');
-  parts.push('<label class="gn-rd-search">Search saved material <input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search saved text and notes…" value="'+esc(ui.query)+'"></label>');
-  const typeOptions=[['all','All sources','saved','All'],['text','Text passages','book','Text'],['booknotes','Book notes','note','Book'],['dictionary','Dictionary','book','Dict.'],['index','Subject index','index','Index'],['bidaya','Bidāya','link','Bidāya'],['lessons','Lessons','lesson','Study']];
-  const sortOptions=[['created-desc','Newest saved','clock','New'],['created-asc','Oldest saved','history','Old'],['modified-desc','Recently edited','edit','Edited'],['source','Text / source order','order','Source'],['alpha','Title A–Z','az','A–Z']];
-  parts.push('<div class="gn-rd-controls" aria-label="Reading Desk filter and order toolbars">');
-  parts.push('<div class="gn-rd-option-group" role="group" aria-label="Source filters"><span class="gn-rd-option-label">Source</span><div class="gn-rd-option-buttons">'+
-    typeOptions.map(([value,name,icon,short])=>deskChoice('source-filter',value,name,icon,short,ui.sourceType===value)).join('')+'</div></div>');
-  parts.push('<div class="gn-rd-option-group" role="group" aria-label="Sort saved items"><span class="gn-rd-option-label">Order</span><div class="gn-rd-option-buttons">'+
-    sortOptions.map(([value,name,icon,short])=>deskChoice('sort-filter',value,name,icon,short,ui.sort===value)).join('')+'</div></div></div>');
+   ['all','bookmarks','mine'].map(v=>'<button type="button" data-rd="filter" data-value="'+v+
+    '" aria-pressed="'+(ui.category===v)+'">'+({all:'All',bookmarks:'Bookmarks',mine:'My notes'}[v])+'</button>').join('')+'</div>');
+  parts.push('<label class="gn-rd-search" for="gn-rd-query">Search saved items<input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search notes and quotations…" value="'+esc(ui.query)+'"></label>');
+  const typeOptions=[['all','All sources'],['text','Text passages'],['booknotes','Book notes'],['dictionary','Dictionary'],['index','Subject index'],['bidaya','Bidāya applications'],['lessons','Study lessons']];
+  parts.push('<div class="gn-rd-controls" role="group" aria-label="Browse saved items">');
+  parts.push('<label for="gn-rd-source">Saved from <select id="gn-rd-source">'+typeOptions.map(([value,name])=>
+   '<option value="'+value+'"'+(ui.sourceType===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label>');
+  parts.push('<label for="gn-rd-sort">Sort by <select id="gn-rd-sort">'+Object.entries(SORTS).map(([value,name])=>
+   '<option value="'+value+'"'+(ui.sort===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label></div>');
     parts.push('<p class="gn-rd-count" aria-live="polite">'+visible.length+' '+(bin?'items in Bin':'saved items')+'</p>');
   parts.push('<div class="gn-rd-layout"><div class="gn-rd-cards" id="gn-rd-cards">');
   let lastGroup='',lastPassage='';
@@ -463,6 +453,28 @@ function create(ctx){
    parts.push('<button class="gn-rd-mobile-back" type="button" data-rd="detail-back">← Reading Desk</button>');
    if(ui.mobileDetail&&readingOrigin)parts.push('<button class="gn-rd-back-reading gn-rd-mobile-source-back" type="button" data-rd="return-reading">← Back to text</button>');
    parts.push('<header><small>'+esc(selected.kind==='note'?'MY NOTE':grouped(selected).toUpperCase())+'</small><h2>'+esc(selected.title||titleOf(selected.target))+'</h2></header>');
+   const itemId='data-id="'+esc(selected.id)+'"';
+   parts.push('<div class="gn-rd-detail-actions" role="group" aria-label="Actions for this saved item">');
+   if(bin)parts.push('<button type="button" class="gn-rd-detail-primary" data-rd="restore" '+itemId+'>Restore item</button>');
+   else{
+    if(selected.kind==='note')parts.push('<button type="button" class="gn-rd-detail-primary" data-rd="edit" '+itemId+'>Edit note</button>');
+    if(selected.target&&isResolved(selected)){
+     parts.push('<button type="button" class="'+(selected.kind==='note'?'gn-rd-detail-secondary':'gn-rd-detail-primary')+
+      '" data-rd="open" '+itemId+'>Open in text</button>');
+     if(selected.kind!=='note')parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="add-note" '+itemId+'>Add note</button>');
+    }
+    if(!isResolved(selected))parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="relink" '+itemId+'>Relink source</button>');
+   }
+   parts.push('<details class="gn-rd-item-more"><summary>More <span aria-hidden="true">⌄</span></summary><div class="gn-rd-item-more-items">');
+   if(!bin){
+    parts.push('<button type="button" data-rd="share" '+itemId+'>Share item</button>');
+    parts.push('<button type="button" data-rd="email" '+itemId+'>Email item</button>');
+    parts.push('<button type="button" data-rd="print" '+itemId+'>Print / PDF for this item</button>');
+   }
+   parts.push('<button type="button" data-rd="'+(bin?'delete-permanent':'trash')+'" '+itemId+'>'+
+    (bin?'Delete permanently':'Move to Bin')+'</button>');
+   parts.push('</div></details></div>');
+
    if(!isResolved(selected))parts.push('<div class="gn-rd-unresolved-detail" role="status"><strong>Original source unavailable in this edition.</strong><p>The saved words, note, dates and previous source reference remain preserved. You can read or export this item and optionally reconnect it to an existing paragraph.</p></div>');
    parts.push(detailsFor(selected));
    parts.push('<footer class="gn-rd-date-details"><small>'+esc(dateLine(selected,true))+'</small></footer>');
@@ -480,20 +492,6 @@ function create(ctx){
     parts.push(relatives.slice(0,12).map(r=>'<button type="button" data-rd="related" data-id="'+esc(r.id)+'">'+esc(short(r.title||titleOf(r.target),100))+'</button>').join(''));
     parts.push('</section>');
    }
-   parts.push('<div class="gn-rd-detail-actions" role="toolbar" aria-label="Saved item tools">');
-   const itemId='data-id="'+esc(selected.id)+'"';
-   if(bin)parts.push(deskButton('restore','Restore item','history','Restore',null,itemId));
-   else{
-    if(selected.target&&isResolved(selected)){
-     parts.push(deskButton('open','Open original source','book','Source',null,itemId));
-     parts.push(deskButton('add-note','Add linked note','plus','Add note',null,itemId));
-    }
-    if(!isResolved(selected))parts.push(deskButton('relink','Relink archival source','link','Relink',null,itemId));
-    if(selected.kind==='note')parts.push(deskButton('edit','Edit personal note','edit','Edit',null,itemId));
-   }
-   parts.push(deskButton('share','Share saved item','share','Share',null,itemId));
-   parts.push(deskButton('email','Email saved item','mail','Email',null,itemId));
-   parts.push(deskButton('print','Print or download this item','print','Print',null,itemId)+'</div>');
     }else parts.push('<div class="gn-rd-detail-placeholder"><h2>Choose an item</h2><p>Select a bookmark or personal note to see its source and context.</p></div>');
   parts.push('</div></div>');
   if(bin&&visible.length)parts.push('<div class="gn-rd-bin-actions"><button type="button" data-rd="restore-all">Restore all</button><button type="button" data-rd="empty-bin">Empty Bin…</button></div>');
@@ -1129,15 +1127,6 @@ function create(ctx){
   }
   printMessage('File sharing is unavailable. Use Download ready PDF and your device’s Files or Share menu.',true);
  }
- function refreshPrintToolbar(){
-  if(!printRoot)return;
-  printRoot.querySelectorAll('[data-rd="print-order"]').forEach(button=>{
-   button.setAttribute('aria-pressed',String(button.dataset.value===printPrefs.order));
-  });
-  printRoot.querySelectorAll('[data-rd="print-toggle"]').forEach(button=>{
-   button.setAttribute('aria-pressed',String(Boolean(printPrefs[button.dataset.key])));
-  });
- }
  function printSourcePreview(t){
   if(!t||!['quote','paragraph','section'].includes(t.kind))return '';
   const limit=printPrefs.full?100000:900;
@@ -1205,47 +1194,63 @@ function create(ctx){
  }
  function updatePrintSheet(){
   if(!printRoot)return;
-  const all=(printSelection?printSelection.map(id=>records.find(r=>r.id===id)).filter(Boolean):matching()).filter(r=>printPrefs.personal||r.kind!=='note');
+  const scoped=printSelection?printSelection.map(id=>records.find(r=>r.id===id)).filter(Boolean):
+   printPrefs.scope==='all'?active():matching();
+  const all=scoped.filter(r=>printPrefs.personal||r.kind!=='note');
   const rows=printPrefs.order==='shown'?all:
     printPrefs.order==='source'?sortItems(all,'source'):
     sortItems(all,printPrefs.order);
   const groups=printGroups(rows),container=printRoot.querySelector('#gn-rd-print-sheet-body');
   if(!container)return;
-  container.innerHTML=groups.map(printGroup).join('')||'<p>No matching entries.</p>';
-  const orderLabel=printPrefs.order==='shown'?'As currently displayed':printPrefs.order==='source'?'Text / source order':SORTS[printPrefs.order]||'Current order';
-  printRoot.querySelector('#gn-rd-print-order-summary').textContent=rows.length+' items · '+orderLabel;
+  container.innerHTML=groups.map(printGroup).join('')||'<p>No items match the selected PDF options.</p>';
+  const orderLabel=printPrefs.order==='shown'?'As currently displayed':printPrefs.order==='source'?'Source order':SORTS[printPrefs.order]||'Current order';
+  const scopeLabel=printSelection?'selected item':printPrefs.scope==='all'?'all saved items':'current filtered results';
+  printRoot.querySelector('#gn-rd-print-order-summary').textContent=rows.length+' included · '+scopeLabel+' · '+orderLabel;
+  const caption=printRoot.querySelector('#gn-rd-print-sheet-subtitle');
+  if(caption)caption.textContent='al-Ḍarūrī · '+rows.length+' '+(rows.length===1?'saved item':'saved items')+
+   (printSelection?' · selected item':printPrefs.scope==='all'?' · entire collection':' · filtered view');
  }
  function preparePrint(selected){
-  const all=(selected||matching()).filter(Boolean);
-  if(!all.length){ctx.notify('Nothing to print in this view.');return;}
-  closePrintPreview();printSelection=selected?all.map(r=>r.id):null;
+  const subset=selected?selected.filter(Boolean):matching();
+  const allSaved=active();
+  if(selected?!subset.length:!allSaved.length){ctx.notify('Nothing to print in this Reading Desk yet.');return;}
+  closePrintPreview();
+  printSelection=selected?subset.map(r=>r.id):null;
+  printPrefs.scope=selected?'single':(subset.length?'visible':'all');
+  const options=[['source','Text / source order'],['created-asc','Oldest saved first'],
+   ['created-desc','Newest saved first'],['shown','As currently displayed']];
+  const choice=(key,title,checked)=>'<label class="gn-rd-print-check"><input type="checkbox" data-rd-print-option="'+key+'"'+
+   (checked?' checked':'')+'> '+title+'</label>';
   printFocus=document.activeElement;printRoot=document.createElement('div');printRoot.id='gn-rd-print-root';
   printRoot.setAttribute('role','dialog');printRoot.setAttribute('aria-modal','true');
   printRoot.setAttribute('aria-label','Reading Desk print and PDF settings');
-  const options=[['source','Text / source order','order','Source'],['created-asc','Oldest saved first','history','Old'],['created-desc','Newest saved first','clock','New'],['shown','As displayed','saved','Shown']];
-  const choice=([value,label,icon,caption])=>deskChoice('print-order',value,label,icon,caption,printPrefs.order===value);
-  const toggle=(key,label,icon,caption)=>deskButton('print-toggle',label,icon,caption,printPrefs[key],'data-key="'+key+'"');
+  const scopeControl=selected?'<p class="gn-rd-print-single">Exporting this selected saved item</p>':
+    '<label for="gn-rd-print-scope">Items <select id="gn-rd-print-scope" data-rd-print-option="scope">'+
+    '<option value="visible"'+(printPrefs.scope==='visible'?' selected':'')+'>Current results ('+subset.length+')</option>'+
+    '<option value="all"'+(printPrefs.scope==='all'?' selected':'')+'>All saved items ('+allSaved.length+')</option></select></label>';
   printRoot.innerHTML='<div class="gn-rd-print-actions"><div><h2>Reading Desk · Print &amp; PDF</h2>'+
    '<p id="gn-rd-print-order-summary"></p></div><div class="gn-rd-print-buttons">'+
    '<button type="button" class="gn-rd-print-primary" data-rd="download-pdf">'+RD_ICON.download+'<span>Download PDF</span></button>'+
    '<button type="button" data-rd="print-now">'+RD_ICON.print+'<span>Print</span></button>'+
    '<button type="button" data-rd="close-print">'+RD_ICON.close+'<span>Close</span></button></div></div>'+
-   '<p class="gn-rd-print-help">Download produces a PDF file on this device. Print opens your browser’s print dialog, where Save as PDF may also be available.</p>'+
-   '<div class="gn-rd-print-options" role="group" aria-label="PDF options">'+
-   '<div class="gn-rd-option-group" role="group" aria-label="Printing order"><span class="gn-rd-option-label">Order</span><div class="gn-rd-option-buttons">'+options.map(choice).join('')+'</div></div>'+
-   '<div class="gn-rd-option-group" role="group" aria-label="Languages"><span class="gn-rd-option-label">Language</span><div class="gn-rd-option-buttons">'+
-   deskButton('print-toggle','Include Arabic','book','AR',printPrefs.arabic,'data-key="arabic"')+
-   deskButton('print-toggle','Include English','book','EN',printPrefs.english,'data-key="english"')+'</div></div>'+
-   '<div class="gn-rd-option-group" role="group" aria-label="Include in PDF"><span class="gn-rd-option-label">Include</span><div class="gn-rd-option-buttons">'+
-   toggle('personal','Personal notes','note','Notes')+
-   toggle('dates','Note creation and editing dates','clock','Dates')+
-   toggle('bookmarkDates','Bookmark dates','bookmark','Saved')+
-   toggle('full','Full source passages','saved','Full text')+'</div></div></div>'+
-   '<p id="gn-rd-pdf-message" class="gn-rd-pdf-message" role="status" aria-live="polite">Choose Download PDF or Print above. Options update the document below.</p>'+
+   '<div class="gn-rd-print-options" aria-label="PDF settings">'+
+   '<div class="gn-rd-print-fields">'+scopeControl+
+   '<label for="gn-rd-print-order">Order <select id="gn-rd-print-order" data-rd-print-option="order">'+
+   options.map(([value,title])=>'<option value="'+value+'"'+(printPrefs.order===value?' selected':'')+'>'+title+'</option>').join('')+
+   '</select></label></div>'+
+   '<fieldset class="gn-rd-print-check-group"><legend>Languages</legend>'+
+   choice('arabic','Arabic',printPrefs.arabic)+choice('english','English',printPrefs.english)+'</fieldset>'+
+   '<fieldset class="gn-rd-print-check-group"><legend>Include in export</legend>'+
+   choice('personal','Personal notes',printPrefs.personal)+
+   choice('dates','Note dates',printPrefs.dates)+
+   choice('bookmarkDates','Bookmark dates',printPrefs.bookmarkDates)+
+   choice('full','Full source passages',printPrefs.full)+'</fieldset></div>'+
+   '<p id="gn-rd-pdf-message" class="gn-rd-pdf-message" role="status" aria-live="polite">'+
+   'Download PDF creates a file on this device. Print opens the browser printing interface.</p>'+
    '<div id="gn-rd-pdf-result" class="gn-rd-pdf-result" hidden><a id="gn-rd-pdf-link" download>Download ready PDF</a>'+
    '<button type="button" data-rd="share-pdf" hidden>Share PDF…</button></div>'+
-   '<main class="gn-rd-print-sheet"><header><h1>Reading Desk</h1><p>al-Ḍarūrī · '+all.length+' '+(all.length===1?'saved item':'saved items')+'</p></header>'+
-   '<div id="gn-rd-print-sheet-body"></div></main>';
+   '<main class="gn-rd-print-sheet"><header><h1>Reading Desk</h1>'+
+   '<p id="gn-rd-print-sheet-subtitle"></p></header><div id="gn-rd-print-sheet-body"></div></main>';
   document.body.append(printRoot);document.body.classList.add('gn-rd-print');
   updatePrintSheet();
   printRoot.querySelector('[data-rd="download-pdf"]')?.focus({preventScroll:true});
@@ -1254,6 +1259,7 @@ function create(ctx){
   const btn=event.target.closest?.('[data-rd]');if(!btn)return;
   event.preventDefault();event.stopImmediatePropagation();
   const id=btn.dataset.id,action=btn.dataset.rd,row=records.find(r=>r.id===id);
+  btn.closest('.gn-rd-manage-menu,.gn-rd-item-more')?.removeAttribute?.('open');
   if(action==='filter'){ui.category=btn.dataset.value;ui.selected='';ui.mobileDetail=false;ui.listScroll=0;if(ui.category==='bin'){ui.filterTarget='';ui.filterSegment=null;ui.sourceType='all';}render();window.scrollTo({top:0,behavior:'instant'});return;}
   if(action==='source-filter'){ui.sourceType=btn.dataset.value;ui.selected='';ui.mobileDetail=false;render();return;}
   if(action==='sort-filter'){ui.sort=btn.dataset.value;ui.selected='';ui.mobileDetail=false;render();return;}
@@ -1325,15 +1331,6 @@ function create(ctx){
   if(action==='print-list'){preparePrint();return;}
   if(action==='download-pdf'){void downloadDeskPdf();return;}
   if(action==='share-pdf'){void shareDeskPdf();return;}
-  if(action==='print-order'&&printRoot){
-   if(!['source','created-asc','created-desc','shown'].includes(btn.dataset.value))return;
-   printPrefs.order=btn.dataset.value;refreshPrintToolbar();updatePrintSheet();invalidateDeskPdf();return;
-  }
-  if(action==='print-toggle'&&printRoot){
-   const key=btn.dataset.key;
-   if(!['arabic','english','personal','dates','bookmarkDates','full'].includes(key))return;
-   printPrefs[key]=!printPrefs[key];refreshPrintToolbar();updatePrintSheet();invalidateDeskPdf();return;
-  }
   if(action==='print-now'){
    if(!printRoot)return;
    try{window.print();printMessage('Print dialog requested. If it does not appear, use Download PDF.');}
@@ -1410,8 +1407,10 @@ function create(ctx){
    if(element?.dataset?.rdPrintOption){
     const key=element.dataset.rdPrintOption;
     if(!Object.hasOwn(printPrefs,key))return;
+    if(key==='scope'&&!['visible','all'].includes(element.value))return;
     printPrefs[key]=element.type==='checkbox'?element.checked:element.value;
     updatePrintSheet();
+    invalidateDeskPdf();
    }
   });
   document.addEventListener('input',e=>{if(e.target?.id==='gn-rd-query'){ui.query=e.target.value;const focusId=document.activeElement.id;const pos=e.target.selectionStart;render();const input=$('#'+focusId);input?.focus({preventScroll:true});input?.setSelectionRange?.(pos,pos);}});
