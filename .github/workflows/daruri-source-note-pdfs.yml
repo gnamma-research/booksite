@@ -2,7 +2,7 @@ name: Daruri source-note PDF QA and publication
 
 on:
   push:
-    branches: [fix/daruri-personal-pdf-page-maps-20261021]
+    branches: [fix/daruri-personal-pdf-page-maps-20261021, fix/daruri-quran-allusion-audit-20261021]
     paths:
       - 'daruri/build/**'
       - 'daruri/qa/refresh_note_pdf_manifest.py'
@@ -38,6 +38,11 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r daruri/build/requirements.txt
           python -m pip install 'PyMuPDF>=1.24,<2'
+      - name: Verify source note ownership and all five withheld comparisons
+        run: |
+          npm install --prefix /tmp/daruri-notes-qa jsdom@26.1.0
+          NODE_PATH=/tmp/daruri-notes-qa/node_modules node daruri/qa/verify-reader-source-notes.js
+          python daruri/build/build_source_reference_data.py --check
       - name: Rebuild all five PDFs from the current checked-out reader
         run: |
           python daruri/build/build_editions.py --output-dir /tmp/daruri-source-note-build
