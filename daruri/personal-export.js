@@ -146,8 +146,10 @@
     return {canvas,c,W:canvas.width,H:canvas.height,padding:76,y:115,links:[]};
   }
   function fontFor(s,kind){
-    if(/[\u0600-\u06ff]/.test(s))return {font:(kind==='title'?'bold ':'')+'29px Naskh, serif',rtl:true,lh:49};
-    return {font:(kind==='title'?'bold 30px SourceSerif, Georgia, serif':kind==='meta'?'21px sans-serif':'26px SourceSerif, Georgia, serif'),rtl:false,lh:kind==='title'?40:kind==='meta'?32:39};
+    const arabic=(String(s).match(/[\u0600-\u06ff]/g)||[]).length;
+    const latin=(String(s).match(/[A-Za-z]/g)||[]).length;
+    if(arabic>0&&arabic>latin*0.6)return {font:(kind==='title'?'bold ':'')+'29px Naskh, SourceSerif, serif',rtl:true,lh:49};
+    return {font:(kind==='title'?'bold 30px SourceSerif, Georgia, serif':kind==='meta'?'21px sans-serif':'26px SourceSerif, Naskh, Georgia, serif'),rtl:false,lh:kind==='title'?40:kind==='meta'?32:39};
   }
   function breakLong(c,word,max){
     const out=[];let piece='';
