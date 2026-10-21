@@ -84,7 +84,6 @@ try{
   await expectStatus('unavailable');
   assert.match(await availability.innerText(),/chosen publisher-note profile is not published/);
   await select('notes','none');
-  await select('personal','nonsense').catch(()=>{}); // No imperative personal-note PDF action.
   await page.locator('[data-es-personal="personalNotes"]').click();
   assert.match(await summary.innerText(),/My notes: On/);
   assert.equal(await page.locator('.gn-es-private-hint').isVisible(),true);
