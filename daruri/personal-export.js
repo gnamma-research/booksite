@@ -145,7 +145,7 @@
     canvas.height=Math.round(size.height*factor);
     const c=canvas.getContext('2d',{alpha:false});if(!c)throw Error('Canvas drawing is unavailable');
     c.fillStyle='#fff';c.fillRect(0,0,canvas.width,canvas.height);
-    return {canvas,c,W:canvas.width,H:canvas.height,padding:76,y:115,links:[]};
+    return {canvas,c,W:canvas.width,H:canvas.height,padding:76,y:115,links:[],searchLines:[]};
   }
   function fontFor(s,kind){
     const arabic=(String(s).match(/[\u0600-\u06ff]/g)||[]).length;
@@ -216,6 +216,9 @@
     });
   }
   async function appendNotes(pdf,rows,p,meta){
+    if(!window.GnammaPdfUpgrade)throw Error('The private PDF Unicode extension did not load. Reload this page.');
+    const upgrade=window.GnammaPdfUpgrade;
+    const fonts=await upgrade.searchableFonts(pdf,URL_ROOT);
     await Promise.allSettled([
       document.fonts?.load('26px SourceSerif'),
       document.fonts?.load('29px Naskh')
@@ -230,6 +233,8 @@
       const bytes=await toJpeg(sheet.canvas),img=await pdf.embedJpg(bytes);
       const out=pdf.addPage([size.width,size.height]);
       out.drawImage(img,{x:0,y:0,width:size.width,height:size.height});
+      // Render clear mixed-script visuals plus a real, invisible Unicode text layer.
+      upgrade.textOverlay(pdf,out,sheet.searchLines,sheet,fonts);
       for(const record of sheet.links)pendingLinks.push({page:out,...record});
       pageNum++;sheet=blankCanvas(size);
       if(pageNum>260)throw Error('Appendix exceeds 260 pages. Export fewer notes.');
@@ -245,6 +250,7 @@
         c.save();c.font=f.font;c.fillStyle=kind==='meta'?'#666':kind==='title'?'#243f45':'#272727';
         c.direction=f.rtl?'rtl':'ltr';c.textAlign=f.rtl?'right':'left';
         c.fillText(content,f.rtl?sheet.W-pads: pads+indent,y);c.restore();
+        sheet.searchLines.push({text:content,y,rtl:f.rtl,size:Number(f.font.match(/([\d.]+)px/)?.[1])||26,indent});
         if(withLink&&i===0)sheet.links.push({
           sourceIndex:withLink,
           rect:[(pads+indent)/2,(sheet.H-y-10)/2,Math.min(sheet.W-pads,(pads+indent+maxWidth))/2,(sheet.H-y+f.lh-4)/2]
@@ -280,7 +286,7 @@
       const target=req.sourceIndex-1;
       if(target>=0&&target<pdf.getPageCount())makeLink(pdf,req.page,pdf.getPage(target),req.rect);
     }
-    return pageNum-1;
+    return {pages:pageNum-1,unsupported:[...fonts.missing]};
   }
   async function loadPdfLib(){
     if(window.PDFLib?.PDFDocument)return;
@@ -319,6 +325,8 @@
     if(!rows.length)throw Error('Choose at least one Reading Desk item, or select the unchanged PDF option.');
     if(rows.length>MAX_ITEMS)throw Error('Choose at most '+MAX_ITEMS+' items per PDF.');
     if(!p.annotations&&!p.appendix)throw Error('Enable annotations, the appendix, or both.');
+    if(p.appendix&&rows.reduce((n,r)=>n+String(r.body||r.target?.quote||'').length,0)>220000)
+      throw Error('Too much text for a mobile export. Choose fewer notes or use the A4 printing route.');
     progress('Loading PDF processing library…',6);
     await loadPdfLib();
     progress('Checking source PDF and section map…',14);
@@ -333,26 +341,50 @@
     const pdf=await window.PDFLib.PDFDocument.load(bytes,{updateMetadata:false});
     const basePageCount=pdf.getPageCount();
     const countByPage=new Map(),skipped=[],pinRows=[];
+    const upgrade=window.GnammaPdfUpgrade;
+    if(!upgrade)throw Error('Precise PDF annotation component is missing. Reload the page.');
+    let wordMap=null,precise=0;
+    if(p.annotations&&rows.some(r=>r.target?.kind==='quote')){
+      try{
+        const mapResp=await fetch(new URL('personal-anchor-maps/'+file+'.json',URL_ROOT),{cache:'no-cache'});
+        if(mapResp.ok){
+          const candidate=await mapResp.json();
+          if(candidate.source_sha256===metadata.sha256&&candidate.coverage>=0.92&&candidate.segments)
+            wordMap=candidate;
+        }
+      }catch(_){/* Use verified section fallback; never guess word geometry. */}
+    }
     if(p.annotations){
       for(let i=0;i<rows.length;i++){
-        const r=rows[i],index=verifiedPage(r.target?.section,metadata,basePageCount);
-        if(index<0){skipped.push(i);continue;}
+        const r=rows[i],sectionIndex=verifiedPage(r.target?.section,metadata,basePageCount);
+        if(sectionIndex<0){skipped.push(i);continue;}
+        const target=r.target||{},tag=target.lang==='ar'?
+          (file==='daruri-arabic-vowelled.pdf'||file==='daruri.pdf'||file==='daruri-study.pdf'?'vocalized':'ar'):'en';
+        const key=[target.section,target.segment,tag].join(':');
+        const words=wordMap?.segments?.[key]||[];
+        let hit=target.kind==='quote'?upgrade.sourceMatch(words,target):null;
+        if(hit&&(!Number.isInteger(hit.page)||hit.page<1||hit.page>basePageCount))hit=null;
+        const index=hit?hit.page-1:sectionIndex;
         const slot=countByPage.get(index)||0,count=slot+1;
         countByPage.set(index,count);
-        if(notePin(pdf,pdf.getPage(index),i+1,entryText(r,i,p.dates),slot))pinRows.push(i);
-        else skipped.push(i);
+        const content=entryText(r,i,p.dates);
+        if(notePin(pdf,pdf.getPage(index),i+1,content,slot)){
+          pinRows.push(i);
+          if(hit&&upgrade.addHighlight(pdf,pdf.getPage(index),hit,content,'Reading Desk '+(i+1)))precise++;
+        }else skipped.push(i);
       }
     }
     if(!p.appendix&&skipped.length)throw Error(skipped.length+' selected items have no safe in-text PDF comment location. Include the appendix so none of your notes are lost.');
     progress('Preparing appendix pages…',45);
-    const pages=p.appendix?await appendNotes(pdf,rows,p,metadata):0;
+    const appendix=p.appendix?await appendNotes(pdf,rows,p,metadata):{pages:0,unsupported:[]};
+    const pages=appendix.pages;
     progress('Saving your personal PDF…',88);
     pdf.setTitle('Al-Ḍarūrī — Personal Reading Desk Edition');
     pdf.setSubject('Reader-authored PDF comments and personal notes. Not part of original or editorial text.');
     pdf.setCreator('Gnamma Research — browser-local personal export');
     const saved=await pdf.save({useObjectStreams:false});
     if(saved.length>90*1024*1024)throw Error('The resulting PDF is over 90 MB. Please choose fewer items.');
-    return {blob:new Blob([saved],{type:'application/pdf'}),pages,annotated:pinRows.length,unmapped:skipped.length};
+    return {blob:new Blob([saved],{type:'application/pdf'}),pages,annotated:pinRows.length,precise,unmapped:skipped.length,unsupported:appendix.unsupported,hadWordMap:!!wordMap};
   }
   function startResult(blob,name){
     if(resultURL)URL.revokeObjectURL(resultURL);
@@ -378,12 +410,14 @@
     const rows=matching(),p=prefs();
     busy=true;$('pe-result').hidden=true;info('');syncForm();
     try{
-      const {blob,pages,annotated,unmapped}=await generate(file,rows,p);
+      const {blob,pages,annotated,precise,unmapped,unsupported,hadWordMap}=await generate(file,rows,p);
       const stem=file.replace(/\.pdf$/,'');
       startResult(blob,stem+'-personal-'+new Date().toISOString().slice(0,10)+'.pdf');
       info(rows.length+' item'+(rows.length===1?'':'s')+' included; '+annotated+' source-page PDF comment'+(annotated===1?'':'s')+
-        '; '+pages+' printable appendix page'+(pages===1?'':'s')+'.'+
+        '; '+precise+' precise word highlight'+(precise===1?'':'s')+'; '+pages+' searchable appendix page'+(pages===1?'':'s')+'.'+
         (unmapped?' '+unmapped+' item'+(unmapped===1?'':'s')+' had no safe PDF pin; see appendix.':'')+
+         (unsupported.length?' Some rare symbols may not be searchable: '+unsupported.slice(0,7).join(' ')+'.':'')+
+        (hadWordMap?'':' Exact-word map unavailable; notes safely attach to their sections.')+
         ' On iPhone/iPad, use Open or Share if automatic downloading was blocked.');
       progress('Personal PDF generated on this device.',100);
     }catch(error){showError('PDF export failed: '+(error?.message||error)+'. The original PDF and your Reading Desk are unchanged.');$('pe-progress').hidden=true;}
