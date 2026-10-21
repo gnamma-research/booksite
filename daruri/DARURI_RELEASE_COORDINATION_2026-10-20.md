@@ -298,3 +298,18 @@ Changed runtime files: daruri/index.html, compact-menu.css, download-bundle.js, 
 ## Home copy simplification — 21 October 2026
 
 The Gnamma rock-pool introduction and “About Gnamma” heading were removed from the interactive and native-fallback Darūrī homepages at user request. Gnamma branding elsewhere is unchanged. Home now emphasizes the six-stage Study Guide with lessons, questions and feedback; the Reading Desk for excerpts and personal notes; the Contents, dictionary, subject index, Bidāya applications, source notes and configurable Visuals preferences. The edition and translation provenance remain intact, as do their expandable bibliographical notes. No page template, CSS, typography, PDFs, scholarly data, book sections, or navigation destinations were altered. The SW cache name and registration were bumped to 20261021-home-text2, and the package asset list updated. Based on master 5ae12837ce48.
+
+
+## Editions & Printing catalog — 21 October 2026
+
+The dedicated #editions route is organised in the approved order: (1) Reading & Printing, (2) Study, (3) Reference. It is available from the left navigation, Home, and the existing Downloads menus. Those five original PDF links remain available with their existing destinations; the no-JavaScript fallback provides the same ordered tiers and published file links.
+
+Reading & Printing now has a browser-side A4 configurator: language (English, Arabic, bilingual), one/two columns (parallel or stacked for bilingual), vowel marks, comfortable/balanced/compact margin presets, no/essential notes, full text/major part/lesson/section range. The preview is generated from the current canonical text, not a placeholder. Print / Save as PDF uses the browser's own print dialog and does not upload text or user data. The desktop and mobile layout responds to current reader palettes. The full source remains unabridged for selected complete sections.
+
+Study provides the published fixed bilingual study PDF, the companion study guide, and a separate custom Study print configuration with selected translation, interpretation and source notes. Reference stays a fixed link to the scholarly PDF and is intentionally not customisable.
+
+Both Reading and Study have the optional 'Include editorial section titles' checkbox. Source headings are always present and are never labelled editorial. The reading preset defaults to OFF; study defaults to ON. Existing editorial descriptions are English only in the canonical reader data; when enabled in an Arabic-only printout, the titles remain visibly labelled English editorial descriptions rather than being presented as authorial Arabic headings.
+
+Browser assets: editions.js and editions.css, version 20261021-editions1. Their versions must remain matched in index.html and sw.js. Both are included in download-bundle.js. The PDF build source, build/print_editions.py, supports optional --editorial-titles on/off. Its default is OFF, to keep the A4 compact editions minimal. qa/verify-editions-configurator.js tests route integration and title/format selection using all 258 authorial sections / 414 bilingual passage pairs.
+
+The original published scholarly and bilingual-study PDF binaries have not been silently replaced, because the owner requested review of page designs first. Source generation for bilingual PDFs has been adjusted toward English-left/Arabic-right. The published legacy file page maps and the scholarly reference PDF URLs remain intact pending approved replacement and revalidation. Do not conflate the interactive browser Save as PDF option with a downloadable pre-built PDF for every option.
