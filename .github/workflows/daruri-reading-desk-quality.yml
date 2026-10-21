@@ -1,0 +1,28 @@
+name: Daruri Reading Desk quality checks
+
+on:
+  push:
+    paths:
+      - '.github/workflows/daruri-reading-desk-quality.yml'
+      - 'daruri/reading-desk.js'
+      - 'daruri/reading-desk.css'
+      - 'daruri/reading-desk-dictionary.js'
+      - 'daruri/sw.js'
+      - 'daruri/download-bundle.js'
+      - 'daruri/qa/verify-reading-desk-redesign.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reading-desk-regressions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify preserved notes, source anchors, mobile and printing
+        run: node daruri/qa/verify-reading-desk-redesign.js
