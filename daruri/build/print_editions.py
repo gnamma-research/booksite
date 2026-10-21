@@ -68,6 +68,9 @@ def css(c,mode):
   .number{font:600 7pt/1.3 "Noto Sans";color:#666;direction:ltr;unicode-bidi:isolate;vertical-align:top}
   .afterword{margin-top:12pt;padding-top:6pt;border-top:.3pt solid #aaa;font:8pt/1.35 "Noto Sans"}
   '''%c['margin']
+  out+='''.reading-editorial-title{font:600 9pt/1.32 "Noto Sans";color:#30383a;margin:6pt 0 3pt;break-after:avoid;break-inside:avoid}
+  .reading-editorial-title small{font:600 7pt "Noto Sans";text-transform:uppercase;color:#5d6568;padding-right:5pt}
+  '''
   if mode=='bilingual':
     out+='''.parallel{width:100%;table-layout:fixed;direction:ltr;border-collapse:collapse;margin:0 0 %spt}
     .parallel td{width:50%%;vertical-align:top;padding:0 0 %spt}
@@ -106,7 +109,7 @@ def front(mode,chosen,scope,title):
     result='<section class="opening"><h1>'+title+'</h1><p>Ibn Rushd · Gnamma Research · Printable A4</p><p>'+note+' Full commentary remains in the scholarly reference edition.</p></section>'
     result+='<nav class="toc"><strong>Reading map</strong>'+''.join('<span>§'+str(n)+' · '+E(values[0])+'</span>' for n,values in HEADINGS.items() if n in chosen)+'</nav>'
   return result
-def build(mode,selection,scope,title,pdf):
+def build(mode,selection,scope,title,pdf,editorial_titles=False):
   c=MODES[mode];chosen=set(int(s) for s in selection)
   assert chosen and chosen <= set(SECTIONS)
   sections=[SECTIONS[i] for i in range(1,259) if i in chosen]
@@ -117,6 +120,9 @@ def build(mode,selection,scope,title,pdf):
     if n in HEADINGS:
       heading=HEADINGS[n][1] if mode.startswith('arabic') else HEADINGS[n][0]
       content.append('<header class="part"><h2'+(' lang="ar" dir="rtl"' if mode.startswith('arabic') else '')+'>'+E(heading)+'</h2></header>')
+    if editorial_titles:
+      extra=(' lang="en" dir="ltr"' if mode.startswith('arabic') else '')
+      content.append('<header class="reading-editorial-title"'+extra+'><small>Editorial §'+str(n)+'</small> '+E(str(s['title']))+'</header>')
     ha,he=s.get('headingAr') or '',s.get('headingEn') or ''
     if ha or he:
       if mode=='bilingual':
@@ -145,7 +151,7 @@ def build(mode,selection,scope,title,pdf):
   with fitz.open(pdf) as check:
     pages=len(check)
     assert pages>=1 and all(abs(p.rect.width-595.2756)<1 for p in check), 'Not A4'
-  result={'path':str(pdf),'edition':mode,'scope':scope,'title':title,'pages':pages,'bytes':pdf.stat().st_size,'sections':list(sorted(chosen)),'paragraphs':sum(len(s['segments']) for s in sections),'notes':0,'size':'A4','sha256':hashlib.sha256(pdf.read_bytes()).hexdigest()}
+  result={'path':str(pdf),'edition':mode,'scope':scope,'title':title,'pages':pages,'bytes':pdf.stat().st_size,'sections':list(sorted(chosen)),'paragraphs':sum(len(s['segments']) for s in sections),'notes':0,'editorial_titles':bool(editorial_titles),'size':'A4','sha256':hashlib.sha256(pdf.read_bytes()).hexdigest()}
   print('BUILT',pdf,pages,'pages',flush=True)
   return result
 def main():
@@ -153,6 +159,7 @@ def main():
   parser.add_argument('--output-dir',type=Path,default=DARURI)
   parser.add_argument('--mode',choices=list(MODES)+['all'],default='all')
   parser.add_argument('--scope',choices=['full','parts','lessons','all'],default='all')
+  parser.add_argument('--editorial-titles',choices=['off','on'],default='off',help='Optional English editorial descriptors, clearly labelled; original headings always included')
   args=parser.parse_args()
   modes=list(MODES) if args.mode=='all' else [args.mode]
   result=[]
@@ -162,24 +169,26 @@ def main():
       lessons+=json.loads((DARURI/'study'/name).read_text())
     assert len(lessons)==28
   for mode in modes:
+    show_titles=args.editorial_titles=='on'
+    suffix='-editorial' if show_titles else ''
     if args.scope in ('all','full'):
-      result.append(build(mode,range(1,259),'full','Complete reading text',args.output_dir/('print-daruri-'+mode+'.pdf')))
+      result.append(build(mode,range(1,259),'full','Complete reading text',args.output_dir/('print-daruri-'+mode+suffix+'.pdf'),editorial_titles=show_titles))
     if args.scope in ('all','parts'):
       for part,a,b,title,ar in PARTS:
-        result.append(build(mode,range(a,b+1),'part',ar if mode.startswith('arabic') else title,args.output_dir/'print'/'parts'/mode/(part+'.pdf')))
+        result.append(build(mode,range(a,b+1),'part',ar if mode.startswith('arabic') else title,args.output_dir/'print'/'parts'/mode/(part+suffix+'.pdf'),editorial_titles=show_titles))
     if args.scope in ('all','lessons'):
       packet_files=[]
       for lesson in lessons:
         selected=sorted(set(int(s) for s in lesson['levels']['basic']['sections']))
-        name='%02d-%s.pdf'%(lesson['number'],lesson['id'])
+        name='%02d-%s%s.pdf'%(lesson['number'],lesson['id'],suffix)
         title=('قراءة الدرس %s'%lesson['number']) if mode.startswith('arabic') else 'Lesson %s: %s'%(lesson['number'],lesson['title'])
         target=args.output_dir/'print'/'lessons'/mode/name
-        row=build(mode,selected,'lesson',title,target)
+        row=build(mode,selected,'lesson',title,target,editorial_titles=show_titles)
         row.update(lesson_id=lesson['id'],lesson_number=lesson['number'],lesson_title=lesson['title'])
         result.append(row);packet_files.append(target)
-      with zipfile.ZipFile(args.output_dir/('print-daruri-'+mode+'-lesson-packets.zip'),'w',zipfile.ZIP_DEFLATED,compresslevel=7) as z:
+      with zipfile.ZipFile(args.output_dir/('print-daruri-'+mode+suffix+'-lesson-packets.zip'),'w',zipfile.ZIP_DEFLATED,compresslevel=7) as z:
         for file in packet_files:z.write(file,file.relative_to(args.output_dir))
-  catalog=args.output_dir/'print'/'print-catalog.json'
+  catalog=args.output_dir/'print'/('print-catalog'+('-editorial' if args.editorial_titles=='on' else '')+'.json')
   catalog.parent.mkdir(parents=True,exist_ok=True)
   catalog.write_text(json.dumps({'revision':'20261021-print-a4','title':'A4 low-ink Daruri editions','files':result},ensure_ascii=False,indent=2))
   print('BUILT',len(result),'PDFs',flush=True)
