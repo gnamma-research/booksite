@@ -170,6 +170,19 @@ test('importing a previous-edition backup preserves missing-source notes',()=>{
  ensure(JSON.parse(h.stored).items.some(r=>r.id==='imported-orphan'),
   'imported unresolvable note not persisted');
 });
+test('long imported notes display and print their full text without silent clipping',()=>{
+ const trailing=' COMPLETE FINAL PARAGRAPH — محفوظ إلى النهاية';
+ const full='Beginning of very long personal note. '+('x'.repeat(110000))+trailing;
+ const item=note('full-detail','190',full),h=boot(backup([item]));
+ h.event('click',{dataset:{rd:'select',id:'full-detail'}});
+ ensure(h.main.innerHTML.includes(trailing),'long note detail clipped its ending');
+ h.event('click',{dataset:{rd:'print',id:'full-detail'}});
+ ensure(h.printed.includes(trailing),'native print preview clipped long note content');
+});
+test('sharing large personal notes discloses excerpt limits',()=>{
+ ensure(js.includes('Excerpt only: this shared text was shortened'),'share preview lacks disclosure');
+ ensure(js.includes('Email excerpt shortened'),'mailto excerpt lacks disclosure');
+});
 test('long imported notes can be edited without forced truncation',()=>{
  ensure(js.includes("const body=String($('#gn-rd-note-body')?.value??'').trim()"),
   'editor still limits existing note body on save');
