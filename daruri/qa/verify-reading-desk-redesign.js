@@ -137,6 +137,12 @@ test('missing-source notes and unknown future records remain visible and survive
  ensure(current.items.find(x=>x.id==='future')?.extra.version===17,'future fields changed');
  ensure(current.editionExtra.retainMe===1,'envelope metadata lost');
 });
+test('exported JSON backups preserve opaque top-level metadata and saved notes',()=>{
+ const h=boot(backup([note('original','190','Retain this observation')],{futureEnvelope:{origin:'later edition'}}));
+ const payload=JSON.parse(h.desk.backup());
+ ensure(payload.futureEnvelope?.origin==='later edition','export discarded unknown envelope fields');
+ ensure(payload.items.find(r=>r.id==='original')?.body==='Retain this observation','export lost saved note');
+});
 test('corrupt and future-format storage is protected against writes',()=>{
  for(const contents of ['{broken JSON',JSON.stringify({format:'gnamma-reading-desk',version:2,items:[archived]})]){
   const h=boot(contents);h.desk.toggleSection('191');
