@@ -74,7 +74,8 @@ def finalize(source: Path, target: Path, source_sections: list, tier: str,
                     outline.append([1, title, row[2]])
     original.set_toc(outline, collapse=1)
     clicked = []
-    if tier == 'reading':
+    if tier == 'reading' and before_links == 0:
+        # Older approved PDFs lacked part links; new WeasyPrint editions already have them.
         page = original[0]
         for number, _ in PARTS:
             token = (str(number) + '§') if language.startswith('arabic') else ('§' + str(number))
