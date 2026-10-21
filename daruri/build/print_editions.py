@@ -59,16 +59,16 @@ def css(c,mode):
   .opening.arabic-opening h1{font:600 23pt/1.5 "Noto Naskh Arabic"}
   .opening.arabic-opening p{font:11pt/1.4 "Noto Naskh Arabic"}
   .toc{margin:0 0 9pt;padding:0 0 6pt;border-bottom:.4pt solid #aaa;font:8.3pt/1.42 "Noto Sans"}
-  .toc span{display:inline-block;margin-right:10pt}.toc strong{margin-right:10pt}
+  .toc span{display:inline-block;margin-right:10pt}.toc strong{margin-right:10pt}.toc a{color:inherit;text-decoration:none}
   .toc.arabic-toc{font:11pt/1.4 "Noto Naskh Arabic";direction:rtl;text-align:right}
   .toc.arabic-toc span{margin-left:10pt;margin-right:0}
   .part{margin:8pt 0 7pt;break-inside:avoid;break-after:avoid}
   .part h2{font:600 13pt/1.3 "Noto Serif";margin:0}
-  .section-head{font:600 10pt/1.38 "Noto Serif";margin:8pt 0 3pt;break-after:avoid;break-inside:avoid}
+  .section-head{font:600 10pt/1.38 "Noto Serif";margin:8pt 0 3pt;break-after:avoid;break-inside:avoid;bookmark-level:2}
   .number{font:600 7pt/1.3 "Noto Sans";color:#666;direction:ltr;unicode-bidi:isolate;vertical-align:top}
   .afterword{margin-top:12pt;padding-top:6pt;border-top:.3pt solid #aaa;font:8pt/1.35 "Noto Sans"}
   '''%c['margin']
-  out+='''.reading-editorial-title{font:600 9pt/1.32 "Noto Sans";color:#30383a;margin:6pt 0 3pt;break-after:avoid;break-inside:avoid}
+  out+='''.reading-editorial-title{bookmark-level:3;bookmark-state:closed;font:600 9pt/1.32 "Noto Sans";color:#30383a;margin:6pt 0 3pt;break-after:avoid;break-inside:avoid}
   .reading-editorial-title small{font:600 7pt "Noto Sans";text-transform:uppercase;color:#5d6568;padding-right:5pt}
   '''
   if mode=='bilingual':
@@ -81,7 +81,7 @@ def css(c,mode):
     .parallel .arabic{font:%spt/%s "Noto Naskh Arabic";direction:rtl;text-align:right}
     .section-head{display:table;width:100%%}
     .section-head span{display:table-cell;width:50%%;padding:0 5pt}
-    .section-head span.english{font:600 9.7pt/1.3 "Noto Serif"}
+    .section-head span.english{font:600 9.7pt/1.3 "Noto Serif";bookmark-level:2}
     .section-head span.arabic{font:600 12pt/1.4 "Noto Naskh Arabic";text-align:right;direction:rtl}
     '''%(c['s'],c['gap'],c['en'],c['el'],c['arpt'],c['al'])
   elif mode=='english':
@@ -102,12 +102,12 @@ def front(mode,chosen,scope,title):
     desc='النص الكامل بلا حواشٍ نقدية أو معاجم؛ وتوجد الطبعة العلمية المشروحة على موقع غنماء.' if scope=='full' else 'مقاطع كاملة مختارة من الأصل للقراءة؛ بلا حواشٍ نقدية.'
     title='الضروري في أصول الفقه' if scope=='full' else title
     result='<section class="opening arabic-opening" lang="ar" dir="rtl"><h1>'+E(title)+'</h1><p>أبو الوليد ابن رشد · غنماء · طبعة للطباعة على ورق A4</p><p>'+desc+'</p></section>'
-    result+='<nav class="toc arabic-toc"><strong>الأجزاء</strong>'+''.join('<span>§'+str(n)+' · '+E(values[1])+'</span>' for n,values in HEADINGS.items() if n in chosen)+'</nav>'
+    result+='<nav class="toc arabic-toc"><strong>الأجزاء</strong>'+''.join('<span><a href="#section-'+str(n)+'">§'+str(n)+' · '+E(values[1])+'</a></span>' for n,values in HEADINGS.items() if n in chosen)+'</nav>'
   else:
     title='Al-Ḍarūrī <span lang="ar" dir="rtl">الضروري في أصول الفقه</span>' if scope=='full' else E(title)
     note='Complete authorial §§1–258. No scholarly apparatus, notes, dictionary, cases or exercises.' if scope=='full' else 'Selected complete source sections; not a continuous abridgement.'
     result='<section class="opening"><h1>'+title+'</h1><p>Ibn Rushd · Gnamma Research · Printable A4</p><p>'+note+' Full commentary remains in the scholarly reference edition.</p></section>'
-    result+='<nav class="toc"><strong>Reading map</strong>'+''.join('<span>§'+str(n)+' · '+E(values[0])+'</span>' for n,values in HEADINGS.items() if n in chosen)+'</nav>'
+    result+='<nav class="toc"><strong>Reading map</strong>'+''.join('<span><a href="#section-'+str(n)+'">§'+str(n)+' · '+E(values[0])+'</a></span>' for n,values in HEADINGS.items() if n in chosen)+'</nav>'
   return result
 def build(mode,selection,scope,title,pdf,editorial_titles=False):
   c=MODES[mode];chosen=set(int(s) for s in selection)
