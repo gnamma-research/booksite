@@ -1,0 +1,27 @@
+name: Build version-bound precise PDF word maps once
+on:
+  push:
+    branches: [feature/personal-pdf-search-precise-highlights-20261021]
+    paths: ['.github/workflows/build-personal-anchor-maps-once.yml']
+permissions:
+  contents: write
+jobs:
+  anchors:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Install PDF layout engine
+        run: pip install -r daruri/build/requirements.txt
+      - name: Measure word positions in all published editions
+        run: python daruri/build/build_personal_anchor_maps.py --publish
+      - name: Commit checksum-bound maps on isolated feature branch
+        run: |
+          git config user.name "gnamma-research-ci"
+          git config user.email "gnamma-research-ci@users.noreply.github.com"
+          git add daruri/personal-anchor-maps
+          git commit -m "Publish verified English and Arabic PDF word geometry maps"
+          git push origin HEAD:feature/personal-pdf-search-precise-highlights-20261021
