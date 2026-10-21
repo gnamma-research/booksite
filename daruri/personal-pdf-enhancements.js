@@ -76,11 +76,11 @@
     return reference;
   }
   function allocateMarginTop(existing,preferred,pageHeight){
-    const min=57,max=pageHeight-50,markHeight=12;
+    const min=57,max=pageHeight-50,markHeight=20;
     if(max<=min)throw Error('Source PDF page has no margin room for personal references');
     const wanted=Math.min(max,Math.max(min,Number(preferred)||min));
-    for(let step=0;step<=13;step++){
-      const choices=step?[wanted+14*step,wanted-14*step]:[wanted];
+    for(let step=0;step<=16;step++){
+      const choices=step?[wanted+21*step,wanted-21*step]:[wanted];
       for(const point of choices){
         if(point<min||point>max)continue;
         if(existing.every(v=>Math.abs(v-point)>=markHeight+2)){
@@ -104,7 +104,9 @@
       color:rgb(0.93,0.965,0.96),borderColor:rgb(0.24,0.46,0.48),
       borderWidth:0.65,opacity:0.96});
     page.drawText(label,{x:x+3.3,y:y+2.1,size,font,color:rgb(0.14,0.35,0.38)});
-    attachLink(pdf,page,targetPage,[x,y,x+width,y+h],targetTop);
+    // The invisible tap region is larger than the modest printed P reference,
+    // without overlapping the adjacent 21-point marker slots.
+    attachLink(pdf,page,targetPage,[x-1,y-4,x+Math.max(width,26),y+h+4],targetTop);
     return true;
   }
   function drawLinkedHighlight(pdf,page,matched,targetPage,targetTop){
