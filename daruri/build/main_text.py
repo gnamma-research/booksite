@@ -198,12 +198,13 @@ def _resolve_anchor(text: str, descriptor: Mapping[str, Any], context: str) -> i
 
 
 class _Renderer:
-    def __init__(self, book: Mapping[str, Any], quran_data: Any, hadith_data: Any, edition: str):
+    def __init__(self, book: Mapping[str, Any], quran_data: Any, hadith_data: Any, edition: str, show_editorial_titles: bool = False):
         if edition not in EDITIONS:
             raise ValueError(f'Unknown edition {edition!r}; expected {sorted(EDITIONS)}')
         self.book = book
         self.edition = edition
         self.bilingual = edition in {'scholarly', 'study'}
+        self.show_editorial_titles = bool(show_editorial_titles and edition != 'scholarly')
         self.ar_field = 'ar' if edition == 'arabic' else 'vocalized'
         self.notes = _book_notes(book)
         self.quran = _quran_notes(quran_data)
@@ -464,9 +465,14 @@ class _Renderer:
                 output.append(f'<h1 class="colophon-title">{record_label}</h1>')
             output.append(self._source_heading(section))
             marker_anchor = f' id="section-{key}"' if not section.get('headingAr') and not section.get('headingEn') else ''
+            extra_title = (
+                '<h2 class="editorial-title" data-editorial-title="true">'
+                + escape(str(key) + '. ' + str(section.get('title','')))
+                + '</h2>'
+            ) if self.show_editorial_titles and key != 'colophon' else ''
             output.append(
-                '<header class="section-header">'
-                f'<p class="editorial-meta"{marker_anchor}>{escape(self._metadata(section))}</p></header>'
+                '<header class="section-header">' + extra_title
+                + f'<p class="editorial-meta"{marker_anchor}>{escape(self._metadata(section))}</p></header>'
             )
             if self.bilingual and self.edition != 'study':
                 output.append('<table class="parallel-text"><tbody>')
@@ -503,9 +509,9 @@ class _Renderer:
         return ''.join(output)
 
 
-def render_main(book: Mapping[str, Any], quran_data: Any, hadith_data: Any, edition: str) -> str:
+def render_main(book: Mapping[str, Any], quran_data: Any, hadith_data: Any, edition: str, show_editorial_titles: bool = False) -> str:
     """Return the complete main-text fragment, including the separate colophon."""
-    return _Renderer(book, quran_data, hadith_data, edition).render()
+    return _Renderer(book, quran_data, hadith_data, edition, show_editorial_titles=show_editorial_titles).render()
 
 
 class _CoverageParser(HTMLParser):
