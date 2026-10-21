@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Refresh the Darūrī reader · Gnamma</title>
+<style>
+:root{color-scheme:light;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#293d3c;background:#f3f1ec}
+*{box-sizing:border-box}body{min-height:100svh;display:grid;place-items:center;margin:0;padding:24px}
+main{width:100%;max-width:560px;background:white;border:1px solid #ddd8ce;border-radius:18px;padding:clamp(20px,5vw,38px);box-shadow:0 10px 35px #293d3c10}
+.eyebrow{color:#537673;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+h1{font-size:clamp(1.55rem,5vw,2.15rem);line-height:1.18;margin:.7em 0 .55em}
+p{font-size:1rem;line-height:1.65;color:#3e504f;margin:0 0 1.1rem}
+button{display:block;width:100%;border:0;border-radius:11px;padding:15px 18px;background:#295957;color:#fff;font:600 1rem ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;cursor:pointer;min-height:48px}
+button:disabled{opacity:.62;cursor:progress}button:focus-visible,a:focus-visible{outline:3px solid #9aa84b;outline-offset:3px}
+a{color:#315f6a;text-decoration:underline;text-underline-offset:3px}
+#status{margin-top:16px;font-size:.92rem;min-height:1.5em}small{display:block;color:#646c65;font-size:.83rem;line-height:1.55;margin-top:16px}
+</style>
+</head>
+<body>
+<main>
+<div class="eyebrow">Gnamma Research · Darūrī</div>
+<h1>Refresh your reader</h1>
+<p>If Section 1 still shows the old Qurʾānic brackets, your browser may be using a previously saved offline copy of the website.</p>
+<p>This refresh removes <strong>only Darūrī's saved website/offline cache</strong>, reinstalls the current reader when you open it, and keeps your personal notes, bookmarks and preferences intact. You will need an internet connection.</p>
+<button id="refresh" type="button">Refresh and open Section 1</button>
+<div id="status" role="status" aria-live="polite"></div>
+<small>It does not erase localStorage, IndexedDB, personal notes or files. You can also <a id="open-direct" href="daruri/?gnamma-refresh=20261021-qinline4#section=1">open the published Section 1 reader directly</a>.</small>
+</main>
+<script>
+(() => {
+  'use strict';
+  const button = document.getElementById('refresh');
+  const status = document.getElementById('status');
+  const readerBase = new URL('daruri/', location.href);
+  const target = () => {
+    const url = new URL(readerBase.href);
+    url.searchParams.set('gnamma-refresh', '20261021-qinline4-' + Date.now());
+    url.hash = 'section=1';
+    return url;
+  };
+  document.getElementById('open-direct').href = target().href;
+  button.addEventListener('click', async () => {
+    if (button.disabled) return;
+    button.disabled = true;
+    status.textContent = 'Removing only saved Darūrī site assets…';
+    let cleared = 0, stopped = 0;
+    try {
+      if ('caches' in window) {
+        const names = await caches.keys();
+        for (const name of names) {
+          // Each Darūrī offline release uses daruri-* cache names.
+          // Never clear an unrelated app's cache or browser storage.
+          if (name.startsWith('daruri-') && await caches.delete(name)) cleared++;
+        }
+      }
+      if ('serviceWorker' in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        for (const registration of registrations) {
+          // This page sits outside /daruri/, so its own load is not
+          // intercepted by an outdated Darūrī service worker.
+          if (registration.scope.startsWith(readerBase.href)
+              && await registration.unregister()) stopped++;
+        }
+      }
+      status.textContent = 'Refreshing the reader…';
+    } catch (error) {
+      // Cached artifacts can still be bypassed by the unique query URL.
+      status.textContent = 'Opening a fresh reader URL…';
+    }
+    location.assign(target().href);
+  });
+})();
+</script>
+</body>
+</html>
