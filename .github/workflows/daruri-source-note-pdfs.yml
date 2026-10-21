@@ -1,0 +1,64 @@
+name: Daruri source-note PDF QA and publication
+
+on:
+  push:
+    branches: [feature/quran-notes-typography-20261021]
+    paths:
+      - 'daruri/build/**'
+      - 'daruri/qa/refresh_note_pdf_manifest.py'
+      - '.github/workflows/daruri-source-note-pdfs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daruri-source-note-pdfs-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out isolated feature branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Prepare Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install WeasyPrint system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b libgdk-pixbuf-2.0-0
+      - name: Install pinned PDF renderer and verifier
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r daruri/build/requirements.txt
+          python -m pip install 'PyMuPDF>=1.24,<2'
+      - name: Rebuild all five PDFs from the current checked-out reader
+        run: |
+          python daruri/build/build_editions.py --output-dir /tmp/daruri-source-note-build
+      - name: Validate notes, source URIs, outlines, and page stability
+        run: |
+          python daruri/qa/refresh_note_pdf_manifest.py --output-dir /tmp/daruri-source-note-build --site-dir daruri
+      - name: Commit only verified PDF binaries and matching manifest
+        run: |
+          git config user.name 'gnamma-research-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add daruri/daruri.pdf daruri/daruri-study.pdf daruri/daruri-english.pdf daruri/daruri-arabic.pdf daruri/daruri-arabic-vowelled.pdf daruri/pdf-editions-manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Release source-note typography PDF QA outputs [skip ci]'
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
+      - name: Preserve build evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-source-note-pdfs-qa
+          path: |
+            /tmp/daruri-source-note-build/*metadata.json
+            /tmp/daruri-source-note-build/source-note-pdf-qa.json
+          if-no-files-found: warn
