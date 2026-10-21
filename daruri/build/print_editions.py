@@ -18,7 +18,7 @@ SOURCE=(DARURI/'edition-r3-20261020.js').read_text(encoding='utf-8')
 M=re.search(r'textContent\s*=\s*("(?:[^"\\]|\\.)*")\s*;',SOURCE,re.S)
 if not M:raise ValueError('Canonical edition payload missing')
 BOOK=json.loads(json.loads(M[1]))
-SECTIONS={s['id']:s for s in BOOK['sections'] if isinstance(s['id'],int)}
+SECTIONS={int(s['id']):{**s,'id':int(s['id'])} for s in BOOK['sections'] if str(s['id']).isdigit()}
 assert list(SECTIONS)==list(range(1,259))
 assert sum(len(s['segments']) for s in SECTIONS.values())==414
 PARTS=[
