@@ -348,22 +348,42 @@ function create(ctx){
  }
  function showEditor(target,existing){
   editor=existing||null;const t=target||existing?.target||null;
+  editorOriginal={title:existing?.title||'',body:existing?.body||''};
   const shade=document.createElement('div');shade.className='gn-rd-editor-shade';shade.id='gn-rd-editor-shade';
-  shade.innerHTML='<section class="gn-rd-editor" role="dialog" aria-modal="true" aria-labelledby="gn-rd-editor-title" tabindex="-1"><header><h2 id="gn-rd-editor-title">'+(existing?'Edit personal note':'Add personal note')+'</h2><button type="button" data-rd="close-editor" aria-label="Close editor">×</button></header><p class="gn-rd-source-label">'+esc(subOf(t))+'</p>'+(t?'<blockquote>'+esc(short(titleOf(t),350))+'</blockquote>':'')+'<label>Title <small>(optional)</small><input id="gn-rd-note-title" maxlength="240" placeholder="Give this thought a short title" value="'+esc(existing?.title||'')+'"></label><label>Your note<textarea id="gn-rd-note-body" rows="7" maxlength="30000" placeholder="Write your observation, question or comparison…" dir="auto">'+esc(existing?.body||'')+'</textarea></label><footer><button type="button" data-rd="close-editor">Cancel</button><button type="button" class="gn-rd-primary" data-rd="save-note">Save note</button></footer></section>';
+  const date=existing?'<p class="gn-rd-editor-date">'+esc(dateLine(existing,true))+'</p>':'';
+  shade.innerHTML='<section class="gn-rd-editor" role="dialog" aria-modal="true" aria-labelledby="gn-rd-editor-title" tabindex="-1">'+
+   '<header><h2 id="gn-rd-editor-title">'+(existing?'Edit personal note':'Add personal note')+'</h2>'+
+   '<button type="button" data-rd="close-editor" aria-label="Close editor">×</button></header>'+
+   '<p class="gn-rd-source-label">'+esc(subOf(t))+'</p>'+
+   (t?'<blockquote>'+esc(short(titleOf(t),350))+'</blockquote>':'')+date+
+   '<label>Title <small>(optional)</small><input id="gn-rd-note-title" maxlength="240" placeholder="Give this thought a short title" value="'+esc(existing?.title||'')+'"></label>'+
+   '<label>Your note<textarea id="gn-rd-note-body" rows="7" maxlength="30000" placeholder="Write your observation, question or comparison…" dir="auto">'+esc(existing?.body||'')+'</textarea></label>'+
+   '<footer><button type="button" data-rd="close-editor">Cancel</button><button type="button" class="gn-rd-primary" data-rd="save-note">Save note</button></footer></section>';
   returnFocus=document.activeElement;document.body.append(shade);document.body.classList.add('gn-rd-editor-open');
   shade.dataset.target=JSON.stringify(t);$('#gn-rd-note-body').focus({preventScroll:true});
  }
- function closeEditor(){
-  const node=$('#gn-rd-editor-shade');node?.remove();document.body.classList.remove('gn-rd-editor-open');const focus=returnFocus;returnFocus=null;editor=null;if(focus?.isConnected)focus.focus({preventScroll:true});
+ function closeEditor(force=false){
+  const node=$('#gn-rd-editor-shade');
+  if(!force&&node&&editorOriginal&&
+   ($('#gn-rd-note-body')?.value!==editorOriginal.body||$('#gn-rd-note-title')?.value!==editorOriginal.title)&&
+   !confirm('Discard unsaved changes to this note?'))return;
+  node?.remove();document.body.classList.remove('gn-rd-editor-open');
+  const focus=returnFocus;returnFocus=null;editor=null;editorOriginal=null;
+  if(focus?.isConnected)focus.focus({preventScroll:true});
  }
  function saveEditor(){
   const body=clamp($('#gn-rd-note-body')?.value,30000).trim();
   if(!body){$('#gn-rd-note-body')?.focus();ctx.notify('Write a note before saving.');return;}
   const title=clamp($('#gn-rd-note-title')?.value,240).trim()||short(body.split('\n').find(Boolean)||'Personal note',85);
   const target=JSON.parse($('#gn-rd-editor-shade')?.dataset.target||'null');
-  if(editor){editor.title=title;editor.body=body;editor.updated=Date.now();persist();ctx.notify('Personal note updated.');}
-  else upsert('note',target,body,title);
-  closeEditor();if(state.route==='bookmarks'){ui.category='notes';render();}else if(state.route==='reader')afterReader();
+  if(editor){
+   if(editor.title!==title||editor.body!==body){
+    editor.title=title;editor.body=body;editor.updated=Date.now();editor.modified=editor.updated;persist();ctx.notify('Personal note updated.');
+   }else ctx.notify('No changes to save.');
+  }else upsert('note',target,body,title);
+  closeEditor(true);
+  if(state.route==='bookmarks'){ui.category='mine';ui.sourceType='all';render();}
+  else if(state.route==='reader')afterReader();
  }
  function targetForSelection(){
   const sel=window.getSelection?.();if(!sel||sel.isCollapsed||!sel.rangeCount)return null;
