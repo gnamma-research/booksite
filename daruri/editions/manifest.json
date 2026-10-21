@@ -1,7 +1,7 @@
 {
-  "release": "20261021-a4-reading-study-bilingual-unvowelled",
+  "release": "20261021-a4-bilingual-vowels",
   "status": "verified",
-  "note": "Ten currently verified A4 Reading and Study PDFs are preserved with exact bytes and SHA-256 records. The two independently verified unvowelled bilingual Reading editions are added. Canonical scholarly PDFs, source-note text and personal annotation maps are unchanged.",
+  "note": "Verified vowelled and unvowelled bilingual Reading PDFs, with all previously approved files and reference page destinations preserved.",
   "tier_order": [
     "reading",
     "study",
@@ -18,8 +18,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 1004585,
-      "sha256": "cd5730e7da87f0c10ac605ce22d5f992636b562e0ad15d3a6f3f3f403a1629c3"
+      "bytes": 1004588,
+      "sha256": "3c5c0c3f033f52103405fa27baa0000346059be38cb7873aba791c142c44ea36"
     },
     {
       "file": "reading/daruri-reading-bilingual-titles-on.pdf",
@@ -31,8 +31,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 1109880,
-      "sha256": "9b89c15efc3e80476a3a70d503de5d82bf9e1ecdab20c8dd3d8a5f27a822fe8f"
+      "bytes": 1109886,
+      "sha256": "683b5e208b29f155a3033e1aa98d631d3cbc3688b250883b92ec980e7bb89434"
     },
     {
       "file": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
@@ -44,8 +44,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 574014,
-      "sha256": "587158f20180c0a40855ef882b19ac04b1847dd3442e699e29d016aee48f005e"
+      "bytes": 573992,
+      "sha256": "dfc94e9a2a54257e65a1aa21463e4f4ae1e7cfa44fa3e99735f58cee7f28b262"
     },
     {
       "file": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
@@ -57,8 +57,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 667531,
-      "sha256": "4465cede1376460ad85a17acb79953889c68a1b932f634cb3a99d20e2decd790"
+      "bytes": 667503,
+      "sha256": "c608f5588aa0015c2258731da3038e65bde8469ffa5b03cf7530b4d183c9d067"
     },
     {
       "file": "reading/daruri-reading-english-titles-off.pdf",
@@ -71,7 +71,7 @@
       "clickable_part_links": 0,
       "notes": "none",
       "bytes": 248490,
-      "sha256": "039f95b088ac829340631dee98bbfaf92b190dcac70c10fdec018412a3802781"
+      "sha256": "f61892727d1d62c0ce3a29a24abedce65c1949051a2851dc74c83df73153f59d"
     },
     {
       "file": "reading/daruri-reading-english-titles-on.pdf",
@@ -83,8 +83,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 335667,
-      "sha256": "9ccab86e33c58eb958a75bbd9bc6ec3a6326e80c2fd660eb5625e5a8ebc5e1d7"
+      "bytes": 335668,
+      "sha256": "15c95f937b1751fceb05154d5e6251ecfba937896f296dac9276079a94c6ada1"
     },
     {
       "file": "reading/daruri-reading-arabic-titles-off.pdf",
@@ -96,8 +96,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 295098,
-      "sha256": "c001e6548ba9f6702095f832c26ae6136af3019c65f788f5d5212a98cf29247a"
+      "bytes": 295102,
+      "sha256": "d7080acf3232f49e3ddac67ccafab62201247cc7b632d6eaefc32e78c7e94038"
     },
     {
       "file": "reading/daruri-reading-arabic-titles-on.pdf",
@@ -109,8 +109,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 394560,
-      "sha256": "7bd93ae83fde9a147db330d2db1c5fd50e0ae126dd10a343002e2b95f5ffbcc9"
+      "bytes": 394562,
+      "sha256": "29b7e42300d82201f5d5d9a9cbd06a29cbae85887f9f273d1f7e007cce440249"
     },
     {
       "file": "reading/daruri-reading-arabic-vowelled-titles-off.pdf",
@@ -123,7 +123,7 @@
       "clickable_part_links": 0,
       "notes": "none",
       "bytes": 623202,
-      "sha256": "9c2ae4465de13ecd508e03b8ab7411bcd82cf2af1ceb9a538cc938f90acb6a86"
+      "sha256": "b58b5671dec6fab070618d2387e7864a286b47188051998214e1350ba010c325"
     },
     {
       "file": "reading/daruri-reading-arabic-vowelled-titles-on.pdf",
@@ -135,8 +135,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 738639,
-      "sha256": "7d5bd0582f2c9a153da8f1908de292131273979b074ce8ba627498004fed58fb"
+      "bytes": 738642,
+      "sha256": "fca76e1160a3aebc2eeb9a1c707c49599fc95db618abcd89c67c31ea474368b1"
     },
     {
       "file": "study/daruri-study-bilingual-titles-off.pdf",
@@ -148,8 +148,8 @@
       "links": 1879,
       "clickable_part_links": 0,
       "notes": "selected",
-      "bytes": 1655423,
-      "sha256": "638a1a7cac0811d54a2ac9486b6457e33be852b9423f5e3d1c180ed643c11e5f"
+      "bytes": 1655424,
+      "sha256": "2817dd250c002e3e3b1c1b9c9f81bd445de02248ffce952fb5c1d94f48faee40"
     },
     {
       "file": "study/daruri-study-bilingual-titles-on.pdf",
@@ -161,8 +161,8 @@
       "links": 1903,
       "clickable_part_links": 0,
       "notes": "selected",
-      "bytes": 1762262,
-      "sha256": "e2f3a73e0d379bbdc217750fce152ee9c1fd13e966028450856ebbbc3980e2f3"
+      "bytes": 1762265,
+      "sha256": "9746fad594d696bfb0e4800b3370db84a225ca0c3683402c5e6430a1d26c12e4"
     }
   ]
 }
