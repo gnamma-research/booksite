@@ -1,0 +1,141 @@
+/* Test the published-PDF-only Editions UX, using the actual reader route. */
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {chromium} from 'playwright';
+
+const base='http://127.0.0.1:8123/daruri/';
+const shots=path.resolve('test-artifacts');
+fs.mkdirSync(shots,{recursive:true});
+const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+const context=await browser.newContext({viewport:{width:1200,height:840},reducedMotion:'reduce'});
+const page=await context.newPage();
+const errors=[];
+page.on('pageerror',err=>errors.push(err.message));
+const summary=page.locator('.gn-es-spec');
+const availability=page.locator('.gn-es-availability');
+const read=page.locator('[data-es-action=read]');
+const download=page.locator('[data-es-action=download]');
+const print=page.locator('[data-es-action=print]');
+const opened=async(category)=>{
+  await page.locator('.gn-es-custom-trigger').click();
+  await page.getByRole('tab',{name:category,exact:true}).click();
+};
+const select=async(group,value)=>{
+  await page.locator('[data-es-'+group+'="'+value+'"]').click();
+};
+const expectStatus=async status=>assert.equal(await availability.getAttribute('data-es-status'),status);
+const link=()=>download.getAttribute('href');
+try{
+  await page.goto(base+'#editions',{waitUntil:'domcontentloaded',timeout:35000});
+  await page.locator('.gn-es').waitFor({timeout:30000});
+  await page.waitForFunction(()=>window.GnammaEditions?.__getPublicationSelection?.().resolution==='ready',{timeout:30000});
+  assert.equal(await page.locator('.gn-es-edition-tabs [role=tab]').count(),3);
+  assert.deepEqual(await page.locator('.gn-es-tab').allTextContents(),['Reading','Study','Reference']);
+  assert.equal(await page.locator('.gn-es-personal-action').count(),0,'No personal edition or fourth tab');
+  assert.equal(await page.locator('.gn-es-legacy').isVisible(),false,'Legacy custom printer is not a visible public PDF option');
+  assert.equal(await page.locator('.gn-es-custom').isVisible(),false,'Custom settings are collapsed');
+  assert.match(await summary.innerText(),/Reading · Bilingual · Vowelled/);
+  assert.match(await summary.innerText(),/A4/);
+  assert.match(await summary.innerText(),/Publisher notes: None · My notes: Off · Bookmarks: Off/);
+  await expectStatus('ready');
+  assert.match(await link(),/editions\/reading\/daruri-reading-bilingual-titles-off\.pdf\?v=[0-9a-f]+$/);
+  assert.equal(await read.getAttribute('href'),await print.getAttribute('href'));
+  assert.equal(await print.getAttribute('target'),'_blank');
+  assert.equal(await download.getAttribute('download'),'daruri-reading-bilingual-titles-off.pdf');
+  const toggles=page.locator('.gn-es-text-switches');
+  await toggles.getByRole('button',{name:'Arabic vowel marks'}).click();
+  assert.match(await summary.innerText(),/Unvowelled/);
+  assert.match(await link(),/bilingual-unvowelled-titles-off\.pdf\?v=[0-9a-f]+$/);
+  await toggles.getByRole('button',{name:'Include Arabic'}).click();
+  assert.equal(await toggles.getByRole('button',{name:'Arabic vowel marks'}).isVisible(),false);
+  assert.match(await link(),/reading-english-titles-off\.pdf\?v=/);
+  assert.equal(await toggles.getByRole('button',{name:'Include English'}).isDisabled(),true,
+    'The final active language cannot be switched off');
+  await toggles.getByRole('button',{name:'Include Arabic'}).click();
+  assert.equal(await toggles.getByRole('button',{name:'Arabic vowel marks'}).isVisible(),true);
+  assert.equal(await toggles.getByRole('button',{name:'Arabic vowel marks'}).getAttribute('aria-pressed'),'false',
+    'Vowel state survives toggling Arabic off and on');
+  await opened('Layout');
+  assert.equal(await page.locator('.gn-es-options [data-es-section="layout"]').isVisible(),true);
+  assert.equal(await page.locator('.gn-es-options [data-es-section="notes"]').isVisible(),false);
+  assert.match(await summary.innerText(),/A4/,'Document summary remains visible while customizing');
+  await select('headings','editorial');
+  assert.match(await link(),/bilingual-unvowelled-titles-on\.pdf\?v=/);
+  await select('layout','stacked');
+  await expectStatus('unavailable');
+  assert.equal(await download.getAttribute('href'),null,'No substitute PDF for an unpublished layout');
+  assert.equal(await read.getAttribute('aria-disabled'),'true');
+  assert.match(await availability.innerText(),/Stacked bilingual layout has not been published/);
+  await select('layout','parallel');
+  await expectStatus('ready');
+  await page.getByRole('tab',{name:'Content',exact:true}).click();
+  await select('scope','part');
+  assert.equal(await page.locator('[data-es-part-row]').isVisible(),true);
+  assert.equal(await page.locator('[data-es-lesson-row]').isVisible(),false);
+  assert.match(await summary.innerText(),/I · Rulings/);
+  await expectStatus('unavailable');
+  assert.equal(await download.getAttribute('href'),null);
+  await select('scope','full');
+  await expectStatus('ready');
+  await page.getByRole('tab',{name:'Notes',exact:true}).click();
+  assert.equal(await page.locator('[data-es-section="layout"]').isVisible(),false);
+  await select('notes','selected');
+  await expectStatus('unavailable');
+  assert.match(await availability.innerText(),/chosen publisher-note profile is not published/);
+  await select('notes','none');
+  await page.locator('[data-es-personal="personalNotes"]').click();
+  assert.match(await summary.innerText(),/My notes: On/);
+  assert.equal(await page.locator('.gn-es-private-hint').isVisible(),true);
+  assert.match(await page.locator('.gn-es-personal-link').getAttribute('href'),/personal-export\.html$/);
+  await expectStatus('ready');
+  assert.match(await availability.innerText(),/personal notes not included/);
+  await page.locator('[data-es-category="layout"]').click();
+  assert.match(await summary.innerText(),/My notes: On/,'The note state stays visible outside Notes');
+  await page.locator('.gn-es-custom-trigger').click();
+  assert.equal(await page.locator('.gn-es-custom').isVisible(),false);
+  assert.match(await summary.innerText(),/My notes: On/,'The note state remains visible with Customize closed');
+  await page.getByRole('tab',{name:'Study',exact:true}).click();
+  await expectStatus('ready');
+  assert.match(await summary.innerText(),/Study · Bilingual · Vowelled/);
+  assert.match(await summary.innerText(),/Publisher notes: Selected/);
+  assert.match(await link(),/study\/daruri-study-bilingual-titles-off\.pdf\?v=/);
+  assert.equal(await page.locator('.gn-es-study-guide').isVisible(),true);
+  await toggles.getByRole('button',{name:'Arabic vowel marks'}).click();
+  await expectStatus('unavailable');
+  assert.match(await availability.innerText(),/unvowelled bilingual Study PDF is not yet published/);
+  await page.getByRole('tab',{name:'Reference',exact:true}).click();
+  await expectStatus('ready');
+  assert.match(await summary.innerText(),/Reference · Bilingual · Vowelled/);
+  assert.match(await summary.innerText(),/Publisher notes: Full/);
+  assert.match(await link(),/^daruri\.pdf\?v=[0-9a-f]+$/);
+  await opened('Notes');
+  await select('notes','none');
+  await expectStatus('unavailable');
+  assert.match(await availability.innerText(),/canonical Reference PDF includes its full publisher apparatus/);
+  await select('notes','full');
+  await expectStatus('ready');
+  await page.getByRole('tab',{name:'Reading',exact:true}).click();
+  assert.match(await summary.innerText(),/My notes: On/,'Each edition preserves its independent settings');
+  assert.match(await summary.innerText(),/Unvowelled/);
+  await page.screenshot({path:path.join(shots,'edition-published-reading-desktop.png'),fullPage:true});
+  await page.setViewportSize({width:390,height:844});
+  await page.screenshot({path:path.join(shots,'edition-published-reading-mobile.png'),fullPage:true});
+  await page.getByRole('tab',{name:'Reference',exact:true}).click();
+  await page.screenshot({path:path.join(shots,'edition-published-reference-mobile.png'),fullPage:true});
+  const geometry=await page.evaluate(()=>({
+    viewport:innerWidth,
+    docScrollWidth:document.documentElement.scrollWidth,
+    minButtonHeight:Math.min(...[...document.querySelectorAll('.gn-es button')].filter(x=>!x.hidden&&x.getClientRects().length).map(x=>x.getBoundingClientRect().height))
+  }));
+  assert.ok(geometry.docScrollWidth<=geometry.viewport+2,'390px overflow '+JSON.stringify(geometry));
+  assert.ok(geometry.minButtonHeight>=40,'Touch size '+JSON.stringify(geometry));
+  await page.setViewportSize({width:320,height:700});
+  const narrow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
+  assert.ok(narrow<=2,'320px overflow '+narrow);
+  assert.ok(errors.length===0,'Reader JS errors: '+errors.join('; '));
+  console.log('PASS: three text tabs, no personal edition, exact prebuilt PDFs, unavailable choices fail closed, state summary, notes, custom subpanels, and responsive mobile '+JSON.stringify(geometry));
+}finally{
+  await context.close();
+  await browser.close();
+}
