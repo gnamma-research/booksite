@@ -23,7 +23,7 @@ assert(found,'Arabic vowel marks must not prevent exact phrase match');
 assert.equal(found.page,2);
 assert(found.rects[0].x0<=30&&found.rects[0].x1>=240);
 const ambiguous=[...en,...en.map(w=>[w[0],1,w[2],w[3]+45,w[4],w[5]+45])];
-assert.equal(api.sourceMatch(ambiguous,{quote:'proceed, after praising God'}),null,'ambiguous exact quote needs safe section fallback');
+assert.equal(api.sourceMatch(ambiguous,{quote:'proceed, after praising God',prefix:'',suffix:''}),null,'ambiguous exact quote needs safe section fallback');
 assert(api.tidy('الْحَمْدُ لِلَّهِ').includes('الحمدلله'));
 const ex=fs.readFileSync(path.join(root,'personal-export.js'),'utf8');
 assert(ex.includes('sourceMatch(words,target)')&&ex.includes('addHighlight(pdf'));
