@@ -70,7 +70,7 @@ try {
   await page.setViewportSize({width:390,height:844});
   await page.screenshot({path:path.join(out,'editions-mobile.png'),fullPage:true});
   await page.setViewportSize({width:1200,height:900});
-  await readingDrawer.locator('summary').click();
+  await readingDrawer.locator(':scope > summary').click();
   const custom=page.locator('[data-ep-tier="reading"]');
   const sample=custom.locator('.gn-ed-preview-details');
   assert.ok(!(await sample.getAttribute('open')), 'Print preview starts collapsed');
