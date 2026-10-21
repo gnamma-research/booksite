@@ -20,6 +20,10 @@ HTML = """<!doctype html><html lang="en"><head><meta name="viewport" content="wi
 </head><body><h1>Daruri §38 · Notes</h1><main class="gn-unified-notes">
 <article class="gn-note-entry" data-note-id="QUR-R038-Q001"><p>Direct quotation from al-Nisāʾ.</p>
 <span class="source-note-links">Sources: <a href="https://quran.com/4/43">al-Nisāʾ 4:43</a></span></article>
+<article class="gn-note-entry" data-note-id="QUR-R001-Q049"><p>Possible verbal echo, not a quotation.</p>
+<span class="source-note-links"><a href="https://quran.com/55/4">al-Raḥmān 55:4</a></span></article>
+<article class="gn-note-entry" data-note-id="QUR-R001-Q050"><p>Possible verbal echo, not a quotation.</p>
+<span class="source-note-links"><a href="https://quran.com/6/149">al-Anʿām 6:149</a></span></article>
 <article class="gn-note-entry" data-note-id="QUR-R082-Q007"><p>Direct quotation from al-Tawbah.</p>
 <span class="source-note-links"><a href="https://quran.com/9/122">https://quran.com/9/122</a></span></article>
 <article class="gn-note-entry" data-note-id="QUR-R045-Q002"><p>Direct quotation from al-Baqarah.</p>
@@ -43,9 +47,12 @@ def exercise(engine, browser, width, mobile):
     page.add_script_tag(path=str(DARURI / 'source-note-ui.js'))
     page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-section1-qparallels1'")
     links = page.locator('a.gn-source-icon-link')
-    assert links.count() == 4
+    assert links.count() == 6
     verses = page.locator('.gn-verse-source-excerpt')
-    assert verses.count() == 1
+    assert verses.count() == 3
+    assert 'possible verbal allusion' in page.locator('[data-note-id="QUR-R001-Q049"] .gn-verse-source-excerpt').inner_text()
+    assert 'not a quotation' in page.locator('[data-note-id="QUR-R001-Q050"] .gn-verse-source-excerpt').inner_text()
+    assert page.locator('a[href="https://quran.com/33/40"]').count() == 0
     assert '﴿' in verses.first.inner_text() and '﴾' in verses.first.inner_text()
     assert 'https:' not in page.locator('.gn-unified-notes').inner_text()
     link = links.first
@@ -83,14 +90,14 @@ def exercise(engine, browser, width, mobile):
       a.innerHTML='<p>Second note instance</p><span class="source-note-links"><a href="https://quran.com/4/43">Verse</a></span>';
       document.body.appendChild(a);return a.id||'added';
     }""")
-    page.wait_for_function("document.querySelectorAll('a.gn-source-icon-link').length === 5")
-    assert page.locator('.gn-verse-source-excerpt').count() == 2, 'dynamic popup not enhanced'
+    page.wait_for_function("document.querySelectorAll('a.gn-source-icon-link').length === 7")
+    assert page.locator('.gn-verse-source-excerpt').count() == 4, 'dynamic popup not enhanced'
     page.screenshot(path=str(REPORT / f'{engine}-{width}.png'), full_page=True)
     ctx.close()
     return {'engine':engine,'width':width,'touch':mobile,'target_px':dimensions['width'],
             'native_callout_css':dimensions['callout'],'external_uri':True,
             'touch_focus_hidden':mobile,'keyboard_focus':True,'no_horizontal_overflow':True,
-            'verified_quotes':1,'dynamic_note_updates':True,'contextmenu_not_cancelled':True}
+            'verified_quotes':1,'possible_verbal_comparisons':2,'dynamic_note_updates':True,'contextmenu_not_cancelled':True}
 
 def smoke_full_site(browser, port, engine):
     ctx=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True)
@@ -113,8 +120,20 @@ def smoke_full_site(browser, port, engine):
     assert link.get_attribute('href')=='https://quran.com/4/43'
     assert page.locator('#qa-current-site-source-note .gn-verse-source-excerpt').count() == 1
     assert link.evaluate("e=>e.dispatchEvent(new MouseEvent('contextmenu',{bubbles:true,cancelable:true}))")
+    # On the actual reader route, both restored notes must open from §1.
+    page.goto(f'http://127.0.0.1:{port}/daruri/#section=1', wait_until='domcontentloaded', timeout=90000)
+    page.locator('#reader [data-gn-notes-open]').first.click(timeout=30000)
+    for identifier in ('QUR-R001-Q049','QUR-R001-Q050'):
+        quote=page.locator(f'.gn-note-entry[data-note-id="{identifier}"] .gn-verse-source-excerpt')
+        assert quote.count()==1, f'Missing qualified source panel {identifier}'
+        assert 'possible verbal allusion' in quote.inner_text()
+        assert 'not a quotation' in quote.inner_text()
+    assert page.locator('.gn-note-entry[data-note-id="QUR-R001-Q051"]').count()==0
+    assert not page.evaluate('document.documentElement.scrollWidth > innerWidth')
+    page.screenshot(path=str(REPORT / f'live-section1-{engine}-390.png'),full_page=True)
     ctx.close()
-    return {'full_site_loaded':engine,'dynamic_r001_link_present':True}
+    return {'full_site_loaded':engine,'section1_two_qualified_parallels':True,
+            'section1_33_40_withheld':True,'dynamic_source_link_present':True}
 
 def main():
     server=http.server.ThreadingHTTPServer(('127.0.0.1',0),QuietHTTP)
