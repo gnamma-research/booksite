@@ -15,6 +15,10 @@ on:
     paths:
       - ".github/workflows/daruri-editions-qa.yml"
       - "daruri/editions/**"
+      - "daruri/build/print_editions.py"
+      - "daruri/build/publish_editions.py"
+      - "daruri/build/publish_unvowelled_reading.py"
+      - "daruri/download-bundle.js"
       - "daruri/editions.js"
       - "daruri/editions-icons.js"
       - "daruri/editions-icons.css"
