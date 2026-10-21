@@ -59,12 +59,15 @@ test('long selected phrases also require complete notes appendix',()=>{
  const quoted=[{kind:'note',body:'brief',target:{quote:'q'.repeat(2000)}}];
  assert(model.requiresAppendix(quoted,{annotations:true,appendix:false,dates:false}));
 });
-test('small notes can use comments without requiring an appendix',()=>assert(!model.requiresAppendix([{kind:'note',body:'brief'}],{annotations:true,appendix:false,dates:false})));
+test('short notes cannot escape without endnote links in the new exporter',()=>{
+ assert(js.includes("if(!p.appendix)throw Error"));
+ assert(js.includes('const missingAppendix=has&&!p.appendix'));
+});
 test('no notes is the explicit default',()=>assert(/name="pe-mode" value="none" checked/.test(html)));
 test('full notes appendix is enabled by default',()=>assert(/id="pe-appendix" checked/.test(html)));
 test('PDF page mapper never guesses exact quotation coordinates',()=>{
- assert(js.includes('Native PDF comments are section-level'));
- assert(js.includes("if(!p.appendix&&skipped.length)throw Error("));
+ assert(js.includes('P1, P2...'));
+ assert(js.includes("if(!p.appendix)throw Error("));
 });
 test('verified metadata agrees with every published PDF edition',()=>{
  const editions=Object.entries(editionManifest.files||{});
