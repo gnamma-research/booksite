@@ -235,3 +235,5 @@ body.hide-notes:not(.focus-mode) ::highlight(gn-rd-note){background:rgba(61,135,
 .gn-rd-visuals-row label{display:flex;align-items:center;gap:10px;font-size:.85rem;font-weight:600;cursor:pointer}
 .gn-rd-visuals-row input{width:18px;height:18px;flex:none;accent-color:var(--accent,#406c60)}
 .gn-rd-visuals-row small{display:block;margin:5px 0 0 28px;color:var(--muted,var(--soft,#5e6a63));font-size:.73rem}
+
+@media(max-width:760px){.gn-rd-mobile-detail-open .gn-rd-mobile-source-back{display:inline-flex;margin:0 0 12px 7px;min-height:44px}}
