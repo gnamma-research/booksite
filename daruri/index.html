@@ -3805,8 +3805,8 @@ body:not(.reading-active) .reading-return-bar{
 
 </div>
 </div>
-</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=20261021-section1-qparallels1"></script><script defer src="download-bundle.js?v=20261021-rd-simplified-cache2"></script>
-<script src="source-reference-data.js?v=20261021-qbrackets3"></script>
+</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=20261021-section1-qparallels1"></script><script defer src="download-bundle.js?v=20261021-rd-simplified-cache2-qinline4"></script>
+<script src="source-reference-data.js?v=20261021-qinline4"></script>
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
 <script src="study-guide-data.js?v=20261021-study-path1"></script>
@@ -3825,9 +3825,46 @@ const notes = new Map(BOOK.notes.map(n=>[n.id,n]));
 // Source references keep stable IDs; their inline labels are local to the section.
 function noteKindLabel(note){return note.kindLabel||({'quran-source':'Qur’an source','hadith-source':'Hadith source',crux:'Textual',editorial:'Editorial'}[note.kind]||note.kind)}
 function sourceReferenceItems(note){return note.source_type==='quran'?(note.references||[]).map(r=>({reference:r.label_en,url:r.url})):(note.source_references||[])}
+/* Section 1 source notes are fully legible even when optional enhancement JS
+   is delayed or cached. The author’s words are ordinary quotations; only
+   actual Qurʾānic wording belongs inside ﴿…﴾. This is display apparatus,
+   not a change to authorial segments, source data or downloadable PDFs. */
+const GN_SECTION1_QURAN_PAIRS=Object.freeze({
+ 'QUR-R001-Q049':{
+  author:'معلّم البيان',
+  lead:'Ibn Rushd’s wording ',
+  tail:' may echo Qurʾān, al-Raḥmān 55:4. This is a possible verbal allusion, not a quotation; deliberate allusion is uncertain.',
+  verse:'عَلَّمَهُ ٱلْبَيَانَ',
+  caption:'al-Raḥmān 55:4 · Qurʾānic wording (possible verbal allusion, not a quotation by Ibn Rushd)',
+  translation:'He taught him expression.',
+  explanation:'These are the Qurʾānic words, not Ibn Rushd’s exact words. The verbal resemblance does not establish that he intended to cite the verse.'
+ },
+ 'QUR-R001-Q050':{
+  author:'الحجج البالغة',
+  lead:'Ibn Rushd’s plural wording ',
+  tail:' may echo Qurʾān, al-Anʿām 6:149, which uses the singular. This is a possible verbal allusion, not a quotation or proven citation.',
+  verse:'فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ',
+  caption:'al-Anʿām 6:149 · Qurʾānic wording (possible verbal allusion, not a quotation by Ibn Rushd)',
+  translation:'With God rests the conclusive argument.',
+  explanation:'The Qurʾānic expression is singular; Ibn Rushd’s corresponding expression is plural. A deliberate allusion remains uncertain.'
+ }
+});
+function gnSection1QuranFigure(note){
+ const pair=GN_SECTION1_QURAN_PAIRS[note.id];if(!pair)return '';
+ return '<figure class="gn-verse-source-excerpt" data-source-render="native" aria-label="Qurʾānic verse comparison">'
+  +'<blockquote class="gn-quran-quotation" lang="ar" dir="rtl">'
+  +'<span class="gn-quran-bracket">﴿</span> <span class="gn-quran-words">'+esc(pair.verse)+'</span> <span class="gn-quran-bracket">﴾</span>'
+  +'</blockquote><figcaption>'+esc(pair.caption)+'</figcaption>'
+  +'<p class="gn-verse-source-translation">'+esc(pair.translation)+'</p>'
+  +'<p class="gn-verse-source-explanation">'+esc(pair.explanation)+'</p></figure>';
+}
 function formatReadingNote(note){
  const refs=sourceReferenceItems(note).filter(r=>/^https:\/\//.test(r.url));
- return formatNoteText(note.text)+(refs.length?'<span class="source-note-links">Sources: '+refs.map(r=>'<a href="'+esc(r.url)+'" target="_blank" rel="noopener noreferrer">'+esc(r.reference)+'</a>').join(' · ')+'</span>':'');
+ const pair=GN_SECTION1_QURAN_PAIRS[note.id];
+ const body=pair
+  ? esc(pair.lead)+'<span class="gn-ibn-rushd-words" dir="ltr" style="white-space:nowrap">“<bdi lang="ar" dir="rtl">'+esc(pair.author)+'</bdi>”</span>'+esc(pair.tail)
+  : formatNoteText(note.text);
+ return body+(refs.length?'<span class="source-note-links">Sources: '+refs.map(r=>'<a href="'+esc(r.url)+'" target="_blank" rel="noopener noreferrer">'+esc(r.reference)+'</a>').join(' · ')+'</span>':'');
 }
 function gnApplicationSourceNotes(app){return window.DARURI_SOURCE_REFERENCES?.applications?.[app.id]||[];}
 function gnSectionNotes(section){
@@ -3853,7 +3890,7 @@ function gnNotesCardHTML(relevant){
   const heading=source?esc(noteKindLabel(note))+(note.sourceLabel?' · '+esc(note.sourceLabel):'')+'<small class="gn-note-id">'+esc(note.id)+'</small>':esc(note.id)+' <small>'+esc(noteKindLabel(note))+'</small>';
   const app=note.application_id?apps.get(note.application_id):null;
   const scope=app?'<p class="gn-note-scope">Source for the editorial Bidāya application: '+esc(app.title)+'</p>':'';
-  return '<section class="gn-note-entry" data-note-id="'+esc(note.id)+'" data-note-kind="'+esc(note.kind)+'"><h3>'+heading+'</h3>'+scope+'<p>'+formatReadingNote(note)+'</p></section>';
+  return '<section class="gn-note-entry" data-note-id="'+esc(note.id)+'" data-note-kind="'+esc(note.kind)+'"><h3>'+heading+'</h3>'+scope+'<p>'+formatReadingNote(note)+'</p>'+gnSection1QuranFigure(note)+'</section>';
  }).join('')+'</section>').join('');
 }
 function gnApplicationSourcesHTML(app){
@@ -5808,7 +5845,7 @@ gnShowLayer=function(...args){priorScholarLayer(...args);rd?.decorate();};
 
 window.DaruriReadingStyles?.init({value:state.pageStyle,preserve:preserveVisiblePassage,onChange:value=>{state.pageStyle=value;save();}});
 applyParallelOrder();applyArabicFont();applyEnglishFont();bind();bindReaderEnhancements();applyTheme();updateScale();syncRoute();bindResponsiveRepairs();takeDictionaryReturn();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261021-rd-simplified-cache2').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261021-rd-simplified-cache2-qinline4').catch(()=>{});
 })();
 
 </script></body>

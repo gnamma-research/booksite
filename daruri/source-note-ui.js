@@ -6,7 +6,7 @@
   if (window.__gnSourceNoteUIInstalled) return;
   window.__gnSourceNoteUIInstalled = true;
 
-  const REVISION = '20261021-qbrackets3';
+  const REVISION = '20261021-qinline4';
   const ARROW = '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
   const NOTE_LINKS = '.source-note-links a[href], .gn-note-entry a[href], .gn-app-source-notes a[href], .fb-note a[href], .gn-unified-notes a[href]';
   // Qurʾānic wording is displayed separately from Ibn Rushd's own words.
@@ -164,6 +164,13 @@
     const id = card.getAttribute('data-note-id');
     const info = VERIFIED_SOURCE_EXCERPTS[id];
     if (!info) return;
+    // The reader now renders the two §1 comparisons in its own HTML.
+    // Never create a second verse panel or override its carefully distinguished
+    // authorial wording, even when the optional enhancement script loads later.
+    if (card.querySelector('.gn-verse-source-excerpt')) {
+      card.dataset.gnVerseEnhanced = '1';
+      return;
+    }
     clarifySection1Source(card, id);
     card.dataset.gnVerseEnhanced = '1';
     const quote = document.createElement('figure');
