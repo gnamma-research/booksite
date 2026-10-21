@@ -153,8 +153,9 @@ public class PhonePdfActivity extends Activity {
       final RectF r=link.getBounds().get(0);
       float centerX=r.centerX()*SCALE, centerY=r.centerY()*SCALE;
       float[] vals=new float[9];image.getImageMatrix().getValues(vals);
-      float x=centerX*vals[Matrix.MSCALE_X]+vals[Matrix.MTRANS_X]+image.getLeft();
-      float y=centerY*vals[Matrix.MSCALE_Y]+vals[Matrix.MTRANS_Y]+image.getTop();
+      int[] screen=new int[2];image.getLocationOnScreen(screen);
+      float x=centerX*vals[Matrix.MSCALE_X]+vals[Matrix.MTRANS_X]+screen[0];
+      float y=centerY*vals[Matrix.MSCALE_Y]+vals[Matrix.MTRANS_Y]+screen[1];
       Log.i(TAG,(forward?"GNAMMA_TAP_P ":"GNAMMA_TAP_BACK ")+Math.round(x)+" "+Math.round(y)+
         " TARGET "+link.getDestination().getPageNumber());
     }
