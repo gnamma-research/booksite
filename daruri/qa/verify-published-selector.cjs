@@ -36,7 +36,7 @@ for(const x of addon.files){
   assert.equal(map.entry_count,x.mapped_entries);
 }
 
-const version='20261021-public-selector1';
+const version='20261021-apparatus2';
 new vm.Script(js,{filename:'editions-selector.js'});
 const assets=['editions-selector.js','editions-selector.css'];
 for(const asset of assets){
