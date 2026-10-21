@@ -241,7 +241,7 @@ function create(ctx){
   const now=Date.now();
   if(records.length>2999){ctx.notify('Reading Desk is full; export and remove unused entries before adding more.');return null;}
   if(kind!=='note'){
-   const existing=records.find(x=>x.kind===kind&&keyOf(x.target)===keyOf(target));
+   const existing=records.find(x=>x.kind===kind&&x.target&&keyOf(x.target)===keyOf(target));
    if(existing){if(existing.deleted){const prior={deleted:existing.deleted,updated:existing.updated};existing.deleted=0;existing.updated=now;if(!persist()){Object.assign(existing,prior);return null;}ctx.notify('Restored to Reading Desk.');}else ctx.notify('Already in Reading Desk.');return existing;}
   }
   const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target});
@@ -633,7 +633,7 @@ function create(ctx){
  function actions(target,compact){
   const row=document.createElement('div');row.className='gn-rd-attach-actions'+(compact?' gn-rd-compact':'');
   const serialized=encodeURIComponent(JSON.stringify(target));
-  const stored=active().some(r=>r.kind===target.kind&&keyOf(r.target)===keyOf(target));
+  const stored=active().some(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
   row.innerHTML='<button type="button" data-rd="attach-bookmark" data-target="'+esc(serialized)+'" aria-pressed="'+stored+'">'+(stored?'✓ Saved · View':'◇ Bookmark')+'</button>'+
    '<button type="button" data-rd="attach-note" data-target="'+esc(serialized)+'">+ Add personal note</button>';
   return row;
@@ -641,7 +641,7 @@ function create(ctx){
  function syncActionStates(){
   document.querySelectorAll('[data-rd="attach-bookmark"]').forEach(btn=>{
    let target;try{target=JSON.parse(decodeURIComponent(btn.dataset.target||''));}catch(_){return;}
-   const stored=active().some(r=>r.kind===target.kind&&keyOf(r.target)===keyOf(target));
+   const stored=active().some(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
    btn.textContent=stored?'✓ Saved · View':'◇ Bookmark';btn.setAttribute('aria-pressed',String(stored));
   });
  }
@@ -1146,7 +1146,7 @@ function create(ctx){
   if(action==='attach-bookmark'||action==='attach-note'){
    let target;try{target=validateTarget(JSON.parse(decodeURIComponent(btn.dataset.target)))}catch(e){}
    if(!target){ctx.notify('Cannot bookmark this entry.');return;}
-   if(action==='attach-note')showEditor(target);else{const found=active().find(r=>r.kind===target.kind&&keyOf(r.target)===keyOf(target));if(found){if(target.section)enterDeskFromText(target.section,target.segment==null?null:target.segment,found.id);else{ui.category='all';ui.sourceType='all';ui.selected=found.id;ui.filterTarget='';ui.filterSegment=null;ui.mobileDetail=matchMedia('(max-width:760px)').matches;ctx.navigate('bookmarks');}}else upsert(target.kind,target);}
+   if(action==='attach-note')showEditor(target);else{const found=active().find(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));if(found){if(target.section)enterDeskFromText(target.section,target.segment==null?null:target.segment,found.id);else{ui.category='all';ui.sourceType='all';ui.selected=found.id;ui.filterTarget='';ui.filterSegment=null;ui.mobileDetail=matchMedia('(max-width:760px)').matches;ctx.navigate('bookmarks');}}else upsert(target.kind,target);}
    return;
   }
   if(action==='new-note'){showEditor(null);return;}
