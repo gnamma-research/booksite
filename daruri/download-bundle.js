@@ -6,7 +6,7 @@
 
   // BEGIN DARURI RELEASE ASSETS
   const RELEASE_VERSION = "daruri8-structure-20261020";
-  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css"]);
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -149,6 +149,10 @@
       ['daruri/study-guide.css', 'study-guide.css'],
       ['daruri/editions.js', 'editions.js?v=20261021-editions1'],
       ['daruri/editions.css', 'editions.css?v=20261021-editions1'],
+      ['daruri/personal-export.html', 'personal-export.html'],
+      ['daruri/personal-export.js', 'personal-export.js?v=1'],
+      ['daruri/personal-export.css', 'personal-export.css?v=1'],
+      ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/build/release/'+name+'.metadata.json','build/release/'+name+'.metadata.json']),
       ['daruri/print.css', 'print.css?v=20261020-indexprint1'],
       ['daruri/print.js', 'print.js'],
       ['daruri/lesson-print.js', 'lesson-print.js'],
