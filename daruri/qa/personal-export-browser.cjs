@@ -147,6 +147,8 @@ const file='daruri.pdf';
   const printText=await page.locator('#gnEpPacket').innerText();
   assert(printText.includes('My Reading Desk · personal observations'),'personal appendix should appear only after opting in');
   assert(printText.includes('A personal reflection'),'personal note title should appear in print packet');
+  assert(/P1/.test(printText),'Custom A4 endnotes should use the personal P1 reference system');
+  assert(!printText.includes('Personal [1]'),'Custom printout must not confuse P references with publisher footnotes');
   await page.evaluate(()=>document.body.classList.add('gn-ed-print-ready'));
   const a4bytes=await page.pdf({format:'A4',preferCSSPageSize:true,printBackground:false});
   const a4=await PDFDocument.load(a4bytes);
