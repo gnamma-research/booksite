@@ -119,6 +119,11 @@ async function checkedPdf(file,engine,contextSettings){
   assert(strip(str).includes(strip('Des idées françaises')),'Accented French text missing from Unicode layer');
   assert(strip(str).includes(strip('UnattachedSearchablePhi')),'Unattached notes must remain searchable');
   await loaded.destroy();
+  if(engine.name()==='chromium'&&!contextSettings?.viewport&&process.env.GNAMMA_QA_VISUAL_PATH){
+    const destination=path.resolve(root,process.env.GNAMMA_QA_VISUAL_PATH);
+    fs.mkdirSync(path.dirname(destination),{recursive:true});
+    fs.writeFileSync(destination,bytes);
+  }
   assert(/P1/.test(str)&&/P2/.test(str),'Personal appendix must distinguish P1/P2 from publisher notes');
   await page.locator('input[name=pe-mode][value=none]').check();
   assert(!(await page.locator('#pe-result').isVisible()),'Private download link must clear on no-notes');
