@@ -4,6 +4,14 @@ REPO="$(cd "$(dirname "$0")/../../../.." && pwd)"
 WORK="$(mktemp -d)"
 OUTPUT="$REPO/daruri/qa/phone-results/android"
 mkdir -p "$OUTPUT" "$WORK/classes" "$WORK/dex" "$WORK/assets"
+# Always collect emulator evidence, even when no tap target is reported.
+function preserve_diagnostics() {
+  adb logcat -d -s GnammaPhone:V AndroidRuntime:E ActivityManager:E > "$OUTPUT/android-log.txt" 2>&1 || true
+  adb exec-out screencap -p > "$OUTPUT/00-device-last-screen.png" 2>/dev/null || true
+  adb shell run-as org.gnamma.pnotetest cat files/phone-result.json > "$OUTPUT/android-report.json" 2>/dev/null || true
+}
+trap preserve_diagnostics EXIT
+
 cp "$REPO/daruri/qa/phone-output/personal-pdf-sample.pdf" "$WORK/assets/personal-pdf-sample.pdf"
 ANDROID_HOME="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
 BT="$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)"
@@ -29,7 +37,7 @@ adb logcat -c
 adb shell am start -W -n org.gnamma.pnotetest/.PhonePdfActivity
 function await_tap() {
   local kind="$1" iter line
-  for iter in $(seq 1 35); do
+  for iter in $(seq 1 100); do
     line="$(adb logcat -d -s GnammaPhone:I | grep -E "GNAMMA_TAP_${kind} [0-9]+ [0-9]+" | tail -1 || true)"
     if [[ -n "$line" ]]; then
       echo "$line"
@@ -38,7 +46,7 @@ function await_tap() {
     fi
     sleep 1
   done
-  adb logcat -d -s GnammaPhone:V | tail -100
+  adb logcat -d -s GnammaPhone:V AndroidRuntime:E | tail -100 >&2
   return 1
 }
 tapP="$(await_tap P | tail -1)"
