@@ -78,8 +78,9 @@ async function checkedPdf(file,engine,contextSettings){
     for(let j=0;j<annots.size();j++){
       const obj=pdf.context.lookup(annots.get(j));
       if(String(obj.lookup(PDFName.of('Subtype')))!=='/Link')continue;
-      const dest=obj.lookup(PDFName.of('Dest'),PDFArray);
-      if(!dest||dest.size()<2||!appendixRefs.has(String(dest.get(0))))continue;
+      const raw=obj.get(PDFName.of('Dest'));
+      const dest=raw?pdf.context.lookup(raw):null;
+      if(!(dest instanceof PDFArray)||dest.size()<2||!appendixRefs.has(String(dest.get(0))))continue;
       assert.equal(String(dest.get(1)),'/FitH','P link must arrive near a note heading');
       forwards++;
     }
@@ -95,8 +96,9 @@ async function checkedPdf(file,engine,contextSettings){
     for(let j=0;j<arr.size();j++){
       const a=pdf.context.lookup(arr.get(j));
       if(String(a.lookup(PDFName.of('Subtype')))!=='/Link')continue;
-      const dest=a.lookup(PDFName.of('Dest'),PDFArray);
-      if(dest&&sourceRefs.has(String(dest.get(0)))){
+      const raw=a.get(PDFName.of('Dest'));
+      const dest=raw?pdf.context.lookup(raw):null;
+      if(dest instanceof PDFArray&&sourceRefs.has(String(dest.get(0)))){
         assert.equal(String(dest.get(1)),'/FitH','Back links should return near the source passage');
         returns++;
       }
