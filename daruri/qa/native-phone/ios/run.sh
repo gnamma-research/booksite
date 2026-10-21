@@ -65,6 +65,6 @@ print("iOS native PDFKit phone report:",json.dumps(r,indent=2,ensure_ascii=False
 assert r["ok"],"iOS Simulator native PDFKit verification failed"
 assert r["forwardLinks"]>=4 and r["backLinks"]>=2
 assert r["forwardArrival"]>=r["sourcePages"]
-assert 0<=r["backArrival"]<r["sourcePages"]
+assert r["backArrival"]==7,"Return link must reach exact section 1 source page (index 7)"
 PY
 echo "PASS iPhone Simulator PDFKit: internal links, destinations, Arabic/English/French text and rendered device view"
