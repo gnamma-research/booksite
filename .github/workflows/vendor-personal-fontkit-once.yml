@@ -1,0 +1,31 @@
+name: Vendor Unicode PDF fontkit once
+on:
+  push:
+    branches: [feature/personal-pdf-search-precise-highlights-20261021]
+    paths: ['.github/workflows/vendor-personal-fontkit-once.yml']
+permissions:
+  contents: write
+jobs:
+  vendor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Bundle version-pinned Unicode font infrastructure
+        run: |
+          npm install --no-save @pdf-lib/fontkit@1.1.1
+          find node_modules/@pdf-lib/fontkit -maxdepth 2 -name '*umd*' -o -name LICENSE* | head -15
+          mkdir -p daruri/vendor
+          cp node_modules/@pdf-lib/fontkit/dist/fontkit.umd.min.js daruri/vendor/fontkit-1.1.1.umd.min.js
+          cp node_modules/@pdf-lib/fontkit/LICENSE.md daruri/vendor/LICENSE-fontkit.md
+          cp daruri/build/fonts/NotoNaskhArabic-Regular.ttf daruri/vendor/NotoNaskhArabic-Regular.ttf
+          cp daruri/build/fonts/NotoSerif-Regular.ttf daruri/vendor/NotoSerif-Regular.ttf
+          cp daruri/build/fonts/OFL-NotoNaskhArabic.txt daruri/vendor/OFL-NotoNaskhArabic.txt
+          cp daruri/build/fonts/OFL-NotoSerif.txt daruri/vendor/OFL-NotoSerif.txt
+          git config user.name "gnamma-research-ci"
+          git config user.email "gnamma-research-ci@users.noreply.github.com"
+          git add daruri/vendor
+          git commit -m "Bundle Unicode fonts and pinned fontkit for searchable private PDF appendices"
+          git push origin HEAD:feature/personal-pdf-search-precise-highlights-20261021
