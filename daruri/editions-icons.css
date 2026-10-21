@@ -186,7 +186,7 @@
 /* Keep the Visuals-like selection description in view during custom options. */
 @media screen{
   .gn-editions .gn-ed-top{
-    position:sticky;top:calc(env(safe-area-inset-top,0px) + 120px);
+    position:sticky;top:calc(env(safe-area-inset-top,0px) + 180px);
     z-index:9;background:var(--surface);padding:8px 0 10px;
   }
 }
