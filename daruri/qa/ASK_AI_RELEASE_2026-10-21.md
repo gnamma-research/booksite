@@ -1,4 +1,6 @@
-# Optional Ask AI workspace — implementation and QA (21 October 2026)
+# Archived Ask AI workspace QA — withdrawn 21 October 2026
+
+**Historical only:** The AI feature described below was removed from the active Darūrī Reader at the owner's request. Previously saved AI-assisted personal notes remain in the Reading Desk.
 
 This independent feature is meant to preserve the current Darūrī reader, text, notes, study guide, PDF apparatus, themes and navigation. It introduces **no AI API keys, database or site-paid subscriptions**.
 

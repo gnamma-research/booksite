@@ -19,7 +19,6 @@ const RD_ICON={
  bookmark:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/></svg>',
  note:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>',
  saved:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
- ai:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M11 2.5l2.25 6.25L19.5 11l-6.25 2.25L11 19.5l-2.25-6.25L2.5 11l6.25-2.25zM19.2 16l.75 2.05L22 18.8l-2.05.75L19.2 21.6l-.75-2.05-2.05-.75 2.05-.75z"/></svg>',
  close:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>'
 };
 function rdTool(label,data,icon,selected=false,filled=false){
@@ -248,14 +247,14 @@ function create(ctx){
    return sort==='created-asc'?av-bv||sourceSort(a,b):bv-av||sourceSort(a,b);
   });
  }
- function upsert(kind,target,body='',title='',aiMeta=null){
+ function upsert(kind,target,body='',title=''){
   const now=Date.now();
   if(records.length>2999){ctx.notify('Reading Desk is full; export and remove unused entries before adding more.');return null;}
   if(kind!=='note'){
    const existing=records.find(x=>x.kind===kind&&x.target&&keyOf(x.target)===keyOf(target));
    if(existing){if(existing.deleted){const prior={deleted:existing.deleted,updated:existing.updated};existing.deleted=0;existing.updated=now;if(!persist()){Object.assign(existing,prior);return null;}ctx.notify('Restored to Reading Desk.');}else ctx.notify('Already in Reading Desk.');return existing;}
   }
-  const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target,...(aiMeta?{ai:aiMeta}:{})});
+  const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target});
   if(!row)return null;
   records.unshift(row);
   if(!persist()){records.shift();return null;}
@@ -263,17 +262,6 @@ function create(ctx){
   if(state.route==='bookmarks')render();
   if(state.route==='reader')afterReader();
   return row;
- }
- function saveAIAssistedNote(data){
-  if(!data||typeof data!=='object')return {ok:false,error:'Invalid AI note.'};
-  const body=typeof data.body==='string'?data.body:'';
-  if(!body.trim()||body.length>60000)return {ok:false,error:'The AI response is empty or too long.'};
-  const target=data.target?validateTarget(data.target):null;
-  if(data.target&&!target)return {ok:false,error:'The original source could not be verified. Keep the draft and try again.'};
-  const provider=clamp(data.provider||'Unspecified AI',180);
-  const question=clamp(data.question||'',16000);
-  const entry=upsert('note',target,body,clamp(data.title||'AI-assisted note',240),{type:'ai-assisted',provider,question,importedAt:Date.now(),verified:false});
-  return entry?{ok:true,id:entry.id}:{ok:false,error:'Reading Desk could not save this note. The imported answer is still available.'};
  }
  function toggleSection(n){
   n=String(n);const row=records.find(r=>r.kind==='section'&&!r.deleted&&r.target?.section===n);
@@ -608,7 +596,6 @@ function create(ctx){
   bar.setAttribute('aria-label','Actions for selected text');bar.hidden=false;
   bar.innerHTML=rdTool('Bookmark selected words','data-rd="selection-bookmark"','bookmark')+
    rdTool('Add a personal note for selected words','data-rd="selection-note"','note')+
-   rdTool('Ask AI about selected words','data-ai-launch="1" data-ai-selection="1"','ai')+
    rdTool('Dismiss selection actions','data-rd="selection-dismiss"','close');
  }
  function hideSelection(){const bar=$('#gn-rd-selection-bar');if(bar)bar.hidden=true;}
@@ -739,7 +726,6 @@ function create(ctx){
    const attrs=' data-section="'+esc(n)+'" data-segment="'+segment+'"';
    tools.innerHTML=rdTool(bookmark?'Remove paragraph bookmark':'Bookmark paragraph','data-rd="paragraph-bookmark"'+attrs+' aria-pressed="'+bookmark+'"','bookmark',bookmark)+
     rdTool('Add personal note to paragraph','data-rd="paragraph-note"'+attrs,'note',false,notesCount>0)+
-    rdTool('Ask AI about paragraph','data-ai-launch="1" data-ai-section="'+esc(n)+'" data-ai-segment="'+segment+'"','ai')+
     (relevant.length?rdTool('View '+relevant.length+' saved items for paragraph '+(segment+1),'data-rd="view-paragraph"'+attrs,'saved',false,true):'');
   });
   markReader();decorate();syncActionStates();ensureVisualsToggle();
@@ -1279,7 +1265,7 @@ function create(ctx){
   const main=$('#mainContent');if(main){let scheduled=false;new MutationObserver(()=>{if(scheduled||decorating)return;scheduled=true;queueMicrotask(()=>{scheduled=false;decorate();});}).observe(main,{subtree:true,childList:true});}
  }
  install();
- return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records,saveAIAssistedNote,selectionTarget:()=>$('#gn-rd-selection-bar')&&!$('#gn-rd-selection-bar').hidden?selection:null};
+ return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records};
 }
 window.GnammaReadingDesk={create};
 })();
