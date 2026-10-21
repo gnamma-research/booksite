@@ -37,3 +37,29 @@ body.focus-level-3 .sg-assignment>div:first-child{flex-direction:row;flex-wrap:w
 body.focus-level-3 .sg-assignment>div:first-child>span,body.focus-level-3 .sg-assignment [data-sg-previous]{display:none}
 body.focus-level-3 .sg-assignment-actions{display:flex;flex-wrap:wrap;margin-top:8px}
 body.focus-level-3 .gn-continuous-section{scroll-margin-top:var(--sg-source-scroll-margin,180px)}
+
+
+/* Six-stage study pathway and formative checks. Inherits existing palettes. */
+.sg-pathway{margin:10px 0 24px}
+.sg-pathway>p:first-child{font:700 calc(13px * var(--font-scale,1))/1.5 var(--sans,system-ui);letter-spacing:.055em;text-transform:uppercase;color:var(--text-soft);margin-bottom:8px}
+.sg-pathway>div{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px}
+.sg-pathway a{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);padding:10px 5px;min-height:56px;border-radius:7px;text-decoration:none;font:600 calc(13px * var(--font-scale,1))/1.35 var(--sans,system-ui);min-width:0}
+.sg-pathway a small{font-variant-numeric:tabular-nums;font-size:11px;opacity:.8}.sg-pathway a span{overflow-wrap:normal}
+.sg-pathway a[aria-current="step"]{background:var(--accent-soft);color:var(--accent);border-color:var(--accent);box-shadow:inset 0 -2px var(--accent)}
+.sg-path-hint{font:calc(14px * var(--font-scale,1))/1.6 var(--sans,system-ui);color:var(--text-soft);margin:10px 0!important}
+.sg-checks>p{max-width:850px}.sg-check{margin:17px 0 20px;padding:20px 22px;border:1px solid var(--border);border-radius:9px;background:var(--surface);min-width:0}
+.sg-check legend{display:block;float:left;width:100%;font:650 calc(16px * var(--font-scale,1))/1.5 var(--sans,system-ui);color:var(--text);padding:0 0 13px}
+.sg-check legend small{display:block;color:var(--gold);font-size:calc(12px * var(--font-scale,1));text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px}
+.sg-choices{display:grid;grid-template-columns:1fr;gap:7px;clear:both;margin:10px 0 16px}
+.sg-choice{display:flex;align-items:flex-start;gap:11px;min-height:44px;padding:10px 12px;border:1px solid var(--border);border-radius:6px;cursor:pointer;font:calc(15px * var(--font-scale,1))/1.5 var(--sans,system-ui);background:var(--paper)}
+.sg-choice:has(input:checked){background:var(--accent-soft);border-color:var(--accent)}
+.sg-choice input{flex:0 0 auto;accent-color:var(--accent);margin-top:.36em;width:18px;height:18px}.sg-choice-letter{font-weight:750;flex:0 0 17px;color:var(--text-soft)}
+.sg-check-result{margin:15px 0 0;padding:15px 16px;border-left:3px solid var(--accent);background:var(--paper);border-radius:4px}
+.sg-check-result[hidden]{display:none}.sg-check-result p:last-child{margin-bottom:0}.sg-check-verdict{font-weight:700}
+.sg-check-result a{display:inline-flex;min-height:36px;align-items:center;margin-right:9px}
+.sg-stage-instruction{background:var(--paper);border-left:3px solid var(--gold);padding:13px 18px;color:var(--text-soft);margin-bottom:17px!important}
+.sg-fallback-checks{padding:15px;border:1px solid var(--border);border-radius:7px;background:var(--paper)}
+.sg-fallback-checks details{margin:10px 0}.sg-fallback-checks ol{list-style-type:upper-alpha}
+@media(max-width:760px){.sg-pathway>div{grid-template-columns:repeat(3,minmax(0,1fr))}.sg-check{padding:16px}.sg-choice{padding:12px 10px}}
+@media(max-width:370px){.sg-pathway>div{grid-template-columns:repeat(2,minmax(0,1fr))}.sg-pathway a{font-size:12px}}
+@media print{.sg-pathway,.sg-checks .sg-check>button{display:none!important}.sg-check{break-inside:avoid}.sg-check-result[hidden]{display:none!important}}
