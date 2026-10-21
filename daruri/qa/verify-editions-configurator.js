@@ -16,7 +16,7 @@ assert.ok(data);
 const lessons=JSON.parse(data[1]);
 const index=read('index.html'),sw=read('sw.js'),bundle=read('download-bundle.js');
 for(const name of ['editions.js','editions.css']){
- const route=name+'?v=20261021-readypdfs2';
+ const route=name+'?v=20261021-editiontabs-vowels-release1';
  assert.ok(index.includes(route),'Reader '+route);
  assert.ok(sw.includes(route),'Offline '+route);
  assert.ok(bundle.includes('daruri/'+name),'Download ZIP '+name);
@@ -57,6 +57,10 @@ for(const tier of ['reading','study','reference'])assert.ok(main.innerHTML.inclu
 assert.ok(main.innerHTML.indexOf('id="gn-ed-reading"')<main.innerHTML.indexOf('id="gn-ed-study"'));
 assert.ok(main.innerHTML.indexOf('id="gn-ed-study"')<main.innerHTML.indexOf('id="gn-ed-reference"'));
 assert.equal(count(main.innerHTML,'Include editorial section titles'),2);
+assert.equal(count(main.innerHTML,'role="tab"'),3,'Exactly three edition tabs');
+assert.equal(count(main.innerHTML,'role="tabpanel"'),3,'Exactly three exclusive panels');
+assert.ok(main.innerHTML.includes('data-ep-tab="reading"') && main.innerHTML.includes('aria-label="Personal PDF and Reading Desk notes"'));
+assert.equal(typeof window.GnammaEditions.setTier,'function');
 window.GnammaEditions.buildPrintable('reading');
 const reading=nodes.gnEpPacket.innerHTML;
 assert.equal(count(reading,'class="gn-ep-pair"'),414,'Every aligned bilingual source segment');
@@ -84,5 +88,5 @@ assert.equal(count(small,'class="gn-ep-editorial"'),3,'Optional titles for selec
 assert.equal(count(small,'class="gn-ep-pair"'),0,'Monolingual uses no parallel tables');
 for(const id of [4,5,6])assert.ok(small.includes('id="gn-ep-section-'+id+'"'));
 for(const id of [1,7])assert.ok(!small.includes('id="gn-ep-section-'+id+'"'));
-assert.equal(Object.keys(listeners).length,3,'One listener per event family');
+assert.equal(Object.keys(listeners).length,4,'One listener per event family including keyboard tabs');
 console.log('PASS: ordered tiers, 258 sections, 414 bilingual pairs, optional editorial headings in both tiers, monolingual range, source notes, navigation, SW and ZIP assets.');

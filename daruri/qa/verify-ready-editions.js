@@ -8,10 +8,17 @@ const root=path.resolve(__dirname,'..');
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'editions','manifest.json'),'utf8'));
 assert.equal(manifest.status,'verified');
 assert.deepEqual(manifest.tier_order,['reading','study','reference']);
-assert.equal(manifest.files.length,10);
-assert.equal(manifest.files.filter(x=>x.tier==='reading').length,8);
+assert.equal(manifest.files.length,12);
+assert.equal(manifest.files.filter(x=>x.tier==='reading').length,10);
 assert.equal(manifest.files.filter(x=>x.tier==='study').length,2);
-const safe=/^(reading|study)\/daruri-(reading|study)-(bilingual|english|arabic|arabic-vowelled)-titles-(on|off)\.pdf$/;
+for(const language of ['bilingual','bilingual-unvowelled','english','arabic','arabic-vowelled']){
+  for(const titles of [false,true]){
+    assert.equal(manifest.files.filter(f=>f.tier==='reading'&&
+      f.language===language&&f.editorial_titles===titles).length,1,
+      'One verified Reading PDF for '+language+' / titles='+titles);
+  }
+}
+const safe=/^(reading|study)\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english|arabic|arabic-vowelled)-titles-(on|off)\.pdf$/;
 const names=new Set();
 for(const file of manifest.files){
   assert.ok(safe.test(file.file),'Unsafe or malformed file: '+file.file);
@@ -28,11 +35,11 @@ const page=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const sw=fs.readFileSync(path.join(root,'sw.js'),'utf8');
 const script=fs.readFileSync(path.join(root,'editions.js'),'utf8');
 for(const ext of ['css','js']){
-  const filename='editions.'+ext+'?v=20261021-readypdfs2';
+  const filename='editions.'+ext+'?v=20261021-editiontabs-vowels-release1';
   assert.ok(page.includes(filename),'HTML route lacks '+filename);
   assert.ok(sw.includes(filename),'Offline shell lacks '+filename);
 }
 assert.ok(script.includes('editions/manifest.json') && script.includes('showReadyPDFs'));
 assert.ok(script.includes('showReadyPDFs();'));
 assert.ok(page.includes('data-route="editions"'));
-console.log('PASS: 10 verified PDF files, manifest checksums, edition links and offline shell.');
+console.log('PASS: 12 verified PDF files, all Reading EN/AR/vowel combinations, checksums, edition links and offline shell.');

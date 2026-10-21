@@ -4,6 +4,14 @@
 (() => {
   'use strict';
   const KEYS=['reading','study'];
+  const TIERS=['reading','study','reference'];
+  const TIER_LABELS={reading:'Reading',study:'Study',reference:'Reference'};
+  let activeTier='reading';
+  // Independent Reading-edition language switches; preserve vowels when Arabic is hidden.
+  const readyLanguage={en:true,ar:true,vowels:true};
+  const readyKey=()=>readyLanguage.en?(readyLanguage.ar?(readyLanguage.vowels?'bilingual':'bilingual-unvowelled'):'english'):
+    (readyLanguage.vowels?'arabic-vowelled':'arabic');
+  const readyLabel=()=>readyLanguage.en?(readyLanguage.ar?'Bilingual':'English only'):'Arabic only';
   const PARTS=[
     {id:'intro',label:'Introduction · §§1–9',ar:'المقدمة',from:1,to:9},
     {id:'rulings',label:'Part I · Rulings · §§10–61',ar:'الأحكام',from:10,to:61},
@@ -20,22 +28,82 @@
   let sectionByNumber=new Map(), noteById=new Map(), lessons=[];
   const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const attr=esc;
-  const link=(href,label)=>'<a href="'+attr(href)+'" target="_blank" rel="noopener noreferrer" class="gn-ed-action">'+label+' ↗</a>';
+  const paths={
+    book:'<path d="M12 6c-3-2-6-2-9-2v14c3 0 6 0 9 2 3-2 6-2 9-2V4c-3 0-6 0-9 2Z"/><path d="M12 6v14"/>',
+    notes:'<path d="M5 3h14v18l-4-3-4 3-3-3-3 3V3Z"/><path d="M9 8h6M9 12h6"/>',
+    library:'<path d="M4 5h5v15H4zM10 3h5v17h-5zM16 7h4v13h-4z"/>',
+    pen:'<path d="m4 20 4-1 11-11-3-3L4 16zM13 6l4 4"/>',
+    printer:'<path d="M6 8V3h12v5M6 17H4V9h16v8h-2M7 14h10v7H7zM17 11h.01"/>',
+    eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
+    download:'<path d="M12 3v12M7 10l5 5 5-5M4 18v3h16v-3"/>',
+    open:'<path d="M13 5h6v6M19 5l-9 9"/><path d="M19 13v6H5V5h6"/>',
+    settings:'<path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.5" fill="currentColor" stroke="none"/><circle cx="16" cy="17" r="2.5" fill="currentColor" stroke="none"/>'
+  };
+  const svg=name=>'<svg class="gn-ed-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+paths[name]+'</svg>';
+  const link=(href,label,name='open',download=false)=>'<a href="'+attr(href)+'" '+
+    (download?'download ':'target="_blank" rel="noopener noreferrer" ')+
+    'class="gn-ed-action" aria-label="'+attr(label)+'" data-ep-info-kind="PDF" data-ep-info-label="'+attr(label)+'">'+svg(name)+'</a>';
+  const pdfActions=(href,title)=>'<div class="gn-ed-pdf-actions">'+link(href,'Read '+title,'open')+
+    link(href,'Download '+title,'download',true)+'</div>';
+  function showInfo(kind,value,detail='') {
+    const region=host?.querySelector('.gn-editions');
+    if(!region)return;
+    const a=region.querySelector('.gn-ed-status [data-ep-info-kind]');
+    const b=region.querySelector('[data-ep-info-value]');
+    const d=region.querySelector('[data-ep-info-detail]');
+    if(a)a.textContent=kind;
+    if(b)b.textContent=value;
+    if(d)d.textContent=detail;
+  }
+  function tierDescription(tier) {
+    const panel=host?.querySelector('[data-ep-published="'+tier+'"]');
+    if(panel?.dataset.epDescription)return panel.dataset.epDescription;
+    return {reading:'Complete text · minimal apparatus',
+      study:'Selected explanatory notes',reference:'243-page scholarly reference'}[tier]||'';
+  }
+  function setTier(tier,focus=false) {
+    if(!host||!TIERS.includes(tier))return;
+    activeTier=tier;
+    const region=host.querySelector('.gn-editions');
+    if(!region)return;
+    for(const key of TIERS) {
+      const tab=region.querySelector('[data-ep-tab="'+key+'"]');
+      const panel=region.querySelector('#gn-ed-'+key);
+      if(tab) {
+        tab.setAttribute('aria-selected',String(key===tier));
+        tab.tabIndex=key===tier?0:-1;
+        tab.dataset.epTabDetail=tierDescription(key);
+      }
+      if(panel)panel.hidden=key!==tier;
+    }
+    showInfo('Edition',TIER_LABELS[tier],tierDescription(tier));
+    if(focus)region.querySelector('[data-ep-tab="'+tier+'"]')?.focus();
+  }
+  function onTabKeydown(event) {
+    const tab=event.target.closest('[data-ep-tab]');
+    if(!tab || !host?.contains(tab))return;
+    const keys=['ArrowRight','ArrowLeft','Home','End'];
+    if(!keys.includes(event.key))return;
+    event.preventDefault();
+    const current=TIERS.indexOf(tab.dataset.epTab);
+    const next=event.key==='Home'?0:event.key==='End'?TIERS.length-1:
+      (current+(event.key==='ArrowRight'?1:-1)+TIERS.length)%TIERS.length;
+    setTier(TIERS[next],true);
+  }
   const select=(tier,key,items)=>'<select data-ep-control="'+key+'" id="ep-'+tier+'-'+key+'">'+
     items.map(([value,label])=>'<option value="'+attr(value)+'"'+(String(memory[tier][key])===String(value)?' selected':'')+'>'+esc(label)+'</option>').join('')+'</select>';
-  const field=(tier,label,key,choices)=>'<label class="gn-ed-field"><span>'+label+'</span>'+select(tier,key,choices)+'</label>';
+  const field=(tier,label,key,choices)=>'<label class="gn-ed-field"><span class="gn-ed-field-name">'+label+'</span>'+select(tier,key,choices)+'</label>';
   const languages=[['bilingual','Arabic + English'],['english','English only'],['arabic','Arabic only']];
   const columns=[['parallel','Side by side / two columns'],['stacked','Stacked / one column'],['2','Two reading columns'],['1','One reading column']];
   const density=[['comfortable','Comfortable · 17 mm margins'],['balanced','Balanced · 13 mm margins'],['compact','Compact · 11 mm margins']];
   const scope=[['full','Entire work · §§1–258'],['part','One major part'],['lesson','Study Guide lesson'],['range','Section range']];
   const noteChoices={
     reading:[['none','None (shortest)'],['essential','Essential clarifications only']],
-    study:[['none','None'],['essential','Essential clarifications'],['study','Translation, interpretation & Qurʾān sources'],['sources','Study notes + hadith sources']]
+    study:[['none','None'],['essential','Essential clarifications'],['study','Study notes and Qurʾān sources']]
   };
   const personalChoices=[['none','None (default)'],['notes','My notes'],['all','My notes and bookmarks']];
   const toggleEditorial=(tier)=>'<label class="gn-ed-toggle"><input data-ep-control="editorial" type="checkbox" '+
-    (memory[tier].editorial?'checked ':'')+'/><span><strong>Include editorial section titles</strong>'+
-    '<small>Extra descriptive titles for numbered §§, clearly marked as editorial—not Ibn Rushd’s original chapter headings. The existing English editorial labels are shown even in Arabic-only output.</small></span></label>';
+    (memory[tier].editorial?'checked ':'')+'/><span class="gn-ed-field-name"><strong>Include editorial section titles</strong></span></label>';
   const controls=tier=>'<div class="gn-ed-config" data-ep-tier="'+tier+'">'+
     '<div class="gn-ed-fields">'+
     field(tier,'Language','language',languages)+
@@ -54,72 +122,134 @@
       '<label class="gn-ed-field"><span>From §</span><input data-ep-control="from" type="number" min="1" max="258" value="'+memory[tier].from+'"></label>'+
       '<label class="gn-ed-field"><span>Through §</span><input data-ep-control="to" type="number" min="1" max="258" value="'+memory[tier].to+'"></label>'+
     '</div>'+
-    '<div class="gn-ed-preview-label"><strong>A4 preview from the actual text</strong><span>Representative excerpt · exact PDF page count is determined when printing</span></div>'+
-    '<div class="gn-ed-paper" data-ep-preview="'+tier+'"></div>'+
+    '<details class="gn-ed-preview-details"><summary aria-label="Preview print layout" data-ep-info-kind="Preview" data-ep-info-label="Sample text layout">'+svg('eye')+'</summary>'+
+    '<div class="gn-ed-paper" data-ep-preview="'+tier+'"></div></details>'+
     '<p class="gn-ed-print-count" data-ep-count="'+tier+'" role="status"></p>'+
-    '<div class="gn-ed-actions"><button type="button" class="gn-ed-primary" data-ep-action="print" data-ep-tier="'+tier+'">Print / Save as PDF</button>'+
-      '<button type="button" class="gn-ed-secondary" data-ep-action="prepare" data-ep-tier="'+tier+'">Prepare full preview</button></div>'+
-    '<p class="gn-ed-small">Use your browser’s print window to print on ordinary A4 or select “Save as PDF”. Nothing is sent to a server; the selected passages are assembled in this browser.</p>'+
+    '<div class="gn-ed-actions"><button type="button" class="gn-ed-primary" data-ep-action="print" data-ep-tier="'+tier+'" aria-label="Print or save selected passages as PDF">'+svg('printer')+'</button>'+
+      '<button type="button" class="gn-ed-secondary" data-ep-action="prepare" data-ep-tier="'+tier+'" aria-label="Show full preview">'+svg('eye')+'</button></div>'+
     '<div class="gn-ed-notice" data-ep-message="'+tier+'" role="status" hidden></div>'+
   '</div>';
 
-  // Download choices appear only after the PDFs and verified manifest exist.
-  // Browser-local print/Save-as-PDF remains available independently.
+  // Published PDF selection: EN and AR are independent. The vowel-mark button
+  // is available whenever Arabic is active, including bilingual readings.
+  function readyLanguageControls() {
+    return '<div class="gn-ed-ready-language" role="group" aria-label="Reading PDF languages">'+
+      '<span class="gn-ed-field-marker" aria-hidden="true">'+svg('book')+'</span>'+
+      '<div class="gn-ed-ready-switches">'+
+      '<button type="button" class="gn-ed-lang-toggle" data-ep-ready-toggle="en" data-ep-info-kind="Language" data-ep-info-label="English" aria-label="Include English text" aria-pressed="true">EN</button>'+
+      '<button type="button" class="gn-ed-lang-toggle" data-ep-ready-toggle="ar" data-ep-info-kind="Language" data-ep-info-label="Arabic" aria-label="Include Arabic text" aria-pressed="true">AR</button>'+
+      '<button type="button" class="gn-ed-lang-toggle gn-ed-vowel-switch" data-ep-ready-toggle="vowels" data-ep-info-kind="Arabic" data-ep-info-label="Vowel marks" aria-label="Arabic vowel marks" aria-pressed="true" lang="ar" dir="rtl">عَ</button>'+
+      '</div><select class="gn-ed-native-select" data-ep-ready-lang data-ep-iconified="manual" aria-hidden="true" tabindex="-1">'+
+      [['bilingual','Bilingual · vowelled'],['bilingual-unvowelled','Bilingual · unvowelled'],
+        ['english','English only'],['arabic','Arabic only · unvowelled'],['arabic-vowelled','Arabic only · vowelled']]
+        .map(([key,label])=>'<option value="'+key+'">'+esc(label)+'</option>').join('')+
+      '</select></div>';
+  }
+  function syncReadyLanguage(panel) {
+    if(!panel)return;
+    const select=panel.querySelector('[data-ep-ready-lang]');
+    if(select)select.value=readyKey();
+    for(const button of panel.querySelectorAll('[data-ep-ready-toggle]')) {
+      const key=button.dataset.epReadyToggle;
+      button.setAttribute('aria-pressed',String(Boolean(readyLanguage[key])));
+      button.hidden=key==='vowels'&&!readyLanguage.ar;
+      button.disabled=(key==='en'&&readyLanguage.en&&!readyLanguage.ar)||
+        (key==='ar'&&readyLanguage.ar&&!readyLanguage.en);
+    }
+  }
+  function syncCustomReading() {
+    const setting=memory.reading;
+    setting.language=readyLanguage.en?(readyLanguage.ar?'bilingual':'english'):'arabic';
+    setting.vowels=readyLanguage.vowels;
+    const config=host?.querySelector('[data-ep-tier="reading"]');
+    const language=config?.querySelector('[data-ep-control="language"]');
+    const vowels=config?.querySelector('[data-ep-control="vowels"]');
+    if(language)language.value=setting.language;
+    if(vowels)vowels.checked=setting.vowels;
+    update('reading');
+    window.GnammaEditions?.syncIcons?.();
+  }
+  function changeReadyLanguage(key,panel) {
+    if(!['en','ar','vowels'].includes(key))return;
+    if((key==='en'||key==='ar')&&readyLanguage[key]&&!readyLanguage[key==='en'?'ar':'en'])return;
+    readyLanguage[key]=!readyLanguage[key];
+    syncReadyLanguage(panel);
+    syncCustomReading();
+    const select=panel?.querySelector('[data-ep-ready-lang]');
+    if(select)select.dispatchEvent(new Event('change',{bubbles:true}));
+    host.dataset.gnEpInteracted='1';
+    showInfo(key==='vowels'?'Arabic vowel marks':'Language',
+      key==='vowels'?(readyLanguage.vowels?'Vowelled':'Unvowelled'):readyLabel(),
+      panel?.dataset.epDescription||'');
+  }
   function showReadyPDFs() {
     if (!host || typeof fetch !== 'function') return;
-    fetch('editions/manifest.json?v=20261021-a4', {cache:'no-store'})
+    fetch('editions/manifest.json?v=20261021-bilingual-vowels1', {cache:'no-store'})
       .then(response => response.ok ? response.json() : null)
       .then(data => {
         if (!host || !data || data.status !== 'verified' || !Array.isArray(data.files)) return;
-        const approved = data.files.filter(file => file &&
+        const approved=data.files.filter(file=>file &&
           ['reading','study'].includes(file.tier) &&
-          ['bilingual','english','arabic','arabic-vowelled'].includes(file.language) &&
-          typeof file.editorial_titles === 'boolean' &&
-          Number.isInteger(file.pages) && file.pages > 0 &&
-          typeof file.file === 'string' &&
-          /^(reading|study)\/daruri-(reading|study)-(bilingual|english|arabic|arabic-vowelled)-titles-(on|off)\.pdf$/.test(file.file));
-        for (const tier of ['reading','study']) {
-          const panel = host.querySelector('[data-ep-published="' + tier + '"]');
-          if (!panel) continue;
-          const records = approved.filter(x => x.tier === tier);
-          if (records.length !== (tier === 'reading' ? 8 : 2)) continue;
-          const language = tier === 'reading' ?
-            '<label class="gn-ed-field"><span>Language</span><select data-ep-ready-lang>' +
-              [['bilingual','Arabic & English'],['english','English only'],
-               ['arabic','Arabic without vowel marks'],['arabic-vowelled','Arabic fully vowelled']]
-                .map(([key,title]) => '<option value="' + key + '">' + esc(title) + '</option>').join('') +
-            '</select></label>' : '<p class="gn-ed-small">Bilingual: Arabic right, English left</p>';
-          panel.innerHTML = '<h3>Complete PDFs · ready to download</h3>' +
-            '<p>These A4 PDFs include searchable text, a bookmarks/outline pane and navigation to the main parts. They are separate from your custom print selections below.</p>' +
-            '<div class="gn-ed-fields">' + language +
-              '<label class="gn-ed-field"><span>Editorial section titles</span><select data-ep-ready-titles>' +
-                '<option value="off">Off · original headings</option>' +
-                '<option value="on">On · include descriptive headings</option></select></label>' +
-            '</div><p class="gn-ed-pdf-detail" data-ep-ready-detail role="status"></p>' +
-            '<div class="gn-ed-pdf-actions"><a class="gn-ed-primary" data-ep-ready-download download>Download PDF ↓</a>' +
-            '<a class="gn-ed-secondary" data-ep-ready-open target="_blank" rel="noopener noreferrer">Read PDF ↗</a></div>' +
-            '<p class="gn-ed-small">On an iPad, open your PDF viewer’s bookmarks or contents sidebar. Whether it opens automatically depends on the viewer.</p>';
-          panel.hidden = false;
-          const update = () => {
-            const lang = tier === 'study' ? 'bilingual' :
-              panel.querySelector('[data-ep-ready-lang]').value;
-            const editorial = panel.querySelector('[data-ep-ready-titles]').value === 'on';
-            const file = records.find(x => x.language === lang && x.editorial_titles === editorial);
-            if (!file) return;
-            const href = 'editions/' + file.file;
-            panel.querySelector('[data-ep-ready-open]').href = href;
-            panel.querySelector('[data-ep-ready-download]').href = href;
-            panel.querySelector('[data-ep-ready-detail]').textContent = file.pages + ' A4 pages · ' +
-              Math.ceil(file.pages / 2) + ' sheets double-sided · ' +
-              file.bookmarks + ' PDF bookmarks · ' +
-              (tier === 'reading' ? 'no scholarly apparatus' : 'selected explanatory notes');
+          ['bilingual','bilingual-unvowelled','english','arabic','arabic-vowelled'].includes(file.language) &&
+          typeof file.editorial_titles==='boolean' &&
+          Number.isInteger(file.pages)&&file.pages>0 &&
+          typeof file.file==='string' &&
+          /^(reading|study)\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english|arabic|arabic-vowelled)-titles-(on|off)\.pdf$/.test(file.file));
+        for(const tier of ['reading','study']){
+          const panel=host.querySelector('[data-ep-published="'+tier+'"]');
+          if(!panel)continue;
+          const records=approved.filter(x=>x.tier===tier);
+          // A partial catalog must not make an unsupported combination download
+          // the previous PDF. Preserve verified choices until the new PDFs exist.
+          if(records.length<(tier==='reading'?8:2))continue;
+          panel.innerHTML='<div class="gn-ed-fields">'+
+            (tier==='reading'?readyLanguageControls():'')+
+            '<label class="gn-ed-field"><span class="gn-ed-field-name">Editorial section titles</span>'+
+              '<select data-ep-ready-titles><option value="off">Off · original headings</option>'+
+                '<option value="on">On · include descriptive headings</option></select></label>'+
+            '</div><p class="gn-ed-pdf-detail" data-ep-ready-detail role="status"></p>'+
+            '<div class="gn-ed-pdf-actions">'+
+              '<a class="gn-ed-primary" data-ep-ready-download download aria-label="Download selected '+tier+' PDF">'+svg('download')+'</a>'+
+              '<a class="gn-ed-secondary" data-ep-ready-open target="_blank" rel="noopener noreferrer" aria-label="Read selected '+tier+' PDF">'+svg('open')+'</a></div>';
+          panel.hidden=false;
+          if(tier==='study'){
+            const legacy=host.querySelector('[data-ep-legacy-study]');
+            if(legacy)legacy.hidden=true;
+          }else{syncReadyLanguage(panel);syncCustomReading();}
+          const refresh=()=>{
+            const lang=tier==='study'?'bilingual':readyKey();
+            const editorial=panel.querySelector('[data-ep-ready-titles]').value==='on';
+            const file=records.find(x=>x.language===lang&&x.editorial_titles===editorial);
+            const reading=panel.querySelector('[data-ep-ready-open]');
+            const download=panel.querySelector('[data-ep-ready-download]');
+            if(!file){
+              for(const a of [reading,download]){a.removeAttribute('href');a.setAttribute('aria-disabled','true');}
+              panel.dataset.epDescription='PDF not published · use custom print';
+              panel.querySelector('[data-ep-ready-detail]').textContent=panel.dataset.epDescription;
+              if(tier===activeTier)showInfo('PDF edition',readyLabel(),panel.dataset.epDescription);
+              return;
+            }
+            const href='editions/'+file.file;
+            for(const a of [reading,download]){a.href=href;a.removeAttribute('aria-disabled');}
+            const desc=file.pages+' A4 pages · '+(editorial?'Editorial titles':'Original headings')+
+              (tier==='reading'&&lang!=='english'?' · '+(readyLanguage.vowels?'vowelled':'unvowelled')+' Arabic':'')+
+              (tier==='study'?' · study notes':'');
+            panel.dataset.epDescription=desc;
+            panel.querySelector('[data-ep-ready-detail]').textContent=desc;
+            if(tier===activeTier&&!host.dataset.gnEpInteracted)setTier(tier,false);
           };
-          panel.addEventListener('change', event => {
-            if (event.target.matches('[data-ep-ready-lang], [data-ep-ready-titles]')) update();
+          panel.addEventListener('change',event=>{
+            if(event.target.matches('[data-ep-ready-lang], [data-ep-ready-titles]'))refresh();
           });
-          update();
+          panel.addEventListener('click',event=>{
+            const button=event.target.closest('[data-ep-ready-toggle]');
+            if(button){event.preventDefault();changeReadyLanguage(button.dataset.epReadyToggle,panel);}
+          });
+          refresh();
         }
-      }).catch(() => {});
+      }).catch(error=>{
+        showInfo('PDF editions','Catalog unavailable','Custom printing remains available');
+      });
   }
 
   function render(main,payload) {
@@ -128,37 +258,43 @@
     noteById=new Map((book.notes||[]).map(x=>[x.id,x]));
     lessons=window.DARURI_STUDY_DATA?.lessons||[];
     host.innerHTML='<div class="gn-editions">'+
-    '<header><p class="gn-ed-eyebrow">AL-ḌARŪRĪ · EDITIONS</p><h1 id="gn-ed-title" tabindex="-1">Editions & Printing</h1>'+
-      '<p class="gn-ed-intro">Choose a reading text, prepare a course handout, or consult the scholarly reference. The three levels below run from minimal to maximal apparatus.</p></header>'+
-    '<p class="gn-ed-intro"><a href="personal-export.html">Create a personal PDF from an existing edition</a> — add Reading Desk comments and an appendix, or keep the original PDF entirely unchanged (default). Personal notes never leave this browser.</p>'+
-     '<nav class="gn-ed-quicknav" aria-label="Edition levels"><a href="#gn-ed-reading">1 · Reading & Printing</a><a href="#gn-ed-study">2 · Study</a><a href="#gn-ed-reference">3 · Reference</a></nav>'+
-    '<section id="gn-ed-reading" class="gn-ed-tier"><div class="gn-ed-tier-head"><span class="gn-ed-number">1</span><div><h2>Reading & Printing</h2>'+
-      '<p>Complete text or a short selection, with almost no apparatus. All choices use ordinary portrait A4. The default has no notes or editorial headings.</p></div></div>'+
-      '<div class="gn-ed-config gn-ed-published" data-ep-published="reading" hidden></div>' + controls('reading')+'</section>'+
-    '<section id="gn-ed-study" class="gn-ed-tier"><div class="gn-ed-tier-head"><span class="gn-ed-number">2</span><div><h2>Study Editions</h2>'+
-      '<p>For courses and close reading: explanatory notes and original or optional editorial headings, without the full lexicon and manuscript apparatus.</p></div></div>'+
-      '<div class="gn-ed-config gn-ed-published" data-ep-published="study" hidden></div>' + '<div class="gn-ed-grid"><article class="gn-ed-card"><h3>Existing bilingual study PDF</h3><p class="gn-ed-meta">131 pages · Arabic & English · selected notes</p>'+
-      '<p>Previously published fixed study edition. Arabic-right layout in the rebuilt edition remains subject to release verification.</p>'+
-      link('daruri-study.pdf?v=daruri8-structure-20261020','Open study PDF')+'</article>'+
-      '<article class="gn-ed-card"><h3>Study Guide companion</h3><p class="gn-ed-meta">85 pages · learning activities</p>'+
-      '<p>The three-level companion to the online lessons, separate from the main reading text.</p>'+
-      link('daruri-study-guide.pdf?v=daruri6-sources-20261020','Open study guide')+'</article></div>'+
-      '<details class="gn-ed-study-custom"><summary>Customise a Study printout — language, notes and editorial titles</summary>'+
-      '<p class="gn-ed-small">These settings affect this printout only; they do not modify the published PDF.</p>'+controls('study')+'</details></section>'+
-    '<section id="gn-ed-reference" class="gn-ed-tier"><div class="gn-ed-tier-head"><span class="gn-ed-number">3</span><div><h2>Scholarly Reference</h2>'+
-      '<p>Fixed, fully documented bilingual edition with linguistic and textual apparatus, source notes, applications, indexes and historical dictionary material. No layout customisation is offered for this tier.</p></div></div>'+
-      '<article class="gn-ed-card"><h3>Full bilingual reference</h3><p class="gn-ed-meta">243 pages · Arabic & English · scholarly apparatus</p>'+
-      '<p>This is the established reference target for website citations and section links. Its published page references remain unchanged during the reading-layout review.</p>'+
-      link('daruri.pdf?v=daruri8-structure-20261020','Open reference PDF')+'</article></section>'+
-    '<footer class="gn-ed-extra"><h2>Print a chapter or course selection</h2><p>Select “One major part”, “Study Guide lesson” or “Section range” above. We preserve whole numbered source passages; a lesson handout can draw on nonconsecutive passages without claiming to be a continuous abridgment.</p>'+
-      '<p class="gn-ed-small">Original headings are always retained; editorial headings are optional and identified separately. Arabic-right/English-left presentation is used for every newly generated bilingual printout.</p></footer></div>';
+    '<header class="gn-ed-top"><h1 id="gn-ed-title" tabindex="-1">Editions</h1>'+
+      '<div class="gn-ed-status" role="status" aria-live="polite" aria-atomic="true"><span data-ep-info-kind>Edition</span>'+
+        '<strong data-ep-info-value>Reading</strong><small data-ep-info-detail></small></div></header>'+
+    '<div class="gn-ed-edition-nav"><div class="gn-ed-tablist" role="tablist" aria-label="Edition level">'+
+      '<button type="button" role="tab" class="gn-ed-tab" id="gn-ed-tab-reading" data-ep-tab="reading" aria-label="Reading edition" aria-selected="true" aria-controls="gn-ed-reading" data-ep-info-kind="Edition" data-ep-info-label="Reading" tabindex="0">'+svg('book')+'</button>'+
+      '<button type="button" role="tab" class="gn-ed-tab" id="gn-ed-tab-study" data-ep-tab="study" aria-label="Study edition" aria-selected="false" aria-controls="gn-ed-study" data-ep-info-kind="Edition" data-ep-info-label="Study" tabindex="-1">'+svg('notes')+'</button>'+
+      '<button type="button" role="tab" class="gn-ed-tab" id="gn-ed-tab-reference" data-ep-tab="reference" aria-label="Reference edition" aria-selected="false" aria-controls="gn-ed-reference" data-ep-info-kind="Edition" data-ep-info-label="Reference" tabindex="-1">'+svg('library')+'</button>'+
+      '</div><a class="gn-ed-personal-action" href="personal-export.html" aria-label="Personal PDF and Reading Desk notes" data-ep-info-kind="Personal PDF" data-ep-info-label="Notes and bookmarks">'+svg('pen')+'</a></div>'+
+    '<section id="gn-ed-reading" class="gn-ed-tier" role="tabpanel" aria-labelledby="gn-ed-tab-reading" tabindex="0">'+
+      '<h2 class="gn-ed-panel-label">Reading</h2>'+
+      '<div class="gn-ed-config gn-ed-published" data-ep-published="reading" hidden></div>'+
+      '<details class="gn-ed-study-custom gn-ed-reading-custom"><summary aria-label="Custom Reading printout" data-ep-info-kind="Custom printout" data-ep-info-label="Reading settings">'+svg('settings')+'</summary>'+
+      controls('reading')+'</details></section>'+
+    '<section id="gn-ed-study" class="gn-ed-tier" role="tabpanel" aria-labelledby="gn-ed-tab-study" tabindex="0" hidden>'+
+      '<h2 class="gn-ed-panel-label">Study</h2>'+
+      '<div class="gn-ed-config gn-ed-published" data-ep-published="study" hidden></div>'+
+      '<div class="gn-ed-grid"><article class="gn-ed-card" data-ep-legacy-study><h3>Study PDF</h3>'+
+        pdfActions('daruri-study.pdf?v=daruri8-structure-20261020','study PDF')+'</article>'+
+      '<article class="gn-ed-card"><h3>Study Guide</h3>'+
+        pdfActions('daruri-study-guide.pdf?v=daruri6-sources-20261020','study guide')+'</article></div>'+
+      '<details class="gn-ed-study-custom"><summary aria-label="Custom Study printout" data-ep-info-kind="Custom printout" data-ep-info-label="Study settings">'+svg('settings')+'</summary>'+
+      controls('study')+'</details></section>'+
+    '<section id="gn-ed-reference" class="gn-ed-tier" role="tabpanel" aria-labelledby="gn-ed-tab-reference" tabindex="0" hidden>'+
+      '<h2 class="gn-ed-panel-label">Reference</h2>'+
+      '<article class="gn-ed-card"><h3>Scholarly reference</h3>'+
+        pdfActions('daruri.pdf?v=daruri8-structure-20261020','scholarly reference PDF')+
+      '</article></section></div>';
     if (!host.dataset.gnEpBound) {
       host.addEventListener('change',onChange);
       host.addEventListener('input',onInput);
       host.addEventListener('click',onClick);
+      host.addEventListener('keydown',onTabKeydown);
       host.dataset.gnEpBound='1';
     }
     KEYS.forEach(update);
+    host.dataset.gnEpInteracted='';
+    setTier(activeTier);
     showReadyPDFs();
   }
   function selection(tier) {
@@ -177,7 +313,7 @@
     if(style==='none')return [];
     const kinds=style==='essential'?['interpretive','lexical']:
       style==='study'?['interpretive','lexical','translation','quran-source']:
-        ['interpretive','lexical','translation','quran-source','hadith-source'];
+        ['interpretive','lexical','translation','quran-source'];
     return (section.noteIds||[]).map(id=>noteById.get(id)).filter(n=>n&&kinds.includes(n.kind));
   }
   function personalPrintRows(tier,sections) {
@@ -363,7 +499,24 @@
     if(!container)return;
     const tier=container.dataset.epTier,key=input.dataset.epControl;
     memory[tier][key]=input.type==='checkbox'?input.checked:input.type==='number'?Number(input.value):input.value;
+    if(tier==='reading' && (key==='language'||key==='vowels')) {
+      if(key==='language'){
+        readyLanguage.en=memory.reading.language!=='arabic';
+        readyLanguage.ar=memory.reading.language!=='english';
+      }else readyLanguage.vowels=memory.reading.vowels;
+      const ready=host.querySelector('[data-ep-published="reading"]');
+      syncReadyLanguage(ready);
+      ready?.querySelector('[data-ep-ready-lang]')?.dispatchEvent(new Event('change',{bubbles:true}));
+    }
     update(tier);
+    host.dataset.gnEpInteracted='1';
+    const names={editorial:'Editorial titles',vowels:'Vowel marks',columns:'Page layout',
+      density:'Page density',personal:'Reading Desk',scope:'Print selection',
+      part:'Major part',lesson:'Course lesson',from:'First section',to:'Last section'};
+    const value=input.type==='checkbox'?(input.checked?'On':'Off'):
+      input.tagName==='SELECT'?(input.selectedOptions[0]?.textContent||input.value):String(input.value);
+    showInfo(names[key]||'Language',value,
+      tier.charAt(0).toUpperCase()+tier.slice(1)+' · '+selection(tier).length+' sections');
   }
   function onInput(event) {
     if(event.target.matches('input[type="number"][data-ep-control]'))onChange(event);
@@ -403,16 +556,22 @@
       } else {
         const details=host.querySelector('[data-ep-tier="'+tier+'"]');
         const paper=details?.querySelector('[data-ep-preview]');
-        if(paper){paper.innerHTML=document.getElementById('gnEpPacket').innerHTML;paper.classList.add('gn-ed-full-preview');paper.scrollIntoView({block:'nearest'});}
+        if(paper){
+          paper.innerHTML=document.getElementById('gnEpPacket').innerHTML;
+          paper.classList.add('gn-ed-full-preview');
+          const disclosure=paper.closest('details');
+          if(disclosure)disclosure.open=true;
+          paper.scrollIntoView({block:'nearest'});
+        }
       }
       return;
     }
-    const nav=event.target.closest('.gn-ed-quicknav a');
-    if(nav) {
+    const tab=event.target.closest('[data-ep-tab]');
+    if(tab&&host?.contains(tab)){
       event.preventDefault();
-      const section=host.querySelector(nav.getAttribute('href'));
-      section?.scrollIntoView({block:'start',behavior:'smooth'});
+      setTier(tab.dataset.epTab,true);
+      return;
     }
   }
-  window.GnammaEditions={render,buildPrintable:prepare};
+  window.GnammaEditions={render,buildPrintable:prepare,showInfo,setTier};
 })();
