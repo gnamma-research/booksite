@@ -87,13 +87,14 @@ function boot(source,opts={}){
   createRange(){return {setStart(){},setEnd(){},cloneContents(){return {querySelectorAll(){return []},textContent:''}}}},
   body:{append(el){if(el.id==='gn-rd-relink-shade')modal=el},classList:{add(){},remove(){},toggle(){}}}
  };
- const localStorage={getItem(){return raw},setItem(k,value){
+ const localStorage={getItem(){return opts.sharedStore?opts.sharedStore.value:raw},setItem(k,value){
   writes++;if(opts.failWrites)throw Error('QuotaExceededError');raw=value;
+  if(opts.sharedStore)opts.sharedStore.value=value;
  }};
  const session={},sessionStorage={getItem:k=>session[k]??null,setItem:(k,v)=>session[k]=v,removeItem:k=>delete session[k]};
  const highlights=new Map(),cssApi={escape:x=>x,highlights};
  class Highlight{constructor(...ranges){this.ranges=ranges}}
- const window={scrollY:250,scrollTo(){},CSS:cssApi};
+ const window={scrollY:250,scrollTo(){},CSS:cssApi,addEventListener(type,fn){(events['window:'+type]??=[]).push(fn)}};
  const location={hash:'#bookmarks',href:'https://example.org/booksite/daruri/index.html'};
  const sandbox={window,document:doc,localStorage,sessionStorage,location,
   MutationObserver:class{observe(){}},FileReader:class{readAsText(file){this.result=file.text;this.onload()}},
@@ -109,7 +110,8 @@ function boot(source,opts={}){
  })}
  return {desk,state,main,reader,grids,highlights,event,notifications,
   get printed(){return sheet},get preview(){return preview},get modal(){return modal},
-  get stored(){return raw},get writes(){return writes}};
+  get stored(){return opts.sharedStore?opts.sharedStore.value:raw},get writes(){return writes},
+  notifyExternalChange(){for(const fn of events['window:storage']||[])fn({key:'gnamma-reading-desk-v1',newValue:opts.sharedStore?.value??raw})}};
 }
 test('source scripts compile and cache version matches',()=>{
  ensure(sw.includes('20261021-readingdesk4'),'service worker cache not updated');
@@ -185,5 +187,33 @@ test('URL and recovered quotation are preserved in source sharing',()=>{
  ensure(js.includes("'&segment='+Number(t.segment)"),'shared paragraph missing segment');
  ensure(js.includes('function followSharedSourceLink('),'shared paragraph cannot be reopened');
  ensure(js.includes('const savedSelections=items.filter(r=>r.target?.quote)'),'print selection not preserved');
+});
+
+test('stale tabs cannot overwrite newer annotations and can reload safely',()=>{
+ const sharedStore={value:backup([note('initial','190')])};
+ const first=boot(sharedStore.value,{sharedStore});
+ const second=boot(sharedStore.value,{sharedStore});
+ first.desk.toggleSection('191');
+ const fresh=sharedStore.value;
+ ensure(JSON.parse(fresh).items.length===2,'first tab write missing');
+ second.desk.toggleSection('190');
+ ensure(sharedStore.value===fresh,'stale tab overwrote newer data');
+ ensure(second.desk.records().length===1,'failed stale write leaked into records');
+ second.notifyExternalChange();
+ ensure(second.main.innerHTML.includes('Reading Desk changed in another tab'),'conflict not explained');
+ second.event('click',{dataset:{rd:'refresh-storage'}});
+ ensure(second.desk.records().length===2,'refresh failed to read newer collection');
+ second.desk.toggleSection('190');
+ ensure(JSON.parse(sharedStore.value).items.length===3,'fresh tab cannot save after reload');
+});
+test('legacy migration is not re-applied when refreshing externally changed records',()=>{
+ const initial=backup([note('original','190')]);
+ const sharedStore={value:initial};
+ const instance=boot(initial,{sharedStore});
+ const next=backup([note('newer','191')]);
+ sharedStore.value=next;
+ instance.event('click',{dataset:{rd:'refresh-storage'}});
+ ensure(instance.desk.records().length===1&&instance.desk.records()[0].id==='newer',
+ 'refresh resurrected stale item from earlier in-memory storage');
 });
 console.log('PASS '+checks.length+' Reading Desk tests (synthetic DOM; physical iOS Safari and Pages deployment require separate checks)');
