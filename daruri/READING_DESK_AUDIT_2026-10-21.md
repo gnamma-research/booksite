@@ -30,7 +30,7 @@ A more serious loss-of-data path was reproduced before correction: old JSON cont
 
 ## Verification record
 
-The deterministic, dependency-free regression suite is `daruri/qa/verify-reading-desk-redesign.js`: **11 tests passed** against the v4 script set in a synthetic DOM harness. This covers orphan retention and future metadata, corrupted storage, long notes, failed storage operations, mobile list/detail state, relinking with history, quotation printing, saved-note categorisation, continuous-section marks, and shared-link invariants.
+The deterministic, dependency-free regression suite is `daruri/qa/verify-reading-desk-redesign.js`: **16 tests passed** against the v4 script set in a synthetic DOM harness. This covers orphan retention and future metadata, corrupted storage, long notes, failed storage operations, mobile list/detail state, relinking with history, quotation printing, saved-note categorisation, continuous-section marks, and shared-link invariants.
 
 Additional directed runtime tests passed for:
 - Saving new items without dropping orphan notes.
@@ -54,3 +54,14 @@ Live HTML: `daruri/index.html` and `daruri/dictionary.html` reference `20261021-
 **Low, optional scholarship/product features:** Tags/collections, non-destructive note revision history, collaborative public annotations via Hypothesis, and account-based cross-device sync. These must remain separate from the private Reading Desk and are not required for the current defect corrections.
 
 **Safety note:** Users should download a fresh JSON backup after successfully loading their existing Reading Desk. The site stores personal notes in browser-local storage; no server-side backup or automatic recovery of previously overwritten data is implied.
+
+
+### Further integrity controls integrated in the same release
+
+The note editor now uses lossless HTML escaping for the complete existing note body and dynamically preserves the length of older, oversized titles and bodies. Editing a title does not shorten an imported note whose text exceeds current new-note limits. Direct runtime verification preserved a 124,019-character note through an edit.
+
+A concurrent narrow Reading Desk commit also added optimistic cross-tab storage comparisons. Changes detected in another tab now block overwriting writes and offer Reload saved items; the refresh path omits re-importing stale legacy section bookmarks. Its regression checks are included in the 16-test suite. The user's concurrent work on a separate Book PDF + personal notes export page was preserved rather than replaced by this audit.
+
+### Test-environment limitations
+
+All 16 regression checks were executed against the current connector-fetched v4 sources in a JavaScript synthetic DOM runtime. Script compilation and 13 cross-file release-reference checks also passed. A real iPhone browser session, VoiceOver, live GitHub Pages cache freshness, and a complete native print/PDF engine have not been instrumented from this chat. The associated GitHub Actions workflow is installed; successful remote runner execution has not been independently established.
