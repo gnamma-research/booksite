@@ -1,4 +1,4 @@
-name: Daruri Section 1 Quran parallels QA and PDF release
+name: Daruri complete Quran source QA and PDF release
 
 on:
   push:
@@ -6,6 +6,9 @@ on:
       - fix/daruri-section1-two-quran-parallels-20261021
     paths:
       - 'daruri/build/data/quran-source-notes.json'
+      - 'daruri/build/data/backmatter-source-notes.json'
+      - 'daruri/build/build_source_reference_data.py'
+      - 'daruri/source-reference-data.js'
       - 'daruri/build/main_text.py'
       - 'daruri/edition-r3-20261020.js'
       - 'daruri/source-note-ui.js'
