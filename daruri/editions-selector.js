@@ -170,7 +170,7 @@
                 '<button type="button" class="gn-es-personal-choice" data-es-personal="personalNotes" aria-pressed="false"><span>Include my notes</span><span data-es-flag="personalNotes">Off</span></button>'+
                 '<button type="button" class="gn-es-personal-choice" data-es-personal="personalBookmarks" aria-pressed="false"><span>Include my bookmarks</span><span data-es-flag="personalBookmarks">Off</span></button>'+
               '</div>'+
-              '<p class="gn-es-hint">Personal material stays on this device and is never part of a public PDF. Create a personal copy locally or save the original PDF separately.</p>'+
+              '<p class="gn-es-hint">Personal material stays on this device. The separate local PDF tool supports canonical editions, not every A4 configuration chosen here.</p>'+
               '<a class="gn-es-personal-link" href="personal-export.html">Open local personal PDF tools <span aria-hidden="true">↗</span></a>'+
             '</div>'+
           '</section>'+
