@@ -229,3 +229,9 @@ body.hide-notes:not(.focus-mode) ::highlight(gn-rd-note){background:rgba(61,135,
  #gn-rd-print-root .gn-rd-print-bilingual{break-inside:avoid;page-break-inside:avoid;grid-template-columns:repeat(auto-fit,minmax(44%,1fr));gap:10mm}
  #gn-rd-print-root .gn-rd-print-bilingual [lang="ar"]{font-family:var(--gn-arabic-font,"Amiri",serif);line-height:1.9}
 }
+
+/* Private Reading Desk control appended only inside an existing Visuals dialog. */
+.gn-rd-visuals-row{margin:15px 0 3px;padding:12px 13px;border-top:1px solid var(--line,#d9d4c9);background:transparent;color:var(--ink,#283933);font:inherit;line-height:1.55}
+.gn-rd-visuals-row label{display:flex;align-items:center;gap:10px;font-size:.85rem;font-weight:600;cursor:pointer}
+.gn-rd-visuals-row input{width:18px;height:18px;flex:none;accent-color:var(--accent,#406c60)}
+.gn-rd-visuals-row small{display:block;margin:5px 0 0 28px;color:var(--muted,var(--soft,#5e6a63));font-size:.73rem}
