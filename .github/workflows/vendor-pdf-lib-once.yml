@@ -1,0 +1,33 @@
+name: Vendor pinned PDF library (one-time)
+on:
+  push:
+    branches: [feature/reading-desk-personal-pdf-20261021]
+    paths: ['.github/workflows/vendor-pdf-lib-once.yml']
+permissions:
+  contents: write
+jobs:
+  vendor:
+    if: github.ref == 'refs/heads/feature/reading-desk-personal-pdf-20261021'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download audited version
+        run: |
+          npm install --no-save pdf-lib@1.17.1
+          mkdir -p daruri/vendor
+          cp node_modules/pdf-lib/dist/pdf-lib.min.js daruri/vendor/pdf-lib-1.17.1.min.js
+          cp node_modules/pdf-lib/LICENSE.md daruri/vendor/LICENSE-pdf-lib.md
+          node -e "const x=require('./node_modules/pdf-lib/package.json');if(x.version!=='1.17.1')process.exit(1)"
+          sha256sum daruri/vendor/pdf-lib-1.17.1.min.js
+      - name: Commit only the pinned vendored assets on feature branch
+        run: |
+          git config user.name "gnamma-research-ci"
+          git config user.email "gnamma-research-ci@users.noreply.github.com"
+          git add daruri/vendor/pdf-lib-1.17.1.min.js daruri/vendor/LICENSE-pdf-lib.md
+          git commit -m "Vendor pinned pdf-lib 1.17.1 locally for private PDF export" || exit 0
+          git push origin HEAD:feature/reading-desk-personal-pdf-20261021
