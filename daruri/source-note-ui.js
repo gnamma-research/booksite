@@ -6,13 +6,13 @@
   if (window.__gnSourceNoteUIInstalled) return;
   window.__gnSourceNoteUIInstalled = true;
 
-  const REVISION = '20261021-section1-qparallels1';
+  const REVISION = '20261021-qcontexts2';
   const ARROW = '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
   const NOTE_LINKS = '.source-note-links a[href], .gn-note-entry a[href], .gn-app-source-notes a[href], .fb-note a[href], .gn-unified-notes a[href]';
   // Qurʾānic wording is displayed separately from Ibn Rushd's own words.
   // Two proposed verbal echoes in §1 are explicitly marked POSSIBLE allusions,
   // NOT authorial quotations. §38 is an actual quotation. Never infer intent
-  // merely from brief word matches; three other weak candidates stay withheld.
+  // merely from brief word matches; only the unrelated 33:40 suggestion remains withheld.
   const VERIFIED_SOURCE_EXCERPTS = Object.freeze({
     'QUR-R001-Q049': {
       text: 'عَلَّمَهُ ٱلْبَيَانَ',

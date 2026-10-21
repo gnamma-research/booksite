@@ -25,6 +25,476 @@
   ],
   "notes": [
     {
+      "id": "QUR-R001-Q049",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 1,
+      "audit_ids": [
+        "Q049"
+      ],
+      "reference_type": "allusion",
+      "references": [
+        {
+          "surah": 55,
+          "ayah_start": 4,
+          "ayah_end": 4,
+          "verse_key": "55:4",
+          "surah_name_en": "al-Raḥmān",
+          "surah_name_ar": "الرحمن",
+          "label_en": "al-Raḥmān 55:4",
+          "label_ar": "الرحمن 55:4",
+          "url": "https://quran.com/55/4"
+        }
+      ],
+      "text_en": "Cf. Qurʾān, al-Raḥmān 55:4 (عَلَّمَهُ ٱلْبَيَانَ). Ibn Rushd’s «معلّم البيان» is a possible verbal echo, not a quotation; deliberate allusion is not certain.",
+      "text_ar": "قارن القرآن، الرحمن 55:4 («عَلَّمَهُ ٱلْبَيَانَ»). عبارة ابن رشد «معلّم البيان» قد تكون تلميحًا لفظيًا إلى الآية، وليست اقتباسًا منها، ولا يُجزم بقصده.",
+      "qualification_en": "Possible verbal echo of 55:4, not a quotation or confirmed intentional citation.",
+      "qualification_ar": "تشابه لفظي محتمل مع الآية 55:4، لا اقتباس ولا إحالة مقطوع بها.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "معلم البيان",
+            "start_codepoint": 17,
+            "end_codepoint_exclusive": 28,
+            "occurrence_1based": 1,
+            "segment_sha256": "032b79448d596a175b3e86400c1276498be358077f436b3473689e02837b9818",
+            "prefix_context": "أما بعد حمدا لله ",
+            "suffix_context": "، وموجب النظر والاستدلال، ومختص الإنسان بإقامة الحجج البالغة"
+          },
+          "en": {
+            "text": "who teaches articulate expression",
+            "start_codepoint": 32,
+            "end_codepoint_exclusive": 65,
+            "occurrence_1based": 1,
+            "segment_sha256": "5621cf5cefa24b549a7ee4a495952c13f109e8602baf744e6e8b530183318525",
+            "prefix_context": "To proceed, after praising God, ",
+            "suffix_context": ", makes inquiry (النظر) and inference (الاستدلال) obligatory"
+          },
+          "vocalized": {
+            "text": "مُعَلِّمِ الْبَيَانِ",
+            "start_codepoint": 30,
+            "end_codepoint_exclusive": 50,
+            "occurrence_1based": 1,
+            "segment_sha256": "b2bd4cb02c8baffb17dd5d5e3ef38bded4ec01225d9a4de5f7689129b0066570",
+            "prefix_context": "أَمَّا بَعْدُ حَمْدًا لِلَّهِ ",
+            "suffix_context": "، وَمُوجِبِ النَّظَرِ وَالِاسْتِدْلَالِ، وَمُخْتَصِّ الْإِنْ"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        7
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "published_qualified_possible_allusion",
+      "audit_decision": "Retain a contextually plausible verbal echo in the opening invocation, explicitly qualified as possible and non-verbatim, without asserting authorial intent.",
+      "decision_date": "2026-10-21"
+    },
+    {
+      "id": "QUR-R001-Q050",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 1,
+      "audit_ids": [
+        "Q050"
+      ],
+      "reference_type": "allusion",
+      "references": [
+        {
+          "surah": 6,
+          "ayah_start": 149,
+          "ayah_end": 149,
+          "verse_key": "6:149",
+          "surah_name_en": "al-Anʿām",
+          "surah_name_ar": "الأنعام",
+          "label_en": "al-Anʿām 6:149",
+          "label_ar": "الأنعام 6:149",
+          "url": "https://quran.com/6/149"
+        }
+      ],
+      "text_en": "Cf. Qurʾān, al-Anʿām 6:149 (فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ). The Qurʾān has the singular «الحجة البالغة»; Ibn Rushd writes the plural «الحجج البالغة». This is a possible verbal echo, not a quotation or proven citation.",
+      "text_ar": "قارن القرآن، الأنعام 6:149 («فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ»). جاء اللفظ في الآية مفردًا «الحجة البالغة»، واستعمل ابن رشد الجمع «الحجج البالغة». وهذا تشابه لفظي محتمل، لا اقتباس ولا إحالة مقطوع بها.",
+      "qualification_en": "Singular Qurʾānic phrase versus Ibn Rushd’s plural; possible verbal echo only.",
+      "qualification_ar": "جاءت العبارة في القرآن مفردة وفي كلام ابن رشد جمعًا؛ وهذا تلميح لفظي محتمل فحسب.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "الحجج البالغة",
+            "start_codepoint": 75,
+            "end_codepoint_exclusive": 88,
+            "occurrence_1based": 1,
+            "segment_sha256": "032b79448d596a175b3e86400c1276498be358077f436b3473689e02837b9818",
+            "prefix_context": "ه معلم البيان، وموجب النظر والاستدلال، ومختص الإنسان بإقامة ",
+            "suffix_context": " وضرب الأمثال، والصلاة على محمد خاتم الرسل ونهاية التمام وال"
+          },
+          "en": {
+            "text": "conclusive arguments",
+            "start_codepoint": 176,
+            "end_codepoint_exclusive": 196,
+            "occurrence_1based": 1,
+            "segment_sha256": "5621cf5cefa24b549a7ee4a495952c13f109e8602baf744e6e8b530183318525",
+            "prefix_context": "bligatory, and singles out the human being for establishing ",
+            "suffix_context": " and setting forth examples; and after invoking blessings up"
+          },
+          "vocalized": {
+            "text": "الْحُجَجِ الْبَالِغَةِ",
+            "start_codepoint": 128,
+            "end_codepoint_exclusive": 150,
+            "occurrence_1based": 1,
+            "segment_sha256": "b2bd4cb02c8baffb17dd5d5e3ef38bded4ec01225d9a4de5f7689129b0066570",
+            "prefix_context": "َرِ وَالِاسْتِدْلَالِ، وَمُخْتَصِّ الْإِنْسَانِ بِإِقَامَةِ ",
+            "suffix_context": " وَضَرْبِ الْأَمْثَالِ، وَالصَّلَاةُ عَلَى مُحَمَّدٍ خَاتَمِ"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        7
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "published_qualified_possible_allusion",
+      "audit_decision": "Retain a contextually plausible verbal echo in the opening invocation, explicitly qualified as possible and non-verbatim, without asserting authorial intent.",
+      "decision_date": "2026-10-21"
+    },
+    {
+      "id": "QUR-R011-Q052",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 11,
+      "audit_ids": [
+        "Q052"
+      ],
+      "reference_type": "allusion",
+      "references": [
+        {
+          "surah": 29,
+          "ayah_start": 45,
+          "ayah_end": 45,
+          "verse_key": "29:45",
+          "surah_name_en": "al-ʿAnkabūt",
+          "surah_name_ar": "العنكبوت",
+          "label_en": "al-ʿAnkabūt 29:45",
+          "label_ar": "العنكبوت 29:45",
+          "url": "https://quran.com/29/45"
+        }
+      ],
+      "text_en": "Possible Qurʾānic literary/contextual allusion — Cf. Qurʾān, al-ʿAnkabūt 29:45. The verse states that prayer restrains indecency; Ibn Rushd's «اللفظ المانع من الفحشاء» may echo it in the context of prayer, but is not a quotation.",
+      "text_ar": "تلميح قرآني محتمل — قارن القرآن، العنكبوت 29:45؛ عبارة «اللفظ المانع من الفحشاء» مشابهة في سياق الصلاة وليست اقتباسًا مباشرًا.",
+      "qualification_en": "The verse speaks of prayer restraining indecency; the author’s wording is retained.",
+      "qualification_ar": "تذكر الآية نهي الصلاة عن الفحشاء؛ وأُبقي لفظ المؤلف.",
+      "anchors": [
+        {
+          "segment_index": 1,
+          "ar": {
+            "text": "اللفظ المانع من الفحشاء",
+            "start_codepoint": 155,
+            "end_codepoint_exclusive": 178,
+            "occurrence_1based": 1,
+            "segment_sha256": "1bc3a6449e984740d9af9d086952ae5eeabbf1d774b76e5650bebd277e878460",
+            "prefix_context": "نعم، وبعضه بانضمام الشرع كالطهارة والصلاة لما فيهما مثلا من ",
+            "suffix_context": " ومن النظافة. وفائدة معرفة هذا الاختلاف في هذه الصناعة تتصور"
+          },
+          "en": {
+            "text": "the utterance that restrains indecency",
+            "start_codepoint": 272,
+            "end_codepoint_exclusive": 310,
+            "occurrence_1based": 1,
+            "segment_sha256": "e321103bb22a8ccead6ca0e36badab2921d7f762457d09c47b2d24032e4735df",
+            "prefix_context": "th ritual purification and prayer, because of, for example, ",
+            "suffix_context": " and the cleanliness they involve. The benefit of knowing th"
+          },
+          "vocalized": {
+            "text": "اللَّفْظِ الْمَانِعِ مِنَ الْفَحْشَاءِ",
+            "start_codepoint": 263,
+            "end_codepoint_exclusive": 301,
+            "occurrence_1based": 1,
+            "segment_sha256": "2267da792505bda94d1b4902b8c4714a11320fd0c61683a7f92a3d42a5529fec",
+            "prefix_context": "ْعِ كَالطَّهَارَةِ وَالصَّلَاةِ لِمَا فِيهِمَا مَثَلًا مِنَ ",
+            "suffix_context": " وَمِنَ النَّظَافَةِ. وَفَائِدَةُ مَعْرِفَةِ هَذَا الِاخْتِل"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        12
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "ready_qualified_allusion",
+      "decision_date": "2026-10-21"
+    },
+    {
+      "id": "QUR-R019-Q054",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 19,
+      "audit_ids": [
+        "Q054"
+      ],
+      "reference_type": "legal_context",
+      "references": [
+        {
+          "surah": 5,
+          "ayah_start": 89,
+          "ayah_end": 89,
+          "verse_key": "5:89",
+          "surah_name_en": "al-Māʾida",
+          "surah_name_ar": "المائدة",
+          "label_en": "al-Māʾida 5:89",
+          "label_ar": "المائدة 5:89",
+          "url": "https://quran.com/5/89"
+        }
+      ],
+      "text_en": "Qurʾānic legal example — Cf. Qurʾān, al-Māʾida 5:89. This corresponds to the three alternatives for oath expiation; the author does not expressly identify the expiation as for oaths or quote the verse, which alone does not prove his philosophical claim.",
+      "text_ar": "مثال فقهي قرآني — قارن القرآن، المائدة 5:89. هذه خصال كفارة اليمين على سبيل المقارنة، لا اقتباس ولا تصريح من المؤلف بنوع الكفارة.",
+      "qualification_en": "This corresponds to the three alternatives for oath expiation; the author does not expressly identify the expiation as for oaths or quote the verse, which alone does not prove his philosophical claim.",
+      "qualification_ar": "هذه خصال كفارة اليمين على سبيل المقارنة، لا اقتباس ولا تصريح من المؤلف بنوع الكفارة.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "الخصال الثلاث في الكفارة",
+            "start_codepoint": 72,
+            "end_codepoint_exclusive": 96,
+            "occurrence_1based": 1,
+            "prefix_context": "ة جواز مثل هذا الواجب عقلا ووقوعه شرعا، وقالوا إن كانت ",
+            "suffix_context": " مستوية في الصفة بالإضافة إلى صلاح العبد، فينبغي أن يوج"
+          },
+          "en": {
+            "text": "the three alternatives in expiation",
+            "start_codepoint": 121,
+            "end_codepoint_exclusive": 156,
+            "occurrence_1based": 1,
+            "prefix_context": "bligation and its occurrence in the Law. They said: if ",
+            "suffix_context": " are equal in their character with respect to the serva"
+          },
+          "vocalized": {
+            "text": "الْخِصَالُ الثَّلَاثُ فِي الْكَفَّارَة",
+            "start_codepoint": 118,
+            "end_codepoint_exclusive": 156,
+            "occurrence_1based": 1,
+            "prefix_context": "بِ عَقْلًا وَوُقُوعَهُ شَرْعًا، وَقَالُوا إِنْ كَانَتِ ",
+            "suffix_context": "ِ مُسْتَوِيَةً فِي الصِّفَةِ بِالْإِضَافَةِ إِلَى صَلَا"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        17
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "ready_qualified_context"
+    },
+    {
+      "id": "QUR-R020-Q055",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 20,
+      "audit_ids": [
+        "Q055"
+      ],
+      "reference_type": "legal_context",
+      "references": [
+        {
+          "surah": 5,
+          "ayah_start": 89,
+          "ayah_end": 89,
+          "verse_key": "5:89",
+          "surah_name_en": "al-Māʾida",
+          "surah_name_ar": "المائدة",
+          "label_en": "al-Māʾida 5:89",
+          "label_ar": "المائدة 5:89",
+          "url": "https://quran.com/5/89"
+        }
+      ],
+      "text_en": "Qurʾānic legal example — Cf. Qurʾān, al-Māʾida 5:89. This is a repetition of the expiation example in R19; the identified oath-expiation verse is legal background, not a quotation.",
+      "text_ar": "مثال فقهي قرآني — قارن القرآن، المائدة 5:89. يتكرر مثال خصال الكفارة، والآية سياق فقهي لا اقتباس حرفي.",
+      "qualification_en": "This is a repetition of the expiation example in R19; the identified oath-expiation verse is legal background, not a quotation.",
+      "qualification_ar": "يتكرر مثال خصال الكفارة، والآية سياق فقهي لا اقتباس حرفي.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "كخصال الكفارة",
+            "start_codepoint": 113,
+            "end_codepoint_exclusive": 126,
+            "occurrence_1based": 1,
+            "prefix_context": "ل يكفي من ذلك ههنا أن نقول: إن وقوع مثل هذا شرعا موجود ",
+            "suffix_context": "، وانعقاد الإجماع على اتساع أوقات أكثر الصلوات. والذي أ"
+          },
+          "en": {
+            "text": "the alternatives in expiation",
+            "start_codepoint": 160,
+            "end_codepoint_exclusive": 189,
+            "occurrence_1based": 1,
+            "prefix_context": "o say that such a thing does occur in the Law, as with ",
+            "suffix_context": " and the established consensus that most prayers have e"
+          },
+          "vocalized": {
+            "text": "كَخِصَالِ الْكَفَّارَة",
+            "start_codepoint": 186,
+            "end_codepoint_exclusive": 208,
+            "occurrence_1based": 1,
+            "prefix_context": " نَقُولَ: إِنَّ وُقُوعَ مِثْلِ هَذَا شَرْعًا مَوْجُودٌ ",
+            "suffix_context": "ِ، وَانْعِقَادِ الْإِجْمَاعِ عَلَى اتِّسَاعِ أَوْقَاتِ "
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        18
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "ready_qualified_context"
+    },
+    {
+      "id": "QUR-R023-Q056",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 23,
+      "audit_ids": [
+        "Q056"
+      ],
+      "reference_type": "legal_basis",
+      "references": [
+        {
+          "surah": 5,
+          "ayah_start": 6,
+          "ayah_end": 6,
+          "verse_key": "5:6",
+          "surah_name_en": "al-Māʾida",
+          "surah_name_ar": "المائدة",
+          "label_en": "al-Māʾida 5:6",
+          "label_ar": "المائدة 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ],
+      "text_en": "Qurʾānic legal basis — Cf. Qurʾān, al-Māʾida 5:6. The verse says «وَامْسَحُوا بِرُءُوسِكُمْ» and establishes head-wiping in ablution; it does not settle the contested minimum extent of wiping examined by Ibn Rushd.",
+      "text_ar": "أصل الحكم القرآني — قارن القرآن، المائدة 5:6. «وَامْسَحُوا بِرُءُوسِكُمْ» أصل مسح الرأس، ولا يحسم القدر الواجب المختلف فيه.",
+      "qualification_en": "The verse says «وَامْسَحُوا بِرُءُوسِكُمْ» and establishes head-wiping in ablution; it does not settle the contested minimum extent of wiping examined by Ibn Rushd.",
+      "qualification_ar": "«وَامْسَحُوا بِرُءُوسِكُمْ» أصل مسح الرأس، ولا يحسم القدر الواجب المختلف فيه.",
+      "anchors": [
+        {
+          "segment_index": 1,
+          "ar": {
+            "text": "كمسح الرأس",
+            "start_codepoint": 72,
+            "end_codepoint_exclusive": 82,
+            "occurrence_1based": 1,
+            "prefix_context": "م إلى ما يتقدر بقدر محدود وإلى ما لا يتقدر بقدر محدود، ",
+            "suffix_context": " والطمأنينة في الركوع، والواجب من هذا هو أقل ما ينطلق ع"
+          },
+          "en": {
+            "text": "wiping the head",
+            "start_codepoint": 102,
+            "end_codepoint_exclusive": 117,
+            "occurrence_1based": 1,
+            "prefix_context": "sured by a determinate amount and what is not, such as ",
+            "suffix_context": " and remaining still in bowing. In the latter case, the"
+          },
+          "vocalized": {
+            "text": "كَمَسْحِ الرَّأْس",
+            "start_codepoint": 121,
+            "end_codepoint_exclusive": 138,
+            "occurrence_1based": 1,
+            "prefix_context": "ْدُودٍ وَإِلَى مَا لَا يَتَقَدَّرُ بِقَدْرٍ مَحْدُودٍ، ",
+            "suffix_context": "ِ وَالطُّمَأْنِينَةِ فِي الرُّكُوعِ، وَالْوَاجِبُ مِنْ "
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        19
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "ready_qualified_context"
+    },
+    {
       "id": "QUR-R038-Q001",
       "kind": "quran",
       "category": "source",
@@ -181,6 +651,86 @@
       "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
       "contains_hadith_reference": false,
       "publication_status": "ready"
+    },
+    {
+      "id": "QUR-R047-Q053",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 47,
+      "audit_ids": [
+        "Q053"
+      ],
+      "reference_type": "allusion",
+      "references": [
+        {
+          "surah": 12,
+          "ayah_start": 53,
+          "ayah_end": 53,
+          "verse_key": "12:53",
+          "surah_name_en": "Yūsuf",
+          "surah_name_ar": "يوسف",
+          "label_en": "Yūsuf 12:53",
+          "label_ar": "يوسف 12:53",
+          "url": "https://quran.com/12/53"
+        }
+      ],
+      "text_en": "Qurʾānic literary allusion — Cf. Qurʾān, Yūsuf 12:53, «إِنَّ النَّفْسَ لَأَمَّارَةٌ بِالسُّوءِ». Ibn Rushd echoes the distinctive expression «الأمارة بالسوء» without presenting it as an explicit quotation.",
+      "text_ar": "تلميح قرآني لفظي — قارن القرآن، يوسف 12:53؛ عبارة «الأمارة بالسوء» صدى لآية النفس الأمارة، لا اقتباسًا مصرحًا به.",
+      "qualification_en": "",
+      "qualification_ar": "",
+      "anchors": [
+        {
+          "segment_index": 1,
+          "ar": {
+            "text": "الأمارة بالسوء",
+            "start_codepoint": 209,
+            "end_codepoint_exclusive": 223,
+            "occurrence_1based": 1,
+            "segment_sha256": "b6406fc5d13707e1b65853d7bab6bf1252d1ebef9e1541721f7c90856a9a0317",
+            "prefix_context": "ده عن الامتثال عناد أو غير ذلك من الأسباب المانعة. وبالجملة ",
+            "suffix_context": " كثيرا ما تصد الإنسان عن الواجب مع اعتقاد وجوبه."
+          },
+          "en": {
+            "text": "the soul that commands evil",
+            "start_codepoint": 290,
+            "end_codepoint_exclusive": 317,
+            "occurrence_1based": 1,
+            "segment_sha256": "41c079070ef2df3e2c7e0a52e2c2f9c39bae1b08ef78a6a46ab8de3a6cab1ea3",
+            "prefix_context": "er impediment prevents a person from complying. In general, ",
+            "suffix_context": " often turns a person away from a duty even while he believe"
+          },
+          "vocalized": {
+            "text": "الْأَمَّارَةُ بِالسُّوءِ",
+            "start_codepoint": 344,
+            "end_codepoint_exclusive": 368,
+            "occurrence_1based": 1,
+            "segment_sha256": "57277559773e65d4abe05d092f4e409284e8bcb7da84f588d866edc7144506b3",
+            "prefix_context": "يْرُ ذَلِكَ مِنَ الْأَسْبَابِ الْمَانِعَةِ. وَبِالْجُمْلَةِ ",
+            "suffix_context": " كَثِيرًا مَا تَصُدُّ الْإِنْسَانَ عَنِ الْوَاجِبِ مَعَ اعْت"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        31
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "ready_qualified_allusion",
+      "decision_date": "2026-10-21"
     },
     {
       "id": "QUR-R049-Q003",
@@ -371,6 +921,82 @@
       "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
       "contains_hadith_reference": false,
       "publication_status": "ready"
+    },
+    {
+      "id": "QUR-R060-Q057",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 60,
+      "audit_ids": [
+        "Q057"
+      ],
+      "reference_type": "legal_basis",
+      "references": [
+        {
+          "surah": 2,
+          "ayah_start": 173,
+          "ayah_end": 173,
+          "verse_key": "2:173",
+          "surah_name_en": "al-Baqarah",
+          "surah_name_ar": "البقرة",
+          "label_en": "al-Baqarah 2:173",
+          "label_ar": "البقرة 2:173",
+          "url": "https://quran.com/2/173"
+        }
+      ],
+      "text_en": "Qurʾānic legal concession — Cf. Qurʾān, al-Baqarah 2:173. The necessity concession for carrion is grounded here; compare 5:3, 6:145 and 16:115. This is distinct from the example of drinking wine to relieve choking.",
+      "text_ar": "رخصة قرآنية — قارن القرآن، البقرة 2:173. رخصة الميتة للمضطر ثابتة هنا، ويقارن 5:3 و6:145 و16:115؛ ولا يشمل ذلك نسبة مثال الخمر إلى لفظ الآية.",
+      "qualification_en": "The necessity concession for carrion is grounded here; compare 5:3, 6:145 and 16:115. This is distinct from the example of drinking wine to relieve choking.",
+      "qualification_ar": "رخصة الميتة للمضطر ثابتة هنا، ويقارن 5:3 و6:145 و16:115؛ ولا يشمل ذلك نسبة مثال الخمر إلى لفظ الآية.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "الميتة للمضطر",
+            "start_codepoint": 163,
+            "end_codepoint_exclusive": 176,
+            "occurrence_1based": 1,
+            "prefix_context": "عجز عنه، مع قيام السبب المحرم، كتحليل جرعة خمر للشرق، و",
+            "suffix_context": ". وقد تطلق الرخصة على معان غير هذه بعضها أقرب إلى هذا و"
+          },
+          "en": {
+            "text": "carrion to someone compelled by necessity",
+            "start_codepoint": 368,
+            "end_codepoint_exclusive": 409,
+            "occurrence_1based": 1,
+            "prefix_context": "e, permitting a draught of wine to someone choking, or ",
+            "suffix_context": ". ‘Concession’ may also be applied to other meanings, s"
+          },
+          "vocalized": {
+            "text": "الْمَيْتَةِ لِلْمُضْطَر",
+            "start_codepoint": 276,
+            "end_codepoint_exclusive": 299,
+            "occurrence_1based": 1,
+            "prefix_context": "لْمُحَرِّمِ، كَتَحْلِيلِ جُرْعَةِ خَمْرٍ لِلشَّرِقِ، وَ",
+            "suffix_context": "ِّ. وَقَدْ تُطْلَقُ الرُّخْصَةُ عَلَى مَعَانٍ غَيْرِ هَ"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        38
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "ready_qualified_context"
     },
     {
       "id": "QUR-R064-Q058",
@@ -803,6 +1429,93 @@
       "publication_status": "ready"
     },
     {
+      "id": "QUR-R098-Q044",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 98,
+      "audit_ids": [
+        "Q044"
+      ],
+      "reference_type": "illustrative_context",
+      "references": [
+        {
+          "surah": 9,
+          "ayah_start": 100,
+          "ayah_end": 100,
+          "verse_key": "9:100",
+          "surah_name_en": "al-Tawba",
+          "surah_name_ar": "التوبة",
+          "label_en": "al-Tawba 9:100",
+          "label_ar": "التوبة 9:100",
+          "url": "https://quran.com/9/100"
+        },
+        {
+          "surah": 48,
+          "ayah_start": 18,
+          "ayah_end": 18,
+          "verse_key": "48:18",
+          "surah_name_en": "al-Fatḥ",
+          "surah_name_ar": "الفتح",
+          "label_en": "al-Fatḥ 48:18",
+          "label_ar": "الفتح 48:18",
+          "url": "https://quran.com/48/18"
+        }
+      ],
+      "text_en": "Representative Qurʾānic context — Cf. Qurʾān, al-Tawba 9:100; al-Fatḥ 48:18. These are representative examples of divine praise or approval of Companions, not Ibn Rushd's specified list or independent proof of every aspect of the later collective-probity doctrine.",
+      "text_ar": "شواهد قرآنية تمثيلية — قارن القرآن، التوبة 9:100؛ الفتح 48:18. الآيتان شاهدان تمثيليان على الثناء والرضا عن الصحابة؛ ولم يعينهما المؤلف ولم يعدّهما حصرًا.",
+      "qualification_en": "These are representative examples of divine praise or approval of Companions, not Ibn Rushd's specified list or independent proof of every aspect of the later collective-probity doctrine.",
+      "qualification_ar": "الآيتان شاهدان تمثيليان على الثناء والرضا عن الصحابة؛ ولم يعينهما المؤلف ولم يعدّهما حصرًا.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "بتعديل الله جل وعز لهم",
+            "start_codepoint": 60,
+            "end_codepoint_exclusive": 82,
+            "occurrence_1based": 1,
+            "prefix_context": " عليه جماهير الأمة والمعتمد عليهم أن عدالتهم مقطوع بها ",
+            "suffix_context": " وتعديل رسوله، في غير ما آية من كتاب الله جل وعز وغير م"
+          },
+          "en": {
+            "text": "God’s attestation of it",
+            "start_codepoint": 156,
+            "end_codepoint_exclusive": 179,
+            "occurrence_1based": 1,
+            "prefix_context": "anions’ probity is established with certainty, through ",
+            "suffix_context": "—majestic and mighty is He—and that of His Messenger, i"
+          },
+          "vocalized": {
+            "text": "بِتَعْدِيلِ اللَّهِ جَلَّ وَعَزَّ لَهُم",
+            "start_codepoint": 104,
+            "end_codepoint_exclusive": 143,
+            "occurrence_1based": 1,
+            "prefix_context": "ْتَمَدُ عَلَيْهِمْ أَنَّ عَدَالَتَهُمْ مَقْطُوعٌ بِهَا ",
+            "suffix_context": "ْ وَتَعْدِيلِ رَسُولِهِ، فِي غَيْرِ مَا آيَةٍ مِنْ كِتَ"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        58
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "ready_qualified_context"
+    },
+    {
       "id": "QUR-R119-Q045",
       "kind": "quran",
       "category": "source",
@@ -1074,6 +1787,82 @@
       "publication_status": "ready"
     },
     {
+      "id": "QUR-R120-Q059",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 120,
+      "audit_ids": [
+        "Q059"
+      ],
+      "reference_type": "legal_context",
+      "references": [
+        {
+          "surah": 5,
+          "ayah_start": 90,
+          "ayah_end": 91,
+          "verse_key": "5:90-91",
+          "surah_name_en": "al-Māʾida",
+          "surah_name_ar": "المائدة",
+          "label_en": "al-Māʾida 5:90–91",
+          "label_ar": "المائدة 5:90–91",
+          "url": "https://quran.com/5/90-91"
+        }
+      ],
+      "text_en": "Qurʾānic legal context — Cf. Qurʾān, al-Māʾida 5:90–91. These verses supply the scriptural prohibition-of-wine setting. The historical abrogation classification remains Ibn Rushd's own legal account.",
+      "text_ar": "سياق الحكم القرآني — قارن القرآن، المائدة 5:90–91. الآيتان سياق تحريم الخمر، وأما تصنيفه ضمن النسخ فهو تحليل فقهي خاص بالمؤلف.",
+      "qualification_en": "These verses supply the scriptural prohibition-of-wine setting. The historical abrogation classification remains Ibn Rushd's own legal account.",
+      "qualification_ar": "الآيتان سياق تحريم الخمر، وأما تصنيفه ضمن النسخ فهو تحليل فقهي خاص بالمؤلف.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "تحريم الخمر",
+            "start_codepoint": 139,
+            "end_codepoint_exclusive": 150,
+            "occurrence_1based": 1,
+            "prefix_context": "نسخ التخيير بين الصوم والفدية بالإطعام بتعيين الصيام، و",
+            "suffix_context": " ونكاح المتعة، ونسخ صوم عاشوراء بإيجاب رمضان."
+          },
+          "en": {
+            "text": "prohibiting wine",
+            "start_codepoint": 291,
+            "end_codepoint_exclusive": 307,
+            "occurrence_1based": 1,
+            "prefix_context": "and feeding others as compensation with fasting alone; ",
+            "suffix_context": " and temporary marriage; and replacing the fast of ʿĀsh"
+          },
+          "vocalized": {
+            "text": "تَحْرِيمُ الْخَمْر",
+            "start_codepoint": 234,
+            "end_codepoint_exclusive": 252,
+            "occurrence_1based": 1,
+            "prefix_context": "وَالْفِدْيَةِ بِالْإِطْعَامِ بِتَعْيِينِ الصِّيَامِ، وَ",
+            "suffix_context": "ِ وَنِكَاحِ الْمُتْعَةِ، وَنَسْخُ صَوْمِ عَاشُورَاءَ بِ"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        71
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "ready_qualified_context"
+    },
+    {
       "id": "QUR-R121-Q010",
       "kind": "quran",
       "category": "source",
@@ -1314,6 +2103,82 @@
       "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
       "contains_hadith_reference": false,
       "publication_status": "ready"
+    },
+    {
+      "id": "QUR-R123-Q060",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 123,
+      "audit_ids": [
+        "Q060"
+      ],
+      "reference_type": "legal_context",
+      "references": [
+        {
+          "surah": 2,
+          "ayah_start": 144,
+          "ayah_end": 144,
+          "verse_key": "2:144",
+          "surah_name_en": "al-Baqarah",
+          "surah_name_ar": "البقرة",
+          "label_en": "al-Baqarah 2:144",
+          "label_ar": "البقرة 2:144",
+          "url": "https://quran.com/2/144"
+        }
+      ],
+      "text_en": "Qurʾānic qibla context — Cf. Qurʾān, al-Baqarah 2:144. The verse directs prayer toward the Sacred Mosque; the specific Qubāʾ congregation's turn on a solitary report is a separately transmitted hadith incident.",
+      "text_ar": "سياق قرآني لتحويل القبلة — قارن القرآن، البقرة 2:144. الآية في تحول القبلة، وأما واقعة أهل قباء بخبر الواحد فلها إسناد حديثي مستقل.",
+      "qualification_en": "The verse directs prayer toward the Sacred Mosque; the specific Qubāʾ congregation's turn on a solitary report is a separately transmitted hadith incident.",
+      "qualification_ar": "الآية في تحول القبلة، وأما واقعة أهل قباء بخبر الواحد فلها إسناد حديثي مستقل.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "بتحول أهل مسجد قباء إلى الكعبة",
+            "start_codepoint": 207,
+            "end_codepoint_exclusive": 237,
+            "occurrence_1based": 1,
+            "prefix_context": "ه جائز عقلا وواقع شرعا في زمن النبي صلى الله عليه وسلم ",
+            "suffix_context": " بخبر الواحد، وقد كان ثابتا عنهم التوجه إلى بيت المقدس "
+          },
+          "en": {
+            "text": "the people of the mosque at Qubāʾ turned toward the Kaʿba",
+            "start_codepoint": 459,
+            "end_codepoint_exclusive": 516,
+            "occurrence_1based": 1,
+            "prefix_context": "Prophet’s lifetime, God bless him and grant him peace: ",
+            "suffix_context": " on a solitary report, although their facing Jerusalem "
+          },
+          "vocalized": {
+            "text": "بِتَحَوُّلِ أَهْلِ مَسْجِدِ قُبَاءَ إِلَى الْكَعْبَة",
+            "start_codepoint": 341,
+            "end_codepoint_exclusive": 393,
+            "occurrence_1based": 1,
+            "prefix_context": "ِي زَمَنِ النَّبِيِّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ ",
+            "suffix_context": "ِ بِخَبَرِ الْوَاحِدِ، وَقَدْ كَانَ ثَابِتًا عَنْهُمُ ا"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        72
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "ready_qualified_context"
     },
     {
       "id": "QUR-R124-Q012",
@@ -1964,6 +2829,82 @@
       "publication_status": "ready"
     },
     {
+      "id": "QUR-R158-Q061",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 158,
+      "audit_ids": [
+        "Q061"
+      ],
+      "reference_type": "legal_lexical_context",
+      "references": [
+        {
+          "surah": 2,
+          "ayah_start": 228,
+          "ayah_end": 228,
+          "verse_key": "2:228",
+          "surah_name_en": "al-Baqarah",
+          "surah_name_ar": "البقرة",
+          "label_en": "al-Baqarah 2:228",
+          "label_ar": "البقرة 2:228",
+          "url": "https://quran.com/2/228"
+        }
+      ],
+      "text_en": "Qurʾānic legal–lexical context — Cf. Qurʾān, al-Baqarah 2:228. The term «قُرُوءٍ» is used in the waiting-period rule, explaining the legal relevance of this lexical ambiguity. This is not a direct quotation of 2:228; the 2:237 quotation is separately cited.",
+      "text_ar": "سياق لغوي فقهي قرآني — قارن القرآن، البقرة 2:228. «قروء» لفظ في آية العدة، وهو سياق المثال المعجمي، لا اقتباس مباشر؛ وإحالة 2:237 مستقلة.",
+      "qualification_en": "The term «قُرُوءٍ» is used in the waiting-period rule, explaining the legal relevance of this lexical ambiguity. This is not a direct quotation of 2:228; the 2:237 quotation is separately cited.",
+      "qualification_ar": "«قروء» لفظ في آية العدة، وهو سياق المثال المعجمي، لا اقتباس مباشر؛ وإحالة 2:237 مستقلة.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "كالقرء الذي يعنى به مرة الطهر ومرة الحيض",
+            "start_codepoint": 184,
+            "end_codepoint_exclusive": 224,
+            "occurrence_1based": 1,
+            "prefix_context": "لعين التي يبصر بها، وغير ذلك. وربما قيل على الشيء وضده ",
+            "suffix_context": ". وأما المجمل من جهة التركيب فما تركب عن مثل هذه الألفا"
+          },
+          "en": {
+            "text": "qurʾ sometimes means a period of purity and sometimes menstruation",
+            "start_codepoint": 266,
+            "end_codepoint_exclusive": 332,
+            "occurrence_1based": 1,
+            "prefix_context": ". A term may even signify a thing and its opposite, as ",
+            "suffix_context": ". Indeterminacy in composition occurs in expressions co"
+          },
+          "vocalized": {
+            "text": "كَالْقُرْءِ الَّذِي يُعْنَى بِهِ مَرَّةً الطُّهْرُ وَمَرَّةً الْحَيْض",
+            "start_codepoint": 301,
+            "end_codepoint_exclusive": 370,
+            "occurrence_1based": 1,
+            "prefix_context": "ْرِ ذَلِكَ. وَرُبَّمَا قِيلَ عَلَى الشَّيْءِ وَضِدِّهِ ",
+            "suffix_context": "ُ. وَأَمَّا الْمُجْمَلُ مِنْ جِهَةِ التَّرْكِيبِ فَمَا "
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        89
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "ready_qualified_context"
+    },
+    {
       "id": "QUR-R158-Q020",
       "kind": "quran",
       "category": "source",
@@ -2238,6 +3179,104 @@
       "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
       "contains_hadith_reference": false,
       "publication_status": "ready"
+    },
+    {
+      "id": "QUR-R164-Q063",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 164,
+      "audit_ids": [
+        "Q063"
+      ],
+      "reference_type": "lexical_parallel",
+      "references": [
+        {
+          "surah": 4,
+          "ayah_start": 43,
+          "ayah_end": 43,
+          "verse_key": "4:43",
+          "surah_name_en": "al-Nisāʾ",
+          "surah_name_ar": "النساء",
+          "label_en": "al-Nisāʾ 4:43",
+          "label_ar": "النساء 4:43",
+          "url": "https://quran.com/4/43"
+        },
+        {
+          "surah": 5,
+          "ayah_start": 6,
+          "ayah_end": 6,
+          "verse_key": "5:6",
+          "surah_name_en": "al-Māʾida",
+          "surah_name_ar": "المائدة",
+          "label_en": "al-Māʾida 5:6",
+          "label_ar": "المائدة 5:6",
+          "url": "https://quran.com/5/6"
+        },
+        {
+          "surah": 2,
+          "ayah_start": 236,
+          "ayah_end": 237,
+          "verse_key": "2:236-237",
+          "surah_name_en": "al-Baqarah",
+          "surah_name_ar": "البقرة",
+          "label_en": "al-Baqarah 2:236–237",
+          "label_ar": "البقرة 2:236–237",
+          "url": "https://quran.com/2/236-237"
+        }
+      ],
+      "text_en": "Qurʾānic lexical illustration — Cf. Qurʾān, al-Nisāʾ 4:43; al-Māʾida 5:6; al-Baqarah 2:236–237. Compare «الغائط» and «لامستم النساء» in 4:43 and 5:6 with the distinct forms of «المسيس» in 2:236–237. This is not a composite verse quotation.",
+      "text_ar": "شواهد لفظية قرآنية — قارن القرآن، النساء 4:43؛ المائدة 5:6؛ البقرة 2:236–237. قارن الغائط ولامستم النساء في 4:43 و5:6، وصيغ المسيس في 2:236–237؛ هي شواهد لغوية لا اقتباس مركب.",
+      "qualification_en": "Compare «الغائط» and «لامستم النساء» in 4:43 and 5:6 with the distinct forms of «المسيس» in 2:236–237. This is not a composite verse quotation.",
+      "qualification_ar": "قارن الغائط ولامستم النساء في 4:43 و5:6، وصيغ المسيس في 2:236–237؛ هي شواهد لغوية لا اقتباس مركب.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "عن الرجيع بالغائط وعن النكاح بالمسيس",
+            "start_codepoint": 304,
+            "end_codepoint_exclusive": 340,
+            "occurrence_1based": 1,
+            "prefix_context": "ى، لأنه عن الندى يكون. ومن هذا الصنف الكناية، كتعبيرهم ",
+            "suffix_context": "."
+          },
+          "en": {
+            "text": "referring to excrement as ‘the low ground’ and sexual intercourse as ‘touching.’",
+            "start_codepoint": 429,
+            "end_codepoint_exclusive": 509,
+            "occurrence_1based": 1,
+            "prefix_context": " dew. This class includes indirect expression, such as ",
+            "suffix_context": ""
+          },
+          "vocalized": {
+            "text": "عَنِ الرَّجِيعِ بِالْغَائِطِ وَعَنِ النِّكَاحِ بِالْمَسِيس",
+            "start_codepoint": 515,
+            "end_codepoint_exclusive": 573,
+            "occurrence_1based": 1,
+            "prefix_context": ". وَمِنْ هَذَا الصِّنْفِ الْكِنَايَةُ، كَتَعْبِيرِهِمْ ",
+            "suffix_context": "ِ."
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        94
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "ready_qualified_context"
     },
     {
       "id": "QUR-R167-Q023",
@@ -4051,168 +5090,6 @@
       "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
       "contains_hadith_reference": false,
       "publication_status": "ready"
-    },
-    {
-      "id": "QUR-R001-Q049",
-      "kind": "quran",
-      "category": "source",
-      "source_type": "quran",
-      "section_id": 1,
-      "audit_ids": [
-        "Q049"
-      ],
-      "reference_type": "allusion",
-      "references": [
-        {
-          "surah": 55,
-          "ayah_start": 4,
-          "ayah_end": 4,
-          "verse_key": "55:4",
-          "surah_name_en": "al-Raḥmān",
-          "surah_name_ar": "الرحمن",
-          "label_en": "al-Raḥmān 55:4",
-          "label_ar": "الرحمن 55:4",
-          "url": "https://quran.com/55/4"
-        }
-      ],
-      "text_en": "Cf. Qurʾān, al-Raḥmān 55:4 (عَلَّمَهُ ٱلْبَيَانَ). Ibn Rushd’s «معلّم البيان» is a possible verbal echo, not a quotation; deliberate allusion is not certain.",
-      "text_ar": "قارن القرآن، الرحمن 55:4 («عَلَّمَهُ ٱلْبَيَانَ»). عبارة ابن رشد «معلّم البيان» قد تكون تلميحًا لفظيًا إلى الآية، وليست اقتباسًا منها، ولا يُجزم بقصده.",
-      "qualification_en": "Possible verbal echo of 55:4, not a quotation or confirmed intentional citation.",
-      "qualification_ar": "تشابه لفظي محتمل مع الآية 55:4، لا اقتباس ولا إحالة مقطوع بها.",
-      "anchors": [
-        {
-          "segment_index": 0,
-          "ar": {
-            "text": "معلم البيان",
-            "start_codepoint": 17,
-            "end_codepoint_exclusive": 28,
-            "occurrence_1based": 1,
-            "segment_sha256": "032b79448d596a175b3e86400c1276498be358077f436b3473689e02837b9818",
-            "prefix_context": "أما بعد حمدا لله ",
-            "suffix_context": "، وموجب النظر والاستدلال، ومختص الإنسان بإقامة الحجج البالغة"
-          },
-          "en": {
-            "text": "who teaches articulate expression",
-            "start_codepoint": 32,
-            "end_codepoint_exclusive": 65,
-            "occurrence_1based": 1,
-            "segment_sha256": "5621cf5cefa24b549a7ee4a495952c13f109e8602baf744e6e8b530183318525",
-            "prefix_context": "To proceed, after praising God, ",
-            "suffix_context": ", makes inquiry (النظر) and inference (الاستدلال) obligatory"
-          },
-          "vocalized": {
-            "text": "مُعَلِّمِ الْبَيَانِ",
-            "start_codepoint": 30,
-            "end_codepoint_exclusive": 50,
-            "occurrence_1based": 1,
-            "segment_sha256": "b2bd4cb02c8baffb17dd5d5e3ef38bded4ec01225d9a4de5f7689129b0066570",
-            "prefix_context": "أَمَّا بَعْدُ حَمْدًا لِلَّهِ ",
-            "suffix_context": "، وَمُوجِبِ النَّظَرِ وَالِاسْتِدْلَالِ، وَمُخْتَصِّ الْإِنْ"
-          },
-          "insert_marker": "after_anchor",
-          "bilingual_shared_note": true
-        }
-      ],
-      "original_scholarly_pages": [
-        7
-      ],
-      "existing_note_ids": [],
-      "show_in_editions": [
-        "scholarly",
-        "study",
-        "english",
-        "arabic",
-        "arabic-vowelled"
-      ],
-      "scholarly_placement": "local_section_source_note",
-      "other_editions_placement": "numbered_page_footnote",
-      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
-      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
-      "contains_hadith_reference": false,
-      "publication_status": "published_qualified_possible_allusion",
-      "audit_decision": "Retain a contextually plausible verbal echo in the opening invocation, explicitly qualified as possible and non-verbatim, without asserting authorial intent.",
-      "decision_date": "2026-10-21"
-    },
-    {
-      "id": "QUR-R001-Q050",
-      "kind": "quran",
-      "category": "source",
-      "source_type": "quran",
-      "section_id": 1,
-      "audit_ids": [
-        "Q050"
-      ],
-      "reference_type": "allusion",
-      "references": [
-        {
-          "surah": 6,
-          "ayah_start": 149,
-          "ayah_end": 149,
-          "verse_key": "6:149",
-          "surah_name_en": "al-Anʿām",
-          "surah_name_ar": "الأنعام",
-          "label_en": "al-Anʿām 6:149",
-          "label_ar": "الأنعام 6:149",
-          "url": "https://quran.com/6/149"
-        }
-      ],
-      "text_en": "Cf. Qurʾān, al-Anʿām 6:149 (فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ). The Qurʾān has the singular «الحجة البالغة»; Ibn Rushd writes the plural «الحجج البالغة». This is a possible verbal echo, not a quotation or proven citation.",
-      "text_ar": "قارن القرآن، الأنعام 6:149 («فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ»). جاء اللفظ في الآية مفردًا «الحجة البالغة»، واستعمل ابن رشد الجمع «الحجج البالغة». وهذا تشابه لفظي محتمل، لا اقتباس ولا إحالة مقطوع بها.",
-      "qualification_en": "Singular Qurʾānic phrase versus Ibn Rushd’s plural; possible verbal echo only.",
-      "qualification_ar": "جاءت العبارة في القرآن مفردة وفي كلام ابن رشد جمعًا؛ وهذا تلميح لفظي محتمل فحسب.",
-      "anchors": [
-        {
-          "segment_index": 0,
-          "ar": {
-            "text": "الحجج البالغة",
-            "start_codepoint": 75,
-            "end_codepoint_exclusive": 88,
-            "occurrence_1based": 1,
-            "segment_sha256": "032b79448d596a175b3e86400c1276498be358077f436b3473689e02837b9818",
-            "prefix_context": "ه معلم البيان، وموجب النظر والاستدلال، ومختص الإنسان بإقامة ",
-            "suffix_context": " وضرب الأمثال، والصلاة على محمد خاتم الرسل ونهاية التمام وال"
-          },
-          "en": {
-            "text": "conclusive arguments",
-            "start_codepoint": 176,
-            "end_codepoint_exclusive": 196,
-            "occurrence_1based": 1,
-            "segment_sha256": "5621cf5cefa24b549a7ee4a495952c13f109e8602baf744e6e8b530183318525",
-            "prefix_context": "bligatory, and singles out the human being for establishing ",
-            "suffix_context": " and setting forth examples; and after invoking blessings up"
-          },
-          "vocalized": {
-            "text": "الْحُجَجِ الْبَالِغَةِ",
-            "start_codepoint": 128,
-            "end_codepoint_exclusive": 150,
-            "occurrence_1based": 1,
-            "segment_sha256": "b2bd4cb02c8baffb17dd5d5e3ef38bded4ec01225d9a4de5f7689129b0066570",
-            "prefix_context": "َرِ وَالِاسْتِدْلَالِ، وَمُخْتَصِّ الْإِنْسَانِ بِإِقَامَةِ ",
-            "suffix_context": " وَضَرْبِ الْأَمْثَالِ، وَالصَّلَاةُ عَلَى مُحَمَّدٍ خَاتَمِ"
-          },
-          "insert_marker": "after_anchor",
-          "bilingual_shared_note": true
-        }
-      ],
-      "original_scholarly_pages": [
-        7
-      ],
-      "existing_note_ids": [],
-      "show_in_editions": [
-        "scholarly",
-        "study",
-        "english",
-        "arabic",
-        "arabic-vowelled"
-      ],
-      "scholarly_placement": "local_section_source_note",
-      "other_editions_placement": "numbered_page_footnote",
-      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
-      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
-      "contains_hadith_reference": false,
-      "publication_status": "published_qualified_possible_allusion",
-      "audit_decision": "Retain a contextually plausible verbal echo in the opening invocation, explicitly qualified as possible and non-verbatim, without asserting authorial intent.",
-      "decision_date": "2026-10-21"
     }
   ],
   "existing_note_edits": [
@@ -4493,99 +5370,15 @@
       "reason": "One source note identifies the initial command and subsequent cow narrative, 2:67–71."
     }
   ],
-  "excluded_candidates": [
-    {
-      "audit_id": "Q044",
-      "section_id": 98,
-      "candidate_sources": [
-        "9:100",
-        "48:18"
-      ],
-      "decision": "do_not_insert_by_default",
-      "reason": "The author makes a general appeal to many verses without specifying them; the proposed examples are representative, not an identifiable quoted source."
-    },
-    {
-      "audit_id": "Q054",
-      "section_id": 19,
-      "candidate_sources": [
-        "5:89"
-      ],
-      "decision": "do_not_insert_by_default",
-      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
-    },
-    {
-      "audit_id": "Q055",
-      "section_id": 20,
-      "candidate_sources": [
-        "5:89"
-      ],
-      "decision": "do_not_insert_by_default",
-      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
-    },
-    {
-      "audit_id": "Q056",
-      "section_id": 23,
-      "candidate_sources": [
-        "5:6"
-      ],
-      "decision": "do_not_insert_by_default",
-      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
-    },
-    {
-      "audit_id": "Q057",
-      "section_id": 60,
-      "candidate_sources": [
-        "2:173"
-      ],
-      "decision": "do_not_insert_by_default",
-      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
-    },
-    {
-      "audit_id": "Q059",
-      "section_id": 120,
-      "candidate_sources": [
-        "5:90-91"
-      ],
-      "decision": "do_not_insert_by_default",
-      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
-    },
-    {
-      "audit_id": "Q060",
-      "section_id": 123,
-      "candidate_sources": [
-        "2:144"
-      ],
-      "decision": "do_not_insert_by_default",
-      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
-    },
-    {
-      "audit_id": "Q061",
-      "section_id": 158,
-      "candidate_sources": [
-        "2:228"
-      ],
-      "decision": "do_not_insert_by_default",
-      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
-    },
-    {
-      "audit_id": "Q063",
-      "section_id": 164,
-      "candidate_sources": [
-        "4:43",
-        "5:6",
-        "2:236-237"
-      ],
-      "decision": "do_not_insert_by_default",
-      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
-    }
-  ],
+  "excluded_candidates": [],
   "counts": {
-    "notes": 50,
-    "anchor_pairs": 54,
+    "notes": 61,
+    "anchor_pairs": 65,
     "existing_note_text_splits": 22,
-    "excluded_optional_candidates": 9,
+    "excluded_optional_candidates": 0,
     "unresolved_anchors": 0,
-    "withheld_allusions": 3
+    "withheld_allusions": 1,
+    "approved_contextual_candidates": 9
   },
   "withheld_editorial_allusions": [
     {
@@ -4668,175 +5461,99 @@
       "publication_status": "withheld_from_passage_notes_and_pdfs",
       "audit_decision": "Short verbal or thematic parallel is insufficient evidence of intended Qur'anic allusion; preserve as an unpublished editorial candidate",
       "decision_date": "2026-10-21"
-    },
-    {
-      "id": "QUR-R011-Q052",
-      "kind": "quran",
-      "category": "source",
-      "source_type": "quran",
-      "section_id": 11,
-      "audit_ids": [
-        "Q052"
-      ],
-      "reference_type": "allusion",
-      "references": [
-        {
-          "surah": 29,
-          "ayah_start": 45,
-          "ayah_end": 45,
-          "verse_key": "29:45",
-          "surah_name_en": "al-ʿAnkabūt",
-          "surah_name_ar": "العنكبوت",
-          "label_en": "al-ʿAnkabūt 29:45",
-          "label_ar": "العنكبوت 29:45",
-          "url": "https://quran.com/29/45"
-        }
-      ],
-      "text_en": "Cf. Qurʾān, al-ʿAnkabūt 29:45. The verse speaks of prayer restraining indecency; the author’s wording is retained.",
-      "text_ar": "قارن القرآن، العنكبوت 29:45. تذكر الآية نهي الصلاة عن الفحشاء؛ وأُبقي لفظ المؤلف.",
-      "qualification_en": "The verse speaks of prayer restraining indecency; the author’s wording is retained.",
-      "qualification_ar": "تذكر الآية نهي الصلاة عن الفحشاء؛ وأُبقي لفظ المؤلف.",
-      "anchors": [
-        {
-          "segment_index": 1,
-          "ar": {
-            "text": "اللفظ المانع من الفحشاء",
-            "start_codepoint": 155,
-            "end_codepoint_exclusive": 178,
-            "occurrence_1based": 1,
-            "segment_sha256": "1bc3a6449e984740d9af9d086952ae5eeabbf1d774b76e5650bebd277e878460",
-            "prefix_context": "نعم، وبعضه بانضمام الشرع كالطهارة والصلاة لما فيهما مثلا من ",
-            "suffix_context": " ومن النظافة. وفائدة معرفة هذا الاختلاف في هذه الصناعة تتصور"
-          },
-          "en": {
-            "text": "the utterance that restrains indecency",
-            "start_codepoint": 272,
-            "end_codepoint_exclusive": 310,
-            "occurrence_1based": 1,
-            "segment_sha256": "e321103bb22a8ccead6ca0e36badab2921d7f762457d09c47b2d24032e4735df",
-            "prefix_context": "th ritual purification and prayer, because of, for example, ",
-            "suffix_context": " and the cleanliness they involve. The benefit of knowing th"
-          },
-          "vocalized": {
-            "text": "اللَّفْظِ الْمَانِعِ مِنَ الْفَحْشَاءِ",
-            "start_codepoint": 263,
-            "end_codepoint_exclusive": 301,
-            "occurrence_1based": 1,
-            "segment_sha256": "2267da792505bda94d1b4902b8c4714a11320fd0c61683a7f92a3d42a5529fec",
-            "prefix_context": "ْعِ كَالطَّهَارَةِ وَالصَّلَاةِ لِمَا فِيهِمَا مَثَلًا مِنَ ",
-            "suffix_context": " وَمِنَ النَّظَافَةِ. وَفَائِدَةُ مَعْرِفَةِ هَذَا الِاخْتِل"
-          },
-          "insert_marker": "after_anchor",
-          "bilingual_shared_note": true
-        }
-      ],
-      "original_scholarly_pages": [
-        12
-      ],
-      "existing_note_ids": [],
-      "show_in_editions": [
-        "scholarly",
-        "study",
-        "english",
-        "arabic",
-        "arabic-vowelled"
-      ],
-      "scholarly_placement": "local_section_source_note",
-      "other_editions_placement": "numbered_page_footnote",
-      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
-      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
-      "contains_hadith_reference": false,
-      "publication_status": "withheld_from_passage_notes_and_pdfs",
-      "audit_decision": "Short verbal or thematic parallel is insufficient evidence of intended Qur'anic allusion; preserve as an unpublished editorial candidate",
-      "decision_date": "2026-10-21"
-    },
-    {
-      "id": "QUR-R047-Q053",
-      "kind": "quran",
-      "category": "source",
-      "source_type": "quran",
-      "section_id": 47,
-      "audit_ids": [
-        "Q053"
-      ],
-      "reference_type": "allusion",
-      "references": [
-        {
-          "surah": 12,
-          "ayah_start": 53,
-          "ayah_end": 53,
-          "verse_key": "12:53",
-          "surah_name_en": "Yūsuf",
-          "surah_name_ar": "يوسف",
-          "label_en": "Yūsuf 12:53",
-          "label_ar": "يوسف 12:53",
-          "url": "https://quran.com/12/53"
-        }
-      ],
-      "text_en": "Cf. Qurʾān, Yūsuf 12:53.",
-      "text_ar": "قارن القرآن، يوسف 12:53.",
-      "qualification_en": "",
-      "qualification_ar": "",
-      "anchors": [
-        {
-          "segment_index": 1,
-          "ar": {
-            "text": "الأمارة بالسوء",
-            "start_codepoint": 209,
-            "end_codepoint_exclusive": 223,
-            "occurrence_1based": 1,
-            "segment_sha256": "b6406fc5d13707e1b65853d7bab6bf1252d1ebef9e1541721f7c90856a9a0317",
-            "prefix_context": "ده عن الامتثال عناد أو غير ذلك من الأسباب المانعة. وبالجملة ",
-            "suffix_context": " كثيرا ما تصد الإنسان عن الواجب مع اعتقاد وجوبه."
-          },
-          "en": {
-            "text": "the soul that commands evil",
-            "start_codepoint": 290,
-            "end_codepoint_exclusive": 317,
-            "occurrence_1based": 1,
-            "segment_sha256": "41c079070ef2df3e2c7e0a52e2c2f9c39bae1b08ef78a6a46ab8de3a6cab1ea3",
-            "prefix_context": "er impediment prevents a person from complying. In general, ",
-            "suffix_context": " often turns a person away from a duty even while he believe"
-          },
-          "vocalized": {
-            "text": "الْأَمَّارَةُ بِالسُّوءِ",
-            "start_codepoint": 344,
-            "end_codepoint_exclusive": 368,
-            "occurrence_1based": 1,
-            "segment_sha256": "57277559773e65d4abe05d092f4e409284e8bcb7da84f588d866edc7144506b3",
-            "prefix_context": "يْرُ ذَلِكَ مِنَ الْأَسْبَابِ الْمَانِعَةِ. وَبِالْجُمْلَةِ ",
-            "suffix_context": " كَثِيرًا مَا تَصُدُّ الْإِنْسَانَ عَنِ الْوَاجِبِ مَعَ اعْت"
-          },
-          "insert_marker": "after_anchor",
-          "bilingual_shared_note": true
-        }
-      ],
-      "original_scholarly_pages": [
-        31
-      ],
-      "existing_note_ids": [],
-      "show_in_editions": [
-        "scholarly",
-        "study",
-        "english",
-        "arabic",
-        "arabic-vowelled"
-      ],
-      "scholarly_placement": "local_section_source_note",
-      "other_editions_placement": "numbered_page_footnote",
-      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
-      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
-      "contains_hadith_reference": false,
-      "publication_status": "withheld_from_passage_notes_and_pdfs",
-      "audit_decision": "Short verbal or thematic parallel is insufficient evidence of intended Qur'anic allusion; preserve as an unpublished editorial candidate",
-      "decision_date": "2026-10-21"
     }
   ],
   "citation_admissibility_policy": {
     "version": "2026-10-21",
-    "principle": "Shared terminology or general thematic similarity must not generate an authorial Quran reference.",
-    "admit": "Verbatim or clearly introduced Qurʾānic quotations, explicit invocation of a verse, or sufficiently distinctive verbal parallels identified as possible echoes and explicitly distinguished from certain authorial citation.",
-    "withhold": "Short word matches, ordinary idioms, and thematic comparisons without textual evidence.",
-    "qualify": "Distinguish quotations from possible verbal echoes, paraphrases, composites, reported readings and canonical Qurʾānic wording; preserve uncertainty about authorial intent."
-  }
+    "principle": "Relevant qualified allusions and legal or lexical Quranic contexts may be cited, without misclassifying them as authorial quotations.",
+    "admit": "Exact quotations, distinct literary echoes, explicit legal bases and demonstrable contextual examples.",
+    "withhold": "Incidental formulaic match R1 خاتم الرسل to Q33:40.",
+    "qualify": "Always disclose allusion, legal basis, representative example or historical-dictionary lexical parallel."
+  },
+  "approved_contextual_candidates": [
+    {
+      "audit_id": "Q044",
+      "section_id": 98,
+      "candidate_sources": [
+        "9:100",
+        "48:18"
+      ],
+      "decision": "qualified_context_published",
+      "reason": "The author makes a general appeal to many verses without specifying them; the proposed examples are representative, not an identifiable quoted source."
+    },
+    {
+      "audit_id": "Q054",
+      "section_id": 19,
+      "candidate_sources": [
+        "5:89"
+      ],
+      "decision": "qualified_context_published",
+      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
+    },
+    {
+      "audit_id": "Q055",
+      "section_id": 20,
+      "candidate_sources": [
+        "5:89"
+      ],
+      "decision": "qualified_context_published",
+      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
+    },
+    {
+      "audit_id": "Q056",
+      "section_id": 23,
+      "candidate_sources": [
+        "5:6"
+      ],
+      "decision": "qualified_context_published",
+      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
+    },
+    {
+      "audit_id": "Q057",
+      "section_id": 60,
+      "candidate_sources": [
+        "2:173"
+      ],
+      "decision": "qualified_context_published",
+      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
+    },
+    {
+      "audit_id": "Q059",
+      "section_id": 120,
+      "candidate_sources": [
+        "5:90-91"
+      ],
+      "decision": "qualified_context_published",
+      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
+    },
+    {
+      "audit_id": "Q060",
+      "section_id": 123,
+      "candidate_sources": [
+        "2:144"
+      ],
+      "decision": "qualified_context_published",
+      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
+    },
+    {
+      "audit_id": "Q061",
+      "section_id": 158,
+      "candidate_sources": [
+        "2:228"
+      ],
+      "decision": "qualified_context_published",
+      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
+    },
+    {
+      "audit_id": "Q063",
+      "section_id": 164,
+      "candidate_sources": [
+        "4:43",
+        "5:6",
+        "2:236-237"
+      ],
+      "decision": "qualified_context_published",
+      "reason": "A legal or lexical context can be connected to this verse, but the passage does not expressly quote or invoke it; omit a compulsory source footnote rather than turn an optional contextual suggestion into an attribution."
+    }
+  ]
 }

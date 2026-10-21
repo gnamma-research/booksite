@@ -173,3 +173,10 @@ vowelling, internal navigation, PDF bookmarks and personal-annotation maps.
 
 Avoid publishing stale PDF binaries: source-note footnote numbering and exact PDF
 page maps require regeneration and fresh validation before merged release.
+
+
+## Approved full-text Qurʾānic contextual references · 21 October 2026
+
+There are 61 main-text Qurʾānic references and 65 exact bilingual anchors. These preserve all 542 original explanatory notes and 33 hadith source notes. The literary echoes R1 (55:4, 6:149), R11 (29:45), and R47 (12:53) are plainly identified as possible allusions, not direct quotations. The formula R1 «خاتم الرسل» is not automatically sourced to Q33:40. Nine legal/contextual examples are now referenced with explicit relationship labels. In particular, R23 Q5:6 supplies the legal basis of head-wiping but does not settle the disputed minimum extent. R163 already has its cow narrative verses Q2:67–71 and needs no duplication.
+
+The full historical dictionary retains its own attribution: seven newly qualified Qurʾānic lexical/legal source notes are placed under six complete historical source articles, in addition to the existing Q75:3–4 quotation. The old optional J-ghaya phrase «إلى الليل» is absent from the actual current article and cannot be anchored there; R195 already gives Q2:187. These additions must be released with all five canonical PDFs, two A4 study variants and exact hash-bound personal PDF maps; the eight apparatus-free A4 reading editions remain distinct.

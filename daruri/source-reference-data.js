@@ -443,6 +443,116 @@ window.DARURI_SOURCE_REFERENCES = {
           }
         ]
       }
+    ],
+    "R-khutb": [
+      {
+        "id": "SRC-BQ02",
+        "kind": "dictionary-source",
+        "kindLabel": "Dictionary source",
+        "source_type": "dictionary",
+        "text": "Qurʾānic lexical parallel: the phrase «وَفَصْلَ الْخِطَابِ» appears in this verse; the historical dictionary supplies the explanation, not Ibn Rushd.",
+        "anchor_en": "Faṣl al-khiṭāb is speech by which an affair is decisively resolved.",
+        "source_references": [
+          {
+            "reference": "Qurʾān 38:20",
+            "url": "https://quran.com/38/20"
+          }
+        ]
+      }
+    ],
+    "J-shart": [
+      {
+        "id": "SRC-BQ03",
+        "kind": "dictionary-source",
+        "kindLabel": "Dictionary source",
+        "source_type": "dictionary",
+        "text": "Qurʾānic lexical parallel: the verse has «أَشْرَاطُهَا» (its signs), not the exact two-word dictionary expression.",
+        "anchor_en": "the signs of the Hour",
+        "source_references": [
+          {
+            "reference": "Qurʾān 47:18",
+            "url": "https://quran.com/47/18"
+          }
+        ]
+      }
+    ],
+    "M-salah": [
+      {
+        "id": "SRC-BQ04",
+        "kind": "dictionary-source",
+        "kindLabel": "Dictionary source",
+        "source_type": "dictionary",
+        "text": "Qurʾānic lexical illustration: corruption and correction are contrasted in the verse. Preserve the dictionary witness's difficult subsequent «بالتشبيه» and existing editorial note.",
+        "anchor_en": "In the Qurʾān, it is contrasted at one time with corruption",
+        "source_references": [
+          {
+            "reference": "Qurʾān 7:56",
+            "url": "https://quran.com/7/56"
+          }
+        ]
+      }
+    ],
+    "K-shabah": [
+      {
+        "id": "SRC-BQ05",
+        "kind": "dictionary-source",
+        "kindLabel": "Dictionary source",
+        "source_type": "dictionary",
+        "text": "Qurʾānic legal basis for the historical dictionary's hunted-game-compensation example; not an authorial quotation.",
+        "anchor_en": "seeking an equivalent in compensation for hunted game",
+        "source_references": [
+          {
+            "reference": "Qurʾān 5:95",
+            "url": "https://quran.com/5/95"
+          }
+        ]
+      },
+      {
+        "id": "SRC-BQ06",
+        "kind": "dictionary-source",
+        "kindLabel": "Dictionary source",
+        "source_type": "dictionary",
+        "text": "Qurʾānic legal context of liʿān; the lexicographer's classification as oath rather than testimony is a juristic interpretation.",
+        "anchor_en": "mutual imprecation (liʿān) is an oath rather than testimony",
+        "source_references": [
+          {
+            "reference": "Qurʾān 24:6–9",
+            "url": "https://quran.com/24/6-9"
+          }
+        ]
+      }
+    ],
+    "J-mujmal": [
+      {
+        "id": "SRC-BQ07",
+        "kind": "dictionary-source",
+        "kindLabel": "Dictionary source",
+        "source_type": "dictionary",
+        "text": "Qurʾānic lexical allusion: «هَلُوعًا» occurs in verse 19 and is described by verses 20–21.",
+        "anchor_en": "halūʿ",
+        "source_references": [
+          {
+            "reference": "Qurʾān 70:19–21",
+            "url": "https://quran.com/70/19-21"
+          }
+        ]
+      }
+    ],
+    "R-darak": [
+      {
+        "id": "SRC-BQ08",
+        "kind": "dictionary-source",
+        "kindLabel": "Dictionary source",
+        "source_type": "dictionary",
+        "text": "Qurʾānic lexical parallel: Hāwiya occurs in 101:9 and is identified with fire in 101:11; source belongs to the historic dictionary.",
+        "anchor_en": "it is called Hāwiya, the abyss",
+        "source_references": [
+          {
+            "reference": "Qurʾān 101:9–11",
+            "url": "https://quran.com/101/9-11"
+          }
+        ]
+      }
     ]
   }
 };
@@ -454,6 +564,6 @@ window.DARURI_SOURCE_REFERENCES = {
   css.rel = 'stylesheet'; css.href = new URL('source-note-ui.css?v=20261021-section1-qparallels2', base).href;
   document.head.appendChild(css);
   var js = document.createElement('script');
-  js.src = new URL('source-note-ui.js?v=20261021-section1-qparallels1', base).href;
+  js.src = new URL('source-note-ui.js?v=20261021-qcontexts2', base).href;
   js.async = false; document.head.appendChild(js);
 })();

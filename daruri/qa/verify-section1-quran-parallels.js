@@ -16,20 +16,20 @@ const restored = [
  {id:'QUR-R001-Q049', url:'https://quran.com/55/4', phrase:'معلم البيان', verse:'عَلَّمَهُ ٱلْبَيَانَ'},
  {id:'QUR-R001-Q050', url:'https://quran.com/6/149', phrase:'الحجج البالغة', verse:'فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ'}
 ];
-const withheld = ['QUR-R001-Q051','QUR-R011-Q052','QUR-R047-Q053'];
-assert.equal(q.notes.length, 50);
-assert.equal(q.counts.notes, 50);
-assert.equal(q.counts.anchor_pairs, 54);
-assert.equal(q.counts.withheld_allusions, 3);
+const withheld = ['QUR-R001-Q051'];
+assert.equal(q.notes.length, 61);
+assert.equal(q.counts.notes, 61);
+assert.equal(q.counts.anchor_pairs, 65);
+assert.equal(q.counts.withheld_allusions, 1);
 assert.deepEqual(q.withheld_editorial_allusions.map(x=>x.id),withheld);
-assert.equal(book.notes.length,625);
-assert.equal(book.stats.notes,625);
-assert.equal(book.stats.noteCount,625);
+assert.equal(book.notes.length,636);
+assert.equal(book.stats.notes,636);
+assert.equal(book.stats.noteCount,636);
 assert.equal(book.sections.length,259);
-assert.equal(book.notes.filter(x=>x.source_type==='quran').length,50);
+assert.equal(book.notes.filter(x=>x.source_type==='quran').length,61);
 assert.equal(book.notes.filter(x=>x.source_type==='hadith').length,33);
 assert.equal(book.notes.filter(x=>!['quran','hadith'].includes(x.source_type)).length,542);
-assert.equal(new Set(book.notes.map(x=>x.id)).size,625);
+assert.equal(new Set(book.notes.map(x=>x.id)).size,636);
 const s=book.sections.find(x=>x.id===1);
 assert(s);
 assert.deepEqual(s.noteIds.slice(-2), restored.map(x=>x.id));
@@ -67,4 +67,7 @@ for(const id of withheld){
 }
 assert(ui.includes('QUR-R038-Q001'), 'existing real quotation preserved');
 assert(pdf.includes('QUR-R038-Q001'), 'existing PDF quotation preserved');
-console.log('PASS: 50 Quran sources; §1 possible 55:4 + 6:149 parallels; three hypotheses withheld; all source anchors and 542 existing notes intact.');
+for(const id of ["QUR-R019-Q054","QUR-R020-Q055","QUR-R023-Q056","QUR-R060-Q057","QUR-R098-Q044","QUR-R120-Q059","QUR-R123-Q060","QUR-R158-Q061","QUR-R164-Q063"]){ const note=q.notes.find(n=>n.id===id), reader=book.notes.find(n=>n.id===id); assert(note&&reader,id+' missing from dual source maps'); assert.notEqual(note.reference_type,'quotation',id+' should be qualified'); }
+assert.equal(q.excluded_candidates.length,0);
+assert.equal(q.counts.approved_contextual_candidates,9);
+console.log('PASS: 61 Quran sources; §1 possible 55:4 + 6:149 parallels; one incidental expression withheld; all source anchors and 542 existing notes intact.');

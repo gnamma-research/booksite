@@ -12,7 +12,8 @@
     "Retain every complete historical dictionary article, its Arabic quotation, translation, source attribution, and existing editorial note. Add source notes outside the historical quotation.",
     "Keep the existing Bidāya book/chapter/issue citations. New application notes identify a report or verse actually invoked in the application; cf. marks a representative parallel where appropriate.",
     "Report numbers follow the linked editions. No source citation by itself implies authentication. Earlier lexical witnesses are explicitly distinguished from independent transmissions.",
-    "Use only for the scholarly edition. Do not add this apparatus to the non-scholarly Arabic, vowelled, English, or study editions."
+    "Use only for the scholarly edition. Do not add this apparatus to the non-scholarly Arabic, vowelled, English, or study editions.",
+    "J-ghaya 'until night' not annotated because phrase absent in current full dictionary article. R195 already cites 2:187."
   ],
   "notes_by_dictionary_article": {
     "ijzāʾ / j-z-ʾ": {
@@ -555,6 +556,239 @@
       "source_article_id": "R-qara",
       "source_key": "R",
       "source_article_locator": "s.v. قرأ"
+    },
+    "khiṭāb / kh-ṭ-b": {
+      "term": "khiṭāb / kh-ṭ-b",
+      "source_article_id": "R-khutb",
+      "article_headword_ar": "خطب",
+      "source_pdf_pages": [
+        183
+      ],
+      "notes": [
+        {
+          "id": "SRC-BQ02",
+          "audit_ids": [
+            "BQ02"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "Faṣl al-khiṭāb is speech by which an affair is decisively resolved.",
+          "source_pdf_page": 183,
+          "source_printed_page": 183,
+          "text": "Qurʾānic lexical parallel: the phrase «وَفَصْلَ الْخِطَابِ» appears in this verse; the historical dictionary supplies the explanation, not Ibn Rushd.",
+          "language": "en",
+          "note_ar": "موازاة لفظية لعبارة «فصل الخطاب» في المعجم التاريخي لا في متن ابن رشد.",
+          "source_references": [
+            {
+              "reference": "Qurʾān 38:20",
+              "url": "https://quran.com/38/20",
+              "verification_status": "qualified_scriptural_parallel"
+            }
+          ],
+          "source_article_id": "R-khutb",
+          "apply": true
+        }
+      ],
+      "source_key": "R",
+      "source_article_locator": "s.v. خطب"
+    },
+    "sharṭ / sh-r-ṭ": {
+      "term": "sharṭ / sh-r-ṭ",
+      "source_article_id": "J-shart",
+      "article_headword_ar": "الشرط",
+      "source_pdf_pages": [
+        192
+      ],
+      "notes": [
+        {
+          "id": "SRC-BQ03",
+          "audit_ids": [
+            "BQ03"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "the signs of the Hour",
+          "source_pdf_page": 192,
+          "source_printed_page": 192,
+          "text": "Qurʾānic lexical parallel: the verse has «أَشْرَاطُهَا» (its signs), not the exact two-word dictionary expression.",
+          "language": "en",
+          "note_ar": "موازاة لفظية: لفظ الآية «أشراطها» لا العبارة المعجمية نفسها.",
+          "source_references": [
+            {
+              "reference": "Qurʾān 47:18",
+              "url": "https://quran.com/47/18",
+              "verification_status": "qualified_scriptural_parallel"
+            }
+          ],
+          "source_article_id": "J-shart",
+          "apply": true
+        }
+      ],
+      "source_key": "J",
+      "source_article_locator": "s.v. الشرط"
+    },
+    "ṣalāḥ / ṣ-l-ḥ": {
+      "term": "ṣalāḥ / ṣ-l-ḥ",
+      "source_article_id": "M-salah",
+      "article_headword_ar": "الصلاح",
+      "source_pdf_pages": [
+        194
+      ],
+      "notes": [
+        {
+          "id": "SRC-BQ04",
+          "audit_ids": [
+            "BQ04"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "In the Qurʾān, it is contrasted at one time with corruption",
+          "source_pdf_page": 194,
+          "source_printed_page": 194,
+          "text": "Qurʾānic lexical illustration: corruption and correction are contrasted in the verse. Preserve the dictionary witness's difficult subsequent «بالتشبيه» and existing editorial note.",
+          "language": "en",
+          "note_ar": "شاهد قرآني يقابل الإفساد والإصلاح؛ تُحفظ القراءة المشكلة «بالتشبيه» وحاشيتها.",
+          "source_references": [
+            {
+              "reference": "Qurʾān 7:56",
+              "url": "https://quran.com/7/56",
+              "verification_status": "qualified_scriptural_parallel"
+            }
+          ],
+          "source_article_id": "M-salah",
+          "apply": true
+        }
+      ],
+      "source_key": "M",
+      "source_article_locator": "s.v. الصلاح"
+    },
+    "shabah / sh-b-h": {
+      "term": "shabah / sh-b-h",
+      "source_article_id": "K-shabah",
+      "article_headword_ar": "الشبه",
+      "source_pdf_pages": [
+        213
+      ],
+      "notes": [
+        {
+          "id": "SRC-BQ05",
+          "audit_ids": [
+            "BQ05"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "seeking an equivalent in compensation for hunted game",
+          "source_pdf_page": 213,
+          "source_printed_page": 213,
+          "text": "Qurʾānic legal basis for the historical dictionary's hunted-game-compensation example; not an authorial quotation.",
+          "language": "en",
+          "note_ar": "أصل فقهي لمثال جزاء الصيد في المعجم لا اقتباس مباشر.",
+          "source_references": [
+            {
+              "reference": "Qurʾān 5:95",
+              "url": "https://quran.com/5/95",
+              "verification_status": "qualified_scriptural_parallel"
+            }
+          ],
+          "source_article_id": "K-shabah",
+          "apply": true
+        },
+        {
+          "id": "SRC-BQ06",
+          "audit_ids": [
+            "BQ06"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "mutual imprecation (liʿān) is an oath rather than testimony",
+          "source_pdf_page": 213,
+          "source_printed_page": 213,
+          "text": "Qurʾānic legal context of liʿān; the lexicographer's classification as oath rather than testimony is a juristic interpretation.",
+          "language": "en",
+          "note_ar": "السياق القرآني للّعان، والتصنيف يمينًا دون شهادة اجتهاد فقهي.",
+          "source_references": [
+            {
+              "reference": "Qurʾān 24:6–9",
+              "url": "https://quran.com/24/6-9",
+              "verification_status": "qualified_scriptural_parallel"
+            }
+          ],
+          "source_article_id": "K-shabah",
+          "apply": true
+        }
+      ],
+      "source_key": "K",
+      "source_article_locator": "s.v. الشبه"
+    },
+    "mujmal / j-m-l": {
+      "term": "mujmal / j-m-l",
+      "source_article_id": "J-mujmal",
+      "article_headword_ar": "المجمل",
+      "source_pdf_pages": [
+        220
+      ],
+      "notes": [
+        {
+          "id": "SRC-BQ07",
+          "audit_ids": [
+            "BQ07"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "halūʿ",
+          "source_pdf_page": 220,
+          "source_printed_page": 220,
+          "text": "Qurʾānic lexical allusion: «هَلُوعًا» occurs in verse 19 and is described by verses 20–21.",
+          "language": "en",
+          "note_ar": "تلميح لفظي إلى «هلوعًا» في الآية 19 وشرحه في الآيتين اللاحقتين.",
+          "source_references": [
+            {
+              "reference": "Qurʾān 70:19–21",
+              "url": "https://quran.com/70/19-21",
+              "verification_status": "qualified_scriptural_parallel"
+            }
+          ],
+          "source_article_id": "J-mujmal",
+          "apply": true
+        }
+      ],
+      "source_key": "J",
+      "source_article_locator": "s.v. المجمل"
+    },
+    "darak / d-r-k": {
+      "term": "darak / d-r-k",
+      "source_article_id": "R-darak",
+      "article_headword_ar": "درك",
+      "source_pdf_pages": [
+        221
+      ],
+      "notes": [
+        {
+          "id": "SRC-BQ08",
+          "audit_ids": [
+            "BQ08"
+          ],
+          "audience": "scholarly",
+          "kind": "source",
+          "anchor_en": "it is called Hāwiya, the abyss",
+          "source_pdf_page": 221,
+          "source_printed_page": 221,
+          "text": "Qurʾānic lexical parallel: Hāwiya occurs in 101:9 and is identified with fire in 101:11; source belongs to the historic dictionary.",
+          "language": "en",
+          "note_ar": "تسمية قرآنية في المعجم التاريخي؛ «هاوية» في 101:9 وبيانها في 101:11.",
+          "source_references": [
+            {
+              "reference": "Qurʾān 101:9–11",
+              "url": "https://quran.com/101/9-11",
+              "verification_status": "qualified_scriptural_parallel"
+            }
+          ],
+          "source_article_id": "R-darak",
+          "apply": true
+        }
+      ],
+      "source_key": "R",
+      "source_article_locator": "s.v. درك"
     }
   },
   "application_notes_by_section": {
@@ -1269,10 +1503,10 @@
     }
   ],
   "counts": {
-    "dictionary_articles_with_additions": 5,
-    "dictionary_quran_notes": 1,
+    "dictionary_articles_with_additions": 11,
+    "dictionary_quran_notes": 8,
     "dictionary_hadith_athar_notes": 12,
-    "dictionary_notes_total": 13,
+    "dictionary_notes_total": 20,
     "dictionary_reports_with_only_earlier_lexical_witness_and_unresolved_independent_transmission": 5,
     "dictionary_reports_with_explicit_disputed_prophetic_attribution": 1,
     "application_notes": 12,
@@ -1280,7 +1514,7 @@
     "application_notes_with_quran_references": 3,
     "application_quran_locations": 4,
     "application_hadith_report_locations": 13,
-    "publication_notes_total": 25,
+    "publication_notes_total": 32,
     "note": "The 12 dictionary report notes are not 12 authenticated Prophetic hadiths. Application Quran and hadith note counts overlap in R158 and R167. Optional/held-back material is excluded from these addition counts."
   },
   "anchor_validation": {
