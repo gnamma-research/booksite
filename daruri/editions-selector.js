@@ -38,7 +38,7 @@
   for(const name of TIERS)Object.assign(PRESETS[name],APPARATUS[name]);
   let state = Object.fromEntries(TIERS.map(t=>[t,{...PRESETS[t]}]));
   let tier = 'reading',category = 'layout',customOpen = false;
-  let mainRoot = null, catalog = null, canonical = null, requestId = 0;
+  let mainRoot = null, catalog = null, apparatusCatalog = null, canonical = null, requestId = 0;
   const escape = value => String(value==null?'':value).replace(/[&<>"']/g,
     c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function restore(){
@@ -105,11 +105,28 @@
     if(s.scope!=='full'){reply.reason='No published PDF for this text selection. Only the complete work is currently available here.';return reply;}
     if(s.en&&s.ar&&s.layout!=='parallel'){reply.reason='Stacked bilingual layout has not been published.';return reply;}
     if(s.density!=='standard'){reply.reason='This print-density variant has not been published.';return reply;}
-    for(const key of Object.keys(APPARATUS[tier])){
-      if(s[key]!==APPARATUS[tier][key]){
-        reply.reason='No published '+LABELS[tier]+' PDF matches the selected glossary, index, applications and concordance options.';
+    const standardApparatus=Object.keys(APPARATUS[tier]).every(k=>s[k]===APPARATUS[tier][k]);
+    if(!standardApparatus){
+      if(!apparatusCatalog){
+        reply.reason='No verified published PDF currently matches that apparatus selection.';
         return reply;
       }
+      const extra=apparatusCatalog.find(row=>
+        row.tier===tier && row.language===language(s) &&
+        row.editorial_titles===(s.headings==='editorial') &&
+        row.notes===s.notes &&
+        row.glossary===s.glossary &&
+        row.index===s.index &&
+        row.applications===s.applications &&
+        row.concordance===s.concordance &&
+        row.scope==='full' && row.layout==='parallel' && row.density==='standard');
+      if(extra){
+        reply.record=extra;
+        reply.status='ready';
+        return reply;
+      }
+      reply.reason='This apparatus combination has not been published as a verified PDF.';
+      return reply;
     }
     if(tier==='reading'){
       if(s.notes!=='none'){reply.reason='Reading PDFs without publisher notes are available. The chosen publisher-note profile is not published.';return reply;}
@@ -193,7 +210,7 @@
                 '<button type="button" class="gn-es-personal-choice" data-es-personal="personalNotes" aria-pressed="false"><span>Include my notes</span><span data-es-flag="personalNotes">Off</span></button>'+
                 '<button type="button" class="gn-es-personal-choice" data-es-personal="personalBookmarks" aria-pressed="false"><span>Include my bookmarks</span><span data-es-flag="personalBookmarks">Off</span></button>'+
               '</div>'+
-              '<p class="gn-es-hint">Your personal notes remain on this device. The separate PDF exporter currently supports the five canonical PDFs; new A4 variants need verified passage maps before precise P-note links are available.</p>'+
+              '<p class="gn-es-hint">Your personal notes stay on this device. The five canonical PDFs have precise-word maps; the new apparatus editions have their own verified section and reference-entry maps. Unsupported word-level highlights fall back safely to linked P-numbered section notes.</p>'+
               '<a class="gn-es-personal-link" href="personal-export.html">Open local personal PDF tools <span aria-hidden="true">↗</span></a>'+
             '</div>'+
             '<div data-es-section="apparatus" hidden>'+
@@ -213,7 +230,7 @@
         '<div class="gn-es-actions" aria-label="Document action">'+
           '<a data-es-action="open" class="gn-es-action gn-es-action-primary" aria-label="Open selected published PDF" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Open PDF</span></a>'+
         '</div>'+
-        '<p class="gn-es-private-hint" data-es-private-hint hidden>The public PDF has no private notes. To create a local personalized copy, use Customize → Notes → Open local personal PDF tools (currently for canonical PDFs).</p>'+
+        '<p class="gn-es-private-hint" data-es-private-hint hidden>Your selected PDF contains no private notes until the local personal-PDF tool appends them as linked P-numbered pages. Use Customize → Notes to create that copy on this device.</p>'+
         '<p class="gn-es-study-guide" data-es-study-guide hidden><a href="daruri-study-guide.pdf?v=daruri6-sources-20261020" target="_blank" rel="noopener noreferrer">Study Guide PDF ↗</a></p>'+
       '</section></div>';
   }
@@ -274,6 +291,18 @@
         'editions/'+record.file+'?v='+encodeURIComponent((record.sha256||'published').slice(0,12));
     }else action.removeAttribute('href');
     root.querySelector('[data-es-private-hint]').hidden=!isPersonal;
+    const local=root.querySelector('.gn-es-personal-link');
+    // Preselect this exact verified apparatus PDF in the browser-local
+    // personal exporter. Unavailable variants cannot create invalid exports.
+    if(hasCurrent && result.record.map_file){
+      const path='editions/'+result.record.file;
+      local.href='personal-export.html?pdf='+encodeURIComponent(path)+
+        '&personal='+(s.personalNotes?'1':'0')+
+        '&bookmarks='+(s.personalBookmarks?'1':'0');
+    }else{
+      local.href='personal-export.html'+(isPersonal?
+        '?personal='+(s.personalNotes?'1':'0')+'&bookmarks='+(s.personalBookmarks?'1':'0'):'');
+    }
     root.querySelector('[data-es-study-guide]').hidden=tier!=='study';
     root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen));
     root.querySelector('#gn-es-custom').hidden=!customOpen;
@@ -400,12 +429,22 @@
       .then(r=>r.ok?r.json():null).catch(()=>null);
     const reference=fetch('pdf-editions-manifest.json?v=published-selector-v1',{cache:'no-store'})
       .then(r=>r.ok?r.json():null).catch(()=>null);
-    Promise.all([check,reference]).then(([a,b])=>{
+    const apparatus=fetch('editions/apparatus/manifest.json?v=apparatus-verified1',{cache:'no-store'})
+      .then(r=>r.ok?r.json():null).catch(()=>null);
+    Promise.all([check,reference,apparatus]).then(([a,b,extra])=>{
       if(thisRequest!==requestId||mainRoot!==root)return;
       catalog=a?.status==='verified'&&Array.isArray(a.files)?
         a.files.filter(x=>x&&['reading','study'].includes(x.tier)&&
           /^(reading|study)\/daruri-(reading|study)-(bilingual-unvowelled|bilingual|arabic-vowelled|english|arabic)-titles-(on|off)\.pdf$/.test(x.file||'')&&
           Number.isInteger(x.pages)&&x.pages>0&&/^[0-9a-f]{64}$/.test(x.sha256||'')):null;
+      apparatusCatalog=extra?.status==='verified'&&Array.isArray(extra.files)?
+        extra.files.filter(row=>row && ['reading','study'].includes(row.tier) &&
+          /^apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled)-(glossary|index|glossary-index|concordance|applications)\.pdf$/.test(row.file||'') &&
+          Number.isInteger(row.pages)&&row.pages>40&&row.verified_sections===258 &&
+          row.map_coverage===1 &&
+          /^[0-9a-f]{64}$/.test(row.sha256||'') &&
+          /^[0-9a-f]{64}$/.test(row.map_sha256||'') &&
+          catalog?.some(base=>base.file===row.source_base&&base.sha256===row.base_sha256)):null;
       const pdf=b?.files?.['daruri.pdf'];
       canonical=pdf&&Number.isInteger(pdf.pages)&&pdf.pages>0&&/^[0-9a-f]{64}$/.test(pdf.sha256||'')?pdf:null;
       refresh();
