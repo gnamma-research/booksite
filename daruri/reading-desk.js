@@ -19,7 +19,7 @@ function create(ctx){
  let records=[],available=true,selection=null,editor=null,origin=null,readingOrigin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
  const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
  const printPrefs={order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
- let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='',relinkFocus=null;
+ let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,writeConflict=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='',relinkFocus=null;
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
  function validateTarget(raw){
@@ -98,9 +98,11 @@ function create(ctx){
   if(r.target.kind==='quote'&&String(r.target.quote||'').length>5000)return false;
   return Boolean(validateTarget(r.target));
  }
- function load(){
+ function load(skipLegacy=false){
+  loadFailure=false;writeConflict=false;available=true;records=[];storedEnvelope={};
   try{
    const value=localStorage.getItem(KEY);
+   untouchedStorage=value;
    if(value!==null){
     untouchedStorage=value;
     const data=JSON.parse(value);
@@ -115,7 +117,7 @@ function create(ctx){
    return;
   }
   let changed=false;
-  for(const n of state.bookmarks||[]){
+  for(const n of skipLegacy?[]:(state.bookmarks||[])){
    if(!section(n))continue;
    if(records.some(r=>r.kind==='section'&&String(r.target?.section)===String(n)))continue;
    records.push({id:uuid(),kind:'section',target:{kind:'section',section:String(n)},
@@ -126,13 +128,36 @@ function create(ctx){
   if(changed)persist();
  }
  function persist(){
-  if(loadFailure){ctx.notify('Original Reading Desk storage is protected; export it before making changes.');return false;}
-  try{
-   localStorage.setItem(KEY,JSON.stringify({...storedEnvelope,format:FORMAT,version:VERSION,items:records}));
-   available=true;syncLegacy(true);syncActionStates();return true;
-  }catch(e){
-   available=false;ctx.notify('Reading Desk is not saved: browser storage is full or unavailable. Export a backup.');return false;
+  if(loadFailure){
+   ctx.notify('Original Reading Desk storage is protected. Export its untouched data before editing.');return false;
   }
+  if(writeConflict){
+   ctx.notify('Another tab changed Reading Desk. Refresh the saved collection before editing.');return false;
+  }
+  let updatedRaw;
+  try{
+   // Protect against overwriting a newer browser-local collection in another tab.
+   // Every successful write refreshes this tab's expected raw-storage snapshot.
+   const current=localStorage.getItem(KEY);
+   if(current!==untouchedStorage){
+    writeConflict=true;available=false;
+    ctx.notify('Reading Desk changed in another tab. Your other tab’s saved work is safe; refresh this collection before writing.');
+    if(state.route==='bookmarks')requestAnimationFrame(()=>render());
+    return false;
+   }
+   updatedRaw=JSON.stringify({...storedEnvelope,format:FORMAT,version:VERSION,items:records});
+   localStorage.setItem(KEY,updatedRaw);
+   untouchedStorage=updatedRaw;available=true;
+  }catch(e){
+   available=false;
+   ctx.notify('Reading Desk could not be saved: browser storage is full or unavailable. Export a backup.');
+   return false;
+  }
+  // Rendering or syncing the separate legacy bookmark list must never turn a
+  // successful storage commit into a reported failure and an incorrect rollback.
+  try{syncLegacy(true);}catch(_){ctx.notify('Reading Desk was saved, but old-format bookmarks could not be synchronized.');}
+  try{syncActionStates();}catch(_){}
+  return true;
  }
  function syncLegacy(doSave){
   const list=records.filter(r=>r.kind==='section'&&!r.deleted).map(r=>String(r.target.section));
@@ -345,6 +370,7 @@ function create(ctx){
   if(readingOrigin)parts.push('<button type="button" class="gn-rd-back-reading" data-rd="return-reading">← Back to text</button>');
   parts.push('</header>');
   if(loadFailure)parts.push('<div class="gn-rd-warning" role="alert"><strong>Saved data protected.</strong> This browser contains Reading Desk data that could not be read. No new writes will overwrite it. <button type="button" data-rd="download-original">Download untouched original data</button></div>');
+  else if(writeConflict)parts.push('<div class="gn-rd-warning" role="alert"><strong>Reading Desk changed in another tab.</strong> New writes are paused to protect the newer collection. <button type="button" data-rd="refresh-storage">Reload saved items</button></div>');
   else if(!available)parts.push('<p class="gn-rd-warning" role="alert">Browser storage is unavailable or full. Download a backup before leaving.</p>');
   parts.push('<div class="gn-rd-toolbar" role="group" aria-label="Reading Desk actions"><div class="gn-rd-toolbar-main">');
   parts.push('<button type="button" data-rd="new-note">+ New note</button><button type="button" data-rd="print-list">Print / save PDF</button><button type="button" data-rd="personal-pdf">Book PDF + personal notes</button>');
@@ -1141,6 +1167,7 @@ function create(ctx){
   if(action==='close-print'){closePrintPreview();return;}
   if(action==='export'){if(loadFailure){download(untouchedStorage||'','Reading-Desk-original-recovery.txt');ctx.notify('Original, unmodified browser data downloaded.');}else{download(backup(),'Reading-Desk-'+new Date().toISOString().slice(0,10)+'.json');ctx.notify('Reading Desk backup downloaded.');}return;}
   if(action==='download-original'){if(untouchedStorage!==null){download(untouchedStorage,'Reading-Desk-original-recovery.txt');ctx.notify('Untouched original data downloaded.');}return;}
+  if(action==='refresh-storage'){load(true);ui.selected='';ui.mobileDetail=false;ui.filterTarget='';ui.filterSegment=null;render();ctx.notify('Reading Desk refreshed from current browser storage.');return;}
   if(action==='share-backup'){shareBackup();return;}
   if(action==='import'){$('#gn-rd-file')?.click();return;}
   if(action==='export-markdown'){exportMarkdown();return;}
@@ -1186,6 +1213,12 @@ function create(ctx){
    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
   },true);
+  window.addEventListener?.('storage',e=>{
+   if(e.key!==KEY||loadFailure||e.newValue===untouchedStorage)return;
+   writeConflict=true;available=false;
+   if(state.route==='bookmarks')render();
+   ctx.notify('Saved items changed in another tab. Reload Reading Desk before editing.');
+  });
   document.addEventListener('change',e=>{
    const element=e.target;
    if(element?.id==='gn-rd-relink-section'){updateRelinkSegments();return;}
