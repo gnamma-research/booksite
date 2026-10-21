@@ -30,7 +30,7 @@
   const scope=[['full','Entire work · §§1–258'],['part','One major part'],['lesson','Study Guide lesson'],['range','Section range']];
   const noteChoices={
     reading:[['none','None (shortest)'],['essential','Essential clarifications only']],
-    study:[['none','None'],['essential','Essential clarifications'],['study','Translation, interpretation & Qurʾān sources'],['sources','Study notes + hadith sources']]
+    study:[['none','None'],['essential','Essential clarifications'],['study','Study notes and Qurʾān sources']]
   };
   const personalChoices=[['none','None (default)'],['notes','My notes'],['all','My notes and bookmarks']];
   const toggleEditorial=(tier)=>'<label class="gn-ed-toggle"><input data-ep-control="editorial" type="checkbox" '+
@@ -100,6 +100,8 @@
             '<a class="gn-ed-secondary" data-ep-ready-open target="_blank" rel="noopener noreferrer">Read PDF ↗</a></div>' +
             '<p class="gn-ed-small">On an iPad, open your PDF viewer’s bookmarks or contents sidebar. Whether it opens automatically depends on the viewer.</p>';
           panel.hidden = false;
+          // Hide the older Study link only after the verified release catalog is loaded.
+          if (tier === 'study') { const legacy = host.querySelector('[data-ep-legacy-study]'); if (legacy) legacy.hidden = true; }
           const update = () => {
             const lang = tier === 'study' ? 'bilingual' :
               panel.querySelector('[data-ep-ready-lang]').value;
@@ -129,15 +131,17 @@
     lessons=window.DARURI_STUDY_DATA?.lessons||[];
     host.innerHTML='<div class="gn-editions">'+
     '<header><p class="gn-ed-eyebrow">AL-ḌARŪRĪ · EDITIONS</p><h1 id="gn-ed-title" tabindex="-1">Editions & Printing</h1>'+
-      '<p class="gn-ed-intro">Choose a reading text, prepare a course handout, or consult the scholarly reference. The three levels below run from minimal to maximal apparatus.</p></header>'+
-    '<p class="gn-ed-intro"><a href="personal-export.html">Create a personal PDF from an existing edition</a> — add Reading Desk comments and an appendix, or keep the original PDF entirely unchanged (default). Personal notes never leave this browser.</p>'+
+      '<p class="gn-ed-intro">Choose a complete PDF, or make an optional custom printout of selected passages. The three levels run from minimal reading text to scholarly reference.</p></header>'+
+    '<p class="gn-ed-small gn-ed-personal-link"><a href="personal-export.html">Add your Reading Desk notes to an existing PDF</a> (optional; private and browser-local).</p>'+
      '<nav class="gn-ed-quicknav" aria-label="Edition levels"><a href="#gn-ed-reading">1 · Reading & Printing</a><a href="#gn-ed-study">2 · Study</a><a href="#gn-ed-reference">3 · Reference</a></nav>'+
-    '<section id="gn-ed-reading" class="gn-ed-tier"><div class="gn-ed-tier-head"><span class="gn-ed-number">1</span><div><h2>Reading & Printing</h2>'+
+    '<section id="gn-ed-reading" class="gn-ed-tier"><div class="gn-ed-tier-head"><span class="gn-ed-number">1</span><div><h2>Reading</h2>'+
       '<p>Complete text or a short selection, with almost no apparatus. All choices use ordinary portrait A4. The default has no notes or editorial headings.</p></div></div>'+
-      '<div class="gn-ed-config gn-ed-published" data-ep-published="reading" hidden></div>' + controls('reading')+'</section>'+
+      '<div class="gn-ed-config gn-ed-published" data-ep-published="reading" hidden></div>' +
+      '<details class="gn-ed-study-custom gn-ed-reading-custom"><summary>Custom printout · choose passages, notes and layout</summary>'+
+      '<p class="gn-ed-small">Optional settings for browser printing; they do not change any published PDF.</p>'+controls('reading')+'</details></section>'+
     '<section id="gn-ed-study" class="gn-ed-tier"><div class="gn-ed-tier-head"><span class="gn-ed-number">2</span><div><h2>Study Editions</h2>'+
       '<p>For courses and close reading: explanatory notes and original or optional editorial headings, without the full lexicon and manuscript apparatus.</p></div></div>'+
-      '<div class="gn-ed-config gn-ed-published" data-ep-published="study" hidden></div>' + '<div class="gn-ed-grid"><article class="gn-ed-card"><h3>Existing bilingual study PDF</h3><p class="gn-ed-meta">131 pages · Arabic & English · selected notes</p>'+
+      '<div class="gn-ed-config gn-ed-published" data-ep-published="study" hidden></div>' + '<div class="gn-ed-grid"><article class="gn-ed-card" data-ep-legacy-study><h3>Existing bilingual study PDF</h3><p class="gn-ed-meta">131 pages · Arabic & English · selected notes</p>'+
       '<p>Previously published fixed study edition. Arabic-right layout in the rebuilt edition remains subject to release verification.</p>'+
       link('daruri-study.pdf?v=daruri8-structure-20261020','Open study PDF')+'</article>'+
       '<article class="gn-ed-card"><h3>Study Guide companion</h3><p class="gn-ed-meta">85 pages · learning activities</p>'+
@@ -177,7 +181,7 @@
     if(style==='none')return [];
     const kinds=style==='essential'?['interpretive','lexical']:
       style==='study'?['interpretive','lexical','translation','quran-source']:
-        ['interpretive','lexical','translation','quran-source','hadith-source'];
+        ['interpretive','lexical','translation','quran-source'];
     return (section.noteIds||[]).map(id=>noteById.get(id)).filter(n=>n&&kinds.includes(n.kind));
   }
   function personalPrintRows(tier,sections) {
