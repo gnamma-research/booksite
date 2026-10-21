@@ -105,7 +105,8 @@ try{
 
   await page.getByRole('tab',{name:'Reading',exact:true}).click();
   assert.match(await spec.innerText(),/Apparatus: Technical glossary · Full index/);
-  await ui.locator('.gn-es-custom-trigger').click();
+  if(!(await ui.locator('.gn-es-custom').isVisible()))
+    await ui.locator('.gn-es-custom-trigger').click();
   await page.getByRole('tab',{name:'Apparatus',exact:true}).click();
   await page.screenshot({path:path.join(captures,'daruri-apparatus-selector-desktop.png'),fullPage:true});
   await page.setViewportSize({width:390,height:844});
