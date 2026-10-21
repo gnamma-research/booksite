@@ -56,9 +56,9 @@ for(const asset of ['visuals-controls.js?v=20261020-visuals1','fonts/source-sans
 }
 assert.match(sw,/20261020-visuals1/);
 assert.match(html,/english-fonts\.css\?v=20261020-fonts3/);
-assert.match(html,/compact-menu\.css\?v=20261020-visualsframe2/);
+assert.match(html,/compact-menu\.css\?v=20261021-visualscompact1/);
 assert.match(html,/visuals-controls\.js\?v=20261020-visuals1/);
-assert.match(html,/sw\.js\?v=20261020-visualsframe2/);
+assert.match(html,/sw\.js\?v=20261021-visualscompact1/);
 
 console.log('PASS: icon-led Visuals panel, direct page/font/palette controls, fixed language markers, A−/percentage/A+, proper layout/palette icons, distinct English families, no visible duplicate theme row, syntax and offline assets.');
 
@@ -66,10 +66,10 @@ assert(css.includes('grid-template-columns: repeat(3, minmax(0, 1fr)) !important
 assert(css.includes('touch-action: manipulation !important'),'Visuals controls suppress double-tap zoom without disabling pinch');
 assert(css.includes('#readingControls:not([hidden]) .gn-reader-global-leading #menuBtn'),'Contents opener has dedicated touch area');
 assert(css.includes('width: 44px !important')&&css.includes('height: 44px !important'),'Contents opener receives 44px touch target');
-assert(html.includes('download-bundle.js?v=20261020-visuals-touch1'),'Package version updated');
-assert(sw.includes('compact-menu.css?v=20261020-visualsframe2'),'Offline CSS uses the same version');
-assert(sw.includes('download-bundle.js?v=20261020-visualsframe2'),'Offline package uses the same version');
-assert(bundle.includes('compact-menu.css?v=20261020-visualsframe2'),'ZIP uses updated Visuals CSS');
+assert(html.includes('download-bundle.js?v=20261021-visualscompact1'),'Package version updated');
+assert(sw.includes('compact-menu.css?v=20261021-visualscompact1'),'Offline CSS uses the same version');
+assert(sw.includes('download-bundle.js?v=20261021-visualscompact1'),'Offline package uses the same version');
+assert(bundle.includes('compact-menu.css?v=20261021-visualscompact1'),'ZIP uses updated Visuals CSS');
 console.log('PASS: fixed-width Safari tap targets, equal size cells and coherent cache/offline versions');
 
 
@@ -90,10 +90,23 @@ assert(css.includes('.gn-visuals-panel .gn-layout-arabic-icon'),'Arabic outline 
 assert(css.includes('height: 16px !important;'),'Arabic glyph keeps fixed height');
 assert(css.includes('height: 48px !important;'),'Existing 48px touch-target fix is preserved');
 assert(css.includes('touch-action: manipulation !important'),'Existing mobile double-tap mitigation is preserved');
-assert(sw.includes('daruri-reader-20261020-readingdesk1-visualsframe1'),'Reading Desk cache retained');
+assert(sw.includes('daruri-reader-20261021-readingdesk2-visualscompact1'),'Reading Desk cache retained');
 assert(bundle.includes("['daruri/reading-desk.js'"),'Reading Desk survives the bundle change');
-assert(bundle.includes('sw.js?v=20261020-visualsframe2'),'Offline bundle contains current service worker');
+assert(bundle.includes('sw.js?v=20261021-visualscompact1'),'Offline bundle contains current service worker');
 console.log('PASS: narrower Visuals frame, centered font-independent Arabic order glyphs, preserved 48px tap targets and current Reading Desk cache.');
 
 assert(css.includes('height: 36px !important;'),'Stack diagrams fit a 48px touch target');
 assert(css.includes('padding-block: 4px !important;'),'Selected layout touch target keeps 48px total height');
+
+
+// Compact Visuals spacing retains button geometry and the iOS touch fix.
+assert(css.includes('Compact Visuals spacing:'));
+assert(css.includes('padding: 14px 16px !important'));
+assert(css.includes('padding-block: 5px !important'));
+assert(css.includes('padding-bottom: 8px !important'));
+assert(css.includes('padding-inline: 11px !important'));
+assert(css.includes('height: 48px !important;'),'48px tap targets remain');
+assert(css.includes('touch-action: manipulation !important'),'Safari touch handling remains');
+assert(css.includes('width: min(460px, calc(100vw - 44px)) !important;'),'Modest modal width remains');
+assert(sw.includes('daruri-reader-20261021-readingdesk2-visualscompact1'),'Updated offline cache');
+console.log('PASS: reduced Visuals whitespace while retaining font samples, 48px targets, iOS tap handling and Reading Desk');

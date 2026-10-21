@@ -350,3 +350,28 @@
     }
   }
 }
+
+
+/* Compact Visuals spacing: keep 48px iPhone touch targets and full font
+   specimens; reclaim only surrounding vertical whitespace. */
+@media screen {
+  .gn-visuals-panel {
+    padding: 14px 16px !important;
+  }
+  .gn-visuals-panel .gn-visuals-header {
+    gap: 12px;
+    padding-bottom: 8px !important;
+    margin-bottom: 2px !important;
+  }
+  .gn-visuals-panel .gn-visual-row {
+    padding-block: 5px !important;
+  }
+  .gn-visuals-panel .gn-visual-row:last-of-type {
+    padding-bottom: 2px !important;
+  }
+  @media (max-width: 380px) {
+    .gn-visuals-panel {
+      padding-inline: 11px !important;
+    }
+  }
+}
