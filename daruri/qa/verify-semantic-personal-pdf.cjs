@@ -5,6 +5,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path'),os=require('node:os');
 const {spawn}=require('node:child_process'),{chromium,webkit,firefox}=require('playwright');
 const {PDFDocument,PDFName,PDFArray}=require('pdf-lib');
+const navigationDestination=require('./native-phone/resolve-pdf-link.cjs');
 const loadBook=require('./load-book.js');
 const root=path.resolve(__dirname,'../..'),url='http://127.0.0.1:8771';
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'daruri/pdf-editions-manifest.json'),'utf8'));
@@ -78,10 +79,9 @@ async function checkedPdf(file,engine,contextSettings){
     for(let j=0;j<annots.size();j++){
       const obj=pdf.context.lookup(annots.get(j));
       if(String(obj.lookup(PDFName.of('Subtype')))!=='/Link')continue;
-      const raw=obj.get(PDFName.of('Dest'));
-      const dest=raw?pdf.context.lookup(raw):null;
+      const dest=navigationDestination(pdf,obj);
       if(!(dest instanceof PDFArray)||dest.size()<2||!appendixRefs.has(String(dest.get(0))))continue;
-      assert.equal(String(dest.get(1)),'/FitH','P link must arrive near a note heading');
+      assert.equal(String(dest.get(1)),'/XYZ','P link must arrive near a note heading');
       forwards++;
     }
   }
@@ -96,10 +96,9 @@ async function checkedPdf(file,engine,contextSettings){
     for(let j=0;j<arr.size();j++){
       const a=pdf.context.lookup(arr.get(j));
       if(String(a.lookup(PDFName.of('Subtype')))!=='/Link')continue;
-      const raw=a.get(PDFName.of('Dest'));
-      const dest=raw?pdf.context.lookup(raw):null;
+      const dest=navigationDestination(pdf,a);
       if(dest instanceof PDFArray&&sourceRefs.has(String(dest.get(0)))){
-        assert.equal(String(dest.get(1)),'/FitH','Back links should return near the source passage');
+        assert.equal(String(dest.get(1)),'/XYZ','Back links should return near the source passage');
         returns++;
       }
     }
