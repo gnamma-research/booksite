@@ -32,7 +32,7 @@ try {
     )];
     return {nonSvgChildren:targets.filter(e=>[...e.children].some(c=>c.tagName.toLowerCase()!=='svg')).length,
       unnamed:targets.filter(e=>!e.getAttribute('aria-label') && !e.closest('.gn-ed-icon-options')).length,
-      visibleInstructions:[...document.querySelectorAll('.gn-editions p')].filter(e=>e.getBoundingClientRect().width>20 && e.getBoundingClientRect().height>15).length,
+      visibleInstructions:[...document.querySelectorAll('.gn-editions .gn-ed-intro, .gn-editions .gn-ed-small, .gn-editions .gn-ed-extra, .gn-editions .gn-ed-card > p')].filter(e=>e.getBoundingClientRect().width>20 && e.getBoundingClientRect().height>15).length,
       markers:document.querySelectorAll('.gn-ed-field-marker').length};
   });
   assert.equal(symbols.nonSvgChildren,0,'All toolbar choices and actions are SVG-only');
@@ -61,6 +61,8 @@ try {
   await studyLink.focus();
   assert.equal(await page.locator('[data-ep-info-value]').textContent(),'Study');
   const readingDrawer=page.locator('.gn-ed-reading-custom');
+  assert.equal(await readingDrawer.locator('.gn-ed-paper').isVisible(),false,'Reading excerpt is hidden until custom print opens');
+  assert.equal(await page.locator('#gn-ed-study .gn-ed-study-custom .gn-ed-paper').isVisible(),false,'Study excerpt is initially hidden');
   assert.ok(!(await readingDrawer.getAttribute('open')), 'Custom printing starts collapsed');
   await page.screenshot({path:path.join(out,'editions-desktop.png'),fullPage:true});
   await page.setViewportSize({width:390,height:844});
