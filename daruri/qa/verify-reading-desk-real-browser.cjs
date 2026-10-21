@@ -145,10 +145,39 @@ async function exercise(engine, width, touch) {
     check(reloadCards===6,
       id+': data did not survive a full page reload; cards='+reloadCards);
     await page.locator('.gn-rd-card-open[data-id="saved-section"]').click();
-    await page.locator('#gn-rd-detail [data-rd="open"]').click();
+    const sourceOpen=page.locator('#gn-rd-detail [data-rd="open"]');
+    await sourceOpen.scrollIntoViewIfNeeded();
+    const leavePosition=await page.evaluate(()=>window.scrollY);
+    await sourceOpen.click();
     await page.locator('.gn-rd-return [data-rd="return"]').waitFor({timeout:25000});
     await page.locator('.gn-rd-return [data-rd="return"]').click();
     await page.locator('.gn-rd-page').waitFor({timeout:25000});
+    const position = async () => page.evaluate(() => {
+      const page=document.querySelector('.gn-rd-page');
+      const detail=document.querySelector('.gn-rd-mobile-detail-open #gn-rd-detail');
+      const heading=detail?.querySelector(':scope > header');
+      const bar=document.querySelector('.gn-rd-hero');
+      return {scrollY, height:innerHeight, pageTop:page?.getBoundingClientRect().top,
+        detailTop:detail?.getBoundingClientRect().top,
+        detailBottom:detail?.getBoundingClientRect().bottom,
+        detailHeadingTop:heading?.getBoundingClientRect().top,
+        detailHeadingBottom:heading?.getBoundingClientRect().bottom,
+        heroTop:bar?.getBoundingClientRect().top};
+    });
+    const earlyPosition=await position();
+    await page.waitForTimeout(600); // Allow scroll-restoration animation frames to complete.
+    const settledPosition=await position();
+    console.log('RETURN VIEWPORT '+id+' initial='+JSON.stringify(earlyPosition)+
+      ' settled='+JSON.stringify(settledPosition));
+    check(Math.abs(settledPosition.scrollY-leavePosition)<=4,
+      id+': return did not preserve the exact point previously used to open the source: '+
+        JSON.stringify({leavePosition,settledPosition}));
+    if(touch) {
+      check(settledPosition.detailBottom>130 &&
+        settledPosition.detailTop<settledPosition.height*0.8,
+        id+': mobile saved-item details do not intersect the visible viewport: '+
+          JSON.stringify(settledPosition));
+    }
 
     const widthInfo=await page.evaluate(() => {
       const desk=document.querySelector('.gn-rd-page');
