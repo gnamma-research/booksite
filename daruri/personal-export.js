@@ -309,7 +309,7 @@
     }
     await flush();
     for(const req of pendingLinks){
-      const target=req.sourceIndex-1;
+      const target=req.sourceIndex; // sourceIndex is already zero-based
       if(target>=0&&target<basePages)makeLink(pdf,req.page,pdf.getPage(target),req.rect,req.sourceTop);
     }
     return {pages:pageNum-1,unsupported:[...fonts.missing],noteTargets};
