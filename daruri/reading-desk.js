@@ -571,10 +571,61 @@ function create(ctx){
   if(marks.length)CSS.highlights.set('gn-rd-bookmark',new Highlight(...marks));
   if(annotations.length)CSS.highlights.set('gn-rd-note',new Highlight(...annotations));
  }
+ function saveDeskReturnState(){
+  try{sessionStorage.setItem('gnamma-reading-desk-return-v2',JSON.stringify({at:Date.now(),ui:{
+   category:ui.category,sourceType:ui.sourceType,sort:ui.sort,query:ui.query,selected:ui.selected,
+   context:ui.context,expanded:ui.expanded,filterTarget:ui.filterTarget,filterSegment:ui.filterSegment,
+   mobileDetail:ui.mobileDetail,listScroll:ui.listScroll}}));}catch(_){}
+ }
+ function restoreDeskReturnState(){
+  if(!location.hash.startsWith('#bookmarks'))return;
+  try{
+   const raw=sessionStorage.getItem('gnamma-reading-desk-return-v2');
+   const data=raw?JSON.parse(raw):null;
+   if(!data||Date.now()-data.at>86400000)return;
+   const x=data.ui||{};
+   if(CATEGORIES.includes(x.category)||x.category==='bin')ui.category=x.category;
+   if(['all','text','booknotes','dictionary','index','bidaya','lessons'].includes(x.sourceType))ui.sourceType=x.sourceType;
+   if(Object.hasOwn(SORTS,x.sort))ui.sort=x.sort;
+   ui.query=clamp(x.query,250);ui.selected=clamp(x.selected,100);
+   ui.context=['both','ar','en'].includes(x.context)?x.context:'both';
+   ui.expanded=!!x.expanded;ui.filterTarget=clamp(x.filterTarget,30);
+   ui.filterSegment=Number.isInteger(x.filterSegment)?x.filterSegment:null;
+   ui.mobileDetail=!!x.mobileDetail;ui.listScroll=Number(x.listScroll)||0;
+   sessionStorage.removeItem('gnamma-reading-desk-return-v2');
+  }catch(_){}
+ }
+ function enterDeskFromText(sectionId,segment=null,itemId=''){
+  const targetSection=String(sectionId||state.n);
+  readingOrigin={section:targetSection,segment,scroll:window.scrollY||0,at:Date.now()};
+  closeContext();
+  ui.filterTarget=targetSection;ui.filterSegment=segment;
+  ui.category='all';ui.sourceType='all';ui.sort='source';ui.query='';
+  ui.selected=itemId;ui.mobileDetail=!!itemId&&matchMedia('(max-width:760px)').matches;
+  ui.listScroll=0;
+  ctx.navigate('bookmarks');
+  window.scrollTo({top:0,behavior:'instant'});
+ }
+ function returnToReading(){
+  const t=readingOrigin;if(!t)return;
+  readingOrigin=null;ui.mobileDetail=false;
+  ctx.goSection(t.section);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   const root=$('#gn-continuous-'+CSS.escape(t.section))||$('#reader');
+   const exact=t.segment!==null?root?.querySelector('.passage-grid[data-segment="'+t.segment+'"]'):null;
+   if(exact)exact.scrollIntoView({block:'center',behavior:'instant'});
+   else window.scrollTo({top:t.scroll||0,behavior:'instant'});
+  }));
+ }
  function openSource(r){
-  const t=r.kind==='note'?r.target:r.target;if(!t){ctx.notify('This note has no attached source.');return;}
-  const existing=$('#mainContent .gn-rd-page');ui.listScroll=window.scrollY||0;
-  if(existing)origin={id:r.id,created:Date.now()};
+  const t=r.target;if(!t){ctx.notify('This note has no attached source.');return;}
+  const existing=$('#mainContent .gn-rd-page');
+  if(existing){
+   ui.listScroll=window.scrollY||0;
+   origin={id:r.id,created:Date.now()};
+   saveDeskReturnState();
+  }
+  closeContext();
   if(['quote','paragraph','section','footnote'].includes(t.kind)){
    ctx.goSection(t.section);
    requestAnimationFrame(()=>requestAnimationFrame(()=>{
@@ -585,9 +636,15 @@ function create(ctx){
     if(t.kind==='quote'){
      const side=grid?.querySelector('.passage-'+(t.lang==='ar'?'ar':'en'));
      const range=side?findRange(side,t):null;
-     if(range){try{const rect=range.getBoundingClientRect();window.scrollBy({top:rect.top-Math.min(innerHeight*.36,240),behavior:'instant'});}catch(_){}if(window.CSS?.highlights&&typeof Highlight!=='undefined')CSS.highlights.set('gn-rd-target',new Highlight(range));}
-     else ctx.notify('Exact wording not located; opened its containing paragraph.');
-    }else (grid||$('#reader'))?.scrollIntoView({block:'center',behavior:'instant'});
+     if(range){
+      try{const rect=range.getBoundingClientRect();window.scrollBy({top:rect.top-Math.min(innerHeight*.36,240),behavior:'instant'});}catch(_){}
+      if(window.CSS?.highlights&&typeof Highlight!=='undefined')CSS.highlights.set('gn-rd-target',new Highlight(range));
+     }else{
+      grid?.scrollIntoView({block:'center',behavior:'instant'});
+      ctx.notify('Exact wording not located; opened its containing paragraph.');
+     }
+    }else if(t.kind==='section')readingRoot?.scrollIntoView({block:'start',behavior:'instant'});
+    else (grid||$('#reader'))?.scrollIntoView({block:'center',behavior:'instant'});
    }));
   }else if(t.kind==='dictionary'){
    if(t.historical){
@@ -606,27 +663,26 @@ function create(ctx){
  }
  function afterRender(route){
   if(route==='bookmarks'){
-   if(ui.listScroll)requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo({top:ui.listScroll,behavior:'instant'})));
+   if(ui.listScroll&&!ui.mobileDetail)requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo({top:ui.listScroll,behavior:'instant'})));
   }
-  if(route==='reader')afterReader();else decorate();
-  if(route==='glossary'&&pendingIntent){
-   const intent=pendingIntent;pendingIntent=null;
-   const target=validateTarget(intent.target);
-   if(target&&intent.action==='note')requestAnimationFrame(()=>showEditor(target));
-  }
+  if(route==='reader')afterReader();else{closeContext();decorate();}
   document.body.classList.toggle('gn-rd-returning',!!origin&&route!=='bookmarks');
   if(origin&&route!=='bookmarks'){
    const main=$('#mainContent');if(main&&!main.querySelector('.gn-rd-return')){
-    const bar=document.createElement('nav');bar.className='gn-rd-return';bar.setAttribute('aria-label','Return to Reading Desk');
+    const bar=document.createElement('nav');bar.className='gn-rd-return';bar.setAttribute('aria-label','Return to saved item');
     bar.innerHTML='<button type="button" data-rd="return">← Back to Reading Desk</button><button type="button" data-rd="dismiss-return" aria-label="Dismiss Reading Desk return">×</button>';
     main.prepend(bar);
    }
   }
  }
  function toDesk(){
-  ui.selected=origin?.id||ui.selected;const y=ui.listScroll;origin=null;
+  ui.selected=origin?.id||ui.selected;
+  const y=ui.listScroll;origin=null;
+  try{sessionStorage.removeItem('gnamma-reading-desk-return-v2');}catch(_){}
   document.body.classList.remove('gn-rd-returning');ctx.navigate('bookmarks');
-  requestAnimationFrame(()=>requestAnimationFrame(()=>{if(state.route==='bookmarks')window.scrollTo({top:y,behavior:'instant'});}));
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   if(state.route==='bookmarks')window.scrollTo({top:ui.mobileDetail?0:y,behavior:'instant'});
+  }));
  }
  function textForShare(r){
   const t=r.target||null;let txt=(r.title||titleOf(t))+'\n'+subOf(t);
