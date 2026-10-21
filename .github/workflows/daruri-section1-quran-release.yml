@@ -11,6 +11,7 @@ on:
       - 'daruri/source-note-ui.js'
       - 'daruri/qa/verify-section1-quran-parallels.js'
       - 'daruri/qa/verify-reader-source-notes.js'
+      - 'daruri/qa/refresh_note_pdf_manifest.py'
       - 'daruri/qa/verify-ios-source-note-touch.py'
       - '.github/workflows/daruri-section1-quran-release.yml'
   workflow_dispatch:
