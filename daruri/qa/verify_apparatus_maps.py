@@ -42,6 +42,20 @@ def verify(root:Path=APP):
         assert meta["verified_sections"]==258 and meta["word_map_present"] is False
         assert meta["map_type"]=="verified-section-destinations"
         assert meta["map_coverage"]==1.0
+        positions=data.get("entry_positions",{})
+        if "glossary" in f["apparatus"]:
+            assert len(positions.get("terms",{}))>=153,"Glossary entry map incomplete"
+        if "index" in f["apparatus"]:
+            assert len(positions.get("terms",{}))>=151,"Index entry map incomplete"
+        if "applications" in f["apparatus"]:
+            assert len(positions.get("applications",{}))==28,"Bidāya application map incomplete"
+        if "concordance" in f["apparatus"]:
+            assert len(positions.get("concordance",{}))==258,"R/BA concordance map incomplete"
+        assert data["entry_count"]==f["mapped_entries"]
+        for family,items in positions.items():
+            for label,dest in items.items():
+                assert dest["page"]>f["base_pages"] and dest["page"]<=f["pages"],(family,label)
+                assert 0<=dest["x"]<=596 and 0<=dest["y"]<=842,(family,label)
         with fitz.open(source) as basepdf,fitz.open(pdf_file) as combined:
             assert len(combined)==f["pages"]==meta["pages"]
             assert all(abs(p.rect.width-595.276)<1 and abs(p.rect.height-841.89)<1 for p in combined)
