@@ -59,3 +59,10 @@ a.gn-source-icon-link svg {display: block; width: 18px; height: 18px; pointer-ev
 /* Context for literal Qur'an quotations is separate from the verified Arabic. */
 .gn-verse-source-translation{margin:6px 0 3px;font:13px/1.55 var(--sans,system-ui,sans-serif);color:var(--ink,var(--text,inherit));text-align:start}
 .gn-verse-source-explanation{margin:5px 0 0;font:12px/1.5 var(--sans,system-ui,sans-serif);color:var(--muted,#666);text-align:start}
+
+/* At 320px, prevent Qurʾānic comparison closing ornaments from orphaning. */
+@media (max-width: 360px) {
+  .gn-verse-source-excerpt {padding-inline: 7px;}
+  .gn-quran-quotation {font-size: 1.43rem; line-height: 1.95;}
+  .gn-quran-bracket {font-size: 1.05em; padding-inline: .04em;}
+}
