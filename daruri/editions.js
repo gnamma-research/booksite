@@ -348,13 +348,13 @@
     const matched=rows.filter(({row})=>String(row.target?.section)===String(id)&&
       (segment==null?row.target?.segment==null:Number(row.target?.segment)===Number(segment)));
     if(!matched.length)return '';
-    return '<span class="gn-ep-personal-refs" aria-label="Your Reading Desk references">Personal '+
-      matched.map(({n})=>'<a href="#gn-ep-personal-'+n+'">['+n+']</a>').join(' ')+'</span>';
+    return '<span class="gn-ep-personal-refs" aria-label="Personal notes, distinct from publisher footnotes">'+
+      matched.map(({n})=>'<a class="gn-ep-personal-ref" href="#gn-ep-personal-'+n+'" aria-label="Go to personal note P'+n+'">P'+n+'</a>').join(' ')+'</span>';
   }
   function personalAppendix(rows){
     if(!rows.length)return '';
     return '<section class="gn-ep-personal-appendix" role="doc-endnotes"><h2>My Reading Desk · personal observations</h2>'+
-      '<p class="gn-ep-personal-notice">These are reader-created notes and bookmarks, not Ibn Rushd’s original text or Gnamma editorial notes.</p>'+
+      '<p class="gn-ep-personal-notice">P1, P2… identify personal Reading Desk notes. These reader-created observations differ from publisher footnotes, original source references and Gnamma editorial notes.</p>'+
       rows.map(({row,n})=>{
         const t=row.target||{},name=t.section?'§'+esc(t.section)+(t.segment!=null?' · paragraph '+(Number(t.segment)+1):''):
           (t.term?'Dictionary / index: '+esc(t.term):t.lesson?'Study lesson: '+esc(t.lesson):
@@ -363,7 +363,7 @@
         const body=row.kind==='note'?esc(String(row.body||'').slice(0,30000)).replace(/\n/g,'<br>'):
           '<em>Saved bookmark</em>';
         const quote=t.quote?'<blockquote lang="'+(t.lang==='ar'?'ar':'en')+'" dir="'+(t.lang==='ar'?'rtl':'ltr')+'">'+esc(t.quote)+'</blockquote>':'';
-        return '<article id="gn-ep-personal-'+n+'"><h3>'+n+'. '+name+'</h3>'+
+        return '<article id="gn-ep-personal-'+n+'"><h3>P'+n+' · '+name+'</h3>'+
           '<h4>'+esc(row.title||'Personal observation')+'</h4>'+body+quote+
           '<p class="gn-ep-personal-meta">'+esc(personalDate(row))+' · '+link+'</p></article>';
       }).join('')+'</section>';
@@ -441,7 +441,8 @@
       '.gn-ep-sheet .gn-ep-endnotes{margin-top:14pt;break-before:page;}'+
       '.gn-ep-sheet .gn-ep-endnotes p{font:8.7pt/1.4 Georgia,serif;margin:0 0 8pt;}'+
       '.gn-ep-sheet .gn-ep-note-refs{font-size:8pt;}'+
-       '.gn-ep-sheet .gn-ep-personal-refs{display:block;font:7.5pt Arial,sans-serif;margin:0 0 4pt;color:#424242;}'+
+       '.gn-ep-sheet .gn-ep-personal-refs{display:block;font:7.5pt Arial,sans-serif;margin:0 0 5pt;color:#356569;}'+
+       '.gn-ep-sheet .gn-ep-personal-ref{display:inline-block;border:.5pt solid #54848a;border-radius:2pt;padding:.5pt 3pt;margin-right:3pt;background:#f0f6f4;color:#205960;text-decoration:none;font:600 7.5pt Arial,sans-serif;}'+
        '.gn-ep-sheet .gn-ep-personal-appendix{column-span:all;break-before:page;margin-top:14pt;font:9.6pt/1.5 Georgia,serif;}'+
        '.gn-ep-sheet .gn-ep-personal-appendix article{break-inside:avoid-page;margin:0 0 13pt;}'+
        '.gn-ep-sheet .gn-ep-personal-appendix h3{font-size:11pt;margin:12pt 0 3pt;}'+
