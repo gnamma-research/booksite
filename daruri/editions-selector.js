@@ -155,13 +155,12 @@
           '<p class="gn-es-spec-lead" data-es-spec-lead></p>'+
           '<p class="gn-es-spec-layout" data-es-spec-layout></p>'+
           '<p class="gn-es-spec-notes" data-es-spec-notes></p>'+
+          '<p class="gn-es-spec-apparatus" data-es-spec-apparatus></p>'+
         '</section>'+
-        '<button type="button" class="gn-es-notes-shortcut" data-es-shortcut="notes">'+
-          '<span><strong>Notes</strong><small data-es-shortcut-summary></small></span><span aria-hidden="true">›</span></button>'+
         '<div class="gn-es-custom-head"><button type="button" class="gn-es-custom-trigger" data-es-custom aria-expanded="false" aria-controls="gn-es-custom">'+icon('sliders')+'<span>Customize</span><span class="gn-es-custom-arrow" aria-hidden="true">⌄</span></button></div>'+
         '<div id="gn-es-custom" class="gn-es-custom" hidden>'+
           '<div class="gn-es-category-tabs" role="tablist" aria-label="Customize PDF settings">'+
-            ['content','layout','notes'].map(c=>'<button type="button" class="gn-es-category" role="tab" data-es-category="'+c+'" aria-selected="false" aria-controls="gn-es-options" tabindex="-1">'+c.charAt(0).toUpperCase()+c.slice(1)+'</button>').join('')+
+            ['content','layout','notes','apparatus'].map(c=>'<button type="button" class="gn-es-category" role="tab" data-es-category="'+c+'" aria-selected="false" aria-controls="gn-es-options" tabindex="-1">'+c.charAt(0).toUpperCase()+c.slice(1)+'</button>').join('')+
           '</div>'+
           '<section class="gn-es-options" id="gn-es-options" role="tabpanel" tabindex="0" aria-label="Selected customization settings">'+
             '<div data-es-section="content" hidden>'+
@@ -194,19 +193,27 @@
                 '<button type="button" class="gn-es-personal-choice" data-es-personal="personalNotes" aria-pressed="false"><span>Include my notes</span><span data-es-flag="personalNotes">Off</span></button>'+
                 '<button type="button" class="gn-es-personal-choice" data-es-personal="personalBookmarks" aria-pressed="false"><span>Include my bookmarks</span><span data-es-flag="personalBookmarks">Off</span></button>'+
               '</div>'+
-              '<p class="gn-es-hint">Personal material stays on this device. The separate local PDF tool supports canonical editions, not every A4 configuration chosen here.</p>'+
+              '<p class="gn-es-hint">Your personal notes remain on this device. The separate PDF exporter currently supports the five canonical PDFs; new A4 variants need verified passage maps before precise P-note links are available.</p>'+
               '<a class="gn-es-personal-link" href="personal-export.html">Open local personal PDF tools <span aria-hidden="true">↗</span></a>'+
+            '</div>'+
+            '<div data-es-section="apparatus" hidden>'+
+              '<p class="gn-es-field-title">Glossary / dictionary</p>'+
+              options('Glossary and dictionary','glossary',[['none','None'],['technical','Technical glossary'],['historical','Historical dictionary']])+
+              '<p class="gn-es-field-title">Subject index</p>'+
+              options('Index','index',[['none','None'],['basic','Basic index'],['full','Full index']])+
+              '<p class="gn-es-field-title">Bidāya applications</p>'+
+              options('Legal applications','applications',[['off','Off'],['on','On']])+
+              '<p class="gn-es-field-title">Textual concordance (R/BA)</p>'+
+              options('Textual concordance','concordance',[['off','Off'],['on','On']])+
+              '<p class="gn-es-hint">Only combinations with a published, complete PDF can be opened. The current document summary retains your apparatus selections.</p>'+
             '</div>'+
           '</section>'+
         '</div>'+
         '<section class="gn-es-availability" aria-live="polite" aria-atomic="true"><strong data-es-availability-heading>Checking PDF…</strong><p data-es-availability-detail></p></section>'+
-        '<div class="gn-es-actions" aria-label="Document actions">'+
-          '<a data-es-action="read" class="gn-es-action" aria-label="Read selected published PDF" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Read</span></a>'+
-          '<a data-es-action="download" class="gn-es-action gn-es-action-primary" aria-label="Download selected published PDF" download>'+icon('download')+'<span>Download</span></a>'+
-          '<a data-es-action="print" class="gn-es-action" aria-label="Open selected published PDF for printing" target="_blank" rel="noopener noreferrer">'+icon('print')+'<span>Print</span></a>'+
+        '<div class="gn-es-actions" aria-label="Document action">'+
+          '<a data-es-action="open" class="gn-es-action gn-es-action-primary" aria-label="Open selected published PDF" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Open PDF</span></a>'+
         '</div>'+
-        '<p class="gn-es-print-hint" data-es-print-hint hidden>Print opens the published PDF in your viewer; use its Print command.</p>'+
-        '<p class="gn-es-private-hint" data-es-private-hint hidden>Your personal notes are not in this public PDF. Use the device-local personal PDF tools above.</p>'+
+        '<p class="gn-es-private-hint" data-es-private-hint hidden>The public PDF has no private notes. To create a local personalized copy, use Customize → Notes → Open local personal PDF tools (currently for canonical PDFs).</p>'+
         '<p class="gn-es-study-guide" data-es-study-guide hidden><a href="daruri-study-guide.pdf?v=daruri6-sources-20261020" target="_blank" rel="noopener noreferrer">Study Guide PDF ↗</a></p>'+
       '</section></div>';
   }
