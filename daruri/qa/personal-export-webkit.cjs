@@ -49,12 +49,20 @@ async function browserCheck(){
   const section=pdf.getPage(Number(metadata.section_pages['1'])-1);
   const annotations=section.node.lookup(PDFName.of('Annots'),PDFArray);
   assert(annotations?.size()>0,'WebKit generated PDF must retain native annotations');
-  let native=false;
+  const originalPages=manifest.files['daruri-english.pdf'].pages;
+  const endnotes=new Set(Array.from({length:pdf.getPageCount()-originalPages},(_,i)=>
+    String(pdf.getPage(originalPages+i).ref)));
+  let linked=false;
   for(let i=0;i<annotations.size();i++){
     const d=pdf.context.lookup(annotations.get(i));
-    if(String(d.lookup(PDFName.of('Subtype')))==='/Text')native=true;
+    const type=String(d.lookup(PDFName.of('Subtype')));
+    assert.notEqual(type,'/Text','WebKit personal notes must not create comment boxes');
+    if(type==='/Link'){
+      const dest=d.lookup(PDFName.of('Dest'),PDFArray);
+      if(dest&&endnotes.has(String(dest.get(0))))linked=true;
+    }
   }
-  assert(native,'WebKit PDF comments must be true native /Text annotations');
+  assert(linked,'Mobile WebKit P reference must link into the personal endnotes');
   assert(await page.locator('#pe-result').isVisible(),'WebKit download recovery links should display');
   await page.locator('input[name="pe-mode"][value="none"]').check();
   assert(!await page.locator('#pe-result').isVisible(),'changing to clean PDF must hide previous private download');
@@ -62,7 +70,7 @@ async function browserCheck(){
   assert.deepEqual(outside,[],'private note export must not execute third party scripts');
   assert.deepEqual(errors,[],'no WebKit script errors');
   fs.unlinkSync(file);
-  console.log('PASS WebKit mobile 390px: opt-out, Arabic Unicode note, local library, native annotations, appendix, no horizontal scroll.');
+  console.log('PASS WebKit mobile 390px: clean default, Arabic Unicode note, P link to appendix, zero personal comment popups, no horizontal scroll.');
  }finally{if(browser)await browser.close();server.kill();}
 }
 browserCheck().catch(e=>{console.error(e);server.kill();process.exitCode=1;});
