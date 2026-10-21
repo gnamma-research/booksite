@@ -279,6 +279,25 @@ body.hide-notes:not(.focus-mode) ::highlight(gn-rd-note){background:rgba(61,135,
 @media(pointer:coarse){.gn-rd-section-tools button.gn-rd-tool-icon,.gn-rd-passage-tools button.gn-rd-tool-icon{flex-basis:44px;width:44px;min-width:44px;height:44px;min-height:44px;padding:11px;opacity:.94}}
 @media(hover:hover) and (pointer:fine){.gn-rd-passage-tools button.gn-rd-tool-icon{opacity:.66}.gn-rd-passage-tools:hover button.gn-rd-tool-icon,.gn-rd-passage-tools:focus-within button.gn-rd-tool-icon{opacity:1}}
 
+/* A whole-paragraph bookmark is a primary action, not a mysterious icon.
+   Keep the label legible on touch devices and within every colour palette. */
+.gn-rd-passage-tools button[data-rd="paragraph-bookmark"].gn-rd-tool-icon{
+ flex:0 0 auto!important;width:auto!important;min-width:0;
+ height:36px;min-height:36px;padding:6px 10px!important;gap:7px;
+ border-color:var(--line,#d8d4ca);background:var(--paper,#fffdf9);opacity:1!important
+}
+.gn-rd-passage-tools .gn-rd-tool-caption{
+ font:600 .73rem/1.2 var(--sans,system-ui);
+ white-space:nowrap;letter-spacing:0;color:inherit
+}
+@media(pointer:coarse){
+ .gn-rd-passage-tools button[data-rd="paragraph-bookmark"].gn-rd-tool-icon{
+  flex-basis:auto!important;width:auto!important;min-height:44px;height:44px;
+  padding:9px 12px!important
+ }
+}
+
+
 
 /* Reading Desk toolbar: direct icon choices, not separate dropdown navigation. */
 .gn-rd-page .gn-rd-toolbar{align-items:center;gap:7px 13px;margin:18px 0 13px}
