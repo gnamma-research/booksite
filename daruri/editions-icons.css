@@ -247,3 +247,21 @@
   }
   .gn-editions .gn-ed-personal-action{width:44px}
 }
+
+
+/* Visual distinction: precisely three grouped tabs; personal PDF is not a fourth tab. */
+.gn-editions .gn-ed-edition-nav{column-gap:16px}
+.gn-editions .gn-ed-tablist{
+  border:1px solid var(--border);border-radius:11px;
+  padding:4px;gap:4px;background:var(--surface)
+}
+.gn-editions .gn-ed-tab{border-color:transparent;background:transparent}
+.gn-editions .gn-ed-personal-action{position:relative}
+.gn-editions .gn-ed-personal-action::before{
+  content:'';position:absolute;left:-9px;top:50%;transform:translateY(-50%);
+  width:1px;height:25px;background:var(--border)
+}
+@media(max-width:400px){
+  .gn-editions .gn-ed-edition-nav{column-gap:10px}
+  .gn-editions .gn-ed-personal-action::before{left:-6px}
+}
