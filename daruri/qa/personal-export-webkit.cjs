@@ -58,8 +58,9 @@ async function browserCheck(){
     const type=String(d.lookup(PDFName.of('Subtype')));
     assert.notEqual(type,'/Text','WebKit personal notes must not create comment boxes');
     if(type==='/Link'){
-      const dest=d.lookup(PDFName.of('Dest'),PDFArray);
-      if(dest&&endnotes.has(String(dest.get(0))))linked=true;
+      const raw=d.get(PDFName.of('Dest'));
+      const dest=raw?pdf.context.lookup(raw):null;
+      if(dest instanceof PDFArray&&endnotes.has(String(dest.get(0))))linked=true;
     }
   }
   assert(linked,'Mobile WebKit P reference must link into the personal endnotes');
