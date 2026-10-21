@@ -6,7 +6,7 @@
 
   // BEGIN DARURI RELEASE ASSETS
   const RELEASE_VERSION = "daruri8-structure-20261020";
-  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-export.css"]);
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -150,9 +150,16 @@
       ['daruri/editions.js', 'editions.js?v=20261021-editions1'],
       ['daruri/editions.css', 'editions.css?v=20261021-editions1'],
       ['daruri/personal-export.html', 'personal-export.html'],
-      ['daruri/personal-export.js', 'personal-export.js?v=1'],
+      ['daruri/personal-export.js', 'personal-export.js?v=2'],
+      ['daruri/personal-pdf-enhancements.js','personal-pdf-enhancements.js?v=2'],
       ['daruri/personal-export.css', 'personal-export.css?v=1'],
       ['daruri/vendor/pdf-lib-1.17.1.min.js', 'vendor/pdf-lib-1.17.1.min.js'],
+      ['daruri/vendor/fontkit-1.1.1.umd.min.js', 'vendor/fontkit-1.1.1.umd.min.js'],
+      ['daruri/vendor/NotoSerif-Regular.ttf', 'vendor/NotoSerif-Regular.ttf'],
+      ['daruri/vendor/NotoNaskhArabic-Regular.ttf', 'vendor/NotoNaskhArabic-Regular.ttf'],
+      ['daruri/vendor/LICENSE-fontkit.md', 'vendor/LICENSE-fontkit.md'],
+      ['daruri/vendor/OFL-NotoNaskhArabic.txt', 'vendor/OFL-NotoNaskhArabic.txt'],
+      ['daruri/vendor/OFL-NotoSerif.txt', 'vendor/OFL-NotoSerif.txt'],
       ['daruri/vendor/LICENSE-pdf-lib.md', 'vendor/LICENSE-pdf-lib.md'],
       ['daruri/fonts/source-serif-4-normal.woff2', 'fonts/source-serif-4-normal.woff2'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/build/release/'+name+'.metadata.json','build/release/'+name+'.metadata.json']),
@@ -160,6 +167,7 @@
       ['daruri/print.js', 'print.js'],
       ['daruri/lesson-print.js', 'lesson-print.js'],
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
+      ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
       ['daruri/sw.js', 'sw.js?v=20261021-home-text2'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
