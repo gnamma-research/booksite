@@ -302,6 +302,10 @@
     });
     document.addEventListener('change', e => {
       if (e.target.id === 'sg-unit') {ctx.state.studyUnit = e.target.value; updateOverview(ctx.state.studyLevel);}
+      if (e.target.matches?.('.sg-check input[type="radio"]')) {
+        const result = e.target.closest('.sg-check')?.querySelector('.sg-check-result');
+        if (result) result.hidden = true;
+      }
     });
     let scrollQueued = false;
     window.addEventListener('scroll', () => {
