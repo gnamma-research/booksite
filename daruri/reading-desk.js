@@ -19,7 +19,7 @@ function create(ctx){
  let records=[],available=true,selection=null,editor=null,origin=null,readingOrigin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
  const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
  const printPrefs={order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
- let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,untouchedStorage=null,storedEnvelope={};
+ let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='';
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
  function validateTarget(raw){
@@ -679,13 +679,44 @@ function create(ctx){
   if(state.focusMode||state.focusLevel===3||!showPersonalMarks())return;
   const marks=[],annotations=[];
   for(const item of active()){
-   const t=item.target;if(!t||t.kind!=='quote'||t.section!==String(state.n))continue;
-   const root=$('#gn-continuous-'+CSS.escape(String(t.section)))||$('#reader');
+   const t=item.target;
+   if(!isResolved(item)||t?.kind!=='quote'||!t.section)continue;
+   // In continuous mode, state.n identifies one active section but many others
+   // are visible: find each item's actual containing section.
+   const root=$('#gn-continuous-'+CSS.escape(String(t.section)))||
+    document.querySelector('#reader [data-reading-section="'+CSS.escape(String(t.section))+'"]')||
+    (String(t.section)===String(state.n)?$('#reader'):null);
    const side=root?.querySelector('.passage-grid[data-segment="'+t.segment+'"] .passage-'+(t.lang==='ar'?'ar':'en'));
-   if(!side)continue;const range=findRange(side,t);if(range)(item.kind==='note'?annotations:marks).push(range);
+   if(!side)continue;
+   const range=findRange(side,t);
+   if(range)(item.kind==='note'?annotations:marks).push(range);
   }
   if(marks.length)CSS.highlights.set('gn-rd-bookmark',new Highlight(...marks));
   if(annotations.length)CSS.highlights.set('gn-rd-note',new Highlight(...annotations));
+ }
+ function followSharedSourceLink(){
+  if(state.route!=='reader')return;
+  const hash=location.hash||'';
+  if(hash===lastSourceDeepLink||!hash.startsWith('#section=')||!/[&]segment=/.test(hash))return;
+  lastSourceDeepLink=hash;
+  const part=hash.match(/(?:^|&)segment=(\d+)/),segment=part?Number(part[1]):NaN;
+  if(!Number.isInteger(segment)||segment<0||segment>2000)return;
+  const sectionId=decodeURIComponent(hash.slice(9).split('&')[0]);
+  const selection=hash.match(/(?:^|&)selection=([^&]*)/),language=hash.match(/(?:^|&)lang=(ar|en)/);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   const root=$('#gn-continuous-'+CSS.escape(sectionId))||
+    document.querySelector('#reader [data-reading-section="'+CSS.escape(sectionId)+'"]')||$('#reader');
+   const grid=root?.querySelector('.passage-grid[data-segment="'+segment+'"]');
+   if(!grid)return;
+   grid.scrollIntoView({block:'center',behavior:'instant'});
+   if(selection&&window.CSS?.highlights&&typeof Highlight!=='undefined'){
+    let quotation='';
+    try{quotation=decodeURIComponent(selection[1])}catch(_){return;}
+    const side=grid.querySelector('.passage-'+(language?.[1]==='ar'?'ar':'en'));
+    const range=side?findRange(side,{quote:quotation,offset:0}):null;
+    if(range)CSS.highlights.set('gn-rd-target',new Highlight(range));
+   }
+  }));
  }
  function saveDeskReturnState(){
   try{sessionStorage.setItem('gnamma-reading-desk-return-v2',JSON.stringify({at:Date.now(),ui:{
@@ -781,7 +812,7 @@ function create(ctx){
   if(route==='bookmarks'){
    if(ui.listScroll&&!ui.mobileDetail)requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo({top:ui.listScroll,behavior:'instant'})));
   }
-  if(route==='reader')afterReader();else{closeContext();decorate();}
+  if(route==='reader'){afterReader();followSharedSourceLink();}else{closeContext();decorate();}
   document.body.classList.toggle('gn-rd-returning',!!origin&&route!=='bookmarks');
   if(origin&&route!=='bookmarks'){
    const main=$('#mainContent');if(main&&!main.querySelector('.gn-rd-return')){
@@ -812,7 +843,12 @@ function create(ctx){
  function canonicalURL(t){
   const base=new URL('index.html',location.href).href.split('#')[0];
   if(!t)return base+'#bookmarks';
-  if(['quote','paragraph','section','footnote'].includes(t.kind))return base+'#section='+encodeURIComponent(t.section);
+  if(['quote','paragraph','section','footnote'].includes(t.kind)){
+    let hash='#section='+encodeURIComponent(t.section);
+    if(Number.isInteger(Number(t.segment))&&t.segment!==undefined&&t.segment!==null){hash+='&segment='+Number(t.segment);
+     if(t.kind==='quote'&&t.quote){hash+='&lang='+(t.lang==='ar'?'ar':'en')+'&selection='+encodeURIComponent(String(t.quote).slice(0,300));}}
+    return base+hash;
+   }
   if(t.kind==='application')return base+'#application='+encodeURIComponent(t.app);
   if(t.kind==='lesson')return base+'#study?topic='+encodeURIComponent(t.lesson)+'&level='+encodeURIComponent(t.level);
   if(t.kind==='dictionary')return t.historical?new URL('dictionary.html',location.href).href.split('#')[0]+'#view=all&term='+encodeURIComponent(t.term):base+'#glossary';
@@ -906,10 +942,27 @@ function create(ctx){
  }
  function printSourcePreview(t){
   if(!t||!['quote','paragraph','section'].includes(t.kind))return '';
-  const limit=printPrefs.full?100000:650;
-  const ar=sourceText(t,'ar'),en=sourceText(t,'en');
-  const texts=(printPrefs.arabic?'<section class="gn-rd-print-ar" lang="ar" dir="rtl">'+esc(short(ar,limit))+'</section>':'')+
-    (printPrefs.english?'<section class="gn-rd-print-en" lang="en">'+esc(short(en,limit))+'</section>':'');
+  const limit=printPrefs.full?100000:900;
+  const excerpt=(lang)=>{
+   const raw=sourceText(t,lang);
+   if(!raw){
+    if(t.kind==='quote'&&t.lang===lang)return String(t.quote||'');
+    return '';
+   }
+   if(printPrefs.full||raw.length<=limit)return raw;
+   if(t.kind==='quote'&&t.lang===lang&&t.quote){
+    const quoted=String(t.quote),where=raw.indexOf(quoted);
+    if(where>=0){
+     const before=Math.max(0,where-250),after=Math.min(raw.length,where+quoted.length+260);
+     return (before?'… ':'')+raw.slice(before,after)+(after<raw.length?' …':'');
+    }
+    // Do not invent the location when a historical wording no longer matches.
+    return quoted+' [original saved quotation; wording not found in current paragraph]';
+   }
+   return raw.slice(0,limit)+' …';
+  };
+  const texts=(printPrefs.arabic?'<section class="gn-rd-print-ar" lang="ar" dir="rtl">'+esc(excerpt('ar'))+'</section>':'')+
+    (printPrefs.english?'<section class="gn-rd-print-en" lang="en">'+esc(excerpt('en'))+'</section>':'');
   return '<div class="gn-rd-print-bilingual">'+texts+'</div>';
  }
  function printGroup(items){
@@ -925,6 +978,9 @@ function create(ctx){
   else if(t?.kind==='application')html+='<p>'+esc(ctx.apps.get(t.app)?.text||'')+'</p>';
   else if(t?.kind==='lesson')html+='<p>'+esc(window.DARURI_STUDY_DATA?.lessons?.find(l=>l.id===t.lesson)?.summary||'')+'</p>';
   const seen=new Set();
+  const savedSelections=items.filter(r=>r.target?.quote).map(r=>r.target);
+  for(const t of savedSelections){const key=t.lang+':'+t.quote;if(seen.has(key))continue;seen.add(key);
+   html+='<blockquote lang="'+(t.lang==='ar'?'ar':'en')+'" dir="'+(t.lang==='ar'?'rtl':'ltr')+'">'+esc(t.quote)+'</blockquote>';}
   for(const r of items){
    if(r.kind==='note'){
     if(!printPrefs.personal)continue;
@@ -932,10 +988,6 @@ function create(ctx){
       '<p>'+esc(r.body).replace(/\n/g,'<br>')+'</p>'+
       (printPrefs.dates?'<small>'+esc(dateLine(r,true))+'</small>':'')+'</section>';
    }else{
-    if(r.target?.quote&&!seen.has(r.target.quote)){
-     html+='<blockquote lang="'+(r.target.lang==='ar'?'ar':'en')+'" dir="'+(r.target.lang==='ar'?'rtl':'ltr')+'">'+esc(r.target.quote)+'</blockquote>';
-     seen.add(r.target.quote);
-    }
     if(printPrefs.bookmarkDates)html+='<p class="gn-rd-print-record-date">'+esc(dateLine(r,true))+'</p>';
    }
   }
