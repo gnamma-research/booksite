@@ -761,11 +761,23 @@ function create(ctx){
     for(const row of incoming){
      const prior=byId.get(row.id);
      if(!prior){merged.push(row);byId.set(row.id,row);changes++;continue;}
-     if(row.updated>prior.updated){const i=merged.indexOf(prior);merged[i]=row;byId.set(row.id,row);changes++;}
-     else if(row.updated===prior.updated&&JSON.stringify(row)!==JSON.stringify(prior)){
-      const copy={...row,id:uuid(),title:(row.title||titleOf(row.target))+' · Imported version',updated:now};
-      merged.push(copy);changes++;
+     if(row.updated>prior.updated){
+      const i=merged.indexOf(prior);merged[i]=row;byId.set(row.id,row);changes++;continue;
      }
+     if(row.updated!==prior.updated)continue;
+     // Upgraded timestamp fields alone must not duplicate identical notes.
+     const contentFields=['kind','target','title','body','deleted','standalone'];
+     const contentDiffers=contentFields.some(k=>JSON.stringify(row[k])!==JSON.stringify(prior[k]));
+     if(!contentDiffers){
+      if((prior.dateSource!=='recorded'&&row.dateSource==='recorded')||row.modified>prior.modified){
+       const richer={...prior,dateSource:row.dateSource==='recorded'?'recorded':prior.dateSource,
+        modified:Math.max(prior.modified||0,row.modified||0),created:prior.created||row.created};
+       const i=merged.indexOf(prior);merged[i]=richer;byId.set(row.id,richer);changes++;
+      }
+      continue;
+     }
+     const copy={...row,id:uuid(),title:(row.title||titleOf(row.target))+' · Imported version',updated:now};
+     merged.push(copy);changes++;
     }
     if(merged.length>3000)throw Error('too many combined items');
     const before=records;records=merged;if(!persist()){records=before;throw Error('Browser storage unavailable');}ui.category='all';ui.filterTarget='';ui.selected='';render();
