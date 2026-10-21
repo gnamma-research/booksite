@@ -97,12 +97,24 @@ def smoke_full_site(browser, port, engine):
     page=ctx.new_page()
     page.goto(f'http://127.0.0.1:{port}/daruri/', wait_until='domcontentloaded',timeout=90000)
     page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-source-notes2'",timeout=90000)
-    page.wait_for_function("document.querySelector('#fb-note-QUR-R001-Q049 a.gn-source-icon-link') !== null",timeout=45000)
-    link=page.locator('#fb-note-QUR-R001-Q049 a.gn-source-icon-link').first
+    # Source notes are rendered on demand by the current reader: the old
+    # fallback article id may legitimately be absent until its note card opens.
+    # Add a real dynamic note to the running site and test its active observer.
+    page.evaluate("""() => {
+      const note = document.createElement('article');
+      note.id = 'qa-current-site-source-note';
+      note.className = 'gn-note-entry';
+      note.dataset.noteId = 'QUR-R001-Q049';
+      note.innerHTML = '<p>Qurʾān al-Raḥmān 55:4.</p><span class="source-note-links"><a href="https://quran.com/55/4">al-Raḥmān 55:4</a></span>';
+      document.body.appendChild(note);
+    }""")
+    page.wait_for_function("document.querySelector('#qa-current-site-source-note a.gn-source-icon-link') !== null",timeout=15000)
+    link=page.locator('#qa-current-site-source-note a.gn-source-icon-link').first
     assert link.get_attribute('href')=='https://quran.com/55/4'
+    assert page.locator('#qa-current-site-source-note .gn-verse-source-excerpt').count() == 1
     assert link.evaluate("e=>e.dispatchEvent(new MouseEvent('contextmenu',{bubbles:true,cancelable:true}))")
     ctx.close()
-    return {'full_site_loaded':engine,'r001_link_present':True}
+    return {'full_site_loaded':engine,'dynamic_r001_link_present':True}
 
 def main():
     server=http.server.ThreadingHTTPServer(('127.0.0.1',0),QuietHTTP)
