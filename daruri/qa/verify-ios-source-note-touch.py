@@ -186,7 +186,7 @@ def smoke_native_brackets_without_enhancer(browser, port, engine):
         assert figure.get_attribute('data-source-render')=='native'
         assert figure.locator('.gn-quran-words').inner_text()==verse
         assert figure.locator('.gn-quran-bracket').all_inner_texts()==['﴿','﴾']
-        assert 'possible allusion' in figure.inner_text()
+        assert 'possible verbal allusion' in figure.inner_text()
     assert page.locator('.gn-note-entry[data-note-id="QUR-R001-Q051"]').count()==0
     assert not page.evaluate('document.documentElement.scrollWidth > window.innerWidth')
     page.screenshot(path=str(REPORT / f'native-no-enhancer-{engine}-320.png'),full_page=True)
