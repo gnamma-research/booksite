@@ -69,14 +69,17 @@
 .gn-es-spec-layout,.gn-es-spec-notes,.gn-es-spec-apparatus{font-size:12px;color:var(--es-muted);line-height:1.5}
 .gn-es-custom-head{border-bottom:1px solid var(--es-line);margin-bottom:12px}
 .gn-es-custom-trigger{
-  display:flex;gap:10px;align-items:center;
+  display:flex;gap:10px;align-items:center;width:100%;text-align:left;
   color:var(--es-ink);background:transparent;border:0;
-  min-height:44px;padding:7px 1px 12px;
+  min-height:44px;padding:10px 12px;
   font-size:15px;font-weight:600;
 }
 .gn-es-custom-trigger svg{display:block;width:21px;height:21px;color:var(--es-muted)}
-.gn-es-custom-arrow{margin-left:8px;color:var(--es-muted)}
-.gn-es-custom-trigger[aria-expanded=true] .gn-es-custom-arrow{transform:rotate(180deg)}
+.gn-es-custom-trigger svg.gn-es-custom-arrow{
+  width:17px;height:17px;flex:0 0 17px;
+  margin-left:auto;color:var(--es-muted);transition:transform .15s ease;
+}
+.gn-es-custom-trigger[aria-expanded=true] svg.gn-es-custom-arrow{transform:rotate(180deg)}
 .gn-es-custom{
   border:1px solid var(--es-line);border-radius:11px;
   padding:12px;margin:0 0 14px;
@@ -140,10 +143,10 @@
 .gn-es-availability[data-es-status=loading]{border-color:var(--es-muted)}
 .gn-es-availability strong{display:block;font-size:14px}
 .gn-es-availability p{font-size:12px;color:var(--es-muted);margin:4px 0 0;line-height:1.5}
-.gn-es-actions{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+.gn-es-actions{display:flex;gap:9px;flex-wrap:wrap;justify-content:center;width:100%}
 .gn-es-action{
   display:flex;align-items:center;justify-content:center;gap:8px;
-  min-height:47px;min-width:145px;flex:0 0 auto;
+  min-height:47px;min-width:0;width:100%;flex:1 1 100%;
   border:1px solid var(--es-line);border-radius:8px;
   padding:9px 12px;color:var(--es-ink);background:var(--es-bg);
   font-size:14px;font-weight:650;text-decoration:none;
@@ -167,10 +170,12 @@
   .gn-es-choice{font-size:12px;padding:8px;min-height:43px}
   .gn-es-choice[aria-pressed=true]{padding:7px}
   .gn-es-actions{gap:6px}
-  .gn-es-action{min-width:145px;gap:7px;padding:8px 14px;font-size:13px;min-height:46px}
+  .gn-es-action{min-width:0;gap:7px;padding:8px 14px;font-size:13px;min-height:46px}
   .gn-es-action svg{width:18px;height:18px}
 }
 @media print{
   .gn-es{display:none!important}
   .gn-es-legacy{display:none!important}
 }
+
+@media(prefers-reduced-motion:reduce){.gn-es-custom-trigger svg.gn-es-custom-arrow{transition:none}}
