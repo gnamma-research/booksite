@@ -41,17 +41,24 @@ def validate_and_publish(source: Path, site: Path):
             assert all(1 <= int(page) <= pages for page in destinations.values()), filename
             link_count = sum(len(page.get_links()) for page in document)
             assert link_count > 100, (filename, link_count)
+            # Verify the live PDF annotations, not just possibly wrapped extracted prose.
+            all_uris = [link.get('uri', '') for page in document for link in page.get_links()]
+            first_page = document[int(meta['section_pages']['1']) - 1]
+            section1_uris = {link.get('uri', '') for link in first_page.get_links()}
+            assert 'https://quran.com/55/4' in section1_uris, filename + ' §1 55:4 source missing'
+            assert 'https://quran.com/6/149' in section1_uris, filename + ' §1 6:149 source missing'
+            assert 'https://quran.com/33/40' not in section1_uris, filename + ' §1 33:40 false citation'
             if filename == 'daruri.pdf':
                 text_pages = [p for p in document if 'Verified Qurʾān excerpt' in p.get_text()]
                 assert text_pages, 'Direct Quran quotation excerpt missing'
                 example = '\\n'.join(p.get_text() for p in text_pages)
                 assert 'https://quran.com/' not in example, 'Raw Quran URL visibly printed'
                 external = [link.get('uri', '') for p in text_pages for link in p.get_links()]
-                assert any(u == 'https://quran.com/4/43' for u in external), 'True direct quotation source URI missing'
-                assert any('Cf. Qurʾān, al-Raḥmān 55:4' in p.get_text() for p in document), 'Qualified §1 55:4 allusion missing from scholarly apparatus'
-                assert any('Cf. Qurʾān, al-Anʿām 6:149' in p.get_text() for p in document), 'Qualified §1 6:149 allusion missing from scholarly apparatus'
-                assert all('Cf. Qurʾān, al-Aḥzāb 33:40' not in p.get_text() for p in document), 'Withheld 33:40 attribution was incorrectly restored'
-                assert all('possible verbal allusion, NOT an authorial quotation' not in p.get_text() or 'Qurʾānic comparison only' in p.get_text() for p in document), 'Mislabelled a possible allusion'
+                assert 'https://quran.com/4/43' in external, 'True direct quotation source URI missing'
+                # These comparison excerpts must never be mislabelled as authorial quotations.
+                section1_text = first_page.get_text().replace('\\n', ' ')
+                assert 'possible verbal allusion' in section1_text, 'Qualification missing in scholarly §1 apparatus'
+                assert 'NOT an authorial quotation' in section1_text, 'Explicit quotation warning missing in scholarly §1 apparatus'
             old_pages = manifest['files'][filename]['pages']
             # Source/contents structural changes beyond source-note typography
             # require separate editorial approval; do not silently publish them.
