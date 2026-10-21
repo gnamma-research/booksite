@@ -307,7 +307,7 @@ function create(ctx){
  }
  function detailsFor(r){
   const t=r.kind==='note'?r.target:r.target,expanded=ui.expanded;
-  if(r.kind==='note'&&r.standalone)return '<p class="gn-rd-muted">Free-standing personal note</p><div class="gn-rd-personal-body">'+esc(r.body)+'</div>';
+  if(r.kind==='note'&&r.standalone)return '<p class="gn-rd-muted">Free-standing personal note</p><div class="gn-rd-personal-body">'+escFull(r.body)+'</div>';
   let html='<p class="gn-rd-source-label">'+esc(subOf(t))+'</p>';
   if(t&&['section','paragraph','quote'].includes(t.kind)){
    html+='<div class="gn-rd-language-tabs" role="group" aria-label="Context language">'+['both','ar','en'].map(v=>'<button type="button" data-rd="language" data-value="'+v+'" aria-pressed="'+(ui.context===v)+'">'+({both:'Both',ar:'Arabic',en:'English'}[v])+'</button>').join('')+'</div>';
@@ -331,7 +331,7 @@ function create(ctx){
    const l=window.DARURI_STUDY_DATA?.lessons?.find(x=>x.id===t.lesson);
    html+='<p>'+esc(l?.summary||'')+'</p><p class="gn-rd-muted">'+esc(t.level)+'</p>';
   }
-  if(r.kind==='note')html+='<div class="gn-rd-personal-body"><h3>Your note</h3><p>'+esc(r.body).replace(/\n/g,'<br>')+'</p></div>';
+  if(r.kind==='note')html+='<div class="gn-rd-personal-body"><h3>Your note</h3><p>'+escFull(r.body).replace(/\n/g,'<br>')+'</p></div>';
   return html;
  }
  function grouped(r){return r.kind==='note'?'My note':r.kind==='footnote'?'Book note':LABELS[typeOf(r)]||'Bookmark';}
@@ -898,7 +898,8 @@ function create(ctx){
   else if(t?.kind==='dictionary')txt+='\n\n'+(book.glossary.find(x=>x.term===t.term)?.definition||'');
   else if(t?.kind==='application')txt+='\n\n'+(ctx.apps.get(t.app)?.text||'');
   txt+='\n\nSource: '+canonicalURL(t);
-  return txt.slice(0,15000);
+  if(txt.length>15000)return txt.slice(0,14500)+'\n\n[Excerpt only: this shared text was shortened. The full saved note remains in Reading Desk; export Markdown or JSON for complete content.]';
+  return txt;
  }
  function canonicalURL(t){
   const base=new URL('index.html',location.href).href.split('#')[0];
@@ -917,7 +918,7 @@ function create(ctx){
  }
  async function shareItem(r,email=false){
   const value=textForShare(r);
-  if(email){location.href='mailto:?subject='+encodeURIComponent('Reading Desk · '+(r.title||titleOf(r.target)).slice(0,80))+'&body='+encodeURIComponent(value.slice(0,7000));return;}
+  if(email){const body=value.length>7000?value.slice(0,6450)+'\n\n[Email excerpt shortened; export Markdown or JSON for complete content.]':value;location.href='mailto:?subject='+encodeURIComponent('Reading Desk · '+(r.title||titleOf(r.target)).slice(0,80))+'&body='+encodeURIComponent(body);return;}
   if(navigator.share){try{await navigator.share({title:r.title||titleOf(r.target),text:value,url:canonicalURL(r.target)});return;}catch(e){if(e.name==='AbortError')return;}}
   try{await navigator.clipboard.writeText(value);ctx.notify('Text and source link copied for sharing.');}catch(e){ctx.notify('Sharing unavailable. Use Email or Print.');}
  }
@@ -1046,7 +1047,7 @@ function create(ctx){
    if(r.kind==='note'){
     if(!printPrefs.personal)continue;
     html+='<section class="gn-rd-print-personal"><h3>'+esc(r.title||'My note')+'</h3>'+
-      '<p>'+esc(r.body).replace(/\n/g,'<br>')+'</p>'+
+      '<p>'+escFull(r.body).replace(/\n/g,'<br>')+'</p>'+
       (printPrefs.dates?'<small>'+esc(dateLine(r,true))+'</small>':'')+'</section>';
    }else{
     if(printPrefs.bookmarkDates)html+='<p class="gn-rd-print-record-date">'+esc(dateLine(r,true))+'</p>';
