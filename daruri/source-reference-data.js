@@ -451,9 +451,9 @@ window.DARURI_SOURCE_REFERENCES = {
 (function () {
   var base = new URL('.', document.currentScript && document.currentScript.src || document.baseURI);
   var css = document.createElement('link');
-  css.rel = 'stylesheet'; css.href = new URL('source-note-ui.css?v=20261021-source-notes2', base).href;
+  css.rel = 'stylesheet'; css.href = new URL('source-note-ui.css?v=20261021-qpolicy1', base).href;
   document.head.appendChild(css);
   var js = document.createElement('script');
-  js.src = new URL('source-note-ui.js?v=20261021-source-notes2', base).href;
+  js.src = new URL('source-note-ui.js?v=20261021-qpolicy1', base).href;
   js.async = false; document.head.appendChild(js);
 })();
