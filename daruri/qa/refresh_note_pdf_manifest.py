@@ -64,8 +64,8 @@ def validate_and_publish(source: Path, site: Path):
         record.update(sha256=sha, source_sha256=sha, size_bytes=pdf_path.stat().st_size, pages=pages)
         report[filename] = {'pages': pages, 'links': link_count, 'bookmarks': len(outline), 'sha256': sha}
     manifest['edition_date'] = '2026-10-21'
-    manifest['release_revision'] = 'daruri9-source-notes-20261021'
-    manifest['citation_presentation_revision'] = '20261021-source-notes1'
+    manifest['release_revision'] = 'daruri10-conservative-quran-20261021'
+    manifest['citation_presentation_revision'] = '20261021-qpolicy1'
     manifest_file.write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     (source/'source-note-pdf-qa.json').write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(report, indent=2))
