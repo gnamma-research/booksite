@@ -43,7 +43,7 @@ try {
   const readyReading=page.locator('[data-ep-published="reading"]');
   assert.match(await page.locator('[data-ep-info-detail]').textContent(),/76 A4 pages/,'Initial selection described');
   await readyReading.locator('[data-ep-icon-kind="language"]').getByRole('radio',{name:'English only'}).click();
-  assert.equal(await page.locator('[data-ep-info-kind]').textContent(),'Language');
+  assert.equal(await page.locator('.gn-ed-status [data-ep-info-kind]').textContent(),'Language');
   assert.equal(await page.locator('[data-ep-info-value]').textContent(),'English only');
   assert.match(await page.locator('[data-ep-info-detail]').textContent(),/43 A4 pages/);
   assert.match(await readyReading.locator('[data-ep-ready-download]').getAttribute('href'),/reading-english-titles-off\.pdf$/);
