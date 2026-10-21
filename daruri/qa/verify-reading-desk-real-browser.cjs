@@ -134,8 +134,15 @@ async function exercise(engine, width, touch) {
 
     await page.goto(HOST+'/daruri/#bookmarks',{waitUntil:'domcontentloaded',timeout:90000});
     await page.locator('.gn-rd-page').waitFor({timeout:90000});
-    check(await page.locator('.gn-rd-card-open').count()===6,
-      id+': data did not survive a full page reload');
+    const reloadCards=await page.locator('.gn-rd-card-open').count();
+    const reloadStored=await page.evaluate(() => {
+      try{return JSON.parse(localStorage.getItem('gnamma-reading-desk-v1')).items.map(it=>it.id);}
+      catch(e){return 'unreadable '+String(e);}
+    });
+    console.log('RELOAD '+id+' cards='+reloadCards+' storage='+JSON.stringify(reloadStored)+
+      ' route='+await page.evaluate(() => location.hash));
+    check(reloadCards===6,
+      id+': data did not survive a full page reload; cards='+reloadCards);
     await page.locator('.gn-rd-card-open[data-id="saved-section"]').click();
     await page.locator('#gn-rd-detail [data-rd="open"]').click();
     await page.locator('.gn-rd-return [data-rd="return"]').waitFor({timeout:25000});
