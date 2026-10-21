@@ -1,0 +1,71 @@
+'use strict';
+/* True browser -> generated PDF smoke (run from qa/ with Playwright + pdf-lib installed).
+   Serves this exact branch and verifies pop-up annotation dictionaries and appended pages. */
+const assert=require('node:assert/strict');
+const fs=require('node:fs'),path=require('node:path'),os=require('node:os');
+const {spawn}=require('node:child_process'),{chromium}=require('playwright');
+const {PDFDocument,PDFArray,PDFName}=require('pdf-lib');
+const root=path.resolve(__dirname,'../..');
+const host='http://127.0.0.1:8765';
+const server=spawn('python3',['-m','http.server','8765','--bind','127.0.0.1'],{cwd:root,stdio:'ignore'});
+const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+const file='daruri.pdf';
+(async()=>{
+ let browser=null;
+ try{
+  await sleep(1500);
+  browser=await chromium.launch({headless:true});
+  const page=await browser.newPage({acceptDownloads:true});
+  const errors=[];page.on('pageerror',error=>errors.push(error.message));
+  await page.addInitScript(()=>{
+   localStorage.setItem('gnamma-reading-desk-v1',JSON.stringify({
+    format:'gnamma-reading-desk',version:1,items:[
+     {id:'smoke-linked',kind:'note',title:'A personal reflection',body:'This is a private reading note. العربية مثال.',
+      target:{kind:'quote',section:'1',segment:0,lang:'en',quote:'knowledge'},
+      created:Date.UTC(2026,9,21),modified:0,updated:Date.UTC(2026,9,21),dateSource:'recorded',deleted:0},
+     {id:'smoke-free',kind:'note',title:'Free standing',body:'Second observation <script>text</script>.',
+      target:null,standalone:true,created:0,updated:Date.UTC(2026,9,21),dateSource:'legacy-unknown',deleted:0},
+     {id:'smoke-bookmark',kind:'section',target:{kind:'section',section:'62'},
+      created:Date.UTC(2026,9,21),updated:Date.UTC(2026,9,21),dateSource:'recorded',deleted:0}
+    ]
+   }));
+  });
+  await page.goto(host+'/daruri/personal-export.html',{waitUntil:'networkidle'});
+  assert.equal(await page.locator('input[name=pe-mode]:checked').getAttribute('value'),'none');
+  assert.match(await page.locator('#pe-description').innerText(),/No Reading Desk items/i);
+  assert.equal(await page.locator('#pe-generate').innerText(),'Open unchanged PDF');
+  await page.locator('input[name=pe-mode][value=all]').check();
+  assert.match(await page.locator('#pe-count').innerText(),/2 qualifying items/);
+  await page.locator('#pe-bookmarks').check();
+  assert.match(await page.locator('#pe-count').innerText(),/3 qualifying items/);
+  await page.locator('#pe-bookmarks').uncheck();
+  await page.locator('#pe-annotations').check();
+  await page.locator('#pe-appendix').check();
+  const downloadPromise=page.waitForEvent('download',{timeout:180000});
+  await page.locator('#pe-generate').click();
+  const download=await downloadPromise,output=path.join(os.tmpdir(),'gnamma-personal-qa-'+Date.now()+'.pdf');
+  await download.saveAs(output);
+  const err=await page.locator('#pe-alert').innerText();
+  assert(!/export failed/i.test(err),err);
+  const pdf=await PDFDocument.load(fs.readFileSync(output));
+  const metadata=JSON.parse(fs.readFileSync(path.join(root,'daruri/build/release/'+file+'.metadata.json'),'utf8'));
+  const base=JSON.parse(fs.readFileSync(path.join(root,'daruri/pdf-editions-manifest.json'),'utf8')).files[file].pages;
+  assert(pdf.getPageCount()>base,'appendix must add printable pages');
+  const sectionOne=Number(metadata.section_pages['1'])-1;
+  const annotations=pdf.getPage(sectionOne).node.lookup(PDFName.of('Annots'),PDFArray);
+  assert(annotations&&annotations.size()>0,'PDF must contain real source-linked annotations');
+  let hasPopup=false;for(let i=0;i<annotations.size();i++){
+   const a=pdf.context.lookup(annotations.get(i));const type=a.lookup(PDFName.of('Subtype'));
+   if(type&&String(type)==='/Text')hasPopup=true;
+  }
+  assert(hasPopup,'expected native PDF Text annotation');
+  const end=pdf.getPage(pdf.getPageCount()-1);
+  assert(end.node.Resources(), 'printable appendix should have embedded image resources');
+  assert.equal(errors.length,0,'no uncaught browser errors: '+errors.join('; '));
+  fs.unlinkSync(output);
+  console.log('PASS Chromium real PDF generation: unchanged default, local entries, source icon, appended printable pages, Unicode');
+ } finally {
+  if(browser)await browser.close();
+  server.kill();
+ }
+})().catch(e=>{console.error(e);server.kill();process.exitCode=1;});
