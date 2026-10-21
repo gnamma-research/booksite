@@ -63,3 +63,6 @@ body.focus-level-3 .gn-continuous-section{scroll-margin-top:var(--sg-source-scro
 @media(max-width:760px){.sg-pathway>div{grid-template-columns:repeat(3,minmax(0,1fr))}.sg-check{padding:16px}.sg-choice{padding:12px 10px}}
 @media(max-width:370px){.sg-pathway>div{grid-template-columns:repeat(2,minmax(0,1fr))}.sg-pathway a{font-size:12px}}
 @media print{.sg-pathway,.sg-checks .sg-check>button{display:none!important}.sg-check{break-inside:avoid}.sg-check-result[hidden]{display:none!important}}
+
+/* Keep question legends in the normal fieldset flow on mobile Safari. */
+.sg-check legend{float:none;box-sizing:border-box}
