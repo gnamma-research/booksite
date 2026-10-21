@@ -2,7 +2,7 @@ name: Daruri source-note PDF QA and publication
 
 on:
   push:
-    branches: [feature/quran-note-integration-20261021]
+    branches: [fix/daruri-personal-pdf-page-maps-20261021]
     paths:
       - 'daruri/build/**'
       - 'daruri/qa/refresh_note_pdf_manifest.py'
@@ -44,11 +44,13 @@ jobs:
       - name: Validate notes, source URIs, outlines, and page stability
         run: |
           python daruri/qa/refresh_note_pdf_manifest.py --output-dir /tmp/daruri-source-note-build --site-dir daruri
+      - name: Confirm personal PDF exporter maps match regenerated PDFs
+        run: node daruri/qa/verify-personal-export-safety.js
       - name: Commit only verified PDF binaries and matching manifest
         run: |
           git config user.name 'gnamma-research-bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add daruri/daruri.pdf daruri/daruri-study.pdf daruri/daruri-english.pdf daruri/daruri-arabic.pdf daruri/daruri-arabic-vowelled.pdf daruri/pdf-editions-manifest.json
+          git add daruri/daruri.pdf daruri/daruri-study.pdf daruri/daruri-english.pdf daruri/daruri-arabic.pdf daruri/daruri-arabic-vowelled.pdf daruri/pdf-editions-manifest.json daruri/build/release/*.metadata.json
           if ! git diff --cached --quiet; then
             git commit -m 'Release source-note typography PDF QA outputs [skip ci]'
             git push origin HEAD:${GITHUB_REF_NAME}
