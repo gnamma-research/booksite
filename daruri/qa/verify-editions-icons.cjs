@@ -75,6 +75,16 @@ assert.equal(coursePicker.dataset.epIconified,'native', 'Long lesson list remain
 const manifest=JSON.parse(read('editions/manifest.json'));
 assert.equal(manifest.status,'verified');
 assert.deepEqual(manifest.tier_order,['reading','study','reference']);
-assert.equal(manifest.files.filter(f=>f.tier==='reading').length,8);
+assert.equal(manifest.files.filter(f=>f.tier==='reading').length,10);
+assert.ok(editionSrc.includes('data-ep-ready-toggle="en"'));
+assert.ok(editionSrc.includes('data-ep-ready-toggle="ar"'));
+assert.ok(editionSrc.includes('data-ep-ready-toggle="vowels"'));
+assert.ok(editionSrc.includes("key==='vowels'&&!readyLanguage.ar"),
+  'Vowel toggle appears only when Arabic is active');
+assert.ok(editionSrc.includes("key==='en'&&readyLanguage.en&&!readyLanguage.ar"),
+  'At least one language stays enabled');
+assert.ok(editionSrc.includes("setting.vowels=readyLanguage.vowels"),
+  'Custom Reading print synchronizes its vowel state with normal controls');
+assert.ok(css.includes('.gn-ed-vowel-switch'),'Distinct glyph for conditional vowel marks');
 assert.equal(manifest.files.filter(f=>f.tier==='study').length,2);
-console.log('PASS: icon-only choices, selection display, screen-reader labels, native long lists, collapsed printing, scholarly notes, cache/ZIP contracts.');
+console.log('PASS: three tabs, independent EN/AR, conditional vowels, 12 PDF variants, complete Study/ref controls, screen-reader names, printing and cache/ZIP contracts.');
