@@ -65,8 +65,9 @@ const file='daruri.pdf';
    const type=a.lookup(PDFName.of('Subtype'));
    if(String(type)==='/Text')throw Error('Personal PDF exports must not create comment boxes');
    if(String(type)==='/Link'){
-     const dest=a.lookup(PDFName.of('Dest'),PDFArray);
-     if(dest&&refSet.has(String(dest.get(0))))hasPersonalLink=true;
+     const raw=a.get(PDFName.of('Dest'));
+     const dest=raw?pdf.context.lookup(raw):null;
+     if(dest instanceof PDFArray&&refSet.has(String(dest.get(0))))hasPersonalLink=true;
    }
   }
   assert(hasPersonalLink,'section must have a clickable P reference pointing to the endnotes');
@@ -75,14 +76,20 @@ const file='daruri.pdf';
   assert.equal(errors.length,0,'no uncaught browser errors: '+errors.join('; '));
   assert.equal(thirdParty.length,0,'private PDF export must not require remote third-party scripts');
   // Appendix headings link back to their original numbered source pages.
-  const appendixAnnotations=end.node.lookup(PDFName.of('Annots'),PDFArray);
-  assert(appendixAnnotations&&appendixAnnotations.size()>0,'appended notes should have return navigation');
   let hasReturn=false;
-  for(let i=0;i<appendixAnnotations.size();i++){
-    const item=pdf.context.lookup(appendixAnnotations.get(i));
-    if(String(item.lookup(PDFName.of('Subtype')))==='/Link')hasReturn=true;
+  for(let pageIndex=base;pageIndex<pdf.getPageCount();pageIndex++){
+    const appendixPage=pdf.getPage(pageIndex);
+    if(!appendixPage.node.get(PDFName.of('Annots')))continue;
+    const list=appendixPage.node.lookup(PDFName.of('Annots'),PDFArray);
+    for(let i=0;i<list.size();i++){
+      const item=pdf.context.lookup(list.get(i));
+      if(String(item.lookup(PDFName.of('Subtype')))!=='/Link')continue;
+      const raw=item.get(PDFName.of('Dest'));
+      const dest=raw?pdf.context.lookup(raw):null;
+      if(dest instanceof PDFArray){hasReturn=true;break;}
+    }
   }
-  assert(hasReturn,'appendix should offer native PDF links back to text');
+  assert(hasReturn,'appendix must contain a working PDF link back to source');
   fs.unlinkSync(output);
   // Every fixed language edition needs an independent matching map.
   const manifest=JSON.parse(fs.readFileSync(path.join(root,'daruri/pdf-editions-manifest.json'),'utf8'));
