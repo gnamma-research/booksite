@@ -4,7 +4,6 @@
 (() => {
   'use strict';
   const tidy=s=>String(s||'').normalize('NFKD').replace(/\p{M}/gu,'').replace(/[^\p{L}\p{N}]/gu,'').toLocaleLowerCase('en');
-  const {PDFName,PDFHexString}=()=>window.PDFLib; // resolved after PDF library loads
   function sourceMatch(words,target){
     if(!Array.isArray(words)||!words.length||!target||!target.quote)return null;
     const needle=tidy(target.quote);
@@ -38,7 +37,7 @@
         if(b.x1<=b.x0||b.y1<=b.y0)continue;
         // Merge only adjacent words within the same baseline.
         const previous=rects.at(-1);
-        if(previous&&Math.abs(previous.y0-b.y0)<3.5&&Math.abs(previous.y1-b.y1)<3.5&&b.x0<=previous.x1+14&&b.x0>=previous.x0-4){
+        if(previous&&Math.abs(previous.y0-b.y0)<3.5&&Math.abs(previous.y1-b.y1)<3.5&&b.x0<=previous.x1+14&&b.x1>=previous.x0-14){
           previous.x0=Math.min(previous.x0,b.x0);previous.x1=Math.max(previous.x1,b.x1);
           previous.y0=Math.min(previous.y0,b.y0);previous.y1=Math.max(previous.y1,b.y1);
         }else rects.push(b);
