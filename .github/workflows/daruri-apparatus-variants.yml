@@ -1,0 +1,60 @@
+name: Build Daruri Apparatus PDFs and Personal Maps
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-single-pdf-apparatus-20261021]
+    paths:
+      - ".github/workflows/daruri-apparatus-variants.yml"
+      - "daruri/build/build_apparatus_variants.py"
+      - "daruri/qa/verify_apparatus_maps.py"
+permissions:
+  contents: write
+concurrency:
+  group: daruri-apparatus-branch-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install PDF render and verification libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install --disable-pip-version-check "weasyprint>=68,<69" "PyMuPDF==1.26.7" "pypdf==5.9.0"
+      - name: Build all ten additional static PDFs and source maps
+        run: |
+          python daruri/build/build_apparatus_variants.py
+      - name: Verify every PDF, exact base identity and all 258 page mappings
+        run: |
+          python daruri/qa/verify_apparatus_maps.py
+          node daruri/qa/verify-ready-editions.js
+      - name: Upload artifacts for editorial review
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-verified-apparatus-pdfs-maps
+          path: |
+            daruri/editions/apparatus/*.pdf
+            daruri/editions/apparatus/manifest.json
+            daruri/editions/apparatus/maps/*.json
+          retention-days: 30
+      - name: Publish only additive apparatus PDFs and maps on draft branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daruri/editions/apparatus
+          if git diff --cached --quiet; then
+            echo "Apparatus binaries and maps are unchanged."
+          else
+            git commit -m "Publish 10 verified Daruri apparatus PDFs and section maps"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
