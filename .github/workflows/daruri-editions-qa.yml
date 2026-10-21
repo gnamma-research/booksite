@@ -8,6 +8,10 @@ on:
       - "daruri/editions.js"
       - "daruri/editions-icons.js"
       - "daruri/editions-icons.css"
+      - "daruri/editions-selector.js"
+      - "daruri/editions-selector.css"
+      - "daruri/qa/verify-published-selector.cjs"
+      - "daruri/qa/verify-published-selector-browser.mjs"
       - "daruri/qa/verify-editions-icons.cjs"
       - "daruri/qa/verify-editions-icons-browser.mjs"
       - "daruri/qa/verify-unvowelled-layout.py"
@@ -23,6 +27,10 @@ on:
       - "daruri/editions.js"
       - "daruri/editions-icons.js"
       - "daruri/editions-icons.css"
+      - "daruri/editions-selector.js"
+      - "daruri/editions-selector.css"
+      - "daruri/qa/verify-published-selector.cjs"
+      - "daruri/qa/verify-published-selector-browser.mjs"
       - "daruri/editions.css"
       - "daruri/index.html"
       - "daruri/sw.js"
@@ -49,6 +57,9 @@ jobs:
         run: |
           node --check daruri/editions.js
           node --check daruri/editions-icons.js
+          node --check daruri/editions-selector.js
+          node --check daruri/qa/verify-published-selector.cjs
+          node --check daruri/qa/verify-published-selector-browser.mjs
           node --check daruri/qa/verify-editions-icons.cjs
           node --check daruri/qa/verify-ready-editions.js
       - name: Source and edition downloads
@@ -56,6 +67,7 @@ jobs:
           node daruri/qa/verify-editions-configurator.js
           node daruri/qa/verify-ready-editions.js
           node daruri/qa/verify-editions-icons.cjs
+          node daruri/qa/verify-published-selector.cjs
 
       - name: Browser interaction and mobile rendering
         shell: bash
@@ -69,7 +81,7 @@ jobs:
             if curl --silent --fail http://127.0.0.1:8123/daruri/ > /dev/null; then break; fi
             sleep 0.25
           done
-          node daruri/qa/verify-editions-icons-browser.mjs
+          node daruri/qa/verify-published-selector-browser.mjs
       - name: Verify A4 PDFs and render sample pages
         run: |
           python -m pip install --disable-pip-version-check "PyMuPDF>=1.26,<1.28"
