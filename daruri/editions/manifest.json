@@ -18,8 +18,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 1004517,
-      "sha256": "68ad75592fbdafc294d93b60f8660728c31555dd00d057fb06045839503f3114"
+      "bytes": 1004518,
+      "sha256": "83752bd49f96a2f4ad46f3f6675edf54fbd0a5c85fc140cd836f4cd3ac83e002"
     },
     {
       "file": "reading/daruri-reading-bilingual-titles-on.pdf",
@@ -31,8 +31,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 1109806,
-      "sha256": "af0e4140a9002fd235e75c38de828e5245e830f0e297fa9546af1a00c86571d8"
+      "bytes": 1109814,
+      "sha256": "6f5bcb5e7e35c2b58517891a63ec48151a3c7674d591145117a66ba1b57f7dee"
     },
     {
       "file": "reading/daruri-reading-english-titles-off.pdf",
@@ -44,8 +44,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 248488,
-      "sha256": "306f81957e6bb0e16a756c36628a899e122de2f9b4c1a74bdcd7227449a27396"
+      "bytes": 248489,
+      "sha256": "c7382996423eac8df22bd3b9223094c7a4b6b615a34ccc9b40c0112257bae16c"
     },
     {
       "file": "reading/daruri-reading-english-titles-on.pdf",
@@ -57,8 +57,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 335665,
-      "sha256": "b290593527f47f0f7e31f64be998a2d656678b30bc94375f5d8190dcdd161662"
+      "bytes": 335666,
+      "sha256": "c2cbd9b22b4ec3e9d0a596e2af4af42cf1ef8fbd5448be3c733d0250e2653549"
     },
     {
       "file": "reading/daruri-reading-arabic-titles-off.pdf",
@@ -70,8 +70,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 295097,
-      "sha256": "c1e72bfae2cb1c5663b4909d005e474837da79a9d2b7f7ec020ee31400313fbc"
+      "bytes": 295101,
+      "sha256": "f5e5b3271a38211cb02d2dd68bc8310e51939b364aac6058574605d0a7be4453"
     },
     {
       "file": "reading/daruri-reading-arabic-titles-on.pdf",
@@ -83,8 +83,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 394556,
-      "sha256": "fb16db7816969b09ba9604acaa3eb3daa6ec8805cc6d13ac40e486195ac1b2a4"
+      "bytes": 394560,
+      "sha256": "07fe2bfe872008abeca074f0019c9cd845792436800540356b6e2be6ea6de683"
     },
     {
       "file": "reading/daruri-reading-arabic-vowelled-titles-off.pdf",
@@ -96,8 +96,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 623197,
-      "sha256": "39bd7fb6d6249ba4279125707e295632f04dee12af1a62f2f042cbd90da661ab"
+      "bytes": 623200,
+      "sha256": "3aa5db08336b6f11ea6e86758d29bbfdd9325f98b24aa5c4e7ec83d6227bca89"
     },
     {
       "file": "reading/daruri-reading-arabic-vowelled-titles-on.pdf",
@@ -109,8 +109,8 @@
       "links": 5,
       "clickable_part_links": 0,
       "notes": "none",
-      "bytes": 738637,
-      "sha256": "8b13fe8bdcf9fc4eb0203cb1d41afd5f24b48d1d9d9e4ea0e24472eab88761a5"
+      "bytes": 738640,
+      "sha256": "ea3b5abf4d2e29d577c12d323dd940d0db17616f1fb31f01649b7b13f6684e1a"
     },
     {
       "file": "study/daruri-study-bilingual-titles-off.pdf",
@@ -119,11 +119,11 @@
       "editorial_titles": false,
       "pages": 131,
       "bookmarks": 54,
-      "links": 1894,
+      "links": 1869,
       "clickable_part_links": 0,
       "notes": "selected",
-      "bytes": 1658435,
-      "sha256": "ea784a70a32e854238a367a95d009b3c490a36ca7d0752151c5d49b431b3bd65"
+      "bytes": 1651779,
+      "sha256": "7ee12c34ab91704d217291999ab609fa485388c99be1fd933682ab07585c0dcb"
     },
     {
       "file": "study/daruri-study-bilingual-titles-on.pdf",
@@ -132,11 +132,11 @@
       "editorial_titles": true,
       "pages": 143,
       "bookmarks": 318,
-      "links": 1918,
+      "links": 1893,
       "clickable_part_links": 0,
       "notes": "selected",
-      "bytes": 1765738,
-      "sha256": "e25ca8001d1f6b1dc29dd5163245ff273d2e31012a1932da7ba81544f639488b"
+      "bytes": 1759002,
+      "sha256": "77ee2d9757aee7b529396ffc8c6698e1109bc31c44e7f6b25b74fdfc3a450f57"
     }
   ]
 }
