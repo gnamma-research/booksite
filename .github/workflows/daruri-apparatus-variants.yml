@@ -11,7 +11,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: daruri-apparatus-branch-release
+  group: daruri-apparatus-matrix-optimized-v2
   cancel-in-progress: false
 
 jobs:
