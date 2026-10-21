@@ -100,7 +100,7 @@ function create(ctx){
  function persist(){
   try{
    localStorage.setItem(KEY,JSON.stringify({format:FORMAT,version:VERSION,items:records}));
-   available=true;syncLegacy(true);return true;
+   available=true;syncLegacy(true);syncActionStates();return true;
   }catch(e){
    available=false;ctx.notify('Reading Desk is not saved: browser storage is full or unavailable. Export a backup.');return false;
   }
@@ -468,34 +468,73 @@ function create(ctx){
  function actions(target,compact){
   const row=document.createElement('div');row.className='gn-rd-attach-actions'+(compact?' gn-rd-compact':'');
   const serialized=encodeURIComponent(JSON.stringify(target));
-  row.innerHTML='<button type="button" data-rd="attach-bookmark" data-target="'+esc(serialized)+'">◇ Bookmark</button><button type="button" data-rd="attach-note" data-target="'+esc(serialized)+'">+ Add note</button>';
+  const stored=active().some(r=>r.kind===target.kind&&keyOf(r.target)===keyOf(target));
+  row.innerHTML='<button type="button" data-rd="attach-bookmark" data-target="'+esc(serialized)+'" aria-pressed="'+stored+'">'+(stored?'✓ Saved · View':'◇ Bookmark')+'</button>'+
+   '<button type="button" data-rd="attach-note" data-target="'+esc(serialized)+'">+ Add personal note</button>';
   return row;
+ }
+ function syncActionStates(){
+  document.querySelectorAll('[data-rd="attach-bookmark"]').forEach(btn=>{
+   let target;try{target=JSON.parse(decodeURIComponent(btn.dataset.target||''));}catch(_){return;}
+   const stored=active().some(r=>r.kind===target.kind&&keyOf(r.target)===keyOf(target));
+   btn.textContent=stored?'✓ Saved · View':'◇ Bookmark';btn.setAttribute('aria-pressed',String(stored));
+  });
+ }
+ function showPersonalMarks(){
+  try{return localStorage.getItem('gnamma-rd-show-personal-marks')!=='false';}catch(_){return true;}
+ }
+ function closeContext(){
+  $('#gn-rd-inline-panel')?.remove();openContext=null;
+ }
+ function showContext(sectionId,segment,anchor){
+  closeContext();
+  const entries=sortItems(active().filter(r=>r.target?.section===sectionId&&r.target?.segment===segment),'source');
+  if(!entries.length)return;
+  const panel=document.createElement('aside');panel.id='gn-rd-inline-panel';panel.className='gn-rd-inline-panel';
+  panel.setAttribute('aria-label','Your saved items at this passage');
+  panel.innerHTML='<header><h3>Saved here · '+esc(ctx.sectionRef(sectionId))+' · paragraph '+(segment+1)+'</h3>'+
+   '<button type="button" data-rd="close-context" aria-label="Close saved items">×</button></header>'+
+   '<div class="gn-rd-inline-items">'+entries.map(r=>{
+    const title=r.title||titleOf(r.target);
+    return '<article><strong>'+esc(short(title,145))+'</strong>'+
+     (r.kind==='note'?'<p>'+esc(short(r.body,230))+'</p>':'')+
+     '<small>'+esc(dateLine(r))+'</small><div class="gn-rd-inline-actions">'+
+     '<button type="button" data-rd="go-desk-item" data-id="'+esc(r.id)+'">Open in Reading Desk</button>'+
+     (r.kind==='note'?'<button type="button" data-rd="edit" data-id="'+esc(r.id)+'">Edit</button>':'')+
+     '<button type="button" data-rd="trash-inline" data-id="'+esc(r.id)+'">Move to Bin</button></div></article>';
+   }).join('')+'</div><footer><button type="button" data-rd="go-desk-passage" data-section="'+esc(sectionId)+'" data-segment="'+segment+'">View all for this paragraph</button></footer>';
+  const holder=anchor.closest('.gn-rd-passage-tools')||anchor.parentElement;
+  holder.after(panel);
+  openContext={section:sectionId,segment,at:window.scrollY||0};
+  panel.querySelector('button')?.focus({preventScroll:true});
  }
  function afterReader(){
   if(state.route!=='reader')return;
   const reader=$('#reader');if(!reader)return;
-  if(state.focusMode||state.focusLevel===3||!state.showNotes){reader.querySelectorAll('.gn-rd-passage-tools,.gn-rd-section-tools').forEach(x=>x.remove());markReader();decorate();return;}
+  if(state.focusMode||state.focusLevel===3||!showPersonalMarks()){
+   reader.querySelectorAll('.gn-rd-passage-tools,.gn-rd-section-tools,.gn-rd-inline-panel').forEach(x=>x.remove());
+   markReader();decorate();return;
+  }
   const header=reader.querySelector(':scope > .reader-heading');
   if(header){
-    const n=String(state.n),count=active().filter(x=>x.target?.section===n).length;
-    let tools=header.nextElementSibling;
-    if(!tools?.classList.contains('gn-rd-section-tools')){tools=document.createElement('div');tools.className='gn-rd-section-tools';header.after(tools);}
-    tools.innerHTML='<button type="button" data-rd="section-note">+ Personal note</button>'+(count?'<button type="button" data-rd="view-section">Reading Desk · '+count+' saved here</button>':'');
+   const n=String(state.n),count=active().filter(x=>x.target?.section===n).length;
+   let tools=header.nextElementSibling;
+   if(!tools?.classList.contains('gn-rd-section-tools')){tools=document.createElement('div');tools.className='gn-rd-section-tools';header.after(tools);}
+   tools.innerHTML='<button type="button" data-rd="section-note" data-section="'+esc(n)+'">+ Personal note</button>'+
+    (count?'<button type="button" data-rd="view-section" data-section="'+esc(n)+'">Reading Desk · '+count+' saved in this section</button>':'');
   }
-  let sectionsCount=0;
   reader.querySelectorAll('.passage-grid').forEach(grid=>{
    const segment=Number(grid.dataset.segment),n=String(grid.closest('[data-reading-section]')?.dataset.readingSection||state.n);
-   const relevant=active().filter(r=>{const t=r.target;return t&&t.section===n&&t.segment===segment;});
+   const relevant=active().filter(r=>r.target?.section===n&&r.target?.segment===segment);
    const bookmarks=relevant.filter(r=>r.kind!=='note').length,notesCount=relevant.filter(r=>r.kind==='note').length;
    let tools=grid.nextElementSibling;
-   if(!tools?.classList.contains('gn-rd-passage-tools')){
-    tools=document.createElement('div');tools.className='gn-rd-passage-tools';grid.after(tools);
-   }
-   tools.innerHTML=(bookmarks||notesCount?'<button type="button" data-rd="view-paragraph" data-segment="'+segment+'">'+(bookmarks?'◇ '+bookmarks+' bookmarked':'')+(bookmarks&&notesCount?' · ':'')+(notesCount?'✎ '+notesCount+' personal '+(notesCount===1?'note':'notes'):'')+'</button>':'')+'<button type="button" data-rd="paragraph-menu" data-segment="'+segment+'">Paragraph '+(segment+1)+' · Bookmark / Note</button>';
-   sectionsCount+=relevant.length;
+   if(!tools?.classList.contains('gn-rd-passage-tools')){tools=document.createElement('div');tools.className='gn-rd-passage-tools';grid.after(tools);}
+   const attrs=' data-section="'+esc(n)+'" data-segment="'+segment+'"';
+   tools.innerHTML=(bookmarks||notesCount?'<button type="button" data-rd="view-paragraph"'+attrs+' aria-label="View saved items for paragraph '+(segment+1)+'">'+
+    (bookmarks?'◇ '+bookmarks:'')+(bookmarks&&notesCount?' · ':'')+(notesCount?'✎ '+notesCount:'')+' saved</button>':'')+
+    '<button type="button" data-rd="paragraph-menu"'+attrs+' aria-expanded="false">◇ Save / Note</button>';
   });
-  markReader();
-  decorate();
+  markReader();decorate();syncActionStates();
  }
  function findRange(side,target){
   const nodes=collectNodes(side),raw=nodes.map(n=>n.textContent).join('');
@@ -521,7 +560,7 @@ function create(ctx){
  function markReader(){
   if(!window.CSS?.highlights||typeof Highlight==='undefined')return;
   ['gn-rd-bookmark','gn-rd-note','gn-rd-target'].forEach(k=>CSS.highlights.delete(k));
-  if(state.focusMode||!state.showNotes)return;
+  if(state.focusMode||!showPersonalMarks())return;
   const marks=[],annotations=[];
   for(const item of active()){
    const t=item.target;if(!t||t.kind!=='quote'||t.section!==String(state.n))continue;
