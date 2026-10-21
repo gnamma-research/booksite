@@ -9,6 +9,11 @@ on:
       - "daruri/editions-icons.js"
       - "daruri/editions-icons.css"
       - "daruri/editions-selector.js"
+      - "daruri/build/build_apparatus_variants.py"
+      - "daruri/build/enrich_apparatus_maps.py"
+      - "daruri/editions/apparatus/**"
+      - "daruri/qa/verify_apparatus_maps.py"
+      - "daruri/personal-export.js"
       - "daruri/editions-selector.css"
       - "daruri/qa/verify-published-selector.cjs"
       - "daruri/qa/verify-published-selector-browser.mjs"
@@ -28,6 +33,11 @@ on:
       - "daruri/editions-icons.js"
       - "daruri/editions-icons.css"
       - "daruri/editions-selector.js"
+      - "daruri/build/build_apparatus_variants.py"
+      - "daruri/build/enrich_apparatus_maps.py"
+      - "daruri/editions/apparatus/**"
+      - "daruri/qa/verify_apparatus_maps.py"
+      - "daruri/personal-export.js"
       - "daruri/editions-selector.css"
       - "daruri/qa/verify-published-selector.cjs"
       - "daruri/qa/verify-published-selector-browser.mjs"
@@ -58,6 +68,7 @@ jobs:
           node --check daruri/editions.js
           node --check daruri/editions-icons.js
           node --check daruri/editions-selector.js
+          node --check daruri/personal-export.js
           node --check daruri/qa/verify-published-selector.cjs
           node --check daruri/qa/verify-published-selector-browser.mjs
           node --check daruri/qa/verify-editions-icons.cjs
@@ -68,6 +79,7 @@ jobs:
           node daruri/qa/verify-ready-editions.js
           node daruri/qa/verify-editions-icons.cjs
           node daruri/qa/verify-published-selector.cjs
+          node daruri/qa/verify-personal-export-safety.js
 
       - name: Browser interaction and mobile rendering
         shell: bash
@@ -86,6 +98,7 @@ jobs:
         run: |
           python -m pip install --disable-pip-version-check "PyMuPDF>=1.26,<1.28"
           python daruri/qa/verify-unvowelled-layout.py
+          python daruri/qa/verify_apparatus_maps.py
       - name: Upload desktop and mobile visual proofs
         if: always()
         uses: actions/upload-artifact@v4

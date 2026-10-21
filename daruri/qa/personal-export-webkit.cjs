@@ -33,7 +33,15 @@ async function browserCheck(){
   });
   await page.goto(host+'/daruri/personal-export.html',{waitUntil:'networkidle'});
   assert.equal(await page.locator('input[name="pe-mode"]:checked').getAttribute('value'),'none');
-  assert.equal(await page.locator('select#pe-edition option').count(),5);
+  const editions=await page.locator('select#pe-edition option').evaluateAll(nodes=>
+    nodes.map(n=>n.value));
+  const canonical=['daruri.pdf','daruri-study.pdf','daruri-english.pdf',
+    'daruri-arabic.pdf','daruri-arabic-vowelled.pdf'];
+  assert.equal(editions.length,15,'Five canonical plus ten verified apparatus editions');
+  assert(canonical.every(file=>editions.includes(file)),
+    'Canonical personal-PDF editions must remain selectable');
+  assert.equal(editions.filter(file=>file.startsWith('editions/apparatus/')).length,10,
+    'Ten SHA-verified apparatus editions must be selectable on mobile');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+2),
     '390px mobile viewport should not scroll horizontally');
   await page.locator('input[name="pe-mode"][value="all"]').check();
