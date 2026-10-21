@@ -194,7 +194,7 @@
     attach(pdf,page,{
       Type:PDFName.of('Annot'),Subtype:PDFName.of('Text'),
       Rect:[x,y,x+12,y+12],
-      Contents:PDFHexString.fromText('Reading Desk #'+number+'\n'+popup.slice(0,24000)),
+      Contents:PDFHexString.fromText('Reading Desk #'+number+'\n'+(popup.length>24000?popup.slice(0,23930)+'\n[More in the personal appendix]':popup)),
       T:PDFHexString.fromText('Personal note '+number),
       Name:PDFName.of('Comment'),C:[0.18,0.35,0.42],F:4,Open:false
     });
@@ -340,6 +340,7 @@
         else skipped.push(i);
       }
     }
+    if(!p.appendix&&skipped.length)throw Error(skipped.length+' selected items have no safe in-text PDF comment location. Include the appendix so none of your notes are lost.');
     progress('Preparing appendix pages…',45);
     const pages=p.appendix?await appendNotes(pdf,rows,p,metadata):0;
     progress('Saving your personal PDF…',88);
