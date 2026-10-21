@@ -11137,5 +11137,10 @@
       6,
       7
     ]
+  },
+  "source_map_verified": {
+    "pdf_sha256": "7d8c105574f9da5ee80e70e2c6802110a11d486033cd1cbea60f704da7b3a813",
+    "method": "All 259 named PDF section destinations match recorded source pages",
+    "count": 259
   }
 }

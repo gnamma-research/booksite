@@ -6548,5 +6548,10 @@
       3
     ],
     "editorial": []
+  },
+  "source_map_verified": {
+    "pdf_sha256": "a0e4b860e9cf81392282db95f4184a9feda1ce9baf82d7f780755c68d28a3e7a",
+    "method": "All 259 named PDF section destinations match recorded source pages",
+    "count": 259
   }
 }

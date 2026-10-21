@@ -8305,5 +8305,10 @@
       "unexpected_body_ids": [],
       "duplicate_body_ids": []
     }
+  },
+  "source_map_verified": {
+    "pdf_sha256": "be749842c3041a157cd2302d551af4ef0f526ec7c9008d55542d6ac801e59084",
+    "method": "All 259 named PDF section destinations match recorded source pages",
+    "count": 259
   }
 }
