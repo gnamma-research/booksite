@@ -41,6 +41,7 @@ def run():
     manifest=json.loads(path.read_text())
     if len(manifest.get("files",[]))!=120 or manifest.get("status")!="verified":
         raise ValueError("Expected 120 independently verified apparatus PDFs")
+    appendix_cache={}
     for entry in manifest["files"]:
         filename=entry["filename"]
         full=VARIANTS/filename
@@ -55,7 +56,9 @@ def run():
             print("RETAIN MAP", filename, flush=True)
             continue
         names=tuple(entry["apparatus"])
-        standalone=build_appendix(names)
+        if names not in appendix_cache:
+            appendix_cache[names]=build_appendix(names)
+        standalone=appendix_cache[names]
         with fitz.open(stream=standalone,filetype="pdf") as appendix,fitz.open(full) as merged:
             first=entry["base_pages"]
             if len(merged)!=first+len(appendix):raise ValueError("Mismatched supplement page count")
