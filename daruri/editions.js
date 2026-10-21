@@ -133,11 +133,12 @@
         ((r.kind==='note'&&typeof r.body==='string'&&r.body.trim())||
           (setting.personal==='all'&&r.kind!=='note'&&r.target)) &&
         (ids.has(String(r.target?.section))||(includeUnattached&&!r.target?.section)));
+      if(filtered.length>500)throw Error('More than 500 personal items match this print selection. Narrow the print range or use the personal PDF chooser.');
       return filtered.sort((a,b)=>{
         const n=t=>Number(t?.target?.section)||999999;
         return n(a)-n(b)||(Number(a.target?.segment??-1)-Number(b.target?.segment??-1))||
           (Number(a.created)||0)-(Number(b.created)||0);
-      }).slice(0,500).map((r,i)=>({row:r,n:i+1}));
+      }).map((r,i)=>({row:r,n:i+1}));
     }catch(_){return [];}
   }
   function personalDate(row){
@@ -306,7 +307,8 @@
     if(event.target.matches('input[type="number"][data-ep-control]'))onChange(event);
   }
   function prepare(tier) {
-    const result=assembled(tier);
+    let result;
+    try{result=assembled(tier);}catch(error){message(tier,'Could not prepare printout: '+error.message);return false;}
     if(!result.sections.length){message(tier,'No source sections selected.');return false;}
     document.getElementById('gnEpPacket')?.remove();
     document.getElementById('gnEpPageStyle')?.remove();
