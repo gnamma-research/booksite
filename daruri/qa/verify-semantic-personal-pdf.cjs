@@ -104,6 +104,19 @@ async function checkedPdf(file,engine,contextSettings){
     }
   }
   assert(returns>=2,'Every source-linked personal endnote requires a visible return link');
+  const exactSectionRef=String(pdf.getPage(7).ref);
+  let exactReturnCount=0;
+  for(let i=originalPages;i<pdf.getPageCount();i++){
+    const pg=pdf.getPage(i),arr=pg.node.get(PDFName.of('Annots'))?pg.node.lookup(PDFName.of('Annots'),PDFArray):null;
+    if(!arr)continue;
+    for(let j=0;j<arr.size();j++){
+      const a=pdf.context.lookup(arr.get(j));
+      if(String(a.lookup(PDFName.of('Subtype')))!=='/Link')continue;
+      const dest=navigationDestination(pdf,a);
+      if(dest&&String(dest.get(0))===exactSectionRef)exactReturnCount++;
+    }
+  }
+  assert(exactReturnCount>=2,'Both endnotes must return to exact §1 page 8, not adjacent pages');
   // Test text extraction before checking map-dependent highlights, so failures
   // identify independently whether the appendix text or geometry is broken.
   const pdfjs=await import('pdfjs-dist/legacy/build/pdf.mjs');
