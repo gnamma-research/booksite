@@ -62,11 +62,17 @@
     const arabic = /قارن القرآن|عبارة ابن رشد/.test(prose.textContent) || prose.getAttribute('lang') === 'ar';
     const sourceLinks = prose.querySelector('.source-note-links');
     if (sourceLinks) sourceLinks.remove(); // Move, do not clone: retain native links, listeners and accessibility.
-    const author = document.createElement('bdi');
+    // Keep ordinary typographic quotes in LTR order, while isolating the
+    // Arabic phrase itself. Never split the paired marks at narrow widths.
+    const author = document.createElement('span');
     author.className = 'gn-ibn-rushd-words';
-    author.setAttribute('dir', 'rtl');
-    author.setAttribute('lang', 'ar');
-    author.textContent = '“' + info.author + '”';
+    author.setAttribute('dir', 'ltr');
+    author.style.whiteSpace = 'nowrap';
+    const phrase = document.createElement('bdi');
+    phrase.setAttribute('dir', 'rtl');
+    phrase.setAttribute('lang', 'ar');
+    phrase.textContent = info.author;
+    author.append(document.createTextNode('“'), phrase, document.createTextNode('”'));
     prose.replaceChildren(
       document.createTextNode(arabic ? info.leadAr : info.lead),
       author,
