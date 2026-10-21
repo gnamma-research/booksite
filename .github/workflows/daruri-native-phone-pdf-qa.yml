@@ -27,11 +27,20 @@ jobs:
       - name: Prepare browser PDF generator
         run: |
           npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1 pdfjs-dist@5.4.296
-          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+          npx --prefix daruri/qa playwright install --with-deps chromium
       - name: Generate multilingual P1/P2 synthetic notes PDF
         env:
           GNAMMA_QA_VISUAL_PATH: daruri/qa/phone-output/personal-pdf-sample.pdf
+          GNAMMA_PHONE_FIXTURE_ONLY: '1'
         run: node daruri/qa/verify-semantic-personal-pdf.cjs
+      - name: Keep a synthetic PDF artifact even when the Unicode test fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-pdf-debug-${{ github.run_id }}
+          path: daruri/qa/phone-output/personal-pdf-sample.pdf
+          retention-days: 1
+          if-no-files-found: warn
       - name: Publish safe fixture only to dependent CI jobs
         uses: actions/upload-artifact@v4
         with:
