@@ -54,8 +54,9 @@ async function checkedPdf(file,engine,contextSettings){
   assert(pdf.getPageCount()>originalPages,'Personal notes must append printable pages');
   let precise=0;
   for(let i=0;i<originalPages;i++){
-   const annots=pdf.getPage(i).node.lookup(PDFName.of('Annots'),PDFArray);
-   if(!annots)continue;
+   const sourcePage=pdf.getPage(i);
+   if(!sourcePage.node.get(PDFName.of('Annots')))continue;
+   const annots=sourcePage.node.lookup(PDFName.of('Annots'),PDFArray);
    for(let j=0;j<annots.size();j++){
     const obj=pdf.context.lookup(annots.get(j));
     if(String(obj.lookup(PDFName.of('Subtype')))!=='/Highlight')continue;
@@ -64,7 +65,8 @@ async function checkedPdf(file,engine,contextSettings){
     precise++;
    }
   }
-  assert(precise>=2,'Both Arabic and English source quotes should become precise highlights; found '+precise);
+  // Test text extraction before checking map-dependent highlights, so failures
+  // identify independently whether the appendix text or geometry is broken.
   const pdfjs=await import('pdfjs-dist/legacy/build/pdf.mjs');
   const loaded=await pdfjs.getDocument({data:new Uint8Array(bytes),disableFontFace:true,useSystemFonts:false}).promise;
   let str='';
@@ -77,6 +79,7 @@ async function checkedPdf(file,engine,contextSettings){
   assert(strip(str).includes(strip('Des idées françaises')),'Accented French text missing from Unicode layer');
   assert(strip(str).includes(strip('UnattachedSearchablePhi')),'Unattached notes must remain searchable');
   await loaded.destroy();
+  assert(precise>=2,'Both Arabic and English source quotes should become precise highlights; found '+precise);
   await page.locator('input[name=pe-mode][value=none]').check();
   assert(!(await page.locator('#pe-result').isVisible()),'Private download link must clear on no-notes');
   console.log('PASS',engine.name(),contextSettings?.viewport?'mobile':'desktop',
