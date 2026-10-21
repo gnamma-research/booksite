@@ -132,7 +132,8 @@ async function exercise(engine, width, touch) {
       id+': other tab did not recover updated saved data');
     await second.close();
 
-    await page.goto(HOST+'/daruri/#bookmarks',{waitUntil:'domcontentloaded',timeout:90000});
+    // A same-URL page.goto can be a hash-only navigation. Reload explicitly.
+    await page.reload({waitUntil:'domcontentloaded',timeout:90000});
     await page.locator('.gn-rd-page').waitFor({timeout:90000});
     const reloadCards=await page.locator('.gn-rd-card-open').count();
     const reloadStored=await page.evaluate(() => {
