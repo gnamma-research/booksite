@@ -264,4 +264,13 @@ test('older exported backup with over three thousand records can be reimported',
  ensure(h.desk.records().length===3010,'large historical backup rejected or truncated');
  ensure(JSON.parse(h.stored).items.length===3010,'large backup not written intact');
 });
+test('damaged source-history entries are displayed without changing the saved note',()=>{
+ const record={...archived,id:'history-mixed',sourceHistory:[null,'old',{target:{section:'999',segment:0}},{relinkedAt:at,target:null}]};
+ const h=boot(backup([record]));
+ h.event('click',{dataset:{rd:'select',id:'history-mixed'}});
+ ensure(h.main.innerHTML.includes('Previous source references (4)'),'history list hidden');
+ ensure(h.desk.records()[0].sourceHistory.length===4,'history data changed');
+ h.desk.toggleSection('191');
+ ensure(JSON.parse(h.stored).items.find(x=>x.id==='history-mixed').sourceHistory.length===4,'history entries lost on save');
+});
 console.log('PASS '+checks.length+' Reading Desk tests (synthetic DOM; physical iOS Safari and Pages deployment require separate checks)');
