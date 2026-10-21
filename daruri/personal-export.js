@@ -99,7 +99,8 @@
     // Only filenames from the trusted manifest may ever be passed here.
     return new URL(file,URL_ROOT).href;
   }
-  function syncForm(){
+  function syncForm(event){
+    if(event?.type==='change'){$('pe-result').hidden=true;info('');}
     const has=mode()!=='none';
     $('pe-note-options').hidden=!has;
     $('pe-picker').hidden=mode()!=='choose';
@@ -116,7 +117,7 @@
     $('pe-generate').disabled=busy||!pdf|| (has&&(!rows.length||(!p.appendix&&!p.annotations)||rows.length>MAX_ITEMS));
     if(has&&rows.length>MAX_ITEMS)$('pe-count').textContent+=' · Too many for one export. Choose up to '+MAX_ITEMS+' items.';
     if(mode()==='choose')renderPicker();
-    if(!has)info('');
+    if(!has){$('pe-result').hidden=true;info('');}
   }
   function renderPicker(){
     const p=prefs(),eligible=available(records,p),q=String($('pe-search').value||'').toLowerCase().trim();
@@ -413,9 +414,9 @@
     document.querySelectorAll('input[name="pe-mode"]').forEach(e=>e.addEventListener('change',syncForm));
     ['pe-edition','pe-personal','pe-bookmarks','pe-annotations','pe-appendix','pe-dates','pe-order'].forEach(id=>$(id).addEventListener('change',syncForm));
     $('pe-search').addEventListener('input',renderPicker);
-    $('pe-items').addEventListener('change',e=>{const id=e.target?.dataset?.noteId;if(id){if(e.target.checked)selectedIds.add(id);else selectedIds.delete(id);syncForm();}});
-    $('pe-check-all').addEventListener('click',()=>{available(records,prefs()).forEach(r=>selectedIds.add(r.id));syncForm();});
-    $('pe-check-none').addEventListener('click',()=>{selectedIds.clear();syncForm();});
+    $('pe-items').addEventListener('change',e=>{const id=e.target?.dataset?.noteId;if(id){if(e.target.checked)selectedIds.add(id);else selectedIds.delete(id);$('pe-result').hidden=true;info('');syncForm();}});
+    $('pe-check-all').addEventListener('click',()=>{available(records,prefs()).forEach(r=>selectedIds.add(r.id));$('pe-result').hidden=true;info('');syncForm();});
+    $('pe-check-none').addEventListener('click',()=>{selectedIds.clear();$('pe-result').hidden=true;info('');syncForm();});
     $('pe-form').addEventListener('submit',submit);
     $('pe-share').addEventListener('click',sharePdf);
     syncForm();
