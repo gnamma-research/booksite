@@ -267,41 +267,84 @@ function create(ctx){
   if(r.kind==='note')html+='<div class="gn-rd-personal-body"><h3>Your note</h3><p>'+esc(r.body).replace(/\n/g,'<br>')+'</p></div>';
   return html;
  }
- function grouped(r){return category(r)==='text'?'Text':LABELS[category(r)]||'Reference';}
- function matching(){
-  const q=norm(ui.query).toLocaleLowerCase(),bin=ui.category==='bin';
-  const rows=records.filter(r=>Boolean(r.deleted)===bin&&
-   (!ui.filterTarget||r.target?.section===ui.filterTarget)&&
-   (ui.filterSegment===null||r.target?.segment===ui.filterSegment)&&
-   (bin||ui.category==='all'||ui.category==='mine'&&r.kind==='note'||ui.category==='bookmarks'&&r.kind!=='note')&&
-   (bin||ui.sourceType==='all'||typeOf(r)===ui.sourceType)&&
-   (!q||norm([r.title,titleOf(r.target),r.body,r.target?.quote,r.target?.term,r.target?.app,subOf(r.target)].join(' ')).toLocaleLowerCase().includes(q)));
-  return bin?rows.sort((a,b)=>b.deleted-a.deleted):sortItems(rows,ui.sort==='created-desc'&&ui.filterTarget?'source':ui.sort);
+ function grouped(r){return r.kind==='note'?'My note':r.kind==='footnote'?'Book note':LABELS[typeOf(r)]||'Bookmark';}
+ function htmlCard(r){
+  const own=r.kind==='note',related=own?[]:active().filter(x=>x.kind==='note'&&x.target&&sourceKey(x.target)===sourceKey(r.target));
+  const canOpen=!!r.target;
+  const parts=['<article class="gn-rd-card'+(r.id===ui.selected?' gn-rd-selected':'')+'">'];
+  parts.push('<button type="button" class="gn-rd-card-open" data-rd="select" data-id="'+esc(r.id)+'" aria-label="View '+esc(own?'personal note':'bookmark')+': '+esc(short(r.title||titleOf(r.target),95))+'">');
+  parts.push('<span class="gn-rd-card-heading"><small>'+esc(grouped(r))+' · '+esc(subOf(r.target))+'</small><time title="'+esc(dateLine(r,true))+'">'+esc(dateLine(r))+'</time></span>');
+  parts.push('<strong>'+esc(r.title||titleOf(r.target))+'</strong>');
+  if(own)parts.push('<span>'+esc(short(r.body,175))+'</span>');
+  else if(related.length)parts.push('<span>'+related.length+' linked personal '+(related.length===1?'note':'notes')+'</span>');
+  parts.push('</button><div class="gn-rd-card-ops">');
+  if(!r.deleted&&canOpen)parts.push('<button type="button" data-rd="open" data-id="'+esc(r.id)+'">Open source</button>');
+  if(r.deleted)parts.push('<button type="button" data-rd="restore" data-id="'+esc(r.id)+'">Restore</button>');
+  parts.push('<details class="gn-rd-card-menu"><summary>More</summary><div>');
+  if(!r.deleted&&own)parts.push('<button type="button" data-rd="edit" data-id="'+esc(r.id)+'">Edit note</button>');
+  if(!r.deleted)parts.push('<button type="button" data-rd="share" data-id="'+esc(r.id)+'">Share</button>');
+  parts.push('<button type="button" data-rd="'+(r.deleted?'delete-permanent':'trash')+'" data-id="'+esc(r.id)+'">'+(r.deleted?'Delete permanently':'Move to Bin')+'</button>');
+  parts.push('</div></details></div></article>');
+  return parts.join('');
  }
  function render(){
   const main=$('#mainContent');if(!main)return;
-  const visible=matching(),selected=records.find(r=>r.id===ui.selected);
-  const bin=ui.category==='bin';
-  const tabs=CATEGORIES.map(k=>'<button type="button" data-rd="filter" data-value="'+k+'" aria-pressed="'+(ui.category===k)+'">'+LABELS[k]+'</button>').join('');
-  let html='<section class="gn-rd-page"><header class="gn-rd-hero"><p class="gn-rd-kicker">YOUR PRIVATE READING COLLECTION</p><h1>Reading Desk</h1><p>Keep precise quotations, complete passages, book notes, dictionary terms, index topics, Bidāya applications and study lessons together. Your work stays in this browser until you transfer a backup.</p></header>';
-  if(!available)html+='<p class="gn-rd-warning" role="alert">Browser storage is unavailable or full. Export a backup before leaving this page.</p>';
-  html+='<div class="gn-rd-toolbar" role="group" aria-label="Reading Desk actions"><div class="gn-rd-toolbar-main"><button type="button" data-rd="new-note">+ New note</button><button type="button" data-rd="export">Download backup</button><button type="button" data-rd="share-backup">Share backup…</button><button type="button" data-rd="import">Import</button></div><div class="gn-rd-toolbar-utilities"><button type="button" data-rd="print-list">Print visible items</button><button type="button" data-rd="filter" data-value="bin" class="gn-rd-bin" aria-pressed="'+bin+'">Bin ('+records.filter(x=>x.deleted).length+')</button></div><input class="gn-rd-file" type="file" id="gn-rd-file" accept="application/json,.json" aria-label="Select Reading Desk backup file" hidden></div>';
-  if(ui.filterTarget)html+='<p class="gn-rd-scoped">Items from '+esc(ctx.sectionRef(ui.filterTarget))+' <button data-rd="unscoped" type="button">Show all</button></p>';
-  html+='<div class="gn-rd-tabs" role="group" aria-label="Reading Desk categories">'+tabs+'</div><label class="gn-rd-search">Search Reading Desk <input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search text, terms, notes…" value="'+esc(ui.query)+'"></label>';
-  html+='<p class="gn-rd-count" aria-live="polite">'+visible.length+' '+(bin?'items in Bin':'saved items')+'</p>';
-  html+='<div class="gn-rd-layout"><div class="gn-rd-cards">';
-  html+=visible.map(r=>'<article class="gn-rd-card'+(r.id===ui.selected?' gn-rd-selected':'')+'"><button type="button" class="gn-rd-card-open" data-rd="select" data-id="'+esc(r.id)+'"><small>'+esc(r.kind==='note'?'Personal note':r.kind==='footnote'?'Book note':grouped(r))+' · '+esc(subOf(r.target))+'</small><strong>'+esc(r.title||titleOf(r.target))+'</strong>'+(r.kind==='note'?'<span>'+esc(short(r.body,135))+'</span>':'')+'</button><div class="gn-rd-card-ops">'+(bin?'<button type="button" data-rd="restore" data-id="'+esc(r.id)+'">Restore</button>':'<button type="button" data-rd="open" data-id="'+esc(r.id)+'">Open source</button>')+'<button type="button" data-rd="'+(bin?'delete-permanent':'trash')+'" data-id="'+esc(r.id)+'">'+(bin?'Delete permanently':'Move to Bin')+'</button></div></article>').join('');
-  if(!visible.length)html+='<p class="gn-rd-empty">'+(bin?'Bin is empty.':ui.query?'No items match the search.':'Nothing saved here yet. Select words in the text or bookmark an entry to begin.')+'</p>';
-  html+='</div><div class="gn-rd-detail" id="gn-rd-detail">';
+  const visible=matching(),selected=records.find(r=>r.id===ui.selected),bin=ui.category==='bin';
+  const parts=['<section class="gn-rd-page'+(ui.mobileDetail?' gn-rd-mobile-detail-open':'')+'">'];
+  parts.push('<header class="gn-rd-hero"><p class="gn-rd-kicker">YOUR PRIVATE READING COLLECTION</p><h1>Reading Desk</h1>');
+  parts.push('<p>Saved passages, personal observations and source-linked references. Your work stays in this browser unless you export it.</p>');
+  if(readingOrigin)parts.push('<button type="button" class="gn-rd-back-reading" data-rd="return-reading">← Back to text</button>');
+  parts.push('</header>');
+  if(!available)parts.push('<p class="gn-rd-warning" role="alert">Browser storage is unavailable or full. Download a backup before leaving.</p>');
+  parts.push('<div class="gn-rd-toolbar" role="group" aria-label="Reading Desk actions"><div class="gn-rd-toolbar-main">');
+  parts.push('<button type="button" data-rd="new-note">+ New note</button><button type="button" data-rd="print-list">Print / save PDF</button>');
+  parts.push('<details class="gn-rd-tools-menu"><summary>Tools</summary><div>');
+  parts.push('<button type="button" data-rd="export">Download backup (JSON)</button><button type="button" data-rd="share-backup">Share backup…</button>');
+  parts.push('<button type="button" data-rd="export-markdown">Export notes (Markdown)</button><button type="button" data-rd="import">Import backup</button>');
+  parts.push('<button type="button" data-rd="filter" data-value="bin">Bin ('+records.filter(r=>r.deleted).length+')</button>');
+  parts.push('</div></details></div><input class="gn-rd-file" type="file" id="gn-rd-file" accept="application/json,.json" aria-label="Select Reading Desk backup file" hidden></div>');
+  if(ui.filterTarget)parts.push('<p class="gn-rd-scoped">Items from '+esc(ctx.sectionRef(ui.filterTarget))+(ui.filterSegment!==null?' · paragraph '+(ui.filterSegment+1):'')+' <button data-rd="unscoped" type="button">Show all</button></p>');
+  if(bin)parts.push('<p class="gn-rd-scoped">Bin <button type="button" data-rd="filter" data-value="all">← Back to saved items</button></p>');
+  else parts.push('<div class="gn-rd-tabs" role="group" aria-label="Reading Desk categories">'+CATEGORIES.map(k=>'<button type="button" data-rd="filter" data-value="'+k+'" aria-pressed="'+(ui.category===k)+'">'+LABELS[k]+'</button>').join('')+'</div>');
+  parts.push('<label class="gn-rd-search">Search Reading Desk <input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search saved text and notes…" value="'+esc(ui.query)+'"></label>');
+  const typeOptions=[['all','All sources'],['text','Text passages'],['booknotes','Book notes'],['dictionary','Dictionary'],['index','Subject index'],['bidaya','Bidāya'],['lessons','Lessons']];
+  parts.push('<div class="gn-rd-controls"><label>Source <select id="gn-rd-source">'+typeOptions.map(([value,name])=>'<option value="'+value+'"'+(ui.sourceType===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label>');
+  parts.push('<label>Sort by <select id="gn-rd-sort">'+Object.entries(SORTS).map(([value,name])=>'<option value="'+value+'"'+(ui.sort===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label></div>');
+  parts.push('<p class="gn-rd-count" aria-live="polite">'+visible.length+' '+(bin?'items in Bin':'saved items')+'</p>');
+  parts.push('<div class="gn-rd-layout"><div class="gn-rd-cards" id="gn-rd-cards">');
+  let lastGroup='';
+  for(const r of visible){
+   const group=(!bin&&ui.sort==='source'&&r.target?.section)?String(r.target.section):'';
+   if(group&&group!==lastGroup)parts.push('<h3 class="gn-rd-source-heading">'+esc(ctx.sectionRef(group))+'</h3>');
+   lastGroup=group;
+   parts.push(htmlCard(r));
+  }
+  if(!visible.length)parts.push('<p class="gn-rd-empty">'+(bin?'Bin is empty.':ui.query?'No items match the search.':'No saved items here yet. Select words in the reader or bookmark a source entry to begin.')+'</p>');
+  parts.push('</div><div class="gn-rd-detail" id="gn-rd-detail">');
   if(selected&&visible.some(r=>r.id===selected.id)){
-   html+='<header><small>'+esc(selected.kind==='note'?'PERSONAL NOTE':grouped(selected).toUpperCase())+'</small><h2>'+esc(selected.title||titleOf(selected.target))+'</h2></header>'+detailsFor(selected);
-   html+='<div class="gn-rd-detail-actions">'+(bin?'<button type="button" data-rd="restore" data-id="'+esc(selected.id)+'">Restore</button>':'<button type="button" data-rd="open" data-id="'+esc(selected.id)+'">Open source</button><button type="button" data-rd="add-note" data-id="'+esc(selected.id)+'">Add note</button>')+(selected.kind==='note'&&!bin?'<button type="button" data-rd="edit" data-id="'+esc(selected.id)+'">Edit note</button>':'')+'<button type="button" data-rd="share" data-id="'+esc(selected.id)+'">Share</button><button type="button" data-rd="email" data-id="'+esc(selected.id)+'">Email</button><button type="button" data-rd="print" data-id="'+esc(selected.id)+'">Print</button></div>';
-  }else html+='<div class="gn-rd-detail-placeholder"><h2>Choose an item</h2><p>Select a bookmark or personal note to see its source, bilingual context and available actions.</p></div>';
-  html+='</div></div>';
-  if(bin&&visible.length)html+='<div class="gn-rd-bin-actions"><button type="button" data-rd="restore-all">Restore all</button><button type="button" data-rd="empty-bin">Empty Bin…</button></div>';
-  html+='<p class="gn-rd-privacy">Local to this browser. Use Download backup or Share backup to transfer your Reading Desk to another device. Import merges items without deleting newer notes.</p></section>';
-  main.innerHTML=html;
-  return html;
+   parts.push('<button class="gn-rd-mobile-back" type="button" data-rd="detail-back">← Reading Desk</button>');
+   parts.push('<header><small>'+esc(selected.kind==='note'?'MY NOTE':grouped(selected).toUpperCase())+'</small><h2>'+esc(selected.title||titleOf(selected.target))+'</h2></header>');
+   parts.push(detailsFor(selected));
+   parts.push('<footer class="gn-rd-date-details"><small>'+esc(dateLine(selected,true))+'</small></footer>');
+   const relatives=selected.target?active().filter(r=>r.id!==selected.id&&r.target&&sourceKey(r.target)===sourceKey(selected.target)):[];
+   if(relatives.length){
+    parts.push('<section class="gn-rd-related"><h3>Related saved items</h3>');
+    parts.push(relatives.slice(0,12).map(r=>'<button type="button" data-rd="related" data-id="'+esc(r.id)+'">'+esc(short(r.title||titleOf(r.target),100))+'</button>').join(''));
+    parts.push('</section>');
+   }
+   parts.push('<div class="gn-rd-detail-actions">');
+   if(bin)parts.push('<button type="button" data-rd="restore" data-id="'+esc(selected.id)+'">Restore</button>');
+   else{
+    if(selected.target)parts.push('<button type="button" data-rd="open" data-id="'+esc(selected.id)+'">Open in source</button><button type="button" data-rd="add-note" data-id="'+esc(selected.id)+'">Add note</button>');
+    if(selected.kind==='note')parts.push('<button type="button" data-rd="edit" data-id="'+esc(selected.id)+'">Edit</button>');
+   }
+   parts.push('<button type="button" data-rd="share" data-id="'+esc(selected.id)+'">Share</button><button type="button" data-rd="email" data-id="'+esc(selected.id)+'">Email</button><button type="button" data-rd="print" data-id="'+esc(selected.id)+'">Print</button></div>');
+  }else parts.push('<div class="gn-rd-detail-placeholder"><h2>Choose an item</h2><p>Select a bookmark or personal note to see its source and context.</p></div>');
+  parts.push('</div></div>');
+  if(bin&&visible.length)parts.push('<div class="gn-rd-bin-actions"><button type="button" data-rd="restore-all">Restore all</button><button type="button" data-rd="empty-bin">Empty Bin…</button></div>');
+  parts.push('<p class="gn-rd-privacy">Personal data is stored on this device. Download a JSON backup to transfer it. Markdown export is for reading, not re-importing.</p></section>');
+  main.innerHTML=parts.join('');
+  return main.innerHTML;
  }
  function showEditor(target,existing){
   editor=existing||null;const t=target||existing?.target||null;
