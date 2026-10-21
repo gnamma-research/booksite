@@ -921,7 +921,7 @@ function create(ctx){
   if(navigator.share){try{await navigator.share({title:r.title||titleOf(r.target),text:value,url:canonicalURL(r.target)});return;}catch(e){if(e.name==='AbortError')return;}}
   try{await navigator.clipboard.writeText(value);ctx.notify('Text and source link copied for sharing.');}catch(e){ctx.notify('Sharing unavailable. Use Email or Print.');}
  }
- function backup(){if(loadFailure)return untouchedStorage||'';return JSON.stringify({format:FORMAT,version:VERSION,exported:new Date().toISOString(),items:records},null,2);}
+ function backup(){if(loadFailure)return untouchedStorage||'';return JSON.stringify({...storedEnvelope,format:FORMAT,version:VERSION,exported:new Date().toISOString(),items:records},null,2);}
  function download(text,name){
   const blob=new Blob([text],{type:name.endsWith('.md')?'text/markdown;charset=utf-8':'application/json;charset=utf-8'}),url=URL.createObjectURL(blob);
   const a=document.createElement('a');a.href=url;a.download=name;a.style.display='none';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
