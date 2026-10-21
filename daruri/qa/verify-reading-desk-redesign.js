@@ -243,4 +243,25 @@ test('legacy migration is not re-applied when refreshing externally changed reco
  ensure(instance.desk.records().length===1&&instance.desk.records()[0].id==='newer',
  'refresh resurrected stale item from earlier in-memory storage');
 });
+test('unresolved legacy section bookmarks and duplicate identifiers survive a save',()=>{
+ const damaged={id:'damaged',kind:'section',target:null,body:'Preserve malformed source',created:at,updated:at};
+ const same1={...note('duplicate','190'),title:'First author observation',body:'First'};
+ const same2={...note('duplicate','191'),title:'Second author observation',body:'Second'};
+ const h=boot(backup([damaged,same1,same2]));
+ ensure(h.desk.records().length===3,'corrupt section or duplicate record dropped during load');
+ const ids=h.desk.records().map(x=>x.id);
+ ensure(new Set(ids).size===3,'duplicate identifiers were not safely disambiguated');
+ h.desk.toggleSection('191');
+ const saved=JSON.parse(h.stored).items;
+ ensure(saved.some(r=>r.body==='Preserve malformed source'),'malformed section not preserved');
+ ensure(saved.some(r=>r.body==='First')&&saved.some(r=>r.body==='Second'),'one duplicate record lost');
+});
+test('older exported backup with over three thousand records can be reimported',()=>{
+ const h=boot(backup([]));
+ const items=Array.from({length:3010},(_,i)=>({...note('archived-'+i,'190'),body:'Study observation '+i}));
+ const encoded=backup(items);
+ h.event('change',{id:'gn-rd-file',files:[{size:encoded.length,text:encoded}],value:encoded});
+ ensure(h.desk.records().length===3010,'large historical backup rejected or truncated');
+ ensure(JSON.parse(h.stored).items.length===3010,'large backup not written intact');
+});
 console.log('PASS '+checks.length+' Reading Desk tests (synthetic DOM; physical iOS Safari and Pages deployment require separate checks)');
