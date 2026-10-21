@@ -231,7 +231,12 @@
 
   function onClick(event) {
     const button=event.target.closest('.gn-ed-icon-option');
-    if(!button || !activeRoot.contains(button))return;
+    if(!button){
+      const clicked=event.target.closest('[data-ep-info-kind], [data-ep-ready-open], [data-ep-ready-download], .gn-ed-actions button');
+      if(clicked&&activeRoot.contains(clicked))describe(clicked);
+      return;
+    }
+    if(!activeRoot.contains(button))return;
     const group=button.closest('.gn-ed-icon-options');
     const toggle=group?.__originalToggle;
     if(toggle) {
