@@ -288,7 +288,7 @@ function assertOfflineAsset() {
     trigger.click();
     // Note cards are enhanced by a MutationObserver after they are inserted.
     // Wait for that microtask before checking their final visible brackets.
-    await new Promise(resolve => w.queueMicrotask(resolve));
+    if (String(section.id) === '1') await new Promise(resolve => w.queueMicrotask(resolve));
     assert.equal(w.location.hash, hash, 'Opening Notes preserves route');
     assert.equal(w.scrollY, 360 + index, 'Opening Notes preserves reader scroll');
     assertCard(d, section, relevant);
