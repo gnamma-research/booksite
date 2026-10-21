@@ -1,8 +1,8 @@
-# Checks current PDF SHA-256 maps, multilingual searchable text and native highlights.
+# Verifies distinct two-way personal P links, no new comments and searchable multilingual notes.
 name: Daruri personal PDF precision, search and mobile QA
 on:
   push:
-    branches: [master, feature/personal-pdf-search-precise-highlights-20261021]
+    branches: [master, feature/personal-pdf-p-markers-two-way-20261021]
     paths:
       - 'daruri/personal-export*'
       - 'daruri/personal-pdf-enhancements.js'
@@ -14,6 +14,8 @@ on:
       - 'daruri/pdf-editions-manifest.json'
       - 'daruri/qa/verify-personal-pdf-upgrade.cjs'
       - 'daruri/qa/verify-semantic-personal-pdf.cjs'
+      - 'daruri/qa/verify-personal-pdf-visual.py'
+      - 'daruri/editions.js'
       - '.github/workflows/personal-semantic-pdf.yml'
   pull_request:
     paths:
@@ -26,6 +28,8 @@ on:
       - 'daruri/reading-desk.js'
       - 'daruri/qa/verify-personal-pdf-upgrade.cjs'
       - 'daruri/qa/verify-semantic-personal-pdf.cjs'
+      - 'daruri/qa/verify-personal-pdf-visual.py'
+      - 'daruri/editions.js'
       - '.github/workflows/personal-semantic-pdf.yml'
   workflow_dispatch:
 permissions:
@@ -52,8 +56,21 @@ jobs:
           npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1 pdfjs-dist@5.4.296
           npx --prefix daruri/qa playwright install --with-deps chromium webkit
       - name: Generate PDFs in Chromium, Android-style Chromium and WebKit
+        env:
+          GNAMMA_QA_VISUAL_PATH: daruri/qa/visual-output/personal-pdf-sample.pdf
         run: node daruri/qa/verify-semantic-personal-pdf.cjs
       - name: Recheck existing PDF and iOS-size print navigation
         run: |
           node daruri/qa/personal-export-browser.cjs
           node daruri/qa/personal-export-webkit.cjs
+      - name: Verify visible marginal P notes and original publisher text
+        run: |
+          python -m pip install "PyMuPDF==1.26.7"
+          python daruri/qa/verify-personal-pdf-visual.py daruri/qa/visual-output/personal-pdf-sample.pdf
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reviewed-personal-P-marker-pdf
+          path: daruri/qa/visual-output/
+          retention-days: 3
+          if-no-files-found: error
