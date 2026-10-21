@@ -13,6 +13,29 @@ const sw=read('sw.js');
 const pack=read('download-bundle.js');
 const m=JSON.parse(read('editions/manifest.json'));
 const r=JSON.parse(read('pdf-editions-manifest.json'));
+
+const crypto=require('node:crypto');
+const addon=JSON.parse(read('editions/apparatus/manifest.json'));
+assert.equal(addon.status,'verified');
+assert.equal(addon.files.length,10,'Ten extra apparatus PDFs must have verified maps');
+const bases=new Map(m.files.map(x=>[x.file,x]));
+for(const x of addon.files){
+  assert.ok(bases.has(x.source_base),'Apparatus base must be a current approved PDF');
+  assert.equal(x.base_sha256,bases.get(x.source_base).sha256,'Base PDF checksum changed');
+  assert.equal(x.verified_sections,258);
+  assert.equal(x.map_coverage,1);
+  const bin=fs.readFileSync(path.join(root,'editions',x.file));
+  assert.equal(bin.length,x.bytes);
+  assert.ok(bin.subarray(0,5).equals(Buffer.from('%PDF-')));
+  assert.equal(crypto.createHash('sha256').update(bin).digest('hex'),x.sha256);
+  const mapfile=fs.readFileSync(path.join(root,'editions',x.map_file));
+  assert.equal(crypto.createHash('sha256').update(mapfile).digest('hex'),x.map_sha256);
+  const map=JSON.parse(mapfile.toString());
+  assert.equal(map.source_sha256,x.sha256);
+  assert.equal(Object.keys(map.section_pages).length,258);
+  assert.equal(map.entry_count,x.mapped_entries);
+}
+
 const version='20261021-public-selector1';
 new vm.Script(js,{filename:'editions-selector.js'});
 const assets=['editions-selector.js','editions-selector.css'];
