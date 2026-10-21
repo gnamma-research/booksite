@@ -154,6 +154,8 @@
       ['daruri/editions.css', 'editions.css?v=20261021-editiontabs-vowels-release1'],
       ['daruri/editions-icons.css','editions-icons.css?v=20261021-editiontabs-vowels-release1'],
       ['daruri/editions-icons.js','editions-icons.js?v=20261021-editiontabs-vowels-release1'],
+      ['daruri/editions-selector.js','editions-selector.js?v=20261021-public-selector1'],
+      ['daruri/editions-selector.css','editions-selector.css?v=20261021-public-selector1'],
       ['daruri/editions/manifest.json','editions/manifest.json?v=20261021-bilingual-vowels1'],
       ['daruri/personal-export.html', 'personal-export.html'],
       ['daruri/personal-export.js', 'personal-export.js?v=3'],
