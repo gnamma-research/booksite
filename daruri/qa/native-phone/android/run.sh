@@ -67,6 +67,7 @@ p=sys.argv[1];r=json.load(open(p))
 print("Native Android emulator PDF report:",json.dumps(r,ensure_ascii=False,indent=2))
 assert r["ok"],"Android native phone test failed"
 assert r["pTapped"] and r["backTapped"]
+assert r.get("errors",[])==[],"No compatibility warnings allowed"
 assert r["forwardCount"]>=4 and r["returnCount"]>=2
 PY
 echo "PASS Android emulator: actual adb tap P marker → appendix → Return, PDF text search and screenshots"
