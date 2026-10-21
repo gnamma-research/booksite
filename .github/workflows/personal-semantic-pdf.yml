@@ -32,7 +32,7 @@ jobs:
       - name: Install PDF inspection and real browser test dependencies
         run: |
           npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1 pdfjs-dist@5.4.296
-          npx --prefix daruri/qa playwright install --with-deps chromium webkit firefox
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
       - name: Test searchable PDF and annotations in Chromium/WebKit/Android simulation
         run: node daruri/qa/verify-semantic-personal-pdf.cjs
       - name: Preserve original client browser regressions
