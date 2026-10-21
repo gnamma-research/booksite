@@ -74,3 +74,35 @@ Both Reading and Study have the optional 'Include editorial section titles' chec
 Browser assets: editions.js and editions.css, version 20261021-editions1. Their versions must remain matched in index.html and sw.js. Both are included in download-bundle.js. The PDF build source, build/print_editions.py, supports optional --editorial-titles on/off. Its default is OFF, to keep the A4 compact editions minimal. qa/verify-editions-configurator.js tests route integration and title/format selection using all 258 authorial sections / 414 bilingual passage pairs.
 
 The original published scholarly and bilingual-study PDF binaries have not been silently replaced, because the owner requested review of page designs first. Source generation for bilingual PDFs has been adjusted toward English-left/Arabic-right. The published legacy file page maps and the scholarly reference PDF URLs remain intact pending approved replacement and revalidation. Do not conflate the interactive browser Save as PDF option with a downloadable pre-built PDF for every option.
+
+## Language preservation in Arabic-text editions
+
+An Arabic main text does not require Arabic-only annotations. An editorial or
+scholarly note selected for a Study or Reference edition retains any genuinely
+original English, French or Arabic wording. Do not silently translate, delete,
+or label original-language quotations as though they were editorial translations.
+The language of a note is separate from the language of the body text; render
+English/French notes left-to-right (with the correct `lang` attribute), Arabic
+notes right-to-left, and mixed quotations using explicit direction isolation.
+
+Use `original_note_language` and `original_note_text` **only for verified
+original-language note wording**; these two fields take priority when present.
+For newly prepared editorial prose stored in `text`, the optional
+`text_language` field identifies its actual language (default English).
+The ordinary `text_en` and `text_ar` fields are editorial language variants,
+not by themselves proof of an original author's language. Merely citing an
+English/French source does not make an English summary a French quotation.
+No original French note wording should be fabricated where only an English
+paraphrase survives.
+
+The very compact **Reading & Printing** PDFs remain apparatus-free apart from
+explicitly permitted essential reference information. This preservation rule
+governs notes **if and when an edition includes them**, particularly future
+Arabic-text Study variants. It does not imply that every optional note must be
+added to the compact edition. Personal Reading Desk notes are independent user
+data, and are not silently inserted into distributed PDFs.
+
+The main-text PDF renderer selects the actual note language for text and page
+layout independently of its requested display language; Arabic Qur'an source
+notes supplied in Arabic remain in Arabic, whereas an English editorial note
+included in an Arabic-text study PDF remains English.
