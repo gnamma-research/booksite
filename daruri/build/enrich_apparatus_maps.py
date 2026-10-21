@@ -59,7 +59,6 @@ def run():
                 if original!=inserted:
                     raise ValueError(f"Different apparatus page {i+1} in {filename}")
             refs=appendix.resolve_names()
-            terms={},{}
             positions={"terms":{},"applications":{}}
             for kind in ("glossary","index"):
                 if kind not in names:continue
