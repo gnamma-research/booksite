@@ -33,23 +33,28 @@ jobs:
           sudo apt-get install -y libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
           python -m pip install --upgrade pip
           python -m pip install -r daruri/build/requirements.txt "pypdf==5.9.0" "PyMuPDF==1.26.7"
-      - name: Build and verify all ten PDF variants
+      - name: Build and verify all twelve PDF variants
         run: |
           python daruri/build/publish_editions.py --output-dir daruri/editions
+          # Rebuild the two optional unvowelled bilingual PDFs against exactly
+          # the same current canonical source as the other ten A4 editions.
+          # Preserve personal-note/source PDFs and per-edition SHA identities.
+          python daruri/build/publish_unvowelled_reading.py
           python - <<'PY'
           import json
           from pathlib import Path
           root=Path("daruri/editions")
           data=json.loads((root/"manifest.json").read_text())
-          assert len(data["files"]) == 10
-          assert sum(row["tier"]=="reading" for row in data["files"]) == 8
+          assert len(data["files"]) == 12
+          assert sum(row["tier"]=="reading" for row in data["files"]) == 10
           assert sum(row["tier"]=="study" for row in data["files"]) == 2
+          assert len([row for row in data["files"] if row["language"]=="bilingual-unvowelled"])==2
           for entry in data["files"]:
               path=root/entry["file"]
               assert path.is_file() and path.stat().st_size==entry["bytes"]
               assert entry["bookmarks"] >= 52
               assert entry["pages"] >= 25
-          print("Verified ten PDFs with usable outlines, live text and A4 geometry.")
+          print("Verified twelve PDFs with usable outlines, live text and A4 geometry.")
           PY
       - name: Retain generated PDFs as workflow artifacts
         uses: actions/upload-artifact@v4
