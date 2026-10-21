@@ -101,8 +101,8 @@
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
-      ['daruri/reading-desk.js', 'reading-desk.js?v=20261021-rd-simplified-cache2'],
-      ['daruri/reading-desk.css', 'reading-desk.css?v=20261021-rd-simplified-cache2'],
+      ['daruri/reading-desk.js', 'reading-desk.js?v=20261021-rdquick1'],
+      ['daruri/reading-desk.css', 'reading-desk.css?v=20261021-rdquick1'],
       ['daruri/reading-desk-pdf.js', 'reading-desk-pdf.js?v=20261021-rdiconpdf1'],
       ['daruri/reading-desk-dictionary.js', 'reading-desk-dictionary.js?v=20261021-readingdesk6'],
       ['daruri/reader-structure.css', 'reader-structure.css?v=20261020-structure1'],
@@ -146,7 +146,7 @@
       ['daruri/source-reference-data.js', 'source-reference-data.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-fallback-quran1'],
-      ['daruri/download-bundle.js', 'download-bundle.js?v=20261021-rd-simplified-cache2-qinline4-fallback1'],
+      ['daruri/download-bundle.js', 'download-bundle.js?v=20261021-rdquick1'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
       ['daruri/study-guide.css', 'study-guide.css'],
@@ -177,7 +177,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261021-rd-simplified-cache2-qinline4-fallback1'],
+      ['daruri/sw.js', 'sw.js?v=20261021-rdquick1'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
