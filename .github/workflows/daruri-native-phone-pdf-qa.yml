@@ -1,13 +1,19 @@
 name: Daruri native phone PDF testing
 on:
   push:
-    branches: [feature/mobile-native-pdf-phone-tests-20261021]
+    branches: [master, feature/mobile-native-pdf-phone-tests-20261021, feature/mobile-phone-pdf-release-current-editions-20261021]
     paths:
       - '.github/workflows/daruri-native-phone-pdf-qa.yml'
       - 'daruri/qa/native-phone/**'
       - 'daruri/personal-export.js'
       - 'daruri/personal-pdf-enhancements.js'
       - 'daruri/qa/verify-semantic-personal-pdf.cjs'
+  pull_request:
+    paths:
+      - '.github/workflows/daruri-native-phone-pdf-qa.yml'
+      - 'daruri/personal-export.js'
+      - 'daruri/personal-pdf-enhancements.js'
+      - 'daruri/qa/native-phone/**'
   workflow_dispatch:
 concurrency:
   group: phone-pdf-qa-${{ github.ref }}
