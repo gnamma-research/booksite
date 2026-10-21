@@ -515,7 +515,7 @@
           const extra=await resExtra.json();
           if(extra?.status==='verified'&&Array.isArray(extra.files)){
             for(const record of extra.files){
-              if(!/^apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled)-(glossary|index|glossary-index|concordance|applications)\.pdf$/.test(record.file||''))continue;
+              if(!/^apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english)-(glossary|index|concordance|applications)(?:-(glossary|index|concordance|applications)){0,3}(?:-titles-on)?\.pdf$/.test(record.file||''))continue;
               if(record.map_coverage!==1||record.verified_sections!==258||
                 !/^[0-9a-f]{64}$/.test(record.sha256||'')||
                 !/^[0-9a-f]{64}$/.test(record.map_sha256||'')||
@@ -526,7 +526,7 @@
               data.files[file]={
                 sha256:record.sha256,pages:record.pages,size_bytes:record.bytes,
                 title:(record.tier==='study'?'Study':'Reading')+' · '+
-                  (record.language==='bilingual-unvowelled'?'Unvowelled':'Vowelled')+
+                  (record.language==='english'?'English':record.language==='bilingual-unvowelled'?'Unvowelled':'Bilingual vowelled')+
                   ' · '+record.apparatus.join(' + '),
                 metadata_path:'editions/'+record.metadata_file,
                 map_path:'editions/'+record.map_file,
@@ -539,7 +539,7 @@
       }catch(_){/* The original five PDFs remain selectable without the apparatus catalogue. */}
       const entries=Object.entries(data.files).filter(([file,x])=>
         (/^[a-z0-9-]+\.pdf$/.test(file)||
-         /^editions\/apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled)-(glossary|index|glossary-index|concordance|applications)\.pdf$/.test(file))&&
+         /^editions\/apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english)-(glossary|index|concordance|applications)(?:-(glossary|index|concordance|applications)){0,3}(?:-titles-on)?\.pdf$/.test(file))&&
         x?.sha256&&x?.pages);
       $('pe-edition').replaceChildren();
       const labels={ 'daruri.pdf':'Scholarly reference · bilingual',
