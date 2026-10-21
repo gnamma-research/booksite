@@ -4,6 +4,9 @@
 (() => {
   'use strict';
   const KEYS=['reading','study'];
+  const TIERS=['reading','study','reference'];
+  const TIER_LABELS={reading:'Reading',study:'Study',reference:'Reference'};
+  let activeTier='reading';
   const PARTS=[
     {id:'intro',label:'Introduction · §§1–9',ar:'المقدمة',from:1,to:9},
     {id:'rulings',label:'Part I · Rulings · §§10–61',ar:'الأحكام',from:10,to:61},
@@ -40,12 +43,47 @@
   function showInfo(kind,value,detail='') {
     const region=host?.querySelector('.gn-editions');
     if(!region)return;
-    const a=region.querySelector('[data-ep-info-kind]');
+    const a=region.querySelector('.gn-ed-status [data-ep-info-kind]');
     const b=region.querySelector('[data-ep-info-value]');
     const d=region.querySelector('[data-ep-info-detail]');
     if(a)a.textContent=kind;
     if(b)b.textContent=value;
     if(d)d.textContent=detail;
+  }
+  function tierDescription(tier) {
+    const panel=host?.querySelector('[data-ep-published="'+tier+'"]');
+    if(panel?.dataset.epDescription)return panel.dataset.epDescription;
+    return {reading:'Complete text · minimal apparatus',
+      study:'Selected explanatory notes',reference:'243-page scholarly reference'}[tier]||'';
+  }
+  function setTier(tier,focus=false) {
+    if(!host||!TIERS.includes(tier))return;
+    activeTier=tier;
+    const region=host.querySelector('.gn-editions');
+    if(!region)return;
+    for(const key of TIERS) {
+      const tab=region.querySelector('[data-ep-tab="'+key+'"]');
+      const panel=region.querySelector('#gn-ed-'+key);
+      if(tab) {
+        tab.setAttribute('aria-selected',String(key===tier));
+        tab.tabIndex=key===tier?0:-1;
+        tab.dataset.epInfoDetail=tierDescription(key);
+      }
+      if(panel)panel.hidden=key!==tier;
+    }
+    showInfo('Edition',TIER_LABELS[tier],tierDescription(tier));
+    if(focus)region.querySelector('[data-ep-tab="'+tier+'"]')?.focus();
+  }
+  function onTabKeydown(event) {
+    const tab=event.target.closest('[data-ep-tab]');
+    if(!tab || !host?.contains(tab))return;
+    const keys=['ArrowRight','ArrowLeft','Home','End'];
+    if(!keys.includes(event.key))return;
+    event.preventDefault();
+    const current=TIERS.indexOf(tab.dataset.epTab);
+    const next=event.key==='Home'?0:event.key==='End'?TIERS.length-1:
+      (current+(event.key==='ArrowRight'?1:-1)+TIERS.length)%TIERS.length;
+    setTier(TIERS[next],true);
   }
   const select=(tier,key,items)=>'<select data-ep-control="'+key+'" id="ep-'+tier+'-'+key+'">'+
     items.map(([value,label])=>'<option value="'+attr(value)+'"'+(String(memory[tier][key])===String(value)?' selected':'')+'>'+esc(label)+'</option>').join('')+'</select>';
@@ -137,7 +175,8 @@
               (tier==='study'?' · study notes':'');
             panel.querySelector('[data-ep-ready-detail]').textContent=description;
             panel.dataset.epDescription=description;
-            if(tier==='reading'&&!host.dataset.gnEpInteracted)showInfo('Reading PDF','Arabic + English',description);
+            if(tier===activeTier&&!host.dataset.gnEpInteracted)
+              setTier(tier,false);
           };
           panel.addEventListener('change', event => {
             if (event.target.matches('[data-ep-ready-lang], [data-ep-ready-titles]')) update();
@@ -155,17 +194,19 @@
     host.innerHTML='<div class="gn-editions">'+
     '<header class="gn-ed-top"><h1 id="gn-ed-title" tabindex="-1">Editions</h1>'+
       '<div class="gn-ed-status" role="status" aria-live="polite" aria-atomic="true"><span data-ep-info-kind>Edition</span>'+
-        '<strong data-ep-info-value>Reading · bilingual</strong><small data-ep-info-detail></small></div></header>'+
-    '<nav class="gn-ed-quicknav" aria-label="Edition levels">'+
-      '<a href="#gn-ed-reading" aria-label="Reading edition" data-ep-info-kind="Edition" data-ep-info-label="Reading">'+svg('book')+'</a>'+
-      '<a href="#gn-ed-study" aria-label="Study edition" data-ep-info-kind="Edition" data-ep-info-label="Study">'+svg('notes')+'</a>'+
-      '<a href="#gn-ed-reference" aria-label="Scholarly reference" data-ep-info-kind="Edition" data-ep-info-label="Reference">'+svg('library')+'</a>'+
-      '<a href="personal-export.html" aria-label="Personal PDF and Reading Desk notes" data-ep-info-kind="Personal PDF" data-ep-info-label="Notes and bookmarks">'+svg('pen')+'</a></nav>'+
-    '<section id="gn-ed-reading" class="gn-ed-tier"><h2>Reading</h2>'+
+        '<strong data-ep-info-value>Reading</strong><small data-ep-info-detail></small></div></header>'+
+    '<div class="gn-ed-edition-nav"><div class="gn-ed-tablist" role="tablist" aria-label="Edition level">'+
+      '<button type="button" role="tab" class="gn-ed-tab" id="gn-ed-tab-reading" data-ep-tab="reading" aria-label="Reading edition" aria-selected="true" aria-controls="gn-ed-reading" data-ep-info-kind="Edition" data-ep-info-label="Reading" tabindex="0">'+svg('book')+'</button>'+
+      '<button type="button" role="tab" class="gn-ed-tab" id="gn-ed-tab-study" data-ep-tab="study" aria-label="Study edition" aria-selected="false" aria-controls="gn-ed-study" data-ep-info-kind="Edition" data-ep-info-label="Study" tabindex="-1">'+svg('notes')+'</button>'+
+      '<button type="button" role="tab" class="gn-ed-tab" id="gn-ed-tab-reference" data-ep-tab="reference" aria-label="Reference edition" aria-selected="false" aria-controls="gn-ed-reference" data-ep-info-kind="Edition" data-ep-info-label="Reference" tabindex="-1">'+svg('library')+'</button>'+
+      '</div><a class="gn-ed-personal-action" href="personal-export.html" aria-label="Personal PDF and Reading Desk notes" data-ep-info-kind="Personal PDF" data-ep-info-label="Notes and bookmarks">'+svg('pen')+'</a></div>'+
+    '<section id="gn-ed-reading" class="gn-ed-tier" role="tabpanel" aria-labelledby="gn-ed-tab-reading" tabindex="0">'+
+      '<h2 class="gn-ed-panel-label">Reading</h2>'+
       '<div class="gn-ed-config gn-ed-published" data-ep-published="reading" hidden></div>'+
       '<details class="gn-ed-study-custom gn-ed-reading-custom"><summary aria-label="Custom Reading printout" data-ep-info-kind="Custom printout" data-ep-info-label="Reading settings">'+svg('settings')+'</summary>'+
       controls('reading')+'</details></section>'+
-    '<section id="gn-ed-study" class="gn-ed-tier"><h2>Study</h2>'+
+    '<section id="gn-ed-study" class="gn-ed-tier" role="tabpanel" aria-labelledby="gn-ed-tab-study" tabindex="0" hidden>'+
+      '<h2 class="gn-ed-panel-label">Study</h2>'+
       '<div class="gn-ed-config gn-ed-published" data-ep-published="study" hidden></div>'+
       '<div class="gn-ed-grid"><article class="gn-ed-card" data-ep-legacy-study><h3>Study PDF</h3>'+
         pdfActions('daruri-study.pdf?v=daruri8-structure-20261020','study PDF')+'</article>'+
@@ -173,7 +214,8 @@
         pdfActions('daruri-study-guide.pdf?v=daruri6-sources-20261020','study guide')+'</article></div>'+
       '<details class="gn-ed-study-custom"><summary aria-label="Custom Study printout" data-ep-info-kind="Custom printout" data-ep-info-label="Study settings">'+svg('settings')+'</summary>'+
       controls('study')+'</details></section>'+
-    '<section id="gn-ed-reference" class="gn-ed-tier"><h2>Reference</h2>'+
+    '<section id="gn-ed-reference" class="gn-ed-tier" role="tabpanel" aria-labelledby="gn-ed-tab-reference" tabindex="0" hidden>'+
+      '<h2 class="gn-ed-panel-label">Reference</h2>'+
       '<article class="gn-ed-card"><h3>Scholarly reference</h3>'+
         pdfActions('daruri.pdf?v=daruri8-structure-20261020','scholarly reference PDF')+
       '</article></section></div>';
@@ -181,10 +223,12 @@
       host.addEventListener('change',onChange);
       host.addEventListener('input',onInput);
       host.addEventListener('click',onClick);
+      host.addEventListener('keydown',onTabKeydown);
       host.dataset.gnEpBound='1';
     }
     KEYS.forEach(update);
     host.dataset.gnEpInteracted='';
+    setTier(activeTier);
     showReadyPDFs();
   }
   function selection(tier) {
@@ -446,12 +490,12 @@
       }
       return;
     }
-    const nav=event.target.closest('.gn-ed-quicknav a');
-    if(nav) {
+    const tab=event.target.closest('[data-ep-tab]');
+    if(tab&&host?.contains(tab)){
       event.preventDefault();
-      const section=host.querySelector(nav.getAttribute('href'));
-      section?.scrollIntoView({block:'start',behavior:'smooth'});
+      setTier(tab.dataset.epTab,true);
+      return;
     }
   }
-  window.GnammaEditions={render,buildPrintable:prepare,showInfo};
+  window.GnammaEditions={render,buildPrintable:prepare,showInfo,setTier};
 })();
