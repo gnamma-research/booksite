@@ -1,6 +1,6 @@
 {
   "filename": "daruri-reading-bilingual-concordance.pdf",
-  "source_sha256": "929beedacafd6184477d4cc5a7d9be44d457065b7e732c31926bec0a8a27facb",
+  "source_sha256": "2499e45e8904dd443a07ad7040c79633952e7bd19a8af578811a2186808349b1",
   "base_sha256": "3c5c0c3f033f52103405fa27baa0000346059be38cb7873aba791c142c44ea36",
   "section_pages": {
     "1": 1,
@@ -1557,5 +1557,11 @@
   "coverage": 1.0,
   "section_count": 258,
   "precision": "section; exact word boxes intentionally omitted",
-  "segments": {}
+  "segments": {},
+  "entry_positions": {
+    "terms": {},
+    "applications": {}
+  },
+  "entry_mapping_method": "WeasyPrint named HTML anchors; source appendix pages verified byte-for-byte in extracted text",
+  "entry_count": 0
 }

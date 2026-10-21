@@ -1,6 +1,6 @@
 {
   "filename": "daruri-reading-bilingual-unvowelled-concordance.pdf",
-  "source_sha256": "5697f8a1fcaf1a8f7dff8acc7262976f871bad126a0b91e13c58c2bb5d411543",
+  "source_sha256": "387d5f996943388349597d7ed6009a7f0591a7cd0721006f3466172af8ce5104",
   "base_sha256": "dfc94e9a2a54257e65a1aa21463e4f4ae1e7cfa44fa3e99735f58cee7f28b262",
   "section_pages": {
     "1": 1,
@@ -1557,5 +1557,11 @@
   "coverage": 1.0,
   "section_count": 258,
   "precision": "section; exact word boxes intentionally omitted",
-  "segments": {}
+  "segments": {},
+  "entry_positions": {
+    "terms": {},
+    "applications": {}
+  },
+  "entry_mapping_method": "WeasyPrint named HTML anchors; source appendix pages verified byte-for-byte in extracted text",
+  "entry_count": 0
 }

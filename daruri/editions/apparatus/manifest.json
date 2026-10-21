@@ -1591,11 +1591,12 @@
       "apparatus": [
         "glossary"
       ],
-      "sha256": "be0c9c38a806eaec2ba4a59dda5739f4805fb120999a495e7898a69f15e44fba",
-      "bytes": 1254689,
+      "sha256": "0547011ae6ba4477f18606d1a860faeeb1e0f323f15ef127863b9415d6ba9e6e",
+      "bytes": 1254692,
       "map_file": "apparatus/maps/daruri-reading-bilingual-glossary.pdf.json",
       "metadata_file": "apparatus/maps/daruri-reading-bilingual-glossary.pdf.metadata.json",
-      "map_sha256": "0ba965337f528f40a511646c46578e23bd045aa5949ce39e9ab2cbb92370d034"
+      "map_sha256": "2c75659358f17d7d410e236cc0a55d885bd31dd588d7c26a56df124eb49e9514",
+      "mapped_entries": 306
     },
     {
       "tier": "reading",
@@ -3184,11 +3185,12 @@
       "apparatus": [
         "glossary"
       ],
-      "sha256": "ce341f84a7a96ec8a8514b10adb161ac5d23e379ba57f753936e48c8b36fe016",
-      "bytes": 824085,
+      "sha256": "3214926da133bfb50b20efaf576ff18e510ca6df8c378f59e5eb9693274efe73",
+      "bytes": 824087,
       "map_file": "apparatus/maps/daruri-reading-bilingual-unvowelled-glossary.pdf.json",
       "metadata_file": "apparatus/maps/daruri-reading-bilingual-unvowelled-glossary.pdf.metadata.json",
-      "map_sha256": "0ab5b7b1ebec4981c1f7e14233ca180b1d7d2b52f0200125c7a4fd95f55da90c"
+      "map_sha256": "aea79075a2c958163e22df08e28a4db7388229c784dd37ab9b322d72e30f0f35",
+      "mapped_entries": 306
     },
     {
       "tier": "reading",
@@ -4777,11 +4779,12 @@
       "apparatus": [
         "index"
       ],
-      "sha256": "222c304d628b846272c77404be89a3d023d82ca0bbfbd45bf776d85604758f27",
-      "bytes": 1390700,
+      "sha256": "a9c9d06ff1b2a903b2d16e6cd62e0be31a4ac4c2db83ecce0413b1f5485e3c77",
+      "bytes": 1390697,
       "map_file": "apparatus/maps/daruri-reading-bilingual-index.pdf.json",
       "metadata_file": "apparatus/maps/daruri-reading-bilingual-index.pdf.metadata.json",
-      "map_sha256": "1dd6248650a3ede55f2f32fe53ac354cb4fa028346a25207a57855bae46bd59b"
+      "map_sha256": "31e963827194d6b65208e51ecef1f7d6c5a42a1d5d9c27f4af9a1c41536f6802",
+      "mapped_entries": 302
     },
     {
       "tier": "reading",
@@ -6370,11 +6373,12 @@
       "apparatus": [
         "index"
       ],
-      "sha256": "75e951d752230055553e1411fbcefa008eb93a31b8c241330130dd57af8253e3",
-      "bytes": 960095,
+      "sha256": "699abc0e836bdd0ac760b5edd387c77f51b172c6764a1981dbca800b58acfddb",
+      "bytes": 960092,
       "map_file": "apparatus/maps/daruri-reading-bilingual-unvowelled-index.pdf.json",
       "metadata_file": "apparatus/maps/daruri-reading-bilingual-unvowelled-index.pdf.metadata.json",
-      "map_sha256": "79c4ff0a7faa26134f3d65e729bcb2fb21c5f59dcb990ac087d6122fdccfa42e"
+      "map_sha256": "61cbb5a8d5a79d27515e437f184c35c4a2a42f9418d39097518b1c3dc524c8cb",
+      "mapped_entries": 302
     },
     {
       "tier": "reading",
@@ -7968,11 +7972,12 @@
         "glossary",
         "index"
       ],
-      "sha256": "cebd6fdb416cf09ef63266301d8aa4093a8c608849fe1efd2259b72ccac1cdd8",
-      "bytes": 1638473,
+      "sha256": "c3eb8a4159dd80001baecdf9609ad7c723ca57e93a21a0b7d9fa4366301c53bf",
+      "bytes": 1638470,
       "map_file": "apparatus/maps/daruri-reading-bilingual-glossary-index.pdf.json",
       "metadata_file": "apparatus/maps/daruri-reading-bilingual-glossary-index.pdf.metadata.json",
-      "map_sha256": "266217c1f5a1ea92258945ee3b0cd61815883f58f0c9edb92be5bd05da969438"
+      "map_sha256": "de878665e4ec1a43411c76e01a9b0234f2d5e116fc660c5626e02400c19fde6b",
+      "mapped_entries": 608
     },
     {
       "tier": "reading",
@@ -9566,11 +9571,12 @@
         "glossary",
         "index"
       ],
-      "sha256": "ed93b0c65710e70763578cd851d1254ec9858d073c4c7f779cb612372dd0d5db",
-      "bytes": 1207869,
+      "sha256": "e18b4999517c6c2e0c89b29cb14a7c82ca52e432a97d8639dbc51ad61dade2f3",
+      "bytes": 1207866,
       "map_file": "apparatus/maps/daruri-reading-bilingual-unvowelled-glossary-index.pdf.json",
       "metadata_file": "apparatus/maps/daruri-reading-bilingual-unvowelled-glossary-index.pdf.metadata.json",
-      "map_sha256": "9cf1e26dff29998a3e74f8b2c7e05b3d88e9f20ee5160f55b119df25b7f61dc1"
+      "map_sha256": "f7224d297a1f5a13db362a01d0c8649205216e8c8a2f8e8eab113f5a294121a6",
+      "mapped_entries": 608
     },
     {
       "tier": "reading",
@@ -11159,11 +11165,12 @@
       "apparatus": [
         "concordance"
       ],
-      "sha256": "929beedacafd6184477d4cc5a7d9be44d457065b7e732c31926bec0a8a27facb",
+      "sha256": "2499e45e8904dd443a07ad7040c79633952e7bd19a8af578811a2186808349b1",
       "bytes": 1010223,
       "map_file": "apparatus/maps/daruri-reading-bilingual-concordance.pdf.json",
       "metadata_file": "apparatus/maps/daruri-reading-bilingual-concordance.pdf.metadata.json",
-      "map_sha256": "74758b36376cf602812cccd3707dcb02d1755865729e80c5f99755521edb5acb"
+      "map_sha256": "d12f359fc43f2c2a1582053e3b504d9307b7dcbb7c2de2b902e1a9bab275a334",
+      "mapped_entries": 0
     },
     {
       "tier": "reading",
@@ -12752,11 +12759,12 @@
       "apparatus": [
         "concordance"
       ],
-      "sha256": "5697f8a1fcaf1a8f7dff8acc7262976f871bad126a0b91e13c58c2bb5d411543",
+      "sha256": "387d5f996943388349597d7ed6009a7f0591a7cd0721006f3466172af8ce5104",
       "bytes": 579618,
       "map_file": "apparatus/maps/daruri-reading-bilingual-unvowelled-concordance.pdf.json",
       "metadata_file": "apparatus/maps/daruri-reading-bilingual-unvowelled-concordance.pdf.metadata.json",
-      "map_sha256": "6c7ab876d9ec7ec1877691f27cbee5880d2bcf67fbd20771cd3816ea0d8a246c"
+      "map_sha256": "c1299b9a28967b4331b1b3deb02b6e6ea6c13c0889078e77934f56c5cc7e3b82",
+      "mapped_entries": 0
     },
     {
       "tier": "study",
@@ -14345,11 +14353,12 @@
       "apparatus": [
         "glossary"
       ],
-      "sha256": "dc088708259b5e44dc007b522ee5f301eb031ef3a24a98aeb9f5d0c13fb8f6b5",
-      "bytes": 1580767,
+      "sha256": "9569ba233cd0a6fa61fdd781efce660abd7eabf6f2638f7011b2c991adf6aff2",
+      "bytes": 1580769,
       "map_file": "apparatus/maps/daruri-study-bilingual-glossary.pdf.json",
       "metadata_file": "apparatus/maps/daruri-study-bilingual-glossary.pdf.metadata.json",
-      "map_sha256": "5c716f3d7ae35f63be7bb220a09d74e8fe5c9b271bba5652edfe2ffe6878fbd4"
+      "map_sha256": "51568589f1ab94f19df1b06f86cf115dd8dc50725f82c8fe60030d0a067fc06e",
+      "mapped_entries": 306
     },
     {
       "tier": "study",
@@ -15938,11 +15947,12 @@
       "apparatus": [
         "applications"
       ],
-      "sha256": "2cd805d5300a5da8b38b30c6d66c852bb64bd60f83537ae064485e6cf2815666",
-      "bytes": 1388795,
+      "sha256": "f3fc617550a33eb29c96e57b6ebc3135b1c32ab5e5139eac804a3d9d3abf574d",
+      "bytes": 1388793,
       "map_file": "apparatus/maps/daruri-study-bilingual-applications.pdf.json",
       "metadata_file": "apparatus/maps/daruri-study-bilingual-applications.pdf.metadata.json",
-      "map_sha256": "a8e008cb3c4e3734488b48a1115634ebd1267a9d0852801cd98f48d7c5626862"
+      "map_sha256": "873a743c364be9e35cbfde34fb1e271a0de45b75ef10f46d6f51fa8dcbb4b3ea",
+      "mapped_entries": 0
     }
   ]
 }

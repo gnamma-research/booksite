@@ -1585,6 +1585,12 @@
   "apparatus": [
     "concordance"
   ],
-  "sha256": "5697f8a1fcaf1a8f7dff8acc7262976f871bad126a0b91e13c58c2bb5d411543",
-  "bytes": 579618
+  "sha256": "387d5f996943388349597d7ed6009a7f0591a7cd0721006f3466172af8ce5104",
+  "bytes": 579618,
+  "entry_positions": {
+    "terms": {},
+    "applications": {}
+  },
+  "entry_mapping_method": "WeasyPrint named HTML anchors; source appendix pages verified byte-for-byte in extracted text",
+  "entry_count": 0
 }

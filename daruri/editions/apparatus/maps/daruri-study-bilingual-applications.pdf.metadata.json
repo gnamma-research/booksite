@@ -1585,6 +1585,12 @@
   "apparatus": [
     "applications"
   ],
-  "sha256": "2cd805d5300a5da8b38b30c6d66c852bb64bd60f83537ae064485e6cf2815666",
-  "bytes": 1388795
+  "sha256": "f3fc617550a33eb29c96e57b6ebc3135b1c32ab5e5139eac804a3d9d3abf574d",
+  "bytes": 1388793,
+  "entry_positions": {
+    "terms": {},
+    "applications": {}
+  },
+  "entry_mapping_method": "WeasyPrint named HTML anchors; source appendix pages verified byte-for-byte in extracted text",
+  "entry_count": 0
 }
