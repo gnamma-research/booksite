@@ -154,6 +154,33 @@ test('failed storage writes roll back bookmark deletion',()=>{
  h.desk.toggleSection('191');
  ensure(h.desk.records().find(x=>x.id==='legacy').deleted===0,'delete mutated in-memory entry');
 });
+test('importing a previous-edition backup preserves missing-source notes',()=>{
+ const h=boot(backup([note('current','190')]));
+ const imported=note('imported-orphan','999','This older imported note must not disappear');
+ const file={size:450,text:backup([imported])};
+ h.event('change',{id:'gn-rd-file',files:[file]});
+ ensure(h.desk.records().some(r=>r.id==='imported-orphan'&&r.body===imported.body),
+  'imported unresolvable note discarded');
+ ensure(JSON.parse(h.stored).items.some(r=>r.id==='imported-orphan'),
+  'imported unresolvable note not persisted');
+});
+test('long imported notes can be edited without forced truncation',()=>{
+ ensure(js.includes("const body=String($('#gn-rd-note-body')?.value??'').trim()"),
+  'editor still limits existing note body on save');
+ ensure(js.includes('Math.max(30000,String(existing?.body||\'\').length+30000)'),
+  'legacy editor max length not expanded');
+ ensure(js.includes('escFull(existing?.body||\'\')'),
+  'legacy editor body not rendered without truncation');
+});
+test('relink cannot silently attach old quotations to unrelated passages',()=>{
+ const orphanQuote={...quoted,id:'relink-quote',target:{...quoted.target,section:'999'},body:'Do not lose original quote'};
+ const h=boot(backup([orphanQuote]));
+ h.event('click',{dataset:{rd:'select',id:'relink-quote'}});
+ h.event('click',{dataset:{rd:'relink',id:'relink-quote'}});
+ h.event('click',{dataset:{rd:'relink-save'}});
+ ensure(h.desk.records()[0].target.section==='999','invalid quote was falsely relinked');
+ ensure(h.notifications.some(x=>String(x).includes('not present')),'missing precise relink warning');
+});
 test('relink preserves content, date and prior source reference',()=>{
  const h=boot(backup([archived]));
  h.event('click',{dataset:{rd:'select',id:'orphan'}});
