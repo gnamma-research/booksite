@@ -93,7 +93,14 @@
     const n=Number(metadata?.section_pages?.[String(section)]);
     return Number.isInteger(n)&&n>0&&n<=pdfPages?n-1:-1;
   }
-  const model={available,orderItems,dateLine,entryText,verifiedPage,isNote,isBookmark,normalizeDesk};
+  function requiresAppendix(rows,p){
+    return Boolean(p.annotations&&!p.appendix&&rows.some((r,i)=>
+      String(r.body||'').length>30000||
+      (r.kind==='note'&&String(r.target?.quote||'').length>1000)||
+      (r.kind!=='note'&&String(r.target?.quote||'').length>30000)||
+      entryText(r,i,p.dates).length>24000));
+  }
+  const model={available,orderItems,dateLine,entryText,verifiedPage,isNote,isBookmark,normalizeDesk,requiresAppendix};
   window.GnammaPersonalExportModel=model;
   let manifest=null,records=[],selectedIds=new Set(),busy=false,resultURL=null,resultFile=null;
   let lastFilename='';
@@ -134,7 +141,9 @@
       (rows.length+' Reading Desk item'+(rows.length===1?'':'s')+' selected. A new PDF will be created locally; the original edition stays unchanged.');
     $('pe-count').textContent=has?rows.length+' qualifying item'+(rows.length===1?'':'s')+
       (rows.some(r=>r.target?.section)?' · in-text entries will be pinned to source section pages where mapping is verified':' · appendix-only references'):'';
-    $('pe-generate').disabled=busy||!pdf|| (has&&(!rows.length||(!p.appendix&&!p.annotations)||rows.length>MAX_ITEMS));
+    const overflow=has&&requiresAppendix(rows,p);
+    $('pe-generate').disabled=busy||!pdf|| (has&&(!rows.length||(!p.appendix&&!p.annotations)||rows.length>MAX_ITEMS||overflow));
+    if(overflow)$('pe-count').textContent+=' · The selected material is too long for pop-up notes alone; enable the full notes appendix.';
     if(has&&rows.length>MAX_ITEMS)$('pe-count').textContent+=' · Too many for one export. Choose up to '+MAX_ITEMS+' items.';
     if(mode()==='choose')renderPicker();
     if(!has){$('pe-result').hidden=true;if(!loadError)info('');}
@@ -144,7 +153,8 @@
     const p=prefs(),eligible=available(records,p),q=String($('pe-search').value||'').toLowerCase().trim();
     const visible=eligible.filter(r=>!q||[r.title,r.body,r.target?.quote,nameOf(r.target)].join(' ').toLowerCase().includes(q));
     const root=$('pe-items');root.replaceChildren();
-    for(const r of visible){
+    const displayLimit=240;
+    for(const r of visible.slice(0,displayLimit)){
       const label=document.createElement('label');label.className='item';
       const check=document.createElement('input');check.type='checkbox';check.checked=selectedIds.has(r.id);
       check.dataset.noteId=r.id;
@@ -154,7 +164,8 @@
       text.append(meta);label.append(check,text);root.append(label);
     }
     const eligibleSelected=eligible.filter(r=>selectedIds.has(r.id)).length;
-    $('pe-picker-count').textContent=eligibleSelected+' selected · '+visible.length+' matching / '+eligible.length+' qualifying items';
+    $('pe-picker-count').textContent=eligibleSelected+' selected · '+visible.length+' matching / '+eligible.length+' qualifying items'+
+      (visible.length>240?' · Showing first 240; narrow the search to display other items':'');
   }
   function progress(label,percent){
     $('pe-progress').hidden=false;$('pe-progress-text').textContent=label;
@@ -342,11 +353,7 @@
     if(!rows.length)throw Error('Choose at least one Reading Desk item, or select the unchanged PDF option.');
     if(rows.length>MAX_ITEMS)throw Error('Choose at most '+MAX_ITEMS+' items per PDF.');
     if(!p.annotations&&!p.appendix)throw Error('Enable annotations, the appendix, or both.');
-    if(p.annotations&&!p.appendix&&rows.some((r,i)=>
-      String(r.body||'').length>30000||
-      (r.kind==='note'&&String(r.target?.quote||'').length>1000)||
-      (r.kind!=='note'&&String(r.target?.quote||'').length>30000)||
-      entryText(r,i,p.dates).length>24000))
+    if(requiresAppendix(rows,p))
       throw Error('One or more saved items are too long for PDF pop-up comments alone. Enable the full personal notes appendix to prevent text being omitted.');
     progress('Loading PDF processing library…',6);
     await loadPdfLib();
