@@ -80,6 +80,7 @@ async function exercise(engine, width, touch) {
     check((await page.locator('#gn-rd-detail').innerText()).includes('Original source unavailable'),
       id+': archival note silently treated as an ordinary source');
 
+    await page.locator('#gn-rd-detail .gn-rd-item-more > summary').click();
     await page.locator('#gn-rd-detail [data-rd="print"]').click();
     await page.locator('#gn-rd-print-root').waitFor();
     check((await page.locator('#gn-rd-print-sheet-body').innerText()).includes(endMark),
