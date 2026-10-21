@@ -292,7 +292,7 @@ def apply_structure_bookmarks(pdf,book,edition,anchors):
     if any(row[2]<1 or row[2]>len(pdf) for row in got):raise ValueError('Invalid outline page')
     return {'source_headings':source_count,'editorial_titles':editorial_count,'colophon_level':1,'arabic_labels':ar,'ok':True}
 
-def build(edition,output):
+def build(edition,output,editorial_titles=False):
     from weasyprint import HTML,CSS
     from weasyprint.text.fonts import FontConfiguration
     from main_text import render_main,MAIN_TEXT_CSS,validate_main,repeat_footnote_plan,footnote_break_plan,validate_pagination
@@ -304,7 +304,8 @@ def build(edition,output):
     elif edition=='arabic':footer+='<a href="#glossary">فهرس المصطلحات</a>'
     footer+='</div>'
     body=footer+cover(edition)+guide(edition)+detailed_contents(book,edition)
-    main_html=render_main(book,q,h,edition)
+    show_titles=bool(editorial_titles and edition!='scholarly')
+    main_html=render_main(book,q,h,edition,show_editorial_titles=show_titles)
     main_check=validate_main(book,q,h,edition,main_html)
     if not main_check['ok']:raise ValueError('Main text validation failed: '+json.dumps(main_check,ensure_ascii=False))
     body+=main_html
@@ -322,7 +323,9 @@ def build(edition,output):
       paragraph_control=1000
       css+=f'\np,.main-text .source-segment {{orphans:{paragraph_control}!important;widows:{paragraph_control}!important;}}'
     doc_html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="Ibn Rushd; Gnamma Research editorial translation"><meta name="description" content="Complete reading text with edition-specific source notes"><title>Al-Ḍarūrī · '+E(NAMES[edition][1])+'</title><style>'+css+'</style></head><body>'+body+'</body></html>'
-    output.mkdir(parents=True,exist_ok=True);filename=NAMES[edition][0];html_path=output/(filename+'.html');html_path.write_text(doc_html)
+    output.mkdir(parents=True,exist_ok=True);filename=NAMES[edition][0]
+    if show_titles:filename=Path(filename).stem+'-editorial.pdf'
+    html_path=output/(filename+'.html');html_path.write_text(doc_html)
     font_config=FontConfiguration();doc=HTML(string=doc_html,base_url=str(ROOT)).render(font_config=font_config)
     plan=[];forced_breaks=[]
     if edition!='scholarly':
@@ -332,7 +335,7 @@ def build(edition,output):
         if next_plan==plan and next_breaks==forced_breaks:break
         plan=next_plan;forced_breaks=next_breaks
         q['_repeat_footnote_anchors']=plan;q['_footnote_break_before']=forced_breaks
-        revised_main=render_main(book,q,h,edition)
+        revised_main=render_main(book,q,h,edition,show_editorial_titles=show_titles)
         doc_html=doc_html.replace(main_html,revised_main,1);main_html=revised_main
         doc=HTML(string=doc_html,base_url=str(ROOT)).render(font_config=font_config)
       else:raise ValueError('Repeated-reference footnotes did not settle')
@@ -373,5 +376,5 @@ def build(edition,output):
     return meta
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--edition',choices=list(NAMES),action='append');parser.add_argument('--output-dir',type=Path,default=ROOT/'output');args=parser.parse_args()
-    for edition in args.edition or list(NAMES):build(edition,args.output_dir)
+    parser=argparse.ArgumentParser();parser.add_argument('--edition',choices=list(NAMES),action='append');parser.add_argument('--output-dir',type=Path,default=ROOT/'output');parser.add_argument('--editorial-titles',choices=['off','on'],default='off',help='Add explicitly labelled editorial section headings in the text, only for non-reference editions');args=parser.parse_args()
+    for edition in args.edition or list(NAMES):build(edition,args.output_dir,editorial_titles=args.editorial_titles=='on')
