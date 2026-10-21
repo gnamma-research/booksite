@@ -14,7 +14,7 @@ The data files retain exact quotation anchors, source URLs, identification quali
 
 ## Website Notes cards
 
-The reader uses the same 53 Qur’an and 33 hadith source records already present in `edition-r3-20261020.js`. `sections[].noteIds` is the authoritative association with a passage; legacy `note.n` values are not reliable ownership keys. The Notes link counts all displayed records once by ID. Its card shows main-text sources first, separately scoped Bidāya application sources next, and the other notes afterwards. Source qualifications remain verbatim.
+The reader uses the same 50 Qur’an and 33 hadith source records already present in `edition-r3-20261020.js`. `sections[].noteIds` is the authoritative association with a passage; legacy `note.n` values are not reliable ownership keys. The Notes link counts all displayed records once by ID. Its card shows main-text sources first, separately scoped Bidāya application sources next, and the other notes afterwards. Source qualifications remain verbatim.
 
 Run `python daruri/build/build_source_reference_data.py` to refresh `source-reference-data.js` from the back-matter mappings; `--check` verifies that the export is current. The reader attaches the 12 application-source notes only to each application’s primary section and displays them in the application itself. The 13 dictionary source notes retain their full-article IDs in the export and PDF apparatus. Do not attach those notes to authorial passages or to website excerpts that omit the cited wording.
 
@@ -118,16 +118,16 @@ control beside the source label. Desktop hover and keyboard focus disclose the
 full URL in a viewport-clamped tooltip. No database, login, or external UI service
 is used. The no-JavaScript fallback retains its legible source names and links.
 
-Only the three exact Quranic comparison snippets in R001 (Q049, Q050, Q051)
-are typeset in Uthmani wording between ornamental brackets. The phrase inventory
-was checked against Quran.com. Allusions remain labelled as allusions, and
-transmitted variants, source disagreements and paraphrases are **not** silently
-restyled as literal muṣḥaf quotations. No authorial text or translation was changed.
+The reader and PDFs show two verified Qurʾānic verse excerpts in §1 solely as
+**comparisons** (Q049 / 55:4 and Q050 / 6:149), explicitly marked **possible verbal
+allusions, not quotations by Ibn Rushd**. §38 / 4:43 remains a direct authorial
+quotation. Text was checked against Quran.com. No phrase is silently presented
+as Ibn Rushd’s quotation, and no authorial Arabic or translation is modified. No authorial text or translation was changed.
 
 PDF source-note citation links retain their URI annotations. Raw long URLs are
 visually suppressed in the PDF stylesheet, rather than deleted from the notes or
-from the validator's underlying text. The scholarly apparatus displays the three
-verified Arabic comparison excerpts in a compact right-to-left box. Hadith
+from the validator's underlying text. The scholarly apparatus displays two qualified Arabic comparison excerpts
+and the distinct genuine §38 quotation in compact right-to-left boxes. Hadith
 references still appear only in the scholarly PDF, as before. Printed PDFs
 identify their source without relying on tooltips. Other fonts and colour themes
 are not modified.
@@ -147,32 +147,29 @@ raw URLs, no horizontal overflow and verified Arabic excerpt brackets.
 Native Safari/iOS long-press and a deployed GitHub Pages build require separate
 device-side confirmation; the real anchors have been preserved for that reason.
 
-## Conservative Qurʾānic source attribution (21 October 2026)
+## Section 1 citation reassessment (21 October 2026)
 
-The initial 53-claim map admitted five literary/thematic **allusions** as compulsory
-passage-level Qurʾān citations, despite their not being direct quotations:
-`QUR-R001-Q049` (معلم البيان / 55:4), `QUR-R001-Q050` (الحجج البالغة /
-6:149), `QUR-R001-Q051` (خاتم الرسل / 33:40),
-`QUR-R011-Q052` (29:45), and `QUR-R047-Q053` (12:53).
-These five are now **withheld** from reader Notes, reading/study footnotes and
-scholarly source apparatus. Their complete provenance remains in the source
-map under `withheld_editorial_allusions`; no authorial text is deleted or
-rewritten.
+On reviewing the opening Arabic and the precise canonical verses, the earlier
+all-or-nothing removal of §1 references was too broad. Two references are restored,
+clearly marked **possible verbal allusions** — not direct quotations, and without
+any claim to prove Ibn Rushd consciously cited these verses:
 
-The published map now contains **48** Qurʾān records, supported by explicit
-quotation, explicit invocation of revelation, or separately qualified
-paraphrase, composite citation, wording variation or transmitted reading.
-One- or two-word matches, ordinary Arabic idioms and generic legal themes do
-not establish that Ibn Rushd intentionally cited a particular verse. Such
-correspondences remain editorial hypotheses, not source citations.
+- **QUR-R001-Q049:** `معلّم البيان` compared with Qurʾān 55:4 `علّمه البيان`.
+- **QUR-R001-Q050:** `الحجج البالغة` (authorial plural) compared with Qurʾān
+  6:149 `الحجة البالغة` (Qurʾānic singular).
 
-The public reading payload retains all **542** pre-existing explanatory notes,
-**33** hadith sources and **48** Qurʾān source notes. The reader and PDF tests
-compare the retained section ownership with the earlier published digest,
-reinstating the five withheld IDs *only for that comparison*. The ornamental
-Qurʾān excerpt demonstration has been moved from the conjectural §1 allusions
-to a demonstrable authorial quotation in **§38 / al-Nisāʾ 4:43**; the reader
-labels it an excerpt and separates its own explanatory translation from the
-canonical Arabic text. Recheck these editorial judgements against a scholarly
-edition before making further additions. Do not regenerate the five allusions
-into any present or future PDF/HTML edition.
+**QUR-R001-Q051** (`خاتم الرسل` versus the verse’s `خاتم النبيين`, 33:40),
+**QUR-R011-Q052** (29:45), and **QUR-R047-Q053** (12:53) remain withheld as
+passage-level Qurʾānic references; their archival provenance is retained.
+
+The common citation map now has **50** published Qurʾān entries (48 previously
+retained plus these 2 qualified possible echoes), **33** hadith sources and
+**3** withheld editorial hypotheses, retaining **542** original explanatory notes.
+These classifications must be reproduced by the web reader, fixed PDFs, and
+generated/print editions. The reader shows the authentic verse words in distinct
+comparison panels with a plain warning about the limited attribution, rather
+than falsely asserting direct quotation. Maintain all original Arabic, English,
+vowelling, internal navigation, PDF bookmarks and personal-annotation maps.
+
+Avoid publishing stale PDF binaries: source-note footnote numbering and exact PDF
+page maps require regeneration and fresh validation before merged release.
