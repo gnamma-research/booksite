@@ -7,6 +7,7 @@ on:
       - 'daruri/build/**'
       - 'daruri/qa/refresh_note_pdf_manifest.py'
       - 'daruri/qa/verify-reader-source-notes.js'
+      - 'daruri/pdf-editions-manifest.json'
       - '.github/workflows/daruri-source-note-pdfs.yml'
   workflow_dispatch:
 
