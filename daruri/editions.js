@@ -89,9 +89,12 @@
       link('daruri.pdf?v=daruri8-structure-20261020','Open reference PDF')+'</article></section>'+
     '<footer class="gn-ed-extra"><h2>Print a chapter or course selection</h2><p>Select “One major part”, “Study Guide lesson” or “Section range” above. We preserve whole numbered source passages; a lesson handout can draw on nonconsecutive passages without claiming to be a continuous abridgment.</p>'+
       '<p class="gn-ed-small">Original headings are always retained; editorial headings are optional and identified separately. Arabic-right/English-left presentation is used for every newly generated bilingual printout.</p></footer></div>';
-    host.addEventListener('change',onChange);
-    host.addEventListener('input',onInput);
-    host.addEventListener('click',onClick);
+    if (!host.dataset.gnEpBound) {
+      host.addEventListener('change',onChange);
+      host.addEventListener('input',onInput);
+      host.addEventListener('click',onClick);
+      host.dataset.gnEpBound='1';
+    }
     KEYS.forEach(update);
   }
   function selection(tier) {
