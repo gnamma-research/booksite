@@ -82,12 +82,12 @@ try {
   assert.equal(await page.locator('[data-ep-published="study"] [data-ep-ready-download]').getAttribute('href')!==null,true);
   const studyPDF=page.locator('[data-ep-published="study"]');
   await studyPDF.locator('[data-ep-icon-kind="editorial"]').getByRole('radio',{name:/On/}).click();
-  assert.match(await studyPDF.locator('[data-ep-ready-download]').getAttribute('href'),/study-bilingual-titles-on\\.pdf$/);
+  assert.match(await studyPDF.locator('[data-ep-ready-download]').getAttribute('href'),/study-bilingual-titles-on\.pdf$/);
   await studyTab.focus();
   await page.keyboard.press('ArrowRight');
   assert.deepEqual(await visiblePanels(),['gn-ed-reference'],'ArrowRight selects Reference');
   assert.equal(await referenceTab.getAttribute('aria-selected'),'true');
-  assert.match(await page.locator('#gn-ed-reference .gn-ed-pdf-actions a').first().getAttribute('href'),/daruri\\.pdf/);
+  assert.match(await page.locator('#gn-ed-reference .gn-ed-pdf-actions a').first().getAttribute('href'),/daruri\.pdf/);
   assert.equal(await page.locator('#gn-ed-reference .gn-ed-study-custom').count(),0,
     'No custom printing in fixed scholarly reference edition');
   await page.keyboard.press('Home');
