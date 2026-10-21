@@ -34,20 +34,22 @@ from print_editions import BOOK, FONT_CSS
 from build_editions import render_glossary, render_index, render_concordance
 
 SOURCE_RANGE = range(1, 259)
-PROFILES = (
-    # Reading: keep the main text unmodified and publish meaningful supplement profiles.
-    ("reading", "bilingual", "glossary", ("glossary",)),
-    ("reading", "bilingual-unvowelled", "glossary", ("glossary",)),
-    ("reading", "bilingual", "index", ("index",)),
-    ("reading", "bilingual-unvowelled", "index", ("index",)),
-    ("reading", "bilingual", "glossary-index", ("glossary", "index")),
-    ("reading", "bilingual-unvowelled", "glossary-index", ("glossary", "index")),
-    ("reading", "bilingual", "concordance", ("concordance",)),
-    ("reading", "bilingual-unvowelled", "concordance", ("concordance",)),
-    # Study retains all publisher footnotes and its existing basic subject index.
-    ("study", "bilingual", "glossary", ("glossary",)),
-    ("study", "bilingual", "applications", ("applications",)),
+# A finite, complete-work matrix only; no visitor-side PDF renderer.
+# English-language appendices are not attached to Arabic-only editions.
+from itertools import combinations
+APPARATUS_ORDER = ("glossary", "index", "concordance", "applications")
+PROFILES = tuple(
+    (tier, language, editorial, components)
+    for tier, languages in (
+        ("reading", ("bilingual", "bilingual-unvowelled", "english")),
+        ("study", ("bilingual",))
+    )
+    for language in languages
+    for editorial in (False, True)
+    for count in range(1, len(APPARATUS_ORDER) + 1)
+    for components in combinations(APPARATUS_ORDER, count)
 )
+assert len(PROFILES) == 120
 
 COMPONENT = {
     "glossary": ("Technical glossary", "glossary"),
@@ -155,12 +157,12 @@ def named_sections(doc: fitz.Document) -> dict[int, dict]:
     assert len(entries) == 258
     return entries
 
-def expected_config(tier: str, source: str, components: tuple[str, ...]) -> dict:
+def expected_config(tier: str, source: str, components: tuple[str, ...], editorial: bool) -> dict:
     # Explicit metadata is the selector's *only* contract. No filename guessing.
     return {
         "tier": tier,
         "language": source,
-        "editorial_titles": False,
+        "editorial_titles": editorial,
         "scope": "full",
         "layout": "parallel",
         "density": "standard",
@@ -210,8 +212,8 @@ def link_section_references(doc: fitz.Document, start: int, stops: dict[int, dic
     return seen
 
 def generate_one(output: Path, base_records: dict, cache: dict,
-                 tier: str, language: str, tag: str, components: tuple[str, ...]):
-    source_name = f"{tier}/daruri-{tier}-{language}-titles-off.pdf"
+                 tier: str, language: str, editorial: bool, components: tuple[str, ...]):
+    source_name = f"{tier}/daruri-{tier}-{language}-titles-{'on' if editorial else 'off'}.pdf"
     record = base_records.get(source_name)
     if not record:
         raise ValueError("Missing current approved edition: " + source_name)
@@ -219,7 +221,8 @@ def generate_one(output: Path, base_records: dict, cache: dict,
     raw = source.read_bytes()
     if len(raw) != record["bytes"] or digest(raw) != record["sha256"]:
         raise ValueError("An approved base PDF changed: " + source_name)
-    filename = f"daruri-{tier}-{language}-{tag}.pdf"
+    tag = "-".join(components)
+    filename = f"daruri-{tier}-{language}-{tag}{'-titles-on' if editorial else ''}.pdf"
     dest = output / filename
     dest.parent.mkdir(parents=True, exist_ok=True)
     cache_key = tuple(components)
@@ -277,7 +280,7 @@ def generate_one(output: Path, base_records: dict, cache: dict,
                    abs(page.rect.height - 841.89) < 1 for page in pdf):
             raise ValueError("A4 page geometry lost")
         metadata = {
-            **expected_config(tier, language, components),
+            **expected_config(tier, language, components, editorial),
             "file": f"apparatus/{filename}",
             "filename": filename,
             "source_base": source_name,
@@ -342,20 +345,37 @@ def main():
     records = {item["file"]: item for item in manifest["files"]}
     if len(records) != 12:
         raise ValueError("Expected twelve current base Reading/Study editions")
-    built,cache = [],{}
-    for tier,language,tag,components in PROFILES:
-        built.append(generate_one(output,records,cache,tier,language,tag,components))
-    assert len(built) == 10
+    old_path = output / "manifest.json"
+    old_catalog = json.loads(old_path.read_text()) if old_path.exists() else {"files": []}
+    old_profiles = {
+        (row["tier"], row["language"], row["editorial_titles"], tuple(row["apparatus"])): row
+        for row in old_catalog.get("files", []) if "apparatus" in row
+    }
+    built, cache = [], {}
+    for tier, language, editorial, components in PROFILES:
+        old = old_profiles.get((tier, language, editorial, components))
+        if old:
+            original_pdf = output / old["filename"]
+            original_map = A4 / old["map_file"]
+            original_base = records.get(old["source_base"])
+            if (original_pdf.is_file() and original_map.is_file() and original_base and
+                original_base["sha256"] == old["base_sha256"] and
+                digest(original_pdf.read_bytes()) == old["sha256"] and
+                digest(original_map.read_bytes()) == old["map_sha256"]):
+                built.append(old)
+                continue
+        built.append(generate_one(output, records, cache, tier, language, editorial, components))
+    assert len(built) == len(PROFILES) == 120
     assert len({m["file"] for m in built}) == len(built)
     final = {
-        "release":"20261021-controlled-apparatus-variants",
+        "release":"20261022-complete-a4-apparatus-matrix",
         "status":"verified",
         "source_a4_manifest_sha256":digest((A4/"manifest.json").read_bytes()),
-        "notes":"Ten additive, fully prebuilt apparatus editions. Each SHA-bound map verifies all 258 source-section destinations. Precise word-level geometry is not claimed. Existing canonical PDFs and their P-note maps are unchanged.",
+        "notes":"120 static, full-work Reading/Study apparatus profiles across compatible published base editions. SHA-bound maps cover all 258 source sections. Word-level precision remains unverified; canonical PDFs and the twelve A4 base PDFs remain unchanged.",
         "files":built,
     }
     (output / "manifest.json").write_text(json.dumps(final,ensure_ascii=False,indent=2) + "\n")
-    print("PASS",len(built),"variants and checksum-bound verified section maps",flush=True)
+    print("PASS",len(built),"verified variants and checksum-bound section maps",flush=True)
 
 if __name__ == "__main__":
     main()
