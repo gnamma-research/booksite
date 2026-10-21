@@ -19,7 +19,33 @@ jobs:
           find node_modules/@pdf-lib/fontkit -maxdepth 2 -name '*umd*' -o -name LICENSE* | head -15
           mkdir -p daruri/vendor
           cp node_modules/@pdf-lib/fontkit/dist/fontkit.umd.min.js daruri/vendor/fontkit-1.1.1.umd.min.js
-          cp node_modules/@pdf-lib/fontkit/LICENSE.md daruri/vendor/LICENSE-fontkit.md
+          cat > daruri/vendor/LICENSE-fontkit.md <<'NOTICE'
+          @pdf-lib/fontkit 1.1.1 — MIT (package.json), author Andrew Dillon, contributor Devon Govett.
+          Repository: https://github.com/Hopding/fontkit
+          The npm tarball does not include a standalone LICENSE file; the notice below follows
+          the package's published MIT declaration. Bundled dependencies carry their own licenses.
+
+          MIT License
+          Copyright (c) Andrew Dillon, Devon Govett and contributors
+
+          Permission is hereby granted, free of charge, to any person obtaining a copy
+          of this software and associated documentation files (the "Software"), to deal
+          in the Software without restriction, including without limitation the rights
+          to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+          copies of the Software, and to permit persons to whom the Software is
+          furnished to do so, subject to the following conditions:
+
+          The above copyright notice and this permission notice shall be included in all
+          copies or substantial portions of the Software.
+
+          THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+          IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+          FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+          AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+          LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+          OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+          SOFTWARE.
+          NOTICE
           cp daruri/build/fonts/NotoNaskhArabic-Regular.ttf daruri/vendor/NotoNaskhArabic-Regular.ttf
           cp daruri/build/fonts/NotoSerif-Regular.ttf daruri/vendor/NotoSerif-Regular.ttf
           cp daruri/build/fonts/OFL-NotoNaskhArabic.txt daruri/vendor/OFL-NotoNaskhArabic.txt
