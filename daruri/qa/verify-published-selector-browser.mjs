@@ -54,8 +54,8 @@ try{
   assert.match(await link(),/apparatus\/daruri-reading-bilingual-unvowelled-concordance\.pdf\?v=/);
   await choose('concordance','off');
   await choose('applications','on');
-  await check('unavailable');
-  assert.equal(await link(),null,'Unsupported Reading applications cannot open a mismatched PDF');
+  await check('ready');
+  assert.match(await link(),/apparatus\/daruri-reading-bilingual-unvowelled-applications\.pdf\?v=/,'Exact Reading application PDF must resolve');
   await choose('applications','off');
   await choose('glossary','technical');
   await choose('index','full');
@@ -88,8 +88,8 @@ try{
   await check('ready');
   assert.match(await link(),/apparatus\/daruri-study-bilingual-applications\.pdf\?v=/);
   await choose('glossary','technical');
-  await check('unavailable');
-  assert.equal(await link(),null,'Combined Study glossary+applications not yet published');
+  await check('ready');
+  assert.match(await link(),/apparatus\/daruri-study-bilingual-glossary-applications\.pdf\?v=/,'Exact Study combined PDF must resolve');
   await choose('glossary','none');
   await check('ready');
 
@@ -120,7 +120,7 @@ try{
   await page.setViewportSize({width:320,height:690});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth)<=2,'320px overflow');
   assert.deepEqual(errors,[],'Uncaught reader JS exceptions');
-  console.log('PASS: 10 published apparatus variants, one Open PDF, mapped personal export link, preserved status, 320/390px responsive UI');
+  console.log('PASS: 120 published apparatus variants, one Open PDF, mapped personal export link, preserved status, 320/390px responsive UI');
 }finally{
   await context.close();
   await browser.close();
