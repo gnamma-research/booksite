@@ -1,0 +1,42 @@
+name: Verify live Daruri Quran notes on GitHub Pages
+
+on:
+  push:
+    branches: [fix/daruri-fallback-quran-brackets-20261021]
+    paths: ['.github/workflows/daruri-public-quran-fallback-smoke.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Verify PUBLIC GitHub Pages HTML with a fresh cache-busting URL
+        shell: bash
+        run: |
+          python - <<'PY'
+          from urllib.request import Request, urlopen
+          u='https://gnamma-research.github.io/booksite/daruri/?quran_fallback_release=20261021a'
+          req=Request(u,headers={
+            'Cache-Control':'no-cache',
+            'Pragma':'no-cache',
+            'User-Agent':'Mozilla/5.0 (compatible; Daruri-Quran-Release-Verification/1.0)'
+          })
+          with urlopen(req,timeout=25) as response:
+            html=response.read().decode('utf-8')
+            print('HTTP',response.status,'URL',response.url,'bytes',len(html))
+          assert html.count('data-fallback-quran-presentation="verified"')==2, 'PUBLIC fallback does not contain both updated verses'
+          for x in ('QUR-R001-Q051','QUR-R011-Q052','QUR-R047-Q053'):
+            assert x not in html, 'PUBLIC fallback wrongly retains withdrawn citation '+x
+          for x in ('id="fb-note-QUR-R001-Q049"','id="fb-note-QUR-R001-Q050"',
+                    'source-note-ui.css?v=20261021-fallback-quran1',
+                    'sw.js?v=20261021-rd-simplified-cache2-qinline4-fallback1',
+                    'gnSection1QuranFigure(note)',
+                    '<span class="gn-quran-bracket">﴿</span>',
+                    '<span class="gn-quran-bracket">﴾</span>'):
+            assert x in html, 'PUBLIC page missing '+x
+          print('PASS: Public website serves corrected Quran comparisons in both enhanced and no-JS readers; three withdrawn citations absent.')
+          PY
