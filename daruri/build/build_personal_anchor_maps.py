@@ -106,11 +106,20 @@ def main():
                 place=anchors.get(ref)
                 rect=anchors.get(ident)
                 if not source or not place or not rect:continue
-                error=max(abs(place['b'][0]-source['x']),abs(place['b'][1]-source['y']))
-                if place['p']!=source['page'] or error>THRESHOLD or rect['p']!=place['p']:
-                    unstable.append((key,round(error,2),place['p'],source['page']))
+                dx=source['x']-place['b'][0]
+                dy=source['y']-place['b'][1]
+                error=max(abs(dx),abs(dy))
+                # Some older bilingual PDF releases used the opposite physical
+                # column order; the rebuilt *source text* is identical but the
+                # lane is translated exactly 268.324 pt.  Accept this only when
+                # y/page coincide and x differs by that known single-column width.
+                translated=(abs(abs(dx)-268.324015748)<0.5 and abs(dy)<THRESHOLD)
+                if place['p']!=source['page'] or (error>THRESHOLD and not translated) or rect['p']!=place['p']:
+                    unstable.append((key,round(dx,2),round(dy,2),place['p'],source['page']))
                     continue
                 box=rect['b']
+                if translated:
+                    box=[round(box[0]+dx,2),box[1],round(box[2]+dx,2),box[3]]
                 if len(box)!=4 or not all(math.isfinite(x) for x in box):continue
                 if box[2]-box[0]<.15 or box[3]-box[1]<.15:continue
                 matched.append((key,text,rect['p'],box))
