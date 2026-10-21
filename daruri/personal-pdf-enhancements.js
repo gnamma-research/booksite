@@ -63,11 +63,18 @@
       throw Error('Personal PDF link has no valid source/destination');
     const height=targetPage.getHeight();
     const top=Number.isFinite(topFromPage)?Math.min(Math.max(topFromPage,0),height):0;
-    const destination=pdf.context.obj([targetPage.ref,PDFName.of('FitH'),Math.min(height,Math.max(0,height-top+12))]);
+    // Android's native PDFium parser does not expose direct /Dest /FitH
+    // annotations as GoTo links. An explicit /A /GoTo /D /XYZ action is
+    // interoperable with PDFKit and standard PDF.js viewers.
+    const destination=pdf.context.obj([targetPage.ref,PDFName.of('XYZ'),0,
+      Math.min(height,Math.max(0,height-top+12)),window.PDFLib.PDFNull]);
+    const action=pdf.context.obj({
+      Type:PDFName.of('Action'),S:PDFName.of('GoTo'),D:destination
+    });
     const reference=pdf.context.register(pdf.context.obj({
       Type:PDFName.of('Annot'),
       Subtype:PDFName.of('Link'),
-      Rect:rect,Border:[0,0,0],Dest:destination,F:4
+      Rect:rect,Border:[0,0,0],A:action,F:4
     }));
     const key=PDFName.of('Annots');
     let existing=sourcePage.node.lookup(key,PDFArray);
