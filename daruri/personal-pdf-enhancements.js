@@ -193,13 +193,11 @@
         else{fonts.missing.add(point);font=fonts.latin;}
       }
       const ch=(font===fonts.latin&&!fonts.latinSet.has(cp))?'?':point;
-      // Arabic glyph shaping can map several Unicode letters to a single
-      // ligature GID; PDFium then exposes control-code characters. Since this
-      // text is invisible, write Arabic codepoints in independent PDF runs.
-      // Each run has an unambiguous single-character /ToUnicode mapping.
-      if(font===fonts.arabic){
-        last={font,text:ch};runs.push(last);
-      }else if(last?.font===font)last.text+=ch;
+      // Keep natural fontkit Arabic shaping in the original Unicode layer:
+      // Apple PDFKit needs these continuous Arabic runs for text search.
+      // Android PDFium gets a separate exact-Unicode ActualText fallback in
+      // textOverlay, avoiding the native glyph attribution problem there.
+      if(last?.font===font)last.text+=ch;
       else {last={font,text:ch};runs.push(last);}
     }
     return runs.map(x=>({...x,width:x.font.widthOfTextAtSize(x.text,size)}));
