@@ -520,6 +520,16 @@ function create(ctx){
   openContext={section:sectionId,segment,at:window.scrollY||0};
   panel.querySelector('button')?.focus({preventScroll:true});
  }
+ function ensureVisualsToggle(){
+  const title=$('#settingsTitle'),panel=title?.closest('[role="dialog"]');
+  if(!panel||panel.querySelector('#gn-rd-visuals-toggle'))return;
+  const section=document.createElement('section');
+  section.className='gn-rd-visuals-row';
+  section.innerHTML='<label><input type="checkbox" id="gn-rd-visuals-toggle"'+(showPersonalMarks()?' checked':'')+
+   '> Show private Reading Desk marks beside the text</label>'+
+   '<small>Editorial notes are controlled separately. Focus reading hides these marks.</small>';
+  panel.append(section);
+ }
  function afterReader(){
   if(state.route!=='reader')return;
   const reader=$('#reader');if(!reader)return;
@@ -546,7 +556,7 @@ function create(ctx){
     (bookmarks?'◇ '+bookmarks:'')+(bookmarks&&notesCount?' · ':'')+(notesCount?'✎ '+notesCount:'')+' saved</button>':'')+
     '<button type="button" data-rd="paragraph-menu"'+attrs+' aria-expanded="false">◇ Save / Note</button>';
   });
-  markReader();decorate();syncActionStates();
+  markReader();decorate();syncActionStates();ensureVisualsToggle();
  }
  function findRange(side,target){
   const nodes=collectNodes(side),raw=nodes.map(n=>n.textContent).join('');
@@ -981,8 +991,9 @@ function create(ctx){
    if(element?.id==='gn-rd-file'){importFile(element.files?.[0]);element.value='';}
    if(element?.id==='gn-rd-source'){ui.sourceType=element.value;ui.selected='';ui.mobileDetail=false;render();}
    if(element?.id==='gn-rd-sort'){ui.sort=element.value;ui.selected='';ui.mobileDetail=false;render();}
-   if(element?.id==='gn-rd-indicators'){
+   if(element?.id==='gn-rd-indicators'||element?.id==='gn-rd-visuals-toggle'){
     try{localStorage.setItem('gnamma-rd-show-personal-marks',String(element.checked));}catch(_){}
+    document.querySelectorAll('#gn-rd-indicators,#gn-rd-visuals-toggle').forEach(input=>{input.checked=element.checked;});
     ctx.notify(element.checked?'Personal marks enabled.':'Personal marks hidden during reading.');
     if(state.route==='reader')afterReader();
    }
@@ -994,6 +1005,7 @@ function create(ctx){
    }
   });
   document.addEventListener('input',e=>{if(e.target?.id==='gn-rd-query'){ui.query=e.target.value;const focusId=document.activeElement.id;const pos=e.target.selectionStart;render();const input=$('#'+focusId);input?.focus({preventScroll:true});input?.setSelectionRange?.(pos,pos);}});
+  ensureVisualsToggle();
   const host=$('#detailContent');if(host){const observer=new MutationObserver(()=>{if(!decorating)queueMicrotask(decorate);});observer.observe(host,{subtree:true,childList:true});}
   const main=$('#mainContent');if(main){let scheduled=false;new MutationObserver(()=>{if(scheduled||decorating)return;scheduled=true;queueMicrotask(()=>{scheduled=false;decorate();});}).observe(main,{subtree:true,childList:true});}
  }
