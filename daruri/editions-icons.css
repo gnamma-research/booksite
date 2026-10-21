@@ -265,3 +265,47 @@
   .gn-editions .gn-ed-edition-nav{column-gap:10px}
   .gn-editions .gn-ed-personal-action::before{left:-6px}
 }
+
+
+/* Independent EN / AR selectors; vowels form an Arabic modifier, not a fourth language. */
+.gn-editions .gn-ed-ready-language{
+  display:grid;grid-template-columns:40px minmax(0,1fr);
+  align-items:center;gap:10px;border-bottom:1px solid var(--line);padding:7px 0
+}
+.gn-editions .gn-ed-ready-language>.gn-ed-field-marker{
+  position:static;grid-column:1;grid-row:1;
+}
+.gn-editions .gn-ed-ready-language>.gn-ed-native-select{position:absolute!important}
+.gn-editions .gn-ed-ready-switches{
+  grid-column:2;grid-row:1;display:flex;align-items:center;gap:7px;min-width:0
+}
+.gn-editions .gn-ed-lang-toggle{
+  display:grid;place-items:center;width:58px;min-width:48px;height:48px;min-height:48px;
+  padding:7px 10px;border:1px solid var(--border);border-radius:9px;
+  background:var(--paper);color:var(--text);
+  font:650 14px/1 var(--sans,system-ui);cursor:pointer;position:relative
+}
+.gn-editions .gn-ed-lang-toggle[aria-pressed="true"]{
+  background:var(--accent-soft);color:var(--accent);
+  border:2px solid var(--accent);padding:6px 9px
+}
+.gn-editions .gn-ed-lang-toggle:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.gn-editions .gn-ed-lang-toggle:disabled{cursor:default;opacity:1}
+.gn-editions .gn-ed-lang-toggle[hidden]{display:none!important}
+.gn-editions .gn-ed-vowel-switch{
+  margin-left:10px;font:500 25px/1.1 "Amiri","Noto Naskh Arabic",serif;
+  border-radius:9px
+}
+.gn-editions .gn-ed-vowel-switch::before{
+  content:'';position:absolute;left:-12px;top:50%;width:1px;height:24px;
+  transform:translateY(-50%);background:var(--border)
+}
+.gn-editions .gn-ed-pdf-actions [aria-disabled="true"]{
+  pointer-events:none;opacity:.4
+}
+@media(max-width:480px){
+  .gn-editions .gn-ed-ready-language{grid-template-columns:35px minmax(0,1fr);gap:6px}
+  .gn-editions .gn-ed-lang-toggle{width:53px;min-width:46px}
+  .gn-editions .gn-ed-vowel-switch{margin-left:7px}
+  .gn-editions .gn-ed-vowel-switch::before{left:-9px}
+}
