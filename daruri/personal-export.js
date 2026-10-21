@@ -213,33 +213,9 @@
     c.fillText('PERSONAL READING DESK · not part of the published text',sheet.padding,sheet.H-55);
     c.textAlign='right';c.fillText(String(pageNumber),sheet.W-sheet.padding,sheet.H-55);c.restore();
   }
-  function attach(pdf,page,dict){
-    const {PDFName,PDFArray}=window.PDFLib;
-    const context=pdf.context,ref=context.register(context.obj(dict)),key=PDFName.of('Annots');
-    let annots=page.node.lookup(key,PDFArray);
-    if(!annots){annots=context.obj([]);page.node.set(key,annots);}
-    annots.push(ref);return ref;
-  }
-  function notePin(pdf,page,number,popup,index){
-    const {PDFName,PDFHexString}=window.PDFLib;
-    const size=page.getSize();const height=Math.max(180,size.height-80);
-    const count=Math.max(1,Math.floor(height/18));
-    const col=Math.floor(index/count),row=index%count;
-    if(col>=3)return false; // Always in appendix even if a page is too crowded.
-    const x=Math.max(3,size.width-22-col*16),y=Math.max(28,size.height-53-row*18);
-    attach(pdf,page,{
-      Type:PDFName.of('Annot'),Subtype:PDFName.of('Text'),
-      Rect:[x,y,x+12,y+12],
-      Contents:PDFHexString.fromText('Reading Desk #'+number+'\n'+(popup.length>24000?popup.slice(0,23930)+'\n[More in the personal appendix]':popup)),
-      T:PDFHexString.fromText('Personal note '+number),
-      Name:PDFName.of('Comment'),C:[0.18,0.35,0.42],F:4,Open:false
-    });
-    return true;
-  }
-  function makeLink(pdf,page,sourcePage,rect){
-    const {PDFName}=window.PDFLib;
-    attach(pdf,page,{Type:PDFName.of('Annot'),Subtype:PDFName.of('Link'),
-      Rect:rect,Border:[0,0,0],Dest:pdf.context.obj([sourcePage.ref,PDFName.of('Fit')]),F:4});
+  // New personal references are standard PDF GoTo links, not comment boxes.
+  function makeLink(pdf,page,targetPage,rect,targetTop){
+    return window.GnammaPdfUpgrade.attachLink(pdf,page,targetPage,rect,targetTop);
   }
   async function toJpeg(canvas){
     return new Promise((resolve,reject)=>{
@@ -247,7 +223,7 @@
         'image/jpeg',0.91);
     });
   }
-  async function appendNotes(pdf,rows,p,meta){
+  async function appendNotes(pdf,rows,p,meta,sourcePositions,basePages){
     if(!window.GnammaPdfUpgrade)throw Error('The private PDF Unicode extension did not load. Reload this page.');
     const upgrade=window.GnammaPdfUpgrade;
     const fonts=await upgrade.searchableFonts(pdf,URL_ROOT);
@@ -259,7 +235,7 @@
     // Use the source PDF's page size, preserving A4 or other formats.
     let pageNum=1,sheet=blankCanvas(size);
     const pads=sheet.padding,maxWidth=sheet.W-pads*2,maxY=sheet.H-114;
-    const pendingLinks=[];
+    const pendingLinks=[],noteTargets=[];
     async function flush(){
       printFooter(sheet,pageNum);
       const bytes=await toJpeg(sheet.canvas),img=await pdf.embedJpg(bytes);
@@ -274,33 +250,48 @@
     async function line(text,kind='body',indent=0,withLink=null){
       const s=String(text||'').trim();
       if(!s){sheet.y+=14;return;}
-      const f=fontFor(s,kind),c=sheet.c;c.font=f.font;
+      const f=fontFor(s,kind==='link'?'meta':kind),c=sheet.c;c.font=f.font;
       const lines=linesFor(c,s,maxWidth-indent);
       for(let i=0;i<lines.length;i++){
         if(sheet.y+f.lh>maxY)await flush();
         const y=sheet.y,content=lines[i];
-        c.save();c.font=f.font;c.fillStyle=kind==='meta'?'#666':kind==='title'?'#243f45':'#272727';
+        c.save();c.font=f.font;c.fillStyle=kind==='link'?'#28636a':kind==='meta'?'#666':kind==='title'?'#243f45':'#272727';
         c.direction=f.rtl?'rtl':'ltr';c.textAlign=f.rtl?'right':'left';
-        c.fillText(content,f.rtl?sheet.W-pads: pads+indent,y);c.restore();
+        const startX=f.rtl?sheet.W-pads:pads+indent;
+        c.fillText(content,startX,y);
+        if(kind==='link'){
+          const textW=Math.min(maxWidth-indent,c.measureText(content).width);
+          c.strokeStyle='#397b7d';c.lineWidth=1;
+          c.beginPath();
+          c.moveTo(f.rtl?startX-textW:startX,y+3);
+          c.lineTo(f.rtl?startX:startX+textW,y+3);c.stroke();
+        }
+        c.restore();
         sheet.searchLines.push({text:content,y,rtl:f.rtl,size:Number(f.font.match(/([\d.]+)px/)?.[1])||26,indent});
-        if(withLink&&i===0)sheet.links.push({
-          sourceIndex:withLink,
-          rect:[(pads+indent)/2,(sheet.H-y-10)/2,Math.min(sheet.W-pads,(pads+indent+maxWidth))/2,(sheet.H-y+f.lh-4)/2]
-        });
+        if(withLink&&i===0){
+          const textWidth=Math.min(maxWidth-indent,c.measureText(content).width+8);
+          const x0=f.rtl?sheet.W-pads-textWidth:pads+indent;
+          sheet.links.push({
+            sourceIndex:withLink.index,
+            sourceTop:withLink.top,
+            rect:[x0/2,(sheet.H-y-8)/2,(x0+textWidth)/2,(sheet.H-y+f.lh-5)/2]
+          });
+        }
         sheet.y+=f.lh;
       }
     }
-    await line('PERSONAL READING DESK · AL-ḌARŪRĪ','title');
+    await line('MY READING DESK · PERSONAL NOTES','title');
     await line('Reader-created observations · '+new Date().toLocaleDateString(),'meta');
-    await line('Personal notes are separate from the author’s text and the editorial apparatus.','meta');
-    await line('PDF comment icons, where included, point to numbered source sections.','meta');
+    await line('P1, P2… identify YOUR personal notes — not publisher, editor or source references.','meta');
+    await line('Select a P marker or highlighted phrase to visit its note; use Return to text to go back.','meta');
     sheet.y+=35;
-    const sourcePages=[];
     for(let i=0;i<rows.length;i++){
-      const r=rows[i],source=verifiedPage(r.target?.section,meta,pdf.getPageCount());
-      sourcePages[i]=source;
+      const r=rows[i];
+      const origin=sourcePositions[i]||{index:-1,top:82};
+      const source=origin.index;
       if(sheet.y+155>maxY)await flush();
-      await line((i+1)+'. '+nameOf(r.target),'title',0,source>=0?source+1:null);
+      noteTargets[i]={index:basePages+pageNum-1,top:Math.max(12,sheet.y/2-14)};
+      await line('P'+(i+1)+' · '+nameOf(r.target),'title');
       await line(r.title|| (isNote(r)?'Personal note':'Saved quotation'),'meta');
       if(isNote(r)){
         for(const para of r.body.split(/\n/))await line(para);
@@ -311,16 +302,17 @@
       else await line('Saved bookmark / reference');
       if(r.target?.quote&&isNote(r))await line('Selected text: '+String(r.target.quote),'meta');
       if(p.dates)await line(dateLine(r),'meta');
-      if(source<0)await line('No safe page anchor; included in the appendix only.','meta');
+      if(source>=0)await line('Return to original text · §'+r.target.section,'link',0,{index:source,top:origin.top});
+      else await line('No source passage link · this is an appendix-only entry.','meta');
       sheet.y+=27;
       if(i%6===0){progress('Building notes appendix ('+(i+1)+'/'+rows.length+')…',45+35*(i+1)/rows.length);await new Promise(r=>setTimeout(r,0));}
     }
     await flush();
     for(const req of pendingLinks){
       const target=req.sourceIndex-1;
-      if(target>=0&&target<pdf.getPageCount())makeLink(pdf,req.page,pdf.getPage(target),req.rect);
+      if(target>=0&&target<basePages)makeLink(pdf,req.page,pdf.getPage(target),req.rect,req.sourceTop);
     }
-    return {pages:pageNum-1,unsupported:[...fonts.missing]};
+    return {pages:pageNum-1,unsupported:[...fonts.missing],noteTargets};
   }
   async function loadPdfLib(){
     if(window.PDFLib?.PDFDocument)return;
