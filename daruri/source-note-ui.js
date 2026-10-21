@@ -6,7 +6,7 @@
   if (window.__gnSourceNoteUIInstalled) return;
   window.__gnSourceNoteUIInstalled = true;
 
-  const REVISION = '20261021-section1-qparallels1';
+  const REVISION = '20261021-qbrackets3';
   const ARROW = '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
   const NOTE_LINKS = '.source-note-links a[href], .gn-note-entry a[href], .gn-app-source-notes a[href], .fb-note a[href], .gn-unified-notes a[href]';
   // Qurʾānic wording is displayed separately from Ibn Rushd's own words.
@@ -18,13 +18,13 @@
       text: 'عَلَّمَهُ ٱلْبَيَانَ',
       label: 'al-Raḥmān 55:4 · Qurʾānic comparison, possible verbal allusion (not a quotation)',
       translation: 'He taught him expression.',
-      explanation: 'Ibn Rushd writes «معلّم البيان» (‘teacher of expression’). The overlap is suggestive, but intentional allusion is not established.'
+      explanation: 'These are the Qurʾānic words, not Ibn Rushd’s exact words. The verbal resemblance does not establish that he intended to cite the verse.'
     },
     'QUR-R001-Q050': {
       text: 'فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ',
       label: 'al-Anʿām 6:149 · Qurʾānic comparison, possible verbal allusion (not a quotation)',
       translation: 'With God rests the conclusive argument.',
-      explanation: 'The verse uses singular «الحجة البالغة»; Ibn Rushd uses plural «الحجج البالغة». This is a possible verbal echo, not an exact quotation.'
+      explanation: 'The Qurʾānic expression is singular; Ibn Rushd’s corresponding expression is plural. A deliberate allusion remains uncertain.'
     },
     'QUR-R038-Q001': {
       text: 'يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَقْرَبُوا۟ ٱلصَّلَوٰةَ وَأَنتُمْ سُكَـٰرَىٰ حَتَّىٰ تَعْلَمُوا۟ مَا تَقُولُونَ',
@@ -33,6 +33,48 @@
       explanation: 'Ibn Rushd quotes this prohibition directly. This is the relevant opening of a longer verse.'
     }
   });
+  // Web-reader-only editorial clarification: canonical data and PDF source
+  // records are unchanged. Never typeset an authorial *parallel* as Qurʾānic
+  // quotation. The Qurʾān appears only in the separate ﴿…﴾ verse figure.
+  // This removes the confusing duplicate verse in ordinary parentheses from
+  // §1 Notes and gives Ibn Rushd's actual words ordinary quotation marks.
+  const SECTION1_SOURCE_CLARITY = Object.freeze({
+    'QUR-R001-Q049': {
+      author: 'معلّم البيان',
+      lead: 'Ibn Rushd’s wording ',
+      tail: ' may echo Qurʾān, al-Raḥmān 55:4. This is a possible verbal allusion, not a quotation; deliberate allusion is uncertain.',
+      leadAr: 'عبارة ابن رشد ',
+      tailAr: ' قد تذكّر بآية الرحمن 55:4؛ وهذا تشابه لفظي محتمل لا اقتباس، ولا يُجزم بقصده.'
+    },
+    'QUR-R001-Q050': {
+      author: 'الحجج البالغة',
+      lead: 'Ibn Rushd’s plural wording ',
+      tail: ' may echo Qurʾān, al-Anʿām 6:149, which uses the singular. This is a possible verbal allusion, not a quotation or proven citation.',
+      leadAr: 'عبارة ابن رشد بالجمع ',
+      tailAr: ' قد تذكّر بآية الأنعام 6:149 التي جاء لفظها مفردًا؛ وهذا تشابه لفظي محتمل لا اقتباس.'
+    }
+  });
+  function clarifySection1Source(card, id) {
+    const info = SECTION1_SOURCE_CLARITY[id];
+    if (!info) return;
+    const prose = [...card.children].find(node => node.tagName === 'P' && !node.classList.contains('gn-note-scope'));
+    if (!prose || prose.dataset.gnAuthorCitationClarified === '1') return;
+    const arabic = /قارن القرآن|عبارة ابن رشد/.test(prose.textContent) || prose.getAttribute('lang') === 'ar';
+    const sourceLinks = prose.querySelector('.source-note-links');
+    if (sourceLinks) sourceLinks.remove(); // Move, do not clone: retain native links, listeners and accessibility.
+    const author = document.createElement('bdi');
+    author.className = 'gn-ibn-rushd-words';
+    author.setAttribute('dir', 'rtl');
+    author.setAttribute('lang', 'ar');
+    author.textContent = '“' + info.author + '”';
+    prose.replaceChildren(
+      document.createTextNode(arabic ? info.leadAr : info.lead),
+      author,
+      document.createTextNode(arabic ? info.tailAr : info.tail)
+    );
+    if (sourceLinks) prose.append(sourceLinks);
+    prose.dataset.gnAuthorCitationClarified = '1';
+  }
   let tooltip;
   let activeLink;
   // Distinguish keyboard navigation from a touchscreen tap: a tap must not
@@ -116,6 +158,7 @@
     const id = card.getAttribute('data-note-id');
     const info = VERIFIED_SOURCE_EXCERPTS[id];
     if (!info) return;
+    clarifySection1Source(card, id);
     card.dataset.gnVerseEnhanced = '1';
     const quote = document.createElement('figure');
     quote.className = 'gn-verse-source-excerpt';
