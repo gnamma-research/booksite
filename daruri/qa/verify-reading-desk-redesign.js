@@ -215,7 +215,15 @@ test('quote-only personal note prints complete saved quotation',()=>{
  const h=boot(backup([quoted]));h.event('click',{dataset:{rd:'print',id:'quotation-note'}});
  ensure(h.printed.includes('EXACT QUOTATION AT END'),'saved words missing from printed note');
  ensure(h.printed.includes('The point at the end matters'),'private annotation missing from print');
- ensure(h.preview.innerHTML.includes('data-rd-print-option="order"'),'print sort options missing');
+ ensure(h.preview.innerHTML.includes('data-rd="print-order"')&&h.preview.innerHTML.includes('data-rd="download-pdf"'),'icon print sort and direct PDF download actions missing');
+});
+test('Reading Desk tools and filters are direct accessible icon choices without Editions links',()=>{
+ const h=boot(backup([note('one','190')]));
+ const html=h.main.innerHTML;
+ ensure(html.includes('data-rd="source-filter"')&&html.includes('data-rd="sort-filter"'),'source/order toolbar choices absent');
+ ensure(html.includes('data-rd="export"')&&html.includes('data-rd="import"'),'backup tool buttons missing');
+ ensure(!html.includes('data-rd="personal-pdf"')&&!html.includes('id="gn-rd-sort"'),'redundant Editions link/dropdowns present');
+ ensure(html.includes('aria-pressed="true"'),'selected toolbar option must be exposed');
 });
 test('source-anchored notes remain distinct from editorial notes',()=>{
  const h=boot(backup([note('personal','190'),quoted]));

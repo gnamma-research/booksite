@@ -1,0 +1,64 @@
+name: Daruri Reading Desk toolbar and true PDF QA
+
+on:
+  push:
+    branches: [master, feature/reading-desk-icon-pdf-20261021]
+    paths:
+      - 'daruri/reading-desk.js'
+      - 'daruri/reading-desk.css'
+      - 'daruri/reading-desk-pdf.js'
+      - 'daruri/sw.js'
+      - 'daruri/download-bundle.js'
+      - 'daruri/index.html'
+      - 'daruri/qa/verify-reading-desk-toolbar-pdf.cjs'
+      - '.github/workflows/daruri-reading-desk-toolbar-pdf.yml'
+  pull_request:
+    paths:
+      - 'daruri/reading-desk.js'
+      - 'daruri/reading-desk.css'
+      - 'daruri/reading-desk-pdf.js'
+      - 'daruri/sw.js'
+      - 'daruri/download-bundle.js'
+      - 'daruri/index.html'
+      - 'daruri/qa/verify-reading-desk-toolbar-pdf.cjs'
+      - '.github/workflows/daruri-reading-desk-toolbar-pdf.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cross-browser-pdf:
+    name: Desktop, touch Chromium and WebKit PDF checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and release references
+        run: |
+          node --check daruri/reading-desk.js
+          node --check daruri/reading-desk-pdf.js
+          node --check daruri/sw.js
+          node --check daruri/download-bundle.js
+          node --check daruri/qa/verify-reading-desk-toolbar-pdf.cjs
+          grep -q 'reading-desk-pdf.js?v=20261021-rdiconpdf1' daruri/sw.js
+          grep -q 'reading-desk.js?v=20261021-rdiconpdf1' daruri/index.html
+          grep -q 'reading-desk.css?v=20261021-rdiconpdf1' daruri/index.html
+          grep -q 'daruri/reading-desk-pdf.js' daruri/download-bundle.js
+      - name: Install pinned browser and PDF validators
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1 pdfjs-dist@5.4.296
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Generate and inspect actual PDF files across browsers
+        run: node daruri/qa/verify-reading-desk-toolbar-pdf.cjs
+      - name: Keep screenshots and PDF samples for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-reading-desk-toolbar-pdf-proof
+          path: daruri/qa/reading-desk-pdf-artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
