@@ -47,6 +47,9 @@ with fitz.open(PDF) as personal, fitz.open(ROOT/'daruri.pdf') as published:
         for link in personal[page_num].get_links():
             if link['kind']==fitz.LINK_GOTO and link.get('page',-1)>=base:
                 found_forward+=1
+    print('DEBUG visual forward link count',found_forward,'marker pages',pages,flush=True)
+    for source_page in pages:
+        print('DEBUG page',source_page+1,'links',[(t.get('kind'),t.get('page'),str(t.get('to'))[:65],str(t.get('from'))[:65]) for t in personal[source_page].get_links()[-12:]],flush=True)
     assert found_forward>=4,'Expected P markers plus two quote links to personal endnotes'
     found_back=0
     for page_num in range(base,len(personal)):
