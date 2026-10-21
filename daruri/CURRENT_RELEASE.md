@@ -1,10 +1,16 @@
 # Darūrī — current release and coordination record
 
-Updated 20 October 2026. Read the shared [active release coordination note](DARURI_RELEASE_COORDINATION_2026-10-20.md) alongside this record, [the PDF manifest](pdf-editions-manifest.json), and the latest `master` source when integrating parallel work. The current reading-PDF release is **`daruri8-structure-20261020`**, described first below. Later sections preserve release history; their earlier page counts, layouts and snapshot identities must not be used as the current baseline.
+Updated 21 October 2026. Read the shared [active release coordination note](DARURI_RELEASE_COORDINATION_2026-10-20.md) alongside this record, [the PDF manifest](pdf-editions-manifest.json), and the latest `master` source when integrating parallel work. The current reading-PDF release is **`daruri8-structure-20261020`**, described first below. Later sections preserve release history; their earlier page counts, layouts and snapshot identities must not be used as the current baseline.
 
 Canonical repository: `gnamma-research/booksite`, branch `master`.
 
 Canonical reader: [https://gnamma-research.github.io/booksite/daruri/](https://gnamma-research.github.io/booksite/daruri/).
+
+## Ask AI removed — 21 October 2026
+
+At the owner's request, the experimental Free.ai / external-AI workspace was withdrawn. The Reader no longer loads the AI modules, shows their toolbar or contextual actions, or includes them in the offline bundle. The two Ask AI code files were removed from this source tree; the service worker was updated. Existing navigation, reading, search, dictionary, study guide, PDFs and the icon-only bookmark/personal-note tools are preserved. The pre-existing top Save/Copy/Share controls are restored.
+
+**Saved notes remain safe.** Former AI-assisted notes are ordinary personal Reading Desk records with retained metadata. They remain accessible and exportable; no saved browser data is cleared or migrated. The old Ask AI QA document is kept as an explicitly archived historical record.
 
 ## Concise homepage and edition sources — `20261020-home1`
 
