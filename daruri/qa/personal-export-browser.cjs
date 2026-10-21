@@ -193,9 +193,9 @@ const file='daruri.pdf';
     String(generated.getPage(record.pages+i).ref)));
   let hasPLink=false;
   const annotated=generated.getPage(term.page-1);
-  const annotations=annotated.node.lookup(PDFName.of('Annots'),PDFArray);
-  for(let i=0;annotations&&i<annotations.size();i++){
-    const a=generated.context.lookup(annotations.get(i));
+  const glossaryAnnotations=annotated.node.lookup(PDFName.of('Annots'),PDFArray);
+  for(let i=0;glossaryAnnotations&&i<glossaryAnnotations.size();i++){
+    const a=generated.context.lookup(glossaryAnnotations.get(i));
     if(String(a.lookup(PDFName.of('Subtype')))!=='/Link')continue;
     const d=navigationDestination(generated,a);
     if(d instanceof PDFArray&&later.has(String(d.get(0))))hasPLink=true;
