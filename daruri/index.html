@@ -4535,7 +4535,7 @@ function updateReturnBar(){
  const tag=$('#referenceBackSection');if(tag)tag.textContent=sectionRef(readerReturn.section||state.n);
  const el=$('#mainContent');if(!el)return;
  for(const old of el.querySelectorAll('.reading-return-bar'))old.remove();
- if(state.route==='reader')return;
+ if(state.route==='reader'||state.route==='home'||state.route==='about')return;
  const target=readerReturn.section||String(state.n);
  el.insertAdjacentHTML('afterbegin',`<nav class="reading-return-bar" aria-label="Return to your reading location"><button type="button" class="reading-return-action" data-return-reading>← Back to reading <span class="reading-return-section">${esc(sectionRef(target))} · ${esc(sections.get(String(target))?.title||'Darūrī text')}</span></button></nav>`);
 }
