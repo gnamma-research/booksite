@@ -174,7 +174,7 @@ def smoke_native_brackets_without_enhancer(browser, port, engine):
     ):
         note=page.locator(f'.gn-note-entry[data-note-id="{identifier}"]')
         assert note.count()==1
-        prose=note.locator('> p').first
+        prose=note.locator(':scope > p').first
         words=prose.locator('span.gn-ibn-rushd-words')
         assert words.count()==1
         assert words.inner_text()=='“'+author+'”'
