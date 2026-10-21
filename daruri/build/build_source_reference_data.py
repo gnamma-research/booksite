@@ -107,7 +107,7 @@ def build_data(source):
 
     all_notes = [note for group in (applications, dictionary_articles)
                  for values in group.values() for note in values]
-    if len(all_notes) != 32 or len({note['id'] for note in all_notes}) != 25:
+    if len(all_notes) != 32 or len({note['id'] for note in all_notes}) != 32:
         raise ValueError('Source-note IDs must be unique across all 32 additions')
     return {'schemaVersion': 1, 'applications': applications,
             'dictionaryArticles': dictionary_articles}
