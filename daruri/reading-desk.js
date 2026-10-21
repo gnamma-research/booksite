@@ -1259,7 +1259,7 @@ function create(ctx){
   const btn=event.target.closest?.('[data-rd]');if(!btn)return;
   event.preventDefault();event.stopImmediatePropagation();
   const id=btn.dataset.id,action=btn.dataset.rd,row=records.find(r=>r.id===id);
-  btn.closest('.gn-rd-manage-menu,.gn-rd-item-more')?.removeAttribute('open');
+  btn.closest('.gn-rd-manage-menu,.gn-rd-item-more')?.removeAttribute?.('open');
   if(action==='filter'){ui.category=btn.dataset.value;ui.selected='';ui.mobileDetail=false;ui.listScroll=0;if(ui.category==='bin'){ui.filterTarget='';ui.filterSegment=null;ui.sourceType='all';}render();window.scrollTo({top:0,behavior:'instant'});return;}
   if(action==='source-filter'){ui.sourceType=btn.dataset.value;ui.selected='';ui.mobileDetail=false;render();return;}
   if(action==='sort-filter'){ui.sort=btn.dataset.value;ui.selected='';ui.mobileDetail=false;render();return;}
