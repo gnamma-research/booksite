@@ -8,7 +8,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="personal-export.css?v=2">
 <script defer src="personal-pdf-enhancements.js?v=3"></script>
-<script defer src="personal-export.js?v=3"></script>
+<script defer src="personal-export.js?v=4"></script>
 </head>
 <body>
 <a class="skip" href="#pe-main">Skip to export settings</a>
@@ -66,7 +66,7 @@
  </form>
  <details class="help"><summary>Technical notes and limitations</summary>
   <p>Personal references are drawn as small P labels linked through standard PDF navigation; they do not create new popup comments or crowd the right-hand comments sidebar. Publisher references remain untouched. The appendix has readable pages plus a Unicode text layer for search and copying.</p>
-  <p>Exact-word highlights use verified coordinates and navigation links, never guessed positions; otherwise the exporter places a small P marker beside the correct section. Bookmarks and notes outside the book text are preserved in the appendix. PDF viewer support for search and highlighting varies; keep your independent Reading Desk JSON backup for editing or transferring notes.</p>
+  <p>Exact-word highlights use verified coordinates and navigation links, never guessed positions. The supplementary apparatus PDFs use independent checksum-bound section, glossary, index, Bidāya application and concordance entry maps; when no verified word geometry exists, the exporter links a small P marker to the correct section or apparatus entry. Bookmarks and notes outside the book text are preserved in the appendix. PDF viewer support for search and highlighting varies; keep your independent Reading Desk JSON backup for editing or transferring notes.</p>
   <p>If opening a downloaded HTML ZIP directly using a <code>file://</code> URL, browser security restrictions may block access to the PDF and page-map files. Use the hosted website or serve the package from a local HTTP server; notes are still processed locally.</p>
   <p>Personalized PDF generation uses a locally executed, version-pinned PDF and Unicode text libraries hosted with this website. No third-party script is executed, even if the local library cannot be loaded. The original PDF and your notes are processed on your device. The site does not send personal note content to a server. The unchanged PDF option does not need this library.</p>
  </details>

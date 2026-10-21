@@ -1,6 +1,6 @@
 /* Daruri published-edition selector.
-   No server-side or browser-generated public PDFs: every Read/Download/Print
-   action must resolve to a verified existing file, never a substitute.
+   No server-side public PDF generation: Open PDF resolves to a verified file,
+   never an unrelated substitute.
    The historical local A4 assembler remains internal for older consumers,
    but is not attached to these public PDF actions. */
 (() => {
@@ -10,6 +10,13 @@
   const TIERS = ['reading','study','reference'];
   const LABELS = {reading:'Reading',study:'Study',reference:'Reference'};
   const STORAGE_KEY = 'gnamma-published-editions-state-v1';
+  // These are the apparatus already included in the twelve published A4 PDFs
+  // and the canonical scholarly Reference PDF. Other choices need new PDFs.
+  const APPARATUS = {
+    reading:{glossary:'none',index:'none',applications:'off',concordance:'off'},
+    study:{glossary:'none',index:'basic',applications:'off',concordance:'off'},
+    reference:{glossary:'historical',index:'full',applications:'on',concordance:'on'}
+  };
   const PARTS = [
     ['intro','Introduction · §§1–9'],
     ['rulings','I · Rulings · §§10–61'],
@@ -28,9 +35,10 @@
       personalNotes:false,personalBookmarks:false,scope:'full',part:'rulings',
       lesson:'',from:1,to:258,layout:'parallel',density:'standard'}
   };
+  for(const name of TIERS)Object.assign(PRESETS[name],APPARATUS[name]);
   let state = Object.fromEntries(TIERS.map(t=>[t,{...PRESETS[t]}]));
   let tier = 'reading',category = 'layout',customOpen = false;
-  let mainRoot = null, catalog = null, canonical = null, requestId = 0;
+  let mainRoot = null, catalog = null, apparatusCatalog = null, canonical = null, requestId = 0;
   const escape = value => String(value==null?'':value).replace(/[&<>"']/g,
     c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function restore(){
@@ -80,6 +88,16 @@
   function notesLabel(notes){
     return {none:'None',selected:'Selected',full:'Full'}[notes]||notes;
   }
+  function apparatusLabel(s){
+    const items=[];
+    if(s.glossary==='technical')items.push('Technical glossary');
+    if(s.glossary==='historical')items.push('Historical dictionary');
+    if(s.index==='basic')items.push('Basic index');
+    if(s.index==='full')items.push('Full index');
+    if(s.applications==='on')items.push('Bidāya applications');
+    if(s.concordance==='on')items.push('R/BA concordance');
+    return items.length?items.join(' · '):'None';
+  }
   function resolve(){
     const s=state[tier];
     const reply={record:null,reason:'',status:'unavailable'};
@@ -87,6 +105,29 @@
     if(s.scope!=='full'){reply.reason='No published PDF for this text selection. Only the complete work is currently available here.';return reply;}
     if(s.en&&s.ar&&s.layout!=='parallel'){reply.reason='Stacked bilingual layout has not been published.';return reply;}
     if(s.density!=='standard'){reply.reason='This print-density variant has not been published.';return reply;}
+    const standardApparatus=Object.keys(APPARATUS[tier]).every(k=>s[k]===APPARATUS[tier][k]);
+    if(!standardApparatus){
+      if(!apparatusCatalog){
+        reply.reason='No verified published PDF currently matches that apparatus selection.';
+        return reply;
+      }
+      const extra=apparatusCatalog.find(row=>
+        row.tier===tier && row.language===language(s) &&
+        row.editorial_titles===(s.headings==='editorial') &&
+        row.notes===s.notes &&
+        row.glossary===s.glossary &&
+        row.index===s.index &&
+        row.applications===s.applications &&
+        row.concordance===s.concordance &&
+        row.scope==='full' && row.layout==='parallel' && row.density==='standard');
+      if(extra){
+        reply.record=extra;
+        reply.status='ready';
+        return reply;
+      }
+      reply.reason='This apparatus combination has not been published as a verified PDF.';
+      return reply;
+    }
     if(tier==='reading'){
       if(s.notes!=='none'){reply.reason='Reading PDFs without publisher notes are available. The chosen publisher-note profile is not published.';return reply;}
       reply.record=catalog.find(x=>x.tier==='reading'&&x.language===language(s)&&
@@ -131,13 +172,12 @@
           '<p class="gn-es-spec-lead" data-es-spec-lead></p>'+
           '<p class="gn-es-spec-layout" data-es-spec-layout></p>'+
           '<p class="gn-es-spec-notes" data-es-spec-notes></p>'+
+          '<p class="gn-es-spec-apparatus" data-es-spec-apparatus></p>'+
         '</section>'+
-        '<button type="button" class="gn-es-notes-shortcut" data-es-shortcut="notes">'+
-          '<span><strong>Notes</strong><small data-es-shortcut-summary></small></span><span aria-hidden="true">›</span></button>'+
         '<div class="gn-es-custom-head"><button type="button" class="gn-es-custom-trigger" data-es-custom aria-expanded="false" aria-controls="gn-es-custom">'+icon('sliders')+'<span>Customize</span><span class="gn-es-custom-arrow" aria-hidden="true">⌄</span></button></div>'+
         '<div id="gn-es-custom" class="gn-es-custom" hidden>'+
           '<div class="gn-es-category-tabs" role="tablist" aria-label="Customize PDF settings">'+
-            ['content','layout','notes'].map(c=>'<button type="button" class="gn-es-category" role="tab" data-es-category="'+c+'" aria-selected="false" aria-controls="gn-es-options" tabindex="-1">'+c.charAt(0).toUpperCase()+c.slice(1)+'</button>').join('')+
+            ['content','layout','notes','apparatus'].map(c=>'<button type="button" class="gn-es-category" role="tab" data-es-category="'+c+'" aria-selected="false" aria-controls="gn-es-options" tabindex="-1">'+c.charAt(0).toUpperCase()+c.slice(1)+'</button>').join('')+
           '</div>'+
           '<section class="gn-es-options" id="gn-es-options" role="tabpanel" tabindex="0" aria-label="Selected customization settings">'+
             '<div data-es-section="content" hidden>'+
@@ -170,19 +210,27 @@
                 '<button type="button" class="gn-es-personal-choice" data-es-personal="personalNotes" aria-pressed="false"><span>Include my notes</span><span data-es-flag="personalNotes">Off</span></button>'+
                 '<button type="button" class="gn-es-personal-choice" data-es-personal="personalBookmarks" aria-pressed="false"><span>Include my bookmarks</span><span data-es-flag="personalBookmarks">Off</span></button>'+
               '</div>'+
-              '<p class="gn-es-hint">Personal material stays on this device. The separate local PDF tool supports canonical editions, not every A4 configuration chosen here.</p>'+
+              '<p class="gn-es-hint">Your personal notes stay on this device. The five canonical PDFs have precise-word maps; the new apparatus editions have their own verified section and reference-entry maps. Unsupported word-level highlights fall back safely to linked P-numbered section notes.</p>'+
               '<a class="gn-es-personal-link" href="personal-export.html">Open local personal PDF tools <span aria-hidden="true">↗</span></a>'+
+            '</div>'+
+            '<div data-es-section="apparatus" hidden>'+
+              '<p class="gn-es-field-title">Glossary / dictionary</p>'+
+              options('Glossary and dictionary','glossary',[['none','None'],['technical','Technical glossary'],['historical','Historical dictionary']])+
+              '<p class="gn-es-field-title">Subject index</p>'+
+              options('Index','index',[['none','None'],['basic','Basic index'],['full','Full index']])+
+              '<p class="gn-es-field-title">Bidāya applications</p>'+
+              options('Legal applications','applications',[['off','Off'],['on','On']])+
+              '<p class="gn-es-field-title">Textual concordance (R/BA)</p>'+
+              options('Textual concordance','concordance',[['off','Off'],['on','On']])+
+              '<p class="gn-es-hint">Only combinations with a published, complete PDF can be opened. The current document summary retains your apparatus selections.</p>'+
             '</div>'+
           '</section>'+
         '</div>'+
         '<section class="gn-es-availability" aria-live="polite" aria-atomic="true"><strong data-es-availability-heading>Checking PDF…</strong><p data-es-availability-detail></p></section>'+
-        '<div class="gn-es-actions" aria-label="Document actions">'+
-          '<a data-es-action="read" class="gn-es-action" aria-label="Read selected published PDF" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Read</span></a>'+
-          '<a data-es-action="download" class="gn-es-action gn-es-action-primary" aria-label="Download selected published PDF" download>'+icon('download')+'<span>Download</span></a>'+
-          '<a data-es-action="print" class="gn-es-action" aria-label="Open selected published PDF for printing" target="_blank" rel="noopener noreferrer">'+icon('print')+'<span>Print</span></a>'+
+        '<div class="gn-es-actions" aria-label="Document action">'+
+          '<a data-es-action="open" class="gn-es-action gn-es-action-primary" aria-label="Open selected published PDF" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Open PDF</span></a>'+
         '</div>'+
-        '<p class="gn-es-print-hint" data-es-print-hint hidden>Print opens the published PDF in your viewer; use its Print command.</p>'+
-        '<p class="gn-es-private-hint" data-es-private-hint hidden>Your personal notes are not in this public PDF. Use the device-local personal PDF tools above.</p>'+
+        '<p class="gn-es-private-hint" data-es-private-hint hidden>Your selected PDF contains no private notes until the local personal-PDF tool appends them as linked P-numbered pages. Use Customize → Notes to create that copy on this device.</p>'+
         '<p class="gn-es-study-guide" data-es-study-guide hidden><a href="daruri-study-guide.pdf?v=daruri6-sources-20261020" target="_blank" rel="noopener noreferrer">Study Guide PDF ↗</a></p>'+
       '</section></div>';
   }
@@ -224,36 +272,37 @@
     root.querySelector('[data-es-spec-notes]').textContent=
       'Publisher notes: '+notesLabel(s.notes)+' · My notes: '+(s.personalNotes?'On':'Off')+
       ' · Bookmarks: '+(s.personalBookmarks?'On':'Off');
-    root.querySelector('[data-es-shortcut-summary]').textContent='Publisher '+notesLabel(s.notes)+
-      ' · Personal '+(isPersonal?'On':'Off');
+    root.querySelector('[data-es-spec-apparatus]').textContent='Apparatus: '+apparatusLabel(s);
     const hasCurrent=result.status==='ready';
     root.querySelector('[data-es-count]').textContent=hasCurrent?
       result.record.pages+' pages · '+formatBytes(result.record.bytes||result.record.size_bytes):'';
     root.querySelector('[data-es-availability-heading]').textContent=hasCurrent?
       'Published PDF available':result.status==='loading'?'Checking published PDFs…':'PDF not published for this selection';
     root.querySelector('[data-es-availability-detail]').textContent=hasCurrent?
-      result.record.pages+' A4 pages · '+(isPersonal?'Standard file — personal notes not included':'Ready to read, download or print'):
+      result.record.pages+' A4 pages · '+(isPersonal?'Public PDF only — private notes are not included':'Open this PDF to read, save, share or print'):
       result.reason;
     root.querySelector('.gn-es-availability').dataset.esStatus=result.status;
-    for(const action of root.querySelectorAll('[data-es-action]')){
-      const type=action.dataset.esAction;
-      action.setAttribute('aria-disabled',String(!hasCurrent));
-      if(hasCurrent){
-        const record=result.record;
-        const url=tier==='reference'?
-          'daruri.pdf?v='+encodeURIComponent((record.sha256||'published').slice(0,12)):
-          'editions/'+record.file+'?v='+encodeURIComponent((record.sha256||'published').slice(0,12));
-        action.href=url;
-        if(type==='download')action.setAttribute('download',record.file?record.file.split('/').pop():'daruri.pdf');
-      }else{
-        action.removeAttribute('href');
-        if(type==='download')action.removeAttribute('download');
-      }
-      if(type==='download')action.setAttribute('aria-label',isPersonal?
-        'Download public PDF without personal notes':'Download selected published PDF');
-    }
+    const action=root.querySelector('[data-es-action="open"]');
+    action.setAttribute('aria-disabled',String(!hasCurrent));
+    if(hasCurrent){
+      const record=result.record;
+      action.href=tier==='reference'?
+        'daruri.pdf?v='+encodeURIComponent((record.sha256||'published').slice(0,12)):
+        'editions/'+record.file+'?v='+encodeURIComponent((record.sha256||'published').slice(0,12));
+    }else action.removeAttribute('href');
     root.querySelector('[data-es-private-hint]').hidden=!isPersonal;
-    root.querySelector('[data-es-print-hint]').hidden=!hasCurrent;
+    const local=root.querySelector('.gn-es-personal-link');
+    // Preselect this exact verified apparatus PDF in the browser-local
+    // personal exporter. Unavailable variants cannot create invalid exports.
+    if(hasCurrent && result.record.map_file){
+      const path='editions/'+result.record.file;
+      local.href='personal-export.html?pdf='+encodeURIComponent(path)+
+        '&personal='+(s.personalNotes?'1':'0')+
+        '&bookmarks='+(s.personalBookmarks?'1':'0');
+    }else{
+      local.href='personal-export.html'+(isPersonal?
+        '?personal='+(s.personalNotes?'1':'0')+'&bookmarks='+(s.personalBookmarks?'1':'0'):'');
+    }
     root.querySelector('[data-es-study-guide]').hidden=tier!=='study';
     root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen));
     root.querySelector('#gn-es-custom').hidden=!customOpen;
@@ -265,7 +314,7 @@
     const panel=root.querySelector('#gn-es-options');
     panel.setAttribute('aria-label',category.charAt(0).toUpperCase()+category.slice(1)+' settings');
     for(const node of root.querySelectorAll('[data-es-section]'))node.hidden=node.dataset.esSection!==category;
-    for(const key of ['scope','headings','layout','density','notes']){
+    for(const key of ['scope','headings','layout','density','notes','glossary','index','applications','concordance']){
       for(const node of root.querySelectorAll('[data-es-'+key+']')){
         const selected=node.dataset['es'+key.charAt(0).toUpperCase()+key.slice(1)]===s[key];
         node.setAttribute('aria-pressed',String(selected));
@@ -314,7 +363,7 @@
     if(focus)mainRoot?.querySelector('[data-es-tier="'+tier+'"]')?.focus();
   }
   function selectCategory(next,focus=false){
-    if(!['content','layout','notes'].includes(next))return;
+    if(!['content','layout','notes','apparatus'].includes(next))return;
     category=next;
     customOpen=true;
     refresh();
@@ -328,9 +377,8 @@
     if(b.dataset.esCategory){selectCategory(b.dataset.esCategory,true);return;}
     if(b.dataset.esToggle){choose(b.dataset.esToggle);return;}
     if(b.dataset.esCustom!==undefined){customOpen=!customOpen;refresh();return;}
-    if(b.dataset.esShortcut){selectCategory('notes');return;}
     if(b.dataset.esPersonal){choose(b.dataset.esPersonal);return;}
-    for(const key of ['scope','headings','layout','density','notes']){
+    for(const key of ['scope','headings','layout','density','notes','glossary','index','applications','concordance']){
       const prop='es'+key.charAt(0).toUpperCase()+key.slice(1);
       if(b.dataset[prop]!==undefined){choose(key,b.dataset[prop]);return;}
     }
@@ -348,7 +396,7 @@
     if(!tab||!mainRoot?.contains(tab))return;
     if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
     const type=tab.dataset.esTier?'tier':'category';
-    const names=type==='tier'?TIERS:['content','layout','notes'];
+    const names=type==='tier'?TIERS:['content','layout','notes','apparatus'];
     const name=type==='tier'?tab.dataset.esTier:tab.dataset.esCategory;
     const i=names.indexOf(name);
     const next=event.key==='Home'?0:event.key==='End'?names.length-1:
@@ -381,12 +429,22 @@
       .then(r=>r.ok?r.json():null).catch(()=>null);
     const reference=fetch('pdf-editions-manifest.json?v=published-selector-v1',{cache:'no-store'})
       .then(r=>r.ok?r.json():null).catch(()=>null);
-    Promise.all([check,reference]).then(([a,b])=>{
+    const apparatus=fetch('editions/apparatus/manifest.json?v=apparatus-verified1',{cache:'no-store'})
+      .then(r=>r.ok?r.json():null).catch(()=>null);
+    Promise.all([check,reference,apparatus]).then(([a,b,extra])=>{
       if(thisRequest!==requestId||mainRoot!==root)return;
       catalog=a?.status==='verified'&&Array.isArray(a.files)?
         a.files.filter(x=>x&&['reading','study'].includes(x.tier)&&
           /^(reading|study)\/daruri-(reading|study)-(bilingual-unvowelled|bilingual|arabic-vowelled|english|arabic)-titles-(on|off)\.pdf$/.test(x.file||'')&&
           Number.isInteger(x.pages)&&x.pages>0&&/^[0-9a-f]{64}$/.test(x.sha256||'')):null;
+      apparatusCatalog=extra?.status==='verified'&&Array.isArray(extra.files)?
+        extra.files.filter(row=>row && ['reading','study'].includes(row.tier) &&
+          /^apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled)-(glossary|index|glossary-index|concordance|applications)\.pdf$/.test(row.file||'') &&
+          Number.isInteger(row.pages)&&row.pages>40&&row.verified_sections===258 &&
+          row.map_coverage===1 &&
+          /^[0-9a-f]{64}$/.test(row.sha256||'') &&
+          /^[0-9a-f]{64}$/.test(row.map_sha256||'') &&
+          catalog?.some(base=>base.file===row.source_base&&base.sha256===row.base_sha256)):null;
       const pdf=b?.files?.['daruri.pdf'];
       canonical=pdf&&Number.isInteger(pdf.pages)&&pdf.pages>0&&/^[0-9a-f]{64}$/.test(pdf.sha256||'')?pdf:null;
       refresh();

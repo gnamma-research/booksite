@@ -160,6 +160,48 @@ const file='daruri.pdf';
   const a4bytes=await page.pdf({format:'A4',preferCSSPageSize:true,printBackground:false});
   const a4=await PDFDocument.load(a4bytes);
   assert(a4.getPageCount()>0&&a4.getPageCount()<600,'print-to-PDF must be nonempty and paginate sensibly');
+  // A mapped apparatus PDF must link P notes to its actual glossary entries.
+  const variant='editions/apparatus/daruri-reading-bilingual-glossary.pdf';
+  await page.goto(host+'/daruri/personal-export.html?pdf='+encodeURIComponent(variant)+'&personal=1',
+                  {waitUntil:'networkidle'});
+  assert.equal(await page.locator('#pe-edition').inputValue(),variant);
+  assert.equal(await page.locator('input[name=pe-mode]:checked').inputValue(),'all');
+  await page.evaluate(()=>{
+    const key='gnamma-reading-desk-v1';
+    const desk=JSON.parse(localStorage.getItem(key));
+    desk.items.push({id:'glossary-entry-smoke',kind:'note',
+      title:'Glossary note',body:'A private note about adāʾ.',
+      target:{kind:'dictionary',term:'adāʾ'},
+      created:Date.UTC(2026,9,21),dateSource:'recorded',deleted:0});
+    localStorage.setItem(key,JSON.stringify(desk));
+    dispatchEvent(new StorageEvent('storage',{key}));
+  });
+  const editions=JSON.parse(fs.readFileSync(path.join(root,'daruri/editions/apparatus/manifest.json')));
+  const record=editions.files.find(f=>'editions/'+f.file===variant);
+  assert(record&&record.verified_sections===258);
+  const map=JSON.parse(fs.readFileSync(path.join(root,'daruri/editions/'+record.map_file)));
+  const term=map.entry_positions.terms['adāʾ'];
+  assert(term&&term.page>record.base_pages,'Glossary term must be in its supplemental pages');
+  assert.equal(map.source_sha256,record.sha256);
+  const pending=page.waitForEvent('download',{timeout:180000});
+  await page.locator('#pe-generate').click();
+  const outputFile=path.join(os.tmpdir(),'gnamma-apparatus-personal-smoke.pdf');
+  await (await pending).saveAs(outputFile);
+  const generated=await PDFDocument.load(fs.readFileSync(outputFile));
+  assert(generated.getPageCount()>record.pages,'Personal appendix must follow entire apparatus PDF');
+  const later=new Set(Array.from({length:generated.getPageCount()-record.pages},(_,i)=>
+    String(generated.getPage(record.pages+i).ref)));
+  let hasPLink=false;
+  const annotated=generated.getPage(term.page-1);
+  const glossaryAnnotations=annotated.node.lookup(PDFName.of('Annots'),PDFArray);
+  for(let i=0;glossaryAnnotations&&i<glossaryAnnotations.size();i++){
+    const a=generated.context.lookup(glossaryAnnotations.get(i));
+    if(String(a.lookup(PDFName.of('Subtype')))!=='/Link')continue;
+    const d=navigationDestination(generated,a);
+    if(d instanceof PDFArray&&later.has(String(d.get(0))))hasPLink=true;
+  }
+  assert(hasPLink,'P marker on exact verified glossary page must link to its endnote');
+  fs.unlinkSync(outputFile);
   assert.equal(errors.length,0,'no uncaught browser errors: '+errors.join('; '));
   assert.equal(thirdParty.length,0,'private PDF export must not require remote third-party scripts');
   console.log('PASS bilingual/English/Arabic P-link PDFs, no pop-up boxes, two-way appendices, selective mode and A4 printing.');

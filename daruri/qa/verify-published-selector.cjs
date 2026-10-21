@@ -13,7 +13,30 @@ const sw=read('sw.js');
 const pack=read('download-bundle.js');
 const m=JSON.parse(read('editions/manifest.json'));
 const r=JSON.parse(read('pdf-editions-manifest.json'));
-const version='20261021-public-selector1';
+
+const crypto=require('node:crypto');
+const addon=JSON.parse(read('editions/apparatus/manifest.json'));
+assert.equal(addon.status,'verified');
+assert.equal(addon.files.length,10,'Ten extra apparatus PDFs must have verified maps');
+const bases=new Map(m.files.map(x=>[x.file,x]));
+for(const x of addon.files){
+  assert.ok(bases.has(x.source_base),'Apparatus base must be a current approved PDF');
+  assert.equal(x.base_sha256,bases.get(x.source_base).sha256,'Base PDF checksum changed');
+  assert.equal(x.verified_sections,258);
+  assert.equal(x.map_coverage,1);
+  const bin=fs.readFileSync(path.join(root,'editions',x.file));
+  assert.equal(bin.length,x.bytes);
+  assert.ok(bin.subarray(0,5).equals(Buffer.from('%PDF-')));
+  assert.equal(crypto.createHash('sha256').update(bin).digest('hex'),x.sha256);
+  const mapfile=fs.readFileSync(path.join(root,'editions',x.map_file));
+  assert.equal(crypto.createHash('sha256').update(mapfile).digest('hex'),x.map_sha256);
+  const map=JSON.parse(mapfile.toString());
+  assert.equal(map.source_sha256,x.sha256);
+  assert.equal(Object.keys(map.section_pages).length,258);
+  assert.equal(map.entry_count,x.mapped_entries);
+}
+
+const version='20261021-apparatus2';
 new vm.Script(js,{filename:'editions-selector.js'});
 const assets=['editions-selector.js','editions-selector.css'];
 for(const asset of assets){
@@ -30,21 +53,36 @@ assert.equal(m.files.filter(x=>x.tier==='study').length,2);
 assert.equal(m.files.filter(x=>x.language==='bilingual-unvowelled').length,2);
 assert.ok(r.files['daruri.pdf'],'Stable canonical scholarly reference PDF');
 for(const name of ['Reading','Study','Reference'])assert.ok(js.includes("'"+name+"'"));
-for(const term of ['gn-es-spec-lead','gn-es-spec-layout','gn-es-spec-notes','gn-es-availability',
-  'data-es-action="read"','data-es-action="download"','data-es-action="print"',
+for(const term of ['gn-es-spec-lead','gn-es-spec-layout','gn-es-spec-notes','gn-es-spec-apparatus','gn-es-availability',
+  'data-es-action="open"',
   'data-es-category','data-es-section','gn-es-personal-link','aria-disabled',
   'No verified PDF exists for this exact combination','personal-export.html',
-  'English left / Arabic right','Print opens the published PDF']){
+  'English left / Arabic right','Open this PDF to read, save, share or print']){
   assert.ok(js.includes(term),'Missing publication contract: '+term);
 }
 assert.ok(js.includes('resolve()'),'Action selection must resolve to the catalog');
+assert.ok(js.includes('apparatusCatalog')&&
+  js.includes('row.verified_sections===258')&&
+  js.includes('row.map_coverage===1'),
+  'Extra apparatus PDFs must have SHA-verified source-section maps');
+assert.ok(js.includes('personal-export.html?pdf='),
+  'Private export can preselect the same exact apparatus PDF');
 assert.ok(!js.includes('pdf-lib'),'No on-click PDF generation for public actions');
 assert.ok(!js.includes('window.print()'),'Public Print opens the published PDF');
 assert.ok(!js.includes('fetch('+'"/api/'),'No server-side public PDF generation API');
 assert.ok(!js.includes("data-es-tier=\"personal\""),'Personal notes are not a fourth edition');
+assert.equal((js.match(/data-es-action="open"/g)||[]).length,2,
+  'Only a single published-PDF action is rendered and updated');
+assert.ok(!js.includes('data-es-action="read"')&&!js.includes('data-es-action="download"')&&
+  !js.includes('data-es-action="print"'), 'Redundant actions removed');
+assert.ok(!js.includes('gn-es-notes-shortcut'), 'Redundant Notes shortcut removed');
+assert.ok(js.includes("['content','layout','notes','apparatus']"), 'Four category workspace');
+assert.ok(js.includes("glossary:'historical'")&&js.includes("index:'basic'")&&
+  js.includes("concordance:'on'"), 'Reference tools and Study index reflect actual publications');
+assert.ok(css.includes('repeat(4,minmax(0,1fr))'), 'Four equally sized category buttons');
 assert.ok(css.includes('.gn-es-spec{')&&css.includes('position:sticky'),
  'Specification must remain visible while the settings workspace is used');
 assert.ok(css.includes('.gn-es [hidden]'),'Hidden categories do not stack');
 assert.ok(js.includes('s.notes!==')&&js.includes('No published PDF'),
  'Unsupported combinations must fail closed');
-console.log('PASS: static published-PDF selector, text edition tabs, status, three settings categories, personal privacy, exact SHA-indexed PDF links, offline assets.');
+console.log('PASS: single Open PDF, 4 settings categories, 10 additional SHA-verified apparatus variants, independent personal-note map links, private-data boundaries.');

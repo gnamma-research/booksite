@@ -1,0 +1,94 @@
+name: Build Daruri Apparatus PDFs and Personal Maps
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-single-pdf-apparatus-20261021]
+    paths:
+      - ".github/workflows/daruri-apparatus-variants.yml"
+      - "daruri/build/build_apparatus_variants.py"
+      - "daruri/build/enrich_apparatus_maps.py"
+      - "daruri/qa/verify_apparatus_maps.py"
+permissions:
+  contents: write
+concurrency:
+  group: daruri-apparatus-branch-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install PDF render and verification libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install --disable-pip-version-check "weasyprint>=68,<69" "PyMuPDF==1.26.7" "pypdf==5.9.0"
+      - name: Build all ten additional static PDFs and source maps
+        run: |
+          python daruri/build/build_apparatus_variants.py
+          python daruri/build/enrich_apparatus_maps.py
+      - name: Verify every PDF, exact base identity and all 258 page mappings
+        run: |
+          python daruri/qa/verify_apparatus_maps.py
+          node daruri/qa/verify-ready-editions.js
+      - name: Upload artifacts for editorial review
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-verified-apparatus-pdfs-maps
+          path: |
+            daruri/editions/apparatus/*.pdf
+            daruri/editions/apparatus/manifest.json
+            daruri/editions/apparatus/maps/*.json
+          retention-days: 30
+      - name: Publish verified apparatus artifacts without overwriting concurrent work
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          SAVED="$RUNNER_TEMP/verified-apparatus"
+          mkdir -p "$SAVED"
+          cp -a daruri/editions/apparatus/. "$SAVED/"
+
+          for attempt in 1 2 3 4 5 6; do
+            git fetch --quiet origin "$GITHUB_REF_NAME"
+            latest="$(git rev-parse FETCH_HEAD)"
+            # Never publish a stale build if the source or its map generator
+            # has changed after this workflow started.
+            if [ "$latest" != "$GITHUB_SHA" ] && ! git diff --quiet "$GITHUB_SHA" "$latest" -- \
+                daruri/build/build_apparatus_variants.py \
+                daruri/build/enrich_apparatus_maps.py \
+                daruri/editions/manifest.json \
+                daruri/editions/reading \
+                daruri/editions/study; then
+              echo "::error::The canonical PDF source/build inputs changed. Rebuild from the new head instead."
+              exit 1
+            fi
+            # Reset ONLY our ephemeral workflow checkout, not any remote branch.
+            git reset --hard "$latest"
+            mkdir -p daruri/editions/apparatus
+            cp -a "$SAVED/." daruri/editions/apparatus/
+            git add -A daruri/editions/apparatus
+            if git diff --cached --quiet; then
+              echo "All ten PDF files and verified maps are already published."
+              exit 0
+            fi
+            git commit -m "Publish ten SHA-verified apparatus PDFs and entry maps [skip ci]"
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then
+              echo "Published all ten apparatus PDFs and verified maps."
+              exit 0
+            fi
+            echo "Concurrent GitHub commit; retrying from branch head ($attempt)"
+            sleep 3
+          done
+          echo "::error::Could not publish after retries; verified PDF artifact is available."
+          exit 1

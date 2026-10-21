@@ -154,11 +154,12 @@
       ['daruri/editions.css', 'editions.css?v=20261021-editiontabs-vowels-release1'],
       ['daruri/editions-icons.css','editions-icons.css?v=20261021-editiontabs-vowels-release1'],
       ['daruri/editions-icons.js','editions-icons.js?v=20261021-editiontabs-vowels-release1'],
-      ['daruri/editions-selector.js','editions-selector.js?v=20261021-public-selector1'],
-      ['daruri/editions-selector.css','editions-selector.css?v=20261021-public-selector1'],
+      ['daruri/editions-selector.js','editions-selector.js?v=20261021-apparatus2'],
+      ['daruri/editions-selector.css','editions-selector.css?v=20261021-apparatus2'],
       ['daruri/editions/manifest.json','editions/manifest.json?v=20261021-bilingual-vowels1'],
+      ['daruri/editions/apparatus/manifest.json','editions/apparatus/manifest.json?v=20261021-a4-apparatus1'],
       ['daruri/personal-export.html', 'personal-export.html'],
-      ['daruri/personal-export.js', 'personal-export.js?v=3'],
+      ['daruri/personal-export.js', 'personal-export.js?v=4'],
       ['daruri/personal-pdf-enhancements.js','personal-pdf-enhancements.js?v=3'],
       ['daruri/personal-export.css', 'personal-export.css?v=2'],
       ['daruri/vendor/pdf-lib-1.17.1.min.js', 'vendor/pdf-lib-1.17.1.min.js'],
@@ -177,7 +178,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261021-rdquick1'],
+      ['daruri/sw.js', 'sw.js?v=20261021-apparatus-merged1'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
@@ -206,6 +207,21 @@
       ...['off','on'].map(titles=>'study/daruri-study-bilingual-titles-'+titles+'.pdf')
     ];
     for(const entry of catalog) pdfs.set('daruri/editions/'+entry,'editions/'+entry);
+    // Include the complete, verified apparatus edition collection in the
+    // offline source+PDF bundle, together with each edition's matching maps.
+    const apparatusFiles=[
+      ...['bilingual','bilingual-unvowelled'].flatMap(lang=>
+        ['glossary','index','glossary-index','concordance']
+        .map(kind=>'daruri-reading-'+lang+'-'+kind+'.pdf')),
+      'daruri-study-bilingual-glossary.pdf',
+      'daruri-study-bilingual-applications.pdf'
+    ];
+    for(const filename of apparatusFiles){
+      pdfs.set('daruri/editions/apparatus/'+filename,'editions/apparatus/'+filename);
+      for(const suffix of ['.json','.metadata.json'])
+        files.push(['daruri/editions/apparatus/maps/'+filename+suffix,
+          'editions/apparatus/maps/'+filename+suffix]);
+    }
     for (const link of document.querySelectorAll('a[href]')) {
       const raw = link.getAttribute('href') || '';
       const path = raw.split('#')[0].split('?')[0];
