@@ -2,6 +2,10 @@
 
 The user has asked the current Darūrī chats to coordinate site and PDF updates. Use the latest `master` as the shared publication source; make narrow changes and never replace the reader from an older handoff ZIP.
 
+### Active publisher claim — Quran source links and quotation typography
+
+**Publisher claim: active (this task)** from 2026-10-21T06:25:14.341Z until 2026-10-21T07:25:14.341Z UTC. Working branch `feature/quran-notes-typography-20261021`. Targets: `daruri/source-reference-data.js`, `daruri/source-note-ui.js`, `daruri/source-note-ui.css`, `daruri/build/build_source_reference_data.py`, `daruri/build/main_text.py`, `daruri/build/styles.css`, `daruri/build/README.md`, focused QA, PDF release/update workflow, and optionally `daruri/download-bundle.js`, `daruri/sw.js`, five PDFs and their manifest after verified builds. **No modification of `daruri/index.html`, Reading Desk, Visuals, or lesson assets.** Base source-note data SHA `3627dca072f0dd08995d296671311af3a4da8d45`. Other publishers please preserve these targets while claim active; this branch keeps simultaneous master updates safe. This record should be changed to released after verification.
+
 ## Shared upload coordination — 20 October 2026, 15:28 UTC
 
 The user has requested coordination because several chats are attempting to upload the same reader. **This Notes/PDF chat has finished publishing and has no upload running. Do not repeat its reader, PDF or Usul ZIP upload.**
