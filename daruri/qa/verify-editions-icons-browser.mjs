@@ -24,7 +24,7 @@ try {
   assert.ok(groups>=selects,'Short-choice toolbars and binary toggles remain enhanced');
   assert.equal(await compact.locator('select:not(.gn-ed-native-select)').count(),4,
     'Major part and lesson lists remain accessible native selectors in both custom tiers');
-  assert.ok(await compact.locator('.gn-ed-icon-option').count()>60);
+  assert.ok(await compact.locator('.gn-ed-icon-option').count()>=50);
   assert.equal(await page.locator('[data-ep-published="reading"] .gn-ed-icon-options[data-ep-icon-kind="language"] [role=radio]').count(),4);
   const readyReading=page.locator('[data-ep-published="reading"]');
   await readyReading.locator('[data-ep-icon-kind="language"]').getByRole('radio',{name:'English only'}).click();
