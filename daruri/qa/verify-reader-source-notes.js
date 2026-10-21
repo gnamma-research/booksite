@@ -172,10 +172,38 @@ function assertUniqueIDs(d, label) {
     seen.add(element.id);
   }
 }
+const PRESENTATION_ONLY_BODY = Object.freeze({
+  'QUR-R001-Q049': 'Ibn Rushd’s wording “معلّم البيان” may echo Qurʾān, al-Raḥmān 55:4. This is a possible verbal allusion, not a quotation; deliberate allusion is uncertain.',
+  'QUR-R001-Q050': 'Ibn Rushd’s plural wording “الحجج البالغة” may echo Qurʾān, al-Anʿām 6:149, which uses the singular. This is a possible verbal allusion, not a quotation or proven citation.'
+});
+const PRESENTATION_ONLY_AUTHOR = Object.freeze({
+  'QUR-R001-Q049': '“معلّم البيان”',
+  'QUR-R001-Q050': '“الحجج البالغة”'
+});
+const PRESENTATION_ONLY_QURAN = Object.freeze({
+  'QUR-R001-Q049': 'عَلَّمَهُ ٱلْبَيَانَ',
+  'QUR-R001-Q050': 'فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ'
+});
 function assertBodyAndLinks(element, note) {
   const body = element.cloneNode(true);
   body.querySelector('.source-note-links')?.remove();
-  assert.equal(body.textContent, note.text, 'Exact rendered body: ' + note.id);
+  const expectedBody = PRESENTATION_ONLY_BODY[note.id] || note.text;
+  assert.equal(body.textContent, expectedBody, 'Correct canonical body or display-only disambiguation: ' + note.id);
+  if (PRESENTATION_ONLY_AUTHOR[note.id]) {
+    const author = element.querySelector('bdi.gn-ibn-rushd-words');
+    assert.equal(author?.textContent, PRESENTATION_ONLY_AUTHOR[note.id], 'Ibn Rushd uses ordinary typographic quotes');
+    assert.equal(author?.getAttribute('dir'), 'rtl', 'Arabic authorial expression is bidi isolated');
+    assert.equal(author?.getAttribute('lang'), 'ar');
+    assert.ok(!body.textContent.includes(PRESENTATION_ONLY_QURAN[note.id]), 'Qurʾānic verse must not appear redundantly in ordinary parentheses');
+    assert.ok(!body.textContent.includes('«'), 'Do not use ambiguous guillemets for Ibn Rushd');
+    const figure = element.closest('.gn-note-entry')?.querySelector('.gn-verse-source-excerpt');
+    assert.ok(figure, 'Correctly marked Qurʾānic verse panel exists');
+    const wording = figure.querySelector('.gn-quran-words');
+    assert.equal(wording?.textContent, PRESENTATION_ONLY_QURAN[note.id], 'Exact Qurʾānic text is shown only in the verse panel');
+    const quotation = figure.querySelector('.gn-quran-quotation');
+    assert.equal(quotation?.firstElementChild?.textContent, '﴿', 'Verse has Qurʾānic opening bracket');
+    assert.equal(quotation?.lastElementChild?.textContent, '﴾', 'Verse has Qurʾānic closing bracket');
+  }
   const links = [...element.querySelectorAll('.source-note-links a')];
   assert.deepEqual(links.map(link => ({reference:link.closest('.gn-source-citation')?.querySelector('.gn-source-label')?.textContent || link.textContent, url:link.getAttribute('href')})), references(note), 'Exact labelled source links: ' + note.id);
   for (const link of element.querySelectorAll('a')) {
