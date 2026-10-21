@@ -68,7 +68,8 @@
     host.innerHTML='<div class="gn-editions">'+
     '<header><p class="gn-ed-eyebrow">AL-ḌARŪRĪ · EDITIONS</p><h1 id="gn-ed-title" tabindex="-1">Editions & Printing</h1>'+
       '<p class="gn-ed-intro">Choose a reading text, prepare a course handout, or consult the scholarly reference. The three levels below run from minimal to maximal apparatus.</p></header>'+
-    '<nav class="gn-ed-quicknav" aria-label="Edition levels"><a href="#gn-ed-reading">1 · Reading & Printing</a><a href="#gn-ed-study">2 · Study</a><a href="#gn-ed-reference">3 · Reference</a></nav>'+
+    '<p class="gn-ed-intro"><a href="personal-export.html">Create a personal PDF from an existing edition</a> — add Reading Desk comments and an appendix, or keep the original PDF entirely unchanged (default). Personal notes never leave this browser.</p>'+
+     '<nav class="gn-ed-quicknav" aria-label="Edition levels"><a href="#gn-ed-reading">1 · Reading & Printing</a><a href="#gn-ed-study">2 · Study</a><a href="#gn-ed-reference">3 · Reference</a></nav>'+
     '<section id="gn-ed-reading" class="gn-ed-tier"><div class="gn-ed-tier-head"><span class="gn-ed-number">1</span><div><h2>Reading & Printing</h2>'+
       '<p>Complete text or a short selection, with almost no apparatus. All choices use ordinary portrait A4. The default has no notes or editorial headings.</p></div></div>'+
       controls('reading')+'</section>'+
