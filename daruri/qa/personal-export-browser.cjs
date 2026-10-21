@@ -67,8 +67,65 @@ const file='daruri.pdf';
   assert(end.node.Resources(), 'printable appendix should have embedded image resources');
   assert.equal(errors.length,0,'no uncaught browser errors: '+errors.join('; '));
   assert.equal(thirdParty.length,0,'private PDF export must not require remote third-party scripts');
+  // Appendix headings link back to their original numbered source pages.
+  const appendixAnnotations=end.node.lookup(PDFName.of('Annots'),PDFArray);
+  assert(appendixAnnotations&&appendixAnnotations.size()>0,'appended notes should have return navigation');
+  let hasReturn=false;
+  for(let i=0;i<appendixAnnotations.size();i++){
+    const item=pdf.context.lookup(appendixAnnotations.get(i));
+    if(String(item.lookup(PDFName.of('Subtype')))==='/Link')hasReturn=true;
+  }
+  assert(hasReturn,'appendix should offer native PDF links back to text');
   fs.unlinkSync(output);
-  console.log('PASS Chromium real PDF generation: unchanged default, local entries, source icon, appended printable pages, Unicode');
+  // Every fixed language edition needs an independent matching map.
+  const manifest=JSON.parse(fs.readFileSync(path.join(root,'daruri/pdf-editions-manifest.json'),'utf8'));
+  for(const chosen of ['daruri-english.pdf','daruri-arabic.pdf']){
+    await page.locator('#pe-edition').selectOption(chosen);
+    const nextDownload=page.waitForEvent('download',{timeout:180000});
+    await page.locator('#pe-generate').click();
+    const dl=await nextDownload, nextFile=path.join(os.tmpdir(),chosen.replace('.pdf','-smoke.pdf'));
+    await dl.saveAs(nextFile);
+    const nextPdf=await PDFDocument.load(fs.readFileSync(nextFile));
+    assert(nextPdf.getPageCount()>manifest.files[chosen].pages,chosen+' should include appendix');
+    const md=JSON.parse(fs.readFileSync(path.join(root,'daruri/build/release/'+chosen+'.metadata.json'),'utf8'));
+    const pp=nextPdf.getPage(Number(md.section_pages['1'])-1);
+    assert(pp.node.lookup(PDFName.of('Annots'),PDFArray)?.size()>0,chosen+' should preserve source anchors');
+    fs.unlinkSync(nextFile);
+  }
+  // Selecting one note must not silently include other private notes.
+  await page.locator('input[name=pe-mode][value=choose]').check();
+  await page.locator('#pe-check-none').click();
+  await page.locator('#pe-items input[type=checkbox]').first().check();
+  assert.match(await page.locator('#pe-count').innerText(),/1 qualifying item/);
+  await page.locator('#pe-appendix').uncheck();
+  const noteOnly=page.waitForEvent('download',{timeout:180000});
+  await page.locator('#pe-generate').click();
+  const dlOnly=await noteOnly,onlyFile=path.join(os.tmpdir(),'gnamma-no-appendix-smoke.pdf');
+  await dlOnly.saveAs(onlyFile);
+  const onlyPdf=await PDFDocument.load(fs.readFileSync(onlyFile));
+  assert.equal(onlyPdf.getPageCount(),manifest.files['daruri-arabic.pdf'].pages,'annotations-only mode should not append pages');
+  fs.unlinkSync(onlyFile);
+  // Free-standing notes are unanchored: refuse to drop them when appendix is off.
+  await page.locator('#pe-check-none').click();
+  await page.locator('#pe-items input[type=checkbox]').nth(1).check();
+  await page.locator('#pe-generate').click();
+  await page.locator('#pe-alert.error').waitFor({timeout:60000});
+  assert.match(await page.locator('#pe-alert').innerText(),/Include the appendix so none of your notes are lost/);
+  // The existing A4 builder must also keep personal notes opt-in and printable.
+  await page.goto(host+'/daruri/index.html#editions',{waitUntil:'networkidle'});
+  await page.locator('.gn-editions').waitFor({timeout:30000});
+  const reading=page.locator('[data-ep-tier=reading]');
+  assert.equal(await reading.locator('select[data-ep-control=personal]').inputValue(),'none');
+  await reading.locator('[data-ep-action=prepare]').click();
+  assert(!await page.locator('#gnEpPacket').innerText().then(s=>s.includes('My Reading Desk · personal observations')));
+  await reading.locator('select[data-ep-control=personal]').selectOption('notes');
+  await reading.locator('[data-ep-action=prepare]').click();
+  const printText=await page.locator('#gnEpPacket').innerText();
+  assert(printText.includes('My Reading Desk · personal observations'),'personal appendix should appear only after opting in');
+  assert(printText.includes('A personal reflection'),'personal note title should appear in print packet');
+  assert.equal(errors.length,0,'no uncaught browser errors: '+errors.join('; '));
+  assert.equal(thirdParty.length,0,'private PDF export must not require remote third-party scripts');
+  console.log('PASS annotated bilingual/English/Arabic PDFs, real links, selective mode, fail-closed export, and clean/annotated A4 print.');
  } finally {
   if(browser)await browser.close();
   server.kill();
