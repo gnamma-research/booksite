@@ -144,8 +144,8 @@ def publish(output: Path) -> dict:
                 tasks.append((src, 'reading', language, titles))
         for titles in (False, True):
             raw_dir = tmp / ('study-on' if titles else 'study-off')
-            build_editions.build('study', raw_dir, editorial_titles=titles)
-            tasks.append((raw_dir / 'daruri-study.pdf', 'study', 'bilingual', titles))
+            study_meta = build_editions.build('study', raw_dir, editorial_titles=titles)
+            tasks.append((raw_dir / study_meta['filename'], 'study', 'bilingual', titles))
         files = []
         for src, tier, language, titles in tasks:
             name = f'daruri-{tier}-{language}-titles-{"on" if titles else "off"}.pdf'
