@@ -24,7 +24,8 @@ assert.match(js,/link\.download=name/,'client-side download without upload');
 assert.match(bundle,/personal-export\.html/,'offline bundle must include export screen');
 assert.match(bundle,/personal-pdf-enhancements\.js/,'offline package must contain P-reference navigation code');
 assert.match(sw,/personal-export\.js/,'service worker should include export app');
-assert.match(desk,/data-rd="personal-pdf"/,'Reading Desk export entry point');
+assert.doesNotMatch(desk,/data-rd="personal-pdf"/,'Reading Desk must not link to Editions personal PDF screen');
+assert.match(desk,/data-rd="download-pdf"/,'Reading Desk has its own direct PDF download');
 assert.match(editions,/href="personal-export\.html"/,'Editions export entry point');
 const doc={readyState:'loading',addEventListener(){}};
 const sandbox={window:{},document:doc,location:{href:'https://example.org/daruri/personal-export.html'},
