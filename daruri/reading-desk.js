@@ -50,8 +50,9 @@ function deskButton(action,label,icon,caption='',selected=null,extra=''){
 function deskChoice(action,value,label,icon,caption,selected){
  return deskButton(action,label,icon,caption,selected,'data-value="'+esc(value)+'"');
 }
-function rdTool(label,data,icon,selected=false,filled=false){
- return '<button type="button" class="gn-rd-tool-icon'+(selected?' is-on':'')+(filled?' has-content':'')+'" title="'+esc(label)+'" aria-label="'+esc(label)+'" '+data+'>'+RD_ICON[icon]+'</button>';
+function rdTool(label,data,icon,selected=false,filled=false,caption=''){
+ return '<button type="button" class="gn-rd-tool-icon'+(selected?' is-on':'')+(filled?' has-content':'')+'" title="'+esc(label)+'" aria-label="'+esc(label)+'" '+data+'>'+RD_ICON[icon]+
+  (caption?'<span class="gn-rd-tool-caption">'+esc(caption)+'</span>':'')+'</button>';
 }
 const category=it=>it.kind==='note'||it.kind==='footnote'?'notes':['quote','paragraph','section'].includes(it.kind)?'text':it.kind==='application'?'bidaya':it.kind==='lesson'?'lessons':it.kind;
 function create(ctx){
@@ -282,7 +283,16 @@ function create(ctx){
   if(records.length>2999){ctx.notify('Reading Desk is full; export and remove unused entries before adding more.');return null;}
   if(kind!=='note'){
    const existing=records.find(x=>x.kind===kind&&x.target&&keyOf(x.target)===keyOf(target));
-   if(existing){if(existing.deleted){const prior={deleted:existing.deleted,updated:existing.updated};existing.deleted=0;existing.updated=now;if(!persist()){Object.assign(existing,prior);return null;}ctx.notify('Restored to Reading Desk.');}else ctx.notify('Already in Reading Desk.');return existing;}
+   if(existing){
+    if(existing.deleted){
+     const prior={deleted:existing.deleted,updated:existing.updated};existing.deleted=0;existing.updated=now;
+     if(!persist()){Object.assign(existing,prior);return null;}
+     ctx.notify('Restored to Reading Desk.');
+     if(state.route==='bookmarks')render();
+     if(state.route==='reader')refreshReaderAfterBookmark(target);
+    }else ctx.notify('Already in Reading Desk.');
+    return existing;
+   }
   }
   const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target});
   if(!row)return null;
@@ -290,15 +300,15 @@ function create(ctx){
   if(!persist()){records.shift();return null;}
   ctx.notify(kind==='note'?'Personal note added to Reading Desk.':'Bookmarked in Reading Desk.');
   if(state.route==='bookmarks')render();
-  if(state.route==='reader')afterReader();
+  if(state.route==='reader')refreshReaderAfterBookmark(target);
   return row;
  }
  function toggleSection(n){
   n=String(n);const row=records.find(r=>r.kind==='section'&&!r.deleted&&r.target?.section===n);
   if(row)trash(row.id);else upsert('section',{kind:'section',section:n});
+  // Both paths have already refreshed the affected Reading Desk/reader controls.
+  // A second full reader/Desk render here previously caused visible delays.
   ctx.syncChrome();
-  if(state.route==='reader')afterReader();
-  if(state.route==='bookmarks')render();
  }
  function moveMany(ids,restore=false){
   const snapshot=new Map(records.filter(r=>ids.includes(r.id)).map(r=>[r.id,{deleted:r.deleted,updated:r.updated}]));
@@ -307,11 +317,48 @@ function create(ctx){
    if(restore&&!r.deleted||!restore&&r.deleted)continue;
    r.deleted=restore?0:now;r.updated=now;count++;
   }
-  if(count){if(!persist()){
-   for(const [id,previous] of snapshot) {const row=records.find(x=>x.id===id);if(row){row.deleted=previous.deleted;row.updated=previous.updated;}}
-   ctx.notify('Storage unavailable: change was not saved.');return 0;
-  }syncLegacy(true);if(state.route==='reader')afterReader();if(state.route==='bookmarks')render();}
+  if(count){
+   if(!persist()){
+    for(const [id,previous] of snapshot){const row=records.find(x=>x.id===id);if(row){row.deleted=previous.deleted;row.updated=previous.updated;}}
+    ctx.notify('Storage unavailable: change was not saved.');return 0;
+   }
+   // persist() already synchronized the legacy section list once. Re-saving it
+   // here and rebuilding the entire reader twice delayed bookmark deselection.
+   const touched=records.filter(r=>snapshot.has(r.id));
+   if(state.route==='reader'){
+    if(touched.length===1)refreshReaderAfterBookmark(touched[0].target);
+    else afterReader();
+   }
+   if(state.route==='bookmarks')refreshDeskAfterMove(touched,restore);
+  }
   return count;
+ }
+ function refreshDeskAfterMove(touched,restore){
+  // A single bookmark disappearing from the current list does not require
+  // reconstructing every saved card and every complete scholarly note.
+  if(restore||touched.length!==1||touched[0].kind==='note'||ui.category==='bin'||ui.sort==='source'){
+   render();return;
+  }
+  const id=touched[0].id,main=$('#mainContent');
+  const page=main?.querySelector('.gn-rd-page');
+  const card=[...(main?.querySelectorAll('.gn-rd-card-open[data-id]')||[])]
+   .find(btn=>btn.dataset.id===id)?.closest('.gn-rd-card');
+  if(!page||!card||matching().some(r=>r.id===id)){render();return;}
+  card.remove();
+  const visible=matching();
+  const count=main.querySelector('.gn-rd-count');
+  if(count)count.textContent=visible.length+' saved items';
+  const binButton=main.querySelector('.gn-rd-manage-items [data-value="bin"]');
+  if(binButton){const binCount=records.filter(r=>r.deleted).length;binButton.textContent='Open Bin'+(binCount?' ('+binCount+')':'');}
+  if(ui.selected===id){
+   ui.selected='';ui.mobileDetail=false;page.classList.remove('gn-rd-mobile-detail-open');
+   const detail=main.querySelector('#gn-rd-detail');
+   if(detail)detail.innerHTML='<div class="gn-rd-detail-placeholder"><h2>Choose an item</h2><p>Select a bookmark or personal note to see its source and context.</p></div>';
+  }else if(ui.selected){render();return;} // Related links may refer to the removed item.
+  if(!visible.length){
+   const cards=main.querySelector('#gn-rd-cards');
+   if(cards)cards.innerHTML='<p class="gn-rd-empty">No saved items here yet. Bookmark a section, a paragraph, or selected words in the reader to begin.</p>';
+  }
  }
  function trash(id){if(moveMany([id])){lastUndo=id;showUndo();}}
  function showUndo(){
@@ -375,7 +422,9 @@ function create(ctx){
   if(r.kind==='note')html+='<div class="gn-rd-personal-body"><h3>Your note</h3><p>'+escFull(r.body).replace(/\n/g,'<br>')+'</p></div>';
   return html;
  }
- function grouped(r){return r.kind==='note'?'My note':r.kind==='footnote'?'Book note':LABELS[typeOf(r)]||'Bookmark';}
+ function grouped(r){return r.kind==='note'?'My note':r.kind==='footnote'?'Book note':
+  r.kind==='section'?'Section bookmark':r.kind==='paragraph'?'Paragraph bookmark':
+  r.kind==='quote'?'Text selection':LABELS[typeOf(r)]||'Bookmark';}
  function matching(){
   const q=norm(ui.query).toLocaleLowerCase(),bin=ui.category==='bin';
   const rows=records.filter(r=>Boolean(r.deleted)===bin&&
@@ -447,7 +496,7 @@ function create(ctx){
    lastGroup=group;lastPassage=key;
    parts.push(htmlCard(r,linkedCounts));
   }
-  if(!visible.length)parts.push('<p class="gn-rd-empty">'+(bin?'Bin is empty.':ui.query?'No items match the search.':'No saved items here yet. Select words in the reader or bookmark a source entry to begin.')+'</p>');
+  if(!visible.length)parts.push('<p class="gn-rd-empty">'+(bin?'Bin is empty.':ui.query?'No items match the search.':'No saved items here yet. Bookmark a section, a paragraph, or selected words in the reader to begin.')+'</p>');
   parts.push('</div><div class="gn-rd-detail" id="gn-rd-detail">');
   if(selected&&visible.some(r=>r.id===selected.id)){
    parts.push('<button class="gn-rd-mobile-back" type="button" data-rd="detail-back">← Reading Desk</button>');
@@ -699,9 +748,12 @@ function create(ctx){
   return row;
  }
  function syncActionStates(){
+  // Make one index for the current saved collection; avoid rescanning every
+  // record for every dictionary/index/footnote control on a long reader page.
+  const keys=new Set(active().filter(r=>r.target&&r.kind===r.target.kind).map(r=>keyOf(r.target)));
   document.querySelectorAll('[data-rd="attach-bookmark"]').forEach(btn=>{
    let target;try{target=JSON.parse(decodeURIComponent(btn.dataset.target||''));}catch(_){return;}
-   const stored=active().some(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
+   const stored=keys.has(keyOf(target));
    btn.textContent=stored?'✓ Saved · View':'◇ Bookmark';btn.setAttribute('aria-pressed',String(stored));
   });
  }
@@ -743,6 +795,38 @@ function create(ctx){
    '<small>Editorial notes are controlled separately. Focus reading hides these marks.</small>';
   panel.append(section);
  }
+ function sectionToolbar(n,items){
+  const count=items.length,saved=items.some(x=>x.kind==='section'),a=' data-section="'+esc(n)+'"';
+  return rdTool(saved?'Remove section bookmark':'Bookmark section','data-rd="section-bookmark"'+a+' aria-pressed="'+saved+'"','bookmark',saved)+
+   rdTool('Add personal note to section','data-rd="section-note"'+a,'note',false,items.some(x=>x.kind==='note'&&x.target?.kind==='section'))+
+   (count?rdTool('View '+count+' saved items from this section','data-rd="view-section"'+a,'saved',false,true):'');
+ }
+ function paragraphToolbar(n,segment,relevant){
+  const bookmark=relevant.some(r=>r.kind==='paragraph'),notesCount=relevant.filter(r=>r.kind==='note').length;
+  const attrs=' data-section="'+esc(n)+'" data-segment="'+segment+'"';
+  return rdTool(bookmark?'Remove paragraph bookmark':'Bookmark paragraph',
+    'data-rd="paragraph-bookmark"'+attrs+' aria-pressed="'+bookmark+'"',
+    'bookmark',bookmark,false,bookmark?'Saved paragraph':'Save paragraph')+
+   rdTool('Add personal note to paragraph','data-rd="paragraph-note"'+attrs,'note',false,notesCount>0)+
+   (relevant.length?rdTool('View '+relevant.length+' saved items for paragraph '+(segment+1),'data-rd="view-paragraph"'+attrs,'saved',false,true):'');
+ }
+ function refreshReaderAfterBookmark(target){
+  if(state.route!=='reader')return;
+  if(!target||!['section','paragraph'].includes(target.kind)){afterReader();return;}
+  const reader=$('#reader');if(!reader)return;
+  const n=String(target.section),items=active().filter(r=>String(r.target?.section)===n);
+  reader.querySelectorAll('.gn-rd-section-tools').forEach(tools=>{
+   if(tools.querySelector('[data-rd="section-bookmark"]')?.dataset.section===n)
+    tools.innerHTML=sectionToolbar(n,items);
+  });
+  if(target.kind!=='paragraph')return;
+  const segment=Number(target.segment);
+  reader.querySelectorAll('.gn-rd-passage-tools').forEach(tools=>{
+   const btn=tools.querySelector('[data-rd="paragraph-bookmark"]');
+   if(btn?.dataset.section===n&&Number(btn.dataset.segment)===segment)
+    tools.innerHTML=paragraphToolbar(n,segment,items.filter(r=>r.target?.segment===segment));
+  });
+ }
  function afterReader(){
   if(state.route!=='reader')return;
   const reader=$('#reader');if(!reader)return;
@@ -750,29 +834,35 @@ function create(ctx){
    reader.querySelectorAll('.gn-rd-passage-tools,.gn-rd-section-tools,.gn-rd-inline-panel').forEach(x=>x.remove());
    markReader();decorate();return;
   }
+  // Group once: continuous reading can display hundreds of bilingual passages.
+  // Filtering all saved records separately for every passage caused O(passages × notes) work.
+  const bySection=new Map(),byParagraph=new Map();
+  for(const row of active()){
+   const t=row.target;if(t?.section==null)continue;
+   const n=String(t.section);
+   if(!bySection.has(n))bySection.set(n,[]);
+   bySection.get(n).push(row);
+   if(t.segment!=null){
+    const key=n+':'+t.segment;
+    if(!byParagraph.has(key))byParagraph.set(key,[]);
+    byParagraph.get(key).push(row);
+   }
+  }
   const header=reader.querySelector(':scope > .reader-heading');
   if(header){
-   const n=String(state.n),items=active().filter(x=>x.target?.section===n);
-   const count=items.length,saved=items.some(x=>x.kind==='section');
+   const n=String(state.n),items=bySection.get(n)||[];
    let tools=header.nextElementSibling;
    if(!tools?.classList.contains('gn-rd-section-tools')){tools=document.createElement('div');tools.className='gn-rd-section-tools';header.after(tools);}
    tools.setAttribute('role','toolbar');tools.setAttribute('aria-label','Section actions');
-   const a=' data-section="'+esc(n)+'"';
-   tools.innerHTML=rdTool(saved?'Remove section bookmark':'Bookmark section','data-rd="section-bookmark"'+a+' aria-pressed="'+saved+'"','bookmark',saved)+
-    rdTool('Add personal note to section','data-rd="section-note"'+a,'note',false,items.some(x=>x.kind==='note'&&x.target?.kind==='section'))+
-    (count?rdTool('View '+count+' saved items from this section','data-rd="view-section"'+a,'saved',false,true):'');
+   tools.innerHTML=sectionToolbar(n,items);
   }
   reader.querySelectorAll('.passage-grid').forEach(grid=>{
    const segment=Number(grid.dataset.segment),n=String(grid.closest('[data-reading-section]')?.dataset.readingSection||state.n);
-   const relevant=active().filter(r=>r.target?.section===n&&r.target?.segment===segment);
-   const bookmark=relevant.some(r=>r.kind==='paragraph'),notesCount=relevant.filter(r=>r.kind==='note').length;
+   const relevant=byParagraph.get(n+':'+segment)||[];
    let tools=grid.nextElementSibling;
    if(!tools?.classList.contains('gn-rd-passage-tools')){tools=document.createElement('div');tools.className='gn-rd-passage-tools';grid.after(tools);}
-   tools.setAttribute('role','toolbar');tools.setAttribute('aria-label','Passage '+(segment+1)+' actions');
-   const attrs=' data-section="'+esc(n)+'" data-segment="'+segment+'"';
-   tools.innerHTML=rdTool(bookmark?'Remove paragraph bookmark':'Bookmark paragraph','data-rd="paragraph-bookmark"'+attrs+' aria-pressed="'+bookmark+'"','bookmark',bookmark)+
-    rdTool('Add personal note to paragraph','data-rd="paragraph-note"'+attrs,'note',false,notesCount>0)+
-    (relevant.length?rdTool('View '+relevant.length+' saved items for paragraph '+(segment+1),'data-rd="view-paragraph"'+attrs,'saved',false,true):'');
+   tools.setAttribute('role','toolbar');tools.setAttribute('aria-label','Paragraph '+(segment+1)+' actions');
+   tools.innerHTML=paragraphToolbar(n,segment,relevant);
   });
   markReader();decorate();syncActionStates();ensureVisualsToggle();
  }
