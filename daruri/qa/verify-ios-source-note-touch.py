@@ -45,7 +45,7 @@ def exercise(engine, browser, width, mobile):
     page.set_content(HTML)
     page.add_style_tag(path=str(DARURI / 'source-note-ui.css'))
     page.add_script_tag(path=str(DARURI / 'source-note-ui.js'))
-    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-qbrackets3'")
+    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-qinline4'")
     links = page.locator('a.gn-source-icon-link')
     assert links.count() == 6
     verses = page.locator('.gn-verse-source-excerpt')
@@ -121,7 +121,7 @@ def smoke_full_site(browser, port, engine):
     ctx=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True)
     page=ctx.new_page()
     page.goto(f'http://127.0.0.1:{port}/daruri/', wait_until='domcontentloaded',timeout=90000)
-    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-qbrackets3'",timeout=90000)
+    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-qinline4'",timeout=90000)
     # Source notes are rendered on demand by the current reader: the old
     # fallback article id may legitimately be absent until its note card opens.
     # Add a real dynamic note to the running site and test its active observer.
@@ -144,6 +144,7 @@ def smoke_full_site(browser, port, engine):
     for identifier in ('QUR-R001-Q049','QUR-R001-Q050'):
         quote=page.locator(f'.gn-note-entry[data-note-id="{identifier}"] .gn-verse-source-excerpt')
         assert quote.count()==1, f'Missing qualified source panel {identifier}'
+        assert quote.get_attribute('data-source-render') == 'native', 'Reader should render notes without waiting for optional scripts'
         assert 'possible verbal allusion' in quote.inner_text()
         assert 'not a quotation' in quote.inner_text()
         prose=page.locator(f'.gn-note-entry[data-note-id="{identifier}"] > p').first
@@ -159,6 +160,40 @@ def smoke_full_site(browser, port, engine):
     return {'full_site_loaded':engine,'section1_two_qualified_parallels':True,
             'section1_33_40_withheld':True,'dynamic_source_link_present':True}
 
+def smoke_native_brackets_without_enhancer(browser, port, engine):
+    """Proof that the correct source brackets survive a blocked optional JS asset."""
+    ctx=browser.new_context(viewport={'width':320,'height':728},is_mobile=True,has_touch=True)
+    page=ctx.new_page()
+    # A genuinely unavailable source-note enhancement must not restore old brackets.
+    page.route('**/source-note-ui.js*',lambda route: route.abort())
+    page.goto(f'http://127.0.0.1:{port}/daruri/#section=1',wait_until='domcontentloaded',timeout=90000)
+    page.locator('#reader [data-gn-notes-open]').first.click(timeout=30000)
+    for identifier, author, verse in (
+        ('QUR-R001-Q049','معلّم البيان','عَلَّمَهُ ٱلْبَيَانَ'),
+        ('QUR-R001-Q050','الحجج البالغة','فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ'),
+    ):
+        note=page.locator(f'.gn-note-entry[data-note-id="{identifier}"]')
+        assert note.count()==1
+        prose=note.locator('> p').first
+        words=prose.locator('span.gn-ibn-rushd-words')
+        assert words.count()==1
+        assert words.inner_text()=='“'+author+'”'
+        assert prose.locator('bdi[lang="ar"][dir="rtl"]').count()==1
+        assert '﴿' not in prose.inner_text() and '﴾' not in prose.inner_text()
+        assert verse not in prose.inner_text(), 'No duplicate verse in parentheses'
+        figure=note.locator('figure.gn-verse-source-excerpt')
+        assert figure.count()==1, 'Native verse must be visible without enhancer'
+        assert figure.get_attribute('data-source-render')=='native'
+        assert figure.locator('.gn-quran-words').inner_text()==verse
+        assert figure.locator('.gn-quran-bracket').all_inner_texts()==['﴿','﴾']
+        assert 'possible allusion' in figure.inner_text()
+    assert page.locator('.gn-note-entry[data-note-id="QUR-R001-Q051"]').count()==0
+    assert not page.evaluate('document.documentElement.scrollWidth > window.innerWidth')
+    page.screenshot(path=str(REPORT / f'native-no-enhancer-{engine}-320.png'),full_page=True)
+    ctx.close()
+    return {'engine':engine,'width':320,'optional_js_blocked':True,
+            'native_quran_brackets':2,'authorial_ordinary_quotes':2,'withheld_reference_absent':True}
+
 def main():
     server=http.server.ThreadingHTTPServer(('127.0.0.1',0),QuietHTTP)
     threading.Thread(target=server.serve_forever,daemon=True).start()
@@ -171,6 +206,7 @@ def main():
                     for width,mobile in [(1280,False),(390,True),(320,True)]:
                         out.append(exercise(name,browser,width,mobile))
                     out.append(smoke_full_site(browser,server.server_port,name))
+                    out.append(smoke_native_brackets_without_enhancer(browser,server.server_port,name))
                 finally: browser.close()
     finally: server.shutdown()
     (REPORT/'results.json').write_text(json.dumps(out,indent=2,ensure_ascii=False))
