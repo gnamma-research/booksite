@@ -16,6 +16,10 @@ const file='daruri.pdf';
   await sleep(1500);
   browser=await chromium.launch({headless:true});
   const page=await browser.newPage({acceptDownloads:true});
+  const thirdParty=[];
+  page.on('request',req=>{if(/^https?:\/\//.test(req.url())&&!req.url().startsWith(host))thirdParty.push(req.url());});
+  await page.route('https://cdn.jsdelivr.net/**',route=>route.abort());
+  await page.route('https://unpkg.com/**',route=>route.abort());
   const errors=[];page.on('pageerror',error=>errors.push(error.message));
   await page.addInitScript(()=>{
    localStorage.setItem('gnamma-reading-desk-v1',JSON.stringify({
@@ -62,6 +66,7 @@ const file='daruri.pdf';
   const end=pdf.getPage(pdf.getPageCount()-1);
   assert(end.node.Resources(), 'printable appendix should have embedded image resources');
   assert.equal(errors.length,0,'no uncaught browser errors: '+errors.join('; '));
+  assert.equal(thirdParty.length,0,'private PDF export must not require remote third-party scripts');
   fs.unlinkSync(output);
   console.log('PASS Chromium real PDF generation: unchanged default, local entries, source icon, appended printable pages, Unicode');
  } finally {
