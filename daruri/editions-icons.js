@@ -96,7 +96,7 @@
       const label=link.dataset.epInfoLabel||link.getAttribute('aria-label')||'Edition';
       const kind=link.dataset.epInfoKind||
         (link.matches('.gn-ed-actions button')?'Printout':'PDF');
-      show(kind,label,link.dataset.epInfoDetail||detailFor(link));
+      show(kind,label,link.dataset.epTabDetail||detailFor(link));
       return;
     }
     const native=target.closest('select[data-ep-iconified="native"]');
