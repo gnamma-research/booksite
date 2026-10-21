@@ -41,7 +41,7 @@ def exercise(engine, browser, width, mobile):
     page.set_content(HTML)
     page.add_style_tag(path=str(DARURI / 'source-note-ui.css'))
     page.add_script_tag(path=str(DARURI / 'source-note-ui.js'))
-    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-qpolicy1'")
+    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-section1-qparallels1'")
     links = page.locator('a.gn-source-icon-link')
     assert links.count() == 4
     verses = page.locator('.gn-verse-source-excerpt')
@@ -96,7 +96,7 @@ def smoke_full_site(browser, port, engine):
     ctx=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True)
     page=ctx.new_page()
     page.goto(f'http://127.0.0.1:{port}/daruri/', wait_until='domcontentloaded',timeout=90000)
-    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-qpolicy1'",timeout=90000)
+    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-section1-qparallels1'",timeout=90000)
     # Source notes are rendered on demand by the current reader: the old
     # fallback article id may legitimately be absent until its note card opens.
     # Add a real dynamic note to the running site and test its active observer.
