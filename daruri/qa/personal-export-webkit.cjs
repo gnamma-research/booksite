@@ -4,6 +4,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path'),os=require('node:os');
 const {spawn}=require('node:child_process'),{webkit}=require('playwright');
 const {PDFDocument,PDFArray,PDFName}=require('pdf-lib');
+const navigationDestination=require('./native-phone/resolve-pdf-link.cjs');
 const root=path.resolve(__dirname,'../..');
 const host='http://127.0.0.1:8767';
 const server=spawn('python3',['-m','http.server','8767','--bind','127.0.0.1'],{cwd:root,stdio:'ignore'});
@@ -58,8 +59,7 @@ async function browserCheck(){
     const type=String(d.lookup(PDFName.of('Subtype')));
     assert.notEqual(type,'/Text','WebKit personal notes must not create comment boxes');
     if(type==='/Link'){
-      const raw=d.get(PDFName.of('Dest'));
-      const dest=raw?pdf.context.lookup(raw):null;
+      const dest=navigationDestination(pdf,d);
       if(dest instanceof PDFArray&&endnotes.has(String(dest.get(0))))linked=true;
     }
   }

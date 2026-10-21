@@ -5,6 +5,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path'),os=require('node:os');
 const {spawn}=require('node:child_process'),{chromium,webkit,firefox}=require('playwright');
 const {PDFDocument,PDFName,PDFArray}=require('pdf-lib');
+const navigationDestination=require('./native-phone/resolve-pdf-link.cjs');
 const loadBook=require('./load-book.js');
 const root=path.resolve(__dirname,'../..'),url='http://127.0.0.1:8771';
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'daruri/pdf-editions-manifest.json'),'utf8'));
@@ -50,6 +51,13 @@ async function checkedPdf(file,engine,contextSettings){
   assert(/searchable appendix/.test(status),'UI must identify searchable appendix');
   assert.equal(errors.length,0,'Browser JS errors: '+errors.join(' / '));
   assert.deepEqual(requests,[],'No user data or scripts may be sent to third-party hosts');
+  if(engine.name()==='chromium'&&!contextSettings?.viewport&&process.env.GNAMMA_QA_VISUAL_PATH){
+    // Keep a synthetic diagnostic PDF even when subsequent text/search tests
+    // fail; it never contains real Reading Desk data.
+    const target=path.resolve(root,process.env.GNAMMA_QA_VISUAL_PATH);
+    fs.mkdirSync(path.dirname(target),{recursive:true});
+    fs.copyFileSync(filename,target);
+  }
   const bytes=fs.readFileSync(filename),pdf=await PDFDocument.load(bytes),originalPages=manifest.files['daruri.pdf'].pages;
   assert(pdf.getPageCount()>originalPages,'Personal notes must append printable pages');
   // A personal note is no longer a PDF /Text or /Highlight comment.
@@ -78,10 +86,9 @@ async function checkedPdf(file,engine,contextSettings){
     for(let j=0;j<annots.size();j++){
       const obj=pdf.context.lookup(annots.get(j));
       if(String(obj.lookup(PDFName.of('Subtype')))!=='/Link')continue;
-      const raw=obj.get(PDFName.of('Dest'));
-      const dest=raw?pdf.context.lookup(raw):null;
+      const dest=navigationDestination(pdf,obj);
       if(!(dest instanceof PDFArray)||dest.size()<2||!appendixRefs.has(String(dest.get(0))))continue;
-      assert.equal(String(dest.get(1)),'/FitH','P link must arrive near a note heading');
+      assert.equal(String(dest.get(1)),'/XYZ','P link must arrive near a note heading');
       forwards++;
     }
   }
@@ -96,15 +103,27 @@ async function checkedPdf(file,engine,contextSettings){
     for(let j=0;j<arr.size();j++){
       const a=pdf.context.lookup(arr.get(j));
       if(String(a.lookup(PDFName.of('Subtype')))!=='/Link')continue;
-      const raw=a.get(PDFName.of('Dest'));
-      const dest=raw?pdf.context.lookup(raw):null;
+      const dest=navigationDestination(pdf,a);
       if(dest instanceof PDFArray&&sourceRefs.has(String(dest.get(0)))){
-        assert.equal(String(dest.get(1)),'/FitH','Back links should return near the source passage');
+        assert.equal(String(dest.get(1)),'/XYZ','Back links should return near the source passage');
         returns++;
       }
     }
   }
   assert(returns>=2,'Every source-linked personal endnote requires a visible return link');
+  const exactSectionRef=String(pdf.getPage(7).ref);
+  let exactReturnCount=0;
+  for(let i=originalPages;i<pdf.getPageCount();i++){
+    const pg=pdf.getPage(i),arr=pg.node.get(PDFName.of('Annots'))?pg.node.lookup(PDFName.of('Annots'),PDFArray):null;
+    if(!arr)continue;
+    for(let j=0;j<arr.size();j++){
+      const a=pdf.context.lookup(arr.get(j));
+      if(String(a.lookup(PDFName.of('Subtype')))!=='/Link')continue;
+      const dest=navigationDestination(pdf,a);
+      if(dest&&String(dest.get(0))===exactSectionRef)exactReturnCount++;
+    }
+  }
+  assert(exactReturnCount>=2,'Both endnotes must return to exact §1 page 8, not adjacent pages');
   // Test text extraction before checking map-dependent highlights, so failures
   // identify independently whether the appendix text or geometry is broken.
   const pdfjs=await import('pdfjs-dist/legacy/build/pdf.mjs');
@@ -139,6 +158,7 @@ async function checkedPdf(file,engine,contextSettings){
  try{
   await delay(1500);
   await checkedPdf('daruri.pdf',chromium,null);
+  if(process.env.GNAMMA_PHONE_FIXTURE_ONLY==='1')return;
   await checkedPdf('daruri.pdf',webkit,{viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2});
   await checkedPdf('daruri.pdf',chromium,{viewport:{width:393,height:852},isMobile:true,hasTouch:true,
     userAgent:'Mozilla/5.0 (Linux; Android 15; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36'});

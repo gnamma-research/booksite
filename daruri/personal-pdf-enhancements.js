@@ -63,11 +63,18 @@
       throw Error('Personal PDF link has no valid source/destination');
     const height=targetPage.getHeight();
     const top=Number.isFinite(topFromPage)?Math.min(Math.max(topFromPage,0),height):0;
-    const destination=pdf.context.obj([targetPage.ref,PDFName.of('FitH'),Math.min(height,Math.max(0,height-top+12))]);
+    // Android's native PDFium parser does not expose direct /Dest /FitH
+    // annotations as GoTo links. An explicit /A /GoTo /D /XYZ action is
+    // interoperable with PDFKit and standard PDF.js viewers.
+    const destination=pdf.context.obj([targetPage.ref,PDFName.of('XYZ'),0,
+      Math.min(height,Math.max(0,height-top+12)),window.PDFLib.PDFNull]);
+    const action=pdf.context.obj({
+      Type:PDFName.of('Action'),S:PDFName.of('GoTo'),D:destination
+    });
     const reference=pdf.context.register(pdf.context.obj({
       Type:PDFName.of('Annot'),
       Subtype:PDFName.of('Link'),
-      Rect:rect,Border:[0,0,0],Dest:destination,F:4
+      Rect:rect,Border:[0,0,0],A:action,F:4
     }));
     const key=PDFName.of('Annots');
     let existing=sourcePage.node.lookup(key,PDFArray);
@@ -167,8 +174,12 @@
       if(!res.ok)throw Error('Locally hosted Unicode font unavailable: '+name);
       return res.arrayBuffer();
     }));
+    // Keep the tested smaller font subsets and avoid Arabic contextual glyph
+    // substitutions in the invisible text layer. Visible Arabic is already
+    // rasterized; text runs below use isolated codepoints for ToUnicode.
     const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:true})));
-    return {latin,arabic,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
+    const actualTextAnchor=await pdf.embedFont(window.PDFLib.StandardFonts.Helvetica);
+    return {latin,arabic,actualTextAnchor,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
   }
   function fontRuns(text,fonts,size){
     const runs=[];let last=null;
@@ -182,6 +193,10 @@
         else{fonts.missing.add(point);font=fonts.latin;}
       }
       const ch=(font===fonts.latin&&!fonts.latinSet.has(cp))?'?':point;
+      // Keep natural fontkit Arabic shaping in the original Unicode layer:
+      // Apple PDFKit needs these continuous Arabic runs for text search.
+      // Android PDFium gets a separate exact-Unicode ActualText fallback in
+      // textOverlay, avoiding the native glyph attribution problem there.
       if(last?.font===font)last.text+=ch;
       else {last={font,text:ch};runs.push(last);}
     }
@@ -197,9 +212,37 @@
       const width=runs.reduce((a,r)=>a+r.width,0);
       let x=(line.rtl?(W-pad)/2-width:(pad+(line.indent||0))/2);
       const y=(H-line.y)/2;
+      // Retain the tested original Unicode layer for PDFKit and PDF.js.
+      // The extra Arabic fallback below is invisible, deliberately separate,
+      // and does not change the canvas-rendered scholarly typography.
       for(const run of runs){
         if(run.text){page.drawText(run.text,{x,y,size,font:run.font,opacity:0});n++;}
         x+=run.width;
+      }
+      if(/[\u0600-\u08FF]/u.test(s)){
+        const arabicChunks=s.match(/[\u0600-\u08FF][\u0600-\u08FF\s.,،؛؟!—-]*/gu)||[];
+        const arabic=arabicChunks.map(v=>v.trim()).filter(Boolean).join(' ')
+          .normalize('NFD').replace(/\p{M}/gu,'');
+        const latin=s.replace(/[\u0600-\u08FF][\u0600-\u08FF\s.,،؛؟!—-]*/gu,' ')
+          .replace(/\s+/g,' ').trim();
+        if(arabic){
+          // PDFium's RTL marked-content /ActualText algorithm reverses Arabic
+          // strings during extraction. Supplying reversed Unicode produces
+          // correct logical Arabic on Android, while the visible original text
+          // and the original Unicode layer remain unchanged for other readers.
+          // Separate baselines prevent PDFium from reversing mixed Latin runs.
+          const {PDFOperator,PDFName,PDFHexString}=window.PDFLib;
+          const rtl=Array.from(arabic).reverse().join('');
+          page.pushOperators(PDFOperator.of('BDC',[PDFName.of('Span'),
+            pdf.context.obj({ActualText:PDFHexString.fromText(rtl)})]));
+          page.drawText('A',{x:12,y:y-13,size,font:fonts.actualTextAnchor,opacity:0});
+          page.pushOperators(PDFOperator.of('EMC'));
+          n++;
+        }
+        if(latin){
+          page.drawText(latin,{x:12,y:y-28,size,font:fonts.latin,opacity:0});
+          n++;
+        }
       }
     }
     return n;
