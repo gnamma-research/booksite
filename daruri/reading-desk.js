@@ -749,7 +749,7 @@ function create(ctx){
   try{sessionStorage.setItem('gnamma-reading-desk-return-v2',JSON.stringify({at:Date.now(),ui:{
    category:ui.category,sourceType:ui.sourceType,sort:ui.sort,query:ui.query,selected:ui.selected,
    context:ui.context,expanded:ui.expanded,filterTarget:ui.filterTarget,filterSegment:ui.filterSegment,
-   mobileDetail:ui.mobileDetail,listScroll:ui.listScroll}}));}catch(_){}
+   mobileDetail:ui.mobileDetail,listScroll:ui.listScroll},readingOrigin:readingOrigin||null}));}catch(_){}
  }
  function restoreDeskReturnState(){
   if(!location.hash.startsWith('#bookmarks'))return;
@@ -766,6 +766,7 @@ function create(ctx){
    ui.expanded=!!x.expanded;ui.filterTarget=clamp(x.filterTarget,30);
    ui.filterSegment=Number.isInteger(x.filterSegment)?x.filterSegment:null;
    ui.mobileDetail=!!x.mobileDetail;ui.listScroll=Number(x.listScroll)||0;
+   if(data.readingOrigin&&Date.now()-Number(data.readingOrigin.at||0)<86400000)readingOrigin=data.readingOrigin;
    sessionStorage.removeItem('gnamma-reading-desk-return-v2');
   }catch(_){}
  }
