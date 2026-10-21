@@ -45,6 +45,7 @@
     if (!prefs || typeof prefs !== 'object' || Array.isArray(prefs)) prefs = {};
     prefs.level = levelKey(prefs.level);
     if (!prefs.done || typeof prefs.done !== 'object' || Array.isArray(prefs.done)) prefs.done = {};
+    if (!prefs.graded || typeof prefs.graded !== 'object' || Array.isArray(prefs.graded)) prefs.graded = {};
     ctx.state.studyQuery = '';
     ctx.state.studyUnit = '';
     ctx.state.studyLevel = prefs.level;
@@ -71,6 +72,65 @@
     function levelsNav(id, level) {
       return '<nav class="sg-levels" aria-label="Study level">' + Object.entries(LEVELS).map(([key, value]) => '<a href="' + lessonURL(id, key) + '" data-sg-nav' + (key === level ? ' aria-current="page"' : '') + '><strong>' + value.label + '</strong><span>' + value.title + '</span></a>').join('') + '</nav><p class="sg-level-help">' + LEVELS[level].description + '</p>';
     }
+
+    const STAGES = [
+      {title:'Recognise',level:'basic'}, {title:'Distinguish',level:'basic'},
+      {title:'Explain',level:'intermediate'}, {title:'Reconstruct',level:'intermediate'},
+      {title:'Evaluate',level:'advanced'}, {title:'Apply',level:'advanced'}
+    ];
+    function pathway(lesson, level) {
+      const items = STAGES.map((stage,i) =>
+        '<a data-sg-nav href="' + lessonURL(lesson.id,stage.level) + '"' +
+        (stage.level === level ? ' aria-current="step"' : '') +
+        ' aria-label="Stage ' + (i+1) + ', ' + stage.title + ', ' + LEVELS[stage.level].label + '"><small>' +
+        (i+1) + '</small><span>' + stage.title + '</span></a>').join('');
+      const hint = level === 'basic' ? 'Begin by identifying the claims and distinguishing close alternatives.'
+        : level === 'intermediate' ? 'Explain the distinction, then reconstruct the argument and its objections.'
+        : 'Evaluate a competing claim, then apply the analysis or verify a bounded source comparison.';
+      return '<nav class="sg-pathway" aria-label="Six-stage learning sequence"><p>Six steps through the argument</p><div>' +
+        items + '</div><p class="sg-path-hint">' + hint + '</p></nav>';
+    }
+    function validChoice(saved, q) {
+      return saved && Number.isInteger(saved.choice) && saved.choice >= 0 && saved.choice < q.options.length;
+    }
+    function answerHTML(q, choice, lesson) {
+      const refs = q.sections.map(n => '<a data-sg-source href="' + sourceURL(n,lesson.id,'basic') + '">§' + esc(n) + '</a>').join(' · ');
+      const msg = choice === q.answer ? 'That is the best answer.' :
+        'Review: the best answer is “' + esc(q.options[q.answer]) + '”.';
+      return '<p class="sg-check-verdict">' + msg + '</p><p>' + esc(q.explanation) +
+        '</p><p class="sg-meta">Check the text: ' + refs + '</p>';
+    }
+    function quickChecks(lesson) {
+      const questions = lesson.checks || [];
+      if (!questions.length) return '';
+      const right = questions.filter((q,i) => {
+        const saved = prefs.graded[lesson.id + ':' + i];
+        return validChoice(saved,q) && saved.choice === q.answer;
+      }).length;
+      const markup = questions.map((q,i) => {
+        const stage = lesson.id === 'purpose' ? (i < 5 ? 1 : 2) : (i === 0 ? 1 : 2);
+        const saved = prefs.graded[lesson.id + ':' + i], graded = validChoice(saved,q);
+        const choices = q.options.map((option,j) =>
+          '<label class="sg-choice"><input type="radio" name="sg-choice-' + esc(lesson.id) + '-' + i +
+          '" value="' + j + '"' + (graded && saved.choice === j ? ' checked' : '') +
+          '><span class="sg-choice-letter">' + String.fromCharCode(65+j) + '</span><span>' + esc(option) + '</span></label>').join('');
+        return '<fieldset class="sg-check"><legend><small>Stage ' + stage + ' · ' +
+          (stage === 1 ? 'Recognise' : 'Distinguish') + '</small>' + esc(q.question) + '</legend>' +
+          '<div class="sg-choices">' + choices + '</div><button type="button" class="sg-button" data-sg-grade="' +
+          esc(lesson.id) + '" data-sg-index="' + i + '">Check answer</button><div class="sg-check-result" role="status"' +
+          (graded ? '' : ' hidden') + '>' + (graded ? answerHTML(q,saved.choice,lesson) : '') + '</div></fieldset>';
+      }).join('');
+      return '<section class="sg-block sg-checks" id="sg-checks"><h2>3. Test recognition and distinctions</h2>' +
+        '<p>Choose an answer before checking it. Feedback gives the reason and a link to Ibn Rushd’s words. ' +
+        'These checks are for learning, not grading.</p><p id="sg-check-count" class="sg-meta" role="status">' +
+        right + ' of ' + questions.length + ' checked correctly in this browser.</p>' + markup + '</section>';
+    }
+    function stageInstructions(level) {
+      if (level === 'basic') return '<p class="sg-stage-instruction">Explain the recognition and distinction checks in your own words; do not rely only on answer choices.</p>';
+      if (level === 'intermediate') return '<p class="sg-stage-instruction">Stage 3: Explain the distinction. Stage 4: Reconstruct its argument or objection. The two tasks below test these separately.</p>';
+      return '<p class="sg-stage-instruction">Stage 5: Evaluate an alternative or interpretive claim. Stage 6: Apply the reasoning or investigate a precise comparison. Use direct sources for any historical claim.</p>';
+    }
+
     function sourceCitation(s) {
       const b = s.bouAkl;
       let text = 'Reader §' + s.id + '; al-ʿAlawī (1994), printed page' + (s.pages?.length > 1 ? 's ' : ' ') + pageList(s.pages) + '.';
@@ -92,11 +152,11 @@
       return '<section class="sg-block sg-parallels"><h2>Related cases in the Bidāya</h2><p>These are editorial comparisons. Check the cited case before treating it as evidence for the argument in al-Ḍarūrī.</p>' + items.map(a => '<details><summary>' + esc(a.id + ' · ' + a.title) + '</summary><p class="sg-meta">' + esc(a.relation || 'Editorial parallel') + ' · ' + esc(a.book) + '</p><p>' + esc(a.text) + '</p><p>' + esc(a.locator) + '</p><a href="' + esc(a.url) + '" target="_blank" rel="noopener noreferrer">Read the cited Arabic source</a> <button type="button" data-app="' + esc(a.id) + '" class="sg-link-button">Open reference details</button></details>').join('') + '</section>';
     }
     function footer() {
-      return '<footer class="sg-editorial"><p>This guide is an editorial teaching companion to Ibn Rushd’s al-Ḍarūrī. Lesson titles, examples, tasks and feedback are teaching material; the numbered passages are the source text. Advanced comparisons are research assignments, with criteria for evaluating the result.</p><p>Reader § numbers, printed edition pages and PDF page numbers identify different things. Use the edition references beside each reading when citing a passage.</p><a href="' + esc(companionPDF) + '">Download the complete three-level study guide (PDF)</a></footer>';
+      return '<footer class="sg-editorial"><p>This guide is an editorial teaching companion to Ibn Rushd’s al-Ḍarūrī. Lesson titles, examples, tasks and feedback are teaching material; the numbered passages are the source text. Advanced comparisons are research assignments, with criteria for evaluating the result.</p><p>Reader § numbers, printed edition pages and PDF page numbers identify different things. Use the edition references beside each reading when citing a passage.</p><a href="' + esc(companionPDF) + '">Download the study companion (PDF; new formative checks are on the website)</a></footer>';
     }
     function overview(level, invalid) {
       const last = prefs.last && byId.get(prefs.last.id);
-      main.innerHTML = '<div class="sg-guide"><header class="sg-hero"><p class="sg-eyebrow">AL-ḌARŪRĪ · STUDY GUIDE</p><h1 id="sg-title" tabindex="-1">One text. Three depths of study.</h1><p class="sg-intro">Explore 28 questions in eight units, from the purpose of legal theory to juristic judgement. Start with Foundations, or choose the level that fits your preparation. You can change level within any question.</p><p class="sg-meta">28 questions · 8 units · explanations, readings, tasks and feedback</p></header>' + (invalid ? '<p class="sg-notice" role="status">That lesson link was not found. Choose a question below.</p>' : '') + levelsNav('', level) + '<div class="sg-start"><a class="sg-button sg-primary" data-sg-nav href="' + lessonURL('purpose', level) + '">Start with question 1 →</a>' + (last ? '<a class="sg-button" data-sg-nav href="' + lessonURL(last.id, prefs.last.level) + '">Continue question ' + last.number + ' · ' + LEVELS[levelKey(prefs.last.level)].label + '</a>' : '') + '</div>' + progress(level) + '<div class="sg-filters"><label>Find a question<input id="sg-filter" type="search" autocomplete="off" placeholder="Try qiyās, reports, authority…" value="' + esc(ctx.state.studyQuery) + '"></label><label>Teaching unit<select id="sg-unit"><option value="">All eight units</option>' + UNITS.map((u, i) => '<option value="' + (i + 1) + '"' + (String(ctx.state.studyUnit) === String(i + 1) ? ' selected' : '') + '>' + (i + 1) + '. ' + esc(u) + '</option>').join('') + '</select></label></div><p class="sg-meta" id="sg-result-count" role="status" aria-live="polite"></p><div id="sg-question-list"></div>' + footer() + '</div>';
+      main.innerHTML = '<div class="sg-guide"><header class="sg-hero"><p class="sg-eyebrow">AL-ḌARŪRĪ · STUDY GUIDE</p><h1 id="sg-title" tabindex="-1">One text. Six steps of learning.</h1><p class="sg-intro">Work through 28 topics in eight units. At Basic, recognise and distinguish claims; at Intermediate, explain and reconstruct them; at Advanced, evaluate and apply them. Change level within any topic.</p><p class="sg-meta">28 topics · 8 units · 6 stages · 64 formative checks · source-linked feedback</p></header>' + (invalid ? '<p class="sg-notice" role="status">That lesson link was not found. Choose a question below.</p>' : '') + levelsNav('', level) + '<div class="sg-start"><a class="sg-button sg-primary" data-sg-nav href="' + lessonURL('purpose', level) + '">Start with question 1 →</a>' + (last ? '<a class="sg-button" data-sg-nav href="' + lessonURL(last.id, prefs.last.level) + '">Continue question ' + last.number + ' · ' + LEVELS[levelKey(prefs.last.level)].label + '</a>' : '') + '</div>' + progress(level) + '<div class="sg-filters"><label>Find a question<input id="sg-filter" type="search" autocomplete="off" placeholder="Try qiyās, reports, authority…" value="' + esc(ctx.state.studyQuery) + '"></label><label>Teaching unit<select id="sg-unit"><option value="">All eight units</option>' + UNITS.map((u, i) => '<option value="' + (i + 1) + '"' + (String(ctx.state.studyUnit) === String(i + 1) ? ' selected' : '') + '>' + (i + 1) + '. ' + esc(u) + '</option>').join('') + '</select></label></div><p class="sg-meta" id="sg-result-count" role="status" aria-live="polite"></p><div id="sg-question-list"></div>' + footer() + '</div>';
       updateOverview(level);
     }
     function updateOverview(level) {
@@ -115,7 +175,7 @@
       const l = lesson.levels[level], previous = lessons[lesson.number - 2], next = lessons[lesson.number];
       prefs.last = {id:lesson.id, level}; persist();
       const done = completion(lesson.id, level);
-      main.innerHTML = '<article class="sg-guide sg-lesson"><nav class="sg-breadcrumb" aria-label="Lesson location"><a href="' + lessonURL('', level) + '" data-sg-nav>← All 28 questions</a><span>Unit ' + lesson.unit + ' · ' + esc(UNITS[lesson.unit - 1]) + '</span></nav><header class="sg-hero"><p class="sg-eyebrow">QUESTION ' + String(lesson.number).padStart(2, '0') + ' OF 28</p><h1 id="sg-title" tabindex="-1">' + esc(lesson.title) + '</h1><p class="sg-intro">' + esc(lesson.summary) + '</p></header>' + levelsNav(lesson.id, level) + '<div class="sg-lesson-tools"><button type="button" class="sg-button" data-sg-copy>Copy lesson link</button><button type="button" class="sg-button" data-sg-print>Print this lesson</button></div><section class="sg-objective"><h2>What you will learn</h2><p>' + esc(l.objective) + '</p></section><details class="sg-prerequisites"><summary>Before you begin</summary>' + list(lesson.prerequisites) + '<p>' + (level === 'basic' ? 'Read the definitions below first. Use the English, Arabic or parallel reader view that helps you follow the source.' : level === 'intermediate' ? 'If a distinction is unfamiliar, open this question at Basic first. Keep track of who is speaking in the source.' : 'Use the Basic and Intermediate versions to check your conceptual preparation. Arabic terminology and precise source citation matter at this level; a comparison requires reading the proposed source.') + '</p></details>' + terms(lesson, level) + '<section class="sg-block"><h2>1. Understand the question</h2>' + paragraphs(l.explanation) + exampleHTML(l.example) + '</section><section class="sg-block"><h2>2. Read the assigned passages</h2><p>Read these in the order shown. The reader’s lesson bar takes you to the next assigned passage and back to this question.</p>' + readings(lesson, level) + '</section><section class="sg-block" id="sg-task" tabindex="-1"><h2>3. ' + (level === 'advanced' ? 'Develop an argument' : 'Try it yourself') + '</h2><p>Write a short answer before opening the feedback. Support your answer with the numbered passages.</p>' + list(l.tasks, true) + '<details class="sg-feedback"><summary>' + (level === 'advanced' ? 'Research criteria and guidance' : 'Reasoned feedback') + '</summary>' + list(l.feedback, true) + '</details></section>' + parallels(lesson) + '<section class="sg-completion"><h2>Reflect and continue</h2><p>Have you answered the tasks, checked the feedback, and identified anything you still need to revisit? Marking a question studied records your own judgement.</p><button type="button" class="sg-button sg-primary" data-sg-complete="' + esc(lesson.id) + '" data-sg-level="' + level + '" aria-pressed="' + done + '">' + (done ? 'Studied ✓ · Mark for review' : 'Mark this level studied') + '</button><p id="sg-completion-status" class="sg-meta" role="status">' + (done ? 'You have marked this question studied at ' + LEVELS[level].label + '.' : 'This question has not been marked studied at ' + LEVELS[level].label + '.') + '</p></section><nav class="sg-sequence" aria-label="Previous and next question">' + (previous ? '<a class="sg-button" data-sg-nav href="' + lessonURL(previous.id, level) + '"><small>← Previous question</small>' + esc(previous.title) + '</a>' : '<a class="sg-button" data-sg-nav href="' + lessonURL('', level) + '">All questions</a>') + (next ? '<a class="sg-button" data-sg-nav href="' + lessonURL(next.id, level) + '"><small>Next question →</small>' + esc(next.title) + '</a>' : '<a class="sg-button" data-sg-nav href="' + lessonURL('', level) + '">Review your progress →</a>') + '</nav>' + footer() + '</article>';
+      main.innerHTML = '<article class="sg-guide sg-lesson"><nav class="sg-breadcrumb" aria-label="Lesson location"><a href="' + lessonURL('', level) + '" data-sg-nav>← All 28 questions</a><span>Unit ' + lesson.unit + ' · ' + esc(UNITS[lesson.unit - 1]) + '</span></nav><header class="sg-hero"><p class="sg-eyebrow">QUESTION ' + String(lesson.number).padStart(2, '0') + ' OF 28</p><h1 id="sg-title" tabindex="-1">' + esc(lesson.title) + '</h1><p class="sg-intro">' + esc(lesson.summary) + '</p></header>' + levelsNav(lesson.id, level) + pathway(lesson, level) + '<div class="sg-lesson-tools"><button type="button" class="sg-button" data-sg-copy>Copy lesson link</button><button type="button" class="sg-button" data-sg-print>Print this lesson</button></div><section class="sg-objective"><h2>What you will learn</h2><p>' + esc(l.objective) + '</p></section><details class="sg-prerequisites"><summary>Before you begin</summary>' + list(lesson.prerequisites) + '<p>' + (level === 'basic' ? 'Read the definitions below first. Use the English, Arabic or parallel reader view that helps you follow the source.' : level === 'intermediate' ? 'If a distinction is unfamiliar, open this question at Basic first. Keep track of who is speaking in the source.' : 'Use the Basic and Intermediate versions to check your conceptual preparation. Arabic terminology and precise source citation matter at this level; a comparison requires reading the proposed source.') + '</p></details>' + terms(lesson, level) + '<section class="sg-block"><h2>1. Understand the question</h2>' + paragraphs(l.explanation) + exampleHTML(l.example) + '</section><section class="sg-block"><h2>2. Read the assigned passages</h2><p>Read these in the order shown. The reader’s lesson bar takes you to the next assigned passage and back to this question.</p>' + readings(lesson, level) + '</section>' + (level === 'basic' ? quickChecks(lesson) : '') + '<section class="sg-block" id="sg-task" tabindex="-1"><h2>' + (level === 'basic' ? '4. Explain the distinctions' : level === 'intermediate' ? '3. Explain and reconstruct' : '3. Evaluate and apply') + '</h2>' + stageInstructions(level) + '<p>Write a short answer before opening the feedback. Support your answer with the numbered passages.</p>' + list(l.tasks, true) + '<details class="sg-feedback"><summary>' + (level === 'advanced' ? 'Research criteria and guidance' : 'Reasoned feedback') + '</summary>' + list(l.feedback, true) + '</details></section>' + parallels(lesson) + '<section class="sg-completion"><h2>Reflect and continue</h2><p>Have you answered the tasks, checked the feedback, and identified anything you still need to revisit? Marking a question studied records your own judgement.</p><button type="button" class="sg-button sg-primary" data-sg-complete="' + esc(lesson.id) + '" data-sg-level="' + level + '" aria-pressed="' + done + '">' + (done ? 'Studied ✓ · Mark for review' : 'Mark this level studied') + '</button><p id="sg-completion-status" class="sg-meta" role="status">' + (done ? 'You have marked this question studied at ' + LEVELS[level].label + '.' : 'This question has not been marked studied at ' + LEVELS[level].label + '.') + '</p></section><nav class="sg-sequence" aria-label="Previous and next question">' + (previous ? '<a class="sg-button" data-sg-nav href="' + lessonURL(previous.id, level) + '"><small>← Previous question</small>' + esc(previous.title) + '</a>' : '<a class="sg-button" data-sg-nav href="' + lessonURL('', level) + '">All questions</a>') + (next ? '<a class="sg-button" data-sg-nav href="' + lessonURL(next.id, level) + '"><small>Next question →</small>' + esc(next.title) + '</a>' : '<a class="sg-button" data-sg-nav href="' + lessonURL('', level) + '">Review your progress →</a>') + '</nav>' + footer() + '</article>';
     }
     function render() {
       const view = route() || {level:prefs.level};
@@ -174,7 +234,7 @@
       if (location.hash === href) ctx.syncRoute(); else location.hash = href;
     }
     document.addEventListener('click', event => {
-      const el = event.target.closest('[data-sg-note],[data-sg-nav],[data-sg-source],[data-sg-back],[data-sg-open],[data-sg-complete],[data-sg-copy],[data-sg-print],[data-sg-clear]');
+      const el = event.target.closest('[data-sg-note],[data-sg-nav],[data-sg-source],[data-sg-back],[data-sg-open],[data-sg-complete],[data-sg-copy],[data-sg-print],[data-sg-clear],[data-sg-grade]');
       if (!el || event.defaultPrevented || event.button > 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
       if (el.hasAttribute('data-sg-note')) {
@@ -189,6 +249,30 @@
       else if (el.hasAttribute('data-sg-back')) {
         taskAfterReturn = el.hasAttribute('data-sg-task');
         go(el.getAttribute('href'), 'back');
+      } else if (el.hasAttribute('data-sg-grade')) {
+        const lesson = byId.get(el.dataset.sgGrade);
+        const i = Number(el.dataset.sgIndex);
+        const q = lesson?.checks?.[i], fieldset = el.closest('.sg-check');
+        if (!q || !fieldset) return;
+        const result = fieldset.querySelector('.sg-check-result');
+        const selected = fieldset.querySelector('input[type="radio"]:checked');
+        if (!selected) {
+          result.hidden = false;
+          result.textContent = 'Select an answer, then check it.';
+          return;
+        }
+        const choice = Number(selected.value);
+        prefs.graded[lesson.id + ':' + i] = {choice};
+        persist();
+        result.hidden = false;
+        result.innerHTML = answerHTML(q,choice,lesson);
+        const count = lesson.checks.filter((question,j) => {
+          const saved = prefs.graded[lesson.id + ':' + j];
+          return validChoice(saved,question) && saved.choice === question.answer;
+        }).length;
+        const counter = document.getElementById('sg-check-count');
+        if (counter) counter.textContent = count + ' of ' + lesson.checks.length + ' checked correctly in this browser.';
+        if (!storageOK) ctx.notify('Answers are kept for this visit; browser storage is unavailable.');
       } else if (el.hasAttribute('data-sg-complete')) {
         const id = el.dataset.sgComplete, level = levelKey(el.dataset.sgLevel);
         prefs.done[id + ':' + level] = !completion(id, level); persist();
