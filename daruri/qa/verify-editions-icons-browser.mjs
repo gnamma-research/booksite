@@ -21,7 +21,7 @@ try {
   const selects=await compact.locator('select').count();
   const groups=await compact.locator('.gn-ed-icon-options').count();
   assert.ok(selects>=14,'Existing editor selectors retained');
-  assert.ok(groups>=selects,'Short-choice toolbars and binary toggles remain enhanced');
+  assert.ok(groups>=selects-1,'Short-choice toolbars are enhanced; one PDF language selector is manually controlled');
   const visiblePanels=()=>page.locator('.gn-editions [role="tabpanel"]').evaluateAll(
     panels=>panels.filter(p=>!p.hidden && getComputedStyle(p).display!=='none').map(p=>p.id));
   assert.equal(await page.getByRole('tablist',{name:'Edition level'}).getByRole('tab').count(),3,
@@ -50,27 +50,54 @@ try {
   assert.equal(symbols.unnamed,0,'All non-radio icon controls have accessible names');
   assert.equal(symbols.visibleInstructions,0,'No explanatory paragraphs appear');
   assert.ok(symbols.markers>=10,'Every custom control has a category icon');
-  assert.equal(await page.locator('[data-ep-published="reading"] .gn-ed-icon-options[data-ep-icon-kind="language"] [role=radio]').count(),4);
   const readyReading=page.locator('[data-ep-published="reading"]');
-  assert.ok(await readyReading.locator('.gn-ed-field-name').first().evaluate(
-    element=>element.getBoundingClientRect().width<=1), 'Ready PDF language label is visually hidden');
-  assert.match(await page.locator('[data-ep-info-detail]').textContent(),/76 A4 pages/,'Initial selection described');
-  await readyReading.locator('[data-ep-icon-kind="language"]').getByRole('radio',{name:'English only'}).click();
-  assert.equal(await page.locator('.gn-ed-status [data-ep-info-kind]').textContent(),'Language');
+  const en=readyReading.getByRole('button',{name:'Include English text'});
+  const ar=readyReading.getByRole('button',{name:'Include Arabic text'});
+  const marks=readyReading.getByRole('button',{name:'Arabic vowel marks'});
+  const currentPDF=()=>readyReading.locator('[data-ep-ready-download]').getAttribute('href');
+  assert.equal(await en.getAttribute('aria-pressed'),'true');
+  assert.equal(await ar.getAttribute('aria-pressed'),'true');
+  assert.equal(await marks.getAttribute('aria-pressed'),'true');
+  assert.equal(await marks.isVisible(),true,'Vowel control is visible when both languages are on');
+  assert.match(await currentPDF(),/reading-bilingual-titles-off\.pdf$/);
+  assert.match(await page.locator('[data-ep-info-detail]').textContent(),/76 A4 pages/);
+  await marks.click();
+  assert.equal(await marks.getAttribute('aria-pressed'),'false');
+  assert.match(await currentPDF(),/reading-bilingual-unvowelled-titles-off\.pdf$/);
+  assert.equal(await page.locator('[data-ep-info-value]').textContent(),'Unvowelled');
+  await en.click();
+  assert.equal(await en.getAttribute('aria-pressed'),'false');
+  assert.equal(await ar.isDisabled(),true,'Last active language cannot be turned off');
+  assert.match(await currentPDF(),/reading-arabic-titles-off\.pdf$/);
+  await marks.click();
+  assert.match(await currentPDF(),/reading-arabic-vowelled-titles-off\.pdf$/);
+  await en.click();
+  assert.match(await currentPDF(),/reading-bilingual-titles-off\.pdf$/);
+  await ar.click();
+  assert.equal(await marks.isVisible(),false,'Vowel switch hides when Arabic is turned off');
+  assert.match(await currentPDF(),/reading-english-titles-off\.pdf$/);
   assert.equal(await page.locator('[data-ep-info-value]').textContent(),'English only');
   assert.match(await page.locator('[data-ep-info-detail]').textContent(),/43 A4 pages/);
-  assert.match(await readyReading.locator('[data-ep-ready-download]').getAttribute('href'),/reading-english-titles-off\.pdf$/);
+  await en.focus();
+  await page.keyboard.press('Space');
+  assert.equal(await en.getAttribute('aria-pressed'),'true',
+    'At least one language stays selected under keyboard Space');
+  await ar.click();
+  assert.equal(await marks.isVisible(),true,'Vowel switch comes back with Arabic');
+  assert.equal(await marks.getAttribute('aria-pressed'),'true','Vowel preference survives English-only selection');
+  await marks.click();
+  assert.match(await currentPDF(),/reading-bilingual-unvowelled-titles-off\.pdf$/);
   await readyReading.locator('[data-ep-icon-kind="editorial"]').getByRole('radio',{name:/On/}).click();
-  assert.match(await readyReading.locator('[data-ep-ready-download]').getAttribute('href'),/reading-english-titles-on\.pdf$/);
-  await readyReading.locator('[data-ep-icon-kind="language"]').getByRole('radio',{name:'Arabic fully vowelled'}).click();
-  assert.match(await readyReading.locator('[data-ep-ready-download]').getAttribute('href'),/reading-arabic-vowelled-titles-on\.pdf$/);
-  // Radio arrows should select the next visible option.
-  const language=readyReading.locator('[data-ep-icon-kind="language"]');
-  const selected=language.getByRole('radio',{checked:true});
-  await selected.focus();
-  await page.keyboard.press('ArrowRight');
-  assert.equal(await language.getByRole('radio',{checked:true}).count(),1,'Keyboard arrow selects a single option');
-  await readyReading.locator('[data-ep-icon-kind="language"]').getByRole('radio',{name:'Arabic fully vowelled'}).click();
+  assert.match(await currentPDF(),/reading-bilingual-unvowelled-titles-on\.pdf$/);
+  assert.equal(await page.locator('.gn-ed-status [data-ep-info-kind]').textContent(),'Editorial titles');
+  assert.equal(await readyReading.locator('[data-ep-ready-lang]').inputValue(),'bilingual-unvowelled');
+  assert.equal(await readyReading.locator('[data-ep-ready-titles]').inputValue(),'on');
+  await marks.focus();
+  await page.keyboard.press('Space');
+  assert.match(await currentPDF(),/reading-bilingual-titles-on\.pdf$/,
+    'Vowel mark toggle supports keyboard Space');
+  await marks.click();
+  assert.match(await currentPDF(),/reading-bilingual-unvowelled-titles-on\.pdf$/);
   await studyTab.focus();
   assert.equal(await page.locator('[data-ep-info-value]').textContent(),'Study');
   assert.deepEqual(await visiblePanels(),['gn-ed-reading'],'Tab focus alone does not change edition');
@@ -93,8 +120,8 @@ try {
   await page.keyboard.press('Home');
   assert.deepEqual(await visiblePanels(),['gn-ed-reading'],'Home selects Reading');
   assert.equal(await readingTab.getAttribute('aria-selected'),'true');
-  assert.equal(await readyReading.locator('[data-ep-ready-lang]').inputValue(),'arabic-vowelled',
-    'Previously selected Reading language is retained');
+  assert.equal(await readyReading.locator('[data-ep-ready-lang]').inputValue(),'bilingual-unvowelled',
+    'Previously selected vowelled/unvowelled bilingual choice is retained');
   assert.equal(await readyReading.locator('[data-ep-ready-titles]').inputValue(),'on');
   await page.keyboard.press('End');
   assert.deepEqual(await visiblePanels(),['gn-ed-reference'],'End selects Reference');
@@ -104,7 +131,7 @@ try {
   await readingTab.click();
   assert.deepEqual(await visiblePanels(),['gn-ed-reading']);
   assert.equal(new URL(page.url()).hash,'#editions','Tab changes stay inside the reader route');
-  await readyReading.locator('[data-ep-icon-kind="language"]').getByRole('radio',{checked:true}).focus();
+  await readyReading.getByRole('button',{name:'Arabic vowel marks'}).focus();
   const readingDrawer=page.locator('.gn-ed-reading-custom');
   assert.equal(await readingDrawer.locator('.gn-ed-paper').isVisible(),false,'Reading excerpt is hidden until custom print opens');
   assert.equal(await page.locator('#gn-ed-study .gn-ed-study-custom .gn-ed-paper').isVisible(),false,'Study excerpt is initially hidden');
@@ -132,7 +159,13 @@ try {
   assert.equal(await sample.locator('.gn-ed-paper').isVisible(),true,'Preview can be opened');
   await sample.locator('summary').click();
   assert.equal(await sample.locator('.gn-ed-paper').isVisible(),false,'Preview can be closed');
+  assert.equal(await custom.locator('[data-ep-control="language"]').inputValue(),'bilingual',
+    'Custom printing inherits both Reading languages');
+  assert.equal(await custom.locator('[data-ep-control="vowels"]').isChecked(),false,
+    'Custom printing inherits the unvowelled choice');
   await custom.locator('[data-ep-icon-kind="language"]').getByRole('radio',{name:'English only'}).click();
+  assert.equal(await readyReading.locator('[data-ep-ready-lang]').inputValue(),'english',
+    'Changing advanced language synchronizes the published Reading controls');
   assert.equal(await custom.locator('[data-ep-icon-kind="columns"] [role=radio]:not([hidden])').count(),2,
     'Side-by-side bilingual layouts are hidden for English-only');
   await custom.locator('[data-ep-icon-kind="scope"]').getByRole('radio',{name:'One major part'}).click();
@@ -167,7 +200,7 @@ try {
   const narrow=await page.evaluate(()=>Math.round(document.documentElement.scrollWidth-window.innerWidth));
   assert.ok(narrow<=2,'No overflow at 320px viewport: '+narrow);
   assert.ok(!errors.some(s=>/editions-icons|GnammaEditions/.test(s)),'No Editions JS errors: '+errors.join('; '));
-  console.log('PASS: three accessible edition tabs, single visible panel, roving-keyboard focus, preserved per-tier settings, source/PDF variants, custom print, and 320/390px mobile layouts '+JSON.stringify(geometry));
+  console.log('PASS: EN/AR independent switches, conditional vowels, both bilingual print variants, disabled last language, keyboard state, three tabs, advanced sync and 320/390px mobile layouts '+JSON.stringify(geometry));
 } finally {
   await context.close();
   await browser.close();
