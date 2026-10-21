@@ -6,15 +6,26 @@
   if (window.__gnSourceNoteUIInstalled) return;
   window.__gnSourceNoteUIInstalled = true;
 
-  const REVISION = '20261021-qpolicy1';
+  const REVISION = '20261021-section1-qparallels1';
   const ARROW = '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
   const NOTE_LINKS = '.source-note-links a[href], .gn-note-entry a[href], .gn-app-source-notes a[href], .fb-note a[href], .gn-unified-notes a[href]';
-  // Excerpts transcribed from Quran.com Uthmani text, solely to distinguish the
-  // verse wording from the author's allusive expressions in these three notes.
-  // Do NOT add reading variants, paraphrases, or unverified quotations here.
-  // Only quotations supported by actual wording and authorial context.
-  // The withdrawn lexical/thematic parallels are not shown as Qur'an notes.
+  // Qurʾānic wording is displayed separately from Ibn Rushd's own words.
+  // Two proposed verbal echoes in §1 are explicitly marked POSSIBLE allusions,
+  // NOT authorial quotations. §38 is an actual quotation. Never infer intent
+  // merely from brief word matches; three other weak candidates stay withheld.
   const VERIFIED_SOURCE_EXCERPTS = Object.freeze({
+    'QUR-R001-Q049': {
+      text: 'عَلَّمَهُ ٱلْبَيَانَ',
+      label: 'al-Raḥmān 55:4 · Qurʾānic comparison, possible verbal allusion (not a quotation)',
+      translation: 'He taught him expression.',
+      explanation: 'Ibn Rushd writes «معلّم البيان» (‘teacher of expression’). The overlap is suggestive, but intentional allusion is not established.'
+    },
+    'QUR-R001-Q050': {
+      text: 'فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ',
+      label: 'al-Anʿām 6:149 · Qurʾānic comparison, possible verbal allusion (not a quotation)',
+      translation: 'With God rests the conclusive argument.',
+      explanation: 'The verse uses singular «الحجة البالغة»; Ibn Rushd uses plural «الحجج البالغة». This is a possible verbal echo, not an exact quotation.'
+    },
     'QUR-R038-Q001': {
       text: 'يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَقْرَبُوا۟ ٱلصَّلَوٰةَ وَأَنتُمْ سُكَـٰرَىٰ حَتَّىٰ تَعْلَمُوا۟ مَا تَقُولُونَ',
       label: 'al-Nisāʾ 4:43 · verified quotation (verse excerpt)',
