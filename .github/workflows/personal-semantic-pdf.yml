@@ -1,0 +1,41 @@
+name: Semantic PDF export and cross-browser QA
+on:
+  push:
+    branches: [feature/personal-pdf-search-precise-highlights-20261021]
+  pull_request:
+    paths:
+      - 'daruri/personal-export*'
+      - 'daruri/personal-pdf-enhancements.js'
+      - 'daruri/personal-anchor-maps/**'
+      - 'daruri/build/build_personal_anchor_maps.py'
+      - 'daruri/qa/verify-semantic-personal-pdf.cjs'
+      - 'daruri/qa/verify-personal-pdf-upgrade.cjs'
+      - '.github/workflows/personal-semantic-pdf.yml'
+  workflow_dispatch:
+jobs:
+  semantic-and-compatibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check scripts and pure matchers
+        run: |
+          node --check daruri/personal-export.js
+          node --check daruri/personal-pdf-enhancements.js
+          node daruri/qa/verify-personal-pdf-upgrade.cjs
+          node daruri/qa/verify-personal-export.js
+      - name: Install PDF inspection and real browser test dependencies
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1 pdfjs-dist@5.4.296
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit firefox
+      - name: Test searchable PDF and annotations in Chromium/WebKit/Android simulation
+        run: node daruri/qa/verify-semantic-personal-pdf.cjs
+      - name: Preserve original client browser regressions
+        run: |
+          node daruri/qa/personal-export-browser.cjs
+          node daruri/qa/personal-export-webkit.cjs
