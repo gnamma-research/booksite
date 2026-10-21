@@ -30,7 +30,7 @@ function bookmark(){
  const data=read(),old=data.items.find(r=>r.kind==='dictionary'&&r.target?.term===name),now=Date.now();
  if(old){if(old.deleted){old.deleted=0;old.updated=now;status('Restored to Reading Desk.');}else{status('Already in Reading Desk.');} }
  else{
-  data.items.unshift({id:typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID():'entry-'+now+'-'+Math.random().toString(36).slice(2),kind:'dictionary',target:{kind:'dictionary',term:name,historical:true},title:'',body:'',created:now,updated:now,deleted:0,standalone:false});
+  data.items.unshift({id:typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID():'entry-'+now+'-'+Math.random().toString(36).slice(2),kind:'dictionary',target:{kind:'dictionary',term:name,historical:true},title:'',body:'',created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:false});
   status('Bookmarked in Reading Desk.');
  }
  try{localStorage.setItem(KEY,JSON.stringify(data));}catch(_){status('Cannot save: browser storage is full or unavailable.');return;}
