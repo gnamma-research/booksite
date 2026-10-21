@@ -26,3 +26,20 @@
 .gn-editions .gn-ed-toggle:has(.gn-ed-icon-toggle-options){display:grid;gap:8px;grid-column:1/-1}
 .gn-editions .gn-ed-icon-toggle-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:450px}
 .gn-editions .gn-ed-toggle .gn-ed-icon-label{display:block;font-size:calc(13px * var(--font-scale,1));color:inherit}
+
+/* Only complete, verified downloads are prominent. Custom print controls
+   remain in a disclosure; this avoids an eight-row settings wall. */
+.gn-editions .gn-ed-published .gn-ed-icon-option{
+  flex-direction:column;justify-content:center;text-align:center;
+  min-height:72px;gap:6px;padding:9px 7px;
+}
+.gn-editions .gn-ed-published .gn-ed-choice-glyph{width:24px;height:24px;flex:0 0 24px}
+.gn-editions .gn-ed-published .gn-ed-icon-label{font-size:calc(12px * var(--font-scale,1));line-height:1.25}
+.gn-editions .gn-ed-reading-custom{margin-top:15px}
+.gn-editions .gn-ed-reading-custom>summary{color:var(--text)}
+.gn-editions .gn-ed-personal-link{margin:8px 0 13px}
+.gn-editions .gn-ed-grid:has([data-ep-legacy-study][hidden]){grid-template-columns:minmax(0,1fr)}
+@media(max-width:480px){
+  .gn-editions .gn-ed-field:has(>select[data-ep-ready-lang]) .gn-ed-icon-options{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gn-editions .gn-ed-published .gn-ed-icon-option{min-height:62px;flex-direction:row;text-align:left;justify-content:flex-start}
+}
