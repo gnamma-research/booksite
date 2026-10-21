@@ -1127,15 +1127,6 @@ function create(ctx){
   }
   printMessage('File sharing is unavailable. Use Download ready PDF and your device’s Files or Share menu.',true);
  }
- function refreshPrintToolbar(){
-  if(!printRoot)return;
-  printRoot.querySelectorAll('[data-rd="print-order"]').forEach(button=>{
-   button.setAttribute('aria-pressed',String(button.dataset.value===printPrefs.order));
-  });
-  printRoot.querySelectorAll('[data-rd="print-toggle"]').forEach(button=>{
-   button.setAttribute('aria-pressed',String(Boolean(printPrefs[button.dataset.key])));
-  });
- }
  function printSourcePreview(t){
   if(!t||!['quote','paragraph','section'].includes(t.kind))return '';
   const limit=printPrefs.full?100000:900;
@@ -1203,47 +1194,63 @@ function create(ctx){
  }
  function updatePrintSheet(){
   if(!printRoot)return;
-  const all=(printSelection?printSelection.map(id=>records.find(r=>r.id===id)).filter(Boolean):matching()).filter(r=>printPrefs.personal||r.kind!=='note');
+  const scoped=printSelection?printSelection.map(id=>records.find(r=>r.id===id)).filter(Boolean):
+   printPrefs.scope==='all'?active():matching();
+  const all=scoped.filter(r=>printPrefs.personal||r.kind!=='note');
   const rows=printPrefs.order==='shown'?all:
     printPrefs.order==='source'?sortItems(all,'source'):
     sortItems(all,printPrefs.order);
   const groups=printGroups(rows),container=printRoot.querySelector('#gn-rd-print-sheet-body');
   if(!container)return;
-  container.innerHTML=groups.map(printGroup).join('')||'<p>No matching entries.</p>';
-  const orderLabel=printPrefs.order==='shown'?'As currently displayed':printPrefs.order==='source'?'Text / source order':SORTS[printPrefs.order]||'Current order';
-  printRoot.querySelector('#gn-rd-print-order-summary').textContent=rows.length+' items · '+orderLabel;
+  container.innerHTML=groups.map(printGroup).join('')||'<p>No items match the selected PDF options.</p>';
+  const orderLabel=printPrefs.order==='shown'?'As currently displayed':printPrefs.order==='source'?'Source order':SORTS[printPrefs.order]||'Current order';
+  const scopeLabel=printSelection?'selected item':printPrefs.scope==='all'?'all saved items':'current filtered results';
+  printRoot.querySelector('#gn-rd-print-order-summary').textContent=rows.length+' included · '+scopeLabel+' · '+orderLabel;
+  const caption=printRoot.querySelector('#gn-rd-print-sheet-subtitle');
+  if(caption)caption.textContent='al-Ḍarūrī · '+rows.length+' '+(rows.length===1?'saved item':'saved items')+
+   (printSelection?' · selected item':printPrefs.scope==='all'?' · entire collection':' · filtered view');
  }
  function preparePrint(selected){
-  const all=(selected||matching()).filter(Boolean);
-  if(!all.length){ctx.notify('Nothing to print in this view.');return;}
-  closePrintPreview();printSelection=selected?all.map(r=>r.id):null;
+  const subset=selected?selected.filter(Boolean):matching();
+  const allSaved=active();
+  if(selected?!subset.length:!allSaved.length){ctx.notify('Nothing to print in this Reading Desk yet.');return;}
+  closePrintPreview();
+  printSelection=selected?subset.map(r=>r.id):null;
+  printPrefs.scope=selected?'single':(subset.length?'visible':'all');
+  const options=[['source','Text / source order'],['created-asc','Oldest saved first'],
+   ['created-desc','Newest saved first'],['shown','As currently displayed']];
+  const choice=(key,title,checked)=>'<label class="gn-rd-print-check"><input type="checkbox" data-rd-print-option="'+key+'"'+
+   (checked?' checked':'')+'> '+title+'</label>';
   printFocus=document.activeElement;printRoot=document.createElement('div');printRoot.id='gn-rd-print-root';
   printRoot.setAttribute('role','dialog');printRoot.setAttribute('aria-modal','true');
   printRoot.setAttribute('aria-label','Reading Desk print and PDF settings');
-  const options=[['source','Text / source order','order','Source'],['created-asc','Oldest saved first','history','Old'],['created-desc','Newest saved first','clock','New'],['shown','As displayed','saved','Shown']];
-  const choice=([value,label,icon,caption])=>deskChoice('print-order',value,label,icon,caption,printPrefs.order===value);
-  const toggle=(key,label,icon,caption)=>deskButton('print-toggle',label,icon,caption,printPrefs[key],'data-key="'+key+'"');
+  const scopeControl=selected?'<p class="gn-rd-print-single">Exporting this selected saved item</p>':
+    '<label for="gn-rd-print-scope">Items <select id="gn-rd-print-scope" data-rd-print-option="scope">'+
+    '<option value="visible"'+(printPrefs.scope==='visible'?' selected':'')+'>Current results ('+subset.length+')</option>'+
+    '<option value="all"'+(printPrefs.scope==='all'?' selected':'')+'>All saved items ('+allSaved.length+')</option></select></label>';
   printRoot.innerHTML='<div class="gn-rd-print-actions"><div><h2>Reading Desk · Print &amp; PDF</h2>'+
    '<p id="gn-rd-print-order-summary"></p></div><div class="gn-rd-print-buttons">'+
    '<button type="button" class="gn-rd-print-primary" data-rd="download-pdf">'+RD_ICON.download+'<span>Download PDF</span></button>'+
    '<button type="button" data-rd="print-now">'+RD_ICON.print+'<span>Print</span></button>'+
    '<button type="button" data-rd="close-print">'+RD_ICON.close+'<span>Close</span></button></div></div>'+
-   '<p class="gn-rd-print-help">Download produces a PDF file on this device. Print opens your browser’s print dialog, where Save as PDF may also be available.</p>'+
-   '<div class="gn-rd-print-options" role="group" aria-label="PDF options">'+
-   '<div class="gn-rd-option-group" role="group" aria-label="Printing order"><span class="gn-rd-option-label">Order</span><div class="gn-rd-option-buttons">'+options.map(choice).join('')+'</div></div>'+
-   '<div class="gn-rd-option-group" role="group" aria-label="Languages"><span class="gn-rd-option-label">Language</span><div class="gn-rd-option-buttons">'+
-   deskButton('print-toggle','Include Arabic','book','AR',printPrefs.arabic,'data-key="arabic"')+
-   deskButton('print-toggle','Include English','book','EN',printPrefs.english,'data-key="english"')+'</div></div>'+
-   '<div class="gn-rd-option-group" role="group" aria-label="Include in PDF"><span class="gn-rd-option-label">Include</span><div class="gn-rd-option-buttons">'+
-   toggle('personal','Personal notes','note','Notes')+
-   toggle('dates','Note creation and editing dates','clock','Dates')+
-   toggle('bookmarkDates','Bookmark dates','bookmark','Saved')+
-   toggle('full','Full source passages','saved','Full text')+'</div></div></div>'+
-   '<p id="gn-rd-pdf-message" class="gn-rd-pdf-message" role="status" aria-live="polite">Choose Download PDF or Print above. Options update the document below.</p>'+
+   '<div class="gn-rd-print-options" aria-label="PDF settings">'+
+   '<div class="gn-rd-print-fields">'+scopeControl+
+   '<label for="gn-rd-print-order">Order <select id="gn-rd-print-order" data-rd-print-option="order">'+
+   options.map(([value,title])=>'<option value="'+value+'"'+(printPrefs.order===value?' selected':'')+'>'+title+'</option>').join('')+
+   '</select></label></div>'+
+   '<fieldset class="gn-rd-print-check-group"><legend>Languages</legend>'+
+   choice('arabic','Arabic',printPrefs.arabic)+choice('english','English',printPrefs.english)+'</fieldset>'+
+   '<fieldset class="gn-rd-print-check-group"><legend>Include in export</legend>'+
+   choice('personal','Personal notes',printPrefs.personal)+
+   choice('dates','Note dates',printPrefs.dates)+
+   choice('bookmarkDates','Bookmark dates',printPrefs.bookmarkDates)+
+   choice('full','Full source passages',printPrefs.full)+'</fieldset></div>'+
+   '<p id="gn-rd-pdf-message" class="gn-rd-pdf-message" role="status" aria-live="polite">'+
+   'Download PDF creates a file on this device. Print opens the browser printing interface.</p>'+
    '<div id="gn-rd-pdf-result" class="gn-rd-pdf-result" hidden><a id="gn-rd-pdf-link" download>Download ready PDF</a>'+
    '<button type="button" data-rd="share-pdf" hidden>Share PDF…</button></div>'+
-   '<main class="gn-rd-print-sheet"><header><h1>Reading Desk</h1><p>al-Ḍarūrī · '+all.length+' '+(all.length===1?'saved item':'saved items')+'</p></header>'+
-   '<div id="gn-rd-print-sheet-body"></div></main>';
+   '<main class="gn-rd-print-sheet"><header><h1>Reading Desk</h1>'+
+   '<p id="gn-rd-print-sheet-subtitle"></p></header><div id="gn-rd-print-sheet-body"></div></main>';
   document.body.append(printRoot);document.body.classList.add('gn-rd-print');
   updatePrintSheet();
   printRoot.querySelector('[data-rd="download-pdf"]')?.focus({preventScroll:true});
@@ -1252,6 +1259,7 @@ function create(ctx){
   const btn=event.target.closest?.('[data-rd]');if(!btn)return;
   event.preventDefault();event.stopImmediatePropagation();
   const id=btn.dataset.id,action=btn.dataset.rd,row=records.find(r=>r.id===id);
+  btn.closest('.gn-rd-manage-menu,.gn-rd-item-more')?.removeAttribute('open');
   if(action==='filter'){ui.category=btn.dataset.value;ui.selected='';ui.mobileDetail=false;ui.listScroll=0;if(ui.category==='bin'){ui.filterTarget='';ui.filterSegment=null;ui.sourceType='all';}render();window.scrollTo({top:0,behavior:'instant'});return;}
   if(action==='source-filter'){ui.sourceType=btn.dataset.value;ui.selected='';ui.mobileDetail=false;render();return;}
   if(action==='sort-filter'){ui.sort=btn.dataset.value;ui.selected='';ui.mobileDetail=false;render();return;}
@@ -1323,15 +1331,6 @@ function create(ctx){
   if(action==='print-list'){preparePrint();return;}
   if(action==='download-pdf'){void downloadDeskPdf();return;}
   if(action==='share-pdf'){void shareDeskPdf();return;}
-  if(action==='print-order'&&printRoot){
-   if(!['source','created-asc','created-desc','shown'].includes(btn.dataset.value))return;
-   printPrefs.order=btn.dataset.value;refreshPrintToolbar();updatePrintSheet();invalidateDeskPdf();return;
-  }
-  if(action==='print-toggle'&&printRoot){
-   const key=btn.dataset.key;
-   if(!['arabic','english','personal','dates','bookmarkDates','full'].includes(key))return;
-   printPrefs[key]=!printPrefs[key];refreshPrintToolbar();updatePrintSheet();invalidateDeskPdf();return;
-  }
   if(action==='print-now'){
    if(!printRoot)return;
    try{window.print();printMessage('Print dialog requested. If it does not appear, use Download PDF.');}
@@ -1408,8 +1407,10 @@ function create(ctx){
    if(element?.dataset?.rdPrintOption){
     const key=element.dataset.rdPrintOption;
     if(!Object.hasOwn(printPrefs,key))return;
+    if(key==='scope'&&!['visible','all'].includes(element.value))return;
     printPrefs[key]=element.type==='checkbox'?element.checked:element.value;
     updatePrintSheet();
+    invalidateDeskPdf();
    }
   });
   document.addEventListener('input',e=>{if(e.target?.id==='gn-rd-query'){ui.query=e.target.value;const focusId=document.activeElement.id;const pos=e.target.selectionStart;render();const input=$('#'+focusId);input?.focus({preventScroll:true});input?.setSelectionRange?.(pos,pos);}});
