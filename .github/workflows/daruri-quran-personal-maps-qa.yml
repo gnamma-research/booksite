@@ -1,0 +1,55 @@
+name: Rebuild Daruri exact PDF note maps for conservative Quran edition
+
+on:
+  push:
+    branches: [fix/daruri-quran-audit-integrated-20261021]
+    paths:
+      - ".github/workflows/daruri-quran-personal-maps-qa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daruri-quran-personal-anchor-maps
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Set up WeasyPrint and exact extraction
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b libgdk-pixbuf-2.0-0
+          python -m pip install -r daruri/build/requirements.txt "PyMuPDF==1.26.7"
+      - name: Rebuild and version-bind all five published PDF word maps
+        run: |
+          python daruri/build/build_personal_anchor_maps.py --publish
+      - name: Check SHA contracts and unique highlight geometry
+        run: |
+          node daruri/qa/verify-personal-pdf-upgrade.cjs
+          node daruri/qa/verify-personal-export-safety.js
+      - name: Commit only regenerated personal PDF maps
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daruri/personal-anchor-maps/*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Rebind personal source-highlight maps to updated Daruri PDF hashes [skip ci]"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
+      - name: Upload exact map evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-conservative-quran-source-highlight-maps
+          path: daruri/personal-anchor-maps/*.json
+          if-no-files-found: warn
