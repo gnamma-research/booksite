@@ -54,28 +54,49 @@ async function run(engine,width,touch){
   await page.screenshot({path:path.join(ART,name+'-toolbar.png'),fullPage:true});
   assert.equal(await page.locator('.gn-rd-card-open').count(),3,name+' saved rows');
   assert.equal(await page.locator('.gn-rd-toolbar [data-rd="personal-pdf"]').count(),0,
-   'Do not link Editions personal PDF exporter from Reading Desk');
-  assert.equal(await page.locator('#gn-rd-source, #gn-rd-sort, .gn-rd-tools-menu').count(),0,
-   'No redundant dropdowns in the redesigned Reading Desk');
-  assert.equal(await page.locator('.gn-rd-controls [data-rd="source-filter"]').count(),7);
-  assert.equal(await page.locator('.gn-rd-controls [data-rd="sort-filter"]').count(),5);
+   'Reading Desk must not redirect to Editions');
+  assert.equal(await page.locator('.gn-rd-toolbar .gn-rd-main-action').count(),2,
+   'Keep exactly two primary action buttons');
+  assert.equal(await page.locator('.gn-rd-toolbar .gn-rd-manage-menu > summary').count(),1,
+   'Collection management should be one labelled menu');
+  assert.equal(await page.locator('.gn-rd-cards .gn-rd-card-ops').count(),0,
+   'Saved item cards must be uncluttered');
+  assert.equal(await page.locator('.gn-rd-tabs button').count(),3);
   assert.equal(await page.locator('.gn-rd-tabs [aria-pressed=true]').count(),1);
-  await page.locator('[data-rd="source-filter"][data-value="dictionary"]').click();
+  assert.equal(await page.locator('#gn-rd-source,#gn-rd-sort').count(),2,
+   'Source filter and sorting need labelled selectors');
+  assert.equal(await page.locator('[data-rd="source-filter"],[data-rd="sort-filter"]').count(),0,
+   'Ambiguous twelve-button icon grid must be removed');
+  await page.locator('#gn-rd-source').selectOption('dictionary');
   assert.match(await page.locator('.gn-rd-count').innerText(),/0 saved items/);
-  await page.locator('[data-rd="source-filter"][data-value="all"]').click();
-  await page.locator('[data-rd="sort-filter"][data-value="source"]').click();
-  assert.equal(await page.locator('[data-rd="sort-filter"][data-value="source"]').getAttribute('aria-pressed'),'true');
-  await page.locator('[data-rd="sort-filter"][data-value="created-desc"]').click();
+  await page.locator('#gn-rd-source').selectOption('all');
+  await page.locator('#gn-rd-sort').selectOption('source');
+  assert.equal(await page.locator('#gn-rd-sort').inputValue(),'source');
+  await page.locator('#gn-rd-sort').selectOption('created-desc');
+  const toolbarBox=await page.locator('.gn-rd-toolbar-main').boundingBox();
+  const actionBoxes=await Promise.all(
+    ['new-note','print-list'].map(a=>page.locator('.gn-rd-toolbar [data-rd="'+a+'"]').boundingBox()));
+  const manageBox=await page.locator('.gn-rd-manage-menu').boundingBox();
+  assert(toolbarBox&&actionBoxes.every(Boolean)&&manageBox&&
+   Math.abs(actionBoxes[0].y-actionBoxes[1].y)<4&&Math.abs(actionBoxes[1].y-manageBox.y)<4,
+   name+': top actions must stay on one horizontal line');
+  // Menu actions are labelled and keyboard-operable without pictogram guessing.
+  await page.locator('.gn-rd-manage-menu > summary').click();
+  assert(await page.getByRole('button',{name:'Download backup (.json)'}).isVisible());
+  assert(await page.getByRole('button',{name:'Open Bin'}).isVisible());
+  await page.locator('.gn-rd-manage-menu > summary').click();
   await page.locator('.gn-rd-toolbar [data-rd="print-list"]').click();
   await page.locator('#gn-rd-print-root').waitFor();
   assert.equal(await page.locator('#gn-rd-print-sheet-body article').count(),3);
   assert.equal(await page.locator('#gn-rd-print-root [data-rd="download-pdf"]').count(),1);
   assert.equal(await page.locator('#gn-rd-print-root [data-rd="print-now"]').count(),1);
-  assert.equal(await page.locator('#gn-rd-print-root select').count(),0);
+  assert.equal(await page.locator('#gn-rd-print-root select').count(),2);
+  assert.equal(await page.locator('#gn-rd-print-scope').inputValue(),'visible');
+  assert.match(await page.locator('#gn-rd-print-order-summary').innerText(),/current filtered results/);
   await page.screenshot({path:path.join(ART,name+'-print-options.png'),fullPage:false});
-  await page.locator('[data-rd="print-toggle"][data-key="arabic"]').click();
+  await page.locator('[data-rd-print-option="arabic"]').uncheck();
   assert.equal(await page.locator('#gn-rd-print-sheet-body .gn-rd-print-ar').count(),0);
-  await page.locator('[data-rd="print-toggle"][data-key="arabic"]').click();
+  await page.locator('[data-rd-print-option="arabic"]').check();
   assert(await page.locator('#gn-rd-print-sheet-body .gn-rd-print-ar').count()>0);
   await page.locator('#gn-rd-print-root [data-rd="print-now"]').click();
   assert.equal(await page.evaluate(()=>window.__nativePrintInvocations),1,
@@ -101,13 +122,26 @@ async function run(engine,width,touch){
   assert(/محفوظ/.test(searchable),'Arabic Unicode notes were not preserved in PDF');
   assert(await page.locator('#gn-rd-pdf-result').isVisible(),'Reusable PDF download link missing');
   assert.match(await page.locator('#gn-rd-pdf-message').innerText(),/PDF ready/);
-  await page.locator('[data-rd="print-toggle"][data-key="dates"]').click();
+  await page.locator('[data-rd-print-option="dates"]').uncheck();
   assert(!await page.locator('#gn-rd-pdf-result').isVisible(),
    'Changing an option must invalidate the stale generated file');
   await page.locator('#gn-rd-print-root [data-rd="close-print"]').click();
   assert.equal(await page.locator('#gn-rd-print-root').count(),0);
+  // Export scope must distinguish a filtered list from the entire collection.
+  await page.locator('.gn-rd-tabs [data-value="mine"]').click();
+  await page.locator('.gn-rd-toolbar [data-rd="print-list"]').click();
+  assert.equal(await page.locator('#gn-rd-print-sheet-body article').count(),2,
+   name+': current My notes filter must export only notes');
+  await page.locator('#gn-rd-print-scope').selectOption('all');
+  assert.equal(await page.locator('#gn-rd-print-sheet-body article').count(),3,
+   name+': selecting All saved items must include the previously filtered-out bookmark');
+  assert.match(await page.locator('#gn-rd-print-order-summary').innerText(),/all saved items/);
+  await page.locator('#gn-rd-print-scope').selectOption('visible');
+  assert.equal(await page.locator('#gn-rd-print-sheet-body article').count(),2);
+  await page.locator('#gn-rd-print-root [data-rd="close-print"]').click();
   // Individual item printing must be scoped and must never include unrelated private notes.
   await page.locator('.gn-rd-card-open[data-id="brief"]').click();
+  await page.locator('#gn-rd-detail .gn-rd-item-more > summary').click();
   await page.locator('#gn-rd-detail [data-rd="print"]').click();
   assert.equal(await page.locator('#gn-rd-print-sheet-body article').count(),1);
   assert(!(await page.locator('#gn-rd-print-sheet-body').innerText()).includes('Unattached research note'));
@@ -120,7 +154,7 @@ async function run(engine,width,touch){
   assert(dimensions.overflow<=3,name+' horizontal overflow: '+JSON.stringify(dimensions));
   if(touch)await page.screenshot({path:path.join(ART,name+'.png'),fullPage:true});
   assert.equal(errors.length,0,name+' uncaught JavaScript: '+errors.join('; '));
-  console.log('PASS '+name+': icon filters, option toggles, true local Unicode PDF, print action, scope, note privacy and geometry. '+bytes.length+' bytes '+pdf.getPageCount()+' pages.');
+  console.log('PASS '+name+': simplified text hierarchy, one-line toolbar, scoped PDF export, Unicode, print, privacy and geometry. '+bytes.length+' bytes '+pdf.getPageCount()+' pages.');
  }catch(error){await page.screenshot({path:path.join(ART,name+'-FAIL.png')}).catch(()=>{});throw error;}
  finally{await context.close();await browser.close();}
 }
