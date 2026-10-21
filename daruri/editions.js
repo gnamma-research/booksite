@@ -62,6 +62,66 @@
     '<p class="gn-ed-small">Use your browser’s print window to print on ordinary A4 or select “Save as PDF”. Nothing is sent to a server; the selected passages are assembled in this browser.</p>'+
     '<div class="gn-ed-notice" data-ep-message="'+tier+'" role="status" hidden></div>'+
   '</div>';
+
+  // Download choices appear only after the PDFs and verified manifest exist.
+  // Browser-local print/Save-as-PDF remains available independently.
+  function showReadyPDFs() {
+    if (!host || typeof fetch !== 'function') return;
+    fetch('editions/manifest.json?v=20261021-a4', {cache:'no-store'})
+      .then(response => response.ok ? response.json() : null)
+      .then(data => {
+        if (!host || !data || data.status !== 'verified' || !Array.isArray(data.files)) return;
+        const approved = data.files.filter(file => file &&
+          ['reading','study'].includes(file.tier) &&
+          ['bilingual','english','arabic','arabic-vowelled'].includes(file.language) &&
+          typeof file.editorial_titles === 'boolean' &&
+          Number.isInteger(file.pages) && file.pages > 0 &&
+          typeof file.file === 'string' &&
+          /^(reading|study)\/daruri-(reading|study)-(bilingual|english|arabic|arabic-vowelled)-titles-(on|off)\.pdf$/.test(file.file));
+        for (const tier of ['reading','study']) {
+          const panel = host.querySelector('[data-ep-published="' + tier + '"]');
+          if (!panel) continue;
+          const records = approved.filter(x => x.tier === tier);
+          if (records.length !== (tier === 'reading' ? 8 : 2)) continue;
+          const language = tier === 'reading' ?
+            '<label class="gn-ed-field"><span>Language</span><select data-ep-ready-lang>' +
+              [['bilingual','Arabic & English'],['english','English only'],
+               ['arabic','Arabic without vowel marks'],['arabic-vowelled','Arabic fully vowelled']]
+                .map(([key,title]) => '<option value="' + key + '">' + esc(title) + '</option>').join('') +
+            '</select></label>' : '<p class="gn-ed-small">Bilingual: Arabic right, English left</p>';
+          panel.innerHTML = '<h3>Complete PDFs · ready to download</h3>' +
+            '<p>These A4 PDFs include searchable text, a bookmarks/outline pane and navigation to the main parts. They are separate from your custom print selections below.</p>' +
+            '<div class="gn-ed-fields">' + language +
+              '<label class="gn-ed-field"><span>Editorial section titles</span><select data-ep-ready-titles>' +
+                '<option value="off">Off · original headings</option>' +
+                '<option value="on">On · include descriptive headings</option></select></label>' +
+            '</div><p class="gn-ed-pdf-detail" data-ep-ready-detail role="status"></p>' +
+            '<div class="gn-ed-pdf-actions"><a class="gn-ed-primary" data-ep-ready-download download>Download PDF ↓</a>' +
+            '<a class="gn-ed-secondary" data-ep-ready-open target="_blank" rel="noopener noreferrer">Read PDF ↗</a></div>' +
+            '<p class="gn-ed-small">On an iPad, open your PDF viewer’s bookmarks or contents sidebar. Whether it opens automatically depends on the viewer.</p>';
+          panel.hidden = false;
+          const update = () => {
+            const lang = tier === 'study' ? 'bilingual' :
+              panel.querySelector('[data-ep-ready-lang]').value;
+            const editorial = panel.querySelector('[data-ep-ready-titles]').value === 'on';
+            const file = records.find(x => x.language === lang && x.editorial_titles === editorial);
+            if (!file) return;
+            const href = 'editions/' + file.file;
+            panel.querySelector('[data-ep-ready-open]').href = href;
+            panel.querySelector('[data-ep-ready-download]').href = href;
+            panel.querySelector('[data-ep-ready-detail]').textContent = file.pages + ' A4 pages · ' +
+              Math.ceil(file.pages / 2) + ' sheets double-sided · ' +
+              file.bookmarks + ' PDF bookmarks · ' +
+              (tier === 'reading' ? 'no scholarly apparatus' : 'selected explanatory notes');
+          };
+          panel.addEventListener('change', event => {
+            if (event.target.matches('[data-ep-ready-lang], [data-ep-ready-titles]')) update();
+          });
+          update();
+        }
+      }).catch(() => {});
+  }
+
   function render(main,payload) {
     book=payload;host=main;
     sectionByNumber=new Map(book.sections.filter(x=>/^\d+$/.test(String(x.id))).map(x=>[Number(x.id),x]));
@@ -74,10 +134,10 @@
      '<nav class="gn-ed-quicknav" aria-label="Edition levels"><a href="#gn-ed-reading">1 · Reading & Printing</a><a href="#gn-ed-study">2 · Study</a><a href="#gn-ed-reference">3 · Reference</a></nav>'+
     '<section id="gn-ed-reading" class="gn-ed-tier"><div class="gn-ed-tier-head"><span class="gn-ed-number">1</span><div><h2>Reading & Printing</h2>'+
       '<p>Complete text or a short selection, with almost no apparatus. All choices use ordinary portrait A4. The default has no notes or editorial headings.</p></div></div>'+
-      controls('reading')+'</section>'+
+      '<div class="gn-ed-config gn-ed-published" data-ep-published="reading" hidden></div>' + controls('reading')+'</section>'+
     '<section id="gn-ed-study" class="gn-ed-tier"><div class="gn-ed-tier-head"><span class="gn-ed-number">2</span><div><h2>Study Editions</h2>'+
       '<p>For courses and close reading: explanatory notes and original or optional editorial headings, without the full lexicon and manuscript apparatus.</p></div></div>'+
-      '<div class="gn-ed-grid"><article class="gn-ed-card"><h3>Existing bilingual study PDF</h3><p class="gn-ed-meta">131 pages · Arabic & English · selected notes</p>'+
+      '<div class="gn-ed-config gn-ed-published" data-ep-published="study" hidden></div>' + '<div class="gn-ed-grid"><article class="gn-ed-card"><h3>Existing bilingual study PDF</h3><p class="gn-ed-meta">131 pages · Arabic & English · selected notes</p>'+
       '<p>Previously published fixed study edition. Arabic-right layout in the rebuilt edition remains subject to release verification.</p>'+
       link('daruri-study.pdf?v=daruri8-structure-20261020','Open study PDF')+'</article>'+
       '<article class="gn-ed-card"><h3>Study Guide companion</h3><p class="gn-ed-meta">85 pages · learning activities</p>'+
@@ -99,6 +159,7 @@
       host.dataset.gnEpBound='1';
     }
     KEYS.forEach(update);
+    showReadyPDFs();
   }
   function selection(tier) {
     const s=memory[tier];let chosen=[];
