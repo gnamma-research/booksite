@@ -16,7 +16,7 @@ assert.ok(data);
 const lessons=JSON.parse(data[1]);
 const index=read('index.html'),sw=read('sw.js'),bundle=read('download-bundle.js');
 for(const name of ['editions.js','editions.css']){
- const route=name+'?v=20261021-editions1';
+ const route=name+'?v=20261021-readypdfs2';
  assert.ok(index.includes(route),'Reader '+route);
  assert.ok(sw.includes(route),'Offline '+route);
  assert.ok(bundle.includes('daruri/'+name),'Download ZIP '+name);
