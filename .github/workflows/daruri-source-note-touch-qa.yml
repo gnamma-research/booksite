@@ -2,7 +2,7 @@ name: Daruri source-note Safari touch QA
 
 on:
   push:
-    branches: [fix/ios-note-longpress-focus-20261021, fix/daruri-section1-two-quran-parallels-20261021]
+    branches: [fix/ios-note-longpress-focus-20261021, fix/daruri-section1-two-quran-parallels-20261021, fix/daruri-quran-brackets-ui-20261021]
     paths:
       - 'daruri/source-note-ui.js'
       - 'daruri/source-note-ui.css'
@@ -11,6 +11,8 @@ on:
       - 'daruri/sw.js'
       - 'daruri/download-bundle.js'
       - 'daruri/qa/verify-ios-source-note-touch.py'
+      - 'daruri/qa/verify-reader-source-notes.js'
+      - 'daruri/index.html'
       - '.github/workflows/daruri-source-note-touch-qa.yml'
   workflow_dispatch:
 
@@ -32,6 +34,10 @@ jobs:
           python -m playwright install --with-deps chromium webkit
       - name: Check the source-note content generator is reproducible
         run: python daruri/build/build_source_reference_data.py --check
+      - name: Install independent reader DOM regression checker
+        run: npm install --no-save --no-package-lock jsdom@24
+      - name: Verify every reader note, restored sources, authorship and offline links
+        run: node daruri/qa/verify-reader-source-notes.js
       - name: Verify desktop, iPhone-sized and iPhone-SE touch UX in WebKit and Chromium
         run: python daruri/qa/verify-ios-source-note-touch.py
       - name: Keep screenshots and test report

@@ -45,7 +45,7 @@ def exercise(engine, browser, width, mobile):
     page.set_content(HTML)
     page.add_style_tag(path=str(DARURI / 'source-note-ui.css'))
     page.add_script_tag(path=str(DARURI / 'source-note-ui.js'))
-    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-section1-qparallels1'")
+    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-qbrackets3'")
     links = page.locator('a.gn-source-icon-link')
     assert links.count() == 6
     verses = page.locator('.gn-verse-source-excerpt')
@@ -53,6 +53,22 @@ def exercise(engine, browser, width, mobile):
     assert 'possible verbal allusion' in page.locator('[data-note-id="QUR-R001-Q049"] .gn-verse-source-excerpt').inner_text()
     assert 'not a quotation' in page.locator('[data-note-id="QUR-R001-Q050"] .gn-verse-source-excerpt').inner_text()
     assert page.locator('a[href="https://quran.com/33/40"]').count() == 0
+    # Quran-only ornamental brackets, ordinary quotation marks for Ibn Rushd.
+    for identifier, author, verse in (
+        ('QUR-R001-Q049','“معلّم البيان”','عَلَّمَهُ ٱلْبَيَانَ'),
+        ('QUR-R001-Q050','“الحجج البالغة”','فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ'),
+    ):
+        article=page.locator(f'.gn-note-entry[data-note-id="{identifier}"]')
+        prose=article.locator('p').first
+        assert prose.locator('span.gn-ibn-rushd-words').inner_text()==author
+        assert prose.locator('span.gn-ibn-rushd-words bdi[dir="rtl"]').count()==1
+        assert prose.locator('span.gn-ibn-rushd-words').evaluate("e=>getComputedStyle(e).whiteSpace")=='nowrap'
+        assert '﴿' not in prose.inner_text() and '﴾' not in prose.inner_text()
+        assert verse not in prose.inner_text(), 'Verse must not repeat in plain parentheses'
+        quote=article.locator('.gn-quran-quotation')
+        assert quote.locator('.gn-quran-words').inner_text()==verse
+        assert quote.locator('.gn-quran-bracket').first.inner_text()=='﴿'
+        assert quote.locator('.gn-quran-bracket').last.inner_text()=='﴾'
     assert '﴿' in verses.first.inner_text() and '﴾' in verses.first.inner_text()
     assert 'https:' not in page.locator('.gn-unified-notes').inner_text()
     link = links.first
@@ -75,6 +91,8 @@ def exercise(engine, browser, width, mobile):
         assert tip.count() == 0 or not tip.is_visible(), 'touch focus showed desktop tooltip'
         link.blur()
         page.keyboard.press('Tab')
+        # Tab may already have focused this link; force a genuine refocus event.
+        link.blur()
         link.focus()
         assert tip.is_visible(), 'keyboard focus lost URL tooltip'
         page.keyboard.press('Escape')
@@ -103,7 +121,7 @@ def smoke_full_site(browser, port, engine):
     ctx=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True)
     page=ctx.new_page()
     page.goto(f'http://127.0.0.1:{port}/daruri/', wait_until='domcontentloaded',timeout=90000)
-    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-section1-qparallels1'",timeout=90000)
+    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-qbrackets3'",timeout=90000)
     # Source notes are rendered on demand by the current reader: the old
     # fallback article id may legitimately be absent until its note card opens.
     # Add a real dynamic note to the running site and test its active observer.
@@ -128,6 +146,12 @@ def smoke_full_site(browser, port, engine):
         assert quote.count()==1, f'Missing qualified source panel {identifier}'
         assert 'possible verbal allusion' in quote.inner_text()
         assert 'not a quotation' in quote.inner_text()
+        prose=page.locator(f'.gn-note-entry[data-note-id="{identifier}"] > p').first
+        assert prose.locator('span.gn-ibn-rushd-words').count()==1
+        assert prose.inner_text().count('﴿') == 0
+        assert prose.inner_text().count('﴾') == 0
+        assert quote.locator('.gn-quran-bracket').first.inner_text() == '﴿'
+        assert quote.locator('.gn-quran-bracket').last.inner_text() == '﴾'
     assert page.locator('.gn-note-entry[data-note-id="QUR-R001-Q051"]').count()==0
     assert not page.evaluate('document.documentElement.scrollWidth > innerWidth')
     page.screenshot(path=str(REPORT / f'live-section1-{engine}-390.png'),full_page=True)
