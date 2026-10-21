@@ -12,10 +12,15 @@
   // Excerpts transcribed from Quran.com Uthmani text, solely to distinguish the
   // verse wording from the author's allusive expressions in these three notes.
   // Do NOT add reading variants, paraphrases, or unverified quotations here.
+  // Only quotations supported by actual wording and authorial context.
+  // The withdrawn lexical/thematic parallels are not shown as Qur'an notes.
   const VERIFIED_SOURCE_EXCERPTS = Object.freeze({
-    'QUR-R001-Q049': { text: 'عَلَّمَهُ ٱلۡبَيَانَ', label: 'Verse wording (al-Raḥmān 55:4)' },
-    'QUR-R001-Q050': { text: 'فَلِلَّهِ ٱلۡحُجَّةُ ٱلۡبَٰلِغَةُ', label: 'Verse wording (al-Anʿām 6:149)' },
-    'QUR-R001-Q051': { text: 'وَخَاتَمَ ٱلنَّبِيِّـۧنَ', label: 'Verse wording (al-Aḥzāb 33:40)' }
+    'QUR-R038-Q001': {
+      text: 'يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَقْرَبُوا۟ ٱلصَّلَوٰةَ وَأَنتُمْ سُكَـٰرَىٰ حَتَّىٰ تَعْلَمُوا۟ مَا تَقُولُونَ',
+      label: 'al-Nisāʾ 4:43 · verified quotation (verse excerpt)',
+      translation: 'O believers, do not approach prayer while intoxicated, until you know what you are saying.',
+      explanation: 'Ibn Rushd quotes this prohibition directly. This is the relevant opening of a longer verse.'
+    }
   });
   let tooltip;
   let activeLink;
@@ -114,6 +119,18 @@
     const caption = document.createElement('figcaption');
     caption.textContent = info.label;
     quote.append(body, caption);
+    if (info.translation) {
+      const translation = document.createElement('p');
+      translation.className = 'gn-verse-source-translation';
+      translation.textContent = info.translation;
+      quote.append(translation);
+    }
+    if (info.explanation) {
+      const detail = document.createElement('p');
+      detail.className = 'gn-verse-source-explanation';
+      detail.textContent = info.explanation;
+      quote.append(detail);
+    }
     const prose = card.querySelector('p');
     if (prose) prose.after(quote); else card.append(quote);
   }
