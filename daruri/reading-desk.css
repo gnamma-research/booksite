@@ -205,9 +205,10 @@ body.hide-notes:not(.focus-mode) ::highlight(gn-rd-note){background:rgba(61,135,
 .gn-rd-print-personal small,.gn-rd-print-record-date{color:var(--muted,#53645f);font:.7rem/1.6 var(--sans,system-ui)}
 .gn-rd-print-entry blockquote{margin:10px 0;padding:7px 11px;border-left:2px solid var(--accent,#53766a);overflow-wrap:anywhere}
 @media(max-width:760px){
+ .gn-rd-page:not(.gn-rd-mobile-detail-open) .gn-rd-detail{display:none!important}
  .gn-rd-mobile-detail-open .gn-rd-cards,.gn-rd-mobile-detail-open .gn-rd-controls,.gn-rd-mobile-detail-open .gn-rd-tabs,.gn-rd-mobile-detail-open .gn-rd-toolbar,.gn-rd-mobile-detail-open .gn-rd-search,.gn-rd-mobile-detail-open .gn-rd-count,.gn-rd-mobile-detail-open .gn-rd-scoped{display:none!important}
  .gn-rd-mobile-detail-open .gn-rd-detail{display:block;margin-top:5px;min-height:55dvh}
- .gn-rd-mobile-back{display:inline-flex;font:600 .87rem var(--sans,system-ui);align-items:center;min-height:44px;padding:7px 11px;margin:0 0 12px;border:1px solid var(--line,#d6d1c7);border-radius:8px;background:var(--paper,#fffdf9);color:var(--accent,#365f55);cursor:pointer}
+ .gn-rd-mobile-detail-open .gn-rd-mobile-back{display:inline-flex;font:600 .87rem var(--sans,system-ui);align-items:center;min-height:44px;padding:7px 11px;margin:0 0 12px;border:1px solid var(--line,#d6d1c7);border-radius:8px;background:var(--paper,#fffdf9);color:var(--accent,#365f55);cursor:pointer}
  .gn-rd-page.gn-rd-mobile-detail-open .gn-rd-hero{display:none}
  .gn-rd-card-heading>time{max-width:none;text-align:left}
  .gn-rd-card-ops button,.gn-rd-card-menu summary,.gn-rd-tools-menu summary{min-height:42px}
@@ -237,3 +238,20 @@ body.hide-notes:not(.focus-mode) ::highlight(gn-rd-note){background:rgba(61,135,
 .gn-rd-visuals-row small{display:block;margin:5px 0 0 28px;color:var(--muted,var(--soft,#5e6a63));font-size:.73rem}
 
 @media(max-width:760px){.gn-rd-mobile-detail-open .gn-rd-mobile-source-back{display:inline-flex;margin:0 0 12px 7px;min-height:44px}}
+
+/* v4: orphan-source preservation, mobile route correctness, and non-destructive relinking. */
+.gn-rd-unresolved-status{display:block;margin:3px 0;padding:4px 0;font-size:.78rem;color:var(--muted,var(--soft,#64716b));font-weight:600}
+.gn-rd-unresolved-detail{padding:12px 15px;margin:12px 0;border:1px solid var(--line,#d6c5ac);border-radius:10px;background:var(--accent-soft,rgba(149,100,40,.07));font-size:.88rem;line-height:1.6}
+.gn-rd-unresolved-detail strong{display:block;font-weight:650}
+.gn-rd-unresolved-detail p{margin:5px 0 0}
+.gn-rd-warning button{border:1px solid var(--line,#c9b68b);border-radius:7px;min-height:38px;padding:7px 10px;color:inherit;background:var(--paper,#fffdf8);font:600 .82rem/1.4 system-ui;margin:9px 0 0;cursor:pointer}
+.gn-rd-relink-shade{position:fixed;z-index:12500;inset:0;padding:clamp(12px,4vw,28px);display:flex;justify-content:center;align-items:center;background:rgba(14,26,22,.6);overflow:auto}
+.gn-rd-relink{background:var(--paper,#fffdf9);color:var(--ink,#24362e);border-radius:14px;max-width:590px;width:100%;max-height:88dvh;overflow:auto;padding:clamp(17px,3vw,27px);border:1px solid var(--line,#d8d3c7);box-shadow:0 12px 35px rgba(0,0,0,.22)}
+.gn-rd-relink h2{font:500 1.45rem/1.4 Georgia,serif;margin:0 0 12px}
+.gn-rd-relink p,.gn-rd-relink blockquote{font-size:.88rem;line-height:1.65}
+.gn-rd-relink label{display:block;font-size:.85rem;font-weight:600;margin:15px 0}
+.gn-rd-relink select{width:100%;display:block;padding:11px;margin-top:6px;font:inherit;font-size:1rem;border:1px solid var(--line,#d3cfbf);border-radius:8px;color:inherit;background:var(--paper,#fffdf9)}
+.gn-rd-relink footer{display:flex;flex-wrap:wrap;justify-content:end;gap:9px;margin-top:21px}
+.gn-rd-relink button{font:600 .88rem/1.4 inherit;min-height:44px;padding:9px 13px;border:1px solid var(--line,#d3cfbf);border-radius:8px;background:var(--paper,#fffdf9);color:inherit;cursor:pointer}
+.gn-rd-relink button[data-rd="relink-save"]{background:var(--accent,#446d5e);color:#fff;border-color:var(--accent,#446d5e)}
+.gn-rd-relink :focus-visible{outline:2px solid var(--accent,#446d5e);outline-offset:2px}
