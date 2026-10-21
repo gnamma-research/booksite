@@ -50,7 +50,7 @@ for (const {id,author,verse} of fallbackPairs) {
 for (const withheldId of ['QUR-R001-Q051','QUR-R011-Q052','QUR-R047-Q053']) {
   assert.ok(!html.includes(withheldId), 'A withdrawn Quran reference survives in the static fallback: '+withheldId);
 }
-assert.match(html, /<noscript><link rel="stylesheet" href="source-note-ui\\.css\\?v=20261021-fallback-quran1"><\\/noscript>/,
+assert.ok(html.includes('<noscript><link rel="stylesheet" href="source-note-ui.css?v=20261021-fallback-quran1"></noscript>'),
   'No-JavaScript fallback must load the canonical Quran verse typography');
 const backmatterMap = JSON.parse(read('build/data/backmatter-source-notes.json'));
 const isTextSource = note => ['quran', 'hadith'].includes(note.source_type);
