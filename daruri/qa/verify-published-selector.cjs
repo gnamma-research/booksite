@@ -30,8 +30,8 @@ assert.equal(m.files.filter(x=>x.tier==='study').length,2);
 assert.equal(m.files.filter(x=>x.language==='bilingual-unvowelled').length,2);
 assert.ok(r.files['daruri.pdf'],'Stable canonical scholarly reference PDF');
 for(const name of ['Reading','Study','Reference'])assert.ok(js.includes("'"+name+"'"));
-for(const term of ['gn-es-spec-lead','gn-es-spec-layout','gn-es-spec-notes','gn-es-availability',
-  'data-es-action="read"','data-es-action="download"','data-es-action="print"',
+for(const term of ['gn-es-spec-lead','gn-es-spec-layout','gn-es-spec-notes','gn-es-spec-apparatus','gn-es-availability',
+  'data-es-action="open"',
   'data-es-category','data-es-section','gn-es-personal-link','aria-disabled',
   'No verified PDF exists for this exact combination','personal-export.html',
   'English left / Arabic right','Print opens the published PDF']){
@@ -42,9 +42,18 @@ assert.ok(!js.includes('pdf-lib'),'No on-click PDF generation for public actions
 assert.ok(!js.includes('window.print()'),'Public Print opens the published PDF');
 assert.ok(!js.includes('fetch('+'"/api/'),'No server-side public PDF generation API');
 assert.ok(!js.includes("data-es-tier=\"personal\""),'Personal notes are not a fourth edition');
+assert.equal((js.match(/data-es-action="open"/g)||[]).length,2,
+  'Only a single published-PDF action is rendered and updated');
+assert.ok(!js.includes('data-es-action="read"')&&!js.includes('data-es-action="download"')&&
+  !js.includes('data-es-action="print"'), 'Redundant actions removed');
+assert.ok(!js.includes('gn-es-notes-shortcut'), 'Redundant Notes shortcut removed');
+assert.ok(js.includes("['content','layout','notes','apparatus']"), 'Four category workspace');
+assert.ok(js.includes("glossary:'historical'")&&js.includes("index:'basic'")&&
+  js.includes("concordance:'on'"), 'Reference tools and Study index reflect actual publications');
+assert.ok(css.includes('repeat(4,minmax(0,1fr))'), 'Four equally sized category buttons');
 assert.ok(css.includes('.gn-es-spec{')&&css.includes('position:sticky'),
  'Specification must remain visible while the settings workspace is used');
 assert.ok(css.includes('.gn-es [hidden]'),'Hidden categories do not stack');
 assert.ok(js.includes('s.notes!==')&&js.includes('No published PDF'),
  'Unsupported combinations must fail closed');
-console.log('PASS: static published-PDF selector, text edition tabs, status, three settings categories, personal privacy, exact SHA-indexed PDF links, offline assets.');
+console.log('PASS: single Open PDF, no duplicate Notes shortcut, sticky apparatus state, four settings categories, exact SHA-indexed PDFs and private export boundaries.');
