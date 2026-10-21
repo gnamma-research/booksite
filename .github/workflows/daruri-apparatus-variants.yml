@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/daruri-apparatus-variants.yml"
       - "daruri/build/build_apparatus_variants.py"
+      - "daruri/build/enrich_apparatus_maps.py"
       - "daruri/qa/verify_apparatus_maps.py"
 permissions:
   contents: write
@@ -33,6 +34,7 @@ jobs:
       - name: Build all ten additional static PDFs and source maps
         run: |
           python daruri/build/build_apparatus_variants.py
+          python daruri/build/enrich_apparatus_maps.py
       - name: Verify every PDF, exact base identity and all 258 page mappings
         run: |
           python daruri/qa/verify_apparatus_maps.py
