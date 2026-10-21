@@ -25,322 +25,6 @@
   ],
   "notes": [
     {
-      "id": "QUR-R001-Q049",
-      "kind": "quran",
-      "category": "source",
-      "source_type": "quran",
-      "section_id": 1,
-      "audit_ids": [
-        "Q049"
-      ],
-      "reference_type": "allusion",
-      "references": [
-        {
-          "surah": 55,
-          "ayah_start": 4,
-          "ayah_end": 4,
-          "verse_key": "55:4",
-          "surah_name_en": "al-Raḥmān",
-          "surah_name_ar": "الرحمن",
-          "label_en": "al-Raḥmān 55:4",
-          "label_ar": "الرحمن 55:4",
-          "url": "https://quran.com/55/4"
-        }
-      ],
-      "text_en": "Cf. Qurʾān, al-Raḥmān 55:4.",
-      "text_ar": "قارن القرآن، الرحمن 55:4.",
-      "qualification_en": "",
-      "qualification_ar": "",
-      "anchors": [
-        {
-          "segment_index": 0,
-          "ar": {
-            "text": "معلم البيان",
-            "start_codepoint": 17,
-            "end_codepoint_exclusive": 28,
-            "occurrence_1based": 1,
-            "segment_sha256": "032b79448d596a175b3e86400c1276498be358077f436b3473689e02837b9818",
-            "prefix_context": "أما بعد حمدا لله ",
-            "suffix_context": "، وموجب النظر والاستدلال، ومختص الإنسان بإقامة الحجج البالغة"
-          },
-          "en": {
-            "text": "who teaches articulate expression",
-            "start_codepoint": 32,
-            "end_codepoint_exclusive": 65,
-            "occurrence_1based": 1,
-            "segment_sha256": "5621cf5cefa24b549a7ee4a495952c13f109e8602baf744e6e8b530183318525",
-            "prefix_context": "To proceed, after praising God, ",
-            "suffix_context": ", makes inquiry (النظر) and inference (الاستدلال) obligatory"
-          },
-          "vocalized": {
-            "text": "مُعَلِّمِ الْبَيَانِ",
-            "start_codepoint": 30,
-            "end_codepoint_exclusive": 50,
-            "occurrence_1based": 1,
-            "segment_sha256": "b2bd4cb02c8baffb17dd5d5e3ef38bded4ec01225d9a4de5f7689129b0066570",
-            "prefix_context": "أَمَّا بَعْدُ حَمْدًا لِلَّهِ ",
-            "suffix_context": "، وَمُوجِبِ النَّظَرِ وَالِاسْتِدْلَالِ، وَمُخْتَصِّ الْإِنْ"
-          },
-          "insert_marker": "after_anchor",
-          "bilingual_shared_note": true
-        }
-      ],
-      "original_scholarly_pages": [
-        7
-      ],
-      "existing_note_ids": [],
-      "show_in_editions": [
-        "scholarly",
-        "study",
-        "english",
-        "arabic",
-        "arabic-vowelled"
-      ],
-      "scholarly_placement": "local_section_source_note",
-      "other_editions_placement": "numbered_page_footnote",
-      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
-      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
-      "contains_hadith_reference": false,
-      "publication_status": "ready"
-    },
-    {
-      "id": "QUR-R001-Q050",
-      "kind": "quran",
-      "category": "source",
-      "source_type": "quran",
-      "section_id": 1,
-      "audit_ids": [
-        "Q050"
-      ],
-      "reference_type": "allusion",
-      "references": [
-        {
-          "surah": 6,
-          "ayah_start": 149,
-          "ayah_end": 149,
-          "verse_key": "6:149",
-          "surah_name_en": "al-Anʿām",
-          "surah_name_ar": "الأنعام",
-          "label_en": "al-Anʿām 6:149",
-          "label_ar": "الأنعام 6:149",
-          "url": "https://quran.com/6/149"
-        }
-      ],
-      "text_en": "Cf. Qurʾān, al-Anʿām 6:149. Compare the verse’s singular al-ḥujja al-bāligha with the author’s plural expression.",
-      "text_ar": "قارن القرآن، الأنعام 6:149. قارن عبارة «الحجة البالغة» في الآية؛ ولفظ المؤلف هنا بالجمع.",
-      "qualification_en": "Compare the verse’s singular al-ḥujja al-bāligha with the author’s plural expression.",
-      "qualification_ar": "قارن عبارة «الحجة البالغة» في الآية؛ ولفظ المؤلف هنا بالجمع.",
-      "anchors": [
-        {
-          "segment_index": 0,
-          "ar": {
-            "text": "الحجج البالغة",
-            "start_codepoint": 75,
-            "end_codepoint_exclusive": 88,
-            "occurrence_1based": 1,
-            "segment_sha256": "032b79448d596a175b3e86400c1276498be358077f436b3473689e02837b9818",
-            "prefix_context": "ه معلم البيان، وموجب النظر والاستدلال، ومختص الإنسان بإقامة ",
-            "suffix_context": " وضرب الأمثال، والصلاة على محمد خاتم الرسل ونهاية التمام وال"
-          },
-          "en": {
-            "text": "conclusive arguments",
-            "start_codepoint": 176,
-            "end_codepoint_exclusive": 196,
-            "occurrence_1based": 1,
-            "segment_sha256": "5621cf5cefa24b549a7ee4a495952c13f109e8602baf744e6e8b530183318525",
-            "prefix_context": "bligatory, and singles out the human being for establishing ",
-            "suffix_context": " and setting forth examples; and after invoking blessings up"
-          },
-          "vocalized": {
-            "text": "الْحُجَجِ الْبَالِغَةِ",
-            "start_codepoint": 128,
-            "end_codepoint_exclusive": 150,
-            "occurrence_1based": 1,
-            "segment_sha256": "b2bd4cb02c8baffb17dd5d5e3ef38bded4ec01225d9a4de5f7689129b0066570",
-            "prefix_context": "َرِ وَالِاسْتِدْلَالِ، وَمُخْتَصِّ الْإِنْسَانِ بِإِقَامَةِ ",
-            "suffix_context": " وَضَرْبِ الْأَمْثَالِ، وَالصَّلَاةُ عَلَى مُحَمَّدٍ خَاتَمِ"
-          },
-          "insert_marker": "after_anchor",
-          "bilingual_shared_note": true
-        }
-      ],
-      "original_scholarly_pages": [
-        7
-      ],
-      "existing_note_ids": [],
-      "show_in_editions": [
-        "scholarly",
-        "study",
-        "english",
-        "arabic",
-        "arabic-vowelled"
-      ],
-      "scholarly_placement": "local_section_source_note",
-      "other_editions_placement": "numbered_page_footnote",
-      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
-      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
-      "contains_hadith_reference": false,
-      "publication_status": "ready"
-    },
-    {
-      "id": "QUR-R001-Q051",
-      "kind": "quran",
-      "category": "source",
-      "source_type": "quran",
-      "section_id": 1,
-      "audit_ids": [
-        "Q051"
-      ],
-      "reference_type": "allusion",
-      "references": [
-        {
-          "surah": 33,
-          "ayah_start": 40,
-          "ayah_end": 40,
-          "verse_key": "33:40",
-          "surah_name_en": "al-Aḥzāb",
-          "surah_name_ar": "الأحزاب",
-          "label_en": "al-Aḥzāb 33:40",
-          "label_ar": "الأحزاب 33:40",
-          "url": "https://quran.com/33/40"
-        }
-      ],
-      "text_en": "Cf. Qurʾān, al-Aḥzāb 33:40. The verse has “seal of the prophets”; this is an allusion, not its exact wording.",
-      "text_ar": "قارن القرآن، الأحزاب 33:40. لفظ الآية «خاتم النبيين»؛ والعبارة هنا إحالة بالمعنى، لا اقتباس حرفي.",
-      "qualification_en": "The verse has “seal of the prophets”; this is an allusion, not its exact wording.",
-      "qualification_ar": "لفظ الآية «خاتم النبيين»؛ والعبارة هنا إحالة بالمعنى، لا اقتباس حرفي.",
-      "anchors": [
-        {
-          "segment_index": 0,
-          "ar": {
-            "text": "خاتم الرسل",
-            "start_codepoint": 120,
-            "end_codepoint_exclusive": 130,
-            "occurrence_1based": 1,
-            "segment_sha256": "032b79448d596a175b3e86400c1276498be358077f436b3473689e02837b9818",
-            "prefix_context": "الإنسان بإقامة الحجج البالغة وضرب الأمثال، والصلاة على محمد ",
-            "suffix_context": " ونهاية التمام والكمال، فإن غرضي في هذا الكتاب أن أثبت لنفسي"
-          },
-          "en": {
-            "text": "seal of the messengers",
-            "start_codepoint": 273,
-            "end_codepoint_exclusive": 295,
-            "occurrence_1based": 1,
-            "segment_sha256": "5621cf5cefa24b549a7ee4a495952c13f109e8602baf744e6e8b530183318525",
-            "prefix_context": "h examples; and after invoking blessings upon Muḥammad, the ",
-            "suffix_context": " and the culmination of completeness and perfection: my purp"
-          },
-          "vocalized": {
-            "text": "خَاتَمِ الرُّسُلِ",
-            "start_codepoint": 203,
-            "end_codepoint_exclusive": 220,
-            "occurrence_1based": 1,
-            "segment_sha256": "b2bd4cb02c8baffb17dd5d5e3ef38bded4ec01225d9a4de5f7689129b0066570",
-            "prefix_context": "الِغَةِ وَضَرْبِ الْأَمْثَالِ، وَالصَّلَاةُ عَلَى مُحَمَّدٍ ",
-            "suffix_context": " وَنِهَايَةِ التَّمَامِ وَالْكَمَالِ، فَإِنَّ غَرَضِي فِي هَ"
-          },
-          "insert_marker": "after_anchor",
-          "bilingual_shared_note": true
-        }
-      ],
-      "original_scholarly_pages": [
-        7
-      ],
-      "existing_note_ids": [],
-      "show_in_editions": [
-        "scholarly",
-        "study",
-        "english",
-        "arabic",
-        "arabic-vowelled"
-      ],
-      "scholarly_placement": "local_section_source_note",
-      "other_editions_placement": "numbered_page_footnote",
-      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
-      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
-      "contains_hadith_reference": false,
-      "publication_status": "ready"
-    },
-    {
-      "id": "QUR-R011-Q052",
-      "kind": "quran",
-      "category": "source",
-      "source_type": "quran",
-      "section_id": 11,
-      "audit_ids": [
-        "Q052"
-      ],
-      "reference_type": "allusion",
-      "references": [
-        {
-          "surah": 29,
-          "ayah_start": 45,
-          "ayah_end": 45,
-          "verse_key": "29:45",
-          "surah_name_en": "al-ʿAnkabūt",
-          "surah_name_ar": "العنكبوت",
-          "label_en": "al-ʿAnkabūt 29:45",
-          "label_ar": "العنكبوت 29:45",
-          "url": "https://quran.com/29/45"
-        }
-      ],
-      "text_en": "Cf. Qurʾān, al-ʿAnkabūt 29:45. The verse speaks of prayer restraining indecency; the author’s wording is retained.",
-      "text_ar": "قارن القرآن، العنكبوت 29:45. تذكر الآية نهي الصلاة عن الفحشاء؛ وأُبقي لفظ المؤلف.",
-      "qualification_en": "The verse speaks of prayer restraining indecency; the author’s wording is retained.",
-      "qualification_ar": "تذكر الآية نهي الصلاة عن الفحشاء؛ وأُبقي لفظ المؤلف.",
-      "anchors": [
-        {
-          "segment_index": 1,
-          "ar": {
-            "text": "اللفظ المانع من الفحشاء",
-            "start_codepoint": 155,
-            "end_codepoint_exclusive": 178,
-            "occurrence_1based": 1,
-            "segment_sha256": "1bc3a6449e984740d9af9d086952ae5eeabbf1d774b76e5650bebd277e878460",
-            "prefix_context": "نعم، وبعضه بانضمام الشرع كالطهارة والصلاة لما فيهما مثلا من ",
-            "suffix_context": " ومن النظافة. وفائدة معرفة هذا الاختلاف في هذه الصناعة تتصور"
-          },
-          "en": {
-            "text": "the utterance that restrains indecency",
-            "start_codepoint": 272,
-            "end_codepoint_exclusive": 310,
-            "occurrence_1based": 1,
-            "segment_sha256": "e321103bb22a8ccead6ca0e36badab2921d7f762457d09c47b2d24032e4735df",
-            "prefix_context": "th ritual purification and prayer, because of, for example, ",
-            "suffix_context": " and the cleanliness they involve. The benefit of knowing th"
-          },
-          "vocalized": {
-            "text": "اللَّفْظِ الْمَانِعِ مِنَ الْفَحْشَاءِ",
-            "start_codepoint": 263,
-            "end_codepoint_exclusive": 301,
-            "occurrence_1based": 1,
-            "segment_sha256": "2267da792505bda94d1b4902b8c4714a11320fd0c61683a7f92a3d42a5529fec",
-            "prefix_context": "ْعِ كَالطَّهَارَةِ وَالصَّلَاةِ لِمَا فِيهِمَا مَثَلًا مِنَ ",
-            "suffix_context": " وَمِنَ النَّظَافَةِ. وَفَائِدَةُ مَعْرِفَةِ هَذَا الِاخْتِل"
-          },
-          "insert_marker": "after_anchor",
-          "bilingual_shared_note": true
-        }
-      ],
-      "original_scholarly_pages": [
-        12
-      ],
-      "existing_note_ids": [],
-      "show_in_editions": [
-        "scholarly",
-        "study",
-        "english",
-        "arabic",
-        "arabic-vowelled"
-      ],
-      "scholarly_placement": "local_section_source_note",
-      "other_editions_placement": "numbered_page_footnote",
-      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
-      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
-      "contains_hadith_reference": false,
-      "publication_status": "ready"
-    },
-    {
       "id": "QUR-R038-Q001",
       "kind": "quran",
       "category": "source",
@@ -482,85 +166,6 @@
       ],
       "original_scholarly_pages": [
         30
-      ],
-      "existing_note_ids": [],
-      "show_in_editions": [
-        "scholarly",
-        "study",
-        "english",
-        "arabic",
-        "arabic-vowelled"
-      ],
-      "scholarly_placement": "local_section_source_note",
-      "other_editions_placement": "numbered_page_footnote",
-      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
-      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
-      "contains_hadith_reference": false,
-      "publication_status": "ready"
-    },
-    {
-      "id": "QUR-R047-Q053",
-      "kind": "quran",
-      "category": "source",
-      "source_type": "quran",
-      "section_id": 47,
-      "audit_ids": [
-        "Q053"
-      ],
-      "reference_type": "allusion",
-      "references": [
-        {
-          "surah": 12,
-          "ayah_start": 53,
-          "ayah_end": 53,
-          "verse_key": "12:53",
-          "surah_name_en": "Yūsuf",
-          "surah_name_ar": "يوسف",
-          "label_en": "Yūsuf 12:53",
-          "label_ar": "يوسف 12:53",
-          "url": "https://quran.com/12/53"
-        }
-      ],
-      "text_en": "Cf. Qurʾān, Yūsuf 12:53.",
-      "text_ar": "قارن القرآن، يوسف 12:53.",
-      "qualification_en": "",
-      "qualification_ar": "",
-      "anchors": [
-        {
-          "segment_index": 1,
-          "ar": {
-            "text": "الأمارة بالسوء",
-            "start_codepoint": 209,
-            "end_codepoint_exclusive": 223,
-            "occurrence_1based": 1,
-            "segment_sha256": "b6406fc5d13707e1b65853d7bab6bf1252d1ebef9e1541721f7c90856a9a0317",
-            "prefix_context": "ده عن الامتثال عناد أو غير ذلك من الأسباب المانعة. وبالجملة ",
-            "suffix_context": " كثيرا ما تصد الإنسان عن الواجب مع اعتقاد وجوبه."
-          },
-          "en": {
-            "text": "the soul that commands evil",
-            "start_codepoint": 290,
-            "end_codepoint_exclusive": 317,
-            "occurrence_1based": 1,
-            "segment_sha256": "41c079070ef2df3e2c7e0a52e2c2f9c39bae1b08ef78a6a46ab8de3a6cab1ea3",
-            "prefix_context": "er impediment prevents a person from complying. In general, ",
-            "suffix_context": " often turns a person away from a duty even while he believe"
-          },
-          "vocalized": {
-            "text": "الْأَمَّارَةُ بِالسُّوءِ",
-            "start_codepoint": 344,
-            "end_codepoint_exclusive": 368,
-            "occurrence_1based": 1,
-            "segment_sha256": "57277559773e65d4abe05d092f4e409284e8bcb7da84f588d866edc7144506b3",
-            "prefix_context": "يْرُ ذَلِكَ مِنَ الْأَسْبَابِ الْمَانِعَةِ. وَبِالْجُمْلَةِ ",
-            "suffix_context": " كَثِيرًا مَا تَصُدُّ الْإِنْسَانَ عَنِ الْوَاجِبِ مَعَ اعْت"
-          },
-          "insert_marker": "after_anchor",
-          "bilingual_shared_note": true
-        }
-      ],
-      "original_scholarly_pages": [
-        31
       ],
       "existing_note_ids": [],
       "show_in_editions": [
@@ -4813,10 +4418,425 @@
     }
   ],
   "counts": {
-    "notes": 53,
-    "anchor_pairs": 57,
+    "notes": 48,
+    "anchor_pairs": 52,
     "existing_note_text_splits": 22,
     "excluded_optional_candidates": 9,
-    "unresolved_anchors": 0
+    "unresolved_anchors": 0,
+    "withheld_allusions": 5
+  },
+  "withheld_editorial_allusions": [
+    {
+      "id": "QUR-R001-Q049",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 1,
+      "audit_ids": [
+        "Q049"
+      ],
+      "reference_type": "allusion",
+      "references": [
+        {
+          "surah": 55,
+          "ayah_start": 4,
+          "ayah_end": 4,
+          "verse_key": "55:4",
+          "surah_name_en": "al-Raḥmān",
+          "surah_name_ar": "الرحمن",
+          "label_en": "al-Raḥmān 55:4",
+          "label_ar": "الرحمن 55:4",
+          "url": "https://quran.com/55/4"
+        }
+      ],
+      "text_en": "Cf. Qurʾān, al-Raḥmān 55:4.",
+      "text_ar": "قارن القرآن، الرحمن 55:4.",
+      "qualification_en": "",
+      "qualification_ar": "",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "معلم البيان",
+            "start_codepoint": 17,
+            "end_codepoint_exclusive": 28,
+            "occurrence_1based": 1,
+            "segment_sha256": "032b79448d596a175b3e86400c1276498be358077f436b3473689e02837b9818",
+            "prefix_context": "أما بعد حمدا لله ",
+            "suffix_context": "، وموجب النظر والاستدلال، ومختص الإنسان بإقامة الحجج البالغة"
+          },
+          "en": {
+            "text": "who teaches articulate expression",
+            "start_codepoint": 32,
+            "end_codepoint_exclusive": 65,
+            "occurrence_1based": 1,
+            "segment_sha256": "5621cf5cefa24b549a7ee4a495952c13f109e8602baf744e6e8b530183318525",
+            "prefix_context": "To proceed, after praising God, ",
+            "suffix_context": ", makes inquiry (النظر) and inference (الاستدلال) obligatory"
+          },
+          "vocalized": {
+            "text": "مُعَلِّمِ الْبَيَانِ",
+            "start_codepoint": 30,
+            "end_codepoint_exclusive": 50,
+            "occurrence_1based": 1,
+            "segment_sha256": "b2bd4cb02c8baffb17dd5d5e3ef38bded4ec01225d9a4de5f7689129b0066570",
+            "prefix_context": "أَمَّا بَعْدُ حَمْدًا لِلَّهِ ",
+            "suffix_context": "، وَمُوجِبِ النَّظَرِ وَالِاسْتِدْلَالِ، وَمُخْتَصِّ الْإِنْ"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        7
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "withheld_from_passage_notes_and_pdfs",
+      "audit_decision": "Short verbal or thematic parallel is insufficient evidence of intended Qur'anic allusion; preserve as an unpublished editorial candidate",
+      "decision_date": "2026-10-21"
+    },
+    {
+      "id": "QUR-R001-Q050",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 1,
+      "audit_ids": [
+        "Q050"
+      ],
+      "reference_type": "allusion",
+      "references": [
+        {
+          "surah": 6,
+          "ayah_start": 149,
+          "ayah_end": 149,
+          "verse_key": "6:149",
+          "surah_name_en": "al-Anʿām",
+          "surah_name_ar": "الأنعام",
+          "label_en": "al-Anʿām 6:149",
+          "label_ar": "الأنعام 6:149",
+          "url": "https://quran.com/6/149"
+        }
+      ],
+      "text_en": "Cf. Qurʾān, al-Anʿām 6:149. Compare the verse’s singular al-ḥujja al-bāligha with the author’s plural expression.",
+      "text_ar": "قارن القرآن، الأنعام 6:149. قارن عبارة «الحجة البالغة» في الآية؛ ولفظ المؤلف هنا بالجمع.",
+      "qualification_en": "Compare the verse’s singular al-ḥujja al-bāligha with the author’s plural expression.",
+      "qualification_ar": "قارن عبارة «الحجة البالغة» في الآية؛ ولفظ المؤلف هنا بالجمع.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "الحجج البالغة",
+            "start_codepoint": 75,
+            "end_codepoint_exclusive": 88,
+            "occurrence_1based": 1,
+            "segment_sha256": "032b79448d596a175b3e86400c1276498be358077f436b3473689e02837b9818",
+            "prefix_context": "ه معلم البيان، وموجب النظر والاستدلال، ومختص الإنسان بإقامة ",
+            "suffix_context": " وضرب الأمثال، والصلاة على محمد خاتم الرسل ونهاية التمام وال"
+          },
+          "en": {
+            "text": "conclusive arguments",
+            "start_codepoint": 176,
+            "end_codepoint_exclusive": 196,
+            "occurrence_1based": 1,
+            "segment_sha256": "5621cf5cefa24b549a7ee4a495952c13f109e8602baf744e6e8b530183318525",
+            "prefix_context": "bligatory, and singles out the human being for establishing ",
+            "suffix_context": " and setting forth examples; and after invoking blessings up"
+          },
+          "vocalized": {
+            "text": "الْحُجَجِ الْبَالِغَةِ",
+            "start_codepoint": 128,
+            "end_codepoint_exclusive": 150,
+            "occurrence_1based": 1,
+            "segment_sha256": "b2bd4cb02c8baffb17dd5d5e3ef38bded4ec01225d9a4de5f7689129b0066570",
+            "prefix_context": "َرِ وَالِاسْتِدْلَالِ، وَمُخْتَصِّ الْإِنْسَانِ بِإِقَامَةِ ",
+            "suffix_context": " وَضَرْبِ الْأَمْثَالِ، وَالصَّلَاةُ عَلَى مُحَمَّدٍ خَاتَمِ"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        7
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "withheld_from_passage_notes_and_pdfs",
+      "audit_decision": "Short verbal or thematic parallel is insufficient evidence of intended Qur'anic allusion; preserve as an unpublished editorial candidate",
+      "decision_date": "2026-10-21"
+    },
+    {
+      "id": "QUR-R001-Q051",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 1,
+      "audit_ids": [
+        "Q051"
+      ],
+      "reference_type": "allusion",
+      "references": [
+        {
+          "surah": 33,
+          "ayah_start": 40,
+          "ayah_end": 40,
+          "verse_key": "33:40",
+          "surah_name_en": "al-Aḥzāb",
+          "surah_name_ar": "الأحزاب",
+          "label_en": "al-Aḥzāb 33:40",
+          "label_ar": "الأحزاب 33:40",
+          "url": "https://quran.com/33/40"
+        }
+      ],
+      "text_en": "Cf. Qurʾān, al-Aḥzāb 33:40. The verse has “seal of the prophets”; this is an allusion, not its exact wording.",
+      "text_ar": "قارن القرآن، الأحزاب 33:40. لفظ الآية «خاتم النبيين»؛ والعبارة هنا إحالة بالمعنى، لا اقتباس حرفي.",
+      "qualification_en": "The verse has “seal of the prophets”; this is an allusion, not its exact wording.",
+      "qualification_ar": "لفظ الآية «خاتم النبيين»؛ والعبارة هنا إحالة بالمعنى، لا اقتباس حرفي.",
+      "anchors": [
+        {
+          "segment_index": 0,
+          "ar": {
+            "text": "خاتم الرسل",
+            "start_codepoint": 120,
+            "end_codepoint_exclusive": 130,
+            "occurrence_1based": 1,
+            "segment_sha256": "032b79448d596a175b3e86400c1276498be358077f436b3473689e02837b9818",
+            "prefix_context": "الإنسان بإقامة الحجج البالغة وضرب الأمثال، والصلاة على محمد ",
+            "suffix_context": " ونهاية التمام والكمال، فإن غرضي في هذا الكتاب أن أثبت لنفسي"
+          },
+          "en": {
+            "text": "seal of the messengers",
+            "start_codepoint": 273,
+            "end_codepoint_exclusive": 295,
+            "occurrence_1based": 1,
+            "segment_sha256": "5621cf5cefa24b549a7ee4a495952c13f109e8602baf744e6e8b530183318525",
+            "prefix_context": "h examples; and after invoking blessings upon Muḥammad, the ",
+            "suffix_context": " and the culmination of completeness and perfection: my purp"
+          },
+          "vocalized": {
+            "text": "خَاتَمِ الرُّسُلِ",
+            "start_codepoint": 203,
+            "end_codepoint_exclusive": 220,
+            "occurrence_1based": 1,
+            "segment_sha256": "b2bd4cb02c8baffb17dd5d5e3ef38bded4ec01225d9a4de5f7689129b0066570",
+            "prefix_context": "الِغَةِ وَضَرْبِ الْأَمْثَالِ، وَالصَّلَاةُ عَلَى مُحَمَّدٍ ",
+            "suffix_context": " وَنِهَايَةِ التَّمَامِ وَالْكَمَالِ، فَإِنَّ غَرَضِي فِي هَ"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        7
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "withheld_from_passage_notes_and_pdfs",
+      "audit_decision": "Short verbal or thematic parallel is insufficient evidence of intended Qur'anic allusion; preserve as an unpublished editorial candidate",
+      "decision_date": "2026-10-21"
+    },
+    {
+      "id": "QUR-R011-Q052",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 11,
+      "audit_ids": [
+        "Q052"
+      ],
+      "reference_type": "allusion",
+      "references": [
+        {
+          "surah": 29,
+          "ayah_start": 45,
+          "ayah_end": 45,
+          "verse_key": "29:45",
+          "surah_name_en": "al-ʿAnkabūt",
+          "surah_name_ar": "العنكبوت",
+          "label_en": "al-ʿAnkabūt 29:45",
+          "label_ar": "العنكبوت 29:45",
+          "url": "https://quran.com/29/45"
+        }
+      ],
+      "text_en": "Cf. Qurʾān, al-ʿAnkabūt 29:45. The verse speaks of prayer restraining indecency; the author’s wording is retained.",
+      "text_ar": "قارن القرآن، العنكبوت 29:45. تذكر الآية نهي الصلاة عن الفحشاء؛ وأُبقي لفظ المؤلف.",
+      "qualification_en": "The verse speaks of prayer restraining indecency; the author’s wording is retained.",
+      "qualification_ar": "تذكر الآية نهي الصلاة عن الفحشاء؛ وأُبقي لفظ المؤلف.",
+      "anchors": [
+        {
+          "segment_index": 1,
+          "ar": {
+            "text": "اللفظ المانع من الفحشاء",
+            "start_codepoint": 155,
+            "end_codepoint_exclusive": 178,
+            "occurrence_1based": 1,
+            "segment_sha256": "1bc3a6449e984740d9af9d086952ae5eeabbf1d774b76e5650bebd277e878460",
+            "prefix_context": "نعم، وبعضه بانضمام الشرع كالطهارة والصلاة لما فيهما مثلا من ",
+            "suffix_context": " ومن النظافة. وفائدة معرفة هذا الاختلاف في هذه الصناعة تتصور"
+          },
+          "en": {
+            "text": "the utterance that restrains indecency",
+            "start_codepoint": 272,
+            "end_codepoint_exclusive": 310,
+            "occurrence_1based": 1,
+            "segment_sha256": "e321103bb22a8ccead6ca0e36badab2921d7f762457d09c47b2d24032e4735df",
+            "prefix_context": "th ritual purification and prayer, because of, for example, ",
+            "suffix_context": " and the cleanliness they involve. The benefit of knowing th"
+          },
+          "vocalized": {
+            "text": "اللَّفْظِ الْمَانِعِ مِنَ الْفَحْشَاءِ",
+            "start_codepoint": 263,
+            "end_codepoint_exclusive": 301,
+            "occurrence_1based": 1,
+            "segment_sha256": "2267da792505bda94d1b4902b8c4714a11320fd0c61683a7f92a3d42a5529fec",
+            "prefix_context": "ْعِ كَالطَّهَارَةِ وَالصَّلَاةِ لِمَا فِيهِمَا مَثَلًا مِنَ ",
+            "suffix_context": " وَمِنَ النَّظَافَةِ. وَفَائِدَةُ مَعْرِفَةِ هَذَا الِاخْتِل"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        12
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "withheld_from_passage_notes_and_pdfs",
+      "audit_decision": "Short verbal or thematic parallel is insufficient evidence of intended Qur'anic allusion; preserve as an unpublished editorial candidate",
+      "decision_date": "2026-10-21"
+    },
+    {
+      "id": "QUR-R047-Q053",
+      "kind": "quran",
+      "category": "source",
+      "source_type": "quran",
+      "section_id": 47,
+      "audit_ids": [
+        "Q053"
+      ],
+      "reference_type": "allusion",
+      "references": [
+        {
+          "surah": 12,
+          "ayah_start": 53,
+          "ayah_end": 53,
+          "verse_key": "12:53",
+          "surah_name_en": "Yūsuf",
+          "surah_name_ar": "يوسف",
+          "label_en": "Yūsuf 12:53",
+          "label_ar": "يوسف 12:53",
+          "url": "https://quran.com/12/53"
+        }
+      ],
+      "text_en": "Cf. Qurʾān, Yūsuf 12:53.",
+      "text_ar": "قارن القرآن، يوسف 12:53.",
+      "qualification_en": "",
+      "qualification_ar": "",
+      "anchors": [
+        {
+          "segment_index": 1,
+          "ar": {
+            "text": "الأمارة بالسوء",
+            "start_codepoint": 209,
+            "end_codepoint_exclusive": 223,
+            "occurrence_1based": 1,
+            "segment_sha256": "b6406fc5d13707e1b65853d7bab6bf1252d1ebef9e1541721f7c90856a9a0317",
+            "prefix_context": "ده عن الامتثال عناد أو غير ذلك من الأسباب المانعة. وبالجملة ",
+            "suffix_context": " كثيرا ما تصد الإنسان عن الواجب مع اعتقاد وجوبه."
+          },
+          "en": {
+            "text": "the soul that commands evil",
+            "start_codepoint": 290,
+            "end_codepoint_exclusive": 317,
+            "occurrence_1based": 1,
+            "segment_sha256": "41c079070ef2df3e2c7e0a52e2c2f9c39bae1b08ef78a6a46ab8de3a6cab1ea3",
+            "prefix_context": "er impediment prevents a person from complying. In general, ",
+            "suffix_context": " often turns a person away from a duty even while he believe"
+          },
+          "vocalized": {
+            "text": "الْأَمَّارَةُ بِالسُّوءِ",
+            "start_codepoint": 344,
+            "end_codepoint_exclusive": 368,
+            "occurrence_1based": 1,
+            "segment_sha256": "57277559773e65d4abe05d092f4e409284e8bcb7da84f588d866edc7144506b3",
+            "prefix_context": "يْرُ ذَلِكَ مِنَ الْأَسْبَابِ الْمَانِعَةِ. وَبِالْجُمْلَةِ ",
+            "suffix_context": " كَثِيرًا مَا تَصُدُّ الْإِنْسَانَ عَنِ الْوَاجِبِ مَعَ اعْت"
+          },
+          "insert_marker": "after_anchor",
+          "bilingual_shared_note": true
+        }
+      ],
+      "original_scholarly_pages": [
+        31
+      ],
+      "existing_note_ids": [],
+      "show_in_editions": [
+        "scholarly",
+        "study",
+        "english",
+        "arabic",
+        "arabic-vowelled"
+      ],
+      "scholarly_placement": "local_section_source_note",
+      "other_editions_placement": "numbered_page_footnote",
+      "bilingual_policy": "Arabic and English anchors share this note ID and one footnote.",
+      "repeat_policy": "Reuse the same footnote number when this note has repeated anchors on one page; repeat the note on a new page if needed.",
+      "contains_hadith_reference": false,
+      "publication_status": "withheld_from_passage_notes_and_pdfs",
+      "audit_decision": "Short verbal or thematic parallel is insufficient evidence of intended Qur'anic allusion; preserve as an unpublished editorial candidate",
+      "decision_date": "2026-10-21"
+    }
+  ],
+  "citation_admissibility_policy": {
+    "version": "2026-10-21",
+    "principle": "Shared terminology or general thematic similarity must not generate an authorial Quran reference.",
+    "admit": "Verbatim or clearly introduced Qur'anic quotations, explicit invocation of a verse, or compellingly distinctive context-dependent allusion.",
+    "withhold": "Short word matches, ordinary idioms, and thematic comparisons without textual evidence.",
+    "qualify": "Clearly distinguish paraphrase, composite wording, reported readings and canonical Quranic text."
   }
 }

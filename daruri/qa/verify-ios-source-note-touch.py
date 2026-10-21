@@ -17,13 +17,13 @@ REPORT = DARURI / 'qa' / 'source-note-touch-results'
 REPORT.mkdir(exist_ok=True, parents=True)
 HTML = """<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width,initial-scale=1">
 <style>body{font:16px/1.5 system-ui;margin:12px}.gn-unified-notes{padding:12px;border:1px solid #ddd}</style>
-</head><body><h1>Daruri §1 · Notes</h1><main class="gn-unified-notes">
-<article class="gn-note-entry" data-note-id="QUR-R001-Q049"><p>Cf. al-Rahman 55:4.</p>
-<span class="source-note-links">Sources: <a href="https://quran.com/55/4">al-Raḥmān 55:4</a></span></article>
-<article class="gn-note-entry" data-note-id="QUR-R001-Q050"><p>Cf. al-An'am 6:149.</p>
-<span class="source-note-links"><a href="https://quran.com/6/149">https://quran.com/6/149</a></span></article>
-<article class="gn-note-entry" data-note-id="QUR-R001-Q051"><p>Cf. al-Ahzab 33:40.</p>
-<span class="source-note-links"><a href="https://quran.com/33/40">al-Aḥzāb 33:40</a></span></article>
+</head><body><h1>Daruri §38 · Notes</h1><main class="gn-unified-notes">
+<article class="gn-note-entry" data-note-id="QUR-R038-Q001"><p>Direct quotation from al-Nisāʾ.</p>
+<span class="source-note-links">Sources: <a href="https://quran.com/4/43">al-Nisāʾ 4:43</a></span></article>
+<article class="gn-note-entry" data-note-id="QUR-R082-Q007"><p>Direct quotation from al-Tawbah.</p>
+<span class="source-note-links"><a href="https://quran.com/9/122">https://quran.com/9/122</a></span></article>
+<article class="gn-note-entry" data-note-id="QUR-R045-Q002"><p>Direct quotation from al-Baqarah.</p>
+<span class="source-note-links"><a href="https://quran.com/2/286">al-Baqarah 2:286</a></span></article>
 <article class="gn-note-entry" data-note-id="HAD-R002"><p>Hadith source.</p>
 <span class="source-note-links"><a href="https://sunnah.com/bukhari:185">https://sunnah.com/bukhari:185</a></span></article>
 </main></body></html>"""
@@ -41,15 +41,15 @@ def exercise(engine, browser, width, mobile):
     page.set_content(HTML)
     page.add_style_tag(path=str(DARURI / 'source-note-ui.css'))
     page.add_script_tag(path=str(DARURI / 'source-note-ui.js'))
-    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-source-notes2'")
+    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-qpolicy1'")
     links = page.locator('a.gn-source-icon-link')
     assert links.count() == 4
     verses = page.locator('.gn-verse-source-excerpt')
-    assert verses.count() == 3
+    assert verses.count() == 1
     assert '﴿' in verses.first.inner_text() and '﴾' in verses.first.inner_text()
     assert 'https:' not in page.locator('.gn-unified-notes').inner_text()
     link = links.first
-    assert link.get_attribute('href') == 'https://quran.com/55/4'
+    assert link.get_attribute('href') == 'https://quran.com/4/43'
     assert link.get_attribute('target') == '_blank'
     assert 'noopener' in link.get_attribute('rel')
     dimensions = link.evaluate("e=>({width:e.getBoundingClientRect().width,height:e.getBoundingClientRect().height,touch:getComputedStyle(e).touchAction,callout:getComputedStyle(e).getPropertyValue('-webkit-touch-callout')})")
@@ -74,29 +74,29 @@ def exercise(engine, browser, width, mobile):
         assert not tip.is_visible()
     else:
         link.hover()
-        assert tip.is_visible() and tip.inner_text() == 'https://quran.com/55/4'
+        assert tip.is_visible() and tip.inner_text() == 'https://quran.com/4/43'
         page.keyboard.press('Escape')
         assert not tip.is_visible()
     dynamic = page.evaluate("""() => {
       const a = document.createElement('article');
-      a.className='gn-note-entry'; a.dataset.noteId='QUR-R001-Q049';
-      a.innerHTML='<p>Second note instance</p><span class="source-note-links"><a href="https://quran.com/55/4">Verse</a></span>';
+      a.className='gn-note-entry'; a.dataset.noteId='QUR-R038-Q001';
+      a.innerHTML='<p>Second note instance</p><span class="source-note-links"><a href="https://quran.com/4/43">Verse</a></span>';
       document.body.appendChild(a);return a.id||'added';
     }""")
     page.wait_for_function("document.querySelectorAll('a.gn-source-icon-link').length === 5")
-    assert page.locator('.gn-verse-source-excerpt').count() == 4, 'dynamic popup not enhanced'
+    assert page.locator('.gn-verse-source-excerpt').count() == 2, 'dynamic popup not enhanced'
     page.screenshot(path=str(REPORT / f'{engine}-{width}.png'), full_page=True)
     ctx.close()
     return {'engine':engine,'width':width,'touch':mobile,'target_px':dimensions['width'],
             'native_callout_css':dimensions['callout'],'external_uri':True,
             'touch_focus_hidden':mobile,'keyboard_focus':True,'no_horizontal_overflow':True,
-            'verified_quotes':3,'dynamic_note_updates':True,'contextmenu_not_cancelled':True}
+            'verified_quotes':1,'dynamic_note_updates':True,'contextmenu_not_cancelled':True}
 
 def smoke_full_site(browser, port, engine):
     ctx=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True)
     page=ctx.new_page()
     page.goto(f'http://127.0.0.1:{port}/daruri/', wait_until='domcontentloaded',timeout=90000)
-    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-source-notes2'",timeout=90000)
+    page.wait_for_function("document.documentElement.dataset.gnSourceNotesRevision === '20261021-qpolicy1'",timeout=90000)
     # Source notes are rendered on demand by the current reader: the old
     # fallback article id may legitimately be absent until its note card opens.
     # Add a real dynamic note to the running site and test its active observer.
@@ -104,13 +104,13 @@ def smoke_full_site(browser, port, engine):
       const note = document.createElement('article');
       note.id = 'qa-current-site-source-note';
       note.className = 'gn-note-entry';
-      note.dataset.noteId = 'QUR-R001-Q049';
-      note.innerHTML = '<p>Qurʾān al-Raḥmān 55:4.</p><span class="source-note-links"><a href="https://quran.com/55/4">al-Raḥmān 55:4</a></span>';
+      note.dataset.noteId = 'QUR-R038-Q001';
+      note.innerHTML = '<p>Qurʾān al-Nisāʾ 4:43.</p><span class="source-note-links"><a href="https://quran.com/4/43">al-Nisāʾ 4:43</a></span>';
       document.body.appendChild(note);
     }""")
     page.wait_for_function("document.querySelector('#qa-current-site-source-note a.gn-source-icon-link') !== null",timeout=15000)
     link=page.locator('#qa-current-site-source-note a.gn-source-icon-link').first
-    assert link.get_attribute('href')=='https://quran.com/55/4'
+    assert link.get_attribute('href')=='https://quran.com/4/43'
     assert page.locator('#qa-current-site-source-note .gn-verse-source-excerpt').count() == 1
     assert link.evaluate("e=>e.dispatchEvent(new MouseEvent('contextmenu',{bubbles:true,cancelable:true}))")
     ctx.close()

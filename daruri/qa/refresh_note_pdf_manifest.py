@@ -42,13 +42,13 @@ def validate_and_publish(source: Path, site: Path):
             link_count = sum(len(page.get_links()) for page in document)
             assert link_count > 100, (filename, link_count)
             if filename == 'daruri.pdf':
-                text_pages = [p for p in document if 'Verse wording' in p.get_text()]
-                assert text_pages, 'Verified Quran source excerpt missing'
-                example = '\n'.join(p.get_text() for p in text_pages)
-                assert example.count('Verse wording') >= 3, 'Expected three exact comparison excerpts'
+                text_pages = [p for p in document if 'Verified Qurʾān excerpt' in p.get_text()]
+                assert text_pages, 'Direct Quran quotation excerpt missing'
+                example = '\\n'.join(p.get_text() for p in text_pages)
                 assert 'https://quran.com/' not in example, 'Raw Quran URL visibly printed'
                 external = [link.get('uri', '') for p in text_pages for link in p.get_links()]
-                assert any(u.startswith('https://quran.com/') for u in external), 'Source link URI lost'
+                assert any(u == 'https://quran.com/4/43' for u in external), 'True direct quotation source URI missing'
+                assert all('Cf. Qurʾān, al-Raḥmān 55:4' not in p.get_text() for p in document), 'Weak §1 allusion remains in scholarly apparatus'
             old_pages = manifest['files'][filename]['pages']
             # Source/contents structural changes beyond source-note typography
             # require separate editorial approval; do not silently publish them.
@@ -64,8 +64,8 @@ def validate_and_publish(source: Path, site: Path):
         record.update(sha256=sha, source_sha256=sha, size_bytes=pdf_path.stat().st_size, pages=pages)
         report[filename] = {'pages': pages, 'links': link_count, 'bookmarks': len(outline), 'sha256': sha}
     manifest['edition_date'] = '2026-10-21'
-    manifest['release_revision'] = 'daruri9-source-notes-20261021'
-    manifest['citation_presentation_revision'] = '20261021-source-notes1'
+    manifest['release_revision'] = 'daruri10-conservative-quran-20261021'
+    manifest['citation_presentation_revision'] = '20261021-qpolicy1'
     manifest_file.write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     (source/'source-note-pdf-qa.json').write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(report, indent=2))
