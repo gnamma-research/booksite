@@ -21,6 +21,35 @@ const RD_ICON={
  saved:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
  close:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>'
 };
+
+Object.assign(RD_ICON,{
+ print:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8V3h12v5M5 17H3V9h18v8h-2M6 14h12v7H6z"/></svg>',
+ download:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg>',
+ upload:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17V4m-5 5 5-5 5 5M4 16v5h16v-5"/></svg>',
+ plus:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>',
+ trash:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M8 7l1 14h6l1-14M9 7V4h6v3M10 11v6M14 11v6"/></svg>',
+ share:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="2"/><circle cx="6" cy="12" r="2"/><circle cx="18" cy="19" r="2"/><path d="m8 11 8-5M8 13l8 5"/></svg>',
+ eye:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
+ clock:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>',
+ history:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6v6h6M4 12a8 8 0 1 0 3-6M12 7v5l3 2"/></svg>',
+ edit:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m15 5 4 4M4 20l4-.5L20 7a3 3 0 0 0-4-4L4 15z"/></svg>',
+ az:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19 8 5l5 14M5 15h6M16 6h5l-5 12h5"/></svg>',
+ order:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 5h16M4 10h13M4 15h9M4 20h5"/></svg>',
+ book:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 6c-3-2-6-2-10-1v14c4-1 7-1 10 1 3-2 6-2 10-1V5c-4-1-7-1-10 1zM12 6v14"/></svg>',
+ index:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5h14M5 10h14M5 15h10M5 20h7"/></svg>',
+ link:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 8 0l2-2a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-8 0l-2 2a5 5 0 0 0 7 7l2-2"/></svg>',
+ lesson:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m2 10 10-5 10 5-10 5zM6 12v5c4 3 8 3 12 0v-5"/></svg>',
+ mail:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></svg>'
+});
+function deskButton(action,label,icon,caption='',selected=null,extra=''){
+ return '<button type="button" class="gn-rd-toolbar-icon" data-rd="'+action+'" '+extra+
+ ' title="'+esc(label)+'" aria-label="'+esc(label)+'"'+
+ (selected===null?'':' aria-pressed="'+Boolean(selected)+'"')+'>'+
+ (RD_ICON[icon]||RD_ICON.saved)+(caption?'<span class="gn-rd-icon-caption">'+esc(caption)+'</span>':'')+'</button>';
+}
+function deskChoice(action,value,label,icon,caption,selected){
+ return deskButton(action,label,icon,caption,selected,'data-value="'+esc(value)+'"');
+}
 function rdTool(label,data,icon,selected=false,filled=false){
  return '<button type="button" class="gn-rd-tool-icon'+(selected?' is-on':'')+(filled?' has-content':'')+'" title="'+esc(label)+'" aria-label="'+esc(label)+'" '+data+'>'+RD_ICON[icon]+'</button>';
 }
@@ -28,6 +57,7 @@ const category=it=>it.kind==='note'||it.kind==='footnote'?'notes':['quote','para
 function create(ctx){
  const state=ctx.state, book=ctx.book;
  let records=[],available=true,selection=null,editor=null,origin=null,readingOrigin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
+ let deskPdfPromise=null,deskPdfFile=null,deskPdfURL=null,printRevision=0,printingPDF=false;
  const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
  const printPrefs={order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
  let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,writeConflict=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='',relinkFocus=null;
@@ -366,15 +396,15 @@ function create(ctx){
   parts.push('<strong>'+esc(r.title||titleOf(r.target))+'</strong>');
   if(own)parts.push('<span>'+esc(short(r.body,175))+'</span>');
   else if(relatedCount)parts.push('<span>'+relatedCount+' linked personal '+(relatedCount===1?'note':'notes')+'</span>');
-  parts.push('</button><div class="gn-rd-card-ops">');
-  if(!r.deleted&&canOpen)parts.push('<button type="button" data-rd="open" data-id="'+esc(r.id)+'">Open source</button>');
-  if(r.deleted)parts.push('<button type="button" data-rd="restore" data-id="'+esc(r.id)+'">Restore</button>');
-  parts.push('<details class="gn-rd-card-menu"><summary>More</summary><div>');
-  if(!r.deleted&&own)parts.push('<button type="button" data-rd="edit" data-id="'+esc(r.id)+'">Edit note</button>');
-  if(!r.deleted)parts.push('<button type="button" data-rd="share" data-id="'+esc(r.id)+'">Share</button>');
-  parts.push('<button type="button" data-rd="'+(r.deleted?'delete-permanent':'trash')+'" data-id="'+esc(r.id)+'">'+(r.deleted?'Delete permanently':'Move to Bin')+'</button>');
-  parts.push('</div></details></div></article>');
-  return parts.join('');
+  parts.push('</button><div class="gn-rd-card-ops" role="group" aria-label="Saved item tools">');
+  const data='data-id="'+esc(r.id)+'"';
+  if(!r.deleted&&canOpen)parts.push(deskButton('open','Open original source','book','',null,data));
+  if(r.deleted)parts.push(deskButton('restore','Restore item','history','',null,data));
+  if(!r.deleted&&own)parts.push(deskButton('edit','Edit note','edit','',null,data));
+  if(!r.deleted)parts.push(deskButton('share','Share item','share','',null,data));
+  parts.push(deskButton(r.deleted?'delete-permanent':'trash',r.deleted?'Delete permanently':'Move to Bin','trash','',null,data));
+  parts.push('</div></article>');
+    return parts.join('');
  }
  function render(){
   const main=$('#mainContent');if(!main)return;
@@ -389,22 +419,34 @@ function create(ctx){
   if(loadFailure)parts.push('<div class="gn-rd-warning" role="alert"><strong>Saved data protected.</strong> This browser contains Reading Desk data that could not be read. No new writes will overwrite it. <button type="button" data-rd="download-original">Download untouched original data</button></div>');
   else if(writeConflict)parts.push('<div class="gn-rd-warning" role="alert"><strong>Reading Desk changed in another tab.</strong> New writes are paused to protect the newer collection. <button type="button" data-rd="refresh-storage">Reload saved items</button></div>');
   else if(!available)parts.push('<p class="gn-rd-warning" role="alert">Browser storage is unavailable or full. Download a backup before leaving.</p>');
-  parts.push('<div class="gn-rd-toolbar" role="group" aria-label="Reading Desk actions"><div class="gn-rd-toolbar-main">');
-  parts.push('<button type="button" data-rd="new-note">+ New note</button><button type="button" data-rd="print-list">Print / save PDF</button><button type="button" data-rd="personal-pdf">Book PDF + personal notes</button>');
-  parts.push('<details class="gn-rd-tools-menu"><summary>Tools</summary><div>');
-  parts.push('<button type="button" data-rd="export">Download backup (JSON)</button><button type="button" data-rd="share-backup">Share backup…</button>');
-  parts.push('<button type="button" data-rd="export-markdown">Export notes (Markdown)</button><button type="button" data-rd="import">Import backup</button>');
-  parts.push('<button type="button" data-rd="filter" data-value="bin">Bin ('+records.filter(r=>r.deleted).length+')</button>');
-  parts.push('<label class="gn-rd-indicator-toggle"><input type="checkbox" id="gn-rd-indicators"'+(showPersonalMarks()?' checked':'')+'> Show private marks while reading</label>');
-  parts.push('</div></details></div><input class="gn-rd-file" type="file" id="gn-rd-file" accept="application/json,.json" aria-label="Select Reading Desk backup file" hidden></div>');
-  if(ui.filterTarget)parts.push('<p class="gn-rd-scoped">Items from '+esc(ctx.sectionRef(ui.filterTarget))+(ui.filterSegment!==null?' · paragraph '+(ui.filterSegment+1):'')+' <button data-rd="unscoped" type="button">Show all</button></p>');
+  parts.push('<div class="gn-rd-toolbar" role="toolbar" aria-label="Reading Desk tools"><div class="gn-rd-toolbar-main">');
+  parts.push(deskButton('new-note','New personal note','plus','New note'));
+  parts.push(deskButton('print-list','Print or download Reading Desk PDF','print','Print / PDF'));
+  parts.push('</div><div class="gn-rd-toolbar-utilities" role="group" aria-label="Backups and utilities">');
+  parts.push(deskButton('export','Download full JSON backup','download'));
+  parts.push(deskButton('import','Import a JSON backup','upload'));
+  parts.push(deskButton('export-markdown','Export notes as Markdown','saved'));
+  parts.push(deskButton('share-backup','Share JSON backup','share'));
+  parts.push(deskButton('toggle-marks','Show personal marks while reading','eye','',showPersonalMarks()));
+  const binCount=records.filter(r=>r.deleted).length;
+  parts.push('<span class="gn-rd-bin-tool">'+deskChoice('filter','bin','Bin ('+binCount+')','trash','',ui.category==='bin')+
+   (binCount?'<span class="gn-rd-tool-count" aria-hidden="true">'+binCount+'</span>':'')+'</span>');
+  parts.push('</div><input class="gn-rd-file" type="file" id="gn-rd-file" accept="application/json,.json" aria-label="Select Reading Desk backup file" hidden></div>');
+    if(ui.filterTarget)parts.push('<p class="gn-rd-scoped">Items from '+esc(ctx.sectionRef(ui.filterTarget))+(ui.filterSegment!==null?' · paragraph '+(ui.filterSegment+1):'')+' <button data-rd="unscoped" type="button">Show all</button></p>');
   if(bin)parts.push('<p class="gn-rd-scoped">Bin <button type="button" data-rd="filter" data-value="all">← Back to saved items</button></p>');
-  else parts.push('<div class="gn-rd-tabs" role="group" aria-label="Reading Desk categories">'+CATEGORIES.map(k=>'<button type="button" data-rd="filter" data-value="'+k+'" aria-pressed="'+(ui.category===k)+'">'+LABELS[k]+'</button>').join('')+'</div>');
-  parts.push('<label class="gn-rd-search">Search Reading Desk <input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search saved text and notes…" value="'+esc(ui.query)+'"></label>');
-  const typeOptions=[['all','All sources'],['text','Text passages'],['booknotes','Book notes'],['dictionary','Dictionary'],['index','Subject index'],['bidaya','Bidāya'],['lessons','Lessons']];
-  parts.push('<div class="gn-rd-controls"><label>Source <select id="gn-rd-source">'+typeOptions.map(([value,name])=>'<option value="'+value+'"'+(ui.sourceType===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label>');
-  parts.push('<label>Sort by <select id="gn-rd-sort">'+Object.entries(SORTS).map(([value,name])=>'<option value="'+value+'"'+(ui.sort===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label></div>');
-  parts.push('<p class="gn-rd-count" aria-live="polite">'+visible.length+' '+(bin?'items in Bin':'saved items')+'</p>');
+  else parts.push('<div class="gn-rd-tabs" role="group" aria-label="Saved item categories">'+
+   deskChoice('filter','all','All saved items','saved','All',ui.category==='all')+
+   deskChoice('filter','bookmarks','Bookmarks','bookmark','Saved',ui.category==='bookmarks')+
+   deskChoice('filter','mine','My notes','note','Notes',ui.category==='mine')+'</div>');
+  parts.push('<label class="gn-rd-search">Search saved material <input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search saved text and notes…" value="'+esc(ui.query)+'"></label>');
+  const typeOptions=[['all','All sources','saved','All'],['text','Text passages','book','Text'],['booknotes','Book notes','note','Book'],['dictionary','Dictionary','book','Dict.'],['index','Subject index','index','Index'],['bidaya','Bidāya','link','Bidāya'],['lessons','Lessons','lesson','Study']];
+  const sortOptions=[['created-desc','Newest saved','clock','New'],['created-asc','Oldest saved','history','Old'],['modified-desc','Recently edited','edit','Edited'],['source','Text / source order','order','Source'],['alpha','Title A–Z','az','A–Z']];
+  parts.push('<div class="gn-rd-controls" aria-label="Reading Desk filter and order toolbars">');
+  parts.push('<div class="gn-rd-option-group" role="group" aria-label="Source filters"><span class="gn-rd-option-label">Source</span><div class="gn-rd-option-buttons">'+
+    typeOptions.map(([value,name,icon,short])=>deskChoice('source-filter',value,name,icon,short,ui.sourceType===value)).join('')+'</div></div>');
+  parts.push('<div class="gn-rd-option-group" role="group" aria-label="Sort saved items"><span class="gn-rd-option-label">Order</span><div class="gn-rd-option-buttons">'+
+    sortOptions.map(([value,name,icon,short])=>deskChoice('sort-filter',value,name,icon,short,ui.sort===value)).join('')+'</div></div></div>');
+    parts.push('<p class="gn-rd-count" aria-live="polite">'+visible.length+' '+(bin?'items in Bin':'saved items')+'</p>');
   parts.push('<div class="gn-rd-layout"><div class="gn-rd-cards" id="gn-rd-cards">');
   let lastGroup='',lastPassage='';
   for(const r of visible){
@@ -438,15 +480,21 @@ function create(ctx){
     parts.push(relatives.slice(0,12).map(r=>'<button type="button" data-rd="related" data-id="'+esc(r.id)+'">'+esc(short(r.title||titleOf(r.target),100))+'</button>').join(''));
     parts.push('</section>');
    }
-   parts.push('<div class="gn-rd-detail-actions">');
-   if(bin)parts.push('<button type="button" data-rd="restore" data-id="'+esc(selected.id)+'">Restore</button>');
+   parts.push('<div class="gn-rd-detail-actions" role="toolbar" aria-label="Saved item tools">');
+   const itemId='data-id="'+esc(selected.id)+'"';
+   if(bin)parts.push(deskButton('restore','Restore item','history','Restore',null,itemId));
    else{
-    if(selected.target&&isResolved(selected))parts.push('<button type="button" data-rd="open" data-id="'+esc(selected.id)+'">Open in source</button><button type="button" data-rd="add-note" data-id="'+esc(selected.id)+'">Add note</button>');
-    if(!isResolved(selected))parts.push('<button type="button" data-rd="relink" data-id="'+esc(selected.id)+'">Relink source…</button>');
-    if(selected.kind==='note')parts.push('<button type="button" data-rd="edit" data-id="'+esc(selected.id)+'">Edit</button>');
+    if(selected.target&&isResolved(selected)){
+     parts.push(deskButton('open','Open original source','book','Source',null,itemId));
+     parts.push(deskButton('add-note','Add linked note','plus','Add note',null,itemId));
+    }
+    if(!isResolved(selected))parts.push(deskButton('relink','Relink archival source','link','Relink',null,itemId));
+    if(selected.kind==='note')parts.push(deskButton('edit','Edit personal note','edit','Edit',null,itemId));
    }
-   parts.push('<button type="button" data-rd="share" data-id="'+esc(selected.id)+'">Share</button><button type="button" data-rd="email" data-id="'+esc(selected.id)+'">Email</button><button type="button" data-rd="print" data-id="'+esc(selected.id)+'">Print</button></div>');
-  }else parts.push('<div class="gn-rd-detail-placeholder"><h2>Choose an item</h2><p>Select a bookmark or personal note to see its source and context.</p></div>');
+   parts.push(deskButton('share','Share saved item','share','Share',null,itemId));
+   parts.push(deskButton('email','Email saved item','mail','Email',null,itemId));
+   parts.push(deskButton('print','Print or download this item','print','Print',null,itemId)+'</div>');
+    }else parts.push('<div class="gn-rd-detail-placeholder"><h2>Choose an item</h2><p>Select a bookmark or personal note to see its source and context.</p></div>');
   parts.push('</div></div>');
   if(bin&&visible.length)parts.push('<div class="gn-rd-bin-actions"><button type="button" data-rd="restore-all">Restore all</button><button type="button" data-rd="empty-bin">Empty Bin…</button></div>');
   parts.push('<p class="gn-rd-privacy">Personal data is stored on this device. Download a JSON backup to transfer it. Markdown export is for reading, not re-importing.</p></section>');
@@ -1014,11 +1062,81 @@ function create(ctx){
   download(lines.join('\n'),'Reading-Desk-'+new Date().toISOString().slice(0,10)+'.md');
   ctx.notify('Readable Markdown notes exported. Keep JSON backups for importing.');
  }
+ function invalidateDeskPdf(){
+  printRevision++;
+  if(deskPdfURL){try{URL.revokeObjectURL(deskPdfURL);}catch(_){}}
+  deskPdfURL=null;deskPdfFile=null;
+  const result=printRoot?.querySelector('#gn-rd-pdf-result');
+  if(result)result.hidden=true;
+ }
+ function printMessage(message,error=false){
+  const status=printRoot?.querySelector('#gn-rd-pdf-message');
+  if(status){status.textContent=message;status.classList.toggle('gn-rd-error',Boolean(error));}
+ }
  function closePrintPreview(){
   if(!printRoot)return;
+  invalidateDeskPdf();
   const focus=printFocus;printFocus=null;printRoot.remove();printRoot=null;printSelection=null;
   document.body.classList.remove('gn-rd-print');
   if(focus?.isConnected)focus.focus({preventScroll:true});
+ }
+ function ensureDeskPdf(){
+  if(window.GnammaDeskPdf)return Promise.resolve(window.GnammaDeskPdf);
+  if(deskPdfPromise)return deskPdfPromise;
+  deskPdfPromise=new Promise((resolve,reject)=>{
+   const script=document.createElement('script');
+   script.async=true;script.src=new URL('reading-desk-pdf.js?v=20261021-rdiconpdf1',location.href).href;
+   const timer=setTimeout(()=>{script.remove();reject(Error('Local PDF exporter did not load. Use Print instead.'));},18000);
+   script.onload=()=>{clearTimeout(timer);window.GnammaDeskPdf?resolve(window.GnammaDeskPdf):reject(Error('PDF exporter was not initialised.'));};
+   script.onerror=()=>{clearTimeout(timer);script.remove();reject(Error('PDF exporter unavailable. Try Print or reconnect once for offline caching.'));};
+   document.head.append(script);
+  }).catch(error=>{deskPdfPromise=null;throw error;});
+  return deskPdfPromise;
+ }
+ async function downloadDeskPdf(){
+  if(!printRoot||printingPDF)return;
+  const root=printRoot,revision=printRevision,button=root.querySelector('[data-rd="download-pdf"]');
+  printingPDF=true;if(button){button.disabled=true;button.setAttribute('aria-busy','true');}
+  printMessage('Creating a PDF on this device…');
+  try{
+   const exporter=await ensureDeskPdf(),output=await exporter.makePdf(root);
+   if(root!==printRoot||revision!==printRevision)return;
+   invalidateDeskPdf();
+   deskPdfFile=new File([output.blob],'Daruri-Reading-Desk-'+new Date().toISOString().slice(0,10)+'.pdf',{type:'application/pdf'});
+   deskPdfURL=URL.createObjectURL(deskPdfFile);
+   const link=root.querySelector('#gn-rd-pdf-link');
+   link.href=deskPdfURL;link.download=deskPdfFile.name;
+   const result=root.querySelector('#gn-rd-pdf-result');
+   if(result)result.hidden=false;
+   const share=root.querySelector('[data-rd="share-pdf"]');
+   if(share)share.hidden=!(navigator.share&&(!navigator.canShare||navigator.canShare({files:[deskPdfFile]})));
+   const warning=output.warnings.length?
+    ' Some uncommon characters could not be embedded ('+output.warnings.length+'). Use Print for exact glyph fidelity.':'';
+   printMessage('PDF ready — '+output.pages+' '+(output.pages===1?'page':'pages')+'. If the download did not start, tap Download ready PDF below.'+warning);
+   link.click();
+  }catch(error){
+   if(root===printRoot)printMessage('PDF could not be created: '+String(error?.message||error)+'. Use Print or download a JSON backup.',true);
+  }finally{
+   printingPDF=false;
+   if(button?.isConnected){button.disabled=false;button.removeAttribute('aria-busy');}
+  }
+ }
+ async function shareDeskPdf(){
+  if(!deskPdfFile){printMessage('Download a PDF first.');return;}
+  if(navigator.share){
+   try{await navigator.share({files:[deskPdfFile],title:'Reading Desk PDF'});return;}
+   catch(error){if(error?.name==='AbortError')return;}
+  }
+  printMessage('File sharing is unavailable. Use Download ready PDF and your device’s Files or Share menu.',true);
+ }
+ function refreshPrintToolbar(){
+  if(!printRoot)return;
+  printRoot.querySelectorAll('[data-rd="print-order"]').forEach(button=>{
+   button.setAttribute('aria-pressed',String(button.dataset.value===printPrefs.order));
+  });
+  printRoot.querySelectorAll('[data-rd="print-toggle"]').forEach(button=>{
+   button.setAttribute('aria-pressed',String(Boolean(printPrefs[button.dataset.key])));
+  });
  }
  function printSourcePreview(t){
   if(!t||!['quote','paragraph','section'].includes(t.kind))return '';
@@ -1102,29 +1220,51 @@ function create(ctx){
   if(!all.length){ctx.notify('Nothing to print in this view.');return;}
   closePrintPreview();printSelection=selected?all.map(r=>r.id):null;
   printFocus=document.activeElement;printRoot=document.createElement('div');printRoot.id='gn-rd-print-root';
-  printRoot.setAttribute('role','dialog');printRoot.setAttribute('aria-modal','true');printRoot.setAttribute('aria-label','Reading Desk print preview');
-  const options=[['source','Text / source order'],['created-asc','Oldest saved first'],['created-desc','Newest saved first'],['shown','As currently displayed']];
-  const choice=(key,title,checked)=>'<label class="gn-rd-print-check"><input type="checkbox" data-rd-print-option="'+key+'"'+(checked?' checked':'')+'> '+title+'</label>';
-  printRoot.innerHTML='<div class="gn-rd-print-actions"><div><h2>Print / save PDF · Reading Desk</h2>'+
-    '<p id="gn-rd-print-order-summary"></p></div><div class="gn-rd-print-buttons">'+
-    '<button type="button" data-rd="print-now">Print / save PDF</button>'+
-    '<button type="button" data-rd="close-print">Close preview</button></div></div>'+
-    '<div class="gn-rd-print-options"><label>Print order <select data-rd-print-option="order">'+
-    options.map(([value,title])=>'<option value="'+value+'"'+(printPrefs.order===value?' selected':'')+'>'+title+'</option>').join('')+
-    '</select></label>'+choice('arabic','Arabic',printPrefs.arabic)+choice('english','English',printPrefs.english)+
-    choice('personal','Personal notes',printPrefs.personal)+choice('dates','Note dates',printPrefs.dates)+
-    choice('bookmarkDates','Bookmark dates',printPrefs.bookmarkDates)+choice('full','Full source passages',printPrefs.full)+'</div>'+
-    '<main class="gn-rd-print-sheet"><header><h1>Reading Desk</h1><p>al-Ḍarūrī · '+all.length+' '+(all.length===1?'saved item':'saved items')+'</p></header>'+
-    '<div id="gn-rd-print-sheet-body"></div></main>';
+  printRoot.setAttribute('role','dialog');printRoot.setAttribute('aria-modal','true');
+  printRoot.setAttribute('aria-label','Reading Desk print and PDF settings');
+  const options=[['source','Text / source order','order','Source'],['created-asc','Oldest saved first','history','Old'],['created-desc','Newest saved first','clock','New'],['shown','As displayed','saved','Shown']];
+  const choice=([value,label,icon,caption])=>deskChoice('print-order',value,label,icon,caption,printPrefs.order===value);
+  const toggle=(key,label,icon,caption)=>deskButton('print-toggle',label,icon,caption,printPrefs[key],'data-key="'+key+'"');
+  printRoot.innerHTML='<div class="gn-rd-print-actions"><div><h2>Reading Desk · Print &amp; PDF</h2>'+
+   '<p id="gn-rd-print-order-summary"></p></div><div class="gn-rd-print-buttons">'+
+   '<button type="button" class="gn-rd-print-primary" data-rd="download-pdf">'+RD_ICON.download+'<span>Download PDF</span></button>'+
+   '<button type="button" data-rd="print-now">'+RD_ICON.print+'<span>Print</span></button>'+
+   '<button type="button" data-rd="close-print">'+RD_ICON.close+'<span>Close</span></button></div></div>'+
+   '<p class="gn-rd-print-help">Download produces a PDF file on this device. Print opens your browser’s print dialog, where Save as PDF may also be available.</p>'+
+   '<div class="gn-rd-print-options" role="group" aria-label="PDF options">'+
+   '<div class="gn-rd-option-group" role="group" aria-label="Printing order"><span class="gn-rd-option-label">Order</span><div class="gn-rd-option-buttons">'+options.map(choice).join('')+'</div></div>'+
+   '<div class="gn-rd-option-group" role="group" aria-label="Languages"><span class="gn-rd-option-label">Language</span><div class="gn-rd-option-buttons">'+
+   deskButton('print-toggle','Include Arabic','book','AR',printPrefs.arabic,'data-key="arabic"')+
+   deskButton('print-toggle','Include English','book','EN',printPrefs.english,'data-key="english"')+'</div></div>'+
+   '<div class="gn-rd-option-group" role="group" aria-label="Include in PDF"><span class="gn-rd-option-label">Include</span><div class="gn-rd-option-buttons">'+
+   toggle('personal','Personal notes','note','Notes')+
+   toggle('dates','Note creation and editing dates','clock','Dates')+
+   toggle('bookmarkDates','Bookmark dates','bookmark','Saved')+
+   toggle('full','Full source passages','saved','Full text')+'</div></div></div>'+
+   '<p id="gn-rd-pdf-message" class="gn-rd-pdf-message" role="status" aria-live="polite">Choose Download PDF or Print above. Options update the document below.</p>'+
+   '<div id="gn-rd-pdf-result" class="gn-rd-pdf-result" hidden><a id="gn-rd-pdf-link" download>Download ready PDF</a>'+
+   '<button type="button" data-rd="share-pdf" hidden>Share PDF…</button></div>'+
+   '<main class="gn-rd-print-sheet"><header><h1>Reading Desk</h1><p>al-Ḍarūrī · '+all.length+' '+(all.length===1?'saved item':'saved items')+'</p></header>'+
+   '<div id="gn-rd-print-sheet-body"></div></main>';
   document.body.append(printRoot);document.body.classList.add('gn-rd-print');
   updatePrintSheet();
-  printRoot.querySelector('[data-rd="print-now"]')?.focus({preventScroll:true});
+  printRoot.querySelector('[data-rd="download-pdf"]')?.focus({preventScroll:true});
  }
  function handle(event){
   const btn=event.target.closest?.('[data-rd]');if(!btn)return;
   event.preventDefault();event.stopImmediatePropagation();
   const id=btn.dataset.id,action=btn.dataset.rd,row=records.find(r=>r.id===id);
   if(action==='filter'){ui.category=btn.dataset.value;ui.selected='';ui.mobileDetail=false;ui.listScroll=0;if(ui.category==='bin'){ui.filterTarget='';ui.filterSegment=null;ui.sourceType='all';}render();window.scrollTo({top:0,behavior:'instant'});return;}
+  if(action==='source-filter'){ui.sourceType=btn.dataset.value;ui.selected='';ui.mobileDetail=false;render();return;}
+  if(action==='sort-filter'){ui.sort=btn.dataset.value;ui.selected='';ui.mobileDetail=false;render();return;}
+  if(action==='toggle-marks'){
+   const checked=!showPersonalMarks();
+   try{localStorage.setItem('gnamma-rd-show-personal-marks',String(checked));}
+   catch(_){ctx.notify('Cannot save this preference in this browser.');return;}
+   document.querySelectorAll('#gn-rd-visuals-toggle').forEach(input=>{input.checked=checked;});
+   if(state.route==='bookmarks')render();else if(state.route==='reader')afterReader();
+   ctx.notify(checked?'Personal marks enabled.':'Personal marks hidden during reading.');return;
+  }
   if(action==='unscoped'){ui.filterTarget='';ui.filterSegment=null;ui.category='all';ui.selected='';ui.mobileDetail=false;render();return;}
   if(action==='select'||action==='related'){
    if(action==='related'){ui.category='all';ui.sourceType='all';ui.filterTarget='';ui.filterSegment=null;}
@@ -1183,8 +1323,23 @@ function create(ctx){
   if(action==='email'&&row){shareItem(row,true);return;}
   if(action==='print'&&row){preparePrint([row]);return;}
   if(action==='print-list'){preparePrint();return;}
-   if(action==='personal-pdf'){location.href=new URL('personal-export.html',location.href).href;return;}
-  if(action==='print-now'){if(!printRoot)return;window.print();return;}
+  if(action==='download-pdf'){void downloadDeskPdf();return;}
+  if(action==='share-pdf'){void shareDeskPdf();return;}
+  if(action==='print-order'&&printRoot){
+   if(!['source','created-asc','created-desc','shown'].includes(btn.dataset.value))return;
+   printPrefs.order=btn.dataset.value;refreshPrintToolbar();updatePrintSheet();invalidateDeskPdf();return;
+  }
+  if(action==='print-toggle'&&printRoot){
+   const key=btn.dataset.key;
+   if(!['arabic','english','personal','dates','bookmarkDates','full'].includes(key))return;
+   printPrefs[key]=!printPrefs[key];refreshPrintToolbar();updatePrintSheet();invalidateDeskPdf();return;
+  }
+  if(action==='print-now'){
+   if(!printRoot)return;
+   try{window.print();printMessage('Print dialog requested. If it does not appear, use Download PDF.');}
+   catch(_){printMessage('Your browser blocked printing. Select Download PDF above.',true);}
+   return;
+  }
   if(action==='close-print'){closePrintPreview();return;}
   if(action==='export'){if(loadFailure){download(untouchedStorage||'','Reading-Desk-original-recovery.txt');ctx.notify('Original, unmodified browser data downloaded.');}else{download(backup(),'Reading-Desk-'+new Date().toISOString().slice(0,10)+'.json');ctx.notify('Reading Desk backup downloaded.');}return;}
   if(action==='download-original'){if(untouchedStorage!==null){download(untouchedStorage,'Reading-Desk-original-recovery.txt');ctx.notify('Untouched original data downloaded.');}return;}
@@ -1265,7 +1420,7 @@ function create(ctx){
   const main=$('#mainContent');if(main){let scheduled=false;new MutationObserver(()=>{if(scheduled||decorating)return;scheduled=true;queueMicrotask(()=>{scheduled=false;decorate();});}).observe(main,{subtree:true,childList:true});}
  }
  install();
- return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records};
+ return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records,};
 }
 window.GnammaReadingDesk={create};
 })();
