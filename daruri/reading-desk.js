@@ -171,8 +171,9 @@ function create(ctx){
   return items.slice().sort((a,b)=>{
    if(sort==='source')return sourceSort(a,b);
    if(sort==='alpha')return (a.title||titleOf(a.target)).localeCompare(b.title||titleOf(b.target),undefined,{numeric:true,sensitivity:'base'})||sourceSort(a,b);
-   if(sort==='modified-desc')return (b.modified||b.updated)-(a.modified||a.updated)||sourceSort(a,b);
-   const av=a.created||a.updated,bv=b.created||b.updated;
+   if(sort==='modified-desc')return (b.modified||(b.kind==='note'?b.created:0))-(a.modified||(a.kind==='note'?a.created:0))||sourceSort(a,b);
+   const av=a.created||0,bv=b.created||0;
+   if(!av!==!bv)return av?-1:1;
    return sort==='created-asc'?av-bv||sourceSort(a,b):bv-av||sourceSort(a,b);
   });
  }
@@ -268,6 +269,16 @@ function create(ctx){
   return html;
  }
  function grouped(r){return r.kind==='note'?'My note':r.kind==='footnote'?'Book note':LABELS[typeOf(r)]||'Bookmark';}
+ function matching(){
+  const q=norm(ui.query).toLocaleLowerCase(),bin=ui.category==='bin';
+  const rows=records.filter(r=>Boolean(r.deleted)===bin&&
+   (!ui.filterTarget||r.target?.section===ui.filterTarget)&&
+   (ui.filterSegment===null||r.target?.segment===ui.filterSegment)&&
+   (bin||ui.category==='all'||ui.category==='mine'&&r.kind==='note'||ui.category==='bookmarks'&&r.kind!=='note')&&
+   (bin||ui.sourceType==='all'||typeOf(r)===ui.sourceType)&&
+   (!q||norm([r.title,titleOf(r.target),r.body,r.target?.quote,r.target?.term,r.target?.app,subOf(r.target)].join(' ')).toLocaleLowerCase().includes(q)));
+  return bin?rows.sort((a,b)=>b.deleted-a.deleted):sortItems(rows,ui.sort);
+ }
  function htmlCard(r){
   const own=r.kind==='note',related=own?[]:active().filter(x=>x.kind==='note'&&x.target&&sourceKey(x.target)===sourceKey(r.target));
   const canOpen=!!r.target;
@@ -302,6 +313,7 @@ function create(ctx){
   parts.push('<button type="button" data-rd="export">Download backup (JSON)</button><button type="button" data-rd="share-backup">Share backup…</button>');
   parts.push('<button type="button" data-rd="export-markdown">Export notes (Markdown)</button><button type="button" data-rd="import">Import backup</button>');
   parts.push('<button type="button" data-rd="filter" data-value="bin">Bin ('+records.filter(r=>r.deleted).length+')</button>');
+  parts.push('<label class="gn-rd-indicator-toggle"><input type="checkbox" id="gn-rd-indicators"'+(showPersonalMarks()?' checked':'')+'> Show private marks while reading</label>');
   parts.push('</div></details></div><input class="gn-rd-file" type="file" id="gn-rd-file" accept="application/json,.json" aria-label="Select Reading Desk backup file" hidden></div>');
   if(ui.filterTarget)parts.push('<p class="gn-rd-scoped">Items from '+esc(ctx.sectionRef(ui.filterTarget))+(ui.filterSegment!==null?' · paragraph '+(ui.filterSegment+1):'')+' <button data-rd="unscoped" type="button">Show all</button></p>');
   if(bin)parts.push('<p class="gn-rd-scoped">Bin <button type="button" data-rd="filter" data-value="all">← Back to saved items</button></p>');
@@ -560,7 +572,7 @@ function create(ctx){
  function markReader(){
   if(!window.CSS?.highlights||typeof Highlight==='undefined')return;
   ['gn-rd-bookmark','gn-rd-note','gn-rd-target'].forEach(k=>CSS.highlights.delete(k));
-  if(state.focusMode||!showPersonalMarks())return;
+  if(state.focusMode||state.focusLevel===3||!showPersonalMarks())return;
   const marks=[],annotations=[];
   for(const item of active()){
    const t=item.target;if(!t||t.kind!=='quote'||t.section!==String(state.n))continue;
@@ -818,7 +830,7 @@ function create(ctx){
   if(printPrefs.order!=='source')return rows.map(r=>[r]);
   const groups=new Map();
   for(const r of rows){
-   const k=sourceKey(r.target);
+   const k=r.target?sourceKey(r.target):'unattached:'+r.id;
    if(!groups.has(k))groups.set(k,[]);
    groups.get(k).push(r);
   }
@@ -826,7 +838,7 @@ function create(ctx){
  }
  function updatePrintSheet(){
   if(!printRoot)return;
-  const all=printSelection?printSelection.map(id=>records.find(r=>r.id===id)).filter(Boolean):matching();
+  const all=(printSelection?printSelection.map(id=>records.find(r=>r.id===id)).filter(Boolean):matching()).filter(r=>printPrefs.personal||r.kind!=='note');
   const rows=printPrefs.order==='shown'?all:
     printPrefs.order==='source'?sortItems(all,'source'):
     sortItems(all,printPrefs.order);
