@@ -62,6 +62,7 @@ try {
   const studyLink=page.locator('.gn-ed-quicknav a[aria-label="Study edition"]');
   await studyLink.focus();
   assert.equal(await page.locator('[data-ep-info-value]').textContent(),'Study');
+  await readyReading.locator('[data-ep-icon-kind="language"]').getByRole('radio',{checked:true}).focus();
   const readingDrawer=page.locator('.gn-ed-reading-custom');
   assert.equal(await readingDrawer.locator('.gn-ed-paper').isVisible(),false,'Reading excerpt is hidden until custom print opens');
   assert.equal(await page.locator('#gn-ed-study .gn-ed-study-custom .gn-ed-paper').isVisible(),false,'Study excerpt is initially hidden');
