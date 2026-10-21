@@ -14,7 +14,7 @@ def sha(path:Path)->str:return hashlib.sha256(path.read_bytes()).hexdigest()
 def verify(root:Path=APP):
     manifest=json.loads((root/"manifest.json").read_text())
     assert manifest["status"]=="verified"
-    assert len(manifest["files"])==10
+    assert len(manifest["files"])==120
     assert manifest["source_a4_manifest_sha256"]==sha(BASE/"manifest.json")
     originals=json.loads((BASE/"manifest.json").read_text())
     originals={row["file"]:row for row in originals["files"]}
@@ -84,7 +84,7 @@ def verify(root:Path=APP):
             assert len(toc)>=base["bookmarks"]+len(f["apparatus"])
             assert all(row[2]>=1 and row[2]<=len(combined) for row in toc)
         print("PASS",name,"pages",f["pages"],"hash",f["sha256"][:12],"258/258 verified source destinations",flush=True)
-    print("PASS: verified ten apparatus variants, 258 checksum-bound source destinations and unchanged base PDF text",flush=True)
+    print("PASS: verified 120 apparatus variants, 258 checksum-bound source destinations each and unchanged base PDF text",flush=True)
 
 if __name__=="__main__":
     parser=argparse.ArgumentParser()
