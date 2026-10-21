@@ -153,6 +153,8 @@
       ['daruri/study-guide.css', 'study-guide.css'],
       ['daruri/editions.js', 'editions.js?v=20261021-editions1'],
       ['daruri/editions.css', 'editions.css?v=20261021-editions1'],
+      ['daruri/editions-icons.css','editions-icons.css?v=20261021-icons1'],
+      ['daruri/editions-icons.js','editions-icons.js?v=20261021-icons1'],
       ['daruri/personal-export.html', 'personal-export.html'],
       ['daruri/personal-export.js', 'personal-export.js?v=2'],
       ['daruri/personal-pdf-enhancements.js','personal-pdf-enhancements.js?v=2'],
