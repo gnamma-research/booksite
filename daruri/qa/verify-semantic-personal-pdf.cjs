@@ -51,6 +51,13 @@ async function checkedPdf(file,engine,contextSettings){
   assert(/searchable appendix/.test(status),'UI must identify searchable appendix');
   assert.equal(errors.length,0,'Browser JS errors: '+errors.join(' / '));
   assert.deepEqual(requests,[],'No user data or scripts may be sent to third-party hosts');
+  if(engine.name()==='chromium'&&!contextSettings?.viewport&&process.env.GNAMMA_QA_VISUAL_PATH){
+    // Keep a synthetic diagnostic PDF even when subsequent text/search tests
+    // fail; it never contains real Reading Desk data.
+    const target=path.resolve(root,process.env.GNAMMA_QA_VISUAL_PATH);
+    fs.mkdirSync(path.dirname(target),{recursive:true});
+    fs.copyFileSync(filename,target);
+  }
   const bytes=fs.readFileSync(filename),pdf=await PDFDocument.load(bytes),originalPages=manifest.files['daruri.pdf'].pages;
   assert(pdf.getPageCount()>originalPages,'Personal notes must append printable pages');
   // A personal note is no longer a PDF /Text or /Highlight comment.
@@ -151,6 +158,7 @@ async function checkedPdf(file,engine,contextSettings){
  try{
   await delay(1500);
   await checkedPdf('daruri.pdf',chromium,null);
+  if(process.env.GNAMMA_PHONE_FIXTURE_ONLY==='1')return;
   await checkedPdf('daruri.pdf',webkit,{viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2});
   await checkedPdf('daruri.pdf',chromium,{viewport:{width:393,height:852},isMobile:true,hasTouch:true,
     userAgent:'Mozilla/5.0 (Linux; Android 15; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36'});
