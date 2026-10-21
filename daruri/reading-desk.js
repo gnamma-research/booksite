@@ -111,6 +111,11 @@ function create(ctx){
      throw Error('Unsupported saved Reading Desk format');
     storedEnvelope=Object.fromEntries(Object.entries(data).filter(([key])=>!['format','version','items'].includes(key)));
     records=data.items.map(sanitize); // Never truncate records when restoring.
+    const ids=new Set();
+    for(const item of records){
+     if(ids.has(item.id)){item.originalDuplicateId=item.id;item.id=uuid();}
+     ids.add(item.id);
+    }
    }
   }catch(e){
    loadFailure=true;available=false;records=[];
@@ -161,7 +166,7 @@ function create(ctx){
   return true;
  }
  function syncLegacy(doSave){
-  const list=records.filter(r=>r.kind==='section'&&!r.deleted).map(r=>String(r.target.section));
+  const list=records.filter(r=>r.kind==='section'&&!r.deleted&&r.target?.kind==='section'&&section(r.target.section)).map(r=>String(r.target.section));
   ctx.setLegacyBookmarks(list,doSave);
  }
  function active(){return records.filter(r=>!r.deleted);}
@@ -934,13 +939,13 @@ function create(ctx){
  }
  function importFile(file){
   if(!file)return;
-  if(file.size>5*1024*1024){ctx.notify('Backup is too large (maximum 5 MB).');return;}
+  if(file.size>12*1024*1024){ctx.notify('Backup is too large (maximum 12 MB). The existing collection is unchanged.');return;}
   const reader=new FileReader();
   reader.onload=()=>{
    try{
     const parsed=JSON.parse(reader.result);
     if(parsed?.format!==FORMAT||parsed.version!==VERSION||!Array.isArray(parsed.items))throw Error('not a Reading Desk backup');
-    if(parsed.items.length>3000)throw Error('too many items');
+    if(parsed.items.length>20000)throw Error('too many items (maximum 20,000)');
     const incoming=parsed.items.map(sanitize).filter(Boolean);if(parsed.items.length&&!incoming.length)throw Error('No valid entries found');
     const merged=records.slice(),byId=new Map(merged.map(r=>[r.id,r])),now=Date.now();let changes=0;
     for(const row of incoming){
@@ -964,7 +969,7 @@ function create(ctx){
      const copy={...row,id:uuid(),title:(row.title||titleOf(row.target))+' · Imported version',updated:now};
      merged.push(copy);changes++;
     }
-    if(merged.length>3000)throw Error('too many combined items');
+    if(merged.length>20000)throw Error('too many combined items (maximum 20,000)');
     const before=records;records=merged;if(!persist()){records=before;throw Error('Browser storage unavailable');}ui.category='all';ui.filterTarget='';ui.selected='';render();
     ctx.notify(changes+' items merged. Existing and newer items were kept.');
    }catch(e){ctx.notify('Could not import this Reading Desk backup: '+short(e.message,80));}
