@@ -6,11 +6,11 @@
     "daruri.pdf": {
       "title": "Bilingual reference",
       "source_filename": "daruri.pdf",
-      "sha256": "5bef9b0d740695ec96cecdcab9938bc0e6686bf496fba85a3bf8d29794728ad0",
-      "size_bytes": 2666775,
+      "sha256": "45e1f112c6b6e781a20e5076b7fb3d8197f86bdf4b1d5d3445d456fd1f7350d2",
+      "size_bytes": 2666777,
       "pages": 243,
       "default_for_text_links": true,
-      "source_sha256": "5bef9b0d740695ec96cecdcab9938bc0e6686bf496fba85a3bf8d29794728ad0",
+      "source_sha256": "45e1f112c6b6e781a20e5076b7fb3d8197f86bdf4b1d5d3445d456fd1f7350d2",
       "body_page_destinations_preserved": false,
       "contents_pages": {
         "part_overview": [
@@ -34,11 +34,11 @@
     "daruri-study.pdf": {
       "title": "Bilingual study",
       "source_filename": "daruri-study.pdf",
-      "sha256": "588d2d6388d61ebf53b0eabaad14093b9bb59ffa35f2121f5762e66278d9facd",
-      "size_bytes": 1517411,
+      "sha256": "4ed51bb649c4c795a5421a1f8dbf5cb30c0fc54ee5e1c471120d94c28bd9b38c",
+      "size_bytes": 1517417,
       "pages": 131,
       "default_for_text_links": false,
-      "source_sha256": "588d2d6388d61ebf53b0eabaad14093b9bb59ffa35f2121f5762e66278d9facd",
+      "source_sha256": "4ed51bb649c4c795a5421a1f8dbf5cb30c0fc54ee5e1c471120d94c28bd9b38c",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "04_Daruri_Bilingual_Study_2026-10-20.pdf",
@@ -62,11 +62,11 @@
     "daruri-english.pdf": {
       "title": "English reading",
       "source_filename": "daruri-english.pdf",
-      "sha256": "8d07d83c6f1bbc28d6b687c1d38de0cbf732f4e1c77d688244ef557f5a1e6260",
-      "size_bytes": 836528,
+      "sha256": "e18ddc710ff9538562cf6dc59d43ef098347ea60e4fdac74967a85f8aaf84428",
+      "size_bytes": 836535,
       "pages": 97,
       "default_for_text_links": false,
-      "source_sha256": "8d07d83c6f1bbc28d6b687c1d38de0cbf732f4e1c77d688244ef557f5a1e6260",
+      "source_sha256": "e18ddc710ff9538562cf6dc59d43ef098347ea60e4fdac74967a85f8aaf84428",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "02_Daruri_English_Reading_2026-10-20.pdf",
@@ -90,11 +90,11 @@
     "daruri-arabic.pdf": {
       "title": "Arabic reading",
       "source_filename": "daruri-arabic.pdf",
-      "sha256": "55fb5ae81affebc97869c0e84bc5350df88c063f2b637b8e5b0c1aaab87fe656",
-      "size_bytes": 534836,
+      "sha256": "d43394e4693b0ead654e224a07b5b0fd2b9409190dbc8591e71d4e694f7b37fe",
+      "size_bytes": 534842,
       "pages": 73,
       "default_for_text_links": false,
-      "source_sha256": "55fb5ae81affebc97869c0e84bc5350df88c063f2b637b8e5b0c1aaab87fe656",
+      "source_sha256": "d43394e4693b0ead654e224a07b5b0fd2b9409190dbc8591e71d4e694f7b37fe",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "01_Daruri_Arabic_Reading_2026-10-20.pdf",
@@ -112,11 +112,11 @@
     "daruri-arabic-vowelled.pdf": {
       "title": "Arabic fully vowelled",
       "source_filename": "daruri-arabic-vowelled.pdf",
-      "sha256": "3fe8bef9488a1b8dbe8ff463b027aa8836c3f739e2c208d811479a52ee1fc31d",
-      "size_bytes": 836385,
+      "sha256": "d27948ff3f06f64fcdbd46441d4e8e3ed9de33c4e17dcf3066b7864b5c791e01",
+      "size_bytes": 836381,
       "pages": 69,
       "default_for_text_links": false,
-      "source_sha256": "3fe8bef9488a1b8dbe8ff463b027aa8836c3f739e2c208d811479a52ee1fc31d",
+      "source_sha256": "d27948ff3f06f64fcdbd46441d4e8e3ed9de33c4e17dcf3066b7864b5c791e01",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "Daruri_Arabic_Fully_Vowelled_2026-10-20.pdf",
