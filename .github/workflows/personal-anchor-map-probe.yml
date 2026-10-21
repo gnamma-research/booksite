@@ -1,0 +1,18 @@
+name: Verify precision-map geometry
+on:
+  push:
+    branches: [feature/personal-pdf-search-precise-highlights-20261021]
+    paths: ['daruri/build/build_personal_anchor_maps.py','.github/workflows/personal-anchor-map-probe.yml']
+  workflow_dispatch:
+jobs:
+  probe:
+    timeout-minutes: 45
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Install pinned PDF build tools
+        run: pip install -r daruri/build/requirements.txt
+      - name: Compare source layouts with published PDF section anchors
+        run: python daruri/build/build_personal_anchor_maps.py --edition english --edition arabic --probe
