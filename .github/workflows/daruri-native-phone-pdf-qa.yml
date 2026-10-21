@@ -5,7 +5,13 @@ on:
     paths:
       - '.github/workflows/daruri-native-phone-pdf-qa.yml'
       - 'daruri/qa/native-phone/**'
+      - 'daruri/personal-export.js'
+      - 'daruri/personal-pdf-enhancements.js'
+      - 'daruri/qa/verify-semantic-personal-pdf.cjs'
   workflow_dispatch:
+concurrency:
+  group: phone-pdf-qa-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
