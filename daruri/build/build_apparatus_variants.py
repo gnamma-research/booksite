@@ -106,7 +106,7 @@ def applications() -> str:
     for app in BOOK["apps"]:
         number = str(app["n"])
         out.extend([
-            '<article class="application">',
+            '<article class="application" id="application-' + html.escape(str(app["id"]),quote=True) + '">',
             "<h3>" + html.escape(number + " · " + str(app["title"])) + "</h3>",
             '<p class="locator">' + html.escape(str(app["book"]) + " · " + str(app["locator"])) + "</p>",
             "<p>" + html.escape(str(app["text"])) + "</p>",
@@ -120,7 +120,11 @@ def render_component(name: str) -> str:
     return {
         "glossary": lambda: render_glossary(BOOK, "english"),
         "index": lambda: render_index(BOOK, False),
-        "concordance": lambda: render_concordance(BOOK),
+        "concordance": lambda: re.sub(
+            r'<p><a href="#section-(\d+)">',
+            lambda m: '<p id="concordance-'+m.group(1)+'"><a href="#section-'+m.group(1)+'">',
+            render_concordance(BOOK)
+        ),
         "applications": applications,
     }[name]()
 
