@@ -17,7 +17,7 @@ const r=JSON.parse(read('pdf-editions-manifest.json'));
 const crypto=require('node:crypto');
 const addon=JSON.parse(read('editions/apparatus/manifest.json'));
 assert.equal(addon.status,'verified');
-assert.equal(addon.files.length,10,'Ten extra apparatus PDFs must have verified maps');
+assert.equal(addon.files.length,120,'The 120 full-work apparatus PDFs must have verified maps');
 const bases=new Map(m.files.map(x=>[x.file,x]));
 for(const x of addon.files){
   assert.ok(bases.has(x.source_base),'Apparatus base must be a current approved PDF');
@@ -85,4 +85,4 @@ assert.ok(css.includes('.gn-es-spec{')&&css.includes('position:sticky'),
 assert.ok(css.includes('.gn-es [hidden]'),'Hidden categories do not stack');
 assert.ok(js.includes('s.notes!==')&&js.includes('No published PDF'),
  'Unsupported combinations must fail closed');
-console.log('PASS: single Open PDF, 4 settings categories, 10 additional SHA-verified apparatus variants, independent personal-note map links, private-data boundaries.');
+console.log('PASS: single Open PDF, 4 settings categories, 120 SHA-verified apparatus variants, independent personal-note map links, private-data boundaries.');
