@@ -1,0 +1,68 @@
+'use strict';
+/* Safari/WebKit-style browser smoke test for static personal PDF generation. */
+const assert=require('node:assert/strict');
+const fs=require('node:fs'),path=require('node:path'),os=require('node:os');
+const {spawn}=require('node:child_process'),{webkit}=require('playwright');
+const {PDFDocument,PDFArray,PDFName}=require('pdf-lib');
+const root=path.resolve(__dirname,'../..');
+const host='http://127.0.0.1:8767';
+const server=spawn('python3',['-m','http.server','8767','--bind','127.0.0.1'],{cwd:root,stdio:'ignore'});
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function browserCheck(){
+ let browser;
+ try{
+  await sleep(1500);
+  browser=await webkit.launch({headless:true});
+  const page=await browser.newPage({acceptDownloads:true,viewport:{width:390,height:844},
+    isMobile:true,hasTouch:true,deviceScaleFactor:2});
+  const errors=[],outside=[];
+  page.on('pageerror',e=>errors.push(String(e.message)));
+  page.on('request',r=>{if(r.url().startsWith('http')&&!r.url().startsWith(host))outside.push(r.url());});
+  await page.addInitScript(()=>{
+    localStorage.setItem('gnamma-reading-desk-v1',JSON.stringify({
+      format:'gnamma-reading-desk',version:1,items:[
+        {id:'arabic-linked',kind:'note',target:{kind:'quote',section:'1',segment:0,lang:'ar',
+          quote:'بِسْمِ اللَّهِ'},title:'An Arabic-linked reflection',body:'الحق والحقيقة — some English words.',
+          created:Date.UTC(2026,9,21),updated:Date.UTC(2026,9,21),modified:0,dateSource:'recorded',deleted:0},
+        {id:'standalone',kind:'note',target:null,standalone:true,title:'General note',
+          body:'Plain user text <script>alert(1)</script> must not execute.',
+          created:0,updated:1,dateSource:'legacy-unknown',deleted:0}
+      ]
+    }));
+  });
+  await page.goto(host+'/daruri/personal-export.html',{waitUntil:'networkidle'});
+  assert.equal(await page.locator('input[name="pe-mode"]:checked').getAttribute('value'),'none');
+  assert.equal(await page.locator('select#pe-edition option').count(),5);
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+2),
+    '390px mobile viewport should not scroll horizontally');
+  await page.locator('input[name="pe-mode"][value="all"]').check();
+  await page.locator('#pe-edition').selectOption('daruri-english.pdf');
+  assert.match(await page.locator('#pe-count').innerText(),/2 qualifying items/);
+  const downloadEvent=page.waitForEvent('download',{timeout:240000});
+  await page.locator('#pe-generate').click();
+  const download=await downloadEvent,file=path.join(os.tmpdir(),'gnamma-webkit-personal-'+Date.now()+'.pdf');
+  await download.saveAs(file);
+  const pdf=await PDFDocument.load(fs.readFileSync(file));
+  const metadata=JSON.parse(fs.readFileSync(path.join(root,'daruri/build/release/daruri-english.pdf.metadata.json'),'utf8'));
+  const manifest=JSON.parse(fs.readFileSync(path.join(root,'daruri/pdf-editions-manifest.json'),'utf8'));
+  assert(pdf.getPageCount()>manifest.files['daruri-english.pdf'].pages,'WebKit export needs printable appendix');
+  const section=pdf.getPage(Number(metadata.section_pages['1'])-1);
+  const annotations=section.node.lookup(PDFName.of('Annots'),PDFArray);
+  assert(annotations?.size()>0,'WebKit generated PDF must retain native annotations');
+  let native=false;
+  for(let i=0;i<annotations.size();i++){
+    const d=pdf.context.lookup(annotations.get(i));
+    if(String(d.lookup(PDFName.of('Subtype')))==='/Text')native=true;
+  }
+  assert(native,'WebKit PDF comments must be true native /Text annotations');
+  assert(await page.locator('#pe-result').isVisible(),'WebKit download recovery links should display');
+  await page.locator('input[name="pe-mode"][value="none"]').check();
+  assert(!await page.locator('#pe-result').isVisible(),'changing to clean PDF must hide previous private download');
+  assert.equal(await page.locator('#pe-generate').innerText(),'Open unchanged PDF');
+  assert.deepEqual(outside,[],'private note export must not execute third party scripts');
+  assert.deepEqual(errors,[],'no WebKit script errors');
+  fs.unlinkSync(file);
+  console.log('PASS WebKit mobile 390px: opt-out, Arabic Unicode note, local library, native annotations, appendix, no horizontal scroll.');
+ }finally{if(browser)await browser.close();server.kill();}
+}
+browserCheck().catch(e=>{console.error(e);server.kill();process.exitCode=1;});
