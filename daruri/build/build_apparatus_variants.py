@@ -144,7 +144,7 @@ def named_sections(doc: fitz.Document) -> dict[int, dict]:
         if xy is None:  # A valid page alone is sufficient for safe navigation.
             x, y = 40., 70.
         else:
-            x, y = float(xy.x), float(xy.y)
+            x, y = (float(xy[0]), float(xy[1])) if isinstance(xy, (tuple,list)) else (float(xy.x), float(xy.y))
         if not all(-5 <= z <= 2000 for z in (x, y)):
             raise ValueError(f"Section {n} has invalid coordinates: {x}, {y}")
         entries[n] = {"page": p + 1, "x": round(x, 2), "y": round(y, 2)}
