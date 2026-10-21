@@ -1,6 +1,6 @@
 {
   "filename": "daruri-reading-bilingual-unvowelled-glossary-index.pdf",
-  "source_sha256": "e18b4999517c6c2e0c89b29cb14a7c82ca52e432a97d8639dbc51ad61dade2f3",
+  "source_sha256": "9c80356141fb448a71d07c3841316ebb00ef42094a6c96d8134cabdc74a68dc4",
   "base_sha256": "dfc94e9a2a54257e65a1aa21463e4f4ae1e7cfa44fa3e99735f58cee7f28b262",
   "section_pages": {
     "1": 1,
@@ -4601,7 +4601,8 @@
         "y": 532.02
       }
     },
-    "applications": {}
+    "applications": {},
+    "concordance": {}
   },
   "entry_mapping_method": "WeasyPrint named HTML anchors; source appendix pages verified byte-for-byte in extracted text",
   "entry_count": 608

@@ -1,6 +1,6 @@
 {
   "filename": "daruri-reading-bilingual-index.pdf",
-  "source_sha256": "a9c9d06ff1b2a903b2d16e6cd62e0be31a4ac4c2db83ecce0413b1f5485e3c77",
+  "source_sha256": "5bd5c58985767fd06774cec425bcdc83fb8f302c1e65fad6b6c27fde48b04666",
   "base_sha256": "3c5c0c3f033f52103405fa27baa0000346059be38cb7873aba791c142c44ea36",
   "section_pages": {
     "1": 1,
@@ -3071,7 +3071,8 @@
         "y": 532.02
       }
     },
-    "applications": {}
+    "applications": {},
+    "concordance": {}
   },
   "entry_mapping_method": "WeasyPrint named HTML anchors; source appendix pages verified byte-for-byte in extracted text",
   "entry_count": 302

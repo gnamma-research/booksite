@@ -1585,8 +1585,8 @@
   "apparatus": [
     "index"
   ],
-  "sha256": "a9c9d06ff1b2a903b2d16e6cd62e0be31a4ac4c2db83ecce0413b1f5485e3c77",
-  "bytes": 1390697,
+  "sha256": "5bd5c58985767fd06774cec425bcdc83fb8f302c1e65fad6b6c27fde48b04666",
+  "bytes": 1390699,
   "entry_positions": {
     "terms": {
       "abrogation (naskh)": {
@@ -3100,7 +3100,8 @@
         "y": 532.02
       }
     },
-    "applications": {}
+    "applications": {},
+    "concordance": {}
   },
   "entry_mapping_method": "WeasyPrint named HTML anchors; source appendix pages verified byte-for-byte in extracted text",
   "entry_count": 302

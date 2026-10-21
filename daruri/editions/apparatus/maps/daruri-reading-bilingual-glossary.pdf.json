@@ -1,6 +1,6 @@
 {
   "filename": "daruri-reading-bilingual-glossary.pdf",
-  "source_sha256": "0547011ae6ba4477f18606d1a860faeeb1e0f323f15ef127863b9415d6ba9e6e",
+  "source_sha256": "c3b1b0035e7b8bc864a295051aa57a47d21216df5b81f1dd6273dc0c0ccc2e5d",
   "base_sha256": "3c5c0c3f033f52103405fa27baa0000346059be38cb7873aba791c142c44ea36",
   "section_pages": {
     "1": 1,
@@ -3091,7 +3091,8 @@
         "y": 424.49
       }
     },
-    "applications": {}
+    "applications": {},
+    "concordance": {}
   },
   "entry_mapping_method": "WeasyPrint named HTML anchors; source appendix pages verified byte-for-byte in extracted text",
   "entry_count": 306

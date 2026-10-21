@@ -1585,8 +1585,8 @@
   "apparatus": [
     "glossary"
   ],
-  "sha256": "3214926da133bfb50b20efaf576ff18e510ca6df8c378f59e5eb9693274efe73",
-  "bytes": 824087,
+  "sha256": "6bb96f9d6c914082fed5f512c89c509d9ea9d216ad8dfbe77aa545488f5aa595",
+  "bytes": 824084,
   "entry_positions": {
     "terms": {
       "adāʾ": {
@@ -3120,7 +3120,8 @@
         "y": 424.49
       }
     },
-    "applications": {}
+    "applications": {},
+    "concordance": {}
   },
   "entry_mapping_method": "WeasyPrint named HTML anchors; source appendix pages verified byte-for-byte in extracted text",
   "entry_count": 306

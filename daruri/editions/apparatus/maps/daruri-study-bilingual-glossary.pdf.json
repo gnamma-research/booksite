@@ -1,6 +1,6 @@
 {
   "filename": "daruri-study-bilingual-glossary.pdf",
-  "source_sha256": "9569ba233cd0a6fa61fdd781efce660abd7eabf6f2638f7011b2c991adf6aff2",
+  "source_sha256": "4437eed54f90983f5159a19de878f5a065ca69df446837d46861fab0fd04cdc0",
   "base_sha256": "2817dd250c002e3e3b1c1b9c9f81bd445de02248ffce952fb5c1d94f48faee40",
   "section_pages": {
     "1": 8,
@@ -3091,7 +3091,8 @@
         "y": 424.49
       }
     },
-    "applications": {}
+    "applications": {},
+    "concordance": {}
   },
   "entry_mapping_method": "WeasyPrint named HTML anchors; source appendix pages verified byte-for-byte in extracted text",
   "entry_count": 306
