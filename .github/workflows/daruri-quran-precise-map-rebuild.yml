@@ -1,0 +1,64 @@
+name: Rebind precise personal PDF maps after Quran source-note revision
+
+on:
+  push:
+    branches: [fix/daruri-quran-allusion-audit-20261021]
+    paths:
+      - '.github/workflows/daruri-quran-precise-map-rebuild.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daruri-quran-precise-maps-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  regenerate-and-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install reproducible PDF layout dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2 libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install -r daruri/build/requirements.txt "PyMuPDF==1.26.7"
+      - name: Recalculate exact-quotation word positions for all five verified PDFs
+        run: |
+          python daruri/build/build_personal_anchor_maps.py --publish
+      - name: Ensure all precise maps refer to published PDFs, never old coordinates
+        run: |
+          node --check daruri/personal-pdf-enhancements.js
+          node daruri/qa/verify-personal-pdf-upgrade.cjs
+          node daruri/qa/verify-personal-export-safety.js
+      - name: Commit only new exact PDF word-geometry maps
+        run: |
+          git config user.name "gnamma-research-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daruri/personal-anchor-maps/*.json
+          if git diff --cached --quiet; then
+            echo "Personal PDF word maps already match published PDFs"
+            exit 0
+          fi
+          git commit -m "Rebind precise personal PDF word maps to conservative Qur'an citation PDFs [skip ci]"
+          git fetch origin "${GITHUB_REF_NAME}"
+          git rebase "origin/${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+      - name: Preserve verified word-map evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-quran-precise-map-verification
+          path: daruri/personal-anchor-maps/*.json
+          if-no-files-found: warn
