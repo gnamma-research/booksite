@@ -83,10 +83,10 @@ test('verified metadata agrees with every published PDF edition',()=>{
  }
 });
 test('exporter v3 links, offline worker and downloadable package agree',()=>{
- assert(html.includes('personal-export.js?v=3'));
- assert(sw.includes('personal-export.js?v=3'));
+ assert(html.includes('personal-export.js?v=4'));
+ assert(sw.includes('personal-export.js?v=4'));
  assert(sw.includes('personal-export.js?v=2'),'existing installations lost previous v2 asset');
- assert(bundle.includes('personal-export.js?v=3'));
+ assert(bundle.includes('personal-export.js?v=4'));
  assert(sw.includes('personal-export.js?v=1'),'existing offline installations lost their previous export asset');
 });
 test('the picker bounds rendered rows and explains hidden search results',()=>{
