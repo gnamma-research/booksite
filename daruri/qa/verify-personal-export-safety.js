@@ -4,6 +4,10 @@
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
 const base=path.resolve(__dirname,'..'),js=fs.readFileSync(path.join(base,'personal-export.js'),'utf8');
 const html=fs.readFileSync(path.join(base,'personal-export.html'),'utf8');
+const sw=fs.readFileSync(path.join(base,'sw.js'),'utf8');
+const bundle=fs.readFileSync(path.join(base,'download-bundle.js'),'utf8');
+const editionManifest=JSON.parse(fs.readFileSync(path.join(base,'pdf-editions-manifest.json'),'utf8'));
+
 new vm.Script(js,{filename:'personal-export.js'});
 const window={},events=[];
 const sandbox={window,document:{readyState:'loading',addEventListener:(name)=>events.push(name)},
@@ -61,6 +65,25 @@ test('full notes appendix is enabled by default',()=>assert(/id="pe-appendix" ch
 test('PDF page mapper never guesses exact quotation coordinates',()=>{
  assert(js.includes('Native PDF comments are section-level'));
  assert(js.includes("if(!p.appendix&&skipped.length)throw Error("));
+});
+test('verified metadata agrees with every published PDF edition',()=>{
+ const editions=Object.entries(editionManifest.files||{});
+ assert.equal(editions.length,5);
+ for(const [filename,edition] of editions){
+  const metadata=JSON.parse(fs.readFileSync(path.join(base,'build/release',filename+'.metadata.json'),'utf8'));
+  assert.equal(metadata.filename,filename);
+  assert.equal(metadata.sha256,edition.sha256);
+  assert.equal(metadata.pages,edition.pages);
+  const pages=Object.values(metadata.section_pages||{}).map(Number);
+  assert(pages.length>=200);
+  assert(pages.every(p=>Number.isInteger(p)&&p>=1&&p<=edition.pages),'unsafe source-to-PDF page location');
+ }
+});
+test('exporter v2 links, offline worker and downloadable package agree',()=>{
+ assert(html.includes('personal-export.js?v=2'));
+ assert(sw.includes('personal-export.js?v=2'));
+ assert(bundle.includes('personal-export.js?v=2'));
+ assert(sw.includes('personal-export.js?v=1'),'existing offline installations lost their previous export asset');
 });
 test('the picker bounds rendered rows and explains hidden search results',()=>{
  assert(js.includes('visible.slice(0,displayLimit)'));
