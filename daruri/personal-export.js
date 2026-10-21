@@ -408,7 +408,12 @@
         const key=norm(target.term);
         const kind=norm(target.kind);
         const index=verifiedMap?.entry_positions?.terms||{};
-        const entry=index[(kind==='index'?'index:':'glossary:')+key]||index[key];
+        const cases=verifiedMap?.entry_positions?.applications||{};
+        const concordance=verifiedMap?.entry_positions?.concordance||{};
+        const sectionToken=String(target.concordance||'').match(/(?:R\s*)?(\d{1,3})/i);
+        const entry=(target.app&&cases[String(target.app)])||
+          (sectionToken&&concordance[String(Number(sectionToken[1]))])||
+          index[(kind==='index'?'index:':'glossary:')+key]||index[key];
         if(entry&&Number.isInteger(entry.page)&&entry.page>=1&&entry.page<=pdf.getPageCount())
           return {index:entry.page-1,top:Number(entry.y)||82,hit:null};
         return {index:-1,top:82,hit:null};
