@@ -350,11 +350,9 @@
     if(!manifest?.files?.[file])throw Error('Select a supported PDF edition.');
     if(!rows.length)throw Error('Choose at least one Reading Desk item, or select the unchanged PDF option.');
     if(rows.length>MAX_ITEMS)throw Error('Choose at most '+MAX_ITEMS+' items per PDF.');
-    if(!p.annotations&&!p.appendix)throw Error('Enable annotations, the appendix, or both.');
+    if(!p.appendix)throw Error('Linked personal notes require an endnotes appendix. Enable the appendix or choose No notes.');
     if(p.appendix&&rows.reduce((n,r)=>n+String(r.body||r.target?.quote||'').length,0)>220000)
       throw Error('Too much text for a mobile export. Choose fewer notes or use the A4 printing route.');
-    if(requiresAppendix(rows,p))
-      throw Error('One or more saved items are too long for PDF pop-up comments alone. Enable the full personal notes appendix to prevent text being omitted.');
     progress('Loading PDF processing library…',6);
     await loadPdfLib();
     progress('Checking source PDF and section map…',14);
@@ -368,9 +366,8 @@
     progress('Preparing annotations…',34);
     const pdf=await window.PDFLib.PDFDocument.load(bytes,{updateMetadata:false});
     const basePageCount=pdf.getPageCount();
-    const countByPage=new Map(),skipped=[],pinRows=[];
     const upgrade=window.GnammaPdfUpgrade;
-    if(!upgrade)throw Error('Precise PDF annotation component is missing. Reload the page.');
+    if(!upgrade)throw Error('Personal PDF navigation component missing. Reload the page.');
     let wordMap=null,precise=0;
     if(p.annotations&&rows.some(r=>r.target?.kind==='quote')){
       try{
@@ -380,39 +377,56 @@
           if(candidate.source_sha256===metadata.sha256&&candidate.coverage>=0.92&&candidate.segments)
             wordMap=candidate;
         }
-      }catch(_){/* Use verified section fallback; never guess word geometry. */}
+      }catch(_){/* Exact geometry is optional. Use the verified section fallback. */}
     }
+    // Prepare destinations before appending notes: this keeps page references
+    // stable and lets each appendix entry return to the exact source locus.
+    const sourcePositions=rows.map(r=>{
+      const sectionIndex=verifiedPage(r.target?.section,metadata,basePageCount);
+      if(sectionIndex<0)return {index:-1,top:82,hit:null};
+      const target=r.target||{};
+      const lang=target.lang==='ar'?
+        (file==='daruri-arabic-vowelled.pdf'||file==='daruri.pdf'||file==='daruri-study.pdf'?'vocalized':'ar'):'en';
+      const words=wordMap?.segments?.[[target.section,target.segment,lang].join(':')]||[];
+      let hit=p.annotations&&target.kind==='quote'?upgrade.sourceMatch(words,target):null;
+      if(hit&&(!Number.isInteger(hit.page)||hit.page<1||hit.page>basePageCount))hit=null;
+      const index=hit?hit.page-1:sectionIndex;
+      return {index,top:upgrade.sourceTop(target,hit,metadata,index),hit};
+    });
+    const unlinked=sourcePositions.filter(s=>s.index<0).length;
+    progress('Preparing searchable personal appendix and navigation…',45);
+    const appendix=await appendNotes(pdf,rows,p,metadata,sourcePositions,basePageCount);
+    if(!appendix.noteTargets||appendix.noteTargets.length!==rows.length)
+      throw Error('Some personal notes have no endnote destination. No partial PDF was saved.');
+    let linked=0;
     if(p.annotations){
+      pdf._gnPersonalMarkerFont=await pdf.embedFont(window.PDFLib.StandardFonts.HelveticaBold);
+      const reservations=new Map();
       for(let i=0;i<rows.length;i++){
-        const r=rows[i],sectionIndex=verifiedPage(r.target?.section,metadata,basePageCount);
-        if(sectionIndex<0){skipped.push(i);continue;}
-        const target=r.target||{},tag=target.lang==='ar'?
-          (file==='daruri-arabic-vowelled.pdf'||file==='daruri.pdf'||file==='daruri-study.pdf'?'vocalized':'ar'):'en';
-        const key=[target.section,target.segment,tag].join(':');
-        const words=wordMap?.segments?.[key]||[];
-        let hit=target.kind==='quote'?upgrade.sourceMatch(words,target):null;
-        if(hit&&(!Number.isInteger(hit.page)||hit.page<1||hit.page>basePageCount))hit=null;
-        const index=hit?hit.page-1:sectionIndex;
-        const slot=countByPage.get(index)||0,count=slot+1;
-        countByPage.set(index,count);
-        const content=entryText(r,i,p.dates);
-        if(notePin(pdf,pdf.getPage(index),i+1,content,slot)){
-          pinRows.push(i);
-          if(hit&&upgrade.addHighlight(pdf,pdf.getPage(index),hit,content,'Reading Desk '+(i+1)))precise++;
-        }else skipped.push(i);
+        const where=sourcePositions[i];
+        if(where.index<0)continue; // Dictionary/unattached notes remain in appendix.
+        const sourcePage=pdf.getPage(where.index);
+        const noteTarget=appendix.noteTargets[i];
+        const destPage=pdf.getPage(noteTarget.index);
+        const used=reservations.get(where.index)||[];
+        reservations.set(where.index,used);
+        const ok=upgrade.drawPersonalMarker(pdf,sourcePage,destPage,
+          'P'+(i+1),where.top,noteTarget.top,used);
+        if(!ok)throw Error('Too many personal references on source PDF page '+(where.index+1)+
+          '. Select fewer notes for this export so the P labels do not overlap.');
+        linked++;
+        if(where.hit&&upgrade.drawLinkedHighlight(pdf,sourcePage,where.hit,destPage,noteTarget.top))
+          precise++;
       }
     }
-    if(!p.appendix&&skipped.length)throw Error(skipped.length+' selected items have no safe in-text PDF comment location. Include the appendix so none of your notes are lost.');
-    progress('Preparing appendix pages…',45);
-    const appendix=p.appendix?await appendNotes(pdf,rows,p,metadata):{pages:0,unsupported:[]};
+    progress('Finishing two-way personal-note links…',88);
     const pages=appendix.pages;
-    progress('Saving your personal PDF…',88);
     pdf.setTitle('Al-Ḍarūrī — Personal Reading Desk Edition');
-    pdf.setSubject('Reader-authored PDF comments and personal notes. Not part of original or editorial text.');
+    pdf.setSubject('Reader-created P-numbered notes and two-way GoTo links, distinct from publisher footnotes.');
     pdf.setCreator('Gnamma Research — browser-local personal export');
     const saved=await pdf.save({useObjectStreams:false});
     if(saved.length>90*1024*1024)throw Error('The resulting PDF is over 90 MB. Please choose fewer items.');
-    return {blob:new Blob([saved],{type:'application/pdf'}),pages,annotated:pinRows.length,precise,unmapped:skipped.length,unsupported:appendix.unsupported,hadWordMap:!!wordMap};
+    return {blob:new Blob([saved],{type:'application/pdf'}),pages,linked,precise,unmapped:unlinked,unsupported:appendix.unsupported,hadWordMap:!!wordMap};
   }
   function startResult(blob,name){
     if(resultURL)URL.revokeObjectURL(resultURL);
@@ -438,11 +452,11 @@
     const rows=matching(),p=prefs();
     busy=true;$('pe-result').hidden=true;info('');syncForm();
     try{
-      const {blob,pages,annotated,precise,unmapped,unsupported,hadWordMap}=await generate(file,rows,p);
+      const {blob,pages,linked,precise,unmapped,unsupported,hadWordMap}=await generate(file,rows,p);
       const stem=file.replace(/\.pdf$/,'');
       startResult(blob,stem+'-personal-'+new Date().toISOString().slice(0,10)+'.pdf');
-      info(rows.length+' item'+(rows.length===1?'':'s')+' included; '+annotated+' source-page PDF comment'+(annotated===1?'':'s')+
-        '; '+precise+' precise word highlight'+(precise===1?'':'s')+'; '+pages+' searchable appendix page'+(pages===1?'':'s')+'.'+
+      info(rows.length+' personal item'+(rows.length===1?'':'s')+' included; '+linked+' linked P reference'+(linked===1?'':'s')+
+        '; '+precise+' clickable phrase highlight'+(precise===1?'':'s')+'; '+pages+' searchable appendix page'+(pages===1?'':'s')+'.'+
         (unmapped?' '+unmapped+' item'+(unmapped===1?'':'s')+' had no safe PDF pin; see appendix.':'')+
          (unsupported.length?' Some rare symbols may not be searchable: '+unsupported.slice(0,7).join(' ')+'.':'')+
         (hadWordMap?'':' Exact-word map unavailable; notes safely attach to their sections.')+
