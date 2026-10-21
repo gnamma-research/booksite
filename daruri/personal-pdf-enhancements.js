@@ -174,9 +174,10 @@
       if(!res.ok)throw Error('Locally hosted Unicode font unavailable: '+name);
       return res.arrayBuffer();
     }));
-    // Full custom-font embedding yields a more portable ToUnicode map in
-    // Android PDFium; the Arabic Noto font is only ~200 KB.
-    const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:false})));
+    // Keep the tested smaller font subsets and avoid Arabic contextual glyph
+    // substitutions in the invisible text layer. Visible Arabic is already
+    // rasterized; text runs below use isolated codepoints for ToUnicode.
+    const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:true})));
     return {latin,arabic,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
   }
   function fontRuns(text,fonts,size){
@@ -191,7 +192,13 @@
         else{fonts.missing.add(point);font=fonts.latin;}
       }
       const ch=(font===fonts.latin&&!fonts.latinSet.has(cp))?'?':point;
-      if(last?.font===font)last.text+=ch;
+      // Arabic glyph shaping can map several Unicode letters to a single
+      // ligature GID; PDFium then exposes control-code characters. Since this
+      // text is invisible, write Arabic codepoints in independent PDF runs.
+      // Each run has an unambiguous single-character /ToUnicode mapping.
+      if(font===fonts.arabic){
+        last={font,text:ch};runs.push(last);
+      }else if(last?.font===font)last.text+=ch;
       else {last={font,text:ch};runs.push(last);}
     }
     return runs.map(x=>({...x,width:x.font.widthOfTextAtSize(x.text,size)}));
