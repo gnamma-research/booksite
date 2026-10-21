@@ -59,7 +59,7 @@ def run():
                 if original!=inserted:
                     raise ValueError(f"Different apparatus page {i+1} in {filename}")
             refs=appendix.resolve_names()
-            positions={"terms":{},"applications":{}}
+            positions={"terms":{},"applications":{},"concordance":{}}
             for kind in ("glossary","index"):
                 if kind not in names:continue
                 ordered=ordered_terms(kind)
@@ -78,10 +78,21 @@ def run():
                         ar=norm(item.get("ar",""))
                         if ar and ar not in positions["terms"]:
                             positions["terms"][ar]=dest
-            # Applications are self-contained printable cases; the initial
-            # appendix builder exposes section links but not entry anchor IDs,
-            # so report these as appendix-only until a verified element map is
-            # available. Never assign guessed case-link positions.
+            if "applications" in names:
+                for app in BOOK["apps"]:
+                    key=str(app["id"])
+                    anchor=refs.get("application-"+key)
+                    if anchor is None:raise ValueError("Missing named Bidāya application: "+key)
+                    positions["applications"][key]=named_point(anchor,first,len(merged))
+                if len(positions["applications"])!=len(BOOK["apps"]):
+                    raise ValueError("Application destination coverage is incomplete")
+            if "concordance" in names:
+                for n in range(1,259):
+                    anchor=refs.get("concordance-"+str(n))
+                    if anchor is None:raise ValueError("Missing named R/BA concordance entry "+str(n))
+                    positions["concordance"][str(n)]=named_point(anchor,first,len(merged))
+                if len(positions["concordance"])!=258:
+                    raise ValueError("Concordance destination coverage is incomplete")
             assert len(positions["terms"])>=len(BOOK["glossary"]) if "glossary" in names else True
             assert len(positions["terms"])>=len(BOOK["index"]) if "index" in names else True
         mapping["entry_positions"]=positions
