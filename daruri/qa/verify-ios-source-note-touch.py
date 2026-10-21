@@ -60,7 +60,9 @@ def exercise(engine, browser, width, mobile):
     ):
         article=page.locator(f'.gn-note-entry[data-note-id="{identifier}"]')
         prose=article.locator('p').first
-        assert prose.locator('bdi.gn-ibn-rushd-words').inner_text()==author
+        assert prose.locator('span.gn-ibn-rushd-words').inner_text()==author
+        assert prose.locator('span.gn-ibn-rushd-words bdi[dir="rtl"]').count()==1
+        assert prose.locator('span.gn-ibn-rushd-words').evaluate("e=>getComputedStyle(e).whiteSpace")=='nowrap'
         assert '﴿' not in prose.inner_text() and '﴾' not in prose.inner_text()
         assert verse not in prose.inner_text(), 'Verse must not repeat in plain parentheses'
         quote=article.locator('.gn-quran-quotation')
@@ -145,7 +147,7 @@ def smoke_full_site(browser, port, engine):
         assert 'possible verbal allusion' in quote.inner_text()
         assert 'not a quotation' in quote.inner_text()
         prose=page.locator(f'.gn-note-entry[data-note-id="{identifier}"] > p').first
-        assert prose.locator('bdi.gn-ibn-rushd-words').count()==1
+        assert prose.locator('span.gn-ibn-rushd-words').count()==1
         assert prose.inner_text().count('﴿') == 0
         assert prose.inner_text().count('﴾') == 0
         assert quote.locator('.gn-quran-bracket').first.inner_text() == '﴿'
