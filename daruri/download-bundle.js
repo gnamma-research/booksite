@@ -6,7 +6,7 @@
 
   // BEGIN DARURI RELEASE ASSETS
   const RELEASE_VERSION = "daruri8-structure-20261020";
-  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -101,9 +101,9 @@
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
-      ['daruri/reading-desk.js', 'reading-desk.js?v=20261021-readingdesk4'],
-      ['daruri/reading-desk.css', 'reading-desk.css?v=20261021-readingdesk4'],
-      ['daruri/reading-desk-dictionary.js', 'reading-desk-dictionary.js?v=20261021-readingdesk4'],
+      ['daruri/reading-desk.js', 'reading-desk.js?v=20261021-readingdesk6'],
+      ['daruri/reading-desk.css', 'reading-desk.css?v=20261021-readingdesk6'],
+      ['daruri/reading-desk-dictionary.js', 'reading-desk-dictionary.js?v=20261021-readingdesk6'],
       ['daruri/reader-structure.css', 'reader-structure.css?v=20261020-structure1'],
       ['daruri/subject-index.css', 'subject-index.css?v=20261020-indexprint1'],
       ['daruri/subject-index-data.js', 'subject-index-data.js?v=20261020-structure1'],
@@ -143,7 +143,9 @@
       ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri8-structure-20261020'],
       ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=daruri8-structure-20261020'],
       ['daruri/source-reference-data.js', 'source-reference-data.js?v=daruri8-structure-20261020'],
-      ['daruri/download-bundle.js', 'download-bundle.js?v=20261021-home-nav1'],
+      ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-source-notes1'],
+      ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-source-notes1'],
+      ['daruri/download-bundle.js', 'download-bundle.js?v=20261021-readingdesk6'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
       ['daruri/study-guide.css', 'study-guide.css'],
@@ -169,7 +171,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261021-home-text2'],
+      ['daruri/sw.js', 'sw.js?v=20261021-readingdesk6'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
