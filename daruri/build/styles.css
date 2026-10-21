@@ -172,3 +172,17 @@ bdi{unicode-bidi:isolate}
 .subject-guide p{font:8pt/1.35 "Noto Sans","Noto Naskh Arabic";margin:0 0 3pt}
 .subject-guide .subject-links{font-size:7.7pt}
 .index-alphabetical-title{font-size:12pt;margin:12pt 0 8pt;bookmark-level:2}
+
+/* Source citation presentation: never typeset long raw URLs in the PDF.
+   The full destination stays in the clickable URI annotation. */
+.main-text .note-prose a.source-url {font-size:0!important;line-height:0;text-decoration:none!important}
+.main-text .note-prose a.source-url::after {content:"↗";display:inline-block;
+  font:600 9pt/1 "Noto Sans";color:#285e72;direction:ltr;unicode-bidi:isolate;}
+.main-text .note-prose a[href^="https"]:not(.source-url)::after {content:" ↗";
+  font:600 8pt/1 "Noto Sans";color:#285e72;direction:ltr;unicode-bidi:isolate;}
+.main-text .quran-source-excerpt {display:block;margin:4pt 0 7pt; padding:4pt 5pt;
+  break-inside:avoid;border:.45pt solid #d0c9bb;background:#fbf9f4;text-align:center;}
+.main-text .quran-source-arabic {display:block;font:400 13.4pt/1.75 "Noto Naskh Arabic";
+  color:#203d47;text-align:center;direction:rtl;unicode-bidi:isolate;}
+.main-text .quran-source-caption {display:block;font:7pt/1.3 "Noto Sans";
+  color:#756851;text-align:center;direction:ltr;}
