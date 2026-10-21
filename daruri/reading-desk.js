@@ -2,8 +2,9 @@
 (function(){
 'use strict';
 const KEY='gnamma-reading-desk-v1', FORMAT='gnamma-reading-desk', VERSION=1;
-const CATEGORIES=['all','text','notes','dictionary','index','bidaya','lessons'];
-const LABELS={all:'All',text:'Text',notes:'Notes',dictionary:'Dictionary',index:'Index',bidaya:'Bidāya',lessons:'Lessons',bin:'Bin'};
+const CATEGORIES=['all','bookmarks','mine'];
+const LABELS={all:'All',bookmarks:'Bookmarks',mine:'My notes',text:'Text',booknotes:'Book notes',notes:'My notes',dictionary:'Dictionary',index:'Subject index',bidaya:'Bidāya',lessons:'Lessons',bin:'Bin'};
+const SORTS={'created-desc':'Newest saved','created-asc':'Oldest saved','modified-desc':'Recently edited',source:'Text / source order',alpha:'Title A–Z'};
 const KINDS=new Set(['section','paragraph','quote','footnote','dictionary','index','application','lesson','note']);
 const clamp=(v,max=1000)=>String(v==null?'':v).slice(0,max);
 const esc=v=>clamp(v,100000).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -15,8 +16,10 @@ const short=(v,n=110)=>clamp(v,30000).length>n?clamp(v,n-1)+'…':String(v||'');
 const category=it=>it.kind==='note'||it.kind==='footnote'?'notes':['quote','paragraph','section'].includes(it.kind)?'text':it.kind==='application'?'bidaya':it.kind==='lesson'?'lessons':it.kind;
 function create(ctx){
  const state=ctx.state, book=ctx.book;
- let records=[],available=true,selection=null,editor=null,origin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
- const ui={category:'all',query:'',selected:'',context:'both',expanded:false,filterTarget:'',bin:false,listScroll:0};
+ let records=[],available=true,selection=null,editor=null,origin=null,readingOrigin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
+ const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
+ const printPrefs={order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
+ let openContext=null,editorOriginal=null;
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
  function validateTarget(raw){
@@ -72,9 +75,11 @@ function create(ctx){
   if(kind==='note'&&!target&&!r.standalone)return null;
   if(kind!=='note'&&(!KINDS.has(kind)||!target||target.kind!==kind))return null;
   const updated=Math.max(0,Number(r.updated)||0)||Date.now();
-  return {id:clamp(r.id,100)||uuid(),kind, target:target||null,
+  const created=Math.max(0,Number(r.created)||0);
+  return {id:clamp(r.id,100)||uuid(),kind,target:target||null,
    title:clamp(r.title,240),body:kind==='note'?clamp(r.body,30000):'',
-   created:Math.max(0,Number(r.created)||0)||updated,updated,
+   created,updated,modified:Math.max(0,Number(r.modified)||0),
+   dateSource:['recorded','legacy-unknown','unverified'].includes(r.dateSource)?r.dateSource:'unverified',
    deleted:Math.max(0,Number(r.deleted)||0)||0,standalone:kind==='note'&&!!r.standalone};
  }
  function load(){
@@ -87,7 +92,7 @@ function create(ctx){
   for(const n of state.bookmarks||[]){
    if(!section(n))continue;
    if(records.some(r=>r.kind==='section'&&String(r.target?.section)===String(n)))continue;
-   records.push({id:uuid(),kind:'section',target:{kind:'section',section:String(n)},title:'',body:'',created:Date.now(),updated:Date.now(),deleted:0,standalone:false});changed=true;
+   records.push({id:uuid(),kind:'section',target:{kind:'section',section:String(n)},title:'',body:'',created:0,updated:Date.now(),modified:0,dateSource:'legacy-unknown',deleted:0,standalone:false});changed=true;
   }
   syncLegacy(false);
   if(changed)persist();
@@ -122,6 +127,55 @@ function create(ctx){
   if(t.kind==='application')return 'Bidāya application '+t.app;
   return LABELS[category({kind:t.kind})]||'Reference';
  }
+
+ function dateDisplay(value,precise=false){
+  if(!Number.isFinite(value)||value<=0)return '';
+  try{return new Intl.DateTimeFormat(undefined,precise?{dateStyle:'medium',timeStyle:'short'}:{day:'numeric',month:'short',year:'numeric'}).format(new Date(value));}
+  catch(_){return new Date(value).toISOString().slice(0,10);}
+ }
+ function dateLine(r,precise=false){
+  const label=r.kind==='note'?'Written':'Saved',parts=[];
+  if(r.dateSource==='legacy-unknown'||!r.created)parts.push('Previously saved · original date unknown');
+  else if(r.dateSource==='recorded')parts.push(label+' '+dateDisplay(r.created,precise));
+  else parts.push('Recorded '+dateDisplay(r.created,precise)+(precise?' · original date unverified':''));
+  if(r.kind==='note'&&r.modified)parts.push('Edited '+dateDisplay(r.modified,precise));
+  if(r.deleted)parts.push('Moved to Bin '+dateDisplay(r.deleted,precise));
+  return parts.join(' · ');
+ }
+ function typeOf(r){
+  const kind=r.target?.kind||r.kind;
+  return kind==='footnote'?'booknotes':['quote','paragraph','section'].includes(kind)?'text':kind==='application'?'bidaya':kind==='lesson'?'lessons':kind==='dictionary'?'dictionary':kind==='index'?'index':kind==='note'?'mine':'other';
+ }
+ function sourceKey(t){
+  if(!t)return 'unattached';
+  if(['quote','paragraph'].includes(t.kind))return 'paragraph:'+t.section+':'+t.segment;
+  if(t.kind==='section')return 'section:'+t.section;
+  if(t.kind==='footnote')return 'booknote:'+t.noteId;
+  return [t.kind,t.term||t.app||t.lesson||'',t.level||''].join(':');
+ }
+ function numberOf(value){const n=Number(value);return Number.isFinite(n)?n:999999;}
+ function sourceSort(a,b){
+  const x=a.target||{},y=b.target||{};
+  const rank=t=>['section','paragraph','quote','footnote'].includes(t.kind)?0:t.kind==='dictionary'?1:t.kind==='index'?2:t.kind==='application'?3:t.kind==='lesson'?4:5;
+  const delta=rank(x)-rank(y);if(delta)return delta;
+  if(rank(x)===0){
+   const sectionOrder=numberOf(x.section)-numberOf(y.section);if(sectionOrder)return sectionOrder;
+   const segmentOrder=(x.segment==null?-1:numberOf(x.segment))-(y.segment==null?-1:numberOf(y.segment));if(segmentOrder)return segmentOrder;
+   const offsetOrder=(x.offset||0)-(y.offset||0);if(offsetOrder)return offsetOrder;
+  }
+  if(rank(x)===4){const aLesson=String(x.lesson||'').localeCompare(String(y.lesson||''),undefined,{numeric:true});if(aLesson)return aLesson;const levels={basic:0,intermediate:1,advanced:2};return (levels[x.level]||0)-(levels[y.level]||0);}
+  const name=(titleOf(x)||'').localeCompare(titleOf(y)||'',undefined,{sensitivity:'base',numeric:true});
+  return name||(a.created||a.updated)-(b.created||b.updated)||a.id.localeCompare(b.id);
+ }
+ function sortItems(items,sort){
+  return items.slice().sort((a,b)=>{
+   if(sort==='source')return sourceSort(a,b);
+   if(sort==='alpha')return (a.title||titleOf(a.target)).localeCompare(b.title||titleOf(b.target),undefined,{numeric:true,sensitivity:'base'})||sourceSort(a,b);
+   if(sort==='modified-desc')return (b.modified||b.updated)-(a.modified||a.updated)||sourceSort(a,b);
+   const av=a.created||a.updated,bv=b.created||b.updated;
+   return sort==='created-asc'?av-bv||sourceSort(a,b):bv-av||sourceSort(a,b);
+  });
+ }
  function upsert(kind,target,body='',title=''){
   const now=Date.now();
   if(records.length>2999){ctx.notify('Reading Desk is full; export and remove unused entries before adding more.');return null;}
@@ -129,7 +183,7 @@ function create(ctx){
    const existing=records.find(x=>x.kind===kind&&keyOf(x.target)===keyOf(target));
    if(existing){if(existing.deleted){existing.deleted=0;existing.updated=now;persist();ctx.notify('Restored to Reading Desk.');}else ctx.notify('Already in Reading Desk.');return existing;}
   }
-  const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,deleted:0,standalone:kind==='note'&&!target});
+  const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target});
   if(!row)return null;
   records.unshift(row);persist();ctx.notify(kind==='note'?'Personal note added to Reading Desk.':'Bookmarked in Reading Desk.');
   if(state.route==='bookmarks')render();
@@ -216,9 +270,13 @@ function create(ctx){
  function grouped(r){return category(r)==='text'?'Text':LABELS[category(r)]||'Reference';}
  function matching(){
   const q=norm(ui.query).toLocaleLowerCase(),bin=ui.category==='bin';
-  return records.filter(r=>Boolean(r.deleted)===bin&&(!ui.filterTarget||r.target?.section===ui.filterTarget)&&
-    (bin||ui.category==='all'||category(r)===ui.category)&&
-    (!q||norm([r.title,titleOf(r.target),r.body,r.target?.quote,r.target?.term,r.target?.app,subOf(r.target)].join(' ')).toLocaleLowerCase().includes(q))).sort((a,b)=>b.updated-a.updated);
+  const rows=records.filter(r=>Boolean(r.deleted)===bin&&
+   (!ui.filterTarget||r.target?.section===ui.filterTarget)&&
+   (ui.filterSegment===null||r.target?.segment===ui.filterSegment)&&
+   (bin||ui.category==='all'||ui.category==='mine'&&r.kind==='note'||ui.category==='bookmarks'&&r.kind!=='note')&&
+   (bin||ui.sourceType==='all'||typeOf(r)===ui.sourceType)&&
+   (!q||norm([r.title,titleOf(r.target),r.body,r.target?.quote,r.target?.term,r.target?.app,subOf(r.target)].join(' ')).toLocaleLowerCase().includes(q)));
+  return bin?rows.sort((a,b)=>b.deleted-a.deleted):sortItems(rows,ui.sort==='created-desc'&&ui.filterTarget?'source':ui.sort);
  }
  function render(){
   const main=$('#mainContent');if(!main)return;
