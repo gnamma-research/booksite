@@ -39,20 +39,28 @@ const rootNode={
 };
 const win={GnammaEditions:{render:function(){invoked++;return 'underlying edition renderer';}}};
 const dom={
-  createElement(){throw Error('No options should be changed in this empty-root smoke test');}
+  createElement(){return {className:'',innerHTML:'',setAttribute(){}};}
 };
 vm.runInNewContext(src,{window:win,document:dom,MutationObserver:undefined}, {timeout:2000});
 assert.equal(win.GnammaEditions.__iconEnhanced,true);
 assert.equal(win.GnammaEditions.render(rootNode,{}),'underlying edition renderer');
 assert.equal(invoked,1,'Preserve original render exactly once');
-assert.equal(listened,3,'Delegated click, keyboard, change listeners only');
+assert.equal(listened,5,'Delegated click, keyboard, change, hover and focus listeners only');
 win.GnammaEditions.render(rootNode,{});
 assert.equal(invoked,2,'Subsequent route visits continue to render normally');
-assert.equal(listened,3,'No listener accumulation after return to Editions');
+assert.equal(listened,5,'No listener accumulation after return to Editions');
 assert.ok(editionSrc.includes('gn-ed-reading-custom'), 'Custom print settings are collapsed until requested');
 assert.ok(editionSrc.includes('legacy.hidden = true'), 'Verified Study PDF supersedes older fixed link');
 assert.ok(!editionSrc.includes('Study notes + hadith sources'), 'No ḥadīth selector in non-scholarly Study');
-const coursePicker={dataset:{epControl:'lesson'},options:Array.from({length:28},(_,i)=>({value:String(i)}))};
+assert.ok(!editionSrc.includes('gn-ed-intro'), 'Removed edition explanatory paragraphs');
+assert.ok(editionSrc.includes('data-ep-info-value'), 'Shared Visuals-style selection display');
+assert.ok(editionSrc.includes('aria-label="Custom Reading printout"'), 'Icon-only disclosure has accessible name');
+assert.ok(!src.includes("className='gn-ed-icon-label'"), 'Option tiles contain no visible text captions');
+assert.ok(src.includes("setAttribute('aria-label',option.textContent.trim())"), 'Accessible full option names');
+const coursePicker={
+  dataset:{epControl:'lesson'},options:Array.from({length:28},(_,i)=>({value:String(i)})),
+  closest(){return {insertBefore(){}}}
+};
 rootNode.querySelectorAll=q=>q.includes('select:not(')?[coursePicker]:[];
 win.GnammaEditions.render(rootNode,{});
 assert.equal(coursePicker.dataset.epIconified,'native', 'Long lesson list remains a native picker instead of dozens of icons');
@@ -62,4 +70,4 @@ assert.equal(manifest.status,'verified');
 assert.deepEqual(manifest.tier_order,['reading','study','reference']);
 assert.equal(manifest.files.filter(f=>f.tier==='reading').length,8);
 assert.equal(manifest.files.filter(f=>f.tier==='study').length,2);
-console.log('PASS: verified PDF buttons, long-list native fallback, collapsed custom print, scholarly note policy, keyboard and cache/ZIP contracts.');
+console.log('PASS: icon-only choices, selection display, screen-reader labels, native long lists, collapsed printing, scholarly notes, cache/ZIP contracts.');
