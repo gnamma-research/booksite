@@ -255,36 +255,25 @@
     root.querySelector('[data-es-spec-notes]').textContent=
       'Publisher notes: '+notesLabel(s.notes)+' · My notes: '+(s.personalNotes?'On':'Off')+
       ' · Bookmarks: '+(s.personalBookmarks?'On':'Off');
-    root.querySelector('[data-es-shortcut-summary]').textContent='Publisher '+notesLabel(s.notes)+
-      ' · Personal '+(isPersonal?'On':'Off');
+    root.querySelector('[data-es-spec-apparatus]').textContent='Apparatus: '+apparatusLabel(s);
     const hasCurrent=result.status==='ready';
     root.querySelector('[data-es-count]').textContent=hasCurrent?
       result.record.pages+' pages · '+formatBytes(result.record.bytes||result.record.size_bytes):'';
     root.querySelector('[data-es-availability-heading]').textContent=hasCurrent?
       'Published PDF available':result.status==='loading'?'Checking published PDFs…':'PDF not published for this selection';
     root.querySelector('[data-es-availability-detail]').textContent=hasCurrent?
-      result.record.pages+' A4 pages · '+(isPersonal?'Standard file — personal notes not included':'Ready to read, download or print'):
+      result.record.pages+' A4 pages · '+(isPersonal?'Public PDF only — private notes are not included':'Open this PDF to read, save, share or print'):
       result.reason;
     root.querySelector('.gn-es-availability').dataset.esStatus=result.status;
-    for(const action of root.querySelectorAll('[data-es-action]')){
-      const type=action.dataset.esAction;
-      action.setAttribute('aria-disabled',String(!hasCurrent));
-      if(hasCurrent){
-        const record=result.record;
-        const url=tier==='reference'?
-          'daruri.pdf?v='+encodeURIComponent((record.sha256||'published').slice(0,12)):
-          'editions/'+record.file+'?v='+encodeURIComponent((record.sha256||'published').slice(0,12));
-        action.href=url;
-        if(type==='download')action.setAttribute('download',record.file?record.file.split('/').pop():'daruri.pdf');
-      }else{
-        action.removeAttribute('href');
-        if(type==='download')action.removeAttribute('download');
-      }
-      if(type==='download')action.setAttribute('aria-label',isPersonal?
-        'Download public PDF without personal notes':'Download selected published PDF');
-    }
+    const action=root.querySelector('[data-es-action="open"]');
+    action.setAttribute('aria-disabled',String(!hasCurrent));
+    if(hasCurrent){
+      const record=result.record;
+      action.href=tier==='reference'?
+        'daruri.pdf?v='+encodeURIComponent((record.sha256||'published').slice(0,12)):
+        'editions/'+record.file+'?v='+encodeURIComponent((record.sha256||'published').slice(0,12));
+    }else action.removeAttribute('href');
     root.querySelector('[data-es-private-hint]').hidden=!isPersonal;
-    root.querySelector('[data-es-print-hint]').hidden=!hasCurrent;
     root.querySelector('[data-es-study-guide]').hidden=tier!=='study';
     root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen));
     root.querySelector('#gn-es-custom').hidden=!customOpen;
@@ -296,7 +285,7 @@
     const panel=root.querySelector('#gn-es-options');
     panel.setAttribute('aria-label',category.charAt(0).toUpperCase()+category.slice(1)+' settings');
     for(const node of root.querySelectorAll('[data-es-section]'))node.hidden=node.dataset.esSection!==category;
-    for(const key of ['scope','headings','layout','density','notes']){
+    for(const key of ['scope','headings','layout','density','notes','glossary','index','applications','concordance']){
       for(const node of root.querySelectorAll('[data-es-'+key+']')){
         const selected=node.dataset['es'+key.charAt(0).toUpperCase()+key.slice(1)]===s[key];
         node.setAttribute('aria-pressed',String(selected));
@@ -345,7 +334,7 @@
     if(focus)mainRoot?.querySelector('[data-es-tier="'+tier+'"]')?.focus();
   }
   function selectCategory(next,focus=false){
-    if(!['content','layout','notes'].includes(next))return;
+    if(!['content','layout','notes','apparatus'].includes(next))return;
     category=next;
     customOpen=true;
     refresh();
@@ -359,9 +348,8 @@
     if(b.dataset.esCategory){selectCategory(b.dataset.esCategory,true);return;}
     if(b.dataset.esToggle){choose(b.dataset.esToggle);return;}
     if(b.dataset.esCustom!==undefined){customOpen=!customOpen;refresh();return;}
-    if(b.dataset.esShortcut){selectCategory('notes');return;}
     if(b.dataset.esPersonal){choose(b.dataset.esPersonal);return;}
-    for(const key of ['scope','headings','layout','density','notes']){
+    for(const key of ['scope','headings','layout','density','notes','glossary','index','applications','concordance']){
       const prop='es'+key.charAt(0).toUpperCase()+key.slice(1);
       if(b.dataset[prop]!==undefined){choose(key,b.dataset[prop]);return;}
     }
@@ -379,7 +367,7 @@
     if(!tab||!mainRoot?.contains(tab))return;
     if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
     const type=tab.dataset.esTier?'tier':'category';
-    const names=type==='tier'?TIERS:['content','layout','notes'];
+    const names=type==='tier'?TIERS:['content','layout','notes','apparatus'];
     const name=type==='tier'?tab.dataset.esTier:tab.dataset.esCategory;
     const i=names.indexOf(name);
     const next=event.key==='Home'?0:event.key==='End'?names.length-1:
