@@ -25,6 +25,20 @@ assert(found.rects[0].x0<=30&&found.rects[0].x1>=240);
 const ambiguous=[...en,...en.map(w=>[w[0],1,w[2],w[3]+45,w[4],w[5]+45])];
 assert.equal(api.sourceMatch(ambiguous,{quote:'proceed, after praising God',prefix:'',suffix:''}),null,'ambiguous exact quote needs safe section fallback');
 assert(api.tidy('الْحَمْدُ لِلَّهِ').includes('الحمدلله'));
+const mf=JSON.parse(fs.readFileSync(path.join(root,'pdf-editions-manifest.json'),'utf8'));
+for(const file of ['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf']){
+  const m=JSON.parse(fs.readFileSync(path.join(root,'personal-anchor-maps',file+'.json'),'utf8'));
+  assert.equal(m.source_sha256,mf.files[file].sha256,'the exact map must be bound to the edition hash');
+  assert(m.coverage>0.99,'layout map missing too many segments');
+  assert(Object.keys(m.segments).length>=400,'full-layout coverage expected');
+  const lang=file.includes('english')?'en':file.includes('arabic')?'ar':'en';
+  const anchor=m.segments['1:0:'+((file.includes('vowelled')||file==='daruri.pdf'||file==='daruri-study.pdf')&&lang==='ar'?'vocalized':lang)];
+  assert(anchor?.length>10,'section 1 must include verified word positions: '+file);
+  for(const w of anchor.slice(0,30)){
+    assert(w.length===6&&typeof w[0]==='string'&&Number.isInteger(w[1])&&w[1]>0);
+    assert(w[2]>=0&&w[3]>=0&&w[4]>w[2]&&w[5]>w[3],'invalid word rectangle: '+file);
+  }
+}
 const ex=fs.readFileSync(path.join(root,'personal-export.js'),'utf8');
 assert(ex.includes('sourceMatch(words,target)')&&ex.includes('addHighlight(pdf'));
 assert(ex.includes('searchableFonts(pdf,URL_ROOT)')&&ex.includes('textOverlay(pdf,out'));
