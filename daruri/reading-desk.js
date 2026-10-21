@@ -59,7 +59,7 @@ function create(ctx){
  let records=[],available=true,selection=null,editor=null,origin=null,readingOrigin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
  let deskPdfPromise=null,deskPdfFile=null,deskPdfURL=null,printRevision=0,printingPDF=false;
  const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
- const printPrefs={order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
+ const printPrefs={scope:'visible',order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
  let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,writeConflict=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='',relinkFocus=null;
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
@@ -396,14 +396,7 @@ function create(ctx){
   parts.push('<strong>'+esc(r.title||titleOf(r.target))+'</strong>');
   if(own)parts.push('<span>'+esc(short(r.body,175))+'</span>');
   else if(relatedCount)parts.push('<span>'+relatedCount+' linked personal '+(relatedCount===1?'note':'notes')+'</span>');
-  parts.push('</button><div class="gn-rd-card-ops" role="group" aria-label="Saved item tools">');
-  const data='data-id="'+esc(r.id)+'"';
-  if(!r.deleted&&canOpen)parts.push(deskButton('open','Open original source','book','',null,data));
-  if(r.deleted)parts.push(deskButton('restore','Restore item','history','',null,data));
-  if(!r.deleted&&own)parts.push(deskButton('edit','Edit note','edit','',null,data));
-  if(!r.deleted)parts.push(deskButton('share','Share item','share','',null,data));
-  parts.push(deskButton(r.deleted?'delete-permanent':'trash',r.deleted?'Delete permanently':'Move to Bin','trash','',null,data));
-  parts.push('</div></article>');
+  parts.push('</button></article>');
     return parts.join('');
  }
  function render(){
@@ -413,39 +406,36 @@ function create(ctx){
   for(const r of active())if(r.kind==='note'&&r.target){const k=keyOf(r.target);linkedCounts.set(k,(linkedCounts.get(k)||0)+1);}
   const parts=['<section class="gn-rd-page'+(ui.mobileDetail?' gn-rd-mobile-detail-open':'')+'">'];
   parts.push('<header class="gn-rd-hero"><p class="gn-rd-kicker">YOUR PRIVATE READING COLLECTION</p><h1>Reading Desk</h1>');
-  parts.push('<p>Saved passages, personal observations and source-linked references. Your work stays in this browser unless you export it.</p>');
+  parts.push('<p>Private bookmarks and personal notes, saved in this browser.</p>');
   if(readingOrigin)parts.push('<button type="button" class="gn-rd-back-reading" data-rd="return-reading">← Back to text</button>');
   parts.push('</header>');
   if(loadFailure)parts.push('<div class="gn-rd-warning" role="alert"><strong>Saved data protected.</strong> This browser contains Reading Desk data that could not be read. No new writes will overwrite it. <button type="button" data-rd="download-original">Download untouched original data</button></div>');
   else if(writeConflict)parts.push('<div class="gn-rd-warning" role="alert"><strong>Reading Desk changed in another tab.</strong> New writes are paused to protect the newer collection. <button type="button" data-rd="refresh-storage">Reload saved items</button></div>');
   else if(!available)parts.push('<p class="gn-rd-warning" role="alert">Browser storage is unavailable or full. Download a backup before leaving.</p>');
-  parts.push('<div class="gn-rd-toolbar" role="toolbar" aria-label="Reading Desk tools"><div class="gn-rd-toolbar-main">');
-  parts.push(deskButton('new-note','New personal note','plus','New note'));
-  parts.push(deskButton('print-list','Print or download Reading Desk PDF','print','Print / PDF'));
-  parts.push('</div><div class="gn-rd-toolbar-utilities" role="group" aria-label="Backups and utilities">');
-  parts.push(deskButton('export','Download full JSON backup','download'));
-  parts.push(deskButton('import','Import a JSON backup','upload'));
-  parts.push(deskButton('export-markdown','Export notes as Markdown','saved'));
-  parts.push(deskButton('share-backup','Share JSON backup','share'));
-  parts.push(deskButton('toggle-marks','Show personal marks while reading','eye','',showPersonalMarks()));
+  parts.push('<div class="gn-rd-toolbar gn-rd-simplified-toolbar" role="group" aria-label="Reading Desk actions"><div class="gn-rd-toolbar-main">');
+  parts.push('<button type="button" class="gn-rd-main-action" data-rd="new-note">'+RD_ICON.plus+'<span>New note</span></button>');
+  parts.push('<button type="button" class="gn-rd-main-action" data-rd="print-list">'+RD_ICON.print+'<span>Print / PDF</span></button>');
+  parts.push('<details class="gn-rd-manage-menu"><summary>Manage <span aria-hidden="true">⌄</span></summary><div class="gn-rd-manage-items" role="group" aria-label="Manage Reading Desk data">');
+  parts.push('<button type="button" data-rd="export">Download backup (.json)</button>');
+  parts.push('<button type="button" data-rd="import">Import backup (.json)</button>');
+  parts.push('<button type="button" data-rd="export-markdown">Export readable notes (.md)</button>');
+  parts.push('<button type="button" data-rd="share-backup">Share backup</button>');
   const binCount=records.filter(r=>r.deleted).length;
-  parts.push('<span class="gn-rd-bin-tool">'+deskChoice('filter','bin','Bin ('+binCount+')','trash','',ui.category==='bin')+
-   (binCount?'<span class="gn-rd-tool-count" aria-hidden="true">'+binCount+'</span>':'')+'</span>');
+  parts.push('<button type="button" data-rd="filter" data-value="'+(bin?'all':'bin')+'">'+
+   (bin?'Return to saved items':'Open Bin'+(binCount?' ('+binCount+')':''))+'</button></div></details>');
   parts.push('</div><input class="gn-rd-file" type="file" id="gn-rd-file" accept="application/json,.json" aria-label="Select Reading Desk backup file" hidden></div>');
     if(ui.filterTarget)parts.push('<p class="gn-rd-scoped">Items from '+esc(ctx.sectionRef(ui.filterTarget))+(ui.filterSegment!==null?' · paragraph '+(ui.filterSegment+1):'')+' <button data-rd="unscoped" type="button">Show all</button></p>');
   if(bin)parts.push('<p class="gn-rd-scoped">Bin <button type="button" data-rd="filter" data-value="all">← Back to saved items</button></p>');
   else parts.push('<div class="gn-rd-tabs" role="group" aria-label="Saved item categories">'+
-   deskChoice('filter','all','All saved items','saved','All',ui.category==='all')+
-   deskChoice('filter','bookmarks','Bookmarks','bookmark','Saved',ui.category==='bookmarks')+
-   deskChoice('filter','mine','My notes','note','Notes',ui.category==='mine')+'</div>');
-  parts.push('<label class="gn-rd-search">Search saved material <input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search saved text and notes…" value="'+esc(ui.query)+'"></label>');
-  const typeOptions=[['all','All sources','saved','All'],['text','Text passages','book','Text'],['booknotes','Book notes','note','Book'],['dictionary','Dictionary','book','Dict.'],['index','Subject index','index','Index'],['bidaya','Bidāya','link','Bidāya'],['lessons','Lessons','lesson','Study']];
-  const sortOptions=[['created-desc','Newest saved','clock','New'],['created-asc','Oldest saved','history','Old'],['modified-desc','Recently edited','edit','Edited'],['source','Text / source order','order','Source'],['alpha','Title A–Z','az','A–Z']];
-  parts.push('<div class="gn-rd-controls" aria-label="Reading Desk filter and order toolbars">');
-  parts.push('<div class="gn-rd-option-group" role="group" aria-label="Source filters"><span class="gn-rd-option-label">Source</span><div class="gn-rd-option-buttons">'+
-    typeOptions.map(([value,name,icon,short])=>deskChoice('source-filter',value,name,icon,short,ui.sourceType===value)).join('')+'</div></div>');
-  parts.push('<div class="gn-rd-option-group" role="group" aria-label="Sort saved items"><span class="gn-rd-option-label">Order</span><div class="gn-rd-option-buttons">'+
-    sortOptions.map(([value,name,icon,short])=>deskChoice('sort-filter',value,name,icon,short,ui.sort===value)).join('')+'</div></div></div>');
+   ['all','bookmarks','mine'].map(v=>'<button type="button" data-rd="filter" data-value="'+v+
+    '" aria-pressed="'+(ui.category===v)+'">'+({all:'All',bookmarks:'Bookmarks',mine:'My notes'}[v])+'</button>').join('')+'</div>');
+  parts.push('<label class="gn-rd-search" for="gn-rd-query">Search saved items<input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search notes and quotations…" value="'+esc(ui.query)+'"></label>');
+  const typeOptions=[['all','All sources'],['text','Text passages'],['booknotes','Book notes'],['dictionary','Dictionary'],['index','Subject index'],['bidaya','Bidāya applications'],['lessons','Study lessons']];
+  parts.push('<div class="gn-rd-controls" role="group" aria-label="Browse saved items">');
+  parts.push('<label for="gn-rd-source">Saved from <select id="gn-rd-source">'+typeOptions.map(([value,name])=>
+   '<option value="'+value+'"'+(ui.sourceType===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label>');
+  parts.push('<label for="gn-rd-sort">Sort by <select id="gn-rd-sort">'+Object.entries(SORTS).map(([value,name])=>
+   '<option value="'+value+'"'+(ui.sort===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label></div>');
     parts.push('<p class="gn-rd-count" aria-live="polite">'+visible.length+' '+(bin?'items in Bin':'saved items')+'</p>');
   parts.push('<div class="gn-rd-layout"><div class="gn-rd-cards" id="gn-rd-cards">');
   let lastGroup='',lastPassage='';
@@ -463,6 +453,28 @@ function create(ctx){
    parts.push('<button class="gn-rd-mobile-back" type="button" data-rd="detail-back">← Reading Desk</button>');
    if(ui.mobileDetail&&readingOrigin)parts.push('<button class="gn-rd-back-reading gn-rd-mobile-source-back" type="button" data-rd="return-reading">← Back to text</button>');
    parts.push('<header><small>'+esc(selected.kind==='note'?'MY NOTE':grouped(selected).toUpperCase())+'</small><h2>'+esc(selected.title||titleOf(selected.target))+'</h2></header>');
+   const itemId='data-id="'+esc(selected.id)+'"';
+   parts.push('<div class="gn-rd-detail-actions" role="group" aria-label="Actions for this saved item">');
+   if(bin)parts.push('<button type="button" class="gn-rd-detail-primary" data-rd="restore" '+itemId+'>Restore item</button>');
+   else{
+    if(selected.kind==='note')parts.push('<button type="button" class="gn-rd-detail-primary" data-rd="edit" '+itemId+'>Edit note</button>');
+    if(selected.target&&isResolved(selected)){
+     parts.push('<button type="button" class="'+(selected.kind==='note'?'gn-rd-detail-secondary':'gn-rd-detail-primary')+
+      '" data-rd="open" '+itemId+'>Open in text</button>');
+     if(selected.kind!=='note')parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="add-note" '+itemId+'>Add note</button>');
+    }
+    if(!isResolved(selected))parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="relink" '+itemId+'>Relink source</button>');
+   }
+   parts.push('<details class="gn-rd-item-more"><summary>More <span aria-hidden="true">⌄</span></summary><div class="gn-rd-item-more-items">');
+   if(!bin){
+    parts.push('<button type="button" data-rd="share" '+itemId+'>Share item</button>');
+    parts.push('<button type="button" data-rd="email" '+itemId+'>Email item</button>');
+    parts.push('<button type="button" data-rd="print" '+itemId+'>Print / PDF for this item</button>');
+   }
+   parts.push('<button type="button" data-rd="'+(bin?'delete-permanent':'trash')+'" '+itemId+'>'+
+    (bin?'Delete permanently':'Move to Bin')+'</button>');
+   parts.push('</div></details></div>');
+
    if(!isResolved(selected))parts.push('<div class="gn-rd-unresolved-detail" role="status"><strong>Original source unavailable in this edition.</strong><p>The saved words, note, dates and previous source reference remain preserved. You can read or export this item and optionally reconnect it to an existing paragraph.</p></div>');
    parts.push(detailsFor(selected));
    parts.push('<footer class="gn-rd-date-details"><small>'+esc(dateLine(selected,true))+'</small></footer>');
@@ -480,20 +492,6 @@ function create(ctx){
     parts.push(relatives.slice(0,12).map(r=>'<button type="button" data-rd="related" data-id="'+esc(r.id)+'">'+esc(short(r.title||titleOf(r.target),100))+'</button>').join(''));
     parts.push('</section>');
    }
-   parts.push('<div class="gn-rd-detail-actions" role="toolbar" aria-label="Saved item tools">');
-   const itemId='data-id="'+esc(selected.id)+'"';
-   if(bin)parts.push(deskButton('restore','Restore item','history','Restore',null,itemId));
-   else{
-    if(selected.target&&isResolved(selected)){
-     parts.push(deskButton('open','Open original source','book','Source',null,itemId));
-     parts.push(deskButton('add-note','Add linked note','plus','Add note',null,itemId));
-    }
-    if(!isResolved(selected))parts.push(deskButton('relink','Relink archival source','link','Relink',null,itemId));
-    if(selected.kind==='note')parts.push(deskButton('edit','Edit personal note','edit','Edit',null,itemId));
-   }
-   parts.push(deskButton('share','Share saved item','share','Share',null,itemId));
-   parts.push(deskButton('email','Email saved item','mail','Email',null,itemId));
-   parts.push(deskButton('print','Print or download this item','print','Print',null,itemId)+'</div>');
     }else parts.push('<div class="gn-rd-detail-placeholder"><h2>Choose an item</h2><p>Select a bookmark or personal note to see its source and context.</p></div>');
   parts.push('</div></div>');
   if(bin&&visible.length)parts.push('<div class="gn-rd-bin-actions"><button type="button" data-rd="restore-all">Restore all</button><button type="button" data-rd="empty-bin">Empty Bin…</button></div>');
