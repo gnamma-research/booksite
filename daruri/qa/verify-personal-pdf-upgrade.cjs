@@ -40,11 +40,22 @@ for(const file of ['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-
   }
 }
 const ex=fs.readFileSync(path.join(root,'personal-export.js'),'utf8');
-assert(ex.includes('sourceMatch(words,target)')&&ex.includes('addHighlight(pdf'));
+assert(ex.includes('sourceMatch(words,target)')&&ex.includes('drawLinkedHighlight(pdf,sourcePage,where.hit,destPage,noteTarget.top)'));
+assert(s.includes("Subtype:PDFName.of('Link')"),'two-way navigation must use PDF links');
+assert(!s.includes("Subtype:PDFName.of('Text')"),'no personal comment boxes allowed');
+assert(!s.includes("Subtype:PDFName.of('Highlight')"),'clickable highlights must not add annotation comment entries');
 assert(ex.includes('searchableFonts(pdf,URL_ROOT)')&&ex.includes('textOverlay(pdf,out'));
 assert(ex.includes('candidate.source_sha256===metadata.sha256'));
-assert(ex.includes("if(!p.appendix&&skipped.length)"),'notes must never disappear from export');
+assert(ex.includes("if(!p.appendix)throw Error"),'links must have an appendix destination');
+const reserve=[];
+for(const desired of [90,90,90,90,90,90]){
+  const top=api.allocateMarginTop(reserve,desired,842);
+  assert(top!==null&&top>=57&&top<=792);
+  assert(reserve.filter(v=>Math.abs(v-top)<14).length===1);
+}
+assert(api.sourceTop({section:'12'},null,{anchors:{'section-12':{page:3,y:170}}},2)===170);
+assert(api.sourceTop({section:'12'},null,{anchors:{'section-12':{page:4,y:170}}},2)===82);
 const html=fs.readFileSync(path.join(root,'personal-export.html'),'utf8');
 assert(html.indexOf('personal-pdf-enhancements.js')<html.indexOf('personal-export.js'));
 assert(html.includes('name="pe-mode" value="none" checked'));
-console.log('PASS unique English and RTL Arabic highlights, ambiguity fallback, checksum contract, searchable Unicode engine and privacy default');
+console.log('PASS P-note identifiers, margin collision safety, no popups, verified links, multilingual Unicode and unchanged clean default');
