@@ -1,0 +1,57 @@
+/* Source links and exact Qur'an excerpts. Isolated to notes: no reader-layout changes. */
+.gn-source-citation {
+  display: inline-flex; align-items: baseline; gap: .24em;
+  max-width: 100%; vertical-align: baseline;
+  margin-inline-end: .24em; white-space: normal;
+}
+.gn-source-label {font: inherit; color: inherit; overflow-wrap: anywhere}
+a.gn-source-icon-link {
+  position: relative; display: inline-flex; flex: 0 0 auto;
+  align-items: center; justify-content: center;
+  width: 34px; height: 34px; min-width: 34px; min-height: 34px;
+  vertical-align: middle; box-sizing: border-box;
+  border: 1px solid var(--line, var(--border, #b4ada3));
+  border-radius: 9px; padding: 0; margin-inline: 1px 0;
+  background: var(--surface, var(--panel, transparent));
+  color: var(--accent, #386676); text-decoration: none!important;
+  transition: background-color .15s ease, box-shadow .15s ease;
+  touch-action: manipulation; -webkit-tap-highlight-color: transparent;
+}
+a.gn-source-icon-link:hover {background: var(--hover, rgba(107,128,119,.14));}
+a.gn-source-icon-link:focus-visible {outline: 2px solid var(--accent, #386676); outline-offset: 2px;}
+a.gn-source-icon-link svg {display: block; width: 18px; height: 18px; pointer-events: none;}
+.gn-source-url-tooltip {
+  position: fixed; z-index: 2147483000;
+  max-width: min(350px, calc(100vw - 20px));
+  padding: 7px 10px; box-sizing: border-box;
+  border-radius: 7px; border: 1px solid rgba(180,174,166,.35);
+  background: #272e32; color: #fff;
+  font: 12px/1.45 system-ui, -apple-system, sans-serif;
+  text-align: left; direction: ltr; overflow-wrap: anywhere;
+  box-shadow: 0 5px 20px rgba(0,0,0,.22);
+  pointer-events: none;
+}
+.gn-source-url-tooltip[hidden] {display: none!important;}
+.gn-verse-source-excerpt {margin: 9px 0 10px; padding: 9px 12px;
+  border: 1px solid var(--line, var(--border, #ded8cd));
+  border-radius: 9px; background: var(--surface-soft, rgba(122,113,93,.045));
+  max-width: 100%; box-sizing: border-box;}
+.gn-quran-quotation {margin: 0; color: var(--ink, var(--text, inherit));
+  font-family: 'Amiri Quran', 'Amiri', 'Scheherazade New', 'Noto Naskh Arabic', serif;
+  font-size: clamp(1.7rem, 3vw, 2rem); font-weight: 400;
+  line-height: 2.04; text-align: center; direction: rtl;
+  unicode-bidi: isolate; overflow-wrap: anywhere;}
+.gn-quran-bracket {font-size: 1.15em; padding: 0 .08em; color: var(--accent, #386676); white-space: nowrap;}
+.gn-quran-words {unicode-bidi: isolate;}
+.gn-verse-source-excerpt figcaption {font: 11px/1.45 var(--sans, system-ui, sans-serif);
+  color: var(--muted, #666); text-align: center; direction: ltr; margin-top: 2px;}
+@media(hover: none), (pointer: coarse), (max-width: 600px) {
+  a.gn-source-icon-link {min-width: 44px; min-height: 44px; width: 44px; height: 44px;}
+}
+@media print {
+  .gn-source-url-tooltip {display: none!important;}
+  a.gn-source-icon-link {border: 0; width: auto; min-width: 0; height: auto; min-height: 0; background: none; color: #222;}
+  a.gn-source-icon-link svg {width: 10pt; height: 10pt;}
+  .gn-verse-source-excerpt {break-inside: avoid; background: none; border-color: #aaa;}
+}
+@media(prefers-reduced-motion:reduce){a.gn-source-icon-link{transition:none}}
