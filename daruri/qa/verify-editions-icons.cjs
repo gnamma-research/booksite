@@ -53,6 +53,13 @@ assert.ok(editionSrc.includes('gn-ed-reading-custom'), 'Custom print settings ar
 assert.ok(editionSrc.includes('legacy.hidden = true'), 'Verified Study PDF supersedes older fixed link');
 assert.ok(!editionSrc.includes('Study notes + hadith sources'), 'No ḥadīth selector in non-scholarly Study');
 assert.ok(!editionSrc.includes('gn-ed-intro'), 'Removed edition explanatory paragraphs');
+for(const name of ['reading','study','reference']){
+  assert.ok(editionSrc.includes('data-ep-tab="'+name+'"'),'Tab '+name);
+  assert.ok(editionSrc.includes('aria-labelledby="gn-ed-tab-'+name+'"'),'Linked panel '+name);
+}
+assert.ok(css.includes('gn-ed-tab[aria-selected="true"]'),'Visible selected tab style');
+assert.ok(editionSrc.includes("function onTabKeydown(event)"),'Keyboard tabs and roving focus');
+assert.ok(editionSrc.includes("panel.hidden=key!==tier"),'Hide inactive edition panels');
 assert.ok(editionSrc.includes('data-ep-info-value'), 'Shared Visuals-style selection display');
 assert.ok(editionSrc.includes('aria-label="Custom Reading printout"'), 'Icon-only disclosure has accessible name');
 assert.ok(!src.includes("className='gn-ed-icon-label'"), 'Option tiles contain no visible text captions');
