@@ -20,6 +20,7 @@ import org.json.JSONObject;
 import org.json.JSONArray;
 import java.io.*;
 import java.util.*;
+import java.text.Normalizer;
 
 public class PhonePdfActivity extends Activity {
     private static final String TAG="GnammaPhone";
@@ -101,7 +102,11 @@ public class PhonePdfActivity extends Activity {
       String txt=pageText(BASE);
       boolean en=txt.contains("SearchableTermGamma");
       boolean fr=txt.contains("Des idées françaises");
-      boolean ar=txt.contains("مقدمة");
+      String normalized=Normalizer.normalize(txt,Normalizer.Form.NFD)
+        .replaceAll("[\\p{M}\\p{Cf}\\s]+","");
+      boolean ar=normalized.contains("مقدمة");
+      Log.i(TAG,"GNAMMA_ARABIC_DEBUG "+txt.substring(0,Math.min(700,txt.length()))
+        .replace("\\n"," "));
       boolean p=txt.contains("P1");
       put("searchEnglish",en);put("searchFrench",fr);put("searchArabic",ar);put("searchP",p);
       if(!en)error("Android native renderer cannot extract English note text");
@@ -114,6 +119,11 @@ public class PhonePdfActivity extends Activity {
       current=index;
       try(PdfRenderer.Page page=renderer.openPage(index)){
         activeLinks=new ArrayList<>(page.getGotoLinks());
+        if(index==SOURCE||index>=BASE){
+          for(PdfPageGotoLinkContent link:activeLinks)
+            Log.i(TAG,"GNAMMA_LINK page="+index+" target="+link.getDestination().getPageNumber()+
+              " bounds="+link.getBounds());
+        }
         int w=page.getWidth(),h=page.getHeight();
         Bitmap bmp=Bitmap.createBitmap(Math.round(w*SCALE),Math.round(h*SCALE),Bitmap.Config.ARGB_8888);
         bmp.eraseColor(Color.WHITE);
