@@ -171,8 +171,38 @@ def _rich_text(text: str, references: list[dict] | None = None) -> str:
     return ''.join(pieces)
 
 
+def _note_text_and_language(note: Mapping[str, Any], language: str = 'en') -> tuple[str, str]:
+    """Choose the note's actual language, independently of the surrounding edition.
+
+    An explicitly supplied original-language note takes precedence; its language
+    is never inferred from the language of a book it happens to cite. The
+    usual Arabic Qur'an source annotation is used only when supplied as such.
+    If an Arabic edition includes English/French editorial prose, preserve its
+    words and render them left-to-right rather than mislabelling them Arabic.
+    """
+    source_language = str(note.get('original_note_language', '')).lower()
+    if source_language in {'ar', 'en', 'fr'} and note.get('original_note_text') is not None:
+        return str(note['original_note_text']), source_language
+
+    if language != 'en':
+        arabic = note.get('text_ar') or note.get('textAr')
+        if arabic:
+            return str(arabic), 'ar'
+    elif note.get('text_en'):
+        return str(note['text_en']), 'en'
+
+    if note.get('text') is not None:
+        text_language = str(note.get('text_language', 'en')).lower()
+        return str(note['text']), text_language if text_language in {'en', 'ar', 'fr'} else 'en'
+    if note.get('text_en'):
+        return str(note['text_en']), 'en'
+    if note.get('text_ar') or note.get('textAr'):
+        return str(note.get('text_ar') or note['textAr']), 'ar'
+    return '', 'en'
+
+
 def _note_text(note: Mapping[str, Any], language: str = 'en') -> str:
-    return str(note.get('text_ar' if language != 'en' else 'text_en') or note.get('text') or '')
+    return _note_text_and_language(note, language)[0]
 
 
 def _resolve_anchor(text: str, descriptor: Mapping[str, Any], context: str) -> int:
@@ -262,11 +292,12 @@ class _Renderer:
         prefix = ''
         if kind in STUDY_NOTE_KINDS:
             prefix = '<span class="footnote-kind">' + ('Translation.' if kind == 'translation' else 'Interpretation.') + '</span> '
-        direction = 'rtl' if language != 'en' else 'ltr'
-        css_class = 'arabic' if language != 'en' else 'english'
-        body = _rich_text(_note_text(note, language), note.get('references'))
+        body_text, note_language = _note_text_and_language(note, language)
+        direction = 'rtl' if note_language == 'ar' else 'ltr'
+        css_class = 'arabic' if note_language == 'ar' else 'english'
+        body = _rich_text(body_text, note.get('references'))
         markup = (
-            f'<span class="footnote {css_class}" lang="{("ar" if language != "en" else "en")}" dir="{direction}" '
+            f'<span class="footnote {css_class}" lang="{note_language}" dir="{direction}" '
             f'id="{escape(target_id, quote=True)}" data-generated="annotation" '
             f'data-note-id="{escape(note_id, quote=True)}" data-note-number="{number}">'
             f'<span class="footnote-number">{number}.</span> {prefix}'
