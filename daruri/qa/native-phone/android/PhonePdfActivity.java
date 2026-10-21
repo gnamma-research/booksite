@@ -188,6 +188,7 @@ public class PhonePdfActivity extends Activity {
             }
             if(current>=BASE&&destination<BASE){
               backTapped=true;
+              if(destination!=SOURCE)error("Endnote return goes to wrong page "+destination+"; expected "+SOURCE);
               Log.i(TAG,"GNAMMA_BACK_TAPPED "+destination);
               displayPage(destination);writeReport();
               Log.i(TAG,"GNAMMA_ANDROID_PASS "+report.toString());
