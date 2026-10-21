@@ -103,7 +103,7 @@ final class PhonePDFController: UIViewController {
         if let link=backward.first {
           viewer.go(to:link.target)
           backArrival=doc.index(for:viewer.currentPage ?? doc.page(at:0)!)
-          if backArrival != link.page {errors.append("PDFView endnote→source return did not reach target")}
+          if backArrival != link.page || backArrival != 7 {errors.append("PDFView endnote→source return missed exact §1 source page")}
         }
         // Leave the initial reading page displayed for the device screenshot.
         if let first=doc.page(at:7){viewer.go(to:first)}
