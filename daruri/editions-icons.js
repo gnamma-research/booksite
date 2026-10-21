@@ -82,6 +82,16 @@
     return (tier==='study'?'Study':'Reading')+(number?' · '+number+' sections':'');
   }
   function describe(target) {
+    const langButton=target.closest('[data-ep-ready-toggle]');
+    if(langButton && activeRoot?.contains(langButton)){
+      const panel=langButton.closest('[data-ep-published]');
+      const value=panel?.querySelector('[data-ep-ready-lang]')?.selectedOptions?.[0]?.textContent?.trim()||'Language';
+      const key=langButton.dataset.epReadyToggle;
+      show(key==='vowels'?'Arabic vowel marks':'Language',
+        key==='vowels'?(langButton.getAttribute('aria-pressed')==='true'?'Vowelled':'Unvowelled'):value,
+        panel?.dataset.epDescription||'');
+      return;
+    }
     const option=target.closest('.gn-ed-icon-option');
     if(option&&activeRoot?.contains(option)){
       const group=option.closest('.gn-ed-icon-options');
@@ -305,5 +315,6 @@
     enhance(args[0]);
     return value;
   };
+  window.GnammaEditions.syncIcons=update;
   window.GnammaEditions.__iconEnhanced=true;
 })();
