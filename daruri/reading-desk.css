@@ -252,6 +252,13 @@ body.hide-notes:not(.focus-mode) ::highlight(gn-rd-note){background:rgba(61,135,
 .gn-rd-relink label{display:block;font-size:.85rem;font-weight:600;margin:15px 0}
 .gn-rd-relink select{width:100%;display:block;padding:11px;margin-top:6px;font:inherit;font-size:1rem;border:1px solid var(--line,#d3cfbf);border-radius:8px;color:inherit;background:var(--paper,#fffdf9)}
 .gn-rd-relink footer{display:flex;flex-wrap:wrap;justify-content:end;gap:9px;margin-top:21px}
-.gn-rd-relink button{font:600 .88rem/1.4 inherit;min-height:44px;padding:9px 13px;border:1px solid var(--line,#d3cfbf);border-radius:8px;background:var(--paper,#fffdf9);color:inherit;cursor:pointer}
+.gn-rd-relink button{font:600 .88rem/1.4 var(--sans,system-ui);min-height:44px;padding:9px 13px;border:1px solid var(--line,#d3cfbf);border-radius:8px;background:var(--paper,#fffdf9);color:inherit;cursor:pointer}
 .gn-rd-relink button[data-rd="relink-save"]{background:var(--accent,#446d5e);color:#fff;border-color:var(--accent,#446d5e)}
 .gn-rd-relink :focus-visible{outline:2px solid var(--accent,#446d5e);outline-offset:2px}
+
+/* Source-history provenance shown only on expanded saved items. */
+.gn-rd-paragraph-heading{font:600 .78rem/1.4 var(--sans,system-ui);color:var(--muted,var(--soft,#617067));margin:4px 4px 0;padding:3px 0}
+.gn-rd-history{margin:13px 0;border:1px solid var(--line,#ded8ce);border-radius:9px;padding:10px 13px;color:var(--muted,var(--soft,#617168));font-size:.78rem}
+.gn-rd-history summary{cursor:pointer;color:var(--ink,#2d4138);font-weight:600;min-height:30px}
+.gn-rd-history p{line-height:1.6;margin:7px 0;overflow-wrap:anywhere}
+.gn-rd-print-unavailable{color:#555;font-size:.8rem;font-style:italic;margin:5px 0 9px}
