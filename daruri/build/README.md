@@ -59,3 +59,18 @@ The two contents lists use compact two-column typography. The first translates t
 The subject index precedes the dictionary. A compact subject-group guide uses the same `subject-index-data.json` taxonomy as the website; its example links lead to alphabetical entries or, in the basic study index, directly to passages. All PDF text is black with white backgrounds and fine rules. Existing source-note inclusion rules remain unchanged.
 
 Metadata records the source and editorial contents page ranges, validates 46 source-outline entries and 258 editorial entries where applicable, and preserves all259 exact section destinations for website remapping.
+
+
+## Editions & Printing catalog — 21 October 2026
+
+The dedicated #editions route is organised in the approved order: (1) Reading & Printing, (2) Study, (3) Reference. It is available from the left navigation, Home, and the existing Downloads menus. Those five original PDF links remain available with their existing destinations; the no-JavaScript fallback provides the same ordered tiers and published file links.
+
+Reading & Printing now has a browser-side A4 configurator: language (English, Arabic, bilingual), one/two columns (parallel or stacked for bilingual), vowel marks, comfortable/balanced/compact margin presets, no/essential notes, full text/major part/lesson/section range. The preview is generated from the current canonical text, not a placeholder. Print / Save as PDF uses the browser's own print dialog and does not upload text or user data. The desktop and mobile layout responds to current reader palettes. The full source remains unabridged for selected complete sections.
+
+Study provides the published fixed bilingual study PDF, the companion study guide, and a separate custom Study print configuration with selected translation, interpretation and source notes. Reference stays a fixed link to the scholarly PDF and is intentionally not customisable.
+
+Both Reading and Study have the optional 'Include editorial section titles' checkbox. Source headings are always present and are never labelled editorial. The reading preset defaults to OFF; study defaults to ON. Existing editorial descriptions are English only in the canonical reader data; when enabled in an Arabic-only printout, the titles remain visibly labelled English editorial descriptions rather than being presented as authorial Arabic headings.
+
+Browser assets: editions.js and editions.css, version 20261021-editions1. Their versions must remain matched in index.html and sw.js. Both are included in download-bundle.js. The PDF build source, build/print_editions.py, supports optional --editorial-titles on/off. Its default is OFF, to keep the A4 compact editions minimal. qa/verify-editions-configurator.js tests route integration and title/format selection using all 258 authorial sections / 414 bilingual passage pairs.
+
+The original published scholarly and bilingual-study PDF binaries have not been silently replaced, because the owner requested review of page designs first. Source generation for bilingual PDFs has been adjusted toward English-left/Arabic-right. The published legacy file page maps and the scholarly reference PDF URLs remain intact pending approved replacement and revalidation. Do not conflate the interactive browser Save as PDF option with a downloadable pre-built PDF for every option.
