@@ -196,6 +196,57 @@ def smoke_native_brackets_without_enhancer(browser, port, engine):
     return {'engine':engine,'width':320,'optional_js_blocked':True,
             'native_quran_brackets':2,'authorial_ordinary_quotes':2,'withheld_reference_absent':True}
 
+
+def smoke_noscript_quran_notes(browser, port, engine):
+    """The actual static reader must be scholarly-correct when JavaScript is disabled."""
+    ctx=browser.new_context(viewport={'width':320,'height':760},
+                            is_mobile=True,has_touch=True,java_script_enabled=False)
+    page=ctx.new_page()
+    page.goto(f'http://127.0.0.1:{port}/daruri/#section=1',
+              wait_until='domcontentloaded',timeout=90000)
+    fallback=page.locator('#fallbackReader')
+    assert fallback.count()==1, 'Missing no-JavaScript reading mode'
+    assert fallback.is_visible(), 'No-JavaScript reader is not visible'
+    for identifier, phrase, verse, uri in (
+        ('QUR-R001-Q049','معلّم البيان','عَلَّمَهُ ٱلْبَيَانَ','https://quran.com/55/4'),
+        ('QUR-R001-Q050','الحجج البالغة','فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ','https://quran.com/6/149'),
+    ):
+        note=page.locator(f'#fb-note-{identifier}')
+        assert note.count()==1, f'{identifier}: missing static fallback source note'
+        # Expand without changing the site's JavaScript-disabled setting.
+        note.evaluate("""e => {
+            for (let p=e.parentElement; p; p=p.parentElement)
+                if (p.tagName === 'DETAILS') p.open=true;
+        }""")
+        author=note.locator('.gn-ibn-rushd-words')
+        assert author.count()==1
+        assert author.text_content()=='“'+phrase+'”'
+        assert author.locator('bdi[lang="ar"][dir="rtl"]').count()==1
+        prose=note.locator('p').nth(1).text_content()
+        assert verse not in prose, 'Canonical verse must not be repeated in parentheses'
+        figure=note.locator('figure.gn-verse-source-excerpt')
+        assert figure.count()==1
+        assert figure.get_attribute('data-source-render')=='fallback'
+        assert figure.locator('.gn-quran-words').text_content()==verse
+        assert figure.locator('.gn-quran-bracket').all_text_contents()==['﴿','﴾']
+        assert note.locator(f'a[href="{uri}"]').count()==1
+        assert 'possible verbal allusion' in note.text_content()
+        font=figure.locator('.gn-quran-quotation').evaluate(
+            'e => getComputedStyle(e).fontFamily')
+        assert 'Amiri' in font, 'Fallback must have Qurʾānic verse typography'
+        assert figure.is_visible(), 'Qurʾānic verse should be visible after opening Notes'
+    for withdrawn in ('QUR-R001-Q051','QUR-R011-Q052','QUR-R047-Q053'):
+        assert page.locator(f'#fb-note-{withdrawn}').count()==0, withdrawn
+        assert page.locator(f'.fb-source-ref[data-source-note-id="{withdrawn}"]').count()==0
+    assert page.locator('a[href="https://quran.com/33/40"]').count()==0
+    page.locator('#fb-note-QUR-R001-Q049').scroll_into_view_if_needed()
+    page.screenshot(path=str(REPORT / f'fallback-nojs-{engine}-320.png'),
+                    full_page=False)
+    ctx.close()
+    return {'engine':engine,'width':320,'javaScript':False,
+            'brackets':'Quran: ﴿…﴾; Ibn Rushd: “…”',
+            'references_checked':2,'withdrawn_citations':0}
+
 def main():
     server=http.server.ThreadingHTTPServer(('127.0.0.1',0),QuietHTTP)
     threading.Thread(target=server.serve_forever,daemon=True).start()
@@ -209,6 +260,7 @@ def main():
                         out.append(exercise(name,browser,width,mobile))
                     out.append(smoke_full_site(browser,server.server_port,name))
                     out.append(smoke_native_brackets_without_enhancer(browser,server.server_port,name))
+                    out.append(smoke_noscript_quran_notes(browser,server.server_port,name))
                 finally: browser.close()
     finally: server.shutdown()
     (REPORT/'results.json').write_text(json.dumps(out,indent=2,ensure_ascii=False))

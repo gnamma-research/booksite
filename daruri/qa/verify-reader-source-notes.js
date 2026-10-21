@@ -29,6 +29,29 @@ vm.runInNewContext(read('source-reference-data.js'), sourceContext);
 const supplement = JSON.parse(JSON.stringify(sourceContext.window.DARURI_SOURCE_REFERENCES));
 const quranMap = JSON.parse(read('build/data/quran-source-notes.json'));
 const hadithMap = JSON.parse(read('build/data/hadith-source-notes.json'));
+
+/* Static no-JS reader must keep the same cautious Section 1 citation policy.
+   This also guards users whose browser is serving the fallback instead of the
+   enhanced reader (for example if scripts are disabled or interrupted). */
+const fallbackPairs = [
+  {id:'QUR-R001-Q049', author:'معلّم البيان', verse:'عَلَّمَهُ ٱلْبَيَانَ'},
+  {id:'QUR-R001-Q050', author:'الحجج البالغة', verse:'فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ'}
+];
+for (const {id,author,verse} of fallbackPairs) {
+  const expression = new RegExp('<article class="fb-note" id="fb-note-' + id + '"[^>]*>([\\s\\S]*?)<\\/article>');
+  const found=html.match(expression);
+  assert.ok(found,'Fallback section has a real source note for ' + id);
+  const noteHTML=found[1];
+  assert.ok(noteHTML.includes('“<bdi lang="ar" dir="rtl">' + author + '</bdi>”'), id + ' authorial phrase uses ordinary quotes');
+  assert.ok(noteHTML.includes('<span class="gn-quran-bracket">﴿</span>') && noteHTML.includes('<span class="gn-quran-bracket">﴾</span>'), id + ' canonical verse uses Quran brackets');
+  assert.ok(noteHTML.includes('<span class="gn-quran-words">' + verse + '</span>'), id + ' displays actual canonical wording');
+  assert.ok(noteHTML.includes('possible allusion'), id + ' correctly disclaims certain quotation');
+}
+for (const withheldId of ['QUR-R001-Q051','QUR-R011-Q052','QUR-R047-Q053']) {
+  assert.ok(!html.includes(withheldId), 'A withdrawn Quran reference survives in the static fallback: '+withheldId);
+}
+assert.ok(html.includes('<noscript><link rel="stylesheet" href="source-note-ui.css?v=20261021-fallback-quran1"></noscript>'),
+  'No-JavaScript fallback must load the canonical Quran verse typography');
 const backmatterMap = JSON.parse(read('build/data/backmatter-source-notes.json'));
 const isTextSource = note => ['quran', 'hadith'].includes(note.source_type);
 const oldNotes = book.notes.filter(note => !isTextSource(note));
