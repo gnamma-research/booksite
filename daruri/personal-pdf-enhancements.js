@@ -213,21 +213,38 @@
       const width=runs.reduce((a,r)=>a+r.width,0);
       let x=(line.rtl?(W-pad)/2-width:(pad+(line.indent||0))/2);
       const y=(H-line.y)/2;
-      const isComplex=/[\u0600-\u08FF]/u.test(s);
-      if(isComplex){
-        // PDFium's text extraction can lose Unicode attribution for Naskh
-        // contextual glyphs. Marked-content ActualText supplies the exact
-        // original Unicode sentence independently of glyph shaping. Only the
-        // invisible search layer is marked; the readable canvas is unchanged.
-        const {PDFOperator,PDFName,PDFHexString}=window.PDFLib;
-        page.pushOperators(PDFOperator.of('BDC',[PDFName.of('Span'),
-          pdf.context.obj({ActualText:PDFHexString.fromText(s)})]));
-      }
+      // Retain the tested original Unicode layer for PDFKit and PDF.js.
+      // The extra Arabic fallback below is invisible, deliberately separate,
+      // and does not change the canvas-rendered scholarly typography.
       for(const run of runs){
         if(run.text){page.drawText(run.text,{x,y,size,font:run.font,opacity:0});n++;}
         x+=run.width;
       }
-      if(isComplex)page.pushOperators(window.PDFLib.PDFOperator.of('EMC'));
+      if(/[\u0600-\u08FF]/u.test(s)){
+        const arabicChunks=s.match(/[\u0600-\u08FF][\u0600-\u08FF\s.,،؛؟!—-]*/gu)||[];
+        const arabic=arabicChunks.map(v=>v.trim()).filter(Boolean).join(' ')
+          .normalize('NFD').replace(/\p{M}/gu,'');
+        const latin=s.replace(/[\u0600-\u08FF][\u0600-\u08FF\s.,،؛؟!—-]*/gu,' ')
+          .replace(/\s+/g,' ').trim();
+        if(arabic){
+          // PDFium's RTL marked-content /ActualText algorithm reverses Arabic
+          // strings during extraction. Supplying reversed Unicode produces
+          // correct logical Arabic on Android, while the visible original text
+          // and the original Unicode layer remain unchanged for other readers.
+          // Separate baselines prevent PDFium from reversing mixed Latin runs.
+          const {PDFOperator,PDFName,PDFHexString}=window.PDFLib;
+          const rtl=Array.from(arabic).reverse().join('');
+          page.pushOperators(PDFOperator.of('BDC',[PDFName.of('Span'),
+            pdf.context.obj({ActualText:PDFHexString.fromText(rtl)})]));
+          page.drawText('A',{x:12,y:y-13,size,font:fonts.latin,opacity:0});
+          page.pushOperators(PDFOperator.of('EMC'));
+          n++;
+        }
+        if(latin){
+          page.drawText(latin,{x:12,y:y-28,size,font:fonts.latin,opacity:0});
+          n++;
+        }
+      }
     }
     return n;
   }
