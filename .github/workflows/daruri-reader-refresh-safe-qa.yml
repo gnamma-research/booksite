@@ -1,0 +1,37 @@
+name: Daruri reader refresh safety
+
+on:
+  push:
+    branches: [fix/daruri-safe-reader-cache-reset-20261021]
+    paths:
+      - refresh-daruri.html
+      - daruri/qa/verify-reader-refresh.cjs
+      - .github/workflows/daruri-reader-refresh-safe-qa.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  safe-recovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Verify only Daruri browser caches cleared; annotations unchanged
+        run: node daruri/qa/verify-reader-refresh.cjs
+      - name: Verify current Quran source pair still appears on the production site
+        run: |
+          python - <<'PY'
+          from urllib.request import urlopen,Request
+          import hashlib
+          url='https://gnamma-research.github.io/booksite/daruri/?daruri-check=20261021-qinline4'
+          with urlopen(Request(url,headers={'Cache-Control':'no-cache'}),timeout=30) as r:
+              html=r.read().decode('utf-8')
+              assert 'GN_SECTION1_QURAN_PAIRS' in html
+              assert 'gnSection1QuranFigure' in html
+              print('Live Quran note code retained; status',r.status,'bytes',len(html),'sha256',hashlib.sha256(html.encode()).hexdigest())
+          PY
