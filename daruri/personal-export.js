@@ -1,6 +1,6 @@
 /* Gnamma personal PDF editions: statically hosted, browser-only.
-   Published edition bytes are never written back to GitHub.
-   Native PDF comments are section-level: do NOT invent quote coordinates. */
+   P1, P2... uniquely identify user-authored notes; publisher notes are unchanged.
+   Exact quotes receive clickable visual highlights, not comment-sidebars popups. */
 (() => {
   'use strict';
   const STORAGE='gnamma-reading-desk-v1';
@@ -82,7 +82,7 @@
     catch(_){return 'Date unavailable';}
   }
   function entryText(r,i,dates){
-    const h='['+(i+1)+'] '+nameOf(r.target);
+    const h='P'+(i+1)+' · '+nameOf(r.target);
     const title=cap(r.title|| (isNote(r)?'Personal note':'Saved passage'),240);
     const text=isNote(r)?r.body:(r.target?.quote||r.body||(r.archivedValue!==undefined?JSON.stringify(r.archivedValue):'Saved passage / bookmark'));
     const quote=r.target?.quote&&isNote(r)?'\nSelected text: '+cap(r.target.quote,1000):'';
@@ -140,10 +140,10 @@
       'Original published PDF only. No Reading Desk items or personal data are added.':
       (rows.length+' Reading Desk item'+(rows.length===1?'':'s')+' selected. A new PDF will be created locally; the original edition stays unchanged.');
     $('pe-count').textContent=has?rows.length+' qualifying item'+(rows.length===1?'':'s')+
-      (rows.some(r=>r.target?.section)?' · in-text entries will be pinned to source section pages where mapping is verified':' · appendix-only references'):'';
-    const overflow=has&&requiresAppendix(rows,p);
-    $('pe-generate').disabled=busy||!pdf|| (has&&(!rows.length||(!p.appendix&&!p.annotations)||rows.length>MAX_ITEMS||overflow));
-    if(overflow)$('pe-count').textContent+=' · The selected material is too long for pop-up notes alone; enable the full notes appendix.';
+      (rows.some(r=>r.target?.section)?' · P references identify personal notes at their original passages':' · appendix-only personal entries'):'';
+    const missingAppendix=has&&!p.appendix;
+    $('pe-generate').disabled=busy||!pdf|| (has&&(!rows.length||missingAppendix||rows.length>MAX_ITEMS));
+    if(missingAppendix)$('pe-count').textContent+=' · Include the personal appendix: P references need somewhere to link to.';
     if(has&&rows.length>MAX_ITEMS)$('pe-count').textContent+=' · Too many for one export. Choose up to '+MAX_ITEMS+' items.';
     if(mode()==='choose')renderPicker();
     if(!has){$('pe-result').hidden=true;if(!loadError)info('');}
@@ -213,33 +213,9 @@
     c.fillText('PERSONAL READING DESK · not part of the published text',sheet.padding,sheet.H-55);
     c.textAlign='right';c.fillText(String(pageNumber),sheet.W-sheet.padding,sheet.H-55);c.restore();
   }
-  function attach(pdf,page,dict){
-    const {PDFName,PDFArray}=window.PDFLib;
-    const context=pdf.context,ref=context.register(context.obj(dict)),key=PDFName.of('Annots');
-    let annots=page.node.lookup(key,PDFArray);
-    if(!annots){annots=context.obj([]);page.node.set(key,annots);}
-    annots.push(ref);return ref;
-  }
-  function notePin(pdf,page,number,popup,index){
-    const {PDFName,PDFHexString}=window.PDFLib;
-    const size=page.getSize();const height=Math.max(180,size.height-80);
-    const count=Math.max(1,Math.floor(height/18));
-    const col=Math.floor(index/count),row=index%count;
-    if(col>=3)return false; // Always in appendix even if a page is too crowded.
-    const x=Math.max(3,size.width-22-col*16),y=Math.max(28,size.height-53-row*18);
-    attach(pdf,page,{
-      Type:PDFName.of('Annot'),Subtype:PDFName.of('Text'),
-      Rect:[x,y,x+12,y+12],
-      Contents:PDFHexString.fromText('Reading Desk #'+number+'\n'+(popup.length>24000?popup.slice(0,23930)+'\n[More in the personal appendix]':popup)),
-      T:PDFHexString.fromText('Personal note '+number),
-      Name:PDFName.of('Comment'),C:[0.18,0.35,0.42],F:4,Open:false
-    });
-    return true;
-  }
-  function makeLink(pdf,page,sourcePage,rect){
-    const {PDFName}=window.PDFLib;
-    attach(pdf,page,{Type:PDFName.of('Annot'),Subtype:PDFName.of('Link'),
-      Rect:rect,Border:[0,0,0],Dest:pdf.context.obj([sourcePage.ref,PDFName.of('Fit')]),F:4});
+  // New personal references are standard PDF GoTo links, not comment boxes.
+  function makeLink(pdf,page,targetPage,rect,targetTop){
+    return window.GnammaPdfUpgrade.attachLink(pdf,page,targetPage,rect,targetTop);
   }
   async function toJpeg(canvas){
     return new Promise((resolve,reject)=>{
@@ -247,7 +223,7 @@
         'image/jpeg',0.91);
     });
   }
-  async function appendNotes(pdf,rows,p,meta){
+  async function appendNotes(pdf,rows,p,meta,sourcePositions,basePages){
     if(!window.GnammaPdfUpgrade)throw Error('The private PDF Unicode extension did not load. Reload this page.');
     const upgrade=window.GnammaPdfUpgrade;
     const fonts=await upgrade.searchableFonts(pdf,URL_ROOT);
@@ -259,7 +235,7 @@
     // Use the source PDF's page size, preserving A4 or other formats.
     let pageNum=1,sheet=blankCanvas(size);
     const pads=sheet.padding,maxWidth=sheet.W-pads*2,maxY=sheet.H-114;
-    const pendingLinks=[];
+    const pendingLinks=[],noteTargets=[];
     async function flush(){
       printFooter(sheet,pageNum);
       const bytes=await toJpeg(sheet.canvas),img=await pdf.embedJpg(bytes);
@@ -274,33 +250,48 @@
     async function line(text,kind='body',indent=0,withLink=null){
       const s=String(text||'').trim();
       if(!s){sheet.y+=14;return;}
-      const f=fontFor(s,kind),c=sheet.c;c.font=f.font;
+      const f=fontFor(s,kind==='link'?'meta':kind),c=sheet.c;c.font=f.font;
       const lines=linesFor(c,s,maxWidth-indent);
       for(let i=0;i<lines.length;i++){
         if(sheet.y+f.lh>maxY)await flush();
         const y=sheet.y,content=lines[i];
-        c.save();c.font=f.font;c.fillStyle=kind==='meta'?'#666':kind==='title'?'#243f45':'#272727';
+        c.save();c.font=f.font;c.fillStyle=kind==='link'?'#28636a':kind==='meta'?'#666':kind==='title'?'#243f45':'#272727';
         c.direction=f.rtl?'rtl':'ltr';c.textAlign=f.rtl?'right':'left';
-        c.fillText(content,f.rtl?sheet.W-pads: pads+indent,y);c.restore();
+        const startX=f.rtl?sheet.W-pads:pads+indent;
+        c.fillText(content,startX,y);
+        if(kind==='link'){
+          const textW=Math.min(maxWidth-indent,c.measureText(content).width);
+          c.strokeStyle='#397b7d';c.lineWidth=1;
+          c.beginPath();
+          c.moveTo(f.rtl?startX-textW:startX,y+3);
+          c.lineTo(f.rtl?startX:startX+textW,y+3);c.stroke();
+        }
+        c.restore();
         sheet.searchLines.push({text:content,y,rtl:f.rtl,size:Number(f.font.match(/([\d.]+)px/)?.[1])||26,indent});
-        if(withLink&&i===0)sheet.links.push({
-          sourceIndex:withLink,
-          rect:[(pads+indent)/2,(sheet.H-y-10)/2,Math.min(sheet.W-pads,(pads+indent+maxWidth))/2,(sheet.H-y+f.lh-4)/2]
-        });
+        if(withLink&&i===0){
+          const textWidth=Math.min(maxWidth-indent,c.measureText(content).width+8);
+          const x0=f.rtl?sheet.W-pads-textWidth:pads+indent;
+          sheet.links.push({
+            sourceIndex:withLink.index,
+            sourceTop:withLink.top,
+            rect:[x0/2,(sheet.H-y-8)/2,(x0+textWidth)/2,(sheet.H-y+f.lh-5)/2]
+          });
+        }
         sheet.y+=f.lh;
       }
     }
-    await line('PERSONAL READING DESK · AL-ḌARŪRĪ','title');
+    await line('MY READING DESK · PERSONAL NOTES','title');
     await line('Reader-created observations · '+new Date().toLocaleDateString(),'meta');
-    await line('Personal notes are separate from the author’s text and the editorial apparatus.','meta');
-    await line('PDF comment icons, where included, point to numbered source sections.','meta');
+    await line('P1, P2… identify YOUR personal notes — not publisher, editor or source references.','meta');
+    await line('Select a P marker or highlighted phrase to visit its note; use Return to text to go back.','meta');
     sheet.y+=35;
-    const sourcePages=[];
     for(let i=0;i<rows.length;i++){
-      const r=rows[i],source=verifiedPage(r.target?.section,meta,pdf.getPageCount());
-      sourcePages[i]=source;
+      const r=rows[i];
+      const origin=sourcePositions[i]||{index:-1,top:82};
+      const source=origin.index;
       if(sheet.y+155>maxY)await flush();
-      await line((i+1)+'. '+nameOf(r.target),'title',0,source>=0?source+1:null);
+      noteTargets[i]={index:basePages+pageNum-1,top:Math.max(12,sheet.y/2-14)};
+      await line('P'+(i+1)+' · '+nameOf(r.target),'title');
       await line(r.title|| (isNote(r)?'Personal note':'Saved quotation'),'meta');
       if(isNote(r)){
         for(const para of r.body.split(/\n/))await line(para);
@@ -311,16 +302,17 @@
       else await line('Saved bookmark / reference');
       if(r.target?.quote&&isNote(r))await line('Selected text: '+String(r.target.quote),'meta');
       if(p.dates)await line(dateLine(r),'meta');
-      if(source<0)await line('No safe page anchor; included in the appendix only.','meta');
+      if(source>=0)await line('Return to original text · §'+r.target.section,'link',0,{index:source,top:origin.top});
+      else await line('No source passage link · this is an appendix-only entry.','meta');
       sheet.y+=27;
       if(i%6===0){progress('Building notes appendix ('+(i+1)+'/'+rows.length+')…',45+35*(i+1)/rows.length);await new Promise(r=>setTimeout(r,0));}
     }
     await flush();
     for(const req of pendingLinks){
       const target=req.sourceIndex-1;
-      if(target>=0&&target<pdf.getPageCount())makeLink(pdf,req.page,pdf.getPage(target),req.rect);
+      if(target>=0&&target<basePages)makeLink(pdf,req.page,pdf.getPage(target),req.rect,req.sourceTop);
     }
-    return {pages:pageNum-1,unsupported:[...fonts.missing]};
+    return {pages:pageNum-1,unsupported:[...fonts.missing],noteTargets};
   }
   async function loadPdfLib(){
     if(window.PDFLib?.PDFDocument)return;
@@ -358,11 +350,9 @@
     if(!manifest?.files?.[file])throw Error('Select a supported PDF edition.');
     if(!rows.length)throw Error('Choose at least one Reading Desk item, or select the unchanged PDF option.');
     if(rows.length>MAX_ITEMS)throw Error('Choose at most '+MAX_ITEMS+' items per PDF.');
-    if(!p.annotations&&!p.appendix)throw Error('Enable annotations, the appendix, or both.');
+    if(!p.appendix)throw Error('Linked personal notes require an endnotes appendix. Enable the appendix or choose No notes.');
     if(p.appendix&&rows.reduce((n,r)=>n+String(r.body||r.target?.quote||'').length,0)>220000)
       throw Error('Too much text for a mobile export. Choose fewer notes or use the A4 printing route.');
-    if(requiresAppendix(rows,p))
-      throw Error('One or more saved items are too long for PDF pop-up comments alone. Enable the full personal notes appendix to prevent text being omitted.');
     progress('Loading PDF processing library…',6);
     await loadPdfLib();
     progress('Checking source PDF and section map…',14);
@@ -376,9 +366,8 @@
     progress('Preparing annotations…',34);
     const pdf=await window.PDFLib.PDFDocument.load(bytes,{updateMetadata:false});
     const basePageCount=pdf.getPageCount();
-    const countByPage=new Map(),skipped=[],pinRows=[];
     const upgrade=window.GnammaPdfUpgrade;
-    if(!upgrade)throw Error('Precise PDF annotation component is missing. Reload the page.');
+    if(!upgrade)throw Error('Personal PDF navigation component missing. Reload the page.');
     let wordMap=null,precise=0;
     if(p.annotations&&rows.some(r=>r.target?.kind==='quote')){
       try{
@@ -388,39 +377,56 @@
           if(candidate.source_sha256===metadata.sha256&&candidate.coverage>=0.92&&candidate.segments)
             wordMap=candidate;
         }
-      }catch(_){/* Use verified section fallback; never guess word geometry. */}
+      }catch(_){/* Exact geometry is optional. Use the verified section fallback. */}
     }
+    // Prepare destinations before appending notes: this keeps page references
+    // stable and lets each appendix entry return to the exact source locus.
+    const sourcePositions=rows.map(r=>{
+      const sectionIndex=verifiedPage(r.target?.section,metadata,basePageCount);
+      if(sectionIndex<0)return {index:-1,top:82,hit:null};
+      const target=r.target||{};
+      const lang=target.lang==='ar'?
+        (file==='daruri-arabic-vowelled.pdf'||file==='daruri.pdf'||file==='daruri-study.pdf'?'vocalized':'ar'):'en';
+      const words=wordMap?.segments?.[[target.section,target.segment,lang].join(':')]||[];
+      let hit=p.annotations&&target.kind==='quote'?upgrade.sourceMatch(words,target):null;
+      if(hit&&(!Number.isInteger(hit.page)||hit.page<1||hit.page>basePageCount))hit=null;
+      const index=hit?hit.page-1:sectionIndex;
+      return {index,top:upgrade.sourceTop(target,hit,metadata,index),hit};
+    });
+    const unlinked=sourcePositions.filter(s=>s.index<0).length;
+    progress('Preparing searchable personal appendix and navigation…',45);
+    const appendix=await appendNotes(pdf,rows,p,metadata,sourcePositions,basePageCount);
+    if(!appendix.noteTargets||appendix.noteTargets.length!==rows.length)
+      throw Error('Some personal notes have no endnote destination. No partial PDF was saved.');
+    let linked=0;
     if(p.annotations){
+      pdf._gnPersonalMarkerFont=await pdf.embedFont(window.PDFLib.StandardFonts.HelveticaBold);
+      const reservations=new Map();
       for(let i=0;i<rows.length;i++){
-        const r=rows[i],sectionIndex=verifiedPage(r.target?.section,metadata,basePageCount);
-        if(sectionIndex<0){skipped.push(i);continue;}
-        const target=r.target||{},tag=target.lang==='ar'?
-          (file==='daruri-arabic-vowelled.pdf'||file==='daruri.pdf'||file==='daruri-study.pdf'?'vocalized':'ar'):'en';
-        const key=[target.section,target.segment,tag].join(':');
-        const words=wordMap?.segments?.[key]||[];
-        let hit=target.kind==='quote'?upgrade.sourceMatch(words,target):null;
-        if(hit&&(!Number.isInteger(hit.page)||hit.page<1||hit.page>basePageCount))hit=null;
-        const index=hit?hit.page-1:sectionIndex;
-        const slot=countByPage.get(index)||0,count=slot+1;
-        countByPage.set(index,count);
-        const content=entryText(r,i,p.dates);
-        if(notePin(pdf,pdf.getPage(index),i+1,content,slot)){
-          pinRows.push(i);
-          if(hit&&upgrade.addHighlight(pdf,pdf.getPage(index),hit,content,'Reading Desk '+(i+1)))precise++;
-        }else skipped.push(i);
+        const where=sourcePositions[i];
+        if(where.index<0)continue; // Dictionary/unattached notes remain in appendix.
+        const sourcePage=pdf.getPage(where.index);
+        const noteTarget=appendix.noteTargets[i];
+        const destPage=pdf.getPage(noteTarget.index);
+        const used=reservations.get(where.index)||[];
+        reservations.set(where.index,used);
+        const ok=upgrade.drawPersonalMarker(pdf,sourcePage,destPage,
+          'P'+(i+1),where.top,noteTarget.top,used);
+        if(!ok)throw Error('Too many personal references on source PDF page '+(where.index+1)+
+          '. Select fewer notes for this export so the P labels do not overlap.');
+        linked++;
+        if(where.hit&&upgrade.drawLinkedHighlight(pdf,sourcePage,where.hit,destPage,noteTarget.top))
+          precise++;
       }
     }
-    if(!p.appendix&&skipped.length)throw Error(skipped.length+' selected items have no safe in-text PDF comment location. Include the appendix so none of your notes are lost.');
-    progress('Preparing appendix pages…',45);
-    const appendix=p.appendix?await appendNotes(pdf,rows,p,metadata):{pages:0,unsupported:[]};
+    progress('Finishing two-way personal-note links…',88);
     const pages=appendix.pages;
-    progress('Saving your personal PDF…',88);
     pdf.setTitle('Al-Ḍarūrī — Personal Reading Desk Edition');
-    pdf.setSubject('Reader-authored PDF comments and personal notes. Not part of original or editorial text.');
+    pdf.setSubject('Reader-created P-numbered notes and two-way GoTo links, distinct from publisher footnotes.');
     pdf.setCreator('Gnamma Research — browser-local personal export');
     const saved=await pdf.save({useObjectStreams:false});
     if(saved.length>90*1024*1024)throw Error('The resulting PDF is over 90 MB. Please choose fewer items.');
-    return {blob:new Blob([saved],{type:'application/pdf'}),pages,annotated:pinRows.length,precise,unmapped:skipped.length,unsupported:appendix.unsupported,hadWordMap:!!wordMap};
+    return {blob:new Blob([saved],{type:'application/pdf'}),pages,linked,precise,unmapped:unlinked,unsupported:appendix.unsupported,hadWordMap:!!wordMap};
   }
   function startResult(blob,name){
     if(resultURL)URL.revokeObjectURL(resultURL);
@@ -446,11 +452,11 @@
     const rows=matching(),p=prefs();
     busy=true;$('pe-result').hidden=true;info('');syncForm();
     try{
-      const {blob,pages,annotated,precise,unmapped,unsupported,hadWordMap}=await generate(file,rows,p);
+      const {blob,pages,linked,precise,unmapped,unsupported,hadWordMap}=await generate(file,rows,p);
       const stem=file.replace(/\.pdf$/,'');
       startResult(blob,stem+'-personal-'+new Date().toISOString().slice(0,10)+'.pdf');
-      info(rows.length+' item'+(rows.length===1?'':'s')+' included; '+annotated+' source-page PDF comment'+(annotated===1?'':'s')+
-        '; '+precise+' precise word highlight'+(precise===1?'':'s')+'; '+pages+' searchable appendix page'+(pages===1?'':'s')+'.'+
+      info(rows.length+' personal item'+(rows.length===1?'':'s')+' included; '+linked+' linked P reference'+(linked===1?'':'s')+
+        '; '+precise+' clickable phrase highlight'+(precise===1?'':'s')+'; '+pages+' searchable appendix page'+(pages===1?'':'s')+'.'+
         (unmapped?' '+unmapped+' item'+(unmapped===1?'':'s')+' had no safe PDF pin; see appendix.':'')+
          (unsupported.length?' Some rare symbols may not be searchable: '+unsupported.slice(0,7).join(' ')+'.':'')+
         (hadWordMap?'':' Exact-word map unavailable; notes safely attach to their sections.')+

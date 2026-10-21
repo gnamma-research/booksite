@@ -52,19 +52,59 @@ async function checkedPdf(file,engine,contextSettings){
   assert.deepEqual(requests,[],'No user data or scripts may be sent to third-party hosts');
   const bytes=fs.readFileSync(filename),pdf=await PDFDocument.load(bytes),originalPages=manifest.files['daruri.pdf'].pages;
   assert(pdf.getPageCount()>originalPages,'Personal notes must append printable pages');
-  let precise=0;
+  // A personal note is no longer a PDF /Text or /Highlight comment.
+  // The visually painted P marker and highlighted words both link to
+  // a specific appended heading; publisher annotations are not modified.
+  const appendixRefs=new Set(Array.from({length:pdf.getPageCount()-originalPages},(_,i)=>
+    String(pdf.getPage(originalPages+i).ref)));
+  const originalPdf=await PDFDocument.load(fs.readFileSync(path.join(root,'daruri/daruri.pdf')));
+  let forwards=0,popupAdds=0;
   for(let i=0;i<originalPages;i++){
-   const sourcePage=pdf.getPage(i);
-   if(!sourcePage.node.get(PDFName.of('Annots')))continue;
-   const annots=sourcePage.node.lookup(PDFName.of('Annots'),PDFArray);
-   for(let j=0;j<annots.size();j++){
-    const obj=pdf.context.lookup(annots.get(j));
-    if(String(obj.lookup(PDFName.of('Subtype')))!=='/Highlight')continue;
-    const quad=obj.lookup(PDFName.of('QuadPoints'),PDFArray);
-    assert(quad&&quad.size()>=8&&quad.size()%8===0,'Precise PDF highlight must have standard QuadPoints');
-    precise++;
-   }
+    const sourcePage=pdf.getPage(i),baselinePage=originalPdf.getPage(i);
+    const getAnnots=(doc,page)=>page.node.get(PDFName.of('Annots'))?
+      page.node.lookup(PDFName.of('Annots'),PDFArray):null;
+    const baseAnnots=getAnnots(originalPdf,baselinePage);
+    const countPopup=(doc,annotations)=>{
+      let n=0;
+      if(annotations)for(let j=0;j<annotations.size();j++){
+        const a=doc.context.lookup(annotations.get(j));
+        if(['/Text','/Highlight'].includes(String(a.lookup(PDFName.of('Subtype')))))n++;
+      }
+      return n;
+    };
+    const annots=getAnnots(pdf,sourcePage);
+    popupAdds+=countPopup(pdf,annots)-countPopup(originalPdf,baseAnnots);
+    if(!annots)continue;
+    for(let j=0;j<annots.size();j++){
+      const obj=pdf.context.lookup(annots.get(j));
+      if(String(obj.lookup(PDFName.of('Subtype')))!=='/Link')continue;
+      const raw=obj.get(PDFName.of('Dest'));
+      const dest=raw?pdf.context.lookup(raw):null;
+      if(!(dest instanceof PDFArray)||dest.size()<2||!appendixRefs.has(String(dest.get(0))))continue;
+      assert.equal(String(dest.get(1)),'/FitH','P link must arrive near a note heading');
+      forwards++;
+    }
   }
+  assert.equal(popupAdds,0,'Personal PDF export must not add any sidebar comment annotations');
+  assert(forwards>=4,'Each of two source quotes needs a P marker and direct phrase link; found '+forwards);
+  const sourceRefs=new Set(Array.from({length:originalPages},(_,i)=>String(pdf.getPage(i).ref)));
+  let returns=0;
+  for(let i=originalPages;i<pdf.getPageCount();i++){
+    const pg=pdf.getPage(i);
+    if(!pg.node.get(PDFName.of('Annots')))continue;
+    const arr=pg.node.lookup(PDFName.of('Annots'),PDFArray);
+    for(let j=0;j<arr.size();j++){
+      const a=pdf.context.lookup(arr.get(j));
+      if(String(a.lookup(PDFName.of('Subtype')))!=='/Link')continue;
+      const raw=a.get(PDFName.of('Dest'));
+      const dest=raw?pdf.context.lookup(raw):null;
+      if(dest instanceof PDFArray&&sourceRefs.has(String(dest.get(0)))){
+        assert.equal(String(dest.get(1)),'/FitH','Back links should return near the source passage');
+        returns++;
+      }
+    }
+  }
+  assert(returns>=2,'Every source-linked personal endnote requires a visible return link');
   // Test text extraction before checking map-dependent highlights, so failures
   // identify independently whether the appendix text or geometry is broken.
   const pdfjs=await import('pdfjs-dist/legacy/build/pdf.mjs');
@@ -79,11 +119,16 @@ async function checkedPdf(file,engine,contextSettings){
   assert(strip(str).includes(strip('Des idées françaises')),'Accented French text missing from Unicode layer');
   assert(strip(str).includes(strip('UnattachedSearchablePhi')),'Unattached notes must remain searchable');
   await loaded.destroy();
-  assert(precise>=2,'Both Arabic and English source quotes should become precise highlights; found '+precise);
+  if(engine.name()==='chromium'&&!contextSettings?.viewport&&process.env.GNAMMA_QA_VISUAL_PATH){
+    const destination=path.resolve(root,process.env.GNAMMA_QA_VISUAL_PATH);
+    fs.mkdirSync(path.dirname(destination),{recursive:true});
+    fs.writeFileSync(destination,bytes);
+  }
+  assert(/P1/.test(str)&&/P2/.test(str),'Personal appendix must distinguish P1/P2 from publisher notes');
   await page.locator('input[name=pe-mode][value=none]').check();
   assert(!(await page.locator('#pe-result').isVisible()),'Private download link must clear on no-notes');
   console.log('PASS',engine.name(),contextSettings?.viewport?'mobile':'desktop',
-    'highlights',precise,'pages',pdf.getPageCount(),'searchable English/Arabic/French notes',bytes.length);
+    'P links',forwards,'return links',returns,'new comment boxes',popupAdds,'pages',pdf.getPageCount(),'searchable English/Arabic/French notes',bytes.length);
   fs.unlinkSync(filename);
  }finally{
   if(filename&&fs.existsSync(filename))fs.unlinkSync(filename);

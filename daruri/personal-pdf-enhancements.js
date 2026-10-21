@@ -54,31 +54,96 @@
     if(chosen.rects.some(r=>r.x0<0||r.y0<0||r.x1>6000||r.y1>6000))return null;
     return {page:chosen.page,rects:chosen.rects,score:chosen.score};
   }
-  function addHighlight(pdf,page,matching,body,label){
-    if(!matching?.rects?.length)return false;
-    const {PDFName,PDFHexString}=window.PDFLib;
-    const size=page.getSize(),quad=[],bounds=[Infinity,Infinity,-Infinity,-Infinity];
-    for(const r of matching.rects){
-      if(r.x1>size.width+1||r.y1>size.height+1||r.x0<0||r.y0<0)return false;
-      const upper=size.height-r.y0,lower=size.height-r.y1;
-      quad.push(r.x0,upper,r.x1,upper,r.x0,lower,r.x1,lower);
-      bounds[0]=Math.min(bounds[0],r.x0);
-      bounds[1]=Math.min(bounds[1],lower);
-      bounds[2]=Math.max(bounds[2],r.x1);
-      bounds[3]=Math.max(bounds[3],upper);
+  // Publisher annotations remain untouched. Personal references are regular
+  // PDF page drawings and GoTo /Link annotations, never PDF /Text popups.
+  // Consequently they do not populate the viewer's comments sidebar.
+  function attachLink(pdf,sourcePage,targetPage,rect,topFromPage){
+    const {PDFName,PDFArray}=window.PDFLib;
+    if(!targetPage||!sourcePage||rect.length!==4||rect.some(n=>!Number.isFinite(n)))
+      throw Error('Personal PDF link has no valid source/destination');
+    const height=targetPage.getHeight();
+    const top=Number.isFinite(topFromPage)?Math.min(Math.max(topFromPage,0),height):0;
+    const destination=pdf.context.obj([targetPage.ref,PDFName.of('FitH'),Math.min(height,Math.max(0,height-top+12))]);
+    const reference=pdf.context.register(pdf.context.obj({
+      Type:PDFName.of('Annot'),
+      Subtype:PDFName.of('Link'),
+      Rect:rect,Border:[0,0,0],Dest:destination,F:4
+    }));
+    const key=PDFName.of('Annots');
+    let existing=sourcePage.node.lookup(key,PDFArray);
+    if(!existing){existing=pdf.context.obj([]);sourcePage.node.set(key,existing);}
+    existing.push(reference);
+    return reference;
+  }
+  function allocateMarginTop(existing,preferred,pageHeight){
+    const min=57,max=pageHeight-50,markHeight=20;
+    if(max<=min)throw Error('Source PDF page has no margin room for personal references');
+    const wanted=Math.min(max,Math.max(min,Number(preferred)||min));
+    for(let step=0;step<=16;step++){
+      const choices=step?[wanted+21*step,wanted-21*step]:[wanted];
+      for(const point of choices){
+        if(point<min||point>max)continue;
+        if(existing.every(v=>Math.abs(v-point)>=markHeight+2)){
+          existing.push(point);return point;
+        }
+      }
     }
-    const a=pdf.context.obj({
-      Type:PDFName.of('Annot'),Subtype:PDFName.of('Highlight'),
-      Rect:bounds,QuadPoints:quad,
-      C:[1,.83,.32],CA:0.28,F:4,
-      Contents:PDFHexString.fromText(body.slice(0,30000)),
-      T:PDFHexString.fromText(label.slice(0,240))
-    });
-    const ref=pdf.context.register(a),k=PDFName.of('Annots');
-    let existing=page.node.lookup(k,window.PDFLib.PDFArray);
-    if(!existing){existing=pdf.context.obj([]);page.node.set(k,existing);}
-    existing.push(ref);
+    return null; // No silent overlapping or lost link.
+  }
+  function drawPersonalMarker(pdf,page,targetPage,label,preferredTop,targetTop,used){
+    if(!/^P[1-9]\d{0,3}$/.test(String(label)))throw Error('Invalid personal reference label');
+    const {StandardFonts,rgb}=window.PDFLib;
+    const top=allocateMarginTop(used,preferredTop,page.getHeight());
+    if(top===null)return false;
+    const font=pdf._gnPersonalMarkerFont;
+    if(!font)throw Error('PDF personal reference font not embedded');
+    const size=7.5,h=11.5;
+    const width=Math.min(36,Math.max(19,font.widthOfTextAtSize(label,size)+7));
+    const x=5.5,y=page.getHeight()-top-h;
+    page.drawRectangle({x,y,width,height:h,
+      color:rgb(0.93,0.965,0.96),borderColor:rgb(0.24,0.46,0.48),
+      borderWidth:0.65,opacity:0.96});
+    page.drawText(label,{x:x+3.3,y:y+2.1,size,font,color:rgb(0.14,0.35,0.38)});
+    // The invisible tap region is larger than the modest printed P reference,
+    // without overlapping the adjacent 21-point marker slots.
+    attachLink(pdf,page,targetPage,[x-1,y-4,x+Math.max(width,26),y+h+4],targetTop);
     return true;
+  }
+  function drawLinkedHighlight(pdf,page,matched,targetPage,targetTop){
+    if(!matched?.rects?.length)return false;
+    const {rgb}=window.PDFLib,size=page.getSize();
+    // Standard PDF page drawing (not a comment annotation) deliberately avoids
+    // duplicate right-hand comment boxes for word highlights.
+    const rects=[];
+    for(const r of matched.rects){
+      if(![r.x0,r.y0,r.x1,r.y1].every(Number.isFinite)
+        ||r.x0<0||r.y0<0||r.x1>size.width+0.5||r.y1>size.height+0.5
+        ||r.x1<=r.x0||r.y1<=r.y0)return false;
+      rects.push({x:r.x0,y:size.height-r.y1,width:r.x1-r.x0,height:r.y1-r.y0});
+    }
+    for(const rect of rects){
+      page.drawRectangle({...rect,color:rgb(0.71,0.87,0.81),opacity:0.29});
+      attachLink(pdf,page,targetPage,
+        [rect.x,rect.y,rect.x+rect.width,rect.y+rect.height],targetTop);
+    }
+    return true;
+  }
+  function sourceTop(target,hit,metadata,sourceIndex){
+    if(hit?.rects?.length){
+      const y=Math.min(...hit.rects.map(r=>r.y0));
+      if(Number.isFinite(y))return y;
+    }
+    const section=target?.section,segment=target?.segment,lang=target?.lang;
+    const aliases=lang==='ar'?['vocalized','ar']:['en'];
+    const keys=[];
+    if(section!=null&&segment!=null)
+      for(const alias of aliases)keys.push('segment-'+section+'-'+segment+'-'+alias);
+    if(section!=null)keys.push('section-'+section);
+    for(const key of keys){
+      const a=metadata?.anchors?.[key];
+      if(a&&a.page===sourceIndex+1&&Number.isFinite(a.y))return a.y;
+    }
+    return 82; // Verified section page, but no usable y coordinate.
   }
   const scriptPromise=new Map();
   function ensureScript(url,globalName){
@@ -139,5 +204,5 @@
     }
     return n;
   }
-  window.GnammaPdfUpgrade={sourceMatch,addHighlight,searchableFonts,textOverlay,tidy};
+  window.GnammaPdfUpgrade={sourceMatch,attachLink,allocateMarginTop,drawPersonalMarker,drawLinkedHighlight,sourceTop,searchableFonts,textOverlay,tidy};
 })();

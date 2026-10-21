@@ -58,24 +58,38 @@ const file='daruri.pdf';
   const sectionOne=Number(metadata.section_pages['1'])-1;
   const annotations=pdf.getPage(sectionOne).node.lookup(PDFName.of('Annots'),PDFArray);
   assert(annotations&&annotations.size()>0,'PDF must contain real source-linked annotations');
-  let hasPopup=false;for(let i=0;i<annotations.size();i++){
-   const a=pdf.context.lookup(annotations.get(i));const type=a.lookup(PDFName.of('Subtype'));
-   if(type&&String(type)==='/Text')hasPopup=true;
+  const refSet=new Set(Array.from({length:pdf.getPageCount()-base},(_,i)=>String(pdf.getPage(base+i).ref)));
+  let hasPersonalLink=false;
+  for(let i=0;i<annotations.size();i++){
+   const a=pdf.context.lookup(annotations.get(i));
+   const type=a.lookup(PDFName.of('Subtype'));
+   if(String(type)==='/Text')throw Error('Personal PDF exports must not create comment boxes');
+   if(String(type)==='/Link'){
+     const raw=a.get(PDFName.of('Dest'));
+     const dest=raw?pdf.context.lookup(raw):null;
+     if(dest instanceof PDFArray&&refSet.has(String(dest.get(0))))hasPersonalLink=true;
+   }
   }
-  assert(hasPopup,'expected native PDF Text annotation');
+  assert(hasPersonalLink,'section must have a clickable P reference pointing to the endnotes');
   const end=pdf.getPage(pdf.getPageCount()-1);
   assert(end.node.Resources(), 'printable appendix should have embedded image resources');
   assert.equal(errors.length,0,'no uncaught browser errors: '+errors.join('; '));
   assert.equal(thirdParty.length,0,'private PDF export must not require remote third-party scripts');
   // Appendix headings link back to their original numbered source pages.
-  const appendixAnnotations=end.node.lookup(PDFName.of('Annots'),PDFArray);
-  assert(appendixAnnotations&&appendixAnnotations.size()>0,'appended notes should have return navigation');
   let hasReturn=false;
-  for(let i=0;i<appendixAnnotations.size();i++){
-    const item=pdf.context.lookup(appendixAnnotations.get(i));
-    if(String(item.lookup(PDFName.of('Subtype')))==='/Link')hasReturn=true;
+  for(let pageIndex=base;pageIndex<pdf.getPageCount();pageIndex++){
+    const appendixPage=pdf.getPage(pageIndex);
+    if(!appendixPage.node.get(PDFName.of('Annots')))continue;
+    const list=appendixPage.node.lookup(PDFName.of('Annots'),PDFArray);
+    for(let i=0;i<list.size();i++){
+      const item=pdf.context.lookup(list.get(i));
+      if(String(item.lookup(PDFName.of('Subtype')))!=='/Link')continue;
+      const raw=item.get(PDFName.of('Dest'));
+      const dest=raw?pdf.context.lookup(raw):null;
+      if(dest instanceof PDFArray){hasReturn=true;break;}
+    }
   }
-  assert(hasReturn,'appendix should offer native PDF links back to text');
+  assert(hasReturn,'appendix must contain a working PDF link back to source');
   fs.unlinkSync(output);
   // Every fixed language edition needs an independent matching map.
   const manifest=JSON.parse(fs.readFileSync(path.join(root,'daruri/pdf-editions-manifest.json'),'utf8'));
@@ -98,19 +112,29 @@ const file='daruri.pdf';
   await page.locator('#pe-items input[type=checkbox]').first().check();
   assert.match(await page.locator('#pe-count').innerText(),/1 qualifying item/);
   await page.locator('#pe-appendix').uncheck();
-  const noteOnly=page.waitForEvent('download',{timeout:180000});
+  assert(await page.locator('#pe-generate').isDisabled(),'P references require their appendix destination');
+  assert.match(await page.locator('#pe-count').innerText(),/Include the personal appendix/);
+  await page.locator('#pe-appendix').check();
+  const singleNote=page.waitForEvent('download',{timeout:180000});
   await page.locator('#pe-generate').click();
-  const dlOnly=await noteOnly,onlyFile=path.join(os.tmpdir(),'gnamma-no-appendix-smoke.pdf');
+  const dlOnly=await singleNote,onlyFile=path.join(os.tmpdir(),'gnamma-single-note-smoke.pdf');
   await dlOnly.saveAs(onlyFile);
   const onlyPdf=await PDFDocument.load(fs.readFileSync(onlyFile));
-  assert.equal(onlyPdf.getPageCount(),manifest.files['daruri-arabic.pdf'].pages,'annotations-only mode should not append pages');
+  assert(onlyPdf.getPageCount()>manifest.files['daruri-arabic.pdf'].pages,'selected note should have its endnote destination');
   fs.unlinkSync(onlyFile);
   // Free-standing notes are unanchored: refuse to drop them when appendix is off.
   await page.locator('#pe-check-none').click();
   await page.locator('#pe-items input[type=checkbox]').nth(1).check();
   await page.locator('#pe-generate').click();
-  await page.locator('#pe-alert.error').waitFor({timeout:60000});
-  assert.match(await page.locator('#pe-alert').innerText(),/Include the appendix so none of your notes are lost/);
+  assert(await page.locator('#pe-generate').isDisabled(),'No appendix means no valid two-way destination');
+  await page.locator('#pe-appendix').check();
+  const unattached=page.waitForEvent('download',{timeout:180000});
+  await page.locator('#pe-generate').click();
+  const unattachedFile=path.join(os.tmpdir(),'gnamma-unattached-note-smoke.pdf');
+  await (await unattached).saveAs(unattachedFile);
+  const unattachedPdf=await PDFDocument.load(fs.readFileSync(unattachedFile));
+  assert(unattachedPdf.getPageCount()>manifest.files['daruri-arabic.pdf'].pages,'unattached notes must remain in the appendix');
+  fs.unlinkSync(unattachedFile);
   // The existing A4 builder must also keep personal notes opt-in and printable.
   await page.goto(host+'/daruri/index.html#editions',{waitUntil:'networkidle'});
   await page.locator('.gn-editions').waitFor({timeout:30000});
@@ -123,13 +147,15 @@ const file='daruri.pdf';
   const printText=await page.locator('#gnEpPacket').innerText();
   assert(printText.includes('My Reading Desk · personal observations'),'personal appendix should appear only after opting in');
   assert(printText.includes('A personal reflection'),'personal note title should appear in print packet');
+  assert(/P1/.test(printText),'Custom A4 endnotes should use the personal P1 reference system');
+  assert(!printText.includes('Personal [1]'),'Custom printout must not confuse P references with publisher footnotes');
   await page.evaluate(()=>document.body.classList.add('gn-ed-print-ready'));
   const a4bytes=await page.pdf({format:'A4',preferCSSPageSize:true,printBackground:false});
   const a4=await PDFDocument.load(a4bytes);
   assert(a4.getPageCount()>0&&a4.getPageCount()<600,'print-to-PDF must be nonempty and paginate sensibly');
   assert.equal(errors.length,0,'no uncaught browser errors: '+errors.join('; '));
   assert.equal(thirdParty.length,0,'private PDF export must not require remote third-party scripts');
-  console.log('PASS annotated bilingual/English/Arabic PDFs, real links, selective mode, fail-closed export, and clean/annotated A4 print.');
+  console.log('PASS bilingual/English/Arabic P-link PDFs, no pop-up boxes, two-way appendices, selective mode and A4 printing.');
  } finally {
   if(browser)await browser.close();
   server.kill();
