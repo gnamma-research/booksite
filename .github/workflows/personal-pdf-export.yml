@@ -1,0 +1,38 @@
+name: Personal PDF export QA
+on:
+  push:
+    branches: [feature/reading-desk-personal-pdf-20261021]
+  pull_request:
+    paths:
+      - 'daruri/personal-export*'
+      - 'daruri/reading-desk.js'
+      - 'daruri/editions.js'
+      - 'daruri/download-bundle.js'
+      - 'daruri/sw.js'
+      - 'daruri/qa/verify-personal-export.js'
+      - 'daruri/qa/personal-export-browser.cjs'
+  workflow_dispatch:
+jobs:
+  pdf-export:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JavaScript and pure model
+        run: |
+          node --check daruri/personal-export.js
+          node --check daruri/editions.js
+          node --check daruri/reading-desk.js
+          node daruri/qa/verify-personal-export.js
+      - name: Install isolated browser test dependencies
+        run: |
+          mkdir -p daruri/qa/node_modules
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1
+          npx --prefix daruri/qa playwright install --with-deps chromium
+      - name: Exercise real browser PDF export
+        run: node daruri/qa/personal-export-browser.cjs
