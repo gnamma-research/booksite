@@ -19,7 +19,7 @@ function create(ctx){
  let records=[],available=true,selection=null,editor=null,origin=null,readingOrigin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
  const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
  const printPrefs={order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
- let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,untouchedStorage=null;
+ let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,untouchedStorage=null,storedEnvelope={};
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
  function validateTarget(raw){
@@ -78,9 +78,10 @@ function create(ctx){
     body:'',created:0,updated:0,modified:0,dateSource:'legacy-unknown',
     deleted:0,standalone:false,archivedValue:r};
   const kind=clamp(r.kind||'unavailable',30),rawTarget=r.target||((r.kind&&r.section)?r:null);
-  const target=validateTarget(rawTarget)||archiveTarget(rawTarget);
-  return {...r,id:clamp(r.id,100)||uuid(),kind,target,title:clamp(r.title,240),
-   body:clamp(r.body,30000),created:Math.max(0,Number(r.created)||0),
+  const parsed=validateTarget(rawTarget),target=archiveTarget(rawTarget);
+  if(target&&parsed){for(const key of ['kind','section','segment','lang','offset'])if(key in parsed)target[key]=parsed[key];}
+  return {...r,id:clamp(r.id,100)||uuid(),kind,target,title:String(r.title??''),
+   body:String(r.body??''),created:Math.max(0,Number(r.created)||0),
    updated:Math.max(0,Number(r.updated)||0),modified:Math.max(0,Number(r.modified)||0),
    dateSource:['recorded','legacy-unknown','unverified'].includes(r.dateSource)?r.dateSource:'unverified',
    deleted:Math.max(0,Number(r.deleted)||0),standalone:kind==='note'&&!!r.standalone};
@@ -89,6 +90,7 @@ function create(ctx){
   if(!r)return false;
   if(!r.target)return r.kind==='note'&&r.standalone===true;
   if(r.kind!=='note'&&r.kind!==r.target.kind)return false;
+  if(r.target.kind==='quote'&&String(r.target.quote||'').length>5000)return false;
   return Boolean(validateTarget(r.target));
  }
  function load(){
@@ -99,6 +101,7 @@ function create(ctx){
     const data=JSON.parse(value);
     if(data?.format!==FORMAT||data.version!==VERSION||!Array.isArray(data.items))
      throw Error('Unsupported saved Reading Desk format');
+    storedEnvelope=Object.fromEntries(Object.entries(data).filter(([key])=>!['format','version','items'].includes(key)));
     records=data.items.map(sanitize); // Never truncate records when restoring.
    }
   }catch(e){
@@ -120,7 +123,7 @@ function create(ctx){
  function persist(){
   if(loadFailure){ctx.notify('Original Reading Desk storage is protected; export it before making changes.');return false;}
   try{
-   localStorage.setItem(KEY,JSON.stringify({format:FORMAT,version:VERSION,items:records}));
+   localStorage.setItem(KEY,JSON.stringify({...storedEnvelope,format:FORMAT,version:VERSION,items:records}));
    available=true;syncLegacy(true);syncActionStates();return true;
   }catch(e){
    available=false;ctx.notify('Reading Desk is not saved: browser storage is full or unavailable. Export a backup.');return false;
@@ -221,12 +224,16 @@ function create(ctx){
   if(state.route==='bookmarks')render();
  }
  function moveMany(ids,restore=false){
+  const snapshot=new Map(records.filter(r=>ids.includes(r.id)).map(r=>[r.id,{deleted:r.deleted,updated:r.updated}]));
   const now=Date.now();let count=0;
   for(const id of ids){const r=records.find(x=>x.id===id);if(!r)continue;
    if(restore&&!r.deleted||!restore&&r.deleted)continue;
    r.deleted=restore?0:now;r.updated=now;count++;
   }
-  if(count){if(!persist()){ctx.notify('Storage unavailable: change was not saved.');return 0;}syncLegacy(true);if(state.route==='reader')afterReader();if(state.route==='bookmarks')render();}
+  if(count){if(!persist()){
+   for(const [id,previous] of snapshot) {const row=records.find(x=>x.id===id);if(row){row.deleted=previous.deleted;row.updated=previous.updated;}}
+   ctx.notify('Storage unavailable: change was not saved.');return 0;
+  }syncLegacy(true);if(state.route==='reader')afterReader();if(state.route==='bookmarks')render();}
   return count;
  }
  function trash(id){if(moveMany([id])){lastUndo=id;showUndo();}}
@@ -1034,10 +1041,10 @@ function create(ctx){
   if(action==='close-editor'){closeEditor();return;}
   if(action==='trash'&&row){trash(id);return;}
   if(action==='restore'&&row){moveMany([id],true);ctx.notify('Restored to Reading Desk.');return;}
-  if(action==='delete-permanent'&&row){if(confirm('Permanently delete this item? This cannot be undone.')){records=records.filter(x=>x.id!==id);persist();render();}return;}
+  if(action==='delete-permanent'&&row){if(confirm('Permanently delete this item? This cannot be undone.')){const prior=records;records=records.filter(x=>x.id!==id);if(!persist()){records=prior;ctx.notify('Deletion could not be saved.');return;}render();}return;}
   if(action==='undo'&&lastUndo){moveMany([lastUndo],true);lastUndo=null;const t=$('#gn-rd-undo');if(t)t.hidden=true;return;}
   if(action==='restore-all'){moveMany(records.filter(r=>r.deleted).map(r=>r.id),true);return;}
-  if(action==='empty-bin'){if(confirm('Permanently delete everything in Bin? This cannot be undone.')){records=records.filter(r=>!r.deleted);persist();render();}return;}
+  if(action==='empty-bin'){if(confirm('Permanently delete everything in Bin? This cannot be undone.')){const prior=records;records=records.filter(r=>!r.deleted);if(!persist()){records=prior;ctx.notify('Could not empty the Bin.');return;}render();}return;}
   if(action==='open'&&row){if(!isResolved(row)){ctx.notify('Source unavailable: the saved item has been preserved. Open its details to relink.');return;}openSource(row);return;}
   if(action==='relink'&&row){showRelink(row);return;}
   if(action==='relink-close'){closeRelink();return;}
