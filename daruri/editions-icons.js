@@ -68,17 +68,27 @@
   function show(kind,value,detail='') {
     window.GnammaEditions.showInfo?.(kind,value,detail);
   }
+  const shortNames={language:'Language',editorial:'Editorial titles',vowels:'Vowel marks',
+    columns:'Layout',density:'Page density',personal:'Reading Desk',
+    scope:'Print selection',notes:'Notes'};
+  function detailFor(element) {
+    const ready=element.closest('[data-ep-published]');
+    if(ready)return ready.dataset.epDescription||'';
+    const custom=element.closest('[data-ep-tier]');
+    if(!custom)return '';
+    const count=custom.querySelector('[data-ep-count]')?.textContent||'';
+    const number=count.match(/^(\d+)/)?.[1]||'';
+    const tier=custom.dataset.epTier;
+    return (tier==='study'?'Study':'Reading')+(number?' · '+number+' sections':'');
+  }
   function describe(target) {
     const option=target.closest('.gn-ed-icon-option');
     if(option&&activeRoot?.contains(option)){
       const group=option.closest('.gn-ed-icon-options');
-      const category=group?.getAttribute('aria-label')||'Edition option';
+      const category=shortNames[group?.dataset.epIconKind]||
+        group?.getAttribute('aria-label')||'Edition option';
       const label=option.getAttribute('aria-label')||'Option';
-      const ready=option.closest('[data-ep-published]');
-      const custom=option.closest('[data-ep-tier]');
-      const detail=ready?.dataset.epDescription ||
-        custom?.querySelector('[data-ep-count]')?.textContent || '';
-      show(category,label,detail);
+      show(category,label,detailFor(option));
       return;
     }
     const link=target.closest('[data-ep-info-kind], [data-ep-ready-open], [data-ep-ready-download], .gn-ed-actions button');
@@ -86,9 +96,7 @@
       const label=link.dataset.epInfoLabel||link.getAttribute('aria-label')||'Edition';
       const kind=link.dataset.epInfoKind||
         (link.matches('.gn-ed-actions button')?'Printout':'PDF');
-      const detail=link.closest('[data-ep-published]')?.dataset.epDescription ||
-        link.closest('[data-ep-tier]')?.querySelector('[data-ep-count]')?.textContent || '';
-      show(kind,label,detail);
+      show(kind,label,detailFor(link));
       return;
     }
     const native=target.closest('select[data-ep-iconified="native"]');
