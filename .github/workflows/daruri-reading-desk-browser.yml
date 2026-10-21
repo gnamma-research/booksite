@@ -1,0 +1,47 @@
+name: Daruri Reading Desk browser interaction QA
+
+on:
+  push:
+    branches: [master, qa/reading-desk-touch-interaction-20261021]
+    paths:
+      - '.github/workflows/daruri-reading-desk-browser.yml'
+      - 'daruri/qa/verify-reading-desk-real-browser.cjs'
+      - 'daruri/reading-desk.js'
+      - 'daruri/reading-desk.css'
+      - 'daruri/index.html'
+  pull_request:
+    paths:
+      - '.github/workflows/daruri-reading-desk-browser.yml'
+      - 'daruri/qa/verify-reading-desk-real-browser.cjs'
+      - 'daruri/reading-desk.js'
+      - 'daruri/reading-desk.css'
+      - 'daruri/index.html'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  webkit-chromium:
+    name: Real DOM and touch-like interactions
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test dependencies
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Exercise actual reader in mobile WebKit and Chromium
+        run: node daruri/qa/verify-reading-desk-real-browser.cjs
+      - name: Preserve screenshots for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reading-desk-browser-screenshots
+          path: daruri/qa/reading-desk-browser-artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
