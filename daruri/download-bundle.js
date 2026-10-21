@@ -154,6 +154,7 @@
       ['daruri/editions.css', 'editions.css?v=20261021-editions1'],
       ['daruri/editions-icons.css','editions-icons.css?v=20261021-icons2'],
       ['daruri/editions-icons.js','editions-icons.js?v=20261021-icons2'],
+      ['daruri/editions/manifest.json','editions/manifest.json?v=20261021-bilingual-vowels1'],
       ['daruri/personal-export.html', 'personal-export.html'],
       ['daruri/personal-export.js', 'personal-export.js?v=3'],
       ['daruri/personal-pdf-enhancements.js','personal-pdf-enhancements.js?v=3'],
@@ -194,6 +195,15 @@
       ['daruri/daruri-arabic-vowelled.pdf', 'daruri-arabic-vowelled.pdf?v=daruri8-structure-20261020'],
       ['daruri/bou-akl-2015-variant-report.pdf', 'bou-akl-2015-variant-report.pdf']
     ]);
+    // Bundle the complete verified A4 editions (not only the currently visible tab).
+    // Keep all canonical scholarly-PDF and Reading Desk resources from master intact.
+    const catalog = [
+      ...['bilingual','bilingual-unvowelled','english','arabic','arabic-vowelled']
+        .flatMap(language=>['off','on']
+          .map(titles=>'reading/daruri-reading-'+language+'-titles-'+titles+'.pdf')),
+      ...['off','on'].map(titles=>'study/daruri-study-bilingual-titles-'+titles+'.pdf')
+    ];
+    for(const entry of catalog) pdfs.set('daruri/editions/'+entry,'editions/'+entry);
     for (const link of document.querySelectorAll('a[href]')) {
       const raw = link.getAttribute('href') || '';
       const path = raw.split('#')[0].split('?')[0];

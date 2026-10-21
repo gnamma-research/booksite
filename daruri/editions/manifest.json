@@ -1,7 +1,7 @@
 {
-  "release": "20261021-a4-reading-and-study",
+  "release": "20261021-a4-bilingual-vowels-merged",
   "status": "verified",
-  "note": "The reference edition and website reference page destinations are unchanged.",
+  "note": "Original ten master-verified A4 PDFs and page identities preserved. Two additional unvowelled bilingual Reading PDFs were SHA-verified and added without altering existing reading, study, or scholarly reference editions.",
   "tier_order": [
     "reading",
     "study",
@@ -33,6 +33,32 @@
       "notes": "none",
       "bytes": 1109814,
       "sha256": "6f5bcb5e7e35c2b58517891a63ec48151a3c7674d591145117a66ba1b57f7dee"
+    },
+    {
+      "file": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "tier": "reading",
+      "language": "bilingual-unvowelled",
+      "editorial_titles": false,
+      "pages": 76,
+      "bookmarks": 52,
+      "links": 5,
+      "clickable_part_links": 0,
+      "notes": "none",
+      "bytes": 574014,
+      "sha256": "587158f20180c0a40855ef882b19ac04b1847dd3442e699e29d016aee48f005e"
+    },
+    {
+      "file": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "tier": "reading",
+      "language": "bilingual-unvowelled",
+      "editorial_titles": true,
+      "pages": 82,
+      "bookmarks": 316,
+      "links": 5,
+      "clickable_part_links": 0,
+      "notes": "none",
+      "bytes": 667531,
+      "sha256": "4465cede1376460ad85a17acb79953889c68a1b932f634cb3a99d20e2decd790"
     },
     {
       "file": "reading/daruri-reading-english-titles-off.pdf",
