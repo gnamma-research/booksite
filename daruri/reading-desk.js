@@ -341,7 +341,7 @@ function create(ctx){
   }
   const id=touched[0].id,main=$('#mainContent');
   const page=main?.querySelector('.gn-rd-page');
-  const card=[...(main?.querySelectorAll('.gn-rd-card-open[data-id]')||[])]
+  const card=[...(main?.querySelectorAll?.('.gn-rd-card-open[data-id]')||[])]
    .find(btn=>btn.dataset.id===id)?.closest('.gn-rd-card');
   if(!page||!card||matching().some(r=>r.id===id)){render();return;}
   card.remove();
