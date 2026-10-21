@@ -34,10 +34,16 @@ for(const term of ['gn-es-spec-lead','gn-es-spec-layout','gn-es-spec-notes','gn-
   'data-es-action="open"',
   'data-es-category','data-es-section','gn-es-personal-link','aria-disabled',
   'No verified PDF exists for this exact combination','personal-export.html',
-  'English left / Arabic right','Print opens the published PDF']){
+  'English left / Arabic right','Open this PDF to read, save, share or print']){
   assert.ok(js.includes(term),'Missing publication contract: '+term);
 }
 assert.ok(js.includes('resolve()'),'Action selection must resolve to the catalog');
+assert.ok(js.includes('apparatusCatalog')&&
+  js.includes('row.verified_sections===258')&&
+  js.includes('row.map_coverage===1'),
+  'Extra apparatus PDFs must have SHA-verified source-section maps');
+assert.ok(js.includes('personal-export.html?pdf='),
+  'Private export can preselect the same exact apparatus PDF');
 assert.ok(!js.includes('pdf-lib'),'No on-click PDF generation for public actions');
 assert.ok(!js.includes('window.print()'),'Public Print opens the published PDF');
 assert.ok(!js.includes('fetch('+'"/api/'),'No server-side public PDF generation API');
@@ -56,4 +62,4 @@ assert.ok(css.includes('.gn-es-spec{')&&css.includes('position:sticky'),
 assert.ok(css.includes('.gn-es [hidden]'),'Hidden categories do not stack');
 assert.ok(js.includes('s.notes!==')&&js.includes('No published PDF'),
  'Unsupported combinations must fail closed');
-console.log('PASS: single Open PDF, no duplicate Notes shortcut, sticky apparatus state, four settings categories, exact SHA-indexed PDFs and private export boundaries.');
+console.log('PASS: single Open PDF, 4 settings categories, 10 additional SHA-verified apparatus variants, independent personal-note map links, private-data boundaries.');
