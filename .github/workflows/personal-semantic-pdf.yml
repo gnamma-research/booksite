@@ -1,3 +1,4 @@
+# Checks current PDF SHA-256 maps, multilingual searchable text and native highlights.
 name: Daruri personal PDF precision, search and mobile QA
 on:
   push:
