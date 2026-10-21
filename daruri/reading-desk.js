@@ -19,7 +19,7 @@ function create(ctx){
  let records=[],available=true,selection=null,editor=null,origin=null,readingOrigin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
  const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
  const printPrefs={order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
- let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,untouchedStorage=null;
+ let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='';
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
  function validateTarget(raw){
@@ -78,9 +78,15 @@ function create(ctx){
     body:'',created:0,updated:0,modified:0,dateSource:'legacy-unknown',
     deleted:0,standalone:false,archivedValue:r};
   const kind=clamp(r.kind||'unavailable',30),rawTarget=r.target||((r.kind&&r.section)?r:null);
-  const target=validateTarget(rawTarget)||archiveTarget(rawTarget);
-  return {...r,id:clamp(r.id,100)||uuid(),kind,target,title:clamp(r.title,240),
-   body:clamp(r.body,30000),created:Math.max(0,Number(r.created)||0),
+  const parsed=validateTarget(rawTarget),target=archiveTarget(rawTarget);
+  if(target&&parsed){for(const key of ['kind','section','segment','lang','offset'])if(key in parsed)target[key]=parsed[key];}
+  const title=typeof r.title==='string'?r.title:r.title==null?'':JSON.stringify(r.title);
+  const body=typeof r.body==='string'?r.body:r.body==null?'':JSON.stringify(r.body);
+  return {...r,id:clamp(r.id,100)||uuid(),kind,target,title,body,
+   ...(r.body!=null&&typeof r.body!=='string'?{archivedBodyValue:r.body}:{}),
+   ...(r.title!=null&&typeof r.title!=='string'?{archivedTitleValue:r.title}:{}),
+   ...(rawTarget&&target&&JSON.stringify(rawTarget)!==JSON.stringify(target)?{sourceTargetOriginal:archiveTarget(rawTarget)}:{}),
+   created:Math.max(0,Number(r.created)||0),
    updated:Math.max(0,Number(r.updated)||0),modified:Math.max(0,Number(r.modified)||0),
    dateSource:['recorded','legacy-unknown','unverified'].includes(r.dateSource)?r.dateSource:'unverified',
    deleted:Math.max(0,Number(r.deleted)||0),standalone:kind==='note'&&!!r.standalone};
@@ -89,6 +95,7 @@ function create(ctx){
   if(!r)return false;
   if(!r.target)return r.kind==='note'&&r.standalone===true;
   if(r.kind!=='note'&&r.kind!==r.target.kind)return false;
+  if(r.target.kind==='quote'&&String(r.target.quote||'').length>5000)return false;
   return Boolean(validateTarget(r.target));
  }
  function load(){
@@ -99,6 +106,7 @@ function create(ctx){
     const data=JSON.parse(value);
     if(data?.format!==FORMAT||data.version!==VERSION||!Array.isArray(data.items))
      throw Error('Unsupported saved Reading Desk format');
+    storedEnvelope=Object.fromEntries(Object.entries(data).filter(([key])=>!['format','version','items'].includes(key)));
     records=data.items.map(sanitize); // Never truncate records when restoring.
    }
   }catch(e){
@@ -120,7 +128,7 @@ function create(ctx){
  function persist(){
   if(loadFailure){ctx.notify('Original Reading Desk storage is protected; export it before making changes.');return false;}
   try{
-   localStorage.setItem(KEY,JSON.stringify({format:FORMAT,version:VERSION,items:records}));
+   localStorage.setItem(KEY,JSON.stringify({...storedEnvelope,format:FORMAT,version:VERSION,items:records}));
    available=true;syncLegacy(true);syncActionStates();return true;
   }catch(e){
    available=false;ctx.notify('Reading Desk is not saved: browser storage is full or unavailable. Export a backup.');return false;
@@ -221,12 +229,16 @@ function create(ctx){
   if(state.route==='bookmarks')render();
  }
  function moveMany(ids,restore=false){
+  const snapshot=new Map(records.filter(r=>ids.includes(r.id)).map(r=>[r.id,{deleted:r.deleted,updated:r.updated}]));
   const now=Date.now();let count=0;
   for(const id of ids){const r=records.find(x=>x.id===id);if(!r)continue;
    if(restore&&!r.deleted||!restore&&r.deleted)continue;
    r.deleted=restore?0:now;r.updated=now;count++;
   }
-  if(count){if(!persist()){ctx.notify('Storage unavailable: change was not saved.');return 0;}syncLegacy(true);if(state.route==='reader')afterReader();if(state.route==='bookmarks')render();}
+  if(count){if(!persist()){
+   for(const [id,previous] of snapshot) {const row=records.find(x=>x.id===id);if(row){row.deleted=previous.deleted;row.updated=previous.updated;}}
+   ctx.notify('Storage unavailable: change was not saved.');return 0;
+  }syncLegacy(true);if(state.route==='reader')afterReader();if(state.route==='bookmarks')render();}
   return count;
  }
  function trash(id){if(moveMany([id])){lastUndo=id;showUndo();}}
@@ -302,8 +314,8 @@ function create(ctx){
    (!q||norm([r.title,titleOf(r.target),r.body,r.target?.quote,r.target?.term,r.target?.app,subOf(r.target)].join(' ')).toLocaleLowerCase().includes(q)));
   return bin?rows.sort((a,b)=>b.deleted-a.deleted):sortItems(rows,ui.sort);
  }
- function htmlCard(r){
-  const own=r.kind==='note',related=own?[]:active().filter(x=>x.kind==='note'&&x.target&&sourceKey(x.target)===sourceKey(r.target));
+ function htmlCard(r,linkedCounts){
+  const own=r.kind==='note',relatedCount=own||!r.target?0:linkedCounts.get(sourceKey(r.target))||0;
   const canOpen=!!r.target&&isResolved(r);
   const parts=['<article class="gn-rd-card'+(r.id===ui.selected?' gn-rd-selected':'')+'">'];
   parts.push('<button type="button" class="gn-rd-card-open" data-rd="select" data-id="'+esc(r.id)+'" aria-label="View '+esc(own?'personal note':'bookmark')+': '+esc(short(r.title||titleOf(r.target),95))+'">');
@@ -311,7 +323,7 @@ function create(ctx){
   if(!isResolved(r))parts.push('<span class="gn-rd-unresolved-status" role="status">Source unavailable · saved content preserved</span>');
   parts.push('<strong>'+esc(r.title||titleOf(r.target))+'</strong>');
   if(own)parts.push('<span>'+esc(short(r.body,175))+'</span>');
-  else if(related.length)parts.push('<span>'+related.length+' linked personal '+(related.length===1?'note':'notes')+'</span>');
+  else if(relatedCount)parts.push('<span>'+relatedCount+' linked personal '+(relatedCount===1?'note':'notes')+'</span>');
   parts.push('</button><div class="gn-rd-card-ops">');
   if(!r.deleted&&canOpen)parts.push('<button type="button" data-rd="open" data-id="'+esc(r.id)+'">Open source</button>');
   if(r.deleted)parts.push('<button type="button" data-rd="restore" data-id="'+esc(r.id)+'">Restore</button>');
@@ -325,6 +337,8 @@ function create(ctx){
  function render(){
   const main=$('#mainContent');if(!main)return;
   const visible=matching(),selected=records.find(r=>r.id===ui.selected),bin=ui.category==='bin';
+  const linkedCounts=new Map();
+  for(const r of active())if(r.kind==='note'&&r.target){const k=sourceKey(r.target);linkedCounts.set(k,(linkedCounts.get(k)||0)+1);}
   const parts=['<section class="gn-rd-page'+(ui.mobileDetail?' gn-rd-mobile-detail-open':'')+'">'];
   parts.push('<header class="gn-rd-hero"><p class="gn-rd-kicker">YOUR PRIVATE READING COLLECTION</p><h1>Reading Desk</h1>');
   parts.push('<p>Saved passages, personal observations and source-linked references. Your work stays in this browser unless you export it.</p>');
@@ -349,12 +363,14 @@ function create(ctx){
   parts.push('<label>Sort by <select id="gn-rd-sort">'+Object.entries(SORTS).map(([value,name])=>'<option value="'+value+'"'+(ui.sort===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label></div>');
   parts.push('<p class="gn-rd-count" aria-live="polite">'+visible.length+' '+(bin?'items in Bin':'saved items')+'</p>');
   parts.push('<div class="gn-rd-layout"><div class="gn-rd-cards" id="gn-rd-cards">');
-  let lastGroup='';
+  let lastGroup='',lastPassage='';
   for(const r of visible){
    const group=(!bin&&ui.sort==='source'&&r.target?.section)?String(r.target.section):'';
    if(group&&group!==lastGroup)parts.push('<h3 class="gn-rd-source-heading">'+esc(ctx.sectionRef(group))+'</h3>');
-   lastGroup=group;
-   parts.push(htmlCard(r));
+   const key=group&&r.target?.segment!=null?group+':'+r.target.segment:'';
+   if(key&&key!==lastPassage)parts.push('<h4 class="gn-rd-paragraph-heading">Paragraph '+(Number(r.target.segment)+1)+'</h4>');
+   lastGroup=group;lastPassage=key;
+   parts.push(htmlCard(r,linkedCounts));
   }
   if(!visible.length)parts.push('<p class="gn-rd-empty">'+(bin?'Bin is empty.':ui.query?'No items match the search.':'No saved items here yet. Select words in the reader or bookmark a source entry to begin.')+'</p>');
   parts.push('</div><div class="gn-rd-detail" id="gn-rd-detail">');
@@ -672,13 +688,44 @@ function create(ctx){
   if(state.focusMode||state.focusLevel===3||!showPersonalMarks())return;
   const marks=[],annotations=[];
   for(const item of active()){
-   const t=item.target;if(!t||t.kind!=='quote'||t.section!==String(state.n))continue;
-   const root=$('#gn-continuous-'+CSS.escape(String(t.section)))||$('#reader');
+   const t=item.target;
+   if(!isResolved(item)||t?.kind!=='quote'||!t.section)continue;
+   // In continuous mode, state.n identifies one active section but many others
+   // are visible: find each item's actual containing section.
+   const root=$('#gn-continuous-'+CSS.escape(String(t.section)))||
+    document.querySelector('#reader [data-reading-section="'+CSS.escape(String(t.section))+'"]')||
+    (String(t.section)===String(state.n)?$('#reader'):null);
    const side=root?.querySelector('.passage-grid[data-segment="'+t.segment+'"] .passage-'+(t.lang==='ar'?'ar':'en'));
-   if(!side)continue;const range=findRange(side,t);if(range)(item.kind==='note'?annotations:marks).push(range);
+   if(!side)continue;
+   const range=findRange(side,t);
+   if(range)(item.kind==='note'?annotations:marks).push(range);
   }
   if(marks.length)CSS.highlights.set('gn-rd-bookmark',new Highlight(...marks));
   if(annotations.length)CSS.highlights.set('gn-rd-note',new Highlight(...annotations));
+ }
+ function followSharedSourceLink(){
+  if(state.route!=='reader')return;
+  const hash=location.hash||'';
+  if(hash===lastSourceDeepLink||!hash.startsWith('#section=')||!/[&]segment=/.test(hash))return;
+  lastSourceDeepLink=hash;
+  const part=hash.match(/(?:^|&)segment=(\d+)/),segment=part?Number(part[1]):NaN;
+  if(!Number.isInteger(segment)||segment<0||segment>2000)return;
+  const sectionId=decodeURIComponent(hash.slice(9).split('&')[0]);
+  const selection=hash.match(/(?:^|&)selection=([^&]*)/),language=hash.match(/(?:^|&)lang=(ar|en)/);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   const root=$('#gn-continuous-'+CSS.escape(sectionId))||
+    document.querySelector('#reader [data-reading-section="'+CSS.escape(sectionId)+'"]')||$('#reader');
+   const grid=root?.querySelector('.passage-grid[data-segment="'+segment+'"]');
+   if(!grid)return;
+   grid.scrollIntoView({block:'center',behavior:'instant'});
+   if(selection&&window.CSS?.highlights&&typeof Highlight!=='undefined'){
+    let quotation='';
+    try{quotation=decodeURIComponent(selection[1])}catch(_){return;}
+    const side=grid.querySelector('.passage-'+(language?.[1]==='ar'?'ar':'en'));
+    const range=side?findRange(side,{quote:quotation,offset:0}):null;
+    if(range)CSS.highlights.set('gn-rd-target',new Highlight(range));
+   }
+  }));
  }
  function saveDeskReturnState(){
   try{sessionStorage.setItem('gnamma-reading-desk-return-v2',JSON.stringify({at:Date.now(),ui:{
@@ -774,7 +821,7 @@ function create(ctx){
   if(route==='bookmarks'){
    if(ui.listScroll&&!ui.mobileDetail)requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo({top:ui.listScroll,behavior:'instant'})));
   }
-  if(route==='reader')afterReader();else{closeContext();decorate();}
+  if(route==='reader'){afterReader();followSharedSourceLink();}else{closeContext();decorate();}
   document.body.classList.toggle('gn-rd-returning',!!origin&&route!=='bookmarks');
   if(origin&&route!=='bookmarks'){
    const main=$('#mainContent');if(main&&!main.querySelector('.gn-rd-return')){
@@ -805,7 +852,12 @@ function create(ctx){
  function canonicalURL(t){
   const base=new URL('index.html',location.href).href.split('#')[0];
   if(!t)return base+'#bookmarks';
-  if(['quote','paragraph','section','footnote'].includes(t.kind))return base+'#section='+encodeURIComponent(t.section);
+  if(['quote','paragraph','section','footnote'].includes(t.kind)){
+    let hash='#section='+encodeURIComponent(t.section);
+    if(Number.isInteger(Number(t.segment))&&t.segment!==undefined&&t.segment!==null){hash+='&segment='+Number(t.segment);
+     if(t.kind==='quote'&&t.quote){hash+='&lang='+(t.lang==='ar'?'ar':'en')+'&selection='+encodeURIComponent(String(t.quote).slice(0,300));}}
+    return base+hash;
+   }
   if(t.kind==='application')return base+'#application='+encodeURIComponent(t.app);
   if(t.kind==='lesson')return base+'#study?topic='+encodeURIComponent(t.lesson)+'&level='+encodeURIComponent(t.level);
   if(t.kind==='dictionary')return t.historical?new URL('dictionary.html',location.href).href.split('#')[0]+'#view=all&term='+encodeURIComponent(t.term):base+'#glossary';
@@ -899,10 +951,27 @@ function create(ctx){
  }
  function printSourcePreview(t){
   if(!t||!['quote','paragraph','section'].includes(t.kind))return '';
-  const limit=printPrefs.full?100000:650;
-  const ar=sourceText(t,'ar'),en=sourceText(t,'en');
-  const texts=(printPrefs.arabic?'<section class="gn-rd-print-ar" lang="ar" dir="rtl">'+esc(short(ar,limit))+'</section>':'')+
-    (printPrefs.english?'<section class="gn-rd-print-en" lang="en">'+esc(short(en,limit))+'</section>':'');
+  const limit=printPrefs.full?100000:900;
+  const excerpt=(lang)=>{
+   const raw=sourceText(t,lang);
+   if(!raw){
+    if(t.kind==='quote'&&t.lang===lang)return String(t.quote||'');
+    return '';
+   }
+   if(printPrefs.full||raw.length<=limit)return raw;
+   if(t.kind==='quote'&&t.lang===lang&&t.quote){
+    const quoted=String(t.quote),where=raw.indexOf(quoted);
+    if(where>=0){
+     const before=Math.max(0,where-250),after=Math.min(raw.length,where+quoted.length+260);
+     return (before?'… ':'')+raw.slice(before,after)+(after<raw.length?' …':'');
+    }
+    // Do not invent the location when a historical wording no longer matches.
+    return quoted+' [original saved quotation; wording not found in current paragraph]';
+   }
+   return raw.slice(0,limit)+' …';
+  };
+  const texts=(printPrefs.arabic?'<section class="gn-rd-print-ar" lang="ar" dir="rtl">'+esc(excerpt('ar'))+'</section>':'')+
+    (printPrefs.english?'<section class="gn-rd-print-en" lang="en">'+esc(excerpt('en'))+'</section>':'');
   return '<div class="gn-rd-print-bilingual">'+texts+'</div>';
  }
  function printGroup(items){
@@ -918,6 +987,9 @@ function create(ctx){
   else if(t?.kind==='application')html+='<p>'+esc(ctx.apps.get(t.app)?.text||'')+'</p>';
   else if(t?.kind==='lesson')html+='<p>'+esc(window.DARURI_STUDY_DATA?.lessons?.find(l=>l.id===t.lesson)?.summary||'')+'</p>';
   const seen=new Set();
+  const savedSelections=items.filter(r=>r.target?.quote).map(r=>r.target);
+  for(const t of savedSelections){const key=t.lang+':'+t.quote;if(seen.has(key))continue;seen.add(key);
+   html+='<blockquote lang="'+(t.lang==='ar'?'ar':'en')+'" dir="'+(t.lang==='ar'?'rtl':'ltr')+'">'+esc(t.quote)+'</blockquote>';}
   for(const r of items){
    if(r.kind==='note'){
     if(!printPrefs.personal)continue;
@@ -925,10 +997,6 @@ function create(ctx){
       '<p>'+esc(r.body).replace(/\n/g,'<br>')+'</p>'+
       (printPrefs.dates?'<small>'+esc(dateLine(r,true))+'</small>':'')+'</section>';
    }else{
-    if(r.target?.quote&&!seen.has(r.target.quote)){
-     html+='<blockquote lang="'+(r.target.lang==='ar'?'ar':'en')+'" dir="'+(r.target.lang==='ar'?'rtl':'ltr')+'">'+esc(r.target.quote)+'</blockquote>';
-     seen.add(r.target.quote);
-    }
     if(printPrefs.bookmarkDates)html+='<p class="gn-rd-print-record-date">'+esc(dateLine(r,true))+'</p>';
    }
   }
@@ -1034,10 +1102,10 @@ function create(ctx){
   if(action==='close-editor'){closeEditor();return;}
   if(action==='trash'&&row){trash(id);return;}
   if(action==='restore'&&row){moveMany([id],true);ctx.notify('Restored to Reading Desk.');return;}
-  if(action==='delete-permanent'&&row){if(confirm('Permanently delete this item? This cannot be undone.')){records=records.filter(x=>x.id!==id);persist();render();}return;}
+  if(action==='delete-permanent'&&row){if(confirm('Permanently delete this item? This cannot be undone.')){const prior=records;records=records.filter(x=>x.id!==id);if(!persist()){records=prior;ctx.notify('Deletion could not be saved.');return;}render();}return;}
   if(action==='undo'&&lastUndo){moveMany([lastUndo],true);lastUndo=null;const t=$('#gn-rd-undo');if(t)t.hidden=true;return;}
   if(action==='restore-all'){moveMany(records.filter(r=>r.deleted).map(r=>r.id),true);return;}
-  if(action==='empty-bin'){if(confirm('Permanently delete everything in Bin? This cannot be undone.')){records=records.filter(r=>!r.deleted);persist();render();}return;}
+  if(action==='empty-bin'){if(confirm('Permanently delete everything in Bin? This cannot be undone.')){const prior=records;records=records.filter(r=>!r.deleted);if(!persist()){records=prior;ctx.notify('Could not empty the Bin.');return;}render();}return;}
   if(action==='open'&&row){if(!isResolved(row)){ctx.notify('Source unavailable: the saved item has been preserved. Open its details to relink.');return;}openSource(row);return;}
   if(action==='relink'&&row){showRelink(row);return;}
   if(action==='relink-close'){closeRelink();return;}
