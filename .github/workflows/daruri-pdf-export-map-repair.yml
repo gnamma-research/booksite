@@ -1,0 +1,52 @@
+name: Verify and reconcile Daruri PDF note page maps
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/daruri-pdf-export-map-repair.yml'
+      - 'daruri/qa/verify_pdf_export_maps.py'
+      - 'daruri/pdf-editions-manifest.json'
+      - 'daruri/daruri*.pdf'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daruri-pdf-export-maps-master
+  cancel-in-progress: false
+
+jobs:
+  verify-and-repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned PDF inspector
+        run: python -m pip install PyMuPDF==1.26.7
+      - name: Verify all five PDF checksums and all 259 section destinations
+        run: python daruri/qa/verify_pdf_export_maps.py --repair
+      - name: Verify the browser-only personal PDF exporter against current maps
+        run: node daruri/qa/verify-personal-export-safety.js
+      - name: Publish metadata only if every validation passed
+        run: |
+          git config user.name 'gnamma-research-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f daruri/build/release/daruri.pdf.metadata.json
+          git add -f daruri/build/release/daruri-study.pdf.metadata.json
+          git add -f daruri/build/release/daruri-english.pdf.metadata.json
+          git add -f daruri/build/release/daruri-arabic.pdf.metadata.json
+          git add -f daruri/build/release/daruri-arabic-vowelled.pdf.metadata.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Synchronize independently verified Daruri personal PDF page maps"
+            git push origin HEAD:master
+          fi
