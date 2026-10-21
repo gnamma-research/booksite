@@ -41,22 +41,30 @@ with fitz.open(PDF) as personal, fitz.open(ROOT/'daruri.pdf') as published:
         assert not any(box.intersects(fitz.Rect(w[:4])) for w in base_words),\
           f'Personal marker {label} covers original publisher text'
 
+    # This producer's publisher links and our links are sometimes surfaced by
+    # MuPDF as LINK_NAMED / page="244", although their low-level /Dest is a valid
+    # array. Treat numeric named-page links as 1-based PDF page destinations,
+    # while retaining standard LINK_GOTO handling when available.
+    def internal_target(link):
+        kind,target=link.get('kind'),link.get('page')
+        if kind==fitz.LINK_GOTO and isinstance(target,int):
+            return target
+        if kind==fitz.LINK_NAMED and str(target).isdigit():
+            return int(target)-1
+        return -1
+
     pages=sorted({p for p,_,_ in markers})
-    found_forward=0
-    for page_num in pages:
-        for link in personal[page_num].get_links():
-            if link['kind']==fitz.LINK_GOTO and link.get('page',-1)>=base:
-                found_forward+=1
-    print('DEBUG visual forward link count',found_forward,'marker pages',pages,flush=True)
-    for source_page in pages:
-        print('DEBUG page',source_page+1,'links',[(t.get('kind'),t.get('page'),str(t.get('to'))[:65],str(t.get('from'))[:65]) for t in personal[source_page].get_links()[-12:]],flush=True)
-    assert found_forward>=4,'Expected P markers plus two quote links to personal endnotes'
-    found_back=0
-    for page_num in range(base,len(personal)):
-        for link in personal[page_num].get_links():
-            if link['kind']==fitz.LINK_GOTO and 0<=link.get('page',-1)<base:
-                found_back+=1
-    assert found_back>=2,'Expected visible personal-note return links'
+    found_forward=sum(
+        1 for page_num in pages for link in personal[page_num].get_links()
+        if base<=internal_target(link)<len(personal)
+    )
+    assert found_forward>=4,f'Expected P references plus quote links to personal endnotes; found {found_forward}'
+    found_back=sum(
+        1 for page_num in range(base,len(personal))
+        for link in personal[page_num].get_links()
+        if 0<=internal_target(link)<base
+    )
+    assert found_back>=2,f'Expected two personal endnote return links; found {found_back}'
 
     # New page drawing and invisible /Link annotations must not damage original
     # publisher words. Ignore the added marginal P labels (left of x=43pt).
