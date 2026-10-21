@@ -89,6 +89,8 @@ def exercise(engine, browser, width, mobile):
         assert tip.count() == 0 or not tip.is_visible(), 'touch focus showed desktop tooltip'
         link.blur()
         page.keyboard.press('Tab')
+        # Tab may already have focused this link; force a genuine refocus event.
+        link.blur()
         link.focus()
         assert tip.is_visible(), 'keyboard focus lost URL tooltip'
         page.keyboard.press('Escape')
