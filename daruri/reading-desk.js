@@ -19,7 +19,7 @@ function create(ctx){
  let records=[],available=true,selection=null,editor=null,origin=null,readingOrigin=null,printRoot=null,returnFocus=null,printFocus=null,probeTimer=0,decorating=false,ready=false,lastUndo=null,pendingIntent=null;
  const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
  const printPrefs={order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
- let openContext=null,editorOriginal=null;
+ let openContext=null,editorOriginal=null,printSelection=null;
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
  function validateTarget(raw){
@@ -711,7 +711,7 @@ function create(ctx){
  }
  function backup(){return JSON.stringify({format:FORMAT,version:VERSION,exported:new Date().toISOString(),items:records},null,2);}
  function download(text,name){
-  const blob=new Blob([text],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob);
+  const blob=new Blob([text],{type:name.endsWith('.md')?'text/markdown;charset=utf-8':'application/json;charset=utf-8'}),url=URL.createObjectURL(blob);
   const a=document.createElement('a');a.href=url;a.download=name;a.style.display='none';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
  }
  async function shareBackup(){
@@ -753,55 +753,111 @@ function create(ctx){
   reader.onerror=()=>ctx.notify('Could not read the chosen backup file.');
   reader.readAsText(file);
  }
+ function exportMarkdown(){
+  const rows=matching().filter(r=>!r.deleted);
+  if(!rows.length){ctx.notify('Nothing to export from this view.');return;}
+  const lines=['# Darūrī · Reading Desk','','Personal research collection · '+dateDisplay(Date.now(),true),'','Order: '+(SORTS[ui.sort]||'Current view'),''];
+  for(const r of rows){
+   lines.push('## '+(r.title||titleOf(r.target)),'',subOf(r.target),'');
+   lines.push(dateLine(r,true),'');
+   if(r.target?.quote)lines.push('> '+r.target.quote.replace(/\n/g,'\n> '),'');
+   else if(r.target&&['paragraph','section'].includes(r.target.kind)){
+    lines.push('### Arabic',sourceText(r.target,'ar'),'','### English',sourceText(r.target,'en'),'');
+   }else if(r.target?.kind==='footnote')lines.push(ctx.notes.get(r.target.noteId)?.text||'','');
+   if(r.kind==='note')lines.push('### My note',r.body,'');
+   lines.push('Source: '+canonicalURL(r.target),'','---','');
+  }
+  download(lines.join('\n'),'Reading-Desk-'+new Date().toISOString().slice(0,10)+'.md');
+  ctx.notify('Readable Markdown notes exported. Keep JSON backups for importing.');
+ }
  function closePrintPreview(){
   if(!printRoot)return;
-  const focus=printFocus;printFocus=null;
-  printRoot.remove();printRoot=null;
+  const focus=printFocus;printFocus=null;printRoot.remove();printRoot=null;printSelection=null;
   document.body.classList.remove('gn-rd-print');
   if(focus?.isConnected)focus.focus({preventScroll:true});
+ }
+ function printSourcePreview(t){
+  if(!t||!['quote','paragraph','section'].includes(t.kind))return '';
+  const limit=printPrefs.full?100000:650;
+  const ar=sourceText(t,'ar'),en=sourceText(t,'en');
+  const texts=(printPrefs.arabic?'<section class="gn-rd-print-ar" lang="ar" dir="rtl">'+esc(short(ar,limit))+'</section>':'')+
+    (printPrefs.english?'<section class="gn-rd-print-en" lang="en">'+esc(short(en,limit))+'</section>':'');
+  return '<div class="gn-rd-print-bilingual">'+texts+'</div>';
+ }
+ function printGroup(items){
+  if(!items.length)return '';
+  const first=items[0],t=first.target;
+  let html='<article class="gn-rd-print-entry"><h2>'+esc(subOf(t))+'</h2>';
+  const pass=items.find(r=>r.target&&['quote','paragraph','section'].includes(r.target.kind));
+  if(pass)html+=printSourcePreview(pass.target);
+  else if(t?.kind==='footnote'){
+   const note=ctx.notes.get(t.noteId);html+='<p>'+esc(note?.en||note?.text||note?.body||note?.content||t.noteId)+'</p>';
+  }else if(t?.kind==='dictionary')html+='<p>'+esc(book.glossary.find(g=>g.term===t.term)?.definition||'Historical dictionary entry')+'</p>';
+  else if(t?.kind==='index')html+='<p>'+esc(t.term+(t.sub?' · '+t.sub:''))+'</p>';
+  else if(t?.kind==='application')html+='<p>'+esc(ctx.apps.get(t.app)?.text||'')+'</p>';
+  else if(t?.kind==='lesson')html+='<p>'+esc(window.DARURI_STUDY_DATA?.lessons?.find(l=>l.id===t.lesson)?.summary||'')+'</p>';
+  const seen=new Set();
+  for(const r of items){
+   if(r.kind==='note'){
+    if(!printPrefs.personal)continue;
+    html+='<section class="gn-rd-print-personal"><h3>'+esc(r.title||'My note')+'</h3>'+
+      '<p>'+esc(r.body).replace(/\n/g,'<br>')+'</p>'+
+      (printPrefs.dates?'<small>'+esc(dateLine(r,true))+'</small>':'')+'</section>';
+   }else{
+    if(r.target?.quote&&!seen.has(r.target.quote)){
+     html+='<blockquote lang="'+(r.target.lang==='ar'?'ar':'en')+'" dir="'+(r.target.lang==='ar'?'rtl':'ltr')+'">'+esc(r.target.quote)+'</blockquote>';
+     seen.add(r.target.quote);
+    }
+    if(printPrefs.bookmarkDates)html+='<p class="gn-rd-print-record-date">'+esc(dateLine(r,true))+'</p>';
+   }
+  }
+  html+='<p class="gn-rd-print-url">Source: '+esc(canonicalURL(t))+'</p></article>';
+  return html;
+ }
+ function printGroups(rows){
+  if(printPrefs.order!=='source')return rows.map(r=>[r]);
+  const groups=new Map();
+  for(const r of rows){
+   const k=sourceKey(r.target);
+   if(!groups.has(k))groups.set(k,[]);
+   groups.get(k).push(r);
+  }
+  return [...groups.values()];
+ }
+ function updatePrintSheet(){
+  if(!printRoot)return;
+  const all=printSelection?printSelection.map(id=>records.find(r=>r.id===id)).filter(Boolean):matching();
+  const rows=printPrefs.order==='shown'?all:
+    printPrefs.order==='source'?sortItems(all,'source'):
+    sortItems(all,printPrefs.order);
+  const groups=printGroups(rows),container=printRoot.querySelector('#gn-rd-print-sheet-body');
+  if(!container)return;
+  container.innerHTML=groups.map(printGroup).join('')||'<p>No matching entries.</p>';
+  const orderLabel=printPrefs.order==='shown'?'As currently displayed':printPrefs.order==='source'?'Text / source order':SORTS[printPrefs.order]||'Current order';
+  printRoot.querySelector('#gn-rd-print-order-summary').textContent=rows.length+' items · '+orderLabel;
  }
  function preparePrint(selected){
   const all=(selected||matching()).filter(Boolean);
   if(!all.length){ctx.notify('Nothing to print in this view.');return;}
-  // Keep the print content present until explicitly dismissed. On some mobile
-  // browsers afterprint is raised as soon as the preview opens.
-  closePrintPreview();
-  printFocus=document.activeElement;
-  printRoot=document.createElement('div');printRoot.id='gn-rd-print-root';
-  printRoot.setAttribute('role','dialog');
-  printRoot.setAttribute('aria-modal','true');
-  printRoot.setAttribute('aria-label','Reading Desk print preview');
-  const single=Boolean(selected),count=all.length;
-  const label=single?'1 selected entry':count+' visible '+(count===1?'entry':'entries');
-  const verb=single?'Print this item':'Print these '+count+' items';
-  printRoot.innerHTML=
-   '<div class="gn-rd-print-actions"><div><h2>Print preview · '+label+'</h2>'+
-   '<p>Only the '+(single?'selected entry':'items shown in your filtered Reading Desk')+
-   ' will be printed.</p></div><div class="gn-rd-print-buttons">'+
-   '<button type="button" data-rd="print-now">'+esc(verb)+'</button>'+
-   '<button type="button" data-rd="close-print">Close preview</button></div></div>'+
-   '<main class="gn-rd-print-sheet"><header><h1>Reading Desk</h1>'+
-   '<p>al-Ḍarūrī · '+esc(label)+'</p></header>'+
-   all.map(row=>'<article data-rd-print-id="'+esc(row.id)+'"><h2>'+esc(row.title||titleOf(row.target))+
-   '</h2><p class="gn-rd-print-label">'+esc(subOf(row.target))+'</p>'+
-   detailsForPrint(row)+'<p class="gn-rd-print-url">'+esc(canonicalURL(row.target))+
-   '</p></article>').join('')+'</main>';
-  document.body.append(printRoot);
-  document.body.classList.add('gn-rd-print');
+  closePrintPreview();printSelection=selected?all.map(r=>r.id):null;
+  printFocus=document.activeElement;printRoot=document.createElement('div');printRoot.id='gn-rd-print-root';
+  printRoot.setAttribute('role','dialog');printRoot.setAttribute('aria-modal','true');printRoot.setAttribute('aria-label','Reading Desk print preview');
+  const options=[['source','Text / source order'],['created-asc','Oldest saved first'],['created-desc','Newest saved first'],['shown','As currently displayed']];
+  const choice=(key,title,checked)=>'<label class="gn-rd-print-check"><input type="checkbox" data-rd-print-option="'+key+'"'+(checked?' checked':'')+'> '+title+'</label>';
+  printRoot.innerHTML='<div class="gn-rd-print-actions"><div><h2>Print / save PDF · Reading Desk</h2>'+
+    '<p id="gn-rd-print-order-summary"></p></div><div class="gn-rd-print-buttons">'+
+    '<button type="button" data-rd="print-now">Print / save PDF</button>'+
+    '<button type="button" data-rd="close-print">Close preview</button></div></div>'+
+    '<div class="gn-rd-print-options"><label>Print order <select data-rd-print-option="order">'+
+    options.map(([value,title])=>'<option value="'+value+'"'+(printPrefs.order===value?' selected':'')+'>'+title+'</option>').join('')+
+    '</select></label>'+choice('arabic','Arabic',printPrefs.arabic)+choice('english','English',printPrefs.english)+
+    choice('personal','Personal notes',printPrefs.personal)+choice('dates','Note dates',printPrefs.dates)+
+    choice('bookmarkDates','Bookmark dates',printPrefs.bookmarkDates)+choice('full','Full source passages',printPrefs.full)+'</div>'+
+    '<main class="gn-rd-print-sheet"><header><h1>Reading Desk</h1><p>al-Ḍarūrī · '+all.length+' '+(all.length===1?'saved item':'saved items')+'</p></header>'+
+    '<div id="gn-rd-print-sheet-body"></div></main>';
+  document.body.append(printRoot);document.body.classList.add('gn-rd-print');
+  updatePrintSheet();
   printRoot.querySelector('[data-rd="print-now"]')?.focus({preventScroll:true});
- } 
-  function detailsForPrint(r){
-  const t=r.target;if(!t)return '<p>'+esc(r.body)+'</p>';
-  let out='';
-  if(['quote','paragraph','section'].includes(t.kind)){
-   out+='<div lang="ar" dir="rtl">'+esc(sourceText(t,'ar'))+'</div><div lang="en">'+esc(sourceText(t,'en'))+'</div>';
-  }else if(t.kind==='footnote'){const n=ctx.notes.get(t.noteId);out+='<p>'+esc(n?.en||n?.text||n?.body||n?.content||t.noteId)+'</p>';}
-  else if(t.kind==='dictionary')out+='<p>'+esc(book.glossary.find(g=>g.term===t.term)?.definition||'')+'</p>';
-  else if(t.kind==='application')out+='<p>'+esc(ctx.apps.get(t.app)?.text||'')+'</p>';
-  else if(t.kind==='lesson')out+='<p>'+esc(window.DARURI_STUDY_DATA?.lessons?.find(l=>l.id===t.lesson)?.summary||'')+'</p>';
-  if(t.quote)out+='<p><strong>Selected words:</strong> '+esc(t.quote)+'</p>';
-  if(r.kind==='note')out+='<section><h3>My note</h3><p>'+esc(r.body).replace(/\n/g,'<br>')+'</p></section>';
-  return out;
  }
  function handle(event){
   const btn=event.target.closest?.('[data-rd]');if(!btn)return;
