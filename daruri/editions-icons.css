@@ -164,3 +164,20 @@
   .gn-editions .gn-ed-icon-options{gap:5px}
 }
 @media print{.gn-editions .gn-ed-top,.gn-editions .gn-ed-quicknav,.gn-editions .gn-ed-study-custom > summary{display:none!important}}
+
+
+/* Override legacy two-column tile layouts at all viewport sizes. */
+.gn-editions .gn-ed-field .gn-ed-icon-options,
+.gn-editions .gn-ed-toggle .gn-ed-icon-options{
+  grid-template-columns:none!important;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr)
+}
+/* If the icon enhancement fails, show readable native controls and labels. */
+.gn-editions:not(.gn-ed-icon-ready) .gn-ed-field{
+  display:flex;flex-direction:column;align-items:stretch;gap:5px;padding:7px 0
+}
+.gn-editions:not(.gn-ed-icon-ready) .gn-ed-field > .gn-ed-field-name{
+  display:block;position:static;width:auto;height:auto
+}
+.gn-editions:not(.gn-ed-icon-ready) .gn-ed-toggle{
+  display:flex;flex-direction:row;align-items:center;gap:8px
+}
