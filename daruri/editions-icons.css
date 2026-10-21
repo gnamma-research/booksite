@@ -203,3 +203,47 @@
 .gn-editions .gn-ed-preview-details>summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .gn-editions .gn-ed-preview-details[open]>summary{background:var(--accent-soft);color:var(--accent)}
 .gn-editions .gn-ed-preview-details .gn-ed-paper{margin:12px auto 0}
+
+
+/* Three mutually exclusive edition tabs — preserve one visible panel at a time. */
+.gn-editions .gn-ed-edition-nav{
+  display:grid;grid-template-columns:minmax(0,1fr) 48px;align-items:center;
+  column-gap:12px;margin:10px 0 14px;padding:0 0 12px;border-bottom:1px solid var(--border)
+}
+.gn-editions .gn-ed-tablist{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;min-width:0
+}
+.gn-editions .gn-ed-tab,.gn-editions .gn-ed-personal-action{
+  display:grid;place-items:center;min-width:0;width:100%;min-height:48px;height:48px;
+  border:1px solid var(--border);border-radius:9px;background:var(--paper);
+  color:var(--text);cursor:pointer;text-decoration:none;padding:8px
+}
+.gn-editions .gn-ed-personal-action{width:48px}
+.gn-editions .gn-ed-tab svg,.gn-editions .gn-ed-personal-action svg{
+  width:25px;height:25px;display:block
+}
+.gn-editions .gn-ed-tab[aria-selected="true"]{
+  padding:7px;border:2px solid var(--accent);
+  background:var(--accent-soft);color:var(--accent)
+}
+.gn-editions .gn-ed-tab:focus-visible,.gn-editions .gn-ed-personal-action:focus-visible{
+  outline:3px solid var(--accent);outline-offset:2px
+}
+.gn-editions .gn-ed-tab[aria-selected="false"]:hover{
+  border-color:var(--accent);color:var(--accent)
+}
+.gn-editions .gn-ed-tier{margin:0;padding:0 0 16px;border:0;min-width:0}
+.gn-editions .gn-ed-panel-label{
+  position:absolute!important;width:1px!important;height:1px!important;
+  margin:-1px!important;padding:0!important;border:0!important;overflow:hidden!important;
+  clip:rect(0,0,0,0)!important;white-space:nowrap!important
+}
+.gn-editions [role="tabpanel"][hidden]{display:none!important}
+@media(max-width:400px){
+  .gn-editions .gn-ed-edition-nav{grid-template-columns:minmax(0,1fr) 44px;gap:7px}
+  .gn-editions .gn-ed-tablist{gap:6px}
+  .gn-editions .gn-ed-tab,.gn-editions .gn-ed-personal-action{
+    min-height:46px;height:46px
+  }
+  .gn-editions .gn-ed-personal-action{width:44px}
+}
