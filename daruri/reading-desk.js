@@ -335,6 +335,7 @@ function create(ctx){
   parts.push('</div><div class="gn-rd-detail" id="gn-rd-detail">');
   if(selected&&visible.some(r=>r.id===selected.id)){
    parts.push('<button class="gn-rd-mobile-back" type="button" data-rd="detail-back">← Reading Desk</button>');
+   if(ui.mobileDetail&&readingOrigin)parts.push('<button class="gn-rd-back-reading gn-rd-mobile-source-back" type="button" data-rd="return-reading">← Back to text</button>');
    parts.push('<header><small>'+esc(selected.kind==='note'?'MY NOTE':grouped(selected).toUpperCase())+'</small><h2>'+esc(selected.title||titleOf(selected.target))+'</h2></header>');
    parts.push(detailsFor(selected));
    parts.push('<footer class="gn-rd-date-details"><small>'+esc(dateLine(selected,true))+'</small></footer>');
@@ -643,7 +644,7 @@ function create(ctx){
   const t=r.target;if(!t){ctx.notify('This note has no attached source.');return;}
   const existing=$('#mainContent .gn-rd-page');
   if(existing){
-   ui.listScroll=window.scrollY||0;
+   if(!ui.mobileDetail)ui.listScroll=window.scrollY||0;
    origin={id:r.id,created:Date.now()};
    saveDeskReturnState();
   }
@@ -901,7 +902,7 @@ function create(ctx){
   if(action==='unscoped'){ui.filterTarget='';ui.filterSegment=null;ui.category='all';ui.selected='';ui.mobileDetail=false;render();return;}
   if(action==='select'||action==='related'){
    if(action==='related'){ui.category='all';ui.sourceType='all';ui.filterTarget='';ui.filterSegment=null;}
-   ui.listScroll=window.scrollY||0;ui.selected=id;ui.context='both';ui.expanded=false;
+   if(!ui.mobileDetail||action==='select')ui.listScroll=window.scrollY||0;ui.selected=id;ui.context='both';ui.expanded=false;
    ui.mobileDetail=matchMedia('(max-width:760px)').matches;
    const scroll=window.scrollY;render();window.scrollTo({top:ui.mobileDetail?0:scroll,behavior:'instant'});
    if(ui.mobileDetail)$('#gn-rd-detail .gn-rd-mobile-back')?.focus({preventScroll:true});return;
@@ -987,7 +988,7 @@ function create(ctx){
   },true);
   document.addEventListener('keydown',e=>{
    if(printRoot&&e.key==='Tab'){
-    const nodes=[...printRoot.querySelectorAll('button')].filter(x=>!x.disabled);if(!nodes.length)return;
+    const nodes=[...printRoot.querySelectorAll('button,input,select')].filter(x=>!x.disabled);if(!nodes.length)return;
     if(e.shiftKey&&document.activeElement===nodes[0]){e.preventDefault();nodes.at(-1).focus();}
     else if(!e.shiftKey&&document.activeElement===nodes.at(-1)){e.preventDefault();nodes[0].focus();}
     return;
