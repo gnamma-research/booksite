@@ -375,3 +375,22 @@
     }
   }
 }
+
+/* VISUALS RESPONSIVE WIDTH 20261021-visualswidth2
+   About 12–15% narrower at typical iPhone / desktop widths than the
+   preceding 460px / viewport−44px panel. Ultra-small screens have a 286px
+   safety floor so specimens, the full-width size controls, and 48px touch
+   targets remain usable; outer width never exceeds viewport−24px. */
+@media screen {
+  .gn-visuals-panel {
+    width: min(390px, max(286px, calc(100vw - 88px))) !important;
+    max-width: calc(100vw - 24px) !important;
+  }
+  .gn-visuals-panel .gn-visual-row {
+    grid-template-columns: 42px minmax(0, 1fr) !important;
+    column-gap: 7px !important;
+  }
+  .gn-visuals-panel .gn-visual-marker {
+    width: 40px !important;
+  }
+}
