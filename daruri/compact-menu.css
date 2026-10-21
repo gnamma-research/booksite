@@ -171,7 +171,7 @@
  #leftNav .nav-bottom>.gn-nav-group>summary>.icon{flex:0 0 18px;width:18px;height:18px}
  #leftNav .nav-bottom>.gn-nav-group>summary:after{content:'';margin-left:auto;flex:0 0 7px;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
  #leftNav .nav-bottom>.gn-nav-group[open]>summary:after{transform:translateY(2px) rotate(225deg)}
- #leftNav #downloadsMenu>.gn-pdf-editions{box-sizing:border-box;margin:0!important;padding:4px 0 9px 31px!important;width:100%;max-width:100%}
+ #leftNav #downloadsMenu>.gn-pdf-editions{box-sizing:border-box;margin:0!important;padding:6px 7px 11px 31px!important;width:100%;max-width:100%}
  #leftNav #jumpToPartMenu>.nav-parts{box-sizing:border-box;margin:0!important;padding:3px 0 8px 31px;width:100%}
  #leftNav .nav-bottom>.gn-nav-group>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
  #fallbackReader .fb-left-panel .fb-publisher-footer{margin:0!important;padding:0!important;border:0!important}
@@ -393,4 +393,17 @@
   .gn-visuals-panel .gn-visual-marker {
     width: 40px !important;
   }
+}
+
+/* Home and contents navigation; leave Visuals/reading typography unchanged. */
+@media screen {
+ #leftNav .primary-nav>.gn-nav-section-label{margin:14px 12px 4px;padding:0;color:var(--muted);font:700 10px/1.5 var(--sans);letter-spacing:.075em}
+ #leftNav .primary-nav>.nav-item[data-route="applications"],#leftNav .primary-nav>.nav-item[data-route="bookmarks"]{margin-top:0}
+ #leftNav #downloadsMenu .gn-pdf-editions-label,#leftNav #downloadsMenu .gn-offline-bundle-status{box-sizing:border-box;padding-inline-start:9px}
+ #leftNav #downloadsMenu .gn-offline-bundle-link{box-sizing:border-box;padding-inline:9px!important;max-width:100%;min-width:0;overflow-wrap:anywhere}
+ #leftNav #downloadsMenu .gn-pdf-copy{min-width:0}
+ .gnamma-home .home-purpose{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}
+ .gnamma-home .home-purpose h3{margin-bottom:7px}
+ .gnamma-home .home-purpose p{margin:0}
+ #fallbackReader .fb-purpose{max-width:780px;line-height:1.7;color:var(--text-soft)}
 }
