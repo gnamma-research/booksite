@@ -138,6 +138,13 @@ const file='daruri.pdf';
   // The existing A4 builder must also keep personal notes opt-in and printable.
   await page.goto(host+'/daruri/index.html#editions',{waitUntil:'networkidle'});
   await page.locator('.gn-editions').waitFor({timeout:30000});
+  // Editions now uses tabs and starts with advanced Custom Print collapsed.
+  // Explicitly open Reading's optional configurator before exercising its A4
+  // builder; preserve the original user-facing collapsed default.
+  const readingDisclosure=page.locator('#gn-ed-reading > .gn-ed-reading-custom');
+  if(await readingDisclosure.count() && !(await readingDisclosure.getAttribute('open'))){
+    await readingDisclosure.locator(':scope > summary').click();
+  }
   const reading=page.locator('[data-ep-tier=reading]');
   assert.equal(await reading.locator('select[data-ep-control=personal]').inputValue(),'none');
   await reading.locator('[data-ep-action=prepare]').click();

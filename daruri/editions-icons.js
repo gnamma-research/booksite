@@ -26,24 +26,95 @@
     range:'<path d="M8 4H5v16h3M16 4h3v16h-3M10 12h4"/>',
     arabic:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 12c2 3 6 2 7-2M10 8h.1M14 7h.1"/>',
     marked:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 13c2 3 6 2 7-2M9 7l2-2M15 7l2-2"/>',
-    page:'<path d="M6 2h9l4 4v16H6zM15 2v5h4M9 11h7M9 15h7"/>'
+    page:'<path d="M6 2h9l4 4v16H6zM15 2v5h4M9 11h7M9 15h7"/>',
+    en:'<rect x="2" y="3" width="20" height="18" rx="2"/><text x="12" y="15" text-anchor="middle" fill="currentColor" stroke="none" font-family="system-ui" font-size="9" font-weight="700">EN</text>',
+    ar:'<rect x="2" y="3" width="20" height="18" rx="2"/><text x="12" y="15" text-anchor="middle" fill="currentColor" stroke="none" font-family="system-ui" font-size="9" font-weight="700">AR</text>',
+    bilingual:'<path d="M12 3v18M2.5 3h19v18h-19z"/><text x="7" y="13" text-anchor="middle" fill="currentColor" stroke="none" font-family="system-ui" font-size="6.5" font-weight="700">EN</text><text x="17" y="13" text-anchor="middle" fill="currentColor" stroke="none" font-family="system-ui" font-size="6.5" font-weight="700">AR</text>',
+    essential:'<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M8 9h8"/>',
+    study:'<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h8"/>',
+    subtle:'<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M8 10h8"/>',
+    print:'<path d="M6 8V3h12v5M6 17H4V9h16v8h-2M7 14h10v7H7z"/>'
   };
 
   function icon(key, value) {
     let shape='book';
-    if(key==='language') shape=value==='bilingual'?'book':value==='english'?'text':value==='arabic-vowelled'?'marked':'arabic';
+    if(key==='language') shape=value==='bilingual'?'bilingual':value==='english'?'en':value==='arabic-vowelled'?'marked':'ar';
     else if(key==='columns') shape=value==='parallel'||value==='2'?'columns':value==='stacked'?'stacked':'single';
     else if(key==='density') shape=value==='comfortable'?'comfortable':value==='compact'?'compact':'wide';
-    else if(key==='notes') shape=value==='none'?'noNotes':'notes';
+    else if(key==='notes') shape=value==='none'?'noNotes':value==='essential'?'essential':'study';
     else if(key==='personal') shape=value==='none'?'noNotes':value==='notes'?'pen':'bookmark';
     else if(key==='scope') shape=value==='full'?'book':value==='part'?'chapter':value==='lesson'?'list':'range';
     else if(key==='part') shape='chapter';
     else if(key==='lesson') shape='book';
     else if(key==='editorial') shape=value==='on'||value==='true'?'plus':'none';
+    else if(key==='vowels') shape=value==='on'||value==='true'?'marked':'ar';
     else shape='page';
     return '<svg class="gn-ed-choice-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+icons[shape]+'</svg>';
   }
 
+  const fieldGlyphs={
+    language:'bilingual',columns:'columns',density:'sliders',notes:'notes',
+    personal:'bookmark',scope:'range',part:'chapter',lesson:'list',
+    editorial:'plus',vowels:'marked'
+  };
+  function marker(key) {
+    const el=document.createElement('span');
+    el.className='gn-ed-field-marker';
+    el.setAttribute('aria-hidden','true');
+    const path=icons[fieldGlyphs[key]||'page'];
+    el.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+path+'</svg>';
+    return el;
+  }
+  function show(kind,value,detail='') {
+    window.GnammaEditions.showInfo?.(kind,value,detail);
+  }
+  const shortNames={language:'Language',editorial:'Editorial titles',vowels:'Vowel marks',
+    columns:'Layout',density:'Page density',personal:'Reading Desk',
+    scope:'Print selection',notes:'Notes'};
+  function detailFor(element) {
+    const ready=element.closest('[data-ep-published]');
+    if(ready)return ready.dataset.epDescription||'';
+    const custom=element.closest('[data-ep-tier]');
+    if(!custom)return '';
+    const count=custom.querySelector('[data-ep-count]')?.textContent||'';
+    const number=count.match(/^(\d+)/)?.[1]||'';
+    const tier=custom.dataset.epTier;
+    return (tier==='study'?'Study':'Reading')+(number?' · '+number+' sections':'');
+  }
+  function describe(target) {
+    const langButton=target.closest('[data-ep-ready-toggle]');
+    if(langButton && activeRoot?.contains(langButton)){
+      const panel=langButton.closest('[data-ep-published]');
+      const value=panel?.querySelector('[data-ep-ready-lang]')?.selectedOptions?.[0]?.textContent?.trim()||'Language';
+      const key=langButton.dataset.epReadyToggle;
+      show(key==='vowels'?'Arabic vowel marks':'Language',
+        key==='vowels'?(langButton.getAttribute('aria-pressed')==='true'?'Vowelled':'Unvowelled'):value,
+        panel?.dataset.epDescription||'');
+      return;
+    }
+    const option=target.closest('.gn-ed-icon-option');
+    if(option&&activeRoot?.contains(option)){
+      const group=option.closest('.gn-ed-icon-options');
+      const category=shortNames[group?.dataset.epIconKind]||
+        group?.getAttribute('aria-label')||'Edition option';
+      const label=option.getAttribute('aria-label')||'Option';
+      show(category,label,detailFor(option));
+      return;
+    }
+    const link=target.closest('[data-ep-info-kind], [data-ep-ready-open], [data-ep-ready-download], .gn-ed-actions button');
+    if(link&&activeRoot?.contains(link)){
+      const label=link.dataset.epInfoLabel||link.getAttribute('aria-label')||'Edition';
+      const kind=link.dataset.epInfoKind||
+        (link.matches('.gn-ed-actions button')?'Printout':'PDF');
+      show(kind,label,link.dataset.epTabDetail||detailFor(link));
+      return;
+    }
+    const native=target.closest('select[data-ep-iconified="native"]');
+    if(native&&activeRoot?.contains(native)){
+      const heading=native.closest('.gn-ed-field')?.querySelector('.gn-ed-field-name')?.textContent||'Selection';
+      show(heading,native.selectedOptions[0]?.textContent||'', '');
+    }
+  }
   let observer=null, activeRoot=null, changing=false;
 
   function kindOf(select) {
@@ -52,7 +123,17 @@
   }
 
   function upgrade(select) {
-    if(select.dataset.epIconified === '1') return;
+    if(select.dataset.epIconified) return;
+    // A five-part selector and 28-lesson course list are navigation data, not
+    // toolbar choices. Keep the accessible native picker for longer lists.
+    const key=kindOf(select);
+    const options=Array.from(select.options);
+    if(!options.length)return;
+    if((key==='part'||key==='lesson') && options.length>4){
+      select.dataset.epIconified='native';
+      select.closest('.gn-ed-field')?.insertBefore(marker(key),select);
+      return;
+    }
     const originalField=select.closest('label.gn-ed-field');
     if(originalField) {
       const replacement=document.createElement('div');
@@ -62,9 +143,6 @@
     }
     const wrapper=select.closest('.gn-ed-field') || select.parentElement;
     if(!wrapper) return;
-    const key=kindOf(select);
-    const options=Array.from(select.options);
-    if(!options.length) return;
     const heading=wrapper.querySelector('span')?.textContent?.trim() ||
       (key==='editorial'?'Editorial section titles':key==='language'?'Language':'Options');
     const group=document.createElement('div');
@@ -80,13 +158,12 @@
       button.className='gn-ed-icon-option';
       button.dataset.epIconValue=option.value;
       button.dataset.epIconIndex=String(Array.from(select.options).indexOf(option));
-      const span=document.createElement('span');span.className='gn-ed-icon-label';
-      span.textContent=option.textContent.trim();
+      button.setAttribute('aria-label',option.textContent.trim());
       button.innerHTML=icon(key,option.value);
-      button.append(span);
       group.append(button);
     }
     select.insertAdjacentElement('afterend',group);
+    wrapper.insertBefore(marker(key),group);
     select.dataset.epIconified='1';
     select.classList.add('gn-ed-native-select');
     select.tabIndex=-1;
@@ -119,14 +196,11 @@
       button.setAttribute('role','radio');
       button.className='gn-ed-icon-option';
       button.dataset.epIconValue=value;
-      const span=document.createElement('span');
-      span.className='gn-ed-icon-label';
-      span.textContent=name;
+      button.setAttribute('aria-label',name);
       button.innerHTML=icon(key,value);
-      button.append(span);
       group.append(button);
     }
-    field.append(group);
+    field.append(marker(key),group);
     input.dataset.epIconified='1';
     input.classList.add('gn-ed-native-select');
     input.tabIndex=-1;
@@ -175,13 +249,18 @@
 
   function onClick(event) {
     const button=event.target.closest('.gn-ed-icon-option');
-    if(!button || !activeRoot.contains(button))return;
+    if(!button){
+      const clicked=event.target.closest('[data-ep-info-kind], [data-ep-ready-open], [data-ep-ready-download], .gn-ed-actions button');
+      if(clicked&&activeRoot.contains(clicked))describe(clicked);
+      return;
+    }
+    if(!activeRoot.contains(button))return;
     const group=button.closest('.gn-ed-icon-options');
     const toggle=group?.__originalToggle;
     if(toggle) {
       const next=button.dataset.epIconValue === 'on';
       if(toggle.checked!==next){toggle.checked=next;toggle.dispatchEvent(new Event('change',{bubbles:true}));}
-      update();button.focus();return;
+      update();describe(button);button.focus();return;
     }
     const select=group?.__originalSelect;
     if(!select || button.disabled)return;
@@ -190,6 +269,7 @@
       select.dispatchEvent(new Event('change',{bubbles:true}));
     }
     update();
+    describe(button);
     button.focus();
   }
 
@@ -214,8 +294,14 @@
       root.addEventListener('click',onClick);
       root.addEventListener('keydown',onKey);
       root.addEventListener('change',()=>update());
+      root.addEventListener('focusin',event=>describe(event.target));
+      root.addEventListener('mouseover',event=>{
+        const target=event.target.closest('.gn-ed-icon-option, [data-ep-info-kind], [data-ep-ready-open], [data-ep-ready-download], .gn-ed-actions button, select[data-ep-iconified="native"]');
+        if(target&&!target.contains(event.relatedTarget))describe(target);
+      });
       root.dataset.epIconBound='1';
     }
+    root.querySelector?.('.gn-editions')?.classList.add('gn-ed-icon-ready');
     update();
     if(typeof MutationObserver==='function') {
       observer=new MutationObserver(()=>update());
@@ -229,5 +315,6 @@
     enhance(args[0]);
     return value;
   };
+  window.GnammaEditions.syncIcons=update;
   window.GnammaEditions.__iconEnhanced=true;
 })();

@@ -85,7 +85,9 @@ def finalize(source: Path, target: Path, source_sections: list, tier: str,
                 page.insert_link({'kind': fitz.LINK_GOTO, 'from': rect,
                                   'page': positions[number] - 1})
                 clicked.append(number)
-    label = {'bilingual': 'Bilingual', 'english': 'English', 'arabic': 'Arabic',
+    label = {'bilingual': 'Bilingual (vowelled Arabic)',
+             'bilingual-unvowelled': 'Bilingual (unvowelled Arabic)',
+             'english': 'English', 'arabic': 'Arabic',
              'arabic-vowelled': 'Arabic (fully vowelled)'}[language]
     title = (f'Al-Ḍarūrī · {label} · '
              f'{"Reading & Printing" if tier == "reading" else "Study"} · '
