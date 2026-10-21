@@ -190,10 +190,12 @@ function assertBodyAndLinks(element, note) {
   const expectedBody = PRESENTATION_ONLY_BODY[note.id] || note.text;
   assert.equal(body.textContent, expectedBody, 'Correct canonical body or display-only disambiguation: ' + note.id);
   if (PRESENTATION_ONLY_AUTHOR[note.id]) {
-    const author = element.querySelector('bdi.gn-ibn-rushd-words');
+    const author = element.querySelector('span.gn-ibn-rushd-words');
     assert.equal(author?.textContent, PRESENTATION_ONLY_AUTHOR[note.id], 'Ibn Rushd uses ordinary typographic quotes');
-    assert.equal(author?.getAttribute('dir'), 'rtl', 'Arabic authorial expression is bidi isolated');
-    assert.equal(author?.getAttribute('lang'), 'ar');
+    assert.equal(author?.getAttribute('dir'), 'ltr', 'Ordinary paired quotation marks retain their visual order');
+    assert.equal(author?.querySelector('bdi')?.getAttribute('dir'), 'rtl', 'Arabic authorial text is bidi isolated');
+    assert.equal(author?.querySelector('bdi')?.getAttribute('lang'), 'ar');
+    assert.equal(author?.style.whiteSpace, 'nowrap', 'Quotation marks stay paired on narrow mobile screens');
     assert.ok(!body.textContent.includes(PRESENTATION_ONLY_QURAN[note.id]), 'Qurʾānic verse must not appear redundantly in ordinary parentheses');
     assert.ok(!body.textContent.includes('«'), 'Do not use ambiguous guillemets for Ibn Rushd');
     const figure = element.closest('.gn-note-entry')?.querySelector('.gn-verse-source-excerpt');
