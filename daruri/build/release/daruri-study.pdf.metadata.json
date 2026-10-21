@@ -2,9 +2,9 @@
   "edition": "study",
   "filename": "daruri-study.pdf",
   "pages": 131,
-  "bytes": 1512772,
-  "sha256": "7d8c105574f9da5ee80e70e2c6802110a11d486033cd1cbea60f704da7b3a813",
-  "links": 1869,
+  "bytes": 1515535,
+  "sha256": "67cb2a13eda2a42c51efb3afb7f875a7d3e38fde2b6616616cf0e423b53185c1",
+  "links": 1879,
   "bookmarks": 319,
   "section_pages": {
     "1": 8,
@@ -318,15 +318,35 @@
       "x": 43.937007874015755,
       "y": 86.18983852116142
     },
+    "qcall--QUR-R001-Q049--0--en": {
+      "page": 8,
+      "x": 145.23315045214076,
+      "y": 105.76392934147393
+    },
+    "qcall--QUR-R001-Q050--0--en": {
+      "page": 8,
+      "x": 293.35888287401576,
+      "y": 138.09377699772392
+    },
     "call-BA15-I01": {
       "page": 8,
-      "x": 215.66576763964073,
+      "x": 219.11693951464073,
       "y": 342.01770082584915
     },
     "segment-1-0-vocalized": {
       "page": 8,
       "x": 312.26102362204733,
       "y": 86.18983852116142
+    },
+    "qcall--QUR-R001-Q049--0--vocalized": {
+      "page": 8,
+      "x": 428.03651805487215,
+      "y": 92.45547816959892
+    },
+    "qcall--QUR-R001-Q050--0--vocalized": {
+      "page": 8,
+      "x": 317.59462352362215,
+      "y": 115.55547816959893
     },
     "R2": {
       "page": 8,
@@ -352,6 +372,16 @@
       "page": 8,
       "x": 312.26102362204733,
       "y": 382.7566178795523
+    },
+    "QUR-R001-Q049": {
+      "page": 8,
+      "x": 43.937007874015755,
+      "y": 691.8831073911173
+    },
+    "QUR-R001-Q050": {
+      "page": 8,
+      "x": 43.937007874015755,
+      "y": 716.2825702817422
     },
     "BA15-I01": {
       "page": 8,
@@ -1685,7 +1715,7 @@
     },
     "qcall--QUR-R038-Q001--0--vocalized": {
       "page": 24,
-      "x": 340.54213328924715,
+      "x": 335.17714305487215,
       "y": 627.0119099332553
     },
     "R39": {
@@ -11070,7 +11100,7 @@
     }
   },
   "source_notes": {
-    "quran": 48,
+    "quran": 50,
     "hadith": 0
   },
   "main_text_validation": {
@@ -11088,18 +11118,18 @@
     "missing_section_ids": [],
     "duplicate_ids": {},
     "missing_internal_link_targets": [],
-    "expected_note_count": 116,
-    "rendered_note_count": 116,
+    "expected_note_count": 118,
+    "rendered_note_count": 118,
     "missing_note_ids": [],
     "unexpected_note_ids": [],
     "note_text_mismatches": [],
-    "quran_note_count": 48,
-    "quran_anchor_pair_count": 52,
-    "quran_marker_count": 104,
+    "quran_note_count": 50,
+    "quran_anchor_pair_count": 54,
+    "quran_marker_count": 108,
     "missing_quran_markers": [],
     "unexpected_quran_markers": [],
     "hadith_notes_visible": [],
-    "footnote_count": 116,
+    "footnote_count": 118,
     "footnote_number_conflicts": {},
     "footnote_numbers_contiguous": true,
     "ok": true
@@ -11113,13 +11143,13 @@
   "footnote_pagination": {
     "ok": true,
     "page_count": 131,
-    "calls_checked": 172,
-    "footnote_bodies_checked": 117,
+    "calls_checked": 176,
+    "footnote_bodies_checked": 119,
     "mismatches": [],
     "missing_body_anchors": [],
     "suggested_breaks": []
   },
-  "expanded_note_links": 173,
+  "expanded_note_links": 177,
   "structural_outline": {
     "source_headings": 46,
     "editorial_titles": 258,
@@ -11137,10 +11167,5 @@
       6,
       7
     ]
-  },
-  "source_map_verified": {
-    "pdf_sha256": "7d8c105574f9da5ee80e70e2c6802110a11d486033cd1cbea60f704da7b3a813",
-    "method": "All 259 named PDF section destinations match recorded source pages",
-    "count": 259
   }
 }
