@@ -132,7 +132,8 @@
       const meta=document.createElement('small');meta.textContent=nameOf(r.target)+(isNote(r)?' · Personal note':' · Bookmark');
       text.append(meta);label.append(check,text);root.append(label);
     }
-    $('pe-picker-count').textContent=selectedIds.size+' selected · '+visible.length+' matching / '+eligible.length+' qualifying items';
+    const eligibleSelected=eligible.filter(r=>selectedIds.has(r.id)).length;
+    $('pe-picker-count').textContent=eligibleSelected+' selected · '+visible.length+' matching / '+eligible.length+' qualifying items';
   }
   function progress(label,percent){
     $('pe-progress').hidden=false;$('pe-progress-text').textContent=label;
@@ -284,11 +285,9 @@
   async function loadPdfLib(){
     if(window.PDFLib?.PDFDocument)return;
     // Versions are pinned. Loading libraries does not transmit note content.
-    const origins=[
-      new URL('vendor/pdf-lib-1.17.1.min.js',URL_ROOT).href,
-      'https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js',
-      'https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js'
-    ];
+    // Never execute code fetched from a third party while handling private notes.
+    // The audited pinned library is served alongside the static Gnamma website.
+    const origins=[new URL('vendor/pdf-lib-1.17.1.min.js',URL_ROOT).href];
     for(const url of origins){
       try{
         await new Promise((resolve,reject)=>{
@@ -417,6 +416,16 @@
     $('pe-items').addEventListener('change',e=>{const id=e.target?.dataset?.noteId;if(id){if(e.target.checked)selectedIds.add(id);else selectedIds.delete(id);$('pe-result').hidden=true;info('');syncForm();}});
     $('pe-check-all').addEventListener('click',()=>{available(records,prefs()).forEach(r=>selectedIds.add(r.id));$('pe-result').hidden=true;info('');syncForm();});
     $('pe-check-none').addEventListener('click',()=>{selectedIds.clear();$('pe-result').hidden=true;info('');syncForm();});
+    // Other tabs can update the local Reading Desk; never export stale selections.
+    window.addEventListener('storage',e=>{
+      if(e.key!==STORAGE)return;
+      records=loadDesk();
+      const activeIds=new Set(records.map(r=>r.id));
+      selectedIds=new Set([...selectedIds].filter(id=>activeIds.has(id)));
+      $('pe-result').hidden=true;
+      syncForm();
+      info('Reading Desk data changed in another tab. Check your selected notes before exporting.');
+    });
     $('pe-form').addEventListener('submit',submit);
     $('pe-share').addEventListener('click',sharePdf);
     syncForm();
