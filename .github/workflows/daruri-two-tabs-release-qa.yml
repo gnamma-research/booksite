@@ -6,6 +6,10 @@ on:
     paths:
       - '.github/workflows/daruri-two-tabs-release-qa.yml'
       - 'daruri/editions-selector.js'
+      - 'daruri/download-bundle.js'
+      - 'daruri/index.html'
+      - 'daruri/sw.js'
+      - 'daruri/qa/verify-offline-downloads.cjs'
       - 'daruri/editions-selector.css'
       - 'daruri/personal-export.js'
       - 'daruri/qa/verify-published-selector-browser.mjs'
@@ -30,6 +34,7 @@ jobs:
           node --check daruri/personal-export.js
           node --check daruri/qa/verify-published-selector-browser.mjs
           node daruri/qa/verify-published-selector.cjs
+          node daruri/qa/verify-offline-downloads.cjs
           node daruri/qa/verify-personal-export-safety.js
       - name: Install isolated browser and PDF fixture dependencies
         run: |
@@ -44,7 +49,7 @@ jobs:
             sleep .25
           done
           exit 1
-      - name: Test two tabs, presets, mapped exact editions, and real personal PDF generation
+      - name: Test two download formats, PDFs, browser progress, and private export
         run: node daruri/qa/verify-published-selector-browser.mjs
       - name: Recheck standalone personal PDF generator for compatibility
         run: node daruri/qa/personal-export-browser.cjs

@@ -82,7 +82,8 @@
     icon(key)+'<span>'+esc(label)+'</span></button>';
   function shell(){
     return '<div class="gn-es-wrap">'+
-      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Editions</h1></header>'+
+      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Download a copy</h1><p>Choose a PDF edition below or download the offline HTML reader.</p></header>'+
+       '<h2 class="gn-es-format-title">PDF editions</h2>'+
       '<div class="gn-es-edition-tabs" role="tablist" aria-label="Edition type">'+
         '<button type="button" class="gn-es-tab" id="gn-es-tab-reading" role="tab" aria-controls="gn-es-panel" data-es-nav="reading" aria-selected="true">Reading &amp; Study</button>'+
         '<button type="button" class="gn-es-tab" id="gn-es-tab-reference" role="tab" aria-controls="gn-es-panel" data-es-nav="reference" aria-selected="false">Reference</button>'+

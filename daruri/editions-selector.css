@@ -480,3 +480,8 @@
  .gn-es .gn-es-offline-download{width:100%}
  .gn-es .gn-es-actions .gn-es-action-secondary{width:100%;flex:1 1 100%}
 }
+
+/* Distinguish the PDF edition selector from the separate HTML offline package. */
+.gn-es .gn-es-header{display:block}
+.gn-es .gn-es-header p{margin:7px 0 0;color:var(--es-muted);font-size:13px;line-height:1.55}
+.gn-es .gn-es-format-title{font:600 17px/1.4 var(--serif,Georgia,serif);margin:15px 4px 10px;color:var(--es-ink)}

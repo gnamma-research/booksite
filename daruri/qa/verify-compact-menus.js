@@ -59,29 +59,35 @@ const withinClosedDetails=(node,until)=>{for(let p=node.parent;p&&p!==until;p=p.
 test('eight distinct primary destinations start with Home',()=>{
  const nav=byId('leftNav').find(node=>node.hasClass('primary-nav'));
  const items=nav.children.filter(node=>Object.hasOwn(node.attrs,'data-route'));
- assert.deepEqual(items.map(node=>node.attrs['data-route']),['home','reader','contents','study','applications','index','glossary','bookmarks']);
- const labels=['Home','Read the text','Contents','Study guide','Bidāya applications','Subject index','Dictionary','Saved passages'];
+ assert.deepEqual(items.map(node=>node.attrs['data-route']),['home','reader','contents','study','editions','glossary','index','applications','bookmarks']);
+ const labels=['Home','Read the text','Contents','Study guide','Downloads','Dictionary','Subject index','Bidāya applications','Reading Desk'];
  items.forEach((node,i)=>{assert.equal(node.tag,'button');assert.equal(node.attrs.type,'button');assert.ok(node.text().startsWith(labels[i]));assert.ok(node.hasClass('nav-item'));assert.ok(!node.hasClass('primary'));});
- assert.deepEqual(items.map(node=>node.find(child=>child.tag==='use')?.attrs.href),['#i-home','#i-book','#i-toc','#i-study','#i-balance','#i-subject','#i-dictionary','#i-library']);
+ assert.deepEqual(items.map(node=>node.find(child=>child.tag==='use')?.attrs.href),['#i-home','#i-book','#i-toc','#i-study','#i-download','#i-dictionary','#i-subject','#i-balance','#i-library']);
  assert.equal(items[0].attrs['data-route'],'home');
  assert.ok(!byId('leftNav').find(node=>node.attrs['data-route']==='about'));
 });
-test('quick navigation and downloads are closed native disclosures with real links',()=>{
- for(const [id,title]of [['jumpToPartMenu','Jump to part'],['downloadsMenu','Downloads'],['fb-jump-to-part','Jump to part'],['fb-downloads-menu','Downloads']]){
-  const node=byId(id);assert.equal(node.tag,'details');assert.ok(!Object.hasOwn(node.attrs,'open'));
-  const summaries=node.children.filter(child=>child.tag==='summary');assert.equal(summaries.length,1);assert.ok(summaries[0].text().startsWith(title));
- }
- assert.equal(byId('quickParts').parent.attrs.id,'jumpToPartMenu');
- for(const id of ['downloadsMenu','fb-downloads-menu']){
-  const node=byId(id),links=descendants(node,item=>item.tag==='a'&&Object.hasOwn(item.attrs,'data-pdf-edition'));
-  assert.deepEqual(links.map(link=>link.attrs['data-pdf-edition']).sort(),['arabic','english','reference','study','vowelled']);
-  links.forEach(link=>{assert.match(link.attrs.href,/^daruri(?:-study|-english|-arabic|-arabic-vowelled)?\.pdf(?:\?|$)/);assert.ok(link.attrs['aria-label']);});
-  assert.ok(node.find(item=>item.tag==='a'&&Object.hasOwn(item.attrs,'data-daruri-bundle')));
- }
- const staticMarkup=html.slice(0,appStart).replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,'').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,'');
- const staticIds=new Set([...staticMarkup.matchAll(/\bid=["']([^"']+)["']/g)].map(match=>decode(match[1])));
- const nav=fallback.find(node=>node.hasClass('fb-left-panel'));
- descendants(nav,node=>node.tag==='a'&&node.attrs.href?.startsWith('#')).forEach(link=>assert.ok(staticIds.has(decodeURIComponent(link.attrs.href.slice(1))),'Existing native destination '+link.attrs.href));
+test('downloads have one nav destination, and quick-jump retains its native disclosure',()=>{
+  for(const id of ['jumpToPartMenu','fb-jump-to-part']){
+    const node=byId(id);
+    assert.equal(node.tag,'details');
+    assert.ok(!Object.hasOwn(node.attrs,'open'));
+    assert.ok(node.children.some(child=>child.tag==='summary'));
+  }
+  assert.equal(byId('quickParts').parent.attrs.id,'jumpToPartMenu');
+  assert.ok(!nodes.some(n=>['downloadsMenu','fb-downloads-menu'].includes(n.attrs.id)),
+    'Duplicate sidebar PDF menus must be removed');
+  const nav=byId('leftNav').find(node=>node.hasClass('primary-nav'));
+  const download=nav.find(node=>node.attrs['data-route']==='editions');
+  assert.equal(download?.text(),'Downloads');
+  const offlineNav=fallback.find(node=>node.hasClass('fb-left-panel'));
+  assert.ok(offlineNav.find(node=>node.tag==='a'&&node.attrs.href==='#editions'));
+  const staticMarkup=html.slice(0,appStart)
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,'')
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,'');
+  const staticIds=new Set([...staticMarkup.matchAll(/\bid=["']([^"']+)["']/g)].map(match=>decode(match[1])));
+  descendants(offlineNav,node=>node.tag==='a'&&node.attrs.href?.startsWith('#'))
+    .forEach(link=>assert.ok(staticIds.has(decodeURIComponent(link.attrs.href.slice(1))),
+      'Existing native destination '+link.attrs.href));
 });
 test('enhanced Visuals controls are direct while hidden selects preserve state contracts',()=>{
  const definitions=[['pageStyleSelect',['quiet','book','structured']],['fb-page-style-select',['quiet','book','structured']],['arabicFontChoice',['amiri','scheherazade','noto']],['fb-arabic-font-choice',['amiri','scheherazade','noto']],['englishFontChoice',['original','source-serif','literata']],['fb-english-font-choice',['original','source-serif','literata']]];
