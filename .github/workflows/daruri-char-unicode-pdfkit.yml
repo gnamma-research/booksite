@@ -1,0 +1,31 @@
+name: Daruri character Unicode native PDFKit experiment
+on:
+  push:
+    branches: [experiment/daruri-actualtext-source-20261022]
+    paths:
+      - 'daruri/qa/experimental_original_char_unicode.py'
+      - '.github/workflows/daruri-char-unicode-pdfkit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  apple-pdfkit:
+    runs-on: macos-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: Build temporary original-Arabic character-level candidate
+        run: |
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/editions/reading/daruri-reading-arabic-titles-off.pdf \
+            --map daruri/editions/maps/daruri-reading-arabic-titles-off.pdf.json \
+            --output /tmp/gnamma-arabic-char-source-CANDIDATE.pdf
+      - name: Native Apple PDFKit source phrase search
+        run: |
+          swift daruri/qa/experimental_original_pdfkit.swift \
+            daruri/editions/reading/daruri-reading-arabic-titles-off.pdf \
+            /tmp/gnamma-arabic-char-source-CANDIDATE.pdf
