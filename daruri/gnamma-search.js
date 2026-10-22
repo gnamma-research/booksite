@@ -1008,6 +1008,12 @@ function renderResultsOnly(){
   ui.results=ui.results.filter(r=>r.privacy==='private');
   ui.resultCount=ui.results.length;
  }
+ // Research explanation and syntax errors are separate from the search input.
+ // Replacing only this panel retains every keystroke and selection in #gns-query.
+ if(ui.mode==='scholarly'){
+  const panel=$('.gns-scholarly',host);
+  if(panel)panel.outerHTML=scholarlyControls();
+ }
  const pane=$('#gns-listpane',host);
  if(pane){pane.innerHTML=resultControls()+renderResultList();pane.scrollTop=0;}
  const aside=$('.gns-sidebar',host);
