@@ -2,7 +2,7 @@
   "release": "20261022-A4-Arabic-Pango-precise-word-maps",
   "status": "verified",
   "source_manifest_sha256": "58d8bca84ffc786671d65700d27558ed3c2ef0bacee9a35f34105153db3bedb2",
-  "note": "All twelve checksum-bound base maps preserved. Four Arabic-only editions have 414 source-linked Pango segments and pixel-identical published pages. Arabic bilingual/Study precision is not yet verified.",
+  "note": "All twelve checksum-bound base maps preserved. Eight Arabic-bearing Reading editions have 414 source-linked Pango segments and pixel-identical published pages. Study PDF Arabic precision is not yet verified.",
   "files": [
     {
       "file": "reading/daruri-reading-bilingual-titles-off.pdf",
@@ -10,7 +10,7 @@
       "pages": 76,
       "map_file": "maps/daruri-reading-bilingual-titles-off.pdf.json",
       "metadata_file": "maps/daruri-reading-bilingual-titles-off.pdf.metadata.json",
-      "map_sha256": "2f802868dad756f0047eb1b2d08e2184c2aba66188609121816fd0db28d6a1a8",
+      "map_sha256": "cbea49d5245ddbeef77c252e4e0d7cee07b105ed6c171204e207562558084b23",
       "source_base": "reading/daruri-reading-bilingual-titles-off.pdf",
       "base_sha256": "3c5c0c3f033f52103405fa27baa0000346059be38cb7873aba791c142c44ea36",
       "verified_sections": 258,
@@ -22,11 +22,11 @@
           "eligible": 414
         },
         "vocalized": {
-          "matched": 0,
+          "matched": 414,
           "eligible": 414
         }
       },
-      "mapped_segments": 61
+      "mapped_segments": 475
     },
     {
       "file": "reading/daruri-reading-bilingual-titles-on.pdf",
@@ -34,7 +34,7 @@
       "pages": 82,
       "map_file": "maps/daruri-reading-bilingual-titles-on.pdf.json",
       "metadata_file": "maps/daruri-reading-bilingual-titles-on.pdf.metadata.json",
-      "map_sha256": "d120edc09210ff5388b3d5bf74d2e2487cc5cc30d0edc5b4a876ff36306f7cf2",
+      "map_sha256": "e16e7d50d4c9cbf8d6a3389e1ce974d0ad95b190c70cdb670d8f89bebb752418",
       "source_base": "reading/daruri-reading-bilingual-titles-on.pdf",
       "base_sha256": "683b5e208b29f155a3033e1aa98d631d3cbc3688b250883b92ec980e7bb89434",
       "verified_sections": 258,
@@ -46,11 +46,11 @@
           "eligible": 414
         },
         "vocalized": {
-          "matched": 0,
+          "matched": 414,
           "eligible": 414
         }
       },
-      "mapped_segments": 72
+      "mapped_segments": 486
     },
     {
       "file": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
@@ -58,7 +58,7 @@
       "pages": 76,
       "map_file": "maps/daruri-reading-bilingual-unvowelled-titles-off.pdf.json",
       "metadata_file": "maps/daruri-reading-bilingual-unvowelled-titles-off.pdf.metadata.json",
-      "map_sha256": "3bb1dbfefe501d6866a698d1cc901ab8707edad4f99e64a65951d81d2d98bb63",
+      "map_sha256": "093e16608b471a9da4225717940d25b787cbe567ec8989b7c9d621decb57de38",
       "source_base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
       "base_sha256": "dfc94e9a2a54257e65a1aa21463e4f4ae1e7cfa44fa3e99735f58cee7f28b262",
       "verified_sections": 258,
@@ -70,11 +70,11 @@
           "eligible": 414
         },
         "ar": {
-          "matched": 0,
+          "matched": 414,
           "eligible": 414
         }
       },
-      "mapped_segments": 61
+      "mapped_segments": 475
     },
     {
       "file": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
@@ -82,7 +82,7 @@
       "pages": 82,
       "map_file": "maps/daruri-reading-bilingual-unvowelled-titles-on.pdf.json",
       "metadata_file": "maps/daruri-reading-bilingual-unvowelled-titles-on.pdf.metadata.json",
-      "map_sha256": "725079bc97aebabdb72aa380a0f44ae4ee45c011d099d539a912505b56dfa2fb",
+      "map_sha256": "2f787478e903e039951505cc1c97ce106a3f5c169366dde1dde662b039189a81",
       "source_base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
       "base_sha256": "c608f5588aa0015c2258731da3038e65bde8469ffa5b03cf7530b4d183c9d067",
       "verified_sections": 258,
@@ -94,11 +94,11 @@
           "eligible": 414
         },
         "ar": {
-          "matched": 0,
+          "matched": 414,
           "eligible": 414
         }
       },
-      "mapped_segments": 72
+      "mapped_segments": 486
     },
     {
       "file": "reading/daruri-reading-english-titles-off.pdf",
