@@ -123,6 +123,15 @@
   }
   function enhanceLink(link) {
     if (link.dataset.gnSourceIcon === '1' || !validHttp(link)) return;
+    // A text-labelled citation does not need a second boxed arrow next to Q/H.
+    // Keep the original text as a real external link (long-press/copy still work).
+    if (link.closest('.gn-note-entry[data-note-id^="QUR-"], .gn-note-entry[data-note-id^="HAD-"]') &&
+        link.closest('.source-note-links')) {
+      link.dataset.gnSourceIcon='1';
+      link.classList.add('gn-source-plain-link');
+      link.target='_blank'; link.rel='noopener noreferrer';
+      return;
+    }
     const existing = link.textContent.trim();
     let label = existing;
     try {
