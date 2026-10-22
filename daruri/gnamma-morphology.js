@@ -6,7 +6,7 @@
 (function(global){
 'use strict';
 const SCHEMA='gnamma-morph-v1',VERSION='20261022-morph1';
-const data=new Map(),pending=new Map(),listeners=new Set();
+const data=new Map(),pending=new Map(),errors=new Map(),listeners=new Set();
 let lexicon=null,lexiconPromise=null,notice='';
 const AR=/[\u0621-\u064a]/u;
 function fold(s){
@@ -102,16 +102,17 @@ function buildIndex(raw){
 }
 async function ensure(work){
  if(data.has(work))return data.get(work);
+ if(errors.has(work))throw Error(errors.get(work));
  if(pending.has(work))return pending.get(work);
  const path=work==='mustasfa'?'morph-mustasfa-v1.json':'morph-daruri-v1.json';
  const promise=fetch(path+'?v='+VERSION,{credentials:'omit'})
   .then(r=>{if(!r.ok)throw Error('morphology index HTTP '+r.status);return r.json()})
   .then(raw=>{if(raw.work!==work)throw Error('Morphology index work mismatch');
-    const index=buildIndex(raw);data.set(work,index);pending.delete(work);alert();return index;
-  }).catch(e=>{pending.delete(work);notice=e.message;alert();throw e});
+    const index=buildIndex(raw);data.set(work,index);pending.delete(work);errors.delete(work);alert();return index;
+  }).catch(e=>{pending.delete(work);errors.set(work,e.message);notice=e.message;alert();throw e});
  pending.set(work,promise);return promise;
 }
-function status(work){return {loaded:data.has(work),loading:pending.has(work),message:notice,
+function status(work){return {loaded:data.has(work),loading:pending.has(work),failed:errors.get(work)||'',message:notice,
  provenance:data.get(work)?.provenance||'',coverage:data.get(work)?.coverage||''}}
 function lookup(token,work,opts={}){
  const index=data.get(work);
@@ -149,10 +150,14 @@ function disambiguate(word,neighbours=[],work,id=null,position=null){
  return {best:null,alternatives:[],certainty:'not-analysed'};
 }
 function find(query,mode,corpus){
- if(!lexicon)return {ready:false,items:[],message:'Loading root and lemma register'};
+ if(!lexicon)return {ready:!!notice,items:[],message:notice?'Morphology dictionary unavailable: '+notice:'Loading root and lemma register'};
  const q=candidates(query,lexicon),kind=mode==='morph-root'?'root':'lemma';
  const workSet=new Set(corpus.filter(x=>x.work==='mustasfa'||x.work==='daruri').map(x=>x.work));
- for(const work of workSet)if(!data.has(work)){ensure(work).catch(()=>{});return {ready:false,items:[],message:'Loading morphology for '+work}};
+ for(const work of workSet)if(!data.has(work)){
+  if(errors.has(work))return {ready:true,items:[],message:'Morphology for '+work+' is unavailable: '+errors.get(work)};
+  ensure(work).catch(()=>{});
+  return {ready:false,items:[],message:'Loading morphology for '+work};
+ }
  const keys=kind==='root'?[q.root,...q.lemmas.map(x=>x.rootNorm)].filter(Boolean):
   q.lemmas.map(x=>x.normalized);
  if(kind==='lemma'&&!keys.length&&q.hasArabic)keys.push(q.raw);
