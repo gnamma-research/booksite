@@ -58,6 +58,7 @@ async function loadLexicon(){
    if(obj.schema!=='gnamma-morph-lexicon-v1'||!Array.isArray(obj.entries))throw Error('Invalid morphology lexicon');
    lexicon=obj.entries.map((x,i)=>({...x,index:i,normalized:fold(x.lemma),rootNorm:fold(x.root),
     romanKeys:(x.roman||[]).map(roman),formKeys:(x.forms||[]).map(fold)}));
+   alert();
    return lexicon;
   }).catch(e=>{lexiconPromise=null;notice=e.message;alert();throw e});
  return lexiconPromise;
