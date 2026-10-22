@@ -66,8 +66,17 @@ function noteKind(note){
  if(note.source_type==='quran'||note.kind==='quran-source')return 'Qurʾān source';
  if(note.source_type==='hadith'||note.kind==='hadith-source')return 'Hadith source';
  if(note.source_type==='application')return 'Bidāya application source';
- if(/variant|critical|textual/i.test(note.kind||''))return 'Critical/textual note';
- return 'Editorial note';
+ const label={
+  textual:'Textual / variant note',
+  grammar:'Grammar note',
+  translation:'Translation / editor note',
+  scholarship:'Scholarly apparatus note',
+  interpretive:'Interpretive note',
+  lexical:'Lexical note',
+  crux:'Textual crux',
+  quotation:'Quotation/source note'
+ };
+ return label[note.kind]||note.kindLabel||'Edition note (attribution unverified)';
 }
 function currentToken(node,index){
  const text=node?.textContent||'';
@@ -166,7 +175,8 @@ async function openWord(word,anchor,grid,trigger=null){
  const section=locator(),segment=Number(grid?.dataset.segment||0);
  const originalTarget=trigger||anchor;
  const hasSource=!!originalTarget?.closest?.('[data-note-target]');
- const noted=attachedNotes(section,segment,hasSource?originalTarget:null);
+ const noted=attachedNotes(section,segment,
+   anchor?.closest?.('[data-note-target]')?anchor:hasSource?originalTarget:null);
  const highlightType=originalTarget?.closest?.('mark.search-hit')?'Temporary search highlight':
    originalTarget?.closest?.('[data-rd-quote],[data-rd-bookmark]')?'Saved reading annotation':null;
  const privateInfo=readPrivate(section,segment,word);
