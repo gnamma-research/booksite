@@ -249,21 +249,36 @@ def main():
               'English', item.get('native_source_en', {}).get('coverage_fraction'),
               'cross-page notes', item.get('source_notes', {}).get('cross_page_pairs'),
               'integrity issues', len(item['integrity_errors']), flush=True)
+    # Always report observed release blockers, even in non-failing diagnostic mode.
+    # "Diagnostic success" means the instrument ran; it never certifies the PDF.
     blockers = errors.copy()
-    if args.strict:
-        if args.note_policy == 'undecided':
-            blockers.append('Editorial footnote-placement policy is undecided')
-        for item in results:
-            for language in ('ar', 'en'):
-                coverage = item.get(f'native_source_{language}')
-                if coverage and (coverage['coverage_fraction'] or 0) < args.min_source_coverage:
-                    blockers.append(f"{Path(item['file']).name}: {language} source search below minimum")
-            if args.note_policy == 'same-page' and item.get('source_notes', {}).get('cross_page_pairs', 0):
-                blockers.append(f"{Path(item['file']).name}: source note crosses a page")
-            if args.note_policy == 'adjacent' and any(
-                abs(int(delta)) > 1 for delta in item.get('source_notes', {}).get('page_offsets', {})
-            ):
-                blockers.append(f"{Path(item['file']).name}: note >1 page from call")
+    for item in results:
+        pdf_name = Path(item['file']).name
+        for language in ('ar', 'en'):
+            coverage = item.get(f'native_source_{language}')
+            if coverage and (coverage['coverage_fraction'] or 0) < args.min_source_coverage:
+                blockers.append(
+                    f"{pdf_name}: native {language} multiword source search "
+                    f"{coverage['any_phrase_matched']}/{coverage['segments_tested']}, "
+                    f"below {args.min_source_coverage:.0%}"
+                )
+        notes = item.get('source_notes', {})
+        # main_text.py treats Study notes as real page-bottom footnotes, with
+        # validate_pagination(); scholarly notes are deliberately section-end
+        # apparatus, and may continue on the following page.
+        if ('study' in pdf_name and notes.get('cross_page_pairs', 0)):
+            blockers.append(f"{pdf_name}: true Study footnotes split across pages")
+        if pdf_name == 'daruri.pdf' and args.note_policy == 'same-page' and notes.get('cross_page_pairs', 0):
+            blockers.append('Scholarly section apparatus does not meet a same-page-only note policy')
+        if pdf_name == 'daruri.pdf' and args.note_policy == 'adjacent' and any(
+            abs(int(delta)) > 1 for delta in notes.get('page_offsets', {})
+        ):
+            blockers.append('Scholarly apparatus target >1 page away')
+    if args.strict and args.note_policy == 'undecided':
+        blockers.append(
+            'The editorial note policy must be explicitly approved '
+            '(Study = true footnotes; scholarly = section apparatus)'
+        )
     report = {'version': '20261022-native-source-footnotes-v1',
               'strict': args.strict, 'note_policy': args.note_policy,
               'results': results, 'blockers': blockers,
@@ -284,8 +299,9 @@ def main():
         lines.append(f"| {Path(item['file']).name} | {fraction('ar')} | {fraction('en')} | "
                      f"{item.get('source_notes', {}).get('cross_page_pairs', '—')} | "
                      f"{len(item['integrity_errors'])} |")
-    lines += ['', 'Off-page note calls may be intentional section apparatus: do not treat',
-              'them as valid footnotes without an explicit editorial decision.', '',
+    lines += ['', 'Study edition: true page-bottom footnotes must remain with their calls.',
+              'Scholarly Reference: notes are explicitly section apparatus, not page-bottom footnotes;',
+              'adjacent-page placement is permissible if confirmed and labelled.', '',
               '## Release blockers', '']
     lines += [f'- {x}' for x in blockers[:120]] or ['- None detected by this diagnostic.']
     lines += ['', 'Independent mobile, Acrobat, PDF.js, footnote visual and full apparatus',
