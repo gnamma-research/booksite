@@ -4529,7 +4529,7 @@ function updateSearchResults(){const q=$('#globalSearch').value.trim(),out=$('#s
 function onGlobalClick(e){const el=e.target.closest('button,a');if(!el)return;
  if(el.hasAttribute('data-return-reading')){e.preventDefault();returnToReading();return;}
  if(el.hasAttribute('data-close-definition')){e.preventDefault();closeOverlay('infoOverlay');return;}
- if(el.dataset.noteTarget){e.preventDefault();jumpToNote(el.dataset.noteTarget);return}
+ if(el.dataset.noteTarget){e.preventDefault();jumpToNote(el.dataset.noteTarget,el);return}
  if(el.dataset.noteLocation){e.preventDefault();jumpToNoteLocation(el.dataset.noteLocation);return}
  if(el.dataset.route){e.preventDefault();if(el.dataset.route==='index'){state.indexQuery='';state.indexFocus=null;state.indexFocusPending=false;state.indexLimit=72;}navigate(el.dataset.route);return}
  if(el.dataset.section){e.preventDefault();if(el.dataset.searchQuery){state.searchHit={section:String(el.dataset.section),query:el.dataset.searchQuery};if(state.lang==='english'&&/[\u0600-\u06ff]/.test(el.dataset.searchQuery))state.lang='parallel';if(state.lang==='arabic'&&!/[\u0600-\u06ff]/.test(el.dataset.searchQuery))state.lang='parallel'}else state.searchHit=null;goSection(el.dataset.section);return}
@@ -4977,8 +4977,17 @@ function formatNoteText(text) {
   }
   return result+esc(text.slice(pos));
 }
-function jumpToNote(id) {
+function jumpToNote(id,opener=document.activeElement) {
   const note=notes.get(id);if(!note)return;closeOverlays();
+  // An inline Qurʾānic note must use exactly the same card as the section-end
+  // Notes window, including verified ﴿…﴾ excerpts, qualification and source links.
+  // Do not change the legacy detail window for other editorial note types.
+  if(note.source_type==='quran'){
+    gnShowLayer('Qurʾānic note · '+sectionRef(note.n),
+      '<article class="gn-layer-note gn-unified-notes">'+gnNotesCardHTML([note])+'</article>',
+      'notes',opener||document.querySelector('[data-note-target="'+CSS.escape(id)+'"]'));
+    return;
+  }
   $('#detailEyebrow').textContent=`${noteKindLabel(note).toUpperCase()} NOTE · ${note.id}`;
   $('#detailContent').innerHTML=`<h2 id="detailTitle">${esc(note.id)} · ${sectionRef(note.n)}</h2>${noteScopeHTML(note)}<p class="note-body">${formatReadingNote(note)}</p><div class="button-row"><button class="action-btn" type="button" data-note-in-section="${esc(id)}">View note in the section</button><button class="action-btn" type="button" data-close-reference>Return to reading</button></div>`;
   showOverlay('infoOverlay');
