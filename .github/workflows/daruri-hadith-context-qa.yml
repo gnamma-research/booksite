@@ -1,9 +1,14 @@
 name: Daruri Hadith source-context integrity
 on:
   push:
-    branches: [master, feature/daruri-hadith-expanded-context-20261022, feature/daruri-full-english-hadith-20261023]
+    branches: [master, feature/daruri-hadith-expanded-context-20261022, feature/daruri-full-english-hadith-20261023, feature/daruri-hadith-quran-note-ux-20261023]
     paths:
       - 'daruri/hadith-context-*'
+      - 'daruri/hadith-anchor-data.js'
+      - 'daruri/hadith-note-polish.*'
+      - 'daruri/hadith-traditional-notes.js'
+      - 'daruri/quran-note-headings.js'
+      - 'daruri/index.html'
       - 'daruri/HADITH_CONTEXT_SOURCES.md'
       - 'daruri/source-reference-data.js'
       - 'daruri/build/build_source_reference_data.py'
@@ -37,6 +42,8 @@ jobs:
         run: |
           npm install --no-save --no-package-lock jsdom@24
           node daruri/qa/verify-hadith-context.js
+          node daruri/qa/verify-hadith-anchors.cjs
+          node daruri/qa/verify-reader-source-notes.js
       - name: Validate generated source-reference asset
         run: python daruri/build/build_source_reference_data.py --check
       - name: Existing Quran/Hadith note router and context regressions
