@@ -53,6 +53,11 @@ assert.ok(exporter.includes("wordMap=verifiedMap")&&exporter.includes("wordMap=c
 assert.ok(!exporter.includes('fetch("https://'),'Private user data is never sent to external service');
 assert.ok(style.includes('.gn-es .gn-es-preset-options'),'Preset controls styled');
 assert.ok(style.includes('.gn-es .gn-es-picker'),'Inline note picker styled');
+assert.ok(style.includes('top:-7px'),'Vowelled Arabic overbar is raised above, not through, the AR letters');
+assert.ok(style.includes('flex-direction:row;'),'AR remains on the same centred baseline as EN');
+assert.ok(style.includes('.gn-es-ar-form{display:none;}'),'Status caption must not push AR upwards');
+assert.ok(read('editions-icons.css').includes('top:-7px'),'Fallback Editions overbar uses the same clearance');
+assert.ok(read('reading-mode-controls.css').includes('top:-7px'),'Reader overbar uses the same clearance');
 assert.ok(style.includes('.gn-es .gn-es-action{width:100%'),'Symmetrical Open PDF button preserved');
 const baselines=new Map(base.files.map(x=>[x.file,x]));
 const fn=path=>crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex');
