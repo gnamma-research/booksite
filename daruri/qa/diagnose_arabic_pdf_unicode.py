@@ -28,8 +28,17 @@ def fold_ar(value: str) -> str:
     return ''.join(AR.findall(value))
 
 
+def normalized_words(source: str) -> list[str]:
+    # Preserve word boundaries when removing harakat: regex splitting on raw
+    # combining marks would turn a vocalized Arabic *word* into many fragments.
+    value = unicodedata.normalize('NFKC', source).replace('\u0640', '')
+    value = ''.join(c for c in value if not unicodedata.combining(c))
+    value = value.translate(str.maketrans('أإآٱؤئىة', 'ااااوييه'))
+    return AR.findall(value)
+
+
 def phrase_probes(source: str) -> list[str]:
-    words = AR.findall(source)
+    words = normalized_words(source)
     if len(words) < 4:
         return []
     starts = (0, max(0, len(words) // 2 - 2))
@@ -63,7 +72,7 @@ def to_unicode_metrics(doc, page_numbers):
 def extract_metrics(blob: bytes, expected: str) -> dict:
     with fitz.open(stream=blob, filetype='pdf') as pdf:
         probes = phrase_probes(expected)
-        source_words = AR.findall(expected)
+        source_words = normalized_words(expected)
 
         def scores(sort):
             extracted = '\n'.join(page.get_text('text', sort=sort) for page in pdf)
@@ -101,7 +110,9 @@ def original_pdfs(site, sections):
                 first = anchor['page']
                 following = names.get(f'section-{n+1}', {})
                 last = following.get('page', first)
-                probes = phrase_probes(sections[n-1]['segments'][0]['ar'])
+                authorial = sections[n-1]['segments'][0]
+                source = authorial['ar'] if rel == 'daruri-arabic.pdf' else authorial.get('vocalized', authorial['ar'])
+                probes = phrase_probes(source)
                 pages = [pdf[p] for p in range(first, min(last + 1, len(pdf)))]
                 variants = {}
                 for sort in (False, True):
