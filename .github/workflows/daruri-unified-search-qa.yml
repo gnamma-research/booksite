@@ -1,0 +1,48 @@
+name: Daruri unified search QA
+on:
+  push:
+    paths:
+      - '.github/workflows/daruri-unified-search-qa.yml'
+      - 'daruri/index.html'
+      - 'daruri/sw.js'
+      - 'daruri/gnamma-search.js'
+      - 'daruri/gnamma-search.css'
+      - 'daruri/qa/verify-unified-search.cjs'
+      - 'daruri/build/build_gnamma_search_index.py'
+      - 'daruri/edition-r3-20261020.js'
+      - 'daruri/dictionary-r3-20261020.js'
+      - 'texts/al-ghazali/al-mustasfa/assets/data.js'
+      - 'texts/al-ghazali/al-mustasfa/data/gnamma-search-index.json'
+      - 'arabic/full-arabic-pages.json'
+  pull_request:
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/gnamma-search.js'
+      - 'daruri/gnamma-search.css'
+      - 'daruri/qa/verify-unified-search.cjs'
+      - 'texts/al-ghazali/al-mustasfa/data/gnamma-search-index.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  unified-search-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify reproducible al-Mustasfa search index
+        run: |
+          python3 daruri/build/build_gnamma_search_index.py
+          git diff --exit-code -- texts/al-ghazali/al-mustasfa/data/gnamma-search-index.json
+      - name: Install browser test runner
+        run: |
+          npm install --no-save --no-package-lock playwright@1.63.0
+          npx playwright install --with-deps chromium
+      - name: Run Daruri browser search tests
+        run: node daruri/qa/verify-unified-search.cjs
