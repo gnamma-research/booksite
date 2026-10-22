@@ -30,7 +30,7 @@ assert.ok(sw.includes('editions-selector.js?v='),'PWA caches Editions selector')
 assert.ok(edition.includes("const NAV=['reading','reference']"),'Exactly two top-level tabs');
 for(const required of ['Reading &amp; Study','Reference','data-es-preset="reading"',
   'data-es-preset="study"','data-es-preset="custom"','id="pe-form"',
-  'id="pe-personal"','id="pe-bookmarks"','id="pe-order"',
+  'id="pe-personal"','id="pe-bookmarks"','id="pe-highlights"','id="pe-order"',
   'id="pe-dates"','id="pe-annotations"','id="pe-picker"',
   'id="pe-generate"','id="pe-result"','data-es-action="open"',
   'loadPersonalTools(mounted)','gnamma-personal-export-ready',
@@ -40,6 +40,9 @@ for(const required of ['Reading &amp; Study','Reference','data-es-preset="readin
 }
 assert.ok(!edition.includes('personal-export.html?'),'No external personal-copy wizard required');
 assert.ok(!edition.includes('data-es-nav="study"'),'Study belongs inside Reading & Study');
+assert.ok(!edition.includes('data-es-toggle="vowels"'),'The extra vowel-mark toggle must not reappear');
+assert.ok(edition.includes('Off → Plain → Vowelled'),'Arabic vowel states are controlled by AR alone');
+assert.ok(edition.includes("icon('note')")&&edition.includes("icon('highlight')"),'Personal icons are distinct');
 assert.ok(edition.includes('file===row.source_base'),'Apparatus sources bound to approved bases');
 assert.ok(edition.includes('row.map_coverage===1'),'Verified maps only');
 assert.ok(edition.includes('mapReady'),'Personal export must not substitute a different PDF');
