@@ -5,6 +5,7 @@
 const fs=require('node:fs');
 const path=require('node:path');
 const {pathToFileURL}=require('node:url');
+(async()=>{
 if(process.argv.length<5)throw Error('usage: node experimental_original_pdfjs.cjs file.pdf map.json pdfjs-dist-root');
 const [file,mapPath,root]=process.argv.slice(2);
 const mod=await import(pathToFileURL(path.resolve(root,'node_modules/pdfjs-dist/legacy/build/pdf.mjs')).href);
@@ -36,3 +37,4 @@ const report={engine:'pdfjs-dist',pages:pdf.numPages,segments_probed:total,match
 console.log(JSON.stringify(report,null,2));
 await pdf.destroy();
 if(process.env.GN_STRICT_PDFJS==='1'&&!report.first_phrase_normalized_found)process.exitCode=1;
+})().catch(err=>{console.error(err);process.exitCode=1});
