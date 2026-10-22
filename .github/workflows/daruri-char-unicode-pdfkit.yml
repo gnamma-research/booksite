@@ -4,6 +4,7 @@ on:
     branches: [experiment/daruri-actualtext-source-20261022]
     paths:
       - 'daruri/qa/experimental_original_char_unicode.py'
+      - 'daruri/qa/verify_char_unicode_pdfkit.swift'
       - '.github/workflows/daruri-char-unicode-pdfkit.yml'
   workflow_dispatch:
 permissions:
@@ -29,3 +30,8 @@ jobs:
           swift daruri/qa/experimental_original_pdfkit.swift \
             daruri/editions/reading/daruri-reading-arabic-titles-off.pdf \
             /tmp/gnamma-arabic-char-source-CANDIDATE.pdf
+      - name: Native macOS PDFKit all 414 sources, highlight bounds and copy selection
+        run: |
+          swift daruri/qa/verify_char_unicode_pdfkit.swift \
+            /tmp/gnamma-arabic-char-source-CANDIDATE.pdf \
+            daruri/editions/maps/daruri-reading-arabic-titles-off.pdf.json
