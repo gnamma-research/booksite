@@ -1,0 +1,49 @@
+name: Daruri character-level PDF.js source search experiment
+on:
+  push:
+    branches: [experiment/daruri-actualtext-source-20261022]
+    paths:
+      - 'daruri/qa/experimental_original_char_unicode.py'
+      - '.github/workflows/daruri-char-unicode-pdfjs.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pdfjs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: arabic-reading
+            input: editions/reading/daruri-reading-arabic-titles-off.pdf
+            map: editions/maps/daruri-reading-arabic-titles-off.pdf.json
+          - id: arabic-vowelled-reading
+            input: editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf
+            map: editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json
+          - id: bilingual-unvowelled-reading
+            input: editions/reading/daruri-reading-bilingual-unvowelled-titles-off.pdf
+            map: editions/maps/daruri-reading-bilingual-unvowelled-titles-off.pdf.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - run: npm install --prefix /tmp/gnpdfjs --no-save --no-package-lock pdfjs-dist@5.4.394
+      - name: Generate temporary character-level source semantic PDF
+        run: |
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/${{ matrix.input }} \
+            --map daruri/${{ matrix.map }} \
+            --output /tmp/daruri-${{ matrix.id }}-char-unicode.pdf
+      - name: Diagnose PDF.js true Arabic text extraction, no publication
+        run: |
+          node daruri/qa/experimental_original_pdfjs.cjs \
+            /tmp/daruri-${{ matrix.id }}-char-unicode.pdf \
+            daruri/${{ matrix.map }} \
+            /tmp/gnpdfjs
