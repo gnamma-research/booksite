@@ -1,4 +1,4 @@
-/* Regression: four exact Daruri Arabic Pango maps must locate real Arabic words
+/* Regression: eight exact Daruri Arabic Pango maps must locate real Arabic words
    and remain bound to their approved PDF SHA. */
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
@@ -16,12 +16,13 @@ vm.runInNewContext(src,{window,URL,Intl,Date,Number,String,Array,Map,Set,Math},{
 const {sourceMatch,tidy}=window.GnammaPdfUpgrade;
 const sha=data=>crypto.createHash('sha256').update(data).digest('hex');
 const tests=[];
-for(const row of maps.files.filter(x=>x.file.includes('reading/daruri-reading-arabic'))){
+for(const row of maps.files.filter(x=>x.file.startsWith('reading/')&&
+  /-(arabic|arabic-vowelled|bilingual|bilingual-unvowelled)-titles-(on|off)\.pdf$/.test(x.file))){
   const original=references.get(row.file);
   assert(original,'Source PDF must be approved: '+row.file);
   assert.equal(row.sha256,original.sha256);
   assert.equal(row.word_map_present,true);
-  assert.equal(row.mapped_segments,414);
+  assert.ok(row.mapped_segments>=414);
   assert.equal(sha(fs.readFileSync(path.join(root,'editions',row.file))),original.sha256);
   const buf=fs.readFileSync(path.join(root,'editions',row.map_file));
   assert.equal(sha(buf),row.map_sha256,'Word map must match exact SHA');
@@ -29,8 +30,8 @@ for(const row of maps.files.filter(x=>x.file.includes('reading/daruri-reading-ar
   assert.equal(map.source_sha256,row.sha256);
   assert.equal(map.section_count,258);
   assert.equal(Object.keys(map.section_pages).length,258);
-  assert.equal(Object.keys(map.segments).length,414);
-  const lang=row.file.includes('arabic-vowelled')?'vocalized':'ar';
+  assert.equal(Object.keys(map.segments).length,row.mapped_segments);
+  const lang=row.file.includes('arabic-vowelled')||row.file.includes('-bilingual-titles-')?'vocalized':'ar';
   assert.deepEqual(JSON.parse(JSON.stringify(row.word_map_coverage[lang])),{matched:414,eligible:414});
   const words=map.segments['11:0:'+lang];
   assert(words?.length>15,'Expected actual authored §11 phrase');
@@ -49,5 +50,5 @@ for(const row of maps.files.filter(x=>x.file.includes('reading/daruri-reading-ar
     'Unmatched quotes must fall back to the section');
   tests.push({file:row.file,words:words.length,page:hit.page,rectangles:hit.rects.length});
 }
-assert.equal(tests.length,4,'Exactly four independently certified Arabic editions');
-console.log('PASS four pixel-certified Arabic PDF word maps, 414/414 source segments per PDF, saved-quote vowel normalization and safe fallback',tests);
+assert.equal(tests.length,8,'Exactly eight independently certified Arabic editions');
+console.log('PASS eight pixel-certified Arabic PDF word maps, 414/414 Arabic source segments per PDF, saved-quote vowel normalization and safe fallback',tests);
