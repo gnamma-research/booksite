@@ -16,8 +16,11 @@ const uuid=()=>typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID(
 const short=(v,n=110)=>clamp(v,30000).length>n?clamp(v,n-1)+'…':String(v||'');
 
 const RD_ICON={
- bookmark:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/></svg>',
- note:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>',
+ bookmark:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/><path d="M12 8v5.4M9.3 10.7h5.4"/></svg>',
+ bookmarkSaved:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/><path d="m9.2 10.8 2 2 3.6-4"/></svg>',
+ paragraph:'<span class="gn-rd-paragraph-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/><path d="M12 8v5.4M9.3 10.7h5.4"/></svg><span class="gn-rd-paragraph-symbol">¶</span></span>',
+ paragraphSaved:'<span class="gn-rd-paragraph-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/><path d="m9.2 10.8 2 2 3.6-4"/></svg><span class="gn-rd-paragraph-symbol">¶</span></span>',
+ note:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="3.5" width="16" height="17" rx="2"/><path d="M7 8h7M7 11h4"/><path d="m11.6 16.9 5.3-5.3 2 2-5.3 5.3-2.8.8zM15.9 12.6l2 2"/></svg>',
  saved:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
  close:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>'
 };
@@ -799,7 +802,7 @@ function create(ctx){
  }
  function sectionToolbar(n,items){
   const count=items.length,saved=items.some(x=>x.kind==='section'),a=' data-section="'+esc(n)+'"';
-  return rdTool(saved?'Remove section bookmark':'Bookmark section','data-rd="section-bookmark"'+a+' aria-pressed="'+saved+'"','bookmark',saved)+
+  return rdTool(saved?'Remove section bookmark':'Bookmark section','data-rd="section-bookmark"'+a+' aria-pressed="'+saved+'"',saved?'bookmarkSaved':'bookmark',saved)+
    rdTool('Add personal note to section','data-rd="section-note"'+a,'note',false,items.some(x=>x.kind==='note'&&x.target?.kind==='section'))+
    (count?rdTool('View '+count+' saved items from this section','data-rd="view-section"'+a,'saved',false,true):'');
  }
@@ -808,7 +811,7 @@ function create(ctx){
   const attrs=' data-section="'+esc(n)+'" data-segment="'+segment+'"';
   return rdTool(bookmark?'Remove paragraph bookmark':'Bookmark paragraph',
     'data-rd="paragraph-bookmark"'+attrs+' aria-pressed="'+bookmark+'"',
-    'bookmark',bookmark,false,bookmark?'Saved paragraph':'Save paragraph')+
+    bookmark?'paragraphSaved':'paragraph',bookmark)+
    rdTool('Add personal note to paragraph','data-rd="paragraph-note"'+attrs,'note',false,notesCount>0)+
    (relevant.length?rdTool('View '+relevant.length+' saved items for paragraph '+(segment+1),'data-rd="view-paragraph"'+attrs,'saved',false,true):'');
  }

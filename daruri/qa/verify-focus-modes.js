@@ -36,11 +36,17 @@ new vm.Script(dockJS,{filename:'reading-mode-controls.js'});
 for(const choice of ['reading','focus','continuous'])
  assert(dockJS.includes('data-gn-reader-mode="'+choice+'"'),'Missing '+choice+' menu choice');
 assert(dockJS.includes("if(!count)continue"),'Zero-count personal marks must be absent');
+assert(dockJS.includes("gn-dock-paragraph-ref") && dockJS.includes("place.segment+1"),'Live paragraph locator missing');
+assert(dockJS.includes("paragraphBookmarks") && dockJS.includes("gn-dock-pilcrow"),'Separate paragraph bookmarks and pilcrow indicator missing');
+const desk=fs.readFileSync(path.resolve(__dirname,'..','reading-desk.js'),'utf8');
+assert(desk.includes("gn-rd-paragraph-mark")&&desk.includes("paragraphSaved"),'Save-paragraph control must be an icon pair');
+assert(desk.includes('M12 8v5.4M9.3 10.7h5.4'),'Bookmark plus motif missing');
+assert(desk.includes('m11.6 16.9 5.3-5.3'),'Note-with-pen motif missing');
 assert(dockJS.includes("getApparatus"),'The optional Focus apparatus setting must survive');
 assert(dockCSS.includes('body.reader-enhanced .reader .chapter-nav{display:none!important}'),
  'Redundant enhanced in-text Previous/Next navigation not hidden');
-assert(html.includes('reading-mode-controls.js?v=20261022-readmode3a')&&
- html.includes('reading-mode-controls.css?v=20261022-readmode3a'),'Reader missing mode assets');
+assert(html.includes('reading-mode-controls.js?v=20261022-markloc1')&&
+ html.includes('reading-mode-controls.css?v=20261022-markloc1'),'Reader missing mode assets');
 assert(html.includes("state.focusLevel===3"),'Continuous reading mode not wired');
 assert(html.includes("for(const sec of all)"),'Continuous reader must traverse every section');
 assert(html.includes("data-reading-section="),'Section boundaries not present for scroll tracking');
