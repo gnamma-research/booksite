@@ -115,6 +115,37 @@ const latest=page=>page.locator('#gn-dyn-status').innerText();
    assert(!await page.locator('#pe-edition').inputValue().then(s=>s.startsWith('generated-')));
    return 'Network abort, no stale PDF, immediate retry enabled';
   });
+  await check('terminate a real CPU-busy PDF worker without freezing the page',async()=>{
+   await page.evaluate(()=>{
+    const NativeWorker=window.Worker;
+    window.__gnNativeWorker=NativeWorker;
+    window.Worker=function(){
+     const busyCode='self.onmessage=function(){while(true){}};';
+     const blob=new Blob([busyCode],{type:'application/javascript'});
+     const url=URL.createObjectURL(blob);
+     const worker=new NativeWorker(url);
+     const originalTerminate=worker.terminate.bind(worker);
+     worker.terminate=function(){originalTerminate();URL.revokeObjectURL(url);};
+     return worker;
+    };
+   });
+   try{
+    await page.locator('#gn-dyn-make').click();
+    await page.waitForFunction(()=>
+     /Composing verified pages/.test(document.querySelector('#gn-dyn-status')?.textContent||''),
+     null,{timeout:60000});
+    await new Promise(resolve=>setTimeout(resolve,180));
+    assert(await page.locator('#gn-dyn-cancel').isVisible());
+    await page.locator('#gn-dyn-cancel').click();
+    assert.match(await latest(page),/cancelled/i);
+    assert(await page.locator('#gn-dyn-make').isEnabled());
+    assert.equal(await page.locator('#gn-dyn-download').isVisible(),false);
+    assert.equal(await page.locator('#pe-edition').inputValue(),'editions/'+selected);
+   }finally{
+    await page.evaluate(()=>{window.Worker=window.__gnNativeWorker;delete window.__gnNativeWorker;});
+   }
+   return 'Dedicated CPU worker terminated; main UI remained responsive';
+  });
   await check('cancelled asset retry produces the correct verified PDF',async()=>{
    await page.locator('#gn-dyn-make').click();
    await page.waitForFunction(()=>/Verified \d+ pages/.test(
