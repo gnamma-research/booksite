@@ -1,0 +1,95 @@
+name: Publish Verified Daruri Arabic Word Maps
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-arabic-pango-pilot-20261022]
+    paths:
+      - '.github/workflows/daruri-arabic-word-maps.yml'
+      - 'daruri/qa/probe_arabic_pango_layout.py'
+      - 'daruri/build/publish_verified_arabic_word_maps.py'
+permissions:
+  contents: write
+concurrency:
+  group: daruri-arabic-word-maps-publish
+  cancel-in-progress: false
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Install pinned WeasyPrint and PDF inspection libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install "weasyprint==68.0" "PyMuPDF==1.26.7"
+      - name: Rebuild and pixel-compare all 156 published Arabic pages
+        run: python daruri/qa/probe_arabic_pango_layout.py --emit-wordmaps
+      - name: Write source-and-byte-bound word maps for exactly four Arabic Reading editions
+        run: python daruri/build/publish_verified_arabic_word_maps.py
+      - name: Validate all twelve base maps and unchanged 120 apparatus PDFs
+        run: |
+          node daruri/qa/verify-published-selector.cjs
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          root=Path('daruri/editions')
+          m=json.loads((root/'maps/manifest.json').read_text())
+          assert len(m['files'])==12 and m['status']=='verified'
+          arabic=[r for r in m['files'] if '/daruri-reading-arabic' in r['file']]
+          assert len(arabic)==4
+          for row in arabic:
+              assert row['mapped_segments']==414
+              assert row['word_map_present']
+              assert list(row['word_map_coverage'].values())==[{'matched':414,'eligible':414}]
+              path=root/row['map_file']
+              assert hashlib.sha256(path.read_bytes()).hexdigest()==row['map_sha256']
+              x=json.loads(path.read_text())
+              assert len(x['segments'])==414
+              assert sum(len(v) for v in x['segments'].values())==21647
+          print('PASS: 4 Arabic word maps, 414 segments and 21,647 word rectangles each')
+          PY
+      - name: Retain verified proof PDFs and map artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-four-verified-arabic-word-maps
+          path: |
+            daruri/qa/arabic-pango-probe/
+            daruri/editions/maps/
+          retention-days: 30
+      - name: Publish only certified metadata and maps to the experiment branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          cp -a daruri/editions/maps "$RUNNER_TEMP/verified-word-maps"
+          git fetch --quiet origin "$GITHUB_REF_NAME"
+          latest="$(git rev-parse FETCH_HEAD)"
+          if [ "$latest" != "$GITHUB_SHA" ] &&
+             ! git diff --quiet "$GITHUB_SHA" "$latest" -- \
+                daruri/editions/maps \
+                daruri/editions/manifest.json \
+                daruri/editions/reading \
+                daruri/edition-r3-20261020.js \
+                daruri/build/print_editions.py \
+                daruri/qa/probe_arabic_pango_layout.py \
+                daruri/build/publish_verified_arabic_word_maps.py; then
+            echo "::error::A certified source or mapper changed; refusing to publish stale coordinates."
+            exit 1
+          fi
+          git reset --hard "$latest"
+          mkdir -p daruri/editions/maps
+          cp -a "$RUNNER_TEMP/verified-word-maps/." daruri/editions/maps/
+          git add -A daruri/editions/maps
+          if git diff --cached --quiet; then
+            echo "Exact Arabic word maps are already published."
+            exit 0
+          fi
+          git commit -m 'Publish four checksum-bound precise Arabic word maps [skip ci]'
+          git push origin "HEAD:$GITHUB_REF_NAME"
