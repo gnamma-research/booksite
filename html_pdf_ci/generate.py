@@ -15,8 +15,8 @@ indexed={int(s["id"]):s for s in book["sections"] if str(s.get("id","")).isdigit
 notes={str(n["id"]):n for n in book["notes"]}
 def e(s):return html.escape(str(s or ""),quote=True)
 css=r'''
-@font-face {font-family:Amiri;src:url("../../daruri/fonts/amiri-regular.woff2") format("woff2")}
-@font-face {font-family:Serif4;src:url("../../daruri/fonts/source-serif-4-normal.woff2") format("woff2")}
+@font-face {font-family:Amiri;src:url("../daruri/fonts/amiri-regular.woff2") format("woff2")}
+@font-face {font-family:Serif4;src:url("../daruri/fonts/source-serif-4-normal.woff2") format("woff2")}
 @page {
  size:A4;margin:19mm 17mm 21mm 17mm;
  @top-left {content:string(chapter);font:8pt Serif4,serif;color:#53625f}
