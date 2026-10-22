@@ -136,16 +136,16 @@ def compare_with_approved(candidate: Path, approved: Path) -> dict:
         }
 
 
-def build_source(tier: str, language: str, output: Path, html: Path) -> dict:
+def build_source(tier: str, language: str, output: Path, html: Path, *, editorial_titles: bool = False) -> dict:
     if tier == "reading":
         raw = output.with_name("raw-" + output.name)
         reading = print_editions.build(
             language, range(1, 259), "full", "Complete reading text",
-            raw, editorial_titles=False, html_source=html
+            raw, editorial_titles=editorial_titles, html_source=html
         )
         source = publish_editions.finalize(
             raw, output, print_editions.BOOK["sections"],
-            tier, language, False
+            tier, language, editorial_titles
         )
         if reading["paragraphs"] != 414 or source["notes"] != "none":
             raise ValueError("Reading body lost authorial passages or gained publisher notes")
@@ -159,7 +159,7 @@ def build_source(tier: str, language: str, output: Path, html: Path) -> dict:
         }
     if tier == "study":
         location = html.parent / "study-full-html-stage"
-        meta = build_editions.build("study", location, editorial_titles=False)
+        meta = build_editions.build("study", location, editorial_titles=editorial_titles)
         raw = location / meta["filename"]
         captured = location / (meta["filename"] + ".html")
         if not captured.exists():
@@ -167,7 +167,7 @@ def build_source(tier: str, language: str, output: Path, html: Path) -> dict:
         html.write_bytes(captured.read_bytes())
         source = publish_editions.finalize(
             raw, output, print_editions.BOOK["sections"],
-            "study", "bilingual", False
+            "study", "bilingual", editorial_titles
         )
         if not meta["main_text_validation"]["ok"] or not meta["footnote_pagination"]["ok"]:
             raise ValueError("True Study note-calls and bodies failed their pagination validator")
