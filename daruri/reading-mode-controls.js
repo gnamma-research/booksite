@@ -3,9 +3,10 @@
 (function(){
 'use strict';
 const icons={
- bookmark:'<path d="M6 3.5h12v17l-6-4-6 4.5z"/>',
+ sectionBookmark:'<path d="M6 3.5h12v17l-6-4-6 4.5z" fill="currentColor" fill-opacity=".12"/>',
+ paragraphBookmark:'<path d="M4 3.5h12v17l-6-4-6 4.5z" fill="currentColor" fill-opacity=".12"/><text x="19" y="17" font-family="Georgia, serif" font-size="15" font-weight="700" stroke="none" fill="currentColor">¶</text>',
  highlight:'<path d="m15 4 5 5M4 20l4-.5L20 7a3 3 0 0 0-4-4L4 15z"/>',
- note:'<rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/>'
+ note:'<rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M7.7 16.5 8.4 13.5 15.8 6.2l2.3 2.3-7.4 7.3-3 .7zM13.9 8.1l2.3 2.3"/>'
 };
 function create({state,rd}){
  const dock=document.getElementById('readerDock');
@@ -27,7 +28,7 @@ function create({state,rd}){
  }
  let sections=new Map(),sectionOnly=new Map(),passages=new Map(),last='',queued=false;
  const keyOf=(section,segment)=>String(section)+':'+Number(segment);
- const empty=()=>({bookmarks:0,highlights:0,notes:0});
+ const empty=()=>({sectionBookmarks:0,paragraphBookmarks:0,highlights:0,notes:0});
  function add(row,key,kind){
   const bucket=row.get(key)||empty();bucket[kind]++;row.set(key,bucket);
  }
@@ -38,7 +39,8 @@ function create({state,rd}){
    const t=item.target,section=String(t.section);
    if(!section)continue;
    let type=null;
-   if(item.kind==='section'||item.kind==='paragraph')type='bookmarks';
+   if(item.kind==='section')type='sectionBookmarks';
+   else if(item.kind==='paragraph')type='paragraphBookmarks';
    if(item.kind==='quote')type='highlights';
    if(item.kind==='note')type='notes';
    if(!type)continue;
@@ -78,34 +80,47 @@ function create({state,rd}){
   if(state.route!=='reader'||dock.hidden){status.hidden=true;last='';return;}
   const place=readingPosition();if(!place){status.hidden=true;last='';return;}
   const sectionCounts=sections.get(place.section)||empty();
-  const passageCounts=place.segment==null?sectionCounts:(passages.get(keyOf(place.section,place.segment))||empty());
-  // Section-level marks remain visible while scrolling through that section.
-  const sectionBookmarks=(sectionOnly.get(place.section)||empty()).bookmarks;
-  const sectionNotes=(sectionOnly.get(place.section)||empty()).notes;
+  const paragraphCounts=place.segment==null?sectionCounts:(passages.get(keyOf(place.section,place.segment))||empty());
+  const sectionOnlyCounts=sectionOnly.get(place.section)||empty();
+  // Section bookmarks persist while reading a paragraph; paragraph bookmarks
+  // and precise highlights refer to the presently visible aligned passage.
   const counts={
-   bookmarks:place.segment==null?sectionCounts.bookmarks:sectionBookmarks+passageCounts.bookmarks,
-   highlights:passageCounts.highlights,
-   notes:place.segment==null?sectionCounts.notes:sectionNotes+passageCounts.notes
+   sectionBookmarks:sectionOnlyCounts.sectionBookmarks,
+   paragraphBookmarks:paragraphCounts.paragraphBookmarks,
+   highlights:paragraphCounts.highlights,
+   notes:place.segment==null?sectionCounts.notes:sectionOnlyCounts.notes+paragraphCounts.notes
   };
-  const signature=[place.section,place.segment,counts.bookmarks,counts.highlights,counts.notes].join('|');
-  const hasMarks=Boolean(counts.bookmarks||counts.highlights||counts.notes);
+  // Keep structural section number and live paragraph locator together.
+  const locator=document.getElementById('dockSection');
+  const reference=place.section==='colophon'?'Colophon':'§'+place.section;
+  const locationText=reference+(place.segment==null?'':' · ¶'+(place.segment+1));
+  if(locator&&locator.textContent!==locationText)locator.textContent=locationText;
+  const signature=[place.section,place.segment,counts.sectionBookmarks,counts.paragraphBookmarks,counts.highlights,counts.notes].join('|');
+  const hasMarks=Boolean(counts.sectionBookmarks||counts.paragraphBookmarks||counts.highlights||counts.notes);
   // A route transition can hide the dock between two equivalent signatures.
-  // Repaint when visibility disagrees with the saved-item state (iOS WebKit).
-  if(signature===last&&status.hidden===!hasMarks)return;
-  last=signature;
+  if(signature===last&&status.hidden===!hasMarks)return;last=signature;
   status.replaceChildren();
-  const values=[['bookmark','bookmarks','Saved bookmarks'],['highlight','highlights','Highlighted quotations'],['note','notes','Personal notes']];
+  const values=[
+   ['sectionBookmark','sectionBookmarks','Section bookmarks'],
+   ['paragraphBookmark','paragraphBookmarks','Paragraph bookmarks'],
+   ['highlight','highlights','Highlighted selections'],
+   ['note','notes','Personal notes']
+  ];
   for(const [icon,type,label] of values){
    const count=counts[type];if(!count)continue;
    const button=document.createElement('button');button.type='button';
-   button.className='gn-dock-mark';button.dataset.gnMark=type;
-   button.setAttribute('aria-label',label+': '+count+' in '+(place.segment==null?'this section':'the current passage or section'));
+   button.className='gn-dock-mark'+(type==='paragraphBookmarks'?' gn-dock-mark-paragraph':'');
+   button.dataset.gnMark=type;
+   const scope=place.segment==null?'the current section':'the current paragraph and its section';
+   button.setAttribute('aria-label',label+': '+count+' in '+scope);
    button.title=label+': '+count;
-   button.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true">'+icons[icon]+'</svg><span>'+count+'</span>';
+   const box=icon==='paragraphBookmark'?'0 0 34 24':'0 0 24 24';
+   button.innerHTML='<svg viewBox="'+box+'" aria-hidden="true">'+icons[icon]+'</svg><span>'+count+'</span>';
    button.addEventListener('click',()=>{
-    // Keep jump/title separate from annotation actions; never toggle/delete here.
-    const onlyParagraph=type==='highlights'?place.segment:null;
-    rd.openAt(place.section,onlyParagraph,type==='notes'?'notes':'bookmarks');
+    // Opening saved material never toggles or deletes a mark.
+    const segment=type==='sectionBookmarks'?null:
+      (type==='notes'&&sectionOnlyCounts.notes?null:place.segment);
+    rd.openAt(place.section,segment,type==='notes'?'notes':'bookmarks');
    });
    status.append(button);
   }
