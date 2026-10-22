@@ -1,0 +1,44 @@
+name: Native PDFKit embedded CIDFont Arabic forensic probe
+on:
+  push:
+    branches: ['experiment/gnamma-pdfkit-arabic-variants-20261022']
+    paths: ['pdfkit_variants/cid_*','.github/workflows/pdfkit-embedded-cid-test.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Install low-level PDF and fontkit engines
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/qa pdf-lib@1.17.1 fontkit@2.0.4
+      - name: Create genuine CIDFontType2 with full font embedding and ToUnicode
+        run: node pdfkit_variants/cid_font_experiment.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gnamma-cidfont-pdf
+          path: pdfkit_variants/cidfont_test.pdf
+          retention-days: 5
+  mac-pdfkit:
+    needs: generate
+    runs-on: macos-15
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {name: gnamma-cidfont-pdf, path: pdfkit_variants}
+      - name: Inspect search and text layer with native PDFKit
+        run: |
+          swiftc -framework PDFKit -o /tmp/cidfont-probe pdfkit_variants/cid_pdfkit.swift
+          /tmp/cidfont-probe pdfkit_variants/cidfont_test.pdf pdfkit_variants/cidfont_native_results.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-cidfont-native-results
+          path: pdfkit_variants/cidfont_native_results.json
+          retention-days: 5
