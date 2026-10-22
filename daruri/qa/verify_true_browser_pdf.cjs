@@ -17,7 +17,7 @@ const targetDir=process.env.GN_PDF_OUT||'/tmp/daruri-browser-native-pdf';
 const outputPdf=path.join(targetDir,'daruri-'+kind+'-'+mode+'-NONRELEASE.pdf');
 const outputLog=path.join(targetDir,'browser-'+kind+'-'+mode+'-evidence.json');
 const host='http://127.0.0.1:'+port;
-const viewer=host+'/daruri/qa/browser_pdf_vector_probe.html';
+const viewer=host+(process.env.GN_PDF_PAGE||'/daruri/qa/browser_pdf_vector_probe.html');
 const onConsole=[],requests=[],fatal=[];
 let browser=null,ctx=null,server=null;
 function delay(n){return new Promise(r=>setTimeout(r,n))}
@@ -51,6 +51,7 @@ async function main(){
    generatedWithoutPrintDialog:true,
    playwrightPagePdfNotUsed:true,
    previewOriginalSourceHtmlOnly:true,
+   implementation:status?.implementation||status?.engine||'browser-html',
    artifact:outputPdf,releaseApproved:false,
  };
  if(status?.state==='done'){
