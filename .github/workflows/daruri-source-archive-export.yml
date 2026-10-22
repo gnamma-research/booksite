@@ -1,0 +1,57 @@
+name: Daruri portable canonical source export — HTML TEI JSON Shamela text
+on:
+  push:
+    branches: [feature/daruri-canonical-source-export-20261023]
+    paths:
+      - 'daruri/build/export_portable_source.py'
+      - 'daruri/qa/verify_portable_source.py'
+      - '.github/workflows/daruri-source-archive-export.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-canonical-source-export-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  complete-public-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify pure UTF-8 archival exporter can compile
+        run: |
+          python -m py_compile daruri/build/export_portable_source.py daruri/qa/verify_portable_source.py
+      - name: Export directly from authoritative canonical reader data — no PDF input
+        run: |
+          python daruri/build/export_portable_source.py --output-dir /tmp/daruri-source-release
+      - name: Demand lossless Arabic English aligned paragraphs, notes, links and TEI
+        run: |
+          python daruri/qa/verify_portable_source.py /tmp/daruri-source-release/Daruri_Portable_Scholarly_Source.zip
+      - name: Regenerate and verify deterministic content identity
+        run: |
+          python daruri/build/export_portable_source.py --output-dir /tmp/daruri-source-repeat
+          cmp /tmp/daruri-source-release/Daruri_Portable_Scholarly_Source.zip /tmp/daruri-source-repeat/Daruri_Portable_Scholarly_Source.zip
+          python - <<'PY'
+          import json,pathlib
+          d=pathlib.Path('/tmp/daruri-source-release')
+          j=json.loads((d/'source-export-report.json').read_text())
+          assert j['authorial_parallel_segments']==414
+          assert j['source_authorial_sections']==258
+          assert j['canonical_note_records']==625
+          assert not j['private_user_notes_included']
+          assert not j['legacy_shamela_txt_html_import_verified_in_app']
+          print('SOURCE_EXPORT_ZIP_READY_FOR_EDITORIAL_REVIEW',j['zip_filename'],j['zip_bytes'])
+          PY
+      - name: Retain portable source ZIP and cryptographic report, no website changes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Daruri-portable-source-HTML-TEI-Shamela-UTF8-NONRELEASE
+          path: |
+            /tmp/daruri-source-release/Daruri_Portable_Scholarly_Source.zip
+            /tmp/daruri-source-release/source-export-report.json
+          if-no-files-found: warn
+          retention-days: 30
