@@ -23,7 +23,7 @@ const RD_ICON={
  highlight:bookmarkUI.highlightIcon(),
  paragraph:bookmarkUI.icon({kind:'paragraph'}),
  paragraphSaved:bookmarkUI.icon({kind:'paragraph',saved:true}),
- note:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="3.5" width="16" height="17" rx="2"/><path d="M7 8h7M7 11h4"/><path d="m11.6 16.9 5.3-5.3 2 2-5.3 5.3-2.8.8zM15.9 12.6l2 2"/></svg>',
+ note:bookmarkUI.noteIcon(),
  saved:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
  close:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>'
 };
@@ -489,7 +489,7 @@ function create(ctx){
   else if(writeConflict)parts.push('<div class="gn-rd-warning" role="alert"><strong>Reading Desk changed in another tab.</strong> New writes are paused to protect the newer collection. <button type="button" data-rd="refresh-storage">Reload saved items</button></div>');
   else if(!available)parts.push('<p class="gn-rd-warning" role="alert">Browser storage is unavailable or full. Download a backup before leaving.</p>');
   parts.push('<div class="gn-rd-toolbar gn-rd-simplified-toolbar" role="group" aria-label="Reading Desk actions"><div class="gn-rd-toolbar-main">');
-  parts.push('<button type="button" class="gn-rd-main-action" data-rd="new-note">'+RD_ICON.plus+'<span>New note</span></button>');
+  parts.push('<button type="button" class="gn-rd-main-action" data-rd="new-note">'+RD_ICON.note+'<span>New note</span></button>');
   parts.push('<button type="button" class="gn-rd-main-action" data-rd="print-list">'+RD_ICON.print+'<span>Print / PDF</span></button>');
   parts.push('<details class="gn-rd-manage-menu"><summary>Manage <span aria-hidden="true">⌄</span></summary><div class="gn-rd-manage-items" role="group" aria-label="Manage Reading Desk data">');
   parts.push('<button type="button" data-rd="export">Download backup (.json)</button>');
@@ -773,7 +773,7 @@ function create(ctx){
   const title=bookmarkUI.actionLabel(target.kind,stored);
   row.innerHTML='<button type="button" data-rd="attach-bookmark" data-target="'+esc(serialized)+'" aria-pressed="'+stored+'" aria-label="'+esc(title)+'">'+bookmarkUI.icon({saved:stored})+'<span>'+esc(stored?'Remove bookmark':'Bookmark')+'</span></button>'+
    '<button type="button" data-rd="attach-view" data-target="'+esc(serialized)+'"'+(stored?'':' hidden')+'>View in Reading Desk</button>'+
-   '<button type="button" data-rd="attach-note" data-target="'+esc(serialized)+'">+ Add personal note</button>';
+   '<button type="button" data-rd="attach-note" data-target="'+esc(serialized)+'">'+bookmarkUI.noteIcon()+'<span>Add my note</span></button>';
   return row;
  }
  function syncActionStates(){
