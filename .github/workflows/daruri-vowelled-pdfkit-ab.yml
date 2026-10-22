@@ -1,4 +1,4 @@
-name: Daruri vowelled Arabic PDFKit character mapping A-B research (NO PUBLICATION)
+name: Daruri vowelled Arabic PDFKit grapheme-scalar-word CMap research (NO PUBLICATION)
 on:
   push:
     branches: [qa/daruri-vowelled-pdfkit-ab-20261022]
@@ -34,9 +34,10 @@ jobs:
       - name: Compare grapheme-level and scalar-level Arabic Unicode CIDs in genuine PDFKit
         run: |
           mkdir -p /tmp/arabic-pdfkit-ab
-          for approach in grapheme scalar; do
+          for approach in grapheme scalar word; do
             flag=''
             if [ "$approach" = scalar ]; then flag='--scalar-harakat'; fi
+            if [ "$approach" = word ]; then flag='--word-actualtext'; fi
             python daruri/qa/experimental_original_char_unicode.py \
               --input daruri/${{ matrix.source }} \
               --map daruri/${{ matrix.map }} \
