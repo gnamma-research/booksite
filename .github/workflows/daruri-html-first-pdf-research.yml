@@ -1,0 +1,69 @@
+name: Daruri HTML-first full-book PDF feasibility (NOT PUBLICATION)
+on:
+  push:
+    branches: [research/daruri-html-first-pdf-20261022]
+    paths:
+      - 'daruri/build/print_editions.py'
+      - 'daruri/dynamic-pdf/html_first_feasibility.py'
+      - '.github/workflows/daruri-html-first-pdf-research.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-html-first-a4-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  html-only-input-no-base-pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install precise source HTML/Pango/WeasyPrint PDF renderer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install --disable-pip-version-check -r daruri/build/requirements.txt
+          python -m pip install --disable-pip-version-check 'PyMuPDF==1.26.7' 'pypdf==5.9.0' 'numpy>=1.26' 'scipy>=1.13'
+      - name: Compile HTML-only proof and original body renderer
+        run: |
+          python -m py_compile \
+            daruri/build/print_editions.py daruri/build/build_editions.py \
+            daruri/dynamic-pdf/html_first_feasibility.py
+      - name: Generate bilingual Reading, English Reading, bilingual Study and single-pass Reading+glossary from HTML
+        run: |
+          python daruri/dynamic-pdf/html_first_feasibility.py \
+            --output-dir /tmp/daruri-html-first --profile all
+      - name: Require all generated original source sections and Study note-pagination checks
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          d=pathlib.Path('/tmp/daruri-html-first')
+          result=json.loads((d/'html-first-report.json').read_text(encoding='utf-8'))
+          assert result['prebuilt_pdf_input_files']==[],result
+          rows=result['results']
+          assert len(rows)==4,[r['profile'] for r in rows]
+          for row in rows:
+            assert row['pdf']['source_section_names']==258,row['profile']
+            assert not row['pdf']['invalid_internal_link_pages'],row['profile']
+            assert row['pdf']['pages']>20,row['profile']
+            assert (d/pathlib.Path(row['html_file']).name).is_file(),row['profile']
+          study=next(r for r in rows if r['profile']=='study-bilingual')
+          assert study['footnote_pagination']['ok'],study['footnote_pagination']
+          print('HTML_FIRST_PUBLISHER_STRUCTURE_PASS',
+                [(r['profile'],r['pdf']['pages'],r['vs_approved'].get('approved_pages'),
+                  r['vs_approved'].get('pixel_equal_pages')) for r in rows])
+          PY
+      - name: Save HTML sources, research PDFs and measured A/B comparison
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-html-origin-pdf-not-approved
+          path: |
+            /tmp/daruri-html-first/*.html
+            /tmp/daruri-html-first/*.pdf
+            /tmp/daruri-html-first/html-first-report.json
+          if-no-files-found: warn
+          retention-days: 10
