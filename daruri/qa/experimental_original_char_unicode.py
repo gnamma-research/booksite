@@ -148,7 +148,7 @@ def cmap_for(aliases):
     return ("\n".join(lines) + "\n").encode("ascii")
 
 
-def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13):
+def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13, scalar_harakat=False):
     # The printed Arabic is RTL. Each invisible line emits Unicode scalars in
     # visual/physical LTR order; engines recover logical Arabic through bidi.
     aliases, commands = [], []
@@ -161,13 +161,23 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
         for idx, (word, x0, y0, x1, y1) in enumerate(words):
             if abs(x0 - right_edge) > 0.1:
                 raise ValueError("Pango line glyph advance or gap mismatch")
-            chars = list(reversed(graphemes(word)))
-            if not chars:
+            groups = list(reversed(graphemes(word)))
+            if not groups:
                 raise ValueError("Empty source word")
-            for char in chars:
-                cid = len(aliases) + 1
-                aliases.append((cid, char, (x1-x0) * 1000 / (len(chars)*font_size)))
-                encoded.append(cid)
+            for group in groups:
+                # Experimental cross-viewer variant: represent each vowel
+                # mark by its own zero-advance CID, rather than encoding
+                # base+diacritics as a multi-scalar /ToUnicode glyph. Engines
+                # disagree about internal CID payload bidi ordering.
+                chars = list(reversed(group)) if scalar_harakat else [group]
+                for char in chars:
+                    cid = len(aliases) + 1
+                    is_mark = bool(unicodedata.combining(char))
+                    advance = 0 if scalar_harakat and is_mark else (
+                        (x1-x0) * 1000 / (len(groups)*font_size)
+                    )
+                    aliases.append((cid, char, advance))
+                    encoded.append(cid)
             right_edge = x1
             if idx+1 < len(words):
                 gap = words[idx+1][1]-right_edge
@@ -249,7 +259,7 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
     return len(aliases)
 
 
-def build(original, mapping_path, output):
+def build(original, mapping_path, output, scalar_harakat=False):
     original, mapping_path, output = Path(original), Path(mapping_path), Path(output)
     if output.exists() or original.resolve() == output.resolve():
         raise ValueError("Refusing to replace any existing file")
@@ -292,7 +302,8 @@ def build(original, mapping_path, output):
             remove_broken_text(page, source_on_page)
             total_lines += len(source_on_page)
             total_cids += add_character_semantics(
-                doc, page, page_no, source_on_page, fontfile
+                doc, page, page_no, source_on_page, fontfile,
+                scalar_harakat=scalar_harakat
             )
         if original.name == "daruri-reading-arabic-titles-off.pdf" and total_lines != 2583:
             raise ValueError(f"Unexpected unvowelled Arabic Reading line coverage {total_lines}/2583")
@@ -310,5 +321,6 @@ if __name__ == "__main__":
     parser.add_argument("--input", required=True)
     parser.add_argument("--map", required=True)
     parser.add_argument("--output", required=True)
+    parser.add_argument("--scalar-harakat", action="store_true", help="Experimental one-scalar-per-CID vocalization mapping")
     args = parser.parse_args()
-    build(args.input, args.map, args.output)
+    build(args.input, args.map, args.output, args.scalar_harakat)
