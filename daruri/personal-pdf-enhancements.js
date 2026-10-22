@@ -259,20 +259,18 @@
     }));
     return {ref:cidFont,map:cids};
   }
-  function reverseArabicGraphemes(raw){
-    // Preserve Qurʾānic vowel marks with their base letters when reversing the
-    // glyph stream for PDFKit's native right-to-left text reconstruction.
-    const clusters=[];
-    for(const ch of Array.from(raw)){
-      if(/\p{M}/u.test(ch)&&clusters.length)clusters[clusters.length-1]+=ch;
-      else clusters.push(ch);
-    }
-    return clusters.reverse().join('');
+  function reverseArabicForPdfKit(raw){
+    // Native PDFKit reverses text positions at the Unicode-scalar level,
+    // including combining vowel marks. Reverse all scalars (not grapheme
+    // clusters) in the invisible text stream so it reconstructs the original
+    // *exact* text, including harakat, during search and copy.
+    // The visible Arabic remains Canvas-shaped and is not altered.
+    return Array.from(raw).reverse().join('');
   }
   function drawExactArabicSearch(page,font,raw,x,y,size){
     if(!font||!raw)return;
     const {PDFName,PDFNumber,PDFOperator,PDFHexString}=window.PDFLib;
-    const reversed=reverseArabicGraphemes(raw);
+    const reversed=reverseArabicForPdfKit(raw);
     const hex=Array.from(reversed).map(ch=>{
       const code=font.map.get(ch);
       if(!code)throw Error('The embedded Arabic Unicode font cannot represent U+'+
