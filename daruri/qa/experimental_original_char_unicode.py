@@ -88,7 +88,18 @@ def remove_broken_text(page, planned):
             for index, m in enumerate(starts)
         )
         if not scores or scores[0][0] > 0.05 or scores[0][1] in matches:
-            raise ValueError("Pango/source-Tm uniqueness or geometry mismatch")
+            best = [
+                (round(score, 4), index, round(float(match[1])*0.75, 3),
+                 round(float(match[2])*0.75, 3))
+                for score, index, match in scores[:4]
+            ]
+            raise ValueError(
+                f"Pango/source-Tm mismatch on PDF page {page.number+1}: "
+                f"source xmin={line['xmin']:.3f}, "
+                f"y0={line['words'][0][2]:.3f}, "
+                f"estimated baseline={line['baseline']:.3f}, "
+                f"nearest page Tm candidates (distance,index,x,y)={best}"
+            )
         _, index, found = scores[0]
         matches.add(index)
         begin = found.end()
@@ -228,8 +239,14 @@ def build(original, mapping_path, output):
     digest = hashlib.sha256(original.read_bytes()).hexdigest()
     if mapping["source_sha256"] != digest:
         raise ValueError("Refusing to combine source PDF with mismatched signed word map")
-    if mapping.get("section_count") != 258 or len(mapping["segments"]) != 414:
-        raise ValueError("Expected 258 source anchors and 414 original segments")
+    source_segment_count = sum(
+        key.endswith((":ar", ":vocalized")) for key in mapping["segments"]
+    )
+    if mapping.get("section_count") != 258 or source_segment_count != 414:
+        raise ValueError(
+            f"Expected 258 source anchors and 414 Arabic source segments, "
+            f"got {mapping.get('section_count')} anchors and {source_segment_count} source segments"
+        )
     pages = source_lines(mapping)
     with fitz.open(original) as doc:
         # This unvowelled Reading source embeds its Naskh subset in FontFile2.
@@ -259,8 +276,8 @@ def build(original, mapping_path, output):
             total_cids += add_character_semantics(
                 doc, page, page_no, source_on_page, fontfile
             )
-        if total_lines != 2583:
-            raise ValueError(f"Unexpected line coverage {total_lines}/2583")
+        if original.name == "daruri-reading-arabic-titles-off.pdf" and total_lines != 2583:
+            raise ValueError(f"Unexpected unvowelled Arabic Reading line coverage {total_lines}/2583")
         output.parent.mkdir(parents=True, exist_ok=True)
         doc.save(output, garbage=4, deflate=True)
     print(json.dumps({
