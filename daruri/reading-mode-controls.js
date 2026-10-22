@@ -94,15 +94,17 @@ function create({state,rd}){
   if(state.route!=='reader'||dock.hidden){status.hidden=true;if(paraRef)paraRef.hidden=true;last='';return;}
   const place=readingPosition();if(!place){status.hidden=true;last='';return;}
   const sectionCounts=sections.get(place.section)||empty();
-  const passageCounts=place.segment==null?sectionCounts:(passages.get(keyOf(place.section,place.segment))||empty());
-  // Section bookmarks remain visible throughout the section. A paragraph
-  // bookmark is shown only for that precise aligned Arabic–English unit.
-  const sectionMarks=sectionOnly.get(place.section)||empty();
+  const passageCounts=place.segment==null?empty():(passages.get(keyOf(place.section,place.segment))||empty());
+  // Keep the dock's status scoped to the SECTION currently being browsed.
+  // Previously, counts were restricted to the current paragraph, so all
+  // highlight/note icons vanished upon reaching another paragraph even while
+  // the same section still contained saved items. The ¶ locator above remains
+  // passage-specific; these counters remain visible throughout the section.
   const counts={
-   sectionBookmarks:place.segment==null?sectionCounts.sectionBookmarks:sectionMarks.sectionBookmarks,
-   paragraphBookmarks:passageCounts.paragraphBookmarks,
-   highlights:passageCounts.highlights,
-   notes:place.segment==null?sectionCounts.notes:sectionMarks.notes+passageCounts.notes
+   sectionBookmarks:sectionCounts.sectionBookmarks,
+   paragraphBookmarks:sectionCounts.paragraphBookmarks,
+   highlights:sectionCounts.highlights,
+   notes:sectionCounts.notes
   };
   // The existing dock title is controlled by the reader's section tracking;
   // prevent a misleading §N/¶M combination during transitional scroll frames.
@@ -130,18 +132,20 @@ function create({state,rd}){
    const button=document.createElement('button');button.type='button';
    button.className='gn-dock-mark';button.dataset.gnMark=type;
    if(type==='paragraphBookmarks')button.classList.add('gn-dock-paragraph-mark');
-   button.setAttribute('aria-label',label+': '+count+' in '+(place.segment==null?'this section':'the current passage or section'));
-   button.title=label+': '+count;
+   // Labels distinguish section totals from the current paragraph's own
+   // marks, without spending any extra visible dock space.
+   const local=type==='sectionBookmarks'?0:(passageCounts[type]||0);
+   const paragraphDetail=place.segment==null||type==='sectionBookmarks'?'':'; '+local+' in paragraph '+(place.segment+1);
+   button.setAttribute('aria-label',label+': '+count+' in '+place.section+paragraphDetail);
+   button.title=label+': '+count+' in '+place.section+paragraphDetail;
    button.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true">'+icons[icon]+'</svg>'+
      (type==='paragraphBookmarks'?'<span class="gn-dock-pilcrow" aria-hidden="true">¶</span>':'')+
      '<span class="gn-dock-count">'+count+'</span>';
    button.addEventListener('click',()=>{
     // Keep jump/title separate from annotation actions; never toggle/delete here.
-    // Scope paragraph marks/highlights to the visible passage. Personal
-    // notes may also include section-level notes, so preserve all when present.
-    const scoped=type==='paragraphBookmarks'||type==='highlights'||
-      (type==='notes'&&!sectionMarks.notes);
-    rd.openAt(place.section,scoped?place.segment:null,type==='notes'?'notes':'bookmarks');
+    // The counter reports section totals; open the same section, not just
+    // the currently visible paragraph. This action never deletes a mark.
+    rd.openAt(place.section,null,type==='notes'?'notes':'bookmarks');
    });
    status.append(button);
   }
