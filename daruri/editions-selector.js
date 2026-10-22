@@ -255,6 +255,101 @@
     if(!bridge?.ready)return false;
     return bridge.choose(file);
   }
+  // The published-file workflow is a real download and SHA-256 verification,
+  // not a simulated PDF generator. Future on-demand rendering can use this
+  // preparation boundary without changing the reader-facing action flow.
+  function clearPreparation(nextKey=''){
+    if(preparation.controller)preparation.controller.abort();
+    if(preparation.url)URL.revokeObjectURL(preparation.url);
+    preparation={key:nextKey,root,controller:null,request:preparation.request+1,
+      busy:false,url:null,error:''};
+  }
+  function syncPreparation(found,isPersonal,file){
+    const key=file+'@'+(found.record?.sha256||'');
+    if(preparation.key!==key||preparation.root!==root)clearPreparation(key);
+    const prepare=root.querySelector('#gn-es-prepare');
+    const download=root.querySelector('[data-es-action="download"]');
+    const open=root.querySelector('[data-es-action="open"]');
+    const bar=prepare.querySelector('[data-es-prepare-progress]');
+    const status=root.querySelector('#gn-es-prepare-status');
+    prepare.hidden=isPersonal||!!preparation.url;
+    prepare.disabled=found.status!=='ready'||preparation.busy;
+    prepare.setAttribute('aria-busy',String(preparation.busy));
+    prepare.querySelector('[data-es-prepare-label]').textContent=
+      preparation.busy?'Preparing PDF…':'Prepare PDF';
+    bar.hidden=!preparation.busy;
+    download.hidden=isPersonal||!preparation.url;
+    if(preparation.url){
+      download.href=preparation.url;
+      download.download=(file.split('/').pop()||'daruri.pdf').replace(/[^a-z0-9._-]/gi,'_');
+    }else download.removeAttribute('href');
+    open.hidden=isPersonal;
+    status.hidden=!preparation.error;
+    status.textContent=preparation.error;
+  }
+  async function prepareExistingPDF(){
+    const host=root,found=resolve(),file=publicFile(found);
+    if(!host?.isConnected||found.status!=='ready'||!file||hasPersonal())return;
+    const key=file+'@'+(found.record?.sha256||'');
+    if(preparation.key!==key||preparation.root!==host)clearPreparation(key);
+    if(preparation.busy||preparation.url)return;
+    const original=host.querySelector('[data-es-action="open"]').getAttribute('href');
+    if(!original)return;
+    const abort=new AbortController(),serial=++preparation.request;
+    const stillCurrent=()=>host.isConnected&&host===root&&
+      preparation.request===serial&&preparation.key===key;
+    preparation.controller=abort;preparation.busy=true;preparation.error='';
+    const progress=host.querySelector('[data-es-prepare-progress]');
+    progress.hidden=false;progress.removeAttribute('value');
+    syncPreparation(found,false,file);
+    try{
+      const response=await fetch(new URL(original,document.baseURI),{
+        cache:'no-store',credentials:'same-origin',signal:abort.signal
+      });
+      if(!response.ok)throw Error('PDF request failed (HTTP '+response.status+').');
+      const expectedLength=Number(response.headers.get('Content-Length'))||0;
+      if(expectedLength>100*1024*1024)throw Error('Selected PDF exceeds the browser preparation limit.');
+      let bytes;
+      if(response.body?.getReader){
+        const reader=response.body.getReader(),chunks=[];let received=0;
+        if(expectedLength){progress.max=expectedLength;progress.value=0;}
+        while(true){
+          const {done,value}=await reader.read();
+          if(done)break;
+          if(!stillCurrent()){await reader.cancel();return;}
+          received+=value.length;
+          if(received>100*1024*1024)throw Error('Selected PDF is unexpectedly large.');
+          chunks.push(value);
+          if(expectedLength)progress.value=Math.min(received,expectedLength);
+        }
+        bytes=new Uint8Array(received);let offset=0;
+        for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.length;}
+      }else bytes=new Uint8Array(await response.arrayBuffer());
+      if(!stillCurrent())return;
+      if(bytes.length<5||String.fromCharCode(...bytes.slice(0,5))!=='%PDF-')
+        throw Error('The selected file is not a PDF.');
+      const expected=String(found.record?.sha256||'').toLowerCase();
+      if(!/^[a-f0-9]{64}$/.test(expected))
+        throw Error('The publication does not have a verified SHA-256 checksum.');
+      if(!crypto?.subtle?.digest)
+        throw Error('PDF verification is unavailable in this browser. Use Open existing PDF.');
+      progress.removeAttribute('value'); // Actual hash verification is indeterminate.
+      const hash=new Uint8Array(await crypto.subtle.digest('SHA-256',bytes.buffer));
+      const actual=Array.from(hash,byte=>byte.toString(16).padStart(2,'0')).join('');
+      if(actual!==expected)throw Error('PDF verification failed; no download was prepared.');
+      if(!stillCurrent())return;
+      preparation.url=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
+    }catch(error){
+      if(stillCurrent()&&error?.name!=='AbortError')
+        preparation.error=String(error?.message||error)+
+          ' You can still open the published PDF directly.';
+    }finally{
+      if(stillCurrent()){
+        preparation.busy=false;preparation.controller=null;
+        syncPreparation(found,false,file);
+      }
+    }
+  }
   function refresh(){
     if(!root?.isConnected)return;
     const s=current(),result=resolve(),isPersonal=hasPersonal();
@@ -329,11 +424,11 @@
       result.record.pages+' pages · '+Math.round(Number(result.record.bytes||result.record.size_bytes||0)/1024)+' KB':'';
     const msg=root.querySelector('[data-es-availability-heading]');
     const detail=root.querySelector('[data-es-availability-detail]');
-    msg.textContent=result.status==='ready'?'Verified PDF available':
-      result.status==='loading'?'Checking published editions…':'PDF not available for this selection';
-    detail.textContent=result.status==='ready'?
-      'This exact published PDF will be used. Personal notes are never uploaded.':result.reason;
-    root.querySelector('.gn-es-availability').dataset.esStatus=result.status;
+    const availability=root.querySelector('.gn-es-availability');
+    availability.hidden=result.status==='ready';
+    msg.textContent=result.status==='loading'?'Checking PDF selection…':'PDF unavailable for this selection';
+    detail.textContent=result.reason||'';
+    availability.dataset.esStatus=result.status;
     const link=root.querySelector('[data-es-action="open"]');
     const pdfFile=publicFile(result);
     selectedRow=result.record;
@@ -346,14 +441,17 @@
     }else link.removeAttribute('href');
     link.setAttribute('aria-disabled',String(result.status!=='ready'));
     if(personalReady)syncExport(mapReady?pdfFile:'');
+    syncPreparation(result,isPersonal,pdfFile);
     const openVisible=!isPersonal;
-    link.hidden=!openVisible;
     const generated=root.querySelector('#pe-generate');
     generated.hidden=openVisible;
     if(isPersonal&&(!mapReady||!personalReady)){
       generated.disabled=true;
-      if(!mapReady)detail.textContent='This exact PDF has no verified personal map. Choose another edition; no substitute will be used.';
-      else detail.textContent='Preparing browser-local personal PDF tools…';
+      availability.hidden=false;
+      msg.textContent=!mapReady?'Personal PDF cannot be prepared':'Preparing personal PDF tools…';
+      detail.textContent=!mapReady?
+        'This edition has no verified map for personal notes. Choose another selection.':
+        'Personal notes are processed on your device, not uploaded.';
     }
     // Study Guide is a separate teaching companion, linked from its own Study Guide page.
     for(const b of root.querySelectorAll('[data-es-picker-mode]')){
@@ -413,6 +511,7 @@
   function onClick(event){
     const b=event.target.closest('button');
     if(!b||!root?.contains(b))return;
+    if(b.dataset.esPrepare!==undefined){void prepareExistingPDF();return;}
     if(b.dataset.esNav){
       tab=b.dataset.esNav;
       tier=tab==='reference'?'reference':tier==='reference'?'reading':tier;
@@ -506,6 +605,9 @@
     }
   }
   function mount(main){
+    if(preparation.controller)preparation.controller.abort();
+    if(preparation.url)URL.revokeObjectURL(preparation.url);
+    preparation={key:'',root:null,controller:null,request:preparation.request+1,busy:false,url:null,error:''};
     const legacy=main.querySelector('.gn-editions');
     if(!legacy)return;
     main.querySelector('.gn-es')?.remove();
