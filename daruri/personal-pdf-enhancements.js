@@ -174,12 +174,10 @@
       if(!res.ok)throw Error('Locally hosted Unicode font unavailable: '+name);
       return res.arrayBuffer();
     }));
-    // Keep the tested smaller font subsets and avoid Arabic contextual glyph
-    // substitutions in the invisible text layer. Visible Arabic is already
-    // rasterized; text runs below use isolated codepoints for ToUnicode.
+    // Testing unsubsetted fonts for correct Arabic glyph-to-Unicode mapping;
+    // visible appendix type is separately rendered on the canvas.
     const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:true})));
-    const actualTextAnchor=await pdf.embedFont(window.PDFLib.StandardFonts.Helvetica);
-    return {latin,arabic,actualTextAnchor,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
+    return {latin,arabic,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
   }
   function fontRuns(text,fonts,size){
     const runs=[];let last=null;
@@ -202,45 +200,81 @@
     }
     return runs.map(x=>({...x,width:x.font.widthOfTextAtSize(x.text,size)}));
   }
+
+  // Exact, invisible Arabic searchable text; visible type is canvas-rendered.
+  // PDF Type3 /ToUnicode maps each source codepoint without fontkit ligatures.
+  const ARABIC_SEARCH_SPANS=/[\u0600-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]+/gu;
+  const ARABIC_SEARCH_CHAR=/[\u0600-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/u;
+  function exactArabicSearchFont(pdf,lines){
+    const {PDFName}=window.PDFLib;
+    const chars=[...new Set(lines.flatMap(row=>Array.from(String(row.text||'')).filter(ch=>ARABIC_SEARCH_CHAR.test(ch))))];
+    if(!chars.length)return null;
+    if(chars.length>250)throw Error('The personal appendix has too many distinct Arabic search codepoints on one page.');
+    const noInk=pdf.context.register(pdf.context.flateStream(new TextEncoder().encode('0 0 d0\n')));
+    const glyphs={},differences=[1],map=new Map();
+    chars.forEach((ch,index)=>{
+      const code=index+1,name='gn'+code;map.set(ch,code);
+      glyphs[name]=noInk;differences.push(PDFName.of(name));
+    });
+    const cmap='/CIDInit /ProcSet findresource begin\n12 dict begin\nbegincmap\n'+
+      '/CIDSystemInfo << /Registry (Gnamma) /Ordering (ExactArabic) /Supplement 0 >> def\n'+
+      '/CMapName /GnammaExactArabic def\n/CMapType 2 def\n'+
+      '1 begincodespacerange\n<00> <FF>\nendcodespacerange\n'+
+      chars.length+' beginbfchar\n'+
+      chars.map((ch,i)=>'<'+(i+1).toString(16).padStart(2,'0')+'> <'+
+        ch.codePointAt(0).toString(16).toUpperCase().padStart(4,'0')+'>').join('\n')+
+      '\nendbfchar\nendcmap\nCMapName currentdict /CMap defineresource pop\nend\nend\n';
+    const toUnicode=pdf.context.register(pdf.context.flateStream(new TextEncoder().encode(cmap)));
+    const face=pdf.context.obj({Type:PDFName.of('Font'),Subtype:PDFName.of('Type3'),
+      Name:PDFName.of('GNExactUnicode'),FontBBox:[0,0,1000,1000],
+      FontMatrix:[.001,0,0,.001,0,0],CharProcs:pdf.context.obj(glyphs),
+      Encoding:pdf.context.obj({Type:PDFName.of('Encoding'),Differences:differences}),
+      FirstChar:1,LastChar:chars.length,Widths:chars.map(()=>500),
+      Resources:pdf.context.obj({}),ToUnicode:toUnicode});
+    return {ref:pdf.context.register(face),map};
+  }
+  function drawExactArabicSearch(page,font,raw,x,y,size){
+    if(!font||!raw)return;
+    const {PDFName,PDFNumber,PDFOperator,PDFHexString}=window.PDFLib;
+    const hex=Array.from(raw).reverse().map(ch=>{
+      const code=font.map.get(ch);
+      if(!code)throw Error('Exact Arabic Unicode font is missing a letter.');
+      return code.toString(16).padStart(2,'0');
+    }).join('');
+    page.pushOperators(
+      PDFOperator.of('BT'),
+      PDFOperator.of('Tf',[PDFName.of('GNExactUnicode'),PDFNumber.of(size)]),
+      PDFOperator.of('Tr',[PDFNumber.of(3)]),
+      PDFOperator.of('Tm',[PDFNumber.of(1),PDFNumber.of(0),PDFNumber.of(0),PDFNumber.of(1),PDFNumber.of(x),PDFNumber.of(y)]),
+      PDFOperator.of('Tj',[PDFHexString.of(hex)]),
+      PDFOperator.of('ET')
+    );
+  }
+
   function textOverlay(pdf,page,searchLines,sheet,fonts){
     let n=0;const W=sheet.W,H=sheet.H,pad=sheet.padding;
+    const exactFont=exactArabicSearchFont(pdf,searchLines);
+    if(exactFont)page.node.setFontDictionary(window.PDFLib.PDFName.of('GNExactUnicode'),exactFont.ref);
     for(const line of searchLines){
       const s=String(line.text||'');if(!s.trim())continue;
       const size=Math.max(8,Math.min(18,(line.size||26)/2));
-      const runs=fontRuns(s,fonts,size);
-      if(!runs.length)continue;
+      // Arabic runs use the independent Type3 /ToUnicode text layer below;
+      // fontkit shaping corrupts their searchable character mapping.
+      const runs=fontRuns(s.replace(ARABIC_SEARCH_SPANS,' '),fonts,size);
+      // Arabic-only lines may legitimately have no Latin glyph runs.
       const width=runs.reduce((a,r)=>a+r.width,0);
       let x=(line.rtl?(W-pad)/2-width:(pad+(line.indent||0))/2);
       const y=(H-line.y)/2;
-      // Retain the tested original Unicode layer for PDFKit and PDF.js.
-      // The extra Arabic fallback below is invisible, deliberately separate,
-      // and does not change the canvas-rendered scholarly typography.
+      // The Latin layer has stable ToUnicode mapping. The separately
+      // constructed Type3 font handles exact Arabic characters.
       for(const run of runs){
         if(run.text){page.drawText(run.text,{x,y,size,font:run.font,opacity:0});n++;}
         x+=run.width;
       }
-      if(/[\u0600-\u08FF]/u.test(s)){
-        const arabicChunks=s.match(/[\u0600-\u08FF][\u0600-\u08FF\s.,،؛؟!—-]*/gu)||[];
-        const arabic=arabicChunks.map(v=>v.trim()).filter(Boolean).join(' ')
-          .normalize('NFD').replace(/\p{M}/gu,'');
-        const latin=s.replace(/[\u0600-\u08FF][\u0600-\u08FF\s.,،؛؟!—-]*/gu,' ')
-          .replace(/\s+/g,' ').trim();
-        if(arabic){
-          // PDFium's RTL marked-content /ActualText algorithm reverses Arabic
-          // strings during extraction. Supplying reversed Unicode produces
-          // correct logical Arabic on Android, while the visible original text
-          // and the original Unicode layer remain unchanged for other readers.
-          // Separate baselines prevent PDFium from reversing mixed Latin runs.
-          const {PDFOperator,PDFName,PDFHexString}=window.PDFLib;
-          const rtl=Array.from(arabic).reverse().join('');
-          page.pushOperators(PDFOperator.of('BDC',[PDFName.of('Span'),
-            pdf.context.obj({ActualText:PDFHexString.fromText(rtl)})]));
-          page.drawText('A',{x:12,y:y-13,size,font:fonts.actualTextAnchor,opacity:0});
-          page.pushOperators(PDFOperator.of('EMC'));
-          n++;
-        }
-        if(latin){
-          page.drawText(latin,{x:12,y:y-28,size,font:fonts.latin,opacity:0});
+      if(exactFont){
+        const spans=[...s.matchAll(ARABIC_SEARCH_SPANS)];
+        for(let i=0;i<spans.length;i++){
+          drawExactArabicSearch(page,exactFont,spans[i][0],12+i*13,y-38,size);
           n++;
         }
       }
