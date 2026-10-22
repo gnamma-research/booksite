@@ -407,3 +407,7 @@
  .gnamma-home .home-purpose p{margin:0}
  #fallbackReader .fb-purpose{max-width:780px;line-height:1.7;color:var(--text-soft)}
 }
+
+/* One download destination. Editions contains the PDF and offline HTML choices;
+   hide the duplicate PDF lists in enhanced and no-JS contents menus. */
+#downloadsMenu,#fb-downloads-menu{display:none!important}

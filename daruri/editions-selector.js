@@ -24,6 +24,8 @@
   let tier='reading',preset='reading',tab='reading',customOpen=false;
   let catalog=null,addon=null,reference=null,baseMaps=null,root=null,requestId=0;
   let personalReady=false,selectedFile='',selectedRow=null;
+  // Existing PDFs are retrieved and SHA-256 checked on request, never falsely "generated".
+  let preparation={key:'',root:null,controller:null,request:0,busy:false,url:null,error:''};
   const esc=value=>String(value??'').replace(/[&<>"']/g,
     c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const iconPaths={
@@ -99,14 +101,14 @@
         '<div class="gn-es-setting gn-es-presets" data-es-presets>'+
           '<span class="gn-es-setting-label">Start with</span><div class="gn-es-setting-body">'+
             '<div class="gn-es-preset-options" role="group" aria-label="Starting edition">'+
-              '<button type="button" class="gn-es-preset" data-es-preset="reading" aria-pressed="true"><strong>Reading</strong><small>Clean text</small></button>'+
-              '<button type="button" class="gn-es-preset" data-es-preset="study" aria-pressed="false"><strong>Study</strong><small>Guided notes</small></button>'+
-              '<button type="button" class="gn-es-preset" data-es-preset="custom" aria-pressed="false"><strong>Custom</strong><small>Choose options</small></button>'+
+              '<button type="button" class="gn-es-preset" data-es-preset="reading" aria-pressed="true"><strong>Reading</strong><small>Text only</small></button>'+
+              '<button type="button" class="gn-es-preset" data-es-preset="study" aria-pressed="false"><strong>Study</strong><small>Notes + index</small></button>'+
+              '<button type="button" class="gn-es-preset" data-es-preset="custom" aria-pressed="false"><strong>Customize</strong><small>Other options</small></button>'+
             '</div><span class="gn-es-inline-note" data-es-preset-note></span></div>'+
         '</div>'+
-        '<div class="gn-es-custom-head" data-es-custom-head>'+
+        '<div class="gn-es-custom-head" data-es-custom-head hidden>'+
           '<button type="button" class="gn-es-custom-trigger" data-es-custom aria-expanded="false" aria-controls="gn-es-custom">'+
-          '<span>Customize edition</span>'+icon('chevron','gn-es-custom-arrow')+'</button></div>'+
+          '<span>Custom edition settings</span>'+icon('chevron','gn-es-custom-arrow')+'</button></div>'+
         '<div id="gn-es-custom" class="gn-es-custom" hidden>'+
           '<div class="gn-es-custom-setting">'+
             '<span class="gn-es-setting-label">Publisher notes</span>'+
@@ -161,33 +163,46 @@
               '</div>'+
             '</div></div>'+
           '<section class="gn-es-spec" aria-label="Current document configuration">'+
-            '<div class="gn-es-spec-head"><strong>Selected PDF</strong><span data-es-count></span></div>'+
+            '<div class="gn-es-spec-head"><strong>Your selected edition</strong><span data-es-count></span></div>'+
             '<p class="gn-es-spec-lead" data-es-spec-lead></p>'+
             '<p class="gn-es-spec-layout" data-es-spec-layout></p>'+
-            '<p class="gn-es-spec-notes" data-es-spec-notes></p>'+
-            '<p class="gn-es-spec-apparatus" data-es-spec-apparatus></p>'+
+            '<details class="gn-es-spec-detail"><summary>What’s included</summary>'+
+              '<p class="gn-es-spec-notes" data-es-spec-notes></p>'+
+              '<p class="gn-es-spec-apparatus" data-es-spec-apparatus></p></details>'+
           '</section>'+
           '<section class="gn-es-availability" aria-live="polite" aria-atomic="true">'+
-            '<strong data-es-availability-heading>Checking published PDFs…</strong><p data-es-availability-detail></p></section>'+
+            '<strong data-es-availability-heading>Checking PDF selection…</strong><p data-es-availability-detail></p></section>'+
           '<div id="pe-alert" class="gn-es-inline-alert" role="status" hidden></div>'+
           '<p id="pe-description" class="gn-es-inline-note" hidden></p>'+
           '<div class="gn-es-actions">'+
-            '<a class="gn-es-action gn-es-action-primary" data-es-action="open" aria-label="Open exact published PDF" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Open PDF</span></a>'+
+            '<button type="button" class="gn-es-action gn-es-action-primary" id="gn-es-prepare" data-es-prepare>'+
+              '<span data-es-prepare-label>Prepare PDF</span><progress data-es-prepare-progress aria-label="PDF retrieval and verification progress" max="100" value="0" hidden></progress></button>'+
+            '<a class="gn-es-action gn-es-action-primary" data-es-action="download" download hidden>Download PDF</a>'+
+            '<a class="gn-es-action gn-es-action-secondary" data-es-action="open" aria-label="Open existing published PDF in browser" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Open existing PDF</span></a>'+
             '<button class="gn-es-action gn-es-action-primary" type="submit" id="pe-generate" hidden disabled>Create my PDF</button>'+
-          '</div>'+
+          '</div><p id="gn-es-prepare-status" class="gn-es-prepare-status" role="status" hidden></p>'+
           '<a id="pe-clean" hidden></a>'+
           '<div id="pe-progress" hidden role="status" aria-live="polite">'+
             '<span id="pe-progress-text"></span><progress id="pe-bar" max="100" value="0"></progress></div>'+
           '<div id="pe-result" class="gn-es-export-result" hidden>'+
-            '<strong>Your personal PDF has been created on this device.</strong>'+
+            '<strong>Your personal PDF is prepared.</strong>'+
             '<div class="gn-es-export-result-actions">'+
-              '<a id="pe-result-link" download>Download again</a>'+
+              '<a id="pe-result-link" download>Download my PDF</a>'+
               '<a id="pe-open" target="_blank" rel="noopener">Open / print PDF</a>'+
               '<button type="button" id="pe-share" hidden>Share on this device</button>'+
             '</div></div>'+
         '</form>'+
-        '<p class="gn-es-study-guide" data-es-study-guide hidden>'+
-          '<a href="daruri-study-guide.pdf?v=daruri6-sources-20261020" target="_blank" rel="noopener noreferrer">Study Guide PDF ↗</a></p>'+
+      '</section>'+
+      '<section class="gn-es-offline" aria-labelledby="gn-es-offline-title">'+
+        '<h2 id="gn-es-offline-title">Offline reader · HTML</h2>'+
+        '<p>Download the reading website, dictionary, fonts and supporting files. This is not a PDF, and your private Reading Desk notes are not included.</p>'+
+        '<button type="button" class="gn-es-offline-download" data-daruri-bundle="html">Download HTML reader (.zip)</button>'+
+        '<details class="gn-es-offline-more"><summary>Also need the PDFs offline?</summary>'+
+          '<p>Download the same HTML reader with the available book PDFs. This is a much larger archive.</p>'+
+          '<button type="button" class="gn-es-offline-download gn-es-offline-secondary" data-daruri-bundle="full">Download HTML + PDFs (.zip)</button>'+
+        '</details>'+
+        '<p class="gn-offline-bundle-status" role="status" aria-live="polite"></p>'+
+        '<p class="gn-es-offline-footnote">Unzip without moving individual files. For complete functionality on desktop, open the folder using a local web server; opening file:// directly can restrict browser features. No internet is needed when served locally.</p>'+
       '</section></div>';
   }
   function apparatusLabel(s){
@@ -241,6 +256,101 @@
     if(!bridge?.ready)return false;
     return bridge.choose(file);
   }
+  // The published-file workflow is a real download and SHA-256 verification,
+  // not a simulated PDF generator. Future on-demand rendering can use this
+  // preparation boundary without changing the reader-facing action flow.
+  function clearPreparation(nextKey=''){
+    if(preparation.controller)preparation.controller.abort();
+    if(preparation.url)URL.revokeObjectURL(preparation.url);
+    preparation={key:nextKey,root,controller:null,request:preparation.request+1,
+      busy:false,url:null,error:''};
+  }
+  function syncPreparation(found,isPersonal,file){
+    const key=file+'@'+(found.record?.sha256||'');
+    if(preparation.key!==key||preparation.root!==root)clearPreparation(key);
+    const prepare=root.querySelector('#gn-es-prepare');
+    const download=root.querySelector('[data-es-action="download"]');
+    const open=root.querySelector('[data-es-action="open"]');
+    const bar=prepare.querySelector('[data-es-prepare-progress]');
+    const status=root.querySelector('#gn-es-prepare-status');
+    prepare.hidden=isPersonal||!!preparation.url;
+    prepare.disabled=found.status!=='ready'||preparation.busy;
+    prepare.setAttribute('aria-busy',String(preparation.busy));
+    prepare.querySelector('[data-es-prepare-label]').textContent=
+      preparation.busy?'Preparing PDF…':'Prepare PDF';
+    bar.hidden=!preparation.busy;
+    download.hidden=isPersonal||!preparation.url;
+    if(preparation.url){
+      download.href=preparation.url;
+      download.download=(file.split('/').pop()||'daruri.pdf').replace(/[^a-z0-9._-]/gi,'_');
+    }else download.removeAttribute('href');
+    open.hidden=isPersonal;
+    status.hidden=!preparation.error;
+    status.textContent=preparation.error;
+  }
+  async function prepareExistingPDF(){
+    const host=root,found=resolve(),file=publicFile(found);
+    if(!host?.isConnected||found.status!=='ready'||!file||hasPersonal())return;
+    const key=file+'@'+(found.record?.sha256||'');
+    if(preparation.key!==key||preparation.root!==host)clearPreparation(key);
+    if(preparation.busy||preparation.url)return;
+    const original=host.querySelector('[data-es-action="open"]').getAttribute('href');
+    if(!original)return;
+    const abort=new AbortController(),serial=++preparation.request;
+    const stillCurrent=()=>host.isConnected&&host===root&&
+      preparation.request===serial&&preparation.key===key;
+    preparation.controller=abort;preparation.busy=true;preparation.error='';
+    const progress=host.querySelector('[data-es-prepare-progress]');
+    progress.hidden=false;progress.removeAttribute('value');
+    syncPreparation(found,false,file);
+    try{
+      const response=await fetch(new URL(original,document.baseURI),{
+        cache:'no-store',credentials:'same-origin',signal:abort.signal
+      });
+      if(!response.ok)throw Error('PDF request failed (HTTP '+response.status+').');
+      const expectedLength=Number(response.headers.get('Content-Length'))||0;
+      if(expectedLength>100*1024*1024)throw Error('Selected PDF exceeds the browser preparation limit.');
+      let bytes;
+      if(response.body?.getReader){
+        const reader=response.body.getReader(),chunks=[];let received=0;
+        if(expectedLength){progress.max=expectedLength;progress.value=0;}
+        while(true){
+          const {done,value}=await reader.read();
+          if(done)break;
+          if(!stillCurrent()){await reader.cancel();return;}
+          received+=value.length;
+          if(received>100*1024*1024)throw Error('Selected PDF is unexpectedly large.');
+          chunks.push(value);
+          if(expectedLength)progress.value=Math.min(received,expectedLength);
+        }
+        bytes=new Uint8Array(received);let offset=0;
+        for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.length;}
+      }else bytes=new Uint8Array(await response.arrayBuffer());
+      if(!stillCurrent())return;
+      if(bytes.length<5||String.fromCharCode(...bytes.slice(0,5))!=='%PDF-')
+        throw Error('The selected file is not a PDF.');
+      const expected=String(found.record?.sha256||'').toLowerCase();
+      if(!/^[a-f0-9]{64}$/.test(expected))
+        throw Error('The publication does not have a verified SHA-256 checksum.');
+      if(!crypto?.subtle?.digest)
+        throw Error('PDF verification is unavailable in this browser. Use Open existing PDF.');
+      progress.removeAttribute('value'); // Actual hash verification is indeterminate.
+      const hash=new Uint8Array(await crypto.subtle.digest('SHA-256',bytes.buffer));
+      const actual=Array.from(hash,byte=>byte.toString(16).padStart(2,'0')).join('');
+      if(actual!==expected)throw Error('PDF verification failed; no download was prepared.');
+      if(!stillCurrent())return;
+      preparation.url=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
+    }catch(error){
+      if(stillCurrent()&&error?.name!=='AbortError')
+        preparation.error=String(error?.message||error)+
+          ' You can still open the published PDF directly.';
+    }finally{
+      if(stillCurrent()){
+        preparation.busy=false;preparation.controller=null;
+        syncPreparation(found,false,file);
+      }
+    }
+  }
   function refresh(){
     if(!root?.isConnected)return;
     const s=current(),result=resolve(),isPersonal=hasPersonal();
@@ -251,7 +361,7 @@
     }
     root.querySelector('#gn-es-panel').setAttribute('aria-labelledby','gn-es-tab-'+tab);
     root.querySelector('[data-es-presets]').hidden=tab==='reference';
-    root.querySelector('[data-es-custom-head]').hidden=tab==='reference';
+    root.querySelector('[data-es-custom-head]').hidden=tab==='reference'||preset!=='custom';
     root.querySelector('#gn-es-custom').hidden=tab==='reference'||!customOpen;
     root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen&&tab!=='reference'));
     root.querySelector('[data-es-reference-inventory]').hidden=tab!=='reference';
@@ -315,11 +425,11 @@
       result.record.pages+' pages · '+Math.round(Number(result.record.bytes||result.record.size_bytes||0)/1024)+' KB':'';
     const msg=root.querySelector('[data-es-availability-heading]');
     const detail=root.querySelector('[data-es-availability-detail]');
-    msg.textContent=result.status==='ready'?'Verified PDF available':
-      result.status==='loading'?'Checking published editions…':'PDF not available for this selection';
-    detail.textContent=result.status==='ready'?
-      'This exact published PDF will be used. Personal notes are never uploaded.':result.reason;
-    root.querySelector('.gn-es-availability').dataset.esStatus=result.status;
+    const availability=root.querySelector('.gn-es-availability');
+    availability.hidden=result.status==='ready';
+    msg.textContent=result.status==='loading'?'Checking PDF selection…':'PDF unavailable for this selection';
+    detail.textContent=result.reason||'';
+    availability.dataset.esStatus=result.status;
     const link=root.querySelector('[data-es-action="open"]');
     const pdfFile=publicFile(result);
     selectedRow=result.record;
@@ -332,16 +442,19 @@
     }else link.removeAttribute('href');
     link.setAttribute('aria-disabled',String(result.status!=='ready'));
     if(personalReady)syncExport(mapReady?pdfFile:'');
+    syncPreparation(result,isPersonal,pdfFile);
     const openVisible=!isPersonal;
-    link.hidden=!openVisible;
     const generated=root.querySelector('#pe-generate');
     generated.hidden=openVisible;
     if(isPersonal&&(!mapReady||!personalReady)){
       generated.disabled=true;
-      if(!mapReady)detail.textContent='This exact PDF has no verified personal map. Choose another edition; no substitute will be used.';
-      else detail.textContent='Preparing browser-local personal PDF tools…';
+      availability.hidden=false;
+      msg.textContent=!mapReady?'Personal PDF cannot be prepared':'Preparing personal PDF tools…';
+      detail.textContent=!mapReady?
+        'This edition has no verified map for personal notes. Choose another selection.':
+        'Personal notes are processed on your device, not uploaded.';
     }
-    root.querySelector('[data-es-study-guide]').hidden=tier!=='study';
+    // Study Guide is a separate teaching companion, linked from its own Study Guide page.
     for(const b of root.querySelectorAll('[data-es-picker-mode]')){
       const value=b.dataset.esPickerMode;
       const checked=root.querySelector('input[name="pe-mode"]:checked')?.value;
@@ -399,6 +512,7 @@
   function onClick(event){
     const b=event.target.closest('button');
     if(!b||!root?.contains(b))return;
+    if(b.dataset.esPrepare!==undefined){void prepareExistingPDF();return;}
     if(b.dataset.esNav){
       tab=b.dataset.esNav;
       tier=tab==='reference'?'reference':tier==='reference'?'reading':tier;
@@ -459,7 +573,7 @@
   }
   function loadScript(name){
     return new Promise((resolve,reject)=>{
-      const url=name+'?v=20261023-annotations';
+      const url=name+'?v=20261023-editions-delivery1';
       const el=document.createElement('script');
       el.src=url;el.async=true;
       el.onload=resolve;el.onerror=()=>reject(Error('Unable to load local '+name));
@@ -492,6 +606,9 @@
     }
   }
   function mount(main){
+    if(preparation.controller)preparation.controller.abort();
+    if(preparation.url)URL.revokeObjectURL(preparation.url);
+    preparation={key:'',root:null,controller:null,request:preparation.request+1,busy:false,url:null,error:''};
     const legacy=main.querySelector('.gn-editions');
     if(!legacy)return;
     main.querySelector('.gn-es')?.remove();

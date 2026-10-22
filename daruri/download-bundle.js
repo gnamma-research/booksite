@@ -5,7 +5,7 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "20261023-rd-ux1-20261023-hctx1-20261023-hen1";
+  const RELEASE_VERSION = "20261023-editions-delivery1";
   const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "quran-context-data.js", "QURAN_CONTEXT_SOURCES.md", "hadith-context-ui.js", "hadith-context-ui.css", "hadith-context-data.js", "hadith-context-metadata.js", "hadith-context-arabic-bukhari1.js", "hadith-context-arabic-bukhari2.js", "hadith-context-arabic-muslim.js", "hadith-context-arabic-abudawud1.js", "hadith-context-arabic-abudawud2.js", "hadith-context-arabic-tirmidhi.js", "hadith-context-arabic-sunan.js", "HADITH_CONTEXT_SOURCES.md", "hadith-context-english-bukhari-a.js", "hadith-context-english-bukhari-b.js", "hadith-context-english-bukhari-long.js", "hadith-context-english-abudawud-a.js", "hadith-context-english-abudawud-b.js", "hadith-context-english-tirmidhi-a.js", "hadith-context-english-tirmidhi-b.js", "hadith-context-english-tirmidhi-c.js", "hadith-context-english-muslim.js", "hadith-context-english-other.js", "gnamma-morphology.js", "gnamma-word-context.js", "gnamma-word-context.css", "morph-lexicon.json", "morph-daruri-v1.json", "morph-mustasfa-v1.json", "download-bundle.js", "bookmark-ui.js", "bookmark-ui.css", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
@@ -97,7 +97,7 @@
     return new Blob(parts, { type: 'application/zip' });
   }
 
-  function sourceFiles() {
+  function sourceFiles(mode='full') {
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
@@ -117,7 +117,7 @@
       ['daruri/reading-styles.css', 'reading-styles.css'],
       ['daruri/reading-styles.js', 'reading-styles.js'],
       ['daruri/visuals-controls.js', 'visuals-controls.js?v=20261020-visuals1'],
-      ['daruri/compact-menu.css', 'compact-menu.css?v=20261021-home-nav1'],
+      ['daruri/compact-menu.css', 'compact-menu.css?v=20261023-editions-delivery1'],
       ['daruri/english-fonts.css', 'english-fonts.css?v=20261020-fonts3'],
       ['daruri/fonts/english-font-faces.css', 'fonts/english-font-faces.css'],
       ['daruri/fonts/source-sans-3-normal.ttf', 'fonts/source-sans-3-normal.ttf'],
@@ -189,7 +189,7 @@
       ['daruri/hadith-context-english-tirmidhi-c.js', 'hadith-context-english-tirmidhi-c.js?v=20261023-hen1'],
       ['daruri/hadith-context-english-muslim.js', 'hadith-context-english-muslim.js?v=20261023-hen1'],
       ['daruri/hadith-context-english-other.js', 'hadith-context-english-other.js?v=20261023-hen1'],
-      ['daruri/download-bundle.js', 'download-bundle.js?v=20261023-annotations'],
+      ['daruri/download-bundle.js', 'download-bundle.js?v=20261023-editions-delivery1'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
       ['daruri/study-guide.css', 'study-guide.css'],
@@ -197,13 +197,13 @@
       ['daruri/editions.css', 'editions.css?v=20261021-editiontabs-vowels-release1'],
       ['daruri/editions-icons.css','editions-icons.css?v=20261023-ar-overbar1'],
       ['daruri/editions-icons.js','editions-icons.js?v=20261023-personal-icons'],
-      ['daruri/editions-selector.js','editions-selector.js?v=20261023-annotations'],
-      ['daruri/editions-selector.css','editions-selector.css?v=20261023-ar-overbar1'],
+      ['daruri/editions-selector.js','editions-selector.js?v=20261023-editions-delivery1'],
+      ['daruri/editions-selector.css','editions-selector.css?v=20261023-editions-delivery1'],
       ['daruri/editions/manifest.json','editions/manifest.json?v=20261021-bilingual-vowels1'],
       ['daruri/editions/apparatus/manifest.json','editions/apparatus/manifest.json?v=20261021-a4-apparatus1'],
       ['daruri/editions/maps/manifest.json','editions/maps/manifest.json?v=20261022-base-personal-word-maps'],
       ['daruri/personal-export.html', 'personal-export.html'],
-      ['daruri/personal-export.js', 'personal-export.js?v=20261023-annotations'],
+      ['daruri/personal-export.js', 'personal-export.js?v=20261023-editions-delivery1'],
       ['daruri/personal-pdf-enhancements.js','personal-pdf-enhancements.js?v=two-tabs-20261022'],
       ['daruri/personal-export.css', 'personal-export.css?v=3'],
       ['daruri/vendor/pdf-lib-1.17.1.min.js', 'vendor/pdf-lib-1.17.1.min.js'],
@@ -222,7 +222,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261023-ar-overbar1'],
+      ['daruri/sw.js', 'sw.js?v=20261023-editions-delivery1'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
@@ -288,7 +288,11 @@
       pdfs.set('daruri/' + relative, relative);
     }
     for (const entry of pdfs) files.push(entry);
-    return { files, pdfNames: [...pdfs.keys()] };
+    // The smaller offline HTML download does not silently bundle book PDFs.
+    // PDF navigation maps have no use without their corresponding PDFs.
+    const selected=mode==='html'?
+      files.filter(([name])=>!/\.pdf(?:\.(?:metadata\.)?json)?$/i.test(name)):files;
+    return {files:selected,pdfNames:mode==='html'?[]:[...pdfs.keys()]};
   }
 
   async function readFile(name, path) {
@@ -306,72 +310,83 @@
     return { name, bytes };
   }
 
-  const buttons = [...document.querySelectorAll('a[data-daruri-bundle]')];
-  let working = false;
-  function report(message) {
-    for (const button of buttons) {
-      const status = button.parentElement.querySelector('.gn-offline-bundle-status');
-      if (status) status.textContent = message;
+  // Delegation is essential: Editions is mounted dynamically after this script loads.
+  let working=false;
+  function report(button,message){
+    const scope=button.closest('.gn-es-offline,.gn-pdf-editions')||button.parentElement;
+    const status=scope?.querySelector('.gn-offline-bundle-status');
+    if(status)status.textContent=message;
+  }
+  async function assemble(button,mode){
+    if(working)return;
+    if(location.protocol==='file:'){
+      report(button,'Open this package through a local web server to rebuild it.');
+      return;
+    }
+    working=true;button.setAttribute('aria-busy','true');
+    try{
+      const manifest=sourceFiles(mode),length=manifest.files.length;
+      const files=new Array(length);
+      let next=0,completed=0;
+      report(button,'Collecting reader files (0/'+length+')…');
+      // Limit concurrent fetches so the hosted reader remains responsive.
+      async function worker(){
+        while(next<length){
+          const index=next++;
+          const [name,path]=manifest.files[index];
+          files[index]=await readFile(name,path);
+          completed++;
+          if(completed===length||completed%5===0)
+            report(button,'Collecting reader files ('+completed+'/'+length+')…');
+        }
+      }
+      await Promise.all(Array.from({length:Math.min(6,length)},worker));
+      const details=[
+        'Gnamma Research — al-Daruri offline reading package',
+        '',
+        'Extract the entire ZIP, preserving folder structure.',
+        'The HTML reader is at daruri/index.html.',
+        mode==='html'?'This package does not include any PDFs.':
+          'This package includes the available published PDFs as listed below.',
+        'No personal notes, bookmarks, highlights or browser-local data are included.',
+        '',
+        'For full desktop use, open a terminal in the extracted package root:',
+        '  python3 -m http.server 8000',
+        'Then open: http://localhost:8000/daruri/index.html',
+        'This uses files on your own computer; no internet connection is needed.',
+        'Opening index.html as file:// may block browser fetch and search features.',
+        'On iPhone/iPad, opening local HTML from Files may be limited by the browser.',
+        'External links and online services still require a connection.',
+        ...(mode==='html'?[]:['','PDFs included:',...manifest.pdfNames.map(x=>'  '+x)]),
+        '',
+        'Assembled from: '+root.href,
+        'Created: '+new Date().toISOString(),
+        ''
+      ].join('\n');
+      files.unshift({name:'READ-ME-FIRST.txt',bytes:encoder.encode(details)});
+      report(button,'Packaging '+length+' downloaded files…');
+      const zip=makeZip(files),downloadUrl=URL.createObjectURL(zip);
+      const a=document.createElement('a');
+      a.href=downloadUrl;
+      a.download=mode==='html'?'Gnamma_Daruri_Offline_HTML.zip':
+        'Gnamma_Daruri_Offline_HTML_and_PDFs.zip';
+      a.style.display='none';document.body.appendChild(a);
+      a.click();a.remove();
+      setTimeout(()=>URL.revokeObjectURL(downloadUrl),60000);
+      report(button,'Archive created; check your downloads.');
+    }catch(error){
+      report(button,'Could not prepare the archive: '+String(error?.message||error)+
+        '. Your browser files and saved notes are unchanged.');
+      console.error('Daruri offline bundle:',error);
+    }finally{
+      button.removeAttribute('aria-busy');
+      working=false;
     }
   }
-
-  for (const button of buttons) {
-    button.addEventListener('click', async event => {
-      if (button.dataset.bundleFailed === '1') return; // Working GitHub ZIP fallback
-      event.preventDefault();
-      if (working) return;
-      if (location.protocol === 'file:') {
-        report('Already viewing local files; use the downloaded ZIP.');
-        return;
-      }
-      working = true;
-      for (const item of buttons) item.setAttribute('aria-busy', 'true');
-      try {
-        report('Gathering reader files and PDFs…');
-        const manifest = sourceFiles();
-        const files = await Promise.all(manifest.files.map(([name, path]) => readFile(name, path)));
-        const details = [
-          'Gnamma Research — al-Daruri HTML and PDF study package',
-          '',
-          'Unzip the package, preserving its folders.',
-          'Open daruri/index.html to read the Arabic-English text.',
-          'Open daruri/dictionary.html for the historical dictionary.',
-          '',
-          'PDFs included:',
-          ...manifest.pdfNames.map(name => '  ' + name),
-          '',
-          'The HTML reader uses accompanying JavaScript and image files in',
-          'their original relative paths. Do not move index.html on its own.',
-          'For best offline compatibility, use a modern desktop web browser.',
-          'On iPhone/iPad, local HTML and scripting are dependent on the Files',
-          'app and browser restrictions; PDFs remain available normally.',
-          'External citations and online services still require connectivity.',
-          '',
-          'Assembled from: ' + root.href,
-          'Generated: ' + new Date().toISOString(),
-          ''
-        ].join('\n');
-        files.unshift({ name: 'READ-ME-FIRST.txt', bytes: encoder.encode(details) });
-        report('Building ZIP package…');
-        const zip = makeZip(files);
-        const downloadUrl = URL.createObjectURL(zip);
-        const link = document.createElement('a');
-        link.href = downloadUrl;
-        link.download = 'Gnamma_Daruri_Reader_HTML_PDFs.zip';
-        link.style.display = 'none';
-        document.body.appendChild(link);
-        link.click();
-        link.remove();
-        setTimeout(() => URL.revokeObjectURL(downloadUrl), 60000);
-        report('ZIP ready — check your downloads.');
-      } catch (error) {
-        report('Package unavailable here. Tap again for the full GitHub source ZIP.');
-        for (const item of buttons) item.dataset.bundleFailed = '1';
-        console.error('Daruri offline bundle:', error);
-      } finally {
-        for (const item of buttons) item.removeAttribute('aria-busy');
-        working = false;
-      }
-    });
-  }
+  document.addEventListener('click',event=>{
+    const button=event.target.closest?.('[data-daruri-bundle]');
+    if(!button)return;
+    event.preventDefault();
+    void assemble(button,button.dataset.daruriBundle==='html'?'html':'full');
+  });
 })();

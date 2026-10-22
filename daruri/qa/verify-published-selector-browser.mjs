@@ -60,11 +60,29 @@ try{
   await page.waitForFunction(()=>document.querySelector('#pe-edition')?.value.includes('reading/daruri-reading-bilingual-titles-off.pdf'),
     {timeout:20000});
   assert.equal(await ui.locator('[data-es-action="open"]').isVisible(),true);
+  assert.equal(await status.isVisible(),false,'Available PDF needs no redundant success banner');
+  assert.equal(await ui.locator('[data-es-study-guide]').count(),0,
+    'Separate Study Guide PDF must not be presented as another book edition');
+  assert.equal(await ui.locator('[data-daruri-bundle="html"]').count(),1,
+    'Offline HTML reader belongs inside Editions');
+  const alignment=await ui.locator('.gn-es-language-label').evaluateAll(nodes=>
+    nodes.map(n=>{const r=n.getBoundingClientRect();return (r.top+r.bottom)/2;}));
+  assert.ok(Math.abs(alignment[0]-alignment[1])<=1,
+    'Vowelled AR must stay centred on the same baseline as EN: '+alignment);
+  await ui.locator('#gn-es-prepare').click();
+  await ui.locator('[data-es-action="download"]').waitFor({state:'visible',timeout:50000});
+  assert.equal(await ui.locator('#gn-es-prepare').isVisible(),false);
+  assert.equal(await ui.locator('#gn-es-prepare-status').isVisible(),false);
+  const preparedDownload=page.waitForEvent('download',{timeout:20000});
+  await ui.locator('[data-es-action="download"]').click();
+  assert.match((await preparedDownload).suggestedFilename(),/daruri-reading-bilingual-titles-off\.pdf/);
   await ui.locator('[data-es-toggle="ar"]').click();
   await check('ready');
   assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),true,
     'Study may not silently change an English-only source to bilingual');
   assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.ar,false);
+  assert.equal(await ui.locator('#gn-es-prepare').isVisible(),true,
+    'Changing edition settings invalidates the old prepared download');
   await ui.locator('[data-es-toggle="ar"]').click();
   await check('ready');
   assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.vowels,false,
@@ -88,12 +106,13 @@ try{
   assert.equal(await ui.locator('#pe-count').isVisible(),true);
   assert.match(await ui.locator('#pe-count').innerText(),/1 qualifying item/);
 
-  // Actually generate a P-numbered personal PDF in the embedded form.
-  const downloading=page.waitForEvent('download',{timeout:150000});
+  // Generate a P-numbered personal PDF; the user decides when to download.
   await ui.locator('#pe-generate').click();
+  await ui.locator('#pe-result').waitFor({state:'visible',timeout:150000});
+  const downloading=page.waitForEvent('download',{timeout:20000});
+  await ui.locator('#pe-result-link').click();
   const receipt=await downloading;
   assert.match(receipt.suggestedFilename(),/daruri-reading-bilingual-titles-off-personal-\d{4}-\d\d-\d\d\.pdf/);
-  await ui.locator('#pe-result').waitFor({state:'visible',timeout:150000});
   assert.match(await ui.locator('#pe-alert').innerText(),/1 personal item included/);
   assert.match(await ui.locator('#pe-alert').innerText(),/1 clickable phrase highlight/,
     'The certified source quotation should become exactly one clickable word-level highlight');
@@ -106,16 +125,16 @@ try{
   assert.equal(await ui.locator('#pe-edition').inputValue(),
     'editions/study/daruri-study-bilingual-titles-off.pdf');
   assert.equal(await ui.locator('[data-es-toggle="ar"]').isDisabled(),true);
-  assert.match(await ui.locator('.gn-es-spec-notes').innerText(),/Publisher notes: Selected/);
+  assert.match(await ui.locator('.gn-es-spec-notes').textContent(),/Publisher notes: Selected/);
   await pressPreset('reading');
   await check('ready');
-  await ui.locator('[data-es-custom]').click();
+  await pressPreset('custom');
   assert.equal(await ui.locator('#gn-es-custom').isVisible(),true);
   await include('glossary');
   await include('index');
   await check('ready');
   assert.match(await ui.locator('#pe-edition').inputValue(),/apparatus\/daruri-reading-bilingual-glossary-index\.pdf/);
-  assert.match(await ui.locator('.gn-es-spec-apparatus').innerText(),/Glossary · Full index/);
+  assert.match(await ui.locator('.gn-es-spec-apparatus').textContent(),/Glossary · Full index/);
 
   // The same personal controls must work inside scholarly Reference.
   await ui.getByRole('tab',{name:'Reference'}).click();
@@ -123,6 +142,7 @@ try{
   assert.equal(await ui.locator('[data-es-reference-inventory]').isVisible(),true);
   assert.equal(await ui.locator('#pe-edition').inputValue(),'daruri.pdf');
   assert.equal(await ui.locator('#pe-personal').isChecked(),true);
+  assert.equal(await ui.locator('[data-daruri-bundle="html"]').isVisible(),true);
   await ui.locator('#pe-bookmarks').check();
   assert.match(await ui.locator('#pe-count').innerText(),/2 qualifying items/);
   await ui.locator('#pe-highlights').check();
@@ -138,7 +158,7 @@ try{
   await page.screenshot({path:path.join(captures,'daruri-two-tabs-mobile.png'),fullPage:true});
   const measurement=await page.evaluate(()=>{
     const root=document.querySelector('.gn-es'),panel=root.querySelector('#gn-es-panel');
-    const action=root.querySelector('[data-es-action="open"]');
+    const action=root.querySelector('#gn-es-prepare');
     const buttons=[...root.querySelectorAll('button')].filter(n=>!n.hidden&&n.getClientRects().length);
     return {overflow:document.documentElement.scrollWidth-innerWidth,
       minButton:Math.min(...buttons.map(n=>n.getBoundingClientRect().height)),
@@ -150,7 +170,7 @@ try{
   await page.setViewportSize({width:320,height:690});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth)<=2,'320px overflow');
   assert.deepEqual(errors,[],'Uncaught JavaScript runtime exceptions');
-  console.log('PASS: 2 tabs, 3 presets, inline private PDF generation, exact base/apparatus matching, Reference and 390/320px phone layout');
+  console.log('PASS: real verified PDF preparation/download, no duplicate Study Guide/status, independent personal export, offline HTML choice and mobile layout');
 }finally{
   await context.close();
   await browser.close();
