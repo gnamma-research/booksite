@@ -1,0 +1,62 @@
+name: Daruri native Arabic source and footnote release audit
+
+on:
+  push:
+    branches: [qa/daruri-source-search-footnotes-20261022]
+    paths:
+      - 'daruri/qa/audit_native_source_and_notes.py'
+      - '.github/workflows/daruri-native-source-note-audit.yml'
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: 'Enforce release gates rather than collect diagnostic evidence'
+        required: false
+        type: boolean
+        default: false
+      note_policy:
+        description: 'Approved source note layout policy'
+        required: false
+        type: choice
+        default: undecided
+        options: [undecided, same-page, adjacent, section]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daruri-source-note-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install source-only PDF inspection dependencies
+        run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: Inspect five canonical and twelve A4 published PDFs without mutation
+        run: |
+          python daruri/qa/audit_native_source_and_notes.py \
+            --scope base --render-evidence 2 \
+            --output-dir /tmp/daruri-native-source-gate
+      - name: Optional hard release check (does not alter published PDFs)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.strict == true }}
+        run: |
+          python daruri/qa/audit_native_source_and_notes.py \
+            --scope base --strict \
+            --note-policy '${{ inputs.note_policy }}' \
+            --output-dir /tmp/daruri-native-source-gate
+      - name: Preserve machine-readable report and visible evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-native-source-search-and-note-audit
+          path: |
+            /tmp/daruri-native-source-gate/native-source-note-audit.json
+            /tmp/daruri-native-source-gate/native-source-note-audit.md
+            /tmp/daruri-native-source-gate/*cross-page-note*.png
+          if-no-files-found: warn
