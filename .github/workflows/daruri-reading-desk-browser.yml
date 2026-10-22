@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
+      - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
       - 'daruri/reading-desk.js'
       - 'daruri/reading-desk.css'
       - 'daruri/index.html'
@@ -13,6 +14,7 @@ on:
     paths:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
+      - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
       - 'daruri/reading-desk.js'
       - 'daruri/reading-desk.css'
       - 'daruri/index.html'
@@ -37,6 +39,8 @@ jobs:
           npx --prefix daruri/qa playwright install --with-deps chromium webkit
       - name: Exercise actual reader in mobile WebKit and Chromium
         run: node daruri/qa/verify-reading-desk-real-browser.cjs
+      - name: Verify deletion recovery, Arabic search and keyboard notes
+        run: node daruri/qa/verify-reading-desk-recovery-search.cjs
       - name: Preserve screenshots for review
         if: always()
         uses: actions/upload-artifact@v4

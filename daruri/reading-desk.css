@@ -613,3 +613,13 @@ body.gn-rd-print #gn-rd-print-root{box-sizing:border-box}
 @media(max-width:360px){
  .gn-rd-page .gn-rd-detail-actions{flex-wrap:wrap}
 }
+
+/* Reading Desk accessibility: small secondary text must remain readable on
+   the light palettes, including semi-transparent landscape reading surfaces.
+   Scope this to the Desk; do not alter the rest of the chosen book palette. */
+:root[data-theme="light"] .gn-rd-page .gn-rd-detail > header small,
+:root[data-theme="light"] .gn-rd-page .gn-rd-source-label,
+:root[data-theme="light"] .gn-rd-page .gn-rd-date-details small,
+:root[data-theme="light"] .gn-rd-page .gn-rd-privacy {
+  color:var(--ink,#2a3735);
+}
