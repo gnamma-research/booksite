@@ -613,3 +613,8 @@ body.gn-rd-print #gn-rd-print-root{box-sizing:border-box}
 @media(max-width:360px){
  .gn-rd-page .gn-rd-detail-actions{flex-wrap:wrap}
 }
+
+/* Same note, highlight and bookmark symbols in saved-item cards and controls. */
+.gn-rd-card-open .gn-rd-item-heading{display:flex;align-items:center;gap:8px;min-width:0;width:100%;color:var(--ink,#283932)}
+.gn-rd-card-open .gn-rd-item-heading strong{min-width:0;color:inherit}
+.gn-rd-card-open .gn-rd-item-heading>svg{width:17px;height:17px;flex:0 0 17px;color:var(--accent,#486f60)}
