@@ -2284,6 +2284,7 @@ body:not(.reading-active) .reading-return-bar{
 <link href="reader-structure.css?v=20261020-structure1" rel="stylesheet"/>
 <link rel="stylesheet" href="reading-desk.css?v=20261022-markloc1"/><link rel="stylesheet" href="reading-mode-controls.css?v=20261022-markloc1"/>
 <noscript><link rel="stylesheet" href="source-note-ui.css?v=20261021-fallback-quran1"></noscript>
+<link rel="stylesheet" href="quran-context-ui.css?v=20261022-qcontext1"/>
 </head>
 <body><noscript><section aria-label="Complete Darūrī reader" id="fallbackReader"><input class="fb-drawer-check" id="fb-open-left" type="checkbox"/><details class="fb-settings" id="fb-settings"><summary><svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6M15 14v6"></path></svg><span class="fb-settings-open">Display</span><span class="fb-settings-close">Close ×</span></summary><div aria-label="Display and reading tools" class="fb-settings-card" role="group"><h2>Type &amp; appearance</h2>
 <div class="gn-setting-row"><label for="fb-page-style-select">Page style</label><select id="fb-page-style-select"><option value="quiet" selected="">Quiet reading</option><option value="book">Book page</option><option value="structured">Structured page</option></select></div>
@@ -3820,7 +3821,7 @@ body:not(.reading-active) .reading-return-bar{
 
 </div>
 </div>
-</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=20261021-section1-qparallels1"></script><script defer src="download-bundle.js?v=20261022-docksections1"></script>
+</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=20261021-section1-qparallels1"></script><script defer src="download-bundle.js?v=20261022-qcontext1"></script>
 <script src="source-reference-data.js?v=20261021-qinline4"></script>
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
@@ -4529,7 +4530,7 @@ function updateSearchResults(){const q=$('#globalSearch').value.trim(),out=$('#s
 function onGlobalClick(e){const el=e.target.closest('button,a');if(!el)return;
  if(el.hasAttribute('data-return-reading')){e.preventDefault();returnToReading();return;}
  if(el.hasAttribute('data-close-definition')){e.preventDefault();closeOverlay('infoOverlay');return;}
- if(el.dataset.noteTarget){e.preventDefault();jumpToNote(el.dataset.noteTarget);return}
+ if(el.dataset.noteTarget){e.preventDefault();jumpToNote(el.dataset.noteTarget,el);return}
  if(el.dataset.noteLocation){e.preventDefault();jumpToNoteLocation(el.dataset.noteLocation);return}
  if(el.dataset.route){e.preventDefault();if(el.dataset.route==='index'){state.indexQuery='';state.indexFocus=null;state.indexFocusPending=false;state.indexLimit=72;}navigate(el.dataset.route);return}
  if(el.dataset.section){e.preventDefault();if(el.dataset.searchQuery){state.searchHit={section:String(el.dataset.section),query:el.dataset.searchQuery};if(state.lang==='english'&&/[\u0600-\u06ff]/.test(el.dataset.searchQuery))state.lang='parallel';if(state.lang==='arabic'&&!/[\u0600-\u06ff]/.test(el.dataset.searchQuery))state.lang='parallel'}else state.searchHit=null;goSection(el.dataset.section);return}
@@ -4977,8 +4978,17 @@ function formatNoteText(text) {
   }
   return result+esc(text.slice(pos));
 }
-function jumpToNote(id) {
+function jumpToNote(id,opener=document.activeElement) {
   const note=notes.get(id);if(!note)return;closeOverlays();
+  // An inline Qurʾānic note must use exactly the same card as the section-end
+  // Notes window, including verified ﴿…﴾ excerpts, qualification and source links.
+  // Do not change the legacy detail window for other editorial note types.
+  if(note.source_type==='quran'){
+    gnShowLayer('Qurʾānic note · '+sectionRef(note.n),
+      '<article class="gn-layer-note gn-unified-notes">'+gnNotesCardHTML([note])+'</article>',
+      'notes',opener||document.querySelector('[data-note-target="'+CSS.escape(id)+'"]'));
+    return;
+  }
   $('#detailEyebrow').textContent=`${noteKindLabel(note).toUpperCase()} NOTE · ${note.id}`;
   $('#detailContent').innerHTML=`<h2 id="detailTitle">${esc(note.id)} · ${sectionRef(note.n)}</h2>${noteScopeHTML(note)}<p class="note-body">${formatReadingNote(note)}</p><div class="button-row"><button class="action-btn" type="button" data-note-in-section="${esc(id)}">View note in the section</button><button class="action-btn" type="button" data-close-reference>Return to reading</button></div>`;
   showOverlay('infoOverlay');
@@ -5881,10 +5891,10 @@ gnShowLayer=function(...args){priorScholarLayer(...args);rd?.decorate();};
 
 window.DaruriReadingStyles?.init({value:state.pageStyle,preserve:preserveVisiblePassage,onChange:value=>{state.pageStyle=value;save();}});
 applyParallelOrder();applyArabicFont();applyEnglishFont();bind();bindReaderEnhancements();applyTheme();updateScale();syncRoute();bindResponsiveRepairs();takeDictionaryReturn();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261022-docksections1').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261022-qcontext1').catch(()=>{});
 })();
 
-</script><link rel="stylesheet" href="gnamma-search.css?v=20261022-proximity1"><link rel="stylesheet" href="gnamma-scholarly.css?v=20261022-scholarly1"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-scholarly.js?v=20261022-scholarly1"></script><script src="gnamma-search.js?v=20261022-scholarly1"></script></body>
+</script><link rel="stylesheet" href="gnamma-search.css?v=20261022-proximity1"><link rel="stylesheet" href="gnamma-scholarly.css?v=20261022-scholarly1"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-scholarly.js?v=20261022-scholarly1"></script><script src="gnamma-search.js?v=20261022-scholarly1"></script><script src="quran-context-ui.js?v=20261022-qcontext1"></script></body>
 </html>
 
 

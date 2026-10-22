@@ -5,8 +5,8 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "20261021-rdiconpdf1-section1-qparallels2-qbrackets3-qinline4-fallback1";
-  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
+  const RELEASE_VERSION = "20261022-qcontext1";
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "quran-context-data.js", "QURAN_CONTEXT_SOURCES.md", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -148,6 +148,11 @@
       ['daruri/source-reference-data.js', 'source-reference-data.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-fallback-quran1'],
+      ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261022-qcontext1'],
+      ['daruri/quran-context-ui.css', 'quran-context-ui.css?v=20261022-qcontext1'],
+      ['daruri/quran-context-data.json', 'quran-context-data.json?v=20261022-qcontext1'],
+      ['daruri/quran-context-data.js', 'quran-context-data.js?v=20261022-qcontext1'],
+      ['daruri/QURAN_CONTEXT_SOURCES.md', 'QURAN_CONTEXT_SOURCES.md'],
       ['daruri/download-bundle.js', 'download-bundle.js?v=20261021-rdquick1'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
@@ -181,7 +186,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261022-docksections1'],
+      ['daruri/sw.js', 'sw.js?v=20261022-qcontext1'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
