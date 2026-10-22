@@ -37,7 +37,16 @@ jobs:
         run: |
           npm install --no-save --no-package-lock --prefix booksite/daruri/qa playwright@1.56.1 pdf-lib@1.17.1
           cd booksite/daruri/qa
-          npx playwright install --with-deps ${{ matrix.browser }}
+          if [ "${{ matrix.browser }}" = "chromium" ]; then
+            if command -v google-chrome >/dev/null 2>&1; then
+              google-chrome --version
+              echo 'GNAMMA_CHROME_CHANNEL=chrome' >> "$GITHUB_ENV"
+            else
+              npx playwright install --with-deps --only-shell chromium
+            fi
+          else
+            npx playwright install --with-deps webkit
+          fi
       - name: Create a personal PDF from a dynamically assembled apparatus PDF
         env:
           GNAMMA_SITE_ROOT: ${{ github.workspace }}/booksite
