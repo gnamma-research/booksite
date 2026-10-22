@@ -596,7 +596,8 @@
       }catch(_){/* The original five PDFs remain selectable without the apparatus catalogue. */}
       const entries=Object.entries(data.files).filter(([file,x])=>
         (/^[a-z0-9-]+\.pdf$/.test(file)||
-         /^editions\/apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english)-(glossary|index|concordance|applications)(?:-(glossary|index|concordance|applications)){0,3}(?:-titles-on)?\.pdf$/.test(file))&&
+         /^editions\/apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english)-(glossary|index|concordance|applications)(?:-(glossary|index|concordance|applications)){0,3}(?:-titles-on)?\.pdf$/.test(file)||
+         /^editions\/(reading|study)\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english|arabic|arabic-vowelled)-titles-(on|off)\.pdf$/.test(file))&&
         x?.sha256&&x?.pages);
       $('pe-edition').replaceChildren();
       const labels={ 'daruri.pdf':'Scholarly reference · bilingual',
