@@ -153,7 +153,7 @@ def main():
                     if layout is None:raise RuntimeError("Missing captured layout")
                     groups=original_word_groups(layout)
                     expected=[(int(s["id"]),i,s["segments"][print_editions.MODES[mode]["ar"]])
-                        for s in print_editions.BOOK["sections"]
+                        for s in print_editions.BOOK["sections"] if str(s.get("id","")).isdigit()
                         for i in range(len(s["segments"]))]
                     if len(groups)!=len(expected):
                         raise RuntimeError(f"{mode}: source paragraph count {len(groups)} != {len(expected)}")
