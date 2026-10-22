@@ -31,6 +31,9 @@ function main(){
   assert.equal(catalog.certified_source_designs.length,12);
   assert.equal(catalog.other_approved_designs.length,5);
   assert.equal(catalog.approved_compositions.length,120);
+  assert(catalog.certified_source_designs.every(d=>d.page_size==='A4'));
+  assert.equal(catalog.invariants.release_paper_size,'A4');
+  assert.equal(catalog.invariants.alternative_paper_sizes_excluded,true);
   assert.equal(new Set(catalog.approved_compositions.map(x=>x.file)).size,120);
   const active=catalog.certified_source_designs.filter(x=>x.composable);
   assert.equal(active.length,8);
@@ -59,10 +62,14 @@ function main(){
   rejects('duplicate profile',d=>{d.apparatus.files[1].file=d.apparatus.files[0].file},/Duplicate/);
   rejects('missing distinct packet',d=>{d.packets.packets.pop()},/12-base|120|incomplete|Missing/);
   rejects('canonical different design absent',d=>{delete d.canonical.files['daruri.pdf']},/canonical/);
+  rejects('non-A4 source format',d=>{d.base.files[0].paper_size='A5'},/Non-A4/);
+  rejects('non-A4 apparatus packet',d=>{d.packets.packets[0].paper_size='Letter'},/Non-A4/);
+  rejects('experimental design style',d=>{d.base.files[0].design_style_id='gnamma-compact-v1'},/Only existing approved A4/);
+  rejects('additional unsanctioned source PDF',d=>{d.base.files.push({...d.base.files[0],file:'reading/extra.pdf'})},/incomplete/);
   console.log('DESIGN_CATALOG_PASS',JSON.stringify({
     signed_base_designs:12,other_approved_book_designs:5,
     active_source_designs:8,certified_combinations:120,
-    apparatus_packet_set:15,negative_cases:10,
+    apparatus_packet_set:15,negative_cases:14,
     all_other_book_designs_static_until_individually_certified:true
   }));
 }
