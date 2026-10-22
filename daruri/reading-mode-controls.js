@@ -25,14 +25,14 @@ function create({state,rd}){
   status.setAttribute('aria-label','Your saved reading marks at this passage');
   status.hidden=true;center.append(status);
  }
- let sections=new Map(),passages=new Map(),last='',queued=false;
+ let sections=new Map(),sectionOnly=new Map(),passages=new Map(),last='',queued=false;
  const keyOf=(section,segment)=>String(section)+':'+Number(segment);
  const empty=()=>({bookmarks:0,highlights:0,notes:0});
  function add(row,key,kind){
   const bucket=row.get(key)||empty();bucket[kind]++;row.set(key,bucket);
  }
  function reindex(){
-  sections=new Map();passages=new Map();
+  sections=new Map();sectionOnly=new Map();passages=new Map();
   for(const item of rd.records()){
    if(item.deleted||!item.target||item.target.section==null)continue;
    const t=item.target,section=String(t.section);
@@ -43,6 +43,7 @@ function create({state,rd}){
    if(item.kind==='note')type='notes';
    if(!type)continue;
    add(sections,section,type);
+   if(t.segment==null)add(sectionOnly,section,type);
    if(t.segment!=null&&Number.isInteger(Number(t.segment)))
     add(passages,keyOf(section,t.segment),type);
   }
@@ -77,8 +78,8 @@ function create({state,rd}){
   const sectionCounts=sections.get(place.section)||empty();
   const passageCounts=place.segment==null?sectionCounts:(passages.get(keyOf(place.section,place.segment))||empty());
   // Section-level marks remain visible while scrolling through that section.
-  const sectionBookmarks=(rd.records().some(r=>!r.deleted&&r.kind==='section'&&String(r.target?.section)===place.section))?1:0;
-  const sectionNotes=rd.records().filter(r=>!r.deleted&&r.kind==='note'&&r.target?.kind==='section'&&String(r.target?.section)===place.section).length;
+  const sectionBookmarks=(sectionOnly.get(place.section)||empty()).bookmarks;
+  const sectionNotes=(sectionOnly.get(place.section)||empty()).notes;
   const counts={
    bookmarks:place.segment==null?sectionCounts.bookmarks:sectionBookmarks+passageCounts.bookmarks,
    highlights:passageCounts.highlights,
