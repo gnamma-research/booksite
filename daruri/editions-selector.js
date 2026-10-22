@@ -463,6 +463,11 @@
     mounted.addEventListener('click',onClick);
     mounted.addEventListener('change',onChange);
     mounted.addEventListener('keydown',onKey);
+    document.addEventListener('gnamma-personal-export-ready',()=>{
+      if(root!==mounted)return;
+      personalReady=true;
+      personalChanged();
+    });
     refresh();
     const req=++requestId;
     const json=path=>fetch(path,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null);
