@@ -33,6 +33,17 @@ The independent replacement comparison **does not round** coordinates for equiva
 
 This is not a relaxation of the *destination* requirement: one link to a different page or URI, one extra or missing duplicate, or an unmatched rectangle outside tolerance fails.
 
+## Browser-local personal-PDF integration proof (additional gate passed)
+
+Independent mobile-browser test fixture in `daruri/qa/verify_dynamic_personal_browser.cjs`, against the same pinned experimental commit. This injects only a test UI into `personal-export.html` at load time and does **not** edit or publish the website.
+
+- Mobile **WebKit** [Actions 39776277485](https://github.com/gnamma-research/booksite/actions/runs/39776277485): **PASS**, 86-page assembled Reading+glossary plus 1 page of P1/P2 personal notes, 1,070 source-side PDF links and 1 appendix-to-source return link; 3.433 seconds in the runner.
+- Mobile **Chromium** [Actions 39776789358](https://github.com/gnamma-research/booksite/actions/runs/39776789358): **PASS**, same 87-page structure and links; 3.479 seconds in the runner.
+- Both tests verified retained unanchored personal notes, English/Arabic synthetic note text in the searchable appendix, no added PDF comment popups, stable Reading Desk local storage, and no cross-origin or non-GET web requests.
+- Inspected the rendered source page with its P1 marginal marker and endnotes page (both legible, no clipping or overlapping). The chosen ambiguous single-word quotation uses the exporter’s safe section fallback; **exact-word highlight coverage remains to be exercised separately with unambiguous verified source phrases**.
+
+These are real WebKit/Chromium browser-engine results, not native Apple PDFKit or Android PDFium confirmations. Neither is a performance promise on an older mobile device with many personal notes.
+
 ## Remaining production gates (do not conflate)
 
 1. **Native source Arabic search**: current published original Ibn Rushd pages were independently audited. Arabic source multiword phrases had **0 / 414** matching segments in each of 14 Arabic-containing canonical/A4 PDFs, despite visually correct Arabic. This is distinct from the merged and functional P-numbered *personal appendix* Unicode fix. Work in issue #44 and PR #38. A dynamic assembler preserving source pages **cannot fix this merely by appending new apparatus**.
