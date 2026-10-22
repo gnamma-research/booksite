@@ -35,9 +35,9 @@ const page=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const sw=fs.readFileSync(path.join(root,'sw.js'),'utf8');
 const script=fs.readFileSync(path.join(root,'editions.js'),'utf8');
 for(const ext of ['css','js']){
-  const filename='editions.'+ext+'?v=20261021-editiontabs-vowels-release1';
-  assert.ok(page.includes(filename),'HTML route lacks '+filename);
-  assert.ok(sw.includes(filename),'Offline shell lacks '+filename);
+  const filename=page.match(new RegExp('editions\\.'+ext+'\\?v=[A-Za-z0-9-]+'))?.[0];
+  assert.ok(filename,'HTML route must load versioned editions.'+ext);
+  assert.ok(sw.includes(filename),'Offline shell lacks active '+filename);
 }
 assert.ok(script.includes('editions/manifest.json') && script.includes('showReadyPDFs'));
 assert.ok(script.includes('showReadyPDFs();'));
