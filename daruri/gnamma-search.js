@@ -1244,7 +1244,7 @@ document.addEventListener('click',event=>{
  if(!ui.opened||!host||!host.contains(event.target))return;
  const target=event.target.closest('[data-gns-close],[data-gns-expand],[data-gns-toggle-filters],'+
  '[data-gns-quick],[data-gns-facet],[data-gns-result],[data-gns-more],[data-gns-example],'+
- '[data-gns-retry],[data-gns-download],[data-gns-pattern-example],'+
+ '[data-gns-retry],[data-gns-download],[data-gns-pattern-example],[data-gns-morph-pick],[data-gns-toggle-sources],'+
  '[data-gns-add-row],[data-gns-remove-row],[data-gns-apply-builder],'+
  '[data-gns-save],[data-gns-load],[data-gns-delete],'+
  '[data-gns-evidence-result]');
