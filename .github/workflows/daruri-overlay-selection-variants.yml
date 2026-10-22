@@ -1,0 +1,61 @@
+name: Daruri overlay vowels and bilingual selection QA
+on:
+  push:
+    branches: [qa/daruri-overlay-highlight-acceptance-20261022]
+    paths:
+      - .github/workflows/daruri-overlay-selection-variants.yml
+      - daruri/qa/audit_unicode_overlay_selection.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  overlay-variants:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - label: arabic-vowelled
+            source: editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf
+            map: daruri-reading-arabic-vowelled-titles-off.pdf.json
+          - label: bilingual-vowelled
+            source: editions/reading/daruri-reading-bilingual-titles-off.pdf
+            map: daruri-reading-bilingual-titles-off.pdf.json
+          - label: study-bilingual
+            source: editions/study/daruri-study-bilingual-titles-off.pdf
+            map: daruri-study-bilingual-titles-off.pdf.json
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: qa
+      - uses: actions/checkout@v4
+        with:
+          ref: c2d9ba352fb7849cbb28ff2dd529f08b42c4ed47
+          path: proof-source
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install PyMuPDF==1.26.7 fonttools==4.67.0
+      - run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - name: Produce pinned Unicode overlay candidate in temporary storage
+        run: |
+          python proof-source/daruri/qa/experimental_original_arabic_unicode.py \
+            --input proof-source/daruri/${{ matrix.source }} \
+            --map proof-source/daruri/editions/maps/${{ matrix.map }} \
+            --font proof-source/daruri/build/fonts/NotoNaskhArabic-Regular.ttf \
+            --output /tmp/overlay-${{ matrix.label }}.pdf \
+            --limit 414 --diagnostic
+      - name: Independently check Arabic selection rectangles and copy output
+        run: |
+          python qa/daruri/qa/audit_unicode_overlay_selection.py \
+            --source proof-source/daruri/${{ matrix.source }} \
+            --candidate /tmp/overlay-${{ matrix.label }}.pdf \
+            --map proof-source/daruri/editions/maps/${{ matrix.map }} \
+            --output /tmp/report-${{ matrix.label }}.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: overlay-selection-${{ matrix.label }}-nonrelease
+          path: /tmp/report-${{ matrix.label }}.json
+          if-no-files-found: warn
