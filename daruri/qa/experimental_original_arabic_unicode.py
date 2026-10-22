@@ -66,6 +66,32 @@ def ordered_words(mapped, max_segments):
                 bypage[int(num)].append(row)
     return bypage, len(keys)
 
+def same_links(links_a, links_b, tolerance=0.002):
+    """Compare exact targets/multiplicity, ignoring PDF-object ID renumbering.
+
+    Save/garbage collection can legitimately change link xrefs and introduce
+    sub-millipoint coordinate roundoff without changing a link destination.
+    """
+    if len(links_a)!=len(links_b):return False
+    def equal(a,b):
+        ka=set(a)-{"xref"}; kb=set(b)-{"xref"}
+        if ka!=kb:return False
+        for key in ka:
+            va,vb=a[key],b[key]
+            if isinstance(va,(fitz.Rect,fitz.Point)):
+                if type(va)!=type(vb) or len(va)!=len(vb):return False
+                if any(abs(float(x)-float(y))>tolerance for x,y in zip(va,vb)):return False
+            elif isinstance(va,float) and isinstance(vb,(float,int)):
+                if abs(va-vb)>tolerance:return False
+            elif va!=vb:return False
+        return True
+    pending=list(links_b)
+    for item in links_a:
+        where=next((i for i,other in enumerate(pending) if equal(item,other)),None)
+        if where is None:return False
+        pending.pop(where)
+    return not pending
+
 def build(source, mapping_file, font_path, output, max_segments, diagnostic=False):
     source=Path(source);mapping_file=Path(mapping_file)
     font_path=Path(font_path);output=Path(output)
@@ -121,7 +147,8 @@ def build(source, mapping_file, font_path, output, max_segments, diagnostic=Fals
     with fitz.open(source) as a,fitz.open(output) as b:
         if len(a)!=len(b) or a.get_toc()!=b.get_toc():raise RuntimeError("Page/outline parity failed")
         for i in range(len(a)):
-            if a[i].get_links()!=b[i].get_links():raise RuntimeError("Link parity failed, page "+str(i+1))
+            if not same_links(a[i].get_links(),b[i].get_links()):
+                raise RuntimeError("Semantic link target or geometry changed, page "+str(i+1))
             if a[i].get_pixmap(alpha=False).samples!=b[i].get_pixmap(alpha=False).samples:
                 raise RuntimeError("Rendered pixels changed, page "+str(i+1))
         # Native extraction and search are checked independently, not assumed
