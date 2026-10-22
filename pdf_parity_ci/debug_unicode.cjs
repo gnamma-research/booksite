@@ -1,5 +1,5 @@
 'use strict';
-// Temporary synthetic-only diagnostic: investigate mixed-script Arabic PDF extraction (individual Arabic Unicode codepoint trial).
+// Temporary synthetic-only diagnostic: investigate mixed-script Arabic PDF extraction (Type3 exact Arabic ToUnicode font trial).
 const path=require('node:path'),fs=require('node:fs'),os=require('node:os');
 const {pathToFileURL}=require('node:url');
 const {spawn}=require('node:child_process');
