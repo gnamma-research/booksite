@@ -59,6 +59,16 @@ elif platform=="ios":
          'doc.findString("هذه",withOptions:[]).count')
     ])
     s=swift.read_text()
+    debug='''        let appendixText=doc.page(at:basePages)?.string ?? ""
+        let arabicProbeTerms=["هذه","ملاحظة","تجريبية","عربية","دقة","موضع","العبارة"]
+        let arabicProbeHits=Dictionary(uniqueKeysWithValues:
+          arabicProbeTerms.map{($0,doc.findString($0,withOptions:[]).count)})
+'''
+    where=s.index('        let searchP=doc.findString("P1",withOptions:[]).count')
+    lineend=s.index("\\n",where)+1
+    s=s[:lineend]+debug+s[lineend:]
+    s=s.replace('"searchP":searchP,',
+       '"searchP":searchP,"arabicProbeHits":arabicProbeHits,"appendixPreview":String(appendixText.prefix(1200)),')
     # This Arabic fixture contains no English or French personal items; do
     # not claim that their absence is a regression in this Arabic-only test.
     s=re.sub(r'^.*if searchEnglish==0\{errors\.append\(.+$','',s,flags=re.M)
