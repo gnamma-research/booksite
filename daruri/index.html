@@ -2282,7 +2282,7 @@ body:not(.reading-active) .reading-return-bar{
 <script src="reading-styles.js?v=20261020-menu1"></script>
 <script src="visuals-controls.js?v=20261020-visuals1"></script>
 <link href="reader-structure.css?v=20261020-structure1" rel="stylesheet"/>
-<link rel="stylesheet" href="reading-desk.css?v=20261022-readmode3a"/><link rel="stylesheet" href="reading-mode-controls.css?v=20261022-readmode3a"/>
+<link rel="stylesheet" href="reading-desk.css?v=20261022-markloc1"/><link rel="stylesheet" href="reading-mode-controls.css?v=20261022-markloc1"/>
 <noscript><link rel="stylesheet" href="source-note-ui.css?v=20261021-fallback-quran1"></noscript>
 </head>
 <body><noscript><section aria-label="Complete Darūrī reader" id="fallbackReader"><input class="fb-drawer-check" id="fb-open-left" type="checkbox"/><details class="fb-settings" id="fb-settings"><summary><svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6M15 14v6"></path></svg><span class="fb-settings-open">Display</span><span class="fb-settings-close">Close ×</span></summary><div aria-label="Display and reading tools" class="fb-settings-card" role="group"><h2>Type &amp; appearance</h2>
@@ -3634,8 +3634,8 @@ body:not(.reading-active) .reading-return-bar{
 <symbol id="i-close" viewbox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"></path></symbol>
 <symbol id="i-left" viewbox="0 0 24 24"><path d="m15 5-7 7 7 7"></path></symbol>
 <symbol id="i-right" viewbox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></symbol>
-<symbol id="i-bookmark" viewbox="0 0 24 24"><path d="M6 3.5h12v17L12 16l-6 4.5Z"></path></symbol>
-<symbol id="i-bookmark-filled" viewbox="0 0 24 24"><path d="M6 3.5h12v17L12 16l-6 4.5Z" fill="currentColor"></path></symbol>
+<symbol id="i-bookmark" viewbox="0 0 24 24"><path d="M6 3.5h12v17L12 16l-6 4.5Z"></path><path d="M12 8v5.3M9.35 10.65h5.3"></path></symbol>
+<symbol id="i-bookmark-filled" viewbox="0 0 24 24"><path d="M6 3.5h12v17L12 16l-6 4.5Z"></path><path d="m9.35 10.65 2 2 3.7-4"></path></symbol>
 <symbol id="i-sliders" viewbox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6M15 14v6"></path></symbol>
 <symbol id="i-sun" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M19 5l-2 2M7 17l-2 2"></path></symbol>
 <symbol id="i-moon" viewbox="0 0 24 24"><path d="M20 15a8 8 0 0 1-11-11A8.5 8.5 0 1 0 20 15Z"></path></symbol>
@@ -3825,7 +3825,7 @@ body:not(.reading-active) .reading-return-bar{
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
 <script src="study-guide-data.js?v=20261021-study-path1"></script>
-<script src="study-guide.js?v=20261021-study-path1"></script><script src="editions.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-icons.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-selector.js?v=20261022-two-tabs-inline1"></script><script src="reading-desk.js?v=20261022-readmode3a"></script><script src="reading-mode-controls.js?v=20261022-readmode3a"></script><script>
+<script src="study-guide.js?v=20261021-study-path1"></script><script src="editions.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-icons.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-selector.js?v=20261022-two-tabs-inline1"></script><script src="reading-desk.js?v=20261022-markloc1"></script><script src="reading-mode-controls.js?v=20261022-markloc1"></script><script>
 (() => {
 'use strict';
 const BOOK = JSON.parse(document.getElementById('editionData').textContent);
@@ -4741,7 +4741,7 @@ function syncReadingChrome() {
   const contextControl=$('#contextToolbar');if(contextControl){const on=Boolean($('#readingContextPanel') && !$('#readingContextPanel').hidden);contextControl.setAttribute('aria-pressed',String(on));contextControl.setAttribute('aria-expanded',String(on));contextControl.setAttribute('aria-label',on?'Close reading context panel':'Open reading context panel');contextControl.title=contextControl.getAttribute('aria-label');contextControl.classList.toggle('active',on);}
   const current=String(state.n),savedHere=getBookmarked(current);
   const saveAction=$('#readerSaveAction'),copyAction=$('#readerCopyAction'),shareAction=$('#readerShareAction');
-  if(saveAction){saveAction.dataset.bookmark=current;saveAction.setAttribute('aria-pressed',String(savedHere));saveAction.setAttribute('aria-label',savedHere?'Remove saved section':'Save section');saveAction.title=saveAction.getAttribute('aria-label');saveAction.classList.toggle('is-saved',savedHere);const label=$('#readerSaveLabel');if(label)label.textContent=savedHere?'Remove bookmark':'Save section';}
+  if(saveAction){saveAction.dataset.bookmark=current;saveAction.setAttribute('aria-pressed',String(savedHere));saveAction.setAttribute('aria-label',savedHere?'Remove saved section':'Save section');saveAction.title=saveAction.getAttribute('aria-label');saveAction.classList.toggle('is-saved',savedHere);const use=saveAction.querySelector('svg use');if(use)use.setAttribute('href',savedHere?'#i-bookmark-filled':'#i-bookmark');const label=$('#readerSaveLabel');if(label)label.textContent=savedHere?'Remove bookmark':'Save section';}
   if(copyAction)copyAction.dataset.copyMatn=current;
   if(shareAction)shareAction.dataset.share=current;
   const focus=$('#focusToolbar');
@@ -5881,7 +5881,7 @@ gnShowLayer=function(...args){priorScholarLayer(...args);rd?.decorate();};
 
 window.DaruriReadingStyles?.init({value:state.pageStyle,preserve:preserveVisiblePassage,onChange:value=>{state.pageStyle=value;save();}});
 applyParallelOrder();applyArabicFont();applyEnglishFont();bind();bindReaderEnhancements();applyTheme();updateScale();syncRoute();bindResponsiveRepairs();takeDictionaryReturn();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261022-readmode3a').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261022-markloc1').catch(()=>{});
 })();
 
 </script><link rel="stylesheet" href="gnamma-search.css?v=20261022-proximity1"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-search.js?v=20261022-proximity1"></script></body>
