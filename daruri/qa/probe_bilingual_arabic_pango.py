@@ -79,9 +79,9 @@ def main():
                     if len(groups)!=len(src):
                         raise RuntimeError(f"Arabic cell groups {len(groups)} != expected {len(src)}")
                     matched=OrderedDict()
-                    for (number,_,_), (n,i,text) in zip(groups.items(),src):
+                    for (key,group), (n,i,text) in zip(groups.items(),src):
+                        number,_=key
                         if number!=n:raise RuntimeError(f"Out-of-order source §{number} != {n}")
-                        group=groups[(number,_,_)] # overwritten below if needed
                         if concat_normalized("".join(group["chunks"]))!=concat_normalized(text):
                             raise RuntimeError(f"Arabic source segment mismatch in §{n}, segment {i}")
                         matched[(n,i)]=group["words"]
