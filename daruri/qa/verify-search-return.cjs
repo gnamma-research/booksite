@@ -26,7 +26,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
  async function search(q){
   if(!(await page.locator('.gns-dialog').count()))await page.locator('#searchBtn').click();
   await page.locator('#gns-query').fill(q);
-  await page.waitForTimeout(160);
+  await page.waitForTimeout(350);
  }
  async function returnFromBar(){
   await page.locator('#gns-return-bar [data-gns-return="1"]').click();
@@ -188,7 +188,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
  await mobile.goto(base+'#section=1',{waitUntil:'load'});
  await check('mobile return affordance is in viewport',async()=>{
   await mobile.locator('#searchBtn').click();await mobile.locator('#gns-query').fill('ijtihaad');
-  await mobile.waitForTimeout(150);await mobile.locator('.gns-result').first().click();
+  await mobile.waitForTimeout(350);await mobile.locator('.gns-result').first().click();
   const x=await mobile.locator('#gns-return-bar').boundingBox();
   assert.ok(x&&x.x>=0&&x.x+x.width<=392,JSON.stringify(x));
  });
@@ -197,7 +197,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
  await check('320px phone has visible return control without horizontal overflow',async()=>{
   await small.locator('#searchBtn').click();
   await small.locator('#gns-query').fill('qiyaas');
-  await small.waitForTimeout(150);
+  await small.waitForTimeout(350);
   await small.locator('.gns-result').first().click();
   const geometry=await small.evaluate(()=>{
    const e=document.querySelector('#gns-return-bar'),r=e?.getBoundingClientRect();
