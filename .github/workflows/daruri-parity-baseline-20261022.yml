@@ -42,3 +42,5 @@ jobs:
             daruri/daruri.pdf
             daruri/daruri-arabic.pdf
             daruri/daruri-arabic-vowelled.pdf
+            daruri/edition-r3-20261020.js
+            daruri/pdf-editions-manifest.json
