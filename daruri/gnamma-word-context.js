@@ -215,7 +215,7 @@ function close(){
 function installDictionaryActions(){
  const popup=$('#infoOverlay'),container=$('#detailContent');
  if(!popup||popup.hidden||!container||$('#gnw-dictionary-search',container))return;
- if(!/DICTIONARY/i.test($('#detailEyebrow')?.textContent||''))return;
+ if(!/(DICTIONARY|LEXICAL|GLOSSARY)/i.test($('#detailEyebrow')?.textContent||''))return;
  const t=lastDictionary?.term||container.querySelector('h2')?.textContent?.trim();
  if(!t)return;
  const button=document.createElement('div');
