@@ -18,13 +18,16 @@
     return 'Saved reference';
   };
   const isNote=r=>r&&r.kind==='note';
-  const isBookmark=r=>Boolean(r&&r.kind!=='note'&&(
+  const isHighlight=r=>Boolean(r&&r.kind==='quote');
+  const isBookmark=r=>Boolean(r&&r.kind!=='note'&&r.kind!=='quote'&&(
     r.target&&typeof r.target==='object'||String(r.title||'').trim()||
     String(r.body||'').trim()||r.archivedValue!==undefined
   ));
   function available(records,prefs){
+    const includeHighlights=prefs.highlights===undefined?prefs.bookmarks:Boolean(prefs.highlights);
     return records.filter(r=>r&&!r.deleted&&(
-      (prefs.personal&&isNote(r))||(prefs.bookmarks&&isBookmark(r))
+      (prefs.personal&&isNote(r))||(prefs.bookmarks&&isBookmark(r))||
+      (includeHighlights&&isHighlight(r))
     ));
   }
   function normalizeDesk(data){
@@ -83,7 +86,7 @@
   }
   function entryText(r,i,dates){
     const h='P'+(i+1)+' · '+nameOf(r.target);
-    const title=cap(r.title|| (isNote(r)?'Personal note':'Saved passage'),240);
+    const title=cap(r.title|| (isNote(r)?'Personal note':isHighlight(r)?'Highlight':'Bookmark'),240);
     const text=isNote(r)?r.body:(r.target?.quote||r.body||(r.archivedValue!==undefined?JSON.stringify(r.archivedValue):'Saved passage / bookmark'));
     const quote=r.target?.quote&&isNote(r)?'\nSelected text: '+cap(r.target.quote,1000):'';
     return h+'\n'+title+'\n'+cap(text,30000)+quote+(dates?'\n'+dateLine(r):'');
@@ -100,7 +103,7 @@
       (r.kind!=='note'&&String(r.target?.quote||'').length>30000)||
       entryText(r,i,p.dates).length>24000));
   }
-  const model={available,orderItems,dateLine,entryText,verifiedPage,isNote,isBookmark,normalizeDesk,requiresAppendix};
+  const model={available,orderItems,dateLine,entryText,verifiedPage,isNote,isBookmark,isHighlight,normalizeDesk,requiresAppendix};
   window.GnammaPersonalExportModel=model;
   let manifest=null,records=[],selectedIds=new Set(),busy=false,resultURL=null,resultFile=null;
   let baseMapCatalog=null;
@@ -116,6 +119,7 @@
   function mode(){return document.querySelector('input[name="pe-mode"]:checked')?.value||'none';}
   function prefs(){return {
     personal:$('pe-personal').checked,bookmarks:$('pe-bookmarks').checked,
+    highlights:Boolean($('pe-highlights')?.checked),
     annotations:$('pe-annotations').checked,appendix:$('pe-appendix').checked,
     dates:$('pe-dates').checked,order:$('pe-order').value
   };}
@@ -163,7 +167,7 @@
       check.dataset.noteId=r.id;
       const text=document.createElement('span');
       text.className='item-title';text.textContent=(r.title||nameOf(r.target)).slice(0,120);
-      const meta=document.createElement('small');meta.textContent=nameOf(r.target)+(isNote(r)?' · Personal note':' · Bookmark');
+      const meta=document.createElement('small');meta.textContent=nameOf(r.target)+(isNote(r)?' · Personal note':isHighlight(r)?' · Highlight':' · Bookmark');
       text.append(meta);label.append(check,text);root.append(label);
     }
     const eligibleSelected=eligible.filter(r=>selectedIds.has(r.id)).length;
@@ -283,9 +287,9 @@
         sheet.y+=f.lh;
       }
     }
-    await line('MY READING DESK · PERSONAL NOTES','title');
+    await line('MY READING DESK · PERSONAL ANNOTATIONS','title');
     await line('Reader-created observations · '+new Date().toLocaleDateString(),'meta');
-    await line('P1, P2… identify YOUR personal notes — not publisher, editor or source references.','meta');
+    await line('P1, P2… identify your Reading Desk entries, not publisher or editorial notes.','meta');
     await line('Select a P marker or highlighted phrase to visit its note; use Return to text to go back.','meta');
     sheet.y+=35;
     for(let i=0;i<rows.length;i++){
@@ -295,7 +299,7 @@
       if(sheet.y+155>maxY)await flush();
       noteTargets[i]={index:basePages+pageNum-1,top:Math.max(12,sheet.y/2-14)};
       await line('P'+(i+1)+' · '+nameOf(r.target),'title');
-      await line(r.title|| (isNote(r)?'Personal note':'Highlight'),'meta');
+      await line(r.title|| (isNote(r)?'Personal note':isHighlight(r)?'Highlight':'Bookmark'),'meta');
       if(isNote(r)){
         for(const para of r.body.split(/\n/))await line(para);
       }else if(r.target?.quote){
