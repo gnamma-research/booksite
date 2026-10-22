@@ -61,7 +61,7 @@ function test(name,fn){return fn().then(()=>{pass++;console.log('PASS '+name)}).
  });
  await test('note result navigates to its actual note popup',async()=>{
    await start('ḥamdan');await expand();
-   await page.locator('[data-gns-facet="note"]').click();
+   await page.locator('#gns-type').selectOption('note');
    const first=page.locator('.gns-result').first();
    const text=await first.innerText();
    assert.match(text,/N001/i);await first.click();
