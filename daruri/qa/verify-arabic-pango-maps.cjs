@@ -1,4 +1,4 @@
-/* Regression: eight exact Daruri Arabic Pango maps must locate real Arabic words
+/* Verified release gate: eight exact Daruri Arabic Pango maps must locate real Arabic words
    and remain bound to their approved PDF SHA. */
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
