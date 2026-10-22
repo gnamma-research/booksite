@@ -3822,7 +3822,7 @@ body:not(.reading-active) .reading-return-bar{
 </div>
 </div>
 </div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=20261021-section1-qparallels1"></script><script defer src="download-bundle.js?v=20261023-annotations"></script>
-<script src="source-reference-data.js?v=20261021-qinline4"></script>
+<script src="source-reference-data.js?v=20261021-qinline4"></script><script src="hadith-anchor-data.js?v=20261023-hnote1"></script><script src="quran-note-headings.js?v=20261023-hnote1"></script><script src="hadith-traditional-notes.js?v=20261023-hnote1"></script>
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
 <script src="study-guide-data.js?v=20261021-study-path1"></script>
@@ -3946,6 +3946,52 @@ function addQuranSourceMarkers(rendered,sec,segmentIndex,language,raw){
    if(remaining.toString()){console.warn('Source anchor would split an interactive term',event.note.id);continue;}
    interactive.after(marker);
   }else{const range=document.createRange();range.setStart(target,offset);range.collapse(true);range.insertNode(marker);}
+ }
+ return template.innerHTML;
+}
+
+
+/* Source note anchor placement: insert a single unobtrusive H exactly after the
+   verified, unique Arabic phrase. The source corpus and original notes stay unchanged. */
+function addHadithSourceMarkers(rendered,section,segmentIndex,raw){
+ if(!state.showNotes||state.focusMode)return rendered;
+ const collection=window.GnammaHadithAnchorMap?.notes;
+ if(!collection)return rendered;
+ const omit=/[\u064b-\u065f\u0670\u0640\u06d6-\u06ed]/;
+ const map=[],plain=[];
+ for(let i=0;i<raw.length;i++)if(!omit.test(raw[i])){map.push(i);plain.push(raw[i]);}
+ const consonants=plain.join(''),events=[];
+ for(const id of section.noteIds||[]){
+  const record=collection[id];if(!record)continue;
+  for(const anchor of record.anchors||[]){
+   if(anchor.seg!==segmentIndex)continue;
+   const q=String(anchor.ar||'').replace(/[\u064b-\u065f\u0670\u0640\u06d6-\u06ed]/g,'');
+   const start=consonants.indexOf(q);
+   if(!q||start<0||consonants.indexOf(q,start+q.length)!==-1){console.warn('Hadith anchor does not match uniquely',id,segmentIndex);continue;}
+   const last=map[start+q.length-1];if(last==null)continue;
+   let end=last+1;while(end<raw.length&&omit.test(raw[end]))end++;
+   events.push({end,id,title:record.title});
+  }
+ }
+ if(!events.length)return rendered;
+ const template=document.createElement('template');template.innerHTML=rendered;
+ for(const event of events.sort((a,b)=>b.end-a.end)){
+  const walker=document.createTreeWalker(template.content,NodeFilter.SHOW_TEXT,{
+   acceptNode:n=>n.parentElement?.closest('.note-ref-symbol')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+  let n,total=0,target=null,offset=0;
+  while((n=walker.nextNode())){if(total+n.data.length>=event.end){target=n;offset=event.end-total;break;}total+=n.data.length;}
+  if(!target){console.warn('Missing Hadith marker insertion point',event.id);continue;}
+  const marker=document.createElement('a');marker.className='note-ref-symbol hadith-source-ref';
+  marker.href='#note-'+event.id;marker.dataset.noteTarget=event.id;marker.dir='ltr';marker.textContent='H';
+  marker.setAttribute('aria-label','Hadith source note: '+event.title);marker.title='Hadith: '+event.title;
+  const interactive=target.parentElement?.closest('a,button');
+  if(interactive){
+   const rest=document.createRange();rest.selectNodeContents(interactive);rest.setStart(target,offset);
+   if(rest.toString()){console.warn('Hadith marker would split a linked text span',event.id);continue;}
+   interactive.after(marker);
+  }else{
+   const range=document.createRange();range.setStart(target,offset);range.collapse(true);range.insertNode(marker);
+  }
  }
  return template.innerHTML;
 }
@@ -4968,7 +5014,7 @@ function renderArabicWithNotes(sec,segment,i) {
     out+=`<span class="note-anchored note-range">${annotateTerms(raw.slice(r.start,r.end),seen)}</span>`;
     out+=r.ids.map(id=>`<a class="note-ref-symbol" href="#note-${esc(id)}" data-note-target="${esc(id)}" aria-label="Open editorial note ${esc(id)}" title="Editorial note ${esc(id)}" dir="ltr">${esc(id)}</a>`).join('');pos=r.end;
   }
-  return addQuranSourceMarkers(out+annotateTerms(raw.slice(pos),seen),sec,i,state.vowels?'vocalized':'ar',raw);
+  return addHadithSourceMarkers(addQuranSourceMarkers(out+annotateTerms(raw.slice(pos),seen),sec,i,state.vowels?'vocalized':'ar',raw),sec,i,raw);
 }
 function formatNoteText(text) {
   let result='',pos=0;
@@ -4983,8 +5029,8 @@ function jumpToNote(id,opener=document.activeElement) {
   // An inline Qurʾānic note must use exactly the same card as the section-end
   // Notes window, including verified ﴿…﴾ excerpts, qualification and source links.
   // Do not change the legacy detail window for other editorial note types.
-  if(note.source_type==='quran'){
-    gnShowLayer('Qurʾānic note · '+sectionRef(note.n),
+  if(note.source_type==='quran'||note.source_type==='hadith'){
+    gnShowLayer((note.source_type==='quran'?'Qurʾānic':'Hadith')+' note · '+sectionRef(note.n),
       '<article class="gn-layer-note gn-unified-notes">'+gnNotesCardHTML([note])+'</article>',
       'notes',opener||document.querySelector('[data-note-target="'+CSS.escape(id)+'"]'));
     return;
@@ -5894,7 +5940,7 @@ applyParallelOrder();applyArabicFont();applyEnglishFont();bind();bindReaderEnhan
 if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261023-ar-overbar1').catch(()=>{});
 })();
 
-</script><link rel="stylesheet" href="gnamma-search.css?v=20261022-proximity1"><link rel="stylesheet" href="gnamma-scholarly.css?v=20261022-scholarly1"><link rel="stylesheet" href="gnamma-word-context.css?v=20261022-morphperf3"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-scholarly.js?v=20261022-scholarly1"></script><script src="gnamma-morphology.js?v=20261022-morphperf3"></script><script src="gnamma-search.js?v=20261022-morphperf3"></script><script src="gnamma-word-context.js?v=20261022-morphperf3"></script><script src="quran-context-ui.js?v=20261022-qcontext1"></script></body>
+</script><link rel="stylesheet" href="gnamma-search.css?v=20261022-proximity1"><link rel="stylesheet" href="gnamma-scholarly.css?v=20261022-scholarly1"><link rel="stylesheet" href="gnamma-word-context.css?v=20261022-morphperf3"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-scholarly.js?v=20261022-scholarly1"></script><script src="gnamma-morphology.js?v=20261022-morphperf3"></script><script src="gnamma-search.js?v=20261022-morphperf3"></script><script src="gnamma-word-context.js?v=20261022-morphperf3"></script><script src="quran-context-ui.js?v=20261022-qcontext1"></script><link rel="stylesheet" href="hadith-note-polish.css?v=20261023-hnote1"><script src="hadith-note-polish.js?v=20261023-hnote1"></script></body>
 </html>
 
 
