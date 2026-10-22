@@ -392,6 +392,48 @@ function assertOfflineAsset() {
     d.querySelector('#gn-scholar-layer button[data-gn-close]').click();
     assert.equal(d.activeElement,marker,'Inline Notes restores source marker focus: '+noteId);
   }
+  // Hadith text citations now have *real Arabic insertion points* and use
+  // the unified popup rather than the historical stand-alone detail window.
+  const hadithAnchors=window.GnammaHadithAnchorMap || null;
+  const bound=JSON.parse(read('hadith-anchor-data.js').match(/window\.GnammaHadithAnchorMap=(.*);/s)[1]);
+  assert.equal(Object.keys(bound.notes).length,33);
+  let checkedH=0;
+  for(const [hadithId,scope] of Object.entries(bound.notes)){
+    await navigate(w,{id:String(scope.section)});
+    const markers=[...d.querySelectorAll('#reader .passage-ar .hadith-source-ref[data-note-target="'+hadithId+'"]')];
+    assert.equal(markers.length,scope.anchors.length,'One H marker beside each verified Arabic source occurrence '+hadithId);
+    for(const marker of markers)assert.equal(marker.textContent,'H','Discreet single H glyph '+hadithId);
+    if(!markers.length)continue;
+    const marker=markers[0],hash=w.location.hash;
+    w.scrollTo({top:478});marker.focus({preventScroll:true});marker.click();
+    await new Promise(resolve=>w.queueMicrotask(resolve));
+    const layer=d.querySelector('#gn-scholar-layer');
+    assert(layer,'Inline Hadith H opens unified Notes popup '+hadithId);
+    assert.equal(layer.querySelectorAll('.gn-note-entry[data-note-id="'+hadithId+'"]').length,1,'Only the matching Hadith note appears');
+    assert(layer.querySelector('.gn-hadith-context'),'Expanded full Arabic and English disclosure is available');
+    assert(!d.querySelector('#infoOverlay:not([hidden])'),'Legacy separate note window must not open');
+    assert.equal(w.location.hash,hash,'H note does not navigate away');
+    assert.equal(w.scrollY,478,'H note does not move the reader');
+    layer.querySelector('button[data-gn-close]').click();
+    assert.equal(d.activeElement,marker,'Closing H note restores its source marker focus');
+    checkedH+=markers.length;
+  }
+  assert.equal(checkedH,46,'All 46 reviewed H markers work in the actual 259-section reader');
+  await navigate(w,{id:'64'});
+  const qRoot=d.querySelector('.quran-source-ref[data-note-target="QUR-R064-Q005"]');
+  assert(qRoot,'Q source marker remains readable and clickable with H notes enabled');
+  qRoot.focus({preventScroll:true});qRoot.click();
+  await new Promise(resolve=>w.queueMicrotask(resolve));
+  const qPane=d.querySelector('#gn-scholar-layer .gn-note-entry[data-note-id="QUR-R064-Q005"]');
+  assert(qPane,'Q note is present in unified popup');
+  assert(qPane.querySelector('.gn-scholar-ayah-title[lang="ar"]'),'Full Quran verse excerpt is its prominent Arabic heading');
+  const related=qPane.querySelector('[data-related-hadith-to="QUR-R064-Q005"]');
+  assert(related,'Basmala Hadith is nested in its relevant Quran note');
+  assert(related.querySelector('details[data-gn-hadith-context="HAD-R064"]'),'Related Hadith has an expandable full text');
+  d.querySelector('#gn-scholar-layer button[data-gn-close]').click();
+  assert.equal(d.activeElement,qRoot,'Q return focus is preserved with nested Hadith');
+  console.log('PASS: 33 Hadith notes, 46 linked H root markers and four Quran-scope relations preserve navigation.');
+
   // Application popups display the same source body beside the cited material.
   for (const app of book.apps.filter(item => supplement.applications[item.id])) {
     await navigate(w, {id:app.n});
