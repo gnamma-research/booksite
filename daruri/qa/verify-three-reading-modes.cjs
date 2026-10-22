@@ -45,7 +45,9 @@ async function exercise(engine,name,origin){
   assert.deepEqual(counts,['1','1','1','1'],'saved §, ¶, exact quotation and note need separate counts');
   assert.equal(await page.locator('#gn-dock-paragraph-ref').innerText(),'· ¶1','bottom dock must identify paragraph 1');
   assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraphBookmarks"] .gn-dock-pilcrow').innerText(),'¶','saved paragraph must have compound bookmark-pilcrow glyph');
-  assert(await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg path').count()>=3,'personal note icon must contain a pen');
+  assert(await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg rect').count()===1 &&
+    await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg path').count()>=2,
+    'personal note icon must contain a page and inset pen');
   assert.equal(await page.locator('.reader .chapter-nav').isVisible(),false,'duplicate in-text navigation still visible');
   await page.locator('#focusToolbar').click();
   await page.locator('#gn-reading-mode-picker:not([hidden])').waitFor();
