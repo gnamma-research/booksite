@@ -10,6 +10,9 @@ on:
       - 'daruri/download-bundle.js'
       - 'daruri/sw.js'
       - 'daruri/qa/verify-personal-export.js'
+      - 'daruri/qa/verify-personal-annotation-icons.js'
+      - 'daruri/editions-selector.js'
+      - 'daruri/bookmark-ui.js'
       - 'daruri/qa/personal-export-browser.cjs'
       - 'daruri/qa/personal-export-webkit.cjs'
       - 'daruri/editions/apparatus/**'
@@ -32,6 +35,7 @@ jobs:
           node --check daruri/editions.js
           node --check daruri/reading-desk.js
           node daruri/qa/verify-personal-export.js
+          node daruri/qa/verify-personal-annotation-icons.js
       - name: Install isolated browser test dependencies
         run: |
           mkdir -p daruri/qa/node_modules
