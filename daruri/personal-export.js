@@ -104,6 +104,7 @@
   window.GnammaPersonalExportModel=model;
   let manifest=null,records=[],selectedIds=new Set(),busy=false,resultURL=null,resultFile=null;
   let baseMapCatalog=null;
+  let storageListenerInstalled=false;
   let lastFilename='';
   function showError(text){
     const out=$('pe-alert');if(!out)return;
@@ -627,7 +628,7 @@
     $('pe-check-all').addEventListener('click',()=>{available(records,prefs()).forEach(r=>selectedIds.add(r.id));$('pe-result').hidden=true;info('');syncForm();});
     $('pe-check-none').addEventListener('click',()=>{selectedIds.clear();$('pe-result').hidden=true;info('');syncForm();});
     // Other tabs can update the local Reading Desk; never export stale selections.
-    window.addEventListener('storage',e=>{
+    if(!storageListenerInstalled)window.addEventListener('storage',e=>{
       if(e.key!==STORAGE)return;
       records=loadDesk();
       const activeIds=new Set(records.map(r=>r.id));
@@ -636,11 +637,13 @@
       syncForm();
       info('Reading Desk data changed in another tab. Check your selected notes before exporting.');
     });
+    storageListenerInstalled=true;
     $('pe-form').addEventListener('submit',submit);
     $('pe-share').addEventListener('click',sharePdf);
     // The standalone personal-export page continues to work. Editions embeds
     // the same form and calls this bridge to select exactly the displayed PDF.
     window.GnammaPersonalExportInline={
+      remount:()=>init(),
       choose(file){
         if(!manifest?.files?.[file]){$('pe-edition').value='';syncForm();return false;}
         $('pe-edition').value=file;syncForm();return true;
