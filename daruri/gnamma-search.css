@@ -90,3 +90,41 @@
 }
 @media(prefers-reduced-motion:reduce){.gns-dialog{animation:none}}
 @media print{.gns-root{display:none!important}}
+
+/* Proximity mode is an optional research layer; all colours inherit the reader theme. */
+.gns-near-options{
+ display:grid;grid-template-columns:minmax(160px,1fr) 126px auto;
+ align-items:end;column-gap:12px;row-gap:7px;
+ padding:11px 19px 10px;background:var(--gns-alt);border-bottom:1px solid var(--gns-edge);
+}
+.gns-near-options .gns-setting{min-width:0}
+.gns-near-options input[type=search],.gns-near-options select{
+ width:100%;height:35px;background:var(--gns-paper);border:1px solid var(--gns-edge);
+ border-radius:6px;padding:7px 9px;color:var(--gns-txt);
+ font:500 13px/1.35 var(--sans,system-ui,sans-serif);
+}
+.gns-near-order{display:flex;align-items:center;gap:7px;white-space:nowrap;
+ padding-bottom:9px;color:var(--gns-txt);font:550 12px/1.2 var(--sans,system-ui,sans-serif);}
+.gns-near-order input{accent-color:var(--gns-contrast);width:15px;height:15px}
+.gns-near-help{grid-column:1/-1;color:var(--gns-soft);
+ font:450 11px/1.5 var(--sans,system-ui,sans-serif)}
+.gns-result .gns-row-excerpt mark.gns-near-one,.gns-kwic-text mark.gns-near-one{
+ background:var(--accent-soft,#e5d4c9);color:var(--gns-txt);
+ box-shadow:inset 0 -2px 0 var(--gns-contrast);
+}
+.gns-result .gns-row-excerpt mark.gns-near-two,.gns-kwic-text mark.gns-near-two{
+ background:var(--gns-alt);color:var(--gns-txt);
+ box-shadow:inset 0 -2px 0 var(--gns-contrast);font-weight:700;
+}
+::highlight(gns-proximity-a){background:var(--accent-soft,#e5d4c9);color:inherit}
+::highlight(gns-proximity-b){background:var(--gns-alt,#e7dfd1);color:inherit;text-decoration:underline;text-decoration-color:var(--accent,#805342);text-decoration-thickness:2px}
+@media(max-width:760px){
+ .gns-near-options{grid-template-columns:minmax(120px,1fr) 102px;
+  padding:11px 13px;gap:9px}
+ .gns-near-order{grid-column:1/-1;padding:0}
+ .gns-near-help{font-size:10.5px}
+}
+@media(max-width:360px){
+ .gns-near-options{grid-template-columns:1fr}
+ .gns-near-order{grid-column:auto}
+}
