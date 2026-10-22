@@ -16,7 +16,7 @@
     sliders:'<path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.5" fill="currentColor" stroke="none"/><circle cx="16" cy="17" r="2.5" fill="currentColor" stroke="none"/>',
     notes:'<path d="M5 3h14v18l-4-3-4 3-3-3-3 3V3Z"/><path d="M9 8h6M9 12h6"/>',
     noNotes:'<path d="M5 3h14v18H5zM8 8h8M8 12h7"/><path d="m3 21 18-18"/>',
-    pen:'<path d="m4 20 4.5-1 11-11-3.5-3.5-11 11L4 20Z"/><path d="m14.5 6 3.5 3.5M4 20h16"/>',
+    pen:'<rect x="3.6" y="3.5" width="16" height="17" rx="2"/><path d="M7 8h7M7 11h4"/><path d="m11.6 16.9 5.3-5.3 2 2-5.3 5.3-2.8.8zM15.9 12.6l2 2"/>',
     bookmark:'<path d="M6 4h12v17l-6-4-6 4V4Z"/>',
     outline:'<path d="M7 5h13M7 12h13M7 19h13"/><circle cx="3" cy="5" r="1" fill="currentColor" stroke="none"/><circle cx="3" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="3" cy="19" r="1" fill="currentColor" stroke="none"/>',
     none:'<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M8 9h8M8 13h8"/>',
@@ -37,12 +37,14 @@
   };
 
   function icon(key, value) {
+    if(key==='personal'&&value!=='none'&&window.GnammaBookmarkUI?.noteIcon)
+      return window.GnammaBookmarkUI.noteIcon();
     let shape='book';
     if(key==='language') shape=value==='bilingual'?'bilingual':value==='english'?'en':value==='arabic-vowelled'?'marked':'ar';
     else if(key==='columns') shape=value==='parallel'||value==='2'?'columns':value==='stacked'?'stacked':'single';
     else if(key==='density') shape=value==='comfortable'?'comfortable':value==='compact'?'compact':'wide';
     else if(key==='notes') shape=value==='none'?'noNotes':value==='essential'?'essential':'study';
-    else if(key==='personal') shape=value==='none'?'noNotes':value==='notes'?'pen':'bookmark';
+    else if(key==='personal') shape=value==='none'?'noNotes':'pen';
     else if(key==='scope') shape=value==='full'?'book':value==='part'?'chapter':value==='lesson'?'list':'range';
     else if(key==='part') shape='chapter';
     else if(key==='lesson') shape='book';
@@ -54,7 +56,7 @@
 
   const fieldGlyphs={
     language:'bilingual',columns:'columns',density:'sliders',notes:'notes',
-    personal:'bookmark',scope:'range',part:'chapter',lesson:'list',
+    personal:'pen',scope:'range',part:'chapter',lesson:'list',
     editorial:'plus',vowels:'marked'
   };
   function marker(key) {
