@@ -45,13 +45,13 @@ jobs:
           node --check daruri/download-bundle.js
           node --check daruri/qa/verify-reading-desk-toolbar-pdf.cjs
           grep -q 'reading-desk-pdf.js?v=20261021-rdiconpdf1' daruri/sw.js
-          grep -q 'reading-desk.js?v=20261022-readmode3a' daruri/index.html
-          grep -q 'reading-desk.css?v=20261022-readmode3a' daruri/index.html
+          grep -q 'reading-desk.js?v=20261022-markloc1' daruri/index.html
+          grep -q 'reading-desk.css?v=20261022-markloc1' daruri/index.html
           grep -q 'daruri/reading-desk-pdf.js' daruri/download-bundle.js
-          grep -q 'reading-desk.js?v=20261022-readmode3a' daruri/sw.js
-          grep -q 'reading-desk.css?v=20261022-readmode3a' daruri/sw.js
-          grep -q 'reading-desk.js?v=20261022-readmode3a' daruri/download-bundle.js
-          grep -q 'reading-desk.css?v=20261022-readmode3a' daruri/download-bundle.js
+          grep -q 'reading-desk.js?v=20261022-markloc1' daruri/sw.js
+          grep -q 'reading-desk.css?v=20261022-markloc1' daruri/sw.js
+          grep -q 'reading-desk.js?v=20261022-markloc1' daruri/download-bundle.js
+          grep -q 'reading-desk.css?v=20261022-markloc1' daruri/download-bundle.js
       - name: Install pinned browser and PDF validators
         run: |
           npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1 pdfjs-dist@5.4.296
