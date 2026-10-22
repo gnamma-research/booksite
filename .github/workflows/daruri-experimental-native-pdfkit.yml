@@ -1,0 +1,44 @@
+name: Daruri EXPERIMENT native PDFKit original Arabic
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - feature/daruri-arabic-pango-pilot-20261022
+    paths:
+      - daruri/qa/experimental_original_arabic_unicode.py
+      - daruri/qa/experimental_original_pdfkit.swift
+      - .github/workflows/daruri-experimental-native-pdfkit.yml
+permissions:
+  contents: read
+jobs:
+  pdfkit-original-arabic:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Prepare PDF engine and font tooling
+        run: |
+          python -m pip install "PyMuPDF==1.26.7" "fonttools>=4.55,<5"
+          command -v pdftotext || brew install poppler
+      - name: Build isolated full-source search proof only
+        run: |
+          python daruri/qa/experimental_original_arabic_unicode.py \
+            --input daruri/editions/reading/daruri-reading-arabic-titles-off.pdf \
+            --map daruri/editions/maps/daruri-reading-arabic-titles-off.pdf.json \
+            --font daruri/build/fonts/NotoNaskhArabic-Regular.ttf \
+            --output /tmp/gnamma-native-source-PROTOTYPE.pdf \
+            --limit 414 --diagnostic --report /tmp/gnamma-native-pdfkit-source.json
+      - name: Native macOS PDFKit original-page Arabic findString
+        run: |
+          swift daruri/qa/experimental_original_pdfkit.swift \
+            daruri/editions/reading/daruri-reading-arabic-titles-off.pdf \
+            /tmp/gnamma-native-source-PROTOTYPE.pdf
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-experimental-pdfkit-source-report
+          path: /tmp/gnamma-native-pdfkit-source.json
+          retention-days: 7
