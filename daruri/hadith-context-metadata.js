@@ -21,6 +21,3 @@ Object.assign(window.GnammaHadithReports["bukhari:7311"]||{}, {"chapter_en":"“
 
 /* Bukhari additional chapter records, from LK-Hadith-Corpus. */
 Object.assign(window.GnammaHadithReports["bukhari:580"]||{}, {"chapter_en":"Whoever got (or was able to offer) one Rak'a of a prayer (in time)","chapter_ar":"مَنْ أَدْرَكَ مِنَ الصَّلاَةِ رَكْعَةً","narrator":"Narrated Abu Huraira:","book":"Times of the Prayers"});
-
-/* Abi Dawud book and chapter labels from LK corpus; independently preserve isnad and grading. */
-Object.assign(window.GnammaHadithReports["abudawud:2340"]||{}, {"chapter_en":"A Person Observing I'tikaf Visiting The Sick","chapter_ar":"باب الْمُعْتَكِفِ يَعُودُ الْمَرِيضَ","narrator":"Narrated Abdullah ibn Umar:","book":"Fasting (Kitab Al-Siyam)"});
