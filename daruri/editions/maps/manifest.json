@@ -1,8 +1,8 @@
 {
-  "release": "20261022-base-personal-word-maps",
+  "release": "20261022-A4-Arabic-Pango-precise-word-maps",
   "status": "verified",
   "source_manifest_sha256": "58d8bca84ffc786671d65700d27558ed3c2ef0bacee9a35f34105153db3bedb2",
-  "note": "Per-edition checksum-bound section destinations and strictly matched word segments. Partial word coverage is expected and falls back to sections.",
+  "note": "All twelve checksum-bound base maps preserved. Four Arabic-only editions have 414 source-linked Pango segments and pixel-identical published pages. Arabic bilingual/Study precision is not yet verified.",
   "files": [
     {
       "file": "reading/daruri-reading-bilingual-titles-off.pdf",
@@ -146,19 +146,19 @@
       "pages": 36,
       "map_file": "maps/daruri-reading-arabic-titles-off.pdf.json",
       "metadata_file": "maps/daruri-reading-arabic-titles-off.pdf.metadata.json",
-      "map_sha256": "8669067ee20e9d240f03da150aa2afac5296faa76e0dc41d1c6ba93e2d3f9b41",
+      "map_sha256": "7a051f28b4c0b66e25083516a640f392a672d0c919b193ffeb7bb9322b035385",
       "source_base": "reading/daruri-reading-arabic-titles-off.pdf",
       "base_sha256": "d7080acf3232f49e3ddac67ccafab62201247cc7b632d6eaefc32e78c7e94038",
       "verified_sections": 258,
       "map_coverage": 1.0,
-      "word_map_present": false,
+      "word_map_present": true,
       "word_map_coverage": {
         "ar": {
-          "matched": 0,
+          "matched": 414,
           "eligible": 414
         }
       },
-      "mapped_segments": 0
+      "mapped_segments": 414
     },
     {
       "file": "reading/daruri-reading-arabic-titles-on.pdf",
@@ -166,19 +166,19 @@
       "pages": 41,
       "map_file": "maps/daruri-reading-arabic-titles-on.pdf.json",
       "metadata_file": "maps/daruri-reading-arabic-titles-on.pdf.metadata.json",
-      "map_sha256": "248457e656257f61a79664a5f589db4dfe69d54b73db276faf4ffa4210a47652",
+      "map_sha256": "d07252a3b5ab2fee7402923c722d6354ce43881b8f7f3671808ee8bb7e4f14a7",
       "source_base": "reading/daruri-reading-arabic-titles-on.pdf",
       "base_sha256": "29b7e42300d82201f5d5d9a9cbd06a29cbae85887f9f273d1f7e007cce440249",
       "verified_sections": 258,
       "map_coverage": 1.0,
-      "word_map_present": false,
+      "word_map_present": true,
       "word_map_coverage": {
         "ar": {
-          "matched": 0,
+          "matched": 414,
           "eligible": 414
         }
       },
-      "mapped_segments": 0
+      "mapped_segments": 414
     },
     {
       "file": "reading/daruri-reading-arabic-vowelled-titles-off.pdf",
@@ -186,19 +186,19 @@
       "pages": 37,
       "map_file": "maps/daruri-reading-arabic-vowelled-titles-off.pdf.json",
       "metadata_file": "maps/daruri-reading-arabic-vowelled-titles-off.pdf.metadata.json",
-      "map_sha256": "fdb1589e25bb49ec2a2ffd01e0dea36251c16fd5b270b30c47880d1c3d677073",
+      "map_sha256": "ecbebdbfe341ea83513556b89d48a6ca319c6db2ca3d0f4ccedf706553c9fdff",
       "source_base": "reading/daruri-reading-arabic-vowelled-titles-off.pdf",
       "base_sha256": "b58b5671dec6fab070618d2387e7864a286b47188051998214e1350ba010c325",
       "verified_sections": 258,
       "map_coverage": 1.0,
-      "word_map_present": false,
+      "word_map_present": true,
       "word_map_coverage": {
         "vocalized": {
-          "matched": 0,
+          "matched": 414,
           "eligible": 414
         }
       },
-      "mapped_segments": 0
+      "mapped_segments": 414
     },
     {
       "file": "reading/daruri-reading-arabic-vowelled-titles-on.pdf",
@@ -206,19 +206,19 @@
       "pages": 42,
       "map_file": "maps/daruri-reading-arabic-vowelled-titles-on.pdf.json",
       "metadata_file": "maps/daruri-reading-arabic-vowelled-titles-on.pdf.metadata.json",
-      "map_sha256": "fe09628ad2f9c56cc8243f58af39e62c7fb58033129ac637f98458ac71fd254b",
+      "map_sha256": "8592e2ac5556b5677ddc52e7292f51cab09a923a21c4e478739e2bdf1dba2fb2",
       "source_base": "reading/daruri-reading-arabic-vowelled-titles-on.pdf",
       "base_sha256": "fca76e1160a3aebc2eeb9a1c707c49599fc95db618abcd89c67c31ea474368b1",
       "verified_sections": 258,
       "map_coverage": 1.0,
-      "word_map_present": false,
+      "word_map_present": true,
       "word_map_coverage": {
         "vocalized": {
-          "matched": 0,
+          "matched": 414,
           "eligible": 414
         }
       },
-      "mapped_segments": 0
+      "mapped_segments": 414
     },
     {
       "file": "study/daruri-study-bilingual-titles-off.pdf",
