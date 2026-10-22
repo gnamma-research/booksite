@@ -1,0 +1,72 @@
+name: Daruri zero-prebuilt-PDF-input full HTML typesetting and composition smoke
+on:
+  push:
+    branches: [research/daruri-html-first-pdf-20261022]
+    paths:
+      - 'daruri/dynamic-pdf/assemble_from_html_inputs.cjs'
+      - 'daruri/dynamic-pdf/bind_html_runtime_map.py'
+      - 'daruri/dynamic-pdf/render_html_runtime_packet.py'
+      - '.github/workflows/daruri-html-all-inputs-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-zero-prebuilt-pdf-smoke-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  html-source-and-apparatus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned browser-compatible composer, WeasyPrint 68 and Arabic shaper
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install -q -r daruri/build/requirements.txt 'PyMuPDF==1.26.7' 'pypdf==5.9.0' 'numpy>=1.26' 'scipy>=1.13'
+          npm install --no-save --no-package-lock --prefix daruri/qa pdf-lib@1.17.1
+      - name: Compile independent source bind, canonical apparatus builder and zero-prebuilt assembler
+        run: |
+          python -m py_compile daruri/dynamic-pdf/html_first_all12.py \
+            daruri/dynamic-pdf/bind_html_runtime_map.py \
+            daruri/dynamic-pdf/render_html_runtime_packet.py
+          node --check daruri/dynamic-pdf/assemble_from_html_inputs.cjs
+      - name: Generate complete source and appendix pages from canonical HTML; compose three PDFs with signed link maps
+        env:
+          GN_HTML_TMP: /tmp/daruri-html-total-source-and-packet
+          GN_HTML_OUTPUT: /tmp/daruri-html-total-source-and-packet/generated
+          GN_HTML_MATRIX: SMOKE
+        run: node daruri/dynamic-pdf/assemble_from_html_inputs.cjs
+      - name: Independently certify exact source+apparatus page pixels, text, anchors, outlines and link geometry
+        run: |
+          python daruri/qa/verify_dynamic_apparatus_links.py \
+            --site daruri \
+            --generated /tmp/daruri-html-total-source-and-packet/generated \
+            --output /tmp/daruri-html-total-source-and-packet/parity
+      - name: Ensure generation did not consume any original PDFs as page inputs
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          d=pathlib.Path('/tmp/daruri-html-total-source-and-packet/generated')
+          r=json.loads((d/'results.json').read_text())
+          assert len(r['profiles'])==3,r
+          assert r['source_pdf_inputs']==[] and r['apparatus_packet_pdf_inputs']==[]
+          p=json.loads(pathlib.Path('/tmp/daruri-html-total-source-and-packet/parity/exact-link-parity.json').read_text())
+          assert p['passed']==p['evaluated']==3,p
+          print('HTML_FULL_DOCUMENT_NO_PREBUILT_INPUTS_PASS',len(r['profiles']),p['total_certified_appendix_links'])
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-zero-prebuilt-input-pdf-html-smoke
+          path: |
+            /tmp/daruri-html-total-source-and-packet/generated/results.json
+            /tmp/daruri-html-total-source-and-packet/parity/exact-link-parity.json
+          retention-days: 18
+          if-no-files-found: warn
