@@ -49,28 +49,37 @@ try{
   await page.goto(origin+'#editions',{waitUntil:'domcontentloaded',timeout:40000});
   await ui.waitFor({timeout:40000});
   await page.waitForFunction(()=>window.GnammaEditions?.__getPublicationSelection?.().resolution==='ready',{timeout:35000});
-  assert.deepEqual(await ui.locator('.gn-es-tab').allTextContents(),['Reading & Study','Reference']);
+  assert.deepEqual(await ui.locator('.gn-es-tab').allTextContents(),['PDF editions','Offline reader']);
   assert.equal(await ui.getByRole('tab').count(),2);
   assert.equal(await ui.locator('.gn-es-preset').count(),3);
   assert.equal(await ui.locator('.gn-es-category').count(),0);
-  assert.match(await link(),/reading\/daruri-reading-bilingual-titles-off\.pdf\?v=[a-f0-9]+/);
+  assert.equal(await ui.locator('[data-es-prepare]').isVisible(),true);
+  assert.equal(await open.isVisible(),false,'Published PDF is not marked as prepared before retrieval');
+  assert.equal(await status.isVisible(),false,'Do not show a redundant verified-PDF banner');
   assert.equal(await ui.locator('#pe-form').count(),1,'Personal PDF form is embedded directly');
   assert.equal(await ui.locator('.gn-es-personal-link').count(),0,'No separate personal-PDF page link');
   await page.waitForFunction(()=>window.GnammaPersonalExportInline?.ready,{timeout:35000});
   await page.waitForFunction(()=>document.querySelector('#pe-edition')?.value.includes('reading/daruri-reading-bilingual-titles-off.pdf'),
     {timeout:20000});
-  assert.equal(await ui.locator('[data-es-action="open"]').isVisible(),true);
+  assert.equal(await ui.locator('[data-es-prepare]').isVisible(),true);
+  await ui.locator('[data-es-prepare]').click();
+  await open.waitFor({state:'visible',timeout:35000});
+  assert.match(await link(),/^blob:/);
+  assert.equal(await ui.locator('[data-es-prepare]').isVisible(),false);
+  const publishedDownload=page.waitForEvent('download',{timeout:20000});
+  await open.click();
+  assert.match((await publishedDownload).suggestedFilename(),/daruri-reading-bilingual-titles-off\.pdf/);
   await ui.locator('[data-es-toggle="ar"]').click();
   await check('ready');
-  assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),true,
-    'Study may not silently change an English-only source to bilingual');
+  assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),false,
+    'A deliberate Study choice can switch to its standard bilingual profile');
   assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.ar,false);
   await ui.locator('[data-es-toggle="ar"]').click();
   await check('ready');
   assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.vowels,false,
     'Second AR state is plain, without vowel marks');
-  assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),true);
-  assert.equal(await ui.locator('[data-es-toggle="ar"] .gn-es-ar-form').innerText(),'Plain');
+  assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),false);
+  assert.equal(await ui.locator('[data-es-toggle="ar"] .gn-es-ar-form').textContent(),'Plain');
   await ui.locator('[data-es-toggle="ar"]').click();
   await check('ready');
   assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.vowels,true);
@@ -106,7 +115,7 @@ try{
   assert.equal(await ui.locator('#pe-edition').inputValue(),
     'editions/study/daruri-study-bilingual-titles-off.pdf');
   assert.equal(await ui.locator('[data-es-toggle="ar"]').isDisabled(),true);
-  assert.match(await ui.locator('.gn-es-spec-notes').innerText(),/Publisher notes: Selected/);
+  assert.match(await ui.locator('.gn-es-spec-notes').textContent(),/Publisher notes: Selected/);
   await pressPreset('reading');
   await check('ready');
   await ui.locator('[data-es-custom]').click();
@@ -118,7 +127,7 @@ try{
   assert.match(await ui.locator('.gn-es-spec-apparatus').innerText(),/Glossary · Full index/);
 
   // The same personal controls must work inside scholarly Reference.
-  await ui.getByRole('tab',{name:'Reference'}).click();
+  await pressPreset('reference');
   await check('ready');
   assert.equal(await ui.locator('[data-es-reference-inventory]').isVisible(),true);
   assert.equal(await ui.locator('#pe-edition').inputValue(),'daruri.pdf');
@@ -128,17 +137,17 @@ try{
   await ui.locator('#pe-highlights').check();
   assert.match(await ui.locator('#pe-count').innerText(),/3 qualifying items/,
     'Highlights must be included independently of notes and bookmarks');
-  await ui.getByRole('tab',{name:'Reading & Study'}).click();
+  await pressPreset('reading');
   await ui.locator('#pe-personal').uncheck();
   await ui.locator('#pe-bookmarks').uncheck();
   await ui.locator('#pe-highlights').uncheck();
-  assert.equal(await ui.locator('[data-es-action="open"]').isVisible(),true);
+  assert.equal(await ui.locator('[data-es-prepare]').isVisible(),true);
   await page.screenshot({path:path.join(captures,'daruri-two-tabs-desktop.png'),fullPage:true});
   await page.setViewportSize({width:390,height:844});
   await page.screenshot({path:path.join(captures,'daruri-two-tabs-mobile.png'),fullPage:true});
   const measurement=await page.evaluate(()=>{
     const root=document.querySelector('.gn-es'),panel=root.querySelector('#gn-es-panel');
-    const action=root.querySelector('[data-es-action="open"]');
+    const action=root.querySelector('[data-es-prepare]');
     const buttons=[...root.querySelectorAll('button')].filter(n=>!n.hidden&&n.getClientRects().length);
     return {overflow:document.documentElement.scrollWidth-innerWidth,
       minButton:Math.min(...buttons.map(n=>n.getBoundingClientRect().height)),
@@ -150,7 +159,13 @@ try{
   await page.setViewportSize({width:320,height:690});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth)<=2,'320px overflow');
   assert.deepEqual(errors,[],'Uncaught JavaScript runtime exceptions');
-  console.log('PASS: 2 tabs, 3 presets, inline private PDF generation, exact base/apparatus matching, Reference and 390/320px phone layout');
+  await ui.getByRole('tab',{name:'Offline reader'}).click();
+  assert.equal(await ui.locator('[data-daruri-bundle="html"]').isVisible(),true);
+  assert.equal(await ui.locator('[data-es-pdf-panel]').isVisible(),false);
+  const offlineFiles=await page.evaluate(()=>window.GnammaOfflineBundle?.sourceFiles(false)?.files?.map(x=>x[0])||[]);
+  assert.ok(offlineFiles.includes('daruri/index.html'),'Offline reader includes its own HTML');
+  assert.ok(!offlineFiles.some(name=>name.endsWith('.pdf')),'HTML-only package must not include PDFs');
+  console.log('PASS: Download formats, 3 PDF profiles, genuine published-PDF preparation, personal PDF creation, AR cycles and offline ZIP');
 }finally{
   await context.close();
   await browser.close();
