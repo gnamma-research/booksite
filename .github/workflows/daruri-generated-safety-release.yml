@@ -1,0 +1,81 @@
+name: Daruri generated PDF strict browser operational release gate
+on:
+  push:
+    branches: [integration/daruri-generated-safety-20261022]
+    paths:
+      - 'daruri/dynamic-pdf/client.js'
+      - 'daruri/dynamic-editions.html'
+      - 'daruri/personal-export.js'
+      - 'daruri/qa/verify_dynamic_cancel_identity.cjs'
+      - '.github/workflows/daruri-generated-safety-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-generated-safety-release-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  mobile-browser-operations:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: booksite
+      - name: Check out independent, previously failing operational tests
+        uses: actions/checkout@v4
+        with:
+          path: audit
+          ref: fb89b43793e92bdc97bf3141155a05c2293abcdf
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned browser test packages
+        run: |
+          npm install --no-save --no-package-lock --prefix booksite/daruri/qa playwright@1.56.1 pdf-lib@1.17.1
+          cd booksite/daruri/qa
+          if [ '${{ matrix.browser }}' = 'chromium' ]; then
+            if command -v google-chrome >/dev/null 2>&1; then
+              google-chrome --version
+              echo 'GNAMMA_CHROME_CHANNEL=chrome' >> "$GITHUB_ENV"
+            else
+              npx playwright install --with-deps --only-shell chromium
+            fi
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Source lint and syntax checks
+        run: |
+          node --check booksite/daruri/dynamic-pdf/client.js
+          node --check booksite/daruri/personal-export.js
+          node --check booksite/daruri/qa/verify_dynamic_cancel_identity.cjs
+      - name: Independent 16-case negative paths on this integrated candidate
+        env:
+          GNAMMA_SITE_ROOT: ${{ github.workspace }}/booksite
+          GNAMMA_BROWSER: ${{ matrix.browser }}
+          GNAMMA_REPORT_DIR: /tmp/daruri-original-negative-${{ matrix.browser }}
+        run: node audit/daruri/qa/verify_dynamic_negative_paths.cjs
+      - name: Dedicated cancellation, identity, retries and privacy acceptance
+        if: always()
+        env:
+          GNAMMA_SITE_ROOT: ${{ github.workspace }}/booksite
+          GNAMMA_BROWSER: ${{ matrix.browser }}
+          GNAMMA_REPORT_DIR: /tmp/daruri-cancel-identity-${{ matrix.browser }}
+        run: node booksite/daruri/qa/verify_dynamic_cancel_identity.cjs
+      - name: Preserve pass and fail evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dynamic-safety-${{ matrix.browser }}-release-evidence
+          path: |
+            /tmp/daruri-original-negative-${{ matrix.browser }}/negative-path-report.json
+            /tmp/daruri-cancel-identity-${{ matrix.browser }}/cancel-identity-report.json
+          if-no-files-found: warn
+          retention-days: 21
