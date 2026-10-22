@@ -295,11 +295,11 @@
       if(sheet.y+155>maxY)await flush();
       noteTargets[i]={index:basePages+pageNum-1,top:Math.max(12,sheet.y/2-14)};
       await line('P'+(i+1)+' · '+nameOf(r.target),'title');
-      await line(r.title|| (isNote(r)?'Personal note':'Saved quotation'),'meta');
+      await line(r.title|| (isNote(r)?'Personal note':'Highlight'),'meta');
       if(isNote(r)){
         for(const para of r.body.split(/\n/))await line(para);
       }else if(r.target?.quote){
-        await line('Saved quotation: '+String(r.target.quote));
+        await line('Highlighted text: '+String(r.target.quote));
       }else if(r.body)for(const para of String(r.body).split(/\n/))await line(para);
       else if(r.archivedValue!==undefined)await line('Archived value: '+JSON.stringify(r.archivedValue));
       else await line('Saved bookmark / reference');

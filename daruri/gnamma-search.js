@@ -249,13 +249,13 @@ function readPersonal(){
  return saved.items.filter(x=>x&&typeof x==='object'&&!x.deleted).map(p=>{
   const t=p.target||{},kind=p.kind,ty=kind==='note'?'personal':kind==='quote'?'highlight':'bookmark';
   const section=String(t.section||''),
-   title=p.title||(kind==='note'?'Personal note':kind==='quote'?'Saved quotation':'Bookmark');
+   title=p.title||(kind==='note'?'Personal note':kind==='quote'?'Highlighted text':'Bookmark');
   const body=[p.body,t.quote,t.term,t.app,t.noteId,t.sub,t.lesson].filter(Boolean).join(' · ');
   const sectionInfo=(BOOK.sections||[]).find(s=>String(s.id)===section);
   const quoted=t.quote||'';
   // Saved quotations and metadata are indexed; ordinary bookmarks do not impersonate occurrences.
   return entry({type:ty,id:String(p.id||''),section,segment:t.segment==null?null:Number(t.segment),
-   subtype:kind==='note'?'Private note':kind==='quote'?'Saved highlight':'Saved location',
+   subtype:kind==='note'?'Personal note':kind==='quote'?'Highlight':'Bookmark',
    title,body:body||(sectionInfo?.title||''),locator:section?'§'+section:'',
    ar:hasArabic(quoted)?quoted:'',en:hasArabic(quoted)?'':quoted,privacy:'private',
    kind,tag:t.kind||'',related:[],created:p.created,updated:p.updated});

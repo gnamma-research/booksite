@@ -83,11 +83,11 @@ test('verified metadata agrees with every published PDF edition',()=>{
  }
 });
 test('exporter v3 links, offline worker and downloadable package agree',()=>{
- assert(html.includes('personal-export.js?v=4'));
- assert(sw.includes('personal-export.js?v=4'));
+ assert(html.includes('personal-export.js?v=20261022-bookmark-audit1'));
+ assert(sw.includes('personal-export.js?v=20261022-bookmark-audit1'));
  assert(sw.includes('personal-export.js?v=2'),'existing installations lost previous v2 asset');
  assert(sw.includes('personal-export.js?v=two-tabs-20261022'),'inline Editions exporter is missing from PWA cache');
- assert(bundle.includes('personal-export.js?v=two-tabs-20261022'),'offline bundle must carry the current inline exporter');
+ assert(bundle.includes('personal-export.js?v=20261022-bookmark-audit1'),'offline bundle must carry the current inline exporter');
  assert(sw.includes('personal-export.js?v=1'),'existing offline installations lost their previous export asset');
 });
 test('the picker bounds rendered rows and explains hidden search results',()=>{

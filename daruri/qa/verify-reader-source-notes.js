@@ -343,6 +343,55 @@ function assertOfflineAsset() {
   assert.equal(visited.size, 637, 'Every original note and all 98 main/application sources rendered once in its owned section');
   for (const note of [...book.notes, ...appSources]) assert.ok(visited.has(note.id), 'Rendered note ' + note.id);
   for (const note of dictionarySources) assert.ok(!visited.has(note.id));
+  // Inline Qurʾānic markers must open exactly the same single-note presentation
+  // as the section-end Notes card, including verified verse and ornate brackets.
+  const inlineQuranChecks=[
+    ['1','QUR-R001-Q049','عَلَّمَهُ ٱلْبَيَانَ'],
+    ['1','QUR-R001-Q050','فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ'],
+    ['38','QUR-R038-Q001','يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَقْرَبُوا۟ ٱلصَّلَوٰةَ وَأَنتُمْ سُكَـٰرَىٰ حَتَّىٰ تَعْلَمُوا۟ مَا تَقُولُونَ']
+  ];
+  for (const [sectionId,noteId,verse] of inlineQuranChecks) {
+    await navigate(w,{id:sectionId});
+    const marker=d.querySelector('.quran-source-ref[data-note-target="'+noteId+'"]');
+    assert.ok(marker,'Inline Qurʾānic footnote marker exists: '+noteId);
+    marker.focus({preventScroll:true});
+    const hash=w.location.hash;
+    w.scrollTo({top:412});
+    marker.click();
+    await new Promise(resolve => w.queueMicrotask(resolve));
+    assert.equal(w.location.hash,hash,'Inline note does not navigate away: '+noteId);
+    assert.equal(w.scrollY,412,'Inline note preserves reading position: '+noteId);
+    assertCard(d,{id:sectionId},[byID.get(noteId)]);
+    const context=d.querySelector('#gn-scholar-layer details[data-gn-quran-context="'+noteId+'"]');
+    assert.ok(context,'One contextual disclosure under the same inline note: '+noteId);
+    assert.equal(context.open,false,'Qurʾānic context starts collapsed: '+noteId);
+    assert.equal(context.querySelectorAll('.gn-context-ayah').length,0,'No full verses rendered before request');
+    const previousLoads=d.querySelectorAll('script[src*="quran-context-data.js"]').length;
+    context.open=true;
+    context.dispatchEvent(new w.Event('toggle'));
+    await new Promise(resolve => w.setTimeout(resolve,90));
+    assert.equal(context.dataset.gnContextReady,'1','Context loads when expanded: '+noteId);
+    assert.equal(d.querySelectorAll('script[src*="quran-context-data.js"]').length,Math.max(1,previousLoads),
+      'Local context script loads only once even across many notes');
+    const rows=[...context.querySelectorAll('.gn-context-ayah')];
+    const expected=JSON.parse(read('quran-context-data.json')).notes[noteId].flatMap(ref=>ref.verses);
+    assert.deepEqual(rows.map(row=>row.querySelector('figcaption').textContent.split(' · ')[0]),
+      expected,'Exact neighboring verse inventory: '+noteId);
+    assert.equal(rows.filter(row=>row.classList.contains('gn-context-cited')).length,
+      byID.get(noteId).references.reduce((sum,ref)=>sum+ref.ayah_end-ref.ayah_start+1,0));
+    assert.ok(rows.every(row=>row.querySelector('.gn-quran-words')?.textContent&&row.querySelector('.gn-context-translation')?.textContent));
+    assert.ok(rows.every(row=>row.querySelector('.gn-quran-quotation')?.firstElementChild?.textContent==='﴿'));
+    assert.ok(rows.every(row=>row.querySelector('.gn-quran-quotation')?.lastElementChild?.textContent==='﴾'));
+    assert.ok(context.querySelector('.gn-quran-context-credit')?.textContent.includes('Tanzil'),'Proper attribution in context');
+    context.open=false;
+    const figure=d.querySelector('#gn-scholar-layer .gn-note-entry .gn-verse-source-excerpt');
+    assert.ok(figure,'Inline note shows a verified Qurʾānic excerpt: '+noteId);
+    assert.equal(figure.querySelector('.gn-quran-words')?.textContent,verse);
+    assert.equal(figure.querySelector('.gn-quran-quotation')?.firstElementChild?.textContent,'﴿');
+    assert.equal(figure.querySelector('.gn-quran-quotation')?.lastElementChild?.textContent,'﴾');
+    d.querySelector('#gn-scholar-layer button[data-gn-close]').click();
+    assert.equal(d.activeElement,marker,'Inline Notes restores source marker focus: '+noteId);
+  }
   // Application popups display the same source body beside the cited material.
   for (const app of book.apps.filter(item => supplement.applications[item.id])) {
     await navigate(w, {id:app.n});

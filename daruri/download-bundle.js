@@ -5,8 +5,8 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "20261021-rdiconpdf1-section1-qparallels2-qbrackets3-qinline4-fallback1";
-  const RELEASE_ASSETS = new Set(["gnamma-search.js", "gnamma-search.css", "gnamma-scholarly.js", "gnamma-scholarly.css", "gnamma-proximity.js", "gnamma-search-return.js", "gnamma-morphology.js", "gnamma-word-context.js", "gnamma-word-context.css", "morph-lexicon.json", "morph-daruri-v1.json", "morph-mustasfa-v1.json", "daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
+  const RELEASE_VERSION = "20261022-qcontext-bookmark-morphperf2";
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "quran-context-data.js", "QURAN_CONTEXT_SOURCES.md", "gnamma-morphology.js", "gnamma-word-context.js", "gnamma-word-context.css", "morph-lexicon.json", "morph-daruri-v1.json", "morph-mustasfa-v1.json", "download-bundle.js", "bookmark-ui.js", "bookmark-ui.css", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -101,12 +101,14 @@
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
-      ['daruri/reading-desk.js', 'reading-desk.js?v=20261022-markloc1'],
-      ['daruri/reading-desk.css', 'reading-desk.css?v=20261022-markloc1'],
-      ['daruri/reading-mode-controls.js', 'reading-mode-controls.js?v=20261022-docksections1'],
-      ['daruri/reading-mode-controls.css', 'reading-mode-controls.css?v=20261022-markloc1'],
+      ['daruri/bookmark-ui.js', 'bookmark-ui.js?v=20261022-bookmark-audit1'],
+      ['daruri/bookmark-ui.css', 'bookmark-ui.css?v=20261022-bookmark-audit1'],
+      ['daruri/reading-desk.js', 'reading-desk.js?v=20261022-bookmark-audit1'],
+      ['daruri/reading-desk.css', 'reading-desk.css?v=20261022-bookmark-audit1'],
+      ['daruri/reading-mode-controls.js', 'reading-mode-controls.js?v=20261022-bookmark-audit1'],
+      ['daruri/reading-mode-controls.css', 'reading-mode-controls.css?v=20261022-bookmark-audit1'],
       ['daruri/reading-desk-pdf.js', 'reading-desk-pdf.js?v=20261021-rdiconpdf1'],
-      ['daruri/reading-desk-dictionary.js', 'reading-desk-dictionary.js?v=20261021-readingdesk6'],
+      ['daruri/reading-desk-dictionary.js', 'reading-desk-dictionary.js?v=20261022-bookmark-audit1'],
       ['daruri/reader-structure.css', 'reader-structure.css?v=20261020-structure1'],
       ['daruri/subject-index.css', 'subject-index.css?v=20261020-indexprint1'],
       ['daruri/subject-index-data.js', 'subject-index-data.js?v=20261020-structure1'],
@@ -145,9 +147,26 @@
       ['daruri/dictionary.html', 'dictionary.html'],
       ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri8-structure-20261020'],
       ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=20261021-section1-qparallels1'],
+      ['daruri/gnamma-search.js', 'gnamma-search.js?v=20261022-morphperf1'],
+      ['daruri/gnamma-morphology.js', 'gnamma-morphology.js?v=20261022-morphperf1'],
+      ['daruri/gnamma-word-context.js', 'gnamma-word-context.js?v=20261022-morphperf1'],
+      ['daruri/gnamma-word-context.css', 'gnamma-word-context.css?v=20261022-morphperf1'],
+      ['daruri/morph-lexicon.json', 'morph-lexicon.json'],
+      ['daruri/morph-daruri-v1.json', 'morph-daruri-v1.json'],
+      ['daruri/morph-mustasfa-v1.json', 'morph-mustasfa-v1.json'],
+      ['daruri/gnamma-search.css', 'gnamma-search.css?v=20261022-proximity1'],
+      ['daruri/gnamma-search-return.js', 'gnamma-search-return.js?v=20261022-return2'],
+      ['daruri/gnamma-proximity.js', 'gnamma-proximity.js?v=20261022-proximity1'],
+      ['daruri/gnamma-scholarly.js', 'gnamma-scholarly.js?v=20261022-scholarly1'],
+      ['daruri/gnamma-scholarly.css', 'gnamma-scholarly.css?v=20261022-scholarly1'],
       ['daruri/source-reference-data.js', 'source-reference-data.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-fallback-quran1'],
+      ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261022-qcontext1'],
+      ['daruri/quran-context-ui.css', 'quran-context-ui.css?v=20261022-qcontext1'],
+      ['daruri/quran-context-data.json', 'quran-context-data.json?v=20261022-qcontext1'],
+      ['daruri/quran-context-data.js', 'quran-context-data.js?v=20261022-qcontext1'],
+      ['daruri/QURAN_CONTEXT_SOURCES.md', 'QURAN_CONTEXT_SOURCES.md'],
       ['daruri/download-bundle.js', 'download-bundle.js?v=20261021-rdquick1'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
@@ -162,7 +181,7 @@
       ['daruri/editions/apparatus/manifest.json','editions/apparatus/manifest.json?v=20261021-a4-apparatus1'],
       ['daruri/editions/maps/manifest.json','editions/maps/manifest.json?v=20261022-base-personal-word-maps'],
       ['daruri/personal-export.html', 'personal-export.html'],
-      ['daruri/personal-export.js', 'personal-export.js?v=two-tabs-20261022'],
+      ['daruri/personal-export.js', 'personal-export.js?v=20261022-bookmark-audit1'],
       ['daruri/personal-pdf-enhancements.js','personal-pdf-enhancements.js?v=two-tabs-20261022'],
       ['daruri/personal-export.css', 'personal-export.css?v=2'],
       ['daruri/vendor/pdf-lib-1.17.1.min.js', 'vendor/pdf-lib-1.17.1.min.js'],
@@ -181,19 +200,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/gnamma-search.js', 'gnamma-search.js?v=20261022-morphperf1'],
-      ['daruri/gnamma-search.css', 'gnamma-search.css?v=20261022-proximity1'],
-      ['daruri/gnamma-scholarly.js', 'gnamma-scholarly.js?v=20261022-scholarly1'],
-      ['daruri/gnamma-scholarly.css', 'gnamma-scholarly.css?v=20261022-scholarly1'],
-      ['daruri/gnamma-proximity.js', 'gnamma-proximity.js?v=20261022-proximity1'],
-      ['daruri/gnamma-search-return.js', 'gnamma-search-return.js?v=20261022-return2'],
-      ['daruri/gnamma-morphology.js', 'gnamma-morphology.js?v=20261022-morphperf1'],
-      ['daruri/gnamma-word-context.js', 'gnamma-word-context.js?v=20261022-morphperf1'],
-      ['daruri/gnamma-word-context.css', 'gnamma-word-context.css?v=20261022-morphperf1'],
-      ['daruri/morph-lexicon.json', 'morph-lexicon.json'],
-      ['daruri/morph-daruri-v1.json', 'morph-daruri-v1.json'],
-      ['daruri/morph-mustasfa-v1.json', 'morph-mustasfa-v1.json'],
-      ['daruri/sw.js', 'sw.js?v=20261022-morphperf1'],
+      ['daruri/sw.js', 'sw.js?v=20261022-morphperf2'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],

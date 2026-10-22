@@ -1,0 +1,34 @@
+/* Expandable Qur'anic context in the shared Daruri Notes modal.
+   Inherits every reader palette, including light/dark/system and Andalusian themes. */
+.gn-note-entry .gn-quran-context{margin-top:12px;border-top:1px solid var(--line,var(--border,#c8c0b4));padding-top:8px}
+.gn-quran-context-toggle{display:flex;align-items:center;gap:8px;cursor:pointer;min-height:42px;padding:6px 2px;
+  color:var(--accent,var(--text,#444));font:600 13px/1.5 var(--sans,system-ui,sans-serif);list-style:none}
+.gn-quran-context-toggle::-webkit-details-marker{display:none}
+.gn-quran-context-toggle::marker{content:''}
+.gn-quran-context-toggle:focus-visible{outline:2px solid var(--accent,currentColor);outline-offset:3px;border-radius:4px}
+.gn-quran-context-chevron{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;
+  font-size:21px;line-height:1;width:22px;height:22px;transform-origin:center;transition:transform .16s ease}
+.gn-quran-context[open] .gn-quran-context-chevron{transform:rotate(90deg)}
+.gn-quran-context .gn-quran-context-open{display:none}
+.gn-quran-context[open] .gn-quran-context-open{display:inline}
+.gn-quran-context[open] .gn-quran-context-closed{display:none}
+.gn-quran-context-body{padding:4px 0 8px}
+.gn-quran-context-group{margin:9px 0 17px}
+.gn-quran-context-group+.gn-quran-context-group{padding-top:10px;border-top:1px solid var(--line,var(--border,#c8c0b4))}
+.gn-quran-context-heading{margin:6px 0 10px;font:600 13px/1.5 var(--sans,system-ui,sans-serif);color:var(--text,var(--ink,inherit))}
+.gn-context-ayah{margin:0 0 12px;padding:9px 11px;background:var(--surface-soft,transparent);
+  border:1px solid var(--line,var(--border,#c8c0b4));border-radius:8px;overflow-wrap:break-word}
+.gn-context-cited{border-inline-start:3px solid var(--accent,currentColor);
+  background:var(--surface,var(--panel,transparent))}
+.gn-context-ayah-label{margin:0 0 3px;font:600 11px/1.4 var(--sans,system-ui,sans-serif);
+  color:var(--muted,var(--text-soft,inherit))}
+.gn-quran-context-body .gn-quran-quotation{font-size:clamp(1.48rem,2.5vw,1.85rem);line-height:2.05;margin:3px 0 6px}
+.gn-context-translation{margin:5px 0 0!important;white-space:normal!important;font:14px/1.65 var(--serif,Georgia,serif)!important;
+  color:var(--ink,var(--text,inherit));direction:ltr;text-align:start}
+.gn-quran-context-link,.gn-quran-context-credit,.gn-quran-context-status,.gn-quran-context-error{
+  margin:8px 1px!important;font:12px/1.6 var(--sans,system-ui,sans-serif)!important;color:var(--muted,var(--text-soft,inherit))}
+.gn-quran-context-credit{border-top:1px solid var(--line,var(--border,#c8c0b4));padding-top:8px}
+.gn-quran-context-credit a,.gn-quran-context-link a{color:var(--accent,currentColor);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:380px){.gn-context-ayah{padding:7px 8px}.gn-quran-context-body .gn-quran-quotation{font-size:1.42rem}}
+@media(prefers-reduced-motion:reduce){.gn-quran-context-chevron{transition:none}}
+@media print{.gn-quran-context-toggle{display:none}.gn-quran-context:not([open]) .gn-quran-context-body{display:none}}
