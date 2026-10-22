@@ -172,7 +172,9 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
                 chars = list(reversed(group)) if scalar_harakat else [group]
                 for char in chars:
                     cid = len(aliases) + 1
-                    is_mark = bool(unicodedata.combining(char))
+                    # A non-scalar grapheme may contain base + several marks;
+                    # Unicode combining() accepts exactly one codepoint.
+                    is_mark = len(char) == 1 and bool(unicodedata.combining(char))
                     advance = 0 if scalar_harakat and is_mark else (
                         (x1-x0) * 1000 / (len(groups)*font_size)
                     )
