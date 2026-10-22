@@ -63,7 +63,7 @@ def verify(path:Path):
         raise AssertionError("Notes inventory changed without accepted source release")
     with ZipFile(path) as zipfile:
         members=set(zipfile.namelist())
-        if len(members)!=len(zipfile.namelist()) or len(members)!=13:
+        if len(members)!=len(zipfile.namelist()) or len(members)!=14:
             raise AssertionError("Missing or duplicate canonical archive files")
         if any(".." in name or name.startswith("/") for name in members):
             raise AssertionError("ZIP contains unsafe paths")
@@ -73,6 +73,8 @@ def verify(path:Path):
         raise AssertionError("Broken source manifest counts")
     if manifest["canonical_note_records"]!=625:
         raise AssertionError("Editorial/source note records have been dropped")
+    if manifest.get("separate_later_copyist_colophon_segments")!=2:
+        raise AssertionError("Later copyist's non-authorial colophon is missing")
     if manifest["legacy_shamela_txt_html_import_verified_in_app"] or manifest["native_bok_database_export"]:
         raise AssertionError("Shamela compatibility has not actually been certified")
     if manifest["private_user_notes_included"]:
@@ -86,6 +88,9 @@ def verify(path:Path):
     saved=json.loads(file_data["daruri-source.json"])
     if saved!=book:
         raise AssertionError("Canonical source JSON is not losslessly preserved")
+    colophon=next(s for s in book["sections"] if str(s.get("id"))=="colophon")
+    if json.loads(file_data["daruri-colophon.json"])!=colophon:
+        raise AssertionError("Two-paragraph copyist colophon changed or disappeared")
     kept_notes=json.loads(file_data["daruri-notes.json"])
     if kept_notes!=notes:
         raise AssertionError("Canonical note/source qualifications were modified")
@@ -121,9 +126,10 @@ def verify(path:Path):
     if tei.tag!="{http://www.tei-c.org/ns/1.0}TEI":
         raise AssertionError("Not a TEI P5 document")
     for text in tei.findall(".//tei:group/tei:text",NAMESPACE):
-        paragraphs=text.findall(".//tei:body/tei:div/tei:p",NAMESPACE)
-        if len(paragraphs)!=414:
-            raise AssertionError("One TEI language layer is incomplete")
+        paragraphs=text.findall('.//tei:body/tei:div[@type="reading-unit"]/tei:p',NAMESPACE)
+        copyist=text.findall('.//tei:body/tei:div[@type="later-copyist-colophon"]/tei:p',NAMESPACE)
+        if len(paragraphs)!=414 or len(copyist)!=2:
+            raise AssertionError("One TEI language layer is incomplete or merged with later copyist")
     note_elements=tei.findall(".//tei:back//tei:note",NAMESPACE)
     if len(note_elements)!=625:
         raise AssertionError("TEI separate source notes are incomplete")
@@ -132,6 +138,8 @@ def verify(path:Path):
         ("shamela-import-vowelled.txt","vocalized")
     ):
         out=file_data[key].decode("utf8")
+        if out.count("[R")!=258 or out.count("[COL]")!=1:
+            raise AssertionError("Plain import does not distinguish authorial material from copyist's colophon")
         if out.count("[R")!=258:
             raise AssertionError("Plain Shamela import lost source unit references")
         for s in expected:
