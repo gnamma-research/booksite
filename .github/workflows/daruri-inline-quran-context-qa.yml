@@ -2,6 +2,7 @@ name: Daruri inline Quran context QA
 on:
   push:
     branches:
+      - master
       - fix/inline-quran-note-card-20261022
     paths:
       - 'daruri/index.html'
