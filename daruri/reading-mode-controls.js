@@ -88,7 +88,11 @@ function create({state,rd}){
    notes:place.segment==null?sectionCounts.notes:sectionNotes+passageCounts.notes
   };
   const signature=[place.section,place.segment,counts.bookmarks,counts.highlights,counts.notes].join('|');
-  if(signature===last)return;last=signature;
+  const hasMarks=Boolean(counts.bookmarks||counts.highlights||counts.notes);
+  // A route transition can hide the dock between two equivalent signatures.
+  // Repaint when visibility disagrees with the saved-item state (iOS WebKit).
+  if(signature===last&&status.hidden===!hasMarks)return;
+  last=signature;
   status.replaceChildren();
   const values=[['bookmark','bookmarks','Saved bookmarks'],['highlight','highlights','Highlighted quotations'],['note','notes','Personal notes']];
   for(const [icon,type,label] of values){
@@ -107,23 +111,32 @@ function create({state,rd}){
   }
   status.hidden=!status.childElementCount;
  }
+ let verifyTimer=0;
  function schedule(){
   if(queued)return;queued=true;
   requestAnimationFrame(()=>{queued=false;render();});
  }
- window.addEventListener('scroll',schedule,{passive:true});
- window.addEventListener('resize',schedule,{passive:true});
- window.addEventListener('hashchange',schedule);
+ function flushSoon(){
+  schedule();
+  // Scroll-driven navigation sometimes completes after the first animation
+  // frame in mobile WebKit. A bounded fallback reconciles the displayed marks
+  // without polling or writing user data.
+  if(verifyTimer)return;
+  verifyTimer=setTimeout(()=>{verifyTimer=0;render();},90);
+ }
+ window.addEventListener('scroll',flushSoon,{passive:true});
+ window.addEventListener('resize',flushSoon,{passive:true});
+ window.addEventListener('hashchange',flushSoon);
  document.addEventListener('gnamma-reading-desk-change',reindex);
- document.addEventListener('gnamma-reader-route-change',schedule);
+ document.addEventListener('gnamma-reader-route-change',flushSoon);
  // Refresh when another reader route makes the dock visible after rendering.
  // The main-pane observer alone can fire before syncReadingChrome removes [hidden]
  // in mobile WebKit; observing this attribute avoids an empty stale status.
- new MutationObserver(schedule).observe(dock,{attributes:true,attributeFilter:['hidden']});
+ new MutationObserver(flushSoon).observe(dock,{attributes:true,attributeFilter:['hidden']});
  const main=document.getElementById('mainContent');
- if(main)new MutationObserver(schedule).observe(main,{childList:true,subtree:true});
- reindex();schedule();
- return {refresh:()=>{reindex();schedule();},update:schedule};
+ if(main)new MutationObserver(flushSoon).observe(main,{childList:true,subtree:true});
+ reindex();flushSoon();
+ return {refresh:()=>{reindex();render();flushSoon();},update:()=>{render();flushSoon();}};
 }
 let modeAPI=null,modePicker=null,modeOpener=null;
 function closeModePicker(restoreFocus=false){
