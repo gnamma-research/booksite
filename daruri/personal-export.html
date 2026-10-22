@@ -7,6 +7,8 @@
 <title>Personal editions · Gnamma Research · al-Ḍarūrī</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="personal-export.css?v=2">
+<link rel="stylesheet" href="bookmark-ui.css?v=20261022-bookmark-audit1">
+<script defer src="bookmark-ui.js?v=20261022-bookmark-audit1"></script>
 <script defer src="personal-pdf-enhancements.js?v=20261022-cid2"></script>
 <script defer src="personal-export.js?v=20261022-bookmark-audit1"></script>
 </head>
@@ -38,9 +40,11 @@
    </fieldset>
    <div id="pe-note-options" hidden>
     <div class="choices">
-     <label><input type="checkbox" id="pe-personal" checked> Personal notes</label>
-     <label><input type="checkbox" id="pe-bookmarks"> Bookmarks and highlights</label>
-     <label><input type="checkbox" id="pe-annotations" checked> Add linked P1, P2… references and clickable quotation highlights</label>
+     <label><input type="checkbox" id="pe-personal" checked><span class="gn-pe-choice-icon" data-gn-personal-glyph="note" aria-hidden="true"></span> My notes</label>
+     <label><input type="checkbox" id="pe-bookmarks"><span class="gn-pe-choice-icon" data-gn-personal-glyph="bookmark" aria-hidden="true"></span> Bookmarks</label>
+     <label><input type="checkbox" id="pe-highlights"><span class="gn-pe-choice-icon" data-gn-personal-glyph="highlight" aria-hidden="true"></span> Highlights</label>
+     <label><input type="checkbox" id="pe-annotations" checked> Add in-text P links and mark matching quotations</label>
+     <p class="hint">This option changes PDF navigation and markings; it does not select personal material. Quotations are marked only at verified locations.</p>
      <label><input type="checkbox" id="pe-appendix" checked> Include searchable personal endnotes (required for linked P references)</label>
      <label><input type="checkbox" id="pe-dates" checked> Include reliable created/edited timestamps</label>
     </div>
