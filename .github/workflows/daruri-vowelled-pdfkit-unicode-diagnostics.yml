@@ -1,0 +1,49 @@
+name: Daruri diagnostic native PDFKit vowelled Unicode sequences
+on:
+  push:
+    branches: [qa/daruri-vowelled-pdfkit-ab-20261022]
+    paths:
+      - 'daruri/qa/diagnose_vowelled_pdfkit.swift'
+      - 'daruri/qa/experimental_original_char_unicode.py'
+      - '.github/workflows/daruri-vowelled-pdfkit-unicode-diagnostics.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pdfkit-first-source:
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: Compare three glyph->Unicode variants against original on macOS PDFKit
+        run: |
+          mkdir -p /tmp/vowelled
+          for kind in grapheme scalar word; do
+            flag=''
+            case "$kind" in
+              scalar) flag='--scalar-harakat' ;;
+              word) flag='--word-actualtext' ;;
+            esac
+            python daruri/qa/experimental_original_char_unicode.py \
+              --input daruri/editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf \
+              --map daruri/editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json \
+              --output /tmp/vowelled/$kind.pdf $flag
+            swift daruri/qa/diagnose_vowelled_pdfkit.swift \
+              /tmp/vowelled/$kind.pdf \
+              daruri/editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json \
+              | tee /tmp/vowelled/$kind-diagnostic.txt
+          done
+          swift daruri/qa/diagnose_vowelled_pdfkit.swift \
+            daruri/editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf \
+            daruri/editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json \
+            | tee /tmp/vowelled/baseline-diagnostic.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pdfkit-vowelled-actual-string-diagnostics
+          path: /tmp/vowelled/*diagnostic.txt
+          retention-days: 21
