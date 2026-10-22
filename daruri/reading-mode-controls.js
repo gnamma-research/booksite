@@ -242,3 +242,87 @@ function openModeMenu(opener){
 window.GnammaReadingDock={create,attachModes,openModeMenu,closeModePicker};
 
 })();
+
+
+/* Clickable editorial-note ranges: share the adjacent N-marker action. */
+(function(){
+'use strict';
+let menu=null,previousRange=null;
+function linkedNotes(range){
+  const anchors=[];
+  let next=range.nextElementSibling;
+  while(next?.matches('a.note-ref-symbol[data-note-target]')){
+    anchors.push(next);
+    next=next.nextElementSibling;
+  }
+  return anchors;
+}
+function closeChoice(restoreFocus){
+  if(!menu)return;
+  menu.remove();menu=null;
+  if(restoreFocus&&previousRange?.isConnected){
+    const first=linkedNotes(previousRange)[0];
+    first?.focus({preventScroll:true});
+  }
+  previousRange=null;
+}
+function chooseNote(anchor){
+  // Route through the existing note marker, so editorial, Qurʾānic and other
+  // notes use exactly their existing card and return-to-reading behaviour.
+  closeChoice(false);
+  if(anchor?.isConnected)anchor.click();
+}
+function showChoice(range,anchors){
+  closeChoice(false);
+  previousRange=range;
+  const popup=document.createElement('div');
+  popup.className='gn-note-range-choice';
+  popup.setAttribute('role','dialog');
+  popup.setAttribute('aria-label','Choose a note on this passage');
+  const heading=document.createElement('p');
+  heading.className='gn-note-range-choice-label';
+  heading.textContent='Notes on this wording';
+  popup.append(heading);
+  for(const anchor of anchors){
+    const item=document.createElement('button');
+    item.type='button';
+    item.textContent=anchor.dataset.noteTarget;
+    item.setAttribute('aria-label','Open note '+anchor.dataset.noteTarget);
+    item.addEventListener('click',()=>chooseNote(anchor));
+    popup.append(item);
+  }
+  document.body.append(popup);
+  const rect=range.getBoundingClientRect();
+  const width=popup.getBoundingClientRect().width||190;
+  const height=popup.getBoundingClientRect().height||80;
+  popup.style.left=Math.max(8,Math.min(window.innerWidth-width-8,rect.left))+'px';
+  popup.style.top=(rect.bottom+6+height<=window.innerHeight-8
+    ?rect.bottom+6:Math.max(8,rect.top-height-6))+'px';
+  menu=popup;
+  popup.querySelector('button')?.focus({preventScroll:true});
+}
+document.addEventListener('click',event=>{
+  const target=event.target;
+  if(!(target instanceof Element))return;
+  const range=target.closest('#mainContent .passage-ar .note-anchored.note-range');
+  if(!range)return;
+  // Dictionary terms and genuine links inside the range keep priority.
+  if(target.closest('button,a,[role="button"],input,select,textarea,[contenteditable="true"]'))return;
+  // Never hijack a user's text selection.
+  if(window.getSelection?.()?.toString().trim())return;
+  const anchors=linkedNotes(range);
+  if(!anchors.length)return;
+  event.preventDefault();
+  if(anchors.length===1)chooseNote(anchors[0]);
+  else showChoice(range,anchors);
+});
+document.addEventListener('pointerdown',event=>{
+  if(menu&&!menu.contains(event.target)&&!event.target.closest?.('.note-anchored.note-range'))
+    closeChoice(false);
+});
+document.addEventListener('keydown',event=>{
+  if(!menu||event.key!=='Escape')return;
+  event.preventDefault();event.stopPropagation();closeChoice(true);
+});
+document.addEventListener('gnamma-reader-route-change',()=>closeChoice(false));
+})();
