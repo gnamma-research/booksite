@@ -81,6 +81,7 @@ def remove_broken_text(page, planned, all_source_runs=False, suppress_note_span=
     starts = list(TM.finditer(raw))
     edits = []
     matches = set()
+    split_source_y0=set()
     for line in planned:
         y0 = line["words"][0][2]
         height = line["words"][0][4] - y0
@@ -136,7 +137,9 @@ def remove_broken_text(page, planned, all_source_runs=False, suppress_note_span=
             # marked-content span covering the whole broken Arabic line.
             # The note's visible glyph/link is unchanged; its extracted call
             # number may be suppressed, so this remains nonrelease research.
-            for ix in source_runs:
+            if len(source_runs)>1:
+            split_source_y0.add(round(y0,3))
+        for ix in source_runs:
                 if ix in matches:
                     raise ValueError("Overlapping original source-line claim")
                 matches.add(ix)
@@ -163,6 +166,7 @@ def remove_broken_text(page, planned, all_source_runs=False, suppress_note_span=
     for offset, addition in sorted(edits, key=lambda item: item[0], reverse=True):
         raw = raw[:offset] + addition + raw[offset:]
     doc.update_stream(contents[0], raw)
+    return split_source_y0
 
 
 def cmap_for(aliases, logical_cluster_payload=False):
@@ -188,7 +192,7 @@ def cmap_for(aliases, logical_cluster_payload=False):
     return ("\n".join(lines) + "\n").encode("ascii")
 
 
-def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False, semantic_first=False):
+def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False, semantic_first=False, split_source_y0=None, semantic_split_yshift=0.0):
     # The printed Arabic is RTL. Each invisible line emits Unicode scalars in
     # visual/physical LTR order; engines recover logical Arabic through bidi.
     aliases, commands = [], []
@@ -244,6 +248,8 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
                     word_ops.append(f'<{cid:04X}> Tj')
                 right_edge = words[idx+1][1]
         y_pdf = page.rect.height-(words[0][2]+16)
+        if split_source_y0 and round(words[0][2],3) in split_source_y0:
+            y_pdf+=semantic_split_yshift
         if line_actualtext:
             logical_line=" ".join(w[0] for w in reversed(words))
             escaped=("FEFF"+logical_line.encode("utf-16be").hex().upper())
@@ -334,7 +340,7 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
     return len(aliases)
 
 
-def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False, all_source_runs=False, suppress_note_span=False, semantic_first=False):
+def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False, all_source_runs=False, suppress_note_span=False, semantic_first=False, semantic_split_yshift=0.0):
     original, mapping_path, output = Path(original), Path(mapping_path), Path(output)
     if output.exists() or original.resolve() == output.resolve():
         raise ValueError("Refusing to replace any existing file")
@@ -374,11 +380,11 @@ def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=
         total_lines = total_cids = 0
         for page_no, source_on_page in sorted(pages.items()):
             page = doc[page_no-1]
-            remove_broken_text(page, source_on_page, all_source_runs=all_source_runs, suppress_note_span=suppress_note_span)
+            split_source_y0=remove_broken_text(page, source_on_page, all_source_runs=all_source_runs, suppress_note_span=suppress_note_span)
             total_lines += len(source_on_page)
             total_cids += add_character_semantics(
                 doc, page, page_no, source_on_page, fontfile,
-                scalar_harakat=scalar_harakat,word_actualtext=word_actualtext,logical_cluster_payload=logical_cluster_payload,scalar_mark_fraction=scalar_mark_fraction,line_actualtext=line_actualtext,semantic_first=semantic_first
+                scalar_harakat=scalar_harakat,word_actualtext=word_actualtext,logical_cluster_payload=logical_cluster_payload,scalar_mark_fraction=scalar_mark_fraction,line_actualtext=line_actualtext,semantic_first=semantic_first,split_source_y0=split_source_y0,semantic_split_yshift=semantic_split_yshift
             )
         if original.name == "daruri-reading-arabic-titles-off.pdf" and total_lines != 2583:
             raise ValueError(f"Unexpected unvowelled Arabic Reading line coverage {total_lines}/2583")
@@ -404,7 +410,9 @@ if __name__ == "__main__":
     parser.add_argument("--all-source-runs", action="store_true", help="Hide all original Arabic Tm runs divided by inline publisher source-note markers")
     parser.add_argument("--suppress-note-span", action="store_true", help="Research: continuous ActualText suppression across an inline footnote call")
     parser.add_argument("--semantic-first", action="store_true", help="Research: place invisible semantic page stream before original painted glyphs")
+    parser.add_argument("--split-yshift", type=float, default=0.0, help="Experimental PDF point offset of Unicode source text only for footnote-split glyph runs")
     args = parser.parse_args()
     assert 0<=args.scalar_mark_fraction<=0.4
     assert not args.suppress_note_span or args.all_source_runs
-    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext, args.logical_cluster_payload, args.scalar_mark_fraction, args.line_actualtext, args.all_source_runs, args.suppress_note_span, args.semantic_first)
+    assert -16<=args.split_yshift<=16
+    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext, args.logical_cluster_payload, args.scalar_mark_fraction, args.line_actualtext, args.all_source_runs, args.suppress_note_span, args.semantic_first, args.split_yshift)
