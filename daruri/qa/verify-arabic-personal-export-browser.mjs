@@ -29,7 +29,7 @@ try{
  const ui=page.locator('.gn-es');
  await ui.waitFor({timeout:30000});
  await page.waitForFunction(()=>window.GnammaPersonalExportInline?.ready,{timeout:30000});
- await page.waitForFunction(()=>window.GnammaEditions?.__getPublicationSelection?.resolution==='ready',{timeout:30000});
+ await page.waitForFunction(()=>window.GnammaEditions?.__getPublicationSelection?.().resolution==='ready',{timeout:30000});
  const en=ui.locator('[data-es-toggle="en"]');
  await en.click();
  const first='editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf';
