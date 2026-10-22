@@ -37,10 +37,16 @@ const entries=[
  {id:'a',kind:'note',target:{kind:'quote',section:'12',segment:0,quote:'Arabic'},body:'Arabic & English',created:5},
  {id:'b',kind:'note',target:null,body:'Free-standing note',created:10},
  {id:'c',kind:'quote',target:{kind:'quote',section:'8',segment:3,quote:'Saved words'},created:2},
+  {id:'d',kind:'paragraph',target:{kind:'paragraph',section:'9',segment:1},created:3},
  {id:'deleted',kind:'note',target:{section:'4'},body:'Delete',deleted:999}
 ];
 assert.deepEqual(m.available(entries,{personal:true,bookmarks:false}).map(x=>x.id),['a','b']);
-assert.deepEqual(m.available(entries,{personal:false,bookmarks:true}).map(x=>x.id),['c']);
+assert.deepEqual(m.available(entries,{personal:false,bookmarks:true}).map(x=>x.id),['c','d']); // backward-compatible callers
+assert.deepEqual(m.available(entries,{personal:false,bookmarks:true,highlights:false}).map(x=>x.id),['d']);
+assert.deepEqual(m.available(entries,{personal:false,bookmarks:false,highlights:true}).map(x=>x.id),['c']);
+assert.deepEqual(m.available(entries,{personal:false,bookmarks:true,highlights:true}).map(x=>x.id),['c','d']);
+assert(m.isHighlight(entries[2])&&!m.isBookmark(entries[2]));
+assert(m.isBookmark(entries[3])&&!m.isHighlight(entries[3]));
 assert.deepEqual(m.available(entries,{personal:false,bookmarks:false}).map(x=>x.id),[]);
 assert.deepEqual(m.orderItems(entries.slice(0,3),'source').map(x=>x.id),['c','a','b']);
 assert.deepEqual(m.orderItems(entries.slice(0,3),'created').map(x=>x.id),['c','a','b']);
