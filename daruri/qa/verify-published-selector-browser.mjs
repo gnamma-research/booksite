@@ -30,6 +30,11 @@ await page.addInitScript(()=>{
       id:'bookmark-one',kind:'bookmark',target:{kind:'section',section:'20'},
       title:'A bookmarked ruling',body:'',created:Date.UTC(2026,9,22),
       updated:Date.UTC(2026,9,22),dateSource:'recorded',deleted:0
+    },{
+      id:'saved-highlight',kind:'quote',
+      target:{kind:'quote',section:'22',segment:0,lang:'en',quote:'A saved personal passage'},
+      title:'An independent highlight',body:'',created:Date.UTC(2026,9,22),
+      updated:Date.UTC(2026,9,22),dateSource:'recorded',deleted:0
     }]
   }));
 });
@@ -62,7 +67,16 @@ try{
   assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.ar,false);
   await ui.locator('[data-es-toggle="ar"]').click();
   await check('ready');
+  assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.vowels,false,
+    'Second AR state is plain, without vowel marks');
+  assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),true);
+  assert.equal(await ui.locator('[data-es-toggle="ar"] .gn-es-ar-form').innerText(),'Plain');
+  await ui.locator('[data-es-toggle="ar"]').click();
+  await check('ready');
+  assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.vowels,true);
   assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),false);
+  assert.equal(await ui.locator('[data-es-toggle="vowels"]').count(),0,
+    'The redundant vowel-mark control is gone');
 
   await ui.locator('#pe-personal').check();
   await page.waitForFunction(()=>document.querySelector('input[name="pe-mode"]:checked')?.value==='all');
@@ -111,9 +125,13 @@ try{
   assert.equal(await ui.locator('#pe-personal').isChecked(),true);
   await ui.locator('#pe-bookmarks').check();
   assert.match(await ui.locator('#pe-count').innerText(),/2 qualifying items/);
+  await ui.locator('#pe-highlights').check();
+  assert.match(await ui.locator('#pe-count').innerText(),/3 qualifying items/,
+    'Highlights must be included independently of notes and bookmarks');
   await ui.getByRole('tab',{name:'Reading & Study'}).click();
   await ui.locator('#pe-personal').uncheck();
   await ui.locator('#pe-bookmarks').uncheck();
+  await ui.locator('#pe-highlights').uncheck();
   assert.equal(await ui.locator('[data-es-action="open"]').isVisible(),true);
   await page.screenshot({path:path.join(captures,'daruri-two-tabs-desktop.png'),fullPage:true});
   await page.setViewportSize({width:390,height:844});
