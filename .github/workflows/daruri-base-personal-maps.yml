@@ -1,0 +1,61 @@
+name: Daruri exact base section and source-word maps
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-two-tabs-inline-pdf-20261022]
+    paths:
+      - '.github/workflows/daruri-base-personal-maps.yml'
+      - 'daruri/build/build_base_personal_maps.py'
+permissions:
+  contents: write
+concurrency:
+  group: daruri-base-personal-maps-build
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deterministic PDF inspector
+        run: python -m pip install 'PyMuPDF==1.26.7'
+      - name: Build all twelve source and word maps from actual PDF word extraction
+        run: |
+          python daruri/build/build_base_personal_maps.py
+          python daruri/build/build_base_personal_maps.py --check
+      - name: Retain audit maps
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-base-12-word-maps
+          path: daruri/editions/maps/*.json
+          retention-days: 30
+      - name: Publish only generated maps against latest branch safely
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p "$RUNNER_TEMP/base-word-maps"
+          cp -a daruri/editions/maps/. "$RUNNER_TEMP/base-word-maps/"
+          git fetch --quiet origin "$GITHUB_REF_NAME"
+          NEW_SHA="$(git rev-parse FETCH_HEAD)"
+          if [ "$NEW_SHA" != "$GITHUB_SHA" ] && ! git diff --quiet "$GITHUB_SHA" "$NEW_SHA" -- \
+               daruri/editions/manifest.json daruri/editions/reading \
+               daruri/editions/study daruri/build/build_base_personal_maps.py; then
+            echo "::error::Base PDF sources or mapper changed during generation; refusing stale map publication."
+            exit 1
+          fi
+          git reset --hard "$NEW_SHA"
+          mkdir -p daruri/editions/maps
+          cp -a "$RUNNER_TEMP/base-word-maps/." daruri/editions/maps/
+          git add -A daruri/editions/maps
+          if git diff --cached --quiet; then
+            echo "All twelve exact PDF source-word maps are already published."
+            exit 0
+          fi
+          git commit -m "Publish 12 checksum-bound base word and section maps [skip ci]"
+          git push origin "HEAD:$GITHUB_REF_NAME"
