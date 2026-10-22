@@ -32,7 +32,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Install source test DOM helper
+        run: npm install --no-save --prefix daruri/qa jsdom@26
       - name: Source and preservation checks
+        env:
+          NODE_PATH: daruri/qa/node_modules
         run: |
           node --check daruri/reading-mode-controls.js
           node --check daruri/reading-desk.js
