@@ -17,7 +17,11 @@ const data=require('./load-book.js')(html);
 assert.equal(data.sections.length,259,'259 section identities must survive unchanged');
 assert.equal(data.stats.passages,416,'416 aligned passages must be retained');
 assert.equal(data.sections[258].id,'colophon','The final copyist note was lost');
-const script=html.slice(html.lastIndexOf('<script>')+8,html.lastIndexOf('</script>'));
+const appScriptStart=html.indexOf("<script>\n(() => {\n'use strict';\nconst BOOK");
+assert.ok(appScriptStart>=0,'Embedded Daruri reader script not found');
+const appScriptEnd=html.indexOf('</script>',appScriptStart);
+assert.ok(appScriptEnd>appScriptStart,'Embedded reader script has no end tag');
+const script=html.slice(appScriptStart+'<script>'.length,appScriptEnd);
 new vm.Script(script,{filename:'index.html'});
 for(const id of ['gn-normal','gn-focus-1','gn-focus-2','gn-focus-3']){
  assert(iconFile.includes('id="'+id+'"'),'Missing '+id+' mode icon');
