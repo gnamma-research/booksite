@@ -255,7 +255,7 @@ test('Reading Desk hierarchy has prominent actions, labelled filters and context
  h.event('click',{dataset:{rd:'select',id:'one'}});
  const detail=h.main.innerHTML;
  ensure(detail.includes('class="gn-rd-detail-actions"'),'item context actions missing');
- ensure(detail.includes('>Edit note</button>'),'primary Edit note missing');
+ ensure(detail.includes('data-rd="edit"')&&detail.includes('gn-personal-note-icon')&&detail.includes('<span>Edit note</span>'),'primary Edit note icon or label missing');
  ensure(detail.includes('class="gn-rd-item-more"')&&detail.includes('>Share item</button>'),
    'item More menu missing');
 });
