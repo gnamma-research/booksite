@@ -59,6 +59,10 @@ async function exercise(engine,name,origin){
   await page.locator('[data-gn-reader-mode="continuous"]').click();
   await page.locator('body.focus-level-3').waitFor();
   assert.equal(await page.locator('#readerDock .reader-step:visible').count(),0,'Continuous should have no adjacent-section arrows');
+  // Continuous is a scrollable whole book; re-centre the annotated passage
+  // before testing the passage-specific status, not the inherited viewport.
+  await page.locator('#gn-continuous-11 .passage-grid[data-segment="0"]').first().evaluate(el=>el.scrollIntoView({block:'center',behavior:'instant'}));
+  await page.waitForTimeout(200);
   const statusButtons=await page.locator('#gn-dock-private-status .gn-dock-mark').count();
   assert(statusButtons>=1,'Continuous dock status disappeared');
   await page.locator('#focusToolbar').click();
