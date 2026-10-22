@@ -92,9 +92,9 @@ jobs:
           python -m pip install -q "PyMuPDF==1.26.7" "pypdf==5.9.0"
           npm install --no-save --no-package-lock --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1
           npx --prefix daruri/qa playwright install --with-deps chromium webkit firefox
-      - name: Browser export: Chromium saved private notes, annotations, links
+      - name: 'Browser export — Chromium saved private notes, annotations, links'
         run: node daruri/qa/personal-export-browser.cjs
-      - name: Browser export: WebKit mobile 390px
+      - name: 'Browser export — WebKit mobile 390px'
         run: node daruri/qa/personal-export-webkit.cjs
       - name: Semantic fidelity with English and Arabic private notes
         run: node daruri/qa/verify-semantic-personal-pdf.cjs
