@@ -6,6 +6,9 @@ on:
       - 'daruri/index.html'
       - 'daruri/sw.js'
       - 'daruri/gnamma-search.js'
+      - 'daruri/gnamma-scholarly.js'
+      - 'daruri/gnamma-scholarly.css'
+      - 'daruri/qa/verify-scholarly-patterns.cjs'
       - 'daruri/gnamma-proximity.js'
       - 'daruri/gnamma-search-return.js'
       - 'daruri/dictionary.html'
@@ -24,6 +27,9 @@ on:
     paths:
       - 'daruri/index.html'
       - 'daruri/gnamma-search.js'
+      - 'daruri/gnamma-scholarly.js'
+      - 'daruri/gnamma-scholarly.css'
+      - 'daruri/qa/verify-scholarly-patterns.cjs'
       - 'daruri/gnamma-proximity.js'
       - 'daruri/gnamma-search-return.js'
       - 'daruri/dictionary.html'
@@ -61,3 +67,4 @@ jobs:
           node daruri/qa/verify-unified-search.cjs
           node daruri/qa/verify-search-return.cjs
           node daruri/qa/verify-proximity.cjs
+          node daruri/qa/verify-scholarly-patterns.cjs
