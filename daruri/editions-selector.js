@@ -83,9 +83,11 @@
         '<div class="gn-es-setting gn-es-setting-text">'+
           '<span class="gn-es-setting-label">Language</span>'+
           '<div class="gn-es-setting-body">'+
-            '<div class="gn-es-text-switches">'+
-              '<button type="button" data-es-toggle="en" aria-label="Include English" aria-pressed="true">EN</button>'+
-              '<button type="button" data-es-toggle="ar" aria-label="Include Arabic" aria-pressed="true">AR</button>'+
+            '<div class="gn-es-text-switches" role="group" aria-label="Edition languages and Arabic vowel marks">'+
+              '<div class="gn-es-language-pair" role="group" aria-label="Included languages">'+
+                '<button type="button" data-es-toggle="en" aria-label="Include English" aria-pressed="true"><span class="gn-es-language-label" aria-hidden="true">EN</span></button>'+
+                '<button type="button" data-es-toggle="ar" data-es-arabic-state="vowelled" aria-label="Include Arabic (vowelled)" aria-pressed="true"><span class="gn-es-language-label" aria-hidden="true">AR</span></button>'+
+              '</div>'+
               '<span class="gn-es-language-divider" aria-hidden="true"></span>'+
               '<button type="button" class="gn-es-vowels" data-es-toggle="vowels" aria-label="Arabic vowel marks" aria-pressed="true" lang="ar">عَ</button>'+
             '</div><span class="gn-es-inline-note" data-es-language-note></span>'+
@@ -260,6 +262,10 @@
         (key==='en'&&s.en&&!s.ar)||(key==='ar'&&s.ar&&!s.en);
       b.hidden=key==='vowels'&&!s.ar;
       if(key==='vowels')b.textContent=s.vowels?'عَ':'ع';
+      if(key==='ar'){
+        b.dataset.esArabicState=!s.ar?'off':s.vowels?'vowelled':'plain';
+        b.setAttribute('aria-label','Include Arabic'+(s.ar?(s.vowels?' (vowelled)':' (unvowelled)'):''));
+      }
     }
     root.querySelector('.gn-es-language-divider').hidden=!s.ar;
     root.querySelector('[data-es-language-note]').textContent=tab==='reference'?

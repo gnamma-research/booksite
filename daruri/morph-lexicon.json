@@ -1,0 +1,885 @@
+{
+  "schema": "gnamma-morph-lexicon-v1",
+  "status": "Curated starting inventory. Entries are not full classical Arabic morphological analyses. Homographs require contextual disambiguation; additions must be reviewed.",
+  "entries": [
+    {
+      "lemma": "علم",
+      "root": "علم",
+      "pos": "noun",
+      "roman": [
+        "ilm",
+        "3ilm",
+        "knowledge"
+      ],
+      "forms": [
+        "علم",
+        "الْعِلْم",
+        "علوم",
+        "العلوم",
+        "عِلْم",
+        "علوما"
+      ]
+    },
+    {
+      "lemma": "عالم",
+      "root": "علم",
+      "pos": "noun",
+      "roman": [
+        "alim",
+        "aalim",
+        "scholar"
+      ],
+      "forms": [
+        "عالم",
+        "العالم",
+        "علماء",
+        "العلماء",
+        "عالما",
+        "العالمين"
+      ]
+    },
+    {
+      "lemma": "تعليم",
+      "root": "علم",
+      "pos": "noun",
+      "roman": [
+        "talim",
+        "ta3lim",
+        "teaching"
+      ],
+      "forms": [
+        "تعليم",
+        "التعليم",
+        "تعليما",
+        "تعاليم"
+      ]
+    },
+    {
+      "lemma": "تعلّم",
+      "root": "علم",
+      "pos": "verb",
+      "roman": [
+        "taallum",
+        "learning"
+      ],
+      "forms": [
+        "تعلم",
+        "يتعلم",
+        "تعلموا",
+        "تتعلم"
+      ]
+    },
+    {
+      "lemma": "حكم",
+      "root": "حكم",
+      "pos": "noun",
+      "roman": [
+        "hukm",
+        "hokm",
+        "ruling"
+      ],
+      "forms": [
+        "حكم",
+        "الحكم",
+        "احكام",
+        "أحكام",
+        "الأحكام",
+        "حكما"
+      ]
+    },
+    {
+      "lemma": "حاكم",
+      "root": "حكم",
+      "pos": "noun",
+      "roman": [
+        "hakim",
+        "judge"
+      ],
+      "forms": [
+        "حاكم",
+        "الحاكم",
+        "حكام",
+        "الحكام"
+      ]
+    },
+    {
+      "lemma": "حكمة",
+      "root": "حكم",
+      "pos": "noun",
+      "roman": [
+        "hikma",
+        "wisdom"
+      ],
+      "forms": [
+        "حكمة",
+        "الحكمة",
+        "الحكم"
+      ]
+    },
+    {
+      "lemma": "فقه",
+      "root": "فقه",
+      "pos": "noun",
+      "roman": [
+        "fiqh",
+        "fikh",
+        "jurisprudence"
+      ],
+      "forms": [
+        "فقه",
+        "الفقه",
+        "فقها"
+      ]
+    },
+    {
+      "lemma": "فقيه",
+      "root": "فقه",
+      "pos": "noun",
+      "roman": [
+        "faqih",
+        "jurist"
+      ],
+      "forms": [
+        "فقيه",
+        "الفقيه",
+        "فقهاء",
+        "الفقهاء"
+      ]
+    },
+    {
+      "lemma": "قياس",
+      "root": "قيس",
+      "pos": "noun",
+      "roman": [
+        "qiyas",
+        "qiyaas",
+        "qeyas",
+        "kiyas",
+        "analogy"
+      ],
+      "forms": [
+        "قياس",
+        "القياس",
+        "قياسات",
+        "الأقيسة",
+        "اقيسة"
+      ]
+    },
+    {
+      "lemma": "اجتهاد",
+      "root": "جهد",
+      "pos": "noun",
+      "roman": [
+        "ijtihad",
+        "ijtehad",
+        "ijtihaad",
+        "juristic reasoning"
+      ],
+      "forms": [
+        "اجتهاد",
+        "الاجتهاد",
+        "اجتهادات"
+      ]
+    },
+    {
+      "lemma": "مجتهد",
+      "root": "جهد",
+      "pos": "noun",
+      "roman": [
+        "mujtahid",
+        "mojtahid",
+        "jurist"
+      ],
+      "forms": [
+        "مجتهد",
+        "المجتهد",
+        "المجتهدون",
+        "مجتهدين",
+        "المجتهدين"
+      ]
+    },
+    {
+      "lemma": "اجتهد",
+      "root": "جهد",
+      "pos": "verb",
+      "roman": [
+        "ijtahada",
+        "strive"
+      ],
+      "forms": [
+        "اجتهد",
+        "يجتهد",
+        "يجتهدون",
+        "اجتهدوا"
+      ]
+    },
+    {
+      "lemma": "تقليد",
+      "root": "قلد",
+      "pos": "noun",
+      "roman": [
+        "taqlid",
+        "takleed",
+        "imitation"
+      ],
+      "forms": [
+        "تقليد",
+        "التقليد"
+      ]
+    },
+    {
+      "lemma": "إجماع",
+      "root": "جمع",
+      "pos": "noun",
+      "roman": [
+        "ijma",
+        "ijmaa",
+        "ejma",
+        "consensus"
+      ],
+      "forms": [
+        "إجماع",
+        "الإجماع",
+        "الاجماع"
+      ]
+    },
+    {
+      "lemma": "مجمع",
+      "root": "جمع",
+      "pos": "noun",
+      "roman": [
+        "majma",
+        "assembly"
+      ],
+      "forms": [
+        "مجمع",
+        "المجمع",
+        "المجامع"
+      ]
+    },
+    {
+      "lemma": "نسخ",
+      "root": "نسخ",
+      "pos": "noun",
+      "roman": [
+        "naskh",
+        "abrogation"
+      ],
+      "forms": [
+        "نسخ",
+        "النسخ",
+        "ناسخ",
+        "الناسخ",
+        "منسوخ",
+        "المنسوخ"
+      ]
+    },
+    {
+      "lemma": "علة",
+      "root": "علل",
+      "pos": "noun",
+      "roman": [
+        "illa",
+        "illah",
+        "3illa",
+        "cause"
+      ],
+      "forms": [
+        "علة",
+        "العلة",
+        "علل",
+        "العلل",
+        "علتها"
+      ]
+    },
+    {
+      "lemma": "تعليل",
+      "root": "علل",
+      "pos": "noun",
+      "roman": [
+        "talil",
+        "reasoning"
+      ],
+      "forms": [
+        "تعليل",
+        "التعليل",
+        "تعليلات"
+      ]
+    },
+    {
+      "lemma": "سبب",
+      "root": "سبب",
+      "pos": "noun",
+      "roman": [
+        "sabab",
+        "cause"
+      ],
+      "forms": [
+        "سبب",
+        "السبب",
+        "أسباب",
+        "اسباب",
+        "الأسباب"
+      ]
+    },
+    {
+      "lemma": "دلالة",
+      "root": "دلل",
+      "pos": "noun",
+      "roman": [
+        "dalala",
+        "indication"
+      ],
+      "forms": [
+        "دلالة",
+        "الدلالة",
+        "دلالات",
+        "الدلالات"
+      ]
+    },
+    {
+      "lemma": "دليل",
+      "root": "دلل",
+      "pos": "noun",
+      "roman": [
+        "dalil",
+        "proof"
+      ],
+      "forms": [
+        "دليل",
+        "الدليل",
+        "أدلة",
+        "ادلة",
+        "الأدلة"
+      ]
+    },
+    {
+      "lemma": "برهان",
+      "root": "برهن",
+      "pos": "noun",
+      "roman": [
+        "burhan",
+        "demonstration"
+      ],
+      "forms": [
+        "برهان",
+        "البرهان",
+        "براهين",
+        "البراهين"
+      ]
+    },
+    {
+      "lemma": "نظر",
+      "root": "نظر",
+      "pos": "noun",
+      "roman": [
+        "nazar",
+        "investigation"
+      ],
+      "forms": [
+        "نظر",
+        "النظر",
+        "أنظار",
+        "الأنظار"
+      ]
+    },
+    {
+      "lemma": "ظن",
+      "root": "ظنن",
+      "pos": "noun",
+      "roman": [
+        "zann",
+        "probability"
+      ],
+      "forms": [
+        "ظن",
+        "الظن",
+        "ظنون",
+        "الظنون"
+      ]
+    },
+    {
+      "lemma": "يقين",
+      "root": "يقن",
+      "pos": "noun",
+      "roman": [
+        "yaqin",
+        "certainty"
+      ],
+      "forms": [
+        "يقين",
+        "اليقين"
+      ]
+    },
+    {
+      "lemma": "أصل",
+      "root": "اصل",
+      "pos": "noun",
+      "roman": [
+        "asl",
+        "usul",
+        "principle"
+      ],
+      "forms": [
+        "أصل",
+        "الأصل",
+        "أصول",
+        "الاصول",
+        "الأصول"
+      ]
+    },
+    {
+      "lemma": "فرع",
+      "root": "فرع",
+      "pos": "noun",
+      "roman": [
+        "far",
+        "furu",
+        "branch"
+      ],
+      "forms": [
+        "فرع",
+        "الفرع",
+        "فروع",
+        "الفروع"
+      ]
+    },
+    {
+      "lemma": "شرع",
+      "root": "شرع",
+      "pos": "noun",
+      "roman": [
+        "shar",
+        "sharia",
+        "law"
+      ],
+      "forms": [
+        "شرع",
+        "الشرع",
+        "شريعة",
+        "الشريعة",
+        "الشرائع"
+      ]
+    },
+    {
+      "lemma": "واجب",
+      "root": "وجب",
+      "pos": "noun",
+      "roman": [
+        "wajib",
+        "obligation"
+      ],
+      "forms": [
+        "واجب",
+        "الواجب",
+        "واجبات",
+        "الواجبات",
+        "وجوب",
+        "الوجوب"
+      ]
+    },
+    {
+      "lemma": "فرض",
+      "root": "فرض",
+      "pos": "noun",
+      "roman": [
+        "fard",
+        "obligation"
+      ],
+      "forms": [
+        "فرض",
+        "الفرض",
+        "فروض",
+        "الفروض",
+        "فرائض",
+        "الفرائض"
+      ]
+    },
+    {
+      "lemma": "أمر",
+      "root": "امر",
+      "pos": "noun",
+      "roman": [
+        "amr",
+        "command"
+      ],
+      "forms": [
+        "أمر",
+        "الأمر",
+        "أوامر",
+        "الاوامر"
+      ]
+    },
+    {
+      "lemma": "نهي",
+      "root": "نهي",
+      "pos": "noun",
+      "roman": [
+        "nahy",
+        "prohibition"
+      ],
+      "forms": [
+        "نهي",
+        "النهي",
+        "النواهي"
+      ]
+    },
+    {
+      "lemma": "لفظ",
+      "root": "لفظ",
+      "pos": "noun",
+      "roman": [
+        "lafz",
+        "expression"
+      ],
+      "forms": [
+        "لفظ",
+        "اللفظ",
+        "الألفاظ",
+        "الفاظ",
+        "الألفاظ"
+      ]
+    },
+    {
+      "lemma": "معنى",
+      "root": "عني",
+      "pos": "noun",
+      "roman": [
+        "mana",
+        "meaning"
+      ],
+      "forms": [
+        "معنى",
+        "المعنى",
+        "معان",
+        "معاني",
+        "المعاني"
+      ]
+    },
+    {
+      "lemma": "خاص",
+      "root": "خصص",
+      "pos": "adjective",
+      "roman": [
+        "khass",
+        "specific"
+      ],
+      "forms": [
+        "خاص",
+        "الخاص",
+        "خاصة",
+        "الخاصة",
+        "خصوص",
+        "الخصوص"
+      ]
+    },
+    {
+      "lemma": "عام",
+      "root": "عمم",
+      "pos": "adjective",
+      "roman": [
+        "amm",
+        "general"
+      ],
+      "forms": [
+        "عام",
+        "العام",
+        "عامة",
+        "العامة",
+        "عموم",
+        "العموم"
+      ]
+    },
+    {
+      "lemma": "ظاهر",
+      "root": "ظهر",
+      "pos": "adjective",
+      "roman": [
+        "zahir",
+        "apparent"
+      ],
+      "forms": [
+        "ظاهر",
+        "الظاهر",
+        "ظواهر",
+        "الظواهر"
+      ]
+    },
+    {
+      "lemma": "باطن",
+      "root": "بطن",
+      "pos": "adjective",
+      "roman": [
+        "batin",
+        "hidden"
+      ],
+      "forms": [
+        "باطن",
+        "الباطن",
+        "بواطن"
+      ]
+    },
+    {
+      "lemma": "كتاب",
+      "root": "كتب",
+      "pos": "noun",
+      "roman": [
+        "kitab",
+        "book"
+      ],
+      "forms": [
+        "كتاب",
+        "الكتاب",
+        "كتب",
+        "الكتب",
+        "كتابا",
+        "كتبا"
+      ]
+    },
+    {
+      "lemma": "كتب",
+      "root": "كتب",
+      "pos": "verb",
+      "roman": [
+        "kataba",
+        "write"
+      ],
+      "forms": [
+        "كتب",
+        "يكتب",
+        "كتبت",
+        "كتبوا",
+        "كتبنا",
+        "يكتبون"
+      ]
+    },
+    {
+      "lemma": "سنة",
+      "root": "سنن",
+      "pos": "noun",
+      "roman": [
+        "sunna",
+        "sunnah",
+        "tradition"
+      ],
+      "forms": [
+        "سنة",
+        "السنة",
+        "سنن",
+        "السنن"
+      ]
+    },
+    {
+      "lemma": "حديث",
+      "root": "حدث",
+      "pos": "noun",
+      "roman": [
+        "hadith",
+        "hadeeth",
+        "report"
+      ],
+      "forms": [
+        "حديث",
+        "الحديث",
+        "أحاديث",
+        "احاديث"
+      ]
+    },
+    {
+      "lemma": "نص",
+      "root": "نصص",
+      "pos": "noun",
+      "roman": [
+        "nass",
+        "text"
+      ],
+      "forms": [
+        "نص",
+        "النص",
+        "نصوص",
+        "النصوص"
+      ]
+    },
+    {
+      "lemma": "خبر",
+      "root": "خبر",
+      "pos": "noun",
+      "roman": [
+        "khabar",
+        "report"
+      ],
+      "forms": [
+        "خبر",
+        "الخبر",
+        "أخبار",
+        "اخبار",
+        "الأخبار"
+      ]
+    },
+    {
+      "lemma": "قيّد",
+      "root": "قيد",
+      "pos": "verb",
+      "roman": [
+        "qayyada",
+        "restrict"
+      ],
+      "forms": [
+        "قيد",
+        "يقيد",
+        "قيّد"
+      ]
+    },
+    {
+      "lemma": "شرط",
+      "root": "شرط",
+      "pos": "noun",
+      "roman": [
+        "shart",
+        "condition"
+      ],
+      "forms": [
+        "شرط",
+        "الشرط",
+        "شروط",
+        "الشروط"
+      ]
+    },
+    {
+      "lemma": "مطلق",
+      "root": "طلق",
+      "pos": "adjective",
+      "roman": [
+        "mutlaq",
+        "unrestricted"
+      ],
+      "forms": [
+        "مطلق",
+        "المطلق",
+        "إطلاق",
+        "الاطلاق"
+      ]
+    },
+    {
+      "lemma": "مقيد",
+      "root": "قيد",
+      "pos": "adjective",
+      "roman": [
+        "muqayyad",
+        "restricted"
+      ],
+      "forms": [
+        "مقيد",
+        "المقيد",
+        "تقييد",
+        "التقييد"
+      ]
+    },
+    {
+      "lemma": "قائل",
+      "root": "قول",
+      "pos": "noun",
+      "roman": [
+        "qail",
+        "speaker"
+      ],
+      "forms": [
+        "قائل",
+        "القائل",
+        "القائلون"
+      ]
+    },
+    {
+      "lemma": "قول",
+      "root": "قول",
+      "pos": "noun",
+      "roman": [
+        "qawl",
+        "saying"
+      ],
+      "forms": [
+        "قول",
+        "القول",
+        "أقوال",
+        "اقوال",
+        "الأقوال"
+      ]
+    },
+    {
+      "lemma": "عمل",
+      "root": "عمل",
+      "pos": "noun",
+      "roman": [
+        "amal",
+        "practice"
+      ],
+      "forms": [
+        "عمل",
+        "العمل",
+        "أعمال",
+        "الاعمال",
+        "الأعمال"
+      ]
+    },
+    {
+      "lemma": "عقل",
+      "root": "عقل",
+      "pos": "noun",
+      "roman": [
+        "aql",
+        "reason"
+      ],
+      "forms": [
+        "عقل",
+        "العقل",
+        "عقول",
+        "العقول"
+      ]
+    },
+    {
+      "lemma": "حقيقة",
+      "root": "حقق",
+      "pos": "noun",
+      "roman": [
+        "haqiqa",
+        "reality"
+      ],
+      "forms": [
+        "حقيقة",
+        "الحقيقة",
+        "حقائق",
+        "الحقائق"
+      ]
+    },
+    {
+      "lemma": "صدق",
+      "root": "صدق",
+      "pos": "noun",
+      "roman": [
+        "sidq",
+        "truth"
+      ],
+      "forms": [
+        "صدق",
+        "الصدق",
+        "صادق",
+        "الصادق"
+      ]
+    },
+    {
+      "lemma": "جهل",
+      "root": "جهل",
+      "pos": "noun",
+      "roman": [
+        "jahl",
+        "ignorance"
+      ],
+      "forms": [
+        "جهل",
+        "الجهل",
+        "جاهل",
+        "الجاهل"
+      ]
+    }
+  ]
+}

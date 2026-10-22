@@ -28,7 +28,7 @@ function test(name,fn){return fn().then(()=>{pass++;console.log('PASS '+name)}).
  await page.goto(address,{waitUntil:'load',timeout:45000});
  await page.waitForFunction(()=>!!window.GnammaUnifiedSearch);
  const trigger=page.locator('#searchBtn'),query=()=>page.locator('#gns-query'),rows=()=>page.locator('.gns-result');
- async function start(q){if(!(await page.locator('#gn-unified-search:not([hidden])').count()))await trigger.click();await query().fill(q);await page.waitForTimeout(130);}
+ async function start(q){if(!(await page.locator('#gn-unified-search:not([hidden])').count()))await trigger.click();await query().fill(q);await page.waitForTimeout(350);}
  async function close(){if(await page.locator('#gns-query').count())await page.locator('[data-gns-close="1"]').last().click();}
  async function expand(){if(!(await page.locator('.gns-expanded').count()))await page.locator('[data-gns-expand="1"]').first().click();}
  await test('global magnifier uses unified dialog without legacy overlay',async()=>{
@@ -61,7 +61,7 @@ function test(name,fn){return fn().then(()=>{pass++;console.log('PASS '+name)}).
  });
  await test('note result navigates to its actual note popup',async()=>{
    await start('ḥamdan');await expand();
-   await page.locator('[data-gns-facet="note"]').click();
+   await page.locator('#gns-type').selectOption('note');
    const first=page.locator('.gns-result').first();
    const text=await first.innerText();
    assert.match(text,/N001/i);await first.click();
@@ -132,7 +132,7 @@ function test(name,fn){return fn().then(()=>{pass++;console.log('PASS '+name)}).
  await mobile.goto(address,{waitUntil:'load',timeout:45000});
  await test('390px mobile search and advanced filters fit without horizontal scroll',async()=>{
    await mobile.locator('#searchBtn').click();await mobile.locator('#gns-query').fill('قياس');
-   await mobile.waitForTimeout(170);
+   await mobile.waitForTimeout(350);
    const width=await mobile.evaluate(()=>({screen:innerWidth,b:document.querySelector('.gns-dialog').getBoundingClientRect().width,overflow:document.documentElement.scrollWidth>innerWidth}));
    assert.ok(Math.abs(width.b-width.screen)<2,JSON.stringify(width));
    assert.equal(width.overflow,false);
