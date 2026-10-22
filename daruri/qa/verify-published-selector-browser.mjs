@@ -73,7 +73,8 @@ try{
   assert.match(receipt.suggestedFilename(),/daruri-reading-bilingual-titles-off-personal-\d{4}-\d\d-\d\d\.pdf/);
   await ui.locator('#pe-result').waitFor({state:'visible',timeout:150000});
   assert.match(await ui.locator('#pe-alert').innerText(),/1 personal item included/);
-  assert.match(await ui.locator('#pe-alert').innerText(),/clickable phrase highlight/);
+  assert.match(await ui.locator('#pe-alert').innerText(),/1 clickable phrase highlight/,
+    'The certified source quotation should become exactly one clickable word-level highlight');
   assert.equal(await ui.locator('#pe-open').getAttribute('href')!==null,true);
 
   // Switching Study changes the PDF but not the user's private note settings.
