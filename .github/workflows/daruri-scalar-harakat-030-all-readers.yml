@@ -1,0 +1,94 @@
+name: Daruri portable scalar-harakat source PDF multi-engine proof (NON-RELEASE)
+on:
+  push:
+    branches: [qa/daruri-vowelled-pdfkit-ab-20261022]
+    paths:
+      - '.github/workflows/daruri-scalar-harakat-030-all-readers.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-pdfkit:
+    runs-on: macos-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: arabic-vowelled-reading
+            source: editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf
+            map: editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json
+          - id: bilingual-vowelled-reading
+            source: editions/reading/daruri-reading-bilingual-titles-off.pdf
+            map: editions/maps/daruri-reading-bilingual-titles-off.pdf.json
+          - id: scholarly-reference
+            source: daruri.pdf
+            map: personal-source-pango-maps/daruri.pdf.json
+          - id: bilingual-study
+            source: editions/study/daruri-study-bilingual-titles-off.pdf
+            map: editions/maps/daruri-study-bilingual-titles-off.pdf.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: Build temporary glyph-preserving vowelled source candidate (one scalar per CID)
+        run: |
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/${{ matrix.source }} \
+            --map daruri/${{ matrix.map }} \
+            --output /tmp/${{ matrix.id }}-scalar-harakat-NONRELEASE.pdf \
+            --scalar-harakat --scalar-mark-fraction 0.30
+      - name: Native macOS PDFKit all 414 source searches, geometry and clipboard samples
+        run: |
+          swift daruri/qa/verify_char_unicode_pdfkit.swift \
+            /tmp/${{ matrix.id }}-scalar-harakat-NONRELEASE.pdf \
+            daruri/${{ matrix.map }}
+  mupdf-poppler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: arabic-vowelled-reading
+            source: editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf
+            map: editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json
+          - id: bilingual-vowelled-reading
+            source: editions/reading/daruri-reading-bilingual-titles-off.pdf
+            map: editions/maps/daruri-reading-bilingual-titles-off.pdf.json
+          - id: scholarly-reference
+            source: daruri.pdf
+            map: personal-source-pango-maps/daruri.pdf.json
+          - id: bilingual-study
+            source: editions/study/daruri-study-bilingual-titles-off.pdf
+            map: editions/maps/daruri-study-bilingual-titles-off.pdf.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - name: Build temporary SHA-bound scalar/harakat source candidate
+        run: |
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/${{ matrix.source }} \
+            --map daruri/${{ matrix.map }} \
+            --output /tmp/${{ matrix.id }}-scalar-harakat-NONRELEASE.pdf \
+            --scalar-harakat --scalar-mark-fraction 0.30
+      - name: Compare source, exact queries, clipping, 258 anchors, links and pixels
+        run: |
+          python daruri/qa/verify_char_unicode_profiles.py \
+            --source daruri/${{ matrix.source }} \
+            --candidate /tmp/${{ matrix.id }}-scalar-harakat-NONRELEASE.pdf \
+            --map daruri/${{ matrix.map }} \
+            --report /tmp/${{ matrix.id }}-scalar-harakat.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-scalar-harakat-${{ matrix.id }}-QA
+          path: /tmp/${{ matrix.id }}-scalar-harakat.json
+          retention-days: 20
+          if-no-files-found: warn
