@@ -111,7 +111,7 @@ def front(mode,chosen,scope,title):
     result='<section class="opening"><h1>'+title+'</h1><p>Ibn Rushd · Gnamma Research · Printable A4</p><p>'+note+' Full commentary remains in the scholarly reference edition.</p></section>'
     result+='<nav class="toc"><strong>Reading map</strong>'+''.join('<span><a href="#section-'+str(n)+'">§'+str(n)+' · '+E(values[0])+'</a></span>' for n,values in HEADINGS.items() if n in chosen)+'</nav>'
   return result
-def build(mode,selection,scope,title,pdf,editorial_titles=False):
+def build(mode,selection,scope,title,pdf,editorial_titles=False,html_source=None):
   c=MODES[mode];chosen=set(int(s) for s in selection)
   assert chosen and chosen <= set(SECTIONS)
   sections=[SECTIONS[i] for i in range(1,259) if i in chosen]
@@ -148,6 +148,10 @@ def build(mode,selection,scope,title,pdf,editorial_titles=False):
   if scope=='full':
     content.append('<p class="afterword">The later copyist’s record and scholarly apparatus remain in the reference edition.</p>' if not mode.startswith('arabic') else '<p class="afterword" dir="rtl" lang="ar">توجد خاتمة الناسخ والحواشي النقدية والشروح في الطبعة العلمية.</p>')
   html_text='<!doctype html><html><head><meta charset="utf-8"><style>'+css(c,mode)+'</style></head><body>'+''.join(content)+'</body></html>'
+  if html_source is not None:
+    html_source=Path(html_source)
+    html_source.parent.mkdir(parents=True,exist_ok=True)
+    html_source.write_text(html_text,encoding='utf-8')
   pdf.parent.mkdir(parents=True,exist_ok=True)
   HTML(string=html_text,base_url=HERE.as_uri()+'/').write_pdf(pdf)
   with fitz.open(pdf) as check:
