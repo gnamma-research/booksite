@@ -144,7 +144,7 @@ def html_intro(subtitle,arabic=False):
             'headings are explicitly distinguished from editorial section titles. '
             'This is not a new manuscript collation.</p></header>')
 
-def html_text(sections,notes,by_id,view="parallel"):
+def html_text(sections,notes,by_id,view="parallel",later=None):
     bilingual=view=="parallel"
     arabic_only=view in ("arabic","vowelled")
     lines=[html_intro("parallel text" if bilingual else view,arabic=arabic_only)]
@@ -190,12 +190,32 @@ def html_text(sections,notes,by_id,view="parallel"):
                              '</span> '+escape(str(note_text))+'</article>')
             lines.append('</div>')
         lines.append('</section>')
+    for col in later or []:
+        if str(col.get("id"))!="colophon":
+            raise ValueError("Unknown non-authorial passage in canonical export")
+        lines.append('<section id="colophon" data-source-role="later-copyist">'
+                     '<h2>Later copyist’s colophon and ownership notice — '
+                     'separate from Ibn Rushd’s text</h2>')
+        if col.get("headingAr"):
+            lines.append('<h3 lang="ar" dir="rtl" class="arabic">'+
+                         escape(col["headingAr"])+'</h3>')
+        for i,seg in enumerate(col.get("segments",[]),1):
+            if bilingual:
+                lines.append(f'<div class="parallel" id="colophon-P{i:02d}">'
+                             f'<p class="english" lang="en" dir="ltr">'+escape(seg["en"])+'</p>'
+                             f'<p class="arabic" lang="ar" dir="rtl">'+escape(seg["vocalized"])+'</p></div>')
+            else:
+                field="en" if view=="english" else "vocalized" if view=="vowelled" else "ar"
+                lang="en" if field=="en" else "ar"
+                lines.append(f'<p id="colophon-P{i:02d}" lang="{lang}" dir="'+
+                             ('ltr' if lang=="en" else 'rtl')+'">'+escape(seg[field])+'</p>')
+        lines.append("</section>")
     lines.append('<footer><p>Source identifiers and all original note metadata are '
                  'also preserved in daruri-source.json and daruri-passages.jsonl.</p></footer>'
                  '</body></html>')
     return "\n".join(lines).encode("utf-8")
 
-def shamela_txt(sections,field):
+def shamela_txt(sections,field,later=None):
     """Legacy-import-friendly UTF-8. No arbitrary source text modifications."""
     lines=[TITLE_AR,AUTHOR_AR,"",
            "تنبيه تحريري: ترقيم R من وضع هذه الطبعة، وليس من عناوين المؤلف.",
@@ -207,9 +227,16 @@ def shamela_txt(sections,field):
         lines.append(f"[R{s['id']:03d}]")
         lines.extend(seg[field] for seg in s["segments"])
         lines.append("")
+    for col in later or []:
+        if str(col.get("id"))!="colophon":
+            raise ValueError("Unexpected later-source passage")
+        lines.extend(["خاتمة الناسخ وقيد الملكية",
+                      "تنبيه: هذا النص من قيد ناسخ لاحق، وليس من متن ابن رشد.", "[COL]"])
+        lines.extend(seg[field] for seg in col["segments"])
+        lines.append("")
     return ("\n".join(lines).rstrip()+"\n").encode("utf-8")
 
-def tei_export(sections,notes):
+def tei_export(sections,notes,later=None):
     """Parallel TEI P5 source/translation, stable canonical correspondence.
 
     Arabic unvowelled is source witness; vowelled Arabic and English are
@@ -265,6 +292,17 @@ def tei_export(sections,notes):
                 for ident in s.get("noteIds",[]):
                     e(div,"ptr",{"type":"source-editorial-note",
                                  "target":"#"+note_id(ident)})
+        for col in later or []:
+            if str(col.get("id"))!="colophon":
+                raise ValueError("Unrecognized separate later-source unit")
+            div=e(body,"div",{
+                "type":"later-copyist-colophon",
+                f"{{{XML}}}id":f"{idtag}-colophon",
+                "resp":"later-copyist",
+            })
+            e(div,"head",{"type":"recorded-rubric"},col.get("headingAr") or col.get("title") or "")
+            for index,seg in enumerate(col["segments"],1):
+                e(div,"p",{f"{{{XML}}}id":f"{idtag}-colophon-p{index:02d}"},seg[field])
     back=e(booktext,"back")
     div=e(back,"div",{"type":"scholarly-and-source-notes"})
     for item in notes:
@@ -296,6 +334,8 @@ The authoritative release data lives in the canonical reader payload.
 - shamela-import-vowelled.txt: Arabic with editorial vocalization.
 - shamela-import-arabic.html: simple Arabic-only HTML, for legacy import.
 - daruri-notes.json: all 625 canonical scholarly/source note records.
+- daruri-colophon.json: the later copyist’s TWO separate paragraphs.
+  Colophon material also appears clearly separated in HTML, TEI and TXT.
 - manifest.json: file checksums, counts and provenance.
 
 Source numbering:
@@ -345,6 +385,9 @@ def deterministic_zip(dest,files):
 def generate(output_dir:Path,zipname="Daruri_Portable_Scholarly_Source.zip"):
     book=read_book()
     sections,notes,by_id=index_book(book)
+    later=post_authorial(book)
+    if len(later)!=1 or str(later[0].get("id"))!="colophon" or len(later[0].get("segments",[]))!=2:
+        raise ValueError("The separate two-paragraph later-copyist colophon is incomplete")
     rows=source_rows(sections)
     files={
         "daruri-source.json":canonical_json(book),
@@ -352,14 +395,15 @@ def generate(output_dir:Path,zipname="Daruri_Portable_Scholarly_Source.zip"):
             json.dumps(row,ensure_ascii=False,sort_keys=True)+"\n"
             for row in rows)).encode("utf-8"),
         "daruri-notes.json":canonical_json(notes),
-        "daruri-parallel.html":html_text(sections,notes,by_id,"parallel"),
-        "daruri-arabic.html":html_text(sections,notes,by_id,"arabic"),
-        "daruri-arabic-vowelled.html":html_text(sections,notes,by_id,"vowelled"),
-        "daruri-english.html":html_text(sections,notes,by_id,"english"),
-        "shamela-import-arabic.html":html_text(sections,notes,by_id,"arabic"),
-        "shamela-import-arabic.txt":shamela_txt(sections,"ar"),
-        "shamela-import-vowelled.txt":shamela_txt(sections,"vocalized"),
-        "daruri.tei.xml":tei_export(sections,notes),
+        "daruri-colophon.json":canonical_json(later[0]),
+        "daruri-parallel.html":html_text(sections,notes,by_id,"parallel",later),
+        "daruri-arabic.html":html_text(sections,notes,by_id,"arabic",later),
+        "daruri-arabic-vowelled.html":html_text(sections,notes,by_id,"vowelled",later),
+        "daruri-english.html":html_text(sections,notes,by_id,"english",later),
+        "shamela-import-arabic.html":html_text(sections,notes,by_id,"arabic",later),
+        "shamela-import-arabic.txt":shamela_txt(sections,"ar",later),
+        "shamela-import-vowelled.txt":shamela_txt(sections,"vocalized",later),
+        "daruri.tei.xml":tei_export(sections,notes,later),
         "README.txt":readme()
     }
     manifest={
@@ -370,6 +414,7 @@ def generate(output_dir:Path,zipname="Daruri_Portable_Scholarly_Source.zip"):
         "canonical_reader_sha256":sha((ROOT/"edition-r3-20261020.js").read_bytes()),
         "source_authorial_sections":258,
         "authorial_parallel_segments":len(rows),
+        "separate_later_copyist_colophon_segments":2,
         "recorded_arabic_headings":46,
         "canonical_note_records":len(notes),
         "part_count":len(book.get("parts",[])),
