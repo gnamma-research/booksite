@@ -94,12 +94,16 @@ async function exercise(engine,name,origin){
   assert.equal(await page.locator('#readerDock .reader-step:visible').count(),0,'Continuous should have no adjacent-section arrows');
   // Continuous is a scrollable whole book; re-centre the annotated passage
   // before testing the passage-specific status, not the inherited viewport.
-  await page.locator('#gn-continuous-11 .passage-grid[data-segment="0"]').first().evaluate(el=>el.scrollIntoView({block:'center',behavior:'instant'}));
-  await page.waitForTimeout(200);
-  // Even when Continuous scroll settles on an unmarked paragraph in §11,
-  // personal status must reflect all saved material in that section.
-  await page.waitForFunction(()=>document.querySelector('#dockSection')?.textContent?.trim()==='§11',{timeout:8000});
-  await page.waitForFunction(()=>document.querySelectorAll('#gn-dock-private-status .gn-dock-mark').length===4,{timeout:8000});
+  // Mode switching itself asynchronously restores the prior reading section.
+  // Place ¶2 near the top of the reading viewport AFTER the new mode settles.
+  await page.waitForTimeout(350);
+  await page.locator('#gn-continuous-11 .passage-grid[data-segment="1"]').first().evaluate(el=>{
+    window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-150,behavior:'instant'});
+    window.dispatchEvent(new Event('scroll'));
+  });
+  // Section-wide counts must remain visible even on the unsaved ¶2.
+  await page.waitForFunction(()=>document.querySelector('#dockSection')?.textContent?.trim()==='§11',null,{timeout:10000});
+  await page.waitForFunction(()=>document.querySelectorAll('#gn-dock-private-status .gn-dock-mark').length===4,null,{timeout:10000});
   assert.deepEqual(await page.locator('#gn-dock-private-status .gn-dock-count').allTextContents(),
     ['1','1','1','1'],'Continuous lost section-wide status while scanning paragraphs');
   await page.locator('#focusToolbar').click();
