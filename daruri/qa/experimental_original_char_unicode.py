@@ -82,23 +82,35 @@ def remove_broken_text(page, planned):
     edits = []
     matches = set()
     for line in planned:
-        scores = sorted(
-            (abs(float(m[1]) * 0.75 - line["xmin"]) +
-             abs(float(m[2]) * 0.75 - line["baseline"]), index, m)
-            for index, m in enumerate(starts)
-        )
-        if not scores or scores[0][0] > 0.05 or scores[0][1] in matches:
-            best = [
-                (round(score, 4), index, round(float(match[1])*0.75, 3),
-                 round(float(match[2])*0.75, 3))
-                for score, index, match in scores[:4]
-            ]
+        y0 = line["words"][0][2]
+        height = line["words"][0][4] - y0
+        if not height > 0:
+            raise ValueError("Invalid source line height")
+        scores = []
+        for index, match in enumerate(starts):
+            x = float(match[1]) * 0.75
+            y = float(match[2]) * 0.75
+            rise = y - y0
+            # Source box and WeasyPrint's text baseline vary across
+            # vowelled/unvowelled, Study and Scholarly typography.
+            # Enforce a unique matching X and a baseline inside the map's
+            # true source glyph box; never guess an adjacent non-source line.
+            if (abs(x - line["xmin"]) <= 0.035
+                    and 0.28 * height <= rise <= 0.85 * height):
+                score = abs(rise - 0.57 * height) + abs(x-line["xmin"])
+                scores.append((score,index,match))
+        scores.sort()
+        if not scores or scores[0][1] in matches:
+            alternatives = [
+                (round(float(m[1])*0.75,3), round(float(m[2])*0.75,3))
+                for m in starts
+                if abs(float(m[1])*0.75-line["xmin"]) <= 0.1
+            ][:6]
             raise ValueError(
-                f"Pango/source-Tm mismatch on PDF page {page.number+1}: "
-                f"source xmin={line['xmin']:.3f}, "
-                f"y0={line['words'][0][2]:.3f}, "
-                f"estimated baseline={line['baseline']:.3f}, "
-                f"nearest page Tm candidates (distance,index,x,y)={best}"
+                f"Unmatched or nonunique source line on PDF page {page.number+1}: "
+                f"left={line['xmin']:.3f}, source y0={y0:.3f}, "
+                f"height={height:.3f}, viable candidates={len(scores)}, "
+                f"similar-X baselines={alternatives}"
             )
         _, index, found = scores[0]
         matches.add(index)
