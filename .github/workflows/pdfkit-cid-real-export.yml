@@ -1,0 +1,54 @@
+name: Daruri real exporter native CIDFont Arabic validation
+on:
+  push:
+    branches: ['experiment/gnamma-cidfont-personal-export-20261022']
+    paths:
+      - 'daruri/personal-pdf-enhancements.js'
+      - 'pdfkit_cid_ci/**'
+      - '.github/workflows/pdfkit-cid-real-export.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-personal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Browser-local Unicode PDF generation
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1 pdfjs-dist@5.4.394
+          npx --prefix daruri/qa playwright install --with-deps chromium
+      - name: Generate and validate original Daruri personal fixture
+        env:
+          GNAMMA_QA_VISUAL_PATH: daruri/qa/phone-output/personal-pdf-sample.pdf
+          GNAMMA_PHONE_FIXTURE_ONLY: '1'
+        run: node daruri/qa/verify-semantic-personal-pdf.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cidfont-personal-original-fixture
+          path: daruri/qa/phone-output/personal-pdf-sample.pdf
+          retention-days: 5
+  native-macos:
+    needs: build-personal
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: cidfont-personal-original-fixture
+          path: daruri/qa/phone-output
+      - name: Check native PDFKit word and phrase search
+        run: |
+          swiftc -framework PDFKit -o /tmp/gnamma-native-cidfont pdfkit_cid_ci/verify_pdfkit.swift
+          /tmp/gnamma-native-cidfont daruri/qa/phone-output/personal-pdf-sample.pdf pdfkit_cid_ci/native-result.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-native-cidfont-verification
+          path: pdfkit_cid_ci/native-result.json
+          retention-days: 5
