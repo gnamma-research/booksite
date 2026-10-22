@@ -1,0 +1,47 @@
+name: PDFKit Arabic Unicode encoding A-B alternatives
+on:
+  push:
+    branches: ['experiment/gnamma-pdfkit-arabic-variants-20261022']
+    paths: ['pdfkit_variants/**','.github/workflows/pdfkit-arabic-alternatives.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install reproducible browser and font tools
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1 pdfjs-dist@5.4.394
+          npx --prefix daruri/qa playwright install --with-deps chromium
+      - name: Create seven synthetic PDFKit-compatible Arabic encoding candidates
+        run: python3 pdfkit_variants/generate_variants.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pdfkit-arabic-variant-fixtures
+          path: pdfkit_variants/output/*.pdf
+          retention-days: 3
+  mac-pdfkit:
+    needs: generate
+    runs-on: macos-15
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {name: pdfkit-arabic-variant-fixtures,path: pdfkit_variants/output}
+      - name: Search native macOS PDFKit for Arabic in all seven PDFs
+        run: |
+          swiftc -framework PDFKit -o /tmp/gnamma-pdfkit-variants pdfkit_variants/mac_pdfkit.swift
+          /tmp/gnamma-pdfkit-variants pdfkit_variants/output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pdfkit-compatibility-matrix
+          path: pdfkit_variants/output/macos_pdfkit_results.json
+          retention-days: 3
