@@ -1,0 +1,80 @@
+name: Daruri EXPERIMENT original Arabic Unicode source layer
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - experiment/daruri-original-arabic-unicode-layer-20261022
+    paths:
+      - daruri/qa/experimental_original_arabic_unicode.py
+      - .github/workflows/daruri-experimental-source-unicode.yml
+permissions:
+  contents: read
+jobs:
+  source-unicode-prototype:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install independent PDF analysis tools
+        run: |
+          python -m pip install "PyMuPDF==1.26.7" "fonttools>=4.55,<5"
+          sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - name: Cross-engine searchable Arabic pilot, 1 source segment
+        run: |
+          python daruri/qa/experimental_original_arabic_unicode.py \
+            --input daruri/editions/reading/daruri-reading-arabic-titles-off.pdf \
+            --map daruri/editions/maps/daruri-reading-arabic-titles-off.pdf.json \
+            --font daruri/build/fonts/NotoNaskhArabic-Regular.ttf \
+            --output /tmp/gnamma-original-arabic-unicode-pilot.pdf \
+            --limit 1 --report /tmp/gnamma-arabic-pilot.json
+      - name: Exercise all 414 source segments without replacing source PDFs
+        run: |
+          python daruri/qa/experimental_original_arabic_unicode.py \
+            --input daruri/editions/reading/daruri-reading-arabic-titles-off.pdf \
+            --map daruri/editions/maps/daruri-reading-arabic-titles-off.pdf.json \
+            --font daruri/build/fonts/NotoNaskhArabic-Regular.ttf \
+            --output /tmp/gnamma-original-arabic-unicode-full.pdf \
+            --limit 414 --report /tmp/gnamma-arabic-full.json
+      - name: Measure 414 Arabic phrase probes independently
+        run: |
+          python - <<'PY'
+          import json,fitz,unicodedata
+          from pathlib import Path
+          m=json.loads(Path('daruri/editions/maps/daruri-reading-arabic-titles-off.pdf.json').read_text())
+          def clean(s):
+              return ''.join(c for c in unicodedata.normalize('NFKD',s).casefold()
+                             if unicodedata.category(c)[0] in ('L','N')
+                             and not unicodedata.combining(c))
+          doc=fitz.open('/tmp/gnamma-original-arabic-unicode-full.pdf')
+          per_page=[clean(p.get_text(sort=False)) for p in doc]
+          total=matched=0
+          failures=[]
+          for key,words in m['segments'].items():
+              if not key.endswith(':ar') or len(words)<3:continue
+              firstpage=words[0][1]
+              samepage=[w[0] for w in words if w[1]==firstpage][:5]
+              if len(samepage)<3:continue
+              total+=1
+              if clean(''.join(samepage)) in per_page[firstpage-1]:
+                  matched+=1
+              else:
+                  failures.append(key)
+          results={'segments_probed':total,'native_extraction_pass':matched,
+                   'failed':len(failures),'first_failed':failures[:25],
+                   'prototype_only':True,
+                   'warning':'Native PDFKit, Android PDFium, Adobe Acrobat, PDF.js and vowelled search NOT certified'}
+          Path('/tmp/gnamma-coverage.json').write_text(json.dumps(results,indent=2))
+          print(json.dumps(results,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-experimental-original-arabic-search
+          path: |
+            /tmp/gnamma-arabic-pilot.json
+            /tmp/gnamma-arabic-full.json
+            /tmp/gnamma-coverage.json
+          retention-days: 7
