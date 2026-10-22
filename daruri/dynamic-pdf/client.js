@@ -90,9 +90,8 @@
    if(opt.options.length!==120)fail('120 verified apparatus configurations were not available');
    opt.value='apparatus/daruri-reading-bilingual-glossary.pdf';
    ready=true;
-   $('gn-dyn-make').disabled=false;
-   $('gn-dyn-personal').disabled=false;
-   status('120 certified configurations are available. Generation happens entirely in this browser.');
+   updateControls();
+   status('120 verified configurations are available. Generation happens entirely in this browser.');
   }catch(e){status('Cannot initialize local PDF publishing: '+e.message,true);}
  }
  function clearOutput(){
