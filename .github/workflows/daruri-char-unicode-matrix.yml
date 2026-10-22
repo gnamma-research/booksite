@@ -53,7 +53,7 @@ jobs:
             --candidate /tmp/daruri-${{ matrix.id }}-unicode-CANDIDATE.pdf \
             --report /tmp/daruri-${{ matrix.id }}-source-414-report.json
       - uses: actions/upload-artifact@v4
-        if: success()
+        if: always()
         with:
           name: experimental-${{ matrix.id }}-unicode-NOT-RELEASE
           path: |
