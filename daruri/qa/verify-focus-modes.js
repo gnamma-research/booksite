@@ -22,7 +22,21 @@ new vm.Script(script,{filename:'index.html'});
 for(const id of ['gn-normal','gn-focus-1','gn-focus-2','gn-focus-3']){
  assert(iconFile.includes('id="'+id+'"'),'Missing '+id+' mode icon');
 }
-assert(html.includes('state.focusLevel=(prior+1)%4'),'Focus button must cycle through four states');
+assert(!html.includes('state.focusLevel=(prior+1)%4'),'Obsolete four-mode cycle must be absent');
+assert(html.includes('window.GnammaReaderModes={setMode:setReadingMode,currentMode}'),'Three-mode selector must control the actual reader');
+assert(html.includes("focusApparatus?1:2"),'Existing Focus 1 after-text apparatus must remain selectable');
+assert(html.includes("window.GnammaReadingDock?.attachModes"),'Mode selector must be attached to the dock runtime');
+const dockJS=fs.readFileSync(path.resolve(__dirname,'..','reading-mode-controls.js'),'utf8');
+const dockCSS=fs.readFileSync(path.resolve(__dirname,'..','reading-mode-controls.css'),'utf8');
+new vm.Script(dockJS,{filename:'reading-mode-controls.js'});
+for(const choice of ['reading','focus','continuous'])
+ assert(dockJS.includes('data-gn-reader-mode="'+choice+'"'),'Missing '+choice+' menu choice');
+assert(dockJS.includes("if(!count)continue"),'Zero-count personal marks must be absent');
+assert(dockJS.includes("getApparatus"),'The optional Focus apparatus setting must survive');
+assert(dockCSS.includes('body.reader-enhanced .reader .chapter-nav{display:none!important}'),
+ 'Redundant enhanced in-text Previous/Next navigation not hidden');
+assert(html.includes('reading-mode-controls.js?v=20261022-readmode3a')&&
+ html.includes('reading-mode-controls.css?v=20261022-readmode3a'),'Reader missing mode assets');
 assert(html.includes("state.focusLevel===3"),'Continuous reading mode not wired');
 assert(html.includes("for(const sec of all)"),'Continuous reader must traverse every section');
 assert(html.includes("data-reading-section="),'Section boundaries not present for scroll tracking');
@@ -40,4 +54,4 @@ assert(html.includes('data-gn-notes-open aria-haspopup="dialog"'), 'Notes trigge
 assert(html.includes('data-gn-notes-open aria-haspopup="dialog">Notes (${critical.length})'), 'Keep accessible Notes popup trigger');
 assert(html.includes("data-open-jump"),'Central dock jump must remain');
 assert(html.includes("readerPreviousNumber") && html.includes("readerNextNumber"),'Normal dock navigation must remain');
-console.log('PASS: focus 0–3 structural checks, apparatus, continuous headings/dock, concepts, notes, corpus, inline JS syntax.');
+console.log('PASS: Reading/Focus/Continuous selector, optional after-text apparatus, quiet dock and unchanged scholarly corpus.');
