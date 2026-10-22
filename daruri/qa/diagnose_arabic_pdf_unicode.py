@@ -39,8 +39,12 @@ def normalized_words(source: str) -> list[str]:
 
 def phrase_probes(source: str) -> list[str]:
     words = normalized_words(source)
-    if len(words) < 4:
+    if not words:
         return []
+    if len(words) < 4:
+        # Some authorial segments contain fewer than four Arabic words.
+        # Retain them rather than silently excluding one of the 414 passages.
+        return [' '.join(words)]
     starts = (0, max(0, len(words) // 2 - 2))
     return list(dict.fromkeys(' '.join(words[i:i + 4]) for i in starts))
 
