@@ -131,15 +131,12 @@ def remove_broken_text(page, planned, all_source_runs=False, suppress_note_span=
             ]
             if index not in source_runs:
                 raise ValueError("Exact source origin was omitted from all-run suppression")
-        if suppress_note_span and len(source_runs)>1:
-            # Native Apple PDFKit does not reliably suppress two separate
-            # BDC tags flanking a raised inline footnote call. Test a single
-            # marked-content span covering the whole broken Arabic line.
-            # The note's visible glyph/link is unchanged; its extracted call
-            # number may be suppressed, so this remains nonrelease research.
-            if len(source_runs)>1:
+        if len(source_runs)>1:
             split_source_y0.add(round(y0,3))
-        for ix in source_runs:
+        if suppress_note_span and len(source_runs)>1:
+            # Experimental continuous tag includes the raised inline source
+            # call. It does NOT remove any visible source or link annotation.
+            for ix in source_runs:
                 if ix in matches:
                     raise ValueError("Overlapping original source-line claim")
                 matches.add(ix)
