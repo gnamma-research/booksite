@@ -31,10 +31,13 @@ function reportCard(key,cite,report,index){
     const wrapper=isLong?mk('details','gn-hadith-arabic-fold'):mk('div','gn-hadith-arabic-block');
     if(isLong)wrapper.append(mk('summary',null,'Read the complete Arabic transmission and isnād'));
     const ar=mk('blockquote','gn-hadith-original-ar',report.arabic);ar.lang='ar';ar.dir='rtl';wrapper.append(ar);article.append(wrapper);
-    if(report.englishOriginal){
-      const en=mk('p','gn-hadith-english',report.englishOriginal);en.lang='en';en.dir='ltr';article.append(mk('p','gn-hadith-section-label','English rendering of the cited report (editorial translation)'),en);
+    if(report.englishOriginal || report.englishBrief){
+      const isSummary=!!report.englishBrief&&!report.englishOriginal;
+      const en=mk('p','gn-hadith-english',report.englishOriginal||report.englishBrief);en.lang='en';en.dir='ltr';
+      article.append(mk('p','gn-hadith-section-label',isSummary?'English context summary (editorial précis, not the complete translation)':'Independent English rendering of the report’s substance (Arabic isnād retained above)'),en);
+      if(isSummary)article.append(mk('p','gn-hadith-translation-note','For a complete English translation of the wording and its collector remarks, open the source below.'));
     } else {
-      article.append(mk('p','gn-hadith-translation-note','The original Arabic (including its chain) is provided above. A complete published English translation is available at the primary source; the existing scholarly note gives the report’s relevance.'));
+      article.append(mk('p','gn-hadith-translation-note','The original Arabic (including its chain) is provided above. A published English translation is linked at the primary source; the existing scholarly note explains its relevance.'));
     }
   } else {
     article.append(mk('p','gn-hadith-translation-note','The full report was not verified for local reproduction. Consult the linked edition for the original wording, narrators and translation.'));
