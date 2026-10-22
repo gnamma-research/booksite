@@ -9,7 +9,20 @@ const raw=fs.readFileSync(path.resolve(__dirname,'../daruri/vendor/NotoNaskhArab
 const font=fontkit.create(raw);
 const arabic='مقدمة العلوم الدقيقة بين الحقيقة والأصول؛ والتحليل';
 const arabic2='والتحليل والبيان في أصول الفقه ونتائج الاجتهاد';
-const phrases=[arabic,arabic2];
+const vocal='بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+const vocal2='الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ';
+const phrases=[arabic,arabic2,vocal,vocal2];
+function reversedClusters(value){
+ const chunks=[];
+ for(const ch of Array.from(value)){
+  if(/\p{M}/u.test(ch)&&chunks.length)chunks[chunks.length-1]+=ch;
+  else chunks.push(ch);
+ }
+ return chunks.reverse().join('');
+}
+function reverseWordsPreserveClusters(value){
+ return value.split(' ').reverse().map(w=>reversedClusters(w)).join(' ');
+}
 function cMapText(pairs){
  const dest=cp=>cp.toString(16).toUpperCase().padStart(4,'0');
  const data=pairs.map(([id,c])=>'<'+id.toString(16).padStart(4,'0')+'> <'+dest(c.codePointAt(0))+'>').join('\n');
@@ -58,6 +71,9 @@ async function run(){
  const fontRef=pdf.context.register(type0);
  const ps=[
   {variant:'logical_tr3',transform:x=>x,mode:3},
+  {variant:'reverseclusters_tr3',transform:reversedClusters,mode:3},
+  {variant:'reverseclusters_tr0_white',transform:reversedClusters,mode:0,white:true},
+  {variant:'reversewordsclusters_tr3',transform:reverseWordsPreserveClusters,mode:3},
   {variant:'reversechars_tr3',transform:x=>Array.from(x).reverse().join(''),mode:3},
   {variant:'reversewords_tr3',transform:x=>x.split(' ').reverse().join(' '),mode:3},
   {variant:'logical_tr0_white',transform:x=>x,mode:0,white:true},
