@@ -6,7 +6,7 @@
 
   // BEGIN DARURI RELEASE ASSETS
   const RELEASE_VERSION = "20261021-rdiconpdf1-section1-qparallels2-qbrackets3-qinline4-fallback1";
-  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
+  const RELEASE_ASSETS = new Set(["gnamma-search.js", "gnamma-search.css", "gnamma-scholarly.js", "gnamma-scholarly.css", "gnamma-proximity.js", "gnamma-search-return.js", "gnamma-morphology.js", "gnamma-word-context.js", "gnamma-word-context.css", "morph-lexicon.json", "morph-daruri-v1.json", "morph-mustasfa-v1.json", "daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -181,7 +181,19 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261022-docksections1'],
+      ['daruri/gnamma-search.js', 'gnamma-search.js?v=20261022-morphperf1'],
+      ['daruri/gnamma-search.css', 'gnamma-search.css?v=20261022-proximity1'],
+      ['daruri/gnamma-scholarly.js', 'gnamma-scholarly.js?v=20261022-scholarly1'],
+      ['daruri/gnamma-scholarly.css', 'gnamma-scholarly.css?v=20261022-scholarly1'],
+      ['daruri/gnamma-proximity.js', 'gnamma-proximity.js?v=20261022-proximity1'],
+      ['daruri/gnamma-search-return.js', 'gnamma-search-return.js?v=20261022-return2'],
+      ['daruri/gnamma-morphology.js', 'gnamma-morphology.js?v=20261022-morphperf1'],
+      ['daruri/gnamma-word-context.js', 'gnamma-word-context.js?v=20261022-morphperf1'],
+      ['daruri/gnamma-word-context.css', 'gnamma-word-context.css?v=20261022-morphperf1'],
+      ['daruri/morph-lexicon.json', 'morph-lexicon.json'],
+      ['daruri/morph-daruri-v1.json', 'morph-daruri-v1.json'],
+      ['daruri/morph-mustasfa-v1.json', 'morph-mustasfa-v1.json'],
+      ['daruri/sw.js', 'sw.js?v=20261022-morphperf1'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
