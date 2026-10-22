@@ -64,7 +64,7 @@ async function exercise(engine,engineName,base){
    assert.match(await page.locator('#detailTitle').innerText(),/N001.*§1/);
    assert.match(await page.locator('#detailContent .gn-note-en-scope').innerText(),/after praising God/);
    await page.locator('#detailContent [data-close-reference]').click();
-   await page.locator('#infoOverlay[hidden]').waitFor();
+   await page.locator('#infoOverlay[hidden]').waitFor({state:'attached'});
    await page.goto(base+'/daruri/#section=2',{waitUntil:'domcontentloaded'});
    await page.locator('.gn-note-en-range').first().waitFor();
    await page.locator('.gn-note-en-ref[data-note-target="N003"]').click();
