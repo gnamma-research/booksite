@@ -8,7 +8,7 @@ const scripts=['hadith-context-data.js','hadith-context-arabic-bukhari1.js','had
 const pending=new Map();
 const mk=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=String(text);return e;};
 function load(src){if(pending.has(src))return pending.get(src);const p=new Promise((ok,fail)=>{const s=document.createElement('script');s.async=true;s.src=new URL(src+'?v='+REV,here).href;s.onload=()=>ok();s.onerror=()=>fail(new Error('Could not load '+src));document.head.append(s);});pending.set(src,p);return p;}
-async function corpus(){const result=await Promise.allSettled(scripts.map(load));if(!window.GnammaHadithContextData?.notes)throw Error('Hadith source index is missing');return {data:window.GnammaHadithContextData,reports:window.GnammaHadithReports||{},failed:result.filter(x=>x.status==='rejected').length};}
+async function corpus(){const first=await Promise.allSettled(scripts.slice(0,-1).map(load));const last=await Promise.allSettled([load(scripts[scripts.length-1])]);if(!window.GnammaHadithContextData?.notes)throw Error('Hadith source index is missing');return {data:window.GnammaHadithContextData,reports:window.GnammaHadithReports||{},failed:first.concat(last).filter(x=>x.status==='rejected').length};}
 function outbound(text,url){const a=mk('a','gn-hadith-source-link',text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;}
 function label(host,key,value,lang){if(!value)return;const p=mk('p','gn-hadith-meta');p.append(mk('strong',null,key+': '));const v=mk('span',null,value);if(lang){v.lang=lang;v.dir='rtl';}p.append(v);host.append(p);}
 function reportCard(key,cite,report,index){
