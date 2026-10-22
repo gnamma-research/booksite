@@ -34,6 +34,12 @@
   if(expected.join('-')!==packet.components.join('-'))fail("packet components disagree with edition");
   if(!Array.isArray(packetMap.components)||packetMap.components.join('-')!==expected.join('-'))
     fail("packet map disagrees with PDF components");
+  const style=base.design_style_id||'gnamma-a4-v1';
+  if((row.design_style_id||'gnamma-a4-v1')!==style||
+     (packet.design_style_id||'gnamma-a4-v1')!==style||
+     (packetMap.design_style_id||'gnamma-a4-v1')!==style||
+     (profileMap.design_style_id||'gnamma-a4-v1')!==style)
+    fail("source body, appendix CSS and edition links belong to different design families");
   if(base.sha256!==row.base_sha256)fail("published source PDF digest does not match selected edition");
   if(row.source_base!==base.file)fail("wrong base edition");
   if(baseMap.source_sha256!==base.sha256||baseMap.base_sha256!==base.sha256)
@@ -129,6 +135,21 @@
   const baseCount=result.getPageCount(),components=packetManifestRecord.components;
   if(packetDoc.getPageCount()!==packetManifestRecord.pages)fail("packet pagination mismatch");
   if(Number(baseManifestRecord.pages)!==baseCount)fail("published base pagination mismatch");
+  if(Number(profile.pages)!==baseCount+packetDoc.getPageCount()||
+     Number(profileMap.pages)!==profile.pages)
+    fail("signed edition has incorrect source and apparatus pagination");
+  // Text layout belongs to the SOURCE PDF. A different paper size or
+  // print design needs its own rendered packet; blindly attaching A4
+  // appendices to an A5/landscape source would destroy print coherence.
+  const printSize=result.getPage(0);
+  const size=[printSize.getWidth(),printSize.getHeight()];
+  const matchesSheet=page=>
+    Math.abs(page.getWidth()-size[0])<=0.1 &&
+    Math.abs(page.getHeight()-size[1])<=0.1;
+  for(const page of result.getPages())
+    if(!matchesSheet(page))fail("mixed source page dimensions need a separately approved design");
+  for(const page of packetDoc.getPages())
+    if(!matchesSheet(page))fail("apparatus packet paper size differs from the source design");
   result._gnLib=lib;
   const imported=await result.copyPages(packetDoc,[...Array(packetDoc.getPageCount()).keys()]);
   for(const page of imported){
