@@ -1,0 +1,94 @@
+name: Daruri exact PDF source §65 inline-call repair proof
+on:
+  push:
+    branches: [qa/daruri-vowelled-pdfkit-ab-20261022]
+    paths:
+      - '.github/workflows/daruri-section65-split-source-proof.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: macos-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: scholarly
+            source: daruri.pdf
+            map: personal-source-pango-maps/daruri.pdf.json
+          - id: study
+            source: editions/study/daruri-study-bilingual-titles-off.pdf
+            map: editions/maps/daruri-study-bilingual-titles-off.pdf.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: Build glyph-preserving source semantics with §65 split-run suppression
+        run: |
+          python -m py_compile daruri/qa/experimental_original_char_unicode.py
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/${{ matrix.source }} \
+            --map daruri/${{ matrix.map }} \
+            --output /tmp/daruri-${{ matrix.id }}-allruns.pdf \
+            --scalar-harakat --scalar-mark-fraction 0.30 --all-source-runs
+      - name: Native Apple PDFKit 414/414 vowelled search + exact position + copy
+        run: |
+          swift daruri/qa/verify_char_unicode_pdfkit.swift \
+            /tmp/daruri-${{ matrix.id }}-allruns.pdf \
+            daruri/${{ matrix.map }}
+  crossengine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: scholarly
+            source: daruri.pdf
+            map: personal-source-pango-maps/daruri.pdf.json
+          - id: study
+            source: editions/study/daruri-study-bilingual-titles-off.pdf
+            map: editions/maps/daruri-study-bilingual-titles-off.pdf.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - name: Build temporary exact authorial Arabic semantics with no PDF replacement
+        run: |
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/${{ matrix.source }} \
+            --map daruri/${{ matrix.map }} \
+            --output /tmp/daruri-${{ matrix.id }}-allruns.pdf \
+            --scalar-harakat --scalar-mark-fraction 0.30 --all-source-runs
+      - name: Strict source search, source positions, copy, notes/link/pixel parity
+        run: |
+          python daruri/qa/verify_char_unicode_profiles.py \
+            --source daruri/${{ matrix.source }} \
+            --candidate /tmp/daruri-${{ matrix.id }}-allruns.pdf \
+            --map daruri/${{ matrix.map }} \
+            --report /tmp/daruri-${{ matrix.id }}-allruns.json
+          python - <<'PY'
+          import glob,json
+          rows=json.load(open(glob.glob('/tmp/daruri-*-allruns.json')[0]))['tests']
+          for key in ('pymupdf_native_single_words','pymupdf_native_two_word_phrases','pymupdf_pair_search_source_position','pymupdf_extracted_source'):
+            assert rows[key]==414,(key,rows[key])
+          assert rows['copy_regions_clean']==18,rows
+          assert rows['pixel_identical']==rows['pages'],rows
+          assert rows['semantic_link_pages_equal']==rows['pages'],rows
+          assert rows['source_section_anchors_equal']==258,rows
+          print('STRICT_ALLRUNS_QA_PASS',rows)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: section65-${{ matrix.id }}-passages-QA
+          path: /tmp/daruri-${{ matrix.id }}-allruns.json
+          if-no-files-found: warn
+          retention-days: 14
