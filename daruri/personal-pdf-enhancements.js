@@ -177,8 +177,7 @@
     // Testing unsubsetted fonts for correct Arabic glyph-to-Unicode mapping;
     // visible appendix type is separately rendered on the canvas.
     const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:true})));
-    const actualTextAnchor=await pdf.embedFont(window.PDFLib.StandardFonts.Helvetica);
-    return {latin,arabic,actualTextAnchor,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
+    return {latin,arabic,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
   }
   function fontRuns(text,fonts,size){
     const runs=[];let last=null;
@@ -196,10 +195,7 @@
       // Apple PDFKit needs these continuous Arabic runs for text search.
       // Android PDFium gets a separate exact-Unicode ActualText fallback in
       // textOverlay, avoiding the native glyph attribution problem there.
-      // Invisible searchable layer: one Arabic codepoint per fontkit run.
-      // Fontkit's contextual Arabic glyph clustering otherwise produces
-      // non-Unicode control characters in PDF.js/PDFKit extraction.
-      if(last?.font===font && font!==fonts.arabic)last.text+=ch;
+      if(last?.font===font)last.text+=ch;
       else {last={font,text:ch};runs.push(last);}
     }
     return runs.map(x=>({...x,width:x.font.widthOfTextAtSize(x.text,size)}));
@@ -262,14 +258,15 @@
     for(const line of searchLines){
       const s=String(line.text||'');if(!s.trim())continue;
       const size=Math.max(8,Math.min(18,(line.size||26)/2));
-      const runs=fontRuns(s,fonts,size);
-      if(!runs.length)continue;
+      // Arabic runs use the independent Type3 /ToUnicode text layer below;
+      // fontkit shaping corrupts their searchable character mapping.
+      const runs=fontRuns(s.replace(ARABIC_SEARCH_SPANS,' '),fonts,size);
+      // Arabic-only lines may legitimately have no Latin glyph runs.
       const width=runs.reduce((a,r)=>a+r.width,0);
       let x=(line.rtl?(W-pad)/2-width:(pad+(line.indent||0))/2);
       const y=(H-line.y)/2;
-      // Retain the tested original Unicode layer for PDFKit and PDF.js.
-      // The extra Arabic fallback below is invisible, deliberately separate,
-      // and does not change the canvas-rendered scholarly typography.
+      // The Latin layer has stable ToUnicode mapping. The separately
+      // constructed Type3 font handles exact Arabic characters.
       for(const run of runs){
         if(run.text){page.drawText(run.text,{x,y,size,font:run.font,opacity:0});n++;}
         x+=run.width;
@@ -278,31 +275,6 @@
         const spans=[...s.matchAll(ARABIC_SEARCH_SPANS)];
         for(let i=0;i<spans.length;i++){
           drawExactArabicSearch(page,exactFont,spans[i][0],12+i*13,y-38,size);
-          n++;
-        }
-      }
-      if(/[\u0600-\u08FF]/u.test(s)){
-        const arabicChunks=s.match(/[\u0600-\u08FF][\u0600-\u08FF\s.,،؛؟!—-]*/gu)||[];
-        const arabic=arabicChunks.map(v=>v.trim()).filter(Boolean).join(' ')
-          .normalize('NFD').replace(/\p{M}/gu,'');
-        const latin=s.replace(/[\u0600-\u08FF][\u0600-\u08FF\s.,،؛؟!—-]*/gu,' ')
-          .replace(/\s+/g,' ').trim();
-        if(arabic){
-          // PDFium's RTL marked-content /ActualText algorithm reverses Arabic
-          // strings during extraction. Supplying reversed Unicode produces
-          // correct logical Arabic on Android, while the visible original text
-          // and the original Unicode layer remain unchanged for other readers.
-          // Separate baselines prevent PDFium from reversing mixed Latin runs.
-          const {PDFOperator,PDFName,PDFHexString}=window.PDFLib;
-          const rtl=Array.from(arabic).reverse().join('');
-          page.pushOperators(PDFOperator.of('BDC',[PDFName.of('Span'),
-            pdf.context.obj({ActualText:PDFHexString.fromText(rtl)})]));
-          page.drawText('A',{x:12,y:y-13,size,font:fonts.actualTextAnchor,opacity:0});
-          page.pushOperators(PDFOperator.of('EMC'));
-          n++;
-        }
-        if(latin){
-          page.drawText(latin,{x:12,y:y-28,size,font:fonts.latin,opacity:0});
           n++;
         }
       }
