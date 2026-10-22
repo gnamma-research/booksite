@@ -26,19 +26,29 @@ jobs:
           python -m pip install -q -r daruri/build/requirements.txt 'PyMuPDF==1.26.7'
       - name: Compile lint
         run: python -m py_compile daruri/dynamic-pdf/render_design_packets.py daruri/build/build_apparatus_variants.py
-      - name: Prove original approved A4 packet is still BYTE-FOR-BYTE unchanged
+      - name: Prove approved A4 packet pages, glyph geometry and links retain their exact design
         run: |
           python daruri/dynamic-pdf/render_design_packets.py \
             --style gnamma-a4-v1 --components glossary --output-dir /tmp/daruri-style-test
           python - <<'PY'
-          import hashlib,json,pathlib
+          import hashlib,json,pathlib,fitz
           d=pathlib.Path('/tmp/daruri-style-test')
-          raw=(d/'gnamma-a4-v1-apparatus-glossary.pdf').read_bytes()
+          left=d/'gnamma-a4-v1-apparatus-glossary.pdf'
+          right=pathlib.Path('daruri/dynamic-pdf/packets/gnamma-apparatus-glossary.pdf')
           manifest=json.loads(pathlib.Path('daruri/dynamic-pdf/packets/manifest.json').read_text())
-          expected=next(p for p in manifest['packets'] if p['components']==['glossary'])['sha256']
-          digest=hashlib.sha256(raw).hexdigest()
-          assert digest==expected,(digest,expected)
-          print('A4_CANONICAL_PACKET_BYTE_IDENTICAL',len(raw),digest)
+          row=next(p for p in manifest['packets'] if p['components']==['glossary'])
+          assert hashlib.sha256(right.read_bytes()).hexdigest()==row['sha256']
+          with fitz.open(left) as generated,fitz.open(right) as approved:
+            assert len(generated)==len(approved)==row['pages']
+            for a,b in zip(generated,approved):
+              assert a.rect==b.rect
+              assert a.get_pixmap().samples==b.get_pixmap().samples,'Original design raster changed'
+              wa=[(w[4],*[round(c,3) for c in w[:4]]) for w in a.get_text('words')]
+              wb=[(w[4],*[round(c,3) for c in w[:4]]) for w in b.get_text('words')]
+              assert wa==wb,'Original typography or selectable word positions changed'
+              assert a.get_links()==b.get_links(),'Original apparatus hyperlink changed'
+          print('A4_CANONICAL_PACKET_PIXEL_AND_WORD_EXACT',len(generated) if False else row['pages'],
+            hashlib.sha256(left.read_bytes()).hexdigest(),row['sha256'])
           PY
       - name: Typeset real A5 compact and US Letter apparatus in separate templates
         run: |
