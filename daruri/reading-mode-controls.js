@@ -76,7 +76,7 @@ function create({state,rd}){
   // midpoint probe can jump into an adjacent paragraph on mobile Safari.
   const y=Math.round(Math.max(top+35,Math.min(dockTop-38,top+(dockTop-top)*.22)));
   const x=Math.round(window.innerWidth/2);
-  let grid=document.elementFromPoint(x,y)?.closest?.('#reader .passage-grid')||null;
+  let grid=document.elementFromPoint?.(x,y)?.closest?.('#reader .passage-grid')||null;
   if(!grid){
    // The anchor may fall between two text blocks. Search only as a fallback.
    let best=Infinity;
