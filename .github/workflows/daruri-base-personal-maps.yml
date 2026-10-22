@@ -2,10 +2,13 @@ name: Daruri exact base section and source-word maps
 on:
   workflow_dispatch:
   push:
-    branches: [feature/daruri-two-tabs-inline-pdf-20261022]
+    branches: [master, feature/daruri-two-tabs-inline-pdf-20261022]
     paths:
       - '.github/workflows/daruri-base-personal-maps.yml'
       - 'daruri/build/build_base_personal_maps.py'
+      - 'daruri/editions/manifest.json'
+      - 'daruri/editions/reading/**'
+      - 'daruri/editions/study/**'
 permissions:
   contents: write
 concurrency:
