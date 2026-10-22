@@ -1,0 +1,48 @@
+name: Daruri approved PDF link-reference snapshots
+
+on:
+  push:
+    branches: [qa/daruri-dynamic-links-20261022]
+    paths:
+      - '.github/workflows/daruri-approved-link-evidence.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  approved-baselines:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify baselines unchanged and snapshot exact approved PDFs
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          root = Path('daruri/editions/apparatus')
+          manifest = json.loads((root / 'manifest.json').read_text())
+          choices = {
+            'daruri-reading-bilingual-glossary.pdf',
+            'daruri-reading-english-index-concordance.pdf',
+            'daruri-study-bilingual-glossary-index-concordance-applications-titles-on.pdf',
+          }
+          records = [r for r in manifest['files'] if r['filename'] in choices]
+          assert len(records) == len(choices), 'Missing approved exact reference files'
+          for record in records:
+              p = root / record['filename']
+              binary = p.read_bytes()
+              digest = hashlib.sha256(binary).hexdigest()
+              assert digest == record['sha256'], (p, digest, record['sha256'])
+              print('APPROVED', p, 'SHA256', digest, 'BYTES', len(binary))
+          PY
+          mkdir -p /tmp/daruri-link-baselines
+          cp daruri/editions/apparatus/daruri-reading-bilingual-glossary.pdf /tmp/daruri-link-baselines/
+          cp daruri/editions/apparatus/daruri-reading-english-index-concordance.pdf /tmp/daruri-link-baselines/
+          cp daruri/editions/apparatus/daruri-study-bilingual-glossary-index-concordance-applications-titles-on.pdf /tmp/daruri-link-baselines/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daruri-three-approved-pdf-link-baselines
+          path: /tmp/daruri-link-baselines/*.pdf
+          if-no-files-found: error

@@ -1,0 +1,81 @@
+name: Daruri dynamic personal PDF mobile browser integration
+
+on:
+  push:
+    branches: [qa/daruri-dynamic-links-20261022]
+    paths:
+      - 'daruri/qa/verify_dynamic_personal_browser.cjs'
+      - '.github/workflows/daruri-dynamic-personal-browser-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: audit
+      - uses: actions/checkout@v4
+        with:
+          ref: 2dfc1e716f36e6cee32c6a45705917a6acf8d43c
+          path: booksite
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install local PDF parser and browser engines
+        run: |
+          npm install --no-save --no-package-lock --prefix booksite/daruri/qa playwright@1.56.1 pdf-lib@1.17.1
+          cd booksite/daruri/qa
+          if [ "${{ matrix.browser }}" = "chromium" ]; then
+            if command -v google-chrome >/dev/null 2>&1; then
+              google-chrome --version
+              echo 'GNAMMA_CHROME_CHANNEL=chrome' >> "$GITHUB_ENV"
+            else
+              npx playwright install --with-deps --only-shell chromium
+            fi
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Create a personal PDF from a dynamically assembled apparatus PDF
+        env:
+          GNAMMA_SITE_ROOT: ${{ github.workspace }}/booksite
+          GNAMMA_BROWSER: ${{ matrix.browser }}
+          GNAMMA_DYNAMIC_BROWSER_OUTPUT: /tmp/daruri-browser-${{ matrix.browser }}.pdf
+        run: node audit/daruri/qa/verify_dynamic_personal_browser.cjs
+      - name: Inspect output for semantic searchable P-note text and source destinations
+        run: |
+          python -m pip install -q "PyMuPDF==1.26.7"
+          python - <<'PY'
+          import fitz,os,json
+          name='${{ matrix.browser }}'
+          target='/tmp/daruri-browser-'+name+'.pdf'
+          with fitz.open(target) as d:
+              assert d.page_count>86
+              appendix=''.join(p.get_text() for p in list(d)[86:])
+              assert 'QQ-7744' in appendix, 'Missing searchable synthetic personal note'
+              assert 'Standalone original' in appendix, 'Standalone note was dropped'
+              all_links=sum(len(p.get_links()) for p in d)
+              assert all_links>=1069, 'Source apparatus links lost'
+              print('MOBILE_BROWSER_RESULT',name,d.page_count,'pages,',all_links,'links')
+          PY
+      - name: Retain synthetic PDF and test statistics for diagnosis
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-dynamic-personal-${{ matrix.browser }}
+          path: |
+            /tmp/daruri-browser-${{ matrix.browser }}.pdf
+            /tmp/daruri-browser-${{ matrix.browser }}.pdf.json
+          retention-days: 10
+          if-no-files-found: warn
