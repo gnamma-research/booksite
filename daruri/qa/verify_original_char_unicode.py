@@ -101,13 +101,14 @@ def run(input_pdf, candidate, mapping, report):
                     fitz.Rect(b).intersects(expected) for b in boxes))
                 if not boxes and len(failures) < 30:
                     failures.append((section,"two-word-native-search"))
-            if len(prefix) >= 4:
-                native_search_4 += bool(repaired[num-1].search_for(" ".join(prefix[:4])))
+            # One of the 414 authorial segments has fewer than four words.
+            # Probe up to four instead of silently treating the short segment as a miss.
+            native_search_4 += bool(repaired[num-1].search_for(" ".join(prefix[:4])))
 
         result["tests"].update({
             "all_segment_extraction": f"{extracted}/414",
             "two_word_native_search": f"{native_search_2}/414",
-            "four_word_native_search": f"{native_search_4}/414",
+            "up_to_four_word_native_search": f"{native_search_4}/414",
             "two_word_search_source_geometry": f"{native_bbox_2}/414",
         })
 
