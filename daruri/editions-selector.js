@@ -246,8 +246,13 @@
     root.querySelector('#gn-es-custom').hidden=tab==='reference'||!customOpen;
     root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen&&tab!=='reference'));
     root.querySelector('[data-es-reference-inventory]').hidden=tab!=='reference';
-    for(const button of root.querySelectorAll('[data-es-preset]'))
+    for(const button of root.querySelectorAll('[data-es-preset]')){
       button.setAttribute('aria-pressed',String(button.dataset.esPreset===preset));
+      // Never silently change an English-only or unvowelled selection to
+      // bilingual merely because the reader asks for a Study preset.
+      if(button.dataset.esPreset==='study')
+        button.disabled=!(s.en&&s.ar&&s.vowels);
+    }
     for(const b of root.querySelectorAll('[data-es-toggle]')){
       const key=b.dataset.esToggle;
       b.setAttribute('aria-pressed',String(Boolean(s[key])));
@@ -262,8 +267,10 @@
       tier==='study'?'Study notes are currently prebuilt only in vowelled bilingual PDFs.':
       'Select English, Arabic or both; AR vowel marks are optional.';
     root.querySelector('[data-es-preset-note]').textContent=
+      !(s.en&&s.ar&&s.vowels)&&tab==='reading'?
+        'Study notes are currently published only in bilingual vowelled form; your language choice is preserved.':
       preset==='study'?'Selected publisher notes and a basic index are included.':
-      preset==='custom'?'Fine-tune the publisher notes and apparatus using Customize edition.':
+      preset==='custom'?'Fine-tune publisher notes and apparatus using Customize edition.':
       'A clean A4 reading edition with no publisher notes.';
     for(const b of root.querySelectorAll('[data-es-publisher]'))
       b.setAttribute('aria-pressed',String(b.dataset.esPublisher===s.notes));
@@ -329,6 +336,7 @@
   }
   function presetSelect(which){
     if(which==='study'){
+      if(!(current().en&&current().ar&&current().vowels))return;
       tab='reading';tier='study';Object.assign(state.study,BASE.study);
       preset='study';customOpen=false;
     }else if(which==='reading'){
