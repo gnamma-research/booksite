@@ -1,9 +1,11 @@
 name: Daruri generated PDF strict browser operational release gate
 on:
   push:
-    branches: [integration/daruri-generated-safety-20261022]
+    branches: [integration/daruri-generated-worker-20261022]
     paths:
       - 'daruri/dynamic-pdf/client.js'
+      - 'daruri/dynamic-pdf/core.js'
+      - 'daruri/dynamic-pdf/assemble.worker.js'
       - 'daruri/dynamic-editions.html'
       - 'daruri/personal-export.js'
       - 'daruri/qa/verify_dynamic_cancel_identity.cjs'
@@ -50,6 +52,8 @@ jobs:
       - name: Source lint and syntax checks
         run: |
           node --check booksite/daruri/dynamic-pdf/client.js
+          node --check booksite/daruri/dynamic-pdf/core.js
+          node --check booksite/daruri/dynamic-pdf/assemble.worker.js
           node --check booksite/daruri/personal-export.js
           node --check booksite/daruri/qa/verify_dynamic_cancel_identity.cjs
           node --check booksite/daruri/qa/verify_dynamic_negative_paths.cjs
