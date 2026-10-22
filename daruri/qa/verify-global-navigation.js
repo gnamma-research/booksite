@@ -12,7 +12,11 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const html = fs.readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf8');
-const script = html.slice(html.lastIndexOf('<script>') + 8, html.lastIndexOf('</script>'));
+const appScriptStart=html.indexOf("<script>\n(() => {\n'use strict';\nconst BOOK");
+assert.ok(appScriptStart>=0,'Embedded Daruri reader script not found');
+const appScriptEnd=html.indexOf('</script>',appScriptStart);
+assert.ok(appScriptEnd>appScriptStart,'Embedded reader script has no end tag');
+const script=html.slice(appScriptStart+'<script>'.length,appScriptEnd);
 new vm.Script(script, {filename:'daruri/index.html'});
 
 // Let the JavaScript parser identify the complete function. A textual brace
