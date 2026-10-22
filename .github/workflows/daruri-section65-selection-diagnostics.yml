@@ -1,0 +1,64 @@
+name: Daruri section-65 native Arabic selection root-cause bundle
+on:
+  push:
+    branches: [qa/daruri-vowelled-pdfkit-ab-20261022]
+    paths:
+      - '.github/workflows/daruri-section65-selection-diagnostics.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: Build isolated original glyph-preserving scalar semantic source
+        run: |
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/daruri.pdf \
+            --map daruri/personal-source-pango-maps/daruri.pdf.json \
+            --output /tmp/scholarly-scalar-030-NONRELEASE.pdf \
+            --scalar-harakat --scalar-mark-fraction 0.30
+      - name: Locate original §65:1 expected word rectangles and compare extracted blocks
+        run: |
+          python - <<'PY'
+          import fitz,json
+          pdf='/tmp/scholarly-scalar-030-NONRELEASE.pdf'
+          src='daruri/daruri.pdf'
+          mapdata=json.load(open('daruri/personal-source-pango-maps/daruri.pdf.json'))
+          k='65:1:vocalized'
+          words=mapdata['segments'][k]
+          print('SOURCE_SEGMENT', k, len(words),words[:12])
+          n=words[0][1]
+          with fitz.open(src) as a,fitz.open(pdf) as b:
+            orig=a[n-1];new=b[n-1]
+            box=fitz.Rect(words[0][2:6])
+            for w in words[1:6]:
+              if w[1]==n:box.include_rect(fitz.Rect(w[2:6]))
+            box.x0-=8;box.y0-=10;box.x1+=8;box.y1+=10
+            print('SOURCE_PAGE',n,'BOX',tuple(box))
+            print('BASELINE_EXTRACT',repr(orig.get_textbox(box)))
+            print('CANDIDATE_EXTRACT',repr(new.get_textbox(box)))
+            for q in ['وَفِي أَلْفَاظِهِ','وَفِي','أَلْفَاظِهِ']:
+              print('MU_SEARCH',repr(q),[tuple(r) for r in new.search_for(q)])
+            print('ORIG_SEARCH',orig.search_for('وَفِي أَلْفَاظِهِ'))
+            clip=fitz.Rect(box.x0-35,box.y0-30,box.x1+35,box.y1+30)
+            pix=orig.get_pixmap(matrix=fitz.Matrix(2,2),clip=clip,alpha=False)
+            pix.save('/tmp/section65-source-crop.png')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-section65-selection-nonrelease
+          path: |
+            /tmp/scholarly-scalar-030-NONRELEASE.pdf
+            /tmp/section65-source-crop.png
+            daruri/daruri.pdf
+            daruri/personal-source-pango-maps/daruri.pdf.json
+          retention-days: 5
+          if-no-files-found: warn
