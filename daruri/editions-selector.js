@@ -24,7 +24,7 @@
   let tier='reading',preset='reading',tab='pdf',customOpen=false;
   let catalog=null,addon=null,reference=null,baseMaps=null,root=null,requestId=0;
   let personalReady=false,selectedFile='',selectedRow=null;
-  let preparedPdf=null,preparing=false;
+  let preparedPdf=null,preparing=false,prepareAbort=null,downloadError='';
   const esc=value=>String(value??'').replace(/[&<>"']/g,
     c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const iconPaths={
@@ -250,6 +250,76 @@
     const bridge=window.GnammaPersonalExportInline;
     if(!bridge?.ready)return false;
     return bridge.choose(file);
+  }
+  function resetPrepared(){
+    if(prepareAbort){prepareAbort.abort();prepareAbort=null;}
+    preparing=false;
+    downloadError='';
+    if(preparedPdf){URL.revokeObjectURL(preparedPdf.url);preparedPdf=null;}
+  }
+  function pdfName(file){
+    return file.split('/').pop().replace(/[^a-zA-Z0-9._-]/g,'_');
+  }
+  async function preparePdf(){
+    const selection=resolve(),file=publicFile(selection);
+    if(preparing||tab!=='pdf'||hasPersonal()||selection.status!=='ready'||!file)return;
+    if(preparedPdf&&preparedPdf.file===file){refresh();return;}
+    resetPrepared();
+    const controller=new AbortController();
+    prepareAbort=controller;
+    preparing=true;
+    const button=root.querySelector('[data-es-prepare]');
+    const meter=button.querySelector('progress');
+    meter.value=0;meter.removeAttribute('value'); // Unknown until real transfer bytes arrive.
+    refresh();
+    try{
+      const expected=Number(selection.record.bytes||selection.record.size_bytes||0);
+      const url=file+'?v='+encodeURIComponent((selection.record.sha256||'published').slice(0,12));
+      const response=await fetch(url,{signal:controller.signal,cache:'no-store',credentials:'same-origin'});
+      if(!response.ok)throw Error('The selected PDF could not be retrieved (HTTP '+response.status+').');
+      const size=Number(response.headers.get('content-length'))||expected;
+      const chunks=[];
+      let loaded=0;
+      if(response.body&&response.body.getReader){
+        const reader=response.body.getReader();
+        while(true){
+          const {done,value}=await reader.read();
+          if(done)break;
+          chunks.push(value);loaded+=value.length;
+          if(size>0){
+            meter.value=Math.min(100,Math.floor(100*loaded/size));
+            meter.setAttribute('aria-valuetext',Math.floor(100*loaded/size)+'% downloaded');
+          }
+        }
+      }else{
+        const buf=new Uint8Array(await response.arrayBuffer());
+        chunks.push(buf);loaded=buf.length;
+      }
+      const bytes=new Uint8Array(loaded);
+      let offset=0;
+      for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.length;}
+      if(expected&&loaded!==expected)throw Error('The published PDF size did not match its catalogue.');
+      if(new TextDecoder().decode(bytes.slice(0,5))!=='%PDF-')
+        throw Error('The downloaded file was not a PDF.');
+      const sha=String(selection.record.sha256||'').toLowerCase();
+      if(/^[a-f0-9]{64}$/.test(sha)&&window.crypto?.subtle){
+        const hash=await window.crypto.subtle.digest('SHA-256',bytes);
+        const actual=Array.from(new Uint8Array(hash),v=>v.toString(16).padStart(2,'0')).join('');
+        if(actual!==sha)throw Error('The PDF checksum did not match this edition. Reload and try again.');
+      }
+      if(controller.signal.aborted||root?.querySelector('[data-es-prepare]')!==button||
+         selectedFile!==file)return;
+      const objectURL=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
+      preparedPdf={file,url:objectURL,name:pdfName(file)};
+    }catch(error){
+      if(!controller.signal.aborted)downloadError=String(error?.message||error);
+    }finally{
+      if(prepareAbort===controller){
+        prepareAbort=null;preparing=false;
+        if(meter)meter.value=100;
+        refresh();
+      }
+    }
   }
   function refresh(){
     if(!root?.isConnected)return;
@@ -519,6 +589,7 @@
     }
   }
   function mount(main){
+    resetPrepared();
     const legacy=main.querySelector('.gn-editions');
     if(!legacy)return;
     main.querySelector('.gn-es')?.remove();
