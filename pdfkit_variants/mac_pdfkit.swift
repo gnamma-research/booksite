@@ -13,9 +13,19 @@ for name in variants{
  }
  let terms=["مقدمة","التحليل","العلوم الدقيقة","والتحليل","Des idées françaises","P1"]
  var rec:[String:Any]=["variant":name,"pages":doc.pageCount]
+ let appendix=doc.page(at:doc.pageCount-1)?.string ?? ""
+ let textScalars=appendix.unicodeScalars.map{String(format:"%04X",$0.value)}
+ rec["appendix_text_preview"]=String(appendix.prefix(900))
+ rec["appendix_scalars"]=textScalars.prefix(220).joined(separator:" ")
+ rec["appendix_length"]=appendix.count
+ rec["reversedSearch"]=count(doc,String("التحليل".reversed()))
+ rec["containsArabicPageString"]=appendix.unicodeScalars.contains{($0.value>=0x600 && $0.value<=0x6FF)}
+ 
  for term in terms {rec[term]=count(doc,term)}
  result.append(rec)
  print("\(name) \(terms.map{$0 + "="+String(rec[$0] as? Int ?? -1)}.joined(separator:" "))")
+ print("PREVIEW_"+name+":"+String(appendix.prefix(400)))
+ 
 }
 let bytes=try! JSONSerialization.data(withJSONObject:result,options:[.prettyPrinted,.sortedKeys])
 try! bytes.write(to: URL(fileURLWithPath:"\(dir)/macos_pdfkit_results.json"))
