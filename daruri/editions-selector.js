@@ -6,7 +6,7 @@
   'use strict';
   if(!window.GnammaEditions||window.GnammaEditions.__publishedSelector)return;
   const oldRender=window.GnammaEditions.render;
-  const NAV=['reading','reference'];
+  const NAV=['pdf','offline'];
   const BASE={
     reading:{en:true,ar:true,vowels:true,headings:'original',notes:'none',
       glossary:'none',index:'none',applications:'off',concordance:'off'},
@@ -21,9 +21,10 @@
     study:{...BASE.study},
     reference:{...BASE.reference}
   };
-  let tier='reading',preset='reading',tab='reading',customOpen=false;
+  let tier='reading',preset='reading',tab='pdf',customOpen=false;
   let catalog=null,addon=null,reference=null,baseMaps=null,root=null,requestId=0;
   let personalReady=false,selectedFile='',selectedRow=null;
+  let preparedPdf=null,preparing=false;
   const esc=value=>String(value??'').replace(/[&<>"']/g,
     c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const iconPaths={
@@ -61,12 +62,12 @@
           if(typeof s[k]===typeof BASE[kind][k])state[kind][k]=s[k];
       }
       if(NAV.includes(raw.tab))tab=raw.tab;
+      else if(raw.tab==='reference'||raw.tab==='reading')tab='pdf';
       if(['reading','study','reference'].includes(raw.tier))tier=raw.tier;
       if(['reading','study','custom'].includes(raw.preset))preset=raw.preset;
       customOpen=Boolean(raw.customOpen);
       if(!current().en&&!current().ar)current().en=true;
-      if(tab==='reference')tier='reference';
-      if(tab==='reading'&&tier==='reference')tier='reading';
+      if(raw.tab==='reference')tier='reference';
     }catch(_){}
   }
   restore();
@@ -80,12 +81,21 @@
     icon(key)+'<span>'+esc(label)+'</span></button>';
   function shell(){
     return '<div class="gn-es-wrap">'+
-      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Editions</h1></header>'+
-      '<div class="gn-es-edition-tabs" role="tablist" aria-label="Edition type">'+
-        '<button type="button" class="gn-es-tab" id="gn-es-tab-reading" role="tab" aria-controls="gn-es-panel" data-es-nav="reading" aria-selected="true">Reading &amp; Study</button>'+
-        '<button type="button" class="gn-es-tab" id="gn-es-tab-reference" role="tab" aria-controls="gn-es-panel" data-es-nav="reference" aria-selected="false">Reference</button>'+
+      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Download a copy</h1><p>Choose a PDF edition or download the offline HTML reader.</p></header>'+
+      '<div class="gn-es-edition-tabs" role="tablist" aria-label="Download format">'+
+        '<button type="button" class="gn-es-tab" id="gn-es-tab-pdf" role="tab" aria-controls="gn-es-panel" data-es-nav="pdf" aria-selected="true">PDF editions</button>'+
+        '<button type="button" class="gn-es-tab" id="gn-es-tab-offline" role="tab" aria-controls="gn-es-panel" data-es-nav="offline" aria-selected="false">Offline reader</button>'+
       '</div>'+
-      '<section id="gn-es-panel" role="tabpanel" tabindex="0" aria-labelledby="gn-es-tab-reading">'+
+      '<section id="gn-es-panel" role="tabpanel" tabindex="0" aria-labelledby="gn-es-tab-pdf">'+
+      '<div data-es-pdf-panel>'+
+        '<div class="gn-es-setting gn-es-presets" data-es-presets>'+
+          '<span class="gn-es-setting-label">PDF edition</span><div class="gn-es-setting-body">'+
+            '<div class="gn-es-preset-options" role="group" aria-label="Starting edition">'+
+              '<button type="button" class="gn-es-preset" data-es-preset="reading" aria-pressed="true"><strong>Reading</strong><small>Clean text</small></button>'+
+              '<button type="button" class="gn-es-preset" data-es-preset="study" aria-pressed="false"><strong>Study</strong><small>Explanatory notes</small></button>'+
+              '<button type="button" class="gn-es-preset" data-es-preset="reference" aria-pressed="false"><strong>Reference</strong><small>Full apparatus</small></button>'+
+            '</div><span class="gn-es-inline-note" data-es-preset-note></span></div>'+
+        '</div>'+
         '<div class="gn-es-setting gn-es-setting-text">'+
           '<span class="gn-es-setting-label">Language</span>'+
           '<div class="gn-es-setting-body">'+
@@ -96,14 +106,6 @@
               '</div>'+
             '</div><span class="gn-es-inline-note" data-es-language-note></span>'+
           '</div></div>'+
-        '<div class="gn-es-setting gn-es-presets" data-es-presets>'+
-          '<span class="gn-es-setting-label">Start with</span><div class="gn-es-setting-body">'+
-            '<div class="gn-es-preset-options" role="group" aria-label="Starting edition">'+
-              '<button type="button" class="gn-es-preset" data-es-preset="reading" aria-pressed="true"><strong>Reading</strong><small>Clean text</small></button>'+
-              '<button type="button" class="gn-es-preset" data-es-preset="study" aria-pressed="false"><strong>Study</strong><small>Guided notes</small></button>'+
-              '<button type="button" class="gn-es-preset" data-es-preset="custom" aria-pressed="false"><strong>Custom</strong><small>Choose options</small></button>'+
-            '</div><span class="gn-es-inline-note" data-es-preset-note></span></div>'+
-        '</div>'+
         '<div class="gn-es-custom-head" data-es-custom-head>'+
           '<button type="button" class="gn-es-custom-trigger" data-es-custom aria-expanded="false" aria-controls="gn-es-custom">'+
           '<span>Customize edition</span>'+icon('chevron','gn-es-custom-arrow')+'</button></div>'+
@@ -161,18 +163,20 @@
               '</div>'+
             '</div></div>'+
           '<section class="gn-es-spec" aria-label="Current document configuration">'+
-            '<div class="gn-es-spec-head"><strong>Selected PDF</strong><span data-es-count></span></div>'+
+            '<div class="gn-es-spec-head"><strong>Your PDF</strong><span data-es-count></span></div>'+
             '<p class="gn-es-spec-lead" data-es-spec-lead></p>'+
             '<p class="gn-es-spec-layout" data-es-spec-layout></p>'+
             '<p class="gn-es-spec-notes" data-es-spec-notes></p>'+
             '<p class="gn-es-spec-apparatus" data-es-spec-apparatus></p>'+
           '</section>'+
           '<section class="gn-es-availability" aria-live="polite" aria-atomic="true">'+
-            '<strong data-es-availability-heading>Checking published PDFs…</strong><p data-es-availability-detail></p></section>'+
+            '<strong data-es-availability-heading>Checking PDF options…</strong><p data-es-availability-detail></p></section>'+
           '<div id="pe-alert" class="gn-es-inline-alert" role="status" hidden></div>'+
           '<p id="pe-description" class="gn-es-inline-note" hidden></p>'+
           '<div class="gn-es-actions">'+
-            '<a class="gn-es-action gn-es-action-primary" data-es-action="open" aria-label="Open exact published PDF" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Open PDF</span></a>'+
+            '<button type="button" class="gn-es-action gn-es-action-primary" data-es-prepare>Prepare PDF<span class="gn-es-button-progress" hidden><progress max="100" value="0" aria-label="PDF transfer progress"></progress></span></button>'+
+            '<a class="gn-es-action gn-es-action-primary" data-es-action="open" aria-label="Download prepared PDF" download hidden><span>Download PDF</span></a>'+
+            '<a class="gn-es-action gn-es-action-secondary" data-es-action="view" aria-label="Open prepared PDF" target="_blank" rel="noopener noreferrer" hidden>Open PDF</a>'+
             '<button class="gn-es-action gn-es-action-primary" type="submit" id="pe-generate" hidden disabled>Create my PDF</button>'+
           '</div>'+
           '<a id="pe-clean" hidden></a>'+
@@ -186,8 +190,14 @@
               '<button type="button" id="pe-share" hidden>Share on this device</button>'+
             '</div></div>'+
         '</form>'+
-        '<p class="gn-es-study-guide" data-es-study-guide hidden>'+
-          '<a href="daruri-study-guide.pdf?v=daruri6-sources-20261020" target="_blank" rel="noopener noreferrer">Study Guide PDF ↗</a></p>'+
+      '</div>'+
+      '<section class="gn-es-offline" data-es-offline hidden aria-label="Download the offline HTML reader">'+
+        '<h2>Offline reader (HTML)</h2>'+
+        '<p>Download the Arabic–English reader, dictionary and supporting files. Extract the ZIP, then open <strong>daruri/index.html</strong> in a desktop browser.</p>'+
+        '<div class="gn-es-offline-download"><a class="gn-es-action gn-es-action-primary" data-daruri-bundle="html" href="https://github.com/gnamma-research/booksite/archive/refs/heads/master.zip">Download offline reader (ZIP)</a><span class="gn-offline-bundle-status" role="status" aria-live="polite"></span></div>'+
+        '<p class="gn-es-offline-caveat">This download excludes PDFs. Local HTML behaviour varies by browser; external references and online services still need internet access. On iPhone or iPad, an installed website is generally more reliable than opening an HTML file from Files.</p>'+
+        '<details class="gn-es-offline-more"><summary>Need the PDFs too?</summary><p>The complete archive is larger and contains the reader and published PDFs.</p><div class="gn-es-offline-download"><a class="gn-es-action" data-daruri-bundle="full" href="https://github.com/gnamma-research/booksite/archive/refs/heads/master.zip">Download HTML and PDFs (ZIP)</a><span class="gn-offline-bundle-status" role="status" aria-live="polite"></span></div></details>'+
+      '</section>'+
       '</section></div>';
   }
   function apparatusLabel(s){
