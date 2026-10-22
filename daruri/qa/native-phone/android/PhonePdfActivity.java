@@ -105,13 +105,15 @@ public class PhonePdfActivity extends Activity {
       String normalized=Normalizer.normalize(txt,Normalizer.Form.NFD)
         .replaceAll("[\\p{M}\\p{Cf}\\s]+","");
       boolean ar=normalized.contains("مقدمة");
+      boolean arMixed=normalized.contains("التحليل");
       Log.i(TAG,"GNAMMA_ARABIC_DEBUG "+txt.substring(0,Math.min(700,txt.length()))
         .replace("\\n"," "));
       boolean p=txt.contains("P1");
-      put("searchEnglish",en);put("searchFrench",fr);put("searchArabic",ar);put("searchP",p);
+      put("searchEnglish",en);put("searchFrench",fr);put("searchArabic",ar);put("searchArabicMixed",arMixed);put("searchP",p);
       if(!en)error("Android native renderer cannot extract English note text");
       if(!fr)error("Android native renderer cannot extract accented French note text");
       if(!ar)error("Android native renderer cannot extract Arabic note text");
+      if(!arMixed)error("Android native renderer cannot search mixed Arabic/English note text");
       if(!p)error("Android native renderer cannot extract P1 reference text");
     }
     private void displayPage(int index){
