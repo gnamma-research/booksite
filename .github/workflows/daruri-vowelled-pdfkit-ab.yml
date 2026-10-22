@@ -4,6 +4,7 @@ on:
     branches: [qa/daruri-vowelled-pdfkit-ab-20261022]
     paths:
       - '.github/workflows/daruri-vowelled-pdfkit-ab.yml'
+      - 'daruri/qa/experimental_original_char_unicode.py'
   workflow_dispatch:
 permissions:
   contents: read
