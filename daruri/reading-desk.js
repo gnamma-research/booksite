@@ -470,7 +470,7 @@ function create(ctx){
   parts.push('<button type="button" class="gn-rd-card-open" data-rd="select" data-id="'+esc(r.id)+'" aria-label="View '+esc(itemType)+': '+esc(short(r.title||titleOf(r.target),95))+'">');
   parts.push('<span class="gn-rd-card-heading"><small>'+esc(grouped(r))+' · '+esc(subOf(r.target))+'</small><time title="'+esc(dateLine(r,true))+'">'+esc(dateLine(r))+'</time></span>');
   if(!isResolved(r))parts.push('<span class="gn-rd-unresolved-status" role="status">Source unavailable · saved content preserved</span>');
-  parts.push('<strong>'+esc(r.title||titleOf(r.target))+'</strong>');
+  parts.push('<span class="gn-rd-item-heading">'+(own?RD_ICON.note:r.kind==='quote'?RD_ICON.highlight:RD_ICON.bookmark)+'<strong>'+esc(r.title||titleOf(r.target))+'</strong></span>');
   if(own)parts.push('<span>'+esc(short(r.body,175))+'</span>');
   else if(relatedCount)parts.push('<span>'+relatedCount+' linked personal '+(relatedCount===1?'note':'notes')+'</span>');
   parts.push('</button></article>');
@@ -540,11 +540,11 @@ function create(ctx){
    parts.push('<div class="gn-rd-detail-actions" role="group" aria-label="Actions for this saved item">');
    if(bin)parts.push('<button type="button" class="gn-rd-detail-primary" data-rd="restore" '+itemId+'>Restore item</button>');
    else{
-    if(selected.kind==='note')parts.push('<button type="button" class="gn-rd-detail-primary" data-rd="edit" '+itemId+'>Edit note</button>');
+    if(selected.kind==='note')parts.push('<button type="button" class="gn-rd-detail-primary" data-rd="edit" '+itemId+'>'+RD_ICON.note+'<span>Edit note</span></button>');
     if(selected.target&&isResolved(selected)){
      parts.push('<button type="button" class="'+(selected.kind==='note'?'gn-rd-detail-secondary':'gn-rd-detail-primary')+
       '" data-rd="open" '+itemId+'>'+({footnote:'Open source note',dictionary:'Open dictionary entry',index:'Open index entry',application:'Open legal application',lesson:'Open lesson'}[selected.target.kind]||'Open in text')+'</button>');
-     if(selected.kind!=='note')parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="add-note" '+itemId+'>Add note</button>');
+     if(selected.kind!=='note')parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="add-note" '+itemId+'>'+RD_ICON.note+'<span>Add note</span></button>');
     }
     if(!isResolved(selected))parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="relink" '+itemId+'>Relink source</button>');
    }
@@ -817,7 +817,7 @@ function create(ctx){
      (r.kind==='note'?'<p>'+esc(short(r.body,230))+'</p>':'')+
      '<small>'+esc(dateLine(r))+'</small><div class="gn-rd-inline-actions">'+
      '<button type="button" data-rd="go-desk-item" data-id="'+esc(r.id)+'">Open in Reading Desk</button>'+
-     (r.kind==='note'?'<button type="button" data-rd="edit" data-id="'+esc(r.id)+'">Edit</button>':'')+
+     (r.kind==='note'?'<button type="button" data-rd="edit" data-id="'+esc(r.id)+'">'+RD_ICON.note+'<span>Edit note</span></button>':'')+
      '<button type="button" data-rd="trash-inline" data-id="'+esc(r.id)+'">Move to Bin</button></div></article>';
    }).join('')+'</div><footer><button type="button" data-rd="go-desk-passage" data-section="'+esc(sectionId)+'" data-segment="'+segment+'">View all for this paragraph</button></footer>';
   const holder=anchor.closest('.gn-rd-passage-tools')||anchor.parentElement;
