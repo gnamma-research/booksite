@@ -1,0 +1,124 @@
+name: Daruri HTML-only originals Unicode across MuPDF Poppler PDFium PDFjs and native PDFKit
+on:
+  push:
+    branches: [research/daruri-html-first-pdf-20261022]
+    paths:
+      - 'daruri/dynamic-pdf/html_first_all12.py'
+      - 'daruri/dynamic-pdf/html_pango_temporary_rebind.py'
+      - 'daruri/dynamic-pdf/verify_html_pdfium_414.py'
+      - '.github/workflows/daruri-html-original-unicode-acceptance.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-html-source-unicode-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  linux-source-unicode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        index: [0, 6, 8, 10]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: booksite
+      - uses: actions/checkout@v4
+        with:
+          path: proof
+          ref: 16eae94e1e8026d7c8d768ad8c2c56a6dc526898
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned source HTML rendering and native PDF text engines
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0 poppler-utils
+          python -m pip install -q -r booksite/daruri/build/requirements.txt 'PyMuPDF==1.26.7' 'pypdf==5.9.0' 'numpy>=1.26' 'scipy>=1.13' 'pypdfium2==5.8.0'
+          npm install --no-save --no-package-lock --prefix /tmp/gnpdfjs pdfjs-dist@5.4.394
+      - name: Resolve SHA-approved original design path from 12-item manifest
+        id: original
+        run: |
+          source_name=$(python -c 'import json,sys; j=json.load(open("booksite/daruri/editions/manifest.json")); print(j["files"][int(sys.argv[1])]["file"])' '${{ matrix.index }}')
+          echo "source=$source_name" >> "$GITHUB_OUTPUT"
+          echo "name=$(basename "$source_name")" >> "$GITHUB_OUTPUT"
+      - name: Generate original A4 PDF from HTML only, then certify every page
+        run: |
+          python booksite/daruri/dynamic-pdf/html_first_all12.py \
+            --index ${{ matrix.index }} \
+            --out /tmp/daruri-html-qa-${{ matrix.index }} \
+            --strict
+      - name: Verify 414-word-layout Pango map is identical before temporary QA rebinding
+        run: |
+          python booksite/daruri/dynamic-pdf/html_pango_temporary_rebind.py \
+            --approved proof/daruri/editions/${{ steps.original.outputs.source }} \
+            --generated /tmp/daruri-html-qa-${{ matrix.index }}/${{ steps.original.outputs.name }} \
+            --source-map proof/daruri/editions/maps/${{ steps.original.outputs.name }}.json \
+            --output-map /tmp/daruri-html-qa-${{ matrix.index }}/rebased-pango-414.json
+      - name: Apply experimental character-level Unicode postprocess to HTML-generated PDF
+        run: |
+          python proof/daruri/qa/experimental_original_char_unicode.py \
+            --input /tmp/daruri-html-qa-${{ matrix.index }}/${{ steps.original.outputs.name }} \
+            --map /tmp/daruri-html-qa-${{ matrix.index }}/rebased-pango-414.json \
+            --output /tmp/daruri-html-qa-${{ matrix.index }}/repaired-NONRELEASE.pdf \
+            --scalar-harakat --scalar-mark-fraction 0.30 --all-source-runs
+      - name: Measure all 414 original Arabic searches, copy, source positions, unchanged pixels and 258 anchors
+        run: |
+          python proof/daruri/qa/verify_char_unicode_profiles.py \
+            --source /tmp/daruri-html-qa-${{ matrix.index }}/${{ steps.original.outputs.name }} \
+            --candidate /tmp/daruri-html-qa-${{ matrix.index }}/repaired-NONRELEASE.pdf \
+            --map /tmp/daruri-html-qa-${{ matrix.index }}/rebased-pango-414.json \
+            --report /tmp/daruri-html-qa-${{ matrix.index }}/mupdf-poppler-414.json
+          python booksite/daruri/dynamic-pdf/verify_html_pdfium_414.py \
+            --source /tmp/daruri-html-qa-${{ matrix.index }}/${{ steps.original.outputs.name }} \
+            --candidate /tmp/daruri-html-qa-${{ matrix.index }}/repaired-NONRELEASE.pdf \
+            --map /tmp/daruri-html-qa-${{ matrix.index }}/rebased-pango-414.json \
+            --report /tmp/daruri-html-qa-${{ matrix.index }}/pdfium-414.json --strict
+      - name: Measure actual PDF.js text extraction for all Arabic passages
+        run: |
+          node proof/daruri/qa/experimental_original_pdfjs.cjs \
+            /tmp/daruri-html-qa-${{ matrix.index }}/repaired-NONRELEASE.pdf \
+            /tmp/daruri-html-qa-${{ matrix.index }}/rebased-pango-414.json \
+            /tmp/gnpdfjs | tee /tmp/daruri-html-qa-${{ matrix.index }}/pdfjs-extraction-414.json
+      - name: Keep nonreleased candidates and every engine's source-search evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-html-origin-original-arabic-${{ matrix.index }}-NONRELEASE
+          path: |
+            /tmp/daruri-html-qa-${{ matrix.index }}/repaired-NONRELEASE.pdf
+            /tmp/daruri-html-qa-${{ matrix.index }}/rebased-pango-414.json
+            /tmp/daruri-html-qa-${{ matrix.index }}/mupdf-poppler-414.json
+            /tmp/daruri-html-qa-${{ matrix.index }}/pdfium-414.json
+            /tmp/daruri-html-qa-${{ matrix.index }}/pdfjs-extraction-414.json
+            /tmp/daruri-html-qa-${{ matrix.index }}/html-source-acceptance.json
+          retention-days: 14
+          if-no-files-found: warn
+  native-macos-pdfkit:
+    needs: linux-source-unicode
+    if: always()
+    runs-on: macos-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        index: [0, 6, 8, 10]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 16eae94e1e8026d7c8d768ad8c2c56a6dc526898
+          path: proof
+      - uses: actions/download-artifact@v4
+        with:
+          name: daruri-html-origin-original-arabic-${{ matrix.index }}-NONRELEASE
+          path: /tmp/daruri-html-qa-${{ matrix.index }}/
+      - name: Require real native macOS PDFKit authorial Arabic phrase search and copy correctness
+        run: |
+          swift proof/daruri/qa/verify_char_unicode_pdfkit.swift \
+            /tmp/daruri-html-qa-${{ matrix.index }}/repaired-NONRELEASE.pdf \
+            /tmp/daruri-html-qa-${{ matrix.index }}/rebased-pango-414.json
