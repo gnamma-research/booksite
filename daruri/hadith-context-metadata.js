@@ -42,3 +42,10 @@ Object.assign(window.GnammaHadithReports["abudawud:2454"]||{}, {"chapter_en":"Th
 Object.assign(window.GnammaHadithReports["abudawud:66"]||{}, {"chapter_en":"What has been narrated concerning the well of Buḍāʿa","chapter_ar":"باب مَا جَاءَ فِي بِئْرِ بُضَاعَةَ","narrator":"Abū Saʿīd al-Khudrī"});
 Object.assign(window.GnammaHadithReports["abudawud:75"]||{}, {"chapter_en":"Water remaining after a cat has drunk","chapter_ar":"باب سُؤْرِ الْهِرَّةِ","narrator":"Abū Qatāda, through Kabsha bt. Kaʿb"});
 Object.assign(window.GnammaHadithReports["abudawud:650"]||{}, {"chapter_en":"Praying while wearing sandals","chapter_ar":"باب الصَّلاَةِ فِي النَّعْلِ","narrator":"Abū Saʿīd al-Khudrī"});
+
+/* Verified Tirmidhi kitāb/bāb headings for the uṣūl chain and evidence discussions. */
+Object.assign(window.GnammaHadithReports["tirmidhi:2658"]||{},{"chapter_en":"Encouragement to convey what one hears","chapter_ar":"باب مَا جَاءَ فِي الْحَثِّ عَلَى تَبْلِيغِ السَّمَاعِ","narrator":"ʿAbd Allāh b. Masʿūd"});
+Object.assign(window.GnammaHadithReports["tirmidhi:1180"]||{},{"chapter_en":"Housing and maintenance following three divorces","chapter_ar":"باب مَا جَاءَ فِي الْمُطَلَّقَةِ ثَلاَثًا لاَ سُكْنَى لَهَا وَلاَ نَفَقَةَ","narrator":"Fāṭima bt. Qays"});
+Object.assign(window.GnammaHadithReports["tirmidhi:691"]||{},{"chapter_en":"Fasting on the testimony of a witness","chapter_ar":"باب مَا جَاءَ فِي الصَّوْمِ بِالشَّهَادَةِ","narrator":"ʿAbd Allāh b. ʿAbbās"});
+Object.assign(window.GnammaHadithReports["tirmidhi:1327"]||{},{"chapter_en":"How a judge should decide a case","chapter_ar":"باب مَا جَاءَ فِي الْقَاضِي كَيْفَ يَقْضِي","narrator":"Unidentified companions of Muʿādh b. Jabal"});
+Object.assign(window.GnammaHadithReports["tirmidhi:1328"]||{},{"chapter_en":"How a judge should decide a case","chapter_ar":"باب مَا جَاءَ فِي الْقَاضِي كَيْفَ يَقْضِي","narrator":"Unnamed transmitters from Ḥimṣ, through Muʿādh"});
