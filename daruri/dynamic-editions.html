@@ -11,7 +11,7 @@
 <script defer src="personal-export.js?v=4"></script>
 <script defer src="vendor/pdf-lib-1.17.1.min.js"></script>
 <script defer src="dynamic-pdf/core.js?v=20261022-prototype3"></script>
-<script defer src="dynamic-pdf/client.js?v=20261022-prototype3"></script>
+<script defer src="dynamic-pdf/client.js?v=20261022-worker1"></script>
 <style>
 .gn-dyn-panel {border:1px solid #bbcac5;border-radius:12px;padding:22px;margin:1.25rem 0 2rem;background:color-mix(in srgb,#d4e2da 11%,white);}
 .gn-dyn-panel h2 {margin:0 0 12px;}
@@ -22,6 +22,7 @@
 .gn-dyn-result {font-size:.94rem;line-height:1.6;max-width:850px}
 .gn-dyn-result[data-error=true] {color:#9b352e}
 .gn-dyn-download {display:inline-block;margin:12px 0;font-weight:600;}
+.gn-dyn-download[hidden],.gn-dyn-actions [hidden] {display:none!important;}
 .gn-dyn-hint {font-size:.9rem;line-height:1.55;color:#52625d}
 </style>
 </head>
@@ -44,6 +45,7 @@
 <div class="gn-dyn-actions">
  <button type="button" id="gn-dyn-make" disabled>Generate PDF locally</button>
  <button type="button" id="gn-dyn-personal" disabled>Generate with my Reading Desk notes</button>
+ <button type="button" id="gn-dyn-cancel" aria-label="Cancel PDF generation" hidden>Cancel generation</button>
 </div>
 <p id="gn-dyn-status" class="gn-dyn-result" role="status" aria-live="polite">Checking publication files…</p>
 <a id="gn-dyn-download" class="gn-dyn-download" hidden>Download generated PDF</a>
