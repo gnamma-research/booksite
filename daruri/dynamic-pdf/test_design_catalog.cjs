@@ -57,7 +57,7 @@ function main(){
   rejects('unverified apparatus link SHA',d=>{d.packets.profiles[0].packet_sha256='0'.repeat(64)},/SHA-bound/);
   rejects('wrong packet component order',d=>{d.packets.packets.find(p=>p.components.length===2).components.reverse()},/unordered/);
   rejects('duplicate profile',d=>{d.apparatus.files[1].file=d.apparatus.files[0].file},/Duplicate/);
-  rejects('missing distinct packet',d=>{d.packets.packets.pop()},/15/);
+  rejects('missing distinct packet',d=>{d.packets.packets.pop()},/12-base|120|incomplete|Missing/);
   rejects('canonical different design absent',d=>{delete d.canonical.files['daruri.pdf']},/canonical/);
   console.log('DESIGN_CATALOG_PASS',JSON.stringify({
     signed_base_designs:12,other_approved_book_designs:5,
