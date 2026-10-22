@@ -176,7 +176,7 @@
     }));
     // Testing unsubsetted fonts for correct Arabic glyph-to-Unicode mapping;
     // visible appendix type is separately rendered on the canvas.
-    const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:false})));
+    const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:true})));
     const actualTextAnchor=await pdf.embedFont(window.PDFLib.StandardFonts.Helvetica);
     return {latin,arabic,actualTextAnchor,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
   }
@@ -196,7 +196,10 @@
       // Apple PDFKit needs these continuous Arabic runs for text search.
       // Android PDFium gets a separate exact-Unicode ActualText fallback in
       // textOverlay, avoiding the native glyph attribution problem there.
-      if(last?.font===font)last.text+=ch;
+      // Invisible searchable layer: one Arabic codepoint per fontkit run.
+      // Fontkit's contextual Arabic glyph clustering otherwise produces
+      // non-Unicode control characters in PDF.js/PDFKit extraction.
+      if(last?.font===font && font!==fonts.arabic)last.text+=ch;
       else {last={font,text:ch};runs.push(last);}
     }
     return runs.map(x=>({...x,width:x.font.widthOfTextAtSize(x.text,size)}));
