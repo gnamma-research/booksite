@@ -1,0 +1,112 @@
+name: Daruri PDF exact-parity certification (isolated)
+on:
+  push:
+    branches: ['experiment/production-pdf-parity-20261022']
+    paths:
+      - 'pdf_parity_ci/**'
+      - '.github/workflows/daruri-pdf-production-parity.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rebuild-canonical:
+    name: Rebuild ${{ matrix.edition }} and compare
+    strategy:
+      fail-fast: false
+      matrix:
+        edition: [scholarly, study, english, arabic, arabic-vowelled]
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install pinned publication dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install -q -r daruri/build/requirements.txt "pypdf==5.9.0" "PyMuPDF==1.26.7" "psutil==7.1.1"
+          python - <<'PY'
+          import weasyprint,fitz,psutil
+          print("WeasyPrint",weasyprint.__version__,"PyMuPDF",fitz.VersionBind,"PSS available",hasattr(psutil.Process().memory_full_info(),"pss"))
+          PY
+      - name: Render from actual canonical source and audit parity
+        run: |
+          python pdf_parity_ci/pdf_parity_audit.py --edition "${{ matrix.edition }}" --out "/tmp/gnamma_pdf_parity"
+          cat "/tmp/gnamma_pdf_parity/${{ matrix.edition }}/parity.json" | head -c 3000
+      - name: Capture audit evidence
+        if: always()
+        run: |
+          mkdir -p "pdf_parity_ci/results/${{ matrix.edition }}"
+          cp "/tmp/gnamma_pdf_parity/${{ matrix.edition }}/parity.json" "pdf_parity_ci/results/${{ matrix.edition }}/" 2>/dev/null || true
+          cp "/tmp/gnamma_pdf_parity/${{ matrix.edition }}/build.stdout" "pdf_parity_ci/results/${{ matrix.edition }}/" 2>/dev/null || true
+          cp "/tmp/gnamma_pdf_parity/${{ matrix.edition }}/build.stderr" "pdf_parity_ci/results/${{ matrix.edition }}/" 2>/dev/null || true
+          cp "/tmp/gnamma_pdf_parity/${{ matrix.edition }}"/*.png "pdf_parity_ci/results/${{ matrix.edition }}/" 2>/dev/null || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-parity-${{ matrix.edition }}
+          path: pdf_parity_ci/results/${{ matrix.edition }}
+          retention-days: 14
+      - name: Strict parity gate
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("pdf_parity_ci/results/${{ matrix.edition }}/parity.json")
+          assert p.exists(),"No successful comparison produced"
+          result=json.loads(p.read_text())
+          assert result.get("completely_equivalent"),f"Not an exact published edition duplicate: {result.get('error') or result.get('raster_samples')}"
+          PY
+  verify-published-corpus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install PDF inspection
+        run: python -m pip install -q "PyMuPDF==1.26.7" "pypdf==5.9.0"
+      - name: Verify published files against exact SHA and navigation manifests
+        run: |
+          python daruri/qa/verify_pdf_export_maps.py
+          python daruri/qa/verify_apparatus_maps.py
+          python daruri/build/verify_structure.py
+      - name: Validate personal export safety invariants
+        run: |
+          node daruri/qa/verify-personal-export.js
+          node daruri/qa/verify-personal-export-safety.js
+          node daruri/qa/verify-published-selector.cjs
+  personal-export-browsers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install deterministic PDF and browser test dependencies
+        run: |
+          python -m pip install -q "PyMuPDF==1.26.7" "pypdf==5.9.0"
+          npm install --no-save --no-package-lock --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit firefox
+      - name: Browser export: Chromium saved private notes, annotations, links
+        run: node daruri/qa/personal-export-browser.cjs
+      - name: Browser export: WebKit mobile 390px
+        run: node daruri/qa/personal-export-webkit.cjs
+      - name: Semantic fidelity with English and Arabic private notes
+        run: node daruri/qa/verify-semantic-personal-pdf.cjs
+      - name: Personal note visual geometry audit
+        if: always()
+        run: |
+          ls -lah daruri/qa/visual-output 2>/dev/null || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-personal-export-validation
+          path: |
+            daruri/qa/visual-output/**
+            daruri/qa/*.json
+          retention-days: 14
