@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/daruri-arabic-word-maps.yml'
       - 'daruri/qa/probe_arabic_pango_layout.py'
+      - 'daruri/qa/probe_bilingual_arabic_pango.py'
       - 'daruri/build/publish_verified_arabic_word_maps.py'
 permissions:
   contents: write
@@ -28,9 +29,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
           python -m pip install "weasyprint==68.0" "PyMuPDF==1.26.7"
-      - name: Rebuild and pixel-compare all 156 published Arabic pages
-        run: python daruri/qa/probe_arabic_pango_layout.py --emit-wordmaps
-      - name: Write source-and-byte-bound word maps for exactly four Arabic Reading editions
+      - name: Rebuild and pixel-compare 472 published Arabic-only and bilingual pages
+        run: |
+          python daruri/qa/probe_arabic_pango_layout.py --emit-wordmaps
+          python daruri/qa/probe_bilingual_arabic_pango.py --emit-wordmaps
+      - name: Write source-and-byte-bound word maps for all eight Arabic-bearing Reading editions
         run: python daruri/build/publish_verified_arabic_word_maps.py
       - name: Validate all twelve base maps and unchanged 120 apparatus PDFs
         run: |
@@ -42,17 +45,17 @@ jobs:
           m=json.loads((root/'maps/manifest.json').read_text())
           assert len(m['files'])==12 and m['status']=='verified'
           arabic=[r for r in m['files'] if '/daruri-reading-arabic' in r['file']]
-          assert len(arabic)==4
+          assert len(arabic)==8
           for row in arabic:
-              assert row['mapped_segments']==414
+              assert row['mapped_segments']>=414
               assert row['word_map_present']
               assert list(row['word_map_coverage'].values())==[{'matched':414,'eligible':414}]
               path=root/row['map_file']
               assert hashlib.sha256(path.read_bytes()).hexdigest()==row['map_sha256']
               x=json.loads(path.read_text())
-              assert len(x['segments'])==414
-              assert sum(len(v) for v in x['segments'].values())==21647
-          print('PASS: 4 Arabic word maps, 414 segments and 21,647 word rectangles each')
+              assert len(x['segments'])>=414
+              assert sum(len(v) for k,v in x['segments'].items() if k.endswith(':vocalized') or k.endswith(':ar'))==21647
+          print('PASS: 8 Arabic word maps, 414 Arabic segments and 21,647 Arabic word rectangles each')
           PY
       - name: Retain verified proof PDFs and map artifacts
         uses: actions/upload-artifact@v4
@@ -79,6 +82,7 @@ jobs:
                 daruri/edition-r3-20261020.js \
                 daruri/build/print_editions.py \
                 daruri/qa/probe_arabic_pango_layout.py \
+                daruri/qa/probe_bilingual_arabic_pango.py \
                 daruri/build/publish_verified_arabic_word_maps.py; then
             echo "::error::A certified source or mapper changed; refusing to publish stale coordinates."
             exit 1
