@@ -44,12 +44,16 @@ jobs:
           root=Path('daruri/editions')
           m=json.loads((root/'maps/manifest.json').read_text())
           assert len(m['files'])==12 and m['status']=='verified'
-          arabic=[r for r in m['files'] if '/daruri-reading-arabic' in r['file']]
+          arabic=[r for r in m['files'] if r['file'].startswith('reading/') and any(
+              name in r['file'] for name in ('-arabic-','-arabic-vowelled-','-bilingual-','-bilingual-unvowelled-'))]
           assert len(arabic)==8
           for row in arabic:
               assert row['mapped_segments']>=414
               assert row['word_map_present']
-              assert list(row['word_map_coverage'].values())==[{'matched':414,'eligible':414}]
+              filename=row['file']
+              lang='vocalized' if 'arabic-vowelled' in filename or (
+                  '-bilingual-' in filename) else 'ar'
+              assert row['word_map_coverage'][lang]=={'matched':414,'eligible':414}
               path=root/row['map_file']
               assert hashlib.sha256(path.read_bytes()).hexdigest()==row['map_sha256']
               x=json.loads(path.read_text())
