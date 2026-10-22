@@ -75,7 +75,7 @@
  }
  function appendBookmarks(doc,entries){
   if(!entries.length)return;
-  const {PDFName,PDFString,PDFDict,PDFNumber}=doc._gnLib;
+  const {PDFName,PDFHexString,PDFDict,PDFNumber}=doc._gnLib;
   const get=k=>PDFName.of(k);
   let rootRef=doc.catalog.get(get("Outlines"));
   if(!rootRef){
@@ -88,7 +88,7 @@
   let count=outline.lookup(get("Count"),PDFNumber)?.asNumber()||0;
   for(const entry of entries){
    if(entry.page<0||entry.page>=doc.getPageCount())fail("bookmark outside document");
-   const attrs={Title:PDFString.of(entry.title),Parent:rootRef,
+   const attrs={Title:PDFHexString.fromText(entry.title),Parent:rootRef,
      Dest:destination(doc,entry.to,doc.getPage(entry.page))};
    if(last)attrs.Prev=last;
    const ref=doc.context.register(doc.context.obj(attrs));
