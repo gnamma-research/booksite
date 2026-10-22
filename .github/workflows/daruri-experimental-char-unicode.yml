@@ -26,11 +26,20 @@ jobs:
             --input daruri/editions/reading/daruri-reading-arabic-titles-off.pdf \
             --map daruri/editions/maps/daruri-reading-arabic-titles-off.pdf.json \
             --output /tmp/daruri-char-unicode-proof-NOT-RELEASE.pdf
+      - name: Verify 414 sources, clean copy, Poppler, pixels, all links and anchors
+        run: |
+          python daruri/qa/verify_original_char_unicode.py \
+            --source daruri/editions/reading/daruri-reading-arabic-titles-off.pdf \
+            --map daruri/editions/maps/daruri-reading-arabic-titles-off.pdf.json \
+            --candidate /tmp/daruri-char-unicode-proof-NOT-RELEASE.pdf \
+            --report /tmp/daruri-char-unicode-acceptance-NOT-RELEASE.json
       - name: Preserve diagnostic proof and test logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: daruri-char-unicode-proof-NOT-RELEASE
-          path: /tmp/daruri-char-unicode-proof-NOT-RELEASE.pdf
+          path: |
+            /tmp/daruri-char-unicode-proof-NOT-RELEASE.pdf
+            /tmp/daruri-char-unicode-acceptance-NOT-RELEASE.json
           retention-days: 7
           if-no-files-found: warn
