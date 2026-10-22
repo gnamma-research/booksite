@@ -61,7 +61,14 @@ async function exercise(engine,name,origin){
   await page.locator('#focusToolbar').click();
   await page.locator('[data-gn-reader-mode="reading"]').click();
   await page.locator('body.focus-level-3').waitFor({state:'detached'});
-  await page.locator('#gn-dock-private-status [data-gn-mark="note"]').click();
+  // Continuous reading can leave us in a different paragraph/section.
+  // Return to the exact saved passage before asserting passage-local counts.
+  await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded'});
+  await page.locator('#reader .passage-grid[data-segment="0"]').first().evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
+  await page.waitForTimeout(200);
+  const noteMark=page.locator('#gn-dock-private-status [data-gn-mark="note"]');
+  assert(await noteMark.count(),'Saved paragraph note missing from dock after returning to §11 paragraph 1');
+  await noteMark.click();
   await page.locator('.gn-rd-page').waitFor();
   assert(await page.locator('.gn-rd-page').innerText().then(x=>x.includes('Reader note')),'notes count not linked to Reading Desk');
   await page.locator('[data-rd="return-reading"]').first().click();
