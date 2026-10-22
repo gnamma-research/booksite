@@ -148,7 +148,7 @@ def cmap_for(aliases, logical_cluster_payload=False):
     return ("\n".join(lines) + "\n").encode("ascii")
 
 
-def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0):
+def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False):
     # The printed Arabic is RTL. Each invisible line emits Unicode scalars in
     # visual/physical LTR order; engines recover logical Arabic through bidi.
     aliases, commands = [], []
@@ -204,7 +204,17 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
                     word_ops.append(f'<{cid:04X}> Tj')
                 right_edge = words[idx+1][1]
         y_pdf = page.rect.height-(words[0][2]+16)
-        if word_actualtext:
+        if line_actualtext:
+            logical_line=" ".join(w[0] for w in reversed(words))
+            escaped=("FEFF"+logical_line.encode("utf-16be").hex().upper())
+            commands.append(
+                f"/Span << /ActualText <{escaped}> >> BDC\n"
+                f"BT\n/GnammaSemantic 13 Tf\n3 Tr\n"
+                f"1 0 0 1 {start_x:.4f} {y_pdf:.4f} Tm\n"
+                f"<{''.join(f'{c:04X}' for c in encoded)}> Tj\n"
+                f"ET\nEMC"
+            )
+        elif word_actualtext:
             commands.append(
                 f"1 0 0 1 {start_x:.4f} {y_pdf:.4f} Tm\n" + '\n'.join(word_ops)
             )
@@ -267,10 +277,13 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
 
     # Reset old WeasyPrint page CTM before appending a nonpainting text stream.
     page.wrap_contents()
-    text = (
-        "q\nBT\n/GnammaSemantic 13 Tf\n3 Tr\n" +
-        "\n".join(commands) + "\nET\nQ\n"
-    ).encode("ascii")
+    if line_actualtext:
+        text=("q\n"+"\n".join(commands)+"\nQ\n").encode("ascii")
+    else:
+        text=(
+            "q\nBT\n/GnammaSemantic 13 Tf\n3 Tr\n" +
+            "\n".join(commands) + "\nET\nQ\n"
+        ).encode("ascii")
     semantic_stream = new_stream(pdf, text)
     old_streams = page.get_contents()
     pdf.xref_set_key(
@@ -280,7 +293,7 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
     return len(aliases)
 
 
-def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0):
+def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False):
     original, mapping_path, output = Path(original), Path(mapping_path), Path(output)
     if output.exists() or original.resolve() == output.resolve():
         raise ValueError("Refusing to replace any existing file")
@@ -324,7 +337,7 @@ def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=
             total_lines += len(source_on_page)
             total_cids += add_character_semantics(
                 doc, page, page_no, source_on_page, fontfile,
-                scalar_harakat=scalar_harakat,word_actualtext=word_actualtext,logical_cluster_payload=logical_cluster_payload,scalar_mark_fraction=scalar_mark_fraction
+                scalar_harakat=scalar_harakat,word_actualtext=word_actualtext,logical_cluster_payload=logical_cluster_payload,scalar_mark_fraction=scalar_mark_fraction,line_actualtext=line_actualtext
             )
         if original.name == "daruri-reading-arabic-titles-off.pdf" and total_lines != 2583:
             raise ValueError(f"Unexpected unvowelled Arabic Reading line coverage {total_lines}/2583")
@@ -346,6 +359,7 @@ if __name__ == "__main__":
     parser.add_argument("--word-actualtext", action="store_true", help="Experiment: tagged original Unicode word replacements")
     parser.add_argument("--logical-cluster-payload", action="store_true", help="Research: preserve logical grapheme Unicode order in ToUnicode for native PDFKit")
     parser.add_argument("--scalar-mark-fraction", type=float, default=0.0, help="Experimental fraction of glyph advance reserved for each combining mark")
+    parser.add_argument("--line-actualtext", action="store_true", help="Experiment: outside-BT marked-content source line replacement")
     args = parser.parse_args()
     assert 0<=args.scalar_mark_fraction<=0.4
-    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext, args.logical_cluster_payload, args.scalar_mark_fraction)
+    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext, args.logical_cluster_payload, args.scalar_mark_fraction, args.line_actualtext)
