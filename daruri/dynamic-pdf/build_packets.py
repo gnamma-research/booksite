@@ -11,6 +11,7 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parent
 sys.path.insert(0,str(ROOT/"build"))
 from build_apparatus_variants import build_appendix,APPARATUS_ORDER
+from approved_links import published_links
 OUT=HERE/"packets"
 VERSION="20261022-appx-packets-v1"
 
@@ -83,6 +84,10 @@ def compile_pack(out:Path):
   filename=f"gnamma-apparatus-{name}.pdf"
   (out/filename).write_bytes(raw)
   meta=fixture(raw,components)
+  gold=published_links(ROOT,raw,components)
+  meta["links_to_source"]=gold["refs"]
+  meta["packet_links"]=gold["other"]
+  meta["gold_reference"]={k:v for k,v in gold.items() if k not in ("refs","other")}
   (out/(filename+".json")).write_text(json.dumps(meta,ensure_ascii=False,separators=(',',':')))
   record={"file":filename,"map":filename+".json","components":list(components),
     "pages":meta["pages"],"sha256":meta["sha256"],"bytes":meta["bytes"],
