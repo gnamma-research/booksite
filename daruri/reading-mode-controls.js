@@ -369,8 +369,15 @@ for(const [section,segment,id,phrase] of ALIGNMENTS){
   if(!byNote.has(id))byNote.set(id,[]);
   byNote.get(id).push({section,segment,phrase});
 }
+// Four publisher notes have no defensible English phrase-level anchor.
+const VERIFIED_SECTION_FALLBACKS=Object.freeze({
+  '39':['N017'],'87':['N034'],'144':['N057'],'167':['N068']
+});
 const info=window.GnammaNNoteLocations||{bySection:{},locations:{}};
-const NOTE_IDS=new Map(Object.entries(info.bySection||{}));
+const NOTE_IDS=new Map(Object.entries(VERIFIED_SECTION_FALLBACKS));
+for(const [section,ids] of Object.entries(info.bySection||{})){
+  NOTE_IDS.set(section,[...new Set([...(NOTE_IDS.get(section)||[]),...(ids||[])])]);
+}
 let menu=null,focusReturn=null,scheduled=false;
 function closeMenu(returnFocus=false){
   if(menu){menu.remove();menu=null;}
@@ -394,7 +401,10 @@ function showChoices(trigger,links){
     const button=document.createElement('button');
     button.type='button';button.textContent=link.dataset.noteTarget;
     button.setAttribute('aria-label','Open publisher note '+link.dataset.noteTarget);
-    button.addEventListener('click',()=>{closeMenu(false);if(link.isConnected)link.click();});
+    button.addEventListener('click',()=>{
+      const origin=focusReturn;closeMenu(false);window.__termClickOrigin=origin;
+      if(link.isConnected)link.click();
+    });
     picker.append(button);
   }
   document.body.append(picker);
@@ -413,7 +423,7 @@ function openRange(range){
   if(!key||!parent)return;
   const links=[...parent.querySelectorAll('a.gn-note-en-ref[data-gn-en-ref-group]')]
     .filter(link=>link.dataset.gnEnRefGroup===key);
-  if(links.length===1)links[0].click();
+  if(links.length===1){window.__termClickOrigin=range;links[0].click();}
   else if(links.length>1)showChoices(range,links);
 }
 function noteAnchor(id,group,sectionLevel=false){
@@ -626,14 +636,6 @@ function install(){
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});
 else install();
-/* Load curated English publisher-note links alongside the reader controls. */
-(function(){
- const script=document.createElement('script');
- script.src='english-note-anchors.js?v=20261023-en-anchors1';
- script.async=true;
- script.dataset.gnEnglishNoteAnchors='1';
- script.addEventListener('error',()=>console.warn('English note link module did not load.'));
- document.head.appendChild(script);
-})();
+
 
 })();
