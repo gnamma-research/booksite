@@ -1,0 +1,35 @@
+name: Daruri full PDF catalogue hyperlink audit
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'pdf_parity_ci/published_link_graph.py'
+      - 'daruri/pdf-editions-manifest.json'
+      - 'daruri/editions/**'
+      - '.github/workflows/daruri-pdf-link-graph.yml'
+  push:
+    branches: [master]
+    paths:
+      - 'pdf_parity_ci/published_link_graph.py'
+      - 'daruri/pdf-editions-manifest.json'
+      - 'daruri/editions/**'
+permissions:
+  contents: read
+jobs:
+  verify-all-137-pdfs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install PDF structural inspector
+        run: python -m pip install -q "PyMuPDF==1.26.7"
+      - name: Validate PDF identity, destinations and 208k+ hyperlinks
+        run: python pdf_parity_ci/published_link_graph.py pdf_parity_ci/link_graph_report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-137-pdf-link-graph
+          path: pdf_parity_ci/link_graph_report.json
+          retention-days: 14
