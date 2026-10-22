@@ -46,7 +46,7 @@ async function main(){
    status,mode,engine:kind,origin:host,
    pageErrors:fatal,consoleErrors:onConsole,
    requests:requests.map(x=>({path:x.url.replace(host,''),method:x.method})),
-   externalNetworkRequests:requests.filter(x=>!x.url.startsWith(host)),
+   externalNetworkRequests:requests.filter(x=>/^https?:\/\//i.test(x.url)&&!x.url.startsWith(host)),
    prebuiltPdfRequests:requests.filter(x=>/\.pdf(?:\?|$)/i.test(x.url)),
    generatedWithoutPrintDialog:true,
    playwrightPagePdfNotUsed:true,
