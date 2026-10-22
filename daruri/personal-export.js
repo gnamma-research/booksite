@@ -18,13 +18,16 @@
     return 'Saved reference';
   };
   const isNote=r=>r&&r.kind==='note';
-  const isBookmark=r=>Boolean(r&&r.kind!=='note'&&(
+  const isSavedEntry=r=>Boolean(r&&(
     r.target&&typeof r.target==='object'||String(r.title||'').trim()||
     String(r.body||'').trim()||r.archivedValue!==undefined
   ));
+  const isBookmark=r=>Boolean(r&&r.kind!=='note'&&r.kind!=='quote'&&isSavedEntry(r));
+  const isHighlight=r=>Boolean(r&&r.kind==='quote'&&isSavedEntry(r));
   function available(records,prefs){
     return records.filter(r=>r&&!r.deleted&&(
-      (prefs.personal&&isNote(r))||(prefs.bookmarks&&isBookmark(r))
+      (prefs.personal&&isNote(r))||(prefs.bookmarks&&isBookmark(r))||
+      (prefs.highlights&&isHighlight(r))
     ));
   }
   function normalizeDesk(data){
@@ -116,6 +119,7 @@
   function mode(){return document.querySelector('input[name="pe-mode"]:checked')?.value||'none';}
   function prefs(){return {
     personal:$('pe-personal').checked,bookmarks:$('pe-bookmarks').checked,
+     highlights:$('pe-highlights').checked,
     annotations:$('pe-annotations').checked,appendix:$('pe-appendix').checked,
     dates:$('pe-dates').checked,order:$('pe-order').value
   };}
@@ -163,7 +167,7 @@
       check.dataset.noteId=r.id;
       const text=document.createElement('span');
       text.className='item-title';text.textContent=(r.title||nameOf(r.target)).slice(0,120);
-      const meta=document.createElement('small');meta.textContent=nameOf(r.target)+(isNote(r)?' · Personal note':' · Bookmark');
+      const meta=document.createElement('small');meta.textContent=nameOf(r.target)+(isNote(r)?' · My note':isHighlight(r)?' · Highlight':' · Bookmark');
       text.append(meta);label.append(check,text);root.append(label);
     }
     const eligibleSelected=eligible.filter(r=>selectedIds.has(r.id)).length;
@@ -524,7 +528,22 @@
     }catch(error){showError('PDF export failed: '+(error?.message||error)+'. The original PDF and your Reading Desk are unchanged.');$('pe-progress').hidden=true;}
     finally{busy=false;syncForm();}
   }
+  function decoratePersonalIcons(){
+    // Standalone exporter and Editions use the same symbols as Reading Desk.
+    // Editions already supplies the icons in its shell.
+    if(document.querySelector('.gn-es #pe-form'))return;
+    const shared=window.GnammaBookmarkUI;
+    if(!shared?.noteIcon)return;
+    for(const [id,iconMarkup] of [
+      ['pe-personal',shared.noteIcon()],['pe-bookmarks',shared.icon()],
+      ['pe-highlights',shared.highlightIcon()]
+    ]){
+      const label=$(id)?.closest('label');
+      if(label&&!label.querySelector('svg'))label.insertAdjacentHTML('afterbegin',iconMarkup);
+    }
+  }
   async function init(){
+    decoratePersonalIcons();
     records=loadDesk();selectedIds=new Set(records.map(r=>r.id));
     try{
       const res=await fetch(new URL('pdf-editions-manifest.json',URL_ROOT),{cache:'no-cache'});
@@ -613,16 +632,17 @@
       const requested=query.get('pdf');
       $('pe-edition').value=requested&&entries.some(([f])=>f===requested)?requested:
         entries.some(([f])=>f===data.default_pdf)?data.default_pdf:entries[0]?.[0]||'';
-      if(query.get('personal')==='1'||query.get('bookmarks')==='1'){
+      if(query.get('personal')==='1'||query.get('bookmarks')==='1'||query.get('highlights')==='1'){
         const all=document.querySelector('input[name="pe-mode"][value="all"]');
         if(all)all.checked=true;
         $('pe-personal').checked=query.get('personal')==='1';
         $('pe-bookmarks').checked=query.get('bookmarks')==='1';
+        $('pe-highlights').checked=query.get('highlights')==='1';
       }
       if(!$('pe-edition').value)throw Error('No published editions available');
     }catch(error){showError('Could not load the edition list: '+error.message);$('pe-edition').innerHTML='<option value="">Edition list unavailable</option>';}
     document.querySelectorAll('input[name="pe-mode"]').forEach(e=>e.addEventListener('change',syncForm));
-    ['pe-edition','pe-personal','pe-bookmarks','pe-annotations','pe-appendix','pe-dates','pe-order'].forEach(id=>$(id).addEventListener('change',syncForm));
+    ['pe-edition','pe-personal','pe-bookmarks','pe-highlights','pe-annotations','pe-appendix','pe-dates','pe-order'].forEach(id=>$(id).addEventListener('change',syncForm));
     $('pe-search').addEventListener('input',renderPicker);
     $('pe-items').addEventListener('change',e=>{const id=e.target?.dataset?.noteId;if(id){if(e.target.checked)selectedIds.add(id);else selectedIds.delete(id);$('pe-result').hidden=true;info('');syncForm();}});
     $('pe-check-all').addEventListener('click',()=>{available(records,prefs()).forEach(r=>selectedIds.add(r.id));$('pe-result').hidden=true;info('');syncForm();});

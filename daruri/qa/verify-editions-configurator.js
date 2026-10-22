@@ -16,9 +16,9 @@ assert.ok(data);
 const lessons=JSON.parse(data[1]);
 const index=read('index.html'),sw=read('sw.js'),bundle=read('download-bundle.js');
 for(const name of ['editions.js','editions.css']){
- const route=name+'?v=20261021-editiontabs-vowels-release1';
- assert.ok(index.includes(route),'Reader '+route);
- assert.ok(sw.includes(route),'Offline '+route);
+ const route=index.match(new RegExp(name.replace('.', '\\.')+'\\?v=[A-Za-z0-9-]+'))?.[0];
+ assert.ok(route,'Reader must load '+name+' with a cache-busting version');
+ assert.ok(sw.includes(route),'Offline worker must cache the exact reader version '+route);
  assert.ok(bundle.includes('daruri/'+name),'Download ZIP '+name);
 }
 assert.ok(index.includes("case'editions':window.GnammaEditions.render(main,BOOK)"));
