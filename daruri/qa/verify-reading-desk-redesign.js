@@ -124,10 +124,11 @@ test('one-click section removal makes exactly one storage write',()=>{
  ensure(h.writes===before+1,'section deselection repeated an expensive save');
  ensure(h.desk.records().find(x=>x.id==='legacy').deleted>0,'section bookmark not moved to Bin');
 });
-test('a labelled paragraph bookmark saves the entire bilingual passage',()=>{
+test('composite bookmark-and-pilcrow control saves an aligned bilingual paragraph',()=>{
  const h=boot(backup([]));h.state.route='reader';h.desk.afterReader();
- ensure(h.grids[0].nextElementSibling.innerHTML.includes('Save paragraph'),
-  'paragraph bookmark must be discoverable without hover or selecting text');
+ const markup=h.grids[0].nextElementSibling.innerHTML;
+ ensure(markup.includes('gn-rd-paragraph-mark')&&markup.includes('¶')&&!markup.includes('Save paragraph'),
+  'paragraph bookmark must use the icon-only bookmark-and-pilcrow control');
  const before=h.writes;
  h.event('click',{dataset:{rd:'paragraph-bookmark',section:'190',segment:'0'}});
  const item=h.desk.records().find(r=>r.kind==='paragraph'&&!r.deleted&&r.target?.section==='190');

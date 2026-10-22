@@ -40,15 +40,42 @@ async function exercise(engine,name,origin){
   await page.waitForSelector('#readerDock:not([hidden])',{timeout:20000});
   await page.waitForSelector('#gn-dock-private-status .gn-dock-mark',{timeout:20000});
   assert(await page.locator('body.focus-level-1').count(),'old Focus 1 preference not retained');
-  assert.equal(await page.locator('#gn-dock-private-status .gn-dock-mark').count(),3,'saved marks must have 3 monochrome icons');
-  let counts=await page.locator('#gn-dock-private-status .gn-dock-mark span').allTextContents();
-  assert.deepEqual(counts,['2','1','1'],'section/paragraph bookmark and exact quote/note counts');
+  assert.equal(await page.locator('#gn-dock-private-status .gn-dock-mark').count(),4,'section bookmark, paragraph bookmark, quotation and note each need an icon');
+  const counts=await page.locator('#gn-dock-private-status .gn-dock-count').allTextContents();
+  assert.deepEqual(counts,['1','1','1','1'],'saved §, ¶, exact quotation and note need separate counts');
+  assert.equal(await page.locator('#gn-dock-paragraph-ref').innerText(),'· ¶1','bottom dock must identify paragraph 1');
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraphBookmarks"] .gn-dock-pilcrow').innerText(),'¶','saved paragraph must have compound bookmark-pilcrow glyph');
+  assert(await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg rect').count()===1 &&
+    await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg path').count()>=2,
+    'personal note icon must contain a page and inset pen');
+  // Scroll from ¶1 (bookmarked/highlighted/noted) to ¶2 (no paragraph-level
+  // saved marks). A saved section must remain visible, but the paragraph icon
+  // and paragraph-specific quotation/note counts must disappear immediately.
+  await page.locator('#reader .passage-grid[data-segment="1"]').first()
+    .evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
+  await page.waitForFunction(()=>document.querySelector('#gn-dock-paragraph-ref')?.textContent==='· ¶2',{timeout:8000});
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="sectionBookmarks"]').count(),1,
+    'section bookmark must persist as reader advances to paragraph 2');
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraphBookmarks"]').count(),0,
+    'saved paragraph 1 must not leak into paragraph 2');
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="highlights"]').count(),0,
+    'selected quotation from paragraph 1 leaked into paragraph 2');
+  await page.locator('#reader .passage-grid[data-segment="0"]').first()
+    .evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
+  await page.waitForFunction(()=>document.querySelector('#gn-dock-paragraph-ref')?.textContent==='· ¶1',{timeout:8000});
+
   assert.equal(await page.locator('.reader .chapter-nav').isVisible(),false,'duplicate in-text navigation still visible');
   await page.locator('#focusToolbar').click();
   await page.locator('#gn-reading-mode-picker:not([hidden])').waitFor();
   assert.equal(await page.locator('#gn-focus-apparatus-choice').isChecked(),true,'legacy apparatus preference lost');
   await page.locator('[data-gn-reader-mode="reading"]').click();
   await page.locator('body.focus-mode').waitFor({state:'detached'});
+  const paraButton=page.locator('#reader .gn-rd-passage-tools [data-rd="paragraph-bookmark"]').first();
+  await paraButton.waitFor();
+  assert((await paraButton.innerHTML()).includes('gn-rd-paragraph-mark') && (await paraButton.innerHTML()).includes('¶'),
+    'visible paragraph tool must be two symbols in one button');
+  assert(!(await paraButton.innerHTML()).includes('Save paragraph'),'obsolete paragraph text label must be absent');
+  assert.equal(await paraButton.getAttribute('aria-pressed'),'true','saved paragraph must retain pressed state');
   await page.locator('#focusToolbar').click();
   await page.locator('[data-gn-reader-mode="focus"]').click();
   assert(await page.locator('body.focus-level-1').count(),'Focus did not retain optional apparatus');
@@ -85,6 +112,7 @@ async function exercise(engine,name,origin){
   await page.goto(origin+'/daruri/#section=12',{waitUntil:'domcontentloaded'});
   await page.waitForTimeout(300);
   assert.equal(await page.locator('#gn-dock-private-status .gn-dock-mark').count(),0,'zero-count icons must be hidden');
+  assert.equal(await page.locator('#gn-dock-paragraph-ref').innerText(),'· ¶1','paragraph locator must remain when no notes are saved');
   assert.equal(errors.filter(e=>/GnammaReadingDock|reading.mode|ReadingDesk/i.test(e)).length,0,'runtime errors: '+errors.join('; '));
   console.log('PASS '+name+' mode switch, legacy apparatus, dock counts, Reading Desk return, zero-state and arrow removal');
  }finally{await context.close();await browser.close();}
