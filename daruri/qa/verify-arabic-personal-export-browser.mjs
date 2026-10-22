@@ -37,6 +37,8 @@ try{
    document.querySelector('#pe-edition')?.value===expected,first,{timeout:30000});
  await ui.locator('#pe-personal').check();
  assert.equal(await ui.locator('#pe-generate').isDisabled(),false);
+ const start=Date.now();
+ const jsHeapBefore=await page.evaluate(()=>performance.memory?.usedJSHeapSize??null);
  const done=page.waitForEvent('download',{timeout:180000});
  await ui.locator('#pe-generate').click();
  const downloaded=await done;
@@ -69,6 +71,13 @@ try{
   fs.writeFileSync(path.join(dir,'arabic-source.json'),
    JSON.stringify({basePages:37,sourcePage:first[1]-1,
      notePage:37,pdf:'personal-pdf-sample.pdf',quote:'أما حد الحكم عند أهل السنة فهو عبارة عن خطاب الشرع'},null,2));
+  const browserMemory=await page.evaluate(()=>performance.memory?.usedJSHeapSize??null);
+  const perf={createMs:Date.now()-start,bytes:fs.statSync(out).size,
+    browserHeapBefore:jsHeapBefore,browserHeapAfter:browserMemory,
+    sourcePages:37,pages:pdf.getPageCount(),noteCount:1,
+    verifiedPhraseHighlight:true,sourcePage:first[1]-1};
+  fs.writeFileSync(path.join(dir,'arabic-performance.json'),JSON.stringify(perf,null,2));
+  console.log('ARABIC PDF PERFORMANCE',JSON.stringify(perf));
   console.log('EXPORTED ARABIC NATIVE PHONE FIXTURE',first[1]-1,'base pages 37');
  }
  assert.deepEqual(errors,[]);
