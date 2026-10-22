@@ -8,6 +8,7 @@
  const prefix='dynamic-pdf/packets/';
  let catalogue=null,payload=null,downloadURL=null,busy=false,ready=false;
  let activeController=null, generationId=0;
+ let activeWorker=null, stopWorker=null;
  const loaded=new Map();
  const fail=m=>{throw Error(m)};
  const hex=s=>/^[0-9a-f]{64}$/.test(String(s||''));
@@ -113,6 +114,54 @@
   if(id!==generationId||activeController?.signal.aborted)
    fail('Generation was cancelled or the selected edition changed');
  }
+ // A separate worker keeps the interface responsive during expensive PDF
+ // composition. Cancel terminates the computation, not only the download.
+ function assembleOffThread(id,options){
+  return new Promise((resolve,reject)=>{
+   if(typeof Worker==='undefined'){
+    reject(Error('This browser cannot safely cancel local PDF assembly. Use the approved published PDF.'));
+    return;
+   }
+   let worker;
+   try{
+    worker=new Worker('dynamic-pdf/assemble.worker.js?v=20261022-worker1',{type:'classic'});
+   }catch(error){reject(Error('Local PDF worker unavailable: '+error.message));return;}
+   let settled=false;
+   let timeoutId;
+   function finish(error,result){
+    if(settled)return;
+    settled=true;
+    clearTimeout(timeoutId);
+    worker.terminate();
+    if(activeWorker===worker){activeWorker=null;stopWorker=null;}
+    if(error)reject(error);
+    else resolve(result);
+   }
+   activeWorker=worker;
+   stopWorker=()=>finish(Error('PDF assembly cancelled'));
+   timeoutId=setTimeout(()=>finish(Error('PDF assembly exceeded its 90-second deadline; try the approved PDF.')),90000);
+   worker.onmessage=event=>{
+    const message=event.data;
+    if(message?.id!==id){finish(Error('Mismatched PDF assembly result'));return;}
+    if(message.error){finish(Error(message.error));return;}
+    if(!(message.result?.bytes instanceof Uint8Array))
+     {finish(Error('PDF worker returned no document'));return;}
+    finish(null,message.result);
+   };
+   worker.onerror=event=>{
+    finish(Error('Local PDF worker failed: '+(event?.message||'unknown browser worker error')));
+   };
+   try{
+    // Transfer, rather than duplicate, large PDF buffers between threads.
+    // Authorial source content is never uploaded; only local bytes are moved.
+    worker.postMessage({id,options},[
+     options.baseBytes.buffer,
+     options.packetBytes.buffer,
+     options.profileMapRaw.buffer
+    ]);
+   }catch(error){finish(Error('Could not send verified PDFs to worker: '+error.message));}
+  });
+ }
  function restoreExactPublishedEdition(){
   const profile=selectOption();
   const bridge=window.GnammaPersonalExportInline;
@@ -128,6 +177,7 @@
   if(!busy)return;
   ++generationId;
   activeController?.abort();
+  stopWorker?.();
   activeController=null;
   busy=false;
   clearOutput();
@@ -180,8 +230,8 @@
    const packetMap=parse(pmapBytes),profileMap=parse(profileBytes),baseMap=parse(bmapBytes);
    status('Composing verified pages, bookmarks and exact apparatus links…');
    const started=performance.now();
-   const result=await window.GnammaDynamicPdf.assemble({
-    lib:window.PDFLib,baseBytes,packetBytes,
+   const result=await assembleOffThread(id,{
+    baseBytes,packetBytes,
     baseManifestRecord:baseRecord,packetManifestRecord:packetRecord,
     packetMap,baseMap,profile:selected,
     profileMap,profileMapRaw:profileBytes,profileMapRecord:profileRecord,
@@ -255,6 +305,7 @@
   window.addEventListener('pagehide',()=>{
    ++generationId;
    activeController?.abort();
+   stopWorker?.();
    if(downloadURL)URL.revokeObjectURL(downloadURL);
   });
   updateControls();
