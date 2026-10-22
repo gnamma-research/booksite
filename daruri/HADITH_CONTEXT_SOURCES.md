@@ -26,7 +26,7 @@ Sahih Muslim numbers with suffixes (`360a`, `977a`, etc.) must **not** be reduce
 
 ## English and reuse
 
-Six initial reference cards have **new editorial English renderings** written for this reading project, plus additional verified Bukhārī cards. For the remaining reports, the existing scholarly source note provides the argument's context, while the card links to the complete published Arabic/English on Sunnah.com. These **must not be labelled full translations**. This preserves the original Arabic in the offline package but does not yet claim complete, independently checked English translation for every report.
+**All 47 references now have an English companion**, of two explicitly distinct kinds: an independently prepared English rendering of the substantive report where available, or a shorter **English editorial précis** where a complete translation has not been independently prepared. Neither the isnād nor a collector’s entire technical discussion is claimed to be fully translated by a précis. Every report links to its complete published Arabic/English reference at Sunnah.com, avoiding redistribution of potentially copyrighted modern English texts. The complete original Arabic—including isnād—is stored locally. The reader labels précis as such and never implies that the synopsis is a verbatim full report.
 
 Arabic source witness:
 - [fawazahmed0/hadith-api](https://github.com/fawazahmed0/hadith-api), pinned branch/version `1`; its repository uses the Unlicense. The actual individual Arabic complete text is stored in `hadith-context-arabic-*.js`.
