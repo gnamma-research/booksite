@@ -118,7 +118,7 @@ def check(baseline, candidate, mapping, output):
     print("ARABIC_MATRIX",json.dumps(report["tests"],ensure_ascii=False),flush=True)
     # Exploratory matrix always reports exact failure counts and never approves
     # the release.  Reject destructive integrity regressions immediately.
-    assert same_pixels==equal_links==len(a) and valid_section_anchors==258
+    assert same_pixels==equal_links==report["tests"]["pages"] and valid_section_anchors==258
     return report
 
 
