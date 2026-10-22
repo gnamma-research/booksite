@@ -26,10 +26,15 @@ const hash=s=>crypto.createHash('sha256').update(s).digest('hex');
   const packetBytes=fs.readFileSync(path.join(PACKETS,packet.file));
   const baseMap=JSON.parse(fs.readFileSync(path.join(BASE,'maps',path.basename(row.source_base)+'.json')));
   const packetMap=JSON.parse(fs.readFileSync(path.join(PACKETS,packet.map)));
+  const mapRecord=manifest.profiles.find(p=>p.profile===row.file);
+  if(!mapRecord)throw Error('Approved source-link profile unavailable: '+row.filename);
+  const profileMapRaw=fs.readFileSync(path.join(PACKETS,mapRecord.map));
+  const profileMap=JSON.parse(profileMapRaw);
   const start=performance.now();
   const result=await core.assemble({
     lib,baseBytes,packetBytes,baseManifestRecord:base,packetManifestRecord:packet,
-    baseMap,packetMap,profile:row,baseMapSha:hash(fs.readFileSync(path.join(BASE,'maps',path.basename(row.source_base)+'.json'))),
+    baseMap,packetMap,profile:row,profileMap,profileMapRaw,profileMapRecord:mapRecord,
+    baseMapSha:hash(fs.readFileSync(path.join(BASE,'maps',path.basename(row.source_base)+'.json'))),
     packetMapSha:hash(fs.readFileSync(path.join(PACKETS,packet.map)))
   });
   const dest=path.join(out,row.filename);
