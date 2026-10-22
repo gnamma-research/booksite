@@ -1,5 +1,13 @@
 # Darūrī release coordination — 20 October 2026
 
+## Live reader merge and parallel PDF coordination — 22 October 2026
+
+**Reading-mode publisher claim: released.** [PR #39](https://github.com/gnamma-research/booksite/pull/39) is merged into `master` at commit [`7791e6e`](https://github.com/gnamma-research/booksite/commit/7791e6e93abbe00a7033cb920258f6b1b7ed6b5b). The reader offers three named modes, **Reading**, **Focus** (optionally show scholarly apparatus after the text), and **Continuous**. The enhanced reader no longer duplicates Previous/Next navigation inside the text; its persistent dock remains the navigator. Small, monochrome nonzero bookmark/selection/personal-note counts appear beneath the centred dock title and open the relevant Reading Desk entries without deleting them. The mockup-only round symbol is not part of the implementation. Existing English/Arabic/vowel controls, saved notes, source links, reader themes and no-JavaScript fallback are preserved. Focus 1 historical preferences are mapped into the Focus apparatus option.
+
+**Other active work:** [PR #38](https://github.com/gnamma-research/booksite/pull/38) develops exact Arabic/bilingual word maps for personal PDF annotations. Its changed-file set is disjoint from PR #39; no PDF source, map, manifest or edition assets were modified in the reader merge. The PDF publisher must merge with the *latest* `master` and preserve the three-mode reader, current proximity Search, and cache/Reading Desk state; the reader publisher must not replace PDF maps with an older snapshot. [Coordination issue #37](https://github.com/gnamma-research/booksite/issues/37) records the handoff.
+
+**Validation:** All eight reconciled branch workflows passed, including Chromium/WebKit reading-mode navigation and dock counts, Reading Desk, personal PDF, toolbar/PDF, and unified proximity Search. Branch merge `e8377a0` reconciled against Search `f6f370b` before publishing. GitHub Pages deployment and post-merge workflows are tracked separately; physical iPhone testing is not claimed. Treat earlier records below as historical, not as the newest reader status.
+
 The user has asked the current Darūrī chats to coordinate site and PDF updates. Use the latest `master` as the shared publication source; make narrow changes and never replace the reader from an older handoff ZIP.
 
 ### Quran/hadith source-note typography and PDF compatibility — completed 21 October 2026
