@@ -44,7 +44,7 @@ async function exercise(engine,name,origin){
   const counts=await page.locator('#gn-dock-private-status .gn-dock-count').allTextContents();
   assert.deepEqual(counts,['1','1','1','1'],'saved §, ¶, exact quotation and note need separate counts');
   assert.equal(await page.locator('#gn-dock-paragraph-ref').innerText(),'· ¶1','bottom dock must identify paragraph 1');
-  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraphBookmarks"] .gn-dock-pilcrow').innerText(),'¶','saved paragraph must have compound bookmark-pilcrow glyph');
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraphBookmarks"] .gn-bm-paragraph .gn-bm-pilcrow').innerText(),'¶','saved paragraph must have compound bookmark-pilcrow glyph');
   assert(await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg rect').count()===1 &&
     await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg path').count()>=2,
     'personal note icon must contain a page and inset pen');
@@ -78,7 +78,7 @@ async function exercise(engine,name,origin){
   await page.locator('body.focus-mode').waitFor({state:'detached'});
   const paraButton=page.locator('#reader .gn-rd-passage-tools [data-rd="paragraph-bookmark"]').first();
   await paraButton.waitFor();
-  assert((await paraButton.innerHTML()).includes('gn-rd-paragraph-mark') && (await paraButton.innerHTML()).includes('¶'),
+  assert((await paraButton.innerHTML()).includes('gn-bm-paragraph') && (await paraButton.innerHTML()).includes('¶'),
     'visible paragraph tool must be two symbols in one button');
   assert(!(await paraButton.innerHTML()).includes('Save paragraph'),'obsolete paragraph text label must be absent');
   assert.equal(await paraButton.getAttribute('aria-pressed'),'true','saved paragraph must retain pressed state');
