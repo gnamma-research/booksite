@@ -100,12 +100,17 @@ def run_one(edition,editorial,outdir,emit=False):
             "words_recorded":sum(len(v["words"]) for v in groups.values())
         }
         print("STUDY_REFERENCE_PROBE",json.dumps(report,ensure_ascii=False),flush=True)
-        if emit and parity and len(groups)==len(expected) and all(same.values()):
+        if emit and parity and len(groups)==len(expected)+2 and all(same.values()):
             form="vocalized"
-            result={k:v["words"] for k,v in groups.items()}
-            (outdir/(edition+("-editorial" if editorial else "")+".words.json")).write_text(
+            result={k:v["words"] for k,v in groups.items() if k in expected}
+            assert len(result)==414 and all(result.values())
+            (outdir/(("reference" if edition=="scholarly" else "study")+
+                      ("-editorial" if editorial else "")+".words.json")).write_text(
                 json.dumps({"file":approved_name,"sha256":sha,"segments":result,
-                    "pixel_parity":True,"source_segments":len(groups)},ensure_ascii=False))
+                    "language":form,"pixel_parity":True,"source_segments":len(result),
+                    "page_count":pages[0],
+                    "word_count":sum(len(words) for words in result.values())},
+                    ensure_ascii=False,separators=(",",":"))+"\n")
         return report
 
 def main():
