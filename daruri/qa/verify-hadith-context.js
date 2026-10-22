@@ -26,7 +26,7 @@ for(const [id,item] of Object.entries(raw)){
  assert(!/English context summary \(editorial précis|no complete translation|opening the linked edition/i.test(translation),'Truncated summary substituted for full translation: '+id);
 }
 for(const [id,terms] of Object.entries({
- 'bukhari:2731':['Suhayl','Abū Jandal','Abū Baṣīr','Umm Salama','Budayl','al-Qaṣwāʾ'],
+ 'bukhari:2731':['Suhayl','Abū Jandal','Abū Baṣīr','Umm Salama','Budayl','Al-Qaṣwāʾ'],
  'tirmidhi:1102':['al-Zuhrī','Abū Burda','Shuʿba','al-Thawrī','al-Shāfiʿī'],
  'tirmidhi:1180':['Fāṭima','ʿUmar','al-Shāfiʿī'],
  'tirmidhi:691':['Simāk','mursal'],
