@@ -47,6 +47,28 @@ if platform=="android":
         ('r["forwardCount"]>=4 and r["returnCount"]>=2',
          'r["forwardCount"]>=2 and r["returnCount"]>=1')
     ])
+    native=script.read_text()
+    probe='''function resilient_phone_tap() {
+  local px="$1" py="$2"
+  for attempt in $(seq 1 6); do
+    adb start-server >/dev/null 2>&1 || true
+    if timeout 9s adb shell input tap "$px" "$py"; then return 0; fi
+    echo "Recovering intermittent adb connection (attempt $attempt)" >&2
+    adb kill-server >/dev/null 2>&1 || true
+    sleep 2
+  done
+  echo "Native Android could not deliver the tap to the device" >&2
+  return 1
+}
+'''
+    tag='tapP="$(await_tap P | tail -1)"'
+    if tag not in native:raise RuntimeError("Expected Android tap sequence absent")
+    native=native.replace(tag,probe+tag)
+    native=native.replace('adb shell input tap "$px" "$py"','resilient_phone_tap "$px" "$py"')
+    native=native.replace('adb shell input tap "$bx" "$by"','resilient_phone_tap "$bx" "$by"')
+    # The helper itself must still use the adb command, not recursion.
+    native=native.replace('if timeout 9s resilient_phone_tap', 'if timeout 9s adb shell input tap')
+    script.write_text(native)
 elif platform=="ios":
     swift=qa/"native-phone"/"ios"/"PhonePDF.swift"
     transform(swift,[
