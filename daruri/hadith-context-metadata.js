@@ -58,3 +58,11 @@ Object.assign(window.GnammaHadithReports["tirmidhi:1102"]||{},{"chapter_en":"Mar
 Object.assign(window.GnammaHadithReports["nasai:2334"]||{},{"chapter_en":"Differences among narrators of Ḥafṣa's fasting report","chapter_ar":"باب ذِكْرِ اخْتِلاَفِ النَّاقِلِينَ لِخَبَرِ حَفْصَةَ فِي ذَلِكَ","narrator":"Ḥafṣa bt. ʿUmar"});
 Object.assign(window.GnammaHadithReports["nasai:3688"]||{},{"chapter_en":"Gifting undivided shared property","chapter_ar":"باب هِبَةِ الْمَشَاعِ","narrator":"ʿAmr b. Shuʿayb, from his father, from his grandfather"});
 Object.assign(window.GnammaHadithReports["ibnmajah:2043"]||{},{"chapter_en":"Divorce of a person acting under compulsion or forgetfulness","chapter_ar":"باب طَلاَقِ الْمُكْرَهِ وَالنَّاسِي","narrator":"Abū Dharr al-Ghifārī"});
+
+/* Letter-suffixed Sahih Muslim entries, source-checked headings and narrators. */
+Object.assign(window.GnammaHadithReports["muslim:1406d"]||{},{"chapter_en":"Temporary marriage: successive permission and prohibition","chapter_ar":"باب نِكَاحِ الْمُتْعَةِ وَبَيَانِ أَنَّهُ أُبِيحَ ثُمَّ نُسِخَ ثُمَّ أُبِيحَ ثُمَّ نُسِخَ وَاسْتَقَرَّ تَحْرِيمُهُ إِلَى يَوْمِ الْقِيَامَةِ","narrator":"Sabra al-Juhanī, transmitted by his son"});
+Object.assign(window.GnammaHadithReports["muslim:1690a"]||{},{"chapter_en":"The fixed punishment for zinā","chapter_ar":"باب حَدِّ الزِّنَا","narrator":"ʿUbāda b. al-Ṣāmit"});
+Object.assign(window.GnammaHadithReports["muslim:1691a"]||{},{"chapter_en":"The ruling concerning a married person convicted of zinā","chapter_ar":"باب رَجْمِ الثَّيِّبِ فِي الزِّنَا","narrator":"ʿAbd Allāh b. ʿAbbās, reporting ʿUmar's sermon"});
+Object.assign(window.GnammaHadithReports["muslim:1587c"]||{},{"chapter_en":"Exchange of gold and silver for immediate delivery","chapter_ar":"باب الصَّرْفِ وَبَيْعِ الذَّهَبِ بِالْوَرِقِ نَقْدًا","narrator":"ʿUbāda b. al-Ṣāmit"});
+Object.assign(window.GnammaHadithReports["muslim:343a"]||{},{"chapter_en":"Earlier ruling concerning ritual bathing and emission","chapter_ar":"باب إِنَّمَا الْمَاءُ مِنَ الْمَاءِ","narrator":"Abū Saʿīd al-Khudrī"});
+Object.assign(window.GnammaHadithReports["muslim:349"]||{},{"chapter_en":"Later ruling on ritual bathing following intercourse","chapter_ar":"باب نَسْخِ الْمَاءُ مِنَ الْمَاءِ وَوُجُوبِ الْغُسْلِ بِالْتِقَاءِ الْخِتَانَيْنِ","narrator":"Abū Mūsā al-Ashʿarī, relating the disagreement"});
