@@ -18,7 +18,7 @@ const DATA={
  {id:'search-en',kind:'note',title:'Searchable English note',body:'SearchableTermGamma: the author distinguishes legal demonstration.',
   target:{kind:'quote',section:'1',segment:0,lang:'en',quote:eq,prefix:'',suffix:''},
   created:Date.UTC(2026,9,21),updated:Date.UTC(2026,9,21),dateSource:'recorded',deleted:0},
- {id:'search-ar',kind:'note',title:'Arabic note and French',body:'مقدمة العلوم الدقيقة بين الحقيقة والأصول؛ والتحليل. Des idées françaises.',
+ {id:'search-ar',kind:'note',title:'Arabic note and French',body:'مقدمة العلوم الدقيقة بين الحقيقة والأصول؛ والتحليل. بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. Des idées françaises.',
   target:{kind:'quote',section:'1',segment:0,lang:'ar',quote:aq,prefix:'',suffix:''},
   created:Date.UTC(2026,9,21),updated:Date.UTC(2026,9,21),dateSource:'recorded',deleted:0},
  {id:'search-free',kind:'note',title:'Unattached discussion',body:'UnattachedSearchablePhi includes <script>not executable</script>.',
