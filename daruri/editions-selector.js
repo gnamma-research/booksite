@@ -24,6 +24,8 @@
   let tier='reading',preset='reading',tab='reading',customOpen=false;
   let catalog=null,addon=null,reference=null,baseMaps=null,root=null,requestId=0;
   let personalReady=false,selectedFile='',selectedRow=null;
+  // Existing PDFs are retrieved and SHA-256 checked on request, never falsely "generated".
+  let preparation={key:'',root:null,controller:null,request:0,busy:false,url:null,error:''};
   const esc=value=>String(value??'').replace(/[&<>"']/g,
     c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const iconPaths={
@@ -99,14 +101,14 @@
         '<div class="gn-es-setting gn-es-presets" data-es-presets>'+
           '<span class="gn-es-setting-label">Start with</span><div class="gn-es-setting-body">'+
             '<div class="gn-es-preset-options" role="group" aria-label="Starting edition">'+
-              '<button type="button" class="gn-es-preset" data-es-preset="reading" aria-pressed="true"><strong>Reading</strong><small>Clean text</small></button>'+
-              '<button type="button" class="gn-es-preset" data-es-preset="study" aria-pressed="false"><strong>Study</strong><small>Guided notes</small></button>'+
-              '<button type="button" class="gn-es-preset" data-es-preset="custom" aria-pressed="false"><strong>Custom</strong><small>Choose options</small></button>'+
+              '<button type="button" class="gn-es-preset" data-es-preset="reading" aria-pressed="true"><strong>Reading</strong><small>Text only</small></button>'+
+              '<button type="button" class="gn-es-preset" data-es-preset="study" aria-pressed="false"><strong>Study</strong><small>Notes + index</small></button>'+
+              '<button type="button" class="gn-es-preset" data-es-preset="custom" aria-pressed="false"><strong>Customize</strong><small>Other options</small></button>'+
             '</div><span class="gn-es-inline-note" data-es-preset-note></span></div>'+
         '</div>'+
-        '<div class="gn-es-custom-head" data-es-custom-head>'+
+        '<div class="gn-es-custom-head" data-es-custom-head hidden>'+
           '<button type="button" class="gn-es-custom-trigger" data-es-custom aria-expanded="false" aria-controls="gn-es-custom">'+
-          '<span>Customize edition</span>'+icon('chevron','gn-es-custom-arrow')+'</button></div>'+
+          '<span>Custom edition settings</span>'+icon('chevron','gn-es-custom-arrow')+'</button></div>'+
         '<div id="gn-es-custom" class="gn-es-custom" hidden>'+
           '<div class="gn-es-custom-setting">'+
             '<span class="gn-es-setting-label">Publisher notes</span>'+
@@ -161,33 +163,45 @@
               '</div>'+
             '</div></div>'+
           '<section class="gn-es-spec" aria-label="Current document configuration">'+
-            '<div class="gn-es-spec-head"><strong>Selected PDF</strong><span data-es-count></span></div>'+
+            '<div class="gn-es-spec-head"><strong>Your selected edition</strong><span data-es-count></span></div>'+
             '<p class="gn-es-spec-lead" data-es-spec-lead></p>'+
             '<p class="gn-es-spec-layout" data-es-spec-layout></p>'+
             '<p class="gn-es-spec-notes" data-es-spec-notes></p>'+
             '<p class="gn-es-spec-apparatus" data-es-spec-apparatus></p>'+
           '</section>'+
           '<section class="gn-es-availability" aria-live="polite" aria-atomic="true">'+
-            '<strong data-es-availability-heading>Checking published PDFs…</strong><p data-es-availability-detail></p></section>'+
+            '<strong data-es-availability-heading>Checking PDF selection…</strong><p data-es-availability-detail></p></section>'+
           '<div id="pe-alert" class="gn-es-inline-alert" role="status" hidden></div>'+
           '<p id="pe-description" class="gn-es-inline-note" hidden></p>'+
           '<div class="gn-es-actions">'+
-            '<a class="gn-es-action gn-es-action-primary" data-es-action="open" aria-label="Open exact published PDF" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Open PDF</span></a>'+
+            '<button type="button" class="gn-es-action gn-es-action-primary" id="gn-es-prepare" data-es-prepare>'+
+              '<span data-es-prepare-label>Prepare PDF</span><progress data-es-prepare-progress aria-label="PDF retrieval and verification progress" max="100" value="0" hidden></progress></button>'+
+            '<a class="gn-es-action gn-es-action-primary" data-es-action="download" download hidden>Download PDF</a>'+
+            '<a class="gn-es-action gn-es-action-secondary" data-es-action="open" aria-label="Open existing published PDF in browser" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Open existing PDF</span></a>'+
             '<button class="gn-es-action gn-es-action-primary" type="submit" id="pe-generate" hidden disabled>Create my PDF</button>'+
-          '</div>'+
+          '</div><p id="gn-es-prepare-status" class="gn-es-prepare-status" role="status" hidden></p>'+
           '<a id="pe-clean" hidden></a>'+
           '<div id="pe-progress" hidden role="status" aria-live="polite">'+
             '<span id="pe-progress-text"></span><progress id="pe-bar" max="100" value="0"></progress></div>'+
           '<div id="pe-result" class="gn-es-export-result" hidden>'+
-            '<strong>Your personal PDF has been created on this device.</strong>'+
+            '<strong>Your personal PDF is prepared.</strong>'+
             '<div class="gn-es-export-result-actions">'+
-              '<a id="pe-result-link" download>Download again</a>'+
+              '<a id="pe-result-link" download>Download my PDF</a>'+
               '<a id="pe-open" target="_blank" rel="noopener">Open / print PDF</a>'+
               '<button type="button" id="pe-share" hidden>Share on this device</button>'+
             '</div></div>'+
         '</form>'+
-        '<p class="gn-es-study-guide" data-es-study-guide hidden>'+
-          '<a href="daruri-study-guide.pdf?v=daruri6-sources-20261020" target="_blank" rel="noopener noreferrer">Study Guide PDF ↗</a></p>'+
+      '</section>'+
+      '<section class="gn-es-offline" aria-labelledby="gn-es-offline-title">'+
+        '<h2 id="gn-es-offline-title">Offline reader · HTML</h2>'+
+        '<p>Download the reading website, dictionary, fonts and supporting files. This is not a PDF, and your private Reading Desk notes are not included.</p>'+
+        '<button type="button" class="gn-es-offline-download" data-daruri-bundle="html">Download HTML reader (.zip)</button>'+
+        '<details class="gn-es-offline-more"><summary>Also need the PDFs offline?</summary>'+
+          '<p>Download the same HTML reader with the available book PDFs. This is a much larger archive.</p>'+
+          '<button type="button" class="gn-es-offline-download gn-es-offline-secondary" data-daruri-bundle="full">Download HTML + PDFs (.zip)</button>'+
+        '</details>'+
+        '<p class="gn-offline-bundle-status" role="status" aria-live="polite"></p>'+
+        '<p class="gn-es-offline-footnote">Unzip without moving individual files. For complete functionality on desktop, open the folder using a local web server; opening file:// directly can restrict browser features. No internet is needed when served locally.</p>'+
       '</section></div>';
   }
   function apparatusLabel(s){
@@ -251,7 +265,7 @@
     }
     root.querySelector('#gn-es-panel').setAttribute('aria-labelledby','gn-es-tab-'+tab);
     root.querySelector('[data-es-presets]').hidden=tab==='reference';
-    root.querySelector('[data-es-custom-head]').hidden=tab==='reference';
+    root.querySelector('[data-es-custom-head]').hidden=tab==='reference'||preset!=='custom';
     root.querySelector('#gn-es-custom').hidden=tab==='reference'||!customOpen;
     root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen&&tab!=='reference'));
     root.querySelector('[data-es-reference-inventory]').hidden=tab!=='reference';
@@ -341,7 +355,7 @@
       if(!mapReady)detail.textContent='This exact PDF has no verified personal map. Choose another edition; no substitute will be used.';
       else detail.textContent='Preparing browser-local personal PDF tools…';
     }
-    root.querySelector('[data-es-study-guide]').hidden=tier!=='study';
+    // Study Guide is a separate teaching companion, linked from its own Study Guide page.
     for(const b of root.querySelectorAll('[data-es-picker-mode]')){
       const value=b.dataset.esPickerMode;
       const checked=root.querySelector('input[name="pe-mode"]:checked')?.value;
