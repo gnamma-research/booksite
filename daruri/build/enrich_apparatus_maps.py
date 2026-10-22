@@ -39,8 +39,9 @@ def named_point(raw: dict,page_offset: int,total: int):
 def run():
     path=VARIANTS/"manifest.json"
     manifest=json.loads(path.read_text())
-    if len(manifest.get("files",[]))!=10 or manifest.get("status")!="verified":
-        raise ValueError("Expected ten independently verified apparatus PDFs")
+    if len(manifest.get("files",[]))!=120 or manifest.get("status")!="verified":
+        raise ValueError("Expected 120 independently verified apparatus PDFs")
+    appendix_cache={}
     for entry in manifest["files"]:
         filename=entry["filename"]
         full=VARIANTS/filename
@@ -48,8 +49,16 @@ def run():
         meta_path=VARIANTS/"maps"/(filename+".metadata.json")
         mapping=json.loads(old.read_text())
         metadata=json.loads(meta_path.read_text())
+        # Keep existing fully certified entry maps byte-for-byte.
+        if (mapping.get("entry_positions") and
+            mapping.get("entry_count") == entry.get("mapped_entries") and
+            entry.get("map_sha256") == digest(old.read_bytes())):
+            print("RETAIN MAP", filename, flush=True)
+            continue
         names=tuple(entry["apparatus"])
-        standalone=build_appendix(names)
+        if names not in appendix_cache:
+            appendix_cache[names]=build_appendix(names)
+        standalone=appendix_cache[names]
         with fitz.open(stream=standalone,filetype="pdf") as appendix,fitz.open(full) as merged:
             first=entry["base_pages"]
             if len(merged)!=first+len(appendix):raise ValueError("Mismatched supplement page count")
@@ -107,7 +116,7 @@ def run():
         entry["mapped_entries"]=mapping["entry_count"]
         print("MAP",filename,"entries",mapping["entry_count"],"sections",len(mapping["section_pages"]),flush=True)
     path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n")
-    print("PASS: apparatus heading positions and 258 source section destinations checked in all ten maps",flush=True)
+    print("PASS: apparatus heading positions and 258 source section destinations checked in all 120 maps",flush=True)
 
 if __name__=="__main__":
     run()

@@ -11,6 +11,9 @@ on:
       - 'daruri/sw.js'
       - 'daruri/qa/verify-personal-export.js'
       - 'daruri/qa/personal-export-browser.cjs'
+      - 'daruri/qa/personal-export-webkit.cjs'
+      - 'daruri/editions/apparatus/**'
+      - 'daruri/qa/verify_apparatus_maps.py'
   workflow_dispatch:
 jobs:
   pdf-export:

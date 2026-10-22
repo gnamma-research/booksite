@@ -2,7 +2,7 @@ name: Build Daruri Apparatus PDFs and Personal Maps
 on:
   workflow_dispatch:
   push:
-    branches: [feature/daruri-single-pdf-apparatus-20261021]
+    branches: [feature/daruri-full-apparatus-20261022]
     paths:
       - ".github/workflows/daruri-apparatus-variants.yml"
       - "daruri/build/build_apparatus_variants.py"
@@ -11,13 +11,13 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: daruri-apparatus-branch-release
+  group: daruri-apparatus-matrix-optimized-v2
   cancel-in-progress: false
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,7 +31,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
           python -m pip install --disable-pip-version-check "weasyprint>=68,<69" "PyMuPDF==1.26.7" "pypdf==5.9.0"
-      - name: Build all ten additional static PDFs and source maps
+      - name: Build 120 complete-work apparatus PDFs and source maps
         run: |
           python daruri/build/build_apparatus_variants.py
           python daruri/build/enrich_apparatus_maps.py
@@ -79,12 +79,12 @@ jobs:
             cp -a "$SAVED/." daruri/editions/apparatus/
             git add -A daruri/editions/apparatus
             if git diff --cached --quiet; then
-              echo "All ten PDF files and verified maps are already published."
+              echo "All 120 PDF files and verified maps are already published."
               exit 0
             fi
-            git commit -m "Publish ten SHA-verified apparatus PDFs and entry maps [skip ci]"
+            git commit -m "Publish 120 SHA-verified apparatus PDFs and entry maps [skip ci]"
             if git push origin "HEAD:$GITHUB_REF_NAME"; then
-              echo "Published all ten apparatus PDFs and verified maps."
+              echo "Published 120 apparatus PDFs and verified maps."
               exit 0
             fi
             echo "Concurrent GitHub commit; retrying from branch head ($attempt)"
