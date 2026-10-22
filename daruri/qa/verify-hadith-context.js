@@ -24,7 +24,7 @@ for(const note of Object.values(spec.notes_by_section)){
  assert.deepEqual([...a.refs].sort(),expected,'Missing or added primary Hadith citation '+note.id);
  occurrences+=a.refs.length;
  const priorities=a.refs.map(id=>data.sources[id].priority);
- assert.deepEqual(priorities,[...priorities].sort((x,y)=>x-y),'Bukhari/Muslim sources must sort before other collections');
+ assert.deepEqual([...priorities],[...priorities].sort((x,y)=>x-y),'Bukhari/Muslim sources must sort before other collections');
  for(const id of a.refs)assert.equal(data.sources[id].url,'https://sunnah.com/'+id);
 }
 assert.equal(occurrences,55,'No source citation disappears when priority order changes');
