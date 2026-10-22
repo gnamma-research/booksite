@@ -130,13 +130,10 @@ def render_component(name: str) -> str:
         "applications": applications,
     }[name]()
 
-def build_appendix(names: tuple[str, ...], *, style_css: str = "") -> bytes:
-    """Render canonical apparatus; alternate page designs may supply their own
-    explicitly approved CSS.  Empty style_css preserves historical A4 bytes.
-    Never use apparatus CSS to reflow the independently rendered source body.
-    """
+def build_appendix(names: tuple[str, ...]) -> bytes:
+    """Render exactly the currently approved A4 scholarly apparatus."""
     sections = "".join(render_component(name) for name in names)
-    html = '<!doctype html><html><head><meta charset="utf-8"><style>' + CSS + style_css + \
+    html = '<!doctype html><html><head><meta charset="utf-8"><style>' + CSS + \
            '</style></head><body>' + sections + '</body></html>'
     return HTML(string=html, base_url=str(HERE)).write_pdf()
 
