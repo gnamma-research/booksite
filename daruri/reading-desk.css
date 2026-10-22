@@ -618,3 +618,7 @@ body.gn-rd-print #gn-rd-print-root{box-sizing:border-box}
 .gn-rd-card-open .gn-rd-item-heading{display:flex;align-items:center;gap:8px;min-width:0;width:100%;color:var(--ink,#283932)}
 .gn-rd-card-open .gn-rd-item-heading strong{min-width:0;color:inherit}
 .gn-rd-card-open .gn-rd-item-heading>svg{width:17px;height:17px;flex:0 0 17px;color:var(--accent,#486f60)}
+
+/* Distinguishable note actions in the saved-item detail pane. */
+.gn-rd-detail-actions button[data-rd="add-note"],.gn-rd-detail-actions button[data-rd="edit"]{display:inline-flex;align-items:center;gap:7px}
+.gn-rd-detail-actions button .gn-personal-note-icon{width:17px;height:17px;flex:0 0 17px}
