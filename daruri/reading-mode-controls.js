@@ -116,6 +116,10 @@ function create({state,rd}){
  window.addEventListener('hashchange',schedule);
  document.addEventListener('gnamma-reading-desk-change',reindex);
  document.addEventListener('gnamma-reader-route-change',schedule);
+ // Refresh when another reader route makes the dock visible after rendering.
+ // The main-pane observer alone can fire before syncReadingChrome removes [hidden]
+ // in mobile WebKit; observing this attribute avoids an empty stale status.
+ new MutationObserver(schedule).observe(dock,{attributes:true,attributeFilter:['hidden']});
  const main=document.getElementById('mainContent');
  if(main)new MutationObserver(schedule).observe(main,{childList:true,subtree:true});
  reindex();schedule();
