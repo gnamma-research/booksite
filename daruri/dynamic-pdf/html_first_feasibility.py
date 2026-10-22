@@ -136,6 +136,43 @@ def compare_with_approved(candidate: Path, approved: Path) -> dict:
         }
 
 
+def diagnose_singlepass_apparatus(candidate: Path, approved: Path, source_pages: int) -> dict:
+    """Compare actual glyph geometry; never mistake equal page count for parity."""
+    if not approved.is_file():
+        return {"available": False}
+    with fitz.open(candidate) as new, fitz.open(approved) as gold:
+        differences = []
+        for n in range(source_pages, min(len(new), len(gold))):
+            a, b = gold[n], new[n]
+            wa = a.get_text("words", sort=False)
+            wb = b.get_text("words", sort=False)
+            distinct = []
+            for i, (u, v) in enumerate(zip(wa, wb)):
+                if len(distinct) >= 6:
+                    break
+                delta = [round(float(v[k]) - float(u[k]), 3) for k in range(4)]
+                if u[4] != v[4] or max(abs(x) for x in delta) > 0.002:
+                    distinct.append({
+                        "word_index": i, "old": u[4][:35], "new": v[4][:35],
+                        "old_rect": [round(x, 3) for x in u[:4]],
+                        "new_rect": [round(x, 3) for x in v[:4]],
+                        "delta": delta
+                    })
+            differences.append({
+                "page": n + 1, "approved_words": len(wa),
+                "generated_words": len(wb),
+                "first_differences": distinct
+            })
+        return {
+            "source_pages": source_pages, "compared_appendix_pages": len(differences),
+            "sample_pages": differences[:3],
+            "source_locator_links": sum(
+                len(new[n].get_links()) for n in range(source_pages, len(new))
+            ),
+            "note": "Diagnostic only: custom HTML appendix does not yet equal standalone approved packet."
+        }
+
+
 def build_source(tier: str, language: str, output: Path, html: Path, *, editorial_titles: bool = False) -> dict:
     if tier == "reading":
         raw = output.with_name("raw-" + output.name)
@@ -316,6 +353,9 @@ def main():
             **one, "pdf": actual,
             "vs_approved": compare_with_approved(
                 pdf, ROOT/"editions"/ONE_PASS_GOLD
+            ),
+            "appendix_geometry_diagnostic": diagnose_singlepass_apparatus(
+                pdf, ROOT/"editions"/ONE_PASS_GOLD, 76
             ),
         }
         rows.append(row)
