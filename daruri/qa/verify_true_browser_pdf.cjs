@@ -70,6 +70,8 @@ async function main(){
    external_requests:result.externalNetworkRequests.length,
    prebuilt_pdf_requests:result.prebuiltPdfRequests.length,
    page_errors:fatal.length,
+   error:status?.error?.slice(0,1800)||null,
+   consoleErrors:onConsole.slice(0,4),
    log_file:outputLog
  }));
  if(status?.state!=='done'||fatal.length||result.externalNetworkRequests.length||
