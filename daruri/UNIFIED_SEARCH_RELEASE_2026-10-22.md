@@ -62,3 +62,40 @@ Before updating the public default branch, rebase on its **current** tip. Other 
   is retained. Private notes and search strings stay in this browser tab.
 - Browser regressions: node daruri/qa/verify-search-return.cjs
   (16 cross-work and navigation checks, synthetic isolated browser data).
+
+
+## Word proximity and further plain transliteration (22 October)
+
+Proximity is available in Research search > Match > Proximity. Enter one
+term in the main field and the second term below it. Choose a maximum
+of 0, 1, 3, 5, 10, 20 or 50 intervening words, with optional word-order
+restriction. Zero means adjacent. The engine never matches across
+different authorial paragraphs or between the Arabic and English
+translations. Other documents are matched within a single text field
+(not across a joined title and note body). Results include the actual
+word gap and two highlighted forms, including in the destination reader
+where CSS Custom Highlights are supported.
+
+Readable operators are accepted: ijtihad NEAR/5 taqlid (either order)
+and ijtihad BEFORE/5 taqlid (required order). Entering the full operator
+in the main field fills the visual controls. Curated bilingual terminology
+equivalents and common attached Arabic particles are supported, but this
+is not a morphological root search or AI semantic similarity search.
+
+Plain Romanization now also accepts common alternatives for verified
+technical terms, including ijtehad, ijtehaad, ijtahad, qeyas, kiyas,
+al-qiyas, al qiyas, ijmaa, ejma, osool, hadees, takleed and maslahah.
+An optional definite article is supported for known terminology.
+Exact words remains a literal mode without automatic variant expansion.
+
+Regex is NOT included in this release. An opt-in expert mode could use
+a bounded non-backtracking engine with Unicode awareness. Arbitrary JS
+regex execution risks catastrophic backtracking. It cannot substitute
+for genuine Arabic lemmatization or morphological analysis.
+
+The dedicated test suite is daruri/qa/verify-proximity.cjs and covers
+word gaps, order, clitics, alternative transliterations, UI controls,
+two-term highlighting, cross-book retrieval and mobile geometry.
+The GitHub Actions workflow runs all three browser suites. The new
+gnamma-proximity.js is versioned and cached by the service worker.
+This change does not touch PDFs or the two-tab editions selector.

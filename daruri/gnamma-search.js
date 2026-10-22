@@ -2,7 +2,7 @@
    Retains the previous Daruri search as a no-script / failed-enhancement fallback. */
 (function () {
 'use strict';
-const CONFIG = {version:'20261022-search-return2', source:'al-Ḍarūrī', pageSize:40, quickSize:6,
+const CONFIG = {version:'20261022-proximity1', source:'al-Ḍarūrī', pageSize:40, quickSize:6,
   moreUrl:'../texts/al-ghazali/al-mustasfa/data/gnamma-search-index.json'};
 const $ = (s,p=document) => p.querySelector(s);
 const $$ = (s,p=document) => Array.from(p.querySelectorAll(s));
@@ -93,26 +93,26 @@ function snippet(raw,match,rtl){
  return (beg?'…':'')+esc(txt.slice(beg,lo))+'<mark>'+esc(txt.slice(lo,hi))+'</mark>'+esc(txt.slice(hi,end))+(end<txt.length?'…':'');
 }
 const registry = [
- {id:'qiyas',ar:'قياس',en:['qiyās','qiyas','analogy'],definition:'Analogy and syllogistic reasoning'},
- {id:'ijtihad',ar:'اجتهاد',en:['ijtihād','ijtihad','juristic reasoning','independent legal reasoning'],definition:'Independent juristic effort'},
- {id:'taqlid',ar:'تقليد',en:['taqlīd','taqlid','following authority'],definition:'Following an authoritative judgement'},
- {id:'tawatur',ar:'تواتر',en:['tawātur','tawatur','mass transmission'],definition:'Mass or recurrent transmission'},
- {id:'ijma',ar:'إجماع',en:['ijmāʿ','ijma','consensus'],definition:'Juristic consensus'},
+ {id:'qiyas',ar:'قياس',en:['qiyās','qiyas','qeyas','qiyaas','kiyas','analogy'],definition:'Analogy and syllogistic reasoning'},
+ {id:'ijtihad',ar:'اجتهاد',en:['ijtihād','ijtihad','ijtehad','ijtehaad','ijtahad','ijtihaad','juristic reasoning','independent legal reasoning'],definition:'Independent juristic effort'},
+ {id:'taqlid',ar:'تقليد',en:['taqlīd','taqlid','taklid','takleed','following authority'],definition:'Following an authoritative judgement'},
+ {id:'tawatur',ar:'تواتر',en:['tawātur','tawatur','tawaatur','mass transmission'],definition:'Mass or recurrent transmission'},
+ {id:'ijma',ar:'إجماع',en:['ijmāʿ','ijma','ijmaa','ejma','consensus'],definition:'Juristic consensus'},
  {id:'naskh',ar:'نسخ',en:['naskh','abrogation'],definition:'Abrogation'},
- {id:'illah',ar:'علة',en:['ʿilla','illa','legal cause'],definition:'Effective cause'},
- {id:'hukm',ar:'حكم',en:['ḥukm','hukm','ruling','legal judgement'],definition:'Legal judgement'},
+ {id:'illah',ar:'علة',en:['ʿilla','illa','illah','3illa','legal cause'],definition:'Effective cause'},
+ {id:'hukm',ar:'حكم',en:['ḥukm','hukm','hokm','hokum','ruling','legal judgement'],definition:'Legal judgement'},
  {id:'amr',ar:'أمر',en:['amr','command'],definition:'Command'},
  {id:'nahy',ar:'نهي',en:['nahy','prohibition'],definition:'Prohibition'},
  {id:'dalala',ar:'دلالة',en:['dalāla','dalala','indication'],definition:'Indication'},
  {id:'zann',ar:'ظن',en:['ẓann','zann','probability'],definition:'Probability'},
- {id:'maslaha',ar:'مصلحة',en:['maṣlaḥa','maslaha','benefit','welfare'],definition:'Benefit'},
+ {id:'maslaha',ar:'مصلحة',en:['maṣlaḥa','maslaha','maslahah','masleha','benefit','welfare'],definition:'Benefit'},
  {id:'taklif',ar:'تكليف',en:['taklīf','taklif','legal responsibility'],definition:'Responsibility'},
- {id:'usul',ar:'أصول الفقه',en:['uṣūl al-fiqh','usul al-fiqh','usool al-fiqh','usul','usool','legal theory'],definition:'Legal theory'},
- {id:'sunna',ar:'سنة',en:['Sunna','Sunnah','sunah','prophetic tradition'],definition:'Prophetic practice and precedent'},
+ {id:'usul',ar:'أصول الفقه',en:['uṣūl al-fiqh','usul al-fiqh','usool al-fiqh','usul','usool','osool','legal theory'],definition:'Legal theory'},
+ {id:'sunna',ar:'سنة',en:['Sunna','Sunnah','sunah','suna','prophetic tradition'],definition:'Prophetic practice and precedent'},
  {id:'sharia',ar:'شريعة',en:['sharīʿa','sharia','shariah','shareeah'],definition:'Revealed law'},
  {id:'ilm',ar:'علم',en:['ʿilm','ilm','3ilm','knowledge'],definition:'Knowledge'},
  {id:'fiqh',ar:'فقه',en:['fiqh','fikh','jurisprudence'],definition:'Jurisprudence'},
- {id:'hadith',ar:'حديث',en:['ḥadīth','hadith','hadeeth'],definition:'Prophetic report'}
+ {id:'hadith',ar:'حديث',en:['ḥadīth','hadith','hadeeth','hadees','hadis'],definition:'Prophetic report'}
 ];
 // Ordinary scholarly romanization: accept doubled vowels and common Latin chat forms.
  // This is intentionally a *terminology* lookup key, not a general fuzzy search across
@@ -121,8 +121,17 @@ function romanKey(word){
  const value=fold(word);
  if(hasArabic(value)||!/^[a-z0-9 -]+$/.test(value))return value;
  return value.replace(/3(?=[a-z])/g,'').replace(/2(?=[a-z])/g,'')
-  .replace(/7(?=[a-z])/g,'h')
+  .replace(/7(?=[a-z])/g,'h').replace(/[- ]+/g,'')
   .replace(/aa/g,'a').replace(/ee|ii/g,'i').replace(/oo|ou|uu/g,'u');
+}
+function lookupGroup(word){
+ const norm=fold(word);
+ if(!norm||hasArabic(norm))return aliases.get(norm)||null;
+ const key=romanKey(norm);
+ return aliases.get(norm)||aliases.get(key)||
+   // The definite article is acceptable as a query spelling, not a
+   // general substring rule over every literary word.
+   (key.startsWith('al')&&key.length>4?aliases.get(key.slice(2)):null)||null;
 }
 const aliases=new Map();
 function aliasGroup(words,label,provenance){
@@ -260,7 +269,7 @@ function queryPlan(q,mode){
  const phrase=(q[0]==='"'&&q[q.length-1]==='"')||(q[0]==='“'&&q[q.length-1]==='”');
  const raw=phrase?q.slice(1,-1).trim():q.trim(),norm=fold(raw);
  if(!norm)return {raw,norm,need:[],direct:null,phrase};
- const group=mode==='literal'?null:(aliases.get(norm)||aliases.get(romanKey(norm)));
+ const group=mode==='literal'?null:lookupGroup(norm);
  // Exact words remain the only source of literal search; variants are distinguishable.
  const extras=group?group.words.filter(x=>x!==norm).slice(0,16):[];
  return {raw,norm,need:phrase||group?[[norm,...extras]]:norm.split(/\s+/).filter(Boolean).map(w=>[w]),
@@ -302,6 +311,60 @@ function findMatch(rec,plan,mode){
  hits.sort((a,b)=>b.priority-a.priority);
  return hits[0];
 }
+// Proximity is positional *within one field* (language/paragraph) only.
+// Window N counts intervening tokens; it never matches Arabic against English.
+function nearParameters(query,options){
+ const opts=options||{};
+ const raw=String(query||'').trim();
+ let left=raw,right=String(opts.nearTerm||'').trim();
+ let maxGap=Math.max(0,Math.min(50,Math.round(Number(opts.nearGap) || 0)));
+ let ordered=!!opts.nearOrdered,syntax=false;
+ const inline=raw.match(/^(.+?)\s+(NEAR|BEFORE)\/(\d{1,2})\s+(.+)$/i);
+ if(inline){
+  left=inline[1].trim();right=inline[4].trim();
+  maxGap=Math.min(50,Number(inline[3]));ordered=inline[2].toUpperCase()==='BEFORE';
+  syntax=true;
+ }else if(!right){
+  // Convenient shorthand in proximity mode: two terms separated by a space.
+  // Longer phrases should use the dedicated second-term field.
+  const simple=raw.match(/^([^\s]+)\s+([^\s]+)$/u);
+  if(simple){left=simple[1];right=simple[2];}
+ }
+ return {left,right,maxGap,ordered,syntax};
+}
+function findProximity(rec,leftPlan,rightPlan,options){
+ const engine=window.GnammaProximity;
+ if(!engine||rec.type==='text'&&rec.subtype!=='Authorial text')return null;
+ const a=leftPlan.need.flat(),b=rightPlan.need.flat();
+ if(!a.length||!b.length)return null;
+ // Never fuse an English translation, Arabic original and editorial metadata
+ // to invent a proximity relationship that the source itself does not have.
+ const fields=rec.fields.filter(f=>['en','ar','body','title'].includes(f.kind)&&
+   !(rec.type==='text'&&f.kind==='title')&&
+   !(rec.type==='other'&&['Selected bilingual passage','Arabic witness'].includes(rec.subtype)&&f.kind==='title'));
+ let best=null;
+ for(const f of fields){
+  if(!a.some(t=>f.norm.includes(fold(t)))||!b.some(t=>f.norm.includes(fold(t))))continue;
+  // Prose assembled with editorial " · " separators is not one passage.
+  const chunks=f.kind==='body'?f.raw.split(/\s+·\s+/u):[f.raw];
+  for(const raw of chunks){
+   if(!a.some(t=>fold(raw).includes(fold(t)))||!b.some(t=>fold(raw).includes(fold(t))))continue;
+   const hit=engine.find(raw,a,b,{maxGap:options.maxGap,ordered:options.ordered,normalize:fold});
+   if(!hit)continue;
+   const priority=90-hit.gap*2+(f.kind==='ar'||f.kind==='en'?20:0);
+   if(!best||priority>best.priority){
+    best={field:f.kind,raw,relation:'proximity',gap:hit.gap,maxGap:options.maxGap,
+      ordered:options.ordered,nearA:hit.a,nearB:hit.b,
+      leftQuery:options.left,rightQuery:options.right,
+      match:{term:hit.a.matched,at:hit.a.offsetStart,end:hit.a.offsetEnd},
+      priority,reason:'Within '+hit.gap+' intervening word'+(hit.gap===1?'':'s')+
+       (options.ordered?' · in order':' · either order')+
+       ' · same '+(f.kind==='ar'?'Arabic':f.kind==='en'?'English':f.kind==='title'?'title':'annotation')+' field (curated equivalents included)'};
+   }
+  }
+ }
+ return best;
+}
 function publicConcepts(plan,existing){
  if(!plan.norm)return [];
  const concepts=[],seen=new Set(existing.map(r=>r.work+':'+r.id));
@@ -330,12 +393,17 @@ function publicConcepts(plan,existing){
  return concepts;
 }
 function searchRecords(q,options){
- const opts=Object.assign({scope:'work',mode:'terms',sort:'relevance',facet:'all',owner:'all'},options||{});
- const plan=queryPlan(q,opts.mode);
- if(!plan.norm)return {results:[],facets:{},plan,total:0};
+ const opts=Object.assign({scope:'work',mode:'terms',sort:'relevance',facet:'all',owner:'all',
+   nearTerm:'',nearGap:5,nearOrdered:false},options||{});
+ const isNear=opts.mode==='proximity'||/^.+\s+(?:NEAR|BEFORE)\/\d{1,2}\s+.+$/i.test(String(q||''));
+ const near=isNear?nearParameters(q,opts):null;
+ const first=isNear?queryPlan(near.left,'terms'):null;
+ const second=isNear?queryPlan(near.right,'terms'):null;
+ const plan=isNear?{...first,near}:queryPlan(q,opts.mode);
+ if(!plan.norm||isNear&&!second.norm)return {results:[],facets:{all:0},plan,total:0,missingNear:Boolean(isNear&&!second.norm)};
  const corpus=baseItems.concat(opts.scope==='library'?otherItems:[],readPersonal());
  let hits=[];
- if(plan.direct){
+ if(plan.direct&&!isNear){
   const dst=plan.direct;
   const chosen=corpus.find(r=>dst.kind==='section'&&r.work==='daruri'&&r.id==='heading:'+dst.id
     ||dst.kind==='note'&&r.id===dst.id
@@ -346,7 +414,7 @@ function searchRecords(q,options){
   return {results:hits,facets:facetCounts(hits),plan,total:hits.length,direct:true};
  }
  for(const rec of corpus){
-  const match=findMatch(rec,plan,opts.mode);
+  const match=isNear?findProximity(rec,first,second,near):findMatch(rec,plan,opts.mode);
   if(!match)continue;
   const score=match.priority+(rec.type==='text'?12:rec.type==='personal'||rec.type==='highlight'?10:
     rec.type==='dictionary'?8:rec.type==='concept'?6:3)+
@@ -426,7 +494,8 @@ function icon(type){const path={
 }
 const ui={opened:false,expanded:false,query:'',facet:'all',mode:'terms',scope:'work',
   sort:'relevance',display:'results',showFilters:false,page:CONFIG.pageSize,results:[],facets:{},
-  before:null,request:0,scroll:0,entryHash:'',entryScroll:0,pendingReturn:null};
+  before:null,request:0,scroll:0,entryHash:'',entryScroll:0,pendingReturn:null,
+  nearTerm:'',nearGap:5,nearOrdered:false};
 let host=null,inputTimer=0,renderNonce=0,lastStatus='';
 function filterButton(id,text,selected,extra){
  return '<button type="button" class="gns-chip'+(selected?' gns-current':'')+'" data-gns-'+extra+'="'+xml(id)+'" aria-pressed="'+selected+'">'+esc(text)+'</button>';
@@ -438,8 +507,22 @@ function scopeSelector(){
 }
 function modeSelector(){
  return '<label class="gns-setting"><span>Match</span><select id="gns-mode" aria-label="Search mode">'+
-  [['literal','Exact words'],['terms','Words + terms'],['concepts','Conceptual links']].map(x=>
+  [['literal','Exact words'],['terms','Words + terms'],['proximity','Proximity'],['concepts','Conceptual links']].map(x=>
   '<option value="'+x[0]+'"'+(ui.mode===x[0]?' selected':'')+'>'+x[1]+'</option>').join('')+'</select></label>';
+}
+function proximityControls(){
+ if(ui.mode!=='proximity')return '';
+ return '<div class="gns-near-options" role="group" aria-label="Proximity search settings">'+
+   '<label class="gns-setting gns-near-term"><span>Second term</span>'+
+    '<input id="gns-near-term" type="search" dir="auto" autocomplete="off" spellcheck="false" '+
+     'placeholder="e.g. illa or علة" aria-label="Second term for proximity search" value="'+xml(ui.nearTerm)+'"></label>'+
+   '<label class="gns-setting gns-near-gap"><span>Intervening words</span><select id="gns-near-gap" aria-label="Maximum words between terms">'+
+    [0,1,3,5,10,20,50].map(n=>'<option value="'+n+'"'+(ui.nearGap===n?' selected':'')+'>'+n+'</option>').join('')+
+   '</select></label>'+
+   '<label class="gns-near-order"><input id="gns-near-order" type="checkbox"'+(ui.nearOrdered?' checked':'')+
+    '> Keep word order</label>'+
+   '<span class="gns-near-help">Both terms must occur in the same passage and language. 0 means adjacent; 5 permits up to five words between them.</span>'+
+   '</div>';
 }
 function filterPanel(){
  const hasResult=ui.results.length||ui.query;
@@ -453,7 +536,7 @@ function filterPanel(){
    '<label class="gns-setting"><span>View</span><select id="gns-display" aria-label="Results display">'+
      '<option value="results"'+(ui.display==='results'?' selected':'')+'>Results</option>'+
      '<option value="concordance"'+(ui.display==='concordance'?' selected':'')+'>Concordance</option>'+
-   '</select></label></div>';
+   '</select></label></div>'+proximityControls();
 }
 function resultControls(){
  const count=ui.resultCount||0;
@@ -463,9 +546,14 @@ function resultControls(){
    suggested.map(t=>'<button type="button" data-gns-example="'+xml(t.query)+'">'+esc(t.label)+
     (t.arabic?' <span lang="ar" dir="rtl">'+esc(t.arabic)+'</span>':'')+'</button>').join('')+'</div>':'';
 
+ if(ui.mode==='proximity'&&ui.query&&!nearParameters(ui.query,ui).right){
+  return '<div class="gns-intro"><h3>Find words near one another</h3>'+
+   '<p>Enter a second term above. Results are ranked by the number of <strong>intervening words</strong>, and must appear in one language and one passage.</p>'+
+   '<p>For example, search <strong>ijtihad</strong> near <strong>taqlid</strong>, or type <code>ijtihad NEAR/5 taqlid</code> in the main field.</p></div>';
+ }
  if(!ui.query)return '<div class="gns-intro"><h3>Search the edition and your research</h3>'+
   '<p>Arabic and English passages, editorial notes, source citations, historical dictionaries, concepts, legal applications and your own saved work.</p>'+
-  '<p>Try <button data-gns-example="qiyās">qiyās</button>, <button data-gns-example="اجتهاد">اجتهاد</button>, '+
+  '<p>Try <button data-gns-example="qiyas">qiyas</button>, <button data-gns-example="ijtihad">ijtihad</button>, '+
   '<button data-gns-example="§120">§120</button> or <button data-gns-example="N001">N001</button>.</p>'+
   '<small>Private annotations never leave your browser. Open Research search for full filters and concordance.</small></div>';
  const status=fetching?' · loading al-Mustaṣfā…':failedOther&&ui.scope==='library'?' · other work unavailable':'';
@@ -478,12 +566,34 @@ function resultControls(){
   (ui.scope==='library'&&!otherLoaded&&fetching?'<p class="gns-wait">Loading other published works; the results will update automatically.</p>':'')+hint;
 }
 function getTypeIcon(t){return icon(t==='personal'?'personal':t==='highlight'?'highlight':t==='note'||t==='source'?'note':t);}
+function proximitySnippet(raw,hit){
+ const text=String(raw||'').replace(/\s+/g,' ').trim(),mapped=foldMapped(text);
+ if(!mapped.offsets.length)return esc(text.slice(0,250));
+ const range=(span)=>{
+  const first=mapped.offsets[span.offsetStart],last=mapped.offsets[span.offsetEnd-1];
+  return first&&last?[first[0],last[1]]:null;
+ };
+ const ra=range(hit.nearA),rb=range(hit.nearB);
+ if(!ra||!rb)return snippet(text,{term:hit.nearA?.matched||''});
+ const spans=[{start:ra[0],end:ra[1],name:'one'},{start:rb[0],end:rb[1],name:'two'}]
+    .sort((a,b)=>a.start-b.start);
+ const first=Math.max(0,spans[0].start-65),last=Math.min(text.length,spans[1].end+90);
+ let out=first?'…':'',cursor=first;
+ for(const span of spans){
+  out+=esc(text.slice(cursor,span.start));
+  out+='<mark class="gns-near-'+span.name+'">'+esc(text.slice(span.start,span.end))+'</mark>';
+  cursor=span.end;
+ }
+ return out+esc(text.slice(cursor,last))+(last<text.length?'…':'');
+}
 function markupResult(r,i,kwic=false){
  const loc=r.locator||'',priv=r.privacy==='private',work=r.work==='mustasfa'?'al-Mustaṣfā':'al-Ḍarūrī';
  const source=r.subtype?labelFor(r.type)+' · '+r.subtype:labelFor(r.type);
  const reason=r.matched?.reason||'';
  const text=r.matched?.raw||r.en||r.ar||r.body||r.title||'';
- const context=snippet(text,r.matched?.match||{term:r.matched?.term||ui.query},hasArabic(text));
+ const context=r.matched?.relation==='proximity'?
+  proximitySnippet(text,r.matched):
+  snippet(text,r.matched?.match||{term:r.matched?.term||ui.query},hasArabic(text));
  const title=r.type==='text'&&r.subtype==='Authorial text'?r.title:r.title;
  const heading=(r.type==='text'||r.type==='source'||r.type==='note'?loc:'');
  const rowLabel=esc(work)+' · '+esc(source)+(heading?' · '+esc(heading):'');
@@ -492,6 +602,7 @@ function markupResult(r,i,kwic=false){
  if(r.work==='mustasfa'&&r.tag==='arabic-untranslated')tags+='<span class="gns-scope-label">Arabic witness · untranslated</span>';
  if(r.matched?.relation==='concept')tags+='<span class="gns-scope-label">Concept relation</span>';
  if(r.matched?.relation==='terminology')tags+='<span class="gns-scope-label">Linked term</span>';
+ if(r.matched?.relation==='proximity')tags+='<span class="gns-scope-label">Proximity · '+r.matched.gap+' words between</span>';
  if(kwic){
   const side=(r.matched?.field==='ar'||(hasArabic(text)&&r.matched?.field!=='en'));
   return '<button type="button" class="gns-result gns-kwic" data-gns-result="'+i+'">'+
@@ -539,7 +650,7 @@ function markup(){
   '<section class="gns-dialog'+(ui.expanded?' gns-expanded':'')+'" role="dialog" aria-modal="true" aria-labelledby="gns-title">'+
    '<header class="gns-header">'+
    '<h2 id="gns-title" class="gns-sr-only">Search Gnamma texts and annotations</h2>'+
-   '<label class="gns-searchbox"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6"/><path d="m15.5 15.5 5 5"/></svg><input id="gns-query" type="search" inputmode="search" autocomplete="off" spellcheck="false" dir="auto" placeholder="Search text, concepts, notes…" aria-label="Search Arabic, English and annotations" value="'+xml(ui.query)+'"/></label>'+
+   '<label class="gns-searchbox"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6"/><path d="m15.5 15.5 5 5"/></svg><input id="gns-query" type="search" inputmode="search" autocomplete="off" spellcheck="false" dir="auto" placeholder="'+(ui.mode==='proximity'?'First term, e.g. qiyas':'Search text, concepts, notes…')+'" aria-label="Search Arabic, English and annotations" value="'+xml(ui.query)+'"/></label>'+
    '<button class="gns-icon-button" data-gns-toggle-filters="1" aria-label="Search options" aria-expanded="'+(ui.showFilters||ui.expanded)+'" title="Search options">'+
      '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/><circle cx="15" cy="7" r="2" fill="currentColor"/></svg></button>'+
    '<button class="gns-icon-button" data-gns-close="1" aria-label="Close search" title="Close search">×</button></header>'+
@@ -554,15 +665,17 @@ function markup(){
 }
 function rerender(keepFocus=true){
  if(!ui.opened||!host)return;
- let focus=(document.activeElement===document.querySelector('#gns-query'));
- let selection;try{if(focus)selection=$('#gns-query').selectionStart;}catch(_){}
+ const previousFocus=document.activeElement?.id||'';
+ const focus=['gns-query','gns-near-term'].includes(previousFocus);
+ let selection;try{if(focus)selection=document.activeElement.selectionStart;}catch(_){}
  let oldScroll=$('#gns-listpane',host)?.scrollTop||0;
  const all=searchRecords(ui.query,ui);
  ui.results=all.results;ui.resultCount=all.results.length;ui.facetsCount=all.facets;ui.direct=all.direct;
  if(ui.facet==='mine'){ui.results=ui.results.filter(r=>r.privacy==='private');ui.resultCount=ui.results.length;}
  host.innerHTML=markup();
  if(keepFocus||focus){
-  const field=$('#gns-query',host);field.focus({preventScroll:true});
+  const field=$('#'+(focus?previousFocus:'gns-query'),host)||$('#gns-query',host);
+  field?.focus({preventScroll:true});
   if(selection!=null)try{field.setSelectionRange(selection,selection);}catch(_){}
  }
  const pane=$('#gns-listpane',host);
@@ -581,7 +694,10 @@ function rerender(keepFocus=true){
 function open(restoring=false){
  ui.before=document.activeElement;ui.opened=true;
  if(!restoring){
+  // The single magnifier remains a quiet Quick Find, even if the reader
+  // last used a more complex research query. A Return link restores it.
   ui.expanded=false;ui.facet='all';ui.showFilters=false;ui.page=CONFIG.pageSize;
+  ui.mode='terms';ui.nearTerm='';ui.nearGap=5;ui.nearOrdered=false;
   ui.entryHash=location.hash;ui.entryScroll=window.scrollY;ui.pendingReturn=null;
  }
  if(!host){host=document.createElement('div');host.id='gn-unified-search';host.className='gns-root';document.body.append(host);}
@@ -606,7 +722,7 @@ function restoreResults(){
  }
  const popup=document.querySelector('#infoOverlay:not([hidden])');
  popup?.querySelector('#detailClose')?.click();
- const keys=['query','facet','scope','mode','sort','display','expanded','showFilters','page'];
+ const keys=['query','facet','scope','mode','sort','display','expanded','showFilters','page','nearTerm','nearGap','nearOrdered'];
  for(const key of keys)if(Object.hasOwn(origin.state,key))ui[key]=origin.state[key];
  ui.entryHash=targetHash;ui.entryScroll=Number(origin.from?.y)||0;
  ui.pendingReturn={scroll:Math.max(0,Number(origin.state.listScroll)||0),
@@ -634,13 +750,68 @@ function captureSearchOrigin(r){
  const scroll=$('#gns-listpane',host)?.scrollTop||0;
  const state={query:ui.query,facet:ui.facet,scope:ui.scope,mode:ui.mode,
   sort:ui.sort,display:ui.display,expanded:ui.expanded,showFilters:ui.showFilters,
+  nearTerm:ui.nearTerm,nearGap:ui.nearGap,nearOrdered:ui.nearOrdered,
   page:ui.page,listScroll:scroll};
  const from={hash:ui.entryHash,y:ui.entryScroll};
  return window.GnammaSearchReturn?.capture({state,from,selected:{
   id:r.id,work:r.work,type:r.type,at:ui.results.indexOf(r)}}) || false;
 }
+function clearProximityHighlights(){
+ try{
+  CSS.highlights?.delete('gns-proximity-a');
+  CSS.highlights?.delete('gns-proximity-b');
+ }catch(_){}
+}
+function highlightProximityAtSource(rec){
+ const hit=rec.matched;
+ if(!hit||hit.relation!=='proximity'||rec.work!=='daruri'||
+    !['en','ar'].includes(hit.field)||!window.GnammaProximity)return;
+ const section=String(rec.section),segment=rec.segment;
+ const grid=(document.getElementById('gn-continuous-'+section)?.querySelector('.passage-grid[data-segment="'+segment+'"]'))||
+   document.querySelector('#reader .passage-grid[data-segment="'+segment+'"]');
+ if(!grid)return;
+ const root=grid.querySelector(hit.field==='ar'?'.passage-ar':'.passage-en');
+ if(!root)return;
+ const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{
+  acceptNode:node=>node.nodeValue&&node.nodeValue.length&&
+   !node.parentElement?.closest('.note-ref-symbol,.source-note-marker,.gns-source-badge')?
+   NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT
+ });
+ const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+ if(!nodes.length)return;
+ const text=nodes.map(n=>n.nodeValue).join('');
+ const left=queryPlan(hit.leftQuery,'terms').need.flat(),right=queryPlan(hit.rightQuery,'terms').need.flat();
+ const matched=window.GnammaProximity.find(text,left,right,{
+  normalize:fold,maxGap:hit.maxGap,ordered:hit.ordered
+ });
+ if(!matched)return;
+ clearProximityHighlights();
+ if(!window.CSS?.highlights||typeof window.Highlight==='undefined')return;
+ const mapped=foldMapped(text).offsets;
+ const atOffset=n=>{
+  let remaining=Math.max(0,Number(n)||0);
+  for(const node of nodes){
+   if(remaining<=node.nodeValue.length)return [node,remaining];
+   remaining-=node.nodeValue.length;
+  }
+  return [nodes.at(-1),nodes.at(-1).nodeValue.length];
+ };
+ const spanRange=span=>{
+  const a=mapped[span.offsetStart],b=mapped[span.offsetEnd-1];
+  if(!a||!b)return null;
+  const start=atOffset(a[0]),end=atOffset(b[1]),range=document.createRange();
+  try{range.setStart(...start);range.setEnd(...end);return range;}
+  catch(_){return null;}
+ };
+ const ra=spanRange(matched.a),rb=spanRange(matched.b);
+ if(ra)CSS.highlights.set('gns-proximity-a',new Highlight(ra));
+ if(rb)CSS.highlights.set('gns-proximity-b',new Highlight(rb));
+ // Scroll to the actual neighbourhood, not merely the section heading.
+ try{grid.scrollIntoView({block:'center',behavior:'smooth'});}catch(_){}
+}
 function openRecord(r){
  if(!r)return;
+ clearProximityHighlights();
  captureSearchOrigin(r);
  const hit=r.matched;
  if(r.privacy==='private'){openPersonal(r);return;}
@@ -678,9 +849,10 @@ function openRecord(r){
  if((r.type==='text'||r.type==='concept')&&r.section){
   close();
   const term=hit?.term||ui.query;
-  const isExact=(hit?.relation==='literal'||hit?.relation==='clitic'||hit?.relation==='terminology');
+  const isExact=(hit?.relation==='literal'||hit?.relation==='clitic'||hit?.relation==='terminology'||hit?.relation==='proximity');
   const button=document.createElement('button');button.hidden=true;button.dataset.section=r.section;
-  if(isExact&&r.subtype!=='Section heading'&&r.type==='text')button.dataset.searchQuery=term;
+  if(isExact&&r.subtype!=='Section heading'&&r.type==='text')
+   button.dataset.searchQuery=hit?.relation==='proximity'?hit.nearA.matched:term;
   document.body.append(button);button.click();button.remove();
   if(r.segment!=null&&r.segment>=0){
    const section=String(r.section),segment=r.segment;
@@ -688,7 +860,8 @@ function openRecord(r){
     const grid=document.querySelector('#gn-continuous-'+CSS.escape(section)+' .passage-grid[data-segment="'+segment+'"]')||
       document.querySelector('#reader .passage-grid[data-segment="'+segment+'"]');
     if(grid)grid.scrollIntoView({block:'center',behavior:'smooth'});
-   },110);
+    if(hit?.relation==='proximity')highlightProximityAtSource(r);
+   },130);
   }
  }
 }
@@ -757,8 +930,19 @@ document.addEventListener('click',event=>{
  }
 },true);
 document.addEventListener('input',event=>{
- if(!ui.opened||!host||event.target?.id!=='gns-query')return;
- ui.query=event.target.value;ui.page=CONFIG.pageSize;ui.pendingReturn=null;
+ if(!ui.opened||!host||!['gns-query','gns-near-term'].includes(event.target?.id))return;
+ if(event.target.id==='gns-near-term')ui.nearTerm=event.target.value;
+ else{
+  ui.query=event.target.value;
+  const inline=ui.query.match(/^(.+?)\s+(NEAR|BEFORE)\/(\d{1,2})\s+(.+)$/i);
+  if(inline){
+   ui.query=inline[1].trim();ui.nearTerm=inline[4].trim();
+   ui.nearGap=Math.min(50,Number(inline[3]));
+   ui.nearOrdered=inline[2].toUpperCase()==='BEFORE';
+   ui.mode='proximity';
+  }
+ }
+ ui.page=CONFIG.pageSize;ui.pendingReturn=null;
  clearTimeout(inputTimer);inputTimer=setTimeout(()=>rerender(true),65);
 },true);
 document.addEventListener('change',event=>{
@@ -769,6 +953,8 @@ document.addEventListener('change',event=>{
  if(target.id==='gns-mode')change('mode',target.value);
  if(target.id==='gns-sort')change('sort',target.value);
  if(target.id==='gns-display')change('display',target.value);
+ if(target.id==='gns-near-gap'){ui.nearGap=Number(target.value)||0;ui.pendingReturn=null;rerender(false);}
+ if(target.id==='gns-near-order'){ui.nearOrdered=target.checked;ui.pendingReturn=null;rerender(false);}
 },true);
 document.addEventListener('keydown',event=>{
  if(!ui.opened||!host||!host.contains(event.target))return;
@@ -797,7 +983,9 @@ window.GnammaUnifiedSearch={
  version:CONFIG.version,
  open,close,restoreResults,fold,romanKey,direct,query:searchRecords,
  getEntries:()=>({core:baseItems.length,other:otherItems.length,personal:readPersonal().length}),
- getState:()=>({query:ui.query,facet:ui.facet,scope:ui.scope,mode:ui.mode,expanded:ui.expanded,results:ui.results.length}),
+ getState:()=>({query:ui.query,facet:ui.facet,scope:ui.scope,mode:ui.mode,
+  nearTerm:ui.nearTerm,nearGap:ui.nearGap,nearOrdered:ui.nearOrdered,
+  expanded:ui.expanded,results:ui.results.length}),
  loadLibrary:loadOther
 };
 if(location.hash==='#gns-results'&&window.GnammaSearchReturn?.read()){

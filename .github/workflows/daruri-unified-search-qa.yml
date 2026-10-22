@@ -6,10 +6,12 @@ on:
       - 'daruri/index.html'
       - 'daruri/sw.js'
       - 'daruri/gnamma-search.js'
+      - 'daruri/gnamma-proximity.js'
       - 'daruri/gnamma-search-return.js'
       - 'daruri/dictionary.html'
       - 'texts/al-ghazali/al-mustasfa/index.html'
       - 'daruri/qa/verify-search-return.cjs'
+      - 'daruri/qa/verify-proximity.cjs'
       - 'daruri/gnamma-search.css'
       - 'daruri/qa/verify-unified-search.cjs'
       - 'daruri/build/build_gnamma_search_index.py'
@@ -22,10 +24,12 @@ on:
     paths:
       - 'daruri/index.html'
       - 'daruri/gnamma-search.js'
+      - 'daruri/gnamma-proximity.js'
       - 'daruri/gnamma-search-return.js'
       - 'daruri/dictionary.html'
       - 'texts/al-ghazali/al-mustasfa/index.html'
       - 'daruri/qa/verify-search-return.cjs'
+      - 'daruri/qa/verify-proximity.cjs'
       - 'daruri/gnamma-search.css'
       - 'daruri/qa/verify-unified-search.cjs'
       - 'texts/al-ghazali/al-mustasfa/data/gnamma-search-index.json'
@@ -56,3 +60,4 @@ jobs:
         run: |
           node daruri/qa/verify-unified-search.cjs
           node daruri/qa/verify-search-return.cjs
+          node daruri/qa/verify-proximity.cjs
