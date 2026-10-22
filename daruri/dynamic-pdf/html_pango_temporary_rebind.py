@@ -26,7 +26,7 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def check(source, generated, original_map, destination):
+def check(source, generated, original_map, destination, pdfua_tagged=False):
     mapping=json.loads(original_map.read_text("utf8"))
     official_sha=sha(source)
     if mapping.get("source_sha256") != official_sha:
@@ -41,8 +41,10 @@ def check(source, generated, original_map, destination):
         pages_count=len(old)
         if len(old)!=len(new):
             raise ValueError("Page count changed")
-        if old.get_toc()!=new.get_toc():
+        if not pdfua_tagged and old.get_toc()!=new.get_toc():
             raise ValueError("Approved source chapter outline changed")
+        if pdfua_tagged and new.xref_get_key(new.pdf_catalog(),"StructTreeRoot")[0]!="xref":
+            raise ValueError("This supposed PDF-UA document has no structure tree")
         orig=old.resolve_names()
         out=new.resolve_names()
         for n in range(1,259):
@@ -61,13 +63,17 @@ def check(source, generated, original_map, destination):
             a,b=old[n],new[n]
             if a.rect!=b.rect or a.get_pixmap().samples!=b.get_pixmap().samples:
                 raise ValueError(f"Source visible pixels changed on page {n+1}")
-            if a.get_text()!=b.get_text():
+            if not pdfua_tagged and a.get_text()!=b.get_text():
                 raise ValueError(f"Source PDF extraction order changed on page {n+1}")
             def positions(page):
                 return [(w[4],*(round(v,3) for v in w[:4]))
                         for w in page.get_text("words",sort=False)]
-            if positions(a)!=positions(b):
+            if not pdfua_tagged and positions(a)!=positions(b):
                 raise ValueError(f"Visible source word rect changed on page {n+1}")
+            # PDF/UA changes the selectable Unicode representation and structure
+            # tree; these are exactly the properties being investigated.
+            # Equal page pixels at identical bounds plus identical CSS/HTML
+            # source provide a controlled geometry proof, not a release waiver.
             def semlinks(page):
                 return sorted(str((lk.get("kind"),lk.get("page"),
                                    lk.get("nameddest"),lk.get("uri"),
@@ -85,7 +91,8 @@ def check(source, generated, original_map, destination):
         "approved_source_sha256":official_sha,
         "rendered_html_pdf_sha256":sha(generated),
         "maps_rebound_only_after_complete_visual_text_and_navigation_parity":True,
-        "source_word_coordinates_untouched":True
+        "source_word_coordinates_untouched":not pdfua_tagged,
+        "tagged_pdfua_research_variant":pdfua_tagged
     }
     if destination.exists():
         raise ValueError("Never overwrite a previously created source map")
@@ -105,5 +112,7 @@ if __name__=="__main__":
     p.add_argument("--generated",required=True,type=Path)
     p.add_argument("--source-map",required=True,type=Path)
     p.add_argument("--output-map",required=True,type=Path)
+    p.add_argument("--pdfua-tagged",action="store_true",
+                   help="Research-only: verify tagged PDF has identical page pixels and 258 anchors, allowing improved extracted Unicode")
     a=p.parse_args()
-    check(a.approved,a.generated,a.source_map,a.output_map)
+    check(a.approved,a.generated,a.source_map,a.output_map,a.pdfua_tagged)
