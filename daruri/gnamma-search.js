@@ -640,7 +640,7 @@ const ui={opened:false,expanded:false,query:'',facet:'all',mode:'terms',scope:'w
   builderRows:[{join:'AND',kind:'word',text:'',field:'all'},
                {join:'AND',kind:'word',text:'',field:'all'}],
   queryError:'',queryExplanation:''};
-let host=null,inputTimer=0,renderNonce=0,lastStatus='';
+let host=null,inputTimer=0,renderNonce=0,lastStatus='',modeLayoutDirty=false;
 function filterButton(id,text,selected,extra){
  return '<button type="button" class="gns-chip'+(selected?' gns-current':'')+'" data-gns-'+extra+'="'+xml(id)+'" aria-pressed="'+selected+'">'+esc(text)+'</button>';
 }
@@ -1035,7 +1035,7 @@ function open(restoring=false){
  ensureLoaded();
 }
 function close(){
- clearTimeout(inputTimer);
+ clearTimeout(inputTimer);modeLayoutDirty=false;
  if(!ui.opened)return;
  ui.opened=false;document.body.classList.remove('gns-open');if(host){host.innerHTML='';host.hidden=true;}
  if(ui.before&&ui.before.isConnected)try{ui.before.focus({preventScroll:true});}catch(_){}
@@ -1330,6 +1330,7 @@ document.addEventListener('input',event=>{
   return;
  }
  if(!['gns-query','gns-near-term'].includes(event.target?.id))return;
+ const priorMode=ui.mode;
  if(event.target.id==='gns-near-term')ui.nearTerm=event.target.value;
  else{
   ui.query=event.target.value;
@@ -1346,8 +1347,13 @@ document.addEventListener('input',event=>{
    ui.mode='proximity';
   }
  }
+ if(ui.mode!==priorMode)modeLayoutDirty=true;
  ui.page=CONFIG.pageSize;ui.pendingReturn=null;
- clearTimeout(inputTimer);inputTimer=setTimeout(renderResultsOnly,260);
+ clearTimeout(inputTimer);
+ inputTimer=setTimeout(()=>{
+  if(modeLayoutDirty){modeLayoutDirty=false;rerender(true)}
+  else renderResultsOnly();
+ },260);
 },true);
 document.addEventListener('change',event=>{
  if(!ui.opened||!host)return;
