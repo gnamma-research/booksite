@@ -16,3 +16,5 @@ try json.write(to:URL(fileURLWithPath:CommandLine.arguments[2]))
 print("NATIVE_PAGE:",result["lastPageText"] ?? "")
 for term in terms{ if (result[term] as? Int ?? 0)<1 {fputs("FAIL Arabic/PDF text search: \(term)\n",stderr);exit(2)}}
 print("PASS native Apple PDFKit full mixed Arabic searchable and English links")
+
+// Separate diacritic probe: the assertions above remain limited to verified base terms.
