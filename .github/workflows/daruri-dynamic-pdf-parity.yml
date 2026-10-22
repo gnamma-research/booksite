@@ -1,7 +1,7 @@
 name: Gnamma dynamic apparatus PDF proof of equivalence
 on:
   push:
-    branches: ['feature/daruri-on-demand-pdf-20261022']
+    branches: ['feature/daruri-design-aware-generated-editions-20261022']
     paths: ['daruri/dynamic-pdf/**','.github/workflows/daruri-dynamic-pdf-parity.yml']
   workflow_dispatch:
 permissions: {contents: read}
@@ -22,7 +22,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
-          python -m pip install -q -r daruri/build/requirements.txt "PyMuPDF==1.26.7"
+          python -m pip install -q -r daruri/build/requirements.txt "PyMuPDF==1.26.7" "numpy>=1.26" "scipy>=1.13"
           npm install --no-save --no-package-lock --prefix daruri/qa pdf-lib@1.17.1
       - name: Build 15 reproducible HTML/CSS apparatus packets
         run: python daruri/dynamic-pdf/build_packets.py
