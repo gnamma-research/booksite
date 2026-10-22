@@ -63,7 +63,7 @@ def verify(path:Path):
         raise AssertionError("Notes inventory changed without accepted source release")
     with ZipFile(path) as zipfile:
         members=set(zipfile.namelist())
-        if len(members)!=len(zipfile.namelist()) or len(members)!=14:
+        if len(members)!=len(zipfile.namelist()) or len(members)!=18:
             raise AssertionError("Missing or duplicate canonical archive files")
         if any(".." in name or name.startswith("/") for name in members):
             raise AssertionError("ZIP contains unsafe paths")
@@ -85,6 +85,29 @@ def verify(path:Path):
         payload=file_data[name]
         if record["bytes"]!=len(payload) or record["sha256"]!=sha(payload):
             raise AssertionError(f"Source export bytes changed: {name}")
+    # Include all original publication apparatus/source-reference data. The
+    # reader's note list alone is not a complete dictionary/research archive.
+    scholarly={
+        "full-headwords.json": ("terms",153,"articles",157),
+        "quran-source-notes.json": ("notes",50,None,None),
+        "hadith-source-notes.json": ("notes_by_section",33,None,None),
+        "backmatter-source-notes.json": (None,None,None,None)
+    }
+    for name,(kind,count,kind2,count2) in scholarly.items():
+        src=(ROOT/"build/data"/name).read_bytes()
+        entry="scholarly-data/"+name
+        if file_data.get(entry)!=src:
+            raise AssertionError("Original scholarly apparatus or source qualification changed: "+name)
+        original=json.loads(src)
+        if kind and len(original.get(kind,[]))!=count:
+            raise AssertionError("Original scholarly inventory changed: "+name)
+        if kind2 and len(original.get(kind2,[]))!=count2:
+            raise AssertionError("Original historical dictionary articles changed")
+    if (manifest.get("historical_dictionary_terms")!=153 or
+        manifest.get("historical_dictionary_articles")!=157 or
+        manifest.get("quran_source_note_records")!=50 or
+        manifest.get("hadith_source_note_sections")!=33):
+        raise AssertionError("Scholarly source inventory manifest is incomplete")
     saved=json.loads(file_data["daruri-source.json"])
     if saved!=book:
         raise AssertionError("Canonical source JSON is not losslessly preserved")
@@ -149,6 +172,9 @@ def verify(path:Path):
         "sections":len(expected),
         "parallel_paragraphs":len(lines),
         "canonical_notes":len(notes),
+        "dictionary_articles":157,
+        "dictionary_terms":153,
+        "source_note_data_files":3,
         "tei_linguistic_layers":3,
         "standalone_html_works_without_js":True,
         "legacy_shamela_import_unverified":True,
