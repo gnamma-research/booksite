@@ -16,7 +16,7 @@ async function test(name,fn){await fn();pass++;console.log('PASS '+name)}
   assert.equal(daruri.schema,'gnamma-morph-v1');assert.equal(mustasfa.schema,'gnamma-morph-v1');
   assert.ok(daruri.records.length>350&&mustasfa.records.length>2500);
   assert.ok(lex.entries.length>=50);
-  assert.ok(daruri.records.every(r=>/^passage:\d+:\d+$/.test(r.id)));
+  assert.ok(daruri.records.every(r=>/^passage:(?:\d+|colophon):\d+$/.test(r.id)));
   assert.ok(mustasfa.records.every(r=>/^arabic:V\d+P\d+:\d+$/.test(r.id)));
   assert.ok(daruri.records.some(r=>r.a.some(x=>x[3]==='جهد')));
   assert.ok(daruri.records.flatMap(r=>r.a).some(a=>a[5]==='ambiguous'),'uncertainty should not be hidden');
