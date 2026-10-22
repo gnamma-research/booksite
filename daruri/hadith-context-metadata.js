@@ -49,3 +49,12 @@ Object.assign(window.GnammaHadithReports["tirmidhi:1180"]||{},{"chapter_en":"Hou
 Object.assign(window.GnammaHadithReports["tirmidhi:691"]||{},{"chapter_en":"Fasting on the testimony of a witness","chapter_ar":"باب مَا جَاءَ فِي الصَّوْمِ بِالشَّهَادَةِ","narrator":"ʿAbd Allāh b. ʿAbbās"});
 Object.assign(window.GnammaHadithReports["tirmidhi:1327"]||{},{"chapter_en":"How a judge should decide a case","chapter_ar":"باب مَا جَاءَ فِي الْقَاضِي كَيْفَ يَقْضِي","narrator":"Unidentified companions of Muʿādh b. Jabal"});
 Object.assign(window.GnammaHadithReports["tirmidhi:1328"]||{},{"chapter_en":"How a judge should decide a case","chapter_ar":"باب مَا جَاءَ فِي الْقَاضِي كَيْفَ يَقْضِي","narrator":"Unnamed transmitters from Ḥimṣ, through Muʿādh"});
+
+/* Original collection chapter headings and source narrators. */
+Object.assign(window.GnammaHadithReports["tirmidhi:2167"]||{},{"chapter_en":"Adhering to the community","chapter_ar":"باب مَا جَاءَ فِي لُزُومِ الْجَمَاعَةِ","narrator":"ʿAbd Allāh b. ʿUmar"});
+Object.assign(window.GnammaHadithReports["tirmidhi:2165"]||{},{"chapter_en":"Adhering to the community","chapter_ar":"باب مَا جَاءَ فِي لُزُومِ الْجَمَاعَةِ","narrator":"ʿAbd Allāh b. ʿUmar, reporting ʿUmar's sermon"});
+Object.assign(window.GnammaHadithReports["tirmidhi:2166"]||{},{"chapter_en":"Adhering to the community","chapter_ar":"باب مَا جَاءَ فِي لُزُومِ الْجَمَاعَةِ","narrator":"ʿAbd Allāh b. ʿAbbās"});
+Object.assign(window.GnammaHadithReports["tirmidhi:1102"]||{},{"chapter_en":"Marriage requires a guardian","chapter_ar":"باب مَا جَاءَ لاَ نِكَاحَ إِلاَّ بِوَلِيٍّ","narrator":"ʿĀʾisha"});
+Object.assign(window.GnammaHadithReports["nasai:2334"]||{},{"chapter_en":"Differences among narrators of Ḥafṣa's fasting report","chapter_ar":"باب ذِكْرِ اخْتِلاَفِ النَّاقِلِينَ لِخَبَرِ حَفْصَةَ فِي ذَلِكَ","narrator":"Ḥafṣa bt. ʿUmar"});
+Object.assign(window.GnammaHadithReports["nasai:3688"]||{},{"chapter_en":"Gifting undivided shared property","chapter_ar":"باب هِبَةِ الْمَشَاعِ","narrator":"ʿAmr b. Shuʿayb, from his father, from his grandfather"});
+Object.assign(window.GnammaHadithReports["ibnmajah:2043"]||{},{"chapter_en":"Divorce of a person acting under compulsion or forgetfulness","chapter_ar":"باب طَلاَقِ الْمُكْرَهِ وَالنَّاسِي","narrator":"Abū Dharr al-Ghifārī"});
