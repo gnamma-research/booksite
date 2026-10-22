@@ -1,0 +1,81 @@
+'use strict';
+/* Browser-level Daruri mode/dock smoke test. No personal notes leave localhost.
+   Run: node daruri/qa/verify-three-reading-modes.cjs */
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const http=require('node:http');
+const {chromium,webkit}=require('playwright');
+const ROOT=path.resolve(__dirname,'../..');
+const TYPES={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.json':'application/json','.woff2':'font/woff2','.ttf':'font/ttf'};
+const server=http.createServer((req,res)=>{
+ const raw=decodeURIComponent((req.url||'/').split('?')[0]);
+ const local=path.resolve(ROOT,'.'+raw);
+ if(!local.startsWith(ROOT+path.sep)){res.writeHead(403);res.end();return;}
+ const file=fs.existsSync(local)&&fs.statSync(local).isDirectory()?path.join(local,'index.html'):local;
+ if(!fs.existsSync(file)){res.writeHead(404);res.end();return;}
+ res.writeHead(200,{'content-type':TYPES[path.extname(file)]||'application/octet-stream'});
+ fs.createReadStream(file).pipe(res);
+});
+const items=[
+ {id:'s',kind:'section',target:{kind:'section',section:'11'},created:100,updated:100,deleted:0,dateSource:'recorded'},
+ {id:'p',kind:'paragraph',target:{kind:'paragraph',section:'11',segment:0,lang:'en'},created:101,updated:101,deleted:0,dateSource:'recorded'},
+ {id:'q',kind:'quote',target:{kind:'quote',section:'11',segment:0,lang:'en',quote:'According to the People of the Sunna',offset:0},created:102,updated:102,deleted:0,dateSource:'recorded'},
+ {id:'n',kind:'note',target:{kind:'paragraph',section:'11',segment:0,lang:'en'},title:'Reader note',body:'A private thought.',created:103,updated:103,deleted:0,dateSource:'recorded'}
+];
+async function exercise(engine,name,origin){
+ const browser=await engine.launch({headless:true,...(name==='chromium'?{args:['--no-sandbox']}:{})});
+ const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+ await context.addInitScript(({items})=>{
+  localStorage.setItem('daruri-reader-v2',JSON.stringify({n:'11',lang:'english',focusLevel:1,focusApparatus:true}));
+  localStorage.setItem('gnamma-reading-desk-v1',JSON.stringify({format:'gnamma-reading-desk',version:1,items}));
+ },{items});
+ const page=await context.newPage(),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ try{
+  await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
+  await page.waitForSelector('#readerDock:not([hidden])',{timeout:20000});
+  await page.waitForSelector('#gn-dock-private-status .gn-dock-mark',{timeout:20000});
+  assert(await page.locator('body.focus-level-1').count(),'old Focus 1 preference not retained');
+  assert.equal(await page.locator('#gn-dock-private-status .gn-dock-mark').count(),3,'saved marks must have 3 monochrome icons');
+  let counts=await page.locator('#gn-dock-private-status .gn-dock-mark span').allTextContents();
+  assert.deepEqual(counts,['2','1','1'],'section/paragraph bookmark and exact quote/note counts');
+  assert.equal(await page.locator('.reader .chapter-nav').isVisible(),false,'duplicate in-text navigation still visible');
+  await page.locator('#focusToolbar').click();
+  await page.locator('#gn-reading-mode-picker:not([hidden])').waitFor();
+  assert.equal(await page.locator('#gn-focus-apparatus-choice').isChecked(),true,'legacy apparatus preference lost');
+  await page.locator('[data-gn-reader-mode="reading"]').click();
+  await page.locator('body.focus-mode').waitFor({state:'detached'});
+  await page.locator('#focusToolbar').click();
+  await page.locator('[data-gn-reader-mode="focus"]').click();
+  assert(await page.locator('body.focus-level-1').count(),'Focus did not retain optional apparatus');
+  await page.locator('#focusToolbar').click();
+  await page.locator('#gn-focus-apparatus-choice').uncheck();
+  await page.locator('body.focus-level-2').waitFor();
+  assert.equal(await page.locator('.reader .gn-reading-aftertext').isVisible(),false,'text-only Focus still shows apparatus');
+  await page.locator('[data-gn-reader-mode="continuous"]').click();
+  await page.locator('body.focus-level-3').waitFor();
+  assert.equal(await page.locator('#readerDock .reader-step:visible').count(),0,'Continuous should have no adjacent-section arrows');
+  const statusButtons=await page.locator('#gn-dock-private-status .gn-dock-mark').count();
+  assert(statusButtons>=1,'Continuous dock status disappeared');
+  await page.locator('#focusToolbar').click();
+  await page.locator('[data-gn-reader-mode="reading"]').click();
+  await page.locator('body.focus-level-3').waitFor({state:'detached'});
+  await page.locator('#gn-dock-private-status [data-gn-mark="note"]').click();
+  await page.locator('.gn-rd-page').waitFor();
+  assert(await page.locator('.gn-rd-page').innerText().then(x=>x.includes('Reader note')),'notes count not linked to Reading Desk');
+  await page.locator('[data-rd="return-reading"]').first().click();
+  await page.waitForSelector('#readerDock:not([hidden])');
+  await page.goto(origin+'/daruri/#section=12',{waitUntil:'domcontentloaded'});
+  await page.waitForTimeout(300);
+  assert.equal(await page.locator('#gn-dock-private-status .gn-dock-mark').count(),0,'zero-count icons must be hidden');
+  assert.equal(errors.filter(e=>/GnammaReadingDock|reading.mode|ReadingDesk/i.test(e)).length,0,'runtime errors: '+errors.join('; '));
+  console.log('PASS '+name+' mode switch, legacy apparatus, dock counts, Reading Desk return, zero-state and arrow removal');
+ }finally{await context.close();await browser.close();}
+}
+server.listen(0,'127.0.0.1',async()=>{
+ const origin='http://127.0.0.1:'+server.address().port;
+ try{await exercise(chromium,'chromium',origin);await exercise(webkit,'webkit',origin);}
+ catch(e){console.error(e.stack);process.exitCode=1;}
+ finally{server.close();}
+});
