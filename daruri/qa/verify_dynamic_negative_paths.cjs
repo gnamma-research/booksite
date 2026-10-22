@@ -89,7 +89,7 @@ async function generationFailure(s,expect){
   null,{timeout});
  const status=await s.page.locator('#gn-dyn-status').innerText();
  assert.match(status,expect,status);
- assert(await s.page.locator('#gn-dyn-download').isHidden(),'Failed build advertised download');
+ assert(await s.page.locator('#gn-dyn-download').evaluate(el=>el.hidden),'Failed build did not clear the download link state');
  assert(await s.page.locator('#gn-dyn-make').isEnabled(),'Build button not restored after failure');
  await fallback(s);
  await unchanged(s);
@@ -118,6 +118,18 @@ async function run(){
   engine==='chromium'&&process.env.GNAMMA_CHROME_CHANNEL?
    {headless:true,channel:process.env.GNAMMA_CHROME_CHANNEL}:
    {headless:true});
+ await withCase('empty download control must not be visible',async set=>{
+  const s=await setup(null);set(s);await ready(s);
+  const anchor=s.page.locator('#gn-dyn-download');
+  const hiddenAttribute=await anchor.evaluate(el=>el.hidden);
+  const visible=await anchor.isVisible();
+  const href=await anchor.getAttribute('href');
+  assert(hiddenAttribute===true,'The unopened PDF download is not marked hidden');
+  assert(!visible,
+    'UI BLOCKER: visible Download generated PDF control with no generated PDF; a CSS display rule overrides the hidden attribute (href='+href+')');
+  await unchanged(s);
+  return 'Download link is truly invisible until a valid PDF exists';
+ });
  await withCase('manifest outage: clean fallback survives',async set=>{
   const s=await setup(null,unavailable(findPaths.packetManifest));set(s);
   await s.page.waitForFunction(()=>
