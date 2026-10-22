@@ -6,9 +6,11 @@
 <meta name="color-scheme" content="light">
 <title>Personal editions · Gnamma Research · al-Ḍarūrī</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="personal-export.css?v=2">
+<link rel="stylesheet" href="personal-export.css?v=3">
+<link rel="stylesheet" href="bookmark-ui.css?v=20261023-personal-icons">
+<script defer src="bookmark-ui.js?v=20261023-personal-icons"></script>
 <script defer src="personal-pdf-enhancements.js?v=20261022-cid2"></script>
-<script defer src="personal-export.js?v=20261022-bookmark-audit1"></script>
+<script defer src="personal-export.js?v=20261023-annotations"></script>
 </head>
 <body>
 <a class="skip" href="#pe-main">Skip to export settings</a>
@@ -32,15 +34,16 @@
    <h2 id="notes-title"><span class="step">2</span> Choose personal material</h2>
    <fieldset class="radios">
     <legend>Include Reading Desk items?</legend>
-    <label><input type="radio" name="pe-mode" value="none" checked> No — original PDF, without personal notes <strong>(default)</strong></label>
+    <label><input type="radio" name="pe-mode" value="none" checked> No — original PDF, without personal additions <strong>(default)</strong></label>
     <label><input type="radio" name="pe-mode" value="all"> Yes — all qualifying items</label>
     <label><input type="radio" name="pe-mode" value="choose"> Yes — choose individual items</label>
    </fieldset>
    <div id="pe-note-options" hidden>
     <div class="choices">
-     <label><input type="checkbox" id="pe-personal" checked> Personal notes</label>
-     <label><input type="checkbox" id="pe-bookmarks"> Bookmarks and highlights</label>
-     <label><input type="checkbox" id="pe-annotations" checked> Add linked P1, P2… references and clickable quotation highlights</label>
+     <label><input type="checkbox" id="pe-personal" checked> My notes</label>
+     <label><input type="checkbox" id="pe-bookmarks"> Bookmarks</label>
+      <label><input type="checkbox" id="pe-highlights"> Highlights</label>
+     <label><input type="checkbox" id="pe-annotations" checked> Add linked P1, P2… references (and precise quotation highlights where verified)</label>
      <label><input type="checkbox" id="pe-appendix" checked> Include searchable personal endnotes (required for linked P references)</label>
      <label><input type="checkbox" id="pe-dates" checked> Include reliable created/edited timestamps</label>
     </div>
