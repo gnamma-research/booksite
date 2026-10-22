@@ -2,7 +2,7 @@
    Retains the previous Daruri search as a no-script / failed-enhancement fallback. */
 (function () {
 'use strict';
-const CONFIG = {version:'20261022-proximity1', source:'al-Ḍarūrī', pageSize:40, quickSize:6,
+const CONFIG = {version:'20261022-scholarly1', source:'al-Ḍarūrī', pageSize:40, quickSize:6,
   moreUrl:'../texts/al-ghazali/al-mustasfa/data/gnamma-search-index.json'};
 const $ = (s,p=document) => p.querySelector(s);
 const $$ = (s,p=document) => Array.from(p.querySelectorAll(s));
@@ -392,6 +392,117 @@ function publicConcepts(plan,existing){
  }
  return concepts;
 }
+
+/* A scholarly Boolean group is a set of individually identified fields, not
+ * a concatenation of Arabic, English and editorial material. Broader scopes
+ * combine records of the same provenance, language and textual status only.
+ */
+const GN_TOKEN_CACHE=new WeakMap();
+const GN_PARTS=new Map((BOOK.sections||[]).map(s=>[String(s.id),String(s.part)]));
+function gnScholarlyGroups(records,scope){
+ const groups=new Map(),tokenCache=GN_TOKEN_CACHE;
+ for(const rec of records){
+  const section=String(rec.section||rec.id);
+  const part=rec.work==='daruri'?(GN_PARTS.get(section)||section):section;
+  const band=rec.type==='text'?(rec.subtype==='Authorial text'?'authorial':'editorial heading'):rec.type;
+  for(const field of rec.fields){
+   if(field.kind==='locator')continue;
+   if(rec.type==='text'&&rec.subtype==='Authorial text'&&field.kind==='title')continue;
+   if(rec.type==='other'&&['Selected bilingual passage','Arabic witness'].includes(rec.subtype)&&field.kind==='title')continue;
+   // Avoid treating separately authored metadata fragments as one quotation.
+   const chunks=field.kind==='body'?field.raw.split(/\s+·\s+/u):[field.raw];
+   for(let i=0;i<chunks.length;i++){
+    if(!chunks[i]?.trim())continue;
+    const type=field.kind==='ar'?'ar':field.kind==='en'?'en':field.kind;
+    const unit=scope==='passage'?rec.id+':'+type+':'+i:
+      scope==='section'?section:scope==='part'?part:rec.work;
+    const key=[rec.work,rec.privacy,band,type,unit].join('\u001f');
+    if(!groups.has(key))groups.set(key,{key,work:rec.work,section,part,type,band,records:[],scope,entries:[]});
+    const group=groups.get(key),chunk=chunks[i];
+    const owner=chunks.length===1?field:
+      ((field._gnChunks||=(chunks.map(x=>({raw:x,kind:field.kind}))))[i]);
+    group.records.push(rec);
+    group.entries.push({
+     rec,kind:field.kind,raw:chunk,
+     tokens(original,normalize){
+      const mode=original?'o':'n';
+      let cache=tokenCache.get(owner);
+      if(!cache){cache={};tokenCache.set(owner,cache);}
+      if(!cache[mode])cache[mode]=window.GnammaScholarly.tokenize(chunk,normalize,original);
+      return cache[mode];
+     }
+    });
+   }
+  }
+ }
+ return [...groups.values()];
+}
+function gnScholarlySearch(q,opts,corpus){
+ const engine=window.GnammaScholarly,original=opts.orthography==='original';
+ const normalize=original?x=>String(x??'').toLowerCase().normalize('NFC'):fold;
+ if(!engine)return {results:[],facets:{all:0},total:0,error:'The scholarly search engine did not load.'};
+ const parsed=engine.parse(q,normalize);
+ if(!parsed.ast)return {results:[],facets:{all:0},total:0,error:parsed.error,
+  position:parsed.position,plan:{scholarly:true,explain:''}};
+ const aliasProvider=(value)=>{
+  const group=lookupGroup(value);
+  return group?.words?.slice(0,18)||[];
+ };
+ const scope=['passage','section','part','work'].includes(opts.booleanScope)?opts.booleanScope:'passage';
+ const groups=gnScholarlyGroups(corpus,scope),results=[];
+ for(const group of groups){
+  const outcome=engine.evaluate(parsed.ast,group.entries,{normalize,original,aliasProvider});
+  if(!outcome.ok)continue;
+  const evidence=outcome.hits.filter(h=>h.kind!=='metadata');
+  const preferred=evidence[0]||outcome.hits[0];
+  if(!preferred)continue;
+  const rec=preferred.entry.rec;
+  const distinct=new Map();
+  for(const hit of evidence){
+   const loc=hit.entry.rec.locator||hit.entry.rec.section||hit.entry.rec.id,
+     key=hit.entry.rec.id+'|'+hit.entry.kind;
+   if(!distinct.has(key))distinct.set(key,{
+    id:hit.entry.rec.id,work:hit.entry.rec.work,type:hit.entry.rec.type,
+    section:hit.entry.rec.section,segment:hit.entry.rec.segment,
+    locator:loc,field:hit.entry.kind,term:hit.term,kind:hit.kind,
+    source:hit.entry.rec.title
+   });
+  }
+  const locations=[...distinct.values()].slice(0,12);
+  const matchKinds=[...new Set(evidence.map(x=>x.kind))];
+  const scopeName=scope==='passage'?'same passage':scope==='section'?'same section':
+   scope==='part'?'same editorial part':'same work';
+  let note='Scholarly pattern · '+scopeName;
+  if(locations.length>1)note+=' · '+locations.length+' evidenced locations';
+  if(matchKinds.some(x=>x==='pattern'||x==='fuzzy'))note+=' · '+matchKinds.filter(x=>x==='pattern'||x==='fuzzy').join(' + ');
+  const matched={
+   field:preferred.entry.kind,raw:preferred.entry.raw,relation:'scholarly',
+   scope,kind:preferred.kind,term:preferred.term,
+   match:{term:preferred.term,at:0}, // snippet locates the exact retrieved surface form
+   evidence:outcome.hits.slice(0,12).map(h=>({
+    raw:h.entry.raw,field:h.entry.kind,term:h.term,kind:h.kind,
+    recId:h.entry.rec.id,locator:h.entry.rec.locator,section:h.entry.rec.section
+   })),
+   locations,reason:note,
+   expression:engine.explain(parsed.ast)
+  };
+  const score=70+Math.min(30,evidence.reduce((n,h)=>n+(h.score||0),0))+
+    (rec.type==='text'&&rec.subtype==='Authorial text'?18:0);
+  results.push({...rec,matched,score,scholarlyGroup:group.key,scopeLabel:scopeName});
+ }
+ if(opts.sort==='source')results.sort((a,b)=>a.work.localeCompare(b.work)||
+  (Number(a.section)||0)-(Number(b.section)||0)||a.id.localeCompare(b.id));
+ else if(opts.sort==='alpha')results.sort((a,b)=>a.title.localeCompare(b.title,undefined,{sensitivity:'base'}));
+ else if(opts.sort==='recent')results.sort((a,b)=>(b.updated||0)-(a.updated||0)||b.score-a.score);
+ else results.sort((a,b)=>b.score-a.score||(Number(a.section)||0)-(Number(b.section)||0));
+ const facets=facetCounts(results),
+  filtered=opts.facet==='all'?results:opts.facet==='mine'?results.filter(r=>r.privacy==='private'):
+  results.filter(r=>r.type===opts.facet);
+ return {results:filtered,facets,total:results.length,
+  plan:{scholarly:true,ast:parsed.ast,explain:engine.explain(parsed.ast)},
+  scope,original,error:null};
+}
+
 function searchRecords(q,options){
  const opts=Object.assign({scope:'work',mode:'terms',sort:'relevance',facet:'all',owner:'all',
    nearTerm:'',nearGap:5,nearOrdered:false},options||{});
@@ -400,6 +511,10 @@ function searchRecords(q,options){
  const first=isNear?queryPlan(near.left,'terms'):null;
  const second=isNear?queryPlan(near.right,'terms'):null;
  const plan=isNear?{...first,near}:queryPlan(q,opts.mode);
+ if(opts.mode==='scholarly'){
+  const corpus=baseItems.concat(opts.scope==='library'?otherItems:[],readPersonal());
+  return gnScholarlySearch(q,opts,corpus);
+ }
  if(!plan.norm||isNear&&!second.norm)return {results:[],facets:{all:0},plan,total:0,missingNear:Boolean(isNear&&!second.norm)};
  const corpus=baseItems.concat(opts.scope==='library'?otherItems:[],readPersonal());
  let hits=[];
@@ -495,7 +610,11 @@ function icon(type){const path={
 const ui={opened:false,expanded:false,query:'',facet:'all',mode:'terms',scope:'work',
   sort:'relevance',display:'results',showFilters:false,page:CONFIG.pageSize,results:[],facets:{},
   before:null,request:0,scroll:0,entryHash:'',entryScroll:0,pendingReturn:null,
-  nearTerm:'',nearGap:5,nearOrdered:false};
+  nearTerm:'',nearGap:5,nearOrdered:false,booleanScope:'passage',
+  orthography:'normalized',builderOpen:false,savedOpen:false,builderError:'',
+  builderRows:[{join:'AND',kind:'word',text:'',field:'all'},
+               {join:'AND',kind:'word',text:'',field:'all'}],
+  queryError:'',queryExplanation:''};
 let host=null,inputTimer=0,renderNonce=0,lastStatus='';
 function filterButton(id,text,selected,extra){
  return '<button type="button" class="gns-chip'+(selected?' gns-current':'')+'" data-gns-'+extra+'="'+xml(id)+'" aria-pressed="'+selected+'">'+esc(text)+'</button>';
@@ -507,7 +626,7 @@ function scopeSelector(){
 }
 function modeSelector(){
  return '<label class="gns-setting"><span>Match</span><select id="gns-mode" aria-label="Search mode">'+
-  [['literal','Exact words'],['terms','Words + terms'],['proximity','Proximity'],['concepts','Conceptual links']].map(x=>
+  [['literal','Exact words'],['terms','Words + terms'],['proximity','Proximity'],['scholarly','Scholarly patterns'],['concepts','Conceptual links']].map(x=>
   '<option value="'+x[0]+'"'+(ui.mode===x[0]?' selected':'')+'>'+x[1]+'</option>').join('')+'</select></label>';
 }
 function proximityControls(){
@@ -524,6 +643,107 @@ function proximityControls(){
    '<span class="gns-near-help">Both terms must occur in the same passage and language. 0 means adjacent; 5 permits up to five words between them.</span>'+
    '</div>';
 }
+
+function gnSettingOption(id,name,value,current){
+ return '<option value="'+xml(id)+'"'+(value===current?' selected':'')+'>'+esc(name)+'</option>';
+}
+function gnBuilderRow(row,index){
+ const join=index?'<select data-gns-builder-join="'+index+'" aria-label="Condition '+(index+1)+' logic">'+
+  [['AND','and'],['OR','or'],['AND NOT','and not']].map(([id,name])=>gnSettingOption(id,name,id,row.join)).join('')+
+  '</select>':'<span class="gns-builder-first">Find</span>';
+ const kinds=[['word','Term'],['phrase','Exact phrase'],['prefix','Begins with'],['pattern','Letter pattern'],
+  ['fuzzy1','Within 1 letter'],['fuzzy2','Within 2 letters']];
+ return '<div class="gns-builder-row" data-gns-builder-row="'+index+'">'+join+
+   '<select data-gns-builder-kind="'+index+'" aria-label="Condition '+(index+1)+' matching">'+
+     kinds.map(([id,name])=>gnSettingOption(id,name,id,row.kind)).join('')+'</select>'+
+   '<input type="text" data-gns-builder-text="'+index+'" value="'+xml(row.text)+'" '+
+    'placeholder="'+(row.kind==='pattern'?'e.g. مس[ؤئ]ول':'Term or phrase')+'" '+
+    'aria-label="Condition '+(index+1)+' search term" dir="auto" autocomplete="off"/>'+
+   '<select data-gns-builder-field="'+index+'" aria-label="Condition '+(index+1)+' language">'+
+    [['all','Any field'],['ar','Arabic'],['en','English']].map(([id,name])=>gnSettingOption(id,name,id,row.field)).join('')+'</select>'+
+   (index?'<button type="button" class="gns-builder-remove" data-gns-remove-row="'+index+'" aria-label="Remove condition '+(index+1)+'">×</button>':'<span></span>')+
+  '</div>';
+}
+const GN_SAVED_SEARCHES='gnamma-scholarly-saved-searches-v1';
+function gnLoadSaved(){
+ try{
+  const records=JSON.parse(localStorage.getItem(GN_SAVED_SEARCHES)||'[]');
+  if(!Array.isArray(records))return [];
+  return records.slice(0,30).filter(r=>r&&typeof r.query==='string'&&r.query.length<=350);
+ }catch(_){return [];}
+}
+function gnSaveCurrent(){
+ if(!ui.query.trim())return;
+ const text=$('#gns-save-name',host)?.value?.trim().slice(0,80)||ui.query.slice(0,60);
+ const list=gnLoadSaved(),record={id:Date.now()+'-'+Math.round(Math.random()*10000),
+  name:text,query:ui.query,mode:ui.mode,scope:ui.scope,facet:ui.facet,
+  sort:ui.sort,booleanScope:ui.booleanScope,orthography:ui.orthography,
+  nearTerm:ui.nearTerm,nearGap:ui.nearGap,nearOrdered:ui.nearOrdered,
+  created:Date.now()};
+ list.unshift(record);
+ try{localStorage.setItem(GN_SAVED_SEARCHES,JSON.stringify(list.slice(0,30)));ui.savedOpen=true;rerender(false);}
+ catch(_){ui.queryError='Browser storage is unavailable; the search was not saved.';rerender(false);}
+}
+function gnLoadSavedQuery(index){
+ const record=gnLoadSaved()[index];if(!record)return;
+ const keys=['query','mode','scope','facet','sort','booleanScope','orthography','nearTerm','nearGap','nearOrdered','booleanScope','orthography'];
+ for(const key of keys)if(Object.hasOwn(record,key))ui[key]=record[key];
+ ui.expanded=true;ui.savedOpen=true;ui.page=CONFIG.pageSize;ui.pendingReturn=null;
+ rerender();
+}
+function gnSavedPanel(){
+ const rows=gnLoadSaved();
+ return '<details class="gns-saved" data-gns-details="saved"'+(ui.savedOpen?' open':'')+'>'+
+  '<summary>Saved searches'+(rows.length?' ('+rows.length+')':'')+'</summary>'+
+  '<div class="gns-saved-content">'+
+   '<p>Saved only in this browser. No search query or private notes are uploaded.</p>'+
+   '<div class="gns-save-controls"><input id="gns-save-name" type="text" maxlength="80" placeholder="Optional search title" '+
+    'aria-label="Title for saved search"/><button type="button" data-gns-save="1">Save current search</button></div>'+
+    (rows.length?'<div class="gns-saved-list">'+rows.map((r,i)=>
+     '<div class="gns-saved-item"><button data-gns-load="'+i+'" title="'+xml(r.query)+'">'+
+      esc(r.name||r.query)+'</button><button data-gns-delete="'+i+'" aria-label="Delete saved search '+esc(r.name||'')+'">×</button></div>'
+     ).join('')+'</div>':'<p>No saved searches on this device.</p>')+'</div></details>';
+}
+function scholarlyControls(){
+ if(ui.mode!=='scholarly')return '';
+ const b=window.GnammaScholarly;
+ let preview='',builderError=ui.builderError||'';
+ try{preview=b?.safeBuilder(ui.builderRows)||'';}catch(e){builderError=e.message;}
+ return '<section class="gns-scholarly" aria-label="Scholarly pattern search controls">'+
+  '<div class="gns-scholarly-settings">'+
+   '<label class="gns-setting">Conditions within<select id="gns-boolean-scope" aria-label="Boolean search scope">'+
+    [['passage','One passage'],['section','One section'],['part','One editorial part'],['work','One work']].map(([id,name])=>gnSettingOption(id,name,id,ui.booleanScope)).join('')+
+   '</select></label>'+
+   '<label class="gns-setting">Spelling<select id="gns-orthography" aria-label="Orthographic matching">'+
+    [['normalized','Normalized (ignore vowel marks)'],['original','As encoded (retain written marks)']].map(([id,name])=>gnSettingOption(id,name,id,ui.orthography)).join('')+
+   '</select></label>'+
+   '<div class="gns-pattern-examples"><span>Try:</span>'+
+   ['qiyas AND (illa OR sabab)','اجته*','مس[ؤئ]ول','اجتهاد~1'].map(q=>
+     '<button type="button" data-gns-pattern-example="'+xml(q)+'">'+esc(q)+'</button>').join('')+'</div>'+
+  '</div>'+
+  '<details class="gns-builder" data-gns-details="builder"'+(ui.builderOpen?' open':'')+'>'+
+   '<summary>Build a search without writing operators</summary>'+
+   '<div class="gns-builder-inner">'+
+    ui.builderRows.map((row,i)=>gnBuilderRow(row,i)).join('')+
+    '<div class="gns-builder-actions">'+
+     '<button type="button" data-gns-add-row="1"'+(ui.builderRows.length>=8?' disabled':'')+'>+ Add condition</button>'+
+     '<button type="button" class="gns-builder-apply" data-gns-apply-builder="1">Use these conditions</button></div>'+
+    '<div class="gns-builder-preview" aria-live="polite"><strong>Query preview:</strong> <code id="gns-builder-preview">'+
+     esc(preview||'Add a term to build a query')+'</code>'+
+     (builderError?'<span class="gns-builder-error" role="alert">'+esc(builderError)+'</span>':'')+'</div>'+
+   '</div></details>'+
+   (ui.query?'<div class="gns-explanation" aria-live="polite">'+
+    (ui.queryError?'<strong class="gns-error">Check query: '+esc(ui.queryError)+'</strong>':
+      '<strong>Your search means:</strong> '+esc(ui.queryExplanation||'Search the selected scope'))+
+    (ui.queryError?'':'<small> · '+esc(ui.booleanScope==='passage'?'One field in one passage':
+      ui.booleanScope==='section'?'Same section, with Arabic and English kept separate':
+      ui.booleanScope==='part'?'Same editorial part, within one language and source type':
+      'Same work, within one language and source type')+
+      ' · '+(ui.orthography==='original'?'As encoded in this edition':'Normalized spelling')+'</small>')+
+    '</div>':'')+
+   gnSavedPanel()+
+  '</section>';
+}
 function filterPanel(){
  const hasResult=ui.results.length||ui.query;
  const typeSelect='<label class="gns-setting gns-source-select"><span>Source type</span><select id="gns-type" aria-label="Filter content type">'+
@@ -536,7 +756,7 @@ function filterPanel(){
    '<label class="gns-setting"><span>View</span><select id="gns-display" aria-label="Results display">'+
      '<option value="results"'+(ui.display==='results'?' selected':'')+'>Results</option>'+
      '<option value="concordance"'+(ui.display==='concordance'?' selected':'')+'>Concordance</option>'+
-   '</select></label></div>'+proximityControls();
+   '</select></label></div>'+proximityControls()+scholarlyControls();
 }
 function resultControls(){
  const count=ui.resultCount||0;
@@ -586,13 +806,39 @@ function proximitySnippet(raw,hit){
  }
  return out+esc(text.slice(cursor,last))+(last<text.length?'…':'');
 }
+
+function gnScholarlySnippet(raw,matched){
+ const text=String(raw||'').replace(/\s+/g,' ').trim(),mapped=foldMapped(text);
+ if(!mapped.offsets.length)return esc(text.slice(0,250));
+ const evidence=(matched.evidence||[]).filter(e=>e.raw===matched.raw&&e.field===matched.field).slice(0,5);
+ const terms=[...new Set(evidence.map(e=>fold(e.term)).filter(Boolean))],norm=mapped.norm;
+ const spans=[];
+ for(const term of terms){
+  let at=norm.indexOf(term);
+  if(at<0)continue;
+  const a=mapped.offsets[at],b=mapped.offsets[Math.min(mapped.offsets.length-1,at+term.length-1)];
+  if(a&&b)spans.push({start:a[0],end:b[1]});
+ }
+ if(!spans.length)return snippet(text,{term:matched.term||''});
+ spans.sort((a,b)=>a.start-b.start);
+ const lo=Math.max(0,spans[0].start-65),hi=Math.min(text.length,spans.at(-1).end+95);
+ let output=lo?'…':'',cursor=lo;
+ for(const m of spans){
+  if(m.start<cursor)continue;
+  output+=esc(text.slice(cursor,m.start))+'<mark>'+esc(text.slice(m.start,m.end))+'</mark>';
+  cursor=m.end;
+ }
+ return output+esc(text.slice(cursor,hi))+(hi<text.length?'…':'');
+}
+
 function markupResult(r,i,kwic=false){
  const loc=r.locator||'',priv=r.privacy==='private',work=r.work==='mustasfa'?'al-Mustaṣfā':'al-Ḍarūrī';
  const source=r.subtype?labelFor(r.type)+' · '+r.subtype:labelFor(r.type);
  const reason=r.matched?.reason||'';
  const text=r.matched?.raw||r.en||r.ar||r.body||r.title||'';
  const context=r.matched?.relation==='proximity'?
-  proximitySnippet(text,r.matched):
+  proximitySnippet(text,r.matched):r.matched?.relation==='scholarly'?
+  gnScholarlySnippet(text,r.matched):
   snippet(text,r.matched?.match||{term:r.matched?.term||ui.query},hasArabic(text));
  const title=r.type==='text'&&r.subtype==='Authorial text'?r.title:r.title;
  const heading=(r.type==='text'||r.type==='source'||r.type==='note'?loc:'');
@@ -603,6 +849,7 @@ function markupResult(r,i,kwic=false){
  if(r.matched?.relation==='concept')tags+='<span class="gns-scope-label">Concept relation</span>';
  if(r.matched?.relation==='terminology')tags+='<span class="gns-scope-label">Linked term</span>';
  if(r.matched?.relation==='proximity')tags+='<span class="gns-scope-label">Proximity · '+r.matched.gap+' words between</span>';
+ if(r.matched?.relation==='scholarly')tags+='<span class="gns-scope-label">Scholarly · '+esc(r.matched.scope||'passage')+'</span>';
  if(kwic){
   const side=(r.matched?.field==='ar'||(hasArabic(text)&&r.matched?.field!=='en'));
   return '<button type="button" class="gns-result gns-kwic" data-gns-result="'+i+'">'+
@@ -610,12 +857,20 @@ function markupResult(r,i,kwic=false){
    '<span class="gns-kwic-text" '+(side?'dir="rtl" lang="ar"':'dir="auto"')+'>'+context+'</span>'+
    '<span class="gns-kwic-type">'+esc(r.subtype)+'</span></button>';
  }
- return '<button type="button" class="gns-result" data-gns-result="'+i+'">'+
+ const main='<button type="button" class="gns-result" data-gns-result="'+i+'">'+
   '<span class="gns-row-meta">'+tags+'<span>'+rowLabel+'</span></span>'+
   '<strong class="gns-row-title">'+esc(title)+'</strong>'+
   '<span class="gns-row-excerpt" '+(hasArabic(text)?'dir="rtl" lang="ar"':'dir="auto"')+'>'+context+'</span>'+
   ((r.matched?.relation&&r.matched.relation!=='literal')?'<small class="gns-reason">'+esc(reason)+'</small>':'')+
   '</button>';
+ const evidence=r.matched?.relation==='scholarly'&&r.matched.locations?.length>1?
+  '<div class="gns-linked-evidence"><span>Supporting locations:</span>'+
+   r.matched.locations.slice(0,8).map((e,j)=>
+    '<button type="button" data-gns-evidence-result="'+i+'" data-gns-evidence-index="'+j+
+    '" aria-label="Open supporting location '+xml(e.locator)+'">'+esc(e.locator||e.source||e.id)+'</button>').join('')+
+   (r.matched.locations.length>8?'<small>+'+(r.matched.locations.length-8)+' further</small>':'')+
+   '</div>':'';
+ return evidence?'<div class="gns-group-result">'+main+evidence+'</div>':main;
 }
 function renderResultList(){
  let filtered=ui.results;
@@ -671,6 +926,7 @@ function rerender(keepFocus=true){
  let oldScroll=$('#gns-listpane',host)?.scrollTop||0;
  const all=searchRecords(ui.query,ui);
  ui.results=all.results;ui.resultCount=all.results.length;ui.facetsCount=all.facets;ui.direct=all.direct;
+ ui.queryError=all.error||'';ui.queryExplanation=all.plan?.explain||'';
  if(ui.facet==='mine'){ui.results=ui.results.filter(r=>r.privacy==='private');ui.resultCount=ui.results.length;}
  host.innerHTML=markup();
  if(keepFocus||focus){
@@ -698,6 +954,7 @@ function open(restoring=false){
   // last used a more complex research query. A Return link restores it.
   ui.expanded=false;ui.facet='all';ui.showFilters=false;ui.page=CONFIG.pageSize;
   ui.mode='terms';ui.nearTerm='';ui.nearGap=5;ui.nearOrdered=false;
+  ui.booleanScope='passage';ui.orthography='normalized';
   ui.entryHash=location.hash;ui.entryScroll=window.scrollY;ui.pendingReturn=null;
  }
  if(!host){host=document.createElement('div');host.id='gn-unified-search';host.className='gns-root';document.body.append(host);}
@@ -722,7 +979,7 @@ function restoreResults(){
  }
  const popup=document.querySelector('#infoOverlay:not([hidden])');
  popup?.querySelector('#detailClose')?.click();
- const keys=['query','facet','scope','mode','sort','display','expanded','showFilters','page','nearTerm','nearGap','nearOrdered'];
+ const keys=['query','facet','scope','mode','sort','display','expanded','showFilters','page','nearTerm','nearGap','nearOrdered','booleanScope','orthography'];
  for(const key of keys)if(Object.hasOwn(origin.state,key))ui[key]=origin.state[key];
  ui.entryHash=targetHash;ui.entryScroll=Number(origin.from?.y)||0;
  ui.pendingReturn={scroll:Math.max(0,Number(origin.state.listScroll)||0),
@@ -751,6 +1008,7 @@ function captureSearchOrigin(r){
  const state={query:ui.query,facet:ui.facet,scope:ui.scope,mode:ui.mode,
   sort:ui.sort,display:ui.display,expanded:ui.expanded,showFilters:ui.showFilters,
   nearTerm:ui.nearTerm,nearGap:ui.nearGap,nearOrdered:ui.nearOrdered,
+  booleanScope:ui.booleanScope,orthography:ui.orthography,
   page:ui.page,listScroll:scroll};
  const from={hash:ui.entryHash,y:ui.entryScroll};
  return window.GnammaSearchReturn?.capture({state,from,selected:{
@@ -809,10 +1067,10 @@ function highlightProximityAtSource(rec){
  // Scroll to the actual neighbourhood, not merely the section heading.
  try{grid.scrollIntoView({block:'center',behavior:'smooth'});}catch(_){}
 }
-function openRecord(r){
+function openRecord(r,originResult=null){
  if(!r)return;
  clearProximityHighlights();
- captureSearchOrigin(r);
+ captureSearchOrigin(originResult||r);
  const hit=r.matched;
  if(r.privacy==='private'){openPersonal(r);return;}
  if(r.work==='mustasfa'){
@@ -907,7 +1165,10 @@ document.addEventListener('click',event=>{
  if(!ui.opened||!host||!host.contains(event.target))return;
  const target=event.target.closest('[data-gns-close],[data-gns-expand],[data-gns-toggle-filters],'+
  '[data-gns-quick],[data-gns-facet],[data-gns-result],[data-gns-more],[data-gns-example],'+
- '[data-gns-retry],[data-gns-download]');
+ '[data-gns-retry],[data-gns-download],[data-gns-pattern-example],'+
+ '[data-gns-add-row],[data-gns-remove-row],[data-gns-apply-builder],'+
+ '[data-gns-save],[data-gns-load],[data-gns-delete],'+
+ '[data-gns-evidence-result]');
  if(!target)return;
  event.preventDefault();event.stopPropagation();
  if(target.hasAttribute('data-gns-close')){close();return;}
@@ -916,8 +1177,55 @@ document.addEventListener('click',event=>{
  if(target.hasAttribute('data-gns-quick')){change('facet',target.dataset.gnsQuick);return;}
  if(target.hasAttribute('data-gns-facet')){change('facet',target.dataset.gnsFacet);return;}
  if(target.hasAttribute('data-gns-more')){ui.page+=CONFIG.pageSize;rerender(false);return;}
+ if(target.hasAttribute('data-gns-evidence-result')){
+  const source=ui.results[Number(target.dataset.gnsEvidenceResult)];
+  const location=source?.matched?.locations?.[Number(target.dataset.gnsEvidenceIndex)];
+  if(!source||!location)return;
+  const rec=(location.work==='mustasfa'?otherItems:baseItems).find(x=>
+    x.id===location.id&&x.work===location.work&&x.type===location.type);
+  if(rec){
+   const resolved={...rec,matched:{relation:'scholarly',field:location.field,
+    raw:rec[location.field]||rec.body||rec.ar||rec.en,
+    term:location.term,evidence:[],scope:'passage',
+    reason:'Supporting evidence for the broader Boolean search'}};
+   openRecord(resolved,source);
+  }else openRecord(source);
+  return;
+ }
  if(target.hasAttribute('data-gns-result')){
   const r=ui.results[Number(target.dataset.gnsResult)];openRecord(r);return;
+ }
+ if(target.hasAttribute('data-gns-pattern-example')){
+  ui.query=target.dataset.gnsPatternExample;ui.mode='scholarly';ui.facet='all';
+  ui.page=CONFIG.pageSize;rerender();return;
+ }
+ if(target.hasAttribute('data-gns-add-row')){
+  if(ui.builderRows.length>=8)return;
+  ui.builderRows.push({join:'AND',kind:'word',text:'',field:'all'});
+  ui.builderOpen=true;rerender(false);return;
+ }
+ if(target.hasAttribute('data-gns-remove-row')){
+  const i=Number(target.dataset.gnsRemoveRow);
+  if(i>0&&i<ui.builderRows.length)ui.builderRows.splice(i,1);
+  ui.builderOpen=true;rerender(false);return;
+ }
+ if(target.hasAttribute('data-gns-apply-builder')){
+  let source='';
+  try{source=window.GnammaScholarly?.safeBuilder(ui.builderRows)||'';ui.builderError='';}
+  catch(e){ui.builderError=e.message;ui.builderOpen=true;rerender(false);return;}
+  if(!source){ui.builderOpen=true;ui.builderError='Add at least one condition to the builder.';rerender(false);return;}
+  const parsed=window.GnammaScholarly.parse(source,ui.orthography==='original'?x=>String(x??'').toLowerCase().normalize('NFC'):fold);
+  if(parsed.error){ui.builderError=parsed.error;ui.builderOpen=true;rerender(false);return;}
+  ui.query=source;ui.mode='scholarly';ui.expanded=true;ui.builderOpen=true;ui.page=CONFIG.pageSize;
+  ui.pendingReturn=null;rerender();return;
+ }
+ if(target.hasAttribute('data-gns-save')){gnSaveCurrent();return;}
+ if(target.hasAttribute('data-gns-load')){gnLoadSavedQuery(Number(target.dataset.gnsLoad));return;}
+ if(target.hasAttribute('data-gns-delete')){
+  const i=Number(target.dataset.gnsDelete),items=gnLoadSaved();
+  if(i>=0&&i<items.length)items.splice(i,1);
+  try{localStorage.setItem(GN_SAVED_SEARCHES,JSON.stringify(items));}catch(_){}
+  ui.savedOpen=true;rerender(false);return;
  }
  if(target.hasAttribute('data-gns-example')){
   ui.query=target.dataset.gnsExample;ui.facet='all';ui.page=CONFIG.pageSize;rerender();return;
@@ -930,10 +1238,26 @@ document.addEventListener('click',event=>{
  }
 },true);
 document.addEventListener('input',event=>{
- if(!ui.opened||!host||!['gns-query','gns-near-term'].includes(event.target?.id))return;
+ if(!ui.opened||!host)return;
+ if(event.target?.dataset?.gnsBuilderText!==undefined){
+  const i=Number(event.target.dataset.gnsBuilderText);
+  if(ui.builderRows[i])ui.builderRows[i].text=event.target.value;
+  const preview=$('#gns-builder-preview',host);
+  try{
+   if(preview)preview.textContent=window.GnammaScholarly?.safeBuilder(ui.builderRows)||'Add a term to build a query';
+   ui.builderError='';
+  }catch(e){if(preview)preview.textContent='Invalid condition: '+e.message;ui.builderError=e.message;}
+  return;
+ }
+ if(!['gns-query','gns-near-term'].includes(event.target?.id))return;
  if(event.target.id==='gns-near-term')ui.nearTerm=event.target.value;
  else{
   ui.query=event.target.value;
+  if(ui.mode==='terms'&&(/\b(?:AND|OR|NOT)\b/i.test(ui.query)&&/\s/u.test(ui.query)||
+     /[{}|]/u.test(ui.query)||/[\p{L}\p{N}](?:[*?]|~[12])(?:\s|$)/u.test(ui.query)||
+     /\[[\p{L}\p{N}]{1,12}\]/u.test(ui.query))){
+    ui.mode='scholarly';ui.expanded=true;
+  }
   const inline=ui.query.match(/^(.+?)\s+(NEAR|BEFORE)\/(\d{1,2})\s+(.+)$/i);
   if(inline){
    ui.query=inline[1].trim();ui.nearTerm=inline[4].trim();
@@ -955,6 +1279,16 @@ document.addEventListener('change',event=>{
  if(target.id==='gns-display')change('display',target.value);
  if(target.id==='gns-near-gap'){ui.nearGap=Number(target.value)||0;ui.pendingReturn=null;rerender(false);}
  if(target.id==='gns-near-order'){ui.nearOrdered=target.checked;ui.pendingReturn=null;rerender(false);}
+ if(target.id==='gns-boolean-scope'){ui.booleanScope=target.value;ui.pendingReturn=null;rerender(false);}
+ if(target.id==='gns-orthography'){ui.orthography=target.value;ui.pendingReturn=null;rerender(false);}
+ if(target.dataset?.gnsBuilderJoin!==undefined||target.dataset?.gnsBuilderKind!==undefined||
+    target.dataset?.gnsBuilderField!==undefined){
+  const key=target.dataset.gnsBuilderJoin!==undefined?'join':
+    target.dataset.gnsBuilderKind!==undefined?'kind':'field';
+  const index=Number(target.dataset.gnsBuilderJoin??target.dataset.gnsBuilderKind??target.dataset.gnsBuilderField);
+  if(ui.builderRows[index])ui.builderRows[index][key]=target.value;
+  ui.builderError='';ui.builderOpen=true;rerender(false);
+ }
 },true);
 document.addEventListener('keydown',event=>{
  if(!ui.opened||!host||!host.contains(event.target))return;
@@ -976,6 +1310,11 @@ document.addEventListener('keydown',event=>{
   event.preventDefault();openRecord(ui.results[0]);
  }
 },true);
+document.addEventListener('toggle',event=>{
+ if(!ui.opened||!host||!host.contains(event.target))return;
+ if(event.target?.dataset?.gnsDetails==='builder')ui.builderOpen=event.target.open;
+ if(event.target?.dataset?.gnsDetails==='saved')ui.savedOpen=event.target.open;
+},true);
 window.addEventListener('storage',event=>{
  if(event.key===LOCAL_KEY&&ui.opened)rerender(false);
 });
@@ -985,6 +1324,7 @@ window.GnammaUnifiedSearch={
  getEntries:()=>({core:baseItems.length,other:otherItems.length,personal:readPersonal().length}),
  getState:()=>({query:ui.query,facet:ui.facet,scope:ui.scope,mode:ui.mode,
   nearTerm:ui.nearTerm,nearGap:ui.nearGap,nearOrdered:ui.nearOrdered,
+  booleanScope:ui.booleanScope,orthography:ui.orthography,queryError:ui.queryError,
   expanded:ui.expanded,results:ui.results.length}),
  loadLibrary:loadOther
 };
