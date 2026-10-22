@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Experimental local PDF composition · Gnamma Darūrī</title>
+<link rel="stylesheet" href="preview.css">
+<script defer src="../vendor/pdf-lib-1.17.1.min.js"></script>
+<script defer src="core.js"></script>
+<script defer src="preview.js"></script>
+</head>
+<body>
+<main class="shell">
+  <nav class="breadcrumb"><a href="../index.html#editions">← Gnamma Editions &amp; Printing</a></nav>
+  <p class="eyebrow">GNAMMA RESEARCH · EXPERIMENTAL PUBLICATION ENGINE</p>
+  <h1>Assemble a Darūrī PDF on this device</h1>
+  <p class="lead">This HTML-first experimental renderer combines a <strong>verified published Reading/Study PDF</strong> with a reusable scholarly apparatus packet. It uses only local browser processing and versioned, SHA-256-checked files. No personal notes are transmitted or uploaded.</p>
+  <section class="panel">
+    <h2>Publication options</h2>
+    <label for="edition">Choose a complete, published apparatus profile</label>
+    <select id="edition" disabled><option>Loading verified catalogue…</option></select>
+    <p class="explain">Arabic and English text layouts, section numbering, glossary, index, concordance, source notes and links come from the same canonical source as the existing approved PDFs.</p>
+    <label class="tick"><input id="ack" type="checkbox"> I understand this is an experimental copy; my original approved PDF remains available.</label>
+    <div class="buttons">
+      <button type="button" id="make" disabled>Generate this PDF locally</button>
+      <a id="published" aria-disabled="true" href="../index.html#editions">Original approved PDF</a>
+    </div>
+  </section>
+  <section class="panel" aria-live="polite" role="status">
+    <h2>Build verification</h2>
+    <p id="status">Checking publication manifests.</p>
+    <progress id="progress" max="100" value="0" hidden></progress>
+    <dl class="spec" id="details">
+      <div><dt>Base PDF</dt><dd id="base">—</dd></div>
+      <div><dt>Apparatus</dt><dd id="packet">—</dd></div>
+      <div><dt>Source sections</dt><dd>258</dd></div>
+      <div><dt>Privacy</dt><dd>On-device PDF assembly</dd></div>
+    </dl>
+    <p id="result" hidden></p>
+  </section>
+  <p class="small">This renderer never replaces a certified edition automatically. The existing <a href="../personal-export.html">personal Reading Desk PDF exporter</a> remains available for linked P-numbered notes and private annotations. The generated dynamic PDF and its source-map revision must pass the same checks before it is used as a personal PDF base.</p>
+</main>
+</body>
+</html>
