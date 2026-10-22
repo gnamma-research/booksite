@@ -76,8 +76,9 @@ for output in sorted(OUT.glob("**/daruri-*.pdf")):
         "gold_first":sa[:2],"generated_first":sb[:2]})
   r["apparatus_link_topology_ok"]=r["apparatus_link_counts"]["published"]==r["apparatus_link_counts"]["new"] and not r["apparatus_bad_link_examples"]
   r["source_integrity_ok"]=r["pages"][0]==r["pages"][1] and r["source_text_same"]==len(reference) and r["word_geometry_same"]==len(reference) and r["visual_pages_same"]==len(reference)
-  r["safe"]=r["source_integrity_ok"] and r["toc_titles_pages_same"] and
-   r["verified_sections"]==258 and r["apparatus_link_topology_ok"] and not r["bad_generated_links"]
+  r["safe"]=(r["source_integrity_ok"] and r["toc_titles_pages_same"] and
+    r["verified_sections"]==258 and r["apparatus_link_topology_ok"] and
+    not r["bad_generated_links"])
   print("EVALUATE",json.dumps({k:v for k,v in r.items() if k not in ("reference_toc","generated_toc")},ensure_ascii=False),flush=True)
   records.append(r)
 (OUT/"parity_results.json").write_text(json.dumps(records,indent=2,ensure_ascii=False))
