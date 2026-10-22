@@ -1,3 +1,39 @@
+/* Normalize publisher-note section references before initializing Daruri. */
+(function(){
+'use strict';
+const el=document.getElementById('editionData');
+if(!el?.textContent)return;
+let book;
+try{book=JSON.parse(el.textContent);}
+catch(_){return;}
+if(!Array.isArray(book.sections)||!Array.isArray(book.notes))return;
+const locations=Object.create(null),bySection=Object.create(null);
+for(const section of book.sections){
+  const sectionId=String(section.id);
+  for(const id of section.noteIds||[]){
+    if(!/^N\\d{3}$/.test(id))continue;
+    if(locations[id]&&locations[id]!==sectionId){
+      console.warn('Publisher note has inconsistent section anchors',id);
+      return;
+    }
+    locations[id]=sectionId;
+    (bySection[sectionId]||(bySection[sectionId]=[])).push(id);
+  }
+}
+let updated=0;
+for(const note of book.notes){
+  if(!/^N\\d{3}$/.test(note.id)||!locations[note.id])continue;
+  // Note.n was serialized as its running note number, not the text section.
+  // The popup, Arabic scope and "View in section" all require the latter.
+  if(String(note.n)!==locations[note.id]){
+    note.n=locations[note.id];
+    updated++;
+  }
+}
+if(updated)el.textContent=JSON.stringify(book);
+window.GnammaNNoteLocations={locations,bySection};
+})();
+
 
 /* Repair N-note section pointers before the reader parses editionData. */
 (function(){
