@@ -40,3 +40,25 @@ The index includes Darūrī and the working al-Mustaṣfā reader, but not yet e
 ## Parallel-change coordination
 
 Before updating the public default branch, rebase on its **current** tip. Other chats frequently publish PDF apparatus variants and change the edition configuration. This release should touch only the two search assets, their QA/build scripts, the generated al-Mustaṣfā index, its single reader inclusion, and the service-worker cache list. Never overwrite colleagues' PDF or apparatus updates. After merging, check the live GitHub Pages reader and repeat browser QA against the deployed URL.
+
+
+## Plain transliteration and search-result return (22 October update)
+
+- Words + terms and Conceptual links accept academic diacritics, ordinary
+  ASCII, doubled vowels (ijtihaad, qiyaas, ijmaa, usool, tawaatur),
+  selected common spellings (sunnah, shariah), and known Arabizi numeral
+  forms (3illa). This is curated terminology expansion, not unrestricted
+  edit-distance matching. Exact words remains literal.
+- Short prefixes like ij suggest ijtihad and ijma as clickable concepts.
+- Cross-page search return lives in sessionStorage, not URL query strings.
+  Returning restores query, source facet, corpus scope, sorting, search
+  mode, concordance/results setting, number of loaded results and scroll.
+- A small dismissible Back to search results control is available after
+  opening result passages, note popups, legal applications, study guide
+  results, private saved items, dictionary entries and published
+  al-Mustasfa references. Dictionary's former Back to reading control
+  becomes Back to search results when a search originated the visit.
+- Back-to-reading behavior for ordinary (non-search) dictionary visits
+  is retained. Private notes and search strings stay in this browser tab.
+- Browser regressions: node daruri/qa/verify-search-return.cjs
+  (16 cross-work and navigation checks, synthetic isolated browser data).
