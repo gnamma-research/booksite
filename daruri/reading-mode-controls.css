@@ -157,3 +157,83 @@ body.focus-level-3 #readerDock .gn-dock-center>.reader-location{grid-column:auto
   outline:2px solid var(--accent);
   outline-offset:2px;
 }
+
+
+/* English N-note phrase anchors and section scope (2026-10-23). */
+#mainContent .passage-en .gn-note-en-range {
+  cursor:pointer!important;
+  text-decoration:underline;
+  text-decoration-color:var(--gold,var(--accent));
+  text-decoration-style:dotted;
+  text-decoration-thickness:1.3px;
+  text-underline-offset:.2em;
+  border-radius:2px;
+  -webkit-tap-highlight-color:transparent;
+}
+#mainContent .passage-en .gn-note-en-range:hover,
+#mainContent .passage-en .gn-note-en-range:focus-visible{
+  background:var(--gold-soft,var(--accent-soft));
+  text-decoration-color:var(--accent);
+}
+#mainContent .passage-en .gn-note-en-range:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+}
+#mainContent .passage-en .gn-note-en-ref {
+  vertical-align:super;
+  font:600 10px/1.2 var(--sans,system-ui,sans-serif);
+  margin-inline:2px 3px;
+  white-space:nowrap;
+  color:var(--accent);
+  cursor:pointer;
+}
+#mainContent .passage-en .gn-note-en-section-list {
+  display:block;
+  font:500 11px/1.65 var(--sans,system-ui,sans-serif);
+  padding:7px 0 1px;
+  margin-top:9px;
+  color:var(--text-soft,var(--muted));
+  border-top:1px dotted var(--line,var(--border));
+}
+#mainContent .passage-en .gn-note-en-section-heading{
+  font-weight:600;
+}
+#mainContent .passage-en .gn-note-en-section-ref {
+  display:inline-flex;
+  vertical-align:baseline;
+  margin:0 4px 0 0!important;
+  padding:2px 3px!important;
+  font:650 10px/1.25 var(--sans,system-ui,sans-serif)!important;
+  background:transparent;
+  color:var(--accent);
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+.gn-note-en-choice {z-index:1201;}
+.gn-note-en-scope {
+  border-left-color:var(--accent);
+  margin-top:9px;
+}
+.gn-note-en-scope-excerpt {
+  margin:6px 0 2px;
+  font:inherit;
+}
+body.hide-notes #mainContent .gn-note-en-range,
+body.focus-mode #mainContent .gn-note-en-range {
+  cursor:inherit!important;
+  text-decoration:none!important;
+  background:none!important;
+  outline:none!important;
+  pointer-events:none!important;
+}
+body.hide-notes #mainContent .gn-note-en-ref,
+body.hide-notes #mainContent .gn-note-en-section-list,
+body.focus-mode #mainContent .gn-note-en-ref,
+body.focus-mode #mainContent .gn-note-en-section-list {
+  display:none!important;
+}
+@media print{
+  #mainContent .gn-note-en-section-list{display:none!important;}
+  #mainContent .gn-note-en-range{text-decoration:none!important;}
+  #mainContent .gn-note-en-ref{display:none!important;}
+}
