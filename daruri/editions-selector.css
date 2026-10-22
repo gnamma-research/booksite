@@ -414,3 +414,9 @@
     min-height:44px;min-width:50px;padding:7px!important;
   }
 }
+
+/* Three explicit Reading Desk categories; compact on narrow screens. */
+.gn-es .gn-es-personal-options{grid-template-columns:repeat(3,minmax(0,1fr))}
+.gn-es .gn-es-personal-choice .gn-personal-note-icon{width:18px;height:18px;flex:0 0 18px}
+@media(max-width:450px){.gn-es .gn-es-personal-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:335px){.gn-es .gn-es-personal-options{grid-template-columns:1fr}}
