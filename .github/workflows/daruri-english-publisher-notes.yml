@@ -1,0 +1,43 @@
+name: Daruri English publisher note links QA
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/reading-mode-controls.css'
+      - 'daruri/qa/ENGLISH_NOTE_ALIGNMENT.json'
+      - 'daruri/qa/verify-english-publisher-notes.cjs'
+      - 'daruri/index.html'
+      - 'daruri/edition-r3-20261020.js'
+      - '.github/workflows/daruri-english-publisher-notes.yml'
+  pull_request:
+    paths:
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/reading-mode-controls.css'
+      - 'daruri/qa/ENGLISH_NOTE_ALIGNMENT.json'
+      - 'daruri/qa/verify-english-publisher-notes.cjs'
+      - 'daruri/index.html'
+      - 'daruri/edition-r3-20261020.js'
+      - '.github/workflows/daruri-english-publisher-notes.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  english-annotation-browser:
+    name: Verify aligned publisher notes in Chromium and WebKit
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Verify all N-series alignments and reader interactions
+        run: node daruri/qa/verify-english-publisher-notes.cjs
