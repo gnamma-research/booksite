@@ -68,7 +68,7 @@ assert.ok(bundle.includes('QURAN_CONTEXT_SOURCES.md'),'Offline legal/source noti
 assert.ok(bundle.includes("'daruri/quran-context-data.js'"),'File://-compatible JS context bundle is packaged');
 assert.ok(sw.includes('quran-context-data.js?v=20261022-qcontext1'),'JS context is available offline');
 assert.ok(page.includes('gnNotesCardHTML([note])'),'Inline note reuses the section Notes template');
-assert.ok(/data\.notes\[noteId\]/.test(js));
+assert.ok(/record\.notes\[noteId\]/.test(js),'Context renderer reads the shared source-note ID');
 assert.ok(/const kind=n<ref\.start\?'Preceding'/.test(js));
 assert.ok(/\.gn-context-cited/.test(css));
 new Function(js);
