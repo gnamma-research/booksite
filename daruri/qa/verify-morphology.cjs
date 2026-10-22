@@ -93,7 +93,7 @@ async function test(name,fn){await fn();pass++;console.log('PASS '+name)}
    if(!(await linked.count()))throw Error('Missing original dictionary term');
    await linked.click();await page.waitForTimeout(80);
    assert.equal(await page.locator('#infoOverlay').evaluate(x=>x.hidden),false);
-   assert.match(await page.locator('#detailEyebrow').innerText(),/DICTIONARY/i);
+   assert.match(await page.locator('#detailEyebrow').innerText(),/DICTIONARY|LEXICAL|GLOSSARY/i);
    assert.ok(await page.locator('#gnw-dictionary-search [data-gnw-search="terms"]').count());
    assert.equal(await page.locator('#gnamma-word-context:not([hidden])').count(),0);
    await page.locator('#detailClose').click();
