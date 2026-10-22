@@ -1,0 +1,50 @@
+name: Daruri HTML-origin all 12 A4 source books exact-release feasibility
+on:
+  push:
+    branches: [research/daruri-html-first-pdf-20261022]
+    paths:
+      - 'daruri/dynamic-pdf/html_first_all12.py'
+      - 'daruri/dynamic-pdf/html_first_feasibility.py'
+      - 'daruri/build/print_editions.py'
+      - '.github/workflows/daruri-html-first-all12.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-html-first-all12-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  twelve-source-pdfs-from-html-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        index: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned Pango/Harfbuzz Arabic text shaper and source WeasyPrint
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install -q -r daruri/build/requirements.txt 'PyMuPDF==1.26.7' 'pypdf==5.9.0' 'numpy>=1.26' 'scipy>=1.13'
+      - name: Strictly regenerate approved PDF design directly from canonical HTML, no prebuilt PDF as input
+        run: |
+          python daruri/dynamic-pdf/html_first_all12.py \
+            --index ${{ matrix.index }} \
+            --out /tmp/daruri-html-source-${{ matrix.index }} \
+            --strict
+      - name: Preserve exact A4 source, HTML and machine-readable CI evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-html-only-A4-source-${{ matrix.index }}-NONRELEASE
+          path: |
+            /tmp/daruri-html-source-${{ matrix.index }}/*.pdf
+            /tmp/daruri-html-source-${{ matrix.index }}/*.html
+            /tmp/daruri-html-source-${{ matrix.index }}/html-source-acceptance.json
+          if-no-files-found: warn
+          retention-days: 14
