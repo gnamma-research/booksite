@@ -16,3 +16,6 @@ fieldset{padding:0;border:0;margin:0}.radios label,.choices label{display:flex;a
 :focus-visible{outline:3px solid #265e80;outline-offset:3px}
 @media(max-width:680px){.mast-inner{align-items:flex-start;flex-direction:column;gap:5px}.mast-inner nav{gap:10px}.choices{grid-template-columns:1fr}.panel{padding:16px}main{padding:18px 13px}.lead{font-size:1rem}}
 @media print{.masthead,footer,.help,.actions,.picker,.alert{display:none!important}body{background:white}.panel{box-shadow:none;border:0;border-top:1px solid #ccc}.lead{font-size:10pt}}
+.gn-pe-choice-icon{display:inline-grid;place-items:center;width:20px;height:20px;flex:0 0 20px;color:#396c6c}
+.gn-pe-choice-icon>svg{width:19px;height:19px;display:block}
+.choices>.hint{grid-column:1/-1;max-width:660px}
