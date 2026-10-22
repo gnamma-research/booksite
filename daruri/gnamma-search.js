@@ -2,7 +2,7 @@
    Retains the previous Daruri search as a no-script / failed-enhancement fallback. */
 (function () {
 'use strict';
-const CONFIG = {version:'20261022-search1', source:'al-Ḍarūrī', pageSize:40, quickSize:6,
+const CONFIG = {version:'20261022-search-return2', source:'al-Ḍarūrī', pageSize:40, quickSize:6,
   moreUrl:'../texts/al-ghazali/al-mustasfa/data/gnamma-search-index.json'};
 const $ = (s,p=document) => p.querySelector(s);
 const $$ = (s,p=document) => Array.from(p.querySelectorAll(s));
@@ -107,21 +107,57 @@ const registry = [
  {id:'zann',ar:'ظن',en:['ẓann','zann','probability'],definition:'Probability'},
  {id:'maslaha',ar:'مصلحة',en:['maṣlaḥa','maslaha','benefit','welfare'],definition:'Benefit'},
  {id:'taklif',ar:'تكليف',en:['taklīf','taklif','legal responsibility'],definition:'Responsibility'},
- {id:'usul',ar:'أصول الفقه',en:['uṣūl al-fiqh','usul al-fiqh','legal theory'],definition:'Legal theory'}
+ {id:'usul',ar:'أصول الفقه',en:['uṣūl al-fiqh','usul al-fiqh','usool al-fiqh','usul','usool','legal theory'],definition:'Legal theory'},
+ {id:'sunna',ar:'سنة',en:['Sunna','Sunnah','sunah','prophetic tradition'],definition:'Prophetic practice and precedent'},
+ {id:'sharia',ar:'شريعة',en:['sharīʿa','sharia','shariah','shareeah'],definition:'Revealed law'},
+ {id:'ilm',ar:'علم',en:['ʿilm','ilm','3ilm','knowledge'],definition:'Knowledge'},
+ {id:'fiqh',ar:'فقه',en:['fiqh','fikh','jurisprudence'],definition:'Jurisprudence'},
+ {id:'hadith',ar:'حديث',en:['ḥadīth','hadith','hadeeth'],definition:'Prophetic report'}
 ];
+// Ordinary scholarly romanization: accept doubled vowels and common Latin chat forms.
+ // This is intentionally a *terminology* lookup key, not a general fuzzy search across
+ // every word of the book: it cannot silently turn distinct Arabic words into one.
+function romanKey(word){
+ const value=fold(word);
+ if(hasArabic(value)||!/^[a-z0-9 -]+$/.test(value))return value;
+ return value.replace(/3(?=[a-z])/g,'').replace(/2(?=[a-z])/g,'')
+  .replace(/7(?=[a-z])/g,'h')
+  .replace(/aa/g,'a').replace(/ee|ii/g,'i').replace(/oo|ou|uu/g,'u');
+}
 const aliases=new Map();
 function aliasGroup(words,label,provenance){
  const entries=[...new Set(words.map(fold).filter(x=>x&&x.length>1))];
  if(entries.length>22)return; // avoid runaway synonym groups
  for(const term of entries){
-  const old=aliases.get(term);
-  if(!old||old.words.length<entries.length)aliases.set(term,{words:entries,label:label||'',provenance:provenance||'Curated terminology'});
+  const keys=[term];
+  if(!hasArabic(term))keys.push(romanKey(term));
+  for(const key of new Set(keys)){
+   const old=aliases.get(key);
+   if(!old||old.words.length<entries.length)aliases.set(key,{words:entries,label:label||'',provenance:provenance||'Curated terminology'});
+  }
  }
 }
 registry.forEach(t=>aliasGroup([t.ar,...t.en],t.definition,'Curated bilingual concept registry'));
 for(const term of BOOK.glossary||[]){
  const dict=DICTIONARY.terms?.[term.term]||{};
  aliasGroup([term.term,term.ar,...(dict.aliasesAr||[]),...(dict.aliasesEn||[])],term.term,'Verified edition glossary');
+}
+function termSuggestions(raw){
+ const text=romanKey(raw);
+ if(!text||hasArabic(text)||text.length<2||text.length>16||!/^[a-z0-9]+$/.test(text))return [];
+ const matches=[],seen=new Set();
+ const catalog=[
+  ...registry.map(t=>({label:t.en[0],arabic:t.ar,words:[...t.en,t.ar]})),
+  ...(BOOK.glossary||[]).map(t=>({label:t.term,arabic:t.ar,words:[t.term,t.ar,...(DICTIONARY.terms?.[t.term]?.aliasesEn||[])]}))
+ ];
+ for(const item of catalog){
+  const words=item.words.map(romanKey).filter(w=>/^[a-z]+$/.test(w));
+  if(!words.some(w=>w.startsWith(text)))continue;
+  const normalized=romanKey(item.label);
+  if(seen.has(normalized))continue;seen.add(normalized);
+  matches.push({query:item.label,label:item.label,arabic:item.arabic});
+ }
+ return matches.sort((a,b)=>romanKey(a.label).length-romanKey(b.label).length).slice(0,7);
 }
 let baseItems=[],otherItems=[],personalItems=[],allResults=[],visibleCount=0,lastRequest=0,fetching=false,otherLoaded=false,failedOther='';
 function entry(row){
@@ -224,7 +260,7 @@ function queryPlan(q,mode){
  const phrase=(q[0]==='"'&&q[q.length-1]==='"')||(q[0]==='“'&&q[q.length-1]==='”');
  const raw=phrase?q.slice(1,-1).trim():q.trim(),norm=fold(raw);
  if(!norm)return {raw,norm,need:[],direct:null,phrase};
- const group=mode==='literal'?null:aliases.get(norm);
+ const group=mode==='literal'?null:(aliases.get(norm)||aliases.get(romanKey(norm)));
  // Exact words remain the only source of literal search; variants are distinguishable.
  const extras=group?group.words.filter(x=>x!==norm).slice(0,16):[];
  return {raw,norm,need:phrase||group?[[norm,...extras]]:norm.split(/\s+/).filter(Boolean).map(w=>[w]),
@@ -390,7 +426,7 @@ function icon(type){const path={
 }
 const ui={opened:false,expanded:false,query:'',facet:'all',mode:'terms',scope:'work',
   sort:'relevance',display:'results',showFilters:false,page:CONFIG.pageSize,results:[],facets:{},
-  before:null,request:0,scroll:0};
+  before:null,request:0,scroll:0,entryHash:'',entryScroll:0,pendingReturn:null};
 let host=null,inputTimer=0,renderNonce=0,lastStatus='';
 function filterButton(id,text,selected,extra){
  return '<button type="button" class="gns-chip'+(selected?' gns-current':'')+'" data-gns-'+extra+'="'+xml(id)+'" aria-pressed="'+selected+'">'+esc(text)+'</button>';
@@ -421,6 +457,12 @@ function filterPanel(){
 }
 function resultControls(){
  const count=ui.resultCount||0;
+ const suggested=termSuggestions(ui.query).filter(t=>romanKey(t.label)!==romanKey(ui.query));
+ const hint=suggested.length&&(!count||romanKey(ui.query).length<=3)?
+  '<div class="gns-suggestions"><span>Possible terms</span>'+
+   suggested.map(t=>'<button type="button" data-gns-example="'+xml(t.query)+'">'+esc(t.label)+
+    (t.arabic?' <span lang="ar" dir="rtl">'+esc(t.arabic)+'</span>':'')+'</button>').join('')+'</div>':'';
+
  if(!ui.query)return '<div class="gns-intro"><h3>Search the edition and your research</h3>'+
   '<p>Arabic and English passages, editorial notes, source citations, historical dictionaries, concepts, legal applications and your own saved work.</p>'+
   '<p>Try <button data-gns-example="qiyās">qiyās</button>, <button data-gns-example="اجتهاد">اجتهاد</button>, '+
@@ -433,7 +475,7 @@ function resultControls(){
   '</span>'+(ui.expanded?'<button type="button" data-gns-download="csv" title="Export visible search results as CSV">Export CSV ↓</button>':'')+'</div>'+
   (failedOther&&ui.scope==='library'?'<p class="gns-warning" role="alert">'+esc(failedOther)+
   ' <button data-gns-retry="1">Retry</button></p>':'')+
-  (ui.scope==='library'&&!otherLoaded&&fetching?'<p class="gns-wait">Loading other published works; the results will update automatically.</p>':'');
+  (ui.scope==='library'&&!otherLoaded&&fetching?'<p class="gns-wait">Loading other published works; the results will update automatically.</p>':'')+hint;
 }
 function getTypeIcon(t){return icon(t==='personal'?'personal':t==='highlight'?'highlight':t==='note'||t==='source'?'note':t);}
 function markupResult(r,i,kwic=false){
@@ -523,10 +565,25 @@ function rerender(keepFocus=true){
   const field=$('#gns-query',host);field.focus({preventScroll:true});
   if(selection!=null)try{field.setSelectionRange(selection,selection);}catch(_){}
  }
- const pane=$('#gns-listpane',host);if(pane)pane.scrollTop=oldScroll;
+ const pane=$('#gns-listpane',host);
+ if(pane){
+  if(ui.pendingReturn){
+   pane.scrollTop=ui.pendingReturn.scroll;
+   if(!fetching&&!(ui.scope==='library'&&!otherLoaded&&!failedOther)){
+    const index=Math.max(0,ui.pendingReturn.at||0);
+    const result=pane.querySelector('[data-gns-result="'+index+'"]');
+    if(result){result.focus({preventScroll:true});}
+    ui.pendingReturn=null;
+   }
+  }else pane.scrollTop=oldScroll;
+ }
 }
-function open(){
- ui.before=document.activeElement;ui.opened=true;ui.expanded=false;ui.facet='all';ui.showFilters=false;ui.page=CONFIG.pageSize;
+function open(restoring=false){
+ ui.before=document.activeElement;ui.opened=true;
+ if(!restoring){
+  ui.expanded=false;ui.facet='all';ui.showFilters=false;ui.page=CONFIG.pageSize;
+  ui.entryHash=location.hash;ui.entryScroll=window.scrollY;ui.pendingReturn=null;
+ }
  if(!host){host=document.createElement('div');host.id='gn-unified-search';host.className='gns-root';document.body.append(host);}
  host.hidden=false;document.body.classList.add('gns-open');
  rerender();
@@ -536,6 +593,27 @@ function close(){
  if(!ui.opened)return;
  ui.opened=false;document.body.classList.remove('gns-open');if(host){host.innerHTML='';host.hidden=true;}
  if(ui.before&&ui.before.isConnected)try{ui.before.focus({preventScroll:true});}catch(_){}
+}
+function restoreResults(){
+ const origin=window.GnammaSearchReturn?.read();
+ if(!origin)return false;
+ // Restore the source reading location so closing search returns to that place.
+ const targetHash=origin.from?.hash||'';
+ const currentHash=location.hash||'';
+ if(currentHash!==targetHash){
+  history.replaceState(null,'',location.pathname+location.search+targetHash);
+  window.dispatchEvent(new Event('hashchange'));
+ }
+ const popup=document.querySelector('#infoOverlay:not([hidden])');
+ popup?.querySelector('#detailClose')?.click();
+ const keys=['query','facet','scope','mode','sort','display','expanded','showFilters','page'];
+ for(const key of keys)if(Object.hasOwn(origin.state,key))ui[key]=origin.state[key];
+ ui.entryHash=targetHash;ui.entryScroll=Number(origin.from?.y)||0;
+ ui.pendingReturn={scroll:Math.max(0,Number(origin.state.listScroll)||0),
+  at:Number(origin.selected?.at)||0};
+ open(true);
+ requestAnimationFrame(()=>{try{window.scrollTo({top:ui.entryScroll,behavior:'instant'});}catch(_){}});
+ return true;
 }
 function fakeClick(data,value){
  const btn=document.createElement('button');btn.type='button';btn.setAttribute('data-'+data,String(value));
@@ -552,8 +630,19 @@ function openPersonal(record){
  };
  setTimeout(trySelect,90);
 }
+function captureSearchOrigin(r){
+ const scroll=$('#gns-listpane',host)?.scrollTop||0;
+ const state={query:ui.query,facet:ui.facet,scope:ui.scope,mode:ui.mode,
+  sort:ui.sort,display:ui.display,expanded:ui.expanded,showFilters:ui.showFilters,
+  page:ui.page,listScroll:scroll};
+ const from={hash:ui.entryHash,y:ui.entryScroll};
+ return window.GnammaSearchReturn?.capture({state,from,selected:{
+  id:r.id,work:r.work,type:r.type,at:ui.results.indexOf(r)}}) || false;
+}
 function openRecord(r){
- if(!r)return;const hit=r.matched;
+ if(!r)return;
+ captureSearchOrigin(r);
+ const hit=r.matched;
  if(r.privacy==='private'){openPersonal(r);return;}
  if(r.work==='mustasfa'){
   close();
@@ -621,7 +710,7 @@ function downloadCSV(){
 }
 function change(field,value){
  if(!['facet','scope','mode','sort','display'].includes(field))return;
- ui[field]=value;if(field==='scope'){failedOther='';ensureLoaded();}
+ ui[field]=value;ui.pendingReturn=null;if(field==='scope'){failedOther='';ensureLoaded();}
  ui.page=CONFIG.pageSize;rerender(false);
 }
 document.addEventListener('click',event=>{
@@ -669,7 +758,7 @@ document.addEventListener('click',event=>{
 },true);
 document.addEventListener('input',event=>{
  if(!ui.opened||!host||event.target?.id!=='gns-query')return;
- ui.query=event.target.value;ui.page=CONFIG.pageSize;
+ ui.query=event.target.value;ui.page=CONFIG.pageSize;ui.pendingReturn=null;
  clearTimeout(inputTimer);inputTimer=setTimeout(()=>rerender(true),65);
 },true);
 document.addEventListener('change',event=>{
@@ -706,9 +795,13 @@ window.addEventListener('storage',event=>{
 });
 window.GnammaUnifiedSearch={
  version:CONFIG.version,
- open,close,fold,direct,query:searchRecords,
+ open,close,restoreResults,fold,romanKey,direct,query:searchRecords,
  getEntries:()=>({core:baseItems.length,other:otherItems.length,personal:readPersonal().length}),
  getState:()=>({query:ui.query,facet:ui.facet,scope:ui.scope,mode:ui.mode,expanded:ui.expanded,results:ui.results.length}),
  loadLibrary:loadOther
 };
+if(location.hash==='#gns-results'&&window.GnammaSearchReturn?.read()){
+ // Source route initializes before this module. Reopen after its first layout.
+ setTimeout(()=>restoreResults(),0);
+}
 })();
