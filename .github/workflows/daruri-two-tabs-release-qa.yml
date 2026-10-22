@@ -1,0 +1,57 @@
+name: Daruri two-tab Editions full integration QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-two-tabs-inline-pdf-20261022]
+    paths:
+      - '.github/workflows/daruri-two-tabs-release-qa.yml'
+      - 'daruri/editions-selector.js'
+      - 'daruri/editions-selector.css'
+      - 'daruri/personal-export.js'
+      - 'daruri/qa/verify-published-selector-browser.mjs'
+      - 'daruri/qa/verify-published-selector.cjs'
+      - 'daruri/qa/personal-export-browser.cjs'
+      - 'daruri/qa/verify-personal-export-safety.js'
+      - 'daruri/sw.js'
+      - 'daruri/index.html'
+      - 'daruri/editions/maps/**'
+permissions: {contents: read}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Validate JavaScript and twelve safe base maps
+        run: |
+          node --check daruri/editions-selector.js
+          node --check daruri/personal-export.js
+          node --check daruri/qa/verify-published-selector-browser.mjs
+          node daruri/qa/verify-published-selector.cjs
+          node daruri/qa/verify-personal-export-safety.js
+      - name: Install isolated browser and PDF fixture dependencies
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1
+          npx --prefix daruri/qa playwright install --with-deps chromium
+      - name: Serve current published HTML without an application server
+        shell: bash
+        run: |
+          python3 -m http.server 8123 --bind 127.0.0.1 >/tmp/daruri-two-tabs-http.log 2>&1 &
+          for i in $(seq 1 40); do
+            curl --fail --silent http://127.0.0.1:8123/daruri/ >/dev/null && exit 0
+            sleep .25
+          done
+          exit 1
+      - name: Test two tabs, presets, mapped exact editions, and real personal PDF generation
+        run: node daruri/qa/verify-published-selector-browser.mjs
+      - name: Recheck standalone personal PDF generator for compatibility
+        run: node daruri/qa/personal-export-browser.cjs
+      - name: Upload mobile and desktop screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-two-tabs-integration-proofs
+          path: test-artifacts/*two-tabs*.png
+          if-no-files-found: warn

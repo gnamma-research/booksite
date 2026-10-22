@@ -103,6 +103,8 @@
   const model={available,orderItems,dateLine,entryText,verifiedPage,isNote,isBookmark,normalizeDesk,requiresAppendix};
   window.GnammaPersonalExportModel=model;
   let manifest=null,records=[],selectedIds=new Set(),busy=false,resultURL=null,resultFile=null;
+  let baseMapCatalog=null;
+  let storageListenerInstalled=false;
   let lastFilename='';
   function showError(text){
     const out=$('pe-alert');if(!out)return;
@@ -135,7 +137,8 @@
     if(pdf){$('pe-clean').href=fileUrl($('pe-edition').value);}
     else $('pe-clean').removeAttribute('href');
     const p=prefs(),rows=has?matching():[];
-    $('pe-generate').textContent=has?'Download personal PDF':'Open unchanged PDF';
+    $('pe-generate').textContent=has&&document.querySelector('.gn-es')?
+      'Create my PDF':has?'Download personal PDF':'Open unchanged PDF';
     $('pe-description').textContent=!has?
       'Original published PDF only. No Reading Desk items or personal data are added.':
       (rows.length+' Reading Desk item'+(rows.length===1?'':'s')+' selected. A new PDF will be created locally; the original edition stays unchanged.');
@@ -384,7 +387,29 @@
          verifiedMap.base_sha256!==metadata.base_sha256||
          Number(verifiedMap.section_count)!==258||Number(verifiedMap.coverage)!==1||
          Object.keys(verifiedMap.section_pages||{}).length!==258)
-        throw Error('The apparatus PDF and its source map are out of sync.');
+        throw Error('The PDF and its source map are out of sync.');
+      if(p.annotations&&verifiedMap.word_map_present&&
+         verifiedMap.segments&&Object.keys(verifiedMap.segments).length)
+        wordMap=verifiedMap;
+      if(!wordMap&&p.annotations&&docData.source_base&&baseMapCatalog){
+        const base=baseMapCatalog.files.find(entry=>
+          entry.file===docData.source_base&&entry.sha256===verifiedMap.base_sha256);
+        if(base&&base.word_map_present){
+          const response=await fetch(new URL('editions/'+base.map_file,URL_ROOT),{cache:'no-cache'});
+          if(!response.ok)throw Error('The base edition word map is unavailable.');
+          const raw=await response.arrayBuffer();
+          const computed=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',raw)),
+            v=>v.toString(16).padStart(2,'0')).join('');
+          if(computed!==base.map_sha256)
+            throw Error('The base source-word map did not pass checksum verification.');
+          const candidate=JSON.parse(new TextDecoder().decode(raw));
+          if(candidate.source_sha256!==base.sha256||
+             candidate.base_sha256!==verifiedMap.base_sha256||
+             Number(candidate.section_count)!==258||Number(candidate.coverage)!==1)
+            throw Error('The verified base edition does not match this apparatus PDF.');
+          wordMap=candidate;
+        }
+      }
     }else if(p.annotations&&rows.some(r=>r.target?.kind==='quote')){
       try{
         const mapResp=await fetch(new URL('personal-anchor-maps/'+file+'.json',URL_ROOT),{cache:'no-cache'});
@@ -507,6 +532,38 @@
       const data=await res.json();
       if(!data.files||!data.default_pdf)throw Error('Edition list is incomplete');
       manifest=data;
+      // Published Reading/Study A4 PDFs receive exact per-edition maps.
+      try{
+        const [b,m]=await Promise.all([
+          fetch(new URL('editions/manifest.json',URL_ROOT),{cache:'no-cache'}),
+          fetch(new URL('editions/maps/manifest.json',URL_ROOT),{cache:'no-cache'})
+        ]);
+        if(b.ok&&m.ok){
+          const bas=await b.json(),maps=await m.json();
+          if(bas.status==='verified'&&maps.status==='verified'&&
+             Array.isArray(bas.files)&&bas.files.length===12&&
+             Array.isArray(maps.files)&&maps.files.length===12){
+            const source=new Map(bas.files.map(row=>[row.file,row]));
+            baseMapCatalog=maps;
+            for(const row of maps.files){
+              const original=source.get(row.file);
+              if(!original||original.sha256!==row.sha256||
+                 row.base_sha256!==original.sha256||row.verified_sections!==258||
+                 row.map_coverage!==1||!/^[0-9a-f]{64}$/.test(row.map_sha256||''))continue;
+              data.files['editions/'+row.file]={
+                sha256:row.sha256,pages:row.pages,size_bytes:original.bytes,
+                title:(original.tier==='study'?'Study':'Reading')+
+                  ' · '+original.language+' · '+(original.editorial_titles?'Editorial guide':'Recorded headings'),
+                metadata_path:'editions/'+row.metadata_file,
+                map_path:'editions/'+row.map_file,
+                map_sha256:row.map_sha256,
+                source_base:row.file,
+                arabic_form:original.language==='arabic'||original.language==='bilingual-unvowelled'?'ar':'vocalized'
+              };
+            }
+          }
+        }
+      }catch(_){/* The canonical PDFs and apparatus remain available. */}
       // Add SHA-verified static apparatus PDFs and their individual personal-note
       // maps; no visitor-facing server processes PDF files.
       try{
@@ -531,6 +588,7 @@
                 metadata_path:'editions/'+record.metadata_file,
                 map_path:'editions/'+record.map_file,
                 map_sha256:record.map_sha256,
+                source_base:record.source_base,
                 arabic_form:record.language==='bilingual-unvowelled'?'ar':'vocalized'
               };
             }
@@ -539,7 +597,8 @@
       }catch(_){/* The original five PDFs remain selectable without the apparatus catalogue. */}
       const entries=Object.entries(data.files).filter(([file,x])=>
         (/^[a-z0-9-]+\.pdf$/.test(file)||
-         /^editions\/apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english)-(glossary|index|concordance|applications)(?:-(glossary|index|concordance|applications)){0,3}(?:-titles-on)?\.pdf$/.test(file))&&
+         /^editions\/apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english)-(glossary|index|concordance|applications)(?:-(glossary|index|concordance|applications)){0,3}(?:-titles-on)?\.pdf$/.test(file)||
+         /^editions\/(reading|study)\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english|arabic|arabic-vowelled)-titles-(on|off)\.pdf$/.test(file))&&
         x?.sha256&&x?.pages);
       $('pe-edition').replaceChildren();
       const labels={ 'daruri.pdf':'Scholarly reference · bilingual',
@@ -569,7 +628,7 @@
     $('pe-check-all').addEventListener('click',()=>{available(records,prefs()).forEach(r=>selectedIds.add(r.id));$('pe-result').hidden=true;info('');syncForm();});
     $('pe-check-none').addEventListener('click',()=>{selectedIds.clear();$('pe-result').hidden=true;info('');syncForm();});
     // Other tabs can update the local Reading Desk; never export stale selections.
-    window.addEventListener('storage',e=>{
+    if(!storageListenerInstalled)window.addEventListener('storage',e=>{
       if(e.key!==STORAGE)return;
       records=loadDesk();
       const activeIds=new Set(records.map(r=>r.id));
@@ -578,9 +637,31 @@
       syncForm();
       info('Reading Desk data changed in another tab. Check your selected notes before exporting.');
     });
+    storageListenerInstalled=true;
     $('pe-form').addEventListener('submit',submit);
     $('pe-share').addEventListener('click',sharePdf);
+    // The standalone personal-export page continues to work. Editions embeds
+    // the same form and calls this bridge to select exactly the displayed PDF.
+    window.GnammaPersonalExportInline={
+      remount:()=>init(),
+      choose(file){
+        if(!manifest?.files?.[file]){$('pe-edition').value='';syncForm();return false;}
+        $('pe-edition').value=file;syncForm();return true;
+      },
+      setMode(next){
+        const value=next==='choose'?'choose':next==='all'?'all':'none';
+        const radio=document.querySelector('input[name="pe-mode"][value="'+value+'"]');
+        if(radio)radio.checked=true;syncForm();
+      },
+      refresh(){
+        records=loadDesk();selectedIds=new Set(records.map(x=>x.id));syncForm();
+      },
+      getState(){return {busy,file:$('pe-edition').value,mode:mode(),
+        selected:matching().length,eligible:available(records,prefs()).length}},
+      ready:true
+    };
     syncForm();
+    document.dispatchEvent(new CustomEvent('gnamma-personal-export-ready'));
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});
   else init();
