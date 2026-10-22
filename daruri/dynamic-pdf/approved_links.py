@@ -3,13 +3,14 @@ from pathlib import Path
 import json,re
 import fitz
 
-def published_links(root:Path,raw:bytes,components:tuple[str,...])->dict:
+def published_links(root:Path,raw:bytes,components:tuple[str,...],approved:dict|None=None)->dict:
  entries=json.loads((root/"editions/apparatus/manifest.json").read_text())["files"]
  options=[x for x in entries if tuple(x.get("apparatus",()))==components]
  if not options:raise ValueError("Missing approved reference for "+str(components))
  options.sort(key=lambda x:(x["tier"]!="reading",x["language"]!="bilingual",
                            bool(x["editorial_titles"]),x["file"]))
- gold_record=options[0]
+ gold_record=approved or options[0]
+ if tuple(gold_record.get('apparatus',()))!=components:raise ValueError('Approved profile has wrong apparatus')
  with fitz.open(root/"editions"/gold_record["file"]) as gold, \
       fitz.open(root/"editions"/gold_record["source_base"]) as base, \
       fitz.open(stream=raw,filetype="pdf") as packet:
