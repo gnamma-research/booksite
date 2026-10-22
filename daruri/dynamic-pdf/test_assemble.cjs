@@ -12,12 +12,15 @@ const cases=[
  'daruri-reading-english-index-concordance.pdf',
  'daruri-study-bilingual-glossary-index-concordance-applications-titles-on.pdf'
 ];
-const chosen=apparatus.files.filter(x=>cases.includes(x.filename));
-if(chosen.length!==cases.length)throw Error('Named certified apparatus profiles absent');
+const isAll=process.env.MATRIX==='ALL',shards=Number(process.env.SHARDS||1),shard=Number(process.env.SHARD||0);
+if(shards<1||shard<0||shard>=shards)throw Error('Invalid shard request');
+const chosen=isAll?apparatus.files.filter((_,i)=>i%shards===shard):
+  apparatus.files.filter(x=>cases.includes(x.filename));
+if(!isAll&&chosen.length!==cases.length)throw Error('Named certified apparatus profiles absent');
 const hash=s=>crypto.createHash('sha256').update(s).digest('hex');
 (async()=>{
  const records=[];
- const out=path.join(__dirname,'test-output');fs.mkdirSync(out,{recursive:true});
+ const out=path.join(__dirname,'test-output',isAll?`shard${shard}`:'smoke');fs.mkdirSync(out,{recursive:true});
  for(const row of chosen){
   const components=row.apparatus.join('-'),base=baseManifest.files.find(b=>b.file===row.source_base);
   const packet=manifest.packets.find(a=>a.components.join('-')===components);
@@ -47,5 +50,5 @@ const hash=s=>crypto.createHash('sha256').update(s).digest('hex');
     bytes:result.bytes.length,links:result.linkCounts,sha:result.sha256});
   console.log('ASSEMBLED',records.at(-1));
  }
- fs.writeFileSync(path.join(out,'results.json'),JSON.stringify(records,null,2));
+ fs.writeFileSync(path.join(out,'results.json'),JSON.stringify({shard,shards,expected:chosen.length,records},null,2));
 })().catch(e=>{console.error(e);process.exitCode=1});
