@@ -59,7 +59,15 @@ def note_inventory():
     if len(book_data(SITE)) != 258:
         errors.append("Original source must retain 258 numbered sections")
     if len(set(body_notes)) != len(body_notes):
-        errors.append("Duplicate original explanatory note IDs")
+        errors.append("Duplicate main-text note IDs")
+    if len(body_notes) != 625:
+        errors.append(f"Canonical main-text note record count changed: {len(body_notes)} (expected 625)")
+    source_ids = set(qids) | set(hids)
+    if not source_ids.issubset(set(body_notes)):
+        errors.append("A published Qur'an/Hadith source note is not present in canonical reader notes")
+    original_explanatory = len(set(body_notes) - source_ids)
+    if original_explanatory != 542:
+        errors.append(f"Original explanatory note inventory changed: {original_explanatory} (expected 542)")
     if len(qnotes) != 50 or len(set(qids)) != 50:
         errors.append(f"Qur'an source note count/identity changed: {len(qnotes)}")
     if len(hnotes) != 33 or len(set(hids)) != 33:
@@ -75,7 +83,8 @@ def note_inventory():
         if not isinstance(section, int) or not 1 <= section <= 258:
             errors.append(f"Hadith note {n.get('id')} has invalid section")
     return {
-        "explanatory_notes": len(note_list),
+        "main_text_note_records": len(note_list),
+        "original_explanatory_notes": original_explanatory,
         "quran_source_notes": len(qnotes),
         "hadith_source_notes": len(hnotes),
         "quran_source_ids": qids[:6],
