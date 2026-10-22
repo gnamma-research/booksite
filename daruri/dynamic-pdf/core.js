@@ -55,8 +55,9 @@
     Type:PDFName.of('Annot'),Subtype:PDFName.of('Link'),F:4,
     Rect:[x0,pageHeight-y1,x1,pageHeight-y0],Border:[0,0,0],A:action
   }));
-  let existing=page.node.lookup(PDFName.of('Annots'),PDFArray);
-  if(!existing){existing=doc.context.obj([]);page.node.set(PDFName.of('Annots'),existing);}
+  const key=PDFName.of('Annots');
+  let existing=page.node.get(key)?page.node.lookup(key,PDFArray):null;
+  if(!existing){existing=doc.context.obj([]);page.node.set(key,existing);}
   existing.push(ref);
  }
  function destination(doc,targetPoint,targetPage){
