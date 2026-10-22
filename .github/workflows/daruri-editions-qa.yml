@@ -17,6 +17,8 @@ on:
       - "daruri/editions-selector.css"
       - "daruri/qa/verify-published-selector.cjs"
       - "daruri/qa/verify-published-selector-browser.mjs"
+      - "daruri/qa/verify-editions-delivery.cjs"
+      - "daruri/compact-menu.css"
       - "daruri/qa/verify-editions-icons.cjs"
       - "daruri/qa/verify-editions-icons-browser.mjs"
       - "daruri/qa/verify-unvowelled-layout.py"
@@ -79,6 +81,7 @@ jobs:
           node daruri/qa/verify-ready-editions.js
           node daruri/qa/verify-editions-icons.cjs
           node daruri/qa/verify-published-selector.cjs
+          node daruri/qa/verify-editions-delivery.cjs
           node daruri/qa/verify-personal-export-safety.js
 
       - name: Browser interaction and mobile rendering
