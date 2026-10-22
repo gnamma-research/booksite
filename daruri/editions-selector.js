@@ -459,7 +459,7 @@
   }
   function loadScript(name){
     return new Promise((resolve,reject)=>{
-      const url=name+'?v=two-tabs-20261022';
+      const url=name+'?v=20261023-annotations';
       const el=document.createElement('script');
       el.src=url;el.async=true;
       el.onload=resolve;el.onerror=()=>reject(Error('Unable to load local '+name));
