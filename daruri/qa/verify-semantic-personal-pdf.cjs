@@ -18,7 +18,7 @@ const DATA={
  {id:'search-en',kind:'note',title:'Searchable English note',body:'SearchableTermGamma: the author distinguishes legal demonstration.',
   target:{kind:'quote',section:'1',segment:0,lang:'en',quote:eq,prefix:'',suffix:''},
   created:Date.UTC(2026,9,21),updated:Date.UTC(2026,9,21),dateSource:'recorded',deleted:0},
- {id:'search-ar',kind:'note',title:'Arabic note and French',body:'مقدمة العلوم الدقيقة بين الحقيقة والأصول. Des idées françaises.',
+ {id:'search-ar',kind:'note',title:'Arabic note and French',body:'Des idées françaises. مقدمة العلوم الدقيقة بين الحقيقة والأصول؛ والتحليل. بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ.',
   target:{kind:'quote',section:'1',segment:0,lang:'ar',quote:aq,prefix:'',suffix:''},
   created:Date.UTC(2026,9,21),updated:Date.UTC(2026,9,21),dateSource:'recorded',deleted:0},
  {id:'search-free',kind:'note',title:'Unattached discussion',body:'UnattachedSearchablePhi includes <script>not executable</script>.',
@@ -135,6 +135,10 @@ async function checkedPdf(file,engine,contextSettings){
   }
   assert(strip(str).includes(strip('SearchableTermGamma')),'English personal text missing from extractable PDF layer');
   assert(strip(str).includes(strip('مقدمة العلوم الدقيقة')),'Arabic personal text missing from extractable PDF layer');
+  assert(strip(str).includes(strip('التحليل')),'Mixed Arabic/English personal note is not searchable');
+  assert(strip(str).includes(strip('بِسْمِ')),'Vowelled Arabic word missing from PDF.js text layer');
+  assert(strip(str).includes(strip('الرَّحْمَٰنِ')),'Vowelled Arabic with superscript alif missing from PDF.js text layer');
+  assert(!/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/.test(str),'Invisible Arabic search layer contains corrupt control characters');
   assert(strip(str).includes(strip('Des idées françaises')),'Accented French text missing from Unicode layer');
   assert(strip(str).includes(strip('UnattachedSearchablePhi')),'Unattached notes must remain searchable');
   await loaded.destroy();
