@@ -1,0 +1,105 @@
+name: Daruri PDF-UA tagged source with Arabic Unicode cross-reader and bilingual-order QA
+on:
+  push:
+    branches: [research/daruri-html-first-pdf-20261022]
+    paths:
+      - 'daruri/dynamic-pdf/html_pdfua_reading_order.py'
+      - 'daruri/dynamic-pdf/html_pango_temporary_rebind.py'
+      - '.github/workflows/daruri-html-tagged-arabic-acceptance.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-pdfua-source-unicode-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        index: [0, 8]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: booksite
+      - uses: actions/checkout@v4
+        with:
+          path: proof
+          ref: 16eae94e1e8026d7c8d768ad8c2c56a6dc526898
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned Arabic/Pango/WeasyPrint/Poppler/PDFium/PDF.js engines
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0 poppler-utils
+          python -m pip install -q -r booksite/daruri/build/requirements.txt 'PyMuPDF==1.26.7' 'pypdf==5.9.0' 'numpy>=1.26' 'scipy>=1.13' 'pypdfium2==5.8.0'
+          npm install --no-save --no-package-lock --prefix /tmp/gnpdfjs pdfjs-dist@5.4.394
+      - name: Determine immutable A4 book design
+        id: source
+        run: |
+          name=$(python -c 'import json,sys;print(json.load(open("booksite/daruri/editions/manifest.json"))["files"][int(sys.argv[1])]["file"])' '${{ matrix.index }}')
+          echo "source=$name" >> "$GITHUB_OUTPUT"
+          echo "basename=$(basename "$name")" >> "$GITHUB_OUTPUT"
+      - name: Render identical book from HTML with PDF-UA tags and logical structure tree
+        run: |
+          python booksite/daruri/dynamic-pdf/html_pdfua_reading_order.py \
+            --index ${{ matrix.index }} --out /tmp/pdfua-${{ matrix.index }}
+      - name: Bind original source-map geometry to pixel-identical tagged PDF for diagnosis only
+        run: |
+          python booksite/daruri/dynamic-pdf/html_pango_temporary_rebind.py \
+            --approved proof/daruri/editions/${{ steps.source.outputs.source }} \
+            --generated /tmp/pdfua-${{ matrix.index }}/pdfua-original-NONRELEASE.pdf \
+            --source-map proof/daruri/editions/maps/${{ steps.source.outputs.basename }}.json \
+            --output-map /tmp/pdfua-${{ matrix.index }}/tagged-map.json \
+            --pdfua-tagged
+      - name: Repair original source glyph Unicode on tagged PDF, preserving page appearance
+        run: |
+          python proof/daruri/qa/experimental_original_char_unicode.py \
+            --input /tmp/pdfua-${{ matrix.index }}/pdfua-original-NONRELEASE.pdf \
+            --map /tmp/pdfua-${{ matrix.index }}/tagged-map.json \
+            --output /tmp/pdfua-${{ matrix.index }}/pdfua-unicode-NONRELEASE.pdf \
+            --scalar-harakat --scalar-mark-fraction 0.30 --all-source-runs
+      - name: Measure 414 original passages, pure Unicode copy and source highlights
+        run: |
+          python proof/daruri/qa/verify_char_unicode_profiles.py \
+            --source /tmp/pdfua-${{ matrix.index }}/pdfua-original-NONRELEASE.pdf \
+            --candidate /tmp/pdfua-${{ matrix.index }}/pdfua-unicode-NONRELEASE.pdf \
+            --map /tmp/pdfua-${{ matrix.index }}/tagged-map.json \
+            --report /tmp/pdfua-${{ matrix.index }}/tagged-source-414.json
+          python booksite/daruri/dynamic-pdf/verify_html_pdfium_414.py \
+            --source /tmp/pdfua-${{ matrix.index }}/pdfua-original-NONRELEASE.pdf \
+            --candidate /tmp/pdfua-${{ matrix.index }}/pdfua-unicode-NONRELEASE.pdf \
+            --map /tmp/pdfua-${{ matrix.index }}/tagged-map.json \
+            --report /tmp/pdfua-${{ matrix.index }}/tagged-pdfium-414.json --strict
+          node proof/daruri/qa/experimental_original_pdfjs.cjs \
+            /tmp/pdfua-${{ matrix.index }}/pdfua-unicode-NONRELEASE.pdf \
+            /tmp/pdfua-${{ matrix.index }}/tagged-map.json /tmp/gnpdfjs \
+            > /tmp/pdfua-${{ matrix.index }}/tagged-pdfjs-414.json
+      - name: Require all underlying tagged logical structure objects remain reachable
+        run: |
+          python - <<'PY'
+          import fitz,json,glob
+          d=glob.glob('/tmp/pdfua-*/pdfua-unicode-NONRELEASE.pdf')[0]
+          with fitz.open(d) as pdf:
+            assert pdf.xref_get_key(pdf.pdf_catalog(),'StructTreeRoot')[0]=='xref', 'Tagged accessibility structure was lost'
+            assert sum(f'section-{n}' in pdf.resolve_names() for n in range(1,259))==258
+            print('PDFUA_UNICODE_STRUCT_TREE_PRESERVED',len(pdf))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-tagged-bilingual-order-${{ matrix.index }}-NONRELEASE
+          path: |
+            /tmp/pdfua-${{ matrix.index }}/pdfua-unicode-NONRELEASE.pdf
+            /tmp/pdfua-${{ matrix.index }}/tagged-map.json
+            /tmp/pdfua-${{ matrix.index }}/tagged-source-414.json
+            /tmp/pdfua-${{ matrix.index }}/tagged-pdfium-414.json
+            /tmp/pdfua-${{ matrix.index }}/tagged-pdfjs-414.json
+          retention-days: 14
+          if-no-files-found: warn
