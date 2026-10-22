@@ -5871,11 +5871,11 @@ renderBookmarks=function(){if(rd){rd.render();return;}priorBookmarks();};
 const priorBookmarkToggle=toggleBookmark;
 toggleBookmark=function(n){if(rd){rd.toggleSection(n);return;}priorBookmarkToggle(n);};
 const priorReader=renderReader;
-renderReader=function(){priorReader();rd?.afterReader();};
+renderReader=function(){priorReader();rd?.afterReader();readingDock?.update();};
 const priorReadingApply=applyReadingState;
 applyReadingState=function(){priorReadingApply();rd?.afterReader();};
 const priorRoute=renderRoute;
-renderRoute=function(route,n){priorRoute(route,n);rd?.afterRender(route);};
+renderRoute=function(route,n){priorRoute(route,n);rd?.afterRender(route);readingDock?.update();};
 const priorScholarLayer=gnShowLayer;
 gnShowLayer=function(...args){priorScholarLayer(...args);rd?.decorate();};
 
