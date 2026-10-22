@@ -528,7 +528,17 @@
     }catch(error){showError('PDF export failed: '+(error?.message||error)+'. The original PDF and your Reading Desk are unchanged.');$('pe-progress').hidden=true;}
     finally{busy=false;syncForm();}
   }
-  async function init(){
+  function mountPersonalIcons(){
+     const ui=window.GnammaBookmarkUI;
+     if(!ui)return;
+     const glyphs={note:()=>ui.noteIcon(),bookmark:()=>ui.icon(),highlight:()=>ui.highlightIcon()};
+     document.querySelectorAll('[data-gn-personal-glyph]').forEach(el=>{
+       const draw=glyphs[el.dataset.gnPersonalGlyph];
+       if(draw)el.innerHTML=draw();
+     });
+   }
+   async function init(){
+     mountPersonalIcons();
     records=loadDesk();selectedIds=new Set(records.map(r=>r.id));
     try{
       const res=await fetch(new URL('pdf-editions-manifest.json',URL_ROOT),{cache:'no-cache'});
@@ -617,16 +627,18 @@
       const requested=query.get('pdf');
       $('pe-edition').value=requested&&entries.some(([f])=>f===requested)?requested:
         entries.some(([f])=>f===data.default_pdf)?data.default_pdf:entries[0]?.[0]||'';
-      if(query.get('personal')==='1'||query.get('bookmarks')==='1'){
+      if(query.get('personal')==='1'||query.get('bookmarks')==='1'||query.get('highlights')==='1'){
         const all=document.querySelector('input[name="pe-mode"][value="all"]');
         if(all)all.checked=true;
         $('pe-personal').checked=query.get('personal')==='1';
         $('pe-bookmarks').checked=query.get('bookmarks')==='1';
+         if($('pe-highlights'))$('pe-highlights').checked=query.has('highlights')?
+           query.get('highlights')==='1':query.get('bookmarks')==='1';
       }
       if(!$('pe-edition').value)throw Error('No published editions available');
     }catch(error){showError('Could not load the edition list: '+error.message);$('pe-edition').innerHTML='<option value="">Edition list unavailable</option>';}
     document.querySelectorAll('input[name="pe-mode"]').forEach(e=>e.addEventListener('change',syncForm));
-    ['pe-edition','pe-personal','pe-bookmarks','pe-annotations','pe-appendix','pe-dates','pe-order'].forEach(id=>$(id).addEventListener('change',syncForm));
+    ['pe-edition','pe-personal','pe-bookmarks','pe-highlights','pe-annotations','pe-appendix','pe-dates','pe-order'].forEach(id=>$(id)?.addEventListener('change',syncForm));
     $('pe-search').addEventListener('input',renderPicker);
     $('pe-items').addEventListener('change',e=>{const id=e.target?.dataset?.noteId;if(id){if(e.target.checked)selectedIds.add(id);else selectedIds.delete(id);$('pe-result').hidden=true;info('');syncForm();}});
     $('pe-check-all').addEventListener('click',()=>{available(records,prefs()).forEach(r=>selectedIds.add(r.id));$('pe-result').hidden=true;info('');syncForm();});
