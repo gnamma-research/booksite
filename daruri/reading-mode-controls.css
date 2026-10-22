@@ -237,3 +237,62 @@ body.focus-mode #mainContent .gn-note-en-section-list {
   #mainContent .gn-note-en-range{text-decoration:none!important;}
   #mainContent .gn-note-en-ref{display:none!important;}
 }
+
+/* English publisher-note phrase activation and honest scope fallback. */
+#mainContent .passage-en .gn-en-note-range{
+  cursor:pointer!important;
+  text-decoration:underline dotted var(--gold,var(--accent));
+  text-decoration-thickness:1px;
+  text-underline-offset:.18em;
+  border-radius:2px;
+}
+#mainContent .passage-en .gn-en-note-range:hover,
+#mainContent .passage-en .gn-en-note-range:focus-visible{
+  background:var(--gold-soft,var(--accent-soft));
+  text-decoration-color:var(--accent);
+}
+#mainContent .passage-en .gn-en-note-ref{
+  color:var(--accent);
+  white-space:nowrap;
+}
+#mainContent .passage-en .gn-en-scoped-notes{
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:5px 8px;
+  margin:12px 0 2px;
+  padding:7px 0 2px;
+  border-top:1px dotted var(--border,var(--line));
+  font:500 11px/1.5 var(--sans,system-ui,sans-serif);
+}
+#mainContent .passage-en .gn-en-scoped-label{
+  color:var(--muted,var(--text-soft));
+}
+#mainContent .passage-en .gn-en-scoped-notes .gn-en-note-ref{
+  display:inline-flex!important;
+  align-items:center;
+  justify-content:center;
+  min-height:24px;
+  padding:2px 5px!important;
+  margin:0 2px 0 0!important;
+  border:1px solid var(--line,var(--border));
+  border-radius:6px;
+  background:var(--surface,var(--paper));
+  text-decoration:none;
+  font:650 11px/1.2 var(--sans,system-ui,sans-serif)!important;
+  vertical-align:baseline!important;
+}
+#mainContent .passage-en .gn-en-scoped-notes .gn-en-note-ref::before{
+  display:none!important;
+}
+body.hide-notes #mainContent .passage-en .gn-en-note-range,
+body.focus-mode #mainContent .passage-en .gn-en-note-range{
+  text-decoration:none!important;
+  background:transparent!important;
+  pointer-events:none!important;
+  cursor:inherit!important;
+}
+body.hide-notes #mainContent .passage-en .gn-en-scoped-notes,
+body.focus-mode #mainContent .passage-en .gn-en-scoped-notes{
+  display:none!important;
+}
