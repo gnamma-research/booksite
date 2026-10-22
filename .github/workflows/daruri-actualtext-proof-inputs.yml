@@ -1,0 +1,33 @@
+name: Daruri ActualText prototype input snapshot
+on:
+  push:
+    branches: [experiment/daruri-actualtext-source-20261022]
+    paths:
+      - .github/workflows/daruri-actualtext-proof-inputs.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify original PDF checksum bound to source word map
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('daruri/editions')
+          p=root/'reading/daruri-reading-arabic-titles-off.pdf'
+          m=json.loads((root/'maps/daruri-reading-arabic-titles-off.pdf.json').read_text())
+          sha=hashlib.sha256(p.read_bytes()).hexdigest()
+          assert sha==m['source_sha256'], 'Source PDF/map SHA mismatch'
+          print('SOURCE_SHA256',sha, 'MAP_SEGMENTS',len(m['segments']))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daruri-actualtext-source-original-unchanged
+          path: |
+            daruri/editions/reading/daruri-reading-arabic-titles-off.pdf
+            daruri/editions/maps/daruri-reading-arabic-titles-off.pdf.json
+          retention-days: 7
