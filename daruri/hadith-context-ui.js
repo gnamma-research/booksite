@@ -2,7 +2,7 @@
 (()=>{
 'use strict';
 if(window.__gnHadithContextInstalled)return;window.__gnHadithContextInstalled=true;
-const REV='20261023-hnote2';
+const REV='20261023-hen1';
 const here=document.currentScript?.src||new URL('hadith-context-ui.js',document.baseURI).href;
 const scripts=['hadith-context-data.js','hadith-context-arabic-bukhari1.js','hadith-context-arabic-bukhari2.js','hadith-context-arabic-muslim.js','hadith-context-arabic-abudawud1.js','hadith-context-arabic-abudawud2.js','hadith-context-arabic-tirmidhi.js','hadith-context-arabic-sunan.js','hadith-context-metadata.js','hadith-traditional-notes.js'];
 const englishScripts=["hadith-context-english-bukhari-a.js","hadith-context-english-bukhari-b.js","hadith-context-english-bukhari-long.js","hadith-context-english-abudawud-a.js","hadith-context-english-abudawud-b.js","hadith-context-english-tirmidhi-a.js","hadith-context-english-tirmidhi-b.js","hadith-context-english-tirmidhi-c.js","hadith-context-english-muslim.js","hadith-context-english-other.js"];
