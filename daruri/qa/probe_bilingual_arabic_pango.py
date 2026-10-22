@@ -9,6 +9,7 @@ PangoLayout. No <span> wrapping, glyph-order guesses or PDF modifications.
 from __future__ import annotations
 from pathlib import Path
 from collections import OrderedDict
+import argparse
 from tempfile import TemporaryDirectory
 import hashlib,json,sys
 import fitz
@@ -49,6 +50,11 @@ def bilingual_groups(document):
     return result
 
 def main():
+    ap=argparse.ArgumentParser()
+    ap.add_argument("--emit-wordmaps",action="store_true")
+    args=ap.parse_args()
+    output=ROOT/"qa"/"arabic-pango-probe"
+    if args.emit_wordmaps:output.mkdir(parents=True,exist_ok=True)
     source=json.loads((ROOT/"editions/manifest.json").read_text())
     variants=["bilingual","bilingual-unvowelled"]
     results=[]
@@ -95,6 +101,15 @@ def main():
                               "words",count,"parity",parity,pages,"/",len(approved),flush=True)
                         if not parity:raise RuntimeError("PDF pages not pixel-identical")
                         if len(matched)!=414:raise RuntimeError("Missing Arabic source segments")
+                        if args.emit_wordmaps:
+                            form="vocalized" if language=="bilingual" else "ar"
+                            content={"file":rel.as_posix(),"source_sha256":certified["sha256"],
+                                "language":form,"source_sections":258,
+                                "matched_segments":414,"page_count":len(approved),
+                                "pixel_parity":True,
+                                "segments":{f"{n}:{idx}:{form}":words for (n,idx),words in matched.items()}}
+                            (output/(filename+".wordmap.json")).write_text(
+                                json.dumps(content,ensure_ascii=False,separators=(",",":"))+"\n")
     finally:
         print_editions.HTML=original_html
         Layout.deactivate=orig_deactivate
