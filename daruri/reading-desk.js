@@ -533,11 +533,11 @@ function create(ctx){
    parts.push('<div class="gn-rd-detail-actions" role="group" aria-label="Actions for this saved item">');
    if(bin)parts.push('<button type="button" class="gn-rd-detail-primary" data-rd="restore" '+itemId+'>Restore item</button>');
    else{
-    if(selected.kind==='note')parts.push('<button type="button" class="gn-rd-detail-primary" data-rd="edit" '+itemId+'>Edit note</button>');
+    if(selected.kind==='note')parts.push('<button type="button" class="gn-rd-detail-primary" data-rd="edit" '+itemId+'>'+RD_ICON.note+'<span>Edit note</span></button>');
     if(selected.target&&isResolved(selected)){
      parts.push('<button type="button" class="'+(selected.kind==='note'?'gn-rd-detail-secondary':'gn-rd-detail-primary')+
       '" data-rd="open" '+itemId+'>Open in text</button>');
-     if(selected.kind!=='note')parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="add-note" '+itemId+'>Add note</button>');
+     if(selected.kind!=='note')parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="add-note" '+itemId+'>'+RD_ICON.note+'<span>Add note</span></button>');
     }
     if(!isResolved(selected))parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="relink" '+itemId+'>Relink source</button>');
    }
