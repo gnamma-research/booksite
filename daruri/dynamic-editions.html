@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>On-demand scholarly editions · Gnamma Research · al-Ḍarūrī</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="personal-export.css?v=2">
+<script defer src="personal-pdf-enhancements.js?v=20261022-cid2"></script>
+<script defer src="personal-export.js?v=4"></script>
+<script defer src="vendor/pdf-lib-1.17.1.min.js"></script>
+<script defer src="dynamic-pdf/core.js?v=20261022-prototype3"></script>
+<script defer src="dynamic-pdf/client.js?v=20261022-prototype3"></script>
+<style>
+.gn-dyn-panel {border:1px solid #bbcac5;border-radius:12px;padding:22px;margin:1.25rem 0 2rem;background:color-mix(in srgb,#d4e2da 11%,white);}
+.gn-dyn-panel h2 {margin:0 0 12px;}
+.gn-dyn-panel select {display:block;box-sizing:border-box;width:100%;max-width:850px;padding:10px;margin:9px 0 16px;background:#fff;color:#172523}
+.gn-dyn-actions {display:flex;gap:12px;flex-wrap:wrap;margin-bottom:15px;}
+.gn-dyn-actions button {border-radius:7px;border:1px solid #527b73;background:#285d54;color:white;padding:12px 18px;cursor:pointer}
+.gn-dyn-actions button:disabled {cursor:not-allowed;opacity:.5}
+.gn-dyn-result {font-size:.94rem;line-height:1.6;max-width:850px}
+.gn-dyn-result[data-error=true] {color:#9b352e}
+.gn-dyn-download {display:inline-block;margin:12px 0;font-weight:600;}
+.gn-dyn-hint {font-size:.9rem;line-height:1.55;color:#52625d}
+</style>
+</head>
+<body>
+<a class="skip" href="#pe-main">Skip to export settings</a>
+<header class="masthead">
+ <div class="mast-inner"><a class="brand" href="../index.html">GNAMMA <span>RESEARCH</span></a>
+ <nav aria-label="Reader navigation"><a href="index.html#bookmarks">Reading Desk</a><a href="index.html#editions">Editions &amp; Printing</a><a href="index.html">Reader</a></nav></div>
+</header>
+<main id="pe-main">
+ <p class="eyebrow">AL-ḌARŪRĪ · READING DESK</p>
+ <h1>Print or save a personal edition</h1>
+ <p class="lead">Start with an unchanged published PDF, or add your private Reading Desk observations as discreet P-number references and a searchable personal endnotes appendix. Everything is assembled in this browser: no login, server-side account or upload of your notes.</p>
+ <div id="pe-alert" class="alert" role="status" aria-live="polite" hidden></div>
+ <section class="gn-dyn-panel" id="gn-dyn-panel" aria-labelledby="gn-dyn-title">
+<h2 id="gn-dyn-title">Build an edition from approved text and apparatus</h2>
+<p class="gn-dyn-hint">This experimental publishing tool joins a checksum-verified Reading or Study PDF to a typeset apparatus packet using the same Gnamma HTML/CSS layouts. It works in this browser, without a publication server or upload of your private notes. The approved published PDFs remain available.</p>
+<label for="gn-dyn-profile">Choose a full-text edition and scholarly components</label>
+<select id="gn-dyn-profile" aria-describedby="gn-dyn-status"><option>Loading 120 available edition profiles…</option></select>
+<div class="gn-dyn-actions">
+ <button type="button" id="gn-dyn-make" disabled>Generate PDF locally</button>
+ <button type="button" id="gn-dyn-personal" disabled>Generate with my Reading Desk notes</button>
+</div>
+<p id="gn-dyn-status" class="gn-dyn-result" role="status" aria-live="polite">Checking publication files…</p>
+<a id="gn-dyn-download" class="gn-dyn-download" hidden>Download generated PDF</a>
+<p id="gn-dyn-personal-status" class="gn-dyn-hint"></p>
+<p class="gn-dyn-hint">Standard Reading and Reference PDFs have not been modified. Personal P markers, highlights and return links use the same local exporter shown below. High-memory devices are recommended for large works.</p>
+</section>
+<form id="pe-form" autocomplete="off">
+  <section class="panel" aria-labelledby="edition-title">
+   <h2 id="edition-title"><span class="step">1</span> Choose your edition</h2>
+   <label for="pe-edition">PDF to use</label>
+   <select id="pe-edition" required><option value="">Loading available editions…</option></select>
+   <p class="hint">The original PDF remains untouched. Only your new exported copy receives personal material. Fixed published editions retain their existing scholarly apparatus and page layout.</p>
+  </section>
+  <section class="panel" aria-labelledby="notes-title">
+   <h2 id="notes-title"><span class="step">2</span> Choose personal material</h2>
+   <fieldset class="radios">
+    <legend>Include Reading Desk items?</legend>
+    <label><input type="radio" name="pe-mode" value="none" checked> No — original PDF, without personal notes <strong>(default)</strong></label>
+    <label><input type="radio" name="pe-mode" value="all"> Yes — all qualifying items</label>
+    <label><input type="radio" name="pe-mode" value="choose"> Yes — choose individual items</label>
+   </fieldset>
+   <div id="pe-note-options" hidden>
+    <div class="choices">
+     <label><input type="checkbox" id="pe-personal" checked> Personal notes</label>
+     <label><input type="checkbox" id="pe-bookmarks"> Bookmarks and saved quotations</label>
+     <label><input type="checkbox" id="pe-annotations" checked> Add linked P1, P2… references and clickable quotation highlights</label>
+     <label><input type="checkbox" id="pe-appendix" checked> Include searchable personal endnotes (required for linked P references)</label>
+     <label><input type="checkbox" id="pe-dates" checked> Include reliable created/edited timestamps</label>
+    </div>
+    <label for="pe-order">Appendix ordering</label>
+    <select id="pe-order"><option value="source">Source/section order (recommended)</option><option value="created">When saved, oldest first</option><option value="newest">When saved, newest first</option></select>
+    <p class="hint">Your observations are labelled <strong><span class="personal-example">P1</span>, <span class="personal-example">P2</span>, … (P = personal)</strong> in subdued teal. Publisher footnotes and scholarly references retain their original numbers and styling. Select a P marker or a verified highlighted phrase to reach your endnote; select its underlined <em>Return to original text</em> link to go back. The appendix remains searchable and selectable in English, Arabic and French. Unanchored notes stay in the appendix.</p>
+    <div id="pe-picker" class="picker" hidden>
+     <label for="pe-search">Find an item</label><input type="search" id="pe-search" placeholder="Search your note title, body or section">
+     <div class="picker-tools"><button type="button" id="pe-check-all">Select all qualifying</button><button type="button" id="pe-check-none">Clear selection</button></div>
+     <p id="pe-picker-count" class="hint"></p><div id="pe-items" class="items" role="group" aria-label="Choose Reading Desk items"></div>
+    </div>
+    <p id="pe-count" class="count" role="status"></p>
+   </div>
+   <p id="pe-privacy" class="hint">No Reading Desk data is included unless you choose one of the “Yes” options. Browser storage is device-specific; use Reading Desk's JSON backup to transfer notes to another device.</p>
+  </section>
+  <section class="panel" aria-labelledby="download-title">
+   <h2 id="download-title"><span class="step">3</span> Produce your edition</h2>
+   <p id="pe-description">The original published PDF will open, without any personal data.</p>
+   <div class="actions"><button type="submit" id="pe-generate" class="primary">Open unchanged PDF</button><a id="pe-clean" href="daruri.pdf" target="_blank" rel="noopener">Open unchanged copy</a></div>
+   <div id="pe-progress" hidden role="status" aria-live="polite"><span id="pe-progress-text"></span><progress id="pe-bar" max="100" value="0"></progress></div>
+   <div id="pe-result" hidden><p><strong>Your personal edition is ready.</strong> The download was prepared locally.</p><div class="actions"><a id="pe-result-link" download>Download PDF again</a><button type="button" id="pe-share" hidden>Share PDF on this device</button><a id="pe-open" target="_blank" rel="noopener">Open / print the generated PDF</a></div></div>
+  </section>
+ </form>
+ <details class="help"><summary>Technical notes and limitations</summary>
+  <p>Personal references are drawn as small P labels linked through standard PDF navigation; they do not create new popup comments or crowd the right-hand comments sidebar. Publisher references remain untouched. The appendix has readable pages plus a Unicode text layer for search and copying.</p>
+  <p>Exact-word highlights use verified coordinates and navigation links, never guessed positions. The supplementary apparatus PDFs use independent checksum-bound section, glossary, index, Bidāya application and concordance entry maps; when no verified word geometry exists, the exporter links a small P marker to the correct section or apparatus entry. Bookmarks and notes outside the book text are preserved in the appendix. PDF viewer support for search and highlighting varies; keep your independent Reading Desk JSON backup for editing or transferring notes.</p>
+  <p>If opening a downloaded HTML ZIP directly using a <code>file://</code> URL, browser security restrictions may block access to the PDF and page-map files. Use the hosted website or serve the package from a local HTTP server; notes are still processed locally.</p>
+  <p>Personalized PDF generation uses a locally executed, version-pinned PDF and Unicode text libraries hosted with this website. No third-party script is executed, even if the local library cannot be loaded. The original PDF and your notes are processed on your device. The site does not send personal note content to a server. The unchanged PDF option does not need this library.</p>
+ </details>
+</main>
+<footer><a href="index.html#bookmarks">Reading Desk</a> · <a href="index.html#editions">Editions</a> · Gnamma Research</footer>
+</body>
+</html>
