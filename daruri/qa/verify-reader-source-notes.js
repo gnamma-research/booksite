@@ -170,6 +170,13 @@ async function makeDOM(hash, seed = {}) {
       w.TextEncoder = TextEncoder;
       w.TextDecoder = TextDecoder;
       w.navigator.clipboard = {writeText:async text => {w.__copied = text;}};
+      // Context is a compact local JSON bundle. JSDOM does not supply fetch.
+      w.__quranContextLoads=0;
+      w.fetch=async url=>{
+        if(!String(url).includes('quran-context-data.json'))throw Error('Unexpected fetch in reader QA: '+url);
+        w.__quranContextLoads++;
+        return {ok:true,json:async()=>JSON.parse(read('quran-context-data.json'))};
+      };
       w.localStorage.setItem('daruri-reader-v2', JSON.stringify({lang:'english', vowels:false, theme:'dark', fontScale:1.1, showNotes:true, ...seed}));
     }
   });
@@ -362,6 +369,28 @@ function assertOfflineAsset() {
     assert.equal(w.location.hash,hash,'Inline note does not navigate away: '+noteId);
     assert.equal(w.scrollY,412,'Inline note preserves reading position: '+noteId);
     assertCard(d,{id:sectionId},[byID.get(noteId)]);
+    const context=d.querySelector('#gn-scholar-layer details[data-gn-quran-context="'+noteId+'"]');
+    assert.ok(context,'One contextual disclosure under the same inline note: '+noteId);
+    assert.equal(context.open,false,'Qurʾānic context starts collapsed: '+noteId);
+    assert.equal(context.querySelectorAll('.gn-context-ayah').length,0,'No full verses rendered before request');
+    const previousLoads=w.__quranContextLoads;
+    context.open=true;
+    context.dispatchEvent(new w.Event('toggle'));
+    await new Promise(resolve => w.setTimeout(resolve,25));
+    assert.equal(context.dataset.gnContextReady,'1','Context loads when expanded: '+noteId);
+    assert.equal(w.__quranContextLoads,previousLoads+(previousLoads===0?1:0),
+      'Context fetch occurs once globally, not for every note');
+    const rows=[...context.querySelectorAll('.gn-context-ayah')];
+    const expected=JSON.parse(read('quran-context-data.json')).notes[noteId].flatMap(ref=>ref.verses);
+    assert.deepEqual(rows.map(row=>row.querySelector('figcaption').textContent.split(' · ')[0]),
+      expected,'Exact neighboring verse inventory: '+noteId);
+    assert.equal(rows.filter(row=>row.classList.contains('gn-context-cited')).length,
+      byID.get(noteId).references.reduce((sum,ref)=>sum+ref.ayah_end-ref.ayah_start+1,0));
+    assert.ok(rows.every(row=>row.querySelector('.gn-quran-words')?.textContent&&row.querySelector('.gn-context-translation')?.textContent));
+    assert.ok(rows.every(row=>row.querySelector('.gn-quran-quotation')?.firstElementChild?.textContent==='﴿'));
+    assert.ok(rows.every(row=>row.querySelector('.gn-quran-quotation')?.lastElementChild?.textContent==='﴾'));
+    assert.ok(context.querySelector('.gn-quran-context-credit')?.textContent.includes('Tanzil'),'Proper attribution in context');
+    context.open=false;
     const figure=d.querySelector('#gn-scholar-layer .gn-note-entry .gn-verse-source-excerpt');
     assert.ok(figure,'Inline note shows a verified Qurʾānic excerpt: '+noteId);
     assert.equal(figure.querySelector('.gn-quran-words')?.textContent,verse);
