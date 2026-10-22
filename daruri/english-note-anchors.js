@@ -143,6 +143,13 @@
     if(isLast)contextualNotes(en,sectionBy.get(String(section))||[],'section');
     en.dataset.gnEnNoteIndexed='1';
   }
+  function syncNoteVisibility(){
+    if(!main?.isConnected)return;
+    const disabled=document.body.classList.contains('hide-notes')||
+      document.body.classList.contains('focus-mode');
+    for(const span of main.querySelectorAll('.gn-en-note-range'))
+      span.tabIndex=disabled?-1:0;
+  }
   function annotateAll(){
     if(!map||!main?.isConnected)return;
     const reader=main.querySelector('.reader');
@@ -159,6 +166,7 @@
       try{annotateGrid(items[i],section,i===items.length-1)}
       catch(error){console.warn('English publisher-note annotation skipped',section,items[i].dataset.segment,error);}
     }
+    syncNoteVisibility();
   }
   function schedule(){
     if(scheduled)return;
@@ -182,7 +190,9 @@
        document.body.classList.contains('focus-mode'))return;
     if(window.getSelection?.()?.toString().trim())return;
     const choices=noteAnchors(span);
-    if(choices.length===1){closeChooser();choices[0].click();return;}
+    if(choices.length===1){
+      closeChooser();window.__termClickOrigin=span;choices[0].click();return;
+    }
     if(!choices.length)return;
     closeChooser();
     chooserOpener=span;
@@ -199,7 +209,10 @@
       button.type='button';
       button.textContent=anchor.dataset.noteTarget;
       button.setAttribute('aria-label','Open publisher note '+anchor.dataset.noteTarget);
-      button.addEventListener('click',()=>{closeChooser();anchor.click();});
+      button.addEventListener('click',()=>{
+        const origin=chooserOpener;
+        closeChooser();window.__termClickOrigin=origin;anchor.click();
+      });
       menu.append(button);
     }
     document.body.append(menu);
@@ -235,6 +248,9 @@
          !event.target.closest?.('.gn-en-note-range'))closeChooser();
     });
     new MutationObserver(schedule).observe(main,{childList:true});
+    new MutationObserver(syncNoteVisibility).observe(document.body,{
+      attributes:true,attributeFilter:['class']
+    });
     window.addEventListener('hashchange',()=>{closeChooser();schedule();});
     schedule();
   }
