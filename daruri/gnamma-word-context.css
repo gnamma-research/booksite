@@ -53,3 +53,10 @@
 }
 @media(prefers-reduced-motion:reduce){.gnw-root *{scroll-behavior:auto}}
 @media print{.gnw-root{display:none!important}}
+
+/* A single content dropdown is the default; keep the duplicate sidebar for opt-in source counts. */
+.gns-dialog .gns-sidebar{display:none}
+.gns-dialog.gns-expanded.gns-show-sources .gns-sidebar{display:block}
+.gns-dialog .gns-results-actions{display:flex;align-items:center;gap:9px}
+.gns-dialog .gns-results-actions button{font:600 11px/1.4 var(--sans,system-ui,sans-serif)}
+@media(max-width:760px){.gns-dialog.gns-expanded.gns-show-sources .gns-sidebar{display:none}}
