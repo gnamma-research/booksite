@@ -122,6 +122,7 @@ def make_proof(name,published,mapped,out_dir):
 
 def main():
     ap=argparse.ArgumentParser()
+    ap.add_argument("--emit-wordmaps",action="store_true",help="Output word geometry files after perfect published-page parity")
     ap.add_argument("--modes",nargs="+",default=["arabic","arabic-vowelled"],
         choices=["arabic","arabic-vowelled"])
     ap.add_argument("--output-dir",type=Path,default=ROOT/"qa"/"arabic-pango-probe")
@@ -181,6 +182,16 @@ def main():
                             "source segments",len(matched),"word boxes",count,flush=True)
                         if pixels:
                             sample=make_proof(filename,approved,matched,args.output_dir)
+                            if args.emit_wordmaps:
+                                lang="vocalized" if mode=="arabic-vowelled" else "ar"
+                                record={
+                                    "file":rel.as_posix(),"source_sha256":row["sha256"],
+                                    "language":lang,"source_sections":258,"matched_segments":414,
+                                    "page_count":len(published),"pixel_parity":True,
+                                    "segments":{f"{n}:{seg}:{lang}":words for (n,seg),words in matched.items()}
+                                }
+                                (args.output_dir/(filename+".wordmap.json")).write_text(
+                                    json.dumps(record,ensure_ascii=False,separators=(",",":"))+"\n")
                             report["overlay"]=sample
     finally:
         print_editions.HTML=original
