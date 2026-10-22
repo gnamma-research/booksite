@@ -67,7 +67,7 @@ def source_lines(mapping):
     return pages
 
 
-def remove_broken_text(page, planned):
+def remove_broken_text(page, planned, all_source_runs=False):
     """Use PDF's standard /ActualText replacement on original painted source.
 
     Keep ALL original text drawing operations byte-identical; marks only the
@@ -113,13 +113,34 @@ def remove_broken_text(page, planned):
                 f"similar-X baselines={alternatives}"
             )
         _, index, found = scores[0]
-        matches.add(index)
-        begin = found.end()
-        next_start = starts[index+1].start() if index+1 < len(starts) else len(raw)
-        endtext = raw.find(b"\nET\n", begin, next_start)
-        end = endtext if endtext >= 0 else next_start
-        edits.append((begin, b"/Span << /ActualText <FEFF> >> BDC\n"))
-        edits.append((end, b"\nEMC\n"))
+        target_y=float(found[2])*0.75
+        # An inline note call can divide one authorial Arabic line into
+        # multiple Tm runs at the SAME baseline (e.g. scholarly §65:1).
+        # The old single-Tm suppression left source garbage selectable before
+        # its note reference. Preserve the distinct, slightly raised marker:
+        # suppress only the Arabic Tm runs at the author's exact baseline.
+        source_runs=[index]
+        if all_source_runs:
+            left=line["xmin"]-0.04
+            right=max(word[3] for word in line["words"])+0.04
+            source_runs=[
+                i for i,m in enumerate(starts)
+                if abs(float(m[2])*0.75-target_y)<0.035
+                and left<=float(m[1])*0.75<=right
+            ]
+            if index not in source_runs:
+                raise ValueError("Exact source origin was omitted from all-run suppression")
+        for ix in source_runs:
+            if ix in matches:
+                raise ValueError("Two unrelated source lines claimed the same glyph run")
+            matches.add(ix)
+            found=starts[ix]
+            begin=found.end()
+            next_start=starts[ix+1].start() if ix+1<len(starts) else len(raw)
+            endtext=raw.find(b"\nET\n",begin,next_start)
+            end=endtext if endtext>=0 else next_start
+            edits.append((begin,b"/Span << /ActualText <FEFF> >> BDC\n"))
+            edits.append((end,b"\nEMC\n"))
     for offset, addition in sorted(edits, key=lambda item: item[0], reverse=True):
         raw = raw[:offset] + addition + raw[offset:]
     doc.update_stream(contents[0], raw)
@@ -293,7 +314,7 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
     return len(aliases)
 
 
-def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False):
+def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False, all_source_runs=False):
     original, mapping_path, output = Path(original), Path(mapping_path), Path(output)
     if output.exists() or original.resolve() == output.resolve():
         raise ValueError("Refusing to replace any existing file")
@@ -333,7 +354,7 @@ def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=
         total_lines = total_cids = 0
         for page_no, source_on_page in sorted(pages.items()):
             page = doc[page_no-1]
-            remove_broken_text(page, source_on_page)
+            remove_broken_text(page, source_on_page, all_source_runs=all_source_runs)
             total_lines += len(source_on_page)
             total_cids += add_character_semantics(
                 doc, page, page_no, source_on_page, fontfile,
@@ -360,6 +381,7 @@ if __name__ == "__main__":
     parser.add_argument("--logical-cluster-payload", action="store_true", help="Research: preserve logical grapheme Unicode order in ToUnicode for native PDFKit")
     parser.add_argument("--scalar-mark-fraction", type=float, default=0.0, help="Experimental fraction of glyph advance reserved for each combining mark")
     parser.add_argument("--line-actualtext", action="store_true", help="Experiment: outside-BT marked-content source line replacement")
+    parser.add_argument("--all-source-runs", action="store_true", help="Hide all original Arabic Tm runs divided by inline publisher source-note markers")
     args = parser.parse_args()
     assert 0<=args.scalar_mark_fraction<=0.4
-    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext, args.logical_cluster_payload, args.scalar_mark_fraction, args.line_actualtext)
+    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext, args.logical_cluster_payload, args.scalar_mark_fraction, args.line_actualtext, args.all_source_runs)
