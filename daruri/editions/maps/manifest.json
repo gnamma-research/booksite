@@ -1,8 +1,8 @@
 {
-  "release": "20261022-A4-Arabic-Pango-precise-word-maps",
+  "release": "20261022-Daruri-study-reference-Arabic-Pango",
   "status": "verified",
   "source_manifest_sha256": "58d8bca84ffc786671d65700d27558ed3c2ef0bacee9a35f34105153db3bedb2",
-  "note": "All twelve checksum-bound base maps preserved. Eight Arabic-bearing Reading editions have 414 source-linked Pango segments and pixel-identical published pages. Study PDF Arabic precision is not yet verified.",
+  "note": "All 12 approved Reading/Study source maps retained. Eight Reading and two bilingual Study editions have Arabic Pango source-word geometry with pixel-identical published pages; canonical Reference uses an independent certified sidecar map. The English word maps are preserved.",
   "files": [
     {
       "file": "reading/daruri-reading-bilingual-titles-off.pdf",
@@ -226,7 +226,7 @@
       "pages": 131,
       "map_file": "maps/daruri-study-bilingual-titles-off.pdf.json",
       "metadata_file": "maps/daruri-study-bilingual-titles-off.pdf.metadata.json",
-      "map_sha256": "5f32975c1e16f1f0ee9cc8a4c648856a9affde67c576813c9a0f5e6d1ea7cba7",
+      "map_sha256": "adbddb6c4185a967edae100d45e4b0620856aec855677c3ac906d3e5663a6abf",
       "source_base": "study/daruri-study-bilingual-titles-off.pdf",
       "base_sha256": "2817dd250c002e3e3b1c1b9c9f81bd445de02248ffce952fb5c1d94f48faee40",
       "verified_sections": 258,
@@ -238,11 +238,11 @@
           "eligible": 414
         },
         "vocalized": {
-          "matched": 0,
+          "matched": 414,
           "eligible": 414
         }
       },
-      "mapped_segments": 75
+      "mapped_segments": 489
     },
     {
       "file": "study/daruri-study-bilingual-titles-on.pdf",
@@ -250,7 +250,7 @@
       "pages": 143,
       "map_file": "maps/daruri-study-bilingual-titles-on.pdf.json",
       "metadata_file": "maps/daruri-study-bilingual-titles-on.pdf.metadata.json",
-      "map_sha256": "82cea171ba07146acef2c9de4ac8a08b33f353b919a9d8eda3cc635e2db64f03",
+      "map_sha256": "7d0085925ee84fc5328b075cb00f969d56725dd723dfd4a8f3815bd608c65005",
       "source_base": "study/daruri-study-bilingual-titles-on.pdf",
       "base_sha256": "9746fad594d696bfb0e4800b3370db84a225ca0c3683402c5e6430a1d26c12e4",
       "verified_sections": 258,
@@ -262,11 +262,11 @@
           "eligible": 414
         },
         "vocalized": {
-          "matched": 0,
+          "matched": 414,
           "eligible": 414
         }
       },
-      "mapped_segments": 74
+      "mapped_segments": 488
     }
   ]
 }
