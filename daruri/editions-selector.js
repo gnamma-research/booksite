@@ -165,9 +165,11 @@
           '<section class="gn-es-spec" aria-label="Current document configuration">'+
             '<div class="gn-es-spec-head"><strong>Your PDF</strong><span data-es-count></span></div>'+
             '<p class="gn-es-spec-lead" data-es-spec-lead></p>'+
-            '<p class="gn-es-spec-layout" data-es-spec-layout></p>'+
-            '<p class="gn-es-spec-notes" data-es-spec-notes></p>'+
-            '<p class="gn-es-spec-apparatus" data-es-spec-apparatus></p>'+
+            '<details class="gn-es-spec-more"><summary>PDF details</summary>'+
+              '<p class="gn-es-spec-layout" data-es-spec-layout></p>'+
+              '<p class="gn-es-spec-notes" data-es-spec-notes></p>'+
+              '<p class="gn-es-spec-apparatus" data-es-spec-apparatus></p>'+
+            '</details>'+
           '</section>'+
           '<section class="gn-es-availability" aria-live="polite" aria-atomic="true">'+
             '<strong data-es-availability-heading>Checking PDF options…</strong><p data-es-availability-detail></p></section>'+
