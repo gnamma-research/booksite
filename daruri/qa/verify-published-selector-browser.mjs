@@ -55,6 +55,14 @@ try{
   await page.waitForFunction(()=>document.querySelector('#pe-edition')?.value.includes('reading/daruri-reading-bilingual-titles-off.pdf'),
     {timeout:20000});
   assert.equal(await ui.locator('[data-es-action="open"]').isVisible(),true);
+  await ui.locator('[data-es-toggle="ar"]').click();
+  await check('ready');
+  assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),true,
+    'Study may not silently change an English-only source to bilingual');
+  assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.ar,false);
+  await ui.locator('[data-es-toggle="ar"]').click();
+  await check('ready');
+  assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),false);
 
   await ui.locator('#pe-personal').check();
   await page.waitForFunction(()=>document.querySelector('input[name="pe-mode"]:checked')?.value==='all');
