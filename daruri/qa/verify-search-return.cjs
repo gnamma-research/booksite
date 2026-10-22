@@ -26,7 +26,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
  async function search(q){
   if(!(await page.locator('.gns-dialog').count()))await page.locator('#searchBtn').click();
   await page.locator('#gns-query').fill(q);
-  await page.waitForTimeout(160);
+  await page.waitForTimeout(350);
  }
  async function returnFromBar(){
   await page.locator('#gns-return-bar [data-gns-return="1"]').click();
@@ -36,7 +36,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
   if(!(await page.locator('.gns-expanded').count()))await page.locator('[data-gns-expand="1"]').first().click();
  }
  async function selectFacet(facet){
-  await expand();await page.locator('[data-gns-facet="'+facet+'"]').click();
+  await expand();await page.locator('#gns-type').selectOption(facet);
  }
  async function close(){if(await page.locator('.gns-dialog').count())await page.locator('.gns-dialog [data-gns-close]').click();}
  await page.goto(base+'#section=1',{waitUntil:'load'});
@@ -61,7 +61,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
   assert.equal(await page.locator('#gns-return-bar').count(),1);
   await returnFromBar();
   assert.equal(await page.locator('#gns-query').inputValue(),'qiyas');
-  assert.equal(await page.locator('[data-gns-facet="text"]').getAttribute('aria-pressed'),'true');
+  assert.equal(await page.locator('#gns-type').inputValue(),'text');
   assert.equal(await page.locator('.gns-expanded').count(),1);
   assert.ok((await pane.evaluate(e=>e.scrollTop))>0,'scroll offset not restored; had '+before);
   await close();assert.equal(await page.evaluate(()=>location.hash),'#section=1');
@@ -92,7 +92,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
   await page.waitForURL(/#section=1|#gns-results/);
   await page.locator('#gns-query').waitFor({state:'visible'});
   assert.equal(await page.locator('#gns-query').inputValue(),'al-Zabīdī');
-  assert.equal(await page.locator('[data-gns-facet=dictionary]').getAttribute('aria-pressed'),'true');
+  assert.equal(await page.locator('#gns-type').inputValue(),'dictionary');
   await close();
  });
  await check('dictionary source section navigates to text and search return persists',async()=>{
@@ -125,7 +125,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
   await search('اجتهاد');await expand();
   await page.locator('#gns-scope').selectOption('library');
   await page.waitForFunction(()=>window.GnammaUnifiedSearch.getEntries().other>3000,{timeout:17000}).catch(()=>{});
-  await page.locator('[data-gns-facet=other]').click();
+  await page.locator('#gns-type').selectOption('other');
   assert.ok(await page.locator('.gns-result').count()>0);
   await page.locator('.gns-result').first().click();
   await page.waitForURL(/\/al-mustasfa\//);
@@ -135,7 +135,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
   await page.locator('#gns-query').waitFor({state:'visible'});
   assert.equal(await page.locator('#gns-query').inputValue(),'اجتهاد');
   assert.equal(await page.locator('#gns-scope').inputValue(),'library');
-  assert.equal(await page.locator('[data-gns-facet=other]').getAttribute('aria-pressed'),'true');
+  assert.equal(await page.locator('#gns-type').inputValue(),'other');
   await close();
  });
  await check('glossary definition opens exact term then returns to results',async()=>{
@@ -147,7 +147,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
   assert.match(await page.locator('#detailEyebrow').innerText(),/DICTIONARY|LEXICAL/i);
   await page.locator('#infoOverlay [data-gns-return]').click();
   assert.equal(await page.locator('#gns-query').inputValue(),'qiyās');
-  assert.equal(await page.locator('[data-gns-facet=dictionary]').getAttribute('aria-pressed'),'true');
+  assert.equal(await page.locator('#gns-type').inputValue(),'dictionary');
   await close();
  });
  await check('personal note search returns to the same source-filtered results',async()=>{
@@ -164,7 +164,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
   assert.match(await page.locator('#mainContent').innerText(),/Research hypothesis/);
   await returnFromBar();
   assert.equal(await page.locator('#gns-query').inputValue(),'gns_return_private_annotation_20261022');
-  assert.equal(await page.locator('[data-gns-facet=personal]').getAttribute('aria-pressed'),'true');
+  assert.equal(await page.locator('#gns-type').inputValue(),'personal');
   await close();
  });
  await check('ordinary dictionary visits retain Back to reading',async()=>{
@@ -188,7 +188,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
  await mobile.goto(base+'#section=1',{waitUntil:'load'});
  await check('mobile return affordance is in viewport',async()=>{
   await mobile.locator('#searchBtn').click();await mobile.locator('#gns-query').fill('ijtihaad');
-  await mobile.waitForTimeout(150);await mobile.locator('.gns-result').first().click();
+  await mobile.waitForTimeout(350);await mobile.locator('.gns-result').first().click();
   const x=await mobile.locator('#gns-return-bar').boundingBox();
   assert.ok(x&&x.x>=0&&x.x+x.width<=392,JSON.stringify(x));
  });
@@ -197,7 +197,7 @@ const mime={'.html':'text/html; charset=utf-8','.js':'application/javascript','.
  await check('320px phone has visible return control without horizontal overflow',async()=>{
   await small.locator('#searchBtn').click();
   await small.locator('#gns-query').fill('qiyaas');
-  await small.waitForTimeout(150);
+  await small.waitForTimeout(350);
   await small.locator('.gns-result').first().click();
   const geometry=await small.evaluate(()=>{
    const e=document.querySelector('#gns-return-bar'),r=e?.getBoundingClientRect();

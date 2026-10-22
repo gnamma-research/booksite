@@ -125,7 +125,7 @@ const root=path.resolve(__dirname,'../..'),mimes={'.html':'text/html; charset=ut
  });
  await check('Scholarly mode exposes scope, orthography, pattern examples and readable explanation',async()=>{
   await next();await p.locator('#gns-query').fill('qiyas AND (illa OR sabab)');
-  await p.waitForTimeout(250);
+  await p.waitForTimeout(350);
   assert.equal(await p.locator('#gns-mode').inputValue(),'scholarly');
   assert.ok(await p.locator('.gns-result').count()>0);
   assert.match(await p.locator('.gns-explanation').innerText(),/Your search means/);
@@ -185,7 +185,7 @@ const root=path.resolve(__dirname,'../..'),mimes={'.html':'text/html; charset=ut
  await check('search result returns to the exact Boolean expression and scope',async()=>{
   await p.locator('#gns-query').fill('qiyas AND (illa OR sabab)');
   await p.locator('#gns-boolean-scope').selectOption('section');
-  await p.waitForTimeout(180);
+  await p.waitForTimeout(350);
   const selected=p.locator('.gns-result').filter({hasText:'Authorial text'}).first();
   assert.ok(await selected.count()>0);
   await selected.click();
@@ -209,7 +209,7 @@ const root=path.resolve(__dirname,'../..'),mimes={'.html':'text/html; charset=ut
   await next();
   await p.locator('#gns-query').fill('qiyas AND (illa OR sabab)');
   await p.locator('#gns-boolean-scope').selectOption('section');
-  await p.waitForTimeout(150);
+  await p.waitForTimeout(350);
   const grouped=p.locator('.gns-group-result').first();
   assert.ok(await grouped.count()>0,'Expected multiple evidence locations');
   const links=grouped.locator('[data-gns-evidence-result]');
@@ -252,7 +252,7 @@ const root=path.resolve(__dirname,'../..'),mimes={'.html':'text/html; charset=ut
  });
  await check('malformed pattern is explained rather than silently returning nothing',async()=>{
   await next();await p.locator('#gns-query').fill('qiyas AND (');
-  await p.waitForTimeout(150);
+  await p.waitForTimeout(350);
   assert.match(await p.locator('.gns-explanation').innerText(),/Check query/i);
   await close();
  });
@@ -266,7 +266,7 @@ const root=path.resolve(__dirname,'../..'),mimes={'.html':'text/html; charset=ut
   await small.locator('[data-gns-expand="1"]').first().click();
   await small.locator('#gns-mode').selectOption('scholarly');
   await small.locator('#gns-query').fill('qiyas AND illa');
-  await small.waitForTimeout(180);
+  await small.waitForTimeout(350);
   const measurements=await small.evaluate(()=>({
    viewport:innerWidth,document:document.documentElement.scrollWidth,
    dialog:document.querySelector('.gns-dialog').getBoundingClientRect().toJSON(),
