@@ -4,6 +4,7 @@ on:
     branches: [experiment/daruri-actualtext-source-20261022]
     paths:
       - 'daruri/qa/experimental_original_char_unicode.py'
+      - 'daruri/qa/verify_char_unicode_profiles.py'
       - '.github/workflows/daruri-char-unicode-matrix.yml'
   workflow_dispatch:
 permissions:
@@ -37,15 +38,25 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
       - name: Build isolated candidate or report exact blocker
         run: |
           python daruri/qa/experimental_original_char_unicode.py \
             --input daruri/${{ matrix.input }} \
             --map daruri/${{ matrix.map }} \
             --output /tmp/daruri-${{ matrix.id }}-unicode-CANDIDATE.pdf
+      - name: Independently verify candidate source, copy, pixels and links
+        run: |
+          python daruri/qa/verify_char_unicode_profiles.py \
+            --source daruri/${{ matrix.input }} \
+            --map daruri/${{ matrix.map }} \
+            --candidate /tmp/daruri-${{ matrix.id }}-unicode-CANDIDATE.pdf \
+            --report /tmp/daruri-${{ matrix.id }}-source-414-report.json
       - uses: actions/upload-artifact@v4
         if: success()
         with:
           name: experimental-${{ matrix.id }}-unicode-NOT-RELEASE
-          path: /tmp/daruri-${{ matrix.id }}-unicode-CANDIDATE.pdf
+          path: |
+            /tmp/daruri-${{ matrix.id }}-unicode-CANDIDATE.pdf
+            /tmp/daruri-${{ matrix.id }}-source-414-report.json
           retention-days: 3
