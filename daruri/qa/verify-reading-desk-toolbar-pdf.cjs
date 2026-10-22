@@ -61,7 +61,8 @@ async function run(engine,width,touch){
    'Collection management should be one labelled menu');
   assert.equal(await page.locator('.gn-rd-cards .gn-rd-card-ops').count(),0,
    'Saved item cards must be uncluttered');
-  assert.equal(await page.locator('.gn-rd-tabs button').count(),3);
+  assert.equal(await page.locator('.gn-rd-tabs button').count(),4);
+  assert.equal(await page.locator('.gn-rd-tabs [data-value="highlights"]').count(),1,'Saved highlights must have their own category');
   assert.equal(await page.locator('.gn-rd-tabs [aria-pressed=true]').count(),1);
   assert.equal(await page.locator('#gn-rd-source,#gn-rd-sort').count(),2,
    'Source filter and sorting need labelled selectors');
