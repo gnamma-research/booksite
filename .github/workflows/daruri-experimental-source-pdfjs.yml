@@ -35,7 +35,13 @@ jobs:
             --font daruri/build/fonts/NotoNaskhArabic-Regular.ttf \
             --output /tmp/daruri-source-pdfjs-PROTOTYPE.pdf \
             --limit 414 --diagnostic
-      - name: PDF.js source Arabic phrase coverage
+      - name: PDF.js SOURCE BASELINE coverage before repair
+        run: |
+          node daruri/qa/experimental_original_pdfjs.cjs \
+            daruri/editions/reading/daruri-reading-arabic-titles-off.pdf \
+            daruri/editions/maps/daruri-reading-arabic-titles-off.pdf.json \
+            /tmp/gnpdfjs
+      - name: PDF.js experimental source Arabic phrase coverage
         run: |
           node daruri/qa/experimental_original_pdfjs.cjs \
             /tmp/daruri-source-pdfjs-PROTOTYPE.pdf \
