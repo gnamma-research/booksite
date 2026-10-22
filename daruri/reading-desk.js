@@ -23,7 +23,7 @@ const RD_ICON={
  highlight:bookmarkUI.highlightIcon(),
  paragraph:bookmarkUI.icon({kind:'paragraph'}),
  paragraphSaved:bookmarkUI.icon({kind:'paragraph',saved:true}),
- note:bookmarkUI.noteIcon(),
+  note:bookmarkUI.noteIcon(),
  saved:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
  close:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>'
 };
@@ -347,7 +347,7 @@ function create(ctx){
   if(count){
    if(!persist()){
     for(const [id,previous] of snapshot){const row=records.find(x=>x.id===id);if(row){row.deleted=previous.deleted;row.updated=previous.updated;}}
-    ctx.notify('Storage unavailable: change was not saved.');return 0;
+    ctx.notify(writeConflict?'Reading Desk changed in another tab. Open Reading Desk and choose Reload saved items.':'Storage unavailable: change was not saved.');return 0;
    }
    // persist() already synchronized the legacy section list once. Re-saving it
    // here and rebuilding the entire reader twice delayed bookmark deselection.
@@ -466,7 +466,8 @@ function create(ctx){
   const own=r.kind==='note',relatedCount=own||!r.target?0:linkedCounts.get(keyOf(r.target))||0;
   const canOpen=!!r.target&&isResolved(r);
   const parts=['<article class="gn-rd-card'+(r.id===ui.selected?' gn-rd-selected':'')+'">'];
-  parts.push('<button type="button" class="gn-rd-card-open" data-rd="select" data-id="'+esc(r.id)+'" aria-label="View '+esc(own?'personal note':'bookmark')+': '+esc(short(r.title||titleOf(r.target),95))+'">');
+  const itemType=own?'personal note':r.kind==='quote'?'highlight':r.kind==='footnote'?'source note':'bookmark';
+  parts.push('<button type="button" class="gn-rd-card-open" data-rd="select" data-id="'+esc(r.id)+'" aria-label="View '+esc(itemType)+': '+esc(short(r.title||titleOf(r.target),95))+'">');
   parts.push('<span class="gn-rd-card-heading"><small>'+esc(grouped(r))+' · '+esc(subOf(r.target))+'</small><time title="'+esc(dateLine(r,true))+'">'+esc(dateLine(r))+'</time></span>');
   if(!isResolved(r))parts.push('<span class="gn-rd-unresolved-status" role="status">Source unavailable · saved content preserved</span>');
   parts.push('<span class="gn-rd-item-heading">'+(own?RD_ICON.note:r.kind==='quote'?RD_ICON.highlight:RD_ICON.bookmark)+'<strong>'+esc(r.title||titleOf(r.target))+'</strong></span>');
@@ -477,12 +478,18 @@ function create(ctx){
  }
  function render(){
   const main=$('#mainContent');if(!main)return;
-  const visible=matching(),selected=records.find(r=>r.id===ui.selected),bin=ui.category==='bin';
+  const visible=matching(),bin=ui.category==='bin';
+  // A removed, restored, or filtered-out selection must never leave mobile
+  // navigation in detail-only mode with neither a detail nor a Back button.
+  if(ui.mobileDetail&&!visible.some(r=>r.id===ui.selected)){
+   ui.mobileDetail=false;ui.selected='';
+  }
+  const selected=records.find(r=>r.id===ui.selected);
   const linkedCounts=new Map();
   for(const r of active())if(r.kind==='note'&&r.target){const k=keyOf(r.target);linkedCounts.set(k,(linkedCounts.get(k)||0)+1);}
   const parts=['<section class="gn-rd-page'+(ui.mobileDetail?' gn-rd-mobile-detail-open':'')+'">'];
   parts.push('<header class="gn-rd-hero"><p class="gn-rd-kicker">YOUR PRIVATE READING COLLECTION</p><h1>Reading Desk</h1>');
-  parts.push('<p>Private bookmarks and personal notes, saved in this browser.</p>');
+  parts.push('<p>Private bookmarks, highlights and personal notes saved in this browser.</p>');
   if(readingOrigin)parts.push('<button type="button" class="gn-rd-back-reading" data-rd="return-reading">← Back to text</button>');
   parts.push('</header>');
   if(loadFailure)parts.push('<div class="gn-rd-warning" role="alert"><strong>Saved data protected.</strong> This browser contains Reading Desk data that could not be read. No new writes will overwrite it. <button type="button" data-rd="download-original">Download untouched original data</button></div>');
@@ -505,8 +512,8 @@ function create(ctx){
   else parts.push('<div class="gn-rd-tabs" role="group" aria-label="Saved item categories">'+
    ['all','bookmarks','highlights','mine'].map(v=>'<button type="button" data-rd="filter" data-value="'+v+
     '" aria-pressed="'+(ui.category===v)+'">'+({all:'All',bookmarks:'Bookmarks',highlights:'Highlights',mine:'My notes'}[v])+'</button>').join('')+'</div>');
-  parts.push('<label class="gn-rd-search" for="gn-rd-query">Search saved items<input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search notes and quotations…" value="'+esc(ui.query)+'"></label>');
-  const typeOptions=[['all','All sources'],['text','Text passages'],['booknotes','Book notes'],['dictionary','Dictionary'],['index','Subject index'],['bidaya','Bidāya applications'],['lessons','Study lessons']];
+  parts.push('<label class="gn-rd-search" for="gn-rd-query">Search saved items<input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search bookmarks, highlights and notes…" value="'+esc(ui.query)+'"></label>');
+  const typeOptions=[['all','All sources'],['text','Text passages'],['booknotes','Source notes'],['dictionary','Dictionary'],['index','Subject index'],['bidaya','Bidāya applications'],['lessons','Study lessons']];
   parts.push('<div class="gn-rd-controls" role="group" aria-label="Browse saved items">');
   parts.push('<label for="gn-rd-source">Saved from <select id="gn-rd-source">'+typeOptions.map(([value,name])=>
    '<option value="'+value+'"'+(ui.sourceType===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label>');
@@ -536,7 +543,7 @@ function create(ctx){
     if(selected.kind==='note')parts.push('<button type="button" class="gn-rd-detail-primary" data-rd="edit" '+itemId+'>'+RD_ICON.note+'<span>Edit note</span></button>');
     if(selected.target&&isResolved(selected)){
      parts.push('<button type="button" class="'+(selected.kind==='note'?'gn-rd-detail-secondary':'gn-rd-detail-primary')+
-      '" data-rd="open" '+itemId+'>Open in text</button>');
+      '" data-rd="open" '+itemId+'>'+({footnote:'Open source note',dictionary:'Open dictionary entry',index:'Open index entry',application:'Open legal application',lesson:'Open lesson'}[selected.target.kind]||'Open in text')+'</button>');
      if(selected.kind!=='note')parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="add-note" '+itemId+'>'+RD_ICON.note+'<span>Add note</span></button>');
     }
     if(!isResolved(selected))parts.push('<button type="button" class="gn-rd-detail-secondary" data-rd="relink" '+itemId+'>Relink source</button>');
@@ -810,7 +817,7 @@ function create(ctx){
      (r.kind==='note'?'<p>'+esc(short(r.body,230))+'</p>':'')+
      '<small>'+esc(dateLine(r))+'</small><div class="gn-rd-inline-actions">'+
      '<button type="button" data-rd="go-desk-item" data-id="'+esc(r.id)+'">Open in Reading Desk</button>'+
-     (r.kind==='note'?'<button type="button" data-rd="edit" data-id="'+esc(r.id)+'">Edit</button>':'')+
+     (r.kind==='note'?'<button type="button" data-rd="edit" data-id="'+esc(r.id)+'">'+RD_ICON.note+'<span>Edit note</span></button>':'')+
      '<button type="button" data-rd="trash-inline" data-id="'+esc(r.id)+'">Move to Bin</button></div></article>';
    }).join('')+'</div><footer><button type="button" data-rd="go-desk-passage" data-section="'+esc(sectionId)+'" data-segment="'+segment+'">View all for this paragraph</button></footer>';
   const holder=anchor.closest('.gn-rd-passage-tools')||anchor.parentElement;
@@ -1541,7 +1548,39 @@ function create(ctx){
     invalidateDeskPdf();
    }
   });
-  document.addEventListener('input',e=>{if(e.target?.id==='gn-rd-query'){ui.query=e.target.value;const focusId=document.activeElement.id;const pos=e.target.selectionStart;render();const input=$('#'+focusId);input?.focus({preventScroll:true});input?.setSelectionRange?.(pos,pos);}});
+  // Filtering the entire Reading Desk on each keystroke can block input for
+  // hundreds of milliseconds in collections containing thousands of records.
+  // Update the query immediately but batch list rendering after typing pauses.
+  let searchRenderTimer=0;
+  function commitSearchQuery(){
+   clearTimeout(searchRenderTimer);searchRenderTimer=0;
+   if(state.route!=='bookmarks')return;
+   const input=$('#gn-rd-query');if(!input)return;
+   ui.query=input.value;
+   const focused=document.activeElement===input,from=input.selectionStart,to=input.selectionEnd;
+   render();
+   if(focused){
+    const next=$('#gn-rd-query');next?.focus({preventScroll:true});
+    if(from!==null&&to!==null)next?.setSelectionRange?.(from,to);
+   }
+  }
+  function scheduleSearchQuery(input){
+   ui.query=input.value;
+   clearTimeout(searchRenderTimer);
+   searchRenderTimer=setTimeout(commitSearchQuery,150);
+  }
+  document.addEventListener('input',e=>{
+   if(e.target?.id!=='gn-rd-query')return;
+   ui.query=e.target.value;
+   if(e.isComposing)return; // Do not re-render over an Arabic IME composition.
+   scheduleSearchQuery(e.target);
+  });
+  document.addEventListener('compositionend',e=>{
+   if(e.target?.id==='gn-rd-query')scheduleSearchQuery(e.target);
+  });
+  document.addEventListener('keydown',e=>{
+   if(e.target?.id==='gn-rd-query'&&e.key==='Enter')commitSearchQuery();
+  });
   ensureVisualsToggle();
   const host=$('#detailContent');if(host){const observer=new MutationObserver(()=>{if(!decorating)queueMicrotask(decorate);});observer.observe(host,{subtree:true,childList:true});}
   const main=$('#mainContent');if(main){let scheduled=false;new MutationObserver(()=>{if(scheduled||decorating)return;scheduled=true;queueMicrotask(()=>{scheduled=false;decorate();});}).observe(main,{subtree:true,childList:true});}
