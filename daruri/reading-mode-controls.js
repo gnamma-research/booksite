@@ -99,7 +99,7 @@ function create({state,rd}){
    button.addEventListener('click',()=>{
     // Keep jump/title separate from annotation actions; never toggle/delete here.
     const onlyParagraph=type==='highlights'?place.segment:null;
-    rd.openAt(place.section,onlyParagraph,type==='note'?'notes':'bookmarks');
+    rd.openAt(place.section,onlyParagraph,type==='notes'?'notes':'bookmarks');
    });
    status.append(button);
   }
