@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Daruri on-device HTML to PDF technical proof (NONRELEASE)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+@font-face{font-family:"Noto Naskh Arabic";src:url("/daruri/build/fonts/NotoNaskhArabic-Regular.ttf") format("truetype");font-weight:400}
+@font-face{font-family:"Noto Serif";src:url("/daruri/build/fonts/NotoSerif-Regular.ttf") format("truetype");font-weight:400}
+@font-face{font-family:"Noto Sans";src:url("/daruri/build/fonts/NotoSans-Regular.ttf") format("truetype");font-weight:400}
+body{background:#f1f3ef;color:#16201d;font:14px system-ui;margin:1em}
+label,select,button{font-size:14px}
+#paper{width:720px;background:#fff;padding:20px;margin:12px auto}
+#paper h1{font:20px "Noto Serif";line-height:1.3;text-align:center}
+#paper h2{font:16px "Noto Serif";margin:13px 0 8px;break-after:avoid}
+#paper .source-unit{margin:16px 0;break-inside:auto}
+#paper .source-para{margin:6px 0;display:grid;grid-template-columns:1fr 1fr;gap:12px;break-inside:avoid}
+#paper p{margin:0 0 7px}
+#paper .arabic{font:20px/1.7 "Noto Naskh Arabic";direction:rtl;text-align:right;unicode-bidi:isolate}
+#paper .english{font:13px/1.5 "Noto Serif";direction:ltr;text-align:left;unicode-bidi:isolate}
+#paper .single .english{font-size:15px;line-height:1.5}
+#paper .recorded{font-size:17px;margin:7px 0 3px}
+#paper .unit-no{font:12px "Noto Sans";color:#53635c}
+#paper sup{font:10px "Noto Sans";vertical-align:super}
+#paper aside{font:11px/1.4 "Noto Sans";border-top:1px solid #a5b7b0;padding:4px;margin:5px 0 12px}
+#paper aside a{color:#1b5f68}
+#paper a{color:#1b5f68}
+#paper .evidence{font:11px "Noto Sans";text-align:center;opacity:.8}
+</style>
+<script defer src="/daruri/qa/node_modules/jsafa-pdf/dist/jsafa-pdf.umd.js"></script>
+</head><body>
+<div><label for="scenario">Fixture</label> <select id="scenario">
+<option value="excerpt">Authorial Arabic vowelled/English + inline §65 note stress</option>
+<option value="english-full">Complete English original 414 passages</option>
+<option value="bilingual-full">Complete bilingual original 414 passages</option>
+</select> <button id="make" type="button">Generate PDF directly in browser</button></div>
+<output id="status" aria-live="polite">Ready</output>
+<article id="paper" lang="en"><h1>Daruri browser-only PDF test</h1></article>
+<script>
+'use strict';
+let snapshot=null;
+window.__pdfProof={state:'idle'};
+const $=id=>document.getElementById(id);
+const textNode=(tag,cls,str)=>{
+ const n=document.createElement(tag);if(cls)n.className=cls;n.textContent=String(str??'');return n;
+};
+function sourceArabic(p,lang='ar',is65=false,first=false){
+ const el=textNode('p','arabic','');
+ el.lang=lang;el.dir='rtl';
+ const phrase='وَفِي أَلْفَاظِهِ';
+ if(is65 && first && p.includes(phrase)){
+  const before=p.indexOf(phrase);
+  el.append(document.createTextNode(p.slice(0,before+'وَفِي'.length)));
+  const sup=document.createElement('sup'),a=document.createElement('a');
+  a.textContent='1';a.href='#R065-footnote';a.id='R065-call';
+  sup.append(a);el.append(sup);
+  el.append(document.createTextNode(p.slice(before+'وَفِي'.length)));
+ }else el.textContent=p;
+ return el;
+}
+function showBook(book,mode){
+ const paper=$('paper');paper.replaceChildren();
+ paper.append(textNode('h1',null,book.title));
+ paper.append(textNode('p','evidence','Browser-only generation test, unpublished. Canonical Gnamma authorial text.'));
+ const list=mode==='excerpt'?book.excerpt:book.complete;
+ let stressed=false;
+ for(const sec of list){
+  const section=document.createElement('section');
+  section.className='source-unit';section.id='R'+String(sec.id).padStart(3,'0');
+  const head=textNode('h2','unit-no','R'+String(sec.id).padStart(3,'0')+' · Editorial title: '+sec.title);
+  section.append(head);
+  if(sec.headingAr)section.append(sourceArabic(sec.headingAr));
+  for(let i=0;i<sec.segments.length;i++){
+   const seg=sec.segments[i],line=document.createElement('div');
+   line.className='source-para';line.id='R'+String(sec.id).padStart(3,'0')+'-P'+String(i+1).padStart(2,'0');
+   if(mode==='english-full'){
+    line.className='single';
+    line.append(textNode('p','english',seg.en));
+   } else {
+    line.append(textNode('p','english',seg.en));
+    const fix=sec.id===65&&!stressed&&seg.vocalized.includes(book.expected_fragments.arabic_exact);
+    line.append(sourceArabic(seg.vocalized,'ar',sec.id===65,fix));
+    if(fix)stressed=true;
+   }
+   section.append(line);
+  }
+  if(sec.id===65&&mode!=='english-full'){
+   const note=document.createElement('aside');note.id='R065-footnote';note.lang='en';note.dir='ltr';
+   note.append(textNode('b',null,'1 · Inline-note stress only (not a canonical scholarly note): '));
+   note.append(document.createTextNode(book.expected_fragments.test_footnote+'. '));
+   const back=document.createElement('a');back.href='#R065-call';back.textContent='Return to text';note.append(back);
+   section.append(note);
+  }
+  paper.append(section);
+ }
+ if(mode==='excerpt'&&!stressed)throw Error('No §65 inline-note phrase anchor was found');
+ return {segments:list.reduce((n,s)=>n+s.segments.length,0),sections:list.length,stressed};
+}
+async function prepare(){
+ snapshot=await(await fetch('/daruri/qa/browser_pdf_canonical_fixture.json',{cache:'no-store'})).json();
+ if(snapshot.source_sections!==258||snapshot.source_segments!==414||snapshot.release_approved!==false)throw Error('Unverified canonical fixture');
+ showBook(snapshot,$('scenario').value);
+ return snapshot;
+}
+$('scenario').addEventListener('change',()=>{if(snapshot)showBook(snapshot,$('scenario').value)});
+$('make').addEventListener('click',async()=>{
+ const mode=$('scenario').value;
+ window.__pdfProof={state:'building',mode};
+ $('make').disabled=true;
+ const t=performance.now();
+ try{
+  if(!snapshot)await prepare();
+  if(!window.JsafaPDF?.toPdf)throw Error('Browser-side PDF engine was not loaded');
+  const expected=showBook(snapshot,mode);
+  await document.fonts.ready;
+  const memBefore=performance.memory?.usedJSHeapSize ?? null;
+  const bytes=await JsafaPDF.toPdf($('paper'),{
+   page:{size:'A4',margin:JsafaPDF.mm(12),fit:'width',avoidBreakInside:true},
+   title:'Daruri browser-only experimental '+mode
+  });
+  if(bytes.length<8000||String.fromCharCode(...bytes.slice(0,5))!=='%PDF-')throw Error('PDF bytes were not generated');
+  const blob=new Blob([bytes],{type:'application/pdf'});
+  const u=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=u;a.download='daruri-'+mode+'-jsafa-browser-NONRELEASE.pdf';
+  document.body.append(a);a.click();a.remove();
+  const memAfter=performance.memory?.usedJSHeapSize ?? null;
+  window.__pdfProof={state:'done',mode,expected,bytes:bytes.length,milliseconds:Math.round(performance.now()-t),memBefore,memAfter,sourcePdfRequests:0,noServerPdfGeneration:true};
+  $('status').textContent='Generated '+Math.round(bytes.length/1024)+' kB PDF in browser ('+Math.round((performance.now()-t)/1000)+'s)';
+  setTimeout(()=>URL.revokeObjectURL(u),20000);
+ }catch(err){
+  window.__pdfProof={state:'error',mode,error:String(err?.stack||err),milliseconds:Math.round(performance.now()-t)};
+  $('status').textContent='Generation failed: '+String(err?.message||err);
+  console.error('BROWSER_PDF_PROOF_FAIL',err);
+ }finally{$('make').disabled=false;}
+});
+prepare().then(()=>{$('status').textContent='Ready: '+snapshot.source_sections+' canonical sections loaded'}).catch(err=>{$('status').textContent=String(err);window.__pdfProof={state:'error',error:String(err)}})
+</script></body></html>
