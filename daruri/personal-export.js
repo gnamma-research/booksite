@@ -708,6 +708,31 @@
         syncForm();
         return file;
       },
+      invalidateDynamicEdition(fallbackFile){
+        // A previously generated local edition must never remain silently
+        // selected when the user changes the requested source configuration.
+        // Never rewrite, upload, or clear the underlying Reading Desk notes.
+        if(busy)throw Error('Complete the active personal PDF export before changing editions');
+        for(const [key,entry] of dynamicEditions){
+          URL.revokeObjectURL(entry.url);
+          delete manifest.files[key];
+        }
+        dynamicEditions.clear();
+        for(const option of [...$('pe-edition').options].filter(option=>
+          option.value.startsWith('generated-')))option.remove();
+        if(resultURL){URL.revokeObjectURL(resultURL);resultURL=null;resultFile=null;}
+        $('pe-result').hidden=true;
+        $('pe-result-link').removeAttribute('href');
+        $('pe-open').removeAttribute('href');
+        const exact=String(fallbackFile||'');
+        // If this exact approved fallback is unavailable, export stays
+        // disabled; never substitute an unrelated edition.
+        const usable=!!manifest?.files?.[exact]&&
+          [...$('pe-edition').options].some(option=>option.value===exact);
+        $('pe-edition').value=usable?exact:'';
+        syncForm();
+        return usable;
+      },
       choose(file){
         if(!manifest?.files?.[file]){$('pe-edition').value='';syncForm();return false;}
         $('pe-edition').value=file;syncForm();return true;
