@@ -1,7 +1,7 @@
 name: Daruri Hadith source-context integrity
 on:
   push:
-    branches: [master, feature/daruri-hadith-expanded-context-20261022]
+    branches: [master, feature/daruri-hadith-expanded-context-20261022, feature/daruri-full-english-hadith-20261023]
     paths:
       - 'daruri/hadith-context-*'
       - 'daruri/HADITH_CONTEXT_SOURCES.md'
@@ -33,7 +33,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Check original 33 Hadith notes, full Arabic and source ordering
+      - name: Check 47 complete Arabic and full English Hadith transmissions, source notes and priority
         run: |
           npm install --no-save --no-package-lock jsdom@24
           node daruri/qa/verify-hadith-context.js
