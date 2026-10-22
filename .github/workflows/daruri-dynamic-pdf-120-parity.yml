@@ -3,13 +3,18 @@ on:
   push:
     branches: ['feature/daruri-design-aware-generated-editions-20261022']
     paths:
-      - 'daruri/dynamic-pdf/*.py'
-      - 'daruri/dynamic-pdf/*.js'
-      - 'daruri/dynamic-pdf/*.cjs'
+      - 'daruri/dynamic-pdf/test_parity.py'
+      - 'daruri/dynamic-pdf/build_packets.py'
+      - 'daruri/dynamic-pdf/core.js'
+      - 'daruri/dynamic-pdf/test_assemble.cjs'
+      - 'daruri/qa/verify_dynamic_apparatus_links.py'
       - '.github/workflows/daruri-dynamic-pdf-120-parity.yml'
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: daruri-design-120-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   build-packets:
     runs-on: ubuntu-latest
