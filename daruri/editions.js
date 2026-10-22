@@ -39,7 +39,9 @@
     open:'<path d="M13 5h6v6M19 5l-9 9"/><path d="M19 13v6H5V5h6"/>',
     settings:'<path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.5" fill="currentColor" stroke="none"/><circle cx="16" cy="17" r="2.5" fill="currentColor" stroke="none"/>'
   };
-  const svg=name=>'<svg class="gn-ed-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+paths[name]+'</svg>';
+  const svg=name=>name==='pen'&&window.GnammaBookmarkUI?.noteIcon?
+    window.GnammaBookmarkUI.noteIcon({className:'gn-ed-action-icon'}):
+    '<svg class="gn-ed-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+paths[name]+'</svg>';
   const link=(href,label,name='open',download=false)=>'<a href="'+attr(href)+'" '+
     (download?'download ':'target="_blank" rel="noopener noreferrer" ')+
     'class="gn-ed-action" aria-label="'+attr(label)+'" data-ep-info-kind="PDF" data-ep-info-label="'+attr(label)+'">'+svg(name)+'</a>';
@@ -101,7 +103,7 @@
     reading:[['none','None (shortest)'],['essential','Essential clarifications only']],
     study:[['none','None'],['essential','Essential clarifications'],['study','Study notes and Qurʾān sources']]
   };
-  const personalChoices=[['none','None (default)'],['notes','My notes'],['all','My notes and bookmarks']];
+  const personalChoices=[['none','None (default)'],['notes','My notes'],['all','My notes, bookmarks and highlights']];
   const toggleEditorial=(tier)=>'<label class="gn-ed-toggle"><input data-ep-control="editorial" type="checkbox" '+
     (memory[tier].editorial?'checked ':'')+'/><span class="gn-ed-field-name"><strong>Include editorial section titles</strong></span></label>';
   const controls=tier=>'<div class="gn-ed-config" data-ep-tier="'+tier+'">'+
