@@ -70,6 +70,8 @@ async function exercise(engine,engineName,base){
    await page.locator('.gn-note-en-ref[data-note-target="N003"]').click();
    await page.locator('#infoOverlay:not([hidden])').waitFor();
    assert.match(await page.locator('#detailTitle').innerText(),/N003.*§2/,'Corrected publisher note section');
+   await page.locator('#detailContent [data-close-reference]').click();
+   await page.locator('#infoOverlay[hidden]').waitFor({state:'attached'});
    await page.goto(base+'/daruri/#section=224',{waitUntil:'domcontentloaded'});
    await page.locator('.gn-note-en-range').first().waitFor();
    const overlap=page.locator('.gn-note-en-range[data-gn-en-note-ids*="N107"]').first();
@@ -79,6 +81,8 @@ async function exercise(engine,engineName,base){
    await page.locator('.gn-note-en-choice button').filter({hasText:'N108'}).click();
    await page.locator('#infoOverlay:not([hidden])').waitFor();
    assert.match(await page.locator('#detailTitle').innerText(),/N108.*§224/);
+   await page.locator('#detailContent [data-close-reference]').click();
+   await page.locator('#infoOverlay[hidden]').waitFor({state:'attached'});
    await page.goto(base+'/daruri/#section=39',{waitUntil:'domcontentloaded'});
    await page.locator('.gn-note-en-section-list').waitFor();
    const fallback=page.locator('.gn-note-en-section-ref[data-note-target="N017"]');
@@ -86,6 +90,8 @@ async function exercise(engine,engineName,base){
    await fallback.click();
    await page.locator('#infoOverlay:not([hidden])').waitFor();
    assert.match(await page.locator('#detailTitle').innerText(),/N017.*§39/);
+   await page.locator('#detailContent [data-close-reference]').click();
+   await page.locator('#infoOverlay[hidden]').waitFor({state:'attached'});
    await page.goto(base+'/daruri/#section=11',{waitUntil:'domcontentloaded'});
    await page.locator('.gn-note-en-range').first().waitFor();
    assert.equal(await page.locator('.gn-note-en-range button,.gn-note-en-range a').count(),0,

@@ -18,7 +18,7 @@ vm.runInNewContext(script,{window,document:doc,location:{protocol:'https:'},
 const model=window.GnammaOfflineBundle;
 assert(model&&typeof model.sourceFiles==='function');
 assert(events.includes('click'),'Must support dynamically rendered offline links');
-const html=model.sourceFiles(false),full=model.sourceFiles(true);
+const html=model.sourceFiles('html'),full=model.sourceFiles('full');
 assert(html.files.length>40,'Offline HTML reader needs accompanying assets');
 assert.equal(html.pdfNames.length,0,'HTML-only must not include published PDFs');
 assert(!html.files.some(([name])=>/\.pdf$/i.test(name)),'HTML-only ZIP contains PDF files');
@@ -36,7 +36,7 @@ assert(index.includes('data-route="editions"'),'Downloads is in the primary navi
 assert(index.includes('>Downloads</button>'),'Downloads has a clear label');
 assert(!index.includes('id="downloadsMenu"')&&!index.includes('id="fb-downloads-menu"'),
   'Duplicate sidebar PDF-download lists were not removed');
-assert(selector.includes('data-es-nav="pdf"')&&selector.includes('data-es-nav="offline"'));
+assert(selector.includes('data-es-nav="reading"')&&selector.includes('data-es-nav="reference"'));
 assert(selector.includes('data-daruri-bundle="html"'));
 assert(selector.includes('data-es-prepare')&&selector.includes('Download PDF'));
 assert(!selector.includes('gn-es-study-guide'),'Study Guide PDF must not look like selected PDF');

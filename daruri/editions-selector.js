@@ -6,7 +6,7 @@
   'use strict';
   if(!window.GnammaEditions||window.GnammaEditions.__publishedSelector)return;
   const oldRender=window.GnammaEditions.render;
-  const NAV=['pdf','offline'];
+  const NAV=['reading','reference'];
   const BASE={
     reading:{en:true,ar:true,vowels:true,headings:'original',notes:'none',
       glossary:'none',index:'none',applications:'off',concordance:'off'},
@@ -21,10 +21,11 @@
     study:{...BASE.study},
     reference:{...BASE.reference}
   };
-  let tier='reading',preset='reading',tab='pdf',customOpen=false;
+  let tier='reading',preset='reading',tab='reading',customOpen=false;
   let catalog=null,addon=null,reference=null,baseMaps=null,root=null,requestId=0;
   let personalReady=false,selectedFile='',selectedRow=null;
-  let preparedPdf=null,preparing=false,prepareAbort=null,downloadError='';
+  // Existing PDFs are retrieved and SHA-256 checked on request, never falsely "generated".
+  let preparation={key:'',root:null,controller:null,request:0,busy:false,url:null,error:''};
   const esc=value=>String(value??'').replace(/[&<>"']/g,
     c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const iconPaths={
@@ -62,12 +63,12 @@
           if(typeof s[k]===typeof BASE[kind][k])state[kind][k]=s[k];
       }
       if(NAV.includes(raw.tab))tab=raw.tab;
-      else if(raw.tab==='reference'||raw.tab==='reading')tab='pdf';
       if(['reading','study','reference'].includes(raw.tier))tier=raw.tier;
       if(['reading','study','custom'].includes(raw.preset))preset=raw.preset;
       customOpen=Boolean(raw.customOpen);
       if(!current().en&&!current().ar)current().en=true;
-      if(raw.tab==='reference')tier='reference';
+      if(tab==='reference')tier='reference';
+      if(tab==='reading'&&tier==='reference')tier='reading';
     }catch(_){}
   }
   restore();
@@ -81,21 +82,13 @@
     icon(key)+'<span>'+esc(label)+'</span></button>';
   function shell(){
     return '<div class="gn-es-wrap">'+
-      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Download a copy</h1><p>Choose a PDF edition or download the offline HTML reader.</p></header>'+
-      '<div class="gn-es-edition-tabs" role="tablist" aria-label="Download format">'+
-        '<button type="button" class="gn-es-tab" id="gn-es-tab-pdf" role="tab" aria-controls="gn-es-panel" data-es-nav="pdf" aria-selected="true">PDF editions</button>'+
-        '<button type="button" class="gn-es-tab" id="gn-es-tab-offline" role="tab" aria-controls="gn-es-panel" data-es-nav="offline" aria-selected="false">Offline reader</button>'+
+      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Download a copy</h1><p>Choose a PDF edition below or download the offline HTML reader.</p></header>'+
+       '<h2 class="gn-es-format-title">PDF editions</h2>'+
+      '<div class="gn-es-edition-tabs" role="tablist" aria-label="Edition type">'+
+        '<button type="button" class="gn-es-tab" id="gn-es-tab-reading" role="tab" aria-controls="gn-es-panel" data-es-nav="reading" aria-selected="true">Reading &amp; Study</button>'+
+        '<button type="button" class="gn-es-tab" id="gn-es-tab-reference" role="tab" aria-controls="gn-es-panel" data-es-nav="reference" aria-selected="false">Reference</button>'+
       '</div>'+
-      '<section id="gn-es-panel" role="tabpanel" tabindex="0" aria-labelledby="gn-es-tab-pdf">'+
-      '<div data-es-pdf-panel>'+
-        '<div class="gn-es-setting gn-es-presets" data-es-presets>'+
-          '<span class="gn-es-setting-label">PDF edition</span><div class="gn-es-setting-body">'+
-            '<div class="gn-es-preset-options" role="group" aria-label="Starting edition">'+
-              '<button type="button" class="gn-es-preset" data-es-preset="reading" aria-pressed="true"><strong>Reading</strong><small>Clean text</small></button>'+
-              '<button type="button" class="gn-es-preset" data-es-preset="study" aria-pressed="false"><strong>Study</strong><small>Explanatory notes</small></button>'+
-              '<button type="button" class="gn-es-preset" data-es-preset="reference" aria-pressed="false"><strong>Reference</strong><small>Full apparatus</small></button>'+
-            '</div><span class="gn-es-inline-note" data-es-preset-note></span></div>'+
-        '</div>'+
+      '<section id="gn-es-panel" role="tabpanel" tabindex="0" aria-labelledby="gn-es-tab-reading">'+
         '<div class="gn-es-setting gn-es-setting-text">'+
           '<span class="gn-es-setting-label">Language</span>'+
           '<div class="gn-es-setting-body">'+
@@ -106,9 +99,17 @@
               '</div>'+
             '</div><span class="gn-es-inline-note" data-es-language-note></span>'+
           '</div></div>'+
-        '<div class="gn-es-custom-head" data-es-custom-head>'+
+        '<div class="gn-es-setting gn-es-presets" data-es-presets>'+
+          '<span class="gn-es-setting-label">Start with</span><div class="gn-es-setting-body">'+
+            '<div class="gn-es-preset-options" role="group" aria-label="Starting edition">'+
+              '<button type="button" class="gn-es-preset" data-es-preset="reading" aria-pressed="true"><strong>Reading</strong><small>Text only</small></button>'+
+              '<button type="button" class="gn-es-preset" data-es-preset="study" aria-pressed="false"><strong>Study</strong><small>Notes + index</small></button>'+
+              '<button type="button" class="gn-es-preset" data-es-preset="custom" aria-pressed="false"><strong>Customize</strong><small>Other options</small></button>'+
+            '</div><span class="gn-es-inline-note" data-es-preset-note></span></div>'+
+        '</div>'+
+        '<div class="gn-es-custom-head" data-es-custom-head hidden>'+
           '<button type="button" class="gn-es-custom-trigger" data-es-custom aria-expanded="false" aria-controls="gn-es-custom">'+
-          '<span>Customize edition</span>'+icon('chevron','gn-es-custom-arrow')+'</button></div>'+
+          '<span>Custom edition settings</span>'+icon('chevron','gn-es-custom-arrow')+'</button></div>'+
         '<div id="gn-es-custom" class="gn-es-custom" hidden>'+
           '<div class="gn-es-custom-setting">'+
             '<span class="gn-es-setting-label">Publisher notes</span>'+
@@ -163,43 +164,46 @@
               '</div>'+
             '</div></div>'+
           '<section class="gn-es-spec" aria-label="Current document configuration">'+
-            '<div class="gn-es-spec-head"><strong>Your PDF</strong><span data-es-count></span></div>'+
+            '<div class="gn-es-spec-head"><strong>Your selected edition</strong><span data-es-count></span></div>'+
             '<p class="gn-es-spec-lead" data-es-spec-lead></p>'+
-            '<details class="gn-es-spec-more"><summary>PDF details</summary>'+
-              '<p class="gn-es-spec-layout" data-es-spec-layout></p>'+
+            '<p class="gn-es-spec-layout" data-es-spec-layout></p>'+
+            '<details class="gn-es-spec-detail"><summary>What’s included</summary>'+
               '<p class="gn-es-spec-notes" data-es-spec-notes></p>'+
-              '<p class="gn-es-spec-apparatus" data-es-spec-apparatus></p>'+
-            '</details>'+
+              '<p class="gn-es-spec-apparatus" data-es-spec-apparatus></p></details>'+
           '</section>'+
           '<section class="gn-es-availability" aria-live="polite" aria-atomic="true">'+
-            '<strong data-es-availability-heading>Checking PDF options…</strong><p data-es-availability-detail></p></section>'+
+            '<strong data-es-availability-heading>Checking PDF selection…</strong><p data-es-availability-detail></p></section>'+
           '<div id="pe-alert" class="gn-es-inline-alert" role="status" hidden></div>'+
           '<p id="pe-description" class="gn-es-inline-note" hidden></p>'+
           '<div class="gn-es-actions">'+
-            '<button type="button" class="gn-es-action gn-es-action-primary" data-es-prepare>Prepare PDF<span class="gn-es-button-progress" hidden><progress max="100" value="0" aria-label="PDF transfer progress"></progress></span></button>'+
-            '<a class="gn-es-action gn-es-action-primary" data-es-action="open" aria-label="Download prepared PDF" download hidden><span>Download PDF</span></a>'+
-            '<a class="gn-es-action gn-es-action-secondary" data-es-action="view" aria-label="Open prepared PDF" target="_blank" rel="noopener noreferrer" hidden>Open PDF</a>'+
+            '<button type="button" class="gn-es-action gn-es-action-primary" id="gn-es-prepare" data-es-prepare>'+
+              '<span data-es-prepare-label>Prepare PDF</span><progress data-es-prepare-progress aria-label="PDF retrieval and verification progress" max="100" value="0" hidden></progress></button>'+
+            '<a class="gn-es-action gn-es-action-primary" data-es-action="download" download hidden>Download PDF</a>'+
+            '<a class="gn-es-action gn-es-action-secondary" data-es-action="open" aria-label="Open existing published PDF in browser" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Open existing PDF</span></a>'+
             '<button class="gn-es-action gn-es-action-primary" type="submit" id="pe-generate" hidden disabled>Create my PDF</button>'+
-          '</div>'+
+          '</div><p id="gn-es-prepare-status" class="gn-es-prepare-status" role="status" hidden></p>'+
           '<a id="pe-clean" hidden></a>'+
           '<div id="pe-progress" hidden role="status" aria-live="polite">'+
             '<span id="pe-progress-text"></span><progress id="pe-bar" max="100" value="0"></progress></div>'+
           '<div id="pe-result" class="gn-es-export-result" hidden>'+
-            '<strong>Your personal PDF has been created on this device.</strong>'+
+            '<strong>Your personal PDF is prepared.</strong>'+
             '<div class="gn-es-export-result-actions">'+
-              '<a id="pe-result-link" download>Download again</a>'+
+              '<a id="pe-result-link" download>Download my PDF</a>'+
               '<a id="pe-open" target="_blank" rel="noopener">Open / print PDF</a>'+
               '<button type="button" id="pe-share" hidden>Share on this device</button>'+
             '</div></div>'+
         '</form>'+
-      '</div>'+
-      '<section class="gn-es-offline" data-es-offline hidden aria-label="Download the offline HTML reader">'+
-        '<h2>Offline reader (HTML)</h2>'+
-        '<p>Download the Arabic–English reader, dictionary and supporting files. Extract the ZIP, then open <strong>daruri/index.html</strong> in a desktop browser.</p>'+
-        '<div class="gn-es-offline-download"><a class="gn-es-action gn-es-action-primary" data-daruri-bundle="html" href="https://github.com/gnamma-research/booksite/archive/refs/heads/master.zip">Download offline reader (ZIP)</a><span class="gn-offline-bundle-status" role="status" aria-live="polite"></span></div>'+
-        '<p class="gn-es-offline-caveat">This download excludes PDFs. Local HTML behaviour varies by browser; external references and online services still need internet access. On iPhone or iPad, an installed website is generally more reliable than opening an HTML file from Files.</p>'+
-        '<details class="gn-es-offline-more"><summary>Need the PDFs too?</summary><p>The complete archive is larger and contains the reader and published PDFs.</p><div class="gn-es-offline-download"><a class="gn-es-action" data-daruri-bundle="full" href="https://github.com/gnamma-research/booksite/archive/refs/heads/master.zip">Download HTML and PDFs (ZIP)</a><span class="gn-offline-bundle-status" role="status" aria-live="polite"></span></div></details>'+
       '</section>'+
+      '<section class="gn-es-offline" aria-labelledby="gn-es-offline-title">'+
+        '<h2 id="gn-es-offline-title">Offline reader · HTML</h2>'+
+        '<p>Download the reading website, dictionary, fonts and supporting files. This is not a PDF, and your private Reading Desk notes are not included.</p>'+
+        '<button type="button" class="gn-es-offline-download" data-daruri-bundle="html">Download HTML reader (.zip)</button>'+
+        '<details class="gn-es-offline-more"><summary>Also need the PDFs offline?</summary>'+
+          '<p>Download the same HTML reader with the available book PDFs. This is a much larger archive.</p>'+
+          '<button type="button" class="gn-es-offline-download gn-es-offline-secondary" data-daruri-bundle="full">Download HTML + PDFs (.zip)</button>'+
+        '</details>'+
+        '<p class="gn-offline-bundle-status" role="status" aria-live="polite"></p>'+
+        '<p class="gn-es-offline-footnote">Unzip without moving individual files. For complete functionality on desktop, open the folder using a local web server; opening file:// directly can restrict browser features. No internet is needed when served locally.</p>'+
       '</section></div>';
   }
   function apparatusLabel(s){
@@ -253,73 +257,98 @@
     if(!bridge?.ready)return false;
     return bridge.choose(file);
   }
-  function resetPrepared(){
-    if(prepareAbort){prepareAbort.abort();prepareAbort=null;}
-    preparing=false;
-    downloadError='';
-    if(preparedPdf){URL.revokeObjectURL(preparedPdf.url);preparedPdf=null;}
+  // The published-file workflow is a real download and SHA-256 verification,
+  // not a simulated PDF generator. Future on-demand rendering can use this
+  // preparation boundary without changing the reader-facing action flow.
+  function clearPreparation(nextKey=''){
+    if(preparation.controller)preparation.controller.abort();
+    if(preparation.url)URL.revokeObjectURL(preparation.url);
+    preparation={key:nextKey,root,controller:null,request:preparation.request+1,
+      busy:false,url:null,error:''};
   }
-  function pdfName(file){
-    return file.split('/').pop().replace(/[^a-zA-Z0-9._-]/g,'_');
+  function syncPreparation(found,isPersonal,file){
+    const key=file+'@'+(found.record?.sha256||'');
+    if(preparation.key!==key||preparation.root!==root)clearPreparation(key);
+    const prepare=root.querySelector('#gn-es-prepare');
+    const download=root.querySelector('[data-es-action="download"]');
+    const open=root.querySelector('[data-es-action="open"]');
+    const bar=prepare.querySelector('[data-es-prepare-progress]');
+    const status=root.querySelector('#gn-es-prepare-status');
+    prepare.hidden=isPersonal||!!preparation.url;
+    prepare.disabled=found.status!=='ready'||preparation.busy;
+    prepare.setAttribute('aria-busy',String(preparation.busy));
+    prepare.querySelector('[data-es-prepare-label]').textContent=
+      preparation.busy?'Preparing PDF…':'Prepare PDF';
+    bar.hidden=!preparation.busy;
+    download.hidden=isPersonal||!preparation.url;
+    if(preparation.url){
+      download.href=preparation.url;
+      download.download=(file.split('/').pop()||'daruri.pdf').replace(/[^a-z0-9._-]/gi,'_');
+    }else download.removeAttribute('href');
+    open.hidden=isPersonal;
+    status.hidden=!preparation.error;
+    status.textContent=preparation.error;
   }
-  async function preparePdf(){
-    const selection=resolve(),file=publicFile(selection);
-    if(preparing||tab!=='pdf'||hasPersonal()||selection.status!=='ready'||!file)return;
-    if(preparedPdf&&preparedPdf.file===file){refresh();return;}
-    resetPrepared();
-    const controller=new AbortController();
-    prepareAbort=controller;
-    preparing=true;
-    const button=root.querySelector('[data-es-prepare]');
-    const meter=button.querySelector('progress');
-    meter.value=0;meter.removeAttribute('value'); // Unknown until real transfer bytes arrive.
-    refresh();
+  async function prepareExistingPDF(){
+    const host=root,found=resolve(),file=publicFile(found);
+    if(!host?.isConnected||found.status!=='ready'||!file||hasPersonal())return;
+    const key=file+'@'+(found.record?.sha256||'');
+    if(preparation.key!==key||preparation.root!==host)clearPreparation(key);
+    if(preparation.busy||preparation.url)return;
+    const original=host.querySelector('[data-es-action="open"]').getAttribute('href');
+    if(!original)return;
+    const abort=new AbortController(),serial=++preparation.request;
+    const stillCurrent=()=>host.isConnected&&host===root&&
+      preparation.request===serial&&preparation.key===key;
+    preparation.controller=abort;preparation.busy=true;preparation.error='';
+    const progress=host.querySelector('[data-es-prepare-progress]');
+    progress.hidden=false;progress.removeAttribute('value');
+    syncPreparation(found,false,file);
     try{
-      const expected=Number(selection.record.bytes||selection.record.size_bytes||0);
-      const url=file+'?v='+encodeURIComponent((selection.record.sha256||'published').slice(0,12));
-      const response=await fetch(url,{signal:controller.signal,cache:'no-store',credentials:'same-origin'});
-      if(!response.ok)throw Error('The selected PDF could not be retrieved (HTTP '+response.status+').');
-      const size=Number(response.headers.get('content-length'))||expected;
-      const chunks=[];
-      let loaded=0;
-      if(response.body&&response.body.getReader){
-        const reader=response.body.getReader();
+      const response=await fetch(new URL(original,document.baseURI),{
+        cache:'no-store',credentials:'same-origin',signal:abort.signal
+      });
+      if(!response.ok)throw Error('PDF request failed (HTTP '+response.status+').');
+      const expectedLength=Number(response.headers.get('Content-Length'))||0;
+      if(expectedLength>100*1024*1024)throw Error('Selected PDF exceeds the browser preparation limit.');
+      let bytes;
+      if(response.body?.getReader){
+        const reader=response.body.getReader(),chunks=[];let received=0;
+        if(expectedLength){progress.max=expectedLength;progress.value=0;}
         while(true){
           const {done,value}=await reader.read();
           if(done)break;
-          chunks.push(value);loaded+=value.length;
-          if(size>0){
-            meter.value=Math.min(100,Math.floor(100*loaded/size));
-            meter.setAttribute('aria-valuetext',Math.floor(100*loaded/size)+'% downloaded');
-          }
+          if(!stillCurrent()){await reader.cancel();return;}
+          received+=value.length;
+          if(received>100*1024*1024)throw Error('Selected PDF is unexpectedly large.');
+          chunks.push(value);
+          if(expectedLength)progress.value=Math.min(received,expectedLength);
         }
-      }else{
-        const buf=new Uint8Array(await response.arrayBuffer());
-        chunks.push(buf);loaded=buf.length;
-      }
-      const bytes=new Uint8Array(loaded);
-      let offset=0;
-      for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.length;}
-      if(expected&&loaded!==expected)throw Error('The published PDF size did not match its catalogue.');
-      if(new TextDecoder().decode(bytes.slice(0,5))!=='%PDF-')
-        throw Error('The downloaded file was not a PDF.');
-      const sha=String(selection.record.sha256||'').toLowerCase();
-      if(/^[a-f0-9]{64}$/.test(sha)&&window.crypto?.subtle){
-        const hash=await window.crypto.subtle.digest('SHA-256',bytes);
-        const actual=Array.from(new Uint8Array(hash),v=>v.toString(16).padStart(2,'0')).join('');
-        if(actual!==sha)throw Error('The PDF checksum did not match this edition. Reload and try again.');
-      }
-      if(controller.signal.aborted||root?.querySelector('[data-es-prepare]')!==button||
-         selectedFile!==file)return;
-      const objectURL=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
-      preparedPdf={file,url:objectURL,name:pdfName(file)};
+        bytes=new Uint8Array(received);let offset=0;
+        for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.length;}
+      }else bytes=new Uint8Array(await response.arrayBuffer());
+      if(!stillCurrent())return;
+      if(bytes.length<5||String.fromCharCode(...bytes.slice(0,5))!=='%PDF-')
+        throw Error('The selected file is not a PDF.');
+      const expected=String(found.record?.sha256||'').toLowerCase();
+      if(!/^[a-f0-9]{64}$/.test(expected))
+        throw Error('The publication does not have a verified SHA-256 checksum.');
+      if(!crypto?.subtle?.digest)
+        throw Error('PDF verification is unavailable in this browser. Use Open existing PDF.');
+      progress.removeAttribute('value'); // Actual hash verification is indeterminate.
+      const hash=new Uint8Array(await crypto.subtle.digest('SHA-256',bytes.buffer));
+      const actual=Array.from(hash,byte=>byte.toString(16).padStart(2,'0')).join('');
+      if(actual!==expected)throw Error('PDF verification failed; no download was prepared.');
+      if(!stillCurrent())return;
+      preparation.url=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
     }catch(error){
-      if(!controller.signal.aborted)downloadError=String(error?.message||error);
+      if(stillCurrent()&&error?.name!=='AbortError')
+        preparation.error=String(error?.message||error)+
+          ' You can still open the published PDF directly.';
     }finally{
-      if(prepareAbort===controller){
-        prepareAbort=null;preparing=false;
-        if(meter)meter.value=100;
-        refresh();
+      if(stillCurrent()){
+        preparation.busy=false;preparation.controller=null;
+        syncPreparation(found,false,file);
       }
     }
   }
@@ -332,21 +361,22 @@
       button.tabIndex=active?0:-1;
     }
     root.querySelector('#gn-es-panel').setAttribute('aria-labelledby','gn-es-tab-'+tab);
-    root.querySelector('[data-es-pdf-panel]').hidden=tab!=='pdf';
-    root.querySelector('[data-es-offline]').hidden=tab!=='offline';
-    root.querySelector('.gn-es-setting-text').hidden=tier==='reference';
-    root.querySelector('[data-es-custom-head]').hidden=tier==='reference';
-    root.querySelector('#gn-es-custom').hidden=tier==='reference'||!customOpen;
-    root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen&&tier!=='reference'));
-    root.querySelector('[data-es-reference-inventory]').hidden=tier!=='reference';
+    root.querySelector('[data-es-presets]').hidden=tab==='reference';
+    root.querySelector('[data-es-custom-head]').hidden=tab==='reference'||preset!=='custom';
+    root.querySelector('#gn-es-custom').hidden=tab==='reference'||!customOpen;
+    root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen&&tab!=='reference'));
+    root.querySelector('[data-es-reference-inventory]').hidden=tab!=='reference';
     for(const button of root.querySelectorAll('[data-es-preset]')){
-      button.setAttribute('aria-pressed',String(button.dataset.esPreset===tier));
-      button.disabled=false;
+      button.setAttribute('aria-pressed',String(button.dataset.esPreset===preset));
+      // Never silently change an English-only or unvowelled selection to
+      // bilingual merely because the reader asks for a Study preset.
+      if(button.dataset.esPreset==='study')
+        button.disabled=!(s.en&&s.ar&&s.vowels);
     }
     for(const b of root.querySelectorAll('[data-es-toggle]')){
       const key=b.dataset.esToggle;
       b.setAttribute('aria-pressed',String(Boolean(s[key])));
-      b.disabled=tier==='reference'||tier==='study'||(key==='en'&&s.en&&!s.ar);
+      b.disabled=tab==='reference'||tier==='study'||(key==='en'&&s.en&&!s.ar);
       if(key==='ar'){
         const status=!s.ar?'off':s.vowels?'vowelled':'plain';
         const next=!s.ar?'plain':s.vowels?(s.en?'off':'plain'):'vowelled';
@@ -357,14 +387,16 @@
       }
       if(key==='en')b.setAttribute('aria-label',s.en?'English included. Activate to remove English.':'English off. Activate to include English.');
     }
-    root.querySelector('[data-es-language-note]').textContent=tier==='reference'?
+    root.querySelector('[data-es-language-note]').textContent=tab==='reference'?
       'The full scholarly edition is bilingual and vowelled.':
       tier==='study'?'Study notes are currently prebuilt only in vowelled bilingual PDFs.':
       'Tap AR to cycle: Off → Plain → Vowelled. No separate vowel button.';
     root.querySelector('[data-es-preset-note]').textContent=
-      tier==='reference'?'The full scholarly text with its complete reference apparatus.':
-      tier==='study'?'Guided reading with selected published explanatory notes and a basic index.':
-      'Clean reading text without publisher notes. Expand Customize edition for more options.';
+      !(s.en&&s.ar&&s.vowels)&&tab==='reading'?
+        'Study notes are currently published only in bilingual vowelled form; your language choice is preserved.':
+      preset==='study'?'Selected publisher notes and a basic index are included.':
+      preset==='custom'?'Fine-tune publisher notes and apparatus using Customize edition.':
+      'A clean A4 reading edition with no publisher notes.';
     for(const b of root.querySelectorAll('[data-es-publisher]'))
       b.setAttribute('aria-pressed',String(b.dataset.esPublisher===s.notes));
     for(const b of root.querySelectorAll('[data-es-headings]'))
@@ -395,50 +427,35 @@
     const msg=root.querySelector('[data-es-availability-heading]');
     const detail=root.querySelector('[data-es-availability-detail]');
     const availability=root.querySelector('.gn-es-availability');
-    availability.hidden=result.status==='ready'&&!downloadError;
-    msg.textContent=downloadError?'Could not prepare the PDF':
-      result.status==='loading'?'Finding the selected PDF…':'PDF unavailable';
-    detail.textContent=downloadError||result.reason;
+    availability.hidden=result.status==='ready';
+    msg.textContent=result.status==='loading'?'Checking PDF selection…':'PDF unavailable for this selection';
+    detail.textContent=result.reason||'';
     availability.dataset.esStatus=result.status;
     const link=root.querySelector('[data-es-action="open"]');
-    const view=root.querySelector('[data-es-action="view"]');
-    const prepare=root.querySelector('[data-es-prepare]');
     const pdfFile=publicFile(result);
-    if(selectedFile&&selectedFile!==pdfFile)resetPrepared();
     selectedRow=result.record;
     selectedFile=pdfFile;
     const mapReady=result.status==='ready'&&(
       tier==='reference'||Boolean(result.record.map_file));
-    const downloadReady=Boolean(preparedPdf&&preparedPdf.file===pdfFile);
-    if(downloadReady){
-      link.href=preparedPdf.url;
-      link.download=preparedPdf.name;
-      view.href=preparedPdf.url;
-    }else{
-      link.removeAttribute('href');
-      view.removeAttribute('href');
-    }
-    link.hidden=!downloadReady||isPersonal;
-    view.hidden=!downloadReady||isPersonal;
-    prepare.hidden=isPersonal||downloadReady;
-    prepare.disabled=preparing||result.status!=='ready';
-    prepare.firstChild.textContent=preparing?'Preparing PDF…':'Prepare PDF';
-    prepare.querySelector('.gn-es-button-progress').hidden=!preparing;
+    if(result.status==='ready'){
+      link.href=(tier==='reference'?'daruri.pdf':'editions/'+result.record.file)+
+        '?v='+encodeURIComponent((result.record.sha256||'published').slice(0,12));
+    }else link.removeAttribute('href');
+    link.setAttribute('aria-disabled',String(result.status!=='ready'));
     if(personalReady)syncExport(mapReady?pdfFile:'');
+    syncPreparation(result,isPersonal,pdfFile);
+    const openVisible=!isPersonal;
     const generated=root.querySelector('#pe-generate');
-    generated.hidden=!isPersonal;
+    generated.hidden=openVisible;
     if(isPersonal&&(!mapReady||!personalReady)){
       generated.disabled=true;
-      if(!mapReady){
-        availability.hidden=false;
-        msg.textContent='Personal PDF unavailable';
-        detail.textContent='No verified note-to-page map exists for this combination. Select another edition.';
-      }else{
-        availability.hidden=false;
-        msg.textContent='Loading personal PDF tools';
-        detail.textContent='Your notes stay on this device.';
-      }
+      availability.hidden=false;
+      msg.textContent=!mapReady?'Personal PDF cannot be prepared':'Preparing personal PDF tools…';
+      detail.textContent=!mapReady?
+        'This edition has no verified map for personal notes. Choose another selection.':
+        'Personal notes are processed on your device, not uploaded.';
     }
+    // Study Guide is a separate teaching companion, linked from its own Study Guide page.
     for(const b of root.querySelectorAll('[data-es-picker-mode]')){
       const value=b.dataset.esPickerMode;
       const checked=root.querySelector('input[name="pe-mode"]:checked')?.value;
@@ -448,18 +465,16 @@
   }
   function presetSelect(which){
     if(which==='study'){
-      tier='study';
-      state.study={...BASE.study};
+      if(!(current().en&&current().ar&&current().vowels))return;
+      tab='reading';tier='study';Object.assign(state.study,BASE.study);
       preset='study';customOpen=false;
     }else if(which==='reading'){
-      tier='reading';
-      // The default is a clean reading copy; retain the reader's chosen languages.
-      const prev=state.reading;
-      state.reading={...BASE.reading,en:prev.en,ar:prev.ar,vowels:prev.vowels};
+      const prev=current();
+      const languageSettings={en:prev.en,ar:prev.ar,vowels:prev.vowels};
+      tier='reading';state.reading={...BASE.reading,...languageSettings};
       preset='reading';customOpen=false;
-    }else if(which==='reference'){
-      tier='reference';
-      preset='reference';customOpen=false;
+    }else{
+      preset='custom';customOpen=true;
     }
     refresh();
   }
@@ -498,15 +513,16 @@
   function onClick(event){
     const b=event.target.closest('button');
     if(!b||!root?.contains(b))return;
+    if(b.dataset.esPrepare!==undefined){void prepareExistingPDF();return;}
     if(b.dataset.esNav){
       tab=b.dataset.esNav;
+      tier=tab==='reference'?'reference':tier==='reference'?'reading':tier;
       refresh();b.focus();return;
     }
     if(b.dataset.esPreset){presetSelect(b.dataset.esPreset);return;}
     if(b.dataset.esCustom!==undefined){customOpen=!customOpen;refresh();return;}
-    if(b.matches('[data-es-prepare]')){preparePdf();return;}
     if(b.dataset.esToggle){
-      if(tier==='reference'||tier==='study')return;
+      if(tab==='reference'||tier==='study')return;
       const s=current(),k=b.dataset.esToggle;
       if(k==='ar'){
         // A single AR control cycles Off → Plain → Vowelled.
@@ -558,7 +574,7 @@
   }
   function loadScript(name){
     return new Promise((resolve,reject)=>{
-      const url=name+'?v=20261023-annotations';
+      const url=name+'?v=20261023-editions-delivery1';
       const el=document.createElement('script');
       el.src=url;el.async=true;
       el.onload=resolve;el.onerror=()=>reject(Error('Unable to load local '+name));
@@ -591,7 +607,9 @@
     }
   }
   function mount(main){
-    resetPrepared();
+    if(preparation.controller)preparation.controller.abort();
+    if(preparation.url)URL.revokeObjectURL(preparation.url);
+    preparation={key:'',root:null,controller:null,request:preparation.request+1,busy:false,url:null,error:''};
     const legacy=main.querySelector('.gn-editions');
     if(!legacy)return;
     main.querySelector('.gn-es')?.remove();

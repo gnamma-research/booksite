@@ -497,8 +497,12 @@
     const a=$('pe-result-link');a.href=resultURL;a.download=name;
     $('pe-open').href=resultURL;$('pe-result').hidden=false;
     const share=$('pe-share');share.hidden=!(navigator.share&&typeof File!=='undefined');
-    const link=document.createElement('a');link.href=resultURL;link.download=name;
-    document.body.append(link);link.click();link.remove();
+    // In Editions the reader asked to prepare first and then choose Download.
+    // Retain legacy auto-download on the separate personal-export page.
+    if(!document.querySelector('.gn-es #pe-form')){
+      const link=document.createElement('a');link.href=resultURL;link.download=name;
+      document.body.append(link);link.click();link.remove();
+    }
   }
   async function sharePdf(){
     if(!resultFile||!navigator.share||typeof File==='undefined')return;
@@ -523,7 +527,9 @@
         (unmapped?' '+unmapped+' item'+(unmapped===1?'':'s')+' had no safe PDF pin; see appendix.':'')+
          (unsupported.length?' Some rare symbols may not be searchable: '+unsupported.slice(0,7).join(' ')+'.':'')+
         (hadWordMap?'':' Exact-word map unavailable; notes safely attach to their sections.')+
-        ' On iPhone/iPad, use Open or Share if automatic downloading was blocked.');
+        (document.querySelector('.gn-es #pe-form')?
+          ' Choose Download my PDF below to save your copy.':
+          ' On iPhone/iPad, use Open or Share if automatic downloading was blocked.'));
       progress('Personal PDF generated on this device.',100);
     }catch(error){showError('PDF export failed: '+(error?.message||error)+'. The original PDF and your Reading Desk are unchanged.');$('pe-progress').hidden=true;}
     finally{busy=false;syncForm();}
