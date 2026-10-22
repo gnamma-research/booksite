@@ -1830,7 +1830,7 @@ body:not(.reading-active) .topbar .header-leading{min-height:36px} body.reading-
 @media(max-width:680px){#readingControls .gn-reader-global-leading{margin-right:5px;padding-right:5px}#readingControls .gn-reader-global-trailing{padding-left:5px;gap:3px}#readingControls .gn-reader-global-trailing button{min-width:30px!important;width:30px!important}}
 </style>
 <style id="gnamma-reader-focus-levels-20261019">
-/* Four levels share a single cycling focus control; preserve the existing compact dock. */
+/* Three named reading choices; legacy Focus 1 remains a Focus apparatus preference. */
 #readingControls #headerToolbar,#readingControls #apparatusToolbar,
 body.reading-active #readingControls #menuBtn{display:none!important}
 #readingControls .gn-reader-global-leading:empty,
@@ -2282,7 +2282,7 @@ body:not(.reading-active) .reading-return-bar{
 <script src="reading-styles.js?v=20261020-menu1"></script>
 <script src="visuals-controls.js?v=20261020-visuals1"></script>
 <link href="reader-structure.css?v=20261020-structure1" rel="stylesheet"/>
-<link rel="stylesheet" href="reading-desk.css?v=20261021-rdquick1"/>
+<link rel="stylesheet" href="reading-desk.css?v=20261022-readmode3a"/><link rel="stylesheet" href="reading-mode-controls.css?v=20261022-readmode3a"/>
 <noscript><link rel="stylesheet" href="source-note-ui.css?v=20261021-fallback-quran1"></noscript>
 </head>
 <body><noscript><section aria-label="Complete Darūrī reader" id="fallbackReader"><input class="fb-drawer-check" id="fb-open-left" type="checkbox"/><details class="fb-settings" id="fb-settings"><summary><svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6M15 14v6"></path></svg><span class="fb-settings-open">Display</span><span class="fb-settings-close">Close ×</span></summary><div aria-label="Display and reading tools" class="fb-settings-card" role="group"><h2>Type &amp; appearance</h2>
@@ -3825,7 +3825,7 @@ body:not(.reading-active) .reading-return-bar{
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
 <script src="study-guide-data.js?v=20261021-study-path1"></script>
-<script src="study-guide.js?v=20261021-study-path1"></script><script src="editions.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-icons.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-selector.js?v=20261022-two-tabs-inline1"></script><script src="reading-desk.js?v=20261021-rdquick1"></script><script>
+<script src="study-guide.js?v=20261021-study-path1"></script><script src="editions.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-icons.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-selector.js?v=20261022-two-tabs-inline1"></script><script src="reading-desk.js?v=20261022-readmode3a"></script><script src="reading-mode-controls.js?v=20261022-readmode3a"></script><script>
 (() => {
 'use strict';
 const BOOK = JSON.parse(document.getElementById('editionData').textContent);
@@ -5409,7 +5409,7 @@ function bindResponsiveRepairs(){
  $('#restoreHeader').addEventListener('click',()=>{setVisibility('header',true);syncReadingChrome();});
  $('#rightPanelButton')?.addEventListener('click',toggleContextPanel);
  $('#contextShade')?.addEventListener('click',closeContextPanel);
- $('#fullFocusToggle')?.addEventListener('change',()=>toggleFocus());
+ $('#fullFocusToggle')?.addEventListener('change',e=>window.GnammaReaderModes?.setMode(e.target.checked?'focus':'reading'));
  document.addEventListener('click',e=>{if(e.target.closest('[data-close-context]'))closeContextPanel();});
  window.addEventListener('resize',()=>{if(!compactContext())state.rightOpen=false;if(!compactNavigation())closeDrawer({restoreFocus:false});applyCleanReader();});
  window.addEventListener('hashchange',()=>{state.rightOpen=false;applyCleanReader();});
@@ -5480,14 +5480,14 @@ function takeDictionaryReturn(){
   const oldRenderRoute=renderRoute;
   const oldOpenJump=openJump;
   const oldVisibility=setVisibility;
-  const levels=['Normal','Focus 1 · apparatus below','Focus 2 · text only','Focus 3 · continuous text'];
+  let focusApparatus=typeof saved.focusApparatus==='boolean'?saved.focusApparatus:Number(saved.focusLevel)===1;
   const initial=Number(saved.focusLevel);
   state.focusLevel=Number.isInteger(initial)&&initial>=0&&initial<=3?initial:(state.focusMode?1:0);
   state.focusMode=state.focusLevel>0;
   save=function(){
     state.focusMode=state.focusLevel>0;
     oldSave();
-    try{const d=JSON.parse(localStorage.getItem('daruri-reader-v2')||'{}');d.focusLevel=state.focusLevel;localStorage.setItem('daruri-reader-v2',JSON.stringify(d));}catch(e){}
+    try{const d=JSON.parse(localStorage.getItem('daruri-reader-v2')||'{}');d.focusLevel=state.focusLevel;d.focusApparatus=focusApparatus;localStorage.setItem('daruri-reader-v2',JSON.stringify(d));}catch(e){}
   };
   applyCleanReader=function(){
     state.focusMode=state.focusLevel>0;
@@ -5564,45 +5564,65 @@ function takeDictionaryReturn(){
     }
     oldLangApply();
   };
+  const currentMode=()=>state.focusLevel===3?'continuous':state.focusLevel>0?'focus':'reading';
   function refreshFocusButton(){
+    const mode=currentMode(),label={reading:'Reading',focus:'Focus',continuous:'Continuous'}[mode];
+    const menuOpen=Boolean(document.querySelector('#gn-reading-mode-picker:not([hidden])'));
     for(const id of ['focusToolbar','hiddenHeaderFocus']){
       const el=document.getElementById(id);if(!el)continue;
-      const level=state.focusLevel||0, next=(level+1)%4;
-      el.setAttribute('aria-pressed',String(level>0));
-      el.setAttribute('aria-label',levels[level]+'. Select '+levels[next]);
-      el.title=levels[level]+' → '+levels[next];
-      el.classList.toggle('active',level>0);
-      // Keep the SVG node stable. Scroll tracking updates the section and calls
-      // this function repeatedly; replacing innerHTML on every call flashes an
-      // external <use> icon (particularly on mobile Safari).
-      const iconHref='../assets/gnamma-reading-modes.svg#gn-'+(level?'focus-'+level:'normal');
+      el.setAttribute('aria-pressed',String(mode!=='reading'));
+      el.setAttribute('aria-haspopup','dialog');
+      el.setAttribute('aria-controls','gn-reading-mode-picker');
+      el.setAttribute('aria-expanded',String(menuOpen));
+      el.setAttribute('aria-label','Reading mode: '+label+'. Choose mode');
+      el.title='Reading mode: '+label;
+      el.classList.toggle('active',mode!=='reading');
+      // Keep the SVG node stable during continuous scroll, especially on Safari.
+      const iconLevel=mode==='reading'?'normal':mode==='continuous'?'focus-3':focusApparatus?'focus-1':'focus-2';
+      const iconHref='../assets/gnamma-reading-modes.svg#gn-'+iconLevel;
       const symbol=el.querySelector('svg use');
       if(symbol){
         if(symbol.getAttribute('href')!==iconHref)symbol.setAttribute('href',iconHref);
       }else{
-        // Initial upgrade only: replace the original inline placeholder once.
         el.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="'+iconHref+'"></use></svg>';
       }
     }
   }
-  syncReadingChrome=function(){oldSync();if(state.route==='reader')refreshFocusButton();};
-  toggleFocus=function(){
+  function setReadingMode(mode){
+    if(!['reading','focus','continuous'].includes(mode))return;
     const prior=state.focusLevel;
+    const next=mode==='reading'?0:mode==='continuous'?3:(focusApparatus?1:2);
+    if(prior===next){refreshFocusButton();return;}
     const anchor=prior===3?currentContinuousSection()?.dataset.readingSection:state.n;
     const oldY=window.scrollY;
-    state.focusLevel=(prior+1)%4;
-    state.focusMode=state.focusLevel>0;
+    state.focusLevel=next;
+    state.focusMode=next>0;
     closeDrawer();state.rightOpen=false;
     save();applyCleanReader();
     if(state.route==='reader'){
       if(anchor&&sections.has(String(anchor)))state.n=String(anchor);
       renderReader();syncReadingChrome();applyCleanReader();
-      if(state.focusLevel===3){
+      if(next===3){
         requestAnimationFrame(()=>document.getElementById('gn-continuous-'+state.n)?.scrollIntoView({block:'start',behavior:'instant'}));
       }else{
         window.scrollTo({top:prior===3?0:oldY,behavior:'instant'});
       }
     }
+    refreshFocusButton();
+    document.dispatchEvent(new Event('gnamma-reader-route-change'));
+  }
+  window.GnammaReaderModes={setMode:setReadingMode,currentMode};
+  window.GnammaReadingDock?.attachModes({
+    getMode:currentMode,setMode:setReadingMode,
+    getApparatus:()=>focusApparatus,
+    setApparatus:value=>{
+      focusApparatus=Boolean(value);
+      if(currentMode()==='focus')setReadingMode('focus');else save();
+    }
+  });
+  syncReadingChrome=function(){oldSync();if(state.route==='reader')refreshFocusButton();};
+  toggleFocus=function(){
+    window.GnammaReadingDock?.openModeMenu(document.activeElement?.closest?.('[data-focus-toggle]')||document.getElementById('focusToolbar'));
   };
   goSection=function(n){
     const id=String(n);
@@ -5845,6 +5865,7 @@ const rd=window.GnammaReadingDesk?.create({
  showTermDetail:term=>showTermDetail(term),showAppDetail:id=>showAppDetail(id),
  jumpToNote:id=>jumpToNote(id)
 });
+const readingDock=window.GnammaReadingDock?.create({state,rd});
 const priorBookmarks=renderBookmarks;
 renderBookmarks=function(){if(rd){rd.render();return;}priorBookmarks();};
 const priorBookmarkToggle=toggleBookmark;
@@ -5860,7 +5881,7 @@ gnShowLayer=function(...args){priorScholarLayer(...args);rd?.decorate();};
 
 window.DaruriReadingStyles?.init({value:state.pageStyle,preserve:preserveVisiblePassage,onChange:value=>{state.pageStyle=value;save();}});
 applyParallelOrder();applyArabicFont();applyEnglishFont();bind();bindReaderEnhancements();applyTheme();updateScale();syncRoute();bindResponsiveRepairs();takeDictionaryReturn();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261021-apparatus-merged1').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261022-readmode3a').catch(()=>{});
 })();
 
 </script><link rel="stylesheet" href="gnamma-search.css?v=20261022-unified-search2"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-search.js?v=20261022-unified-search2"></script></body>
