@@ -48,6 +48,22 @@ async function exercise(engine,name,origin){
   assert(await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg rect').count()===1 &&
     await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg path').count()>=2,
     'personal note icon must contain a page and inset pen');
+  // Scroll from ¶1 (bookmarked/highlighted/noted) to ¶2 (no paragraph-level
+  // saved marks). A saved section must remain visible, but the paragraph icon
+  // and paragraph-specific quotation/note counts must disappear immediately.
+  await page.locator('#reader .passage-grid[data-segment="1"]').first()
+    .evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
+  await page.waitForFunction(()=>document.querySelector('#gn-dock-paragraph-ref')?.textContent==='· ¶2',{timeout:8000});
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="sectionBookmarks"]').count(),1,
+    'section bookmark must persist as reader advances to paragraph 2');
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraphBookmarks"]').count(),0,
+    'saved paragraph 1 must not leak into paragraph 2');
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="highlights"]').count(),0,
+    'selected quotation from paragraph 1 leaked into paragraph 2');
+  await page.locator('#reader .passage-grid[data-segment="0"]').first()
+    .evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
+  await page.waitForFunction(()=>document.querySelector('#gn-dock-paragraph-ref')?.textContent==='· ¶1',{timeout:8000});
+
   assert.equal(await page.locator('.reader .chapter-nav').isVisible(),false,'duplicate in-text navigation still visible');
   await page.locator('#focusToolbar').click();
   await page.locator('#gn-reading-mode-picker:not([hidden])').waitFor();
