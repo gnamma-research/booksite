@@ -1,0 +1,1428 @@
+{
+  "schema": 1,
+  "release": "20261022-appx-packets-v1",
+  "generator": "WeasyPrint 68; canonical Gnamma html/css",
+  "base_manifest_sha256": "58d8bca84ffc786671d65700d27558ed3c2ef0bacee9a35f34105153db3bedb2",
+  "components_order": [
+    "glossary",
+    "index",
+    "concordance",
+    "applications"
+  ],
+  "packets": [
+    {
+      "file": "gnamma-apparatus-applications.pdf",
+      "map": "gnamma-apparatus-applications.pdf.json",
+      "components": [
+        "applications"
+      ],
+      "pages": 7,
+      "sha256": "fde63fe59dd0bb4486a353b4f101030e1f6834277887be9f4afef48a9e343d4b",
+      "bytes": 47343,
+      "map_sha256": "6f1f174d3ebea3804adafa90ba6fe470500d7ecb4bd38d409f3ad9dad2ed3daf",
+      "source_refs": 138,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-concordance-applications.pdf",
+      "map": "gnamma-apparatus-concordance-applications.pdf.json",
+      "components": [
+        "concordance",
+        "applications"
+      ],
+      "pages": 11,
+      "sha256": "777a939c6e5277556dc6508227eb33e873e660d6778b60261f9e7abbb9e45361",
+      "bytes": 58121,
+      "map_sha256": "6e91efa3c5543643afd5fa9d12196dcad9e32b488cdd5c558a3ea8aad10e3e2d",
+      "source_refs": 138,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-concordance.pdf",
+      "map": "gnamma-apparatus-concordance.pdf.json",
+      "components": [
+        "concordance"
+      ],
+      "pages": 4,
+      "sha256": "b4d6d347294dadfc5c01ab728b6a65880e96f2cd08791f68c6fc138dacff85ab",
+      "bytes": 18840,
+      "map_sha256": "0019a0976df53d36cad9a136ee39e4bd7d02a41bc85262e6903fd1b4e646e9c4",
+      "source_refs": 0,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-glossary-applications.pdf",
+      "map": "gnamma-apparatus-glossary-applications.pdf.json",
+      "components": [
+        "glossary",
+        "applications"
+      ],
+      "pages": 17,
+      "sha256": "c5c0bbe7bbb0685976d70afc60b95549b9d339f2cf211b5e6d63d5245959d679",
+      "bytes": 106217,
+      "map_sha256": "028f1f94ecca6748d1a0b830026f17c5044e29ad3c4d0555b4d9d3d13fb20c71",
+      "source_refs": 1207,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-glossary-concordance-applications.pdf",
+      "map": "gnamma-apparatus-glossary-concordance-applications.pdf.json",
+      "components": [
+        "glossary",
+        "concordance",
+        "applications"
+      ],
+      "pages": 21,
+      "sha256": "1e7d25f7bafccf6bd5e46ede33efd48783629425f2526741e6eaab4444b21948",
+      "bytes": 117028,
+      "map_sha256": "b92f3bf019f1ab6680d5225a618809b6da6c64c00aefe0b8b2e0492306d717cb",
+      "source_refs": 1207,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-glossary-concordance.pdf",
+      "map": "gnamma-apparatus-glossary-concordance.pdf.json",
+      "components": [
+        "glossary",
+        "concordance"
+      ],
+      "pages": 14,
+      "sha256": "441c8d254bc939e7746fce7fda5715b072bbac751ebed528fc4ce17c78547f93",
+      "bytes": 86946,
+      "map_sha256": "c50d34e115abb945ef8f40342284d575ccfa491add7f24921014abe6dc7d1dfd",
+      "source_refs": 1069,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-glossary-index-applications.pdf",
+      "map": "gnamma-apparatus-glossary-index-applications.pdf.json",
+      "components": [
+        "glossary",
+        "index",
+        "applications"
+      ],
+      "pages": 38,
+      "sha256": "a728caf6e8de603f926d62686ef5af1fc0ab623b66ed0e9c7823150296124abc",
+      "bytes": 183623,
+      "map_sha256": "a8c26f37f2b09e8627b56b32da5f9995ad00e5ea42b29159093b1e4c2ab0af1c",
+      "source_refs": 2932,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-glossary-index-concordance-applications.pdf",
+      "map": "gnamma-apparatus-glossary-index-concordance-applications.pdf.json",
+      "components": [
+        "glossary",
+        "index",
+        "concordance",
+        "applications"
+      ],
+      "pages": 42,
+      "sha256": "4a9f7b5d5bbd274f89d4ba85fd9398b0e03c39f7391ca7b9b9477dae0e159bb6",
+      "bytes": 194323,
+      "map_sha256": "b89c6c12ba33357052dfa2ee7670e5bcafe64914f38b671d182f56590c7f74ce",
+      "source_refs": 2932,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-glossary-index-concordance.pdf",
+      "map": "gnamma-apparatus-glossary-index-concordance.pdf.json",
+      "components": [
+        "glossary",
+        "index",
+        "concordance"
+      ],
+      "pages": 35,
+      "sha256": "5f5b4db0533fff6d22fce2c93e917be91aca8dfe8bcc1b51f8a8b4f38a535c05",
+      "bytes": 167144,
+      "map_sha256": "1a51f9197bb969852feeba390c62d53f84d99ce8a972cc476e61d0b0945591f0",
+      "source_refs": 2794,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-glossary-index.pdf",
+      "map": "gnamma-apparatus-glossary-index.pdf.json",
+      "components": [
+        "glossary",
+        "index"
+      ],
+      "pages": 31,
+      "sha256": "dd4049a6bc3cb6cdf1d7aa388c30f067b85d01e092c486befdb6c76f8f9144ce",
+      "bytes": 156265,
+      "map_sha256": "c1f8609829ca57dc7906bf3ed93fd6ff14335a12f67c7cae65fbc024d5e04436",
+      "source_refs": 2794,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-glossary.pdf",
+      "map": "gnamma-apparatus-glossary.pdf.json",
+      "components": [
+        "glossary"
+      ],
+      "pages": 10,
+      "sha256": "9f10f72650806889d790f4b9c93c7b2cd1e7fb20ba3497c3a2d9e94cb1197abf",
+      "bytes": 74962,
+      "map_sha256": "ba51ed2ff1e650d70252fbaa517f47a7045afe8e9065c94c151e29eb3cdc98f8",
+      "source_refs": 1069,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-index-applications.pdf",
+      "map": "gnamma-apparatus-index-applications.pdf.json",
+      "components": [
+        "index",
+        "applications"
+      ],
+      "pages": 28,
+      "sha256": "650ae2a99616fc827dd0e353b3d95220d950779a88af169a442da2e366b739e1",
+      "bytes": 125185,
+      "map_sha256": "27f4cb4fd0d0b1ad681debd4e1694105a1bf9fc4725bdf299044f3cd52f46140",
+      "source_refs": 1863,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-index-concordance-applications.pdf",
+      "map": "gnamma-apparatus-index-concordance-applications.pdf.json",
+      "components": [
+        "index",
+        "concordance",
+        "applications"
+      ],
+      "pages": 32,
+      "sha256": "95c460ec17d7df765aec14beef14177dda16989e618f8e6a48560ed7100f3cb8",
+      "bytes": 135874,
+      "map_sha256": "94b81d2983775144d630321f222f7148d1c99b38c54ff1a6010398f808f8e365",
+      "source_refs": 1863,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-index-concordance.pdf",
+      "map": "gnamma-apparatus-index-concordance.pdf.json",
+      "components": [
+        "index",
+        "concordance"
+      ],
+      "pages": 25,
+      "sha256": "067f734c1f05b763fc1dcf42747deec75d99066a98f661cd26f1400a56add9a5",
+      "bytes": 108294,
+      "map_sha256": "ebf60a83e59febc712c22d5736b4c0eb70194b4592ff494daafc418915a73447",
+      "source_refs": 1725,
+      "packet_links": 0
+    },
+    {
+      "file": "gnamma-apparatus-index.pdf",
+      "map": "gnamma-apparatus-index.pdf.json",
+      "components": [
+        "index"
+      ],
+      "pages": 21,
+      "sha256": "ecc31aba8680a07a6a2d8bb85f483b5254eb9783f8035d78c0920c395ab87163",
+      "bytes": 97250,
+      "map_sha256": "546384fe211a242c3c3556c0c7c2cba6bb7fecc422184bb99aaf21d7127ccc73",
+      "source_refs": 1725,
+      "packet_links": 0
+    }
+  ],
+  "profiles": [
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "438f7b93b01085573c223e9a41bc3e66afd7b4cb9e9ff1ae74740c03579c3c59",
+      "packet": "gnamma-apparatus-glossary.pdf",
+      "packet_sha256": "9f10f72650806889d790f4b9c93c7b2cd1e7fb20ba3497c3a2d9e94cb1197abf",
+      "map": "profiles/daruri-reading-bilingual-glossary.pdf.links.json",
+      "map_sha256": "db72481c0fff08ef80574403a3fe3630538d627b565a58954f5cd1bd6787bdd9",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-index.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "5096af2c6f88582962f758b255be0b52ad54d843b61958f6413e996cba820633",
+      "packet": "gnamma-apparatus-index.pdf",
+      "packet_sha256": "ecc31aba8680a07a6a2d8bb85f483b5254eb9783f8035d78c0920c395ab87163",
+      "map": "profiles/daruri-reading-bilingual-index.pdf.links.json",
+      "map_sha256": "444875980b06a78d725f60ba7a8cc28776aac717ce8d5037feb3915ddf6ba058",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-concordance.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "d469f91161fb0615922cb3c35036c9e64545866819cb14daa11e11b76553c727",
+      "packet": "gnamma-apparatus-concordance.pdf",
+      "packet_sha256": "b4d6d347294dadfc5c01ab728b6a65880e96f2cd08791f68c6fc138dacff85ab",
+      "map": "profiles/daruri-reading-bilingual-concordance.pdf.links.json",
+      "map_sha256": "039cb392faa747ba1ee33de686260823d57a44b1778605a5ebcf58a828f4511e",
+      "links": 0
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "9f6fe6cda569a761fd592742162d49916faddf36f537bbf4ac235ab56f8d57c7",
+      "packet": "gnamma-apparatus-applications.pdf",
+      "packet_sha256": "fde63fe59dd0bb4486a353b4f101030e1f6834277887be9f4afef48a9e343d4b",
+      "map": "profiles/daruri-reading-bilingual-applications.pdf.links.json",
+      "map_sha256": "4bbb785f84583c78ad2076cf4f4b4cbe1bc94cbbb52a0f61b90b6077a3773cab",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-index.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "e438ba3f3e9db678b16b0ee27a576732b8e3d116a63b56bda14ff29031b0f1bf",
+      "packet": "gnamma-apparatus-glossary-index.pdf",
+      "packet_sha256": "dd4049a6bc3cb6cdf1d7aa388c30f067b85d01e092c486befdb6c76f8f9144ce",
+      "map": "profiles/daruri-reading-bilingual-glossary-index.pdf.links.json",
+      "map_sha256": "c14e5e408ef7ffce1e72dec268ad261c3cbea35b3d52229818a431c1ee59d1af",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-concordance.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "2205ae09289d771d602ce8d36b1ddec9e16030a6cc0fb78521a1cc7c098e27ce",
+      "packet": "gnamma-apparatus-glossary-concordance.pdf",
+      "packet_sha256": "441c8d254bc939e7746fce7fda5715b072bbac751ebed528fc4ce17c78547f93",
+      "map": "profiles/daruri-reading-bilingual-glossary-concordance.pdf.links.json",
+      "map_sha256": "6c38ca3e07a81fe4a09d6791749d42a96ad85aed53363345e3656277dea14bc6",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "248d09b1b12c88215b5a2837bfe3c64dba9d1eb5e110752f5a7d3dfabf5baed9",
+      "packet": "gnamma-apparatus-glossary-applications.pdf",
+      "packet_sha256": "c5c0bbe7bbb0685976d70afc60b95549b9d339f2cf211b5e6d63d5245959d679",
+      "map": "profiles/daruri-reading-bilingual-glossary-applications.pdf.links.json",
+      "map_sha256": "e298012b9be49edabd0c333599009e5855055359dc0bcbdf0fddb1ee2a60e309",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-index-concordance.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "811a3c90bbc7fcf21ac0ac3ccd797925db750a8bc9eca5bcc56d19db1c777b18",
+      "packet": "gnamma-apparatus-index-concordance.pdf",
+      "packet_sha256": "067f734c1f05b763fc1dcf42747deec75d99066a98f661cd26f1400a56add9a5",
+      "map": "profiles/daruri-reading-bilingual-index-concordance.pdf.links.json",
+      "map_sha256": "b626f31c4bf054f0754b75e6f10bbfeebe102326605e0223ce3a04d0cac1cbfe",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-index-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "8da7b2573c0235af6c11b4b3c019357ec660e2942e6db1545d24d2affcad4fb9",
+      "packet": "gnamma-apparatus-index-applications.pdf",
+      "packet_sha256": "650ae2a99616fc827dd0e353b3d95220d950779a88af169a442da2e366b739e1",
+      "map": "profiles/daruri-reading-bilingual-index-applications.pdf.links.json",
+      "map_sha256": "5562ca237cc900faa1f0ec8ab3edf1745482c1baae00d7ba5df39c61a950976b",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-concordance-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "eef7479cfc251a66fbebfce1fd733aa6fbf036fb22a3b09d8344edaad305fcd3",
+      "packet": "gnamma-apparatus-concordance-applications.pdf",
+      "packet_sha256": "777a939c6e5277556dc6508227eb33e873e660d6778b60261f9e7abbb9e45361",
+      "map": "profiles/daruri-reading-bilingual-concordance-applications.pdf.links.json",
+      "map_sha256": "752a7a75db37a785767f4f5f96063f63454549bc51b4b4672b759d94865c7e55",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-index-concordance.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "5fe892bed5c9202b87308e01975fcccf09d47be2f49db88ea9518350a60083a7",
+      "packet": "gnamma-apparatus-glossary-index-concordance.pdf",
+      "packet_sha256": "5f5b4db0533fff6d22fce2c93e917be91aca8dfe8bcc1b51f8a8b4f38a535c05",
+      "map": "profiles/daruri-reading-bilingual-glossary-index-concordance.pdf.links.json",
+      "map_sha256": "3a363f7acc0844bf9b938eed7f45a343dea59580028b41539e557025842cc3cd",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-index-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "e9f117bea01691de566ae6a51e41a29b15a6004d781a68b9fbf597edf853a308",
+      "packet": "gnamma-apparatus-glossary-index-applications.pdf",
+      "packet_sha256": "a728caf6e8de603f926d62686ef5af1fc0ab623b66ed0e9c7823150296124abc",
+      "map": "profiles/daruri-reading-bilingual-glossary-index-applications.pdf.links.json",
+      "map_sha256": "5b7829c15afec5bc5275c9668379c60cce4ec409e94cf54e7d32a67afc665918",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-concordance-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "85fa711257c28e8a443ab2338b525ac3dc3315c2f14aa5d0614911e586504705",
+      "packet": "gnamma-apparatus-glossary-concordance-applications.pdf",
+      "packet_sha256": "1e7d25f7bafccf6bd5e46ede33efd48783629425f2526741e6eaab4444b21948",
+      "map": "profiles/daruri-reading-bilingual-glossary-concordance-applications.pdf.links.json",
+      "map_sha256": "3510489fc67bbae84d9a62d85aa446c2b1b7654c53a6b94b2bdca9d0874e76da",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-index-concordance-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "7230b39c6a468291960b5faa7dc37c2d3dd52ed8eb329b5d1b8c961e2b3e90b2",
+      "packet": "gnamma-apparatus-index-concordance-applications.pdf",
+      "packet_sha256": "95c460ec17d7df765aec14beef14177dda16989e618f8e6a48560ed7100f3cb8",
+      "map": "profiles/daruri-reading-bilingual-index-concordance-applications.pdf.links.json",
+      "map_sha256": "9aa9de5f9bcc0796266fa05e65cedb007c4361676626427047d007750be09416",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-index-concordance-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "profile_sha256": "ba0cd1feeaafefaccb63c72d30da09798366aa39d367e9449efeee2cb9c3559b",
+      "packet": "gnamma-apparatus-glossary-index-concordance-applications.pdf",
+      "packet_sha256": "4a9f7b5d5bbd274f89d4ba85fd9398b0e03c39f7391ca7b9b9477dae0e159bb6",
+      "map": "profiles/daruri-reading-bilingual-glossary-index-concordance-applications.pdf.links.json",
+      "map_sha256": "5ef946b2d655d0ec6b0179886223fda7af02487e06db7b9dc2bfeb2d50d7aea6",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "108a69f7019d1d15f95f7482548ed2dbccb22a34c0df8f3814d2f86d8adf49f7",
+      "packet": "gnamma-apparatus-glossary.pdf",
+      "packet_sha256": "9f10f72650806889d790f4b9c93c7b2cd1e7fb20ba3497c3a2d9e94cb1197abf",
+      "map": "profiles/daruri-reading-bilingual-glossary-titles-on.pdf.links.json",
+      "map_sha256": "10fb538fa01343b3b5b0eb0c6872c3b46d45ef2ed069af4d173bf6ab8f1fb791",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-index-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "1fef46ae93051bba08395a59ccab1cf72032cb9cce8076beee9c6699d84b969c",
+      "packet": "gnamma-apparatus-index.pdf",
+      "packet_sha256": "ecc31aba8680a07a6a2d8bb85f483b5254eb9783f8035d78c0920c395ab87163",
+      "map": "profiles/daruri-reading-bilingual-index-titles-on.pdf.links.json",
+      "map_sha256": "3e98ef947714d51261350a4447fa6b1efbb6c4cb844a17213947fdb69cff834c",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "9bc3bb94521ef23168a7f566c8e9e77c5e752fcc569249bc6a3476649ce627f9",
+      "packet": "gnamma-apparatus-concordance.pdf",
+      "packet_sha256": "b4d6d347294dadfc5c01ab728b6a65880e96f2cd08791f68c6fc138dacff85ab",
+      "map": "profiles/daruri-reading-bilingual-concordance-titles-on.pdf.links.json",
+      "map_sha256": "b7e5a0fd64322c2f17c9c1276e7f66131ddb483747e05881085ec6f19662843c",
+      "links": 0
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "d04d47dcba457c16b69cb56c51d4aea90859df55089376339960c0aa556e0c5c",
+      "packet": "gnamma-apparatus-applications.pdf",
+      "packet_sha256": "fde63fe59dd0bb4486a353b4f101030e1f6834277887be9f4afef48a9e343d4b",
+      "map": "profiles/daruri-reading-bilingual-applications-titles-on.pdf.links.json",
+      "map_sha256": "450c5c85802c887a23bb72b34742b63bf6a473b6f7398b8f7dff7985930a458e",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-index-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "86b11f3dee7f12fdc2d5b3ad371c9ee2ca90b89288f6e1d6c1eef019d2d0ee4e",
+      "packet": "gnamma-apparatus-glossary-index.pdf",
+      "packet_sha256": "dd4049a6bc3cb6cdf1d7aa388c30f067b85d01e092c486befdb6c76f8f9144ce",
+      "map": "profiles/daruri-reading-bilingual-glossary-index-titles-on.pdf.links.json",
+      "map_sha256": "e9ae475df2bac8e908a0fc9be2979e814f24c74fa86b987d4f7e279226c668d7",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "64752ba5f21a2664d63dde197a352d595d8b6ee831e25424538657b49c2f2e42",
+      "packet": "gnamma-apparatus-glossary-concordance.pdf",
+      "packet_sha256": "441c8d254bc939e7746fce7fda5715b072bbac751ebed528fc4ce17c78547f93",
+      "map": "profiles/daruri-reading-bilingual-glossary-concordance-titles-on.pdf.links.json",
+      "map_sha256": "f554965df102f2452e5753ecc002736bb3659ba049432b5a2094e89d69ce8dae",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "dc640d1027f11916b33f7bd1067ab0259ea36844cdf6c08c35d889d67fdd776d",
+      "packet": "gnamma-apparatus-glossary-applications.pdf",
+      "packet_sha256": "c5c0bbe7bbb0685976d70afc60b95549b9d339f2cf211b5e6d63d5245959d679",
+      "map": "profiles/daruri-reading-bilingual-glossary-applications-titles-on.pdf.links.json",
+      "map_sha256": "8f10f0f330ab25a8ed376a3980e0dfb0fe9102a21c9fe55ab31c42fd905ab33f",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-index-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "ab7e5d4c0abe126706334d4dc7c6d66fb41470d9fb87e54f3ddfc3b49280d8e2",
+      "packet": "gnamma-apparatus-index-concordance.pdf",
+      "packet_sha256": "067f734c1f05b763fc1dcf42747deec75d99066a98f661cd26f1400a56add9a5",
+      "map": "profiles/daruri-reading-bilingual-index-concordance-titles-on.pdf.links.json",
+      "map_sha256": "b9fa5aeade4463d93afabf1273d110c4bf56627be7449f15071407a297a29c56",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-index-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "35f218276505167ba515a818bc41a9d87082aa09a996441e609bec5d91d32c70",
+      "packet": "gnamma-apparatus-index-applications.pdf",
+      "packet_sha256": "650ae2a99616fc827dd0e353b3d95220d950779a88af169a442da2e366b739e1",
+      "map": "profiles/daruri-reading-bilingual-index-applications-titles-on.pdf.links.json",
+      "map_sha256": "b879a808aa8b2a45ab81d77fdc8a82896b213d2b896295133d0d053aab87c926",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "f0ae812d535eb7dd298ae99c4dcb17f923fb6b94fd56b9b81ee9e56b38cdbdf5",
+      "packet": "gnamma-apparatus-concordance-applications.pdf",
+      "packet_sha256": "777a939c6e5277556dc6508227eb33e873e660d6778b60261f9e7abbb9e45361",
+      "map": "profiles/daruri-reading-bilingual-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "33fd218808be9d78f5ade4898378b42321a8bf67df69a336aa69d36bb73c8ec3",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-index-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "5bcbb27c3d7dc369772f2305b82db1db75d102c0557040b2fa84a5a46eb4250e",
+      "packet": "gnamma-apparatus-glossary-index-concordance.pdf",
+      "packet_sha256": "5f5b4db0533fff6d22fce2c93e917be91aca8dfe8bcc1b51f8a8b4f38a535c05",
+      "map": "profiles/daruri-reading-bilingual-glossary-index-concordance-titles-on.pdf.links.json",
+      "map_sha256": "d5938aff1bea773f3df9a03e045b29a0a665f6547c2b08b44b35d79abf017ff2",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-index-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "71b90a292e8bd607f60fbbd6855dc129eaa0f836ca7c2729812dca03d472e3f3",
+      "packet": "gnamma-apparatus-glossary-index-applications.pdf",
+      "packet_sha256": "a728caf6e8de603f926d62686ef5af1fc0ab623b66ed0e9c7823150296124abc",
+      "map": "profiles/daruri-reading-bilingual-glossary-index-applications-titles-on.pdf.links.json",
+      "map_sha256": "db9d8a8ad9da91055d031f7b7f15ed69db646269d8ef0ddfbfcd1bbb8fbcb9f2",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "b39fc84e6c5ca0a08825be958e25dd77584162c69e76386edf8c7fe6c320cd95",
+      "packet": "gnamma-apparatus-glossary-concordance-applications.pdf",
+      "packet_sha256": "1e7d25f7bafccf6bd5e46ede33efd48783629425f2526741e6eaab4444b21948",
+      "map": "profiles/daruri-reading-bilingual-glossary-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "010155f51be05b6710a3bed608d761fbd0bc58fcec6709e75113cc0baeae566e",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-index-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "f8b0b0083d434598e2e376c1ed2164d236c3ee6fd0a46123678c97270ce0373e",
+      "packet": "gnamma-apparatus-index-concordance-applications.pdf",
+      "packet_sha256": "95c460ec17d7df765aec14beef14177dda16989e618f8e6a48560ed7100f3cb8",
+      "map": "profiles/daruri-reading-bilingual-index-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "a43beb6295bf67ca83382399e09ba52cc1163eccf1513208b5797a67b91bae44",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-glossary-index-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "profile_sha256": "7e3c608a37214f9dfd9d5fc118b588f52cd2ee2a0282fc3a900b5e88ce567966",
+      "packet": "gnamma-apparatus-glossary-index-concordance-applications.pdf",
+      "packet_sha256": "4a9f7b5d5bbd274f89d4ba85fd9398b0e03c39f7391ca7b9b9477dae0e159bb6",
+      "map": "profiles/daruri-reading-bilingual-glossary-index-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "071a79f9c031e9137605bdb8f3fa844b3e7046fd0231f16326075ade9398b01a",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "cc896fd113302a4b0aca193dce2d9ebe36b91a3d1fa3b24346b71cbe5f6d055f",
+      "packet": "gnamma-apparatus-glossary.pdf",
+      "packet_sha256": "9f10f72650806889d790f4b9c93c7b2cd1e7fb20ba3497c3a2d9e94cb1197abf",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary.pdf.links.json",
+      "map_sha256": "35e0f82c60684732d2c4a8fd0cdb01d37d157a1f9276a8cde710a5bc3ce61ff9",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-index.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "fdd0aac74469ba2172d3b66b08d40a1053fcbe8ebe2837a51b54b5ef189b203b",
+      "packet": "gnamma-apparatus-index.pdf",
+      "packet_sha256": "ecc31aba8680a07a6a2d8bb85f483b5254eb9783f8035d78c0920c395ab87163",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-index.pdf.links.json",
+      "map_sha256": "765bf979595d3a23088c648bed55e04940f7ce89e93f61ae0c3ea3bfd6dc4fec",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-concordance.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "761cf6efbac29bd3744c55805bafee0ded5fdc683aac869f4f48310d5c26978b",
+      "packet": "gnamma-apparatus-concordance.pdf",
+      "packet_sha256": "b4d6d347294dadfc5c01ab728b6a65880e96f2cd08791f68c6fc138dacff85ab",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-concordance.pdf.links.json",
+      "map_sha256": "e9f444fae88700d894f02a43533f20b4cf765c86af58dfc2dd6515be4bd5b630",
+      "links": 0
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "14a34d53c276c6b69a4b7b63b29f966d873ff0fec2ac259bea85daebb3a4db2f",
+      "packet": "gnamma-apparatus-applications.pdf",
+      "packet_sha256": "fde63fe59dd0bb4486a353b4f101030e1f6834277887be9f4afef48a9e343d4b",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-applications.pdf.links.json",
+      "map_sha256": "2f15d499db1cde010786338b30e1282e1b8e9a40d6e54b0a777e59ab64a18ea8",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-index.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "a4e0f613e090bf33f24f6ae291bc6fe4396fbf01951515f42720264c388426f1",
+      "packet": "gnamma-apparatus-glossary-index.pdf",
+      "packet_sha256": "dd4049a6bc3cb6cdf1d7aa388c30f067b85d01e092c486befdb6c76f8f9144ce",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-index.pdf.links.json",
+      "map_sha256": "2a895f6d88e1580ce3913f5b56565f2bf9b507dfcfdb2a1ea5d29af808ed6cce",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-concordance.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "d51138f4d49597934540e50febdb815fef8cbe0ca7cf60e53a2ac843ca6d1b8c",
+      "packet": "gnamma-apparatus-glossary-concordance.pdf",
+      "packet_sha256": "441c8d254bc939e7746fce7fda5715b072bbac751ebed528fc4ce17c78547f93",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-concordance.pdf.links.json",
+      "map_sha256": "243ef6e1b140388ef556bc4f7dfaee3f417a91498764631e48fb7a0e09beaaa5",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "940a0782aefa24baa5d8880e6d3a454a20708669a11746012db03e5dba63b70c",
+      "packet": "gnamma-apparatus-glossary-applications.pdf",
+      "packet_sha256": "c5c0bbe7bbb0685976d70afc60b95549b9d339f2cf211b5e6d63d5245959d679",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-applications.pdf.links.json",
+      "map_sha256": "f03b0c440f92cf82fb597326a62181725130f5c209e1dd73d9d6c7b9db780e13",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-index-concordance.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "79ea44e0d8262d39b7a2cda5bd60d01d3879b1e0182b5ab566dc174b2179b1d1",
+      "packet": "gnamma-apparatus-index-concordance.pdf",
+      "packet_sha256": "067f734c1f05b763fc1dcf42747deec75d99066a98f661cd26f1400a56add9a5",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-index-concordance.pdf.links.json",
+      "map_sha256": "1eeb92aa6af2d05003d56a62f8a00d530cdf75cf81ecf5c9a5db6b35fbb7d90b",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-index-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "6ca0031e0a67ea3b460301f7718e09e12e6d4269053a0cd9f726d7868286a7e7",
+      "packet": "gnamma-apparatus-index-applications.pdf",
+      "packet_sha256": "650ae2a99616fc827dd0e353b3d95220d950779a88af169a442da2e366b739e1",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-index-applications.pdf.links.json",
+      "map_sha256": "af211dd053b64a0ef528928009045af8cce78337bc59ea088dd12f60a923d568",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-concordance-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "d6cab04f0e0fd9970d9875956fe8a0537c64e500171c0fb4dd71200eef172655",
+      "packet": "gnamma-apparatus-concordance-applications.pdf",
+      "packet_sha256": "777a939c6e5277556dc6508227eb33e873e660d6778b60261f9e7abbb9e45361",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-concordance-applications.pdf.links.json",
+      "map_sha256": "d3f83c48952c6ed4f83dfec8b2c9825d9623b392dd560222ec85c371b0fe6a93",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-index-concordance.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "8fac9ada7627d83ed900508f071730dea37cb4de93486265c3847ae546f20d99",
+      "packet": "gnamma-apparatus-glossary-index-concordance.pdf",
+      "packet_sha256": "5f5b4db0533fff6d22fce2c93e917be91aca8dfe8bcc1b51f8a8b4f38a535c05",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-index-concordance.pdf.links.json",
+      "map_sha256": "31ff28cd93553b124fcce84ee20b95392b6b8e408e930196285bd924f01df299",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-index-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "78b318fa1401603fcd6577a7dfeb44935f0ca389ef1b05f8195eee60f653683c",
+      "packet": "gnamma-apparatus-glossary-index-applications.pdf",
+      "packet_sha256": "a728caf6e8de603f926d62686ef5af1fc0ab623b66ed0e9c7823150296124abc",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-index-applications.pdf.links.json",
+      "map_sha256": "f84c8c5c09e7ff8bf5eac677649753cec8e76228d0efbaa1041e1d6394b97c1d",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-concordance-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "ab370c92479d3748243e38faaf57a95b107aebab231e4d0498591c29796fe0d8",
+      "packet": "gnamma-apparatus-glossary-concordance-applications.pdf",
+      "packet_sha256": "1e7d25f7bafccf6bd5e46ede33efd48783629425f2526741e6eaab4444b21948",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-concordance-applications.pdf.links.json",
+      "map_sha256": "a54913737ec24865f484beabbb4a9b7b746ae3ce77e3d3cceb13dbc4546b3992",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-index-concordance-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "9d5184cec02ee20ec5ebb82f166195c3c3a979bc471a5447b3e28c88e9d8b2f0",
+      "packet": "gnamma-apparatus-index-concordance-applications.pdf",
+      "packet_sha256": "95c460ec17d7df765aec14beef14177dda16989e618f8e6a48560ed7100f3cb8",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-index-concordance-applications.pdf.links.json",
+      "map_sha256": "e4afe8d6d52fc6860a0a42df79ecb52d8f02f37c72a137e4da05063c85078c0d",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-index-concordance-applications.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "profile_sha256": "c962bc69dbf8af65e7fad1492b2578db63f1dcaebb364164fd32a552d9731a3b",
+      "packet": "gnamma-apparatus-glossary-index-concordance-applications.pdf",
+      "packet_sha256": "4a9f7b5d5bbd274f89d4ba85fd9398b0e03c39f7391ca7b9b9477dae0e159bb6",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-index-concordance-applications.pdf.links.json",
+      "map_sha256": "1ed2020ba3cf8c1824051515c607c6e95d3255a13d0d47f9c927109f28768007",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "e5dfffe0519d0e0af20d24800cfd87fd337d28c83720be325086e60a10f0e03c",
+      "packet": "gnamma-apparatus-glossary.pdf",
+      "packet_sha256": "9f10f72650806889d790f4b9c93c7b2cd1e7fb20ba3497c3a2d9e94cb1197abf",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-titles-on.pdf.links.json",
+      "map_sha256": "65f53a5295f096f810c469c70d8b4a24d974adf8e39a68217b62e43a9c55b635",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-index-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "cfc715959c117218a835a40ad27d57edb99e35c0abae82a757e38052ed200c89",
+      "packet": "gnamma-apparatus-index.pdf",
+      "packet_sha256": "ecc31aba8680a07a6a2d8bb85f483b5254eb9783f8035d78c0920c395ab87163",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-index-titles-on.pdf.links.json",
+      "map_sha256": "418d9b1c03e8a8555902b8a46d62547ed7d6d32b29bfef701e61ed22550944d1",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "1732eced4e60017e2fb03da4a3a6561c604e7e89dcd94c41e6dc490466ef691d",
+      "packet": "gnamma-apparatus-concordance.pdf",
+      "packet_sha256": "b4d6d347294dadfc5c01ab728b6a65880e96f2cd08791f68c6fc138dacff85ab",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-concordance-titles-on.pdf.links.json",
+      "map_sha256": "1a4012b2bca06c820ddfc69a815c9031ca9a1bdc581b10fc03874f2be8913ede",
+      "links": 0
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "5ef0175adba11a8d54a095a5a5e4caff99d3b8634f0f158de4fc530d9936a4a2",
+      "packet": "gnamma-apparatus-applications.pdf",
+      "packet_sha256": "fde63fe59dd0bb4486a353b4f101030e1f6834277887be9f4afef48a9e343d4b",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-applications-titles-on.pdf.links.json",
+      "map_sha256": "31c6e83ba349203e8a38d7e9b9833e7466336ffe708891428ebcf9b457593ce7",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-index-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "7b9ab26f923fe76d3e65a162ab0fd8e34ddb29c67f3f53b8c295662cb445c8ef",
+      "packet": "gnamma-apparatus-glossary-index.pdf",
+      "packet_sha256": "dd4049a6bc3cb6cdf1d7aa388c30f067b85d01e092c486befdb6c76f8f9144ce",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-index-titles-on.pdf.links.json",
+      "map_sha256": "578af75d741f168b784b5dd0e1f5ee8798ef72f697f3a6c07c5da28efa0fb143",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "663314f3e9cedf0ff011ed1d06459aadd42adac8007820b2587e9f10708cf906",
+      "packet": "gnamma-apparatus-glossary-concordance.pdf",
+      "packet_sha256": "441c8d254bc939e7746fce7fda5715b072bbac751ebed528fc4ce17c78547f93",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-concordance-titles-on.pdf.links.json",
+      "map_sha256": "e100f8b290c480e1ad70b63a4802157a41c3e1fbcaeda9468f66179567a6534e",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "c303d690407d4c6a5ba348eb342b4624c7ae767b4650850bc7b4c80c9edcd5ca",
+      "packet": "gnamma-apparatus-glossary-applications.pdf",
+      "packet_sha256": "c5c0bbe7bbb0685976d70afc60b95549b9d339f2cf211b5e6d63d5245959d679",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-applications-titles-on.pdf.links.json",
+      "map_sha256": "13485f12362997d05e40e5e487a8eb5afe3f8c1706a7cbbf919c266cd8090de9",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-index-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "6aae480fddfed2babde5df83a7876f2e8e92a550562e96cba75af1a3ed812875",
+      "packet": "gnamma-apparatus-index-concordance.pdf",
+      "packet_sha256": "067f734c1f05b763fc1dcf42747deec75d99066a98f661cd26f1400a56add9a5",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-index-concordance-titles-on.pdf.links.json",
+      "map_sha256": "0ceefedfb7d8d5c55953cbb2eea644a2d2619b5a7540873fde00972986c756c9",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-index-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "ca27f4270bbdec97cdb0fed1b3bc6ecdda113123034d3b4a1c35ad84754e41d3",
+      "packet": "gnamma-apparatus-index-applications.pdf",
+      "packet_sha256": "650ae2a99616fc827dd0e353b3d95220d950779a88af169a442da2e366b739e1",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-index-applications-titles-on.pdf.links.json",
+      "map_sha256": "27da097b90863135113417793fcce4cfb8fa61ea932db1e22bc01bdbbd4210bf",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "97e399167c1f0ee012c617da5a9ec78748c9518bb356b75eb1e4b986844b139c",
+      "packet": "gnamma-apparatus-concordance-applications.pdf",
+      "packet_sha256": "777a939c6e5277556dc6508227eb33e873e660d6778b60261f9e7abbb9e45361",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "df9ba9d9426ea141efdb207ada27b0da8c223d20d3c3271cddc4040a997a6a10",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-index-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "1cb24db083f6f0b8cf23340c2faf47841d0b608e5cb424d11c74b85b2209a5ee",
+      "packet": "gnamma-apparatus-glossary-index-concordance.pdf",
+      "packet_sha256": "5f5b4db0533fff6d22fce2c93e917be91aca8dfe8bcc1b51f8a8b4f38a535c05",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-index-concordance-titles-on.pdf.links.json",
+      "map_sha256": "262323df005f63c8c690dd963d932837ebf310a7aba0f8b8cdcd6976834fc2f3",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-index-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "3e9047df6e5a031507bf91cd79bd944c26319b5f71c4c2069a31801f261e2252",
+      "packet": "gnamma-apparatus-glossary-index-applications.pdf",
+      "packet_sha256": "a728caf6e8de603f926d62686ef5af1fc0ab623b66ed0e9c7823150296124abc",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-index-applications-titles-on.pdf.links.json",
+      "map_sha256": "03093481676d01ad60164ad134fcbd36ba59064a28b791c1b0107d564c90a4fc",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "8bbdf896e602444cb84470053d099d6a0759cd601adc48dbbfc497bcf58600d7",
+      "packet": "gnamma-apparatus-glossary-concordance-applications.pdf",
+      "packet_sha256": "1e7d25f7bafccf6bd5e46ede33efd48783629425f2526741e6eaab4444b21948",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "adf0a38f97ffe623e8ad05c974468174775f5c51d6fb4eaf0162a64758147b5a",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-index-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "e3cf581e822924cbbaa3bfcb319ff44c747e4ec5f89877e62a808e1f711c1a4b",
+      "packet": "gnamma-apparatus-index-concordance-applications.pdf",
+      "packet_sha256": "95c460ec17d7df765aec14beef14177dda16989e618f8e6a48560ed7100f3cb8",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-index-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "8d6ddc38e9b43423dfc6a2820e59256741e53b2dea227022cb8d6ad77cb519e2",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-bilingual-unvowelled-glossary-index-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "profile_sha256": "84ed56654843c5e34cded92e1f256c144bf55c392adb12e253f3ff73acd86d51",
+      "packet": "gnamma-apparatus-glossary-index-concordance-applications.pdf",
+      "packet_sha256": "4a9f7b5d5bbd274f89d4ba85fd9398b0e03c39f7391ca7b9b9477dae0e159bb6",
+      "map": "profiles/daruri-reading-bilingual-unvowelled-glossary-index-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "598d0f426549fd9bc7e64516d4e5be83f25d32baecdd2de96266444f15626c69",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "d9297038455e345520af211e9ede9070feed214b0dda2b5cb7020a35620a775e",
+      "packet": "gnamma-apparatus-glossary.pdf",
+      "packet_sha256": "9f10f72650806889d790f4b9c93c7b2cd1e7fb20ba3497c3a2d9e94cb1197abf",
+      "map": "profiles/daruri-reading-english-glossary.pdf.links.json",
+      "map_sha256": "8778efa755c76b773c2cd1f68d633bd435dff3562377f6917d124d8127416838",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-index.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "f7ae7b102c4c2f69f29b4ce8b2384191db44ae4f07a72844c8acbc165faaff88",
+      "packet": "gnamma-apparatus-index.pdf",
+      "packet_sha256": "ecc31aba8680a07a6a2d8bb85f483b5254eb9783f8035d78c0920c395ab87163",
+      "map": "profiles/daruri-reading-english-index.pdf.links.json",
+      "map_sha256": "ca1a2dc4e6c8e9a15873f9c4cb09652f93f9c9fe01785b0fd715a4b4923d2a6a",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-concordance.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "ed7de684ed4a78ebd43a256ae2ad349b410f151f0346db14f725c5640d4db06a",
+      "packet": "gnamma-apparatus-concordance.pdf",
+      "packet_sha256": "b4d6d347294dadfc5c01ab728b6a65880e96f2cd08791f68c6fc138dacff85ab",
+      "map": "profiles/daruri-reading-english-concordance.pdf.links.json",
+      "map_sha256": "3b3ec444f31525bfea4dbc1d191c5fc3e66f8418411b82c56872e0ff8725c649",
+      "links": 0
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-applications.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "abfd450f6746e88941333506f8d08b9ea085a7b889afa704d90378458f6689d0",
+      "packet": "gnamma-apparatus-applications.pdf",
+      "packet_sha256": "fde63fe59dd0bb4486a353b4f101030e1f6834277887be9f4afef48a9e343d4b",
+      "map": "profiles/daruri-reading-english-applications.pdf.links.json",
+      "map_sha256": "21d08d80ad106498d4a6dd239631a067bbcab64505db1dce54f454c53216cbe4",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-index.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "12d143395640a47c3f5067f8c08853f93f9894f7ce2103d870ba260246b06443",
+      "packet": "gnamma-apparatus-glossary-index.pdf",
+      "packet_sha256": "dd4049a6bc3cb6cdf1d7aa388c30f067b85d01e092c486befdb6c76f8f9144ce",
+      "map": "profiles/daruri-reading-english-glossary-index.pdf.links.json",
+      "map_sha256": "cf1450ad7597268deda93d51d1f2a5d2a2e25d7caf5f4135fdbb26bc0971433e",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-concordance.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "129aebb8962a702ffdba1263b081163b5013a44b547ee89bcb7bfec9ae4859de",
+      "packet": "gnamma-apparatus-glossary-concordance.pdf",
+      "packet_sha256": "441c8d254bc939e7746fce7fda5715b072bbac751ebed528fc4ce17c78547f93",
+      "map": "profiles/daruri-reading-english-glossary-concordance.pdf.links.json",
+      "map_sha256": "8fad0b1b47d344bbdc98438a0e0935d0b66130f1fb5936ca9057bb5248d680c6",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-applications.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "39963e76e773a29bc8535e9dcaef38e4dbfe5b0d4fdbd8944f2aec092274f72b",
+      "packet": "gnamma-apparatus-glossary-applications.pdf",
+      "packet_sha256": "c5c0bbe7bbb0685976d70afc60b95549b9d339f2cf211b5e6d63d5245959d679",
+      "map": "profiles/daruri-reading-english-glossary-applications.pdf.links.json",
+      "map_sha256": "792f9d153a3c978a0f7f7f6081e1fd59fa08211b7f949bc595708d72f9b3672f",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-index-concordance.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "4b1eb92e870e5f95d01d5fc1181c74bb4b37d05c8a098dcc23090dcf4cb84460",
+      "packet": "gnamma-apparatus-index-concordance.pdf",
+      "packet_sha256": "067f734c1f05b763fc1dcf42747deec75d99066a98f661cd26f1400a56add9a5",
+      "map": "profiles/daruri-reading-english-index-concordance.pdf.links.json",
+      "map_sha256": "335c4d601dd15605421367ef2dc58831137ce1bd8c28b2c6b58f7154bf78950c",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-index-applications.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "23f93f25e50ecd7f89ce1c814313a93df026921f7c24a24d8142e31435f688e8",
+      "packet": "gnamma-apparatus-index-applications.pdf",
+      "packet_sha256": "650ae2a99616fc827dd0e353b3d95220d950779a88af169a442da2e366b739e1",
+      "map": "profiles/daruri-reading-english-index-applications.pdf.links.json",
+      "map_sha256": "6731fb7f855fdd4ff6eb1e8c6e12a1cdefd5ed83381df7a9b902bee5f1c3a287",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-concordance-applications.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "de2ae5b053de7ab2be2cf92c3c74c2c6e9456923de0f77a9b5137f2dcb12c6ad",
+      "packet": "gnamma-apparatus-concordance-applications.pdf",
+      "packet_sha256": "777a939c6e5277556dc6508227eb33e873e660d6778b60261f9e7abbb9e45361",
+      "map": "profiles/daruri-reading-english-concordance-applications.pdf.links.json",
+      "map_sha256": "cb8ee11d13474b2a682416d9928ae93fec53665086420a325c06402e1c8535bb",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-index-concordance.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "0358cff7dccad34d74f90dcaf9b1d1879faa3f6388a99d02b9c4384eb443de83",
+      "packet": "gnamma-apparatus-glossary-index-concordance.pdf",
+      "packet_sha256": "5f5b4db0533fff6d22fce2c93e917be91aca8dfe8bcc1b51f8a8b4f38a535c05",
+      "map": "profiles/daruri-reading-english-glossary-index-concordance.pdf.links.json",
+      "map_sha256": "2125f96022b5843040123e597fede403be6eb0d5dcd808b968e3d67b7bd935ae",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-index-applications.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "726bbbd3c3bcce3cd6fa2cd404fa3ce6527220b8254ad4e697e9e57cdaa5c287",
+      "packet": "gnamma-apparatus-glossary-index-applications.pdf",
+      "packet_sha256": "a728caf6e8de603f926d62686ef5af1fc0ab623b66ed0e9c7823150296124abc",
+      "map": "profiles/daruri-reading-english-glossary-index-applications.pdf.links.json",
+      "map_sha256": "6a88e3f65e183fa85c55d087cb611386e251fce62e72455a9dfcddc6fad952f1",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-concordance-applications.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "d83f06988f6918ba513e1660803053802af3e0d1a313b89d0804e0413ee815f0",
+      "packet": "gnamma-apparatus-glossary-concordance-applications.pdf",
+      "packet_sha256": "1e7d25f7bafccf6bd5e46ede33efd48783629425f2526741e6eaab4444b21948",
+      "map": "profiles/daruri-reading-english-glossary-concordance-applications.pdf.links.json",
+      "map_sha256": "37e6551fffe005251cb1e65af42b7b2a08291e7231c764dbc0252be2ffd03e94",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-index-concordance-applications.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "5f87310439f61277ffb4c54499abc6046f6f2711f265b8d3b65ee6c0ec38e66a",
+      "packet": "gnamma-apparatus-index-concordance-applications.pdf",
+      "packet_sha256": "95c460ec17d7df765aec14beef14177dda16989e618f8e6a48560ed7100f3cb8",
+      "map": "profiles/daruri-reading-english-index-concordance-applications.pdf.links.json",
+      "map_sha256": "e2ac623b3f9422da654049c06a5f0880cc599924c2fedcb0e5e4db58f50cf773",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-index-concordance-applications.pdf",
+      "base": "reading/daruri-reading-english-titles-off.pdf",
+      "profile_sha256": "920662dc61a65f39cf8ef06a63194d5c6119edec362ebe0e365e3079b63d5462",
+      "packet": "gnamma-apparatus-glossary-index-concordance-applications.pdf",
+      "packet_sha256": "4a9f7b5d5bbd274f89d4ba85fd9398b0e03c39f7391ca7b9b9477dae0e159bb6",
+      "map": "profiles/daruri-reading-english-glossary-index-concordance-applications.pdf.links.json",
+      "map_sha256": "02b0ea7af477f74bbd436b9562581d6d399339ec12b70cc85a1d658501842ce0",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "a420098027760e7b9138b5d7b7ac839930274ae6161109ce84059089c5c796da",
+      "packet": "gnamma-apparatus-glossary.pdf",
+      "packet_sha256": "9f10f72650806889d790f4b9c93c7b2cd1e7fb20ba3497c3a2d9e94cb1197abf",
+      "map": "profiles/daruri-reading-english-glossary-titles-on.pdf.links.json",
+      "map_sha256": "2f321efc367f9b421f1b9bfb134076342adad5334066ede4e35ed4063a48c9d2",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-index-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "0807734be8e93de406eefe079418e996f297fd83e2969149c9941ab748e3a3fe",
+      "packet": "gnamma-apparatus-index.pdf",
+      "packet_sha256": "ecc31aba8680a07a6a2d8bb85f483b5254eb9783f8035d78c0920c395ab87163",
+      "map": "profiles/daruri-reading-english-index-titles-on.pdf.links.json",
+      "map_sha256": "370e5e274c7ec558f17986bfedda4ba7a70e44f3b4b01701c6767e4df3989f9a",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "54ca9cfe0025bf7f5a5899a49438d8d56957781e3f8f38721f7d92f69bf4306e",
+      "packet": "gnamma-apparatus-concordance.pdf",
+      "packet_sha256": "b4d6d347294dadfc5c01ab728b6a65880e96f2cd08791f68c6fc138dacff85ab",
+      "map": "profiles/daruri-reading-english-concordance-titles-on.pdf.links.json",
+      "map_sha256": "dbcb29961c7d4349023c61cb551004cf498046deef009e40e8003886098238d2",
+      "links": 0
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "efdae675bcca0748394abe1dc55bbf9109bca24150ef927a5141bcc94ee3216b",
+      "packet": "gnamma-apparatus-applications.pdf",
+      "packet_sha256": "fde63fe59dd0bb4486a353b4f101030e1f6834277887be9f4afef48a9e343d4b",
+      "map": "profiles/daruri-reading-english-applications-titles-on.pdf.links.json",
+      "map_sha256": "960d69f9a2ebb1a0a90dbcc43b6b5878e10a456c6166e814e58ca8e0006eaddc",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-index-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "2f4eda58c51220eb7682f9ee0c4e7627de8263b696dbfebe78dabe917a06efe5",
+      "packet": "gnamma-apparatus-glossary-index.pdf",
+      "packet_sha256": "dd4049a6bc3cb6cdf1d7aa388c30f067b85d01e092c486befdb6c76f8f9144ce",
+      "map": "profiles/daruri-reading-english-glossary-index-titles-on.pdf.links.json",
+      "map_sha256": "61fbe137049593f629eb60f40c7a5fe5e53899473f59f92c1a218de464044f41",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "65aff7bd20f4226f6f665636eb9a58cfad393d945c34094f9b2359a7542d27e1",
+      "packet": "gnamma-apparatus-glossary-concordance.pdf",
+      "packet_sha256": "441c8d254bc939e7746fce7fda5715b072bbac751ebed528fc4ce17c78547f93",
+      "map": "profiles/daruri-reading-english-glossary-concordance-titles-on.pdf.links.json",
+      "map_sha256": "ecdde4b24338dd13321fe213c41884ef5b2d3ae399e806d31f484bb9475fc342",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "67d0a75dd0d7317f1f3a8fe51c5921939ef6d3be3e682eefba16ce615444875c",
+      "packet": "gnamma-apparatus-glossary-applications.pdf",
+      "packet_sha256": "c5c0bbe7bbb0685976d70afc60b95549b9d339f2cf211b5e6d63d5245959d679",
+      "map": "profiles/daruri-reading-english-glossary-applications-titles-on.pdf.links.json",
+      "map_sha256": "06a2aec68ef0ecf7d77245bccf05b7fee1ed740231470cd5bec578e978043bf2",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-index-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "2e54e14223505045651b2bcb9de1ee8db29391e61fdbaa61961989c2958c7d7f",
+      "packet": "gnamma-apparatus-index-concordance.pdf",
+      "packet_sha256": "067f734c1f05b763fc1dcf42747deec75d99066a98f661cd26f1400a56add9a5",
+      "map": "profiles/daruri-reading-english-index-concordance-titles-on.pdf.links.json",
+      "map_sha256": "a8e76990439f6301f0ae788288a3e203b2fe6010afc8f7620d78d88696c00b1c",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-index-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "3c4d32d7afe2abf82564590bcdda06804e023fbed15e4a500e77273699b968cf",
+      "packet": "gnamma-apparatus-index-applications.pdf",
+      "packet_sha256": "650ae2a99616fc827dd0e353b3d95220d950779a88af169a442da2e366b739e1",
+      "map": "profiles/daruri-reading-english-index-applications-titles-on.pdf.links.json",
+      "map_sha256": "b1db762e531046d8678160f9926a73b8e10fff9332d4fa480a9625599c11ed58",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "4e90284953d8050b20cdfcfc306aece9edb8d74a19f79d9d1595b39a83e57bb4",
+      "packet": "gnamma-apparatus-concordance-applications.pdf",
+      "packet_sha256": "777a939c6e5277556dc6508227eb33e873e660d6778b60261f9e7abbb9e45361",
+      "map": "profiles/daruri-reading-english-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "48184588c0902a9cba29bf51ef2285060b1c32523bc742e71f42a81fda4e4640",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-index-concordance-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "90e1ac36cd06b33b473394e2a999b08158d1f5d61fa6e841d599083cc894f475",
+      "packet": "gnamma-apparatus-glossary-index-concordance.pdf",
+      "packet_sha256": "5f5b4db0533fff6d22fce2c93e917be91aca8dfe8bcc1b51f8a8b4f38a535c05",
+      "map": "profiles/daruri-reading-english-glossary-index-concordance-titles-on.pdf.links.json",
+      "map_sha256": "42fd7fe08f747585a50cbedb84d49e7e8b18417ced4496647b93206a7efe5174",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-index-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "faf365aeeb77c0e1f7e310a72a88b716c9c3b930815810fbb37601586f6b35b8",
+      "packet": "gnamma-apparatus-glossary-index-applications.pdf",
+      "packet_sha256": "a728caf6e8de603f926d62686ef5af1fc0ab623b66ed0e9c7823150296124abc",
+      "map": "profiles/daruri-reading-english-glossary-index-applications-titles-on.pdf.links.json",
+      "map_sha256": "1d6816f11e3abe7c1de45fd722136e7c62167e528a66c6133ca55e5572573c3f",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "66df421bb3859b210c4ed6bb1dfc06fb012861a7bfa0d85c519e0087fc1914fc",
+      "packet": "gnamma-apparatus-glossary-concordance-applications.pdf",
+      "packet_sha256": "1e7d25f7bafccf6bd5e46ede33efd48783629425f2526741e6eaab4444b21948",
+      "map": "profiles/daruri-reading-english-glossary-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "67193cb96886fa2cdd0a52ca3e7af9bd6a094063498a0be4a46f86632b647d69",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-index-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "924af511dcd51133fc66686f4a2d3b4650d80994cef71854ad48223851efc957",
+      "packet": "gnamma-apparatus-index-concordance-applications.pdf",
+      "packet_sha256": "95c460ec17d7df765aec14beef14177dda16989e618f8e6a48560ed7100f3cb8",
+      "map": "profiles/daruri-reading-english-index-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "3f8bb3a287ab51cec54bc52a2355d9c35c1e0290e5057f552c09640007728880",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-reading-english-glossary-index-concordance-applications-titles-on.pdf",
+      "base": "reading/daruri-reading-english-titles-on.pdf",
+      "profile_sha256": "e39f54932eee4513229a714ecaf715886ebf89b1190fccb741510b34be993a92",
+      "packet": "gnamma-apparatus-glossary-index-concordance-applications.pdf",
+      "packet_sha256": "4a9f7b5d5bbd274f89d4ba85fd9398b0e03c39f7391ca7b9b9477dae0e159bb6",
+      "map": "profiles/daruri-reading-english-glossary-index-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "bdfa719aafbc6180ccc942e5b933612ded65cb0248eb6f6932ba8a04508f3e58",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "5e247ae4048fb6b50617c3c60a7b8b64ee9b9f740682e5a9f95de4eafe85e940",
+      "packet": "gnamma-apparatus-glossary.pdf",
+      "packet_sha256": "9f10f72650806889d790f4b9c93c7b2cd1e7fb20ba3497c3a2d9e94cb1197abf",
+      "map": "profiles/daruri-study-bilingual-glossary.pdf.links.json",
+      "map_sha256": "b35a464ffbd5ce1fe6a01a516a92637e8b724c5c6a0153db5407438e54651ac2",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-index.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "95740c6d577762c9204c852ca07be414057f54b63db364180574190827ba438c",
+      "packet": "gnamma-apparatus-index.pdf",
+      "packet_sha256": "ecc31aba8680a07a6a2d8bb85f483b5254eb9783f8035d78c0920c395ab87163",
+      "map": "profiles/daruri-study-bilingual-index.pdf.links.json",
+      "map_sha256": "5418cea59b2eee20ad641029a8ef82ada802f64a3ef76d8f3366879fb3c5b73f",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-concordance.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "1150f3496f63efde6da4257b8892b1f54f7e7687bf958a4b48e4035fe3fe2a1e",
+      "packet": "gnamma-apparatus-concordance.pdf",
+      "packet_sha256": "b4d6d347294dadfc5c01ab728b6a65880e96f2cd08791f68c6fc138dacff85ab",
+      "map": "profiles/daruri-study-bilingual-concordance.pdf.links.json",
+      "map_sha256": "e12f0ee9da74339e05860ac5cc6e3cb977e4b1c672f71a6fb5bd1e36c47f3cfb",
+      "links": 0
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-applications.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "60e0814bf7c9bb34bf9955b496c5d638ddaa7af2ceca6057a87e858eca7fefd1",
+      "packet": "gnamma-apparatus-applications.pdf",
+      "packet_sha256": "fde63fe59dd0bb4486a353b4f101030e1f6834277887be9f4afef48a9e343d4b",
+      "map": "profiles/daruri-study-bilingual-applications.pdf.links.json",
+      "map_sha256": "4ece6021c0a72c3fae0a6d2001f4f525533a81fb2d77f7b791f4fb623dca0441",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-index.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "7107185640406826fdaf842fa58b2996d79b4f9eb80d7ce4e852502f6ea0fca0",
+      "packet": "gnamma-apparatus-glossary-index.pdf",
+      "packet_sha256": "dd4049a6bc3cb6cdf1d7aa388c30f067b85d01e092c486befdb6c76f8f9144ce",
+      "map": "profiles/daruri-study-bilingual-glossary-index.pdf.links.json",
+      "map_sha256": "272025b7adbf7942f7494c5f04fe4593b650c98fa84fdee637961e9971630ca3",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-concordance.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "6c9faa70349352f98532339a3406504688f5950595d7ce4293c5973442000314",
+      "packet": "gnamma-apparatus-glossary-concordance.pdf",
+      "packet_sha256": "441c8d254bc939e7746fce7fda5715b072bbac751ebed528fc4ce17c78547f93",
+      "map": "profiles/daruri-study-bilingual-glossary-concordance.pdf.links.json",
+      "map_sha256": "de1bfee576a8a7882777a24438467c99d9115b92253e1507b81d95f499ed96ef",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-applications.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "533bfec4dcd757b4750244d4ba16ba100a6baf663fc8a0ad8d04916af5bac0bd",
+      "packet": "gnamma-apparatus-glossary-applications.pdf",
+      "packet_sha256": "c5c0bbe7bbb0685976d70afc60b95549b9d339f2cf211b5e6d63d5245959d679",
+      "map": "profiles/daruri-study-bilingual-glossary-applications.pdf.links.json",
+      "map_sha256": "c58f3acfbd57a2058141b6c7440f4079a2b3e3109cec98d504e529d717b6c3cd",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-index-concordance.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "9ce245d0e9c6d8c2e6d5ed3efe48be19ccdf94abe31376c744f7bbb68eb2b6e5",
+      "packet": "gnamma-apparatus-index-concordance.pdf",
+      "packet_sha256": "067f734c1f05b763fc1dcf42747deec75d99066a98f661cd26f1400a56add9a5",
+      "map": "profiles/daruri-study-bilingual-index-concordance.pdf.links.json",
+      "map_sha256": "10d5afc29270d1e7f05fe4d71ac80421db70536f20fdee5e66bfe064a85034b6",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-index-applications.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "64f2d84b8643b73cbae75037d314169509b593ba0e2b17b80ae56ef47a7844e9",
+      "packet": "gnamma-apparatus-index-applications.pdf",
+      "packet_sha256": "650ae2a99616fc827dd0e353b3d95220d950779a88af169a442da2e366b739e1",
+      "map": "profiles/daruri-study-bilingual-index-applications.pdf.links.json",
+      "map_sha256": "3565f2a05fb4c99707a741864322903e79c83eef09c86e29346aa7b9f0260c83",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-concordance-applications.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "5e721c1d171c4de7a03c0c6e9f1ff16473911db459f15115eda7c3ba6a915fd1",
+      "packet": "gnamma-apparatus-concordance-applications.pdf",
+      "packet_sha256": "777a939c6e5277556dc6508227eb33e873e660d6778b60261f9e7abbb9e45361",
+      "map": "profiles/daruri-study-bilingual-concordance-applications.pdf.links.json",
+      "map_sha256": "f37f0108d630f23c7fe96047100e3517a2c314f6d300158b059e84d589d7a823",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-index-concordance.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "27a49fc2e51e649d215684fa4886c0dec4badde6159b20c28cd0c2e3bea3fcd3",
+      "packet": "gnamma-apparatus-glossary-index-concordance.pdf",
+      "packet_sha256": "5f5b4db0533fff6d22fce2c93e917be91aca8dfe8bcc1b51f8a8b4f38a535c05",
+      "map": "profiles/daruri-study-bilingual-glossary-index-concordance.pdf.links.json",
+      "map_sha256": "c6d01798ebfbb431565883e36783fc5f85982e8a7f9d194f7eee449e3612c43e",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-index-applications.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "64bd39a26b7b07476fecdff06f3cfad95f08ff3d8c780f4b7ad915f476d9ea4d",
+      "packet": "gnamma-apparatus-glossary-index-applications.pdf",
+      "packet_sha256": "a728caf6e8de603f926d62686ef5af1fc0ab623b66ed0e9c7823150296124abc",
+      "map": "profiles/daruri-study-bilingual-glossary-index-applications.pdf.links.json",
+      "map_sha256": "75a3a8b9c1b70b9a97c3f027c9d0ad6445735e97d6929abfeaabe6f06e60809f",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-concordance-applications.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "6f1a333f2191337715fd943dab9312b845cbab588d1b945a1c0fbae7864a477d",
+      "packet": "gnamma-apparatus-glossary-concordance-applications.pdf",
+      "packet_sha256": "1e7d25f7bafccf6bd5e46ede33efd48783629425f2526741e6eaab4444b21948",
+      "map": "profiles/daruri-study-bilingual-glossary-concordance-applications.pdf.links.json",
+      "map_sha256": "751d8d6f8375ac934d875e36109a9617d97be86029430e65a7fd6c3494d96851",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-index-concordance-applications.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "a94ca28560d85c5d3063a1062a9012ffe42db960b632255662c1f10eb61f54be",
+      "packet": "gnamma-apparatus-index-concordance-applications.pdf",
+      "packet_sha256": "95c460ec17d7df765aec14beef14177dda16989e618f8e6a48560ed7100f3cb8",
+      "map": "profiles/daruri-study-bilingual-index-concordance-applications.pdf.links.json",
+      "map_sha256": "c0a47c1a1aaf5e794408e432e120ab34e6709719c6d52deacac218b2f5d2ba17",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-index-concordance-applications.pdf",
+      "base": "study/daruri-study-bilingual-titles-off.pdf",
+      "profile_sha256": "01af3c54edb4dc805905d8658ebc547d038a0004159fa8b40a7aa094d334e1c2",
+      "packet": "gnamma-apparatus-glossary-index-concordance-applications.pdf",
+      "packet_sha256": "4a9f7b5d5bbd274f89d4ba85fd9398b0e03c39f7391ca7b9b9477dae0e159bb6",
+      "map": "profiles/daruri-study-bilingual-glossary-index-concordance-applications.pdf.links.json",
+      "map_sha256": "24778064ede88ad82e46e91e9ad4914ae535cda6c428420dd8a20a1fb81d95f3",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "acd4ef6bca98272652de5ce28331ff5889c7e166a514b683f3fb2c708b2f7f4a",
+      "packet": "gnamma-apparatus-glossary.pdf",
+      "packet_sha256": "9f10f72650806889d790f4b9c93c7b2cd1e7fb20ba3497c3a2d9e94cb1197abf",
+      "map": "profiles/daruri-study-bilingual-glossary-titles-on.pdf.links.json",
+      "map_sha256": "23f3ddee4f7ef5354260565db3dc61c86a26a08e70f6ff07918701f7784df563",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-index-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "7a26e764dd802492557dd3a4660fd3c7f2d47aac22709cb1595033f32bbb69f5",
+      "packet": "gnamma-apparatus-index.pdf",
+      "packet_sha256": "ecc31aba8680a07a6a2d8bb85f483b5254eb9783f8035d78c0920c395ab87163",
+      "map": "profiles/daruri-study-bilingual-index-titles-on.pdf.links.json",
+      "map_sha256": "331627b36cf8a4129db8f8fdfc2d97d27eb98cdd10ad85d6b3d4a9253a081e8a",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-concordance-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "2fdb7d6d8a22beb235b5f2b34a62110b23bd82b691c47c120f9733ec23804b7e",
+      "packet": "gnamma-apparatus-concordance.pdf",
+      "packet_sha256": "b4d6d347294dadfc5c01ab728b6a65880e96f2cd08791f68c6fc138dacff85ab",
+      "map": "profiles/daruri-study-bilingual-concordance-titles-on.pdf.links.json",
+      "map_sha256": "ee23770f81b6e0a1ec1ef733dd3d4315a3f0763c2f1e239121f53c08246de035",
+      "links": 0
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-applications-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "ecb8457254e99e47132f018966085a67d7d011583962ab9ca49327e53a930ad6",
+      "packet": "gnamma-apparatus-applications.pdf",
+      "packet_sha256": "fde63fe59dd0bb4486a353b4f101030e1f6834277887be9f4afef48a9e343d4b",
+      "map": "profiles/daruri-study-bilingual-applications-titles-on.pdf.links.json",
+      "map_sha256": "10cab49bb776120299dc8e8ff3dcfa94281d031f40e1c3ecf6c25bd9362a9cc0",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-index-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "254e620925b961dde1d1f800a457e25b54c7ba19e813f21714058a6547e825ed",
+      "packet": "gnamma-apparatus-glossary-index.pdf",
+      "packet_sha256": "dd4049a6bc3cb6cdf1d7aa388c30f067b85d01e092c486befdb6c76f8f9144ce",
+      "map": "profiles/daruri-study-bilingual-glossary-index-titles-on.pdf.links.json",
+      "map_sha256": "57b301130a2fb808a57b0904e00b5ba39113ef4445e357a108d5e6fb5b79124c",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-concordance-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "27769ec16770e3daf8d04bd38bfe2ec4d88f0444e14bfb86e91f8b341733b68b",
+      "packet": "gnamma-apparatus-glossary-concordance.pdf",
+      "packet_sha256": "441c8d254bc939e7746fce7fda5715b072bbac751ebed528fc4ce17c78547f93",
+      "map": "profiles/daruri-study-bilingual-glossary-concordance-titles-on.pdf.links.json",
+      "map_sha256": "5ce3dfe12e1e219b98da6bafb783f0182a1911a1b579150caf2a9d0b5e35e670",
+      "links": 1069
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-applications-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "ad3f0f2dce9f0225f34263b5061c1df9b781270585229b247bcb31cefce18689",
+      "packet": "gnamma-apparatus-glossary-applications.pdf",
+      "packet_sha256": "c5c0bbe7bbb0685976d70afc60b95549b9d339f2cf211b5e6d63d5245959d679",
+      "map": "profiles/daruri-study-bilingual-glossary-applications-titles-on.pdf.links.json",
+      "map_sha256": "ca220fbb14216065249824278969bf40c263dd132cf2e57c26803d1b484577d2",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-index-concordance-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "33813c957dde5fa8becae7928ddf9cea6a828d465bfe3119a966c1517baaa665",
+      "packet": "gnamma-apparatus-index-concordance.pdf",
+      "packet_sha256": "067f734c1f05b763fc1dcf42747deec75d99066a98f661cd26f1400a56add9a5",
+      "map": "profiles/daruri-study-bilingual-index-concordance-titles-on.pdf.links.json",
+      "map_sha256": "654562da1cca3d9a6c12868ad2c76c06ef5258340810ebdaf6ecac4671859131",
+      "links": 1725
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-index-applications-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "07b5dc2a687e8f2a6300bbfb848f61de6437147b742279a96a4d40af304f3311",
+      "packet": "gnamma-apparatus-index-applications.pdf",
+      "packet_sha256": "650ae2a99616fc827dd0e353b3d95220d950779a88af169a442da2e366b739e1",
+      "map": "profiles/daruri-study-bilingual-index-applications-titles-on.pdf.links.json",
+      "map_sha256": "606e0aef6c6b9a625f074d640350c7025b93106d62711465e0cd54a01c2b1b33",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-concordance-applications-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "f425f23eacec2a127f9fe6e5561bd3e023c20cd14217f949f5fb1cc6a04b7de7",
+      "packet": "gnamma-apparatus-concordance-applications.pdf",
+      "packet_sha256": "777a939c6e5277556dc6508227eb33e873e660d6778b60261f9e7abbb9e45361",
+      "map": "profiles/daruri-study-bilingual-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "d06f2421a2efec60495fa121a4c8257a5bf297cb82760543edefd5c4547648a7",
+      "links": 138
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-index-concordance-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "263f64f6feba937e68144acd1167536d0ae3e7b0d0ef9b23853aa0a83ad1c5d8",
+      "packet": "gnamma-apparatus-glossary-index-concordance.pdf",
+      "packet_sha256": "5f5b4db0533fff6d22fce2c93e917be91aca8dfe8bcc1b51f8a8b4f38a535c05",
+      "map": "profiles/daruri-study-bilingual-glossary-index-concordance-titles-on.pdf.links.json",
+      "map_sha256": "b1cab600aa52c754e3dbed915f3f811dcb1f9f9d6cb5c0d78e4fed664e2a1348",
+      "links": 2794
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-index-applications-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "240c009d2a5b39c6d8edc55960a88b2b8260379aae25e9a2fdd62e5c16a06388",
+      "packet": "gnamma-apparatus-glossary-index-applications.pdf",
+      "packet_sha256": "a728caf6e8de603f926d62686ef5af1fc0ab623b66ed0e9c7823150296124abc",
+      "map": "profiles/daruri-study-bilingual-glossary-index-applications-titles-on.pdf.links.json",
+      "map_sha256": "080b7a6f9647b4d9377efae3aba611304c040aabe18a4ea1909a69f90a114082",
+      "links": 2932
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-concordance-applications-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "7a8cf172cefcd6378240a875ebf0c97b56ba29300144705178d3fc3168ce6e18",
+      "packet": "gnamma-apparatus-glossary-concordance-applications.pdf",
+      "packet_sha256": "1e7d25f7bafccf6bd5e46ede33efd48783629425f2526741e6eaab4444b21948",
+      "map": "profiles/daruri-study-bilingual-glossary-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "7e4db8a39709add5a30cda9bf222749e362ce1dfd2b0ce7d276daaa9406d728b",
+      "links": 1207
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-index-concordance-applications-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "f8e21abf826b90786954b91305f9b584c2ce549d329a9290ded67ec56ea940c2",
+      "packet": "gnamma-apparatus-index-concordance-applications.pdf",
+      "packet_sha256": "95c460ec17d7df765aec14beef14177dda16989e618f8e6a48560ed7100f3cb8",
+      "map": "profiles/daruri-study-bilingual-index-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "57ee89d72db12393b089447f777c99a941038dd9400eef15fa38c3132126f629",
+      "links": 1863
+    },
+    {
+      "profile": "apparatus/daruri-study-bilingual-glossary-index-concordance-applications-titles-on.pdf",
+      "base": "study/daruri-study-bilingual-titles-on.pdf",
+      "profile_sha256": "e5bfd3d9a6c1d97fd8229c1e28fe76f793561a093b1d01b928eff194f72ced09",
+      "packet": "gnamma-apparatus-glossary-index-concordance-applications.pdf",
+      "packet_sha256": "4a9f7b5d5bbd274f89d4ba85fd9398b0e03c39f7391ca7b9b9477dae0e159bb6",
+      "map": "profiles/daruri-study-bilingual-glossary-index-concordance-applications-titles-on.pdf.links.json",
+      "map_sha256": "de0968f51161f897a6b3236ec3ec10502c636fff94c1c2c9faf70b639b28996e",
+      "links": 2932
+    }
+  ]
+}
