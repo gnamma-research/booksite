@@ -136,6 +136,8 @@ async function checkedPdf(file,engine,contextSettings){
   assert(strip(str).includes(strip('SearchableTermGamma')),'English personal text missing from extractable PDF layer');
   assert(strip(str).includes(strip('مقدمة العلوم الدقيقة')),'Arabic personal text missing from extractable PDF layer');
   assert(strip(str).includes(strip('التحليل')),'Mixed Arabic/English personal note is not searchable');
+  assert(strip(str).includes(strip('بِسْمِ')),'Vowelled Arabic word missing from PDF.js text layer');
+  assert(strip(str).includes(strip('الرَّحْمَٰنِ')),'Vowelled Arabic with superscript alif missing from PDF.js text layer');
   assert(!/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/.test(str),'Invisible Arabic search layer contains corrupt control characters');
   assert(strip(str).includes(strip('Des idées françaises')),'Accented French text missing from Unicode layer');
   assert(strip(str).includes(strip('UnattachedSearchablePhi')),'Unattached notes must remain searchable');
