@@ -6,6 +6,8 @@ on:
       - 'daruri/dynamic-pdf/test_parity.py'
       - 'daruri/dynamic-pdf/build_packets.py'
       - 'daruri/dynamic-pdf/core.js'
+      - 'daruri/dynamic-pdf/design-catalog.js'
+      - 'daruri/build/build_apparatus_variants.py'
       - 'daruri/dynamic-pdf/test_assemble.cjs'
       - 'daruri/qa/verify_dynamic_apparatus_links.py'
       - '.github/workflows/daruri-dynamic-pdf-120-parity.yml'
