@@ -1,0 +1,71 @@
+name: Daruri all 120 PDFs from HTML only — source and apparatus, no prebuilt inputs
+on:
+  push:
+    branches: [research/daruri-html-first-pdf-20261022]
+    paths:
+      - 'daruri/dynamic-pdf/assemble_from_html_inputs.cjs'
+      - '.github/workflows/daruri-html-all-inputs-120.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-html-all-inputs-120-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  full-matrix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 48
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned canonical HTML typesetter, Arabic shaper and verifier
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install -q -r daruri/build/requirements.txt 'PyMuPDF==1.26.7' 'pypdf==5.9.0' 'numpy>=1.26' 'scipy>=1.13'
+          npm install --no-save --no-package-lock --prefix daruri/qa pdf-lib@1.17.1
+      - name: Build twenty complete PDFs FROM HTML source pages and HTML apparatus only
+        env:
+          GN_HTML_MATRIX: ALL
+          GN_HTML_SHARDS: '6'
+          GN_HTML_SHARD: ${{ matrix.shard }}
+          GN_HTML_TMP: /tmp/daruri-html-120-shard-${{ matrix.shard }}
+          GN_HTML_OUTPUT: /tmp/daruri-html-120-shard-${{ matrix.shard }}/generated
+        run: node daruri/dynamic-pdf/assemble_from_html_inputs.cjs
+      - name: Independently enforce 20/20 approved content, glyph/pixel, notes, bookmarks, sections and all link targets
+        run: |
+          python daruri/qa/verify_dynamic_apparatus_links.py \
+            --site daruri \
+            --generated /tmp/daruri-html-120-shard-${{ matrix.shard }}/generated \
+            --output /tmp/daruri-html-120-shard-${{ matrix.shard }}/parity
+      - name: Enforce every signed profile and zero prebuilt PDF composition inputs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          root=Path('/tmp/daruri-html-120-shard-${{ matrix.shard }}')
+          out=json.loads((root/'generated/results.json').read_text())
+          qa=json.loads((root/'parity/exact-link-parity.json').read_text())
+          assert len(out['profiles'])==out['expected']==20,out
+          assert not out['source_pdf_inputs'] and not out['apparatus_packet_pdf_inputs'],out
+          assert qa['passed']==qa['evaluated']==20 and qa['failed']==0,qa
+          print('HTML_ALL_INPUTS_SHARD_PASS',out['shard'],qa['passed'],qa['total_certified_appendix_links'])
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-complete-HTML-120-shard-${{ matrix.shard }}-strict-evidence
+          path: |
+            /tmp/daruri-html-120-shard-${{ matrix.shard }}/generated/results.json
+            /tmp/daruri-html-120-shard-${{ matrix.shard }}/parity/exact-link-parity.json
+          if-no-files-found: warn
+          retention-days: 20
