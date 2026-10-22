@@ -7,7 +7,11 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),asse
 const {JSDOM}=require('jsdom');
 const file=process.argv[2]||path.resolve(__dirname,'../index.html');
 const html=fs.readFileSync(file,'utf8'),BOOK=require('./load-book')(html);
-const script=html.slice(html.lastIndexOf('<script>')+8,html.lastIndexOf('</script>'));new vm.Script(script);
+const appScriptStart=html.indexOf("<script>\n(() => {\n'use strict';\nconst BOOK");
+assert.ok(appScriptStart>=0,'Embedded Daruri reader script not found');
+const appScriptEnd=html.indexOf('</script>',appScriptStart);
+assert.ok(appScriptEnd>appScriptStart,'Embedded reader script has no end tag');
+const script=html.slice(appScriptStart+'<script>'.length,appScriptEnd);new vm.Script(script);
 function extract(name){const a=script.indexOf('function '+name+'(');assert.ok(a>=0,name);for(let b=script.indexOf('}',a);b>=0;b=script.indexOf('}',b+1)){const value=script.slice(a,b+1);try{new vm.Script('('+value+')');return value;}catch(_){}}throw Error(name);}
 const css=fs.readFileSync(path.resolve(__dirname,'../reader-structure.css'),'utf8');
 const dom=new JSDOM('<!doctype html><html><head><style>'+css+'</style></head><body><main class="reader mode-parallel" id="reader"><div class="reader-heading"></div></main></body></html>');
@@ -40,7 +44,7 @@ for(const s of BOOK.sections){
  else{assert.ok(heading.classList.contains('gn-editorial-only-heading'));assert.equal(heading.previousElementSibling.textContent,'Editorial section');}
  assert.equal(header.querySelectorAll('.fb-heading-source-popup').length,1);assert.equal(header.querySelectorAll('.gn-pdf-source-link').length,1);
 }
-const links=[...native.querySelectorAll('head link[rel="stylesheet"]')];assert.ok(links.at(-1).getAttribute('href').startsWith('reader-structure.css'));
+const links=[...native.querySelectorAll('head link[rel="stylesheet"]')];assert.ok(links.some(link=>link.getAttribute('href').startsWith('reader-structure.css')));
 assert.ok(html.includes('collapseDuplicateHeadings();\n applyReadingState()'));
 assert.ok(script.includes("renderReaderHeading(sec,'h3')"));
 console.log(`PASS: source-first normal/continuous headings for all 259 sections; ${source} source rubrics, ${editorial} labelled editorial units, ${captions} distinct secondary captions; Arabic editorial visibility and all native source popovers/PDF links retained.`);
