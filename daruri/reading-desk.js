@@ -2,8 +2,8 @@
 (function(){
 'use strict';
 const KEY='gnamma-reading-desk-v1', FORMAT='gnamma-reading-desk', VERSION=1;
-const CATEGORIES=['all','bookmarks','mine'];
-const LABELS={all:'All',bookmarks:'Bookmarks',mine:'My notes',text:'Text',booknotes:'Book notes',notes:'My notes',dictionary:'Dictionary',index:'Subject index',bidaya:'Bidāya',lessons:'Lessons',bin:'Bin'};
+const CATEGORIES=['all','bookmarks','highlights','mine'];
+const LABELS={all:'All',bookmarks:'Bookmarks',mine:'My notes',text:'Text',booknotes:'Source notes',notes:'My notes',dictionary:'Dictionary',index:'Subject index',bidaya:'Bidāya',lessons:'Lessons',bin:'Bin'};
 const SORTS={'created-desc':'Newest saved','created-asc':'Oldest saved','modified-desc':'Recently edited',source:'Text / source order',alpha:'Title A–Z'};
 const KINDS=new Set(['section','paragraph','quote','footnote','dictionary','index','application','lesson','note']);
 const clamp=(v,max=1000)=>String(v==null?'':v).slice(0,max);
@@ -15,11 +15,14 @@ const keyOf=t=>[t.kind,t.section||'',t.segment==null?'':t.segment,t.kind==='para
 const uuid=()=>typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID():'desk-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
 const short=(v,n=110)=>clamp(v,30000).length>n?clamp(v,n-1)+'…':String(v||'');
 
+const bookmarkUI=window.GnammaBookmarkUI;
+if(!bookmarkUI)throw Error('Bookmark controls must load before the Reading Desk');
 const RD_ICON={
- bookmark:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/><path d="M12 8v5.4M9.3 10.7h5.4"/></svg>',
- bookmarkSaved:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/><path d="m9.2 10.8 2 2 3.6-4"/></svg>',
- paragraph:'<span class="gn-rd-paragraph-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/><path d="M12 8v5.4M9.3 10.7h5.4"/></svg><span class="gn-rd-paragraph-symbol">¶</span></span>',
- paragraphSaved:'<span class="gn-rd-paragraph-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/><path d="m9.2 10.8 2 2 3.6-4"/></svg><span class="gn-rd-paragraph-symbol">¶</span></span>',
+ bookmark:bookmarkUI.icon(),
+ bookmarkSaved:bookmarkUI.icon({saved:true}),
+ highlight:bookmarkUI.highlightIcon(),
+ paragraph:bookmarkUI.icon({kind:'paragraph'}),
+ paragraphSaved:bookmarkUI.icon({kind:'paragraph',saved:true}),
  note:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="3.5" width="16" height="17" rx="2"/><path d="M7 8h7M7 11h4"/><path d="m11.6 16.9 5.3-5.3 2 2-5.3 5.3-2.8.8zM15.9 12.6l2 2"/></svg>',
  saved:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
  close:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>'
@@ -216,11 +219,30 @@ function create(ctx){
   ctx.setLegacyBookmarks(list,doSave);
  }
  function active(){return records.filter(r=>!r.deleted);}
+ function footnoteLabel(t){
+  const note=ctx.notes.get(t.noteId);
+  if(!note)return 'Source note · '+ctx.sectionRef(t.section);
+  if(note.source_type==='quran'||note.kind==='quran-source'){
+   const ref=String(note.text||'').replace(/^Qur[ʾ’']?ān[,\s]*/iu,'').replace(/\.$/,'').trim();
+   return 'Qurʾān · '+(ref||t.noteId)+' · '+ctx.sectionRef(t.section);
+  }
+  if(note.source_type==='hadith'||note.kind==='hadith-source'){
+   const ref=note.source_references?.[0]?.reference||String(note.text||'').trim().replace(/\.$/,'');
+   return 'Hadith · '+short(ref||t.noteId,95)+' · '+ctx.sectionRef(t.section);
+  }
+  return (note.kindLabel||'Source note')+' · '+ctx.sectionRef(t.section)+' · '+short(String(note.text||'').trim()||t.noteId,85);
+ }
+ function footnoteKind(noteId){
+  const n=ctx.notes.get(noteId);
+  if(n?.source_type==='quran'||n?.kind==='quran-source')return 'Qurʾān reference';
+  if(n?.source_type==='hadith'||n?.kind==='hadith-source')return 'Hadith reference';
+  return n?.kindLabel||'Source note';
+ }
  function titleOf(t){if(!t)return 'Unattached note';
   if(t.kind==='section')return ctx.sectionRef(t.section)+' · '+(section(t.section)?.title||'Section');
   if(t.kind==='quote')return short(t.quote,72);
   if(t.kind==='paragraph')return ctx.sectionRef(t.section)+' · Paragraph '+(t.segment+1);
-  if(t.kind==='footnote')return 'Book note '+t.noteId+' · '+ctx.sectionRef(t.section);
+  if(t.kind==='footnote')return footnoteLabel(t);
   if(t.kind==='dictionary')return t.term;
   if(t.kind==='index')return t.term+(t.sub?' · '+t.sub:'');
   if(t.kind==='application')return (ctx.apps.get(t.app)?.title||t.app);
@@ -303,7 +325,7 @@ function create(ctx){
   if(!row)return null;
   records.unshift(row);
   if(!persist()){records.shift();return null;}
-  ctx.notify(kind==='note'?'Personal note added to Reading Desk.':'Bookmarked in Reading Desk.');
+  ctx.notify(kind==='note'?'Personal note added to Reading Desk.':kind==='quote'?'Highlighted in Reading Desk.':'Bookmarked in Reading Desk.');
   if(state.route==='bookmarks')render();
   if(state.route==='reader')refreshReaderAfterBookmark(target);
   return row;
@@ -352,7 +374,7 @@ function create(ctx){
   card.remove();
   const visible=matching();
   const count=main.querySelector('.gn-rd-count');
-  if(count)count.textContent=visible.length+' saved items';
+  if(count)count.textContent=visible.length+' saved '+(visible.length===1?'item':'items');
   const binButton=main.querySelector('.gn-rd-manage-items [data-value="bin"]');
   if(binButton){const binCount=records.filter(r=>r.deleted).length;binButton.textContent='Open Bin'+(binCount?' ('+binCount+')':'');}
   if(ui.selected===id){
@@ -362,7 +384,7 @@ function create(ctx){
   }else if(ui.selected){render();return;} // Related links may refer to the removed item.
   if(!visible.length){
    const cards=main.querySelector('#gn-rd-cards');
-   if(cards)cards.innerHTML='<p class="gn-rd-empty">No saved items here yet. Bookmark a section, a paragraph, or selected words in the reader to begin.</p>';
+   if(cards)cards.innerHTML='<p class="gn-rd-empty">No saved items here yet. Bookmark a section or paragraph, or highlight selected words in the reader to begin.</p>';
   }
  }
  function trash(id){if(moveMany([id])){lastUndo=id;showUndo();}}
@@ -427,15 +449,15 @@ function create(ctx){
   if(r.kind==='note')html+='<div class="gn-rd-personal-body"><h3>Your note</h3><p>'+escFull(r.body).replace(/\n/g,'<br>')+'</p></div>';
   return html;
  }
- function grouped(r){return r.kind==='note'?'My note':r.kind==='footnote'?'Book note':
+ function grouped(r){return r.kind==='note'?'My note':r.kind==='footnote'?footnoteKind(r.target?.noteId):
   r.kind==='section'?'Section bookmark':r.kind==='paragraph'?'Paragraph bookmark':
-  r.kind==='quote'?'Text selection':LABELS[typeOf(r)]||'Bookmark';}
+  r.kind==='quote'?'Highlight':LABELS[typeOf(r)]||'Bookmark';}
  function matching(){
   const q=norm(ui.query).toLocaleLowerCase(),bin=ui.category==='bin';
   const rows=records.filter(r=>Boolean(r.deleted)===bin&&
    (!ui.filterTarget||r.target?.section===ui.filterTarget)&&
    (ui.filterSegment===null||r.target?.segment===ui.filterSegment)&&
-   (bin||ui.category==='all'||ui.category==='mine'&&r.kind==='note'||ui.category==='bookmarks'&&r.kind!=='note')&&
+   (bin||ui.category==='all'||ui.category==='mine'&&r.kind==='note'||ui.category==='bookmarks'&&!['note','quote'].includes(r.kind)||ui.category==='highlights'&&r.kind==='quote')&&
    (bin||ui.sourceType==='all'||typeOf(r)===ui.sourceType)&&
    (!q||norm([r.title,titleOf(r.target),r.body,r.target?.quote,r.target?.term,r.target?.app,subOf(r.target)].join(' ')).toLocaleLowerCase().includes(q)));
   return bin?rows.sort((a,b)=>b.deleted-a.deleted):sortItems(rows,ui.sort);
@@ -481,8 +503,8 @@ function create(ctx){
     if(ui.filterTarget)parts.push('<p class="gn-rd-scoped">Items from '+esc(ctx.sectionRef(ui.filterTarget))+(ui.filterSegment!==null?' · paragraph '+(ui.filterSegment+1):'')+' <button data-rd="unscoped" type="button">Show all</button></p>');
   if(bin)parts.push('<p class="gn-rd-scoped">Bin <button type="button" data-rd="filter" data-value="all">← Back to saved items</button></p>');
   else parts.push('<div class="gn-rd-tabs" role="group" aria-label="Saved item categories">'+
-   ['all','bookmarks','mine'].map(v=>'<button type="button" data-rd="filter" data-value="'+v+
-    '" aria-pressed="'+(ui.category===v)+'">'+({all:'All',bookmarks:'Bookmarks',mine:'My notes'}[v])+'</button>').join('')+'</div>');
+   ['all','bookmarks','highlights','mine'].map(v=>'<button type="button" data-rd="filter" data-value="'+v+
+    '" aria-pressed="'+(ui.category===v)+'">'+({all:'All',bookmarks:'Bookmarks',highlights:'Highlights',mine:'My notes'}[v])+'</button>').join('')+'</div>');
   parts.push('<label class="gn-rd-search" for="gn-rd-query">Search saved items<input id="gn-rd-query" type="search" autocomplete="off" placeholder="Search notes and quotations…" value="'+esc(ui.query)+'"></label>');
   const typeOptions=[['all','All sources'],['text','Text passages'],['booknotes','Book notes'],['dictionary','Dictionary'],['index','Subject index'],['bidaya','Bidāya applications'],['lessons','Study lessons']];
   parts.push('<div class="gn-rd-controls" role="group" aria-label="Browse saved items">');
@@ -490,7 +512,7 @@ function create(ctx){
    '<option value="'+value+'"'+(ui.sourceType===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label>');
   parts.push('<label for="gn-rd-sort">Sort by <select id="gn-rd-sort">'+Object.entries(SORTS).map(([value,name])=>
    '<option value="'+value+'"'+(ui.sort===value?' selected':'')+'>'+name+'</option>').join('')+'</select></label></div>');
-    parts.push('<p class="gn-rd-count" aria-live="polite">'+visible.length+' '+(bin?'items in Bin':'saved items')+'</p>');
+    parts.push('<p class="gn-rd-count" aria-live="polite">'+visible.length+' '+(bin?(visible.length===1?'item in Bin':'items in Bin'):(visible.length===1?'saved item':'saved items'))+'</p>');
   parts.push('<div class="gn-rd-layout"><div class="gn-rd-cards" id="gn-rd-cards">');
   let lastGroup='',lastPassage='';
   for(const r of visible){
@@ -501,7 +523,7 @@ function create(ctx){
    lastGroup=group;lastPassage=key;
    parts.push(htmlCard(r,linkedCounts));
   }
-  if(!visible.length)parts.push('<p class="gn-rd-empty">'+(bin?'Bin is empty.':ui.query?'No items match the search.':'No saved items here yet. Bookmark a section, a paragraph, or selected words in the reader to begin.')+'</p>');
+  if(!visible.length)parts.push('<p class="gn-rd-empty">'+(bin?'Bin is empty.':ui.query?'No items match the search.':'No saved items here yet. Bookmark a section or paragraph, or highlight selected words in the reader to begin.')+'</p>');
   parts.push('</div><div class="gn-rd-detail" id="gn-rd-detail">');
   if(selected&&visible.some(r=>r.id===selected.id)){
    parts.push('<button class="gn-rd-mobile-back" type="button" data-rd="detail-back">← Reading Desk</button>');
@@ -694,7 +716,7 @@ function create(ctx){
   let bar=$('#gn-rd-selection-bar');
   if(!bar){bar=document.createElement('div');bar.id='gn-rd-selection-bar';bar.className='gn-rd-selection-bar';bar.setAttribute('role','toolbar');bar.setAttribute('aria-label','Save selected text');document.body.append(bar);}
   bar.setAttribute('aria-label','Actions for selected text');bar.hidden=false;
-  bar.innerHTML=rdTool('Bookmark selected words','data-rd="selection-bookmark"','bookmark')+
+  bar.innerHTML=rdTool('Highlight selected words','data-rd="selection-bookmark"','highlight')+
    rdTool('Add a personal note for selected words','data-rd="selection-note"','note')+
    rdTool('Dismiss selection actions','data-rd="selection-dismiss"','close');
  }
@@ -748,7 +770,9 @@ function create(ctx){
   const row=document.createElement('div');row.className='gn-rd-attach-actions'+(compact?' gn-rd-compact':'');
   const serialized=encodeURIComponent(JSON.stringify(target));
   const stored=active().some(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
-  row.innerHTML='<button type="button" data-rd="attach-bookmark" data-target="'+esc(serialized)+'" aria-pressed="'+stored+'">'+(stored?'✓ Saved · View':'◇ Bookmark')+'</button>'+
+  const title=bookmarkUI.actionLabel(target.kind,stored);
+  row.innerHTML='<button type="button" data-rd="attach-bookmark" data-target="'+esc(serialized)+'" aria-pressed="'+stored+'" aria-label="'+esc(title)+'">'+bookmarkUI.icon({saved:stored})+'<span>'+esc(stored?'Remove bookmark':'Bookmark')+'</span></button>'+
+   '<button type="button" data-rd="attach-view" data-target="'+esc(serialized)+'"'+(stored?'':' hidden')+'>View in Reading Desk</button>'+
    '<button type="button" data-rd="attach-note" data-target="'+esc(serialized)+'">+ Add personal note</button>';
   return row;
  }
@@ -759,7 +783,11 @@ function create(ctx){
   document.querySelectorAll('[data-rd="attach-bookmark"]').forEach(btn=>{
    let target;try{target=JSON.parse(decodeURIComponent(btn.dataset.target||''));}catch(_){return;}
    const stored=keys.has(keyOf(target));
-   btn.textContent=stored?'✓ Saved · View':'◇ Bookmark';btn.setAttribute('aria-pressed',String(stored));
+   const title=bookmarkUI.actionLabel(target.kind,stored);
+   btn.innerHTML=bookmarkUI.icon({saved:stored})+'<span>'+esc(stored?'Remove bookmark':'Bookmark')+'</span>';
+   btn.setAttribute('aria-label',title);btn.setAttribute('aria-pressed',String(stored));
+   const view=btn.parentElement?.querySelector('[data-rd="attach-view"]');
+   if(view)view.hidden=!stored;
   });
  }
  function showPersonalMarks(){
@@ -1399,10 +1427,15 @@ function create(ctx){
   if(action==='go-desk-item'&&row){const t=row.target||{};enterDeskFromText(String(t.section||state.n),t.segment==null?null:Number(t.segment),row.id);return;}
   if(action==='go-desk-passage'){enterDeskFromText(String(btn.dataset.section||state.n),Number(btn.dataset.segment));return;}
   if(action==='trash-inline'&&row){trash(id);closeContext();afterReader();return;}
-  if(action==='attach-bookmark'||action==='attach-note'){
+  if(action==='attach-bookmark'||action==='attach-note'||action==='attach-view'){
    let target;try{target=validateTarget(JSON.parse(decodeURIComponent(btn.dataset.target)))}catch(e){}
-   if(!target){ctx.notify('Cannot bookmark this entry.');return;}
-   if(action==='attach-note')showEditor(target);else{const found=active().find(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));if(found){if(target.section)enterDeskFromText(target.section,target.segment==null?null:target.segment,found.id);else{ui.category='all';ui.sourceType='all';ui.selected=found.id;ui.filterTarget='';ui.filterSegment=null;ui.mobileDetail=matchMedia('(max-width:760px)').matches;ctx.navigate('bookmarks');}}else upsert(target.kind,target);}
+   if(!target){ctx.notify('Cannot find this reference.');return;}
+   if(action==='attach-note'){showEditor(target);return;}
+   const found=active().find(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
+   if(action==='attach-bookmark'){if(found)trash(found.id);else upsert(target.kind,target);return;}
+   if(!found){ctx.notify('This reference is not bookmarked.');return;}
+   if(target.section)enterDeskFromText(target.section,target.segment==null?null:target.segment,found.id);
+   else{ui.category='all';ui.sourceType='all';ui.selected=found.id;ui.filterTarget='';ui.filterSegment=null;ui.mobileDetail=matchMedia('(max-width:760px)').matches;ctx.navigate('bookmarks');}
    return;
   }
   if(action==='new-note'){showEditor(null);return;}
@@ -1517,8 +1550,8 @@ function create(ctx){
  return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records,
   openAt:(section,segment=null,kind='all')=>{
    enterDeskFromText(String(section),segment);
-   if(kind==='notes'||kind==='bookmarks'){
-    ui.category=kind==='notes'?'mine':'bookmarks';
+   if(kind==='notes'||kind==='bookmarks'||kind==='highlights'){
+    ui.category=kind==='notes'?'mine':kind;
     if(state.route==='bookmarks')render();
    }
   }

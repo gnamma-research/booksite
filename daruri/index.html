@@ -2282,7 +2282,7 @@ body:not(.reading-active) .reading-return-bar{
 <script src="reading-styles.js?v=20261020-menu1"></script>
 <script src="visuals-controls.js?v=20261020-visuals1"></script>
 <link href="reader-structure.css?v=20261020-structure1" rel="stylesheet"/>
-<link rel="stylesheet" href="reading-desk.css?v=20261022-markloc1"/><link rel="stylesheet" href="reading-mode-controls.css?v=20261022-markloc1"/>
+<link rel="stylesheet" href="bookmark-ui.css?v=20261022-bookmark-audit1"/><link rel="stylesheet" href="reading-desk.css?v=20261022-bookmark-audit1"/><link rel="stylesheet" href="reading-mode-controls.css?v=20261022-bookmark-audit1"/>
 <noscript><link rel="stylesheet" href="source-note-ui.css?v=20261021-fallback-quran1"></noscript>
 <link rel="stylesheet" href="quran-context-ui.css?v=20261022-qcontext1"/>
 </head>
@@ -3664,8 +3664,8 @@ body:not(.reading-active) .reading-return-bar{
   <div class="reader-language-and-actions" data-reader-only role="group" aria-label="Reading languages and Arabic vocalization">
    <div aria-label="Visible languages; at least one must remain active" class="persistent-languages" id="persistentLanguages" role="group"></div>
   </div>
-  <div class="reader-action-slot" data-reader-only role="group" aria-label="Save, copy and share section">
-   <button id="readerSaveAction" class="reader-action-item" type="button" data-bookmark="1" aria-pressed="false" aria-label="Save section"><svg class="icon" aria-hidden="true"><use href="#i-bookmark"></use></svg><span class="reader-action-caption" id="readerSaveLabel">Save</span></button>
+  <div class="reader-action-slot" data-reader-only role="group" aria-label="Bookmark, copy and share section">
+   <button id="readerSaveAction" class="reader-action-item" type="button" data-bookmark="1" aria-pressed="false" aria-label="Bookmark section"><svg class="icon" aria-hidden="true"><use href="#i-bookmark"></use></svg><span class="reader-action-caption" id="readerSaveLabel">Bookmark</span></button>
    <button id="readerCopyAction" class="reader-action-item" type="button" data-copy-matn="1" aria-label="Copy complete visible section"><svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg><span class="reader-action-caption">Copy</span></button>
    <button id="readerShareAction" class="reader-action-item" type="button" data-share="1" aria-label="Share section"><svg class="icon" aria-hidden="true"><use href="#i-share"></use></svg><span class="reader-action-caption">Share</span></button>
   </div>
@@ -3821,12 +3821,12 @@ body:not(.reading-active) .reading-return-bar{
 
 </div>
 </div>
-</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=20261021-section1-qparallels1"></script><script defer src="download-bundle.js?v=20261022-qcontext1"></script>
+</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=20261021-section1-qparallels1"></script><script defer src="download-bundle.js?v=20261022-bookmark-audit1"></script>
 <script src="source-reference-data.js?v=20261021-qinline4"></script>
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
 <script src="study-guide-data.js?v=20261021-study-path1"></script>
-<script src="study-guide.js?v=20261021-study-path1"></script><script src="editions.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-icons.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-selector.js?v=20261022-two-tabs-inline1"></script><script src="reading-desk.js?v=20261022-markloc1"></script><script src="reading-mode-controls.js?v=20261022-docksections1"></script><script>
+<script src="study-guide.js?v=20261021-study-path1"></script><script src="editions.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-icons.js?v=20261021-editiontabs-vowels-release1"></script><script src="editions-selector.js?v=20261022-two-tabs-inline1"></script><script src="bookmark-ui.js?v=20261022-bookmark-audit1"></script><script src="reading-desk.js?v=20261022-bookmark-audit1"></script><script src="reading-mode-controls.js?v=20261022-bookmark-audit1"></script><script>
 (() => {
 'use strict';
 const BOOK = JSON.parse(document.getElementById('editionData').textContent);
@@ -4412,8 +4412,8 @@ function renderGlossary(){$('#mainContent').innerHTML=panelHead('TECHNICAL LANGU
 function updateGlossaryList(){const q=state.glossaryQuery;const arr=BOOK.glossary.filter(g=>!q||contains([g.term,g.ar,g.definition].join(' '),q)).sort((a,b)=>a.term.localeCompare(b.term,'en',{sensitivity:'base'}));$('#glossaryCount').textContent=arr.length+' entries';$('#glossaryList').innerHTML=arr.length?arr.map(g=>`<div class="list-card glossary-card"><div><h2>${esc(g.term)}</h2><div class="term-ar" lang="ar" dir="rtl">${esc(g.ar)}</div></div><p class="definition">${esc(g.definition)}</p><div class="jump-list">${(g.sections||[]).map(n=>sectionButton(n)).join('')}</div></div>`).join(''):'<div class="empty-state">No dictionary entries match that spelling. Arabic text is searched without vowel marks.</div>'}
 function renderBookmarks(){
  const marks=state.bookmarks.filter(n=>sections.has(String(n))).map(n=>sections.get(String(n)));
- $('#mainContent').innerHTML=panelHead('YOUR READING','Reading Desk','Keep a list of sections to revisit. Bookmarks stay in your browser; personal note-taking is not enabled in this edition.')+
- `<h2 class="subheading">Bookmarked passages <small>(${marks.length})</small></h2>${marks.length?marks.map(s=>`<div class="list-card"><h2>${sectionButton(s.id,`§${s.id} · ${esc(s.title)}`)}</h2><p>${esc(s.segments[0].en.slice(0,185))}…</p><div class="footline">${sectionButton(s.id,'Open section')}<button data-bookmark="${esc(s.id)}" type="button">Remove bookmark</button></div></div>`).join(''):'<div class="empty-state">No bookmarks yet. Use the bookmark symbol at the top of a section.</div>'}`;
+ $('#mainContent').innerHTML=panelHead('YOUR READING','Reading Desk','Keep a list of sections to revisit. Bookmarks and personal notes stay in your browser.')+
+ `<h2 class="subheading">Bookmarked sections <small>(${marks.length})</small></h2>${marks.length?marks.map(s=>`<div class="list-card"><h2>${sectionButton(s.id,`§${s.id} · ${esc(s.title)}`)}</h2><p>${esc(s.segments[0].en.slice(0,185))}…</p><div class="footline">${sectionButton(s.id,'Open section')}<button data-bookmark="${esc(s.id)}" type="button">Remove bookmark</button></div></div>`).join(''):'<div class="empty-state">No bookmarks yet. Use the bookmark symbol at the top of a section.</div>'}`;
 }
 function pdfEditorialAppendices(){
  const titles=[['introduction','Editorial introduction (earlier working PDF, pp. 2–3)'],['grammar','Grammatical review record (earlier working PDF, p. 117)'],['sources','Sources and lexical controls (earlier working PDF, p. 118)']];
@@ -4742,7 +4742,7 @@ function syncReadingChrome() {
   const contextControl=$('#contextToolbar');if(contextControl){const on=Boolean($('#readingContextPanel') && !$('#readingContextPanel').hidden);contextControl.setAttribute('aria-pressed',String(on));contextControl.setAttribute('aria-expanded',String(on));contextControl.setAttribute('aria-label',on?'Close reading context panel':'Open reading context panel');contextControl.title=contextControl.getAttribute('aria-label');contextControl.classList.toggle('active',on);}
   const current=String(state.n),savedHere=getBookmarked(current);
   const saveAction=$('#readerSaveAction'),copyAction=$('#readerCopyAction'),shareAction=$('#readerShareAction');
-  if(saveAction){saveAction.dataset.bookmark=current;saveAction.setAttribute('aria-pressed',String(savedHere));saveAction.setAttribute('aria-label',savedHere?'Remove saved section':'Save section');saveAction.title=saveAction.getAttribute('aria-label');saveAction.classList.toggle('is-saved',savedHere);const use=saveAction.querySelector('svg use');if(use)use.setAttribute('href',savedHere?'#i-bookmark-filled':'#i-bookmark');const label=$('#readerSaveLabel');if(label)label.textContent=savedHere?'Remove bookmark':'Save section';}
+  if(saveAction){saveAction.dataset.bookmark=current;saveAction.setAttribute('aria-pressed',String(savedHere));saveAction.setAttribute('aria-label',savedHere?'Remove section bookmark':'Bookmark section');saveAction.title=saveAction.getAttribute('aria-label');saveAction.classList.toggle('is-saved',savedHere);const use=saveAction.querySelector('svg use');if(use)use.setAttribute('href',savedHere?'#i-bookmark-filled':'#i-bookmark');const label=$('#readerSaveLabel');if(label)label.textContent=savedHere?'Remove bookmark':'Bookmark';}
   if(copyAction)copyAction.dataset.copyMatn=current;
   if(shareAction)shareAction.dataset.share=current;
   const focus=$('#focusToolbar');
@@ -5719,7 +5719,7 @@ function gnRestoreReferenceView(view){
  window.scrollTo({top:Math.max(0,Number(view.y)||0),behavior:'instant'});
 }
 
-const gnViewNames={index:'Subject index',contents:'Contents',glossary:'Dictionary · Quick definitions',study:'Study guide',applications:'Bidāya applications',bookmarks:'Bookmarks',home:'Home',about:'About',dictionary:'Dictionary · Historical sources'};
+const gnViewNames={index:'Subject index',contents:'Contents',glossary:'Dictionary · Quick definitions',study:'Study guide',applications:'Bidāya applications',bookmarks:'Reading Desk',home:'Home',about:'About',dictionary:'Dictionary · Historical sources'};
 try{
   const external=JSON.parse(sessionStorage.getItem('daruri-dictionary-jump-origin')||'null');
   sessionStorage.removeItem('daruri-dictionary-jump-origin');
@@ -5894,7 +5894,7 @@ applyParallelOrder();applyArabicFont();applyEnglishFont();bind();bindReaderEnhan
 if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261022-qcontext1').catch(()=>{});
 })();
 
-</script><link rel="stylesheet" href="gnamma-search.css?v=20261022-proximity1"><link rel="stylesheet" href="gnamma-scholarly.css?v=20261022-scholarly1"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-scholarly.js?v=20261022-scholarly1"></script><script src="gnamma-search.js?v=20261022-scholarly1"></script><script src="quran-context-ui.js?v=20261022-qcontext1"></script></body>
+</script><link rel="stylesheet" href="gnamma-search.css?v=20261022-proximity1"><link rel="stylesheet" href="gnamma-scholarly.css?v=20261022-scholarly1"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-scholarly.js?v=20261022-scholarly1"></script><script src="gnamma-search.js?v=20261022-bookmark-audit1"></script><script src="quran-context-ui.js?v=20261022-qcontext1"></script></body>
 </html>
 
 

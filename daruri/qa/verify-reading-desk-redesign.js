@@ -4,9 +4,9 @@
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
 const base=path.resolve(__dirname,'..');
 const read=file=>fs.readFileSync(path.join(base,file),'utf8');
-const js=read('reading-desk.js'),css=read('reading-desk.css'),dict=read('reading-desk-dictionary.js');
+const js=read('reading-desk.js'),icons=read('bookmark-ui.js'),css=read('reading-desk.css'),dict=read('reading-desk-dictionary.js');
 const sw=read('sw.js'),bundle=read('download-bundle.js');
-for(const [name,source] of Object.entries({'reading-desk.js':js,'reading-desk-dictionary.js':dict,'sw.js':sw,'download-bundle.js':bundle}))
+for(const [name,source] of Object.entries({'bookmark-ui.js':icons,'reading-desk.js':js,'reading-desk-dictionary.js':dict,'sw.js':sw,'download-bundle.js':bundle}))
  new vm.Script(source,{filename:name});
 const matches=(text,needle)=>text.includes(needle);
 function ensure(condition,message){assert.ok(condition,message);}
@@ -101,6 +101,7 @@ function boot(source,opts={}){
   matchMedia:()=>({matches:opts.mobile??true}),requestAnimationFrame:fn=>fn(),
   CSS:cssApi,Highlight,NodeFilter:{SHOW_TEXT:4},URL,Intl,Date,Math,console,setTimeout,clearTimeout,confirm:()=>true,
   navigator:{},decodeURIComponent,encodeURIComponent};
+ vm.runInNewContext(icons,sandbox,{filename:'bookmark-ui.js'});
  vm.runInNewContext(js,sandbox,{filename:'reading-desk.js'});
  const desk=window.GnammaReadingDesk.create(context);
  desk.render();
@@ -114,8 +115,8 @@ function boot(source,opts={}){
   notifyExternalChange(){for(const fn of events['window:storage']||[])fn({key:'gnamma-reading-desk-v1',newValue:opts.sharedStore?.value??raw})}};
 }
 test('source scripts compile and cache version matches',()=>{
- ensure(sw.includes('20261021-readingdesk6'),'service worker cache not updated');
- ensure(bundle.includes('20261021-readingdesk6'),'offline bundle not updated');
+ ensure(sw.includes('20261022-bookmark-audit1'),'service worker cache not updated');
+ ensure(bundle.includes('bookmark-ui.js')&&bundle.includes('bookmark-ui.css'),'offline bundle omits bookmark controls');
  ensure(dict.includes("dateSource:'recorded'"),'dictionary dates missing');
 });
 test('one-click section removal makes exactly one storage write',()=>{
@@ -127,7 +128,7 @@ test('one-click section removal makes exactly one storage write',()=>{
 test('composite bookmark-and-pilcrow control saves an aligned bilingual paragraph',()=>{
  const h=boot(backup([]));h.state.route='reader';h.desk.afterReader();
  const markup=h.grids[0].nextElementSibling.innerHTML;
- ensure(markup.includes('gn-rd-paragraph-mark')&&markup.includes('¶')&&!markup.includes('Save paragraph'),
+ ensure(markup.includes('gn-bm-paragraph')&&markup.includes('¶')&&!markup.includes('Save paragraph'),
   'paragraph bookmark must use the icon-only bookmark-and-pilcrow control');
  const before=h.writes;
  h.event('click',{dataset:{rd:'paragraph-bookmark',section:'190',segment:'0'}});

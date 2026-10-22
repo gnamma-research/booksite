@@ -1,0 +1,15 @@
+/* Shared, theme-neutral bookmark family. ¶ deliberately tucks into the ribbon corner. */
+.gn-bm-ribbon,.gn-highlight-icon{display:inline-block;width:20px;height:20px;vertical-align:middle;flex:none}
+.gn-bm-paragraph{position:relative;display:inline-block;width:25px;height:23px;vertical-align:middle;flex:none;white-space:nowrap;color:inherit}
+.gn-bm-paragraph>.gn-bm-ribbon{position:absolute;left:0;top:0;width:21px!important;height:22px!important;max-width:none}
+.gn-bm-paragraph>.gn-bm-pilcrow{position:absolute;right:-1px;bottom:-1px;z-index:1;font:700 12px/1.05 Georgia,'Iowan Old Style',serif;letter-spacing:-.04em;color:inherit;padding:0 1px;border-radius:2px;background:var(--paper,var(--surface,var(--background,#fffdf9)))}
+.gn-rd-attach-actions button[data-rd="attach-bookmark"],.gn-rd-dictionary-actions button[data-rd-dictionary="bookmark"]{display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.gn-rd-attach-actions button[data-rd="attach-bookmark"]>.gn-bm-ribbon,.gn-rd-dictionary-actions button[data-rd-dictionary="bookmark"]>.gn-bm-ribbon{width:17px;height:17px}
+.gn-rd-attach-actions button[hidden]{display:none!important}
+.gn-rd-attach-actions [aria-pressed="true"],.gn-rd-dictionary-actions [aria-pressed="true"]{border-color:var(--accent,#58756b);color:var(--accent,#365f55);background:var(--accent-soft,rgba(75,120,105,.08))}
+#readerDock .gn-dock-private-status .gn-bm-paragraph{width:19px;height:18px}
+#readerDock .gn-dock-private-status .gn-bm-paragraph>.gn-bm-ribbon{width:16px!important;height:18px!important}
+#readerDock .gn-dock-private-status .gn-bm-paragraph>.gn-bm-pilcrow{right:0;bottom:0;font-size:10px}
+#readerDock .gn-dock-private-status>.gn-dock-mark>.gn-bm-ribbon{width:15px;height:15px}
+#readerSaveAction[aria-pressed="true"] .gn-bm-ribbon{color:var(--accent,currentColor)}
+.gn-rd-dictionary-actions [hidden]{display:none!important}

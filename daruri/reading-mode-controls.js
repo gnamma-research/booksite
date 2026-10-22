@@ -5,11 +5,13 @@
 // Quran.com-inspired icon grammar, independently redrawn to use Daruri's
 // currentColor: bookmark with confirmation, a bookmark-plus-¶ pair, and
 // a note containing a pen. Saved indicators are never destructive actions.
+const bookmarkUI=window.GnammaBookmarkUI;
+if(!bookmarkUI)throw Error('Bookmark controls must load before the reading dock');
 const icons={
- section:'<path d="M6 3.5h12v17l-6-4-6 4.5z"/><path d="m9.3 10.7 2 2 3.7-4"/>',
- paragraph:'<path d="M6 3.5h12v17l-6-4-6 4.5z"/><path d="m9.3 10.7 2 2 3.7-4"/>',
- highlight:'<path d="m15 4 5 5M4 20l4-.5L20 7a3 3 0 0 0-4-4L4 15z"/>',
- note:'<rect x="3.6" y="3.5" width="16" height="17" rx="2"/><path d="M7 8h7M7 11h4"/><path d="m11.6 16.9 5.3-5.3 2 2-5.3 5.3-2.8.8zM15.9 12.6l2 2"/>'
+ section:bookmarkUI.icon({saved:true}),
+ paragraph:bookmarkUI.icon({kind:'paragraph',saved:true}),
+ highlight:bookmarkUI.highlightIcon(),
+ note:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.6" y="3.5" width="16" height="17" rx="2"/><path d="M7 8h7M7 11h4"/><path d="m11.6 16.9 5.3-5.3 2 2-5.3 5.3-2.8.8zM15.9 12.6l2 2"/></svg>'
 };
 function create({state,rd}){
  const dock=document.getElementById('readerDock');
@@ -138,14 +140,12 @@ function create({state,rd}){
    const paragraphDetail=place.segment==null||type==='sectionBookmarks'?'':'; '+local+' in paragraph '+(place.segment+1);
    button.setAttribute('aria-label',label+': '+count+' in '+place.section+paragraphDetail);
    button.title=label+': '+count+' in '+place.section+paragraphDetail;
-   button.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true">'+icons[icon]+'</svg>'+
-     (type==='paragraphBookmarks'?'<span class="gn-dock-pilcrow" aria-hidden="true">¶</span>':'')+
-     '<span class="gn-dock-count">'+count+'</span>';
+   button.innerHTML=icons[icon]+'<span class="gn-dock-count">'+count+'</span>';
    button.addEventListener('click',()=>{
     // Keep jump/title separate from annotation actions; never toggle/delete here.
     // The counter reports section totals; open the same section, not just
     // the currently visible paragraph. This action never deletes a mark.
-    rd.openAt(place.section,null,type==='notes'?'notes':'bookmarks');
+    rd.openAt(place.section,null,type==='notes'?'notes':type==='highlights'?'highlights':'bookmarks');
    });
    status.append(button);
   }
