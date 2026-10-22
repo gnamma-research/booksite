@@ -34,7 +34,12 @@ for(const [id,item] of Object.entries(raw)){
  assert(item.arabic&&item.arabic.length>50,'Missing Arabic isnad/report '+id);
  assert(!/English translation/.test(item.arabic),'Arabic source was accidentally set to English '+id);
  assert(item.source&&/^https:\/\//.test(item.source),'Missing source-provenance URL '+id);
+ assert(item.book&&item.book.length>3,'Missing source book '+id);
+ assert(item.chapter_en&&item.chapter_ar,'Missing collection chapter heading '+id);
+ assert(item.narrator&&item.narrator.length>3,'Missing principal narrator '+id);
+ assert(item.englishOriginal||item.englishBrief,'Missing English source synopsis '+id);
  if(item.englishOriginal)assert(item.englishOriginal.length>30,'English rendering too short '+id);
+ if(item.englishBrief)assert(item.englishBrief.length>40,'English précis too short '+id);
 }
 assert(raw['muslim:360a'].arabic.includes('الإِبِلِ'),'Muslim 360a must be camel-resting-place report, not global 360');
 assert(raw['muslim:977a'].arabic.includes('الْقُبُورِ'),'Muslim 977a must concern the later permission to visit graves');
@@ -49,7 +54,7 @@ for(const name of core.concat(['hadith-context-ui.js','hadith-context-ui.css','H
  assert(src('download-bundle.js').includes(name),'Missing from download package: '+name);
  if(name.endsWith('.js')||name.endsWith('.css'))assert(src('sw.js').includes(name),'Missing from offline cache: '+name);
 }
-console.log('PASS: 33 Hadith notes, 55 cited placements, 47/47 full Arabic source records and source-priority/offline invariants.');
+console.log('PASS: 33 Hadith notes, 55 cited placements, 47/47 full Arabic, English contexts, narrator+chapter metadata and source-priority/offline invariants.');
 async function domCheck(){
  const {JSDOM}=require('jsdom');
  const dom=new JSDOM('<!doctype html><html><head></head><body><div class="gn-note-entry" data-note-id="HAD-R031"><p>Note.</p></div><div class="gn-note-entry" data-note-id="HAD-R216"><p>Note.</p></div><div class="gn-note-entry" data-note-id="HAD-R189"><p>Note.</p></div></body></html>',{url:'file:///example/daruri/index.html',runScripts:'outside-only'});
