@@ -38,6 +38,7 @@ def check(source, generated, original_map, destination):
     if len(segments)!=414 or mapping.get("section_count")!=258:
         raise ValueError(f"Source map is incomplete ({len(segments)}/414)")
     with fitz.open(source) as old,fitz.open(generated) as new:
+        pages_count=len(old)
         if len(old)!=len(new):
             raise ValueError("Page count changed")
         if old.get_toc()!=new.get_toc():
@@ -92,7 +93,7 @@ def check(source, generated, original_map, destination):
     destination.write_text(json.dumps(mapping,ensure_ascii=False,separators=(",",":"))+"\n","utf8")
     print("HTML_PANGO_TEMPORARY_REBIND",json.dumps({
         "approved_sha":official_sha,"html_generated_sha":sha(generated),
-        "page_count":len(old),"source_segments":len(segments),
+        "page_count":pages_count,"source_segments":len(segments),
         "original_anchors":258,"rebinding_for_QA_only":True,
         "new_map_file":str(destination)
     }),flush=True)
