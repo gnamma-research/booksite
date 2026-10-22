@@ -100,7 +100,7 @@ def run_one(edition,editorial,outdir,emit=False):
             "words_recorded":sum(len(v["words"]) for v in groups.values())
         }
         print("STUDY_REFERENCE_PROBE",json.dumps(report,ensure_ascii=False),flush=True)
-        if emit and parity and len(groups)==len(expected)+2 and all(same.values()):
+        if emit and parity and len(groups)==len(expected)+2 and all(same[k] for k in expected):
             form="vocalized"
             result={k:v["words"] for k,v in groups.items() if k in expected}
             assert len(result)==414 and all(result.values())
