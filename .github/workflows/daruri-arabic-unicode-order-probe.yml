@@ -4,6 +4,7 @@ on:
     branches: [qa/daruri-arabic-unicode-order-20261022]
     paths:
       - 'daruri/qa/diagnose_arabic_pdf_unicode.py'
+      - 'daruri/qa/audit_arabic_native_414.py'
       - '.github/workflows/daruri-arabic-unicode-order-probe.yml'
   workflow_dispatch: {}
 permissions:
@@ -14,7 +15,7 @@ concurrency:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -34,6 +35,9 @@ jobs:
       - name: Diagnose deployed source-PDF CMaps, RTL extraction order and fonts
         run: |
           python daruri/qa/diagnose_arabic_pdf_unicode.py --output-dir /tmp/daruri-unicode-order-probe
+      - name: Full 414-passage native Arabic search matrix (four canonical plus A4)
+        run: |
+          python daruri/qa/audit_arabic_native_414.py --output /tmp/daruri-unicode-order-probe/414-matrix.json
       - name: Save non-release evidence (sample fixture PDFs and JSON)
         if: always()
         uses: actions/upload-artifact@v4
@@ -41,5 +45,6 @@ jobs:
           name: daruri-arabic-unicode-order-NON-RELEASE
           path: |
             /tmp/daruri-unicode-order-probe/report.json
+            /tmp/daruri-unicode-order-probe/414-matrix.json
             /tmp/daruri-unicode-order-probe/probe-*.pdf
           if-no-files-found: warn
