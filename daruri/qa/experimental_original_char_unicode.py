@@ -125,7 +125,7 @@ def remove_broken_text(page, planned):
     doc.update_stream(contents[0], raw)
 
 
-def cmap_for(aliases):
+def cmap_for(aliases, logical_cluster_payload=False):
     lines = [
         "/CIDInit /ProcSet findresource begin", "12 dict begin", "begincmap",
         "/CIDSystemInfo << /Registry (Gnamma) /Ordering (SourceArabic) /Supplement 0 >> def",
@@ -141,14 +141,14 @@ def cmap_for(aliases):
             # Reverse the serialized cluster (not the source text) so the
             # extracted/copied word retains BASE followed by its vowel marks.
             # This is a no-op for unvowelled one-codepoint characters.
-            physical = scalar[::-1] if len(scalar) > 1 else scalar
+            physical = scalar if logical_cluster_payload else (scalar[::-1] if len(scalar) > 1 else scalar)
             lines.append(f"<{cid:04X}> <{physical.encode('utf-16be').hex().upper()}>")
         lines.append("endbfchar")
     lines.extend(["endcmap", "CMapName currentdict /CMap defineresource pop", "end", "end"])
     return ("\n".join(lines) + "\n").encode("ascii")
 
 
-def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13, scalar_harakat=False, word_actualtext=False):
+def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False):
     # The printed Arabic is RTL. Each invisible line emits Unicode scalars in
     # visual/physical LTR order; engines recover logical Arabic through bidi.
     aliases, commands = [], []
@@ -211,7 +211,7 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
             )
     if not aliases or len(aliases) >= 65535:
         raise ValueError("Empty or too-large page-local Unicode CID map")
-    tounicode = new_stream(pdf, cmap_for(aliases))
+    tounicode = new_stream(pdf, cmap_for(aliases, logical_cluster_payload=logical_cluster_payload))
     cidtogid = bytearray(2 * (len(aliases)+1))
     for cid, _, _ in aliases:
         cidtogid[2*cid+1] = 3  # An existing, but never painted, marker glyph.
@@ -276,7 +276,7 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
     return len(aliases)
 
 
-def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False):
+def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False):
     original, mapping_path, output = Path(original), Path(mapping_path), Path(output)
     if output.exists() or original.resolve() == output.resolve():
         raise ValueError("Refusing to replace any existing file")
@@ -320,7 +320,7 @@ def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=
             total_lines += len(source_on_page)
             total_cids += add_character_semantics(
                 doc, page, page_no, source_on_page, fontfile,
-                scalar_harakat=scalar_harakat,word_actualtext=word_actualtext
+                scalar_harakat=scalar_harakat,word_actualtext=word_actualtext,logical_cluster_payload=logical_cluster_payload
             )
         if original.name == "daruri-reading-arabic-titles-off.pdf" and total_lines != 2583:
             raise ValueError(f"Unexpected unvowelled Arabic Reading line coverage {total_lines}/2583")
@@ -340,5 +340,6 @@ if __name__ == "__main__":
     parser.add_argument("--output", required=True)
     parser.add_argument("--scalar-harakat", action="store_true", help="Experimental one-scalar-per-CID vocalization mapping")
     parser.add_argument("--word-actualtext", action="store_true", help="Experiment: tagged original Unicode word replacements")
+    parser.add_argument("--logical-cluster-payload", action="store_true", help="Research: preserve logical grapheme Unicode order in ToUnicode for native PDFKit")
     args = parser.parse_args()
-    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext)
+    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext, args.logical_cluster_payload)
