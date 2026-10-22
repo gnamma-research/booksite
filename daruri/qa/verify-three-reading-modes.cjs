@@ -48,18 +48,24 @@ async function exercise(engine,name,origin){
   assert(await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg rect').count()===1 &&
     await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg path').count()>=2,
     'personal note icon must contain a page and inset pen');
-  // Scroll from ¶1 (bookmarked/highlighted/noted) to ¶2 (no paragraph-level
-  // saved marks). A saved section must remain visible, but the paragraph icon
-  // and paragraph-specific quotation/note counts must disappear immediately.
+  // Scroll from ¶1 (bookmarked/highlighted/noted) to ¶2 (no marks of its own).
+  // The section-wide counters MUST remain visible, otherwise a reader browsing
+  // within §11 wrongly sees zero marks despite saved material in paragraph 1.
   await page.locator('#reader .passage-grid[data-segment="1"]').first()
     .evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
   await page.waitForFunction(()=>document.querySelector('#gn-dock-paragraph-ref')?.textContent==='· ¶2',{timeout:8000});
   assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="sectionBookmarks"]').count(),1,
     'section bookmark must persist as reader advances to paragraph 2');
-  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraphBookmarks"]').count(),0,
-    'saved paragraph 1 must not leak into paragraph 2');
-  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="highlights"]').count(),0,
-    'selected quotation from paragraph 1 leaked into paragraph 2');
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraphBookmarks"]').count(),1,
+    'section-wide paragraph-bookmark count vanished while browsing paragraph 2');
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="highlights"]').count(),1,
+    'section-wide highlight count vanished while browsing paragraph 2');
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="notes"]').count(),1,
+    'section-wide personal-note count vanished while browsing paragraph 2');
+  assert.deepEqual(await page.locator('#gn-dock-private-status .gn-dock-count').allTextContents(),
+    ['1','1','1','1'],'section totals changed when only the visible paragraph changed');
+  assert.match(await page.locator('#gn-dock-private-status [data-gn-mark="highlights"]').getAttribute('aria-label'),
+    /in 11; 0 in paragraph 2/,'highlight count must identify the section and present paragraph separately');
   await page.locator('#reader .passage-grid[data-segment="0"]').first()
     .evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
   await page.waitForFunction(()=>document.querySelector('#gn-dock-paragraph-ref')?.textContent==='· ¶1',{timeout:8000});
@@ -88,11 +94,18 @@ async function exercise(engine,name,origin){
   assert.equal(await page.locator('#readerDock .reader-step:visible').count(),0,'Continuous should have no adjacent-section arrows');
   // Continuous is a scrollable whole book; re-centre the annotated passage
   // before testing the passage-specific status, not the inherited viewport.
-  await page.locator('#gn-continuous-11 .passage-grid[data-segment="0"]').first().evaluate(el=>el.scrollIntoView({block:'center',behavior:'instant'}));
-  await page.waitForTimeout(200);
-  // Counts may rightly be absent if Continuous scroll settles on an unmarked
-  // passage; single-section tests above verify nonzero and zero behaviour.
-  assert(await page.locator('#gn-dock-private-status').count(),'Continuous dock lost its status container');
+  // Mode switching itself asynchronously restores the prior reading section.
+  // Place ¶2 near the top of the reading viewport AFTER the new mode settles.
+  await page.waitForTimeout(350);
+  await page.locator('#gn-continuous-11 .passage-grid[data-segment="1"]').first().evaluate(el=>{
+    window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-150,behavior:'instant'});
+    window.dispatchEvent(new Event('scroll'));
+  });
+  // Section-wide counts must remain visible even on the unsaved ¶2.
+  await page.waitForFunction(()=>document.querySelector('#dockSection')?.textContent?.trim()==='§11',null,{timeout:10000});
+  await page.waitForFunction(()=>document.querySelectorAll('#gn-dock-private-status .gn-dock-mark').length===4,null,{timeout:10000});
+  assert.deepEqual(await page.locator('#gn-dock-private-status .gn-dock-count').allTextContents(),
+    ['1','1','1','1'],'Continuous lost section-wide status while scanning paragraphs');
   await page.locator('#focusToolbar').click();
   await page.locator('[data-gn-reader-mode="reading"]').click();
   await page.locator('body.focus-level-3').waitFor({state:'detached'});

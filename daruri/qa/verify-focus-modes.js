@@ -45,7 +45,7 @@ assert(desk.includes('m11.6 16.9 5.3-5.3'),'Note-with-pen motif missing');
 assert(dockJS.includes("getApparatus"),'The optional Focus apparatus setting must survive');
 assert(dockCSS.includes('body.reader-enhanced .reader .chapter-nav{display:none!important}'),
  'Redundant enhanced in-text Previous/Next navigation not hidden');
-assert(html.includes('reading-mode-controls.js?v=20261022-markloc1')&&
+assert(html.includes('reading-mode-controls.js?v=20261022-docksections1')&&
  html.includes('reading-mode-controls.css?v=20261022-markloc1'),'Reader missing mode assets');
 assert(html.includes("state.focusLevel===3"),'Continuous reading mode not wired');
 assert(html.includes("for(const sec of all)"),'Continuous reader must traverse every section');
