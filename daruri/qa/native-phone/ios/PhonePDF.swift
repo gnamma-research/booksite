@@ -70,10 +70,12 @@ final class PhonePDFController: UIViewController {
         let searchEnglish=doc.findString("SearchableTermGamma",withOptions:[]).count
         let searchFrench=doc.findString("Des idées françaises",withOptions:[]).count
         let searchArabic=doc.findString("مقدمة",withOptions:[]).count
+        let searchArabicMixed=doc.findString("التحليل",withOptions:[]).count
         let searchP=doc.findString("P1",withOptions:[]).count
         if searchEnglish==0{errors.append("English appendix not searchable")}
         if searchFrench==0{errors.append("Accented French appendix not searchable")}
         if searchArabic==0{errors.append("Arabic appendix not searchable")}
+        if searchArabicMixed==0{errors.append("Mixed Arabic/English note word not searchable")}
         if searchP==0{errors.append("Personal P1 reference not searchable")}
         struct Link { let page:Int;let target:PDFDestination }
         func targets(_ pg:PDFPage?) -> [Link] {
@@ -113,7 +115,7 @@ final class PhonePDFController: UIViewController {
           "pages":doc.pageCount,"sourcePages":basePages,
           "forwardLinks":forward.count,"backLinks":backward.count,
           "searchEnglish":searchEnglish,"searchFrench":searchFrench,
-          "searchArabic":searchArabic,"searchP":searchP,
+          "searchArabic":searchArabic,"searchArabicMixed":searchArabicMixed,"searchP":searchP,
           "forwardArrival":forwardArrival,"backArrival":backArrival,
           "errors":errors
         ]
