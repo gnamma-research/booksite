@@ -1,0 +1,69 @@
+name: HTML PDF mobile WebKit approximation (isolated)
+on:
+  push:
+    branches: ['experiment/html-pdf-engines-20261022']
+    paths: ['.github/workflows/html-pdf-webkit-check.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  webkit-mobile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install WebKit and Paged.js
+        run: |
+          npm install --no-save --no-package-lock --ignore-scripts playwright@1.56.0 pagedjs@0.4.3
+          npx playwright install --with-deps webkit chromium
+      - name: Simulate mobile WebKit paginated reading
+        run: |
+          node <<'JS'
+          const {chromium,webkit}=require('playwright');
+          const fs=require('fs'),path=require('path');
+          const OUT=path.resolve('html_pdf_ci');
+          const results=[];
+          async function test(browserType,name,usePaged,phone){
+            const t=Date.now();
+            const browser=await browserType.launch({headless:true,args:browserType===chromium?['--no-sandbox']:[]});
+            try{
+              const context=await browser.newContext(phone?{viewport:{width:390,height:844},hasTouch:true,isMobile:true}:{viewport:{width:1280,height:900}});
+              const page=await context.newPage();
+              page.setDefaultTimeout(110000);
+              const faults=[];
+              page.on('pageerror',e=>faults.push(String(e).slice(0,200)));
+              await page.addInitScript({content:'window.PagedConfig={auto:false};'});
+              await page.goto('file://'+path.join(OUT,name+'.html'),{waitUntil:'domcontentloaded',timeout:60000});
+              await page.evaluate(()=>document.fonts.ready);
+              let pages=null,previews=0;
+              if(usePaged){
+                await page.addScriptTag({path:path.join(process.cwd(),'node_modules/pagedjs/dist/paged.polyfill.js')});
+                await page.evaluate(async()=>{await window.PagedPolyfill.preview()});
+                pages=await page.locator('.pagedjs_page').count();
+                await page.locator('.pagedjs_page').first().screenshot({path:path.join(OUT,name+'_webkit_mobile.png')});
+              }else{
+                await page.pdf({path:path.join(OUT,name+'_chromium_native.pdf'),preferCSSPageSize:true,printBackground:true});
+              }
+              results.push({test:name,browser:browserType===webkit?'Linux Playwright WebKit (iPhone viewport, NOT iOS Safari)':'Chromium',paged:usePaged,phone,seconds:+((Date.now()-t)/1000).toFixed(2),pages,errors:faults.slice(0,5),status:'ok'});
+            }catch(e){results.push({test:name,browser:browserType===webkit?'WebKit':'Chromium',paged:usePaged,phone,seconds:+((Date.now()-t)/1000).toFixed(2),status:'error',error:String(e).slice(0,1200)})}
+            finally{await browser.close()}
+          }
+          await test(chromium,'dense_parallel',false,false);
+          await test(webkit,'dense_parallel',true,true);
+          await test(webkit,'dense_endnotes',true,true);
+          await test(webkit,'full_parallel',true,true);
+          fs.writeFileSync(path.join(OUT,'mobile_webkit_results.json'),JSON.stringify(results,null,2));
+          console.log(JSON.stringify(results,null,2));
+          JS
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-webkit-mobile-test
+          path: |
+            html_pdf_ci/mobile_webkit_results.json
+            html_pdf_ci/*_webkit_mobile.png
+            html_pdf_ci/dense_parallel_chromium_native.pdf
+          retention-days: 14
