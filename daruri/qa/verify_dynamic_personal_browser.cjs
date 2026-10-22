@@ -59,7 +59,10 @@ async function main(){
  let browser;
  try{
   await sleep(1300);
-  browser=await {chromium,webkit}[engine].launch({headless:true});
+  const browserLaunch={headless:true};
+  if(engine==='chromium'&&process.env.GNAMMA_CHROME_CHANNEL)
+    browserLaunch.channel=process.env.GNAMMA_CHROME_CHANNEL;
+  browser=await {chromium,webkit}[engine].launch(browserLaunch);
   const page=await browser.newPage({acceptDownloads:true,viewport:{width:390,height:844},
     isMobile:true,hasTouch:true,deviceScaleFactor:2});
   const unexpected=[],errors=[];
