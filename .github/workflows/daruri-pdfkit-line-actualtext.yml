@@ -1,0 +1,60 @@
+name: Daruri PDF tagged-line ActualText vowelled cross-viewer proof
+on:
+  push:
+    branches: [qa/daruri-vowelled-pdfkit-ab-20261022]
+    paths:
+      - '.github/workflows/daruri-pdfkit-line-actualtext.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-macos:
+    runs-on: macos-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: Create a temporary Arabic original-font /ActualText PDF (no publication)
+        run: |
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf \
+            --map daruri/editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json \
+            --output /tmp/daruri-vowelled-tagged-lines.pdf \
+            --line-actualtext
+      - name: Native PDFKit full 414 exact Arabic search/highlights/clean copied words
+        run: |
+          swift daruri/qa/verify_char_unicode_pdfkit.swift \
+            /tmp/daruri-vowelled-tagged-lines.pdf \
+            daruri/editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json
+  linux-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - name: Produce temporary tagged semantic source and compare Poppler/MuPDF
+        run: |
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf \
+            --map daruri/editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json \
+            --output /tmp/daruri-vowelled-tagged-lines.pdf \
+            --line-actualtext
+          python daruri/qa/verify_char_unicode_profiles.py \
+            --source daruri/editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf \
+            --candidate /tmp/daruri-vowelled-tagged-lines.pdf \
+            --map daruri/editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json \
+            --report /tmp/daruri-vowelled-tagged-line-report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tagged-vowelled-line-source-experimental-report
+          path: /tmp/daruri-vowelled-tagged-line-report.json
+          retention-days: 14
+          if-no-files-found: warn
