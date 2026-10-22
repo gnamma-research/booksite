@@ -773,7 +773,7 @@ function create(ctx){
   const title=bookmarkUI.actionLabel(target.kind,stored);
   row.innerHTML='<button type="button" data-rd="attach-bookmark" data-target="'+esc(serialized)+'" aria-pressed="'+stored+'" aria-label="'+esc(title)+'">'+bookmarkUI.icon({saved:stored})+'<span>'+esc(stored?'Remove bookmark':'Bookmark')+'</span></button>'+
    '<button type="button" data-rd="attach-view" data-target="'+esc(serialized)+'"'+(stored?'':' hidden')+'>View in Reading Desk</button>'+
-   '<button type="button" data-rd="attach-note" data-target="'+esc(serialized)+'">'+bookmarkUI.noteIcon()+'<span>Add my note</span></button>';
+   '<button type="button" data-rd="attach-note" data-target="'+esc(serialized)+'">'+RD_ICON.note+'<span>Add my note</span></button>';
   return row;
  }
  function syncActionStates(){
