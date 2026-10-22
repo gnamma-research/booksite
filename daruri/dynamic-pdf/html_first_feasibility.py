@@ -270,6 +270,51 @@ APPENDIX_CSS = r"""
 """
 
 
+def finalize_html_only_internal_links(pdf_path: Path) -> dict:
+    """Resolve WeasyPrint's named chapter/term destinations to direct GoTo PDF
+    links. The named source anchors are preserved. This needs no prebuilt PDFs.
+    A destination missing from the freshly generated HTML is a hard failure.
+    """
+    temp=pdf_path.with_suffix(".direct-links.building")
+    changed=0
+    with fitz.open(pdf_path) as doc:
+        names=doc.resolve_names()
+        for p in doc:
+            for link in p.get_links():
+                if link.get("kind") != fitz.LINK_NAMED:
+                    continue
+                destname=link.get("nameddest")
+                target=names.get(destname)
+                if not isinstance(target,dict) or not isinstance(target.get("page"),int):
+                    raise ValueError("Unresolved HTML source link: "+str(destname))
+                if not 0<=target["page"]<len(doc):
+                    raise ValueError("HTML source link points outside generated PDF")
+                if link.get("page")!=target["page"]:
+                    raise ValueError("PDF named link and generated HTML anchor page disagree")
+                point=target.get("to")
+                if point is None:
+                    raise ValueError("No position for source note link: "+str(destname))
+                if link.get("to") is not None and max(
+                    abs(float(link["to"][i])-float(point[i])) for i in (0,1)
+                )>.2:
+                    raise ValueError("PDF named link source target coordinate disagree")
+                replacement={**link,"kind":fitz.LINK_GOTO,
+                             "page":target["page"],"to":fitz.Point(*point)}
+                replacement.pop("nameddest",None)
+                p.update_link(replacement)
+                changed+=1
+        doc.save(temp,garbage=3,deflate=True)
+    temp.replace(pdf_path)
+    with fitz.open(pdf_path) as doc:
+        if sum(f"section-{n}" in doc.resolve_names() for n in range(1,259)) != 258:
+            raise ValueError("Link conversion damaged source named destinations")
+        if sum(l.get("kind")==fitz.LINK_NAMED
+               for page in doc for l in page.get_links()) != 0:
+            raise ValueError("Unconverted PDF named links remain")
+    return {"html_named_source_links_retargeted_to_real_pdf_goto":changed,
+            "all_258_source_destinations_preserved":True}
+
+
 def build_onepass(glossary_html: Path, output: Path) -> dict:
     complete = glossary_html.read_text(encoding="utf-8")
     if complete.count("</body>") != 1 or complete.count("</style>") != 1:
@@ -286,7 +331,9 @@ def build_onepass(glossary_html: Path, output: Path) -> dict:
     raw = output.with_suffix(".pdf")
     t0 = time.perf_counter()
     HTML(string=combined, base_url=BUILD.as_uri() + "/").write_pdf(raw)
+    link_report=finalize_html_only_internal_links(raw)
     return {
+        **link_report,
         "source_kind": "single complete HTML book + scholarly glossary before PDF typesetting",
         "apparatus": ["glossary"],
         "html_sha256": sha(html),
