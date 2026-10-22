@@ -27,14 +27,25 @@ jobs:
           npx playwright install --with-deps chromium
           npx vivliostyle --version
           node -e "const fs=require('fs'); console.log('pagedjs exists:',fs.existsSync('node_modules/pagedjs/dist/paged.polyfill.js'))"
-      - name: Generate exact-source fixture cases
+      - name: Verify fixed Daruri HTML fixtures
         run: |
-          python html_pdf_ci/generate.py
-          cat html_pdf_ci/expected.json
+          python - <<'PY'
+          from pathlib import Path
+          import json,re
+          p=Path("html_pdf_ci")
+          expected={"dense_parallel":(19,43),"dense_stacked":(19,43),"dense_endnotes":(19,43),"full_parallel":(258,122)}
+          for name,(sections,notes) in expected.items():
+              src=(p/(name+".html")).read_text()
+              actual_sections=len(re.findall(r'class="source-section"',src))
+              actual_notes=len(re.findall(r'class="footnote"',src))
+              print(name,actual_sections,actual_notes,flush=True)
+              assert (actual_sections,actual_notes)==(sections,notes),(name,actual_sections,actual_notes)
+          (p/"expected.json").write_text(json.dumps(expected,indent=2))
+          PY
       - name: Compare typesetters on dense and full Daruri
         run: |
           set +e
-          for FIX in dense_parallel dense_stacked full_parallel; do
+          for FIX in dense_parallel dense_stacked dense_endnotes full_parallel; do
             python html_pdf_ci/measure.py "$FIX"_pagedjs node html_pdf_ci/paged-run.cjs "html_pdf_ci/$FIX.html" "html_pdf_ci/$FIX"_pagedjs.pdf
             python html_pdf_ci/measure.py "$FIX"_vivliostyle npx vivliostyle build "html_pdf_ci/$FIX.html" -s A4 -o "html_pdf_ci/$FIX"_vivliostyle.pdf
           done
