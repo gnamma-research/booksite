@@ -132,7 +132,7 @@
             '<label><input type="radio" name="pe-mode" value="choose">Choose</label>'+
             '<label><input type="checkbox" id="pe-appendix" checked>Required personal appendix</label></div>'+
           '<div class="gn-es-setting gn-es-personal-row">'+
-            '<span class="gn-es-setting-label">My notes &amp; saved passages</span>'+
+            '<span class="gn-es-setting-label">My notes, bookmarks &amp; highlights</span>'+
             '<div class="gn-es-setting-body">'+
               '<div class="gn-es-personal-options">'+
                 '<label class="gn-es-personal-choice">'+icon('note')+'<input type="checkbox" id="pe-personal"><span>My notes</span></label>'+
