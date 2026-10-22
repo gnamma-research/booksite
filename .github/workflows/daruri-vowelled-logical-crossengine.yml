@@ -1,0 +1,55 @@
+name: Daruri Arabic logical CMap cross-engine acceptance research
+on:
+  push:
+    branches: [qa/daruri-vowelled-pdfkit-ab-20261022]
+    paths:
+      - 'daruri/qa/experimental_original_char_unicode.py'
+      - '.github/workflows/daruri-vowelled-logical-crossengine.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  vowelled-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: arabic-vowelled
+            source: editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf
+            map: editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json
+          - id: bilingual-vowelled
+            source: editions/reading/daruri-reading-bilingual-titles-off.pdf
+            map: editions/maps/daruri-reading-bilingual-titles-off.pdf.json
+          - id: scholarly-vowelled
+            source: daruri.pdf
+            map: personal-source-pango-maps/daruri.pdf.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - name: Build isolated and SHA-bound logical-cluster candidate
+        run: |
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/${{ matrix.source }} \
+            --map daruri/${{ matrix.map }} \
+            --output /tmp/${{ matrix.id }}-logical-NON-RELEASE.pdf \
+            --logical-cluster-payload
+      - name: Compare source text and exact search, copy, pixels, notes and link geometry
+        run: |
+          python daruri/qa/verify_char_unicode_profiles.py \
+            --source daruri/${{ matrix.source }} \
+            --candidate /tmp/${{ matrix.id }}-logical-NON-RELEASE.pdf \
+            --map daruri/${{ matrix.map }} \
+            --report /tmp/${{ matrix.id }}-logical-report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-rtl-logical-${{ matrix.id }}-report
+          path: /tmp/${{ matrix.id }}-logical-report.json
+          retention-days: 14
+          if-no-files-found: warn
