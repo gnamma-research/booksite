@@ -1,0 +1,24 @@
+name: Verify Daruri Arabic Source/Pango Word Maps
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-arabic-pango-pilot-20261022]
+    paths:
+      - '.github/workflows/daruri-arabic-word-maps-qa.yml'
+      - 'daruri/qa/verify-arabic-pango-maps.cjs'
+      - 'daruri/editions/maps/**'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Check precisely matched Arabic words and their page rectangles
+        run: |
+          node --check daruri/qa/verify-arabic-pango-maps.cjs
+          node daruri/qa/verify-arabic-pango-maps.cjs
+          node daruri/qa/verify-published-selector.cjs
