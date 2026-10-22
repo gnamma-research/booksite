@@ -66,7 +66,7 @@ async function exercise(engine,name,origin){
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded'});
   await page.locator('#reader .passage-grid[data-segment="0"]').first().evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
   await page.waitForTimeout(200);
-  const noteMark=page.locator('#gn-dock-private-status [data-gn-mark="note"]');
+  const noteMark=page.locator('#gn-dock-private-status [data-gn-mark="notes"]');
   const diagnostics=await page.evaluate(()=>({hash:location.hash,heading:document.querySelector('#dockSection')?.textContent,body:document.body.className,markup:document.querySelector('#gn-dock-private-status')?.innerHTML,position:document.querySelector('#reader .passage-grid[data-segment="0"]')?.getBoundingClientRect().top,scrollY:window.scrollY,reader:document.querySelector('#reader')?.innerText.slice(0,95)}));
   assert(await noteMark.count(),'Saved paragraph note missing from dock after returning to §11 paragraph 1: '+JSON.stringify(diagnostics));
   await noteMark.click();
