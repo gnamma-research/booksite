@@ -26,6 +26,7 @@ jobs:
           const fs=require('fs'),path=require('path');
           const OUT=path.resolve('html_pdf_ci');
           const results=[];
+          (async()=>{
           async function test(browserType,name,usePaged,phone){
             const t=Date.now();
             const browser=await browserType.launch({headless:true,args:browserType===chromium?['--no-sandbox']:[]});
@@ -57,6 +58,7 @@ jobs:
           await test(webkit,'full_parallel',true,true);
           fs.writeFileSync(path.join(OUT,'mobile_webkit_results.json'),JSON.stringify(results,null,2));
           console.log(JSON.stringify(results,null,2));
+          })().catch(e=>{console.error(e);process.exit(1)});
           JS
       - uses: actions/upload-artifact@v4
         if: always()
