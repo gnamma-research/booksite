@@ -6,7 +6,7 @@
 
   // BEGIN DARURI RELEASE ASSETS
   const RELEASE_VERSION = "20261022-qcontext1";
-  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "QURAN_CONTEXT_SOURCES.md", "download-bundle.js", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -151,6 +151,7 @@
       ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261022-qcontext1'],
       ['daruri/quran-context-ui.css', 'quran-context-ui.css?v=20261022-qcontext1'],
       ['daruri/quran-context-data.json', 'quran-context-data.json?v=20261022-qcontext1'],
+      ['daruri/QURAN_CONTEXT_SOURCES.md', 'QURAN_CONTEXT_SOURCES.md'],
       ['daruri/download-bundle.js', 'download-bundle.js?v=20261021-rdquick1'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
