@@ -28,7 +28,7 @@ function controls(){
   bar=document.createElement('div');bar.className='gn-rd-dictionary-actions';
   bar.innerHTML='<button type="button" data-rd-dictionary="bookmark"></button>'+
     '<a href="index.html#bookmarks" data-rd-dictionary="view" hidden>View in Reading Desk</a>'+
-    '<button type="button" data-rd-dictionary="note">+ Add personal note</button>'+
+    '<button type="button" data-rd-dictionary="note" aria-label="Add personal note">'+UI.noteIcon()+'<span>Add personal note</span></button>'+
     '<a href="index.html#bookmarks">Reading Desk ↗</a>'+
     '<small id="gn-rd-dictionary-status" role="status"></small>';
   card.querySelector('.lex-title')?.insertAdjacentElement('afterend',bar);
