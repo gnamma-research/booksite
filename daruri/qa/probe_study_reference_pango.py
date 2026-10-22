@@ -29,7 +29,9 @@ def walk(node,number,source=None):
             source=(element.get("data-section-id"),element.get("data-segment-index"),element.get("data-language"))
         else:
             source=None
-    if type(node).__name__=="TextBox" and source is not None:
+    if type(node).__name__=="TextBox" and source is not None and node.element_tag=="p":
+        # Source note calls are separate <a>/<sup> glyph runs. They do not
+        # belong to Ibn Rushd’s authorial Arabic words or their geometry.
         yield source,node,number
     for child in getattr(node,"children",()):
         yield from walk(child,number,source)
