@@ -436,6 +436,15 @@
   }
   async function loadPersonalTools(mounted){
     try{
+      // editions.js fully recreates its host on each visit. Bind the shared
+      // exporter to the *new* inline form, not detached elements from an older
+      // Reading/Study visit.
+      if(window.GnammaPersonalExportInline?.ready){
+        personalReady=false;
+        await window.GnammaPersonalExportInline.remount();
+        if(root===mounted){personalReady=true;personalChanged();}
+        return;
+      }
       if(!window.GnammaPdfUpgrade)
         await loadScript('personal-pdf-enhancements.js');
       if(!window.GnammaPersonalExportInline)
