@@ -1,0 +1,36 @@
+name: Daruri Arabic Unicode + PDF link destination forensic QA
+on:
+  push:
+    branches: ['experiment/production-pdf-parity-20261022']
+    paths:
+      - 'pdf_parity_ci/debug_unicode.cjs'
+      - 'pdf_parity_ci/debug_unicode_links.py'
+      - '.github/workflows/daruri-pdf-forensic-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  forensic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install PDF and browser testing libraries
+        run: |
+          python -m pip install -q "PyMuPDF==1.26.7" "pypdf==5.9.0"
+          npm install --no-save --no-package-lock --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1 pdfjs-dist@5.4.394
+          npx --prefix daruri/qa playwright install --with-deps chromium
+      - name: Capture synthetic Arabic notes without exposing real user data
+        run: node pdf_parity_ci/debug_unicode.cjs
+      - name: Extract raw PDF links and Arabic via independent parser
+        run: python pdf_parity_ci/debug_unicode_links.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-synthetic-pdf-unicode-link-diagnostics
+          path: pdf_parity_ci/debug_evidence/
+          retention-days: 7
