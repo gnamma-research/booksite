@@ -154,13 +154,14 @@
       ['daruri/editions.css', 'editions.css?v=20261021-editiontabs-vowels-release1'],
       ['daruri/editions-icons.css','editions-icons.css?v=20261021-editiontabs-vowels-release1'],
       ['daruri/editions-icons.js','editions-icons.js?v=20261021-editiontabs-vowels-release1'],
-      ['daruri/editions-selector.js','editions-selector.js?v=20261021-apparatus2'],
-      ['daruri/editions-selector.css','editions-selector.css?v=20261021-apparatus2'],
+      ['daruri/editions-selector.js','editions-selector.js?v=20261022-two-tabs-inline1'],
+      ['daruri/editions-selector.css','editions-selector.css?v=20261022-two-tabs-inline1'],
       ['daruri/editions/manifest.json','editions/manifest.json?v=20261021-bilingual-vowels1'],
       ['daruri/editions/apparatus/manifest.json','editions/apparatus/manifest.json?v=20261021-a4-apparatus1'],
+      ['daruri/editions/maps/manifest.json','editions/maps/manifest.json?v=20261022-base-personal-word-maps'],
       ['daruri/personal-export.html', 'personal-export.html'],
-      ['daruri/personal-export.js', 'personal-export.js?v=4'],
-      ['daruri/personal-pdf-enhancements.js','personal-pdf-enhancements.js?v=3'],
+      ['daruri/personal-export.js', 'personal-export.js?v=two-tabs-20261022'],
+      ['daruri/personal-pdf-enhancements.js','personal-pdf-enhancements.js?v=two-tabs-20261022'],
       ['daruri/personal-export.css', 'personal-export.css?v=2'],
       ['daruri/vendor/pdf-lib-1.17.1.min.js', 'vendor/pdf-lib-1.17.1.min.js'],
       ['daruri/vendor/fontkit-1.1.1.umd.min.js', 'vendor/fontkit-1.1.1.umd.min.js'],
@@ -178,7 +179,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261021-apparatus-merged1'],
+      ['daruri/sw.js', 'sw.js?v=20261022-two-tabs-inline1'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
@@ -207,6 +208,14 @@
       ...['off','on'].map(titles=>'study/daruri-study-bilingual-titles-'+titles+'.pdf')
     ];
     for(const entry of catalog) pdfs.set('daruri/editions/'+entry,'editions/'+entry);
+    // Each unchanged plain A4 PDF has an independently certified P-note map.
+    // Include its map and metadata for browser-local offline personal export.
+    for(const entry of catalog){
+      const name=entry.split('/').pop();
+      for(const suffix of ['.json','.metadata.json'])
+        files.push(['daruri/editions/maps/'+name+suffix,
+          'editions/maps/'+name+suffix]);
+    }
     // Include the complete, verified apparatus edition collection in the
     // offline source+PDF bundle, together with each edition's matching maps.
     const apparatusFiles=[
