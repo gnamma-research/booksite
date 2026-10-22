@@ -204,6 +204,8 @@ function create(ctx){
   // successful storage commit into a reported failure and an incorrect rollback.
   try{syncLegacy(true);}catch(_){ctx.notify('Reading Desk was saved, but old-format bookmarks could not be synchronized.');}
   try{syncActionStates();}catch(_){}
+  // Dock/status subscribers only react after the transaction has succeeded.
+  try{document.dispatchEvent(new Event('gnamma-reading-desk-change'));}catch(_){}
   return true;
  }
  function syncLegacy(doSave){
@@ -1509,7 +1511,15 @@ function create(ctx){
   const main=$('#mainContent');if(main){let scheduled=false;new MutationObserver(()=>{if(scheduled||decorating)return;scheduled=true;queueMicrotask(()=>{scheduled=false;decorate();});}).observe(main,{subtree:true,childList:true});}
  }
  install();
- return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records,};
+ return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records,
+  openAt:(section,segment=null,kind='all')=>{
+   enterDeskFromText(String(section),segment);
+   if(kind==='notes'||kind==='bookmarks'){
+    ui.category=kind==='notes'?'mine':'bookmarks';
+    if(state.route==='bookmarks')render();
+   }
+  }
+ };
 }
 window.GnammaReadingDesk={create};
 })();
