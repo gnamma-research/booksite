@@ -24,3 +24,15 @@
 .gn-hadith-context-body:focus-within{scrollbar-gutter:stable}
 .gn-hadith-arabic-fold summary{color:var(--accent,var(--text,inherit))}
 @media(prefers-reduced-motion:reduce){.gn-hadith-chevron{transition:none}}
+
+/* Scholarly Hadith controls are not editorial methodology tutorials. */
+.gn-hadith-report{padding-top:11px!important}
+.gn-hadith-report-heading{font-size:1rem!important;color:var(--accent,var(--text,inherit))!important}
+.gn-hadith-metadata{display:grid;gap:3px;margin-block:4px 10px;font-size:.82rem}
+.gn-hadith-meta{margin:0!important;line-height:1.55;color:var(--text-soft,var(--muted,inherit))}
+.gn-hadith-meta strong{color:var(--text,inherit)}
+.gn-hadith-variant{font:12px/1.6 var(--serif,Georgia,serif);color:var(--text-soft,var(--muted,inherit));padding:7px 0;margin:0}
+.gn-hadith-outbound{font:11px/1.4 var(--sans,system-ui,sans-serif);margin:6px 0 0!important}
+.gn-hadith-outbound .gn-hadith-source-link{min-height:34px;opacity:.85}
+.gn-hadith-in-quran-note .gn-hadith-report-heading{font-size:.95rem!important}
+@media(max-width:440px){.gn-hadith-meta{font-size:.79rem!important}.gn-hadith-source-link{font-size:12px}}
