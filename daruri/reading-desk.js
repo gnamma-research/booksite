@@ -16,8 +16,9 @@ const uuid=()=>typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID(
 const short=(v,n=110)=>clamp(v,30000).length>n?clamp(v,n-1)+'…':String(v||'');
 
 const RD_ICON={
- bookmark:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/></svg>',
- note:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>',
+ bookmark:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z"/><path d="M12 8v6m-3-3h6"/></svg>',
+ bookmarkSaved:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4.5h12v15l-6-4-6 4z" fill="currentColor" fill-opacity=".15"/><path d="m9 11.4 2.1 2.2 4.1-4.5"/></svg>',
+ note:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M7.7 16.5 8.4 13.5 15.8 6.2l2.3 2.3-7.4 7.3-3 .7zM13.9 8.1l2.3 2.3"/></svg>',
  saved:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
  close:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>'
 };
@@ -45,14 +46,14 @@ function deskButton(action,label,icon,caption='',selected=null,extra=''){
  return '<button type="button" class="gn-rd-toolbar-icon" data-rd="'+action+'" '+extra+
  ' title="'+esc(label)+'" aria-label="'+esc(label)+'"'+
  (selected===null?'':' aria-pressed="'+Boolean(selected)+'"')+'>'+
- (RD_ICON[icon]||RD_ICON.saved)+(caption?'<span class="gn-rd-icon-caption">'+esc(caption)+'</span>':'')+'</button>';
+ (RD_ICON[icon==='bookmark'&&selected?'bookmarkSaved':icon]||RD_ICON.saved)+(caption?'<span class="gn-rd-icon-caption">'+esc(caption)+'</span>':'')+'</button>';
 }
 function deskChoice(action,value,label,icon,caption,selected){
  return deskButton(action,label,icon,caption,selected,'data-value="'+esc(value)+'"');
 }
 function rdTool(label,data,icon,selected=false,filled=false,caption=''){
- return '<button type="button" class="gn-rd-tool-icon'+(selected?' is-on':'')+(filled?' has-content':'')+'" title="'+esc(label)+'" aria-label="'+esc(label)+'" '+data+'>'+RD_ICON[icon]+
-  (caption?'<span class="gn-rd-tool-caption">'+esc(caption)+'</span>':'')+'</button>';
+ return '<button type="button" class="gn-rd-tool-icon'+(selected?' is-on':'')+(filled?' has-content':'')+'" title="'+esc(label)+'" aria-label="'+esc(label)+'" '+data+'>'+RD_ICON[icon==='bookmark'&&selected?'bookmarkSaved':icon]+
+  (caption?'<span class="gn-rd-tool-caption" aria-hidden="true">'+esc(caption)+'</span>':'')+'</button>';
 }
 const category=it=>it.kind==='note'||it.kind==='footnote'?'notes':['quote','paragraph','section'].includes(it.kind)?'text':it.kind==='application'?'bidaya':it.kind==='lesson'?'lessons':it.kind;
 function create(ctx){
@@ -808,7 +809,7 @@ function create(ctx){
   const attrs=' data-section="'+esc(n)+'" data-segment="'+segment+'"';
   return rdTool(bookmark?'Remove paragraph bookmark':'Bookmark paragraph',
     'data-rd="paragraph-bookmark"'+attrs+' aria-pressed="'+bookmark+'"',
-    'bookmark',bookmark,false,bookmark?'Saved paragraph':'Save paragraph')+
+    'bookmark',bookmark,false,'¶')+
    rdTool('Add personal note to paragraph','data-rd="paragraph-note"'+attrs,'note',false,notesCount>0)+
    (relevant.length?rdTool('View '+relevant.length+' saved items for paragraph '+(segment+1),'data-rd="view-paragraph"'+attrs,'saved',false,true):'');
  }
