@@ -3,8 +3,9 @@ import PDFKit
 let file=URL(fileURLWithPath:CommandLine.arguments[1])
 guard let doc=PDFDocument(url:file) else {fatalError("Unable to read personal PDF")}
 let terms=["مقدمة","التحليل","العلوم الدقيقة","الحقيقة","Des idées françaises","SearchableTermGamma","P1"]
+let vowelled=["بِسْمِ","اللَّهِ","الرَّحْمَٰنِ","بسم","الرحمن"]
 var result:[String:Any]=["pages":doc.pageCount]
-for term in terms{
+for term in terms+vowelled{
  let n=doc.findString(term,withOptions:[]).count
  result[term]=n
  print("PDFKIT term \(term) occurrences \(n)")
