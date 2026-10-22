@@ -5,6 +5,9 @@ on:
     paths: ['daruri/dynamic-pdf/**','.github/workflows/daruri-dynamic-pdf-parity.yml']
   workflow_dispatch:
 permissions: {contents: read}
+concurrency:
+  group: gnamma-dynamic-pdf-parity-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   proof:
     runs-on: ubuntu-latest
