@@ -31,6 +31,7 @@ assert.ok(edition.includes("const NAV=['reading','reference']"),'Exactly two top
 for(const required of ['Reading &amp; Study','Reference','data-es-preset="reading"',
   'data-es-preset="study"','data-es-preset="custom"','id="pe-form"',
   'id="pe-personal"','id="pe-bookmarks"','id="pe-highlights"','id="pe-order"',
+  'id="gn-es-prepare"','data-es-action="download"','data-daruri-bundle="html"',
   'id="pe-dates"','id="pe-annotations"','id="pe-picker"',
   'id="pe-generate"','id="pe-result"','data-es-action="open"',
   'loadPersonalTools(mounted)','gnamma-personal-export-ready',
@@ -39,6 +40,11 @@ for(const required of ['Reading &amp; Study','Reference','data-es-preset="readin
   assert.ok(edition.includes(required),'Missing integrated control '+required);
 }
 assert.ok(!edition.includes('personal-export.html?'),'No external personal-copy wizard required');
+assert.ok(!edition.includes('data-es-study-guide'),'Study guide is not a selected book edition');
+assert.ok(edition.includes("availability.hidden=result.status==='ready'"),
+  'Do not show an unnecessary ready banner');
+assert.ok(edition.includes("crypto.subtle.digest('SHA-256'"),
+  'Real bytes must be checked when the user prepares a PDF');
 assert.ok(!edition.includes('data-es-nav="study"'),'Study belongs inside Reading & Study');
 assert.ok(!edition.includes('data-es-toggle="vowels"'),'The extra vowel-mark toggle must not reappear');
 assert.ok(edition.includes('Off → Plain → Vowelled'),'Arabic vowel states are controlled by AR alone');
