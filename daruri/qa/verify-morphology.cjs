@@ -86,7 +86,7 @@ async function test(name,fn){await fn();pass++;console.log('PASS '+name)}
    });
    assert.equal(output.visible,true);assert.equal(output.heading,'العلم');
    assert.ok(output.actions.includes('literal'));
-   await page.locator('[data-gnw-close]').first().click();
+   await page.locator('#gnamma-word-context button[data-gnw-close]').click();
   });
   await test('dictionary term still opens its own dictionary rather than word inspector',async()=>{
    const linked=page.locator('.inline-term[data-term]').first();
