@@ -58,9 +58,11 @@ def main():
         assert data["section_count"]==258 and len(data["anchors"])==258
         assert len(data["section_pages"])==258
         fields=proposal["segments"]
-        if any(k in data["segments"] for k in fields):
-            raise RuntimeError("Unexpected existing Arabic word map; refuse overwrite "+name)
-        data["segments"].update(fields)
+        for key,words in fields.items():
+            existing=data["segments"].get(key)
+            if existing is not None and existing!=words:
+                raise RuntimeError("Existing Arabic word coordinates disagree; refusing overwrite: "+key)
+            data["segments"][key]=words
         data["word_map_present"]=True
         data["word_map_coverage"][proposal["language"]]={"matched":414,"eligible":414}
         data["precision"]="Authoritative Arabic/Pango source-text word rectangles; 100% pixel parity to the published PDF. Ambiguous or multi-page selections fail closed."
