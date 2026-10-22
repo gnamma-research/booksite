@@ -1,0 +1,58 @@
+name: Gnamma dynamic PDF browser and mobile WebKit QA
+on:
+  push:
+    branches: ['feature/daruri-dynamic-browser-ui-20261022']
+    paths: ['daruri/dynamic-pdf/**','.github/workflows/daruri-dynamic-pdf-browser-qa.yml']
+  workflow_dispatch:
+permissions: {contents: read}
+concurrency:
+  group: gnamma-dynamic-browser-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Install PDF typography and browser checks
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install -q -r daruri/build/requirements.txt "PyMuPDF==1.26.7"
+          npm install --no-save --no-package-lock --prefix daruri/dynamic-pdf playwright@1.56.1
+          npx --prefix daruri/dynamic-pdf playwright install --with-deps chromium webkit
+      - name: Generate verified HTML/CSS packets and maps
+        run: python daruri/dynamic-pdf/build_packets.py
+      - name: Validate JavaScript syntax
+        run: |
+          node --check daruri/dynamic-pdf/core.js
+          node --check daruri/dynamic-pdf/preview.js
+          node --check daruri/dynamic-pdf/qa_preview.cjs
+      - name: Generate complete linked PDF in Chromium and 390px WebKit
+        run: node daruri/dynamic-pdf/qa_preview.cjs
+      - name: Verify exported PDF sections and annotations
+        run: |
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          files=list(Path('daruri/dynamic-pdf/qa-outputs').glob('*.pdf'))
+          assert len(files)==2,files
+          for p in files:
+            with fitz.open(p) as pdf:
+              assert len(pdf)==86,(p,len(pdf))
+              assert len(pdf.resolve_names())>=258
+              assert len(pdf.get_toc())>=53
+              assert sum(len(x.get_links()) for x in pdf)>1000
+              assert '§' in ''.join(x.get_text() for x in list(pdf)[-10:])
+              print('PASS',p,len(pdf),'pages',sum(len(x.get_links()) for x in pdf),'links')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-dynamic-browser-pdfs
+          path: daruri/dynamic-pdf/qa-outputs/**
+          retention-days: 14
