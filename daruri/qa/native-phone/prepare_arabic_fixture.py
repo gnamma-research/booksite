@@ -65,7 +65,7 @@ elif platform=="ios":
           arabicProbeTerms.map{($0,doc.findString($0,withOptions:[]).count)})
 '''
     where=s.index('        let searchP=doc.findString("P1",withOptions:[]).count')
-    lineend=s.index("\\n",where)+1
+    lineend=s.index("\n",where)+1
     s=s[:lineend]+debug+s[lineend:]
     s=s.replace('"searchP":searchP,',
        '"searchP":searchP,"arabicProbeHits":arabicProbeHits,"appendixPreview":String(appendixText.prefix(1200)),')
