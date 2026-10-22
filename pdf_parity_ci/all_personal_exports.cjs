@@ -31,11 +31,18 @@ async function verifyArabicUsingPdfJs(pdfpath,startPage){
       text+=content.items.map(x=>x.str||'').join(' ')+'\n';
     }
   }finally{await doc.destroy()}
-  return normalize(text).includes(normalize('التحليل')) && normalize(text).includes(normalize('CI-PRIVATE-PERSONAL-NOTE'));
+  const normalized=normalize(text);
+  return {mixedArabicWord:normalized.includes(normalize('التحليل')),
+    ArabicPhrase:normalized.includes(normalize('مقدمة العلوم الدقيقة')),
+    EnglishSentinel:normalized.includes(normalize('CI-PRIVATE-PERSONAL-NOTE')),
+    illegalControls:[...text].filter(c=>c.codePointAt(0)<32&&!['\n','\r','\t'].includes(c)).length
+  };
 }
 const seed={format:'gnamma-reading-desk',version:1,items:[
  {id:'production-parity-note',kind:'note',title:'Research observation',body:'CI-PRIVATE-PERSONAL-NOTE: Arabic التحليل · Study reflection on lawful reasoning.',
   target:{kind:'section',section:'1'},created:Date.UTC(2026,9,22),modified:0,updated:Date.UTC(2026,9,22),dateSource:'recorded',deleted:0},
+ {id:'production-parity-arabic-phrase',kind:'note',title:'Arabic phrasing',body:'مقدمة العلوم الدقيقة بين الحقيقة والأصول.',
+  target:{kind:'section',section:'2'},created:Date.UTC(2026,9,22)+1,modified:0,updated:Date.UTC(2026,9,22)+1,dateSource:'recorded',deleted:0},
  {id:'production-parity-bookmark',kind:'section',title:'Source §191',target:{kind:'section',section:'191'},
   created:Date.UTC(2026,9,22),updated:Date.UTC(2026,9,22),dateSource:'recorded',deleted:0}
 ]};
@@ -85,15 +92,13 @@ const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
       {encoding:'utf8',timeout:120000,maxBuffer:20*1024*1024});
     if(!check.stdout?.trim())throw Error('No PDF audit output: '+String(check.stderr).slice(-500));
     const audit=JSON.parse(check.stdout.trim().split('\n').at(-1));
-    if(audit.problems.length===1&&audit.problems[0]==='arabic-private-note-not-extractable'){
-      // PyMuPDF reverses or scrambles some RTL text overlays; use the same Unicode
-      // extraction library that readers rely on and which passed prior 3-browser QA.
-      audit.arabic_pdfjs=await verifyArabicUsingPdfJs(output,audit.published_pages);
-      if(audit.arabic_pdfjs){
-        audit.arabic_extraction_caveat='PyMuPDF did not emit this Arabic substring verbatim; PDF.js extracted the correct underlying Unicode.';
-        audit.problems=[];
-        audit.pass=true;
-      }
+    // Every edition must retain English and *both* mixed/Arabic-only source
+    // notes with accurate text extraction, not just visually rendered Arabic.
+    audit.pdfjs_checks=await verifyArabicUsingPdfJs(output,audit.published_pages);
+    if(!audit.pdfjs_checks.mixedArabicWord||!audit.pdfjs_checks.ArabicPhrase||
+       !audit.pdfjs_checks.EnglishSentinel||audit.pdfjs_checks.illegalControls){
+      audit.problems.push('pdfjs-appendix-search-layer-failed');
+      audit.pass=false;
     }
     result={...result,...audit,elapsed_seconds:+((Date.now()-since)/1000).toFixed(2),byte_count:fs.statSync(output).size};
     if(!audit.pass)result.pass=false;
