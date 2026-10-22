@@ -5,7 +5,7 @@
   if (window.__gnQuranContextInstalled) return;
   window.__gnQuranContextInstalled = true;
   const selfURL=document.currentScript?.src || new URL('quran-context-ui.js',document.baseURI).href;
-  const dataURL=new URL('quran-context-data.json',selfURL).href;
+  const dataScriptURL=new URL('quran-context-data.js?v=20261022-qcontext1',selfURL).href;
   let dataPromise=null;
   const el=(tag,cls,content) => {
     const node=document.createElement(tag);
@@ -19,10 +19,16 @@
     return a;
   }
   function getData(){
+    if(window.GnammaQuranContextData)return Promise.resolve(window.GnammaQuranContextData);
     if(!dataPromise){
-      dataPromise=fetch(dataURL).then(response=>{
-        if(!response.ok)throw Error('Qur\u02bean context source unavailable');
-        return response.json();
+      // A normal local <script> loads on file:// too, unlike fetch(JSON), which
+      // may be blocked by WebKit/Chromium local-file CORS rules.
+      dataPromise=new Promise((resolve,reject)=>{
+        const script=document.createElement('script');
+        script.async=true;script.src=dataScriptURL;
+        script.onload=()=>resolve(window.GnammaQuranContextData);
+        script.onerror=()=>reject(Error('Local Qur\u02bean context script unavailable'));
+        document.head.append(script);
       }).then(data=>{
         if(data?.schema_version!==1 || !data.notes || !data.verses)throw Error('Qur\u02bean context data invalid');
         return data;

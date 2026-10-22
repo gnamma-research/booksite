@@ -31,7 +31,7 @@ Muhammad Marmaduke Pickthall, *The Meaning of the Glorious Koran* (1930), public
 - Apply Qurʾānic brackets `﴿ … ﴾` to **Arabic scripture only**; do not wrap Ibn Rushd's words or Pickthall's English translation in Qurʾānic brackets.
 - Highlight the referenced verse(s), but never imply that a **possible allusion** constitutes a verified verbatim quotation.
 - All 50 cited-note IDs and 53 explicit references are generated from `build/data/quran-source-notes.json`. The context collection deduplicates 132 verse records.
-- The data bundle is downloaded only when expanded; it is also pre-cached for offline use and included in the complete downloadable website/PDF ZIP.
+- The data bundle is loaded **as a local JavaScript resource** only when expanded, which works for both online readers and extracted `file://` HTML packages (unlike `fetch` JSON in some browsers). The verbatim `quran-context-data.json` remains available for audit and reproduction. The data script is also pre-cached for offline use and included in the complete downloadable website/PDF ZIP.
 - The reader does **not** substitute these context expansions for the full tafsīr or the authorial note apparatus.
 
 If the canonical notes gain or lose a citation, rebuild the context data from verified source corpora and rerun `qa/verify-quran-context.js`; do not generate new Quran text or translations with an LLM.

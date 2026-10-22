@@ -57,7 +57,7 @@ assert.deepEqual(keys('QUR-R038-Q001'),['4:42','4:43','4:44']);
 assert.deepEqual(keys('QUR-R163-Q022'),['2:66','2:67','2:68','2:69','2:70','2:71','2:72']);
 assert.deepEqual(keys('QUR-R167-Q025',0),['4:42','4:43','4:44']);
 assert.deepEqual(keys('QUR-R167-Q025',1),['5:5','5:6','5:7']);
-assert.equal(data.verses['2:1'].ar.includes('بِسْمِ'),false,'Unnumbered basmala is not miscounted as ayah 1');
+assert.ok(Object.keys(data.verses).every(key=>!key.endsWith(':0')),'Unnumbered basmalas do not enter the verse context inventory');
 assert.ok(page.includes('quran-context-ui.js?v=20261022-qcontext1'));
 assert.ok(page.includes('quran-context-ui.css?v=20261022-qcontext1'));
 for(const fname of ['quran-context-ui.js','quran-context-ui.css','quran-context-data.json']){
@@ -65,6 +65,8 @@ for(const fname of ['quran-context-ui.js','quran-context-ui.css','quran-context-
   assert.ok(bundle.includes("'daruri/"+fname+"'"),'Offline ZIP '+fname);
 }
 assert.ok(bundle.includes('QURAN_CONTEXT_SOURCES.md'),'Offline legal/source notice');
+assert.ok(bundle.includes("'daruri/quran-context-data.js'"),'File://-compatible JS context bundle is packaged');
+assert.ok(sw.includes('quran-context-data.js?v=20261022-qcontext1'),'JS context is available offline');
 assert.ok(page.includes('gnNotesCardHTML([note])'),'Inline note reuses the section Notes template');
 assert.ok(/data\.notes\[noteId\]/.test(js));
 assert.ok(/const kind=n<ref\.start\?'Preceding'/.test(js));

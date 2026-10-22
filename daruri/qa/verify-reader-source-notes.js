@@ -170,13 +170,6 @@ async function makeDOM(hash, seed = {}) {
       w.TextEncoder = TextEncoder;
       w.TextDecoder = TextDecoder;
       w.navigator.clipboard = {writeText:async text => {w.__copied = text;}};
-      // Context is a compact local JSON bundle. JSDOM does not supply fetch.
-      w.__quranContextLoads=0;
-      w.fetch=async url=>{
-        if(!String(url).includes('quran-context-data.json'))throw Error('Unexpected fetch in reader QA: '+url);
-        w.__quranContextLoads++;
-        return {ok:true,json:async()=>JSON.parse(read('quran-context-data.json'))};
-      };
       w.localStorage.setItem('daruri-reader-v2', JSON.stringify({lang:'english', vowels:false, theme:'dark', fontScale:1.1, showNotes:true, ...seed}));
     }
   });
@@ -373,13 +366,13 @@ function assertOfflineAsset() {
     assert.ok(context,'One contextual disclosure under the same inline note: '+noteId);
     assert.equal(context.open,false,'Qurʾānic context starts collapsed: '+noteId);
     assert.equal(context.querySelectorAll('.gn-context-ayah').length,0,'No full verses rendered before request');
-    const previousLoads=w.__quranContextLoads;
+    const previousLoads=d.querySelectorAll('script[src*="quran-context-data.js"]').length;
     context.open=true;
     context.dispatchEvent(new w.Event('toggle'));
-    await new Promise(resolve => w.setTimeout(resolve,25));
+    await new Promise(resolve => w.setTimeout(resolve,90));
     assert.equal(context.dataset.gnContextReady,'1','Context loads when expanded: '+noteId);
-    assert.equal(w.__quranContextLoads,previousLoads+(previousLoads===0?1:0),
-      'Context fetch occurs once globally, not for every note');
+    assert.equal(d.querySelectorAll('script[src*="quran-context-data.js"]').length,Math.max(1,previousLoads),
+      'Local context script loads only once even across many notes');
     const rows=[...context.querySelectorAll('.gn-context-ayah')];
     const expected=JSON.parse(read('quran-context-data.json')).notes[noteId].flatMap(ref=>ref.verses);
     assert.deepEqual(rows.map(row=>row.querySelector('figcaption').textContent.split(' · ')[0]),
