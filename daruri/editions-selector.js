@@ -316,7 +316,7 @@
     msg.textContent=result.status==='ready'?'Verified PDF available':
       result.status==='loading'?'Checking published editions…':'PDF not available for this selection';
     detail.textContent=result.status==='ready'?
-      'This exact published PDF will be used. Personal notes are never uploaded.':result.reason;
+      'This exact published PDF will be used. Your Reading Desk items stay on this device.':result.reason;
     root.querySelector('.gn-es-availability').dataset.esStatus=result.status;
     const link=root.querySelector('[data-es-action="open"]');
     const pdfFile=publicFile(result);
