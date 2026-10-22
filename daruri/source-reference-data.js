@@ -454,7 +454,7 @@ window.DARURI_SOURCE_REFERENCES = {
   css.rel = 'stylesheet'; css.href = new URL('source-note-ui.css?v=20261021-section1-qparallels2', base).href;
   document.head.appendChild(css);
   var js = document.createElement('script');
-  js.src = new URL('source-note-ui.js?v=20261021-qinline4', base).href;
+  js.src = new URL('source-note-ui.js?v=20261023-hnote1', base).href;
   js.async = false; document.head.appendChild(js);
 })();
 
