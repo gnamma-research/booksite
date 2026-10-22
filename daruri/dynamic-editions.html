@@ -11,6 +11,7 @@
 <script defer src="personal-export.js?v=4"></script>
 <script defer src="vendor/pdf-lib-1.17.1.min.js"></script>
 <script defer src="dynamic-pdf/core.js?v=20261022-prototype3"></script>
+<script defer src="dynamic-pdf/design-catalog.js?v=20261022-verified-designs1"></script>
 <script defer src="dynamic-pdf/client.js?v=20261022-worker1"></script>
 <style>
 .gn-dyn-panel {border:1px solid #bbcac5;border-radius:12px;padding:22px;margin:1.25rem 0 2rem;background:color-mix(in srgb,#d4e2da 11%,white);}
@@ -24,6 +25,13 @@
 .gn-dyn-download {display:inline-block;margin:12px 0;font-weight:600;}
 .gn-dyn-download[hidden],.gn-dyn-actions [hidden] {display:none!important;}
 .gn-dyn-hint {font-size:.9rem;line-height:1.55;color:#52625d}
+.gn-dyn-spec {background:#f0f5f2;border-inline-start:3px solid #72958a;padding:9px 12px;font-size:.91rem;line-height:1.5}
+.gn-dyn-other {margin:1.15rem 0;border-top:1px solid #bbcac5;padding-top:12px}
+.gn-dyn-other summary {font-weight:600;cursor:pointer}
+.gn-dyn-other-links {display:grid;gap:7px;margin:10px 0}
+.gn-dyn-other-links a {color:#205e65;overflow-wrap:anywhere}
+.gn-dyn-panel select optgroup {font-weight:700}
+.gn-dyn-panel select option {font-weight:400}
 </style>
 </head>
 <body>
@@ -41,7 +49,8 @@
 <h2 id="gn-dyn-title">Build an edition from approved text and apparatus</h2>
 <p class="gn-dyn-hint">This experimental publishing tool joins a checksum-verified Reading or Study PDF to a typeset apparatus packet using the same Gnamma HTML/CSS layouts. It works in this browser, without a publication server or upload of your private notes. The approved published PDFs remain available.</p>
 <label for="gn-dyn-profile">Choose a full-text edition and scholarly components</label>
-<select id="gn-dyn-profile" aria-describedby="gn-dyn-status"><option>Loading 120 available edition profiles…</option></select>
+<select id="gn-dyn-profile" aria-describedby="gn-dyn-design-spec gn-dyn-status"><option>Loading approved edition designs…</option></select>
+<p id="gn-dyn-design-spec" class="gn-dyn-spec">The precise book design and existing footnote arrangement will be preserved.</p>
 <div class="gn-dyn-actions">
  <button type="button" id="gn-dyn-make" disabled>Generate PDF locally</button>
  <button type="button" id="gn-dyn-personal" disabled>Generate with my Reading Desk notes</button>
@@ -51,6 +60,10 @@
 <a id="gn-dyn-download" class="gn-dyn-download" hidden>Download generated PDF</a>
 <p id="gn-dyn-personal-status" class="gn-dyn-hint"></p>
 <p class="gn-dyn-hint">Standard Reading and Reference PDFs have not been modified. Personal P markers, highlights and return links use the same local exporter shown below. High-memory devices are recommended for large works.</p>
+<details class="gn-dyn-other"><summary>Other approved book designs and reference editions</summary>
+ <p class="gn-dyn-hint">These five differently typeset publications remain direct, approved PDF downloads. Their pagination, source notes and page layout must not be silently recreated from another base. Additional modular designs will appear only after a matching source and link map have passed the same verification.</p>
+ <div id="gn-dyn-other-links" class="gn-dyn-other-links" aria-label="Other approved Daruri PDF designs"></div>
+</details>
 </section>
 <form id="pe-form" autocomplete="off">
   <section class="panel" aria-labelledby="edition-title">
