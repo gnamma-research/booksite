@@ -86,3 +86,5 @@ jobs:
             html_pdf_ci/*.log
             html_pdf_ci/dense_*.html
           retention-days: 14
+
+# Fixed source fixtures on experiment branch; published site unchanged.
