@@ -1,0 +1,48 @@
+name: Daruri mark-advance scalar CID native PDFKit experiment
+on:
+  push:
+    branches: [qa/daruri-vowelled-pdfkit-ab-20261022]
+    paths:
+      - 'daruri/qa/experimental_original_char_unicode.py'
+      - '.github/workflows/daruri-pdfkit-scalar-mark-widths.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mark-spacing:
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: Try three nonzero mark widths in native Apple PDFKit
+        run: |
+          mkdir -p /tmp/mark-spacing
+          for fraction in 0.08 0.16 0.30; do
+            python daruri/qa/experimental_original_char_unicode.py \
+              --input daruri/editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf \
+              --map daruri/editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json \
+              --output /tmp/mark-spacing/mark-$fraction.pdf \
+              --scalar-harakat --scalar-mark-fraction "$fraction"
+            set +e
+            swift daruri/qa/verify_char_unicode_pdfkit.swift \
+              /tmp/mark-spacing/mark-$fraction.pdf \
+              daruri/editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json \
+              > /tmp/mark-spacing/mark-$fraction-pdfkit.txt 2>&1
+            mac_result=$?
+            set -e
+            echo "MARK_WIDTH_NATIVE_RESULT fraction=$fraction exit=$mac_result"
+            grep -E 'PDFKIT_414_COVERAGE|PDFKIT_414_EXPERIMENT' \
+              /tmp/mark-spacing/mark-$fraction-pdfkit.txt || true
+            echo "$mac_result" > /tmp/mark-spacing/mark-$fraction-result.txt
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-native-mark-spacing-experiment
+          path: /tmp/mark-spacing/*.txt
+          retention-days: 14
+          if-no-files-found: warn
