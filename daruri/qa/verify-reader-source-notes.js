@@ -343,6 +343,33 @@ function assertOfflineAsset() {
   assert.equal(visited.size, 637, 'Every original note and all 98 main/application sources rendered once in its owned section');
   for (const note of [...book.notes, ...appSources]) assert.ok(visited.has(note.id), 'Rendered note ' + note.id);
   for (const note of dictionarySources) assert.ok(!visited.has(note.id));
+  // Inline Qurʾānic markers must open exactly the same single-note presentation
+  // as the section-end Notes card, including verified verse and ornate brackets.
+  const inlineQuranChecks=[
+    ['1','QUR-R001-Q049','عَلَّمَهُ ٱلْبَيَانَ'],
+    ['1','QUR-R001-Q050','فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ'],
+    ['38','QUR-R038-Q001','يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَقْرَبُوا۟ ٱلصَّلَوٰةَ وَأَنتُمْ سُكَـٰرَىٰ حَتَّىٰ تَعْلَمُوا۟ مَا تَقُولُونَ']
+  ];
+  for (const [sectionId,noteId,verse] of inlineQuranChecks) {
+    await navigate(w,{id:sectionId});
+    const marker=d.querySelector('.quran-source-ref[data-note-target="'+noteId+'"]');
+    assert.ok(marker,'Inline Qurʾānic footnote marker exists: '+noteId);
+    marker.focus({preventScroll:true});
+    const hash=w.location.hash;
+    w.scrollTo({top:412});
+    marker.click();
+    await new Promise(resolve => w.queueMicrotask(resolve));
+    assert.equal(w.location.hash,hash,'Inline note does not navigate away: '+noteId);
+    assert.equal(w.scrollY,412,'Inline note preserves reading position: '+noteId);
+    assertCard(d,{id:sectionId},[byID.get(noteId)]);
+    const figure=d.querySelector('#gn-scholar-layer .gn-note-entry .gn-verse-source-excerpt');
+    assert.ok(figure,'Inline note shows a verified Qurʾānic excerpt: '+noteId);
+    assert.equal(figure.querySelector('.gn-quran-words')?.textContent,verse);
+    assert.equal(figure.querySelector('.gn-quran-quotation')?.firstElementChild?.textContent,'﴿');
+    assert.equal(figure.querySelector('.gn-quran-quotation')?.lastElementChild?.textContent,'﴾');
+    d.querySelector('#gn-scholar-layer button[data-gn-close]').click();
+    assert.equal(d.activeElement,marker,'Inline Notes restores source marker focus: '+noteId);
+  }
   // Application popups display the same source body beside the cited material.
   for (const app of book.apps.filter(item => supplement.applications[item.id])) {
     await navigate(w, {id:app.n});
