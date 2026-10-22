@@ -42,6 +42,10 @@ jobs:
           cp "/tmp/gnamma_pdf_parity/${{ matrix.edition }}/build.stdout" "pdf_parity_ci/results/${{ matrix.edition }}/" 2>/dev/null || true
           cp "/tmp/gnamma_pdf_parity/${{ matrix.edition }}/build.stderr" "pdf_parity_ci/results/${{ matrix.edition }}/" 2>/dev/null || true
           cp "/tmp/gnamma_pdf_parity/${{ matrix.edition }}"/*.png "pdf_parity_ci/results/${{ matrix.edition }}/" 2>/dev/null || true
+          if [ "${{ matrix.edition }}" = "scholarly" ]; then
+            cp "/tmp/gnamma_pdf_parity/scholarly/daruri.pdf" "pdf_parity_ci/results/scholarly/regenerated-daruri.pdf" 2>/dev/null || true
+            cp "daruri/daruri.pdf" "pdf_parity_ci/results/scholarly/published-daruri.pdf" 2>/dev/null || true
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -72,7 +76,20 @@ jobs:
         run: |
           python daruri/qa/verify_pdf_export_maps.py
           python daruri/qa/verify_apparatus_maps.py
-          python daruri/build/verify_structure.py
+          mkdir -p /tmp/gnamma-structure
+          for name in daruri.pdf daruri-study.pdf daruri-english.pdf daruri-arabic.pdf daruri-arabic-vowelled.pdf; do
+            ln -sf "$PWD/daruri/$name" "/tmp/gnamma-structure/$name"
+            ln -sf "$PWD/daruri/build/release/$name.metadata.json" "/tmp/gnamma-structure/$name.metadata.json"
+          done
+          python daruri/build/verify_structure.py --output-dir /tmp/gnamma-structure
+      - name: Examine every internal link across all 137 published PDFs
+        run: python pdf_parity_ci/published_link_graph.py pdf_parity_ci/link_graph_report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-published-link-graph
+          path: pdf_parity_ci/link_graph_report.json
+          retention-days: 14
       - name: Validate personal export safety invariants
         run: |
           node daruri/qa/verify-personal-export.js
