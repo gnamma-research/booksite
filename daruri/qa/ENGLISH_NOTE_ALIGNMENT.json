@@ -1,0 +1,965 @@
+{
+  "schema": "gnamma-english-note-alignment-v1",
+  "work": "Daruri",
+  "method": "Editorially selected exact English excerpts, each verified once in its bilingual segment; no proportional or machine-guessed token offsets.",
+  "source": "daruri/edition-r3-20261020.js",
+  "source_blob": "03cf9fe4af7aa443fc963ce92d9be283e9805b76",
+  "note_prefix": "N",
+  "all_notes": 122,
+  "notes_with_english_phrase": 118,
+  "fallback_notes": [
+    {
+      "note_id": "N017",
+      "section": "39",
+      "scope": "section"
+    },
+    {
+      "note_id": "N034",
+      "section": "87",
+      "scope": "section"
+    },
+    {
+      "note_id": "N057",
+      "section": "144",
+      "scope": "section"
+    },
+    {
+      "note_id": "N068",
+      "section": "167",
+      "scope": "section"
+    }
+  ],
+  "english_phrase_anchors": [
+    {
+      "section": "1",
+      "segment": 0,
+      "note_id": "N001",
+      "english": "after praising God",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "2",
+      "segment": 0,
+      "note_id": "N002",
+      "english": "another part is particular (جزئية)",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "2",
+      "segment": 1,
+      "note_id": "N003",
+      "english": "a probe and a rule",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "5",
+      "segment": 0,
+      "note_id": "N004",
+      "english": "this book",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "7",
+      "segment": 0,
+      "note_id": "N005",
+      "english": "those who discuss this craft",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "11",
+      "segment": 1,
+      "note_id": "N006",
+      "english": "the utterance that restrains indecency",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "11",
+      "segment": 2,
+      "note_id": "N006",
+      "english": "outside the concrete entity",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "11",
+      "segment": 1,
+      "note_id": "N007",
+      "english": "a suitable, plausible ground",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "13",
+      "segment": 0,
+      "note_id": "N008",
+      "english": "apprehended by reason",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "15",
+      "segment": 0,
+      "note_id": "N009",
+      "english": "necessary knowledge",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "15",
+      "segment": 1,
+      "note_id": "N009",
+      "english": "knowledge of this is necessary",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "20",
+      "segment": 0,
+      "note_id": "N010",
+      "english": "extended performance periods",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "26",
+      "segment": 0,
+      "note_id": "N011",
+      "english": "More evident still [is the error of supposing]",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "29",
+      "segment": 0,
+      "note_id": "N012",
+      "english": "For one who understands the form of prohibition",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "29",
+      "segment": 0,
+      "note_id": "N013",
+      "english": "a prohibition applying to that act under a particular qualification",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "29",
+      "segment": 1,
+      "note_id": "N014",
+      "english": "If, however, the question is considered from the standpoint of meaning",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "31",
+      "segment": 1,
+      "note_id": "N015",
+      "english": "without intending [worship of it] is forbidden in one respect and an act of drawing near [to God]",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "38",
+      "segment": 0,
+      "note_id": "N016",
+      "english": "the legally responsible person is the guardian, subject to readiness to receive reason",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "38",
+      "segment": 1,
+      "note_id": "N016",
+      "english": "after [possessing] reason, the condition of legal responsibility",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "44",
+      "segment": 1,
+      "note_id": "N018",
+      "english": "the cause in acquiring [the act] be belief in the command’s obligatoriness",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "45",
+      "segment": 1,
+      "note_id": "N019",
+      "english": "its possibility conceived",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "45",
+      "segment": 0,
+      "note_id": "N020",
+      "english": "the shaykh Abū al-Ḥasan",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "45",
+      "segment": 0,
+      "note_id": "N021",
+      "english": "what makes the human being appear to be an agent",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "45",
+      "segment": 1,
+      "note_id": "N021",
+      "english": "its possibility conceived",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "47",
+      "segment": 1,
+      "note_id": "N022",
+      "english": "[the threat of] killing",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "47",
+      "segment": 3,
+      "note_id": "N022",
+      "english": "coercion by killing into killing",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "58",
+      "segment": 0,
+      "note_id": "N023",
+      "english": "advancing the alms before the year's completion",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "63",
+      "segment": 0,
+      "note_id": "N024",
+      "english": "what is peculiar to it",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "64",
+      "segment": 0,
+      "note_id": "N025",
+      "english": "aḥruf (الأحرف السبعة, modes of recitation)",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "69",
+      "segment": 0,
+      "note_id": "N026",
+      "english": "the expression ‘he said’ [the printed cross-reference is defective]",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "71",
+      "segment": 0,
+      "note_id": "N027",
+      "english": "the person issuing the command",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "75",
+      "segment": 0,
+      "note_id": "N028",
+      "english": "a goat-stag",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "75",
+      "segment": 1,
+      "note_id": "N028",
+      "english": "a certain syllogism",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "76",
+      "segment": 0,
+      "note_id": "N029",
+      "english": "its relation to the soul resembles that of",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "76",
+      "segment": 1,
+      "note_id": "N029",
+      "english": "some through acquisition",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "76",
+      "segment": 0,
+      "note_id": "N030",
+      "english": "cannot say that assent to this conclusion is produced, in the primary sense, by premises",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "77",
+      "segment": 0,
+      "note_id": "N031",
+      "english": "What does not actually exist in the soul cannot cause what is potential",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "79",
+      "segment": 0,
+      "note_id": "N032",
+      "english": "We answer: although this is not impossible",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "82",
+      "segment": 2,
+      "note_id": "N033",
+      "english": "warning was perhaps required of individuals only so that their numbers would increase",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "89",
+      "segment": 0,
+      "note_id": "N035",
+      "english": "unknown to the Prophet himself",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "91",
+      "segment": 0,
+      "note_id": "N036",
+      "english": "Whoever holds that transgression in itself defeats acceptance, ⟨not⟩ because it arouses suspicion",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "92",
+      "segment": 0,
+      "note_id": "N037",
+      "english": "drinks nabīdh",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "96",
+      "segment": 1,
+      "note_id": "N038",
+      "english": "specifically addresses the very matter asserted by the critic",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "97",
+      "segment": 0,
+      "note_id": "N039",
+      "english": "The highest is an explicit statement explaining the basis of his probity",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "97",
+      "segment": 1,
+      "note_id": "N039",
+      "english": "for reasons other than an objection to his probity",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "105",
+      "segment": 1,
+      "note_id": "N040",
+      "english": "some say that one may not act upon it without having heard it",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "110",
+      "segment": 1,
+      "note_id": "N041",
+      "english": "I consider this permissible if that part conveys a meaning",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "110",
+      "segment": 0,
+      "note_id": "N042",
+      "english": "A practitioner of independent judgement whose judgement others follow",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "111",
+      "segment": 1,
+      "note_id": "N043",
+      "english": "he transmits only from persons of probity",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "111",
+      "segment": 0,
+      "note_id": "N044",
+      "english": "transmission with an omitted link and transmission with a connected chain",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "113",
+      "segment": 0,
+      "note_id": "N045",
+      "english": "may God bless them and grant them peace",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "119",
+      "segment": 0,
+      "note_id": "N046",
+      "english": "the abrogation concerning storing sacrificial meat",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "121",
+      "segment": 2,
+      "note_id": "N047",
+      "english": "it should not be accepted that such wording was once part of the Qurʾān until it is established by mass transmission",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "121",
+      "segment": 1,
+      "note_id": "N048",
+      "english": "needy people",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "121",
+      "segment": 1,
+      "note_id": "N049",
+      "english": "a compensation: food for needy people",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "124",
+      "segment": 1,
+      "note_id": "N050",
+      "english": "God has now appointed a way for them",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "125",
+      "segment": 0,
+      "note_id": "N051",
+      "english": "Contrary to what many think, it is not impossible",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "131",
+      "segment": 2,
+      "note_id": "N052",
+      "english": "My community does not agree upon error",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "133",
+      "segment": 0,
+      "note_id": "N053",
+      "english": "included as followers of the consensus",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "141",
+      "segment": 0,
+      "note_id": "N054",
+      "english": "eating during Shawwāl",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "141",
+      "segment": 0,
+      "note_id": "N055",
+      "english": "calling this a proof is a loose use of language",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "143",
+      "segment": 0,
+      "note_id": "N056",
+      "english": "Here the discussion of the fourth source ends",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "145",
+      "segment": 0,
+      "note_id": "N058",
+      "english": "the community should, at any time, lose knowledge of a collective obligation",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "152",
+      "segment": 0,
+      "note_id": "N059",
+      "english": "requests, entreaties, and calls",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "157",
+      "segment": 0,
+      "note_id": "N060",
+      "english": "in every context",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "158",
+      "segment": 0,
+      "note_id": "N061",
+      "english": "the eye of a balance",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "160",
+      "segment": 0,
+      "note_id": "N062",
+      "english": "beyond the time of need",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "161",
+      "segment": 1,
+      "note_id": "N063",
+      "english": "while knowing with certainty that they remain indeterminate",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "161",
+      "segment": 2,
+      "note_id": "N063",
+      "english": "knowing with certainty that they are indeterminate",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "161",
+      "segment": 0,
+      "note_id": "N064",
+      "english": "al-ṣarīm here means night",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "163",
+      "segment": 2,
+      "note_id": "N065",
+      "english": "its detailed clarification is deferred until the time of need",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "163",
+      "segment": 3,
+      "note_id": "N065",
+      "english": "those who [do not] permit it",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "163",
+      "segment": 0,
+      "note_id": "N066",
+      "english": "until the time of need",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "163",
+      "segment": 1,
+      "note_id": "N066",
+      "english": "until the particular cow was identified for them",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "163",
+      "segment": 2,
+      "note_id": "N066",
+      "english": "until the time of need",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "163",
+      "segment": 3,
+      "note_id": "N066",
+      "english": "beyond the time of need",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "165",
+      "segment": 0,
+      "note_id": "N067",
+      "english": "placing the universal (الكلي) in place of the particular (الجزئي)",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "168",
+      "segment": 1,
+      "note_id": "N069",
+      "english": "being established’ here is not occupying a place",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "170",
+      "segment": 0,
+      "note_id": "N070",
+      "english": "do not end in the feminine ending",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "171",
+      "segment": 0,
+      "note_id": "N071",
+      "english": "She is entitled to the dower",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "177",
+      "segment": 0,
+      "note_id": "N072",
+      "english": "An equivocal term does not have general scope encompassing everything to which it applies",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "178",
+      "segment": 0,
+      "note_id": "N073",
+      "english": "specifically a masculine plural",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "179",
+      "segment": 0,
+      "note_id": "N074",
+      "english": "the minimum denoted by a plural",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "181",
+      "segment": 1,
+      "note_id": "N075",
+      "english": "Opinions differ concerning the specification of general wording through these other revealed proofs",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "183",
+      "segment": 0,
+      "note_id": "N076",
+      "english": "the expression to which it belongs",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "185",
+      "segment": 0,
+      "note_id": "N077",
+      "english": "an immediate transaction",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "185",
+      "segment": 1,
+      "note_id": "N078",
+      "english": "the horse tethering places",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "187",
+      "segment": 1,
+      "note_id": "N079",
+      "english": "whoever cannot find the means must fast three days",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "188",
+      "segment": 0,
+      "note_id": "N080",
+      "english": "the amount remaining after an exception may be smaller than the amount excepted",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "191",
+      "segment": 2,
+      "note_id": "N081",
+      "english": "substitute the specific particular for the general",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "191",
+      "segment": 3,
+      "note_id": "N082",
+      "english": "Do not say ‘Uff’ to the two of them",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "191",
+      "segment": 3,
+      "note_id": "N083",
+      "english": "the thread and the needle",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "192",
+      "segment": 0,
+      "note_id": "N084",
+      "english": "indeterminate, unambiguous, prima facie, and interpreted expressions",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "194",
+      "segment": 0,
+      "note_id": "N085",
+      "english": "what is certainly understood here is marriage",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "194",
+      "segment": 2,
+      "note_id": "N086",
+      "english": "inference from the discourse (دليل الخطاب)",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "195",
+      "segment": 1,
+      "note_id": "N087",
+      "english": "qualifies something by an endpoint",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "198",
+      "segment": 1,
+      "note_id": "N088",
+      "english": "[subsisting] in the soul",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "200",
+      "segment": 1,
+      "note_id": "N089",
+      "english": "meanings of ordinary usage",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "203",
+      "segment": 0,
+      "note_id": "N090",
+      "english": "would signify either [obligation] or recommendation",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "203",
+      "segment": 1,
+      "note_id": "N091",
+      "english": "It may admit recommendation or [obligation]",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "203",
+      "segment": 1,
+      "note_id": "N092",
+      "english": "the imperative “Do!”",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "204",
+      "segment": 0,
+      "note_id": "N093",
+      "english": "a specified time",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "205",
+      "segment": 0,
+      "note_id": "N094",
+      "english": "the sufficiency of the commanded act (إجزاء)",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "205",
+      "segment": 1,
+      "note_id": "N094",
+      "english": "the sufficiency of the commanded act",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "211",
+      "segment": 1,
+      "note_id": "N095",
+      "english": "Negation as negation does not require one ruling for two things—except where negation has the force of privation",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "212",
+      "segment": 0,
+      "note_id": "N096",
+      "english": "it is not a syllogism, but belongs to using a particular expression in place of the intended universal",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "212",
+      "segment": 1,
+      "note_id": "N096",
+      "english": "this is using a particular expression in place of the intended universal",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "212",
+      "segment": 0,
+      "note_id": "N097",
+      "english": "water left by a cat",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "215",
+      "segment": 0,
+      "note_id": "N098",
+      "english": "the ruling applies with greater reason to the unmentioned case than to the stated one",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "215",
+      "segment": 0,
+      "note_id": "N099",
+      "english": "the thread and the needle",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "217",
+      "segment": 1,
+      "note_id": "N101",
+      "english": "When it is very remote and completely general, as when we simply say “benefit,”",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "218",
+      "segment": 1,
+      "note_id": "N102",
+      "english": "they join the second rank",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "218",
+      "segment": 0,
+      "note_id": "N103",
+      "english": "analogy by resemblance (قياس الشبه)",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "218",
+      "segment": 1,
+      "note_id": "N104",
+      "english": "nourishment, measure, or edibility",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "222",
+      "segment": 1,
+      "note_id": "N105",
+      "english": "positive and negative concomitance",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "223",
+      "segment": 2,
+      "note_id": "N106",
+      "english": "no indication pointing to the underlying ground",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "224",
+      "segment": 0,
+      "note_id": "N107",
+      "english": "These are all contextual indications that [make] expressions prima facie",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "224",
+      "segment": 0,
+      "note_id": "N108",
+      "english": "These are all contextual indications that [make] expressions prima facie",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "227",
+      "segment": 0,
+      "note_id": "N109",
+      "english": "if it is a legal judgement",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "229",
+      "segment": 0,
+      "note_id": "N110",
+      "english": "⟨that the action is peculiar to him. The third is⟩",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "229",
+      "segment": 0,
+      "note_id": "N111",
+      "english": "others withhold judgement",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "237",
+      "segment": 0,
+      "note_id": "N112",
+      "english": "one is charged with attaining it",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "239",
+      "segment": 1,
+      "note_id": "N113",
+      "english": "We have neglected nothing in the Book",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "239",
+      "segment": 1,
+      "note_id": "N114",
+      "english": "original freedom from obligation",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "241",
+      "segment": 0,
+      "note_id": "N115",
+      "english": "grave offence and a resort to arbitrary judgement",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "241",
+      "segment": 1,
+      "note_id": "N116",
+      "english": "evidence itself yields what is sought",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "243",
+      "segment": 0,
+      "note_id": "N117",
+      "english": "it occurs through forgetfulness, inattention, and inadvertence",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "246",
+      "segment": 1,
+      "note_id": "N118",
+      "english": "ritual bathing because of the emission of fluid, and bathing because of the meeting of the circumcised parts",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "247",
+      "segment": 1,
+      "note_id": "N119",
+      "english": "For contradictory evidence cannot occur within the Law itself",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "254",
+      "segment": 1,
+      "note_id": "N120",
+      "english": "no practising independent jurist",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "258",
+      "segment": 0,
+      "note_id": "N121",
+      "english": "Here our purpose in this abridgement is complete",
+      "source": "editorial-meaning"
+    },
+    {
+      "section": "258",
+      "segment": 0,
+      "note_id": "N122",
+      "english": "the middle ten days of Dhū al-Ḥijja",
+      "source": "arabic-anchored"
+    },
+    {
+      "section": "colophon",
+      "segment": 1,
+      "note_id": "N123",
+      "english": "Aḥmad ibn Aḥmad al-Muṭarrifī",
+      "source": "arabic-anchored"
+    }
+  ]
+}
