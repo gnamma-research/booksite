@@ -136,7 +136,13 @@ def cmap_for(aliases):
         subset = aliases[offset:offset + 100]
         lines.append(f"{len(subset)} beginbfchar")
         for cid, scalar, width in subset:
-            lines.append(f"<{cid:04X}> <{scalar.encode('utf-16be').hex().upper()}>")
+            # The glyph stream is emitted in visual RTL order; extractors
+            # reorder multiple Unicode scalars inside each source grapheme.
+            # Reverse the serialized cluster (not the source text) so the
+            # extracted/copied word retains BASE followed by its vowel marks.
+            # This is a no-op for unvowelled one-codepoint characters.
+            physical = scalar[::-1] if len(scalar) > 1 else scalar
+            lines.append(f"<{cid:04X}> <{physical.encode('utf-16be').hex().upper()}>")
         lines.append("endbfchar")
     lines.extend(["endcmap", "CMapName currentdict /CMap defineresource pop", "end", "end"])
     return ("\n".join(lines) + "\n").encode("ascii")
