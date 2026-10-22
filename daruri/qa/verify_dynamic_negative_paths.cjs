@@ -188,7 +188,16 @@ async function run(){
  await withCase('simulated memory exhaustion restores functionality',async set=>{
   const s=await setup(null);set(s);await ready(s);
   await s.page.evaluate(()=>{
-   window.GnammaDynamicPdf.assemble=async()=>{throw Error('Simulated out-of-memory failure');};
+   // Simulate the independent worker reporting an OOM failure rather than
+   // patching the old main-thread renderer (no longer used).
+   window.Worker=class {
+    postMessage(request){
+     Promise.resolve().then(()=>this.onmessage?.({
+      data:{id:request.id,error:'Simulated out-of-memory failure'}
+     }));
+    }
+    terminate(){}
+   };
   });
   const status=await generationFailure(s,/Simulated out-of-memory failure/);
   return status.slice(0,130);
