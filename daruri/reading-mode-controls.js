@@ -626,4 +626,14 @@ function install(){
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});
 else install();
+/* Load curated English publisher-note links alongside the reader controls. */
+(function(){
+ const script=document.createElement('script');
+ script.src='english-note-anchors.js?v=20261023-en-anchors1';
+ script.async=true;
+ script.dataset.gnEnglishNoteAnchors='1';
+ script.addEventListener('error',()=>console.warn('English note link module did not load.'));
+ document.head.appendChild(script);
+})();
+
 })();
