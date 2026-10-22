@@ -1,0 +1,272 @@
+{
+  "release": "20261022-base-personal-word-maps",
+  "status": "verified",
+  "source_manifest_sha256": "58d8bca84ffc786671d65700d27558ed3c2ef0bacee9a35f34105153db3bedb2",
+  "note": "Per-edition checksum-bound section destinations and strictly matched word segments. Partial word coverage is expected and falls back to sections.",
+  "files": [
+    {
+      "file": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "sha256": "3c5c0c3f033f52103405fa27baa0000346059be38cb7873aba791c142c44ea36",
+      "pages": 76,
+      "map_file": "maps/daruri-reading-bilingual-titles-off.pdf.json",
+      "metadata_file": "maps/daruri-reading-bilingual-titles-off.pdf.metadata.json",
+      "map_sha256": "2f802868dad756f0047eb1b2d08e2184c2aba66188609121816fd0db28d6a1a8",
+      "source_base": "reading/daruri-reading-bilingual-titles-off.pdf",
+      "base_sha256": "3c5c0c3f033f52103405fa27baa0000346059be38cb7873aba791c142c44ea36",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": true,
+      "word_map_coverage": {
+        "en": {
+          "matched": 61,
+          "eligible": 414
+        },
+        "vocalized": {
+          "matched": 0,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 61
+    },
+    {
+      "file": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "sha256": "683b5e208b29f155a3033e1aa98d631d3cbc3688b250883b92ec980e7bb89434",
+      "pages": 82,
+      "map_file": "maps/daruri-reading-bilingual-titles-on.pdf.json",
+      "metadata_file": "maps/daruri-reading-bilingual-titles-on.pdf.metadata.json",
+      "map_sha256": "d120edc09210ff5388b3d5bf74d2e2487cc5cc30d0edc5b4a876ff36306f7cf2",
+      "source_base": "reading/daruri-reading-bilingual-titles-on.pdf",
+      "base_sha256": "683b5e208b29f155a3033e1aa98d631d3cbc3688b250883b92ec980e7bb89434",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": true,
+      "word_map_coverage": {
+        "en": {
+          "matched": 72,
+          "eligible": 414
+        },
+        "vocalized": {
+          "matched": 0,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 72
+    },
+    {
+      "file": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "sha256": "dfc94e9a2a54257e65a1aa21463e4f4ae1e7cfa44fa3e99735f58cee7f28b262",
+      "pages": 76,
+      "map_file": "maps/daruri-reading-bilingual-unvowelled-titles-off.pdf.json",
+      "metadata_file": "maps/daruri-reading-bilingual-unvowelled-titles-off.pdf.metadata.json",
+      "map_sha256": "3bb1dbfefe501d6866a698d1cc901ab8707edad4f99e64a65951d81d2d98bb63",
+      "source_base": "reading/daruri-reading-bilingual-unvowelled-titles-off.pdf",
+      "base_sha256": "dfc94e9a2a54257e65a1aa21463e4f4ae1e7cfa44fa3e99735f58cee7f28b262",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": true,
+      "word_map_coverage": {
+        "en": {
+          "matched": 61,
+          "eligible": 414
+        },
+        "ar": {
+          "matched": 0,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 61
+    },
+    {
+      "file": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "sha256": "c608f5588aa0015c2258731da3038e65bde8469ffa5b03cf7530b4d183c9d067",
+      "pages": 82,
+      "map_file": "maps/daruri-reading-bilingual-unvowelled-titles-on.pdf.json",
+      "metadata_file": "maps/daruri-reading-bilingual-unvowelled-titles-on.pdf.metadata.json",
+      "map_sha256": "725079bc97aebabdb72aa380a0f44ae4ee45c011d099d539a912505b56dfa2fb",
+      "source_base": "reading/daruri-reading-bilingual-unvowelled-titles-on.pdf",
+      "base_sha256": "c608f5588aa0015c2258731da3038e65bde8469ffa5b03cf7530b4d183c9d067",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": true,
+      "word_map_coverage": {
+        "en": {
+          "matched": 72,
+          "eligible": 414
+        },
+        "ar": {
+          "matched": 0,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 72
+    },
+    {
+      "file": "reading/daruri-reading-english-titles-off.pdf",
+      "sha256": "f61892727d1d62c0ce3a29a24abedce65c1949051a2851dc74c83df73153f59d",
+      "pages": 43,
+      "map_file": "maps/daruri-reading-english-titles-off.pdf.json",
+      "metadata_file": "maps/daruri-reading-english-titles-off.pdf.metadata.json",
+      "map_sha256": "191c3754a7efac4be1c42f47f12d811c36128e0171400a258c92a8b194d419ba",
+      "source_base": "reading/daruri-reading-english-titles-off.pdf",
+      "base_sha256": "f61892727d1d62c0ce3a29a24abedce65c1949051a2851dc74c83df73153f59d",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": true,
+      "word_map_coverage": {
+        "en": {
+          "matched": 42,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 42
+    },
+    {
+      "file": "reading/daruri-reading-english-titles-on.pdf",
+      "sha256": "15c95f937b1751fceb05154d5e6251ecfba937896f296dac9276079a94c6ada1",
+      "pages": 47,
+      "map_file": "maps/daruri-reading-english-titles-on.pdf.json",
+      "metadata_file": "maps/daruri-reading-english-titles-on.pdf.metadata.json",
+      "map_sha256": "a8cbf16c59c6fff1648177059f2b9b981467126ea07ad41f617324e88ddac42e",
+      "source_base": "reading/daruri-reading-english-titles-on.pdf",
+      "base_sha256": "15c95f937b1751fceb05154d5e6251ecfba937896f296dac9276079a94c6ada1",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": true,
+      "word_map_coverage": {
+        "en": {
+          "matched": 52,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 52
+    },
+    {
+      "file": "reading/daruri-reading-arabic-titles-off.pdf",
+      "sha256": "d7080acf3232f49e3ddac67ccafab62201247cc7b632d6eaefc32e78c7e94038",
+      "pages": 36,
+      "map_file": "maps/daruri-reading-arabic-titles-off.pdf.json",
+      "metadata_file": "maps/daruri-reading-arabic-titles-off.pdf.metadata.json",
+      "map_sha256": "8669067ee20e9d240f03da150aa2afac5296faa76e0dc41d1c6ba93e2d3f9b41",
+      "source_base": "reading/daruri-reading-arabic-titles-off.pdf",
+      "base_sha256": "d7080acf3232f49e3ddac67ccafab62201247cc7b632d6eaefc32e78c7e94038",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": false,
+      "word_map_coverage": {
+        "ar": {
+          "matched": 0,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 0
+    },
+    {
+      "file": "reading/daruri-reading-arabic-titles-on.pdf",
+      "sha256": "29b7e42300d82201f5d5d9a9cbd06a29cbae85887f9f273d1f7e007cce440249",
+      "pages": 41,
+      "map_file": "maps/daruri-reading-arabic-titles-on.pdf.json",
+      "metadata_file": "maps/daruri-reading-arabic-titles-on.pdf.metadata.json",
+      "map_sha256": "248457e656257f61a79664a5f589db4dfe69d54b73db276faf4ffa4210a47652",
+      "source_base": "reading/daruri-reading-arabic-titles-on.pdf",
+      "base_sha256": "29b7e42300d82201f5d5d9a9cbd06a29cbae85887f9f273d1f7e007cce440249",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": false,
+      "word_map_coverage": {
+        "ar": {
+          "matched": 0,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 0
+    },
+    {
+      "file": "reading/daruri-reading-arabic-vowelled-titles-off.pdf",
+      "sha256": "b58b5671dec6fab070618d2387e7864a286b47188051998214e1350ba010c325",
+      "pages": 37,
+      "map_file": "maps/daruri-reading-arabic-vowelled-titles-off.pdf.json",
+      "metadata_file": "maps/daruri-reading-arabic-vowelled-titles-off.pdf.metadata.json",
+      "map_sha256": "fdb1589e25bb49ec2a2ffd01e0dea36251c16fd5b270b30c47880d1c3d677073",
+      "source_base": "reading/daruri-reading-arabic-vowelled-titles-off.pdf",
+      "base_sha256": "b58b5671dec6fab070618d2387e7864a286b47188051998214e1350ba010c325",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": false,
+      "word_map_coverage": {
+        "vocalized": {
+          "matched": 0,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 0
+    },
+    {
+      "file": "reading/daruri-reading-arabic-vowelled-titles-on.pdf",
+      "sha256": "fca76e1160a3aebc2eeb9a1c707c49599fc95db618abcd89c67c31ea474368b1",
+      "pages": 42,
+      "map_file": "maps/daruri-reading-arabic-vowelled-titles-on.pdf.json",
+      "metadata_file": "maps/daruri-reading-arabic-vowelled-titles-on.pdf.metadata.json",
+      "map_sha256": "fe09628ad2f9c56cc8243f58af39e62c7fb58033129ac637f98458ac71fd254b",
+      "source_base": "reading/daruri-reading-arabic-vowelled-titles-on.pdf",
+      "base_sha256": "fca76e1160a3aebc2eeb9a1c707c49599fc95db618abcd89c67c31ea474368b1",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": false,
+      "word_map_coverage": {
+        "vocalized": {
+          "matched": 0,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 0
+    },
+    {
+      "file": "study/daruri-study-bilingual-titles-off.pdf",
+      "sha256": "2817dd250c002e3e3b1c1b9c9f81bd445de02248ffce952fb5c1d94f48faee40",
+      "pages": 131,
+      "map_file": "maps/daruri-study-bilingual-titles-off.pdf.json",
+      "metadata_file": "maps/daruri-study-bilingual-titles-off.pdf.metadata.json",
+      "map_sha256": "5f32975c1e16f1f0ee9cc8a4c648856a9affde67c576813c9a0f5e6d1ea7cba7",
+      "source_base": "study/daruri-study-bilingual-titles-off.pdf",
+      "base_sha256": "2817dd250c002e3e3b1c1b9c9f81bd445de02248ffce952fb5c1d94f48faee40",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": true,
+      "word_map_coverage": {
+        "en": {
+          "matched": 75,
+          "eligible": 414
+        },
+        "vocalized": {
+          "matched": 0,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 75
+    },
+    {
+      "file": "study/daruri-study-bilingual-titles-on.pdf",
+      "sha256": "9746fad594d696bfb0e4800b3370db84a225ca0c3683402c5e6430a1d26c12e4",
+      "pages": 143,
+      "map_file": "maps/daruri-study-bilingual-titles-on.pdf.json",
+      "metadata_file": "maps/daruri-study-bilingual-titles-on.pdf.metadata.json",
+      "map_sha256": "82cea171ba07146acef2c9de4ac8a08b33f353b919a9d8eda3cc635e2db64f03",
+      "source_base": "study/daruri-study-bilingual-titles-on.pdf",
+      "base_sha256": "9746fad594d696bfb0e4800b3370db84a225ca0c3683402c5e6430a1d26c12e4",
+      "verified_sections": 258,
+      "map_coverage": 1.0,
+      "word_map_present": true,
+      "word_map_coverage": {
+        "en": {
+          "matched": 74,
+          "eligible": 414
+        },
+        "vocalized": {
+          "matched": 0,
+          "eligible": 414
+        }
+      },
+      "mapped_segments": 74
+    }
+  ]
+}
