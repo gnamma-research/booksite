@@ -50,7 +50,7 @@ try{
  assert(pdf.getPageCount()>37,'P-numbered endnote appendix must be appended');
  let links=0;
  for(let i=0;i<pdf.getPageCount();i++){
-  const annots=pdf.getPage(i).node.lookup(PDFName.of('Annots'),PDFArray);
+  const annots=pdf.getPage(i).node.lookupMaybe(PDFName.of('Annots'),PDFArray);
   if(!annots)continue;
   for(let k=0;k<annots.size();k++){
    const annot=pdf.context.lookup(annots.get(k));
