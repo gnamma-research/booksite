@@ -2,6 +2,7 @@
 """Fail-closed release audit of every apparatus PDF and its personal-note map."""
 from __future__ import annotations
 import hashlib, json, argparse
+from itertools import combinations
 from pathlib import Path
 import fitz
 
@@ -18,8 +19,29 @@ def verify(root:Path=APP):
     assert manifest["source_a4_manifest_sha256"]==sha(BASE/"manifest.json")
     originals=json.loads((BASE/"manifest.json").read_text())
     originals={row["file"]:row for row in originals["files"]}
+    expected={
+        (tier, language, editorial, components)
+        for tier, languages in (
+            ("reading", ("bilingual", "bilingual-unvowelled", "english")),
+            ("study", ("bilingual",))
+        )
+        for language in languages for editorial in (False, True)
+        for count in range(1,5)
+        for components in combinations(("glossary","index","concordance","applications"), count)
+    }
+    assert len(expected)==120
+    observed=set()
     seen=set()
     for f in manifest["files"]:
+        key=(f["tier"], f["language"], f["editorial_titles"], tuple(f["apparatus"]))
+        assert key in expected and key not in observed, "Missing, duplicated or unsupported profile: "+repr(key)
+        observed.add(key)
+        suffix="on" if f["editorial_titles"] else "off"
+        assert f["source_base"] == (
+            f'{f["tier"]}/daruri-{f["tier"]}-{f["language"]}-titles-{suffix}.pdf'
+        )
+        assert f["scope"]=="full" and f["layout"]=="parallel" and f["density"]=="standard"
+        assert f["notes"]==("selected" if f["tier"]=="study" else "none")
         name=Path(f["file"]).name
         assert f["file"]=="apparatus/"+name and name not in seen
         seen.add(name)
@@ -84,6 +106,7 @@ def verify(root:Path=APP):
             assert len(toc)>=base["bookmarks"]+len(f["apparatus"])
             assert all(row[2]>=1 and row[2]<=len(combined) for row in toc)
         print("PASS",name,"pages",f["pages"],"hash",f["sha256"][:12],"258/258 verified source destinations",flush=True)
+    assert observed==expected, "Every finite combination must have a verified PDF"
     print("PASS: verified 120 apparatus variants, 258 checksum-bound source destinations each and unchanged base PDF text",flush=True)
 
 if __name__=="__main__":
