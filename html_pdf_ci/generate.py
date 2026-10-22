@@ -4,7 +4,7 @@ Not a published edition; this tool only reads daruri/index.html.
 """
 from pathlib import Path
 import re, json, html, sys
-ROOT=Path(__file__).resolve().parents[2]
+ROOT=Path(__file__).resolve().parents[1]
 OUT=Path(__file__).resolve().parent
 source=(ROOT/"daruri/index.html").read_text(encoding="utf-8")
 match=re.search(r'<script\b[^>]*\bid=["\x27]editionData["\x27][^>]*>(.*?)</script>',source,re.S|re.I)
