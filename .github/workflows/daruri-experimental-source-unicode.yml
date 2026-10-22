@@ -1,5 +1,8 @@
 name: Daruri EXPERIMENT original Arabic Unicode source layer
 on:
+  pull_request:
+    branches:
+      - feature/daruri-arabic-pango-pilot-20261022
   workflow_dispatch:
   push:
     branches:
