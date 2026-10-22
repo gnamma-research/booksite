@@ -334,6 +334,10 @@ The authoritative release data lives in the canonical reader payload.
 - shamela-import-vowelled.txt: Arabic with editorial vocalization.
 - shamela-import-arabic.html: simple Arabic-only HTML, for legacy import.
 - daruri-notes.json: all 625 canonical scholarly/source note records.
+- scholarly-data/full-headwords.json: 153 historical term dossiers and
+  157 selected full historical dictionary articles.
+- scholarly-data/{quran,hadith,backmatter}-source-notes.json: original full
+  source reference records, qualifications, references and withheld candidates.
 - daruri-colophon.json: the later copyist’s TWO separate paragraphs.
   Colophon material also appears clearly separated in HTML, TEI and TXT.
 - manifest.json: file checksums, counts and provenance.
@@ -389,6 +393,18 @@ def generate(output_dir:Path,zipname="Daruri_Portable_Scholarly_Source.zip"):
     if len(later)!=1 or str(later[0].get("id"))!="colophon" or len(later[0].get("segments",[]))!=2:
         raise ValueError("The separate two-paragraph later-copyist colophon is incomplete")
     rows=source_rows(sections)
+    external={
+        "full-headwords.json":ROOT/"build/data/full-headwords.json",
+        "quran-source-notes.json":ROOT/"build/data/quran-source-notes.json",
+        "hadith-source-notes.json":ROOT/"build/data/hadith-source-notes.json",
+        "backmatter-source-notes.json":ROOT/"build/data/backmatter-source-notes.json"
+    }
+    preserved={key:json.loads(path.read_text(encoding="utf-8"))
+               for key,path in external.items()}
+    if len(preserved["full-headwords.json"].get("terms",[]))!=153 or len(preserved["full-headwords.json"].get("articles",[]))!=157:
+        raise ValueError("Critical historical lexicon inventory changed")
+    if len(preserved["quran-source-notes.json"].get("notes",[]))!=50 or len(preserved["hadith-source-notes.json"].get("notes_by_section",{}))!=33:
+        raise ValueError("Source-citation inventories changed")
     files={
         "daruri-source.json":canonical_json(book),
         "daruri-passages.jsonl":("".join(
@@ -406,6 +422,8 @@ def generate(output_dir:Path,zipname="Daruri_Portable_Scholarly_Source.zip"):
         "daruri.tei.xml":tei_export(sections,notes,later),
         "README.txt":readme()
     }
+    for name,path in external.items():
+        files["scholarly-data/"+name]=path.read_bytes()
     manifest={
         "schema":VERSION,
         "work_title":TITLE_EN,
@@ -419,6 +437,10 @@ def generate(output_dir:Path,zipname="Daruri_Portable_Scholarly_Source.zip"):
         "canonical_note_records":len(notes),
         "part_count":len(book.get("parts",[])),
         "application_count":len(book.get("apps",[])),
+        "historical_dictionary_terms":153,
+        "historical_dictionary_articles":157,
+        "quran_source_note_records":50,
+        "hadith_source_note_sections":33,
         "source_is_authoritative_data_not_typeset_PDF":True,
         "english_translation_editorial":True,
         "arabic_vocalization_editorial":True,
