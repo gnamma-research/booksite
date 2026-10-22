@@ -1,0 +1,77 @@
+name: HTML PDF engine comparison (isolated)
+on:
+  push:
+    branches: ['experiment/html-pdf-engines-20261022']
+    paths:
+      - 'html_pdf_ci/**'
+      - '.github/workflows/html-pdf-pagination-compare.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pagination-comparison:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser and inspection dependencies
+        run: |
+          python -m pip install --quiet psutil pymupdf
+          npm install --no-save --no-package-lock --ignore-scripts playwright@1.56.0 pagedjs@0.4.3 @vivliostyle/cli@11.3.3
+          npx playwright install --with-deps chromium
+          npx vivliostyle --version
+          node -e "console.log('pagedjs:',require.resolve('pagedjs/dist/paged.polyfill.js'))"
+      - name: Generate exact-source fixture cases
+        run: |
+          python html_pdf_ci/generate.py
+          cat html_pdf_ci/expected.json
+      - name: Compare typesetters on dense and full Daruri
+        run: |
+          set +e
+          for FIX in dense_parallel dense_stacked full_parallel; do
+            python html_pdf_ci/measure.py "$FIX"_pagedjs node html_pdf_ci/paged-run.cjs "html_pdf_ci/$FIX.html" "html_pdf_ci/$FIX"_pagedjs.pdf
+            python html_pdf_ci/measure.py "$FIX"_vivliostyle npx vivliostyle build "html_pdf_ci/$FIX.html" -s A4 -o "html_pdf_ci/$FIX"_vivliostyle.pdf
+          done
+          exit 0
+      - name: Inspect PDF integrity and render representative pages
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import fitz, re, json
+          root=Path("html_pdf_ci")
+          results=[]
+          for pdf in sorted(root.glob("*.pdf")):
+              try:
+                  doc=fitz.open(pdf)
+                  txt="\n".join(page.get_text() for page in doc)
+                  note_ids=sorted(set(re.findall(r'N\d{3}',txt)))
+                  links=sum(len(p.get_links()) for p in doc)
+                  result=dict(file=pdf.name, pages=doc.page_count, bytes=pdf.stat().st_size,
+                     note_ids=len(note_ids),note_list=note_ids,arabic=bool(re.search(r'[\u0600-\u06FF]',txt)),
+                     links=links,outlines=len(doc.get_toc()))
+                  for pg,label in [(min(2,len(doc)-1),"sample"),(min(7,len(doc)-1),"later")]:
+                      out=root/(pdf.stem+"_"+label+".png")
+                      doc[pg].get_pixmap(matrix=fitz.Matrix(1.2,1.2),alpha=False).save(out)
+                  results.append(result)
+              except Exception as e:results.append(dict(file=pdf.name,error=str(e)))
+          (root/"pdf_qa.json").write_text(json.dumps(results,indent=2,ensure_ascii=False))
+          print(json.dumps([{k:v for k,v in r.items() if k!="note_list"} for r in results],indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-html-pdf-engine-comparison
+          path: |
+            html_pdf_ci/*.pdf
+            html_pdf_ci/*.png
+            html_pdf_ci/*.json
+            html_pdf_ci/*.log
+            html_pdf_ci/dense_*.html
+          retention-days: 14
