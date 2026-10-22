@@ -8,7 +8,7 @@ import itertools, json, hashlib, re, argparse, sys
 from pathlib import Path
 import fitz
 HERE=Path(__file__).resolve().parent
-ROOT=HERE.parents[1]
+ROOT=HERE.parent
 sys.path.insert(0,str(ROOT/"build"))
 from build_apparatus_variants import build_appendix,APPARATUS_ORDER
 OUT=HERE/"packets"
