@@ -52,7 +52,7 @@ jobs:
               assert row['word_map_present']
               filename=row['file']
               lang='vocalized' if 'arabic-vowelled' in filename or (
-                  '-bilingual-' in filename) else 'ar'
+                  '-bilingual-titles-' in filename) else 'ar'
               assert row['word_map_coverage'][lang]=={'matched':414,'eligible':414}
               path=root/row['map_file']
               assert hashlib.sha256(path.read_bytes()).hexdigest()==row['map_sha256']
