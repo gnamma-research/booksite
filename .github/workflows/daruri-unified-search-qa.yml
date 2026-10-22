@@ -6,6 +6,14 @@ on:
       - 'daruri/index.html'
       - 'daruri/sw.js'
       - 'daruri/gnamma-search.js'
+      - 'daruri/gnamma-morphology.js'
+      - 'daruri/gnamma-word-context.js'
+      - 'daruri/gnamma-word-context.css'
+      - 'daruri/morph-lexicon.json'
+      - 'daruri/morph-daruri-v1.json'
+      - 'daruri/morph-mustasfa-v1.json'
+      - 'daruri/build/build_gnamma_morph_index.py'
+      - 'daruri/qa/verify-morphology.cjs'
       - 'daruri/gnamma-scholarly.js'
       - 'daruri/gnamma-scholarly.css'
       - 'daruri/qa/verify-scholarly-patterns.cjs'
@@ -27,6 +35,14 @@ on:
     paths:
       - 'daruri/index.html'
       - 'daruri/gnamma-search.js'
+      - 'daruri/gnamma-morphology.js'
+      - 'daruri/gnamma-word-context.js'
+      - 'daruri/gnamma-word-context.css'
+      - 'daruri/morph-lexicon.json'
+      - 'daruri/morph-daruri-v1.json'
+      - 'daruri/morph-mustasfa-v1.json'
+      - 'daruri/build/build_gnamma_morph_index.py'
+      - 'daruri/qa/verify-morphology.cjs'
       - 'daruri/gnamma-scholarly.js'
       - 'daruri/gnamma-scholarly.css'
       - 'daruri/qa/verify-scholarly-patterns.cjs'
@@ -62,9 +78,16 @@ jobs:
         run: |
           npm install --no-save --no-package-lock playwright@1.63.0
           npx playwright install --with-deps chromium
+      - name: Static script syntax checks
+        run: |
+          node --check daruri/gnamma-morphology.js
+          node --check daruri/gnamma-word-context.js
+          node --check daruri/gnamma-search.js
+          python3 -m py_compile daruri/build/build_gnamma_morph_index.py
       - name: Run Daruri browser search tests
         run: |
           node daruri/qa/verify-unified-search.cjs
           node daruri/qa/verify-search-return.cjs
           node daruri/qa/verify-proximity.cjs
           node daruri/qa/verify-scholarly-patterns.cjs
+          node daruri/qa/verify-morphology.cjs
