@@ -74,7 +74,22 @@ def process_test(edition,target):
           "same_page":sum(bn.get(k)==on.get(k) for k in required),
           "missing_built":[k for k in required if k not in on][:30],
           "changed":[{"id":k,"published":bn.get(k),"built":on.get(k)} for k in required if k in bn and k in on and bn[k]!=on[k]][:15]}
-  result["outline_pages_identical"]= [(x[0],x[2]) for x in base.get_toc()] == [(x[0],x[2]) for x in out.get_toc()]
+  result["outline_pages_identical"]= [(x[0],x[1],x[2]) for x in base.get_toc()] == [(x[0],x[1],x[2]) for x in out.get_toc()]
+  # A matching page number is insufficient: hyperlinks must retain exact entry points.
+  built_meta_file=target/(filename+".metadata.json")
+  if built_meta_file.exists():
+   new_meta=json.loads(built_meta_file.read_text())
+   reference_anchors=meta.get("anchors",{})
+   rebuilt_anchors=new_meta.get("anchors",{})
+   result["anchored_link_locations"]={"expected":len(reference_anchors),
+      "found":len(rebuilt_anchors),"matched":sum(
+       key in rebuilt_anchors and
+       all(abs(float(reference_anchors[key].get(field,0))-float(rebuilt_anchors[key].get(field,0)))<0.015
+        for field in ("page","x","y"))
+       for key in reference_anchors),
+      "first_mismatches":[k for k,v in reference_anchors.items() if k not in rebuilt_anchors
+        or any(abs(float(v.get(q,0))-float(rebuilt_anchors[k].get(q,0)))>=0.015 for q in ("page","x","y"))][:12]}
+
   result["page_text_hash_matches"]=0;result["page_word_geometry_matches"]=0
   result["text_char_count_published"]=result["text_char_count_built"]=0
   result["text_first_changed_pages"]=[];result["geometry_first_changed_pages"]=[]
@@ -114,6 +129,17 @@ def process_test(edition,target):
       bp.save(target/f"rebuilt_p{i+1}.png")
       raster[-1]["proof_saved"]=True
   result["raster_samples"]=raster
+  # Full visual proof: compare the pixels of every page at 72dpi.
+  result["all_page_rasters_equal"]=0
+  result["first_raster_mismatch"]=[]
+  if result["reference_pages"]==result["built_pages"]:
+   for i in range(base.page_count):
+    ap=base[i].get_pixmap(matrix=fitz.Matrix(1,1),colorspace=fitz.csGRAY,alpha=False)
+    bp=out[i].get_pixmap(matrix=fitz.Matrix(1,1),colorspace=fitz.csGRAY,alpha=False)
+    if ap.width==bp.width and ap.height==bp.height and ap.samples==bp.samples:
+     result["all_page_rasters_equal"]+=1
+    elif len(result["first_raster_mismatch"])<12:result["first_raster_mismatch"].append(i+1)
+
   result["completely_equivalent"]=(result["byte_identical"] or
        result["reference_pages"]==result["built_pages"] and
        result["page_text_hash_matches"]==base.page_count and
@@ -121,6 +147,8 @@ def process_test(edition,target):
        result["outline_pages_identical"] and
        result["required_destinations"]["same_page"]==259 and
        result["reference_links"]==result["built_links"] and
+       result["all_page_rasters_equal"]==base.page_count and
+       result.get("anchored_link_locations",{}).get("matched")==result.get("anchored_link_locations",{}).get("expected") and
        all(x.get("pixels_different_pct",0)==0 for x in raster))
  return result
 
