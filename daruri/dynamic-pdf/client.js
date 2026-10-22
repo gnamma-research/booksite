@@ -66,34 +66,84 @@
  const selectOption=()=>catalogue?.apparatus.files.find(x=>x.file===$('gn-dyn-profile').value);
  async function init(){
   try{
-   if(!window.GnammaDynamicPdf?.assemble||!window.PDFLib?.PDFDocument)
-    fail('The local PDF publishing engine is not installed');
+   if(!window.GnammaDynamicPdf?.assemble||!window.PDFLib?.PDFDocument||
+      !window.GnammaPublicationDesigns?.build)
+    fail('The verified local PDF generation and book-design registry are unavailable');
    status('Loading approved edition catalogue and exact layout maps…');
-   const [base,apparatus,maps,packets]=await Promise.all([
+   const [base,apparatus,maps,packets,canonical]=await Promise.all([
     readManifest('editions/manifest.json'),
     readManifest('editions/apparatus/manifest.json'),
     readManifest('editions/maps/manifest.json'),
-    readManifest(prefix+'manifest.json')
+    readManifest(prefix+'manifest.json'),
+    readManifest('pdf-editions-manifest.json')
    ]);
    if(base.status!=='verified'||base.files?.length!==12||
       apparatus.status!=='verified'||apparatus.files?.length!==120||
       maps.status!=='verified'||maps.files?.length!==12||
       packets.packets?.length!==15||packets.profiles?.length!==120)
      fail('Publication manifests do not describe the certified 12+120 edition matrix');
-   catalogue={base,apparatus,maps,packets};
+   // Source-page design is intrinsic to each SHA-bound base PDF. The other
+   // five canonical formats remain available, not falsely "generated" using
+   // an unrelated A4 apparatus or publisher-note layout.
+   const designs=window.GnammaPublicationDesigns.build({base,apparatus,maps,packets,canonical});
+   if(designs.approved_compositions.length!==apparatus.files.length)
+    fail('An approved PDF is absent from the exact design registry');
+   catalogue={base,apparatus,maps,packets,canonical,designs};
    const opt=$('gn-dyn-profile');opt.replaceChildren();
-   for(const row of apparatus.files){
-    if(!hex(row.sha256)||!hex(row.base_sha256)||!Array.isArray(row.apparatus))continue;
+   const groups=new Map();
+   for(const option of designs.approved_compositions){
+    if(!hex(option.sha256)||!hex(option.packet_sha256)||!hex(option.link_map_sha256))continue;
+    const design=designs.certified_source_designs.find(x=>x.id===option.design_id);
+    if(!design)fail('A source design is not available for '+option.file);
+    let group=groups.get(design.id);
+    if(!group){
+     group=document.createElement('optgroup');
+     group.label=design.display;
+     groups.set(design.id,group);
+     opt.append(group);
+    }
     const node=document.createElement('option');
-    node.value=row.file;node.textContent=title(row)+' · '+row.pages+' pages';
-    opt.append(node);
+    node.value=option.file;
+    node.textContent=option.apparatus.join(' + ')+' · '+option.pages+' pages';
+    group.append(node);
    }
-   if(opt.options.length!==120)fail('120 verified apparatus configurations were not available');
+   if(opt.options.length!==apparatus.files.length)
+    fail('The signed design registry does not reproduce all approved apparatus editions');
    opt.value='apparatus/daruri-reading-bilingual-glossary.pdf';
+   if(!opt.value)fail('The default source design has no approved apparatus binding');
+   const other=$('gn-dyn-other-links');
+   other.replaceChildren();
+   for(const design of designs.other_approved_designs){
+    // Signed canonical PDFs are separate book designs; they may be read and
+    // downloaded but their pagination cannot be reinterpreted as another base.
+    const link=document.createElement('a');
+    link.href=new URL(design.pdf+'?v='+design.sha256.slice(0,12),root).href;
+    link.textContent=design.display+' · '+design.pages+' pages';
+    link.rel='noopener';
+    link.target='_blank';
+    other.append(link);
+   }
+   updateDesignDetails();
    ready=true;
    updateControls();
-   status('120 verified configurations are available. Generation happens entirely in this browser.');
+   status(catalogue.designs.approved_compositions.length+
+    ' verified apparatus combinations from '+catalogue.designs.certified_source_designs.length+
+    ' distinct source designs. Every PDF is assembled privately in this browser.');
   }catch(e){status('Cannot initialize local PDF publishing: '+e.message,true);}
+ }
+ function updateDesignDetails(){
+  const item=selectOption();
+  const summary=$('gn-dyn-design-spec');
+  if(!summary)return;
+  const reg=catalogue?.designs;
+  const exact=reg?.approved_compositions.find(p=>p.file===item?.file);
+  const design=reg?.certified_source_designs.find(b=>b.id===exact?.design_id);
+  summary.textContent=design&&exact?
+   'Original design: '+design.display+
+   '. Source '+design.pages+' pages. Selected additions: '+
+   exact.apparatus.join(', ')+'. Result '+exact.pages+
+   ' pages. Original publisher footnotes and Arabic/English columns are retained.':
+   'Choose a verified source design and apparatus combination.';
  }
  function clearOutput(){
   if(downloadURL){URL.revokeObjectURL(downloadURL);downloadURL=null;}
@@ -300,7 +350,8 @@
     try{restoreExactPublishedEdition();}
     catch(error){status('Cannot change while a personal export is active: '+error.message,true);return;}
    }
-   status('Ready: generate this exact selection, or use its approved PDF below.');
+   updateDesignDetails();
+   status('Ready: generate this exact design, or use its approved PDF below.');
   });
   window.addEventListener('pagehide',()=>{
    ++generationId;
