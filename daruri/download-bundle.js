@@ -5,8 +5,8 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "20261022-bookmark-audit1";
-  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "quran-context-data.js", "QURAN_CONTEXT_SOURCES.md", "download-bundle.js", "bookmark-ui.js", "bookmark-ui.css", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
+  const RELEASE_VERSION = "20261022-hadith1";
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "quran-context-data.js", "QURAN_CONTEXT_SOURCES.md", "hadith-context-ui.js", "hadith-context-ui.css", "hadith-context-data.js", "hadith-context-metadata.js", "hadith-context-arabic-bukhari1.js", "hadith-context-arabic-bukhari2.js", "hadith-context-arabic-muslim.js", "hadith-context-arabic-abudawud1.js", "hadith-context-arabic-abudawud2.js", "hadith-context-arabic-tirmidhi.js", "hadith-context-arabic-sunan.js", "HADITH_CONTEXT_SOURCES.md", "download-bundle.js", "bookmark-ui.js", "bookmark-ui.css", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -161,6 +161,18 @@
       ['daruri/quran-context-data.json', 'quran-context-data.json?v=20261022-qcontext1'],
       ['daruri/quran-context-data.js', 'quran-context-data.js?v=20261022-qcontext1'],
       ['daruri/QURAN_CONTEXT_SOURCES.md', 'QURAN_CONTEXT_SOURCES.md'],
+      ['daruri/hadith-context-ui.js', 'hadith-context-ui.js?v=20261022-hctx1'],
+      ['daruri/hadith-context-ui.css', 'hadith-context-ui.css?v=20261022-hctx1'],
+      ['daruri/hadith-context-data.js', 'hadith-context-data.js?v=20261022-hctx1'],
+      ['daruri/hadith-context-metadata.js', 'hadith-context-metadata.js?v=20261022-hctx1'],
+      ['daruri/hadith-context-arabic-bukhari1.js', 'hadith-context-arabic-bukhari1.js?v=20261022-hctx1'],
+      ['daruri/hadith-context-arabic-bukhari2.js', 'hadith-context-arabic-bukhari2.js?v=20261022-hctx1'],
+      ['daruri/hadith-context-arabic-muslim.js', 'hadith-context-arabic-muslim.js?v=20261022-hctx1'],
+      ['daruri/hadith-context-arabic-abudawud1.js', 'hadith-context-arabic-abudawud1.js?v=20261022-hctx1'],
+      ['daruri/hadith-context-arabic-abudawud2.js', 'hadith-context-arabic-abudawud2.js?v=20261022-hctx1'],
+      ['daruri/hadith-context-arabic-tirmidhi.js', 'hadith-context-arabic-tirmidhi.js?v=20261022-hctx1'],
+      ['daruri/hadith-context-arabic-sunan.js', 'hadith-context-arabic-sunan.js?v=20261022-hctx1'],
+      ['daruri/HADITH_CONTEXT_SOURCES.md', 'HADITH_CONTEXT_SOURCES.md'],
       ['daruri/download-bundle.js', 'download-bundle.js?v=20261021-rdquick1'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
