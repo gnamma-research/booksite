@@ -18,3 +18,6 @@ Object.assign(window.GnammaHadithReports["bukhari:2002"]||{}, {"chapter_en":"Obs
 Object.assign(window.GnammaHadithReports["bukhari:2522"]||{}, {"chapter_en":"If one manumits a male slave owned by two persons","chapter_ar":"إِذَا أَعْتَقَ عَبْدًا بَيْنَ اثْنَيْنِ أَوْ أَمَةً بَيْنَ الشُّرَكَاءِ","narrator":"Narrated `Abdullah bin `Umar:"});
 Object.assign(window.GnammaHadithReports["bukhari:4992"]||{}, {"chapter_en":"The Qur'an was revealed to be recited in seven different ways","chapter_ar":"أُنْزِلَ الْقُرْآنُ عَلَى سَبْعَةِ أَحْرُفٍ","narrator":"Narrated `Umar bin Al-Khattab:"});
 Object.assign(window.GnammaHadithReports["bukhari:7311"]||{}, {"chapter_en":"“A group of my followers will remain victorious in their struggle in the cause of the Truth.”","chapter_ar":"قَوْلِ النَّبِيِّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «لاَ تَزَالُ طَائِفَةٌ مِنْ أُمَّتِي ظَاهِرِينَ عَلَى الْحَقِّ يُقَاتِلُونَ». وَهُمْ أَهْلُ الْعِلْمِ","narrator":"Narrated Al-Mughira bin Shu`ba:"});
+
+/* Bukhari additional chapter records, from LK-Hadith-Corpus. */
+Object.assign(window.GnammaHadithReports["bukhari:580"]||{}, {"chapter_en":"Whoever got (or was able to offer) one Rak'a of a prayer (in time)","chapter_ar":"مَنْ أَدْرَكَ مِنَ الصَّلاَةِ رَكْعَةً","narrator":"Narrated Abu Huraira:","book":"Times of the Prayers"});
