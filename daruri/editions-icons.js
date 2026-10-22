@@ -42,7 +42,11 @@
     else if(key==='columns') shape=value==='parallel'||value==='2'?'columns':value==='stacked'?'stacked':'single';
     else if(key==='density') shape=value==='comfortable'?'comfortable':value==='compact'?'compact':'wide';
     else if(key==='notes') shape=value==='none'?'noNotes':value==='essential'?'essential':'study';
-    else if(key==='personal') shape=value==='none'?'noNotes':value==='notes'?'pen':'bookmark';
+    else if(key==='personal'){
+      if(value==='notes'&&window.GnammaBookmarkUI?.noteIcon)
+        return window.GnammaBookmarkUI.noteIcon({className:'gn-ed-choice-glyph'});
+      shape=value==='none'?'noNotes':'bookmark';
+    }
     else if(key==='scope') shape=value==='full'?'book':value==='part'?'chapter':value==='lesson'?'list':'range';
     else if(key==='part') shape='chapter';
     else if(key==='lesson') shape='book';
@@ -54,7 +58,7 @@
 
   const fieldGlyphs={
     language:'bilingual',columns:'columns',density:'sliders',notes:'notes',
-    personal:'bookmark',scope:'range',part:'chapter',lesson:'list',
+    personal:'pen',scope:'range',part:'chapter',lesson:'list',
     editorial:'plus',vowels:'marked'
   };
   function marker(key) {
@@ -62,7 +66,9 @@
     el.className='gn-ed-field-marker';
     el.setAttribute('aria-hidden','true');
     const path=icons[fieldGlyphs[key]||'page'];
-    el.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+path+'</svg>';
+    el.innerHTML=key==='personal'&&window.GnammaBookmarkUI?.noteIcon?
+      window.GnammaBookmarkUI.noteIcon():
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+path+'</svg>';
     return el;
   }
   function show(kind,value,detail='') {
