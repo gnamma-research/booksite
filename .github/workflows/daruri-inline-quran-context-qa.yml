@@ -35,3 +35,5 @@ jobs:
         run: node daruri/qa/verify-reader-source-notes.js
       - name: Source note and allusion integrity
         run: node daruri/qa/verify-section1-quran-parallels.js
+
+# After switching to local-script data loading, rerun the branch's complete integrity and DOM QA.
