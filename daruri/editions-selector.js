@@ -260,22 +260,21 @@
       button.tabIndex=active?0:-1;
     }
     root.querySelector('#gn-es-panel').setAttribute('aria-labelledby','gn-es-tab-'+tab);
-    root.querySelector('[data-es-presets]').hidden=tab==='reference';
-    root.querySelector('[data-es-custom-head]').hidden=tab==='reference';
-    root.querySelector('#gn-es-custom').hidden=tab==='reference'||!customOpen;
-    root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen&&tab!=='reference'));
-    root.querySelector('[data-es-reference-inventory]').hidden=tab!=='reference';
+    root.querySelector('[data-es-pdf-panel]').hidden=tab!=='pdf';
+    root.querySelector('[data-es-offline]').hidden=tab!=='offline';
+    root.querySelector('.gn-es-setting-text').hidden=tier==='reference';
+    root.querySelector('[data-es-custom-head]').hidden=tier==='reference';
+    root.querySelector('#gn-es-custom').hidden=tier==='reference'||!customOpen;
+    root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen&&tier!=='reference'));
+    root.querySelector('[data-es-reference-inventory]').hidden=tier!=='reference';
     for(const button of root.querySelectorAll('[data-es-preset]')){
-      button.setAttribute('aria-pressed',String(button.dataset.esPreset===preset));
-      // Never silently change an English-only or unvowelled selection to
-      // bilingual merely because the reader asks for a Study preset.
-      if(button.dataset.esPreset==='study')
-        button.disabled=!(s.en&&s.ar&&s.vowels);
+      button.setAttribute('aria-pressed',String(button.dataset.esPreset===tier));
+      button.disabled=false;
     }
     for(const b of root.querySelectorAll('[data-es-toggle]')){
       const key=b.dataset.esToggle;
       b.setAttribute('aria-pressed',String(Boolean(s[key])));
-      b.disabled=tab==='reference'||tier==='study'||(key==='en'&&s.en&&!s.ar);
+      b.disabled=tier==='reference'||tier==='study'||(key==='en'&&s.en&&!s.ar);
       if(key==='ar'){
         const status=!s.ar?'off':s.vowels?'vowelled':'plain';
         const next=!s.ar?'plain':s.vowels?(s.en?'off':'plain'):'vowelled';
@@ -286,16 +285,14 @@
       }
       if(key==='en')b.setAttribute('aria-label',s.en?'English included. Activate to remove English.':'English off. Activate to include English.');
     }
-    root.querySelector('[data-es-language-note]').textContent=tab==='reference'?
+    root.querySelector('[data-es-language-note]').textContent=tier==='reference'?
       'The full scholarly edition is bilingual and vowelled.':
       tier==='study'?'Study notes are currently prebuilt only in vowelled bilingual PDFs.':
       'Tap AR to cycle: Off → Plain → Vowelled. No separate vowel button.';
     root.querySelector('[data-es-preset-note]').textContent=
-      !(s.en&&s.ar&&s.vowels)&&tab==='reading'?
-        'Study notes are currently published only in bilingual vowelled form; your language choice is preserved.':
-      preset==='study'?'Selected publisher notes and a basic index are included.':
-      preset==='custom'?'Fine-tune publisher notes and apparatus using Customize edition.':
-      'A clean A4 reading edition with no publisher notes.';
+      tier==='reference'?'The full scholarly text with its complete reference apparatus.':
+      tier==='study'?'Guided reading with selected published explanatory notes and a basic index.':
+      'Clean reading text without publisher notes. Expand Customize edition for more options.';
     for(const b of root.querySelectorAll('[data-es-publisher]'))
       b.setAttribute('aria-pressed',String(b.dataset.esPublisher===s.notes));
     for(const b of root.querySelectorAll('[data-es-headings]'))
@@ -325,33 +322,51 @@
       result.record.pages+' pages · '+Math.round(Number(result.record.bytes||result.record.size_bytes||0)/1024)+' KB':'';
     const msg=root.querySelector('[data-es-availability-heading]');
     const detail=root.querySelector('[data-es-availability-detail]');
-    msg.textContent=result.status==='ready'?'Verified PDF available':
-      result.status==='loading'?'Checking published editions…':'PDF not available for this selection';
-    detail.textContent=result.status==='ready'?
-      'This exact published PDF will be used. Personal notes are never uploaded.':result.reason;
-    root.querySelector('.gn-es-availability').dataset.esStatus=result.status;
+    const availability=root.querySelector('.gn-es-availability');
+    availability.hidden=result.status==='ready'&&!downloadError;
+    msg.textContent=downloadError?'Could not prepare the PDF':
+      result.status==='loading'?'Finding the selected PDF…':'PDF unavailable';
+    detail.textContent=downloadError||result.reason;
+    availability.dataset.esStatus=result.status;
     const link=root.querySelector('[data-es-action="open"]');
+    const view=root.querySelector('[data-es-action="view"]');
+    const prepare=root.querySelector('[data-es-prepare]');
     const pdfFile=publicFile(result);
+    if(selectedFile&&selectedFile!==pdfFile)resetPrepared();
     selectedRow=result.record;
     selectedFile=pdfFile;
     const mapReady=result.status==='ready'&&(
       tier==='reference'||Boolean(result.record.map_file));
-    if(result.status==='ready'){
-      link.href=(tier==='reference'?'daruri.pdf':'editions/'+result.record.file)+
-        '?v='+encodeURIComponent((result.record.sha256||'published').slice(0,12));
-    }else link.removeAttribute('href');
-    link.setAttribute('aria-disabled',String(result.status!=='ready'));
+    const downloadReady=Boolean(preparedPdf&&preparedPdf.file===pdfFile);
+    if(downloadReady){
+      link.href=preparedPdf.url;
+      link.download=preparedPdf.name;
+      view.href=preparedPdf.url;
+    }else{
+      link.removeAttribute('href');
+      view.removeAttribute('href');
+    }
+    link.hidden=!downloadReady||isPersonal;
+    view.hidden=!downloadReady||isPersonal;
+    prepare.hidden=isPersonal||downloadReady;
+    prepare.disabled=preparing||result.status!=='ready';
+    prepare.firstChild.textContent=preparing?'Preparing PDF…':'Prepare PDF';
+    prepare.querySelector('.gn-es-button-progress').hidden=!preparing;
     if(personalReady)syncExport(mapReady?pdfFile:'');
-    const openVisible=!isPersonal;
-    link.hidden=!openVisible;
     const generated=root.querySelector('#pe-generate');
-    generated.hidden=openVisible;
+    generated.hidden=!isPersonal;
     if(isPersonal&&(!mapReady||!personalReady)){
       generated.disabled=true;
-      if(!mapReady)detail.textContent='This exact PDF has no verified personal map. Choose another edition; no substitute will be used.';
-      else detail.textContent='Preparing browser-local personal PDF tools…';
+      if(!mapReady){
+        availability.hidden=false;
+        msg.textContent='Personal PDF unavailable';
+        detail.textContent='No verified note-to-page map exists for this combination. Select another edition.';
+      }else{
+        availability.hidden=false;
+        msg.textContent='Loading personal PDF tools';
+        detail.textContent='Your notes stay on this device.';
+      }
     }
-    root.querySelector('[data-es-study-guide]').hidden=tier!=='study';
     for(const b of root.querySelectorAll('[data-es-picker-mode]')){
       const value=b.dataset.esPickerMode;
       const checked=root.querySelector('input[name="pe-mode"]:checked')?.value;
@@ -361,16 +376,18 @@
   }
   function presetSelect(which){
     if(which==='study'){
-      if(!(current().en&&current().ar&&current().vowels))return;
-      tab='reading';tier='study';Object.assign(state.study,BASE.study);
+      tier='study';
+      state.study={...BASE.study};
       preset='study';customOpen=false;
     }else if(which==='reading'){
-      const prev=current();
-      const languageSettings={en:prev.en,ar:prev.ar,vowels:prev.vowels};
-      tier='reading';state.reading={...BASE.reading,...languageSettings};
+      tier='reading';
+      // The default is a clean reading copy; retain the reader's chosen languages.
+      const prev=state.reading;
+      state.reading={...BASE.reading,en:prev.en,ar:prev.ar,vowels:prev.vowels};
       preset='reading';customOpen=false;
-    }else{
-      preset='custom';customOpen=true;
+    }else if(which==='reference'){
+      tier='reference';
+      preset='reference';customOpen=false;
     }
     refresh();
   }
@@ -411,13 +428,13 @@
     if(!b||!root?.contains(b))return;
     if(b.dataset.esNav){
       tab=b.dataset.esNav;
-      tier=tab==='reference'?'reference':tier==='reference'?'reading':tier;
       refresh();b.focus();return;
     }
     if(b.dataset.esPreset){presetSelect(b.dataset.esPreset);return;}
     if(b.dataset.esCustom!==undefined){customOpen=!customOpen;refresh();return;}
+    if(b.matches('[data-es-prepare]')){preparePdf();return;}
     if(b.dataset.esToggle){
-      if(tab==='reference'||tier==='study')return;
+      if(tier==='reference'||tier==='study')return;
       const s=current(),k=b.dataset.esToggle;
       if(k==='ar'){
         // A single AR control cycles Off → Plain → Vowelled.
