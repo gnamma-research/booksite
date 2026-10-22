@@ -6,6 +6,8 @@ on:
     paths:
       - '.github/workflows/daruri-arabic-word-maps-qa.yml'
       - 'daruri/qa/verify-arabic-pango-maps.cjs'
+      - 'daruri/qa/verify-arabic-quotation-edge-cases.cjs'
+      - 'daruri/personal-pdf-enhancements.js'
       - 'daruri/editions/maps/**'
 permissions:
   contents: read
@@ -21,4 +23,5 @@ jobs:
         run: |
           node --check daruri/qa/verify-arabic-pango-maps.cjs
           node daruri/qa/verify-arabic-pango-maps.cjs
+          node daruri/qa/verify-arabic-quotation-edge-cases.cjs
           node daruri/qa/verify-published-selector.cjs
