@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Merge ONLY four pixel-certified Arabic source-word maps into the existing
+"""Merge ONLY eight pixel-certified Arabic source-word maps into the existing
 12 A4 personal maps. Preserve every PDF and all other map records unchanged."""
 from pathlib import Path
 import json, hashlib
@@ -17,7 +17,7 @@ def main():
     by_path={e["file"]:e for e in originals["files"]}
     expected={
         f"reading/daruri-reading-{mode}-titles-{suffix}.pdf"
-        for mode in ("arabic","arabic-vowelled") for suffix in ("on","off")
+        for mode in ("arabic","arabic-vowelled","bilingual","bilingual-unvowelled") for suffix in ("on","off")
     }
     proposals={}
     for filename in expected:
@@ -28,7 +28,7 @@ def main():
         assert entry["matched_segments"]==414 and entry["source_sections"]==258
         assert entry["pixel_parity"] is True
         assert entry["page_count"]==by_path[filename]["pages"]
-        language="vocalized" if "arabic-vowelled" in filename else "ar"
+        language=entry["language"]
         assert entry["language"]==language
         segments=entry["segments"]
         assert len(segments)==414
@@ -76,9 +76,9 @@ def main():
         meta["mapped_segments"]=len(data["segments"])
         meta["map_sha256"]=sha(serialized.encode())
         altered.append({"file":name,"words":sum(len(v) for v in fields.values()),"segments":len(fields)})
-    assert len(altered)==4
+    assert len(altered)==8
     current["release"]="20261022-A4-Arabic-Pango-precise-word-maps"
-    current["note"]="All twelve checksum-bound base maps preserved. Four Arabic-only editions have 414 source-linked Pango segments and pixel-identical published pages. Arabic bilingual/Study precision is not yet verified."
+    current["note"]="All twelve checksum-bound base maps preserved. Eight Arabic-bearing Reading editions have 414 source-linked Pango segments and pixel-identical published pages. Study PDF Arabic precision is not yet verified."
     catalog.write_text(json.dumps(current,ensure_ascii=False,indent=2)+"\n")
-    print("PASS: Updated exact maps for four Arabic Reading PDFs:",json.dumps(altered,ensure_ascii=False),flush=True)
+    print("PASS: Updated exact maps for eight Arabic-bearing Reading PDFs:",json.dumps(altered,ensure_ascii=False),flush=True)
 if __name__=="__main__":main()
