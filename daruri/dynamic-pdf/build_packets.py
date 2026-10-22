@@ -97,6 +97,45 @@ def compile_pack(out:Path):
   print("PACKET",name,record["pages"],record["bytes"],
         "source refs",record["source_refs"],"links",record["packet_links"],flush=True)
  manifest["packets"]=sorted(manifest["packets"],key=lambda x:x["file"])
+ # A packet's visible text is identical for every edition, but the approved
+ # hyperlink topology depends on each edition's source and annotation history.
+ # Store small SHA-verified link maps for all 120 editions rather than guessing
+ # or copying links from an unrelated base PDF.
+ approved=json.loads((ROOT/"editions/apparatus/manifest.json").read_text())["files"]
+ packet_by_components={tuple(p["components"]):p for p in manifest["packets"]}
+ manifest["profiles"]=[]
+ profiles_dir=out/"profiles"
+ profiles_dir.mkdir(parents=True,exist_ok=True)
+ for row in approved:
+  comps=tuple(row["apparatus"]);packet=packet_by_components[comps]
+  raw=(out/packet["file"]).read_bytes()
+  gold=published_links(ROOT,raw,comps,row)
+  if gold["links"]!=int(row["appendix_source_links"]):
+   raise ValueError("Approved link total not preserved: "+row["filename"])
+  oldmap=json.loads((ROOT/"editions/apparatus/maps"/(row["filename"]+".json")).read_text())
+  if oldmap["source_sha256"]!=row["sha256"] or oldmap["base_sha256"]!=row["base_sha256"]:
+   raise ValueError("Approved glossary/index map belongs to another edition")
+  profile={
+    "schema":1,"profile":row["file"],"approved_sha256":row["sha256"],
+    "base_sha256":row["base_sha256"],"source_base":row["source_base"],
+    "packet_sha256":packet["sha256"],"packet_file":packet["file"],
+    "components":row["apparatus"],"pages":row["pages"],"base_pages":row["base_pages"],
+    "expected_links":gold["links"],"links_to_source":gold["refs"],
+    "packet_links":gold["other"],"entry_positions":oldmap.get("entry_positions",{}),
+    "gold_reference":{k:v for k,v in gold.items() if k not in ("refs","other")}
+  }
+  mapname=row["filename"]+".links.json"
+  path=profiles_dir/mapname
+  path.write_text(json.dumps(profile,ensure_ascii=False,separators=(',',':')))
+  manifest["profiles"].append({
+    "profile":row["file"],"base":row["source_base"],
+    "profile_sha256":row["sha256"],"packet":packet["file"],
+    "packet_sha256":packet["sha256"],"map":"profiles/"+mapname,
+    "map_sha256":digest(path.read_bytes()),"links":gold["links"]
+  })
+  if len(manifest["profiles"])%20==0:
+   print("APPROVED MAPS",len(manifest["profiles"]),"/",len(approved),flush=True)
+ assert len(manifest["profiles"])==120
  (out/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n")
  print("TOTAL PACKETS",len(manifest["packets"]),
    "TOTAL BYTES",sum(x["bytes"] for x in manifest["packets"]),flush=True)
