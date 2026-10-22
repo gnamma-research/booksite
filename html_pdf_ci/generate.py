@@ -10,6 +10,14 @@ source=(ROOT/"daruri/index.html").read_text(encoding="utf-8")
 match=re.search(r'<script\b[^>]*\bid=["\x27]editionData["\x27][^>]*>(.*?)</script>',source,re.S|re.I)
 if not match: raise RuntimeError("editionData embedded JSON not found; no fixture created")
 book=json.loads(match.group(1))
+print('EDITION_DATA_SCHEMA',[(k,type(v).__name__,str(v)[:75]) for k,v in book.items()],flush=True)
+if 'sections' not in book:
+ for key,val in book.items():
+  if isinstance(val,dict) and 'sections' in val:
+   book=val
+   print('NESTED_SCHEMA_PATH',key,flush=True)
+   break
+if 'sections' not in book: raise RuntimeError('Unexpected schema in live repo; see EDITION_DATA_SCHEMA above')
 ids=[1,2,11,29,45,76,110,111,121,161,163,185,191,203,218,229,239,241,258]
 indexed={int(s["id"]):s for s in book["sections"] if str(s.get("id","")).isdigit()}
 notes={str(n["id"]):n for n in book["notes"]}
