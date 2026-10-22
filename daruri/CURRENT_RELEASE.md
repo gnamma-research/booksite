@@ -1,10 +1,16 @@
 # Darūrī — current release and coordination record
 
-Updated 21 October 2026. Read the shared [active release coordination note](DARURI_RELEASE_COORDINATION_2026-10-20.md) alongside this record, [the PDF manifest](pdf-editions-manifest.json), and the latest `master` source when integrating parallel work. The current reading-PDF release is **`daruri8-structure-20261020`**, described first below. Later sections preserve release history; their earlier page counts, layouts and snapshot identities must not be used as the current baseline.
+Updated 22 October 2026. Read the shared [active release coordination note](DARURI_RELEASE_COORDINATION_2026-10-20.md) alongside this record, [the PDF manifest](pdf-editions-manifest.json), and the latest `master` source when integrating parallel work. The current reading-PDF release is **`daruri8-structure-20261020`**, described first below. Later sections preserve release history; their earlier page counts, layouts and snapshot identities must not be used as the current baseline.
 
 Canonical repository: `gnamma-research/booksite`, branch `master`.
 
 Canonical reader: [https://gnamma-research.github.io/booksite/daruri/](https://gnamma-research.github.io/booksite/daruri/).
+
+## Reader release: three named reading modes — 22 October 2026
+
+Published via [PR #39](https://github.com/gnamma-research/booksite/pull/39), merged as [`7791e6e`](https://github.com/gnamma-research/booksite/commit/7791e6e93abbe00a7033cb920258f6b1b7ed6b5b). Modes are **Reading** (regular single-section reader), **Focus** (one section, optional after-text scholarly apparatus), and **Continuous** (the complete scrolling text). Historical Focus 1 preferences retain access to the apparatus. The previous in-text adjacent-section navigation is suppressed only for the enhanced reader because the persistent bottom dock performs it; the HTML-only fallback remains navigable. The centred dock now shows small monochrome nonzero counts for structural bookmarks, exact saved highlights and personal notes; tapping opens Reading Desk, never deletes an entry. No redundant round Focus 3 icon was introduced.
+
+Branch QA passed in Chromium and WebKit on iPhone-sized layouts, plus current Reading Desk, personal PDF exporter, toolbar and proximity Search checks. All recent Search scripts and two-tab Editions remain intact. This update **does not modify PDF editions, paragraph text, maps, PDF assets or dictionary content**. The separate Arabic/PDF mapping work remains on [PR #38](https://github.com/gnamma-research/booksite/pull/38); coordinate via [issue #37](https://github.com/gnamma-research/booksite/issues/37) and the shared release-coordination document. Branch verification is not a claim of a physical-device test; monitor GitHub Pages for current deployment status.
 
 ## Ask AI removed — 21 October 2026
 
