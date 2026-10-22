@@ -1,0 +1,20 @@
+/* Inherit Gnamma reader palettes, including dark/system and Andalusian colour variants. */
+.gn-note-entry .gn-hadith-context{margin-top:12px;border-top:1px solid var(--line,var(--border,#aaa));padding-top:8px}
+.gn-hadith-context-toggle{display:flex;align-items:center;gap:8px;min-height:44px;padding:7px 2px;cursor:pointer;color:var(--accent,var(--text,#444));font:600 13px/1.45 var(--sans,system-ui,sans-serif);list-style:none}
+.gn-hadith-context-toggle::-webkit-details-marker{display:none}.gn-hadith-context-toggle::marker{content:''}
+.gn-hadith-context-toggle:focus-visible,.gn-hadith-arabic-fold summary:focus-visible{outline:2px solid var(--accent,currentColor);outline-offset:3px;border-radius:4px}
+.gn-hadith-chevron{font-size:20px;line-height:1;transition:transform .15s}.gn-hadith-context[open] .gn-hadith-chevron{transform:rotate(90deg)}
+.gn-hadith-open,.gn-hadith-context[open] .gn-hadith-closed{display:none}.gn-hadith-context[open] .gn-hadith-open{display:inline}
+.gn-hadith-context-body{min-width:0;max-height:65vh;overflow-y:auto;overscroll-behavior:contain}
+.gn-hadith-lead,.gn-hadith-credit,.gn-hadith-unresolved,.gn-hadith-translation-note,.gn-hadith-status,.gn-hadith-error{font-size:.86em;line-height:1.5}
+.gn-hadith-lead,.gn-hadith-credit,.gn-hadith-translation-note{color:var(--muted,var(--text-secondary,inherit))}
+.gn-hadith-unresolved{border-inline-start:3px solid var(--accent,currentColor);padding-inline-start:10px}
+.gn-hadith-report{min-width:0;padding:12px 0;border-bottom:1px solid var(--line,var(--border,#aaa))}
+.gn-hadith-report-heading{font-size:1rem;line-height:1.45;margin:0 0 8px;color:var(--text,inherit)}
+.gn-hadith-meta{font-size:.86rem;margin:4px 0;overflow-wrap:anywhere}
+.gn-hadith-meta strong{font-weight:600}.gn-hadith-display-order{color:var(--muted,var(--text-secondary,inherit));font-size:.82rem}
+.gn-hadith-original-ar{font-family:var(--arabic-font,'Amiri',serif);font-size:1.18rem;line-height:2.1;text-align:right;white-space:normal;unicode-bidi:plaintext;background:var(--panel-bg,transparent);border-inline-start:2px solid var(--accent,currentColor);margin:10px 0;padding:10px;overflow-wrap:anywhere}
+.gn-hadith-arabic-fold{margin:8px 0}.gn-hadith-arabic-fold summary{cursor:pointer;padding:8px 0;min-height:44px;font-weight:600}
+.gn-hadith-english{line-height:1.6}.gn-hadith-section-label{font-size:.83rem;font-weight:600}
+.gn-hadith-source-link{display:inline-flex;align-items:center;min-height:44px;color:var(--accent,var(--link,#2563eb));overflow-wrap:anywhere;text-decoration:underline}
+@media (max-width:480px){.gn-hadith-context-body{max-height:55vh}.gn-hadith-original-ar{font-size:1.06rem;line-height:1.95;padding:8px}}
