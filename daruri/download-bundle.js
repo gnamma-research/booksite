@@ -97,7 +97,7 @@
     return new Blob(parts, { type: 'application/zip' });
   }
 
-  function sourceFiles() {
+  function sourceFiles(includePDFs=true) {
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
@@ -228,10 +228,11 @@
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
       ['assets/gnamma-reading-modes.svg', '../assets/gnamma-reading-modes.svg'],
       ['assets/gnamma-landscape.webp', '../assets/gnamma-landscape.webp'],
-      ['daruri/assets/gnamma-landscape.webp', '../assets/gnamma-landscape.webp']
+      ['assets/gnamma-scene.svg', '../assets/gnamma-scene.svg']
     ];
 
-    // Include all five published reading editions even when a sidebar is hidden.
+    if(!includePDFs)return {files,pdfNames:[]};
+    // Full archive: include published PDFs and verified personal mappings.
     // The Bou Akl variant report is supplementary; discover other on-site PDF links.
     const pdfs = new Map([
       ['daruri/daruri.pdf', 'daruri.pdf?v=daruri8-structure-20261020'],
@@ -306,72 +307,75 @@
     return { name, bytes };
   }
 
-  const buttons = [...document.querySelectorAll('a[data-daruri-bundle]')];
-  let working = false;
-  function report(message) {
-    for (const button of buttons) {
-      const status = button.parentElement.querySelector('.gn-offline-bundle-status');
-      if (status) status.textContent = message;
+  // Dynamic Editions tabs are rendered after page load. Delegate from document
+  // rather than attaching only to the old sidebar links.
+  let working=false;
+  function report(button,message){
+    const status=button.parentElement?.querySelector('.gn-offline-bundle-status');
+    if(status)status.textContent=message;
+  }
+  async function deliverBundle(button){
+    if(working)return;
+    if(location.protocol==='file:'){
+      report(button,'This package is already open locally.');
+      return;
+    }
+    const includePDFs=button.dataset.daruriBundle!=='html';
+    working=true;button.setAttribute('aria-busy','true');
+    try{
+      const manifest=sourceFiles(includePDFs);
+      const files=[];
+      // Bound network concurrency prevents hundreds of simultaneous HTTP requests.
+      const total=manifest.files.length;
+      for(let i=0;i<total;i+=6){
+        const slice=manifest.files.slice(i,i+6);
+        const collected=await Promise.all(slice.map(([name,path])=>readFile(name,path)));
+        files.push(...collected);
+        report(button,'Collecting files '+Math.min(i+slice.length,total)+' of '+total+'…');
+      }
+      const instructions=[
+        'Gnamma Research — al-Daruri '+(includePDFs?'HTML and PDF collection':'offline HTML reader'),
+        '',
+        'Extract this ZIP without changing the folders.',
+        'Open daruri/index.html in a desktop browser.',
+        'The standalone historical dictionary is daruri/dictionary.html.',
+        includePDFs?'The PDFs are included alongside the reader.':'This HTML-only archive does not include PDFs.',
+        '',
+        'Some browsers limit file:// scripting and local JSON requests.',
+        'If a feature is blocked when opening the HTML file directly,',
+        'serve the extracted folder with a local HTTP server instead.',
+        'On iOS/iPadOS, installing the hosted web app for offline use may',
+        'be more reliable than opening HTML directly from the Files app.',
+        'External citations and remote online services need connectivity.',
+        '',
+        'Included PDFs:',
+        ...(includePDFs?manifest.pdfNames.map(x=>'  '+x):['  None (HTML-only reader).']),
+        '',
+        'Source: '+root.href,
+        'Assembled: '+new Date().toISOString(),
+        ''
+      ].join('\n');
+      files.unshift({name:'READ-ME-FIRST.txt',bytes:encoder.encode(instructions)});
+      report(button,'Assembling ZIP…');
+      const zip=makeZip(files),url=URL.createObjectURL(zip);
+      const link=document.createElement('a');
+      link.href=url;
+      link.download=includePDFs?'Gnamma_Daruri_Reader_HTML_PDFs.zip':'Gnamma_Daruri_Offline_HTML_Reader.zip';
+      link.style.display='none';document.body.appendChild(link);link.click();link.remove();
+      setTimeout(()=>URL.revokeObjectURL(url),60000);
+      report(button,'ZIP downloaded. Extract the folder before opening the reader.');
+    }catch(error){
+      report(button,'Could not prepare the ZIP: '+String(error?.message||error));
+      console.error('Daruri offline bundle:',error);
+    }finally{
+      button.removeAttribute('aria-busy');working=false;
     }
   }
-
-  for (const button of buttons) {
-    button.addEventListener('click', async event => {
-      if (button.dataset.bundleFailed === '1') return; // Working GitHub ZIP fallback
-      event.preventDefault();
-      if (working) return;
-      if (location.protocol === 'file:') {
-        report('Already viewing local files; use the downloaded ZIP.');
-        return;
-      }
-      working = true;
-      for (const item of buttons) item.setAttribute('aria-busy', 'true');
-      try {
-        report('Gathering reader files and PDFs…');
-        const manifest = sourceFiles();
-        const files = await Promise.all(manifest.files.map(([name, path]) => readFile(name, path)));
-        const details = [
-          'Gnamma Research — al-Daruri HTML and PDF study package',
-          '',
-          'Unzip the package, preserving its folders.',
-          'Open daruri/index.html to read the Arabic-English text.',
-          'Open daruri/dictionary.html for the historical dictionary.',
-          '',
-          'PDFs included:',
-          ...manifest.pdfNames.map(name => '  ' + name),
-          '',
-          'The HTML reader uses accompanying JavaScript and image files in',
-          'their original relative paths. Do not move index.html on its own.',
-          'For best offline compatibility, use a modern desktop web browser.',
-          'On iPhone/iPad, local HTML and scripting are dependent on the Files',
-          'app and browser restrictions; PDFs remain available normally.',
-          'External citations and online services still require connectivity.',
-          '',
-          'Assembled from: ' + root.href,
-          'Generated: ' + new Date().toISOString(),
-          ''
-        ].join('\n');
-        files.unshift({ name: 'READ-ME-FIRST.txt', bytes: encoder.encode(details) });
-        report('Building ZIP package…');
-        const zip = makeZip(files);
-        const downloadUrl = URL.createObjectURL(zip);
-        const link = document.createElement('a');
-        link.href = downloadUrl;
-        link.download = 'Gnamma_Daruri_Reader_HTML_PDFs.zip';
-        link.style.display = 'none';
-        document.body.appendChild(link);
-        link.click();
-        link.remove();
-        setTimeout(() => URL.revokeObjectURL(downloadUrl), 60000);
-        report('ZIP ready — check your downloads.');
-      } catch (error) {
-        report('Package unavailable here. Tap again for the full GitHub source ZIP.');
-        for (const item of buttons) item.dataset.bundleFailed = '1';
-        console.error('Daruri offline bundle:', error);
-      } finally {
-        for (const item of buttons) item.removeAttribute('aria-busy');
-        working = false;
-      }
-    });
-  }
+  document.addEventListener('click',event=>{
+    const button=event.target.closest?.('a[data-daruri-bundle]');
+    if(!button)return;
+    event.preventDefault();
+    deliverBundle(button);
+  });
+  window.GnammaOfflineBundle=Object.freeze({sourceFiles});
 })();
