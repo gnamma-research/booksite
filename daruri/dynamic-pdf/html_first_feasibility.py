@@ -220,6 +220,15 @@ APPENDIX_CSS = r"""
 #gn-html-first-apparatus .glossary-entry .ar {
   font: 12pt/1.5 "Noto Naskh Arabic"; direction: rtl; text-align: right;
 }
+/* These rules are part of the approved apparatus stylesheet. Without them,
+   the source Reading h3 defaults produce a longer glossary (12 vs 10 pp). */
+#gn-html-first-apparatus h3 {
+  font: 600 10.5pt/1.4 "Noto Serif"; margin: 8pt 0 3pt;
+}
+#gn-html-first-apparatus .micro,
+#gn-html-first-apparatus .refs {
+  font: 8pt/1.4 "Noto Sans";color:#455452;
+}
 #gn-html-first-apparatus a {color: #205e65; text-decoration:none}
 """
 
