@@ -1,0 +1,31 @@
+name: Daruri source-word geometry audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-word-audit-20261022]
+    paths:
+      - '.github/workflows/daruri-word-geometry.yml'
+      - 'daruri/qa/audit_word_geometry.py'
+permissions:
+  contents: read
+jobs:
+  geometry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PDF inspection library
+        run: python -m pip install --disable-pip-version-check 'PyMuPDF==1.26.7'
+      - name: Verify source words and bounding rectangles in every prebuilt apparatus PDF
+        run: python daruri/qa/audit_word_geometry.py
+      - name: Keep audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-word-geometry-audit
+          path: daruri/qa/word-geometry-audit-report.json
+          if-no-files-found: warn
+          retention-days: 30
