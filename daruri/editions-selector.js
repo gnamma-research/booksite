@@ -28,15 +28,18 @@
     c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const iconPaths={
     eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
-    pen:'<path d="M4 20l4-1 11-11-3-3L5 16l-1 4ZM13 8l3 3"/>',
+    note:'<rect x="3.6" y="3.5" width="16" height="17" rx="2"/><path d="M7 8h7M7 11h4"/><path d="m11.6 16.9 5.3-5.3 2 2-5.3 5.3-2.8.8zM15.9 12.6l2 2"/>',
     bookmark:'<path d="M6 4h12v17l-6-4-6 4V4Z"/>',
+    highlight:'<path d="m15 4 5 5M4 20l4-.5L20 7a3 3 0 0 0-4-4L4 15z"/>',
     glossary:'<path d="M5 3h14v18H5zM9 8h6M9 12h6M9 16h4"/>',
     index:'<path d="M7 5h13M7 12h13M7 19h13M3 5h1M3 12h1M3 19h1"/>',
     applications:'<path d="M12 3v18M4 7h16M6 7l-4 7h8l-4-7ZM18 7l-4 7h8l-4-7ZM8 21h8"/>',
     concordance:'<path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l2-2"/>',
     chevron:'<path d="m6 9 6 6 6-6"/>'
   };
-  const icon=(key,cls='')=>'<svg'+(cls?' class="'+esc(cls)+'"':'')+
+  const icon=(key,cls='')=>key==='note'&&window.GnammaBookmarkUI?.noteIcon?
+    window.GnammaBookmarkUI.noteIcon({className:cls}):
+    '<svg'+(cls?' class="'+esc(cls)+'"':'')+
     ' aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+iconPaths[key]+'</svg>';
   const current=()=>state[tier];
   const language=s=>s.en?(s.ar?(s.vowels?'bilingual':'bilingual-unvowelled'):'english'):
@@ -129,15 +132,17 @@
             '<label><input type="radio" name="pe-mode" value="choose">Choose</label>'+
             '<label><input type="checkbox" id="pe-appendix" checked>Required personal appendix</label></div>'+
           '<div class="gn-es-setting gn-es-personal-row">'+
-            '<span class="gn-es-setting-label">My annotations</span>'+
+            '<span class="gn-es-setting-label">My notes &amp; saved passages</span>'+
             '<div class="gn-es-setting-body">'+
               '<div class="gn-es-personal-options">'+
-                '<label class="gn-es-personal-choice">'+icon('pen')+'<input type="checkbox" id="pe-personal"><span>My notes</span></label>'+
+                '<label class="gn-es-personal-choice">'+icon('note')+'<input type="checkbox" id="pe-personal"><span>My notes</span></label>'+
                 '<label class="gn-es-personal-choice">'+icon('bookmark')+'<input type="checkbox" id="pe-bookmarks"><span>Bookmarks</span></label>'+
+                '<label class="gn-es-personal-choice">'+icon('highlight')+'<input type="checkbox" id="pe-highlights"><span>Highlights</span></label>'+
               '</div><span class="gn-es-inline-note">Personal material stays on your device and is added as linked P-numbered endnotes.</span>'+
               '<div id="pe-note-options" hidden>'+
                 '<div class="gn-es-personal-advanced">'+
-                  '<label><input id="pe-annotations" type="checkbox" checked> Linked P markers &amp; verified highlights</label>'+
+                  '<label><input id="pe-annotations" type="checkbox" checked> Add in-text P links and mark matching quotations</label>'+
+                  '<p class="gn-es-inline-note">Display option only; it does not select notes, bookmarks or highlights. Quotations are marked only at verified PDF coordinates.</p>'+
                   '<label><input id="pe-dates" type="checkbox" checked> Include reliable dates</label>'+
                   '<label for="pe-order">Appendix order<select id="pe-order">'+
                     '<option value="source">Source order</option><option value="created">Oldest first</option><option value="newest">Newest first</option>'+
@@ -227,7 +232,8 @@
   }
   function hasPersonal(){
     return Boolean(root?.querySelector('#pe-personal')?.checked||
-      root?.querySelector('#pe-bookmarks')?.checked);
+      root?.querySelector('#pe-bookmarks')?.checked||
+      root?.querySelector('#pe-highlights')?.checked);
   }
   function syncExport(file){
     const bridge=window.GnammaPersonalExportInline;
@@ -300,7 +306,8 @@
     root.querySelector('[data-es-spec-notes]').textContent=
       'Publisher notes: '+(tier==='reference'?'Full':tier==='study'?'Selected':'None')+
       ' · My notes: '+(root.querySelector('#pe-personal').checked?'On':'Off')+
-      ' · Bookmarks: '+(root.querySelector('#pe-bookmarks').checked?'On':'Off');
+      ' · Bookmarks: '+(root.querySelector('#pe-bookmarks').checked?'On':'Off')+
+      ' · Highlights: '+(root.querySelector('#pe-highlights').checked?'On':'Off');
     root.querySelector('[data-es-spec-apparatus]').textContent='Apparatus: '+apparatusLabel(s);
     root.querySelector('[data-es-count]').textContent=result.status==='ready'?
       result.record.pages+' pages · '+Math.round(Number(result.record.bytes||result.record.size_bytes||0)/1024)+' KB':'';
@@ -426,7 +433,7 @@
     }
   }
   function onChange(event){
-    if(event.target.matches('#pe-personal,#pe-bookmarks'))personalChanged();
+    if(event.target.matches('#pe-personal,#pe-bookmarks,#pe-highlights'))personalChanged();
     else if(event.target.matches('#pe-dates,#pe-annotations,#pe-order'))refresh();
   }
   function onKey(event){
