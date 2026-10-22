@@ -1,0 +1,69 @@
+name: Daruri dynamic PDF failure recovery and privacy QA
+
+on:
+  push:
+    branches: [qa/daruri-dynamic-failures-20261022]
+    paths:
+      - 'daruri/qa/verify_dynamic_negative_paths.cjs'
+      - '.github/workflows/daruri-dynamic-failure-recovery.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daruri-independent-negative-qa-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  negative-paths:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - name: Check out isolated read-only audit
+        uses: actions/checkout@v4
+        with:
+          path: audit
+      - name: Check out immutable dynamic PDF candidate
+        uses: actions/checkout@v4
+        with:
+          ref: 2dfc1e716f36e6cee32c6a45705917a6acf8d43c
+          path: booksite
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install local browser instruments
+        run: |
+          npm install --no-save --no-package-lock --prefix booksite/daruri/qa playwright@1.56.1 pdf-lib@1.17.1
+          cd booksite/daruri/qa
+          if [ "${{ matrix.browser }}" = "chromium" ]; then
+            if command -v google-chrome >/dev/null 2>&1; then
+              google-chrome --version
+              echo 'GNAMMA_CHROME_CHANNEL=chrome' >> "$GITHUB_ENV"
+            else
+              npx playwright install --with-deps --only-shell chromium
+            fi
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Simulate failures without touching published PDF files
+        env:
+          GNAMMA_SITE_ROOT: ${{ github.workspace }}/booksite
+          GNAMMA_BROWSER: ${{ matrix.browser }}
+          GNAMMA_REPORT_DIR: /tmp/daruri-negative-${{ matrix.browser }}
+        run: node audit/daruri/qa/verify_dynamic_negative_paths.cjs
+      - name: Keep machine-readable results even when safety checks fail
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-dynamic-negative-paths-${{ matrix.browser }}
+          path: /tmp/daruri-negative-${{ matrix.browser }}/negative-path-report.json
+          if-no-files-found: warn
+          retention-days: 14
