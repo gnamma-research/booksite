@@ -50,7 +50,7 @@ jobs:
           grep -q 'daruri/reading-desk-pdf.js' daruri/download-bundle.js
           grep -q 'reading-desk.js?v=20261022-bookmark-audit1' daruri/sw.js
           grep -q 'reading-desk.css?v=20261022-bookmark-audit1' daruri/sw.js
-          grep -q 'reading-desk.js?v=20261022-bookmark-audit1' daruri/download-bundle.js
+          grep -q 'reading-desk.js?v=20261023-personal-icons' daruri/download-bundle.js
           grep -q 'reading-desk.css?v=20261022-bookmark-audit1' daruri/download-bundle.js
       - name: Install pinned browser and PDF validators
         run: |
