@@ -38,9 +38,12 @@ for idx,(kind,path,name,expected_sha,pages) in enumerate(entries,1):
       if not isinstance(dst,int) or not (0<=dst<len(pdf)):
        problems_local.append({"page":pidx+1,"why":"internal-target-invalid","dest":str(dst)})
      elif kind_link==fitz.LINK_NAMED:
-      raw=str(link.get("page","")); 
-      if raw.isdigit() and not (1<=int(raw)<=len(pdf)):
-       problems_local.append({"page":pidx+1,"why":"named-target-invalid","dest":raw})
+      # PyMuPDF resolves named destinations to a ZERO-based page index,
+      # exactly like LINK_GOTO. Page index 0 is a valid first page.
+      dst=link.get("page")
+      if not isinstance(dst,int) or not 0<=dst<len(pdf):
+       problems_local.append({"page":pidx+1,"why":"named-target-invalid","dest":str(dst),
+           "named":link.get("nameddest")})
      elif kind_link==fitz.LINK_URI:
       uri=link.get("uri") or ""
       if not re.match(r"^(https?://|mailto:|tel:)",uri,re.I):
