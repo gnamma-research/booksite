@@ -174,10 +174,9 @@
       if(!res.ok)throw Error('Locally hosted Unicode font unavailable: '+name);
       return res.arrayBuffer();
     }));
-    // Keep the tested smaller font subsets and avoid Arabic contextual glyph
-    // substitutions in the invisible text layer. Visible Arabic is already
-    // rasterized; text runs below use isolated codepoints for ToUnicode.
-    const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:true})));
+    // Testing unsubsetted fonts for correct Arabic glyph-to-Unicode mapping;
+    // visible appendix type is separately rendered on the canvas.
+    const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:false})));
     const actualTextAnchor=await pdf.embedFont(window.PDFLib.StandardFonts.Helvetica);
     return {latin,arabic,actualTextAnchor,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
   }
