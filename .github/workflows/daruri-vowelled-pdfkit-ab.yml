@@ -1,0 +1,66 @@
+name: Daruri vowelled Arabic PDFKit character mapping A-B research (NO PUBLICATION)
+on:
+  push:
+    branches: [qa/daruri-vowelled-pdfkit-ab-20261022]
+    paths:
+      - '.github/workflows/daruri-vowelled-pdfkit-ab.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: macos-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: arabic-vowelled
+            source: editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf
+            map: editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json
+          - id: reading-bilingual-vowelled
+            source: editions/reading/daruri-reading-bilingual-titles-off.pdf
+            map: editions/maps/daruri-reading-bilingual-titles-off.pdf.json
+          - id: scholarly-reference
+            source: daruri.pdf
+            map: personal-source-pango-maps/daruri.pdf.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: Compare grapheme-level and scalar-level Arabic Unicode CIDs in genuine PDFKit
+        run: |
+          mkdir -p /tmp/arabic-pdfkit-ab
+          for approach in grapheme scalar; do
+            flag=''
+            if [ "$approach" = scalar ]; then flag='--scalar-harakat'; fi
+            python daruri/qa/experimental_original_char_unicode.py \
+              --input daruri/${{ matrix.source }} \
+              --map daruri/${{ matrix.map }} \
+              --output /tmp/arabic-pdfkit-ab/${{ matrix.id }}-$approach.pdf \
+              $flag > /tmp/arabic-pdfkit-ab/${{ matrix.id }}-$approach-build.txt
+            set +e
+            swift daruri/qa/verify_char_unicode_pdfkit.swift \
+              /tmp/arabic-pdfkit-ab/${{ matrix.id }}-$approach.pdf \
+              daruri/${{ matrix.map }} \
+              > /tmp/arabic-pdfkit-ab/${{ matrix.id }}-$approach-pdfkit.txt 2>&1
+            result=$?
+            set -e
+            echo "PDFKIT_AB_RESULT profile=${{ matrix.id }} approach=$approach exit_code=$result"
+            grep -E 'PDFKIT_414_COVERAGE|PDFKIT_414_EXPERIMENT|PDFKIT_RELEASE_GATE' \
+              /tmp/arabic-pdfkit-ab/${{ matrix.id }}-$approach-pdfkit.txt || true
+            echo "$result" > /tmp/arabic-pdfkit-ab/${{ matrix.id }}-$approach-exit-code.txt
+          done
+      - name: Preserve both trial outcomes, not a false release pass
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vowelled-pdfkit-ab-${{ matrix.id }}-nonrelease
+          path: |
+            /tmp/arabic-pdfkit-ab/*-build.txt
+            /tmp/arabic-pdfkit-ab/*-pdfkit.txt
+            /tmp/arabic-pdfkit-ab/*-exit-code.txt
+          retention-days: 20
+          if-no-files-found: warn
