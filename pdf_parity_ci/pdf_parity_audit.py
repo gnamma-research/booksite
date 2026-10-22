@@ -7,7 +7,7 @@ from __future__ import annotations
 import argparse,hashlib,json,os,re,subprocess,sys,time,traceback
 from pathlib import Path
 import fitz,psutil
-ROOT=Path(__file__).resolve().parents[2]
+ROOT=Path(__file__).resolve().parents[1]
 D=ROOT/"daruri"
 NAMES={"scholarly":"daruri.pdf","study":"daruri-study.pdf","english":"daruri-english.pdf",
        "arabic":"daruri-arabic.pdf","arabic-vowelled":"daruri-arabic-vowelled.pdf"}
