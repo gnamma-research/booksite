@@ -122,7 +122,7 @@ const types={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'
   assert.equal(await page.locator('#gns-near-order').count(),1);
   await page.locator('#gns-query').fill('ijtihad');
   await page.locator('#gns-near-term').fill('taqlid');
-  await page.waitForTimeout(250);
+  await page.waitForTimeout(370);
   const count=await page.locator('.gns-result').count();
   assert.ok(count>=2,'Expected results, got '+count);
   const pair=page.locator('.gns-result').filter({hasText:'Authorial text · §230'}).first();
@@ -179,7 +179,7 @@ const types={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'
  await test('inline proximity syntax switches the UI to Proximity mode',async()=>{
   await page.locator('#searchBtn').click();
   await page.locator('#gns-query').fill('ijtihad NEAR/5 taqlid');
-  await page.waitForTimeout(170);
+  await page.waitForTimeout(350);
   assert.equal(await page.locator('#gns-mode').inputValue(),'proximity');
   assert.equal(await page.locator('#gns-query').inputValue(),'ijtihad');
   assert.equal(await page.locator('#gns-near-term').inputValue(),'taqlid');
@@ -196,7 +196,7 @@ const types={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'
   await mobile.locator('#gns-mode').selectOption('proximity');
   await mobile.locator('#gns-query').fill('ijtihad');
   await mobile.locator('#gns-near-term').fill('taqlid');
-  await mobile.waitForTimeout(250);
+  await mobile.waitForTimeout(370);
   const geometry=await mobile.evaluate(()=>({
    window:innerWidth,document:document.documentElement.scrollWidth,
    near:document.querySelector('.gns-near-options')?.getBoundingClientRect().toJSON(),
@@ -214,7 +214,7 @@ const types={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'
   await narrow.locator('#gns-mode').selectOption('proximity');
   await narrow.locator('#gns-query').fill('ijtihad');
   await narrow.locator('#gns-near-term').fill('taqlid');
-  await narrow.waitForTimeout(220);
+  await narrow.waitForTimeout(350);
   const details=await narrow.evaluate(()=>({
    viewport:innerWidth,scroll:document.documentElement.scrollWidth,
    options:document.querySelector('.gns-near-options')?.getBoundingClientRect().toJSON(),
