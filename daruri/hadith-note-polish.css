@@ -1,0 +1,23 @@
+/* Minimal scholarly Q/H note labels, Gnamma colour tokens; source IDs remain selectable. */
+.gn-note-entry h3.gn-scholarly-source-heading{display:flex;flex-direction:column;align-items:flex-start;gap:5px;margin:0 0 9px!important}
+.gn-scholarly-heading-primary{font:600 17px/1.45 var(--serif,Georgia,serif);color:var(--text,inherit)}
+.gn-scholar-ayah-title{font-family:var(--arabic,'Amiri',serif);font-size:clamp(1.25rem,2.5vw,1.7rem);font-weight:400;line-height:1.95;text-align:right;align-self:stretch;unicode-bidi:isolate;white-space:normal}
+.gn-scholarly-stable-id,.gn-note-entry h3 small.gn-scholarly-stable-id{display:block;font:400 10px/1.45 var(--sans,system-ui,sans-serif);color:var(--muted,var(--text-soft,#777));letter-spacing:.005em;opacity:.82;overflow-wrap:anywhere;margin:0}
+.gn-scholar-verse-source{font:500 11px/1.45 var(--sans,system-ui,sans-serif);color:var(--muted,var(--text-soft,#777))}
+.gn-hadith-brief{margin:3px 0 10px;line-height:1.55}
+.gn-hadith-source-line{display:flex;flex-wrap:wrap;align-items:center;gap:2px 7px;font:12px/1.5 var(--sans,system-ui,sans-serif);color:var(--text-soft,var(--muted,inherit))}
+.gn-hadith-source-text-link{color:var(--accent,currentColor);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;min-height:30px;display:inline-flex;align-items:center}
+.gn-hadith-source-text-link:focus-visible{outline:2px solid var(--accent,currentColor);outline-offset:3px}
+.gn-hadith-canonical-legacy[hidden]{display:none!important}
+.gn-hadith-in-quran-note{border-top:1px solid var(--line,var(--border,#bbb));margin-top:15px;padding-top:9px}
+.gn-related-hadith-heading{font:600 14px/1.4 var(--sans,system-ui,sans-serif);color:var(--text,inherit);margin:3px 0}
+.gn-related-hadith-context-label{font:12px/1.55 var(--serif,Georgia,serif);color:var(--text-soft,inherit);margin:3px 0 6px}
+.gn-note-entry .source-note-links a.gn-source-plain-link{display:inline!important;border:0!important;padding:0!important;background:none!important;min-width:0!important;min-height:0!important;height:auto!important;width:auto!important;opacity:1!important;text-decoration:underline!important;font:inherit;color:var(--accent,currentColor)}
+/* Source superscripts have a single visible Q or H, with no adjacent external-link glyph. */
+#reader .note-ref-symbol.quran-source-ref,#reader .note-ref-symbol.hadith-source-ref{font:650 11px/1 var(--sans,system-ui,sans-serif);position:relative;vertical-align:super;color:var(--accent,currentColor);text-decoration:none!important;padding:1px 2px;border-radius:3px;white-space:nowrap}
+#reader .note-ref-symbol.hadith-source-ref{color:var(--gold,var(--accent,currentColor))}
+#reader .note-ref-symbol:is(.quran-source-ref,.hadith-source-ref)::before{content:'';position:absolute;inset:-10px -7px}
+#reader .note-ref-symbol:is(.quran-source-ref,.hadith-source-ref):focus-visible{outline:2px solid var(--accent,currentColor);outline-offset:4px}
+#reader .note-ref-symbol:is(.quran-source-ref,.hadith-source-ref):hover{background:var(--accent-soft,transparent)}
+@media(max-width:560px){.gn-scholar-ayah-title{font-size:1.28rem}.gn-note-entry h3.gn-scholarly-source-heading{gap:3px}}
+@media print{.gn-hadith-context,.gn-hadith-in-quran-note{break-inside:avoid}.gn-scholarly-stable-id{opacity:1}}
