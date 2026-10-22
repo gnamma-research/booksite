@@ -414,3 +414,12 @@
     min-height:44px;min-width:50px;padding:7px!important;
   }
 }
+
+/* Single AR control: Off, Plain, Vowelled; no separate diacritics button. */
+.gn-es [data-es-toggle="ar"]{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1px;min-width:70px;min-height:46px;padding:5px 7px}
+.gn-es [data-es-toggle="ar"] .gn-es-ar-form{display:block;font:600 10px/1.2 var(--sans,system-ui,sans-serif);letter-spacing:0;color:var(--es-muted)}
+.gn-es [data-es-toggle="ar"][data-es-arabic-state="vowelled"] .gn-es-ar-form{color:var(--es-accent)}
+.gn-es [data-es-toggle="ar"][data-es-arabic-state="off"] .gn-es-ar-form{opacity:.78}
+.gn-es .gn-es-personal-options{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:450px){.gn-es .gn-es-personal-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:335px){.gn-es .gn-es-personal-options{grid-template-columns:1fr}}

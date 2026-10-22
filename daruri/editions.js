@@ -32,7 +32,7 @@
     book:'<path d="M12 6c-3-2-6-2-9-2v14c3 0 6 0 9 2 3-2 6-2 9-2V4c-3 0-6 0-9 2Z"/><path d="M12 6v14"/>',
     notes:'<path d="M5 3h14v18l-4-3-4 3-3-3-3 3V3Z"/><path d="M9 8h6M9 12h6"/>',
     library:'<path d="M4 5h5v15H4zM10 3h5v17h-5zM16 7h4v13h-4z"/>',
-    pen:'<path d="m4 20 4-1 11-11-3-3L4 16zM13 6l4 4"/>',
+    pen:'<rect x="3.6" y="3.5" width="16" height="17" rx="2"/><path d="M7 8h7M7 11h4"/><path d="m11.6 16.9 5.3-5.3 2 2-5.3 5.3-2.8.8zM15.9 12.6l2 2"/>',
     printer:'<path d="M6 8V3h12v5M6 17H4V9h16v8h-2M7 14h10v7H7zM17 11h.01"/>',
     eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
     download:'<path d="M12 3v12M7 10l5 5 5-5M4 18v3h16v-3"/>',
@@ -271,7 +271,7 @@
       '<button type="button" role="tab" class="gn-ed-tab" id="gn-ed-tab-reading" data-ep-tab="reading" aria-label="Reading edition" aria-selected="true" aria-controls="gn-ed-reading" data-ep-info-kind="Edition" data-ep-info-label="Reading" tabindex="0">'+svg('book')+'</button>'+
       '<button type="button" role="tab" class="gn-ed-tab" id="gn-ed-tab-study" data-ep-tab="study" aria-label="Study edition" aria-selected="false" aria-controls="gn-ed-study" data-ep-info-kind="Edition" data-ep-info-label="Study" tabindex="-1">'+svg('notes')+'</button>'+
       '<button type="button" role="tab" class="gn-ed-tab" id="gn-ed-tab-reference" data-ep-tab="reference" aria-label="Reference edition" aria-selected="false" aria-controls="gn-ed-reference" data-ep-info-kind="Edition" data-ep-info-label="Reference" tabindex="-1">'+svg('library')+'</button>'+
-      '</div><a class="gn-ed-personal-action" href="personal-export.html" aria-label="Personal PDF and Reading Desk notes" data-ep-info-kind="Personal PDF" data-ep-info-label="Notes and bookmarks">'+svg('pen')+'</a></div>'+
+      '</div><a class="gn-ed-personal-action" href="personal-export.html" aria-label="Personal PDF and Reading Desk notes" data-ep-info-kind="Personal PDF" data-ep-info-label="Notes and bookmarks">'+(window.GnammaBookmarkUI?.noteIcon?.()||svg('pen'))+'</a></div>'+
     '<section id="gn-ed-reading" class="gn-ed-tier" role="tabpanel" aria-labelledby="gn-ed-tab-reading" tabindex="0">'+
       '<h2 class="gn-ed-panel-label">Reading</h2>'+
       '<div class="gn-ed-config gn-ed-published" data-ep-published="reading" hidden></div>'+
