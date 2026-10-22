@@ -1,0 +1,44 @@
+name: Daruri nonpublishing QA baseline evidence
+on:
+  push:
+    branches:
+      - qa/daruri-pdf-parity-20261022
+    paths:
+      - .github/workflows/daruri-parity-baseline-20261022.yml
+permissions:
+  contents: read
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Hash approved original PDFs (read only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum \
+            daruri/editions/apparatus/daruri-reading-bilingual-glossary.pdf \
+            daruri/editions/apparatus/daruri-reading-english-index-concordance.pdf \
+            daruri/editions/apparatus/daruri-study-bilingual-glossary-index-concordance-applications-titles-on.pdf \
+            daruri/editions/reading/daruri-reading-bilingual-titles-off.pdf \
+            daruri/editions/study/daruri-study-bilingual-titles-on.pdf \
+            daruri/daruri.pdf \
+            daruri/daruri-arabic.pdf \
+            daruri/daruri-arabic-vowelled.pdf > daruri-baseline-sha256.txt
+          cat daruri-baseline-sha256.txt
+      - name: Upload certified original PDFs solely for offline comparison
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-certified-parity-baselines
+          retention-days: 7
+          path: |
+            daruri-baseline-sha256.txt
+            daruri/editions/apparatus/daruri-reading-bilingual-glossary.pdf
+            daruri/editions/apparatus/daruri-reading-english-index-concordance.pdf
+            daruri/editions/apparatus/daruri-study-bilingual-glossary-index-concordance-applications-titles-on.pdf
+            daruri/editions/reading/daruri-reading-bilingual-titles-off.pdf
+            daruri/editions/study/daruri-study-bilingual-titles-on.pdf
+            daruri/daruri.pdf
+            daruri/daruri-arabic.pdf
+            daruri/daruri-arabic-vowelled.pdf
