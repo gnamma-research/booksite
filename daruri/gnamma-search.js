@@ -25,12 +25,20 @@ const TYPES = [
 const HTML_ENT = {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
 const esc = x => String(x==null?'':x).replace(/[&<>"']/g,c=>HTML_ENT[c]);
 const xml = x => esc(x).replace(/'/g,'&#39;');
+const GN_FOLD_CACHE=new Map();
 function fold(value) {
- return String(value==null?'':value).toLowerCase().normalize('NFD')
+ const raw=String(value==null?'':value);
+ if(raw.length>20){const cached=GN_FOLD_CACHE.get(raw);if(cached!==undefined)return cached;}
+ const folded=raw.toLowerCase().normalize('NFD')
    .replace(/[\u0300-\u036f\u064b-\u065f\u0670\u06d6-\u06ed]/g,'')
    .replace(/[أإآٱ]/g,'ا').replace(/ى/g,'ي').replace(/ؤ/g,'و').replace(/ئ/g,'ي')
    .replace(/[ʿʾ‘’ʻ'\u0060]/g,'').replace(/ـ/g,'')
    .replace(/\s+/g,' ').trim();
+ if(raw.length>20){
+  if(GN_FOLD_CACHE.size>7000)GN_FOLD_CACHE.clear();
+  GN_FOLD_CACHE.set(raw,folded);
+ }
+ return folded;
 }
 const hasArabic=s=>/[\u0600-\u06ff]/.test(String(s||''));
 function foldMapped(raw){
@@ -626,7 +634,7 @@ function icon(type){const path={
 }
 const ui={opened:false,expanded:false,query:'',facet:'all',mode:'terms',scope:'work',
   sort:'relevance',display:'results',showFilters:false,page:CONFIG.pageSize,results:[],facets:{},
-  before:null,request:0,scroll:0,entryHash:'',entryScroll:0,pendingReturn:null,
+  before:null,request:0,scroll:0,entryHash:'',entryScroll:0,pendingReturn:null,sourceCounts:false,
   nearTerm:'',nearGap:5,nearOrdered:false,booleanScope:'passage',
   orthography:'normalized',builderOpen:false,savedOpen:false,builderError:'',
   builderRows:[{join:'AND',kind:'word',text:'',field:'all'},
@@ -817,7 +825,8 @@ function resultControls(){
  const msg=ui.facetsCount?.all===undefined?count:ui.facetsCount.all;
  return morphSuggestion()+'<div class="gns-results-top"><span role="status" aria-live="polite"><strong>'+count.toLocaleString()+
   '</strong> results'+(ui.facet!=='all'?' · '+esc(labelFor(ui.facet)):msg!==count?' from '+msg.toLocaleString()+' matching records':'')+status+
-  '</span>'+(ui.expanded?'<button type="button" data-gns-download="csv" title="Export visible search results as CSV">Export CSV ↓</button>':'')+'</div>'+
+  '</span>'+(ui.expanded?'<div class="gns-results-actions"><button type="button" data-gns-toggle-sources="1">'+
+    (ui.sourceCounts?'Hide source breakdown':'Source counts')+'</button><button type="button" data-gns-download="csv">CSV ↓</button></div>':'')+'</div>'+
   (failedOther&&ui.scope==='library'?'<p class="gns-warning" role="alert">'+esc(failedOther)+
   ' <button data-gns-retry="1">Retry</button></p>':'')+
   (ui.scope==='library'&&!otherLoaded&&fetching?'<p class="gns-wait">Loading other published works; the results will update automatically.</p>':'')+
@@ -941,7 +950,7 @@ function markup(){
   filterButton('text','Text',ui.facet==='text','quick')+
   filterButton('mine','Mine',ui.facet==='mine'||['personal','highlight','bookmark'].includes(ui.facet),'quick');
  return '<div class="gns-backdrop" data-gns-close="1"></div>'+
-  '<section class="gns-dialog'+(ui.expanded?' gns-expanded':'')+'" role="dialog" aria-modal="true" aria-labelledby="gns-title">'+
+  '<section class="gns-dialog'+(ui.expanded?' gns-expanded':'')+(ui.sourceCounts?' gns-show-sources':'')+'" role="dialog" aria-modal="true" aria-labelledby="gns-title">'+
    '<header class="gns-header">'+
    '<h2 id="gns-title" class="gns-sr-only">Search Gnamma texts and annotations</h2>'+
    '<label class="gns-searchbox"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6"/><path d="m15.5 15.5 5 5"/></svg><input id="gns-query" type="search" inputmode="search" autocomplete="off" spellcheck="false" dir="auto" placeholder="'+(ui.mode==='proximity'?'First term, e.g. qiyas':'Search text, concepts, notes…')+'" aria-label="Search Arabic, English and annotations" value="'+xml(ui.query)+'"/></label>'+
@@ -1018,7 +1027,7 @@ function open(restoring=false){
   ui.expanded=false;ui.facet='all';ui.showFilters=false;ui.page=CONFIG.pageSize;
   ui.mode='terms';ui.nearTerm='';ui.nearGap=5;ui.nearOrdered=false;
   ui.booleanScope='passage';ui.orthography='normalized';
-  ui.entryHash=location.hash;ui.entryScroll=window.scrollY;ui.pendingReturn=null;
+  ui.entryHash=location.hash;ui.entryScroll=window.scrollY;ui.pendingReturn=null;ui.sourceCounts=false;
  }
  if(!host){host=document.createElement('div');host.id='gn-unified-search';host.className='gns-root';document.body.append(host);}
  host.hidden=false;document.body.classList.add('gns-open');
@@ -1259,6 +1268,9 @@ document.addEventListener('click',event=>{
  if(target.hasAttribute('data-gns-result')){
   const r=ui.results[Number(target.dataset.gnsResult)];openRecord(r);return;
  }
+ if(target.hasAttribute('data-gns-toggle-sources')){
+  ui.sourceCounts=!ui.sourceCounts;rerender(false);return;
+ }
  if(target.hasAttribute('data-gns-morph-pick')){
   ui.mode=target.dataset.gnsMorphPick;ui.page=CONFIG.pageSize;ui.expanded=true;
   ui.pendingReturn=null;rerender();return;
@@ -1375,7 +1387,8 @@ document.addEventListener('keydown',event=>{
   event.preventDefault();rows[index]?.focus();
  }
  if(event.key==='Enter'&&event.target?.id==='gns-query'){
-  event.preventDefault();openRecord(ui.results[0]);
+  event.preventDefault();clearTimeout(inputTimer);renderResultsOnly();
+  openRecord(ui.results[0]);
  }
 },true);
 document.addEventListener('toggle',event=>{
