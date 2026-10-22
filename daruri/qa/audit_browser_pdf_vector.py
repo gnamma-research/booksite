@@ -50,7 +50,8 @@ def check(pdf_path,fixture,metadata,report):
         pair_text=data["expected_fragments"]["arabic_exact"]
         search_pages=[i+1 for i,p in enumerate(doc) if p.search_for(pair_text)]
         note_page=next((i+1 for i,p in enumerate(doc)
-                        if "Scholarly note belonging" in p.get_text()),None)
+                        if ("Scholarly note belonging" in p.get_text() or
+                            "Editorial footnote stress sample" in p.get_text())),None)
         sup_page=next((i+1 for i,p in enumerate(doc)
                        if "R065" in p.get_text() and "65" in p.get_text()),None)
         links=[(page+1,l) for page,p in enumerate(doc) for l in p.get_links()]
