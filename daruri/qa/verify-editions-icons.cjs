@@ -15,10 +15,13 @@ const src=read('editions-icons.js');
 const editionSrc=read('editions.js');
 const sw=read('sw.js');
 const zip=read('download-bundle.js');
-const names=['editions-icons.css?v=20261021-editiontabs-vowels-release1','editions-icons.js?v=20261021-editiontabs-vowels-release1'];
-for(const name of names){
-  assert.ok(html.includes(name), 'Reader HTML includes '+name);
-  assert.ok(sw.includes(name), 'Offline cache includes '+name);
+// Resolve the currently published cache-busted asset URLs rather than pinning
+// an obsolete revision: styles and scripts are updated independently.
+for(const file of ['editions-icons.css','editions-icons.js']){
+  const escaped=file.replaceAll('.', '\\.');
+  const name=html.match(new RegExp(escaped+'\\?v=[A-Za-z0-9-]+'))?.[0];
+  assert.ok(name, 'Reader HTML includes the versioned asset '+file);
+  assert.ok(sw.includes(name), 'Offline cache includes the active '+name);
 }
 assert.ok(html.indexOf('editions.js?v=') < html.indexOf('editions-icons.js?v='), 'Edition renderer loads before enhancement');
 assert.ok(html.indexOf('editions.css?v=') < html.indexOf('editions-icons.css?v='), 'Base styles load before enhancement');
