@@ -148,7 +148,7 @@ def cmap_for(aliases, logical_cluster_payload=False):
     return ("\n".join(lines) + "\n").encode("ascii")
 
 
-def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False):
+def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0):
     # The printed Arabic is RTL. Each invisible line emits Unicode scalars in
     # visual/physical LTR order; engines recover logical Arabic through bidi.
     aliases, commands = [], []
@@ -177,9 +177,13 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
                     # A non-scalar grapheme may contain base + several marks;
                     # Unicode combining() accepts exactly one codepoint.
                     is_mark = len(char) == 1 and bool(unicodedata.combining(char))
-                    advance = 0 if scalar_harakat and is_mark else (
-                        (x1-x0) * 1000 / (len(groups)*font_size)
-                    )
+                    group_width = (x1-x0) * 1000 / (len(groups)*font_size)
+                    if scalar_harakat and scalar_mark_fraction:
+                        marks=sum(bool(unicodedata.combining(c)) for c in group)
+                        mark_width=min(group_width*scalar_mark_fraction,group_width*0.8/max(1,marks))
+                        advance=mark_width if is_mark else group_width-mark_width*marks
+                    else:
+                        advance=0 if scalar_harakat and is_mark else group_width
                     aliases.append((cid, char, advance))
                     encoded.append(cid)
                     word_codes.append(cid)
@@ -276,7 +280,7 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
     return len(aliases)
 
 
-def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False):
+def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0):
     original, mapping_path, output = Path(original), Path(mapping_path), Path(output)
     if output.exists() or original.resolve() == output.resolve():
         raise ValueError("Refusing to replace any existing file")
@@ -320,7 +324,7 @@ def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=
             total_lines += len(source_on_page)
             total_cids += add_character_semantics(
                 doc, page, page_no, source_on_page, fontfile,
-                scalar_harakat=scalar_harakat,word_actualtext=word_actualtext,logical_cluster_payload=logical_cluster_payload
+                scalar_harakat=scalar_harakat,word_actualtext=word_actualtext,logical_cluster_payload=logical_cluster_payload,scalar_mark_fraction=scalar_mark_fraction
             )
         if original.name == "daruri-reading-arabic-titles-off.pdf" and total_lines != 2583:
             raise ValueError(f"Unexpected unvowelled Arabic Reading line coverage {total_lines}/2583")
@@ -341,5 +345,7 @@ if __name__ == "__main__":
     parser.add_argument("--scalar-harakat", action="store_true", help="Experimental one-scalar-per-CID vocalization mapping")
     parser.add_argument("--word-actualtext", action="store_true", help="Experiment: tagged original Unicode word replacements")
     parser.add_argument("--logical-cluster-payload", action="store_true", help="Research: preserve logical grapheme Unicode order in ToUnicode for native PDFKit")
+    parser.add_argument("--scalar-mark-fraction", type=float, default=0.0, help="Experimental fraction of glyph advance reserved for each combining mark")
     args = parser.parse_args()
-    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext, args.logical_cluster_payload)
+    assert 0<=args.scalar_mark_fraction<=0.4
+    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext, args.logical_cluster_payload, args.scalar_mark_fraction)
