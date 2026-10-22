@@ -44,3 +44,64 @@ body.focus-level-3 #readerDock .gn-dock-center>.reader-location{grid-column:auto
 .gn-reading-mode-picker .gn-mode-apparatus input{accent-color:var(--accent);width:17px;height:17px;flex:none}
 .gn-reading-mode-picker .gn-mode-choice:focus-visible,.gn-reading-mode-picker .gn-mode-apparatus:focus-within{outline:2px solid var(--accent);outline-offset:-1px}
 @media print{.gn-reading-mode-picker{display:none!important}}
+
+/* Joined AR/EN language capsule (2026-10-22) */
+/* Two complementary halves of a single pill, not two floating squares.
+   Keep the reader's independent language selection and tap targets. */
+#readingControls #persistentLanguages {
+  display:inline-flex!important;
+  align-items:stretch!important;
+  gap:0!important;
+  padding:0!important;
+  border:1px solid var(--line)!important;
+  border-radius:999px!important;
+  overflow:hidden;
+  background:var(--surface)!important;
+}
+#readingControls #persistentLanguages > button[data-language-toggle] {
+  position:relative;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  transition:background-color .15s ease,color .15s ease;
+}
+#readingControls #persistentLanguages > button[data-language-toggle]:not(.active) {
+  background:var(--surface)!important;
+  color:var(--muted)!important;
+}
+#readingControls #persistentLanguages > button[data-language-toggle].active {
+  background:var(--accent)!important;
+  color:var(--surface)!important;
+}
+#readingControls #persistentLanguages > button[data-language-toggle] + button[data-language-toggle] {
+  border-inline-start:1px solid var(--line)!important;
+}
+#readingControls #persistentLanguages > button[data-language-toggle]:focus-visible {
+  outline:2px solid var(--ink)!important;
+  outline-offset:-3px!important;
+  z-index:1;
+}
+#readingControls #persistentLanguages [data-language-toggle] .gn-language-label {
+  position:relative;
+  overflow:visible;
+  text-transform:uppercase!important;
+}
+/* A small curved madd-like overbar appears only for vocalized Arabic. */
+#readingControls #persistentLanguages [data-language-toggle="arabic"][data-arabic-state="vowelled"] .gn-language-label::before {
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  display:block;
+  width:84%;
+  height:3px;
+  top:-1.5px;
+  inset-inline-start:8%;
+  border-top:2px solid currentColor;
+  border-radius:50% 50% 0 0;
+}
+@media (prefers-reduced-motion:reduce) {
+  #readingControls #persistentLanguages > button[data-language-toggle] {
+    transition:none;
+  }
+}

@@ -136,8 +136,10 @@
     return '<div class="gn-ed-ready-language" role="group" aria-label="Reading PDF languages">'+
       '<span class="gn-ed-field-marker" aria-hidden="true">'+svg('book')+'</span>'+
       '<div class="gn-ed-ready-switches">'+
-      '<button type="button" class="gn-ed-lang-toggle" data-ep-ready-toggle="en" data-ep-info-kind="Language" data-ep-info-label="English" aria-label="Include English text" aria-pressed="true">EN</button>'+
-      '<button type="button" class="gn-ed-lang-toggle" data-ep-ready-toggle="ar" data-ep-info-kind="Language" data-ep-info-label="Arabic" aria-label="Include Arabic text" aria-pressed="true">AR</button>'+
+      '<div class="gn-ed-language-pair" role="group" aria-label="Included PDF languages">'+
+      '<button type="button" class="gn-ed-lang-toggle" data-ep-ready-toggle="en" data-ep-info-kind="Language" data-ep-info-label="English" aria-label="Include English text" aria-pressed="true"><span class="gn-ed-language-label" aria-hidden="true">EN</span></button>'+
+      '<button type="button" class="gn-ed-lang-toggle" data-ep-ready-toggle="ar" data-ep-arabic-state="vowelled" data-ep-info-kind="Language" data-ep-info-label="Arabic" aria-label="Include Arabic text (vowelled)" aria-pressed="true"><span class="gn-ed-language-label" aria-hidden="true">AR</span></button>'+
+      '</div>'+
       '<button type="button" class="gn-ed-lang-toggle gn-ed-vowel-switch" data-ep-ready-toggle="vowels" data-ep-info-kind="Arabic" data-ep-info-label="Vowel marks" aria-label="Arabic vowel marks" aria-pressed="true" lang="ar" dir="rtl">عَ</button>'+
       '</div><select class="gn-ed-native-select" data-ep-ready-lang data-ep-iconified="manual" aria-hidden="true" tabindex="-1">'+
       [['bilingual','Bilingual · vowelled'],['bilingual-unvowelled','Bilingual · unvowelled'],
@@ -153,6 +155,10 @@
       const key=button.dataset.epReadyToggle;
       button.setAttribute('aria-pressed',String(Boolean(readyLanguage[key])));
       button.hidden=key==='vowels'&&!readyLanguage.ar;
+      if(key==='ar'){
+        button.dataset.epArabicState=!readyLanguage.ar?'off':readyLanguage.vowels?'vowelled':'plain';
+        button.setAttribute('aria-label','Include Arabic text'+(readyLanguage.ar?(readyLanguage.vowels?' (vowelled)':' (unvowelled)'):''));
+      }
       button.disabled=(key==='en'&&readyLanguage.en&&!readyLanguage.ar)||
         (key==='ar'&&readyLanguage.ar&&!readyLanguage.en);
     }
