@@ -1,0 +1,95 @@
+name: Daruri inline source-note continuous tag native PDFKit proof
+on:
+  push:
+    branches: [qa/daruri-vowelled-pdfkit-ab-20261022]
+    paths:
+      - '.github/workflows/daruri-section65-combined-note-span.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: macos-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: scholarly
+            source: daruri.pdf
+            map: personal-source-pango-maps/daruri.pdf.json
+          - id: study
+            source: editions/study/daruri-study-bilingual-titles-off.pdf
+            map: editions/maps/daruri-study-bilingual-titles-off.pdf.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - name: Build temporary whole-line tagged source with original footnote call
+        run: |
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/${{ matrix.source }} \
+            --map daruri/${{ matrix.map }} \
+            --output /tmp/${{ matrix.id }}-one-note-tag.pdf \
+            --scalar-harakat --scalar-mark-fraction 0.30 \
+            --all-source-runs --suppress-note-span
+      - name: Require 414 native PDFKit phrase/rectangle/copy matches
+        run: |
+          swift daruri/qa/verify_char_unicode_pdfkit.swift \
+            /tmp/${{ matrix.id }}-one-note-tag.pdf \
+            daruri/${{ matrix.map }}
+  render-and-search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: scholarly
+            source: daruri.pdf
+            map: personal-source-pango-maps/daruri.pdf.json
+          - id: study
+            source: editions/study/daruri-study-bilingual-titles-off.pdf
+            map: editions/maps/daruri-study-bilingual-titles-off.pdf.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7
+      - run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - name: Build source with SHA-verified complete two-run suppression
+        run: |
+          python daruri/qa/experimental_original_char_unicode.py \
+            --input daruri/${{ matrix.source }} \
+            --map daruri/${{ matrix.map }} \
+            --output /tmp/${{ matrix.id }}-one-note-tag.pdf \
+            --scalar-harakat --scalar-mark-fraction 0.30 \
+            --all-source-runs --suppress-note-span
+      - name: Verify all original pages, 258 anchors, links and authorial searches
+        run: |
+          python daruri/qa/verify_char_unicode_profiles.py \
+            --source daruri/${{ matrix.source }} \
+            --candidate /tmp/${{ matrix.id }}-one-note-tag.pdf \
+            --map daruri/${{ matrix.map }} \
+            --report /tmp/${{ matrix.id }}-one-note-tag.json
+          python - <<'PY'
+          import json,glob
+          row=json.load(open(glob.glob('/tmp/*-one-note-tag.json')[0]))['tests']
+          for key in ('pymupdf_native_two_word_phrases','pymupdf_pair_search_source_position','pymupdf_extracted_source'):
+            assert row[key]==414,(key,row[key])
+          assert row['copy_regions_clean']==18,row
+          assert row['pixel_identical']==row['pages'],row
+          assert row['semantic_link_pages_equal']==row['pages'],row
+          assert row['source_section_anchors_equal']==258,row
+          print('NOTE_SPLIT_SOURCE_QA_PASS',row)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-inline-note-span-${{ matrix.id }}-report
+          path: /tmp/${{ matrix.id }}-one-note-tag.json
+          if-no-files-found: warn
+          retention-days: 12
