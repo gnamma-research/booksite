@@ -28,7 +28,8 @@
     c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const iconPaths={
     eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
-    pen:'<path d="M4 20l4-1 11-11-3-3L5 16l-1 4ZM13 8l3 3"/>',
+    note:'<rect x="3.6" y="3.5" width="16" height="17" rx="2"/><path d="M7 8h7M7 11h4"/><path d="m11.6 16.9 5.3-5.3 2 2-5.3 5.3-2.8.8zM15.9 12.6l2 2"/>',
+    highlight:'<path d="m15 4 5 5M4 20l4-.5L20 7a3 3 0 0 0-4-4L4 15z"/>',
     bookmark:'<path d="M6 4h12v17l-6-4-6 4V4Z"/>',
     glossary:'<path d="M5 3h14v18H5zM9 8h6M9 12h6M9 16h4"/>',
     index:'<path d="M7 5h13M7 12h13M7 19h13M3 5h1M3 12h1M3 19h1"/>',
@@ -36,8 +37,13 @@
     concordance:'<path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l2-2"/>',
     chevron:'<path d="m6 9 6 6 6-6"/>'
   };
-  const icon=(key,cls='')=>'<svg'+(cls?' class="'+esc(cls)+'"':'')+
-    ' aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+iconPaths[key]+'</svg>';
+  const icon=(key,cls='')=>{
+    const shared=window.GnammaBookmarkUI;
+    if(key==='note'&&shared?.noteIcon)return shared.noteIcon();
+    if(key==='highlight'&&shared?.highlightIcon)return shared.highlightIcon();
+    return '<svg'+(cls?' class="'+esc(cls)+'"':'')+
+      ' aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+iconPaths[key]+'</svg>';
+  };
   const current=()=>state[tier];
   const language=s=>s.en?(s.ar?(s.vowels?'bilingual':'bilingual-unvowelled'):'english'):
     (s.vowels?'arabic-vowelled':'arabic');
@@ -84,12 +90,10 @@
           '<span class="gn-es-setting-label">Language</span>'+
           '<div class="gn-es-setting-body">'+
             '<div class="gn-es-text-switches" role="group" aria-label="Edition languages and Arabic vowel marks">'+
-              '<div class="gn-es-language-pair" role="group" aria-label="Included languages">'+
+              '<div class="gn-es-language-pair" role="group" aria-label="Included languages; activate AR to cycle Off, Plain and Vowelled">'+
                 '<button type="button" data-es-toggle="en" aria-label="Include English" aria-pressed="true"><span class="gn-es-language-label" aria-hidden="true">EN</span></button>'+
-                '<button type="button" data-es-toggle="ar" data-es-arabic-state="vowelled" aria-label="Include Arabic (vowelled)" aria-pressed="true"><span class="gn-es-language-label" aria-hidden="true">AR</span></button>'+
+                '<button type="button" data-es-toggle="ar" data-es-arabic-state="vowelled" aria-label="Arabic: vowelled. Activate to turn off Arabic" aria-pressed="true"><span class="gn-es-language-label" aria-hidden="true">AR</span><small class="gn-es-ar-form" aria-hidden="true">Vowelled</small></button>'+
               '</div>'+
-              '<span class="gn-es-language-divider" aria-hidden="true"></span>'+
-              '<button type="button" class="gn-es-vowels" data-es-toggle="vowels" aria-label="Arabic vowel marks" aria-pressed="true" lang="ar">عَ</button>'+
             '</div><span class="gn-es-inline-note" data-es-language-note></span>'+
           '</div></div>'+
         '<div class="gn-es-setting gn-es-presets" data-es-presets>'+
