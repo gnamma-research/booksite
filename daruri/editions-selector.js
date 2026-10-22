@@ -142,7 +142,8 @@
               '</div><span class="gn-es-inline-note">Choose your own notes, bookmarks and highlights separately. Publisher notes are unaffected; your additions stay on this device.</span>'+
               '<div id="pe-note-options" hidden>'+
                 '<div class="gn-es-personal-advanced">'+
-                  '<label><input id="pe-annotations" type="checkbox" checked> Linked P markers (precise quotation highlights when verified)</label>'+
+                  '<label><input id="pe-annotations" type="checkbox" checked> Add in-text P links and mark matching quotations</label>'+ 
+                   '<span class="gn-es-inline-note">PDF presentation only; this does not select your notes, bookmarks or highlights. Quotations are marked only where locations are verified.</span>'+
                   '<label><input id="pe-dates" type="checkbox" checked> Include reliable dates</label>'+
                   '<label for="pe-order">Appendix order<select id="pe-order">'+
                     '<option value="source">Source order</option><option value="created">Oldest first</option><option value="newest">Newest first</option>'+
