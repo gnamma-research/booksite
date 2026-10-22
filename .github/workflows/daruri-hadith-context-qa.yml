@@ -1,7 +1,7 @@
 name: Daruri Hadith source-context integrity
 on:
   push:
-    branches: [feature/daruri-hadith-expanded-context-20261022]
+    branches: [master, feature/daruri-hadith-expanded-context-20261022]
     paths:
       - 'daruri/hadith-context-*'
       - 'daruri/HADITH_CONTEXT_SOURCES.md'
