@@ -34,12 +34,20 @@
       fail('Duplicated, unordered or unsupported scholarly component');
     return normalized;
   };
+  const styleId=item=>{
+    const value=item?.design_style_id||'gnamma-a4-v1';
+    if(typeof value!=='string'||!/^[a-z][a-z0-9-]{3,47}$/.test(value))
+      fail('Unrecognized or unsigned print design identifier');
+    return value;
+  };
   const designId=b=>{
     if(!/^(reading|study)$/.test(b.tier)||![
        'bilingual','bilingual-unvowelled','english','arabic','arabic-vowelled'
     ].includes(b.language)||typeof b.editorial_titles!=='boolean')
       fail('Source design has an invalid tier, language or heading option');
-    return [b.tier,b.language,b.editorial_titles?'editorial':'recorded','a4'].join('.');
+    const style=styleId(b);
+    return [b.tier,b.language,b.editorial_titles?'editorial':'recorded',
+      style==='gnamma-a4-v1'?'a4':style].join('.');
   };
   const label=b=>{
     const lang={
@@ -50,7 +58,8 @@
       'arabic-vowelled':'Arabic vowelled only, single column'
     }[b.language];
     return (b.tier==='study'?'Study · selected notes':'Reading · no publisher notes')
-      +' · '+lang+' · '+(b.editorial_titles?'editorial guide titles':'recorded headings');
+      +' · '+lang+' · '+(b.editorial_titles?'editorial guide titles':'recorded headings')
+      +(styleId(b)==='gnamma-a4-v1'?'':' · '+styleId(b));
   };
   function build({base,apparatus,maps,packets,canonical}){
     if(base?.status!=='verified'||maps?.status!=='verified'||
@@ -84,15 +93,19 @@
       if(b.notes!==(b.tier==='study'?'selected':'none'))
         fail('Publisher footnote policy differs from recorded source: '+b.file);
       const id=designId(b);
+      const sty=styleId(b);
+      if(sty!=='gnamma-a4-v1' &&
+         (!b.paper_size||!b.packet_layout||!b.density))
+        fail('Nonstandard source design must declare paper, packet layout and density');
       const source={
-        id,type:'certified-pdf-source',page_size:'A4',
+        id,type:'certified-pdf-source',page_size:b.paper_size||'A4',
         full_text:true,body_layout:b.language.startsWith('bilingual')?'parallel':'single',
         tier:b.tier,language:b.language,editorial_titles:b.editorial_titles,
         publisher_notes:b.notes,pdf:'editions/'+b.file,
         sha256:b.sha256,pages:b.pages,map:'editions/'+map.map_file,
         map_sha256:map.map_sha256,
         display:label(b),composable:false,approved_profiles:0,
-        component_template:'gnamma-a4-v1',
+        component_template:sty,
         requires_new_pango_map_on_relayout:true
       };
       if([...byBase.values()].some(x=>x.id===id))fail('Two sources claim the same design ID');
@@ -101,7 +114,7 @@
     if(bindings.size!==byBase.size)fail('A map points to a nonexistent source design');
     const packetByComponents=new Map();
     for(const p of packets.packets){
-      const key=names(p.components).join('-');
+      const key=styleId(p)+':'+names(p.components).join('-');
       if(packetByComponents.has(key)||!hash(p.sha256)||!hash(p.map_sha256)||
          !Number.isInteger(p.pages)||p.pages<1)
         fail('Missing, duplicate or unverified apparatus packet: '+key);
@@ -112,7 +125,8 @@
     // incompatible with the selected source body and page size.
     for(let n=1;n<16;n++){
       const key=COMPONENTS.filter((_,i)=>n&(1<<i)).join('-');
-      if(!packetByComponents.has(key))fail('Missing required reusable packet: '+key);
+      if(!packetByComponents.has('gnamma-a4-v1:'+key))
+        fail('Missing required reusable packet: '+key);
     }
     const profileMaps=new Map();
     for(const row of packets.profiles){
@@ -129,14 +143,22 @@
          b.editorial_titles!==row.editorial_titles||
          b.publisher_notes!==row.notes||b.sha256!==row.base_sha256)
         fail('Requested design and approved source do not match '+row.file);
-      if(row.layout!=='parallel'||row.density!=='standard'||row.scope!=='full')
+      if(row.layout!==(b.packet_layout||'parallel')||
+         row.density!==(b.density||'standard')||row.scope!=='full')
         fail('Edition requires a different layout template: '+row.file);
+      if((row.design_style_id||'gnamma-a4-v1')!==b.component_template)
+        fail('Edition belongs to the wrong page-design style: '+row.file);
       // Arabic-only source cannot acquire an English-only critical apparatus
       // simply through joining PDFs without explicit scholarly approval.
       if(row.language==='arabic'||row.language==='arabic-vowelled')
         fail('Arabic-only source cannot gain an unverified English appendix');
       const key=names(row.apparatus).join('-');
-      const p=packetByComponents.get(key),link=profileMaps.get(row.file);
+      const p=packetByComponents.get(b.component_template+':'+key);
+      const link=profileMaps.get(row.file);
+      if(b.component_template!=='gnamma-a4-v1' &&
+         (link?.design_style_id!==b.component_template||
+          p?.design_style_id!==b.component_template))
+        fail('Custom design packet and source-link profile must name their exact style');
       if(!p||!link||link.packet!==p.file||link.packet_sha256!==p.sha256||
          link.profile_sha256!==row.sha256||link.base!==row.source_base||
          link.profile!==row.file||!hash(row.sha256))
