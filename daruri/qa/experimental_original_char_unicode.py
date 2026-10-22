@@ -186,7 +186,7 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
             if word_actualtext:
                 utf16 = 'FEFF'+word.encode('utf-16be').hex().upper()
                 word_ops.append(f'/Span << /ActualText <{utf16}> >> BDC')
-                word_ops.append(f'<{\"\".join(f\"{c:04X}\" for c in word_codes)}> Tj')
+                word_ops.append("<" + "".join(format(c, "04X") for c in word_codes) + "> Tj")
                 word_ops.append('EMC')
             right_edge = x1
             if idx+1 < len(words):
