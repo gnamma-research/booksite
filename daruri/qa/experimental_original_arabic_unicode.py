@@ -66,7 +66,7 @@ def ordered_words(mapped, max_segments):
                 bypage[int(num)].append(row)
     return bypage, len(keys)
 
-def build(source, mapping_file, font_path, output, max_segments):
+def build(source, mapping_file, font_path, output, max_segments, diagnostic=False):
     source=Path(source);mapping_file=Path(mapping_file)
     font_path=Path(font_path);output=Path(output)
     if source.resolve()==output.resolve() or output.exists():
@@ -126,17 +126,24 @@ def build(source, mapping_file, font_path, output, max_segments):
                 raise RuntimeError("Rendered pixels changed, page "+str(i+1))
         # Native extraction and search are checked independently, not assumed
         # from ToUnicode definitions.
-        phrase="أما بعد"
-        mupdf=bool(b[0].search_for(phrase))
-        poppler=subprocess.check_output(["pdftotext","-f","1","-l","1",str(output),"-"],timeout=35).decode("utf-8","replace")
+        first_key=sorted((k for k in manifest["segments"] if k.endswith((":ar",":vocalized"))),
+                         key=lambda k:(int(k.split(":")[0]),int(k.split(":")[1])))[0]
+        first_words=manifest["segments"][first_key]
+        phrase=first_words[0][0]+" "+first_words[1][0]
+        source_page=int(first_words[0][1])
+        mupdf=bool(b[source_page-1].search_for(phrase))
+        poppler=subprocess.check_output(
+            ["pdftotext","-f",str(source_page),"-l",str(source_page),str(output),"-"],
+            timeout=35).decode("utf-8","replace")
         poppler_ok=phrase in poppler
         report={"experimental":True,"source_sha256":digest,"segments":count,
                 "arabic_words":len(tokens),"augmented_pages":len(pages),"pages_preserved":len(a),
                 "pixels_identical":True,"all_links_preserved":True,
-                "pilot_phrase":phrase,"mupdf_phrase_found":mupdf,"poppler_phrase_found":poppler_ok,
-                "source_pdf_untouched":True}
+                "pilot_phrase":phrase,"pilot_page":source_page,
+                "mupdf_phrase_found":mupdf,"poppler_phrase_found":poppler_ok,
+                "source_pdf_untouched":True,"diagnostic_only":diagnostic}
         print(json.dumps(report,ensure_ascii=False,indent=2),flush=True)
-        if count and not (mupdf and poppler_ok):
+        if count and not (mupdf and poppler_ok) and not diagnostic:
             raise RuntimeError("Two-engine original-Arabic phrase smoke failed")
         return report
 
@@ -148,7 +155,8 @@ if __name__=="__main__":
     parser.add_argument("--output",required=True)
     parser.add_argument("--limit",type=int,default=1)
     parser.add_argument("--report")
+    parser.add_argument("--diagnostic",action="store_true")
     args=parser.parse_args()
-    results=build(args.input,args.map,args.font,args.output,args.limit)
+    results=build(args.input,args.map,args.font,args.output,args.limit,args.diagnostic)
     if args.report:
         Path(args.report).write_text(json.dumps(results,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
