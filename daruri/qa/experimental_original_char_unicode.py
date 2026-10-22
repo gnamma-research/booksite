@@ -188,7 +188,7 @@ def cmap_for(aliases, logical_cluster_payload=False):
     return ("\n".join(lines) + "\n").encode("ascii")
 
 
-def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False):
+def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=13, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False, semantic_first=False):
     # The printed Arabic is RTL. Each invisible line emits Unicode scalars in
     # visual/physical LTR order; engines recover logical Arabic through bidi.
     aliases, commands = [], []
@@ -326,14 +326,15 @@ def add_character_semantics(pdf, page, number, lines, fontfile_xref, font_size=1
         ).encode("ascii")
     semantic_stream = new_stream(pdf, text)
     old_streams = page.get_contents()
+    page_streams=[semantic_stream,*old_streams] if semantic_first else [*old_streams,semantic_stream]
     pdf.xref_set_key(
         page.xref, "Contents",
-        "[" + " ".join(f"{x} 0 R" for x in [*old_streams, semantic_stream]) + "]"
+        "[" + " ".join(f"{x} 0 R" for x in page_streams) + "]"
     )
     return len(aliases)
 
 
-def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False, all_source_runs=False, suppress_note_span=False):
+def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=False, logical_cluster_payload=False, scalar_mark_fraction=0.0, line_actualtext=False, all_source_runs=False, suppress_note_span=False, semantic_first=False):
     original, mapping_path, output = Path(original), Path(mapping_path), Path(output)
     if output.exists() or original.resolve() == output.resolve():
         raise ValueError("Refusing to replace any existing file")
@@ -377,7 +378,7 @@ def build(original, mapping_path, output, scalar_harakat=False, word_actualtext=
             total_lines += len(source_on_page)
             total_cids += add_character_semantics(
                 doc, page, page_no, source_on_page, fontfile,
-                scalar_harakat=scalar_harakat,word_actualtext=word_actualtext,logical_cluster_payload=logical_cluster_payload,scalar_mark_fraction=scalar_mark_fraction,line_actualtext=line_actualtext
+                scalar_harakat=scalar_harakat,word_actualtext=word_actualtext,logical_cluster_payload=logical_cluster_payload,scalar_mark_fraction=scalar_mark_fraction,line_actualtext=line_actualtext,semantic_first=semantic_first
             )
         if original.name == "daruri-reading-arabic-titles-off.pdf" and total_lines != 2583:
             raise ValueError(f"Unexpected unvowelled Arabic Reading line coverage {total_lines}/2583")
@@ -402,7 +403,8 @@ if __name__ == "__main__":
     parser.add_argument("--line-actualtext", action="store_true", help="Experiment: outside-BT marked-content source line replacement")
     parser.add_argument("--all-source-runs", action="store_true", help="Hide all original Arabic Tm runs divided by inline publisher source-note markers")
     parser.add_argument("--suppress-note-span", action="store_true", help="Research: continuous ActualText suppression across an inline footnote call")
+    parser.add_argument("--semantic-first", action="store_true", help="Research: place invisible semantic page stream before original painted glyphs")
     args = parser.parse_args()
     assert 0<=args.scalar_mark_fraction<=0.4
     assert not args.suppress_note_span or args.all_source_runs
-    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext, args.logical_cluster_payload, args.scalar_mark_fraction, args.line_actualtext, args.all_source_runs, args.suppress_note_span)
+    build(args.input, args.map, args.output, args.scalar_harakat, args.word_actualtext, args.logical_cluster_payload, args.scalar_mark_fraction, args.line_actualtext, args.all_source_runs, args.suppress_note_span, args.semantic_first)
