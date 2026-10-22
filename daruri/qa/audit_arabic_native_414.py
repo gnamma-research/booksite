@@ -63,6 +63,7 @@ def inspect_pdf(path, name, vowelled, sections):
                         'logical': fold_ar(page.get_text('text', sort=False)),
                         'geometric': fold_ar(page.get_text('text', sort=True)),
                         'textpage': page.get_textpage(),
+                        'page': page,
                     }
             logical = ''.join(page_cache[p]['logical'] for p in pages)
             geometric = ''.join(page_cache[p]['geometric'] for p in pages)
@@ -76,7 +77,7 @@ def inspect_pdf(path, name, vowelled, sections):
                 logical_hits = sum(fold_ar(q) in logical for q in probes)
                 geometric_hits = sum(fold_ar(q) in geometric for q in probes)
                 native_hits = sum(any(
-                    pdf[p].search_for(q, textpage=page_cache[p]['textpage'])
+                    page_cache[p]['page'].search_for(q, textpage=page_cache[p]['textpage'])
                     for p in pages) for q in probes)
                 stats['source_sort_false_any'] += logical_hits > 0
                 stats['source_sort_true_any'] += geometric_hits > 0
