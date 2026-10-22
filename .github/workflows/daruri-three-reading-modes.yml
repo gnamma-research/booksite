@@ -1,0 +1,47 @@
+name: Daruri three reading modes and dock QA
+on:
+  push:
+    branches: [master, feature/daruri-three-reading-modes-20261022]
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/reading-mode-controls.css'
+      - 'daruri/reading-desk.js'
+      - 'daruri/qa/verify-three-reading-modes.cjs'
+      - 'daruri/qa/verify-focus-modes.js'
+      - '.github/workflows/daruri-three-reading-modes.yml'
+  pull_request:
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/reading-mode-controls.css'
+      - 'daruri/reading-desk.js'
+      - 'daruri/qa/verify-three-reading-modes.cjs'
+      - '.github/workflows/daruri-three-reading-modes.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  focus-and-dock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Source and preservation checks
+        run: |
+          node --check daruri/reading-mode-controls.js
+          node --check daruri/reading-desk.js
+          node daruri/qa/verify-focus-modes.js
+          node daruri/qa/verify-reader-structure.js
+          node daruri/qa/verify-reading-desk-redesign.js
+      - name: Install browser smoke test
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Test mobile Chromium and WebKit reader
+        run: node daruri/qa/verify-three-reading-modes.cjs
