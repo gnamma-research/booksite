@@ -24,8 +24,8 @@
    const hash=await globalThis.crypto.subtle.digest("SHA-256",data);
    return [...new Uint8Array(hash)].map(x=>x.toString(16).padStart(2,'0')).join('');
  }
- function assertConfig(row,base,packet,packetMap,baseMap){
-  if(!row||!base||!packet||!packetMap||!baseMap)fail("missing verified PDF profile");
+ function assertConfig(row,base,packet,packetMap,baseMap,profileMap){
+  if(!row||!base||!packet||!packetMap||!baseMap||!profileMap)fail("missing verified PDF profile");
   if(!Array.isArray(row.apparatus)||!row.apparatus.length||
      row.apparatus.some(s=>!ORDER.includes(s)))fail("invalid apparatus selection");
   const expected=ORDER.filter(x=>row.apparatus.includes(x));
@@ -40,6 +40,13 @@
     fail("source word map belongs to another PDF revision");
   if(packetMap.sha256!==packet.sha256||packetMap.pages!==packet.pages)
     fail("packet metadata does not match its declared PDF");
+  if(profileMap.profile!==row.file||
+     profileMap.approved_sha256!==row.sha256||
+     profileMap.base_sha256!==base.sha256||
+     profileMap.packet_sha256!==packet.sha256||
+     profileMap.source_base!==row.source_base||
+     profileMap.components.join('-')!==row.apparatus.join('-'))
+    fail("approved link topology refers to another edition");
   if(baseMap.section_count!==258||Object.keys(baseMap.anchors||{}).filter(x=>/^section-\d+$/.test(x)).length!==258)
     fail("section map lacks original source destinations");
  }
@@ -104,9 +111,16 @@
   outline.set(get("Count"),PDFNumber.of(count));
  }
  async function assemble(opts){
-  const {lib,baseBytes,packetBytes,baseManifestRecord,packetManifestRecord,packetMap,baseMap,profile}=opts||{};
+  const {lib,baseBytes,packetBytes,baseManifestRecord,packetManifestRecord,packetMap,baseMap,profile,profileMap,profileMapRaw,profileMapRecord}=opts||{};
   if(!lib?.PDFDocument||!lib?.PDFName||!lib?.PDFNull)fail("missing trusted local pdf-lib");
-  assertConfig(profile,baseManifestRecord,packetManifestRecord,packetMap,baseMap);
+  assertConfig(profile,baseManifestRecord,packetManifestRecord,packetMap,baseMap,profileMap);
+  if(!profileMapRaw||!profileMapRecord||profileMapRecord.profile!==profile.file)
+    fail("no SHA-bound published edition hyperlink manifest");
+  if(await digest(profileMapRaw)!==profileMapRecord.map_sha256)
+    fail("edition link map file did not match its SHA-256 manifest");
+  if(profileMapRecord.profile_sha256!==profile.sha256||
+     profileMapRecord.packet_sha256!==packetManifestRecord.sha256)
+    fail("edition link-map manifest does not match these approved PDFs");
   const [baseSha,packetSha]=await Promise.all([digest(baseBytes),digest(packetBytes)]);
   if(baseSha!==baseManifestRecord.sha256)fail("original base PDF SHA-256 mismatch");
   if(packetSha!==packetManifestRecord.sha256)fail("apparatus packet SHA-256 mismatch");
@@ -141,7 +155,7 @@
       x:rootPoint.to?.[0]||0,y:rootPoint.to?.[1]||70};
   }
   // Derive all hyperlinks from packet text without inventing missing source maps.
-  for(const row of packetMap.links_to_source||[]){
+  for(const row of profileMap.links_to_source||[]){
    if(!Number.isInteger(row.section)||!Number.isInteger(row.page)||row.page<0
       ||row.page>=packetDoc.getPageCount())fail("bad appendix source locator");
    const a=mapAnchor(row.section),target=result.getPage(a.page-1);
@@ -149,7 +163,7 @@
    annotation(result,page,row.rect,gotoAction(result,target,[a.x,a.y]),page.getHeight());
    stats.sourceLinks++;
   }
-  for(const row of packetMap.packet_links||[]){
+  for(const row of profileMap.packet_links||[]){
    const page=result.getPage(baseCount+row.page);
    if(row.kind==="goto"){
     if(!Number.isInteger(row.target)||row.target<0||row.target>=packetDoc.getPageCount())
@@ -179,9 +193,12 @@
     anchors:{...baseMap.anchors,
       ...Object.fromEntries(Object.entries(entry).map(([k,v])=>[k,v]))},
     segments:baseMap.segments||{},precision:baseMap.precision||"section",
+    entry_positions:profileMap.entry_positions||{},
     provenance:{base_sha256:baseSha,packet_sha256:packetSha,
       base_map_sha256:opts.baseMapSha||null,
-      packet_map_sha256:opts.packetMapSha||null}
+      packet_map_sha256:opts.packetMapSha||null,
+      approved_profile_sha256:profile.sha256,
+      verified_profile_links_sha256:profileMapRecord.map_sha256}
   };
   return {bytes:output,sha256:outputSha,sections:258,pages:result.getPageCount(),
     basePages:baseCount,packetPages:packetDoc.getPageCount(),
