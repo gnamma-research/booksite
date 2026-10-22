@@ -54,7 +54,9 @@ function create({state,rd}){
   const toolbar=document.getElementById('readingControls');
   const top=Math.max(0,toolbar?.getBoundingClientRect().bottom||0);
   const dockTop=dock.getBoundingClientRect().top;
-  const y=Math.round(Math.max(top+35,Math.min(dockTop-38,top+(dockTop-top)*.42)));
+  // Use the text nearest the top of the reading viewport, not its midpoint. A
+  // midpoint probe can jump into an adjacent paragraph on mobile Safari.
+  const y=Math.round(Math.max(top+35,Math.min(dockTop-38,top+(dockTop-top)*.22)));
   const x=Math.round(window.innerWidth/2);
   let grid=document.elementFromPoint(x,y)?.closest?.('#reader .passage-grid')||null;
   if(!grid){
