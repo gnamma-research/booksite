@@ -13,3 +13,8 @@
 #readerDock .gn-dock-private-status>.gn-dock-mark>.gn-bm-ribbon{width:15px;height:15px}
 #readerSaveAction[aria-pressed="true"] .gn-bm-ribbon{color:var(--accent,currentColor)}
 .gn-rd-dictionary-actions [hidden]{display:none!important}
+
+/* Personal notes are a page and pencil throughout the site. */
+.gn-personal-note-icon{display:inline-block;width:20px;height:20px;vertical-align:middle;flex:none;color:inherit}
+.gn-rd-attach-actions button[data-rd="attach-note"],.gn-rd-dictionary-actions button[data-rd-dictionary="note"]{display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.gn-rd-attach-actions button[data-rd="attach-note"] .gn-personal-note-icon,.gn-rd-dictionary-actions button[data-rd-dictionary="note"] .gn-personal-note-icon{width:17px;height:17px}
