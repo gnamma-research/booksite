@@ -1,0 +1,95 @@
+name: Daruri Study and Scholarly Reference Precise Arabic Maps
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/daruri-arabic-pango-pilot-20261022]
+    paths:
+      - '.github/workflows/daruri-study-reference-wordmaps.yml'
+      - 'daruri/qa/probe_study_reference_pango.py'
+      - 'daruri/build/publish_study_reference_pango.py'
+permissions:
+  contents: write
+concurrency:
+  group: daruri-study-reference-wordmaps
+  cancel-in-progress: false
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Install matching Arabic typesetting and PDF tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install weasyprint==68.0 PyMuPDF==1.26.7
+      - name: Verify exactly matching Study/Reference text and page pixels and emit maps
+        run: python daruri/qa/probe_study_reference_pango.py --edition all --emit-wordmaps
+      - name: Publish only verified Study and Reference Arabic word coordinates
+        run: python daruri/build/publish_study_reference_pango.py
+      - name: Check all 12 mapped A4 PDFs and preserve all apparatus editions
+        run: |
+          node daruri/qa/verify-published-selector.cjs
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          root=Path('daruri')
+          m=json.loads((root/'editions/maps/manifest.json').read_text())
+          study=[r for r in m['files'] if r['file'].startswith('study/')]
+          assert len(study)==2
+          for row in study:
+            assert row['word_map_coverage']['vocalized']=={'matched':414,'eligible':414}
+            assert row['word_map_present'] and row['mapped_segments']>=414
+            data=(root/'editions'/row['map_file']).read_bytes()
+            assert hashlib.sha256(data).hexdigest()==row['map_sha256']
+          canon=json.loads((root/'personal-source-pango-maps/manifest.json').read_text())
+          assert len(canon['files'])==1
+          ref=canon['files'][0]
+          assert ref['matched_segments']==414 and ref['pixel_identical_pages']==243
+          assert hashlib.sha256((root/'personal-source-pango-maps'/ref['map_file']).read_bytes()).hexdigest()==ref['map_sha256']
+          print('PASS 2 Study PDFs and one Reference Pango sidecar, all 414 Arabic source segments')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daruri-study-reference-verified-pango-maps
+          path: |
+            daruri/editions/maps/
+            daruri/personal-source-pango-maps/
+            daruri/qa/study-reference-pango-report/
+          retention-days: 30
+      - name: Publish only certified maps, no PDF replacements
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          cp -a daruri/editions/maps "$RUNNER_TEMP/study-maps"
+          cp -a daruri/personal-source-pango-maps "$RUNNER_TEMP/reference-maps"
+          git fetch --quiet origin "$GITHUB_REF_NAME"
+          latest="$(git rev-parse FETCH_HEAD)"
+          if [[ "$latest" != "$GITHUB_SHA" ]] &&
+             ! git diff --quiet "$GITHUB_SHA" "$latest" -- \
+                daruri/editions/manifest.json daruri/editions/study \
+                daruri/daruri.pdf daruri/build/build_editions.py \
+                daruri/edition-r3-20261020.js daruri/editions/maps \
+                daruri/build/publish_study_reference_pango.py \
+                daruri/qa/probe_study_reference_pango.py; then
+            echo "::error::A certified input or map changed during generation"
+            exit 1
+          fi
+          git reset --hard "$latest"
+          cp -a "$RUNNER_TEMP/study-maps/." daruri/editions/maps/
+          mkdir -p daruri/personal-source-pango-maps
+          cp -a "$RUNNER_TEMP/reference-maps/." daruri/personal-source-pango-maps/
+          git add -A daruri/editions/maps daruri/personal-source-pango-maps
+          if git diff --cached --quiet; then
+            echo "Verified Study/Reference maps already published"
+            exit 0
+          fi
+          git commit -m 'Publish verified Study and Reference Arabic Pango word maps [skip ci]'
+          git push origin "HEAD:$GITHUB_REF_NAME"
