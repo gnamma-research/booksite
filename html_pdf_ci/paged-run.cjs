@@ -9,7 +9,7 @@ const fs=require('node:fs'),path=require('node:path');
   await page.addInitScript({content:'window.PagedConfig={auto:false};'});
   await page.goto('file://'+fixture,{waitUntil:'domcontentloaded',timeout:120000});
   await page.evaluate(()=>document.fonts.ready);
-  await page.addScriptTag({path:require.resolve('pagedjs/dist/paged.polyfill.js')});
+  await page.addScriptTag({path:path.join(process.cwd(),'node_modules/pagedjs/dist/paged.polyfill.js')});
   const t=Date.now();
   await page.evaluate(async()=>await window.PagedPolyfill.preview());
   console.log('PAGED_PAGINATION_SECONDS='+((Date.now()-t)/1000).toFixed(2));
