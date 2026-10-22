@@ -174,10 +174,11 @@
       if(!res.ok)throw Error('Locally hosted Unicode font unavailable: '+name);
       return res.arrayBuffer();
     }));
-    // Testing unsubsetted fonts for correct Arabic glyph-to-Unicode mapping;
-    // visible appendix type is separately rendered on the canvas.
     const [latin,arabic]=await Promise.all(bytes.map(b=>pdf.embedFont(b,{subset:true})));
-    return {latin,arabic,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
+    // Browser-local Unicode overlay with a real embedded CIDFontType2.
+    // Explicit CIDToGIDMap prevents fontkit's Arabic ligature reverse-cmap errors.
+    const exactArabic=exactArabicSearchFont(pdf,kit,new Uint8Array(bytes[1]));
+    return {latin,arabic,exactArabic,latinSet:new Set(latin.getCharacterSet()),arabicSet:new Set(arabic.getCharacterSet()),missing:new Set()};
   }
   function fontRuns(text,fonts,size){
     const runs=[];let last=null;
@@ -201,45 +202,82 @@
     return runs.map(x=>({...x,width:x.font.widthOfTextAtSize(x.text,size)}));
   }
 
-  // Exact, invisible Arabic searchable text; visible type is canvas-rendered.
-  // PDF Type3 /ToUnicode maps each source codepoint without fontkit ligatures.
+  // The visible appendix is drawn by Canvas. For searchable Arabic we embed
+  // the real Noto Naskh TrueType font as a CIDFontType2, using a unique CID per
+  // Unicode scalar and an explicit CIDToGIDMap and ToUnicode CMap.
+  // The font dictionary is shared across all appendix pages.
   const ARABIC_SEARCH_SPANS=/[\u0600-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]+/gu;
   const ARABIC_SEARCH_CHAR=/[\u0600-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/u;
-  function exactArabicSearchFont(pdf,lines){
-    const {PDFName}=window.PDFLib;
-    const chars=[...new Set(lines.flatMap(row=>Array.from(String(row.text||'')).filter(ch=>ARABIC_SEARCH_CHAR.test(ch))))];
-    if(!chars.length)return null;
-    if(chars.length>250)throw Error('The personal appendix has too many distinct Arabic search codepoints on one page.');
-    const noInk=pdf.context.register(pdf.context.flateStream(new TextEncoder().encode('0 0 d0\n')));
-    const glyphs={},differences=[1],map=new Map();
-    chars.forEach((ch,index)=>{
-      const code=index+1,name='gn'+code;map.set(ch,code);
-      glyphs[name]=noInk;differences.push(PDFName.of(name));
+  const ARABIC_SEARCH_PHRASES=/[\u0600-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF][\u0600-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF\s.,،؛؟!—–-]*/gu;
+  function exactArabicSearchFont(pdf,kit,bytes){
+    const {PDFName,PDFString}=window.PDFLib;
+    if(typeof kit.create!=='function')throw Error('The locally hosted Unicode font engine cannot build the Arabic search map.');
+    const font=kit.create(bytes);
+    const base=[32,33,44,45,46,0x2014,0x2013];
+    const scalars=[...new Set([...base,...font.characterSet.filter(cp=>ARABIC_SEARCH_CHAR.test(String.fromCodePoint(cp)))] )]
+      .filter(cp=>font.glyphForCodePoint(cp)?.id>0);
+    if(!scalars.length||scalars.length>=65535)throw Error('Invalid embedded Arabic font character map.');
+    const cids=new Map(),gid=new Uint8Array((scalars.length+1)*2);
+    scalars.forEach((cp,index)=>{
+      const code=index+1,gl=font.glyphForCodePoint(cp);
+      cids.set(String.fromCodePoint(cp),code);
+      gid[code*2]=(gl.id>>8)&255;gid[code*2+1]=gl.id&255;
     });
-    const cmap='/CIDInit /ProcSet findresource begin\n12 dict begin\nbegincmap\n'+
-      '/CIDSystemInfo << /Registry (Gnamma) /Ordering (ExactArabic) /Supplement 0 >> def\n'+
-      '/CMapName /GnammaExactArabic def\n/CMapType 2 def\n'+
-      '1 begincodespacerange\n<00> <FF>\nendcodespacerange\n'+
-      chars.length+' beginbfchar\n'+
-      chars.map((ch,i)=>'<'+(i+1).toString(16).padStart(2,'0')+'> <'+
-        ch.codePointAt(0).toString(16).toUpperCase().padStart(4,'0')+'>').join('\n')+
-      '\nendbfchar\nendcmap\nCMapName currentdict /CMap defineresource pop\nend\nend\n';
-    const toUnicode=pdf.context.register(pdf.context.flateStream(new TextEncoder().encode(cmap)));
-    const face=pdf.context.obj({Type:PDFName.of('Font'),Subtype:PDFName.of('Type3'),
-      Name:PDFName.of('GNExactUnicode'),FontBBox:[0,0,1000,1000],
-      FontMatrix:[.001,0,0,.001,0,0],CharProcs:pdf.context.obj(glyphs),
-      Encoding:pdf.context.obj({Type:PDFName.of('Encoding'),Differences:differences}),
-      FirstChar:1,LastChar:chars.length,Widths:chars.map(()=>500),
-      Resources:pdf.context.obj({}),ToUnicode:toUnicode});
-    return {ref:pdf.context.register(face),map};
+    const rawFont=pdf.context.register(pdf.context.flateStream(bytes));
+    const descriptor=pdf.context.register(pdf.context.obj({
+      Type:PDFName.of('FontDescriptor'),FontName:PDFName.of('GnammaExactArabicCID'),
+      Flags:4,FontBBox:[-400,-400,1500,1500],ItalicAngle:0,Ascent:1069,
+      Descent:-634,CapHeight:1000,StemV:80,FontFile2:rawFont
+    }));
+    const cidToGid=pdf.context.register(pdf.context.flateStream(gid));
+    const cidDesc=pdf.context.register(pdf.context.obj({
+      Type:PDFName.of('Font'),Subtype:PDFName.of('CIDFontType2'),
+      BaseFont:PDFName.of('GnammaExactArabicCID'),
+      CIDSystemInfo:pdf.context.obj({Registry:PDFString.of('Adobe'),Ordering:PDFString.of('Identity'),Supplement:0}),
+      FontDescriptor:descriptor,DW:500,CIDToGIDMap:cidToGid
+    }));
+    const cmapLines=['/CIDInit /ProcSet findresource begin','12 dict begin','begincmap',
+      '/CIDSystemInfo << /Registry (Gnamma) /Ordering (ExactUnicode) /Supplement 0 >> def',
+      '/CMapName /GnammaExactArabicCIDMap def','/CMapType 2 def',
+      '1 begincodespacerange','<0000> <FFFF>','endcodespacerange'];
+    // PDF CMap operators should have at most 100 entries per beginbfchar block.
+    for(let offset=0;offset<scalars.length;offset+=100){
+      const group=scalars.slice(offset,offset+100);
+      cmapLines.push(group.length+' beginbfchar');
+      group.forEach((cp,i)=>{
+        const hex=(offset+i+1).toString(16).toUpperCase().padStart(4,'0');
+        cmapLines.push('<'+hex+'> <'+cp.toString(16).toUpperCase().padStart(4,'0')+'>');
+      });
+      cmapLines.push('endbfchar');
+    }
+    cmapLines.push('endcmap','CMapName currentdict /CMap defineresource pop','end','end');
+    const toUnicode=pdf.context.register(pdf.context.flateStream(new TextEncoder().encode(cmapLines.join('\n')+'\n')));
+    const cidFont=pdf.context.register(pdf.context.obj({
+      Type:PDFName.of('Font'),Subtype:PDFName.of('Type0'),
+      BaseFont:PDFName.of('GnammaExactArabicCID'),Encoding:PDFName.of('Identity-H'),
+      DescendantFonts:[cidDesc],ToUnicode:toUnicode
+    }));
+    return {ref:cidFont,map:cids};
+  }
+  function reverseArabicGraphemes(raw){
+    // Preserve Qurʾānic vowel marks with their base letters when reversing the
+    // glyph stream for PDFKit's native right-to-left text reconstruction.
+    const clusters=[];
+    for(const ch of Array.from(raw)){
+      if(/\p{M}/u.test(ch)&&clusters.length)clusters[clusters.length-1]+=ch;
+      else clusters.push(ch);
+    }
+    return clusters.reverse().join('');
   }
   function drawExactArabicSearch(page,font,raw,x,y,size){
     if(!font||!raw)return;
     const {PDFName,PDFNumber,PDFOperator,PDFHexString}=window.PDFLib;
-    const hex=Array.from(raw).reverse().map(ch=>{
+    const reversed=reverseArabicGraphemes(raw);
+    const hex=Array.from(reversed).map(ch=>{
       const code=font.map.get(ch);
-      if(!code)throw Error('Exact Arabic Unicode font is missing a letter.');
-      return code.toString(16).padStart(2,'0');
+      if(!code)throw Error('The embedded Arabic Unicode font cannot represent U+'+
+        ch.codePointAt(0).toString(16).toUpperCase()+'.');
+      return code.toString(16).padStart(4,'0');
     }).join('');
     page.pushOperators(
       PDFOperator.of('BT'),
@@ -253,28 +291,28 @@
 
   function textOverlay(pdf,page,searchLines,sheet,fonts){
     let n=0;const W=sheet.W,H=sheet.H,pad=sheet.padding;
-    const exactFont=exactArabicSearchFont(pdf,searchLines);
+    const exactFont=fonts.exactArabic;
     if(exactFont)page.node.setFontDictionary(window.PDFLib.PDFName.of('GNExactUnicode'),exactFont.ref);
     for(const line of searchLines){
       const s=String(line.text||'');if(!s.trim())continue;
       const size=Math.max(8,Math.min(18,(line.size||26)/2));
-      // Arabic runs use the independent Type3 /ToUnicode text layer below;
+      // Arabic runs use the independent embedded CIDFontType2 layer below;
       // fontkit shaping corrupts their searchable character mapping.
-      const runs=fontRuns(s.replace(ARABIC_SEARCH_SPANS,' '),fonts,size);
+      const runs=fontRuns(s.replace(ARABIC_SEARCH_PHRASES,' '),fonts,size);
       // Arabic-only lines may legitimately have no Latin glyph runs.
       const width=runs.reduce((a,r)=>a+r.width,0);
       let x=(line.rtl?(W-pad)/2-width:(pad+(line.indent||0))/2);
       const y=(H-line.y)/2;
       // The Latin layer has stable ToUnicode mapping. The separately
-      // constructed Type3 font handles exact Arabic characters.
+      // constructed CID font handles exact Arabic characters.
       for(const run of runs){
         if(run.text){page.drawText(run.text,{x,y,size,font:run.font,opacity:0});n++;}
         x+=run.width;
       }
       if(exactFont){
-        const spans=[...s.matchAll(ARABIC_SEARCH_SPANS)];
+        const spans=[...s.matchAll(ARABIC_SEARCH_PHRASES)];
         for(let i=0;i<spans.length;i++){
-          drawExactArabicSearch(page,exactFont,spans[i][0],12+i*13,y-38,size);
+          drawExactArabicSearch(page,exactFont,spans[i][0].trim(),12+i*13,y-38,size);
           n++;
         }
       }
