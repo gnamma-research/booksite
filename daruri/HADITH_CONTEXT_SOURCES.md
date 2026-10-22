@@ -24,15 +24,19 @@ Metadata fields are independent. Display the collection and report ID for every 
 
 Sahih Muslim numbers with suffixes (`360a`, `977a`, etc.) must **not** be reduced to integers or looked up by the unrelated global sequence in fawazahmed0/hadith-api. Arabic for those reports has been matched to **the literal printed reference string** in the manuscript-like book JSON; `muslim:1297` was checked against the original source entry separately.
 
-## English and reuse
+## Complete English renderings and reuse
 
-**All 47 references now have an English companion**, of two explicitly distinct kinds: an independently prepared English rendering of the substantive report where available, or a shorter **English editorial précis** where a complete translation has not been independently prepared. Neither the isnād nor a collector’s entire technical discussion is claimed to be fully translated by a précis. Every report links to its complete published Arabic/English reference at Sunnah.com, avoiding redistribution of potentially copyrighted modern English texts. The complete original Arabic—including isnād—is stored locally. The reader labels précis as such and never implies that the synopsis is a verbatim full report.
+The user-facing **unexpanded note stays concise**, with the existing scholarly source citation and a single chevron; this is the same disclosure principle as the Qurʾān context card. A user who expands it sees **the full Arabic report (including the isnād), and a complete newly written English translation of that Arabic record**, including transmitted dialogue, narrator qualifications, and any collector’s commentary that appears in the embedded record. The long al-Ḥudaybiyya report (`bukhari:2731`), al-Tirmidhī’s marriage transmission comparison (`tirmidhi:1102`), and the lengthy chain/fiqh notes are translated rather than summarised. The English text is loaded lazily only on expansion; all 47 primary report identifiers have their own English transmission.
 
-Arabic source witness:
-- [fawazahmed0/hadith-api](https://github.com/fawazahmed0/hadith-api), pinned branch/version `1`; its repository uses the Unlicense. The actual individual Arabic complete text is stored in `hadith-context-arabic-*.js`.
-- [CheeseWithSauce/HadithsJSONFormat](https://github.com/CheeseWithSauce/HadithsJSONFormat), its publicly available hadith collection JSON under an MIT project licence. The original, medieval Arabic text is public domain.
-- [Sunnah.com](https://sunnah.com) links supply the public traceable numbering, separate chapter headings, collector's references, and the published translations. **Do not redistribute a complete modern third-party English translation merely because a GitHub scraper advertises an open-source licence.**
-- [LK-Hadith-Corpus](https://github.com/ShathaTm/LK-Hadith-Corpus), Altammami, Atwell & Alsalka (2019), *The Arabic–English Parallel Corpus of Authentic Hadith*, cited for Bukhārī chapter segmentation and narrator indexing, subject to direct source checks.
+These translations were newly composed for this project using AI assistance and reviewed for passage-level coverage, **not copied from the modern translated editions of Sunnah.com or open-source mirrors of their copyrighted texts**. They have **not undergone independent expert philological certification**. The UI labels them as complete editorial translations and retains the precise original Arabic with a direct reference link for checking. Do not describe a newly prepared translation as a critical edition, authenticated report, or authorised translation.
+
+The original source-note English summary is not replaced and is *not* repeated as a substitute for the translation. If a local English shard is missing/corrupt, the popup explicitly says that full translation is unavailable and links to the primary collection rather than pretending that the shorter English synopsis is a full translation.
+
+Source data provenance:
+- [fawazahmed0/hadith-api](https://github.com/fawazahmed0/hadith-api), pinned version `1`; the repository uses the Unlicense. Primary Arabic text is copied into source-bound local assets.
+- [CheeseWithSauce/HadithsJSONFormat](https://github.com/CheeseWithSauce/HadithsJSONFormat), the source of eight specific Muslim letter-suffixed Arabic records, MIT-labelled repository. The remaining Muslim 1297 Arabic is separately sourced and cited.
+- [Sunnah.com](https://sunnah.com) provides the stable report references and direct links, preserving letter suffixes and variant attributions.
+- [LK-Hadith-Corpus](https://github.com/ShathaTm/LK-Hadith-Corpus), Altammami, Atwell & Alsalka (2019), for Bukhārī chapter segmentation and narrator indexing, independently checked where included.
 
 ## Fiqh / uṣūl cross-references
 
@@ -45,6 +49,6 @@ Ibn Ḥajar's *Bulūgh al-Marām min Adillat al-Aḥkām* is useful for quickly 
 - 47/47 local full Arabic report assets valid with explicit provenance; chain retained and Islamic source/grade names not mixed.
 - Matching Hadith context in both the inline source modal and end-of-section Notes, without overwriting Qurʾān context.
 - Offline ZIP and service worker assets present, local `file://` loading (not fetch JSON), themed dark/light/Andalusian layout, keyboard and phone collapse/expand state.
-- Original English **full translation coverage remains incomplete**, as declared above; no assumption of rights for third-party translations. Future editors can add independently translated/checked text under `englishOriginal`, with translator/verification credit.
+- **47/47 complete original English transmissions** in ten offline shards (`hadith-context-english-*.js`), with source-specific isnād, event and collector commentary coverage. Human scholarly review remains a separate quality gate, not a condition silently represented as completed.
 
-No existing Qurʾānic notes, edition PDFs, or source data policies may be rewritten to enable this optional web-only feature.
+No existing Qurʾānic notes, edition PDFs, or source data policies have been rewritten to enable this optional web-only feature. Any future print use of these newly composed English renderings requires separate editorial review.
