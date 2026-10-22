@@ -309,3 +309,37 @@
   .gn-editions .gn-ed-vowel-switch{margin-left:7px}
   .gn-editions .gn-ed-vowel-switch::before{left:-9px}
 }
+
+/* Published-PDF AR/EN capsule and vowelled madd (2026-10-22) */
+.gn-editions .gn-ed-ready-switches .gn-ed-language-pair{
+  display:inline-flex;align-items:stretch;gap:0;flex:0 0 auto;
+  border:1px solid var(--border);border-radius:999px;overflow:hidden;
+  background:var(--paper);
+}
+.gn-editions .gn-ed-language-pair > button.gn-ed-lang-toggle{
+  display:inline-flex;align-items:center;justify-content:center;position:relative;
+  margin:0;width:58px;min-width:48px;min-height:48px;height:48px;
+  padding:7px 9px!important;border:0!important;border-radius:0!important;
+  background:var(--paper);color:var(--text-soft);box-shadow:none!important;
+  font:650 14px/1 var(--sans,system-ui,sans-serif);
+}
+.gn-editions .gn-ed-language-pair > button.gn-ed-lang-toggle[aria-pressed="true"]{
+  background:var(--accent);color:var(--surface);
+}
+.gn-editions .gn-ed-language-pair > button.gn-ed-lang-toggle + button.gn-ed-lang-toggle{
+  border-left:1px solid var(--border)!important;
+}
+.gn-editions .gn-ed-language-pair > button.gn-ed-lang-toggle:focus-visible{
+  outline:2px solid var(--text);outline-offset:-3px;z-index:1;
+}
+.gn-editions .gn-ed-language-pair .gn-ed-language-label{
+  position:relative;display:inline-block;white-space:nowrap;overflow:visible;
+}
+.gn-editions .gn-ed-language-pair [data-ep-ready-toggle="ar"][data-ep-arabic-state="vowelled"] .gn-ed-language-label::before{
+  content:"";position:absolute;pointer-events:none;display:block;
+  width:84%;height:3px;top:0;left:8%;
+  border-top:2px solid currentColor;border-radius:50% 50% 0 0;
+}
+@media(max-width:480px){
+  .gn-editions .gn-ed-language-pair > button.gn-ed-lang-toggle{width:53px;min-width:46px}
+}
