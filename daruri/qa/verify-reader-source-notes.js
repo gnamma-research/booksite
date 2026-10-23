@@ -417,4 +417,4 @@ function assertOfflineAsset() {
   dom.window.close();
   assertOfflineAsset();
   console.log('PASS: all 259 section ownership/count checks; ' + noteCards + ' Notes cards; 542 original notes, 50 Quran references (including two qualified possible §1 parallels), 33 hadith notes and three withheld allusions; all 12 application source notes scoped only to their primary sections and popups; exact bodies/labelled links and URL-less HAD-R189 preserved; source groups first; no duplicate DOM/source IDs; Tab/Shift-Tab wrap, close/Escape focus, route, scroll and preferences retained; source data included in offline ZIP and service worker.');
-})().catch(error => {console.error(error); process.exitCode = 1;});
+})().then(() => process.exit(0), error => { console.error(error); process.exit(1); });

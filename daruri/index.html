@@ -3839,7 +3839,7 @@ body:not(.reading-active) .reading-return-bar{
 </div>
 </div>
 </div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=20261021-section1-qparallels1"></script><script defer src="download-bundle.js?v=20261023-download-hub1"></script>
-<script src="source-reference-data.js?v=20261023-hmarkers2"></script>
+<script src="source-reference-data.js?v=20261023-hadithux3"></script>
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
 <script src="study-guide-data.js?v=20261021-study-path1"></script>
@@ -5006,8 +5006,8 @@ function jumpToNote(id,opener=document.activeElement) {
   // An inline Qurʾānic note must use exactly the same card as the section-end
   // Notes window, including verified ﴿…﴾ excerpts, qualification and source links.
   // Do not change the legacy detail window for other editorial note types.
-  if(note.source_type==='quran'){
-    gnShowLayer('Qurʾānic note · '+sectionRef(note.n),
+  if(note.source_type==='quran'||note.source_type==='hadith'){
+    gnShowLayer((note.source_type==='quran'?'Qurʾānic':'Hadith')+' note · '+sectionRef(note.n),
       '<article class="gn-layer-note gn-unified-notes">'+gnNotesCardHTML([note])+'</article>',
       'notes',opener||document.querySelector('[data-note-target="'+CSS.escape(id)+'"]'));
     return;
