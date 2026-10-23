@@ -88,7 +88,7 @@ def main():
                     hits=p.search_for(phrase)
                     if any((h&box).get_area()>0 for h in hits):
                         counts['opening_search_correctly_located']+=1
-        failures=[]
+    failures=[]
     for id,text in original.items():
         pre=' '.join(asserted[id])
         got=' '.join(extracted[id])
