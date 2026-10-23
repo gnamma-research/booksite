@@ -213,7 +213,7 @@ function create({state,rd}){
   if(!panel)return;
   const rect=dock.getBoundingClientRect();
   const near=trigger?.isConnected?trigger.getBoundingClientRect():rect;
-  const width=Math.min(410,window.innerWidth-20);
+  const width=Math.min(350,Math.max(200,window.innerWidth-24));
   const middle=window.innerWidth<=760?window.innerWidth/2:
    Math.max(width/2+10,Math.min(window.innerWidth-width/2-10,near.left+near.width/2));
   panel.style.width=width+'px';panel.style.left=middle+'px';
@@ -226,10 +226,12 @@ function create({state,rd}){
   if(!items.length)return;
   const panel=document.createElement('section');
   panel.id='gn-dock-saved-sheet';panel.className='gn-dock-saved-sheet';
+   if(items.length===1)panel.classList.add('gn-dock-single-item');
   panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');
   panel.setAttribute('aria-label','Your saved items in section '+section);
   const head=document.createElement('header');head.className='gn-dock-sheet-heading';
-  const title=document.createElement('h3');title.textContent='Your saved items in §'+section;
+  const title=document.createElement('h3');title.textContent=(categoryId==='all'?'Saved in §'+section:
+    (categories.find(c=>c.id===categoryId)?.label||'Saved items')+' · §'+section);
   const dismiss=document.createElement('button');dismiss.type='button';
   dismiss.className='gn-dock-sheet-close';dismiss.textContent='×';
   dismiss.setAttribute('aria-label','Close saved references');
@@ -390,9 +392,9 @@ function create({state,rd}){
    caret.textContent='⌃';caret.setAttribute('aria-hidden','true');
    button.append(savedPrefix(),symbols,caret);
    button.addEventListener('click',()=>{
-    const uniqueItem=total===1?[...groups.values()].flat()[0]:null;
-    if(uniqueItem)openSaved(uniqueItem,place.section);
-    else openSheet('all',button,place.section);
+    // Even one item opens the actual saved item sheet: jumping to a
+    // highlight already on screen previously appeared to do nothing.
+    openSheet('all',button,place.section);
    });
    status.append(button);
   }else{
@@ -408,7 +410,7 @@ function create({state,rd}){
     button.setAttribute('aria-label',category.label+': '+items.length+' in section '+place.section+
      (items.length===1?'. Open saved item':'. Choose saved item'));
     button.title=category.label+': '+items.length+' in §'+place.section;
-    button.addEventListener('click',()=>items.length===1?openSaved(items[0],place.section):openSheet(category.id,button,place.section));
+    button.addEventListener('click',()=>openSheet(category.id,button,place.section));
     status.append(button);
    }
   }
