@@ -89,10 +89,16 @@ function signedArabicFont(pdf,kit,fontBytes,phrases){
   const codes=new Map(),gid=new Uint8Array((units.length+1)*2);
   for(let i=0;i<units.length;i++){
     const cp=units[i].codePointAt(0),glyph=parsed.glyphForCodePoint(cp);
-    if(!glyph?.id||cp>0xffff)throw Error('Missing original Arabic scalar U+'+cp.toString(16));
+    // A phrase is invisible in this semantic font. Its CIDToGIDMap may safely
+    // point to the existing alef glyph when the first original character is
+    // outside Naskh (notably U+27E8). The independent ToUnicode association
+    // still records the exact entire original phrase.
+    const semanticGlyph=glyph?.id?glyph:parsed.glyphForCodePoint(0x0627);
+    if(!semanticGlyph?.id||cp>0xffff)
+      throw Error('Cannot encode the original logical source at U+'+cp.toString(16));
     const cid=i+1;
     codes.set(units[i],cid);
-    gid[cid*2]=glyph.id>>8;gid[cid*2+1]=glyph.id&255;
+    gid[cid*2]=semanticGlyph.id>>8;gid[cid*2+1]=semanticGlyph.id&255;
   }
   const fileRef=pdf.context.register(pdf.context.flateStream(fontBytes));
   const descriptor=pdf.context.register(pdf.context.obj({
@@ -142,30 +148,56 @@ function signedArabicFont(pdf,kit,fontBytes,phrases){
 }
 
 function drawSourceGlyphs(page,kitFont,phrase,x,y,size){
-  // Native fontkit HarfBuzz layout preserves shaping and vowel positioning.
-  // These are genuine PDF vector path operators, NOT a raster screenshot
-  // and NOT a corrupted text-show (Tj/TJ) instruction.
+  // Paint original shaped Arabic only as PDF vector paths. The authorial
+  // Unicode is written once in an entirely separate, invisible ToUnicode CID.
+  // The canonical corpus contains exactly two unsupported punctuation marks:
+  // U+27E8 (mathematical left angle bracket) and U+27E9 (right), 12 each.
+  // Their mathematical-bracket outlines are constructed with vector strokes;
+  // neither the visible glyph nor the semantic character may be silently lost.
   const shaped=kitFont.layout(phrase,'arab',undefined,'rtl');
   const factor=size/kitFont.unitsPerEm;
-  const total=shaped.positions.reduce((s,p)=>s+p.xAdvance,0)*factor;
-  let cursor=x;
-  let nonempty=0;
+  const total=shaped.positions.reduce((sum,p)=>sum+p.xAdvance,0)*factor;
+  let cursor=x,nonempty=0;
+  const manualMathBrackets=[];
   for(let i=0;i<shaped.glyphs.length;i++){
     const glyph=shaped.glyphs[i],pos=shaped.positions[i];
-    const path=glyph.path.toSVG();
-    if(path && path.length>2){
-      page.drawSvgPath(path,{
-        x:cursor+pos.xOffset*factor,
-        y:y+pos.yOffset*factor,
-        scale:factor,
-        color:rgb(.12,.19,.18)
-      });
+    if(!glyph?.id){
+      const unicodeCandidates=Array.isArray(glyph?.codePoints)?glyph.codePoints:[];
+      const fromCluster=Number.isInteger(shaped.stringIndices?.[i])
+        ?phrase.codePointAt(shaped.stringIndices[i]):undefined;
+      const cp=unicodeCandidates.find(ch=>ch===0x27e8||ch===0x27e9)??fromCluster;
+      if(cp!==0x27e8&&cp!==0x27e9)
+        throw Error('Unresolved original visible font glyph U+'+
+          (cp??0).toString(16).toUpperCase()+' in '+phrase.slice(0,55));
+      const advance=Math.max(3.5,pos.xAdvance*factor),mid=cursor+pos.xOffset*factor+advance/2;
+      const left=mid-Math.min(advance*.38,size*.24),right=mid+Math.min(advance*.38,size*.24);
+      const top=y+size*.84,bottom=y-size*.30,half=(top+bottom)/2;
+      const points=cp===0x27e8?[
+        [{x:right,y:top},{x:left,y:half}],
+        [{x:left,y:half},{x:right,y:bottom}]
+      ]:[
+        [{x:left,y:top},{x:right,y:half}],
+        [{x:right,y:half},{x:left,y:bottom}]
+      ];
+      for(const [a,b] of points)
+        page.drawLine({start:a,end:b,thickness:Math.max(.7,size*.057),
+          color:rgb(.12,.19,.18)});
+      manualMathBrackets.push(cp);
       nonempty++;
+    }else{
+      const path=glyph.path.toSVG();
+      if(path&&path.length>2){
+        page.drawSvgPath(path,{
+          x:cursor+pos.xOffset*factor,y:y+pos.yOffset*factor,
+          scale:factor,color:rgb(.12,.19,.18)
+        });
+        nonempty++;
+      }
     }
     cursor+=pos.xAdvance*factor;
   }
-  if(nonempty===0||!(total>3))throw Error('Arabic outline painting is empty');
-  return {drawn_glyphs:nonempty,advance_pt:total};
+  if(nonempty===0||!(total>3))throw Error('Arabic outline painting produced no visible geometry');
+  return {drawn_glyphs:nonempty,advance_pt:total,manualMathBrackets};
 }
 
 function drawOnlyOriginalUnicode(page,font,phrase,x,y,size,visibleWidth){
@@ -299,6 +331,15 @@ async function generate(){
   if(recorded.length!==sourceLines.length||
      pdf.getPageCount()!==Math.ceil(sourceLines.length/12))
    throw Error('Original source line/PDF page count mismatch');
+  const mathematicalFallbackCount=recorded.reduce(
+    (sum,row)=>sum+row.manualMathBrackets.length,0);
+  const leftAngleBrackets=recorded.reduce(
+    (sum,row)=>sum+row.manualMathBrackets.filter(cp=>cp===0x27e8).length,0);
+  const rightAngleBrackets=recorded.reduce(
+    (sum,row)=>sum+row.manualMathBrackets.filter(cp=>cp===0x27e9).length,0);
+  if(leftAngleBrackets!==12||rightAngleBrackets!==12)
+    throw Error('Original source angle-bracket vectors not preserved 12+12: '+
+      leftAngleBrackets+'+'+rightAngleBrackets);
   const expected=rows.map(x=>x.source).join('\n');
   const originalHash=await digest(new TextEncoder().encode(expected));
   const bytes=new Uint8Array(await pdf.save({useObjectStreams:false}));
@@ -317,6 +358,8 @@ async function generate(){
     font_sha256:await digest(fontBytes),
     original_arabic_text_sha256:originalHash,
     source_paragraphs:rows.length,source_line_count:sourceLines.length,
+    vector_math_brackets_drawn:mathematicalFallbackCount,
+    vector_math_left: leftAngleBrackets, vector_math_right:rightAngleBrackets,
     pages:pdf.getPageCount(),bytes:bytes.length,
     source_lines:recorded,
     full_authorial_arabic_word_content_represented:true,
