@@ -52,11 +52,7 @@
   if(focusButton)trailing.insertBefore(focusButton,trailing.firstChild);
   trailing.setAttribute('aria-label','Focus, search, theme, display and help');
 
-  var help=document.createElement('button');
-  help.type='button';help.id='gnTopHelp';help.className='gn-top-help';
-  help.dataset.route='help';help.title='Help and reader guide';
-  help.setAttribute('aria-label','Help and reader guide');
-  help.innerHTML=icon('help');trailing.appendChild(help);
+  // Help remains available in Contents, not in the permanent reading toolbar.
 
   var sidebar=document.querySelector('#leftNav .primary-nav');
   if(sidebar&&!sidebar.querySelector('[data-route="help"]')){
@@ -65,6 +61,25 @@
    helpNav.dataset.route='help';helpNav.innerHTML=icon('help')+'<span>Help &amp; guide</span>';
    sidebar.appendChild(helpNav);
   }
+  // Preserve the existing Share command without keeping a seventh
+  // top-row action on small phones. The sidebar is already accessible
+  // from the approved circular Contents icon.
+  if(sidebar&&!document.getElementById('gnNavShare')){
+   var shareNav=document.createElement('button');
+   shareNav.id='gnNavShare';shareNav.type='button';
+   shareNav.className='nav-item gn-nav-share';
+   shareNav.setAttribute('aria-label','Share current reading section');
+   shareNav.innerHTML='<svg class="icon" aria-hidden="true"><use href="#i-share"></use></svg><span>Share current section</span>';
+   shareNav.addEventListener('click',function(event){
+    event.preventDefault();event.stopPropagation();
+    var share=document.getElementById('readerShareAction');
+    if(!share)return;
+    document.getElementById('closeNav')?.click();
+    share.click();
+   });
+   sidebar.insertBefore(shareNav,sidebar.querySelector('.gn-nav-help'));
+  }
+
   // Do not duplicate Help in the sidebar's small footer links.
   document.querySelectorAll('#leftNav .gn-nav-footer-links [data-route="help"]')
    .forEach(function(button){button.remove();});

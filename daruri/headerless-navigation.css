@@ -285,3 +285,173 @@
  }
  #fallbackReader .fb-topbar .fb-icon-button .gn-native-tile {flex:none}
 }
+
+/* Scholar's Compact header – user-approved 23 October 2026.
+   Focus, Bookmark, Copy, Search and Display are immediate reading tools.
+   The selected circular tile remains the sole Contents opener; Help is
+   inside Contents, Theme inside Visuals, Share inside Contents on phones.
+   Existing bottom dock, Reading Desk and reading-mode handlers are unchanged. */
+@media screen {
+  body.reader-enhanced.reading-active #gnTopRead{display:none!important}
+  body.reader-enhanced #readingControls #gnTopHelp,
+  body.reader-enhanced #readingControls #themeBtn{display:none!important}
+  body:not(.reading-active) #leftNav #gnNavShare{display:none!important}
+  body.reader-enhanced #readingControls .gn-reader-global-trailing #focusToolbar{
+    order:-5!important;
+  }
+  body.reader-enhanced #readingControls .gn-reader-global-trailing #searchBtn{order:0!important}
+  body.reader-enhanced #readingControls .gn-reader-global-trailing #settingsBtn{order:5!important}
+}
+@media screen and (max-width:620px){
+  :root{--reading-controls-height:52px!important}
+  body.reader-enhanced.reading-active #readingControls:not([hidden]){
+    --gn-scholar-tile:44px;
+    --gn-scholar-action:40px;
+    --gn-scholar-lang:36px;
+    --gn-scholar-gap:3px;
+    top:0!important;
+    min-height:52px!important;height:52px!important;
+    max-height:52px!important;
+    overflow:visible!important;
+  }
+  body.reader-enhanced.reading-active #readingControls:not([hidden]) .reading-controls-inner{
+    box-sizing:border-box!important;
+    display:flex!important;
+    flex-flow:row nowrap!important;
+    grid-template-areas:none!important;
+    grid-template-columns:none!important;
+    grid-template-rows:none!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    min-height:52px!important;height:52px!important;
+    max-height:52px!important;
+    padding:4px max(5px,env(safe-area-inset-right)) 4px max(5px,env(safe-area-inset-left))!important;
+    gap:var(--gn-scholar-gap)!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+  }
+  body.reader-enhanced.reading-active #readingControls .gn-reader-global-leading{
+    display:flex!important;
+    order:-20!important;
+    flex:0 0 var(--gn-scholar-tile)!important;
+    width:var(--gn-scholar-tile)!important;
+    min-width:0!important;
+    padding:0!important;margin:0!important;
+    gap:0!important;
+    justify-self:auto!important;
+  }
+  body.reader-enhanced.reading-active #readingControls .gn-reader-global-leading #menuBtn.gn-top-tile{
+    width:var(--gn-scholar-tile)!important;
+    min-width:var(--gn-scholar-tile)!important;
+    max-width:var(--gn-scholar-tile)!important;
+    height:44px!important;min-height:44px!important;max-height:44px!important;
+    flex:0 0 var(--gn-scholar-tile)!important;
+    border-radius:50%!important;
+    padding:3px!important;
+    background-size:36px 36px!important;
+  }
+  body.reader-enhanced.reading-active #readingControls .reader-language-and-actions{
+    display:flex!important;order:-10!important;
+    flex:0 0 auto!important;
+    min-width:0!important;
+    margin:0!important;padding:0!important;border:0!important;
+    justify-self:auto!important;
+  }
+  body.reader-enhanced.reading-active #readingControls #persistentLanguages{
+    box-sizing:border-box!important;
+    display:flex!important;flex-flow:row nowrap!important;
+    gap:1px!important;margin:0!important;padding:2px!important;
+    height:44px!important;min-height:44px!important;
+    width:auto!important;
+    background:var(--surface-alt,var(--bg))!important;
+    border:1px solid var(--border)!important;
+    border-radius:8px!important;
+  }
+  body.reader-enhanced.reading-active #readingControls #persistentLanguages>button{
+    box-sizing:border-box!important;
+    display:inline-flex!important;
+    align-items:center!important;justify-content:center!important;
+    flex:0 0 var(--gn-scholar-lang)!important;
+    width:var(--gn-scholar-lang)!important;
+    min-width:var(--gn-scholar-lang)!important;
+    max-width:var(--gn-scholar-lang)!important;
+    min-height:38px!important;height:38px!important;max-height:38px!important;
+    padding:0!important;margin:0!important;
+    font:650 12px/1 var(--sans,system-ui,sans-serif)!important;
+    touch-action:manipulation!important;
+  }
+  body.reader-enhanced.reading-active #readingControls .reader-action-slot{
+    box-sizing:border-box!important;
+    display:flex!important;order:0!important;
+    flex:0 0 auto!important;
+    align-items:center!important;justify-content:center!important;
+    gap:1px!important;
+    padding:0!important;margin:0!important;
+    border:0!important;min-width:0!important;
+    justify-self:auto!important;
+  }
+  body.reader-enhanced.reading-active #readingControls .reader-action-slot
+     :is(#readerSaveAction,#readerCopyAction){
+    box-sizing:border-box!important;
+    display:inline-flex!important;
+    flex:0 0 var(--gn-scholar-action)!important;
+    align-items:center!important;justify-content:center!important;
+    width:var(--gn-scholar-action)!important;
+    min-width:var(--gn-scholar-action)!important;
+    max-width:var(--gn-scholar-action)!important;
+    min-height:44px!important;height:44px!important;max-height:44px!important;
+    padding:0!important;margin:0!important;
+    border-radius:8px!important;
+    touch-action:manipulation!important;
+  }
+  body.reader-enhanced.reading-active #readingControls .reader-action-slot #readerShareAction{
+    display:none!important;
+  }
+  body.reader-enhanced.reading-active #readingControls .reader-action-caption{
+    display:none!important;
+  }
+  body.reader-enhanced.reading-active #readingControls .gn-reader-global-trailing{
+    box-sizing:border-box!important;
+    display:flex!important;flex-flow:row nowrap!important;
+    order:10!important;
+    flex:0 0 auto!important;
+    align-items:center!important;justify-content:flex-end!important;
+    justify-self:auto!important;
+    gap:1px!important;
+    padding:0!important;margin:0!important;border:0!important;
+    min-width:0!important;
+  }
+  body.reader-enhanced.reading-active #readingControls .gn-reader-global-trailing
+     :is(#focusToolbar,#searchBtn,#settingsBtn){
+    box-sizing:border-box!important;
+    display:inline-flex!important;
+    flex:0 0 var(--gn-scholar-action)!important;
+    align-items:center!important;justify-content:center!important;
+    width:var(--gn-scholar-action)!important;
+    min-width:var(--gn-scholar-action)!important;
+    max-width:var(--gn-scholar-action)!important;
+    height:44px!important;min-height:44px!important;max-height:44px!important;
+    padding:0!important;margin:0!important;
+    border-radius:8px!important;
+    touch-action:manipulation!important;
+  }
+  body.reader-enhanced.reading-active #readingControls .gn-reader-global-trailing
+     #focusToolbar[hidden]{display:none!important}
+  body.reader-enhanced.reading-active #readingControls #globalViewLabel{display:none!important}
+  body.reader-enhanced.reading-active #readingControls .reader-focus-controls{display:none!important}
+}
+@media screen and (max-width:360px){
+  body.reader-enhanced.reading-active #readingControls:not([hidden]){
+    --gn-scholar-tile:40px;
+    --gn-scholar-action:36px;
+    --gn-scholar-lang:32px;
+    --gn-scholar-gap:2px;
+  }
+  body.reader-enhanced.reading-active #readingControls .gn-reader-global-leading #menuBtn.gn-top-tile{
+    background-size:34px 34px!important;
+  }
+}
+@media print{
+  body.reader-enhanced #readingControls{display:none!important}
+}
