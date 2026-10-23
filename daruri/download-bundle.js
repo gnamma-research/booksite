@@ -206,6 +206,14 @@
       ['daruri/editions/manifest.json','editions/manifest.json?v=20261021-bilingual-vowels1'],
       ['daruri/editions/apparatus/manifest.json','editions/apparatus/manifest.json?v=20261021-a4-apparatus1'],
       ['daruri/editions/maps/manifest.json','editions/maps/manifest.json?v=20261022-base-personal-word-maps'],
+      // Stage 1 local A4 apparatus creator and its signed catalogue.
+      ['daruri/dynamic-editions.html','dynamic-editions.html'],
+      ['daruri/dynamic-pdf/client.js','dynamic-pdf/client.js?v=20261023-stage1'],
+      ['daruri/dynamic-pdf/core.js','dynamic-pdf/core.js?v=20261023-stage1'],
+      ['daruri/dynamic-pdf/design-catalog.js','dynamic-pdf/design-catalog.js?v=20261023-stage1'],
+      ['daruri/dynamic-pdf/assemble.worker.js','dynamic-pdf/assemble.worker.js?v=20261023-stage1'],
+
+
       ['daruri/personal-export.html', 'personal-export.html'],
       ['daruri/personal-export.js', 'personal-export.js?v=20261023-editions-delivery1'],
       ['daruri/personal-pdf-enhancements.js','personal-pdf-enhancements.js?v=two-tabs-20261022'],
@@ -263,20 +271,28 @@
         files.push(['daruri/editions/maps/'+name+suffix,
           'editions/maps/'+name+suffix]);
     }
-    // Include the complete, verified apparatus edition collection in the
-    // offline source+PDF bundle, together with each edition's matching maps.
-    const apparatusFiles=[
-      ...['bilingual','bilingual-unvowelled'].flatMap(lang=>
-        ['glossary','index','glossary-index','concordance']
-        .map(kind=>'daruri-reading-'+lang+'-'+kind+'.pdf')),
-      'daruri-study-bilingual-glossary.pdf',
-      'daruri-study-bilingual-applications.pdf'
-    ];
-    for(const filename of apparatusFiles){
-      pdfs.set('daruri/editions/apparatus/'+filename,'editions/apparatus/'+filename);
-      for(const suffix of ['.json','.metadata.json'])
-        files.push(['daruri/editions/apparatus/maps/'+filename+suffix,
-          'editions/apparatus/maps/'+filename+suffix]);
+    // Stage 1: the complete 120 PDF variants are NOT included. Their exact
+    // equivalents are made locally from 12 published source designs, the 15
+    // reusable packets and 120 signed per-edition link maps.
+    files.push(['daruri/dynamic-pdf/packets/manifest.json',
+      'dynamic-pdf/packets/manifest.json']);
+    const components=['glossary','index','concordance','applications'];
+    const variants=['daruri-reading-bilingual','daruri-reading-bilingual-unvowelled',
+      'daruri-reading-english','daruri-study-bilingual'];
+    for(let mask=1;mask<16;mask++){
+      const suffix=components.filter((_,i)=>Boolean(mask&(1<<i))).join('-');
+      const packet='gnamma-apparatus-'+suffix+'.pdf';
+      pdfs.set('daruri/dynamic-pdf/packets/'+packet,
+        'dynamic-pdf/packets/'+packet);
+      files.push(['daruri/dynamic-pdf/packets/'+packet+'.json',
+        'dynamic-pdf/packets/'+packet+'.json']);
+      for(const design of variants){
+        for(const titles of ['', '-titles-on']){
+          const map=design+'-'+suffix+titles+'.pdf.links.json';
+          files.push(['daruri/dynamic-pdf/packets/profiles/'+map,
+            'dynamic-pdf/packets/profiles/'+map]);
+        }
+      }
     }
     for (const link of document.querySelectorAll('a[href]')) {
       const raw = link.getAttribute('href') || '';
@@ -288,14 +304,16 @@
       try { relative = decodeURIComponent(url.pathname.slice(root.pathname.length)); }
       catch (_) { continue; }
       if (!/^[\w./-]+\.pdf$/i.test(relative) ||
-          relative.startsWith('../') || relative.includes('/../')) continue;
+          relative.startsWith('../') || relative.includes('/../') ||
+          relative.startsWith('editions/apparatus/')) continue;
       pdfs.set('daruri/' + relative, relative);
     }
     for (const entry of pdfs) files.push(entry);
     // The smaller offline HTML download does not silently bundle book PDFs.
     // PDF navigation maps have no use without their corresponding PDFs.
     const selected=mode==='html'?
-      files.filter(([name])=>!/\.pdf(?:\.(?:metadata\.)?json)?$/i.test(name)):files;
+      files.filter(([name])=>!/\.pdf(?:\.(?:metadata\.)?json)?$/i.test(name)&&
+        !name.startsWith('daruri/dynamic-pdf/packets/')):files;
     return {files:selected,pdfNames:mode==='html'?[]:[...pdfs.keys()]};
   }
 
