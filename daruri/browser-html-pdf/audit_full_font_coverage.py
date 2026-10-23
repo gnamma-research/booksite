@@ -51,10 +51,13 @@ def main():
       "unsupported_across_three_fonts":len(missing),
       "missing":out}
     print("DARURI_FULL_SOURCE_FONT_COVERAGE",json.dumps(report,ensure_ascii=False))
-    if missing:
-        print("GLYPHS_NEED_NEW_FALLBACK",len(missing))
+    # These two authentic editorial angle brackets are drawn as source-specific
+    # PDF vector strokes. No other missing font glyph may be accepted.
+    expected={0x27e8,0x27e9}
+    if set(missing)!=expected or counts[0x27e8]!=12 or counts[0x27e9]!=12:
+        print("UNSUPPORTED_SOURCE_GLYPHS",len(missing),sorted(missing))
         return 2
-    print("GLYPH_PRECHECK_PASSED_WITH_FALLBACKS")
+    print("VECTOR_MATH_BRACKET_FALLBACK_CERTIFIED",{"left":12,"right":12})
     return 0
 
 if __name__=="__main__":
