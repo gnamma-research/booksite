@@ -218,6 +218,11 @@ class ContextualBERT:
                     if not self.include_all and fold(root) not in self.target_roots:
                         continue
                     features = model_features(item)
+                    # Preserve CAMeL's weak-radical skeleton (e.g. ق.#.س);
+                    # '?' and '#' are NOT arbitrarily converted to و or ي.
+                    raw_root = str(item.get("root", ""))
+                    if "#" in raw_root:
+                        features["raw_root"] = raw_root[:30]
                     unique = (fold(lemma), fold(root), pos, lexical_id,
                               features.get("cas"), features.get("mod"), features.get("asp"))
                     if unique in emitted:
