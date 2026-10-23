@@ -115,5 +115,6 @@ jobs:
             /tmp/daruri-semantic-${{ matrix.browser }}/unicode/native.json
             /tmp/daruri-semantic-${{ matrix.browser }}/unicode/compare.json
             /tmp/daruri-semantic-${{ matrix.browser }}/unicode/browser-evidence.json
+            /tmp/daruri-semantic-${{ matrix.browser }}/unicode/daruri-browser-only-excerpt-NONRELEASE.pdf
           if-no-files-found: warn
           retention-days: 14
