@@ -163,11 +163,18 @@ const file='daruri.pdf';
   const a4bytes=await page.pdf({format:'A4',preferCSSPageSize:true,printBackground:false});
   const a4=await PDFDocument.load(a4bytes);
   assert(a4.getPageCount()>0&&a4.getPageCount()<600,'print-to-PDF must be nonempty and paginate sensibly');
-  // A mapped apparatus PDF must link P notes to its actual glossary entries.
+  // Stage 1: the 120 prebuilt apparatus documents are retired. Verify that
+  // the same local P-note exporter annotates a *newly composed*, signed PDF.
   const variant='editions/apparatus/daruri-reading-bilingual-glossary.pdf';
-  await page.goto(host+'/daruri/personal-export.html?pdf='+encodeURIComponent(variant)+'&personal=1',
-                  {waitUntil:'networkidle'});
-  assert.equal(await page.locator('#pe-edition').inputValue(),variant);
+  const profile=variant.replace(/^editions\//,'');
+  await page.goto(host+'/daruri/dynamic-editions.html?profile='+
+    encodeURIComponent(profile)+'&autostart=personal',{waitUntil:'domcontentloaded'});
+  await page.waitForFunction(()=>
+    document.querySelector('#pe-edition')?.value.startsWith('generated-'),
+    null,{timeout:90000});
+  assert.equal(await page.locator('#gn-dyn-profile').inputValue(),profile);
+  assert.equal(await page.locator('#gn-dyn-download').isVisible(),true);
+  assert.match(await page.locator('#gn-dyn-status').innerText(),/Verified \d+ pages/);
   assert.equal(await page.locator('input[name=pe-mode]:checked').inputValue(),'all');
   await page.evaluate(()=>{
     const key='gnamma-reading-desk-v1';

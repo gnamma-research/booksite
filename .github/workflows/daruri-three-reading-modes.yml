@@ -73,13 +73,7 @@ jobs:
       - name: Install browser smoke test
         run: |
           npm install --no-save --prefix daruri/qa playwright@1.56.1
-          # Install pinned browsers without an unnecessary apt update on hosted runners.
-          npx --prefix daruri/qa playwright install chromium webkit
-          # Repair native dependencies only when a real browser launch reports them missing.
-          node -e "const {chromium,webkit}=require('./daruri/qa/node_modules/playwright');(async()=>{for(const b of [chromium,webkit]){const browser=await b.launch({headless:true,...(b===chromium?{args:['--no-sandbox']}:{})});await browser.close()}})().catch(e=>{console.error(e);process.exit(1)})" || {
-            echo "Browser runtime dependencies missing; installing pinned Linux dependencies"
-            timeout 180s npx --prefix daruri/qa playwright install-deps chromium webkit
-          }
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
       - name: Test mobile Chromium and WebKit reader
         run: |
           node daruri/qa/verify-three-reading-modes.cjs

@@ -85,6 +85,50 @@ assert(!htmlNames.some(n=>/\.pdf(?:\.(?:metadata\.)?json)?$/i.test(n)),
   'HTML package must exclude all PDF files and mapping derivatives');
 assert(fullNames.some(n=>n==='daruri/daruri.pdf'),'Full bundle includes scholarly PDF');
 assert(fullNames.length>htmlNames.length,'HTML-only package should be smaller');
+const stage1=JSON.parse(get('dynamic-pdf/packets/manifest.json'));
+assert.equal(stage1.packets.length,15,'Exactly 15 reusable A4 scholarly packets');
+assert.equal(stage1.profiles.length,120,'Retain 120 signed generation recipes, not 120 complete PDFs');
+assert(fullNames.includes('daruri/dynamic-editions.html'),'Full offline ZIP needs the real browser creator');
+assert(fullNames.includes('daruri/dynamic-pdf/assemble.worker.js'),'Full offline ZIP needs the cancellable worker');
+assert(!fullNames.some(n=>n.startsWith('daruri/editions/apparatus/')&&n.endsWith('.pdf')),
+  'Do not include a prebuilt 120-variant file in the Stage1 offline ZIP');
+for(const packet of stage1.packets){
+  assert(fullNames.includes('daruri/dynamic-pdf/packets/'+packet.file),
+    'Missing reusable PDF packet '+packet.file);
+  assert(fullNames.includes('daruri/dynamic-pdf/packets/'+packet.map),
+    'Missing packet section map '+packet.map);
+}
+for(const row of stage1.profiles){
+  assert(fullNames.includes('daruri/dynamic-pdf/packets/'+row.map),
+    'Missing approved per-edition hyperlink map '+row.map);
+}
+assert(!htmlNames.some(n=>n.startsWith('daruri/dynamic-pdf/packets/')),
+  'Smaller HTML-only package must not include all 120 signed PDF maps');
+const onDeviceHtml=get('dynamic-editions.html');
+const onDeviceClient=get('dynamic-pdf/client.js');
+const onDeviceWorker=get('dynamic-pdf/assemble.worker.js');
+for(const file of [
+  'dynamic-editions.html','dynamic-pdf/client.js','dynamic-pdf/core.js',
+  'dynamic-pdf/design-catalog.js','dynamic-pdf/assemble.worker.js']){
+  assert(sw.includes(file+'?v=20261023-stage1'),
+    'Offline worker must pre-cache the published browser generator: '+file);
+}
+// A reader-navigation release may rename the worker/cache (e.g. the compact dock).
+// Require matching versioned registration and cache identity; Stage 1's signed
+// generator files are verified independently by the CORE pre-cache loop above.
+const registeredWorker=/navigator\.serviceWorker\.register\(['"]sw\.js\?v=([a-zA-Z0-9._-]+)['"]\)/.exec(html);
+const activeWorkerCache=/\bconst NAME=["']daruri-reader-([a-zA-Z0-9._-]+)["']/.exec(sw);
+assert(registeredWorker && activeWorkerCache &&
+       registeredWorker[1]===activeWorkerCache[1],
+  'Reader must register the same versioned worker as the active cache');
+assert(html.includes('editions-selector.js?v=20261023-stage1'),
+  'The current reader must actually load the generation-first selector');
+assert(onDeviceHtml.includes('dynamic-pdf/client.js?v=20261023-stage1'));
+assert(onDeviceHtml.includes('dynamic-pdf/core.js?v=20261023-stage1'));
+assert(onDeviceHtml.includes('dynamic-pdf/design-catalog.js?v=20261023-stage1'));
+assert(onDeviceClient.includes('assemble.worker.js?v=20261023-stage1'));
+assert(onDeviceWorker.includes('core.js?v=20261023-stage1'));
+
 
 for(const [name,uri] of manifests.html.files){
  const relative=new URL(uri,'https://example.org/booksite/daruri/').pathname

@@ -1,0 +1,45 @@
+name: Stage Gnamma HTML/CSS PDF packets on experiment branch
+on:
+  push:
+    branches: ['feature/daruri-on-demand-pdf-20261022']
+    paths: ['.github/workflows/daruri-dynamic-packet-stage.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  stage-packet-assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/daruri-on-demand-pdf-20261022
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Arabic HTML renderer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install -q -r daruri/build/requirements.txt "PyMuPDF==1.26.7"
+      - name: Build all fifteen packets and 120 approved link overlays
+        run: python daruri/dynamic-pdf/build_packets.py
+      - name: Commit generated assets only to isolated experiment branch
+        run: |
+          set -euo pipefail
+          git config user.name 'Gnamma PDF Build Bot'
+          git config user.email 'gnamma-pdf-bot@users.noreply.github.com'
+          git add daruri/dynamic-pdf/packets
+          if git diff --cached --quiet; then
+            echo 'All packet assets already match the source.'
+            exit 0
+          fi
+          git commit -m 'Stage 15 canonical HTML apparatus packets and 120 SHA-bound link maps'
+          git push origin HEAD:feature/daruri-on-demand-pdf-20261022
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gnamma-staged-pdf-packets
+          path: daruri/dynamic-pdf/packets/
+          retention-days: 14

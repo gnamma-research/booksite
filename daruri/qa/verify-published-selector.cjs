@@ -16,6 +16,9 @@ const base=JSON.parse(read('editions/manifest.json'));
 const extra=JSON.parse(read('editions/apparatus/manifest.json'));
 const maps=JSON.parse(read('editions/maps/manifest.json'));
 const canon=JSON.parse(read('pdf-editions-manifest.json'));
+const packets=JSON.parse(read('dynamic-pdf/packets/manifest.json'));
+const retired=fs.existsSync(path.join(root,'dynamic-pdf/RETIRE_120.json'));
+const signedRecipes=new Map(packets.profiles.map(x=>[x.profile,x]));
 assert.equal(base.status,'verified');
 assert.equal(base.files.length,12);
 assert.equal(extra.status,'verified');
@@ -39,8 +42,9 @@ for(const required of ['Book PDF','Study Guide','Offline reader','Research files
   'id="gn-es-prepare"','data-es-action="download"','data-daruri-bundle="html"',
   'id="pe-dates"','id="pe-annotations"','id="pe-picker"',
   'id="pe-generate"','id="pe-result"','data-es-action="open"',
+  'data-es-stage1-create','dynamic-editions.html?','autostart',
   'loadPersonalTools(mounted)','gnamma-personal-export-ready',
-  'No published PDF matches this exact combination','word']){
+  'No approved edition matches this exact combination','word']){
   if(required==='word')continue;
   assert.ok(edition.includes(required),'Missing integrated control '+required);
 }
@@ -49,7 +53,7 @@ assert.ok(!edition.includes('data-es-study-guide'),'Study guide is not a selecte
 assert.ok(edition.includes("availability.hidden=result.status==='ready'"),
   'Do not show an unnecessary ready banner');
 assert.ok(edition.includes("download.href=open.getAttribute('href')"),
-  'Published PDFs must download directly as the exact selected file');
+  'Clean source and Reference PDFs retain direct native View/Download');
 assert.ok(edition.includes("prepare.hidden=true"),'No mandatory Prepare PDF stage');
 assert.ok(!edition.includes('data-es-nav="study"'),'No redundant nested Study navigation');
 assert.ok(edition.includes("Download Study Guide (PDF)"),'Standalone companion download must be explicit');
@@ -108,7 +112,17 @@ for(const row of extra.files){
   assert.equal(row.base_sha256,baselines.get(row.source_base).sha256);
   assert.equal(row.verified_sections,258);
   assert.equal(row.map_coverage,1);
-  assert.equal(fn(path.join(root,'editions',row.file)),row.sha256);
+  if(retired){
+    const recipe=signedRecipes.get(row.file);
+    assert.ok(recipe,'Retired apparatus needs a signed composition recipe: '+row.file);
+    assert.ok(!fs.existsSync(path.join(root,'editions',row.file)),
+      'A redundant complete apparatus PDF must not remain on Stage 1 hosting');
+    assert.equal(recipe.base,row.source_base);
+    assert.equal(recipe.profile_sha256,row.sha256);
+    assert.equal(recipe.packet_sha256,
+      packets.packets.find(p=>p.file===recipe.packet)?.sha256);
+    assert.equal(fn(path.join(root,'dynamic-pdf/packets',recipe.map)),recipe.map_sha256);
+  }else assert.equal(fn(path.join(root,'editions',row.file)),row.sha256);
   assert.equal(fn(path.join(root,'editions',row.map_file)),row.map_sha256);
 }
-console.log('PASS: four download purposes, three book editions, personal PDF, 12 maps, 120 exact apparatus PDFs and safe word fallbacks.');
+console.log('PASS: four download purposes, three book editions, local Stage1 creator, 12 source maps, 120 signed recipes and personal PDF safety.');
