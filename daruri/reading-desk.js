@@ -499,10 +499,8 @@ function create(ctx){
   parts.push('<button type="button" class="gn-rd-main-action" data-rd="new-note">'+RD_ICON.note+'<span>New note</span></button>');
   parts.push('<button type="button" class="gn-rd-main-action" data-rd="print-list">'+RD_ICON.print+'<span>Print / PDF</span></button>');
   parts.push('<details class="gn-rd-manage-menu"><summary>Manage <span aria-hidden="true">⌄</span></summary><div class="gn-rd-manage-items" role="group" aria-label="Manage Reading Desk data">');
-  parts.push('<button type="button" data-rd="export">Download backup (.json)</button>');
-  parts.push('<button type="button" data-rd="import">Import backup (.json)</button>');
+  parts.push('<button type="button" data-rd="backup-transfer">'+RD_ICON.download+'<span>Backup &amp; Transfer</span></button>');
   parts.push('<button type="button" data-rd="export-markdown">Export readable notes (.md)</button>');
-  parts.push('<button type="button" data-rd="share-backup">Share backup</button>');
   const binCount=records.filter(r=>r.deleted).length;
   parts.push('<button type="button" data-rd="filter" data-value="'+(bin?'all':'bin')+'">'+
    (bin?'Return to saved items':'Open Bin'+(binCount?' ('+binCount+')':''))+'</button></div></details>');
@@ -1133,41 +1131,77 @@ function create(ctx){
   }
   download(data,fileName);ctx.notify('Backup downloaded. Share the file with Mail or Files.');
  }
+ function importParsed(parsed,types={bookmarks:true,highlights:true,notes:true}){
+  // Called by both the legacy JSON importer and Backup & Transfer. Never
+  // overwrite the user's current Reading Desk if validation/persistence fails.
+  if(parsed?.format!==FORMAT||parsed.version!==VERSION||!Array.isArray(parsed.items))
+   throw Error('not a Reading Desk backup');
+  if(parsed.items.length>20000)throw Error('too many items (maximum 20,000)');
+  if(!['bookmarks','highlights','notes'].some(k=>types[k]))
+   return {changes:0,accepted:0};
+  const allowed=parsed.items.filter(row=>{
+   const kind=String(row?.kind||'');
+   return kind==='note'?types.notes:kind==='quote'?types.highlights:types.bookmarks;
+  });
+  const incoming=allowed.map(sanitize).filter(Boolean);
+  if(allowed.length&&!incoming.length)throw Error('No valid entries found');
+  const merged=records.slice(),byId=new Map(merged.map(r=>[r.id,r])),now=Date.now();
+  const fields=['kind','target','title','body','deleted','standalone'];
+  const contentDiffers=(a,b)=>fields.some(k=>JSON.stringify(a[k])!==JSON.stringify(b[k]));
+  let changes=0;
+  function preserveVersion(row,reason){
+   // Preserve divergent personal writing, even if the incoming copy has a
+   // different timestamp. The original source ID makes repeat imports
+   // idempotent; the saved original title permits exact duplicate detection.
+   if(row.kind!=='note')return;
+   if(merged.some(x=>x.sourceOriginalId===row.id&&
+    x.sourceOriginalTitle===row.title&&
+    fields.filter(k=>k!=='title').every(k=>JSON.stringify(x[k])===JSON.stringify(row[k]))))return;
+   const copy={...row,id:uuid(),sourceOriginalId:row.id,sourceOriginalTitle:row.title,
+    title:(row.title||titleOf(row.target))+' · '+reason,updated:now};
+   merged.push(copy);changes++;
+  }
+  for(const row of incoming){
+   const prior=byId.get(row.id);
+   if(!prior){merged.push(row);byId.set(row.id,row);changes++;continue;}
+   const differs=contentDiffers(row,prior);
+   if(!differs){
+    if((prior.dateSource!=='recorded'&&row.dateSource==='recorded')||row.modified>prior.modified){
+     const richer={...prior,dateSource:row.dateSource==='recorded'?'recorded':prior.dateSource,
+      modified:Math.max(prior.modified||0,row.modified||0),created:prior.created||row.created};
+     const i=merged.indexOf(prior);merged[i]=richer;byId.set(row.id,richer);changes++;
+    }
+    continue;
+   }
+   if(row.updated>prior.updated){
+    preserveVersion(prior,'Local version before import');
+    const i=merged.indexOf(prior);merged[i]=row;byId.set(row.id,row);changes++;
+   }else{
+    preserveVersion(row,'Imported version');
+   }
+  }
+  if(merged.length>20000)throw Error('too many combined items (maximum 20,000)');
+  if(changes){
+   const before=records;records=merged;
+   if(!persist()){records=before;throw Error('Could not save: storage or another tab changed');}
+  }
+  ui.category='all';ui.filterTarget='';ui.selected='';ui.mobileDetail=false;
+  if(state.route==='bookmarks')render();
+  return {changes,accepted:incoming.length};
+ }
  function importFile(file){
   if(!file)return;
-  if(file.size>12*1024*1024){ctx.notify('Backup is too large (maximum 12 MB). The existing collection is unchanged.');return;}
+  if(file.size>12*1024*1024){
+   ctx.notify('Backup is too large (maximum 12 MB). The existing collection is unchanged.');return;
+  }
+  if(window.GnammaBackupTransfer?.reviewFile){
+   window.GnammaBackupTransfer.reviewFile(file);return;
+  }
   const reader=new FileReader();
   reader.onload=()=>{
    try{
-    const parsed=JSON.parse(reader.result);
-    if(parsed?.format!==FORMAT||parsed.version!==VERSION||!Array.isArray(parsed.items))throw Error('not a Reading Desk backup');
-    if(parsed.items.length>20000)throw Error('too many items (maximum 20,000)');
-    const incoming=parsed.items.map(sanitize).filter(Boolean);if(parsed.items.length&&!incoming.length)throw Error('No valid entries found');
-    const merged=records.slice(),byId=new Map(merged.map(r=>[r.id,r])),now=Date.now();let changes=0;
-    for(const row of incoming){
-     const prior=byId.get(row.id);
-     if(!prior){merged.push(row);byId.set(row.id,row);changes++;continue;}
-     if(row.updated>prior.updated){
-      const i=merged.indexOf(prior);merged[i]=row;byId.set(row.id,row);changes++;continue;
-     }
-     if(row.updated!==prior.updated)continue;
-     // Upgraded timestamp fields alone must not duplicate identical notes.
-     const contentFields=['kind','target','title','body','deleted','standalone'];
-     const contentDiffers=contentFields.some(k=>JSON.stringify(row[k])!==JSON.stringify(prior[k]));
-     if(!contentDiffers){
-      if((prior.dateSource!=='recorded'&&row.dateSource==='recorded')||row.modified>prior.modified){
-       const richer={...prior,dateSource:row.dateSource==='recorded'?'recorded':prior.dateSource,
-        modified:Math.max(prior.modified||0,row.modified||0),created:prior.created||row.created};
-       const i=merged.indexOf(prior);merged[i]=richer;byId.set(row.id,richer);changes++;
-      }
-      continue;
-     }
-     const copy={...row,id:uuid(),title:(row.title||titleOf(row.target))+' · Imported version',updated:now};
-     merged.push(copy);changes++;
-    }
-    if(merged.length>20000)throw Error('too many combined items (maximum 20,000)');
-    const before=records;records=merged;if(!persist()){records=before;throw Error('Browser storage unavailable');}ui.category='all';ui.filterTarget='';ui.selected='';render();
-    ctx.notify(changes+' items merged. Existing and newer items were kept.');
+    const result=importParsed(JSON.parse(reader.result));
+    ctx.notify(result.changes+' items merged. Existing and newer items were kept.');
    }catch(e){ctx.notify('Could not import this Reading Desk backup: '+short(e.message,80));}
   };
   reader.onerror=()=>ctx.notify('Could not read the chosen backup file.');
@@ -1473,6 +1507,11 @@ function create(ctx){
    return;
   }
   if(action==='close-print'){closePrintPreview();return;}
+  if(action==='backup-transfer'){
+   if(window.GnammaBackupTransfer?.open)window.GnammaBackupTransfer.open();
+   else ctx.notify('Backup controls are unavailable. Please reload the reader.');
+   return;
+  }
   if(action==='export'){if(loadFailure){download(untouchedStorage||'','Reading-Desk-original-recovery.txt');ctx.notify('Original, unmodified browser data downloaded.');}else{download(backup(),'Reading-Desk-'+new Date().toISOString().slice(0,10)+'.json');ctx.notify('Reading Desk backup downloaded.');}return;}
   if(action==='download-original'){if(untouchedStorage!==null){download(untouchedStorage,'Reading-Desk-original-recovery.txt');ctx.notify('Untouched original data downloaded.');}return;}
   if(action==='refresh-storage'){load(true);ui.selected='';ui.mobileDetail=false;ui.filterTarget='';ui.filterSegment=null;render();ctx.notify('Reading Desk refreshed from current browser storage.');return;}
@@ -1586,7 +1625,9 @@ function create(ctx){
   const main=$('#mainContent');if(main){let scheduled=false;new MutationObserver(()=>{if(scheduled||decorating)return;scheduled=true;queueMicrotask(()=>{scheduled=false;decorate();});}).observe(main,{subtree:true,childList:true});}
  }
  install();
- return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,records:()=>records,
+ return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,
+  importParsed,downloadBackup:(data,name)=>download(data,name),importFile,
+  records:()=>records,
   openAt:(section,segment=null,kind='all')=>{
    enterDeskFromText(String(section),segment);
    if(kind==='notes'||kind==='bookmarks'||kind==='highlights'){
