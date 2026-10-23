@@ -1,0 +1,97 @@
+{
+  "schema": "gnamma-daruri-portable-source-v1",
+  "work_title": "Al-Ḍarūrī fī Uṣūl al-Fiqh",
+  "author": "Abū al-Walīd Ibn Rushd",
+  "canonical_reader_source": "daruri/edition-r3-20261020.js",
+  "canonical_reader_sha256": "e233057d26772249b17b456d9c8aeaf8fd7d5c293c9875c32569d29bb3d9e22e",
+  "source_authorial_sections": 258,
+  "authorial_parallel_segments": 414,
+  "separate_later_copyist_colophon_segments": 2,
+  "recorded_arabic_headings": 46,
+  "canonical_note_records": 625,
+  "part_count": 5,
+  "application_count": 28,
+  "historical_dictionary_terms": 153,
+  "historical_dictionary_articles": 157,
+  "quran_source_note_records": 50,
+  "hadith_source_note_sections": 33,
+  "source_is_authoritative_data_not_typeset_PDF": true,
+  "english_translation_editorial": true,
+  "arabic_vocalization_editorial": true,
+  "legacy_shamela_txt_html_import_verified_in_app": false,
+  "native_bok_database_export": false,
+  "private_user_notes_included": false,
+  "zip_filename": "Daruri_Portable_Scholarly_Source.zip",
+  "zip_sha256": "13974ace4928d822c953ac19f817c5cf43ef7b278fe6b1da1acc371395146bbc",
+  "zip_bytes": 1818599,
+  "files": {
+    "README.txt": {
+      "sha256": "0a23eb9194d05342c3ed0a1aa0bb66116008369362e21d7ba83af611336b718e",
+      "bytes": 4370
+    },
+    "daruri-arabic-vowelled.html": {
+      "sha256": "08922203f2820d53bed802f63879f93484ffdac1a627e0aba0772a3a44d4b329",
+      "bytes": 424356
+    },
+    "daruri-arabic.html": {
+      "sha256": "1d43987f8ea2a1ba9fe628b917717aac444027490a55f9b6bd668fe54251cc13",
+      "bytes": 271738
+    },
+    "daruri-colophon.json": {
+      "sha256": "0379aefb47026ad919a2b4a5e50fb5954e83b5dca4ad2ffe74147f3465c2b95d",
+      "bytes": 2120
+    },
+    "daruri-english.html": {
+      "sha256": "55a69a76076d4a3aa271fe3eec7120f6e7d76f176338f7b941bebf413c3f017e",
+      "bytes": 253124
+    },
+    "daruri-notes.json": {
+      "sha256": "efaaea7afd6f795f4cf201a0864f7c7a3e84e6bcbd43ffe52241e7d76c04dd5a",
+      "bytes": 405691
+    },
+    "daruri-parallel.html": {
+      "sha256": "b174d56b63a063808590d965f4630c76bb43e89d5c6e3bb6cb64e9239e89d320",
+      "bytes": 921052
+    },
+    "daruri-passages.jsonl": {
+      "sha256": "f4a593916e92ae05abdbc11672324a0aac17d52b5e7039ae1e052f3427a9e554",
+      "bytes": 1015422
+    },
+    "daruri-source.json": {
+      "sha256": "2af9729840f7e05987954216b2e74bbf38127651d0de2d4cbd0371e7d87d2a95",
+      "bytes": 1669240
+    },
+    "daruri.tei.xml": {
+      "sha256": "37fea93c7e02b734ea6593984e5f638c26e6b4f0048dfee3ffb0ea4920782850",
+      "bytes": 1252467
+    },
+    "scholarly-data/backmatter-source-notes.json": {
+      "sha256": "86c7d66e0b54a21233b3bf86a4788b534b9377390ff3480d022359884e2085bf",
+      "bytes": 66287
+    },
+    "scholarly-data/full-headwords.json": {
+      "sha256": "1fb8da20d9c0b06abcaa919952462cbec8f48b8565c3f0d9e238889b1facba71",
+      "bytes": 387131
+    },
+    "scholarly-data/hadith-source-notes.json": {
+      "sha256": "846edbfb6350322098cc645af42f01fa65f01b1c0a686f36b87f5a1257ed1569",
+      "bytes": 36932
+    },
+    "scholarly-data/quran-source-notes.json": {
+      "sha256": "2096ba3c41aa890aad62debb0ed4cbb73ec1314be49e17e2b6350e640f2f57e2",
+      "bytes": 222823
+    },
+    "shamela-import-arabic.html": {
+      "sha256": "1d43987f8ea2a1ba9fe628b917717aac444027490a55f9b6bd668fe54251cc13",
+      "bytes": 271738
+    },
+    "shamela-import-arabic.txt": {
+      "sha256": "f7eba518b90db265f004b28ab92395559ffcfbffc74b4eb7ae12277e5c634882",
+      "bytes": 210730
+    },
+    "shamela-import-vowelled.txt": {
+      "sha256": "22ad04cb2f89289f9e5d251711db27ac66203e1e8b1ed5a4de9473e8c4a98a99",
+      "bytes": 363346
+    }
+  }
+}
