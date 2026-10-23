@@ -1,0 +1,70 @@
+name: Public Qiyas Broken Plural UI Proof
+# Experimental verification only; no changes to published reader.
+on:
+  push:
+    branches:
+      - experiment/qiyas-public-verify-20261023
+    paths:
+      - '.github/workflows/qiyas-public-ui-proof.yml'
+permissions:
+  contents: read
+jobs:
+  verify-public-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright for Chromium and Safari-compatible WebKit
+        run: |
+          npm install --no-save --no-package-lock playwright@1.63.0
+          npx playwright install --with-deps chromium webkit
+      - name: Verify real live Gnamma qiyas UI on small phone and WebKit
+        run: |
+          node <<'JS'
+          const assert=require('node:assert/strict');
+          const {chromium,webkit}=require('playwright');
+          (async()=>{
+           for(const [name,engine] of [['Chromium',chromium],['WebKit',webkit]]){
+            const browser=await engine.launch({headless:true,args:name==='Chromium'?['--no-sandbox']:[]});
+            const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,serviceWorkers:'block'});
+            const page=await context.newPage();
+            const errors=[];
+            page.on('pageerror',err=>errors.push(err.message));
+            const url='https://gnamma-research.github.io/booksite/daruri/?qiyas-verify=20261023-qiyas-forms1';
+            await page.goto(url,{waitUntil:'load',timeout:60000});
+            await page.waitForFunction(()=>!!window.GnammaUnifiedSearch&&!!window.GnammaMorphology,{timeout:30000});
+            const links=await page.locator('script[src*="gnamma-search.js"]').getAttribute('src');
+            assert.match(links,/20261023-qiyas-forms1/,'Outdated HTML still being served');
+            await page.locator('#searchBtn').click();
+            await page.locator('#gns-query').fill('qiyas');
+            await page.waitForFunction(()=>
+             document.querySelector('.gns-morph-assist')?.textContent.includes('أقيسة'),null,{timeout:20000});
+            const hint=await page.locator('.gns-morph-assist').innerText();
+            console.log(name+': typing qiyas gives suggestion:',hint);
+            await page.locator('[data-gns-morph-pick="morph-lemma"]').click();
+            await page.waitForFunction(()=>
+             window.GnammaUnifiedSearch.getState().mode==='morph-lemma',null,{timeout:12000});
+            const state=await page.evaluate(()=>{
+             const x=window.GnammaUnifiedSearch.query('qiyas',{mode:'morph-lemma'}).results;
+             const hit=x.find(z=>z.id==='passage:223:0');
+             return {total:x.length,firstId:x[0]?.id,
+               hit:hit?{id:hit.id,match:hit.matched?.term,
+                  forms:hit.matched?.forms,
+                  section:hit.section}:null};
+            });
+            console.log(name+': source-linked morphology results:',JSON.stringify(state));
+            assert.equal(state.hit?.match,'أقيسة');
+            assert.ok(state.hit.forms.includes('القياس'),'Other forms omitted');
+            assert.equal(state.firstId,'passage:223:0','Distinctive plural should rank first');
+            const top=page.locator('.gns-result').first();
+            assert.match(await top.locator('.gns-row-excerpt mark').innerText(),/أقيسة/);
+            assert.match(await top.locator('.gns-morph-in-paragraph').innerText(),/أقيسة/);
+            assert.equal(errors.length,0,errors.join('; '));
+            console.log('PASS '+name+': live mobile qiyas -> أقيسة -> §223 with visible highlighted plural');
+            await browser.close();
+           }
+          })().catch(e=>{console.error('FAILED REAL LIVE SITE TEST:',e.stack||e);process.exit(1)});
+          JS
