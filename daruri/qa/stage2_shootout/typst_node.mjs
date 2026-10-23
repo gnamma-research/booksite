@@ -8,6 +8,9 @@ const here=path.dirname(fileURLToPath(import.meta.url));
 const root=path.resolve(here,'../../..');
 const out=process.env.STAGE2_OUTPUT || path.resolve(here,'_out');
 const mode=process.env.STAGE2_CORPUS==='full'?'full':'six';
+const plain=process.env.STAGE2_ARABIC_MODE==='unvowelled';
+const fontKey=process.env.STAGE2_ARABIC_FONT||'naskh';
+const fontChoice=fontKey==='sans'?'Noto Sans Arabic':fontKey==='amiri'?'Amiri':'Noto Naskh Arabic';
 function escapeTypst(s){return String(s??'').replace(/([\\#*_@$[\]<>])/g,'\\$1')}
 const workerUri=new URL(import.meta.resolve('typst-wasm/worker/worker-thread'));
 const engineFiles=['engine.core.wasm','engine.core2.wasm','engine.core3.wasm'];
@@ -32,11 +35,11 @@ for(let index=0;index<rows.length;index++){
  const row=rows[index];
  if(mode==='full'&&index&&index%50===0)lines.push('#pagebreak()');
  lines.push('== Original '+row.id+' <item-'+index+'>');
- lines.push('#text(font: "Noto Naskh Arabic", lang: "ar", dir: rtl, size: 13pt)['+escapeTypst(row.arabic)+']');
+ lines.push('#text(font: "'+fontChoice+'", lang: "ar", dir: rtl, size: 13pt)['+escapeTypst(plain?row.arabic_unvowelled:row.arabic)+']');
  lines.push('#v(4pt)');
  lines.push('#text(font: "Noto Serif", lang: "en", dir: ltr, size: 9pt)['+escapeTypst(row.english)+']');
  if(row.section===65&&index<150){
-  lines.push('#text(font: "Noto Naskh Arabic", lang: "ar", dir: rtl)['+escapeTypst(source.stress_phrase)+']#footnote['+escapeTypst(source.test_note)+']');
+  lines.push('#text(font: "'+fontChoice+'", lang: "ar", dir: rtl)['+escapeTypst(source.stress_phrase)+']#footnote['+escapeTypst(source.test_note)+']');
  }
  lines.push('');
 }
@@ -52,18 +55,24 @@ try{
  const fontDir=path.resolve(root,'daruri/build/fonts');
  for(const f of ['NotoNaskhArabic-Regular.ttf','NotoSerif-Regular.ttf','NotoSans-Regular.ttf'])
   await compiler.addFonts(new Uint8Array(await readFile(path.join(fontDir,f))));
+ if(fontKey==='sans'||fontKey==='amiri'){
+  const file=fontKey==='sans'?'/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf':'/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf';
+  await compiler.addFonts(new Uint8Array(await readFile(file)));
+ }
  await compiler.addFonts(new Uint8Array(await readFile(
   new URL(import.meta.resolve('@typst-wasm/fonts/NewCMMath-Regular.otf')))));
  await compiler.addSource('main.typ',typ);
  const compiled=await compiler.compile({main:'main.typ',format:'pdf'});
  if(!compiled.output?.length||String.fromCharCode(...compiled.output.slice(0,5))!=='%PDF-')
    throw Error('Typst worker did not emit PDF bytes');
- await writeFile(path.join(out,'typst-wasm-'+mode+'.pdf'),compiled.output);
+ const suffix=(plain?'plain':'vowelled')+'-'+fontKey;
+ await writeFile(path.join(out,'typst-wasm-'+mode+'-'+suffix+'.pdf'),compiled.output);
  const stats={engine:'typst-wasm@1.0.0',backend:'node-worker-WASM',mode,
   source_sha256:source.source_sha256,bytes:compiled.output.length,
   ms:Math.round(performance.now()-start),source_records:rows.length,
+  arabic_variant:plain?'unvowelled':'vowelled',arabic_font:fontChoice,
   no_prebuilt_pdf_input:true,browser_pdf_proven:false,publication_approved:false};
- await writeFile(path.join(out,'typst-node.json'),JSON.stringify(stats,null,2));
+ await writeFile(path.join(out,'typst-node-'+suffix+'.json'),JSON.stringify(stats,null,2));
  console.log('STAGE2_TYPST_WASM_PDF',JSON.stringify(stats));
 }catch(e){console.error('STAGE2_TYPST_WASM_ERROR',e?.stack||String(e));process.exitCode=2;}
 finally{await compiler.dispose();}
