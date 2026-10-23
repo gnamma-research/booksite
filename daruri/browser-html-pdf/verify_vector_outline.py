@@ -48,15 +48,29 @@ def main():
             for rect in matches:
                 boxes.append([round(v,2) for v in rect])
                 copied.append(page.get_textbox(rect))
-            expected=fitz.Rect(row['x'],row['y']-row['height'],
-                               row['x']+row['width'],row['y']+row['height'])
+            # Browser evidence stores PDF bottom-up coordinates; MuPDF uses
+            # top-down page rectangles. The original audit wrongly compared
+            # coordinate systems and reported zero correct positions.
+            expected=fitz.Rect(row['x']-2, page.rect.height-row['y']-row['height']-2,
+                               row['x']+row['width']+2,
+                               page.rect.height-row['y']+row['height']+2)
             overlap=sum(max(0,(z & expected).get_area()) for z in matches)
+            source_spans=[
+                item for block in page.get_text('dict')['blocks']
+                for line in block.get('lines',[])
+                for item in line['spans']
+                if item.get('font')=='GnammaVectorOriginalCID'
+                   and fitz.Rect(item['bbox']).intersects(expected)
+            ]
+            source_copy=' '.join(item['text'] for item in source_spans)
             results.append({
                 'id':row['id'],'source_phrase':phrase,
-                'exact_native_search':count>0,'number_of_hits':count,
+                'exact_native_search':count>0,'number_of_search_rectangles':count,
                 'within_source_geometry':overlap>0,
-                'matches':boxes,'copy_region_text':copied,
-                'clean_copy':any(phrase in s for s in copied)
+                'matches':boxes,'selected_character_rect_text':copied,
+                'authorial_span_text':source_copy,
+                'authorial_span_count':len(source_spans),
+                'clean_copy':source_copy==phrase
             })
         fonts=page.get_fonts(full=True)
         fontname=any('GnammaVectorOriginalCID' in doc.xref_object(f[0])
@@ -66,6 +80,7 @@ def main():
         # A true vector version has paths, not page screenshots. Robust for
         # PDF/MuPDF versions whose drawing objects differ in grouping.
         images=len(page.get_images(full=True))
+        authorial_total=sum(r['authorial_span_count'] for r in results)
         report={
           'schema':'gnamma-vector-semantic-original-source-test-v1',
           'browser':evidence.get('logical_order'), 'source_sha256':source['source_sha256'],
@@ -77,7 +92,9 @@ def main():
                                for r in results),
           'contains_explicit_cid_to_unicode_font':fontname,
           'pdf_vector_path_groups':svg_path_count,'image_xobjects':images,
-          'source_painted_as_text':False,'no_duplicate_corrupt_source_text_layer_by_design':True,
+          'source_painted_as_text':False,'authorial_text_spans':authorial_total,
+          'one_semantic_text_span_per_phrase':authorial_total==12,
+          'no_duplicate_corrupt_source_text_layer_by_design':True,
           'first_300_extracted_chars':text[:300],
           'results':results,
           'only_12_excerpt_phrases':True,
@@ -88,7 +105,8 @@ def main():
     args.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n','utf8')
     print('GNAMMA_VECTOR_OUTLINE_NATIVE_QA',json.dumps({
         k:report[k] for k in ['native_hits','source_phrases','correct_geometry_hits',
-          'source_clean_copy_hits','source_65_found','contains_explicit_cid_to_unicode_font',
+          'source_clean_copy_hits','one_semantic_text_span_per_phrase',
+          'source_65_found','contains_explicit_cid_to_unicode_font',
           'pdf_vector_path_groups','image_xobjects','general_release_approved']
     },ensure_ascii=False),flush=True)
     if not fontname or images:
