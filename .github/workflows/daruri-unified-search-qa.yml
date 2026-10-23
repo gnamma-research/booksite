@@ -22,6 +22,7 @@ on:
       - 'daruri/build/propose_dictionary_morphology.py'
       - 'daruri/qa/test-dictionary-morphology.py'
       - 'daruri/build/apply_morph_reviews.py'
+      - 'daruri/build/enrich_morph_roots.py'
       - 'daruri/build/export_morph_review.py'
       - 'daruri/gnamma-scholarly.js'
       - 'daruri/gnamma-scholarly.css'
@@ -60,6 +61,7 @@ on:
       - 'daruri/build/propose_dictionary_morphology.py'
       - 'daruri/qa/test-dictionary-morphology.py'
       - 'daruri/build/apply_morph_reviews.py'
+      - 'daruri/build/enrich_morph_roots.py'
       - 'daruri/build/export_morph_review.py'
       - 'daruri/gnamma-scholarly.js'
       - 'daruri/gnamma-scholarly.css'
@@ -108,6 +110,7 @@ jobs:
           python3 -m py_compile daruri/build/propose_dictionary_morphology.py
           python3 daruri/qa/test-dictionary-morphology.py
           python3 -m py_compile daruri/build/apply_morph_reviews.py
+          python3 -m py_compile daruri/build/enrich_morph_roots.py
           python3 daruri/qa/test-morphology-build.py
       - name: Run Daruri browser search tests
         run: |
