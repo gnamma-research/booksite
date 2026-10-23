@@ -10,7 +10,8 @@ const normalize=s=>String(s||'').replace(/[\u064b-\u065f\u0670\u0640\u06d6-\u06e
 const escape=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const srcScript=file=>new Promise((resolve,reject)=>{
  const script=document.createElement('script');script.async=true;
- script.src=new URL(file+'?v='+REV,SCRIPT).href;
+ const version=file==='quran-context-data.js'?'20261022-qcontext1':file==='hadith-context-data.js'?'20261023-hctx1':REV;
+ script.src=new URL(file+'?v='+version,SCRIPT).href;
  script.onload=()=>resolve();script.onerror=()=>reject(Error('Unavailable local source: '+file));
  document.head.append(script);
 });
