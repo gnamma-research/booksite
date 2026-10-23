@@ -106,6 +106,7 @@
   const model={available,orderItems,dateLine,entryText,verifiedPage,isNote,isBookmark,normalizeDesk,requiresAppendix};
   window.GnammaPersonalExportModel=model;
   let manifest=null,records=[],selectedIds=new Set(),busy=false,resultURL=null,resultFile=null;
+  const dynamicEditions=new Map(); // Volatile, browser-private; never uploaded.
   let baseMapCatalog=null;
   let storageListenerInstalled=false;
   let lastFilename='';
@@ -129,6 +130,8 @@
     return orderItems(rows,p.order);
   }
   function fileUrl(file){
+    const local=dynamicEditions.get(file);
+    if(local)return local.url;
     // Only filenames from the trusted manifest may ever be passed here.
     return new URL(file,URL_ROOT).href;
   }
@@ -364,29 +367,45 @@
     await loadPdfLib();
     progress('Checking source PDF and section map…',14);
     const docData=manifest.files[file];
-    const metadataPath=docData.metadata_path||('build/release/'+file+'.metadata.json');
-    const metaResponse=await fetch(new URL(metadataPath,URL_ROOT),{cache:'no-cache'});
-    if(!metaResponse.ok)throw Error('This PDF has no verified section map. Choose another edition or the unchanged file.');
-    const metadata=await metaResponse.json();
+    let metadata;
+    const locallyComposed=docData.dynamic?dynamicEditions.get(file):null;
+    if(docData.dynamic){
+      if(!locallyComposed)throw Error('This locally generated PDF is no longer available in memory. Generate it again.');
+      metadata=locallyComposed.metadata;
+    }else{
+      const metadataPath=docData.metadata_path||('build/release/'+file+'.metadata.json');
+      const metaResponse=await fetch(new URL(metadataPath,URL_ROOT),{cache:'no-cache'});
+      if(!metaResponse.ok)throw Error('This PDF has no verified section map. Choose another edition or the unchanged file.');
+      metadata=await metaResponse.json();
+    }
     if(!metadata.section_pages||metadata.filename!==file.split('/').pop())
       throw Error('Section map does not match the selected edition.');
     if(metadata.sha256!==docData.sha256)throw Error('The edition and its page map are out of sync. Reload later; the original PDF is available.');
-    const bytes=await checkedBytes(fileUrl(file),docData.sha256);
+    const bytes=locallyComposed?locallyComposed.bytes.buffer.slice(
+      locallyComposed.bytes.byteOffset,
+      locallyComposed.bytes.byteOffset+locallyComposed.bytes.byteLength):
+      await checkedBytes(fileUrl(file),docData.sha256);
+    if(locallyComposed&&await window.GnammaDynamicPdf.digest(bytes)!==docData.sha256)
+      throw Error('The locally composed PDF changed in memory. Generate a fresh copy.');
     progress('Preparing annotations…',34);
     const pdf=await window.PDFLib.PDFDocument.load(bytes,{updateMetadata:false});
     const basePageCount=pdf.getPageCount();
     const upgrade=window.GnammaPdfUpgrade;
     if(!upgrade)throw Error('Personal PDF navigation component missing. Reload the page.');
     let wordMap=null,verifiedMap=null,precise=0;
-    if(docData.map_path){
-      const mapResp=await fetch(new URL(docData.map_path,URL_ROOT),{cache:'no-cache'});
-      if(!mapResp.ok)throw Error('This apparatus PDF has no verified personal-note map.');
-      const raw=await mapResp.arrayBuffer();
-      if(!crypto?.subtle)throw Error('Secure checksum validation is required for apparatus maps.');
-      const computed=await crypto.subtle.digest('SHA-256',raw);
-      const hash=Array.from(new Uint8Array(computed),v=>v.toString(16).padStart(2,'0')).join('');
-      if(hash!==docData.map_sha256)throw Error('The apparatus map checksum does not match its published manifest.');
-      verifiedMap=JSON.parse(new TextDecoder().decode(raw));
+    if(docData.map_path||locallyComposed){
+      if(locallyComposed){
+        verifiedMap=locallyComposed.map;
+      }else{
+        const mapResp=await fetch(new URL(docData.map_path,URL_ROOT),{cache:'no-cache'});
+        if(!mapResp.ok)throw Error('This apparatus PDF has no verified personal-note map.');
+        const raw=await mapResp.arrayBuffer();
+        if(!crypto?.subtle)throw Error('Secure checksum validation is required for apparatus maps.');
+        const computed=await crypto.subtle.digest('SHA-256',raw);
+        const hash=Array.from(new Uint8Array(computed),v=>v.toString(16).padStart(2,'0')).join('');
+        if(hash!==docData.map_sha256)throw Error('The apparatus map checksum does not match its published manifest.');
+        verifiedMap=JSON.parse(new TextDecoder().decode(raw));
+      }
       if(verifiedMap.source_sha256!==metadata.sha256||
          verifiedMap.base_sha256!==metadata.base_sha256||
          Number(verifiedMap.section_count)!==258||Number(verifiedMap.coverage)!==1||
@@ -670,6 +689,76 @@
     // the same form and calls this bridge to select exactly the displayed PDF.
     window.GnammaPersonalExportInline={
       remount:()=>init(),
+      async registerDynamicEdition(spec){
+        if(busy||!manifest?.files)throw Error('Exporter not ready for a generated PDF');
+        if(!window.GnammaDynamicPdf?.digest)throw Error('Local Gnamma PDF validation is missing');
+        const pdf=spec?.bytes,metadata=spec?.metadata,map=spec?.map,file=spec?.file;
+        if(!(pdf instanceof Uint8Array)||!file||!/^generated-[a-f0-9]{16}\.pdf$/.test(file))
+          throw Error('Invalid private edition identity');
+        if(pdf.length<100||new TextDecoder().decode(pdf.slice(0,5))!=='%PDF-')
+          throw Error('This generated document is not a PDF');
+        const checksum=await window.GnammaDynamicPdf.digest(pdf);
+        if(metadata?.sha256!==checksum||map?.source_sha256!==checksum||
+           metadata.filename!==file||map?.filename!==file||
+           !/^[a-f0-9]{64}$/.test(checksum))
+          throw Error('Dynamic edition checksum or map identity mismatch');
+        if(map?.section_count!==258||Number(map.coverage)!==1||
+           Object.keys(map.section_pages||{}).length!==258||
+           Object.keys(map.anchors||{}).filter(k=>/^section-\d+$/.test(k)).length!==258)
+          throw Error('Dynamic edition has incomplete section destinations');
+        if(!Number.isInteger(metadata.pages)||metadata.pages<1)
+          throw Error('Generated PDF page count missing');
+        if(!spec.sourceBase||!spec.profile?.source_base||
+           spec.sourceBase!==spec.profile.source_base||
+           map.base_sha256!==spec.profile.base_sha256)
+          throw Error('Dynamic edition does not match a published source');
+        for(const i of Array.from({length:258},(_,n)=>n+1)){
+          const page=map.section_pages[String(i)];
+          if(!Number.isInteger(page)||page<1||page>metadata.pages)
+            throw Error('Generated edition has a broken section destination');
+        }
+        for(const [k,v] of dynamicEditions){URL.revokeObjectURL(v.url);delete manifest.files[k];}
+        dynamicEditions.clear();
+        const local={bytes:pdf,metadata,map,sha256:checksum,
+          url:URL.createObjectURL(new Blob([pdf],{type:'application/pdf'}))};
+        dynamicEditions.set(file,local);
+        manifest.files[file]={dynamic:true,sha256:checksum,pages:metadata.pages,
+          size_bytes:pdf.length,title:spec.title||'Locally composed Reading/Study PDF',
+          source_base:spec.sourceBase,arabic_form:spec.arabic_form||'vocalized'};
+        const option=document.createElement('option');option.value=file;
+        option.textContent=manifest.files[file].title+' · '+metadata.pages+' pages (local)';
+        for(const opt of [...$('pe-edition').options].filter(o=>o.value.startsWith('generated-')))
+          opt.remove();
+        $('pe-edition').append(option);
+        $('pe-edition').value=file;
+        syncForm();
+        return file;
+      },
+      invalidateDynamicEdition(fallbackFile){
+        // A previously generated local edition must never remain silently
+        // selected when the user changes the requested source configuration.
+        // Never rewrite, upload, or clear the underlying Reading Desk notes.
+        if(busy)throw Error('Complete the active personal PDF export before changing editions');
+        for(const [key,entry] of dynamicEditions){
+          URL.revokeObjectURL(entry.url);
+          delete manifest.files[key];
+        }
+        dynamicEditions.clear();
+        for(const option of [...$('pe-edition').options].filter(option=>
+          option.value.startsWith('generated-')))option.remove();
+        if(resultURL){URL.revokeObjectURL(resultURL);resultURL=null;resultFile=null;}
+        $('pe-result').hidden=true;
+        $('pe-result-link').removeAttribute('href');
+        $('pe-open').removeAttribute('href');
+        const exact=String(fallbackFile||'');
+        // If this exact approved fallback is unavailable, export stays
+        // disabled; never substitute an unrelated edition.
+        const usable=!!manifest?.files?.[exact]&&
+          [...$('pe-edition').options].some(option=>option.value===exact);
+        $('pe-edition').value=usable?exact:'';
+        syncForm();
+        return usable;
+      },
       choose(file){
         if(!manifest?.files?.[file]){$('pe-edition').value='';syncForm();return false;}
         $('pe-edition').value=file;syncForm();return true;

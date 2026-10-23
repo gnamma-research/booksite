@@ -131,6 +131,7 @@ def render_component(name: str) -> str:
     }[name]()
 
 def build_appendix(names: tuple[str, ...]) -> bytes:
+    """Render exactly the currently approved A4 scholarly apparatus."""
     sections = "".join(render_component(name) for name in names)
     html = '<!doctype html><html><head><meta charset="utf-8"><style>' + CSS + \
            '</style></head><body>' + sections + '</body></html>'
