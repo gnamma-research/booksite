@@ -1,0 +1,63 @@
+name: Daruri Stage2 full 414 unvowelled Typst WASM Arabic reader QA (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-stage2-typst-fullplain-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/verify_all_414.py'
+      - '.github/workflows/daruri-stage2-typst-fullplain.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-stage2-fullplain-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  typst-full-plain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        font: [sans, amiri]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Create exactly the original 414 bilingual segments with verified SHA
+        run: |
+          python daruri/qa/stage2_shootout/source_fixture.py /tmp/stage2-full-${{ matrix.font }}/source.json
+      - name: Install pinned WASM compiler and original Arabic fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core fonts-hosny-amiri poppler-utils qpdf
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          python -m pip install -q PyMuPDF==1.26.7 pypdfium2==5.4.0
+      - name: Compile entire original Arabic (unvowelled) with real English in Typst WASM
+        env:
+          STAGE2_FIXTURE: /tmp/stage2-full-${{ matrix.font }}/source.json
+          STAGE2_OUTPUT: /tmp/stage2-full-${{ matrix.font }}
+          STAGE2_CORPUS: full
+          STAGE2_ARABIC_MODE: unvowelled
+          STAGE2_ARABIC_FONT: ${{ matrix.font }}
+        run: |
+          node daruri/qa/stage2_shootout/typst_node.mjs
+          pdf=/tmp/stage2-full-${{ matrix.font }}/typst-wasm-full-plain-${{ matrix.font }}.pdf
+          qpdf --check "$pdf"
+          pdfinfo "$pdf" | grep -E 'Pages:|Page size:|File size:'
+      - name: Search every original Arabic paragraph in MuPDF, PDFium and Poppler
+        run: |
+          python daruri/qa/stage2_shootout/verify_all_414.py \
+            /tmp/stage2-full-${{ matrix.font }}/typst-wasm-full-plain-${{ matrix.font }}.pdf \
+            /tmp/stage2-full-${{ matrix.font }}/source.json \
+            /tmp/stage2-full-${{ matrix.font }}/native-414.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-typst-414-source-${{ matrix.font }}-NONRELEASE
+          path: /tmp/stage2-full-${{ matrix.font }}
+          if-no-files-found: warn
+          retention-days: 14
