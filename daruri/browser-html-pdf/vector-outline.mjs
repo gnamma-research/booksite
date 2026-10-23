@@ -16,7 +16,8 @@ const pageElement=document.getElementById('vector-page');
 const listElement=document.getElementById('vector-rows');
 const statusElement=document.getElementById('qa-status');
 const makeButton=document.getElementById('make');
-const logicalOrder=new URL(location.href).searchParams.get('order')==='forward'?'forward':'reverse';
+const requestedOrder=new URL(location.href).searchParams.get('order');
+const logicalOrder=['forward','reverse','grapheme'].includes(requestedOrder)?requestedOrder:'reverse';
 const emitStatus=(phase,message,other={})=>{
   statusElement.textContent=message;
   window.__gnammaVectorStatus={phase,message,logical_order:logicalOrder,...other};
@@ -135,7 +136,15 @@ function drawSourceGlyphs(page,kitFont,phrase,x,y,size){
 function drawOnlyOriginalUnicode(page,font,phrase,x,y,size,visibleWidth){
   // PDFKit indexes reversed scalar order for Arabic shaped RTL; the forward
   // control is independently generated in CI, rather than assumed correct.
-  const cps=Array.from(logicalOrder==='reverse'?Array.from(phrase).reverse().join(''):phrase);
+  // Preserve the source's base+harakat grapheme associations. Reversing
+  // scalars alone moves the final diacritic to the start of each PDF word.
+  // This third, genuinely different test compares source-grapheme reversal
+  // against the earlier forward and scalar-reversed control PDFs.
+  const sequenced=logicalOrder==='grapheme'
+    ?Array.from(new Intl.Segmenter('ar',{granularity:'grapheme'}).segment(phrase),
+      part=>part.segment).reverse().join('')
+    :logicalOrder==='reverse'?Array.from(phrase).reverse().join(''):phrase;
+  const cps=Array.from(sequenced);
   const encoded=cps.map(ch=>{
     const code=font.codes.get(ch);
     if(!code)throw Error('Unicode layer dropped scalar '+ch.codePointAt(0).toString(16));
