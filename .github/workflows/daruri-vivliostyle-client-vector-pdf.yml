@@ -1,0 +1,97 @@
+name: Daruri true browser Vivliostyle paged HTML to real searchable PDF proof
+on:
+  push:
+    branches: [research/daruri-vivliostyle-client-pdf-20261023]
+    paths:
+      - 'daruri/qa/browser_pdf_vivliostyle_probe.js'
+      - 'daruri/qa/browser_pdf_vivliostyle_probe.html'
+      - '.github/workflows/daruri-vivliostyle-client-vector-pdf.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-true-vivliostyle-html-pdf-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  real-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 32
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - mode: hello
+            engine: chromium
+            port: 8920
+            timeout: 40000
+          - mode: arabic-mini
+            engine: chromium
+            port: 8921
+            timeout: 40000
+          - mode: excerpt
+            engine: chromium
+            port: 8922
+            timeout: 75000
+          - mode: excerpt
+            engine: webkit
+            port: 8923
+            timeout: 75000
+          - mode: english-full
+            engine: chromium
+            port: 8924
+            timeout: 120000
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned Vitliostyle page layout / LGPL PDF vector emitter and browsers
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/qa \
+            @vivliostyle/print@2.45.3 pages-to-pdf@0.4.1 esbuild@0.25.12 playwright@1.56.1
+          cd daruri/qa
+          if [ '${{ matrix.engine }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Bundle Vivliostyle client, including real vector PDF writer
+        run: |
+          daruri/qa/node_modules/.bin/esbuild \
+            daruri/qa/browser_pdf_vivliostyle_probe.js --bundle --platform=browser \
+            --target=es2022 --format=iife \
+            --outfile=daruri/qa/browser_pdf_vivliostyle.bundle.js
+      - name: Prepare immutable Gnamma R001-R258 authorial Arabic/English fixtures
+        run: python daruri/qa/build_browser_pdf_canonical_fixture.py
+      - name: Run PDF-generation inside real Chromium/WebKit, never print dialog or server PDF
+        env:
+          GN_BROWSER: ${{ matrix.engine }}
+          GN_PDF_SCENARIO: ${{ matrix.mode }}
+          GN_BROWSER_PORT: ${{ matrix.port }}
+          GN_PDF_TIMEOUT: ${{ matrix.timeout }}
+          GN_PDF_PAGE: /daruri/qa/browser_pdf_vivliostyle_probe.html
+          GN_PDF_OUT: /tmp/daruri-vivlio-${{ matrix.engine }}-${{ matrix.mode }}
+        run: node daruri/qa/verify_true_browser_pdf.cjs
+      - name: Audit actual PDF/Unicode and original excerpt footnotes where applicable
+        if: always()
+        run: |
+          python -m pip install --disable-pip-version-check 'PyMuPDF==1.26.7' 'pypdfium2==5.8.0'
+          python - <<'PY'
+          from pathlib import Path
+          import fitz
+          p=Path('/tmp/daruri-vivlio-${{ matrix.engine }}-${{ matrix.mode }}')
+          for pdfpath in p.glob('*.pdf'):
+            with fitz.open(pdfpath) as pdf:
+              words=''.join(page.get_text() for page in pdf)
+              print('REAL_VIVLIO_BROWSER_QA',pdfpath.name,'pages',len(pdf),'text_characters',len(words),'source65','وَفِي' in words,'body_note','footnote' in words)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Daruri-Vivliostyle-real-client-PDF-${{ matrix.engine }}-${{ matrix.mode }}-NONRELEASE
+          path: /tmp/daruri-vivlio-${{ matrix.engine }}-${{ matrix.mode }}/
+          retention-days: 15
+          if-no-files-found: warn
