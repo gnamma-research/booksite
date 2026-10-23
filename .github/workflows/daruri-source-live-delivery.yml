@@ -1,0 +1,79 @@
+name: Daruri source ZIP live delivery and checksum
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/daruri-source-live-delivery.yml'
+      - 'daruri/source-archive-manifest.json'
+      - 'daruri/source/Daruri_Portable_Scholarly_Source.zip'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  live-source-zip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify live published ZIP, MIME, checksum, and exact release manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib,io,json,pathlib,time,urllib.request,urllib.error,zipfile
+          from urllib.parse import urlparse
+          release=json.loads(pathlib.Path('daruri/source-archive-manifest.json').read_text('utf-8'))
+          assert release['schema']=='gnamma-daruri-source-archive-v1'
+          assert release['status']=='published'
+          assert release['rights_review']=='approved'
+          assert release['editorial_review']=='approved'
+          local=pathlib.Path('daruri')/release['file']
+          data=local.read_bytes()
+          assert hashlib.sha256(data).hexdigest()==release['sha256']
+          assert len(data)==release['size_bytes']
+          origin='https://gnamma-research.github.io'
+          site=origin+'/booksite/daruri/'
+          archive_url=site+release['file']+'?v='+release['sha256'][:12]
+          manifest_url=site+'source-archive-manifest.json?v='+release['sha256'][:12]
+          def request(url,method='GET'):
+              r=urllib.request.Request(url,method=method,headers={
+                  'User-Agent':'Gnamma-Source-Release-CI/1.0',
+                  'Cache-Control':'no-cache'})
+              with urllib.request.urlopen(r,timeout=25) as response:
+                  assert response.status==200
+                  assert urlparse(response.url).netloc==urlparse(origin).netloc
+                  return response.headers, response.read()
+          last=None
+          for attempt in range(12):
+              try:
+                  head,_=request(archive_url,'HEAD')
+                  ctype=head.get_content_type().lower()
+                  assert ctype in ('application/zip','application/x-zip-compressed','application/octet-stream'), ctype
+                  length=head.get('Content-Length')
+                  if length is not None:assert int(length)==release['size_bytes']
+                  remote_headers,remote_bytes=request(archive_url)
+                  assert remote_bytes.startswith(b'PK\x03\x04')
+                  assert len(remote_bytes)==release['size_bytes']
+                  assert hashlib.sha256(remote_bytes).hexdigest()==release['sha256']
+                  _,manifest_data=request(manifest_url)
+                  published=json.loads(manifest_data)
+                  assert published==release,'Public manifest differs from repository'
+                  with zipfile.ZipFile(io.BytesIO(remote_bytes)) as z:
+                      assert len(z.namelist())==18 and z.testzip() is None
+                      assert 'daruri-source.json' in z.namelist()
+                      assert 'daruri.tei.xml' in z.namelist()
+                  print('LIVE_DARURI_SOURCE_ZIP_PASS',release['sha256'],
+                        len(remote_bytes),ctype,archive_url)
+                  break
+              except (AssertionError,urllib.error.URLError,TimeoutError,ValueError) as exc:
+                  last=exc
+                  if attempt==11:raise
+                  print('Pages propagation not yet complete:',str(exc),'retry',attempt+1,flush=True)
+                  time.sleep(8)
+          PY
