@@ -68,6 +68,7 @@ function create(ctx){
  const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
  const printPrefs={scope:'visible',order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
  let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,writeConflict=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='',relinkFocus=null;
+ let lastTermOrigin=null;
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
  // Keep one canonical saved reference, plus the reading places where it was saved.
@@ -89,6 +90,9 @@ function create(ctx){
  }
  function readingOriginFor(target){
   if(state.route!=='reader'||!target||!['dictionary','index','application','lesson'].includes(target.kind))return null;
+  if(target.kind==='dictionary'&&lastTermOrigin?.term===target.term&&
+    Date.now()-lastTermOrigin.at<1800000&&section(lastTermOrigin.section))
+   return {section:lastTermOrigin.section,segment:lastTermOrigin.segment};
   const reader=document.getElementById('reader'),last=window.__termClickOrigin;
   const anchor=target.kind==='dictionary'&&last?.dataset?.term===target.term&&
    reader?.contains(last)?last:null;
@@ -1479,6 +1483,19 @@ function create(ctx){
   printRoot.querySelector('[data-rd="download-pdf"]')?.focus({preventScroll:true});
  }
  function handle(event){
+  // Capture before the reader's dictionary overlay clears __termClickOrigin.
+  // The saved reference can then retain its exact paragraph, not just §.
+  const clickedTerm=event.target.closest?.('[data-term]');
+  const sourceReader=document.getElementById('reader');
+  if(clickedTerm&&state.route==='reader'&&sourceReader?.contains(clickedTerm)){
+   const grid=clickedTerm.closest('.passage-grid');
+   const n=String(grid?.closest('[data-reading-section]')?.dataset.readingSection||
+    clickedTerm.closest('[data-reading-section]')?.dataset.readingSection||state.n||'');
+   const raw=grid?.dataset.segment;
+   const p=raw!==undefined&&Number.isInteger(Number(raw))&&Number(raw)>=0?Number(raw):null;
+   if(section(n))lastTermOrigin={term:clickedTerm.dataset.term,section:n,
+    segment:p!==null&&p<(section(n).segments||[]).length?p:null,at:Date.now()};
+  }
   const btn=event.target.closest?.('[data-rd]');if(!btn)return;
   event.preventDefault();event.stopImmediatePropagation();
   const id=btn.dataset.id,action=btn.dataset.rd,row=records.find(r=>r.id===id);
@@ -1714,7 +1731,7 @@ function create(ctx){
     }
     if(row.target?.kind==='dictionary'&&!row.target.historical&&state.route==='reader'){
      // A saved term opened from the dock is not a new inline-word click.
-     window.__termClickOrigin=null;
+     lastTermOrigin=null;window.__termClickOrigin=null;
      ctx.showTermDetail(row.target.term);decorate();return true;
     }
     openSource(row);return true;
