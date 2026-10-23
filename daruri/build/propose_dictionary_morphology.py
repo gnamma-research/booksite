@@ -215,7 +215,7 @@ def propose(index: dict, texts: dict[str, str], lexicon: dict[str, list[dict]]):
             })
     totals["candidate_occurrences"] = sum(len(builder.words(texts[rid]))
         for rid in (index.get("processedIds") or [r["id"] for r in index.get("records", [])]))
-    return rows, dict(totals)
+    return rows, {"missing_model_analysis": 0, **dict(totals)}
 
 
 def main() -> None:
