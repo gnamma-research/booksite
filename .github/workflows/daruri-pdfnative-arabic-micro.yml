@@ -1,0 +1,45 @@
+name: Daruri alternative pdfnative Unicode semantics A/B (independent micro)
+on:
+  push:
+    branches: [experiment/daruri-browser-html-to-pdf-vivliostyle-20261023]
+    paths:
+      - 'daruri/qa/pdfnative_semantic_micro.mjs'
+      - 'daruri/qa/verify_pdfnative_micro.py'
+      - '.github/workflows/daruri-pdfnative-arabic-micro.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  semantic-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build 11 real Arabic passages from canonical source, never from PDF/OCR
+        run: |
+          python daruri/browser-html-pdf/build_fixture.py --out daruri/browser-html-pdf/fixture.json
+      - name: Install separately licensed MIT Arabic PDF semantics engine
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/qa pdfnative@1.8.0
+          python -m pip install -q 'PyMuPDF==1.26.7'
+      - name: Build tagged and untagged pure-JS Arabic PDF alternatives
+        run: |
+          node daruri/qa/pdfnative_semantic_micro.mjs
+      - name: Independently check all 11 source paragraphs in native PDF reader
+        run: |
+          python daruri/qa/verify_pdfnative_micro.py /tmp/daruri-pdfnative-qa daruri/browser-html-pdf/fixture.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-pdfnative-alternative-text-semantic-NONRELEASE
+          path: |
+            /tmp/daruri-pdfnative-qa/*-native.json
+            /tmp/daruri-pdfnative-qa/*.pdf
+          retention-days: 14
+          if-no-files-found: warn
