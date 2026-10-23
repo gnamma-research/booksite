@@ -467,7 +467,7 @@ window.DARURI_SOURCE_REFERENCES = {
   css.rel = 'stylesheet'; css.href = new URL('hadith-context-ui.css?v=20261023-hadithux3', base).href;
   document.head.appendChild(css);
   var js = document.createElement('script');
-  js.src = new URL('hadith-context-ui.js?v=20261023-hadith-col2', base).href;
+  js.src = new URL('hadith-context-ui.js?v=20261023-hadithlinks1', base).href;
   js.async = false; document.head.appendChild(js);
   /* Inline H source links are independent of the lazy expanded Hadith corpus. */
   var inline = document.createElement('script');
