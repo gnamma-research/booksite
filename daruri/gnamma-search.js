@@ -707,7 +707,9 @@ function gnLoadSaved(){
 }
 function gnSaveCurrent(){
  if(!ui.query.trim())return;
- const text=$('#gns-save-name',host)?.value?.trim().slice(0,80)||ui.query.slice(0,60);
+ const chosen=ui.expanded&&ui.mobileView==='saved'?
+  $('#gns-save-name-mobile',host):$('#gns-save-name',host);
+ const text=chosen?.value?.trim().slice(0,80)||ui.query.slice(0,60);
  const list=gnLoadSaved(),record={id:Date.now()+'-'+Math.round(Math.random()*10000),
   name:text,query:ui.query,mode:ui.mode,scope:ui.scope,facet:ui.facet,
   sort:ui.sort,booleanScope:ui.booleanScope,orthography:ui.orthography,
@@ -724,13 +726,13 @@ function gnLoadSavedQuery(index){
  ui.expanded=true;ui.savedOpen=true;ui.mobileView='results';ui.page=CONFIG.pageSize;ui.pendingReturn=null;
  rerender();
 }
-function gnSavedPanel(){
+function gnSavedPanel(mobile=false){
  const rows=gnLoadSaved();
  return '<details class="gns-saved" data-gns-details="saved"'+(ui.savedOpen?' open':'')+'>'+
   '<summary>Saved searches'+(rows.length?' ('+rows.length+')':'')+'</summary>'+
   '<div class="gns-saved-content">'+
    '<p>Saved only in this browser. No search query or private notes are uploaded.</p>'+
-   '<div class="gns-save-controls"><input id="gns-save-name" type="text" maxlength="80" placeholder="Optional search title" '+
+   '<div class="gns-save-controls"><input id="'+(mobile?'gns-save-name-mobile':'gns-save-name')+'" type="text" maxlength="80" placeholder="Optional search title" '+
     'aria-label="Title for saved search"/><button type="button" data-gns-save="1">Save current search</button></div>'+
     (rows.length?'<div class="gns-saved-list">'+rows.map((r,i)=>
      '<div class="gns-saved-item"><button data-gns-load="'+i+'" title="'+xml(r.query)+'">'+
@@ -993,7 +995,7 @@ function markup(){
    filterPanel()+workspace;
  const mobileSaved=ui.expanded?'<div class="gns-mobile-saved-view" aria-label="Saved research searches">'+
    '<div class="gns-mobile-build-title"><strong>Saved searches</strong><button type="button" data-gns-mobile-view="results">Back to results</button></div>'+
-   gnSavedPanel()+'</div>':'';
+   gnSavedPanel(true)+'</div>':'';
  const mobileBuildActions=ui.expanded?'<div class="gns-mobile-build-actions">'+
    '<button type="button" data-gns-mobile-view="results">Show '+ui.resultCount.toLocaleString()+' results</button></div>':'';
  return '<div class="gns-backdrop" data-gns-close="1"></div>'+
