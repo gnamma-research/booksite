@@ -1,0 +1,82 @@
+name: Daruri Downloads UX asset handoff
+
+on:
+  push:
+    branches: [feature/daruri-downloads-responsive-purpose-ui-20261023]
+    paths:
+      - '.github/workflows/daruri-downloads-purpose-assets.yml'
+  workflow_dispatch:
+
+permissions: {contents: write}
+concurrency:
+  group: daruri-downloads-purpose-asset-handoff
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Atomically update only Download-route runtime references
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          root=Path('daruri')
+          token='20261023-downloads-purpose1'
+          html=root/'index.html'
+          source=html.read_text('utf-8')
+          assert len(source)>1000000, 'Unexpected reader document'
+          updated=source
+          for name in ('editions-selector.js','editions-selector.css'):
+              pattern=re.compile(re.escape(name)+r'\?v=[A-Za-z0-9._-]+')
+              updated,count=pattern.subn(name+'?v='+token,updated)
+              assert 1<=count<=10,(name,count)
+          assert len(updated)>1000000
+          assert updated.count('data-route="editions"')==source.count('data-route="editions"')
+          assert updated.count('daruri-study-guide.pdf')==source.count('daruri-study-guide.pdf')
+          html.write_text(updated,'utf-8')
+          worker=root/'sw.js'
+          sw=worker.read_text('utf-8')
+          assert sw.startswith('const NAME=') and 'const CORE=[' in sw
+          sw=re.sub(r'(const NAME=")[^"]+(")',r'\1daruri-reader-'+token+r'\2',sw,count=1)
+          core='const CORE=['
+          add=core+"'editions-selector.js?v="+token+"','editions-selector.css?v="+token+"',"
+          assert sw.count(core)==1
+          sw=sw.replace(core,add,1)
+          worker.write_text(sw,'utf-8')
+          bundle=root/'download-bundle.js'
+          b=bundle.read_text('utf-8')
+          assert 'function sourceFiles(' in b
+          assert b.count('editions-selector.js\',\'editions-selector.js?v=')==1
+          assert b.count('editions-selector.css\',\'editions-selector.css?v=')==1
+          b=re.sub(r"(\['daruri/editions-selector\.js','editions-selector\.js\?v=)[^']+('])",
+                   lambda m:m.group(1)+token+m.group(2),b,count=1)
+          b=re.sub(r"(\['daruri/editions-selector\.css','editions-selector\.css\?v=)[^']+('])",
+                   lambda m:m.group(1)+token+m.group(2),b,count=1)
+          b=re.sub(r'(const RELEASE_VERSION = ")[^"]+(")',lambda m:m.group(1)+token+m.group(2),b,count=1)
+          bundle.write_text(b,'utf-8')
+          print('DOWNLOAD_RUNTIME_REFRESH',token,len(updated),len(sw),len(b))
+          PY
+          node --check daruri/editions-selector.js
+          node --check daruri/download-bundle.js
+          node --check daruri/sw.js
+          node --check daruri/qa/verify-published-selector.cjs
+          git diff --stat
+      - name: Commit revised references to isolated PR branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add daruri/index.html daruri/sw.js daruri/download-bundle.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh Downloads selector/CSS cache identities in reader and offline bundle"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
