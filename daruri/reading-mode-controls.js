@@ -242,7 +242,7 @@ function create({state,rd}){
    const symbols=document.createElement('span');symbols.className='gn-dock-summary-symbols';
    for(const category of categories){
     const count=groups.get(category.id).length;if(!count)continue;
-    const pair=document.createElement('span');pair.className='gn-dock-summary-pair';
+    const pair=document.createElement('span');pair.className='gn-dock-summary-pair';pair.dataset.gnMark=category.id;
     const number=document.createElement('span');number.className='gn-dock-count';
     number.textContent=count;pair.append(displaySymbol(category),number);
     symbols.append(pair);
