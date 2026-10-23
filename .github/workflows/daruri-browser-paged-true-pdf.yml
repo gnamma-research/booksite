@@ -54,7 +54,7 @@ jobs:
           fi
       - name: Bundle open-source paged-media-to-real-PDF client (no backend service)
         run: |
-          node daruri/qa/node_modules/esbuild/bin/esbuild \
+          daruri/qa/node_modules/.bin/esbuild \
             daruri/qa/browser_pdf_paged_probe.js --bundle --platform=browser \
             --target=es2022 --format=iife \
             --outfile=daruri/qa/browser_pdf_paged.bundle.js
