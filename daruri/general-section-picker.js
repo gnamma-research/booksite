@@ -103,10 +103,10 @@
     footer.className='gn-picker-footer';
     footer.innerHTML='<button type="button" data-picker-full-contents>'+
       '<span aria-hidden="true">☷</span> View full book contents <span aria-hidden="true">↗</span></button>';
-    dialog.appendChild(footer);
+    if(typeof context.openFullContents==='function')dialog.appendChild(footer);
     // Keep the existing Recent + Back/Forward controls and their event listeners.
     // Recent is a navigation-history area, not a bookmarks/Reading Desk link.
-    if(recent)dialog.insertBefore(recent,footer);
+    if(recent){if(footer.parentNode)dialog.insertBefore(recent,footer);else dialog.appendChild(recent);}
     var folder=null,shown=INITIAL_LIMIT,lastQuery='';
     function chain(node) {
       var out=[];for(var cur=node;cur;cur=cur.parent)out.unshift(cur);return out;
@@ -120,7 +120,8 @@
     }
     function renderCrumbs() {
       var path=chain(folder);
-      var html='<button type="button" class="gn-picker-crumb" data-picker-root>All parts</button>';
+      var rootLabel=model.roots.some(function(node){return node.kind==='book';})?'Book outline':'All parts';
+      var html='<button type="button" class="gn-picker-crumb" data-picker-root>'+rootLabel+'</button>';
       path.forEach(function(node,index){
         html+='<span class="gn-picker-divider" aria-hidden="true">›</span>'+
           '<button type="button" class="gn-picker-crumb'+(index===path.length-1?' current':'')+
