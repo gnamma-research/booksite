@@ -75,6 +75,34 @@ async function test(name,fn){await fn();pass++;console.log('PASS '+name)}
    assert.match(out,/result/);
    await page.locator('[data-gns-close="1"]').last().click();
   });
+  await test('research search explains word forms, roots and concepts',async()=>{
+   await page.locator('#searchBtn').click();
+   await page.locator('[data-gns-expand="1"]').first().click();
+   const choices=await page.locator('#gns-mode option').allTextContents();
+   assert.ok(choices.some(x=>/Forms of one word/.test(x)));
+   assert.ok(choices.some(x=>/Root family/.test(x)));
+   assert.ok(choices.some(x=>/Scholarly concepts/.test(x)));
+   await page.locator('#gns-mode').selectOption('morph-lemma');
+   assert.match(await page.locator('#gns-mode-help').innerText(),/dictionary headword/);
+   assert.equal(await page.locator('.gns-extra-tools').getAttribute('open'),null);
+   await page.locator('.gns-extra-tools > summary').click();
+   assert.ok(await page.locator('#gns-display').count());
+   await page.locator('.gns-dialog [data-gns-close="1"]').click();
+  });
+  await test('clicked Arabic word identifies the correct source token',async()=>{
+   const found=await page.evaluate(()=>{
+    const grid=document.createElement('div');grid.className='passage-grid';
+    const content=document.createElement('div');content.className='passage-ar';
+    content.textContent='والعلم ثم العلم والعلم';
+    grid.append(content);document.body.append(grid);
+    const node=content.firstChild,offset=content.textContent.indexOf('العلم',2)+3;
+    const result=window.GnammaWordContext.locateOccurrence('العلم',grid,{node,offset});
+    grid.remove();return result;
+   });
+   assert.equal(found.position,2);
+   assert.equal(found.neighbours[0],'ثم');
+   assert.equal(found.neighbours[1],'والعلم');
+  });
   await test('word context keeps dictionary and search actions separate',async()=>{
    const output=await page.evaluate(async()=>{
     const node=document.querySelector('.passage-grid .passage-ar');
