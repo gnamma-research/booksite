@@ -671,3 +671,14 @@
 @media(prefers-reduced-motion:reduce){
   .gn-es .gn-es-personal-disclosure > summary::before{transition:none}
 }
+
+
+/* PDF action labels follow actual device behaviour. On Apple touch browsers
+   the single View PDF link is the primary action; saving uses Safari Share. */
+.gn-es .gn-es-ios-save-help{
+  margin:9px 2px 13px;
+  color:var(--es-muted);
+  font:400 12.5px/1.55 var(--sans,system-ui,sans-serif);
+  max-width:64ch;
+}
+.gn-es .gn-es-ios-save-help[hidden]{display:none!important}

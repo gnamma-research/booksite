@@ -5,7 +5,7 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "20261023-hadith-col2";
+  const RELEASE_VERSION = "20261023-apple-pdf-view1";
   const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "quran-context-data.js", "QURAN_CONTEXT_SOURCES.md", "hadith-context-ui.js", "hadith-context-ui.css", "hadith-inline-anchors.js", "hadith-context-data.js", "hadith-context-metadata.js", "hadith-context-arabic-bukhari1.js", "hadith-context-arabic-bukhari2.js", "hadith-context-arabic-muslim.js", "hadith-context-arabic-abudawud1.js", "hadith-context-arabic-abudawud2.js", "hadith-context-arabic-tirmidhi.js", "hadith-context-arabic-sunan.js", "HADITH_CONTEXT_SOURCES.md", "hadith-context-english-bukhari-a.js", "hadith-context-english-bukhari-b.js", "hadith-context-english-bukhari-long.js", "hadith-context-english-abudawud-a.js", "hadith-context-english-abudawud-b.js", "hadith-context-english-tirmidhi-a.js", "hadith-context-english-tirmidhi-b.js", "hadith-context-english-tirmidhi-c.js", "hadith-context-english-muslim.js", "hadith-context-english-other.js", "gnamma-morphology.js", "gnamma-word-context.js", "gnamma-word-context.css", "morph-lexicon.json", "morph-daruri-v1.json", "morph-mustasfa-v1.json", "download-bundle.js", "bookmark-ui.js", "bookmark-ui.css", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
@@ -198,8 +198,8 @@
       ['daruri/editions.css', 'editions.css?v=20261021-editiontabs-vowels-release1'],
       ['daruri/editions-icons.css','editions-icons.css?v=20261023-ar-overbar1'],
       ['daruri/editions-icons.js','editions-icons.js?v=20261023-personal-icons'],
-      ['daruri/editions-selector.js','editions-selector.js?v=20261023-downloads-purpose1'],
-      ['daruri/editions-selector.css','editions-selector.css?v=20261023-downloads-purpose1'],
+      ['daruri/editions-selector.js','editions-selector.js?v=20261023-apple-pdf-view1'],
+      ['daruri/editions-selector.css','editions-selector.css?v=20261023-apple-pdf-view1'],
       ['daruri/editions/manifest.json','editions/manifest.json?v=20261021-bilingual-vowels1'],
       ['daruri/editions/apparatus/manifest.json','editions/apparatus/manifest.json?v=20261021-a4-apparatus1'],
       ['daruri/editions/maps/manifest.json','editions/maps/manifest.json?v=20261022-base-personal-word-maps'],

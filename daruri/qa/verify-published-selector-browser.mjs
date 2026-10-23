@@ -71,6 +71,12 @@ try{
   assert.equal(await ui.locator('[data-es-action="download"]').isVisible(),true);
   assert.equal(await ui.locator('[data-es-action="download"]').getAttribute('href'),await link(),
     'Book PDF download and View PDF must refer to the identical published file');
+  assert.equal((await ui.locator('[data-es-action="open"] span').textContent()).trim(),
+    'View in browser','Desktop preview should say View in browser');
+  assert.equal(await ui.locator('[data-es-action="open"]').getAttribute('download'),null,
+    'Desktop View in browser is ordinary navigation, not a forced download');
+  assert.equal(await ui.locator('[data-es-ios-save-help]').isVisible(),false,
+    'iPhone/iPad saving directions must not appear on desktop');
   assert.equal(await status.isVisible(),false,'No success banner when a PDF is ready');
   const desktop=await page.evaluate(()=>{
     const nav=document.querySelector('.gn-es-download-types').getBoundingClientRect();
@@ -231,7 +237,48 @@ try{
   await page.setViewportSize({width:320,height:690});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth)<=2,'320px overflow');
   assert.deepEqual(errors,[],'Uncaught JavaScript runtime exceptions');
-  console.log('PASS: compact desktop navigation, four purpose downloads, single-click PDF, scholarly SHA, private PDF and mobile layout');
+
+  // Emulate an iPhone Safari user agent to verify the page shows only a
+  // truthful preview action. Chromium emulation checks our UI branch, not a
+  // claim that a physical device was tested.
+  const appleContext=await browser.newContext({
+    viewport:{width:390,height:844},deviceScaleFactor:2,isMobile:true,
+    hasTouch:true,acceptDownloads:true,reducedMotion:'reduce',
+    userAgent:'Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1'
+  });
+  try{
+    const applePage=await appleContext.newPage();
+    await applePage.goto(origin+'#editions',{waitUntil:'domcontentloaded',timeout:40000});
+    const appleUI=applePage.locator('.gn-es');
+    await appleUI.waitFor({timeout:40000});
+    await applePage.waitForFunction(()=>
+      window.GnammaEditions?.__getPublicationSelection?.().resolution==='ready',
+      {timeout:40000});
+    const appleView=appleUI.locator('[data-es-action="open"]');
+    assert.equal(await appleView.isVisible(),true,'Apple mobile must offer View PDF');
+    assert.equal(await appleUI.locator('[data-es-action="download"]').isVisible(),false,
+      'Apple mobile must not display redundant PDF Download');
+    assert.equal((await appleView.locator('span').textContent()).trim(),'View PDF');
+    assert.ok((await appleView.getAttribute('class')).includes('gn-es-action-primary'),
+      'View PDF must be the one prominent iPhone button');
+    assert.match(await appleView.getAttribute('href'),/reading\/daruri-reading-bilingual-titles-off\.pdf\?v=[a-f0-9]+/);
+    assert.equal(await appleView.getAttribute('download'),null);
+    assert.equal(await appleUI.locator('[data-es-ios-save-help]').isVisible(),true);
+    assert.match(await appleUI.locator('[data-es-ios-save-help]').textContent(),
+      /Share.*Save to Files/);
+    assert.ok(await applePage.evaluate(()=>
+      document.documentElement.scrollWidth-innerWidth)<=2,'iPhone preview UI must not overflow');
+    // The mobile preview-only rule must not interfere with personalized PDFs.
+    await appleUI.locator('.gn-es-personal-disclosure summary').click();
+    await appleUI.locator('#pe-personal').check();
+    assert.equal(await appleView.isVisible(),false);
+    assert.equal(await appleUI.locator('[data-es-ios-save-help]').isVisible(),false);
+    assert.equal(await appleUI.locator('#pe-generate').isVisible(),true);
+    await applePage.screenshot({path:path.join(captures,'daruri-downloads-iphone-preview.png')});
+  }finally{
+    await appleContext.close();
+  }
+  console.log('PASS: desktop Download + View in browser, Apple mobile View PDF + Save to Files, personal PDF and source/Study downloads');
 }finally{
   await context.close();
   await browser.close();
