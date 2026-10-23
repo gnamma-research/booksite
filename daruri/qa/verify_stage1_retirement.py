@@ -87,7 +87,7 @@ assert "data-es-stage1-create" in reader
 assert "dynamic-editions.html?" in reader
 assert "assembleOffThread" in client
 assert "restoreExactPublishedEdition" in client
-assert "editions/"+row["file"] not in reader for row in variants["files"]
+assert all(("editions/" + row["file"]) not in reader for row in variants["files"])
 
 print(json.dumps({
     "STAGE1_RETIREMENT_QA": "PASS",
