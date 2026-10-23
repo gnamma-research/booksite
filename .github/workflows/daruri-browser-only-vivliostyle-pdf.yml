@@ -25,6 +25,9 @@ jobs:
             mode: excerpt
           - browser: chromium
             mode: full
+          - browser: chromium
+            mode: excerpt
+            pdfua: true
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -59,6 +62,11 @@ jobs:
             echo '::error::No licensed font assets found in the installed browser PDF emitter';exit 1
           fi
           cp -a "$FOUND"/. "$ASSETS/fonts/"
+          ICC=$(find daruri/browser-html-pdf/node_modules -type d -path '*/pages-to-pdf/public/icc' | head -n 1 || true)
+          if [ -n "$ICC" ]; then
+            mkdir -p "$ASSETS/icc"
+            cp -a "$ICC"/. "$ASSETS/icc/"
+          fi
           ls -lh "$ASSETS/fonts/" | head -n 16
           # Runtime files are provided only to the ephemeral local test server.
           # They are never committed, downloaded as separate assets, or uploaded.
@@ -73,6 +81,7 @@ jobs:
         env:
           DARURI_BROWSER_ENGINE: ${{ matrix.browser }}
           DARURI_BROWSER_MODE: ${{ matrix.mode }}
+          DARURI_BROWSER_PDFUA: ${{ matrix.pdfua && '1' || '0' }}
           DARURI_BROWSER_OUTPUT: /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}
         run: node daruri/browser-html-pdf/test_browser.cjs
       - name: Independently measure native source copying/search, note placement, links and actual PDF vectors
@@ -101,7 +110,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: daruri-browser-html-pdf-${{ matrix.browser }}-${{ matrix.mode }}-NOT_RELEASED
+          name: daruri-browser-html-pdf-${{ matrix.browser }}-${{ matrix.mode }}-${{ matrix.pdfua && 'pdfua' || 'ordinary' }}-NOT_RELEASED
           path: |
             /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/browser-evidence.json
             /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/native-acceptance.json
