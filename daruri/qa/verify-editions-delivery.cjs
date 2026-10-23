@@ -70,8 +70,9 @@ assert(sw.includes('editions-selector.js?v='),'Offline shell caches selector');
 
 const sourceRelease=JSON.parse(get('source-archive-manifest.json'));
 const legacyEditions=get('editions.js');
-assert.equal(sourceRelease.status,'withheld','Source archive is not yet publicly released');
-assert.equal(sourceRelease.rights_review,'pending','Editorial reuse rights remain to be reviewed');
+assert.equal(sourceRelease.schema,'gnamma-daruri-source-archive-v1');
+assert.equal(sourceRelease.file,'source/Daruri_Portable_Scholarly_Source.zip');
+assert(['withheld','published'].includes(sourceRelease.status),'Release manifest status must be explicit');
 assert(!legacyEditions.includes('<h3>Study PDF</h3>') &&
        !legacyEditions.includes('<h3>Study Guide</h3>'),
   'Legacy fallback must not resurrect unrelated download cards');
@@ -117,7 +118,7 @@ const candidate={...sourceRelease,status:'published',
   version:'daruri-2026-10-23',source_commit:'a'.repeat(40),
   sha256:'b'.repeat(64),size_bytes:1818169};
 (async()=>{
-  const unpublished=sourceFixture(sourceRelease);
+  const unpublished=sourceFixture({...candidate,status:'withheld'});
   await unpublished.context.show(unpublished.view);
   assert.equal(unpublished.panel.hidden,true,'Withheld ZIP must not create a visible action');
   assert.equal(unpublished.heads,0,'Do not fetch withheld source artifacts');
