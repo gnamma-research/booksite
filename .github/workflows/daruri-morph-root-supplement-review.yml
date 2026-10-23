@@ -6,6 +6,8 @@ on:
       - experiment/contextual-root-hints-20261023
     paths:
       - '.github/workflows/daruri-morph-root-supplement-review.yml'
+      - 'daruri/build/enrich_morph_roots.py'
+      - 'daruri/qa/test-morphology-build.py'
 permissions:
   contents: read
   actions: read
@@ -38,6 +40,7 @@ jobs:
             --index "$RUNNER_TEMP/previous/morph-$WORK-v1.json" \
             --output "$RUNNER_TEMP/supplemented/morph-$WORK-root-hints.json" \
             > "$RUNNER_TEMP/supplemented/root-supplement-report.json"
+          python3 -m json.tool "$RUNNER_TEMP/supplemented/root-supplement-report.json" > /dev/null
           python3 daruri/build/pack_morph_context.py \
             --index "$RUNNER_TEMP/supplemented/morph-$WORK-root-hints.json" \
             --out-dir "$RUNNER_TEMP/supplemented/packed" \
