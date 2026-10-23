@@ -969,7 +969,7 @@ function facetSidebar(){
    '<div class="gns-aside-info">Source citations, terms and editorial comparisons are distinguished from the authorial text. Private notes are only searched on this device.</div></nav>';
 }
 function markup(){
- const tabs=filterButton('all','All',ui.facet==='all','quick')+
+ const tabs=ui.expanded?'<strong class="gns-research-caption">Research search</strong>':filterButton('all','All',ui.facet==='all','quick')+
   filterButton('text','Text',ui.facet==='text','quick')+
   filterButton('mine','Mine',ui.facet==='mine'||['personal','highlight','bookmark'].includes(ui.facet),'quick');
  return '<div class="gns-backdrop" data-gns-close="1"></div>'+
