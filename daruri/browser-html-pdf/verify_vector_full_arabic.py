@@ -52,9 +52,29 @@ def main():
     for rec in records:by_page[rec['page']].append(rec)
     with fitz.open(args.pdf) as pdf:
         assert len(pdf)==evidence['pages']
+        assert evidence['actualtext_on_original_single_CID'] is True
+        assert evidence['toUnicode_fallback_max_utf16be_bytes']==60
+        # Native readers cannot parse oversized /bfchar destination strings
+        # consistently. The complete source belongs to the marked-content
+        # ActualText of the same text operation, not its short CMap fallback.
+        ff=pdf[0].get_fonts(full=True)
+        type0=[q[0] for q in ff if q[3]=='GnammaVectorOriginalCID']
+        assert len(type0)==1,'Missing native source Unicode Type0 font'
+        obj=pdf.xref_object(type0[0])
+        match=re.search(r'/ToUnicode\\s+(\\d+)\\s+0\\s+R',obj)
+        assert match, 'No ToUnicode CMap on authorial text'
+        cmap=pdf.xref_stream(int(match.group(1)))
+        pairs=re.findall(rb'<([0-9A-Fa-f]{4})>\\s*<([0-9A-Fa-f]+)>',cmap)
+        assert len(pairs)>=len(set(row['phrase'] for row in records))
+        assert all(len(dest)//2<=60 for code,dest in pairs), 'Oversized broken ToUnicode destination'
+        counts['native_CMap_source_units']=len(pairs)
+        counts['max_cmap_bytes']=max(len(dest)//2 for code,dest in pairs)
         for page_no,p in enumerate(pdf):
             own=by_page[page_no+1]
             assert len(own) and len(own)<=12
+            painted=b''.join(pdf.xref_stream(xr) for xr in p.get_contents())
+            assert painted.count(b'/ActualText')==len(own), (
+                'Each source line must use one ActualText span and no duplicate source layer')
             counts['raster_images']+=len(p.get_images(full=True))
             counts['glyph_outline_paths']+=len(p.get_drawings())
             # Original reader search/copy regions are the acceptance unit, not
