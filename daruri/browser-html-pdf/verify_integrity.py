@@ -150,6 +150,9 @@ def measure(pdf: Path, fixture: Path, mode: str):
             "arabic_passages_with_all_five_words_present":ar_words,
             "english_passages_with_all_five_words_present":en_words,
             "text_length":len(text),
+            "stress_phrase_in_document":normalized(data["stress_phrase"]) in norm,
+            "synthetic_note_body_in_document":
+                normalized("Experimental inline reference") in norm,
             "raw_text_sample":text[:500]
         })
         # Copying hundreds of kilobytes of extracted text into the JSON report
@@ -163,8 +166,8 @@ def measure(pdf: Path, fixture: Path, mode: str):
         "text_in_original_logical_order":
             result["poppler"]["default"]["normalized_arabic_five_word_passages_in_order"]==len(expected_segments) and
             result["poppler"]["default"]["normalized_english_five_word_passages_in_order"]==len(expected_segments),
-        "footnote_65_source_contiguous":normalized(data["stress_phrase"]) in
-            normalized(result["poppler"]["default"].get("stdout","")),
+        "footnote_65_source_contiguous":
+            result["poppler"]["default"]["stress_phrase_in_document"],
         "requires_real_Study_118_note_QA":True,
         "must_not_delete_published_PDFs":True
     }
