@@ -29,7 +29,7 @@ async function check(engine,width,touch){
  page.on('pageerror',error=>errors.push(String(error.message)));
  try{
   await page.goto(HOST+'/daruri/#section=31',{waitUntil:'domcontentloaded',timeout:90000});
-  const marker=page.locator('.gn-hadith-inline-marker[data-gn-hadith-inline="HAD-R031"]').first();
+  const marker=page.locator('.gn-hadith-inline-marker[data-gn-hadith-inline="HAD-R031"]:visible').first();
   await marker.waitFor({timeout:40000});
   await marker.scrollIntoViewIfNeeded();
   await marker.focus();
