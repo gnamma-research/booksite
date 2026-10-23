@@ -134,13 +134,17 @@ function signedArabicFont(pdf,kit,fontBytes,phrases){
     lines.push(String(slice.length)+' beginbfchar');
     for(let k=0;k<slice.length;k++){
       const cid=(offset+k+1).toString(16).padStart(4,'0').toUpperCase();
-      const original=Array.from(slice[k]).map(ch=>{
+      // In native MuPDF/Poppler a bfchar destination >64 UTF-16BE bytes
+      // fails parsing and returns raw CIDs. Use a valid <=60-byte fallback;
+      // the *complete exact original line* lives on its single semantic
+      // painted text operation as /ActualText (not a second text layer).
+      const validUnicode=Array.from(slice[k]).slice(0,30).map(ch=>{
         const cp=ch.codePointAt(0);
-        if(cp>0xffff)throw Error('Unexpected non-BMP character in the canonical Arabic micro-proof');
+        if(cp>0xffff)throw Error('Unexpected non-BMP original Arabic');
         return cp.toString(16).padStart(4,'0').toUpperCase();
       }).join('');
-      if(original.length>512)throw Error('This phrase exceeds PDF ToUnicode entry limit');
-      lines.push('<'+cid+'> <'+original+'>');
+      if(validUnicode.length>120||!validUnicode)throw Error('Invalid safe ToUnicode source preview');
+      lines.push('<'+cid+'> <'+validUnicode+'>');
     }
     lines.push('endbfchar');
   }
@@ -153,7 +157,7 @@ function signedArabicFont(pdf,kit,fontBytes,phrases){
     Encoding:PDFName.of('Identity-H'),
     DescendantFonts:[descendant],ToUnicode:unicodeRef
   }));
-  return {ref:type0,codes,parsed};
+  return {ref:type0,codes,parsed,context:pdf.context};
 }
 
 function drawSourceGlyphs(page,kitFont,phrase,x,y,size){
@@ -215,29 +219,19 @@ function drawSourceGlyphs(page,kitFont,phrase,x,y,size){
 }
 
 function drawOnlyOriginalUnicode(page,font,phrase,x,y,size,visibleWidth){
-  // PDFKit indexes reversed scalar order for Arabic shaped RTL; the forward
-  // control is independently generated in CI, rather than assumed correct.
-  // Preserve the source's base+harakat grapheme associations. Reversing
-  // scalars alone moves the final diacritic to the start of each PDF word.
-  // This third, genuinely different test compares source-grapheme reversal
-  // against the earlier forward and scalar-reversed control PDFs.
-  const sequenced=logicalOrder==='grapheme'
-    ?Array.from(new Intl.Segmenter('ar',{granularity:'grapheme'}).segment(phrase),
-      part=>part.segment).reverse().join('')
-    :logicalOrder==='reverse'?Array.from(phrase).reverse().join(''):phrase;
-  // A phrase-atomic ToUnicode CID prevents a native RTL extractor from
-  // moving one word's final haraka to the beginning of another. This is
-  // a research trade-off: per-word selection is not yet certified.
-  const cps=logicalOrder==='phrase'?[phrase]:Array.from(sequenced);
-  const encoded=cps.map(ch=>{
-    const code=font.codes.get(ch);
-    if(!code)throw Error('Unicode layer dropped scalar '+ch.codePointAt(0).toString(16));
-    return code.toString(16).padStart(4,'0');
-  }).join('');
-  const nativeWidth=cps.length*size*.5;
-  const hz=Math.min(logicalOrder==='phrase'?2500:150,
-    Math.max(20,100*visibleWidth/nativeWidth));
+  // One original authorial line = one physical invisible CID text operation.
+  // /ActualText on THIS same text operation conveys the complete logical,
+  // vowelled source; there is no duplicate semantic overlay or painted
+  // glyph-to-broken-Unicode text to corrupt clipboard selection.
+  const code=font.codes.get(phrase);
+  if(!code)throw Error('Original source Unicode line was not registered');
+  const glyphBytes=code.toString(16).padStart(4,'0');
+  const nativeWidth=size*.5;
+  const hz=Math.min(2500,Math.max(20,100*visibleWidth/nativeWidth));
+  const fullSource=PDFHexString.fromText(phrase);
+  const mark=font.context.obj({ActualText:fullSource});
   page.pushOperators(
+    PDFOperator.of('BDC',[PDFName.of('Span'),mark]),
     PDFOperator.of('BT'),
     PDFOperator.of('Tf',[PDFName.of('GNOriginal'),PDFNumber.of(size)]),
     PDFOperator.of('Tr',[PDFNumber.of(3)]),
@@ -245,10 +239,12 @@ function drawOnlyOriginalUnicode(page,font,phrase,x,y,size,visibleWidth){
     PDFOperator.of('Tm',[
       PDFNumber.of(1),PDFNumber.of(0),PDFNumber.of(0),PDFNumber.of(1),
       PDFNumber.of(x),PDFNumber.of(y)]),
-    PDFOperator.of('Tj',[PDFHexString.of(encoded)]),
-    PDFOperator.of('ET')
+    PDFOperator.of('Tj',[PDFHexString.of(glyphBytes)]),
+    PDFOperator.of('ET'),
+    PDFOperator.of('EMC',[])
   );
-  return {cid_count:cps.length,horizontal_scale_percent:hz};
+  return {cid_count:1,horizontal_scale_percent:hz,
+    exact_source_from_actualtext:true};
 }
 
 async function generate(){
@@ -381,6 +377,8 @@ async function generate(){
     actual_publisher_study_notes_represented:false,
     exact_original_page_layout_certified:false,
     one_exact_unicode_cid_per_line:true,
+    actualtext_on_original_single_CID:true,
+    toUnicode_fallback_max_utf16be_bytes:60,
     word_level_selection_certified:false,
     original_published_pdf_inputs:0,server_pdf_generation:false,
     printed_pdf_dialog:false,production_approved:false,publication_approved:false
