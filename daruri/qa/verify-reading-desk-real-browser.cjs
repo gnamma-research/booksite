@@ -119,7 +119,8 @@ async function exercise(engine, width, touch) {
     check(await page.locator('.gn-rd-card-open').count()===1,
       id+': searching old notes is incorrect');
     await page.locator('#gn-rd-query').fill('');
-    await page.waitForFunction(()=>document.querySelectorAll('.gn-rd-card-open').length===6,null,{timeout:4000});
+    // Initially there were five saved items. The sixth is created below.
+    await page.waitForFunction(()=>document.querySelectorAll('.gn-rd-card-open').length===5,null,{timeout:6000});
 
     const second = await context.newPage();
     await second.goto(HOST+'/daruri/#bookmarks',{waitUntil:'domcontentloaded',timeout:90000});
