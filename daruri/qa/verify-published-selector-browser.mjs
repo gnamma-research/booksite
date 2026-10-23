@@ -4,6 +4,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import {chromium} from 'playwright';
 
 const origin='http://127.0.0.1:8123/daruri/';
@@ -67,10 +68,29 @@ try{
     'Offline HTML reader belongs inside Editions');
   assert.equal(await ui.getByRole('heading',{name:'Other downloads'}).count(),1,
     'The separate downloads should sit after the PDF edition action');
-  assert.equal(await ui.locator('[data-es-source]').isVisible(),false,
-    'Unapproved scholarly ZIP must not display a dead download link');
-  assert.equal(await ui.locator('[data-es-source-download]').getAttribute('href'),null,
-    'Unapproved scholarly ZIP must never have an active URL');
+  const sourceRelease=JSON.parse(fs.readFileSync('daruri/source-archive-manifest.json','utf8'));
+  const sourcePanel=ui.locator('[data-es-source]');
+  const sourceLink=ui.locator('[data-es-source-download]');
+  if(sourceRelease.status==='published'){
+    await sourcePanel.waitFor({state:'visible',timeout:20000});
+    assert.match(await sourceLink.getAttribute('href'),/\/source\/Daruri_Portable_Scholarly_Source\.zip\?v=[0-9a-f]{12}$/);
+    assert.equal(await sourceLink.getAttribute('download'),'Daruri_Portable_Scholarly_Source.zip');
+    assert.equal((await ui.locator('[data-es-source-hash]').textContent()).trim(),sourceRelease.sha256);
+    assert.equal(await ui.locator('.gn-es-source-more').count(),1,'Source detail disclosure belongs to research ZIP');
+    const received=page.waitForEvent('download',{timeout:30000});
+    await sourceLink.click();
+    const save=await received;
+    assert.equal(save.suggestedFilename(),'Daruri_Portable_Scholarly_Source.zip');
+    const payload=fs.readFileSync(await save.path());
+    assert.equal(payload.length,sourceRelease.size_bytes,'Downloaded source ZIP must have release size');
+    assert.equal(crypto.createHash('sha256').update(payload).digest('hex'),sourceRelease.sha256,
+      'Downloaded research archive must match the published ZIP SHA-256');
+  }else{
+    assert.equal(await sourcePanel.isVisible(),false,
+      'Unapproved scholarly ZIP must not display a dead download link');
+    assert.equal(await sourceLink.getAttribute('href'),null,
+      'Unapproved scholarly ZIP must never have an active URL');
+  }
   const alignment=await ui.locator('.gn-es-language-label').evaluateAll(nodes=>
     nodes.map(n=>{const r=n.getBoundingClientRect();return (r.top+r.bottom)/2;}));
   assert.ok(Math.abs(alignment[0]-alignment[1])<=1,

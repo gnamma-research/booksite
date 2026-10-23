@@ -367,12 +367,28 @@ Open the standalone HTML files directly; no web server, sign-in or network
 is required. No personal Reading Desk notes, private highlights, cookies,
 account data or passwords are present.
 
-Rights:
-The medieval authorial text, modern editorial collation, English translation,
-modern edition comparisons, historical lexicon quotations and other apparatus
-may have different rights/provenance. Public reuse or republication requires
-the project's stated licence and source permissions; this export does not
-create a blanket licence.
+Rights and source attribution:
+Ibn Rushd (d. 1198) is the historical author. The Gnamma Arabic reading text
+uses Jamal al-Din al-Alawi's printed 1994 edition with selected comparison
+to the Arabic edition and apparatus published by Ziad Bou Akl in 2015.
+The Escorial manuscript has NOT been newly collated by Gnamma.
+The modern editors' introductions, translations and apparatus are NOT
+licensed for independent republication by this download.
+
+The historical dictionary authors and works are individually identified in
+scholarly-data/full-headwords.json, including source-by-source digital witness
+URLs. Among the witnesses are OpenITI, Shamela, Wikisource, Arabic Lexicon
+and Arabic-keyboard.info. The historical wording is distinct from modern
+digital transcription and publication rights. Comply with source-specific
+reuse terms and attribution obligations; this ZIP does not waive them.
+
+English translations, Arabic vowel marks, editorial section titles and notes
+are Gnamma editorial work. Public distribution of this source snapshot does
+not grant a blanket open licence to reproduce every component, especially
+modern transcriptions or third-party editorial material. Cite the Gnamma
+release and original source witnesses, and review each component's provenance
+before redistribution or modification. This is a technical source export,
+not a certified independent manuscript edition or legal rights opinion.
 
 Checksum:
 Use manifest.json to confirm ZIP entries have not been corrupted or changed.

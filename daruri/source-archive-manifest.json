@@ -1,13 +1,17 @@
 {
   "schema": "gnamma-daruri-source-archive-v1",
-  "status": "withheld",
+  "status": "published",
   "file": "source/Daruri_Portable_Scholarly_Source.zip",
-  "version": null,
-  "source_commit": null,
-  "sha256": null,
-  "size_bytes": null,
-  "editorial_review": "pending",
-  "rights_review": "pending",
+  "version": "2026-10-23-source-v1",
+  "source_commit": "5a1b75d23ffc8a3751af8c0ac86d6c75ce08fe57",
+  "canonical_reader_sha256": "e233057d26772249b17b456d9c8aeaf8fd7d5c293c9875c32569d29bb3d9e22e",
+  "sha256": "13974ace4928d822c953ac19f817c5cf43ef7b278fe6b1da1acc371395146bbc",
+  "size_bytes": 1818599,
+  "zip_entry_count": 18,
+  "editorial_review": "approved",
+  "rights_review": "approved",
+  "rights_review_scope": "Publication of the existing attributed Gnamma source archive only; no blanket licence or third-party permission asserted.",
+  "rights_review_record": "SOURCE_ARCHIVE_RELEASE_REVIEW.md",
   "shamela_import_verified": false,
-  "note": "No source ZIP is linked until approved provenance/rights, editorial verification, matching checksums and a real hosted file are confirmed. The offline HTML reader is a different download."
+  "note": "Archival source, not the Gnamma offline reader. Historical and third-party digital text rights differ from editorial translation rights; consult the archive README and source register."
 }
