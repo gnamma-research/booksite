@@ -239,6 +239,54 @@ except ValueError as ex:
 else:
     raise AssertionError("Duplicate source correction must be rejected")
 
+# A weak-radical CAMeL placeholder is never guessed blindly.
+# Recover only roots with unique, curated dictionary-headword support; preserve
+# separate root provenance and never describe these as scholarly adjudications.
+enrich_source = ROOT / "daruri" / "build" / "enrich_morph_roots.py"
+enrich_spec = importlib.util.spec_from_file_location("gnamma_morph_enrich", enrich_source)
+enrich_mod = importlib.util.module_from_spec(enrich_spec)
+enrich_spec.loader.exec_module(enrich_mod)
+lexicon = json.loads((ROOT / "daruri" / "morph-lexicon.json").read_text(encoding="utf-8"))
+hints = enrich_mod.root_hints(lexicon)
+assert hints[module.fold("قِياس")] == "قيس"
+assert hints[module.fold("واجِب")] == "وجب"
+assert enrich_mod.matches_partial_raw_root("ق.#.س", "قيس") is True
+assert enrich_mod.matches_partial_raw_root("#.ج.ب", "وجب") is True
+assert enrich_mod.matches_partial_raw_root("ب.#.س", "قيس") is False
+assert enrich_mod.matches_partial_raw_root("ق.#.س", "قول") is False
+synthetic_index = {
+    "schema": "gnamma-morph-v1", "work": "daruri", "contextual": True,
+    "classicalArabicValidated": False,
+    "records": [{"id": "passage:1:0", "a": [
+        [0, "القياس", "قِياس", "", "noun", "contextual-bert", "قِياس",
+         {"raw_root": "ق.#.س"}],
+        [1, "واجب", "واجِب", "", "adj", "contextual-bert", "واجِب",
+         {"raw_root": "#.ج.ب"}],
+        [2, "تتبين", "قِياس", "", "noun", "contextual-bert", "قِياس",
+         {"raw_root": "ب.#.ن"}],
+        [3, "بعض", "عَضّ", "عضض", "noun", "contextual-bert", "عَضّ",
+         {"rank": 1}],
+        [4, "إن", "أَنَّ", "", "conj_sub", "أَنَّ", {"rank": 1}]
+    ]}]
+}
+root_updated, supplement = enrich_mod.enrich(synthetic_index, lexicon)
+terms = root_updated["records"][0]["a"]
+assert terms[0][3] == "قيس" and terms[1][3] == "وجب"
+assert terms[0][7]["root_origin"] == "curated-headword-and-partial-raw-root"
+assert terms[0][7]["root_verified"] is False
+assert terms[2][3] == "", "Incompatible raw consonants cannot be overridden"
+assert terms[3][3] == "عضض", "An existing model guess is retained as unreviewed"
+assert terms[4][3] == "", "Function words are not assigned invented roots"
+assert supplement["statistics"]["supplemented"] == 2
+assert root_updated["classicalArabicValidated"] is False
+compact_hint, _ = pack_mod.pack(root_updated, {
+    "passage:1:0": "القياس واجب تتبين بعض إن"
+})
+assert compact_hint["r"]["قيس"] == [[0, 0, 2]]
+assert compact_hint["r"]["وجب"] == [[0, 1, 2]]
+assert compact_hint["l"]["قياس"] == [[0, 0, 0], [0, 2, 0]]
+assert compact_hint["r"]["عضض"] == [[0, 3, 0]]
+
 print("PASS: morphology source windows, contextual alternatives, review sheets and scholarly quality gate")
 
 
