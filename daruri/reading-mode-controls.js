@@ -53,7 +53,7 @@ function create({state,rd}){
  if(!status){
   status=document.createElement('div');status.id='gn-dock-private-status';
   status.className='gn-dock-private-status';status.setAttribute('role','group');
-  status.setAttribute('aria-label','Saved items in this reading section');
+  status.setAttribute('aria-label','Your personal saved items in this reading section');
   status.hidden=true;center.append(status);
  }
  const meta=jump.querySelector('.reader-location-meta');
@@ -65,8 +65,8 @@ function create({state,rd}){
  // A single record can be linked to several reading sections, but is only
  // counted once per section. Kinds stay derived from stored source metadata.
  const categories=[
-  {id:'section',label:'Section bookmarks',symbol:icons.section},
-  {id:'paragraph',label:'Paragraph bookmarks',symbol:icons.paragraph},
+  {id:'section',label:'Saved section bookmarks',symbol:'§'},
+  {id:'paragraph',label:'Saved paragraph bookmarks',symbol:'¶'},
   {id:'dictionary',label:'Dictionary entries',symbol:'D'},
   {id:'quran',label:'Qurʾān references',symbol:'Q'},
   {id:'hadith',label:'Ḥadīth references',symbol:'H'},
@@ -80,6 +80,14 @@ function create({state,rd}){
   if(['quran','hadith','dictionary','section','paragraph'].includes(kind))return kind;
   if(kind==='quote')return 'highlight';
   return 'source';
+ };
+ // The persistent saved-state key distinguishes personal bookmarks from
+ // citations merely present in a section. Category glyphs navigate saved items.
+ const savedPrefix=()=>{
+  const prefix=document.createElement('span');prefix.className='gn-dock-saved-prefix';
+  prefix.innerHTML=bookmarkUI.icon({saved:true});
+  const label=document.createElement('span');label.textContent='Saved';prefix.append(label);
+  prefix.setAttribute('aria-hidden','true');return prefix;
  };
  const displaySymbol=(category)=>{
   if(category.symbol.length===1){
@@ -163,9 +171,9 @@ function create({state,rd}){
   const panel=document.createElement('section');
   panel.id='gn-dock-saved-sheet';panel.className='gn-dock-saved-sheet';
   panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','false');
-  panel.setAttribute('aria-label','Saved references in this section');
+  panel.setAttribute('aria-label','Your saved items in section '+section);
   const head=document.createElement('header');head.className='gn-dock-sheet-heading';
-  const title=document.createElement('h3');title.textContent='Saved in §'+section;
+  const title=document.createElement('h3');title.textContent='Your saved items in §'+section;
   const dismiss=document.createElement('button');dismiss.type='button';
   dismiss.className='gn-dock-sheet-close';dismiss.textContent='×';
   dismiss.setAttribute('aria-label','Close saved references');
@@ -238,6 +246,7 @@ function create({state,rd}){
    // Mobile uses ONE large touch target, not eight small buttons.
    const button=document.createElement('button');button.type='button';
    button.className='gn-dock-summary';
+   button.dataset.gnCategoryCount=String(categories.filter(category=>groups.get(category.id).length).length);
    button.setAttribute('aria-label','Open '+total+' saved items in section '+place.section);
    const symbols=document.createElement('span');symbols.className='gn-dock-summary-symbols';
    for(const category of categories){
@@ -248,13 +257,14 @@ function create({state,rd}){
     symbols.append(pair);
    }
    const fallback=document.createElement('span');fallback.className='gn-dock-summary-fallback';
-   fallback.textContent=total+' saved';
+   fallback.textContent=total+' items';
    const caret=document.createElement('span');caret.className='gn-dock-summary-caret';
    caret.textContent='⌃';caret.setAttribute('aria-hidden','true');
-   button.append(symbols,fallback,caret);
+   button.append(savedPrefix(),symbols,fallback,caret);
    button.addEventListener('click',()=>openSheet('all',button,place.section));
    status.append(button);
   }else{
+   status.append(savedPrefix());
    for(const category of categories){
     const items=groups.get(category.id);if(!items.length)continue;
     const button=document.createElement('button');button.type='button';
