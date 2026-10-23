@@ -179,7 +179,9 @@ function validateBackup(data){
  for(const row of data.items)counts[classify(row)]++;
  const place=validLocation(data?.gnammaBackup?.readingPlace||data?.reading?.location);
  const appearance=validAppearance(data?.gnammaBackup?.appearance||data?.reading?.appearance);
- return {counts,place,appearance};
+ const history=(Array.isArray(data?.readingNavigation?.entries)?data.readingNavigation.entries.length:0)+
+  (Array.isArray(data?.readingNavigation?.recent)?data.readingNavigation.recent.length:0);
+ return {counts,place,appearance,history};
 }
 async function reviewFile(file){
  if(!file)return;
@@ -199,7 +201,7 @@ function review(data,label){
 }
 function renderPreview(){
  if(!root||!imported)return;
- header('Restore a backup');const {counts,place,appearance}=imported.info;
+ header('Restore a backup');const {counts,place,appearance,history}=imported.info;
  const content=root.querySelector('#gn-transfer-content');
  const appearanceAvailable=Object.keys(appearance).length>0;
  content.innerHTML=
@@ -209,6 +211,7 @@ function renderPreview(){
    '<label><input type="checkbox" data-transfer-choice="bookmarks" checked> Bookmarks and source references</label>'+
    '<label><input type="checkbox" data-transfer-choice="highlights" checked> Highlights</label>'+
    '<label><input type="checkbox" data-transfer-choice="notes" checked> Personal notes</label>'+
+   (history?'<label><input type="checkbox" data-transfer-choice="history" checked> Recent reading locations ('+history+')</label>':'')+
    (place?'<label><input type="checkbox" data-transfer-choice="place" checked> Offer reading place '+esc(labelLocation(place))+' after restoring</label>':
     '<p class="gn-transfer-muted">This backup does not contain a reading place.</p>')+
    (appearanceAvailable?'<label><input type="checkbox" data-transfer-choice="appearance"> Appearance and language preferences (this device)</label>':'')+
@@ -219,7 +222,7 @@ function renderPreview(){
 }
 function picked(){
  const value=id=>Boolean(root?.querySelector('[data-transfer-choice="'+id+'"]')?.checked);
- return {bookmarks:value('bookmarks'),highlights:value('highlights'),notes:value('notes'),place:value('place'),appearance:value('appearance')};
+ return {bookmarks:value('bookmarks'),highlights:value('highlights'),notes:value('notes'),history:value('history'),place:value('place'),appearance:value('appearance')};
 }
 function restoreSelection(){
  if(!imported||busy)return;
@@ -248,7 +251,7 @@ function renderReceipt(result,devicePlace,backupPlace){
  imported=null;header('Backup restored');
  const content=root.querySelector('#gn-transfer-content');
  content.innerHTML='<div class="gn-transfer-success"><strong>Reading data restored</strong>'+
-  '<p>'+result.changes+' saved items merged. Existing and newer information was preserved.</p></div>'+
+  '<p>'+result.changes+' saved items merged; '+(result.historyAdded||0)+' new recent reading locations. Existing and newer information was preserved.</p></div>'+
   '<dl class="gn-transfer-compare"><dt>Current device reading place</dt><dd>'+esc(labelLocation(devicePlace))+' — unchanged</dd>'+
    '<dt>Backup reading place</dt><dd>'+esc(labelLocation(backupPlace))+'</dd></dl>'+
   (backupPlace?

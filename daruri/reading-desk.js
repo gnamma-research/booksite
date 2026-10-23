@@ -1115,7 +1115,7 @@ function create(ctx){
   if(navigator.share){try{await navigator.share({title:r.title||titleOf(r.target),text:value,url:canonicalURL(r.target)});return;}catch(e){if(e.name==='AbortError')return;}}
   try{await navigator.clipboard.writeText(value);ctx.notify('Text and source link copied for sharing.');}catch(e){ctx.notify('Sharing unavailable. Use Email or Print.');}
  }
- function backup(){if(loadFailure)return untouchedStorage||'';return JSON.stringify({...storedEnvelope,format:FORMAT,version:VERSION,exported:new Date().toISOString(),items:records},null,2);}
+ function backup(){if(loadFailure)return untouchedStorage||'';const navigation=window.GnammaReadingHistory?.exportData?.();return JSON.stringify({...storedEnvelope,format:FORMAT,version:VERSION,exported:new Date().toISOString(),items:records,...(navigation?{readingNavigation:navigation}:{})},null,2);}
  function download(text,name){
   const blob=new Blob([text],{type:name.endsWith('.md')?'text/markdown;charset=utf-8':'application/json;charset=utf-8'}),url=URL.createObjectURL(blob);
   const a=document.createElement('a');a.href=url;a.download=name;a.style.display='none';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);
@@ -1131,14 +1131,14 @@ function create(ctx){
   }
   download(data,fileName);ctx.notify('Backup downloaded. Share the file with Mail or Files.');
  }
- function importParsed(parsed,types={bookmarks:true,highlights:true,notes:true}){
+ function importParsed(parsed,types={bookmarks:true,highlights:true,notes:true,history:true}){
   // Called by both the legacy JSON importer and Backup & Transfer. Never
   // overwrite the user's current Reading Desk if validation/persistence fails.
   if(parsed?.format!==FORMAT||parsed.version!==VERSION||!Array.isArray(parsed.items))
    throw Error('not a Reading Desk backup');
   if(parsed.items.length>20000)throw Error('too many items (maximum 20,000)');
-  if(!['bookmarks','highlights','notes'].some(k=>types[k]))
-   return {changes:0,accepted:0};
+  if(!['bookmarks','highlights','notes'].some(k=>types[k])&&!types.history)
+   return {changes:0,accepted:0,historyAdded:0};
   const allowed=parsed.items.filter(row=>{
    const kind=String(row?.kind||'');
    return kind==='note'?types.notes:kind==='quote'?types.highlights:types.bookmarks;
@@ -1187,7 +1187,10 @@ function create(ctx){
   }
   ui.category='all';ui.filterTarget='';ui.selected='';ui.mobileDetail=false;
   if(state.route==='bookmarks')render();
-  return {changes,accepted:incoming.length};
+  const historyAdded=types.history&&parsed.readingNavigation?
+   (window.GnammaReadingHistory?.importData?.(parsed.readingNavigation)||0):0;
+  // Imported history is recent-only: current reading place unchanged.
+  return {changes,accepted:incoming.length,historyAdded};
  }
  function importFile(file){
   if(!file)return;

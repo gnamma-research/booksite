@@ -66,7 +66,7 @@ test('reading-first Contents navigation preserves direct destinations and second
  const headings=nav.children.filter(node=>node.hasClass('gn-nav-section-label')).map(node=>node.text());
  assert.deepEqual(headings,['Reference tools','Explore further']);
  const footer=byId('leftNav').find(node=>node.hasClass('gn-nav-footer-links'));
- assert.deepEqual(footer.children.filter(node=>Object.hasOwn(node.attrs,'data-route')).map(node=>node.attrs['data-route']),['home','about']);
+ assert.deepEqual(footer.children.filter(node=>Object.hasOwn(node.attrs,'data-route')).map(node=>node.attrs['data-route']),['home','help']);
  assert.ok(!nav.find(node=>node.attrs['data-route']==='home'));
  assert.ok(!nav.find(node=>node.attrs['data-route']==='about'));
 });
@@ -77,7 +77,7 @@ test('Editions and downloads remain accessible without duplicate sidebar jump',(
  const fallbackNav=fallback.find(node=>node.hasClass('fb-left-panel'));
  assert.ok(fallbackNav.find(node=>node.tag==='a'&&node.attrs.href==='#editions'));
  assert.ok(fallbackNav.find(node=>node.tag==='a'&&node.attrs.href==='#contents'));
- assert.ok(fallbackNav.find(node=>node.tag==='a'&&node.attrs.href==='#about'));
+ assert.ok(fallbackNav.find(node=>node.tag==='a'&&node.attrs.href==='#help'));
  const staticMarkup=html.slice(0,appStart)
    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,'')
    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,'');
