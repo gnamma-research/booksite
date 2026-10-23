@@ -95,7 +95,7 @@ test('picker is searchable, recent history is collapsible and dock layout remain
  for(const id of ['jumpSearch','jumpParts','jumpResults','jumpHistoryControls','jumpRecent','jumpRecentList','readerDock','dockTitle','openJump'])assert.ok(html.includes('id="'+id+'"'),id);
  assert.ok(html.includes("$('#jumpSearch').addEventListener('input',renderJumpList)"));
  assert.ok(html.includes('function renderJumpList()'));
- assert.ok(html.includes('data-history-nav="back"')&&html.includes('data-history-nav="forward"'));
+ assert.ok(bridge.includes('data-history-nav="back"')&&bridge.includes('data-history-nav="forward"'));
  assert.ok(bridge.includes('root.GnammaReadingHistory=api'));
  assert.ok(css.includes('position:fixed')&&css.includes('body.focus-mode .gn-history-float'));
  assert.ok(!html.includes('Open section picker</text>'),'Dock should not be given a new visible text line');
