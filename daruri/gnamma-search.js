@@ -653,11 +653,11 @@ function modeSelector(){
   const labels=[
    ['terms','Normal search'],
    ['literal','Exact word'],
-   ['morph-lemma','Forms of one word'],
-   ['morph-root','Root family'],
+   ['morph-lemma','Word forms'],
+   ['morph-root','Related words (root)'],
    ['concepts','Scholarly concepts'],
    ['proximity','Nearby words'],
-   ['scholarly','Advanced patterns']
+   ['scholarly','Advanced search']
   ];
   return '<label class="gns-setting"><span>Find</span><select id="gns-mode" aria-label="How to match words and concepts" aria-describedby="gns-mode-help">'+
    labels.map(x=>'<option value="'+x[0]+'"'+(ui.mode===x[0]?' selected':'')+'>'+x[1]+'</option>').join('')+'</select></label>';
@@ -781,9 +781,9 @@ function matchDescription(mode){
   const meanings={
    terms:'Find matching Arabic or English wording, including common alternative spellings and some attached Arabic particles. Known scholarly expressions are included, but related grammatical forms are not guaranteed.',
    literal:'Match the whole written word without expanding to related forms. Arabic vowel marks and standard hamza/letter variations are ignored.',
-   'morph-lemma':'Find indexed grammatical forms of the same dictionary headword; does not include every word made from its root. Coverage is currently incomplete.',
-   'morph-root':'Find indexed words derived from the same Arabic root. These can be different dictionary words and need not have the same meaning.',
-   concepts:'Find curated scholarly concepts and editorially recorded connections. This is not unrestricted AI meaning search.',
+   'morph-lemma':'Find forms of one dictionary headword (called a lemma), including some attached particles and grammatical endings. Other words made from the same root are not automatically included. Current coverage is incomplete.',
+   'morph-root':'Find other indexed words derived from the same Arabic root. Related by derivation does not necessarily mean identical in meaning.',
+   concepts:'Find passages linked by an editorially indexed scholarly idea even when its exact expression is absent. This is not grammatical context analysis, and it is not unrestricted AI meaning search.',
    proximity:'Find two expressions near one another within the same paragraph and language.',
    scholarly:'Combine words, phrases, alternatives and exclusions using advanced search patterns.'
   };
@@ -818,13 +818,13 @@ function morphSuggestion(){
     x.romanKeys?.includes(rk)||x.formKeys?.includes(v));
   if(!rt&&!terms.length)return '';
   const root=rt||terms[0]?.root||'';
-  const buttons=[['morph-lemma','All word forms'],['morph-root','Root family']].map(([id,label])=>
+  const buttons=[['morph-lemma','Word forms'],['morph-root','Related words']].map(([id,label])=>
    '<button type="button" data-gns-morph-pick="'+id+'" class="gns-match-chip'+(ui.mode===id?' gns-current':'')+
    '" aria-pressed="'+String(ui.mode===id)+'">'+label+'</button>').join('');
   return '<div class="gns-morph-assist" role="group" aria-label="Expand Arabic word matching">'+
    '<span>Search more broadly'+(root?' · root <bdi dir="rtl" lang="ar">'+esc(root)+'</bdi>':'')+'</span>'+
    '<div class="gns-morph-buttons">'+buttons+'</div>'+
-   '<small>Word forms = one dictionary headword; root family = different words derived from the same root. Both use the current partial index.</small></div>';
+   '<small>Word forms (lemma) = one dictionary headword. Related words (root) = its wider derivational family. Morphological coverage is still partial.</small></div>';
 }
 function resultControls(){
  const count=ui.resultCount||0;
