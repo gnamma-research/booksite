@@ -67,5 +67,89 @@ for(const [name,uri] of manifests.html.files){
 
 assert(html.includes('editions-selector.js?v='),'Reader imports selector');
 assert(sw.includes('editions-selector.js?v='),'Offline shell caches selector');
+
+const sourceRelease=JSON.parse(get('source-archive-manifest.json'));
+const legacyEditions=get('editions.js');
+assert.equal(sourceRelease.schema,'gnamma-daruri-source-archive-v1');
+assert.equal(sourceRelease.file,'source/Daruri_Portable_Scholarly_Source.zip');
+assert(['withheld','published'].includes(sourceRelease.status),'Release manifest status must be explicit');
+assert(!legacyEditions.includes('<h3>Study PDF</h3>') &&
+       !legacyEditions.includes('<h3>Study Guide</h3>'),
+  'Legacy fallback must not resurrect unrelated download cards');
+assert(selector.includes('data-es-source hidden')&&selector.includes('Other downloads'),
+  'Scholarly source is a gated secondary download, not a PDF edition');
+assert(!bundle.includes('Daruri_Portable_Scholarly_Source.zip'),
+  'Offline website bundle must not impersonate the scholarly source ZIP');
+
+const gateStart=selector.indexOf('  const SOURCE_ARCHIVE_PATH=');
+const gateEnd=selector.indexOf('  function mount(main){',gateStart);
+assert(gateStart>0&&gateEnd>gateStart,'Extract the exact source-release gate from Editions');
+const sourceGate=selector.slice(gateStart,gateEnd)+
+  '\nthis.check=approvedSourceRelease;this.show=showApprovedSourceDownload;';
+
+function sourceFixture(meta,head={type:'application/zip',length:1818169,ok:true}){
+  const link={href:'',download:''},label={textContent:''},hash={textContent:''};
+  const panel={hidden:true,querySelector:key=>({
+    '[data-es-source-download]':link,
+    '[data-es-source-metadata]':label,
+    '[data-es-source-hash]':hash
+  })[key]};
+  const view={isConnected:true,querySelector:key=>key==='[data-es-source]'?panel:null};
+  let heads=0;
+  const context={
+    URL,root:view,location:{origin:'https://example.org'},
+    document:{baseURI:'https://example.org/booksite/daruri/'},
+    fetch:async (url,options={})=>{
+      if(options.method==='HEAD'){
+        heads++;
+        return {ok:head.ok,url:String(url),headers:{get:name=>
+          name==='content-type'?head.type:name==='content-length'?
+            String(head.length):null}};
+      }
+      return {ok:true,json:async()=>meta};
+    }
+  };
+  vm.runInNewContext(sourceGate,context);
+  return {view,panel,link,label,hash,context,get heads(){return heads;}};
+}
+
+const candidate={...sourceRelease,status:'published',
+  rights_review:'approved',editorial_review:'approved',
+  version:'daruri-2026-10-23',source_commit:'a'.repeat(40),
+  sha256:'b'.repeat(64),size_bytes:1818169};
+(async()=>{
+  const unpublished=sourceFixture({...candidate,status:'withheld'});
+  await unpublished.context.show(unpublished.view);
+  assert.equal(unpublished.panel.hidden,true,'Withheld ZIP must not create a visible action');
+  assert.equal(unpublished.heads,0,'Do not fetch withheld source artifacts');
+  for(const disallowed of [
+    {status:'withheld'},{rights_review:'pending'},{editorial_review:'pending'},
+    {file:'https://example.org/foreign.zip'},{sha256:'not-a-checksum'},
+    {size_bytes:null}
+  ]){
+    const fixture=sourceFixture({...candidate,...disallowed});
+    await fixture.context.show(fixture.view);
+    assert.equal(fixture.panel.hidden,true,'Invalid publication gate exposed source ZIP');
+    assert.equal(fixture.heads,0,'Invalid publication gate must not fetch ZIP');
+  }
+  for(const badHead of [
+    {type:'text/html',length:1818169,ok:true},
+    {type:'application/zip',length:42,ok:true},
+    {type:'application/zip',length:1818169,ok:false}
+  ]){
+    const fixture=sourceFixture(candidate,badHead);
+    await fixture.context.show(fixture.view);
+    assert.equal(fixture.panel.hidden,true,'Bad hosted resource must be invisible');
+  }
+  const available=sourceFixture(candidate);
+  await available.context.show(available.view);
+  assert.equal(available.panel.hidden,false,'Approved and hosted source ZIP must become available');
+  assert.match(available.link.href,/source\/Daruri_Portable_Scholarly_Source\.zip\?v=bbbbbbbbbbbb$/);
+  assert.equal(available.link.download,'Daruri_Portable_Scholarly_Source.zip');
+  assert.equal(available.hash.textContent,candidate.sha256);
+  assert.match(available.label.textContent,/source commit a{12}/);
+  console.log('PASS: source ZIP release gate, content-type/length checks, clean fallback and separate offline bundle.');
+})().catch(error=>{console.error(error);process.exitCode=1;});
+
 console.log('PASS: real PDF verification, honest progress, study-guide separation,'
   +' offline HTML dependency closure, privacy and single downloads destination');

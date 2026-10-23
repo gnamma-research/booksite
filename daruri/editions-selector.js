@@ -82,7 +82,7 @@
     icon(key)+'<span>'+esc(label)+'</span></button>';
   function shell(){
     return '<div class="gn-es-wrap">'+
-      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Download a copy</h1><p>Choose a PDF edition below or download the offline HTML reader.</p></header>'+
+      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Download a copy</h1><p>Choose a PDF edition, or find other download formats below.</p></header>'+
        '<h2 class="gn-es-format-title">PDF editions</h2>'+
       '<div class="gn-es-edition-tabs" role="tablist" aria-label="Edition type">'+
         '<button type="button" class="gn-es-tab" id="gn-es-tab-reading" role="tab" aria-controls="gn-es-panel" data-es-nav="reading" aria-selected="true">Reading &amp; Study</button>'+
@@ -194,16 +194,35 @@
             '</div></div>'+
         '</form>'+
       '</section>'+
-      '<section class="gn-es-offline" aria-labelledby="gn-es-offline-title">'+
-        '<h2 id="gn-es-offline-title">Offline reader · HTML</h2>'+
-        '<p>Download the reading website, dictionary, fonts and supporting files. This is not a PDF, and your private Reading Desk notes are not included.</p>'+
-        '<button type="button" class="gn-es-offline-download" data-daruri-bundle="html">Download HTML reader (.zip)</button>'+
-        '<details class="gn-es-offline-more"><summary>Also need the PDFs offline?</summary>'+
-          '<p>Download the same HTML reader with the available book PDFs. This is a much larger archive.</p>'+
-          '<button type="button" class="gn-es-offline-download gn-es-offline-secondary" data-daruri-bundle="full">Download HTML + PDFs (.zip)</button>'+
-        '</details>'+
-        '<p class="gn-offline-bundle-status" role="status" aria-live="polite"></p>'+
-        '<p class="gn-es-offline-footnote">Unzip without moving individual files. For complete functionality on desktop, open the folder using a local web server; opening file:// directly can restrict browser features. No internet is needed when served locally.</p>'+
+      '<section class="gn-es-offline" aria-labelledby="gn-es-other-title">'+
+        '<h2 id="gn-es-other-title">Other downloads</h2>'+
+        '<div class="gn-es-download-row" aria-labelledby="gn-es-offline-title">'+
+          '<h3 id="gn-es-offline-title">Offline reader · HTML</h3>'+
+          '<p>Download the reading website, dictionary, fonts and supporting files. This is not a PDF, and your private Reading Desk notes are not included.</p>'+
+          '<button type="button" class="gn-es-offline-download" data-daruri-bundle="html">Download offline reader (ZIP)</button>'+
+          '<details class="gn-es-offline-more"><summary>Also need the PDFs offline?</summary>'+
+            '<p>Download the same HTML reader with the available book PDFs. This is a much larger archive.</p>'+
+            '<button type="button" class="gn-es-offline-download gn-es-offline-secondary" data-daruri-bundle="full">Download offline reader + PDFs (ZIP)</button>'+
+          '</details>'+
+          '<p class="gn-offline-bundle-status" role="status" aria-live="polite"></p>'+
+          '<p class="gn-es-offline-footnote">Keep the extracted folders together. Complete desktop use requires a local web server; opening file:// directly can restrict browser features.</p>'+
+        '</div>'+
+        '<div class="gn-es-source-row" data-es-source hidden aria-labelledby="gn-es-source-title">'+
+          '<h3 id="gn-es-source-title">Source text &amp; research files</h3>'+
+          '<p>Arabic text, English translation, publisher notes and cross-references in HTML, TXT, TEI and JSON. These are research files, not the offline reading website.</p>'+
+          '<a class="gn-es-source-download" data-es-source-download download>Download source text (ZIP)</a>'+
+          '<details class="gn-es-source-more"><summary>What’s inside?</summary>'+
+            '<ul>'+
+              '<li>Aligned Arabic (plain and editorially vowelled) and English passages with stable section and paragraph IDs.</li>'+
+              '<li>Publisher notes, Qurʾān and Hadith references, historical dictionary data and backmatter.</li>'+
+              '<li>Standalone reading HTML, TEI P5 XML, JSON and JSONL research data.</li>'+
+              '<li>UTF-8 TXT/HTML candidates for legacy Shamela import; no .bok file, and import compatibility is not certified.</li>'+
+              '<li>Editorial provenance and reuse conditions. No private Reading Desk notes, bookmarks or highlights.</li>'+
+            '</ul>'+
+            '<p class="gn-es-source-metadata" data-es-source-metadata></p>'+
+            '<p class="gn-es-source-hash">SHA-256: <code data-es-source-hash></code></p>'+
+          '</details>'+
+        '</div>'+
       '</section></div>';
   }
   function apparatusLabel(s){
@@ -606,6 +625,53 @@
       }
     }
   }
+  // This is the portable scholarly SOURCE, not the HTML/PDF offline reader ZIP.
+  // A public download is shown only after editorial and rights approval, a
+  // signed-off release manifest, and an actual hosted file with the right type.
+  const SOURCE_ARCHIVE_PATH='source/Daruri_Portable_Scholarly_Source.zip';
+  function approvedSourceRelease(meta){
+    return meta?.schema==='gnamma-daruri-source-archive-v1'&&
+      meta.status==='published'&&meta.rights_review==='approved'&&
+      meta.editorial_review==='approved'&&
+      meta.file===SOURCE_ARCHIVE_PATH&&
+      /^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$/.test(meta.version||'')&&
+      /^[0-9a-f]{40}$/.test(meta.source_commit||'')&&
+      /^[0-9a-f]{64}$/.test(meta.sha256||'')&&
+      Number.isSafeInteger(meta.size_bytes)&&meta.size_bytes>1000&&
+      meta.size_bytes<100*1024*1024;
+  }
+  async function showApprovedSourceDownload(view){
+    const panel=view.querySelector('[data-es-source]');
+    if(!panel)return;
+    try{
+      const releaseResponse=await fetch('source-archive-manifest.json?v=20261023-source-archive-ui1',{
+        cache:'no-store',credentials:'same-origin'
+      });
+      if(!releaseResponse.ok)return;
+      const release=await releaseResponse.json();
+      if(!approvedSourceRelease(release))return;
+      const url=new URL(SOURCE_ARCHIVE_PATH,document.baseURI);
+      if(url.origin!==location.origin)return;
+      const head=await fetch(url.href,{method:'HEAD',cache:'no-store',credentials:'same-origin'});
+      if(!head.ok||new URL(head.url).origin!==url.origin)return;
+      const type=(head.headers.get('content-type')||'').split(';')[0].trim().toLowerCase();
+      if(!['application/zip','application/x-zip-compressed','application/octet-stream'].includes(type))return;
+      const length=head.headers.get('content-length');
+      if(length!==null&&Number(length)!==release.size_bytes)return;
+      if(root!==view||!view.isConnected)return;
+      url.searchParams.set('v',release.sha256.slice(0,12));
+      const download=panel.querySelector('[data-es-source-download]');
+      download.href=url.href;
+      download.download='Daruri_Portable_Scholarly_Source.zip';
+      panel.querySelector('[data-es-source-metadata]').textContent=
+        'Version '+release.version+' · '+(release.size_bytes/1e6).toFixed(2)+
+        ' MB · source commit '+release.source_commit.slice(0,12);
+      panel.querySelector('[data-es-source-hash]').textContent=release.sha256;
+      panel.hidden=false;
+    }catch(_){
+      // A missing or malformed release is simply not an available download.
+    }
+  }
   function mount(main){
     if(preparation.controller)preparation.controller.abort();
     if(preparation.url)URL.revokeObjectURL(preparation.url);
@@ -661,6 +727,7 @@
       refresh();
     });
     loadPersonalTools(mounted);
+    void showApprovedSourceDownload(mounted);
   }
   window.GnammaEditions.render=function(main,payload){
     const response=oldRender.call(this,main,payload);

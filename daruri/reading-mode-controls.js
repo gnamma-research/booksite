@@ -638,3 +638,44 @@ else install();
 
 
 })();
+
+
+/* Canonical publisher-note section reconciliation: N ids are not section ids. */
+(function(){
+'use strict';
+const node=document.getElementById('editionData');
+if(!node?.textContent)return;
+try{
+  const book=JSON.parse(node.textContent);
+  if(!Array.isArray(book.sections)||!Array.isArray(book.notes))return;
+  const location=new Map(),bySection={};
+  for(const section of book.sections){
+    const sectionId=String(section.id);
+    const ids=(section.noteIds||[]).filter(id=>/^N\d{3}$/.test(String(id)));
+    if(ids.length)bySection[sectionId]=ids;
+    for(const id of ids){
+      if(location.has(id)&&location.get(id)!==sectionId)
+        throw new Error('Publisher note '+id+' belongs to multiple sections');
+      location.set(id,sectionId);
+    }
+  }
+  const nNotes=book.notes.filter(note=>/^N\d{3}$/.test(String(note.id)));
+  if(nNotes.some(note=>!location.has(note.id)))
+    throw new Error('A publisher note has no canonical section');
+  let repaired=0;
+  for(const note of nNotes){
+    const section=location.get(note.id);
+    if(String(note.n)===section)continue;
+    note.n=section==='colophon'?section:Number(section);
+    repaired++;
+  }
+  if(repaired)node.textContent=JSON.stringify(book);
+  window.GnammaNNoteLocations={
+    bySection,
+    locations:Object.fromEntries(location),
+    repaired
+  };
+}catch(error){
+  console.error('Unable to reconcile publisher-note section locations',error);
+}
+})();

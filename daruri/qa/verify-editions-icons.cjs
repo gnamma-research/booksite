@@ -53,7 +53,10 @@ win.GnammaEditions.render(rootNode,{});
 assert.equal(invoked,2,'Subsequent route visits continue to render normally');
 assert.equal(listened,5,'No listener accumulation after return to Editions');
 assert.ok(editionSrc.includes('gn-ed-reading-custom'), 'Custom print settings are collapsed until requested');
-assert.ok(editionSrc.includes('legacy.hidden=true'), 'Verified Study PDF supersedes older fixed link');
+assert.ok(!editionSrc.includes('data-ep-legacy-study') &&
+  !editionSrc.includes("<h3>Study PDF</h3>") &&
+  !editionSrc.includes("<h3>Study Guide</h3>"),
+  'There must be no duplicate fixed Study PDF or Study Guide cards in the fallback');
 assert.ok(!editionSrc.includes('Study notes + hadith sources'), 'No ḥadīth selector in non-scholarly Study');
 assert.ok(!editionSrc.includes('gn-ed-intro'), 'Removed edition explanatory paragraphs');
 for(const name of ['reading','study','reference']){
