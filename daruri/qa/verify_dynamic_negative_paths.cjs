@@ -187,9 +187,18 @@ async function run(){
     await route.fulfill({response,contentType:'application/json',body:JSON.stringify(json)});
    });
   });
-  set(s);await ready(s);
-  const text=await generationFailure(s,/source PDF|do not agree|SHA|checksum/i);
-  return 'Old manifest rejected: '+text.slice(0,130);
+  // The signed 12-source catalogue rejects a stale revision during startup,
+  // before any PDF worker can run. This is stronger than a runtime failure.
+  set(s);
+  await s.page.waitForFunction(()=>
+    document.querySelector('#gn-dyn-status')?.dataset.error==='true',
+    null,{timeout:30000});
+  const message=await s.page.locator('#gn-dyn-status').innerText();
+  assert.match(message,/Cannot initialize|source map|mismatch|changed|verified/i);
+  assert(await s.page.locator('#gn-dyn-make').isDisabled());
+  assert.equal(await s.page.locator('#gn-dyn-download').isVisible(),false);
+  await unchanged(s);
+  return 'Tampered source manifest rejected before generation: '+message.slice(0,130);
  });
  await withCase('simulated memory exhaustion restores functionality',async set=>{
   const s=await setup(null);set(s);await ready(s);
