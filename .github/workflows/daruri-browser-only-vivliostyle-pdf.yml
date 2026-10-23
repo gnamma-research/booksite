@@ -46,6 +46,22 @@ jobs:
           else
             npx playwright install --with-deps --only-shell chromium
           fi
+      - name: Serve the emitter's licensed fallback fonts only as temporary same-origin QA assets
+        run: |
+          set -euo pipefail
+          ASSETS=daruri/browser-html-pdf/runtime
+          mkdir -p "$ASSETS/fonts"
+          FOUND=$(find daruri/browser-html-pdf/node_modules -type d -path '*/pages-to-pdf/public/fonts' | head -n 1 || true)
+          if [ -z "$FOUND" ]; then
+            FOUND=$(find daruri/browser-html-pdf/node_modules -type d -path '*/vivliostyle-pdf/public/fonts' | head -n 1 || true)
+          fi
+          if [ -z "$FOUND" ]; then
+            echo '::error::No licensed font assets found in the installed browser PDF emitter';exit 1
+          fi
+          cp -a "$FOUND"/. "$ASSETS/fonts/"
+          ls -lh "$ASSETS/fonts/" | head -n 16
+          # Runtime files are provided only to the ephemeral local test server.
+          # They are never committed, downloaded as separate assets, or uploaded.
       - name: Bundle actual browser HTML typesetter; forbid Node/server-side PDF generation
         run: |
           cd daruri/browser-html-pdf
