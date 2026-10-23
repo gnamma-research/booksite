@@ -49,6 +49,11 @@ The full reader browser regression suite passed on feature commit `0e9d91be`; la
 
 Model output explains a grammatical possibility, not automatically the *juristic sense* of a word such as `حكم` or `قياس`. Dictionary glosses are kept separately and labelled as automated. For a model sample, go to GitHub Actions → Daruri contextual morphology candidate review → Run workflow; choose one work and use 0 for all paragraphs. This workflow is manual to avoid repeated expensive downloads.
 
+## Large-corpus performance and optional expert search
+The currently published two source witnesses comprise about 201,000 Arabic tokens. A contextual index that stores multiple analyses and inflectional features per token is much larger than the current curated assets. Do **not** publish an unmeasured all-token JSON bundle to mobile Safari: first profile download, parse time and memory on an actual iPhone, and separate compact lemma/root search postings from source-occurrence detail shards if needed. Query and private Reading Desk data must not be transmitted to an AI service.
+
+Once contextual analysis is trustworthy and fast, consider expert-only grammatical facets (noun/verb, case, mood), source-sensitive Arabic/English concordance, and combining morphological predicates with proximity. Keep these under research options rather than adding permanent controls to Quick Find.
+
 ## Work estimates (engineering-effort ranges, not promised delivery dates)
 - UI clarification and source-occurrence plumbing: integrated on this branch; regression CI pending.
 - Obtain/deploy model + run complete batch indexing and validate IDs: **2–5 developer-days** after local dependencies/weights are available; hardware speed not measured.
