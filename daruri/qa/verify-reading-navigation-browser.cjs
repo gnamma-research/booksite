@@ -65,7 +65,9 @@ async function exercise(engine,name,host){
   await page.locator('#contentsFilter').fill('118');
   assert.ok(await page.locator('.gn-contents-editorial-results [data-section="118"]').count(),'Source-first contents search must also find an editorial title');
   await page.goto(host+'/daruri/#home',{waitUntil:'domcontentloaded'});
-  assert.ok(await page.locator('#homeEditorialSources').count(),'Editorial method missing from homepage');
+  // WebKit can complete initial route rendering after DOMContentLoaded.
+  // Keep the same assertion, but wait for the actual homepage node to attach.
+  await page.locator('#homeEditorialSources').waitFor({state:'attached',timeout:12000});
   await page.locator('[data-route="help"]').last().click();
   await page.locator('.gn-history-help').waitFor();
   assert.ok((await page.locator('.gn-history-help').innerText()).includes('Recent locations'));
