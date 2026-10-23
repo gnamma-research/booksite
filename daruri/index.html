@@ -5006,8 +5006,8 @@ function jumpToNote(id,opener=document.activeElement) {
   // An inline Qurʾānic note must use exactly the same card as the section-end
   // Notes window, including verified ﴿…﴾ excerpts, qualification and source links.
   // Do not change the legacy detail window for other editorial note types.
-  if(note.source_type==='quran'){
-    gnShowLayer('Qurʾānic note · '+sectionRef(note.n),
+  if(note.source_type==='quran'||note.source_type==='hadith'){
+    gnShowLayer((note.source_type==='quran'?'Qurʾānic':'Hadith')+' note · '+sectionRef(note.n),
       '<article class="gn-layer-note gn-unified-notes">'+gnNotesCardHTML([note])+'</article>',
       'notes',opener||document.querySelector('[data-note-target="'+CSS.escape(id)+'"]'));
     return;
