@@ -193,6 +193,7 @@ const types={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'
  await test('390px mobile proximity controls fit screen without horizontal overflow',async()=>{
   await mobile.locator('#searchBtn').click();
   await mobile.locator('[data-gns-expand="1"]').first().click();
+  await mobile.locator('[data-gns-mobile-view="build"]').click();
   await mobile.locator('#gns-mode').selectOption('proximity');
   await mobile.locator('#gns-query').fill('ijtihad');
   await mobile.locator('#gns-near-term').fill('taqlid');
@@ -211,6 +212,7 @@ const types={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'
  await test('320px phone proximity controls retain usable results without horizontal overflow',async()=>{
   await narrow.locator('#searchBtn').click();
   await narrow.locator('[data-gns-expand="1"]').first().click();
+  await narrow.locator('[data-gns-mobile-view="build"]').click();
   await narrow.locator('#gns-mode').selectOption('proximity');
   await narrow.locator('#gns-query').fill('ijtihad');
   await narrow.locator('#gns-near-term').fill('taqlid');
