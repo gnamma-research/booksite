@@ -1,6 +1,11 @@
 name: Daruri contextual morphology candidate review
 # Manual only: expensive model inference must never run for every reader commit.
 on:
+  push:
+    branches:
+      - experiment/contextual-full-candidate-20261023
+    paths:
+      - '.github/workflows/daruri-contextual-morphology-review.yml'
   workflow_dispatch:
     inputs:
       work:
@@ -24,11 +29,15 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: contextual-morph-${{ inputs.work }}
+  group: contextual-morph-${{ github.event_name == 'push' && matrix.work || inputs.work }}
   cancel-in-progress: false
 jobs:
   candidate-index:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        work: [daruri, mustasfa]
     timeout-minutes: 240
     env:
       PIP_DISABLE_PIP_VERSION_CHECK: "1"
@@ -47,8 +56,8 @@ jobs:
           key: ${{ runner.os }}-camel-tools-1.6.0-msa-bert-r13-v1
       - name: Validate manually supplied bounds
         env:
-          LIMIT: ${{ inputs.max_paragraphs }}
-          REVIEW_COUNT: ${{ inputs.review_count }}
+          LIMIT: ${{ github.event_name == 'push' && '0' || inputs.max_paragraphs }}
+          REVIEW_COUNT: ${{ github.event_name == 'push' && '400' || inputs.review_count }}
         run: |
           python3 - <<'PY'
           import os
@@ -70,9 +79,9 @@ jobs:
           camel_data -i disambig-bert-unfactored-msa
       - name: Build offline contextual CANDIDATES, never publish to the reader
         env:
-          WORK: ${{ inputs.work }}
-          LIMIT: ${{ inputs.max_paragraphs }}
-          REVIEW_COUNT: ${{ inputs.review_count }}
+          WORK: ${{ github.event_name == 'push' && matrix.work || inputs.work }}
+          LIMIT: ${{ github.event_name == 'push' && '0' || inputs.max_paragraphs }}
+          REVIEW_COUNT: ${{ github.event_name == 'push' && '400' || inputs.review_count }}
         run: |
           mkdir -p "$RUNNER_TEMP/morph-review"
           python3 daruri/build/build_gnamma_morph_index.py \
@@ -97,7 +106,7 @@ jobs:
       - name: Upload review artifacts privately to this Actions run
         uses: actions/upload-artifact@v4
         with:
-          name: contextual-candidates-${{ inputs.work }}-${{ github.run_number }}
+          name: contextual-candidates-${{ github.event_name == 'push' && matrix.work || inputs.work }}-${{ github.run_number }}
           path: ${{ runner.temp }}/morph-review/
           retention-days: 14
           if-no-files-found: error
