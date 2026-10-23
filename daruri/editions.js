@@ -218,10 +218,7 @@
               '<a class="gn-ed-primary" data-ep-ready-download download aria-label="Download selected '+tier+' PDF">'+svg('download')+'</a>'+
               '<a class="gn-ed-secondary" data-ep-ready-open target="_blank" rel="noopener noreferrer" aria-label="Read selected '+tier+' PDF">'+svg('open')+'</a></div>';
           panel.hidden=false;
-          if(tier==='study'){
-            const legacy=host.querySelector('[data-ep-legacy-study]');
-            if(legacy)legacy.hidden=true;
-          }else{syncReadyLanguage(panel);syncCustomReading();}
+          if(tier==='reading'){syncReadyLanguage(panel);syncCustomReading();}
           const refresh=()=>{
             const lang=tier==='study'?'bilingual':readyKey();
             const editorial=panel.querySelector('[data-ep-ready-titles]').value==='on';
@@ -280,10 +277,6 @@
     '<section id="gn-ed-study" class="gn-ed-tier" role="tabpanel" aria-labelledby="gn-ed-tab-study" tabindex="0" hidden>'+
       '<h2 class="gn-ed-panel-label">Study</h2>'+
       '<div class="gn-ed-config gn-ed-published" data-ep-published="study" hidden></div>'+
-      '<div class="gn-ed-grid"><article class="gn-ed-card" data-ep-legacy-study><h3>Study PDF</h3>'+
-        pdfActions('daruri-study.pdf?v=daruri8-structure-20261020','study PDF')+'</article>'+
-      '<article class="gn-ed-card"><h3>Study Guide</h3>'+
-        pdfActions('daruri-study-guide.pdf?v=daruri6-sources-20261020','study guide')+'</article></div>'+
       '<details class="gn-ed-study-custom"><summary aria-label="Custom Study printout" data-ep-info-kind="Custom printout" data-ep-info-label="Study settings">'+svg('settings')+'</summary>'+
       controls('study')+'</details></section>'+
     '<section id="gn-ed-reference" class="gn-ed-tier" role="tabpanel" aria-labelledby="gn-ed-tab-reference" tabindex="0" hidden>'+
