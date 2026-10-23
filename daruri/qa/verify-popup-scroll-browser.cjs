@@ -89,14 +89,15 @@ async function check(browserType,width,touch){
 
   // Global search is a separate overlay implementation; it must use the same
   // viewport lock instead of allowing the book to move beneath it.
-  await page.evaluate(()=>document.getElementById('searchBtn').click());
-  const search=page.locator('#searchOverlay:not([hidden])');
+  await page.waitForFunction(()=>typeof window.GnammaUnifiedSearch?.open==='function',{timeout:30000});
+  await page.evaluate(()=>window.GnammaUnifiedSearch.open());
+  const search=page.locator('#gn-unified-search:not([hidden]) [role="dialog"]');
   await search.waitFor({timeout:15000});
   check(await page.evaluate(()=>document.body.style.position==='fixed'&&window.GnammaPopupScroll.isLocked()),
-    'Global search allows scrolling behind its dialog');
-  await page.evaluate(()=>document.getElementById('searchClose').click());
+    'Unified research search allows scrolling behind its dialog');
+  await page.evaluate(()=>window.GnammaUnifiedSearch.close());
   check(await page.evaluate(()=>!window.GnammaPopupScroll.isLocked()),
-    'Global search did not release the reader after closing');
+    'Unified research search did not release the reader after closing');
 
   console.log('PASS '+label+': single Hadith/Notes/Qurʾān scroll; background freeze; summary return; search lock; exact reading-position restoration');
  }catch(e){
