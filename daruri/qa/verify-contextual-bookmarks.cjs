@@ -32,11 +32,11 @@ const probe=async page=>page.waitForFunction(()=>{
   status.querySelector('button')&&
   (status.querySelector('button').getAttribute('aria-label')||'').includes('195');
 },{timeout:35000});
-async function exercise(engine,mobile){
+async function exercise(engine,mobile,width=390){
  const browser=await engine.launch({headless:true,
   ...(engine===chromium?{args:['--no-sandbox']}: {})});
- const device=mobile?'mobile':'desktop',name=(engine===webkit?'WebKit':'Chromium')+' '+device;
- const context=await browser.newContext({viewport:{width:mobile?390:1180,height:mobile?844:850},
+ const device=mobile?'mobile '+width+'px':'desktop',name=(engine===webkit?'WebKit':'Chromium')+' '+device;
+ const context=await browser.newContext({viewport:{width:mobile?width:1180,height:mobile?844:850},
   isMobile:mobile,hasTouch:mobile,reducedMotion:'reduce'});
  await context.addInitScript(items=>{
   localStorage.setItem('gnamma-reading-desk-v1',
@@ -48,18 +48,32 @@ async function exercise(engine,mobile){
   await page.goto(URL,{waitUntil:'domcontentloaded',timeout:90000});
   await probe(page);
   const items=page.locator('#readerDock .gn-dock-private-status');
-  assert.equal((await items.locator('.gn-dock-saved-prefix').innerText()).trim(),'Saved',
-    name+': visible saved-state label must distinguish bookmarks from citations');
+  assert.equal((await items.locator('.gn-dock-saved-prefix').innerText()).trim(),'',
+    name+': the checked bookmark must replace the redundant Saved word');
+  assert.equal(await items.locator('.gn-dock-saved-prefix .gn-bm-ribbon').count(),1,
+    name+': checked bookmark icon must identify personal saved categories');
   assert.match(await items.getAttribute('aria-label'),/personal saved items/i);
   assert.equal(await items.locator('[data-gn-mark="section"]').count(),1,
     name+': section category must remain visible in the bookmark navigator');
   if(mobile){
    const summary=items.locator('.gn-dock-summary');
    await summary.waitFor();
+   const target=await summary.boundingBox();
+   assert.ok(target&&target.height>=44&&target.width>=44,
+     name+': mobile saved-items target must be at least 44 × 44 CSS pixels, got '+JSON.stringify(target));
+   assert.ok(target.x>=-1&&target.x+target.width<=width+1,
+     name+': saved-items target must fit inside the mobile viewport');
    assert.match(await summary.getAttribute('aria-label'),/7 saved items in section 195/);
    await summary.click();
    const popup=page.locator('#gn-dock-saved-sheet');
    await popup.waitFor();
+   const sheetRect=await popup.boundingBox();
+   assert.ok(sheetRect&&sheetRect.x>=-1&&sheetRect.x+sheetRect.width<=width+1&&sheetRect.y>=-1,
+     name+': saved-item sheet must stay inside the mobile viewport');
+   const originalReaderScroll=await page.evaluate(()=>window.scrollY);
+   await popup.locator('.gn-dock-sheet-item').last().scrollIntoViewIfNeeded();
+   assert.ok(Math.abs((await page.evaluate(()=>window.scrollY))-originalReaderScroll)<2,
+     name+': scrolling the saved-item list must not scroll the underlying reader');
    assert.equal((await popup.locator('.gn-dock-sheet-heading h3').innerText()).trim(),
     'Your saved items in §195',name+': popup heading must name saved items');
    assert.equal(await popup.locator('.gn-dock-sheet-item').count(),7,
@@ -102,7 +116,8 @@ async function exercise(engine,mobile){
  try{
   await sleep(1350);
   for(const engine of [chromium,webkit]){
-   for(const mobile of [false,true])await exercise(engine,mobile);
+   await exercise(engine,false);
+   for(const width of [320,375,390])await exercise(engine,true,width);
   }
  }finally{server.kill('SIGTERM');}
 })().catch(e=>{console.error(e.stack||e);process.exitCode=1;});
