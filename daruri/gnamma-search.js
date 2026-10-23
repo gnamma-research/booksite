@@ -993,7 +993,8 @@ function markup(){
  const research=ui.expanded?
    '<div class="gns-research-grid"><div class="gns-refine-pane">'+buildTitle+filterPanel()+'</div>'+workspace+'</div>':
    filterPanel()+workspace;
- const mobileSaved=ui.expanded?'<div class="gns-mobile-saved-view" aria-label="Saved research searches">'+
+ const mobileSaved=ui.expanded&&window.matchMedia('(max-width:760px)').matches?
+   '<div class="gns-mobile-saved-view" aria-label="Saved research searches">'+
    '<div class="gns-mobile-build-title"><strong>Saved searches</strong><button type="button" data-gns-mobile-view="results">Back to results</button></div>'+
    gnSavedPanel(true)+'</div>':'';
  const mobileBuildActions=ui.expanded?'<div class="gns-mobile-build-actions">'+
@@ -1371,7 +1372,9 @@ document.addEventListener('click',event=>{
   if(!source){ui.builderOpen=true;ui.builderError='Add at least one condition to the builder.';rerender(false);return;}
   const parsed=window.GnammaScholarly.parse(source,ui.orthography==='original'?x=>String(x??'').toLowerCase().normalize('NFC'):fold);
   if(parsed.error){ui.builderError=parsed.error;ui.builderOpen=true;rerender(false);return;}
-  ui.query=source;ui.mode='scholarly';ui.expanded=true;ui.builderOpen=false;ui.mobileView='results';ui.page=CONFIG.pageSize;
+  ui.query=source;ui.mode='scholarly';ui.expanded=true;
+  ui.builderOpen=!window.matchMedia('(max-width:760px)').matches;
+  ui.mobileView='results';ui.page=CONFIG.pageSize;
   ui.pendingReturn=null;rerender();return;
  }
  if(target.hasAttribute('data-gns-save')){gnSaveCurrent();return;}
