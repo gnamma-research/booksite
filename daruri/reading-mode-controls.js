@@ -145,6 +145,8 @@ function create({state,rd}){
   panel?.remove();backdrop?.remove();
   unlockSheetScroll();
   if(restore&&trigger?.isConnected)trigger.focus({preventScroll:true});
+  // Counters may have changed while this dialog was open: refresh afterwards.
+  last='';schedule();
  }
  function reindex(){
   bySection=new Map();
@@ -161,7 +163,9 @@ function create({state,rd}){
     items.push(item);bySection.set(section,items);
    }
   }
-  closeSheet();last='';schedule();
+  // A Reading Desk storage refresh is not a request to close an open menu.
+  // Keep the visible list stable; render the refreshed counts when it closes.
+  last='';schedule();
  }
  function readingPosition(){
   const reader=document.getElementById('reader');if(!reader)return null;
@@ -232,6 +236,20 @@ function create({state,rd}){
   dismiss.addEventListener('click',()=>closeSheet(true));
   head.append(title,dismiss);panel.append(head);
   const list=document.createElement('div');list.className='gn-dock-sheet-list';panel.append(list);
+  let touchStartY=null,touchDragged=false,lastTouchMove=0;
+  list.addEventListener('touchstart',event=>{
+   touchStartY=event.touches[0]?.clientY??null;touchDragged=false;
+   event.stopPropagation();
+  },{passive:true});
+  list.addEventListener('touchmove',event=>{
+   const y=event.touches[0]?.clientY;
+   if(touchStartY!=null&&y!=null&&Math.abs(y-touchStartY)>7){
+    touchDragged=true;lastTouchMove=Date.now();
+   }
+   // Let WebKit pan the list; never bubble scrolling to reader gestures.
+   event.stopPropagation();
+  },{passive:true});
+  list.addEventListener('touchend',event=>event.stopPropagation(),{passive:true});
   for(const category of categories){
    if(categoryId!=='all'&&categoryId!==category.id)continue;
    const rows=groups.get(category.id)||[];if(!rows.length)continue;
@@ -251,7 +269,13 @@ function create({state,rd}){
     const detail=document.createElement('small');detail.className='gn-dock-sheet-item-detail';
     detail.textContent=locator||(item.kind==='note'?'Personal note':'Open saved source');
     button.append(titleLine,detail);
-    button.addEventListener('click',()=>openSaved(item,section));
+    button.addEventListener('click',event=>{
+    // Reject an accidental synthesized click after a finger drag on iOS.
+    if(touchDragged&&Date.now()-lastTouchMove<400){
+     event.preventDefault();event.stopPropagation();return;
+    }
+    openSaved(item,section);
+   });
     list.append(button);
    }
   }
@@ -267,12 +291,30 @@ function create({state,rd}){
   backdrop.id='gn-dock-saved-backdrop';
   backdrop.className='gn-dock-saved-backdrop';
   backdrop.setAttribute('aria-hidden','true');
-  backdrop.addEventListener('pointerdown',event=>event.stopPropagation());
+  let backdropGesture=null;
+  backdrop.addEventListener('pointerdown',event=>{
+   backdropGesture={x:event.clientX,y:event.clientY,moved:false};
+   event.stopPropagation();
+  });
+  backdrop.addEventListener('pointermove',event=>{
+   if(backdropGesture&&Math.hypot(event.clientX-backdropGesture.x,
+     event.clientY-backdropGesture.y)>9)backdropGesture.moved=true;
+   event.stopPropagation();
+  });
+  backdrop.addEventListener('pointercancel',()=>{backdropGesture=null;});
   backdrop.addEventListener('touchmove',event=>event.preventDefault(),{passive:false});
   backdrop.addEventListener('click',event=>{
-   event.preventDefault();event.stopPropagation();closeSheet(true);
+   event.preventDefault();event.stopPropagation();
+   // Only a deliberate, stationary outside TAP closes the sheet. A touch
+   // gesture that crossed the edge of the list is not a dismissal.
+   const gesture=backdropGesture;backdropGesture=null;
+   if(gesture&&!gesture.moved)closeSheet(true);
   });
   panel.addEventListener('pointerdown',event=>event.stopPropagation());
+  panel.addEventListener('touchstart',event=>event.stopPropagation(),{passive:true});
+  panel.addEventListener('touchmove',event=>event.stopPropagation(),{passive:true});
+  panel.addEventListener('touchend',event=>event.stopPropagation(),{passive:true});
+  panel.addEventListener('wheel',event=>event.stopPropagation(),{passive:true});
   panel.addEventListener('click',event=>event.stopPropagation());
   // The sheet acts as a true dialog: keep keyboard traversal in its controls.
   panel.addEventListener('keydown',event=>{
@@ -293,6 +335,12 @@ function create({state,rd}){
   panel.querySelector('.gn-dock-sheet-item')?.focus({preventScroll:true});
  }
  function render(){
+  // While a dialog owns the viewport, asynchronous dock redraws must not
+  // destroy it. Real navigation away from reading still closes the sheet.
+  if(sheet){
+   if(state.route!=='reader')closeSheet();
+   else return;
+  }
   if(state.route!=='reader'||dock.hidden){
    closeSheet();status.hidden=true;if(paraRef)paraRef.hidden=true;last='';return;
   }
@@ -324,20 +372,23 @@ function create({state,rd}){
    const button=document.createElement('button');button.type='button';
    button.className='gn-dock-summary';
    button.dataset.gnCategoryCount=String(categories.filter(category=>groups.get(category.id).length).length);
-   button.setAttribute('aria-label','Open '+total+' saved items in section '+place.section);
+   button.setAttribute('aria-label','Open '+total+' saved items in section '+place.section+': '+
+    categories.filter(c=>groups.get(c.id).length).map(c=>
+     c.label.replace(/^Saved /,'')+' '+groups.get(c.id).length).join(', '));
    const symbols=document.createElement('span');symbols.className='gn-dock-summary-symbols';
    for(const category of categories){
     const count=groups.get(category.id).length;if(!count)continue;
     const pair=document.createElement('span');pair.className='gn-dock-summary-pair';pair.dataset.gnMark=category.id;
+    pair.title=category.label+': '+count;
     const number=document.createElement('span');number.className='gn-dock-count';
     number.textContent=count;pair.append(displaySymbol(category),number);
     symbols.append(pair);
    }
-   const fallback=document.createElement('span');fallback.className='gn-dock-summary-fallback';
-   fallback.textContent=total+' items';
+   // Keep every nonzero category count visible, including on 320px phones.
+   // The cluster wraps rather than degrading to an anonymous total.
    const caret=document.createElement('span');caret.className='gn-dock-summary-caret';
    caret.textContent='⌃';caret.setAttribute('aria-hidden','true');
-   button.append(savedPrefix(),symbols,fallback,caret);
+   button.append(savedPrefix(),symbols,caret);
    button.addEventListener('click',()=>{
     const uniqueItem=total===1?[...groups.values()].flat()[0]:null;
     if(uniqueItem)openSaved(uniqueItem,place.section);
@@ -379,9 +430,28 @@ function create({state,rd}){
  window.addEventListener('resize',()=>{
   if(sheet)positionSheet(sheet,sheetTrigger);else flushSoon();
  },{passive:true});
- window.addEventListener('hashchange',()=>{closeSheet();flushSoon();});
+ // Reader scrolling/history can update the URL hash or repeat a route
+ // notification. Neither should dismiss an open saved-items dialog unless
+ // the user really navigated away or selected a different section.
+ function leftSheetLocation(){
+  if(!sheet)return false;
+  if(state.route!=='reader')return true;
+  const hash=location.hash.replace(/^#/,'');
+  if(!hash||hash==='reader')return false;
+  if(!hash.startsWith('section='))return true;
+  const destination=new URLSearchParams(hash).get('section');
+  return !!destination&&String(destination)!==sheetSection;
+ }
+ function onReadingNavigation(){
+  if(sheet){
+   if(leftSheetLocation()){closeSheet();flushSoon();}
+   return;
+  }
+  flushSoon();
+ }
+ window.addEventListener('hashchange',onReadingNavigation);
  document.addEventListener('gnamma-reading-desk-change',reindex);
- document.addEventListener('gnamma-reader-route-change',()=>{closeSheet();flushSoon();});
+ document.addEventListener('gnamma-reader-route-change',onReadingNavigation);
  // Outside taps are handled by the backdrop's click listener, not document
  // pointerdown. This prevents click-through onto reading content.
  document.addEventListener('keydown',event=>{
