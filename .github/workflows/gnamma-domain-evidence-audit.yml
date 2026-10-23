@@ -1,0 +1,68 @@
+name: One-off Gnamma dictionary evidence audit
+# Experiment only; no public deployment or changes to inference indexes.
+on:
+  push:
+    branches:
+      - experiment/gnamma-dictionary-evidence-20261023
+    paths:
+      - '.github/workflows/gnamma-domain-evidence-audit.yml'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  evidence-proposals:
+    strategy:
+      fail-fast: false
+      matrix:
+        work: [daruri, mustasfa]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check provenance and lexicon audit code
+        run: |
+          python3 -m py_compile daruri/build/propose_dictionary_morphology.py
+          python3 daruri/qa/test-dictionary-morphology.py
+      - name: Retrieve candidate indexes from successful full historical BERT run
+        uses: actions/download-artifact@v4
+        with:
+          run-id: 39883804764
+          name: contextual-candidates-${{ matrix.work }}-3
+          path: ${{ runner.temp }}/candidate
+          github-token: ${{ github.token }}
+      - name: Produce comparative, unreviewed dictionary evidence records
+        env:
+          WORK: ${{ matrix.work }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/domain-audit"
+          python3 daruri/build/propose_dictionary_morphology.py \
+            --index "$RUNNER_TEMP/candidate/morph-${WORK}-v1.json" \
+            --output "$RUNNER_TEMP/domain-audit/${WORK}-dictionary-suggestions.csv" \
+            --summary "$RUNNER_TEMP/domain-audit/${WORK}-summary.json"
+          python3 - <<'PY'
+          import csv, os, collections
+          path=f'{os.environ["RUNNER_TEMP"]}/domain-audit/{os.environ["WORK"]}-dictionary-suggestions.csv'
+          with open(path,encoding="utf-8-sig",newline="") as f:
+              reader=csv.DictReader(f)
+              records=list(reader)
+          print("Flagged records:",len(records))
+          kinds=collections.Counter(flag.strip() for r in records
+              for flag in r["review_flags"].split(";") if flag.strip())
+          for k,n in kinds.most_common():print(k,n)
+          for r in records:
+              if "technical-lexicon-has-root-model-omits" in r["review_flags"]:
+                  print("Example missing root:",r["passage_id"],r["surface"],
+                        "model=",r["model_lemma"],"suggested=",r["suggested_roots_for_review"])
+                  break
+          PY
+          echo "Automated dictionary-supported proposals only. No gold annotation or public index modifications." > "$RUNNER_TEMP/domain-audit/NOTICE.txt"
+      - name: Export review files, without model weights
+        uses: actions/upload-artifact@v4
+        with:
+          name: dictionary-evidence-${{ matrix.work }}-${{ github.run_number }}
+          path: ${{ runner.temp }}/domain-audit/
+          retention-days: 14
+          if-no-files-found: error
