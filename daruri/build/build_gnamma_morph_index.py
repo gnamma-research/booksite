@@ -234,8 +234,11 @@ class ContextualBERT:
 def build_index(work: str, rows: list[tuple[str, str]], annotator, mode: str):
     records = []
     summary = Counter()
-    for locator, text in rows:
+    for processed, (locator, text) in enumerate(rows, 1):
         a, n = annotator.annotate(text)
+        if mode == "bert" and (processed == 1 or processed % 50 == 0 or processed == len(rows)):
+            print(f"{work}: analysed {processed}/{len(rows)} published passages; "
+                  f"{summary['tokens'] + n} word tokens processed", flush=True)
         summary["tokens"] += n
         summary["annotations"] += len(a)
         summary["analysedTokens"] += len({entry[0] for entry in a
