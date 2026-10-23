@@ -44,7 +44,10 @@ let server,browser,context;
   assert.equal(status.source_paragraphs,414);
   assert.equal(status.source_line_count>=414,true);
   assert.equal(status.pages,Math.ceil(status.source_line_count/12));
-  assert.equal(status.one_exact_unicode_cid_per_line,true);
+  assert.equal(status.one_exact_unicode_cid_per_line,false);
+  assert.equal(status.one_exact_unicode_layer_per_line,true);
+  assert.equal(status.semantic_chunk_limit,28);
+  assert.equal(status.source_chunk_reconstruction_guaranteed,true);
   assert.equal(status.full_authorial_arabic_word_content_represented,true);
   assert.equal(status.original_published_pdf_inputs,0);
   // Require the explicit false value emitted by this exact nonrelease
