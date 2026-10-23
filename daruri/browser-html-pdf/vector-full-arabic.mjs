@@ -165,7 +165,11 @@ function drawSourceGlyphs(page,kitFont,phrase,x,y,size){
       const unicodeCandidates=Array.isArray(glyph?.codePoints)?glyph.codePoints:[];
       const fromCluster=Number.isInteger(shaped.stringIndices?.[i])
         ?phrase.codePointAt(shaped.stringIndices[i]):undefined;
-      const cp=unicodeCandidates.find(ch=>ch===0x27e8||ch===0x27e9)??fromCluster;
+      // The fontkit .notdef glyph object is reused across missing symbols
+      // and codePoints can identify the *first* absent character forever.
+      // Source stringIndices, not glyph.codePoints, is authoritative here.
+      const cp=(fromCluster===0x27e8||fromCluster===0x27e9)
+        ?fromCluster:unicodeCandidates.find(ch=>ch===0x27e8||ch===0x27e9);
       if(cp!==0x27e8&&cp!==0x27e9)
         throw Error('Unresolved original visible font glyph U+'+
           (cp??0).toString(16).toUpperCase()+' in '+phrase.slice(0,55));
