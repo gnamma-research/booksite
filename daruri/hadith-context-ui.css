@@ -5,7 +5,7 @@
 .gn-hadith-context-toggle:focus-visible,.gn-hadith-arabic-fold summary:focus-visible{outline:2px solid var(--accent,currentColor);outline-offset:3px;border-radius:4px}
 .gn-hadith-chevron{font-size:20px;line-height:1;transition:transform .15s}.gn-hadith-context[open] .gn-hadith-chevron{transform:rotate(90deg)}
 .gn-hadith-open,.gn-hadith-context[open] .gn-hadith-closed{display:none}.gn-hadith-context[open] .gn-hadith-open{display:inline}
-.gn-hadith-context-body{min-width:0;max-height:65vh;overflow-y:auto;overscroll-behavior:contain}
+.gn-hadith-context-body{min-width:0;max-height:none;overflow:visible;overscroll-behavior:auto}
 .gn-hadith-lead,.gn-hadith-credit,.gn-hadith-unresolved,.gn-hadith-translation-note,.gn-hadith-status,.gn-hadith-error{font-size:.86em;line-height:1.5}
 .gn-hadith-lead,.gn-hadith-credit,.gn-hadith-translation-note{color:var(--muted,var(--text-secondary,inherit))}
 .gn-hadith-unresolved{border-inline-start:3px solid var(--accent,currentColor);padding-inline-start:10px}
@@ -17,11 +17,11 @@
 .gn-hadith-arabic-fold{margin:8px 0}.gn-hadith-arabic-fold summary{cursor:pointer;padding:8px 0;min-height:44px;font-weight:600}
 .gn-hadith-english{font:inherit;line-height:1.65;min-width:0;overflow-wrap:break-word;hyphens:auto}.gn-hadith-english-paragraph{margin:.8em 0;line-height:1.7;white-space:pre-wrap}.gn-hadith-section-label{display:block;margin:13px 0 7px;font-size:.95rem;line-height:1.4;font-weight:700;color:var(--text,inherit)}
 .gn-hadith-source-link{display:inline-flex;align-items:center;min-height:44px;color:var(--accent,var(--link,#2563eb));overflow-wrap:anywhere;text-decoration:underline}
-@media (max-width:480px){.gn-hadith-context-body{max-height:55vh}.gn-hadith-original-ar{font-size:1.06rem;line-height:1.95;padding:8px}}
+@media (max-width:480px){.gn-hadith-original-ar{font-size:1.06rem;line-height:1.95;padding:8px}}
 
 /* Full bilingual transmission is only rendered after opening its source note. */
 .gn-hadith-context-body .gn-hadith-english{padding:0 2px 8px}
-.gn-hadith-context-body:focus-within{scrollbar-gutter:stable}
+
 .gn-hadith-arabic-fold summary{color:var(--accent,var(--text,inherit))}
 @media(prefers-reduced-motion:reduce){.gn-hadith-chevron{transition:none}}
 
