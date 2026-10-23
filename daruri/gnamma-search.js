@@ -724,7 +724,9 @@ function gnLoadSavedQuery(index){
  const keys=['query','mode','scope','facet','sort','booleanScope','orthography','nearTerm','nearGap','nearOrdered','booleanScope','orthography'];
  for(const key of keys)if(Object.hasOwn(record,key))ui[key]=record[key];
  ui.expanded=true;ui.savedOpen=true;ui.mobileView='results';ui.page=CONFIG.pageSize;ui.pendingReturn=null;
- rerender();
+ const mobile=window.matchMedia('(max-width:760px)').matches;
+ rerender(!mobile);
+ if(mobile)$('#gns-listpane',host)?.focus({preventScroll:true});
 }
 function gnSavedPanel(mobile=false){
  const rows=gnLoadSaved();
@@ -1076,7 +1078,9 @@ function openWith(query,mode='terms',facet='all'){
  if(!ui.opened)open();
  ui.query=String(query||'');ui.mode=mode;ui.facet=facet;ui.expanded=true;ui.mobileView='results';
  ui.showFilters=false;ui.page=CONFIG.pageSize;ui.pendingReturn=null;
- rerender();
+ const mobile=window.matchMedia('(max-width:760px)').matches;
+ rerender(!mobile);
+ if(mobile)$('#gns-listpane',host)?.focus({preventScroll:true});
 }
 function open(restoring=false){
  ui.before=document.activeElement;ui.opened=true;
