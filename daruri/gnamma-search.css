@@ -155,3 +155,5 @@
 @media(prefers-reduced-motion:reduce){
  .gns-root .gns-extra-tools>summary::after{transition:none}
 }
+
+.gns-root .gns-research-caption{color:var(--gns-txt);font:650 12px/1.4 var(--sans,system-ui,sans-serif)}
