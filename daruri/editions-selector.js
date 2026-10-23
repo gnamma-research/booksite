@@ -625,6 +625,53 @@
       }
     }
   }
+  // This is the portable scholarly SOURCE, not the HTML/PDF offline reader ZIP.
+  // A public download is shown only after editorial and rights approval, a
+  // signed-off release manifest, and an actual hosted file with the right type.
+  const SOURCE_ARCHIVE_PATH='source/Daruri_Portable_Scholarly_Source.zip';
+  function approvedSourceRelease(meta){
+    return meta?.schema==='gnamma-daruri-source-archive-v1'&&
+      meta.status==='published'&&meta.rights_review==='approved'&&
+      meta.editorial_review==='approved'&&
+      meta.file===SOURCE_ARCHIVE_PATH&&
+      /^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$/.test(meta.version||'')&&
+      /^[0-9a-f]{40}$/.test(meta.source_commit||'')&&
+      /^[0-9a-f]{64}$/.test(meta.sha256||'')&&
+      Number.isSafeInteger(meta.size_bytes)&&meta.size_bytes>1000&&
+      meta.size_bytes<100*1024*1024;
+  }
+  async function showApprovedSourceDownload(view){
+    const panel=view.querySelector('[data-es-source]');
+    if(!panel)return;
+    try{
+      const releaseResponse=await fetch('source-archive-manifest.json?v=20261023-source-archive-ui1',{
+        cache:'no-store',credentials:'same-origin'
+      });
+      if(!releaseResponse.ok)return;
+      const release=await releaseResponse.json();
+      if(!approvedSourceRelease(release))return;
+      const url=new URL(SOURCE_ARCHIVE_PATH,document.baseURI);
+      if(url.origin!==location.origin)return;
+      const head=await fetch(url.href,{method:'HEAD',cache:'no-store',credentials:'same-origin'});
+      if(!head.ok||new URL(head.url).origin!==url.origin)return;
+      const type=(head.headers.get('content-type')||'').split(';')[0].trim().toLowerCase();
+      if(!['application/zip','application/x-zip-compressed','application/octet-stream'].includes(type))return;
+      const length=head.headers.get('content-length');
+      if(length!==null&&Number(length)!==release.size_bytes)return;
+      if(root!==view||!view.isConnected)return;
+      url.searchParams.set('v',release.sha256.slice(0,12));
+      const download=panel.querySelector('[data-es-source-download]');
+      download.href=url.href;
+      download.download='Daruri_Portable_Scholarly_Source.zip';
+      panel.querySelector('[data-es-source-metadata]').textContent=
+        'Version '+release.version+' · '+(release.size_bytes/1e6).toFixed(2)+
+        ' MB · source commit '+release.source_commit.slice(0,12);
+      panel.querySelector('[data-es-source-hash]').textContent=release.sha256;
+      panel.hidden=false;
+    }catch(_){
+      // A missing or malformed release is simply not an available download.
+    }
+  }
   function mount(main){
     if(preparation.controller)preparation.controller.abort();
     if(preparation.url)URL.revokeObjectURL(preparation.url);
@@ -680,6 +727,7 @@
       refresh();
     });
     loadPersonalTools(mounted);
+    void showApprovedSourceDownload(mounted);
   }
   window.GnammaEditions.render=function(main,payload){
     const response=oldRender.call(this,main,payload);
