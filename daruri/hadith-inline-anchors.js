@@ -36,8 +36,8 @@ function marker(id,key){
   a.href='#notes';
   a.dataset.gnHadithInline=id;
   a.dataset.gnHadithKey=key;
-  // The normal Notes route sets this marker as the focus return target.
-  a.dataset.gnNotesOpen='';
+  // The Notes route is attached temporarily on activation, so generic
+  // [data-gn-notes-open] selectors still find the original Notes control.
   a.textContent='H';
   a.dir='ltr';
   a.title='Hadith source note '+id;
@@ -125,9 +125,12 @@ function onMarkerClick(event){
   if(!(target instanceof Element))return;
   const ref=target.closest('.gn-hadith-inline-marker');
   if(!ref)return;
-  // The existing [data-gn-notes-open] click listener opens the section's Notes
-  // card; move focus to this precise Hadith note after that listener runs.
+  // Capture runs before the reader's delegated Notes handler. Present this
+  // anchor as its opener ONLY for this click, then restore its usual identity.
+  ref.setAttribute('data-gn-notes-open','');
+  event.preventDefault();
   requestAnimationFrame(()=>{
+    ref.removeAttribute('data-gn-notes-open');
     const layer=document.getElementById('gn-scholar-layer');
     const note=layer?.querySelector(
       '.gn-note-entry[data-note-id="'+ref.dataset.gnHadithInline+'"]');
@@ -142,7 +145,7 @@ function start(){
   const main=document.getElementById('mainContent');
   if(!main)return;
   new MutationObserver(schedule).observe(main,{childList:true,subtree:true});
-  document.addEventListener('click',onMarkerClick);
+  document.addEventListener('click',onMarkerClick,true);
   document.addEventListener('gnamma-reader-route-change',schedule);
   window.GnammaHadithInlineQA={notes:rowsBySection.size,anchors:ANCHORS.length};
   schedule();

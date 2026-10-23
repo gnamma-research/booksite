@@ -471,6 +471,6 @@ window.DARURI_SOURCE_REFERENCES = {
   js.async = false; document.head.appendChild(js);
   /* Inline H source links are independent of the lazy expanded Hadith corpus. */
   var inline = document.createElement('script');
-  inline.src = new URL('hadith-inline-anchors.js?v=20261023-hmarkers1', base).href;
+  inline.src = new URL('hadith-inline-anchors.js?v=20261023-hmarkers2', base).href;
   inline.async = false; document.head.appendChild(inline);
 })();
