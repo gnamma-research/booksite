@@ -884,7 +884,7 @@ function create(ctx){
   try{return localStorage.getItem('gnamma-rd-show-personal-marks')!=='false';}catch(_){return true;}
  }
  function closeContext(){
-  $('#gn-rd-inline-panel')?.remove();openContext=null;
+  $('#gn-rd-inline-panel')?.remove();openContext=null;window.GnammaReaderScrollLock?.release?.('rd-mobile-items');
  }
  function showContext(sectionId,segment,anchor){
   closeContext();
@@ -906,6 +906,7 @@ function create(ctx){
   const holder=anchor.closest('.gn-rd-passage-tools')||anchor.parentElement;
   holder.after(panel);
   openContext={section:sectionId,segment,at:window.scrollY||0};
+  if(window.matchMedia?.('(max-width:760px)')?.matches)window.GnammaReaderScrollLock?.acquire?.('rd-mobile-items');
   panel.querySelector('button')?.focus({preventScroll:true});
  }
  function ensureVisualsToggle(){
@@ -1327,7 +1328,7 @@ function create(ctx){
   if(!printRoot)return;
   invalidateDeskPdf();
   const focus=printFocus;printFocus=null;printRoot.remove();printRoot=null;printSelection=null;
-  document.body.classList.remove('gn-rd-print');
+  document.body.classList.remove('gn-rd-print');window.GnammaReaderScrollLock?.release?.('rd-print');
   if(focus?.isConnected)focus.focus({preventScroll:true});
  }
  function ensureDeskPdf(){
@@ -1503,7 +1504,7 @@ function create(ctx){
    '<button type="button" data-rd="share-pdf" hidden>Share PDF…</button></div>'+
    '<main class="gn-rd-print-sheet"><header><h1>Reading Desk</h1>'+
    '<p id="gn-rd-print-sheet-subtitle"></p></header><div id="gn-rd-print-sheet-body"></div></main>';
-  document.body.append(printRoot);document.body.classList.add('gn-rd-print');
+  document.body.append(printRoot);document.body.classList.add('gn-rd-print');window.GnammaReaderScrollLock?.acquire?.('rd-print');
   updatePrintSheet();
   printRoot.querySelector('[data-rd="download-pdf"]')?.focus({preventScroll:true});
  }
