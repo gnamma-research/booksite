@@ -80,11 +80,17 @@ async function fallback(s){
  const profile=await s.page.locator('#gn-dyn-profile').inputValue();
  const actual=await s.page.locator('#pe-edition').inputValue();
  if(/^apparatus\/daruri-[a-z-]+\.pdf$/.test(profile)){
-  const expected='editions/'+profile;
+  // Stage 1 retires the full stored variant. A failed composition must select
+  // its matching clean SOURCE, never an absent full PDF or the previous profile.
+  const packetManifest=JSON.parse(fs.readFileSync(path.join(root,'daruri/dynamic-pdf/packets/manifest.json'),'utf8'));
+  const binding=packetManifest.profiles.find(item=>item.profile===profile);
+  assert(binding,'No signed composition map for failed profile');
+  const expected='editions/'+binding.base;
   assert.equal(actual,expected,
-   'After any failed generation the EXACT requested published edition must be selected, never a previous generated PDF or another canonical PDF');
+   'After any failed generation choose the correct clean source, not a retired apparatus or an unrelated edition');
   assert(href&&new URL(href,host+'/daruri/dynamic-editions.html').pathname.endsWith('/daruri/'+expected),
-   'Approved fallback hyperlink does not match the selected exact edition');
+   'The clean-source fallback link does not match the exact approved source');
+  assert.match(await s.page.locator('#gn-dyn-personal-status').innerText(),/does not include|clean source|No verified clean source/i);
  }else{
   // Without a verified dynamic catalogue, the canonical source is the
   // only published option the independent base exporter can safely use.
