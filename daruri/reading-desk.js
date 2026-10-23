@@ -68,8 +68,60 @@ function create(ctx){
  const ui={category:'all',sourceType:'all',sort:'created-desc',query:'',selected:'',context:'both',expanded:false,filterTarget:'',filterSegment:null,mobileDetail:false,listScroll:0};
  const printPrefs={scope:'visible',order:'source',arabic:true,english:true,personal:true,dates:true,bookmarkDates:false,full:false};
  let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,writeConflict=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='',relinkFocus=null;
+ let lastTermOrigin=null;
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
+ // Keep one canonical saved reference, plus the reading places where it was saved.
+ // These optional origins travel with normal Reading Desk JSON backups.
+ function normalizeOrigins(input){
+  const out=[],seen=new Set();
+  for(const item of Array.isArray(input)?input:[]){
+   const n=String(item?.section??''),sec=section(n);
+   if(!sec)continue;
+   const value=item?.segment;
+   const segment=value!==null&&value!==undefined&&Number.isInteger(Number(value))&&
+    Number(value)>=0&&Number(value)<(sec.segments||[]).length?Number(value):null;
+   const id=n+':'+(segment===null?'':segment);
+   if(seen.has(id))continue;
+   seen.add(id);out.push({section:n,segment});
+   if(out.length>=250)break;
+  }
+  return out;
+ }
+ function readingOriginFor(target){
+  if(state.route!=='reader'||!target||!['dictionary','index','application','lesson'].includes(target.kind))return null;
+  if(target.kind==='dictionary'&&lastTermOrigin?.term===target.term&&
+    Date.now()-lastTermOrigin.at<1800000&&section(lastTermOrigin.section))
+   return {section:lastTermOrigin.section,segment:lastTermOrigin.segment};
+  const reader=document.getElementById('reader'),last=window.__termClickOrigin;
+  const anchor=target.kind==='dictionary'&&last?.dataset?.term===target.term&&
+   reader?.contains(last)?last:null;
+  const grid=anchor?.closest('.passage-grid');
+  const n=String(grid?.closest('[data-reading-section]')?.dataset.readingSection||
+   anchor?.closest('[data-reading-section]')?.dataset.readingSection||state.n||'');
+  if(!section(n))return null;
+  const raw=grid?.dataset.segment,segment=raw!==undefined&&
+   Number.isInteger(Number(raw))&&Number(raw)>=0?Number(raw):null;
+  return {section:n,segment:segment!==null&&segment<(section(n)?.segments||[]).length?segment:null};
+ }
+ function linkedHere(row,target){
+  if(!row)return false;
+  const place=readingOriginFor(target);
+  if(target?.kind!=='dictionary'||!place)return true;
+  return normalizeOrigins(row.origins).some(loc=>loc.section===place.section);
+ }
+ function associateOrigin(row,target){
+  const place=readingOriginFor(target);
+  if(!place)return false;
+  const before={origins:row.origins,updated:row.updated};
+  const current=normalizeOrigins(row.origins);
+  if(current.some(loc=>loc.section===place.section))return true;
+  row.origins=[...current,place];row.updated=Date.now();
+  if(!persist()){Object.assign(row,before);return false;}
+  ctx.notify('Linked this saved reference to '+ctx.sectionRef(place.section)+'.');
+  if(state.route==='reader')syncActionStates();
+  return true;
+ }
  function validateTarget(raw){
   if(!raw||typeof raw!=='object'||Array.isArray(raw))return null;
   const kind=clamp(raw.kind,30);
@@ -131,6 +183,7 @@ function create(ctx){
   const title=typeof r.title==='string'?r.title:r.title==null?'':JSON.stringify(r.title);
   const body=typeof r.body==='string'?r.body:r.body==null?'':JSON.stringify(r.body);
   return {...r,id:clamp(r.id,100)||uuid(),kind,target,title,body,
+    ...(Array.isArray(r.origins)?{origins:normalizeOrigins(r.origins)}:{}),
    ...(r.body!=null&&typeof r.body!=='string'?{archivedBodyValue:r.body}:{}),
    ...(r.title!=null&&typeof r.title!=='string'?{archivedTitleValue:r.title}:{}),
    ...(rawTarget&&target&&JSON.stringify(rawTarget)!==JSON.stringify(target)?{sourceTargetOriginal:archiveTarget(rawTarget)}:{}),
@@ -317,11 +370,13 @@ function create(ctx){
      ctx.notify('Restored to Reading Desk.');
      if(state.route==='bookmarks')render();
      if(state.route==='reader')refreshReaderAfterBookmark(target);
-    }else ctx.notify('Already in Reading Desk.');
+    }else if(readingOriginFor(target)&&!linkedHere(existing,target))associateOrigin(existing,target);
+    else ctx.notify('Already in Reading Desk.');
     return existing;
    }
   }
-  const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target});
+  const readingOrigin=readingOriginFor(target);
+   const row=sanitize({id:uuid(),kind,target,title,body,origins:readingOrigin?[readingOrigin]:[],created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target});
   if(!row)return null;
   records.unshift(row);
   if(!persist()){records.shift();return null;}
@@ -452,11 +507,18 @@ function create(ctx){
  function grouped(r){return r.kind==='note'?'My note':r.kind==='footnote'?footnoteKind(r.target?.noteId):
   r.kind==='section'?'Section bookmark':r.kind==='paragraph'?'Paragraph bookmark':
   r.kind==='quote'?'Highlight':LABELS[typeOf(r)]||'Bookmark';}
+ function matchesReadingLocus(row){
+  if(!ui.filterTarget&&ui.filterSegment===null)return true;
+  const t=row.target,known=[];
+  if(t?.section!=null)known.push({section:String(t.section),segment:t.segment==null?null:Number(t.segment)});
+  known.push(...normalizeOrigins(row.origins));
+  return known.some(loc=>(!ui.filterTarget||loc.section===ui.filterTarget)&&
+   (ui.filterSegment===null||loc.segment===ui.filterSegment));
+ }
  function matching(){
   const q=norm(ui.query).toLocaleLowerCase(),bin=ui.category==='bin';
   const rows=records.filter(r=>Boolean(r.deleted)===bin&&
-   (!ui.filterTarget||r.target?.section===ui.filterTarget)&&
-   (ui.filterSegment===null||r.target?.segment===ui.filterSegment)&&
+   matchesReadingLocus(r)&&
    (bin||ui.category==='all'||ui.category==='mine'&&r.kind==='note'||ui.category==='bookmarks'&&!['note','quote'].includes(r.kind)||ui.category==='highlights'&&r.kind==='quote')&&
    (bin||ui.sourceType==='all'||typeOf(r)===ui.sourceType)&&
    (!q||norm([r.title,titleOf(r.target),r.body,r.target?.quote,r.target?.term,r.target?.app,subOf(r.target)].join(' ')).toLocaleLowerCase().includes(q)));
@@ -760,10 +822,26 @@ function create(ctx){
     const app=dialog.querySelector('[data-gn-application]');
     if(app&&!app.dataset.rdDecorated){app.dataset.rdDecorated='1';app.append(actions({kind:'application',app:app.dataset.gnApplication},true));}
     const note=dialog.querySelector('[data-note-in-section]')?.dataset.noteInSection;
-    if(note&&!dialog.dataset.rdNoteId){dialog.dataset.rdNoteId=note;const n=ctx.notes.get(note);if(n)dialog.append(actions({kind:'footnote',section:String(n.n),noteId:note},true));}
+    // detailContent is reused: innerHTML is replaced but data attributes persist.
+    // A source-note card must receive the bookmark action on every opening,
+    // including when switching directly from one note to another.
+    if(note&&(dialog.dataset.rdNoteId!==note||
+       !dialog.querySelector(':scope > .gn-rd-attach-actions [data-rd="attach-bookmark"]'))){
+     dialog.querySelector(':scope > .gn-rd-attach-actions')?.remove();
+     dialog.dataset.rdNoteId=note;
+     const n=ctx.notes.get(note);
+     if(n)dialog.append(actions({kind:'footnote',section:String(n.n),noteId:note},true));
+    }
     const eyebrow=$('#detailEyebrow')?.textContent||'';
     const term=dialog.querySelector('#detailTitle')?.textContent?.trim();
-    if(eyebrow.includes('DICTIONARY ENTRY')&&term&&!dialog.dataset.rdTerm){dialog.dataset.rdTerm=term;dialog.append(actions({kind:'dictionary',term},true));}
+    const dictionaryCard=eyebrow.includes('DICTIONARY ENTRY')||
+     eyebrow.includes('LEXICAL & TECHNICAL REFERENCE');
+    if(dictionaryCard&&term&&(dialog.dataset.rdTerm!==term||
+       !dialog.querySelector(':scope > .gn-rd-attach-actions [data-rd="attach-bookmark"]'))){
+     dialog.querySelector(':scope > .gn-rd-attach-actions')?.remove();
+     dialog.dataset.rdTerm=term;
+     dialog.append(actions({kind:'dictionary',term},true));
+    }
    }else if(dialog){delete dialog.dataset.rdNoteId;delete dialog.dataset.rdTerm;}
    $('#gn-scholar-layer')?.querySelectorAll('[data-note-id]').forEach(el=>{
     if(el.dataset.rdDecorated)return;const note=ctx.notes.get(el.dataset.noteId);if(!note)return;
@@ -774,8 +852,9 @@ function create(ctx){
  function actions(target,compact){
   const row=document.createElement('div');row.className='gn-rd-attach-actions'+(compact?' gn-rd-compact':'');
   const serialized=encodeURIComponent(JSON.stringify(target));
-  const stored=active().some(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
-  const title=bookmarkUI.actionLabel(target.kind,stored);
+  const found=active().find(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
+  const stored=linkedHere(found,target);
+  const title=found&&!stored?'Save dictionary entry in this section':bookmarkUI.actionLabel(target.kind,stored);
   row.innerHTML='<button type="button" data-rd="attach-bookmark" data-target="'+esc(serialized)+'" aria-pressed="'+stored+'" aria-label="'+esc(title)+'">'+bookmarkUI.icon({saved:stored})+'<span>'+esc(stored?'Remove bookmark':'Bookmark')+'</span></button>'+
    '<button type="button" data-rd="attach-view" data-target="'+esc(serialized)+'"'+(stored?'':' hidden')+'>View in Reading Desk</button>'+
    '<button type="button" data-rd="attach-note" data-target="'+esc(serialized)+'">'+RD_ICON.note+'<span>Add my note</span></button>';
@@ -784,11 +863,11 @@ function create(ctx){
  function syncActionStates(){
   // Make one index for the current saved collection; avoid rescanning every
   // record for every dictionary/index/footnote control on a long reader page.
-  const keys=new Set(active().filter(r=>r.target&&r.kind===r.target.kind).map(r=>keyOf(r.target)));
+  const byKey=new Map(active().filter(r=>r.target&&r.kind===r.target.kind).map(r=>[keyOf(r.target),r]));
   document.querySelectorAll('[data-rd="attach-bookmark"]').forEach(btn=>{
    let target;try{target=JSON.parse(decodeURIComponent(btn.dataset.target||''));}catch(_){return;}
-   const stored=keys.has(keyOf(target));
-   const title=bookmarkUI.actionLabel(target.kind,stored);
+   const found=byKey.get(keyOf(target)),stored=linkedHere(found,target);
+   const title=found&&!stored?'Save dictionary entry in this section':bookmarkUI.actionLabel(target.kind,stored);
    btn.innerHTML=bookmarkUI.icon({saved:stored})+'<span>'+esc(stored?'Remove bookmark':'Bookmark')+'</span>';
    btn.setAttribute('aria-label',title);btn.setAttribute('aria-pressed',String(stored));
    const view=btn.parentElement?.querySelector('[data-rd="attach-view"]');
@@ -1146,7 +1225,7 @@ function create(ctx){
   const incoming=allowed.map(sanitize).filter(Boolean);
   if(allowed.length&&!incoming.length)throw Error('No valid entries found');
   const merged=records.slice(),byId=new Map(merged.map(r=>[r.id,r])),now=Date.now();
-  const fields=['kind','target','title','body','deleted','standalone'];
+  const fields=['kind','target','title','body','deleted','standalone','origins'];
   const contentDiffers=(a,b)=>fields.some(k=>JSON.stringify(a[k])!==JSON.stringify(b[k]));
   let changes=0;
   function preserveVersion(row,reason){
@@ -1423,6 +1502,19 @@ function create(ctx){
   printRoot.querySelector('[data-rd="download-pdf"]')?.focus({preventScroll:true});
  }
  function handle(event){
+  // Capture before the reader's dictionary overlay clears __termClickOrigin.
+  // The saved reference can then retain its exact paragraph, not just §.
+  const clickedTerm=event.target.closest?.('[data-term]');
+  const sourceReader=$('#reader');
+  if(clickedTerm&&state.route==='reader'&&sourceReader?.contains(clickedTerm)){
+   const grid=clickedTerm.closest('.passage-grid');
+   const n=String(grid?.closest('[data-reading-section]')?.dataset.readingSection||
+    clickedTerm.closest('[data-reading-section]')?.dataset.readingSection||state.n||'');
+   const raw=grid?.dataset.segment;
+   const p=raw!==undefined&&Number.isInteger(Number(raw))&&Number(raw)>=0?Number(raw):null;
+   if(section(n))lastTermOrigin={term:clickedTerm.dataset.term,section:n,
+    segment:p!==null&&p<(section(n).segments||[]).length?p:null,at:Date.now()};
+  }
   const btn=event.target.closest?.('[data-rd]');if(!btn)return;
   event.preventDefault();event.stopImmediatePropagation();
   const id=btn.dataset.id,action=btn.dataset.rd,row=records.find(r=>r.id===id);
@@ -1476,7 +1568,10 @@ function create(ctx){
    if(!target){ctx.notify('Cannot find this reference.');return;}
    if(action==='attach-note'){showEditor(target);return;}
    const found=active().find(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
-   if(action==='attach-bookmark'){if(found)trash(found.id);else upsert(target.kind,target);return;}
+   if(action==='attach-bookmark'){
+     if(found&&!linkedHere(found,target)){associateOrigin(found,target);return;}
+     if(found)trash(found.id);else upsert(target.kind,target);return;
+    }
    if(!found){ctx.notify('This reference is not bookmarked.');return;}
    if(target.section)enterDeskFromText(target.section,target.segment==null?null:target.segment,found.id);
    else{ui.category='all';ui.sourceType='all';ui.selected=found.id;ui.filterTarget='';ui.filterSegment=null;ui.mobileDetail=matchMedia('(max-width:760px)').matches;ctx.navigate('bookmarks');}
@@ -1631,7 +1726,36 @@ function create(ctx){
  return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,
   importParsed,downloadBackup:(data,name)=>download(data,name),importFile,
   records:()=>records,
-  openAt:(section,segment=null,kind='all')=>{
+   sourceKind:row=>{
+    if(row?.kind==='note')return 'note';
+    const kind=row?.target?.kind||row?.kind;
+    if(kind!=='footnote')return kind;
+    const note=ctx.notes.get(row?.target?.noteId);
+    if(note?.source_type==='quran'||note?.kind==='quran-source')return 'quran';
+    if(note?.source_type==='hadith'||note?.kind==='hadith-source')return 'hadith';
+    return 'source';
+   },
+   describeSavedItem:row=>({title:row?.title||titleOf(row?.target),detail:subOf(row?.target),
+    origins:normalizeOrigins(row?.origins)}),
+   openSavedItem:(id,fromSection=null)=>{
+    const row=records.find(r=>r.id===id&&!r.deleted);
+    if(!row)return false;
+    const origins=normalizeOrigins(row.origins);
+    const validOrigin=fromSection!=null&&(String(row.target?.section)===String(fromSection)||
+     origins.some(loc=>loc.section===String(fromSection)));
+    const linkedSection=validOrigin?String(fromSection):row.target?.section||origins[0]?.section||state.n;
+    if(row.kind==='note'||!isResolved(row)){
+     enterDeskFromText(linkedSection,null,row.id);
+     return true;
+    }
+    if(row.target?.kind==='dictionary'&&!row.target.historical&&state.route==='reader'){
+     // A saved term opened from the dock is not a new inline-word click.
+     lastTermOrigin=null;window.__termClickOrigin=null;
+     ctx.showTermDetail(row.target.term);decorate();return true;
+    }
+    openSource(row);return true;
+   },
+   openAt:(section,segment=null,kind='all')=>{
    enterDeskFromText(String(section),segment);
    if(kind==='notes'||kind==='bookmarks'||kind==='highlights'){
     ui.category=kind==='notes'?'mine':kind;

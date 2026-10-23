@@ -30,7 +30,11 @@ async function exercise(engine,name,host){
   const priorY=await page.evaluate(()=>window.scrollY);
   await page.locator('#openJump').click();
   await page.locator('#jumpSearch').waitFor();
-  assert.equal(await page.evaluate(()=>document.activeElement?.id),'jumpClose','Opening section picker must not auto-focus keyboard search');
+  // iOS WebKit can keep focus on the opening button instead of focusing the
+  // sheet's close button; either is safe so long as search never summons IME.
+  const pickerFocus=await page.evaluate(()=>document.activeElement?.id);
+  assert.ok(['jumpClose','openJump'].includes(pickerFocus),
+    'Opening section picker must not auto-focus keyboard search; focus='+pickerFocus);
   await page.locator('#jumpSearch').fill('abrogating recitation');
   await page.locator('#jumpResults [data-section="121"]').waitFor();
   await page.locator('#jumpResults [data-section="121"]').click();
@@ -61,7 +65,9 @@ async function exercise(engine,name,host){
   await page.locator('#contentsFilter').fill('118');
   assert.ok(await page.locator('.gn-contents-editorial-results [data-section="118"]').count(),'Source-first contents search must also find an editorial title');
   await page.goto(host+'/daruri/#home',{waitUntil:'domcontentloaded'});
-  assert.ok(await page.locator('#homeEditorialSources').count(),'Editorial method missing from homepage');
+  // WebKit can complete initial route rendering after DOMContentLoaded.
+  // Keep the same assertion, but wait for the actual homepage node to attach.
+  await page.locator('#homeEditorialSources').waitFor({state:'attached',timeout:12000});
   await page.locator('[data-route="help"]').last().click();
   await page.locator('.gn-history-help').waitFor();
   assert.ok((await page.locator('.gn-history-help').innerText()).includes('Recent locations'));

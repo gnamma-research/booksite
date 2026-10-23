@@ -38,15 +38,19 @@ async function exercise(engine,name,origin){
  try{
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
   await page.waitForSelector('#readerDock:not([hidden])',{timeout:20000});
-  await page.waitForSelector('#gn-dock-private-status .gn-dock-mark',{timeout:20000});
+  // Container queries may collapse the visible counters to a total; the individual
+  // spans remain attached, and the full mobile summary remains tappable.
+  await page.waitForSelector('#gn-dock-private-status .gn-dock-summary-pair',{state:'attached',timeout:20000});
+  await page.locator('#gn-dock-private-status .gn-dock-summary').waitFor({state:'visible'});
   assert(await page.locator('body.focus-level-1').count(),'old Focus 1 preference not retained');
-  assert.equal(await page.locator('#gn-dock-private-status .gn-dock-mark').count(),4,'section bookmark, paragraph bookmark, quotation and note each need an icon');
+  assert.equal(await page.locator('#gn-dock-private-status .gn-dock-summary').count(),1,'mobile saved references must have one generous touch target');
+  assert.equal(await page.locator('#gn-dock-private-status .gn-dock-summary-pair').count(),4,'section bookmark, paragraph bookmark, quotation and note each need an indicator');
   const counts=await page.locator('#gn-dock-private-status .gn-dock-count').allTextContents();
   assert.deepEqual(counts,['1','1','1','1'],'saved §, ¶, exact quotation and note need separate counts');
   assert.equal(await page.locator('#gn-dock-paragraph-ref').innerText(),'· ¶1','bottom dock must identify paragraph 1');
-  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraphBookmarks"] .gn-bm-paragraph .gn-bm-pilcrow').innerText(),'¶','saved paragraph must have compound bookmark-pilcrow glyph');
-  assert(await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg rect').count()===1 &&
-    await page.locator('#gn-dock-private-status [data-gn-mark="notes"] svg path').count()>=2,
+  assert.equal((await page.locator('#gn-dock-private-status [data-gn-mark="paragraph"] .gn-dock-code').textContent()).trim(),'¶','paragraph category must retain its distinct pilcrow below the shared saved-bookmark symbol');
+  assert(await page.locator('#gn-dock-private-status [data-gn-mark="note"] svg rect').count()===1 &&
+    await page.locator('#gn-dock-private-status [data-gn-mark="note"] svg path').count()>=2,
     'personal note icon must contain a page and inset pen');
   // Scroll from ¶1 (bookmarked/highlighted/noted) to ¶2 (no marks of its own).
   // The section-wide counters MUST remain visible, otherwise a reader browsing
@@ -54,18 +58,18 @@ async function exercise(engine,name,origin){
   await page.locator('#reader .passage-grid[data-segment="1"]').first()
     .evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
   await page.waitForFunction(()=>document.querySelector('#gn-dock-paragraph-ref')?.textContent==='· ¶2',{timeout:8000});
-  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="sectionBookmarks"]').count(),1,
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="section"]').count(),1,
     'section bookmark must persist as reader advances to paragraph 2');
-  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraphBookmarks"]').count(),1,
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraph"]').count(),1,
     'section-wide paragraph-bookmark count vanished while browsing paragraph 2');
-  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="highlights"]').count(),1,
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="highlight"]').count(),1,
     'section-wide highlight count vanished while browsing paragraph 2');
-  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="notes"]').count(),1,
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="note"]').count(),1,
     'section-wide personal-note count vanished while browsing paragraph 2');
   assert.deepEqual(await page.locator('#gn-dock-private-status .gn-dock-count').allTextContents(),
     ['1','1','1','1'],'section totals changed when only the visible paragraph changed');
-  assert.match(await page.locator('#gn-dock-private-status [data-gn-mark="highlights"]').getAttribute('aria-label'),
-    /in 11; 0 in paragraph 2/,'highlight count must identify the section and present paragraph separately');
+  assert.match(await page.locator('#gn-dock-private-status .gn-dock-summary').getAttribute('aria-label'),
+    /4 saved items in section 11/,'compact touch indicator must identify section-wide saved totals');
   await page.locator('#reader .passage-grid[data-segment="0"]').first()
     .evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
   await page.waitForFunction(()=>document.querySelector('#gn-dock-paragraph-ref')?.textContent==='· ¶1',{timeout:8000});
@@ -103,7 +107,7 @@ async function exercise(engine,name,origin){
   });
   // Section-wide counts must remain visible even on the unsaved ¶2.
   await page.waitForFunction(()=>document.querySelector('#dockSection')?.textContent?.trim()==='§11',null,{timeout:10000});
-  await page.waitForFunction(()=>document.querySelectorAll('#gn-dock-private-status .gn-dock-mark').length===4,null,{timeout:10000});
+  await page.waitForFunction(()=>document.querySelectorAll('#gn-dock-private-status .gn-dock-summary-pair').length===4,null,{timeout:10000});
   assert.deepEqual(await page.locator('#gn-dock-private-status .gn-dock-count').allTextContents(),
     ['1','1','1','1'],'Continuous lost section-wide status while scanning paragraphs');
   await page.locator('#focusToolbar').click();
@@ -114,17 +118,23 @@ async function exercise(engine,name,origin){
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded'});
   await page.locator('#reader .passage-grid[data-segment="0"]').first().evaluate(el=>el.scrollIntoView({block:'start',behavior:'instant'}));
   await page.waitForTimeout(200);
-  const noteMark=page.locator('#gn-dock-private-status [data-gn-mark="notes"]');
+  const noteMark=page.locator('#gn-dock-private-status [data-gn-mark="note"]');
   const diagnostics=await page.evaluate(()=>({hash:location.hash,heading:document.querySelector('#dockSection')?.textContent,body:document.body.className,markup:document.querySelector('#gn-dock-private-status')?.innerHTML,position:document.querySelector('#reader .passage-grid[data-segment="0"]')?.getBoundingClientRect().top,firstBottom:document.querySelector('#reader .passage-grid[data-segment="0"]')?.getBoundingClientRect().bottom,toolbarBottom:document.querySelector('#readingControls')?.getBoundingClientRect().bottom,dockTop:document.querySelector('#readerDock')?.getBoundingClientRect().top,hit:(()=>{const top=Math.max(0,document.querySelector('#readingControls')?.getBoundingClientRect().bottom||0),end=document.querySelector('#readerDock')?.getBoundingClientRect().top,y=Math.round(Math.max(top+35,Math.min(end-38,top+(end-top)*.42))),el=document.elementFromPoint(window.innerWidth/2,y);return {y,hit:el?.tagName,cls:el?.className,grid:el?.closest?.('.passage-grid')?.dataset.segment};})(),noteSource:JSON.parse(localStorage.getItem('gnamma-reading-desk-v1')||'{}').items?.filter(x=>x.kind==='note'),deskItems:window.__qaDesk?.records()?.map(x=>({id:x.id,kind:x.kind,section:x.target?.section,segment:x.target?.segment,deleted:x.deleted})),hidden:document.querySelector('#gn-dock-private-status')?.hidden,scrollY:window.scrollY,reader:document.querySelector('#reader')?.innerText.slice(0,95)}));
   assert(await noteMark.count(),'Saved paragraph note missing from dock after returning to §11 paragraph 1: '+JSON.stringify(diagnostics)+' errors: '+errors.join('; '));
-  await noteMark.click();
+  // Mobile categories are noninteractive labels inside the single summary
+  // button. Open that whole button rather than clicking a hidden category.
+  await page.locator('#gn-dock-private-status .gn-dock-summary').click();
+  await page.locator('#gn-dock-saved-sheet').waitFor();
+  await page.locator('#gn-dock-saved-sheet .gn-dock-sheet-item').filter({hasText:'Reader note'}).click();
   await page.locator('.gn-rd-page').waitFor();
   assert(await page.locator('.gn-rd-page').innerText().then(x=>x.includes('Reader note')),'notes count not linked to Reading Desk');
-  await page.locator('[data-rd="return-reading"]').first().click();
+  // Reading Desk renders separate desktop and phone return actions; the
+  // first DOM match may be hidden on mobile, so activate the visible one.
+  await page.locator('[data-rd="return-reading"]:visible').first().click();
   await page.waitForSelector('#readerDock:not([hidden])');
   await page.goto(origin+'/daruri/#section=12',{waitUntil:'domcontentloaded'});
   await page.waitForTimeout(300);
-  assert.equal(await page.locator('#gn-dock-private-status .gn-dock-mark').count(),0,'zero-count icons must be hidden');
+  assert.equal(await page.locator('#gn-dock-private-status .gn-dock-summary-pair').count(),0,'zero-count icons must be hidden');
   assert.equal(await page.locator('#gn-dock-paragraph-ref').innerText(),'· ¶1','paragraph locator must remain when no notes are saved');
   assert.equal(errors.filter(e=>/GnammaReadingDock|reading.mode|ReadingDesk/i.test(e)).length,0,'runtime errors: '+errors.join('; '));
   console.log('PASS '+name+' mode switch, legacy apparatus, dock counts, Reading Desk return, zero-state and arrow removal');

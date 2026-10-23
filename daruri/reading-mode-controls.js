@@ -51,61 +51,127 @@ function create({state,rd}){
  }
  let status=center.querySelector('#gn-dock-private-status');
  if(!status){
-  status=document.createElement('div');
-  status.id='gn-dock-private-status';
-  status.className='gn-dock-private-status';
-  status.setAttribute('role','group');
-  status.setAttribute('aria-label','Your saved reading marks at this passage');
+  status=document.createElement('div');status.id='gn-dock-private-status';
+  status.className='gn-dock-private-status';status.setAttribute('role','group');
+  status.setAttribute('aria-label','Your personal saved items in this reading section');
   status.hidden=true;center.append(status);
  }
- // The paragraph number belongs to the central section locator, not beside
- // the saved-mark counts. It remains present even when no marks are saved.
  const meta=jump.querySelector('.reader-location-meta');
  let paraRef=meta?.querySelector('#gn-dock-paragraph-ref');
  if(meta&&!paraRef){
-  paraRef=document.createElement('span');
-  paraRef.id='gn-dock-paragraph-ref';
-  paraRef.className='gn-dock-paragraph-ref';
-  paraRef.hidden=true;
-  meta.append(paraRef);
+  paraRef=document.createElement('span');paraRef.id='gn-dock-paragraph-ref';
+  paraRef.className='gn-dock-paragraph-ref';paraRef.hidden=true;meta.append(paraRef);
  }
- let sections=new Map(),sectionOnly=new Map(),passages=new Map(),last='',queued=false;
- const keyOf=(section,segment)=>String(section)+':'+Number(segment);
- const empty=()=>({sectionBookmarks:0,paragraphBookmarks:0,highlights:0,notes:0});
- function add(row,key,kind){
-  const bucket=row.get(key)||empty();bucket[kind]++;row.set(key,bucket);
+ // A single record can be linked to several reading sections, but is only
+ // counted once per section. Kinds stay derived from stored source metadata.
+ const categories=[
+  {id:'section',label:'Saved section bookmarks',symbol:'§'},
+  {id:'paragraph',label:'Saved paragraph bookmarks',symbol:'¶'},
+  {id:'dictionary',label:'Dictionary entries',symbol:'D'},
+  {id:'quran',label:'Qurʾān references',symbol:'Q'},
+  {id:'hadith',label:'Ḥadīth references',symbol:'H'},
+  {id:'source',label:'Other scholarly references',symbol:'S'},
+  {id:'highlight',label:'Highlights',symbol:icons.highlight},
+  {id:'note',label:'Personal notes',symbol:icons.note}
+ ];
+ const categoryOf=item=>{
+  if(item.kind==='note')return 'note';
+  const kind=rd.sourceKind?.(item)||item.kind;
+  if(['quran','hadith','dictionary','section','paragraph'].includes(kind))return kind;
+  if(kind==='quote')return 'highlight';
+  return 'source';
+ };
+ // The persistent saved-state key distinguishes personal bookmarks from
+ // citations merely present in a section. Category glyphs navigate saved items.
+ const savedPrefix=()=>{
+  const prefix=document.createElement('span');prefix.className='gn-dock-saved-prefix';
+  prefix.innerHTML=bookmarkUI.icon({saved:true});
+  // Checked bookmark is the shared visible heading for all category counters.
+  prefix.setAttribute('aria-hidden','true');return prefix;
+ };
+ const displaySymbol=(category)=>{
+  if(category.symbol.length===1){
+   const el=document.createElement('span');el.className='gn-dock-code';
+   el.textContent=category.symbol;el.setAttribute('aria-hidden','true');return el;
+  }
+  const el=document.createElement('span');el.className='gn-dock-symbol';
+  el.innerHTML=category.symbol;el.setAttribute('aria-hidden','true');return el;
+ };
+ let bySection=new Map(),last='',queued=false,sheet=null,sheetTrigger=null,sheetSection='';
+ let sheetBackdrop=null,sheetLockSource='',sheetFreeze=null;
+ const SHEET_LOCK_OWNER='dock-saved-references';
+ // The saved-items picker must not let touches scroll the underlying reader.
+ // Reuse the existing shared scroll lock when available; retain a local fallback
+ // until the coordinated all-popup scroll-lock release is published.
+ function lockSheetScroll(){
+  if(sheetLockSource)return;
+  const shared=window.GnammaReaderScrollLock;
+  if(typeof shared?.acquire==='function'&&typeof shared?.release==='function'){
+   shared.acquire(SHEET_LOCK_OWNER);sheetLockSource='shared';return;
+  }
+  const older=window.GnammaPopupScroll;
+  if(typeof older?.lock==='function'&&typeof older?.unlock==='function'){
+   older.lock(SHEET_LOCK_OWNER);sheetLockSource='legacy';return;
+  }
+  const body=document.body,root=document.documentElement,y=window.scrollY||0;
+  sheetFreeze={y,position:body.style.position,top:body.style.top,
+   left:body.style.left,right:body.style.right,width:body.style.width,
+   overflow:body.style.overflow,rootOverflow:root.style.overflow,
+   rootOverscroll:root.style.overscrollBehavior};
+  body.style.position='fixed';body.style.top='-'+y+'px';
+  body.style.left='0';body.style.right='0';body.style.width='100%';
+  body.style.overflow='hidden';root.style.overflow='hidden';
+  root.style.overscrollBehavior='none';sheetLockSource='local';
+ }
+ function unlockSheetScroll(){
+  const source=sheetLockSource;sheetLockSource='';
+  if(source==='shared'){window.GnammaReaderScrollLock?.release?.(SHEET_LOCK_OWNER);return;}
+  if(source==='legacy'){window.GnammaPopupScroll?.unlock?.(SHEET_LOCK_OWNER);return;}
+  const snapshot=sheetFreeze;sheetFreeze=null;
+  if(source!=='local'||!snapshot)return;
+  const body=document.body,root=document.documentElement;
+  body.style.position=snapshot.position;body.style.top=snapshot.top;
+  body.style.left=snapshot.left;body.style.right=snapshot.right;
+  body.style.width=snapshot.width;body.style.overflow=snapshot.overflow;
+  root.style.overflow=snapshot.rootOverflow;
+  root.style.overscrollBehavior=snapshot.rootOverscroll;
+  window.scrollTo(0,snapshot.y);
+ }
+ function closeSheet(restore=false){
+  if(!sheet&&!sheetBackdrop)return;
+  const trigger=sheetTrigger;
+  const panel=sheet,backdrop=sheetBackdrop;
+  sheet=null;sheetBackdrop=null;sheetTrigger=null;sheetSection='';
+  panel?.remove();backdrop?.remove();
+  unlockSheetScroll();
+  if(restore&&trigger?.isConnected)trigger.focus({preventScroll:true});
  }
  function reindex(){
-  sections=new Map();sectionOnly=new Map();passages=new Map();
+  bySection=new Map();
   for(const item of rd.records()){
-   if(item.deleted||!item.target||item.target.section==null)continue;
-   const t=item.target,section=String(t.section);
-   if(!section)continue;
-   let type=null;
-   if(item.kind==='section')type='sectionBookmarks';
-   if(item.kind==='paragraph')type='paragraphBookmarks';
-   if(item.kind==='quote')type='highlights';
-   if(item.kind==='note')type='notes';
-   if(!type)continue;
-   add(sections,section,type);
-   if(t.segment==null)add(sectionOnly,section,type);
-   if(t.segment!=null&&Number.isInteger(Number(t.segment)))
-    add(passages,keyOf(section,t.segment),type);
+   if(item.deleted||!item.target)continue;
+   const linked=new Set();
+   if(item.target.section!=null)linked.add(String(item.target.section));
+   for(const origin of Array.isArray(item.origins)?item.origins:[]){
+    if(origin?.section!=null)linked.add(String(origin.section));
+   }
+   for(const section of linked){
+    if(!section)continue;
+    const items=bySection.get(section)||[];
+    items.push(item);bySection.set(section,items);
+   }
   }
-  last='';schedule();
+  closeSheet();last='';schedule();
  }
  function readingPosition(){
   const reader=document.getElementById('reader');if(!reader)return null;
   const toolbar=document.getElementById('readingControls');
   const top=Math.max(0,toolbar?.getBoundingClientRect().bottom||0);
   const dockTop=dock.getBoundingClientRect().top;
-  // Use the text nearest the top of the reading viewport, not its midpoint. A
-  // midpoint probe can jump into an adjacent paragraph on mobile Safari.
   const y=Math.round(Math.max(top+35,Math.min(dockTop-38,top+(dockTop-top)*.22)));
   const x=Math.round(window.innerWidth/2);
   let grid=document.elementFromPoint?.(x,y)?.closest?.('#reader .passage-grid')||null;
   if(!grid){
-   // The anchor may fall between two text blocks. Search only as a fallback.
    let best=Infinity;
    for(const p of reader.querySelectorAll('.passage-grid')){
     const rect=p.getBoundingClientRect();
@@ -119,24 +185,123 @@ function create({state,rd}){
   const segment=raw==null?null:Number(raw);
   return {section,segment:Number.isInteger(segment)?segment:null};
  }
+ function classify(section){
+  const groups=new Map(categories.map(category=>[category.id,[]]));
+  for(const item of bySection.get(section)||[])groups.get(categoryOf(item))?.push(item);
+  return groups;
+ }
+ function openSaved(item,section){
+  closeSheet();
+  if(!rd.openSavedItem?.(item.id,section))rd.openAt?.(section||item.target?.section||state.n,null,'all');
+ }
+ function itemTitle(item){
+  const description=rd.describeSavedItem?.(item)||{};
+  return String(description.title||item.title||item.target?.term||'Saved reference');
+ }
+ function itemLocation(item,section){
+  const t=item.target||{};
+  const locations=Array.isArray(item.origins)?item.origins:[];
+  const loc=locations.find(origin=>String(origin.section)===String(section));
+  const segment=t.section!=null&&String(t.section)===String(section)?t.segment:loc?.segment;
+  return segment!=null&&Number.isInteger(Number(segment))?'¶'+(Number(segment)+1):'';
+ }
+ function positionSheet(panel,trigger){
+  if(!panel)return;
+  const rect=dock.getBoundingClientRect();
+  const near=trigger?.isConnected?trigger.getBoundingClientRect():rect;
+  const width=Math.min(410,window.innerWidth-20);
+  const middle=window.innerWidth<=760?window.innerWidth/2:
+   Math.max(width/2+10,Math.min(window.innerWidth-width/2-10,near.left+near.width/2));
+  panel.style.width=width+'px';panel.style.left=middle+'px';
+  panel.style.bottom=Math.max(10,window.innerHeight-rect.top+9)+'px';
+ }
+ function openSheet(categoryId,trigger,section){
+  const groups=classify(section);
+  const items=categoryId==='all'?[...groups.values()].flat():groups.get(categoryId)||[];
+  closeSheet();
+  if(!items.length)return;
+  const panel=document.createElement('section');
+  panel.id='gn-dock-saved-sheet';panel.className='gn-dock-saved-sheet';
+  panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');
+  panel.setAttribute('aria-label','Your saved items in section '+section);
+  const head=document.createElement('header');head.className='gn-dock-sheet-heading';
+  const title=document.createElement('h3');title.textContent='Your saved items in §'+section;
+  const dismiss=document.createElement('button');dismiss.type='button';
+  dismiss.className='gn-dock-sheet-close';dismiss.textContent='×';
+  dismiss.setAttribute('aria-label','Close saved references');
+  dismiss.addEventListener('click',()=>closeSheet(true));
+  head.append(title,dismiss);panel.append(head);
+  const list=document.createElement('div');list.className='gn-dock-sheet-list';panel.append(list);
+  for(const category of categories){
+   if(categoryId!=='all'&&categoryId!==category.id)continue;
+   const rows=groups.get(category.id)||[];if(!rows.length)continue;
+   if(categoryId==='all'){
+    const heading=document.createElement('h4');heading.className='gn-dock-sheet-category';
+    heading.append(displaySymbol(category),document.createTextNode(category.label));
+    list.append(heading);
+   }
+   for(const item of rows){
+    const button=document.createElement('button');button.type='button';
+    button.className='gn-dock-sheet-item';
+    const itemName=itemTitle(item);
+    button.setAttribute('aria-label','Open '+itemName);
+    const titleLine=document.createElement('span');titleLine.className='gn-dock-sheet-item-title';
+    titleLine.textContent=itemName;
+    const locator=itemLocation(item,section);
+    const detail=document.createElement('small');detail.className='gn-dock-sheet-item-detail';
+    detail.textContent=locator||(item.kind==='note'?'Personal note':'Open saved source');
+    button.append(titleLine,detail);
+    button.addEventListener('click',()=>openSaved(item,section));
+    list.append(button);
+   }
+  }
+  const foot=document.createElement('footer');
+  const manage=document.createElement('button');manage.type='button';
+  manage.className='gn-dock-sheet-manage';manage.textContent='Manage in Reading Desk';
+  manage.addEventListener('click',()=>{closeSheet();rd.openAt(section,null,'all');});
+  foot.append(manage);panel.append(foot);
+  // A full-viewport, lower stacking layer captures background taps. Dismissing
+  // on CLICK rather than pointerdown stops iOS from re-targeting the same tap
+  // onto a reader control after the backdrop disappears.
+  const backdrop=document.createElement('div');
+  backdrop.id='gn-dock-saved-backdrop';
+  backdrop.className='gn-dock-saved-backdrop';
+  backdrop.setAttribute('aria-hidden','true');
+  backdrop.addEventListener('pointerdown',event=>event.stopPropagation());
+  backdrop.addEventListener('touchmove',event=>event.preventDefault(),{passive:false});
+  backdrop.addEventListener('click',event=>{
+   event.preventDefault();event.stopPropagation();closeSheet(true);
+  });
+  panel.addEventListener('pointerdown',event=>event.stopPropagation());
+  panel.addEventListener('click',event=>event.stopPropagation());
+  // The sheet acts as a true dialog: keep keyboard traversal in its controls.
+  panel.addEventListener('keydown',event=>{
+   if(event.key!=='Tab')return;
+   const focusables=[...panel.querySelectorAll('button:not([disabled])')];
+   if(!focusables.length)return;
+   const first=focusables[0],last=focusables[focusables.length-1];
+   if(event.shiftKey&&document.activeElement===first){
+    event.preventDefault();last.focus({preventScroll:true});
+   }else if(!event.shiftKey&&document.activeElement===last){
+    event.preventDefault();first.focus({preventScroll:true});
+   }
+  });
+  positionSheet(panel,trigger);
+  document.body.append(backdrop,panel);
+  sheet=panel;sheetBackdrop=backdrop;sheetTrigger=trigger;sheetSection=section;
+  lockSheetScroll();
+  panel.querySelector('.gn-dock-sheet-item')?.focus({preventScroll:true});
+ }
  function render(){
-  if(state.route!=='reader'||dock.hidden){status.hidden=true;if(paraRef)paraRef.hidden=true;last='';return;}
-  const place=readingPosition();if(!place){status.hidden=true;last='';return;}
-  const sectionCounts=sections.get(place.section)||empty();
-  const passageCounts=place.segment==null?empty():(passages.get(keyOf(place.section,place.segment))||empty());
-  // Keep the dock's status scoped to the SECTION currently being browsed.
-  // Previously, counts were restricted to the current paragraph, so all
-  // highlight/note icons vanished upon reaching another paragraph even while
-  // the same section still contained saved items. The ¶ locator above remains
-  // passage-specific; these counters remain visible throughout the section.
-  const counts={
-   sectionBookmarks:sectionCounts.sectionBookmarks,
-   paragraphBookmarks:sectionCounts.paragraphBookmarks,
-   highlights:sectionCounts.highlights,
-   notes:sectionCounts.notes
-  };
-  // The existing dock title is controlled by the reader's section tracking;
-  // prevent a misleading §N/¶M combination during transitional scroll frames.
+  if(state.route!=='reader'||dock.hidden){
+   closeSheet();status.hidden=true;if(paraRef)paraRef.hidden=true;last='';return;
+  }
+  // Keep the selected section's saved list stable while the overlay is open.
+  // An unrelated asynchronous text repaint cannot reclassify the section
+  // through elementFromPoint() while the opaque backdrop covers the reader.
+  if(sheet)return;
+  const place=readingPosition();
+  if(!place){closeSheet();status.hidden=true;last='';return;}
   const synced=String(state.n)===place.section;
   if(paraRef){
    paraRef.hidden=place.segment==null||!synced;
@@ -144,39 +309,59 @@ function create({state,rd}){
     paraRef.textContent='· ¶'+(place.segment+1);
     paraRef.title='Paragraph '+(place.segment+1);
     paraRef.setAttribute('aria-label','Paragraph '+(place.segment+1));
-    jump.setAttribute('aria-label',
-     'Current location: '+place.section+', paragraph '+(place.segment+1)+'. Open section navigator.');
-   }
+    jump.setAttribute('aria-label','Current location: '+place.section+', paragraph '+(place.segment+1)+'. Open section navigator.');
+   }else jump.setAttribute('aria-label','Current section '+place.section+'. Open section navigator.');
   }
-  const signature=[place.section,place.segment,counts.sectionBookmarks,counts.paragraphBookmarks,counts.highlights,counts.notes].join('|');
-  const hasMarks=Boolean(counts.sectionBookmarks||counts.paragraphBookmarks||counts.highlights||counts.notes);
-  // A route transition can hide the dock between two equivalent signatures.
-  // Repaint when visibility disagrees with the saved-item state (iOS WebKit).
-  if(signature===last&&status.hidden===!hasMarks)return;
-  last=signature;
-  status.replaceChildren();
-  const values=[['section','sectionBookmarks','Bookmarked section'],['paragraph','paragraphBookmarks','Bookmarked paragraph'],['highlight','highlights','Highlighted quotations'],['note','notes','Personal notes']];
-  for(const [icon,type,label] of values){
-   const count=counts[type];if(!count)continue;
+  const groups=classify(place.section),total=[...groups.values()].reduce((n,items)=>n+items.length,0);
+  const mobile=window.matchMedia?.('(max-width: 760px)').matches??false;
+  const signature=[place.section,place.segment,mobile,...categories.map(c=>groups.get(c.id).map(item=>item.id).join(','))].join('|');
+  if(sheet&&sheetSection!==place.section)closeSheet();
+  if(signature===last&&status.hidden===!total)return;
+  last=signature;status.replaceChildren();
+  if(!total){status.hidden=true;return;}
+  if(mobile){
+   // Mobile uses ONE large touch target, not eight small buttons.
    const button=document.createElement('button');button.type='button';
-   button.className='gn-dock-mark';button.dataset.gnMark=type;
-   if(type==='paragraphBookmarks')button.classList.add('gn-dock-paragraph-mark');
-   // Labels distinguish section totals from the current paragraph's own
-   // marks, without spending any extra visible dock space.
-   const local=type==='sectionBookmarks'?0:(passageCounts[type]||0);
-   const paragraphDetail=place.segment==null||type==='sectionBookmarks'?'':'; '+local+' in paragraph '+(place.segment+1);
-   button.setAttribute('aria-label',label+': '+count+' in '+place.section+paragraphDetail);
-   button.title=label+': '+count+' in '+place.section+paragraphDetail;
-   button.innerHTML=icons[icon]+'<span class="gn-dock-count">'+count+'</span>';
+   button.className='gn-dock-summary';
+   button.dataset.gnCategoryCount=String(categories.filter(category=>groups.get(category.id).length).length);
+   button.setAttribute('aria-label','Open '+total+' saved items in section '+place.section);
+   const symbols=document.createElement('span');symbols.className='gn-dock-summary-symbols';
+   for(const category of categories){
+    const count=groups.get(category.id).length;if(!count)continue;
+    const pair=document.createElement('span');pair.className='gn-dock-summary-pair';pair.dataset.gnMark=category.id;
+    const number=document.createElement('span');number.className='gn-dock-count';
+    number.textContent=count;pair.append(displaySymbol(category),number);
+    symbols.append(pair);
+   }
+   const fallback=document.createElement('span');fallback.className='gn-dock-summary-fallback';
+   fallback.textContent=total+' items';
+   const caret=document.createElement('span');caret.className='gn-dock-summary-caret';
+   caret.textContent='⌃';caret.setAttribute('aria-hidden','true');
+   button.append(savedPrefix(),symbols,fallback,caret);
    button.addEventListener('click',()=>{
-    // Keep jump/title separate from annotation actions; never toggle/delete here.
-    // The counter reports section totals; open the same section, not just
-    // the currently visible paragraph. This action never deletes a mark.
-    rd.openAt(place.section,null,type==='notes'?'notes':type==='highlights'?'highlights':'bookmarks');
+    const uniqueItem=total===1?[...groups.values()].flat()[0]:null;
+    if(uniqueItem)openSaved(uniqueItem,place.section);
+    else openSheet('all',button,place.section);
    });
    status.append(button);
+  }else{
+   status.append(savedPrefix());
+   for(const category of categories){
+    const items=groups.get(category.id);if(!items.length)continue;
+    const button=document.createElement('button');button.type='button';
+    button.className='gn-dock-mark';button.dataset.gnMark=category.id;
+    if(category.id==='paragraph')button.classList.add('gn-dock-paragraph-mark');
+    const count=document.createElement('span');count.className='gn-dock-count';
+    count.textContent=items.length;
+    button.append(displaySymbol(category),count);
+    button.setAttribute('aria-label',category.label+': '+items.length+' in section '+place.section+
+     (items.length===1?'. Open saved item':'. Choose saved item'));
+    button.title=category.label+': '+items.length+' in §'+place.section;
+    button.addEventListener('click',()=>items.length===1?openSaved(items[0],place.section):openSheet(category.id,button,place.section));
+    status.append(button);
+   }
   }
-  status.hidden=!status.childElementCount;
+  status.hidden=false;
  }
  let verifyTimer=0;
  function schedule(){
@@ -185,20 +370,23 @@ function create({state,rd}){
  }
  function flushSoon(){
   schedule();
-  // Scroll-driven navigation sometimes completes after the first animation
-  // frame in mobile WebKit. A bounded fallback reconciles the displayed marks
-  // without polling or writing user data.
   if(verifyTimer)return;
   verifyTimer=setTimeout(()=>{verifyTimer=0;render();},90);
  }
- window.addEventListener('scroll',flushSoon,{passive:true});
- window.addEventListener('resize',flushSoon,{passive:true});
- window.addEventListener('hashchange',flushSoon);
+ // Ignore viewport changes while the popup is in use; only deliberate close,
+ // item activation, or reader route change should dismiss it.
+ window.addEventListener('scroll',()=>{if(!sheet)flushSoon();},{passive:true});
+ window.addEventListener('resize',()=>{
+  if(sheet)positionSheet(sheet,sheetTrigger);else flushSoon();
+ },{passive:true});
+ window.addEventListener('hashchange',()=>{closeSheet();flushSoon();});
  document.addEventListener('gnamma-reading-desk-change',reindex);
- document.addEventListener('gnamma-reader-route-change',flushSoon);
- // Refresh when another reader route makes the dock visible after rendering.
- // The main-pane observer alone can fire before syncReadingChrome removes [hidden]
- // in mobile WebKit; observing this attribute avoids an empty stale status.
+ document.addEventListener('gnamma-reader-route-change',()=>{closeSheet();flushSoon();});
+ // Outside taps are handled by the backdrop's click listener, not document
+ // pointerdown. This prevents click-through onto reading content.
+ document.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&sheet){event.preventDefault();event.stopPropagation();closeSheet(true);}
+ },true);
  new MutationObserver(flushSoon).observe(dock,{attributes:true,attributeFilter:['hidden']});
  const main=document.getElementById('mainContent');
  if(main)new MutationObserver(flushSoon).observe(main,{childList:true,subtree:true});

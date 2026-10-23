@@ -7,6 +7,9 @@ on:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
       - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
+      - 'daruri/qa/verify-contextual-bookmarks.cjs'
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/reading-mode-controls.css'
       - 'daruri/backup-transfer.js'
       - 'daruri/backup-transfer.css'
       - 'daruri/google-drive-config.js'
@@ -21,6 +24,9 @@ on:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
       - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
+      - 'daruri/qa/verify-contextual-bookmarks.cjs'
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/reading-mode-controls.css'
       - 'daruri/backup-transfer.js'
       - 'daruri/backup-transfer.css'
       - 'daruri/google-drive-config.js'
@@ -45,6 +51,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Exclude unavailable unrelated Microsoft apt source
+        run: |
+          # GitHub Ubuntu runners can include a Microsoft feed that returns
+          # HTTP 403. Playwright's signed Ubuntu dependencies do not use it.
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then
+              echo "Disabling inaccessible third-party apt source: $source"
+              sudo mv "$source" "$source.disabled"
+            fi
+          done
       - name: Install browser test dependencies
         run: |
           npm install --no-save --prefix daruri/qa playwright@1.56.1
@@ -53,6 +70,8 @@ jobs:
         run: node daruri/qa/verify-reading-desk-real-browser.cjs
       - name: Verify deletion recovery, Arabic search and keyboard notes
         run: node daruri/qa/verify-reading-desk-recovery-search.cjs
+      - name: Verify contextual reference navigation in mobile and desktop browsers
+        run: node daruri/qa/verify-contextual-bookmarks.cjs
       - name: Verify manual backup, selective restoration and mocked Google Drive
         run: node daruri/qa/verify-backup-transfer-browser.cjs
       - name: Preserve screenshots for review

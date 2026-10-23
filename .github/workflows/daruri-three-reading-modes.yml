@@ -9,8 +9,11 @@ on:
       - 'daruri/reading-navigation-*.js'
       - 'daruri/reading-navigation-*.css'
       - 'daruri/qa/verify-reading-navigation-*'
+      - 'daruri/qa/verify-compact-menus.js'
+      - 'daruri/qa/verify-reading-desk-redesign.js'
       - 'daruri/reading-desk.js'
       - 'daruri/qa/verify-three-reading-modes.cjs'
+      - 'daruri/qa/verify-dock-saved-sheet.cjs'
       - 'daruri/qa/verify-focus-modes.js'
       - '.github/workflows/daruri-three-reading-modes.yml'
   pull_request:
@@ -21,8 +24,11 @@ on:
       - 'daruri/reading-navigation-*.js'
       - 'daruri/reading-navigation-*.css'
       - 'daruri/qa/verify-reading-navigation-*'
+      - 'daruri/qa/verify-compact-menus.js'
+      - 'daruri/qa/verify-reading-desk-redesign.js'
       - 'daruri/reading-desk.js'
       - 'daruri/qa/verify-three-reading-modes.cjs'
+      - 'daruri/qa/verify-dock-saved-sheet.cjs'
       - '.github/workflows/daruri-three-reading-modes.yml'
   workflow_dispatch:
 
@@ -45,6 +51,7 @@ jobs:
           NODE_PATH: daruri/qa/node_modules
         run: |
           node --check daruri/reading-mode-controls.js
+          node --check daruri/qa/verify-dock-saved-sheet.cjs
           node --check daruri/reading-desk.js
           node daruri/qa/verify-focus-modes.js
           node daruri/qa/verify-reader-structure.js
@@ -52,6 +59,17 @@ jobs:
           node daruri/qa/verify-reading-navigation-history.js
           node daruri/qa/verify-compact-menus.js
           node daruri/qa/verify-contents-structure.js
+      - name: Exclude unavailable unrelated Microsoft apt source
+        run: |
+          # GitHub Ubuntu runners can include a Microsoft feed that returns
+          # HTTP 403. Playwright's signed Ubuntu dependencies do not use it.
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then
+              echo "Disabling inaccessible third-party apt source: $source"
+              sudo mv "$source" "$source.disabled"
+            fi
+          done
       - name: Install browser smoke test
         run: |
           npm install --no-save --prefix daruri/qa playwright@1.56.1
@@ -59,4 +77,5 @@ jobs:
       - name: Test mobile Chromium and WebKit reader
         run: |
           node daruri/qa/verify-three-reading-modes.cjs
+          node daruri/qa/verify-dock-saved-sheet.cjs
           node daruri/qa/verify-reading-navigation-browser.cjs

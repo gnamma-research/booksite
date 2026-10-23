@@ -246,3 +246,182 @@ body.focus-mode #mainContent .gn-note-en-section-list {
   #mainContent .gn-note-en-range{text-decoration:none!important;}
   #mainContent .gn-note-en-ref{display:none!important;}
 }
+
+
+/* Contextual saved-item navigator */
+/* Counts remain section-local, inherited from the existing theme, and have
+   a large single target on touch screens. The popup contains real items. */
+#readerDock .gn-dock-private-status{container-type:inline-size;min-width:0}
+#readerDock .gn-dock-private-status .gn-dock-code{
+  font:750 12px/1 var(--sans,system-ui,sans-serif);
+  letter-spacing:0;color:var(--accent);min-width:11px;text-align:center
+}
+#readerDock .gn-dock-private-status .gn-dock-symbol{display:inline-flex;align-items:center;justify-content:center;flex:none}
+#readerDock .gn-dock-private-status .gn-dock-mark{
+  min-width:27px;min-height:29px;gap:3px;padding:3px 5px
+}
+#readerDock .gn-dock-private-status .gn-dock-mark:focus-visible,
+#readerDock .gn-dock-summary:focus-visible{
+  outline:2px solid var(--accent);outline-offset:2px
+}
+#readerDock .gn-dock-private-status .gn-dock-count{
+  font-size:11px;font-weight:700;font-variant-numeric:tabular-nums
+}
+#readerDock .gn-dock-summary{display:none}
+.gn-dock-saved-backdrop{
+  position:fixed;inset:0;z-index:950;
+  background:rgba(13,22,20,.32);touch-action:none;
+  -webkit-tap-highlight-color:transparent;
+}
+.gn-dock-saved-sheet{
+  position:fixed;z-index:951;box-sizing:border-box;
+  max-width:calc(100vw - 20px);max-height:min(62dvh,460px);
+  display:grid;grid-template-rows:auto minmax(0,1fr) auto;
+  overflow:hidden;color:var(--text);
+  /* Landscape palettes use semi-transparent --surface. A solid --bg layer
+     underneath makes the interactive sheet fully opaque and theme-aware. */
+  background:linear-gradient(var(--surface),var(--surface)),var(--bg,#f5f2ec);
+  border:1px solid var(--border);border-radius:16px;
+  box-shadow:0 18px 45px rgba(10,24,22,.27);
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  transform:translateX(-50%);font-family:var(--sans,system-ui,sans-serif);
+  pointer-events:auto;overscroll-behavior:contain;
+}
+.gn-dock-sheet-heading{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:12px 13px 9px;border-bottom:1px solid var(--line)
+}
+.gn-dock-sheet-heading h3{
+  min-width:0;margin:0;color:var(--text);
+  font:650 15px/1.4 var(--serif,Georgia,serif)
+}
+.gn-dock-sheet-close{
+  display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;
+  border:0;border-radius:10px;background:transparent;color:var(--text);
+  font-size:23px;cursor:pointer
+}
+.gn-dock-sheet-list{min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;padding:5px 12px;scrollbar-width:thin}
+.gn-dock-sheet-category{
+  margin:8px 0 2px;display:flex;align-items:center;gap:8px;
+  font:700 11px/1.45 var(--sans,system-ui,sans-serif);
+  letter-spacing:.025em;color:var(--text-soft)
+}
+.gn-dock-sheet-category .gn-dock-code{font-weight:800;color:var(--accent)}
+.gn-dock-sheet-category .gn-dock-symbol svg{width:15px;height:15px}
+.gn-dock-sheet-category .gn-bm-paragraph{transform:scale(.72);transform-origin:center}
+.gn-dock-sheet-item{
+  box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;
+  justify-content:center;gap:2px;width:100%;min-height:48px;
+  padding:9px 10px;text-align:start;
+  border:0;border-bottom:1px solid var(--line);
+  border-radius:7px;background:transparent;color:var(--text);cursor:pointer
+}
+.gn-dock-sheet-item:hover,.gn-dock-sheet-item:focus-visible{
+  background:var(--accent-soft);outline:2px solid var(--accent);outline-offset:-2px
+}
+.gn-dock-sheet-item-title{
+  width:100%;font:600 12.5px/1.45 var(--sans,system-ui,sans-serif);
+  overflow-wrap:anywhere
+}
+.gn-dock-sheet-item-detail{font:450 11px/1.35 var(--sans,system-ui,sans-serif);color:var(--muted)}
+.gn-dock-saved-sheet footer{
+  display:flex;justify-content:flex-end;
+  border-top:1px solid var(--line);padding:7px 11px
+}
+.gn-dock-sheet-manage{
+  border:0;border-radius:8px;background:transparent;
+  min-height:41px;padding:8px 9px;color:var(--accent);
+  font:650 12px/1.35 var(--sans,system-ui,sans-serif);cursor:pointer
+}
+.gn-dock-sheet-manage:hover,.gn-dock-sheet-manage:focus-visible,
+.gn-dock-sheet-close:hover,.gn-dock-sheet-close:focus-visible{
+  background:var(--accent-soft);outline:2px solid var(--accent);outline-offset:-2px
+}
+@media (max-width:760px){
+ #readerDock .gn-dock-private-status{padding:0 1px 1px;min-height:45px}
+ #readerDock .gn-dock-summary{
+  box-sizing:border-box;display:flex;align-items:center;justify-content:center;
+  min-width:0;width:100%;max-width:100%;min-height:44px;height:auto;
+  gap:6px;padding:2px 7px;
+  border:1px solid var(--line);border-radius:10px;
+  background:var(--surface-alt);color:var(--text);cursor:pointer
+ }
+ #readerDock .gn-dock-summary-symbols{
+  display:flex;align-items:center;justify-content:center;gap:clamp(5px,1.6vw,11px);
+  min-width:0;white-space:nowrap
+ }
+ #readerDock .gn-dock-summary-pair{
+  display:inline-flex;align-items:center;gap:2px;flex:0 0 auto;
+  font:650 10px/1 var(--sans,system-ui,sans-serif);white-space:nowrap
+ }
+ #readerDock .gn-dock-summary-pair .gn-dock-code{font-size:11px}
+ #readerDock .gn-dock-summary-pair .gn-dock-symbol svg{width:13px;height:13px}
+ #readerDock .gn-dock-summary-pair .gn-bm-paragraph{transform:scale(.72);transform-origin:center}
+ #readerDock .gn-dock-summary-pair .gn-dock-count{font-size:10px}
+ #readerDock .gn-dock-summary-fallback{display:none;white-space:nowrap;font-size:11px;font-weight:700}
+ #readerDock .gn-dock-summary-caret{color:var(--muted);line-height:1;flex:none;font-size:17px}
+ .gn-dock-saved-sheet{max-height:min(63dvh,440px);border-radius:16px}
+ .gn-dock-sheet-item{min-height:50px;padding:10px 8px}
+}
+@container (max-width:285px){
+ #readerDock .gn-dock-summary-symbols{display:none}
+ #readerDock .gn-dock-summary-fallback{display:inline}
+}
+
+/* Bookmark icon + divider: a compact visual key for personal saved counts. */
+#readerDock .gn-dock-private-status{
+  gap:clamp(3px,.8vw,8px);
+}
+#readerDock .gn-dock-saved-prefix{
+  display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;
+  gap:3px;padding-inline-end:7px;margin-inline-end:1px;
+  border-inline-end:1px solid var(--line);
+  color:var(--text-soft);font:700 10px/1.1 var(--sans,system-ui,sans-serif);
+  white-space:nowrap;
+}
+#readerDock .gn-dock-saved-prefix>.gn-bm-ribbon{
+  width:17px!important;height:17px!important;color:var(--accent);
+}
+#readerDock .gn-dock-private-status .gn-dock-code{
+  min-width:9px;
+}
+#readerDock .gn-dock-private-status .gn-dock-mark{
+  min-width:24px;padding-inline:3px;
+}
+@media(max-width:760px){
+ #readerDock .gn-dock-summary{
+   justify-content:center;gap:5px;
+ }
+ #readerDock .gn-dock-summary .gn-dock-saved-prefix{
+   margin-inline-end:0;padding-inline-end:6px;font-size:10px;gap:3px;
+ }
+ #readerDock .gn-dock-summary .gn-dock-summary-symbols{
+   gap:clamp(4px,1.2vw,8px);
+ }
+ #readerDock .gn-dock-summary .gn-dock-summary-pair{
+   gap:1px;
+ }
+}
+/* When saved categories exceed the available width, retain the checked
+   bookmark and total rather than squeezing tiny labels. The list still opens
+   from one large touch target. */
+@container (max-width:330px){
+ #readerDock .gn-dock-summary:is([data-gn-category-count="7"],[data-gn-category-count="8"]) .gn-dock-summary-symbols{
+   display:none;
+ }
+ #readerDock .gn-dock-summary:is([data-gn-category-count="7"],[data-gn-category-count="8"]) .gn-dock-summary-fallback{
+   display:inline;
+ }
+}
+@container (max-width:280px){
+ #readerDock .gn-dock-summary[data-gn-category-count="6"] .gn-dock-summary-symbols{
+   display:none;
+ }
+ #readerDock .gn-dock-summary[data-gn-category-count="6"] .gn-dock-summary-fallback{
+   display:inline;
+ }
+}
+
+@media print{
+ #readerDock .gn-dock-private-status,.gn-dock-saved-sheet{display:none!important}
+}
