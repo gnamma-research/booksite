@@ -140,9 +140,9 @@ function create({state,rd}){
   for(const item of bySection.get(section)||[])groups.get(categoryOf(item))?.push(item);
   return groups;
  }
- function openSaved(item){
+ function openSaved(item,section){
   closeSheet();
-  if(!rd.openSavedItem?.(item.id))rd.openAt?.(item.target?.section||state.n,null,'all');
+  if(!rd.openSavedItem?.(item.id,section))rd.openAt?.(section||item.target?.section||state.n,null,'all');
  }
  function itemTitle(item){
   const description=rd.describeSavedItem?.(item)||{};
@@ -191,7 +191,7 @@ function create({state,rd}){
     const detail=document.createElement('small');detail.className='gn-dock-sheet-item-detail';
     detail.textContent=locator||(item.kind==='note'?'Personal note':'Open saved source');
     button.append(titleLine,detail);
-    button.addEventListener('click',()=>openSaved(item));
+    button.addEventListener('click',()=>openSaved(item,section));
     list.append(button);
    }
   }
@@ -259,13 +259,14 @@ function create({state,rd}){
     const items=groups.get(category.id);if(!items.length)continue;
     const button=document.createElement('button');button.type='button';
     button.className='gn-dock-mark';button.dataset.gnMark=category.id;
+    if(category.id==='paragraph')button.classList.add('gn-dock-paragraph-mark');
     const count=document.createElement('span');count.className='gn-dock-count';
     count.textContent=items.length;
     button.append(displaySymbol(category),count);
     button.setAttribute('aria-label',category.label+': '+items.length+' in section '+place.section+
      (items.length===1?'. Open saved item':'. Choose saved item'));
     button.title=category.label+': '+items.length+' in §'+place.section;
-    button.addEventListener('click',()=>items.length===1?openSaved(items[0]):openSheet(category.id,button,place.section));
+    button.addEventListener('click',()=>items.length===1?openSaved(items[0],place.section):openSheet(category.id,button,place.section));
     status.append(button);
    }
   }
