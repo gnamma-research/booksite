@@ -54,10 +54,19 @@ function authorialRows(fixture){
 // glyph or invented vowel. Keep a short (<128 Unicode scalar) ToUnicode
 // mapping per PDF line and a reliable A4 text width. Full paragraph-level
 // mapping and individual word highlights remain separate acceptance gates.
+// Noto Naskh lacks both mathematical angle-bracket glyphs. Only visible
+// shaping uses two supported placeholders; the original Unicode source
+// remains untouched in the CIDToUnicode map and regression hashes.
+function shapeSourceForFont(source){
+  if(source.includes('<')||source.includes('>'))
+    throw Error('Ambiguous ASCII angle bracket in original source');
+  return source.replace(/⟨/gu,'<').replace(/⟩/gu,'>');
+}
+
 function splitOriginalIntoLines(text,kitFont,size){
  const maxWidth=365,maxScalars=110;
  const words=text.split(' ');
- const measure=s=>kitFont.layout(s,'arab',undefined,'rtl').positions.reduce(
+ const measure=s=>kitFont.layout(shapeSourceForFont(s),'arab',undefined,'rtl').positions.reduce(
    (sum,p)=>sum+p.xAdvance,0)*size/kitFont.unitsPerEm;
  const lines=[];
  let current='';
@@ -148,47 +157,41 @@ function signedArabicFont(pdf,kit,fontBytes,phrases){
 }
 
 function drawSourceGlyphs(page,kitFont,phrase,x,y,size){
-  // Paint original shaped Arabic only as PDF vector paths. The authorial
-  // Unicode is written once in an entirely separate, invisible ToUnicode CID.
-  // The canonical corpus contains exactly two unsupported punctuation marks:
-  // U+27E8 (mathematical left angle bracket) and U+27E9 (right), 12 each.
-  // Their mathematical-bracket outlines are constructed with vector strokes;
-  // neither the visible glyph nor the semantic character may be silently lost.
-  const shaped=kitFont.layout(phrase,'arab',undefined,'rtl');
+  // Visual/content separation: Naskh shapes Arabic glyphs into PDF vector
+  // paths; one invisible ToUnicode CID carries the original source line.
+  // U+27E8/U+27E9 are unprovided by all three bundled fonts. Distinct
+  // supported shaping placeholders (< and >) avoid fontkit's shared
+  // .notdef glyph, whose codePoints incorrectly refer only to the first
+  // unsupported character. Paint the two true mathematical brackets.
+  const shaped=kitFont.layout(shapeSourceForFont(phrase),'arab',undefined,'rtl');
   const factor=size/kitFont.unitsPerEm;
   const total=shaped.positions.reduce((sum,p)=>sum+p.xAdvance,0)*factor;
   let cursor=x,nonempty=0;
   const manualMathBrackets=[];
   for(let i=0;i<shaped.glyphs.length;i++){
     const glyph=shaped.glyphs[i],pos=shaped.positions[i];
-    if(!glyph?.id){
-      const unicodeCandidates=Array.isArray(glyph?.codePoints)?glyph.codePoints:[];
-      const fromCluster=Number.isInteger(shaped.stringIndices?.[i])
-        ?phrase.codePointAt(shaped.stringIndices[i]):undefined;
-      // The fontkit .notdef glyph object is reused across missing symbols
-      // and codePoints can identify the *first* absent character forever.
-      // Source stringIndices, not glyph.codePoints, is authoritative here.
-      const cp=(fromCluster===0x27e8||fromCluster===0x27e9)
-        ?fromCluster:unicodeCandidates.find(ch=>ch===0x27e8||ch===0x27e9);
-      if(cp!==0x27e8&&cp!==0x27e9)
-        throw Error('Unresolved original visible font glyph U+'+
-          (cp??0).toString(16).toUpperCase()+' in '+phrase.slice(0,55));
-      const advance=Math.max(3.5,pos.xAdvance*factor),mid=cursor+pos.xOffset*factor+advance/2;
-      const left=mid-Math.min(advance*.38,size*.24),right=mid+Math.min(advance*.38,size*.24);
+    const scalar=glyph?.codePoints?.[0];
+    if(scalar===0x3c||scalar===0x3e){
+      const cp=scalar===0x3c?0x27e8:0x27e9;
+      const advance=Math.max(3.5,pos.xAdvance*factor);
+      const mid=cursor+pos.xOffset*factor+advance/2;
+      const offset=Math.min(advance*.38,size*.24);
+      const left=mid-offset,right=mid+offset;
       const top=y+size*.84,bottom=y-size*.30,half=(top+bottom)/2;
-      const points=cp===0x27e8?[
+      const segments=cp===0x27e8?[
         [{x:right,y:top},{x:left,y:half}],
         [{x:left,y:half},{x:right,y:bottom}]
       ]:[
         [{x:left,y:top},{x:right,y:half}],
         [{x:right,y:half},{x:left,y:bottom}]
       ];
-      for(const [a,b] of points)
+      for(const [a,b] of segments)
         page.drawLine({start:a,end:b,thickness:Math.max(.7,size*.057),
           color:rgb(.12,.19,.18)});
       manualMathBrackets.push(cp);
       nonempty++;
     }else{
+      if(!glyph?.id)throw Error('Unknown visible Naskh glyph in '+phrase.slice(0,60));
       const path=glyph.path.toSVG();
       if(path&&path.length>2){
         page.drawSvgPath(path,{
@@ -200,7 +203,14 @@ function drawSourceGlyphs(page,kitFont,phrase,x,y,size){
     }
     cursor+=pos.xAdvance*factor;
   }
-  if(nonempty===0||!(total>3))throw Error('Arabic outline painting produced no visible geometry');
+  const sourceAngles=Array.from(phrase).filter(ch=>ch==='⟨'||ch==='⟩');
+  if(sourceAngles.filter(ch=>ch==='⟨').length!==
+     manualMathBrackets.filter(cp=>cp===0x27e8).length||
+     sourceAngles.filter(ch=>ch==='⟩').length!==
+     manualMathBrackets.filter(cp=>cp===0x27e9).length)
+    throw Error('A visible mathematical bracket changed type or count');
+  if(nonempty===0||!(total>3))
+    throw Error('No original Arabic vector glyphs painted');
   return {drawn_glyphs:nonempty,advance_pt:total,manualMathBrackets};
 }
 
@@ -310,7 +320,7 @@ async function generate(){
    for(const {record,span} of spans){
     const rect=span.getBoundingClientRect();
     if(!rect.width||!rect.height)throw Error('HTML text did not layout: '+record.unique_line_id);
-    const layout=signed.parsed.layout(record.phrase,'arab',undefined,'rtl');
+    const layout=signed.parsed.layout(shapeSourceForFont(record.phrase),'arab',undefined,'rtl');
     const advance=layout.positions.reduce((sum,p)=>sum+p.xAdvance,0)*
       fontSize/signed.parsed.unitsPerEm;
     const right=(rect.right-bounds.left)*.75;
