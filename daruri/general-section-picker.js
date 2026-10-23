@@ -131,7 +131,7 @@
     }
     function renderParts() {
       var navigable=model.roots.filter(function(n){return n.children.length;});
-      var quick=navigable.length<=6&&navigable.length>0;
+      var quick=model.roots.length<=6&&navigable.length>0;
       parts.hidden=!quick||!folder||!!input.value.trim();
       if(parts.hidden){parts.innerHTML='';return;}
       parts.setAttribute('aria-label','Quick part choices');
@@ -156,7 +156,7 @@
     }
     function row(node,globalSearch) {
       var inCurrent=!!node.sectionId&&node.sectionId===String(context.current());
-      var isFolder=node.children.length>0;
+      var isFolder=node.children.length>0||(!node.sectionId&&node.kind!=='section');
       var meta=globalSearch?itemPath(node):node.subtitle;
       var pg=pageLabel(node);
       if(pg)meta+=(meta?' · ':'')+pg;
