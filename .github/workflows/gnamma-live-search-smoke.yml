@@ -1,0 +1,73 @@
+name: Live Gnamma search deployment check
+# Verification-only. One-off workflow on an isolated branch, no site changes.
+on:
+  push:
+    branches:
+      - experiment/gnamma-live-search-smoke-20261023
+    paths:
+      - '.github/workflows/gnamma-live-search-smoke.yml'
+permissions:
+  contents: read
+jobs:
+  live-search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Verify currently public GitHub Pages search HTML, scripts, CSS and offline cache
+        env:
+          SITE: https://gnamma-research.github.io/booksite/daruri/
+          EXPECTED_VERSION: '20261023-search-results-live1'
+        run: |
+          python3 - <<'PY'
+          import os, urllib.request, urllib.parse, hashlib, sys
+          base=os.environ['SITE']
+          stamp=os.environ['EXPECTED_VERSION']
+          def get(url):
+              request=urllib.request.Request(url,headers={
+                  "User-Agent":"Gnamma-Pages-QA/1.0",
+                  "Cache-Control":"no-cache",
+                  "Pragma":"no-cache"
+              })
+              with urllib.request.urlopen(request,timeout=35) as resp:
+                  data=resp.read()
+                  print(resp.status, resp.url, "bytes=",len(data),
+                        "sha256=",hashlib.sha256(data).hexdigest()[:14],
+                        "cache=",resp.headers.get("Cache-Control"))
+                  if resp.status != 200: raise RuntimeError("Published asset is not 200 OK")
+                  return data.decode("utf-8")
+          plain=get(base)
+          probe=get(base+"?verified="+stamp)
+          links=[
+           "gnamma-search.js?v="+stamp,
+           "gnamma-search.css?v="+stamp,
+           "gnamma-morphology.js?v="+stamp,
+           "gnamma-word-context.js?v="+stamp,
+           "gnamma-word-context.css?v="+stamp,
+           "sw.js?v="+stamp
+          ]
+          for label,html in [("public",plain),("cache_bust",probe)]:
+              for value in links:
+                  if value not in html:
+                      raise RuntimeError(label+" HTML has not published "+value)
+              print("PASS: fresh reader HTML ("+label+") includes six release-version URLs")
+          js=get(base+"gnamma-search.js?v="+stamp)
+          css=get(base+"gnamma-search.css?v="+stamp)
+          morph=get(base+"gnamma-morphology.js?v="+stamp)
+          word=get(base+"gnamma-word-context.js?v="+stamp)
+          sw=get(base+"sw.js?v="+stamp)
+          for marker in ["mobileResearchBar","data-gns-mobile-view","gns-research-grid","gns-mobile-resultsbar"]:
+              if marker not in js+css:
+                  raise RuntimeError("Missing live mobile layout marker "+marker)
+          if "morph-lemma" not in morph or "morph-root" not in morph or "ensureDetail" not in morph:
+              raise RuntimeError("Word-form/root/lazy grammatical API is not current")
+          if "detailedGrammar" not in word:
+              raise RuntimeError("Live word popup does not have advanced grammar support")
+          if stamp not in sw or "daruri-reader-"+stamp not in sw:
+              raise RuntimeError("Live service-worker cache name is stale")
+          if "GnammaContextualMorphAssets" in plain:
+              # Explicit flag is needed to activate unreviewed AI v2. Do not accidentally do so.
+              if "morph-daruri-search-v2.json" in plain:
+                  raise RuntimeError("Unverified AI morphology was activated in live HTML")
+          print("PASS: public Pages deployment contains mobile Results/Refine/Saved and versioned offline cache")
+          print("PASS: separate Word forms/Related words API with no forced contextual AI release")
+          PY
