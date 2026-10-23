@@ -16,7 +16,7 @@ jobs:
       - name: Verify currently public GitHub Pages search HTML, scripts, CSS and offline cache
         env:
           SITE: https://gnamma-research.github.io/booksite/daruri/
-          EXPECTED_VERSION: '20261023-search-results-live1'
+          EXPECTED_VERSION: '20261023-qiyas-forms1'
         run: |
           python3 - <<'PY'
           import os, urllib.request, urllib.parse, hashlib, sys
@@ -63,6 +63,14 @@ jobs:
               raise RuntimeError("Search modes or lazy grammatical API are not current")
           if "detailedGrammar" not in word:
               raise RuntimeError("Live word popup does not have advanced grammar support")
+          if "formsFor" not in morph or "gns-morph-in-paragraph" not in js or "Also in this text:" not in js:
+              raise RuntimeError("Live form variants and qiyas plural suggestion are not deployed")
+          import json
+          indexed=json.loads(get(base+"morph-daruri-v1.json?v="+stamp))
+          expected=next((r for r in indexed.get("records",[]) if r.get("id")=="passage:223:0"),None)
+          if not expected or not any(a[1]=="أقيسة" and a[2]=="قياس" for a in expected.get("a",[])):
+              raise RuntimeError("Live index does not connect أقيسة to قياس at §223")
+          print("PASS: public source morphology includes أقيسة at passage:223:0 → قياس")
           if stamp not in sw or "daruri-reader-"+stamp not in sw:
               raise RuntimeError("Live service-worker cache name is stale")
           if "GnammaContextualMorphAssets" in plain:
@@ -70,5 +78,5 @@ jobs:
               if "morph-daruri-search-v2.json" in plain:
                   raise RuntimeError("Unverified AI morphology was activated in live HTML")
           print("PASS: public Pages deployment contains mobile Results/Refine/Saved and versioned offline cache")
-          print("PASS: separate Word forms/Related words API with no forced contextual AI release")
+          print("PASS: qiyas → أقيسة hint and search variants deployed, no unreviewed AI released")
           PY
