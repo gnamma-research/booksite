@@ -4,7 +4,7 @@
  * No Reading Desk material, localStorage, fetch calls or upload permissions.
  */
 'use strict';
-importScripts('../vendor/pdf-lib-1.17.1.min.js','core.js?v=20261022-worker1');
+importScripts('../vendor/pdf-lib-1.17.1.min.js','core.js?v=20261023-stage1');
 self.onmessage=async event=>{
  const item=event.data;
  if(!item||!Number.isInteger(item.id)||!item.options){
