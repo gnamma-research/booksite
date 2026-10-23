@@ -1029,7 +1029,7 @@ function markup(){
    '" role="dialog" aria-modal="true" aria-labelledby="gns-title">'+
    '<header class="gns-header">'+
    '<h2 id="gns-title" class="gns-sr-only">Search Gnamma texts and annotations</h2>'+
-   '<label class="gns-searchbox"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6"/><path d="m15.5 15.5 5 5"/></svg><input id="gns-query" type="search" inputmode="search" autocomplete="off" spellcheck="false" dir="auto" placeholder="'+(ui.mode==='proximity'?'First term, e.g. qiyas':'Search text, concepts, notes…')+'" aria-label="Search Arabic, English and annotations" value="'+xml(ui.query)+'"/></label>'+
+   '<label class="gns-searchbox"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6"/><path d="m15.5 15.5 5 5"/></svg><input id="gns-query" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" dir="auto" placeholder="'+(ui.mode==='proximity'?'First term, e.g. qiyas':'Search text, concepts, notes…')+'" aria-label="Search Arabic, English and annotations" value="'+xml(ui.query)+'"/></label>'+
    '<button class="gns-icon-button" data-gns-toggle-filters="1" aria-label="Search options" aria-expanded="'+(ui.expanded?!ui.hideRefinements:ui.showFilters)+'" title="Search options">'+
      '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/><circle cx="15" cy="7" r="2" fill="currentColor"/></svg></button>'+
    '<button class="gns-icon-button" data-gns-close="1" aria-label="Close search" title="Close search">×</button></header>'+
@@ -1053,7 +1053,9 @@ function rerender(keepFocus=true){
  ui.queryError=all.error||'';ui.queryExplanation=all.plan?.explain||'';
  if(ui.facet==='mine'){ui.results=ui.results.filter(r=>r.privacy==='private');ui.resultCount=ui.results.length;}
  host.innerHTML=markup();
- if(keepFocus||focus){
+ // Changes of search view must not forcibly summon the iPhone keyboard.
+ const mobile=window.matchMedia('(max-width:760px)').matches;
+ if((keepFocus&&focus)||(!mobile&&keepFocus)){
   const field=$('#'+(focus?previousFocus:'gns-query'),host)||$('#gns-query',host);
   field?.focus({preventScroll:true});
   if(selection!=null)try{field.setSelectionRange(selection,selection);}catch(_){}
@@ -1114,7 +1116,8 @@ function open(restoring=false){
  }
  if(!host){host=document.createElement('div');host.id='gn-unified-search';host.className='gns-root';document.body.append(host);}
  host.hidden=false;document.body.classList.add('gns-open');window.GnammaReaderScrollLock?.acquire?.('scholarly-search');
- rerender();
+ // Preserve the new iPhone no-automatic-keyboard behaviour from PR #115.
+ rerender(!window.matchMedia('(max-width:760px)').matches);
  ensureLoaded();
 }
 function close(){
@@ -1338,14 +1341,20 @@ document.addEventListener('click',event=>{
   if(ui.mobileView==='results')$('#gns-listpane',host)?.focus({preventScroll:true});
   return;
  }
- if(target.hasAttribute('data-gns-expand')){ui.expanded=target.dataset.gnsExpand==='1';ui.mobileView='results';ui.hideRefinements=false;ui.page=CONFIG.pageSize;rerender();return;}
+ if(target.hasAttribute('data-gns-expand')){
+   ui.expanded=target.dataset.gnsExpand==='1';ui.mobileView='results';ui.hideRefinements=false;ui.page=CONFIG.pageSize;
+   const mobile=window.matchMedia('(max-width:760px)').matches;
+   rerender(!mobile);
+   if(mobile)$('#gns-listpane',host)?.focus({preventScroll:true});
+   return;
+  }
  if(target.hasAttribute('data-gns-toggle-filters')){
   if(ui.expanded&&window.matchMedia('(max-width:760px)').matches){
    ui.mobileView=ui.mobileView==='build'?'results':'build';
    rerender(false);return;
   }
   if(ui.expanded)ui.hideRefinements=!ui.hideRefinements;else ui.showFilters=!ui.showFilters;
-  rerender();return;
+  rerender(!window.matchMedia('(max-width:760px)').matches);return;
  }
  if(target.hasAttribute('data-gns-quick')){change('facet',target.dataset.gnsQuick);return;}
  if(target.hasAttribute('data-gns-facet')){change('facet',target.dataset.gnsFacet);return;}
