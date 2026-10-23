@@ -81,8 +81,8 @@ def contextual_windows(text: str, max_words: int = 90) -> list[tuple[int, list[s
 
 
 MODEL_FEATURES = ("diac", "gloss", "cas", "stt", "asp", "vox", "mod",
-                  "gen", "num", "per", "prc0", "prc1", "prc2", "prc3",
-                  "enc0", "d3seg")
+                  "gen", "num", "per", "pattern", "prc0", "prc1", "prc2",
+                  "prc3", "enc0", "d3seg")
 MODEL_SKIP = {"", "na", "None", "NOAN", "NO_ANALYSIS", "0", "-"}
 
 
