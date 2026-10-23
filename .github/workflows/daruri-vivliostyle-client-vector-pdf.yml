@@ -1,7 +1,7 @@
-name: Daruri true browser Vivliostyle paged HTML to real searchable PDF proof
+name: Daruri FULL bilingual A4 text generated as client-side PDF Blob in Chromium and WebKit
 on:
   push:
-    branches: [research/daruri-vivliostyle-client-pdf-20261023]
+    branches: [research/daruri-browser-bilingual-full-proof-20261023]
     paths:
       - 'daruri/qa/browser_pdf_vivliostyle_probe.js'
       - 'daruri/qa/browser_pdf_vivliostyle_probe.html'
@@ -15,31 +15,19 @@ concurrency:
 jobs:
   real-browser:
     runs-on: ubuntu-latest
-    timeout-minutes: 32
+    timeout-minutes: 42
     strategy:
       fail-fast: false
       matrix:
         include:
-          - mode: hello
+          - mode: bilingual-full
             engine: chromium
-            port: 8920
-            timeout: 40000
-          - mode: arabic-mini
-            engine: chromium
-            port: 8921
-            timeout: 40000
-          - mode: excerpt
-            engine: chromium
-            port: 8922
-            timeout: 75000
-          - mode: excerpt
+            port: 8950
+            timeout: 240000
+          - mode: bilingual-full
             engine: webkit
-            port: 8923
-            timeout: 75000
-          - mode: english-full
-            engine: chromium
-            port: 8924
-            timeout: 120000
+            port: 8951
+            timeout: 240000
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
