@@ -73,8 +73,11 @@ jobs:
             --strict
       - name: Cross-reader original Arabic Unicode diagnosis (NONRELEASE; separate from MuPDF gate)
         run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
           python -m pip install -q 'pypdfium2==4.30.0'
-          command -v pdftotext
+          pdftotext -v
+          command -v pdfinfo
           python daruri/browser-html-pdf/verify_vector_crossreader_unicode.py \
             --pdf /tmp/gnamma-full-arabic-${{ matrix.browser }}/daruri-vector-full-original-arabic-NONRELEASE.pdf \
             --evidence /tmp/gnamma-full-arabic-${{ matrix.browser }}/browser-evidence.json \
