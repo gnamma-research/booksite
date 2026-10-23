@@ -4759,8 +4759,6 @@ function readerToolbar(){return '';}
 
 function syncReadingChrome() {
   const reading = state.route === 'reader';
-  // Retire the old full-header-hidden preference: the new normal reader keeps a compact toolbar.
-  if(reading && state.showHeader===false){state.showHeader=true;save();}
   document.body.classList.toggle('reading-active', reading);
   const controls = $('#readingControls'); const dock = $('#readerDock');
   controls.hidden = false; dock.hidden = !reading;
