@@ -128,3 +128,30 @@
  .gns-near-options{grid-template-columns:1fr}
  .gns-near-order{grid-column:auto}
 }
+
+
+/* 23 Oct 2026: calm progressive disclosure of research/morphological controls. */
+.gns-root .gns-dialog.gns-expanded{width:min(940px,calc(100vw - 40px))}
+.gns-root .gns-dialog .gns-tools{grid-template-columns:repeat(3,minmax(0,1fr));padding:11px 18px 8px;gap:12px}
+.gns-root .gns-mode-help{margin:0;padding:1px 18px 11px;background:var(--gns-alt);border-bottom:1px solid var(--gns-edge);color:var(--gns-soft);font:450 11px/1.55 var(--sans,system-ui,sans-serif)}
+.gns-root .gns-extra-tools{border-bottom:1px solid var(--gns-edge);background:var(--gns-paper)}
+.gns-root .gns-extra-tools>summary{list-style:none;cursor:pointer;padding:9px 18px;color:var(--gns-contrast);font:650 11px/1.4 var(--sans,system-ui,sans-serif)}
+.gns-root .gns-extra-tools>summary::-webkit-details-marker{display:none}
+.gns-root .gns-extra-tools>summary::after{content:'⌄';display:inline-block;margin-inline-start:8px;transition:transform .15s}
+.gns-root .gns-extra-tools[open]>summary::after{transform:rotate(180deg)}
+.gns-root .gns-extra-tools>summary:hover,.gns-root .gns-extra-tools>summary:focus-visible{background:var(--gns-alt)}
+.gns-root .gns-extra-tools .gns-result-options{justify-content:flex-start;padding:4px 18px 12px;background:var(--gns-paper);border-bottom:0;gap:14px}
+.gns-root .gns-extra-tools .gns-result-options .gns-setting{width:min(190px,45%)}
+.gns-root .gns-results-top{flex-wrap:wrap}
+.gns-root .gns-morph-assist .gns-match-chip{white-space:normal;text-align:center}
+@media(max-width:760px){
+ .gns-root .gns-dialog.gns-expanded{width:100vw}
+ .gns-root .gns-dialog .gns-tools{grid-template-columns:repeat(2,minmax(0,1fr));padding:9px 13px 7px;gap:8px}
+ .gns-root .gns-dialog .gns-tools .gns-setting:last-child{grid-column:1/-1}
+ .gns-root .gns-mode-help{padding:0 13px 9px}
+ .gns-root .gns-extra-tools>summary{padding:9px 13px}
+ .gns-root .gns-extra-tools .gns-result-options{padding:3px 13px 12px;flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){
+ .gns-root .gns-extra-tools>summary::after{transition:none}
+}
