@@ -179,7 +179,8 @@ function validateBackup(data){
  for(const row of data.items)counts[classify(row)]++;
  const place=validLocation(data?.gnammaBackup?.readingPlace||data?.reading?.location);
  const appearance=validAppearance(data?.gnammaBackup?.appearance||data?.reading?.appearance);
- const history=Array.isArray(data?.readingNavigation?.entries)?data.readingNavigation.entries.length:0;
+ const history=(Array.isArray(data?.readingNavigation?.entries)?data.readingNavigation.entries.length:0)+
+  (Array.isArray(data?.readingNavigation?.recent)?data.readingNavigation.recent.length:0);
  return {counts,place,appearance,history};
 }
 async function reviewFile(file){
