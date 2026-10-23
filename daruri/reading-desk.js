@@ -824,8 +824,9 @@ function create(ctx){
  function actions(target,compact){
   const row=document.createElement('div');row.className='gn-rd-attach-actions'+(compact?' gn-rd-compact':'');
   const serialized=encodeURIComponent(JSON.stringify(target));
-  const stored=active().some(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
-  const title=bookmarkUI.actionLabel(target.kind,stored);
+  const found=active().find(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
+  const stored=linkedHere(found,target);
+  const title=found&&!stored?'Save dictionary entry in this section':bookmarkUI.actionLabel(target.kind,stored);
   row.innerHTML='<button type="button" data-rd="attach-bookmark" data-target="'+esc(serialized)+'" aria-pressed="'+stored+'" aria-label="'+esc(title)+'">'+bookmarkUI.icon({saved:stored})+'<span>'+esc(stored?'Remove bookmark':'Bookmark')+'</span></button>'+
    '<button type="button" data-rd="attach-view" data-target="'+esc(serialized)+'"'+(stored?'':' hidden')+'>View in Reading Desk</button>'+
    '<button type="button" data-rd="attach-note" data-target="'+esc(serialized)+'">'+RD_ICON.note+'<span>Add my note</span></button>';
@@ -834,11 +835,11 @@ function create(ctx){
  function syncActionStates(){
   // Make one index for the current saved collection; avoid rescanning every
   // record for every dictionary/index/footnote control on a long reader page.
-  const keys=new Set(active().filter(r=>r.target&&r.kind===r.target.kind).map(r=>keyOf(r.target)));
+  const byKey=new Map(active().filter(r=>r.target&&r.kind===r.target.kind).map(r=>[keyOf(r.target),r]));
   document.querySelectorAll('[data-rd="attach-bookmark"]').forEach(btn=>{
    let target;try{target=JSON.parse(decodeURIComponent(btn.dataset.target||''));}catch(_){return;}
-   const stored=keys.has(keyOf(target));
-   const title=bookmarkUI.actionLabel(target.kind,stored);
+   const found=byKey.get(keyOf(target)),stored=linkedHere(found,target);
+   const title=found&&!stored?'Save dictionary entry in this section':bookmarkUI.actionLabel(target.kind,stored);
    btn.innerHTML=bookmarkUI.icon({saved:stored})+'<span>'+esc(stored?'Remove bookmark':'Bookmark')+'</span>';
    btn.setAttribute('aria-label',title);btn.setAttribute('aria-pressed',String(stored));
    const view=btn.parentElement?.querySelector('[data-rd="attach-view"]');
@@ -1523,7 +1524,10 @@ function create(ctx){
    if(!target){ctx.notify('Cannot find this reference.');return;}
    if(action==='attach-note'){showEditor(target);return;}
    const found=active().find(r=>r.kind===target.kind&&r.target&&keyOf(r.target)===keyOf(target));
-   if(action==='attach-bookmark'){if(found)trash(found.id);else upsert(target.kind,target);return;}
+   if(action==='attach-bookmark'){
+     if(found&&!linkedHere(found,target)){associateOrigin(found,target);return;}
+     if(found)trash(found.id);else upsert(target.kind,target);return;
+    }
    if(!found){ctx.notify('This reference is not bookmarked.');return;}
    if(target.section)enterDeskFromText(target.section,target.segment==null?null:target.segment,found.id);
    else{ui.category='all';ui.sourceType='all';ui.selected=found.id;ui.filterTarget='';ui.filterSegment=null;ui.mobileDetail=matchMedia('(max-width:760px)').matches;ctx.navigate('bookmarks');}
@@ -1678,7 +1682,31 @@ function create(ctx){
  return {render,afterRender,afterReader,toggleSection,decorate,openSource,backup,
   importParsed,downloadBackup:(data,name)=>download(data,name),importFile,
   records:()=>records,
-  openAt:(section,segment=null,kind='all')=>{
+   sourceKind:row=>{
+    if(row?.kind==='note')return 'note';
+    const kind=row?.target?.kind||row?.kind;
+    if(kind!=='footnote')return kind;
+    const note=ctx.notes.get(row?.target?.noteId);
+    if(note?.source_type==='quran'||note?.kind==='quran-source')return 'quran';
+    if(note?.source_type==='hadith'||note?.kind==='hadith-source')return 'hadith';
+    return 'source';
+   },
+   describeSavedItem:row=>({title:row?.title||titleOf(row?.target),detail:subOf(row?.target),
+    origins:normalizeOrigins(row?.origins)}),
+   openSavedItem:id=>{
+    const row=records.find(r=>r.id===id&&!r.deleted);
+    if(!row)return false;
+    const linkedSection=row.target?.section||normalizeOrigins(row.origins)[0]?.section||state.n;
+    if(row.kind==='note'||!isResolved(row)){
+     enterDeskFromText(linkedSection,null,row.id);
+     return true;
+    }
+    if(row.target?.kind==='dictionary'&&!row.target.historical&&state.route==='reader'){
+     ctx.showTermDetail(row.target.term);decorate();return true;
+    }
+    openSource(row);return true;
+   },
+   openAt:(section,segment=null,kind='all')=>{
    enterDeskFromText(String(section),segment);
    if(kind==='notes'||kind==='bookmarks'||kind==='highlights'){
     ui.category=kind==='notes'?'mine':kind;
