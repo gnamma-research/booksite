@@ -25,6 +25,13 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch --no-tags origin master
+          # Other workstreams regularly update the same minified reader and PWA.
+          # Preserve master on any line-level conflict, then refresh ONLY our
+          # Editions selector asset links against the reconciled full document.
+          git merge --no-edit -X theirs FETCH_HEAD
           python - <<'PY'
           from pathlib import Path
           import re
