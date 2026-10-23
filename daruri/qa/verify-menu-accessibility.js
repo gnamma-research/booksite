@@ -11,7 +11,7 @@ const path=require('node:path');
 const vm=require('node:vm');
 const file=process.argv[2]||path.resolve(__dirname,'..','index.html');
 const html=fs.readFileSync(file,'utf8');
-const readerStart=html.indexOf("<script>\\n(() => {\\n'use strict';\\nconst BOOK");
+const readerStart=html.indexOf("<script>\n(() => {\n'use strict';\nconst BOOK");
 assert.ok(readerStart>=0,'Canonical reader JavaScript exists');
 const readerEnd=html.indexOf('</script>',readerStart);
 assert.ok(readerEnd>readerStart,'Canonical reader closing tag exists');
