@@ -62,7 +62,7 @@ async function exercise(engine,name,origin){
     listScrollHeight:list.scrollHeight,listClientHeight:list.clientHeight,
     bodyPosition:document.body.style.position,rootOverflow:document.documentElement.style.overflow};
   });
-  assert.match(visual.background,/^rgb\\(/,name+': translucent popup '+JSON.stringify(visual));
+  assert.match(visual.background,/^rgb\(/,name+': translucent popup '+JSON.stringify(visual));
   assert.match(visual.image,/gradient/i,name+': missing theme-matched solid composition');
   assert(visual.front&&visual.z>100,name+': a different layer intercepts sheet taps');
   assert(visual.rect.top>=-2&&visual.rect.bottom<=844,name+': popup outside viewport');
