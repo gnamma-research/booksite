@@ -13,6 +13,8 @@ on:
       - "daruri/build/enrich_apparatus_maps.py"
       - "daruri/editions/apparatus/**"
       - "daruri/qa/verify_apparatus_maps.py"
+      - "daruri/qa/verify_stage1_retirement.py"
+      - "daruri/dynamic-pdf/RETIRE_120.json"
       - "daruri/personal-export.js"
       - "daruri/editions-selector.css"
       - "daruri/qa/verify-published-selector.cjs"
@@ -39,6 +41,8 @@ on:
       - "daruri/build/enrich_apparatus_maps.py"
       - "daruri/editions/apparatus/**"
       - "daruri/qa/verify_apparatus_maps.py"
+      - "daruri/qa/verify_stage1_retirement.py"
+      - "daruri/dynamic-pdf/RETIRE_120.json"
       - "daruri/personal-export.js"
       - "daruri/editions-selector.css"
       - "daruri/qa/verify-published-selector.cjs"
@@ -101,7 +105,15 @@ jobs:
         run: |
           python -m pip install --disable-pip-version-check "PyMuPDF>=1.26,<1.28"
           python daruri/qa/verify-unvowelled-layout.py
-          python daruri/qa/verify_apparatus_maps.py
+          # Stage 1 intentionally retired all 120 completed apparatus PDFs.
+          # Audit their SHA-bound recipes, 12 bases, 15 packets and maps when
+          # retirement is active; the archived/pre-retirement build still
+          # checks every materialized PDF through the historical full audit.
+          if test -f daruri/dynamic-pdf/RETIRE_120.json; then
+            python daruri/qa/verify_stage1_retirement.py
+          else
+            python daruri/qa/verify_apparatus_maps.py
+          fi
       - name: Upload desktop and mobile visual proofs
         if: always()
         uses: actions/upload-artifact@v4
