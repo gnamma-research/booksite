@@ -23,7 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         browser: [chromium, webkit]
-        order: [forward, reverse, grapheme]
+        order: [grapheme, phrase]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
