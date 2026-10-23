@@ -321,20 +321,20 @@
     const open=root.querySelector('[data-es-action="open"]');
     const bar=prepare.querySelector('[data-es-prepare-progress]');
     const status=root.querySelector('#gn-es-prepare-status');
-    prepare.hidden=isPersonal||!!preparation.url;
-    prepare.disabled=found.status!=='ready'||preparation.busy;
-    prepare.setAttribute('aria-busy',String(preparation.busy));
-    prepare.querySelector('[data-es-prepare-label]').textContent=
-      preparation.busy?'Preparing PDF…':'Prepare PDF';
-    bar.hidden=!preparation.busy;
-    download.hidden=isPersonal||!preparation.url;
-    if(preparation.url){
-      download.href=preparation.url;
+    // Published PDFs are already made: a direct native download requires
+    // one click and preserves iOS Safari's original user gesture. The
+    // browser-local personal edition remains a distinct creation workflow.
+    prepare.hidden=true;
+    bar.hidden=true;
+    const ready=found.status==='ready'&&Boolean(file);
+    download.hidden=isPersonal||!ready;
+    if(ready){
+      download.href=open.getAttribute('href');
       download.download=(file.split('/').pop()||'daruri.pdf').replace(/[^a-z0-9._-]/gi,'_');
     }else download.removeAttribute('href');
-    open.hidden=isPersonal;
-    status.hidden=!preparation.error;
-    status.textContent=preparation.error;
+    open.hidden=isPersonal||!ready;
+    status.hidden=true;
+    status.textContent='';
   }
   async function prepareExistingPDF(){
     const host=root,found=resolve(),file=publicFile(found);
@@ -402,24 +402,21 @@
   function refresh(){
     if(!root?.isConnected)return;
     const s=current(),result=resolve(),isPersonal=hasPersonal();
-    for(const button of root.querySelectorAll('[data-es-nav]')){
-      const active=button.dataset.esNav===tab;
+    if(downloadType!=='book')choiceMessage='';
+    for(const button of root.querySelectorAll('[data-es-download-type]')){
+      const active=button.dataset.esDownloadType===downloadType;
       button.setAttribute('aria-selected',String(active));
       button.tabIndex=active?0:-1;
     }
-    root.querySelector('#gn-es-panel').setAttribute('aria-labelledby','gn-es-tab-'+tab);
-    root.querySelector('[data-es-presets]').hidden=tab==='reference';
-    root.querySelector('[data-es-custom-head]').hidden=tab==='reference'||preset!=='custom';
+    for(const panel of root.querySelectorAll('[data-es-type-panel]'))
+      panel.hidden=panel.dataset.esTypePanel!==downloadType;
+    for(const button of root.querySelectorAll('[data-es-book-edition]'))
+      button.setAttribute('aria-pressed',String(button.dataset.esBookEdition===tier));
+    root.querySelector('[data-es-choice-message]').textContent=choiceMessage;
+    root.querySelector('[data-es-custom-head]').hidden=tab==='reference';
     root.querySelector('#gn-es-custom').hidden=tab==='reference'||!customOpen;
     root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen&&tab!=='reference'));
     root.querySelector('[data-es-reference-inventory]').hidden=tab!=='reference';
-    for(const button of root.querySelectorAll('[data-es-preset]')){
-      button.setAttribute('aria-pressed',String(button.dataset.esPreset===preset));
-      // Never silently change an English-only or unvowelled selection to
-      // bilingual merely because the reader asks for a Study preset.
-      if(button.dataset.esPreset==='study')
-        button.disabled=!(s.en&&s.ar&&s.vowels);
-    }
     for(const b of root.querySelectorAll('[data-es-toggle]')){
       const key=b.dataset.esToggle;
       b.setAttribute('aria-pressed',String(Boolean(s[key])));
@@ -438,12 +435,7 @@
       'The full scholarly edition is bilingual and vowelled.':
       tier==='study'?'Study notes are currently prebuilt only in vowelled bilingual PDFs.':
       'Tap AR to cycle: Off → Plain → Vowelled. No separate vowel button.';
-    root.querySelector('[data-es-preset-note]').textContent=
-      !(s.en&&s.ar&&s.vowels)&&tab==='reading'?
-        'Study notes are currently published only in bilingual vowelled form; your language choice is preserved.':
-      preset==='study'?'Selected publisher notes and a basic index are included.':
-      preset==='custom'?'Fine-tune publisher notes and apparatus using Customize edition.':
-      'A clean A4 reading edition with no publisher notes.';
+
     for(const b of root.querySelectorAll('[data-es-publisher]'))
       b.setAttribute('aria-pressed',String(b.dataset.esPublisher===s.notes));
     for(const b of root.querySelectorAll('[data-es-headings]'))
@@ -560,13 +552,23 @@
   function onClick(event){
     const b=event.target.closest('button');
     if(!b||!root?.contains(b))return;
-    if(b.dataset.esPrepare!==undefined){void prepareExistingPDF();return;}
-    if(b.dataset.esNav){
-      tab=b.dataset.esNav;
-      tier=tab==='reference'?'reference':tier==='reference'?'reading':tier;
+    if(b.dataset.esDownloadType){
+      downloadType=b.dataset.esDownloadType;
       refresh();b.focus();return;
     }
-    if(b.dataset.esPreset){presetSelect(b.dataset.esPreset);return;}
+    if(b.dataset.esBookEdition){
+      const chosen=b.dataset.esBookEdition;
+      choiceMessage='';
+      if(chosen==='study'&&!(current().en&&current().ar&&current().vowels)){
+        choiceMessage='Study PDFs require English and vowelled Arabic. Restore these languages in Reading before choosing Study.';
+      }else if(chosen==='reference'){
+        tier='reference';tab='reference';preset='reading';customOpen=false;
+      }else{
+        tab='reading';
+        presetSelect(chosen);
+      }
+      refresh();b.focus();return;
+    }
     if(b.dataset.esCustom!==undefined){customOpen=!customOpen;refresh();return;}
     if(b.dataset.esToggle){
       if(tab==='reference'||tier==='study')return;
@@ -610,13 +612,16 @@
     else if(event.target.matches('#pe-dates,#pe-annotations,#pe-order'))refresh();
   }
   function onKey(event){
-    const target=event.target.closest('[data-es-nav]');
-    if(!target||!root?.contains(target)||!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+    const target=event.target.closest('[data-es-download-type]');
+    if(!target||!root?.contains(target)||
+        !['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;
     event.preventDefault();
-    const index=NAV.indexOf(target.dataset.esNav);
-    const next=event.key==='Home'?0:event.key==='End'?1:
-      (index+(event.key==='ArrowRight'?1:-1)+NAV.length)%NAV.length;
-    const control=root.querySelector('[data-es-nav="'+NAV[next]+'"]');
+    const choices=['book','guide','offline','source'];
+    const index=choices.indexOf(target.dataset.esDownloadType);
+    const delta=event.key==='ArrowRight'||event.key==='ArrowDown'?1:-1;
+    const next=event.key==='Home'?0:event.key==='End'?choices.length-1:
+      (index+delta+choices.length)%choices.length;
+    const control=root.querySelector('[data-es-download-type="'+choices[next]+'"]');
     control.click();control.focus();
   }
   function loadScript(name){
@@ -696,8 +701,15 @@
         ' MB · source commit '+release.source_commit.slice(0,12);
       panel.querySelector('[data-es-source-hash]').textContent=release.sha256;
       panel.hidden=false;
+      const pending=view.querySelector('[data-es-source-pending]');
+      if(pending)pending.hidden=true;
     }catch(_){
-      // A missing or malformed release is simply not an available download.
+      // Never show an invalid or unapproved download link.
+    }finally{
+      const pending=view.querySelector('[data-es-source-pending]');
+      if(root===view&&pending&&!panel.hidden)return;
+      if(root===view&&pending)
+        pending.textContent='Research files are temporarily unavailable. Please try again later.';
     }
   }
   function mount(main){
