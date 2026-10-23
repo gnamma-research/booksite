@@ -75,6 +75,29 @@ async function test(name,fn){await fn();pass++;console.log('PASS '+name)}
    assert.match(out,/result/);
    await page.locator('[data-gns-close="1"]').last().click();
   });
+  await test('typing qiyas exposes the actual أقيسة plural and ranks §223 first',async()=>{
+   await page.locator('#searchBtn').click();
+   await page.locator('#gns-query').fill('qiyas');
+   await page.waitForFunction(()=>
+     document.querySelector('.gns-morph-assist')?.textContent.includes('أقيسة'),
+     {timeout:9000});
+   assert.match(await page.locator('.gns-morph-assist').innerText(),/أقيسة/);
+   await page.locator('[data-gns-morph-pick="morph-lemma"]').click();
+   await page.waitForFunction(()=>window.GnammaUnifiedSearch.getState().mode==='morph-lemma');
+   const first=page.locator('.gns-result').first();
+   const info=await page.evaluate(()=>{
+     const result=window.GnammaUnifiedSearch.query('qiyas',{mode:'morph-lemma'}).results;
+     const sample=result.find(x=>x.id==='passage:223:0');
+     return {sample:{id:sample?.id,term:sample?.matched?.term,forms:sample?.matched?.forms},
+       first:{id:result[0]?.id,term:result[0]?.matched?.term}};
+   });
+   assert.equal(info.sample.term,'أقيسة',JSON.stringify(info));
+   assert.ok(info.sample.forms.includes('القياس'),JSON.stringify(info));
+   assert.equal(info.first.id,'passage:223:0',JSON.stringify(info));
+   assert.match(await first.locator('.gns-row-excerpt mark').innerText(),/أقيسة/);
+   assert.match(await first.locator('.gns-morph-in-paragraph').innerText(),/أقيسة/);
+   await page.locator('.gns-dialog [data-gns-close="1"]').click();
+  });
   await test('research search explains word forms, roots and concepts',async()=>{
    await page.locator('#searchBtn').click();
    await page.locator('[data-gns-expand="1"]').first().click();

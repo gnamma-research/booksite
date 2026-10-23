@@ -160,6 +160,13 @@ vm.runInContext(fs.readFileSync(path.join(root,'gnamma-morphology.js'),'utf8'),c
  assert.equal(family.keys.join(','),'قيس');
  assert.equal(morphData.l['قياس'].length,2);
  assert.equal(morphData.r['قيس'].length,3);
+ assert.equal(normal.items[0].matched.term,'أقيسة',
+   'The distinctive plural should be the visible snippet, not an earlier القياس');
+ assert.equal(normal.items[0].matched.forms.length,2);
+ assert.ok(normal.items[0].matched.forms.includes('أقيسة'));
+ assert.ok(deep.formsFor('qiyas','daruri',3).some(x=>x.form==='أقيسة'&&x.unusual));
+ assert.equal(broken.items[0].matched.term,'أقيسة',
+   'A user searching the plural should see its own spelling highlighted');
  console.log('PASS: قياس ↔ أقيسة broken plural forms resolved bidirectionally, distinct from مقياس root family');
 
  console.log('PASS: compact v2 root/lemma postings, opt-in release flag, source position and lazy detail loading');

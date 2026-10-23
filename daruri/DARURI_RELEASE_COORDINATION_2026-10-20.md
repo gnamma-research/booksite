@@ -4,7 +4,7 @@
 
 Matched the toolbar and both Editions AR/EN labels to one shared 600-weight, 14px, single-line font rule. All place the curved overbar at -4px (3px closer to the letters than before), so the visible gap no longer varies with the former 11–14px toolbar versus 15px Editions font metrics. Button dimensions and language-state behavior are unchanged. Runtime/cache revision: `20261023-ar-spacing1`; preserved concurrent backup, Hadith and PDF work.
 
-Validation: inline scripts parse, all nine language-state cases and retained-control assertions pass, and changed stylesheet/package/cache URLs agree. The existing language test needed its script-end delimiter corrected in memory because its last-script parser includes trailing external script tags; the repository test was not changed. Full PDF tests are outside this CSS-only change. Prepared on a review branch. Live publication awaits explicit deployment approval after automatic review rejected direct master publication.
+Validation: inline scripts parse, all nine language-state cases and retained-control assertions pass, and changed stylesheet/package/cache URLs agree. The existing language test needed its script-end delimiter corrected in memory because its last-script parser includes trailing external script tags; the repository test was not changed. Full PDF tests are outside this CSS-only change. User explicitly authorized publication on 23 October 2026. Merged with the latest search updates; publish through PR #96.
 
 ## Live reader merge and parallel PDF coordination — 22 October 2026
 

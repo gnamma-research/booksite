@@ -266,6 +266,35 @@ function disambiguate(word,neighbours=[],work,id=null,position=null){
  }
  return {best:null,alternatives:[],certainty:'not-analysed'};
 }
+/** Attested surface spellings for a lemma; not guesses generated from a root.
+ * An unusual spelling means its normalized spelling does not simply contain
+ * the headword. It may be a broken plural, inflection or other grammatical
+ * variation; no unreviewed grammatical claim is made from this heuristic. */
+function formsFor(query,work='daruri',limit=6){
+ if(!lexicon||!data.has(work))return [];
+ const opts=candidates(query,lexicon),index=data.get(work);
+ const keys=new Set(opts.lemmas.map(x=>x.normalized));
+ if(!keys.size&&opts.hasArabic){
+  for(const h of index.byForm.get(opts.raw)||[]){
+   if(h.source==='ambiguous'||h.source==='contextual-alternative')continue;
+   if(h.lemma)keys.add(fold(h.lemma));
+  }
+ }
+ const found=new Map();
+ for(const key of keys)for(const hit of index.byLemma.get(key)||[]){
+  if(!hit.surface||hit.source==='ambiguous')continue;
+  const form=fold(hit.surface);
+  if(!form)continue;
+  let row=found.get(form);
+  if(!row){row={form:hit.surface,count:0,lemma:key,
+    unusual:!form.includes(key),source:hit.source};found.set(form,row)}
+  row.count++;
+ }
+ return [...found.values()]
+  .sort((a,b)=>Number(b.unusual)-Number(a.unusual)||a.count-b.count||
+    a.form.localeCompare(b.form,'ar'))
+  .slice(0,Math.max(0,Math.min(20,limit)));
+}
 function find(query,mode,corpus){
  if(!lexicon)return {ready:!!notice,items:[],message:notice?'Morphology dictionary unavailable: '+notice:'Loading root and lemma register'};
  const q=candidates(query,lexicon),kind=mode==='morph-root'?'root':'lemma';
@@ -294,7 +323,7 @@ function find(query,mode,corpus){
   for(const key of hypotheses)keys.push(key);
   formAmbiguity=hypotheses.size;
  }
- const matches=new Map(),recById=new Map(corpus.map(r=>[r.work+'\0'+r.id,r]));
+ const groups=new Map(),recById=new Map(corpus.map(r=>[r.work+'\0'+r.id,r]));
  for(const work of workSet){
   const index=data.get(work),map=kind==='root'?index.byRoot:index.byLemma;
   if(!index)continue;
@@ -302,33 +331,54 @@ function find(query,mode,corpus){
    for(const h of map.get(key)||[]){
     const rec=recById.get(h.work+'\0'+h.id);if(!rec)continue;
     if(!h.surface&&index.compact){
-     const sourceTokens=tokenize(rec.ar||rec.en||'');
+     const sourceTokens=tokenize(rec.ar||'');
      const foundToken=sourceTokens[h.position];
      if(!foundToken)continue;
      h.surface=foundToken.word;
     }
-    const entryKey=rec.work+'\0'+rec.id;
+    if(!h.surface)continue;
     const uncertain=h.source==='ambiguous';
-    if(uncertain&&kind==='lemma')continue; // no speculative lemma assignment
-    if(!matches.has(entryKey)||!uncertain&&matches.get(entryKey).source==='ambiguous')
-      matches.set(entryKey,{rec,h,source:h.source,uncertain});
+    if(uncertain&&kind==='lemma')continue;
+    const entryKey=rec.work+'\0'+rec.id;
+    let entry=groups.get(entryKey);
+    if(!entry){entry={rec,hits:[],seen:new Set()};groups.set(entryKey,entry)}
+    const signature=h.position+'|'+fold(h.surface)+'|'+h.source;
+    if(entry.seen.has(signature))continue;
+    entry.seen.add(signature);
+    entry.hits.push(h);
    }
   }
  }
- const items=[...matches.values()].map(({rec,h,uncertain})=>{
+ const items=[...groups.values()].map(({rec,hits})=>{
+  // A paragraph can contain both القياس and its broken plural أقيسة.
+  // Never collapse the hit list to its earliest ordinary spelling.
+  const lemmaKey=kind==='lemma'?(q.lemmas[0]?.normalized||keys[0]||''):'';
+  const isUnusual=h=>kind==='lemma'&&lemmaKey&&
+   !fold(h.surface).includes(lemmaKey);
+  const isQueryForm=h=>q.hasArabic&&fold(h.surface)===q.raw;
+  hits.sort((a,b)=>Number(isQueryForm(b))-Number(isQueryForm(a))||
+    Number(isUnusual(b))-Number(isUnusual(a))||
+    Number(a.position||0)-Number(b.position||0));
+  const h=hits[0],unusual=isUnusual(h),uncertain=h.source==='ambiguous';
+  const forms=[...new Map(hits.map(hit=>[fold(hit.surface),hit.surface])).values()];
   const match={at:-1,term:h.surface};
+  const family=kind==='root'?(h.root||keys[0]):(h.lemma||keys[0]);
   const reason=(kind==='root'?'Shared Arabic root ':'Same Arabic lemma ')+
-   (kind==='root'?h.root:h.lemma)+' · '+sourceLabel(h.source);
-  return {...rec,score:(uncertain?16:65)+(h.source==='reviewed'?20:h.source==='contextual-bert'?12:0),
+   family+' · '+sourceLabel(h.source);
+  return {...rec,score:(uncertain?16:65)+(h.source==='reviewed'?20:
+   h.source==='contextual-bert'?12:0)+(unusual?30:0),
    matched:{field:'ar',raw:rec.ar,match,term:h.surface,relation:'morphology',
-    root:h.root,lemma:h.lemma,pos:h.pos,source:h.source,reason}};
+    root:h.root||'',lemma:h.lemma||family,pos:h.pos,source:h.source,
+    forms,occurrences:hits.map(x=>({position:x.position,term:x.surface,
+     lemma:x.lemma,root:x.root,source:x.source})),unusual,
+    reason}};
  });
  const explanation=formAmbiguity>1?'This spelling has '+formAmbiguity+
   ' possible dictionary analyses across occurrences. Results may cover several headwords; inspect the individual words.':
   keys.length?'':'No indexed lemma or root mapping for this spelling yet. Try ordinary word search.';
  return {ready:true,items,mode:kind,keys:[...new Set(keys)],candidate:q,message:explanation};
 }
-const api={version:VERSION,fold,roman,roots,tokenize,sourceLabel,recognize,loadLexicon,ensure,ensureDetail,status,find,lookup,disambiguate,whenUpdated,getLexicon:()=>lexicon||[]};
+const api={version:VERSION,fold,roman,roots,tokenize,sourceLabel,recognize,loadLexicon,ensure,ensureDetail,status,find,formsFor,lookup,disambiguate,whenUpdated,getLexicon:()=>lexicon||[]};
 global.GnammaMorphology=Object.freeze(api);
 loadLexicon().catch(()=>{});
 })(window);

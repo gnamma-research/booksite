@@ -25,6 +25,9 @@ function reportCard(key,cite,report,index,fullTranslation){
   const title=mk('h5','gn-hadith-report-heading');
   const labelText=(cite.sourceLabel||cite.collection+' '+cite.number).split(/,\s/)[0];
   const sourceLink=outbound(labelText,cite.url);
+  // This citation already has its own linked arrow. Do not let the generic
+  // scholarly-source enhancer split it into a label plus a second icon.
+  sourceLink.dataset.gnSourceIcon='1';
   sourceLink.classList.add('gn-hadith-heading-link');
   sourceLink.setAttribute('aria-label','Open original Hadith collection record: '+(cite.sourceLabel||labelText));
   const outboundMark=mk('span','gn-hadith-external-mark','↗');outboundMark.setAttribute('aria-hidden','true');
