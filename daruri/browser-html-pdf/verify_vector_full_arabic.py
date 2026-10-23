@@ -44,6 +44,7 @@ def main():
     extracted=defaultdict(list)
     first_line={}
     counts={'native_full_lines_exact':0,'native_full_lines_total':len(records),
+      'native_exact_full_line_search':0,'native_full_line_geometry':0,
       'opening_search_correctly_located':0,'original_passages_exact':0,
       'original_passages_total':414,'full_source_chars':sum(len(x) for x in original.values()),
       'raster_images':0,'glyph_outline_paths':0,'all_lines_are_semantic_single_CIDs':True}
@@ -56,29 +57,38 @@ def main():
             assert len(own) and len(own)<=12
             counts['raster_images']+=len(p.get_images(full=True))
             counts['glyph_outline_paths']+=len(p.get_drawings())
-            spans=[
-                z for block in p.get_text('dict')['blocks']
-                for line in block.get('lines',[])
-                for z in line['spans']
-                if z.get('font')=='GnammaVectorOriginalCID'
-            ]
-            assert len(spans)==len(own), (
-             f"Native source span count {len(spans)} != {len(own)} on page {page_no+1}")
-            for row,sp in zip(own,spans):
+            # Original reader search/copy regions are the acceptance unit, not
+            # PyMuPDF's arbitrary font-span segmentation. In one long
+            # marked-content ActualText operation it may merge neighbouring
+            # CIDs into a span or split at a bidi boundary despite correct
+            # source-specific selection and exact multiword search.
+            all_source_text=p.get_text(sort=False)
+            assert 'GnammaVectorOriginalCID' in {
+                f[3] for f in p.get_fonts(full=True)
+            }, 'Invisible original Unicode CID font was not embedded'
+            for row in own:
                 id=row['id']
                 asserted[id].append(row['phrase'])
-                extracted[id].append(sp['text'])
-                if sp['text']==row['phrase']:
+                box=fitz.Rect(row['x']-2,p.rect.height-row['y']-row['height']-2,
+                    row['x']+row['width']+2,p.rect.height-row['y']+row['height']+2)
+                selected=p.get_textbox(box).strip()
+                extracted[id].append(selected)
+                if selected==row['phrase']:
                     counts['native_full_lines_exact']+=1
+                hits=p.search_for(row['phrase'])
+                if hits:
+                    counts['native_exact_full_line_search']+=1
+                if any((h&box).get_area()>0 for h in hits):
+                    counts['native_full_line_geometry']+=1
+                if row['phrase'] not in all_source_text:
+                    raise AssertionError('Original Unicode line absent from page extraction: '+row['unique_line_id'])
                 if row['line']==1:
                     first_line[id]=(page_no+1,row)
                     phrase=' '.join(original[id].split(' ')[:2])
                     hits=p.search_for(phrase)
-                    box=fitz.Rect(row['x']-2,p.rect.height-row['y']-row['height']-2,
-                        row['x']+row['width']+2,p.rect.height-row['y']+row['height']+2)
                     if any((h&box).get_area()>0 for h in hits):
                         counts['opening_search_correctly_located']+=1
-    failures=[]
+        failures=[]
     for id,text in original.items():
         pre=' '.join(asserted[id])
         got=' '.join(extracted[id])
@@ -98,6 +108,8 @@ def main():
      'english_translation_in_pdf':False,
      'full_study_scholarly_notes_in_pdf':False,
      'per_word_selection_certified':False,
+     'actualtext_single_original_source_operation':True,
+     'poppler_logical_order_certified':False,
      'original_12_A4_layout_parity_certified':False,
      'native_apple_pdfkit_pdfium_certified':False,
      'production_approved':False
@@ -110,7 +122,9 @@ def main():
     if counts['raster_images'] or counts['glyph_outline_paths']==0:
         raise AssertionError('No vector glyph outlines or raster screenshots used')
     if counts['native_full_lines_exact']!=len(records):
-        raise AssertionError('Native PDF copied/selected source Arabic line changed')
+        raise AssertionError('Native region-select/copy does not preserve every original Arabic line')
+    if counts['native_exact_full_line_search']!=len(records) or counts['native_full_line_geometry']!=len(records):
+        raise AssertionError('Full original Arabic Unicode phrase search or its source rectangle failed')
     if counts['original_passages_exact']!=414:
         raise AssertionError('At least one full authorial Arabic paragraph lost or corrupted')
     if counts['opening_search_correctly_located']!=414:
