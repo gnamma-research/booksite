@@ -38,6 +38,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Cache CAMeL model data for future manual runs
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.camel_tools
+            ~/.cache/pip
+          key: ${{ runner.os }}-camel-tools-1.6.0-msa-bert-r13-v1
       - name: Validate manually supplied bounds
         env:
           LIMIT: ${{ inputs.max_paragraphs }}
