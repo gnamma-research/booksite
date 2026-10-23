@@ -139,8 +139,10 @@ const file='daruri.pdf';
   // Verify its P-numbered notes without exposing a second long print UI.
   await page.goto(host+'/daruri/index.html#editions',{waitUntil:'networkidle'});
   await page.locator('.gn-es').waitFor({timeout:30000});
-  assert.equal(await page.locator('.gn-es-edition-tabs [role=tab]').count(),2,
-    'Reading and Study are one public tab; Reference remains separate');
+  assert.equal(await page.locator('.gn-es-download-types [role=tab]').count(),4,
+    'Four file purposes remain visible while the old A4 assembler stays hidden');
+  assert.equal(await page.locator('.gn-es-book-edition-choices button').count(),3,
+    'Book PDFs offer Reading, Study and Reference without nested publication tabs');
   assert.equal(await page.locator('.gn-es-legacy').isVisible(),false);
   const reading=page.locator('.gn-es-legacy [data-ep-tier=reading]');
   assert.equal(await reading.locator('select[data-ep-control=personal]').inputValue(),'none');

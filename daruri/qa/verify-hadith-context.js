@@ -78,7 +78,7 @@ for(const name of core.concat(englishFiles,['hadith-context-ui.js','hadith-conte
 console.log('PASS: 33 notes, 55 citations, 47/47 complete Arabic sources + newly written English transmissions, metadata and offline manifests.');
 async function domCheck(){
  const {JSDOM}=require('jsdom');
- const dom=new JSDOM('<!doctype html><html><head></head><body><div class="gn-note-entry" data-note-id="HAD-R031"><p>Compact source note.</p></div><div class="gn-note-entry" data-note-id="HAD-R216"><p>Compact source note.</p></div><div class="gn-note-entry" data-note-id="HAD-R189"><p>Compact source note.</p></div></body></html>',{url:'file:///example/daruri/index.html',runScripts:'outside-only'});
+ const dom=new JSDOM('<!doctype html><html><head></head><body><div class="gn-note-entry" data-note-id="HAD-R031"><p>Compact source note.</p></div><div class="gn-note-entry" data-note-id="HAD-R216"><p>Compact source note.</p></div><div class="gn-note-entry" data-note-id="HAD-R189"><p>Compact source note.</p></div><div class="gn-note-entry" data-note-id="QUR-R064-Q005"><h3>Source QUR-R064-Q005</h3><p>Authoritative source note.</p></div><div class="gn-note-entry" data-note-id="QUR-R121-Q011"><h3>Source QUR-R121-Q011</h3><p>Authoritative source note.</p></div><div class="gn-note-entry" data-note-id="QUR-R124-Q013"><h3>Source QUR-R124-Q013</h3><p>Authoritative source note.</p></div><div class="gn-note-entry" data-note-id="QUR-R124-Q014"><h3>Source QUR-R124-Q014</h3><p>Authoritative source note.</p></div></body></html>',{url:'file:///example/daruri/index.html',runScripts:'outside-only'});
  const {window}=dom,doc=window.document;
  const orig=doc.head.append.bind(doc.head);
  doc.head.append=function(...nodes){const value=orig(...nodes);for(const node of nodes)if(node.tagName==='SCRIPT'&&node.src.includes('hadith-context-')){const file=new URL(node.src).pathname.split('/').at(-1);try{window.eval(src(file));queueMicrotask(()=>node.onload?.());}catch(e){queueMicrotask(()=>node.onerror?.(e));}}return value;};
@@ -86,23 +86,51 @@ async function domCheck(){
  doc.dispatchEvent(new window.Event('DOMContentLoaded'));
  const tick=()=>new Promise(r=>setTimeout(r,0));
  await tick();
- assert.equal(doc.querySelectorAll('.gn-hadith-context').length,3,'One expansion per scholarly note, without requiring a Quran note');
+ assert.equal(doc.querySelectorAll('.gn-hadith-context').length,7,'Three independent Hadith notes and four context-scoped Qurʾān disclosures');
+ assert.equal(doc.querySelectorAll('.gn-hadith-compact-sources').length,0,'Opening view has no external collection links');
  assert.equal(doc.querySelectorAll('.gn-hadith-english').length,0,'Complete translations must not appear before expansion');
- assert(doc.querySelector('[data-note-id="HAD-R216"] > p').textContent.includes('Compact source note'),'Unexpanded note retains concise original citation');
+ const compact=doc.querySelector('[data-note-id="HAD-R216"]');
+ assert(compact.querySelector('.gn-hadith-short-summary')?.textContent,'Unexpanded source shows concise context');
+ assert(compact.querySelector('.gn-hadith-original-apparatus')?.textContent.includes('Compact source note'),
+  'Canonical source note survives unchanged in retained apparatus');
+ assert(compact.querySelector('.gn-hadith-original-apparatus').hidden,'Legacy verbosity is not visible by default');
+ assert.equal(compact.querySelectorAll('.gn-hadith-compact-sources, .gn-hadith-source-text-link').length,0,'No duplicate source link in initial note');
+ assert(compact.querySelector('.gn-hadith-context summary')?.textContent.includes('Read Hadith'),'Opening view has a clear single disclosure');
+ assert(doc.querySelector('[data-note-id="QUR-R064-Q005"] .gn-scholar-ayah-title')?.textContent.includes('﴿'),'Qurʾān heading shows actual Arabic verse excerpt');
  const open=async id=>{const note=doc.querySelector('[data-note-id="'+id+'"]');const details=note.querySelector('.gn-hadith-context');details.open=true;details.dispatchEvent(new window.Event('toggle'));for(let i=0;i<9;i++)await tick();return note;};
  const note31=await open('HAD-R031');const list31=[...note31.querySelectorAll('[data-hadith-report]')];
  assert.deepEqual(list31.map(x=>x.dataset.hadithReport),['muslim:360a','abudawud:492'],'Muslim must precede Abu Dawud, with two distinct reports');
+ assert(list31.every(card=>card.querySelector('.gn-hadith-report-heading')?.textContent.match(/Muslim|Dawud|Dāwūd/i)),
+  'Each report heading must still identify its collection');
+ assert.deepEqual(list31.map(card=>card.querySelector('.gn-hadith-report-heading a')?.href),
+  ['https://sunnah.com/muslim:360a','https://sunnah.com/abudawud:492'],
+  'Each headed source citation directly links to its exact original transmission');
+ assert(list31.every(card=>card.querySelectorAll('a[href]').length===1),
+  'Expanded report has a single source link, not a second outbound button');
+ assert(list31.every(card=>card.querySelector('.gn-hadith-biblio') && !card.querySelector('.gn-hadith-metadata, .gn-hadith-outbound')),
+  'Book, chapter, narrator and in-book reference appear as compact metadata without extra link rows');
+ assert(list31.every(card=>![...card.querySelectorAll('.gn-hadith-meta strong')].some(label=>label.textContent.trim()==='Collection:')),
+  'Expanded Hadith details must not repeat the collection already named in the heading');
  assert(note31.textContent.includes('Jābir')||note31.textContent.includes('Jabir'),'Verified narrator rendered');
  assert(note31.textContent.includes('الإِبِلِ'),'Full source Arabic in offline card');
  const note216=await open('HAD-R216');
- assert(note216.textContent.includes('Full English translation'),'Fully translated report shown rather than abbreviated English');
+ assert(note216.textContent.includes('English translation · editorial'),'Full editorial translation shown rather than abbreviated English');
  assert(note216.textContent.includes('ʿAbd Allāh ibn Yūsuf'),'Translated isnād names are visible');
  assert.equal(note216.querySelectorAll('.gn-hadith-english').length,1,'Exactly one complete translation per cited report');
  assert(note216.textContent.includes('Manumission'),'Book/chapter shown');
  const note189=await open('HAD-R189');
  assert(note189.textContent.includes('No primary collection'),'Unverified wording cannot be fabricated');
  assert.equal(note189.querySelectorAll('[data-hadith-report]').length,0);
- assert.equal(doc.querySelectorAll('.gn-quran-context').length,0,'Hadith does not require or alter Quran UI');
- console.log('PASS: local-file popup lazy loads full English only after expansion; source ordering, Arabic, missing-source and Qurʾān isolation intact.');
+ assert.equal(doc.querySelectorAll('.gn-quran-context').length,0,'Hadith does not replace Qurʾān context UI');
+ const related=doc.querySelector('[data-note-id="QUR-R064-Q005"] .gn-hadith-related');
+ assert(related,'Hadith appears inside its specific related Qurʾān note');
+ related.open=true;related.dispatchEvent(new window.Event('toggle'));
+ for(let i=0;i<9;i++)await tick();
+ const relatedCards=[...related.querySelectorAll('[data-hadith-report]')];
+ assert.deepEqual(relatedCards.map(x=>x.dataset.hadithReport),['abudawud:788'],
+  'Nested Qurʾān note must disclose only the reviewed related source, not an entire section');
+ assert(!doc.querySelector('.gn-hadith-metadata')?.textContent.includes('Attributed grading'),
+  'Modern database grades are never displayed in the reader');
+ console.log('PASS: compact Hadith notes and four scoped Qurʾān relationships; lazy complete Arabic/English transmissions, no modern grading, source order and source record preservation.');
 }
 domCheck().catch(e=>{console.error(e);process.exitCode=1;});

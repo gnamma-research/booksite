@@ -244,7 +244,7 @@ test('Reading Desk hierarchy has prominent actions, labelled filters and context
  ensure(html.includes('class="gn-rd-toolbar gn-rd-simplified-toolbar"'),'main actions absent');
  ensure(html.includes('data-rd="new-note"')&&html.includes('data-rd="print-list"'),'new note and print action missing');
  ensure(html.includes('class="gn-rd-manage-menu"')&&html.includes('>Manage '),'manage menu missing');
- ensure(html.includes('Download backup (.json)')&&html.includes('Import backup (.json)'),'backup labels unclear');
+ ensure(html.includes('data-rd="backup-transfer"')&&html.includes('Backup &amp; Transfer'),'backup transfer entry missing');
  ensure(html.includes('data-rd="export-markdown"')&&html.includes('Open Bin'),'secondary data controls not disclosed');
  ensure(html.includes('id="gn-rd-source"')&&html.includes('id="gn-rd-sort"'),'source/sort must be labelled selectors');
  ensure(html.includes('>Bookmarks</button>')&&html.includes('>My notes</button>'),'text category tabs missing');

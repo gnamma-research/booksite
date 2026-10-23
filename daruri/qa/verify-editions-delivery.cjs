@@ -16,9 +16,38 @@ const sw=get('sw.js');
 for(const [name,code] of [['selector',selector],['bundler',bundle],['personal-export',exportScript]])
   assert.doesNotThrow(()=>new vm.Script(code,{filename:name+'.js'}));
 
-assert(selector.includes('id="gn-es-prepare"'),'Real prepare action required');
+assert(selector.includes('data-es-action="download"'),'Direct published PDF download exists');
+assert(selector.includes("download.href=open.getAttribute('href')"),'PDF download uses selected View PDF URL');
 assert(selector.includes('data-es-action="download"'),'User chooses final PDF download');
-assert(selector.includes("crypto.subtle.digest('SHA-256'"),'Must verify actual PDF bytes');
+assert(selector.includes('download.hidden=!showPublic||viewOnly'),
+  'Downloads must stay hidden for personal/unavailable PDFs and Apple preview devices');
+assert(selector.includes("open.classList.toggle('gn-es-action-primary',viewOnly)"),
+  'Apple touch PDFs must have one prominent View PDF action');
+assert(selector.includes("viewOnly?'View PDF':'View in browser'"),
+  'Desktop preview must be explicitly labelled View in browser');
+assert(selector.includes('data-es-ios-save-help'),
+  'iPhone/iPad must explain Share → Save to Files');
+assert(selector.includes("navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1"),
+  'iPad desktop-style user agents must get preview-first UI');
+
+const policyStart=selector.indexOf('  const APPLE_PDF_PREVIEW=(()=>{');
+const policyEnd=selector.indexOf("  const NAV=['reading','reference'];",policyStart);
+assert(policyStart>0&&policyEnd>policyStart,'Device-aware PDF policy is present');
+const getPreviewDevice=(userAgent,platform='',maxTouchPoints=0)=>{
+  const context={navigator:{userAgent,platform,maxTouchPoints}};
+  vm.runInNewContext(selector.slice(policyStart,policyEnd)+
+    '\nthis.applePreview=APPLE_PDF_PREVIEW;',context);
+  return context.applePreview;
+};
+assert.equal(getPreviewDevice('Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X)'),true);
+assert.equal(getPreviewDevice('Mozilla/5.0 (iPad; CPU OS 17_6 like Mac OS X)'),true);
+assert.equal(getPreviewDevice('Mozilla/5.0 (Macintosh; Intel Mac OS X)', 'MacIntel',5),true,
+  'iPad reporting a desktop-class user agent still previews only');
+assert.equal(getPreviewDevice('Mozilla/5.0 (Macintosh; Intel Mac OS X)','MacIntel',0),false);
+assert.equal(getPreviewDevice('Mozilla/5.0 (Windows NT 10.0; Win64; x64)','Win32',0),false);
+assert.equal(getPreviewDevice('Mozilla/5.0 (Linux; Android 15; Pixel)','Linux armv8l',5),false,
+  'Do not assume Android always lacks a useful native download');
+
 assert(selector.includes("response.body?.getReader"),'Real network progress, not fabricated animation');
 assert(selector.includes("preparation.controller.abort()"),'Obsolete requests must be cancelled');
 assert(selector.includes("availability.hidden=result.status==='ready'"),
@@ -76,8 +105,9 @@ assert(['withheld','published'].includes(sourceRelease.status),'Release manifest
 assert(!legacyEditions.includes('<h3>Study PDF</h3>') &&
        !legacyEditions.includes('<h3>Study Guide</h3>'),
   'Legacy fallback must not resurrect unrelated download cards');
-assert(selector.includes('data-es-source hidden')&&selector.includes('Other downloads'),
-  'Scholarly source is a gated secondary download, not a PDF edition');
+assert(selector.includes('data-es-source hidden') && selector.includes('data-es-download-type="source"'),'Research ZIP separately selectable');
+assert(selector.includes('data-es-download-type="guide"'),'Study Guide separately selectable');
+assert(styles.includes('@container (min-width:725px)'),'Responsive desktop rail specified');
 assert(!bundle.includes('Daruri_Portable_Scholarly_Source.zip'),
   'Offline website bundle must not impersonate the scholarly source ZIP');
 
@@ -151,5 +181,5 @@ const candidate={...sourceRelease,status:'published',
   console.log('PASS: source ZIP release gate, content-type/length checks, clean fallback and separate offline bundle.');
 })().catch(error=>{console.error(error);process.exitCode=1;});
 
-console.log('PASS: real PDF verification, honest progress, study-guide separation,'
+console.log('PASS: direct PDF, four download purposes, source archive, study-guide separation,'
   +' offline HTML dependency closure, privacy and single downloads destination');

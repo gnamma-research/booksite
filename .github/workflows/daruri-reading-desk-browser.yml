@@ -7,6 +7,12 @@ on:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
       - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
+      - 'daruri/backup-transfer.js'
+      - 'daruri/backup-transfer.css'
+      - 'daruri/google-drive-config.js'
+      - 'daruri/qa/verify-backup-transfer-browser.cjs'
+      - 'daruri/qa/verify-backup-transfer-ui.cjs'
+      - 'daruri/qa/verify-backup-transfer-google-mock.cjs'
       - 'daruri/reading-desk.js'
       - 'daruri/reading-desk.css'
       - 'daruri/index.html'
@@ -15,6 +21,12 @@ on:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
       - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
+      - 'daruri/backup-transfer.js'
+      - 'daruri/backup-transfer.css'
+      - 'daruri/google-drive-config.js'
+      - 'daruri/qa/verify-backup-transfer-browser.cjs'
+      - 'daruri/qa/verify-backup-transfer-ui.cjs'
+      - 'daruri/qa/verify-backup-transfer-google-mock.cjs'
       - 'daruri/reading-desk.js'
       - 'daruri/reading-desk.css'
       - 'daruri/index.html'
@@ -41,6 +53,8 @@ jobs:
         run: node daruri/qa/verify-reading-desk-real-browser.cjs
       - name: Verify deletion recovery, Arabic search and keyboard notes
         run: node daruri/qa/verify-reading-desk-recovery-search.cjs
+      - name: Verify manual backup, selective restoration and mocked Google Drive
+        run: node daruri/qa/verify-backup-transfer-browser.cjs
       - name: Preserve screenshots for review
         if: always()
         uses: actions/upload-artifact@v4

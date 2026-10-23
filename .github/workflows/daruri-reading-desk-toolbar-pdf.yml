@@ -4,6 +4,9 @@ on:
   push:
     branches: [master, feature/reading-desk-icon-pdf-20261021]
     paths:
+      - 'daruri/backup-transfer.js'
+      - 'daruri/backup-transfer.css'
+      - 'daruri/google-drive-config.js'
       - 'daruri/reading-desk.js'
       - 'daruri/reading-desk.css'
       - 'daruri/reading-desk-pdf.js'
@@ -14,6 +17,9 @@ on:
       - '.github/workflows/daruri-reading-desk-toolbar-pdf.yml'
   pull_request:
     paths:
+      - 'daruri/backup-transfer.js'
+      - 'daruri/backup-transfer.css'
+      - 'daruri/google-drive-config.js'
       - 'daruri/reading-desk.js'
       - 'daruri/reading-desk.css'
       - 'daruri/reading-desk-pdf.js'
@@ -40,17 +46,22 @@ jobs:
       - name: Syntax and release references
         run: |
           node --check daruri/reading-desk.js
+          node --check daruri/backup-transfer.js
+          node --check daruri/google-drive-config.js
           node --check daruri/reading-desk-pdf.js
           node --check daruri/sw.js
           node --check daruri/download-bundle.js
           node --check daruri/qa/verify-reading-desk-toolbar-pdf.cjs
+          grep -q 'backup-transfer.js?v=20261023-transfer-release2' daruri/index.html
+          grep -q 'backup-transfer.js?v=20261023-transfer-release2' daruri/sw.js
+          grep -q 'backup-transfer.js?v=20261023-transfer-release2' daruri/download-bundle.js
           grep -q 'reading-desk-pdf.js?v=20261021-rdiconpdf1' daruri/sw.js
-          grep -q 'reading-desk.js?v=20261023-rd-ux1-personal-icons' daruri/index.html
+          grep -q 'reading-desk.js?v=20261023-transfer-release2' daruri/index.html
           grep -q 'reading-desk.css?v=20261023-rd-ux1-personal-icons' daruri/index.html
           grep -q 'daruri/reading-desk-pdf.js' daruri/download-bundle.js
-          grep -q 'reading-desk.js?v=20261023-rd-ux1-personal-icons' daruri/sw.js
+          grep -q 'reading-desk.js?v=20261023-transfer-release2' daruri/sw.js
           grep -q 'reading-desk.css?v=20261023-rd-ux1-personal-icons' daruri/sw.js
-          grep -q 'reading-desk.js?v=20261023-rd-ux1-personal-icons' daruri/download-bundle.js
+          grep -q 'reading-desk.js?v=20261023-transfer-release2' daruri/download-bundle.js
           grep -q 'reading-desk.css?v=20261023-rd-ux1-personal-icons' daruri/download-bundle.js
       - name: Install pinned browser and PDF validators
         run: |
