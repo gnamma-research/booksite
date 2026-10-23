@@ -38,7 +38,10 @@ async function exercise(engine,name,origin){
  try{
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
   await page.waitForSelector('#readerDock:not([hidden])',{timeout:20000});
-  await page.waitForSelector('#gn-dock-private-status .gn-dock-summary-pair',{timeout:20000});
+  // Container queries may collapse the visible counters to a total; the individual
+  // spans remain attached, and the full mobile summary remains tappable.
+  await page.waitForSelector('#gn-dock-private-status .gn-dock-summary-pair',{state:'attached',timeout:20000});
+  await page.locator('#gn-dock-private-status .gn-dock-summary').waitFor({state:'visible'});
   assert(await page.locator('body.focus-level-1').count(),'old Focus 1 preference not retained');
   assert.equal(await page.locator('#gn-dock-private-status .gn-dock-summary').count(),1,'mobile saved references must have one generous touch target');
   assert.equal(await page.locator('#gn-dock-private-status .gn-dock-summary-pair').count(),4,'section bookmark, paragraph bookmark, quotation and note each need an indicator');
@@ -118,7 +121,9 @@ async function exercise(engine,name,origin){
   const noteMark=page.locator('#gn-dock-private-status [data-gn-mark="note"]');
   const diagnostics=await page.evaluate(()=>({hash:location.hash,heading:document.querySelector('#dockSection')?.textContent,body:document.body.className,markup:document.querySelector('#gn-dock-private-status')?.innerHTML,position:document.querySelector('#reader .passage-grid[data-segment="0"]')?.getBoundingClientRect().top,firstBottom:document.querySelector('#reader .passage-grid[data-segment="0"]')?.getBoundingClientRect().bottom,toolbarBottom:document.querySelector('#readingControls')?.getBoundingClientRect().bottom,dockTop:document.querySelector('#readerDock')?.getBoundingClientRect().top,hit:(()=>{const top=Math.max(0,document.querySelector('#readingControls')?.getBoundingClientRect().bottom||0),end=document.querySelector('#readerDock')?.getBoundingClientRect().top,y=Math.round(Math.max(top+35,Math.min(end-38,top+(end-top)*.42))),el=document.elementFromPoint(window.innerWidth/2,y);return {y,hit:el?.tagName,cls:el?.className,grid:el?.closest?.('.passage-grid')?.dataset.segment};})(),noteSource:JSON.parse(localStorage.getItem('gnamma-reading-desk-v1')||'{}').items?.filter(x=>x.kind==='note'),deskItems:window.__qaDesk?.records()?.map(x=>({id:x.id,kind:x.kind,section:x.target?.section,segment:x.target?.segment,deleted:x.deleted})),hidden:document.querySelector('#gn-dock-private-status')?.hidden,scrollY:window.scrollY,reader:document.querySelector('#reader')?.innerText.slice(0,95)}));
   assert(await noteMark.count(),'Saved paragraph note missing from dock after returning to §11 paragraph 1: '+JSON.stringify(diagnostics)+' errors: '+errors.join('; '));
-  await noteMark.click();
+  // Mobile categories are noninteractive labels inside the single summary
+  // button. Open that whole button rather than clicking a hidden category.
+  await page.locator('#gn-dock-private-status .gn-dock-summary').click();
   await page.locator('#gn-dock-saved-sheet').waitFor();
   await page.locator('#gn-dock-saved-sheet .gn-dock-sheet-item').filter({hasText:'Reader note'}).click();
   await page.locator('.gn-rd-page').waitFor();
