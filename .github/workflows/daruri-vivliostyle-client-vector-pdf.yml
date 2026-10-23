@@ -40,7 +40,7 @@ jobs:
       - name: Install pinned Vitliostyle page layout / LGPL PDF vector emitter and browsers
         run: |
           npm install --no-save --no-package-lock --prefix daruri/qa \
-            @vivliostyle/print@2.45.3 pages-to-pdf@0.4.1 esbuild@0.25.12 playwright@1.56.1
+            @vivliostyle/print@2.45.3 pages-to-pdf@0.4.1 esbuild@0.25.12 playwright@1.56.1 pdf-lib@1.17.1
           cd daruri/qa
           if [ '${{ matrix.engine }}' = chromium ]; then
             npx playwright install --with-deps --only-shell chromium
@@ -67,7 +67,7 @@ jobs:
       - name: Audit actual PDF/Unicode and original excerpt footnotes where applicable
         if: always()
         run: |
-          python -m pip install --disable-pip-version-check 'PyMuPDF==1.26.7' 'pypdfium2==5.8.0'
+          python -m pip install --disable-pip-version-check 'PyMuPDF==1.26.7' 'pypdfium2==5.8.0' 'pypdf==5.9.0'
           python - <<'PY'
           from pathlib import Path
           import fitz
