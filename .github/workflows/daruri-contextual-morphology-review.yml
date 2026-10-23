@@ -1,0 +1,93 @@
+name: Daruri contextual morphology candidate review
+# Manual only: expensive model inference must never run for every reader commit.
+on:
+  workflow_dispatch:
+    inputs:
+      work:
+        description: "Corpus to process (do each one separately for full coverage)"
+        required: true
+        type: choice
+        default: daruri
+        options:
+          - daruri
+          - mustasfa
+      max_paragraphs:
+        description: "Limit for dry run; 0 processes the entire selected corpus"
+        required: true
+        type: string
+        default: "50"
+      review_count:
+        description: "Occurrence samples to export for human review"
+        required: true
+        type: string
+        default: "250"
+permissions:
+  contents: read
+concurrency:
+  group: contextual-morph-${{ inputs.work }}
+  cancel-in-progress: false
+jobs:
+  candidate-index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      PIP_DISABLE_PIP_VERSION_CHECK: "1"
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate manually supplied bounds
+        env:
+          LIMIT: ${{ inputs.max_paragraphs }}
+          REVIEW_COUNT: ${{ inputs.review_count }}
+        run: |
+          python3 - <<'PY'
+          import os
+          limit, count = os.environ["LIMIT"], os.environ["REVIEW_COUNT"]
+          if not limit.isascii() or not limit.isdecimal() or int(limit) > 3000:
+              raise SystemExit("max_paragraphs must be 0–3000")
+          if not count.isascii() or not count.isdecimal() or not 1 <= int(count) <= 10000:
+              raise SystemExit("review_count must be 1–10000")
+          PY
+      - name: Install CAMeL Tools and CPU morphology dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq cmake libboost-all-dev
+          python3 -m pip install --upgrade pip
+          # Install CPU PyTorch before CAMeL; no GPU inference in hosted Actions.
+          python3 -m pip install --index-url https://download.pytorch.org/whl/cpu torch
+          python3 -m pip install camel-tools==1.6.0
+          camel_data -i morphology-db-msa-r13
+          camel_data -i disambig-bert-unfactored-msa
+      - name: Build offline contextual CANDIDATES, never publish to the reader
+        env:
+          WORK: ${{ inputs.work }}
+          LIMIT: ${{ inputs.max_paragraphs }}
+          REVIEW_COUNT: ${{ inputs.review_count }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/morph-review"
+          python3 daruri/build/build_gnamma_morph_index.py \
+            --mode bert --work "$WORK" --max-paragraphs "$LIMIT" --top 2 \
+            --out-dir "$RUNNER_TEMP/morph-review"
+          python3 daruri/build/export_morph_review.py \
+            --index "$RUNNER_TEMP/morph-review/morph-${WORK}-v1.json" \
+            --count "$REVIEW_COUNT" \
+            --output "$RUNNER_TEMP/morph-review/review-${WORK}.csv"
+          {
+            echo "Git source commit: $GITHUB_SHA"
+            echo "Corpus: $WORK"
+            echo "Maximum paragraphs (0 is all): $LIMIT"
+            echo "Model: CAMeL Tools BERT unfactored, MSA"
+            echo "Model source: machine; classical legal Arabic is NOT validated"
+            echo "No generated contextual index has been published to the reader"
+            python3 -m pip show camel-tools | head -n 7
+          } > "$RUNNER_TEMP/morph-review/PROVENANCE.txt"
+      - name: Upload review artifacts privately to this Actions run
+        uses: actions/upload-artifact@v4
+        with:
+          name: contextual-candidates-${{ inputs.work }}-${{ github.run_number }}
+          path: ${{ runner.temp }}/morph-review/
+          retention-days: 14
+          if-no-files-found: error
