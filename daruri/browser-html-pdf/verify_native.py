@@ -20,6 +20,39 @@ def normalize(text):
     return "".join(x for x in text if not unicodedata.combining(x)
                    and unicodedata.category(x)[0] in "LN").casefold()
 
+def inspect_internal_navigation(pdf):
+    """Assess PDF link targets by actual page-object refs, not only PyMuPDF LINK_GOTO.
+
+    PDF emitters can write valid /Dest [page-ref /XYZ ...] arrays that PyMuPDF
+    reports as LINK_NAMED(kind=4) rather than LINK_GOTO(kind=1). We must verify
+    the resolved physical page object before calling that link missing.
+    """
+    known_pages={p.xref for p in pdf}
+    valid=invalid=uri=0
+    examples=[]
+    for page in pdf:
+        for link in page.get_links():
+            kind=link["kind"]
+            if kind==fitz.LINK_URI:
+                uri+=1
+                continue
+            if kind==fitz.LINK_GOTO:
+                target=link.get("page")
+                ok=isinstance(target,int) and 0<=target<len(pdf)
+            else:
+                xref=link.get("xref",0)
+                object_text=pdf.xref_object(xref) if xref else ""
+                match=re.search(r"/Dest\s*\[\s*(\d+)\s+0\s+R\s*/(?:XYZ|Fit|FitH|FitV|FitR)",object_text)
+                ok=bool(match and int(match.group(1)) in known_pages)
+            valid+=bool(ok)
+            invalid+=not ok
+            if len(examples)<8:
+                examples.append({"source_page":page.number+1,
+                    "kind":kind,"is_valid_internal":bool(ok)})
+    return {"valid_internal":valid,"invalid_internal":invalid,
+            "uri":uri,"samples":examples}
+
+
 def check(candidate,fixture_file,mode,report_path):
     fixture=json.loads(fixture_file.read_text("utf8"))
     if fixture["authorial_passages"]!=414 or fixture["authorial_sections"]!=258:
@@ -42,14 +75,11 @@ def check(candidate,fixture_file,mode,report_path):
            and abs(p.rect.height-841.89)<1 for p in pdf)
         report["raster_images_count"]=sum(len(p.get_images()) for p in pdf)
         report["printable_text_chars"]=sum(len(p.get_text()) for p in pdf)
-        report["valid_goto_count"]=sum(
-          l["kind"]==fitz.LINK_GOTO and 0<=l.get("page",-1)<pdf.page_count
-          for p in pdf for l in p.get_links())
-        report["invalid_goto_count"]=sum(
-          l["kind"]==fitz.LINK_GOTO and not 0<=l.get("page",-1)<pdf.page_count
-          for p in pdf for l in p.get_links())
-        report["url_link_count"]=sum(
-          l["kind"]==fitz.LINK_URI for p in pdf for l in p.get_links())
+        navigation=inspect_internal_navigation(pdf)
+        report["valid_goto_count"]=navigation["valid_internal"]
+        report["invalid_goto_count"]=navigation["invalid_internal"]
+        report["url_link_count"]=navigation["uri"]
+        report["link_validation_samples"]=navigation["samples"]
         normalized_pages=[normalize(p.get_text(sort=False)) for p in pdf]
         first_en_found=first_ar_found=0
         exact_en_found=exact_ar_found=0
