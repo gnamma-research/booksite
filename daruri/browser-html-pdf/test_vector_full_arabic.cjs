@@ -47,7 +47,9 @@ let server,browser,context;
   assert.equal(status.one_exact_unicode_cid_per_line,true);
   assert.equal(status.full_authorial_arabic_word_content_represented,true);
   assert.equal(status.original_published_pdf_inputs,0);
-  assert.equal(status.publication_approved,false);
+  // Require the explicit false value emitted by this exact nonrelease
+  // browser generator; undefined is not evidence of publication safety.
+  assert.equal(status.production_approved,false);
   assert.equal(status.full_authorial_english_translations_represented,false);
   const output=path.join(OUT,'daruri-vector-full-original-arabic-NONRELEASE.pdf');
   await download.saveAs(output);
