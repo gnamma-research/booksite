@@ -18,7 +18,7 @@ async function check(browserType,width,touch){
  const check= (ok,msg)=>assert.ok(ok,label+': '+msg);
  try{
   await page.goto(HOST+'/daruri/#section=31',{waitUntil:'domcontentloaded',timeout:90000});
-  const h=page.locator('#reader .gn-hadith-inline-marker').first();
+  const h=page.locator('#reader .gn-hadith-inline-marker:visible').first();
   await h.waitFor({timeout:50000});await h.scrollIntoViewIfNeeded();
   const originalY=await page.evaluate(()=>scrollY);
   await h.click();
@@ -67,14 +67,14 @@ async function check(browserType,width,touch){
 
   // The same sheet is used by the Notes list, Qur'an context, Bidāya applications
   // and historical dictionary source popups.
-  await page.locator('#reader [data-gn-notes-open]').first().click();
+  await page.locator('#reader [data-gn-notes-open]:visible').first().click();
   await layer.waitFor();
   check(await page.evaluate(()=>document.body.style.position==='fixed'),
     'Section Notes has no background-scroll lock');
   await layer.locator('[data-gn-close]').last().click();
 
   await page.goto(HOST+'/daruri/#section=1',{waitUntil:'domcontentloaded',timeout:90000});
-  const q=page.locator('#reader .quran-source-ref').first();
+  const q=page.locator('#reader .quran-source-ref:visible').first();
   await q.waitFor({timeout:50000});await q.click();
   await layer.waitFor();
   check(await page.evaluate(()=>document.body.style.position==='fixed'),
