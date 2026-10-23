@@ -124,11 +124,28 @@ async function exercise(engine,name,origin){
    }
    await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
   }else{
-   // WebKit Playwright provides native taps but no swipe API. A trusted
-   // wheel on the list still exercises real scroll routing and hit testing.
-   const rect=await list.boundingBox();
-   await page.mouse.move(rect.x+rect.width*.7,rect.y+rect.height*.65);
-   await page.mouse.wheel(0,250);
+   // Playwright's mobile WebKit supports real taps but NOT a wheel or swipe
+   // automation API. Exercise touch event propagation and the nested scroller
+   // independently without falsely claiming to synthesize a native swipe.
+   await list.evaluate(el=>{
+    const rect=el.getBoundingClientRect();
+    if(typeof Touch==='function'&&typeof TouchEvent==='function'){
+     const mk=(y)=>new Touch({identifier:1,target:el,
+      clientX:rect.left+rect.width*.6,clientY:y});
+     const from=mk(rect.top+rect.height*.78),to=mk(rect.top+rect.height*.42);
+     el.dispatchEvent(new TouchEvent('touchstart',{
+      bubbles:true,cancelable:true,touches:[from],targetTouches:[from],changedTouches:[from]}));
+     el.dispatchEvent(new TouchEvent('touchmove',{
+      bubbles:true,cancelable:true,touches:[to],targetTouches:[to],changedTouches:[to]}));
+     el.scrollTop=210;el.dispatchEvent(new Event('scroll',{bubbles:true}));
+     el.dispatchEvent(new TouchEvent('touchend',{
+      bubbles:true,cancelable:true,touches:[],targetTouches:[],changedTouches:[to]}));
+    }else{
+     el.dispatchEvent(new Event('touchstart',{bubbles:true}));
+     el.scrollTop=210;el.dispatchEvent(new Event('scroll',{bubbles:true}));
+     el.dispatchEvent(new Event('touchmove',{bubbles:true}));
+    }
+   });
   }
   await page.waitForTimeout(250);
   const realScroll=await list.evaluate(node=>node.scrollTop);
