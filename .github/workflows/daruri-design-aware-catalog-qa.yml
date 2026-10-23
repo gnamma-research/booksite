@@ -1,0 +1,30 @@
+name: Daruri approved design registry and 120-composition smoke QA
+on:
+  push:
+    branches: [feature/daruri-design-aware-generated-editions-20261022]
+    paths:
+      - 'daruri/dynamic-pdf/design-catalog.js'
+      - 'daruri/dynamic-pdf/test_design_catalog.cjs'
+      - 'daruri/dynamic-pdf/client.js'
+      - 'daruri/dynamic-editions.html'
+      - '.github/workflows/daruri-design-aware-catalog-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  signed-design-matrix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify catalog and browser script syntax
+        run: |
+          node --check daruri/dynamic-pdf/design-catalog.js
+          node --check daruri/dynamic-pdf/test_design_catalog.cjs
+          node --check daruri/dynamic-pdf/client.js
+          node --check daruri/dynamic-pdf/assemble.worker.js
+      - name: Prove all source designs, packets, signed links and fake-layout rejection
+        run: node daruri/dynamic-pdf/test_design_catalog.cjs

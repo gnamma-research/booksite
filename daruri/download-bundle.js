@@ -196,7 +196,7 @@
       ['daruri/hadith-context-english-tirmidhi-c.js', 'hadith-context-english-tirmidhi-c.js?v=20261023-hadithux3'],
       ['daruri/hadith-context-english-muslim.js', 'hadith-context-english-muslim.js?v=20261023-hadithux3'],
       ['daruri/hadith-context-english-other.js', 'hadith-context-english-other.js?v=20261023-hadithux3'],
-      ['daruri/download-bundle.js', 'download-bundle.js?v=20261023-transfer-release2-hadith-arrow3'],
+      ['daruri/download-bundle.js', 'download-bundle.js?v=20261023-stage1-current'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
       ['daruri/study-guide.css', 'study-guide.css'],
@@ -204,13 +204,20 @@
       ['daruri/editions.css', 'editions.css?v=20261021-editiontabs-vowels-release1'],
       ['daruri/editions-icons.css','editions-icons.css?v=20261023-ar-spacing1'],
       ['daruri/editions-icons.js','editions-icons.js?v=20261023-personal-icons'],
-      ['daruri/editions-selector.js','editions-selector.js?v=20261023-apple-pdf-view1'],
+      ['daruri/editions-selector.js','editions-selector.js?v=20261023-stage1-current'],
       ['daruri/editions-selector.css','editions-selector.css?v=20261023-ar-spacing1'],
       ['daruri/editions/manifest.json','editions/manifest.json?v=20261021-bilingual-vowels1'],
       ['daruri/editions/apparatus/manifest.json','editions/apparatus/manifest.json?v=20261021-a4-apparatus1'],
       ['daruri/editions/maps/manifest.json','editions/maps/manifest.json?v=20261022-base-personal-word-maps'],
+      // Stage 1: offline PDF composition uses 12 original A4 source PDFs and
+      // exactly 15 checksum-verified apparatus packets, never 120 complete PDFs.
+      ['daruri/dynamic-editions.html','dynamic-editions.html'],
+      ['daruri/dynamic-pdf/client.js','dynamic-pdf/client.js?v=20261023-stage1'],
+      ['daruri/dynamic-pdf/core.js','dynamic-pdf/core.js?v=20261023-stage1'],
+      ['daruri/dynamic-pdf/design-catalog.js','dynamic-pdf/design-catalog.js?v=20261023-stage1'],
+      ['daruri/dynamic-pdf/assemble.worker.js','dynamic-pdf/assemble.worker.js?v=20261023-stage1'],
       ['daruri/personal-export.html', 'personal-export.html'],
-      ['daruri/personal-export.js', 'personal-export.js?v=20261023-editions-delivery1'],
+      ['daruri/personal-export.js', 'personal-export.js?v=20261023-stage1-current'],
       ['daruri/personal-pdf-enhancements.js','personal-pdf-enhancements.js?v=two-tabs-20261022'],
       ['daruri/personal-export.css', 'personal-export.css?v=3'],
       ['daruri/vendor/pdf-lib-1.17.1.min.js', 'vendor/pdf-lib-1.17.1.min.js'],
@@ -229,7 +236,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261023-dock-saved-sheet-touch1'],
+      ['daruri/sw.js', 'sw.js?v=20261023-stage1-current1'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
@@ -266,20 +273,27 @@
         files.push(['daruri/editions/maps/'+name+suffix,
           'editions/maps/'+name+suffix]);
     }
-    // Include the complete, verified apparatus edition collection in the
-    // offline source+PDF bundle, together with each edition's matching maps.
-    const apparatusFiles=[
-      ...['bilingual','bilingual-unvowelled'].flatMap(lang=>
-        ['glossary','index','glossary-index','concordance']
-        .map(kind=>'daruri-reading-'+lang+'-'+kind+'.pdf')),
-      'daruri-study-bilingual-glossary.pdf',
-      'daruri-study-bilingual-applications.pdf'
-    ];
-    for(const filename of apparatusFiles){
-      pdfs.set('daruri/editions/apparatus/'+filename,'editions/apparatus/'+filename);
-      for(const suffix of ['.json','.metadata.json'])
-        files.push(['daruri/editions/apparatus/maps/'+filename+suffix,
-          'editions/apparatus/maps/'+filename+suffix]);
+    // 120 signed generation profiles bind the 8 eligible source layouts to
+    // 15 nonempty combinations of glossary/index/concordance/applications.
+    files.push(['daruri/dynamic-pdf/packets/manifest.json',
+      'dynamic-pdf/packets/manifest.json']);
+    const components=['glossary','index','concordance','applications'];
+    const variants=['daruri-reading-bilingual','daruri-reading-bilingual-unvowelled',
+      'daruri-reading-english','daruri-study-bilingual'];
+    for(let mask=1;mask<16;mask++){
+      const suffix=components.filter((_,i)=>Boolean(mask&(1<<i))).join('-');
+      const packet='gnamma-apparatus-'+suffix+'.pdf';
+      pdfs.set('daruri/dynamic-pdf/packets/'+packet,
+        'dynamic-pdf/packets/'+packet);
+      files.push(['daruri/dynamic-pdf/packets/'+packet+'.json',
+        'dynamic-pdf/packets/'+packet+'.json']);
+      for(const family of variants){
+        for(const titles of ['', '-titles-on']){
+          const map=family+'-'+suffix+titles+'.pdf.links.json';
+          files.push(['daruri/dynamic-pdf/packets/profiles/'+map,
+            'dynamic-pdf/packets/profiles/'+map]);
+        }
+      }
     }
     for (const link of document.querySelectorAll('a[href]')) {
       const raw = link.getAttribute('href') || '';
@@ -291,14 +305,16 @@
       try { relative = decodeURIComponent(url.pathname.slice(root.pathname.length)); }
       catch (_) { continue; }
       if (!/^[\w./-]+\.pdf$/i.test(relative) ||
-          relative.startsWith('../') || relative.includes('/../')) continue;
+          relative.startsWith('../') || relative.includes('/../') ||
+          relative.startsWith('editions/apparatus/')) continue;
       pdfs.set('daruri/' + relative, relative);
     }
     for (const entry of pdfs) files.push(entry);
     // The smaller offline HTML download does not silently bundle book PDFs.
     // PDF navigation maps have no use without their corresponding PDFs.
     const selected=mode==='html'?
-      files.filter(([name])=>!/\.pdf(?:\.(?:metadata\.)?json)?$/i.test(name)):files;
+      files.filter(([name])=>!/\.pdf(?:\.(?:metadata\.)?json)?$/i.test(name)&&
+        !name.startsWith('daruri/dynamic-pdf/packets/')):files;
     return {files:selected,pdfNames:mode==='html'?[]:[...pdfs.keys()]};
   }
 
