@@ -124,6 +124,20 @@ $('make').addEventListener('click',async()=>{
      errorCallback:message=>{if(!settled){settled=true;reject(Error('Vivliostyle layout failed: '+message));}},
      printCallback:iframeWindow=>{
       frame=iframeWindow.frameElement;
+      const ar=iframeWindow.document.querySelector('.arb,.arabic,.recorded');
+      const ff=ar?iframeWindow.getComputedStyle(ar).fontFamily:null;
+      const loadedFonts=[...iframeWindow.document.fonts].map(x=>({
+       family:x.family,status:x.status,weight:x.weight
+      })).slice(0,20);
+      const diagnostics={
+       computedArabicFont:ff,
+       loadedFonts,
+       fontAvailabilityNaskh:iframeWindow.document.fonts.check('13px "Noto Naskh Arabic"'),
+       styleSheets:iframeWindow.document.styleSheets.length,
+       absNaskhFont:'/daruri/build/fonts/NotoNaskhArabic-Regular.ttf'
+      };
+      window.__pdfProof.fontDiagnostics=diagnostics;
+      console.info('DARURI_VIVLIO_FONTS',JSON.stringify(diagnostics));
       window.__pdfProof.stage='emitting';
       $('status').textContent='Pagination complete; writing selectable PDF bytes...';
       void (async()=>{
