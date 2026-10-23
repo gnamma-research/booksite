@@ -45,6 +45,10 @@ let server,browser,context;
   assert.equal(status.source_line_count>=414,true);
   assert.equal(status.pages,Math.ceil(status.source_line_count/12));
   assert.equal(status.one_exact_unicode_cid_per_line,true);
+  assert.equal(status.actualtext_on_original_single_CID,true,
+    'Each full original line must be tagged on its own single text operation');
+  assert.equal(status.toUnicode_fallback_max_utf16be_bytes,60,
+    'Long native glyph mappings must not exceed the 64-byte compatibility limit');
   assert.equal(status.vector_math_brackets_drawn,24,'Twenty-four authentic mathematical brackets must be painted');
   assert.equal(status.vector_math_left,12);
   assert.equal(status.vector_math_right,12);
