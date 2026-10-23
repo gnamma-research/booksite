@@ -35,7 +35,10 @@ def command(args, timeout: int = 35):
                            timeout=timeout, check=False)
         return {
             "exit_code": r.returncode,
-            "stdout": r.stdout.decode("utf-8", "replace")[:3000],
+            # Keep the FULL extracted PDF text until measuring all 414
+            # passages. A previous diagnostic truncated at 3000 chars and
+            # misreported otherwise-present source text as missing.
+            "stdout": r.stdout.decode("utf-8", "replace"),
             "stderr": r.stderr.decode("utf-8", "replace")[:3000],
             "stdout_bytes": len(r.stdout),
             "stderr_bytes": len(r.stderr),
