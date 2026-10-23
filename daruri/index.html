@@ -2297,6 +2297,7 @@ body:not(.reading-active) .reading-return-bar{
 <link rel="stylesheet" href="reading-navigation-history.css?v=20261023-history-help1"/>
 <noscript><link rel="stylesheet" href="source-note-ui.css?v=20261021-fallback-quran1"></noscript>
 <link rel="stylesheet" href="quran-context-ui.css?v=20261022-qcontext1"/>
+<link rel="stylesheet" href="general-section-picker.css?v=20261023-hierarchy1"/>
 </head>
 <body><noscript><section aria-label="Complete Darūrī reader" id="fallbackReader"><input class="fb-drawer-check" id="fb-open-left" type="checkbox"/><details class="fb-settings" id="fb-settings"><summary><svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6M15 14v6"></path></svg><span class="fb-settings-open">Display</span><span class="fb-settings-close">Close ×</span></summary><div aria-label="Display and reading tools" class="fb-settings-card" role="group"><h2>Type &amp; appearance</h2>
 <div class="gn-setting-row"><label for="fb-page-style-select">Page style</label><select id="fb-page-style-select"><option value="quiet" selected="">Quiet reading</option><option value="book">Book page</option><option value="structured">Structured page</option></select></div>
@@ -3831,10 +3832,10 @@ body:not(.reading-active) .reading-return-bar{
 <div aria-atomic="true" aria-live="polite" class="sr-only" id="readingStatus" role="status"></div>
 <div class="overlay" hidden="" id="jumpOverlay" role="presentation">
 <div aria-labelledby="jumpTitle" aria-modal="true" class="jump-dialog" role="dialog">
-<div class="jump-heading"><div><span class="micro-label">MOVE THROUGH THE WORK</span><h2 id="jumpTitle" class="sr-only">Section navigator</h2><p id="jumpLocation"></p></div><button aria-label="Close section navigator" class="icon-btn" id="jumpClose" type="button"><svg aria-hidden="true" class="icon"><use href="#i-close"></use></svg></button></div>
+<div class="jump-heading"><div><span class="micro-label">GO TO PASSAGE</span><h2 id="jumpTitle" class="sr-only">Section navigator</h2><p id="jumpLocation"></p></div><button aria-label="Close section navigator" class="icon-btn" id="jumpClose" type="button"><svg aria-hidden="true" class="icon"><use href="#i-close"></use></svg></button></div>
 <div class="gn-history-picker-controls" id="jumpHistoryControls" hidden></div>
-<label class="jump-search"><svg aria-hidden="true" class="icon"><use href="#i-search"></use></svg><span class="sr-only">Section number, title or concept</span><input autocomplete="off" id="jumpSearch" placeholder="Find a section title, Arabic heading or number…" spellcheck="false" type="search"/></label>
-<details class="gn-history-recent" id="jumpRecent" hidden><summary>Recent locations<span data-history-count></span></summary><div class="gn-history-recent-list" id="jumpRecentList"></div><p class="micro-desc" style="padding:0 12px">Recent locations are included in your Reading Desk JSON backup, but are not bookmarks.</p><button type="button" data-history-clear class="gn-history-clear">Clear reading history</button></details>
+<label class="jump-search"><svg aria-hidden="true" class="icon"><use href="#i-search"></use></svg><span class="sr-only">Section number, title or concept</span><input autocomplete="off" id="jumpSearch" placeholder="Find a part, chapter, title or §number…" spellcheck="false" type="search"/></label>
+<details class="gn-history-recent" id="jumpRecent" hidden><summary>Recent locations<span data-history-count></span></summary><div class="gn-history-recent-list" id="jumpRecentList"></div><p class="micro-desc" style="padding:0 12px">Recent locations are saved on this device. They are separate from bookmarks.</p><button type="button" data-history-clear class="gn-history-clear">Clear reading history</button></details>
 <div aria-label="Choose a part" class="jump-parts" id="jumpParts" role="group"></div>
 <div class="jump-summary" id="jumpResultCount" role="status"></div>
 <div class="jump-results" id="jumpResults"></div>
@@ -3846,7 +3847,7 @@ body:not(.reading-active) .reading-return-bar{
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
 <script src="study-guide-data.js?v=20261021-study-path1"></script>
-<script src="study-guide.js?v=20261021-study-path1"></script><script src="editions.js?v=20261023-personal-icons"></script><script src="editions-icons.js?v=20261023-personal-icons"></script><script src="editions-selector.js?v=20261023-apple-pdf-view1"></script><script src="bookmark-ui.js?v=20261023-personal-icons"></script><script src="google-drive-config.js?v=20261023-transfer-release2"></script><script src="backup-transfer.js?v=20261023-transfer-release2"></script><script src="reading-desk.js?v=20261023-transfer-release2"></script><script src="reading-mode-controls.js?v=20261023-dock-gesture-counts2"></script><script src="reading-navigation-history.js?v=20261023-history-help2"></script><script src="reading-navigation-bridge.js?v=20261023-history-help2"></script><script>
+<script src="study-guide.js?v=20261021-study-path1"></script><script src="editions.js?v=20261023-personal-icons"></script><script src="editions-icons.js?v=20261023-personal-icons"></script><script src="editions-selector.js?v=20261023-apple-pdf-view1"></script><script src="bookmark-ui.js?v=20261023-personal-icons"></script><script src="google-drive-config.js?v=20261023-transfer-release2"></script><script src="backup-transfer.js?v=20261023-transfer-release2"></script><script src="reading-desk.js?v=20261023-transfer-release2"></script><script src="reading-mode-controls.js?v=20261023-dock-gesture-counts2"></script><script src="reading-navigation-history.js?v=20261023-history-help2"></script><script src="reading-navigation-bridge.js?v=20261023-history-help2"></script><script src="general-section-picker.js?v=20261023-hierarchy1"></script><script>
 (() => {
 'use strict';
 const BOOK = JSON.parse(document.getElementById('editionData').textContent);
@@ -5935,6 +5936,9 @@ const readingHistory=window.GnammaNavigationBridge?.install({
 });
 const gnOriginalOpenJump=openJump;
 openJump=function(){gnOriginalOpenJump();readingHistory?.renderPicker();};
+const generalSectionPicker=window.GnammaSectionPicker?.install({book:BOOK,current:()=>state.n,originalPage:origPage,openFullContents:()=>{state.contentsMode='original';navigate('contents');}});
+const historyAwareOpenJump=openJump;
+openJump=function(){historyAwareOpenJump();generalSectionPicker?.open();};
 const priorBookmarks=renderBookmarks;
 renderBookmarks=function(){if(rd){rd.render();return;}priorBookmarks();};
 const priorBookmarkToggle=toggleBookmark;
@@ -5950,7 +5954,7 @@ gnShowLayer=function(...args){priorScholarLayer(...args);rd?.decorate();};
 
 window.DaruriReadingStyles?.init({value:state.pageStyle,preserve:preserveVisiblePassage,onChange:value=>{state.pageStyle=value;save();}});
 applyParallelOrder();applyArabicFont();applyEnglishFont();bind();bindReaderEnhancements();applyTheme();updateScale();syncRoute();bindResponsiveRepairs();takeDictionaryReturn();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261023-dock-gesture-counts2').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261023-hierarchy1').catch(()=>{});
 })();
 
 </script><link rel="stylesheet" href="gnamma-search.css?v=20261023-qiyas-forms1"><link rel="stylesheet" href="gnamma-scholarly.css?v=20261022-scholarly1"><link rel="stylesheet" href="gnamma-word-context.css?v=20261023-qiyas-forms1"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-scholarly.js?v=20261022-scholarly1"></script><script src="gnamma-morphology.js?v=20261023-mobile-wordforms-focus1"></script><script src="gnamma-search.js?v=20261023-mobile-wordforms-focus1"></script><script src="gnamma-word-context.js?v=20261023-qiyas-forms1"></script><script src="quran-context-ui.js?v=20261022-qcontext1"></script></body>
