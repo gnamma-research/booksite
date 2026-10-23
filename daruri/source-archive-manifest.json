@@ -1,0 +1,13 @@
+{
+  "schema": "gnamma-daruri-source-archive-v1",
+  "status": "withheld",
+  "file": "source/Daruri_Portable_Scholarly_Source.zip",
+  "version": null,
+  "source_commit": null,
+  "sha256": null,
+  "size_bytes": null,
+  "editorial_review": "pending",
+  "rights_review": "pending",
+  "shamela_import_verified": false,
+  "note": "No source ZIP is linked until approved provenance/rights, editorial verification, matching checksums and a real hosted file are confirmed. The offline HTML reader is a different download."
+}
