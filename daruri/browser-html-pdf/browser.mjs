@@ -1,7 +1,11 @@
 /* NONRELEASE. All source and PDF page generation runs in an ordinary browser.
  * The PDF writer is vivliostyle-pdf / @pdfme/pdf-lib; no print dialog/CDP.
  */
-import {printHTML,emitPdfFromVivliostyleWindow} from 'vivliostyle-pdf';
+// Independent emitter A/B: preserve the same Vivliostyle CSS pagination,
+// but replace only the DOM-to-PDF writer with pages-to-pdf@0.4.1.
+// Do not confuse a repaired emitter with improved pagination/footnote policy.
+import {printHTML} from 'vivliostyle-pdf';
+import {emitPdfFromWindow} from 'pages-to-pdf';
 const el=id=>document.getElementById(id);
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const status=(value,detail={})=>{el('status').textContent=value;window.__daruriQA={...(window.__daruriQA||{}),...detail,status:value};};
@@ -89,7 +93,15 @@ async function render(mode){
       window.__daruriQA={...(window.__daruriQA||{}),paginated_dom:domState};
       if(!found)throw Error('Vivliostyle callback exposed no PDF page containers: '+JSON.stringify(domState));
       status('Writing vector PDF bytes locally…',{phase:'writing',mode,paginated_pages:found});
-      const bytes=await emitPdfFromVivliostyleWindow(w,{
+      const bytes=await emitPdfFromWindow(w,{
+       backend:{
+        pageSelector:'[data-vivliostyle-page-container]',
+        unhidePagesSelector:'[data-vivliostyle-page-container]',
+        filterEmptyPages:false,
+        scaleRunsToMeasuredWidth:true,
+        handleHyphenation:true,
+        defaultCreator:'Gnamma browser-only A/B emitter research'
+       },
        baseUrl:new URL('/daruri/browser-html-pdf/runtime/',location.origin).href,
        sourceHtml,metadata:{title:'Daruri browser HTML-PDF research',author:'Gnamma Research'},
        onProgress:message=>{window.__daruriQA={...(window.__daruriQA||{}),progress:String(message).slice(0,100)};}
@@ -111,7 +123,7 @@ async function render(mode){
   const qa={phase:'done',mode,bytes:bytes.length,elapsed_ms:Math.round(performance.now()-started),
     memory_before:memoryBefore,memory_after:performance.memory?.usedJSHeapSize??null,
     source_sha256:fixture.source_sha256,authorial_sections:258,authorial_passages:414,
-    engine:'vivliostyle-pdf@0.3.3; @pdfme/pdf-lib',no_server_pdf_generation:true,
+    engine:'@vivliostyle/print via vivliostyle-pdf; pages-to-pdf@0.4.1 DOM emitter',no_server_pdf_generation:true,
     no_print_dialog:true,no_cdp_print_to_pdf:true,no_prebuilt_pdf_inputs:true,not_release_approved:true};
   status('PDF generated entirely in this browser. Native Arabic and footnote QA still required.',qa);
   return qa;
