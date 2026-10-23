@@ -15,7 +15,7 @@ const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const moduleCode=fs.readFileSync(path.join(root,'reading-styles.js'),'utf8');
 const styles=fs.readFileSync(path.join(root,'reading-styles.css'),'utf8');
 const menuCSS=fs.readFileSync(path.join(root,'compact-menu.css'),'utf8');
-const readerStart=html.indexOf("<script>\\n(() => {\\n'use strict';\\nconst BOOK");
+const readerStart=html.indexOf("<script>\n(() => {\n'use strict';\nconst BOOK");
 assert.ok(readerStart>=0,'Canonical reader JavaScript exists');
 const readerEnd=html.indexOf('</script>',readerStart);
 assert.ok(readerEnd>readerStart,'Canonical reader closing tag exists');
