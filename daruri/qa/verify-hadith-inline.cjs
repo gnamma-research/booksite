@@ -46,7 +46,7 @@ async function test(){
   assert.equal(win.GnammaHadithInlineQA.anchors,51);
   const markers=[...doc.querySelectorAll('.gn-hadith-inline-marker')];
   assert.equal(markers.length,102,'Each of the 51 exact phrases must have an Arabic and English H symbol');
-  assert(markers.every(a=>a.textContent==='H'&&!a.hasAttribute('data-gn-notes-open')&&a.href.endsWith('#notes')));
+  assert(markers.every(a=>a.textContent==='H'&&!a.hasAttribute('data-gn-notes-open')&&a.dataset.noteTarget===a.dataset.gnHadithInline&&a.href.endsWith('#note-'+a.dataset.gnHadithInline)),'H symbols must target their source notes without impersonating Notes button');
   for(const note of Object.values(hadith)){
     const section=String(note.section);
     const group=doc.querySelector('[data-reading-section="'+section+'"]');
@@ -62,17 +62,25 @@ async function test(){
   for(let i=0;i<4;i++)await tick();
   assert.equal(doc.querySelectorAll('.gn-hadith-inline-marker').length,102,'Redraw duplicates H links');
   const first=doc.querySelector('[data-reading-section="31"] .passage-ar .gn-hadith-inline-marker');
+  const opener=doc.createElement('a');opener.dataset.gnNotesOpen='';opener.textContent='Notes (4)';doc.body.prepend(opener);
+  let actualTarget=null;
   doc.addEventListener('click',event=>{
-    if(!event.target.closest('[data-gn-notes-open]'))return;
+    const source=event.target.closest('[data-note-target]');
+    if(!source)return;
+    actualTarget=source.dataset.noteTarget;
     const layer=doc.createElement('div');layer.id='gn-scholar-layer';
-    layer.innerHTML='<section class="gn-note-entry" data-note-id="HAD-R031">Hadith source note</section>';
+    layer.innerHTML='<button data-gn-close>Return to reading</button><section class="gn-note-entry" data-note-id="HAD-R031">Hadith source note</section>';
     doc.body.append(layer);
+    layer.querySelector('[data-gn-close]').focus();
   });
-  first.click();for(let i=0;i<4;i++)await tick();
+  first.focus();first.click();for(let i=0;i<4;i++)await tick();
   const note=doc.querySelector('#gn-scholar-layer [data-note-id="HAD-R031"]');
-  assert.equal(doc.activeElement,note,'H marker should return focus to its own source note');
-  assert(note.classList.contains('gn-hadith-inline-selected'));
+  assert.equal(actualTarget,'HAD-R031','Click opened the exact Hadith source record');
+  assert(note,'Inline marker opens its own source note');
+  assert.equal(doc.activeElement.dataset.gnClose,'','Popup focuses its close control');
+  assert.equal(opener.textContent,'Notes (4)','The main Notes control must not be renamed or hijacked');
+  assert(!first.hasAttribute('data-gn-notes-open'),'The H marker must not masquerade as the Notes trigger');
   dom.window.close();
-  console.log('PASS: 33 Hadith note sections; 51 exact AR/EN phrase pairs; 102 H markers, no duplicates, working note focus and offline assets.');
+  console.log('PASS: 33 Hadith note sections; 51 exact AR/EN phrase pairs; 102 H markers, no duplicates, direct source routing, clean Notes trigger and offline assets.');
 }
 test().catch(err=>{console.error(err);process.exitCode=1;});
