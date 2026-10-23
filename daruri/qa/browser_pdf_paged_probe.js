@@ -29,6 +29,18 @@ const css=[
 let book=null;
 window.__pdfProof={state:"idle",engine:"paginate-for-print"};
 function bodyHtml(mode){
+ if(mode==="hello"){
+  return '<!doctype html><html lang="en"><head><meta charset="utf-8">'+
+   '<title>One-page HTML/PDF emitter self-test</title><style>@page{size:A4;margin:15mm}body{font:15px Arial,sans-serif}</style></head>'+
+   '<body><h1>Hello, selectable PDF</h1><p>One document paragraph, no footnotes or fonts.</p></body></html>';
+ }
+ if(mode==="arabic-mini"){
+  return '<!doctype html><html lang="en"><head><meta charset="utf-8">'+
+   '<title>Arabic HTML/PDF emitter self-test</title><style>'+
+   css.replace(/__BASE__/g,location.origin)+'</style></head>'+
+   '<body><h1>Arabic source extraction</h1><p class="arb" lang="ar" dir="rtl">وَفِي أَلْفَاظِهِ</p>'+
+   '<p class="eng">One Arabic phrase and one English sentence.</p></body></html>';
+ }
  const list=mode==="excerpt"?book.excerpt:book.complete,fragments=[];
  fragments.push('<header><h1>Al-Daruri — native browser paged-media test</h1>',
  '<p>Experimental. Arabic and translation come from the canonical Gnamma source.</p></header>');
