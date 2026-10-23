@@ -14,6 +14,8 @@ The meaningful unit of usability is an **end-to-end scholarly task**. A reader m
 
 This is more demanding than “fewer clicks,” “minimal design,” or “progressive disclosure.” It entails high task effectiveness, low overhead, epistemic correctness, durable user ownership, and the ability to resume an unfinished thought. ISO 9241-11 defines usability relative to specified users, tasks and context—not as an inherent property of software.
 
+The strongest historical warning against assuming screens beat books comes from O’Hara and Sellen’s CHI 1997 comparison: paper supported rapid navigation, flexible spatial arrangement and annotation during reading. That study used 1990s software and hardware; it supplies a work-analysis hypothesis, **not** evidence that present-day Gnamma cannot do better. We should deliberately compare its tasks against contemporary paper, desktop and phone workflows.
+
 The likely user groups differ in needs: (a) trained Arabic readers and researchers, (b) English-dominant academics working with parallel Arabic, (c) advanced students learning research methods, (d) occasional readers, and (e) researchers with accessibility or mobile-only constraints. Do not assume one layout is optimal for all, or that novice-friendly controls can replace advanced research capabilities.
 
 ## 2. Research lenses and what each contributes
@@ -186,5 +188,6 @@ Primary research, selected because each addresses a different explanatory level:
 14. **W3C, WCAG 2.2** — focus visibility, target size, accessibility and operability: https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/
 15. **W3C, ARIA Authoring Practices Guide** — accessible disclosure and dialog patterns: https://www.w3.org/WAI/ARIA/apg/
 16. **Nielsen Norman Group, Progressive Disclosure** — useful for secondary controls, but not a substitute for task design: https://www.nngroup.com/articles/progressive-disclosure/
+17. **O’Hara & Sellen (1997), A Comparison of Reading Paper and On-Line Documents** — annotation, navigation and spatial layout advantages to test against modern digital workflows: https://www.microsoft.com/en-us/research/publication/a-comparison-of-reading-on-line-and-paper-documents/
 
 **Evidence and inference rule:** cited research provides *design explanations* and hypotheses, not proof that a particular Gnamma change improves scholarship. Repository inspection supports what the code is intended to do. Actual performance and comprehension claims must come from defined observations on a specified user group and task.
