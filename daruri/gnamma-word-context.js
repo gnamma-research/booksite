@@ -4,7 +4,7 @@
  *
  * PRECEDENCE: explicitly interactive anchors keep their existing action;
  * a plain Arabic word opens this hub; text selections retain Reading Desk
- * actions plus an opt-in Explore action. Personal material never leaves localStorage.
+ * actions unchanged. Personal material never leaves localStorage.
  */
 (()=>{
 'use strict';
@@ -291,16 +291,8 @@ function installDictionaryActions(){
    '<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(t)+'">Root family</button>';
  container.append(button);
 }
-function augmentSelectionBar(){
- const bar=$('#gn-rd-selection-bar');
- if(!bar||bar.hidden||bar.querySelector('[data-gnw-selection]'))return;
- const selected=findSelectedWord();if(!selected)return;
- const b=document.createElement('button');b.type='button';b.dataset.gnwSelection='1';
- b.className='gn-rd-tool-icon gnw-select-word';b.textContent='Explore word';b.title='Dictionary, notes and root/lemma search';
- bar.append(b);
-}
 document.addEventListener('click',e=>{
- const btn=e.target?.closest?.('[data-gnw-close],[data-gnw-search],[data-gnw-term],[data-gnw-note],[data-gnw-desk],[data-gnw-selection]');
+ const btn=e.target?.closest?.('[data-gnw-close],[data-gnw-search],[data-gnw-term],[data-gnw-note],[data-gnw-desk]');
  if(btn){
   if(btn.hasAttribute('data-gnw-close')){e.preventDefault();close();return;}
   if(btn.hasAttribute('data-gnw-search')){
@@ -326,11 +318,6 @@ document.addEventListener('click',e=>{
    related?.click();return;
   }
   if(btn.hasAttribute('data-gnw-desk')){e.preventDefault();close();$('[data-route=bookmarks]')?.click();return;}
-  if(btn.hasAttribute('data-gnw-selection')){
-   e.preventDefault();e.stopPropagation();const current=findSelectedWord();
-   if(current)openWord(current.word,current.anchor,current.grid,e.target);
-   return;
-  }
  }
  const dict=e.target?.closest?.('[data-term]');
  if(dict){lastDictionary={term:dict.dataset.term};queueMicrotask(installDictionaryActions);return;}
@@ -356,14 +343,8 @@ document.addEventListener('keydown',e=>{
   else if(!e.shiftKey&&document.activeElement===focus.at(-1)){e.preventDefault();focus[0].focus();}
  }
 });
-document.addEventListener('selectionchange',()=>{
- // Existing Reading Desk toolbar is responsible for save actions. Do not
- // replace it; add an optional word exploration action when it appears.
- queueMicrotask(augmentSelectionBar);
-});
 new MutationObserver(()=>{
  if(!rendering)installDictionaryActions();
- augmentSelectionBar();
 }).observe(document.body,{subtree:true,childList:true,attributes:false});
 window.GnammaWordContext=Object.freeze({openWord,close,findSelectedWord,locateOccurrence:passageOccurrence});
 })();
