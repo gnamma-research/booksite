@@ -359,7 +359,7 @@ body.focus-mode #mainContent .gn-note-en-section-list {
  #readerDock .gn-dock-summary-fallback{display:inline}
 }
 
-/* Readable personal saved-state key for all dock palettes and viewport sizes. */
+/* Bookmark icon + divider: a compact visual key for personal saved counts. */
 #readerDock .gn-dock-private-status{
   gap:clamp(3px,.8vw,8px);
 }
@@ -371,7 +371,7 @@ body.focus-mode #mainContent .gn-note-en-section-list {
   white-space:nowrap;
 }
 #readerDock .gn-dock-saved-prefix>.gn-bm-ribbon{
-  width:14px!important;height:14px!important;color:var(--accent);
+  width:17px!important;height:17px!important;color:var(--accent);
 }
 #readerDock .gn-dock-private-status .gn-dock-code{
   min-width:9px;
@@ -393,9 +393,9 @@ body.focus-mode #mainContent .gn-note-en-section-list {
    gap:1px;
  }
 }
-/* When the count of distinct saved categories exceeds the available width,
-   retain "Saved" and the number of objects rather than squeezing tiny text.
-   The complete list still opens from this single large touch target. */
+/* When saved categories exceed the available width, retain the checked
+   bookmark and total rather than squeezing tiny labels. The list still opens
+   from one large touch target. */
 @container (max-width:330px){
  #readerDock .gn-dock-summary:is([data-gn-category-count="7"],[data-gn-category-count="8"]) .gn-dock-summary-symbols{
    display:none;
