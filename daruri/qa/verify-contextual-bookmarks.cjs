@@ -66,6 +66,9 @@ async function exercise(engine,mobile){
    await page.locator('#detailTitle').waitFor({timeout:20000});
    assert.match(await page.locator('#detailTitle').innerText(),/mafhūm/i,
     name+': a dictionary bookmark must open the dictionary entry');
+   await page.locator('#detailContent [data-rd="attach-bookmark"]').waitFor();
+   assert.equal(await page.locator('#detailContent [data-rd="attach-bookmark"]').count(),1,
+    name+': expanded lexical entry lost its bookmark action');
    assert.equal(await page.locator('#gn-dock-saved-sheet').count(),0);
   }else{
    assert.equal(await items.locator('[data-gn-mark="dictionary"] .gn-dock-count').innerText(),'1');

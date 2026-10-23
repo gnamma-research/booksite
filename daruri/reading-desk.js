@@ -822,10 +822,26 @@ function create(ctx){
     const app=dialog.querySelector('[data-gn-application]');
     if(app&&!app.dataset.rdDecorated){app.dataset.rdDecorated='1';app.append(actions({kind:'application',app:app.dataset.gnApplication},true));}
     const note=dialog.querySelector('[data-note-in-section]')?.dataset.noteInSection;
-    if(note&&!dialog.dataset.rdNoteId){dialog.dataset.rdNoteId=note;const n=ctx.notes.get(note);if(n)dialog.append(actions({kind:'footnote',section:String(n.n),noteId:note},true));}
+    // detailContent is reused: innerHTML is replaced but data attributes persist.
+    // A source-note card must receive the bookmark action on every opening,
+    // including when switching directly from one note to another.
+    if(note&&(dialog.dataset.rdNoteId!==note||
+       !dialog.querySelector(':scope > .gn-rd-attach-actions [data-rd="attach-bookmark"]'))){
+     dialog.querySelector(':scope > .gn-rd-attach-actions')?.remove();
+     dialog.dataset.rdNoteId=note;
+     const n=ctx.notes.get(note);
+     if(n)dialog.append(actions({kind:'footnote',section:String(n.n),noteId:note},true));
+    }
     const eyebrow=$('#detailEyebrow')?.textContent||'';
     const term=dialog.querySelector('#detailTitle')?.textContent?.trim();
-    if((eyebrow.includes('DICTIONARY ENTRY')||eyebrow.includes('LEXICAL & TECHNICAL REFERENCE'))&&term&&!dialog.dataset.rdTerm){dialog.dataset.rdTerm=term;dialog.append(actions({kind:'dictionary',term},true));}
+    const dictionaryCard=eyebrow.includes('DICTIONARY ENTRY')||
+     eyebrow.includes('LEXICAL & TECHNICAL REFERENCE');
+    if(dictionaryCard&&term&&(dialog.dataset.rdTerm!==term||
+       !dialog.querySelector(':scope > .gn-rd-attach-actions [data-rd="attach-bookmark"]'))){
+     dialog.querySelector(':scope > .gn-rd-attach-actions')?.remove();
+     dialog.dataset.rdTerm=term;
+     dialog.append(actions({kind:'dictionary',term},true));
+    }
    }else if(dialog){delete dialog.dataset.rdNoteId;delete dialog.dataset.rdTerm;}
    $('#gn-scholar-layer')?.querySelectorAll('[data-note-id]').forEach(el=>{
     if(el.dataset.rdDecorated)return;const note=ctx.notes.get(el.dataset.noteId);if(!note)return;

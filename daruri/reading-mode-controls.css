@@ -354,7 +354,7 @@ body.focus-mode #mainContent .gn-note-en-section-list {
  .gn-dock-saved-sheet{max-height:min(63dvh,440px);border-radius:16px}
  .gn-dock-sheet-item{min-height:50px;padding:10px 8px}
 }
-@container (max-width:240px){
+@container (max-width:285px){
  #readerDock .gn-dock-summary-symbols{display:none}
  #readerDock .gn-dock-summary-fallback{display:inline}
 }
