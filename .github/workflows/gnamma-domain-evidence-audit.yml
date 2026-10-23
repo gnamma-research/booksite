@@ -6,6 +6,8 @@ on:
       - experiment/gnamma-dictionary-evidence-20261023
     paths:
       - '.github/workflows/gnamma-domain-evidence-audit.yml'
+      - 'daruri/build/propose_dictionary_morphology.py'
+      - 'daruri/qa/test-dictionary-morphology.py'
 permissions:
   contents: read
   actions: read
