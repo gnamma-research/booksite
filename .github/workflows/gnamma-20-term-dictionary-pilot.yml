@@ -6,6 +6,7 @@ on:
       - experiment/gnamma-20-term-trial-20261023
     paths:
       - '.github/workflows/gnamma-20-term-dictionary-pilot.yml'
+      - 'daruri/build/pilot_20_technical_terms.py'
 permissions:
   contents: read
   actions: read
