@@ -1,0 +1,104 @@
+name: Daruri full-source HTML browser print engine: A4 Arabic, PDF and footnotes
+on:
+  push:
+    branches: [research/daruri-browser-html-to-pdf-20261023]
+    paths:
+      - 'daruri/dynamic-pdf/browser_html_fixture.py'
+      - 'daruri/qa/browser_print_study.cjs'
+      - 'daruri/qa/audit_chromium_html_print.py'
+      - '.github/workflows/daruri-browser-html-print-research.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-real-browser-html-print-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  actual-browser-typesetter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - browser: chromium
+            index: 0
+            variant: reading
+          - browser: chromium
+            index: 10
+            variant: study
+          - browser: webkit
+            index: 0
+            variant: reading
+          - browser: webkit
+            index: 10
+            variant: study
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install canonical source renderer and browser automation
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libcairo2 libpango-1.0-0 libharfbuzz0b libfribidi0
+          python -m pip install -q -r daruri/build/requirements.txt 'PyMuPDF==1.26.7' 'pypdf==5.9.0' 'numpy>=1.26' 'scipy>=1.13'
+          npm install --no-save --no-package-lock --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1
+          cd daruri/qa
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Type exact canonical book HTML through browser's own CSS/print engine
+        env:
+          GN_BROWSER_ENGINE: ${{ matrix.browser }}
+          GN_BROWSER_HTML_INDEX: ${{ matrix.index }}
+          GN_BROWSER_HTML_OUT: /tmp/daruri-browser-html-${{ matrix.browser }}-${{ matrix.variant }}
+        run: |
+          node daruri/qa/browser_print_study.cjs
+      - name: Strictly assess native Chromium PDF text order, Arabic and Study footnotes
+        if: matrix.browser == 'chromium'
+        run: |
+          python - <<'PY'
+          import json,sys
+          from pathlib import Path
+          j=json.loads(Path('daruri/editions/manifest.json').read_text())
+          print('NATIVE_APPROVED_A4_RESEARCH_SOURCE',j['files'][${{ matrix.index }}]['file'])
+          PY
+          source=$(python -c 'import json;print(json.load(open("daruri/editions/manifest.json"))[${{ matrix.index }}]["file"])' 2>/dev/null || python -c 'import json;print(json.load(open("daruri/editions/manifest.json"))["files"][${{ matrix.index }}]["file"])')
+          python daruri/qa/audit_chromium_html_print.py \
+            --candidate /tmp/daruri-browser-html-chromium-${{ matrix.variant }}/chromium-browser-generated-NONRELEASE.pdf \
+            --approved daruri/editions/$source \
+            --output /tmp/daruri-browser-html-chromium-${{ matrix.variant }}/chromium-vs-approved.json \
+            ${{ matrix.variant == 'study' && '--study' || '' }}
+      - name: Record results; never imply privileged Chrome protocol is normal website JS
+        run: |
+          python - <<'PY'
+          import pathlib,json
+          root=pathlib.Path('/tmp/daruri-browser-html-${{ matrix.browser }}-${{ matrix.variant }}')
+          j=json.loads((root/'browser-print-research.json').read_text())
+          assert j['success'],j
+          assert j['css_features']['original_section_destinations']==258
+          if '${{ matrix.browser }}'=='chromium':
+            assert j['pdf_magic']=='%PDF-' and j['byte_length']>10000
+          else:
+            assert not j['webkit_page_pdf_unexpectedly_available']
+          print('BROWSER_FULL_HTML_PRINT_PROOF',j['browser_renderer'],j['source_index'],
+                {'print_pdf_ms':j.get('print_pdf_ms'),
+                 'printed_pdf_bytes':j.get('byte_length'),
+                 'css_footnote_support':j['css_features']['native_float_footnote'],
+                 'ordinary_website_can_get_print_pdf_bytes':False})
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Daruri-browser-HTML-printed-${{ matrix.browser }}-${{ matrix.variant }}-NONRELEASE
+          path: |
+            /tmp/daruri-browser-html-${{ matrix.browser }}-${{ matrix.variant }}/browser-print-research.json
+            /tmp/daruri-browser-html-${{ matrix.browser }}-${{ matrix.variant }}/chromium-vs-approved.json
+          if-no-files-found: warn
+          retention-days: 14
