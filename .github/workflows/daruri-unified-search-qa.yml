@@ -13,7 +13,19 @@ on:
       - 'daruri/morph-daruri-v1.json'
       - 'daruri/morph-mustasfa-v1.json'
       - 'daruri/build/build_gnamma_morph_index.py'
+      - 'daruri/build/export_morph_review.py'
       - 'daruri/qa/verify-morphology.cjs'
+      - 'daruri/qa/verify-context-index.cjs'
+      - 'daruri/qa/test-morphology-build.py'
+      - 'daruri/build/evaluate_morph_review.py'
+      - 'daruri/build/pack_morph_context.py'
+      - 'daruri/build/propose_dictionary_morphology.py'
+      - 'daruri/build/apply_reviewed_morphology.py'
+      - 'daruri/qa/test-reviewed-morphology.py'
+      - 'daruri/qa/test-dictionary-morphology.py'
+      - 'daruri/build/apply_morph_reviews.py'
+      - 'daruri/build/enrich_morph_roots.py'
+      - 'daruri/build/export_morph_review.py'
       - 'daruri/gnamma-scholarly.js'
       - 'daruri/gnamma-scholarly.css'
       - 'daruri/qa/verify-scholarly-patterns.cjs'
@@ -42,7 +54,19 @@ on:
       - 'daruri/morph-daruri-v1.json'
       - 'daruri/morph-mustasfa-v1.json'
       - 'daruri/build/build_gnamma_morph_index.py'
+      - 'daruri/build/export_morph_review.py'
       - 'daruri/qa/verify-morphology.cjs'
+      - 'daruri/qa/verify-context-index.cjs'
+      - 'daruri/qa/test-morphology-build.py'
+      - 'daruri/build/evaluate_morph_review.py'
+      - 'daruri/build/pack_morph_context.py'
+      - 'daruri/build/propose_dictionary_morphology.py'
+      - 'daruri/build/apply_reviewed_morphology.py'
+      - 'daruri/qa/test-reviewed-morphology.py'
+      - 'daruri/qa/test-dictionary-morphology.py'
+      - 'daruri/build/apply_morph_reviews.py'
+      - 'daruri/build/enrich_morph_roots.py'
+      - 'daruri/build/export_morph_review.py'
       - 'daruri/gnamma-scholarly.js'
       - 'daruri/gnamma-scholarly.css'
       - 'daruri/qa/verify-scholarly-patterns.cjs'
@@ -84,6 +108,16 @@ jobs:
           node --check daruri/gnamma-word-context.js
           node --check daruri/gnamma-search.js
           python3 -m py_compile daruri/build/build_gnamma_morph_index.py
+          python3 -m py_compile daruri/build/export_morph_review.py
+          python3 -m py_compile daruri/build/evaluate_morph_review.py
+          python3 -m py_compile daruri/build/pack_morph_context.py
+          python3 -m py_compile daruri/build/propose_dictionary_morphology.py
+          python3 daruri/qa/test-dictionary-morphology.py
+          python3 -m py_compile daruri/build/apply_reviewed_morphology.py
+          python3 daruri/qa/test-reviewed-morphology.py
+          python3 -m py_compile daruri/build/apply_morph_reviews.py
+          python3 -m py_compile daruri/build/enrich_morph_roots.py
+          python3 daruri/qa/test-morphology-build.py
       - name: Run Daruri browser search tests
         run: |
           node daruri/qa/verify-unified-search.cjs
@@ -91,3 +125,4 @@ jobs:
           node daruri/qa/verify-proximity.cjs
           node daruri/qa/verify-scholarly-patterns.cjs
           node daruri/qa/verify-morphology.cjs
+          node daruri/qa/verify-context-index.cjs
