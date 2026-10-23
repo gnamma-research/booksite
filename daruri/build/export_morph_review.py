@@ -28,24 +28,46 @@ spec.loader.exec_module(source)
 
 def sample_review_rows(index: dict, texts: dict[str, str], count: int,
                        seed: int = 23) -> list[dict[str, str]]:
-    """Deterministic sample; prefer ambiguous analyses without hiding easy tokens."""
+    """Unbiased representative token sample PLUS independent challenge examples.
+
+    Stratified challenge examples illuminate known risk; they are not silently
+    pooled with the probability sample for headline accuracy. Unlike the old
+    exporter, model omissions are eligible: missing analyses count in coverage.
+    """
     candidates = []
-    for record in index.get("records", []):
-        locator = record.get("id")
+    annotated = {row.get("id"): row for row in index.get("records", [])}
+    processed = index.get("processedIds") or list(annotated)
+    if len(set(processed)) != len(processed):
+        raise ValueError("Repeated processed paragraph ID")
+    for locator in processed:
         if locator not in texts:
-            continue
+            raise ValueError(f"Cannot sample missing canonical source paragraph {locator}")
         tokens = source.words(texts[locator])
         by_position: dict[int, list[list]] = {}
-        for value in record.get("a", []):
+        for value in annotated.get(locator, {}).get("a", []):
             if isinstance(value, list) and len(value) >= 6:
                 pos = value[0]
-                if isinstance(pos, int) and 0 <= pos < len(tokens):
-                    by_position.setdefault(pos, []).append(value)
-        for position, analyses in by_position.items():
-            token = tokens[position]
-            if any(source.fold(row[1]) != source.fold(token) for row in analyses):
-                raise ValueError(f"Token/index mismatch {locator} at {position}: {token!r}")
-            ambiguous = len(analyses) > 1 or any(a[5] == "ambiguous" for a in analyses)
+                if not isinstance(pos, int) or not 0 <= pos < len(tokens):
+                    raise ValueError(f"Token ordinal out of range at {locator}:{pos}")
+                if source.fold(value[1]) != source.fold(tokens[pos]):
+                    raise ValueError(f"Source/index mismatch at {locator}:{pos}")
+                by_position.setdefault(pos, []).append(value)
+        for position, token in enumerate(tokens):
+            analyses = by_position.get(position, [])
+            alternatives = [a for a in analyses
+                            if a[5] in {"contextual-alternative", "ambiguous"}]
+            top = [a for a in analyses
+                   if a[5] not in {"contextual-alternative", "ambiguous", "contextual-backoff"}]
+            if len(top) > 1:
+                raise ValueError(f"Multiple top candidates at {locator}:{position}")
+            if not top:
+                risk = "missing model analysis"
+            elif alternatives:
+                risk = "alternative readings"
+            elif any(x in token for x in ("حكم", "علم", "قياس", "أصل", "علة", "نص", "شرع")):
+                risk = "technical expression"
+            else:
+                risk = ""
             context = " ".join(tokens[max(0, position - 8):position + 9])
             candidates.append({
                 "work": str(index.get("work", "")),
@@ -55,10 +77,14 @@ def sample_review_rows(index: dict, texts: dict[str, str], count: int,
                 "context": context,
                 "suggested_analyses": json.dumps([
                     {"lemma": a[2], "root": a[3], "pos": a[4], "origin": a[5],
-                     "lexical_id": a[6] if len(a) >= 7 else ""}
+                     "lexical_id": a[6] if len(a) >= 7 else "",
+                     "grammar": a[7] if len(a) >= 8 else {}}
                     for a in analyses
                 ], ensure_ascii=False),
-                "ambiguous": "yes" if ambiguous else "no",
+                "ambiguous": "yes" if alternatives else "no",
+                "model_has_analysis": "yes" if top else "no",
+                "challenge_reason": risk,
+                "sample_group": "",
                 "reviewed_lemma": "",
                 "reviewed_root": "",
                 "reviewed_pos": "",
@@ -68,20 +94,32 @@ def sample_review_rows(index: dict, texts: dict[str, str], count: int,
                 "review_notes": ""
             })
     randomizer = random.Random(seed)
-    ambiguous = [x for x in candidates if x["ambiguous"] == "yes"]
-    other = [x for x in candidates if x["ambiguous"] != "yes"]
-    randomizer.shuffle(ambiguous)
-    randomizer.shuffle(other)
-    # Stratify 50:50 where possible, not all homographs and not all easy cases.
-    n_ambig = min(len(ambiguous), count // 2)
-    selection = ambiguous[:n_ambig]
-    n_other = min(len(other), count - len(selection))
-    selection += other[:n_other]
+    randomizer.shuffle(candidates)
+    # 80% of the requested set is a simple random token sample. Use this
+    # probability sample for overall accuracy. Challenge items assess failure
+    # modes separately, never artificially improving apparent accuracy.
+    n_random = min(len(candidates), max(1, (count * 4 + 4) // 5))
+    primary = candidates[:n_random]
+    for row in primary:
+        row["sample_group"] = "representative"
+    remaining = candidates[n_random:]
+    difficult = [x for x in remaining if x["challenge_reason"]]
+    randomizer.shuffle(difficult)
+    selection = primary
+    challenge = difficult[:max(0, count - len(primary))]
+    for row in challenge:
+        row["sample_group"] = "challenge"
+    selection += challenge
     if len(selection) < count:
-        selection += ambiguous[n_ambig:n_ambig + count - len(selection)]
+        for row in remaining:
+            if row["sample_group"]:
+                continue
+            row["sample_group"] = "representative"
+            selection.append(row)
+            if len(selection) >= count:
+                break
     selection.sort(key=lambda x: (x["passage_id"], int(x["token_position"])))
     return selection
-
 
 def main() -> None:
     cli = argparse.ArgumentParser()
@@ -103,7 +141,8 @@ def main() -> None:
     rows = sample_review_rows(index, texts, args.count, args.seed)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     columns = ["work", "passage_id", "token_position", "surface", "context",
-               "suggested_analyses", "ambiguous", "reviewed_lemma",
+               "suggested_analyses", "ambiguous", "model_has_analysis",
+               "challenge_reason", "sample_group", "reviewed_lemma",
                "reviewed_root", "reviewed_pos", "reviewed_lexical_id",
                "judgement", "reviewer", "review_notes"]
     with args.output.open("w", newline="", encoding="utf-8-sig") as file:
@@ -111,7 +150,8 @@ def main() -> None:
         writer.writeheader()
         writer.writerows(rows)
     print(f"{work}: exported {len(rows)} review occurrences to {args.output}")
-    print("The empty review columns are intentional; do not auto-fill ground truth.")
+    print("Review columns deliberately blank. Representative and enriched challenge "
+          "examples MUST be evaluated separately; model omissions are sampled.")
 
 
 if __name__ == "__main__":
