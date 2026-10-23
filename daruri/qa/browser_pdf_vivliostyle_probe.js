@@ -4,6 +4,7 @@
  */
 import {printHTML} from "@vivliostyle/print";
 import {emitPdfFromWindow} from "pages-to-pdf";
+import {PDFDocument as RepairPDFDocument} from "pdf-lib";
 
 // Source of the backend selectors: vivliostyle/vivliostyle-pdf@0.3.3.
 // This is an experiment, not publication approval; AGPL/LGPL licence
@@ -160,16 +161,34 @@ $('make').addEventListener('click',async()=>{
     });
    }catch(err){if(!settled){settled=true;reject(err);frame?.remove()}}
   });
-  const bytes=result instanceof Uint8Array?result:new Uint8Array(result);
-  if(bytes.length<5000||String.fromCharCode(...bytes.slice(0,5))!=='%PDF-')
+  const sourceBytes=result instanceof Uint8Array?result:new Uint8Array(result);
+  if(sourceBytes.length<5000||String.fromCharCode(...sourceBytes.slice(0,5))!=='%PDF-')
    throw Error('Paged-media engine did not return PDF bytes');
+  // Independent, in-page JS round-trip through pdf-lib. Its canonical writer
+  // emits full regular PDF objects, not compressed /ObjStm or XRef streams.
+  // On source test PDFs, a separate pypdf rewrite removes MuPDF's thousands
+  // of "unknown cid font type" errors. Determine whether this fully
+  // browser-local equivalent repairs that structural issue without relying
+  // on another prebuilt source/packet file. Do NOT claim that it fixes Arabic.
+  window.__pdfProof.stage='normalizing';
+  const normalizeStarted=performance.now();
+  const parsed=await RepairPDFDocument.load(sourceBytes,{ignoreEncryption:true});
+  const normalized=await parsed.save({useObjectStreams:false,objectsPerTick:120});
+  const bytes=normalized instanceof Uint8Array?normalized:new Uint8Array(normalized);
+  const normalized_ms=Math.round(performance.now()-normalizeStarted);
+  if(bytes.length<5000||String.fromCharCode(...bytes.slice(0,5))!=='%PDF-')
+   throw Error('Independent in-browser PDF structural writer returned no PDF bytes');
   const u=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
   const a=document.createElement('a');a.href=u;
   a.download='daruri-'+mode+'-paged-client-NONRELEASE.pdf';
   document.body.appendChild(a);a.click();a.remove();
   window.__pdfProof={state:'done',mode,engine:'vivliostyle-print+pages-to-pdf',
    sourceHtmlBytes:new TextEncoder().encode(html).length,
-   milliseconds:Math.round(performance.now()-start),bytes:bytes.length,
+   milliseconds:Math.round(performance.now()-start),
+   bytes:bytes.length,rawPdfBytes:sourceBytes.length,
+   normalizedPdfBytes:bytes.length,normalizeMs:normalized_ms,
+   pdflib_structural_roundtrip_in_browser:true,
+   object_streams_disabled_for_compatibility:true,
    memBefore:heapBefore,memAfter:performance.memory?.usedJSHeapSize??null,
    fullDocumentHtmlTypesetInBrowser:true,cssFootnotesEnabled:true};
   $('status').textContent='PDF generated in browser ('+Math.round((performance.now()-start)/1000)+'s)';
