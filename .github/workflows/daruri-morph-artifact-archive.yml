@@ -1,0 +1,39 @@
+name: Archive reviewed morphology candidates for 90 days
+on:
+  push:
+    branches:
+      - experiment/contextual-full-candidate-20261023
+    paths:
+      - '.github/workflows/daruri-morph-artifact-archive.yml'
+permissions:
+  actions: read
+  contents: read
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        work: [daruri, mustasfa]
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 39883804764
+          name: contextual-candidates-${{ matrix.work }}-3
+          github-token: ${{ github.token }}
+          path: staging/${{ matrix.work }}
+      - name: Confirm source and candidate files are present
+        env:
+          WORK: ${{ matrix.work }}
+        run: |
+          test -s "staging/$WORK/morph-$WORK-v1.json"
+          test -s "staging/$WORK/packed/morph-$WORK-search-v2.json"
+          test -s "staging/$WORK/review-$WORK.csv"
+          test -s "staging/$WORK/PROVENANCE.txt"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: archived-contextual-review-${{ matrix.work }}-${{ github.run_number }}
+          path: staging/${{ matrix.work }}/
+          retention-days: 90
+          if-no-files-found: error
