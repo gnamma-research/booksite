@@ -358,6 +358,61 @@ body.focus-mode #mainContent .gn-note-en-section-list {
  #readerDock .gn-dock-summary-symbols{display:none}
  #readerDock .gn-dock-summary-fallback{display:inline}
 }
+
+/* Readable personal saved-state key for all dock palettes and viewport sizes. */
+#readerDock .gn-dock-private-status{
+  gap:clamp(3px,.8vw,8px);
+}
+#readerDock .gn-dock-saved-prefix{
+  display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;
+  gap:3px;padding-inline-end:7px;margin-inline-end:1px;
+  border-inline-end:1px solid var(--line);
+  color:var(--text-soft);font:700 10px/1.1 var(--sans,system-ui,sans-serif);
+  white-space:nowrap;
+}
+#readerDock .gn-dock-saved-prefix>.gn-bm-ribbon{
+  width:14px!important;height:14px!important;color:var(--accent);
+}
+#readerDock .gn-dock-private-status .gn-dock-code{
+  min-width:9px;
+}
+#readerDock .gn-dock-private-status .gn-dock-mark{
+  min-width:24px;padding-inline:3px;
+}
+@media(max-width:760px){
+ #readerDock .gn-dock-summary{
+   justify-content:center;gap:5px;
+ }
+ #readerDock .gn-dock-summary .gn-dock-saved-prefix{
+   margin-inline-end:0;padding-inline-end:6px;font-size:10px;gap:3px;
+ }
+ #readerDock .gn-dock-summary .gn-dock-summary-symbols{
+   gap:clamp(4px,1.2vw,8px);
+ }
+ #readerDock .gn-dock-summary .gn-dock-summary-pair{
+   gap:1px;
+ }
+}
+/* When the count of distinct saved categories exceeds the available width,
+   retain "Saved" and the number of objects rather than squeezing tiny text.
+   The complete list still opens from this single large touch target. */
+@container (max-width:330px){
+ #readerDock .gn-dock-summary:is([data-gn-category-count="7"],[data-gn-category-count="8"]) .gn-dock-summary-symbols{
+   display:none;
+ }
+ #readerDock .gn-dock-summary:is([data-gn-category-count="7"],[data-gn-category-count="8"]) .gn-dock-summary-fallback{
+   display:inline;
+ }
+}
+@container (max-width:280px){
+ #readerDock .gn-dock-summary[data-gn-category-count="6"] .gn-dock-summary-symbols{
+   display:none;
+ }
+ #readerDock .gn-dock-summary[data-gn-category-count="6"] .gn-dock-summary-fallback{
+   display:inline;
+ }
+}
+
 @media print{
  #readerDock .gn-dock-private-status,.gn-dock-saved-sheet{display:none!important}
 }
