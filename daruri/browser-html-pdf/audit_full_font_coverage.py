@@ -20,7 +20,7 @@ def cmap(path):
 
 def main():
     book=read_book()
-    sections=[s for s in book['sections'] if 1<=s['id']<=258]
+    sections=[s for s in book['sections'] if isinstance(s.get('id'),int) and 1<=s['id']<=258]
     corpus=[(s['id'],v['vocalized']) for s in sections for v in s['segments']]
     assert len(corpus)==414
     p=ROOT/"build/fonts"
