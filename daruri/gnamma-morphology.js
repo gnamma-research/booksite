@@ -5,7 +5,8 @@
  */
 (function(global){
 'use strict';
-const SCHEMA='gnamma-morph-v1',VERSION='20261023-morphcontext2';
+const SCHEMA='gnamma-morph-v1',POST_SCHEMA='gnamma-morph-postings-v2',
+ DETAIL_SCHEMA='gnamma-morph-detail-v2',VERSION='20261023-morphcontext3';
 const data=new Map(),pending=new Map(),errors=new Map(),listeners=new Set();
 let lexicon=null,lexiconPromise=null,notice='';
 const AR=/[\u0621-\u064a]/u;
@@ -80,7 +81,53 @@ async function recognize(text){
  const l=await loadLexicon();
  return candidates(text,l);
 }
+function buildCompactIndex(raw){
+ if(raw?.schema!==POST_SCHEMA||!['daruri','mustasfa'].includes(raw.work)||
+    !Array.isArray(raw.ids)||!Number.isInteger(raw.shardSize)||
+    raw.shardSize<1||raw.shardSize>256||
+    raw.detailPrefix!=='morph-'+raw.work+'-details-v2/')
+  throw Error('Invalid compact contextual morphology index');
+ const idToOrdinal=new Map(),byLemma=new Map(),byRoot=new Map(),byForm=new Map();
+ for(let i=0;i<raw.ids.length;i++){
+  if(typeof raw.ids[i]!=='string'||idToOrdinal.has(raw.ids[i]))throw Error('Invalid source index IDs');
+  idToOrdinal.set(raw.ids[i],i);
+ }
+ for(const [field,destination] of [[raw.l,byLemma],[raw.r,byRoot]]){
+  if(!field||typeof field!=='object'||Array.isArray(field))throw Error('Missing compact postings');
+  for(const [key,posts] of Object.entries(field)){
+   if(!key||!Array.isArray(posts))continue;
+   const rows=[];
+   for(const p of posts){
+    if(!Array.isArray(p)||p.length<2||!Number.isInteger(p[0])||
+      !Number.isInteger(p[1])||p[0]<0||p[0]>=raw.ids.length||p[1]<0)
+      throw Error('Invalid compact source token coordinate');
+    rows.push({id:raw.ids[p[0]],position:p[1],surface:'',
+      lemma:destination===byLemma?key:'',root:destination===byRoot?key:'',
+      pos:'',source:p[2]===1?'reviewed':'contextual-bert',work:raw.work,
+      confidence:p[2]===1?'reviewed':'automated'});
+   }
+   destination.set(fold(key),rows);
+  }
+ }
+ if(raw.f&&typeof raw.f==='object'){
+  for(const [form,keys] of Object.entries(raw.f)){
+   if(!keys||typeof keys!=='object')continue;
+   const lemmas=Array.isArray(keys.l)?keys.l:[],roots=Array.isArray(keys.r)?keys.r:[];
+   byForm.set(fold(form),[
+     ...lemmas.map(lemma=>({lemma,root:'',source:'contextual-bert'})),
+     ...roots.map(root=>({lemma:'',root,source:'contextual-bert'}))
+   ]);
+  }
+ }
+ return {work:raw.work,byLemma,byRoot,byForm,byId:new Map(),
+  contextual:true,compact:true,annotated:raw.summary?.searchableOccurrences||0,
+  provenance:raw.annotator||'contextual MSA model, not reviewed',
+  coverage:'Contextual candidate search: unreviewed Classical Arabic; details load on demand',
+  idToOrdinal,shardSize:raw.shardSize,detailPrefix:raw.detailPrefix,
+  detailCache:new Map(),detailPending:new Map()};
+}
 function buildIndex(raw){
+ if(raw?.schema===POST_SCHEMA)return buildCompactIndex(raw);
  if(raw?.schema!==SCHEMA||!Array.isArray(raw.records))throw Error('Invalid morphological index schema');
  const byLemma=new Map(),byRoot=new Map(),byForm=new Map(),byId=new Map();
  let annotated=0,ambiguous=0;
@@ -113,7 +160,11 @@ async function ensure(work){
  if(data.has(work))return data.get(work);
  if(errors.has(work))throw Error(errors.get(work));
  if(pending.has(work))return pending.get(work);
- const path=work==='mustasfa'?'morph-mustasfa-v1.json':'morph-daruri-v1.json';
+ const fallback=work==='mustasfa'?'morph-mustasfa-v1.json':'morph-daruri-v1.json';
+ // The optional v2 index is activated ONLY by an explicit release flag.
+ // Candidate files in GitHub Actions are never loaded by public readers.
+ const candidate='morph-'+work+'-search-v2.json';
+ const path=global.GnammaContextualMorphAssets?.[work]===candidate?candidate:fallback;
  const promise=fetch(path+'?v='+VERSION,{credentials:'omit'})
   .then(r=>{if(!r.ok)throw Error('morphology index HTTP '+r.status);return r.json()})
   .then(raw=>{if(raw.work!==work)throw Error('Morphology index work mismatch');
@@ -123,11 +174,52 @@ async function ensure(work){
 }
 function status(work){return {loaded:data.has(work),loading:pending.has(work),failed:errors.get(work)||'',message:notice,
  provenance:data.get(work)?.provenance||'',coverage:data.get(work)?.coverage||''}}
+async function ensureDetail(work,id){
+ const index=await ensure(work);
+ if(!index.compact)return index;
+ const ordinal=index.idToOrdinal.get(id);
+ if(!Number.isInteger(ordinal))return null;
+ const shard=Math.floor(ordinal/index.shardSize);
+ if(index.detailCache.has(shard)){
+  const loaded=index.detailCache.get(shard);
+  index.detailCache.delete(shard);
+  index.detailCache.set(shard,loaded);
+  return loaded;
+ }
+ if(index.detailPending.has(shard))return index.detailPending.get(shard);
+ const path=index.detailPrefix+String(shard).padStart(4,'0')+'.json';
+ const promise=fetch(path+'?v='+VERSION,{credentials:'omit'})
+  .then(r=>{if(!r.ok)throw Error('Word-detail shard HTTP '+r.status);return r.json()})
+  .then(raw=>{
+   if(raw.schema!==DETAIL_SCHEMA||raw.work!==work||raw.shard!==shard||
+    !Array.isArray(raw.records))throw Error('Malformed word-detail shard');
+   const min=shard*index.shardSize,max=Math.min(index.idToOrdinal.size,min+index.shardSize);
+   for(const row of raw.records){
+    const i=index.idToOrdinal.get(row?.id);
+    if(!Number.isInteger(i)||i<min||i>=max)throw Error('Word-detail shard source mismatch');
+   }
+   const local=buildIndex({schema:SCHEMA,work,records:raw.records,
+    annotator:index.provenance,contextual:true});
+   index.detailCache.set(shard,local);
+   if(index.detailCache.size>4)index.detailCache.delete(index.detailCache.keys().next().value);
+   index.detailPending.delete(shard);
+   return local;
+  }).catch(error=>{index.detailPending.delete(shard);throw error});
+ index.detailPending.set(shard,promise);
+ return promise;
+}
 function lookup(token,work,opts={}){
  const index=data.get(work);
  if(!index)return [];
  const key=fold(token);
- const arr=index.byForm.get(key)||[];
+ let arr=[];
+ if(index.compact){
+  const ordinal=index.idToOrdinal.get(opts.id);
+  if(!Number.isInteger(ordinal))return [];
+  const local=index.detailCache.get(Math.floor(ordinal/index.shardSize));
+  if(!local)return [];
+  arr=local.byForm.get(key)||[];
+ }else arr=index.byForm.get(key)||[];
  if(!opts.id)return arr.slice(0,20);
  return arr.filter(h=>h.id===opts.id&&(opts.position==null||h.position===opts.position)).slice(0,16);
 }
@@ -205,6 +297,12 @@ function find(query,mode,corpus){
   for(const key of new Set(keys)){
    for(const h of map.get(key)||[]){
     const rec=recById.get(h.work+'\0'+h.id);if(!rec)continue;
+    if(!h.surface&&index.compact){
+     const sourceTokens=tokenize(rec.ar||rec.en||'');
+     const foundToken=sourceTokens[h.position];
+     if(!foundToken)continue;
+     h.surface=foundToken.word;
+    }
     const entryKey=rec.work+'\0'+rec.id;
     const uncertain=h.source==='ambiguous';
     if(uncertain&&kind==='lemma')continue; // no speculative lemma assignment
@@ -226,7 +324,7 @@ function find(query,mode,corpus){
   keys.length?'':'No indexed lemma or root mapping for this spelling yet. Try ordinary word search.';
  return {ready:true,items,mode:kind,keys:[...new Set(keys)],candidate:q,message:explanation};
 }
-const api={version:VERSION,fold,roman,roots,tokenize,sourceLabel,recognize,loadLexicon,ensure,status,find,lookup,disambiguate,whenUpdated,getLexicon:()=>lexicon||[]};
+const api={version:VERSION,fold,roman,roots,tokenize,sourceLabel,recognize,loadLexicon,ensure,ensureDetail,status,find,lookup,disambiguate,whenUpdated,getLexicon:()=>lexicon||[]};
 global.GnammaMorphology=Object.freeze(api);
 loadLexicon().catch(()=>{});
 })(window);
