@@ -5113,7 +5113,7 @@ function gnShowLayer(title,html,kind,opener=document.activeElement){
  // Background gestures must not leak through on touch devices.
  wrap.addEventListener('touchmove',ev=>{if(ev.touches?.length>1||ev.target.closest('.gn-layer-scroll'))return;ev.preventDefault();},{passive:false});
  syncShortcut();
- wrap.querySelector('[data-gn-close]').focus({preventScroll:true});
+ wrap.querySelector('.gn-layer-top button[data-gn-close]').focus({preventScroll:true});
 }
 // Application citations use the same contextual return bar as other references.
 // The application window is restored after its underlying view has rendered.
