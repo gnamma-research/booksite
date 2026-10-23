@@ -32,6 +32,15 @@
   read.dataset.route='reader';read.setAttribute('aria-label','Read or resume the book');
   read.title='Read or resume';read.innerHTML=icon('book')+'<span>Read</span>';
   leading.appendChild(read);
+  if(document.body.classList.contains('reading-active')){
+   read.classList.add('active');read.setAttribute('aria-current','page');
+  }
+  // Clicking Read while already reading must not reset the paragraph/scroll position.
+  read.addEventListener('click',function(event){
+   if(document.body.classList.contains('reading-active')){
+    event.preventDefault();event.stopPropagation();
+   }
+  });
 
   // Search/Display/Help are global actions, not part of the Focus group.
   // Move the existing controls without replacing their event-bound elements.
