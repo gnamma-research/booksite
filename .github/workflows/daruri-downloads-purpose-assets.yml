@@ -18,7 +18,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-        with: {persist-credentials: true}
+        with: {persist-credentials: true, fetch-depth: 0}
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
       - name: Atomically update only Download-route runtime references
@@ -78,5 +78,7 @@ jobs:
           git add daruri/index.html daruri/sw.js daruri/download-bundle.js
           if ! git diff --cached --quiet; then
             git commit -m "Refresh Downloads selector/CSS cache identities in reader and offline bundle"
+            git fetch --no-tags origin "${GITHUB_REF_NAME}"
+            git rebase FETCH_HEAD
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
