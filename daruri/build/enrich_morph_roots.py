@@ -26,6 +26,8 @@ import argparse
 import json
 from collections import Counter
 from pathlib import Path
+import unicodedata
+import sys
 
 from build_gnamma_morph_index import ROOT, fold, normalize_model_root
 
@@ -34,12 +36,23 @@ ACCEPTED_POS = {"noun", "noun_prop", "verb", "adj", "adv", "noun_num"}
 ACCEPTED_SOURCE = {"contextual-bert", "contextual-alternative"}
 
 
+def lexical_key(text: str) -> str:
+    """Preserve shadda and written hamza: أَمَرّ must NOT equal أَمْر.
+
+    Search-query folding is deliberately more permissive than a dictionary
+    identity comparison. Conflating the two creates false root assignments.
+    """
+    raw = str(text or "").lower().replace("ـ", "")
+    return "".join(ch for ch in unicodedata.normalize("NFC", raw)
+                   if not unicodedata.combining(ch) or ch == "ّ").replace("ٱ", "ا")
+
+
 def root_hints(lex: dict) -> dict[str, str]:
     if lex.get("schema") != "gnamma-morph-lexicon-v1":
         raise ValueError("Incompatible curated Gnamma lexicon")
     groups: dict[str, set[str]] = {}
     for item in lex.get("entries", []):
-        lemma, root = fold(item.get("lemma", "")), fold(item.get("root", ""))
+        lemma, root = lexical_key(item.get("lemma", "")), fold(item.get("root", ""))
         if lemma and root and len(root) in (3, 4, 5):
             groups.setdefault(lemma, set()).add(root)
     return {lemma: next(iter(roots)) for lemma, roots in groups.items()
@@ -78,7 +91,7 @@ def enrich(index: dict, lexicon: dict) -> tuple[dict, dict]:
             if item[4] not in ACCEPTED_POS:
                 stats["nonlexical_pos"] += 1
                 continue
-            key = fold(item[2])
+            key = lexical_key(item[2])
             expected = hints.get(key)
             if not expected:
                 stats["not_in_curated_headwords"] += 1
@@ -106,6 +119,8 @@ def enrich(index: dict, lexicon: dict) -> tuple[dict, dict]:
             features["root_origin"] = evidence
             features["root_verified"] = False
             stats["supplemented"] += 1
+            stats["supplemented_primary" if item[5] == "contextual-bert"
+                  else "supplemented_alternative"] += 1
             if len(examples) < 16:
                 examples.append({"token": item[1], "lemma": item[2],
                                  "root": expected, "evidence": evidence})
@@ -136,7 +151,8 @@ def main() -> None:
     args.output.write_text(json.dumps(updated, ensure_ascii=False,
                           separators=(",", ":")) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
-    print("No human-revision status has been asserted and no public index altered.")
+    print("No human-revision status has been asserted and no public index altered.",
+          file=sys.stderr)
 
 
 if __name__ == "__main__":
