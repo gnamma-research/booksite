@@ -16,6 +16,9 @@ const base=JSON.parse(read('editions/manifest.json'));
 const extra=JSON.parse(read('editions/apparatus/manifest.json'));
 const maps=JSON.parse(read('editions/maps/manifest.json'));
 const canon=JSON.parse(read('pdf-editions-manifest.json'));
+const packets=JSON.parse(read('dynamic-pdf/packets/manifest.json'));
+const retired=fs.existsSync(path.join(root,'dynamic-pdf/RETIRE_120.json'));
+const signedRecipes=new Map(packets.profiles.map(x=>[x.profile,x]));
 assert.equal(base.status,'verified');
 assert.equal(base.files.length,12);
 assert.equal(extra.status,'verified');
@@ -68,11 +71,11 @@ assert.ok(!exporter.includes('fetch("https://'),'Private user data is never sent
 assert.ok(style.includes('.gn-es .gn-es-download-type'),'Purpose selector must be styled');
 assert.ok(style.includes('@container (min-width:725px)'),'Desktop chooses a compact two-column rail');
 assert.ok(style.includes('.gn-es .gn-es-picker'),'Inline note picker styled');
-assert.ok(style.includes('top:-4px'),'Vowelled Arabic overbar is raised above, not through, the AR letters');
+assert.ok(style.includes('top:-7px'),'Vowelled Arabic overbar is raised above, not through, the AR letters');
 assert.ok(style.includes('flex-direction:row;'),'AR remains on the same centred baseline as EN');
 assert.ok(style.includes('.gn-es-ar-form{display:none;}'),'Status caption must not push AR upwards');
-assert.ok(read('editions-icons.css').includes('top:-4px'),'Fallback Editions overbar uses the same clearance');
-assert.ok(read('reading-mode-controls.css').includes('top:-4px'),'Reader overbar uses the same clearance');
+assert.ok(read('editions-icons.css').includes('top:-7px'),'Fallback Editions overbar uses the same clearance');
+assert.ok(read('reading-mode-controls.css').includes('top:-7px'),'Reader overbar uses the same clearance');
 assert.ok(style.includes('.gn-es .gn-es-action{width:100%'),'Symmetrical Open PDF button preserved');
 const baselines=new Map(base.files.map(x=>[x.file,x]));
 const fn=path=>crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex');
@@ -109,7 +112,17 @@ for(const row of extra.files){
   assert.equal(row.base_sha256,baselines.get(row.source_base).sha256);
   assert.equal(row.verified_sections,258);
   assert.equal(row.map_coverage,1);
-  assert.equal(fn(path.join(root,'editions',row.file)),row.sha256);
+  if(retired){
+    const recipe=signedRecipes.get(row.file);
+    assert.ok(recipe,'Retired apparatus needs a signed composition recipe: '+row.file);
+    assert.ok(!fs.existsSync(path.join(root,'editions',row.file)),
+      'A redundant complete apparatus PDF must not remain on Stage 1 hosting');
+    assert.equal(recipe.base,row.source_base);
+    assert.equal(recipe.profile_sha256,row.sha256);
+    assert.equal(recipe.packet_sha256,
+      packets.packets.find(p=>p.file===recipe.packet)?.sha256);
+    assert.equal(fn(path.join(root,'dynamic-pdf/packets',recipe.map)),recipe.map_sha256);
+  }else assert.equal(fn(path.join(root,'editions',row.file)),row.sha256);
   assert.equal(fn(path.join(root,'editions',row.map_file)),row.map_sha256);
 }
 console.log('PASS: four download purposes, three book editions, local Stage1 creator, 12 source maps, 120 signed recipes and personal PDF safety.');
