@@ -1,0 +1,136 @@
+name: Daruri source ZIP staged publication
+
+on:
+  push:
+    branches:
+      - release/daruri-portable-source-publish-20261023
+    paths:
+      - '.github/workflows/daruri-source-zip-release.yml'
+      - 'daruri/build/export_portable_source.py'
+      - 'daruri/qa/verify_portable_source.py'
+      - 'daruri/SOURCE_ARCHIVE_RELEASE_REVIEW.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daruri-portable-source-release
+  cancel-in-progress: false
+
+jobs:
+  build-archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SOURCE_COMMIT: 5a1b75d23ffc8a3751af8c0ac86d6c75ce08fe57
+      SOURCE_VERSION: 2026-10-23-source-v1
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Confirm reviewed source scope and immutable reader
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s daruri/SOURCE_ARCHIVE_RELEASE_REVIEW.md
+          grep -F 'approve publication of the **existing Gnamma scholarly source snapshot**' daruri/SOURCE_ARCHIVE_RELEASE_REVIEW.md
+          git cat-file -e "${SOURCE_COMMIT}^{commit}"
+          test "$(git show "${SOURCE_COMMIT}:daruri/edition-r3-20261020.js" | sha256sum | cut -d' ' -f1)" = "$(sha256sum daruri/edition-r3-20261020.js | cut -d' ' -f1)"
+          python -m py_compile daruri/build/export_portable_source.py daruri/qa/verify_portable_source.py
+
+      - name: Build from canonical Gnamma source, independently verify formats
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p daruri/source /tmp/daruri-source-again
+          python daruri/build/export_portable_source.py --output-dir daruri/source
+          python daruri/qa/verify_portable_source.py daruri/source/Daruri_Portable_Scholarly_Source.zip
+          python daruri/build/export_portable_source.py --output-dir /tmp/daruri-source-again
+          cmp daruri/source/Daruri_Portable_Scholarly_Source.zip /tmp/daruri-source-again/Daruri_Portable_Scholarly_Source.zip
+
+      - name: Write exact vetted release manifest, not a simulated download
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib,json,os,pathlib,zipfile
+          base=pathlib.Path('daruri')
+          folder=base/'source'
+          archive=folder/'Daruri_Portable_Scholarly_Source.zip'
+          report=json.loads((folder/'source-export-report.json').read_text('utf-8'))
+          raw=archive.read_bytes()
+          digest=hashlib.sha256(raw).hexdigest()
+          assert raw.startswith(b'PK\x03\x04'), 'Not a real ZIP file'
+          assert digest==report['zip_sha256'] and len(raw)==report['zip_bytes']
+          assert 1000<len(raw)<100*1024*1024
+          with zipfile.ZipFile(archive) as z:
+              names=z.namelist()
+              assert len(names)==18 and len(names)==len(set(names))
+              assert z.testzip() is None
+              assert {'README.txt','daruri-source.json','daruri-passages.jsonl',
+                      'daruri-notes.json','daruri.tei.xml','manifest.json',
+                      'shamela-import-arabic.txt',
+                      'scholarly-data/full-headwords.json'}.issubset(names)
+              assert not any('personal' in n.lower() or 'bookmark' in n.lower() for n in names)
+              r=json.loads(z.read('manifest.json'))
+              assert r['canonical_reader_sha256']==report['canonical_reader_sha256']
+              assert r['source_authorial_sections']==258
+              assert r['authorial_parallel_segments']==414
+              assert r['canonical_note_records']==625
+              assert not r['private_user_notes_included']
+              assert not r['legacy_shamela_txt_html_import_verified_in_app']
+              readme=z.read('README.txt').decode('utf-8')
+              assert 'Alawi' in readme and 'Bou Akl' in readme
+              assert 'blanket open licence' in readme
+          release={
+            'schema':'gnamma-daruri-source-archive-v1',
+            'status':'published',
+            'file':'source/Daruri_Portable_Scholarly_Source.zip',
+            'version':os.environ['SOURCE_VERSION'],
+            'source_commit':os.environ['SOURCE_COMMIT'],
+            'canonical_reader_sha256':report['canonical_reader_sha256'],
+            'sha256':digest,
+            'size_bytes':len(raw),
+            'zip_entry_count':len(names),
+            'editorial_review':'approved',
+            'rights_review':'approved',
+            'rights_review_scope':'Publication of the existing attributed Gnamma source archive only; no blanket licence or third-party permission asserted.',
+            'rights_review_record':'SOURCE_ARCHIVE_RELEASE_REVIEW.md',
+            'shamela_import_verified':False,
+            'note':'Archival source, not the Gnamma offline reader. Historical and third-party digital text rights differ from editorial translation rights; consult the archive README and source register.'
+          }
+          (base/'source-archive-manifest.json').write_text(
+              json.dumps(release,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('SOURCE_ZIP_RELEASE_VERIFIED',digest,len(raw),len(names),
+                release['canonical_reader_sha256'])
+          PY
+
+      - name: Upload checksum and ZIP evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-published-source-proof
+          path: |
+            daruri/source/Daruri_Portable_Scholarly_Source.zip
+            daruri/source/source-export-report.json
+            daruri/source-archive-manifest.json
+            daruri/SOURCE_ARCHIVE_RELEASE_REVIEW.md
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Commit ZIP, verification report and matching manifest together to staging branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add daruri/source/Daruri_Portable_Scholarly_Source.zip daruri/source/source-export-report.json daruri/source-archive-manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish vetted Daruri source ZIP and matching SHA manifest [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
