@@ -1,4 +1,4 @@
-name: Daruri full-source HTML browser print engine: A4 Arabic, PDF and footnotes
+name: 'Daruri full-source HTML browser print engine: A4 Arabic, PDF and footnotes'
 on:
   push:
     branches: [research/daruri-browser-html-to-pdf-20261023]
@@ -69,7 +69,7 @@ jobs:
           j=json.loads(Path('daruri/editions/manifest.json').read_text())
           print('NATIVE_APPROVED_A4_RESEARCH_SOURCE',j['files'][${{ matrix.index }}]['file'])
           PY
-          source=$(python -c 'import json;print(json.load(open("daruri/editions/manifest.json"))[${{ matrix.index }}]["file"])' 2>/dev/null || python -c 'import json;print(json.load(open("daruri/editions/manifest.json"))["files"][${{ matrix.index }}]["file"])')
+          source=$(python -c 'import json;print(json.load(open("daruri/editions/manifest.json"))["files"][${{ matrix.index }}]["file"])')
           python daruri/qa/audit_chromium_html_print.py \
             --candidate /tmp/daruri-browser-html-chromium-${{ matrix.variant }}/chromium-browser-generated-NONRELEASE.pdf \
             --approved daruri/editions/$source \
