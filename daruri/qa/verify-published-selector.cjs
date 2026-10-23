@@ -102,6 +102,21 @@ for(const row of maps.files){
     }
   }
 }
+// Stage1 removal policy: every approved full apparatus entry is a recipe,
+// not a downloaded whole-document PDF. Signed packet/map provenance stays.
+const signed=JSON.parse(read('dynamic-pdf/packets/manifest.json'));
+assert.equal(signed.packets.length,15);
+assert.equal(signed.profiles.length,120);
+const profiles=new Map(signed.profiles.map(x=>[x.profile,x]));
+const packetByFile=new Map(signed.packets.map(x=>[x.file,x]));
+assert.equal(profiles.size,120);
+assert.equal(packetByFile.size,15);
+for(const packet of signed.packets){
+  assert.equal(fn(path.join(root,'dynamic-pdf/packets',packet.file)),packet.sha256,
+    'The shared apparatus packet must retain its approved SHA');
+  assert.equal(fn(path.join(root,'dynamic-pdf/packets',packet.map)),packet.map_sha256,
+    'The packet map must be identical to its signed source');
+}
 const seen=new Set();
 for(const row of extra.files){
   assert.ok(!seen.has(row.file));seen.add(row.file);
@@ -109,7 +124,17 @@ for(const row of extra.files){
   assert.equal(row.base_sha256,baselines.get(row.source_base).sha256);
   assert.equal(row.verified_sections,258);
   assert.equal(row.map_coverage,1);
-  assert.equal(fn(path.join(root,'editions',row.file)),row.sha256);
-  assert.equal(fn(path.join(root,'editions',row.map_file)),row.map_sha256);
+  assert.equal(fs.existsSync(path.join(root,'editions',row.file)),false,
+    'Retired completed apparatus PDF must not remain on the public site');
+  assert.equal(fn(path.join(root,'editions',row.map_file)),row.map_sha256,
+    'Historical position provenance must be retained');
+  const binding=profiles.get(row.file);
+  assert(binding,'Missing signed local assembly profile '+row.file);
+  const packet=packetByFile.get(binding.packet);
+  assert(packet);
+  assert.equal(binding.profile_sha256,row.sha256);
+  assert.equal(binding.base,row.source_base);
+  assert.equal(binding.packet_sha256,packet.sha256);
+  assert.equal(fn(path.join(root,'dynamic-pdf/packets',binding.map)),binding.map_sha256);
 }
-console.log('PASS: four download purposes, three book editions, local Stage1 creator, 12 source maps, 120 signed recipes and personal PDF safety.');
+console.log('PASS Stage1: 12 SHA-bound sources, 15 reusable packets, 120 signed recipes, ZERO redundant PDF files and intact personal-export privacy.');
