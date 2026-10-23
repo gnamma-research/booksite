@@ -36,6 +36,8 @@ jobs:
         run: |
           node --check daruri/qa/stage2_shootout/typst_node.mjs
           node daruri/qa/stage2_shootout/typst_node.mjs
+      - name: Install independent Poppler PDF reader
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - name: Native MuPDF/PDFium/Poppler Arabic word and quote audit
         run: |
           python -m pip install -q 'PyMuPDF==1.26.7' 'pypdfium2==5.4.0'
