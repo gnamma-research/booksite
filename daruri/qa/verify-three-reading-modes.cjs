@@ -48,7 +48,7 @@ async function exercise(engine,name,origin){
   const counts=await page.locator('#gn-dock-private-status .gn-dock-count').allTextContents();
   assert.deepEqual(counts,['1','1','1','1'],'saved §, ¶, exact quotation and note need separate counts');
   assert.equal(await page.locator('#gn-dock-paragraph-ref').innerText(),'· ¶1','bottom dock must identify paragraph 1');
-  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraph"] .gn-bm-paragraph .gn-bm-pilcrow').innerText(),'¶','saved paragraph must have compound bookmark-pilcrow glyph');
+  assert.equal((await page.locator('#gn-dock-private-status [data-gn-mark="paragraph"] .gn-dock-code').textContent()).trim(),'¶','paragraph category must retain its distinct pilcrow below the shared saved-bookmark symbol');
   assert(await page.locator('#gn-dock-private-status [data-gn-mark="note"] svg rect').count()===1 &&
     await page.locator('#gn-dock-private-status [data-gn-mark="note"] svg path').count()>=2,
     'personal note icon must contain a page and inset pen');
