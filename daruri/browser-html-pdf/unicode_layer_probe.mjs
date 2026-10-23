@@ -14,7 +14,7 @@
  * hidden copy of the complete book or mislabel this as publication-safe.
  */
 import {
-  PDFDocument, PDFName, beginText, endText, showText, setFontAndSize,
+  PDFDocument, PDFName, PDFOperator, PDFHexString, beginText, endText, showText, setFontAndSize,
   setTextMatrix, setTextRenderingMode, TextRenderingMode,
 } from '@pdfme/pdf-lib';
 import fontkit from '@pdf-lib/fontkit';
@@ -62,13 +62,23 @@ export async function experimentUnicodeLayer(pdfBytes,paginatedWindow,fixture) {
       // raw CID bytes as control characters and cannot search any Arabic.
       // This difference was proven directly from the failed candidate PDF.
       page.node.setFontDictionary(PDFName.of(font.name),font.ref);
+      // Fontkit still maps shaped Arabic glyph IDs back to corrupted
+      // pseudo-Unicode on some engines. In an actual PDF marked-content span,
+      // /ActualText provides an explicit, UTF-16BE logical replacement.
+      // This is a scoped test; the underlying bad visible text is NOT
+      // suppressed, and therefore clipboard duplication is still possible.
+      const replacement=document.context.obj({
+        ActualText:PDFHexString.fromText(phrase)
+      });
       page.pushOperators(
+        PDFOperator.of('BDC',[PDFName.of('Span'),replacement]),
         beginText(),
         setFontAndSize(font.name,fontSize),
         setTextRenderingMode(TextRenderingMode.Invisible),
         setTextMatrix(1,0,0,1,x,y),
         showText(font.encodeText(phrase)),
-        endText()
+        endText(),
+        PDFOperator.of('EMC',[])
       );
       seen.add(id);
       entries.push({id,phrase,page:pageNumber+1,x:Math.round(x*100)/100,
@@ -81,6 +91,7 @@ export async function experimentUnicodeLayer(pdfBytes,paginatedWindow,fixture) {
     research_kind:'UNICODE_TEXT_LAYER_DIAGNOSTIC_ONLY',
     release_approved:false,source_segments:source.size,overlays:entries,
     underlying_visible_bad_unicode_suppressed:false,
+    each_phrase_tagged_with_UTF16BE_ActualText:true,
     native_correct_search_not_assumed:true,source_pdf_inputs:0
   }};
 }
