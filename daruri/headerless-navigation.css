@@ -267,6 +267,16 @@
    background:var(--paper) var(--gn-daruri-tile) center/34px 34px no-repeat;
    border-radius:50%;border:1px solid var(--border);
  }
+ #fallbackReader .gn-sidebar-book-title{
+   display:flex;flex-direction:column;align-items:flex-start;gap:3px;margin:2px 0!important;
+ }
+ #fallbackReader .gn-sidebar-book-title cite{
+   display:block;font:500 23px/1.6 var(--arabic,'Amiri','Noto Naskh Arabic',serif);
+   font-style:normal;color:var(--text);
+ }
+ #fallbackReader .gn-sidebar-book-title .gn-sidebar-title-author{
+   display:block;font:500 12px/1.4 var(--sans,system-ui,sans-serif);color:var(--text-soft);
+ }
  #fallbackReader .fb-topbar .fb-work-brand{display:none!important}
  #fallbackReader .fb-topbar{height:48px!important;min-height:48px!important;padding-block:2px!important}
  #fallbackReader .fb-topbar .fb-icon-button{
