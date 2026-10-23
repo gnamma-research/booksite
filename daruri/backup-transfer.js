@@ -128,14 +128,14 @@ function dialogShell(){
 function open(){
  if(root){root.querySelector('.gn-transfer-dialog')?.focus();return;}
  returnFocus=document.activeElement;root=dialogShell();document.body.append(root);
- document.body.classList.add('gn-transfer-open');renderHome();
+ document.body.classList.add('gn-transfer-open');window.GnammaReaderScrollLock?.acquire?.('transfer-dialog');renderHome();
  root.querySelector('.gn-transfer-dialog')?.focus({preventScroll:true});
  if(clientConfigured())void loadGoogleLibrary();
 }
 function close(){
  if(!root)return;
  const el=root;root=null;imported=null;busy=false;el.remove();
- document.body.classList.remove('gn-transfer-open');
+ document.body.classList.remove('gn-transfer-open');window.GnammaReaderScrollLock?.release?.('transfer-dialog');
  const closedMenu=returnFocus?.closest?.('details:not([open])');
  const target=closedMenu?.querySelector('summary')||returnFocus;
  if(target?.isConnected&&target.getClientRects().length)target.focus({preventScroll:true});

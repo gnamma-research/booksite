@@ -581,7 +581,7 @@ function create(ctx){
   return main.innerHTML;
  }
  function closeRelink(){
-  $('#gn-rd-relink-shade')?.remove();
+  $('#gn-rd-relink-shade')?.remove();window.GnammaReaderScrollLock?.release?.('rd-relink');
   const old=relinkFocus;relinkFocus=null;
   if(old?.isConnected)old.focus({preventScroll:true});
  }
@@ -604,7 +604,7 @@ function create(ctx){
    (old.quote?'<blockquote>'+esc(short(old.quote,400))+'</blockquote>':'')+
    '<footer><button type="button" data-rd="relink-close">Cancel</button>'+
    '<button type="button" data-rd="relink-save">Save new source</button></footer></section>';
-  document.body.append(dlg);updateRelinkSegments();
+  document.body.append(dlg);window.GnammaReaderScrollLock?.acquire?.('rd-relink');updateRelinkSegments();
   dlg.querySelector('#gn-rd-relink-section')?.focus({preventScroll:true});
  }
  function updateRelinkSegments(){
@@ -659,7 +659,7 @@ function create(ctx){
    '<label>Title <small>(optional)</small><input id="gn-rd-note-title" maxlength="'+Math.max(240,String(existing?.title||'').length+240)+'" placeholder="Give this thought a short title" value="'+escFull(existing?.title||'')+'"></label>'+
    '<label>Your note<textarea id="gn-rd-note-body" rows="7" maxlength="'+Math.max(30000,String(existing?.body||'').length+30000)+'" placeholder="Write your observation, question or comparison…" dir="auto">'+escFull(existing?.body||'')+'</textarea></label>'+
    '<footer><button type="button" data-rd="close-editor">Cancel</button><button type="button" class="gn-rd-primary" data-rd="save-note">Save note</button></footer></section>';
-  returnFocus=document.activeElement;document.body.append(shade);document.body.classList.add('gn-rd-editor-open');
+  returnFocus=document.activeElement;document.body.append(shade);document.body.classList.add('gn-rd-editor-open');window.GnammaReaderScrollLock?.acquire?.('rd-editor');
   shade.dataset.target=JSON.stringify(t);$('#gn-rd-note-body').focus({preventScroll:true});
  }
  function closeEditor(force=false){
@@ -667,7 +667,7 @@ function create(ctx){
   if(!force&&node&&editorOriginal&&
    ($('#gn-rd-note-body')?.value!==editorOriginal.body||$('#gn-rd-note-title')?.value!==editorOriginal.title)&&
    !confirm('Discard unsaved changes to this note?'))return;
-  node?.remove();document.body.classList.remove('gn-rd-editor-open');
+  node?.remove();document.body.classList.remove('gn-rd-editor-open');window.GnammaReaderScrollLock?.release?.('rd-editor');
   const focus=returnFocus;returnFocus=null;editor=null;editorOriginal=null;
   if(focus?.isConnected)focus.focus({preventScroll:true});
  }
@@ -799,7 +799,7 @@ function create(ctx){
   try{return localStorage.getItem('gnamma-rd-show-personal-marks')!=='false';}catch(_){return true;}
  }
  function closeContext(){
-  $('#gn-rd-inline-panel')?.remove();openContext=null;
+  $('#gn-rd-inline-panel')?.remove();openContext=null;window.GnammaReaderScrollLock?.release?.('rd-mobile-items');
  }
  function showContext(sectionId,segment,anchor){
   closeContext();
@@ -821,6 +821,7 @@ function create(ctx){
   const holder=anchor.closest('.gn-rd-passage-tools')||anchor.parentElement;
   holder.after(panel);
   openContext={section:sectionId,segment,at:window.scrollY||0};
+  if(window.matchMedia?.('(max-width:760px)')?.matches)window.GnammaReaderScrollLock?.acquire?.('rd-mobile-items');
   panel.querySelector('button')?.focus({preventScroll:true});
  }
  function ensureVisualsToggle(){
@@ -1242,7 +1243,7 @@ function create(ctx){
   if(!printRoot)return;
   invalidateDeskPdf();
   const focus=printFocus;printFocus=null;printRoot.remove();printRoot=null;printSelection=null;
-  document.body.classList.remove('gn-rd-print');
+  document.body.classList.remove('gn-rd-print');window.GnammaReaderScrollLock?.release?.('rd-print');
   if(focus?.isConnected)focus.focus({preventScroll:true});
  }
  function ensureDeskPdf(){
@@ -1418,7 +1419,7 @@ function create(ctx){
    '<button type="button" data-rd="share-pdf" hidden>Share PDF…</button></div>'+
    '<main class="gn-rd-print-sheet"><header><h1>Reading Desk</h1>'+
    '<p id="gn-rd-print-sheet-subtitle"></p></header><div id="gn-rd-print-sheet-body"></div></main>';
-  document.body.append(printRoot);document.body.classList.add('gn-rd-print');
+  document.body.append(printRoot);document.body.classList.add('gn-rd-print');window.GnammaReaderScrollLock?.acquire?.('rd-print');
   updatePrintSheet();
   printRoot.querySelector('[data-rd="download-pdf"]')?.focus({preventScroll:true});
  }
