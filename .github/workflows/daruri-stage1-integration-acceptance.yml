@@ -1,7 +1,7 @@
-name: Daruri Stage 1 on-device PDF integration acceptance (STAGING ONLY)
+name: Daruri Stage 1 no-prebuilt-PDF release rehearsal
 on:
   push:
-    branches: [staging/daruri-stage1-12-plus-15-20261023]
+    branches: [qa/daruri-stage1-no-static-120-20261023]
     paths:
       - '.github/workflows/daruri-stage1-integration-acceptance.yml'
       - 'daruri/dynamic-pdf/**'
@@ -38,7 +38,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   catalogue:
-    name: Retain 12 bases, 15 packets, 120 profiles and every rollback PDF
+    name: 12 source PDFs, 15 signed packets and ZERO stored complete variants
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -56,7 +56,7 @@ jobs:
           node --check daruri/qa/verify_dynamic_design_browser.cjs
           node daruri/dynamic-pdf/test_design_catalog.cjs
           node daruri/qa/verify-editions-delivery.cjs
-      - name: All published fallback PDFs and signed inputs remain present
+      - name: All 120 complete apparatus PDFs are absent; all signed inputs still exist
         run: |
           python - <<'PY'
           import json,pathlib
@@ -66,12 +66,12 @@ jobs:
           d=json.loads((root/'dynamic-pdf/packets/manifest.json').read_text())
           assert len(a['files'])==120 and len(b['files'])==12
           assert len(d['packets'])==15 and len(d['profiles'])==120
-          assert all((root/'editions'/x['file']).is_file() for x in a['files'])
+          assert all(not (root/'editions'/x['file']).exists() for x in a['files']), 'Redundant complete apparatus PDFs still hosted'
           assert all((root/'editions'/x['file']).is_file() for x in b['files'])
           assert all((root/'dynamic-pdf/packets'/p['file']).is_file() for p in d['packets'])
           assert all((root/'dynamic-pdf/packets'/p['map']).is_file() for p in d['packets'])
           assert all((root/'dynamic-pdf/packets'/p['map']).is_file() for p in d['profiles'])
-          print('STAGE1 PASS: 12 bases, 15 packets, 120 signed profiles, approved rollback intact')
+          print('STAGE1 NO-STATIC PASS: zero stored variants, 12 bases, 15 packets, 120 signed maps')
           PY
   browser:
     name: In-browser actual PDF generation and negative-paths (${{ matrix.browser }})
