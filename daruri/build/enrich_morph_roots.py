@@ -83,8 +83,12 @@ def enrich(index: dict, lexicon: dict) -> tuple[dict, dict]:
             if not expected:
                 stats["not_in_curated_headwords"] += 1
                 continue
-            if len(item) < 8 or not isinstance(item[7], dict):
-                item.extend({} for _ in range(8 - len(item)))
+            if len(item) == 6:
+                item.append("")  # optional lexical sense ID
+            if len(item) == 7:
+                item.append({})
+            if not isinstance(item[7], dict):
+                raise ValueError("Malformed word-feature map; preserving source")
             features = item[7]
             raw_root = str(features.get("raw_root", "")).strip()
             if raw_root:
