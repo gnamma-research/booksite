@@ -90,6 +90,7 @@ async function render(mode){
       if(!found)throw Error('Vivliostyle callback exposed no PDF page containers: '+JSON.stringify(domState));
       status('Writing vector PDF bytes locally…',{phase:'writing',mode,paginated_pages:found});
       const bytes=await emitPdfFromVivliostyleWindow(w,{
+       baseUrl:new URL('/daruri/browser-html-pdf/runtime/',location.origin).href,
        sourceHtml,metadata:{title:'Daruri browser HTML-PDF research',author:'Gnamma Research'},
        onProgress:message=>{window.__daruriQA={...(window.__daruriQA||{}),progress:String(message).slice(0,100)};}
       });
