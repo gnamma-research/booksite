@@ -264,6 +264,7 @@ const root=path.resolve(__dirname,'../..'),mimes={'.html':'text/html; charset=ut
  await check('390px mobile scholarly controls, builder and results do not overflow',async()=>{
   await small.locator('#searchBtn').click();
   await small.locator('[data-gns-expand="1"]').first().click();
+  await small.locator('[data-gns-mobile-view="build"]').click();
   await small.locator('#gns-mode').selectOption('scholarly');
   await small.locator('#gns-query').fill('qiyas AND illa');
   await small.waitForTimeout(350);
@@ -282,6 +283,7 @@ const root=path.resolve(__dirname,'../..'),mimes={'.html':'text/html; charset=ut
  await check('320px scholarly builder is usable without document horizontal overflow',async()=>{
   await narrow.locator('#searchBtn').click();
   await narrow.locator('[data-gns-expand="1"]').first().click();
+  await narrow.locator('[data-gns-mobile-view="build"]').click();
   await narrow.locator('#gns-mode').selectOption('scholarly');
   await narrow.locator('.gns-builder > summary').click();
   await narrow.locator('[data-gns-builder-text="0"]').fill('qiyas');
