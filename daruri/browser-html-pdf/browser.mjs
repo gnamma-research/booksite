@@ -6,7 +6,7 @@
 // Do not confuse a repaired emitter with improved pagination/footnote policy.
 import {printHTML,VIVLIOSTYLE_BACKEND} from 'vivliostyle-pdf';
 import {emitPdfFromWindow} from 'pages-to-pdf';
-import {PDFDocument,PDFName,PDFArray,PDFDict,PDFNumber} from '@pdfme/pdf-lib';
+import {PDFDocument,PDFName,PDFArray,PDFDict,PDFNumber,PDFHexString} from '@pdfme/pdf-lib';
 const el=id=>document.getElementById(id);
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const status=(value,detail={})=>{el('status').textContent=value;window.__daruriQA={...(window.__daruriQA||{}),...detail,status:value};};
@@ -66,7 +66,7 @@ function htmlFor(fixture,mode){
  ].join('\n');
  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Daruri real-source browser-only PDF feasibility</title><meta name="author" content="Gnamma Research; nonrelease experiment"><style>'+css+'</style></head><body><h1>Al-Daruri browser-generated PDF experiment</h1><p class="subtitle">Real canonical source. N65 is synthetic note placement, not a published note.</p>'+blocks.join('')+'</body></html>';
 }
-async function normalizePdfDestinations(input){
+async function normalizePdfDestinations(input,fixture,mode){
  // Browser emitter represents GoTo links with [/Page /XYZ null y null].
  // MuPDF has treated these annotations as LINK_NAMED (and cannot follow them)
  // on Arabic source pages; explicit numeric x/zoom preserves y and makes the
@@ -96,9 +96,63 @@ async function normalizePdfDestinations(input){
    if(modified)changed++;
   }
  }
- if(!changed)return {bytes:input,inspected,changed};
+ // Recover the ORIGINAL Arabic rubrics as proper UTF-16BE PDF outline
+ // strings, without triggering the emitter's unsafe raw /Title (...).
+ // The physical heading is still the same Arabic HTML <div role=heading>.
+ // Create a nested bookmark beneath each existing, correctly paginated
+ // "R001" etc destination rather than inventing a PDF page number.
+ const parents=new Map();
+ const f=fixture?.full_sections||[];
+ const samples=mode==='full'?f:(fixture?.sample_sections||[]);
+ const Arabic=samples.filter(x=>x.recorded_arabic_heading)
+   .map(x=>[('R'+String(x.id).padStart(3,'0')),x.recorded_arabic_heading]);
+ const originals=new Map(Arabic);
+ const titleKey=PDFName.of('Title'),firstKey=PDFName.of('First'),
+       lastKey=PDFName.of('Last'),countKey=PDFName.of('Count'),
+       nextKey=PDFName.of('Next'),prevKey=PDFName.of('Prev'),
+       parentKey=PDFName.of('Parent'),outlineKey=PDFName.of('Outlines');
+ const outlineRef=pdf.catalog.get(outlineKey);
+ let arabicBookmarks=0;
+ if(outlineRef){
+  const outline=pdf.context.lookup(outlineRef,PDFDict);
+  const visited=new Set();
+  const visit=(ref)=>{
+   if(!ref || visited.has(ref.toString()))return;
+   visited.add(ref.toString());
+   const item=pdf.context.lookup(ref,PDFDict);
+   if(!item)return;
+   const t=item.get(titleKey),name=t&&typeof t.decodeText==='function'?
+       t.decodeText():String(t||'');
+   if(originals.has(name) && item.get(destName)){
+    const dest=item.get(destName);
+    const oldLast=item.get(lastKey);
+    const attrs={Title:PDFHexString.fromText(originals.get(name)),
+       Parent:ref,Dest:dest};
+    if(oldLast)attrs.Prev=oldLast;
+    const child=pdf.context.register(pdf.context.obj(attrs));
+    if(oldLast)pdf.context.lookup(oldLast,PDFDict)?.set(nextKey,child);
+    else item.set(firstKey,child);
+    item.set(lastKey,child);
+    // Collapsed on open, allowing 258 source sections to remain legible.
+    const prior=item.lookup(countKey,PDFNumber)?.asNumber()||0;
+    item.set(countKey,PDFNumber.of(-Math.abs(prior)-1));
+    arabicBookmarks++;
+   }
+   // Enumerate the ORIGINAL named source hierarchy, not newly created child
+   // entries. Nested Arabic nodes do not affect section sibling pointers.
+   const next=item.get(nextKey);
+   const first=item.get(firstKey);
+   if(first)visit(first);
+   if(next)visit(next);
+  };
+  if(outline?.get(firstKey))visit(outline.get(firstKey));
+ }
+ if(arabicBookmarks!==originals.size)
+  throw Error('Cannot preserve all recorded Arabic PDF outline headings: '+
+    arabicBookmarks+'/'+originals.size);
+ if(!changed && !arabicBookmarks)return {bytes:input,inspected,changed,arabicBookmarks};
  const bytes=await pdf.save({useObjectStreams:false});
- return {bytes,inspected,changed};
+ return {bytes,inspected,changed,arabicBookmarks};
 }
 async function render(mode){
  if(!['excerpt','full'].includes(mode))throw Error('Unrecognised experiment mode');
@@ -155,7 +209,7 @@ async function render(mode){
   const deadline=new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Browser PDF export exceeded 180 seconds')),180000);});
   const value=await Promise.race([promise,deadline]);
   const raw=value instanceof Uint8Array?value:new Uint8Array(value);
-  const linkRepair=await normalizePdfDestinations(raw);
+  const linkRepair=await normalizePdfDestinations(raw,fixture,mode);
   const bytes=linkRepair.bytes;
   window.__daruriQA={...(window.__daruriQA||{}),
     browser_pdf_goto_destinations:linkRepair.inspected,
@@ -170,6 +224,7 @@ async function render(mode){
     source_sha256:fixture.source_sha256,authorial_sections:258,authorial_passages:414,
     browser_pdf_goto_destinations:linkRepair.inspected,
     browser_pdf_fixed_destinations:linkRepair.changed,
+    browser_pdf_original_arabic_bookmarks_restored:linkRepair.arabicBookmarks,
     engine:'@vivliostyle/print via vivliostyle-pdf; pages-to-pdf@0.4.1 DOM emitter',no_server_pdf_generation:true,
     no_print_dialog:true,no_cdp_print_to_pdf:true,no_prebuilt_pdf_inputs:true,not_release_approved:true};
   status('PDF generated entirely in this browser. Native Arabic and footnote QA still required.',qa);
