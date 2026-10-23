@@ -6,7 +6,7 @@ source checks use the SHA-pinned complete book and actual §65 note stress.
 """
 import hashlib,json,sys
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[2]
+ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/"daruri"/"build"))
 from build_editions import read_book
 
