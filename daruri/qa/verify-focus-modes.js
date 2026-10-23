@@ -37,7 +37,7 @@ for(const choice of ['reading','focus','continuous'])
  assert(dockJS.includes('data-gn-reader-mode="'+choice+'"'),'Missing '+choice+' menu choice');
 assert(dockJS.includes("if(!count)continue"),'Zero-count personal marks must be absent');
 assert(dockJS.includes("gn-dock-paragraph-ref") && dockJS.includes("place.segment+1"),'Live paragraph locator missing');
-assert(dockJS.includes("paragraphBookmarks") && dockJS.includes("bookmarkUI.icon({kind:'paragraph',saved:true})"),'Composite paragraph mark missing from reading dock');
+assert(dockJS.includes("id:'paragraph'") && dockJS.includes("bookmarkUI.icon({kind:'paragraph',saved:true})") && dockJS.includes("gn-dock-paragraph-mark"),'Composite paragraph mark missing from reading dock');
 const desk=fs.readFileSync(path.resolve(__dirname,'..','reading-desk.js'),'utf8');
 assert(desk.includes("bookmarkUI.icon({kind:'paragraph'})")&&desk.includes("paragraphSaved"),'Save-paragraph control must be a compact bookmark and pilcrow');
 assert(fs.readFileSync(path.resolve(__dirname,'..','bookmark-ui.js'),'utf8').includes('M12 8v5.3M9.35 10.65h5.3'),'Shared bookmark plus motif missing');
