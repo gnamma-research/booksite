@@ -4,6 +4,9 @@ on:
     branches: [master, feature/daruri-three-reading-modes-20261022]
     paths:
       - 'daruri/index.html'
+      - 'daruri/headerless-navigation.css'
+      - 'daruri/headerless-navigation.js'
+      - 'daruri/qa/verify-prerelease-ui.cjs'
       - 'daruri/reading-mode-controls.js'
       - 'daruri/reading-mode-controls.css'
       - 'daruri/reading-navigation-*.js'
@@ -19,6 +22,9 @@ on:
   pull_request:
     paths:
       - 'daruri/index.html'
+      - 'daruri/headerless-navigation.css'
+      - 'daruri/headerless-navigation.js'
+      - 'daruri/qa/verify-prerelease-ui.cjs'
       - 'daruri/reading-mode-controls.js'
       - 'daruri/reading-mode-controls.css'
       - 'daruri/reading-navigation-*.js'
@@ -77,5 +83,6 @@ jobs:
       - name: Test mobile Chromium and WebKit reader
         run: |
           node daruri/qa/verify-three-reading-modes.cjs
+          node daruri/qa/verify-prerelease-ui.cjs
           node daruri/qa/verify-dock-saved-sheet.cjs
           node daruri/qa/verify-reading-navigation-browser.cjs
