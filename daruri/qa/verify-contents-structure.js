@@ -12,7 +12,11 @@ const {JSDOM}=require('jsdom');
 const root=path.resolve(__dirname,'..');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const BOOK=require('./load-book')(html);
-const script=html.slice(html.lastIndexOf('<script>')+8,html.lastIndexOf('</script>'));
+const readerStart=html.indexOf("<script>\n(() => {\n'use strict';\nconst BOOK");
+assert.ok(readerStart>=0,'Canonical reader JavaScript exists');
+const readerEnd=html.indexOf('</script>',readerStart);
+assert.ok(readerEnd>readerStart,'Canonical reader closing tag exists');
+const script=html.slice(readerStart+'<script>'.length,readerEnd);
 new vm.Script(script);
 function extract(name){
  const start=script.indexOf('function '+name+'(');assert.ok(start>=0,name);
