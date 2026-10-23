@@ -127,7 +127,11 @@ test('fallback bindings and screen-only style scope retain independent layout/fo
  assert.ok(styles.includes('#fb-page-style-select option[value="structured"]:checked'));
  assert.match(styles,/@media screen\s*\{/);
  const declarations=styles.replace(/\/\*[\s\S]*?\*\//g,'');
- assert.ok(!/(?:^|[;{])\s*(?:display|order|direction|grid-template-columns|font-family)\s*:/m.test(declarations),'Page styles do not replace visibility, language order or typefaces');
+ // A non-reading, palette-specific native link may use display:block without
+ // hiding text, changing languages, rearranging columns or altering typefaces.
+ assert.match(declarations,/\.fb-quick-return\s*>\s*a\s*\{\s*display:\s*block;/,'Fallback return link retains ordinary block layout');
+ const readerDeclarations=declarations.replace(/(\.fb-quick-return\s*>\s*a\s*\{\s*)display:\s*block;/g,'$1');
+ assert.ok(!/(?:^|[;{])\s*(?:display|order|direction|grid-template-columns|font-family)\s*:/m.test(readerDeclarations),'Page styles do not replace visibility, language order or typefaces');
  assert.ok(styles.includes('#fb-language-auto:checked'),'Book fallback includes responsive automatic bilingual mode');
  assert.match(menuCSS,/@media\s*\(max-width:\s*590px\)/);
  assert.match(menuCSS,/@media\s*\(max-width:\s*840px\)/);
