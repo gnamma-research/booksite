@@ -34,7 +34,7 @@ function createMarker(id,note){
  a.dir='ltr';a.setAttribute('aria-label','Hadith source for this passage: '+note.title+'. Open note '+id);
  return a;
 }
-function insertAfterPhrase(passage,anchor,id,note){
+function insertAfterPhrase(passage,anchor,id,note,index){
  const walker=document.createTreeWalker(passage,NodeFilter.SHOW_TEXT,{
   acceptNode:node=>node.parentElement?.closest('.note-ref-symbol,.gn-inline-hadith-ref,script,style')?
    NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT
@@ -51,7 +51,7 @@ function insertAfterPhrase(passage,anchor,id,note){
  if(offset<0||all.indexOf(needle,offset+needle.length)!==-1)return false;
  const pos=map[offset+needle.length-1];if(!pos)return false;
  let after=pos.end;while(after<pos.node.length&&/[\u064b-\u065f\u0670\u0640\u06d6-\u06ed]/.test(pos.node.data[after]))after++;
- const marker=createMarker(id,note);
+ const marker=createMarker(id,note);marker.dataset.gnHadithAnchor=String(index);
  const control=pos.node.parentElement?.closest('a,button,[role="button"]');
  if(control&&passage.contains(control))control.after(marker);
  else{const range=document.createRange();range.setStart(pos.node,after);range.collapse(true);range.insertNode(marker);}
@@ -59,7 +59,6 @@ function insertAfterPhrase(passage,anchor,id,note){
 }
 function markPassage(passage){
  if(!passage?.matches?.('.passage-ar[data-ar-seg]'))return;
- const id=passage.closest('.reader')?.querySelector('.gn-note-trigger')?null:null; // scoped exclusively by the section route below
  const map=window.GnammaHadithAnchorMap?.notes;if(!map)return;
  const n=passage.dataset.arSeg;const section=location.hash.match(/section=([^&#]+)/)?.[1]||window.state?.n;
  if(!section)return;
@@ -71,10 +70,7 @@ function markPassage(passage){
  for(const [i,{noteId,record,anchor}] of refs.entries()){
   const key=noteId+'|'+i;
   if(existing.has(key))continue;
-  if(insertAfterPhrase(passage,anchor,noteId,record)){
-   const all=[...passage.querySelectorAll('.gn-inline-hadith-ref')].filter(a=>a.dataset.noteTarget===noteId);
-   const last=all.at(-1);if(last)last.dataset.gnHadithAnchor=String(i);
-  }
+  insertAfterPhrase(passage,anchor,noteId,record,i);
  }
 }
 function simplifySourceLinks(noteId,card,rec){
