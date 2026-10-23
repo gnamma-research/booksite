@@ -206,6 +206,8 @@
       list.scrollTop=0;render();
     }
     function open() {
+      // Retire the legacy miscellany of site links from this navigation-only popup.
+      dialog.querySelectorAll('.gn-reader-jump-sites').forEach(function(node){node.remove();});
       folder=currentFolder();shown=INITIAL_LIMIT;lastQuery='';
       input.value='';list.scrollTop=0;
       render();
