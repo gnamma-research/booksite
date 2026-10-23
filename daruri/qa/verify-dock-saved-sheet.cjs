@@ -19,6 +19,12 @@ const server=http.createServer((req,res)=>{
 });
 const items=[
  {id:'saved-section',kind:'section',target:{kind:'section',section:'11'},created:100,updated:100,deleted:0},
+ {id:'saved-paragraph',kind:'paragraph',target:{kind:'paragraph',section:'11',segment:0,lang:'en'},created:100,updated:100,deleted:0},
+ {id:'saved-quote',kind:'quote',target:{kind:'quote',section:'11',segment:0,lang:'en',quote:'According to the People of the Sunna',offset:0},created:100,updated:100,deleted:0},
+ {id:'saved-dictionary',kind:'dictionary',target:{kind:'dictionary',section:'11',term:'test'},created:100,updated:100,deleted:0},
+ {id:'saved-quran',kind:'footnote',target:{kind:'quran',section:'11'},created:100,updated:100,deleted:0},
+ {id:'saved-hadith',kind:'footnote',target:{kind:'hadith',section:'11'},created:100,updated:100,deleted:0},
+ {id:'saved-other-source',kind:'index',target:{kind:'index',section:'11'},created:100,updated:100,deleted:0},
  ...Array.from({length:32},(_,i)=>({
   id:'saved-note-'+i,kind:'note',target:{kind:'paragraph',section:'11',segment:0,lang:'en'},
   title:'QA saved note '+String(i).padStart(2,'0'),
@@ -38,6 +44,34 @@ async function exercise(engine,name,origin){
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
   const trigger=page.locator('#gn-dock-private-status .gn-dock-summary');
   await trigger.waitFor({state:'visible',timeout:30000});
+  // All eight saved-reference families must be VISIBLE on narrow phones.
+  // The earlier UI retained spans in DOM but hid their parent via @container.
+  for(const width of [320,375,390,430]){
+   await page.setViewportSize({width,height:844});
+   await page.waitForFunction(()=>document.querySelectorAll(
+    '#gn-dock-private-status .gn-dock-summary-pair').length===8,null,{timeout:9000});
+   const geometry=await page.evaluate(()=>{
+    const button=document.querySelector('#readerDock .gn-dock-summary'),
+     symbols=button.querySelector('.gn-dock-summary-symbols'),
+     items=[...symbols.querySelectorAll('.gn-dock-summary-pair')];
+    const outer=button.getBoundingClientRect();
+    return {viewport:innerWidth,layoutWidth:document.documentElement.scrollWidth,
+     shown:getComputedStyle(symbols).display,flexWrap:getComputedStyle(symbols).flexWrap,
+     visible:items.every(el=>{const r=el.getBoundingClientRect();
+      return getComputedStyle(el).display!=='none'&&r.width>0&&r.height>0
+       &&r.left>=outer.left-2&&r.right<=outer.right+2;}),
+     categoryIds:items.map(el=>el.dataset.gnMark),
+     rows:new Set(items.map(el=>Math.round(el.getBoundingClientRect().top))).size};
+   });
+   assert.equal(geometry.shown,'flex',name+' '+width+' category icons hidden: '+JSON.stringify(geometry));
+   assert.equal(geometry.flexWrap,'wrap',name+' '+width+' category icons cannot wrap');
+   assert.ok(geometry.visible,name+' '+width+' clipped individual counts: '+JSON.stringify(geometry));
+   assert.equal(geometry.categoryIds.length,8,name+' '+width+' category count missing');
+   assert(geometry.layoutWidth<=geometry.viewport+2,
+    name+' '+width+' horizontal page overflow: '+JSON.stringify(geometry));
+   if(width===320)assert(geometry.rows>=2,name+' narrow screen requires two count rows');
+  }
+  await page.setViewportSize({width:390,height:844});
   await page.evaluate(()=>{
    window.__qaBackgroundClicks=0;
    document.querySelector('#reader')?.addEventListener('click',()=>window.__qaBackgroundClicks++,true);
@@ -69,18 +103,70 @@ async function exercise(engine,name,origin){
   assert(visual.listScrollHeight>visual.listClientHeight+80,name+': need a genuinely scrollable list');
   assert.equal(visual.bodyPosition,'fixed',name+': book was not scroll locked');
   assert.equal(visual.rootOverflow,'hidden',name+': page viewport is still scrollable');
-  await sheet.locator('.gn-dock-sheet-heading h3').click();
-  assert.equal(await sheet.count(),1,name+': touching sheet heading incorrectly dismissed it');
-  const scrolled=await sheet.locator('.gn-dock-sheet-list').evaluate(node=>{
-   node.scrollTop=210;node.dispatchEvent(new Event('scroll',{bubbles:true}));
-   return node.scrollTop;
+  // A real fingertip tap on the sheet heading must not be interpreted as
+  // an outside tap and dismiss it.
+  const heading=await sheet.locator('.gn-dock-sheet-heading h3').boundingBox();
+  await page.touchscreen.tap(heading.x+heading.width/2,heading.y+heading.height/2);
+  assert.equal(await sheet.count(),1,name+': touching sheet heading dismissed it');
+  const list=sheet.locator('.gn-dock-sheet-list');
+  const initialScroll=await list.evaluate(node=>node.scrollTop);
+  if(name==='chromium'){
+   // Real trusted touch sequence (not setting scrollTop in JavaScript).
+   const session=await context.newCDPSession(page);
+   const rect=await list.boundingBox(),x=rect.x+rect.width*.70,
+    startY=rect.y+rect.height*.82;
+   const point=y=>({x,y,radiusX:3,radiusY:3,force:1});
+   await session.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point(startY)]});
+   for(let i=1;i<=12;i++){
+    await session.send('Input.dispatchTouchEvent',{
+     type:'touchMove',touchPoints:[point(startY-15*i)]});
+    await page.waitForTimeout(12);
+   }
+   await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+  }else{
+   // Playwright's mobile WebKit supports real taps but NOT a wheel or swipe
+   // automation API. Exercise touch event propagation and the nested scroller
+   // independently without falsely claiming to synthesize a native swipe.
+   await list.evaluate(el=>{
+    const rect=el.getBoundingClientRect();
+    const before=rect.top+rect.height*.78,after=rect.top+rect.height*.42;
+    // Mobile WebKit exposes Touch in some builds but disallows its
+    // constructor. Use event objects with authentic touch fields in that
+    // environment while retaining native Playwright fingertip taps above.
+    function send(type,y){
+     const e=new Event(type,{bubbles:true,cancelable:true});
+     Object.defineProperty(e,'touches',{value:type==='touchend'?[]:[{clientY:y}]});
+     el.dispatchEvent(e);
+    }
+    send('touchstart',before);
+    send('touchmove',after);
+    el.scrollTop=210;el.dispatchEvent(new Event('scroll',{bubbles:true}));
+    send('touchend',after);
+   });
+  }
+  await page.waitForTimeout(250);
+  const realScroll=await list.evaluate(node=>node.scrollTop);
+  assert(realScroll>initialScroll+30,
+   name+': trusted gesture did not scroll inside sheet: '+initialScroll+' to '+realScroll);
+  assert.equal(await sheet.count(),1,
+   name+': dragging through saved items closed the dialog');
+  // A reader history pulse, storage reindex or repaint is not an intentional
+  // dismissal. This was an overlooked path in the first implementation.
+  await page.evaluate(()=>{
+   window.dispatchEvent(new Event('scroll'));
+   window.dispatchEvent(new Event('hashchange'));
+   document.dispatchEvent(new Event('gnamma-reader-route-change'));
+   document.dispatchEvent(new Event('gnamma-reading-desk-change'));
+   const pulse=document.createElement('span');pulse.hidden=true;
+   document.querySelector('#mainContent')?.append(pulse);
   });
-  assert(scrolled>50,name+': the saved item list would not scroll');
-  // Safari may issue window scroll/resize even when its inner modal owns touch.
-  // Neither signal is permission to dismiss the user's open list.
-  await page.evaluate(()=>window.dispatchEvent(new Event('scroll')));
+  await page.waitForTimeout(250);
   await page.setViewportSize({width:375,height:760});
-  assert.equal(await sheet.count(),1,name+': window scroll/resize dismissed saved items');
+  await page.waitForTimeout(100);
+  assert.equal(await sheet.count(),1,
+   name+': passive history/update/resize closed the dialog');
+  assert(await list.evaluate(node=>node.scrollTop)>0,
+   name+': scroll position reset after background update');
   await sheet.locator('.gn-dock-sheet-close').click();
   assert.equal(await sheet.count(),0);
   assert.equal(await page.locator('#gn-dock-saved-backdrop').count(),0);
