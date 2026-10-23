@@ -90,6 +90,25 @@ function currentToken(node,index){
  const word=text.slice(a,b);
  return AR.test(word)?word:null;
 }
+function passageOccurrence(word,grid,point){
+ const engine=morph(),content=grid?.querySelector('.passage-ar');
+ if(!engine||!content||!point?.node||!content.contains(point.node))
+  return {position:null,neighbours:[]};
+ try{
+  const range=document.createRange();
+  range.setStart(content,0);
+  range.setEnd(point.node,point.offset);
+  const prefix=engine.tokenize(range.toString()).length;
+  const tokens=engine.tokenize(content.textContent||'');
+  const key=engine.fold(word);
+  // A caret at the beginning of a word and a caret within it differ by one token.
+  // Never apply a morphological analysis from a different occurrence.
+  const position=[Math.max(0,prefix-1),prefix]
+   .find(i=>tokens[i]&&engine.fold(tokens[i].word)===key);
+  if(position===undefined)return {position:null,neighbours:[]};
+  return {position,neighbours:[tokens[position-1]?.word||'',tokens[position+1]?.word||'']};
+ }catch(_){return {position:null,neighbours:[]};}
+}
 function atTap(e){
  const x=e.clientX,y=e.clientY;
  const pos=document.caretPositionFromPoint?.(x,y);
@@ -128,14 +147,15 @@ function wordMarkup(ctx){
  const best=analysis?.best,alts=analysis?.alternatives||[];
  const names=actions(word,analysis||{});
  const root=names.root,lemma=names.lemma;
- const analysisSection='<section class="gnw-block"><h3>Word analysis</h3>'+
+ const analysisSection='<section class="gnw-block"><h3>Word in this passage</h3>'+
    (best?'<div class="gnw-morph-line"><bdi dir="rtl" lang="ar">'+esc(best.lemma)+'</bdi>'+
     (best.root?' · Root <bdi dir="rtl" lang="ar">'+esc(best.root)+'</bdi>':'')+
     (best.pos?' · '+esc(best.pos):'')+'</div>'+
-    '<small>'+esc(morph()?.sourceLabel(best.source)||'Provisional analysis')+'</small>':
-    alts.length?'<p>This spelling is morphologically ambiguous here. Select an analysis before treating its lemma as established.</p>'+
+    '<small>'+esc(morph()?.sourceLabel(best.source)||'Provisional analysis')+
+      ((best.source==='reviewed'||best.source==='curated-context'||best.source==='contextual-bert')?'':' · Possible dictionary form, not a verified reading of the sentence.')+'</small>':
+    alts.length?'<p>Several grammatical analyses are possible here. None is yet confirmed from the sentence. Search a candidate form without treating it as established.</p>'+
     '<ul>'+alts.slice(0,5).map(x=>'<li><span lang="ar" dir="rtl">'+esc(x.lemma)+'</span> · '+esc(x.pos)+
-      ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Find lemma</button></li>').join('')+'</ul>':
+      ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search these forms</button></li>').join('')+'</ul>':
     '<p>No dependable morphological analysis is available for this word in the current index.</p>')+
    '</section>';
  const dictionary=terms.length?
@@ -158,19 +178,19 @@ function wordMarkup(ctx){
    ' bookmarks · '+privateInfo.highlights.length+' saved selections in this section or paragraph.</p>'+
    '<button type="button" data-gnw-desk="1">Open Reading Desk</button></section>':'';
  const provenance=highlightType?'<p class="gnw-origin">'+esc(highlightType)+'</p>':'';
- const fullActions='<section class="gnw-block gnw-actions"><h3>Search this wording</h3>'+
+ const fullActions='<section class="gnw-block gnw-actions"><h3>Explore occurrences</h3>'+
    '<div class="gnw-action-grid">'+
-   '<button type="button" data-gnw-search="literal" data-gnw-value="'+esc(word)+'">Exact</button>'+
-   '<button type="button" data-gnw-search="terms" data-gnw-value="'+esc(word)+'">Words + terms</button>'+
-   (lemma?'<button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(lemma)+'">Same lemma</button>':'')+
-   (root?'<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(root)+'">Shared root</button>':'')+
+   '<button type="button" data-gnw-search="literal" data-gnw-value="'+esc(word)+'">Exact word</button>'+
+   '<button type="button" data-gnw-search="terms" data-gnw-value="'+esc(word)+'">Ordinary search</button>'+
+   (lemma?'<button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(lemma)+'">Other forms</button>':'')+
+   (root?'<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(root)+'">Root family</button>':'')+
    '</div></section>';
  return '<header class="gnw-header"><div><small>WORD CONTEXT · '+(section?'§'+esc(section)+' · ¶'+(segment+1):'CURRENT SELECTION')+'</small>'+
   '<h2 id="gnw-title" lang="ar" dir="rtl">'+esc(word)+'</h2></div><button type="button" data-gnw-close="1" aria-label="Close word context">×</button></header>'+
   '<div class="gnw-body">'+provenance+analysisSection+dictionary+editorial+own+fullActions+
   '<p class="gnw-footnote">A dictionary term, source note, personal annotation and search match are independent layers. Nothing is changed or saved by opening this panel.</p></div>';
 }
-async function openWord(word,anchor,grid,trigger=null){
+async function openWord(word,anchor,grid,trigger=null,point=null){
  if(!AR.test(word)||!BOOK)return;
  const section=locator(),segment=Number(grid?.dataset.segment||0);
  const originalTarget=trigger||anchor;
@@ -180,9 +200,9 @@ async function openWord(word,anchor,grid,trigger=null){
  const highlightType=originalTarget?.closest?.('mark.search-hit')?'Temporary search highlight':
    originalTarget?.closest?.('[data-rd-quote],[data-rd-bookmark]')?'Saved reading annotation':null;
  const privateInfo=readPrivate(section,segment,word);
- const engine=morph();
- let analysis=engine?.disambiguate(word,[], 'daruri',
-   section?'passage:'+section+':'+segment:null)||
+ const engine=morph(),occurrence=passageOccurrence(word,grid,point);
+ let analysis=engine?.disambiguate(word,occurrence.neighbours,'daruri',
+   section?'passage:'+section+':'+segment:null,occurrence.position)||
    {best:null,alternatives:[],certainty:'unavailable'};
  const ctx={word,anchor,grid,section,segment,notes:noted,highlightType,privateInfo,analysis,
    terms:getInPageDictionary(word,analysis)};
@@ -200,8 +220,8 @@ async function openWord(word,anchor,grid,trigger=null){
  // Upgrade from a curated lexicon to the precomputed source-linked occurrence.
  engine?.loadLexicon().then(()=>engine.ensure('daruri')).then(()=>{
    if(shade?.hidden||selected!==ctx)return;
-   ctx.analysis=engine.disambiguate(word,[], 'daruri',
-     section?'passage:'+section+':'+segment:null);
+   ctx.analysis=engine.disambiguate(word,occurrence.neighbours,'daruri',
+     section?'passage:'+section+':'+segment:null,occurrence.position);
    ctx.terms=getInPageDictionary(word,ctx.analysis);
    const card=$('.gnw-card',shade);
    if(card)card.innerHTML=wordMarkup(ctx);
@@ -222,8 +242,8 @@ function installDictionaryActions(){
  button.id='gnw-dictionary-search';button.className='gnw-dictionary-actions';
  button.innerHTML='<p><strong>Explore this term</strong> · dictionary information remains above</p>'+
    '<button type="button" data-gnw-search="terms" data-gnw-value="'+esc(t)+'">Search text</button>'+
-   '<button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(t)+'">Lemma forms</button>'+
-   '<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(t)+'">Related root</button>';
+   '<button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(t)+'">Word forms</button>'+
+   '<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(t)+'">Root family</button>';
  container.append(button);
 }
 function augmentSelectionBar(){
@@ -280,7 +300,7 @@ document.addEventListener('click',e=>{
  const at=atTap(e),n=at.node;
  if(!n||!content.contains(n))return;
  const word=currentToken(n,at.offset);
- if(word)openWord(word,n.parentElement,content.closest('.passage-grid'),e.target);
+ if(word)openWord(word,n.parentElement,content.closest('.passage-grid'),e.target,at);
 });
 document.addEventListener('keydown',e=>{
  if(e.key==='Escape'&&shade&&!shade.hidden){e.preventDefault();close();}
