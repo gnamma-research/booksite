@@ -66,7 +66,7 @@ def main():
       "stress_note_text":"Experimental inline reference and a same-page footnote. This is not a publisher's original note.",
       "no_personal_user_data":True,
     }
-    if fixture["stress_phrase"] not in " ".join(seg["arabic"] for seg in by_id[65]["segments"]):
+    if fixture["stress_phrase"] not in " ".join(seg["vocalized"] for seg in by_id[65]["segments"]):
         raise ValueError("The real §65 source phrase is absent; do not invent fixture text")
     raw=(json.dumps(fixture,ensure_ascii=False,separators=(",",":"))+"\n").encode("utf8")
     a.out.parent.mkdir(parents=True,exist_ok=True)
