@@ -4,6 +4,7 @@ on:
     branches: [experiment/daruri-browser-arabic-unicode-layer-20261023]
     paths:
       - 'daruri/browser-html-pdf/unicode_layer_probe.mjs'
+      - 'daruri/browser-html-pdf/verify_unicode_cmap.py'
       - 'daruri/browser-html-pdf/browser.mjs'
       - 'daruri/browser-html-pdf/test_browser.cjs'
       - 'daruri/browser-html-pdf/package.json'
@@ -79,6 +80,15 @@ jobs:
               --mode excerpt \
               --report /tmp/daruri-semantic-${{ matrix.browser }}/$variant/native.json
           done
+      - name: Independently diagnose actual font CMaps, aliased resources and original Arabic logical extraction
+        run: |
+          for variant in baseline unicode; do
+            python daruri/browser-html-pdf/verify_unicode_cmap.py \
+              --pdf /tmp/daruri-semantic-${{ matrix.browser }}/$variant/daruri-browser-only-excerpt-NONRELEASE.pdf \
+              --fixture daruri/browser-html-pdf/fixture.json \
+              --browser-evidence /tmp/daruri-semantic-${{ matrix.browser }}/$variant/browser-evidence.json \
+              --report /tmp/daruri-semantic-${{ matrix.browser }}/$variant/cmap-report.json
+          done
       - name: Reject altered visual pages and surface whether native Unicode search improved
         run: |
           python - <<'PY'
@@ -113,6 +123,8 @@ jobs:
           path: |
             /tmp/daruri-semantic-${{ matrix.browser }}/baseline/native.json
             /tmp/daruri-semantic-${{ matrix.browser }}/unicode/native.json
+            /tmp/daruri-semantic-${{ matrix.browser }}/baseline/cmap-report.json
+            /tmp/daruri-semantic-${{ matrix.browser }}/unicode/cmap-report.json
             /tmp/daruri-semantic-${{ matrix.browser }}/unicode/compare.json
             /tmp/daruri-semantic-${{ matrix.browser }}/unicode/browser-evidence.json
             /tmp/daruri-semantic-${{ matrix.browser }}/unicode/daruri-browser-only-excerpt-NONRELEASE.pdf
