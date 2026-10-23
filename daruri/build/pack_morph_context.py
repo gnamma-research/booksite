@@ -69,7 +69,13 @@ def pack(index: dict, text_by_id: dict[str, str], shard_size: int = 48) -> tuple
             if lemma_key:
                 lemma_postings[lemma_key].append([ref, position, status])
             if root_key:
-                root_postings[root_key].append([ref, position, status])
+                # status=2 is a *provisional curated headword root hint*, not
+                # a human-reviewed classical Arabic root (status=1).
+                origin_meta = entry[7] if len(entry)>7 and isinstance(entry[7],dict) else {}
+                root_status = (2 if origin_meta.get("root_origin") in
+                    ("curated-headword-only", "curated-headword-and-partial-raw-root")
+                    and status != 1 else status)
+                root_postings[root_key].append([ref, position, root_status])
             form_key = fold(surface)
             family = forms.setdefault(form_key, {"l": set(), "r": set()})
             if lemma_key:
