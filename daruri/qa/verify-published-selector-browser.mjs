@@ -195,7 +195,16 @@ try{
   await include('glossary');
   await include('index');
   await check('ready');
-  assert.match(await ui.locator('#pe-edition').inputValue(),/apparatus\/daruri-reading-bilingual-glossary-index\.pdf/);
+  // Stage 1: the full apparatus PDF is not a stored file. Personal export
+  // becomes available only after the exact profile is generated on-device.
+  assert.equal(await ui.locator('#pe-edition').inputValue(),'');
+  const create=ui.locator('[data-es-stage1-create]');
+  assert.equal(await create.isVisible(),true);
+  const createLink=await create.getAttribute('href');
+  assert.match(createLink,/dynamic-editions\.html\?profile=apparatus%2Fdaruri-reading-bilingual-glossary-index\.pdf/);
+  assert.match(createLink,/autostart=personal/);
+  assert.equal(await ui.locator('[data-es-action="open"]').isVisible(),false);
+  assert.equal(await ui.locator('[data-es-action="download"]').isVisible(),false);
   assert.match(await ui.locator('.gn-es-spec-apparatus').textContent(),/Glossary · Full index/);
 
   // The same personal controls must work inside scholarly Reference.
