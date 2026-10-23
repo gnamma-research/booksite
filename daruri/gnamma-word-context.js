@@ -259,7 +259,10 @@ async function openWord(word,anchor,grid,trigger=null,point=null){
  shade.hidden=false;rendering=false;
  $('button[data-gnw-close]',shade)?.focus({preventScroll:true});
  // Upgrade from a curated lexicon to the precomputed source-linked occurrence.
- engine?.loadLexicon().then(()=>engine.ensure('daruri')).then(()=>{
+ engine?.loadLexicon().then(()=>engine.ensure('daruri')).then(async()=>{
+   if(section&&engine.ensureDetail)await engine.ensureDetail('daruri',
+     'passage:'+section+':'+segment);
+  }).then(()=>{
    if(shade?.hidden||selected!==ctx)return;
    ctx.analysis=engine.disambiguate(word,occurrence.neighbours,'daruri',
      section?'passage:'+section+':'+segment:null,occurrence.position);
