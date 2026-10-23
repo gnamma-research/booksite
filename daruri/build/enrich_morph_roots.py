@@ -26,7 +26,7 @@ import argparse
 import json
 from collections import Counter
 from pathlib import Path
-import re
+import unicodedata
 import sys
 
 from build_gnamma_morph_index import ROOT, fold, normalize_model_root
@@ -39,12 +39,12 @@ ACCEPTED_SOURCE = {"contextual-bert", "contextual-alternative"}
 def lexical_key(text: str) -> str:
     """Preserve shadda and written hamza: أَمَرّ must NOT equal أَمْر.
 
-    Search-query folding is deliberately much more permissive than a
-    dictionary-identity comparison. Conflating the two creates false roots.
+    Search-query folding is deliberately more permissive than a dictionary
+    identity comparison. Conflating the two creates false root assignments.
     """
-    raw = str(text or "").lower().replace("\\u0640", "")
-    return re.sub(r"[\\u0300-\\u036f\\u064b-\\u0650\\u0652-\\u065f\\u0670\\u06d6-\\u06ed]",
-                  "", raw).replace("ٱ", "ا")
+    raw = str(text or "").lower().replace("ـ", "")
+    return "".join(ch for ch in unicodedata.normalize("NFC", raw)
+                   if not unicodedata.combining(ch) or ch == "ّ").replace("ٱ", "ا")
 
 
 def root_hints(lex: dict) -> dict[str, str]:
