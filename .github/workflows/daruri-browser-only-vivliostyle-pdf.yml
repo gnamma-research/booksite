@@ -3,7 +3,12 @@ on:
   push:
     branches: [experiment/daruri-browser-html-to-pdf-vivliostyle-20261023]
     paths:
-      - 'daruri/browser-html-pdf/**'
+      - 'daruri/browser-html-pdf/browser.mjs'
+      - 'daruri/browser-html-pdf/test_browser.cjs'
+      - 'daruri/browser-html-pdf/build_fixture.py'
+      - 'daruri/browser-html-pdf/verify_native.py'
+      - 'daruri/browser-html-pdf/package.json'
+      - 'daruri/browser-html-pdf/vite.config.mjs'
       - '.github/workflows/daruri-browser-only-vivliostyle-pdf.yml'
   workflow_dispatch:
 permissions:
@@ -28,6 +33,9 @@ jobs:
           - browser: chromium
             mode: excerpt
             pdfua: true
+          - browser: chromium
+            mode: excerpt
+            forcefaces: true
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -82,6 +90,7 @@ jobs:
           DARURI_BROWSER_ENGINE: ${{ matrix.browser }}
           DARURI_BROWSER_MODE: ${{ matrix.mode }}
           DARURI_BROWSER_PDFUA: ${{ matrix.pdfua && '1' || '0' }}
+          DARURI_BROWSER_FORCEFACES: ${{ matrix.forcefaces && '1' || '0' }}
           DARURI_BROWSER_OUTPUT: /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}
         run: node daruri/browser-html-pdf/test_browser.cjs
       - name: Independently measure native source copying/search, note placement, links and actual PDF vectors
@@ -110,7 +119,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: daruri-browser-html-pdf-${{ matrix.browser }}-${{ matrix.mode }}-${{ matrix.pdfua && 'pdfua' || 'ordinary' }}-NOT_RELEASED
+          name: daruri-browser-html-pdf-${{ matrix.browser }}-${{ matrix.mode }}-${{ matrix.pdfua && 'pdfua' || (matrix.forcefaces && 'forcefaces' || 'ordinary') }}-NOT_RELEASED
           path: |
             /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/browser-evidence.json
             /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/native-acceptance.json
