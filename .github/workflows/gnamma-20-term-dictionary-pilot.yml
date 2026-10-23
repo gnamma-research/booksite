@@ -1,0 +1,49 @@
+name: One-off 20-term classical morphology dictionary pilot
+# Experimental branch only. No model inference, public publication, or updates.
+on:
+  push:
+    branches:
+      - experiment/gnamma-20-term-trial-20261023
+    paths:
+      - '.github/workflows/gnamma-20-term-dictionary-pilot.yml'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  compare-twenty:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download existing full Daruri candidate index
+        uses: actions/download-artifact@v4
+        with:
+          run-id: 39883804764
+          name: contextual-candidates-daruri-3
+          path: ${{ runner.temp }}/daruri
+          github-token: ${{ github.token }}
+      - name: Download existing full Mustasfa candidate index
+        uses: actions/download-artifact@v4
+        with:
+          run-id: 39883804764
+          name: contextual-candidates-mustasfa-3
+          path: ${{ runner.temp }}/mustasfa
+          github-token: ${{ github.token }}
+      - name: Compare twenty source-linked technical words against original AI
+        run: |
+          python3 -m py_compile daruri/build/pilot_20_technical_terms.py
+          python3 daruri/build/pilot_20_technical_terms.py \
+            --daruri "$RUNNER_TEMP/daruri/morph-daruri-v1.json" \
+            --mustasfa "$RUNNER_TEMP/mustasfa/morph-mustasfa-v1.json" \
+            --out-dir "$RUNNER_TEMP/pilot20"
+          cat "$RUNNER_TEMP/pilot20/20-terms-report.md"
+      - name: Upload results and untouched source-linked review data
+        uses: actions/upload-artifact@v4
+        with:
+          name: dictionary-pilot-20-terms
+          path: ${{ runner.temp }}/pilot20/
+          retention-days: 14
+          if-no-files-found: error
