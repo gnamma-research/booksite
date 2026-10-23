@@ -639,7 +639,7 @@ const ui={opened:false,expanded:false,query:'',facet:'all',mode:'terms',scope:'w
   orthography:'normalized',builderOpen:false,savedOpen:false,extraOpen:false,hideRefinements:false,builderError:'',
   builderRows:[{join:'AND',kind:'word',text:'',field:'all'},
                {join:'AND',kind:'word',text:'',field:'all'}],
-  queryError:'',queryExplanation:''};
+  queryError:'',queryExplanation:'',mobileView:'results'};
 let host=null,inputTimer=0,renderNonce=0,lastStatus='',modeLayoutDirty=false;
 function filterButton(id,text,selected,extra){
  return '<button type="button" class="gns-chip'+(selected?' gns-current':'')+'" data-gns-'+extra+'="'+xml(id)+'" aria-pressed="'+selected+'">'+esc(text)+'</button>';
@@ -721,7 +721,7 @@ function gnLoadSavedQuery(index){
  const record=gnLoadSaved()[index];if(!record)return;
  const keys=['query','mode','scope','facet','sort','booleanScope','orthography','nearTerm','nearGap','nearOrdered','booleanScope','orthography'];
  for(const key of keys)if(Object.hasOwn(record,key))ui[key]=record[key];
- ui.expanded=true;ui.savedOpen=true;ui.page=CONFIG.pageSize;ui.pendingReturn=null;
+ ui.expanded=true;ui.savedOpen=true;ui.mobileView='results';ui.page=CONFIG.pageSize;ui.pendingReturn=null;
  rerender();
 }
 function gnSavedPanel(){
@@ -968,12 +968,40 @@ function facetSidebar(){
    TYPES.map(t=>row(t[0],t[1])).join('')+
    '<div class="gns-aside-info">Source citations, terms and editorial comparisons are distinguished from the authorial text. Private notes are only searched on this device.</div></nav>';
 }
+function mobileResearchBar(){
+ const modes={terms:'Normal search',literal:'Exact word',
+   'morph-lemma':'Word forms','morph-root':'Related words',
+   concepts:'Scholarly concepts',proximity:'Nearby words',scholarly:'Advanced search'};
+ const content=ui.facet==='all'?'All sources':ui.facet==='text'?'Text only':ui.facet==='mine'?'My notes':labelFor(ui.facet);
+ const summary=[modes[ui.mode]||'Normal search',ui.scope==='library'?'Gnamma Library':'Darūrī',content].join(' · ');
+ return '<div class="gns-mobile-resultsbar" aria-label="Current research search settings">'+
+   '<span class="gns-mobile-search-summary">'+esc(summary)+'</span>'+
+   '<button type="button" data-gns-mobile-view="build" aria-label="Refine research search">Refine</button>'+
+   '<button type="button" data-gns-mobile-view="saved" aria-label="Open saved searches">Saved</button>'+
+   '</div>';
+}
 function markup(){
  const tabs=ui.expanded?'<strong class="gns-research-caption">Research search</strong>':filterButton('all','All',ui.facet==='all','quick')+
   filterButton('text','Text',ui.facet==='text','quick')+
   filterButton('mine','Mine',ui.facet==='mine'||['personal','highlight','bookmark'].includes(ui.facet),'quick');
+ const workspace='<div class="gns-workspace">'+facetSidebar()+
+   '<div class="gns-listpane" id="gns-listpane" tabindex="-1">'+resultControls()+renderResultList()+'</div></div>';
+ const buildTitle='<div class="gns-mobile-build-title"><strong>Refine research search</strong>'+
+   '<button type="button" data-gns-mobile-view="results">Cancel</button></div>';
+ const research=ui.expanded?
+   '<div class="gns-research-grid"><div class="gns-refine-pane">'+buildTitle+filterPanel()+'</div>'+workspace+'</div>':
+   filterPanel()+workspace;
+ const mobileSaved=ui.expanded?'<div class="gns-mobile-saved-view" aria-label="Saved research searches">'+
+   '<div class="gns-mobile-build-title"><strong>Saved searches</strong><button type="button" data-gns-mobile-view="results">Back to results</button></div>'+
+   gnSavedPanel()+'</div>':'';
+ const mobileBuildActions=ui.expanded?'<div class="gns-mobile-build-actions">'+
+   '<button type="button" data-gns-mobile-view="results">Show '+ui.resultCount.toLocaleString()+' results</button></div>':'';
  return '<div class="gns-backdrop" data-gns-close="1"></div>'+
-  '<section class="gns-dialog'+(ui.expanded?' gns-expanded':'')+(ui.sourceCounts?' gns-show-sources':'')+'" role="dialog" aria-modal="true" aria-labelledby="gns-title">'+
+  '<section class="gns-dialog'+(ui.expanded?' gns-expanded':'')+
+   (ui.expanded&&ui.mobileView==='build'?' gns-mobile-building':'')+
+   (ui.expanded&&ui.mobileView==='saved'?' gns-mobile-show-saved':'')+
+   (ui.sourceCounts?' gns-show-sources':'')+
+   '" role="dialog" aria-modal="true" aria-labelledby="gns-title">'+
    '<header class="gns-header">'+
    '<h2 id="gns-title" class="gns-sr-only">Search Gnamma texts and annotations</h2>'+
    '<label class="gns-searchbox"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6"/><path d="m15.5 15.5 5 5"/></svg><input id="gns-query" type="search" inputmode="search" autocomplete="off" spellcheck="false" dir="auto" placeholder="'+(ui.mode==='proximity'?'First term, e.g. qiyas':'Search text, concepts, notes…')+'" aria-label="Search Arabic, English and annotations" value="'+xml(ui.query)+'"/></label>'+
@@ -983,9 +1011,8 @@ function markup(){
    '<div class="gns-switchbar"><div role="group" aria-label="Main search categories" class="gns-main-tabs">'+tabs+'</div>'+
    '<button type="button" class="gns-toggle-size" data-gns-expand="'+(ui.expanded?'0':'1')+'">'+(ui.expanded?'Quick Find':'Research search')+
    ' <span aria-hidden="true">'+(ui.expanded?'↙':'↗')+'</span></button></div>'+
-   filterPanel()+
-   '<div class="gns-workspace">'+facetSidebar()+
-   '<div class="gns-listpane" id="gns-listpane" tabindex="-1">'+resultControls()+renderResultList()+'</div></div>'+
+   (ui.expanded?mobileResearchBar():'')+
+   research+mobileSaved+mobileBuildActions+
    '<footer class="gns-foot"><span>Gnamma · scholarly search</span><span>Esc to close'+(ui.expanded?' · ↑↓ to navigate':' · Enter to open')+'</span></footer>'+
   '</section>';
 }
@@ -1044,7 +1071,7 @@ function renderResultsOnly(){
 }
 function openWith(query,mode='terms',facet='all'){
  if(!ui.opened)open();
- ui.query=String(query||'');ui.mode=mode;ui.facet=facet;ui.expanded=true;
+ ui.query=String(query||'');ui.mode=mode;ui.facet=facet;ui.expanded=true;ui.mobileView='results';
  ui.showFilters=false;ui.page=CONFIG.pageSize;ui.pendingReturn=null;
  rerender();
 }
@@ -1053,7 +1080,7 @@ function open(restoring=false){
  if(!restoring){
   // The single magnifier remains a quiet Quick Find, even if the reader
   // last used a more complex research query. A Return link restores it.
-  ui.expanded=false;ui.facet='all';ui.showFilters=false;ui.hideRefinements=false;ui.extraOpen=false;ui.page=CONFIG.pageSize;
+  ui.expanded=false;ui.mobileView='results';ui.facet='all';ui.showFilters=false;ui.hideRefinements=false;ui.extraOpen=false;ui.page=CONFIG.pageSize;
   ui.mode='terms';ui.nearTerm='';ui.nearGap=5;ui.nearOrdered=false;
   ui.booleanScope='passage';ui.orthography='normalized';
   ui.entryHash=location.hash;ui.entryScroll=window.scrollY;ui.pendingReturn=null;ui.sourceCounts=false;
@@ -1270,12 +1297,29 @@ document.addEventListener('click',event=>{
  '[data-gns-retry],[data-gns-download],[data-gns-pattern-example],[data-gns-morph-pick],[data-gns-toggle-sources],'+
  '[data-gns-add-row],[data-gns-remove-row],[data-gns-apply-builder],'+
  '[data-gns-save],[data-gns-load],[data-gns-delete],'+
- '[data-gns-evidence-result]');
+ '[data-gns-evidence-result],[data-gns-mobile-view]');
  if(!target)return;
  event.preventDefault();event.stopPropagation();
  if(target.hasAttribute('data-gns-close')){close();return;}
- if(target.hasAttribute('data-gns-expand')){ui.expanded=target.dataset.gnsExpand==='1';ui.hideRefinements=false;ui.page=CONFIG.pageSize;rerender();return;}
- if(target.hasAttribute('data-gns-toggle-filters')){if(ui.expanded)ui.hideRefinements=!ui.hideRefinements;else ui.showFilters=!ui.showFilters;rerender();return;}
+ if(target.hasAttribute('data-gns-mobile-view')){
+  ui.mobileView=target.dataset.gnsMobileView==='build'?'build':
+   target.dataset.gnsMobileView==='saved'?'saved':'results';
+  if(ui.mobileView==='saved')ui.savedOpen=true;
+  if(ui.mobileView==='results'&&document.activeElement instanceof HTMLElement)
+   document.activeElement.blur(); // dismiss mobile keyboard before reading
+  rerender(false);
+  if(ui.mobileView==='results')$('#gns-listpane',host)?.focus({preventScroll:true});
+  return;
+ }
+ if(target.hasAttribute('data-gns-expand')){ui.expanded=target.dataset.gnsExpand==='1';ui.mobileView='results';ui.hideRefinements=false;ui.page=CONFIG.pageSize;rerender();return;}
+ if(target.hasAttribute('data-gns-toggle-filters')){
+  if(ui.expanded&&window.matchMedia('(max-width:760px)').matches){
+   ui.mobileView=ui.mobileView==='build'?'results':'build';
+   rerender(false);return;
+  }
+  if(ui.expanded)ui.hideRefinements=!ui.hideRefinements;else ui.showFilters=!ui.showFilters;
+  rerender();return;
+ }
  if(target.hasAttribute('data-gns-quick')){change('facet',target.dataset.gnsQuick);return;}
  if(target.hasAttribute('data-gns-facet')){change('facet',target.dataset.gnsFacet);return;}
  if(target.hasAttribute('data-gns-more')){ui.page+=CONFIG.pageSize;rerender(false);return;}
@@ -1325,7 +1369,7 @@ document.addEventListener('click',event=>{
   if(!source){ui.builderOpen=true;ui.builderError='Add at least one condition to the builder.';rerender(false);return;}
   const parsed=window.GnammaScholarly.parse(source,ui.orthography==='original'?x=>String(x??'').toLowerCase().normalize('NFC'):fold);
   if(parsed.error){ui.builderError=parsed.error;ui.builderOpen=true;rerender(false);return;}
-  ui.query=source;ui.mode='scholarly';ui.expanded=true;ui.builderOpen=true;ui.page=CONFIG.pageSize;
+  ui.query=source;ui.mode='scholarly';ui.expanded=true;ui.builderOpen=false;ui.mobileView='results';ui.page=CONFIG.pageSize;
   ui.pendingReturn=null;rerender();return;
  }
  if(target.hasAttribute('data-gns-save')){gnSaveCurrent();return;}
@@ -1423,7 +1467,10 @@ document.addEventListener('keydown',event=>{
  }
  if(event.key==='Enter'&&event.target?.id==='gns-query'){
   event.preventDefault();clearTimeout(inputTimer);renderResultsOnly();
-  openRecord(ui.results[0]);
+  if(ui.expanded&&window.matchMedia('(max-width:760px)').matches){
+   ui.mobileView='results';event.target.blur();rerender(false);
+   $('#gns-listpane',host)?.focus({preventScroll:true});
+  }else openRecord(ui.results[0]);
  }
 },true);
 document.addEventListener('toggle',event=>{
