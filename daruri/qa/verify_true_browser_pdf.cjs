@@ -24,7 +24,7 @@ function delay(n){return new Promise(r=>setTimeout(r,n))}
 async function main(){
  const engine=kind==='webkit'?webkit:chromium;
  assert(['webkit','chromium'].includes(kind));
- assert(['excerpt','english-full','bilingual-full'].includes(mode));
+ assert(['hello','arabic-mini','excerpt','english-full','bilingual-full'].includes(mode));
  fs.mkdirSync(targetDir,{recursive:true});
  server=spawn('python3',['-m','http.server',String(port),'--bind','127.0.0.1','--directory',repo],{stdio:'ignore'});
  await delay(1000);
@@ -38,9 +38,10 @@ async function main(){
  await page.goto(viewer,{waitUntil:'domcontentloaded',timeout:45000});
  await page.waitForFunction(()=>document.querySelector('#status')?.textContent.startsWith('Ready:'),null,{timeout:45000});
  await page.selectOption('#scenario',mode);
- const downloadPromise=page.waitForEvent('download',{timeout:180000}).catch(()=>null);
+ const timeout=Number(process.env.GN_PDF_TIMEOUT||180000);
+ const downloadPromise=page.waitForEvent('download',{timeout}).catch(()=>null);
  await page.click('#make');
- await page.waitForFunction(()=>['done','error'].includes(window.__pdfProof?.state),null,{timeout:180000});
+ await page.waitForFunction(()=>['done','error'].includes(window.__pdfProof?.state),null,{timeout});
  const status=await page.evaluate(()=>window.__pdfProof);
  const result={
    status,mode,engine:kind,origin:host,
