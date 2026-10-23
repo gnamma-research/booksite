@@ -48,6 +48,11 @@ async function exercise(engine,mobile){
   await page.goto(URL,{waitUntil:'domcontentloaded',timeout:90000});
   await probe(page);
   const items=page.locator('#readerDock .gn-dock-private-status');
+  assert.equal((await items.locator('.gn-dock-saved-prefix').innerText()).trim(),'Saved',
+    name+': visible saved-state label must distinguish bookmarks from citations');
+  assert.match(await items.getAttribute('aria-label'),/personal saved items/i);
+  assert.equal(await items.locator('[data-gn-mark="section"]').count(),1,
+    name+': section category must remain visible in the bookmark navigator');
   if(mobile){
    const summary=items.locator('.gn-dock-summary');
    await summary.waitFor();
@@ -55,6 +60,8 @@ async function exercise(engine,mobile){
    await summary.click();
    const popup=page.locator('#gn-dock-saved-sheet');
    await popup.waitFor();
+   assert.equal((await popup.locator('.gn-dock-sheet-heading h3').innerText()).trim(),
+    'Your saved items in §195',name+': popup heading must name saved items');
    assert.equal(await popup.locator('.gn-dock-sheet-item').count(),7,
     name+': actual saved-item list should contain seven entries');
    assert.ok(await popup.getByText('Research question about §195').count());
@@ -72,6 +79,7 @@ async function exercise(engine,mobile){
    assert.equal(await page.locator('#gn-dock-saved-sheet').count(),0);
   }else{
    assert.equal(await items.locator('[data-gn-mark="dictionary"] .gn-dock-count').innerText(),'1');
+   assert.equal(await items.locator('[data-gn-mark="section"] .gn-dock-count').innerText(),'1');
    assert.equal(await items.locator('[data-gn-mark="quran"] .gn-dock-count').innerText(),'2');
    assert.equal(await items.locator('[data-gn-mark="hadith"] .gn-dock-count').innerText(),'1');
    await items.locator('[data-gn-mark="quran"]').click();
