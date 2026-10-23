@@ -1,0 +1,79 @@
+name: Daruri Stage2 complete 414 bilingual Amiri Typst PDF in ordinary browsers (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-stage2-typst-fullplain-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/typst_full_browser*'
+      - 'daruri/qa/stage2_shootout/test_typst_full_browser.cjs'
+      - '.github/workflows/daruri-stage2-typst-full-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-typst-414-browser-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  full-source-normal-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Generate original SHA-bound 414 full Arabic and English paragraphs
+        run: |
+          python daruri/qa/stage2_shootout/source_fixture.py daruri/qa/stage2_shootout/source.json
+      - name: Install actual original Arabic Amiri font into same-origin test-only runtime
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri poppler-utils
+          mkdir -p daruri/qa/stage2_shootout/runtime
+          cp /usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf \
+            daruri/qa/stage2_shootout/runtime/Amiri-Regular.ttf
+          sha256sum daruri/qa/stage2_shootout/runtime/Amiri-Regular.ttf
+      - name: Install pinned Typst WebAssembly worker and actual browser
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Verify the real browser compiler is syntactically valid
+        run: |
+          node --check daruri/qa/stage2_shootout/typst_full_browser.mjs
+          node --check daruri/qa/stage2_shootout/test_typst_full_browser.cjs
+          npm run build --prefix daruri/qa/stage2_shootout
+      - name: Browser click generates complete vector PDF blob, never CDP print or server PDF
+        env:
+          STAGE2_BROWSER: ${{ matrix.browser }}
+          STAGE2_OUTPUT: /tmp/typst-414-browser-${{ matrix.browser }}
+        run: node daruri/qa/stage2_shootout/test_typst_full_browser.cjs
+      - name: Independent PDF syntax and structure/readability audit
+        run: |
+          python -m pip install -q PyMuPDF==1.26.7
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          folder=Path('/tmp/typst-414-browser-${{ matrix.browser }}')
+          pdf=folder/'typst-browser-full-414-amiri-NONRELEASE.pdf'
+          with fitz.open(pdf) as doc:
+            assert len(doc)>=80 and len(doc.get_toc())>=400
+            assert sum(len(p.get_links()) for p in doc)>=400
+            print('REAL_FULL_BROWSER_PDF_NAVIGATION',len(doc),len(doc.get_toc()),
+                  sum(len(p.get_links()) for p in doc),pdf.stat().st_size)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-typst-full-414-browser-${{ matrix.browser }}-NONRELEASE
+          path: /tmp/typst-414-browser-${{ matrix.browser }}
+          if-no-files-found: warn
+          retention-days: 14
