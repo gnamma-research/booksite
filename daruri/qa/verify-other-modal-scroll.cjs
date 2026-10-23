@@ -40,7 +40,7 @@ async function check(engine,width,touch){
    await page.waitForFunction(()=>!window.GnammaReaderScrollLock.active(),null,{timeout:10000});
    const restored=await page.evaluate(()=>({position:document.body.style.position,overflow:document.documentElement.style.overflow,y:window.scrollY}));
    assert(restored.position===''&&restored.overflow==='',label+' '+description+': lock not released');
-   assert(Math.abs(restored.y-before)<4,label+' '+description+': lost reading position');
+   assert(Math.abs(restored.y-before)<4,label+' '+description+': lost reading position, expected '+before+' got '+restored.y);
   }
   await page.evaluate(()=>document.getElementById('settingsBtn').click());
   await verifyOpen('#settingsOverlay:not([hidden]) [role="dialog"]','settings');
@@ -72,6 +72,10 @@ async function check(engine,width,touch){
   await verifyClosed('research search');
   const noteEditor=page.locator('[data-rd="section-note"]').first();
   await noteEditor.waitFor({timeout:30000});
+  // Playwright may scroll this inline reader control into view before tapping.
+  // The scroll-lock must restore the position AT OPEN, not the earlier search location.
+  await noteEditor.scrollIntoViewIfNeeded();
+  before=await page.evaluate(()=>window.scrollY);
   await noteEditor.click();
   await verifyOpen('#gn-rd-editor-shade [role="dialog"]','Reading Desk editor');
   await page.locator('#gn-rd-editor-shade [data-rd="close-editor"]').first().click();
