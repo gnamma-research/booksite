@@ -167,11 +167,12 @@ function detailedGrammar(best,alternatives){
   .filter(([key])=>f[key]&&f[key]!=='na');
  const bits=primary.map(([key,name])=>'<div><dt>'+esc(name)+'</dt><dd>'+esc(grammarName(key,f[key]))+'</dd></div>').join('');
  const split=f.d3seg?'<p><strong>Model segmentation:</strong> <bdi lang="ar" dir="rtl">'+esc(f.d3seg)+'</bdi></p>':'';
+ const pattern=f.pattern?'<p><strong>Stem pattern:</strong> <bdi lang="ar" dir="rtl">'+esc(f.pattern)+'</bdi></p>':'';
  const gloss=f.gloss?'<p>Model lexicon gloss (not a verified passage translation): '+esc(f.gloss)+'</p>':'';
  const suggested=f.diac&&f.diac!==best.surface?'<p>Suggested vowels: <bdi lang="ar" dir="rtl">'+esc(f.diac)+'</bdi></p>':'';
- const details=(primary.length||split||gloss||suggested)?
+ const details=(primary.length||split||pattern||gloss||suggested)?
   '<details class="gnw-grammar"><summary>More grammar</summary>'+
-   (bits?'<dl>'+bits+'</dl>':'')+suggested+split+gloss+
+   (bits?'<dl>'+bits+'</dl>':'')+suggested+split+pattern+gloss+
    '<small>Automatic features are not independently checked against Classical Arabic or editorial variants.</small></details>':'';
  const variants=alternatives.length?
   '<details class="gnw-grammar"><summary>'+alternatives.length+' other possible '+(alternatives.length===1?'analysis':'analyses')+'</summary>'+
