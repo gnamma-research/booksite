@@ -55,6 +55,13 @@ export async function experimentUnicodeLayer(pdfBytes,paginatedWindow,fixture) {
       // Register exactly one font in the PDF page resource dictionary.
       // 3 Tr is PDF's invisible text rendering mode, NOT opacity=0.
       page.setFont(font);
+      // pdf-lib's page.setFont() inserts a UNIQUE alias (e.g.
+      // /NotoNaskhArabic-Regular-123), while the raw PDF operator below
+      // uses font.name (/NotoNaskhArabic-Regular). The unaliased key MUST
+      // also resolve to the same actual font; otherwise MuPDF extracts the
+      // raw CID bytes as control characters and cannot search any Arabic.
+      // This difference was proven directly from the failed candidate PDF.
+      page.node.setFontDictionary(font.name,font.ref);
       page.pushOperators(
         beginText(),
         setFontAndSize(font.name,fontSize),
