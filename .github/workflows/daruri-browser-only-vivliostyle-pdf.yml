@@ -1,0 +1,95 @@
+name: Daruri 100% browser HTML-to-vector-PDF (native Arabic/notes acceptance RESEARCH)
+on:
+  push:
+    branches: [experiment/daruri-browser-html-to-pdf-vivliostyle-20261023]
+    paths:
+      - 'daruri/browser-html-pdf/**'
+      - '.github/workflows/daruri-browser-only-vivliostyle-pdf.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-true-browser-html-pdf-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser-native-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - browser: chromium
+            mode: excerpt
+          - browser: webkit
+            mode: excerpt
+          - browser: chromium
+            mode: full
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Produce 414 original aligned passages and original §65:1 from canonical structured text only
+        run: |
+          python daruri/browser-html-pdf/build_fixture.py \
+            --out daruri/browser-html-pdf/fixture.json
+      - name: Install browser-only layout and PDF emitter (Vite/Vivliostyle/@pdfme/pdf-lib), no PDF server
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/browser-html-pdf
+          cd daruri/browser-html-pdf
+          if [ '${{ matrix.browser }}' = 'webkit' ]; then
+            npx playwright install --with-deps webkit
+          else
+            npx playwright install --with-deps --only-shell chromium
+          fi
+      - name: Bundle actual browser HTML typesetter; forbid Node/server-side PDF generation
+        run: |
+          cd daruri/browser-html-pdf
+          npm run build
+          node --check browser.mjs
+          node --check test_browser.cjs
+          python -m py_compile build_fixture.py verify_native.py
+      - name: Generate and DOWNLOAD PDF inside a real ordinary browser; no privileged print API
+        env:
+          DARURI_BROWSER_ENGINE: ${{ matrix.browser }}
+          DARURI_BROWSER_MODE: ${{ matrix.mode }}
+          DARURI_BROWSER_OUTPUT: /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}
+        run: node daruri/browser-html-pdf/test_browser.cjs
+      - name: Independently measure native source copying/search, note placement, links and actual PDF vectors
+        run: |
+          python -m pip install -q 'PyMuPDF==1.26.7'
+          python daruri/browser-html-pdf/verify_native.py \
+            --pdf /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/daruri-browser-only-${{ matrix.mode }}-NONRELEASE.pdf \
+            --fixture daruri/browser-html-pdf/fixture.json \
+            --mode ${{ matrix.mode }} \
+            --report /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/native-acceptance.json
+      - name: Mark actual release gate explicitly without disguising unreadable Arabic as success
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import glob,json,os
+          files=glob.glob('/tmp/daruri-browser-*/native-acceptance.json')
+          if files:
+            row=json.load(open(files[0]))
+            if not row['strict_release_candidate']:
+              print('::warning::Actual downloadable browser-generated PDF exists, but Arabic Unicode/search, footnotes or exact links are NOT release certified. See artifact.')
+              print('NATIVE_PDF_PUBLICATION_GATE_BLOCKED',row['mode'],row['expected_source_passages'])
+            else:print('NATIVE_PDF_PUBLICATION_GATE_PASS',row['mode'])
+          else: print('::warning::Native acceptance evidence unavailable; browser conversion failed or did not run.')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-browser-html-pdf-${{ matrix.browser }}-${{ matrix.mode }}-NOT_RELEASED
+          path: |
+            /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/browser-evidence.json
+            /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/native-acceptance.json
+            /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/native-acceptance.first-page.png
+            /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/daruri-browser-only-${{ matrix.mode }}-NONRELEASE.pdf
+          retention-days: 12
+          if-no-files-found: warn
