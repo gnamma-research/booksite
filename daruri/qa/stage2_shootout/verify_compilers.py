@@ -27,7 +27,8 @@ def main():
   'outline_items':len(mup.get_toc()),'poppler_errors':raw.stderr[-1500:],
   'checks':[]}
  for row in fixture['sample']:
-  words=row['arabic'].split();query=' '.join(words[:2])
+  words=(row.get('arabic_unvowelled','') if 'plain' in pdf_path.name else row['arabic']).split()
+  query=' '.join(words[:2])
   middle=words[len(words)//2]
   mup_hit=[x for p in mup for x in p.search_for(query)]
   mid_hits=[x for p in mup for x in p.search_for(middle)]
