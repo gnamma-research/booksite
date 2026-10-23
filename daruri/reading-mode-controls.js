@@ -261,7 +261,11 @@ function create({state,rd}){
    const caret=document.createElement('span');caret.className='gn-dock-summary-caret';
    caret.textContent='⌃';caret.setAttribute('aria-hidden','true');
    button.append(savedPrefix(),symbols,fallback,caret);
-   button.addEventListener('click',()=>openSheet('all',button,place.section));
+   button.addEventListener('click',()=>{
+    const uniqueItem=total===1?[...groups.values()].flat()[0]:null;
+    if(uniqueItem)openSaved(uniqueItem,place.section);
+    else openSheet('all',button,place.section);
+   });
    status.append(button);
   }else{
    status.append(savedPrefix());
