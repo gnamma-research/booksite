@@ -27,9 +27,14 @@ new vm.Script(edition,{filename:'editions-selector.js'});
 new vm.Script(exporter,{filename:'personal-export.js'});
 assert.ok(page.includes('editions-selector.js?v='),'Reader loads shared Editions selector');
 assert.ok(sw.includes('editions-selector.js?v='),'PWA caches Editions selector');
-assert.ok(edition.includes("const NAV=['reading','reference']"),'Exactly two top-level tabs');
-for(const required of ['Reading &amp; Study','Reference','data-es-preset="reading"',
-  'data-es-preset="study"','data-es-preset="custom"','id="pe-form"',
+assert.ok(edition.includes("const NAV=['reading','reference']"),'Retain old preference migration');
+assert.equal((edition.match(/data-es-download-type="/g)||[]).length,4,'Exactly four file purposes');
+assert.equal((edition.match(/data-es-book-edition="/g)||[]).length,3,'Exactly three book editions');
+for(const required of ['Book PDF','Study Guide','Offline reader','Research files',
+  'data-es-download-type="book"','data-es-download-type="guide"',
+  'data-es-download-type="offline"','data-es-download-type="source"',
+  'data-es-book-edition="reading"','data-es-book-edition="study"',
+  'data-es-book-edition="reference"','id="pe-form"',
   'id="pe-personal"','id="pe-bookmarks"','id="pe-highlights"','id="pe-order"',
   'id="gn-es-prepare"','data-es-action="download"','data-daruri-bundle="html"',
   'id="pe-dates"','id="pe-annotations"','id="pe-picker"',
@@ -43,9 +48,11 @@ assert.ok(!edition.includes('personal-export.html?'),'No external personal-copy 
 assert.ok(!edition.includes('data-es-study-guide'),'Study guide is not a selected book edition');
 assert.ok(edition.includes("availability.hidden=result.status==='ready'"),
   'Do not show an unnecessary ready banner');
-assert.ok(edition.includes("crypto.subtle.digest('SHA-256'"),
-  'Real bytes must be checked when the user prepares a PDF');
-assert.ok(!edition.includes('data-es-nav="study"'),'Study belongs inside Reading & Study');
+assert.ok(edition.includes("download.href=open.getAttribute('href')"),
+  'Published PDFs must download directly as the exact selected file');
+assert.ok(edition.includes("prepare.hidden=true"),'No mandatory Prepare PDF stage');
+assert.ok(!edition.includes('data-es-nav="study"'),'No redundant nested Study navigation');
+assert.ok(edition.includes("Download Study Guide (PDF)"),'Standalone companion download must be explicit');
 assert.ok(!edition.includes('data-es-toggle="vowels"'),'The extra vowel-mark toggle must not reappear');
 assert.ok(edition.includes('Off → Plain → Vowelled'),'Arabic vowel states are controlled by AR alone');
 assert.ok(edition.includes("icon('note')")&&edition.includes("icon('highlight')"),'Personal icons are distinct');
@@ -57,7 +64,8 @@ assert.ok(exporter.includes("fetch(new URL('editions/maps/manifest.json',URL_ROO
 assert.ok(exporter.includes("candidate.base_sha256!==verifiedMap.base_sha256"),'Apparatus word links bound to exact base SHA');
 assert.ok(exporter.includes("wordMap=verifiedMap")&&exporter.includes("wordMap=candidate"),'Certified partial word maps usable');
 assert.ok(!exporter.includes('fetch("https://'),'Private user data is never sent to external service');
-assert.ok(style.includes('.gn-es .gn-es-preset-options'),'Preset controls styled');
+assert.ok(style.includes('.gn-es .gn-es-download-type'),'Purpose selector must be styled');
+assert.ok(style.includes('@container (min-width:725px)'),'Desktop chooses a compact two-column rail');
 assert.ok(style.includes('.gn-es .gn-es-picker'),'Inline note picker styled');
 assert.ok(style.includes('top:-7px'),'Vowelled Arabic overbar is raised above, not through, the AR letters');
 assert.ok(style.includes('flex-direction:row;'),'AR remains on the same centred baseline as EN');
@@ -103,4 +111,4 @@ for(const row of extra.files){
   assert.equal(fn(path.join(root,'editions',row.file)),row.sha256);
   assert.equal(fn(path.join(root,'editions',row.map_file)),row.map_sha256);
 }
-console.log('PASS: two tabs, 3 presets, shared private exporter, 12 verified base maps, 120 exact apparatus PDFs and safe word-level fallbacks.');
+console.log('PASS: four download purposes, three book editions, personal PDF, 12 maps, 120 exact apparatus PDFs and safe word fallbacks.');
