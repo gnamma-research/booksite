@@ -1505,7 +1505,7 @@ function create(ctx){
   // Capture before the reader's dictionary overlay clears __termClickOrigin.
   // The saved reference can then retain its exact paragraph, not just §.
   const clickedTerm=event.target.closest?.('[data-term]');
-  const sourceReader=document.getElementById('reader');
+  const sourceReader=$('#reader');
   if(clickedTerm&&state.route==='reader'&&sourceReader?.contains(clickedTerm)){
    const grid=clickedTerm.closest('.passage-grid');
    const n=String(grid?.closest('[data-reading-section]')?.dataset.readingSection||
