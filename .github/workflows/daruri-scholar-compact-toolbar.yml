@@ -1,0 +1,54 @@
+name: Daruri Scholar Compact toolbar QA
+on:
+  pull_request:
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/headerless-navigation.css'
+      - 'daruri/headerless-navigation.js'
+      - 'daruri/qa/verify-scholar-compact-topbar.cjs'
+      - '.github/workflows/daruri-scholar-compact-toolbar.yml'
+  push:
+    branches: [master]
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/headerless-navigation.css'
+      - 'daruri/headerless-navigation.js'
+      - 'daruri/qa/verify-scholar-compact-topbar.cjs'
+      - '.github/workflows/daruri-scholar-compact-toolbar.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Static JavaScript validation
+        run: |
+          node --check daruri/headerless-navigation.js
+          node --check daruri/qa/verify-scholar-compact-topbar.cjs
+      - name: Exclude unrelated inaccessible Microsoft apt feed
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then
+              sudo mv "$source" "$source.disabled"
+            fi
+          done
+      - name: Install Chromium and WebKit
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Verify true-reader controls and geometry
+        run: node daruri/qa/verify-scholar-compact-topbar.cjs
+      - name: Preserve mobile/desktop review screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scholar-compact-toolbar-screens
+          path: daruri/qa/toolbar-screenshots/
+          if-no-files-found: ignore
