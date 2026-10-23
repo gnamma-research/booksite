@@ -75,6 +75,59 @@ async function test(name,fn){await fn();pass++;console.log('PASS '+name)}
    assert.match(out,/result/);
    await page.locator('[data-gns-close="1"]').last().click();
   });
+  await test('research search explains word forms, roots and concepts',async()=>{
+   await page.locator('#searchBtn').click();
+   await page.locator('[data-gns-expand="1"]').first().click();
+   const choices=await page.locator('#gns-mode option').allTextContents();
+   assert.ok(choices.some(x=>/Word forms/.test(x)));
+   assert.ok(choices.some(x=>/Related words \(root\)/.test(x)));
+   assert.ok(choices.some(x=>/Scholarly concepts/.test(x)));
+   await page.locator('#gns-mode').selectOption('morph-lemma');
+   assert.match(await page.locator('#gns-mode-help').innerText(),/dictionary headword/);
+   assert.equal(await page.locator('.gns-extra-tools').getAttribute('open'),null);
+   await page.locator('.gns-extra-tools > summary').click();
+   assert.ok(await page.locator('#gns-display').count());
+   await page.locator('.gns-dialog [data-gns-close="1"]').click();
+  });
+  await test('clicked Arabic word identifies the verified source occurrence',async()=>{
+   const found=await page.evaluate(()=>{
+    const engine=window.GnammaMorphology;
+    const book=JSON.parse(document.querySelector('#editionData').textContent);
+    let selected=null;
+    for(const section of book.sections){
+     for(let index=0;index<(section.segments||[]).length;index++){
+      const segment=section.segments[index],text=segment.ar||segment.vocalized||'';
+      const tokens=engine.tokenize(text);
+      const position=tokens.findIndex((x,j)=>j>0&&tokens.slice(0,j)
+       .some(y=>engine.fold(y.word)===engine.fold(x.word)));
+      if(position>0){selected={section,index,text,tokens,position};break;}
+     }
+     if(selected)break;
+    }
+    if(!selected)return null;
+    const grid=document.createElement('div');grid.className='passage-grid';
+    grid.dataset.segment=String(selected.index);
+    const content=document.createElement('div');content.className='passage-ar';
+    content.textContent=selected.text;grid.append(content);document.body.append(grid);
+    const target=selected.tokens[selected.position],node=content.firstChild;
+    const cursor=target.start+Math.min(2,target.word.length-1);
+    const result=window.GnammaWordContext.locateOccurrence(
+     target.word,grid,{node,offset:cursor},selected.section.id,selected.index);
+    const altered=document.createElement('div');altered.className='passage-grid';
+    const mismatch=document.createElement('div');mismatch.className='passage-ar';
+    mismatch.textContent='غير '+selected.text;altered.append(mismatch);document.body.append(altered);
+    const invalid=window.GnammaWordContext.locateOccurrence(
+     target.word,altered,{node:mismatch.firstChild,offset:cursor+4},
+     selected.section.id,selected.index);
+    grid.remove();altered.remove();
+    return {found:result,expected:selected.position,
+     preceding:selected.tokens[selected.position-1].word,invalid:invalid.position};
+   });
+   assert.ok(found,'Need a repeated Arabic word in the published source');
+   assert.equal(found.found.position,found.expected);
+   assert.equal(found.found.neighbours[0],found.preceding);
+   assert.equal(found.invalid,null,'Shifted reading tokens must not inherit false source analyses');
+  });
   await test('word context keeps dictionary and search actions separate',async()=>{
    const output=await page.evaluate(async()=>{
     const node=document.querySelector('.passage-grid .passage-ar');

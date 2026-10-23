@@ -60,3 +60,16 @@
 .gns-dialog .gns-results-actions{display:flex;align-items:center;gap:9px}
 .gns-dialog .gns-results-actions button{font:600 11px/1.4 var(--sans,system-ui,sans-serif)}
 @media(max-width:760px){.gns-dialog.gns-expanded.gns-show-sources .gns-sidebar{display:none}}
+
+/* Contextual morphology is an unobtrusive, opt-in detail of the word card. */
+.gnw-root .gnw-grammar{margin-top:10px;border:1px solid var(--line,#ddd);border-radius:8px;background:var(--surface-alt,#f4eee4);padding:0 11px}
+.gnw-root .gnw-grammar>summary{cursor:pointer;padding:9px 0;font:650 12px/1.5 var(--sans,system-ui,sans-serif);color:var(--text,#27312e)}
+.gnw-root .gnw-grammar>summary:focus-visible{outline:2px solid var(--accent,#805342);outline-offset:2px}
+.gnw-root .gnw-grammar dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:3px 0 12px}
+.gnw-root .gnw-grammar dl>div{min-width:0}
+.gnw-root .gnw-grammar dt{font-size:10px;color:var(--text-soft,#67746d)}
+.gnw-root .gnw-grammar dd{margin:2px 0;font-size:12px;color:var(--text,#27312e)}
+.gnw-root .gnw-grammar p{margin:7px 0}
+.gnw-root .gnw-grammar small{margin-bottom:11px}
+.gnw-root .gnw-grammar ul{padding-inline-start:18px;margin-bottom:11px}
+.gnw-root .gnw-morph-line>span{color:var(--text-soft,#67746d);font-size:11px}
