@@ -8,10 +8,10 @@ Scope: Darūrī and al-Mustaṣfā reader search, no PDFs or apparatus modificat
 - Expanded Research Search with clearly named matching options:
   * Words & terms: written forms, common spellings and curated terminology
   * Exact word: normalized whole-word spelling, not literal Unicode-byte match
-  * Forms of one word: lemma, i.e. morphological variants of a dictionary headword
-  * Root family: derivational relatives, not synonyms or one grammatical word
+  * Word forms: lemma, i.e. grammatical variants of a dictionary headword
+  * Related words (root): derivational relatives, not synonyms or one grammatical word
   * Scholarly concepts: curated editorial relationships, not a morphology category
-  * Nearby words / Advanced patterns: research-specific queries
+  * Nearby words / Advanced search: research-specific queries
 - Each Research mode gives a human explanation immediately below the dropdown.
 - Content/source filtering is not repeated as both tabs and a select on the Research screen.
 - Sort order and concordance are in **More research options**; CSV download and source breakdown remain accessible.
@@ -21,7 +21,7 @@ Scope: Darūrī and al-Mustaṣfā reader search, no PDFs or apparatus modificat
 ## What is *not* published
 The two shipped `morph-*-v1.json` indexes remain the October 22 **curated, incomplete, provisional** datasets built from 56 preselected root/lemma families. They are NOT a full word-by-word disambiguation of Classical Arabic. Their provenance must be visible. The current word inspector must not present an arbitrary candidate as the author's certain grammatical meaning. Users may see incomplete or overlapping word-form and ordinary search results.
 
-The **offline** `daruri/build/build_gnamma_morph_index.py --mode bert --out-dir /tmp/morph-review` pipeline can build contextual candidates using CAMeL's BERT model on complete paragraph windows, but no BERT output has been reviewed or committed to public reader assets as of this handoff. Model weights remain local, outside the browser bundle. Model availability, disk/memory, and processing time have not been benchmarked in this environment.
+The **offline** `daruri/build/build_gnamma_morph_index.py --mode bert --out-dir /tmp/morph-review` pipeline now supports all analyzable lexical tokens by default, with sentence-level context windows and ranked alternative analyses for inspection. Alternatives never enter ordinary root/lemma search postings. Only diagnostic runs use `--curated-roots-only`. The builder refuses to overwrite the live curated files. No real BERT output has been reviewed or published as of this handoff. Model weights remain local, outside the browser bundle. Model availability, disk/memory, and processing time have not been benchmarked in this environment.
 
 ## Improvements in this branch
 1. Convert CAMeL model roots (e.g. `ش.ر.ع`) to actual searchable Arabic `شرع`, and retain empty roots when the lemma is valid (e.g. certain particles).
@@ -38,11 +38,16 @@ The **offline** `daruri/build/build_gnamma_morph_index.py --mode bert --out-dir 
 
 ## Required steps before claiming *full* contextual morphology
 1. On a suitable separate build machine, install a compatible CAMeL Tools release and the `disambig-bert-unfactored-msa` data package. Confirm the model and source witness licenses; do NOT commit model weights.
-2. Run the contextual builder in a staging directory. Set `--include-all` if the goal is **every Arabic token**, not only the curated root-family subset. Preserve the original text and stable `passage:section:segment` / `arabic:page:paragraph` IDs, check token alignment (including diacritics and editorial anchors).
+2. Run the contextual builder in a staging directory. The default BERT mode targets all analyzable lexical tokens; backoff guesses are not silently given roots. Run `--work daruri --max-paragraphs 50` for a smoke sample then `--max-paragraphs 0` for the full work. The opt-in manual GitHub Actions workflow `daruri-contextual-morphology-review.yml` can download model data and produce review artifacts for either work without writing to the live website. Preserve stable IDs and check token alignment.
 3. Export gold-review sheets from BOTH corpora. Human readers of classical Arabic/uṣūl al-fiqh should independently adjudicate a stratified sample of disputed and ordinary words, including lexical senses of `الشارع`, `الحكم`, `العلم`, `علة`, `القياس`, `ظاهر`, `الأصل` and `النص`. Use original sentence context.
-4. Compute exact lemma, root, POS and lex-sense correctness by book, and separately for ambiguous tokens and terms of art. Track disagreements and review false-positive search matches. Set an explicit release threshold before promotion; do not equate model confidence with validation.
-5. Only once the evaluation is acceptable, version a **new** contextual output schema, switch the browser's lazy index filename to it, invalidate the service-worker cache, run all iPhone & desktop regression suites, and review the deployed reader. Preserve an honest `automated, unchecked` label for unreviewed occurrences and `reviewed` only for adjudicated entries.
+4. Compute exact lemma, root, POS and lex-sense correctness by book, separately for ambiguous tokens and terms of art. The `evaluate_morph_review.py` gate accepts only explicitly adjudicated rows and checks sample count plus accuracy; `--min-reviewed 250 --min-exact-accuracy 0.92` are provisional threshold examples, not editorial sign-off. Track disagreements and false-positive search matches; a model's rank is never a calibrated confidence percentage.
+5. Only once evaluation and editorial authorization are acceptable, version a **new** contextual output schema, change the reader's lazy index filename, invalidate service-worker caches, repeat mobile and desktop checks, and inspect the deployed site. Model features are already displayed in an expandable word card, marked automatically proposed. Preserve an honest `automated, unchecked` label for unreviewed occurrences and `reviewed` only for adjudicated entries.
 6. Model-free fallback remains, and normal reading/search should work without loading the optional contextual index. No inference should run on each keystroke.
+
+## Current release boundary
+The full reader browser regression suite passed on feature commit `0e9d91be`; later new evaluator/workflow commits require a fresh CI pass. The source-sensitive tests are synthetic: they validate code and provenance without claiming that Modern Standard Arabic BERT predictions are scholarly truth.
+
+Model output explains a grammatical possibility, not automatically the *juristic sense* of a word such as `حكم` or `قياس`. Dictionary glosses are kept separately and labelled as automated. For a model sample, go to GitHub Actions → Daruri contextual morphology candidate review → Run workflow; choose one work and use 0 for all paragraphs. This workflow is manual to avoid repeated expensive downloads.
 
 ## Work estimates (engineering-effort ranges, not promised delivery dates)
 - UI clarification and source-occurrence plumbing: integrated on this branch; regression CI pending.
