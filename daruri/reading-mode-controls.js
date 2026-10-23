@@ -98,10 +98,52 @@ function create({state,rd}){
   el.innerHTML=category.symbol;el.setAttribute('aria-hidden','true');return el;
  };
  let bySection=new Map(),last='',queued=false,sheet=null,sheetTrigger=null,sheetSection='';
+ let sheetBackdrop=null,sheetLockSource='',sheetFreeze=null;
+ const SHEET_LOCK_OWNER='dock-saved-references';
+ // The saved-items picker must not let touches scroll the underlying reader.
+ // Reuse the existing shared scroll lock when available; retain a local fallback
+ // until the coordinated all-popup scroll-lock release is published.
+ function lockSheetScroll(){
+  if(sheetLockSource)return;
+  const shared=window.GnammaReaderScrollLock;
+  if(typeof shared?.acquire==='function'&&typeof shared?.release==='function'){
+   shared.acquire(SHEET_LOCK_OWNER);sheetLockSource='shared';return;
+  }
+  const older=window.GnammaPopupScroll;
+  if(typeof older?.lock==='function'&&typeof older?.unlock==='function'){
+   older.lock(SHEET_LOCK_OWNER);sheetLockSource='legacy';return;
+  }
+  const body=document.body,root=document.documentElement,y=window.scrollY||0;
+  sheetFreeze={y,position:body.style.position,top:body.style.top,
+   left:body.style.left,right:body.style.right,width:body.style.width,
+   overflow:body.style.overflow,rootOverflow:root.style.overflow,
+   rootOverscroll:root.style.overscrollBehavior};
+  body.style.position='fixed';body.style.top='-'+y+'px';
+  body.style.left='0';body.style.right='0';body.style.width='100%';
+  body.style.overflow='hidden';root.style.overflow='hidden';
+  root.style.overscrollBehavior='none';sheetLockSource='local';
+ }
+ function unlockSheetScroll(){
+  const source=sheetLockSource;sheetLockSource='';
+  if(source==='shared'){window.GnammaReaderScrollLock?.release?.(SHEET_LOCK_OWNER);return;}
+  if(source==='legacy'){window.GnammaPopupScroll?.unlock?.(SHEET_LOCK_OWNER);return;}
+  const snapshot=sheetFreeze;sheetFreeze=null;
+  if(source!=='local'||!snapshot)return;
+  const body=document.body,root=document.documentElement;
+  body.style.position=snapshot.position;body.style.top=snapshot.top;
+  body.style.left=snapshot.left;body.style.right=snapshot.right;
+  body.style.width=snapshot.width;body.style.overflow=snapshot.overflow;
+  root.style.overflow=snapshot.rootOverflow;
+  root.style.overscrollBehavior=snapshot.rootOverscroll;
+  window.scrollTo(0,snapshot.y);
+ }
  function closeSheet(restore=false){
-  if(!sheet)return;
-  sheet.remove();sheet=null;sheetSection='';
-  const trigger=sheetTrigger;sheetTrigger=null;
+  if(!sheet&&!sheetBackdrop)return;
+  const trigger=sheetTrigger;
+  const panel=sheet,backdrop=sheetBackdrop;
+  sheet=null;sheetBackdrop=null;sheetTrigger=null;sheetSection='';
+  panel?.remove();backdrop?.remove();
+  unlockSheetScroll();
   if(restore&&trigger?.isConnected)trigger.focus({preventScroll:true});
  }
  function reindex(){
@@ -163,6 +205,16 @@ function create({state,rd}){
   const segment=t.section!=null&&String(t.section)===String(section)?t.segment:loc?.segment;
   return segment!=null&&Number.isInteger(Number(segment))?'¶'+(Number(segment)+1):'';
  }
+ function positionSheet(panel,trigger){
+  if(!panel)return;
+  const rect=dock.getBoundingClientRect();
+  const near=trigger?.isConnected?trigger.getBoundingClientRect():rect;
+  const width=Math.min(410,window.innerWidth-20);
+  const middle=window.innerWidth<=760?window.innerWidth/2:
+   Math.max(width/2+10,Math.min(window.innerWidth-width/2-10,near.left+near.width/2));
+  panel.style.width=width+'px';panel.style.left=middle+'px';
+  panel.style.bottom=Math.max(10,window.innerHeight-rect.top+9)+'px';
+ }
  function openSheet(categoryId,trigger,section){
   const groups=classify(section);
   const items=categoryId==='all'?[...groups.values()].flat():groups.get(categoryId)||[];
@@ -170,7 +222,7 @@ function create({state,rd}){
   if(!items.length)return;
   const panel=document.createElement('section');
   panel.id='gn-dock-saved-sheet';panel.className='gn-dock-saved-sheet';
-  panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','false');
+  panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');
   panel.setAttribute('aria-label','Your saved items in section '+section);
   const head=document.createElement('header');head.className='gn-dock-sheet-heading';
   const title=document.createElement('h3');title.textContent='Your saved items in §'+section;
@@ -208,15 +260,36 @@ function create({state,rd}){
   manage.className='gn-dock-sheet-manage';manage.textContent='Manage in Reading Desk';
   manage.addEventListener('click',()=>{closeSheet();rd.openAt(section,null,'all');});
   foot.append(manage);panel.append(foot);
-  const rect=dock.getBoundingClientRect();
-  const near=trigger.getBoundingClientRect();
-  const width=Math.min(410,window.innerWidth-20);
-  const middle=window.innerWidth<=760?window.innerWidth/2:
-   Math.max(width/2+10,Math.min(window.innerWidth-width/2-10,near.left+near.width/2));
-  panel.style.width=width+'px';panel.style.left=middle+'px';
-  panel.style.bottom=Math.max(10,window.innerHeight-rect.top+9)+'px';
-  document.body.append(panel);
-  sheet=panel;sheetTrigger=trigger;sheetSection=section;
+  // A full-viewport, lower stacking layer captures background taps. Dismissing
+  // on CLICK rather than pointerdown stops iOS from re-targeting the same tap
+  // onto a reader control after the backdrop disappears.
+  const backdrop=document.createElement('div');
+  backdrop.id='gn-dock-saved-backdrop';
+  backdrop.className='gn-dock-saved-backdrop';
+  backdrop.setAttribute('aria-hidden','true');
+  backdrop.addEventListener('pointerdown',event=>event.stopPropagation());
+  backdrop.addEventListener('touchmove',event=>event.preventDefault(),{passive:false});
+  backdrop.addEventListener('click',event=>{
+   event.preventDefault();event.stopPropagation();closeSheet(true);
+  });
+  panel.addEventListener('pointerdown',event=>event.stopPropagation());
+  panel.addEventListener('click',event=>event.stopPropagation());
+  // The sheet acts as a true dialog: keep keyboard traversal in its controls.
+  panel.addEventListener('keydown',event=>{
+   if(event.key!=='Tab')return;
+   const focusables=[...panel.querySelectorAll('button:not([disabled])')];
+   if(!focusables.length)return;
+   const first=focusables[0],last=focusables[focusables.length-1];
+   if(event.shiftKey&&document.activeElement===first){
+    event.preventDefault();last.focus({preventScroll:true});
+   }else if(!event.shiftKey&&document.activeElement===last){
+    event.preventDefault();first.focus({preventScroll:true});
+   }
+  });
+  positionSheet(panel,trigger);
+  document.body.append(backdrop,panel);
+  sheet=panel;sheetBackdrop=backdrop;sheetTrigger=trigger;sheetSection=section;
+  lockSheetScroll();
   panel.querySelector('.gn-dock-sheet-item')?.focus({preventScroll:true});
  }
  function render(){
@@ -296,14 +369,17 @@ function create({state,rd}){
   if(verifyTimer)return;
   verifyTimer=setTimeout(()=>{verifyTimer=0;render();},90);
  }
- window.addEventListener('scroll',()=>{closeSheet();flushSoon();},{passive:true});
- window.addEventListener('resize',()=>{closeSheet();flushSoon();},{passive:true});
+ // Ignore viewport changes while the popup is in use; only deliberate close,
+ // item activation, or reader route change should dismiss it.
+ window.addEventListener('scroll',()=>{if(!sheet)flushSoon();},{passive:true});
+ window.addEventListener('resize',()=>{
+  if(sheet)positionSheet(sheet,sheetTrigger);else flushSoon();
+ },{passive:true});
  window.addEventListener('hashchange',()=>{closeSheet();flushSoon();});
  document.addEventListener('gnamma-reading-desk-change',reindex);
  document.addEventListener('gnamma-reader-route-change',()=>{closeSheet();flushSoon();});
- document.addEventListener('pointerdown',event=>{
-  if(sheet&&!sheet.contains(event.target)&&!status.contains(event.target))closeSheet();
- },true);
+ // Outside taps are handled by the backdrop's click listener, not document
+ // pointerdown. This prevents click-through onto reading content.
  document.addEventListener('keydown',event=>{
   if(event.key==='Escape'&&sheet){event.preventDefault();event.stopPropagation();closeSheet(true);}
  },true);
