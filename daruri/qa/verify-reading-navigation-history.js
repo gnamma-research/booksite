@@ -114,6 +114,7 @@ test('JSON personal backup carries navigation, never as Desk items or auto-sync'
  assert.ok(desk.includes('window.GnammaReadingHistory?.importData?.(parsed.readingNavigation)'));
  assert.ok(desk.includes('current reading place unchanged'));
  assert.ok(transfer.includes('data-transfer-choice="history"'), 'Selective backup restore must include recent history choice');
+ assert.ok(transfer.includes('data.readingNavigation.recent.length'), 'Imported recent-only history must survive subsequent backups');
  assert.ok(bridge.includes('root.GnammaReadingHistory=api'));
  assert.ok(!source.includes('fetch('),'No remote sync');
  assert.ok(sw.includes('reading-navigation-history.js')&&sw.includes('reading-navigation-bridge.js'));
