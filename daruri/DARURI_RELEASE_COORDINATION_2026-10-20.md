@@ -1,5 +1,9 @@
 # Darūrī release coordination — 20 October 2026
 
+## AR vowel spacing — active publisher claim, 23 October 2026
+
+Task: make the AR overbar-to-label gap consistent in the reader toolbar and Editions selectors. Targets: `daruri/reading-mode-controls.css`, `daruri/editions-selector.css`, `daruri/editions-icons.css`, plus asset references in `index.html`, `sw.js`, and `download-bundle.js`. Base: `c619a79f9f6327bc6f1dc9285e39250a05a1824d`. Narrow presentation change; preserve concurrent work. Claim expires 2026-10-23T04:01:02.979Z.
+
 ## Live reader merge and parallel PDF coordination — 22 October 2026
 
 **Reading-mode publisher claim: released.** [PR #39](https://github.com/gnamma-research/booksite/pull/39) is merged into `master` at commit [`7791e6e`](https://github.com/gnamma-research/booksite/commit/7791e6e93abbe00a7033cb920258f6b1b7ed6b5b). The reader offers three named modes, **Reading**, **Focus** (optionally show scholarly apparatus after the text), and **Continuous**. The enhanced reader no longer duplicates Previous/Next navigation inside the text; its persistent dock remains the navigator. Small, monochrome nonzero bookmark/selection/personal-note counts appear beneath the centred dock title and open the relevant Reading Desk entries without deleting them. The mockup-only round symbol is not part of the implementation. Existing English/Arabic/vowel controls, saved notes, source links, reader themes and no-JavaScript fallback are preserved. Focus 1 historical preferences are mapped into the Focus apparatus option.
