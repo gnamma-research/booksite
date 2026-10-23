@@ -29,6 +29,25 @@ assert(selector.includes('data-es-ios-save-help'),
   'iPhone/iPad must explain Share → Save to Files');
 assert(selector.includes("navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1"),
   'iPad desktop-style user agents must get preview-first UI');
+
+const policyStart=selector.indexOf('  const APPLE_PDF_PREVIEW=(()=>{');
+const policyEnd=selector.indexOf("  const NAV=['reading','reference'];",policyStart);
+assert(policyStart>0&&policyEnd>policyStart,'Device-aware PDF policy is present');
+const getPreviewDevice=(userAgent,platform='',maxTouchPoints=0)=>{
+  const context={navigator:{userAgent,platform,maxTouchPoints}};
+  vm.runInNewContext(selector.slice(policyStart,policyEnd)+
+    '\nthis.applePreview=APPLE_PDF_PREVIEW;',context);
+  return context.applePreview;
+};
+assert.equal(getPreviewDevice('Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X)'),true);
+assert.equal(getPreviewDevice('Mozilla/5.0 (iPad; CPU OS 17_6 like Mac OS X)'),true);
+assert.equal(getPreviewDevice('Mozilla/5.0 (Macintosh; Intel Mac OS X)', 'MacIntel',5),true,
+  'iPad reporting a desktop-class user agent still previews only');
+assert.equal(getPreviewDevice('Mozilla/5.0 (Macintosh; Intel Mac OS X)','MacIntel',0),false);
+assert.equal(getPreviewDevice('Mozilla/5.0 (Windows NT 10.0; Win64; x64)','Win32',0),false);
+assert.equal(getPreviewDevice('Mozilla/5.0 (Linux; Android 15; Pixel)','Linux armv8l',5),false,
+  'Do not assume Android always lacks a useful native download');
+
 assert(selector.includes("response.body?.getReader"),'Real network progress, not fabricated animation');
 assert(selector.includes("preparation.controller.abort()"),'Obsolete requests must be cancelled');
 assert(selector.includes("availability.hidden=result.status==='ready'"),
