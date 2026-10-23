@@ -17,7 +17,7 @@ const listElement=document.getElementById('vector-rows');
 const statusElement=document.getElementById('qa-status');
 const makeButton=document.getElementById('make');
 const requestedOrder=new URL(location.href).searchParams.get('order');
-const logicalOrder=['forward','reverse','grapheme'].includes(requestedOrder)?requestedOrder:'reverse';
+const logicalOrder=['forward','reverse','grapheme','phrase'].includes(requestedOrder)?requestedOrder:'reverse';
 const emitStatus=(phase,message,other={})=>{
   statusElement.textContent=message;
   window.__gnammaVectorStatus={phase,message,logical_order:logicalOrder,...other};
@@ -51,17 +51,19 @@ function authorialRows(fixture){
 
 function signedArabicFont(pdf,kit,fontBytes,phrases){
   // Same CIDFontType2 / CIDToGIDMap principle as Gnamma's tested personal
-  // appendix exporter. Every Unicode scalar gets one unique CID; glyph
-  // presentation substitutions are deliberately NOT used for searching.
+  // appendix exporter. A separate phrase-atomic A/B keeps all original
+  // vowel marks together in a single ToUnicode mapping, while the glyphs
+  // remain independently painted as vector paths (never duplicate text).
   const parsed=kit.create(fontBytes);
-  const scalars=[...new Set([...phrases.join('')])];
-  if(scalars.length>=65534)throw Error('CID Unicode set too large');
-  const codes=new Map(),gid=new Uint8Array((scalars.length+1)*2);
-  for(let i=0;i<scalars.length;i++){
-    const cp=scalars[i].codePointAt(0),glyph=parsed.glyphForCodePoint(cp);
+  const units=logicalOrder==='phrase'?[...new Set(phrases)]
+    :[...new Set([...phrases.join('')])];
+  if(units.length>=65534)throw Error('CID Unicode set too large');
+  const codes=new Map(),gid=new Uint8Array((units.length+1)*2);
+  for(let i=0;i<units.length;i++){
+    const cp=units[i].codePointAt(0),glyph=parsed.glyphForCodePoint(cp);
     if(!glyph?.id||cp>0xffff)throw Error('Missing original Arabic scalar U+'+cp.toString(16));
     const cid=i+1;
-    codes.set(scalars[i],cid);
+    codes.set(units[i],cid);
     gid[cid*2]=glyph.id>>8;gid[cid*2+1]=glyph.id&255;
   }
   const fileRef=pdf.context.register(pdf.context.flateStream(fontBytes));
@@ -84,13 +86,18 @@ function signedArabicFont(pdf,kit,fontBytes,phrases){
     '/CMapName /GnammaVectorUnicode def','/CMapType 2 def',
     '1 begincodespacerange','<0000> <FFFF>','endcodespacerange'
   ];
-  for(let offset=0;offset<scalars.length;offset+=100){
-    const slice=scalars.slice(offset,offset+100);
+  for(let offset=0;offset<units.length;offset+=100){
+    const slice=units.slice(offset,offset+100);
     lines.push(String(slice.length)+' beginbfchar');
     for(let k=0;k<slice.length;k++){
       const cid=(offset+k+1).toString(16).padStart(4,'0').toUpperCase();
-      const scalar=scalars[offset+k].codePointAt(0).toString(16).padStart(4,'0').toUpperCase();
-      lines.push('<'+cid+'> <'+scalar+'>');
+      const original=Array.from(slice[k]).map(ch=>{
+        const cp=ch.codePointAt(0);
+        if(cp>0xffff)throw Error('Unexpected non-BMP character in the canonical Arabic micro-proof');
+        return cp.toString(16).padStart(4,'0').toUpperCase();
+      }).join('');
+      if(original.length>512)throw Error('This phrase exceeds PDF ToUnicode entry limit');
+      lines.push('<'+cid+'> <'+original+'>');
     }
     lines.push('endbfchar');
   }
@@ -144,14 +151,18 @@ function drawOnlyOriginalUnicode(page,font,phrase,x,y,size,visibleWidth){
     ?Array.from(new Intl.Segmenter('ar',{granularity:'grapheme'}).segment(phrase),
       part=>part.segment).reverse().join('')
     :logicalOrder==='reverse'?Array.from(phrase).reverse().join(''):phrase;
-  const cps=Array.from(sequenced);
+  // A phrase-atomic ToUnicode CID prevents a native RTL extractor from
+  // moving one word's final haraka to the beginning of another. This is
+  // a research trade-off: per-word selection is not yet certified.
+  const cps=logicalOrder==='phrase'?[phrase]:Array.from(sequenced);
   const encoded=cps.map(ch=>{
     const code=font.codes.get(ch);
     if(!code)throw Error('Unicode layer dropped scalar '+ch.codePointAt(0).toString(16));
     return code.toString(16).padStart(4,'0');
   }).join('');
   const nativeWidth=cps.length*size*.5;
-  const hz=Math.min(150,Math.max(20,100*visibleWidth/nativeWidth));
+  const hz=Math.min(logicalOrder==='phrase'?2500:150,
+    Math.max(20,100*visibleWidth/nativeWidth));
   page.pushOperators(
     PDFOperator.of('BT'),
     PDFOperator.of('Tf',[PDFName.of('GNOriginal'),PDFNumber.of(size)]),
@@ -208,7 +219,7 @@ async function generate(){
       const y=page.getHeight()-(rect.top-bounds.top)*.75-fontSize*1.05;
       if(x<15||right>page.getWidth()-10||y<60||y>page.getHeight()-30)
         throw Error('DOM-to-PDF coordinates out of bounds '+row.id+' '+JSON.stringify({x,y,right}));
-      page.drawText(row.id,{x:38,y:y+4.5,size:8,font:english});
+      page.drawText(row.id,{x:270,y:y+4.5,size:8,font:english});
       const glyphs=drawSourceGlyphs(page,signed.parsed,row.phrase,x,y,fontSize);
       const semantic=drawOnlyOriginalUnicode(page,signed,row.phrase,x,y,fontSize,advance);
       if(row.stress){
@@ -237,6 +248,7 @@ async function generate(){
       personal_notes_used:false,printed_synthetic_note_only:true,
       generated_in_normal_browser:true,no_print_dialog:true,no_server_pdf:true,
       mobile_device_certified:false,full_414_passages_certified:false,
+      individual_source_word_selection_certified:false,
       publication_approved:false
     };
     window.__gnammaVectorPdfBytes=bytes;
