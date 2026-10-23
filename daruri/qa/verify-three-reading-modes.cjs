@@ -38,6 +38,55 @@ async function exercise(engine,name,origin){
  try{
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
   await page.waitForSelector('#readerDock:not([hidden])',{timeout:20000});
+
+  // The headerless Scholar's Compact must fit one row without hiding any of
+  // the six user-visible scholarly actions, including Focus and Visuals.
+  // Check geometric bounds in mobile Chromium AND mobile WebKit. This is a
+  // source/browser regression guard, never a screenshot-only approximation.
+  await page.waitForSelector('body.reader-enhanced.reading-active #readingControls:not([hidden])');
+  for(const width of [320,350,375,390,430,620]){
+    await page.setViewportSize({width,height:844});
+    const geom=await page.evaluate(()=>{
+      const toolbar=document.getElementById('readingControls');
+      const ids=['menuBtn','focusToolbar','readerSaveAction','readerCopyAction',
+                 'readerShareAction','searchBtn','settingsBtn'];
+      const boxes=ids.map(id=>{
+        const el=document.getElementById(id),r=el?.getBoundingClientRect();
+        return {id,visible:!!r?.width&&!!r?.height&&getComputedStyle(el).visibility!=='hidden',
+                x:r?.left??-1,y:r?.top??-1,right:r?.right??-1,
+                bottom:r?.bottom??-1,width:r?.width??0,height:r?.height??0};
+      });
+      const arEn=document.querySelectorAll('#persistentLanguages > button');
+      const t=toolbar.getBoundingClientRect();
+      return {screen:document.documentElement.clientWidth,height:t.height,
+              top:t.top,bottom:t.bottom,boxes,
+              arEn:[...arEn].map(x=>({text:x.textContent.trim(),visible:x.getBoundingClientRect().width>0})),
+              oldRead:document.getElementById('gnTopRead')?.getBoundingClientRect().width||0,
+              topHelp:document.getElementById('gnTopHelp')?.getBoundingClientRect().width||0,
+              duplicateTile:!!document.getElementById('gnTopTile'),
+              navHelp:!!document.querySelector('#leftNav [data-route="help"]')};
+    });
+    const diagnosis=name+' '+width+'px '+JSON.stringify(geom);
+    assert(geom.height>=44&&geom.height<=54,'Toolbar not compact: '+diagnosis);
+    assert.equal(geom.oldRead,0,'Redundant Read button shows while reading: '+diagnosis);
+    assert.equal(geom.topHelp,0,'Help still occupies the top toolbar: '+diagnosis);
+    assert.equal(geom.duplicateTile,false,'Extra tile duplicates Contents icon: '+diagnosis);
+    assert.equal(geom.navHelp,true,'Help inaccessible from Contents: '+diagnosis);
+    assert.equal(geom.arEn.length,2,'AR/EN controls changed: '+diagnosis);
+    assert(geom.arEn.every(x=>x.visible),'AR/EN controls hidden: '+diagnosis);
+    assert(geom.boxes.every(x=>x.visible),'Toolbar control hidden: '+diagnosis);
+    assert(geom.boxes.every(x=>x.height>=40),'Toolbar targets too short: '+diagnosis);
+    assert(geom.boxes.every(x=>x.x>=-1&&x.right<=geom.screen+1),
+      'Toolbar action clipped horizontally: '+diagnosis);
+    assert(geom.boxes.every(x=>x.y>=geom.top-2&&x.bottom<=geom.bottom+2),
+      'Toolbar breaks into a second row: '+diagnosis);
+    const sorted=[...geom.boxes].sort((a,b)=>a.x-b.x);
+    assert(sorted.every((x,i)=>!i||x.x>=sorted[i-1].right-1),
+      'Toolbar targets overlap: '+diagnosis);
+  }
+  await page.setViewportSize({width:390,height:844});
+  console.log('PASS '+name+' Scholar compact 320/350/375/390/430/620px: one row, seven controls, AR/EN, Help in Contents');
+
   // Container queries may collapse the visible counters to a total; the individual
   // spans remain attached, and the full mobile summary remains tappable.
   await page.waitForSelector('#gn-dock-private-status .gn-dock-summary-pair',{state:'attached',timeout:20000});
