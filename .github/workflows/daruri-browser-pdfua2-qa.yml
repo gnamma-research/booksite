@@ -1,0 +1,148 @@
+name: Daruri PDF-UA2 pure-browser Arabic search and tagged source footnote research
+on:
+  push:
+    branches: [experiment/daruri-browser-pdfua2-native-20261023]
+    paths:
+      - 'daruri/browser-html-pdf/**'
+      - '.github/workflows/daruri-browser-pdfua2-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-browser-pdfua2-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser-native-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - browser: chromium
+            mode: excerpt
+          - browser: webkit
+            mode: excerpt
+          - browser: chromium
+            mode: full
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Produce 414 original aligned passages and original §65:1 from canonical structured text only
+        run: |
+          python daruri/browser-html-pdf/build_fixture.py \
+            --out daruri/browser-html-pdf/fixture.json
+      - name: Install browser-only layout and PDF emitter (Vite/Vivliostyle/@pdfme/pdf-lib), no PDF server
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/browser-html-pdf
+          cd daruri/browser-html-pdf
+          if [ '${{ matrix.browser }}' = 'webkit' ]; then
+            npx playwright install --with-deps webkit
+          else
+            npx playwright install --with-deps --only-shell chromium
+          fi
+      - name: Serve the emitter's licensed fallback fonts only as temporary same-origin QA assets
+        run: |
+          set -euo pipefail
+          ASSETS=daruri/browser-html-pdf/runtime
+          mkdir -p "$ASSETS/fonts"
+          FOUND=$(find daruri/browser-html-pdf/node_modules -type d -path '*/pages-to-pdf/public/fonts' | head -n 1 || true)
+          if [ -z "$FOUND" ]; then
+            FOUND=$(find daruri/browser-html-pdf/node_modules -type d -path '*/vivliostyle-pdf/public/fonts' | head -n 1 || true)
+          fi
+          if [ -z "$FOUND" ]; then
+            echo '::error::No licensed font assets found in the installed browser PDF emitter';exit 1
+          fi
+          cp -a "$FOUND"/. "$ASSETS/fonts/"
+          ICC_FOUND=$(find daruri/browser-html-pdf/node_modules -type f -path '*/pages-to-pdf/public/icc/sRGB2014.icc' | head -n 1 || true)
+          if [ -z "$ICC_FOUND" ]; then
+            echo "::error::PDF/UA-2 output intent ICC data missing"; exit 1
+          fi
+          mkdir -p "$ASSETS/icc"
+          cp "$ICC_FOUND" "$ASSETS/icc/sRGB2014.icc"
+          ls -lh "$ASSETS/fonts/" | head -n 16
+          # Runtime files are provided only to the ephemeral local test server.
+          # They are never committed, downloaded as separate assets, or uploaded.
+      - name: Bundle actual browser HTML typesetter; forbid Node/server-side PDF generation
+        run: |
+          cd daruri/browser-html-pdf
+          npm run build
+          node --check browser.mjs
+          node --check test_browser.cjs
+          python -m py_compile build_fixture.py verify_native.py
+      - name: Generate and DOWNLOAD PDF inside a real ordinary browser; no privileged print API
+        env:
+          DARURI_BROWSER_ENGINE: ${{ matrix.browser }}
+          DARURI_BROWSER_MODE: ${{ matrix.mode }}
+          DARURI_BROWSER_OUTPUT: /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}
+        run: node daruri/browser-html-pdf/test_browser.cjs
+      - name: Check native PDF structure, font resources and true reading order (research measurements)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qpdf poppler-utils
+          python -m pip install -q 'pypdf==6.3.0' 'PyMuPDF==1.26.7'
+          python daruri/browser-html-pdf/verify_integrity.py \
+            --pdf /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/daruri-browser-only-${{ matrix.mode }}-NONRELEASE.pdf \
+            --fixture daruri/browser-html-pdf/fixture.json \
+            --mode ${{ matrix.mode }} \
+            --report /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/integrity-qa.json
+      - name: Independently measure native source copying/search, note placement, links and actual PDF vectors
+        run: |
+          python -m pip install -q 'PyMuPDF==1.26.7'
+          python daruri/browser-html-pdf/verify_native.py \
+            --pdf /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/daruri-browser-only-${{ matrix.mode }}-NONRELEASE.pdf \
+            --fixture daruri/browser-html-pdf/fixture.json \
+            --mode ${{ matrix.mode }} \
+            --report /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/native-acceptance.json
+      - name: Require actual tagged PDF structure and record original-vs-tagged Arabic search
+        run: |
+          python - <<'PY'
+          import json,glob
+          from pathlib import Path
+          from pypdf import PdfReader
+          p=Path(glob.glob('/tmp/daruri-browser-*/daruri-browser-only-*-NONRELEASE.pdf')[0])
+          r=PdfReader(str(p),strict=False)
+          c=r.trailer['/Root']
+          tree=c.get('/StructTreeRoot')
+          mark=c.get('/MarkInfo')
+          print('BROWSER_PDFUA_TAGGED_STRUCTURE',json.dumps({
+            'pdf':p.name,'pages':len(r.pages),
+            'struct_tree':bool(tree),
+            'mark_info':str(mark)[:250],
+            'lang':str(c.get('/Lang','')),
+            'pdf_version':r.pdf_header
+          }))
+          assert tree is not None,'PDF/UA-2 was requested but structure root is missing'
+          PY
+      - name: Mark actual release gate explicitly without disguising unreadable Arabic as success
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import glob,json,os
+          files=glob.glob('/tmp/daruri-browser-*/native-acceptance.json')
+          if files:
+            row=json.load(open(files[0]))
+            if not row['strict_release_candidate']:
+              print('::warning::Actual downloadable browser-generated PDF exists, but Arabic Unicode/search, footnotes or exact links are NOT release certified. See artifact.')
+              print('NATIVE_PDF_PUBLICATION_GATE_BLOCKED',row['mode'],row['expected_source_passages'])
+            else:print('NATIVE_PDF_PUBLICATION_GATE_PASS',row['mode'])
+          else: print('::warning::Native acceptance evidence unavailable; browser conversion failed or did not run.')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-browser-html-pdf-${{ matrix.browser }}-${{ matrix.mode }}-NOT_RELEASED
+          path: |
+            /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/browser-evidence.json
+            /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/integrity-qa.json
+            /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/native-acceptance.json
+            /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/native-acceptance.first-page.png
+            /tmp/daruri-browser-${{ matrix.browser }}-${{ matrix.mode }}/daruri-browser-only-${{ matrix.mode }}-NONRELEASE.pdf
+          retention-days: 12
+          if-no-files-found: warn
