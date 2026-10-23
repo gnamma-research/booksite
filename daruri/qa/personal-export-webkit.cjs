@@ -37,13 +37,13 @@ async function browserCheck(){
     nodes.map(n=>n.value));
   const canonical=['daruri.pdf','daruri-study.pdf','daruri-english.pdf',
     'daruri-arabic.pdf','daruri-arabic-vowelled.pdf'];
-  assert.equal(editions.length,137,'Five canonical, 12 mapped A4 and 120 apparatus editions');
+  assert.equal(editions.length,17,'Stage1 personal exporter selects five canonical and twelve clean sources; generated variants appear only after creation');
   assert(canonical.every(file=>editions.includes(file)),
     'Canonical personal-PDF editions must remain selectable');
   assert.equal(editions.filter(file=>/^editions\/(reading|study)\//.test(file)).length,12,
     'All twelve mapped, exactly published plain A4 editions are selectable on mobile');
-  assert.equal(editions.filter(file=>file.startsWith('editions/apparatus/')).length,120,
-    'All 120 SHA-verified apparatus editions must be selectable on mobile');
+  assert.equal(editions.filter(file=>file.startsWith('editions/apparatus/')).length,0,
+    'Retired complete apparatus PDFs must not be selectable before local creation');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+2),
     '390px mobile viewport should not scroll horizontally');
   await page.locator('input[name="pe-mode"][value="all"]').check();
