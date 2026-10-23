@@ -44,32 +44,42 @@ async function exercise(engine,name,origin){
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
   const trigger=page.locator('#gn-dock-private-status .gn-dock-summary');
   await trigger.waitFor({state:'visible',timeout:30000});
-  // All eight saved-reference families must be VISIBLE on narrow phones.
-  // The earlier UI retained spans in DOM but hid their parent via @container.
+  // iPhone uses one compact checked-bookmark + total, not eight tiny
+  // visible counters. Preserve category breakdown in the accessible name
+  // and item sheet. The old test was asserting the superseded dock design.
   for(const width of [320,375,390,430]){
    await page.setViewportSize({width,height:844});
    await page.waitForFunction(()=>document.querySelectorAll(
     '#gn-dock-private-status .gn-dock-summary-pair').length===8,null,{timeout:9000});
    const geometry=await page.evaluate(()=>{
-    const button=document.querySelector('#readerDock .gn-dock-summary'),
-     symbols=button.querySelector('.gn-dock-summary-symbols'),
-     items=[...symbols.querySelectorAll('.gn-dock-summary-pair')];
-    const outer=button.getBoundingClientRect();
+    const button=document.querySelector('#readerDock .gn-dock-summary');
+    const symbols=button.querySelector('.gn-dock-summary-symbols');
+    const rect=button.getBoundingClientRect();
+    const dock=document.querySelector('#readerDock').getBoundingClientRect();
     return {viewport:innerWidth,layoutWidth:document.documentElement.scrollWidth,
-     shown:getComputedStyle(symbols).display,flexWrap:getComputedStyle(symbols).flexWrap,
-     visible:items.every(el=>{const r=el.getBoundingClientRect();
-      return getComputedStyle(el).display!=='none'&&r.width>0&&r.height>0
-       &&r.left>=outer.left-2&&r.right<=outer.right+2;}),
-     categoryIds:items.map(el=>el.dataset.gnMark),
-     rows:new Set(items.map(el=>Math.round(el.getBoundingClientRect().top))).size};
+     symbolsDisplay:getComputedStyle(symbols).display,
+     total:button.dataset.gnTotal,categoryCount:button.dataset.gnCategoryCount,
+     label:button.getAttribute('aria-label'),
+     categoryIds:[...symbols.querySelectorAll('.gn-dock-summary-pair')].map(el=>el.dataset.gnMark),
+     target:{x:rect.x,y:rect.y,width:rect.width,height:rect.height,right:rect.right,bottom:rect.bottom},
+     dockBottomGap:innerHeight-dock.bottom};
    });
-   assert.equal(geometry.shown,'flex',name+' '+width+' category icons hidden: '+JSON.stringify(geometry));
-   assert.equal(geometry.flexWrap,'wrap',name+' '+width+' category icons cannot wrap');
-   assert.ok(geometry.visible,name+' '+width+' clipped individual counts: '+JSON.stringify(geometry));
-   assert.equal(geometry.categoryIds.length,8,name+' '+width+' category count missing');
+   assert.equal(geometry.symbolsDisplay,'none',name+' '+width+' old category bar must be collapsed');
+   assert.equal(geometry.total,'39',name+' '+width+' total saved count lost');
+   assert.equal(geometry.categoryCount,'8',name+' '+width+' category breakdown lost');
+   assert.deepEqual(geometry.categoryIds,
+    ['section','paragraph','dictionary','quran','hadith','source','highlight','note']);
+   assert.match(geometry.label,/Open 39 saved items in section 11/);
+   assert.match(geometry.label,/Personal notes 32/);
+   assert(geometry.target.width>=44&&geometry.target.height>=44,
+    name+' '+width+' saved target smaller than 44px: '+JSON.stringify(geometry));
+   assert(geometry.target.x>=-1&&geometry.target.right<=width+1&&
+    geometry.target.y>=-1&&geometry.target.bottom<=844,
+    name+' '+width+' saved target outside viewport: '+JSON.stringify(geometry));
+   assert(geometry.dockBottomGap>=22,
+    name+' '+width+' dock overlaps Safari bottom activation zone: '+JSON.stringify(geometry));
    assert(geometry.layoutWidth<=geometry.viewport+2,
     name+' '+width+' horizontal page overflow: '+JSON.stringify(geometry));
-   if(width===320)assert(geometry.rows>=2,name+' narrow screen requires two count rows');
   }
   await page.setViewportSize({width:390,height:844});
   await page.evaluate(()=>{
@@ -78,7 +88,11 @@ async function exercise(engine,name,origin){
    document.querySelector('#readingControls')?.addEventListener('click',()=>window.__qaBackgroundClicks++,true);
   });
   const original=await page.evaluate(()=>({y:window.scrollY,bodyPosition:document.body.style.position}));
-  await trigger.click();
+  // First fingertip tap, without a programmatic second activation.
+  // Playwright mobile WebKit is not physical iPhone Safari browser chrome.
+  const tapTarget=await trigger.boundingBox();
+  assert(tapTarget,name+': saved target is not hittable');
+  await page.touchscreen.tap(tapTarget.x+tapTarget.width/2,tapTarget.y+tapTarget.height/2);
   const sheet=page.locator('#gn-dock-saved-sheet');
   await sheet.waitFor({state:'visible',timeout:15000});
   assert.equal(await sheet.getAttribute('aria-modal'),'true');
@@ -187,6 +201,29 @@ async function exercise(engine,name,origin){
   await page.locator('.gn-rd-page').waitFor({timeout:12000});
   assert.match(await page.locator('.gn-rd-page').innerText(),/QA saved note 15/);
   assert.equal(await page.locator('#gn-dock-saved-backdrop').count(),0);
+  // With exactly ONE saved reference, first tap must still show its item.
+  const solo=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+  try{
+   await solo.addInitScript(item=>{
+    localStorage.setItem('daruri-reader-v2',JSON.stringify({n:'11',lang:'english',focusLevel:0}));
+    localStorage.setItem('gnamma-reading-desk-v1',
+     JSON.stringify({format:'gnamma-reading-desk',version:1,items:[item]}));
+   },items.find(item=>item.id==='saved-note-15'));
+   const singlePage=await solo.newPage();
+   await singlePage.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
+   const one=singlePage.locator('#gn-dock-private-status .gn-dock-summary');
+   await one.waitFor({state:'visible',timeout:30000});
+   assert.equal(await one.getAttribute('data-gn-total'),'1',name+': single-item count incorrect');
+   const hit=await one.boundingBox();
+   await singlePage.touchscreen.tap(hit.x+hit.width/2,hit.y+hit.height/2);
+   const oneSheet=singlePage.locator('#gn-dock-saved-sheet');
+   await oneSheet.waitFor({state:'visible',timeout:12000});
+   assert.equal(await oneSheet.locator('.gn-dock-sheet-item').count(),1);
+   await oneSheet.locator('.gn-dock-sheet-item').click();
+   await singlePage.locator('.gn-rd-page').waitFor({timeout:12000});
+   assert.match(await singlePage.locator('.gn-rd-page').innerText(),/QA saved note 15/);
+   assert.equal(await oneSheet.count(),0);
+  }finally{await solo.close();}
   assert.deepEqual(errors,[],name+': unexpected browser errors');
   console.log('PASS '+name+': solid sheet, isolated touch/scroll, exact page restore, saved-item navigation');
  }finally{await context.close();await browser.close()}
