@@ -30,33 +30,16 @@
    menu.title='Contents';
   }
 
-  var read=document.createElement('button');
-  read.type='button';read.id='gnTopRead';read.className='gn-top-read';
-  read.dataset.route='reader';read.setAttribute('aria-label','Read or resume the book');
-  read.title='Read or resume';read.innerHTML=icon('book')+'<span>Read</span>';
-  leading.appendChild(read);
-  if(document.body.classList.contains('reading-active')){
-   read.classList.add('active');read.setAttribute('aria-current','page');
-  }
-  // Clicking Read while already reading must not reset the paragraph/scroll position.
-  read.addEventListener('click',function(event){
-   if(document.body.classList.contains('reading-active')){
-    event.preventDefault();event.stopPropagation();
-   }
-  });
-
-  // Search/Display/Help are global actions, not part of the Focus group.
-  // Move the existing controls without replacing their event-bound elements.
-  focus.after(trailing);
+  // Keep frequent scholarly tools in the existing single-row toolbar.
+  // Move the already event-bound Focus button beside AR and EN.
+  // The existing Bookmark, Copy and Share controls stay in their original slots.
+  var languages=toolbar.querySelector('.reader-language-and-actions');
   var focusButton=document.getElementById('focusToolbar');
-  if(focusButton)trailing.insertBefore(focusButton,trailing.firstChild);
-  trailing.setAttribute('aria-label','Focus, search, theme, display and help');
-
-  var help=document.createElement('button');
-  help.type='button';help.id='gnTopHelp';help.className='gn-top-help';
-  help.dataset.route='help';help.title='Help and reader guide';
-  help.setAttribute('aria-label','Help and reader guide');
-  help.innerHTML=icon('help');trailing.appendChild(help);
+  if(focusButton&&languages)languages.appendChild(focusButton);
+  // Keep global Search and Display. Theme remains inside Display/Visuals.
+  focus.after(trailing);
+  trailing.setAttribute('aria-label','Search and Display');
+  // Help is available via the Contents pane, not another top-toolbar button.
 
   var sidebar=document.querySelector('#leftNav .primary-nav');
   if(sidebar&&!sidebar.querySelector('[data-route="help"]')){
