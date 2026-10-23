@@ -387,6 +387,9 @@
    --gn-scholar-btn:32px;
    --gn-scholar-tile:40px;
  }
+ body.reader-enhanced.reading-active #readingControls .reading-controls-inner{
+   gap:1px!important;
+ }
  body.reader-enhanced.reading-active #readingControls #persistentLanguages>button{
    flex-basis:30px!important;width:30px!important;min-width:30px!important;max-width:30px!important;
  }
