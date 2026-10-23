@@ -102,8 +102,16 @@ async function exercise(engine,mobile,width=390){
    await page.keyboard.press('Escape');
    assert.equal(await page.locator('#gn-dock-saved-sheet').count(),0);
    await items.locator('[data-gn-mark="dictionary"]').click();
-   await page.locator('#detailTitle').waitFor();
+   const single=page.locator('#gn-dock-saved-sheet');
+   await single.waitFor({state:'visible'});
+   assert.equal(await single.locator('.gn-dock-sheet-item').count(),1,
+    name+': a single dictionary bookmark must use the same saved-item sheet as multiple bookmarks');
+   await single.locator('.gn-dock-sheet-item').click();
+   await page.locator('#detailTitle').waitFor({state:'visible',timeout:20000});
    assert.match(await page.locator('#detailTitle').innerText(),/mafhūm/i);
+   assert.equal(await page.locator('#gn-dock-saved-sheet').count(),0,
+    name+': choosing the saved dictionary entry must close its sheet');
+   await page.locator('#detailContent [data-rd="attach-bookmark"]').waitFor();
   }
   assert.ok(!errors.some(e=>/not a function|undefined is not|Cannot read properties/.test(e)),
    name+': application errors: '+errors.join('; '));
