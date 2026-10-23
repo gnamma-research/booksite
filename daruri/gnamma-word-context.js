@@ -320,5 +320,5 @@ new MutationObserver(()=>{
  if(!rendering)installDictionaryActions();
  augmentSelectionBar();
 }).observe(document.body,{subtree:true,childList:true,attributes:false});
-window.GnammaWordContext=Object.freeze({openWord,close,findSelectedWord});
+window.GnammaWordContext=Object.freeze({openWord,close,findSelectedWord,locateOccurrence:passageOccurrence});
 })();
