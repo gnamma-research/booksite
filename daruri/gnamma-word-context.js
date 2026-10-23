@@ -90,7 +90,7 @@ function currentToken(node,index){
  const word=text.slice(a,b);
  return AR.test(word)?word:null;
 }
-function passageOccurrence(word,grid,point){
+function passageOccurrence(word,grid,point,section,segment){
  const engine=morph(),content=grid?.querySelector('.passage-ar');
  if(!engine||!content||!point?.node||!content.contains(point.node))
   return {position:null,neighbours:[]};
@@ -101,11 +101,16 @@ function passageOccurrence(word,grid,point){
   const prefix=engine.tokenize(range.toString()).length;
   const tokens=engine.tokenize(content.textContent||'');
   const key=engine.fold(word);
+  const published=BOOK?.sections?.find(x=>String(x.id)===String(section))
+   ?.segments?.[segment];
+  const sourceTokens=engine.tokenize(published?.ar||published?.vocalized||'');
   // A caret at the beginning of a word and a caret within it differ by one token.
   // Never apply a morphological analysis from a different occurrence.
   const position=[Math.max(0,prefix-1),prefix]
    .find(i=>tokens[i]&&engine.fold(tokens[i].word)===key);
-  if(position===undefined)return {position:null,neighbours:[]};
+  if(position===undefined||sourceTokens.length!==tokens.length||
+    engine.fold(sourceTokens[position]?.word||'')!==key)
+   return {position:null,neighbours:[]};
   return {position,neighbours:[tokens[position-1]?.word||'',tokens[position+1]?.word||'']};
  }catch(_){return {position:null,neighbours:[]};}
 }
@@ -142,22 +147,57 @@ function showByKind(list,heading,css=''){
  return '<section class="gnw-block '+css+'"><h3>'+esc(heading)+'</h3>'+
   list.map(item=>'<p>'+esc(item)+'</p>').join('')+'</section>';
 }
+function grammarName(key,value){
+ const mapping={
+  pos:{noun:'Noun',verb:'Verb',adj:'Adjective',prep:'Preposition',part:'Particle',
+    conj:'Conjunction',pron:'Pronoun',noun_prop:'Proper noun'},
+  cas:{n:'Nominative',a:'Accusative',g:'Genitive',u:'Unspecified case'},
+  asp:{p:'Perfect',i:'Imperfect',c:'Imperative'},
+  vox:{a:'Active',p:'Passive'},mod:{i:'Indicative',j:'Jussive',s:'Subjunctive'},
+  stt:{d:'Definite',i:'Indefinite',c:'Construct (iḍāfa)'},
+  num:{s:'Singular',d:'Dual',p:'Plural'},gen:{m:'Masculine',f:'Feminine'},
+  per:{'1':'First person','2':'Second person','3':'Third person'}
+ };
+ return mapping[key]?.[value]||String(value||'');
+}
+function detailedGrammar(best,alternatives){
+ const f=best?.features||{};
+ const primary=[['cas','Case'],['asp','Verb form'],['vox','Voice'],['mod','Mood'],
+  ['stt','Definiteness'],['num','Number'],['gen','Gender'],['per','Person']]
+  .filter(([key])=>f[key]&&f[key]!=='na');
+ const bits=primary.map(([key,name])=>'<div><dt>'+esc(name)+'</dt><dd>'+esc(grammarName(key,f[key]))+'</dd></div>').join('');
+ const split=f.d3seg?'<p><strong>Model segmentation:</strong> <bdi lang="ar" dir="rtl">'+esc(f.d3seg)+'</bdi></p>':'';
+ const gloss=f.gloss?'<p>Model lexicon gloss (not a verified passage translation): '+esc(f.gloss)+'</p>':'';
+ const suggested=f.diac&&f.diac!==best.surface?'<p>Suggested vowels: <bdi lang="ar" dir="rtl">'+esc(f.diac)+'</bdi></p>':'';
+ const details=(primary.length||split||gloss||suggested)?
+  '<details class="gnw-grammar"><summary>More grammar</summary>'+
+   (bits?'<dl>'+bits+'</dl>':'')+suggested+split+gloss+
+   '<small>Automatic features are not independently checked against Classical Arabic or editorial variants.</small></details>':'';
+ const variants=alternatives.length?
+  '<details class="gnw-grammar"><summary>'+alternatives.length+' other possible '+(alternatives.length===1?'analysis':'analyses')+'</summary>'+
+  '<ul>'+alternatives.slice(0,5).map(x=>'<li>'+
+   '<bdi lang="ar" dir="rtl">'+esc(x.lemma)+'</bdi> · '+esc(grammarName('pos',x.pos))+
+   (x.features?.cas?' · '+esc(grammarName('cas',x.features.cas)):'')+
+   ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search word forms</button></li>').join('')+'</ul></details>':'';
+ return details+variants;
+}
 function wordMarkup(ctx){
  const {word,analysis,terms,notes,privateInfo,section,segment,highlightType}=ctx;
  const best=analysis?.best,alts=analysis?.alternatives||[];
  const names=actions(word,analysis||{});
  const root=names.root,lemma=names.lemma;
  const analysisSection='<section class="gnw-block"><h3>Word in this passage</h3>'+
-   (best?'<div class="gnw-morph-line"><bdi dir="rtl" lang="ar">'+esc(best.lemma)+'</bdi>'+
-    (best.root?' · Root <bdi dir="rtl" lang="ar">'+esc(best.root)+'</bdi>':'')+
-    (best.pos?' · '+esc(best.pos):'')+'</div>'+
-    '<small>'+esc(morph()?.sourceLabel(best.source)||'Provisional analysis')+
-      ((best.source==='reviewed'||best.source==='curated-context'||best.source==='contextual-bert')?'':' · Possible dictionary form, not a verified reading of the sentence.')+'</small>':
-    alts.length?'<p>Several grammatical analyses are possible here. None is yet confirmed from the sentence. Search a candidate form without treating it as established.</p>'+
-    '<ul>'+alts.slice(0,5).map(x=>'<li><span lang="ar" dir="rtl">'+esc(x.lemma)+'</span> · '+esc(x.pos)+
-      ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search these forms</button></li>').join('')+'</ul>':
-    '<p>No dependable morphological analysis is available for this word in the current index.</p>')+
-   '</section>';
+  (best?'<div class="gnw-morph-line"><span>Dictionary form</span> <bdi dir="rtl" lang="ar">'+esc(best.lemma)+'</bdi>'+
+   (best.root?' · <span>Root</span> <bdi dir="rtl" lang="ar">'+esc(best.root)+'</bdi>':'')+
+   (best.pos?' · '+esc(grammarName('pos',best.pos)):'')+'</div>'+
+   '<small>'+esc(morph()?.sourceLabel(best.source)||'Provisional analysis')+
+     (best.source==='curated'?' · Candidate headword, not a verified reading of the sentence.':'')+
+    '</small>'+detailedGrammar(best,alts):
+   alts.length?'<p>This form has several possible analyses in the current index. The reading of this occurrence is not established.</p>'+
+    '<ul>'+alts.slice(0,5).map(x=>'<li><bdi lang="ar" dir="rtl">'+esc(x.lemma)+'</bdi> · '+esc(grammarName('pos',x.pos))+
+     ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search word forms</button></li>').join('')+'</ul>':
+    '<p>No dependable analysis is available here yet. Ordinary word search remains available.</p>')+
+  '</section>';
  const dictionary=terms.length?
    '<section class="gnw-block gnw-dictionary"><h3>Dictionary / glossary</h3>'+
    terms.map(t=>'<p><button type="button" data-gnw-term="'+esc(t.term)+'">'+
@@ -200,7 +240,7 @@ async function openWord(word,anchor,grid,trigger=null,point=null){
  const highlightType=originalTarget?.closest?.('mark.search-hit')?'Temporary search highlight':
    originalTarget?.closest?.('[data-rd-quote],[data-rd-bookmark]')?'Saved reading annotation':null;
  const privateInfo=readPrivate(section,segment,word);
- const engine=morph(),occurrence=passageOccurrence(word,grid,point);
+ const engine=morph(),occurrence=passageOccurrence(word,grid,point,section,segment);
  let analysis=engine?.disambiguate(word,occurrence.neighbours,'daruri',
    section?'passage:'+section+':'+segment:null,occurrence.position)||
    {best:null,alternatives:[],certainty:'unavailable'};
