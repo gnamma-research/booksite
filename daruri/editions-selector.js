@@ -207,6 +207,8 @@
               '<span data-es-prepare-label>Prepare PDF</span><progress data-es-prepare-progress aria-label="PDF retrieval and verification progress" max="100" value="0" hidden></progress></button>'+
             '<a class="gn-es-action gn-es-action-primary" data-es-action="download" download hidden>Download PDF</a>'+
             '<a class="gn-es-action gn-es-action-secondary" data-es-action="open" aria-label="View the selected PDF in your browser" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>View in browser</span></a>'+
+            // STAGING ONLY: confirm that the selected approved variant can be created locally.
+            '<a class="gn-es-action gn-es-action-secondary" data-es-stage1-create hidden>Create selected PDF on this device (test)</a>'+
             '<button class="gn-es-action gn-es-action-primary" type="submit" id="pe-generate" hidden disabled>Create my PDF</button>'+
           '</div>'+
           '<p class="gn-es-ios-save-help" data-es-ios-save-help hidden>To save a copy on iPhone or iPad, open the PDF, then use Share → Save to Files.</p>'+
@@ -507,6 +509,16 @@
     }else link.removeAttribute('href');
     link.setAttribute('aria-disabled',String(result.status!=='ready'));
     if(personalReady)syncExport(mapReady?pdfFile:'');
+    // Only approved apparatus profiles enter the staged local composer;
+    // clean base editions and independent Reference PDF retain ordinary links.
+    const localCreate=root.querySelector('[data-es-stage1-create]');
+    if(localCreate){
+      const eligible=result.status==='ready'&&!isPersonal&&tier!=='reference'&&
+        /^apparatus\\//.test(result.record?.file||'');
+      localCreate.hidden=!eligible;
+      if(eligible)localCreate.href='dynamic-editions.html?profile='+encodeURIComponent(result.record.file);
+      else localCreate.removeAttribute('href');
+    }
     syncPreparation(result,isPersonal,pdfFile);
     const openVisible=!isPersonal;
     const generated=root.querySelector('#pe-generate');
