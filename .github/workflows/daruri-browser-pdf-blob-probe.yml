@@ -1,0 +1,78 @@
+name: Daruri actual browser-only JavaScript PDF bytes and Unicode text proof
+on:
+  push:
+    branches: [research/daruri-browser-html-to-pdf-20261023]
+    paths:
+      - 'daruri/dynamic-pdf/browser-rtl-blob-demo.html'
+      - 'daruri/qa/browser_pdf_blob_probe.cjs'
+      - 'daruri/qa/audit_browser_pdf_blob.py'
+      - '.github/workflows/daruri-browser-pdf-blob-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-pure-js-pdf-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser-native-pdf-blob:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned browser test runner and local font shaping library
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/qa playwright@1.56.1 @pdf-lib/fontkit@1.1.1 pdf-lib@1.17.1
+          cd daruri/qa
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+          python -m pip install -q 'PyMuPDF==1.26.7'
+      - name: Verify actual JavaScript-generated PDF Blob downloaded without browser print
+        env:
+          GN_BROWSER_ENGINE: ${{ matrix.browser }}
+          GN_BROWSER_OUT: /tmp/daruri-pdf-blob-${{ matrix.browser }}
+        run: node daruri/qa/browser_pdf_blob_probe.cjs
+      - name: Measure searchable/copyable Arabic words and separate original footnote
+        run: |
+          python daruri/qa/audit_browser_pdf_blob.py \
+            --pdf /tmp/daruri-pdf-blob-${{ matrix.browser }}/daruri-browser-rtl-text-NONRELEASE.pdf \
+            --report /tmp/daruri-pdf-blob-${{ matrix.browser }}/arabic-source-and-note-audit.json
+      - name: Gate claim to actual file bytes, not screenshot or print dialog
+        run: |
+          python - <<'PY'
+          import pathlib,json
+          root=pathlib.Path('/tmp/daruri-pdf-blob-${{ matrix.browser }}')
+          source=json.loads((root/'browser-pdf-blob-proof.json').read_text())
+          proof=json.loads((root/'arabic-source-and-note-audit.json').read_text())
+          assert source['success'] and source['bytes']>3000
+          assert not source['print_was_invoked'] and not source['privileged_devtools_print_used']
+          assert proof['pdf_has_actual_selectable_text']
+          assert proof['distinct_footnote_body_extracted']
+          print('BROWSER_PURE_JS_PDF_TEXT_REPORT',source['engine'],
+                {'arabic_extraction':proof['source_arabic_extraction_all'],
+                 'arabic_native_exact_search':proof['source_arabic_native_search_all'],
+                 'note_body':proof['distinct_footnote_body_extracted'],
+                 'downloaded_bytes':source['bytes']})
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Daruri-browser-only-Arabic-PDF-Blob-${{ matrix.browser }}-NONRELEASE
+          path: |
+            /tmp/daruri-pdf-blob-${{ matrix.browser }}/*.json
+            /tmp/daruri-pdf-blob-${{ matrix.browser }}/*.pdf
+            /tmp/daruri-pdf-blob-${{ matrix.browser }}/*.png
+          if-no-files-found: warn
+          retention-days: 14
