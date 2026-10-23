@@ -81,6 +81,10 @@ jobs:
           python3 daruri/build/pack_morph_context.py \
             --index "$RUNNER_TEMP/morph-review/morph-${WORK}-v1.json" \
             --out-dir "$RUNNER_TEMP/morph-review/packed"
+          python3 daruri/build/propose_dictionary_morphology.py \
+            --index "$RUNNER_TEMP/morph-review/morph-${WORK}-v1.json" \
+            --output "$RUNNER_TEMP/morph-review/dictionary-evidence-${WORK}.csv" \
+            --summary "$RUNNER_TEMP/morph-review/dictionary-evidence-${WORK}-summary.json"
           python3 daruri/build/export_morph_review.py \
             --index "$RUNNER_TEMP/morph-review/morph-${WORK}-v1.json" \
             --count "$REVIEW_COUNT" \
