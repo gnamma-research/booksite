@@ -294,7 +294,7 @@
 @media screen {
   body.reader-enhanced.reading-active #gnTopRead{display:none!important}
   body.reader-enhanced #readingControls #gnTopHelp,
-  body.reader-enhanced #readingControls #themeBtn{display:none!important}
+  body.reader-enhanced #readingControls .gn-reader-global-trailing #themeBtn{display:none!important}
   body:not(.reading-active) #leftNav #gnNavShare{display:none!important}
   body.reader-enhanced #readingControls .gn-reader-global-trailing #focusToolbar{
     order:-5!important;
