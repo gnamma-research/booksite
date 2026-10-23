@@ -91,4 +91,59 @@ assert sheet[0]["ambiguous"] == "yes"
 assert sheet[0]["reviewed_lemma"] == ""
 assert "والكتب" in sheet[0]["context"]
 
-print("PASS: morphology lexical/root normalization, provenance and curated index invariants")
+# Sentence windows preserve the original published token positions.
+windows = module.contextual_windows("كتب العلم؟ ثم كتب الدرس.", max_words=2)
+assert windows == [
+    (0, ["كتب", "العلم"]),
+    (2, ["ثم", "كتب"]),
+    (4, ["الدرس"]),
+], windows
+
+# Exercise the actual contextual annotator without downloading BERT weights.
+# Fake output tests the indexing contract, NOT Arabic linguistic accuracy.
+from types import SimpleNamespace
+
+
+class FakeDisambiguator:
+    def disambiguate(self, batch):
+        output = []
+        for surface in batch:
+            primary = SimpleNamespace(analysis={
+                "lex": "كاتِب_1", "root": "ك.ت.ب", "pos": "noun",
+                "source": "lex", "diac": surface, "cas": "n",
+                "gloss": "writer", "d3seg": surface,
+            })
+            alternate = SimpleNamespace(analysis={
+                "lex": "كِتاب_2", "root": "ك.ت.ب", "pos": "noun",
+                "source": "lex", "cas": "a", "gloss": "book",
+            })
+            output.append(SimpleNamespace(analyses=[primary, alternate]))
+        return output
+
+
+model = module.ContextualBERT.__new__(module.ContextualBERT)
+model.model = FakeDisambiguator()
+model.include_all = True
+model.target_roots = set()
+annotated, n = model.annotate("كتب العلم؟ ثم كتب.")
+assert n == 4
+assert sorted({entry[0] for entry in annotated}) == [0, 1, 2, 3]
+assert len(annotated) == 8
+for entry in annotated:
+    assert len(entry) == 8, entry
+    assert entry[2] in {"كاتِب", "كِتاب"}
+    assert entry[3] == "كتب"
+    assert entry[5] in {"contextual-bert", "contextual-alternative"}
+    assert entry[6].endswith(("_1", "_2"))
+    assert entry[7]["rank"] in (1, 2)
+assert all(row[5] == "contextual-bert" for row in annotated[::2])
+assert all(row[5] == "contextual-alternative" for row in annotated[1::2])
+fake_index = module.build_index("daruri", [("passage:1:0", "كتب العلم")], model, "bert")
+assert fake_index["contextual"] is True
+assert fake_index["classicalArabicValidated"] is False
+assert fake_index["summary"]["tokens"] == 2
+assert fake_index["summary"]["analysedTokens"] == 2
+assert fake_index["summary"]["alternatives"] == 2
+
+print("PASS: morphology normalization, provenance, source windows and contextual model contract")
+
