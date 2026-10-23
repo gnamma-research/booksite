@@ -1,0 +1,51 @@
+name: Daruri Stage 2 independent compiler comparison - Typst WASM (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-stage2-engine-shootout-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/**'
+      - '.github/workflows/daruri-stage2-typst-wasm-shootout.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-stage2-typst-alt-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  native-wasm-typst:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate unaltered six-source plus all-414 test fixture
+        run: |
+          python daruri/qa/stage2_shootout/source_fixture.py /tmp/daruri-typst-qa/source.json
+      - name: Install documented pinned Typst WASM worker and fonts
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+      - name: Actual WASM source-to-PDF compiler (six real source paragraphs)
+        env:
+          STAGE2_FIXTURE: /tmp/daruri-typst-qa/source.json
+          STAGE2_OUTPUT: /tmp/daruri-typst-qa
+        run: |
+          node --check daruri/qa/stage2_shootout/typst_node.mjs
+          node daruri/qa/stage2_shootout/typst_node.mjs
+      - name: Native MuPDF/PDFium/Poppler Arabic word and quote audit
+        run: |
+          python -m pip install -q 'PyMuPDF==1.26.7' 'pypdfium2==5.4.0'
+          python daruri/qa/stage2_shootout/verify_compilers.py \
+            /tmp/daruri-typst-qa/typst-wasm-six.pdf /tmp/daruri-typst-qa/source.json \
+            /tmp/daruri-typst-qa/native-typst.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-alternative-typst-wasm-NONRELEASE
+          path: /tmp/daruri-typst-qa
+          if-no-files-found: warn
+          retention-days: 14
