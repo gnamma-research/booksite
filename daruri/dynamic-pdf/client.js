@@ -109,8 +109,13 @@
    }
    if(opt.options.length!==apparatus.files.length)
     fail('The signed design registry does not reproduce all approved apparatus editions');
-   opt.value='apparatus/daruri-reading-bilingual-glossary.pdf';
-   if(!opt.value)fail('The default source design has no approved apparatus binding');
+   // Staging path from the reader's exact Editions selection. Never
+   // substitute a different approved edition for an unknown requested one.
+   const requested=new URL(location.href).searchParams.get('profile');
+   if(requested!==null&&!designs.approved_compositions.some(x=>x.file===requested))
+     fail('The requested PDF profile is not in the signed publication catalogue');
+   opt.value=requested||'apparatus/daruri-reading-bilingual-glossary.pdf';
+   if(!opt.value)fail('The requested source design has no approved apparatus binding');
    const other=$('gn-dyn-other-links');
    other.replaceChildren();
    for(const design of designs.other_approved_designs){
