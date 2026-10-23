@@ -221,11 +221,14 @@
   const profile=selectOption();
   const bridge=window.GnammaPersonalExportInline;
   if(!bridge?.ready||!bridge.invalidateDynamicEdition)return false;
-  const exact=profile?'editions/'+profile.file:'';
-  const result=bridge.invalidateDynamicEdition(exact);
+  // Once the 120 complete apparatus PDFs are retired, their paths MUST NOT
+  // be presented as available fallback files. The selected base has the
+  // original text and notes, but DOES NOT include the requested apparatus.
+  const cleanBase=profile?.source_base?'editions/'+profile.source_base:'';
+  const result=bridge.invalidateDynamicEdition(cleanBase);
   $('gn-dyn-personal-status').textContent=result?
-   'The unchanged published version of this exact selection remains available below.':
-   'No verified fallback for this exact selection. Personal export is disabled.';
+   'Only the clean source edition is available after cancellation or failure. It does not include your selected scholarly additions. Retry generation to obtain the exact requested edition.':
+   'No verified clean source is available. Personal export is disabled.';
   return result;
  }
  function cancelGeneration(){
@@ -239,7 +242,7 @@
   try{restoreExactPublishedEdition();}
   catch(error){status('Personal export is busy: '+error.message,true);updateControls();return;}
   updateControls();
-  status('Generation cancelled. No new PDF was saved; the approved edition remains available.');
+  status('Generation cancelled. No apparatus edition was created. You may retry, or choose the clean source PDF separately.');
  }
  async function generate(mode){
   if(busy||!ready)return;
@@ -308,8 +311,15 @@
    downloadURL=previewUrl;
    const download=$('gn-dyn-download');
    download.href=previewUrl;
-   download.download=name;
+   const apple=(()=>{const ua=navigator.userAgent||'';
+     return /iPhone|iPad|iPod/i.test(ua)||
+       (navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1)})();
+   download.textContent=apple?'View created PDF':'Download created PDF';
+   if(apple){download.removeAttribute('download');download.target='_blank';download.rel='noopener';}
+   else {download.download=name;download.removeAttribute('target');}
    download.hidden=false;
+   const help=$('gn-dyn-ios-save-help');
+   if(help)help.hidden=!apple;
    status('Verified '+result.pages+' pages in '+elapsed+' seconds · '+
     Math.round(result.bytes.length/1024)+' KiB · '+
     result.linkCounts.sourceLinks+' apparatus-to-text links. Original pages remain unchanged.');
@@ -333,7 +343,8 @@
    clearOutput();
    try{restoreExactPublishedEdition();}
    catch(ignore){/* A separate personal export stays protected from mutation. */}
-   status('Publication not generated: '+(error?.message||String(error)),true);
+   status('Could not create this selected PDF: '+(error?.message||String(error))+
+    '. You may retry. The separate clean source edition does not contain the selected scholarly additions.',true);
   }finally{
    if(id===generationId){
     busy=false;
@@ -356,7 +367,7 @@
     catch(error){status('Cannot change while a personal export is active: '+error.message,true);return;}
    }
    updateDesignDetails();
-   status('Ready: generate this exact design, or use its approved PDF below.');
+   status('Ready to create this exact A4 edition from a verified source and apparatus packet on your device.');
   });
   window.addEventListener('pagehide',()=>{
    ++generationId;
@@ -365,6 +376,10 @@
    if(downloadURL)URL.revokeObjectURL(downloadURL);
   });
   updateControls();
-  init();
+  void init().then(()=>{
+   const autostart=new URL(location.href).searchParams.get('autostart');
+   if((autostart==='plain'||autostart==='personal')&&ready)
+     void generate(autostart);
+  });
  });
 })();
