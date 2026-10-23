@@ -248,8 +248,11 @@ enrich_mod = importlib.util.module_from_spec(enrich_spec)
 enrich_spec.loader.exec_module(enrich_mod)
 lexicon = json.loads((ROOT / "daruri" / "morph-lexicon.json").read_text(encoding="utf-8"))
 hints = enrich_mod.root_hints(lexicon)
-assert hints[module.fold("قِياس")] == "قيس"
-assert hints[module.fold("واجِب")] == "وجب"
+assert hints[enrich_mod.lexical_key("قِياس")] == "قيس"
+assert hints[enrich_mod.lexical_key("واجِب")] == "وجب"
+assert enrich_mod.lexical_key("أَمَرّ") != enrich_mod.lexical_key("أَمْر")
+assert enrich_mod.lexical_key("أَمْر") == enrich_mod.lexical_key("أمر")
+assert enrich_mod.lexical_key("تَعَلَّم") != enrich_mod.lexical_key("تعالم")
 assert enrich_mod.matches_partial_raw_root("ق.#.س", "قيس") is True
 assert enrich_mod.matches_partial_raw_root("#.ج.ب", "وجب") is True
 assert enrich_mod.matches_partial_raw_root("ب.#.س", "قيس") is False
@@ -279,6 +282,16 @@ assert terms[2][3] == "", "Incompatible raw consonants cannot be overridden"
 assert terms[3][3] == "عضض", "An existing model guess is retained as unreviewed"
 assert terms[4][3] == "", "Function words are not assigned invented roots"
 assert supplement["statistics"]["supplemented"] == 2
+geminated = {
+    "schema": "gnamma-morph-v1", "work": "daruri", "contextual": True,
+    "records": [{"id": "passage:1:0",
+                 "a": [[0, "الأمر", "أَمَرّ", "", "adj",
+                        "contextual-bert", "أَمَرّ", {}]]}]
+}
+geminated_out, geminated_report = enrich_mod.enrich(geminated, lexicon)
+assert geminated_out["records"][0]["a"][0][3] == "", (
+    "أَمَرّ must never inherit the root of أَمْر")
+assert geminated_report["statistics"]["supplemented"] == 0
 assert root_updated["classicalArabicValidated"] is False
 compact_hint, _ = pack_mod.pack(root_updated, {
     "passage:1:0": "القياس واجب تتبين بعض إن"
