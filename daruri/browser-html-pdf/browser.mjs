@@ -6,6 +6,7 @@
 // Do not confuse a repaired emitter with improved pagination/footnote policy.
 import {printHTML} from 'vivliostyle-pdf';
 import {emitPdfFromWindow} from 'pages-to-pdf';
+import {PDFDocument,PDFName,PDFArray,PDFDict,PDFNumber} from '@pdfme/pdf-lib';
 const el=id=>document.getElementById(id);
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const status=(value,detail={})=>{el('status').textContent=value;window.__daruriQA={...(window.__daruriQA||{}),...detail,status:value};};
@@ -56,6 +57,40 @@ function htmlFor(fixture,mode){
   '.note-label{font-weight:700}'
  ].join('\n');
  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Daruri real-source browser-only PDF feasibility</title><meta name="author" content="Gnamma Research; nonrelease experiment"><style>'+css+'</style></head><body><h1>Al-Daruri browser-generated PDF experiment</h1><p class="subtitle">Real canonical source. N65 is synthetic note placement, not a published note.</p>'+blocks.join('')+'</body></html>';
+}
+async function normalizePdfDestinations(input){
+ // Browser emitter represents GoTo links with [/Page /XYZ null y null].
+ // MuPDF has treated these annotations as LINK_NAMED (and cannot follow them)
+ // on Arabic source pages; explicit numeric x/zoom preserves y and makes the
+ // target unambiguous to native readers. This is a PDF-level no-retype step,
+ // performed IN the browser before the Blob download.
+ const pdf=await PDFDocument.load(input,{updateMetadata:false});
+ const annotsName=PDFName.of('Annots'),destName=PDFName.of('Dest');
+ let inspected=0,changed=0;
+ for(const page of pdf.getPages()){
+  const arr=page.node.get(annotsName)?
+    page.node.lookup(annotsName,PDFArray):null;
+  if(!arr)continue;
+  for(let idx=0;idx<arr.size();idx++){
+   const annotation=pdf.context.lookup(arr.get(idx),PDFDict);
+   if(!annotation || !annotation.get(destName))continue;
+   inspected++;
+   const destination=annotation.lookup(destName,PDFArray);
+   if(!destination||destination.size()<5||
+      destination.get(1).toString()!=='/XYZ')continue;
+   let modified=false;
+   if(destination.get(2).toString()==='null'){
+     destination.set(2,PDFNumber.of(0));modified=true;
+   }
+   if(destination.get(4).toString()==='null'){
+     destination.set(4,PDFNumber.of(0));modified=true;
+   }
+   if(modified)changed++;
+  }
+ }
+ if(!changed)return {bytes:input,inspected,changed};
+ const bytes=await pdf.save({useObjectStreams:false});
+ return {bytes,inspected,changed};
 }
 async function render(mode){
  if(!['excerpt','full'].includes(mode))throw Error('Unrecognised experiment mode');
@@ -114,7 +149,12 @@ async function render(mode){
   });
   const deadline=new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Browser PDF export exceeded 180 seconds')),180000);});
   const value=await Promise.race([promise,deadline]);
-  const bytes=value instanceof Uint8Array?value:new Uint8Array(value);
+  const raw=value instanceof Uint8Array?value:new Uint8Array(value);
+  const linkRepair=await normalizePdfDestinations(raw);
+  const bytes=linkRepair.bytes;
+  window.__daruriQA={...(window.__daruriQA||{}),
+    browser_pdf_goto_destinations:linkRepair.inspected,
+    browser_pdf_fixed_destinations:linkRepair.changed};
   if(String.fromCharCode(...bytes.slice(0,5))!=='%PDF-')throw Error('No browser-generated PDF header');
   const url=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
   const a=document.createElement('a');a.download='daruri-browser-only-'+mode+'-NONRELEASE.pdf';a.href=url;
@@ -123,6 +163,8 @@ async function render(mode){
   const qa={phase:'done',mode,bytes:bytes.length,elapsed_ms:Math.round(performance.now()-started),
     memory_before:memoryBefore,memory_after:performance.memory?.usedJSHeapSize??null,
     source_sha256:fixture.source_sha256,authorial_sections:258,authorial_passages:414,
+    browser_pdf_goto_destinations:linkRepair.inspected,
+    browser_pdf_fixed_destinations:linkRepair.changed,
     engine:'@vivliostyle/print via vivliostyle-pdf; pages-to-pdf@0.4.1 DOM emitter',no_server_pdf_generation:true,
     no_print_dialog:true,no_cdp_print_to_pdf:true,no_prebuilt_pdf_inputs:true,not_release_approved:true};
   status('PDF generated entirely in this browser. Native Arabic and footnote QA still required.',qa);
