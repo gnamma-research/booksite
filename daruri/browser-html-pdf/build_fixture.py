@@ -14,7 +14,7 @@ from pathlib import Path
 import sys
 
 HERE=Path(__file__).resolve().parent
-ROOT=HERE.parents[1]
+ROOT=HERE.parent
 sys.path.insert(0,str(ROOT/"build"))
 from build_editions import read_book  # noqa:E402
 
