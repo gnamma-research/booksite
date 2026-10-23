@@ -79,9 +79,9 @@ test('Editions and downloads remain accessible without duplicate sidebar jump',(
  assert.ok(fallbackNav.find(node=>node.tag==='a'&&node.attrs.href==='#contents'));
  assert.ok(fallbackNav.find(node=>node.tag==='a'&&node.attrs.href==='#about'));
  const staticMarkup=html.slice(0,appStart)
-  .replace(/<script\\b[^>]*>[\\s\\S]*?<\\/script>/gi,'')
-  .replace(/<style\\b[^>]*>[\\s\\S]*?<\\/style>/gi,'');
- const staticIds=new Set([...staticMarkup.matchAll(/\\bid=["']([^"']+)["']/g)].map(match=>decode(match[1])));
+   .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,'')
+   .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,'');
+ const staticIds=new Set([...staticMarkup.matchAll(/\bid=["']([^"']+)["']/g)].map(match=>decode(match[1])));
  descendants(fallbackNav,node=>node.tag==='a'&&node.attrs.href?.startsWith('#'))
   .forEach(link=>assert.ok(staticIds.has(decodeURIComponent(link.attrs.href.slice(1))),'Existing native destination '+link.attrs.href));
 });
