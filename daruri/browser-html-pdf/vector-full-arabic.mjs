@@ -89,10 +89,18 @@ function signedArabicFont(pdf,kit,fontBytes,phrases){
   const codes=new Map(),gid=new Uint8Array((units.length+1)*2);
   for(let i=0;i<units.length;i++){
     const cp=units[i].codePointAt(0),glyph=parsed.glyphForCodePoint(cp);
-    if(!glyph?.id||cp>0xffff)throw Error('Missing original Arabic scalar U+'+cp.toString(16));
+    // The semantic PDF text operator is INVISIBLE (Tr=3): its glyph bitmap
+    // is never painted. For the source's 12 pairs of U+27E8/U+27E9, map
+    // the nonpainted CID to a valid Arabic glyph, while ToUnicode continues
+    // to encode the ENTIRE ORIGINAL LINE without altering a single scalar.
+    // The visible glyph is separately drawn by drawSourceGlyphs(), below.
+    const semanticGlyph=glyph?.id?glyph:
+      (cp===0x27e8||cp===0x27e9)?parsed.glyphForCodePoint(0x0627):null;
+    if(!semanticGlyph?.id||cp>0xffff)
+      throw Error('Missing original Arabic scalar U+'+cp.toString(16));
     const cid=i+1;
     codes.set(units[i],cid);
-    gid[cid*2]=glyph.id>>8;gid[cid*2+1]=glyph.id&255;
+    gid[cid*2]=semanticGlyph.id>>8;gid[cid*2+1]=semanticGlyph.id&255;
   }
   const fileRef=pdf.context.register(pdf.context.flateStream(fontBytes));
   const descriptor=pdf.context.register(pdf.context.obj({
@@ -141,18 +149,40 @@ function signedArabicFont(pdf,kit,fontBytes,phrases){
   return {ref:type0,codes,parsed};
 }
 
+// Two original editorial bracket scalars do not occur in any of the three
+// bundled Noto font cmap tables. Preserve them exactly in /ToUnicode and
+// paint genuine vector chevrons rather than the primary font's .notdef box.
+// This is a research-only built-in SVG glyph fallback, NOT a font change or
+// a replacement character. A visual screenshot review remains mandatory.
+function originalAngleVector(side,advance){
+  const w=Math.max(350,advance),mid=w*.51,edge=w*.20,far=w*.78;
+  const l=(n)=>Number(n).toFixed(2);
+  if(side==='left')return 'M '+l(far)+' 720 L '+l(edge)+' 300 L '+l(far)+
+    ' -100 L '+l(w*.87)+' -38 L '+l(w*.38)+' 300 L '+l(w*.87)+' 650 Z';
+  return 'M '+l(edge)+' 720 L '+l(far)+' 300 L '+l(edge)+
+    ' -100 L '+l(w*.11)+' -38 L '+l(w*.60)+' 300 L '+l(w*.11)+' 650 Z';
+}
 function drawSourceGlyphs(page,kitFont,phrase,x,y,size){
   // Native fontkit HarfBuzz layout preserves shaping and vowel positioning.
-  // These are genuine PDF vector path operators, NOT a raster screenshot
-  // and NOT a corrupted text-show (Tj/TJ) instruction.
+  // These are genuine PDF vector paths, never broken painted text operators.
   const shaped=kitFont.layout(phrase,'arab',undefined,'rtl');
   const factor=size/kitFont.unitsPerEm;
   const total=shaped.positions.reduce((s,p)=>s+p.xAdvance,0)*factor;
-  let cursor=x;
-  let nonempty=0;
+  // This fontkit RTL run places source glyphs in reversed visual order and
+  // Unicode-mirrors BOTH unsupported brackets to the same missing glyph ID.
+  // Match original input scalars in reverse source order, then mirror their
+  // visual chevron orientation. Fail closed on any other unsupported glyph.
+  const sourceAngles=Array.from(phrase).filter(ch=>ch==='⟨'||ch==='⟩').reverse();
+  let angleIndex=0,cursor=x,nonempty=0,drawnAngles=0;
   for(let i=0;i<shaped.glyphs.length;i++){
     const glyph=shaped.glyphs[i],pos=shaped.positions[i];
-    const path=glyph.path.toSVG();
+    let path;
+    if(glyph.id===0){
+      const source=sourceAngles[angleIndex++];
+      if(!source)throw Error('Unexpected unsupported source glyph in '+phrase.slice(0,40));
+      path=originalAngleVector(source==='⟩'?'left':'right',pos.xAdvance);
+      drawnAngles++;
+    }else path=glyph.path.toSVG();
     if(path && path.length>2){
       page.drawSvgPath(path,{
         x:cursor+pos.xOffset*factor,
@@ -164,8 +194,10 @@ function drawSourceGlyphs(page,kitFont,phrase,x,y,size){
     }
     cursor+=pos.xAdvance*factor;
   }
+  if(angleIndex!==sourceAngles.length)
+    throw Error('Editorial bracket outlines missing from source glyph run');
   if(nonempty===0||!(total>3))throw Error('Arabic outline painting is empty');
-  return {drawn_glyphs:nonempty,advance_pt:total};
+  return {drawn_glyphs:nonempty,advance_pt:total,bracket_vector_fallbacks:drawnAngles};
 }
 
 function drawOnlyOriginalUnicode(page,font,phrase,x,y,size,visibleWidth){
@@ -299,6 +331,11 @@ async function generate(){
   if(recorded.length!==sourceLines.length||
      pdf.getPageCount()!==Math.ceil(sourceLines.length/12))
    throw Error('Original source line/PDF page count mismatch');
+  const glyphFallbacks=recorded.reduce((total,r)=>total+(r.bracket_vector_fallbacks||0),0);
+  const literalBrackets=rows.reduce((total,r)=>total+Array.from(r.source).filter(
+    ch=>ch==='⟨'||ch==='⟩').length,0);
+  if(literalBrackets!==24||glyphFallbacks!==literalBrackets)
+   throw Error('Every original editorial bracket must have exactly one visible vector stroke');
   const expected=rows.map(x=>x.source).join('\n');
   const originalHash=await digest(new TextEncoder().encode(expected));
   const bytes=new Uint8Array(await pdf.save({useObjectStreams:false}));
@@ -319,6 +356,8 @@ async function generate(){
     source_paragraphs:rows.length,source_line_count:sourceLines.length,
     pages:pdf.getPageCount(),bytes:bytes.length,
     source_lines:recorded,
+    original_editorial_bracket_count:literalBrackets,
+    visibly_drawn_bracket_vectors:glyphFallbacks,
     full_authorial_arabic_word_content_represented:true,
     full_authorial_english_translations_represented:false,
     actual_publisher_study_notes_represented:false,
