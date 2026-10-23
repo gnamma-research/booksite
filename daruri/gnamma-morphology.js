@@ -5,7 +5,7 @@
  */
 (function(global){
 'use strict';
-const SCHEMA='gnamma-morph-v1',VERSION='20261022-morph1';
+const SCHEMA='gnamma-morph-v1',VERSION='20261023-morphclarity1';
 const data=new Map(),pending=new Map(),errors=new Map(),listeners=new Set();
 let lexicon=null,lexiconPromise=null,notice='';
 const AR=/[\u0621-\u064a]/u;
@@ -87,9 +87,11 @@ function buildIndex(raw){
   byId.set(row.id,row);
   for(const a of row.a){
    if(!Array.isArray(a)||a.length<6)continue;
-   const [position,surface,lemma,root,pos,source]=a;
+   const [position,surface,lemma,root,pos,source,lexId]=a;
    if(!Number.isInteger(position)||position<0||typeof surface!=='string'||typeof lemma!=='string')continue;
-   const hit={id:row.id,position,surface,lemma,root,pos,source,work:raw.work,confidence:source==='reviewed'?'reviewed':source==='contextual-bert'?'automated':'provisional'};
+   const hit={id:row.id,position,surface,lemma,root,pos,source,
+    lexId:typeof lexId==='string'?lexId:'',
+    work:raw.work,confidence:source==='reviewed'?'reviewed':source==='contextual-bert'?'automated':'provisional'};
    if(source==='ambiguous')ambiguous++;
    annotated++;
    for(const [map,key] of [[byLemma,fold(lemma)],[byRoot,fold(root)],[byForm,fold(surface)]]){
@@ -126,7 +128,7 @@ function disambiguate(word,neighbours=[],work,id=null,position=null){
  const found=lookup(word,work,{id,position});
  if(found.length===1)return {best:found[0],alternatives:[],certainty:found[0].confidence};
  if(found.length>1){
-  const distinct=[...new Map(found.map(x=>[x.lemma+'|'+x.pos,x])).values()];
+  const distinct=[...new Map(found.map(x=>[x.lemma+'|'+x.pos+'|'+(x.lexId||''),x])).values()];
   return {best:distinct.length===1?distinct[0]:null,
    alternatives:distinct,certainty:distinct.length===1?'provisional':'ambiguous'};
  }
