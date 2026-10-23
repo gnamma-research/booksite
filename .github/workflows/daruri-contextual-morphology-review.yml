@@ -1,11 +1,6 @@
 name: Daruri contextual morphology candidate review
 # Manual only: expensive model inference must never run for every reader commit.
 on:
-  push:
-    branches:
-      - feature/contextual-search-clarity-20261023
-    paths:
-      - '.github/workflows/daruri-contextual-morphology-review.yml'
   workflow_dispatch:
     inputs:
       work:
@@ -29,7 +24,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: contextual-morph-${{ github.event_name == 'push' && 'daruri' || inputs.work }}
+  group: contextual-morph-${{ inputs.work }}
   cancel-in-progress: false
 jobs:
   candidate-index:
@@ -45,8 +40,8 @@ jobs:
           python-version: "3.12"
       - name: Validate manually supplied bounds
         env:
-          LIMIT: ${{ github.event_name == 'push' && '12' || inputs.max_paragraphs }}
-          REVIEW_COUNT: ${{ github.event_name == 'push' && '12' || inputs.review_count }}
+          LIMIT: ${{ inputs.max_paragraphs }}
+          REVIEW_COUNT: ${{ inputs.review_count }}
         run: |
           python3 - <<'PY'
           import os
@@ -68,9 +63,9 @@ jobs:
           camel_data -i disambig-bert-unfactored-msa
       - name: Build offline contextual CANDIDATES, never publish to the reader
         env:
-          WORK: ${{ github.event_name == 'push' && 'daruri' || inputs.work }}
-          LIMIT: ${{ github.event_name == 'push' && '12' || inputs.max_paragraphs }}
-          REVIEW_COUNT: ${{ github.event_name == 'push' && '12' || inputs.review_count }}
+          WORK: ${{ inputs.work }}
+          LIMIT: ${{ inputs.max_paragraphs }}
+          REVIEW_COUNT: ${{ inputs.review_count }}
         run: |
           mkdir -p "$RUNNER_TEMP/morph-review"
           python3 daruri/build/build_gnamma_morph_index.py \
@@ -92,7 +87,7 @@ jobs:
       - name: Upload review artifacts privately to this Actions run
         uses: actions/upload-artifact@v4
         with:
-          name: contextual-candidates-${{ github.event_name == 'push' && 'daruri' || inputs.work }}-${{ github.run_number }}
+          name: contextual-candidates-${{ inputs.work }}-${{ github.run_number }}
           path: ${{ runner.temp }}/morph-review/
           retention-days: 14
           if-no-files-found: error
