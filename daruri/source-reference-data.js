@@ -477,6 +477,6 @@ window.DARURI_SOURCE_REFERENCES = {
   window.__gnHadithNoteIntegrationLoader=true;
   var base=new URL('.',document.currentScript&&document.currentScript.src||document.baseURI);
   var css=document.createElement('link');
-  css.rel='stylesheet';css.href=new URL('hadith-note-integration.css?v=20261023-hnux1',base).href;document.head.append(css);
-  var js=document.createElement('script');js.src=new URL('hadith-note-integration.js?v=20261023-hnux1',base).href;js.async=false;document.head.append(js);
+  css.rel='stylesheet';css.href=new URL('hadith-note-integration.css?v=20261023-hnux1',base).href;document.head.appendChild(css);
+  var js=document.createElement('script');js.src=new URL('hadith-note-integration.js?v=20261023-hnux1',base).href;js.async=false;document.head.appendChild(js);
 })();
