@@ -81,6 +81,7 @@ try{
   assert.ok(desktop.panelLeft>=desktop.navRight-2,'Desktop download rail must sit beside, not above, content: '+JSON.stringify(desktop));
   assert.ok(desktop.navWidth<=230&&desktop.panelWidth>=360,'Compact desktop navigation must leave room for documents: '+JSON.stringify(desktop));
   await page.screenshot({path:path.join(captures,'daruri-downloads-desktop-default.png'),fullPage:true});
+  await page.screenshot({path:path.join(captures,'daruri-downloads-desktop-viewport.png')});
 
   // Every other download type must be immediately reachable without the PDF settings.
   await ui.locator('[data-es-download-type="guide"]').click();
