@@ -23,7 +23,7 @@
 .gn-dyn-result {font-size:.94rem;line-height:1.6;max-width:850px}
 .gn-dyn-result[data-error=true] {color:#9b352e}
 .gn-dyn-download {display:inline-block;margin:12px 0;font-weight:600;}
-.gn-dyn-download[hidden],.gn-dyn-actions [hidden] {display:none!important;}
+.gn-dyn-download[hidden],.gn-dyn-actions [hidden],#gn-dyn-ios-save-help[hidden] {display:none!important;}
 .gn-dyn-hint {font-size:.9rem;line-height:1.55;color:#52625d}
 .gn-dyn-spec {background:#f0f5f2;border-inline-start:3px solid #72958a;padding:9px 12px;font-size:.91rem;line-height:1.5}
 .gn-dyn-other {margin:1.15rem 0;border-top:1px solid #bbcac5;padding-top:12px}
@@ -46,22 +46,23 @@
  <p class="lead">Start with an unchanged published PDF, or add your private Reading Desk observations as discreet P-number references and a searchable personal endnotes appendix. Everything is assembled in this browser: no login, server-side account or upload of your notes.</p>
  <div id="pe-alert" class="alert" role="status" aria-live="polite" hidden></div>
  <section class="gn-dyn-panel" id="gn-dyn-panel" aria-labelledby="gn-dyn-title">
-<h2 id="gn-dyn-title">Build an edition from approved text and apparatus</h2>
-<p class="gn-dyn-hint">This experimental publishing tool joins a checksum-verified Reading or Study PDF to a typeset apparatus packet using the same Gnamma HTML/CSS layouts. It works in this browser, without a publication server or upload of your private notes. The approved published PDFs remain available.</p>
+<h2 id="gn-dyn-title">Create your PDF on this device</h2>
+<p class="gn-dyn-hint">Your selected A4 edition is assembled privately in this browser from a verified full-text source and its scholarly additions. The completed apparatus variant does not need to be stored on the website. No Reading Desk notes are uploaded.</p>
 <label for="gn-dyn-profile">Choose a full-text edition and scholarly components</label>
 <select id="gn-dyn-profile" aria-describedby="gn-dyn-design-spec gn-dyn-status"><option>Loading approved edition designs…</option></select>
 <p id="gn-dyn-design-spec" class="gn-dyn-spec">The precise book design and existing footnote arrangement will be preserved.</p>
 <div class="gn-dyn-actions">
- <button type="button" id="gn-dyn-make" disabled>Generate PDF locally</button>
- <button type="button" id="gn-dyn-personal" disabled>Generate with my Reading Desk notes</button>
+ <button type="button" id="gn-dyn-make" disabled>Create PDF on this device</button>
+ <button type="button" id="gn-dyn-personal" disabled>Create with my Reading Desk notes</button>
  <button type="button" id="gn-dyn-cancel" aria-label="Cancel PDF generation" hidden>Cancel generation</button>
 </div>
 <p id="gn-dyn-status" class="gn-dyn-result" role="status" aria-live="polite">Checking publication files…</p>
-<a id="gn-dyn-download" class="gn-dyn-download" hidden>Download generated PDF</a>
+<a id="gn-dyn-download" class="gn-dyn-download" hidden>Download created PDF</a>
+<p id="gn-dyn-ios-save-help" class="gn-dyn-hint" hidden>To keep the PDF on iPhone or iPad, open it and use Share → Save to Files.</p>
 <p id="gn-dyn-personal-status" class="gn-dyn-hint"></p>
-<p class="gn-dyn-hint">Standard Reading and Reference PDFs have not been modified. Personal P markers, highlights and return links use the same local exporter shown below. High-memory devices are recommended for large works.</p>
+<p class="gn-dyn-hint">On failure, retry. The separate clean source edition is available but does not contain these scholarly additions. Personal P references, highlights and return links use the private exporter below. Large editions may require a device with sufficient memory.</p>
 <details class="gn-dyn-other"><summary>Other approved book designs and reference editions</summary>
- <p class="gn-dyn-hint">These five differently typeset publications remain direct, approved PDF downloads. Their pagination, source notes and page layout must not be silently recreated from another base. Additional modular designs will appear only after a matching source and link map have passed the same verification.</p>
+ <p class="gn-dyn-hint">These five separately typeset publications remain direct PDFs because their book design has not been approved for this modular assembly. They are not silently replaced with a different source layout.</p>
  <div id="gn-dyn-other-links" class="gn-dyn-other-links" aria-label="Other approved Daruri PDF designs"></div>
 </details>
 </section>
