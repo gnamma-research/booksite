@@ -1,0 +1,65 @@
+name: Daruri browser HTML-to-PDF minimal engine viability diagnostics
+on:
+  push:
+    branches: [research/daruri-paged-browser-pdf-20261023]
+    paths:
+      - '.github/workflows/daruri-browser-paged-minimal-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  one-page-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    strategy:
+      fail-fast: false
+      matrix:
+        mode: [hello, arabic-mini]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned paged-media polyfill, vector emitter and Chromium
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/qa \
+            paginate-for-print@1.1.2 pages-to-pdf@0.4.1 esbuild@0.25.12 playwright@1.56.1
+          cd daruri/qa && npx playwright install --with-deps --only-shell chromium
+      - name: Bundle only ordinary client-side PDF emitter
+        run: |
+          daruri/qa/node_modules/.bin/esbuild \
+            daruri/qa/browser_pdf_paged_probe.js --bundle --platform=browser \
+            --target=es2022 --format=iife --outfile=daruri/qa/browser_pdf_paged.bundle.js
+      - run: python daruri/qa/build_browser_pdf_canonical_fixture.py
+      - name: Emit one-page PDF in Chromium directly from DOM without any print dialog
+        env:
+          GN_PDF_SCENARIO: ${{ matrix.mode }}
+          GN_BROWSER: chromium
+          GN_PDF_TIMEOUT: '16000'
+          GN_BROWSER_PORT: '8910'
+          GN_PDF_PAGE: /daruri/qa/browser_pdf_paged_probe.html
+          GN_PDF_OUT: /tmp/daruri-paged-mini-${{ matrix.mode }}
+        run: node daruri/qa/verify_true_browser_pdf.cjs
+      - name: Native PDF audit if a file was generated
+        if: always()
+        run: |
+          python -m pip install --disable-pip-version-check 'PyMuPDF==1.26.7'
+          python - <<'PY'
+          from pathlib import Path
+          import fitz,os
+          d=Path('/tmp/daruri-paged-mini-${{ matrix.mode }}')
+          for p in d.glob('*.pdf'):
+            with fitz.open(p) as pdf:
+              s=''.join(page.get_text() for page in pdf)
+              print('ONE_PAGE_PAGED_PDF_EXTRACTION',p.name,len(pdf),len(s),repr(s[:300]))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-one-page-paged-${{ matrix.mode }}-diagnosis
+          path: /tmp/daruri-paged-mini-${{ matrix.mode }}/
+          if-no-files-found: warn
+          retention-days: 14
