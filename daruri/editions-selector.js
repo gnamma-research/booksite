@@ -677,7 +677,7 @@
   }
   function loadScript(name){
     return new Promise((resolve,reject)=>{
-      const url=name+'?v=20261023-editions-delivery1';
+      const url=name+'?v=20261023-stage1-current';
       const el=document.createElement('script');
       el.src=url;el.async=true;
       el.onload=resolve;el.onerror=()=>reject(Error('Unable to load local '+name));
