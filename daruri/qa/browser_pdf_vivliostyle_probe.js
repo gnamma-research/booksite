@@ -130,6 +130,10 @@ $('make').addEventListener('click',async()=>{
        try{
         const raw=await emitPdfFromWindow(iframeWindow,{
          backend:VIVLIOSTYLE_BACKEND,
+         // pages-to-pdf's Noto/Libertinus fallback fonts, ICC and WOFF2
+         // decoder are packaged under public/. They must be served as
+         // same-origin assets, not assumed to exist at /fonts or a CDN.
+         baseUrl:new URL('/daruri/qa/node_modules/pages-to-pdf/public/',location.origin).href,
          sourceHtml:html,
          metadata:{title:'Daruri browser-only research '+mode},
          onProgress:message=>{$('status').textContent=String(message||'Emitting PDF');}
