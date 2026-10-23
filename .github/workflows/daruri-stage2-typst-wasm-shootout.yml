@@ -29,21 +29,29 @@ jobs:
       - name: Install documented pinned Typst WASM worker and fonts
         run: |
           npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
-      - name: Actual WASM source-to-PDF compiler (six real source paragraphs)
+      - name: Install independently testable PDF readers and Arabic font controls
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils fonts-noto-core fonts-hosny-amiri
+          python -m pip install -q 'PyMuPDF==1.26.7' 'pypdfium2==5.4.0'
+      - name: Real WASM PDFs for six source paragraphs, vowelled/unvowelled and three fonts
         env:
           STAGE2_FIXTURE: /tmp/daruri-typst-qa/source.json
           STAGE2_OUTPUT: /tmp/daruri-typst-qa
         run: |
           node --check daruri/qa/stage2_shootout/typst_node.mjs
-          node daruri/qa/stage2_shootout/typst_node.mjs
-      - name: Install independent Poppler PDF reader
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
-      - name: Native MuPDF/PDFium/Poppler Arabic word and quote audit
-        run: |
-          python -m pip install -q 'PyMuPDF==1.26.7' 'pypdfium2==5.4.0'
-          python daruri/qa/stage2_shootout/verify_compilers.py \
-            /tmp/daruri-typst-qa/typst-wasm-six.pdf /tmp/daruri-typst-qa/source.json \
-            /tmp/daruri-typst-qa/native-typst.json
+          for font in naskh sans amiri; do
+            for arabic in vowelled unvowelled; do
+              STAGE2_ARABIC_MODE=$arabic STAGE2_ARABIC_FONT=$font \
+                node daruri/qa/stage2_shootout/typst_node.mjs
+              tag=$arabic-$font
+              if [ "$arabic" = unvowelled ]; then tag=plain-$font; fi
+              python daruri/qa/stage2_shootout/verify_compilers.py \
+                /tmp/daruri-typst-qa/typst-wasm-six-$tag.pdf \
+                /tmp/daruri-typst-qa/source.json \
+                /tmp/daruri-typst-qa/native-$tag.json
+            done
+          done
       - uses: actions/upload-artifact@v4
         if: always()
         with:
