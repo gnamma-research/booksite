@@ -50,9 +50,8 @@ try{
   await page.goto(origin+'#editions',{waitUntil:'domcontentloaded',timeout:40000});
   await ui.waitFor({timeout:40000});
   await page.waitForFunction(()=>window.GnammaEditions?.__getPublicationSelection?.().resolution==='ready',{timeout:35000});
-  assert.deepEqual(await ui.locator('[data-es-download-type]').allTextContents(),
-    (await ui.locator('[data-es-download-type]').allTextContents()),
-    'Four download types must exist');
+  assert.deepEqual(await ui.locator('[data-es-download-type] strong').allTextContents(),
+    ['Book PDF','Study Guide','Offline reader','Research files']);
   assert.equal(await ui.locator('[data-es-download-type]').count(),4);
   assert.equal(await ui.getByRole('tab').count(),4,'Only four top-level download destinations');
   assert.equal(await ui.locator('[data-es-book-edition]').count(),3);
@@ -214,7 +213,7 @@ try{
   await page.screenshot({path:path.join(captures,'daruri-two-tabs-mobile.png'),fullPage:true});
   const measurement=await page.evaluate(()=>{
     const root=document.querySelector('.gn-es'),panel=root.querySelector('#gn-es-panel');
-    const action=root.querySelector('#gn-es-prepare');
+    const action=root.querySelector('[data-es-action="download"]');
     const buttons=[...root.querySelectorAll('button')].filter(n=>!n.hidden&&n.getClientRects().length);
     return {overflow:document.documentElement.scrollWidth-innerWidth,
       minButton:Math.min(...buttons.map(n=>n.getBoundingClientRect().height)),
@@ -222,7 +221,12 @@ try{
   });
   assert.ok(measurement.overflow<=2,'Mobile overflow '+JSON.stringify(measurement));
   assert.ok(measurement.minButton>=40,'Touch targets too small '+measurement.minButton);
-  assert.ok(Math.abs(measurement.actionWidth-measurement.panelWidth)<25,'Asymmetric PDF action '+JSON.stringify(measurement));
+  assert.ok(Math.abs(measurement.actionWidth-measurement.panelWidth)<25,'Asymmetric direct PDF action '+JSON.stringify(measurement));
+  const choices=await ui.locator('[data-es-download-type]').evaluateAll(items=>
+    items.map(item=>{const r=item.getBoundingClientRect();return{x:r.x,y:r.y,height:r.height,width:r.width};}));
+  assert.equal(choices.length,4);
+  assert.ok(Math.abs(choices[0].y-choices[1].y)<3 && choices[2].y>choices[0].y,
+    'On phones the four download purposes must form a compact 2x2 grid: '+JSON.stringify(choices));
   await page.setViewportSize({width:320,height:690});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth)<=2,'320px overflow');
   assert.deepEqual(errors,[],'Uncaught JavaScript runtime exceptions');
