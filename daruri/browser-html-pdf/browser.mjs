@@ -142,6 +142,10 @@ async function render(mode){
        // links, page wrappers, margin-box artifacts and footnote selectors.
        // Missing those fields previously lost ALL internal PDF links.
        backend:VIVLIOSTYLE_BACKEND,
+       // Experimental PDF/UA-2 logical structure. This may help assistive
+       // technology but cannot be assumed to fix per-run ToUnicode or
+       // native find/copy: measure all engines independently.
+       pdfOptions:{pdfUa:true},
        baseUrl:new URL('/daruri/browser-html-pdf/runtime/',location.origin).href,
        sourceHtml,metadata:{title:'Daruri browser HTML-PDF research',author:'Gnamma Research'},
        onProgress:message=>{window.__daruriQA={...(window.__daruriQA||{}),progress:String(message).slice(0,100)};}
@@ -170,7 +174,7 @@ async function render(mode){
     source_sha256:fixture.source_sha256,authorial_sections:258,authorial_passages:414,
     browser_pdf_goto_destinations:linkRepair.inspected,
     browser_pdf_fixed_destinations:linkRepair.changed,
-    engine:'@vivliostyle/print via vivliostyle-pdf; pages-to-pdf@0.4.1 DOM emitter',no_server_pdf_generation:true,
+    engine:'@vivliostyle/print; pages-to-pdf@0.4.1 PDF-UA-2 browser emitter',no_server_pdf_generation:true,
     no_print_dialog:true,no_cdp_print_to_pdf:true,no_prebuilt_pdf_inputs:true,not_release_approved:true};
   status('PDF generated entirely in this browser. Native Arabic and footnote QA still required.',qa);
   return qa;
