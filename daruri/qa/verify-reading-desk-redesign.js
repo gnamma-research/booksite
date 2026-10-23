@@ -6,11 +6,19 @@ const base=path.resolve(__dirname,'..');
 const read=file=>fs.readFileSync(path.join(base,file),'utf8');
 const js=read('reading-desk.js'),icons=read('bookmark-ui.js'),css=read('reading-desk.css'),dict=read('reading-desk-dictionary.js');
 const sw=read('sw.js'),bundle=read('download-bundle.js');
+const readerHTML=read('index.html');
 for(const [name,source] of Object.entries({'bookmark-ui.js':icons,'reading-desk.js':js,'reading-desk-dictionary.js':dict,'sw.js':sw,'download-bundle.js':bundle}))
  new vm.Script(source,{filename:name});
 const matches=(text,needle)=>text.includes(needle);
 function ensure(condition,message){assert.ok(condition,message);}
 const checks=[];
+assert.ok(readerHTML.includes('window.GnammaPopupScroll={lock:gnLockPopupScroll'),'Reader supplies a shared scroll lock');
+assert.ok(js.includes("lock?.('reading-desk-relink')")&&js.includes("unlock?.('reading-desk-relink')"),
+ 'Source-relink modal must lock and restore the reading position');
+assert.ok(js.includes("lock?.('reading-desk-editor')")&&js.includes("unlock?.('reading-desk-editor')"),
+ 'Personal note editor must participate in the same modal scroll lock');
+assert.ok(/\.gn-rd-relink-shade\{[^}]*overflow:hidden/.test(css)&&/\.gn-rd-relink\{[^}]*overflow:auto/.test(css),
+ 'Only the inner source-relink dialog may scroll');
 function test(name,fn){fn();checks.push(name);console.log('PASS '+name);}
 const at=Date.UTC(2026,9,20,8),longText='EARLY '+('word '.repeat(210))+' EXACT QUOTATION AT END';
 const sectionMap=new Map([

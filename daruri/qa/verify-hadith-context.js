@@ -133,6 +133,11 @@ async function domCheck(){
  assert(note216.textContent.includes('English translation · editorial'),'Full editorial translation shown rather than abbreviated English');
  assert(note216.textContent.includes('ʿAbd Allāh ibn Yūsuf'),'Translated isnād names are visible');
  assert.equal(note216.querySelectorAll('.gn-hadith-english').length,1,'Exactly one complete translation per cited report');
+ assert(note216.querySelector('.gn-hadith-return-summary'),'Long Hadith offers an optional way back to its summary');
+ const hadithCSS=src('hadith-context-ui.css');
+ assert(/\.gn-hadith-context-body\{[^}]*overflow:visible/.test(hadithCSS),'Expanded Hadith has no competing inner scroll');
+ assert(!/\.gn-hadith-context-body\{[^}]*max-height:(?!none)/.test(hadithCSS),'Expanded Hadith does not impose a second viewport');
+ assert(!/\.gn-hadith-context-body\s*\{[^}]*overflow-y:\s*auto/.test(hadithCSS),'Expanded Hadith is never independently scrolled');
  assert(note216.textContent.includes('Manumission'),'Book/chapter shown');
  const note189=await open('HAD-R189');
  assert(note189.textContent.includes('No primary collection'),'Unverified wording cannot be fabricated');
@@ -147,6 +152,14 @@ async function domCheck(){
   'Nested Qurʾān note must disclose only the reviewed related source, not an entire section');
  assert(!doc.querySelector('.gn-hadith-metadata')?.textContent.includes('Attributed grading'),
   'Modern database grades are never displayed in the reader');
- console.log('PASS: compact Hadith notes and four scoped Qurʾān relationships; lazy complete Arabic/English transmissions, no modern grading, source order and source record preservation.');
+ const scroller=doc.createElement('div');scroller.className='gn-layer-scroll';
+ scroller.scrollTop=680;note216.before(scroller);scroller.append(note216);
+ const heading=doc.createElement('h3');heading.textContent='Scholarly source summary';note216.prepend(heading);
+ scroller.getBoundingClientRect=()=>({top:60});
+ heading.getBoundingClientRect=()=>({top:-240});
+ note216.querySelector('.gn-hadith-return-summary').click();
+ assert(scroller.scrollTop<680,'Return-to-summary control moves the one parent notes scroll');
+ assert.equal(doc.activeElement,heading,'Return-to-summary control restores heading focus');
+ console.log('PASS: compact Hadith notes and four scoped Qurʾān relationships; lazy complete Arabic/English transmissions, one scrollbar and summary return, no modern grading.');
 }
 domCheck().catch(e=>{console.error(e);process.exitCode=1;});

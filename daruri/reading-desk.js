@@ -644,6 +644,8 @@ function create(ctx){
  }
  function closeRelink(){
   $('#gn-rd-relink-shade')?.remove();
+  document.body.classList.remove('gn-rd-relink-open');
+  window.GnammaPopupScroll?.unlock?.('reading-desk-relink');
   const old=relinkFocus;relinkFocus=null;
   if(old?.isConnected)old.focus({preventScroll:true});
  }
@@ -666,7 +668,9 @@ function create(ctx){
    (old.quote?'<blockquote>'+esc(short(old.quote,400))+'</blockquote>':'')+
    '<footer><button type="button" data-rd="relink-close">Cancel</button>'+
    '<button type="button" data-rd="relink-save">Save new source</button></footer></section>';
-  document.body.append(dlg);updateRelinkSegments();
+  document.body.append(dlg);document.body.classList.add('gn-rd-relink-open');
+  window.GnammaPopupScroll?.lock?.('reading-desk-relink');
+  updateRelinkSegments();
   dlg.querySelector('#gn-rd-relink-section')?.focus({preventScroll:true});
  }
  function updateRelinkSegments(){
@@ -722,6 +726,7 @@ function create(ctx){
    '<label>Your note<textarea id="gn-rd-note-body" rows="7" maxlength="'+Math.max(30000,String(existing?.body||'').length+30000)+'" placeholder="Write your observation, question or comparison…" dir="auto">'+escFull(existing?.body||'')+'</textarea></label>'+
    '<footer><button type="button" data-rd="close-editor">Cancel</button><button type="button" class="gn-rd-primary" data-rd="save-note">Save note</button></footer></section>';
   returnFocus=document.activeElement;document.body.append(shade);document.body.classList.add('gn-rd-editor-open');
+  window.GnammaPopupScroll?.lock?.('reading-desk-editor');
   shade.dataset.target=JSON.stringify(t);$('#gn-rd-note-body').focus({preventScroll:true});
  }
  function closeEditor(force=false){
@@ -730,6 +735,7 @@ function create(ctx){
    ($('#gn-rd-note-body')?.value!==editorOriginal.body||$('#gn-rd-note-title')?.value!==editorOriginal.title)&&
    !confirm('Discard unsaved changes to this note?'))return;
   node?.remove();document.body.classList.remove('gn-rd-editor-open');
+  window.GnammaPopupScroll?.unlock?.('reading-desk-editor');
   const focus=returnFocus;returnFocus=null;editor=null;editorOriginal=null;
   if(focus?.isConnected)focus.focus({preventScroll:true});
  }
