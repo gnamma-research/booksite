@@ -11,7 +11,11 @@ const path=require('node:path');
 const vm=require('node:vm');
 const file=process.argv[2]||path.resolve(__dirname,'..','index.html');
 const html=fs.readFileSync(file,'utf8');
-const source=html.slice(html.lastIndexOf('<script>')+8,html.lastIndexOf('</script>'));
+const scriptStart=html.indexOf("<script>\n(() => {\n'use strict';\nconst BOOK");
+assert.ok(scriptStart>=0,'Main reader inline script not found');
+const scriptEnd=html.indexOf('</script>',scriptStart);
+assert.ok(scriptEnd>scriptStart,'Main reader inline script not closed');
+const source=html.slice(scriptStart+'<script>'.length,scriptEnd);
 new vm.Script(source,{filename:file});
 function expressionAt(start){
   for(let end=source.indexOf('}',start);end>=0;end=source.indexOf('}',end+1)){

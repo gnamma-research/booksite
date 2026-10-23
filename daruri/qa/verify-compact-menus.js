@@ -15,7 +15,11 @@ const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const moduleCode=fs.readFileSync(path.join(root,'reading-styles.js'),'utf8');
 const styles=fs.readFileSync(path.join(root,'reading-styles.css'),'utf8');
 const menuCSS=fs.readFileSync(path.join(root,'compact-menu.css'),'utf8');
-const script=html.slice(html.lastIndexOf('<script>')+8,html.lastIndexOf('</script>'));
+const scriptStart=html.indexOf("<script>\n(() => {\n'use strict';\nconst BOOK");
+assert.ok(scriptStart>=0,'Main reader inline script not found');
+const scriptEnd=html.indexOf('</script>',scriptStart);
+assert.ok(scriptEnd>scriptStart,'Reader inline script is not closed');
+const script=html.slice(scriptStart+'<script>'.length,scriptEnd);
 new vm.Script(script,{filename:'index.html'});
 new vm.Script(moduleCode,{filename:'reading-styles.js'});
 let groups=0;
@@ -123,7 +127,12 @@ test('fallback bindings and screen-only style scope retain independent layout/fo
  assert.ok(styles.includes('#fb-page-style-select option[value="structured"]:checked'));
  assert.match(styles,/@media screen\s*\{/);
  const declarations=styles.replace(/\/\*[\s\S]*?\*\//g,'');
- assert.ok(!/(?:^|[;{])\s*(?:display|order|direction|grid-template-columns|font-family)\s*:/m.test(declarations),'Page styles do not replace visibility, language order or typefaces');
+ // NaMA's fallback return link is intentionally block-level so its rounded
+ // frame encloses the entire link. This does not hide text or change ordering.
+ const shapedReturn=declarations.replace(
+  /(#fallbackReader:has\(#fb-pal-gnamma:checked,\s*#fb-pal-gnamma-air:checked\)\s*\.fb-quick-return\s*>\s*a\s*{)\s*display\s*:\s*block\s*;/g,'$1');
+ assert.ok(!/(?:^|[;{])\s*(?:display|order|direction|grid-template-columns|font-family)\s*:/m.test(shapedReturn),
+  'Page styles do not replace visibility, language order or typefaces');
  assert.ok(styles.includes('#fb-language-auto:checked'),'Book fallback includes responsive automatic bilingual mode');
  assert.match(menuCSS,/@media\s*\(max-width:\s*590px\)/);
  assert.match(menuCSS,/@media\s*\(max-width:\s*840px\)/);
