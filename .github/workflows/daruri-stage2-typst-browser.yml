@@ -1,0 +1,68 @@
+name: Daruri Stage2 true browser Typst WebAssembly comparison (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-stage2-engine-shootout-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/**'
+      - '.github/workflows/daruri-stage2-typst-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-stage2-real-browser-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser-typst-wasm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Write SHA-bound canonical original Arabic and English fixture
+        run: |
+          python daruri/qa/stage2_shootout/source_fixture.py daruri/qa/stage2_shootout/source.json
+      - name: Install pinned WASM browser compiler and Playwright
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Verify browser bundled assets and test JavaScript
+        run: |
+          node --check daruri/qa/stage2_shootout/typst_browser.mjs
+          node --check daruri/qa/stage2_shootout/test_typst_browser.cjs
+          npm run build --prefix daruri/qa/stage2_shootout
+      - name: Click ordinary browser page; actually download PDF blob
+        env:
+          STAGE2_BROWSER: ${{ matrix.browser }}
+          STAGE2_OUTPUT: /tmp/stage2-browser-${{ matrix.browser }}
+        run: |
+          node daruri/qa/stage2_shootout/test_typst_browser.cjs
+      - name: Independently measure Arabic word search in MuPDF, PDFium and Poppler
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          python -m pip install -q PyMuPDF==1.26.7 pypdfium2==5.4.0
+          python daruri/qa/stage2_shootout/verify_compilers.py \
+            /tmp/stage2-browser-${{ matrix.browser }}/typst-browser-daruri-NONRELEASE.pdf \
+            daruri/qa/stage2_shootout/source.json \
+            /tmp/stage2-browser-${{ matrix.browser }}/native-search.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-typst-ordinary-browser-${{ matrix.browser }}-NONRELEASE
+          path: /tmp/stage2-browser-${{ matrix.browser }}
+          if-no-files-found: warn
+          retention-days: 14
