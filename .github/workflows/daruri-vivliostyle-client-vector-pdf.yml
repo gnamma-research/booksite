@@ -6,6 +6,7 @@ on:
       - 'daruri/qa/browser_pdf_vivliostyle_probe.js'
       - 'daruri/qa/browser_pdf_vivliostyle_probe.html'
       - '.github/workflows/daruri-vivliostyle-client-vector-pdf.yml'
+      - 'daruri/qa/audit_client_full_bilingual_pdf.py'
   workflow_dispatch:
 permissions:
   contents: read
@@ -76,6 +77,13 @@ jobs:
               words=''.join(page.get_text() for page in pdf)
               print('REAL_VIVLIO_BROWSER_QA',pdfpath.name,'pages',len(pdf),'text_characters',len(words),'source65','وَفِي' in words,'body_note','footnote' in words)
           PY
+      - name: Independently audit all 414 Arabic/English source passages and §65 note in generated PDF
+        if: always()
+        run: |
+          python daruri/qa/audit_client_full_bilingual_pdf.py \
+            --pdf /tmp/daruri-vivlio-${{ matrix.engine }}-bilingual-full/daruri-${{ matrix.engine }}-bilingual-full-NONRELEASE.pdf \
+            --source daruri/qa/browser_pdf_canonical_fixture.json \
+            --report /tmp/daruri-vivlio-${{ matrix.engine }}-bilingual-full/full-text-414-native-QA.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
