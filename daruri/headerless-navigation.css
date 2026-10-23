@@ -3,6 +3,9 @@
    design/daruri-headerless-tile-handoff-20261023,
    docs/design/daruri-selected-circular-tile-reference-64.png.
    No additional masthead or Contents button is introduced. */
+@media screen and (min-width:621px) {
+  :root {--reading-controls-height:56px;}
+}
 @media screen {
   body.reader-enhanced .topbar {display:none!important}
   body.reader-enhanced #readingControls:not([hidden]),
@@ -91,6 +94,7 @@
     color:var(--accent)!important;background:var(--accent-soft)!important;
   }
   body.reader-enhanced #readingControls .gn-reader-global-trailing [data-reader-only][hidden] {display:none!important}
+  body.reader-enhanced #readingControls .gn-reader-global-trailing #focusToolbar[hidden] {display:none!important}
   body.reader-enhanced #readingControls :is(.gn-top-tile,.gn-top-read,#menuBtn,#gnTopHelp):focus-visible {
     outline:2px solid var(--accent)!important;outline-offset:3px!important;
   }
