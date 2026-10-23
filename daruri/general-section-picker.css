@@ -2,6 +2,7 @@
    Theme values are inherited; do not change the reading dock itself. */
 @media screen {
   #jumpOverlay .jump-dialog { max-height:calc(100dvh - 24px); }
+  #jumpOverlay .gn-reader-jump-sites {display:none!important}
   #jumpOverlay .gn-picker-breadcrumbs {
     display:flex;align-items:center;gap:5px;overflow-x:auto;overscroll-behavior-x:contain;
     scrollbar-width:thin;flex:0 0 auto;min-height:38px;
