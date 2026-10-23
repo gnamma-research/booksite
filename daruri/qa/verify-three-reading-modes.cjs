@@ -128,7 +128,9 @@ async function exercise(engine,name,origin){
   await page.locator('#gn-dock-saved-sheet .gn-dock-sheet-item').filter({hasText:'Reader note'}).click();
   await page.locator('.gn-rd-page').waitFor();
   assert(await page.locator('.gn-rd-page').innerText().then(x=>x.includes('Reader note')),'notes count not linked to Reading Desk');
-  await page.locator('[data-rd="return-reading"]').first().click();
+  // Reading Desk renders separate desktop and phone return actions; the
+  // first DOM match may be hidden on mobile, so activate the visible one.
+  await page.locator('[data-rd="return-reading"]:visible').first().click();
   await page.waitForSelector('#readerDock:not([hidden])');
   await page.goto(origin+'/daruri/#section=12',{waitUntil:'domcontentloaded'});
   await page.waitForTimeout(300);
