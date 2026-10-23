@@ -110,7 +110,9 @@
   #readingControls #readerActionMenu:not([open]) .gn-actions-pop {display:none!important;}
   #readingControls #readerActionMenu .gn-actions-option {
     box-sizing:border-box!important;display:flex!important;align-items:center!important;
-    gap:10px!important;width:100%!important;min-height:43px!important;
+    gap:10px!important;width:100%!important;min-width:100%!important;
+    max-width:none!important;min-height:43px!important;max-height:none!important;
+    height:auto!important;flex:0 0 auto!important;
     padding:9px 10px!important;background:transparent!important;color:var(--text)!important;
     border:0!important;border-radius:7px!important;text-align:start!important;
   }
