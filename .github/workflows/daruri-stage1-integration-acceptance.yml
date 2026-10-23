@@ -85,11 +85,6 @@ jobs:
           if test -f daruri/dynamic-pdf/RETIRE_120.json; then
             python daruri/qa/verify_stage1_retirement.py
           fi
-      - name: Do not re-run all 120 historical expensive PDF parity jobs
-        run: |
-          echo "Historical 120/120 golden-file tests are already archived at successful exact SHA. This QA verifies 12+15+120 inputs and actual browser creation."
-          :
-          PY
   browser:
     name: In-browser actual PDF generation and negative-paths (${{ matrix.browser }})
     runs-on: ubuntu-latest
