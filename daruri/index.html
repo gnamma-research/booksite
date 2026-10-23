@@ -4346,7 +4346,7 @@ function renderContents(){
  const headingCount=authorial.filter(s=>s.headingAr).length;
  const description=original?
   `${headingCount} recorded source headings; topic captions are editorial.`:
-  `${authorial.length} editorial titles; not headings written by Ibn Rushd.`;
+  `${authorial.length} titles supplied by the editor; not headings written by Ibn Rushd.`;
  $('#mainContent').innerHTML=panelHead('NAVIGATE THE WORK','Contents','Browse recorded headings or editorial section titles.')+
  `<div class="panel-controls"><div class="segmented" role="group" aria-label="Table of contents type"><button type="button" data-contents-mode="original" aria-pressed="${original}" class="${original?'active':''}">Book structure</button><button type="button" data-contents-mode="editorial" aria-pressed="${!original}" class="${!original?'active':''}">Editorial section titles</button></div><label class="filter-input">${icon('search')}<input id="contentsFilter" placeholder="Find a chapter, editorial title, Arabic heading or §number…" autocomplete="off" value="${esc(state.contentsQuery)}" aria-label="Filter contents"></label></div>
  <header class="contents-mode-note"><h2>${original?'Parts and chapters in the Arabic edition':'Editorial section guide'}</h2><p>${description}</p></header>
