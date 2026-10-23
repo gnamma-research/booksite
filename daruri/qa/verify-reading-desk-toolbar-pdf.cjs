@@ -88,7 +88,11 @@ async function run(engine,width,touch){
   assert(await page.locator('#gn-transfer-shade [role="dialog"]').isVisible());
   assert(await page.getByRole('button',{name:/Download complete backup/}).isVisible());
   await page.locator('[data-transfer="close"]').first().click();
+  // Backup & Transfer deliberately closes Manage, returning focus to its
+  // summary. Reopen it to inspect the independent Bin action.
+  await page.locator('.gn-rd-manage-menu > summary').click();
   assert(await page.getByRole('button',{name:'Open Bin'}).isVisible());
+  await page.locator('.gn-rd-manage-menu > summary').click();
   await page.locator('.gn-rd-toolbar [data-rd="print-list"]').click();
   await page.locator('#gn-rd-print-root').waitFor();
   assert.equal(await page.locator('#gn-rd-print-sheet-body article').count(),3);
