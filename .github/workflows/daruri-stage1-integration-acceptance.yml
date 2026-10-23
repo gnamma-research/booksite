@@ -12,6 +12,17 @@ on:
       - 'daruri/qa/verify_dynamic_design_browser.cjs'
       - 'daruri/qa/verify_dynamic_negative_paths.cjs'
       - 'daruri/qa/verify_dynamic_cancel_identity.cjs'
+  pull_request:
+    branches: [master]
+    paths:
+      - '.github/workflows/daruri-stage1-integration-acceptance.yml'
+      - 'daruri/dynamic-pdf/**'
+      - 'daruri/dynamic-editions.html'
+      - 'daruri/personal-export.js'
+      - 'daruri/editions-selector.js'
+      - 'daruri/qa/verify_dynamic_design_browser.cjs'
+      - 'daruri/qa/verify_dynamic_negative_paths.cjs'
+      - 'daruri/qa/verify_dynamic_cancel_identity.cjs'
   workflow_dispatch:
 permissions:
   contents: read
