@@ -72,7 +72,7 @@
       if(NAV.includes(raw.tab))tab=raw.tab;
       if(['reading','study','reference'].includes(raw.tier))tier=raw.tier;
       if(['reading','study','custom'].includes(raw.preset))preset=raw.preset;
-      customOpen=Boolean(raw.customOpen);
+      customOpen=false; // Old nested settings do not automatically open in the new Downloads layout.
       if(!current().en&&!current().ar)current().en=true;
       if(tab==='reference')tier='reference';
       if(tab==='reading'&&tier==='reference')tier='reading';
@@ -234,7 +234,7 @@
             '<h2 class="gn-es-panel-title">Research files</h2>'+
             '<p class="gn-es-source-pending" data-es-source-pending role="status">Checking the published scholarly source archive…</p>'+
             '<div class="gn-es-source-row" data-es-source hidden aria-labelledby="gn-es-source-title">'+
-          '<h3 id="gn-es-source-title">Source text &amp; research files</h3>'+
+          '<h3 id="gn-es-source-title" class="gn-es-visually-hidden">Scholarly source archive</h3>'+
           '<p>Arabic text, English translation, publisher notes and cross-references in HTML, TXT, TEI and JSON. These are research files, not the offline reading website.</p>'+
           '<a class="gn-es-source-download" data-es-source-download download>Download source text (ZIP)</a>'+
           '<details class="gn-es-source-more"><summary>What’s inside?</summary>'+
@@ -572,6 +572,7 @@
     if(b.dataset.esCustom!==undefined){customOpen=!customOpen;refresh();return;}
     if(b.dataset.esToggle){
       if(tab==='reference'||tier==='study')return;
+      choiceMessage='';
       const s=current(),k=b.dataset.esToggle;
       if(k==='ar'){
         // A single AR control cycles Off → Plain → Vowelled.
