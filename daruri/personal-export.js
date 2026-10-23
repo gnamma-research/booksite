@@ -608,40 +608,10 @@
           }
         }
       }catch(_){/* The canonical PDFs and apparatus remain available. */}
-      // Add SHA-verified static apparatus PDFs and their individual personal-note
-      // maps; no visitor-facing server processes PDF files.
-      try{
-        const resExtra=await fetch(new URL('editions/apparatus/manifest.json',URL_ROOT),{cache:'no-cache'});
-        if(resExtra.ok){
-          const extra=await resExtra.json();
-          if(extra?.status==='verified'&&Array.isArray(extra.files)){
-            for(const record of extra.files){
-              if(!/^apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english)-(glossary|index|concordance|applications)(?:-(glossary|index|concordance|applications)){0,3}(?:-titles-on)?\.pdf$/.test(record.file||''))continue;
-              if(record.map_coverage!==1||record.verified_sections!==258||
-                !/^[0-9a-f]{64}$/.test(record.sha256||'')||
-                !/^[0-9a-f]{64}$/.test(record.map_sha256||'')||
-                !Number.isInteger(record.pages)||record.pages<40)continue;
-              if(!/^apparatus\/maps\/daruri-[a-z-]+\.pdf\.json$/.test(record.map_file||'')||
-                 !/^apparatus\/maps\/daruri-[a-z-]+\.pdf\.metadata\.json$/.test(record.metadata_file||''))continue;
-              const file='editions/'+record.file;
-              data.files[file]={
-                sha256:record.sha256,pages:record.pages,size_bytes:record.bytes,
-                title:(record.tier==='study'?'Study':'Reading')+' · '+
-                  (record.language==='english'?'English':record.language==='bilingual-unvowelled'?'Unvowelled':'Bilingual vowelled')+
-                  ' · '+record.apparatus.join(' + '),
-                metadata_path:'editions/'+record.metadata_file,
-                map_path:'editions/'+record.map_file,
-                map_sha256:record.map_sha256,
-                source_base:record.source_base,
-                arabic_form:record.language==='bilingual-unvowelled'?'ar':'vocalized'
-              };
-            }
-          }
-        }
-      }catch(_){/* The original five PDFs remain selectable without the apparatus catalogue. */}
+      // Stage 1: full apparatus editions are created on demand, not stored.
+      // Local dynamic editions are inserted only after full SHA/map validation.
       const entries=Object.entries(data.files).filter(([file,x])=>
         (/^[a-z0-9-]+\.pdf$/.test(file)||
-         /^editions\/apparatus\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english)-(glossary|index|concordance|applications)(?:-(glossary|index|concordance|applications)){0,3}(?:-titles-on)?\.pdf$/.test(file)||
          /^editions\/(reading|study)\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english|arabic|arabic-vowelled)-titles-(on|off)\.pdf$/.test(file))&&
         x?.sha256&&x?.pages);
       $('pe-edition').replaceChildren();
@@ -760,7 +730,9 @@
         return usable;
       },
       choose(file){
-        if(!manifest?.files?.[file]){$('pe-edition').value='';syncForm();return false;}
+        const present=!!manifest?.files?.[file]&&
+          [...$('pe-edition').options].some(option=>option.value===file);
+        if(!present){$('pe-edition').value='';syncForm();return false;}
         $('pe-edition').value=file;syncForm();return true;
       },
       setMode(next){
