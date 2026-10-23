@@ -208,6 +208,17 @@ const PRESENTATION_ONLY_QURAN = Object.freeze({
   'QUR-R001-Q050': 'فَلِلَّهِ ٱلْحُجَّةُ ٱلْبَـٰلِغَةُ'
 });
 function assertBodyAndLinks(element, note) {
+  // Display-only condensed Hadith cards retain the canonical note in BOOK and
+  // preserve every external reference while omitting duplicated explanations.
+  if(note.source_type==='hadith'&&element.dataset.gnHadithCompact==='1'){
+    const links=[...element.querySelectorAll('a[href]')];
+    const urls=new Set(links.map(x=>x.getAttribute('href')));
+    for(const original of references(note))if(/^https:\/\//.test(original.url))
+      assert(urls.has(original.url),'Condensing Hadith card must preserve source: '+note.id+' / '+original.url);
+    assert(!element.textContent.includes('First cited source under'),'No priority boilerplate');
+    for(const link of links){assert.equal(link.target,'_blank');assert(link.relList.contains('noopener'));}
+    return;
+  }
   const body = element.cloneNode(true);
   body.querySelector('.source-note-links')?.remove();
   const expectedBody = PRESENTATION_ONLY_BODY[note.id] || note.text;
