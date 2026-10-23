@@ -485,3 +485,41 @@
 .gn-es .gn-es-header{display:block}
 .gn-es .gn-es-header p{margin:7px 0 0;color:var(--es-muted);font-size:13px;line-height:1.55}
 .gn-es .gn-es-format-title{font:600 17px/1.4 var(--serif,Georgia,serif);margin:15px 4px 10px;color:var(--es-ink)}
+
+/* Secondary downloads live after the chosen PDF, never as competing editions.
+   A source row is absent until the separately reviewed archival ZIP exists. */
+.gn-es .gn-es-download-row{padding:4px 0 10px}
+.gn-es .gn-es-offline h3{
+  font:600 15px/1.5 var(--serif,Georgia,serif);
+  color:var(--es-ink);margin:2px 0 6px;
+}
+.gn-es .gn-es-source-row{
+  border-top:1px solid var(--es-line);
+  margin-top:12px;padding:17px 0 0;
+}
+.gn-es .gn-es-source-download{
+  display:inline-flex;align-items:center;min-height:44px;
+  color:var(--es-accent);font-size:13.5px;font-weight:650;
+  text-decoration:underline;text-underline-offset:3px;
+}
+.gn-es .gn-es-source-download:hover{color:var(--es-ink)}
+.gn-es .gn-es-source-download:focus-visible,
+.gn-es .gn-es-source-more summary:focus-visible{
+  outline:2px solid var(--es-accent);outline-offset:3px;
+}
+.gn-es .gn-es-source-more{margin-top:5px;max-width:67ch}
+.gn-es .gn-es-source-more summary{
+  cursor:pointer;display:flex;align-items:center;
+  min-height:40px;font-size:12.5px;font-weight:600;color:var(--es-ink);
+}
+.gn-es .gn-es-source-more ul{
+  margin:7px 0 9px;padding-inline-start:21px;
+  color:var(--es-muted);font-size:12.5px;line-height:1.6;
+}
+.gn-es .gn-es-source-more li{margin-bottom:5px}
+.gn-es .gn-es-source-hash code{
+  font-size:11px;overflow-wrap:anywhere;word-break:break-word;color:var(--es-ink);
+}
+@media(max-width:450px){
+ .gn-es .gn-es-source-download{width:100%}
+}
