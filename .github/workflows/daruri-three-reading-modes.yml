@@ -13,6 +13,7 @@ on:
       - 'daruri/qa/verify-reading-desk-redesign.js'
       - 'daruri/reading-desk.js'
       - 'daruri/qa/verify-three-reading-modes.cjs'
+      - 'daruri/qa/verify-dock-saved-sheet.cjs'
       - 'daruri/qa/verify-focus-modes.js'
       - '.github/workflows/daruri-three-reading-modes.yml'
   pull_request:
@@ -27,6 +28,7 @@ on:
       - 'daruri/qa/verify-reading-desk-redesign.js'
       - 'daruri/reading-desk.js'
       - 'daruri/qa/verify-three-reading-modes.cjs'
+      - 'daruri/qa/verify-dock-saved-sheet.cjs'
       - '.github/workflows/daruri-three-reading-modes.yml'
   workflow_dispatch:
 
@@ -49,6 +51,7 @@ jobs:
           NODE_PATH: daruri/qa/node_modules
         run: |
           node --check daruri/reading-mode-controls.js
+          node --check daruri/qa/verify-dock-saved-sheet.cjs
           node --check daruri/reading-desk.js
           node daruri/qa/verify-focus-modes.js
           node daruri/qa/verify-reader-structure.js
@@ -74,4 +77,5 @@ jobs:
       - name: Test mobile Chromium and WebKit reader
         run: |
           node daruri/qa/verify-three-reading-modes.cjs
+          node daruri/qa/verify-dock-saved-sheet.cjs
           node daruri/qa/verify-reading-navigation-browser.cjs
