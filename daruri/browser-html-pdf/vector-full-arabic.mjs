@@ -84,22 +84,30 @@ function splitOriginalIntoLines(text,kitFont,size){
 // Multiple semantic chunks for a line stay in ORIGINAL LOGICAL READING ORDER.
 // This does not certify native per-word hitboxes or other PDF readers.
 const SEMANTIC_CID_MAX=28;
-const graphemes=new Intl.Segmenter('ar',{granularity:'grapheme'});
+// Whole original words are narrower than the signed 28-scalar CID bound.
 function semanticChunks(phrase){
- const pieces=Array.from(graphemes.segment(phrase),record=>record.segment);
+ // Do not cut inside an original Arabic word, even at a grapheme
+ // boundary. Native MuPDF coalesces adjacent equal letters (e.g. the two
+ // lams in اللَّه) when separate invisible CIDs overlap geometrically.
+ // All 21,647 source-word occurrences were checked; the longest is
+ // 21 scalars, below this 28-scalar expansion bound.
+ const pieces=phrase.match(/\S+\s*/gu)||[];
+ if(pieces.join('')!==phrase)throw Error('Source contains unhandled whitespace');
  const chunks=[];let part='';
  for(const piece of pieces){
   if(Array.from(piece).length>SEMANTIC_CID_MAX)
-   throw Error('Unexpected 28-scalar original Arabic grapheme');
+   throw Error('An original Arabic word exceeds the semantic CID limit');
   if(part&&Array.from(part+piece).length>SEMANTIC_CID_MAX){
+   if(!/\s$/u.test(part))throw Error('Would cut source inside a word');
    chunks.push(part);part='';
   }
   part+=piece;
  }
  if(part)chunks.push(part);
  if(!chunks.length||chunks.join('')!==phrase||
-    chunks.some(c=>Array.from(c).length>SEMANTIC_CID_MAX))
-   throw Error('Semantic Unicode chunks changed the original Arabic');
+    chunks.some(c=>Array.from(c).length>SEMANTIC_CID_MAX)||
+    chunks.slice(0,-1).some(c=>!/\s$/u.test(c)))
+   throw Error('Semantic chunks lost authorial text or split a source word');
  return chunks;
 }
 
