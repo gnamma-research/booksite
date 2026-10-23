@@ -159,7 +159,7 @@
       ['daruri/gnamma-proximity.js', 'gnamma-proximity.js?v=20261022-proximity1'],
       ['daruri/gnamma-scholarly.js', 'gnamma-scholarly.js?v=20261022-scholarly1'],
       ['daruri/gnamma-scholarly.css', 'gnamma-scholarly.css?v=20261022-scholarly1'],
-      ['daruri/source-reference-data.js', 'source-reference-data.js?v=20261023-hmarkers1'],
+      ['daruri/source-reference-data.js', 'source-reference-data.js?v=20261023-hmarkers2'],
       ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-fallback-quran1'],
       ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261022-qcontext1'],
