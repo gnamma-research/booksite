@@ -814,21 +814,36 @@ function filterPanel(){
     (ui.mode==='scholarly'?scholarlyControls():'')+extras;
 }
 function morphSuggestion(){
-  if(ui.expanded)return ''; // Research search already has its own single matching dropdown.
-  const q=ui.query.trim(),m=MORPH();
-  if(!q||!m||q.length>75)return '';
-  const rt=m.roots(q),v=m.fold(q),rk=m.roman(q);
-  const terms=m.getLexicon().filter(x=>m.fold(x.lemma)===v||
-    x.romanKeys?.includes(rk)||x.formKeys?.includes(v));
-  if(!rt&&!terms.length)return '';
-  const root=rt||terms[0]?.root||'';
-  const buttons=[['morph-lemma','Word forms'],['morph-root','Related words']].map(([id,label])=>
-   '<button type="button" data-gns-morph-pick="'+id+'" class="gns-match-chip'+(ui.mode===id?' gns-current':'')+
-   '" aria-pressed="'+String(ui.mode===id)+'">'+label+'</button>').join('');
-  return '<div class="gns-morph-assist" role="group" aria-label="Expand Arabic word matching">'+
-   '<span>Search more broadly'+(root?' · root <bdi dir="rtl" lang="ar">'+esc(root)+'</bdi>':'')+'</span>'+
-   '<div class="gns-morph-buttons">'+buttons+'</div>'+
-   '<small>Word forms (lemma) = one dictionary headword. Related words (root) = its wider derivational family. Morphological coverage is still partial.</small></div>';
+ const q=ui.query.trim(),m=MORPH();
+ if(!q||!m||q.length>75||!['terms','literal'].includes(ui.mode))return '';
+ const rt=m.roots(q),v=m.fold(q),rk=m.roman(q);
+ const terms=m.getLexicon().filter(x=>m.fold(x.lemma)===v||
+   x.romanKeys?.includes(rk)||x.formKeys?.includes(v));
+ if(!rt&&!terms.length)return '';
+ // The ordinary search is intentionally fast. Load only the small existing,
+ // curated, offline morphology index after a recognized word is entered.
+ if(terms.length&&!m.status('daruri').loaded&&!m.status('daruri').failed)
+   m.ensure('daruri').catch(()=>{});
+ const novel=m.formsFor?.(q,'daruri',8)?.find(x=>x.unusual);
+ const example=novel?'<bdi dir="rtl" lang="ar">'+esc(novel.form)+'</bdi>':'';
+ if(ui.expanded){
+  // Mobile research may only spare a single quiet line above the results.
+  if(!novel)return '';
+  return '<div class="gns-morph-assist gns-morph-compact">'+
+   '<span>Also in this text: '+example+'</span>'+
+   '<button type="button" data-gns-morph-pick="morph-lemma"'+
+    ' aria-label="Find all forms of the same Arabic dictionary word">Word forms →</button></div>';
+ }
+ const root=rt||terms[0]?.root||'';
+ const buttons=[['morph-lemma','Word forms'],['morph-root','Related words']].map(([id,label])=>
+  '<button type="button" data-gns-morph-pick="'+id+'" class="gns-match-chip'+
+   (ui.mode===id?' gns-current':'')+'" aria-pressed="'+String(ui.mode===id)+'">'+
+   label+'</button>').join('');
+ return '<div class="gns-morph-assist" role="group" aria-label="Expand Arabic word matching">'+
+  '<span>'+(novel?'Also in this text: '+example:
+    'Search more broadly'+(root?' · root <bdi dir="rtl" lang="ar">'+esc(root)+'</bdi>':''))+
+  '</span><div class="gns-morph-buttons">'+buttons+'</div>'+
+  '<small>Word forms includes indexed plurals and other inflections. Related words searches the wider root family; coverage is still partial.</small></div>';
 }
 function resultControls(){
  const count=ui.resultCount||0;
@@ -932,11 +947,16 @@ function markupResult(r,i,kwic=false){
    '<span class="gns-kwic-text" '+(side?'dir="rtl" lang="ar"':'dir="auto"')+'>'+context+'</span>'+
    '<span class="gns-kwic-type">'+esc(r.subtype)+'</span></button>';
  }
+ const otherForms=r.matched?.relation==='morphology'&&r.matched.forms?.length>1?
+  '<small class="gns-morph-in-paragraph">Forms in this passage: '+
+   r.matched.forms.slice(0,6).map(x=>'<bdi dir="rtl" lang="ar">'+esc(x)+'</bdi>').join(' · ')+
+   (r.matched.forms.length>6?' · +'+(r.matched.forms.length-6):'')+'</small>':'';
  const main='<button type="button" class="gns-result" data-gns-result="'+i+'">'+
   '<span class="gns-row-meta">'+tags+'<span>'+rowLabel+'</span></span>'+
   '<strong class="gns-row-title">'+esc(title)+'</strong>'+
   '<span class="gns-row-excerpt" '+(hasArabic(text)?'dir="rtl" lang="ar"':'dir="auto"')+'>'+context+'</span>'+
   ((r.matched?.relation&&r.matched.relation!=='literal')?'<small class="gns-reason">'+esc(reason)+'</small>':'')+
+  otherForms+
   '</button>';
  const evidence=r.matched?.relation==='scholarly'&&r.matched.locations?.length>1?
   '<div class="gns-linked-evidence"><span>Supporting locations:</span>'+
@@ -1353,7 +1373,11 @@ document.addEventListener('click',event=>{
  }
  if(target.hasAttribute('data-gns-morph-pick')){
   ui.mode=target.dataset.gnsMorphPick;ui.page=CONFIG.pageSize;ui.expanded=true;
-  ui.pendingReturn=null;rerender();return;
+  ui.mobileView='results';ui.pendingReturn=null;
+  const mobile=window.matchMedia('(max-width:760px)').matches;
+  rerender(!mobile);
+  if(mobile)$('#gns-listpane',host)?.focus({preventScroll:true});
+  return;
  }
  if(target.hasAttribute('data-gns-pattern-example')){
   ui.query=target.dataset.gnsPatternExample;ui.mode='scholarly';ui.facet='all';
@@ -1502,7 +1526,8 @@ window.GnammaUnifiedSearch={
  loadLibrary:loadOther
 };
 MORPH()?.whenUpdated(()=>{
- if(ui.opened&&/^morph-/.test(ui.mode))renderResultsOnly();
+ if(ui.opened&&ui.query&&(/^(?:morph-)/.test(ui.mode)||
+   ui.mode==='terms'||ui.mode==='literal'))renderResultsOnly();
 });
 if(location.hash==='#gns-results'&&window.GnammaSearchReturn?.read()){
  // Source route initializes before this module. Reopen after its first layout.
