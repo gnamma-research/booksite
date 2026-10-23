@@ -67,7 +67,9 @@ async function publish(profile,expectedPages){
   page=await ctx.newPage();
   page.on('pageerror',e=>errors.push(e.message));
   page.on('request',r=>{
-   if(r.url().startsWith('http')&&(!r.url().startsWith(origin)||r.method()!=='GET'))
+   // The public source-ZIP HEAD request is same-origin and carries no personal data.
+   if(r.url().startsWith('http')&&
+      (!r.url().startsWith(origin)||!['GET','HEAD'].includes(r.method())))
      leaks.push({url:r.url(),method:r.method()});
   });
   await page.addInitScript(value=>localStorage.setItem('gnamma-reading-desk-v1',value),JSON.stringify(note));
