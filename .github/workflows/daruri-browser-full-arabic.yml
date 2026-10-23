@@ -1,7 +1,7 @@
 name: Daruri full original Arabic HTML-vector PDF source QA (NONRELEASE)
 on:
   push:
-    branches: [research/daruri-browser-outline-semantic-20261023, research/daruri-vector-angle-brackets-20261023, research/daruri-rtl-unicode-multicid-20261023]
+    branches: [research/daruri-browser-outline-semantic-20261023, research/daruri-vector-angle-brackets-20261023, research/daruri-rtl-unicode-multicid-20261023, research/daruri-rtl-word-geometry-20261023]
     paths:
       - 'daruri/browser-html-pdf/vector-full-arabic.html'
       - 'daruri/browser-html-pdf/vector-full-arabic.mjs'
