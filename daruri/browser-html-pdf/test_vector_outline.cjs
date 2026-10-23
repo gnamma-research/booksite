@@ -9,7 +9,7 @@ const {chromium,webkit}=require('playwright');
 const ROOT=__dirname;
 const ORDER=process.env.GNAMMA_VECTOR_ORDER||'reverse';
 const ENGINE=process.env.GNAMMA_VECTOR_BROWSER||'chromium';
-if(!['forward','reverse'].includes(ORDER)||!['chromium','webkit'].includes(ENGINE))
+if(!['forward','reverse','grapheme'].includes(ORDER)||!['chromium','webkit'].includes(ENGINE))
   throw Error('Unexpected browser or source direction');
 const OUT=process.env.GNAMMA_VECTOR_OUTPUT||('/tmp/gnamma-vector-'+ENGINE+'-'+ORDER);
 const URL='http://127.0.0.1:8977/daruri/browser-html-pdf/vector-outline.html?order='+ORDER;
