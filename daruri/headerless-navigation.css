@@ -285,3 +285,127 @@
  }
  #fallbackReader .fb-topbar .fb-icon-button .gn-native-tile {flex:none}
 }
+
+/* Scholar's compact — 23 Oct 2026.
+   One row on phones; no title bar and no duplicate Read/Help actions.
+   All original focus/save/copy/share/search/visuals buttons retain their handlers. */
+@media screen {
+ body.reader-enhanced.reading-active #readingControls #gnTopRead{display:none!important}
+ body.reader-enhanced #readingControls #gnTopHelp{display:none!important}
+ /* Help remains inside the Contents/navigation pane; Share remains on the toolbar. */
+ #leftNav .gn-top-share-nav{display:flex;align-items:center;gap:10px}
+ #leftNav .gn-top-share-nav svg{width:18px;height:18px;flex:none}
+}
+@media screen and (max-width:620px) {
+ :root{--reading-controls-height:50px!important}
+ body.reader-enhanced.reading-active #readingControls:not([hidden]){
+   display:flex!important;position:sticky!important;top:0!important;
+   min-height:50px!important;height:50px!important;max-height:50px!important;
+   z-index:55!important;
+ }
+ body.reader-enhanced.reading-active #readingControls:not([hidden]) .reading-controls-inner{
+   box-sizing:border-box!important;display:flex!important;flex-flow:row nowrap!important;
+   justify-content:flex-start!important;align-items:center!important;
+   width:100%!important;max-width:100%!important;
+   min-height:50px!important;height:50px!important;
+   padding:2px 4px!important;gap:2px!important;
+ }
+ body.reader-enhanced.reading-active #readingControls .gn-reader-global-leading{
+   order:0!important;flex:0 0 var(--gn-scholar-tile,44px)!important;margin:0!important;
+   display:flex!important;align-items:center!important;justify-content:flex-start!important;
+ }
+ body.reader-enhanced.reading-active #readingControls .gn-reader-global-leading #menuBtn.gn-top-tile{
+   flex:0 0 var(--gn-scholar-tile,44px)!important;width:var(--gn-scholar-tile,44px)!important;min-width:var(--gn-scholar-tile,44px)!important;max-width:var(--gn-scholar-tile,44px)!important;
+   height:44px!important;min-height:44px!important;
+ }
+ body.reader-enhanced.reading-active #readingControls .reader-language-and-actions{
+   order:1!important;display:flex!important;
+   align-items:center!important;flex:0 0 auto!important;min-width:0!important;
+   padding:0!important;margin:0!important;border:0!important;
+ }
+ body.reader-enhanced.reading-active #readingControls #persistentLanguages{
+   box-sizing:border-box!important;display:flex!important;flex-flow:row nowrap!important;
+   gap:1px!important;padding:2px!important;margin:0!important;
+   flex:0 0 auto!important;
+ }
+ body.reader-enhanced.reading-active #readingControls #persistentLanguages>button{
+   box-sizing:border-box!important;flex:0 0 33px!important;
+   width:33px!important;min-width:33px!important;max-width:33px!important;
+   height:42px!important;min-height:42px!important;padding:0!important;
+   display:inline-flex!important;justify-content:center!important;align-items:center!important;
+ }
+ /* Flatten only the mobile *reading* action groups. Existing DOM buttons
+    keep original identities/events and remain grouped in other page routes. */
+ body.reader-enhanced.reading-active #readingControls .reader-action-slot,
+ body.reader-enhanced.reading-active #readingControls .gn-reader-global-trailing {
+   display:contents!important;
+ }
+ body.reader-enhanced.reading-active #readingControls .reader-focus-controls{
+   display:none!important;
+ }
+ body.reader-enhanced.reading-active #readingControls :is(#focusToolbar,#readerSaveAction,#readerCopyAction,#readerShareAction,#searchBtn,#settingsBtn){
+   box-sizing:border-box!important;display:inline-flex!important;visibility:visible!important;
+   align-items:center!important;justify-content:center!important;
+   flex:0 0 var(--gn-scholar-btn,36px)!important;
+   width:var(--gn-scholar-btn,36px)!important;
+   min-width:var(--gn-scholar-btn,36px)!important;
+   max-width:var(--gn-scholar-btn,36px)!important;
+   height:44px!important;min-height:44px!important;max-height:44px!important;
+   margin:0!important;padding:0!important;
+   border-radius:8px!important;touch-action:manipulation;
+ }
+ body.reader-enhanced.reading-active #readingControls #focusToolbar{
+   order:2!important;color:var(--accent)!important;
+   border-color:var(--accent)!important;
+   background:var(--accent-soft)!important;
+ }
+ body.reader-enhanced.reading-active #readingControls #readerSaveAction{order:3!important}
+ body.reader-enhanced.reading-active #readingControls #readerCopyAction{order:4!important}
+ body.reader-enhanced.reading-active #readingControls #readerShareAction{order:5!important}
+ body.reader-enhanced.reading-active #readingControls #searchBtn{order:6!important}
+ body.reader-enhanced.reading-active #readingControls #settingsBtn{order:7!important}
+ body.reader-enhanced.reading-active #readingControls :is(#themeBtn,#gnTopHelp,#gnTopRead,#globalViewLabel){
+   display:none!important;
+ }
+ body.reader-enhanced.reading-active #readingControls .reader-action-caption{
+   display:none!important;
+ }
+ body.reader-enhanced.reading-active #readingControls :is(#focusToolbar,#readerSaveAction,#readerCopyAction,#readerShareAction,#searchBtn,#settingsBtn) svg{
+   flex:none!important;width:19px!important;height:19px!important;
+ }
+ /* Preserve focus visibility/low-vision operability. */
+ body.reader-enhanced.reading-active #readingControls :is(#menuBtn,#focusToolbar,#readerSaveAction,#readerCopyAction,#readerShareAction,#searchBtn,#settingsBtn):focus-visible{
+   outline:2px solid var(--accent)!important;outline-offset:1px!important;
+ }
+ /* Nonreading pages retain the established separate layout and Read shortcut. */
+}
+/* At phone widths the six 44px-high targets stay in one line.
+   Their widths scale by breakpoint instead of hiding Share or using a second row.
+   Even at 320px the minimum width is 32px, meeting WCAG 2.2's 24px target. */
+@media screen and (max-width:350px){
+ body.reader-enhanced.reading-active #readingControls{
+   --gn-scholar-btn:32px;
+   --gn-scholar-tile:40px;
+ }
+ body.reader-enhanced.reading-active #readingControls .reading-controls-inner{
+   gap:1px!important;
+ }
+ body.reader-enhanced.reading-active #readingControls #persistentLanguages>button{
+   flex-basis:30px!important;width:30px!important;min-width:30px!important;max-width:30px!important;
+ }
+}
+@media screen and (min-width:351px) and (max-width:389px){
+ body.reader-enhanced.reading-active #readingControls{
+   --gn-scholar-btn:36px;
+   --gn-scholar-tile:40px;
+ }
+ body.reader-enhanced.reading-active #readingControls #persistentLanguages>button{
+   flex-basis:33px!important;width:33px!important;min-width:33px!important;max-width:33px!important;
+ }
+}
+@media screen and (min-width:390px) and (max-width:620px){
+ body.reader-enhanced.reading-active #readingControls{
+   --gn-scholar-btn:40px;
+   --gn-scholar-tile:44px;
+ }
+}

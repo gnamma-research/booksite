@@ -52,11 +52,7 @@
   if(focusButton)trailing.insertBefore(focusButton,trailing.firstChild);
   trailing.setAttribute('aria-label','Focus, search, theme, display and help');
 
-  var help=document.createElement('button');
-  help.type='button';help.id='gnTopHelp';help.className='gn-top-help';
-  help.dataset.route='help';help.title='Help and reader guide';
-  help.setAttribute('aria-label','Help and reader guide');
-  help.innerHTML=icon('help');trailing.appendChild(help);
+  // Help is available in the Contents pane, not a permanent top button.
 
   var sidebar=document.querySelector('#leftNav .primary-nav');
   if(sidebar&&!sidebar.querySelector('[data-route="help"]')){
@@ -65,6 +61,7 @@
    helpNav.dataset.route='help';helpNav.innerHTML=icon('help')+'<span>Help &amp; guide</span>';
    sidebar.appendChild(helpNav);
   }
+  // Share retains its existing top-toolbar button and delegated handler.
   // Do not duplicate Help in the sidebar's small footer links.
   document.querySelectorAll('#leftNav .gn-nav-footer-links [data-route="help"]')
    .forEach(function(button){button.remove();});
