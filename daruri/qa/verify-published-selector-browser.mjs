@@ -75,7 +75,7 @@ try{
     await sourcePanel.waitFor({state:'visible',timeout:20000});
     assert.match(await sourceLink.getAttribute('href'),/\/source\/Daruri_Portable_Scholarly_Source\.zip\?v=[0-9a-f]{12}$/);
     assert.equal(await sourceLink.getAttribute('download'),'Daruri_Portable_Scholarly_Source.zip');
-    assert.equal((await ui.locator('[data-es-source-hash]').innerText()).trim(),sourceRelease.sha256);
+    assert.equal((await ui.locator('[data-es-source-hash]').textContent()).trim(),sourceRelease.sha256);
     assert.equal(await ui.locator('.gn-es-source-more').count(),1,'Source detail disclosure belongs to research ZIP');
     const received=page.waitForEvent('download',{timeout:30000});
     await sourceLink.click();
