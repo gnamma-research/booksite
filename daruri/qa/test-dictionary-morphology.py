@@ -70,6 +70,27 @@ assert by_surface["العلة"]["review_flags"] == "technical-sense-evidence-ava
 assert summary["candidate_occurrences"] == 4
 assert summary["missing_model_analysis"] == 0
 assert "بعض" not in mapping, "General Arabic error must not be falsely labelled sourced in a specialist dictionary"
+# Naively stripping a single prefixed letter creates false concepts: فاصل
+# means a divider, not always ف + أصل; ألسنة means tongues, not ال + سنة.
+expanded=json.loads(json.dumps(dictionary, ensure_ascii=False))
+expanded["terms"]["aṣl"]={"lemma":"أصل","root":"اصل","sources":["early"]}
+expanded["terms"]["sunna"]={"lemma":"سنة","root":"سنن","sources":["later"]}
+more=module.sourced_lexicon(expanded)
+unprefixed=[x for x in more[module.FOLD("فاصل")] if x["term"]=="aṣl"]
+assert unprefixed and all(not module.clitic_supported("فاصل",x,
+ ["0","فاصل","فاصِل","فصل","noun","contextual-bert","فاصِل",{}])
+ for x in unprefixed)
+tongues=[x for x in more[module.FOLD("ألسنة")] if x["term"]=="sunna"]
+assert tongues and all(not module.clitic_supported("ألسنة",x,
+ ["0","ألسنة","لِسان","لسن","noun","contextual-bert","لِسان",{}])
+ for x in tongues), "Hamza seats must not be flattened in lexical matching"
+sourced=[x for x in more[module.FOLD("بالقياس")] if x["term"]=="qiyās"]
+assert sourced and any(module.clitic_supported("بالقياس",x,
+ [0,"بالقياس","قِياس","","noun","contextual-bert","قِياس",
+  {"prc0":"Al_det","prc1":"bi_prep"}]) for x in sourced)
+assert all(not module.clitic_supported("بالقياس",x,
+ [0,"بالقياس","قِياس","","noun","contextual-bert","قِياس",{}])
+ for x in sourced), "Never guess a prefixed term without segmentation evidence"
 invalid=json.loads(json.dumps(index,ensure_ascii=False))
 invalid["records"][0]["a"][0][1]="المقايسة"
 try:
