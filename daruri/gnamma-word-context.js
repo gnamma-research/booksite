@@ -193,6 +193,7 @@ function wordMarkup(ctx){
    (best.pos?' · '+esc(grammarName('pos',best.pos)):'')+'</div>'+
    '<small>'+esc(morph()?.sourceLabel(best.source)||'Provisional analysis')+
      (best.source==='curated'?' · Candidate headword, not a verified reading of the sentence.':'')+
+     (best.features?.root_origin?' · Root supplemented from a curated dictionary headword, not checked against this occurrence.':'')+
     '</small>'+detailedGrammar(best,alts):
    alts.length?'<p>This form has several possible analyses in the current index. The reading of this occurrence is not established.</p>'+
     '<ul>'+alts.slice(0,5).map(x=>'<li><bdi lang="ar" dir="rtl">'+esc(x.lemma)+'</bdi> · '+esc(grammarName('pos',x.pos))+
