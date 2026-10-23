@@ -66,16 +66,36 @@ async function render(mode){
   status('Paginating real Arabic and English HTML entirely in browser…',{phase:'paginating',mode});
   const promise=new Promise((resolve,reject)=>{
    try{
-    const work=printHTML(sourceHtml,{removeIframe:false,printCallback:w=>{
-     targetWindow=w;status('Writing vector PDF bytes locally…',{phase:'writing',mode});
+    const work=printHTML(sourceHtml,{
+     title:'Daruri browser-only PDF proof',hideIframe:true,removeIframe:false,
+     errorCallback:message=>{reject(Error('Vivliostyle pagination failed: '+String(message)));},
+     printCallback:w=>{
+     targetWindow=w;status('Inspecting completed paginated HTML in iframe…',{phase:'page-inspection',mode});
      (async()=>{
+      // This selector is exactly what the installed emitter backend requires.
+      // Measure real paginator output, not an assumed print-ready state.
+      let found=0;
+      for(let tick=0;tick<75;tick++){
+       found=w.document.querySelectorAll('[data-vivliostyle-page-container]').length;
+       if(found)break;
+       await new Promise(done=>setTimeout(done,200));
+      }
+      const domState={
+       pageContainers:found,
+       readyState:w.document.readyState,
+       iframeCount:w.document.querySelectorAll('iframe').length,
+       divCount:w.document.querySelectorAll('div').length
+      };
+      window.__daruriQA={...(window.__daruriQA||{}),paginated_dom:domState};
+      if(!found)throw Error('Vivliostyle callback exposed no PDF page containers: '+JSON.stringify(domState));
+      status('Writing vector PDF bytes locally…',{phase:'writing',mode,paginated_pages:found});
       const bytes=await emitPdfFromVivliostyleWindow(w,{
        sourceHtml,metadata:{title:'Daruri browser HTML-PDF research',author:'Gnamma Research'},
        onProgress:message=>{window.__daruriQA={...(window.__daruriQA||{}),progress:String(message).slice(0,100)};}
       });
       resolve(bytes);
      })().catch(reject);
-    }});
+     }});
     if(work&&typeof work.catch==='function')work.catch(reject);
    }catch(error){reject(error)}
   });
@@ -90,7 +110,7 @@ async function render(mode){
   const qa={phase:'done',mode,bytes:bytes.length,elapsed_ms:Math.round(performance.now()-started),
     memory_before:memoryBefore,memory_after:performance.memory?.usedJSHeapSize??null,
     source_sha256:fixture.source_sha256,authorial_sections:258,authorial_passages:414,
-    engine:'vivliostyle-pdf@0.3.1; @pdfme/pdf-lib',no_server_pdf_generation:true,
+    engine:'vivliostyle-pdf@0.3.3; @pdfme/pdf-lib',no_server_pdf_generation:true,
     no_print_dialog:true,no_cdp_print_to_pdf:true,no_prebuilt_pdf_inputs:true,not_release_approved:true};
   status('PDF generated entirely in this browser. Native Arabic and footnote QA still required.',qa);
   return qa;
