@@ -179,7 +179,7 @@
    }
    let worker;
    try{
-    worker=new Worker('dynamic-pdf/assemble.worker.js?v=20261022-worker1',{type:'classic'});
+    worker=new Worker('dynamic-pdf/assemble.worker.js?v=20261023-stage1',{type:'classic'});
    }catch(error){reject(Error('Local PDF worker unavailable: '+error.message));return;}
    let settled=false;
    let timeoutId;
