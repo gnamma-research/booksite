@@ -7,6 +7,7 @@ on:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
       - 'daruri/qa/verify-popup-scroll-browser.cjs'
+      - 'daruri/qa/verify-other-modal-scroll.cjs'
       - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
       - 'daruri/qa/verify-contextual-bookmarks.cjs'
       - 'daruri/reading-mode-controls.js'
@@ -25,6 +26,7 @@ on:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
       - 'daruri/qa/verify-popup-scroll-browser.cjs'
+      - 'daruri/qa/verify-other-modal-scroll.cjs'
       - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
       - 'daruri/qa/verify-contextual-bookmarks.cjs'
       - 'daruri/reading-mode-controls.js'
@@ -53,12 +55,22 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Exclude unavailable Microsoft apt source on GitHub runner
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then
+              sudo mv "$source" "$source.disabled"
+            fi
+          done
       - name: Install browser test dependencies
         run: |
           npm install --no-save --prefix daruri/qa playwright@1.56.1
           npx --prefix daruri/qa playwright install --with-deps chromium webkit
       - name: Verify one-scroll scholarly popups and frozen reading page in Chromium / mobile WebKit
         run: node daruri/qa/verify-popup-scroll-browser.cjs
+      - name: Verify Search, Reading Desk, backup and other overlays use one scroll lock
+        run: node daruri/qa/verify-other-modal-scroll.cjs
       - name: Exercise actual reader in mobile WebKit and Chromium
         run: node daruri/qa/verify-reading-desk-real-browser.cjs
       - name: Verify deletion recovery, Arabic search and keyboard notes
