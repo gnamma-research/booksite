@@ -129,22 +129,19 @@ async function exercise(engine,name,origin){
    // independently without falsely claiming to synthesize a native swipe.
    await list.evaluate(el=>{
     const rect=el.getBoundingClientRect();
-    if(typeof Touch==='function'&&typeof TouchEvent==='function'){
-     const mk=(y)=>new Touch({identifier:1,target:el,
-      clientX:rect.left+rect.width*.6,clientY:y});
-     const from=mk(rect.top+rect.height*.78),to=mk(rect.top+rect.height*.42);
-     el.dispatchEvent(new TouchEvent('touchstart',{
-      bubbles:true,cancelable:true,touches:[from],targetTouches:[from],changedTouches:[from]}));
-     el.dispatchEvent(new TouchEvent('touchmove',{
-      bubbles:true,cancelable:true,touches:[to],targetTouches:[to],changedTouches:[to]}));
-     el.scrollTop=210;el.dispatchEvent(new Event('scroll',{bubbles:true}));
-     el.dispatchEvent(new TouchEvent('touchend',{
-      bubbles:true,cancelable:true,touches:[],targetTouches:[],changedTouches:[to]}));
-    }else{
-     el.dispatchEvent(new Event('touchstart',{bubbles:true}));
-     el.scrollTop=210;el.dispatchEvent(new Event('scroll',{bubbles:true}));
-     el.dispatchEvent(new Event('touchmove',{bubbles:true}));
+    const before=rect.top+rect.height*.78,after=rect.top+rect.height*.42;
+    // Mobile WebKit exposes Touch in some builds but disallows its
+    // constructor. Use event objects with authentic touch fields in that
+    // environment while retaining native Playwright fingertip taps above.
+    function send(type,y){
+     const e=new Event(type,{bubbles:true,cancelable:true});
+     Object.defineProperty(e,'touches',{value:type==='touchend'?[]:[{clientY:y}]});
+     el.dispatchEvent(e);
     }
+    send('touchstart',before);
+    send('touchmove',after);
+    el.scrollTop=210;el.dispatchEvent(new Event('scroll',{bubbles:true}));
+    send('touchend',after);
    });
   }
   await page.waitForTimeout(250);
