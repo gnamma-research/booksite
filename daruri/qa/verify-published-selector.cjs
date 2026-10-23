@@ -39,8 +39,9 @@ for(const required of ['Book PDF','Study Guide','Offline reader','Research files
   'id="gn-es-prepare"','data-es-action="download"','data-daruri-bundle="html"',
   'id="pe-dates"','id="pe-annotations"','id="pe-picker"',
   'id="pe-generate"','id="pe-result"','data-es-action="open"',
+  'data-es-stage1-create','dynamic-editions.html?','autostart',
   'loadPersonalTools(mounted)','gnamma-personal-export-ready',
-  'No published PDF matches this exact combination','word']){
+  'No approved edition matches this exact combination','word']){
   if(required==='word')continue;
   assert.ok(edition.includes(required),'Missing integrated control '+required);
 }
@@ -49,7 +50,7 @@ assert.ok(!edition.includes('data-es-study-guide'),'Study guide is not a selecte
 assert.ok(edition.includes("availability.hidden=result.status==='ready'"),
   'Do not show an unnecessary ready banner');
 assert.ok(edition.includes("download.href=open.getAttribute('href')"),
-  'Published PDFs must download directly as the exact selected file');
+  'Clean source and Reference PDFs retain direct native View/Download');
 assert.ok(edition.includes("prepare.hidden=true"),'No mandatory Prepare PDF stage');
 assert.ok(!edition.includes('data-es-nav="study"'),'No redundant nested Study navigation');
 assert.ok(edition.includes("Download Study Guide (PDF)"),'Standalone companion download must be explicit');
@@ -101,6 +102,21 @@ for(const row of maps.files){
     }
   }
 }
+// Stage1 removal policy: every approved full apparatus entry is a recipe,
+// not a downloaded whole-document PDF. Signed packet/map provenance stays.
+const signed=JSON.parse(read('dynamic-pdf/packets/manifest.json'));
+assert.equal(signed.packets.length,15);
+assert.equal(signed.profiles.length,120);
+const profiles=new Map(signed.profiles.map(x=>[x.profile,x]));
+const packetByFile=new Map(signed.packets.map(x=>[x.file,x]));
+assert.equal(profiles.size,120);
+assert.equal(packetByFile.size,15);
+for(const packet of signed.packets){
+  assert.equal(fn(path.join(root,'dynamic-pdf/packets',packet.file)),packet.sha256,
+    'The shared apparatus packet must retain its approved SHA');
+  assert.equal(fn(path.join(root,'dynamic-pdf/packets',packet.map)),packet.map_sha256,
+    'The packet map must be identical to its signed source');
+}
 const seen=new Set();
 for(const row of extra.files){
   assert.ok(!seen.has(row.file));seen.add(row.file);
@@ -108,7 +124,17 @@ for(const row of extra.files){
   assert.equal(row.base_sha256,baselines.get(row.source_base).sha256);
   assert.equal(row.verified_sections,258);
   assert.equal(row.map_coverage,1);
-  assert.equal(fn(path.join(root,'editions',row.file)),row.sha256);
-  assert.equal(fn(path.join(root,'editions',row.map_file)),row.map_sha256);
+  assert.equal(fs.existsSync(path.join(root,'editions',row.file)),false,
+    'Retired completed apparatus PDF must not remain on the public site');
+  assert.equal(fn(path.join(root,'editions',row.map_file)),row.map_sha256,
+    'Historical position provenance must be retained');
+  const binding=profiles.get(row.file);
+  assert(binding,'Missing signed local assembly profile '+row.file);
+  const packet=packetByFile.get(binding.packet);
+  assert(packet);
+  assert.equal(binding.profile_sha256,row.sha256);
+  assert.equal(binding.base,row.source_base);
+  assert.equal(binding.packet_sha256,packet.sha256);
+  assert.equal(fn(path.join(root,'dynamic-pdf/packets',binding.map)),binding.map_sha256);
 }
-console.log('PASS: four download purposes, three book editions, personal PDF, 12 maps, 120 exact apparatus PDFs and safe word fallbacks.');
+console.log('PASS Stage1: 12 SHA-bound sources, 15 reusable packets, 120 signed recipes, ZERO redundant PDF files and intact personal-export privacy.');

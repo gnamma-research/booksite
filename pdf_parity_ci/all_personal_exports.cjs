@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 'use strict';
-/* One synthetic personal-note PDF per published profile; never touches real users' storage.
-   Parallel CI shards cover all 5 canonical, 12 A4, and 120 apparatus profiles. */
+/* Synthetic personal-note PDF per physically published source or canonical design.
+   Stage1: the 120 scholarly apparatus PDFs are composed locally and covered
+   independently by the exact 120-profile composer/parity and browser P-note suites. */
 const fs=require('node:fs'),path=require('node:path'),os=require('node:os');
 const {pathToFileURL}=require('node:url');
 const {spawn,spawnSync}=require('node:child_process');
@@ -13,10 +14,11 @@ const a4=JSON.parse(fs.readFileSync(path.join(root,'daruri/editions/manifest.jso
 const extra=JSON.parse(fs.readFileSync(path.join(root,'daruri/editions/apparatus/manifest.json')));
 const all=[
   ...Object.keys(manifest.files),
-  ...a4.files.map(x=>'editions/'+x.file),
-  ...extra.files.map(x=>'editions/'+x.file)
+  ...a4.files.map(x=>'editions/'+x.file)
 ];
-if(all.length!==137||new Set(all).size!==137)throw Error('The current published catalogue is not 137 unique PDF profiles.');
+if(all.length!==17||new Set(all).size!==17)throw Error('Expected 5 canonical plus 12 distinct, directly published source PDFs.');
+if(extra.files.length!==120||new Set(extra.files.map(x=>x.file)).size!==120)
+  throw Error('The Stage1 120 approved apparatus recipes are missing or duplicated.');
 const selected=all.filter((v,i)=>i%shards===shard);
 const normalize=s=>String(s||'').normalize('NFKD').replace(/\p{M}/gu,'').replace(/[^\p{L}\p{N}]/gu,'').toLowerCase();
 let pdfjsModule=null;
@@ -70,7 +72,7 @@ const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
    await page.locator('#pe-annotations').check();
    await page.locator('#pe-appendix').check();
    const opt=await page.locator('#pe-edition option').count();
-   if(opt!==137)throw Error('Expected 137 choices, got '+opt);
+   if(opt!==17)throw Error('Expected 17 independently published base/canonical choices, got '+opt);
   }
   await newPage();
   for(let i=0;i<selected.length;i++){

@@ -1,0 +1,59 @@
+name: Daruri design-aware on-device PDF browser acceptance
+on:
+  push:
+    branches: [feature/daruri-design-aware-generated-editions-20261022]
+    paths:
+      - 'daruri/dynamic-pdf/design-catalog.js'
+      - 'daruri/dynamic-pdf/client.js'
+      - 'daruri/dynamic-editions.html'
+      - 'daruri/qa/verify_dynamic_design_browser.cjs'
+      - '.github/workflows/daruri-design-aware-browser-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-design-browser-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned browser and PDF parsing dependencies
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1
+          cd daruri/qa
+          if [ '${{ matrix.browser }}' = 'chromium' ]; then
+            if command -v google-chrome >/dev/null 2>&1; then
+              google-chrome --version
+              echo 'GNAMMA_CHROME_CHANNEL=chrome' >> "$GITHUB_ENV"
+            else
+              npx playwright install --with-deps --only-shell chromium
+            fi
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Run real mobile browser generation of 3 approved designs
+        env:
+          GNAMMA_BROWSER: ${{ matrix.browser }}
+          GNAMMA_REPORT_DIR: /tmp/daruri-design-browser-${{ matrix.browser }}
+        run: node daruri/qa/verify_dynamic_design_browser.cjs
+      - name: Retain machine-readable release gate evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-approved-designs-${{ matrix.browser }}-report
+          path: /tmp/daruri-design-browser-${{ matrix.browser }}/design-browser-report.json
+          if-no-files-found: warn
+          retention-days: 15
