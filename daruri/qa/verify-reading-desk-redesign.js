@@ -57,7 +57,7 @@ function boot(source,opts={}){
  const grid=(number)=>({dataset:{segment:'0'},nextElementSibling:null,
   closest(){return {dataset:{readingSection:number}}},after(el){this.nextElementSibling=el},scrollIntoView(){}});
  const grids=[grid('190'),grid('191')],reader={
-  querySelector(){return null},querySelectorAll(q){return q==='.passage-grid'?grids:[]}
+  querySelector(){return null},contains(){return true},querySelectorAll(q){return q==='.passage-grid'?grids:[]}
  };
  const state={route:'bookmarks',n:'191',lang:'parallel',bookmarks:[],focusLevel:0,focusMode:false};
  const notifications=[];
@@ -77,6 +77,7 @@ function boot(source,opts={}){
    if(q==='#gn-continuous-191')return root('191');
    return null;
   },
+  getElementById(id){return this.querySelector('#'+id)},
   querySelectorAll(){return []},
   addEventListener:(type,fn)=>(events[type]??=[]).push(fn),
   activeElement:activeFocus,
@@ -116,7 +117,7 @@ function boot(source,opts={}){
  const desk=window.GnammaReadingDesk.create(context);
  desk.render();
  function event(type,data){for(const fn of events[type]||[])fn({
-  target:{...data,closest(){return this}},
+  target:{...data,closest(selector){if(selector==='[data-term]'&&!this.dataset?.term)return null;return this}},
   preventDefault(){},stopImmediatePropagation(){}
  })}
  return {desk,state,main,reader,grids,highlights,event,notifications,
