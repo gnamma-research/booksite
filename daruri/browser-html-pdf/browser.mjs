@@ -90,6 +90,39 @@ async function render(mode){
       if(!found)throw Error('Vivliostyle callback exposed no PDF page containers: '+JSON.stringify(domState));
       status('Writing vector PDF bytes locally…',{phase:'writing',mode,paginated_pages:found});
       const taggedPdfUa=new URL(location.href).searchParams.get('ua')==='1';
+      const forceFontFaces=new URL(location.href).searchParams.get('forcefaces')==='1';
+      const facesBefore=Array.from(w.document.styleSheets).flatMap(sheet=>{
+       try{return Array.from(sheet.cssRules).filter(rule=>rule instanceof w.CSSFontFaceRule).map(rule=>
+        ({family:rule.style.getPropertyValue('font-family'),src:rule.style.getPropertyValue('src')?.slice(0,140)}));
+       }catch{return[]}
+      });
+      const checkBefore=w.document.fonts.check('13px "Noto Naskh Arabic"');
+      if(forceFontFaces){
+       // The paginator may clone only its page containers into the callback
+       // document. Explicitly expose exactly the SAME local Noto font faces
+       // to the DOM→PDF emitter; don't alter any measured page geometry.
+       const recovered=w.document.createElement('style');
+       recovered.dataset.daruriQaFontRebind='true';
+       recovered.textContent=[
+         '@font-face{font-family:"Noto Naskh Arabic";src:url("'+FONT+'NotoNaskhArabic-Regular.ttf") format("truetype")}',
+         '@font-face{font-family:"Noto Serif";src:url("'+FONT+'NotoSerif-Regular.ttf") format("truetype")}',
+         '@font-face{font-family:"Noto Sans";src:url("'+FONT+'NotoSans-Regular.ttf") format("truetype")}',
+       ].join('\n');
+       w.document.head.append(recovered);
+       await w.document.fonts.load('13px "Noto Naskh Arabic"');
+       await w.document.fonts.ready;
+      }
+      const facesAfter=Array.from(w.document.styleSheets).flatMap(sheet=>{
+       try{return Array.from(sheet.cssRules).filter(rule=>rule instanceof w.CSSFontFaceRule).map(rule=>
+        ({family:rule.style.getPropertyValue('font-family'),src:rule.style.getPropertyValue('src')?.slice(0,140)}));
+       }catch{return[]}
+      });
+      window.__daruriQA={...(window.__daruriQA||{}),font_diagnostics:{
+        force_fallback_recovery:forceFontFaces,
+        faces_before:facesBefore.slice(0,12),faces_after:facesAfter.slice(0,12),
+        noto_check_before:checkBefore,
+        noto_check_after:w.document.fonts.check('13px "Noto Naskh Arabic"'),
+      }};
       const bytes=await emitPdfFromVivliostyleWindow(w,{
        baseUrl:new URL('/daruri/browser-html-pdf/runtime/',location.origin).href,
        sourceHtml,metadata:{title:'Daruri browser HTML-PDF research',author:'Gnamma Research',
@@ -116,6 +149,7 @@ async function render(mode){
     source_sha256:fixture.source_sha256,authorial_sections:258,authorial_passages:414,
     engine:'vivliostyle-pdf@0.3.3; @pdfme/pdf-lib',
     tagged_pdfua:new URL(location.href).searchParams.get('ua')==='1',
+    verified_font_face_recovery:new URL(location.href).searchParams.get('forcefaces')==='1',
     no_server_pdf_generation:true,
     no_print_dialog:true,no_cdp_print_to_pdf:true,no_prebuilt_pdf_inputs:true,not_release_approved:true};
   status('PDF generated entirely in this browser. Native Arabic and footnote QA still required.',qa);
