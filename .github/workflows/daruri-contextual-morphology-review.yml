@@ -78,6 +78,9 @@ jobs:
           python3 daruri/build/build_gnamma_morph_index.py \
             --mode bert --work "$WORK" --max-paragraphs "$LIMIT" --top 2 \
             --out-dir "$RUNNER_TEMP/morph-review"
+          python3 daruri/build/pack_morph_context.py \
+            --index "$RUNNER_TEMP/morph-review/morph-${WORK}-v1.json" \
+            --out-dir "$RUNNER_TEMP/morph-review/packed"
           python3 daruri/build/export_morph_review.py \
             --index "$RUNNER_TEMP/morph-review/morph-${WORK}-v1.json" \
             --count "$REVIEW_COUNT" \
