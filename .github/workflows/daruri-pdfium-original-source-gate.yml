@@ -1,0 +1,64 @@
+name: Daruri PDFium original Arabic 414-segment source + geometry gate
+on:
+  push:
+    branches: [qa/daruri-pdf-notes-release-contract-20261022]
+    paths:
+      - 'daruri/qa/verify_pdfium_source_414.py'
+      - '.github/workflows/daruri-pdfium-original-source-gate.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pdfium-original:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: reading-vowelled
+            source: editions/reading/daruri-reading-arabic-vowelled-titles-off.pdf
+            map: editions/maps/daruri-reading-arabic-vowelled-titles-off.pdf.json
+          - id: reading-bilingual-vowelled
+            source: editions/reading/daruri-reading-bilingual-titles-off.pdf
+            map: editions/maps/daruri-reading-bilingual-titles-off.pdf.json
+          - id: scholarly
+            source: daruri.pdf
+            map: personal-source-pango-maps/daruri.pdf.json
+          - id: study
+            source: editions/study/daruri-study-bilingual-titles-off.pdf
+            map: editions/maps/daruri-study-bilingual-titles-off.pdf.json
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: qa
+      - uses: actions/checkout@v4
+        with:
+          ref: b5c2855901091bcc05d8610c3502c59f3c6db3ec
+          path: proof
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7 pypdfium2==5.8.0
+      - name: Build only temporary source PDF using immutable verified code and map
+        run: |
+          python proof/daruri/qa/experimental_original_char_unicode.py \
+            --input proof/daruri/${{ matrix.source }} \
+            --map proof/daruri/${{ matrix.map }} \
+            --output /tmp/daruri-${{ matrix.id }}-pdfium-qa.pdf \
+            --scalar-harakat --scalar-mark-fraction 0.30 --all-source-runs
+      - name: STRICT 414 original source query + expected glyph geometry acceptance
+        run: |
+          python qa/daruri/qa/verify_pdfium_source_414.py \
+            --source proof/daruri/${{ matrix.source }} \
+            --candidate /tmp/daruri-${{ matrix.id }}-pdfium-qa.pdf \
+            --map proof/daruri/${{ matrix.map }} \
+            --report /tmp/daruri-${{ matrix.id }}-pdfium-414.json \
+            --strict
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-pdfium-${{ matrix.id }}-414-report
+          path: /tmp/daruri-${{ matrix.id }}-pdfium-414.json
+          retention-days: 14
+          if-no-files-found: warn
