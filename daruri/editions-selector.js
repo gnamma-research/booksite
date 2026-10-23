@@ -536,7 +536,7 @@
       syncPreparation(result,isPersonal,pdfFile);
       generated.hidden=!isPersonal;
     }
-    if(isPersonal&&(!mapReady||!personalReady)){
+    if(!composed&&isPersonal&&(!mapReady||!personalReady)){
       generated.disabled=true;
       availability.hidden=false;
       msg.textContent=!mapReady?'Personal PDF cannot be prepared':'Preparing personal PDF tools…';
