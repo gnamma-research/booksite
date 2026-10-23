@@ -5,7 +5,7 @@
  */
 (function(global){
 'use strict';
-const SCHEMA='gnamma-morph-v1',VERSION='20261023-morphclarity1';
+const SCHEMA='gnamma-morph-v1',VERSION='20261023-morphcontext2';
 const data=new Map(),pending=new Map(),errors=new Map(),listeners=new Set();
 let lexicon=null,lexiconPromise=null,notice='';
 const AR=/[\u0621-\u064a]/u;
@@ -42,7 +42,9 @@ function tokenize(raw){
  return out;
 }
 function sourceLabel(s){
- return s==='contextual-bert'?'Contextual model (automated; unverified)':
+ return s==='contextual-bert'?'Contextual MSA model suggestion (not scholarly checked)':
+ s==='contextual-alternative'?'Alternative MSA model analysis (not searched)':
+ s==='contextual-backoff'?'Unknown word; automated fallback (not searched)':
  s==='reviewed'?'Scholarly reviewed':
  s==='curated-context'?'Context-sensitive editorial rule':
  s==='curated'?'Curated forms (not context-disambiguated)':
@@ -87,14 +89,19 @@ function buildIndex(raw){
   byId.set(row.id,row);
   for(const a of row.a){
    if(!Array.isArray(a)||a.length<6)continue;
-   const [position,surface,lemma,root,pos,source,lexId]=a;
+   const [position,surface,lemma,root,pos,source,lexId,features]=a;
    if(!Number.isInteger(position)||position<0||typeof surface!=='string'||typeof lemma!=='string')continue;
    const hit={id:row.id,position,surface,lemma,root,pos,source,
     lexId:typeof lexId==='string'?lexId:'',
+    features:features&&typeof features==='object'&&!Array.isArray(features)?features:{},
     work:raw.work,confidence:source==='reviewed'?'reviewed':source==='contextual-bert'?'automated':'provisional'};
    if(source==='ambiguous')ambiguous++;
    annotated++;
-   for(const [map,key] of [[byLemma,fold(lemma)],[byRoot,fold(root)],[byForm,fold(surface)]]){
+   // Alternative-ranked analyses belong to the word inspector, never to search postings.
+   const searchable=source!=='contextual-alternative'&&source!=='contextual-backoff';
+   const postings=[[byForm,fold(surface)]];
+   if(searchable)postings.push([byLemma,fold(lemma)],[byRoot,fold(root)]);
+   for(const [map,key] of postings){
     if(!key)continue;const bucket=map.get(key)||[];bucket.push(hit);map.set(key,bucket);
    }
   }
@@ -126,11 +133,24 @@ function lookup(token,work,opts={}){
 }
 function disambiguate(word,neighbours=[],work,id=null,position=null){
  const found=lookup(word,work,{id,position});
- if(found.length===1)return {best:found[0],alternatives:[],certainty:found[0].confidence};
- if(found.length>1){
-  const distinct=[...new Map(found.map(x=>[x.lemma+'|'+x.pos+'|'+(x.lexId||''),x])).values()];
+ if(found.length){
+  const positions=new Set(found.map(x=>x.position));
+  const ranked=found.filter(x=>x.source==='contextual-bert');
+  const primary=ranked.length===1?ranked[0]:null;
+  if(id&&position==null&&positions.size>1){
+   const candidates=[...new Map(found.filter(x=>x.source!=='contextual-alternative')
+    .map(x=>[x.lemma+'|'+x.pos+'|'+(x.lexId||''),x])).values()];
+   return {best:null,alternatives:candidates,certainty:'occurrence-unlocated'};
+  }
+  if(primary){
+   const alternatives=found.filter(x=>x!==primary&&x.source==='contextual-alternative');
+   return {best:primary,alternatives,certainty:'automated'};
+  }
+  const distinct=[...new Map(found.filter(x=>x.source!=='contextual-alternative')
+   .map(x=>[x.lemma+'|'+x.pos+'|'+(x.lexId||''),x])).values()];
   return {best:distinct.length===1?distinct[0]:null,
-   alternatives:distinct,certainty:distinct.length===1?'provisional':'ambiguous'};
+   alternatives:distinct.length===1?[]:distinct,
+   certainty:distinct.length===1?distinct[0].confidence:'ambiguous'};
  }
  const matches=(lexicon||[]).filter(x=>x.formKeys.includes(fold(word)));
  if(matches.length===1){
@@ -138,7 +158,6 @@ function disambiguate(word,neighbours=[],work,id=null,position=null){
   alternatives:[],certainty:'provisional'};
  }
  if(matches.length>1){
-  // Only well-defined contextual cues; never claim a general Arabic parser.
   const prev=fold(neighbours[0]||''),next=fold(neighbours[1]||'');
   const katabaVerb=matches.find(x=>fold(x.lemma)==='كتب'&&x.pos==='verb');
   const kutubNoun=matches.find(x=>fold(x.lemma)==='كتاب'&&x.pos==='noun');
@@ -162,8 +181,23 @@ function find(query,mode,corpus){
  }
  const keys=kind==='root'?[q.root,...q.lemmas.map(x=>x.rootNorm)].filter(Boolean):
   q.lemmas.map(x=>x.normalized);
- if(kind==='lemma'&&!keys.length&&q.hasArabic)keys.push(q.raw);
  if(kind==='root'&&!keys.length&&q.hasArabic&&q.raw.length===3)keys.push(q.raw);
+ // Let a selected/typed inflected form resolve through actual occurrence
+ // analyses. Exclude speculative and alternative-ranked analyses.
+ let formAmbiguity=0;
+ if(q.hasArabic&&!keys.length){
+  const hypotheses=new Set();
+  for(const work of workSet){
+   const index=data.get(work);
+   for(const h of index?.byForm.get(q.raw)||[]){
+    if(['ambiguous','contextual-alternative','contextual-backoff'].includes(h.source))continue;
+    const value=kind==='root'?fold(h.root):fold(h.lemma);
+    if(value)hypotheses.add(value);
+   }
+  }
+  for(const key of hypotheses)keys.push(key);
+  formAmbiguity=hypotheses.size;
+ }
  const matches=new Map(),recById=new Map(corpus.map(r=>[r.work+'\0'+r.id,r]));
  for(const work of workSet){
   const index=data.get(work),map=kind==='root'?index.byRoot:index.byLemma;
@@ -187,7 +221,10 @@ function find(query,mode,corpus){
    matched:{field:'ar',raw:rec.ar,match,term:h.surface,relation:'morphology',
     root:h.root,lemma:h.lemma,pos:h.pos,source:h.source,reason}};
  });
- return {ready:true,items,mode:kind,keys:[...new Set(keys)],candidate:q,message:keys.length?'':'No verified lemma or root mapping for this input'};
+ const explanation=formAmbiguity>1?'This spelling has '+formAmbiguity+
+  ' possible dictionary analyses across occurrences. Results may cover several headwords; inspect the individual words.':
+  keys.length?'':'No indexed lemma or root mapping for this spelling yet. Try ordinary word search.';
+ return {ready:true,items,mode:kind,keys:[...new Set(keys)],candidate:q,message:explanation};
 }
 const api={version:VERSION,fold,roman,roots,tokenize,sourceLabel,recognize,loadLexicon,ensure,status,find,lookup,disambiguate,whenUpdated,getLexicon:()=>lexicon||[]};
 global.GnammaMorphology=Object.freeze(api);
