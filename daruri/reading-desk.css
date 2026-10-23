@@ -636,3 +636,6 @@ body.gn-rd-print #gn-rd-print-root{box-sizing:border-box}
 body.gn-rd-relink-open,body.gn-rd-editor-open{overflow:hidden!important}
 .gn-rd-relink{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .gn-rd-editor{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+
+/* Inline saved-item panels also use one scroll surface on phones; on desktop they grow with the page. */
+.gn-rd-inline-items{max-height:none;overflow:visible;overscroll-behavior:auto}

@@ -19,6 +19,8 @@ assert.ok(js.includes("lock?.('reading-desk-editor')")&&js.includes("unlock?.('r
  'Personal note editor must participate in the same modal scroll lock');
 assert.ok(/\.gn-rd-relink-shade\{[^}]*overflow:hidden/.test(css)&&/\.gn-rd-relink\{[^}]*overflow:auto/.test(css),
  'Only the inner source-relink dialog may scroll');
+assert.ok(/\.gn-rd-inline-items\{max-height:none;overflow:visible/.test(css),
+ 'Paragraph saved-item popup must never have an inner scrolling list');
 function test(name,fn){fn();checks.push(name);console.log('PASS '+name);}
 const at=Date.UTC(2026,9,20,8),longText='EARLY '+('word '.repeat(210))+' EXACT QUOTATION AT END';
 const sectionMap=new Map([
