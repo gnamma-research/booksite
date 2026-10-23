@@ -7,6 +7,9 @@ on:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
       - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
+      - 'daruri/qa/verify-contextual-bookmarks.cjs'
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/reading-mode-controls.css'
       - 'daruri/backup-transfer.js'
       - 'daruri/backup-transfer.css'
       - 'daruri/google-drive-config.js'
@@ -21,6 +24,9 @@ on:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
       - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
+      - 'daruri/qa/verify-contextual-bookmarks.cjs'
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/reading-mode-controls.css'
       - 'daruri/backup-transfer.js'
       - 'daruri/backup-transfer.css'
       - 'daruri/google-drive-config.js'
@@ -53,6 +59,8 @@ jobs:
         run: node daruri/qa/verify-reading-desk-real-browser.cjs
       - name: Verify deletion recovery, Arabic search and keyboard notes
         run: node daruri/qa/verify-reading-desk-recovery-search.cjs
+      - name: Verify contextual reference navigation in mobile and desktop browsers
+        run: node daruri/qa/verify-contextual-bookmarks.cjs
       - name: Verify manual backup, selective restoration and mocked Google Drive
         run: node daruri/qa/verify-backup-transfer-browser.cjs
       - name: Preserve screenshots for review
