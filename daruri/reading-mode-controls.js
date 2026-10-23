@@ -86,7 +86,7 @@ function create({state,rd}){
  const savedPrefix=()=>{
   const prefix=document.createElement('span');prefix.className='gn-dock-saved-prefix';
   prefix.innerHTML=bookmarkUI.icon({saved:true});
-  const label=document.createElement('span');label.textContent='Saved';prefix.append(label);
+  // Checked bookmark is the shared visible heading for all category counters.
   prefix.setAttribute('aria-hidden','true');return prefix;
  };
  const displaySymbol=(category)=>{
