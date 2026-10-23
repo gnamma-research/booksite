@@ -464,13 +464,13 @@ window.DARURI_SOURCE_REFERENCES = {
   window.__gnHadithContextLoaderInstalled = true;
   var base = new URL('.', document.currentScript && document.currentScript.src || document.baseURI);
   var css = document.createElement('link');
-  css.rel = 'stylesheet'; css.href = new URL('hadith-context-ui.css?v=20261023-hmarkers1', base).href;
+  css.rel = 'stylesheet'; css.href = new URL('hadith-context-ui.css?v=20261023-hadithux3', base).href;
   document.head.appendChild(css);
   var js = document.createElement('script');
-  js.src = new URL('hadith-context-ui.js?v=20261023-hen1', base).href;
+  js.src = new URL('hadith-context-ui.js?v=20261023-hadithux3', base).href;
   js.async = false; document.head.appendChild(js);
   /* Inline H source links are independent of the lazy expanded Hadith corpus. */
   var inline = document.createElement('script');
-  inline.src = new URL('hadith-inline-anchors.js?v=20261023-hmarkers2', base).href;
+  inline.src = new URL('hadith-inline-anchors.js?v=20261023-hadithux3', base).href;
   inline.async = false; document.head.appendChild(inline);
 })();
