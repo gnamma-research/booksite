@@ -38,14 +38,19 @@ async function exercise(engine,name,origin){
  try{
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
   await page.waitForSelector('#readerDock:not([hidden])',{timeout:20000});
-  await page.waitForSelector('#gn-dock-private-status .gn-dock-summary-pair',{timeout:20000});
+  await page.waitForSelector('#gn-dock-private-status .gn-dock-summary',{timeout:20000});
   assert(await page.locator('body.focus-level-1').count(),'old Focus 1 preference not retained');
   assert.equal(await page.locator('#gn-dock-private-status .gn-dock-summary').count(),1,'mobile saved references must have one generous touch target');
   assert.equal(await page.locator('#gn-dock-private-status .gn-dock-summary-pair').count(),4,'section bookmark, paragraph bookmark, quotation and note each need an indicator');
+  const compact=page.locator('#gn-dock-private-status .gn-dock-summary');
+  const symbolsVisible=await compact.locator('.gn-dock-summary-symbols').isVisible();
+  const fallbackVisible=await compact.locator('.gn-dock-summary-fallback').isVisible();
+  assert(symbolsVisible||fallbackVisible,'either distinct category counts or the compact total must be visible');
+  if(fallbackVisible)assert.match(await compact.locator('.gn-dock-summary-fallback').textContent(),/4 items/,'condensed mobile state retains full count');
   const counts=await page.locator('#gn-dock-private-status .gn-dock-count').allTextContents();
   assert.deepEqual(counts,['1','1','1','1'],'saved §, ¶, exact quotation and note need separate counts');
   assert.equal(await page.locator('#gn-dock-paragraph-ref').innerText(),'· ¶1','bottom dock must identify paragraph 1');
-  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraph"] .gn-bm-paragraph .gn-bm-pilcrow').innerText(),'¶','saved paragraph must have compound bookmark-pilcrow glyph');
+  assert.equal(await page.locator('#gn-dock-private-status [data-gn-mark="paragraph"] .gn-bm-paragraph .gn-bm-pilcrow').textContent(),'¶','saved paragraph must have compound bookmark-pilcrow glyph even if its visual summary is condensed');
   assert(await page.locator('#gn-dock-private-status [data-gn-mark="note"] svg rect').count()===1 &&
     await page.locator('#gn-dock-private-status [data-gn-mark="note"] svg path').count()>=2,
     'personal note icon must contain a page and inset pen');
@@ -118,7 +123,11 @@ async function exercise(engine,name,origin){
   const noteMark=page.locator('#gn-dock-private-status [data-gn-mark="note"]');
   const diagnostics=await page.evaluate(()=>({hash:location.hash,heading:document.querySelector('#dockSection')?.textContent,body:document.body.className,markup:document.querySelector('#gn-dock-private-status')?.innerHTML,position:document.querySelector('#reader .passage-grid[data-segment="0"]')?.getBoundingClientRect().top,firstBottom:document.querySelector('#reader .passage-grid[data-segment="0"]')?.getBoundingClientRect().bottom,toolbarBottom:document.querySelector('#readingControls')?.getBoundingClientRect().bottom,dockTop:document.querySelector('#readerDock')?.getBoundingClientRect().top,hit:(()=>{const top=Math.max(0,document.querySelector('#readingControls')?.getBoundingClientRect().bottom||0),end=document.querySelector('#readerDock')?.getBoundingClientRect().top,y=Math.round(Math.max(top+35,Math.min(end-38,top+(end-top)*.42))),el=document.elementFromPoint(window.innerWidth/2,y);return {y,hit:el?.tagName,cls:el?.className,grid:el?.closest?.('.passage-grid')?.dataset.segment};})(),noteSource:JSON.parse(localStorage.getItem('gnamma-reading-desk-v1')||'{}').items?.filter(x=>x.kind==='note'),deskItems:window.__qaDesk?.records()?.map(x=>({id:x.id,kind:x.kind,section:x.target?.section,segment:x.target?.segment,deleted:x.deleted})),hidden:document.querySelector('#gn-dock-private-status')?.hidden,scrollY:window.scrollY,reader:document.querySelector('#reader')?.innerText.slice(0,95)}));
   assert(await noteMark.count(),'Saved paragraph note missing from dock after returning to §11 paragraph 1: '+JSON.stringify(diagnostics)+' errors: '+errors.join('; '));
-  await noteMark.click();
+  // At narrow widths individual category symbols can be visually condensed;
+  // the single >=44px saved-item target opens the actual item list.
+  const summary=page.locator('#gn-dock-private-status .gn-dock-summary');
+  assert(await summary.isVisible(),'one compact saved-items target must remain visible');
+  await summary.click();
   await page.locator('#gn-dock-saved-sheet').waitFor();
   await page.locator('#gn-dock-saved-sheet .gn-dock-sheet-item').filter({hasText:'Reader note'}).click();
   await page.locator('.gn-rd-page').waitFor();
