@@ -167,7 +167,9 @@ $('make').addEventListener('click',async()=>{
   const a=document.createElement('a');a.href=u;
   a.download='daruri-'+mode+'-paged-client-NONRELEASE.pdf';
   document.body.appendChild(a);a.click();a.remove();
+  const fontDiagnostics=window.__pdfProof.fontDiagnostics||null;
   window.__pdfProof={state:'done',mode,engine:'vivliostyle-print+pages-to-pdf',
+   fontDiagnostics,
    sourceHtmlBytes:new TextEncoder().encode(html).length,
    milliseconds:Math.round(performance.now()-start),bytes:bytes.length,
    memBefore:heapBefore,memAfter:performance.memory?.usedJSHeapSize??null,
