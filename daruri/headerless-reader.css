@@ -1,0 +1,224 @@
+/* Approved Oct 23 Daruri headerless navigation, issue #125.
+ * EXACT selected circular Andalusian mosaic is used in the existing
+ * Contents opener, NOT an additional brand or navigation button. */
+@media screen {
+  body.reading-active .topbar {display:none!important;}
+  body.reading-active #readingControls:not([hidden]) {
+    position:sticky!important;top:0!important;z-index:55!important;
+    border-top:0!important;
+  }
+  body.reading-active .main-region {padding-top:clamp(12px,2.4vw,22px)!important;}
+  #readingControls .reading-controls-inner {
+    display:flex!important;align-items:center!important;
+    flex-wrap:nowrap!important;justify-content:flex-start!important;
+    box-sizing:border-box;min-height:48px!important;
+    gap:clamp(3px,.65vw,9px)!important;
+    padding:4px clamp(6px,1.4vw,18px)!important;
+    max-width:100%;width:100%;
+  }
+  #readingControls .gn-reader-global-leading {
+    order:0!important;flex:0 0 auto!important;
+    display:flex!important;align-items:center!important;
+    margin:0!important;padding-inline-end:clamp(6px,.9vw,13px)!important;
+    border-inline-end:1px solid var(--line)!important;
+  }
+  #readingControls .gn-reader-global-leading #menuBtn {
+    box-sizing:border-box!important;display:inline-grid!important;
+    place-items:center!important;flex:0 0 44px!important;
+    width:44px!important;min-width:44px!important;max-width:44px!important;
+    height:44px!important;min-height:44px!important;
+    border:1px solid transparent!important;border-radius:50%!important;
+    padding:3px!important;background:transparent!important;
+    opacity:1!important;visibility:visible!important;
+    cursor:pointer!important;touch-action:manipulation!important;
+  }
+  #readingControls #menuBtn .icon {display:none!important;}
+  #readingControls #menuBtn::before {
+    content:"";display:block;width:36px;height:36px;flex:0 0 36px;
+    background-image:url("data:image/png;base64,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");
+    background-repeat:no-repeat;background-position:center;
+    background-size:contain;border-radius:50%;
+    filter:drop-shadow(0 1px 1px rgba(0,0,0,.18));
+  }
+  #readingControls #menuBtn:is(:hover,:focus-visible),#readingControls #menuBtn[aria-expanded="true"] {
+    background:var(--accent-soft)!important;border-color:var(--accent)!important;
+  }
+  #readingControls #menuBtn:focus-visible {
+    outline:2px solid var(--accent)!important;outline-offset:2px!important;
+  }
+  #readingControls .reader-language-and-actions {
+    order:1!important;flex:0 1 auto!important;min-width:0!important;
+    margin:0!important;padding:0!important;
+  }
+  #readingControls .reader-focus-controls {
+    order:2!important;display:flex!important;align-items:center!important;
+    flex:0 0 auto!important;margin:0!important;padding:0!important;
+    gap:0!important;
+  }
+  #readingControls .reader-focus-controls #focusToolbar {
+    box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;
+    justify-content:center!important;flex:0 0 auto!important;
+    width:auto!important;min-width:106px!important;max-width:none!important;
+    min-height:40px!important;height:40px!important;
+    gap:7px!important;padding:0 10px!important;
+    border:1px solid var(--accent)!important;border-radius:10px!important;
+    background:var(--accent-soft)!important;color:var(--accent)!important;
+    font:650 12px/1 var(--sans,system-ui)!important;white-space:nowrap!important;
+    box-shadow:none!important;
+  }
+  #readingControls #focusToolbar .gn-mode-text {
+    display:inline!important;letter-spacing:0!important;white-space:nowrap;
+    font:inherit;color:inherit;
+  }
+  #readingControls .reader-focus-controls #focusToolbar:focus-visible {
+    outline:2px solid var(--accent)!important;outline-offset:2px!important;
+  }
+  #readingControls .reader-action-slot {
+    order:3!important;display:flex!important;align-items:center!important;
+    flex:0 0 auto!important;margin:0!important;
+    padding-inline-start:clamp(5px,.85vw,11px)!important;
+    border-inline-start:1px solid var(--line)!important;
+    gap:0!important;
+  }
+  #readingControls #readerActionMenu {position:relative;display:block;flex:0 0 auto;}
+  #readingControls #readerActionMenu>summary {
+    box-sizing:border-box!important;display:grid!important;place-items:center!important;
+    list-style:none;cursor:pointer;flex:0 0 38px;
+    width:38px!important;min-width:38px!important;max-width:38px!important;
+    height:40px!important;min-height:40px!important;padding:8px!important;
+    border:1px solid var(--border)!important;border-radius:9px!important;
+    background:var(--surface)!important;color:var(--text)!important;
+  }
+  #readingControls #readerActionMenu>summary::-webkit-details-marker {display:none;}
+  #readingControls #readerActionMenu>summary svg {width:19px;height:19px;}
+  #readingControls #readerActionMenu[open]>summary,
+  #readingControls #readerActionMenu>summary:is(:hover,:focus-visible) {
+    background:var(--accent-soft)!important;color:var(--accent)!important;
+  }
+  #readingControls #readerActionMenu>summary:focus-visible {
+    outline:2px solid var(--accent);outline-offset:2px;
+  }
+  #readingControls #readerActionMenu .gn-actions-pop {
+    position:absolute!important;z-index:100;inset-block-start:calc(100% + 9px)!important;
+    inset-inline-start:0!important;inset-inline-end:auto!important;
+    display:grid;gap:2px;width:205px!important;
+    max-width:calc(100vw - 24px)!important;
+    padding:6px!important;border:1px solid var(--border)!important;
+    border-radius:11px;background:var(--surface)!important;
+    box-shadow:0 10px 28px rgba(0,0,0,.17)!important;
+  }
+  #readingControls #readerActionMenu:not([open]) .gn-actions-pop {display:none!important;}
+  #readingControls #readerActionMenu .gn-actions-option {
+    box-sizing:border-box!important;display:flex!important;align-items:center!important;
+    gap:10px!important;width:100%!important;min-height:43px!important;
+    padding:9px 10px!important;background:transparent!important;color:var(--text)!important;
+    border:0!important;border-radius:7px!important;text-align:start!important;
+  }
+  #readingControls #readerActionMenu .gn-actions-option:is(:hover,:focus-visible) {
+    background:var(--accent-soft)!important;color:var(--accent)!important;
+  }
+  #readingControls #readerActionMenu .reader-action-caption {
+    display:inline!important;visibility:visible!important;
+    font:500 12px/1.4 var(--sans,system-ui)!important;
+  }
+  #readingControls .gn-reader-global-trailing {
+    order:4!important;display:flex!important;align-items:center!important;
+    flex:0 0 auto!important;margin-inline-start:auto!important;
+    padding-inline-start:clamp(7px,1vw,14px)!important;
+    border-inline-start:1px solid var(--line)!important;
+    gap:clamp(2px,.55vw,8px)!important;
+  }
+  #readingControls .gn-reader-global-trailing button {
+    box-sizing:border-box!important;display:inline-flex!important;
+    justify-content:center!important;align-items:center!important;
+    flex:0 0 37px!important;width:37px!important;min-width:37px!important;
+    max-width:37px!important;min-height:40px!important;height:40px!important;
+    padding:6px!important;border:1px solid transparent!important;
+    border-radius:9px!important;background:transparent!important;
+    color:var(--text-soft)!important;
+  }
+  #readingControls .gn-reader-global-trailing button:is(:hover,:focus-visible) {
+    background:var(--accent-soft)!important;color:var(--accent)!important;
+  }
+  #readingControls #gnHeaderHelp svg {width:19px;height:19px;}
+  #leftNav .gn-sidebar-book-title {
+    display:flex!important;flex-direction:column!important;align-items:flex-start!important;
+    gap:4px!important;margin:0!important;
+  }
+  #leftNav .gn-sidebar-book-title .gn-work-title-ar {
+    color:var(--text);font:600 22px/1.5 var(--arabic,'Amiri',serif);
+  }
+  #leftNav .gn-sidebar-book-title .gn-work-author {
+    color:var(--text-soft);font:500 12px/1.4 var(--sans,system-ui);
+  }
+  #leftNav .gn-nav-help {margin-top:8px;border-top:1px solid var(--line)!important;border-radius:0!important;}
+  #leftNav .gn-nav-help .icon {width:18px;height:18px;}
+  .gn-history-help .gn-help-step h2 {
+    display:flex;align-items:center;gap:9px;
+  }
+  .gn-history-help .gn-help-icon {
+    display:inline-grid;place-items:center;flex:0 0 30px;
+    width:30px;height:30px;color:var(--accent);
+    border-radius:7px;background:var(--accent-soft);
+  }
+  .gn-history-help .gn-help-icon .icon{width:17px;height:17px;}
+}
+@media screen and (min-width:841px) {
+  body.reading-active .left-nav {
+    top:50px!important;height:calc(100dvh - 50px)!important;
+  }
+}
+@media screen and (max-width:840px) {
+  body.reading-active .left-nav {
+    top:0!important;height:100dvh!important;
+  }
+  #readingControls .reading-controls-inner {
+    gap:3px!important;padding-inline:5px!important;min-height:46px!important;
+  }
+  #readingControls .gn-reader-global-leading {padding-inline-end:4px!important;}
+  #readingControls .reader-language-and-actions {flex:0 1 auto!important;}
+  #readingControls .reader-focus-controls #focusToolbar {
+    width:39px!important;min-width:39px!important;max-width:39px!important;
+    height:40px!important;padding:8px!important;gap:0!important;
+  }
+  #readingControls #focusToolbar .gn-mode-text{display:none!important;}
+  #readingControls .reader-action-slot {padding-inline-start:4px!important;}
+  #readingControls #readerActionMenu>summary {
+    flex-basis:36px!important;width:36px!important;
+    min-width:36px!important;max-width:36px!important;
+  }
+  #readingControls .gn-reader-global-trailing {
+    gap:2px!important;padding-inline-start:4px!important;
+  }
+  #readingControls .gn-reader-global-trailing button {
+    width:36px!important;min-width:36px!important;max-width:36px!important;
+    flex-basis:36px!important;
+  }
+  #readingControls #themeBtn {display:none!important;}
+  #readingControls #gnHeaderHelp {display:none!important;}
+}
+@media screen and (max-width:380px) {
+  #readingControls .reading-controls-inner {gap:2px!important;padding-inline:3px!important;}
+  #readingControls .gn-reader-global-leading #menuBtn {
+    flex-basis:40px!important;width:40px!important;
+    min-width:40px!important;max-width:40px!important;
+    height:42px!important;min-height:42px!important;
+  }
+  #readingControls #menuBtn::before {width:34px;height:34px;}
+  #readingControls .gn-reader-global-leading {padding-inline-end:2px!important;}
+  #readingControls .reader-focus-controls #focusToolbar {
+    min-width:35px!important;max-width:35px!important;width:35px!important;
+    height:38px!important;
+  }
+  #readingControls #readerActionMenu>summary {
+    min-width:33px!important;max-width:33px!important;width:33px!important;height:38px!important;
+  }
+  #readingControls .gn-reader-global-trailing button {
+    width:32px!important;min-width:32px!important;
+    max-width:32px!important;flex-basis:32px!important;
+  }
+  #readingControls .gn-reader-global-trailing {padding-inline-start:3px!important;}
+}
+@media print {
+  #readingControls,#gnHeaderHelp {display:none!important;}
+}
