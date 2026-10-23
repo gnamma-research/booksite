@@ -1,0 +1,12 @@
+{
+  "name": "daruri-stage2-engine-shootout",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "typst-wasm": "1.0.0",
+    "@typst-wasm/fonts": "1.0.0"
+  },
+  "scripts": {
+    "typst-node": "node typst_node.mjs"
+  }
+}
