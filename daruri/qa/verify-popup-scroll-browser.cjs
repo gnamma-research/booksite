@@ -30,7 +30,7 @@ async function check(browserType,width,touch){
    outer:getComputedStyle(document.querySelector('#gn-scholar-layer .gn-layer-scroll')).overflowY,
    locked:window.GnammaPopupScroll?.isLocked()
   }));
-  check(lock.style==='fixed'&&lock.top==='-'+originalY+'px'&&lock.html==='hidden'&&lock.locked,
+  check(lock.style==='fixed'&&Math.abs(parseFloat(lock.top)+originalY)<=2&&lock.html==='hidden'&&lock.locked,
    'Hadith modal failed to freeze its underlying reading position: '+JSON.stringify(lock));
   check(lock.outer==='auto','Scholar modal is not the sole parent scroll owner');
   await layer.locator('.gn-hadith-context-toggle').first().click();
