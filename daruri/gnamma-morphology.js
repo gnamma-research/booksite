@@ -44,6 +44,7 @@ function tokenize(raw){
 }
 function sourceLabel(s){
  return s==='contextual-bert'?'Contextual MSA model suggestion (not scholarly checked)':
+ s==='curated-root-hint'?'Root inferred from curated headword (unverified)':
  s==='contextual-alternative'?'Alternative MSA model analysis (not searched)':
  s==='contextual-backoff'?'Unknown word; automated fallback (not searched)':
  s==='reviewed'?'Scholarly reviewed':
@@ -103,8 +104,8 @@ function buildCompactIndex(raw){
       throw Error('Invalid compact source token coordinate');
     rows.push({id:raw.ids[p[0]],position:p[1],surface:'',
       lemma:destination===byLemma?key:'',root:destination===byRoot?key:'',
-      pos:'',source:p[2]===1?'reviewed':'contextual-bert',work:raw.work,
-      confidence:p[2]===1?'reviewed':'automated'});
+      pos:'',source:p[2]===1?'reviewed':p[2]===2?'curated-root-hint':'contextual-bert',
+      work:raw.work,confidence:p[2]===1?'reviewed':p[2]===2?'provisional':'automated'});
    }
    destination.set(fold(key),rows);
   }
