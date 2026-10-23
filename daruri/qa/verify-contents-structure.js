@@ -13,7 +13,7 @@ const root=path.resolve(__dirname,'..');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const BOOK=require('./load-book')(html);
 // The last <script> may be a module included after the main reader script.
-const scriptStart=html.indexOf("<script>\\n(() => {\\n'use strict';\\nconst BOOK");
+const scriptStart=html.indexOf("<script>\n(() => {\n'use strict';\nconst BOOK");
 assert.ok(scriptStart>=0,'Main reader script not found');
 const scriptEnd=html.indexOf('</script>',scriptStart);
 assert.ok(scriptEnd>scriptStart,'Main reader script not closed');
