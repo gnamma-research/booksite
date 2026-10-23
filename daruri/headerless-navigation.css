@@ -409,3 +409,35 @@
    --gn-scholar-tile:44px;
  }
 }
+
+/* Release refinement: preserve the current circular Contents identity, modes, dock. */
+@media screen {
+ body.reader-enhanced:not(.reading-active) #readingControls .gn-reader-global-leading {gap:16px!important}
+ body.reader-enhanced.reading-active.focus-mode #readingControls:not([hidden]) .gn-reader-global-leading {
+  display:flex!important;visibility:visible!important;opacity:1!important;
+ }
+ body.reader-enhanced.reading-active.focus-mode #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn.gn-top-tile {
+  display:inline-flex!important;visibility:visible!important;opacity:1!important;
+ }
+ .gnamma-home .home-lead {max-width:690px;margin:17px 0}
+ .gnamma-home .home-actions {margin:16px 0 6px}
+ .gnamma-home .home-quiet-links {display:flex;flex-wrap:wrap;gap:4px 18px;margin:4px 0 0}
+ .gnamma-home .home-quiet-links button {
+  appearance:none;background:none;border:0;padding:8px 0;color:var(--text-soft);
+  font:500 12px/1.35 var(--sans,system-ui);cursor:pointer;text-decoration:underline;text-underline-offset:3px;
+ }
+ .gnamma-home .home-quiet-links button:hover,.gnamma-home .home-quiet-links button:focus-visible{color:var(--accent)}
+ .gnamma-home .home-source-details{margin:22px 0 0;padding-top:8px;max-width:790px}
+}
+@media screen and (max-width:620px) {
+ body.reader-enhanced:not(.reading-active) #readingControls .gn-reader-global-leading {gap:11px!important}
+ body.reader-enhanced.reading-active #readingControls:not([hidden]) .reading-controls-inner{gap:2px!important;min-width:0!important}
+ body.reader-enhanced.reading-active #readingControls:not([hidden]) .reader-language-and-actions{flex:0 1 auto!important;min-width:0!important}
+ body.reader-enhanced.reading-active #readingControls:not([hidden]) #persistentLanguages{flex:0 1 auto!important;min-width:0!important;max-width:100%!important}
+ body.reader-enhanced.reading-active #readingControls:not([hidden]) #persistentLanguages>button {
+  flex:1 1 33px!important;width:auto!important;min-width:24px!important;max-width:33px!important;
+ }
+ body.reader-enhanced.reading-active #readingControls:not([hidden]) :is(#focusToolbar,#readerSaveAction,#readerCopyAction,#readerShareAction,#searchBtn,#settingsBtn) {
+  flex:1 1 var(--gn-scholar-btn,36px)!important;width:auto!important;min-width:28px!important;max-width:40px!important;
+ }
+}
