@@ -97,6 +97,10 @@ async function domCheck(){
  const open=async id=>{const note=doc.querySelector('[data-note-id="'+id+'"]');const details=note.querySelector('.gn-hadith-context');details.open=true;details.dispatchEvent(new window.Event('toggle'));for(let i=0;i<9;i++)await tick();return note;};
  const note31=await open('HAD-R031');const list31=[...note31.querySelectorAll('[data-hadith-report]')];
  assert.deepEqual(list31.map(x=>x.dataset.hadithReport),['muslim:360a','abudawud:492'],'Muslim must precede Abu Dawud, with two distinct reports');
+ assert(list31.every(card=>card.querySelector('.gn-hadith-report-heading')?.textContent.match(/Muslim|Dawud|Dāwūd/i)),
+  'Each report heading must still identify its collection');
+ assert(list31.every(card=>![...card.querySelectorAll('.gn-hadith-meta strong')].some(label=>label.textContent.trim()==='Collection:')),
+  'Expanded Hadith details must not repeat the collection already named in the heading');
  assert(note31.textContent.includes('Jābir')||note31.textContent.includes('Jabir'),'Verified narrator rendered');
  assert(note31.textContent.includes('الإِبِلِ'),'Full source Arabic in offline card');
  const note216=await open('HAD-R216');
