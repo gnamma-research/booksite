@@ -316,10 +316,25 @@ function assertOfflineAsset() {
     if (String(section.id) === '1') await new Promise(resolve => w.queueMicrotask(resolve));
     assert.equal(w.location.hash, hash, 'Opening Notes preserves route');
     assert.equal(w.scrollY, 360 + index, 'Opening Notes preserves reader scroll');
+    assert.equal(d.body.style.position,'fixed','Background book must be scroll-locked while Notes are open');
+    assert.equal(d.documentElement.style.overflow,'hidden','Root scroller must not leak modal gestures into the book');
+    assert.equal(d.body.style.top,(-360-index)+'px','Lock preserves the original vertical position');
+    const noteScroll=d.querySelector('#gn-scholar-layer .gn-layer-scroll');
+    const topControl=d.querySelector('#gn-scholar-layer [data-gn-summary-jump]');
+    assert.ok(noteScroll&&topControl?.hidden,'Notes starts with one scroll pane and a hidden Summary shortcut');
     assertCard(d, section, relevant);
+    if(String(section.id)==='31'){
+      noteScroll.scrollTop=620;
+      noteScroll.dispatchEvent(new w.Event('scroll'));
+      assert.equal(topControl.hidden,false,'Summary shortcut becomes visible deep within the note');
+      topControl.click();
+      assert.equal(noteScroll.scrollTop,0,'Summary shortcut returns to the beginning');
+      noteScroll.dispatchEvent(new w.Event('scroll'));
+      assert.equal(topControl.hidden,true,'Summary shortcut disappears near the beginning');
+    }
     relevant.forEach(note => visited.add(note.id));
     assert.equal(d.activeElement, d.querySelector('#gn-scholar-layer button[data-gn-close]'), 'Opening Notes focuses its close control');
-    const controls = [...d.querySelectorAll('#gn-scholar-layer button, #gn-scholar-layer a[href]')];
+    const controls = [...d.querySelectorAll('#gn-scholar-layer button, #gn-scholar-layer a[href]')].filter(node=>!node.hidden&&!node.closest('[hidden]'));
     const first = controls[0], last = controls[controls.length - 1];
     last.focus({preventScroll:true});
     const tab = new w.KeyboardEvent('keydown', {key:'Tab', bubbles:true, cancelable:true});
@@ -336,6 +351,8 @@ function assertOfflineAsset() {
     assert.equal(d.activeElement, trigger, 'Closing Notes restores the originating Notes link');
     assert.equal(w.location.hash, hash, 'Closing Notes preserves route');
     assert.equal(w.scrollY, 360 + index, 'Closing Notes preserves reader scroll');
+    assert.equal(d.body.style.position,'','Closing Notes releases the reader scroll lock');
+    assert.equal(d.documentElement.style.overflow,'','Closing Notes restores root scrolling');
     assertUniqueIDs(d, 'Reader section ' + section.id);
     noteCards++;
     if ((index + 1) % 65 === 0) console.log('Checked ' + (index + 1) + ' of 259 reader sections.');
