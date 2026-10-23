@@ -48,6 +48,9 @@ let server,browser,context;
   assert.equal(status.one_exact_unicode_layer_per_line,true);
   assert.equal(status.semantic_chunk_limit,28);
   assert.equal(status.source_chunk_reconstruction_guaranteed,true);
+  assert.equal(status.one_original_word_per_semantic_cid,true);
+  assert.equal(status.native_rtl_text_matrix,true);
+  assert.equal(status.CID_word_join_overlap_pt,3.5);
   assert.equal(status.full_authorial_arabic_word_content_represented,true);
   assert.equal(status.original_published_pdf_inputs,0);
   // Require the explicit false value emitted by this exact nonrelease
