@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Daruri research: real browser-side searchable PDF bytes</title>
+<style>
+@font-face{font-family:NativeNaskh;src:url("../build/fonts/NotoNaskhArabic-Regular.ttf")}
+body{margin:2rem auto;max-width:46rem;font:16px/1.5 system-ui,sans-serif}
+section{border:1px solid #ccc;padding:1rem;margin:1rem 0}
+[lang=ar]{font:22px/2 NativeNaskh,serif;direction:rtl;text-align:right}
+button{font:inherit;padding:.7rem 1rem}
+</style>
+<script defer src="../vendor/pdf-lib-1.17.1.min.js"></script>
+<script defer src="../qa/node_modules/@pdf-lib/fontkit/dist/fontkit.umd.min.js"></script>
+</head>
+<body>
+<h1>Experimental browser-native Arabic PDF</h1>
+<p>This is a NO-RELEASE demonstration that JavaScript can return PDF bytes with
+actual embedded Unicode text, not page screenshot images. It is NOT a full
+HTML/CSS print engine or a replacement for the approved scholarly PDF.</p>
+<section id="book-source" aria-label="Canonical test article in logical order">
+<h2>Arabic text source</h2>
+<p lang="ar" data-original-source="one">أَمَّا بَعْدُ</p>
+<p lang="ar" data-original-source="two">وَفِي أَلْفَاظِهِ</p>
+<p lang="en" data-translation="one">As for what follows</p>
+<p lang="en" data-translation="two">And in its expressions</p>
+<p><sup data-note-call="N1">1</sup> <span data-note-body="N1">Editorial footnote, distinctly labelled.</span></p>
+</section>
+<button id="create" type="button">Create searchable PDF locally</button>
+<p id="status" role="status" aria-live="polite">No generation has run.</p>
+<script>
+window.GnammaBrowserArabicPdf = {
+  version:"1.0-research",
+  async generate(){
+    if(!window.PDFLib?.PDFDocument || !window.fontkit)
+      throw Error("Verified local PDF text-writing libraries have not loaded");
+    const fontResponse=await fetch("../build/fonts/NotoNaskhArabic-Regular.ttf");
+    if(!fontResponse.ok)throw Error("Local Arabic Unicode font unavailable");
+    const fontBytes=await fontResponse.arrayBuffer();
+    const pdf=await PDFLib.PDFDocument.create();
+    pdf.registerFontkit(window.fontkit);
+    const font=await pdf.embedFont(fontBytes,{subset:false});
+    const helv=await pdf.embedFont(PDFLib.StandardFonts.Helvetica);
+    pdf.setTitle("Daruri experimental browser-generated Unicode proof");
+    pdf.setAuthor("Gnamma research, NON-RELEASE");
+    const page=pdf.addPage([595.276,841.89]);
+    const logicalSource=[...document.querySelectorAll("[data-original-source]")].map(n=>n.textContent.trim());
+    if(logicalSource.length!==2||logicalSource.some(t=>!t))
+      throw Error("Logical authorial source is missing");
+    const words=logicalSource;
+    // PDF's canvas is left-to-right coordinate order even when the font
+    // supplies right-to-left glyphs. This is an experimental shaping test.
+    page.drawText(words[0],{x:150,y:735,size:26,font,color:PDFLib.rgb(0,0,0)});
+    page.drawText(words[1],{x:150,y:690,size:26,font,color:PDFLib.rgb(0,0,0)});
+    page.drawText("1",{x:115,y:707,size:9,font:helv});
+    page.drawLine({start:{x:70,y:110},end:{x:525,y:110},thickness:.6});
+    page.drawText("1. "+document.querySelector("[data-note-body]").textContent.trim(),
+      {x:75,y:88,size:9,font:helv,color:PDFLib.rgb(0,0,0)});
+    page.drawText("Experimental selectable Arabic Unicode / NOT A RELEASE",
+      {x:75,y:820,size:8,font:helv});
+    const bytes=await pdf.save({useObjectStreams:false});
+    if(bytes.length<3000||String.fromCharCode(...bytes.slice(0,5))!=="%PDF-")
+      throw Error("The browser returned invalid PDF bytes");
+    return {bytes,blob:new Blob([bytes],{type:"application/pdf"}),wordSources:words};
+  },
+  async download(){
+    const result=await this.generate();
+    const url=URL.createObjectURL(result.blob);
+    const a=document.createElement("a");
+    a.href=url;a.download="daruri-browser-original-arabic-experimental.pdf";
+    document.body.append(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),45000);
+    document.getElementById("status").textContent=
+     "Created "+result.bytes.length+" PDF bytes directly in this browser; text search remains under test.";
+    return {bytes:result.bytes.length,source:result.wordSources};
+  }
+};
+document.getElementById("create").addEventListener("click",()=>{
+  window.GnammaBrowserArabicPdf.download().catch(e=>
+    document.getElementById("status").textContent="Generation failed: "+e.message);
+});
+</script>
+</body>
+</html>
