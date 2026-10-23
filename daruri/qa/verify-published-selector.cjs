@@ -39,7 +39,7 @@ for(const required of ['Book PDF','Study Guide','Offline reader','Research files
   'id="gn-es-prepare"','data-es-action="download"','data-daruri-bundle="html"',
   'id="pe-dates"','id="pe-annotations"','id="pe-picker"',
   'id="pe-generate"','id="pe-result"','data-es-action="open"',
-  'data-es-stage1-create','dynamic-editions.html?','autostart'
+  'data-es-stage1-create','dynamic-editions.html?','autostart',
   'loadPersonalTools(mounted)','gnamma-personal-export-ready',
   'No approved edition matches this exact combination','word']){
   if(required==='word')continue;
