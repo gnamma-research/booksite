@@ -98,9 +98,9 @@ function enhance(node){
   node.append(createDisclosure(id,null));
  }
  if(/^QUR-R\d+-Q\d+$/.test(id)&&node.dataset.gnRelatedHadithEnhanced!=='1'){
-  node.dataset.gnRelatedHadithEnhanced='1';
   const links=window.GnammaHadithAnchorMap?.quranRelated?.[id]||[];
   if(!links.length)return;
+  node.dataset.gnRelatedHadithEnhanced='1';
   const related=mk('section','gn-hadith-in-quran-note');
   related.dataset.relatedHadithTo=id;
   for(const record of links){
@@ -113,6 +113,7 @@ function enhance(node){
  }
 }
 function scan(root){if(root.nodeType!==1&&root.nodeType!==9)return;if(root.matches)enhance(root);root.querySelectorAll?.('.gn-note-entry[data-note-id]').forEach(enhance);}
+window.GnammaHadithContextRescan=()=>scan(document);
 function start(){scan(document);const watch=new MutationObserver(changes=>{for(const rec of changes)for(const n of rec.addedNodes)scan(n);});watch.observe(document.body,{subtree:true,childList:true});}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
 })();
