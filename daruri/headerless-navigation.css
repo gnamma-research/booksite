@@ -409,3 +409,19 @@
    --gn-scholar-tile:44px;
  }
 }
+
+/* Scholar's Compact Focus regression: prior Focus-only rule hides the entire
+   Contents launcher GROUP. Keep the approved circular opener present at every
+   reading level. Using an explicit focus selector outranks the historical
+   body.reading-active.focus-mode... rule without changing the bottom dock. */
+@media screen {
+  body.reader-enhanced.reading-active.focus-mode #readingControls:not([hidden]) .gn-reader-global-leading {
+    display:flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+  body.reader-enhanced.reading-active.focus-mode #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn.gn-top-tile {
+    display:inline-flex!important;
+    visibility:visible!important;
+  }
+}
