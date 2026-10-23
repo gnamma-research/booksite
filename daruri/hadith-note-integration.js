@@ -79,10 +79,19 @@ function simplifySourceLinks(noteId,card,rec){
  if(body.dataset.gnHadithCompact==='1')return;
  const refs=(window.GnammaHadithContextData?.notes[noteId]?.refs||[])
  .map(key=>window.GnammaHadithContextData?.sources[key]).filter(Boolean);
+ const inherited=[...body.querySelectorAll('a[href]')].map(link=>({
+  url:link.href,label:link.closest('.gn-source-citation')?.querySelector('.gn-source-label')?.textContent||link.textContent.trim()
+ })).filter(ref=>/^https:\/\//.test(ref.url));
  const metadata=document.createElement('span');metadata.className='gn-short-source-refs';
  const label=document.createElement('span');label.className='gn-short-source-label';label.textContent=refs.length?'In ':'Source not securely identified';
  metadata.append(label);
  refs.forEach((ref,i)=>{if(i)metadata.append(document.createTextNode(' · '));const a=document.createElement('a');a.href=ref.url;a.textContent=ref.sourceLabel||ref.collection+' '+ref.number;a.target='_blank';a.rel='noopener noreferrer';a.dataset.gnSourceIcon='1';a.className='gn-source-simple-link';metadata.append(a);});
+ for(const old of inherited){
+  if(refs.some(ref=>ref.url===old.url))continue;
+  metadata.append(document.createTextNode(' · '));
+  const a=document.createElement('a');a.href=old.url;a.textContent=old.label||new URL(old.url).hostname;
+  a.target='_blank';a.rel='noopener noreferrer';a.dataset.gnSourceIcon='1';a.className='gn-source-simple-link';metadata.append(a);
+ }
  body.replaceChildren(metadata);body.dataset.gnHadithCompact='1';
  if(window.GnammaHadithContextData?.notes[noteId]?.unresolved){
   const warning=document.createElement('span');warning.className='gn-hadith-compact-qualification';warning.textContent=' · Source identification or transmission has qualifications.';body.append(warning);
@@ -97,7 +106,7 @@ function decorateHeadings(card){
   const title=document.createElement(phrase?'bdi':'span');title.className='gn-source-heading-primary'+(phrase?' gn-source-heading-ar':'');
   title.textContent=phrase||meta.title;
   if(phrase){title.lang='ar';title.dir='rtl';}
-  const sub=document.createElement('span');sub.className='gn-source-heading-sub';sub.textContent=phrase?meta.title:'Hadith source';
+  const sub=document.createElement('span');sub.className='gn-source-heading-sub';sub.textContent=phrase?'Hadith source · '+meta.title:'Hadith source';
   const technical=document.createElement('small');technical.className='gn-note-id gn-quiet-note-id';technical.textContent=id;
   h.replaceChildren(title,sub,technical);card.dataset.gnCompactHeading='1';
   simplifySourceLinks(id,card,meta);
@@ -111,8 +120,9 @@ function decorateHeadings(card){
    const verse=data.verses?.[first]||data.verses?.[ref?.verses?.[0]];
    if(!verse?.ar){card.dataset.gnCompactHeading='0';return;}
    const title=document.createElement('bdi');title.className='gn-source-heading-primary gn-source-heading-ar';title.lang='ar';title.dir='rtl';title.textContent=verse.ar;
-   const subtitle=document.createElement('span');subtitle.className='gn-source-heading-sub';subtitle.textContent='Qurʾān source · '+ref.label;
-   const technical=document.createElement('small');technical.className='gn-note-id gn-quiet-note-id';technical.textContent=id;
+   const subtitle=document.createElement('span');subtitle.className='gn-source-heading-sub';subtitle.textContent='Qur’an source · '+ref.label;
+   const local=(h.textContent.match(/Q\d+/)||[])[0]||'';
+   const technical=document.createElement('small');technical.className='gn-note-id gn-quiet-note-id';technical.textContent=(local?local+' · ':'')+id;
    h.replaceChildren(title,subtitle,technical);card.dataset.gnCompactHeading='1';
   }).catch(()=>{card.dataset.gnCompactHeading='0';});
  }
