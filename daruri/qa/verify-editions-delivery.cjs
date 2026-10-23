@@ -19,7 +19,16 @@ for(const [name,code] of [['selector',selector],['bundler',bundle],['personal-ex
 assert(selector.includes('data-es-action="download"'),'Direct published PDF download exists');
 assert(selector.includes("download.href=open.getAttribute('href')"),'PDF download uses selected View PDF URL');
 assert(selector.includes('data-es-action="download"'),'User chooses final PDF download');
-assert(selector.includes('download.hidden=isPersonal||!ready'),'Invalid PDFs cannot be downloaded');
+assert(selector.includes('download.hidden=!showPublic||viewOnly'),
+  'Downloads must stay hidden for personal/unavailable PDFs and Apple preview devices');
+assert(selector.includes("open.classList.toggle('gn-es-action-primary',viewOnly)"),
+  'Apple touch PDFs must have one prominent View PDF action');
+assert(selector.includes("viewOnly?'View PDF':'View in browser'"),
+  'Desktop preview must be explicitly labelled View in browser');
+assert(selector.includes('data-es-ios-save-help'),
+  'iPhone/iPad must explain Share → Save to Files');
+assert(selector.includes("navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1"),
+  'iPad desktop-style user agents must get preview-first UI');
 assert(selector.includes("response.body?.getReader"),'Real network progress, not fabricated animation');
 assert(selector.includes("preparation.controller.abort()"),'Obsolete requests must be cancelled');
 assert(selector.includes("availability.hidden=result.status==='ready'"),
