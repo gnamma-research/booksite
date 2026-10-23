@@ -105,3 +105,29 @@ body.focus-mode #mainContent .gn-hadith-inline-marker{
 .gn-related-hadith-caption{font:400 12px/1.6 var(--serif,Georgia,serif);color:var(--text-soft,var(--muted));margin:0 0 8px}
 @media(max-width:560px){.gn-scholar-ayah-title{font-size:1.25rem}}
 @media print{.gn-hadith-in-quran-note,.gn-hadith-context{break-inside:avoid}}
+
+/* Compact source citation: one linked heading, not repeated in the note body.
+   Plain text bibliographic details remain accessible in every reader palette. */
+.gn-hadith-report-heading .gn-hadith-heading-link{
+ color:var(--accent,currentColor);font:inherit;font-weight:inherit;
+ text-decoration:underline;text-underline-offset:.18em;
+ text-decoration-color:var(--line,var(--accent,currentColor));
+ overflow-wrap:anywhere;
+}
+.gn-hadith-report-heading .gn-hadith-heading-link:hover{
+ text-decoration-color:var(--accent,currentColor);
+ background:var(--accent-soft,transparent);
+}
+.gn-hadith-report-heading .gn-hadith-heading-link:focus-visible{
+ outline:2px solid var(--accent,currentColor);outline-offset:3px;border-radius:2px;
+}
+.gn-hadith-external-mark{font:400 .76em/1 var(--sans,system-ui,sans-serif);white-space:nowrap}
+.gn-hadith-biblio{font:400 .82rem/1.6 var(--sans,system-ui,sans-serif);
+ color:var(--muted,var(--text-secondary,inherit));margin:2px 0 11px;overflow-wrap:anywhere}
+.gn-hadith-biblio-item,.gn-hadith-biblio-ar{display:inline;unicode-bidi:isolate}
+.gn-hadith-biblio-label{font-weight:550}
+.gn-hadith-distinct-sources{font:400 .8rem/1.6 var(--sans,system-ui,sans-serif);
+ color:var(--muted,var(--text-secondary,inherit));margin:10px 0 4px}
+.gn-hadith-distinct-sources a{color:var(--accent,currentColor);
+ text-decoration:underline;text-underline-offset:3px}
+.gn-hadith-distinct-sources a:focus-visible{outline:2px solid var(--accent,currentColor);outline-offset:3px}
