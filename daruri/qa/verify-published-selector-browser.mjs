@@ -261,7 +261,7 @@ try{
     assert.equal((await appleView.locator('span').textContent()).trim(),'View PDF');
     assert.ok((await appleView.getAttribute('class')).includes('gn-es-action-primary'),
       'View PDF must be the one prominent iPhone button');
-    assert.match(await appleView.getAttribute('href'),/reading\\/daruri-reading-bilingual-titles-off\\.pdf\\?v=[a-f0-9]+/);
+    assert.match(await appleView.getAttribute('href'),/reading\/daruri-reading-bilingual-titles-off\.pdf\?v=[a-f0-9]+/);
     assert.equal(await appleView.getAttribute('download'),null);
     assert.equal(await appleUI.locator('[data-es-ios-save-help]').isVisible(),true);
     assert.match(await appleUI.locator('[data-es-ios-save-help]').textContent(),
