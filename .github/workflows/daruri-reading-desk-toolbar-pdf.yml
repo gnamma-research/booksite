@@ -45,12 +45,12 @@ jobs:
           node --check daruri/download-bundle.js
           node --check daruri/qa/verify-reading-desk-toolbar-pdf.cjs
           grep -q 'reading-desk-pdf.js?v=20261021-rdiconpdf1' daruri/sw.js
-          grep -q 'reading-desk.js?v=20261023-rd-ux1-personal-icons' daruri/index.html
+          grep -q 'reading-desk.js?v=20261023-transfer-release2' daruri/index.html
           grep -q 'reading-desk.css?v=20261023-rd-ux1-personal-icons' daruri/index.html
           grep -q 'daruri/reading-desk-pdf.js' daruri/download-bundle.js
-          grep -q 'reading-desk.js?v=20261023-rd-ux1-personal-icons' daruri/sw.js
+          grep -q 'reading-desk.js?v=20261023-transfer-release2' daruri/sw.js
           grep -q 'reading-desk.css?v=20261023-rd-ux1-personal-icons' daruri/sw.js
-          grep -q 'reading-desk.js?v=20261023-rd-ux1-personal-icons' daruri/download-bundle.js
+          grep -q 'reading-desk.js?v=20261023-transfer-release2' daruri/download-bundle.js
           grep -q 'reading-desk.css?v=20261023-rd-ux1-personal-icons' daruri/download-bundle.js
       - name: Install pinned browser and PDF validators
         run: |
