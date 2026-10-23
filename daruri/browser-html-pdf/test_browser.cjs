@@ -77,7 +77,9 @@ async function ready(){
   assert.equal(fs.readFileSync(pdf).subarray(0,5).toString(),'%PDF-');
   assert(fs.statSync(pdf).size>20000);
   assert.equal(status.bytes,fs.statSync(pdf).size);
-  assert.equal(status.no_browser_print_dialog,true);
+  // The browser exporter truthfully sets no_print_dialog; the test's old
+  // no_browser_print_dialog spelling falsely failed every real PDF download.
+  assert.equal(status.no_print_dialog,true);
   assert.equal(status.no_cdp_print_to_pdf,true);
   assert.equal(status.no_server_pdf_generation,true);
   const external=requests.filter(r=>r.url.startsWith('https:')||
