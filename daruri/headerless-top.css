@@ -1,0 +1,95 @@
+/* Daruri approved 23 Oct 2026: one compact reading control row, no duplicate title header.
+   Top-only changes; bottom section picker/dock/Reading Desk are intentionally untouched. */
+@media screen {
+  /* The book-opening/Home route retains its complete English/Arabic title. */
+  body.reading-active > .topbar,
+  body.reading-active .topbar {display:none!important}
+  body.reading-active #readingControls:not([hidden]){
+    top:0!important;
+    position:sticky!important;
+    z-index:55;
+  }
+  /* The old inline --header-height value must not reserve invisible space. */
+  :root:has(body.reading-active){--header-height:0px!important}
+
+  /* Keep the original 44px touch target; only replace its hamburger artwork. */
+  #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn{
+    box-sizing:border-box!important;
+    flex:0 0 44px!important;
+    width:44px!important;min-width:44px!important;max-width:44px!important;
+    height:44px!important;min-height:44px!important;
+    display:inline-flex!important;
+    align-items:center!important;justify-content:center!important;
+    padding:3px!important;
+    margin:0!important;
+    background:transparent!important;
+    border:1px solid transparent!important;
+    border-radius:50%!important;
+    color:var(--text)!important;
+    touch-action:manipulation;
+  }
+  #readingControls #menuBtn .gn-daruri-tile,
+  #fallbackReader .fb-topbar .gn-daruri-tile{
+    display:block;width:36px;height:36px;
+    max-width:100%;max-height:100%;
+    object-fit:contain;flex:none;
+    border-radius:50%;
+    background:var(--paper,#f4f0e8);
+    box-shadow:0 0 0 1px var(--line,rgba(80,60,35,.2));
+  }
+  #readingControls #menuBtn:is(:hover,:focus-visible){
+    background:var(--accent-soft)!important;
+    border-color:var(--accent)!important;
+  }
+  #readingControls #menuBtn:focus-visible{
+    outline:2px solid var(--accent)!important;
+    outline-offset:2px!important;
+  }
+  /* Preserve keyboard/disclosure behaviour without a second hamburger. */
+  #readingControls:not([hidden]) .gn-reader-global-leading{align-items:center!important}
+
+  /* The Contents pane identifies the work, not the platform or its icon. */
+  #leftNav .gn-sidebar-book-title,
+  #fallbackReader .fb-left-panel .gn-sidebar-book-title{
+    display:flex;flex-direction:column;align-items:flex-start;gap:1px;
+    margin:2px 0 0!important;
+    line-height:normal!important;
+    overflow:visible!important;
+  }
+  #leftNav .gn-sidebar-title-ar,
+  #fallbackReader .gn-sidebar-title-ar{
+    display:block;
+    font-family:var(--arabic,'Amiri','Noto Naskh Arabic',serif);
+    font-size:clamp(23px,2vw,27px);font-weight:500;line-height:1.65;
+    color:var(--text);text-align:start;
+    max-width:100%;white-space:nowrap;
+  }
+  #leftNav .gn-sidebar-title-author,
+  #fallbackReader .gn-sidebar-title-author{
+    display:block;font:500 12px/1.5 var(--sans,system-ui,sans-serif);
+    letter-spacing:.055em;color:var(--text-soft);white-space:nowrap;
+  }
+  #leftNav .nav-heading,
+  #fallbackReader .fb-panel-heading{align-items:flex-start;min-height:60px}
+
+  /* No-JS fallback: keep the native Contents opener and native reading controls;
+     omit the repeated title strip, which is on the Home page and in the pane. */
+  #fallbackReader .fb-topbar .fb-work-brand{display:none!important}
+  #fallbackReader .fb-topbar{min-height:48px!important;height:48px!important;padding-block:2px!important}
+  #fallbackReader .fb-topbar .fb-icon-button{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:44px!important;min-height:44px!important;padding:3px!important;
+  }
+  #fallbackReader .fb-topbar .fb-icon-button .gn-daruri-tile{width:35px;height:35px}
+}
+@media screen and (max-width:380px){
+ #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn{
+   flex-basis:40px!important;width:40px!important;min-width:40px!important;
+   max-width:40px!important;min-height:44px!important;height:44px!important
+ }
+ #readingControls #menuBtn .gn-daruri-tile{width:34px;height:34px}
+ #leftNav .gn-sidebar-title-ar,#fallbackReader .gn-sidebar-title-ar{font-size:23px}
+}
+@media print{
+ #readingControls #menuBtn .gn-daruri-tile,#fallbackReader .fb-topbar .gn-daruri-tile{display:none!important}
+}
