@@ -138,7 +138,8 @@ function test(name,fn){return fn().then(()=>{pass++;console.log('PASS '+name)}).
    assert.equal(width.overflow,false);
    await mobile.locator('[data-gns-expand="1"]').first().click();
    assert.equal(await mobile.locator('#gns-mode').count(),1);
-   await mobile.locator('#gns-display').selectOption('concordance');
+   await mobile.locator('.gns-extra-tools > summary').click();
+    await mobile.locator('#gns-display').selectOption('concordance');
    assert.ok(await mobile.locator('.gns-kwic').count()>0);
  });
  await test('no fatal JavaScript errors from search implementation',async()=>{
