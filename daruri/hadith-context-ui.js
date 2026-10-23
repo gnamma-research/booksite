@@ -97,6 +97,21 @@ function render(id,host,cor,selected){host.replaceChildren();const n=cor.data.no
   (selected?.length?selected:n.refs).forEach((key,i)=>{const cite=cor.data.sources[key];if(cite)host.append(reportCard(key,cite,cor.reports[key]||{},i,cor.english[key]));});
   if(!selected?.length)appendDistinctReferences(id,host,cor);
   if(cor.failed)host.append(mk('p','gn-hadith-unresolved','Some local report assets did not load. Use their external source links above.'));
+  // Long reports share the parent notes' single scroll container. Offer a short
+  // return path after the last report, without another nested scrolling panel.
+  const summary=mk('button','gn-hadith-return-summary','↑ Back to note summary');
+  summary.type='button';
+  summary.addEventListener('click',()=>{
+    const scroller=summary.closest('.gn-layer-scroll');
+    const entry=summary.closest('.gn-note-entry');
+    const heading=entry?.querySelector(':scope > h3')||entry;
+    if(!scroller||!heading)return;
+    const offset=heading.getBoundingClientRect().top-scroller.getBoundingClientRect().top;
+    scroller.scrollTop=Math.max(0,scroller.scrollTop+offset-12);
+    if(!heading.hasAttribute('tabindex'))heading.setAttribute('tabindex','-1');
+    heading.focus({preventScroll:true});
+  });
+  host.append(summary);
 }
 function polishNote(node,id){
  if(node.dataset.gnScholarlyPolished==='1')return;

@@ -316,6 +316,10 @@ function assertOfflineAsset() {
     if (String(section.id) === '1') await new Promise(resolve => w.queueMicrotask(resolve));
     assert.equal(w.location.hash, hash, 'Opening Notes preserves route');
     assert.equal(w.scrollY, 360 + index, 'Opening Notes preserves reader scroll');
+    assert.equal(d.body.style.position,'fixed','Shared Notes popups lock underlying book scrolling');
+    assert.equal(d.body.style.top,'-'+(360+index)+'px','Locked book remains at exact reading position');
+    assert.equal(d.documentElement.style.overflow,'hidden','Root viewport is locked for touch devices');
+    assert.equal(w.GnammaPopupScroll?.isLocked(),true,'One shared modal lock is acquired');
     assertCard(d, section, relevant);
     relevant.forEach(note => visited.add(note.id));
     assert.equal(d.activeElement, d.querySelector('#gn-scholar-layer button[data-gn-close]'), 'Opening Notes focuses its close control');
@@ -336,6 +340,9 @@ function assertOfflineAsset() {
     assert.equal(d.activeElement, trigger, 'Closing Notes restores the originating Notes link');
     assert.equal(w.location.hash, hash, 'Closing Notes preserves route');
     assert.equal(w.scrollY, 360 + index, 'Closing Notes preserves reader scroll');
+    assert.equal(d.body.style.position,'','Closing Notes releases fixed background');
+    assert.equal(d.documentElement.style.overflow,'','Closing Notes restores root scrolling');
+    assert.equal(w.GnammaPopupScroll?.isLocked(),false,'No stale modal lock after close');
     assertUniqueIDs(d, 'Reader section ' + section.id);
     noteCards++;
     if ((index + 1) % 65 === 0) console.log('Checked ' + (index + 1) + ' of 259 reader sections.');
