@@ -77,14 +77,41 @@ function splitOriginalIntoLines(text,kitFont,size){
  return lines;
 }
 
+// Research: whole-line ToUnicode CID mappings longer than 32 source scalars
+// were empirically unreadable in native MuPDF 1.26.7. Split only the INVISIBLE
+// semantic layer at original Unicode grapheme boundaries; never alter the
+// original source, normal HTML, visible Arabic vector paths or vowel ordering.
+// Multiple semantic chunks for a line stay in ORIGINAL LOGICAL READING ORDER.
+// This does not certify native per-word hitboxes or other PDF readers.
+const SEMANTIC_CID_MAX=28;
+const graphemes=new Intl.Segmenter('ar',{granularity:'grapheme'});
+function semanticChunks(phrase){
+ const pieces=Array.from(graphemes.segment(phrase),record=>record.segment);
+ const chunks=[];let part='';
+ for(const piece of pieces){
+  if(Array.from(piece).length>SEMANTIC_CID_MAX)
+   throw Error('Unexpected 28-scalar original Arabic grapheme');
+  if(part&&Array.from(part+piece).length>SEMANTIC_CID_MAX){
+   chunks.push(part);part='';
+  }
+  part+=piece;
+ }
+ if(part)chunks.push(part);
+ if(!chunks.length||chunks.join('')!==phrase||
+    chunks.some(c=>Array.from(c).length>SEMANTIC_CID_MAX))
+   throw Error('Semantic Unicode chunks changed the original Arabic');
+ return chunks;
+}
+
 function signedArabicFont(pdf,kit,fontBytes,phrases){
   // Same CIDFontType2 / CIDToGIDMap principle as Gnamma's tested personal
   // appendix exporter. A separate phrase-atomic A/B keeps all original
   // vowel marks together in a single ToUnicode mapping, while the glyphs
   // remain independently painted as vector paths (never duplicate text).
   const parsed=kit.create(fontBytes);
-  const units=logicalOrder==='phrase'?[...new Set(phrases)]
-    :[...new Set([...phrases.join('')])];
+  const units=[...new Set(phrases.flatMap(semanticChunks))];
+  if(units.some(c=>Array.from(c).length>SEMANTIC_CID_MAX))
+   throw Error('Invalid original Unicode CID chunk');
   if(units.length>=65534)throw Error('CID Unicode set too large');
   const codes=new Map(),gid=new Uint8Array((units.length+1)*2);
   for(let i=0;i<units.length;i++){
@@ -201,40 +228,29 @@ function drawSourceGlyphs(page,kitFont,phrase,x,y,size){
 }
 
 function drawOnlyOriginalUnicode(page,font,phrase,x,y,size,visibleWidth){
-  // PDFKit indexes reversed scalar order for Arabic shaped RTL; the forward
-  // control is independently generated in CI, rather than assumed correct.
-  // Preserve the source's base+harakat grapheme associations. Reversing
-  // scalars alone moves the final diacritic to the start of each PDF word.
-  // This third, genuinely different test compares source-grapheme reversal
-  // against the earlier forward and scalar-reversed control PDFs.
-  const sequenced=logicalOrder==='grapheme'
-    ?Array.from(new Intl.Segmenter('ar',{granularity:'grapheme'}).segment(phrase),
-      part=>part.segment).reverse().join('')
-    :logicalOrder==='reverse'?Array.from(phrase).reverse().join(''):phrase;
-  // A phrase-atomic ToUnicode CID prevents a native RTL extractor from
-  // moving one word's final haraka to the beginning of another. This is
-  // a research trade-off: per-word selection is not yet certified.
-  const cps=logicalOrder==='phrase'?[phrase]:Array.from(sequenced);
-  const encoded=cps.map(ch=>{
-    const code=font.codes.get(ch);
-    if(!code)throw Error('Unicode layer dropped scalar '+ch.codePointAt(0).toString(16));
-    return code.toString(16).padStart(4,'0');
-  }).join('');
-  const nativeWidth=cps.length*size*.5;
-  const hz=Math.min(logicalOrder==='phrase'?2500:150,
-    Math.max(20,100*visibleWidth/nativeWidth));
+ const chunks=semanticChunks(phrase);
+ // One zero-painted original Unicode glyph for every <=28-scalar source
+ // grapheme chunk. Repeated Tm positions are an experiment specifically
+ // designed to preserve MuPDF logical order across its CID expansion limit.
+ // Hitboxes DO NOT reliably follow the individual visible words here.
+ const drift=chunks.length<=1?0:Math.min(1.5,5/Math.max(1,chunks.length-1));
+ for(let index=0;index<chunks.length;index++){
+  const chunk=chunks[index],code=font.codes.get(chunk);
+  if(!code)throw Error('Original source CID chunk absent from signed font');
   page.pushOperators(
     PDFOperator.of('BT'),
     PDFOperator.of('Tf',[PDFName.of('GNOriginal'),PDFNumber.of(size)]),
     PDFOperator.of('Tr',[PDFNumber.of(3)]),
-    PDFOperator.of('Tz',[PDFNumber.of(hz)]),
+    PDFOperator.of('Tz',[PDFNumber.of(100)]),
     PDFOperator.of('Tm',[
       PDFNumber.of(1),PDFNumber.of(0),PDFNumber.of(0),PDFNumber.of(1),
-      PDFNumber.of(x),PDFNumber.of(y)]),
-    PDFOperator.of('Tj',[PDFHexString.of(encoded)]),
+      PDFNumber.of(x+index*drift),PDFNumber.of(y)]),
+    PDFOperator.of('Tj',[PDFHexString.of(code.toString(16).padStart(4,'0'))]),
     PDFOperator.of('ET')
   );
-  return {cid_count:cps.length,horizontal_scale_percent:hz};
+ }
+ return {cid_count:chunks.length,horizontal_scale_percent:100,
+  semantic_chunk_limit:SEMANTIC_CID_MAX,individual_word_hitboxes_verified:false};
 }
 
 async function generate(){
@@ -362,7 +378,10 @@ async function generate(){
     full_authorial_english_translations_represented:false,
     actual_publisher_study_notes_represented:false,
     exact_original_page_layout_certified:false,
-    one_exact_unicode_cid_per_line:true,
+    one_exact_unicode_cid_per_line:false,
+    one_exact_unicode_layer_per_line:true,
+    semantic_chunk_limit:SEMANTIC_CID_MAX,
+    source_chunk_reconstruction_guaranteed:true,
     word_level_selection_certified:false,
     original_published_pdf_inputs:0,server_pdf_generation:false,
     printed_pdf_dialog:false,production_approved:false
