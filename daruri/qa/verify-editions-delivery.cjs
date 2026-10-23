@@ -104,6 +104,25 @@ for(const row of stage1.profiles){
 }
 assert(!htmlNames.some(n=>n.startsWith('daruri/dynamic-pdf/packets/')),
   'Smaller HTML-only package must not include all 120 signed PDF maps');
+const onDeviceHtml=get('dynamic-editions.html');
+const onDeviceClient=get('dynamic-pdf/client.js');
+const onDeviceWorker=get('dynamic-pdf/assemble.worker.js');
+for(const file of [
+  'dynamic-editions.html','dynamic-pdf/client.js','dynamic-pdf/core.js',
+  'dynamic-pdf/design-catalog.js','dynamic-pdf/assemble.worker.js']){
+  assert(sw.includes(file+'?v=20261023-stage1'),
+    'Offline worker must pre-cache the published browser generator: '+file);
+}
+assert(html.includes('sw.js?v=20261023-stage1'),
+  'The current reader must register this Stage1 cache revision');
+assert(html.includes('editions-selector.js?v=20261023-stage1'),
+  'The current reader must actually load the generation-first selector');
+assert(onDeviceHtml.includes('dynamic-pdf/client.js?v=20261023-stage1'));
+assert(onDeviceHtml.includes('dynamic-pdf/core.js?v=20261023-stage1'));
+assert(onDeviceHtml.includes('dynamic-pdf/design-catalog.js?v=20261023-stage1'));
+assert(onDeviceClient.includes('assemble.worker.js?v=20261023-stage1'));
+assert(onDeviceWorker.includes('core.js?v=20261023-stage1'));
+
 
 for(const [name,uri] of manifests.html.files){
  const relative=new URL(uri,'https://example.org/booksite/daruri/').pathname
