@@ -1,7 +1,7 @@
 /* Daruri Editions: two reader-facing tabs, with Reading/Study profiles under
    one tab and canonical scholarly Reference under the other.
-   Every PDF resolves to a SHA-verified prebuilt file. Personal content is
-   exported by the existing PDF engine, mounted inline and never uploaded. */
+   Clean/Reference PDFs are SHA-verified; scholarly apparatus editions are
+   composed on-device from a source, packet and signed link maps. Personal data stays private. */
 (() => {
   'use strict';
   if(!window.GnammaEditions||window.GnammaEditions.__publishedSelector)return;
@@ -148,7 +148,7 @@
             '<div class="gn-es-setting-body"><div class="gn-es-includes">'+
               apparatus('glossary','Glossary')+apparatus('index','Full index')+
               apparatus('applications','Applications')+apparatus('concordance','Concordance')+
-            '</div><p class="gn-es-inline-note">Study editions already include a basic index. Options resolve only to exact published PDFs.</p></div></div>'+
+            '</div><p class="gn-es-inline-note">Study editions include a basic index. Additional scholarly apparatus is composed privately on this device.</p></div></div>'+
         '</div>'+
         '<div class="gn-es-reference-inventory" data-es-reference-inventory hidden>'+
           '<p class="gn-es-field-title">Included in scholarly Reference</p>'+
@@ -208,7 +208,7 @@
             '<a class="gn-es-action gn-es-action-primary" data-es-action="download" download hidden>Download PDF</a>'+
             '<a class="gn-es-action gn-es-action-secondary" data-es-action="open" aria-label="View the selected PDF in your browser" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>View in browser</span></a>'+
             // STAGING ONLY: confirm that the selected approved variant can be created locally.
-            '<a class="gn-es-action gn-es-action-secondary" data-es-stage1-create hidden>Create selected PDF on this device (test)</a>'+
+            '<a class="gn-es-action gn-es-action-primary" data-es-stage1-create hidden>Create PDF on this device</a>'+
             '<button class="gn-es-action gn-es-action-primary" type="submit" id="pe-generate" hidden disabled>Create my PDF</button>'+
           '</div>'+
           '<p class="gn-es-ios-save-help" data-es-ios-save-help hidden>To save a copy on iPhone or iPad, open the PDF, then use Share → Save to Files.</p>'+
@@ -302,7 +302,7 @@
         x.scope==='full'&&x.layout==='parallel'&&x.density==='standard')||null;
     }
     if(reply.record){reply.status='ready';return reply;}
-    reply.reason='No published PDF matches this exact combination. Choose a preset or change an option.';
+    reply.reason='No approved edition matches this exact combination. Choose a preset or change an option.';
     return reply;
   }
   function publicFile(result){
@@ -489,7 +489,8 @@
       ' · Highlights: '+(root.querySelector('#pe-highlights').checked?'On':'Off');
     root.querySelector('[data-es-spec-apparatus]').textContent='Apparatus: '+apparatusLabel(s);
     root.querySelector('[data-es-count]').textContent=result.status==='ready'?
-      result.record.pages+' pages · '+Math.round(Number(result.record.bytes||result.record.size_bytes||0)/1024)+' KB':'';
+      result.record.pages+' pages'+(String(result.record.file||'').startsWith('apparatus/')?' · created on your device':
+       ' · '+Math.round(Number(result.record.bytes||result.record.size_bytes||0)/1024)+' KB'):'';
     const msg=root.querySelector('[data-es-availability-heading]');
     const detail=root.querySelector('[data-es-availability-detail]');
     const availability=root.querySelector('.gn-es-availability');
@@ -503,26 +504,38 @@
     selectedFile=pdfFile;
     const mapReady=result.status==='ready'&&(
       tier==='reference'||Boolean(result.record.map_file));
-    if(result.status==='ready'){
-      link.href=(tier==='reference'?'daruri.pdf':'editions/'+result.record.file)+
-        '?v='+encodeURIComponent((result.record.sha256||'published').slice(0,12));
-    }else link.removeAttribute('href');
-    link.setAttribute('aria-disabled',String(result.status!=='ready'));
-    if(personalReady)syncExport(mapReady?pdfFile:'');
-    // Only approved apparatus profiles enter the staged local composer;
-    // clean base editions and independent Reference PDF retain ordinary links.
+    const composed=result.status==='ready'&&tier!=='reference'&&
+      String(result.record?.file||'').startsWith('apparatus/');
     const localCreate=root.querySelector('[data-es-stage1-create]');
-    if(localCreate){
-      const eligible=result.status==='ready'&&!isPersonal&&tier!=='reference'&&
-        String(result.record?.file||'').startsWith('apparatus/');
-      localCreate.hidden=!eligible;
-      if(eligible)localCreate.href='dynamic-editions.html?profile='+encodeURIComponent(result.record.file);
-      else localCreate.removeAttribute('href');
-    }
-    syncPreparation(result,isPersonal,pdfFile);
-    const openVisible=!isPersonal;
     const generated=root.querySelector('#pe-generate');
-    generated.hidden=openVisible;
+    if(composed){
+      // This entry describes a signed generation recipe, not a stored PDF.
+      clearPreparation('local:'+result.record.file);
+      link.hidden=true;link.removeAttribute('href');link.setAttribute('aria-disabled','true');
+      const download=root.querySelector('[data-es-action="download"]');
+      download.hidden=true;download.removeAttribute('href');
+      root.querySelector('#gn-es-prepare').hidden=true;
+      root.querySelector('#gn-es-prepare-status').hidden=true;
+      root.querySelector('[data-es-ios-save-help]').hidden=true;
+      localCreate.hidden=false;
+      const params=new URLSearchParams({profile:result.record.file,
+        autostart:isPersonal?'personal':'plain'});
+      localCreate.href='dynamic-editions.html?'+params;
+      localCreate.textContent=isPersonal?
+        'Create PDF with my Reading Desk on this device':'Create PDF on this device';
+      generated.hidden=true;generated.disabled=true;
+      if(personalReady)syncExport('');
+    }else{
+      localCreate.hidden=true;localCreate.removeAttribute('href');
+      if(result.status==='ready'){
+        link.href=(tier==='reference'?'daruri.pdf':'editions/'+result.record.file)+
+          '?v='+encodeURIComponent((result.record.sha256||'published').slice(0,12));
+      }else link.removeAttribute('href');
+      link.setAttribute('aria-disabled',String(result.status!=='ready'));
+      if(personalReady)syncExport(mapReady?pdfFile:'');
+      syncPreparation(result,isPersonal,pdfFile);
+      generated.hidden=!isPersonal;
+    }
     if(isPersonal&&(!mapReady||!personalReady)){
       generated.disabled=true;
       availability.hidden=false;
