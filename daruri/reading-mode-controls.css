@@ -95,7 +95,7 @@ body.focus-level-3 #readerDock .gn-dock-center>.reader-location{grid-column:auto
   display:block;
   width:84%;
   height:3px;
-  top:-7px;
+  top:-1.5px;
   inset-inline-start:8%;
   border-top:2px solid currentColor;
   border-radius:50% 50% 0 0;
