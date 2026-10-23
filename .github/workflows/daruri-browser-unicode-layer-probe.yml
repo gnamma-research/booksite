@@ -1,0 +1,119 @@
+name: Daruri browser-only Unicode layer experimental A/B (NEVER RELEASE)
+on:
+  push:
+    branches: [experiment/daruri-browser-arabic-unicode-layer-20261023]
+    paths:
+      - 'daruri/browser-html-pdf/unicode_layer_probe.mjs'
+      - 'daruri/browser-html-pdf/browser.mjs'
+      - 'daruri/browser-html-pdf/test_browser.cjs'
+      - 'daruri/browser-html-pdf/package.json'
+      - '.github/workflows/daruri-browser-unicode-layer-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-browser-unicode-qa-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  native-unicode-ab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate canonical 11-phrase original Arabic fixture
+        run: |
+          python daruri/browser-html-pdf/build_fixture.py --out daruri/browser-html-pdf/fixture.json
+      - name: Install exact pinned local Paged Media emitter and Unicode fontkit
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/browser-html-pdf
+          cd daruri/browser-html-pdf
+          if [ '${{ matrix.browser }}' = 'chromium' ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Stage same-origin fallback fonts only to test server (never publish)
+        run: |
+          set -euo pipefail
+          D=daruri/browser-html-pdf/runtime
+          mkdir -p "$D/fonts"
+          FOUND=$(find daruri/browser-html-pdf/node_modules -type d \( -path '*/pages-to-pdf/public/fonts' -o -path '*/vivliostyle-pdf/public/fonts' \) | head -n1)
+          test -n "$FOUND"
+          cp -a "$FOUND"/. "$D/fonts/"
+      - name: Verify browser emitter JavaScript and bundle dependencies
+        run: |
+          node --check daruri/browser-html-pdf/unicode_layer_probe.mjs
+          node --check daruri/browser-html-pdf/browser.mjs
+          node --check daruri/browser-html-pdf/test_browser.cjs
+          npm run build --prefix daruri/browser-html-pdf
+      - name: Generate unchanged baseline entirely in browser
+        env:
+          DARURI_BROWSER_ENGINE: ${{ matrix.browser }}
+          DARURI_BROWSER_MODE: excerpt
+          DARURI_BROWSER_OUTPUT: /tmp/daruri-semantic-${{ matrix.browser }}/baseline
+        run: node daruri/browser-html-pdf/test_browser.cjs
+      - name: Generate fontkit character-level Unicode probe entirely in browser
+        env:
+          DARURI_BROWSER_ENGINE: ${{ matrix.browser }}
+          DARURI_BROWSER_MODE: excerpt
+          DARURI_BROWSER_UNICODE_PROBE: '1'
+          DARURI_BROWSER_OUTPUT: /tmp/daruri-semantic-${{ matrix.browser }}/unicode
+        run: node daruri/browser-html-pdf/test_browser.cjs
+      - name: Native MuPDF source-search and footnote diagnostic for both PDFs
+        run: |
+          python -m pip install -q 'PyMuPDF==1.26.7'
+          for variant in baseline unicode; do
+            python daruri/browser-html-pdf/verify_native.py \
+              --pdf /tmp/daruri-semantic-${{ matrix.browser }}/$variant/daruri-browser-only-excerpt-NONRELEASE.pdf \
+              --fixture daruri/browser-html-pdf/fixture.json \
+              --mode excerpt \
+              --report /tmp/daruri-semantic-${{ matrix.browser }}/$variant/native.json
+          done
+      - name: Reject altered visual pages and surface whether native Unicode search improved
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,fitz
+          base=Path('/tmp/daruri-semantic-${{ matrix.browser }}/baseline')
+          prop=Path('/tmp/daruri-semantic-${{ matrix.browser }}/unicode')
+          name='daruri-browser-only-excerpt-NONRELEASE.pdf'
+          a,b=json.loads((base/'native.json').read_text()),json.loads((prop/'native.json').read_text())
+          with fitz.open(base/name) as old,fitz.open(prop/name) as new:
+            assert len(old)==len(new),'Unapproved pagination shift'
+            assert all(x.get_pixmap(alpha=False).samples==y.get_pixmap(alpha=False).samples
+              for x,y in zip(old,new)),'Invisible Unicode text changed visible page pixels'
+          result={
+            'browser':'${{ matrix.browser }}',
+            'baseline_arabic_two_word':a['arabic_two_word_native_search'],
+            'semantic_arabic_two_word':b['arabic_two_word_native_search'],
+            'source_segments':b['expected_source_passages'],
+            'baseline_note_search':a['source_65_contiguous_native_search_pages'],
+            'semantic_note_search':b['source_65_contiguous_native_search_pages'],
+            'clean_copy_and_duplicate_extraction_still_unverified':True,
+            'visible_pixels_identical':True,
+            'release_approved':False
+          }
+          (prop/'compare.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+          print('BROWSER_ONLY_ARABIC_CID_SEARCH_AB',json.dumps(result))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-browser-semantic-layer-${{ matrix.browser }}-NONRELEASE
+          path: |
+            /tmp/daruri-semantic-${{ matrix.browser }}/baseline/native.json
+            /tmp/daruri-semantic-${{ matrix.browser }}/unicode/native.json
+            /tmp/daruri-semantic-${{ matrix.browser }}/unicode/compare.json
+            /tmp/daruri-semantic-${{ matrix.browser }}/unicode/browser-evidence.json
+          if-no-files-found: warn
+          retention-days: 14
