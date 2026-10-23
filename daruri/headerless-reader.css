@@ -26,7 +26,7 @@
     box-sizing:border-box!important;display:inline-grid!important;
     place-items:center!important;flex:0 0 44px!important;
     width:44px!important;min-width:44px!important;max-width:44px!important;
-    height:44px!important;min-height:44px!important;
+    height:44px!important;min-height:44px!important;max-height:44px!important;
     border:1px solid transparent!important;border-radius:50%!important;
     padding:3px!important;background:transparent!important;
     opacity:1!important;visibility:visible!important;
@@ -59,7 +59,7 @@
     box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;
     justify-content:center!important;flex:0 0 auto!important;
     width:auto!important;min-width:106px!important;max-width:none!important;
-    min-height:40px!important;height:40px!important;
+    min-height:40px!important;height:40px!important;max-height:40px!important;
     gap:7px!important;padding:0 10px!important;
     border:1px solid var(--accent)!important;border-radius:10px!important;
     background:var(--accent-soft)!important;color:var(--accent)!important;
@@ -132,7 +132,7 @@
     box-sizing:border-box!important;display:inline-flex!important;
     justify-content:center!important;align-items:center!important;
     flex:0 0 37px!important;width:37px!important;min-width:37px!important;
-    max-width:37px!important;min-height:40px!important;height:40px!important;
+    max-width:37px!important;min-height:40px!important;height:40px!important;max-height:40px!important;
     padding:6px!important;border:1px solid transparent!important;
     border-radius:9px!important;background:transparent!important;
     color:var(--text-soft)!important;
@@ -202,7 +202,7 @@
   #readingControls .gn-reader-global-leading #menuBtn {
     flex-basis:40px!important;width:40px!important;
     min-width:40px!important;max-width:40px!important;
-    height:42px!important;min-height:42px!important;
+    height:42px!important;min-height:42px!important;max-height:42px!important;
   }
   #readingControls #menuBtn::before {width:34px;height:34px;}
   #readingControls .gn-reader-global-leading {padding-inline-end:2px!important;}
