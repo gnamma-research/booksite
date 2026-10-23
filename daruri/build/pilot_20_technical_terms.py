@@ -55,6 +55,7 @@ def sample(work: str, index: dict, source: dict[str, str],
     observed = {t: set() for t in TERMS}
     probes = {surface: Counter() for surface in PROBES}
     matched_locations = set()
+    shadow_overlays: dict[tuple[str, int], dict] = {}
     for record in index.get("records", []):
         loc = record.get("id")
         if loc not in source:
@@ -129,6 +130,30 @@ def sample(work: str, index: dict, source: dict[str, str],
                             why = "Model root consonant skeleton contradicts dictionary"
                     else:
                         result="no dictionary root"; why="Need lexical evidence"
+                # Test an actual, narrowly constrained repair in a SHADOW
+                # overlay: only the identical indexed lemma, an absent root,
+                # and a lexicon root compatible with the model's radicals.
+                # Deliberately do not change the original BERT candidates.
+                if primary and not fold(primary[3]) and e["root"] and fold(primary[2]) == fold(e["lemma"]):
+                    feature = primary[7] if len(primary)>7 and isinstance(primary[7],dict) else {}
+                    if partial_root_ok(feature.get("raw_root",""),e["root"]):
+                        possible_roots = {candidate["root"] for candidate in lexical_candidates
+                            if candidate["root"]}
+                        if len(possible_roots) == 1:
+                            key=(loc,i)
+                            shadow_overlays[key] = {
+                              "work":work, "passage_id":loc,"token_position":i,
+                              "surface":surface,"model_lemma":primary[2],
+                              "root_before":"","proposed_root":e["root"],
+                              "source_term":term,
+                              "sources":"; ".join(src["id"] for src in e["sources"]),
+                              "root_basis":("partial-morphological-radicals" if feature.get("raw_root") else
+                                 "dictionary-headword-only"),
+                              "review_status":"UNVERIFIED PROPOSAL",
+                              "reviewer":"","approved":""}
+                            stat["eligible_shadow_proposals"] += 1
+                        else:
+                            stat["ambiguous_dictionary_roots_withheld"] += 1
                 if len(examples[term]) < 3:
                     context = " ".join(tokens[max(0,i-7):min(len(tokens),i+8)])
                     example = {
@@ -147,6 +172,7 @@ def sample(work: str, index: dict, source: dict[str, str],
       "stats":{t:dict(c) for t,c in stats.items()},
       "examples":examples,
       "observed_forms":{t:sorted(formset) for t,formset in observed.items()},
+      "shadow_overlays":list(shadow_overlays.values()),
       "unique_matches":len(matched_locations),
     }, {x:dict(counter) for x,counter in probes.items()}
 
@@ -166,6 +192,7 @@ def report(result: dict, dictionary: dict, out: Path) -> dict:
            "mustasfa_occurrences":b.get("matched",0),
            "model_missing_root":a.get("missing_model_root",0)+b.get("missing_model_root",0),
            "dictionary_root_proposals":a.get("dictionary_root_proposal",0)+b.get("dictionary_root_proposal",0),
+           "eligible_shadow_root_proposals":a.get("eligible_shadow_proposals",0)+b.get("eligible_shadow_proposals",0),
            "existing_model_root_matches":a.get("already_compatible_root",0)+b.get("already_compatible_root",0),
            "root_disagreements":a.get("root_disagreement",0)+b.get("root_disagreement",0),
            "lemma_disagreements_at_headword":a.get("headword_disagreement",0)+b.get("headword_disagreement",0),
@@ -177,15 +204,25 @@ def report(result: dict, dictionary: dict, out: Path) -> dict:
            "reviewed_lemma":"","reviewed_root":"","reviewed_sense":"","reviewer":""}
         rows.append(r)
     fields=list(rows[0])
+    patches=[p for book in ("daruri","mustasfa") for p in result["books"][book]["shadow_overlays"]]
+    if len({(p["work"],p["passage_id"],p["token_position"]) for p in patches})!=len(patches):
+        raise ValueError("Ambiguous shadow overlay source position")
+    with (out/"20-terms-shadow-root-proposals.csv").open(
+          "w",encoding="utf-8-sig",newline="") as handle:
+        w=csv.DictWriter(handle,fieldnames=list(patches[0]) if patches else
+          ["work","passage_id","token_position","surface","proposed_root"])
+        w.writeheader();w.writerows(patches)
     with (out/"20-terms-comparison.csv").open("w",encoding="utf-8-sig",newline="") as handle:
         w=csv.DictWriter(handle,fieldnames=fields);w.writeheader();w.writerows(rows)
     totals={key:sum(row[key] for row in rows) for key in (
        "daruri_occurrences","mustasfa_occurrences","model_missing_root",
-       "dictionary_root_proposals","existing_model_root_matches",
+       "dictionary_root_proposals","eligible_shadow_root_proposals",
+       "existing_model_root_matches",
        "root_disagreements","lemma_disagreements_at_headword","no_model_primary")}
     summary={"terms":len(rows),"totals":totals,
       "scope":"20 sourced technical entries, exact word/alias and analyzer-supported clitics",
       "method":"No model changes. Count compatible dictionary root as a provisional proposal, not a correction.",
+      "shadow_overlay_count":len(patches),
       "limitations":[
         "Not an independent reviewed gold set: improvements are coverage proposals, not proven accuracy.",
         "Later dictionary definitions cannot automatically be attributed to medieval authors.",
@@ -198,17 +235,18 @@ def report(result: dict, dictionary: dict, out: Path) -> dict:
        "",
        "**Source-based shadow experiment. No changes to published morphology.**",
        "",
-       "| Headword | Darūrī hits | Mustaṣfā hits | Blank model roots | Provisional dictionary root proposals | Existing compatible roots |",
+       "| Headword | Darūrī hits | Mustaṣfā hits | Blank model roots | Shadow-repair candidates | Existing compatible roots |",
        "|---|---:|---:|---:|---:|---:|"]
     for r in rows:
         lines.append(f'| {r["headword"]} | {r["daruri_occurrences"]} | {r["mustasfa_occurrences"]} | '
-           f'{r["model_missing_root"]} | {r["dictionary_root_proposals"]} | '
+           f'{r["model_missing_root"]} | {r["eligible_shadow_root_proposals"]} | '
            f'{r["existing_model_root_matches"]} |')
     lines+=["","**These counts measure possible coverage repair, not grammatical accuracy.**",
        "",f'Aggregated: {totals}.',"",
        "## Evidence and limitations",
        "* Each proposal retains source paragraph/token coordinates and dictionary work/author identifiers in the JSON/CSV.",
-       "* A root suggestion is made only for source-aligned dictionary word/alias matches and morphologically supported clitics.",
+       "* A shadow root proposal requires a SOURCE-ALIGNED primary model reading, identical dictionary lemma, unique dictionary root, and compatible radical skeleton where present.",
+       "* Shadow root overlay entries are separate CSV records with review fields intentionally blank.",
        "* No automatic replacement of a model reading, technical sense or translated gloss is authorized.",
        "* Ambiguous homographs, speculative prefixes and competing lexical interpretations need reviewer adjudication.",
        "* An independent held-out classical Arabic evaluation is necessary before release.",
