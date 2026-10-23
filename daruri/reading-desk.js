@@ -502,11 +502,18 @@ function create(ctx){
  function grouped(r){return r.kind==='note'?'My note':r.kind==='footnote'?footnoteKind(r.target?.noteId):
   r.kind==='section'?'Section bookmark':r.kind==='paragraph'?'Paragraph bookmark':
   r.kind==='quote'?'Highlight':LABELS[typeOf(r)]||'Bookmark';}
+ function matchesReadingLocus(row){
+  if(!ui.filterTarget&&ui.filterSegment===null)return true;
+  const t=row.target,known=[];
+  if(t?.section!=null)known.push({section:String(t.section),segment:t.segment==null?null:Number(t.segment)});
+  known.push(...normalizeOrigins(row.origins));
+  return known.some(loc=>(!ui.filterTarget||loc.section===ui.filterTarget)&&
+   (ui.filterSegment===null||loc.segment===ui.filterSegment));
+ }
  function matching(){
   const q=norm(ui.query).toLocaleLowerCase(),bin=ui.category==='bin';
   const rows=records.filter(r=>Boolean(r.deleted)===bin&&
-   (!ui.filterTarget||r.target?.section===ui.filterTarget)&&
-   (ui.filterSegment===null||r.target?.segment===ui.filterSegment)&&
+   matchesReadingLocus(r)&&
    (bin||ui.category==='all'||ui.category==='mine'&&r.kind==='note'||ui.category==='bookmarks'&&!['note','quote'].includes(r.kind)||ui.category==='highlights'&&r.kind==='quote')&&
    (bin||ui.sourceType==='all'||typeOf(r)===ui.sourceType)&&
    (!q||norm([r.title,titleOf(r.target),r.body,r.target?.quote,r.target?.term,r.target?.app,subOf(r.target)].join(' ')).toLocaleLowerCase().includes(q)));
@@ -1693,10 +1700,13 @@ function create(ctx){
    },
    describeSavedItem:row=>({title:row?.title||titleOf(row?.target),detail:subOf(row?.target),
     origins:normalizeOrigins(row?.origins)}),
-   openSavedItem:id=>{
+   openSavedItem:(id,fromSection=null)=>{
     const row=records.find(r=>r.id===id&&!r.deleted);
     if(!row)return false;
-    const linkedSection=row.target?.section||normalizeOrigins(row.origins)[0]?.section||state.n;
+    const origins=normalizeOrigins(row.origins);
+    const validOrigin=fromSection!=null&&(String(row.target?.section)===String(fromSection)||
+     origins.some(loc=>loc.section===String(fromSection)));
+    const linkedSection=validOrigin?String(fromSection):row.target?.section||origins[0]?.section||state.n;
     if(row.kind==='note'||!isResolved(row)){
      enterDeskFromText(linkedSection,null,row.id);
      return true;
