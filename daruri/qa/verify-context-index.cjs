@@ -74,8 +74,13 @@ vm.runInContext(fs.readFileSync(path.join(root,'gnamma-morphology.js'),'utf8'),c
      'والكتاب':{l:['كتاب'],r:['كتب']}},
   summary:{searchableOccurrences:3}
  };
+ const correctedRecords=JSON.parse(JSON.stringify(raw.records));
+ const former=correctedRecords[0].a.find(a=>a[0]===2&&a[5]==='contextual-bert');
+ former[5]='contextual-alternative';
+ correctedRecords[0].a.push([2,'كتب','كتاب','كتب','noun','reviewed',
+  'كِتاب_1',{cas:'g',reviewer:'synthetic-test-only'}]);
  const details={schema:'gnamma-morph-detail-v2',work:'daruri',shard:0,
-  records:raw.records};
+  records:correctedRecords};
  const requests=[];
  const preview={window:{GnammaContextualMorphAssets:{
   daruri:'morph-daruri-search-v2.json'}},console,
@@ -106,6 +111,9 @@ vm.runInContext(fs.readFileSync(path.join(root,'gnamma-morphology.js'),'utf8'),c
  assert.equal(precise.alternatives.length,1);
  const repeat=portable.disambiguate('كتب',[],'daruri','passage:5:0',2);
  assert.equal(repeat.best.lemma,'كتاب');
+ assert.equal(repeat.best.source,'reviewed');
+ assert.equal(repeat.best.features.reviewer,'synthetic-test-only');
+ assert.equal(repeat.certainty,'reviewed');
  await portable.ensureDetail('daruri','passage:5:0');
  assert.equal(requests.filter(x=>x.includes('details-v2')).length,1,
   'Identical word detail shard should come from cache');
