@@ -779,7 +779,7 @@ function scholarlyControls(){
 }
 function matchDescription(mode){
   const meanings={
-   terms:'Find matching Arabic or English wording, including common alternative spellings and some attached Arabic particles. Known scholarly expressions are included, but related grammatical forms are not guaranteed.',
+   terms:'Find written Arabic or English words and registered scholarly expressions (technical terms, such as qiyās). Common alternative spellings are included. This matches wording, not every grammatical form and not every passage discussing the concept.',
    literal:'Match the whole written word without expanding to related forms. Arabic vowel marks and standard hamza/letter variations are ignored.',
    'morph-lemma':'Find forms of one dictionary headword (called a lemma), including some attached particles and grammatical endings. Other words made from the same root are not automatically included. Current coverage is incomplete.',
    'morph-root':'Find other indexed words derived from the same Arabic root. Related by derivation does not necessarily mean identical in meaning.',
