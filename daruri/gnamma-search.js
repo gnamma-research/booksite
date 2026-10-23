@@ -2,7 +2,7 @@
    Retains the previous Daruri search as a no-script / failed-enhancement fallback. */
 (function () {
 'use strict';
-const CONFIG = {version:'20261022-morphperf1', source:'al-Ḍarūrī', pageSize:40, quickSize:6,
+const CONFIG = {version:'20261023-morph-clarity1', source:'al-Ḍarūrī', pageSize:40, quickSize:6,
   moreUrl:'../texts/al-ghazali/al-mustasfa/data/gnamma-search-index.json'};
 const MORPH=()=>window.GnammaMorphology||null;
 const $ = (s,p=document) => p.querySelector(s);
@@ -636,7 +636,7 @@ const ui={opened:false,expanded:false,query:'',facet:'all',mode:'terms',scope:'w
   sort:'relevance',display:'results',showFilters:false,page:CONFIG.pageSize,results:[],facets:{},
   before:null,request:0,scroll:0,entryHash:'',entryScroll:0,pendingReturn:null,sourceCounts:false,
   nearTerm:'',nearGap:5,nearOrdered:false,booleanScope:'passage',
-  orthography:'normalized',builderOpen:false,savedOpen:false,builderError:'',
+  orthography:'normalized',builderOpen:false,savedOpen:false,extraOpen:false,hideRefinements:false,builderError:'',
   builderRows:[{join:'AND',kind:'word',text:'',field:'all'},
                {join:'AND',kind:'word',text:'',field:'all'}],
   queryError:'',queryExplanation:''};
@@ -645,14 +645,22 @@ function filterButton(id,text,selected,extra){
  return '<button type="button" class="gns-chip'+(selected?' gns-current':'')+'" data-gns-'+extra+'="'+xml(id)+'" aria-pressed="'+selected+'">'+esc(text)+'</button>';
 }
 function scopeSelector(){
- return '<label class="gns-setting"><span>Works</span><select id="gns-scope" aria-label="Search scope">' +
+ return '<label class="gns-setting"><span>Search in</span><select id="gns-scope" aria-label="Search scope">' +
   '<option value="work"'+(ui.scope==='work'?' selected':'')+'>Darūrī</option>'+
   '<option value="library"'+(ui.scope==='library'?' selected':'')+'>Gnamma Library</option></select></label>';
 }
 function modeSelector(){
- return '<label class="gns-setting"><span>Match</span><select id="gns-mode" aria-label="Search mode">'+
-  [['literal','Exact words'],['terms','Words + terms'],['morph-lemma','Same Arabic lemma'],['morph-root','Shared Arabic root'],['proximity','Proximity'],['scholarly','Scholarly patterns'],['concepts','Conceptual links']].map(x=>
-  '<option value="'+x[0]+'"'+(ui.mode===x[0]?' selected':'')+'>'+x[1]+'</option>').join('')+'</select></label>';
+  const labels=[
+   ['terms','Words & terms'],
+   ['literal','Exact word'],
+   ['morph-lemma','Forms of one word'],
+   ['morph-root','Root family'],
+   ['concepts','Scholarly concepts'],
+   ['proximity','Nearby words'],
+   ['scholarly','Advanced patterns']
+  ];
+  return '<label class="gns-setting"><span>Find</span><select id="gns-mode" aria-label="How to match words and concepts" aria-describedby="gns-mode-help">'+
+   labels.map(x=>'<option value="'+x[0]+'"'+(ui.mode===x[0]?' selected':'')+'>'+x[1]+'</option>').join('')+'</select></label>';
 }
 function proximityControls(){
  if(ui.mode!=='proximity')return '';
@@ -676,14 +684,14 @@ function gnBuilderRow(row,index){
  const join=index?'<select data-gns-builder-join="'+index+'" aria-label="Condition '+(index+1)+' logic">'+
   [['AND','and'],['OR','or'],['AND NOT','and not']].map(([id,name])=>gnSettingOption(id,name,id,row.join)).join('')+
   '</select>':'<span class="gns-builder-first">Find</span>';
- const kinds=[['word','Term'],['phrase','Exact phrase'],['prefix','Begins with'],['pattern','Letter pattern'],
+ const kinds=[['word','Word'],['phrase','Exact phrase'],['prefix','Begins with'],['pattern','Letter pattern'],
   ['fuzzy1','Within 1 letter'],['fuzzy2','Within 2 letters']];
  return '<div class="gns-builder-row" data-gns-builder-row="'+index+'">'+join+
    '<select data-gns-builder-kind="'+index+'" aria-label="Condition '+(index+1)+' matching">'+
      kinds.map(([id,name])=>gnSettingOption(id,name,id,row.kind)).join('')+'</select>'+
    '<input type="text" data-gns-builder-text="'+index+'" value="'+xml(row.text)+'" '+
     'placeholder="'+(row.kind==='pattern'?'e.g. مس[ؤئ]ول':'Term or phrase')+'" '+
-    'aria-label="Condition '+(index+1)+' search term" dir="auto" autocomplete="off"/>'+
+    'aria-label="Condition '+(index+1)+' search expression" dir="auto" autocomplete="off"/>'+
    '<select data-gns-builder-field="'+index+'" aria-label="Condition '+(index+1)+' language">'+
     [['all','Any field'],['ar','Arabic'],['en','English']].map(([id,name])=>gnSettingOption(id,name,id,row.field)).join('')+'</select>'+
    (index?'<button type="button" class="gns-builder-remove" data-gns-remove-row="'+index+'" aria-label="Remove condition '+(index+1)+'">×</button>':'<span></span>')+
@@ -769,39 +777,54 @@ function scholarlyControls(){
    gnSavedPanel()+
   '</section>';
 }
+function matchDescription(mode){
+  const meanings={
+   terms:'Find written words and registered scholarly terminology, including common spellings and attached Arabic particles. This does not automatically find every grammatical form.',
+   literal:'Match the whole written word without expanding to related forms. Arabic vowel marks and standard hamza/letter variations are ignored.',
+   'morph-lemma':'Find indexed grammatical forms of the same dictionary headword; does not include every word made from its root. Coverage is currently incomplete.',
+   'morph-root':'Find indexed words derived from the same Arabic root. These can be different dictionary words and need not have the same meaning.',
+   concepts:'Find curated scholarly concepts and editorially recorded connections. This is not unrestricted AI meaning search.',
+   proximity:'Find two expressions near one another within the same paragraph and language.',
+   scholarly:'Combine words, phrases, alternatives and exclusions using advanced search patterns.'
+  };
+  return meanings[mode]||meanings.terms;
+}
 function filterPanel(){
- const typeSelect='<label class="gns-setting gns-source-select"><span>Content</span><select id="gns-type" aria-label="Filter content type">'+
-  [['all','Everything'],...TYPES.map(x=>[x[0],x[1]])].map(x=>
-  '<option value="'+x[0]+'"'+(ui.facet===x[0]?' selected':'')+'>'+esc(x[1])+'</option>').join('')+'</select></label>';
- const active=ui.expanded||ui.showFilters;
- return '<div class="gns-tools" '+(active?'':'hidden')+'>'+
-   scopeSelector()+typeSelect+modeSelector()+'</div>'+
-   (ui.mode==='proximity'?proximityControls():'')+
-   (ui.mode==='scholarly'?scholarlyControls():'')+
-   (ui.expanded?'<div class="gns-result-options">'+
-   '<label class="gns-setting"><span>Sort</span><select id="gns-sort" aria-label="Sort search results">'+
+  const typeSelect='<label class="gns-setting gns-source-select"><span>Content</span><select id="gns-type" aria-label="Filter content type">'+
+    [['all','Everything'],...TYPES.map(x=>[x[0],x[1]])].map(x=>
+    '<option value="'+x[0]+'"'+(ui.facet===x[0]?' selected':'')+'>'+esc(x[1])+'</option>').join('')+'</select></label>';
+  const active=ui.expanded?!ui.hideRefinements:ui.showFilters;
+  const extras=ui.expanded?'<details class="gns-extra-tools" data-gns-details="extra"'+(ui.extraOpen?' open':'')+'>'+
+    '<summary>More research options</summary><div class="gns-result-options">'+
+    '<label class="gns-setting"><span>Sort by</span><select id="gns-sort" aria-label="Sort search results">'+
      [['relevance','Relevance'],['source','Text order'],['alpha','A–Z'],['recent','Recently saved']].map(x=>
-       '<option value="'+x[0]+'"'+(ui.sort===x[0]?' selected':'')+'>'+x[1]+'</option>').join('')+'</select></label>'+
-   '<label class="gns-setting"><span>Display</span><select id="gns-display" aria-label="Results display">'+
+     '<option value="'+x[0]+'"'+(ui.sort===x[0]?' selected':'')+'>'+x[1]+'</option>').join('')+'</select></label>'+
+    '<label class="gns-setting"><span>Show as</span><select id="gns-display" aria-label="Results display">'+
      '<option value="results"'+(ui.display==='results'?' selected':'')+'>Passages</option>'+
      '<option value="concordance"'+(ui.display==='concordance'?' selected':'')+'>Concordance</option>'+
-     '</select></label></div>':'');
+     '</select></label></div></details>':'';
+  return '<div class="gns-tools" '+(active?'':'hidden')+'>'+
+    scopeSelector()+typeSelect+modeSelector()+'</div>'+
+    (active?'<p id="gns-mode-help" class="gns-mode-help" role="note">'+esc(matchDescription(ui.mode))+'</p>':'')+
+    (ui.mode==='proximity'?proximityControls():'')+
+    (ui.mode==='scholarly'?scholarlyControls():'')+extras;
 }
 function morphSuggestion(){
- const q=ui.query.trim(),m=MORPH();
- if(!q||!m||q.length>75)return '';
- const ar=/[\u0621-\u064a]/u.test(q),rt=m.roots(q),v=m.fold(q),rk=m.roman(q);
- const terms=m.getLexicon().filter(x=>m.fold(x.lemma)===v||
-   x.romanKeys?.includes(rk)||x.formKeys?.includes(v));
- if(!ar&&!rt&&!terms.length)return '';
- const root=rt||terms[0]?.root||'';
- const buttons=[['terms','Words'],['literal','Exact'],['morph-lemma','Lemma'],['morph-root','Root']].map(([id,label])=>
-  '<button type="button" data-gns-morph-pick="'+id+'" class="gns-match-chip'+(ui.mode===id?' gns-current':'')+
-  '" aria-pressed="'+String(ui.mode===id)+'">'+label+'</button>').join('');
- return '<div class="gns-morph-assist" role="group" aria-label="Arabic matching options">'+
-  '<span>Arabic word matching'+(root?' · <bdi dir="rtl" lang="ar">'+esc(root)+'</bdi>':'')+'</span>'+
-  '<div class="gns-morph-buttons">'+buttons+'</div>'+
-  '<small>Lemma: inflected forms. Root: a wider derivational family. Uncertain analyses are marked.</small></div>';
+  if(ui.expanded)return ''; // Research search already has its own single matching dropdown.
+  const q=ui.query.trim(),m=MORPH();
+  if(!q||!m||q.length>75)return '';
+  const rt=m.roots(q),v=m.fold(q),rk=m.roman(q);
+  const terms=m.getLexicon().filter(x=>m.fold(x.lemma)===v||
+    x.romanKeys?.includes(rk)||x.formKeys?.includes(v));
+  if(!rt&&!terms.length)return '';
+  const root=rt||terms[0]?.root||'';
+  const buttons=[['morph-lemma','All word forms'],['morph-root','Root family']].map(([id,label])=>
+   '<button type="button" data-gns-morph-pick="'+id+'" class="gns-match-chip'+(ui.mode===id?' gns-current':'')+
+   '" aria-pressed="'+String(ui.mode===id)+'">'+label+'</button>').join('');
+  return '<div class="gns-morph-assist" role="group" aria-label="Expand Arabic word matching">'+
+   '<span>Search more broadly'+(root?' · root <bdi dir="rtl" lang="ar">'+esc(root)+'</bdi>':'')+'</span>'+
+   '<div class="gns-morph-buttons">'+buttons+'</div>'+
+   '<small>Word forms = one dictionary headword; root family = different words derived from the same root. Both use the current partial index.</small></div>';
 }
 function resultControls(){
  const count=ui.resultCount||0;
@@ -954,7 +977,7 @@ function markup(){
    '<header class="gns-header">'+
    '<h2 id="gns-title" class="gns-sr-only">Search Gnamma texts and annotations</h2>'+
    '<label class="gns-searchbox"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6"/><path d="m15.5 15.5 5 5"/></svg><input id="gns-query" type="search" inputmode="search" autocomplete="off" spellcheck="false" dir="auto" placeholder="'+(ui.mode==='proximity'?'First term, e.g. qiyas':'Search text, concepts, notes…')+'" aria-label="Search Arabic, English and annotations" value="'+xml(ui.query)+'"/></label>'+
-   '<button class="gns-icon-button" data-gns-toggle-filters="1" aria-label="Search options" aria-expanded="'+(ui.showFilters||ui.expanded)+'" title="Search options">'+
+   '<button class="gns-icon-button" data-gns-toggle-filters="1" aria-label="Search options" aria-expanded="'+(ui.expanded?!ui.hideRefinements:ui.showFilters)+'" title="Search options">'+
      '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/><circle cx="15" cy="7" r="2" fill="currentColor"/></svg></button>'+
    '<button class="gns-icon-button" data-gns-close="1" aria-label="Close search" title="Close search">×</button></header>'+
    '<div class="gns-switchbar"><div role="group" aria-label="Main search categories" class="gns-main-tabs">'+tabs+'</div>'+
@@ -1030,7 +1053,7 @@ function open(restoring=false){
  if(!restoring){
   // The single magnifier remains a quiet Quick Find, even if the reader
   // last used a more complex research query. A Return link restores it.
-  ui.expanded=false;ui.facet='all';ui.showFilters=false;ui.page=CONFIG.pageSize;
+  ui.expanded=false;ui.facet='all';ui.showFilters=false;ui.hideRefinements=false;ui.extraOpen=false;ui.page=CONFIG.pageSize;
   ui.mode='terms';ui.nearTerm='';ui.nearGap=5;ui.nearOrdered=false;
   ui.booleanScope='passage';ui.orthography='normalized';
   ui.entryHash=location.hash;ui.entryScroll=window.scrollY;ui.pendingReturn=null;ui.sourceCounts=false;
@@ -1251,8 +1274,8 @@ document.addEventListener('click',event=>{
  if(!target)return;
  event.preventDefault();event.stopPropagation();
  if(target.hasAttribute('data-gns-close')){close();return;}
- if(target.hasAttribute('data-gns-expand')){ui.expanded=target.dataset.gnsExpand==='1';ui.page=CONFIG.pageSize;rerender();return;}
- if(target.hasAttribute('data-gns-toggle-filters')){ui.showFilters=!ui.showFilters;rerender();return;}
+ if(target.hasAttribute('data-gns-expand')){ui.expanded=target.dataset.gnsExpand==='1';ui.hideRefinements=false;ui.page=CONFIG.pageSize;rerender();return;}
+ if(target.hasAttribute('data-gns-toggle-filters')){if(ui.expanded)ui.hideRefinements=!ui.hideRefinements;else ui.showFilters=!ui.showFilters;rerender();return;}
  if(target.hasAttribute('data-gns-quick')){change('facet',target.dataset.gnsQuick);return;}
  if(target.hasAttribute('data-gns-facet')){change('facet',target.dataset.gnsFacet);return;}
  if(target.hasAttribute('data-gns-more')){ui.page+=CONFIG.pageSize;rerender(false);return;}
@@ -1407,6 +1430,7 @@ document.addEventListener('toggle',event=>{
  if(!ui.opened||!host||!host.contains(event.target))return;
  if(event.target?.dataset?.gnsDetails==='builder')ui.builderOpen=event.target.open;
  if(event.target?.dataset?.gnsDetails==='saved')ui.savedOpen=event.target.open;
+  if(event.target?.dataset?.gnsDetails==='extra')ui.extraOpen=event.target.open;
 },true);
 window.addEventListener('storage',event=>{
  if(event.key===LOCAL_KEY&&ui.opened)rerender(false);
