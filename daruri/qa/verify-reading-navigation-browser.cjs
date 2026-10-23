@@ -68,7 +68,9 @@ async function exercise(engine,name,host){
   await page.goto(host+'/daruri/#bookmarks',{waitUntil:'domcontentloaded'});
   await page.locator('.gn-rd-page').waitFor();
   await page.locator('.gn-rd-manage-menu > summary').click();
-  const [download]=await Promise.all([page.waitForEvent('download',{timeout:12000}),page.locator('[data-rd="export"]').click()]);
+  await page.locator('[data-rd="backup-transfer"]').click();
+  await page.locator('[data-transfer="download"]').waitFor();
+  const [download]=await Promise.all([page.waitForEvent('download',{timeout:12000}),page.locator('[data-transfer="download"]').click()]);
   const disk=await download.path(),data=JSON.parse(fs.readFileSync(disk,'utf8'));
   assert.ok(data.readingNavigation?.entries?.length>=2,'Personal JSON backup missing reading trail');
   assert.ok(Array.isArray(data.items),'Reading Desk collection not preserved');
@@ -79,7 +81,10 @@ async function exercise(engine,name,host){
    await imported.locator('#readerDock:not([hidden])').waitFor();
    await imported.goto(host+'/daruri/#bookmarks',{waitUntil:'domcontentloaded'});
    await imported.locator('.gn-rd-page').waitFor();
-   await imported.locator('#gn-rd-file').setInputFiles({name:'private.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(data))});
+   await imported.locator('.gn-rd-manage-menu > summary').click();
+   await imported.locator('[data-rd="backup-transfer"]').click();
+   await imported.locator('[data-transfer="choose-file"]').click();
+   await imported.locator('input[type="file"][aria-label="Choose Gnamma Reading Desk backup"]').setInputFiles({name:'private.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(data))});
    await imported.locator('[data-transfer-choice="history"]').waitFor({timeout:12000});
    await imported.locator('[data-transfer="restore"]').click();
    await imported.waitForFunction(()=>window.GnammaReadingHistory?.exportData()?.recent?.length>=2,null,{timeout:9000});
