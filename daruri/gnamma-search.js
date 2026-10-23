@@ -651,7 +651,7 @@ function scopeSelector(){
 }
 function modeSelector(){
   const labels=[
-   ['terms','Words & terms'],
+   ['terms','Normal search'],
    ['literal','Exact word'],
    ['morph-lemma','Forms of one word'],
    ['morph-root','Root family'],
@@ -779,7 +779,7 @@ function scholarlyControls(){
 }
 function matchDescription(mode){
   const meanings={
-   terms:'Find written words and registered scholarly terminology, including common spellings and attached Arabic particles. This does not automatically find every grammatical form.',
+   terms:'Find matching Arabic or English wording, including common alternative spellings and some attached Arabic particles. Known scholarly expressions are included, but related grammatical forms are not guaranteed.',
    literal:'Match the whole written word without expanding to related forms. Arabic vowel marks and standard hamza/letter variations are ignored.',
    'morph-lemma':'Find indexed grammatical forms of the same dictionary headword; does not include every word made from its root. Coverage is currently incomplete.',
    'morph-root':'Find indexed words derived from the same Arabic root. These can be different dictionary words and need not have the same meaning.',
