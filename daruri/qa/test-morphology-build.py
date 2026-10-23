@@ -171,6 +171,41 @@ bad = eval_mod.evaluate(fake_index, rows, min_reviewed=2,
 assert bad["release_gate_passed"] is False
 assert bad["exact_accuracy"] == 0.5
 
+# Mobile-safe indexed search postings must be much smaller than detailed
+# grammatical feature records. Preserve exact token coordinates and never index
+# speculative alternatives as if they were confirmed forms.
+import sys
+sys.path.insert(0, str((ROOT / "daruri" / "build").resolve()))
+pack_source = ROOT / "daruri" / "build" / "pack_morph_context.py"
+pack_spec = importlib.util.spec_from_file_location("gnamma_morph_pack", pack_source)
+pack_mod = importlib.util.module_from_spec(pack_spec)
+pack_spec.loader.exec_module(pack_mod)
+compact, shards = pack_mod.pack(fake_index, {"passage:1:0": "كتب العلم"}, shard_size=1)
+assert compact["schema"] == "gnamma-morph-postings-v2"
+assert compact["summary"]["searchableOccurrences"] == 2
+assert compact["summary"]["sourceAlignedAnalyses"] == 4
+assert len(shards) == 1
+assert compact["l"]["كاتب"] == [[0, 0, 0], [0, 1, 0]]
+assert compact["r"]["كتب"] == [[0, 0, 0], [0, 1, 0]]
+assert "كتاب" not in compact["l"], "Top-2 guesses may not enter lemma search"
+assert compact["f"]["كتب"]["l"] == ["كاتب"]
+bad_index = json.loads(json.dumps(fake_index, ensure_ascii=False))
+bad_index["records"][0]["a"][0][1] = "مختلف"
+try:
+    pack_mod.pack(bad_index, {"passage:1:0": "كتب العلم"})
+except ValueError as exc:
+    assert "Source word drift" in str(exc)
+else:
+    raise AssertionError("Source-drift must fail index packing")
+try:
+    pack_mod.pack(module.build_index("daruri",
+       [("passage:1:0", "كتب العلم")], module.Curated(), "curated"),
+       {"passage:1:0": "كتب العلم"})
+except ValueError:
+    pass
+else:
+    raise AssertionError("Do not relabel a curated index as contextual")
+
 print("PASS: morphology source windows, contextual alternatives, review sheets and scholarly quality gate")
 
 
