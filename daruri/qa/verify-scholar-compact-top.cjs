@@ -93,9 +93,57 @@ async function exercise(engine,name,host){
   }
  }finally{await browser.close()}
 }
+
+async function checkResizeWithSavedData(engine,name,host){
+ const savedItems=[
+ {id:'saved-section',kind:'section',target:{kind:'section',section:'11'},created:100,updated:100,deleted:0},
+ {id:'saved-paragraph',kind:'paragraph',target:{kind:'paragraph',section:'11',segment:0,lang:'en'},created:100,updated:100,deleted:0},
+ {id:'saved-quote',kind:'quote',target:{kind:'quote',section:'11',segment:0,lang:'en',quote:'According to the People of the Sunna',offset:0},created:100,updated:100,deleted:0},
+ {id:'saved-dictionary',kind:'dictionary',target:{kind:'dictionary',section:'11',term:'test'},created:100,updated:100,deleted:0},
+ {id:'saved-quran',kind:'footnote',target:{kind:'quran',section:'11'},created:100,updated:100,deleted:0},
+ {id:'saved-hadith',kind:'footnote',target:{kind:'hadith',section:'11'},created:100,updated:100,deleted:0},
+ {id:'saved-other-source',kind:'index',target:{kind:'index',section:'11'},created:100,updated:100,deleted:0},
+ ...Array.from({length:32},(_,i)=>({
+  id:'saved-note-'+i,kind:'note',target:{kind:'paragraph',section:'11',segment:0,lang:'en'},
+  title:'QA saved note '+String(i).padStart(2,'0'),
+  body:'Private synthetic browser test record '+i,created:101+i,updated:101+i,deleted:0
+ }))
+];
+ const browser=await engine.launch({headless:true,...(name==='chromium'?{args:['--no-sandbox']}:{})});
+ const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+ await context.addInitScript(({items})=>{
+  localStorage.setItem('daruri-reader-v2',JSON.stringify({n:'11',lang:'english',focusLevel:0}));
+  localStorage.setItem('gnamma-reading-desk-v1',JSON.stringify({format:'gnamma-reading-desk',version:1,items}));
+ },{items:savedItems});
+ try{
+  const page=await context.newPage();
+  await page.goto(host+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
+  await page.locator('#gn-dock-private-status .gn-dock-summary').waitFor({state:'visible',timeout:25000});
+  await page.setViewportSize({width:320,height:844});
+  await page.waitForTimeout(150);
+  const data=await page.evaluate(()=>{
+   const overflow=[];
+   for(const el of document.querySelectorAll('body *')){
+    const st=getComputedStyle(el),r=el.getBoundingClientRect();
+    if(st.display==='none'||st.visibility==='hidden'||r.width<=0||r.height<=0)continue;
+    if(r.left>=0&&r.left<innerWidth&&r.right>innerWidth+2){
+     overflow.push({tag:el.tagName,id:el.id,className:String(el.className).slice(0,90),
+      left:Math.round(r.left),right:Math.round(r.right),width:Math.round(r.width),
+      minWidth:st.minWidth,position:st.position,overflowX:st.overflowX});
+    }
+   }
+   overflow.sort((a,b)=>b.right-a.right);
+   return {width:innerWidth,documentWidth:document.documentElement.scrollWidth,
+    bodyWidth:document.body.scrollWidth,overflow:overflow.slice(0,24)};
+  });
+  console.log('RESIZE-DIAGNOSTIC '+name+': '+JSON.stringify(data));
+  assert.ok(data.documentWidth<=322,name+' 390->320 resize overflow: '+JSON.stringify(data));
+ }finally{await context.close();await browser.close()}
+}
+
 server.listen(0,'127.0.0.1',async()=>{
  const host='http://127.0.0.1:'+server.address().port;
- try{await exercise(chromium,'chromium',host);await exercise(webkit,'webkit',host)}
+ try{await exercise(chromium,'chromium',host);await exercise(webkit,'webkit',host);await checkResizeWithSavedData(chromium,'chromium',host);await checkResizeWithSavedData(webkit,'webkit',host)}
  catch(e){console.error(e.stack);process.exitCode=1}
  finally{server.close()}
 });
