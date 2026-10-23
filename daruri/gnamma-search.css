@@ -251,3 +251,29 @@
  .gns-mobile-resultsbar{gap:4px;padding:5px 8px}
  .gns-mobile-resultsbar button{padding:6px 7px}
 }
+
+/* Attested Arabic word-form hints: one compact, tappable line in Research;
+   source-linked alternates in results, not another large controls panel. */
+.gns-root .gns-morph-assist{display:flex;flex-wrap:wrap;align-items:center;gap:7px 12px;
+ padding:8px 14px;background:var(--gns-alt);border-bottom:1px solid var(--gns-edge);
+ color:var(--gns-soft);font:500 12px/1.45 var(--sans,system-ui,sans-serif)}
+.gns-root .gns-morph-assist>span{flex:1;min-width:130px}
+.gns-root .gns-morph-assist .gns-morph-buttons{display:flex;flex-wrap:wrap;gap:7px}
+.gns-root .gns-morph-assist button{border:1px solid var(--gns-edge);border-radius:7px;
+ background:var(--gns-paper);color:var(--gns-contrast);cursor:pointer;
+ min-height:33px;padding:6px 9px;font:650 12px/1.4 var(--sans,system-ui,sans-serif)}
+.gns-root .gns-morph-assist button:hover,
+.gns-root .gns-morph-assist button:focus-visible{background:var(--accent-soft,var(--gns-alt))}
+.gns-root .gns-morph-assist small{flex-basis:100%;color:var(--gns-soft);
+ font:450 10.5px/1.45 var(--sans,system-ui,sans-serif)}
+.gns-root .gns-morph-compact{padding:6px 13px;gap:7px}
+.gns-root .gns-morph-compact>span{min-width:0;white-space:normal}
+.gns-root .gns-morph-compact button{min-height:30px;padding:4px 8px}
+.gns-root .gns-morph-assist bdi,.gns-root .gns-morph-in-paragraph bdi{
+ font:500 16px/1.4 'Amiri','Noto Naskh Arabic',serif;color:var(--gns-txt)}
+.gns-root .gns-morph-in-paragraph{color:var(--gns-soft);font:500 11px/1.55 var(--sans,system-ui,sans-serif)}
+@media(max-width:400px){
+ .gns-root .gns-morph-compact{padding:5px 10px}
+ .gns-root .gns-morph-compact button{font-size:11px}
+ .gns-root .gns-result .gns-morph-in-paragraph{font-size:10.5px}
+}
