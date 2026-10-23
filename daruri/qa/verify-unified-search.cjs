@@ -187,6 +187,7 @@ function test(name,fn){return fn().then(()=>{pass++;console.log('PASS '+name)}).
    await mobile.setViewportSize({width:390,height:844});
  });
  await test('Desktop Advanced Search puts controls beside—not above—results',async()=>{
+   if(!(await page.locator('#gns-query').count()))await trigger.click();
    await expand();
    const geom=await page.evaluate(()=>{
      const builder=document.querySelector('.gns-refine-pane')?.getBoundingClientRect();
