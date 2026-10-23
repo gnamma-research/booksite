@@ -33,11 +33,11 @@ function textIndex(root){
 function marker(id,key){
   const a=document.createElement('a');
   a.className='note-ref-symbol gn-hadith-inline-marker';
-  a.href='#notes';
+  a.href='#note-'+id;
+  a.dataset.noteTarget=id;
   a.dataset.gnHadithInline=id;
   a.dataset.gnHadithKey=key;
-  // The Notes route is attached temporarily on activation, so generic
-  // [data-gn-notes-open] selectors still find the original Notes control.
+  // One note target; never impersonate the section-level Notes control.
   a.textContent='H';
   a.dir='ltr';
   a.title='Hadith source note '+id;
@@ -120,32 +120,11 @@ function schedule(){
   scheduled=true;
   requestAnimationFrame(scan);
 }
-function onMarkerClick(event){
-  const target=event.target;
-  if(!(target instanceof Element))return;
-  const ref=target.closest('.gn-hadith-inline-marker');
-  if(!ref)return;
-  // Capture runs before the reader's delegated Notes handler. Present this
-  // anchor as its opener ONLY for this click, then restore its usual identity.
-  ref.setAttribute('data-gn-notes-open','');
-  event.preventDefault();
-  requestAnimationFrame(()=>{
-    ref.removeAttribute('data-gn-notes-open');
-    const layer=document.getElementById('gn-scholar-layer');
-    const note=layer?.querySelector(
-      '.gn-note-entry[data-note-id="'+ref.dataset.gnHadithInline+'"]');
-    if(!note)return;
-    note.tabIndex=-1;
-    note.classList.add('gn-hadith-inline-selected');
-    note.scrollIntoView({block:'nearest',behavior:'instant'});
-    note.focus({preventScroll:true});
-  });
-}
 function start(){
   const main=document.getElementById('mainContent');
   if(!main)return;
   new MutationObserver(schedule).observe(main,{childList:true,subtree:true});
-  document.addEventListener('click',onMarkerClick,true);
+  // Direct data-note-target routing preserves the Notes button identity and returns focus to this H marker.
   document.addEventListener('gnamma-reader-route-change',schedule);
   window.GnammaHadithInlineQA={notes:rowsBySection.size,anchors:ANCHORS.length};
   schedule();
