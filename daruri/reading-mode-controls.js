@@ -296,6 +296,10 @@ function create({state,rd}){
   if(state.route!=='reader'||dock.hidden){
    closeSheet();status.hidden=true;if(paraRef)paraRef.hidden=true;last='';return;
   }
+  // Keep the selected section's saved list stable while the overlay is open.
+  // An unrelated asynchronous text repaint cannot reclassify the section
+  // through elementFromPoint() while the opaque backdrop covers the reader.
+  if(sheet)return;
   const place=readingPosition();
   if(!place){closeSheet();status.hidden=true;last='';return;}
   const synced=String(state.n)===place.section;
