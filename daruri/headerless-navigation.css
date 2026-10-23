@@ -3,6 +3,7 @@
    design/daruri-headerless-tile-handoff-20261023,
    docs/design/daruri-selected-circular-tile-reference-64.png.
    No additional masthead or Contents button is introduced. */
+:root{--gn-daruri-tile:url("data:image/png;base64,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");}
 @media screen and (min-width:621px) {
   :root {--reading-controls-height:56px;}
 }
@@ -45,7 +46,7 @@
     border:1px solid var(--border);border-radius:50%;
     background-color:var(--paper);text-decoration:none;
     -webkit-tap-highlight-color:transparent;
-    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAY1BMVEX579z27Nv169r16tnz6tr46NHz6djy6Nf35Mv04MXt4Mvs3MTs17vl1b7izrLby7PYw6fKvaW+rZS2jnCVmYuHfGRXc2sba3WeWDhWYEglXW4NXXRxQyk8JxMPS34dJjH/AP8Xb8eWAAAAIXRSTlP///////////////////////////////////////////+ywz+sAAAG0ElEQVR42qVXi5bcKg50Ti4nAvEU4G677fn/v8yWwD2PZHIzu0syE8eGQkilklh+/p9j+eMXMpZj8bGk6K39bwEMZ+nHcXbmep5H7xLt1wGsSf04dfSFeanj8dyqpy8BWK5j9Yb9vzlmZ9p53yZe5r8DeCm1b7B+lfqdqW/ERioAtt5EJP0FwIhkuyzGhNKKcUbOsxpH0lKgZVnI907/BhCO/s2UEpi+++zY92F4dJatcSFLMOE88h8BFuzH3922bR1uZ+fiNkZ0jqX3ddsaqU1iPwcwcHc3RsaiTs7a+SyGPYc+XidieLjazwCM2ptMmesdnF8W1udgpNEPXsf7oCac3f8OQH3EneZOAetf9kIwQSivDzE0kcV4DfKbDa8AWI8IuDQAmqH2eDx2t/Ru7Pq4AWEcolfQO+rcXwHUMDGOgwsi2FWwXpeVYsrjdnvcCsGxBe70TGpD/ggQNV5iAxkyiynZ7w8dq6VhABBWW8JiiCzzOMThPwCAab1kZ9vaGhjEcQI8ChEMUGNW7wjf1rVQzEVD8R6gnVtZbGS7vugo5NcJsPrhAfxt1rbrY+RFczS/AYSjmu8mCNOc8wKXTYSd/XUCZ/v8hkgL/BC2SeoBIMVYRAwsugB2o0fXfcmK+rDZpVyfwIRjK+RMzU8AX4g1fGt6AryAcQaBvDHighA082rcHqzGU4LPNV4AJV78a68AzQS3yKOZXMAIWRzTegHEmSHdszwBtmLTBRCvaasJNSwlLbUuoZhUTbjWFxMmAJteJ0A65budDBZ6WhqWes+W8x2/TbrXReb6BEm4pprjsAOgXikAwckeCPs+ziBY63KtmRTFwLR9XyEIsYismhT5POMAAIkCta3A86UUa+HRIjjV/R6wvtYIgOCkJAYvE/4lzYtMdWTE8hPEVCdkyNh6u+2NQHfQGe4P4a6j5uydgZ4xog9WYIpxhTV9kdbLz6x6GR3bchuUaTh5rZBGub8O4SK1OpP3OQVibRG4CYA8PIrnQZjbIJ3/ke9HfbceCPiJy9xCp0TvYx0ZNQBAJB9Ce0WwS75/WH+HK9zr+tut+eiZ+wToZzQmHbLQG0KyIX4EiAFHvD7fxCy1Q/QrwgALMrEgPQVV4DmlWZc+ANzZhef+a7EB5m/Rk2R1IkRf9bA6Km/rY/gIEAOl4UHYRxxVUoQ5KgBUjxHTupA815ul3H91Yg0mrReCpXTAcd73BAAQEcWreNuuAxQKFad2713A+AVXPxECQQFMOKYP9Dj8DOMD2QICi0R+D2CyVNQq+0RAGBm69gzjWT20Um6PEQAQFuWVke/P5UBjpaK1vg19xPE5a8VWAAjylrwksrn1HhbIukgrNteCowBEQq2emxb3bAmy2jzZEmO7qGy3cyO/QaUMZW/DpasGS0PEYbIpB7KxTTUgGzMRNy0dsFx9gKTAEVVOWoEz9yko9E+9i3ea0xzxeOnBCzIlimjyE0xPCgAnFMpDJFCFXiUNird4Bz5Czb5JZb9fX9jN6mdp0+ICgKz1dzYC+ZoF8U+8JKhsxd7IDTQol9i9yFSv7m2vE8CjhZvvmC+AHUEBsWHIWAkgRP4VoM1WwUrOU1SzcGxDpcLTTuJRh1bLVKbzOD2NG6qKSMZXVfagCEGlxMT9kk4zgjFqI4C0wnjfnuAAABFoGDAAYqkWQoa0nLvs2QLp8aK1UVNIufNWG+H+mtDASPXlWdrsdkClfaS8rxjBerQHc2MTb4/HrM5BSbTuQiGDSP0s8bU2xgQ2SkRzEUBkMnDA46YG3Hg8jhzxIRqy3gfWPlpZmN/Ku0o0iO3hC/SDtesq3VglOqqQaKEvvUSQkIOto8HI7xsMj8w4FuN9aX10c230NQhe1kf8QY3ctNuN0Ws/eeb4oUPJ0Jit1Ugzxpn8bXiAt7aEfdT52b+twdfeNX/LxybLZ+2SUNVnlSVKGjokzYYCMYrFVX/JbKPNK7+2eXE0kOYyoeBhpdEbdjSsq+dpQE+2jEaz/NYnFo8vB4RiFt/oY0QBH5x13j9fQxD62D/83uoWnw8kNgsaNakZUB4pdh6oe4FdhshAbyDEev4cPmu2S0R7Dy94aBpYZbX0jJFVv42SAKVgO7KX8Hm7nzMJbjW4rYVUGiTAKQJICt5JBoGgerXjHuf+eOHALU/mhWdU7KAHhqD6qmfB3Q1q7XP6tytPzpyn4Vs7qo2ui9ahPt8dgu3DXy5dOVK8Ln3qUniEr/9tYn/d/tNrX8jwX5kYFW7L8xJYs485uS9dPF1K2kDAG/Bd7hvafGRATMF9/eobUk4eI2JYxt6fbf6XyzfEASgJPyHwj//h9v7F8R+2C+PtMCxEkwAAAABJRU5ErkJggg==");
+    background-image:var(--gn-daruri-tile);
   }
   body.reader-enhanced #readingControls .gn-top-read {
     display:inline-flex;box-sizing:border-box;align-items:center;justify-content:center;
@@ -238,4 +239,49 @@
 @media print {
   body.reader-enhanced #readingControls {display:none!important}
   body.reader-enhanced .topbar{display:none!important}
+}
+/* 23 Oct integration: one medallion / one Contents action, across existing themes.
+   The 64px original is supplied by --gn-daruri-tile above; do not add another logo. */
+@media screen {
+ body.reader-enhanced #readingControls .gn-reader-global-leading #menuBtn.gn-top-tile {
+   display:inline-flex!important;visibility:visible!important;
+   width:44px!important;min-width:44px!important;max-width:44px!important;
+   height:44px!important;min-height:44px!important;max-height:44px!important;
+   flex:0 0 44px!important;
+   border-radius:50%!important;
+   border:1px solid var(--border)!important;
+   padding:3px!important;
+   background-color:var(--paper)!important;
+   background-image:var(--gn-daruri-tile)!important;
+   background-size:36px 36px!important;
+   background-repeat:no-repeat!important;
+   background-position:center!important;
+   touch-action:manipulation;
+ }
+ body.reader-enhanced #readingControls #menuBtn.gn-top-tile svg {display:none!important}
+ body.reader-enhanced #readingControls #menuBtn.gn-top-tile:is(:hover,:focus-visible){
+   border-color:var(--accent)!important;box-shadow:0 0 0 2px var(--accent-soft)!important;
+ }
+ #fallbackReader .fb-topbar .gn-native-tile {
+   display:block;width:36px;height:36px;
+   background:var(--paper) var(--gn-daruri-tile) center/34px 34px no-repeat;
+   border-radius:50%;border:1px solid var(--border);
+ }
+ #fallbackReader .gn-sidebar-book-title{
+   display:flex;flex-direction:column;align-items:flex-start;gap:3px;margin:2px 0!important;
+ }
+ #fallbackReader .gn-sidebar-book-title cite{
+   display:block;font:500 23px/1.6 var(--arabic,'Amiri','Noto Naskh Arabic',serif);
+   font-style:normal;color:var(--text);
+ }
+ #fallbackReader .gn-sidebar-book-title .gn-sidebar-title-author{
+   display:block;font:500 12px/1.4 var(--sans,system-ui,sans-serif);color:var(--text-soft);
+ }
+ #fallbackReader .fb-topbar .fb-work-brand{display:none!important}
+ #fallbackReader .fb-topbar{height:48px!important;min-height:48px!important;padding-block:2px!important}
+ #fallbackReader .fb-topbar .fb-icon-button{
+   min-width:44px!important;min-height:44px!important;
+   align-items:center!important;justify-content:center!important;
+ }
+ #fallbackReader .fb-topbar .fb-icon-button .gn-native-tile {flex:none}
 }
