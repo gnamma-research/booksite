@@ -227,8 +227,10 @@ function disambiguate(word,neighbours=[],work,id=null,position=null){
  const found=lookup(word,work,{id,position});
  if(found.length){
   const positions=new Set(found.map(x=>x.position));
+  const curatedReview=found.filter(x=>x.source==='reviewed');
   const ranked=found.filter(x=>x.source==='contextual-bert');
-  const primary=ranked.length===1?ranked[0]:null;
+  const primary=curatedReview.length===1?curatedReview[0]:
+   ranked.length===1?ranked[0]:null;
   if(id&&position==null&&positions.size>1){
    const candidates=[...new Map(found.filter(x=>x.source!=='contextual-alternative')
     .map(x=>[x.lemma+'|'+x.pos+'|'+(x.lexId||''),x])).values()];
@@ -236,7 +238,8 @@ function disambiguate(word,neighbours=[],work,id=null,position=null){
   }
   if(primary){
    const alternatives=found.filter(x=>x!==primary&&x.source==='contextual-alternative');
-   return {best:primary,alternatives,certainty:'automated'};
+   return {best:primary,alternatives,
+    certainty:primary.source==='reviewed'?'reviewed':'automated'};
   }
   const distinct=[...new Map(found.filter(x=>x.source!=='contextual-alternative')
    .map(x=>[x.lemma+'|'+x.pos+'|'+(x.lexId||''),x])).values()];
