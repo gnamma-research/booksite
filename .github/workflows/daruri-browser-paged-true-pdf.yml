@@ -1,0 +1,86 @@
+name: Daruri REAL browser CSS paged-media HTML to vector PDF + footnote QA
+on:
+  push:
+    branches: [research/daruri-paged-browser-pdf-20261023]
+    paths:
+      - 'daruri/qa/browser_pdf_paged_probe.js'
+      - 'daruri/qa/browser_pdf_paged_probe.html'
+      - 'daruri/qa/verify_true_browser_pdf.cjs'
+      - 'daruri/qa/audit_browser_pdf_vector.py'
+      - '.github/workflows/daruri-browser-paged-true-pdf.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-browser-paged-html-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  true-client-paged-pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - engine: chromium
+            mode: excerpt
+            port: 8904
+          - engine: webkit
+            mode: excerpt
+            port: 8905
+          - engine: chromium
+            mode: english-full
+            port: 8906
+          - engine: chromium
+            mode: bilingual-full
+            port: 8907
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PINNED LGPL in-browser paged CSS layout and real vector PDF emitter
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/qa \
+            paginate-for-print@1.1.2 pages-to-pdf@0.4.1 esbuild@0.25.12 playwright@1.56.1
+          cd daruri/qa
+          if [ '${{ matrix.engine }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Bundle open-source paged-media-to-real-PDF client (no backend service)
+        run: |
+          node daruri/qa/node_modules/esbuild/bin/esbuild \
+            daruri/qa/browser_pdf_paged_probe.js --bundle --platform=browser \
+            --target=es2022 --format=iife \
+            --outfile=daruri/qa/browser_pdf_paged.bundle.js
+      - name: Install independent PDF document inspection engines
+        run: python -m pip install --disable-pip-version-check 'PyMuPDF==1.26.7' 'pypdfium2==5.8.0'
+      - name: Recreate authorial Arabic/English complete test text from canonical reader
+        run: python daruri/qa/build_browser_pdf_canonical_fixture.py
+      - name: Generate actual vector PDF bytes via browser and downloaded Blob, NOT CDP printToPDF
+        env:
+          GN_BROWSER: ${{ matrix.engine }}
+          GN_PDF_SCENARIO: ${{ matrix.mode }}
+          GN_BROWSER_PORT: ${{ matrix.port }}
+          GN_PDF_PAGE: /daruri/qa/browser_pdf_paged_probe.html
+          GN_PDF_OUT: /tmp/daruri-true-paged-browser/${{ matrix.engine }}-${{ matrix.mode }}
+        run: node daruri/qa/verify_true_browser_pdf.cjs
+      - name: Check Arabic Unicode, search/copy, A4 pages, footnote and links with MuPDF/PDFium
+        run: |
+          python daruri/qa/audit_browser_pdf_vector.py \
+            --pdf /tmp/daruri-true-paged-browser/${{ matrix.engine }}-${{ matrix.mode }}/daruri-${{ matrix.engine }}-${{ matrix.mode }}-NONRELEASE.pdf \
+            --canonical-fixture daruri/qa/browser_pdf_canonical_fixture.json \
+            --browser-report /tmp/daruri-true-paged-browser/${{ matrix.engine }}-${{ matrix.mode }}/browser-${{ matrix.engine }}-${{ matrix.mode }}-evidence.json \
+            --output /tmp/daruri-true-paged-browser/${{ matrix.engine }}-${{ matrix.mode }}/independent-PDF-engine-qa.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Daruri-REAL-browser-paged-footnotes-${{ matrix.engine }}-${{ matrix.mode }}-NONRELEASE
+          path: /tmp/daruri-true-paged-browser/${{ matrix.engine }}-${{ matrix.mode }}/
+          retention-days: 14
+          if-no-files-found: warn
