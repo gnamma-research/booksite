@@ -268,3 +268,86 @@
     }
   }
 }
+
+
+/* Nama / Gnamma landscape surface polish — 2026-10-23 */
+/* The two photographic palettes need a single rounded surface per reading
+   section. Do not add a second square sheet behind the Back to reading action.
+   This is deliberately screen-only and palette-scoped: print and the native
+   light/dark/sepia/Andalusian appearances remain unchanged. */
+@media screen {
+  :root:is([data-palette="gnamma"], [data-palette="gnamma-air"]),
+  #fallbackReader:has(#fb-pal-gnamma:checked, #fb-pal-gnamma-air:checked) {
+    --gn-scene-radius: 16px;
+    --gn-scene-shadow: 0 7px 23px rgba(19, 33, 29, .10);
+  }
+
+  /* One quiet glass card, rather than a rounded button nested in a square bar.
+     The original sticky position, hit target, return label and focus remain. */
+  :root:is([data-palette="gnamma"], [data-palette="gnamma-air"])
+    .reading-return-bar {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 17px;
+  }
+  :root:is([data-palette="gnamma"], [data-palette="gnamma-air"])
+    .reading-return-action {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--gn-scene-radius);
+    box-shadow: var(--gn-scene-shadow);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    min-height: 54px;
+  }
+
+  /* The article is already one translucent sheet in these palettes.
+     Round that continuous sheet, not each passage (no stacked mini-cards). */
+  :root:is([data-palette="gnamma"], [data-palette="gnamma-air"])
+    .reader .reading-frame .parallel-text {
+    border-radius: var(--gn-scene-radius);
+    box-shadow: 0 5px 19px rgba(19, 33, 29, .055);
+  }
+  :root:is([data-palette="gnamma"], [data-palette="gnamma-air"])
+    :is(.reader-heading, .panel-hero) {
+    border-radius: var(--gn-scene-radius);
+  }
+
+  /* Structured reading has a filled apparatus sheet; give it a complete,
+     softly rounded outline. Quiet/book reading keeps a simple top rule. */
+  :root:is([data-palette="gnamma"], [data-palette="gnamma-air"])[data-reading-style="structured"]
+    .reader .gn-reading-aftertext.gn-tidy-apparatus {
+    border: 1px solid var(--line) !important;
+    border-radius: var(--gn-scene-radius);
+    box-shadow: 0 5px 19px rgba(19, 33, 29, .055) !important;
+  }
+
+  /* Small background-bearing contents callouts also follow the same shape. */
+  :root:is([data-palette="gnamma"], [data-palette="gnamma-air"])
+    .contents-mode-note {
+    border-radius: 12px;
+  }
+
+  /* No-script reading already has sheets: soften their outer corners without
+     changing column order, padding, language choice or source navigation. */
+  #fallbackReader:has(#fb-pal-gnamma:checked, #fb-pal-gnamma-air:checked)
+    :is(.fb-reading-grid, .fb-reading-content) {
+    border-radius: var(--gn-scene-radius);
+  }
+  #fallbackReader:has(#fb-pal-gnamma:checked, #fb-pal-gnamma-air:checked)
+    .fb-quick-return {
+    background: transparent;
+    border-bottom: 0;
+  }
+  #fallbackReader:has(#fb-pal-gnamma:checked, #fb-pal-gnamma-air:checked)
+    .fb-quick-return > a {
+    display: block;
+    padding: 10px 13px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--gn-scene-radius);
+    box-shadow: var(--gn-scene-shadow);
+  }
+}

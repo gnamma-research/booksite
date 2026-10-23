@@ -75,6 +75,82 @@ async function test(name,fn){await fn();pass++;console.log('PASS '+name)}
    assert.match(out,/result/);
    await page.locator('[data-gns-close="1"]').last().click();
   });
+  await test('typing qiyas exposes the actual أقيسة plural and ranks §223 first',async()=>{
+   await page.locator('#searchBtn').click();
+   await page.locator('#gns-query').fill('qiyas');
+   await page.waitForFunction(()=>
+     document.querySelector('.gns-morph-assist')?.textContent.includes('أقيسة'),
+     {timeout:9000});
+   assert.match(await page.locator('.gns-morph-assist').innerText(),/أقيسة/);
+   await page.locator('[data-gns-morph-pick="morph-lemma"]').click();
+   await page.waitForFunction(()=>window.GnammaUnifiedSearch.getState().mode==='morph-lemma');
+   const first=page.locator('.gns-result').first();
+   const info=await page.evaluate(()=>{
+     const result=window.GnammaUnifiedSearch.query('qiyas',{mode:'morph-lemma'}).results;
+     const sample=result.find(x=>x.id==='passage:223:0');
+     return {sample:{id:sample?.id,term:sample?.matched?.term,forms:sample?.matched?.forms},
+       first:{id:result[0]?.id,term:result[0]?.matched?.term}};
+   });
+   assert.equal(info.sample.term,'أقيسة',JSON.stringify(info));
+   assert.ok(info.sample.forms.includes('القياس'),JSON.stringify(info));
+   assert.equal(info.first.id,'passage:223:0',JSON.stringify(info));
+   assert.match(await first.locator('.gns-row-excerpt mark').innerText(),/أقيسة/);
+   assert.match(await first.locator('.gns-morph-in-paragraph').innerText(),/أقيسة/);
+   await page.locator('.gns-dialog [data-gns-close="1"]').click();
+  });
+  await test('research search explains word forms, roots and concepts',async()=>{
+   await page.locator('#searchBtn').click();
+   await page.locator('[data-gns-expand="1"]').first().click();
+   const choices=await page.locator('#gns-mode option').allTextContents();
+   assert.ok(choices.some(x=>/Word forms/.test(x)));
+   assert.ok(choices.some(x=>/Related words \(root\)/.test(x)));
+   assert.ok(choices.some(x=>/Scholarly concepts/.test(x)));
+   await page.locator('#gns-mode').selectOption('morph-lemma');
+   assert.match(await page.locator('#gns-mode-help').innerText(),/dictionary headword/);
+   assert.equal(await page.locator('.gns-extra-tools').getAttribute('open'),null);
+   await page.locator('.gns-extra-tools > summary').click();
+   assert.ok(await page.locator('#gns-display').count());
+   await page.locator('.gns-dialog [data-gns-close="1"]').click();
+  });
+  await test('clicked Arabic word identifies the verified source occurrence',async()=>{
+   const found=await page.evaluate(()=>{
+    const engine=window.GnammaMorphology;
+    const book=JSON.parse(document.querySelector('#editionData').textContent);
+    let selected=null;
+    for(const section of book.sections){
+     for(let index=0;index<(section.segments||[]).length;index++){
+      const segment=section.segments[index],text=segment.ar||segment.vocalized||'';
+      const tokens=engine.tokenize(text);
+      const position=tokens.findIndex((x,j)=>j>0&&tokens.slice(0,j)
+       .some(y=>engine.fold(y.word)===engine.fold(x.word)));
+      if(position>0){selected={section,index,text,tokens,position};break;}
+     }
+     if(selected)break;
+    }
+    if(!selected)return null;
+    const grid=document.createElement('div');grid.className='passage-grid';
+    grid.dataset.segment=String(selected.index);
+    const content=document.createElement('div');content.className='passage-ar';
+    content.textContent=selected.text;grid.append(content);document.body.append(grid);
+    const target=selected.tokens[selected.position],node=content.firstChild;
+    const cursor=target.start+Math.min(2,target.word.length-1);
+    const result=window.GnammaWordContext.locateOccurrence(
+     target.word,grid,{node,offset:cursor},selected.section.id,selected.index);
+    const altered=document.createElement('div');altered.className='passage-grid';
+    const mismatch=document.createElement('div');mismatch.className='passage-ar';
+    mismatch.textContent='غير '+selected.text;altered.append(mismatch);document.body.append(altered);
+    const invalid=window.GnammaWordContext.locateOccurrence(
+     target.word,altered,{node:mismatch.firstChild,offset:cursor+4},
+     selected.section.id,selected.index);
+    grid.remove();altered.remove();
+    return {found:result,expected:selected.position,
+     preceding:selected.tokens[selected.position-1].word,invalid:invalid.position};
+   });
+   assert.ok(found,'Need a repeated Arabic word in the published source');
+   assert.equal(found.found.position,found.expected);
+   assert.equal(found.found.neighbours[0],found.preceding);
+   assert.equal(found.invalid,null,'Shifted reading tokens must not inherit false source analyses');
+  });
   await test('word context keeps dictionary and search actions separate',async()=>{
    const output=await page.evaluate(async()=>{
     const node=document.querySelector('.passage-grid .passage-ar');

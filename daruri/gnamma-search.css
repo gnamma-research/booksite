@@ -128,3 +128,152 @@
  .gns-near-options{grid-template-columns:1fr}
  .gns-near-order{grid-column:auto}
 }
+
+
+/* 23 Oct 2026: calm progressive disclosure of research/morphological controls. */
+.gns-root .gns-dialog.gns-expanded{width:min(940px,calc(100vw - 40px))}
+.gns-root .gns-dialog .gns-tools{grid-template-columns:repeat(3,minmax(0,1fr));padding:11px 18px 8px;gap:12px}
+.gns-root .gns-mode-help{margin:0;padding:1px 18px 11px;background:var(--gns-alt);border-bottom:1px solid var(--gns-edge);color:var(--gns-soft);font:450 11px/1.55 var(--sans,system-ui,sans-serif)}
+.gns-root .gns-extra-tools{border-bottom:1px solid var(--gns-edge);background:var(--gns-paper)}
+.gns-root .gns-extra-tools>summary{list-style:none;cursor:pointer;padding:9px 18px;color:var(--gns-contrast);font:650 11px/1.4 var(--sans,system-ui,sans-serif)}
+.gns-root .gns-extra-tools>summary::-webkit-details-marker{display:none}
+.gns-root .gns-extra-tools>summary::after{content:'⌄';display:inline-block;margin-inline-start:8px;transition:transform .15s}
+.gns-root .gns-extra-tools[open]>summary::after{transform:rotate(180deg)}
+.gns-root .gns-extra-tools>summary:hover,.gns-root .gns-extra-tools>summary:focus-visible{background:var(--gns-alt)}
+.gns-root .gns-extra-tools .gns-result-options{justify-content:flex-start;padding:4px 18px 12px;background:var(--gns-paper);border-bottom:0;gap:14px}
+.gns-root .gns-extra-tools .gns-result-options .gns-setting{width:min(190px,45%)}
+.gns-root .gns-results-top{flex-wrap:wrap}
+.gns-root .gns-morph-assist .gns-match-chip{white-space:normal;text-align:center}
+@media(max-width:760px){
+ .gns-root .gns-dialog.gns-expanded{width:100vw}
+ .gns-root .gns-dialog .gns-tools{grid-template-columns:repeat(2,minmax(0,1fr));padding:9px 13px 7px;gap:8px}
+ .gns-root .gns-dialog .gns-tools .gns-setting:last-child{grid-column:1/-1}
+ .gns-root .gns-mode-help{padding:0 13px 9px}
+ .gns-root .gns-extra-tools>summary{padding:9px 13px}
+ .gns-root .gns-extra-tools .gns-result-options{padding:3px 13px 12px;flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){
+ .gns-root .gns-extra-tools>summary::after{transition:none}
+}
+
+.gns-root .gns-research-caption{color:var(--gns-txt);font:650 12px/1.4 var(--sans,system-ui,sans-serif)}
+
+/* Research results are primary; controls sit beside them on desktop, and on
+   a separate short-lived editing screen on phones. Reader theme tokens only.
+   No fixed floating overlay obscures the results or the device safe areas. */
+.gns-research-grid{flex:1;min-height:0;min-width:0;display:grid;
+ grid-template-columns:minmax(250px,298px) minmax(0,1fr);overflow:hidden}
+.gns-root .gns-dialog.gns-expanded{width:min(1080px,calc(100vw - 40px))}
+.gns-refine-pane{min-height:0;min-width:0;overflow:auto;
+ overscroll-behavior:contain;border-inline-end:1px solid var(--gns-edge);background:var(--gns-alt)}
+.gns-research-grid .gns-workspace{min-width:0;min-height:0}
+.gns-research-grid .gns-sidebar{display:none}
+.gns-root .gns-research-grid .gns-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:9px;padding:12px}
+.gns-root .gns-research-grid .gns-tools[hidden]{display:none}
+.gns-root .gns-research-grid .gns-tools .gns-setting:last-child{grid-column:1/-1}
+.gns-root .gns-research-grid .gns-mode-help{padding:4px 12px 10px}
+.gns-research-grid .gns-scholarly{max-height:none;overflow:visible}
+.gns-research-grid .gns-scholarly-settings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:8px;padding:10px 12px}
+.gns-research-grid .gns-scholarly-settings .gns-setting{min-width:0;max-width:none}
+.gns-research-grid .gns-pattern-examples{grid-column:1/-1}
+.gns-research-grid .gns-builder>summary,.gns-research-grid .gns-saved>summary{padding:11px 12px}
+.gns-research-grid .gns-builder-inner,.gns-research-grid .gns-saved-content{padding:0 12px 12px}
+.gns-research-grid .gns-builder-row{grid-template-columns:70px minmax(0,1fr) 26px;gap:7px}
+.gns-research-grid .gns-builder-row select[data-gns-builder-kind]{grid-column:2;grid-row:1}
+.gns-research-grid .gns-builder-row input{grid-column:1/3;grid-row:2}
+.gns-research-grid .gns-builder-row select[data-gns-builder-field]{grid-column:1/3;grid-row:3}
+.gns-research-grid .gns-builder-row .gns-builder-remove,
+.gns-research-grid .gns-builder-row>span:last-child{grid-column:3;grid-row:1}
+.gns-research-grid .gns-explanation{padding:10px 12px}
+.gns-root .gns-research-grid .gns-extra-tools>summary{padding:9px 12px}
+.gns-root .gns-research-grid .gns-extra-tools .gns-result-options{padding:4px 12px 12px;display:grid;gap:8px}
+.gns-root .gns-research-grid .gns-extra-tools .gns-result-options .gns-setting{width:100%}
+.gns-mobile-resultsbar,.gns-mobile-build-title,.gns-mobile-build-actions,.gns-mobile-saved-view{display:none}
+
+@media(max-width:760px){
+ /* Mobile research is a distinct editing view, NOT stacked over results. */
+ .gns-root .gns-dialog.gns-expanded{width:100vw;max-height:100dvh}
+ .gns-dialog.gns-expanded .gns-switchbar{padding:5px 12px;min-height:41px}
+ .gns-mobile-resultsbar{display:flex;align-items:center;gap:6px;
+   min-height:42px;padding:5px 10px 5px 13px;border-bottom:1px solid var(--gns-edge);
+   background:var(--gns-alt)}
+ .gns-mobile-search-summary{min-width:0;flex:1;white-space:nowrap;overflow:hidden;
+   text-overflow:ellipsis;color:var(--gns-soft);font:500 11px/1.4 var(--sans,system-ui,sans-serif)}
+ .gns-mobile-resultsbar button,.gns-mobile-build-title button{
+   border:1px solid var(--gns-edge);border-radius:6px;background:var(--gns-paper);
+   color:var(--gns-contrast);padding:6px 9px;cursor:pointer;
+   font:650 11px/1.3 var(--sans,system-ui,sans-serif);flex:none}
+ .gns-research-grid{display:flex;flex-direction:column;min-height:0;overflow:hidden}
+ .gns-refine-pane{display:none}
+ .gns-research-grid .gns-workspace{display:flex;flex:1;min-height:0;overflow:hidden}
+ .gns-research-grid .gns-listpane{flex:1;min-height:0}
+ .gns-dialog.gns-expanded .gns-foot{display:none}
+ .gns-mobile-build-title{padding:10px 12px;align-items:center;justify-content:space-between;
+   gap:8px;border-bottom:1px solid var(--gns-edge);background:var(--gns-paper);
+   font:650 13px/1.45 var(--sans,system-ui,sans-serif)}
+ .gns-mobile-build-actions{padding:10px 12px;flex:none;
+   border-top:1px solid var(--gns-edge);background:var(--gns-paper)}
+ .gns-mobile-build-actions button{width:100%;padding:11px 14px;
+   background:var(--accent-soft,var(--gns-alt));border:1px solid var(--gns-contrast);
+   border-radius:8px;color:var(--gns-contrast);cursor:pointer;font:700 13px/1.4 var(--sans,system-ui,sans-serif)}
+ .gns-dialog.gns-mobile-building .gns-mobile-resultsbar,
+ .gns-dialog.gns-mobile-show-saved .gns-mobile-resultsbar{display:none}
+ .gns-dialog.gns-mobile-building .gns-workspace{display:none}
+ .gns-dialog.gns-mobile-building .gns-refine-pane{display:block;width:100%;height:100%;
+   flex:1;overflow-y:auto;border:0;background:var(--gns-paper)}
+ .gns-dialog.gns-mobile-building .gns-mobile-build-title,
+ .gns-dialog.gns-mobile-building .gns-mobile-build-actions{display:flex}
+ .gns-dialog.gns-mobile-building .gns-research-grid{flex:1}
+ .gns-root .gns-dialog.gns-mobile-building .gns-tools{display:grid}
+ .gns-root .gns-dialog.gns-mobile-building .gns-scholarly{max-height:none;overflow:visible}
+ .gns-dialog.gns-expanded .gns-scholarly .gns-saved{display:none}
+ .gns-dialog.gns-mobile-show-saved .gns-research-grid{display:none}
+ .gns-dialog.gns-mobile-show-saved .gns-mobile-saved-view{display:block;
+   flex:1;min-height:0;overflow-y:auto;background:var(--gns-paper)}
+ .gns-dialog.gns-mobile-show-saved .gns-mobile-saved-view .gns-mobile-build-title{display:flex}
+ .gns-dialog.gns-mobile-show-saved .gns-mobile-saved-view .gns-saved{border:0}
+ .gns-dialog.gns-mobile-show-saved .gns-mobile-saved-view .gns-saved>summary{display:none}
+ .gns-dialog.gns-mobile-show-saved .gns-mobile-saved-view .gns-saved-content{padding:12px}
+ .gns-dialog.gns-mobile-show-saved .gns-mobile-saved-view .gns-saved-list{max-height:none}
+ .gns-dialog.gns-mobile-show-saved .gns-switchbar{display:none}
+ .gns-dialog.gns-mobile-show-saved .gns-header{min-height:52px}
+ .gns-dialog.gns-mobile-building .gns-pattern-examples{gap:5px}
+ .gns-dialog.gns-mobile-building .gns-pattern-examples button{min-height:33px}
+ .gns-dialog.gns-mobile-building .gns-scholarly-settings{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .gns-dialog.gns-mobile-building .gns-builder-row{grid-template-columns:75px minmax(0,1fr) 28px}
+ .gns-dialog.gns-expanded .gns-mobile-saved-view button,
+ .gns-dialog.gns-expanded .gns-mobile-build-title button,
+ .gns-dialog.gns-expanded .gns-mobile-resultsbar button{touch-action:manipulation}
+}
+@media(max-width:360px){
+ .gns-mobile-resultsbar{gap:4px;padding:5px 8px}
+ .gns-mobile-resultsbar button{padding:6px 7px}
+}
+
+/* Attested Arabic word-form hints: one compact, tappable line in Research;
+   source-linked alternates in results, not another large controls panel. */
+.gns-root .gns-morph-assist{display:flex;flex-wrap:wrap;align-items:center;gap:7px 12px;
+ padding:8px 14px;background:var(--gns-alt);border-bottom:1px solid var(--gns-edge);
+ color:var(--gns-soft);font:500 12px/1.45 var(--sans,system-ui,sans-serif)}
+.gns-root .gns-morph-assist>span{flex:1;min-width:130px}
+.gns-root .gns-morph-assist .gns-morph-buttons{display:flex;flex-wrap:wrap;gap:7px}
+.gns-root .gns-morph-assist button{border:1px solid var(--gns-edge);border-radius:7px;
+ background:var(--gns-paper);color:var(--gns-contrast);cursor:pointer;
+ min-height:33px;padding:6px 9px;font:650 12px/1.4 var(--sans,system-ui,sans-serif)}
+.gns-root .gns-morph-assist button:hover,
+.gns-root .gns-morph-assist button:focus-visible{background:var(--accent-soft,var(--gns-alt))}
+.gns-root .gns-morph-assist small{flex-basis:100%;color:var(--gns-soft);
+ font:450 10.5px/1.45 var(--sans,system-ui,sans-serif)}
+.gns-root .gns-morph-compact{padding:6px 13px;gap:7px}
+.gns-root .gns-morph-compact>span{min-width:0;white-space:normal}
+.gns-root .gns-morph-compact button{min-height:30px;padding:4px 8px}
+.gns-root .gns-morph-assist bdi,.gns-root .gns-morph-in-paragraph bdi{
+ font:500 16px/1.4 'Amiri','Noto Naskh Arabic',serif;color:var(--gns-txt)}
+.gns-root .gns-morph-in-paragraph{color:var(--gns-soft);font:500 11px/1.55 var(--sans,system-ui,sans-serif)}
+@media(max-width:400px){
+ .gns-root .gns-morph-compact{padding:5px 10px}
+ .gns-root .gns-morph-compact button{font-size:11px}
+ .gns-root .gns-result .gns-morph-in-paragraph{font-size:10.5px}
+}

@@ -1,0 +1,59 @@
+name: Daruri full scholarly journey QA
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/daruri-scholarly-journey-qa.yml'
+      - 'daruri/qa/verify-scholarly-journey-browser.cjs'
+      - 'daruri/hadith-context-*'
+      - 'daruri/hadith-inline-anchors.js'
+      - 'daruri/quran-context-ui.js'
+      - 'daruri/source-note-ui.js'
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/gnamma-search.js'
+      - 'daruri/gnamma-search-return.js'
+      - 'daruri/reading-desk.js'
+      - 'daruri/index.html'
+  pull_request:
+    paths:
+      - '.github/workflows/daruri-scholarly-journey-qa.yml'
+      - 'daruri/qa/verify-scholarly-journey-browser.cjs'
+      - 'daruri/hadith-context-*'
+      - 'daruri/hadith-inline-anchors.js'
+      - 'daruri/quran-context-ui.js'
+      - 'daruri/source-note-ui.js'
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/gnamma-search.js'
+      - 'daruri/gnamma-search-return.js'
+      - 'daruri/reading-desk.js'
+      - 'daruri/index.html'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  integrated-reader:
+    name: H Q N source journey, mobile and desktop
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test engines
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Follow complete offline scholarly reading, evidence and return journeys
+        run: node daruri/qa/verify-scholarly-journey-browser.cjs
+      - name: Preserve synthetic journey check results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scholarly-journey-regression
+          path: daruri/qa/scholarly-journey-artifacts/qa-results.json
+          retention-days: 7
+          if-no-files-found: ignore

@@ -138,8 +138,66 @@ function test(name,fn){return fn().then(()=>{pass++;console.log('PASS '+name)}).
    assert.equal(width.overflow,false);
    await mobile.locator('[data-gns-expand="1"]').first().click();
    assert.equal(await mobile.locator('#gns-mode').count(),1);
+   assert.equal(await mobile.locator('.gns-mobile-resultsbar').isVisible(),true);
+   assert.equal(await mobile.locator('.gns-refine-pane').isVisible(),false,
+     'Search settings must not occupy the result viewport');
+   assert.ok(await mobile.locator('.gns-result').count()>1,'Results should occupy the screen');
+   await mobile.locator('[data-gns-mobile-view="build"]').click();
+   assert.equal(await mobile.locator('.gns-refine-pane').isVisible(),true);
+   assert.equal(await mobile.locator('.gns-listpane').isVisible(),false);
+   await mobile.locator('.gns-extra-tools > summary').click();
    await mobile.locator('#gns-display').selectOption('concordance');
+   await mobile.locator('[data-gns-mobile-view="results"]').last().click();
+   assert.equal(await mobile.locator('.gns-refine-pane').isVisible(),false);
    assert.ok(await mobile.locator('.gns-kwic').count()>0);
+   await mobile.locator('[data-gns-mobile-view="saved"]').click();
+   assert.equal(await mobile.locator('.gns-mobile-saved-view').isVisible(),true);
+   assert.equal(await mobile.locator('.gns-listpane').isVisible(),false);
+   await mobile.locator('#gns-save-name-mobile').fill('Mobile research save');
+   await mobile.locator('.gns-mobile-saved-view [data-gns-save]').click();
+   assert.equal(await mobile.locator('.gns-mobile-saved-view [data-gns-load="0"]').isVisible(),true);
+   const names=await mobile.evaluate(()=>JSON.parse(
+      localStorage.getItem('gnamma-scholarly-saved-searches-v1')||'[]').map(x=>x.name));
+   assert.ok(names.includes('Mobile research save'),'Mobile save reads the visible mobile title field');
+   await mobile.locator('.gns-mobile-saved-view [data-gns-load="0"]').click();
+   assert.equal(await mobile.locator('.gns-mobile-resultsbar').isVisible(),true);
+   await mobile.locator('[data-gns-mobile-view="saved"]').click();
+   await mobile.locator('.gns-mobile-saved-view [data-gns-delete="0"]').click();
+   await mobile.locator('.gns-mobile-saved-view [data-gns-mobile-view="results"]').click();
+   assert.ok(await mobile.locator('.gns-kwic').count()>0);
+   await mobile.locator('#gns-query').press('Enter');
+   assert.equal(await mobile.locator('.gns-refine-pane').isVisible(),false);
+   assert.ok(await mobile.locator('.gns-kwic').count()>0,
+     'Mobile Enter should show results, not open the first reader passage');
+ });
+ await test('Research search keeps a full-height result pane at 320, 390 and 430 pixels',async()=>{
+   for(const width of [320,390,430]){
+     await mobile.setViewportSize({width,height:760});
+     assert.equal(await mobile.locator('.gns-workspace').isVisible(),true);
+     const result=await mobile.evaluate(()=>{
+       const viewport=document.querySelector('.gns-dialog').getBoundingClientRect();
+       const pane=document.querySelector('.gns-listpane').getBoundingClientRect();
+       const builder=document.querySelector('.gns-refine-pane');
+       return {viewport:viewport.height,pane:pane.height,hidden:getComputedStyle(builder).display==='none',
+               horizontal:document.documentElement.scrollWidth>innerWidth};
+     });
+     assert.ok(result.pane>=340,JSON.stringify({width,...result}));
+     assert.ok(result.hidden&&!result.horizontal,JSON.stringify({width,...result}));
+   }
+   await mobile.setViewportSize({width:390,height:844});
+ });
+ await test('Desktop Advanced Search puts controls beside—not above—results',async()=>{
+   if(!(await page.locator('#gns-query').count()))await trigger.click();
+   await expand();
+   const geom=await page.evaluate(()=>{
+     const builder=document.querySelector('.gns-refine-pane')?.getBoundingClientRect();
+     const results=document.querySelector('.gns-listpane')?.getBoundingClientRect();
+     return {builder:builder?.toJSON(),results:results?.toJSON()};
+   });
+   assert.ok(geom.builder&&geom.results,JSON.stringify(geom));
+   assert.ok(geom.builder.right<=geom.results.left+3,JSON.stringify(geom));
+   assert.ok(geom.results.height>250,JSON.stringify(geom));
+   await close();
  });
  await test('no fatal JavaScript errors from search implementation',async()=>{
    assert.equal(pageErrors.length,0,pageErrors.slice(0,5).join(', '));

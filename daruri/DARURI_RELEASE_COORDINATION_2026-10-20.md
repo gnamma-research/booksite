@@ -1,5 +1,11 @@
 # Darūrī release coordination — 20 October 2026
 
+## AR vowel spacing — publisher claim released, 23 October 2026
+
+Matched the toolbar and both Editions AR/EN labels to one shared 600-weight, 14px, single-line font rule. All place the curved overbar at -4px (3px closer to the letters than before), so the visible gap no longer varies with the former 11–14px toolbar versus 15px Editions font metrics. Button dimensions and language-state behavior are unchanged. Runtime/cache revision: `20261023-ar-spacing1`; preserved concurrent backup, Hadith and PDF work.
+
+Validation: inline scripts parse, all nine language-state cases and retained-control assertions pass, and changed stylesheet/package/cache URLs agree. The existing language test needed its script-end delimiter corrected in memory because its last-script parser includes trailing external script tags; the repository test was not changed. Full PDF tests are outside this CSS-only change. User explicitly authorized publication on 23 October 2026. Merged with the latest search updates; publish through PR #96.
+
 ## Live reader merge and parallel PDF coordination — 22 October 2026
 
 **Reading-mode publisher claim: released.** [PR #39](https://github.com/gnamma-research/booksite/pull/39) is merged into `master` at commit [`7791e6e`](https://github.com/gnamma-research/booksite/commit/7791e6e93abbe00a7033cb920258f6b1b7ed6b5b). The reader offers three named modes, **Reading**, **Focus** (optionally show scholarly apparatus after the text), and **Continuous**. The enhanced reader no longer duplicates Previous/Next navigation inside the text; its persistent dock remains the navigator. Small, monochrome nonzero bookmark/selection/personal-note counts appear beneath the centred dock title and open the relevant Reading Desk entries without deleting them. The mockup-only round symbol is not part of the implementation. Existing English/Arabic/vowel controls, saved notes, source links, reader themes and no-JavaScript fallback are preserved. Focus 1 historical preferences are mapped into the Focus apparatus option.

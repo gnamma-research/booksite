@@ -1,0 +1,59 @@
+name: Daruri navigation trail and help QA
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/reading-navigation-*.js'
+      - 'daruri/reading-navigation-*.css'
+      - 'daruri/reading-desk.js'
+      - 'daruri/qa/verify-reading-navigation-*'
+      - '.github/workflows/daruri-navigation-history.yml'
+  pull_request:
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/reading-navigation-*.js'
+      - 'daruri/reading-navigation-*.css'
+      - 'daruri/reading-desk.js'
+      - 'daruri/qa/verify-reading-navigation-*'
+      - '.github/workflows/daruri-navigation-history.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-model:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install contents test DOM
+        run: npm install --no-save --prefix daruri/qa jsdom@26
+      - name: Navigation model, integration and source contracts
+        env:
+          NODE_PATH: daruri/qa/node_modules
+        run: |
+          node --check daruri/reading-navigation-history.js
+          node --check daruri/reading-navigation-bridge.js
+          node --check daruri/reading-desk.js
+          node daruri/qa/verify-reading-navigation-history.js
+          node daruri/qa/verify-compact-menus.js
+          node daruri/qa/verify-contents-structure.js
+          node daruri/qa/verify-menu-accessibility.js
+          node daruri/qa/verify-focus-modes.js
+  mobile-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Check title picker, exact Back/Forward, recent history and backups
+        run: node daruri/qa/verify-reading-navigation-browser.cjs
