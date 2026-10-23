@@ -26,7 +26,7 @@ async function check(engine,width,touch){
   await page.waitForFunction(()=>document.querySelector('#reader .passage-grid')&&window.GnammaReaderScrollLock,{timeout:35000});
   await page.evaluate(()=>window.scrollTo({top:700,behavior:'instant'}));
   await delay(100);
-  const before=await page.evaluate(()=>window.scrollY);
+  let before=await page.evaluate(()=>window.scrollY);
   async function verifyOpen(selector,description){
    await page.locator(selector).waitFor({timeout:25000});
    const state=await page.evaluate(()=>{
@@ -42,20 +42,29 @@ async function check(engine,width,touch){
    assert(restored.position===''&&restored.overflow==='',label+' '+description+': lock not released');
    assert(Math.abs(restored.y-before)<4,label+' '+description+': lost reading position');
   }
-  await page.evaluate(()=>showOverlay('settingsOverlay'));
+  await page.evaluate(()=>document.getElementById('settingsBtn').click());
   await verifyOpen('#settingsOverlay:not([hidden]) [role="dialog"]','settings');
-  await page.evaluate(()=>closeOverlay('settingsOverlay'));
+  await page.evaluate(()=>document.getElementById('settingsClose').click());
   await verifyClosed('settings');
-  await page.evaluate(()=>showOverlay('infoOverlay'));
+  // Open an actual primary English publisher note (N001) to exercise Reference.
+  await page.goto(HOST+'/daruri/#section=1',{waitUntil:'domcontentloaded',timeout:90000});
+  const publisher=page.locator('#reader .gn-note-en-range:visible').first();
+  await publisher.waitFor({timeout:30000});
+  await publisher.scrollIntoViewIfNeeded();
+  before=await page.evaluate(()=>window.scrollY);
+  await publisher.click();
   const initial=await verifyOpen('#infoOverlay:not([hidden]) [role="dialog"]','reference');
-  // Nested scholar note must not unlock the underlying reference dialog.
-  await page.evaluate(()=>gnShowLayer('Editorial note','<article class="gn-layer-note"><h3>Source note</h3><p>Context</p></article>','notes'));
-  await verifyOpen('#gn-scholar-layer [role="dialog"]','nested source');
-  await page.locator('#gn-scholar-layer [data-gn-close]').last().click();
+  // Verify the same lock's reference counting: closing the reference must not
+  // release the book while an overlapping secondary owner still holds it.
+  await page.evaluate(()=>window.GnammaReaderScrollLock.acquire('nested-note-qa'));
+  await page.locator('#detailClose').click();
   const nested=await page.evaluate(()=>({active:window.GnammaReaderScrollLock.active(),position:document.body.style.position,top:document.body.style.top}));
-  assert(nested.active&&nested.position==='fixed'&&nested.top===initial.top,label+': returning to reference unlocked the book');
-  await page.evaluate(()=>closeOverlay('infoOverlay'));
-  await verifyClosed('nested scholarly note');
+  assert(nested.active&&nested.position==='fixed'&&nested.top===initial.top,label+': closing reference unlocked another popup owner');
+  await page.evaluate(()=>window.GnammaReaderScrollLock.release('nested-note-qa'));
+  await verifyClosed('nested reference lock');
+  await page.goto(HOST+'/daruri/#section=31',{waitUntil:'domcontentloaded',timeout:90000});
+  await page.evaluate(()=>window.scrollTo({top:700,behavior:'instant'}));
+  before=await page.evaluate(()=>window.scrollY);
   await page.waitForFunction(()=>!!window.GnammaUnifiedSearch,{timeout:30000});
   await page.evaluate(()=>window.GnammaUnifiedSearch.open());
   await verifyOpen('#gn-unified-search:not([hidden]) [role="dialog"]','research search');
@@ -80,9 +89,9 @@ async function check(engine,width,touch){
   await verifyOpen('#gnamma-word-context[role="dialog"]:not([hidden])','word context');
   await page.evaluate(()=>window.GnammaWordContext.close());
   await verifyClosed('word context');
-  await page.evaluate(()=>showOverlay('jumpOverlay'));
+  await page.evaluate(()=>document.getElementById('openJump').click());
   await verifyOpen('#jumpOverlay:not([hidden]) [role="dialog"]','section picker');
-  await page.evaluate(()=>closeOverlay('jumpOverlay'));
+  await page.evaluate(()=>document.getElementById('jumpClose').click());
   await verifyClosed('section picker');
   // Computed layout checks on actual temporary Reading Desk dialog surfaces.
   const layout=await page.evaluate(()=>{
