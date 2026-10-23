@@ -90,7 +90,7 @@ async function domCheck(){
  const dom=new JSDOM('<!doctype html><html><head></head><body><div class="gn-note-entry" data-note-id="HAD-R031"><p>Compact source note.</p></div><div class="gn-note-entry" data-note-id="HAD-R216"><p>Compact source note.</p></div><div class="gn-note-entry" data-note-id="HAD-R189"><p>Compact source note.</p></div><div class="gn-note-entry" data-note-id="QUR-R064-Q005"><h3>Qurʾān source · Q2<small>QUR-R064-Q005</small></h3><p>Quran verse note.</p></div></body></html>',{url:'file:///example/daruri/index.html',runScripts:'outside-only'});
  const {window}=dom,doc=window.document;
  const orig=doc.head.append.bind(doc.head);
- doc.head.append=function(...nodes){const value=orig(...nodes);for(const node of nodes)if(node.tagName==='SCRIPT'&&node.src.includes('hadith-context-')){const file=new URL(node.src).pathname.split('/').at(-1);try{window.eval(src(file));queueMicrotask(()=>node.onload?.());}catch(e){queueMicrotask(()=>node.onerror?.(e));}}return value;};
+ doc.head.append=function(...nodes){const value=orig(...nodes);for(const node of nodes)if(node.tagName==='SCRIPT'&&(node.src.includes('hadith-context-')||node.src.includes('hadith-traditional-notes.js'))){const file=new URL(node.src).pathname.split('/').at(-1);try{window.eval(src(file));queueMicrotask(()=>node.onload?.());}catch(e){queueMicrotask(()=>node.onerror?.(e));}}return value;};
  window.GnammaHadithAnchorMap=anchorMap;
  window.eval(src('hadith-context-ui.js'));
  doc.dispatchEvent(new window.Event('DOMContentLoaded'));
