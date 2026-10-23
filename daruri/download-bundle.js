@@ -101,8 +101,8 @@
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
-      ['daruri/headerless-navigation.css','headerless-navigation.css?v=20261023-ux-header2'],
-      ['daruri/headerless-navigation.js','headerless-navigation.js?v=20261023-ux-header2'],
+      ['daruri/headerless-navigation.css','headerless-navigation.css?v=20261023-scholarcompact1'],
+      ['daruri/headerless-navigation.js','headerless-navigation.js?v=20261023-scholarcompact1'],
       ['daruri/dock-ios-compact.css','dock-ios-compact.css?v=20261023-ux-dock1'],
       ['daruri/bookmark-ui.js', 'bookmark-ui.js?v=20261023-personal-icons'],
       ['daruri/bookmark-ui.css', 'bookmark-ui.css?v=20261023-personal-icons'],
