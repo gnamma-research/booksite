@@ -383,7 +383,7 @@ async function generate(){
     one_exact_unicode_cid_per_line:true,
     word_level_selection_certified:false,
     original_published_pdf_inputs:0,server_pdf_generation:false,
-    printed_pdf_dialog:false,production_approved:false
+    printed_pdf_dialog:false,production_approved:false,publication_approved:false
    });
  }catch(error){
   emitStatus('failed',String(error?.stack||error),{error:String(error)});
