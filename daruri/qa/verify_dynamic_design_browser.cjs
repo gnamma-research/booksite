@@ -117,6 +117,42 @@ async function publish(profile,expectedPages){
     await page.goto(address,{waitUntil:'domcontentloaded'});
     await waitReady();
   });
+  await record('main Editions control actually creates selected apparatus PDF on-device',async()=>{
+    await page.goto(origin+'/daruri/#editions',{waitUntil:'domcontentloaded',timeout:90000});
+    const ui=page.locator('.gn-es');
+    await ui.waitFor({timeout:90000});
+    await page.waitForFunction(()=>
+      window.GnammaEditions?.__getPublicationSelection?.().resolution==='ready',
+      null,{timeout:90000});
+    await ui.locator('[data-es-custom]').click();
+    await ui.locator('[data-es-include="glossary"]').click();
+    const launch=ui.locator('[data-es-stage1-create]');
+    assert.equal(await launch.isVisible(),true);
+    assert.equal(await ui.locator('[data-es-action="open"]').isVisible(),false);
+    assert.equal(await ui.locator('[data-es-action="download"]').isVisible(),false);
+    assert.match(await launch.getAttribute('href'),/profile=apparatus%2Fdaruri-reading-bilingual-glossary\.pdf/);
+    assert.match(await launch.getAttribute('href'),/autostart=plain/);
+    await launch.click();
+    await page.waitForURL(/dynamic-editions\.html\?profile=/,{timeout:90000});
+    await page.waitForFunction(()=>
+      /Verified \d+ pages/.test(document.querySelector('#gn-dyn-status')?.textContent||''),
+      null,{timeout:90000});
+    assert.equal(await page.locator('#gn-dyn-profile').inputValue(),
+      'apparatus/daruri-reading-bilingual-glossary.pdf');
+    const pdf=await page.evaluate(async()=>{
+      const a=document.getElementById('gn-dyn-download');
+      const bytes=await(await fetch(a.href)).arrayBuffer();
+      return {magic:new TextDecoder().decode(bytes.slice(0,5)),
+        pages:(await PDFLib.PDFDocument.load(bytes)).getPageCount()};
+    });
+    assert.equal(pdf.magic,'%PDF-');
+    assert.equal(pdf.pages,86);
+    assert.deepEqual(requestedStaticVariants,[],
+      'The real Editions workflow must not retrieve any prebuilt apparatus edition');
+    await page.goto(address,{waitUntil:'domcontentloaded'});
+    await waitReady();
+    return pdf;
+  });
   await record('source design metadata follows the selected print specification',async()=>{
     await page.locator('#gn-dyn-profile').selectOption(
      'apparatus/daruri-reading-bilingual-unvowelled-glossary.pdf');
