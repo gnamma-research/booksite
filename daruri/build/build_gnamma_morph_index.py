@@ -258,7 +258,9 @@ def build_index(work: str, rows: list[tuple[str, str]], annotator, mode: str):
                      "licensed model remains outside web bundle" if mode == "bert" else
                      "Curated lemma/root forms only; a few explicitly labelled contextual rules; "
                      "not complete contextual morphology"),
-        "summary": dict(summary), "records": records
+        "summary": dict(summary),
+        "processedIds": [locator for locator, _ in rows],
+        "records": records
     }
 
 
