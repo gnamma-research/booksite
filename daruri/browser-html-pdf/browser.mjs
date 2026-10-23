@@ -4,7 +4,7 @@
 // Independent emitter A/B: preserve the same Vivliostyle CSS pagination,
 // but replace only the DOM-to-PDF writer with pages-to-pdf@0.4.1.
 // Do not confuse a repaired emitter with improved pagination/footnote policy.
-import {printHTML} from 'vivliostyle-pdf';
+import {printHTML,VIVLIOSTYLE_BACKEND} from 'vivliostyle-pdf';
 import {emitPdfFromWindow} from 'pages-to-pdf';
 import {PDFDocument,PDFName,PDFArray,PDFDict,PDFNumber} from '@pdfme/pdf-lib';
 const el=id=>document.getElementById(id);
@@ -129,14 +129,11 @@ async function render(mode){
       if(!found)throw Error('Vivliostyle callback exposed no PDF page containers: '+JSON.stringify(domState));
       status('Writing vector PDF bytes locally…',{phase:'writing',mode,paginated_pages:found});
       const bytes=await emitPdfFromWindow(w,{
-       backend:{
-        pageSelector:'[data-vivliostyle-page-container]',
-        unhidePagesSelector:'[data-vivliostyle-page-container]',
-        filterEmptyPages:false,
-        scaleRunsToMeasuredWidth:true,
-        handleHyphenation:true,
-        defaultCreator:'Gnamma browser-only A/B emitter research'
-       },
+       // Never approximate the Vivliostyle backend when changing only its
+       // PDF writer. The official preset contains special rewritten hash
+       // links, page wrappers, margin-box artifacts and footnote selectors.
+       // Missing those fields previously lost ALL internal PDF links.
+       backend:VIVLIOSTYLE_BACKEND,
        baseUrl:new URL('/daruri/browser-html-pdf/runtime/',location.origin).href,
        sourceHtml,metadata:{title:'Daruri browser HTML-PDF research',author:'Gnamma Research'},
        onProgress:message=>{window.__daruriQA={...(window.__daruriQA||{}),progress:String(message).slice(0,100)};}
