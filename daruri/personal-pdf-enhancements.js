@@ -3,7 +3,7 @@
  * Section fallback is mandatory if word geometry cannot be verified. */
 (() => {
   'use strict';
-  const tidy=s=>String(s||'').normalize('NFKD').replace(/\p{M}/gu,'').replace(/[^\p{L}\p{N}]/gu,'').toLocaleLowerCase('en');
+  const tidy=s=>String(s||'').normalize('NFKD').replace(/\p{M}|\u0640/gu,'').replace(/[^\p{L}\p{N}]/gu,'').toLocaleLowerCase('en');
   function sourceMatch(words,target){
     if(!Array.isArray(words)||!words.length||!target||!target.quote)return null;
     const needle=tidy(target.quote);

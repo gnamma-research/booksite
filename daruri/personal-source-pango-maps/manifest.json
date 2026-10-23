@@ -1,0 +1,17 @@
+{
+  "status": "verified",
+  "release": "20261022-reference-Pango-Arabic",
+  "files": [
+    {
+      "file": "daruri.pdf",
+      "source_sha256": "3b44cba0cd68038e9028d312bb499958d23e1003c03765406a37c376bca85524",
+      "map_file": "daruri.pdf.json",
+      "map_sha256": "6b18692715999e08aa5f1b3f58338510e69e1a2eb94f5a662d7a39b771dc23f5",
+      "word_map_present": true,
+      "source_sections": 258,
+      "matched_segments": 414,
+      "word_count": 21678,
+      "pixel_identical_pages": 243
+    }
+  ]
+}

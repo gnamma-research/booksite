@@ -444,6 +444,38 @@
         }
       }catch(_){/* Exact word-map geometry is optional; verified canonical section fallback remains. */}
     }
+    // Scholarly Reference has an independently certified Pango map covering
+    // all authorial Arabic words. It is kept separate from the existing
+    // dictionary/English personal map and is used only after SHA verification.
+    if(file==='daruri.pdf'&&p.annotations&&rows.some(r=>r.target?.lang==='ar'&&r.target?.quote)){
+      const baseSegments=wordMap?.segments||{};
+      const englishOnly=Object.fromEntries(Object.entries(baseSegments)
+        .filter(([key])=>!key.endsWith(':vocalized')&&!key.endsWith(':ar')));
+      wordMap=wordMap?{...wordMap,segments:englishOnly}:null;
+      const manifestResponse=await fetch(new URL('personal-source-pango-maps/manifest.json',URL_ROOT),{cache:'no-cache'});
+      if(manifestResponse.ok){
+        const manifest=await manifestResponse.json();
+        const row=manifest?.status==='verified'&&manifest?.files?.find(x=>
+          x.file==='daruri.pdf'&&x.source_sha256===metadata.sha256&&
+          /^[0-9a-f]{64}$/.test(x.map_sha256||'')&&x.matched_segments===414);
+        if(row){
+          const response=await fetch(new URL('personal-source-pango-maps/'+row.map_file,URL_ROOT),{cache:'no-cache'});
+          if(!response.ok)throw Error('The scholarly Arabic word map is unavailable.');
+          const raw=await response.arrayBuffer();
+          if(!crypto?.subtle)throw Error('Secure checksum validation is needed for the scholarly Arabic word map.');
+          const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',raw)),
+            v=>v.toString(16).padStart(2,'0')).join('');
+          if(digest!==row.map_sha256)throw Error('The scholarly Arabic word map checksum has changed.');
+          const verified=JSON.parse(new TextDecoder().decode(raw));
+          if(verified.source_sha256!==metadata.sha256||
+             verified.section_count!==258||verified.coverage!==1||
+             Object.keys(verified.segments||{}).length!==414)
+            throw Error('The scholarly Arabic word map does not belong to this PDF.');
+          wordMap={...(wordMap||{}),source_sha256:metadata.sha256,
+            segments:{...(wordMap?.segments||{}),...verified.segments}};
+        }
+      }
+    }
     // Prepare destinations before appending notes: this keeps page references
     // stable and lets each appendix entry return to the exact source locus.
     const sourcePositions=rows.map(r=>{
