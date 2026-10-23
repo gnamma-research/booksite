@@ -6,6 +6,9 @@ on:
       - 'daruri/index.html'
       - 'daruri/reading-mode-controls.js'
       - 'daruri/reading-mode-controls.css'
+      - 'daruri/reading-navigation-*.js'
+      - 'daruri/reading-navigation-*.css'
+      - 'daruri/qa/verify-reading-navigation-*'
       - 'daruri/reading-desk.js'
       - 'daruri/qa/verify-three-reading-modes.cjs'
       - 'daruri/qa/verify-focus-modes.js'
@@ -15,6 +18,9 @@ on:
       - 'daruri/index.html'
       - 'daruri/reading-mode-controls.js'
       - 'daruri/reading-mode-controls.css'
+      - 'daruri/reading-navigation-*.js'
+      - 'daruri/reading-navigation-*.css'
+      - 'daruri/qa/verify-reading-navigation-*'
       - 'daruri/reading-desk.js'
       - 'daruri/qa/verify-three-reading-modes.cjs'
       - '.github/workflows/daruri-three-reading-modes.yml'
@@ -43,9 +49,14 @@ jobs:
           node daruri/qa/verify-focus-modes.js
           node daruri/qa/verify-reader-structure.js
           node daruri/qa/verify-reading-desk-redesign.js
+          node daruri/qa/verify-reading-navigation-history.js
+          node daruri/qa/verify-compact-menus.js
+          node daruri/qa/verify-contents-structure.js
       - name: Install browser smoke test
         run: |
           npm install --no-save --prefix daruri/qa playwright@1.56.1
           npx --prefix daruri/qa playwright install --with-deps chromium webkit
       - name: Test mobile Chromium and WebKit reader
-        run: node daruri/qa/verify-three-reading-modes.cjs
+        run: |
+          node daruri/qa/verify-three-reading-modes.cjs
+          node daruri/qa/verify-reading-navigation-browser.cjs
