@@ -28,7 +28,7 @@ new vm.Script(exporter,{filename:'personal-export.js'});
 assert.ok(page.includes('editions-selector.js?v='),'Reader loads shared Editions selector');
 assert.ok(sw.includes('editions-selector.js?v='),'PWA caches Editions selector');
 assert.ok(edition.includes("const NAV=['reading','reference']"),'Retain old preference migration');
-assert.equal((edition.match(/data-es-download-type="/g)||[]).length,4,'Exactly four file purposes');
+assert.equal((edition.match(/class="gn-es-download-type" role="tab"/g)||[]).length,4,'Exactly four file purposes');
 assert.equal((edition.match(/data-es-book-edition="/g)||[]).length,3,'Exactly three book editions');
 for(const required of ['Book PDF','Study Guide','Offline reader','Research files',
   'data-es-download-type="book"','data-es-download-type="guide"',
