@@ -65,6 +65,12 @@ try{
     'Separate Study Guide PDF must not be presented as another book edition');
   assert.equal(await ui.locator('[data-daruri-bundle="html"]').count(),1,
     'Offline HTML reader belongs inside Editions');
+  assert.equal(await ui.getByRole('heading',{name:'Other downloads'}).count(),1,
+    'The separate downloads should sit after the PDF edition action');
+  assert.equal(await ui.locator('[data-es-source]').isVisible(),false,
+    'Unapproved scholarly ZIP must not display a dead download link');
+  assert.equal(await ui.locator('[data-es-source-download]').getAttribute('href'),null,
+    'Unapproved scholarly ZIP must never have an active URL');
   const alignment=await ui.locator('.gn-es-language-label').evaluateAll(nodes=>
     nodes.map(n=>{const r=n.getBoundingClientRect();return (r.top+r.bottom)/2;}));
   assert.ok(Math.abs(alignment[0]-alignment[1])<=1,
