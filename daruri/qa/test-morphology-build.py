@@ -145,5 +145,32 @@ assert fake_index["summary"]["tokens"] == 2
 assert fake_index["summary"]["analysedTokens"] == 2
 assert fake_index["summary"]["alternatives"] == 2
 
-print("PASS: morphology normalization, provenance, source windows and contextual model contract")
+# Exercise the gold-sheet exporter and the review-quality gate without
+# pretending these synthetic records establish actual Arabic accuracy.
+review_source = ROOT / "daruri" / "build" / "export_morph_review.py"
+review_spec = importlib.util.spec_from_file_location("gnamma_morph_review_export", review_source)
+review_mod = importlib.util.module_from_spec(review_spec)
+review_spec.loader.exec_module(review_mod)
+rows = review_mod.sample_review_rows(fake_index, {"passage:1:0": "كتب العلم"}, 2)
+assert len(rows) == 2 and all(row["reviewed_lemma"] == "" for row in rows)
+for row in rows:
+    row.update({"reviewed_lemma": "كاتِب", "reviewed_root": "كتب",
+                "reviewed_pos": "noun", "reviewed_lexical_id": "كاتِب_1",
+                "judgement": "confirmed", "reviewer": "synthetic-test-only"})
+eval_source = ROOT / "daruri" / "build" / "evaluate_morph_review.py"
+eval_spec = importlib.util.spec_from_file_location("gnamma_morph_quality_eval", eval_source)
+eval_mod = importlib.util.module_from_spec(eval_spec)
+eval_spec.loader.exec_module(eval_mod)
+quality = eval_mod.evaluate(fake_index, rows, min_reviewed=2,
+                            min_exact_accuracy=1.0)
+assert quality["release_gate_passed"] is True
+assert quality["sense_accuracy"] == 1.0
+rows[0]["reviewed_lemma"] = "كِتاب"
+bad = eval_mod.evaluate(fake_index, rows, min_reviewed=2,
+                        min_exact_accuracy=0.9)
+assert bad["release_gate_passed"] is False
+assert bad["exact_accuracy"] == 0.5
+
+print("PASS: morphology source windows, contextual alternatives, review sheets and scholarly quality gate")
+
 
