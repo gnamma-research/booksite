@@ -1,0 +1,69 @@
+name: Daruri full original Arabic HTML-vector PDF source QA (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-outline-semantic-20261023]
+    paths:
+      - 'daruri/browser-html-pdf/vector-full-arabic.html'
+      - 'daruri/browser-html-pdf/vector-full-arabic.mjs'
+      - 'daruri/browser-html-pdf/test_vector_full_arabic.cjs'
+      - 'daruri/browser-html-pdf/verify_vector_full_arabic.py'
+      - '.github/workflows/daruri-browser-full-arabic.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-full-arabic-research-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  canonical-arabic:
+    name: 414 full original Arabic paragraphs (${{ matrix.browser }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Original 258-section 414-paragraph fixture
+        run: python daruri/browser-html-pdf/build_fixture.py --out daruri/browser-html-pdf/fixture.json
+      - name: Install pinned local font/vector browser dependencies
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/browser-html-pdf
+          cd daruri/browser-html-pdf
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Source/native PDF verifier syntax
+        run: |
+          node --check daruri/browser-html-pdf/vector-full-arabic.mjs
+          node --check daruri/browser-html-pdf/test_vector_full_arabic.cjs
+          python -m py_compile daruri/browser-html-pdf/verify_vector_full_arabic.py
+      - name: Normal browser generates all complete source paragraphs, without PDF inputs
+        env:
+          GNAMMA_FULL_BROWSER: ${{ matrix.browser }}
+          GNAMMA_FULL_OUTPUT: /tmp/gnamma-full-arabic-${{ matrix.browser }}
+        run: node daruri/browser-html-pdf/test_vector_full_arabic.cjs
+      - name: Validate every original native Arabic paragraph, copied Unicode and source position
+        run: |
+          python -m pip install -q 'PyMuPDF==1.26.7'
+          python daruri/browser-html-pdf/verify_vector_full_arabic.py \
+            --pdf /tmp/gnamma-full-arabic-${{ matrix.browser }}/daruri-vector-full-original-arabic-NONRELEASE.pdf \
+            --fixture daruri/browser-html-pdf/fixture.json \
+            --evidence /tmp/gnamma-full-arabic-${{ matrix.browser }}/browser-evidence.json \
+            --report /tmp/gnamma-full-arabic-${{ matrix.browser }}/native-source-evidence.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-full-original-arabic-${{ matrix.browser }}-NONRELEASE
+          path: /tmp/gnamma-full-arabic-${{ matrix.browser }}/
+          if-no-files-found: warn
+          retention-days: 14

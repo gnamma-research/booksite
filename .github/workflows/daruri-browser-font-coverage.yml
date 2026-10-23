@@ -1,0 +1,20 @@
+name: Daruri full original source font coverage (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-outline-semantic-20261023]
+    paths:
+      - 'daruri/browser-html-pdf/audit_full_font_coverage.py'
+      - '.github/workflows/daruri-browser-font-coverage.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install small font-table inspector
+        run: python -m pip install -q 'fonttools==4.60.1'
+      - name: Enumerate all original source glyph requirements and local fallback coverage
+        run: python daruri/browser-html-pdf/audit_full_font_coverage.py

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Darūrī — Full original Arabic passages PDF (nonrelease)</title>
+<style>
+@font-face{font-family:"Noto Naskh Arabic";src:url("/daruri/build/fonts/NotoNaskhArabic-Regular.ttf") format("truetype")}
+body{font:16px/1.5 system-ui,sans-serif;max-width:760px;margin:30px auto;padding:0 18px;color:#20352f}
+button{font:600 16px system-ui;padding:10px 18px}
+#qa-status{white-space:pre-wrap}
+.vector-page{position:absolute;left:-20000px;top:0;width:794px;height:1122px;
+box-sizing:border-box;padding:94px 58px 85px;background:white}
+.vector-rows .row{height:62px;display:flex;justify-content:flex-start;align-items:center;white-space:nowrap}
+.vector-rows .phrase{font:23px/1.55 "Noto Naskh Arabic";direction:rtl;unicode-bidi:isolate}
+</style>
+</head>
+<body>
+<h1>Darūrī: all 414 complete original Arabic passages</h1>
+<p>This independent Stage 2 proof draws the real source's Arabic as <strong>vector glyph outlines</strong> and records original Unicode once, with an explicit PDF CID-to-Unicode font. No screenshot, original PDF pages, server renderer or print dialog. This is <strong>not</strong> an approved full-book edition.</p>
+<button id="make" type="button">Generate source-text experiment</button>
+<p id="qa-status" role="status">Research fixture loading on click.</p>
+<div id="vector-page" class="vector-page" lang="ar" dir="rtl"><div id="vector-rows" class="vector-rows"></div></div>
+<script type="module" src="./vector-full-arabic.mjs"></script>
+</body></html>
