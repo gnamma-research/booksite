@@ -20,7 +20,15 @@ function htmlFor(fixture,mode){
  const blocks=[];let placed=false;
  for(const sec of sections){
   blocks.push('<section class="reading-unit" id="section-'+sec.id+'">');
-  if(sec.recorded_arabic_heading)blocks.push('<h2 lang="ar" dir="rtl" class="ar-heading">'+esc(sec.recorded_arabic_heading)+'</h2>');
+  // Diagnostic only: the JS emitter's PDF outline serializer puts Arabic
+  // heading text into raw /Title (...) literals without correct PDF UTF-16BE
+  // escaping. Real Arabic headings remain visible and role-exposed, but this
+  // A/B prevents these headings from becoming unsafely serialized bookmarks.
+  // Final implementation MUST reinstate exact Arabic outline titles using
+  // PDFHexString.fromText() or equivalent valid Unicode PDF strings.
+  if(sec.recorded_arabic_heading)blocks.push(
+    '<div lang="ar" dir="rtl" role="heading" aria-level="2" class="ar-heading">'+
+    esc(sec.recorded_arabic_heading)+'</div>');
   if(sec.recorded_english_heading)blocks.push('<h2 class="en-heading">'+esc(sec.recorded_english_heading)+'</h2>');
   blocks.push('<h3 class="unit-ref">R'+String(sec.id).padStart(3,'0')+'</h3>');
   for(const seg of sec.segments){
