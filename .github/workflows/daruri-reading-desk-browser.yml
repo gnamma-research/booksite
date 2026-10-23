@@ -51,6 +51,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Exclude unavailable unrelated Microsoft apt source
+        run: |
+          # GitHub Ubuntu runners can include a Microsoft feed that returns
+          # HTTP 403. Playwright's signed Ubuntu dependencies do not use it.
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then
+              echo "Disabling inaccessible third-party apt source: $source"
+              sudo mv "$source" "$source.disabled"
+            fi
+          done
       - name: Install browser test dependencies
         run: |
           npm install --no-save --prefix daruri/qa playwright@1.56.1

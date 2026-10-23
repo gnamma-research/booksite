@@ -12,7 +12,12 @@ const {JSDOM}=require('jsdom');
 const root=path.resolve(__dirname,'..');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const BOOK=require('./load-book')(html);
-const script=html.slice(html.lastIndexOf('<script>')+8,html.lastIndexOf('</script>'));
+// The last <script> may be a module included after the main reader script.
+const scriptStart=html.indexOf("<script>\n(() => {\n'use strict';\nconst BOOK");
+assert.ok(scriptStart>=0,'Main reader script not found');
+const scriptEnd=html.indexOf('</script>',scriptStart);
+assert.ok(scriptEnd>scriptStart,'Main reader script not closed');
+const script=html.slice(scriptStart+'<script>'.length,scriptEnd);
 new vm.Script(script);
 function extract(name){
  const start=script.indexOf('function '+name+'(');assert.ok(start>=0,name);
