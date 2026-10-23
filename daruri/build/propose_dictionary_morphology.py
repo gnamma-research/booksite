@@ -31,6 +31,41 @@ FOLD = builder.fold
 PREFIXES = ("", "ال", "و", "ف", "ب", "ل", "ك",
             "وال", "فال", "بال", "كال", "لل")
 ARABIC_ROOT = re.compile(r"^[\u0621-\u064a]{3,5}$")
+DIACRITICS = re.compile(r"[\u064b-\u065f\u0670\u0640]")
+
+
+def literal_form(value: str) -> str:
+    """Keep hamza seat when deciding whether an alleged prefix is even written."""
+    return DIACRITICS.sub("", str(value or "")).replace("ى", "ي")
+
+
+def clitic_supported(token: str, candidate: dict, primary: list | None) -> bool:
+    """Reject phantom lexical matches such as فاصل = ف + أصل, or ألسنة = ال + سنة.
+
+    This uses the analyzer's explicit prefix features as *evidence of a
+    segmentation*, not as proof the lexicographic interpretation is correct.
+    """
+    if literal_form(token) != candidate.get("literal_form"):
+        return False
+    prefix = candidate.get("prefix", "")
+    if not prefix:
+        return True
+    if not primary or len(primary) < 8 or not isinstance(primary[7], dict):
+        return False
+    f = primary[7]
+    det = f.get("prc0") == "Al_det"
+    wa = f.get("prc2") == "wa_conj"
+    fa = str(f.get("prc2", "")).startswith("fa_")
+    bi = f.get("prc1") == "bi_prep"
+    li = f.get("prc1") == "li_prep"
+    ka = f.get("prc1") == "ka_prep"
+    return {
+        "ال": det, "و": wa, "ف": fa,
+        "ب": bi, "ل": li, "ك": ka,
+        "وال": wa and det, "فال": fa and det,
+        "بال": bi and det, "كال": ka and det,
+        "لل": li and det
+    }.get(prefix, False)
 
 
 def sourced_lexicon(dictionary: dict) -> dict[str, list[dict]]:
@@ -93,12 +128,16 @@ def sourced_lexicon(dictionary: dict) -> dict[str, list[dict]]:
                 "comparison": term.get("comparison", "")
             }
             for prefix in PREFIXES:
-                matched = FOLD(prefix + lemma_key)
+                matched = FOLD(prefix + word)
                 if matched:
-                    # Dedupe the same editorial term/prefix route.
+                    # Normalized lookups are merely candidates. Preserve the
+                    # original hamza seat and intended prefix for later checks.
                     bucket = by_form[matched]
-                    if not any(x["term"] == key for x in bucket):
+                    literal = literal_form(prefix + word)
+                    if not any(x["term"] == key and x["literal_form"] == literal
+                               and x["prefix"] == prefix for x in bucket):
                         bucket.append({**evidence,
+                                       "prefix": prefix, "literal_form": literal,
                                        "match": origin if not prefix else "possible-clitic"})
     return dict(by_form)
 
@@ -147,7 +186,8 @@ def propose(index: dict, texts: dict[str, str], lexicon: dict[str, list[dict]]):
             if not primary:
                 totals["missing_model_analysis"] += 1
             form_key = FOLD(token)
-            entries = lexicon.get(form_key, [])
+            entries = [entry for entry in lexicon.get(form_key, [])
+                       if clitic_supported(token, entry, primary)]
             if not entries and not primary:
                 continue
             flags = set()
