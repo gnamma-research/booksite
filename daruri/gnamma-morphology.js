@@ -281,17 +281,24 @@ function formsFor(query,work='daruri',limit=6){
   }
  }
  const found=new Map();
+ // Among genuinely attested forms, favor recognized dictionary spellings over
+ // rare prefixed tokens. The query is never expanded by guessing from roots.
+ const canonicalForms=new Map(opts.lemmas.map(x=>[x.normalized,new Set(x.formKeys||[])]));
  for(const key of keys)for(const hit of index.byLemma.get(key)||[]){
   if(!hit.surface||hit.source==='ambiguous')continue;
   const form=fold(hit.surface);
   if(!form)continue;
   let row=found.get(form);
   if(!row){row={form:hit.surface,count:0,lemma:key,
-    unusual:!form.includes(key),source:hit.source};found.set(form,row)}
+    unusual:!form.includes(key),canonical:!!canonicalForms.get(key)?.has(form),
+    source:hit.source};found.set(form,row)}
   row.count++;
  }
  return [...found.values()]
-  .sort((a,b)=>Number(b.unusual)-Number(a.unusual)||a.count-b.count||
+  .sort((a,b)=>Number(b.unusual)-Number(a.unusual)||
+    Number(b.canonical)-Number(a.canonical)||
+    Number(a.form.startsWith('ال'))-Number(b.form.startsWith('ال'))||
+    a.form.length-b.form.length||b.count-a.count||
     a.form.localeCompare(b.form,'ar'))
   .slice(0,Math.max(0,Math.min(20,limit)));
 }
