@@ -197,7 +197,7 @@ try{
   assert.equal(await ui.locator('[data-es-reference-inventory]').isVisible(),true);
   assert.equal(await ui.locator('#pe-edition').inputValue(),'daruri.pdf');
   assert.equal(await ui.locator('#pe-personal').isChecked(),true);
-  assert.equal(await ui.locator('[data-daruri-bundle="html"]').isVisible(),true);
+  assert.equal(await ui.locator('[data-es-download-type="offline"]').isVisible(),true);
   await ui.locator('#pe-bookmarks').check();
   assert.match(await ui.locator('#pe-count').innerText(),/2 qualifying items/);
   await ui.locator('#pe-highlights').check();
