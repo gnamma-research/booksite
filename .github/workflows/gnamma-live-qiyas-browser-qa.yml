@@ -1,0 +1,24 @@
+name: One-off live qiyas-to-aqyisa phone search QA
+on:
+  push:
+    branches:
+      - experiment/gnamma-live-qiyas-browser-20261023
+    paths:
+      - '.github/workflows/gnamma-live-qiyas-browser-qa.yml'
+permissions:
+  contents: read
+jobs:
+  live-qiyas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Browser testing dependencies
+        run: |
+          npm install --no-save --no-package-lock playwright@1.63.0
+          npx playwright install --with-deps chromium
+      - name: Verify deployed qiyas/أقيسة behaviour on phone and desktop
+        run: node daruri/qa/verify-live-qiyas-browser.cjs
