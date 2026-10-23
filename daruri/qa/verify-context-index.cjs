@@ -117,6 +117,51 @@ vm.runInContext(fs.readFileSync(path.join(root,'gnamma-morphology.js'),'utf8'),c
  await portable.ensureDetail('daruri','passage:5:0');
  assert.equal(requests.filter(x=>x.includes('details-v2')).length,1,
   'Identical word detail shard should come from cache');
+ // Genuine *same lemma* reasoning is deeper than removing prefixes or
+ // endings. The broken plural أقيسة must match قياس in either direction,
+ // while a separate derived noun مقياس must not leak into Word forms.
+ const source={work:'daruri',id:'passage:5:1',ar:'القياس أقيسة مقياس',
+    title:'§5, hypothetical fixture',type:'text',section:'5',privacy:'public'};
+ const morphData={schema:'gnamma-morph-postings-v2',work:'daruri',
+   ids:['passage:5:1'],shardSize:1,detailPrefix:'morph-daruri-details-v2/',
+   contextual:true,
+   l:{'قياس':[[0,0,0],[0,1,0]],'مقياس':[[0,2,0]]},
+   r:{'قيس':[[0,0,0],[0,1,0],[0,2,0]]},
+   f:{'القياس':{l:['قياس'],r:['قيس']},
+      'أقيسة':{l:['قياس'],r:['قيس']},
+      'مقياس':{l:['مقياس'],r:['قيس']}},
+   summary:{searchableOccurrences:3}};
+ const fixtureLex={schema:'gnamma-morph-lexicon-v1',entries:[
+   {lemma:'قياس',root:'قيس',pos:'noun',forms:['قياس','القياس'],roman:['qiyas']},
+   {lemma:'مقياس',root:'قيس',pos:'noun',forms:['مقياس'],roman:['miqyas']}
+ ]};
+ const fixture={window:{GnammaContextualMorphAssets:{
+   daruri:'morph-daruri-search-v2.json'}},console,
+   fetch:async url=>{
+    const v=String(url).startsWith('morph-lexicon')?fixtureLex:morphData;
+    return {ok:true,json:async()=>v};
+   }};
+ vm.createContext(fixture);
+ vm.runInContext(fs.readFileSync(path.join(root,'gnamma-morphology.js'),'utf8'),
+   fixture,{filename:'gnamma-morphology.js'});
+ const deep=fixture.window.GnammaMorphology;
+ await Promise.all([deep.loadLexicon(),deep.ensure('daruri')]);
+ const normal=deep.find('قياس','morph-lemma',[source]);
+ const broken=deep.find('أقيسة','morph-lemma',[source]);
+ const other=deep.find('مقياس','morph-lemma',[source]);
+ const family=deep.find('قياس','morph-root',[source]);
+ assert.equal(normal.items.length,1);
+ assert.equal(normal.keys.join(','),'قياس');
+ assert.equal(broken.keys.join(','),'قياس',
+   'A user typing the irregular plural resolves back to the same lemma');
+ assert.equal(broken.items.length,1);
+ assert.equal(other.keys.join(','),'مقياس','A different derived noun is a different lemma');
+ assert.equal(family.items.length,1);
+ assert.equal(family.keys.join(','),'قيس');
+ assert.equal(morphData.l['قياس'].length,2);
+ assert.equal(morphData.r['قيس'].length,3);
+ console.log('PASS: قياس ↔ أقيسة broken plural forms resolved bidirectionally, distinct from مقياس root family');
+
  console.log('PASS: compact v2 root/lemma postings, opt-in release flag, source position and lazy detail loading');
  console.log('PASS: lexical alternatives excluded from search; contextual positions, features and inflected queries verified');
 })().catch(e=>{console.error(e);process.exitCode=1});
