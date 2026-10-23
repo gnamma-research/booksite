@@ -20,6 +20,8 @@ on:
       - 'daruri/build/evaluate_morph_review.py'
       - 'daruri/build/pack_morph_context.py'
       - 'daruri/build/propose_dictionary_morphology.py'
+      - 'daruri/build/apply_reviewed_morphology.py'
+      - 'daruri/qa/test-reviewed-morphology.py'
       - 'daruri/qa/test-dictionary-morphology.py'
       - 'daruri/build/apply_morph_reviews.py'
       - 'daruri/build/enrich_morph_roots.py'
@@ -59,6 +61,8 @@ on:
       - 'daruri/build/evaluate_morph_review.py'
       - 'daruri/build/pack_morph_context.py'
       - 'daruri/build/propose_dictionary_morphology.py'
+      - 'daruri/build/apply_reviewed_morphology.py'
+      - 'daruri/qa/test-reviewed-morphology.py'
       - 'daruri/qa/test-dictionary-morphology.py'
       - 'daruri/build/apply_morph_reviews.py'
       - 'daruri/build/enrich_morph_roots.py'
@@ -109,6 +113,8 @@ jobs:
           python3 -m py_compile daruri/build/pack_morph_context.py
           python3 -m py_compile daruri/build/propose_dictionary_morphology.py
           python3 daruri/qa/test-dictionary-morphology.py
+          python3 -m py_compile daruri/build/apply_reviewed_morphology.py
+          python3 daruri/qa/test-reviewed-morphology.py
           python3 -m py_compile daruri/build/apply_morph_reviews.py
           python3 -m py_compile daruri/build/enrich_morph_roots.py
           python3 daruri/qa/test-morphology-build.py
