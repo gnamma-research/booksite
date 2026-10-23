@@ -206,6 +206,39 @@ except ValueError:
 else:
     raise AssertionError("Do not relabel a curated index as contextual")
 
+# Adjudicated occurrences override machine output without ever declaring the
+# remaining 200K tokens human-verified.
+amend_path = ROOT / "daruri" / "build" / "apply_morph_reviews.py"
+amend_spec = importlib.util.spec_from_file_location("gnamma_morph_apply_reviews", amend_path)
+amend_mod = importlib.util.module_from_spec(amend_spec)
+amend_spec.loader.exec_module(amend_mod)
+amended_rows = json.loads(json.dumps(rows, ensure_ascii=False))
+amended_rows[0]["judgement"] = "corrected"
+amended_rows[0]["reviewed_lemma"] = "كِتاب"
+amended_rows[0]["reviewed_root"] = "كتب"
+amended, stats = amend_mod.apply_reviews(fake_index, amended_rows,
+                                          {"passage:1:0": "كتب العلم"})
+assert stats["accepted_reviews"] == 2
+assert stats["corrected"] == 1 and stats["confirmed"] == 1
+assert amended["classicalArabicValidated"] is False
+annot = amended["records"][0]["a"]
+for i in (0, 1):
+    gold = [x for x in annot if x[0] == i and x[5] == "reviewed"]
+    assert len(gold) == 1
+    assert gold[0][7]["reviewer"] == "synthetic-test-only"
+    assert not any(x[0] == i and x[5] == "contextual-bert" for x in annot)
+packed_reviews, _ = pack_mod.pack(amended, {"passage:1:0": "كتب العلم"})
+assert packed_reviews["l"]["كتاب"] == [[0, 0, 1]]
+assert packed_reviews["l"]["كاتب"] == [[0, 1, 1]]
+assert packed_reviews["summary"]["searchableOccurrences"] == 2
+try:
+    duplicate = amended_rows + [amended_rows[0]]
+    amend_mod.apply_reviews(fake_index, duplicate, {"passage:1:0": "كتب العلم"})
+except ValueError as ex:
+    assert "Duplicate" in str(ex)
+else:
+    raise AssertionError("Duplicate source correction must be rejected")
+
 print("PASS: morphology source windows, contextual alternatives, review sheets and scholarly quality gate")
 
 
