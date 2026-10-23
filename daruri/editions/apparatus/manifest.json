@@ -1,8 +1,8 @@
 {
-  "release": "20261022-complete-a4-apparatus-matrix",
+  "release": "20261023-a4-local-apparatus-recipes",
   "status": "verified",
   "source_a4_manifest_sha256": "58d8bca84ffc786671d65700d27558ed3c2ef0bacee9a35f34105153db3bedb2",
-  "notes": "Compact manifest: full coordinate maps are held in linked, SHA-verified map files, not repeated 120 times. 120 static, full-work Reading/Study apparatus profiles across compatible published base editions. SHA-bound maps cover all 258 source sections. Word-level precision remains unverified; canonical PDFs and the twelve A4 base PDFs remain unchanged.",
+  "notes": "Signed scholarly assembly recipes for 120 compatible full-work Reading/Study combinations, NOT links to 120 hosted complete PDFs. Only twelve approved A4 source PDFs and fifteen reusable apparatus packets are PDF inputs; dynamic-pdf/packets/manifest.json binds each recipe to a signed component and hyperlink map. Legacy target-PDF SHA values document historical exact-parity evidence, not a claimed byte-identical regenerated output. Canonical Reference PDFs remain separately published. Original authorial Arabic searchable-PDF limitations remain tracked independently.",
   "files": [
     {
       "tier": "reading",
