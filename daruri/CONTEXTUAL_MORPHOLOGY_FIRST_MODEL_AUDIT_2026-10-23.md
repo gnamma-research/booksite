@@ -50,3 +50,46 @@ Do not silently override the model in the public index based solely on this shor
 4. Add approved, source-anchored scholarly corrections with provenance. Never present machine-suggested glosses as an author's historical usage.
 5. On release, activate the compact v2 posting index explicitly, serve grammatical shards on demand, profile Safari memory/latency, and keep a model-free fallback.
 6. Re-run full browser tests after the latest source/edition changes; do not replace or overwrite the concurrent PDFs, apparatus or readers.
+
+
+## al-Mustaṣfā — the other complete corpus
+
+The same full candidate run also processed the published al-Mustaṣfā Arabic witness:
+**2,977 source paragraphs; 179,650 Arabic tokens; 176,197 primary
+analyses (98.08% mechanical coverage); 110,062 alternatives**.
+The detailed offline candidate index was 70,188,221 bytes and the compact
+on-demand search index was 3,988,240 bytes, with 63 detail shards. Source/token
+coordinates and a 320+80 review sheet are retained. The separate full
+al-Mustaṣfā artifact is in
+[GitHub Actions](https://github.com/gnamma-research/booksite/actions/runs/39883804764/artifacts/12471564311).
+
+A systematic warning is particularly clear in al-Mustaṣfā: the unvowelled
+token `بعض` was assigned `عَضّ` (biting) in all 218 of its primary model
+occurrences inspected, whereas the expected juristic expression is generally
+`بَعْض` (some/part). The model also proposed the spatial noun `بُعْد`
+for 246 of 247 instances of `بعد`, and `أَنَّ` for many tokens written
+`إن`. This pattern is why machine-generated root/lemma postings are **not**
+being activated without human review. These counts come from the private
+candidate index, not independent gold annotation.
+
+The compact packer was independently checked against both complete raw
+artifact indexes: all 416 + 2,977 source-segment detail records round-trip
+exactly; lemma postings map 1:1 to primary analyses; candidate alternative
+rankings do not enter the root/lemma posting tables. No scholarly accuracy
+is inferred from this structural parity.
+
+## Relevant research and external validation
+
+- Minaei-Bidgoli, AlShuhayeb and Hossayni (2026),
+  *Domain Sensitivity in Arabic Morphological Analysis*,
+  [Journal of Open Humanities Data](https://doi.org/10.5334/johd.418).
+  Their **segmentation** comparisons highlight lexical and clitic-boundary
+  errors in historical-jurisprudential Arabic. The quoted segmentation
+  figures must not be interpreted as lemma/root/POS accuracy for this BERT model.
+- Khairallah et al. (2024), *Camel Morph MSA*,
+  [LREC-COLING, ACL Anthology](https://aclanthology.org/2024.lrec-main.240/).
+  Its broad lexicon is a candidate for an alternative analyzer comparison;
+  MSA dictionary coverage alone cannot settle classical sense interpretation.
+- [CAMeL Tools morphology database documentation](https://camel-tools.readthedocs.io/en/latest/api/morphology/database.html):
+  the standard public BERT/CALIMA toolchain targets MSA; any model-database
+  substitution must be separately benchmarked and its license audited.
