@@ -1,0 +1,80 @@
+name: Daruri Stage2 BusyTeX browser XeLaTeX LuaLaTeX comparison (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-stage2-busytex-wasm-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/busytex*'
+      - 'daruri/qa/stage2_shootout/test_busytex_browser.cjs'
+      - 'daruri/qa/stage2_shootout/package.json'
+      - '.github/workflows/daruri-stage2-busytex-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-stage2-busytex-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser-busytex:
+    runs-on: ubuntu-latest
+    timeout-minutes: 42
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build SHA-verified source fixture, never source from PDF
+        run: |
+          python daruri/qa/stage2_shootout/source_fixture.py daruri/qa/stage2_shootout/source.json
+      - name: Install browser XeLaTeX and LuaLaTeX WASM wrappers (pinned)
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+      - name: Download independently published BusyTeX WASM assets and TeX Live bundles
+        timeout-minutes: 14
+        run: |
+          cd daruri/qa/stage2_shootout
+          timeout 780 npx texlyre-busytex download-assets ./runtime
+          du -sh ./runtime/busytex
+          find ./runtime/busytex -maxdepth 1 -type f -printf '%f %s bytes\n'
+      - name: Check source and browser JavaScript safety
+        run: |
+          node --check daruri/qa/stage2_shootout/busytex_browser.mjs
+          node --check daruri/qa/stage2_shootout/test_busytex_browser.cjs
+          npm run build --prefix daruri/qa/stage2_shootout
+      - name: Ordinary Chromium compiles real Arabic via XeLaTeX and downloads PDF
+        env:
+          STAGE2_TEX_ENGINE: xe
+          STAGE2_BROWSER: chromium
+          STAGE2_OUTPUT: /tmp/stage2-busytex-xe
+        run: node daruri/qa/stage2_shootout/test_busytex_browser.cjs
+      - name: Ordinary Chromium compiles real Arabic via LuaLaTeX and downloads PDF
+        env:
+          STAGE2_TEX_ENGINE: lua
+          STAGE2_BROWSER: chromium
+          STAGE2_OUTPUT: /tmp/stage2-busytex-lua
+        run: node daruri/qa/stage2_shootout/test_busytex_browser.cjs
+      - name: Independent MuPDF/PDFium/Poppler original-Arabic QA
+        if: success()
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          python -m pip install -q PyMuPDF==1.26.7 pypdfium2==5.4.0
+          for engine in xe lua; do
+            python daruri/qa/stage2_shootout/verify_compilers.py \
+              /tmp/stage2-busytex-$engine/daruri-busytex-$engine-browser-NONRELEASE.pdf \
+              daruri/qa/stage2_shootout/source.json \
+              /tmp/stage2-busytex-$engine/native-busytex-$engine.json
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-busytex-real-browser-NONRELEASE
+          path: |
+            /tmp/stage2-busytex-xe
+            /tmp/stage2-busytex-lua
+          if-no-files-found: warn
+          retention-days: 14
