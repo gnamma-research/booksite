@@ -21,11 +21,14 @@
   var trailing=toolbar.querySelector('.gn-reader-global-trailing');
   if(!inner||!leading||!focus||!trailing)return;
 
-  var tile=document.createElement('a');
-  tile.id='gnTopTile';tile.className='gn-top-tile';
-  tile.href='#home';tile.setAttribute('aria-label','Gnamma — Home');
-  tile.title='Gnamma · Home';tile.setAttribute('data-gn-brand-tile','');
-  leading.insertBefore(tile,leading.firstChild);
+  // The selected circular tile IS the existing Contents/menu button.
+  // Never create a second work/logo link beside the hamburger.
+  var menu=document.getElementById('menuBtn');
+  if(menu){
+   menu.classList.add('gn-top-tile');
+   menu.setAttribute('aria-label','Open or close Contents');
+   menu.title='Contents';
+  }
 
   var read=document.createElement('button');
   read.type='button';read.id='gnTopRead';read.className='gn-top-read';
@@ -69,7 +72,7 @@
   var title=document.querySelector('#leftNav .gn-sidebar-book-title');
   if(title){
    var cite=title.querySelector('cite');
-   if(cite){cite.textContent='الضَّرُورِيُّ فِي أُصُولِ الْفِقْهِ';cite.setAttribute('lang','ar');cite.setAttribute('dir','rtl');}
+   if(cite){cite.textContent='الضروري';cite.setAttribute('lang','ar');cite.setAttribute('dir','rtl');}
    var divider=title.querySelector('.gn-sidebar-title-separator');
    if(divider)divider.remove();
    var author=title.querySelector('.gn-sidebar-title-author');
