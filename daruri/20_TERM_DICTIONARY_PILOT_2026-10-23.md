@@ -95,3 +95,33 @@ ranker, not dictionary-root replacement.
   query, its controls disappear to give the results full available height.
 - No model weight, unreviewed analysis or private user note was uploaded
   into the live website. The draft feature branch remains separate from master.
+
+## Technical *meaning* cross-check: why roots are only part of the solution
+
+I also compared representative lexical glosses emitted by CAMeL with the
+separate, source-linked Gnamma scholarly glossary. These are actual model
+glosses observed in the full two-work candidate indexes; the technical
+definitions are editorial terminology information **not automatically
+attributable to every occurrence**.
+
+| Term | Model's lexical gloss (illustrative) | Gnamma's relevant scholarly sense | Lesson |
+|---|---|---|---|
+| قياس | analogy | Legal analogy or logical inference, depending on the argument | Root `قيس` is missing; technical sense still needs context |
+| علة | illness; deficiency; defect | Effective ground of a legal ruling | Root already correct; ordinary dictionary sense can mislead |
+| نص | text | Determinate/unambiguous indication in this discussion | A correct lemma need not yield a useful juristic gloss |
+| اجتهاد | effort; independent thinking | Competent independent juristic inquiry | Generic gloss needs specialized meaning |
+| استحسان | approval; achievement | Juristic preference under a recognized evidential warrant | Plain-language approval is inadequate |
+| بيان | statement; declaration | Valid clarification of a meaning, including acts and context | Dictionary root can be added, but gloss also needs correction |
+| استصحاب | *(no primary model analysis in 17 matched occurrences)* | Presumption of continuity | New candidate generation is needed, not a root override |
+| نسخ | copy; transcribe; abrogate | Legal abrogation when relevant | The same written radicals also form different verbs and nouns; do not blindly force the glossary's noun into every verbal occurrence |
+
+Other entries, including `حكم`, `إجماع`, `دلالة`, `عام`,
+`خاص`, `واجب`, `ظاهر`, `شرع`, `خطاب`, `فرع` and
+`أصل`, show similar differences in precision even when their primary
+morphological analysis is compatible with the dictionary.
+
+**Verdict:** A narrow source-linked root-proposal layer is immediately useful
+as a staged search improvement. A broader dictionary-guided contextual
+sense ranker could be valuable, but this experiment does not prove accuracy
+gains for sense selection. It should be trained/evaluated on independently
+reviewed word-in-passage examples. No such model is released here.
