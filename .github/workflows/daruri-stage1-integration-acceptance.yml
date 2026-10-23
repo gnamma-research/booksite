@@ -9,6 +9,9 @@ on:
       - 'daruri/personal-export.js'
       - 'daruri/editions-selector.js'
       - 'daruri/index.html'
+      - 'daruri/qa/verify_dynamic_design_browser.cjs'
+      - 'daruri/qa/verify_dynamic_negative_paths.cjs'
+      - 'daruri/qa/verify_dynamic_cancel_identity.cjs'
   workflow_dispatch:
 permissions:
   contents: read
@@ -31,6 +34,8 @@ jobs:
           node --check daruri/dynamic-pdf/client.js
           node --check daruri/dynamic-pdf/assemble.worker.js
           node --check daruri/personal-export.js
+          node --check daruri/editions-selector.js
+          node --check daruri/qa/verify_dynamic_design_browser.cjs
           node daruri/dynamic-pdf/test_design_catalog.cjs
           node daruri/qa/verify-editions-delivery.cjs
       - name: All published fallback PDFs and signed inputs remain present
