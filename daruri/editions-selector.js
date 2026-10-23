@@ -6,6 +6,17 @@
   'use strict';
   if(!window.GnammaEditions||window.GnammaEditions.__publishedSelector)return;
   const oldRender=window.GnammaEditions.render;
+  // Apple touch browsers often preview PDF links instead of presenting a
+  // separate native download. Label the single available action truthfully.
+  // There is no reliable browser API that predicts every PDF download policy;
+  // limit this adjustment to recognizable iPhone/iPad/iPod devices.
+  const APPLE_PDF_PREVIEW=(()=>{
+    try{
+      const ua=navigator.userAgent||'';
+      return /iPhone|iPad|iPod/i.test(ua)||
+        (navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+    }catch(_){return false;}
+  })();
   const NAV=['reading','reference'];
   const BASE={
     reading:{en:true,ar:true,vowels:true,headings:'original',notes:'none',
@@ -195,9 +206,11 @@
             '<button type="button" class="gn-es-action gn-es-action-primary" id="gn-es-prepare" data-es-prepare hidden>'+
               '<span data-es-prepare-label>Prepare PDF</span><progress data-es-prepare-progress aria-label="PDF retrieval and verification progress" max="100" value="0" hidden></progress></button>'+
             '<a class="gn-es-action gn-es-action-primary" data-es-action="download" download hidden>Download PDF</a>'+
-            '<a class="gn-es-action gn-es-action-secondary" data-es-action="open" aria-label="View the selected PDF in a new tab" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>View PDF</span></a>'+
+            '<a class="gn-es-action gn-es-action-secondary" data-es-action="open" aria-label="View the selected PDF in your browser" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>View in browser</span></a>'+
             '<button class="gn-es-action gn-es-action-primary" type="submit" id="pe-generate" hidden disabled>Create my PDF</button>'+
-          '</div><p id="gn-es-prepare-status" class="gn-es-prepare-status" role="status" hidden></p>'+
+          '</div>'+
+          '<p class="gn-es-ios-save-help" data-es-ios-save-help hidden>To save a copy on iPhone or iPad, open the PDF, then use Share → Save to Files.</p>'+
+          '<p id="gn-es-prepare-status" class="gn-es-prepare-status" role="status" hidden></p>'+
           '<a id="pe-clean" hidden></a>'+
           '<div id="pe-progress" hidden role="status" aria-live="polite">'+
             '<span id="pe-progress-text"></span><progress id="pe-bar" max="100" value="0"></progress></div>'+
@@ -321,18 +334,30 @@
     const open=root.querySelector('[data-es-action="open"]');
     const bar=prepare.querySelector('[data-es-prepare-progress]');
     const status=root.querySelector('#gn-es-prepare-status');
-    // Published PDFs are already made: a direct native download requires
-    // one click and preserves iOS Safari's original user gesture. The
-    // browser-local personal edition remains a distinct creation workflow.
+    // Both links refer to the same selected, published PDF. Apple touch
+    // devices get one truthful "View PDF" action because Safari may preview
+    // the file; desktop-like browsers retain Download and View separately.
+    // Private annotations still use the existing local "Create my PDF" path.
     prepare.hidden=true;
     bar.hidden=true;
     const ready=found.status==='ready'&&Boolean(file);
-    download.hidden=isPersonal||!ready;
+    const showPublic=ready&&!isPersonal;
+    const viewOnly=APPLE_PDF_PREVIEW;
+    download.hidden=!showPublic||viewOnly;
     if(ready){
       download.href=open.getAttribute('href');
       download.download=(file.split('/').pop()||'daruri.pdf').replace(/[^a-z0-9._-]/gi,'_');
     }else download.removeAttribute('href');
-    open.hidden=isPersonal||!ready;
+    open.hidden=!showPublic;
+    open.classList.toggle('gn-es-action-primary',viewOnly);
+    open.classList.toggle('gn-es-action-secondary',!viewOnly);
+    const viewText=viewOnly?'View PDF':'View in browser';
+    open.querySelector('span').textContent=viewText;
+    open.setAttribute('aria-label',viewOnly?
+      'View selected PDF, then use Share to save it':
+      'View selected PDF in a browser tab');
+    const saveHelp=root.querySelector('[data-es-ios-save-help]');
+    if(saveHelp)saveHelp.hidden=!showPublic||!viewOnly;
     status.hidden=true;
     status.textContent='';
   }
