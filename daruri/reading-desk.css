@@ -126,7 +126,10 @@ body.gn-rd-print{overflow:hidden!important}
 @media (prefers-reduced-motion:reduce){.gn-rd-page *{scroll-behavior:auto!important}}
 @media print{
  html:root body.gn-rd-print > :not(#gn-rd-print-root){display:none!important}
- html:root body.gn-rd-print{background:#fff!important;color:#000!important;overflow:visible!important}
+ /* The iOS screen-dialog lock uses a fixed body. Undo that layout only while
+    native browser printing; otherwise the print sheet is outside page flow. */
+ html:root{overflow:visible!important;overscroll-behavior:auto!important}
+ html:root body.gn-rd-print{background:#fff!important;color:#000!important;overflow:visible!important;position:static!important;top:auto!important;left:auto!important;right:auto!important;width:auto!important}
  html:root body.gn-rd-print #gn-rd-print-root{display:block!important;position:static!important;background:#fff!important;color:#000!important;max-width:none!important;min-height:0!important;overflow:visible!important;padding:0!important;margin:0!important;font-size:10.5pt;line-height:1.55}
  html:root body.gn-rd-print #gn-rd-print-root .gn-rd-print-actions{display:none!important}
  html:root body.gn-rd-print #gn-rd-print-root .gn-rd-print-sheet{display:block!important;position:static!important;max-width:none!important;width:auto!important;overflow:visible!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:#fff!important;color:#000!important}
