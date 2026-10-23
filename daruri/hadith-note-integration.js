@@ -135,32 +135,10 @@ function scan(root){
  if(root.matches?.('a.quran-source-ref'))simplifyQMarker(root);
  root.querySelectorAll?.('a.quran-source-ref').forEach(simplifyQMarker);
 }
-function htmlForHadith(id){
- const record=window.GnammaHadithAnchorMap?.notes[id],source=window.GnammaHadithContextData?.notes[id];
- if(!record||!source)return '';
- const phrase=record.anchors.find(a=>a.ar.includes('«'))?.ar;
- const links=source.refs.map(key=>window.GnammaHadithContextData.sources[key]).filter(Boolean);
- const h=phrase?'<bdi class="gn-source-heading-primary gn-source-heading-ar" lang="ar" dir="rtl">'+escape(phrase)+'</bdi>':'<span class="gn-source-heading-primary">'+escape(record.title)+'</span>';
- const summary=links.length?links.map(ref=>'<a class="gn-source-simple-link" data-gn-source-icon="1" href="'+escape(ref.url)+'" target="_blank" rel="noopener noreferrer">'+escape(ref.sourceLabel||ref.collection+' '+ref.number)+'</a>').join(' · '):'Source identification not securely established';
- return '<article class="gn-layer-note gn-unified-notes"><section class="gn-note-group"><section class="gn-note-entry" data-note-id="'+escape(id)+'" data-note-kind="hadith-source"><h3>'+h+'<span class="gn-source-heading-sub">'+escape(phrase?record.title:'Hadith source')+'</span><small class="gn-note-id gn-quiet-note-id">'+escape(id)+'</small></h3><p class="gn-hadith-shortline">In '+summary+(source.unresolved?'<span class="gn-hadith-compact-qualification"> · Source qualification unresolved</span>':'')+'</p></section></section></article>';
-}
-function showHadith(id,opener){
- if(!window.gnShowLayer)return false;
- const content=htmlForHadith(id);if(!content)return false;
- window.gnShowLayer('Hadith note · §'+window.GnammaHadithAnchorMap.notes[id].section,content,'notes',opener);
- return true;
-}
-function onClick(event){
- const link=event.target.closest?.('a.gn-inline-hadith-ref[data-note-target]');
- if(!link)return;
- event.preventDefault();event.stopImmediatePropagation();
- getIndex().then(()=>{if(!showHadith(link.dataset.noteTarget,link)){
-  document.querySelector('#reader [data-gn-notes-open]')?.click();
- }}).catch(e=>console.warn('Hadith marker unavailable',e));
-}
 function start(){
  getIndex().then(()=>{
   scan(document);
+  window.GnammaHadithContextRescan?.();
   const watch=new MutationObserver(changes=>{
    const targets=new Set();
    for(const item of changes)for(const node of item.addedNodes){
@@ -169,7 +147,6 @@ function start(){
    for(const node of targets)scan(node);
   });watch.observe(document.body,{childList:true,subtree:true});
  }).catch(e=>console.warn('Hadith anchor data unavailable',e));
- document.addEventListener('click',onClick,true);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
 })();
