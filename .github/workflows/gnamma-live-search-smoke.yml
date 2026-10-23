@@ -58,8 +58,9 @@ jobs:
           for marker in ["mobileResearchBar","data-gns-mobile-view","gns-research-grid","gns-mobile-resultsbar"]:
               if marker not in js+css:
                   raise RuntimeError("Missing live mobile layout marker "+marker)
-          if "morph-lemma" not in morph or "morph-root" not in morph or "ensureDetail" not in morph:
-              raise RuntimeError("Word-form/root/lazy grammatical API is not current")
+          if ("morph-lemma" not in js or "morph-root" not in js or
+                  "morph-root" not in morph or "ensureDetail" not in morph):
+              raise RuntimeError("Search modes or lazy grammatical API are not current")
           if "detailedGrammar" not in word:
               raise RuntimeError("Live word popup does not have advanced grammar support")
           if stamp not in sw or "daruri-reader-"+stamp not in sw:
