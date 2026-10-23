@@ -266,7 +266,8 @@ synthetic_index = {
          {"raw_root": "ب.#.ن"}],
         [3, "بعض", "عَضّ", "عضض", "noun", "contextual-bert", "عَضّ",
          {"rank": 1}],
-        [4, "إن", "أَنَّ", "", "conj_sub", "أَنَّ", {"rank": 1}]
+        [4, "إن", "أَنَّ", "", "conj_sub", "contextual-bert", "أَنَّ",
+         {"rank": 1}]
     ]}]
 }
 root_updated, supplement = enrich_mod.enrich(synthetic_index, lexicon)
