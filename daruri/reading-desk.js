@@ -70,6 +70,54 @@ function create(ctx){
  let openContext=null,editorOriginal=null,printSelection=null,loadFailure=false,writeConflict=false,untouchedStorage=null,storedEnvelope={},lastSourceDeepLink='',relinkFocus=null;
  const $=s=>document.querySelector(s);
  const section=n=>ctx.sections.get(String(n));
+ // Keep one canonical saved reference, plus the reading places where it was saved.
+ // These optional origins travel with normal Reading Desk JSON backups.
+ function normalizeOrigins(input){
+  const out=[],seen=new Set();
+  for(const item of Array.isArray(input)?input:[]){
+   const n=String(item?.section??''),sec=section(n);
+   if(!sec)continue;
+   const value=item?.segment;
+   const segment=value!==null&&value!==undefined&&Number.isInteger(Number(value))&&
+    Number(value)>=0&&Number(value)<(sec.segments||[]).length?Number(value):null;
+   const id=n+':'+(segment===null?'':segment);
+   if(seen.has(id))continue;
+   seen.add(id);out.push({section:n,segment});
+   if(out.length>=250)break;
+  }
+  return out;
+ }
+ function readingOriginFor(target){
+  if(state.route!=='reader'||!target||!['dictionary','index','application','lesson'].includes(target.kind))return null;
+  const reader=document.getElementById('reader'),last=window.__termClickOrigin;
+  const anchor=target.kind==='dictionary'&&last?.dataset?.term===target.term&&
+   reader?.contains(last)?last:null;
+  const grid=anchor?.closest('.passage-grid');
+  const n=String(grid?.closest('[data-reading-section]')?.dataset.readingSection||
+   anchor?.closest('[data-reading-section]')?.dataset.readingSection||state.n||'');
+  if(!section(n))return null;
+  const raw=grid?.dataset.segment,segment=raw!==undefined&&
+   Number.isInteger(Number(raw))&&Number(raw)>=0?Number(raw):null;
+  return {section:n,segment:segment!==null&&segment<(section(n)?.segments||[]).length?segment:null};
+ }
+ function linkedHere(row,target){
+  if(!row)return false;
+  const place=readingOriginFor(target);
+  if(target?.kind!=='dictionary'||!place)return true;
+  return normalizeOrigins(row.origins).some(loc=>loc.section===place.section);
+ }
+ function associateOrigin(row,target){
+  const place=readingOriginFor(target);
+  if(!place)return false;
+  const before={origins:row.origins,updated:row.updated};
+  const current=normalizeOrigins(row.origins);
+  if(current.some(loc=>loc.section===place.section))return true;
+  row.origins=[...current,place];row.updated=Date.now();
+  if(!persist()){Object.assign(row,before);return false;}
+  ctx.notify('Linked this saved reference to '+ctx.sectionRef(place.section)+'.');
+  if(state.route==='reader')syncActionStates();
+  return true;
+ }
  function validateTarget(raw){
   if(!raw||typeof raw!=='object'||Array.isArray(raw))return null;
   const kind=clamp(raw.kind,30);
@@ -130,7 +178,7 @@ function create(ctx){
   if(target&&parsed){for(const key of ['kind','section','segment','lang','offset'])if(key in parsed)target[key]=parsed[key];}
   const title=typeof r.title==='string'?r.title:r.title==null?'':JSON.stringify(r.title);
   const body=typeof r.body==='string'?r.body:r.body==null?'':JSON.stringify(r.body);
-  return {...r,id:clamp(r.id,100)||uuid(),kind,target,title,body,
+  return {...r,id:clamp(r.id,100)||uuid(),kind,target,title,body,origins:normalizeOrigins(r.origins),
    ...(r.body!=null&&typeof r.body!=='string'?{archivedBodyValue:r.body}:{}),
    ...(r.title!=null&&typeof r.title!=='string'?{archivedTitleValue:r.title}:{}),
    ...(rawTarget&&target&&JSON.stringify(rawTarget)!==JSON.stringify(target)?{sourceTargetOriginal:archiveTarget(rawTarget)}:{}),
@@ -317,11 +365,13 @@ function create(ctx){
      ctx.notify('Restored to Reading Desk.');
      if(state.route==='bookmarks')render();
      if(state.route==='reader')refreshReaderAfterBookmark(target);
-    }else ctx.notify('Already in Reading Desk.');
+    }else if(readingOriginFor(target)&&!linkedHere(existing,target))associateOrigin(existing,target);
+    else ctx.notify('Already in Reading Desk.');
     return existing;
    }
   }
-  const row=sanitize({id:uuid(),kind,target,title,body,created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target});
+  const readingOrigin=readingOriginFor(target);
+   const row=sanitize({id:uuid(),kind,target,title,body,origins:readingOrigin?[readingOrigin]:[],created:now,updated:now,modified:0,dateSource:'recorded',deleted:0,standalone:kind==='note'&&!target});
   if(!row)return null;
   records.unshift(row);
   if(!persist()){records.shift();return null;}
@@ -1146,7 +1196,7 @@ function create(ctx){
   const incoming=allowed.map(sanitize).filter(Boolean);
   if(allowed.length&&!incoming.length)throw Error('No valid entries found');
   const merged=records.slice(),byId=new Map(merged.map(r=>[r.id,r])),now=Date.now();
-  const fields=['kind','target','title','body','deleted','standalone'];
+  const fields=['kind','target','title','body','deleted','standalone','origins'];
   const contentDiffers=(a,b)=>fields.some(k=>JSON.stringify(a[k])!==JSON.stringify(b[k]));
   let changes=0;
   function preserveVersion(row,reason){
