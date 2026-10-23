@@ -1,0 +1,74 @@
+/* Unified Qurʾān and Hadith note apparatus: no stand-alone iconography or new palette. */
+#reader .gn-inline-source-letter,
+#reader .quran-source-ref {
+ display:inline-flex;align-items:center;justify-content:center;position:relative;
+ font:700 .62em/1 var(--sans,system-ui,sans-serif);direction:ltr;unicode-bidi:isolate;
+ vertical-align:super;min-width:1.3em;min-height:1.3em;padding:.1em .22em;
+ margin-inline:.16em .08em;border:1px solid var(--line,var(--border,currentColor));
+ border-radius:4px;background:var(--surface,transparent);color:var(--accent,currentColor);
+ text-decoration:none;white-space:nowrap;cursor:pointer;touch-action:manipulation;
+}
+#reader .gn-inline-source-letter:hover,#reader .quran-source-ref:hover,
+#reader .gn-inline-source-letter:focus-visible,#reader .quran-source-ref:focus-visible {
+ background:var(--accent-soft,var(--surface-alt,transparent));
+ outline:2px solid var(--accent,currentColor);outline-offset:2px;
+}
+@media (pointer:coarse) {
+ #reader .gn-inline-source-letter::before,#reader .quran-source-ref::before {
+ content:"";position:absolute;inset:-12px -10px;
+ }
+}
+.gn-note-entry h3 .gn-source-heading-primary {
+ display:block;font:600 clamp(1.01rem,1.55vw,1.17rem)/1.5 var(--serif,Georgia,serif);
+ color:var(--text,inherit);margin-bottom:3px;
+}
+.gn-note-entry h3 .gn-source-heading-ar {
+ font-family:var(--arabic-font,var(--arabic,'Amiri',serif));
+ font-size:clamp(1.28rem,2.1vw,1.57rem);font-weight:500;line-height:1.95;
+ text-align:start;direction:rtl;unicode-bidi:isolate;
+ display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;
+ line-clamp:2;overflow:hidden;overflow-wrap:anywhere;
+}
+.gn-note-entry h3 .gn-source-heading-sub {
+ display:block;font:500 .74rem/1.5 var(--sans,system-ui,sans-serif);
+ color:var(--muted,var(--text-soft,inherit));margin-top:3px;
+}
+.gn-note-entry h3 .gn-quiet-note-id{
+ font:400 .65rem/1.3 var(--sans,system-ui,sans-serif)!important;
+ letter-spacing:.015em;opacity:.65;display:inline-block;margin:5px 0 0;
+ color:var(--muted,var(--text-soft,inherit));
+}
+.gn-note-entry p.gn-hadith-shortline,
+.gn-note-entry p[data-gn-hadith-compact] {
+ font:inherit;line-height:1.65;
+ margin:6px 0 8px;white-space:normal;
+}
+.gn-short-source-label,.gn-hadith-compact-qualification{
+ font:400 .83rem/1.5 var(--sans,system-ui,sans-serif);
+ color:var(--muted,var(--text-soft,inherit));
+}
+.gn-note-entry .gn-source-simple-link,
+.gn-note-entry .gn-short-source-refs .gn-source-simple-link {
+ font:inherit;color:var(--accent,currentColor);text-decoration:underline;
+ text-underline-offset:.16em;
+}
+.gn-note-entry a.gn-source-simple-link:focus-visible {
+ outline:2px solid var(--accent,currentColor);outline-offset:3px;
+}
+.gn-note-entry .gn-hadith-related{
+ border-top:1px solid var(--line,var(--border,#aaa));margin-top:12px;padding-top:9px;
+}
+.gn-hadith-in-quran-note .gn-related-hadith-heading {
+ font:600 .88rem/1.4 var(--serif,Georgia,serif);color:var(--text,inherit);margin:12px 0 2px;
+}
+.gn-hadith-in-quran-note .gn-related-hadith-context-label{
+ font:400 .78rem/1.5 var(--sans,system-ui,sans-serif);color:var(--muted,inherit);
+ margin:2px 0 6px;
+}
+@media(max-width:500px){
+ .gn-note-entry h3 .gn-source-heading-ar{font-size:1.25rem;line-height:1.85;}
+ .gn-note-entry .gn-short-source-refs{overflow-wrap:anywhere;}
+}
+@media(prefers-reduced-motion:reduce){
+ #reader .gn-inline-source-letter,#reader .quran-source-ref{transition:none}
+}
