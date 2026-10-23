@@ -167,7 +167,7 @@
       ['daruri/quran-context-data.json', 'quran-context-data.json?v=20261022-qcontext1'],
       ['daruri/quran-context-data.js', 'quran-context-data.js?v=20261022-qcontext1'],
       ['daruri/QURAN_CONTEXT_SOURCES.md', 'QURAN_CONTEXT_SOURCES.md'],
-      ['daruri/hadith-inline-anchors.js', 'hadith-inline-anchors.js?v=20261023-hmarkers1'],
+      ['daruri/hadith-inline-anchors.js', 'hadith-inline-anchors.js?v=20261023-hmarkers2'],
       ['daruri/hadith-context-ui.js', 'hadith-context-ui.js?v=20261023-hctx1'],
       ['daruri/hadith-context-ui.css', 'hadith-context-ui.css?v=20261023-hctx1'],
       ['daruri/hadith-context-data.js', 'hadith-context-data.js?v=20261023-hctx1'],
