@@ -84,31 +84,17 @@ function splitOriginalIntoLines(text,kitFont,size){
 // Multiple semantic chunks for a line stay in ORIGINAL LOGICAL READING ORDER.
 // This does not certify native per-word hitboxes or other PDF readers.
 const SEMANTIC_CID_MAX=28;
+const CID_WORD_JOIN_OVERLAP_PT=3.5;
 // Whole original words are narrower than the signed 28-scalar CID bound.
 function semanticChunks(phrase){
- // Do not cut inside an original Arabic word, even at a grapheme
- // boundary. Native MuPDF coalesces adjacent equal letters (e.g. the two
- // lams in اللَّه) when separate invisible CIDs overlap geometrically.
- // All 21,647 source-word occurrences were checked; the longest is
- // 21 scalars, below this 28-scalar expansion bound.
- const pieces=phrase.match(/\S+\s*/gu)||[];
- if(pieces.join('')!==phrase)throw Error('Source contains unhandled whitespace');
- const chunks=[];let part='';
- for(const piece of pieces){
-  if(Array.from(piece).length>SEMANTIC_CID_MAX)
-   throw Error('An original Arabic word exceeds the semantic CID limit');
-  if(part&&Array.from(part+piece).length>SEMANTIC_CID_MAX){
-   if(!/\s$/u.test(part))throw Error('Would cut source inside a word');
-   chunks.push(part);part='';
-  }
-  part+=piece;
- }
- if(part)chunks.push(part);
- if(!chunks.length||chunks.join('')!==phrase||
-    chunks.some(c=>Array.from(c).length>SEMANTIC_CID_MAX)||
-    chunks.slice(0,-1).some(c=>!/\s$/u.test(c)))
-   throw Error('Semantic chunks lost authorial text or split a source word');
- return chunks;
+ // One CID per complete original word, with its exact trailing whitespace.
+ // The invisible glyph font width is tuned to the SAME shaped Arabic word
+ // visible as a vector path; the negative PDF text matrix advances RTL.
+ const words=phrase.match(/\S+\s*/gu)||[];
+ if(!words.length||words.join('')!==phrase||
+    words.some(word=>Array.from(word).length>SEMANTIC_CID_MAX))
+   throw Error('Arabic word/CID split mutated the canonical authorial text');
+ return words;
 }
 
 function signedArabicFont(pdf,kit,fontBytes,phrases){
@@ -122,6 +108,17 @@ function signedArabicFont(pdf,kit,fontBytes,phrases){
    throw Error('Invalid original Unicode CID chunk');
   if(units.length>=65534)throw Error('CID Unicode set too large');
   const codes=new Map(),gid=new Uint8Array((units.length+1)*2);
+  // CIDToGIDMap only selects the invisible glyph; W controls its native
+  // selectable rectangle. Add compensation equal to negative Tc, so the
+  // PDF text cursor still advances by the ORIGINAL HarfBuzz word width.
+  const signedWordWidths=units.map(word=>{
+   const layout=parsed.layout(word,'arab',undefined,'rtl');
+   const advance=layout.positions.reduce((sum,p)=>sum+p.xAdvance,0);
+   const width=1000*advance/parsed.unitsPerEm+
+     1000*CID_WORD_JOIN_OVERLAP_PT/17.25;
+   if(!Number.isFinite(width)||width<=0)throw Error('Invalid original word PDF width');
+   return Number(width.toFixed(3));
+  });
   for(let i=0;i<units.length;i++){
     const cp=units[i].codePointAt(0),glyph=parsed.glyphForCodePoint(cp);
     // The semantic PDF text operator is INVISIBLE (Tr=3): its glyph bitmap
@@ -149,7 +146,9 @@ function signedArabicFont(pdf,kit,fontBytes,phrases){
     BaseFont:PDFName.of('GnammaVectorOriginalCID'),
     CIDSystemInfo:pdf.context.obj({Registry:PDFString.of('Adobe'),
       Ordering:PDFString.of('Identity'),Supplement:0}),
-    FontDescriptor:descriptor,DW:500,CIDToGIDMap:gidRef
+    FontDescriptor:descriptor,DW:500,
+    W:[1,signedWordWidths],
+    CIDToGIDMap:gidRef
   }));
   const lines=[
     '/CIDInit /ProcSet findresource begin','12 dict begin','begincmap',
@@ -236,29 +235,33 @@ function drawSourceGlyphs(page,kitFont,phrase,x,y,size){
 }
 
 function drawOnlyOriginalUnicode(page,font,phrase,x,y,size,visibleWidth){
- const chunks=semanticChunks(phrase);
- // One zero-painted original Unicode glyph for every <=28-scalar source
- // grapheme chunk. Repeated Tm positions are an experiment specifically
- // designed to preserve MuPDF logical order across its CID expansion limit.
- // Hitboxes DO NOT reliably follow the individual visible words here.
- const drift=chunks.length<=1?0:Math.min(1.5,5/Math.max(1,chunks.length-1));
- for(let index=0;index<chunks.length;index++){
-  const chunk=chunks[index],code=font.codes.get(chunk);
-  if(!code)throw Error('Original source CID chunk absent from signed font');
-  page.pushOperators(
-    PDFOperator.of('BT'),
-    PDFOperator.of('Tf',[PDFName.of('GNOriginal'),PDFNumber.of(size)]),
-    PDFOperator.of('Tr',[PDFNumber.of(3)]),
-    PDFOperator.of('Tz',[PDFNumber.of(100)]),
-    PDFOperator.of('Tm',[
-      PDFNumber.of(1),PDFNumber.of(0),PDFNumber.of(0),PDFNumber.of(1),
-      PDFNumber.of(x+index*drift),PDFNumber.of(y)]),
-    PDFOperator.of('Tj',[PDFHexString.of(code.toString(16).padStart(4,'0'))]),
-    PDFOperator.of('ET')
-  );
- }
- return {cid_count:chunks.length,horizontal_scale_percent:100,
-  semantic_chunk_limit:SEMANTIC_CID_MAX,individual_word_hitboxes_verified:false};
+ const words=semanticChunks(phrase);
+ const encoded=words.map(word=>{
+  const code=font.codes.get(word);
+  if(!code)throw Error('Original source word missing in native PDF CMap');
+  return code.toString(16).padStart(4,'0');
+ }).join('');
+ // Negative text X transform + signed per-word natural advances yield
+ // physically RTL native hitboxes. A small negative text character spacing
+ // keeps multiple Arabic ToUnicode expansions in ONE logical MuPDF run;
+ // exactly the same positive amount is compensated in CID /W above.
+ // No text is painted (Tr=3): the visible source remains original vectors.
+ page.pushOperators(
+  PDFOperator.of('BT'),
+  PDFOperator.of('Tf',[PDFName.of('GNOriginal'),PDFNumber.of(size)]),
+  PDFOperator.of('Tr',[PDFNumber.of(3)]),
+  PDFOperator.of('Tz',[PDFNumber.of(100)]),
+  PDFOperator.of('Tc',[PDFNumber.of(-CID_WORD_JOIN_OVERLAP_PT)]),
+  PDFOperator.of('Tm',[
+    PDFNumber.of(-1),PDFNumber.of(0),PDFNumber.of(0),PDFNumber.of(1),
+    PDFNumber.of(x+visibleWidth),PDFNumber.of(y)]),
+  PDFOperator.of('Tj',[PDFHexString.of(encoded)]),
+  PDFOperator.of('ET')
+ );
+ return {cid_count:words.length,horizontal_scale_percent:100,
+  semantic_chunk_limit:SEMANTIC_CID_MAX,individual_word_hitboxes_verified:false,
+  negative_rtl_text_matrix:true,
+  original_word_advance_compensated:true};
 }
 
 async function generate(){
@@ -344,7 +347,18 @@ async function generate(){
       pdfPage.drawText(record.id,{x:35,y:y+4.5,size:7.8,font:english});
     const visual=drawSourceGlyphs(pdfPage,signed.parsed,record.phrase,x,y,fontSize);
     const semantic=drawOnlyOriginalUnicode(pdfPage,signed,record.phrase,x,y,fontSize,advance);
+    const originalWords=semanticChunks(record.phrase);
+    const opening=originalWords.slice(0,2).join('').trim();
+    const ending=originalWords.slice(-2).join('').trim();
+    const shapedWidth=text=>{
+     const shaped=signed.parsed.layout(text,'arab',undefined,'rtl');
+     return shaped.positions.reduce((total,p)=>total+p.xAdvance,0)*
+       fontSize/signed.parsed.unitsPerEm;
+    };
     recorded.push({...record,page:pageNumber+1,x,y,width:advance,height:fontSize*1.5,
+      opening_source:opening,ending_source:ending,
+      opening_visible_width_pt:shapedWidth(opening),
+      ending_visible_width_pt:shapedWidth(ending),
       ...visual,...semantic});
    }
    if((pageNumber+1)%25===0){
@@ -388,6 +402,9 @@ async function generate(){
     exact_original_page_layout_certified:false,
     one_exact_unicode_cid_per_line:false,
     one_exact_unicode_layer_per_line:true,
+    one_original_word_per_semantic_cid:true,
+    native_rtl_text_matrix:true,
+    CID_word_join_overlap_pt:CID_WORD_JOIN_OVERLAP_PT,
     semantic_chunk_limit:SEMANTIC_CID_MAX,
     source_chunk_reconstruction_guaranteed:true,
     word_level_selection_certified:false,
