@@ -52,17 +52,25 @@ jobs:
           node --check daruri/sw.js
           node --check daruri/download-bundle.js
           node --check daruri/qa/verify-reading-desk-toolbar-pdf.cjs
-          grep -q 'backup-transfer.js?v=20261023-transfer-release2' daruri/index.html
-          grep -q 'backup-transfer.js?v=20261023-transfer-release2' daruri/sw.js
-          grep -q 'backup-transfer.js?v=20261023-transfer-release2' daruri/download-bundle.js
+          grep -q 'backup-transfer.js?v=20261023-all-popup-scroll1' daruri/index.html
+          grep -q 'backup-transfer.js?v=20261023-all-popup-scroll1' daruri/sw.js
+          grep -q 'backup-transfer.js?v=20261023-all-popup-scroll1' daruri/download-bundle.js
           grep -q 'reading-desk-pdf.js?v=20261021-rdiconpdf1' daruri/sw.js
-          grep -q 'reading-desk.js?v=20261023-transfer-release2' daruri/index.html
-          grep -q 'reading-desk.css?v=20261023-rd-ux1-personal-icons' daruri/index.html
+          grep -q 'reading-desk.js?v=20261023-all-popup-scroll1' daruri/index.html
+          grep -q 'reading-desk.css?v=20261023-all-popup-scroll1' daruri/index.html
           grep -q 'daruri/reading-desk-pdf.js' daruri/download-bundle.js
-          grep -q 'reading-desk.js?v=20261023-transfer-release2' daruri/sw.js
-          grep -q 'reading-desk.css?v=20261023-rd-ux1-personal-icons' daruri/sw.js
-          grep -q 'reading-desk.js?v=20261023-transfer-release2' daruri/download-bundle.js
-          grep -q 'reading-desk.css?v=20261023-rd-ux1-personal-icons' daruri/download-bundle.js
+          grep -q 'reading-desk.js?v=20261023-all-popup-scroll1' daruri/sw.js
+          grep -q 'reading-desk.css?v=20261023-all-popup-scroll1' daruri/sw.js
+          grep -q 'reading-desk.js?v=20261023-all-popup-scroll1' daruri/download-bundle.js
+          grep -q 'reading-desk.css?v=20261023-all-popup-scroll1' daruri/download-bundle.js
+      - name: Exclude inaccessible Microsoft apt source on GitHub runner
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then
+              sudo mv "$source" "$source.disabled"
+            fi
+          done
       - name: Install pinned browser and PDF validators
         run: |
           npm install --no-save --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1 pdfjs-dist@5.4.296

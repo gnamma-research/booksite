@@ -101,9 +101,19 @@ async function exercise(engine, width, touch) {
     await page.locator('#gn-rd-relink-shade').waitFor();
     check((await page.locator('#gn-rd-relink-shade').innerText()).includes('previous source reference'),
       id+': source relinking did not disclose provenance');
+    const relinkScroll=await page.evaluate(()=>({
+      locked:window.GnammaPopupScroll?.isLocked?.(),
+      bodyPosition:getComputedStyle(document.body).position,
+      outside:getComputedStyle(document.querySelector('.gn-rd-relink-shade')).overflowY,
+      inside:getComputedStyle(document.querySelector('.gn-rd-relink')).overflowY
+    }));
+    check(relinkScroll.locked&&relinkScroll.bodyPosition==='fixed'&&relinkScroll.outside==='hidden'&&relinkScroll.inside==='auto',
+      id+': reconnect modal must have one scrollbar and a frozen underlying reader '+JSON.stringify(relinkScroll));
     await page.locator('[data-rd="relink-close"]').click();
     check(await page.locator('#gn-rd-relink-shade').count()===0,
       id+': relink Cancel failed');
+    check(await page.evaluate(()=>!window.GnammaPopupScroll?.isLocked?.()&&getComputedStyle(document.body).position!=='fixed'),
+      id+': reconnect modal left the underlying book locked');
 
     if(touch) {
       await page.locator('#gn-rd-detail [data-rd="detail-back"]').click();

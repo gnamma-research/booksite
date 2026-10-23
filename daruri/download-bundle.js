@@ -5,7 +5,7 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "20261023-history-help2";
+  const RELEASE_VERSION = "20261023-all-popup-scroll2-merged";
   const RELEASE_ASSETS = new Set(["headerless-navigation.css", "headerless-navigation.js", "dock-ios-compact.css","daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "quran-context-data.js", "QURAN_CONTEXT_SOURCES.md", "hadith-context-ui.js", "hadith-context-ui.css", "hadith-inline-anchors.js", "hadith-context-data.js", "hadith-context-metadata.js", "hadith-context-arabic-bukhari1.js", "hadith-context-arabic-bukhari2.js", "hadith-context-arabic-muslim.js", "hadith-context-arabic-abudawud1.js", "hadith-context-arabic-abudawud2.js", "hadith-context-arabic-tirmidhi.js", "hadith-context-arabic-sunan.js", "HADITH_CONTEXT_SOURCES.md", "hadith-context-english-bukhari-a.js", "hadith-context-english-bukhari-b.js", "hadith-context-english-bukhari-long.js", "hadith-context-english-abudawud-a.js", "hadith-context-english-abudawud-b.js", "hadith-context-english-tirmidhi-a.js", "hadith-context-english-tirmidhi-b.js", "hadith-context-english-tirmidhi-c.js", "hadith-context-english-muslim.js", "hadith-context-english-other.js", "gnamma-morphology.js", "gnamma-word-context.js", "gnamma-word-context.css", "morph-lexicon.json", "morph-daruri-v1.json", "morph-mustasfa-v1.json", "download-bundle.js", "bookmark-ui.js", "bookmark-ui.css", "backup-transfer.js", "backup-transfer.css", "google-drive-config.js", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-navigation-history.js", "reading-navigation-bridge.js", "reading-navigation-history.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
@@ -106,11 +106,11 @@
       ['daruri/dock-ios-compact.css','dock-ios-compact.css?v=20261023-ux-dock1'],
       ['daruri/bookmark-ui.js', 'bookmark-ui.js?v=20261023-personal-icons'],
       ['daruri/bookmark-ui.css', 'bookmark-ui.css?v=20261023-personal-icons'],
-      ['daruri/backup-transfer.js', 'backup-transfer.js?v=20261023-transfer-release2'],
+      ['daruri/backup-transfer.js', 'backup-transfer.js?v=20261023-all-popup-scroll1'],
       ['daruri/backup-transfer.css', 'backup-transfer.css?v=20261023-transfer-release2'],
       ['daruri/google-drive-config.js', 'google-drive-config.js?v=20261023-transfer-release2'],
-      ['daruri/reading-desk.js', 'reading-desk.js?v=20261023-transfer-release2'],
-      ['daruri/reading-desk.css', 'reading-desk.css?v=20261023-rd-ux1-personal-icons'],
+      ['daruri/reading-desk.js', 'reading-desk.js?v=20261023-all-popup-scroll1'],
+      ['daruri/reading-desk.css', 'reading-desk.css?v=20261023-all-popup-scroll1'],
       ['daruri/reading-mode-controls.js', 'reading-mode-controls.js?v=20261023-dock-gesture-counts2'],
       ['daruri/reading-mode-controls.css', 'reading-mode-controls.css?v=20261023-dock-gesture-counts2'],
       ['daruri/reading-navigation-history.js', 'reading-navigation-history.js?v=20261023-history-help2'],
@@ -156,9 +156,9 @@
       ['daruri/dictionary.html', 'dictionary.html'],
       ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri8-structure-20261020'],
       ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=20261021-section1-qparallels1'],
-      ['daruri/gnamma-search.js', 'gnamma-search.js?v=20261022-morphperf1'],
+      ['daruri/gnamma-search.js', 'gnamma-search.js?v=20261023-all-popup-scroll1'],
       ['daruri/gnamma-morphology.js', 'gnamma-morphology.js?v=20261022-morphperf1'],
-      ['daruri/gnamma-word-context.js', 'gnamma-word-context.js?v=20261022-morphperf1'],
+      ['daruri/gnamma-word-context.js', 'gnamma-word-context.js?v=20261023-all-popup-scroll1'],
       ['daruri/gnamma-word-context.css', 'gnamma-word-context.css?v=20261022-morphperf1'],
       ['daruri/morph-lexicon.json', 'morph-lexicon.json'],
       ['daruri/morph-daruri-v1.json', 'morph-daruri-v1.json'],
@@ -168,7 +168,7 @@
       ['daruri/gnamma-proximity.js', 'gnamma-proximity.js?v=20261022-proximity1'],
       ['daruri/gnamma-scholarly.js', 'gnamma-scholarly.js?v=20261022-scholarly1'],
       ['daruri/gnamma-scholarly.css', 'gnamma-scholarly.css?v=20261022-scholarly1'],
-      ['daruri/source-reference-data.js', 'source-reference-data.js?v=20261023-hadith-arrow3'],
+      ['daruri/source-reference-data.js', 'source-reference-data.js?v=20261023-all-popup-scroll1'],
       ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-fallback-quran1'],
       ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261022-qcontext1'],
@@ -199,7 +199,7 @@
       ['daruri/hadith-context-english-tirmidhi-c.js', 'hadith-context-english-tirmidhi-c.js?v=20261023-hadithux3'],
       ['daruri/hadith-context-english-muslim.js', 'hadith-context-english-muslim.js?v=20261023-hadithux3'],
       ['daruri/hadith-context-english-other.js', 'hadith-context-english-other.js?v=20261023-hadithux3'],
-      ['daruri/download-bundle.js', 'download-bundle.js?v=20261023-stage1-current'],
+      ['daruri/download-bundle.js', 'download-bundle.js?v=20261023-all-popup-scroll1'],
       ['daruri/study-guide-data.js', 'study-guide-data.js'],
       ['daruri/study-guide.js', 'study-guide.js'],
       ['daruri/study-guide.css', 'study-guide.css'],
@@ -241,7 +241,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261023-stage1-hierarchy2'],
+      ['daruri/sw.js', 'sw.js?v=20261023-all-popup-scroll2-merged'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],

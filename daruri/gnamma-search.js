@@ -1115,16 +1115,15 @@ function open(restoring=false){
   ui.entryHash=location.hash;ui.entryScroll=window.scrollY;ui.pendingReturn=null;ui.sourceCounts=false;
  }
  if(!host){host=document.createElement('div');host.id='gn-unified-search';host.className='gns-root';document.body.append(host);}
- host.hidden=false;document.body.classList.add('gns-open');
- // Opening on a small screen should not lift the virtual keyboard or page.
- // The visible search input still accepts an ordinary deliberate tap.
+ host.hidden=false;document.body.classList.add('gns-open');window.GnammaReaderScrollLock?.acquire?.('scholarly-search');
+ // Preserve the new iPhone no-automatic-keyboard behaviour from PR #115.
  rerender(!window.matchMedia('(max-width:760px)').matches);
  ensureLoaded();
 }
 function close(){
  clearTimeout(inputTimer);modeLayoutDirty=false;
  if(!ui.opened)return;
- ui.opened=false;document.body.classList.remove('gns-open');if(host){host.innerHTML='';host.hidden=true;}
+ ui.opened=false;document.body.classList.remove('gns-open');window.GnammaReaderScrollLock?.release?.('scholarly-search');if(host){host.innerHTML='';host.hidden=true;}
  if(ui.before&&ui.before.isConnected)try{ui.before.focus({preventScroll:true});}catch(_){}
 }
 function restoreResults(){
