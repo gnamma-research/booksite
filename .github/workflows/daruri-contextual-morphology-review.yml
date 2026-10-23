@@ -1,5 +1,5 @@
 name: Daruri contextual morphology candidate review
-# Manual only: expensive model inference must never run for every reader commit.
+# One-time experimental full-corpus run on an isolated branch; the main PR remains manual-only.
 on:
   push:
     branches:
@@ -29,7 +29,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: contextual-morph-${{ github.event_name == 'push' && matrix.work || inputs.work }}
+  group: contextual-morph-full-${{ github.run_id }}
   cancel-in-progress: false
 jobs:
   candidate-index:
