@@ -82,7 +82,7 @@
     icon(key)+'<span>'+esc(label)+'</span></button>';
   function shell(){
     return '<div class="gn-es-wrap">'+
-      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Download a copy</h1><p>Choose a PDF edition below or download the offline HTML reader.</p></header>'+
+      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Download a copy</h1><p>Choose a PDF edition, or find other download formats below.</p></header>'+
        '<h2 class="gn-es-format-title">PDF editions</h2>'+
       '<div class="gn-es-edition-tabs" role="tablist" aria-label="Edition type">'+
         '<button type="button" class="gn-es-tab" id="gn-es-tab-reading" role="tab" aria-controls="gn-es-panel" data-es-nav="reading" aria-selected="true">Reading &amp; Study</button>'+
@@ -194,16 +194,35 @@
             '</div></div>'+
         '</form>'+
       '</section>'+
-      '<section class="gn-es-offline" aria-labelledby="gn-es-offline-title">'+
-        '<h2 id="gn-es-offline-title">Offline reader · HTML</h2>'+
-        '<p>Download the reading website, dictionary, fonts and supporting files. This is not a PDF, and your private Reading Desk notes are not included.</p>'+
-        '<button type="button" class="gn-es-offline-download" data-daruri-bundle="html">Download HTML reader (.zip)</button>'+
-        '<details class="gn-es-offline-more"><summary>Also need the PDFs offline?</summary>'+
-          '<p>Download the same HTML reader with the available book PDFs. This is a much larger archive.</p>'+
-          '<button type="button" class="gn-es-offline-download gn-es-offline-secondary" data-daruri-bundle="full">Download HTML + PDFs (.zip)</button>'+
-        '</details>'+
-        '<p class="gn-offline-bundle-status" role="status" aria-live="polite"></p>'+
-        '<p class="gn-es-offline-footnote">Unzip without moving individual files. For complete functionality on desktop, open the folder using a local web server; opening file:// directly can restrict browser features. No internet is needed when served locally.</p>'+
+      '<section class="gn-es-offline" aria-labelledby="gn-es-other-title">'+
+        '<h2 id="gn-es-other-title">Other downloads</h2>'+
+        '<div class="gn-es-download-row" aria-labelledby="gn-es-offline-title">'+
+          '<h3 id="gn-es-offline-title">Offline reader · HTML</h3>'+
+          '<p>Download the reading website, dictionary, fonts and supporting files. This is not a PDF, and your private Reading Desk notes are not included.</p>'+
+          '<button type="button" class="gn-es-offline-download" data-daruri-bundle="html">Download offline reader (ZIP)</button>'+
+          '<details class="gn-es-offline-more"><summary>Also need the PDFs offline?</summary>'+
+            '<p>Download the same HTML reader with the available book PDFs. This is a much larger archive.</p>'+
+            '<button type="button" class="gn-es-offline-download gn-es-offline-secondary" data-daruri-bundle="full">Download offline reader + PDFs (ZIP)</button>'+
+          '</details>'+
+          '<p class="gn-offline-bundle-status" role="status" aria-live="polite"></p>'+
+          '<p class="gn-es-offline-footnote">Keep the extracted folders together. Complete desktop use requires a local web server; opening file:// directly can restrict browser features.</p>'+
+        '</div>'+
+        '<div class="gn-es-source-row" data-es-source hidden aria-labelledby="gn-es-source-title">'+
+          '<h3 id="gn-es-source-title">Source text &amp; research files</h3>'+
+          '<p>Arabic text, English translation, publisher notes and cross-references in HTML, TXT, TEI and JSON. These are research files, not the offline reading website.</p>'+
+          '<a class="gn-es-source-download" data-es-source-download download>Download source text (ZIP)</a>'+
+          '<details class="gn-es-source-more"><summary>What’s inside?</summary>'+
+            '<ul>'+
+              '<li>Aligned Arabic (plain and editorially vowelled) and English passages with stable section and paragraph IDs.</li>'+
+              '<li>Publisher notes, Qurʾān and Hadith references, historical dictionary data and backmatter.</li>'+
+              '<li>Standalone reading HTML, TEI P5 XML, JSON and JSONL research data.</li>'+
+              '<li>UTF-8 TXT/HTML candidates for legacy Shamela import; no .bok file, and import compatibility is not certified.</li>'+
+              '<li>Editorial provenance and reuse conditions. No private Reading Desk notes, bookmarks or highlights.</li>'+
+            '</ul>'+
+            '<p class="gn-es-source-metadata" data-es-source-metadata></p>'+
+            '<p class="gn-es-source-hash">SHA-256: <code data-es-source-hash></code></p>'+
+          '</details>'+
+        '</div>'+
       '</section></div>';
   }
   function apparatusLabel(s){
