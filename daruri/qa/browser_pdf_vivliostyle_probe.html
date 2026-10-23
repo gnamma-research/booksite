@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daruri: genuine in-browser paged HTML-to-PDF experimental proof</title>
+<style>body{font:15px/1.5 system-ui;max-width:600px;margin:2rem auto;padding:1rem}
+button,select{font:inherit}output{display:block;margin:1rem 0}
+.warning{color:#555;font-size:13px}</style>
+<script defer src="/daruri/qa/browser_pdf_vivliostyle.bundle.js"></script>
+</head><body>
+<h1>Daruri Vivliostyle in-browser PDF research</h1>
+<p class="warning">Technical proof only. The book is paginated from canonical HTML/CSS with native browser JavaScript; there is no server-side PDF creation and the saved PDFs are not approved publications.</p>
+<label for="scenario">Source case</label>
+<select id="scenario">
+<option value="hello">Minimal one-page Latin document — engine smoke</option>
+<option value="arabic-mini">Minimal one-page fully vowelled Arabic — font smoke</option>
+<option value="excerpt">Six source sections including original Arabic §65 and floating footnote</option>
+<option value="english-full">Complete 414-paragraph English reading text</option>
+<option value="bilingual-full">Complete 414-paragraph Arabic/English reading text</option>
+</select>
+<button id="make">Generate browser-only PDF</button>
+<output id="status" aria-live="polite">Loading source data…</output>
+</body></html>
