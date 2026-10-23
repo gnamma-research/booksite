@@ -1,0 +1,57 @@
+name: Staged curated-root supplement audit
+# One-time isolated proof: NEVER upload unreviewed contextual JSON to the site.
+on:
+  push:
+    branches:
+      - experiment/contextual-root-hints-20261023
+    paths:
+      - '.github/workflows/daruri-morph-root-supplement-review.yml'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  supplement:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        work: [daruri, mustasfa]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 39883804764
+          name: contextual-candidates-${{ matrix.work }}-3
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/previous
+      - name: Verify model build and source parity, supplement known roots
+        env:
+          WORK: ${{ matrix.work }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/supplemented"
+          python3 daruri/qa/test-morphology-build.py
+          python3 daruri/build/enrich_morph_roots.py \
+            --index "$RUNNER_TEMP/previous/morph-$WORK-v1.json" \
+            --output "$RUNNER_TEMP/supplemented/morph-$WORK-root-hints.json" \
+            > "$RUNNER_TEMP/supplemented/root-supplement-report.json"
+          python3 daruri/build/pack_morph_context.py \
+            --index "$RUNNER_TEMP/supplemented/morph-$WORK-root-hints.json" \
+            --out-dir "$RUNNER_TEMP/supplemented/packed" \
+            > "$RUNNER_TEMP/supplemented/packing-report.txt"
+          python3 daruri/build/export_morph_review.py \
+            --index "$RUNNER_TEMP/supplemented/morph-$WORK-root-hints.json" \
+            --count 400 \
+            --output "$RUNNER_TEMP/supplemented/review-$WORK.csv"
+          echo "FULL MODEL CANDIDATES; NO HUMAN VALIDATION; NOT A PUBLIC RELEASE" \
+            > "$RUNNER_TEMP/supplemented/UNVERIFIED.txt"
+      - name: Share review-only corrected candidates and compact postings
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage-provisional-root-hints-${{ matrix.work }}-${{ github.run_number }}
+          path: ${{ runner.temp }}/supplemented/
+          retention-days: 90
+          if-no-files-found: error
