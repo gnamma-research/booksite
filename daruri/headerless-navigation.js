@@ -7,8 +7,7 @@
  function icon(shape){
   var paths={
    help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.6 2.6 0 1 1 4.1 2.1c-1.1.7-1.6 1.1-1.6 2.4"/><circle cx="12" cy="17" r=".75" fill="currentColor" stroke="none"/>',
-   book:'<path d="M12 5.5C8 3.5 5 4.2 3 5.5v13c2.5-1.3 6-1.6 9 .3 3-1.9 6.5-1.6 9-.3v-13c-2-1.3-5-2-9 0ZM12 5.5v13.3"/>',
-   share:'<path d="M12 16V3m-5 5 5-5 5 5M5 14v7h14v-7"/>'
+   book:'<path d="M12 5.5C8 3.5 5 4.2 3 5.5v13c2.5-1.3 6-1.6 9 .3 3-1.9 6.5-1.6 9-.3v-13c-2-1.3-5-2-9 0ZM12 5.5v13.3"/>'
   };
   return '<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths[shape]+'</svg>';
  }
@@ -62,20 +61,7 @@
    helpNav.dataset.route='help';helpNav.innerHTML=icon('help')+'<span>Help &amp; guide</span>';
    sidebar.appendChild(helpNav);
   }
-  // Sharing is a secondary action on phones; keep it accessible in Contents.
-  // Delegate to the original reader action so section IDs and share modes stay current.
-  if(sidebar&&!sidebar.querySelector('.gn-top-share-nav')){
-   var shareNav=document.createElement('button');
-   shareNav.type='button';shareNav.className='nav-item gn-top-share-nav';
-   shareNav.setAttribute('aria-label','Share the current section');
-   shareNav.innerHTML=icon('share')+'<span>Share current section</span>';
-   shareNav.addEventListener('click',function(event){
-     event.preventDefault();
-     if(document.querySelector('#shell.nav-open'))document.getElementById('menuBtn')?.click();
-     document.getElementById('readerShareAction')?.click();
-   });
-   sidebar.appendChild(shareNav);
-  }
+  // Share retains its existing top-toolbar button and delegated handler.
   // Do not duplicate Help in the sidebar's small footer links.
   document.querySelectorAll('#leftNav .gn-nav-footer-links [data-route="help"]')
    .forEach(function(button){button.remove();});
