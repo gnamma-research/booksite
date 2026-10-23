@@ -2,6 +2,7 @@
  * The PDF writer is vivliostyle-pdf / @pdfme/pdf-lib; no print dialog/CDP.
  */
 import {printHTML,emitPdfFromVivliostyleWindow} from 'vivliostyle-pdf';
+import {experimentUnicodeLayer} from './unicode_layer_probe.mjs';
 const el=id=>document.getElementById(id);
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const status=(value,detail={})=>{el('status').textContent=value;window.__daruriQA={...(window.__daruriQA||{}),...detail,status:value};};
@@ -123,13 +124,23 @@ async function render(mode){
         noto_check_before:checkBefore,
         noto_check_after:w.document.fonts.check('13px "Noto Naskh Arabic"'),
       }};
-      const bytes=await emitPdfFromVivliostyleWindow(w,{
+      let bytes=await emitPdfFromVivliostyleWindow(w,{
        baseUrl:new URL('/daruri/browser-html-pdf/runtime/',location.origin).href,
        sourceHtml,metadata:{title:'Daruri browser HTML-PDF research',author:'Gnamma Research',
          language:'ar'},
        ...(taggedPdfUa?{pdfOptions:{pdfUa:2}}:{}),
        onProgress:message=>{window.__daruriQA={...(window.__daruriQA||{}),progress:String(message).slice(0,100)};}
       });
+      const semanticProbe=new URL(location.href).searchParams.get('unicode')==='1';
+      if(semanticProbe){
+       if(mode!=='excerpt')throw Error('Unicode A/B is deliberately limited to the eleven source paragraphs');
+       status('Running 11-segment native Unicode emitter A/B inside browser…',
+         {phase:'unicode-diagnostic',mode});
+       const semantic=await experimentUnicodeLayer(bytes,w,fixture);
+       bytes=semantic.bytes;
+       window.__daruriQA={...(window.__daruriQA||{}),
+         semantic_overlay_research:semantic.evidence};
+      }
       resolve(bytes);
      })().catch(reject);
      }});
@@ -150,6 +161,7 @@ async function render(mode){
     engine:'vivliostyle-pdf@0.3.3; @pdfme/pdf-lib',
     tagged_pdfua:new URL(location.href).searchParams.get('ua')==='1',
     verified_font_face_recovery:new URL(location.href).searchParams.get('forcefaces')==='1',
+    unicode_semantic_qa_only:new URL(location.href).searchParams.get('unicode')==='1',
     no_server_pdf_generation:true,
     no_print_dialog:true,no_cdp_print_to_pdf:true,no_prebuilt_pdf_inputs:true,not_release_approved:true};
   status('PDF generated entirely in this browser. Native Arabic and footnote QA still required.',qa);

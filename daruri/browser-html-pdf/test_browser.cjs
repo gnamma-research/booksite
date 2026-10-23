@@ -10,8 +10,10 @@ const {chromium,webkit}=require('playwright');
 const ROOT=path.resolve(__dirname,'../..');
 const PDFUA=process.env.DARURI_BROWSER_PDFUA==='1';
 const FORCEFACES=process.env.DARURI_BROWSER_FORCEFACES==='1';
+const UNICODE_PROBE=process.env.DARURI_BROWSER_UNICODE_PROBE==='1';
 const qs=new URLSearchParams({
- ...(PDFUA?{ua:'1'}:{}),...(FORCEFACES?{forcefaces:'1'}:{})
+ ...(PDFUA?{ua:'1'}:{}),...(FORCEFACES?{forcefaces:'1'}:{}),
+ ...(UNICODE_PROBE?{unicode:'1'}:{})
 });
 const URL='http://127.0.0.1:8977/daruri/browser-html-pdf/index.html'+(qs.size?'?'+qs:'');
 const MODE=process.env.DARURI_BROWSER_MODE||'excerpt';
@@ -87,6 +89,9 @@ async function ready(){
   assert.equal(status.no_server_pdf_generation,true);
   assert.equal(status.tagged_pdfua,PDFUA,'Browser PDF variant did not reflect the requested semantics');
   assert.equal(status.verified_font_face_recovery,FORCEFACES,'Noto font A/B was not applied');
+  assert.equal(status.unicode_semantic_qa_only,UNICODE_PROBE,'The research Unicode switch was not used');
+  if(UNICODE_PROBE)assert.equal(status.semantic_overlay_research?.overlays?.length,11,
+   'Expected eleven aligned semantic source-overlay probes');
   const external=requests.filter(r=>r.url.startsWith('https:')||
     (r.url.startsWith('http:')&&!r.url.startsWith('http://127.0.0.1:8977')));
   assert.equal(external.length,0,'External resource request: '+JSON.stringify(external));
@@ -95,7 +100,8 @@ async function ready(){
   assert.equal(requests.filter(r=>r.method!=='GET').length,0,'Non-GET browser network request');
   if(errors.length)throw Error('Browser console errors: '+JSON.stringify(errors));
   const report={
-   engine:ENGINE,mode:MODE,pdfua_requested:PDFUA,force_noto_font_faces:FORCEFACES,status,downloaded_pdf:pdf,
+   engine:ENGINE,mode:MODE,pdfua_requested:PDFUA,force_noto_font_faces:FORCEFACES,
+   unicode_semantic_research:UNICODE_PROBE,status,downloaded_pdf:pdf,
    bytes:fs.statSync(pdf).size,
    page_pdf_api_used:false,webpage_generated_pdf_without_print_dialog:true,
    external_requests:external,prebuilt_pdf_requests:[],
