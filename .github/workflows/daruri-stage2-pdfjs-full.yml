@@ -1,0 +1,52 @@
+name: Daruri Stage2 PDF.js fourth-reader QA of complete original Typst source (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-stage2-typst-fullplain-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/pdfjs_full_audit.mjs'
+      - 'daruri/qa/stage2_shootout/package.json'
+      - '.github/workflows/daruri-stage2-pdfjs-full.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-pdfjs-full-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  pdfjs-source-extraction:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Generate original canonical source and exact-SHA fixture
+        run: python daruri/qa/stage2_shootout/source_fixture.py /tmp/pdfjs-amiri/source.json
+      - name: Install Typst WASM, Amiri and PDF.js source evaluator
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+      - name: Build actual full 414 source Typst PDF, no original PDF input
+        env:
+          STAGE2_FIXTURE: /tmp/pdfjs-amiri/source.json
+          STAGE2_OUTPUT: /tmp/pdfjs-amiri
+          STAGE2_CORPUS: full
+          STAGE2_ARABIC_MODE: unvowelled
+          STAGE2_ARABIC_FONT: amiri
+        run: node daruri/qa/stage2_shootout/typst_node.mjs
+      - name: PDF.js text-content and link semantics for all original source passages
+        run: |
+          node --check daruri/qa/stage2_shootout/pdfjs_full_audit.mjs
+          node daruri/qa/stage2_shootout/pdfjs_full_audit.mjs \
+            /tmp/pdfjs-amiri/typst-wasm-full-plain-amiri.pdf \
+            /tmp/pdfjs-amiri/source.json /tmp/pdfjs-amiri/pdfjs-native-414.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-amiri-414-pdfjs-fourth-reader-NONRELEASE
+          path: /tmp/pdfjs-amiri
+          if-no-files-found: warn
+          retention-days: 14
