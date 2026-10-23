@@ -5,7 +5,7 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "20261023-transfer-release2-hadithlinks1";
+  const RELEASE_VERSION = "20261023-transfer-release2-hadithlinks1-arspacing1";
   const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "quran-context-data.js", "QURAN_CONTEXT_SOURCES.md", "hadith-context-ui.js", "hadith-context-ui.css", "hadith-inline-anchors.js", "hadith-context-data.js", "hadith-context-metadata.js", "hadith-context-arabic-bukhari1.js", "hadith-context-arabic-bukhari2.js", "hadith-context-arabic-muslim.js", "hadith-context-arabic-abudawud1.js", "hadith-context-arabic-abudawud2.js", "hadith-context-arabic-tirmidhi.js", "hadith-context-arabic-sunan.js", "HADITH_CONTEXT_SOURCES.md", "hadith-context-english-bukhari-a.js", "hadith-context-english-bukhari-b.js", "hadith-context-english-bukhari-long.js", "hadith-context-english-abudawud-a.js", "hadith-context-english-abudawud-b.js", "hadith-context-english-tirmidhi-a.js", "hadith-context-english-tirmidhi-b.js", "hadith-context-english-tirmidhi-c.js", "hadith-context-english-muslim.js", "hadith-context-english-other.js", "gnamma-morphology.js", "gnamma-word-context.js", "gnamma-word-context.css", "morph-lexicon.json", "morph-daruri-v1.json", "morph-mustasfa-v1.json", "download-bundle.js", "bookmark-ui.js", "bookmark-ui.css", "backup-transfer.js", "backup-transfer.css", "google-drive-config.js", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
@@ -109,7 +109,7 @@
       ['daruri/reading-desk.js', 'reading-desk.js?v=20261023-transfer-release2'],
       ['daruri/reading-desk.css', 'reading-desk.css?v=20261023-rd-ux1-personal-icons'],
       ['daruri/reading-mode-controls.js', 'reading-mode-controls.js?v=20261022-bookmark-audit1'],
-      ['daruri/reading-mode-controls.css', 'reading-mode-controls.css?v=20261023-ar-overbar1'],
+      ['daruri/reading-mode-controls.css', 'reading-mode-controls.css?v=20261023-ar-spacing1'],
       ['daruri/reading-desk-pdf.js', 'reading-desk-pdf.js?v=20261021-rdiconpdf1'],
       ['daruri/reading-desk-dictionary.js', 'reading-desk-dictionary.js?v=20261023-personal-icons'],
       ['daruri/reader-structure.css', 'reader-structure.css?v=20261020-structure1'],
@@ -199,10 +199,10 @@
       ['daruri/study-guide.css', 'study-guide.css'],
       ['daruri/editions.js', 'editions.js?v=20261023-personal-icons'],
       ['daruri/editions.css', 'editions.css?v=20261021-editiontabs-vowels-release1'],
-      ['daruri/editions-icons.css','editions-icons.css?v=20261023-ar-overbar1'],
+      ['daruri/editions-icons.css','editions-icons.css?v=20261023-ar-spacing1'],
       ['daruri/editions-icons.js','editions-icons.js?v=20261023-personal-icons'],
       ['daruri/editions-selector.js','editions-selector.js?v=20261023-apple-pdf-view1'],
-      ['daruri/editions-selector.css','editions-selector.css?v=20261023-apple-pdf-view1'],
+      ['daruri/editions-selector.css','editions-selector.css?v=20261023-ar-spacing1'],
       ['daruri/editions/manifest.json','editions/manifest.json?v=20261021-bilingual-vowels1'],
       ['daruri/editions/apparatus/manifest.json','editions/apparatus/manifest.json?v=20261021-a4-apparatus1'],
       ['daruri/editions/maps/manifest.json','editions/maps/manifest.json?v=20261022-base-personal-word-maps'],
@@ -226,7 +226,7 @@
       ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261023-hadithlinks1'],
+      ['daruri/sw.js', 'sw.js?v=20261023-ar-spacing1'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],

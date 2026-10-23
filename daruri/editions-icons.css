@@ -337,7 +337,7 @@
 }
 .gn-editions .gn-ed-language-pair [data-ep-ready-toggle="ar"][data-ep-arabic-state="vowelled"] .gn-ed-language-label::before{
   content:"";position:absolute;pointer-events:none;display:block;
-  width:84%;height:3px;top:-7px;left:8%;
+  width:84%;height:3px;top:-4px;left:8%;
   border-top:2px solid currentColor;border-radius:50% 50% 0 0;
 }
 @media(max-width:480px){

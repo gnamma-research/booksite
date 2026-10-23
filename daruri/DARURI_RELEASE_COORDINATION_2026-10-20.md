@@ -1,8 +1,10 @@
 # Darūrī release coordination — 20 October 2026
 
-## AR vowel spacing — active publisher claim, 23 October 2026
+## AR vowel spacing — publisher claim released, 23 October 2026
 
-Task: make the AR overbar-to-label gap consistent in the reader toolbar and Editions selectors. Targets: `daruri/reading-mode-controls.css`, `daruri/editions-selector.css`, `daruri/editions-icons.css`, plus asset references in `index.html`, `sw.js`, and `download-bundle.js`. Base: `c619a79f9f6327bc6f1dc9285e39250a05a1824d`. Narrow presentation change; preserve concurrent work. Claim expires 2026-10-23T04:01:02.979Z.
+Matched the toolbar and both Editions AR/EN labels to one shared 600-weight, 14px, single-line font rule. All place the curved overbar at -4px (3px closer to the letters than before), so the visible gap no longer varies with the former 11–14px toolbar versus 15px Editions font metrics. Button dimensions and language-state behavior are unchanged. Runtime/cache revision: `20261023-ar-spacing1`; preserved concurrent backup, Hadith and PDF work.
+
+Validation: inline scripts parse, all nine language-state cases and retained-control assertions pass, and changed stylesheet/package/cache URLs agree. The existing language test needed its script-end delimiter corrected in memory because its last-script parser includes trailing external script tags; the repository test was not changed. Full PDF tests are outside this CSS-only change. Prepared on a review branch. Live publication awaits explicit deployment approval after automatic review rejected direct master publication.
 
 ## Live reader merge and parallel PDF coordination — 22 October 2026
 

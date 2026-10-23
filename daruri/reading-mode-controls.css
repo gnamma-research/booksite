@@ -82,9 +82,18 @@ body.focus-level-3 #readerDock .gn-dock-center>.reader-location{grid-column:auto
   outline-offset:-3px!important;
   z-index:1;
 }
-#readingControls #persistentLanguages [data-language-toggle] .gn-language-label {
+/* Use identical letter metrics in the toolbar and both Editions controls.
+   Their shared -4px overbar offset only gives the same visible gap when
+   the AR letters also have the same font size, weight and line height. */
+#readingControls #persistentLanguages [data-language-toggle] .gn-language-label,
+.gn-es .gn-es-language-pair .gn-es-language-label,
+.gn-editions .gn-ed-language-pair .gn-ed-language-label {
   position:relative;
+  display:inline-block!important;
   overflow:visible;
+  font:600 14px/1 var(--sans,system-ui,sans-serif)!important;
+  letter-spacing:0!important;
+  white-space:nowrap!important;
   text-transform:uppercase!important;
 }
 /* A small curved madd-like overbar appears only for vocalized Arabic. */
@@ -95,7 +104,7 @@ body.focus-level-3 #readerDock .gn-dock-center>.reader-location{grid-column:auto
   display:block;
   width:84%;
   height:3px;
-  top:-7px;
+  top:-4px;
   inset-inline-start:8%;
   border-top:2px solid currentColor;
   border-radius:50% 50% 0 0;
