@@ -8,7 +8,8 @@ const {spawn}=require('node:child_process');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const {chromium,webkit}=require('playwright');
 const ROOT=path.resolve(__dirname,'../..');
-const URL='http://127.0.0.1:8977/daruri/browser-html-pdf/index.html';
+const PDFUA=process.env.DARURI_BROWSER_PDFUA==='1';
+const URL='http://127.0.0.1:8977/daruri/browser-html-pdf/index.html'+(PDFUA?'?ua=1':'');
 const MODE=process.env.DARURI_BROWSER_MODE||'excerpt';
 const ENGINE=process.env.DARURI_BROWSER_ENGINE||'chromium';
 const OUTPUT=path.resolve(process.env.DARURI_BROWSER_OUTPUT||'/tmp/daruri-real-browser-vivliostyle');
@@ -80,6 +81,7 @@ async function ready(){
   assert.equal(status.no_print_dialog,true);
   assert.equal(status.no_cdp_print_to_pdf,true);
   assert.equal(status.no_server_pdf_generation,true);
+  assert.equal(status.tagged_pdfua,PDFUA,'Browser PDF variant did not reflect the requested semantics');
   const external=requests.filter(r=>r.url.startsWith('https:')||
     (r.url.startsWith('http:')&&!r.url.startsWith('http://127.0.0.1:8977')));
   assert.equal(external.length,0,'External resource request: '+JSON.stringify(external));
@@ -88,7 +90,7 @@ async function ready(){
   assert.equal(requests.filter(r=>r.method!=='GET').length,0,'Non-GET browser network request');
   if(errors.length)throw Error('Browser console errors: '+JSON.stringify(errors));
   const report={
-   engine:ENGINE,mode:MODE,status,downloaded_pdf:pdf,
+   engine:ENGINE,mode:MODE,pdfua_requested:PDFUA,status,downloaded_pdf:pdf,
    bytes:fs.statSync(pdf).size,
    page_pdf_api_used:false,webpage_generated_pdf_without_print_dialog:true,
    external_requests:external,prebuilt_pdf_requests:[],
