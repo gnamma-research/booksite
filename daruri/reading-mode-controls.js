@@ -371,6 +371,7 @@ function create({state,rd}){
    // Mobile uses ONE large touch target, not eight small buttons.
    const button=document.createElement('button');button.type='button';
    button.className='gn-dock-summary';
+   button.dataset.gnTotal=String(total);
    button.dataset.gnCategoryCount=String(categories.filter(category=>groups.get(category.id).length).length);
    button.setAttribute('aria-label','Open '+total+' saved items in section '+place.section+': '+
     categories.filter(c=>groups.get(c.id).length).map(c=>
@@ -389,11 +390,7 @@ function create({state,rd}){
    const caret=document.createElement('span');caret.className='gn-dock-summary-caret';
    caret.textContent='⌃';caret.setAttribute('aria-hidden','true');
    button.append(savedPrefix(),symbols,caret);
-   button.addEventListener('click',()=>{
-    const uniqueItem=total===1?[...groups.values()].flat()[0]:null;
-    if(uniqueItem)openSaved(uniqueItem,place.section);
-    else openSheet('all',button,place.section);
-   });
+   button.addEventListener('click',()=>openSheet('all',button,place.section));
    status.append(button);
   }else{
    status.append(savedPrefix());
@@ -408,7 +405,7 @@ function create({state,rd}){
     button.setAttribute('aria-label',category.label+': '+items.length+' in section '+place.section+
      (items.length===1?'. Open saved item':'. Choose saved item'));
     button.title=category.label+': '+items.length+' in §'+place.section;
-    button.addEventListener('click',()=>items.length===1?openSaved(items[0],place.section):openSheet(category.id,button,place.section));
+    button.addEventListener('click',()=>openSheet(category.id,button,place.section));
     status.append(button);
    }
   }
