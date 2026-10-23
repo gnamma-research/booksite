@@ -44,7 +44,27 @@ async function ready(){
   await page.locator('#mode').selectOption(MODE);
   const dl=page.waitForEvent('download',{timeout:195000});
   await page.locator('#make').click();
-  const download=await dl;
+  const heartbeat=setInterval(async()=>{
+    try{
+      const phase=await page.evaluate(()=>window.__daruriQA);
+      say('LIVE_PHASE',JSON.stringify({
+        engine:ENGINE,mode:MODE,phase:phase?.phase,
+        status:String(phase?.status||'').slice(0,160),
+        progress:String(phase?.progress||'').slice(0,160)
+      }));
+    }catch{}
+  },10000);
+  let download;
+  try{
+    download=await Promise.race([
+      dl,
+      page.waitForFunction(()=>window.__daruriQA?.phase==='failed',
+        null,{timeout:185000}).then(async()=>{
+        const failed=await page.evaluate(()=>window.__daruriQA);
+        throw Error('Browser typesetter reported an error before download: '+JSON.stringify(failed));
+      })
+    ]);
+  }finally{clearInterval(heartbeat)}
   await page.waitForFunction(()=>{
    const s=window.__daruriQA?.phase;
    return s==='done'||s==='failed';
