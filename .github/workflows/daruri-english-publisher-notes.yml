@@ -11,6 +11,7 @@ on:
       - 'daruri/index.html'
       - 'daruri/hadith-context-ui.css'
       - 'daruri/qa/verify-scholar-modal-scroll.cjs'
+      - 'daruri/qa/verify-other-modal-scroll.cjs'
       - 'daruri/edition-r3-20261020.js'
       - '.github/workflows/daruri-english-publisher-notes.yml'
   pull_request:
@@ -22,6 +23,7 @@ on:
       - 'daruri/index.html'
       - 'daruri/hadith-context-ui.css'
       - 'daruri/qa/verify-scholar-modal-scroll.cjs'
+      - 'daruri/qa/verify-other-modal-scroll.cjs'
       - 'daruri/edition-r3-20261020.js'
       - '.github/workflows/daruri-english-publisher-notes.yml'
   workflow_dispatch:
@@ -47,3 +49,5 @@ jobs:
         run: node daruri/qa/verify-english-publisher-notes.cjs
       - name: Verify Notes scrolling, background lock and summary return in Chromium and WebKit
         run: node daruri/qa/verify-scholar-modal-scroll.cjs
+      - name: Verify other popup scroll containment and reader position (Chromium + WebKit)
+        run: node daruri/qa/verify-other-modal-scroll.cjs

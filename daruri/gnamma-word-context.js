@@ -257,7 +257,7 @@ async function openWord(word,anchor,grid,trigger=null,point=null){
  }
  rendering=true;
  shade.innerHTML='<div class="gnw-backdrop" data-gnw-close="1"></div><div class="gnw-card">'+wordMarkup(ctx)+'</div>';
- shade.hidden=false;rendering=false;
+ shade.hidden=false;rendering=false;window.GnammaReaderScrollLock?.acquire?.('word-context');
  $('button[data-gnw-close]',shade)?.focus({preventScroll:true});
  // Upgrade from a curated lexicon to the precomputed source-linked occurrence.
  engine?.loadLexicon().then(()=>engine.ensure('daruri')).then(async()=>{
@@ -274,7 +274,7 @@ async function openWord(word,anchor,grid,trigger=null,point=null){
 }
 function close(){
  if(!shade||shade.hidden)return;
- shade.hidden=true;selected=null;
+ shade.hidden=true;selected=null;window.GnammaReaderScrollLock?.release?.('word-context');
  try{oldFocus?.focus?.({preventScroll:true})}catch(_){}
 }
 function installDictionaryActions(){

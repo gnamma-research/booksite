@@ -2301,7 +2301,7 @@ body:not(.reading-active) .reading-return-bar{
 <script src="reading-styles.js?v=20261020-menu1"></script>
 <script src="visuals-controls.js?v=20261020-visuals1"></script>
 <link href="reader-structure.css?v=20261020-structure1" rel="stylesheet"/>
-<link rel="stylesheet" href="bookmark-ui.css?v=20261023-personal-icons"/><link rel="stylesheet" href="reading-desk.css?v=20261023-rd-ux1-personal-icons"/><link rel="stylesheet" href="backup-transfer.css?v=20261023-transfer-release2"/><link rel="stylesheet" href="reading-mode-controls.css?v=20261023-ar-spacing1"/>
+<link rel="stylesheet" href="bookmark-ui.css?v=20261023-personal-icons"/><link rel="stylesheet" href="reading-desk.css?v=20261023-othermodals1"/><link rel="stylesheet" href="backup-transfer.css?v=20261023-transfer-release2"/><link rel="stylesheet" href="reading-mode-controls.css?v=20261023-ar-spacing1"/>
 <link rel="stylesheet" href="reading-navigation-history.css?v=20261023-history-help1"/>
 <noscript><link rel="stylesheet" href="source-note-ui.css?v=20261021-fallback-quran1"></noscript>
 <link rel="stylesheet" href="quran-context-ui.css?v=20261022-qcontext1"/>
@@ -3849,12 +3849,12 @@ body:not(.reading-active) .reading-return-bar{
 
 </div>
 </div>
-</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=20261021-section1-qparallels1"></script><script defer src="download-bundle.js?v=20261023-note-scroll1"></script>
+</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri8-structure-20261020"></script><script src="edition-r3-20261020.js?v=20261021-section1-qparallels1"></script><script defer src="download-bundle.js?v=20261023-othermodals1"></script>
 <script src="source-reference-data.js?v=20261023-note-scroll1"></script>
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
 <script src="study-guide-data.js?v=20261021-study-path1"></script>
-<script src="study-guide.js?v=20261021-study-path1"></script><script src="editions.js?v=20261023-personal-icons"></script><script src="editions-icons.js?v=20261023-personal-icons"></script><script src="editions-selector.js?v=20261023-apple-pdf-view1"></script><script src="bookmark-ui.js?v=20261023-personal-icons"></script><script src="google-drive-config.js?v=20261023-transfer-release2"></script><script src="backup-transfer.js?v=20261023-transfer-release2"></script><script src="reading-desk.js?v=20261023-transfer-release2"></script><script src="reading-mode-controls.js?v=20261023-publisher-notes2"></script><script src="reading-navigation-history.js?v=20261023-history-help2"></script><script src="reading-navigation-bridge.js?v=20261023-history-help2"></script><script>
+<script src="study-guide.js?v=20261021-study-path1"></script><script src="editions.js?v=20261023-personal-icons"></script><script src="editions-icons.js?v=20261023-personal-icons"></script><script src="editions-selector.js?v=20261023-apple-pdf-view1"></script><script src="bookmark-ui.js?v=20261023-personal-icons"></script><script src="google-drive-config.js?v=20261023-transfer-release2"></script><script src="backup-transfer.js?v=20261023-othermodals1"></script><script src="reading-desk.js?v=20261023-othermodals1"></script><script src="reading-mode-controls.js?v=20261023-publisher-notes2"></script><script src="reading-navigation-history.js?v=20261023-history-help2"></script><script src="reading-navigation-bridge.js?v=20261023-history-help2"></script><script>
 (() => {
 'use strict';
 const BOOK = JSON.parse(document.getElementById('editionData').textContent);
@@ -4125,7 +4125,8 @@ function syncModalBackground(){
  for(const el of $$('.topbar,.bottom-nav,#readingControls,#readerDock,#hiddenHeaderRecovery,#mainContent'))el.inert=overlayOpen||drawerOpen;
  // The drawer lives inside the shell, so only an overlay can inert the whole shell.
  $('#shell').inert=overlayOpen;
- document.body.style.overflow=overlayOpen||drawerOpen?'hidden':'';
+ if(overlayOpen)gnAcquireReaderScroll('main-overlay');else gnReleaseReaderScroll('main-overlay');
+ if(drawerOpen)gnAcquireReaderScroll('mobile-drawer');else gnReleaseReaderScroll('mobile-drawer');
  document.body.classList.toggle('overlay-open',overlayOpen);
 }
 function usableFocusTarget(el){
@@ -5053,32 +5054,38 @@ function gnDictionaryEra(author){const v=GN_SOURCE_DATES[author];if(!v)return 'D
 // Compact layered apparatus: source quotations remain explicitly excerpts;
 // complete original entries are available at their source links.
 let gnLayerOpener=null;
-let gnLayerScrollState=null;
-function gnLockReaderForLayer(){
- if(gnLayerScrollState)return;
+// One reference-counted reader lock shared by scholar and research dialogs.
+const gnModalScrollOwners=new Set();
+let gnModalScrollSnapshot=null;
+function gnAcquireReaderScroll(owner){
+ if(gnModalScrollOwners.has(owner))return;
+ gnModalScrollOwners.add(owner);
+ if(gnModalScrollSnapshot)return;
  const body=document.body,root=document.documentElement;
  const x=window.scrollX||0,y=window.scrollY||0;
- gnLayerScrollState={
-  x,y,rootOverflow:root.style.overflow,
-  position:body.style.position,top:body.style.top,left:body.style.left,
-  right:body.style.right,width:body.style.width,overflow:body.style.overflow
- };
- // A fixed body is required on iOS Safari: overflow:hidden alone still
- // permits the background reader to move when a modal reaches its scroll edge.
+ gnModalScrollSnapshot={x,y,position:body.style.position,top:body.style.top,
+  left:body.style.left,right:body.style.right,width:body.style.width,
+  overflow:body.style.overflow,rootOverflow:root.style.overflow};
  body.style.position='fixed';body.style.top=(-y)+'px';body.style.left=(-x)+'px';
  body.style.right='0';body.style.width='100%';body.style.overflow='hidden';
  root.style.overflow='hidden';
 }
-function gnUnlockReaderForLayer(){
- const previous=gnLayerScrollState;if(!previous)return;
- gnLayerScrollState=null;
+function gnReleaseReaderScroll(owner){
+ if(!gnModalScrollOwners.delete(owner)||gnModalScrollOwners.size||!gnModalScrollSnapshot)return;
+ const before=gnModalScrollSnapshot;gnModalScrollSnapshot=null;
  const body=document.body;
- body.style.position=previous.position;body.style.top=previous.top;
- body.style.left=previous.left;body.style.right=previous.right;
- body.style.width=previous.width;body.style.overflow=previous.overflow;
- document.documentElement.style.overflow=previous.rootOverflow;
- window.scrollTo({left:previous.x,top:previous.y,behavior:'instant'});
+ body.style.position=before.position;body.style.top=before.top;
+ body.style.left=before.left;body.style.right=before.right;
+ body.style.width=before.width;body.style.overflow=before.overflow;
+ document.documentElement.style.overflow=before.rootOverflow;
+ window.scrollTo({left:before.x,top:before.y,behavior:'instant'});
 }
+window.GnammaReaderScrollLock=Object.freeze({
+ acquire:gnAcquireReaderScroll,release:gnReleaseReaderScroll,
+ active:()=>gnModalScrollOwners.size>0
+});
+function gnLockReaderForLayer(){gnAcquireReaderScroll('scholar-note');}
+function gnUnlockReaderForLayer(){gnReleaseReaderScroll('scholar-note');}
 function gnCloseLayer(restoreFocus=true){
  const layer=document.getElementById('gn-scholar-layer');if(!layer)return;
  layer.remove();document.body.classList.remove('gn-layer-open');
@@ -6007,10 +6014,10 @@ gnShowLayer=function(...args){priorScholarLayer(...args);rd?.decorate();};
 
 window.DaruriReadingStyles?.init({value:state.pageStyle,preserve:preserveVisiblePassage,onChange:value=>{state.pageStyle=value;save();}});
 applyParallelOrder();applyArabicFont();applyEnglishFont();bind();bindReaderEnhancements();applyTheme();updateScale();syncRoute();bindResponsiveRepairs();takeDictionaryReturn();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261023-note-scroll1').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261023-othermodals1').catch(()=>{});
 })();
 
-</script><link rel="stylesheet" href="gnamma-search.css?v=20261023-qiyas-forms1"><link rel="stylesheet" href="gnamma-scholarly.css?v=20261022-scholarly1"><link rel="stylesheet" href="gnamma-word-context.css?v=20261023-qiyas-forms1"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-scholarly.js?v=20261022-scholarly1"></script><script src="gnamma-morphology.js?v=20261023-qiyas-forms1"></script><script src="gnamma-search.js?v=20261023-qiyas-forms1"></script><script src="gnamma-word-context.js?v=20261023-qiyas-forms1"></script><script src="quran-context-ui.js?v=20261022-qcontext1"></script></body>
+</script><link rel="stylesheet" href="gnamma-search.css?v=20261023-qiyas-forms1"><link rel="stylesheet" href="gnamma-scholarly.css?v=20261022-scholarly1"><link rel="stylesheet" href="gnamma-word-context.css?v=20261023-qiyas-forms1"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-scholarly.js?v=20261022-scholarly1"></script><script src="gnamma-morphology.js?v=20261023-qiyas-forms1"></script><script src="gnamma-search.js?v=20261023-othermodals1"></script><script src="gnamma-word-context.js?v=20261023-othermodals1"></script><script src="quran-context-ui.js?v=20261022-qcontext1"></script></body>
 </html>
 
 

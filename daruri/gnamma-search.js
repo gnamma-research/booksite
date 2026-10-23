@@ -1113,14 +1113,14 @@ function open(restoring=false){
   ui.entryHash=location.hash;ui.entryScroll=window.scrollY;ui.pendingReturn=null;ui.sourceCounts=false;
  }
  if(!host){host=document.createElement('div');host.id='gn-unified-search';host.className='gns-root';document.body.append(host);}
- host.hidden=false;document.body.classList.add('gns-open');
+ host.hidden=false;document.body.classList.add('gns-open');window.GnammaReaderScrollLock?.acquire?.('scholarly-search');
  rerender();
  ensureLoaded();
 }
 function close(){
  clearTimeout(inputTimer);modeLayoutDirty=false;
  if(!ui.opened)return;
- ui.opened=false;document.body.classList.remove('gns-open');if(host){host.innerHTML='';host.hidden=true;}
+ ui.opened=false;document.body.classList.remove('gns-open');window.GnammaReaderScrollLock?.release?.('scholarly-search');if(host){host.innerHTML='';host.hidden=true;}
  if(ui.before&&ui.before.isConnected)try{ui.before.focus({preventScroll:true});}catch(_){}
 }
 function restoreResults(){
