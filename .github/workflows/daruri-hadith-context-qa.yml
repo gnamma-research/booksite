@@ -8,6 +8,7 @@ on:
       - 'daruri/hadith-note-polish.*'
       - 'daruri/hadith-note-integration.*'
       - 'daruri/qa/verify-hadith-inline-notes.js'
+      - 'daruri/qa/verify-reader-source-notes.js'
       - 'daruri/hadith-traditional-notes.js'
       - 'daruri/quran-note-headings.js'
       - 'daruri/index.html'
