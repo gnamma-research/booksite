@@ -98,6 +98,21 @@ async function test(name,fn){await fn();pass++;console.log('PASS '+name)}
    assert.match(await first.locator('.gns-morph-in-paragraph').innerText(),/أقيسة/);
    await page.locator('.gns-dialog [data-gns-close="1"]').click();
   });
+  await test('other broken plurals are discoverable as clear attested forms',async()=>{
+   const pairs=[['dalil','أدلة'],['hukm','أحكام'],['faqih','الفقهاء'],
+    ['lafz','ألفاظ'],['mana','معان'],['fard','فروض'],
+    ['shart','شروط'],['khabar','أخبار']];
+   const checked=await page.evaluate(pairs=>pairs.map(([input,expected])=>{
+    const m=window.GnammaMorphology,forms=m.formsFor(input,'daruri',8);
+    const results=window.GnammaUnifiedSearch.query(input,{mode:'morph-lemma'}).results;
+    return {input,expected,first:forms.find(x=>x.unusual)?.form,
+      sourceMatch:results.some(r=>r.matched?.forms?.some(x=>m.fold(x)===m.fold(expected)))};
+   }),pairs);
+   for(const row of checked){
+    assert.equal(row.first,row.expected,JSON.stringify(row));
+    assert.ok(row.sourceMatch,JSON.stringify(row));
+   }
+  });
   await test('research search explains word forms, roots and concepts',async()=>{
    await page.locator('#searchBtn').click();
    await page.locator('[data-gns-expand="1"]').first().click();
