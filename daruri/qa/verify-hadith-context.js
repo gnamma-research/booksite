@@ -102,6 +102,20 @@ async function domCheck(){
  assert.deepEqual(list31.map(x=>x.dataset.hadithReport),['muslim:360a','abudawud:492'],'Muslim must precede Abu Dawud, with two distinct reports');
  assert(list31.every(card=>card.querySelector('.gn-hadith-report-heading')?.textContent.match(/Muslim|Dawud|Dāwūd/i)),
   'Each report heading must still identify its collection');
+ // The general source-note icon enhancer must not append a second arrow
+ // or split a Hadith heading into a separate label plus link icon.
+ window.eval(src('source-note-ui.js'));
+ doc.dispatchEvent(new window.Event('DOMContentLoaded'));
+ for(let i=0;i<4;i++)await tick();
+ for(const card of list31){
+  const heading=card.querySelector('.gn-hadith-report-heading');
+  const link=heading.querySelector('a.gn-hadith-heading-link');
+  assert.equal(link?.dataset.gnSourceIcon,'1','Hadith heading opt-out of global arrow rewriting');
+  assert.equal(link?.querySelectorAll('.gn-hadith-external-mark').length,1,'One small arrow inside source link');
+  assert.equal((link?.textContent.match(/↗/g)||[]).length,1,'Exactly one visible external-link arrow');
+  assert.equal(heading.querySelectorAll('.gn-source-citation,.gn-source-icon-link,svg').length,0,
+   'Global source formatter cannot create a second arrow beside the linked heading');
+ }
  assert.deepEqual(list31.map(card=>card.querySelector('.gn-hadith-report-heading a')?.href),
   ['https://sunnah.com/muslim:360a','https://sunnah.com/abudawud:492'],
   'Each headed source citation directly links to its exact original transmission');
@@ -113,6 +127,8 @@ async function domCheck(){
   'Expanded Hadith details must not repeat the collection already named in the heading');
  assert(note31.textContent.includes('Jābir')||note31.textContent.includes('Jabir'),'Verified narrator rendered');
  assert(note31.textContent.includes('الإِبِلِ'),'Full source Arabic in offline card');
+ assert(src('hadith-context-ui.css').includes('.gn-hadith-original-ar{') && /\.gn-hadith-original-ar\{[^}]*border:0/.test(src('hadith-context-ui.css')),
+  'Arabic transmission must not show a decorative vertical rule at its right edge');
  const note216=await open('HAD-R216');
  assert(note216.textContent.includes('English translation · editorial'),'Full editorial translation shown rather than abbreviated English');
  assert(note216.textContent.includes('ʿAbd Allāh ibn Yūsuf'),'Translated isnād names are visible');
