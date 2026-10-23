@@ -60,10 +60,16 @@ def sample_review_rows(index: dict, texts: dict[str, str], count: int,
                    if a[5] not in {"contextual-alternative", "ambiguous", "contextual-backoff"}]
             if len(top) > 1:
                 raise ValueError(f"Multiple top candidates at {locator}:{position}")
+            def lexical_signature(a):
+                return (source.fold(a[2]), source.fold(a[3]), a[4],
+                        a[6] if len(a) > 6 else "")
             if not top:
                 risk = "missing model analysis"
+            elif alternatives and any(lexical_signature(a) != lexical_signature(top[0])
+                                      for a in alternatives):
+                risk = "competing lexical analyses"
             elif alternatives:
-                risk = "alternative readings"
+                risk = "different grammatical features"
             elif any(x in token for x in ("حكم", "علم", "قياس", "أصل", "علة", "نص", "شرع")):
                 risk = "technical expression"
             else:
@@ -103,10 +109,21 @@ def sample_review_rows(index: dict, texts: dict[str, str], count: int,
     for row in primary:
         row["sample_group"] = "representative"
     remaining = candidates[n_random:]
-    difficult = [x for x in remaining if x["challenge_reason"]]
-    randomizer.shuffle(difficult)
+    # Round-robin challenge quotas mean rare model omissions and lexical
+    # disagreements are not drowned out by common case-ending variants.
+    priorities = ["missing model analysis", "competing lexical analyses",
+                  "different grammatical features", "technical expression"]
+    pools = {name: [r for r in remaining if r["challenge_reason"] == name]
+             for name in priorities}
+    for pool in pools.values():
+        randomizer.shuffle(pool)
     selection = primary
-    challenge = difficult[:max(0, count - len(primary))]
+    challenge = []
+    target = max(0, count - len(primary))
+    while len(challenge) < target and any(pools.values()):
+        for label in priorities:
+            if pools[label] and len(challenge) < target:
+                challenge.append(pools[label].pop())
     for row in challenge:
         row["sample_group"] = "challenge"
     selection += challenge
