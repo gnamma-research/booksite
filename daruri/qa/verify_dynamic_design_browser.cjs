@@ -13,7 +13,7 @@ const browserId=process.env.GNAMMA_BROWSER||'chromium';
 const port=browserId==='webkit'?8902:8901;
 const origin='http://127.0.0.1:'+port;
 const address=origin+'/daruri/dynamic-editions.html';
-const events=[],errors=[],leaks=[];
+const events=[],errors=[],leaks=[],requestedStaticVariants=[];
 const specialToken='SYNTHETIC_PRIVATE_PDF_DESIGN_TOKEN_DO_NOT_TRANSMIT';
 const note={format:'gnamma-reading-desk',version:1,items:[{
  id:'design-only-test-note',kind:'note',title:'Synthetic title',
@@ -71,6 +71,12 @@ async function publish(profile,expectedPages){
      leaks.push({url:r.url(),method:r.method()});
   });
   await page.addInitScript(value=>localStorage.setItem('gnamma-reading-desk-v1',value),JSON.stringify(note));
+  // Stage 1 proof: act as though all 120 large, prebuilt apparatus PDFs
+  // were removed from hosting. An approved composition must NEVER fetch one.
+  await page.route('**/editions/apparatus/*.pdf',route=>{
+    requestedStaticVariants.push(route.request().url());
+    return route.fulfill({status:404,contentType:'text/plain',body:'Not deployed in Stage 1'});
+  });
   await page.goto(address,{waitUntil:'domcontentloaded',timeout:90000});
   await waitReady();
   await record('exact signed source design registry and 120 options',async()=>{
@@ -90,6 +96,27 @@ async function publish(profile,expectedPages){
     publish('apparatus/daruri-reading-english-index-concordance.pdf',68));
   await record('bilingual Study PDF generated with its original footnotes',async()=>
     publish('apparatus/daruri-study-bilingual-glossary-index-concordance-applications-titles-on.pdf',185));
+  await record('complete variant PDF files are not required for browser generation',async()=>{
+    assert.deepEqual(requestedStaticVariants,[],
+      'The generator fetched a complete prebuilt edition instead of assembling one');
+    return {three_created_profiles:3,existing_120_pdf_files_available_on_server:false};
+  });
+  await record('deep link retains the exact selected generator profile',async()=>{
+    const requested='apparatus/daruri-reading-english-index-concordance.pdf';
+    await page.goto(address+'?profile='+encodeURIComponent(requested),{waitUntil:'domcontentloaded'});
+    await waitReady();
+    assert.equal(await page.locator('#gn-dyn-profile').inputValue(),requested);
+    return {requested};
+  });
+  await record('unapproved profile deep link fails closed instead of substituting an edition',async()=>{
+    await page.goto(address+'?profile='+encodeURIComponent('apparatus/imaginary.pdf'),{waitUntil:'domcontentloaded'});
+    await page.waitForFunction(()=>document.querySelector('#gn-dyn-status')?.dataset.error==='true',null,{timeout:30000});
+    assert.match(await page.locator('#gn-dyn-status').innerText(),/not in the signed|not approved|requested/i);
+    assert(await page.locator('#gn-dyn-make').isDisabled());
+    assert.equal(await page.locator('#gn-dyn-download').isVisible(),false);
+    await page.goto(address,{waitUntil:'domcontentloaded'});
+    await waitReady();
+  });
   await record('source design metadata follows the selected print specification',async()=>{
     await page.locator('#gn-dyn-profile').selectOption(
      'apparatus/daruri-reading-bilingual-unvowelled-glossary.pdf');
@@ -126,7 +153,7 @@ async function publish(profile,expectedPages){
   const file=path.resolve(process.env.GNAMMA_REPORT_DIR||'/tmp/daruri-design-browser-'+browserId);
   fs.mkdirSync(file,{recursive:true});
   const summary={engine:browserId,expected_compositions:120,source_designs:12,
-   canonical_other_designs:5,tests:events,errors,leaks,
+   canonical_other_designs:5,tests:events,errors,leaks,static_pdf_fetches:requestedStaticVariants,
    passed:events.filter(e=>e.ok).length,failed:events.filter(e=>!e.ok).length,
    original_pdf_bytes_modified:false,release_approved:false};
   fs.writeFileSync(path.join(file,'design-browser-report.json'),JSON.stringify(summary,null,2)+'\n');
