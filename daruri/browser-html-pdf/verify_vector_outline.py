@@ -111,6 +111,16 @@ def main():
     },ensure_ascii=False),flush=True)
     if not fontname or images:
         raise ValueError('Vector/CID proof contains raster or missing Unicode CID font')
+    if evidence.get('logical_order')=='phrase':
+        # A green browser-creation step without native text fidelity is NOT a
+        # passing source experiment. This is intentionally only the 12-row
+        # acceptance threshold; it is not full-book acceptance.
+        assert report['native_hits']==12, 'Phrase CID cannot find every original Arabic phrase'
+        assert report['correct_geometry_hits']==12, 'Search results miss their DOM source positions'
+        assert report['source_clean_copy_hits']==12, 'Original Arabic/vowels corrupt on copy'
+        assert report['one_semantic_text_span_per_phrase'], 'Source duplicated or split unexpectedly'
+        assert report['source_65_found'], 'Inline §65 authorial Arabic is not searchable'
+        print('NONRELEASE_12_PHRASE_ACCEPTANCE_PASS: searches, geometry, clean source copy, one Unicode layer')
     return 0
 
 if __name__=='__main__':
