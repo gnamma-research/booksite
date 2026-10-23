@@ -46,7 +46,7 @@ async function test(){
   assert.equal(win.GnammaHadithInlineQA.anchors,51);
   const markers=[...doc.querySelectorAll('.gn-hadith-inline-marker')];
   assert.equal(markers.length,102,'Each of the 51 exact phrases must have an Arabic and English H symbol');
-  assert(markers.every(a=>a.textContent==='H'&&a.hasAttribute('data-gn-notes-open')&&a.href.endsWith('#notes')));
+  assert(markers.every(a=>a.textContent==='H'&&!a.hasAttribute('data-gn-notes-open')&&a.href.endsWith('#notes')));
   for(const note of Object.values(hadith)){
     const section=String(note.section);
     const group=doc.querySelector('[data-reading-section="'+section+'"]');
