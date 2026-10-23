@@ -15,6 +15,7 @@ on:
       - 'daruri/build/build_gnamma_morph_index.py'
       - 'daruri/build/export_morph_review.py'
       - 'daruri/qa/verify-morphology.cjs'
+      - 'daruri/qa/verify-context-index.cjs'
       - 'daruri/qa/test-morphology-build.py'
       - 'daruri/gnamma-scholarly.js'
       - 'daruri/gnamma-scholarly.css'
@@ -46,6 +47,7 @@ on:
       - 'daruri/build/build_gnamma_morph_index.py'
       - 'daruri/build/export_morph_review.py'
       - 'daruri/qa/verify-morphology.cjs'
+      - 'daruri/qa/verify-context-index.cjs'
       - 'daruri/qa/test-morphology-build.py'
       - 'daruri/gnamma-scholarly.js'
       - 'daruri/gnamma-scholarly.css'
@@ -97,3 +99,4 @@ jobs:
           node daruri/qa/verify-proximity.cjs
           node daruri/qa/verify-scholarly-patterns.cjs
           node daruri/qa/verify-morphology.cjs
+          node daruri/qa/verify-context-index.cjs
