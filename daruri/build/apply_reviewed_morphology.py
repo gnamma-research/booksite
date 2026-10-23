@@ -46,13 +46,17 @@ def apply(index: dict, source_texts: dict[str, str],
             raise ValueError(f"Invalid review decision: {state}")
         reviewer = str(row.get("reviewer", "")).strip()
         editor = str(row.get("editor", "")).strip()
-        if not reviewer or not editor:
-            raise ValueError("Approval requires a reviewer and a distinct recorded editorial sign-off")
+        if not reviewer or not editor or reviewer == editor:
+            raise ValueError("Approval requires independent reviewer and editorial sign-off")
         lemma = str(row.get("reviewed_lemma", "")).strip()
         root = str(row.get("reviewed_root", "")).strip()
         pos = str(row.get("reviewed_pos", "")).strip()
         if not lemma or not pos:
             raise ValueError("Approved review needs a headword and part of speech")
+        provenance = str(row.get("evidence_refs", "") or row.get("source_evidence", "")).strip()
+        note = str(row.get("review_notes", "")).strip()
+        if not provenance and not note:
+            raise ValueError("Approved review needs source evidence or explicit written linguistic rationale")
         record_id = str(row.get("passage_id", ""))
         try:
             position = int(row["token_position"])
@@ -89,7 +93,7 @@ def apply(index: dict, source_texts: dict[str, str],
         lexeme = str(row.get("reviewed_lexical_id", "")).strip()
         new = [position, surface, lemma, root, pos, "reviewed", lexeme,
                {"reviewed": True, "reviewer": reviewer, "editor": editor,
-                "reviewNote": str(row.get("review_notes", "")).strip()[:280]}]
+                "reviewNote": note[:280], "evidenceRefs": provenance[:400]}]
         record["a"] = [a for a in record["a"] if a[0] != position] + [new] + [
             a for a in record["a"] if a[0] == position]
         reviewed += 1
