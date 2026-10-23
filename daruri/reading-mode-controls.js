@@ -437,10 +437,10 @@ function create({state,rd}){
   if(!sheet)return false;
   if(state.route!=='reader')return true;
   const hash=location.hash.replace(/^#/,'');
-  if(!hash||hash==='reader')return false;
-  if(!hash.startsWith('section='))return true;
-  const destination=new URLSearchParams(hash).get('section');
-  return !!destination&&String(destination)!==sheetSection;
+  // A section hash can change when scroll tracking updates reading history.
+  // The modal must not close for that background bookkeeping.
+  if(!hash||hash==='reader'||hash.startsWith('section='))return false;
+  return true;
  }
  function onReadingNavigation(){
   if(sheet){
