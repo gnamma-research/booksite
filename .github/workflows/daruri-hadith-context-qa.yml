@@ -4,21 +4,25 @@ on:
     branches: [master, feature/daruri-hadith-expanded-context-20261022, feature/daruri-full-english-hadith-20261023]
     paths:
       - 'daruri/hadith-context-*'
+      - 'daruri/hadith-inline-anchors.js'
       - 'daruri/HADITH_CONTEXT_SOURCES.md'
       - 'daruri/source-reference-data.js'
       - 'daruri/build/build_source_reference_data.py'
       - 'daruri/sw.js'
       - 'daruri/download-bundle.js'
       - 'daruri/qa/verify-hadith-context.js'
+      - 'daruri/qa/verify-hadith-inline.cjs'
       - '.github/workflows/daruri-hadith-context-qa.yml'
   pull_request:
     paths:
       - 'daruri/hadith-context-*'
+      - 'daruri/hadith-inline-anchors.js'
       - 'daruri/source-reference-data.js'
       - 'daruri/build/build_source_reference_data.py'
       - 'daruri/sw.js'
       - 'daruri/download-bundle.js'
       - 'daruri/qa/verify-hadith-context.js'
+      - 'daruri/qa/verify-hadith-inline.cjs'
   workflow_dispatch:
 
 permissions:
@@ -37,6 +41,7 @@ jobs:
         run: |
           npm install --no-save --no-package-lock jsdom@24
           node daruri/qa/verify-hadith-context.js
+          node daruri/qa/verify-hadith-inline.cjs
       - name: Validate generated source-reference asset
         run: python daruri/build/build_source_reference_data.py --check
       - name: Existing Quran/Hadith note router and context regressions
