@@ -58,8 +58,11 @@ async function exercise(browser,name,origin,width,height){
   assert(gap.width>0&&gap.gap>=(width<=620?8:12),'Read/Contents gap too small: '+JSON.stringify(gap));
   await home.locator('[data-route="help"]').click();
   await page.locator('#mainContent .gn-history-help').waitFor();
-  await page.locator('#menuBtn').click();
-  await page.locator('#leftNav [data-route="home"]').click();
+  // Desktop keeps the left pane open across routes; the mosaic is a toggle.
+  // On phones the drawer closes on navigation and must be reopened.
+  const returnHome=page.locator('#leftNav [data-route="home"]');
+  if(!(await returnHome.isVisible()))await page.locator('#menuBtn').click();
+  await returnHome.click();
   await home.locator('#homeEditorialSources summary').click();
   assert(await home.locator('#homeEditorialSources').evaluate(el=>el.open),'Source detail not expandable');
   assert((await home.locator('#homeEditorialSources').innerText()).includes('al-ʿAlawī'),'Missing edition provenance');
