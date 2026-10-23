@@ -51,6 +51,8 @@ const latest=page=>page.locator('#gn-dyn-status').innerText();
   await waitForReady(page);
   const selected='apparatus/daruri-reading-bilingual-glossary.pdf';
   const other='apparatus/daruri-reading-english-index-concordance.pdf';
+  const selectedBase='editions/reading/daruri-reading-bilingual-titles-off.pdf';
+  const otherBase='editions/reading/daruri-reading-english-titles-off.pdf';
   await check('no empty/generated PDF can be opened',async()=>{
    assert.equal(await page.locator('#gn-dyn-download').isVisible(),false);
    assert.equal(await page.locator('#gn-dyn-download').getAttribute('href'),null);
@@ -67,12 +69,12 @@ const latest=page=>page.locator('#gn-dyn-status').innerText();
   });
   await check('changing profile invalidates the prior generated personal edition',async()=>{
    await page.locator('#gn-dyn-profile').selectOption(other);
-   const expected='editions/'+other;
+   const expected=otherBase;
    assert.equal(await page.locator('#pe-edition').inputValue(),expected);
    assert(!await page.locator('#pe-edition option[value^="generated-"]').count());
    assert.equal(await page.locator('#gn-dyn-download').isVisible(),false);
    assert.equal(await page.locator('#gn-dyn-download').getAttribute('href'),null);
-   assert.match(await page.locator('#pe-clean').getAttribute('href'),/daruri-reading-english-index-concordance\.pdf$/);
+   assert.match(await page.locator('#pe-clean').getAttribute('href'),/daruri-reading-english-titles-off\.pdf$/);
    return expected;
   });
   await check('failed new profile cannot resurrect old generated edition',async()=>{
@@ -81,7 +83,7 @@ const latest=page=>page.locator('#gn-dyn-status').innerText();
    await page.locator('#gn-dyn-make').click();
    await page.waitForFunction(()=>document.getElementById('gn-dyn-status')?.dataset.error==='true',null,{timeout:60000});
    assert.match(await latest(page),/503/);
-   assert.equal(await page.locator('#pe-edition').inputValue(),'editions/'+other);
+   assert.equal(await page.locator('#pe-edition').inputValue(),otherBase);
    assert.equal(await page.locator('#gn-dyn-download').isVisible(),false);
    assert.equal(await page.locator('#gn-dyn-download').getAttribute('href'),null);
    assert(await page.locator('#gn-dyn-make').isEnabled());
@@ -107,7 +109,7 @@ const latest=page=>page.locator('#gn-dyn-status').innerText();
    assert.match(await latest(page),/cancelled/i);
    assert(await page.locator('#gn-dyn-make').isEnabled());
    assert.equal(await page.locator('#gn-dyn-download').isVisible(),false);
-   assert.equal(await page.locator('#pe-edition').inputValue(),'editions/'+selected);
+   assert.equal(await page.locator('#pe-edition').inputValue(),selectedBase);
    release();
    await page.unroute(pattern);
    await new Promise(resolve=>setTimeout(resolve,700));
@@ -140,7 +142,7 @@ const latest=page=>page.locator('#gn-dyn-status').innerText();
     assert.match(await latest(page),/cancelled/i);
     assert(await page.locator('#gn-dyn-make').isEnabled());
     assert.equal(await page.locator('#gn-dyn-download').isVisible(),false);
-    assert.equal(await page.locator('#pe-edition').inputValue(),'editions/'+selected);
+    assert.equal(await page.locator('#pe-edition').inputValue(),selectedBase);
    }finally{
     await page.evaluate(()=>{window.Worker=window.__gnNativeWorker;delete window.__gnNativeWorker;});
    }
@@ -152,7 +154,7 @@ const latest=page=>page.locator('#gn-dyn-status').innerText();
     document.querySelector('#gn-dyn-status')?.textContent||''),null,{timeout:90000});
    assert.equal(await page.locator('#gn-dyn-download').isVisible(),true);
    assert.match(await page.locator('#gn-dyn-download').getAttribute('href'),/^blob:/);
-   assert.equal(await page.locator('#pe-edition').inputValue(),'editions/'+selected);
+   assert.equal(await page.locator('#pe-edition').inputValue(),selectedBase);
    return (await latest(page)).slice(0,140);
   });
   await check('synthetic Reading Desk and privacy preserved throughout',async()=>{
