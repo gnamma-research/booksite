@@ -76,7 +76,8 @@ def enrich(index: dict, lexicon: dict) -> tuple[dict, dict]:
     if index.get("schema") != "gnamma-morph-v1" or not index.get("contextual"):
         raise ValueError("Only automated contextual candidate indexes can be supplemented")
     hints = root_hints(lexicon)
-    stats = Counter()
+    stats = Counter({"supplemented": 0, "supplemented_primary": 0,
+                     "supplemented_alternative": 0})
     examples = []
     for record in index.get("records", []):
         for item in record.get("a", []):
