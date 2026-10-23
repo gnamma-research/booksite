@@ -56,14 +56,14 @@
 }
 @media screen and (max-width:760px) {
   #readerDock .gn-dock-private-status {
-    min-height:26px!important;height:26px!important;
+    min-height:30px!important;height:30px!important;
     padding:0!important;
   }
   #readerDock .gn-dock-summary {
     position:relative;box-sizing:border-box;
     display:inline-flex!important;flex:0 1 auto!important;
     width:max-content!important;max-width:100%!important;
-    min-height:26px!important;height:26px!important;
+    min-height:30px!important;height:30px!important;
     margin:0 auto!important;padding:2px 5px!important;
     gap:3px!important;
     background:transparent!important;color:var(--text)!important;
@@ -72,7 +72,7 @@
   }
   /* The touch zone is larger than the visible pill. */
   #readerDock .gn-dock-summary::before {
-    content:"";position:absolute;inset:-6px -3px;border-radius:12px;
+    content:"";position:absolute;inset:-7px -3px;border-radius:12px;
   }
   #readerDock .gn-dock-summary:is(:hover,:focus-visible) {
     background:var(--accent-soft)!important;border-color:var(--line)!important;
