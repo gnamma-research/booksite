@@ -44,8 +44,9 @@ async function exercise(engine,name,origin){
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
   const trigger=page.locator('#gn-dock-private-status .gn-dock-summary');
   await trigger.waitFor({state:'visible',timeout:30000});
-  // All eight saved-reference families must be VISIBLE on narrow phones.
-  // The earlier UI retained spans in DOM but hid their parent via @container.
+  // The approved compact phone dock intentionally hides the eight tiny icon/
+  // count pairs and exposes one 44px+ bookmark/total target instead. Category
+  // counts must stay in its accessible name, and all items in the real sheet.
   for(const width of [320,375,390,430]){
    await page.setViewportSize({width,height:844});
    await page.waitForFunction(()=>document.querySelectorAll(
@@ -53,23 +54,32 @@ async function exercise(engine,name,origin){
    const geometry=await page.evaluate(()=>{
     const button=document.querySelector('#readerDock .gn-dock-summary'),
      symbols=button.querySelector('.gn-dock-summary-symbols'),
-     items=[...symbols.querySelectorAll('.gn-dock-summary-pair')];
-    const outer=button.getBoundingClientRect();
+     rect=button.getBoundingClientRect(),
+     ribbon=button.querySelector('.gn-dock-saved-prefix .gn-bm-ribbon')?.getBoundingClientRect();
     return {viewport:innerWidth,layoutWidth:document.documentElement.scrollWidth,
-     shown:getComputedStyle(symbols).display,flexWrap:getComputedStyle(symbols).flexWrap,
-     visible:items.every(el=>{const r=el.getBoundingClientRect();
-      return getComputedStyle(el).display!=='none'&&r.width>0&&r.height>0
-       &&r.left>=outer.left-2&&r.right<=outer.right+2;}),
-     categoryIds:items.map(el=>el.dataset.gnMark),
-     rows:new Set(items.map(el=>Math.round(el.getBoundingClientRect().top))).size};
+     shown:getComputedStyle(symbols).display,
+     categoryIds:[...symbols.querySelectorAll('.gn-dock-summary-pair')].map(el=>el.dataset.gnMark),
+     count:button.dataset.gnTotal,categoryCount:button.dataset.gnCategoryCount,
+     label:button.getAttribute('aria-label')||'',
+     bounds:{x:rect.x,width:rect.width,height:rect.height},
+     ribbonVisible:!!ribbon&&ribbon.width>0&&ribbon.height>0};
    });
-   assert.equal(geometry.shown,'flex',name+' '+width+' category icons hidden: '+JSON.stringify(geometry));
-   assert.equal(geometry.flexWrap,'wrap',name+' '+width+' category icons cannot wrap');
-   assert.ok(geometry.visible,name+' '+width+' clipped individual counts: '+JSON.stringify(geometry));
-   assert.equal(geometry.categoryIds.length,8,name+' '+width+' category count missing');
+   assert.equal(geometry.shown,'none',name+' '+width+' compact dock exposed obsolete tiny icon row: '+JSON.stringify(geometry));
+   assert.deepEqual(geometry.categoryIds,
+    ['section','paragraph','dictionary','quran','hadith','source','highlight','note'],
+    name+' '+width+' categories lost from saved-item model');
+   assert.equal(geometry.count,'39',name+' '+width+' wrong compact saved-item total');
+   assert.equal(geometry.categoryCount,'8',name+' '+width+' wrong saved category total');
+   assert.match(geometry.label,/39 saved items in section 11/i);
+   assert.match(geometry.label,/dictionary entries 1/i);
+   assert.match(geometry.label,/personal notes 32/i);
+   assert(geometry.ribbonVisible,name+' '+width+' bookmark icon invisible');
+   assert(geometry.bounds.height>=44&&geometry.bounds.width>=44,
+    name+' '+width+' compact saved target smaller than 44×44: '+JSON.stringify(geometry));
+   assert(geometry.bounds.x>=-1&&geometry.bounds.x+geometry.bounds.width<=width+1,
+    name+' '+width+' compact target outside viewport: '+JSON.stringify(geometry));
    assert(geometry.layoutWidth<=geometry.viewport+2,
     name+' '+width+' horizontal page overflow: '+JSON.stringify(geometry));
-   if(width===320)assert(geometry.rows>=2,name+' narrow screen requires two count rows');
   }
   await page.setViewportSize({width:390,height:844});
   await page.evaluate(()=>{
@@ -81,6 +91,10 @@ async function exercise(engine,name,origin){
   await trigger.click();
   const sheet=page.locator('#gn-dock-saved-sheet');
   await sheet.waitFor({state:'visible',timeout:15000});
+  assert.equal(await sheet.locator('.gn-dock-sheet-category').count(),8,
+   name+': all eight saved categories must be available inside the compact sheet');
+  assert.equal(await sheet.locator('.gn-dock-sheet-item').count(),39,
+   name+': compact display must not discard any of the saved items');
   assert.equal(await sheet.getAttribute('aria-modal'),'true');
   assert.equal(await page.locator('#gn-dock-saved-backdrop').count(),1,
    name+': missing backdrop to intercept reader taps');
