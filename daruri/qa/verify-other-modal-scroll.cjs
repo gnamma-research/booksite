@@ -74,7 +74,7 @@ async function check(engine,width,touch){
   await noteEditor.waitFor({timeout:30000});
   await noteEditor.click();
   await verifyOpen('#gn-rd-editor-shade [role="dialog"]','Reading Desk editor');
-  await page.locator('#gn-rd-editor-shade [data-rd="close-editor"]').click();
+  await page.locator('#gn-rd-editor-shade [data-rd="close-editor"]').first().click();
   await verifyClosed('Reading Desk editor');
   await page.waitForFunction(()=>!!window.GnammaBackupTransfer,{timeout:30000});
   await page.evaluate(()=>window.GnammaBackupTransfer.open());
