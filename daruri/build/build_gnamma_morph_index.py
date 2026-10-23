@@ -24,6 +24,31 @@ ARABIC = re.compile(r"[\u0621-\u064a]")
 WORD = re.compile(r"[\w\u064b-\u065f\u0670]+", re.UNICODE)
 VOWELS = re.compile(r"[\u0300-\u036f\u064b-\u065f\u0670\u06d6-\u06ed\u0640]")
 NORMALIZE = str.maketrans(dict(zip("أإآٱىؤئ", "اااايوي")))
+def normalize_model_lemma(value: object) -> str:
+    """CAMeL lex IDs are e.g. شارِع_1 versus شارِع_2.
+
+    Preserve the complete ID separately; the reader displays the actual Arabic
+    headword without the sense suffix or romanized inflection marker.
+    """
+    text = str(value or "").strip()
+    text = re.sub(r"_[0-9]+$", "", text)
+    text = re.sub(r"-[a-z]+$", "", text)
+    return text if ARABIC.search(text) else ""
+
+
+def normalize_model_root(value: object) -> str:
+    """Convert CAMeL dotted roots ش.ر.ع to queryable شرع.
+
+    Non-lexical placeholders (NTWS, #, or missing consonants) are NOT roots.
+    An empty root is legitimate for an unrooted lemma/particle.
+    """
+    text = str(value or "").strip()
+    if not text or "#" in text or not ARABIC.search(text):
+        return ""
+    root = re.sub(r"[.\s\u064b-\u065f\u0670]", "", text)
+    return root if re.fullmatch(r"[\u0621-\u064a]{3,5}", root) else ""
+
+
 CLITICS = ("وال", "فال", "بال", "كال", "لل", "ال", "و", "ف", "ب", "ك", "ل")
 SUFFIXES = ("هما", "هم", "هن", "ها", "نا", "كم", "كن", "ه", "ك", "ي")
 
@@ -145,14 +170,18 @@ class ContextualBERT:
                 if not result.analyses:
                     continue
                 item = result.analyses[0].analysis
-                lemma = str(item.get("lex", "")).split("_")[0]
-                root = str(item.get("root", ""))
+                lexical_id = str(item.get("lex", ""))
+                lemma = normalize_model_lemma(lexical_id)
+                root = normalize_model_root(item.get("root", ""))
                 pos = str(item.get("pos", ""))
-                if not lemma or root in ("", "NOAN", "0", "na", "None"):
+                if not lemma:
                     continue
                 if not self.include_all and fold(root) not in self.target_roots:
                     continue
-                values.append([offset + j, batch[j], lemma, root, pos, "contextual-bert"])
+                # Seventh field is an optional sense-bearing lexical ID.
+                # It distinguishes homographs with the same printed headword.
+                values.append([offset + j, batch[j], lemma, root, pos,
+                               "contextual-bert", lexical_id])
         return values, len(ts)
 
 
