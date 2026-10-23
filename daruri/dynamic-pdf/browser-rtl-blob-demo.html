@@ -49,10 +49,21 @@ window.GnammaBrowserArabicPdf = {
     if(logicalSource.length!==2||logicalSource.some(t=>!t))
       throw Error("Logical authorial source is missing");
     const words=logicalSource;
-    // PDF's canvas is left-to-right coordinate order even when the font
-    // supplies right-to-left glyphs. This is an experimental shaping test.
-    page.drawText(words[0],{x:150,y:735,size:26,font,color:PDFLib.rgb(0,0,0)});
-    page.drawText(words[1],{x:150,y:690,size:26,font,color:PDFLib.rgb(0,0,0)});
+    // Root-level test: preserve the original logical UTF-16BE authorial
+    // sentence IN THE SAME marked content sequence as its painted glyphs.
+    // This is not an invisible duplicate text overlay, and the footnote marker
+    // stays outside the author's text. PDF/UA tagging is a separate requirement.
+    function drawSemanticArabic(text,x,y){
+      if(!PDFLib.PDFOperator?.of || !PDFLib.PDFHexString?.fromText)
+        throw Error("PDF writer does not support exact Unicode marked-content strings");
+      const label=PDFLib.PDFHexString.fromText(text);
+      const params=pdf.context.obj({ActualText:label});
+      page.pushOperators(PDFLib.PDFOperator.of('BDC',[PDFLib.PDFName.of('Span'),params]));
+      page.drawText(text,{x,y,size:26,font,color:PDFLib.rgb(0,0,0)});
+      page.pushOperators(PDFLib.endMarkedContent());
+    }
+    drawSemanticArabic(words[0],150,735);
+    drawSemanticArabic(words[1],150,690);
     page.drawText("1",{x:115,y:707,size:9,font:helv});
     page.drawLine({start:{x:70,y:110},end:{x:525,y:110},thickness:.6});
     page.drawText("1. "+document.querySelector("[data-note-body]").textContent.trim(),
