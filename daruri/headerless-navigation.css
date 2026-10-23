@@ -285,3 +285,180 @@
  }
  #fallbackReader .fb-topbar .fb-icon-button .gn-native-tile {flex:none}
 }
+ 
+
+/* Scholar's Compact top controls — approved Oct 23.
+   Single row: medallion Contents | AR/EN | Focus | Bookmark | Copy | Share | Search | Display.
+   This overrides legacy two-row 90px mobile grid without changing the bottom reader dock. */
+@media screen {
+  body.reader-enhanced #readingControls:not([hidden]) {
+    display:flex!important;
+    position:sticky!important;
+    top:0!important;
+    min-height:52px!important;
+    z-index:29!important;
+  }
+  body.reader-enhanced #readingControls .reading-controls-inner{
+    display:flex!important;
+    flex-flow:row nowrap!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:1500px!important;
+    min-height:52px!important;
+    height:auto!important;
+    padding:4px clamp(7px,1.5vw,18px)!important;
+    gap:4px!important;
+    grid-template-columns:none!important;
+    grid-template-rows:none!important;
+    grid-template-areas:none!important;
+  }
+  body.reader-enhanced #readingControls .gn-reader-global-leading{
+    display:flex!important;visibility:visible!important;
+    order:0!important;flex:0 0 auto!important;min-width:0!important;
+    gap:0!important;margin:0!important;padding:0!important;
+  }
+  body.reader-enhanced #readingControls .gn-reader-global-leading #menuBtn.gn-top-tile{
+    width:44px!important;min-width:44px!important;max-width:44px!important;
+    height:44px!important;min-height:44px!important;max-height:44px!important;
+    flex:0 0 44px!important;border-radius:50%!important;
+    background-image:var(--gn-daruri-tile)!important;
+    background-size:36px 36px!important;
+    background-position:center!important;background-repeat:no-repeat!important;
+  }
+  body.reader-enhanced #readingControls .reader-language-and-actions:not([hidden]){
+    display:flex!important;align-items:center!important;
+    order:1!important;flex:0 0 auto!important;gap:4px!important;
+    margin:0!important;padding:0!important;border:0!important;
+    min-width:0!important;
+  }
+  body.reader-enhanced #readingControls #persistentLanguages{
+    display:flex!important;align-items:center!important;
+    flex:0 0 auto!important;gap:2px!important;padding:2px!important;
+    margin:0!important;min-width:0!important;
+  }
+  body.reader-enhanced #readingControls #persistentLanguages>button{
+    display:flex!important;align-items:center!important;justify-content:center!important;
+    box-sizing:border-box!important;
+    width:40px!important;min-width:40px!important;max-width:40px!important;
+    height:44px!important;min-height:44px!important;
+    flex:0 0 40px!important;padding:2px!important;
+    font-size:12px!important;touch-action:manipulation;
+  }
+  body.reader-enhanced #readingControls .reader-language-and-actions #focusToolbar{
+    display:inline-flex!important;
+    align-items:center!important;justify-content:center!important;
+    box-sizing:border-box!important;flex:0 0 40px!important;
+    width:40px!important;min-width:40px!important;max-width:40px!important;
+    height:44px!important;min-height:44px!important;
+    padding:0!important;margin:0!important;
+    border-radius:8px!important;
+    border:1px solid var(--border)!important;
+    color:var(--text)!important;background:var(--surface)!important;
+    cursor:pointer;touch-action:manipulation;
+  }
+  body.reader-enhanced #readingControls .reader-language-and-actions #focusToolbar:is(.active,[aria-pressed="true"]){
+    background:var(--accent-soft)!important;color:var(--accent)!important;
+    border-color:var(--accent)!important;
+  }
+  body.reader-enhanced #readingControls .reader-language-and-actions #focusToolbar[hidden]{display:none!important}
+  body.reader-enhanced #readingControls .reader-action-slot:not([hidden]){
+    display:flex!important;align-items:center!important;
+    order:2!important;flex:0 0 auto!important;gap:4px!important;
+    margin:0!important;padding:0!important;
+    border:0!important;min-width:0!important;
+  }
+  body.reader-enhanced #readingControls .reader-action-slot .reader-action-item{
+    display:inline-flex!important;align-items:center!important;justify-content:center!important;
+    box-sizing:border-box!important;
+    width:40px!important;min-width:40px!important;max-width:40px!important;
+    height:44px!important;min-height:44px!important;
+    flex:0 0 40px!important;
+    padding:0!important;margin:0!important;border-radius:8px!important;
+    cursor:pointer;touch-action:manipulation;
+  }
+  body.reader-enhanced #readingControls .reader-action-slot .reader-action-caption{
+    display:none!important;
+  }
+  body.reader-enhanced #readingControls .gn-reader-global-trailing{
+    display:flex!important;align-items:center!important;visibility:visible!important;
+    order:3!important;flex:0 0 auto!important;gap:4px!important;
+    margin:0 0 0 auto!important;padding:0!important;border:0!important;
+    min-width:0!important;
+  }
+  body.reader-enhanced #readingControls .gn-reader-global-trailing :is(#searchBtn,#settingsBtn){
+    display:inline-flex!important;align-items:center!important;justify-content:center!important;
+    box-sizing:border-box!important;
+    width:40px!important;min-width:40px!important;max-width:40px!important;
+    height:44px!important;min-height:44px!important;
+    flex:0 0 40px!important;padding:0!important;margin:0!important;
+    border-radius:8px!important;
+  }
+  body.reader-enhanced #readingControls #themeBtn,
+  body.reader-enhanced #readingControls #gnTopHelp,
+  body.reader-enhanced #readingControls #gnTopRead {display:none!important}
+  body.reader-enhanced #readingControls .reader-language-and-actions[hidden],
+  body.reader-enhanced #readingControls .reader-action-slot[hidden],
+  body.reader-enhanced #readingControls .gn-reader-global-trailing [hidden]{
+    display:none!important;
+  }
+  body.reader-enhanced #readingControls :is(#menuBtn,#focusToolbar,#readerSaveAction,#readerCopyAction,#readerShareAction,#searchBtn,#settingsBtn):focus-visible{
+    outline:2px solid var(--accent)!important;outline-offset:2px!important;
+  }
+  body.reader-enhanced #readingControls .reader-focus-controls{display:none!important}
+}
+/* 375–620 CSS px: fit all eight controls within one readable row. */
+@media screen and (max-width:620px){
+  :root{--reading-controls-height:52px!important}
+  body.reader-enhanced #readingControls .reading-controls-inner{
+    min-height:52px!important;padding:3px 6px!important;gap:3px!important;
+  }
+  body.reader-enhanced #readingControls .reader-language-and-actions:not([hidden]){gap:2px!important}
+  body.reader-enhanced #readingControls #persistentLanguages{gap:2px!important;padding:2px!important}
+  body.reader-enhanced #readingControls #persistentLanguages>button{
+    width:34px!important;min-width:34px!important;max-width:34px!important;
+    flex:0 0 34px!important;height:44px!important;min-height:44px!important;
+  }
+  body.reader-enhanced #readingControls .reader-language-and-actions #focusToolbar{
+    width:34px!important;min-width:34px!important;max-width:34px!important;
+    flex:0 0 34px!important;height:44px!important;min-height:44px!important;
+  }
+  body.reader-enhanced #readingControls .reader-action-slot:not([hidden]){gap:3px!important}
+  body.reader-enhanced #readingControls .reader-action-slot .reader-action-item{
+    width:34px!important;min-width:34px!important;max-width:34px!important;
+    flex:0 0 34px!important;height:44px!important;min-height:44px!important;
+  }
+  body.reader-enhanced #readingControls .gn-reader-global-trailing{gap:3px!important}
+  body.reader-enhanced #readingControls .gn-reader-global-trailing :is(#searchBtn,#settingsBtn){
+    width:34px!important;min-width:34px!important;max-width:34px!important;
+    flex:0 0 34px!important;height:44px!important;min-height:44px!important;
+  }
+}
+/* 320–359 CSS px: protect the single row using narrower, still 44px-tall keys.
+   On wider iPhones the larger 34px keys above apply. */
+@media screen and (max-width:359px){
+  body.reader-enhanced #readingControls .reading-controls-inner{
+    gap:2px!important;padding:3px 4px!important;
+  }
+  body.reader-enhanced #readingControls .reader-language-and-actions:not([hidden]){gap:2px!important}
+  body.reader-enhanced #readingControls #persistentLanguages{gap:1px!important;padding:1px!important}
+  body.reader-enhanced #readingControls #persistentLanguages>button{
+    width:29px!important;min-width:29px!important;max-width:29px!important;
+    flex:0 0 29px!important;
+  }
+  body.reader-enhanced #readingControls .reader-language-and-actions #focusToolbar{
+    width:30px!important;min-width:30px!important;max-width:30px!important;
+    flex:0 0 30px!important;
+  }
+  body.reader-enhanced #readingControls .reader-action-slot:not([hidden]),
+  body.reader-enhanced #readingControls .gn-reader-global-trailing{gap:2px!important}
+  body.reader-enhanced #readingControls .reader-action-slot .reader-action-item,
+  body.reader-enhanced #readingControls .gn-reader-global-trailing :is(#searchBtn,#settingsBtn){
+    width:29px!important;min-width:29px!important;max-width:29px!important;
+    flex:0 0 29px!important;
+  }
+  body.reader-enhanced #readingControls :is(#readerSaveAction,#readerCopyAction,#readerShareAction,#focusToolbar,#searchBtn,#settingsBtn) svg{
+    width:18px!important;height:18px!important;
+  }
+}
