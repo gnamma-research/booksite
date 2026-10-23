@@ -39,8 +39,9 @@ for(const required of ['Book PDF','Study Guide','Offline reader','Research files
   'id="gn-es-prepare"','data-es-action="download"','data-daruri-bundle="html"',
   'id="pe-dates"','id="pe-annotations"','id="pe-picker"',
   'id="pe-generate"','id="pe-result"','data-es-action="open"',
+  'data-es-stage1-create','dynamic-editions.html?','autostart',
   'loadPersonalTools(mounted)','gnamma-personal-export-ready',
-  'No published PDF matches this exact combination','word']){
+  'No approved edition matches this exact combination','word']){
   if(required==='word')continue;
   assert.ok(edition.includes(required),'Missing integrated control '+required);
 }
@@ -49,7 +50,7 @@ assert.ok(!edition.includes('data-es-study-guide'),'Study guide is not a selecte
 assert.ok(edition.includes("availability.hidden=result.status==='ready'"),
   'Do not show an unnecessary ready banner');
 assert.ok(edition.includes("download.href=open.getAttribute('href')"),
-  'Published PDFs must download directly as the exact selected file');
+  'Clean source and Reference PDFs retain direct native View/Download');
 assert.ok(edition.includes("prepare.hidden=true"),'No mandatory Prepare PDF stage');
 assert.ok(!edition.includes('data-es-nav="study"'),'No redundant nested Study navigation');
 assert.ok(edition.includes("Download Study Guide (PDF)"),'Standalone companion download must be explicit');
@@ -67,11 +68,11 @@ assert.ok(!exporter.includes('fetch("https://'),'Private user data is never sent
 assert.ok(style.includes('.gn-es .gn-es-download-type'),'Purpose selector must be styled');
 assert.ok(style.includes('@container (min-width:725px)'),'Desktop chooses a compact two-column rail');
 assert.ok(style.includes('.gn-es .gn-es-picker'),'Inline note picker styled');
-assert.ok(style.includes('top:-4px'),'Vowelled Arabic overbar is raised above, not through, the AR letters');
+assert.ok(style.includes('top:-7px'),'Vowelled Arabic overbar is raised above, not through, the AR letters');
 assert.ok(style.includes('flex-direction:row;'),'AR remains on the same centred baseline as EN');
 assert.ok(style.includes('.gn-es-ar-form{display:none;}'),'Status caption must not push AR upwards');
-assert.ok(read('editions-icons.css').includes('top:-4px'),'Fallback Editions overbar uses the same clearance');
-assert.ok(read('reading-mode-controls.css').includes('top:-4px'),'Reader overbar uses the same clearance');
+assert.ok(read('editions-icons.css').includes('top:-7px'),'Fallback Editions overbar uses the same clearance');
+assert.ok(read('reading-mode-controls.css').includes('top:-7px'),'Reader overbar uses the same clearance');
 assert.ok(style.includes('.gn-es .gn-es-action{width:100%'),'Symmetrical Open PDF button preserved');
 const baselines=new Map(base.files.map(x=>[x.file,x]));
 const fn=path=>crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex');
@@ -111,4 +112,4 @@ for(const row of extra.files){
   assert.equal(fn(path.join(root,'editions',row.file)),row.sha256);
   assert.equal(fn(path.join(root,'editions',row.map_file)),row.map_sha256);
 }
-console.log('PASS: four download purposes, three book editions, personal PDF, 12 maps, 120 exact apparatus PDFs and safe word fallbacks.');
+console.log('PASS: four download purposes, three book editions, local Stage1 creator, 12 source maps, 120 signed recipes and personal PDF safety.');
