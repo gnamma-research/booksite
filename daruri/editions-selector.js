@@ -514,7 +514,7 @@
     const localCreate=root.querySelector('[data-es-stage1-create]');
     if(localCreate){
       const eligible=result.status==='ready'&&!isPersonal&&tier!=='reference'&&
-        /^apparatus\\//.test(result.record?.file||'');
+        String(result.record?.file||'').startsWith('apparatus/');
       localCreate.hidden=!eligible;
       if(eligible)localCreate.href='dynamic-editions.html?profile='+encodeURIComponent(result.record.file);
       else localCreate.removeAttribute('href');
