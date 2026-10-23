@@ -44,7 +44,8 @@ def main():
     counts={'native_full_lines_exact':0,'native_full_lines_total':len(records),
       'opening_search_correctly_located':0,'original_passages_exact':0,
       'original_passages_total':414,'full_source_chars':sum(len(x) for x in original.values()),
-      'raster_images':0,'glyph_outline_paths':0,'all_lines_are_semantic_single_CIDs':True}
+      'raster_images':0,'glyph_outline_paths':0,'all_lines_are_semantic_single_CIDs':False,
+      'one_source_word_per_semantic_CID':True}
     by_page=defaultdict(list)
     for rec in records:by_page[rec['page']].append(rec)
     with fitz.open(args.pdf) as pdf:

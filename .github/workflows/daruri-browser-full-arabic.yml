@@ -1,12 +1,14 @@
 name: Daruri full original Arabic HTML-vector PDF source QA (NONRELEASE)
 on:
   push:
-    branches: [research/daruri-browser-outline-semantic-20261023, research/daruri-vector-angle-brackets-20261023, research/daruri-rtl-unicode-multicid-20261023]
+    branches: [research/daruri-browser-outline-semantic-20261023, research/daruri-vector-angle-brackets-20261023, research/daruri-rtl-unicode-multicid-20261023, research/daruri-rtl-word-geometry-20261023]
     paths:
       - 'daruri/browser-html-pdf/vector-full-arabic.html'
       - 'daruri/browser-html-pdf/vector-full-arabic.mjs'
       - 'daruri/browser-html-pdf/test_vector_full_arabic.cjs'
       - 'daruri/browser-html-pdf/verify_vector_full_arabic.py'
+      - 'daruri/browser-html-pdf/verify_vector_rtl_word_hitboxes.py'
+      - 'daruri/browser-html-pdf/verify_vector_crossreader_unicode.py'
       - '.github/workflows/daruri-browser-full-arabic.yml'
   workflow_dispatch:
 permissions:
@@ -47,6 +49,8 @@ jobs:
           node --check daruri/browser-html-pdf/vector-full-arabic.mjs
           node --check daruri/browser-html-pdf/test_vector_full_arabic.cjs
           python -m py_compile daruri/browser-html-pdf/verify_vector_full_arabic.py
+          python -m py_compile daruri/browser-html-pdf/verify_vector_rtl_word_hitboxes.py
+          python -m py_compile daruri/browser-html-pdf/verify_vector_crossreader_unicode.py
       - name: Normal browser generates all complete source paragraphs, without PDF inputs
         env:
           GNAMMA_FULL_BROWSER: ${{ matrix.browser }}
@@ -60,6 +64,24 @@ jobs:
             --fixture daruri/browser-html-pdf/fixture.json \
             --evidence /tmp/gnamma-full-arabic-${{ matrix.browser }}/browser-evidence.json \
             --report /tmp/gnamma-full-arabic-${{ matrix.browser }}/native-source-evidence.json
+      - name: Verify native two-word opening/tail highlight geometry in every original passage
+        run: |
+          python daruri/browser-html-pdf/verify_vector_rtl_word_hitboxes.py \
+            --pdf /tmp/gnamma-full-arabic-${{ matrix.browser }}/daruri-vector-full-original-arabic-NONRELEASE.pdf \
+            --evidence /tmp/gnamma-full-arabic-${{ matrix.browser }}/browser-evidence.json \
+            --report /tmp/gnamma-full-arabic-${{ matrix.browser }}/native-word-hitboxes.json \
+            --strict
+      - name: Cross-reader original Arabic Unicode diagnosis (NONRELEASE; separate from MuPDF gate)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+          python -m pip install -q 'pypdfium2==4.30.0'
+          pdftotext -v
+          command -v pdfinfo
+          python daruri/browser-html-pdf/verify_vector_crossreader_unicode.py \
+            --pdf /tmp/gnamma-full-arabic-${{ matrix.browser }}/daruri-vector-full-original-arabic-NONRELEASE.pdf \
+            --evidence /tmp/gnamma-full-arabic-${{ matrix.browser }}/browser-evidence.json \
+            --report /tmp/gnamma-full-arabic-${{ matrix.browser }}/native-cross-reader-unicode.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
