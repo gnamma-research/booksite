@@ -89,9 +89,12 @@ async function render(mode){
       window.__daruriQA={...(window.__daruriQA||{}),paginated_dom:domState};
       if(!found)throw Error('Vivliostyle callback exposed no PDF page containers: '+JSON.stringify(domState));
       status('Writing vector PDF bytes locally…',{phase:'writing',mode,paginated_pages:found});
+      const taggedPdfUa=new URL(location.href).searchParams.get('ua')==='1';
       const bytes=await emitPdfFromVivliostyleWindow(w,{
        baseUrl:new URL('/daruri/browser-html-pdf/runtime/',location.origin).href,
-       sourceHtml,metadata:{title:'Daruri browser HTML-PDF research',author:'Gnamma Research'},
+       sourceHtml,metadata:{title:'Daruri browser HTML-PDF research',author:'Gnamma Research',
+         language:'ar'},
+       ...(taggedPdfUa?{pdfOptions:{pdfUa:2}}:{}),
        onProgress:message=>{window.__daruriQA={...(window.__daruriQA||{}),progress:String(message).slice(0,100)};}
       });
       resolve(bytes);
@@ -111,7 +114,9 @@ async function render(mode){
   const qa={phase:'done',mode,bytes:bytes.length,elapsed_ms:Math.round(performance.now()-started),
     memory_before:memoryBefore,memory_after:performance.memory?.usedJSHeapSize??null,
     source_sha256:fixture.source_sha256,authorial_sections:258,authorial_passages:414,
-    engine:'vivliostyle-pdf@0.3.3; @pdfme/pdf-lib',no_server_pdf_generation:true,
+    engine:'vivliostyle-pdf@0.3.3; @pdfme/pdf-lib',
+    tagged_pdfua:new URL(location.href).searchParams.get('ua')==='1',
+    no_server_pdf_generation:true,
     no_print_dialog:true,no_cdp_print_to_pdf:true,no_prebuilt_pdf_inputs:true,not_release_approved:true};
   status('PDF generated entirely in this browser. Native Arabic and footnote QA still required.',qa);
   return qa;
