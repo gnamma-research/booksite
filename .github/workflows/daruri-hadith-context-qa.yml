@@ -6,6 +6,8 @@ on:
       - 'daruri/hadith-context-*'
       - 'daruri/hadith-anchor-data.js'
       - 'daruri/hadith-note-polish.*'
+      - 'daruri/hadith-note-integration.*'
+      - 'daruri/qa/verify-hadith-inline-notes.js'
       - 'daruri/hadith-traditional-notes.js'
       - 'daruri/quran-note-headings.js'
       - 'daruri/index.html'
@@ -43,7 +45,7 @@ jobs:
           npm install --no-save --no-package-lock jsdom@24
           node daruri/qa/verify-hadith-context.js
           node daruri/qa/verify-hadith-anchors.cjs
-          node daruri/qa/verify-reader-source-notes.js
+          node daruri/qa/verify-hadith-inline-notes.js
       - name: Validate generated source-reference asset
         run: python daruri/build/build_source_reference_data.py --check
       - name: Existing Quran/Hadith note router and context regressions
