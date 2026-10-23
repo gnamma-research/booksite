@@ -27,6 +27,17 @@ module = module_from_spec(spec)
 spec.loader.exec_module(module)
 
 
+def wilson_lower(success: int, total: int, z: float = 1.96) -> float:
+    """95% binomial Wilson bound for the representative, unbiased sample."""
+    if total <= 0:
+        return 0.0
+    p = success / total
+    z2 = z * z
+    return max(0.0, (p + z2 / (2 * total) -
+            z * ((p * (1 - p) / total + z2 / (4 * total * total)) ** 0.5)) /
+            (1 + z2 / total))
+
+
 def evaluate(index: dict, review_rows: list[dict], min_reviewed: int = 250,
              min_exact_accuracy: float = 0.92) -> dict:
     if index.get("schema") != "gnamma-morph-v1":
@@ -38,7 +49,9 @@ def evaluate(index: dict, review_rows: list[dict], min_reviewed: int = 250,
         for row in record.get("a", []):
             if isinstance(row, list) and len(row) >= 6 and isinstance(row[0], int):
                 occurrences.setdefault((record["id"], row[0]), []).append(row)
-    totals = Counter()
+    all_rows = Counter()
+    representative = Counter()
+    challenge = Counter()
     breakdown = {"ordinary": Counter(), "ambiguous": Counter()}
     mistakes = []
     seen = set()
@@ -51,31 +64,35 @@ def evaluate(index: dict, review_rows: list[dict], min_reviewed: int = 250,
         if key in seen:
             raise ValueError(f"Duplicate gold review occurrence: {key}")
         seen.add(key)
-        judgment = record.get("judgement", "").strip().lower()
-        if judgment not in ("", "confirmed", "corrected", "unanalysable"):
-            raise ValueError(f"Unsupported judgement {judgment!r} at {key}")
-        if not judgment:
-            totals["pending"] += 1
+        group = record.get("sample_group", "representative") or "representative"
+        if group not in ("representative", "challenge"):
+            raise ValueError(f"Unknown review sampling group {group!r} at {key}")
+        group_stats = representative if group == "representative" else challenge
+        judgement = record.get("judgement", "").strip().lower()
+        if judgement not in ("", "confirmed", "corrected", "unanalysable"):
+            raise ValueError(f"Unsupported judgement {judgement!r} at {key}")
+        if not judgement:
+            group_stats["pending"] += 1
+            all_rows["pending"] += 1
             continue
         if not record.get("reviewer", "").strip():
             raise ValueError(f"Review at {key} has no named adjudicator")
-        if judgment == "unanalysable":
-            totals["unanalysable"] += 1
+        if judgement == "unanalysable":
+            group_stats["unanalysable"] += 1
+            all_rows["unanalysable"] += 1
             continue
         gold_lemma = record.get("reviewed_lemma", "").strip()
         gold_pos = record.get("reviewed_pos", "").strip()
-        gold_root = record.get("reviewed_root", "").strip()  # legitimately empty for particles
+        gold_root = record.get("reviewed_root", "").strip()  # absent for particles
         if not gold_lemma or not gold_pos:
             raise ValueError(f"Review at {key} needs a lemma and POS, even when confirmed")
-        choices = occurrences.get(key, [])
-        # The highest ranked lexical reading is the one shipped in search;
-        # alternatives are never promoted silently.
-        top = next((x for x in choices
+        options = occurrences.get(key, [])
+        top = next((x for x in options
                     if x[5] not in ("contextual-alternative", "ambiguous", "contextual-backoff")), None)
         if top and module.fold(str(top[1])) != module.fold(record.get("surface", "")):
             raise ValueError(f"Source-token mismatch for reviewed item at {key}")
         subset = breakdown["ambiguous" if record.get("ambiguous") == "yes" else "ordinary"]
-        for target in (totals, subset):
+        for target in (all_rows, group_stats, subset):
             target["reviewed"] += 1
             if not top:
                 target["missing"] += 1
@@ -93,33 +110,41 @@ def evaluate(index: dict, review_rows: list[dict], min_reviewed: int = 250,
                 target["sense_reviewed"] += 1
                 target["sense_correct"] += int(len(top) >= 7 and top[6] == lexical_id)
             target["exact_correct"] += int(all(checks.values()))
-        if top and not all(checks.values()) and len(mistakes) < 20:
+        if top and not all(checks.values()) and len(mistakes) < 30:
             mistakes.append({"passage_id": key[0], "position": key[1],
-                "surface": record.get("surface"), "predicted": top[2:5],
-                "reviewed": [gold_lemma, gold_root, gold_pos]})
-    n = totals["reviewed"]
-    score = (totals["exact_correct"] / n) if n else 0.0
+                "sample_group": group, "surface": record.get("surface"),
+                "predicted": top[2:5], "reviewed": [gold_lemma, gold_root, gold_pos]})
+    n = representative["reviewed"]
+    score = representative["exact_correct"] / n if n else 0.0
+    def result_stats(stat: Counter) -> dict:
+        k = stat["reviewed"]
+        return {
+            "reviewed": k, "pending": stat["pending"],
+            "unanalysable": stat["unanalysable"],
+            "coverage": stat["covered"] / k if k else 0,
+            "exact_accuracy": stat["exact_correct"] / k if k else 0,
+            "lemma_accuracy": stat["lemma_correct"] / k if k else 0,
+            "root_accuracy": stat["root_correct"] / k if k else 0,
+            "pos_accuracy": stat["pos_correct"] / k if k else 0,
+            "sense_accuracy": (stat["sense_correct"] / stat["sense_reviewed"]
+                               if stat["sense_reviewed"] else None)
+        }
     report = {
         "work": index.get("work"), "contextual_index": bool(index.get("contextual")),
-        "model": index.get("annotator"), "reviewed": n, "pending": totals["pending"],
-        "unanalysable": totals["unanalysable"],
-        "coverage": totals["covered"] / n if n else 0,
-        "exact_accuracy": score,
-        "lemma_accuracy": totals["lemma_correct"] / n if n else 0,
-        "root_accuracy": totals["root_correct"] / n if n else 0,
-        "pos_accuracy": totals["pos_correct"] / n if n else 0,
-        "sense_accuracy": (totals["sense_correct"] / totals["sense_reviewed"]
-                           if totals["sense_reviewed"] else None),
-        "strata": {name: dict(counts) for name, counts in breakdown.items()},
+        "model": index.get("annotator"),
+        **result_stats(representative),
+        "representative_95pct_wilson_lower": wilson_lower(representative["exact_correct"], n),
+        "challenge_results": result_stats(challenge),
+        "all_reviews": result_stats(all_rows),
+        "strata": {name: result_stats(counts) for name, counts in breakdown.items()},
         "mistake_examples": mistakes,
-        "minimum_reviewed": min_reviewed,
-        "minimum_exact_accuracy": min_exact_accuracy,
+        "minimum_reviewed_representative": min_reviewed,
+        "minimum_exact_accuracy_representative": min_exact_accuracy,
         "release_gate_passed": bool(index.get("contextual") and
              n >= min_reviewed and score >= min_exact_accuracy and
-             totals["pending"] == 0 and totals["unanalysable"] == 0)
+             all_rows["pending"] == 0 and all_rows["unanalysable"] == 0)
     }
     return report
-
 
 def main():
     parser = argparse.ArgumentParser()
