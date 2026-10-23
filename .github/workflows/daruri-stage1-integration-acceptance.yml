@@ -1,0 +1,106 @@
+name: Daruri Stage 1 on-device PDF integration acceptance (STAGING ONLY)
+on:
+  push:
+    branches: [staging/daruri-stage1-12-plus-15-20261023]
+    paths:
+      - '.github/workflows/daruri-stage1-integration-acceptance.yml'
+      - 'daruri/dynamic-pdf/**'
+      - 'daruri/dynamic-editions.html'
+      - 'daruri/personal-export.js'
+      - 'daruri/editions-selector.js'
+      - 'daruri/index.html'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-stage1-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  catalogue:
+    name: Retain 12 bases, 15 packets, 120 profiles and every rollback PDF
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reuse previously written SHA and catalogue checks
+        run: |
+          node --check daruri/dynamic-pdf/core.js
+          node --check daruri/dynamic-pdf/client.js
+          node --check daruri/dynamic-pdf/assemble.worker.js
+          node --check daruri/personal-export.js
+          node daruri/dynamic-pdf/test_design_catalog.cjs
+          node daruri/qa/verify-editions-delivery.cjs
+      - name: All published fallback PDFs and signed inputs remain present
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          root=pathlib.Path('daruri')
+          a=json.loads((root/'editions/apparatus/manifest.json').read_text())
+          b=json.loads((root/'editions/manifest.json').read_text())
+          d=json.loads((root/'dynamic-pdf/packets/manifest.json').read_text())
+          assert len(a['files'])==120 and len(b['files'])==12
+          assert len(d['packets'])==15 and len(d['profiles'])==120
+          assert all((root/'editions'/x['file']).is_file() for x in a['files'])
+          assert all((root/'editions'/x['file']).is_file() for x in b['files'])
+          assert all((root/'dynamic-pdf/packets'/p['file']).is_file() for p in d['packets'])
+          assert all((root/'dynamic-pdf/packets'/p['map']).is_file() for p in d['packets'])
+          assert all((root/'dynamic-pdf/packets'/p['map']).is_file() for p in d['profiles'])
+          print('STAGE1 PASS: 12 bases, 15 packets, 120 signed profiles, approved rollback intact')
+          PY
+  browser:
+    name: In-browser actual PDF generation and negative-paths (${{ matrix.browser }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned versions used by successful previous browser tests
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/qa playwright@1.56.1 pdf-lib@1.17.1
+          cd daruri/qa
+          if [ '${{ matrix.browser }}' = 'chromium' ]; then
+            if command -v google-chrome >/dev/null 2>&1; then
+              google-chrome --version
+              echo 'GNAMMA_CHROME_CHANNEL=chrome' >> "$GITHUB_ENV"
+            else
+              npx playwright install --with-deps --only-shell chromium
+            fi
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Generate real Reading, English and Study PDFs inside ordinary browser
+        env:
+          GNAMMA_BROWSER: ${{ matrix.browser }}
+          GNAMMA_REPORT_DIR: /tmp/stage1-${{ matrix.browser }}/design
+        run: node daruri/qa/verify_dynamic_design_browser.cjs
+      - name: Rerun existing fail-closed tests on integrated SHA only
+        env:
+          GNAMMA_SITE_ROOT: ${{ github.workspace }}
+          GNAMMA_BROWSER: ${{ matrix.browser }}
+          GNAMMA_REPORT_DIR: /tmp/stage1-${{ matrix.browser }}/negative
+        run: node daruri/qa/verify_dynamic_negative_paths.cjs
+      - name: Existing worker cancel, privacy and wrong-edition safety
+        env:
+          GNAMMA_SITE_ROOT: ${{ github.workspace }}
+          GNAMMA_BROWSER: ${{ matrix.browser }}
+          GNAMMA_REPORT_DIR: /tmp/stage1-${{ matrix.browser }}/cancel
+        run: node daruri/qa/verify_dynamic_cancel_identity.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-stage1-${{ matrix.browser }}-integration-evidence
+          path: /tmp/stage1-${{ matrix.browser }}/
+          retention-days: 14
+          if-no-files-found: warn
