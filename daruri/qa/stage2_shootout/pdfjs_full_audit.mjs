@@ -52,8 +52,27 @@ for(const row of fixture.all_source){
   }
   checks.push(got);
 }
+const diagnosticIds=['R001-P01','R035-P01','R053-P01','R105-P03','R107-P02'];
+const diagnostics=diagnosticIds.map(id=>{
+  const mark='Original '+id;
+  const locs=pText.flatMap((txt,i)=>txt.includes(mark)?[i]:[]);
+  const pageIndex=locs.at(-1);
+  if(pageIndex===undefined)return {id,found:false};
+  const items=pages[pageIndex];
+  const markIndex=items.findIndex(o=>o.str.includes(mark));
+  const snippets=items.slice(Math.max(0,markIndex),markIndex+15).map(item=>({
+    str:item.str.slice(0,240),dir:item.dir,
+    bbox_width:Number(item.width||0).toFixed(2)
+  }));
+  const source=fixture.all_source.find(row=>row.id===id);
+  return {id,found:true,page:pageIndex+1,
+    source_start:source?.arabic_unvowelled?.slice(0,180),
+    pdfjs_item_snippets:snippets,
+    page_first_350:pText[pageIndex].slice(0,350)};
+});
 const report={
  schema:'gnamma-stage2-typst-pdfjs-native-fourth-reader-v1',
+ diagnostics,
  pdf_input:pdf,source_sha256:fixture.source_sha256,
  pdf_pages:doc.numPages,metadata_outline_entries:(await doc.getOutline())?.length||0,
  link_annotations:links.reduce((s,x)=>s+x,0),
@@ -64,6 +83,7 @@ const report={
 };
 await fs.mkdir(path.dirname(out),{recursive:true});
 await fs.writeFile(out,JSON.stringify(report,null,2)+'\n');
+console.log('STAGE2_PDFJS_DIAGNOSTIC',JSON.stringify(diagnostics));
 console.log('STAGE2_PDFJS_FULL',JSON.stringify({
   pages:doc.numPages,links:report.link_annotations,counts:sc,publication_approved:false
 }));
