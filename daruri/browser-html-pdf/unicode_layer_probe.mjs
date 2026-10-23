@@ -14,7 +14,7 @@
  * hidden copy of the complete book or mislabel this as publication-safe.
  */
 import {
-  PDFDocument, beginText, endText, showText, setFontAndSize,
+  PDFDocument, PDFName, beginText, endText, showText, setFontAndSize,
   setTextMatrix, setTextRenderingMode, TextRenderingMode,
 } from '@pdfme/pdf-lib';
 import fontkit from '@pdf-lib/fontkit';
@@ -61,7 +61,7 @@ export async function experimentUnicodeLayer(pdfBytes,paginatedWindow,fixture) {
       // also resolve to the same actual font; otherwise MuPDF extracts the
       // raw CID bytes as control characters and cannot search any Arabic.
       // This difference was proven directly from the failed candidate PDF.
-      page.node.setFontDictionary(font.name,font.ref);
+      page.node.setFontDictionary(PDFName.of(font.name),font.ref);
       page.pushOperators(
         beginText(),
         setFontAndSize(font.name,fontSize),
