@@ -46,10 +46,10 @@ index = {
  "schema":"gnamma-morph-v1", "work":"daruri",
  "contextual":True, "processedIds":["passage:11:0"],
  "records":[{"id":"passage:11:0","a":[
-  [0,"القياس","قِياس","","noun","contextual-bert","قِياس",{"gloss":"analogy","diac":"القياس"}],
+  [0,"القياس","قِياس","","noun","contextual-bert","قِياس",{"gloss":"analogy","diac":"القياس","prc0":"Al_det"}],
   [1,"إن","أَنَّ","","conj_sub","contextual-bert","أَنَّ",{"diac":"أَنَّ"}],
   [2,"بعض","عَضّ","عضض","noun","contextual-bert","عَضّ",{"prc1":"bi_prep","gloss":"biting"}],
-  [3,"العلة","عِلَّة","علل","noun","contextual-bert","عِلَّة",{"gloss":"illness"}]
+  [3,"العلة","عِلَّة","علل","noun","contextual-bert","عِلَّة",{"gloss":"illness","prc0":"Al_det"}]
  ]}]
 }
 before = json.dumps(index, ensure_ascii=False, sort_keys=True)
