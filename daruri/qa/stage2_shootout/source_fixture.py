@@ -24,7 +24,7 @@ def main():
         row=s["segments"][0]
         sample.append({
             "id":f"R{sid:03d}-P01","section":sid,
-            "arabic":row["vocalized"],"english":row["en"],
+            "arabic":row["vocalized"],"arabic_unvowelled":row["ar"],"english":row["en"],
             "two_word":" ".join(row["vocalized"].split()[:2]),
             "first_word":row["vocalized"].split()[0]
         })
@@ -32,7 +32,7 @@ def main():
     assert stress in " ".join(p["vocalized"] for p in data[65]["segments"])
     all_rows=[
       {"id":f"R{s['id']:03d}-P{k+1:02d}", "section":s["id"],
-        "arabic":p["vocalized"],"english":p["en"]}
+        "arabic":p["vocalized"],"arabic_unvowelled":p["ar"],"english":p["en"]}
       for s in sections for k,p in enumerate(s["segments"])]
     output={"schema":"gnamma-stage2-compiler-comparison-v1",
        "source_sha256":hashlib.sha256(source.read_bytes()).hexdigest(),
