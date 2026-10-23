@@ -5,7 +5,7 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "20261023-downloads-purpose1";
+  const RELEASE_VERSION = "20261023-hadith-col2";
   const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "quran-context-data.js", "QURAN_CONTEXT_SOURCES.md", "hadith-context-ui.js", "hadith-context-ui.css", "hadith-inline-anchors.js", "hadith-context-data.js", "hadith-context-metadata.js", "hadith-context-arabic-bukhari1.js", "hadith-context-arabic-bukhari2.js", "hadith-context-arabic-muslim.js", "hadith-context-arabic-abudawud1.js", "hadith-context-arabic-abudawud2.js", "hadith-context-arabic-tirmidhi.js", "hadith-context-arabic-sunan.js", "HADITH_CONTEXT_SOURCES.md", "hadith-context-english-bukhari-a.js", "hadith-context-english-bukhari-b.js", "hadith-context-english-bukhari-long.js", "hadith-context-english-abudawud-a.js", "hadith-context-english-abudawud-b.js", "hadith-context-english-tirmidhi-a.js", "hadith-context-english-tirmidhi-b.js", "hadith-context-english-tirmidhi-c.js", "hadith-context-english-muslim.js", "hadith-context-english-other.js", "gnamma-morphology.js", "gnamma-word-context.js", "gnamma-word-context.css", "morph-lexicon.json", "morph-daruri-v1.json", "morph-mustasfa-v1.json", "download-bundle.js", "bookmark-ui.js", "bookmark-ui.css", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
   // END DARURI RELEASE ASSETS
 
@@ -159,7 +159,7 @@
       ['daruri/gnamma-proximity.js', 'gnamma-proximity.js?v=20261022-proximity1'],
       ['daruri/gnamma-scholarly.js', 'gnamma-scholarly.js?v=20261022-scholarly1'],
       ['daruri/gnamma-scholarly.css', 'gnamma-scholarly.css?v=20261022-scholarly1'],
-      ['daruri/source-reference-data.js', 'source-reference-data.js?v=20261023-hadithux3'],
+      ['daruri/source-reference-data.js', 'source-reference-data.js?v=20261023-hadith-col2'],
       ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-fallback-quran1'],
       ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261022-qcontext1'],
@@ -168,7 +168,7 @@
       ['daruri/quran-context-data.js', 'quran-context-data.js?v=20261022-qcontext1'],
       ['daruri/QURAN_CONTEXT_SOURCES.md', 'QURAN_CONTEXT_SOURCES.md'],
       ['daruri/hadith-inline-anchors.js', 'hadith-inline-anchors.js?v=20261023-hadithux3'],
-      ['daruri/hadith-context-ui.js', 'hadith-context-ui.js?v=20261023-hctx1'],
+      ['daruri/hadith-context-ui.js', 'hadith-context-ui.js?v=20261023-hadith-col2'],
       ['daruri/hadith-context-ui.css', 'hadith-context-ui.css?v=20261023-hctx1'],
       ['daruri/hadith-context-data.js', 'hadith-context-data.js?v=20261023-hctx1'],
       ['daruri/hadith-context-metadata.js', 'hadith-context-metadata.js?v=20261023-hctx1'],

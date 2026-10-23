@@ -21,7 +21,6 @@ function reportCard(key,cite,report,index,fullTranslation){
   const article=mk('article','gn-hadith-report');article.dataset.hadithReport=key;
   const title=mk('h5','gn-hadith-report-heading', (index+1)+'. '+(cite.sourceLabel||cite.collection+' '+cite.number));article.append(title);
   const meta=mk('div','gn-hadith-metadata');
-  label(meta,'Collection',cite.collection);
   label(meta,'Book (kitāb)',report.book);
   label(meta,'Chapter (bāb)',report.chapter_en);
   label(meta,'باب',report.chapter_ar,'ar');
