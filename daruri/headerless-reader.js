@@ -26,7 +26,9 @@
     btn.type='button';btn.className='nav-item gn-nav-help';
     btn.dataset.route='help';
     btn.innerHTML='<svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.65"/><path d="M9.7 9a2.5 2.5 0 0 1 4.8 1c0 1.8-2.5 2.1-2.5 4" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"/><circle cx="12" cy="17.3" r=".85" fill="currentColor"/></svg><span>Help &amp; guide</span>';
-    mainNav.appendChild(btn);
+    // First visible part of the drawer, rather than buried in its footer.
+    const refDivider=mainNav.querySelector('.gn-nav-section-label');
+    if(refDivider)mainNav.insertBefore(btn,refDivider);else mainNav.appendChild(btn);
   }
   // Remove only the duplicate footer Help text; Home remains in the footer.
   drawer.querySelector('.gn-nav-footer-links [data-route="help"]')?.remove();
