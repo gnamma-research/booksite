@@ -8,6 +8,8 @@ on:
       - 'daruri/reading-navigation-*.css'
       - 'daruri/reading-desk.js'
       - 'daruri/qa/verify-reading-navigation-*'
+      - 'daruri/qa/verify-compact-menus.js'
+      - 'daruri/qa/verify-reading-desk-redesign.js'
       - '.github/workflows/daruri-navigation-history.yml'
   pull_request:
     paths:
@@ -16,6 +18,8 @@ on:
       - 'daruri/reading-navigation-*.css'
       - 'daruri/reading-desk.js'
       - 'daruri/qa/verify-reading-navigation-*'
+      - 'daruri/qa/verify-compact-menus.js'
+      - 'daruri/qa/verify-reading-desk-redesign.js'
       - '.github/workflows/daruri-navigation-history.yml'
   workflow_dispatch:
 permissions:
