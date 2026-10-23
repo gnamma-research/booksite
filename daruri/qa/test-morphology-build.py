@@ -69,4 +69,26 @@ for work in ("daruri", "mustasfa"):
     assert "curated" in index.get("annotator", "").lower()
     assert index.get("records")
 
+review_source = ROOT / "daruri" / "build" / "export_morph_review.py"
+review_spec = importlib.util.spec_from_file_location("gnamma_morph_review", review_source)
+assert review_spec and review_spec.loader
+review = importlib.util.module_from_spec(review_spec)
+review_spec.loader.exec_module(review)
+review_sample = {
+    "schema": "gnamma-morph-v1",
+    "work": "daruri",
+    "records": [
+        {"id": "passage:1:0", "a": [
+            [0, "العلم", "عِلْم", "علم", "noun", "ambiguous"],
+            [0, "العلم", "عَلِمَ", "علم", "verb", "ambiguous"]
+        ]}
+    ]
+}
+sheet = review.sample_review_rows(review_sample, {"passage:1:0": "العلم والكتب"}, 1)
+assert len(sheet) == 1
+assert sheet[0]["surface"] == "العلم"
+assert sheet[0]["ambiguous"] == "yes"
+assert sheet[0]["reviewed_lemma"] == ""
+assert "والكتب" in sheet[0]["context"]
+
 print("PASS: morphology lexical/root normalization, provenance and curated index invariants")
