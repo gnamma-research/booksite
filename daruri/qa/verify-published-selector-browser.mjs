@@ -44,30 +44,63 @@ const open=ui.locator('[data-es-action="open"]');
 const status=ui.locator('.gn-es-availability');
 const link=()=>open.getAttribute('href');
 const check=async expected=>assert.equal(await status.getAttribute('data-es-status'),expected);
-const pressPreset=value=>ui.locator('[data-es-preset="'+value+'"]').click();
+const pressPreset=value=>ui.locator('[data-es-book-edition="'+value+'"]').click();
 const include=key=>ui.locator('[data-es-include="'+key+'"]').click();
 try{
   await page.goto(origin+'#editions',{waitUntil:'domcontentloaded',timeout:40000});
   await ui.waitFor({timeout:40000});
   await page.waitForFunction(()=>window.GnammaEditions?.__getPublicationSelection?.().resolution==='ready',{timeout:35000});
-  assert.deepEqual(await ui.locator('.gn-es-tab').allTextContents(),['Reading & Study','Reference']);
-  assert.equal(await ui.getByRole('tab').count(),2);
-  assert.equal(await ui.locator('.gn-es-preset').count(),3);
-  assert.equal(await ui.locator('.gn-es-category').count(),0);
+  assert.deepEqual(await ui.locator('[data-es-download-type] strong').allTextContents(),
+    ['Book PDF','Study Guide','Offline reader','Research files']);
+  assert.equal(await ui.locator('[data-es-download-type]').count(),4);
+  assert.equal(await ui.getByRole('tab').count(),4,'Only four top-level download destinations');
+  assert.equal(await ui.locator('[data-es-book-edition]').count(),3);
+  assert.equal(await ui.locator('.gn-es-book-edition-choices button[aria-pressed="true"]').count(),1);
+  assert.equal(await ui.locator('.gn-es-personal-disclosure').isVisible(),true);
+  assert.equal(await ui.locator('.gn-es-personal-disclosure').getAttribute('open'),null,
+    'Personal entry selection should be collapsed by default');
+  assert.equal(await ui.locator('#gn-es-custom').isVisible(),false,
+    'Rare PDF customization should be collapsed by default');
   assert.match(await link(),/reading\/daruri-reading-bilingual-titles-off\.pdf\?v=[a-f0-9]+/);
-  assert.equal(await ui.locator('#pe-form').count(),1,'Personal PDF form is embedded directly');
-  assert.equal(await ui.locator('.gn-es-personal-link').count(),0,'No separate personal-PDF page link');
+  assert.equal(await ui.locator('#pe-form').count(),1,'One inline personal exporter');
   await page.waitForFunction(()=>window.GnammaPersonalExportInline?.ready,{timeout:35000});
   await page.waitForFunction(()=>document.querySelector('#pe-edition')?.value.includes('reading/daruri-reading-bilingual-titles-off.pdf'),
     {timeout:20000});
   assert.equal(await ui.locator('[data-es-action="open"]').isVisible(),true);
-  assert.equal(await status.isVisible(),false,'Available PDF needs no redundant success banner');
-  assert.equal(await ui.locator('[data-es-study-guide]').count(),0,
-    'Separate Study Guide PDF must not be presented as another book edition');
-  assert.equal(await ui.locator('[data-daruri-bundle="html"]').count(),1,
-    'Offline HTML reader belongs inside Editions');
-  assert.equal(await ui.getByRole('heading',{name:'Other downloads'}).count(),1,
-    'The separate downloads should sit after the PDF edition action');
+  assert.equal(await ui.locator('#gn-es-prepare').isVisible(),false);
+  assert.equal(await ui.locator('[data-es-action="download"]').isVisible(),true);
+  assert.equal(await ui.locator('[data-es-action="download"]').getAttribute('href'),await link(),
+    'Book PDF download and View PDF must refer to the identical published file');
+  assert.equal(await status.isVisible(),false,'No success banner when a PDF is ready');
+  const desktop=await page.evaluate(()=>{
+    const nav=document.querySelector('.gn-es-download-types').getBoundingClientRect();
+    const panel=document.querySelector('.gn-es-download-content').getBoundingClientRect();
+    return {navRight:nav.right,panelLeft:panel.left,navWidth:nav.width,
+      panelWidth:panel.width,overflow:document.documentElement.scrollWidth-innerWidth};
+  });
+  assert.ok(desktop.panelLeft>=desktop.navRight-2,'Desktop download rail must sit beside, not above, content: '+JSON.stringify(desktop));
+  assert.ok(desktop.navWidth<=230&&desktop.panelWidth>=360,'Compact desktop navigation must leave room for documents: '+JSON.stringify(desktop));
+  await page.screenshot({path:path.join(captures,'daruri-downloads-desktop-default.png'),fullPage:true});
+  await page.screenshot({path:path.join(captures,'daruri-downloads-desktop-viewport.png')});
+
+  // Every other download type must be immediately reachable without the PDF settings.
+  await ui.locator('[data-es-download-type="guide"]').click();
+  assert.equal(await ui.locator('#gn-es-book-panel').isVisible(),false);
+  assert.equal(await ui.locator('#gn-es-guide-panel').isVisible(),true);
+  assert.equal(await ui.locator('a[download]:has-text("Download Study Guide (PDF)")').count(),1);
+  const guideDownload=page.waitForEvent('download',{timeout:30000});
+  await ui.locator('a[download]:has-text("Download Study Guide (PDF)")').click();
+  const guideFile=await guideDownload;
+  assert.match(guideFile.suggestedFilename(),/daruri-study-guide\.pdf/);
+  assert.equal(fs.readFileSync(await guideFile.path()).subarray(0,5).toString('ascii'),'%PDF-');
+
+  await ui.locator('[data-es-download-type="offline"]').click();
+  assert.equal(await ui.locator('#gn-es-offline-panel').isVisible(),true);
+  assert.equal(await ui.locator('[data-es-download-type="offline"]').isVisible(),true);
+  assert.equal(await ui.locator('[data-daruri-bundle="full"]').isVisible(),false,
+    'Offline reader and larger PDF-inclusive ZIP must remain separate options');
+
+  await ui.locator('[data-es-download-type="source"]').click();
   const sourceRelease=JSON.parse(fs.readFileSync('daruri/source-archive-manifest.json','utf8'));
   const sourcePanel=ui.locator('[data-es-source]');
   const sourceLink=ui.locator('[data-es-source-download]');
@@ -76,52 +109,49 @@ try{
     assert.match(await sourceLink.getAttribute('href'),/\/source\/Daruri_Portable_Scholarly_Source\.zip\?v=[0-9a-f]{12}$/);
     assert.equal(await sourceLink.getAttribute('download'),'Daruri_Portable_Scholarly_Source.zip');
     assert.equal((await ui.locator('[data-es-source-hash]').textContent()).trim(),sourceRelease.sha256);
-    assert.equal(await ui.locator('.gn-es-source-more').count(),1,'Source detail disclosure belongs to research ZIP');
     const received=page.waitForEvent('download',{timeout:30000});
     await sourceLink.click();
-    const save=await received;
-    assert.equal(save.suggestedFilename(),'Daruri_Portable_Scholarly_Source.zip');
-    const payload=fs.readFileSync(await save.path());
-    assert.equal(payload.length,sourceRelease.size_bytes,'Downloaded source ZIP must have release size');
-    assert.equal(crypto.createHash('sha256').update(payload).digest('hex'),sourceRelease.sha256,
-      'Downloaded research archive must match the published ZIP SHA-256');
+    const zip=await received;
+    assert.equal(zip.suggestedFilename(),'Daruri_Portable_Scholarly_Source.zip');
+    const payload=fs.readFileSync(await zip.path());
+    assert.equal(payload.length,sourceRelease.size_bytes);
+    assert.equal(crypto.createHash('sha256').update(payload).digest('hex'),sourceRelease.sha256);
   }else{
-    assert.equal(await sourcePanel.isVisible(),false,
-      'Unapproved scholarly ZIP must not display a dead download link');
-    assert.equal(await sourceLink.getAttribute('href'),null,
-      'Unapproved scholarly ZIP must never have an active URL');
+    assert.equal(await sourcePanel.isVisible(),false);
+    assert.equal(await sourceLink.getAttribute('href'),null);
   }
+  await ui.locator('[data-es-download-type="book"]').click();
+  assert.equal(await ui.locator('#gn-es-book-panel').isVisible(),true);
   const alignment=await ui.locator('.gn-es-language-label').evaluateAll(nodes=>
     nodes.map(n=>{const r=n.getBoundingClientRect();return (r.top+r.bottom)/2;}));
   assert.ok(Math.abs(alignment[0]-alignment[1])<=1,
     'Vowelled AR must stay centred on the same baseline as EN: '+alignment);
-  await ui.locator('#gn-es-prepare').click();
-  await ui.locator('[data-es-action="download"]').waitFor({state:'visible',timeout:50000});
-  assert.equal(await ui.locator('#gn-es-prepare').isVisible(),false);
-  assert.equal(await ui.locator('#gn-es-prepare-status').isVisible(),false);
-  const preparedDownload=page.waitForEvent('download',{timeout:20000});
-  await ui.locator('[data-es-action="download"]').click();
-  assert.match((await preparedDownload).suggestedFilename(),/daruri-reading-bilingual-titles-off\.pdf/);
+  const published=ui.locator('[data-es-action="download"]');
+  const nativeDownload=page.waitForEvent('download',{timeout:25000});
+  await published.click();
+  assert.match((await nativeDownload).suggestedFilename(),/daruri-reading-bilingual-titles-off\.pdf/);
   await ui.locator('[data-es-toggle="ar"]').click();
   await check('ready');
-  assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),true,
+  await pressPreset('study');
+  assert.match(await ui.locator('[data-es-choice-message]').textContent(),/bilingual|English and vowelled Arabic/i,
     'Study may not silently change an English-only source to bilingual');
   assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.ar,false);
-  assert.equal(await ui.locator('#gn-es-prepare').isVisible(),true,
-    'Changing edition settings invalidates the old prepared download');
+  assert.match(await ui.locator('[data-es-action="download"]').getAttribute('href'),/reading\/daruri-reading-english-titles-off\.pdf/,
+    'Changing language must update the native download to the new PDF');
   await ui.locator('[data-es-toggle="ar"]').click();
   await check('ready');
   assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.vowels,false,
     'Second AR state is plain, without vowel marks');
-  assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),true);
+  assert.equal(await ui.locator('[data-es-book-edition="reading"]').getAttribute('aria-pressed'),'true');
   assert.equal(await ui.locator('[data-es-toggle="ar"] .gn-es-ar-form').innerText(),'Plain');
   await ui.locator('[data-es-toggle="ar"]').click();
   await check('ready');
   assert.equal((await page.evaluate(()=>window.GnammaEditions.__getPublicationSelection())).settings.vowels,true);
-  assert.equal(await ui.locator('[data-es-preset="study"]').isDisabled(),false);
+  assert.equal(await ui.locator('[data-es-choice-message]').textContent(),'');
   assert.equal(await ui.locator('[data-es-toggle="vowels"]').count(),0,
     'The redundant vowel-mark control is gone');
 
+  await ui.locator('.gn-es-personal-disclosure summary').click();
   await ui.locator('#pe-personal').check();
   await page.waitForFunction(()=>document.querySelector('input[name="pe-mode"]:checked')?.value==='all');
   assert.equal(await ui.locator('#pe-generate').isVisible(),true);
@@ -154,7 +184,7 @@ try{
   assert.match(await ui.locator('.gn-es-spec-notes').textContent(),/Publisher notes: Selected/);
   await pressPreset('reading');
   await check('ready');
-  await pressPreset('custom');
+  await ui.locator('[data-es-custom]').click();
   assert.equal(await ui.locator('#gn-es-custom').isVisible(),true);
   await include('glossary');
   await include('index');
@@ -163,18 +193,18 @@ try{
   assert.match(await ui.locator('.gn-es-spec-apparatus').textContent(),/Glossary · Full index/);
 
   // The same personal controls must work inside scholarly Reference.
-  await ui.getByRole('tab',{name:'Reference'}).click();
+  await pressPreset('reference');
   await check('ready');
   assert.equal(await ui.locator('[data-es-reference-inventory]').isVisible(),true);
   assert.equal(await ui.locator('#pe-edition').inputValue(),'daruri.pdf');
   assert.equal(await ui.locator('#pe-personal').isChecked(),true);
-  assert.equal(await ui.locator('[data-daruri-bundle="html"]').isVisible(),true);
+  assert.equal(await ui.locator('[data-es-download-type="offline"]').isVisible(),true);
   await ui.locator('#pe-bookmarks').check();
   assert.match(await ui.locator('#pe-count').innerText(),/2 qualifying items/);
   await ui.locator('#pe-highlights').check();
   assert.match(await ui.locator('#pe-count').innerText(),/3 qualifying items/,
     'Highlights must be included independently of notes and bookmarks');
-  await ui.getByRole('tab',{name:'Reading & Study'}).click();
+  await pressPreset('reading');
   await ui.locator('#pe-personal').uncheck();
   await ui.locator('#pe-bookmarks').uncheck();
   await ui.locator('#pe-highlights').uncheck();
@@ -184,7 +214,7 @@ try{
   await page.screenshot({path:path.join(captures,'daruri-two-tabs-mobile.png'),fullPage:true});
   const measurement=await page.evaluate(()=>{
     const root=document.querySelector('.gn-es'),panel=root.querySelector('#gn-es-panel');
-    const action=root.querySelector('#gn-es-prepare');
+    const action=root.querySelector('[data-es-action="download"]');
     const buttons=[...root.querySelectorAll('button')].filter(n=>!n.hidden&&n.getClientRects().length);
     return {overflow:document.documentElement.scrollWidth-innerWidth,
       minButton:Math.min(...buttons.map(n=>n.getBoundingClientRect().height)),
@@ -192,11 +222,16 @@ try{
   });
   assert.ok(measurement.overflow<=2,'Mobile overflow '+JSON.stringify(measurement));
   assert.ok(measurement.minButton>=40,'Touch targets too small '+measurement.minButton);
-  assert.ok(Math.abs(measurement.actionWidth-measurement.panelWidth)<25,'Asymmetric PDF action '+JSON.stringify(measurement));
+  assert.ok(Math.abs(measurement.actionWidth-measurement.panelWidth)<25,'Asymmetric direct PDF action '+JSON.stringify(measurement));
+  const choices=await ui.locator('[data-es-download-type]').evaluateAll(items=>
+    items.map(item=>{const r=item.getBoundingClientRect();return{x:r.x,y:r.y,height:r.height,width:r.width};}));
+  assert.equal(choices.length,4);
+  assert.ok(Math.abs(choices[0].y-choices[1].y)<3 && choices[2].y>choices[0].y,
+    'On phones the four download purposes must form a compact 2x2 grid: '+JSON.stringify(choices));
   await page.setViewportSize({width:320,height:690});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth)<=2,'320px overflow');
   assert.deepEqual(errors,[],'Uncaught JavaScript runtime exceptions');
-  console.log('PASS: real verified PDF preparation/download, no duplicate Study Guide/status, independent personal export, offline HTML choice and mobile layout');
+  console.log('PASS: compact desktop navigation, four purpose downloads, single-click PDF, scholarly SHA, private PDF and mobile layout');
 }finally{
   await context.close();
   await browser.close();

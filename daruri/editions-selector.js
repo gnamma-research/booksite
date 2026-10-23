@@ -16,12 +16,14 @@
       glossary:'historical',index:'full',applications:'on',concordance:'on'}
   };
   const KEY='gnamma-published-editions-two-tabs-v2';
+  const DOWNLOAD_KEY='gnamma-downloads-purpose-v1';
   const state={
     reading:{...BASE.reading},
     study:{...BASE.study},
     reference:{...BASE.reference}
   };
   let tier='reading',preset='reading',tab='reading',customOpen=false;
+  let downloadType='book',choiceMessage='';
   let catalog=null,addon=null,reference=null,baseMaps=null,root=null,requestId=0;
   let personalReady=false,selectedFile='',selectedRow=null;
   // Existing PDFs are retrieved and SHA-256 checked on request, never falsely "generated".
@@ -37,6 +39,10 @@
     index:'<path d="M7 5h13M7 12h13M7 19h13M3 5h1M3 12h1M3 19h1"/>',
     applications:'<path d="M12 3v18M4 7h16M6 7l-4 7h8l-4-7ZM18 7l-4 7h8l-4-7ZM8 21h8"/>',
     concordance:'<path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l2-2"/>',
+    book:'<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 1 4 17.5Zm0 12A2.5 2.5 0 0 1 6.5 15H20M8 7h8"/>',
+    guide:'<path d="M3 9.5 12 4l9 5.5-9 5.5-9-5.5Zm4 2.6V17c3.3 2.5 6.7 2.5 10 0v-4.9M21 9.5V17"/>',
+    offline:'<rect x="3" y="4" width="18" height="14" rx="2"/><path d="M9 22h6M12 10v6m-3-3 3 3 3-3"/>',
+    source:'<path d="M4 6a2 2 0 0 1 2-2h12l2 2v15H6a2 2 0 0 1-2-2Zm5 3h7m-7 4h7m-7 4h4"/>',
     chevron:'<path d="m6 9 6 6 6-6"/>'
   };
   const icon=(key,cls='')=>{
@@ -52,6 +58,7 @@
   const languageLabel=s=>s.en?(s.ar?'Bilingual':'English'):'Arabic';
   function remember(){
     try{localStorage.setItem(KEY,JSON.stringify({v:2,tab,tier,preset,customOpen,state}));}catch(_){}
+    try{localStorage.setItem(DOWNLOAD_KEY,downloadType);}catch(_){}
   }
   function restore(){
     try{
@@ -65,13 +72,17 @@
       if(NAV.includes(raw.tab))tab=raw.tab;
       if(['reading','study','reference'].includes(raw.tier))tier=raw.tier;
       if(['reading','study','custom'].includes(raw.preset))preset=raw.preset;
-      customOpen=Boolean(raw.customOpen);
+      customOpen=false; // Old nested settings do not automatically open in the new Downloads layout.
       if(!current().en&&!current().ar)current().en=true;
       if(tab==='reference')tier='reference';
       if(tab==='reading'&&tier==='reference')tier='reading';
     }catch(_){}
   }
   restore();
+  try{
+    const saved=localStorage.getItem(DOWNLOAD_KEY);
+    if(['book','guide','offline','source'].includes(saved))downloadType=saved;
+  }catch(_){}
   // Only genuinely prebuilt layouts are exposed. Reference is always fixed.
   Object.assign(state.reference,BASE.reference);
   Object.assign(state.study,{en:true,ar:true,vowels:true,notes:'selected'});
@@ -82,13 +93,25 @@
     icon(key)+'<span>'+esc(label)+'</span></button>';
   function shell(){
     return '<div class="gn-es-wrap">'+
-      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Download a copy</h1><p>Choose a PDF edition, or find other download formats below.</p></header>'+
-       '<h2 class="gn-es-format-title">PDF editions</h2>'+
-      '<div class="gn-es-edition-tabs" role="tablist" aria-label="Edition type">'+
-        '<button type="button" class="gn-es-tab" id="gn-es-tab-reading" role="tab" aria-controls="gn-es-panel" data-es-nav="reading" aria-selected="true">Reading &amp; Study</button>'+
-        '<button type="button" class="gn-es-tab" id="gn-es-tab-reference" role="tab" aria-controls="gn-es-panel" data-es-nav="reference" aria-selected="false">Reference</button>'+
-      '</div>'+
-      '<section id="gn-es-panel" role="tabpanel" tabindex="0" aria-labelledby="gn-es-tab-reading">'+
+      '<header class="gn-es-header"><h1 id="gn-es-title" tabindex="-1">Downloads</h1><p>Choose the file or reading package you need.</p></header>'+
+      '<div class="gn-es-download-layout">'+
+        '<div class="gn-es-download-types" role="tablist" aria-label="Download type">'+
+          '<button type="button" class="gn-es-download-type" role="tab" id="gn-es-type-book" data-es-download-type="book" aria-controls="gn-es-book-panel" aria-selected="true" tabindex="0">'+icon('book')+'<span><strong>Book PDF</strong><small>Reading, Study, Reference</small></span></button>'+
+          '<button type="button" class="gn-es-download-type" role="tab" id="gn-es-type-guide" data-es-download-type="guide" aria-controls="gn-es-guide-panel" aria-selected="false" tabindex="-1">'+icon('guide')+'<span><strong>Study Guide</strong><small>Lessons and exercises</small></span></button>'+
+          '<button type="button" class="gn-es-download-type" role="tab" id="gn-es-type-offline" data-es-download-type="offline" aria-controls="gn-es-offline-panel" aria-selected="false" tabindex="-1">'+icon('offline')+'<span><strong>Offline reader</strong><small>Interactive website</small></span></button>'+
+          '<button type="button" class="gn-es-download-type" role="tab" id="gn-es-type-source" data-es-download-type="source" aria-controls="gn-es-source-panel" aria-selected="false" tabindex="-1">'+icon('source')+'<span><strong>Research files</strong><small>Source texts and notes</small></span></button>'+
+        '</div>'+
+        '<div class="gn-es-download-content">'+
+          '<section id="gn-es-book-panel" class="gn-es-download-panel" data-es-type-panel="book" role="tabpanel" aria-labelledby="gn-es-type-book">'+
+            '<h2 class="gn-es-panel-title">Book PDF</h2>'+
+            '<p class="gn-es-panel-description">Choose an edition of Ibn Rushd’s text.</p>'+
+            '<div class="gn-es-book-edition-choices" role="group" aria-label="Book PDF edition">'+
+              '<button type="button" data-es-book-edition="reading" aria-pressed="true"><strong>Reading</strong><small>Clean text</small></button>'+
+              '<button type="button" data-es-book-edition="study" aria-pressed="false"><strong>Study</strong><small>Notes + index</small></button>'+
+              '<button type="button" data-es-book-edition="reference" aria-pressed="false"><strong>Reference</strong><small>Full apparatus</small></button>'+
+            '</div>'+
+            '<p class="gn-es-inline-note" data-es-choice-message role="status"></p>'+
+            '<div id="gn-es-panel" class="gn-es-book-settings">'+
         '<div class="gn-es-setting gn-es-setting-text">'+
           '<span class="gn-es-setting-label">Language</span>'+
           '<div class="gn-es-setting-body">'+
@@ -99,17 +122,9 @@
               '</div>'+
             '</div><span class="gn-es-inline-note" data-es-language-note></span>'+
           '</div></div>'+
-        '<div class="gn-es-setting gn-es-presets" data-es-presets>'+
-          '<span class="gn-es-setting-label">Start with</span><div class="gn-es-setting-body">'+
-            '<div class="gn-es-preset-options" role="group" aria-label="Starting edition">'+
-              '<button type="button" class="gn-es-preset" data-es-preset="reading" aria-pressed="true"><strong>Reading</strong><small>Text only</small></button>'+
-              '<button type="button" class="gn-es-preset" data-es-preset="study" aria-pressed="false"><strong>Study</strong><small>Notes + index</small></button>'+
-              '<button type="button" class="gn-es-preset" data-es-preset="custom" aria-pressed="false"><strong>Customize</strong><small>Other options</small></button>'+
-            '</div><span class="gn-es-inline-note" data-es-preset-note></span></div>'+
-        '</div>'+
         '<div class="gn-es-custom-head" data-es-custom-head hidden>'+
           '<button type="button" class="gn-es-custom-trigger" data-es-custom aria-expanded="false" aria-controls="gn-es-custom">'+
-          '<span>Custom edition settings</span>'+icon('chevron','gn-es-custom-arrow')+'</button></div>'+
+          '<span>Customize PDF</span>'+icon('chevron','gn-es-custom-arrow')+'</button></div>'+
         '<div id="gn-es-custom" class="gn-es-custom" hidden>'+
           '<div class="gn-es-custom-setting">'+
             '<span class="gn-es-setting-label">Publisher notes</span>'+
@@ -135,6 +150,7 @@
             '<label><input type="radio" name="pe-mode" value="all">All</label>'+
             '<label><input type="radio" name="pe-mode" value="choose">Choose</label>'+
             '<label><input type="checkbox" id="pe-appendix" checked>Required personal appendix</label></div>'+
+          '<details class="gn-es-personal-disclosure" data-es-personal-details><summary>Add from my Reading Desk</summary>'+
           '<div class="gn-es-setting gn-es-personal-row">'+
             '<span class="gn-es-setting-label">Personal additions</span>'+
             '<div class="gn-es-setting-body">'+
@@ -162,7 +178,7 @@
                   '<p id="pe-picker-count"></p><div id="pe-items" class="gn-es-personal-items" role="group" aria-label="Personal entries"></div>'+
                 '</div><p id="pe-count" class="gn-es-inline-note" role="status"></p>'+
               '</div>'+
-            '</div></div>'+
+            '</div></div></details>'+
           '<section class="gn-es-spec" aria-label="Current document configuration">'+
             '<div class="gn-es-spec-head"><strong>Your selected edition</strong><span data-es-count></span></div>'+
             '<p class="gn-es-spec-lead" data-es-spec-lead></p>'+
@@ -176,10 +192,10 @@
           '<div id="pe-alert" class="gn-es-inline-alert" role="status" hidden></div>'+
           '<p id="pe-description" class="gn-es-inline-note" hidden></p>'+
           '<div class="gn-es-actions">'+
-            '<button type="button" class="gn-es-action gn-es-action-primary" id="gn-es-prepare" data-es-prepare>'+
+            '<button type="button" class="gn-es-action gn-es-action-primary" id="gn-es-prepare" data-es-prepare hidden>'+
               '<span data-es-prepare-label>Prepare PDF</span><progress data-es-prepare-progress aria-label="PDF retrieval and verification progress" max="100" value="0" hidden></progress></button>'+
             '<a class="gn-es-action gn-es-action-primary" data-es-action="download" download hidden>Download PDF</a>'+
-            '<a class="gn-es-action gn-es-action-secondary" data-es-action="open" aria-label="Open existing published PDF in browser" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>Open existing PDF</span></a>'+
+            '<a class="gn-es-action gn-es-action-secondary" data-es-action="open" aria-label="View the selected PDF in a new tab" target="_blank" rel="noopener noreferrer">'+icon('eye')+'<span>View PDF</span></a>'+
             '<button class="gn-es-action gn-es-action-primary" type="submit" id="pe-generate" hidden disabled>Create my PDF</button>'+
           '</div><p id="gn-es-prepare-status" class="gn-es-prepare-status" role="status" hidden></p>'+
           '<a id="pe-clean" hidden></a>'+
@@ -193,11 +209,17 @@
               '<button type="button" id="pe-share" hidden>Share on this device</button>'+
             '</div></div>'+
         '</form>'+
-      '</section>'+
-      '<section class="gn-es-offline" aria-labelledby="gn-es-other-title">'+
-        '<h2 id="gn-es-other-title">Other downloads</h2>'+
-        '<div class="gn-es-download-row" aria-labelledby="gn-es-offline-title">'+
-          '<h3 id="gn-es-offline-title">Offline reader · HTML</h3>'+
+            '</div>'+
+          '</section>'+
+          '<section id="gn-es-guide-panel" class="gn-es-download-panel" data-es-type-panel="guide" role="tabpanel" aria-labelledby="gn-es-type-guide" hidden>'+
+            '<h2 class="gn-es-panel-title">Study Guide</h2>'+
+            '<p>Lessons and exercises to accompany your reading. This is a separate teaching companion, not the Study edition of the book.</p>'+
+            '<div class="gn-es-package-actions"><a class="gn-es-action gn-es-action-primary" href="daruri-study-guide.pdf?v=daruri6-sources-20261020" download>Download Study Guide (PDF)</a>'+
+            '<a class="gn-es-package-secondary" href="daruri-study-guide.pdf?v=daruri6-sources-20261020" target="_blank" rel="noopener noreferrer">View Study Guide PDF</a></div>'+
+          '</section>'+
+          '<section id="gn-es-offline-panel" class="gn-es-download-panel gn-es-offline" data-es-type-panel="offline" role="tabpanel" aria-labelledby="gn-es-type-offline" hidden>'+
+            '<h2 class="gn-es-panel-title" id="gn-es-offline-title">Offline reader</h2>'+
+            '<div class="gn-es-download-row">'+
           '<p>Download the reading website, dictionary, fonts and supporting files. This is not a PDF, and your private Reading Desk notes are not included.</p>'+
           '<button type="button" class="gn-es-offline-download" data-daruri-bundle="html">Download offline reader (ZIP)</button>'+
           '<details class="gn-es-offline-more"><summary>Also need the PDFs offline?</summary>'+
@@ -207,8 +229,12 @@
           '<p class="gn-offline-bundle-status" role="status" aria-live="polite"></p>'+
           '<p class="gn-es-offline-footnote">Keep the extracted folders together. Complete desktop use requires a local web server; opening file:// directly can restrict browser features.</p>'+
         '</div>'+
-        '<div class="gn-es-source-row" data-es-source hidden aria-labelledby="gn-es-source-title">'+
-          '<h3 id="gn-es-source-title">Source text &amp; research files</h3>'+
+          '</section>'+
+          '<section id="gn-es-source-panel" class="gn-es-download-panel" data-es-type-panel="source" role="tabpanel" aria-labelledby="gn-es-type-source" hidden>'+
+            '<h2 class="gn-es-panel-title">Research files</h2>'+
+            '<p class="gn-es-source-pending" data-es-source-pending role="status">Checking the published scholarly source archive…</p>'+
+            '<div class="gn-es-source-row" data-es-source hidden aria-labelledby="gn-es-source-title">'+
+          '<h3 id="gn-es-source-title" class="gn-es-visually-hidden">Scholarly source archive</h3>'+
           '<p>Arabic text, English translation, publisher notes and cross-references in HTML, TXT, TEI and JSON. These are research files, not the offline reading website.</p>'+
           '<a class="gn-es-source-download" data-es-source-download download>Download source text (ZIP)</a>'+
           '<details class="gn-es-source-more"><summary>What’s inside?</summary>'+
@@ -223,7 +249,9 @@
             '<p class="gn-es-source-hash">SHA-256: <code data-es-source-hash></code></p>'+
           '</details>'+
         '</div>'+
-      '</section></div>';
+          '</section>'+
+        '</div>'+
+      '</div></div>';
   }
   function apparatusLabel(s){
     const parts=[];
@@ -293,20 +321,20 @@
     const open=root.querySelector('[data-es-action="open"]');
     const bar=prepare.querySelector('[data-es-prepare-progress]');
     const status=root.querySelector('#gn-es-prepare-status');
-    prepare.hidden=isPersonal||!!preparation.url;
-    prepare.disabled=found.status!=='ready'||preparation.busy;
-    prepare.setAttribute('aria-busy',String(preparation.busy));
-    prepare.querySelector('[data-es-prepare-label]').textContent=
-      preparation.busy?'Preparing PDF…':'Prepare PDF';
-    bar.hidden=!preparation.busy;
-    download.hidden=isPersonal||!preparation.url;
-    if(preparation.url){
-      download.href=preparation.url;
+    // Published PDFs are already made: a direct native download requires
+    // one click and preserves iOS Safari's original user gesture. The
+    // browser-local personal edition remains a distinct creation workflow.
+    prepare.hidden=true;
+    bar.hidden=true;
+    const ready=found.status==='ready'&&Boolean(file);
+    download.hidden=isPersonal||!ready;
+    if(ready){
+      download.href=open.getAttribute('href');
       download.download=(file.split('/').pop()||'daruri.pdf').replace(/[^a-z0-9._-]/gi,'_');
     }else download.removeAttribute('href');
-    open.hidden=isPersonal;
-    status.hidden=!preparation.error;
-    status.textContent=preparation.error;
+    open.hidden=isPersonal||!ready;
+    status.hidden=true;
+    status.textContent='';
   }
   async function prepareExistingPDF(){
     const host=root,found=resolve(),file=publicFile(found);
@@ -374,24 +402,21 @@
   function refresh(){
     if(!root?.isConnected)return;
     const s=current(),result=resolve(),isPersonal=hasPersonal();
-    for(const button of root.querySelectorAll('[data-es-nav]')){
-      const active=button.dataset.esNav===tab;
+    if(downloadType!=='book')choiceMessage='';
+    for(const button of root.querySelectorAll('[data-es-download-type]')){
+      const active=button.dataset.esDownloadType===downloadType;
       button.setAttribute('aria-selected',String(active));
       button.tabIndex=active?0:-1;
     }
-    root.querySelector('#gn-es-panel').setAttribute('aria-labelledby','gn-es-tab-'+tab);
-    root.querySelector('[data-es-presets]').hidden=tab==='reference';
-    root.querySelector('[data-es-custom-head]').hidden=tab==='reference'||preset!=='custom';
+    for(const panel of root.querySelectorAll('[data-es-type-panel]'))
+      panel.hidden=panel.dataset.esTypePanel!==downloadType;
+    for(const button of root.querySelectorAll('[data-es-book-edition]'))
+      button.setAttribute('aria-pressed',String(button.dataset.esBookEdition===tier));
+    root.querySelector('[data-es-choice-message]').textContent=choiceMessage;
+    root.querySelector('[data-es-custom-head]').hidden=tab==='reference';
     root.querySelector('#gn-es-custom').hidden=tab==='reference'||!customOpen;
     root.querySelector('[data-es-custom]').setAttribute('aria-expanded',String(customOpen&&tab!=='reference'));
     root.querySelector('[data-es-reference-inventory]').hidden=tab!=='reference';
-    for(const button of root.querySelectorAll('[data-es-preset]')){
-      button.setAttribute('aria-pressed',String(button.dataset.esPreset===preset));
-      // Never silently change an English-only or unvowelled selection to
-      // bilingual merely because the reader asks for a Study preset.
-      if(button.dataset.esPreset==='study')
-        button.disabled=!(s.en&&s.ar&&s.vowels);
-    }
     for(const b of root.querySelectorAll('[data-es-toggle]')){
       const key=b.dataset.esToggle;
       b.setAttribute('aria-pressed',String(Boolean(s[key])));
@@ -410,12 +435,7 @@
       'The full scholarly edition is bilingual and vowelled.':
       tier==='study'?'Study notes are currently prebuilt only in vowelled bilingual PDFs.':
       'Tap AR to cycle: Off → Plain → Vowelled. No separate vowel button.';
-    root.querySelector('[data-es-preset-note]').textContent=
-      !(s.en&&s.ar&&s.vowels)&&tab==='reading'?
-        'Study notes are currently published only in bilingual vowelled form; your language choice is preserved.':
-      preset==='study'?'Selected publisher notes and a basic index are included.':
-      preset==='custom'?'Fine-tune publisher notes and apparatus using Customize edition.':
-      'A clean A4 reading edition with no publisher notes.';
+
     for(const b of root.querySelectorAll('[data-es-publisher]'))
       b.setAttribute('aria-pressed',String(b.dataset.esPublisher===s.notes));
     for(const b of root.querySelectorAll('[data-es-headings]'))
@@ -532,16 +552,27 @@
   function onClick(event){
     const b=event.target.closest('button');
     if(!b||!root?.contains(b))return;
-    if(b.dataset.esPrepare!==undefined){void prepareExistingPDF();return;}
-    if(b.dataset.esNav){
-      tab=b.dataset.esNav;
-      tier=tab==='reference'?'reference':tier==='reference'?'reading':tier;
+    if(b.dataset.esDownloadType){
+      downloadType=b.dataset.esDownloadType;
       refresh();b.focus();return;
     }
-    if(b.dataset.esPreset){presetSelect(b.dataset.esPreset);return;}
+    if(b.dataset.esBookEdition){
+      const chosen=b.dataset.esBookEdition;
+      choiceMessage='';
+      if(chosen==='study'&&!(current().en&&current().ar&&current().vowels)){
+        choiceMessage='Study PDFs require English and vowelled Arabic. Restore these languages in Reading before choosing Study.';
+      }else if(chosen==='reference'){
+        tier='reference';tab='reference';preset='reading';customOpen=false;
+      }else{
+        tab='reading';
+        presetSelect(chosen);
+      }
+      refresh();b.focus();return;
+    }
     if(b.dataset.esCustom!==undefined){customOpen=!customOpen;refresh();return;}
     if(b.dataset.esToggle){
       if(tab==='reference'||tier==='study')return;
+      choiceMessage='';
       const s=current(),k=b.dataset.esToggle;
       if(k==='ar'){
         // A single AR control cycles Off → Plain → Vowelled.
@@ -582,13 +613,16 @@
     else if(event.target.matches('#pe-dates,#pe-annotations,#pe-order'))refresh();
   }
   function onKey(event){
-    const target=event.target.closest('[data-es-nav]');
-    if(!target||!root?.contains(target)||!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+    const target=event.target.closest('[data-es-download-type]');
+    if(!target||!root?.contains(target)||
+        !['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;
     event.preventDefault();
-    const index=NAV.indexOf(target.dataset.esNav);
-    const next=event.key==='Home'?0:event.key==='End'?1:
-      (index+(event.key==='ArrowRight'?1:-1)+NAV.length)%NAV.length;
-    const control=root.querySelector('[data-es-nav="'+NAV[next]+'"]');
+    const choices=['book','guide','offline','source'];
+    const index=choices.indexOf(target.dataset.esDownloadType);
+    const delta=event.key==='ArrowRight'||event.key==='ArrowDown'?1:-1;
+    const next=event.key==='Home'?0:event.key==='End'?choices.length-1:
+      (index+delta+choices.length)%choices.length;
+    const control=root.querySelector('[data-es-download-type="'+choices[next]+'"]');
     control.click();control.focus();
   }
   function loadScript(name){
@@ -668,8 +702,15 @@
         ' MB · source commit '+release.source_commit.slice(0,12);
       panel.querySelector('[data-es-source-hash]').textContent=release.sha256;
       panel.hidden=false;
+      const pending=view.querySelector('[data-es-source-pending]');
+      if(pending)pending.hidden=true;
     }catch(_){
-      // A missing or malformed release is simply not an available download.
+      // Never show an invalid or unapproved download link.
+    }finally{
+      const pending=view.querySelector('[data-es-source-pending]');
+      if(root===view&&pending&&!panel.hidden)return;
+      if(root===view&&pending)
+        pending.textContent='Research files are temporarily unavailable. Please try again later.';
     }
   }
   function mount(main){

@@ -36,8 +36,10 @@ assert(index.includes('data-route="editions"'),'Downloads is in the primary navi
 assert(index.includes('>Downloads</button>'),'Downloads has a clear label');
 assert(!index.includes('id="downloadsMenu"')&&!index.includes('id="fb-downloads-menu"'),
   'Duplicate sidebar PDF-download lists were not removed');
-assert(selector.includes('data-es-nav="reading"')&&selector.includes('data-es-nav="reference"'));
+for(const type of ['book','guide','offline','source'])
+  assert(selector.includes('data-es-download-type="'+type+'"'),'Missing choice '+type);
 assert(selector.includes('data-daruri-bundle="html"'));
-assert(selector.includes('data-es-prepare')&&selector.includes('Download PDF'));
+assert(selector.includes('data-es-action="download"')&&selector.includes('Download PDF'));
+assert(selector.includes('Download Study Guide (PDF)'),'Separate learning companion available');
 assert(!selector.includes('gn-es-study-guide'),'Study Guide PDF must not look like selected PDF');
 console.log('PASS: complete HTML-only reader, no missing sources, no duplicate filenames, PDF archive preserved, one download destination');
