@@ -1,0 +1,58 @@
+name: Arabic morphology raw-root diagnostic
+on:
+  push:
+    branches:
+      - experiment/contextual-full-candidate-20261023
+    paths:
+      - '.github/workflows/daruri-morph-root-diagnostics.yml'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.camel_tools
+            ~/.cache/pip
+          key: ${{ runner.os }}-camel-tools-1.6.0-msa-bert-r13-v1
+      - name: Ensure model dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq cmake libboost-all-dev
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch
+          python -m pip install camel-tools==1.6.0
+          camel_data -i morphology-db-msa-r13
+          camel_data -i disambig-bert-unfactored-msa
+      - name: Inspect raw CAMeL roots for classical and scholarly vocabulary
+        run: |
+          python3 - <<'PY'
+          import json
+          from camel_tools.disambig.bert import BERTUnfactoredDisambiguator
+          from camel_tools.utils.charmap import CharMapper
+          model=BERTUnfactoredDisambiguator.pretrained(model_name='msa',top=2,use_gpu=False)
+          sentences=[
+             'أما بعد حمدا لله معلم البيان',
+             'إن المعارف والعلوم ثلاثة أصناف',
+             'وأنت تتبين ذلك من بعض المعاني',
+             'والقياس في الشرع واجب عند بعض العلماء',
+             'يجتهد المجتهد في الأحكام الشرعية',
+             'الشارع والحكم والواجب والقياس والعلم'
+          ]
+          for sentence in sentences:
+              tokens=sentence.split()
+              out=model.disambiguate(tokens)
+              print('SENTENCE',sentence,flush=True)
+              for t,item in zip(tokens,out):
+                  analyses=[]
+                  for a in item.analyses[:2]:
+                      x=a.analysis
+                      analyses.append({k:x.get(k) for k in ('lex','root','pos','source','diac','gloss','prc1','prc2','pattern')})
+                  print('TOKEN',t,json.dumps(analyses,ensure_ascii=False),flush=True)
+          PY
