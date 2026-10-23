@@ -130,11 +130,12 @@
       crumbs.innerHTML=html;
     }
     function renderParts() {
-      var quick=model.roots.length<=6&&model.roots.some(function(n){return n.children.length;});
+      var navigable=model.roots.filter(function(n){return n.children.length;});
+      var quick=navigable.length<=6&&navigable.length>0;
       parts.hidden=!quick||!folder||!!input.value.trim();
       if(parts.hidden){parts.innerHTML='';return;}
       parts.setAttribute('aria-label','Quick part choices');
-      parts.innerHTML=model.roots.map(function(node){
+      parts.innerHTML=navigable.map(function(node){
         var active=chain(folder).some(function(x){return x.uid===node.uid;});
         return '<button type="button" class="gn-picker-part'+(active?' current':'')+
           '" data-picker-path="'+esc(node.uid)+'" aria-pressed="'+active+'">'+
@@ -179,7 +180,7 @@
       var q=normalise(input.value),isSearch=!!q;
       if(q!==lastQuery){shown=INITIAL_LIMIT;lastQuery=q;}
       var all=isSearch?model.flat.filter(function(node){
-        return node.search.includes(q)||normalise(itemPath(node)).includes(q);
+        return node.search.includes(q);
       }):folder?folder.children:model.roots;
       if(isSearch){
         all.sort(function(a,b){
@@ -201,8 +202,7 @@
       // Keep the currently selected section visible when the picker first opens.
     }
     function browse(node) {
-      if(!node)return;
-      folder=node;shown=INITIAL_LIMIT;input.value='';lastQuery='';
+      folder=node||null;shown=INITIAL_LIMIT;input.value='';lastQuery='';
       list.scrollTop=0;render();
     }
     function open() {
