@@ -28,6 +28,8 @@ def main():
     evidence=json.loads(args.evidence.read_text('utf8'))
     assert fixture['authorial_passages']==414 and fixture['authorial_sections']==258
     assert evidence['source_paragraphs']==414
+    assert evidence['vector_math_brackets_drawn']==24
+    assert evidence['vector_math_left']==12 and evidence['vector_math_right']==12
     original={}
     for section in fixture['full_sections']:
         for seg in section['segments']:
