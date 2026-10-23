@@ -1,0 +1,73 @@
+name: Daruri Stage 2 original Arabic glyph/Unicode vector browser QA (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-outline-semantic-20261023]
+    paths:
+      - 'daruri/browser-html-pdf/vector-outline.html'
+      - 'daruri/browser-html-pdf/vector-outline.mjs'
+      - 'daruri/browser-html-pdf/test_vector_outline.cjs'
+      - 'daruri/browser-html-pdf/verify_vector_outline.py'
+      - '.github/workflows/daruri-browser-outline-semantic.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-outline-semantic-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  original-text-not-hidden-duplicate:
+    name: Real browser PDF + native search (${{ matrix.browser }}, ${{ matrix.order }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+        order: [forward, reverse]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile exact real-source 258/414 reference fixture
+        run: |
+          python daruri/browser-html-pdf/build_fixture.py --out daruri/browser-html-pdf/fixture.json
+      - name: Install previously pinned local PDF writer, fontkit and browser
+        run: |
+          npm install --no-save --no-package-lock --prefix daruri/browser-html-pdf
+          cd daruri/browser-html-pdf
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Check new renderer and test parser
+        run: |
+          node --check daruri/browser-html-pdf/vector-outline.mjs
+          node --check daruri/browser-html-pdf/test_vector_outline.cjs
+          python -m py_compile daruri/browser-html-pdf/verify_vector_outline.py
+      - name: Real normal-browser JavaScript uses HTML DOM and creates vector-PDF download
+        env:
+          GNAMMA_VECTOR_BROWSER: ${{ matrix.browser }}
+          GNAMMA_VECTOR_ORDER: ${{ matrix.order }}
+          GNAMMA_VECTOR_OUTPUT: /tmp/vector-${{ matrix.browser }}-${{ matrix.order }}
+        run: node daruri/browser-html-pdf/test_vector_outline.cjs
+      - name: Verify original Arabic phrase search from PDF-native engine
+        run: |
+          python -m pip install -q 'PyMuPDF==1.26.7'
+          python daruri/browser-html-pdf/verify_vector_outline.py \
+            --pdf /tmp/vector-${{ matrix.browser }}-${{ matrix.order }}/daruri-vector-outline-${{ matrix.order }}-NONRELEASE.pdf \
+            --fixture daruri/browser-html-pdf/fixture.json \
+            --evidence /tmp/vector-${{ matrix.browser }}-${{ matrix.order }}/dom-evidence.json \
+            --report /tmp/vector-${{ matrix.browser }}-${{ matrix.order }}/native-report.json
+      - name: Upload diagnostic (nonpublication) PDF and query results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-stage2-original-vector-${{ matrix.browser }}-${{ matrix.order }}-NONRELEASE
+          path: /tmp/vector-${{ matrix.browser }}-${{ matrix.order }}/
+          if-no-files-found: warn
+          retention-days: 14
