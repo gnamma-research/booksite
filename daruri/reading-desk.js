@@ -178,7 +178,8 @@ function create(ctx){
   if(target&&parsed){for(const key of ['kind','section','segment','lang','offset'])if(key in parsed)target[key]=parsed[key];}
   const title=typeof r.title==='string'?r.title:r.title==null?'':JSON.stringify(r.title);
   const body=typeof r.body==='string'?r.body:r.body==null?'':JSON.stringify(r.body);
-  return {...r,id:clamp(r.id,100)||uuid(),kind,target,title,body,origins:normalizeOrigins(r.origins),
+  return {...r,id:clamp(r.id,100)||uuid(),kind,target,title,body,
+    ...(Array.isArray(r.origins)?{origins:normalizeOrigins(r.origins)}:{}),
    ...(r.body!=null&&typeof r.body!=='string'?{archivedBodyValue:r.body}:{}),
    ...(r.title!=null&&typeof r.title!=='string'?{archivedTitleValue:r.title}:{}),
    ...(rawTarget&&target&&JSON.stringify(rawTarget)!==JSON.stringify(target)?{sourceTargetOriginal:archiveTarget(rawTarget)}:{}),
@@ -820,7 +821,7 @@ function create(ctx){
     if(note&&!dialog.dataset.rdNoteId){dialog.dataset.rdNoteId=note;const n=ctx.notes.get(note);if(n)dialog.append(actions({kind:'footnote',section:String(n.n),noteId:note},true));}
     const eyebrow=$('#detailEyebrow')?.textContent||'';
     const term=dialog.querySelector('#detailTitle')?.textContent?.trim();
-    if(eyebrow.includes('DICTIONARY ENTRY')&&term&&!dialog.dataset.rdTerm){dialog.dataset.rdTerm=term;dialog.append(actions({kind:'dictionary',term},true));}
+    if((eyebrow.includes('DICTIONARY ENTRY')||eyebrow.includes('LEXICAL & TECHNICAL REFERENCE'))&&term&&!dialog.dataset.rdTerm){dialog.dataset.rdTerm=term;dialog.append(actions({kind:'dictionary',term},true));}
    }else if(dialog){delete dialog.dataset.rdNoteId;delete dialog.dataset.rdTerm;}
    $('#gn-scholar-layer')?.querySelectorAll('[data-note-id]').forEach(el=>{
     if(el.dataset.rdDecorated)return;const note=ctx.notes.get(el.dataset.noteId);if(!note)return;
@@ -1712,6 +1713,8 @@ function create(ctx){
      return true;
     }
     if(row.target?.kind==='dictionary'&&!row.target.historical&&state.route==='reader'){
+     // A saved term opened from the dock is not a new inline-word click.
+     window.__termClickOrigin=null;
      ctx.showTermDetail(row.target.term);decorate();return true;
     }
     openSource(row);return true;
