@@ -154,7 +154,7 @@
       ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri8-structure-20261020'],
       ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=20261021-section1-qparallels1'],
       ['daruri/gnamma-search.js', 'gnamma-search.js?v=20261023-all-popup-scroll1'],
-      ['daruri/gnamma-morphology.js', 'gnamma-morphology.js?v=20261022-morphperf1'],
+      ['daruri/gnamma-morphology.js', 'gnamma-morphology.js?v=20261023-mobile-wordforms-focus1'],
       ['daruri/gnamma-word-context.js', 'gnamma-word-context.js?v=20261023-all-popup-scroll1'],
       ['daruri/gnamma-word-context.css', 'gnamma-word-context.css?v=20261022-morphperf1'],
       ['daruri/morph-lexicon.json', 'morph-lexicon.json'],
