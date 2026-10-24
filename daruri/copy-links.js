@@ -230,7 +230,12 @@ function buildLink(){
    urlFor(section,idFor(section,config.start));
 }
 function openSheet(kind,target=null){
- closeMenu();config=defaults(kind);if(target){targeted=target;config.section=target.section;config.start=target.index;config.end=target.index;config.scope=kind==='link'?'paragraph':config.scope;}
+ const openedFromMenu=!!(menu&&!menu.hidden);
+ closeMenu();config=defaults(kind);
+ // An open, unselected Copy menu follows the visible paragraph. Preserve the
+ // separate one-tap quick Copy behaviour, which copies the whole section.
+ if(openedFromMenu&&!selected&&!target&&kind!=='selected')config.scope='paragraph';
+ if(target){targeted=target;config.section=target.section;config.start=target.index;config.end=target.index;config.scope=kind==='link'?'paragraph':config.scope;}
  sheet=document.createElement('div');sheet.className='gn-copy-backdrop';sheet.innerHTML='<div class="gn-copy-sheet" role="dialog" aria-modal="true" aria-label="Copy options"><div class="gn-copy-sheet-header"><strong class="gn-copy-sheet-title"></strong><button type="button" class="gn-copy-dismiss" aria-label="Close copy options" data-gn-copy-close>×</button></div><div class="gn-copy-sheet-body"></div><div class="gn-copy-sheet-footer"><button type="button" class="gn-copy-cancel" data-gn-copy-close>Cancel</button><button type="button" id="gn-copy-submit">Copy</button></div></div>';
  document.body.append(sheet);document.body.classList.add('gn-copy-sheet-open');
  sheet.addEventListener('click',e=>{if(e.target===sheet||e.target.closest('[data-gn-copy-close]')){closeSheet();return;}if(e.target.id==='gn-copy-submit')doCopy();});
