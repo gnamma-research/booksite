@@ -44,7 +44,7 @@ def make_html(edition,main,parts,styles,title):
     # authorial data and the rest of the approved scholarly CSS.
     # Normal bold/italic faces are synthesized; visual editorial signoff needed.
     if os.environ.get('GNAMMA_THREE_FONT_PROFILE')=='1':
-        css=re.sub(r'@font-face\\s*\\{[^{}]*\\}', '', css, flags=re.I)
+        css=re.sub(r'@font-face\s*\{[^{}]*\}', '', css, flags=re.I)
         css+="""
         @font-face{font-family:"Noto Sans";font-style:normal;font-weight:400;
           src:url("/daruri/build/fonts/NotoSans-Regular.ttf")}
