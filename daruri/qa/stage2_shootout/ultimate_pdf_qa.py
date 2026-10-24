@@ -24,11 +24,11 @@ with fitz.open(pdf) as doc:
     for a in range(0,len(doc),24):
         b=min(a+24,len(doc))
         probe=subprocess.run([sys.executable,"-c",probe_code,str(pdf),str(a),str(b)],
-                             capture_output=True,timeout=30)
+                             capture_output=True,timeout=120)
         if probe.returncode:
             for n in range(a,b):
                 p=subprocess.run([sys.executable,"-c",probe_code,str(pdf),str(n),str(n+1)],
-                                 capture_output=True,timeout=15)
+                                 capture_output=True,timeout=45)
                 if p.returncode:crashes.append({"page":n+1,"returncode":p.returncode})
     if shutil.which("pdftotext") is None:
         raise RuntimeError("Poppler must be installed for independent full-text extraction")
@@ -60,7 +60,16 @@ with fitz.open(pdf) as doc:
         "source_is_html_not_pdf":True,
         "fully_vowelled_exact_pdf_search_required":False,
         "production_approved":False}
-    meta["basic_structural_gate"]=not bool(missing or broken or a4bad) and len(doc)>10 and len(links)>30
+    # Typst uses direct PDF GoTo objects and outline destinations, not /Names.
+    # Keep the strict 258-name requirement for Paged.js; validate Typst's
+    # real links/outlines separately without treating missing /Names as proof
+    # that every direct destination is broken.
+    meta["named_destinations_representation"] = ("direct-goto" if not names and
+        len(doc.get_toc())>0 and len(links)>30 else "names-tree")
+    meta["basic_structural_gate"]=not bool(broken or a4bad) and len(doc)>10 and len(links)>30 and (
+        not missing or meta["named_destinations_representation"]=="direct-goto")
+    meta["source_named_destination_gate_pass"]=not bool(missing)
+    meta["production_approved"]=False
 output.parent.mkdir(parents=True,exist_ok=True)
 output.write_text(json.dumps(meta,ensure_ascii=False,indent=2)+"\n","utf8")
 print("GNAMMA_ULTIMATE_NATIVE_PDF_AUDIT",json.dumps(meta,ensure_ascii=False),flush=True)

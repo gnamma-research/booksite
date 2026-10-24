@@ -30,6 +30,15 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   if(used.has(safe)){let i=2;while(used.has(safe+'-'+i))i++;safe+='-'+i;}
   labels.set(id,safe);used.add(safe);
  }
+ // Editorial topics are used ONLY for PDF sidebar bookmark labels. They
+ // are not inserted into the author's printed Arabic/English source text.
+ const sectionTopics=new Map();
+ for(const el of dom.querySelectorAll('section.editorial-toc a[href^="#section-"]')){
+   const match=/^#section-([1-9][0-9]*)$/.exec(el.getAttribute('href')||'');
+   if(match && Number(match[1])<=258)
+     sectionTopics.set(Number(match[1]),(el.textContent||'').trim());
+ }
+ if(sectionTopics.size!==258)throw Error('Missing original 258 editorial section labels');
  const located=new Set();
  const anchor=el=>{
   const id=el?.getAttribute?.('id');
@@ -72,11 +81,14 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   return prefix+body;
  }
  const lines=[
-   '#set page(paper: "a4", margin: (top: 17mm,bottom:18mm,left:17mm,right:17mm))\n',
+   '#set page(paper: "a4", margin: (top: 17mm,bottom:18mm,left:17mm,right:17mm), numbering: "1", number-align: center + bottom)\n',
+   '#set document(title: "Al-Ḍarūrī fī Uṣūl al-Fiqh — Scholarly Edition", author: "Abū al-Walīd Ibn Rushd")\n',
    '#set text(font: "Noto Serif",lang:"en",size:9pt)\n',
    '#set par(leading: 0.7em, justify:false)\n',
-   '= Complete source-derived Daruri '+textEscape(record.edition)+' — nonrelease benchmark\n',
-   '#outline()\n#pagebreak()\n'
+   // The original HTML already supplies two authoritative contents lists.
+   // No synthetic Typst #outline() in the *printed* book: keep PDF sidebar
+   // bookmarks without adding 20+ redundant front-matter pages.
+
  ];
  const stats={
   source_sha256:record.source_sha256,source_html_sha256:record.html_sha256,
@@ -119,6 +131,40 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   if(el.nodeType!==Node.ELEMENT_NODE)return '';
   const tag=el.tagName.toLowerCase();
   if(nonContent.has(tag))return '';
+  if(el.matches('section.cover')){
+    const textOf=selector=>textEscape((el.querySelector(selector)?.textContent||'').trim());
+    const author=el.querySelector('p.author');
+    const authorEn=textEscape(author ? [...author.childNodes].filter(n=>n.nodeType===Node.TEXT_NODE).map(n=>n.nodeValue).join(' ').trim() : '');
+    const coverAr=el.querySelector('p.author span[lang="ar"]');
+    const authorAr=textEscape(coverAr?.textContent||'');
+    const scopeLines=[...(el.querySelector('p.scope')?.childNodes||[])]
+      .filter(n=>n.nodeType===Node.TEXT_NODE)
+      .map(n=>textEscape(n.nodeValue?.trim()||''))
+      .filter(Boolean);
+    return [
+      '#align(center)[\n',
+      '#v(36mm)\n',
+      '#text(size:10pt,weight:"bold",tracking:1.3pt)['+textOf('.brand')+']\n',
+      '#v(12mm)\n',
+      '#text(font:"Noto Naskh Arabic",lang:"ar",dir:rtl,size:25pt)['+textOf('.arabic-title')+']\n',
+      '#v(8mm)\n',
+      '#{ show heading: none; heading(level:1,outlined:true,bookmarked:true)['+textOf('h1')+'] }\n',
+      '#text(size:22pt,weight:"bold")['+textOf('h1')+']\n',
+      '#v(7mm)\n',
+      '#text(size:12pt)['+authorEn+']\n',
+      '#v(3mm)\n',
+      '#text(font:"Noto Naskh Arabic",lang:"ar",dir:rtl,size:13pt)['+authorAr+']\n',
+      '#v(20mm)\n',
+      '#text(size:12pt,weight:"bold")['+textOf('.edition')+']\n',
+      '#v(5mm)\n',
+      '#text(size:9pt)['+(scopeLines[0]||'')+']\n',
+      '#v(3mm)\n',
+      '#text(size:9pt)['+(scopeLines[1]||'')+']\n',
+      '#v(24mm)\n',
+      '#text(size:9pt)['+textOf('.date')+']\n',
+      ']\n#pagebreak()\n'
+    ].join('');
+  }
   if(tag==='a')return rich(el)+'\n';
   if(tag==='table'&&el.classList.contains('parallel-text'))
      return bodyGrid(el,false);
@@ -127,6 +173,20 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   if(tag==='h1'||tag==='h2'||tag==='h3'||tag==='h4'||tag==='h5'||tag==='h6'){
     const level=Math.min(Number(tag[1]),5);
     const txt=childRich(el);
+    // All 258 authorial sections must appear in the PDF sidebar outline.
+    // Preserve original heading level for other editorial apparatus.
+    const sectionId=el.getAttribute('id')||'';
+    const sectionHeading=/^section-([1-9][0-9]*)$/.exec(sectionId);
+    // The original section anchor is usually on the section wrapper rather
+    // than the heading node; find the nearest owning source section.
+    const owner=el.closest('[id^="section-"]');
+    const ownerId=owner?.id||'';
+    const ownerSection=/^section-([1-9][0-9]*)$/.exec(ownerId);
+    if((sectionHeading && Number(sectionHeading[1])<=258) ||
+       (ownerSection && Number(ownerSection[1])<=258 &&
+        (tag==='h2'||tag==='h3'))){
+      return '#heading(level:2,outlined:true)['+txt+']'+anchor(el)+'\n';
+    }
     return '#heading(level:'+level+')['+txt+']'+anchor(el)+'\n';
   }
   if(['p','li','dt','dd','figcaption','blockquote'].includes(tag)){
@@ -136,8 +196,32 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
     return '#text(font:"'+font+'",lang:"'+lang+'",dir:'+(lang==='ar'?'rtl':'ltr')+
       ',size:'+(lang==='ar'?'10.5pt':'8.5pt')+')['+txt+']'+anchor(el)+'\n\n';
   }
+  // One outline entry for each canonical authorial section wrapper.
+  const sourceSection=/^section-([1-9][0-9]*)$/.exec(el.id||'');
+  if(sourceSection && Number(sourceSection[1])<=258){
+    const children=[...el.childNodes].map(block).join('');
+    return anchor(el)+'#heading(level:2,outlined:true)[Section '+sourceSection[1]+']\n'+children;
+  }
+  // Original section IDs are on nested headings or metadata, while the
+  // enclosing source section carries data-section-id. Emit one outline
+  // heading for each original numbered source section.
+  const sourceNumber=el.matches('section.text-section') ? el.getAttribute('data-section-id') : null;
+  if(sourceNumber && /^(?:[1-9][0-9]*)$/.test(sourceNumber) && Number(sourceNumber)<=258){
+    const number=Number(sourceNumber);
+    const topic=(sectionTopics.get(number)||('Section '+sourceNumber))
+      .replace(/^\s*[0-9]+\.\s*/,'');
+    const label=textEscape('§'+sourceNumber+' · '+topic);
+    const children=[...el.childNodes].map(block).join('');
+    // Scoped Typst heading display suppression. The actual heading remains
+    // in Typst's semantic/PDF outline but contributes NO printed editorial
+    // prose, blank space or changed canonical book text.
+    const pdfBookmark='#{ show heading: none; heading(level: 2, outlined: true, bookmarked: true)['+
+      label+'] }\n';
+    return anchor(el)+pdfBookmark+children;
+  }
   const begin=anchor(el);
-  const breakBefore=(el.matches('section.page-start,section.cover,section.contents')||
+  const breakBefore=el.matches('main.main-text')?'#pagebreak()\n':
+    (el.matches('section.page-start,section.cover,section.contents')||
       el.id==='concordance'||el.id==='lexicon')?'#pagebreak(weak:true)\n':'';
   const body=[...el.childNodes].map(block).join('');
   return breakBefore+begin+body;
