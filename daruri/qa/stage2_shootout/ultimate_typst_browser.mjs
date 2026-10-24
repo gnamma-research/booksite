@@ -41,9 +41,9 @@ async function run(){
   const began=performance.now();
   const converted=makeTypstFromCanonicalHtml(html,meta);
   const conversion=performance.now()-began;
-  if(converted.metrics.emitted_target_labels<660||
-     converted.metrics.generated_source_links<3000||
-     converted.metrics.typst_lexicon_grid_rows<500||
+  if(converted.metrics.emitted_target_labels!==2856||
+     converted.metrics.generated_source_links<meta.all_internal_reference_links+meta.all_external_links||
+     converted.metrics.typst_lexicon_grid_rows!==283||
      converted.metrics.typst_bilingual_grid_rows<414)
    throw Error('Conversion unexpectedly dropped dictionary text, original citations or source paragraphs: '+JSON.stringify(converted.metrics));
   set('initializing','Loading local Typst WASM and manuscript fonts...');
