@@ -101,7 +101,7 @@ async function go(){
  page=await ctx.newPage();
  page.on('pageerror',e=>errors.push(String(e)));
  report.emulated_static_pages_hosting=GHP_STATIC;
- report.cross_origin_isolated=await page.evaluate(()=>crossOriginIsolated);
+ // Cross-origin isolation is checked in the actual navigated publication document.
  page.on('request',r=>captured.push({url:r.url(),method:r.method()}));
  page.on('response',async r=>{
    const u=new URL(r.url());
@@ -117,6 +117,7 @@ async function go(){
   const t=performance.now();
   if(ENGINE==='paged'){
    await page.goto(origin+route,{waitUntil:'domcontentloaded'});
+   report.cross_origin_isolated=await page.evaluate(()=>crossOriginIsolated);
    await page.waitForFunction(()=>window.__gnammaUltimate?.status==='done'||
           window.__gnammaUltimate?.error,null,{timeout:330000});
    const m=await page.evaluate(()=>{
