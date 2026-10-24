@@ -16,7 +16,8 @@ const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const html=ORIGIN+'/daruri/verified-reference-qa.html';
 let server,browser,context;
 async function openReferencePage(viewport){
-  const page=await context.newPage({viewport});
+  const page=await context.newPage();
+  await page.setViewportSize(viewport);
   await page.goto(html,{waitUntil:'domcontentloaded'});
   const tab=page.locator('[data-ep-tab="reference"]');
   await tab.waitFor({timeout:18000});
