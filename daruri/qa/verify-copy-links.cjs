@@ -5,12 +5,13 @@ const base=path.resolve(__dirname,'..');
 const read=p=>fs.readFileSync(path.join(base,p),'utf8');
 const html=read('index.html'),copy=read('copy-links.js'),css=read('copy-links.css'),sw=read('sw.js'),bundle=read('download-bundle.js');
 assert(html.includes('window.GnammaCopyContext={book:BOOK,state,sections,notes:rdNoteCatalog,rd}'),'Copy context must use authoritative Reader data and Reading Desk');
-assert(html.includes('copy-links.css?v=20261024-copylinks1')&&html.includes('copy-links.js?v=20261024-copylinks1'),'Current Reader must load both Copy assets');
+assert(html.includes('copy-links.css?v=20261024-headerfix1')&&html.includes('copy-links.js?v=20261024-copylinks1'),'Current Reader must load both Copy assets');
 for(const filename of ['copy-links.js','copy-links.css']){
- assert(sw.includes(filename+'?v=20261024-copylinks1'),'Offline cache omits '+filename);
+ const revision=filename.endsWith('.css')?'20261024-headerfix1':'20261024-copylinks1';
+ assert(sw.includes(filename+'?v='+revision),'Offline cache omits '+filename);
  assert(bundle.includes("'daruri/"+filename+"'"),'Complete download omits '+filename);
 }
-assert(html.includes('download-bundle.js?v=20261024-copylinks1')&&sw.includes('download-bundle.js?v=20261024-copylinks1'),'Offline package loader must be versioned');
+assert(html.includes('download-bundle.js?v=20261024-headerfix1')&&sw.includes('download-bundle.js?v=20261024-headerfix1'),'Offline package loader must be versioned');
 assert(copy.includes('C.rd?.records?.()'),'Personal annotations must come from Reading Desk only when requested');
 assert(copy.includes('config.personal'),'Personal notes opt-in missing');
 assert(copy.includes('selectionSnapshot()'),'Selected words must require a real browser selection');
