@@ -70,9 +70,29 @@ def run_case(browser, engine, width):
     page.locator('.gn-copy-menu').wait_for(state='visible')
     menu=page.locator('.gn-copy-menu').bounding_box()
     assert menu['x']>=-2 and menu['x']+menu['width']<=width+2, ('Menu out of viewport',width,menu)
-    page.locator('[data-gn-menu="text"]').click()
-    page.locator('.gn-copy-sheet').wait_for(state='visible')
-    page.locator('[data-gn-copy-close]').first.click()
+    # Each menu choice has its own silhouette, not the old ▧ / ▤ / ▥ glyphs.
+    icons={}
+    for kind in ('text','notes','research'):
+        item=page.locator('[data-gn-menu="'+kind+'"]')
+        glyph=item.locator('[data-gn-icon="'+kind+'"]')
+        assert glyph.count()==1 and glyph.get_attribute('aria-hidden')=='true', (engine,width,kind,'accessible label missing')
+        size=glyph.bounding_box()
+        assert size and abs(size['width']-22)<=1 and abs(size['height']-22)<=1, (engine,width,kind,size)
+        icons[kind]=glyph.inner_html()
+    assert len(set(icons.values()))==3, ('Icons are duplicates',icons)
+    assert page.locator('[data-gn-menu="text"] .gn-copy-type-mark').inner_text()=='Aa'
+    assert page.locator('[data-gn-menu="notes"] .gn-copy-symbol path').count()>=3
+    assert page.locator('[data-gn-menu="research"] .gn-copy-symbol rect').count()==1
+    assert not page.locator('[data-gn-menu="selected"]').count(), 'Selected text shown with no selection'
+    if width in (390,1280) and engine=='chromium':
+        page.screenshot(path=str(Path('/tmp')/f'daruri-copy-icons-{engine}-{width}.png'))
+    for kind in ('text','notes','research'):
+        if kind!='text':
+            page.locator('#readerCopyOptions').click()
+            page.locator('.gn-copy-menu').wait_for(state='visible')
+        page.locator('[data-gn-menu="'+kind+'"]').click()
+        page.locator('.gn-copy-sheet').wait_for(state='visible')
+        page.locator('[data-gn-copy-close]').first.click()
     # At desktop widths the Contents pane starts open; the first click
     # therefore CLOSES it. On phones the first click OPENS it.
     # Test the state transition, not a hard-coded initial open state.
