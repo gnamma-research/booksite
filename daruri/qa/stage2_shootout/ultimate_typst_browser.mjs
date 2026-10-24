@@ -83,8 +83,20 @@ async function run(){
    browser_heap_bytes:performance.memory?.usedJSHeapSize??null,
    publication_approved:false
   });
- }catch(e){set('failed',String(e?.stack||e),{error:String(e)});
-   console.error('GNAMMA_ULTIMATE_TYPST_ERROR',e);
+ }catch(e){
+   // Preserve real Typst/worker diagnostic details; generic "Worker command
+   // failed: compile" is insufficient to distinguish source errors from
+   // WebKit worker/memory failures. Never claim success after this branch.
+   const detail={name:String(e?.name||'Error'),
+     error:String(e?.message||e),
+     cause:e?.cause==null?null:String(e.cause),
+     diagnostics:(e?.diagnostics||[]).map(d=>({
+       severity:d?.severity, message:String(d?.message||d),
+       path:d?.path,line:d?.line,column:d?.column,hints:d?.hints
+     })),
+     stack:String(e?.stack||'')};
+   set('failed',JSON.stringify(detail),detail);
+   console.error('GNAMMA_ULTIMATE_TYPST_ERROR',JSON.stringify(detail));
  }finally{await compiler?.dispose().catch(()=>{});button.disabled=false;}
 }
 button.addEventListener('click',()=>void run());
