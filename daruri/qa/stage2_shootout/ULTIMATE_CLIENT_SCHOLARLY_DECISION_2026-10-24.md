@@ -42,6 +42,21 @@ An independent corrected-PDF content audit using source HTML SHA `e1be6f066965e7
 
 Study has real **page-bottom footnotes**; Paged physically printed 118/118 note bodies, with 2/176 source calls to repeated `QUR-R064-Q005` on the wrong page. Scholarly edition instead uses **section-local apparatus**, not page-bottom footnote floats. The Scholarly paginator's `0 page-bottom footnotes / 108 quran call nodes` is thus **expected** and must NOT be cited as 108 missing scholarly notes. The 625 source apparatus note bodies are in the HTML and content sample probes show them in the PDF. Only 50 of 625 original note IDs are named PDF link destinations, because most source scholarly note IDs were never referenced by a hyperlink in the original publication HTML; new feature "link to every note" requires new links rather than pretending all 625 are already clickable.
 
+### Independent side-by-side note fidelity from the actual PDF bytes
+
+An additional *Poppler-based* audit loaded the SHA-identical canonical Scholarly HTML `e1be6f066965e7421f1d88a16480b7a9b2efac7eb34750f0b1918bcb17cd95c4` and both actual browser PDFs. It stripped punctuation, spaces and accents from ASCII-Latin source snippets and checked those *contiguous excerpts*, **not** literal exact full body/Arabic fidelity.
+
+| Source-content probe | Paged.js corrected PDF | Typst WASM PDF |
+| --- | ---: | ---: |
+| Original English source paragraphs, first 25 ASCII-Latin characters | **416/416** | 415/416 |
+| Historical article English paragraphs, first 20 characters | **283/283** | 283/283 |
+| Scholarly note bodies long enough for 15 chars (8 shorter) | **617/617** | 616/617 |
+| Scholarly note bodies long enough for 50 chars (35 shorter) | **590/590** | 582/590 |
+| Dictionary-source note snippets | **13/13** | 13/13 |
+| Unique *HTML-linked* PDF destinations | **660/660 named in PDF** | 0 names-tree IDs, but 4937 direct PDF link objects/684 outline items |
+
+The Typst misses include note `N074` at 15 characters and seven additional (largely bidi/Arabic-interleaved) note openings at 50 characters. This **does not prove missing editorial content** without word-level/source-location inspection. Typst's 0 named targets are a destination *representation* difference: direct GoTo links and section bookmarks may still be valid. The PDF's source-derived links were preserved, but original `#section-N` names are not exposed via PDF /Names. The original Scholarly apparatus deliberately uses local section notes rather than page-bottom footnotes.
+
 ### Proportional browser memory and bandwidth (desktop Linux CI)
 
 True Scholarly source layout via Paged.js in normal Chromium: **10,309ms pagination; 12,271ms browser page-load→QA PDF output; 13,504ms entire benchmark runner; 258 pages; 2,973,917 final bytes; 0 nonlocal/upload/PDF network requests.** Measured **802,327 KiB (783.5 MiB) peak Chromium process *proportional set size*** across up to 6 Chromium processes (via Linux /proc/PID/smaps_rollup); naive sum RSS 1,063,692 KiB (~1039 MiB) **double counts shared memory**. V8 page JS heap at end ~20.5MB is **not** total browser peak memory. Measurements desktop CI, **not an iPhone/iPad/Android measurement**. Physical mobile full Scholarly gate remains OPEN.
