@@ -236,7 +236,7 @@ def update_html(source, metadata, revision, assets=RELEASE_ASSETS):
                 opening = attribute(source[node.start:node.open_end], "href",
                                     versioned_url(node.attrs["href"], revision))
                 body = source[node.open_end:node.close_start]
-                body = re.sub(r"\\(\\d+ pages\\)", f"({info['pages']} pages)", body)
+                body = re.sub(r"\(\d+ pages\)", f"({info['pages']} pages)", body)
                 patches.append((node.start, node.end,
                                 opening + body + source[node.close_start:node.end]))
                 modern_counts[filename] += 1
