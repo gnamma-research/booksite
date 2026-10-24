@@ -149,7 +149,7 @@ async function advanced(browser,engine,origin){
    await r.page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded'});
    await r.page.locator('#readerDock:not([hidden])').waitFor();
    const result=await new AxeBuilder({page:r.page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();
-   a11y.push({engine,viewport:390,violations:result.violations.map(v=>({id:v.id,impact:v.impact,help:v.help,count:v.nodes.length,targets:v.nodes.slice(0,3).map(n=>n.target)}))});
+   a11y.push({engine,viewport:390,violations:result.violations.map(v=>({id:v.id,impact:v.impact,help:v.help,count:v.nodes.length,targets:v.nodes.slice(0,7).map(n=>({target:n.target,failure:n.failureSummary?.slice(0,480)}))}))});
    console.log('AXE '+engine+' '+JSON.stringify(a11y.at(-1)).slice(0,7000));
   });
  }finally{if(r?.ctx)await r.ctx.close();}
