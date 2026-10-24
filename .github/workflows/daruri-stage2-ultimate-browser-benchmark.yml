@@ -1,0 +1,99 @@
+name: Daruri ULTIMATE full HTML Scholarly, English, Arabic - local browser PDF and resources (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-full-scholarly-benchmark-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/ultimate_*'
+      - '.github/workflows/daruri-stage2-ultimate-browser-benchmark.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-ultimate-real-browser-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  paged-full-book:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      matrix:
+        edition: [english, arabic-vowelled, scholarly]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Generate immutable original book HTML, including source references, notes and full 157-article dictionary
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+            daruri/qa/stage2_shootout/runtime_ultimate ${{ matrix.edition }}
+      - name: Install pinned Paged.js browser engine without publishing any PDFs
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+      - name: End-to-end real full-book original HTML to PDF in browser + bandwidth and memory probes
+        env:
+          BENCH_ENGINE: paged
+          BENCH_EDITION: ${{ matrix.edition }}
+          BENCH_BROWSER: chromium
+          BENCH_OUT: /tmp/ultimate-paged-${{ matrix.edition }}
+        run: |
+          node --check daruri/qa/stage2_shootout/ultimate_browser.cjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/ultimate_browser.cjs
+      - name: Native PDF structure and all original 258 anchors
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils qpdf
+          pdf=/tmp/ultimate-paged-${{ matrix.edition }}/daruri-${{ matrix.edition }}-paged-PRINT-QAONLY.pdf
+          qpdf --check "$pdf"
+          python daruri/qa/stage2_shootout/ultimate_pdf_qa.py \
+            "$pdf" daruri/qa/stage2_shootout/runtime_ultimate/${{ matrix.edition }}.source.json \
+            /tmp/ultimate-paged-${{ matrix.edition }}/native-qa.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-ultimate-html-paged-${{ matrix.edition }}-NONRELEASE
+          path: /tmp/ultimate-paged-${{ matrix.edition }}
+          if-no-files-found: warn
+          retention-days: 14
+  vivliostyle-reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 48
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Generate whole Scholarly source with 625 notes, 157 full articles
+        run: |
+          python -m pip install -q beautifulsoup4
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+            daruri/qa/stage2_shootout/runtime_ultimate scholarly
+      - name: Install official self-hosted Vivliostyle and Chromium
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+          mkdir -p runtime_ultimate/viewer
+          cp -a node_modules/@vivliostyle/viewer/lib/. runtime_ultimate/viewer/
+      - name: Paginate actual entire scholarly HTML in the normal browser, no PDF server
+        env:
+          BENCH_ENGINE: vivliostyle
+          BENCH_EDITION: scholarly
+          BENCH_BROWSER: chromium
+          BENCH_OUT: /tmp/ultimate-vivliostyle-scholarly
+        run: |
+          node --check daruri/qa/stage2_shootout/ultimate_browser.cjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/ultimate_browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-ultimate-vivliostyle-scholarly-NONRELEASE
+          path: /tmp/ultimate-vivliostyle-scholarly
+          if-no-files-found: warn
+          retention-days: 14
