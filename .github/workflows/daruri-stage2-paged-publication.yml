@@ -1,0 +1,74 @@
+name: Daruri Paged.js browser-generated complete Study publication + 258 links (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-paged-study-publication-20261024]
+    paths:
+      - '.github/workflows/daruri-stage2-paged-publication.yml'
+      - 'daruri/qa/stage2_shootout/study_source_fixture.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-paged-actual-publication-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser-real-full-study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Write complete actual Study HTML, note declarations and source SHA
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/study_source_fixture.py \
+            daruri/qa/stage2_shootout/runtime_study
+      - name: Install Paged.js and normal Chromium in CI
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+      - name: Paginate ALL original bilingual source and all genuine Study notes in browser
+        env:
+          STAGE2_HTML_ENGINE: paged
+          STAGE2_HTML_SCOPE: publication
+          STAGE2_BROWSER: chromium
+          STAGE2_OUTPUT: /tmp/daruri-paged-publication-study
+        run: |
+          /usr/bin/time -v node daruri/qa/stage2_shootout/html_engines_browser.cjs
+      - name: Structural PDF text, note and original navigation audit of CI-only user-print output
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils qpdf
+          pdf=/tmp/daruri-paged-publication-study/paged-study-publication-QAONLY.pdf
+          qpdf --check "$pdf"
+          pdfinfo "$pdf" | grep -E 'Pages:|Page size:|File size:'
+          python - "$pdf" <<'PY'
+          import fitz,sys,json
+          p=sys.argv[1]
+          doc=fitz.open(p)
+          links=[z for page in doc for z in page.get_links()]
+          dests=doc.resolve_names()
+          kinds={}
+          for link in links:kinds[str(link["kind"])]=kinds.get(str(link["kind"]),0)+1
+          section_links=[link for link in links if any(
+            f"section-{n}" in str(link.get("nameddest") or link.get("uri") or "")
+            for n in range(1,259))]
+          print('PAGED_PUBLICATION_STUDY_QA',json.dumps({
+            'pages':len(doc),'link_count':len(links),'link_kinds':kinds,
+            'source_section_named_destinations':len([
+              n for n in range(1,259) if f"section-{n}" in dests]),
+            'section_toc_links':len(section_links),'pdf_bookmarks':len(doc.get_toc())
+          }))
+          assert len(doc)>=60 and len(links)>=150
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-paged-full-actual-publication-NONRELEASE
+          path: /tmp/daruri-paged-publication-study
+          if-no-files-found: warn
+          retention-days: 14
