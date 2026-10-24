@@ -8,7 +8,7 @@ const fs=require('node:fs'),path=require('node:path'),zlib=require('node:zlib');
 const here=__dirname,root=path.resolve(here,'../../..');
 const fn=[
  {type:'original-complete-scholarly-html',path:path.join(here,'runtime_ultimate/scholarly.html')},
- {type:'browser-pagedjs',path:require.resolve('pagedjs/dist/paged.polyfill.js',{paths:[here]})}
+ {type:'browser-pagedjs',path:path.join(here,'node_modules/pagedjs/dist/paged.polyfill.js')}
 ];
 for(const file of fs.readdirSync(path.join(root,'daruri/build/fonts')))
  if(file.endsWith('.ttf'))fn.push({type:'original-font',path:path.join(root,'daruri/build/fonts',file)});
