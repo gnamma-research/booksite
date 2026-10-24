@@ -34,34 +34,42 @@ let child,browser,context;
   browser=await (ENGINE==='webkit'?webkit:chromium).launch({headless:true});
   context=await browser.newContext({acceptDownloads:true,serviceWorkers:'block'});
   const page=await context.newPage();
-  await page.goto(ORIGIN+'/daruri/pdf-editions-manifest.json',
+  // Use a real visible button in a normal HTML document; Chromium/WebKit
+  // render raw JSON with an invisible body, so Playwright could not click
+  // a dynamically added anchor in the earlier harness.
+  await page.goto(ORIGIN+'/daruri/qa/stage2_shootout/verified-pdf-download.html',
                   {waitUntil:'domcontentloaded'});
-  const prepared=await page.evaluate(async()=>{
-   const m=await (await fetch('/daruri/pdf-editions-manifest.json')).json();
-   const expected=m.files['daruri.pdf'].sha256;
-   const response=await fetch('/daruri/daruri.pdf',{credentials:'same-origin'});
-   if(!response.ok)throw Error('Failed to fetch canonical PDF '+response.status);
-   const data=await response.arrayBuffer();
-   const hex=[...new Uint8Array(await crypto.subtle.digest('SHA-256',data))]
-      .map(x=>x.toString(16).padStart(2,'0')).join('');
-   if(hex!==expected)throw Error('Fail closed: approved PDF digest mismatch');
-   const a=document.createElement('a');
-   a.download='daruri-approved-byte-identical.pdf';
-   a.id='download-verified-approved';
-   a.href=URL.createObjectURL(new Blob([data],{type:'application/pdf'}));
-   document.body.append(a);
-   return {sha256:hex,bytes:data.byteLength,source:'same-origin static signed PDF',
-     pdf_generated_in_browser:false,published_sha256:expected};
-  });
-  const got=page.waitForEvent('download',{timeout:60000});
+  const downloadPromise=page.waitForEvent('download',{timeout:60000});
   await page.locator('#download-verified-approved').click();
-  const down=await got;
+  const down=await downloadPromise;
+  const prepared=await page.evaluate(()=>window.__gnammaVerifiedDownload);
+  if(prepared?.phase!=='done')throw Error('Browser verification failed: '+JSON.stringify(prepared));
   const destination=path.join(OUT,'daruri-approved-byte-identical.pdf');
   await down.saveAs(destination);
   const obtained=fs.readFileSync(destination);
-  assert.deepEqual(obtained,official,'Downloaded browser PDF bytes must match signed original');
+  assert.deepEqual(obtained,official,'Downloaded PDF bytes must match signed original');
   assert.equal(prepared.sha256,expected.sha256);
   assert.equal(prepared.bytes,official.length);
+  // Deliberately send a WRONG digest to the very same UI; it must fail
+  // before creating an attachment or triggering ANY download event.
+  const negative=await context.newPage();
+  await negative.goto(ORIGIN+'/daruri/qa/stage2_shootout/verified-pdf-download.html',
+                      {waitUntil:'domcontentloaded'});
+  let unexpectedDownload=false;
+  negative.on('download',()=>{unexpectedDownload=true});
+  await negative.route('**/daruri/pdf-editions-manifest.json',route=>route.fulfill({
+    status:200,contentType:'application/json',
+    body:JSON.stringify({files:{'daruri.pdf':{
+      sha256:'0'.repeat(64),size_bytes:official.length}}})}));
+  await negative.locator('#download-verified-approved').click();
+  await negative.waitForFunction(()=>['done','failed'].includes(
+     window.__gnammaVerifiedDownload?.phase),null,{timeout:15000});
+  const negativeResult=await negative.evaluate(()=>window.__gnammaVerifiedDownload);
+  assert.equal(negativeResult.phase,'failed','Wrong signed hash must fail closed');
+  assert.match(negativeResult.error,/SHA-256 mismatch/);
+  await negative.waitForTimeout(400);
+  assert.equal(unexpectedDownload,false,'Corrupt manifest triggered unsafe download');
+  await negative.close();
   const report={browser:ENGINE,published_pdf_sha256:expected.sha256,
     downloaded_pdf_sha256:sha(obtained),
     byte_identical_to_published_original:true,pages:expected.pages,
@@ -69,6 +77,7 @@ let child,browser,context;
     generated_from_original_HTML_in_browser:false,
     no_server_side_runtime_pdf_renderer:true,
     no_personal_notes_or_data:true,
+    corrupted_manifest_refused_before_download:true,
     physical_iphone_or_android_tested:false};
   fs.writeFileSync(path.join(OUT,'exact-download-report.json'),
                    JSON.stringify(report,null,2)+'\n');
