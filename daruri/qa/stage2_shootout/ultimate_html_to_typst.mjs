@@ -119,6 +119,7 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   if(el.nodeType!==Node.ELEMENT_NODE)return '';
   const tag=el.tagName.toLowerCase();
   if(nonContent.has(tag))return '';
+  if(tag==='a')return rich(el)+'\n';
   if(tag==='table'&&el.classList.contains('parallel-text'))
      return bodyGrid(el,false);
   if(tag==='table'&&el.classList.contains('lex-bilingual'))
