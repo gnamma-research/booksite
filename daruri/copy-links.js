@@ -77,6 +77,23 @@ function refreshSelection(){
  });
 }
 document.addEventListener('selectionchange',refreshSelection);
+// Word Context is opt-in from the selection actions; never from a plain tap.
+function mountWordContextSelectionAction(){
+ const copy=document.getElementById('readerCopyAction');
+ if(!copy||document.getElementById('gn-selected-word-context'))return;
+ const action=document.createElement('button');action.type='button';
+ action.id='gn-selected-word-context';action.className='gn-selected-word-context';
+ action.textContent='Word context';action.title='Explore selected word';
+ action.setAttribute('aria-label','Open word context for selected Arabic word');
+ action.hidden=true;
+ copy.parentElement?.append(action);
+ action.addEventListener('pointerdown',e=>{e.preventDefault();});
+ action.addEventListener('click',e=>{e.preventDefault();window.GnammaWordContext?.openSelected?.();});
+ document.addEventListener('selectionchange',()=>{
+  queueMicrotask(()=>{action.hidden=!window.GnammaWordContext?.findSelectedWord?.();});
+ });
+}
+
 // On touch devices the Copy control may take focus and collapse a real selection.
 document.addEventListener('pointerdown',e=>{
  if(e.target.closest?.('#readerCopyAction,#readerCopyOptions,#gn-copy-menu'))pendingSelection=selectionSnapshot()||selected;
@@ -95,6 +112,7 @@ function annotate(){
    grid.prepend(btn);
  }
  if(!document.querySelector('#readerCopyOptions'))mountCopyButton();
+ mountWordContextSelectionAction();
  if(location.hash.includes('&paragraph='))requestJump();
 }
 let annotating=false;const observer=new MutationObserver(()=>{if(annotating)return;annotating=true;requestAnimationFrame(()=>{annotating=false;annotate()});});
