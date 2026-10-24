@@ -93,14 +93,14 @@ def run():
             val=norm(node.get_text(' ',strip=True)) if node else ''
             if len(val)<width:continue
             eligible+=1
-            matched=(val[:width] in extracted or val[-width:] in extracted)
+            probe_found=(val[:width] in extracted or val[-width:] in extracted)
             # Explicitly verified bidi-interleaved English in this Arabic
             # grammar note; do not drop this note or suppress future misses.
-            if not matched and el.get('id')=='G-B2-0317':
-                matched='indicationsaccompaniedthem' in extracted
-            present+=int(matched)
+            if not probe_found and el.get('id')=='G-B2-0317':
+                probe_found='indicationsaccompaniedthem' in extracted
+            present+=int(probe_found)
             full+=int(val in extracted)
-            if not matched:missing.append({'index':i,'id':el.get('id')})
+            if not probe_found:missing.append({'index':i,'id':el.get('id')})
         fidelity[name]={'original_objects':len(elements),'eligible':eligible,
                         'present':present,'fully_collated_latin':full,
                         'missing':missing[:8]}
