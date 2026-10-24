@@ -20,6 +20,9 @@ on:
       - 'daruri/qa/verify-current-focus-contents-browser.cjs'
       - 'daruri/qa/verify-selection-context-browser.cjs'
       - 'daruri/qa/verify-copy-visual-live-browser.cjs'
+      - 'daruri/qa/verify-prerelease-ui.cjs'
+      - 'daruri/index.html'
+      - 'daruri/compact-menu.css'
       - 'daruri/copy-links.js'
       - 'daruri/visuals-controls.js'
       - 'daruri/reading-desk.js'
@@ -45,6 +48,7 @@ jobs:
           node --check daruri/qa/verify-current-focus-contents-browser.cjs
           node --check daruri/qa/verify-selection-context-browser.cjs
           node --check daruri/qa/verify-copy-visual-live-browser.cjs
+          node --check daruri/qa/verify-prerelease-ui.cjs
       - name: Disable unrelated inaccessible apt repository
         run: |
           for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
@@ -65,6 +69,9 @@ jobs:
       - name: Check Copy scope follows scrolling only without a selection and Visuals appearance is reachable
         if: always()
         run: node daruri/qa/verify-copy-visual-live-browser.cjs
+      - name: Verify minimal Home, source disclosure and reader return in sixteen browser viewports
+        if: always()
+        run: node daruri/qa/verify-prerelease-ui.cjs
       - name: Preserve independent screenshots and failures
         if: always()
         uses: actions/upload-artifact@v4
