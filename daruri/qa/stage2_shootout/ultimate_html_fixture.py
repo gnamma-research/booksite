@@ -20,7 +20,7 @@ from build_editions import (
 from main_text import render_main,validate_main,MAIN_TEXT_CSS
 from backmatter import render_lexicon,LEXICON_CSS
 
-ORIGINAL_SHA="e233057d26772249b17b456d9c8aeaf8fd7d5c293c9875c32569d29bb3d9e22e"
+ORIGINAL_SHA="d9f4f16ee0c01814c18914e673385f58b666c7feaecdc042376071342ac26a2d"
 EDITION_MODES={"scholarly", "english", "arabic-vowelled"}
 
 def sha(x:bytes):return hashlib.sha256(x).hexdigest()
