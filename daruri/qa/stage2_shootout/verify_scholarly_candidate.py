@@ -19,7 +19,7 @@ def tidy(x):
 def run():
     if len(sys.argv)!=4: raise SystemExit("source.html book.pdf output.json")
     html,pdf,out=map(Path,sys.argv[1:])
-    src=BeautifulSoup(html.read_text('utf8'),'lxml')
+    src=BeautifulSoup(html.read_text('utf8'),'html.parser')
     expected={}
     for el in src.select('section.editorial-toc a[href^="#section-"]'):
         m=re.fullmatch(r'#section-([0-9]+)',el.get('href',''))
