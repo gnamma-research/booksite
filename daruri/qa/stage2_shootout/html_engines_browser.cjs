@@ -82,7 +82,7 @@ async function run(){
    report.ci_print_pdf_bytes=pdf.length;
   }
  }else if(ENGINE==='vivliostyle'){
-  const sub='node_modules/@vivliostyle/viewer/lib/';
+  const sub='runtime_study/viewer/';
   const files=['vivliostyle-viewer.html','index.html'];
   const name=files.find(f=>fs.existsSync(path.join(HERE,sub,f)));
   if(!name)throw Error('Self-hosted official Vivliostyle Viewer HTML unavailable');
