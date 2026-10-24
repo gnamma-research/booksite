@@ -3,7 +3,7 @@
    design/daruri-headerless-tile-handoff-20261023,
    docs/design/daruri-selected-circular-tile-reference-64.png.
    No additional masthead or Contents button is introduced. */
-:root{--gn-daruri-tile:url("data:image/png;base64,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");}
+:root{--gn-daruri-tile:url("data:image/png;base64,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");}
 @media screen and (min-width:621px) {
   :root {--reading-controls-height:56px;}
 }
@@ -408,4 +408,87 @@
    --gn-scholar-btn:40px;
    --gn-scholar-tile:44px;
  }
+}
+
+
+/* 24 Oct 2026: unify the desktop and mobile header groups.  The previous
+   "ReadHome" collision was caused by treating the page label as a sibling of
+   the Read button; Home/Read are now separate buttons and no loose label.
+   The selected mosaic is unchanged except that the magenta transparency-key
+   is now genuinely transparent rather than rendered bright pink. */
+@media screen {
+ body.reader-enhanced #readingControls #globalViewLabel{display:none!important}
+ body.reader-enhanced.reading-active #readingControls :is(#gnTopHome,#gnTopRead){display:none!important}
+ body.reader-enhanced #readingControls .gn-reader-global-leading{
+   margin:0!important;padding:0!important;border:0!important;
+   display:flex!important;align-items:center!important;gap:9px!important;
+   flex-shrink:0!important;min-width:0!important
+ }
+ body.reader-enhanced #readingControls :is(.gn-top-home,.gn-top-read){
+   box-sizing:border-box!important;min-height:44px!important;
+   display:inline-flex!important;align-items:center!important;justify-content:center!important;
+   gap:7px!important;padding:0 12px!important;margin:0!important;
+   border:1px solid var(--border)!important;border-radius:8px!important;
+   background:var(--surface)!important;color:var(--text-soft)!important;
+   font:600 12px/1.2 var(--sans,system-ui,sans-serif)!important;
+   text-decoration:none!important;white-space:nowrap!important;cursor:pointer!important
+ }
+ body.reader-enhanced #readingControls :is(.gn-top-home,.gn-top-read) svg{
+   width:18px!important;height:18px!important;flex:none!important
+ }
+ body.reader-enhanced #readingControls :is(.gn-top-home,.gn-top-read):is(.active,[aria-current="page"]){
+   color:var(--accent)!important;background:var(--accent-soft)!important;
+   border-color:var(--accent)!important;box-shadow:none!important
+ }
+ body.reader-enhanced #readingControls :is(.gn-top-home,.gn-top-read):focus-visible{
+   outline:2px solid var(--accent)!important;outline-offset:2px!important
+ }
+}
+@media screen and (min-width:621px) {
+ body.reader-enhanced #readingControls .reading-controls-inner{
+   align-items:center!important;gap:clamp(7px,1vw,12px)!important
+ }
+ body.reader-enhanced #readingControls .reader-language-and-actions{
+   display:flex!important;align-items:center!important;flex:0 0 auto!important;
+   margin:0!important;padding-inline-start:12px!important;
+   border-inline-start:1px solid var(--line)!important
+ }
+ body.reader-enhanced #readingControls .reader-action-slot{
+   display:flex!important;flex-flow:row nowrap!important;align-items:center!important;
+   gap:6px!important;flex:0 0 auto!important;
+   margin:0!important;padding:0 0 0 10px!important;
+   border:0!important;border-left:1px solid var(--line)!important
+ }
+ body.reader-enhanced #readingControls .reader-action-slot > *{
+   box-sizing:border-box!important;margin:0!important;align-self:center!important
+ }
+ body.reader-enhanced #readingControls .reader-action-slot > :is(#readerSaveAction,#readerShareAction){
+   flex:0 0 44px!important;min-width:44px!important;width:44px!important;
+   min-height:44px!important;height:44px!important;
+   display:inline-flex!important;align-items:center!important;justify-content:center!important;
+   border:1px solid var(--border)!important;border-radius:8px!important;
+   padding:0!important
+ }
+ body.reader-enhanced #readingControls .gn-reader-global-trailing{
+   margin-inline-start:auto!important;padding-inline-start:10px!important;
+   border-inline-start:1px solid var(--line)!important;gap:6px!important;
+   display:flex!important;align-items:center!important;flex:0 0 auto!important
+ }
+ body.reader-enhanced #readingControls .gn-reader-global-trailing
+ :is(#focusToolbar,#searchBtn,#themeBtn,#settingsBtn){
+   display:inline-flex!important;align-items:center!important;justify-content:center!important;
+   margin:0!important;padding:0!important;min-height:44px!important;height:44px!important;
+   min-width:44px!important;width:44px!important;flex:0 0 44px!important
+ }
+}
+@media screen and (max-width:620px){
+ body.reader-enhanced:not(.reading-active) #readingControls .gn-reader-global-leading{
+   gap:5px!important;margin:0!important;padding:0!important;border:0!important
+ }
+ body.reader-enhanced:not(.reading-active) #readingControls :is(.gn-top-home,.gn-top-read){
+   min-height:38px!important;width:39px!important;min-width:39px!important;
+   padding:0!important;gap:0!important
+ }
+ body.reader-enhanced:not(.reading-active) #readingControls :is(.gn-top-home,.gn-top-read) span{display:none!important}
+ body.reader-enhanced.reading-active #readingControls .gn-reader-global-leading{gap:0!important}
 }

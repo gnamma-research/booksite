@@ -66,3 +66,61 @@ body.gn-copy-sheet-open{overflow:hidden!important}
  #readingControls .reading-controls-inner{max-width:100vw!important;box-sizing:border-box;overflow-x:auto;overflow-y:hidden;justify-content:flex-start!important;padding-inline:4px!important;gap:2px!important;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
  #readingControls .reading-controls-inner::-webkit-scrollbar{display:none}
 }
+
+/* 24 Oct 2026: Copy and its arrow are one split control. Do not let legacy
+   toolbar rules turn the arrow into an independent floating button. */
+@media screen{
+ body.reader-enhanced #readingControls .gn-copy-wrapper{
+   box-sizing:border-box!important;display:inline-flex!important;align-items:stretch!important;
+   gap:0!important;flex:0 0 auto!important;position:relative!important;
+   margin:0!important;padding:0!important;
+   border:1px solid var(--border)!important;border-radius:8px!important;
+   background:var(--surface)!important;overflow:hidden!important
+ }
+ body.reader-enhanced #readingControls .gn-copy-wrapper #readerCopyAction{
+   box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;
+   justify-content:center!important;flex:0 0 44px!important;
+   width:44px!important;min-width:44px!important;max-width:44px!important;
+   height:44px!important;min-height:44px!important;max-height:44px!important;
+   margin:0!important;padding:0!important;gap:0!important;
+   border:0!important;border-radius:0!important;background:transparent!important;
+   box-shadow:none!important
+ }
+ body.reader-enhanced #readingControls .gn-copy-wrapper #readerCopyOptions{
+   box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;
+   justify-content:center!important;flex:0 0 28px!important;
+   width:28px!important;min-width:28px!important;max-width:28px!important;
+   height:44px!important;min-height:44px!important;max-height:44px!important;
+   margin:0!important;padding:0!important;gap:0!important;
+   border:0!important;border-left:1px solid var(--border)!important;
+   border-radius:0!important;background:transparent!important;
+   color:var(--text-soft)!important;font:600 18px/1 var(--sans,system-ui)!important;
+   box-shadow:none!important
+ }
+ body.reader-enhanced #readingControls .gn-copy-wrapper #readerCopyOptions span{
+   display:block!important;line-height:1!important;transform:translateY(-2px)!important
+ }
+ body.reader-enhanced #readingControls .gn-copy-wrapper :is(#readerCopyAction,#readerCopyOptions):hover{
+   background:var(--accent-soft)!important;color:var(--text)!important
+ }
+ body.reader-enhanced #readingControls .gn-copy-wrapper :is(#readerCopyAction,#readerCopyOptions):focus-visible{
+   outline:2px solid var(--accent)!important;outline-offset:-2px!important
+ }
+}
+@media screen and (max-width:620px){
+ body.reader-enhanced.reading-active #readingControls .gn-copy-wrapper{
+   order:4!important;flex:0 0 auto!important;
+   align-self:center!important;min-width:0!important;max-width:none!important;
+   height:44px!important;margin:0!important
+ }
+ body.reader-enhanced.reading-active #readingControls .gn-copy-wrapper #readerCopyAction{
+   order:0!important;flex:0 0 var(--gn-scholar-btn,36px)!important;
+   width:var(--gn-scholar-btn,36px)!important;
+   min-width:var(--gn-scholar-btn,36px)!important;
+   max-width:var(--gn-scholar-btn,36px)!important
+ }
+ body.reader-enhanced.reading-active #readingControls .gn-copy-wrapper #readerCopyOptions{
+   order:1!important;flex:0 0 24px!important;width:24px!important;
+   min-width:24px!important;max-width:24px!important;font-size:16px!important
+ }
+}
