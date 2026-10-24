@@ -1,9 +1,10 @@
-name: Daruri Typst scholarly layout and bookmarks browser QA (NONRELEASE)
+name: Daruri latest-approved-source browser Scholarly regeneration + strict QA (NONRELEASE)
 on:
   push:
-    branches: [research/daruri-typst-scholarship-layout-20261024]
+    branches: [research/daruri-published-parity-20261025]
     paths:
       - 'daruri/qa/stage2_shootout/ultimate_*'
+      - 'daruri/edition-r3-20261020.js'
       - 'daruri/qa/stage2_shootout/test_ultimate_typst_browser.cjs'
       - 'daruri/qa/stage2_shootout/verify_scholarly_candidate.py'
       - '.github/workflows/daruri-stage2-ultimate-typst-browser.yml'
