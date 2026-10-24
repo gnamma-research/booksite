@@ -48,10 +48,9 @@
              part.querySelector('.passage-grid');
            segment=passage?.dataset.segment;
            passageTop=passage?.getBoundingClientRect().top||threshold;
-           // The old mode switch guesses its anchor from the section heading
-           // position rather than the *displayed* dock section. Align that
-           // heading first, while the same section is still present in the DOM.
-           part.scrollIntoView({block:'start',behavior:'instant'});
+           // Do not scroll before leaving Continuous: the scroll observer
+           // could change the active section between the user's tap and the
+           // mode transition. The mode API now preserves state.n directly.
          }
        }
        window.GnammaReaderModes?.setMode?.('reading');
