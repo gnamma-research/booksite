@@ -10,7 +10,11 @@
 .gn-copy-menu-head small{font-weight:400;color:var(--muted,#7f807a);font-size:10px}
 .gn-copy-menu button{display:flex;gap:9px;align-items:center;width:100%;padding:0 10px;min-height:42px;text-align:left;border:0;border-radius:7px;background:transparent;color:inherit;font:500 12.5px/1.3 var(--sans,system-ui);cursor:pointer}
 .gn-copy-menu button:hover,.gn-copy-menu button:focus-visible{background:var(--accent-soft,#eee7dd);outline:none}
-.gn-copy-mini{font-size:17px;color:var(--text-soft,var(--muted,#7c7a71));width:22px;text-align:center}
+/* Keep each menu icon within the same neutral, compact 22px slot.
+   Text uses letters rather than a third almost-identical document glyph. */
+.gn-copy-mini{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;flex:0 0 22px;width:22px;height:22px;font-size:17px;line-height:1;color:var(--text-soft,var(--muted,#7c7a71));text-align:center}
+.gn-copy-symbol{width:19px;height:19px;display:block;flex:none;stroke:currentColor;overflow:visible}
+.gn-copy-type-mark{display:inline-block;font:700 15px/1 Georgia,serif;letter-spacing:-.065em;white-space:nowrap}
 .gn-copy-arrow{margin-left:auto;color:var(--muted,#777);font-size:16px}
 .gn-copy-rule{height:1px;background:var(--border,var(--line,#ddd));margin:5px 1px}
 #reader .passage-grid{position:relative}

@@ -5,6 +5,7 @@ on:
       - 'daruri/headerless-navigation.css'
       - 'daruri/headerless-navigation.js'
       - 'daruri/copy-links.css'
+      - 'daruri/copy-links.js'
       - 'daruri/index.html'
       - 'daruri/sw.js'
       - 'daruri/qa/test-header-copy-browser.py'
@@ -34,3 +35,10 @@ jobs:
           python -m playwright install --with-deps chromium webkit
       - name: Render Home/Reading, inspect icons and Copy controls across 6 widths
         run: python daruri/qa/test-header-copy-browser.py
+      - name: Save Copy icon browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-copy-icon-visuals
+          path: /tmp/daruri-copy-icons-*.png
+          if-no-files-found: ignore
