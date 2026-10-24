@@ -10,19 +10,20 @@ output=Path(sys.argv[3])
 if source["schema"]!="gnamma-study-real-notes-v1":raise ValueError("Wrong source")
 doc=fitz.open(pdf)
 text_pages=[p.get_text(sort=False) for p in doc]
+norm_pages=[re.sub(r'\s+',' ',txt).lower() for txt in text_pages]
 note_results=[]
 for note in source["notes"]:
     original=note["body"]
     words=re.findall(r"[a-zA-Z]{3,}",original)
     q=" ".join(words[:3]) if len(words)>=3 else ""
-    hits=[(n+1,len(page.search_for(q))) for n,page in enumerate(doc) if q and page.search_for(q)]
+    hits=[(n+1,1) for n,txt in enumerate(norm_pages) if q and q.lower() in txt]
     note_results.append({"id":note["id"],"number":note["number"],"english_query":q,
                          "pages_with_note_snippet":[n for n,k in hits]})
 sections=[r for r in source["rows"] if str(r["section"]).isdigit()]
 english_results=[]
 for row in sections:
     q=" ".join(row["english"].split()[:3])
-    found=any(p.search_for(q) for p in doc if q)
+    found=bool(q and any(q.lower() in txt for txt in norm_pages))
     english_results.append(found)
 geom_outside=[]
 for n,p in enumerate(doc):
@@ -35,7 +36,10 @@ metrics={
  "pdf_file":str(pdf),"pdf_sha256":hashlib.sha256(pdf.read_bytes()).hexdigest(),
  "pdf_pages":len(doc),"pdf_size_bytes":pdf.stat().st_size,
  "expected_original_english_source_paragraphs":len(sections),
- "English_first_three_words_native_Find":sum(english_results),
+ "English_first_three_words_contiguous_extraction":sum(english_results),
+ "native_MuPDF_first_three_words_find_sample_10":sum(
+    bool(page.search_for(" ".join(row["english"].split()[:3])))
+    for row in sections[:10] for page in doc),
  "expected_note_bodies":len(source["notes"]),
  "note_snippets_with_3_english_words_found":sum(bool(n["pages_with_note_snippet"]) for n in note_results),
  "notes_without_stable_English_snippet":[n["id"] for n in note_results if not n["pages_with_note_snippet"]],
