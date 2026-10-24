@@ -17,6 +17,7 @@ on:
     paths:
       - 'daruri/qa/verify-exhaustive-reader-audit.cjs'
       - 'daruri/qa/verify-exhaustive-mode-offline.cjs'
+      - 'daruri/qa/verify-theme-accessibility-and-fonts.cjs'
       - '.github/workflows/daruri-exhaustive-browser-audit.yml'
   workflow_dispatch:
 concurrency:
@@ -38,6 +39,7 @@ jobs:
         run: |
           node --check daruri/qa/verify-exhaustive-reader-audit.cjs
           node --check daruri/qa/verify-exhaustive-mode-offline.cjs
+          node --check daruri/qa/verify-theme-accessibility-and-fonts.cjs
       - name: Exclude inaccessible unrelated apt source
         run: |
           for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
@@ -55,6 +57,9 @@ jobs:
       - name: Test ordinary Reading, Focus 2, Continuous, native fallback links and real offline cache
         if: always()
         run: node daruri/qa/verify-exhaustive-mode-offline.cjs
+      - name: Validate all 18 appearance combinations and blocked-font Arabic in both engines
+        if: always()
+        run: node daruri/qa/verify-theme-accessibility-and-fonts.cjs
       - name: Upload evidence including screenshots, metrics and findings
         if: always()
         uses: actions/upload-artifact@v4
