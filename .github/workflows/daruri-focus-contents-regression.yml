@@ -13,6 +13,10 @@ on:
       - 'daruri/gnamma-word-context.js'
       - '.github/workflows/daruri-focus-contents-regression.yml'
   workflow_dispatch:
+concurrency:
+  group: daruri-qa-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 permissions: {contents: read}
 jobs:
   focus-contents-current-master:

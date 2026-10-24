@@ -6,6 +6,10 @@ on:
       - 'daruri/qa/verify-exhaustive-mode-offline.cjs'
       - '.github/workflows/daruri-exhaustive-browser-audit.yml'
   workflow_dispatch:
+concurrency:
+  group: daruri-qa-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 jobs:

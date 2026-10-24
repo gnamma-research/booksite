@@ -76,8 +76,13 @@ async function exercise(browser,engine,origin,width){
   const appearance=visual.locator('#gn-visuals-appearance');
   await appearance.waitFor({state:'visible'});
   const choices=await appearance.locator('button').evaluateAll(nodes=>nodes.map(n=>({text:n.textContent.trim(),aria:n.getAttribute('aria-label')||'',pressed:n.getAttribute('aria-pressed')})));
-  assert(choices.length>=1,'Visuals has no accessible appearance action');
-  assert((await appearance.textContent()).trim()||choices.some(x=>x.aria),'Appearance must be discoverable without adding a topbar icon');
+  assert.equal(choices.length,3,'Visuals must offer System, Light and Dark, not a lone cycle button');
+  assert.deepEqual(choices.map(x=>x.text),['System','Light','Dark'],'Explicit appearance choices missing');
+  for(const mode of ['dark','light','system']){
+    await appearance.locator('[data-theme-choice="'+mode+'"]').click();
+    await page.waitForFunction(value=>document.getElementById('themeBtn')?.getAttribute('aria-label')?.toLowerCase().includes('appearance: '+value),mode);
+    assert(await appearance.locator('[data-theme-choice="'+mode+'"]').getAttribute('aria-pressed')==='true','Selected appearance not announced: '+mode);
+  }
   assert.equal(errors.length,0,'Runtime errors: '+errors.join(';'));
   const result={id,before,after,frozen,appearance:choices};reports.push(result);console.log('PASS '+JSON.stringify(result));
  }catch(e){const d={id,error:String(e.stack||e).slice(0,1900)};failures.push(d);console.error('FAIL '+JSON.stringify(d));}

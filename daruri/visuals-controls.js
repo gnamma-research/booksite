@@ -46,15 +46,23 @@
     if(!header||header.querySelector('#gn-visuals-appearance'))return;
     const row=document.createElement('div');
     row.id='gn-visuals-appearance';row.className='gn-visuals-appearance';
-    const existing=panel.querySelector('.gn-colour-mode');
+    // The reader already provides persistent System / Light / Dark buttons.
+    // They were hidden in Visuals; move the *same live buttons*, not a second
+    // theme state or a confusing cycle button in the crowded top toolbar.
+    const existing=panel.querySelector('#settingsTheme')||panel.querySelector('.gn-colour-mode');
     if(existing){
-      row.appendChild(existing);
+      existing.hidden=false;
+      existing.removeAttribute('aria-hidden');
+      existing.classList.add('gn-colour-mode');
       existing.setAttribute('role','group');
-      existing.setAttribute('aria-label','Appearance: light, dark or system');
+      existing.setAttribute('aria-label','Appearance: system, light or dark');
+      row.appendChild(existing);
     }else{
+      // An older reader without an appearance registry retains a single
+      // fallback instead of showing three inert controls.
       const button=document.createElement('button');
       button.type='button';button.className='gn-appearance-switch';
-      button.textContent='Light / Dark';button.setAttribute('aria-label','Switch light or dark appearance');
+      button.textContent='Appearance';button.setAttribute('aria-label','Switch appearance');
       button.addEventListener('click',()=>document.getElementById('themeBtn')?.click());
       row.appendChild(button);
     }
@@ -97,6 +105,10 @@
       }
       if(button.dataset.stackedOrder){
         show('Page layout',button.dataset.stackedOrder==='top'?'Arabic above':'Arabic below');
+        return;
+      }
+      if(button.dataset.themeChoice){
+        requestAnimationFrame(()=>show('Appearance',button.textContent.trim()));
         return;
       }
       if(button.dataset.palette){
