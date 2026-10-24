@@ -5,13 +5,13 @@ const base=path.resolve(__dirname,'..');
 const read=p=>fs.readFileSync(path.join(base,p),'utf8');
 const html=read('index.html'),copy=read('copy-links.js'),css=read('copy-links.css'),sw=read('sw.js'),bundle=read('download-bundle.js');
 assert(html.includes('window.GnammaCopyContext={book:BOOK,state,sections,notes:rdNoteCatalog,rd}'),'Copy context must use authoritative Reader data and Reading Desk');
-assert(html.includes('copy-links.css?v=20261024-copyicons1')&&html.includes('copy-links.js?v=20261024-copyicons1'),'Current Reader must load both Copy assets');
+assert(html.includes('copy-links.css?v=20261024-copyicons2')&&html.includes('copy-links.js?v=20261024-copyicons2'),'Current Reader must load both Copy assets');
 for(const filename of ['copy-links.js','copy-links.css']){
- const revision='20261024-copyicons1';
+ const revision='20261024-copyicons2';
  assert(sw.includes(filename+'?v='+revision),'Offline cache omits '+filename);
  assert(bundle.includes("'daruri/"+filename+"'"),'Complete download omits '+filename);
 }
-assert(html.includes('download-bundle.js?v=20261024-copyicons1')&&sw.includes('download-bundle.js?v=20261024-copyicons1'),'Offline package loader must be versioned');
+assert(html.includes('download-bundle.js?v=20261024-copyicons2')&&sw.includes('download-bundle.js?v=20261024-copyicons2'),'Offline package loader must be versioned');
 assert(copy.includes('C.rd?.records?.()'),'Personal annotations must come from Reading Desk only when requested');
 assert(copy.includes('config.personal'),'Personal notes opt-in missing');
 assert(copy.includes('selectionSnapshot()'),'Selected words must require a real browser selection');
@@ -22,6 +22,8 @@ for(const name of ['text','notes','research'])assert(copy.includes(name+':'),'Mi
 assert(copy.includes('gn-copy-type-mark')&&copy.includes('gn-copy-symbol'),'Text/notes/research cannot share generic Unicode box glyphs');
 assert(!copy.includes("selected:'▤'")&&!copy.includes("research:'▥'"),'Legacy near-identical Copy glyphs remain');
 assert(css.includes('.gn-copy-type-mark')&&css.includes('.gn-copy-symbol'),'Copy icons must have dedicated aligned styles');
+assert(copy.includes('speech annotation bubble')&&copy.includes('three-volume scholarly source collection'),'First three Copy silhouettes must differ by shape');
+assert(copy.includes('M21 15a4 4')&&copy.includes('M10 3.5h4.5V21'),'Missing annotation bubble or research-volume geometry');
 assert(html.includes("location.hash.includes('&paragraph=')"),'Continuous reader must preserve paragraph deep-links');
 const m=copy.match(/const COUNTS=\('([0-9,]+)'\)\.split/);
 assert(m,'Missing immutable baseline paragraph-count registry');
