@@ -14,7 +14,7 @@
             "Knowledge of the qualifications of jurists"
           ],
           "answer": 2,
-          "explanation": "In §2 Ibn Rushd first identifies knowledge whose end is belief, before describing practical and instrumental knowledge.",
+          "explanation": "In §2 Ibn Rushd first identifies knowledge whose end is assent (iʿtiqād), before distinguishing knowledge oriented towards action and methodological standards of inquiry.",
           "sections": [
             2
           ]
@@ -123,11 +123,11 @@
           "options": [
             "Every principle was deduced from one report",
             "No universals can be drawn from individual fatwās",
-            "Many universal notions were inferred from case-by-case legal opinions",
+            "Many universal notions were validated through case-by-case examination of legal opinions",
             "Individual opinions become infallible once collected"
           ],
           "answer": 2,
-          "explanation": "Ibn Rushd says many universal notions were established inductively from early fatwās, not that all opinions or principles were certain.",
+          "explanation": "Ibn Rushd says many universal notions were validated by induction from early fatwās; he neither ascribes every principle to this procedure nor makes all early opinions infallible.",
           "sections": [
             4
           ]
