@@ -2,7 +2,10 @@ name: Daruri approved Scholarly byte-exact browser delivery proof (NONRELEASE)
 on:
   push:
     branches: [research/daruri-published-parity-20261025]
-    paths: ['.github/workflows/daruri-byteexact-static-browser-delivery.yml']
+    paths:
+      - '.github/workflows/daruri-byteexact-static-browser-delivery.yml'
+      - 'daruri/qa/stage2_shootout/browser_exact_published_download.cjs'
+      - 'daruri/qa/stage2_shootout/verified-pdf-download.html'
   workflow_dispatch:
 permissions:
   contents: read
