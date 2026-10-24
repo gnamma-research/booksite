@@ -1,0 +1,63 @@
+name: Daruri Stage2 real Study HTML in-browser Paged.js and Vivliostyle notes (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-html-footnotes-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/html_engines_browser.cjs'
+      - 'daruri/qa/stage2_shootout/package.json'
+      - '.github/workflows/daruri-stage2-study-html-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-study-html-browser-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  real-study-html-paginator:
+    runs-on: ubuntu-latest
+    timeout-minutes: 32
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: [paged, vivliostyle]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Prepare original canonical Study HTML from Gnamma source, not a PDF
+        run: |
+          python -m pip install -q beautifulsoup4
+          python daruri/qa/stage2_shootout/study_source_fixture.py \
+            daruri/qa/stage2_shootout/runtime_study
+      - name: Install exact browser typesetter and Chromium engine
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout \
+            --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+      - name: Verify independent browser experiment code
+        run: node --check daruri/qa/stage2_shootout/html_engines_browser.cjs
+      - name: Actual DOM browser pagination of original Study note stress
+        env:
+          STAGE2_HTML_ENGINE: ${{ matrix.engine }}
+          STAGE2_BROWSER: chromium
+          STAGE2_HTML_SCOPE: stress
+          STAGE2_OUTPUT: /tmp/gnamma-real-study-html-${{ matrix.engine }}
+        run: node daruri/qa/stage2_shootout/html_engines_browser.cjs
+      - name: Independent PDF syntax validation of CI-only print output
+        if: ${{ matrix.engine == 'paged' }}
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils qpdf
+          qpdf --check /tmp/gnamma-real-study-html-paged/paged-study-stress-QAONLY.pdf
+          pdfinfo /tmp/gnamma-real-study-html-paged/paged-study-stress-QAONLY.pdf | \
+            grep -E 'Pages:|Page size:|File size:'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-real-study-html-${{ matrix.engine }}-NONRELEASE
+          path: /tmp/gnamma-real-study-html-${{ matrix.engine }}
+          if-no-files-found: warn
+          retention-days: 14
