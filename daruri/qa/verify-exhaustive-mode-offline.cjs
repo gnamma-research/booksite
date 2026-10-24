@@ -41,9 +41,10 @@ async function modes(browser,name,origin,width,level){
   if(errors.length)problems.push('JavaScript errors '+errors.join('; '));
   if(problems.length)throw Error(JSON.stringify({problems,g}).slice(0,3400));
   if(level===0){
-   await page.locator('#menuBtn').click();
-   await page.locator('#leftNav [data-route="home"]').waitFor({state:'visible'});
-   await page.locator('#leftNav [data-route="home"]').click();
+   const homeLink=page.locator('#leftNav [data-route="home"]');
+   if(!(await homeLink.isVisible()))await page.locator('#menuBtn').click();
+   await homeLink.waitFor({state:'visible'});
+   await homeLink.click();
    await page.locator('#mainContent .gnamma-home').waitFor();
    if(await page.locator('#gnTopRead').isVisible()){
     await page.locator('#gnTopRead').click();
@@ -64,7 +65,11 @@ async function noJSNative(browser,name,origin){
    return{links:links.length,targetable:links.filter(x=>x.hasTarget).length,bodyChars:document.body.innerText.trim().length,examples:links.slice(0,12)};
   });
   if(x.targetable<10)throw Error('Native fallback does not have ten valid internal targets: '+JSON.stringify(x));
-  return x;
+  await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded'});
+  const deep=await page.evaluate(()=>{const el=document.getElementById('section=11'),r=el?.getBoundingClientRect(),s=el&&getComputedStyle(el);return {hash:location.hash,exists:!!el,rect:{w:r?.width||0,h:r?.height||0,top:r?.top||0},style:{display:s?.display,visibility:s?.visibility},text:el?.textContent?.trim().slice(0,160)||'',visibleLinks:[...document.querySelectorAll('a[href="#section=11"]')].filter(a=>a.getClientRects().length).length};});
+  if(!deep.exists||!deep.rect.h)throw Error('No-JS target exists but is not rendered: '+JSON.stringify(deep));
+  await page.screenshot({path:path.join(OUT,name+'-nojs-section11.png'),fullPage:false});
+  return {...x,deep};
  }finally{await ctx.close();}
 }
 async function offline(origin){
@@ -76,7 +81,8 @@ async function offline(origin){
   await page.goto(origin+'/daruri/',{waitUntil:'domcontentloaded',timeout:90000});
   await page.locator('body.reader-enhanced').waitFor({timeout:30000});
   phase='install';
-  await page.waitForFunction(async()=>{if(!('serviceWorker' in navigator))return false;return !!(await navigator.serviceWorker.getRegistration())?.active},{timeout:75000});
+  await page.waitForFunction(async()=>{if(!('serviceWorker' in navigator))return false;return !!(await navigator.serviceWorker.getRegistration())?.active},null,{timeout:75000});
+  await page.waitForFunction(()=>!!navigator.serviceWorker.controller,null,{timeout:75000});
   const cached=await page.evaluate(async()=>{const keys=await caches.keys(),all=await Promise.all(keys.map(async k=>({name:k,count:(await (await caches.open(k)).keys()).length})));return all;});
   phase='offline reload';
   await ctx.setOffline(true);
