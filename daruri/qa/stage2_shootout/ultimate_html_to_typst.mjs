@@ -156,6 +156,14 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
     const children=[...el.childNodes].map(block).join('');
     return anchor(el)+'#heading(level:2,outlined:true)[Section '+sourceSection[1]+']\n'+children;
   }
+  // Original section IDs are on nested headings or metadata, while the
+  // enclosing source section carries data-section-id. Emit one outline
+  // heading for each original numbered source section.
+  const sourceNumber=el.matches('section.text-section') ? el.getAttribute('data-section-id') : null;
+  if(sourceNumber && /^(?:[1-9][0-9]*)$/.test(sourceNumber) && Number(sourceNumber)<=258){
+    const children=[...el.childNodes].map(block).join('');
+    return anchor(el)+'#heading(level:2,outlined:true)[Section '+sourceNumber+']\n'+children;
+  }
   const begin=anchor(el);
   const breakBefore=(el.matches('section.page-start,section.cover,section.contents')||
       el.id==='concordance'||el.id==='lexicon')?'#pagebreak(weak:true)\n':'';
