@@ -5,6 +5,9 @@ on:
       - 'daruri/headerless-navigation.css'
       - 'daruri/headerless-navigation.js'
       - 'daruri/qa/verify-current-focus-contents-browser.cjs'
+      - 'daruri/qa/verify-selection-context-browser.cjs'
+      - 'daruri/reading-desk.js'
+      - 'daruri/gnamma-word-context.js'
       - '.github/workflows/daruri-focus-contents-regression.yml'
   workflow_dispatch:
 permissions: {contents: read}
@@ -18,7 +21,9 @@ jobs:
         with:
           node-version: '22'
       - name: Validate script
-        run: node --check daruri/qa/verify-current-focus-contents-browser.cjs
+        run: |
+          node --check daruri/qa/verify-current-focus-contents-browser.cjs
+          node --check daruri/qa/verify-selection-context-browser.cjs
       - name: Disable unrelated inaccessible apt repository
         run: |
           for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
@@ -33,6 +38,9 @@ jobs:
           npx --prefix daruri/qa playwright install --with-deps chromium webkit
       - name: Test 48 ordinary, Focus and Continuous scenarios against candidate patch
         run: node daruri/qa/verify-current-focus-contents-browser.cjs
+      - name: Test safe word taps and bottom selection actions in both browser engines
+        if: always()
+        run: node daruri/qa/verify-selection-context-browser.cjs
       - name: Preserve independent screenshots and failures
         if: always()
         uses: actions/upload-artifact@v4
