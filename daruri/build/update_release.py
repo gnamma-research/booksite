@@ -245,8 +245,8 @@ def update_html(source, metadata, revision, assets=RELEASE_ASSETS):
         # Modern source-first fallback: each PDF appears once in an ordinary
         # filename-bound anchor. Update its displayed page count without
         # reintroducing removed panels or touching section-specific PDF links.
-        fallback_pattern = (r'(<a\\b[^>]*href="' + re.escape(filename) +
-                            r'(?=[?"])[^"]*"[^>]*>[^<]*?\\()\\d+( pages\\)</a>)')
+        fallback_pattern = (r'(<a\b[^>]*href="' + re.escape(filename) +
+                            r'(?=[?"])[^"]*"[^>]*>[^<]*?\()\d+( pages\)</a>)')
         result, replaced = re.subn(
             fallback_pattern,
             lambda m, pages=metadata[filename]["pages"]: m[1] + str(pages) + m[2],
@@ -255,7 +255,7 @@ def update_html(source, metadata, revision, assets=RELEASE_ASSETS):
         fallback_updated += replaced
         if not count_panel_links:
             require(replaced == 1, "Missing modern Editions fallback link: " + filename)
-    reference_pattern = r"\\d+-page bilingual reference PDF"
+    reference_pattern = r"\d+-page bilingual reference PDF"
     reference_count = len(re.findall(reference_pattern, result))
     require(reference_count in (0, 2), "Unexpected legacy reference-description layout")
     if reference_count:
