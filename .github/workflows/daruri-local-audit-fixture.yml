@@ -1,5 +1,9 @@
 name: Daruri local audit fixture
 on:
+  push:
+    branches: [fix/daruri-focus-contents-and-toolbar-20261024]
+    paths:
+      - '.github/workflows/daruri-local-audit-fixture.yml'
   pull_request:
     paths:
       - '.github/workflows/daruri-local-audit-fixture.yml'
