@@ -37,6 +37,13 @@
      if(document.body.classList.contains('reading-active')&&
         document.body.classList.contains('focus-mode')){
        window.GnammaReaderModes?.setMode?.('reading');
+       // Focus visually concealed an earlier open sidebar, leaving the saved
+       // leftVisible preference true. The legacy Contents handler *toggles*
+       // that preference, so without resetting it the first click closes
+       // rather than opens the navigation. Use the current reader state
+       // exposed to the Copy module; the native handler saves it normally.
+       const readerState=window.GnammaCopyContext?.state;
+       if(readerState)readerState.leftVisible=false;
      }
    },true);
   }

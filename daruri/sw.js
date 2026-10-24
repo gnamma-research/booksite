@@ -2,6 +2,9 @@ const NAME="daruri-reader-daruri13-lesson12-method-20261024";const CORE=['header
 /* One path, one precache request. Old cache lists included dozens of obsolete
    versioned copies; cap concurrent requests so low-memory phones can install.
    Missing optional sources do not prevent core reading from being cached. */
+// Compatible with saved older HTML that still requests the previous
+// download-loader cache key. The install de-duplicates by actual file path.
+CORE.push('download-bundle.js?v=20261024-copyicons2');
 const UNIQUE_CORE=(()=>{
   const paths=new Map();
   for(const item of CORE){
