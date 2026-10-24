@@ -15,6 +15,7 @@ const MODE=process.env.BENCH_EDITION||'scholarly';
 const ENGINE=process.env.BENCH_ENGINE||'paged';
 const BROWSER=process.env.BENCH_BROWSER||'chromium';
 const OUT=process.env.BENCH_OUT||('/tmp/daruri-ultimate-'+ENGINE+'-'+MODE);
+const GHP_STATIC=process.env.BENCH_GHP_STATIC==='1';
 if(!['scholarly','english','arabic-vowelled'].includes(MODE))throw Error('Bad edition');
 if(!['paged','vivliostyle'].includes(ENGINE))throw Error('Bad engine');
 const prefix='/daruri/qa/stage2_shootout/';
@@ -34,7 +35,9 @@ function recordResources(){
   for(const line of ps.split('\n')){
    const match=line.match(/^\s*(\d+)\s+(\d+)\s+(.+)$/);if(!match)continue;
    const pid=Number(match[1]),rss=Number(match[2]),name=match[3];
-   if(/chrome-headless-shell|HeadlessChrome|chromium-linux|chrome-linux/.test(name) &&
+   if((BROWSER==='webkit'?
+   /WebKitWebProcess|WebKitNetworkProcess|WebKitGPUProcess|MiniBrowser|WebKitBrowser/.test(name):
+   /chrome-headless-shell|HeadlessChrome|chromium-linux|chrome-linux/.test(name)) &&
       !/ps -eo/.test(name)){
       chromium+=rss;processes++;
       // Linux PSS allocates shared mapped pages proportionally to each process,
@@ -78,13 +81,15 @@ async function go(){
    'window.PagedConfig={auto:true,after:(flow)=>{window.__gnammaUltimate={'+
    'status:"done",page_count:flow.total,layout_ms:Math.round(performance.now()-window.__gnammaUltimate.start)}}};'+
    'window.addEventListener("error",(e)=>{window.__gnammaUltimate.error=String(e.message)})'+
-   '</script><script defer src="'+prefix+'node_modules/pagedjs/dist/paged.polyfill.js"></script>';
+   '</script><script defer src="'+prefix+(GHP_STATIC?
+     'runtime_ultimate/paged.polyfill.js':
+     'node_modules/pagedjs/dist/paged.polyfill.js')+'"></script>';
   fs.writeFileSync(path.join(HERE,'runtime_ultimate',MODE+'-paged.html'),
    source.replace('</head>',injected+'</head>'));
   route=prefix+'runtime_ultimate/'+MODE+'-paged.html';
  }
  const started=Date.now();
- child=ENGINE==='paged'?
+ child=ENGINE==='paged'&&!GHP_STATIC?
    spawn('npm',['run','dev'],{cwd:HERE,stdio:'ignore'}):
    spawn('python',['-m','http.server','8991','--bind','127.0.0.1'],{cwd:ROOT,stdio:'ignore'});
  let ok=false;
@@ -95,6 +100,8 @@ async function go(){
   serviceWorkers:'block',deviceScaleFactor:1});
  page=await ctx.newPage();
  page.on('pageerror',e=>errors.push(String(e)));
+ report.emulated_static_pages_hosting=GHP_STATIC;
+ report.cross_origin_isolated=await page.evaluate(()=>crossOriginIsolated);
  page.on('request',r=>captured.push({url:r.url(),method:r.method()}));
  page.on('response',async r=>{
    const u=new URL(r.url());
@@ -175,7 +182,9 @@ async function go(){
  report.estimated_peak_headless_chromium_rss_kib=peakChromiumKiB;
  report.estimated_peak_chromium_proportional_pss_kib=peakPssKiB;
  report.peak_chromium_processes_observed=peakProcessCount;
- report.memory_method='Linux /proc/PID/smaps_rollup Pss proportional memory; desktop browser only';
+ report.memory_method='Linux /proc/PID/smaps_rollup proportional browser-process memory; desktop '+BROWSER+' only';
+ report.estimated_peak_browser_proportional_pss_kib=peakPssKiB;
+ report.estimated_peak_browser_rss_kib=peakChromiumKiB;
  report.estimated_peak_benchmark_node_rss_kib=peakNodeKiB;
  report.all_local_response_headers=sizes;
  report.actual_network_requests=captured.length;
