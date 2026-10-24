@@ -137,6 +137,10 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
     const authorEn=textEscape(author ? [...author.childNodes].filter(n=>n.nodeType===Node.TEXT_NODE).map(n=>n.nodeValue).join(' ').trim() : '');
     const coverAr=el.querySelector('p.author span[lang="ar"]');
     const authorAr=textEscape(coverAr?.textContent||'');
+    const scopeLines=[...(el.querySelector('p.scope')?.childNodes||[])]
+      .filter(n=>n.nodeType===Node.TEXT_NODE)
+      .map(n=>textEscape(n.nodeValue?.trim()||''))
+      .filter(Boolean);
     return [
       '#align(center)[\n',
       '#v(36mm)\n',
@@ -144,7 +148,8 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
       '#v(12mm)\n',
       '#text(font:"Noto Naskh Arabic",lang:"ar",dir:rtl,size:25pt)['+textOf('.arabic-title')+']\n',
       '#v(8mm)\n',
-      '#heading(level:1,outlined:true)['+textOf('h1')+']\n',
+      '#{ show heading: none; heading(level:1,outlined:true,bookmarked:true)['+textOf('h1')+'] }\n',
+      '#text(size:22pt,weight:"bold")['+textOf('h1')+']\n',
       '#v(7mm)\n',
       '#text(size:12pt)['+authorEn+']\n',
       '#v(3mm)\n',
@@ -152,7 +157,9 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
       '#v(20mm)\n',
       '#text(size:12pt,weight:"bold")['+textOf('.edition')+']\n',
       '#v(5mm)\n',
-      '#text(size:9pt)['+textOf('.scope')+']\n',
+      '#text(size:9pt)['+(scopeLines[0]||'')+']\n',
+      '#v(3mm)\n',
+      '#text(size:9pt)['+(scopeLines[1]||'')+']\n',
       '#v(24mm)\n',
       '#text(size:9pt)['+textOf('.date')+']\n',
       ']\n#pagebreak()\n'
