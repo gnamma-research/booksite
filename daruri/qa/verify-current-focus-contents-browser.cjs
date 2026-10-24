@@ -43,6 +43,17 @@ async function exercise(engine,name,base,w,mode){
    assert(ordered.every((c,i)=>!i||c.x>=ordered[i-1].right-1),'Toolbar controls collide: '+JSON.stringify(state));
   }
   if(w===320&&mode===1)await page.screenshot({path:path.join(OUT,id+'.png'),fullPage:false});
+  // Exercise a real location within the full continuous document, not its
+  // initial DOM starting paragraph. The source section should survive Home.
+  if(mode===3){
+   const passage=page.locator('#gn-continuous-11 .passage-grid[data-segment="0"]').first();
+   await passage.waitFor({state:'visible'});
+   await passage.evaluate(el=>{
+    window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-150,behavior:'instant'});
+    window.dispatchEvent(new Event('scroll'));
+   });
+   await page.waitForFunction(()=>document.getElementById('dockSection')?.textContent?.trim()==='§11',null,{timeout:12000});
+  }
   const departure=await page.evaluate(()=>({hash:location.hash,dock:document.getElementById('dockSection')?.textContent?.trim(),active:document.body.className,scrollY:window.scrollY}));
   if(mode===3)console.log('BEFORE '+id+' '+JSON.stringify(departure));
   const home=page.locator('#leftNav [data-route="home"]');
@@ -59,6 +70,7 @@ async function exercise(engine,name,base,w,mode){
   assert(await topRead.isVisible(),'No explicit Read/Resume action from Home');
   await topRead.click();
   await page.locator('#readerDock:not([hidden])').waitFor();
+  await page.waitForFunction(()=>document.getElementById('dockSection')?.textContent?.trim()==='§11',null,{timeout:12000}).catch(()=>{});
   const returned=await page.evaluate(()=>({hash:location.hash,section:document.getElementById('dockSection')?.textContent?.trim(),mode:document.body.className}));
   assert.equal(returned.section,'§11','Read lost section: '+JSON.stringify(returned));
   assert.equal(errors.length,0,'Runtime exceptions: '+errors.join('; '));
