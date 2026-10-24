@@ -53,5 +53,7 @@ jobs:
             /tmp/daruri-published-parity/APPROVED-current-master-daruri.pdf
             /tmp/daruri-published-parity/source-and-pdf-preflight.json
             /tmp/daruri-published-parity/published-pdf-manifest.json
+            /tmp/daruri-published-parity/published-authorial-source.js
+            /tmp/daruri-published-parity/research-authorial-source.js
           if-no-files-found: warn
           retention-days: 14
