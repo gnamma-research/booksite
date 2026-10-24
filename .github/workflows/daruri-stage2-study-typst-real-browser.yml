@@ -1,0 +1,80 @@
+name: Daruri 414-source real Study native browser Typst WASM PDF (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-study-typst-e2e-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/study_typst_browser*'
+      - 'daruri/qa/stage2_shootout/test_real_study_typst_browser.cjs'
+      - '.github/workflows/daruri-stage2-study-typst-real-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-real-study-client-wasm-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  real-study-actual-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 38
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Build original whole-book bilingual Study source and real notes, no PDF input
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri qpdf poppler-utils
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/study_source_fixture.py \
+            daruri/qa/stage2_shootout/runtime_study
+          node daruri/qa/stage2_shootout/study_typst_source.mjs \
+            daruri/qa/stage2_shootout/runtime_study/study_source.json \
+            daruri/qa/stage2_shootout/runtime_study/study_source.typ
+          cp /usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf \
+            daruri/qa/stage2_shootout/runtime_study/Amiri-Regular.ttf
+      - name: Install original browser compiler and real browser
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout \
+            --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Validate browser code and bundle
+        run: |
+          node --check daruri/qa/stage2_shootout/study_typst_browser.mjs
+          node --check daruri/qa/stage2_shootout/test_real_study_typst_browser.cjs
+          npm run build --prefix daruri/qa/stage2_shootout
+      - name: Click on page; generate and download true original Study PDF inside browser
+        env:
+          STAGE2_BROWSER: ${{ matrix.browser }}
+          STAGE2_OUTPUT: /tmp/stage2-study-browser-${{ matrix.browser }}
+        run: node daruri/qa/stage2_shootout/test_real_study_typst_browser.cjs
+      - name: Verify genuine PDF syntax and original 258 navigation sections
+        run: |
+          pdf=/tmp/stage2-study-browser-${{ matrix.browser }}/daruri-study-browser-414-real-notes-NONRELEASE.pdf
+          qpdf --check "$pdf"
+          python - "$pdf" <<'PY'
+          import fitz,sys
+          with fitz.open(sys.argv[1]) as pdf:
+              bookmarks=len(pdf.get_toc())
+              links=sum(len(p.get_links()) for p in pdf)
+              print('REAL_STUDY_BROWSER_PDF',len(pdf),'pages',bookmarks,
+                  'bookmarks',links,'links')
+              assert len(pdf)>40 and bookmarks>=258 and links>=100
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-typst-real-study-${{ matrix.browser }}-NONRELEASE
+          path: /tmp/stage2-study-browser-${{ matrix.browser }}
+          if-no-files-found: warn
+          retention-days: 14
