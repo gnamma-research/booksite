@@ -6,6 +6,9 @@ on:
       - 'daruri/headerless-navigation.js'
       - 'daruri/qa/verify-current-focus-contents-browser.cjs'
       - 'daruri/qa/verify-selection-context-browser.cjs'
+      - 'daruri/qa/verify-copy-visual-live-browser.cjs'
+      - 'daruri/copy-links.js'
+      - 'daruri/visuals-controls.js'
       - 'daruri/reading-desk.js'
       - 'daruri/gnamma-word-context.js'
       - '.github/workflows/daruri-focus-contents-regression.yml'
@@ -24,6 +27,7 @@ jobs:
         run: |
           node --check daruri/qa/verify-current-focus-contents-browser.cjs
           node --check daruri/qa/verify-selection-context-browser.cjs
+          node --check daruri/qa/verify-copy-visual-live-browser.cjs
       - name: Disable unrelated inaccessible apt repository
         run: |
           for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
@@ -41,11 +45,16 @@ jobs:
       - name: Test safe word taps and bottom selection actions in both browser engines
         if: always()
         run: node daruri/qa/verify-selection-context-browser.cjs
+      - name: Check Copy scope follows scrolling only without a selection and Visuals appearance is reachable
+        if: always()
+        run: node daruri/qa/verify-copy-visual-live-browser.cjs
       - name: Preserve independent screenshots and failures
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: current-master-focus-layout-regression
-          path: daruri/qa/focus-fix-artifacts/
+          path: |
+            daruri/qa/focus-fix-artifacts/
+            daruri/qa/copy-visual-artifacts/
           retention-days: 14
           if-no-files-found: warn
