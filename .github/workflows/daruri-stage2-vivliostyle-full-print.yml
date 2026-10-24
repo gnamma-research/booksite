@@ -1,0 +1,60 @@
+name: Daruri Vivliostyle complete scholarly full 625-note HTML pagination and actual browser print (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-vivliostyle-full-print-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/ultimate_browser.cjs'
+      - '.github/workflows/daruri-stage2-vivliostyle-full-print.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-vivliostyle-whole-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  vivliostyle-reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 49
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Generate whole Scholarly source with 625 notes, 157 full articles
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+            daruri/qa/stage2_shootout/runtime_ultimate scholarly
+      - name: Install official self-hosted Vivliostyle and Chromium
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+          mkdir -p runtime_ultimate/viewer
+          cp -a node_modules/@vivliostyle/viewer/lib/. runtime_ultimate/viewer/
+      - name: Paginate actual entire scholarly HTML in the normal browser, no PDF server
+        env:
+          BENCH_ENGINE: vivliostyle
+          BENCH_EDITION: scholarly
+          BENCH_BROWSER: chromium
+          BENCH_OUT: /tmp/ultimate-vivliostyle-scholarly
+        run: |
+          node --check daruri/qa/stage2_shootout/ultimate_browser.cjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/ultimate_browser.cjs
+      - name: Inspect actual PDF from complete original Vivliostyle browser print
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils qpdf
+          pdf=/tmp/ultimate-vivliostyle-scholarly/daruri-scholarly-vivliostyle-PRINT-QAONLY.pdf
+          qpdf --check "$pdf"
+          python daruri/qa/stage2_shootout/ultimate_pdf_qa.py "$pdf" \
+            daruri/qa/stage2_shootout/runtime_ultimate/scholarly.source.json \
+            /tmp/ultimate-vivliostyle-scholarly/native-qa.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-ultimate-vivliostyle-scholarly-NONRELEASE
+          path: /tmp/ultimate-vivliostyle-scholarly
+          if-no-files-found: warn
+          retention-days: 14
