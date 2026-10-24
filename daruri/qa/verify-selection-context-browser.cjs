@@ -35,7 +35,7 @@ async function test(engine,name,origin,width){
    window.dispatchEvent(new Event('mouseup'));
   });
   const bar=page.locator('#gn-rd-selection-bar');
-  await bar.waitFor({state:'visible',timeout:12000});
+  await bar.waitFor({state:'visible',timeout:12000}).catch(async()=>{throw Error('Selection bar absent: '+JSON.stringify(await page.evaluate(()=>({selection:window.getSelection()?.toString(),bar:document.querySelector('#gn-rd-selection-bar')?.outerHTML?.slice(0,450),reader:document.body.className,desk:!!window.GnammaReadingDesk,word:!!window.GnammaWordContext}))));});
   const action=bar.locator('[data-rd="selection-word-context"]');
   await action.waitFor({state:'visible'});
   assert.equal(await page.locator('#gnamma-word-context:visible').count(),0,'selection alone opened Word Context');
