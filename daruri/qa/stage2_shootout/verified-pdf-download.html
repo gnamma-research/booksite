@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Darūrī — verify approved Scholarly PDF</title>
+<style>
+  body{font:16px/1.55 system-ui,sans-serif;max-width:46rem;margin:4rem auto;padding:1rem}
+  button{font:inherit;padding:.7rem 1rem;min-height:44px}
+  #status{min-height:2rem;margin-top:1rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Darūrī — current approved Scholarly PDF</h1>
+<p>This test downloads the <strong>existing approved PDF byte-for-byte</strong> after SHA-256 verification. It does not generate a new PDF from HTML, replace the publication, or use any remote rendering service.</p>
+<button id="download-verified-approved" type="button">Verify and download approved PDF</button>
+<p id="status" role="status" aria-live="polite">Ready</p>
+</main>
+<script type="module">
+const button=document.querySelector('#download-verified-approved');
+const status=document.querySelector('#status');
+window.__gnammaVerifiedDownload={phase:'ready'};
+button.addEventListener('click',async()=>{
+  button.disabled=true;
+  status.textContent='Checking the approved PDF…';
+  window.__gnammaVerifiedDownload={phase:'running'};
+  try{
+    const response=await fetch('/daruri/pdf-editions-manifest.json',{credentials:'same-origin'});
+    if(!response.ok)throw Error('Publication manifest unavailable');
+    const manifest=await response.json();
+    const expected=manifest.files?.['daruri.pdf'];
+    if(!expected?.sha256 || typeof expected.size_bytes!=='number')
+      throw Error('Authoritative publication signature unavailable');
+    const result=await fetch('/daruri/daruri.pdf',{credentials:'same-origin'});
+    if(!result.ok)throw Error('Approved PDF unavailable: '+result.status);
+    const bytes=new Uint8Array(await result.arrayBuffer());
+    if(bytes.byteLength!==expected.size_bytes)throw Error('Approved PDF length mismatch');
+    if(String.fromCharCode(...bytes.slice(0,5))!=='%PDF-')
+      throw Error('Invalid PDF header');
+    const hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))]
+      .map(n=>n.toString(16).padStart(2,'0')).join('');
+    if(hash!==expected.sha256)throw Error('Approved PDF SHA-256 mismatch: cannot download');
+    const url=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
+    const a=document.createElement('a');
+    a.href=url;
+    a.download='Daruri_Scholarly_Approved_Exact_Copy.pdf';
+    a.hidden=true;
+    document.body.append(a);
+    a.click();
+    a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),30000);
+    status.textContent='Verified approved PDF ('+bytes.length+' bytes). Download started.';
+    window.__gnammaVerifiedDownload={
+      phase:'done',sha256:hash,bytes:bytes.length,
+      download_filename:'Daruri_Scholarly_Approved_Exact_Copy.pdf',
+      approved_pdf_sha256:expected.sha256,
+      generated_from_HTML_in_browser:false,
+      existing_approved_pdf_delivered_byte_identically:true,
+      no_personal_notes:true
+    };
+  }catch(error){
+    const message=String(error?.message||error);
+    status.textContent=message;
+    window.__gnammaVerifiedDownload={phase:'failed',error:message};
+  }finally{button.disabled=false;}
+});
+</script>
+</body></html>

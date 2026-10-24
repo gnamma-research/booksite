@@ -44,7 +44,22 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   const id=el?.getAttribute?.('id');
   if(!id)return '';
   located.add(id);
-  return '#box(width: 0pt, height: 0pt)[ ]<'+labels.get(id)+'>';
+  const idAnchor='#box(width: 0pt, height: 0pt)[ ]<'+labels.get(id)+'>';
+  // Typst can move an outlined heading to the following page because of
+  // heading keep-with-next. Emit the heading *before* the corresponding
+  // original section-N destination so the Contents link follows that same
+  // page break. Previous order stranded 7/258 links on the prior page.
+  const match=/^section-([1-9][0-9]*)$/.exec(id);
+  if(match && Number(match[1])<=258){
+    const n=Number(match[1]);
+    const topic=(sectionTopics.get(n)||('Section '+n))
+      .replace(/^\s*[0-9]+\.\s*/,'');
+    const title=textEscape('§'+n+' · '+topic);
+    const pdfBookmark='#{ show heading: none; heading(level: 2, outlined: true, bookmarked: true)['+
+      title+'] }\n';
+    return pdfBookmark+idAnchor;
+  }
+  return idAnchor;
  };
  const childRich=el=>[...el.childNodes].map(rich).join('');
  function rich(el){
@@ -207,17 +222,9 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   // heading for each original numbered source section.
   const sourceNumber=el.matches('section.text-section') ? el.getAttribute('data-section-id') : null;
   if(sourceNumber && /^(?:[1-9][0-9]*)$/.test(sourceNumber) && Number(sourceNumber)<=258){
-    const number=Number(sourceNumber);
-    const topic=(sectionTopics.get(number)||('Section '+sourceNumber))
-      .replace(/^\s*[0-9]+\.\s*/,'');
-    const label=textEscape('§'+sourceNumber+' · '+topic);
-    const children=[...el.childNodes].map(block).join('');
-    // Scoped Typst heading display suppression. The actual heading remains
-    // in Typst's semantic/PDF outline but contributes NO printed editorial
-    // prose, blank space or changed canonical book text.
-    const pdfBookmark='#{ show heading: none; heading(level: 2, outlined: true, bookmarked: true)['+
-      label+'] }\n';
-    return anchor(el)+pdfBookmark+children;
+    // The PDF-only bookmark is added by anchor() at the authoritative
+    // section-N target below, not at this potentially orphaned wrapper.
+    return anchor(el)+[...el.childNodes].map(block).join('');
   }
   const begin=anchor(el);
   const breakBefore=el.matches('main.main-text')?'#pagebreak()\n':

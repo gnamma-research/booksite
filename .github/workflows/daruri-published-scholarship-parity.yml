@@ -1,0 +1,59 @@
+name: Daruri authoritative published Scholarly PDF snapshot and parity preflight (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-published-parity-20261025]
+    paths:
+      - '.github/workflows/daruri-published-scholarship-parity.yml'
+      - 'daruri/qa/stage2_shootout/published_parity_*.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  published-baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - name: Retrieve current approved master PDF (not prior research snapshot)
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/daruri-published-parity
+          git fetch --no-tags --depth=1 origin master
+          git show origin/master:daruri/daruri.pdf > /tmp/daruri-published-parity/APPROVED-current-master-daruri.pdf
+          git show origin/master:daruri/pdf-editions-manifest.json > /tmp/daruri-published-parity/published-pdf-manifest.json
+          git show origin/master:daruri/edition-r3-20261020.js > /tmp/daruri-published-parity/published-authorial-source.js
+          cp daruri/edition-r3-20261020.js /tmp/daruri-published-parity/research-authorial-source.js
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json,subprocess
+          p=Path('/tmp/daruri-published-parity')
+          m=json.loads((p/'published-pdf-manifest.json').read_text())
+          info={}
+          for fname in ('APPROVED-current-master-daruri.pdf','published-authorial-source.js','research-authorial-source.js'):
+              b=(p/fname).read_bytes()
+              info[fname]={'size':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+          ref=m['files']['daruri.pdf']
+          info['expected_approved_reference']=ref
+          info['master_commit']=subprocess.check_output(['git','rev-parse','origin/master'],text=True).strip()
+          info['research_commit']=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          info['approved_pdf_manifest_sha_matches']=(info['APPROVED-current-master-daruri.pdf']['sha256']==ref['sha256'])
+          info['approved_pdf_expected_pages']=ref['pages']
+          info['canonical_source_matches_research']=(info['published-authorial-source.js']['sha256']==info['research-authorial-source.js']['sha256'])
+          (p/'source-and-pdf-preflight.json').write_text(json.dumps(info,indent=2)+'\n')
+          print('SCHOLARLY_APPROVED_BASELINE_PREFLIGHT',json.dumps(info))
+          if not info['approved_pdf_manifest_sha_matches']:raise SystemExit('Published baseline differs from authoritative manifest')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-current-master-published-scholarly-pdf-baseline-NONRELEASE
+          path: |
+            /tmp/daruri-published-parity/APPROVED-current-master-daruri.pdf
+            /tmp/daruri-published-parity/source-and-pdf-preflight.json
+            /tmp/daruri-published-parity/published-pdf-manifest.json
+            /tmp/daruri-published-parity/published-authorial-source.js
+            /tmp/daruri-published-parity/research-authorial-source.js
+          if-no-files-found: warn
+          retention-days: 14
