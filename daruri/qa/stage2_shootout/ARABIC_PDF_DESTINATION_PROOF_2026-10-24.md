@@ -2,6 +2,8 @@
 
 **Research-only. Do not deploy or replace signed publication PDFs.**
 
+> **Owner priority correction, 24 October 2026:** Exact native PDF Arabic search (especially searching with tashkīl) is **NOT a current priority or release gate**. The site already supplies normalized/as-encoded Arabic search. Do not keep running multi-engine Arabic search experiments or block layout/navigation/footnote progress on that optional capability. The native-search comparisons below are historical diagnostic evidence only, retained for future reference. Evaluate separately whether readers can open, view, print and navigate the PDF normally; a MuPDF text-extraction subprocess failure is not proof of a viewer-opening failure. Current engineering priorities: direct on-device downloadable PDF Blob, readable source-faithful pages, all notes/footnote placement, section/bookmark/navigation links, resource use/mobile usability, offline delivery and cross-device viewing.
+
 ## Independent problem and exact intervention
 
 The fully vowelled Arabic Reading edition generated from canonical Gnamma HTML using Paged.js 0.4.3 + Chromium Print-to-PDF had **47 of 258** original `section-N` named destinations, despite displaying the 258 section headings. Chromium creates named PDF targets when an ID is referenced by an internal `href`; many Arabic sections were not referenced by other live source hyperlinks.
@@ -39,7 +41,7 @@ Independent local verification using **PyMuPDF 1.26.7, Poppler pdftotext, PDFium
 
 ## Important uncorrected reader failure
 
-**MuPDF / PyMuPDF 1.26.7 full text extraction crashes (SIGSEGV) on the same seven Arabic PDF pages in both versions: physical pages 8, 22, 33, 34, 37, 41, 59.** This was independently reproduced by the native PDF QA subprocess checks. The navigation repair did **not** introduce or fix it. PDFium extracted all pages without exceptions and Poppler also extracted full-document text, but neither proves dependable copy, Arabic vowel accuracy, precise word-level selection, iOS PDFKit, Android readers, or Adobe Acrobat. Treat the MuPDF crash and cross-reader semantic correctness as **publication blockers**. Do not claim this PDF is fully native-search-certified.
+**MuPDF / PyMuPDF 1.26.7 full text extraction crashes (SIGSEGV) on the same seven Arabic PDF pages in both versions: physical pages 8, 22, 33, 34, 37, 41, 59.** This was independently reproduced by the native PDF QA subprocess checks. The navigation repair did **not** introduce or fix it. PDFium extracted all pages without exceptions and Poppler also extracted full-document text, but neither proves dependable copy, Arabic vowel accuracy, precise word-level selection, iOS PDFKit, Android readers, or Adobe Acrobat. Treat the MuPDF text-extraction crash as a **compatibility observation pending real viewer-opening tests**; exact search-with-vowels is intentionally outside the present acceptance criteria. Do not claim this PDF is fully native-search-certified.
 
 ## Decision and next gates
 
@@ -47,7 +49,7 @@ Independent local verification using **PyMuPDF 1.26.7, Poppler pdftotext, PDFium
 
 Additional gated development should separately solve: (1) actual native-PDF text extractor crashes/copy/search across PDFium, MuPDF, Poppler, PDF.js and physical readers; (2) meaningful browser-output PDF sidebar bookmark outlines without corrupting 258 named sections; (3) Study `QUR-R064-Q005` two misplaced markers; (4) ~784 MiB Scholarly desktop peak PSS and true low-memory phone trials; (5) exact 625-note scholarly content proof and detailed typography. Keep these as separate QA claims and do not infer a release from a green workflow.
 
-## Independent **native PDFium source-word search release gate — FAIL**
+## Archived native PDFium search diagnostic — informational only, deprioritized
 
 Follow-up native PDFium/PyPDFium2 verification of **all 258** original section-openings used the exact first source word, or the first two source words, in either original vowelled or stripped-diacritic form. Each query searched the named section's actual PDF target page **and the following page**. This is native PDFium's actual `PdfTextPage.search` implementation, **not** merely a string check on extracted PDF text.
 
@@ -60,4 +62,4 @@ Follow-up native PDFium/PyPDFium2 verification of **all 258** original section-o
 
 The first Scholarly original HTML has 416 Arabic source segment elements (414 canonical source paragraph units, plus editorial layout-specific segments), yet after NFKC/Arabic-letter-only normalization the first 40 consecutive Arabic letters of **0/412 eligible segments** appeared in full-PDF PDFium extracted text. MuPDF found 101/412 and Poppler 115/412 of those very permissively normalized 40-letter opening sequences. This confirms serious reader-dependent Arabic logical-text order problems on the **Paged.js** full edition, distinct from the earlier vector-outline experiment, even though visible pages render correctly.
 
-**Interpretation:** the search outcome is not equivalent to optical/rendered Arabic source fidelity and does not test every viewer or exact physical highlight rectangle. Nonetheless **native Arabic word-search release requirements decisively fail** on both real browser-generated editions. Adding hidden backlinks fixes named navigation only; it does not repair malformed Arabic glyph-to-Unicode mappings, punctuation/diacritic order or native selection geometry. Neither PDF should be advertised as fully native-searchable. MuPDF's seven existing Arabic-only pages with text extraction SIGSEGV remain a separate severe compatibility failure. Do not conflate this with link QA and do not release.
+**Interpretation:** the search outcome is not equivalent to optical/rendered Arabic source fidelity and does not test every viewer or exact physical highlight rectangle. Nonetheless **native Arabic exact word-search tests did not pass** on both real browser-generated editions. Adding hidden backlinks fixes named navigation only; it does not repair malformed Arabic glyph-to-Unicode mappings, punctuation/diacritic order or native selection geometry. Neither PDF should be advertised as fully native-searchable. MuPDF's seven existing Arabic-only pages with text extraction SIGSEGV remain a separate issue for later diagnosis; do not infer that the PDF is unreadable in ordinary viewers. Do not conflate this with link QA and do not release.
