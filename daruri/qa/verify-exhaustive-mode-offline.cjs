@@ -83,7 +83,9 @@ async function offline(origin){
   phase='install';
   await page.waitForFunction(async()=>{if(!('serviceWorker' in navigator))return false;return !!(await navigator.serviceWorker.getRegistration())?.active},null,{timeout:75000});
   await page.waitForFunction(()=>!!navigator.serviceWorker.controller,null,{timeout:75000});
-  const cached=await page.evaluate(async()=>{const keys=await caches.keys(),all=await Promise.all(keys.map(async k=>({name:k,count:(await (await caches.open(k)).keys()).length})));return all;});
+  const cached=await page.evaluate(async()=>{const keys=await caches.keys(),all=await Promise.all(keys.map(async k=>({name:k,count:(await (await caches.open(k)).keys()).length})));return {caches:all,controller:!!navigator.serviceWorker.controller,rootHit:!!(await caches.match(location.href.split('#')[0]))};});
+  console.log('OFFLINE-PRECACHE '+JSON.stringify(cached));
+  if(!cached.controller||!cached.rootHit)throw Error('Worker did not precache/claim reading root: '+JSON.stringify(cached));
   phase='offline reload';
   await ctx.setOffline(true);
   await page.reload({waitUntil:'domcontentloaded',timeout:30000});
