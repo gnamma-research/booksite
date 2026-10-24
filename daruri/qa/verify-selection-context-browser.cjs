@@ -13,16 +13,22 @@ const errors=[];
 async function test(engine,name,origin,width){
  const browser=await engine.launch({headless:true,...(name==='chromium'?{args:['--no-sandbox']}:{})});
  const ctx=await browser.newContext({viewport:{width,height:844},isMobile:width<700,hasTouch:width<700,serviceWorkers:'block'});
+ await ctx.addInitScript(()=>localStorage.setItem('daruri-reader-v2',JSON.stringify({n:'11',lang:'arabic',focusLevel:0,vowels:true})));
  try{
   const page=await ctx.newPage();page.setDefaultTimeout(10000);
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:60000});
   await page.locator('#readerDock:not([hidden])').waitFor({timeout:25000});
-  const text=page.locator('#reader .passage-grid .passage-ar').first();
+  let text=page.locator('#reader .passage-grid .passage-ar:visible').first();
+  if(!(await text.count())){
+    const arabic=page.locator('#persistentLanguages [data-language-toggle="arabic"]');
+    if(await arabic.isVisible())await arabic.click();
+  }
+  text=page.locator('#reader .passage-grid .passage-ar:visible').first();
   await text.waitFor();
   await text.click({position:{x:35,y:25}});
   assert.equal(await page.locator('#gnamma-word-context:visible').count(),0,'ordinary tap opened Word Context');
   await page.evaluate(()=>{
-   const node=document.querySelector('#reader .passage-grid .passage-ar');
+   const node=[...document.querySelectorAll('#reader .passage-grid .passage-ar')].find(el=>el.getClientRects().length>0&&getComputedStyle(el).visibility!=='hidden');
    const walker=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);
    let textNode;
    while((textNode=walker.nextNode())){if(/[\u0621-\u064a]{3}/.test(textNode.textContent))break;}
