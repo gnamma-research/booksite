@@ -44,22 +44,22 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   const id=el?.getAttribute?.('id');
   if(!id)return '';
   located.add(id);
-  let out='#box(width: 0pt, height: 0pt)[ ]<'+labels.get(id)+'>';
-  // Co-locate original Contents destination and PDF sidebar bookmark.
-  // A section wrapper may start at the very bottom of the *previous*
-  // page; emitting an invisible heading there creates an orphaned
-  // bookmark (§98 and §115 in the latest-source trial). The canonical
-  // section-N ID is on the actually rendered heading/metadata element.
+  const idAnchor='#box(width: 0pt, height: 0pt)[ ]<'+labels.get(id)+'>';
+  // Typst can move an outlined heading to the following page because of
+  // heading keep-with-next. Emit the heading *before* the corresponding
+  // original section-N destination so the Contents link follows that same
+  // page break. Previous order stranded 7/258 links on the prior page.
   const match=/^section-([1-9][0-9]*)$/.exec(id);
   if(match && Number(match[1])<=258){
     const n=Number(match[1]);
     const topic=(sectionTopics.get(n)||('Section '+n))
       .replace(/^\s*[0-9]+\.\s*/,'');
     const title=textEscape('§'+n+' · '+topic);
-    out+='#{ show heading: none; heading(level: 2, outlined: true, bookmarked: true)['+
+    const pdfBookmark='#{ show heading: none; heading(level: 2, outlined: true, bookmarked: true)['+
       title+'] }\n';
+    return pdfBookmark+idAnchor;
   }
-  return out;
+  return idAnchor;
  };
  const childRich=el=>[...el.childNodes].map(rich).join('');
  function rich(el){
