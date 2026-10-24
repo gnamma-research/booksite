@@ -8,7 +8,9 @@ export default defineConfig({
  server:{
   host:'127.0.0.1',port:8991,strictPort:true,
   fs:{allow:[root]},
-  headers:{
+  // Production GitHub Pages serves assets without configurable COOP/COEP.
+  // A realistic acceptance test must NOT simulate headers Pages cannot set.
+  headers: process.env.STAGE2_GHP_NO_COOP==='1' ? {} : {
    'Cross-Origin-Opener-Policy':'same-origin',
    'Cross-Origin-Embedder-Policy':'require-corp'
   }
