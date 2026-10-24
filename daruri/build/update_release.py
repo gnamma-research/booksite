@@ -238,10 +238,9 @@ def update_html(source, metadata, revision, assets=RELEASE_ASSETS):
     fallback_updated = 0
     for filename, (_, _, title) in EDITIONS.items():
         label_pattern = re.escape(title) + r" \(\d+ pages\)"
-        label_count = len(re.findall(label_pattern, result))
-        require(label_count in (0, 2), "Unexpected legacy About edition-count layout")
-        if label_count:
-            result = replace_exact_count(label_pattern, f"{title} ({metadata[filename]['pages']} pages)", result, label_count, "Legacy About edition count")
+        if count_panel_links:
+            require(len(re.findall(label_pattern, result)) == 2, "Unexpected legacy About edition-count layout")
+            result = replace_exact_count(label_pattern, f"{title} ({metadata[filename]['pages']} pages)", result, 2, "Legacy About edition count")
         # Modern source-first fallback: each PDF appears once in an ordinary
         # filename-bound anchor. Update its displayed page count without
         # reintroducing removed panels or touching section-specific PDF links.
@@ -255,11 +254,10 @@ def update_html(source, metadata, revision, assets=RELEASE_ASSETS):
         fallback_updated += replaced
         if not count_panel_links:
             require(replaced == 1, "Missing modern Editions fallback link: " + filename)
-    reference_pattern = r"\d+-page bilingual reference PDF"
-    reference_count = len(re.findall(reference_pattern, result))
-    require(reference_count in (0, 2), "Unexpected legacy reference-description layout")
-    if reference_count:
-        result = replace_exact_count(reference_pattern, f"{metadata['daruri.pdf']['pages']}-page bilingual reference PDF", result, reference_count, "Legacy About reference description")
+    if count_panel_links:
+        reference_pattern = r"\d+-page bilingual reference PDF"
+        require(len(re.findall(reference_pattern, result)) == 2, "Unexpected legacy reference-description layout")
+        result = replace_exact_count(reference_pattern, f"{metadata['daruri.pdf']['pages']}-page bilingual reference PDF", result, 2, "Legacy About reference description")
     result = version_asset_urls(result, revision, assets)
     # Preserve independently versioned guide/print assets. An explicit companion
     # refresh may advance the guide PDF, data and runtime URLs, never its content.
