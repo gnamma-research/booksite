@@ -5720,15 +5720,20 @@ function takeDictionaryReturn(){
     if(pi)pi.style.width=(Math.min(Number(id)||258,258)/258*100)+'%';
   }
   function currentContinuousSection(){
-    const targets=document.querySelectorAll('#reader .gn-continuous-section[data-reading-section]');
+    // A section is active while its *reading block* intersects the reading
+    // cursor, not merely because its heading was the last one above it.
+    // Header-based guesses returned §10 while WebKit displayed §11, then
+    // destroyed the user's return anchor when leaving Continuous.
+    const targets=[...document.querySelectorAll('#reader .gn-continuous-section[data-reading-section]')];
     if(!targets.length)return null;
-    const cutoff=Math.min(220,innerHeight*.32);
-    let chosen=targets[0];
-    for(const el of targets){
-      if(el.getBoundingClientRect().top>cutoff)break;
-      chosen=el;
+    const cutoff=Math.min(220,Math.max(110,innerHeight*.32));
+    let next=null;
+    for(const section of targets){
+      const box=section.getBoundingClientRect();
+      if(box.top<=cutoff&&box.bottom>cutoff)return section;
+      if(!next&&box.bottom>cutoff)next=section;
     }
-    return chosen;
+    return next||targets[targets.length-1];
   }
   function renderContinuousReader(){
     const blocks=[],all=BOOK.sections;
