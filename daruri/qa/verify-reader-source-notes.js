@@ -70,7 +70,7 @@ assert.equal(oldNotes.length, 542);
 assert.equal(textSources.length, 83);
 assert.equal(textSources.filter(note => note.source_type === 'quran').length, 50);
 assert.equal(textSources.filter(note => note.source_type === 'hadith').length, 33);
-assert.equal(digest(oldNotes), '4d8a6eda38a7918413a3d8e086564624cfb6999596a607ec0055b02a8ef4e8ad', 'All 542 original note records are unchanged');
+assert.equal(digest(oldNotes), 'ecc6df9f4ea5c71121ab1968bb602a54ba200ad7a8172f60bfc8b5c2197394b1', 'All 542 current notes match the authorized lesson-revised release (N002, N003, N005, G-B2-0009)');
 const withheld = quranMap.withheld_editorial_allusions || [];
 const withheldIds = ['QUR-R001-Q051','QUR-R011-Q052','QUR-R047-Q053'];
 const restoredIds = ['QUR-R001-Q049','QUR-R001-Q050'];
