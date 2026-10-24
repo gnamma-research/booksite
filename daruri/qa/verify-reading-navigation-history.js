@@ -118,6 +118,6 @@ test('JSON personal backup carries navigation, never as Desk items or auto-sync'
  assert.ok(bridge.includes('root.GnammaReadingHistory=api'));
  assert.ok(!source.includes('fetch('),'No remote sync');
  assert.ok(sw.includes('reading-navigation-history.js')&&sw.includes('reading-navigation-bridge.js'));
- for(const name of ['reading-navigation-history.js','reading-navigation-bridge.js','reading-navigation-history.css'])assert.ok(bundle.includes('"'+name+'"'),name+' missing offline');
+ for(const name of ['reading-navigation-history.js','reading-navigation-bridge.js','reading-navigation-history.css'])assert.ok(bundle.includes("'daruri/"+name+"'"),name+' missing offline');
 });
 console.log('PASS: '+checks+' portable reading-history groups; exact Back/Forward, bounded trail, safe imports, existing picker/dock, Help and offline integration');
