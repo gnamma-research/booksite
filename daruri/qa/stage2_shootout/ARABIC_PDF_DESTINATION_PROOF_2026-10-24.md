@@ -46,3 +46,18 @@ Independent local verification using **PyMuPDF 1.26.7, Poppler pdftotext, PDFium
 **Accept as a narrow technical proof**: adding hidden source backlinks to the *browser input HTML* can make Chromium/Paged.js retain 258/258 valid original section names without affecting pages, notes, existing click destinations or visible/text output. It is not a complete distribution upgrade: PDF outlines/bookmarks are still absent, ordinary browser Print/Save is required, and repeat-note Study placement, mobile memory, physical device tests, and full Arabic source fidelity remain open. Do not merge this branch onto public `master` or replace Stage 1.
 
 Additional gated development should separately solve: (1) actual native-PDF text extractor crashes/copy/search across PDFium, MuPDF, Poppler, PDF.js and physical readers; (2) meaningful browser-output PDF sidebar bookmark outlines without corrupting 258 named sections; (3) Study `QUR-R064-Q005` two misplaced markers; (4) ~784 MiB Scholarly desktop peak PSS and true low-memory phone trials; (5) exact 625-note scholarly content proof and detailed typography. Keep these as separate QA claims and do not infer a release from a green workflow.
+
+## Independent **native PDFium source-word search release gate — FAIL**
+
+Follow-up native PDFium/PyPDFium2 verification of **all 258** original section-openings used the exact first source word, or the first two source words, in either original vowelled or stripped-diacritic form. Each query searched the named section's actual PDF target page **and the following page**. This is native PDFium's actual `PdfTextPage.search` implementation, **not** merely a string check on extracted PDF text.
+
+| Original authorial source query on corresponding page(s) | Paged full Scholarly (258 pages) | This branch's Paged Arabic Reading (67 pages) |
+|---|---:|---:|
+| First original word with diacritics | **1/258** | **1/258** |
+| First original word stripped of diacritics | **12/258** | **1/258** |
+| First two words with diacritics | **0/258** | **0/258** |
+| First two words stripped of diacritics | **2/258** | **0/258** |
+
+The first Scholarly original HTML has 416 Arabic source segment elements (414 canonical source paragraph units, plus editorial layout-specific segments), yet after NFKC/Arabic-letter-only normalization the first 40 consecutive Arabic letters of **0/412 eligible segments** appeared in full-PDF PDFium extracted text. MuPDF found 101/412 and Poppler 115/412 of those very permissively normalized 40-letter opening sequences. This confirms serious reader-dependent Arabic logical-text order problems on the **Paged.js** full edition, distinct from the earlier vector-outline experiment, even though visible pages render correctly.
+
+**Interpretation:** the search outcome is not equivalent to optical/rendered Arabic source fidelity and does not test every viewer or exact physical highlight rectangle. Nonetheless **native Arabic word-search release requirements decisively fail** on both real browser-generated editions. Adding hidden backlinks fixes named navigation only; it does not repair malformed Arabic glyph-to-Unicode mappings, punctuation/diacritic order or native selection geometry. Neither PDF should be advertised as fully native-searchable. MuPDF's seven existing Arabic-only pages with text extraction SIGSEGV remain a separate severe compatibility failure. Do not conflate this with link QA and do not release.
