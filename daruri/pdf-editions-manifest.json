@@ -1,16 +1,16 @@
 {
-  "edition_date": "2026-10-21",
+  "edition_date": "2026-10-24",
   "source": "daruri8: source-based contents and bookmarks in all five editions; compact editorial section guides in scholarly, study and English editions; subject index before dictionary",
   "default_pdf": "daruri.pdf",
   "files": {
     "daruri.pdf": {
       "title": "Bilingual reference",
       "source_filename": "daruri.pdf",
-      "sha256": "3b44cba0cd68038e9028d312bb499958d23e1003c03765406a37c376bca85524",
-      "size_bytes": 2666467,
+      "sha256": "d30dac6541d043e663d148984de6e183076fd5bbdee04da26168d22c82327a5c",
+      "size_bytes": 2667800,
       "pages": 243,
       "default_for_text_links": true,
-      "source_sha256": "3b44cba0cd68038e9028d312bb499958d23e1003c03765406a37c376bca85524",
+      "source_sha256": "d30dac6541d043e663d148984de6e183076fd5bbdee04da26168d22c82327a5c",
       "body_page_destinations_preserved": false,
       "contents_pages": {
         "part_overview": [
@@ -34,11 +34,11 @@
     "daruri-study.pdf": {
       "title": "Bilingual study",
       "source_filename": "daruri-study.pdf",
-      "sha256": "67cb2a13eda2a42c51efb3afb7f875a7d3e38fde2b6616616cf0e423b53185c1",
-      "size_bytes": 1515535,
+      "sha256": "1aa7f02ebd7dfddb04082780b5f75891ecdb0f72dd3ba8e238d891cb21af331a",
+      "size_bytes": 1515947,
       "pages": 131,
       "default_for_text_links": false,
-      "source_sha256": "67cb2a13eda2a42c51efb3afb7f875a7d3e38fde2b6616616cf0e423b53185c1",
+      "source_sha256": "1aa7f02ebd7dfddb04082780b5f75891ecdb0f72dd3ba8e238d891cb21af331a",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "04_Daruri_Bilingual_Study_2026-10-20.pdf",
@@ -62,11 +62,11 @@
     "daruri-english.pdf": {
       "title": "English reading",
       "source_filename": "daruri-english.pdf",
-      "sha256": "6e06e95947a4c1ae2c5fc5edc36a6454cf730d10d437114aa4e2cb1418d38a64",
-      "size_bytes": 836405,
+      "sha256": "a8ea7c32b4e62c4c1d6438bc13ba92c4128b28631acc81cb8043f5cb06e450dd",
+      "size_bytes": 837204,
       "pages": 97,
       "default_for_text_links": false,
-      "source_sha256": "6e06e95947a4c1ae2c5fc5edc36a6454cf730d10d437114aa4e2cb1418d38a64",
+      "source_sha256": "a8ea7c32b4e62c4c1d6438bc13ba92c4128b28631acc81cb8043f5cb06e450dd",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "02_Daruri_English_Reading_2026-10-20.pdf",
@@ -90,11 +90,11 @@
     "daruri-arabic.pdf": {
       "title": "Arabic reading",
       "source_filename": "daruri-arabic.pdf",
-      "sha256": "b378c021f1cd6aba2cbf5e3ee8c7b8e7f7566b29e4d0a8a59fe39e38a29c2cad",
-      "size_bytes": 532617,
+      "sha256": "6d0d0703cc8cc8a1607bfa194542286fbe01d807d62aa5a54c97870e64736f73",
+      "size_bytes": 532630,
       "pages": 72,
       "default_for_text_links": false,
-      "source_sha256": "b378c021f1cd6aba2cbf5e3ee8c7b8e7f7566b29e4d0a8a59fe39e38a29c2cad",
+      "source_sha256": "6d0d0703cc8cc8a1607bfa194542286fbe01d807d62aa5a54c97870e64736f73",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "01_Daruri_Arabic_Reading_2026-10-20.pdf",
@@ -112,11 +112,11 @@
     "daruri-arabic-vowelled.pdf": {
       "title": "Arabic fully vowelled",
       "source_filename": "daruri-arabic-vowelled.pdf",
-      "sha256": "63486a6b39c792c76ab17c0ed1a104f9e2b7ecd03aa3fd2b5e72a3954288f78a",
-      "size_bytes": 833619,
+      "sha256": "cb6a521a6c414ad7bfc0343adb49b88eeba3af40f35b4cf4c2375c50d4cf5739",
+      "size_bytes": 833583,
       "pages": 68,
       "default_for_text_links": false,
-      "source_sha256": "63486a6b39c792c76ab17c0ed1a104f9e2b7ecd03aa3fd2b5e72a3954288f78a",
+      "source_sha256": "cb6a521a6c414ad7bfc0343adb49b88eeba3af40f35b4cf4c2375c50d4cf5739",
       "body_page_destinations_preserved": false,
       "baseline_source": {
         "source_filename": "Daruri_Arabic_Fully_Vowelled_2026-10-20.pdf",
@@ -136,17 +136,17 @@
     "daruri-study-guide.pdf": {
       "title": "Three-level study guide",
       "source": "Shared 28-question lesson JSON; 84 levels",
-      "sha256": "69f8bd820f1f48ce9c1f168986e4ce36532698030992a715936a806fc000dc80",
-      "size_bytes": 568637,
+      "sha256": "61e16b3a45ef04cdda445b2732e731f69077bd725d4480e68a0a770d9ae3cd78",
+      "size_bytes": 570027,
       "pages": 85,
       "default_for_text_links": false,
-      "content_revision": "daruri6-sources-20261020",
+      "content_revision": "daruri13-lesson12-method-20261024",
       "build_metadata": "study/companion-metadata.json"
     }
   },
-  "navigation_revision": "daruri8-structure-20261020",
+  "navigation_revision": "daruri13-lesson12-method-20261024",
   "navigation_note": "Reader PDF destinations are remapped by stable section ID from the rebuilt scholarly PDF's verified section anchors. All five editions have source-based contents and hierarchical bookmarks; scholarly, bilingual study and English editions also have explicitly editorial numbered section guides. Arabic editions use Arabic structural navigation. The later colophon is separate. The unchanged three-level study-guide companion is recorded under companions.",
-  "release_revision": "daruri11-section1-qualified-quran-20261021",
+  "release_revision": "daruri13-lesson12-method-20261024",
   "generator": "daruri/build/build_editions.py",
   "citation_policy": "Qur’an source notes in all five reading editions; hadith source notes in the scholarly edition; original scholarly and study-note selections preserved",
   "citation_presentation_revision": "20261021-section1-qparallels1"
