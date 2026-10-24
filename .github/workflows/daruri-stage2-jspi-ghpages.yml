@@ -1,0 +1,75 @@
+name: Daruri full Scholarly Typst WASM JSPI backend on unisolated GitHub Pages (NONRELEASE)
+on:
+  push:
+    branches: [qa/daruri-typst-jspi-ghpages-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/vite.config.mjs'
+      - 'daruri/qa/stage2_shootout/test_ultimate_typst_browser.cjs'
+      - '.github/workflows/daruri-stage2-jspi-ghpages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-ghpages-jspi-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  pages-realistic-wasm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate the entire canonical Scholarly HTML (625 notes, 153 terms, 157 articles) with no existing PDF
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+            daruri/qa/stage2_shootout/runtime_ultimate scholarly
+          cp daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+             daruri/qa/stage2_shootout/runtime_ultimate/scholarly.source.txt
+      - name: Install pinned browser-only Typst WASM compiler
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Use actual browser with NO COOP or COEP response headers, as GitHub Pages
+        env:
+          STAGE2_GHP_NO_COOP: '1'
+          BENCH_BROWSER: ${{ matrix.browser }}
+          BENCH_OUT: /tmp/daruri-pages-jspi-${{ matrix.browser }}
+        run: |
+          node --check daruri/qa/stage2_shootout/test_ultimate_typst_browser.cjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/test_ultimate_typst_browser.cjs
+      - name: Independently check PDF page syntax and basic real navigation
+        if: success()
+        run: |
+          python - <<'PY'
+          import fitz,os
+          browser='${{ matrix.browser }}'
+          p='/tmp/daruri-pages-jspi-'+browser+'/daruri-scholarly-625-notes-browser-typst-NONRELEASE.pdf'
+          with fitz.open(p) as d:
+            links=sum(len(pg.get_links()) for pg in d)
+            assert len(d)>=200 and links>=3000 and len(d.get_toc())>=258
+            print('DARURI_GHP_NOCOOP_FULL_SCHOLARLY_PDF',{
+              'browser':browser,'pages':len(d),'links':links,
+              'toc':len(d.get_toc()),'pdf_bytes':os.stat(p).st_size})
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-pages-jspi-typst-${{ matrix.browser }}-NONRELEASE
+          path: /tmp/daruri-pages-jspi-${{ matrix.browser }}
+          if-no-files-found: warn
+          retention-days: 7
