@@ -70,8 +70,17 @@ def run_case(browser, engine, width):
     page.locator('[data-gn-menu="text"]').click()
     page.locator('.gn-copy-sheet').wait_for(state='visible')
     page.locator('[data-gn-copy-close]').first.click()
+    # At desktop widths the Contents pane starts open; the first click
+    # therefore CLOSES it. On phones the first click OPENS it.
+    # Test the state transition, not a hard-coded initial open state.
+    before=page.locator('#menuBtn.gn-top-tile').get_attribute('aria-expanded')
     page.locator('#menuBtn.gn-top-tile').click()
-    assert 'nav-open' in page.locator('#shell').get_attribute('class') or page.locator('#leftNav').is_visible(), 'Contents did not open'
+    after=page.locator('#menuBtn.gn-top-tile').get_attribute('aria-expanded')
+    assert before in ('true','false') and after in ('true','false') and before!=after, ('Contents did not toggle',width,before,after)
+    if after=='true':
+        assert page.locator('#leftNav').is_visible(), ('Open Contents hidden',width)
+    else:
+        assert not page.locator('#leftNav').is_visible(), ('Closed Contents remains visible',width)
     docw=page.evaluate('document.documentElement.scrollWidth')
     assert docw<=width+6, ('Document overflows screen',width,docw)
     assert not errors, (engine,width,errors[:4])
