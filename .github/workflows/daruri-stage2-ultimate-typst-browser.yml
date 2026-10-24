@@ -31,6 +31,10 @@ jobs:
           python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
           python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
             daruri/qa/stage2_shootout/runtime_ultimate scholarly
+          # Vite dev rewrites .html with its hot-reload client; serve a verbatim
+          # text payload for precise on-device SHA-256 source checks.
+          cp daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+             daruri/qa/stage2_shootout/runtime_ultimate/scholarly.source.txt
       - name: Install pinned browser compiler and the selected native engine
         run: |
           npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
