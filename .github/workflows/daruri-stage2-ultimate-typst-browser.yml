@@ -7,6 +7,7 @@ on:
       - 'daruri/qa/stage2_shootout/test_ultimate_typst_browser.cjs'
       - '.github/workflows/daruri-stage2-ultimate-typst-browser.yml'
   workflow_dispatch:
+  # Source-layout integration regression: latest canonical 258-section outline.
 permissions:
   contents: read
 concurrency:
