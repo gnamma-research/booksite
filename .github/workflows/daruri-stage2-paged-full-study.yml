@@ -1,0 +1,63 @@
+name: Daruri Paged.js ordinary-browser FULL real Study note layout (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-paged-full-20261024]
+    paths:
+      - '.github/workflows/daruri-stage2-paged-full-study.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-paged-actual-full-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser-real-full-study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Write complete actual Study HTML, note declarations and source SHA
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/study_source_fixture.py \
+            daruri/qa/stage2_shootout/runtime_study
+      - name: Install Paged.js and normal Chromium in CI
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+      - name: Paginate ALL original bilingual source and all genuine Study notes in browser
+        env:
+          STAGE2_HTML_ENGINE: paged
+          STAGE2_HTML_SCOPE: full
+          STAGE2_BROWSER: chromium
+          STAGE2_OUTPUT: /tmp/daruri-full-paged-study
+        run: |
+          /usr/bin/time -v node daruri/qa/stage2_shootout/html_engines_browser.cjs
+      - name: Structural PDF text, note and original navigation audit of CI-only user-print output
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils qpdf
+          pdf=/tmp/daruri-full-paged-study/paged-study-full-QAONLY.pdf
+          qpdf --check "$pdf"
+          pdfinfo "$pdf" | grep -E 'Pages:|Page size:|File size:'
+          python - "$pdf" <<'PY'
+          import fitz,sys,json
+          p=sys.argv[1]
+          doc=fitz.open(p)
+          source_texts=sum('R 001' in page.get_text() or 'R 258' in page.get_text() for page in doc)
+          links=sum(len(page.get_links()) for page in doc)
+          print('PAGED_FULL_STUDY_QA',json.dumps({'pages':len(doc),'links':links,'source_marker_pages':source_texts}))
+          assert len(doc)>=30 and links>=100
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-paged-full-actual-study-NONRELEASE
+          path: /tmp/daruri-full-paged-study
+          if-no-files-found: warn
+          retention-days: 14
