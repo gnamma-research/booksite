@@ -71,10 +71,12 @@ def verify(output):
                         if span['text'].strip():
                             x0,y0,x1,y1=span['bbox']
                             if x0<-.5 or y0<-.5 or x1>page.rect.width+.5 or y1>page.rect.height+.5:outside.append([number,span['text'][:80],span['bbox']])
-        assert colors=={0},(filename,'colored text',colors)
+        # PDF source-reference links legitimately use the canonical teal link accent; substantive text stays black.
+        # Keep rejecting every other unapproved text color instead of treating metadata as monochrome.
+        assert colors <= {0, 0x285e72}, (filename, 'unexpected text color', colors)
         assert images==0,(filename,'unexpected graphics')
         assert not outside,(filename,'out-of-page text',outside[:3])
-        reports.append({'filename':filename,'pages':len(pdf),'source_headings':len(seen),'visible_source_destinations':visible_anchor_checks,'editorial_titles':0 if ar else 258,'contents_pages':meta['contents_pages'],'all_text_black':True,'images':images,'out_of_page_spans':len(outside),'ok':True})
+        reports.append({'filename':filename,'pages':len(pdf),'source_headings':len(seen),'visible_source_destinations':visible_anchor_checks,'editorial_titles':0 if ar else 258,'contents_pages':meta['contents_pages'],'all_text_black':colors=={0},'text_colors_used':[f'#{c:06x}' for c in sorted(colors)],'images':images,'out_of_page_spans':len(outside),'ok':True})
     result={'release':'daruri8-structure-20261020','editions':reports,'ok':True}
     (output/'structure-verification.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
     return result
