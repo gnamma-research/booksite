@@ -81,8 +81,24 @@ def run_case(browser, engine, width):
         icons[kind]=glyph.inner_html()
     assert len(set(icons.values()))==3, ('Icons are duplicates',icons)
     assert page.locator('[data-gn-menu="text"] .gn-copy-type-mark').inner_text()=='Aa'
-    assert page.locator('[data-gn-menu="notes"] .gn-copy-symbol path').count()>=3
+    assert page.locator('[data-gn-menu="notes"] .gn-copy-symbol path').count()==3
+    assert page.locator('[data-gn-menu="notes"] .gn-copy-symbol rect').count()==0, 'Notes must be a speech bubble, not another box'
     assert page.locator('[data-gn-menu="research"] .gn-copy-symbol rect').count()==1
+    assert page.locator('[data-gn-menu="research"] .gn-copy-symbol path').count()>=3
+    # Markup alone doesn't establish visual distinction. Compare the rendered
+    # 22px icon tiles in the current browser, including mobile WebKit.
+    bitmaps={}
+    for kind in ('text','notes','research'):
+        image_bytes=page.locator('[data-gn-icon="'+kind+'"]').screenshot()
+        bitmaps[kind]=Image.open(io.BytesIO(image_bytes)).convert('RGB').resize((44,44))
+    for i,kind in enumerate(bitmaps):
+        for other in list(bitmaps)[i+1:]:
+            differences=sum(
+                1 for p,q in zip(bitmaps[kind].getdata(),bitmaps[other].getdata())
+                if max(abs(p[c]-q[c]) for c in range(3))>=45
+            )
+            assert differences>=100, (engine,width,'Copy icons visually too similar',kind,other,differences)
+
     assert not page.locator('[data-gn-menu="selected"]').count(), 'Selected text shown with no selection'
     if width in (390,1280) and engine=='chromium':
         page.screenshot(path=str(Path('/tmp')/f'daruri-copy-icons-{engine}-{width}.png'))

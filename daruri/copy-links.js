@@ -133,15 +133,14 @@ function mountCopyButton(){
  arrow.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();if(menu&&!menu.hidden)closeMenu();else openMenu(arrow)});
 }
 function menuHost(){if(menu)return menu;menu=document.createElement('div');menu.className='gn-copy-menu';menu.id='gn-copy-menu';menu.hidden=true;menu.setAttribute('role','menu');menu.setAttribute('aria-label','Copy options');document.body.append(menu);return menu;}
-/* Distinct silhouettes at 18px: Aa = text, annotated notebook = notes,
-   archive box = complete research material.  All symbols are decorative;
-   the adjacent labels remain the accessible action names. */
-const copyMenuSvg=paths=>'<svg class="gn-copy-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths+'</svg>';
+/* Distinct at small sizes: typography Aa, a speech annotation bubble,
+   and a three-volume scholarly source collection. Not three page icons. */
+const copyMenuSvg=paths=>'<svg class="gn-copy-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths+'</svg>';
 const copyMenuSymbols=Object.freeze({
  selected:copyMenuSvg('<rect x="3" y="4" width="18" height="16" rx="2" stroke-dasharray="2 2"/><path d="M7 9h10M7 13h6"/>'),
  text:'<span class="gn-copy-type-mark">Aa</span>',
- notes:copyMenuSvg('<path d="M7 3h9v3M18 13v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"/><path d="M3 8h4M3 14h4M3 19h4M9 16h5"/><path d="m12 10 6.5-6.5 2 2L14 12l-3 1z"/>'),
- research:copyMenuSvg('<rect x="3" y="8" width="18" height="13" rx="2"/><path d="M2 4h20v4H2zM10 12h4"/>'),
+ notes:copyMenuSvg('<path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/><path d="M8 9h8"/><path d="M8 13h6"/>'),
+ research:copyMenuSvg('<rect x="2.5" y="6" width="4.5" height="15" rx="1"/><path d="M10 3.5h4.5V21H10z"/><path d="M16.5 8.5l3.8-1 2 12.7-3.8 1z"/><path d="M3.5 18h2.5M11 18h2.5M18.2 18l2.7-.4"/>'),
  citation:'❞',
  link:'↗'
 });

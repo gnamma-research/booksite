@@ -13,8 +13,8 @@
 /* Keep each menu icon within the same neutral, compact 22px slot.
    Text uses letters rather than a third almost-identical document glyph. */
 .gn-copy-mini{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;flex:0 0 22px;width:22px;height:22px;font-size:17px;line-height:1;color:var(--text-soft,var(--muted,#7c7a71));text-align:center}
-.gn-copy-symbol{width:19px;height:19px;display:block;flex:none;stroke:currentColor;overflow:visible}
-.gn-copy-type-mark{display:inline-block;font:700 15px/1 Georgia,serif;letter-spacing:-.065em;white-space:nowrap}
+.gn-copy-symbol{width:21px;height:21px;display:block;flex:none;stroke:currentColor;overflow:visible}
+.gn-copy-type-mark{display:inline-block;font:700 16px/1 Georgia,serif;letter-spacing:-.065em;white-space:nowrap}
 .gn-copy-arrow{margin-left:auto;color:var(--muted,#777);font-size:16px}
 .gn-copy-rule{height:1px;background:var(--border,var(--line,#ddd));margin:5px 1px}
 #reader .passage-grid{position:relative}
