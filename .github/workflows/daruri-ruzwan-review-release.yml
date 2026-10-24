@@ -1,0 +1,119 @@
+name: Daruri teacher-reviewed editions and attribution
+
+on:
+  push:
+    branches: [fix/daruri-sibar-mutakallimun-20261024]
+    paths:
+      - 'daruri/edition-r3-20261020.js'
+      - 'daruri/build/build_editions.py'
+      - 'daruri/study/lessons-01-09.json'
+      - 'daruri/study/build-guide.py'
+      - 'daruri/study/build-guide-pdf.py'
+      - '.github/workflows/daruri-ruzwan-review-release.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daruri-ruzwan-review-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install reading-edition PDF dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b libcairo2 libfribidi0 fonts-dejavu-core
+          python -m pip install -q --upgrade pip
+          python -m pip install -q -r daruri/build/requirements.txt "PyMuPDF>=1.24,<2" "reportlab>=4" "pypdf>=4" "fonttools>=4"
+      - name: Regenerate synchronized three-level study guide
+        run: |
+          python daruri/study/build-guide.py
+          python daruri/study/build-guide-pdf.py --date 2026-10-24
+      - name: Rebuild five reading editions
+        run: |
+          python daruri/build/build_editions.py --output-dir /tmp/daruri-ruzwan-review
+      - name: Export updated portable source without the private handouts
+        run: |
+          python daruri/build/export_portable_source.py --output-dir daruri/source
+      - name: Validate attribution and reviewed passages in actual PDF text
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import fitz, json
+          root=Path('daruri')
+          expected=['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf']
+          for name in expected:
+              p=Path('/tmp/daruri-ruzwan-review')/name
+              assert p.exists(), name
+              with fitz.open(p) as pdf:
+                  intro=' '.join(page.get_text() for page in pdf[:min(len(pdf),5)])
+                  assert 'Ruzwan Mohammed' in intro, f'Attribution missing from {name}'
+                  assert len(pdf)>25, f'Incomplete {name}'
+              print(name,'PASS: source credit and complete PDF')
+          with fitz.open(root/'daruri-study-guide.pdf') as pdf:
+              text=' '.join(p.get_text() for p in pdf[:min(5,len(pdf))])
+              assert 'Ruzwan Mohammed' in text, 'Study companion is missing attribution'
+          js=(root/'edition-r3-20261020.js').read_text()
+          import re
+          m=re.search(r'textContent\s*=\s*("(?:[^"\\]|\\.)*")\s*;',js,re.S)
+          assert m, 'Canonical source payload missing'
+          book=json.loads(json.loads(m.group(1)))
+          assert len(book['notes'])==625 and len(book['glossary'])==153
+          assert all('Shaykh Ruzwan Mohammed' in next(x for x in book['notes'] if x['id']==n)['text'] for n in ['N003','N005','G-B2-0009','G-B2-0017'])
+          print('PASS: 625 notes, 153 glossary entries, 4 named citations')
+          PY
+      - name: Install verified PDFs and metadata
+        run: |
+          cp /tmp/daruri-ruzwan-review/daruri*.pdf daruri/
+          cp /tmp/daruri-ruzwan-review/daruri*.pdf.metadata.json daruri/build/release/
+      - name: Refresh PDF section maps, download links, manifest and offline identities
+        run: |
+          python daruri/build/update_release.py --rebuilt-dir /tmp/daruri-ruzwan-review --revision daruri20261024-lessonreview1 --edition-date 2026-10-24 --refresh-study-companion --apply
+          python daruri/build/update_release.py --rebuilt-dir /tmp/daruri-ruzwan-review --revision daruri20261024-lessonreview1 --edition-date 2026-10-24 --refresh-study-companion --check
+      - name: Verify source-to-publication agreement and record
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          root=Path('daruri')
+          h=(root/'index.html').read_text()
+          assert 'Teaching-source acknowledgement' in h
+          assert 'Shaykh Ruzwan Mohammed' in h
+          assert 'N003' in h and 'G-B2-0009' in h
+          m=json.loads((root/'pdf-editions-manifest.json').read_text())
+          assert m.get('release_revision')=='daruri20261024-lessonreview1'
+          assert 'daruri-study-guide.pdf' in m['companions']
+          print('PASS: website, attribution, PDF identities, study companion')
+          PY
+      - name: Commit publication artifacts to this isolated branch
+        run: |
+          git config user.name 'gnamma-research-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add daruri/index.html daruri/study-guide-data.js daruri/study/companion-metadata.json daruri/daruri-study-guide.pdf
+          git add daruri/daruri.pdf daruri/daruri-study.pdf daruri/daruri-english.pdf daruri/daruri-arabic.pdf daruri/daruri-arabic-vowelled.pdf
+          git add daruri/pdf-editions-manifest.json daruri/build/release/*.metadata.json daruri/download-bundle.js daruri/sw.js daruri/edition-r3-20261020.js
+          git add daruri/source/Daruri_Portable_Scholarly_Source.zip daruri/source/source-export-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Rebuild credited Daruri reading PDFs, companion, website and source archive [skip ci]'
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-teacher-review-build-evidence
+          path: |
+            /tmp/daruri-ruzwan-review/*metadata.json
+            daruri/study/companion-metadata.json
+            daruri/source/source-export-report.json
+          if-no-files-found: warn

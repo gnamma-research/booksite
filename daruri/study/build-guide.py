@@ -88,6 +88,7 @@ def build(data_only=False):
            '<header><p class="sg-eyebrow">AL-ḌARŪRĪ · STUDY GUIDE</p><h1>One text. Six steps of learning.</h1>',
            '<p>All 28 questions are available at Basic (recognition and distinction), Intermediate (explanation and reconstruction) and Advanced (evaluation and application). The opening has ten checks; every later topic has two. Attempt the checks before opening explanations.</p>',
            '<p>These are editorial teaching lessons, not chapters named by Ibn Rushd. Source section numbers remain stable; the numbered text is distinct from explanations and proposed research tasks.</p>',
+           '<p><b>Teaching-source acknowledgement.</b> Selected explanations and vocabulary choices for §§2, 4, 7 and 9 were informed by Shaykh Ruzwan Mohammed, <i>Lesson 1: The Classification of Knowledge and the Emergence of Uṣūl al-Fiqh</i> and <i>Lesson 2: The Proper Scope and Method of Uṣūl al-Fiqh</i> (classroom teaching notes, 2026). The edition independently checks Arabic wording and retains responsibility for its editorial choices.</p>',
            '<a href="daruri-study-guide.pdf?v=20261020-study1">Download the study companion (PDF; new formative checks are on the website)</a></header>',
            '<span id="study?level=basic"></span><span id="study?level=intermediate"></span><span id="study?level=advanced"></span><nav aria-label="Study questions"><ol>']
     out += ['<li><a href="#study-' + e(l['id']) + '">' + e(l['title']) + '</a></li>' for l in lessons]

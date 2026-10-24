@@ -4,7 +4,7 @@
     "id": "purpose",
     "unit": 1,
     "title": "What is uṣūl for?",
-    "summary": "Understand the book’s purpose, its four parts, and why Ibn Rushd gives rules of inquiry a distinctive place.",
+    "summary": "Understand the book’s purpose, its four parts, and why Ibn Rushd distinguishes the examination of sound inference from even universal practical knowledge.",
     "prerequisites": [
       "No previous study of uṣūl is required. Begin with the difference between knowing what to do and knowing how a conclusion is justified."
     ],
@@ -18,16 +18,28 @@
         "definition": "Knowledge of legal rulings concerning acts, such as prayer and almsgiving."
       },
       {
+        "term": "iʿtiqād",
+        "definition": "Assent or conviction: the end of the first kind of knowledge in §2, namely a judgement formed in the soul, distinct from a practical act."
+      },
+      {
         "term": "ṣināʿa",
         "definition": "A disciplined art or craft possessing methods and rules; it does not mean merely a manual occupation here."
       },
       {
         "term": "istiqrāʾ",
-        "definition": "Induction: in §4, establishing universal notions by examining early legal opinions case by case."
+        "definition": "Induction: in §4, validating many universal notions through the examination of early legal opinions case by case—not claiming that every methodological principle was first discovered in this way."
       },
       {
         "term": "qānūn",
         "definition": "A rule that guides inquiry and helps protect the mind against error."
+      },
+      {
+        "term": "sibār",
+        "definition": "Method of examination or investigation in §2. The original instrument image is explained by Ibn Rushd’s comparison with a compass and straightedge; ‘probe’ is too literal as the main translation."
+      },
+      {
+        "term": "mutakallimūn",
+        "definition": "Practitioners of kalām (dialectical theology), not generic discussants. In §§7 and 9 Ibn Rushd refers to their treatment of uṣūl and logical questions; §11 invokes their technical usage."
       }
     ],
     "applications": [],
@@ -45,7 +57,7 @@
         ],
         "explanation": [
           "In §1 Ibn Rushd describes a concise reminder drawn from al-Ghazālī’s al-Mustaṣfā. Its brevity does not make it an elementary textbook. The guide therefore begins with the orientation that §8 says a learner needs: the discipline’s purpose, place among the sciences, name and divisions.",
-          "Section 2 distinguishes knowledge directed towards belief, knowledge directed towards action, and knowledge of the rules that guide inquiry. Sections 3–4 explain why later jurists need those rules stated explicitly, even though earlier jurists could exercise the relevant capacity without a separate formal discipline. Section 5 maps four inquiries: rulings, sources, derivation and the jurist."
+          "Section 2 distinguishes knowledge directed towards assent (iʿtiqād), knowledge directed towards action, and knowledge of the rules that regulate inquiry. Knowledge of universal rulings or legal sources is still practical rather than automatically methodological. Sections 3–4 explain why later jurists need rules stated explicitly, although earlier jurists could exercise the relevant capacity without a separate formal discipline. Section 5 maps four inquiries: rulings, sources, derivation and the jurist."
         ],
         "example": {
           "title": "A ruler for thought",
@@ -73,8 +85,8 @@
           148
         ],
         "explanation": [
-          "Section 6 identifies the third part as the discipline’s proper inquiry because it supplies methods of derivation; the other parts concern knowledge directed towards action. Yet §7 retains al-Ghazālī’s fourfold arrangement. Distinguish a claim about the most exact classification of a science from a decision about how to organize this book.",
-          "Ibn Rushd also distinguishes assuming widely accepted principles from explaining how derivation proceeds under different accepted positions. He prefers the latter as more useful to a general method. Section 148 returns to the distinctive inquiry: understanding prophetic meaning through wording and indications. Section 9’s omission of the logical introduction concerns disciplinary order."
+          "Section 6 identifies the third part as the discipline’s distinctive inquiry because it supplies methods of derivation; the other parts concern knowledge directed towards action. The phrase min tilka (‘of those’) refers back most naturally to those other parts when Ibn Rushd introduces two approaches to their disputed premises. Yet §7 retains al-Ghazālī’s fourfold arrangement and refers expressly to the practice of the mutakallimūn, practitioners of kalām. Distinguish a strict classification of the science from this book’s pedagogical organization.",
+          "Ibn Rushd contrasts accepting widely recognized methodological premises with explaining how derivation proceeds under different opinions, such as those of the Ẓāhirīs and defenders of qiyās. He prefers the comparative treatment as more useful, without treating all opinions as equally correct. Section 148 returns to the distinctive inquiry: understanding prophetic meaning through wording and indications. Section 9 omits a logical introduction on grounds of disciplinary placement, not opposition to logic; al-Ghazālī himself described his logical prologue as a general introduction to sciences rather than a constituent part of uṣūl."
         ],
         "example": {
           "title": "Different starting commitments",
@@ -101,8 +113,8 @@
           148
         ],
         "explanation": [
-          "Read §§2–4 as a connected argument. The classification of knowledge supplies a place for rules of inquiry; historical changes explain the need to articulate them; early legal opinions provide material for establishing some universal notions. The wording of §4 says many such notions, not every principle without exception.",
-          "A research comparison with logical works or al-Mustaṣfā must test this particular combination of claims. The compass analogy alone does not establish identity with demonstrative syllogistic, and omitting a logical prolegomenon in §9 does not establish hostility to logic. Distinguish the text’s assertions from a proposed reconstruction of its intellectual background."
+          "Read §§2–4 as a connected argument: classificatory ends of knowledge, the historical need for articulated standards, and early legal opinions as materials for verifying general methodological notions. The wording of §4 says that many such notions were validated (ṣuḥḥiḥat) through induction, not that every principle of uṣūl was originally discovered from Companion fatwās or that every fatwā is beyond criticism.",
+          "A comparison with logical works and al-Mustaṣfā must test the exact arguments and their disciplinary setting. Ibn Rushd’s reference to the mutakallimūn in §§7 and 9 identifies theologians active in uṣūl, not everyone discussing the field. The compass analogy alone does not establish identity with demonstrative syllogistic; omitting a logical prolegomenon in §9 does not establish hostility to logic. Al-Ghazālī also describes his prologue as a general preliminary, not part of uṣūl proper."
         ],
         "example": {
           "title": "An objection answered by practice",
@@ -113,7 +125,7 @@
           "Design one source comparison that could test whether §6’s comparative method is already present in al-Mustaṣfā."
         ],
         "feedback": [
-          "A sound reconstruction identifies the objection, the capacity/study distinction, and induction from particular opinions. It must not convert a historical explanation into proof that every inherited opinion is correct.",
+          "A sound reconstruction identifies the objection, implicit practical competence, and the inductive verification of many—not all—general notions. It must not turn the Companions' prior judgements into proof that every inherited opinion is correct.",
           "Research criteria: locate an exact parallel, compare the proposed treatment of rival principles, and record agreement and divergence. A thematic resemblance or shared vocabulary is a lead, not a completed demonstration of dependence."
         ]
       }
