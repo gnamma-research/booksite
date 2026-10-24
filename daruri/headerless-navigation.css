@@ -492,3 +492,34 @@
  body.reader-enhanced:not(.reading-active) #readingControls :is(.gn-top-home,.gn-top-read) span{display:none!important}
  body.reader-enhanced.reading-active #readingControls .gn-reader-global-leading{gap:0!important}
 }
+
+
+/* 2026-10-24 release-candidate fix, independently reproduced on master:
+   the original Focus rule hides the Contents *parent* rather than its
+   circular button. Re-enable that parent in all three reading modes.
+   Narrow toolbars use flexible widths, never off-screen icon buttons. */
+@media screen {
+ body.reader-enhanced.reading-active.focus-mode #readingControls:not([hidden]) .gn-reader-global-leading{
+  display:flex!important;visibility:visible!important;opacity:1!important
+ }
+ body.reader-enhanced.reading-active.focus-mode #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn.gn-top-tile{
+  display:inline-flex!important;visibility:visible!important;opacity:1!important
+ }
+}
+@media screen and (max-width:620px) {
+ body.reader-enhanced.reading-active #readingControls:not([hidden]) .reading-controls-inner{
+  gap:2px!important;min-width:0!important
+ }
+ body.reader-enhanced.reading-active #readingControls:not([hidden]) .reader-language-and-actions{
+  flex:0 1 auto!important;min-width:0!important
+ }
+ body.reader-enhanced.reading-active #readingControls:not([hidden]) #persistentLanguages{
+  flex:0 1 auto!important;min-width:0!important;max-width:100%!important
+ }
+ body.reader-enhanced.reading-active #readingControls:not([hidden]) #persistentLanguages>button{
+  flex:1 1 33px!important;width:auto!important;min-width:24px!important;max-width:33px!important
+ }
+ body.reader-enhanced.reading-active #readingControls:not([hidden]) :is(#focusToolbar,#readerSaveAction,#readerCopyAction,#readerShareAction,#searchBtn,#settingsBtn){
+  flex:1 1 var(--gn-scholar-btn,36px)!important;width:auto!important;min-width:28px!important;max-width:40px!important
+ }
+}
