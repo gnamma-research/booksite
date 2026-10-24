@@ -55,7 +55,7 @@ function currentGrid(){
  return nodes.find(n=>n.getBoundingClientRect().top<=cutoff&&n.getBoundingClientRect().bottom>=cutoff) ||
    nodes.find(n=>n.getBoundingClientRect().bottom>cutoff)||nodes[0];
 }
-function currentTarget(){return targeted||gridLocation(currentGrid())||{section:String(C.state.n),index:0,id:idFor(C.state.n,0)};}
+function currentTarget(){return selected?{section:selected.section,index:selected.start,id:idFor(selected.section,selected.start)}:targeted||gridLocation(currentGrid())||{section:String(C.state.n),index:0,id:idFor(C.state.n,0)};}
 let targeted=null,selected=null,selectionScheduled=false,menu=null,sheet=null,opener=null,config=null,preloadIssue=[],sourceReady=false,preloadToken=0,pendingSelection=null;
 function selectionSnapshot(){
  const s=window.getSelection();if(!s||s.isCollapsed||!String(s).trim()||!s.rangeCount)return null;
