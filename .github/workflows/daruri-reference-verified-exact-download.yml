@@ -1,0 +1,54 @@
+name: Daruri real Editions Reference verified exact-download UI (NONRELEASE)
+on:
+  push:
+    branches: [feature/daruri-reference-verified-exact-download-20261025]
+    paths:
+      - 'daruri/editions.js'
+      - 'daruri/editions-icons.css'
+      - 'daruri/verified-reference-qa.html'
+      - 'daruri/qa/verified_reference/**'
+      - '.github/workflows/daruri-reference-verified-exact-download.yml'
+  workflow_dispatch:
+concurrency:
+  group: daruri-exact-reference-qa-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  real-reference-ui:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install pinned real browsers
+        run: |
+          npm install --prefix daruri/qa/verified_reference --no-package-lock --no-audit --no-fund
+          cd daruri/qa/verified_reference
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Test real Reference UI SHA-verified exact approved PDF in desktop + small phones
+        env:
+          BENCH_BROWSER: ${{ matrix.browser }}
+          BENCH_OUT: /tmp/daruri-exact-reference-${{ matrix.browser }}
+        run: |
+          node --check daruri/editions.js
+          node --check daruri/qa/verified_reference/test.cjs
+          node daruri/qa/verified_reference/test.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-reference-verified-download-${{ matrix.browser }}-NONRELEASE
+          path: /tmp/daruri-exact-reference-${{ matrix.browser }}
+          if-no-files-found: warn
+          retention-days: 14

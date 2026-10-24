@@ -1,0 +1,8 @@
+{
+  "name": "daruri-reference-verified-exact-qa",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "playwright": "1.56.1"
+  }
+}

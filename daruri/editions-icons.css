@@ -343,3 +343,12 @@
 @media(max-width:480px){
   .gn-editions .gn-ed-language-pair > button.gn-ed-lang-toggle{width:53px;min-width:46px}
 }
+
+/* Exact approved Reference PDF: keep the 48px download control clear of the
+   sticky Editions status header when tapped or keyboard-focused on phones. */
+.gn-editions [data-ep-verified-reference-download]{
+  scroll-margin-top:calc(env(safe-area-inset-top,0px) + 280px)
+}
+.gn-editions [data-ep-verified-reference-download]:disabled{
+  opacity:.58;cursor:progress
+}
