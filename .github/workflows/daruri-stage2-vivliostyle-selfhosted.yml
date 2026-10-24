@@ -1,0 +1,56 @@
+name: Daruri real Study self-hosted Vivliostyle browser footnote QA (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-vivliostyle-study-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/html_engines_browser.cjs'
+      - '.github/workflows/daruri-stage2-vivliostyle-selfhosted.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-vivliostyle-actual-viewer-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser-study-vivliostyle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Produce canonical footnoted Study HTML from source
+        run: |
+          python -m pip install -q beautifulsoup4
+          python daruri/qa/stage2_shootout/study_source_fixture.py \
+            daruri/qa/stage2_shootout/runtime_study
+      - name: Install real self-hosted browser typesetter
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+      - name: Publish static viewer JS/CSS assets on same-origin test URL (NO external service)
+        run: |
+          root=daruri/qa/stage2_shootout
+          find "$root/node_modules/@vivliostyle/viewer/lib" -maxdepth 1 -type f -printf '%f %s bytes\n'
+          mkdir -p "$root/runtime_study/viewer"
+          cp -a "$root/node_modules/@vivliostyle/viewer/lib/." "$root/runtime_study/viewer/"
+          du -sh "$root/runtime_study/viewer"
+          node --check "$root/html_engines_browser.cjs"
+      - name: Paginate actual original Study notes inside normal Chromium
+        env:
+          STAGE2_HTML_ENGINE: vivliostyle
+          STAGE2_BROWSER: chromium
+          STAGE2_HTML_SCOPE: stress
+          STAGE2_OUTPUT: /tmp/gnamma-vivliostyle-selfhost-study
+        run: |
+          node daruri/qa/stage2_shootout/html_engines_browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-vivliostyle-self-host-study-NONRELEASE
+          path: /tmp/gnamma-vivliostyle-selfhost-study
+          if-no-files-found: warn
+          retention-days: 14
