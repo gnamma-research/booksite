@@ -92,9 +92,23 @@ async function run(){
   const target=BASE+route;
   const url=BASE+'/daruri/qa/stage2_shootout/'+sub+name+
     '#src='+encodeURIComponent(target)+'&bookMode=false&renderAllPages=true&spread=false';
-  await page.goto(url,{waitUntil:'domcontentloaded'});
+  const loaded=await page.goto(url,{waitUntil:'domcontentloaded'});
+  report.viewer_source_url=BASE+route;
+  report.viewer_url=url;
+  report.viewer_http_status=loaded?.status();
+  report.viewer_probe=await page.evaluate(()=>({
+    title:document.title,href:location.href,
+    firstHtml:document.documentElement?.outerHTML.slice(0,500),
+    bodyText:(document.body?.innerText||'').slice(0,400)
+  }));
+  const originalResponse=await fetch(BASE+route);
+  report.input_html_probe={
+    status:originalResponse.status,
+    is_original_study:(await originalResponse.text()).includes('footnote english')
+  };
+  if(!report.input_html_probe.is_original_study)throw Error('Static HTTP returned the Gnamma homepage instead of Study HTML');
   let m;
-  for(let n=0;n<130;n++){
+  for(let n=0;n<26;n++){
     m=await page.evaluate(()=>{
       const docs=[document,...[...document.querySelectorAll('iframe')].flatMap(f=>{
        try{return f.contentDocument?[f.contentDocument]:[]}catch{return[]}
@@ -107,7 +121,7 @@ async function run(){
       };
     });
     if(m.source_fragments>5){Object.assign(report,m);break}
-    if(n===129){Object.assign(report,m);throw Error('Vivliostyle did not render the original Study document in an accessible viewer')}
+    if(n===25){Object.assign(report,m);await page.screenshot({path:path.join(OUTPUT,'vivliostyle-failure.png'),animations:'disabled'});throw Error('Vivliostyle did not render original Study; inspect viewer/source URL and screenshot')}
     await sleep(750);
   }
   await page.screenshot({path:path.join(OUTPUT,'vivliostyle-browser.png'),animations:'disabled'});
