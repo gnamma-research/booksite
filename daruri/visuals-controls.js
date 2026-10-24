@@ -40,11 +40,33 @@
     sync();
     show(kind,label);
   }
+  function installAppearance(){
+    const panel=$('#settingsOverlay');
+    const header=panel?.querySelector('.gn-visuals-header');
+    if(!header||header.querySelector('#gn-visuals-appearance'))return;
+    const row=document.createElement('div');
+    row.id='gn-visuals-appearance';row.className='gn-visuals-appearance';
+    const existing=panel.querySelector('.gn-colour-mode');
+    if(existing){
+      row.appendChild(existing);
+      existing.setAttribute('role','group');
+      existing.setAttribute('aria-label','Appearance: light, dark or system');
+    }else{
+      const button=document.createElement('button');
+      button.type='button';button.className='gn-appearance-switch';
+      button.textContent='Light / Dark';button.setAttribute('aria-label','Switch light or dark appearance');
+      button.addEventListener('click',()=>document.getElementById('themeBtn')?.click());
+      row.appendChild(button);
+    }
+    header.insertAdjacentElement('afterend',row);
+  }
   function bind(){
+    installAppearance();
     const overlay=$('#settingsOverlay');
     if(overlay){
       new MutationObserver(records=>{
         if(records.some(record=>record.attributeName==='hidden')&&!overlay.hidden){
+          installAppearance();
           clear();
           requestAnimationFrame(sync);
         }

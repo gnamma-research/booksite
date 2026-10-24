@@ -56,11 +56,49 @@
   if(document.body.classList.contains('reading-active')){
    read.classList.add('active');read.setAttribute('aria-current','page');
   }
-  // Clicking Read while already reading must not reset the paragraph/scroll position.
+  // The dock is the authoritative *visible* section in Continuous mode.
+  // Save it only when the user actually leaves reading; never mistake the
+  // beginning of the full continuous DOM for their last reading position.
+  let resumeSection=null;
+  document.addEventListener('click',function(event){
+    const dest=event.target?.closest?.('[data-route]');
+    if(!dest||dest.dataset.route==='reader'||!document.body.classList.contains('reading-active'))return;
+    const visible=document.getElementById('dockSection')?.textContent?.match(/\d+/)?.[0];
+    const hash=location.hash.match(/section=(\d+)/)?.[1];
+    const id=visible||hash;
+    if(id)resumeSection=id;
+  },true);
+  // A Read/Resume action is not an instruction to restart Continuous at §1.
   read.addEventListener('click',function(event){
-   if(document.body.classList.contains('reading-active')){
-    event.preventDefault();event.stopPropagation();
-   }
+    if(document.body.classList.contains('reading-active')){
+      event.preventDefault();event.stopPropagation();return;
+    }
+    const targetSection=resumeSection;
+    if(!targetSection)return;
+    let attempts=0;
+    function restoreContinuousPosition(){
+      if(++attempts>20)return;
+      if(!document.body.classList.contains('reading-active')){
+        setTimeout(restoreContinuousPosition,100);return;
+      }
+      // Ordinary Reading and Focus 1/2 keep the existing native section
+      // navigation. Only Continuous requires DOM scroll restoration.
+      if(!document.body.classList.contains('focus-level-3'))return;
+      const group=document.getElementById('gn-continuous-'+targetSection);
+      if(!group||!group.getClientRects().length){
+        setTimeout(restoreContinuousPosition,100);return;
+      }
+      group.scrollIntoView({block:'start',behavior:'instant'});
+      const top=document.getElementById('readingControls')?.getBoundingClientRect().bottom||0;
+      if(group.getBoundingClientRect().top<top+12)
+        window.scrollBy({top:group.getBoundingClientRect().top-top-14,behavior:'instant'});
+      window.dispatchEvent(new Event('scroll'));
+      setTimeout(()=>{
+        if(!document.getElementById('dockSection')?.textContent?.includes('§'+targetSection))
+          restoreContinuousPosition();
+      },100);
+    }
+    requestAnimationFrame(()=>requestAnimationFrame(restoreContinuousPosition));
   });
 
   // Search/Display/Help are global actions, not part of the Focus group.
