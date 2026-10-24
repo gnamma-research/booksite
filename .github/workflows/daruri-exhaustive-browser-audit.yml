@@ -1,13 +1,9 @@
 name: Daruri independent exhaustive browser audit
 on:
-  push:
-    branches: [qa/daruri-exhaustive-browser-audit-20261024]
-    paths:
-      - 'daruri/qa/verify-exhaustive-reader-audit.cjs'
-      - '.github/workflows/daruri-exhaustive-browser-audit.yml'
   pull_request:
     paths:
       - 'daruri/qa/verify-exhaustive-reader-audit.cjs'
+      - 'daruri/qa/verify-exhaustive-mode-offline.cjs'
       - '.github/workflows/daruri-exhaustive-browser-audit.yml'
   workflow_dispatch:
 permissions:
@@ -22,7 +18,9 @@ jobs:
         with:
           node-version: '22'
       - name: Check JavaScript syntax
-        run: node --check daruri/qa/verify-exhaustive-reader-audit.cjs
+        run: |
+          node --check daruri/qa/verify-exhaustive-reader-audit.cjs
+          node --check daruri/qa/verify-exhaustive-mode-offline.cjs
       - name: Exclude inaccessible unrelated apt source
         run: |
           for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
@@ -37,6 +35,9 @@ jobs:
           npx --prefix daruri/qa playwright install --with-deps chromium webkit
       - name: Test reader routes, responsiveness, JavaScript off, font failure, locales, blocked storage, search abuse and WCAG
         run: node daruri/qa/verify-exhaustive-reader-audit.cjs
+      - name: Test ordinary Reading, Focus 2, Continuous, native fallback links and real offline cache
+        if: always()
+        run: node daruri/qa/verify-exhaustive-mode-offline.cjs
       - name: Upload evidence including screenshots, metrics and findings
         if: always()
         uses: actions/upload-artifact@v4
