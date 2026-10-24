@@ -81,8 +81,8 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   return prefix+body;
  }
  const lines=[
-   '#set page(paper: "a4", margin: (top: 17mm,bottom:18mm,left:17mm,right:17mm), numbering: "1", number-align: center + bottom)\\n',
-   '#set document(title: "Al-Ḍarūrī fī Uṣūl al-Fiqh — Scholarly Edition", author: "Abū al-Walīd Ibn Rushd")\\n',
+   '#set page(paper: "a4", margin: (top: 17mm,bottom:18mm,left:17mm,right:17mm), numbering: "1", number-align: center + bottom)\n',
+   '#set document(title: "Al-Ḍarūrī fī Uṣūl al-Fiqh — Scholarly Edition", author: "Abū al-Walīd Ibn Rushd")\n',
    '#set text(font: "Noto Serif",lang:"en",size:9pt)\n',
    '#set par(leading: 0.7em, justify:false)\n',
    // The original HTML already supplies two authoritative contents lists.
@@ -138,24 +138,24 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
     const coverAr=el.querySelector('p.author span[lang="ar"]');
     const authorAr=textEscape(coverAr?.textContent||'');
     return [
-      '#align(center)[\\n',
-      '#v(36mm)\\n',
-      '#text(size:10pt,weight:"bold",tracking:1.3pt)['+textOf('.brand')+']\\n',
-      '#v(12mm)\\n',
-      '#text(font:"Noto Naskh Arabic",lang:"ar",dir:rtl,size:25pt)['+textOf('.arabic-title')+']\\n',
-      '#v(8mm)\\n',
-      '#heading(level:1,outlined:true)['+textOf('h1')+']\\n',
-      '#v(7mm)\\n',
-      '#text(size:12pt)['+authorEn+']\\n',
-      '#v(3mm)\\n',
-      '#text(font:"Noto Naskh Arabic",lang:"ar",dir:rtl,size:13pt)['+authorAr+']\\n',
-      '#v(20mm)\\n',
-      '#text(size:12pt,weight:"bold")['+textOf('.edition')+']\\n',
-      '#v(5mm)\\n',
-      '#text(size:9pt)['+textOf('.scope')+']\\n',
-      '#v(24mm)\\n',
-      '#text(size:9pt)['+textOf('.date')+']\\n',
-      ']\\n#pagebreak()\\n'
+      '#align(center)[\n',
+      '#v(36mm)\n',
+      '#text(size:10pt,weight:"bold",tracking:1.3pt)['+textOf('.brand')+']\n',
+      '#v(12mm)\n',
+      '#text(font:"Noto Naskh Arabic",lang:"ar",dir:rtl,size:25pt)['+textOf('.arabic-title')+']\n',
+      '#v(8mm)\n',
+      '#heading(level:1,outlined:true)['+textOf('h1')+']\n',
+      '#v(7mm)\n',
+      '#text(size:12pt)['+authorEn+']\n',
+      '#v(3mm)\n',
+      '#text(font:"Noto Naskh Arabic",lang:"ar",dir:rtl,size:13pt)['+authorAr+']\n',
+      '#v(20mm)\n',
+      '#text(size:12pt,weight:"bold")['+textOf('.edition')+']\n',
+      '#v(5mm)\n',
+      '#text(size:9pt)['+textOf('.scope')+']\n',
+      '#v(24mm)\n',
+      '#text(size:9pt)['+textOf('.date')+']\n',
+      ']\n#pagebreak()\n'
     ].join('');
   }
   if(tag==='a')return rich(el)+'\n';
@@ -202,18 +202,18 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   if(sourceNumber && /^(?:[1-9][0-9]*)$/.test(sourceNumber) && Number(sourceNumber)<=258){
     const number=Number(sourceNumber);
     const topic=(sectionTopics.get(number)||('Section '+sourceNumber))
-      .replace(/^\\s*[0-9]+\\.\\s*/,'');
+      .replace(/^\s*[0-9]+\.\s*/,'');
     const label=textEscape('§'+sourceNumber+' · '+topic);
     const children=[...el.childNodes].map(block).join('');
     // Scoped Typst heading display suppression. The actual heading remains
     // in Typst's semantic/PDF outline but contributes NO printed editorial
     // prose, blank space or changed canonical book text.
     const pdfBookmark='#{ show heading: none; heading(level: 2, outlined: true, bookmarked: true)['+
-      label+'] }\\n';
+      label+'] }\n';
     return anchor(el)+pdfBookmark+children;
   }
   const begin=anchor(el);
-  const breakBefore=el.matches('main.main-text')?'#pagebreak()\\n':
+  const breakBefore=el.matches('main.main-text')?'#pagebreak()\n':
     (el.matches('section.page-start,section.cover,section.contents')||
       el.id==='concordance'||el.id==='lexicon')?'#pagebreak(weak:true)\n':'';
   const body=[...el.childNodes].map(block).join('');
