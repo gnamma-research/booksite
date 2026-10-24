@@ -1,0 +1,39 @@
+name: Daruri 12 production A4 PDFs - practical Arabic Find audit (READ ONLY)
+on:
+  push:
+    branches: [qa/daruri-a4-native-arabic-search-20261024]
+    paths:
+      - 'daruri/qa/verify_a4_arabic_search.py'
+      - '.github/workflows/daruri-a4-arabic-find.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-a4-arabic-search-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  practical-arabic-find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install three independent native PDF search and text engines
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          python -m pip install -q PyMuPDF==1.26.7 pypdfium2==5.4.0
+      - name: Audit all exact SHA-pinned 12 published A4 PDFs - Arabic words/English controls
+        run: |
+          python daruri/qa/verify_a4_arabic_search.py \
+            /tmp/gnamma-a4-arabic-search-evidence.json
+      - name: Publish report as research evidence without altering source PDFs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-a4-native-arabic-find-12-NONRELEASE
+          path: /tmp/gnamma-a4-arabic-search-evidence.json
+          if-no-files-found: warn
+          retention-days: 14
