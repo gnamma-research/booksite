@@ -13,7 +13,7 @@
 .gn-copy-mini{font-size:17px;color:var(--text-soft,var(--muted,#7c7a71));width:22px;text-align:center}
 .gn-copy-arrow{margin-left:auto;color:var(--muted,#777);font-size:16px}
 .gn-copy-rule{height:1px;background:var(--border,var(--line,#ddd));margin:5px 1px}
-#reader .passage-grid{position:relative;scroll-margin-top:clamp(70px,12vh,135px)}
+#reader .passage-grid{position:relative}
 #reader .gn-paragraph-link{position:absolute;z-index:1;top:2px;left:-45px;min-width:38px;min-height:39px;border:0;border-radius:7px;background:transparent;color:var(--muted,#797b72);font:500 11px/1.4 var(--sans,system-ui);opacity:.42;cursor:pointer}
 #reader .passage-grid:hover>.gn-paragraph-link,#reader .gn-paragraph-link:focus-visible,#reader .gn-paragraph-link:hover{opacity:1;background:var(--accent-soft,#ede6df);color:var(--text,#2d342d)}
 #reader .gn-paragraph-link:focus-visible{outline:2px solid var(--accent,#956a4d);outline-offset:2px}
