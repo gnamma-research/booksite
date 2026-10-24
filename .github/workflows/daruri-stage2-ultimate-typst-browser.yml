@@ -5,6 +5,8 @@ on:
     paths:
       - 'daruri/qa/stage2_shootout/ultimate_*'
       - 'daruri/edition-r3-20261020.js'
+      - 'daruri/build/data/full-headwords.json'
+      - 'daruri/qa/stage2_shootout/published_parity_compare.py'
       - 'daruri/qa/stage2_shootout/test_ultimate_typst_browser.cjs'
       - 'daruri/qa/stage2_shootout/verify_scholarly_candidate.py'
       - '.github/workflows/daruri-stage2-ultimate-typst-browser.yml'
@@ -98,4 +100,57 @@ jobs:
           name: daruri-full-scholarly-625-note-typst-${{ matrix.browser }}-NONRELEASE
           path: /tmp/daruri-ultimate-typst-${{ matrix.browser }}
           if-no-files-found: warn
+          retention-days: 14
+  published-edition-exact-parity:
+    needs: real-browser-ultimate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install independent native PDF parser and Poppler
+        run: |
+          python -m pip install -q PyMuPDF==1.26.7
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+      - uses: actions/download-artifact@v4
+        with:
+          name: daruri-full-scholarly-625-note-typst-chromium-NONRELEASE
+          path: /tmp/generated
+      - name: Fetch exact current published PDF and source from master
+        run: |
+          mkdir -p /tmp/published
+          git fetch --no-tags --depth=1 origin master
+          git show origin/master:daruri/daruri.pdf > /tmp/published/daruri.pdf
+          git show origin/master:daruri/edition-r3-20261020.js > /tmp/published/edition.js
+          git show origin/master:daruri/pdf-editions-manifest.json > /tmp/published/manifest.json
+          python - <<'PY'
+          import hashlib,json
+          m=json.load(open('/tmp/published/manifest.json'))['files']['daruri.pdf']
+          p=open('/tmp/published/daruri.pdf','rb').read()
+          assert hashlib.sha256(p).hexdigest()==m['sha256'], 'Approved PDF SHA does not match master manifest'
+          print('APPROVED_PDF_MANIFEST_SHA_PASS',m['sha256'])
+          PY
+      - name: Independently compare full scholarly browser output to approved edition
+        run: |
+          python daruri/qa/stage2_shootout/published_parity_compare.py \
+            /tmp/published/daruri.pdf \
+            /tmp/generated/daruri-scholarly-625-notes-browser-typst-NONRELEASE.pdf \
+            /tmp/published/edition.js \
+            daruri/edition-r3-20261020.js \
+            /tmp/published/exact-published-parity.json
+          python - <<'PY'
+          import json
+          x=json.load(open('/tmp/published/exact-published-parity.json'))
+          if x['exact_approved_pdf_copy']:
+              print('PUBLISHED_SCHOLARLY_EXACT_COPY: PASS')
+          else:
+              print('::warning::PUBLISHED_SCHOLARLY_EXACT_COPY: FAIL/NO-GO. See research artifact. Do NOT publish as identical to approved edition.')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-scholarly-current-master-exact-parity-NONRELEASE
+          path: /tmp/published/exact-published-parity.json
           retention-days: 14
