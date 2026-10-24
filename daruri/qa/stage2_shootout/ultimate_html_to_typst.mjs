@@ -150,6 +150,12 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
     return '#text(font:"'+font+'",lang:"'+lang+'",dir:'+(lang==='ar'?'rtl':'ltr')+
       ',size:'+(lang==='ar'?'10.5pt':'8.5pt')+')['+txt+']'+anchor(el)+'\n\n';
   }
+  // One outline entry for each canonical authorial section wrapper.
+  const sourceSection=/^section-([1-9][0-9]*)$/.exec(el.id||'');
+  if(sourceSection && Number(sourceSection[1])<=258){
+    const children=[...el.childNodes].map(block).join('');
+    return anchor(el)+'#heading(level:2,outlined:true)[Section '+sourceSection[1]+']\n'+children;
+  }
   const begin=anchor(el);
   const breakBefore=(el.matches('section.page-start,section.cover,section.contents')||
       el.id==='concordance'||el.id==='lexicon')?'#pagebreak(weak:true)\n':'';
