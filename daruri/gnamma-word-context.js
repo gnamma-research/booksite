@@ -337,5 +337,11 @@ document.addEventListener('keydown',e=>{
 new MutationObserver(()=>{
  if(!rendering)installDictionaryActions();
 }).observe(document.body,{subtree:true,childList:true,attributes:false});
-window.GnammaWordContext=Object.freeze({openWord,close,findSelectedWord,locateOccurrence:passageOccurrence});
+function openSelected(){
+ const selected=findSelectedWord();
+ if(!selected)return false;
+ openWord(selected.word,selected.anchor,selected.grid,selected.anchor,null);
+ return true;
+}
+window.GnammaWordContext=Object.freeze({openWord,openSelected,close,findSelectedWord,locateOccurrence:passageOccurrence});
 })();
