@@ -585,7 +585,7 @@
     {
       "term": "istiqrāʾ",
       "ar": "اسْتِقْرَاء",
-      "definition": "Induction: discerning a pattern from cases, including the recovery of early jurists’ implicit methods from their decisions.",
+      "definition": "Induction: examining particular cases to assess more general propositions. In §4 Ibn Rushd says that many universal methodological notions were validated from the Companions’ fatwās case by case; he does not claim that every principle was first invented by this procedure.",
       "sections": [
         4,
         217
@@ -638,9 +638,11 @@
     {
       "term": "kalām",
       "ar": "كَلَام",
-      "definition": "Speech; also rational theology. Which sense applies depends on the argument, and the latter is not the whole subject of uṣūl.",
+      "definition": "Speech in ordinary usage; rational or dialectical theology when naming a discipline. Its practitioners are the mutakallimūn (theologians); in §§7, 9 and 11 the term identifies such practitioners rather than generic discussants. The discipline of kalām is not identical with uṣūl al-fiqh.",
       "sections": [
+        7,
         9,
+        11,
         41,
         63,
         235
