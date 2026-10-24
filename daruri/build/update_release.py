@@ -194,6 +194,7 @@ def update_html(source, metadata, revision, assets=RELEASE_ASSETS):
     parsed = SourceHTML(source)
     section_pages = metadata["daruri.pdf"]["section_pages"]
     patches, destinations, panel_counts = [], [], {filename: 0 for filename in EDITIONS}
+    modern_counts = {filename: 0 for filename in EDITIONS}
     panel_keys = {entry[1]: filename for filename, entry in EDITIONS.items()}
     for node in parsed.elements:
         destination = static_destination(node)
@@ -224,14 +225,40 @@ def update_html(source, metadata, revision, assets=RELEASE_ASSETS):
             body = replace_exact_count(r'(<small class="gn-pdf-meta">)\d+ pages · [\d.]+ MB(</small>)', lambda m: m[1] + f"{info['pages']} pages · {size}" + m[2], body, 1, "Download visible count")
             patches.append((node.start, node.end, opening + body + source[node.close_start:node.end]))
             panel_counts[filename] += 1
+        # Current Editions navigation uses simple filename links instead of the
+        # old data-pdf-edition cards. Do not require removed markup or invent
+        # inaccessible duplicate panels when rebuilding the current website.
+        if node.tag == "a" and "data-pdf-edition" not in node.attrs and not destination:
+            url = urlsplit(node.attrs.get("href") or "")
+            filename = url.path
+            if filename in EDITIONS and not url.fragment:
+                info = metadata[filename]
+                opening = attribute(source[node.start:node.open_end], "href",
+                                    versioned_url(node.attrs["href"], revision))
+                body = source[node.open_end:node.close_start]
+                body = re.sub(r"\\(\\d+ pages\\)", f"({info['pages']} pages)", body)
+                patches.append((node.start, node.end,
+                                opening + body + source[node.close_start:node.end]))
+                modern_counts[filename] += 1
     require(len(destinations) == 565, f"Expected 565 static PDF destinations, found {len(destinations)}")
     require(sum(d["kind"] == "heading" for d in destinations) == 259, "Expected 259 heading PDF links")
     require(sum(d["kind"] == "contents" for d in destinations) == 306, "Expected 306 contents PDF links")
-    require(all(n == 2 for n in panel_counts.values()), "Both five-edition download panels must be complete")
+    legacy_panels = all(n == 2 for n in panel_counts.values())
+    modern_editions = all(n >= 1 for n in modern_counts.values())
+    require(legacy_panels or (sum(panel_counts.values()) == 0 and modern_editions),
+            "All five published editions must remain linked in a supported download layout")
     result = apply_spans(source, patches)
+    # The former About-page label/count phrases are absent from the current
+    # three-tier Editions view. Update only when those phrases still occur.
     for filename, (_, _, title) in EDITIONS.items():
-        result = replace_exact_count(re.escape(title) + r" \(\d+ pages\)", f"{title} ({metadata[filename]['pages']} pages)", result, 2, "Static/enhanced About edition count")
-    result = replace_exact_count(r"\d+-page bilingual reference PDF", f"{metadata['daruri.pdf']['pages']}-page bilingual reference PDF", result, 2, "Static/enhanced About reference description")
+        pattern = re.escape(title) + r" \(\d+ pages\)"
+        total = len(re.findall(pattern, result))
+        if total:
+            result = replace_exact_count(pattern, f"{title} ({metadata[filename]['pages']} pages)", result, total, "Legacy About edition count")
+    old_description = r"\d+-page bilingual reference PDF"
+    desc_count = len(re.findall(old_description, result))
+    if desc_count:
+        result = replace_exact_count(old_description, f"{metadata['daruri.pdf']['pages']}-page bilingual reference PDF", result, desc_count, "Legacy About reference description")
     result = version_asset_urls(result, revision, assets)
     # Preserve independently versioned guide/print assets. An explicit companion
     # refresh may advance the guide PDF, data and runtime URLs, never its content.
@@ -251,8 +278,8 @@ def update_html(source, metadata, revision, assets=RELEASE_ASSETS):
         "static_heading_destinations": 259,
         "static_contents_destinations": 306,
         "static_page_numbers_changed": sum(d["from"] != d["to"] for d in destinations),
-        "download_panels": 2,
-        "download_links": sum(panel_counts.values()),
+        "download_panels": 2 if legacy_panels else 1,
+        "download_links": sum(panel_counts.values()) if legacy_panels else sum(modern_counts.values()),
         "study_fallback_levels_preserved": 84,
     }
 
