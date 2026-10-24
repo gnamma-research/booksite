@@ -10,8 +10,11 @@ const fn=[
  {type:'original-complete-scholarly-html',path:path.join(here,'runtime_ultimate/scholarly.html')},
  {type:'browser-pagedjs',path:path.join(here,'node_modules/pagedjs/dist/paged.polyfill.js')}
 ];
-for(const file of fs.readdirSync(path.join(root,'daruri/build/fonts')))
- if(file.endsWith('.ttf'))fn.push({type:'original-font',path:path.join(root,'daruri/build/fonts',file)});
+const compact=process.env.GNAMMA_THREE_FONT_PROFILE==='1';
+const fonts=compact?['NotoSans-Regular.ttf','NotoSerif-Regular.ttf','NotoNaskhArabic-Regular.ttf']:
+ fs.readdirSync(path.join(root,'daruri/build/fonts')).filter(file=>file.endsWith('.ttf'));
+for(const file of fonts)
+ fn.push({type:'original-font',path:path.join(root,'daruri/build/fonts',file)});
 const files=fn.map(item=>{
  const b=fs.readFileSync(item.path);
  return {type:item.type,file:path.basename(item.path),raw_bytes:b.length,
