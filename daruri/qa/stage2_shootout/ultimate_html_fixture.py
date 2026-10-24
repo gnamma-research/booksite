@@ -9,7 +9,7 @@ apparatus packet PDF is opened, fetched, decoded or used as an input.
 from __future__ import annotations
 from pathlib import Path
 from bs4 import BeautifulSoup
-import hashlib, json, sys, re
+import hashlib, json, sys, re, os
 
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/"daruri"/"build"))
@@ -39,6 +39,20 @@ def make_html(edition,main,parts,styles,title):
     # different static directory. Correct all original font URLs so no 404
     # responses or browser font-fallback artifacts can pollute benchmarks.
     css=css.replace('url("fonts/','url("/daruri/build/fonts/').replace("url('fonts/","url('/daruri/build/fonts/")
+    # Optional regular-weight three-font publication profile, browser-side.
+    # Drop the original ten @font-face declarations, but preserve ALL actual
+    # authorial data and the rest of the approved scholarly CSS.
+    # Normal bold/italic faces are synthesized; visual editorial signoff needed.
+    if os.environ.get('GNAMMA_THREE_FONT_PROFILE')=='1':
+        css=re.sub(r'@font-face\\s*\\{[^{}]*\\}', '', css, flags=re.I)
+        css+="""
+        @font-face{font-family:"Noto Sans";font-style:normal;font-weight:400;
+          src:url("/daruri/build/fonts/NotoSans-Regular.ttf")}
+        @font-face{font-family:"Noto Serif";font-style:normal;font-weight:400;
+          src:url("/daruri/build/fonts/NotoSerif-Regular.ttf")}
+        @font-face{font-family:"Noto Naskh Arabic";font-style:normal;font-weight:400;
+          src:url("/daruri/build/fonts/NotoNaskhArabic-Regular.ttf")}
+        """
     # Named original local fonts. Fonts served over GitHub Pages as regular static files.
     css+="""
     @font-face {font-family: 'GnammaPDFAr';src:url('/daruri/build/fonts/NotoNaskhArabic-Regular.ttf')}
