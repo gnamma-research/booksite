@@ -227,11 +227,39 @@ def update_html(source, metadata, revision, assets=RELEASE_ASSETS):
     require(len(destinations) == 565, f"Expected 565 static PDF destinations, found {len(destinations)}")
     require(sum(d["kind"] == "heading" for d in destinations) == 259, "Expected 259 heading PDF links")
     require(sum(d["kind"] == "contents" for d in destinations) == 306, "Expected 306 contents PDF links")
-    require(all(n == 2 for n in panel_counts.values()), "Both five-edition download panels must be complete")
+    # Earlier layouts provided two five-edition download panels, but the newer
+    # three-tier Editions interface renders choices from the manifest and keeps
+    # five plain fallback download links in the static HTML. Do not require
+    # obsolete data-pdf-edition attributes that are now absent by design.
+    count_panel_links = sum(panel_counts.values())
+    if count_panel_links:
+        require(all(n == 2 for n in panel_counts.values()), "Incomplete legacy download panels")
     result = apply_spans(source, patches)
+    fallback_updated = 0
     for filename, (_, _, title) in EDITIONS.items():
-        result = replace_exact_count(re.escape(title) + r" \(\d+ pages\)", f"{title} ({metadata[filename]['pages']} pages)", result, 2, "Static/enhanced About edition count")
-    result = replace_exact_count(r"\d+-page bilingual reference PDF", f"{metadata['daruri.pdf']['pages']}-page bilingual reference PDF", result, 2, "Static/enhanced About reference description")
+        label_pattern = re.escape(title) + r" \(\d+ pages\)"
+        label_count = len(re.findall(label_pattern, result))
+        require(label_count in (0, 2), "Unexpected legacy About edition-count layout")
+        if label_count:
+            result = replace_exact_count(label_pattern, f"{title} ({metadata[filename]['pages']} pages)", result, label_count, "Legacy About edition count")
+        # Modern source-first fallback: each PDF appears once in an ordinary
+        # filename-bound anchor. Update its displayed page count without
+        # reintroducing removed panels or touching section-specific PDF links.
+        fallback_pattern = (r'(<a\\b[^>]*href="' + re.escape(filename) +
+                            r'(?=[?"])[^"]*"[^>]*>[^<]*?\\()\\d+( pages\\)</a>)')
+        result, replaced = re.subn(
+            fallback_pattern,
+            lambda m, pages=metadata[filename]["pages"]: m[1] + str(pages) + m[2],
+            result,
+        )
+        fallback_updated += replaced
+        if not count_panel_links:
+            require(replaced == 1, "Missing modern Editions fallback link: " + filename)
+    reference_pattern = r"\\d+-page bilingual reference PDF"
+    reference_count = len(re.findall(reference_pattern, result))
+    require(reference_count in (0, 2), "Unexpected legacy reference-description layout")
+    if reference_count:
+        result = replace_exact_count(reference_pattern, f"{metadata['daruri.pdf']['pages']}-page bilingual reference PDF", result, reference_count, "Legacy About reference description")
     result = version_asset_urls(result, revision, assets)
     # Preserve independently versioned guide/print assets. An explicit companion
     # refresh may advance the guide PDF, data and runtime URLs, never its content.
@@ -251,8 +279,9 @@ def update_html(source, metadata, revision, assets=RELEASE_ASSETS):
         "static_heading_destinations": 259,
         "static_contents_destinations": 306,
         "static_page_numbers_changed": sum(d["from"] != d["to"] for d in destinations),
-        "download_panels": 2,
-        "download_links": sum(panel_counts.values()),
+        "download_panels": 2 if count_panel_links else 0,
+        "download_links": count_panel_links,
+        "modern_fallback_downloads": fallback_updated,
         "study_fallback_levels_preserved": 84,
     }
 
