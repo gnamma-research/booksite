@@ -38,7 +38,10 @@ async function run(){
    fs.writeFileSync(path.join(RUNTIME,name),original.replace('</head>',script+'</head>'),'utf8');
    route='/daruri/qa/stage2_shootout/runtime_study/'+name;
  }
- server=spawn('npm',['run','dev'],{cwd:HERE,stdio:'ignore'});
+ server=ENGINE==='vivliostyle'?
+   spawn('python',['-m','http.server','8991','--bind','127.0.0.1'],{
+    cwd:path.resolve(HERE,'../../..'),stdio:'ignore'}):
+   spawn('npm',['run','dev'],{cwd:HERE,stdio:'ignore'});
  let ready=false;
  for(let n=0;n<130;n++){
   try{if((await fetch(BASE+route)).ok){ready=true;break}}catch{}
