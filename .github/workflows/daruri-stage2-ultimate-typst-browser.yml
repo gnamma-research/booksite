@@ -5,6 +5,7 @@ on:
     paths:
       - 'daruri/qa/stage2_shootout/ultimate_*'
       - 'daruri/qa/stage2_shootout/test_ultimate_typst_browser.cjs'
+      - 'daruri/qa/stage2_shootout/verify_scholarly_candidate.py'
       - '.github/workflows/daruri-stage2-ultimate-typst-browser.yml'
   workflow_dispatch:
   # Source-layout integration regression: latest canonical 258-section outline.
@@ -84,6 +85,12 @@ jobs:
           python daruri/qa/stage2_shootout/ultimate_pdf_qa.py "$pdf" \
             daruri/qa/stage2_shootout/runtime_ultimate/scholarly.source.json \
             /tmp/daruri-ultimate-typst-${{ matrix.browser }}/native-qa.json
+      - name: Strict full 258-section topic bookmark and 625-note content QA
+        run: |
+          python daruri/qa/stage2_shootout/verify_scholarly_candidate.py \
+            daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+            /tmp/daruri-ultimate-typst-${{ matrix.browser }}/daruri-scholarly-625-notes-browser-typst-NONRELEASE.pdf \
+            /tmp/daruri-ultimate-typst-${{ matrix.browser }}/scholarly-acceptance.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
