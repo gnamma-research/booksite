@@ -1,7 +1,7 @@
-name: Daruri ULTIMATE 625-notes + 157-article Scholarly HTML -> Typst WASM PDF in real browsers (NONRELEASE)
+name: Daruri Typst scholarly layout and bookmarks browser QA (NONRELEASE)
 on:
   push:
-    branches: [research/daruri-browser-full-scholarly-typst-20261024]
+    branches: [research/daruri-typst-scholarship-layout-20261024]
     paths:
       - 'daruri/qa/stage2_shootout/ultimate_*'
       - 'daruri/qa/stage2_shootout/test_ultimate_typst_browser.cjs'
