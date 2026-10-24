@@ -127,6 +127,13 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   if(tag==='h1'||tag==='h2'||tag==='h3'||tag==='h4'||tag==='h5'||tag==='h6'){
     const level=Math.min(Number(tag[1]),5);
     const txt=childRich(el);
+    // All 258 authorial sections must appear in the PDF sidebar outline.
+    // Preserve original heading level for other editorial apparatus.
+    const sectionId=el.getAttribute('id')||'';
+    const sectionHeading=/^section-([1-9][0-9]*)$/.exec(sectionId);
+    if(sectionHeading && Number(sectionHeading[1])<=258){
+      return '#heading(level:2,outlined:true)['+txt+']'+anchor(el)+'\n';
+    }
     return '#heading(level:'+level+')['+txt+']'+anchor(el)+'\n';
   }
   if(['p','li','dt','dd','figcaption','blockquote'].includes(tag)){
