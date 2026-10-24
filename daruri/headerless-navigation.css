@@ -541,3 +541,9 @@
    color:var(--surface,#fff)!important;
  }
 }
+
+/* A translucent fixed dock obscures Arabic/English text below it on Focus.
+   Keep the controls readable; the existing content scroll padding remains. */
+@media screen {
+ body.reader-enhanced.reading-active.focus-mode #readerDock.reader-dock { opacity:1!important; background:var(--surface)!important; }
+}

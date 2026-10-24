@@ -36,13 +36,32 @@
    menu.addEventListener('click',function(){
      if(document.body.classList.contains('reading-active')&&
         document.body.classList.contains('focus-mode')){
-       window.GnammaReaderModes?.setMode?.('reading');
-       // Focus visually concealed an earlier open sidebar, leaving the saved
-       // leftVisible preference true. The legacy Contents handler *toggles*
-       // that preference, so without resetting it the first click closes
-       // rather than opens the navigation. Use the current reader state
-       // exposed to the Copy module; the native handler saves it normally.
+       const continuous=document.body.classList.contains('focus-level-3');
        const readerState=window.GnammaCopyContext?.state;
+       const currentNumber=document.getElementById('dockSection')?.textContent?.match(/[0-9]+/)?.[0]||readerState?.n;
+       let passage=null,passageTop=0,segment=null;
+       if(continuous&&currentNumber){
+         const part=document.getElementById('gn-continuous-'+currentNumber);
+         if(part){
+           const threshold=Math.max(110,Math.min(220,window.innerHeight*.3));
+           passage=[...part.querySelectorAll('.passage-grid')].find(el=>el.getBoundingClientRect().bottom>=threshold)||
+             part.querySelector('.passage-grid');
+           segment=passage?.dataset.segment;
+           passageTop=passage?.getBoundingClientRect().top||threshold;
+           // The old mode switch guesses its anchor from the section heading
+           // position rather than the *displayed* dock section. Align that
+           // heading first, while the same section is still present in the DOM.
+           part.scrollIntoView({block:'start',behavior:'instant'});
+         }
+       }
+       window.GnammaReaderModes?.setMode?.('reading');
+       if(continuous&&segment!==null){
+         const equivalent=document.querySelector('#reader .passage-grid[data-segment="'+segment+'"]');
+         if(equivalent)window.scrollBy({top:equivalent.getBoundingClientRect().top-passageTop,behavior:'instant'});
+       }
+       // Focus concealed the formerly open desktop sidebar. The native
+       // Contents handler toggles leftVisible, so ensure its very first click
+       // means OPEN instead of unexpectedly closing that saved preference.
        if(readerState)readerState.leftVisible=false;
      }
    },true);

@@ -70,8 +70,14 @@ function selectionSnapshot(){
 }
 function refreshSelection(){
  if(selectionScheduled)return;selectionScheduled=true;
- queueMicrotask(()=>{selectionScheduled=false;selected=selectionSnapshot();
-  if(menu&&!menu.hidden)drawMenu();
+ queueMicrotask(()=>{selectionScheduled=false;
+  const prior=selected;
+  // A real selection is immutable once the Copy menu or sheet opens. Touch
+  // scrolling/focus changes must never convert a quotation to a new paragraph.
+  if(!(prior&&((menu&&!menu.hidden)||sheet)))selected=selectionSnapshot();
+  if(menu&&!menu.hidden&&(prior?.text!==selected?.text||
+       prior?.section!==selected?.section||prior?.start!==selected?.start))
+    drawMenu();
   const copy=document.querySelector('#readerCopyAction');
   if(copy){copy.setAttribute('aria-label',selected?'Copy selected text':'Copy complete current section');copy.title=copy.getAttribute('aria-label');}
  });

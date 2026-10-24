@@ -75,6 +75,7 @@ async function exercise(browser,engine,origin,width){
   await visual.waitFor();
   const appearance=visual.locator('#gn-visuals-appearance');
   await appearance.waitFor({state:'visible'});
+  assert.equal(await visual.locator('#gn-visuals-appearance').count(),1,'Visuals created a duplicate appearance row');
   const choices=await appearance.locator('button').evaluateAll(nodes=>nodes.map(n=>({text:n.textContent.trim(),aria:n.getAttribute('aria-label')||'',pressed:n.getAttribute('aria-pressed')})));
   assert.equal(choices.length,3,'Visuals must offer System, Light and Dark, not a lone cycle button');
   assert.deepEqual(choices.map(x=>x.text),['System','Light','Dark'],'Explicit appearance choices missing');

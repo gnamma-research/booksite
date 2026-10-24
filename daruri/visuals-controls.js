@@ -43,7 +43,12 @@
   function installAppearance(){
     const panel=$('#settingsOverlay');
     const header=panel?.querySelector('.gn-visuals-header');
-    if(!header||header.querySelector('#gn-visuals-appearance'))return;
+    if(!header)return;
+    const existingRows=[...panel.querySelectorAll('#gn-visuals-appearance')];
+    if(existingRows.length){
+      for(const duplicate of existingRows.slice(1))duplicate.remove();
+      return;
+    }
     const row=document.createElement('div');
     row.id='gn-visuals-appearance';row.className='gn-visuals-appearance';
     // The reader already provides persistent System / Light / Dark buttons.
