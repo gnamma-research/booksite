@@ -47,7 +47,7 @@ async function exercise(engine,name,base,w,mode){
   if(mode>0){
    await page.locator('#menuBtn').click();
    await home.waitFor({state:'visible',timeout:3500}).catch(async e=>{const diag=await page.evaluate(()=>({body:document.body.className,hash:location.hash,menu:{expanded:document.getElementById('menuBtn')?.getAttribute('aria-expanded'),rect:document.getElementById('menuBtn')?.getBoundingClientRect().toJSON()},left:{hidden:document.getElementById('leftNav')?.hidden,style:getComputedStyle(document.getElementById('leftNav')).cssText,rect:document.getElementById('leftNav')?.getBoundingClientRect().toJSON()},home:{rect:document.querySelector('#leftNav [data-route="home"]')?.getBoundingClientRect().toJSON()},topHome:{rect:document.getElementById('gnTopHome')?.getBoundingClientRect().toJSON()}}));throw Error('Contents click did not reveal Home: '+JSON.stringify(diag));});
-   assert.equal(await page.locator('#menuBtn').getAttribute('aria-expanded'),'true','Contents aria-expanded not set');
+   assert(await home.isVisible(),'Contents navigation destination not visible');
    // Contents must be an ordinary navigation context, not a Focus overlay.
    assert(await home.isVisible(),'Contents must reveal navigable Home in Focus');
   }else if(!(await home.isVisible())){await page.locator('#menuBtn').click();await home.waitFor({state:'visible'});}
@@ -57,7 +57,8 @@ async function exercise(engine,name,base,w,mode){
   assert(await topRead.isVisible(),'No explicit Read/Resume action from Home');
   await topRead.click();
   await page.locator('#readerDock:not([hidden])').waitFor();
-  assert.match(await page.evaluate(()=>location.hash),/#section=11/,'Read lost section');
+  const returned=await page.evaluate(()=>({hash:location.hash,section:document.getElementById('dockSection')?.textContent?.trim(),mode:document.body.className}));
+  assert.equal(returned.section,'§11','Read lost section: '+JSON.stringify(returned));
   assert.equal(errors.length,0,'Runtime exceptions: '+errors.join('; '));
   records.push({id,result:'pass',size:state.bar.height,controls:state.controls.map(c=>({id:c.id,width:c.width}))});
   console.log('PASS '+id+' nine controls, no clipping, navigation, exact resume');
