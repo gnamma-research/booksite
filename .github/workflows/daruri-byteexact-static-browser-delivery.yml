@@ -1,0 +1,52 @@
+name: Daruri approved Scholarly byte-exact browser delivery proof (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-published-parity-20261025]
+    paths: ['.github/workflows/daruri-byteexact-static-browser-delivery.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ordinary-browser-verified-exact-download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/daruri-published-parity-20261025
+      - name: Pin published PDF and its current manifest from master
+        run: |
+          git fetch --no-tags --depth=1 origin master
+          git show origin/master:daruri/daruri.pdf > daruri/daruri.pdf
+          git show origin/master:daruri/pdf-editions-manifest.json > daruri/pdf-editions-manifest.json
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install pinned local browser QA tools
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Fetch, SHA-256 verify and save actual original PDF inside ordinary browser
+        env:
+          BENCH_BROWSER: ${{ matrix.browser }}
+          BENCH_OUT: /tmp/approved-exact-${{ matrix.browser }}
+        run: |
+          node --check daruri/qa/stage2_shootout/browser_exact_published_download.cjs
+          node daruri/qa/stage2_shootout/browser_exact_published_download.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-approved-byteexact-static-${{ matrix.browser }}-NONRELEASE
+          path: /tmp/approved-exact-${{ matrix.browser }}
+          retention-days: 14
+          if-no-files-found: warn
