@@ -91,7 +91,7 @@ async function run(){
   if(!name)throw Error('Self-hosted official Vivliostyle Viewer HTML unavailable');
   const target=BASE+route;
   const url=BASE+'/daruri/qa/stage2_shootout/'+sub+name+
-    '#src='+encodeURIComponent(target)+'&bookMode=false&renderAllPages=true&spread=false';
+    '#src='+target+'&bookMode=false&renderAllPages=true&spread=false';
   const loaded=await page.goto(url,{waitUntil:'domcontentloaded'});
   report.viewer_source_url=BASE+route;
   report.viewer_url=url;
