@@ -524,25 +524,8 @@
  }
 }
 
-/* A saved Focus state must not hide Contents when its opener is activated. */
-@media screen {
- body.reader-enhanced.reading-active.focus-mode #leftNav:not([hidden]) {display:block!important;visibility:visible!important;opacity:1!important}
- body.reader-enhanced.reading-active.focus-mode #leftNav:not([hidden]) .primary-nav {display:flex!important;visibility:visible!important}
-}
-
-/* The Contents drawer must be above the reading surface on desktop as well
-   as phones. Focus used to leave it visible but behind #interactiveReader. */
-@media screen {
-  body.reader-enhanced.reading-active.focus-mode #leftNav:not([hidden]) {
-    position:fixed!important;
-    z-index:1001!important;
-    pointer-events:auto!important;
-    isolation:isolate;
-  }
-  body.reader-enhanced.reading-active.focus-mode #leftNav:not([hidden]) :is(button,a,summary) {
-    pointer-events:auto!important;
-  }
-}
+/* Focus → Contents now exits persisted Focus through the mode API.
+   Do not force #leftNav over the reader while Focus is active. */
 
 /* Accessibility audit, 2026-10-25: readable functional metadata.
    The former low-contrast grays failed WCAG 2 AA in both browser engines.

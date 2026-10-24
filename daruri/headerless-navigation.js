@@ -30,6 +30,15 @@
    menu.classList.add('gn-top-tile');
    menu.setAttribute('aria-label','Open or close Contents');
    menu.title='Contents';
+   // The old handler resets focusMode, but the three-mode reader's save()
+   // reconstructs it from focusLevel. Use the authoritative mode API before
+   // the existing handler to reveal a genuine drawer, not a CSS overlay.
+   menu.addEventListener('click',function(){
+     if(document.body.classList.contains('reading-active')&&
+        document.body.classList.contains('focus-mode')){
+       window.GnammaReaderModes?.setMode?.('reading');
+     }
+   },true);
   }
 
   // Home and Read are separate destinations, never loose text next to an icon.

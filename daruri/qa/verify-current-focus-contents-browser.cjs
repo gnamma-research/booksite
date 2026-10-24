@@ -43,6 +43,10 @@ async function exercise(engine,name,base,w,mode){
    assert(ordered.every((c,i)=>!i||c.x>=ordered[i-1].right-1),'Toolbar controls collide: '+JSON.stringify(state));
   }
   if(w===320&&mode===1)await page.screenshot({path:path.join(OUT,id+'.png'),fullPage:false});
+  if(mode>0&&w>768){
+   const nav=await page.locator('#leftNav').boundingBox();
+   assert(!nav||!nav.width||nav.x+nav.width<=0,'Contents must not overlay desktop Focus text before opening');
+  }
   // Exercise a real location within the full continuous document, not its
   // initial DOM starting paragraph. The source section should survive Home.
   if(mode===3){
