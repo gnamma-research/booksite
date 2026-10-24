@@ -59,6 +59,15 @@ def run():
         go=[x for x in links if x['kind']==fitz.LINK_GOTO]
         uris={x['uri'] for x in links if x['kind']==fitz.LINK_URI}
         originals={x['href'] for x in src.select('a[href^="http"]')}
+        # The original second contents list must actually navigate to every
+        # corresponding PDF outline section, not merely display link text.
+        front=[x for k in range(min(18,len(d))) for x in d[k].get_links()
+               if x['kind']==fitz.LINK_GOTO and x.get('to') is not None]
+        toc_matches=sum(any(x['page']==e['page']-1 and
+                            abs(x['to'].y-e['y'])<=35 for x in front)
+                        for e in matched if e['y'] is not None)
+        if toc_matches!=258:
+            failures.append('Contents-to-bookmark links '+str(toc_matches)+'/258')
         if any(not 0<=x.get('page',-1)<len(d) for x in go):
             failures.append('Invalid internal GoTo link destinations')
         if originals-uris:
@@ -72,6 +81,7 @@ def run():
                  'internal_links':len(go),'external_link_objects':len(links)-len(go),
                  'original_external_urls':len(originals),
                  'preserved_external_urls':len(originals & uris),
+                 'contents_links_to_original_sections':toc_matches,
                  'first_bookmarks':matched[:3],'last_bookmarks':matched[-3:]}
 
     # Use a second PDF engine; note probes exclude Arabic-only spans but
