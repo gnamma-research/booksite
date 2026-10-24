@@ -32,7 +32,7 @@ jobs:
           npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
           cd daruri/qa/stage2_shootout
           npx playwright install --with-deps --only-shell chromium
-      - name: Static Github Pages bytes: canonical complete Scholarly HTML + engine + original fonts
+      - name: "Static GitHub Pages bandwidth - original full Scholarly HTML, engine and fonts"
         env:
           BENCH_OUT: /tmp/gnamma-ultimate-pss-report
         run: |
