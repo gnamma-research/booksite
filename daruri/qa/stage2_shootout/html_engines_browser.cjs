@@ -108,7 +108,7 @@ async function run(){
   };
   if(!report.input_html_probe.is_original_study)throw Error('Static HTTP returned the Gnamma homepage instead of Study HTML');
   let m;
-  for(let n=0;n<26;n++){
+  for(let n=0;n<110;n++){
     m=await page.evaluate(()=>{
       const docs=[document,...[...document.querySelectorAll('iframe')].flatMap(f=>{
        try{return f.contentDocument?[f.contentDocument]:[]}catch{return[]}
@@ -120,8 +120,8 @@ async function run(){
        preview:docs.map(d=>(d.body?.innerText||'').slice(0,175)).slice(0,3)
       };
     });
-    if(m.source_fragments>5){Object.assign(report,m);break}
-    if(n===25){Object.assign(report,m);await page.screenshot({path:path.join(OUTPUT,'vivliostyle-failure.png'),animations:'disabled'});throw Error('Vivliostyle did not render original Study; inspect viewer/source URL and screenshot')}
+    if(m.source_fragments>=(SCOPE==='full'?400:40)){Object.assign(report,m);break}
+    if(n===109){Object.assign(report,m);await page.screenshot({path:path.join(OUTPUT,'vivliostyle-failure.png'),animations:'disabled'});throw Error('Vivliostyle did not render original Study; inspect viewer/source URL and screenshot')}
     await sleep(750);
   }
   await page.screenshot({path:path.join(OUTPUT,'vivliostyle-browser.png'),animations:'disabled'});
