@@ -6,6 +6,7 @@ on:
     paths:
       - 'daruri/edition-r3-20261020.js'
       - 'daruri/build/build_editions.py'
+      - 'daruri/build/update_release.py'
       - 'daruri/study/lessons-01-09.json'
       - 'daruri/study/build-guide.py'
       - 'daruri/study/build-guide-pdf.py'
