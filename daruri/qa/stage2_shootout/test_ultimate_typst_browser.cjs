@@ -46,7 +46,10 @@ function memorySample(){
   });
   await page.goto(URL,{waitUntil:'domcontentloaded'});
   const isolated=await page.evaluate(()=>crossOriginIsolated);
-  if(!isolated)throw Error('WASM web-worker COOP/COEP tests missing crossOriginIsolated');
+  const pagesMode=process.env.STAGE2_GHP_NO_COOP==='1';
+  if(pagesMode&&isolated)throw Error('Not emulating GitHub Pages: crossOriginIsolated unexpectedly true');
+  if(!pagesMode&&!isolated)throw Error('Controlled source build unexpectedly lacks origin isolation');
+  console.log('GNAMMA_GITHUB_PAGES_NO_HEADERS',JSON.stringify({browser:ENGINE,isolated,pagesMode}));
   timer=setInterval(memorySample,500);
   memorySample();
   const waitPdf=page.waitForEvent('download',{timeout:460000});
@@ -71,6 +74,8 @@ function memorySample(){
   const report={
    engine:'Typst WASM 1.0 browser from canonical full HTML',
    browser:ENGINE,
+   github_pages_header_emulation:pagesMode,
+   cross_origin_isolated:isolated,
    success:true,source_edition:'scholarly',source_notes:625,
    complete_lexicon_articles:157,complete_glossary_terms:153,
    source_metadata:result.source_details,
