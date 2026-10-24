@@ -42,8 +42,16 @@ jobs:
               equal_size=pages==len(b)
               bookmarks_equal=a.get_toc()==b.get_toc()
               names_a,names_b=a.resolve_names(),b.resolve_names()
-              same_names=set(names_a)==set(names_b)
+              same_names=names_a==names_b
               same_link_counts=[len(p.get_links()) for p in a]==[len(p.get_links()) for p in b]
+              def without_object_ids(page):
+                  return [{k:v for k,v in link.items() if k not in ('xref','id')}
+                          for link in page.get_links()]
+              all_links_identical=all(without_object_ids(a[i])==without_object_ids(b[i])
+                                      for i in range(len(a)))
+              all_extracted_text_identical=all(a[i].get_text(sort=False)==b[i].get_text(sort=False)
+                                                for i in range(len(a)))
+              pdf_metadata_equal=a.metadata==b.metadata
               visual_equal=[]
               for i in range(min(len(a),len(b))):
                   x=a[i].get_pixmap(colorspace=fitz.csGRAY,matrix=fitz.Matrix(1,1),alpha=False)
@@ -59,8 +67,11 @@ jobs:
                   'outline_equal':bookmarks_equal,
                   'approved_named_destinations':len(names_a),
                   'rebuilt_named_destinations':len(names_b),
-                  'named_destination_key_sets_equal':same_names,
+                  'named_destinations_and_coordinates_equal':same_names,
                   'link_counts_by_page_equal':same_link_counts,
+                  'all_link_annotation_types_rectangles_and_targets_equal':all_links_identical,
+                  'all_243_native_extracted_page_texts_equal':all_extracted_text_identical,
+                  'pdf_document_metadata_equal':pdf_metadata_equal,
                   'rebuild_is_Pango_WeasyPrint68_not_browser_Typst':True,
                   'browser_generated_pdf_exact_copy_not_proven':True
               }
@@ -68,8 +79,11 @@ jobs:
           o.write_text(json.dumps(result,indent=2)+'\n')
           print('GNAMMA_AUTHORITATIVE_SCHOLARLY_SOURCE_REBUILD',json.dumps(result),flush=True)
           if not (result['all_pages_pixel_identical'] and result['outline_equal'] and
-                  result['named_destination_key_sets_equal'] and
-                  result['link_counts_by_page_equal']):
+                  result['named_destinations_and_coordinates_equal'] and
+                  result['link_counts_by_page_equal'] and
+                  result['all_link_annotation_types_rectangles_and_targets_equal'] and
+                  result['all_243_native_extracted_page_texts_equal'] and
+                  result['pdf_document_metadata_equal']):
               raise AssertionError('Exact source-origin scholarly parity gate FAILED')
           PY
       - uses: actions/upload-artifact@v4
