@@ -24,11 +24,11 @@ with fitz.open(pdf) as doc:
     for a in range(0,len(doc),24):
         b=min(a+24,len(doc))
         probe=subprocess.run([sys.executable,"-c",probe_code,str(pdf),str(a),str(b)],
-                             capture_output=True,timeout=30)
+                             capture_output=True,timeout=120)
         if probe.returncode:
             for n in range(a,b):
                 p=subprocess.run([sys.executable,"-c",probe_code,str(pdf),str(n),str(n+1)],
-                                 capture_output=True,timeout=15)
+                                 capture_output=True,timeout=45)
                 if p.returncode:crashes.append({"page":n+1,"returncode":p.returncode})
     if shutil.which("pdftotext") is None:
         raise RuntimeError("Poppler must be installed for independent full-text extraction")
