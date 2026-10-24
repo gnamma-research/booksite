@@ -9,7 +9,7 @@ apparatus packet PDF is opened, fetched, decoded or used as an input.
 from __future__ import annotations
 from pathlib import Path
 from bs4 import BeautifulSoup
-import hashlib, json, sys, re
+import hashlib, json, sys, re, os
 
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/"daruri"/"build"))
@@ -49,6 +49,11 @@ def make_html(edition,main,parts,styles,title):
     .source-segment.english {font-family:'GnammaPDFLatin',serif}
     .lex-note-ar,.lex-arabic,.ar {font-family:'GnammaPDFAr',serif}
     a {color:inherit}
+    .arabic-section-directory {break-before:page;page-break-before:always}
+    .arabic-section-directory h2,.arabic-section-directory p {text-align:right}
+    .arabic-section-directory-links {column-count:8;column-gap:7pt;
+      column-fill:auto;font-size:7.5pt;line-height:1.45}
+    .arabic-section-locator {display:block;break-inside:avoid}
     @media print {a {text-decoration:none}}
     """
     return ("<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>"+
@@ -66,6 +71,19 @@ def make_edition(edition,book,q,h,bm,full):
         parts.extend((render_index(book),render_lexicon(full,bm),render_concordance(book)))
     elif edition=="english":
         parts.extend((render_index(book),render_glossary(book,edition)))
+    if edition=="arabic-vowelled" and os.environ.get("GNAMMA_ARABIC_SECTION_DIRECTORY")=="1":
+        # A small, explicitly labelled printed Arabic numeric section locator,
+        # not invisible/ghost hyperlinks or invented editorial Arabic headings.
+        # This causes Chromium's PDF writer to preserve each of the 258
+        # original named section destinations as a REAL linked target.
+        links="".join(
+            f'<a class="arabic-section-locator" href="#section-{n}">§{n}</a>'
+            for n in range(1,259))
+        parts.append(
+           '<nav class="arabic-section-directory" dir="rtl" lang="ar" '
+           'aria-label="دليل الفقرات"><h2>دليل أرقام الفقرات</h2>'
+           '<p>انتقل إلى المقطع برقم الفقرة.</p>'
+           '<div class="arabic-section-directory-links">'+links+'</div></nav>')
     title={"scholarly":"Daruri full Scholarly Reference edition",
            "english":"Daruri complete English Reading edition",
            "arabic-vowelled":"Daruri complete vowelled Arabic Reading edition"}[edition]
