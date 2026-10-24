@@ -75,8 +75,10 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
    '#set page(paper: "a4", margin: (top: 17mm,bottom:18mm,left:17mm,right:17mm))\n',
    '#set text(font: "Noto Serif",lang:"en",size:9pt)\n',
    '#set par(leading: 0.7em, justify:false)\n',
-   '= Complete source-derived Daruri '+textEscape(record.edition)+' — nonrelease benchmark\n',
-   '#outline()\n#pagebreak()\n'
+   // The original HTML already supplies two authoritative contents lists.
+   // No synthetic Typst #outline() in the *printed* book: keep PDF sidebar
+   // bookmarks without adding 20+ redundant front-matter pages.
+
  ];
  const stats={
   source_sha256:record.source_sha256,source_html_sha256:record.html_sha256,
