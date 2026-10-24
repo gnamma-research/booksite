@@ -1,0 +1,64 @@
+name: Daruri complete Scholarly 625-note browser print - PSS memory and compressed bandwidth profile
+on:
+  push:
+    branches: [research/daruri-browser-ultimate-pss-bandwidth-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/ultimate_asset_budget.cjs'
+      - 'daruri/qa/stage2_shootout/ultimate_browser.cjs'
+      - '.github/workflows/daruri-stage2-ultimate-pss-budget.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-ultimate-pss-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  full-scholarly-memory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Source complete Reference from verified book and ALL notes (no PDF input)
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+            daruri/qa/stage2_shootout/runtime_ultimate scholarly
+      - name: Install exact self-hostable Paged.js and actual Chromium
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+      - name: "Static GitHub Pages bandwidth - original full Scholarly HTML, engine and fonts"
+        env:
+          BENCH_OUT: /tmp/gnamma-ultimate-pss-report
+        run: |
+          node daruri/qa/stage2_shootout/ultimate_asset_budget.cjs
+      - name: Genuine full-Reference browser pagination; aggregate RSS and proportional PSS
+        env:
+          BENCH_ENGINE: paged
+          BENCH_EDITION: scholarly
+          BENCH_BROWSER: chromium
+          BENCH_OUT: /tmp/gnamma-ultimate-pss-report
+        run: |
+          node --check daruri/qa/stage2_shootout/ultimate_browser.cjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/ultimate_browser.cjs
+      - name: Independently validate output PDF, 258 section links and all page artifacts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils qpdf
+          p=/tmp/gnamma-ultimate-pss-report/daruri-scholarly-paged-PRINT-QAONLY.pdf
+          qpdf --check "$p"
+          python daruri/qa/stage2_shootout/ultimate_pdf_qa.py "$p" \
+            daruri/qa/stage2_shootout/runtime_ultimate/scholarly.source.json \
+            /tmp/gnamma-ultimate-pss-report/native-qa.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-complete-scholarly-pss-bandwidth-NONRELEASE
+          path: /tmp/gnamma-ultimate-pss-report
+          if-no-files-found: warn
+          retention-days: 14

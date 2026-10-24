@@ -26,20 +26,31 @@ const report={schema:'gnamma-ultimate-browser-html-pdf-v1',engine:ENGINE,mode:MO
 let child,browser,ctx,page;
 const captured=[],errors=[],sizes={};
 const sleep=n=>new Promise(r=>setTimeout(r,n));
-let peakChromiumKiB=0,peakNodeKiB=0;
+let peakChromiumKiB=0,peakNodeKiB=0,peakPssKiB=0,peakProcessCount=0;
 function recordResources(){
  try{
-  const ps=execFileSync('ps',['-eo','rss,args'],{encoding:'utf8',timeout:5000});
-  let chromium=0, node=0;
+  const ps=execFileSync('ps',['-eo','pid=,rss=,args='],{encoding:'utf8',timeout:5000});
+  let chromium=0,node=0,pssTotal=0,processes=0;
   for(const line of ps.split('\n')){
-   const match=line.match(/^\s*(\d+)\s+(.+)$/);if(!match)continue;
-   const name=match[2],rss=Number(match[1]);
+   const match=line.match(/^\s*(\d+)\s+(\d+)\s+(.+)$/);if(!match)continue;
+   const pid=Number(match[1]),rss=Number(match[2]),name=match[3];
    if(/chrome-headless-shell|HeadlessChrome|chromium-linux|chrome-linux/.test(name) &&
-      !/ps -eo/.test(name)){chromium+=rss}
-   if(/node .*ultimate_html_browser\.cjs/.test(name)){node+=rss}
+      !/ps -eo/.test(name)){
+      chromium+=rss;processes++;
+      // Linux PSS allocates shared mapped pages proportionally to each process,
+      // unlike summing RSS which double-counts Chromium's shared libraries.
+      try{
+       const mem=fs.readFileSync('/proc/'+pid+'/smaps_rollup','utf8');
+       const result=mem.match(/^Pss:\s*(\d+)\s*kB/m);
+       pssTotal+=result?Number(result[1]):rss;
+      }catch{pssTotal+=rss}
+   }
+   if(/node .*ultimate_browser\.cjs/.test(name))node+=rss;
   }
   peakChromiumKiB=Math.max(peakChromiumKiB,chromium);
   peakNodeKiB=Math.max(peakNodeKiB,node);
+  peakPssKiB=Math.max(peakPssKiB,pssTotal);
+  peakProcessCount=Math.max(peakProcessCount,processes);
  }catch{}
 }
 async function go(){
@@ -162,6 +173,9 @@ async function go(){
   report.browser_page_load_to_output_ms=Math.round(performance.now()-t);
  }finally{clearInterval(ticker);recordResources()}
  report.estimated_peak_headless_chromium_rss_kib=peakChromiumKiB;
+ report.estimated_peak_chromium_proportional_pss_kib=peakPssKiB;
+ report.peak_chromium_processes_observed=peakProcessCount;
+ report.memory_method='Linux /proc/PID/smaps_rollup Pss proportional memory; desktop browser only';
  report.estimated_peak_benchmark_node_rss_kib=peakNodeKiB;
  report.all_local_response_headers=sizes;
  report.actual_network_requests=captured.length;
