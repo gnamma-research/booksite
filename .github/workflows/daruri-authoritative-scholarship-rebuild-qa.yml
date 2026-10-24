@@ -1,0 +1,83 @@
+name: Daruri exact published Scholarly PDF source rebuild QA (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-published-parity-20261025]
+    paths: ['.github/workflows/daruri-authoritative-scholarship-rebuild-qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact-approved-scholarship-rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install published source typesetter (no visitor PDF service)
+        run: |
+          python -m pip install -q WeasyPrint==68.0 fonttools PyMuPDF==1.26.7
+      - name: Build ONLY canonical current Scholarly PDF from original source and notes
+        run: |
+          mkdir -p /tmp/daruri-canonical-scholarly
+          python daruri/build/build_editions.py --edition scholarly \
+            --output-dir /tmp/daruri-canonical-scholarly
+      - name: Compare reconstructed PDF with exact published binary and all 243 rendered pages
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,fitz,json
+          approved=Path('daruri/daruri.pdf')
+          regenerated=Path('/tmp/daruri-canonical-scholarly/daruri.pdf')
+          manifest=json.loads(Path('daruri/pdf-editions-manifest.json').read_text())
+          meta=manifest['files']['daruri.pdf']
+          sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+          if sha(approved)!=meta['sha256']:
+              raise AssertionError('Unverified published original; manifest mismatch')
+          with fitz.open(approved) as a,fitz.open(regenerated) as b:
+              pages=len(a)
+              equal_size=pages==len(b)
+              bookmarks_equal=a.get_toc()==b.get_toc()
+              names_a,names_b=a.resolve_names(),b.resolve_names()
+              same_names=set(names_a)==set(names_b)
+              same_link_counts=[len(p.get_links()) for p in a]==[len(p.get_links()) for p in b]
+              visual_equal=[]
+              for i in range(min(len(a),len(b))):
+                  x=a[i].get_pixmap(colorspace=fitz.csGRAY,matrix=fitz.Matrix(1,1),alpha=False)
+                  y=b[i].get_pixmap(colorspace=fitz.csGRAY,matrix=fitz.Matrix(1,1),alpha=False)
+                  visual_equal.append(x.width==y.width and x.height==y.height and x.samples==y.samples)
+              result={
+                  'schema':'gnamma-source-rebuilt-current-scholarly-pixel-parity-v1',
+                  'approved_sha256':sha(approved),'rebuilt_sha256':sha(regenerated),
+                  'sha256_equal':sha(approved)==sha(regenerated),
+                  'published_pages':pages,'rebuilt_pages':len(b),
+                  'all_pages_pixel_identical':equal_size and all(visual_equal),
+                  'pixel_identical_pages':sum(visual_equal),
+                  'outline_equal':bookmarks_equal,
+                  'approved_named_destinations':len(names_a),
+                  'rebuilt_named_destinations':len(names_b),
+                  'named_destination_key_sets_equal':same_names,
+                  'link_counts_by_page_equal':same_link_counts,
+                  'rebuild_is_Pango_WeasyPrint68_not_browser_Typst':True,
+                  'browser_generated_pdf_exact_copy_not_proven':True
+              }
+          o=Path('/tmp/daruri-canonical-scholarly/exact-rebuild-parity.json')
+          o.write_text(json.dumps(result,indent=2)+'\n')
+          print('GNAMMA_AUTHORITATIVE_SCHOLARLY_SOURCE_REBUILD',json.dumps(result),flush=True)
+          if not (result['all_pages_pixel_identical'] and result['outline_equal'] and
+                  result['named_destination_key_sets_equal'] and
+                  result['link_counts_by_page_equal']):
+              raise AssertionError('Exact source-origin scholarly parity gate FAILED')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-rebuilt-approved-243page-scholarly-pixel-parity-NONRELEASE
+          path: |
+            /tmp/daruri-canonical-scholarly/daruri.pdf
+            /tmp/daruri-canonical-scholarly/exact-rebuild-parity.json
+          if-no-files-found: warn
+          retention-days: 14
