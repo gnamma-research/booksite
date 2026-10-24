@@ -1,5 +1,18 @@
 name: Daruri current-master Focus Contents and toolbar regression
 on:
+  push:
+    branches: [fix/daruri-focus-contents-and-toolbar-20261024]
+    paths:
+      - 'daruri/headerless-navigation.css'
+      - 'daruri/headerless-navigation.js'
+      - 'daruri/visuals-controls.js'
+      - 'daruri/copy-links.js'
+      - 'daruri/reading-desk.js'
+      - 'daruri/gnamma-word-context.js'
+      - 'daruri/sw.js'
+      - 'daruri/qa/verify-*'
+      - '.github/workflows/daruri-focus-contents-regression.yml'
+      - '.github/workflows/daruri-exhaustive-browser-audit.yml'
   pull_request:
     paths:
       - 'daruri/headerless-navigation.css'
