@@ -523,3 +523,9 @@
   flex:1 1 var(--gn-scholar-btn,36px)!important;width:auto!important;min-width:28px!important;max-width:40px!important
  }
 }
+
+/* A saved Focus state must not hide Contents when its opener is activated. */
+@media screen {
+ body.reader-enhanced.reading-active.focus-mode #leftNav:not([hidden]) {display:block!important;visibility:visible!important;opacity:1!important}
+ body.reader-enhanced.reading-active.focus-mode #leftNav:not([hidden]) .primary-nav {display:flex!important;visibility:visible!important}
+}
