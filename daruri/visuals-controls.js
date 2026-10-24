@@ -40,11 +40,46 @@
     sync();
     show(kind,label);
   }
+  function installAppearance(){
+    const panel=$('#settingsOverlay');
+    const header=panel?.querySelector('.gn-visuals-header');
+    if(!header)return;
+    const existingRows=[...panel.querySelectorAll('#gn-visuals-appearance')];
+    if(existingRows.length){
+      for(const duplicate of existingRows.slice(1))duplicate.remove();
+      return;
+    }
+    const row=document.createElement('div');
+    row.id='gn-visuals-appearance';row.className='gn-visuals-appearance';
+    // The reader already provides persistent System / Light / Dark buttons.
+    // They were hidden in Visuals; move the *same live buttons*, not a second
+    // theme state or a confusing cycle button in the crowded top toolbar.
+    const existing=panel.querySelector('#settingsTheme')||panel.querySelector('.gn-colour-mode');
+    if(existing){
+      existing.hidden=false;
+      existing.removeAttribute('aria-hidden');
+      existing.classList.add('gn-colour-mode');
+      existing.setAttribute('role','group');
+      existing.setAttribute('aria-label','Appearance: system, light or dark');
+      row.appendChild(existing);
+    }else{
+      // An older reader without an appearance registry retains a single
+      // fallback instead of showing three inert controls.
+      const button=document.createElement('button');
+      button.type='button';button.className='gn-appearance-switch';
+      button.textContent='Appearance';button.setAttribute('aria-label','Switch appearance');
+      button.addEventListener('click',()=>document.getElementById('themeBtn')?.click());
+      row.appendChild(button);
+    }
+    header.insertAdjacentElement('afterend',row);
+  }
   function bind(){
+    installAppearance();
     const overlay=$('#settingsOverlay');
     if(overlay){
       new MutationObserver(records=>{
         if(records.some(record=>record.attributeName==='hidden')&&!overlay.hidden){
+          installAppearance();
           clear();
           requestAnimationFrame(sync);
         }
@@ -75,6 +110,10 @@
       }
       if(button.dataset.stackedOrder){
         show('Page layout',button.dataset.stackedOrder==='top'?'Arabic above':'Arabic below');
+        return;
+      }
+      if(button.dataset.themeChoice){
+        requestAnimationFrame(()=>show('Appearance',button.textContent.trim()));
         return;
       }
       if(button.dataset.palette){

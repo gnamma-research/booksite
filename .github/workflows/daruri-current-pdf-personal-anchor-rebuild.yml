@@ -1,0 +1,44 @@
+name: Daruri current-PDF personal map regeneration gate
+on:
+  pull_request:
+    paths:
+      - 'daruri/daruri.pdf'
+      - 'daruri/daruri-study.pdf'
+      - 'daruri/daruri-english.pdf'
+      - 'daruri/daruri-arabic.pdf'
+      - 'daruri/daruri-arabic-vowelled.pdf'
+      - 'daruri/personal-anchor-maps/**'
+      - 'daruri/build/build_personal_anchor_maps.py'
+      - 'daruri/build/release/*.metadata.json'
+      - '.github/workflows/daruri-current-pdf-personal-anchor-rebuild.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regenerate-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install original deterministic layout and PDF dependencies
+        run: |
+          python -m pip install -r daruri/build/requirements.txt
+      - name: Validate published release hashes, regenerate five exact personal anchor maps
+        run: |
+          python daruri/build/build_personal_anchor_maps.py --publish
+      - name: Assert no stale personal source hashes and strict source geometry coverage
+        run: node daruri/qa/verify-personal-pdf-upgrade.cjs
+      - name: Preserve regenerated maps for independently reviewed publication
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reviewed-daruri-five-personal-anchor-maps
+          path: daruri/personal-anchor-maps/*.json
+          retention-days: 14
+          if-no-files-found: warn
