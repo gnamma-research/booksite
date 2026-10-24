@@ -1,0 +1,63 @@
+name: Daruri publish verified personal maps to review branch only
+on:
+  push:
+    branches: [integration/daruri-ux-audit-20261025]
+    paths:
+      - '.github/workflows/daruri-integration-map-publish.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daruri-integration-map-publish
+  cancel-in-progress: false
+jobs:
+  verified-five-maps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install release-pinned PDF layout dependencies
+        run: python -m pip install -r daruri/build/requirements.txt
+      - name: Reconstruct current five PDF maps and verify source-bound coverage
+        run: |
+          python daruri/build/build_personal_anchor_maps.py --publish
+          node daruri/qa/verify-personal-pdf-upgrade.cjs
+      - name: Keep map artifacts even if publication changes during job
+        uses: actions/upload-artifact@v4
+        with:
+          name: published-branch-personal-source-maps
+          path: daruri/personal-anchor-maps/*.json
+          retention-days: 14
+      - name: Publish map-only update on integration branch after source lease checks
+        if: github.ref_name == 'integration/daruri-ux-audit-20261025'
+        run: |
+          set -euo pipefail
+          git config user.name "gnamma-research QA bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p "$RUNNER_TEMP/verified-maps"
+          cp daruri/personal-anchor-maps/daruri*.pdf.json "$RUNNER_TEMP/verified-maps/"
+          git fetch --quiet origin integration/daruri-ux-audit-20261025
+          NEW_SHA="$(git rev-parse FETCH_HEAD)"
+          if [ "$GITHUB_SHA" != "$NEW_SHA" ] && ! git diff --quiet "$GITHUB_SHA" "$NEW_SHA" --                daruri/daruri.pdf daruri/daruri-study.pdf daruri/daruri-english.pdf                daruri/daruri-arabic.pdf daruri/daruri-arabic-vowelled.pdf                daruri/build/release daruri/build/build_personal_anchor_maps.py; then
+            echo "::error::Published PDF sources or mapper changed during QA; refuse stale maps"
+            exit 1
+          fi
+          git reset --hard "$NEW_SHA"
+          mkdir -p daruri/personal-anchor-maps
+          cp "$RUNNER_TEMP/verified-maps/"*.json daruri/personal-anchor-maps/
+          git add -f daruri/personal-anchor-maps/daruri.pdf.json                      daruri/personal-anchor-maps/daruri-study.pdf.json                      daruri/personal-anchor-maps/daruri-english.pdf.json                      daruri/personal-anchor-maps/daruri-arabic.pdf.json                      daruri/personal-anchor-maps/daruri-arabic-vowelled.pdf.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish SHA-bound personal anchor maps for current five certified PDFs"
+            git push origin HEAD:integration/daruri-ux-audit-20261025
+          else
+            echo "All five verified personal anchor maps are already current."
+          fi
