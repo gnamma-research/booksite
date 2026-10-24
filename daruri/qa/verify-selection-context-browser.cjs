@@ -32,6 +32,7 @@ async function test(engine,name,origin,width){
    const range=document.createRange();range.setStart(textNode,m.index);range.setEnd(textNode,m.index+m[0].length);
    const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);
    document.dispatchEvent(new Event('selectionchange'));
+   window.dispatchEvent(new Event('mouseup'));
   });
   const bar=page.locator('#gn-rd-selection-bar');
   await bar.waitFor({state:'visible',timeout:12000});
