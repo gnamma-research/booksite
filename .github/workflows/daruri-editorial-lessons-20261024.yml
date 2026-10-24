@@ -9,6 +9,7 @@ on:
       - 'daruri/dictionary-r3-20261020.js'
       - 'daruri/build/data/full-headwords.json'
       - 'daruri/build/verify_structure.py'
+      - 'daruri/build/update_release.py'
       - 'daruri/study/lessons-01-09.json'
       - 'daruri/study/foundation-checks.json'
       - '.github/workflows/daruri-editorial-lessons-20261024.yml'
