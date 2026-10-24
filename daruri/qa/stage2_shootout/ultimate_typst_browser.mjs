@@ -28,7 +28,7 @@ async function run(){
   const start=performance.now();
   set('reading','Validating complete original Scholarly HTML, notes and links...');
   const [sourceBytes,meta]=await Promise.all([
-   bytes(origin+'scholarly.html'),
+   bytes(origin+'scholarly.source.txt'),
    fetch(origin+'scholarly.source.json').then(r=>r.ok?r.json():Promise.reject(Error('No original source manifest')))
   ]);
   if(meta.edition!=='scholarly'||meta.historical_dictionary_articles!==157||
