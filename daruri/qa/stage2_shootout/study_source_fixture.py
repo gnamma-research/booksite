@@ -136,6 +136,30 @@ def main():
           '<body><h1>'+title+'</h1><p>Original 414 bilingual passages, canonical Study notes; NONRELEASE test.</p>'+
           content+'</body></html>')
     (dest/"study_full.html").write_text(html_page(raw,"Daruri full Study footnote stress"),"utf8")
+    # Export actual approved scholarly publication components (cover, original
+    # contents, editorial contents and Study index) as HTML alone, without
+    # calling WeasyPrint, using stable anchor IDs from original source.
+    from build_editions import cover, guide, detailed_contents, render_index
+    publication=cover("study")+guide("study")+detailed_contents(book,"study")+raw+render_index(book,True)
+    publication_html=html_page(publication,"Daruri real complete Study with contents")
+    (dest/"study_publication.html").write_text(publication_html,"utf8")
+    publication_soup=BeautifulSoup(publication_html,"html.parser")
+    ids={str(tag["id"]) for tag in publication_soup.select("[id]")}
+    want={"section-"+str(i) for i in range(1,259)}
+    anchors=[tag.get("href","")[1:] for tag in publication_soup.select("a[href^='#']")]
+    if not want.issubset(ids):
+        raise AssertionError("Missing original stable section anchor ID in full publication")
+    if len(set(anchors)&want)<258:
+        raise AssertionError("Original numbered contents guide fails to link all 258 sections")
+    (dest/"publication_evidence.json").write_text(json.dumps({
+        "publication_html_bytes":len(publication_html.encode("utf8")),
+        "original_section_anchor_count":len(want&ids),
+        "numbered_original_section_links":len(set(anchors)&want),
+        "other_nav_links":len(anchors)-sum(a in want for a in anchors),
+        "main_footnote_bodies":len(note_map),
+        "main_authorial_pairs":len(authorial),
+        "source_sha256":sha
+    },ensure_ascii=False,indent=2)+"\\n","utf8")
     # Include §65 plus ten sections selected by *actual* highest note density.
     required={"1","65","258"}
     order=sorted(notes_by_section,key=lambda section:(-notes_by_section[section],int(section)))
