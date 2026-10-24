@@ -1,7 +1,7 @@
-name: Daruri ULTIMATE full HTML Scholarly, English, Arabic - local browser PDF and resources (NONRELEASE)
+name: Daruri Arabic PDF 258 named destinations client-side A/B proof (NONRELEASE)
 on:
   push:
-    branches: [research/daruri-browser-full-scholarly-benchmark-20261024]
+    branches: [research/daruri-arabic-pdf-destinations-proof-20261024]
     paths:
       - 'daruri/qa/stage2_shootout/ultimate_*'
       - '.github/workflows/daruri-stage2-ultimate-browser-benchmark.yml'
@@ -18,14 +18,16 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        edition: [english, arabic-vowelled, scholarly]
+        edition: [arabic-vowelled]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: {node-version: '22'}
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
-      - name: Generate immutable original book HTML, including source references, notes and full 157-article dictionary
+      - name: QA-only Arabic HTML with hidden original section backlinks
+        env:
+          DARURI_NAV_BACKREF_TRIAL: '1'
         run: |
           python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
           python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
@@ -58,42 +60,5 @@ jobs:
         with:
           name: daruri-ultimate-html-paged-${{ matrix.edition }}-NONRELEASE
           path: /tmp/ultimate-paged-${{ matrix.edition }}
-          if-no-files-found: warn
-          retention-days: 14
-  vivliostyle-reference:
-    runs-on: ubuntu-latest
-    timeout-minutes: 48
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: {node-version: '22'}
-      - uses: actions/setup-python@v5
-        with: {python-version: '3.11'}
-      - name: Generate whole Scholarly source with 625 notes, 157 full articles
-        run: |
-          python -m pip install -q beautifulsoup4
-          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
-            daruri/qa/stage2_shootout/runtime_ultimate scholarly
-      - name: Install official self-hosted Vivliostyle and Chromium
-        run: |
-          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
-          cd daruri/qa/stage2_shootout
-          npx playwright install --with-deps --only-shell chromium
-          mkdir -p runtime_ultimate/viewer
-          cp -a node_modules/@vivliostyle/viewer/lib/. runtime_ultimate/viewer/
-      - name: Paginate actual entire scholarly HTML in the normal browser, no PDF server
-        env:
-          BENCH_ENGINE: vivliostyle
-          BENCH_EDITION: scholarly
-          BENCH_BROWSER: chromium
-          BENCH_OUT: /tmp/ultimate-vivliostyle-scholarly
-        run: |
-          node --check daruri/qa/stage2_shootout/ultimate_browser.cjs
-          /usr/bin/time -v node daruri/qa/stage2_shootout/ultimate_browser.cjs
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: daruri-ultimate-vivliostyle-scholarly-NONRELEASE
-          path: /tmp/ultimate-vivliostyle-scholarly
           if-no-files-found: warn
           retention-days: 14
