@@ -5,8 +5,8 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "20261024-copyicons2";
-  const RELEASE_ASSETS = new Set(["headerless-navigation.css", "headerless-navigation.js", "dock-ios-compact.css","daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "source-note-ui.js", "source-note-ui.css", "quran-context-ui.js", "quran-context-ui.css", "quran-context-data.json", "quran-context-data.js", "QURAN_CONTEXT_SOURCES.md", "hadith-context-ui.js", "hadith-context-ui.css", "hadith-inline-anchors.js", "hadith-context-data.js", "hadith-context-metadata.js", "hadith-context-arabic-bukhari1.js", "hadith-context-arabic-bukhari2.js", "hadith-context-arabic-muslim.js", "hadith-context-arabic-abudawud1.js", "hadith-context-arabic-abudawud2.js", "hadith-context-arabic-tirmidhi.js", "hadith-context-arabic-sunan.js", "HADITH_CONTEXT_SOURCES.md", "hadith-context-english-bukhari-a.js", "hadith-context-english-bukhari-b.js", "hadith-context-english-bukhari-long.js", "hadith-context-english-abudawud-a.js", "hadith-context-english-abudawud-b.js", "hadith-context-english-tirmidhi-a.js", "hadith-context-english-tirmidhi-b.js", "hadith-context-english-tirmidhi-c.js", "hadith-context-english-muslim.js", "hadith-context-english-other.js", "gnamma-morphology.js", "gnamma-word-context.js", "gnamma-word-context.css", "morph-lexicon.json", "morph-daruri-v1.json", "morph-mustasfa-v1.json", "download-bundle.js", "bookmark-ui.js", "bookmark-ui.css", "backup-transfer.js", "backup-transfer.css", "google-drive-config.js", "reading-desk.js", "reading-desk.css", "reading-mode-controls.js", "reading-mode-controls.css", "reading-navigation-history.js", "reading-navigation-bridge.js", "reading-navigation-history.css", "reading-desk-pdf.js", "reading-desk-dictionary.js", "pdf-editions-manifest.json", "sw.js", "editions.js", "editions.css", "personal-export.html", "personal-export.js", "personal-pdf-enhancements.js", "personal-export.css"]);
+  const RELEASE_VERSION = "daruri13-lesson12-method-20261024";
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "download-bundle.js", "pdf-editions-manifest.json", "sw.js", "daruri-study-guide.pdf", "study-guide-data.js", "study-guide.js"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -156,8 +156,8 @@
       ['daruri/icon-192.png', 'icon-192.png'],
       ['daruri/icon-512.png', 'icon-512.png'],
       ['daruri/dictionary.html', 'dictionary.html'],
-      ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri8-structure-20261020'],
-      ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=20261021-section1-qparallels1'],
+      ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri13-lesson12-method-20261024'],
+      ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=daruri13-lesson12-method-20261024'],
       ['daruri/gnamma-search.js', 'gnamma-search.js?v=20261022-morphperf1'],
       ['daruri/gnamma-morphology.js', 'gnamma-morphology.js?v=20261022-morphperf1'],
       ['daruri/gnamma-word-context.js', 'gnamma-word-context.js?v=20261022-morphperf1'],
@@ -170,7 +170,7 @@
       ['daruri/gnamma-proximity.js', 'gnamma-proximity.js?v=20261022-proximity1'],
       ['daruri/gnamma-scholarly.js', 'gnamma-scholarly.js?v=20261022-scholarly1'],
       ['daruri/gnamma-scholarly.css', 'gnamma-scholarly.css?v=20261022-scholarly1'],
-      ['daruri/source-reference-data.js', 'source-reference-data.js?v=20261023-hadith-arrow3'],
+      ['daruri/source-reference-data.js', 'source-reference-data.js?v=daruri13-lesson12-method-20261024'],
       ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-fallback-quran1'],
       ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261022-qcontext1'],
@@ -201,9 +201,9 @@
       ['daruri/hadith-context-english-tirmidhi-c.js', 'hadith-context-english-tirmidhi-c.js?v=20261023-hadithux3'],
       ['daruri/hadith-context-english-muslim.js', 'hadith-context-english-muslim.js?v=20261023-hadithux3'],
       ['daruri/hadith-context-english-other.js', 'hadith-context-english-other.js?v=20261023-hadithux3'],
-      ['daruri/download-bundle.js', 'download-bundle.js?v=20261023-stage1-current'],
-      ['daruri/study-guide-data.js', 'study-guide-data.js'],
-      ['daruri/study-guide.js', 'study-guide.js'],
+      ['daruri/download-bundle.js', 'download-bundle.js?v=daruri13-lesson12-method-20261024'],
+      ['daruri/study-guide-data.js', 'study-guide-data.js?v=daruri13-lesson12-method-20261024'],
+      ['daruri/study-guide.js', 'study-guide.js?v=daruri13-lesson12-method-20261024'],
       ['daruri/study-guide.css', 'study-guide.css'],
       ['daruri/editions.js', 'editions.js?v=20261023-personal-icons'],
       ['daruri/editions.css', 'editions.css?v=20261021-editiontabs-vowels-release1'],
@@ -240,10 +240,10 @@
       ['daruri/print.css', 'print.css?v=20261020-indexprint1'],
       ['daruri/print.js', 'print.js'],
       ['daruri/lesson-print.js', 'lesson-print.js'],
-      ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri8-structure-20261020'],
+      ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri13-lesson12-method-20261024'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=20261023-stage1-hierarchy2'],
+      ['daruri/sw.js', 'sw.js?v=daruri13-lesson12-method-20261024'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
@@ -255,12 +255,12 @@
     // Include all five published reading editions even when a sidebar is hidden.
     // The Bou Akl variant report is supplementary; discover other on-site PDF links.
     const pdfs = new Map([
-      ['daruri/daruri.pdf', 'daruri.pdf?v=daruri8-structure-20261020'],
-      ['daruri/daruri-arabic.pdf', 'daruri-arabic.pdf?v=daruri8-structure-20261020'],
-      ['daruri/daruri-english.pdf', 'daruri-english.pdf?v=daruri8-structure-20261020'],
-      ['daruri/daruri-study.pdf', 'daruri-study.pdf?v=daruri8-structure-20261020'],
-      ['daruri/daruri-study-guide.pdf', 'daruri-study-guide.pdf'],
-      ['daruri/daruri-arabic-vowelled.pdf', 'daruri-arabic-vowelled.pdf?v=daruri8-structure-20261020'],
+      ['daruri/daruri.pdf', 'daruri.pdf?v=daruri13-lesson12-method-20261024'],
+      ['daruri/daruri-arabic.pdf', 'daruri-arabic.pdf?v=daruri13-lesson12-method-20261024'],
+      ['daruri/daruri-english.pdf', 'daruri-english.pdf?v=daruri13-lesson12-method-20261024'],
+      ['daruri/daruri-study.pdf', 'daruri-study.pdf?v=daruri13-lesson12-method-20261024'],
+      ['daruri/daruri-study-guide.pdf', 'daruri-study-guide.pdf?v=daruri13-lesson12-method-20261024'],
+      ['daruri/daruri-arabic-vowelled.pdf', 'daruri-arabic-vowelled.pdf?v=daruri13-lesson12-method-20261024'],
       ['daruri/bou-akl-2015-variant-report.pdf', 'bou-akl-2015-variant-report.pdf']
     ]);
     // Complete A4 Reading/Study PDFs, including both additive bilingual
@@ -327,6 +327,7 @@
 
   async function readFile(name, path) {
     const url = new URL(path, root);
+    if (RELEASE_ASSETS.has(path.split('?')[0])) url.searchParams.set('v', RELEASE_VERSION);
     if (RELEASE_ASSETS.has(path.split('?')[0]) && !url.searchParams.has('v')) url.searchParams.set('v', RELEASE_VERSION);
     const response = await fetch(url.href, { cache: 'no-store', credentials: 'same-origin' });
     if (!response.ok) throw new Error('Could not fetch ' + name + ' (HTTP ' + response.status + ').');

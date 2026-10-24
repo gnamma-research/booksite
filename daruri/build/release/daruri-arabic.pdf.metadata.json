@@ -2,9 +2,9 @@
   "edition": "arabic",
   "filename": "daruri-arabic.pdf",
   "pages": 72,
-  "bytes": 532617,
-  "sha256": "b378c021f1cd6aba2cbf5e3ee8c7b8e7f7566b29e4d0a8a59fe39e38a29c2cad",
-  "links": 1049,
+  "bytes": 532630,
+  "sha256": "6d0d0703cc8cc8a1607bfa194542286fbe01d807d62aa5a54c97870e64736f73",
+  "links": 1050,
   "bookmarks": 206,
   "section_pages": {
     "1": 4,
@@ -6568,10 +6568,5 @@
       3
     ],
     "editorial": []
-  },
-  "source_map_verified": {
-    "pdf_sha256": "b378c021f1cd6aba2cbf5e3ee8c7b8e7f7566b29e4d0a8a59fe39e38a29c2cad",
-    "method": "All 259 named PDF section destinations match recorded source pages",
-    "count": 259
   }
 }

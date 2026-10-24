@@ -585,7 +585,7 @@
     {
       "term": "istiqrāʾ",
       "ar": "اسْتِقْرَاء",
-      "definition": "Induction: discerning a pattern from cases, including the recovery of early jurists’ implicit methods from their decisions.",
+      "definition": "Induction from particular cases. In §4 Ibn Rushd says many universal notions in the discipline were validated through case-by-case examination of early legal opinions; he does not say every rule originated in that way.",
       "sections": [
         4,
         217
@@ -638,8 +638,9 @@
     {
       "term": "kalām",
       "ar": "كَلَام",
-      "definition": "Speech; also rational theology. Which sense applies depends on the argument, and the latter is not the whole subject of uṣūl.",
+      "definition": "Speech; also rational theology. In §7 the mutakallimūn are the practitioners of kalām whose established arrangement Ibn Rushd follows, not merely anyone discussing uṣūl. Elsewhere the intended sense depends on context; theology is not identical with uṣūl.",
       "sections": [
+        7,
         9,
         41,
         63,
@@ -1299,7 +1300,7 @@
     {
       "term": "sibār",
       "ar": "سِبَار",
-      "definition": "Probe or testing instrument: the opening image for a discipline that guides the mind. It is not the name of a separate metaphysical science.",
+      "definition": "Method of examination or disciplined inquiry in §2, named by analogy with a physical instrument used to probe or measure. Its methodological function is to test reasoning alongside a guiding standard (qānūn); the literal instrument sense belongs in the lexical note.",
       "sections": [
         2
       ]
@@ -9235,7 +9236,11 @@
       "aliasesAr": [
         "سبارا"
       ],
-      "aliasesEn": [],
+      "aliasesEn": [
+        "method of examination",
+        "method of inquiry",
+        "method of investigation"
+      ],
       "sources": [
         "l-sabr"
       ],
