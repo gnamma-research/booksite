@@ -5816,7 +5816,7 @@ function takeDictionaryReturn(){
     const prior=state.focusLevel;
     const next=mode==='reading'?0:mode==='continuous'?3:(focusApparatus?1:2);
     if(prior===next){refreshFocusButton();return;}
-    const anchor=prior===3?currentContinuousSection()?.dataset.readingSection:state.n;
+    const anchor=state.n; // Preserve the section tracked in the dock when exiting Continuous.
     const oldY=window.scrollY;
     state.focusLevel=next;
     state.focusMode=next>0;

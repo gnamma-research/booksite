@@ -3,8 +3,8 @@
  * and temporary search highlight. Do not turn one into another.
  *
  * PRECEDENCE: explicitly interactive anchors keep their existing action;
- * a plain Arabic word opens this hub; text selections retain Reading Desk
- * actions unchanged. Personal material never leaves localStorage.
+ * plain Arabic words are not click targets; selected words open this hub only
+ * through an explicit Reading Desk selection action. Personal material never leaves localStorage.
  */
 (()=>{
 'use strict';
@@ -123,8 +123,12 @@ function atTap(e){
 }
 function findSelectedWord(){
  const sel=window.getSelection?.();if(!sel||sel.isCollapsed||!sel.rangeCount)return null;
- const text=sel.toString().trim().split(/\s+/)[0].replace(/[^\p{L}\p{M}]/gu,'');
- if(!AR.test(text))return null;
+ const raw=sel.toString().trim();
+ // Word Context is a *word* action, not an ambiguous first-word action on
+ // an arbitrary highlighted phrase. Highlight/Note remain for whole phrases.
+ if(!raw||/\s/u.test(raw))return null;
+ const text=raw.replace(/[^\p{L}\p{M}]/gu,'');
+ if(!text||!AR.test(text))return null;
  const parent=(sel.anchorNode?.nodeType===1?sel.anchorNode:sel.anchorNode?.parentElement);
  const grid=parent?.closest?.('.passage-grid');
  return {word:text,anchor:parent,grid};
@@ -275,7 +279,9 @@ async function openWord(word,anchor,grid,trigger=null,point=null){
 function close(){
  if(!shade||shade.hidden)return;
  shade.hidden=true;selected=null;
- try{oldFocus?.focus?.({preventScroll:true})}catch(_){}
+ const back=oldFocus?.isConnected&&oldFocus.getClientRects?.().length?oldFocus:
+  $('#readerDock #openJump')||$('#readerCopyOptions')||$('#menuBtn');
+ try{back?.focus?.({preventScroll:true})}catch(_){}
 }
 function installDictionaryActions(){
  const popup=$('#infoOverlay'),container=$('#detailContent');
@@ -321,18 +327,9 @@ document.addEventListener('click',e=>{
  }
  const dict=e.target?.closest?.('[data-term]');
  if(dict){lastDictionary={term:dict.dataset.term};queueMicrotask(installDictionaryActions);return;}
- if(shade&&!shade.hidden)return;
- if(e.button!==0||e.detail===0)return;
- const content=e.target?.closest?.('#mainContent .passage-grid .passage-ar');
- if(!content)return;
- // Notes, source markers, dictionary links, saved-item controls and normal
- // text selection must retain their own established click semantics.
- if(e.target.closest('a,button,input,mark[data-rd],.note-anchored,[data-note-target],[data-rd]'))return;
- if(window.getSelection?.()?.toString().trim())return;
- const at=atTap(e),n=at.node;
- if(!n||!content.contains(n))return;
- const word=currentToken(n,at.offset);
- if(word)openWord(word,n.parentElement,content.closest('.passage-grid'),e.target,at);
+ // Ordinary passage taps must never summon Word Context. Explicit dictionary,
+ // note and glossary links above retain their own established handlers.
+
 });
 document.addEventListener('keydown',e=>{
  if(e.key==='Escape'&&shade&&!shade.hidden){e.preventDefault();close();}
@@ -346,5 +343,11 @@ document.addEventListener('keydown',e=>{
 new MutationObserver(()=>{
  if(!rendering)installDictionaryActions();
 }).observe(document.body,{subtree:true,childList:true,attributes:false});
-window.GnammaWordContext=Object.freeze({openWord,close,findSelectedWord,locateOccurrence:passageOccurrence});
+function openSelected(){
+ const selected=findSelectedWord();
+ if(!selected)return false;
+ openWord(selected.word,selected.anchor,selected.grid,selected.anchor,null);
+ return true;
+}
+window.GnammaWordContext=Object.freeze({openWord,openSelected,close,findSelectedWord,locateOccurrence:passageOccurrence});
 })();
