@@ -5638,7 +5638,7 @@ function takeDictionaryReturn(){
     const prior=state.focusLevel;
     const next=mode==='reading'?0:mode==='continuous'?3:(focusApparatus?1:2);
     if(prior===next){refreshFocusButton();return;}
-    const anchor=prior===3?currentContinuousSection()?.dataset.readingSection:state.n;
+    const anchor=state.n; // Already tracked by the reader dock; avoid a second heading-only guess on leaving Continuous.
     const oldY=window.scrollY;
     state.focusLevel=next;
     state.focusMode=next>0;
