@@ -3,7 +3,7 @@
   "work_title": "Al-Ḍarūrī fī Uṣūl al-Fiqh",
   "author": "Abū al-Walīd Ibn Rushd",
   "canonical_reader_source": "daruri/edition-r3-20261020.js",
-  "canonical_reader_sha256": "e233057d26772249b17b456d9c8aeaf8fd7d5c293c9875c32569d29bb3d9e22e",
+  "canonical_reader_sha256": "ced0651e71de37b045b8a53c1f7da29aa6137e93e171f5f7752684a904091f57",
   "source_authorial_sections": 258,
   "authorial_parallel_segments": 414,
   "separate_later_copyist_colophon_segments": 2,
@@ -22,19 +22,19 @@
   "native_bok_database_export": false,
   "private_user_notes_included": false,
   "zip_filename": "Daruri_Portable_Scholarly_Source.zip",
-  "zip_sha256": "13974ace4928d822c953ac19f817c5cf43ef7b278fe6b1da1acc371395146bbc",
-  "zip_bytes": 1818599,
+  "zip_sha256": "2a26bb7e8892a5dce88f53fbaca0c7fd84efd6dca1ac2ca8b10c653f9a3b782e",
+  "zip_bytes": 1824137,
   "files": {
     "README.txt": {
       "sha256": "0a23eb9194d05342c3ed0a1aa0bb66116008369362e21d7ba83af611336b718e",
       "bytes": 4370
     },
     "daruri-arabic-vowelled.html": {
-      "sha256": "08922203f2820d53bed802f63879f93484ffdac1a627e0aba0772a3a44d4b329",
+      "sha256": "1c070cd587122e5671d761b195121b2f0407da0e316712afe9bd3470882247ae",
       "bytes": 424356
     },
     "daruri-arabic.html": {
-      "sha256": "1d43987f8ea2a1ba9fe628b917717aac444027490a55f9b6bd668fe54251cc13",
+      "sha256": "ae33fd99369eba932f413af05cdb160115882c5fefc694c808c9687c4860ae95",
       "bytes": 271738
     },
     "daruri-colophon.json": {
@@ -42,28 +42,28 @@
       "bytes": 2120
     },
     "daruri-english.html": {
-      "sha256": "55a69a76076d4a3aa271fe3eec7120f6e7d76f176338f7b941bebf413c3f017e",
-      "bytes": 253124
+      "sha256": "b55873c0979095072a73ab88f23e473ce29d13cfbf91fdb9996864b5fcab7190",
+      "bytes": 253268
     },
     "daruri-notes.json": {
-      "sha256": "efaaea7afd6f795f4cf201a0864f7c7a3e84e6bcbd43ffe52241e7d76c04dd5a",
-      "bytes": 405691
+      "sha256": "615823a7f2dba455e983913729c830dc4339f666e485e39ba12240673ecd12b7",
+      "bytes": 408845
     },
     "daruri-parallel.html": {
-      "sha256": "b174d56b63a063808590d965f4630c76bb43e89d5c6e3bb6cb64e9239e89d320",
-      "bytes": 921052
+      "sha256": "3c6c3d7e0513187bbf19e558a567954b7315a9b70d75f76d9b31cec6a1615c80",
+      "bytes": 924395
     },
     "daruri-passages.jsonl": {
-      "sha256": "f4a593916e92ae05abdbc11672324a0aac17d52b5e7039ae1e052f3427a9e554",
-      "bytes": 1015422
+      "sha256": "9eae1494f4b0719dc1068609ae15e512b674279afec2d30a31266c8d51c361ba",
+      "bytes": 1015561
     },
     "daruri-source.json": {
-      "sha256": "2af9729840f7e05987954216b2e74bbf38127651d0de2d4cbd0371e7d87d2a95",
-      "bytes": 1669240
+      "sha256": "705096612c43af3bf574d3cef1b4be4a25ed7d14c54fd2f4e26f61e090d40db6",
+      "bytes": 1673018
     },
     "daruri.tei.xml": {
-      "sha256": "37fea93c7e02b734ea6593984e5f638c26e6b4f0048dfee3ffb0ea4920782850",
-      "bytes": 1252467
+      "sha256": "554c574272c5992986896d850a1b21ae0555eb974054c1c904a5a659bcdaf4f1",
+      "bytes": 1255760
     },
     "scholarly-data/backmatter-source-notes.json": {
       "sha256": "86c7d66e0b54a21233b3bf86a4788b534b9377390ff3480d022359884e2085bf",
@@ -82,7 +82,7 @@
       "bytes": 222823
     },
     "shamela-import-arabic.html": {
-      "sha256": "1d43987f8ea2a1ba9fe628b917717aac444027490a55f9b6bd668fe54251cc13",
+      "sha256": "ae33fd99369eba932f413af05cdb160115882c5fefc694c808c9687c4860ae95",
       "bytes": 271738
     },
     "shamela-import-arabic.txt": {
