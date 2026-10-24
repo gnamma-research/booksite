@@ -55,7 +55,7 @@ function currentGrid(){
  return nodes.find(n=>n.getBoundingClientRect().top<=cutoff&&n.getBoundingClientRect().bottom>=cutoff) ||
    nodes.find(n=>n.getBoundingClientRect().bottom>cutoff)||nodes[0];
 }
-function currentTarget(){return targeted||gridLocation(currentGrid())||{section:String(C.state.n),index:0,id:idFor(C.state.n,0)};}
+function currentTarget(){return selected?{section:selected.section,index:selected.start,id:idFor(selected.section,selected.start)}:targeted||gridLocation(currentGrid())||{section:String(C.state.n),index:0,id:idFor(C.state.n,0)};}
 let targeted=null,selected=null,selectionScheduled=false,menu=null,sheet=null,opener=null,config=null,preloadIssue=[],sourceReady=false,preloadToken=0,pendingSelection=null;
 function selectionSnapshot(){
  const s=window.getSelection();if(!s||s.isCollapsed||!String(s).trim()||!s.rangeCount)return null;
@@ -70,8 +70,14 @@ function selectionSnapshot(){
 }
 function refreshSelection(){
  if(selectionScheduled)return;selectionScheduled=true;
- queueMicrotask(()=>{selectionScheduled=false;selected=selectionSnapshot();
-  if(menu&&!menu.hidden)drawMenu();
+ queueMicrotask(()=>{selectionScheduled=false;
+  const prior=selected;
+  // A real selection is immutable once the Copy menu or sheet opens. Touch
+  // scrolling/focus changes must never convert a quotation to a new paragraph.
+  if(!(prior&&((menu&&!menu.hidden)||sheet)))selected=selectionSnapshot();
+  if(menu&&!menu.hidden&&(prior?.text!==selected?.text||
+       prior?.section!==selected?.section||prior?.start!==selected?.start))
+    drawMenu();
   const copy=document.querySelector('#readerCopyAction');
   if(copy){copy.setAttribute('aria-label',selected?'Copy selected text':'Copy complete current section');copy.title=copy.getAttribute('aria-label');}
  });
@@ -145,18 +151,33 @@ const copyMenuSymbols=Object.freeze({
  link:'↗'
 });
 function drawMenu(){
- menuHost();const p=currentTarget();
+ menuHost();const p=selected?{section:selected.section,index:selected.start}:gridLocation(currentGrid())||currentTarget();
  const entries=[...(selected?[['selected','Selected text','text-cursor']]:[]),['text','Text','file-text'],['notes','Scholarly notes','notebook-pen'],['research','Research extract','library-big'],['citation','Citation','quote'],['link','Link','link']];
  menu.innerHTML='<div class="gn-copy-menu-head">Copy <small>'+escapeHTML(sectionLabel(p.section)+(p.index>=0?' · ¶'+(p.index+1):''))+'</small></div>'+entries.map(([kind,label,ico],i)=>
   (kind==='citation'?'<div class="gn-copy-rule"></div>':'')+'<button type="button" role="menuitem" data-gn-menu="'+kind+'"><span class="gn-copy-mini gn-copy-icon-'+ico+'" data-gn-icon="'+kind+'" aria-hidden="true">'+copyMenuSymbols[kind]+'</span><span>'+label+'</span><span class="gn-copy-arrow" aria-hidden="true">›</span></button>'
  ).join('');
 }
-function openMenu(trigger){if(C.state.route!=='reader')return;targeted=null;selected=selectionSnapshot()||pendingSelection||selected;
+function openMenu(trigger){if(C.state.route!=='reader')return;targeted=null;selected=selectionSnapshot()||pendingSelection||null;
  opener=trigger;drawMenu();menu.hidden=false;trigger.setAttribute('aria-expanded','true');
  const box=trigger.getBoundingClientRect(),left=Math.max(8,Math.min(innerWidth-menu.offsetWidth-8,box.right-menu.offsetWidth));
  menu.style.left=left+'px';menu.style.top=Math.min(innerHeight-menu.offsetHeight-8,box.bottom+5)+'px';
  menu.querySelector('button')?.focus({preventScroll:true});
 }
+let menuPositionFrame=0;
+function refreshOpenCopyMenu(){
+ if(!menu||menu.hidden||C.state.route!=='reader')return;
+ if(menuPositionFrame)return;
+ menuPositionFrame=requestAnimationFrame(()=>{
+  menuPositionFrame=0;
+  if(!menu||menu.hidden||C.state.route!=='reader'||selected)return;
+  const head=menu.querySelector('.gn-copy-menu-head small');
+  const p=gridLocation(currentGrid())||currentTarget();
+  const label=sectionLabel(p.section)+(p.index>=0?' · ¶'+(p.index+1):'');
+  if(head&&head.textContent!==label)head.textContent=label;
+ });
+}
+window.addEventListener('scroll',refreshOpenCopyMenu,{passive:true});
+window.addEventListener('resize',refreshOpenCopyMenu,{passive:true});
 function closeMenu(restore=false){if(!menu)return;menu.hidden=true;document.querySelector('#readerCopyOptions')?.setAttribute('aria-expanded','false');if(restore)opener?.focus({preventScroll:true});}
 function message(v){const old=document.querySelector('#gn-copy-toast');old?.remove();const x=document.createElement('div');x.id='gn-copy-toast';x.className='gn-copy-toast';x.setAttribute('role','status');x.textContent=v;document.body.append(x);setTimeout(()=>x.remove(),3800);}
 const modes={selected:'Selected text',text:'Copy text',notes:'Scholarly notes',research:'Research extract',citation:'Scholarly citation',link:'Copy link'};
@@ -215,7 +236,12 @@ function buildLink(){
    urlFor(section,idFor(section,config.start));
 }
 function openSheet(kind,target=null){
- closeMenu();config=defaults(kind);if(target){targeted=target;config.section=target.section;config.start=target.index;config.end=target.index;config.scope=kind==='link'?'paragraph':config.scope;}
+ const openedFromMenu=!!(menu&&!menu.hidden);
+ closeMenu();config=defaults(kind);
+ // An open, unselected Copy menu follows the visible paragraph. Preserve the
+ // separate one-tap quick Copy behaviour, which copies the whole section.
+ if(openedFromMenu&&!selected&&!target&&kind!=='selected')config.scope='paragraph';
+ if(target){targeted=target;config.section=target.section;config.start=target.index;config.end=target.index;config.scope=kind==='link'?'paragraph':config.scope;}
  sheet=document.createElement('div');sheet.className='gn-copy-backdrop';sheet.innerHTML='<div class="gn-copy-sheet" role="dialog" aria-modal="true" aria-label="Copy options"><div class="gn-copy-sheet-header"><strong class="gn-copy-sheet-title"></strong><button type="button" class="gn-copy-dismiss" aria-label="Close copy options" data-gn-copy-close>×</button></div><div class="gn-copy-sheet-body"></div><div class="gn-copy-sheet-footer"><button type="button" class="gn-copy-cancel" data-gn-copy-close>Cancel</button><button type="button" id="gn-copy-submit">Copy</button></div></div>';
  document.body.append(sheet);document.body.classList.add('gn-copy-sheet-open');
  sheet.addEventListener('click',e=>{if(e.target===sheet||e.target.closest('[data-gn-copy-close]')){closeSheet();return;}if(e.target.id==='gn-copy-submit')doCopy();});
@@ -408,7 +434,7 @@ document.addEventListener('click',e=>{
  const par=e.target.closest?.('[data-gn-par-link]');if(par){e.preventDefault();e.stopImmediatePropagation();
   const p={section:par.dataset.gnParSection,index:locate(par.dataset.gnParSection,par.dataset.gnParLink),id:par.dataset.gnParLink};
   targeted=p;selected=null;openSheet('link',p);return;}
- const choice=e.target.closest?.('[data-gn-menu]');if(choice){e.preventDefault();const kind=choice.dataset.gnMenu;closeMenu();openSheet(kind);return;}
+ const choice=e.target.closest?.('[data-gn-menu]');if(choice){e.preventDefault();const kind=choice.dataset.gnMenu;openSheet(kind);return;}
  if(menu&&!menu.hidden&&!e.target.closest('#readerCopyOptions,#gn-copy-menu'))closeMenu();
 },true);
 document.addEventListener('keydown',e=>{

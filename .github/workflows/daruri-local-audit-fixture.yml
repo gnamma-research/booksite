@@ -1,0 +1,47 @@
+name: Daruri local audit fixture
+on:
+  push:
+    branches: [fix/daruri-focus-contents-and-toolbar-20261024]
+    paths:
+      - '.github/workflows/daruri-local-audit-fixture.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/daruri-local-audit-fixture.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  pack-static-reader-fixture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pack reader and shared assets without release PDF binaries
+        run: |
+          python3 - <<'PY'
+          import pathlib, tarfile
+          repo=pathlib.Path('.')
+          excluded={'.git','node_modules','__pycache__'}
+          paths=[]
+          for root in ['daruri','assets','arabic']:
+              folder=repo/root
+              if not folder.exists():continue
+              for path in folder.rglob('*'):
+                  if not path.is_file():continue
+                  if any(part in excluded for part in path.parts):continue
+                  if path.suffix.lower() in {'.pdf','.zip','.mp4','.mov','.webm','.wasm'}:continue
+                  paths.append(path)
+          with tarfile.open('/tmp/reader-audit-fixture.tar.gz','w:gz',compresslevel=4) as out:
+              for path in paths:out.add(path,arcname=str(path))
+          total=sum(path.stat().st_size for path in paths)
+          print('Audit fixture files:',len(paths),'raw bytes:',total)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daruri-local-audit-fixture
+          path: /tmp/reader-audit-fixture.tar.gz
+          retention-days: 3
+          if-no-files-found: error

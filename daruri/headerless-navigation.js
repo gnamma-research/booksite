@@ -30,6 +30,41 @@
    menu.classList.add('gn-top-tile');
    menu.setAttribute('aria-label','Open or close Contents');
    menu.title='Contents';
+   // The old handler resets focusMode, but the three-mode reader's save()
+   // reconstructs it from focusLevel. Use the authoritative mode API before
+   // the existing handler to reveal a genuine drawer, not a CSS overlay.
+   menu.addEventListener('click',function(){
+     if(document.body.classList.contains('reading-active')&&
+        document.body.classList.contains('focus-mode')){
+       const continuous=document.body.classList.contains('focus-level-3');
+       const readerState=window.GnammaCopyContext?.state;
+       const currentNumber=document.getElementById('dockSection')?.textContent?.match(/[0-9]+/)?.[0]||readerState?.n;
+       let passage=null,passageTop=0,segment=null;
+       if(continuous&&currentNumber){
+         const part=document.getElementById('gn-continuous-'+currentNumber);
+         if(part){
+           const threshold=Math.max(110,Math.min(220,window.innerHeight*.3));
+           passage=[...part.querySelectorAll('.passage-grid')].find(el=>el.getBoundingClientRect().bottom>=threshold)||
+             part.querySelector('.passage-grid');
+           segment=passage?.dataset.segment;
+           passageTop=passage?.getBoundingClientRect().top||threshold;
+           // The old mode switch guesses its anchor from the section heading
+           // position rather than the *displayed* dock section. Align that
+           // heading first, while the same section is still present in the DOM.
+           part.scrollIntoView({block:'start',behavior:'instant'});
+         }
+       }
+       window.GnammaReaderModes?.setMode?.('reading');
+       if(continuous&&segment!==null){
+         const equivalent=document.querySelector('#reader .passage-grid[data-segment="'+segment+'"]');
+         if(equivalent)window.scrollBy({top:equivalent.getBoundingClientRect().top-passageTop,behavior:'instant'});
+       }
+       // Focus concealed the formerly open desktop sidebar. The native
+       // Contents handler toggles leftVisible, so ensure its very first click
+       // means OPEN instead of unexpectedly closing that saved preference.
+       if(readerState)readerState.leftVisible=false;
+     }
+   },true);
   }
 
   // Home and Read are separate destinations, never loose text next to an icon.
@@ -56,11 +91,19 @@
   if(document.body.classList.contains('reading-active')){
    read.classList.add('active');read.setAttribute('aria-current','page');
   }
-  // Clicking Read while already reading must not reset the paragraph/scroll position.
+  // Reuse the reader's canonical Return to Reading action, including its
+  // section, paragraph anchor, viewport offset, and Continuous-mode history.
+  // The top Read shortcut must never silently restart at §1.
   read.addEventListener('click',function(event){
-   if(document.body.classList.contains('reading-active')){
-    event.preventDefault();event.stopPropagation();
-   }
+    if(document.body.classList.contains('reading-active')){
+      event.preventDefault();event.stopPropagation();return;
+    }
+    const resume=document.querySelector('#mainContent [data-return-reading]')||
+      document.querySelector('#mainContent .gnamma-home .home-actions .action-btn.primary');
+    if(resume){
+      event.preventDefault();event.stopPropagation();
+      resume.click();
+    }
   });
 
   // Search/Display/Help are global actions, not part of the Focus group.
