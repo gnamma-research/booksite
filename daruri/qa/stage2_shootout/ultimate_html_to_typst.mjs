@@ -30,6 +30,15 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   if(used.has(safe)){let i=2;while(used.has(safe+'-'+i))i++;safe+='-'+i;}
   labels.set(id,safe);used.add(safe);
  }
+ // Editorial topics are used ONLY for PDF sidebar bookmark labels. They
+ // are not inserted into the author's printed Arabic/English source text.
+ const sectionTopics=new Map();
+ for(const el of dom.querySelectorAll('section.editorial-toc a[href^="#section-"]')){
+   const match=/^#section-([1-9][0-9]*)$/.exec(el.getAttribute('href')||'');
+   if(match && Number(match[1])<=258)
+     sectionTopics.set(Number(match[1]),(el.textContent||'').trim());
+ }
+ if(sectionTopics.size!==258)throw Error('Missing original 258 editorial section labels');
  const located=new Set();
  const anchor=el=>{
   const id=el?.getAttribute?.('id');
@@ -163,8 +172,15 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   // heading for each original numbered source section.
   const sourceNumber=el.matches('section.text-section') ? el.getAttribute('data-section-id') : null;
   if(sourceNumber && /^(?:[1-9][0-9]*)$/.test(sourceNumber) && Number(sourceNumber)<=258){
+    const number=Number(sourceNumber);
+    const label=textEscape(sectionTopics.get(number)||('Section '+sourceNumber));
     const children=[...el.childNodes].map(block).join('');
-    return anchor(el)+'#heading(level:2,outlined:true)[Section '+sourceNumber+']\n'+children;
+    // Scoped Typst heading display suppression. The actual heading remains
+    // in Typst's semantic/PDF outline but contributes NO printed editorial
+    // prose, blank space or changed canonical book text.
+    const pdfBookmark='#{ show heading: none; heading(level: 2, outlined: true, bookmarked: true)['+
+      label+'] }\\n';
+    return anchor(el)+pdfBookmark+children;
   }
   const begin=anchor(el);
   const breakBefore=(el.matches('section.page-start,section.cover,section.contents')||
