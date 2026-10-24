@@ -154,10 +154,28 @@ async function go(){
      const docs=[document,...Array.from(document.querySelectorAll('iframe')).map(f=>f.contentDocument).filter(Boolean)];
      const n=docs.reduce((a,d)=>a+d.querySelectorAll('.source-segment').length,0);
      const d=docs.reduce((a,d)=>a+d.querySelectorAll('.lex-article').length,0);
-     return n>50?{loaded_segments:n,loaded_dictionary_articles:d}:false;
-   },null,{timeout:245000});
+     // Do not confuse the first few visible pages with a completed book.
+     // The original full HTML has 832 bilingual source segment nodes and
+     // 157 distinct complete Arabic/English historical dictionary articles.
+     const mainComplete=n>=832;
+     const lexComplete=d>=157;
+     return mainComplete&&lexComplete?{
+       loaded_segments:n,loaded_dictionary_articles:d,
+       full_main_and_lexicon_rendered:true
+     }:false;
+   },null,{timeout:265000,polling:1250});
    Object.assign(report,await result.jsonValue());
-   report.view_is_real_source=Boolean(report.loaded_segments>50);
+   report.view_is_real_source=Boolean(report.loaded_segments>=832&&report.loaded_dictionary_articles>=157);
+   if(!report.view_is_real_source)
+     throw Error('Vivliostyle viewer displayed only a fragment, not the whole Scholarly book');
+   const pdf=await page.pdf({preferCSSPageSize:true,printBackground:true,timeout:160000});
+   if(pdf.length<50000||pdf.subarray(0,5).toString('ascii')!=='%PDF-')
+     throw Error('No genuine native HTML-to-PDF print bytes from Vivliostyle');
+   const filename=path.join(OUT,'daruri-scholarly-vivliostyle-PRINT-QAONLY.pdf');
+   fs.writeFileSync(filename,pdf);
+   report.output_pdf_bytes=pdf.length;
+   report.output_pdf=filename;
+   report.output_was_ci_only_browser_print=true;
   }
   report.browser_page_load_to_output_ms=Math.round(performance.now()-t);
  }finally{clearInterval(ticker);recordResources()}
