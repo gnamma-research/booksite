@@ -133,11 +133,23 @@ function mountCopyButton(){
  arrow.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();if(menu&&!menu.hidden)closeMenu();else openMenu(arrow)});
 }
 function menuHost(){if(menu)return menu;menu=document.createElement('div');menu.className='gn-copy-menu';menu.id='gn-copy-menu';menu.hidden=true;menu.setAttribute('role','menu');menu.setAttribute('aria-label','Copy options');document.body.append(menu);return menu;}
+/* Distinct silhouettes at 18px: Aa = text, annotated notebook = notes,
+   archive box = complete research material.  All symbols are decorative;
+   the adjacent labels remain the accessible action names. */
+const copyMenuSvg=paths=>'<svg class="gn-copy-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths+'</svg>';
+const copyMenuSymbols=Object.freeze({
+ selected:copyMenuSvg('<rect x="3" y="4" width="18" height="16" rx="2" stroke-dasharray="2 2"/><path d="M7 9h10M7 13h6"/>'),
+ text:'<span class="gn-copy-type-mark">Aa</span>',
+ notes:copyMenuSvg('<path d="M7 3h9v3M18 13v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"/><path d="M3 8h4M3 14h4M3 19h4M9 16h5"/><path d="m12 10 6.5-6.5 2 2L14 12l-3 1z"/>'),
+ research:copyMenuSvg('<rect x="3" y="8" width="18" height="13" rx="2"/><path d="M2 4h20v4H2zM10 12h4"/>'),
+ citation:'❞',
+ link:'↗'
+});
 function drawMenu(){
  menuHost();const p=currentTarget();
  const entries=[...(selected?[['selected','Selected text','text-cursor']]:[]),['text','Text','file-text'],['notes','Scholarly notes','notebook-pen'],['research','Research extract','library-big'],['citation','Citation','quote'],['link','Link','link']];
  menu.innerHTML='<div class="gn-copy-menu-head">Copy <small>'+escapeHTML(sectionLabel(p.section)+(p.index>=0?' · ¶'+(p.index+1):''))+'</small></div>'+entries.map(([kind,label,ico],i)=>
-  (kind==='citation'?'<div class="gn-copy-rule"></div>':'')+'<button type="button" role="menuitem" data-gn-menu="'+kind+'"><span class="gn-copy-mini gn-copy-icon-'+ico+'" aria-hidden="true">'+({selected:'▤',text:'▧',notes:'▤',research:'▥',citation:'❞',link:'↗'}[kind])+'</span><span>'+label+'</span><span class="gn-copy-arrow" aria-hidden="true">›</span></button>'
+  (kind==='citation'?'<div class="gn-copy-rule"></div>':'')+'<button type="button" role="menuitem" data-gn-menu="'+kind+'"><span class="gn-copy-mini gn-copy-icon-'+ico+'" data-gn-icon="'+kind+'" aria-hidden="true">'+copyMenuSymbols[kind]+'</span><span>'+label+'</span><span class="gn-copy-arrow" aria-hidden="true">›</span></button>'
  ).join('');
 }
 function openMenu(trigger){if(C.state.route!=='reader')return;targeted=null;selected=selectionSnapshot()||pendingSelection||selected;
