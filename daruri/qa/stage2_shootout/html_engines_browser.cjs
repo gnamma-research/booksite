@@ -65,7 +65,34 @@ async function run(){
        relEnd:(b.bottom-box.top)/box.height,height:b.height}
     });
    });
-   return {state:window.__daruriPaged,page_count:pages.length,
+   const footAreas=pages.flatMap((pg,i)=>
+     [...pg.querySelectorAll('.pagedjs_footnote_area .footnote')]
+       .map(node=>({page:i+1,id:node.getAttribute('data-note-id')||'',
+         rendered_id:node.id||'',px:Math.round(node.getBoundingClientRect().height)})));
+   const callAreas=pages.flatMap((pg,i)=>
+      [...pg.querySelectorAll('.pagedjs_page_content sup.footnote-call, .pagedjs_page_content sup.quran-marker')]
+        .map(node=>{
+          const href=node.querySelector('a[href^="#"]')?.getAttribute('href')||'';
+          return {page:i+1,id:node.dataset.noteId||href.slice(1).replace(/--repeat-.*/, ''),
+             href:href,call_id:node.querySelector('a')?.id||''}
+        }));
+   const notePages=new Map();
+   for(const n of footAreas){
+      if(!notePages.has(n.id))notePages.set(n.id,[]);
+      notePages.get(n.id).push(n.page);
+   }
+   const wrong=callAreas.filter(c=>notePages.has(c.id)&&!notePages.get(c.id).includes(c.page));
+   const missing=callAreas.filter(c=>!notePages.has(c.id));
+   return {physical_footnote_bodies:footAreas.length,
+       unique_physical_note_ids:new Set(footAreas.map(n=>n.id)).size,
+       authorial_note_call_nodes:callAreas.length,
+       same_page_note_call_count:callAreas.length-wrong.length-missing.length,
+       cross_page_source_note_call_total:wrong.length,
+       cross_page_source_note_calls:wrong.slice(0,30),
+       missing_note_body_for_call_total:missing.length,
+       missing_note_body_calls:missing.slice(0,30),
+       call_sample:callAreas.slice(0,5),body_sample:footAreas.slice(0,5),
+       state:window.__daruriPaged,page_count:pages.length,
     footnote_body_elements:notes.length,
     notes_in_bottom_third:notes.filter(n=>n.relY>=.67&&n.relEnd<=1.02).length,
     first_notes:notes.slice(0,8),
