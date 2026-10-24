@@ -3,8 +3,8 @@
  * and temporary search highlight. Do not turn one into another.
  *
  * PRECEDENCE: explicitly interactive anchors keep their existing action;
- * a plain Arabic word opens this hub; text selections retain Reading Desk
- * actions unchanged. Personal material never leaves localStorage.
+ * plain Arabic words are not click targets; selected words open this hub only
+ * through an explicit Reading Desk selection action. Personal material never leaves localStorage.
  */
 (()=>{
 'use strict';
@@ -321,18 +321,9 @@ document.addEventListener('click',e=>{
  }
  const dict=e.target?.closest?.('[data-term]');
  if(dict){lastDictionary={term:dict.dataset.term};queueMicrotask(installDictionaryActions);return;}
- if(shade&&!shade.hidden)return;
- if(e.button!==0||e.detail===0)return;
- const content=e.target?.closest?.('#mainContent .passage-grid .passage-ar');
- if(!content)return;
- // Notes, source markers, dictionary links, saved-item controls and normal
- // text selection must retain their own established click semantics.
- if(e.target.closest('a,button,input,mark[data-rd],.note-anchored,[data-note-target],[data-rd]'))return;
- if(window.getSelection?.()?.toString().trim())return;
- const at=atTap(e),n=at.node;
- if(!n||!content.contains(n))return;
- const word=currentToken(n,at.offset);
- if(word)openWord(word,n.parentElement,content.closest('.passage-grid'),e.target,at);
+ // Ordinary passage taps must never summon Word Context. Explicit dictionary,
+ // note and glossary links above retain their own established handlers.
+
 });
 document.addEventListener('keydown',e=>{
  if(e.key==='Escape'&&shade&&!shade.hidden){e.preventDefault();close();}
