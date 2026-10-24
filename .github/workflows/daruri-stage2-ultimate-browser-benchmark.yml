@@ -55,6 +55,13 @@ jobs:
           python daruri/qa/stage2_shootout/ultimate_pdf_qa.py \
             "$pdf" daruri/qa/stage2_shootout/runtime_ultimate/${{ matrix.edition }}.source.json \
             /tmp/ultimate-paged-${{ matrix.edition }}/native-qa.json
+      - name: Independent original 258-section native PDFium Arabic search diagnosis (does not claim release)
+        run: |
+          python -m pip install -q pypdfium2==5.8.0 lxml
+          python daruri/qa/stage2_shootout/qa_pdfium_arabic_search.py \
+            daruri/qa/stage2_shootout/runtime_ultimate/arabic-vowelled.html \
+            /tmp/ultimate-paged-arabic-vowelled/daruri-arabic-vowelled-paged-PRINT-QAONLY.pdf \
+            /tmp/ultimate-paged-arabic-vowelled/native-pdfium-arabic-search.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
