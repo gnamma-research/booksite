@@ -47,8 +47,10 @@ async function run(){
      converted.metrics.typst_bilingual_grid_rows<414)
    throw Error('Conversion unexpectedly dropped dictionary text, original citations or source paragraphs: '+JSON.stringify(converted.metrics));
   set('initializing','Loading local Typst WASM and manuscript fonts...');
-  compiler=await createTypstCompiler({backend:'worker',
-    worker:()=>createWebWorker(workerUrl),
+  // JSPI is the documented non-worker backend. Validate whether it avoids
+  // SharedArrayBuffer / COOP+COEP on plain GitHub Pages static hosting.
+  // Explicit mode isolates this experiment from the proven worker backend.
+  compiler=await createTypstCompiler({backend:'jspi',
     coreModules:{
      'engine.core.wasm':WebAssembly.compileStreaming(fetch(coreUrl)),
      'engine.core2.wasm':WebAssembly.compileStreaming(fetch(core2Url)),
