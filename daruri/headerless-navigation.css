@@ -543,3 +543,18 @@
     pointer-events:auto!important;
   }
 }
+
+/* Accessibility audit, 2026-10-25: readable functional metadata.
+   The former low-contrast grays failed WCAG 2 AA in both browser engines.
+   Theme variables preserve dark/light/Andalusian colour identity. */
+@media screen {
+ body.reader-enhanced #readingControls #persistentLanguages [data-language-toggle] .gn-language-label,
+ body.reader-enhanced #reader .gn-paragraph-link,
+ body.reader-enhanced #mainContent :is(#terms,#concepts) > .gn-small-label,
+ body.reader-enhanced #readerDock #gn-dock-paragraph-ref {
+   color:var(--text,var(--ink,#263633))!important;
+ }
+ body.reader-enhanced #readingControls #persistentLanguages [data-language-toggle].active .gn-language-label {
+   color:var(--surface,#fff)!important;
+ }
+}
