@@ -4,6 +4,9 @@ Run from the repository root after Playwright browsers are installed.
 No production data, preferences or PDF artefacts are modified.
 """
 from pathlib import Path
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+from functools import partial
+from threading import Thread
 import base64
 import io
 import re
@@ -13,7 +16,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT=Path(__file__).resolve().parents[2]
 SITE=ROOT/'daruri'
-URL=(SITE/'index.html').as_uri()
+URL=None  # Set to localhost HTTP server in __main__, not file:// (WebKit CORS)
 SIZES=[320,375,390,768,860,1280]
 
 def check_mosaic():
@@ -91,14 +94,24 @@ def run_case(browser, engine, width):
 
 if __name__=='__main__':
     check_mosaic()
-    with sync_playwright() as p:
-        for name in ('chromium','webkit'):
-            target=getattr(p,name)
-            if name=='chromium':
-                browser=target.launch(headless=True,args=['--no-sandbox'])
-            else:
-                browser=target.launch(headless=True)
-            for width in SIZES:
-                run_case(browser,name,width)
-            browser.close()
+    class QuietHandler(SimpleHTTPRequestHandler):
+        def log_message(self,*args):
+            pass
+    server=ThreadingHTTPServer(('127.0.0.1',0),partial(QuietHandler,directory=str(SITE)))
+    Thread(target=server.serve_forever,daemon=True).start()
+    URL=f'http://127.0.0.1:{server.server_address[1]}/index.html'
+    try:
+        with sync_playwright() as p:
+            for name in ('chromium','webkit'):
+                target=getattr(p,name)
+                if name=='chromium':
+                    browser=target.launch(headless=True,args=['--no-sandbox'])
+                else:
+                    browser=target.launch(headless=True)
+                for width in SIZES:
+                    run_case(browser,name,width)
+                browser.close()
+    finally:
+        server.shutdown()
+        server.server_close()
     print('PASS all Darūrī header/Copy browser cases')
