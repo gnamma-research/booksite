@@ -43,6 +43,8 @@ async function exercise(engine,name,base,w,mode){
    assert(ordered.every((c,i)=>!i||c.x>=ordered[i-1].right-1),'Toolbar controls collide: '+JSON.stringify(state));
   }
   if(w===320&&mode===1)await page.screenshot({path:path.join(OUT,id+'.png'),fullPage:false});
+  const departure=await page.evaluate(()=>({hash:location.hash,dock:document.getElementById('dockSection')?.textContent?.trim(),active:document.body.className,scrollY:window.scrollY}));
+  if(mode===3)console.log('BEFORE '+id+' '+JSON.stringify(departure));
   const home=page.locator('#leftNav [data-route="home"]');
   if(mode>0){
    await page.locator('#menuBtn').click();
