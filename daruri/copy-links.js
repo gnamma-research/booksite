@@ -105,6 +105,12 @@ function requestJump(){const dest=parseHash();if(!dest?.id)return;
  if(lastJumpHash===location.hash&&lastJumpElement===target)return;
  lastJumpHash=location.hash;lastJumpElement=target;
  target.scrollIntoView({block:'start',behavior:'instant'});
+ // Offset only explicit permalink jumps; ordinary Reader paragraph scrolling
+ // must retain its existing geometry and dock paragraph tracking.
+ const toolbar=document.getElementById('readingControls');
+ const safeTop=Math.max(0,toolbar?.getBoundingClientRect().bottom||0)+28;
+ const actualTop=target.getBoundingClientRect().top;
+ if(actualTop<safeTop)window.scrollBy({top:actualTop-safeTop,behavior:'instant'});
  target.classList.add('gn-copy-target');
  document.querySelectorAll('#reader .gn-copy-target').forEach(other=>{if(other!==target)other.classList.remove('gn-copy-target')});
  setTimeout(()=>{if(target.isConnected)target.classList.remove('gn-copy-target')},2600);
