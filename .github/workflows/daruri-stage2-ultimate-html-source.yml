@@ -1,0 +1,37 @@
+name: Daruri ultimate original HTML publication preflight (no existing PDF inputs)
+on:
+  push:
+    branches: [research/daruri-browser-full-scholarly-benchmark-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/ultimate_html_fixture.py'
+      - '.github/workflows/daruri-stage2-ultimate-html-source.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-ultimate-source-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  canonical-full-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Dependencies for parsing *HTML* only, no WeasyPrint PDF
+        run: python -m pip install -q beautifulsoup4
+      - name: Generate FULL canonical English, Arabic-vowelled and Scholarly with complete historical dictionary
+        run: |
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py /tmp/gnamma-ultimate-html
+      - name: Source totals and byte sizes
+        run: |
+          du -h /tmp/gnamma-ultimate-html/*
+          cat /tmp/gnamma-ultimate-html/source_summary.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-ultimate-html-no-pdf-input
+          path: /tmp/gnamma-ultimate-html
+          if-no-files-found: warn
+          retention-days: 14
