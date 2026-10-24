@@ -4,10 +4,14 @@ on:
     branches: [feature/daruri-reference-verified-exact-download-20261025]
     paths:
       - 'daruri/editions.js'
+      - 'daruri/editions-icons.css'
       - 'daruri/verified-reference-qa.html'
       - 'daruri/qa/verified_reference/**'
       - '.github/workflows/daruri-reference-verified-exact-download.yml'
   workflow_dispatch:
+concurrency:
+  group: daruri-exact-reference-qa-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
