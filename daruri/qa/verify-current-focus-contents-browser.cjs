@@ -46,7 +46,7 @@ async function exercise(engine,name,base,w,mode){
   const home=page.locator('#leftNav [data-route="home"]');
   if(mode>0){
    await page.locator('#menuBtn').click();
-   await home.waitFor({state:'visible'});
+   await home.waitFor({state:'visible',timeout:3500}).catch(async e=>{const diag=await page.evaluate(()=>({body:document.body.className,hash:location.hash,menu:{expanded:document.getElementById('menuBtn')?.getAttribute('aria-expanded'),rect:document.getElementById('menuBtn')?.getBoundingClientRect().toJSON()},left:{hidden:document.getElementById('leftNav')?.hidden,style:getComputedStyle(document.getElementById('leftNav')).cssText,rect:document.getElementById('leftNav')?.getBoundingClientRect().toJSON()},home:{rect:document.querySelector('#leftNav [data-route="home"]')?.getBoundingClientRect().toJSON()},topHome:{rect:document.getElementById('gnTopHome')?.getBoundingClientRect().toJSON()}}));throw Error('Contents click did not reveal Home: '+JSON.stringify(diag));});
    assert.equal(await page.locator('#menuBtn').getAttribute('aria-expanded'),'true','Contents aria-expanded not set');
    // Contents must be an ordinary navigation context, not a Focus overlay.
    assert.equal(await page.locator('body.focus-mode').count(),0,'Opening Contents failed to exit Focus');
