@@ -9,7 +9,7 @@ apparatus packet PDF is opened, fetched, decoded or used as an input.
 from __future__ import annotations
 from pathlib import Path
 from bs4 import BeautifulSoup
-import hashlib, json, sys, re
+import hashlib, json, sys, re, os
 
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/"daruri"/"build"))
@@ -51,10 +51,18 @@ def make_html(edition,main,parts,styles,title):
     a {color:inherit}
     @media print {a {text-decoration:none}}
     """
+    # Isolated QA-only proof: encourage Chromium's print PDF to register
+    # all source section IDs without extra visible pages or text.
+    nav_backrefs = ""
+    if os.environ.get("DARURI_NAV_BACKREF_TRIAL") == "1":
+        nav_backrefs = ("<nav data-pdf-nav-qa='hidden-section-backrefs' "
+                       "style='display:none' aria-hidden='true'>"
+                       + "".join(f"<a href='#section-{n}'></a>" for n in range(1,259))
+                       + "</nav>")
     return ("<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>"+
             "<title>"+title+"</title><style>"+css+"</style></head><body>"+
             "<!-- Original canonical Gnamma source, no PDF input. -->"+
-            "".join(parts)+"</body></html>")
+            "".join(parts)+nav_backrefs+"</body></html>")
 
 def make_edition(edition,book,q,h,bm,full):
     main=render_main(book,q,h,edition,show_editorial_titles=False)
