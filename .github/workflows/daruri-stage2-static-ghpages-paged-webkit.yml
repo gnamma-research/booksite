@@ -1,0 +1,107 @@
+name: Daruri Reading and complete Scholarly browser pagination on realistic GitHub Pages static hosting (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-full-scholarly-static-webkit-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/ultimate_browser.cjs'
+      - '.github/workflows/daruri-stage2-static-ghpages-paged-webkit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-static-browser-pages-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  actual-static-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+        edition: [scholarly, english, arabic-vowelled]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Generate ORIGINAL complete HTML source (no existing PDFs)
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+            daruri/qa/stage2_shootout/runtime_ultimate ${{ matrix.edition }}
+      - name: Install pinned Paged.js and actual native browser for static-hosting test
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout \
+            --no-package-lock --no-audit --no-fund
+          cp daruri/qa/stage2_shootout/node_modules/pagedjs/dist/paged.polyfill.min.js \
+             daruri/qa/stage2_shootout/runtime_ultimate/paged.polyfill.js
+          cd daruri/qa/stage2_shootout
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Paginate true complete edition under STATIC Python HTTP without COOP or COEP, no PDF server
+        env:
+          BENCH_GHP_STATIC: '1'
+          BENCH_ENGINE: paged
+          BENCH_BROWSER: ${{ matrix.browser }}
+          BENCH_EDITION: ${{ matrix.edition }}
+          BENCH_OUT: /tmp/daruri-pages-${{ matrix.browser }}-${{ matrix.edition }}
+        run: |
+          node --check daruri/qa/stage2_shootout/ultimate_browser.cjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/ultimate_browser.cjs
+      - name: Assert complete source, local-only requests and real static hosting behavior
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          browser='${{ matrix.browser }}';edition='${{ matrix.edition }}'
+          r=json.loads((Path('/tmp')/('daruri-pages-'+browser+'-'+edition)/'report.json').read_text())
+          assert r['emulated_static_pages_hosting']
+          assert r['cross_origin_isolated'] is False
+          assert not r['external_or_mutating_network_requests']
+          assert not r['page_errors']
+          assert r['physical_pages']>25
+          assert r['rendered_source_segments']>=414
+          assert r['original_source_sha256']=='e233057d26772249b17b456d9c8aeaf8fd7d5c293c9875c32569d29bb3d9e22e'
+          if edition=='scholarly':
+             assert r['rendered_dictionary_articles']>=157
+             assert r['reference_articles']==157
+             assert r['reference_terms']==153
+          print('GNAMMA_GITHUB_PAGES_STATIC_BROWSER',json.dumps({
+            'browser':browser,'edition':edition,
+            'pages':r['physical_pages'],'layout_ms':r['status']['layout_ms'],
+            'total_ms':r['browser_page_load_to_output_ms'],
+            'peak_browser_proportional_kib':r.get('estimated_peak_browser_proportional_pss_kib'),
+            'html_bytes':r['html_bytes'],
+            'pdf_bytes_if_chromium':r.get('output_pdf_bytes'),
+            'runtime_download_responses':len(r['all_local_response_headers']),
+            'has_no_cross_origin_isolation':not r['cross_origin_isolated'],
+            'approval':'NONRELEASE'
+          }))
+          PY
+      - name: Independently inspect generated browser-printed PDF in Chromium only
+        if: matrix.browser == 'chromium'
+        run: |
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          edition='${{ matrix.edition }}'
+          file=Path('/tmp/daruri-pages-chromium-'+edition)/('daruri-'+edition+'-paged-PRINT-QAONLY.pdf')
+          with fitz.open(file) as d:
+            names=d.resolve_names()
+            sections=sum(f'section-{n}' in names for n in range(1,259))
+            invalid=[z for p in d for z in p.get_links() if z['kind']==fitz.LINK_GOTO and not 0<=z.get('page',-1)<len(d)]
+            print('GNAMMA_PAGES_REAL_STATIC_PDF',edition,'pages',len(d),'bytes',file.stat().st_size,'sections',sections,'bad',len(invalid))
+            assert sections==258 and not invalid
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-static-paged-${{ matrix.browser }}-${{ matrix.edition }}-NONRELEASE
+          path: /tmp/daruri-pages-${{ matrix.browser }}-${{ matrix.edition }}
+          if-no-files-found: warn
+          retention-days: 7
