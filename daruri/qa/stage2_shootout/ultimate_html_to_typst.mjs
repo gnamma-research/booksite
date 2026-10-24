@@ -131,7 +131,14 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
     // Preserve original heading level for other editorial apparatus.
     const sectionId=el.getAttribute('id')||'';
     const sectionHeading=/^section-([1-9][0-9]*)$/.exec(sectionId);
-    if(sectionHeading && Number(sectionHeading[1])<=258){
+    // The original section anchor is usually on the section wrapper rather
+    // than the heading node; find the nearest owning source section.
+    const owner=el.closest('[id^="section-"]');
+    const ownerId=owner?.id||'';
+    const ownerSection=/^section-([1-9][0-9]*)$/.exec(ownerId);
+    if((sectionHeading && Number(sectionHeading[1])<=258) ||
+       (ownerSection && Number(ownerSection[1])<=258 &&
+        (tag==='h2'||tag==='h3'))){
       return '#heading(level:2,outlined:true)['+txt+']'+anchor(el)+'\n';
     }
     return '#heading(level:'+level+')['+txt+']'+anchor(el)+'\n';
