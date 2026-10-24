@@ -1,0 +1,60 @@
+name: Daruri Stage2 real source Study notes - Typst WASM engine benchmark (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-real-study-20261024]
+    paths:
+      - 'daruri/qa/stage2_shootout/study_*'
+      - 'daruri/qa/stage2_shootout/verify_study_pdf.py'
+      - '.github/workflows/daruri-stage2-real-study-typst.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-real-study-typst-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  real-study-browser-engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 38
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install independent PDF audit, original Amiri font and HTML input parser
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri qpdf poppler-utils
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+      - name: Generate all real authorial bilingual paragraphs and source-faithful Study notes
+        run: |
+          python daruri/qa/stage2_shootout/study_source_fixture.py /tmp/daruri-real-study
+      - name: Build exact Study notes in bilingual Typst source
+        run: |
+          node --check daruri/qa/stage2_shootout/study_typst_source.mjs
+          node daruri/qa/stage2_shootout/study_typst_source.mjs \
+            /tmp/daruri-real-study/study_source.json /tmp/daruri-real-study/study_source.typ
+      - name: Actual Typst WebAssembly PDF compilation + performance measurement (not a server renderer)
+        env:
+          STAGE2_OUTPUT: /tmp/daruri-real-study
+          STAGE2_SOURCE: /tmp/daruri-real-study/study_source.typ
+        run: |
+          node --check daruri/qa/stage2_shootout/study_typst_node.mjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/study_typst_node.mjs
+          qpdf --check /tmp/daruri-real-study/typst-real-study-NONRELEASE.pdf
+      - name: Independent real-PDF source and study-note existence/navigation QA
+        run: |
+          python daruri/qa/stage2_shootout/verify_study_pdf.py \
+            /tmp/daruri-real-study/typst-real-study-NONRELEASE.pdf \
+            /tmp/daruri-real-study/study_source.json \
+            /tmp/daruri-real-study/typst-study-native-qa.json
+      - name: Preserve source, PDFs, metrics and actual source fixture
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-real-study-typst-wasm-NONRELEASE
+          path: /tmp/daruri-real-study
+          if-no-files-found: warn
+          retention-days: 14
