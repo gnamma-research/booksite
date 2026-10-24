@@ -342,32 +342,28 @@ body.focus-mode #mainContent .gn-note-en-section-list {
  #readerDock .gn-dock-summary{
   box-sizing:border-box;display:flex;align-items:center;justify-content:center;
   min-width:0;width:100%;max-width:100%;min-height:44px;height:auto;
-  gap:6px;padding:2px 7px;
+  gap:4px;padding:4px 6px;
   border:1px solid var(--line);border-radius:10px;
   background:var(--surface-alt);color:var(--text);cursor:pointer
  }
  #readerDock .gn-dock-summary-symbols{
-  display:flex;align-items:center;justify-content:center;gap:clamp(5px,1.6vw,11px);
-  min-width:0;white-space:nowrap
+  display:flex;flex:1 1 auto;align-items:center;align-content:center;
+  justify-content:center;flex-wrap:wrap;min-width:0;max-width:100%;
+  gap:2px clamp(4px,1.2vw,8px);white-space:normal
  }
  #readerDock .gn-dock-summary-pair{
-  display:inline-flex;align-items:center;gap:2px;flex:0 0 auto;
+  display:inline-flex;align-items:center;justify-content:center;gap:2px;
+  flex:0 0 auto;min-height:17px;
   font:650 10px/1 var(--sans,system-ui,sans-serif);white-space:nowrap
  }
  #readerDock .gn-dock-summary-pair .gn-dock-code{font-size:11px}
  #readerDock .gn-dock-summary-pair .gn-dock-symbol svg{width:13px;height:13px}
  #readerDock .gn-dock-summary-pair .gn-bm-paragraph{transform:scale(.72);transform-origin:center}
  #readerDock .gn-dock-summary-pair .gn-dock-count{font-size:10px}
- #readerDock .gn-dock-summary-fallback{display:none;white-space:nowrap;font-size:11px;font-weight:700}
  #readerDock .gn-dock-summary-caret{color:var(--muted);line-height:1;flex:none;font-size:17px}
  .gn-dock-saved-sheet{max-height:min(63dvh,440px);border-radius:16px}
  .gn-dock-sheet-item{min-height:50px;padding:10px 8px}
 }
-@container (max-width:285px){
- #readerDock .gn-dock-summary-symbols{display:none}
- #readerDock .gn-dock-summary-fallback{display:inline}
-}
-
 /* Bookmark icon + divider: a compact visual key for personal saved counts. */
 #readerDock .gn-dock-private-status{
   gap:clamp(3px,.8vw,8px);
@@ -396,30 +392,20 @@ body.focus-mode #mainContent .gn-note-en-section-list {
    margin-inline-end:0;padding-inline-end:6px;font-size:10px;gap:3px;
  }
  #readerDock .gn-dock-summary .gn-dock-summary-symbols{
-   gap:clamp(4px,1.2vw,8px);
+   column-gap:clamp(3px,1vw,7px);row-gap:2px;
+   flex-wrap:wrap;white-space:normal;
  }
  #readerDock .gn-dock-summary .gn-dock-summary-pair{
    gap:1px;
  }
 }
-/* When saved categories exceed the available width, retain the checked
-   bookmark and total rather than squeezing tiny labels. The list still opens
-   from one large touch target. */
-@container (max-width:330px){
- #readerDock .gn-dock-summary:is([data-gn-category-count="7"],[data-gn-category-count="8"]) .gn-dock-summary-symbols{
-   display:none;
- }
- #readerDock .gn-dock-summary:is([data-gn-category-count="7"],[data-gn-category-count="8"]) .gn-dock-summary-fallback{
-   display:inline;
- }
-}
-@container (max-width:280px){
- #readerDock .gn-dock-summary[data-gn-category-count="6"] .gn-dock-summary-symbols{
-   display:none;
- }
- #readerDock .gn-dock-summary[data-gn-category-count="6"] .gn-dock-summary-fallback{
-   display:inline;
- }
+/* All nonzero category counts remain visible. On narrow phones, wrap the
+   icon/count pairs over two rows instead of reducing them to one total. */
+@media(max-width:360px){
+ #readerDock .gn-dock-summary{padding:4px 3px;gap:2px}
+ #readerDock .gn-dock-summary .gn-dock-saved-prefix{padding-inline-end:4px}
+ #readerDock .gn-dock-summary .gn-dock-summary-symbols{column-gap:3px;row-gap:2px}
+ #readerDock .gn-dock-summary .gn-dock-summary-pair{min-height:17px}
 }
 
 @media print{

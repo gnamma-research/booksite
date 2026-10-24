@@ -1,0 +1,44 @@
+name: Daruri header and Copy visual QA
+on:
+  pull_request:
+    paths:
+      - 'daruri/headerless-navigation.css'
+      - 'daruri/headerless-navigation.js'
+      - 'daruri/copy-links.css'
+      - 'daruri/copy-links.js'
+      - 'daruri/index.html'
+      - 'daruri/sw.js'
+      - 'daruri/qa/test-header-copy-browser.py'
+      - '.github/workflows/daruri-header-copy-visual-qa.yml'
+  workflow_dispatch:
+
+jobs:
+  header-copy-visual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reader syntax and existing Copy/paragraph-link contracts
+        run: |
+          node --check daruri/headerless-navigation.js
+          node --check daruri/copy-links.js
+          node daruri/qa/verify-copy-links.cjs
+      - name: Install Chromium/WebKit test dependencies
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.58.0 pillow
+          python -m playwright install --with-deps chromium webkit
+      - name: Render Home/Reading, inspect icons and Copy controls across 6 widths
+        run: python daruri/qa/test-header-copy-browser.py
+      - name: Save Copy icon browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-copy-icon-visuals
+          path: /tmp/daruri-copy-icons-*.png
+          if-no-files-found: ignore
