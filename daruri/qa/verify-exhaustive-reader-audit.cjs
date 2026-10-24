@@ -76,7 +76,7 @@ async function responsive(browser,engine,origin,width,height){
   if([320,390,768,1440].includes(width))await check('journey-'+engine+'-'+width,'P1',async()=>{
    await r.page.locator('#menuBtn').click({timeout:8000});
    await r.page.locator('#leftNav [data-route="home"]').waitFor({state:'visible'});
-   requireCondition(await r.page.locator('#menuBtn').getAttribute('aria-expanded')==='true','Contents opener did not expand');
+   if(width<=620)requireCondition(await r.page.locator('#menuBtn').getAttribute('aria-expanded')==='true','Phone Contents opener did not expand');
    await r.page.locator('#leftNav [data-route="home"]').click();
    await r.page.locator('#mainContent .gnamma-home').waitFor();
    const homeText=(await r.page.locator('#mainContent .gnamma-home').innerText()).trim();

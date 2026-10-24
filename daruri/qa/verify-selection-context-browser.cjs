@@ -49,6 +49,18 @@ async function test(engine,name,origin,width){
   await page.locator('#gnamma-word-context:visible').waitFor();
   await page.keyboard.press('Escape');
   await page.locator('#gnamma-word-context:visible').waitFor({state:'hidden'});
+  // A phrase is still valid for Highlight and Note, but should not offer
+  // misleading analysis of only the first word.
+  await page.evaluate(()=>{
+   const p=[...document.querySelectorAll('#reader .passage-grid .passage-ar')].find(el=>el.getClientRects().length);
+   const range=document.createRange();range.selectNodeContents(p);
+   const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);
+   document.dispatchEvent(new Event('selectionchange'));
+  });
+  await bar.waitFor({state:'visible'});
+  assert.equal(await bar.locator('[data-rd="selection-word-context"]').count(),0,'Multiword selection should not expose Word Context');
+  assert(await bar.locator('[data-rd="selection-bookmark"]').count()===1,'Highlight tool disappeared');
+  assert(await bar.locator('[data-rd="selection-note"]').count()===1,'Note tool disappeared');
   console.log('PASS '+name+' '+width+' plain tap inert, selection menu icon opens/closes Word Context');
  }catch(e){errors.push({engine:name,width,message:String(e.stack||e).slice(0,1500)});console.log('FAIL '+name+' '+width+' '+e);}
  finally{await ctx.close();await browser.close();}

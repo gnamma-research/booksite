@@ -14,7 +14,7 @@ on:
       - '.github/workflows/daruri-focus-contents-regression.yml'
   workflow_dispatch:
 concurrency:
-  group: daruri-qa-${{ github.event.pull_request.number || github.ref }}
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 permissions: {contents: read}
