@@ -146,7 +146,7 @@ async function go(){
      throw Error('Scholarly dictionary articles missing from HTML pagination');
    if(BROWSER==='chromium'){
     const pdf=await page.pdf({preferCSSPageSize:true,printBackground:true,
-     timeout:150000});
+     tagged:true,outline:true,timeout:150000});
     if(pdf.length<50000||pdf.subarray(0,5).toString('ascii')!=='%PDF-')
      throw Error('No real browser print PDF');
     const filename=path.join(OUT,'daruri-'+MODE+'-paged-PRINT-QAONLY.pdf');
