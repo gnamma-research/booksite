@@ -35,6 +35,10 @@ def source_test(doc:str,book,mode:str,q,h):
 
 def make_html(edition,main,parts,styles,title):
     css=MAIN_TEXT_CSS+"\n"+LEXICON_CSS+"\n"+styles
+    # CSS originally lives in daruri/build; publication HTML now lives in a
+    # different static directory. Correct all original font URLs so no 404
+    # responses or browser font-fallback artifacts can pollute benchmarks.
+    css=css.replace('url("fonts/','url("/daruri/build/fonts/').replace("url('fonts/","url('/daruri/build/fonts/")
     # Named original local fonts. Fonts served over GitHub Pages as regular static files.
     css+="""
     @font-face {font-family: 'GnammaPDFAr';src:url('/daruri/build/fonts/NotoNaskhArabic-Regular.ttf')}
@@ -85,9 +89,9 @@ def make_edition(edition,book,q,h,bm,full):
         raise AssertionError(f"Authorial paragraph rows {len(text_nodes)} vs {expected}")
     # All prose, references and links printed; Reference contains original HTML lexicon
     # with complete historic articles/terms and section-apparatus, not summary snippets.
-    lex=parsed.select_one("#lexicon-introduction")
+    lex=parsed.select_one("#lexicon")
     if edition=="scholarly" and (lex is None or
-       len(parsed.select(".lexicon .lex-source-note"))<0):
+       len(parsed.select(".lexicon .lex-article"))!=157):
         raise AssertionError("Scholarly reference lexicon unavailable")
     counts={"schema":"gnamma-source-html-ultimate-benchmark-v1",
       "source_sha256":ORIGINAL_SHA,"edition":edition,
