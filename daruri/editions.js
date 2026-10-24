@@ -43,8 +43,52 @@
   const link=(href,label,name='open',download=false)=>'<a href="'+attr(href)+'" '+
     (download?'download ':'target="_blank" rel="noopener noreferrer" ')+
     'class="gn-ed-action" aria-label="'+attr(label)+'" data-ep-info-kind="PDF" data-ep-info-label="'+attr(label)+'">'+svg(name)+'</a>';
-  const pdfActions=(href,title)=>'<div class="gn-ed-pdf-actions">'+link(href,'Read '+title,'open')+
-    link(href,'Download '+title,'download',true)+'</div>';
+  const pdfActions=(href,title,verifyExact=false)=>'<div class="gn-ed-pdf-actions">'+link(href,'Read '+title,'open')+
+    (verifyExact?'<button type="button" class="gn-ed-action" data-ep-verified-reference-download '+
+       'aria-label="Verify checksum and download exact approved scholarly reference PDF" '+
+       'title="Verify SHA-256 and download exact approved scholarly PDF">'+svg('download')+'</button>':
+       link(href,'Download '+title,'download',true))+'</div>';
+  async function verifiedScholarlyDownload(button) {
+    if(button.disabled)return;
+    button.disabled=true;
+    button.setAttribute('aria-busy','true');
+    showInfo('Scholarly PDF','Verifying approved edition','Checking the published checksum before downloading');
+    try{
+      if(!globalThis.crypto?.subtle)throw Error('A secure browser context is required for PDF checksum verification');
+      const mResponse=await fetch('pdf-editions-manifest.json',{cache:'no-store',credentials:'same-origin'});
+      if(!mResponse.ok)throw Error('Published PDF manifest unavailable');
+      const m=await mResponse.json();
+      const expected=m.files?.['daruri.pdf'];
+      if(!expected || !/^[a-f0-9]{64}$/i.test(String(expected.sha256||'')) ||
+         !Number.isInteger(expected.size_bytes) || expected.size_bytes<1000 ||
+         expected.pages!==243)
+        throw Error('Approved scholarly PDF identity missing or invalid');
+      const response=await fetch('daruri.pdf',{cache:'no-store',credentials:'same-origin'});
+      if(!response.ok)throw Error('Approved scholarly PDF unavailable');
+      const bytes=new Uint8Array(await response.arrayBuffer());
+      if(bytes.length!==expected.size_bytes || String.fromCharCode(...bytes.slice(0,5))!=='%PDF-')
+        throw Error('Approved PDF size or header does not match the publication manifest');
+      const hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))]
+        .map(x=>x.toString(16).padStart(2,'0')).join('');
+      if(hash!==expected.sha256.toLowerCase())
+        throw Error('Checksum mismatch: download refused to protect the approved edition');
+      const blobUrl=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
+      const anchor=document.createElement('a');
+      anchor.href=blobUrl;
+      anchor.download='Daruri_Scholarly_Approved_Exact_Copy.pdf';
+      anchor.hidden=true;
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+      setTimeout(()=>URL.revokeObjectURL(blobUrl),60000);
+      showInfo('Scholarly PDF','Approved exact copy verified','243 A4 pages · SHA-256 verified before download');
+    }catch(error){
+      showInfo('Scholarly PDF','Download refused',String(error?.message||error));
+    }finally{
+      button.disabled=false;
+      button.removeAttribute('aria-busy');
+    }
+  }
   function showInfo(kind,value,detail='') {
     const region=host?.querySelector('.gn-editions');
     if(!region)return;
@@ -282,7 +326,7 @@
     '<section id="gn-ed-reference" class="gn-ed-tier" role="tabpanel" aria-labelledby="gn-ed-tab-reference" tabindex="0" hidden>'+
       '<h2 class="gn-ed-panel-label">Reference</h2>'+
       '<article class="gn-ed-card"><h3>Scholarly reference</h3>'+
-        pdfActions('daruri.pdf?v=daruri8-structure-20261020','scholarly reference PDF')+
+        pdfActions('daruri.pdf?v=daruri8-structure-20261020','scholarly reference PDF',true)+
       '</article></section></div>';
     if (!host.dataset.gnEpBound) {
       host.addEventListener('change',onChange);
@@ -543,6 +587,12 @@
     return true;
   }
   function onClick(event) {
+    const verified=event.target.closest('[data-ep-verified-reference-download]');
+    if(verified && host?.contains(verified)){
+      event.preventDefault();
+      void verifiedScholarlyDownload(verified);
+      return;
+    }
     const action=event.target.closest('[data-ep-action]');
     if(action) {
       event.preventDefault();
