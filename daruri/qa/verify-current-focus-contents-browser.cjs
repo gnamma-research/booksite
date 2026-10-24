@@ -60,9 +60,19 @@ async function exercise(engine,name,base,w,mode){
   }
   const departure=await page.evaluate(()=>({hash:location.hash,dock:document.getElementById('dockSection')?.textContent?.trim(),active:document.body.className,scrollY:window.scrollY}));
   if(mode===3)console.log('BEFORE '+id+' '+JSON.stringify(departure));
+  if(mode===3)await page.evaluate(()=>{
+    const menu=document.getElementById('menuBtn');
+    window.__continuousExitTrace=[];
+    for(const type of ['pointerdown','click'])menu.addEventListener(type,()=>{
+      window.__continuousExitTrace.push({type,y:scrollY,hash:location.hash,n:window.GnammaCopyContext?.state?.n,dock:document.getElementById('dockSection')?.textContent?.trim(),mode:document.body.className,rect:menu.getBoundingClientRect().top});
+    },{capture:true});
+  });
   const home=page.locator('#leftNav [data-route="home"]');
   if(mode>0){
    await page.locator('#menuBtn').click();
+   if(mode===3)console.log('EXIT TRACE '+id+' '+JSON.stringify(await page.evaluate(()=>({
+     sequence:window.__continuousExitTrace,after:{y:scrollY,hash:location.hash,n:window.GnammaCopyContext?.state?.n,dock:document.getElementById('dockSection')?.textContent?.trim(),mode:document.body.className}
+   }))));
    await home.waitFor({state:'visible',timeout:3500}).catch(async e=>{const diag=await page.evaluate(()=>({body:document.body.className,hash:location.hash,menu:{expanded:document.getElementById('menuBtn')?.getAttribute('aria-expanded'),rect:document.getElementById('menuBtn')?.getBoundingClientRect().toJSON()},left:{hidden:document.getElementById('leftNav')?.hidden,style:getComputedStyle(document.getElementById('leftNav')).cssText,rect:document.getElementById('leftNav')?.getBoundingClientRect().toJSON()},home:{rect:document.querySelector('#leftNav [data-route="home"]')?.getBoundingClientRect().toJSON()},topHome:{rect:document.getElementById('gnTopHome')?.getBoundingClientRect().toJSON()}}));throw Error('Contents click did not reveal Home: '+JSON.stringify(diag));});
    assert(await home.isVisible(),'Contents navigation destination not visible');
    // Contents must be an ordinary navigation context, not a Focus overlay.
