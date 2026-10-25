@@ -558,7 +558,7 @@
    display:inline-flex!important;
  }
 }
-@media screen and (min-width:621px) and (max-width:940px) {
+@media screen and (max-width:940px) {
  /* Icon-only shortcuts leave room for language, bookmark and share controls. */
  body.reader-enhanced #readingControls .gn-reader-global-leading :is(#gnTopHome,#gnTopRead) {
    flex:0 0 44px!important;width:44px!important;
@@ -567,6 +567,23 @@
  }
  body.reader-enhanced #readingControls .gn-reader-global-leading :is(#gnTopHome,#gnTopRead)>span {
    display:none!important;
+ }
+}
+@media screen and (max-width:620px) {
+ /* Mobile non-reading pages use the original compact 39px icon destinations. */
+ body.reader-enhanced:not(.reading-active) #readingControls .gn-reader-global-leading :is(#gnTopHome,#gnTopRead) {
+   flex:0 0 39px!important;width:39px!important;
+   min-width:39px!important;max-width:39px!important;
+   height:38px!important;min-height:38px!important;max-height:38px!important;
+   padding:0!important;
+ }
+ body.reader-enhanced.reading-active.focus-mode #gnReaderEscape {
+   bottom:calc(112px + env(safe-area-inset-bottom))!important;
+ }
+}
+@media screen and (min-width:621px) and (max-width:940px) {
+ body.reader-enhanced.reading-active.focus-mode #gnReaderEscape {
+   bottom:calc(112px + env(safe-area-inset-bottom))!important;
  }
 }
 @media screen and (max-width:620px) {
