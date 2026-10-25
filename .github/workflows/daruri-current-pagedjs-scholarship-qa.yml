@@ -1,0 +1,53 @@
+name: Daruri CURRENT 625-note Scholarly Paged.js real browser CSS Print audit (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths: ['.github/workflows/daruri-current-pagedjs-scholarship-qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pagedjs_real_full_book:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Produce entire CURRENT canonical Scholarly HTML (not published PDF)
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+            daruri/qa/stage2_shootout/runtime_ultimate scholarly
+      - name: Install Paged.js 0.4.3 and official Chromium Print engine
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+      - name: Browser paginate original HTML+CSS then inspect its actual printed PDF
+        env:
+          BENCH_ENGINE: paged
+          BENCH_EDITION: scholarly
+          BENCH_BROWSER: chromium
+          BENCH_OUT: /tmp/daruri-current-pagedjs-scholarly
+        run: |
+          node --check daruri/qa/stage2_shootout/ultimate_browser.cjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/ultimate_browser.cjs
+      - name: Native PDF structure and complete current-source text/notes/Arabic checks
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qpdf poppler-utils
+          pdf=/tmp/daruri-current-pagedjs-scholarly/daruri-scholarly-paged-PRINT-QAONLY.pdf
+          qpdf --check "$pdf"
+          python daruri/qa/browser_engine_shootout_20261025/current_paged_qa.py \
+             daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+             "$pdf" /tmp/daruri-current-pagedjs-scholarly/current-paged-audit.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-current-625note-pagedjs-browser-print-NONRELEASE
+          path: /tmp/daruri-current-pagedjs-scholarly
+          if-no-files-found: warn
+          retention-days: 14
