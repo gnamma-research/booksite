@@ -1,0 +1,58 @@
+name: Daruri staged offline upgrade and revision acceptance (nonrelease)
+on:
+  push:
+    branches: [audit/daruri-cache-upgrade-20261025]
+    paths:
+      - 'daruri/qa/stage-release-cache-version.py'
+      - 'daruri/qa/verify-old-to-new-offline.cjs'
+      - '.github/workflows/daruri-audit-staged-upgrade-20261025.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  stage-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Create proposed versioned assets in the temporary checkout only
+        run: |
+          python daruri/qa/stage-release-cache-version.py --apply
+          git diff -- daruri/index.html daruri/dictionary.html daruri/personal-export.html daruri/dynamic-editions.html daruri/sw.js > daruri/qa/cache-audit-artifacts/proposed-version-upgrade.patch
+          git diff --name-only | tee /tmp/cache-patch-changed.txt
+          if grep -Ev '^daruri/(index.html|dictionary.html|personal-export.html|dynamic-editions.html|sw.js)$' /tmp/cache-patch-changed.txt; then
+            echo "::error::Cache patch changed a canonical file outside the five permitted entrypoints/worker"
+            exit 1
+          fi
+      - name: Verify the new cache ID and every updated asset registration
+        run: |
+          node daruri/qa/verify-release-cache-contract.cjs
+          node daruri/qa/verify-offline-downloads.cjs
+      - name: Disable unrelated inaccessible apt repository
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then sudo mv "$source" "$source.disabled"; fi
+          done
+      - name: Install Chromium and WebKit for live CacheStorage regression
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Simulate existing reader to new release to offline reopening
+        run: node daruri/qa/verify-old-to-new-offline.cjs
+      - name: Publish patch and report as audit artifacts only, never commit or deploy
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-proposed-safe-cache-upgrade-nonrelease
+          path: |
+            daruri/qa/cache-audit-artifacts/
+          retention-days: 14
+          if-no-files-found: warn
