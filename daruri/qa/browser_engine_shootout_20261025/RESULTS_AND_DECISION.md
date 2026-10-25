@@ -74,7 +74,7 @@ Already done: two-column linked term directory + real target page folios; unique
 2. Main text running part headings and footer Contents / Subject index / Historical dictionary shortcuts.
 3. Compact linked R/BA concordance and source audit columns (no six-page tall 1-column tables).
 4. `lex-directory-list` first entry starts on fresh page; check page-number vs actual target start and article body placement.
-5. WebKit large-doc compile regression due `#context counter(page).at()` repeated 153 times needs minimization; use `query(<label>).first().location().page()` alternative, or precompute page references in two-phase compile, avoiding per-entry query recursion.
+5. An earlier WebKit compile regression occurred in some 153-counter iterations, but the stabilized 231-page build passed **both Chromium and WebKit** at [CI #40154144471](https://github.com/gnamma-research/booksite/actions/runs/40154144471). Verify the printed 153 folios against physical destinations (prefer `locate(<label>).page()` over `counter(page).at()`) and test on physical iOS Safari; one green run is not mobile-memory certification.
 6. Portable named PDF destinations if needed by scholarly third-party deep links. In-PDF GoTo links already work; before implementing `/Names`, test compatibility with Acrobat/PDFKit to avoid solving a non-requirement.
 7. Device memory scaling and font/WASM cache.
 
