@@ -46,6 +46,7 @@
   leading.appendChild(read);
   const syncTopDestinations=function(){
     const homeRoute=(location.hash||'#home').slice(1)==='home';
+    document.body.classList.toggle('gn-home-route',homeRoute);
     home.classList.toggle('active',homeRoute);
     if(homeRoute)home.setAttribute('aria-current','page');
     else home.removeAttribute('aria-current');
