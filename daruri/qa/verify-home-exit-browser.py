@@ -101,9 +101,12 @@ def case(browser, engine, width, url):
     assert_no_floating_home(page)
     open_contents_from_focus(page, width, 'Focus')
 
-    # Contents owns the screen while open. A real user closes its shade
-    # before using the Reading-mode chooser; don't force-click through it.
-    page.locator('#drawerShade').click()
+    # Mobile Contents uses a backdrop; desktop Contents is a sidebar.
+    # Close by the actually visible control, never force-click through an overlay.
+    if page.locator('#drawerShade').is_visible():
+        page.locator('#drawerShade').click()
+    else:
+        page.locator('#menuBtn.gn-top-tile').click()
     page.wait_for_function(
         "document.querySelector('#menuBtn').getAttribute('aria-expanded')==='false'",
         timeout=10000)
