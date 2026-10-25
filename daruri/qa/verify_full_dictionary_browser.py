@@ -99,7 +99,25 @@ def check_sigha_popup(browser, width, height, label):
            'the ṣīgha of the utterance' in full.inner_text().lower()
     expect(popup.locator('a.gn-fd-page-link')).to_contain_text('full-page dictionary')
     assert not any('full-dictionary' in e.lower() for e in errors), errors
+    morph = popup.locator('#lex-author .gn-fd-morph-actions')
+    morph.wait_for(timeout=20000)
+    expect(morph).to_contain_text('63 indexed occurrences in 37 sections')
+    assert morph.locator('[data-gn-fd-morph="morph-root"]').count() == 0, 'No distinct indexed root relative'
+    forms = morph.locator('[data-gn-fd-morph="morph-lemma"]')
+    expect(forms).to_have_count(1)
     page.screenshot(path=str(ARTIFACTS / ('popup-sigha-' + label + '.png')), full_page=False)
+    forms.click()
+    page.wait_for_function("window.GnammaUnifiedSearch?.getState?.().mode === 'morph-lemma'", timeout=12000)
+    found = page.evaluate("""() => {
+      const result=window.GnammaUnifiedSearch.query('صيغة',
+        {mode:'morph-lemma',scope:'work',facet:'text'});
+      return {paragraphs:result.total,
+        occurrences:result.results.reduce((n,r)=>n+(r.matched?.occurrences?.length||0),0),
+        sections:new Set(result.results.map(r=>r.section)).size};
+    }""")
+    assert found['paragraphs'] == 46, found
+    assert found['occurrences'] == 63, found
+    assert found['sections'] == 37, found
     page.close()
 
 
