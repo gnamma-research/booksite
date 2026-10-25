@@ -202,7 +202,7 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
       const title=rich(a);
       pieces.push('#block(breakable:false,above:0pt,below:1pt)['+
         '#grid(columns:(1fr,auto),gutter:2mm,['+title+'],'+
-        '[#text(size:7pt)[#context counter(page).at(<'+target+'>).first()]])]\n');
+        '[#text(size:7pt)[#context locate(<'+target+'>).page()]])]\n');
     }
     pieces.push(']\n');
     stats.dictionary_directory_original_entries=entries.length;
