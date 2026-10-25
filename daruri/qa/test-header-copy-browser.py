@@ -46,24 +46,20 @@ def run_case(browser, engine, width):
     page.goto(URL+'#home',wait_until='load',timeout=90000)
     page.wait_for_function("document.body.classList.contains('reader-enhanced')",timeout=50000)
     logo=visible_loc(page,'#menuBtn.gn-top-tile')
-    home=visible_loc(page,'#gnTopHome')
     read=visible_loc(page,'#gnTopRead')
-    not_overlapping(logo,home,'mosaic / Home')
-    not_overlapping(home,read,'Home / Read')
+    assert not page.locator('#gnTopHome').is_visible(), 'Home must not repeat on Home'
+    not_overlapping(logo,read,'mosaic / Read')
     assert not page.locator('#globalViewLabel').is_visible(), 'Duplicate Home caption'
     assert page.locator('#gnTopRead svg path').count(), 'Read needs a book icon'
     assert 'M12 5.5' in page.locator('#gnTopRead svg path').first.get_attribute('d'), 'Read should display the open-book symbol'
-    assert page.locator('#gnTopHome svg path').count(), 'Home needs its own icon'
+    assert page.locator('#gnTopHome svg path').count(), 'Home action remains available off the Home page'
 
     page.goto(URL+'#section=64',wait_until='load',timeout=90000)
     page.wait_for_function("document.body.classList.contains('reading-active') && document.querySelector('#readerCopyOptions') !== null",timeout=50000)
     assert not page.locator('#gnTopRead').is_visible(), 'Redundant Read in reading mode'
-    if width<=620:
-        assert not page.locator('#gnTopHome').is_visible(), 'Mobile reader toolbar must stay compact'
-        visible_loc(page,'#gnReaderMobileHome')
-    else:
-        visible_loc(page,'#gnTopHome')
-        assert not page.locator('#gnReaderMobileHome').is_visible()
+    assert not page.locator('#gnTopHome').is_visible(), 'Reading should not show a persistent Home icon'
+    assert not page.locator('#gnReaderMobileHome').is_visible(), 'No floating Home over text'
+    assert not page.locator('#gnReaderEscape').is_visible(), 'No floating Focus escape overlay'
     parent=visible_loc(page,'.gn-copy-wrapper')
     primary=visible_loc(page,'#readerCopyAction')
     arrow=visible_loc(page,'#readerCopyOptions')
