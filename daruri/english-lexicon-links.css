@@ -16,15 +16,6 @@
   background:var(--gold-soft);color:var(--accent);
   outline-offset:2px;
 }
-.passage-en .gn-en-lex-tail{
-  display:block;margin-block-start:.65em;
-  font-family:var(--serif);font-size:.89em;line-height:1.7;
-  color:var(--text-soft);
-}
-.passage-en .gn-en-lex-tail-label{
-  font-family:var(--sans);font-size:.78em;letter-spacing:.01em;
-}
-.passage-en .gn-en-lex-tail .gn-en-lex-term{color:inherit;}
 @media print{
  .passage-en .gn-en-lex-term{border-bottom:0;text-decoration:underline;text-decoration-style:dotted;}
 }

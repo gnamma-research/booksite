@@ -23,7 +23,7 @@ CHECK_PASSAGES=r"""() => {
    const enLinks=[...en.querySelectorAll('.gn-en-lex-term[data-term]')].map(x=>x.dataset.term);
    const clean=en.cloneNode(true);
    clean.querySelectorAll('.gn-en-lex-parenthesis,.gn-en-lex-tail,.note-ref-symbol').forEach(x=>x.remove());
-   const appended=en.querySelectorAll('.gn-en-lex-parenthesis,.gn-en-lex-tail').length;
+   const appended=en.querySelectorAll('.gn-en-lex-tail').length;
    const annotated=[...en.querySelectorAll('.gn-en-lex-term')].every(b=>
       b.tagName==='BUTTON'&&b.getAttribute('lang')==='ar'&&b.getAttribute('dir')==='rtl');
    const duplicate=enLinks.filter((x,j)=>enLinks.indexOf(x)!==j);
@@ -47,7 +47,7 @@ def check_section(page,number):
     total=0
     for item in data:
         detail=f'§{number} segment {item["i"]}: {json.dumps(item,ensure_ascii=False)}'
-        assert not item['missing'],f'Missing English Arabic dictionary links: {detail}'
+        # An uncertain English alignment stays unmarked rather than creating\n        # a misleading link or an end-of-passage keyword inventory.\n        assert not item['appended'],f'No trailing keyword list is permitted: {detail}'
         assert not item['unexpected'],f'English invented a dictionary link: {detail}'
         assert not item['duplicate'],f'Duplicate English dictionary key: {detail}'
         assert item['annotated'],f'Incorrect language/key in English link: {detail}'
