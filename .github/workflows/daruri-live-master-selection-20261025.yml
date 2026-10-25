@@ -1,0 +1,51 @@
+name: Daruri exact published-master selection retest (read-only)
+on:
+  push:
+    branches: [qa/daruri-live-master-selection-20261025]
+    paths:
+      - 'daruri/qa/verify-selection-drag-visual-browser.cjs'
+      - 'daruri/qa/verify-current-master-selection-browser.cjs'
+      - '.github/workflows/daruri-live-master-selection-20261025.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  selection-and-context:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check original source and test syntax
+        run: |
+          node --check daruri/gnamma-word-context.js
+          node --check daruri/reading-desk.js
+          node --check daruri/qa/verify-selection-drag-visual-browser.cjs
+          node --check daruri/qa/verify-current-master-selection-browser.cjs
+          git rev-parse HEAD
+      - name: Avoid unrelated unavailable apt source
+        run: |
+          for f in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$f" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$f"; then sudo mv "$f" "$f.disabled"; fi
+          done
+      - name: Install headless Chromium and WebKit
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 pngjs@7.0.0
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Verify actual selection and contextual actions on published source
+        run: node daruri/qa/verify-current-master-selection-browser.cjs
+      - name: Verify physical mouse drag and painted selection pixels
+        if: always()
+        run: node daruri/qa/verify-selection-drag-visual-browser.cjs
+      - name: Upload real screenshots and selected-text evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-current-master-selection-retest
+          path: |
+            daruri/qa/selection-drag-artifacts/
+            daruri/qa/selection-current-audit/
+          retention-days: 14
+          if-no-files-found: warn
