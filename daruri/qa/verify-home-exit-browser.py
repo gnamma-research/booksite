@@ -104,7 +104,16 @@ def case(browser, engine, width, url):
     # Mobile Contents uses a backdrop; desktop Contents is a sidebar.
     # Close by the actually visible control, never force-click through an overlay.
     if page.locator('#drawerShade').is_visible():
-        page.locator('#drawerShade').click()
+        # The shade extends underneath the side panel in WebKit. A locator
+        # centre-click could hit a nav row, not the visible outside strip.
+        nav = page.locator('#leftNav').bounding_box()
+        screen = page.viewport_size['width']
+        if nav and nav['x'] + nav['width'] < screen - 7:
+            page.mouse.click(screen - 4, 300)
+        elif nav and nav['x'] > 7:
+            page.mouse.click(4, 300)
+        else:
+            page.keyboard.press('Escape')
     else:
         page.locator('#menuBtn.gn-top-tile').click()
     page.wait_for_function(
