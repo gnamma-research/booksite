@@ -337,19 +337,15 @@ function openSelectedQuote(target){
  return true;
 }
 function installDictionaryActions(){
- const popup=$('#infoOverlay'),container=$('#detailContent');
- if(!popup||popup.hidden||!container||$('#gnw-dictionary-search',container))return;
- if(!/(DICTIONARY|LEXICAL|GLOSSARY)/i.test($('#detailEyebrow')?.textContent||''))return;
- const t=lastDictionary?.term||container.querySelector('h2')?.textContent?.trim();
- if(!t)return;
- const button=document.createElement('div');
- button.id='gnw-dictionary-search';button.className='gnw-dictionary-actions';
- button.innerHTML='<p><strong>Explore this term</strong> · dictionary information remains above</p>'+
-   '<button type="button" data-gnw-search="terms" data-gnw-value="'+esc(t)+'">Search text</button>'+
-   '<button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(t)+'">Word forms</button>'+
-   '<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(t)+'">Root family</button>';
- container.append(button);
+ // The lexical dossier already includes authorial passages and source navigation.
+ // The old footer offered Word forms / Root family for every glossary label,
+ // even when no reviewed morphology had been indexed (e.g. ṣīgha / صوغ).
+ // Remove that misleading duplicate panel; contextual morphological operations
+ // remain available from actual word occurrences when analysis supports them.
+ const old=$('#gnw-dictionary-search');
+ if(old)old.remove();
 }
+
 document.addEventListener('click',e=>{
  const btn=e.target?.closest?.('[data-gnw-close],[data-gnw-search],[data-gnw-term],[data-gnw-note],[data-gnw-desk]');
  if(btn){
