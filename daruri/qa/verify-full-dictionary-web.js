@@ -15,6 +15,18 @@ assert.equal(index.schema_version,1);
 assert.equal(Object.keys(index.terms).length,153);
 assert.equal(index.terms['ṣīgha'].root,'صوغ');
 assert.equal(index.terms['ṣīgha'].articles[0].source,'F');
+
+const morph=JSON.parse(read('morph-daruri-v1.json'));
+const morphLex=JSON.parse(read('morph-lexicon.json'));
+const sighaEntry=morphLex.entries.find(x=>x.lemma==='صيغة');
+assert.equal(sighaEntry.root,'صوغ');
+const sighaRows=morph.records.flatMap(row=>row.a
+  .filter(a=>a[2]==='صيغة'&&a[3]==='صوغ')
+  .map(a=>({id:row.id,surface:a[1]})));
+assert.equal(sighaRows.length,63);
+assert.equal(new Set(sighaRows.map(x=>x.id.split(':')[1])).size,37);
+assert.equal(morph.summary.seedLexiconEntries,morphLex.entries.length);
+
 assert.equal(exported.schema_version,1);
 assert.equal(exported.terms.length,153);
 assert.equal(exported.articles.length,157);
@@ -65,4 +77,7 @@ const uiWord=read('gnamma-word-context.js');
 const popupFooter=uiWord.slice(uiWord.indexOf('function installDictionaryActions(){'),uiWord.indexOf("document.addEventListener('click',e=>{",uiWord.indexOf('function installDictionaryActions(){')));
 assert(!popupFooter.includes('morph-root')&&!popupFooter.includes('morph-lemma'),'The dictionary modal must not offer unsupported morphological searches');
 assert(ui.includes('reviseReaderPopup') && ui.includes('reviseStandalone') && ui.includes('fullLabel'));
+assert(ui.includes('addIndexedSearch') && ui.includes('gn-fd-morph-actions'));
+assert(uiWord.includes('groundedMorphActions'));
+
 console.log('PASS: 153 term dossiers, 157 complete historical articles, 283 bilingual pairs and all 13 source notes match scholarly source; ṣināʿa commentary, standalone dictionary, reader hooks, cache and bundle synchronized.');
