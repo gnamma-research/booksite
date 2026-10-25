@@ -162,10 +162,23 @@
     if (position === 'first') target.prepend(toggle);
     else target.append(toggle);
   }
+  function alignCraftSummary(host, term) {
+    // Repair only the pre-existing compact gloss, without changing its
+    // surrounding links, annotations, note controls or original source text.
+    if (term !== 'ṣināʿa') return;
+    const before = 'Craft or disciplined art: an organized competence governed by methods and standards, not modern industrial production.';
+    const after = "An intellectual art or disciplined expertise: mastery of reasoned operations according to their proper standards. In the Ḍarūrī, especially the canons and conditions governing valid inference from legal sources (§§2–6), not the manufacture of divine law. Fiqh is directed to action; uṣūl regulates how legal determinations are reached.";
+    const walker = document.createTreeWalker(host, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      if (node.nodeValue.includes(before))
+        node.nodeValue = node.nodeValue.replace(before, after);
+    }
+  }
   function sync() {
     document.querySelectorAll('#mainContent .glossary-card').forEach(card => {
       const heading = card.querySelector('h2');
-      if (heading) enhance(card, heading.textContent.trim(), 'end');
+      if (heading) { const term = heading.textContent.trim(); alignCraftSummary(card, term); enhance(card, term, 'end'); }
     });
     const article = document.querySelector('#lexArticle .lex-card');
     if (article) {
@@ -181,7 +194,7 @@
     if (popup && !popup.hidden && body && /DICTIONARY|LEXICAL|GLOSSARY/i.test(eyebrow)) {
       const title = document.getElementById('detailTitle')?.textContent?.trim() ||
         body.querySelector('h2')?.textContent?.trim();
-      if (title) enhance(body, title, 'end');
+      if (title) { alignCraftSummary(body, title); enhance(body, title, 'end'); }
     }
   }
   function schedule() {
