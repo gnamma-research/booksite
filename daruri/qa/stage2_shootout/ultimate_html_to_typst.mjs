@@ -213,6 +213,17 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   if(tag==='h1'||tag==='h2'||tag==='h3'||tag==='h4'||tag==='h5'||tag==='h6'){
     const level=Math.min(Number(tag[1]),5);
     const txt=childRich(el);
+    // Dictionary section labels must follow the visible heading, not sit
+    // at the bottom of the previous page when Typst keeps that heading
+    // with its first paragraph. Otherwise the table of terms prints the
+    // wrong destination folio (ibāḥa was printed as p155 but was on p156).
+    const ancestor=el.parentElement;
+    if((el.classList.contains('lex-term-heading') &&
+        ancestor?.classList.contains('lex-term')) ||
+       (el.classList.contains('lex-article-heading') &&
+        ancestor?.classList.contains('lex-article'))){
+      return '#heading(level:'+level+')['+txt+']'+anchor(ancestor)+anchor(el)+'\n';
+    }
     // All 258 authorial sections must appear in the PDF sidebar outline.
     // Preserve original heading level for other editorial apparatus.
     const sectionId=el.getAttribute('id')||'';
@@ -250,6 +261,11 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
     // The PDF-only bookmark is added by anchor() at the authoritative
     // section-N target below, not at this potentially orphaned wrapper.
     return anchor(el)+[...el.childNodes].map(block).join('');
+  }
+  // Source headword anchors are emitted AFTER their visual headings so
+  // destination links and page counters land on the actual article page.
+  if(el.classList.contains('lex-term')||el.classList.contains('lex-article')){
+    return [...el.childNodes].map(block).join('');
   }
   const begin=anchor(el);
   const breakBefore=el.matches('main.main-text')?'#pagebreak()\n':
