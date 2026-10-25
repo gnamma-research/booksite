@@ -11,7 +11,9 @@ for(const filename of ['copy-links.js','copy-links.css']){
  assert(sw.includes(filename+'?v='+revision),'Offline cache omits '+filename);
  assert(bundle.includes("'daruri/"+filename+"'"),'Complete download omits '+filename);
 }
-assert(html.includes('download-bundle.js?v=20261024-copyicons2')&&sw.includes('download-bundle.js?v=20261024-copyicons2'),'Offline package loader must be versioned');
+// The editorial release revs the download loader independently of Copy.
+const liveLoader=html.match(/<script\b[^>]*src=["'](download-bundle\.js\?v=[^"']+)["']/);
+assert(liveLoader&&sw.includes(liveLoader[1]),'Live download loader version must be in offline cache');
 assert(copy.includes('C.rd?.records?.()'),'Personal annotations must come from Reading Desk only when requested');
 assert(copy.includes('config.personal'),'Personal notes opt-in missing');
 assert(copy.includes('selectionSnapshot()'),'Selected words must require a real browser selection');

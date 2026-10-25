@@ -568,6 +568,8 @@
     }
   }
   async function init(){
+    const mountedForm=$('pe-form');
+    if(!mountedForm)return;
     decoratePersonalIcons();
     records=loadDesk();selectedIds=new Set(records.map(r=>r.id));
     try{
@@ -614,6 +616,9 @@
         (/^[a-z0-9-]+\.pdf$/.test(file)||
          /^editions\/(reading|study)\/daruri-(reading|study)-(bilingual|bilingual-unvowelled|english|arabic|arabic-vowelled)-titles-(on|off)\.pdf$/.test(file))&&
         x?.sha256&&x?.pages);
+      // The Editions route can disappear during an asynchronous manifest fetch.
+      // Never reattach controls to a page the user has already left.
+      if(!mountedForm.isConnected)return;
       $('pe-edition').replaceChildren();
       const labels={ 'daruri.pdf':'Scholarly reference · bilingual',
         'daruri-study.pdf':'Study · bilingual','daruri-english.pdf':'Reading · English',
@@ -635,7 +640,13 @@
         $('pe-highlights').checked=query.get('highlights')==='1';
       }
       if(!$('pe-edition').value)throw Error('No published editions available');
-    }catch(error){showError('Could not load the edition list: '+error.message);$('pe-edition').innerHTML='<option value="">Edition list unavailable</option>';}
+    }catch(error){
+      if(!mountedForm.isConnected)return;
+      showError('Could not load the edition list: '+error.message);
+      const selector=$('pe-edition');
+      if(selector)selector.innerHTML='<option value="">Edition list unavailable</option>';
+    }
+    if(!mountedForm.isConnected)return;
     document.querySelectorAll('input[name="pe-mode"]').forEach(e=>e.addEventListener('change',syncForm));
     ['pe-edition','pe-personal','pe-bookmarks','pe-highlights','pe-annotations','pe-appendix','pe-dates','pe-order'].forEach(id=>$(id).addEventListener('change',syncForm));
     $('pe-search').addEventListener('input',renderPicker);

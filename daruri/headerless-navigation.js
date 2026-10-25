@@ -30,6 +30,44 @@
    menu.classList.add('gn-top-tile');
    menu.setAttribute('aria-label','Open or close Contents');
    menu.title='Contents';
+   // The old handler resets focusMode, but the three-mode reader's save()
+   // reconstructs it from focusLevel. Use the authoritative mode API before
+   // the existing handler to reveal a genuine drawer, not a CSS overlay.
+   menu.addEventListener('click',function(){
+     if(document.body.classList.contains('reading-active')&&
+        document.body.classList.contains('focus-mode')){
+       const continuous=document.body.classList.contains('focus-level-3');
+       const readerState=window.GnammaCopyContext?.state;
+       const currentNumber=document.getElementById('dockSection')?.textContent?.match(/[0-9]+/)?.[0]||readerState?.n;
+       let passage=null,passageTop=0,segment=null;
+       if(continuous&&currentNumber){
+         const part=document.getElementById('gn-continuous-'+currentNumber);
+         if(part){
+           const threshold=Math.max(110,Math.min(220,window.innerHeight*.3));
+           passage=[...part.querySelectorAll('.passage-grid')].find(el=>el.getBoundingClientRect().bottom>=threshold)||
+             part.querySelector('.passage-grid');
+           segment=passage?.dataset.segment;
+           passageTop=passage?.getBoundingClientRect().top||threshold;
+           // Do not scroll the entire continuous document before changing
+           // reading mode. Safari's scroll observer can update state.n from
+           // the previous section after the tap but before the transition.
+         }
+       }
+       // Freeze the section displayed in the dock before any mode-transition
+       // geometry/layout side effects. The ordinary Reading renderer uses
+       // state.n, and the user explicitly asked to preserve this location.
+       if(continuous&&currentNumber&&readerState)readerState.n=String(currentNumber);
+       window.GnammaReaderModes?.setMode?.('reading');
+       if(continuous&&segment!==null){
+         const equivalent=document.querySelector('#reader .passage-grid[data-segment="'+segment+'"]');
+         if(equivalent)window.scrollBy({top:equivalent.getBoundingClientRect().top-passageTop,behavior:'instant'});
+       }
+       // Focus concealed the formerly open desktop sidebar. The native
+       // Contents handler toggles leftVisible, so ensure its very first click
+       // means OPEN instead of unexpectedly closing that saved preference.
+       if(readerState)readerState.leftVisible=false;
+     }
+   },true);
   }
 
   // Home and Read are separate destinations, never loose text next to an icon.
@@ -56,11 +94,19 @@
   if(document.body.classList.contains('reading-active')){
    read.classList.add('active');read.setAttribute('aria-current','page');
   }
-  // Clicking Read while already reading must not reset the paragraph/scroll position.
+  // Reuse the reader's canonical Return to Reading action, including its
+  // section, paragraph anchor, viewport offset, and Continuous-mode history.
+  // The top Read shortcut must never silently restart at §1.
   read.addEventListener('click',function(event){
-   if(document.body.classList.contains('reading-active')){
-    event.preventDefault();event.stopPropagation();
-   }
+    if(document.body.classList.contains('reading-active')){
+      event.preventDefault();event.stopPropagation();return;
+    }
+    const resume=document.querySelector('#mainContent [data-return-reading]')||
+      document.querySelector('#mainContent .gnamma-home .home-actions .action-btn.primary');
+    if(resume){
+      event.preventDefault();event.stopPropagation();
+      resume.click();
+    }
   });
 
   // Search/Display/Help are global actions, not part of the Focus group.
@@ -93,6 +139,38 @@
    var author=title.querySelector('.gn-sidebar-title-author');
    if(author)author.textContent='Ibn Rushd';
   }
+  // Keep the Home route a useful starting point, not a second Help manual.
+  // All edition provenance remains available in its native disclosure and
+  // in the About/Reference routes, including when the user has no JavaScript.
+  function simplifyHome(){
+   var homeView=document.querySelector('#mainContent .gnamma-home');
+   if(!homeView||homeView.dataset.gnMinimalHomeReady==='1')return;
+   homeView.dataset.gnMinimalHomeReady='1';
+   homeView.querySelector('.eyebrow')?.remove();
+   var author=homeView.querySelector('.home-author');
+   if(author)author.textContent='Ibn Rushd (Averroes)';
+   var lead=homeView.querySelector('.home-lead');
+   if(lead)lead.innerHTML='A bilingual reading edition of Ibn Rushd’s abridgment of al-Ghazālī’s <i>al-Mustaṣfā</i>.';
+   var actions=homeView.querySelector('.home-actions'),sources=homeView.querySelector('#homeEditorialSources');
+   if(!actions||!sources)return;
+   var contents=actions.querySelector('[data-route="contents"]');
+   if(contents)contents.textContent='Contents';
+   var quiet=document.createElement('div');
+   quiet.className='home-quiet-links';quiet.setAttribute('role','group');
+   quiet.setAttribute('aria-label','More about this edition');
+   for(const route of ['editions','help']){
+    const button=actions.querySelector('[data-route="'+route+'"]');
+    if(button){button.textContent=route==='editions'?'Downloads':'Help';quiet.append(button);}
+   }
+   var summary=sources.querySelector('summary');
+   if(summary)summary.textContent='Edition & sources · AI-assisted translation';
+   // Move the original complete scholarly disclosure before removing its
+   // now-redundant explanatory wrapper. This also preserves native <details>.
+   sources.remove();
+   homeView.querySelectorAll('.home-block').forEach(element=>element.remove());
+   if(quiet.childElementCount)homeView.append(quiet);
+   homeView.append(sources);
+  }
   function enhanceHelp(){
    var steps=document.querySelectorAll('#mainContent .gn-history-help .gn-help-step');
    if(!steps.length)return;
@@ -113,7 +191,7 @@
    });
   }
   var main=document.getElementById('mainContent');
-  if(main){new MutationObserver(enhanceHelp).observe(main,{childList:true});enhanceHelp();}
+  if(main){new MutationObserver(()=>{enhanceHelp();simplifyHome();}).observe(main,{childList:true});enhanceHelp();simplifyHome();}
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});
  else install();
