@@ -1256,7 +1256,7 @@
     {
       "term": "ṣināʿa",
       "ar": "صِنَاعَة",
-      "definition": "Craft or disciplined art: an organized competence governed by methods and standards, not modern industrial production.",
+      "definition": "An intellectual art or disciplined expertise: mastery of reasoned operations according to their proper standards. In the Ḍarūrī, especially the canons and conditions governing valid inference from legal sources (§§2–6), not the manufacture of divine law. Fiqh is directed to action; uṣūl regulates how legal determinations are reached.",
       "sections": [
         1,
         2,
@@ -5838,7 +5838,7 @@
       "url": "https://arabiclexicon.hawramani.com/?p=36499#d494f1",
       "quote": "الصناعة: ملكة نفسانية تصدر عنها الأفعال الاختيارية من غير روية. وقيل العلم المتعلق بكيفية العمل.",
       "translation": "An art is a stable disposition producing voluntary acts without deliberation; alternatively, knowledge of how to perform a task.",
-      "comment": "For R§1 and R§6, translate as intellectual discipline/art; mere handicraft is misleading.",
+      "comment": "In the Ḍarūrī (§§2–6), ṣināʿa denotes a rational art governing the correctness of inference, not the creation of divine law. This definition from al-Munāwī is later comparative testimony, not evidence for direct transmission to Ibn Rushd.",
       "verification": "Historical-language excerpt checked in a digital lexicon or printed uṣūl text online; see separate 50-term register for fitness and limits.",
       "english_status": "Editorial translation of the quoted Arabic.",
       "sourceDate": "d. 1031 AH / 1622 CE",
@@ -9124,7 +9124,10 @@
         "صناعات"
       ],
       "aliasesEn": [
-        "intellectual art"
+        "intellectual art",
+        "intellectual craft",
+        "art of inquiry",
+        "discipline of legal inference"
       ],
       "sources": [
         "v20261020-49"
