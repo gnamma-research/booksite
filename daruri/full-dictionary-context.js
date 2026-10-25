@@ -421,6 +421,8 @@
     // The unified dossier owns all source lists and full-article disclosures.
     // Do not recreate legacy bottom-of-card expanders or a second popup.
     if (window.GnammaDictionaryDossier) {
+      ifTextDiff(document.querySelector('.lexicon-mode-nav a[data-dictionary-atlas]'),
+        'Open full-page dictionary ↗');
       document.querySelectorAll('#mainContent .glossary-card').forEach(card => {
         const term=card.querySelector('h2')?.textContent?.trim();
         if (term) alignCraftSummary(card,term);
