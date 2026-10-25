@@ -175,7 +175,7 @@
       ['daruri/source-reference-data.js', 'source-reference-data.js?v=daruri14-sinaa-full-dictionary-20261025'],
       ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-fallback-quran1'],
-      ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261025-dossier3'],
+      ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261025-dossier4'],
       ['daruri/full-dictionary-context.js', 'full-dictionary-context.js?v=20261025-dossier4'],
       ['daruri/full-dictionary-data.js', 'full-dictionary-data.js?v=20261025-sinaa1'],
       ['daruri/full-dictionary-index.js', 'full-dictionary-index.js?v=20261025-dossier2'],
