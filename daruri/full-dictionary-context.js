@@ -271,6 +271,39 @@
     });
   }
 
+
+  // Verified literal orthographic concordance of the author's Arabic text.
+  // Not a speculative root-family expansion or a complete morphological parse.
+  // Source: edition-r3-20261020.js, Arabic segments, vowel marks stripped.
+  const VERIFIED_TEXT_SPELLINGS = {
+    'ṣīgha': [[29,1,"صيغة"],[31,1,"صيغة"],[69,2,"صيغة"],[135,1,"صيغ"],[137,1,"الصيغ"],[139,1,"صيغ"],[149,1,"بصيغته"],[153,5,"بصيغها، الصيغ"],[154,1,"بصيغها"],[155,2,"صيغها، الصيغ"],[156,1,"صيغته"],[158,1,"الصيغة"],[159,1,"صيغة"],[162,1,"الصيغة"],[164,1,"الصيغة"],[170,1,"صيغة"],[178,1,"صيغة"],[180,2,"صيغة، بصيغة"],[181,1,"بصيغة"],[183,1,"وصيغ"],[186,2,"بصيغته"],[190,1,"الصيغ"],[191,2,"صيغها، بصيغها"],[192,1,"صيغها"],[197,2,"صيغها، صيغ"],[198,4,"صيغ، صيغا، بصيغها"],[200,6,"صيغة، الصيغ، وصيغته، صيغ"],[201,2,"فصيغ، صيغها"],[203,2,"صيغة"],[205,1,"صيغ"],[206,3,"صيغ، صيغة"],[208,3,"صيغة، الصيغ"],[223,1,"بصيغة"],[224,3,"صيغها، بصيغها، الصيغة"],[226,1,"صيغ"],[229,1,"صيغة"],[239,1,"بصيغته"]]
+  };
+  function addVerifiedTextForms(author, term) {
+    const records = VERIFIED_TEXT_SPELLINGS[term];
+    if (!author || !records || author.querySelector(':scope > .gn-fd-verified-forms')) return;
+    const count = records.reduce((n,row) => n+row[1],0);
+    const section = el('details','gn-fd-verified-forms');
+    section.dataset.gnFdVerified = term;
+    const summary = el('summary','gn-fd-verified-summary',
+      count+' matching Arabic spellings across '+records.length+' sections');
+    section.append(summary);
+    appendText(section,
+      'These are checked literal spelling matches in the Arabic text, including attached particles and pronouns. They are not a complete morphological or root-family analysis.',
+      'p','gn-fd-verified-disclaimer');
+    const group = el('div','gn-fd-verified-grid');
+    for (const [id,n,forms] of records) {
+      const btn = el('button','gn-fd-verified-link','§'+id+' · '+n+' · '+forms);
+      btn.type='button';
+      btn.dataset.section=String(id);
+      btn.setAttribute('aria-label','Read section '+id+'; '+n+' matching Arabic spelling'+(n===1?'':'s'));
+      group.append(btn);
+    }
+    section.append(group);
+    const passages = author.querySelector(':scope > .dictionary-passages');
+    if (passages) author.insertBefore(section,passages);
+    else author.append(section);
+  }
+
   function reviseReaderPopup(body, term) {
     const sources = body.querySelector('#lex-sources');
     if (!sources) return;
@@ -327,6 +360,7 @@
           'These are curated illustrative passages, not a complete count of every inflected occurrence.');
         if (heading) heading.insertAdjacentElement('afterend', p);
       }
+      addVerifiedTextForms(author, term);
       addIndexedSearch(author, term);
     }
     const footer = body.querySelector(':scope > .return-reading');
@@ -448,6 +482,7 @@
       '.gn-fd-scope,.gn-fd-example-scope{font:12px/1.55 system-ui,sans-serif;opacity:.8;margin:8px 0 14px}',
       '.gn-fd-specific{padding:10px 12px;background:var(--nav,var(--paper,#fafafa));border-inline-start:3px solid var(--accent,#668);font:13px/1.55 system-ui,sans-serif}',
       '.gn-fd-standalone-scope{font:12px/1.55 system-ui,sans-serif;opacity:.85}.gn-fd-standalone-specific{font:13px/1.55 system-ui,sans-serif;padding:9px 12px;border-inline-start:3px solid var(--accent,#668);background:var(--nav,var(--paper,#fafafa))}',
+      '.gn-fd-verified-forms{margin:16px 0;padding:10px 12px;border:1px solid var(--line,var(--border,#ccc));border-radius:9px}.gn-fd-verified-summary{cursor:pointer;font:600 13px/1.5 system-ui,sans-serif;color:var(--accent,inherit)}.gn-fd-verified-disclaimer{font:12px/1.6 system-ui,sans-serif;opacity:.82}.gn-fd-verified-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:7px}.gn-fd-verified-link{text-align:start;padding:8px 10px;border:1px solid var(--line,var(--border,#ccc));border-radius:6px;background:transparent;color:inherit;cursor:pointer;font:13px/1.5 system-ui,sans-serif;min-height:42px}',
       '.gn-fd-page-link{display:inline-flex;align-items:center;min-height:42px;font:600 12px/1.4 system-ui,sans-serif;margin:12px 8px 12px 0;color:var(--accent,inherit)}',
       '#lex-sources .gn-fd-toggle{max-width:100%}',
       '#detailContent #gnw-dictionary-search{display:none!important}',
