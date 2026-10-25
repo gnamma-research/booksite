@@ -2,7 +2,7 @@
 """Exercise the real Daruri full dictionary UI in desktop and mobile Chromium."""
 import os
 from pathlib import Path
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, expect
 
 BASE = os.environ.get('DARURI_QA_BASE', 'http://127.0.0.1:8123/daruri/')
 ARTIFACTS = Path('/tmp/gnamma-full-dictionary-browser')
@@ -36,7 +36,7 @@ def check_dictionary(browser, width, height, label):
     page.screenshot(path=str(ARTIFACTS / ('dictionary-' + label + '.png')), full_page=False)
     details.locator(':scope > summary').click()
     assert details.get_attribute('open') is None
-    assert 'Show full historical dictionary' in details.locator(':scope > summary').inner_text()
+    expect(details.locator(':scope > summary')).to_contain_text('Show full historical dictionary')
     page.close()
 
 
