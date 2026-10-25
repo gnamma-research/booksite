@@ -26,6 +26,19 @@ async function exercise(browser,engine,url,width,mode){
  try{
   await page.goto(url+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:60000});
   await page.locator('#readerDock:not([hidden])').waitFor({timeout:30000});
+  if(mode===3){
+   // Position a real §11 paragraph after the Continuous layout settles.
+   await page.locator('#gn-continuous-11 .passage-grid[data-segment="0"]').first().waitFor({state:'visible'});
+   await page.evaluate(async()=>{
+    const grid=document.querySelector('#gn-continuous-11 .passage-grid[data-segment="0"]');
+    for(let attempt=0;attempt<4;attempt++){
+     window.scrollTo({top:window.scrollY+grid.getBoundingClientRect().top-140,behavior:'instant'});
+     await new Promise(done=>requestAnimationFrame(()=>requestAnimationFrame(done)));
+    }
+    window.dispatchEvent(new Event('scroll'));
+   });
+   await page.waitForFunction(()=>document.getElementById('dockSection')?.textContent?.trim()==='§11',null,{timeout:12000});
+  }
   const start=await page.evaluate(()=>({
    dock:document.getElementById('dockSection')?.textContent?.trim(),
    reader:document.body.className,head:document.documentElement.scrollWidth,viewport:document.documentElement.clientWidth
@@ -36,6 +49,11 @@ async function exercise(browser,engine,url,width,mode){
   // focus but not Playwright's auto-scrolling locator click.
   await page.locator('#menuBtn').evaluate(el=>el.focus({preventScroll:true}));
   await page.keyboard.press('Enter');
+  await page.waitForFunction(()=>{
+   const btn=document.getElementById('menuBtn'),nav=document.getElementById('leftNav');
+   const box=nav?.getBoundingClientRect();
+   return btn?.getAttribute('aria-expanded')==='true'&&box?.width>0&&box?.right>0;
+  },null,{timeout:12000});
   const open=await page.evaluate(()=>({
    aria:document.getElementById('menuBtn')?.getAttribute('aria-expanded'),
    drawer:document.getElementById('leftNav')?.getBoundingClientRect().toJSON(),
