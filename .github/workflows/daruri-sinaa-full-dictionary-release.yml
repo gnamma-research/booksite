@@ -4,16 +4,9 @@ on:
   push:
     branches: [master]
     paths:
-      - 'daruri/full-dictionary-context.js'
-      - 'daruri/full-dictionary-data.js'
-      - 'daruri/dictionary.html'
       - 'daruri/dictionary-data.json'
       - 'daruri/build/data/full-headwords.json'
       - 'daruri/build/build_editions.py'
-      - 'daruri/build/export_full_dictionary_web.py'
-      - 'daruri/qa/verify-full-dictionary-web.js'
-      - 'daruri/qa/verify_full_dictionary_browser.py'
-      - '.github/workflows/daruri-sinaa-full-dictionary-release.yml'
   workflow_dispatch:
 
 permissions:
