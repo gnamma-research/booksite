@@ -1,0 +1,38 @@
+name: Daruri desktop drag-to-select pixel proof (nonrelease)
+on:
+  push:
+    branches: [qa/daruri-current-selection-audit-20261025]
+    paths:
+      - 'daruri/qa/verify-selection-drag-visual-browser.cjs'
+      - 'daruri/gnamma-word-context.css'
+      - '.github/workflows/daruri-selection-drag-pixels-20261025.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  drag-selection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Avoid unrelated unavailable apt mirror
+        run: |
+          for f in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$f" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$f"; then sudo mv "$f" "$f.disabled"; fi
+          done
+      - name: Install WebKit, Chromium and PNG pixel decoder
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 pngjs@7.0.0
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Assert visible selected background after actual mouse drag, Arabic and English
+        run: node daruri/qa/verify-selection-drag-visual-browser.cjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-mouse-drag-selection-screenshots
+          path: daruri/qa/selection-drag-artifacts/
+          retention-days: 14
+          if-no-files-found: warn
