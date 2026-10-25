@@ -3,8 +3,9 @@
  * and temporary search highlight. Do not turn one into another.
  *
  * PRECEDENCE: explicitly interactive anchors keep their existing action;
- * a plain Arabic word opens this hub; text selections retain Reading Desk
- * actions unchanged. Personal material never leaves localStorage.
+ * text taps/clicks never open this hub; explicit selection-toolbar actions
+ * and desktop right-click menus open Word Context. Selection and copying
+ * keep native browser behaviour. Personal data remains local.
  */
 (()=>{
 'use strict';
@@ -121,13 +122,21 @@ function atTap(e){
  return {node:pos?.offsetNode||range?.startContainer,
    offset:pos?.offset??range?.startOffset??0};
 }
+function singleArabicWord(raw){
+ const words=String(raw||'').trim().match(/[\p{L}\p{M}]+/gu)||[];
+ return words.length===1&&AR.test(words[0])?words[0]:null;
+}
 function findSelectedWord(){
- const sel=window.getSelection?.();if(!sel||sel.isCollapsed||!sel.rangeCount)return null;
- const text=sel.toString().trim().split(/\s+/)[0].replace(/[^\p{L}\p{M}]/gu,'');
- if(!AR.test(text))return null;
- const parent=(sel.anchorNode?.nodeType===1?sel.anchorNode:sel.anchorNode?.parentElement);
- const grid=parent?.closest?.('.passage-grid');
- return {word:text,anchor:parent,grid};
+ const sel=window.getSelection?.();
+ if(!sel||sel.isCollapsed||!sel.rangeCount)return null;
+ const word=singleArabicWord(sel.toString());
+ if(!word)return null;
+ const range=sel.getRangeAt(0),parent=node=>node?.nodeType===1?node:node?.parentElement;
+ const side=parent(range.startContainer)?.closest('.passage-ar');
+ if(!side||parent(range.endContainer)?.closest('.passage-ar')!==side||
+    !$('#reader')?.contains(side))return null;
+ const grid=side.closest('.passage-grid');
+ return grid?{word,anchor:side,grid,point:{node:range.startContainer,offset:range.startOffset}}:null;
 }
 function actions(word,analysis){
  let lemma=analysis.best?.lemma||'',root=analysis.best?.root||'';
@@ -234,7 +243,7 @@ function wordMarkup(ctx){
 }
 async function openWord(word,anchor,grid,trigger=null,point=null){
  if(!AR.test(word)||!BOOK)return;
- const section=locator(),segment=Number(grid?.dataset.segment||0);
+ const section=String(grid?.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator()),segment=Number(grid?.dataset.segment||0);
  const originalTarget=trigger||anchor;
  const hasSource=!!originalTarget?.closest?.('[data-note-target]');
  const noted=attachedNotes(section,segment,
@@ -276,6 +285,41 @@ function close(){
  if(!shade||shade.hidden)return;
  shade.hidden=true;selected=null;
  try{oldFocus?.focus?.({preventScroll:true})}catch(_){}
+}
+/* Called explicitly from Reading Desk's selected-word context actions.
+   Translate the saved selection offset into an exact source word when the
+   browser has already collapsed its Selection after a toolbar click. */
+function openSelectedQuote(target){
+ if(!BOOK||target?.lang!=='ar')return false;
+ const word=singleArabicWord(target.quote);
+ if(!word)return false;
+ const direct=findSelectedWord();
+ if(direct&&direct.word===word){
+   const directSection=String(direct.grid.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator());
+   if(directSection===String(target.section)&&Number(direct.grid.dataset.segment)===Number(target.segment)){
+     openWord(word,direct.anchor,direct.grid,direct.anchor,direct.point);
+     return true;
+   }
+ }
+ const grid=$('#reader .passage-grid[data-segment]').find(node=>
+   Number(node.dataset.segment)===Number(target.segment)&&
+   String(node.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator())===String(target.section));
+ const side=grid?.querySelector('.passage-ar');
+ if(!side)return false;
+ let remaining=Number(target.offset);
+ if(!Number.isInteger(remaining)||remaining<0)return false;
+ const walker=document.createTreeWalker(side,NodeFilter.SHOW_TEXT);
+ let point=null;
+ while(walker.nextNode()){
+   const node=walker.currentNode;
+   if(node.parentElement?.closest('sup,.gn-rd-passage-tools,[aria-hidden="true"]'))continue;
+   const length=node.textContent?.length||0;
+   if(remaining<length){point={node,offset:remaining};break;}
+   remaining-=length;
+ }
+ if(!point||currentToken(point.node,point.offset)?.normalize('NFC')!==word.normalize('NFC'))return false;
+ openWord(word,side,grid,side,point);
+ return true;
 }
 function installDictionaryActions(){
  const popup=$('#infoOverlay'),container=$('#detailContent');
@@ -321,20 +365,51 @@ document.addEventListener('click',e=>{
  }
  const dict=e.target?.closest?.('[data-term]');
  if(dict){lastDictionary={term:dict.dataset.term};queueMicrotask(installDictionaryActions);return;}
- if(shade&&!shade.hidden)return;
- if(e.button!==0||e.detail===0)return;
- const content=e.target?.closest?.('#mainContent .passage-grid .passage-ar');
- if(!content)return;
- // Notes, source markers, dictionary links, saved-item controls and normal
- // text selection must retain their own established click semantics.
- if(e.target.closest('a,button,input,mark[data-rd],.note-anchored,[data-note-target],[data-rd]'))return;
- if(window.getSelection?.()?.toString().trim())return;
- const at=atTap(e),n=at.node;
- if(!n||!content.contains(n))return;
- const word=currentToken(n,at.offset);
- if(word)openWord(word,n.parentElement,content.closest('.passage-grid'),e.target,at);
-});
+}); 
+/* Desktop context menu appears only when no ordinary text is selected.
+   Native context menu (including Copy) stays intact for selections, links,
+   buttons, touch/long-press, and apparatus anchors. */
+let wordMenu=null,wordMenuTarget=null;
+function closeWordMenu(){
+ wordMenu?.remove();wordMenu=null;wordMenuTarget=null;
+}
+document.addEventListener('contextmenu',event=>{
+ if(event.defaultPrevented||!window.matchMedia?.('(hover:hover) and (pointer:fine)').matches)return;
+ if(shade&&!shade.hidden||window.getSelection?.()?.toString().trim())return;
+ if(event.target?.closest?.('a,button,input,textarea,select,[contenteditable],mark[data-rd],.note-anchored,[data-note-target],[data-rd]'))return;
+ const side=event.target?.closest?.('#mainContent .passage-grid .passage-ar');
+ if(!side)return;
+ const point=atTap(event);
+ if(!point.node||!side.contains(point.node))return;
+ const word=currentToken(point.node,point.offset);
+ if(!word)return;
+ event.preventDefault();
+ closeWordMenu();
+ wordMenuTarget={word,anchor:side,grid:side.closest('.passage-grid'),point};
+ wordMenu=document.createElement('div');
+ wordMenu.className='gnw-reader-menu';
+ wordMenu.setAttribute('role','menu');
+ wordMenu.setAttribute('aria-label','Word actions');
+ wordMenu.innerHTML='<button type="button" role="menuitem" data-gnw-open-menu="1">Word Context · <bdi lang="ar" dir="rtl">'+esc(word)+'</bdi></button>';
+ document.body.append(wordMenu);
+ const rect=wordMenu.getBoundingClientRect();
+ wordMenu.style.left=Math.max(8,Math.min(event.clientX,innerWidth-rect.width-8))+'px';
+ wordMenu.style.top=Math.max(8,Math.min(event.clientY,innerHeight-rect.height-8))+'px';
+ wordMenu.querySelector('button')?.focus({preventScroll:true});
+},true);
+document.addEventListener('pointerdown',event=>{
+ if(wordMenu&&!wordMenu.contains(event.target))closeWordMenu();
+},true);
+document.addEventListener('click',event=>{
+ const trigger=event.target?.closest?.('[data-gnw-open-menu]');
+ if(!trigger||!wordMenu?.contains(trigger))return;
+ event.preventDefault();
+ const chosen=wordMenuTarget;
+ closeWordMenu();
+ if(chosen?.grid)openWord(chosen.word,chosen.anchor,chosen.grid,trigger,chosen.point);
+},true);
 document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&wordMenu){e.preventDefault();closeWordMenu();return;}
  if(e.key==='Escape'&&shade&&!shade.hidden){e.preventDefault();close();}
  if(e.key==='Tab'&&shade&&!shade.hidden){
   const focus=$$('button:not([disabled]),a[href]',shade).filter(x=>x.getClientRects().length);
@@ -346,5 +421,5 @@ document.addEventListener('keydown',e=>{
 new MutationObserver(()=>{
  if(!rendering)installDictionaryActions();
 }).observe(document.body,{subtree:true,childList:true,attributes:false});
-window.GnammaWordContext=Object.freeze({openWord,close,findSelectedWord,locateOccurrence:passageOccurrence});
+window.GnammaWordContext=Object.freeze({openWord,openSelectedQuote,close,findSelectedWord,locateOccurrence:passageOccurrence});
 })();
