@@ -1,0 +1,8 @@
+{
+  "name": "daruri-typst-0151-arabic-text-qa",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@jsfi/typst-wasm": "0.1.0"
+  }
+}
