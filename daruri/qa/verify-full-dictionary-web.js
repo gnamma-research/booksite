@@ -9,6 +9,12 @@ const notesSource=JSON.parse(read('build/data/backmatter-source-notes.json'));
 const window={};
 vm.runInNewContext(read('full-dictionary-data.js'),{window}, {timeout:2000});
 const exported=window.GnammaFullDictionaryData;
+vm.runInNewContext(read('full-dictionary-index.js'),{window},{timeout:2000});
+const index=window.GnammaFullDictionaryIndex;
+assert.equal(index.schema_version,1);
+assert.equal(Object.keys(index.terms).length,153);
+assert.equal(index.terms['ṣīgha'].root,'صوغ');
+assert.equal(index.terms['ṣīgha'].articles[0].source,'F');
 assert.equal(exported.schema_version,1);
 assert.equal(exported.terms.length,153);
 assert.equal(exported.articles.length,157);
@@ -48,11 +54,15 @@ assert(html.includes('full-dictionary-context.js?v=20261025-sinaa1'));
 const readerBootstrap=read('quran-context-ui.js');
 assert(readerBootstrap.includes('full-dictionary-context.js?v=20261025-sinaa1'));
 const ui=read('full-dictionary-context.js');
-for(const phrase of ['#mainContent .glossary-card','#lexArticle .lex-card','detailContent','gn-fd-parallel','source_references','Hide full historical dictionary articles'])
+for(const phrase of ['#mainContent .glossary-card','#lexArticle .lex-card','detailContent','gn-fd-parallel','source_references','Hide complete historical article'])
   assert(ui.includes(phrase),phrase);
 const cache=read('sw.js'),bundle=read('download-bundle.js');
-for(const fname of ['full-dictionary-context.js','full-dictionary-data.js']){
+for(const fname of ['full-dictionary-context.js','full-dictionary-data.js','full-dictionary-index.js']){
   assert(cache.includes(fname),fname+' missing offline service worker');
   assert(bundle.includes(fname),fname+' missing from portable bundle');
 }
+const uiWord=read('gnamma-word-context.js');
+const popupFooter=uiWord.slice(uiWord.indexOf('function installDictionaryActions(){'),uiWord.indexOf("document.addEventListener('click',e=>{",uiWord.indexOf('function installDictionaryActions(){')));
+assert(!popupFooter.includes('morph-root')&&!popupFooter.includes('morph-lemma'),'The dictionary modal must not offer unsupported morphological searches');
+assert(ui.includes('reviseReaderPopup') && ui.includes('reviseStandalone') && ui.includes('fullLabel'));
 console.log('PASS: 153 term dossiers, 157 complete historical articles, 283 bilingual pairs and all 13 source notes match scholarly source; ṣināʿa commentary, standalone dictionary, reader hooks, cache and bundle synchronized.');
