@@ -4,6 +4,7 @@ on:
     branches: [audit/daruri-cache-upgrade-20261025]
     paths:
       - 'daruri/qa/verify-missing-offline-core.cjs'
+      - 'daruri/qa/stage-release-cache-version.py'
       - '.github/workflows/daruri-audit-offline-core-fault-20261025.yml'
   workflow_dispatch:
 permissions: {contents: read}
