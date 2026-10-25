@@ -91,8 +91,17 @@ async function exercise(engine,{mobile=false}={}){
   const loc=await selectWord(page,'ar');
   const ctx=page.locator('#gn-rd-selection-bar [data-rd="selection-word-context"]');
   await ctx.waitFor({state:'visible',timeout:18000});
-  assert.match(await ctx.innerText(),/Word Context/,
-   tag+': selected-word action lacks a visible label');
+  assert.equal(await ctx.getAttribute('aria-label'),'Word Context for Arabic selection',
+   tag+': icon-only Word Context must retain its accessible name');
+  assert.equal(await ctx.getAttribute('title'),'Word Context for Arabic selection',
+   tag+': icon-only Word Context must retain its tooltip');
+  assert.equal(await ctx.locator('.gn-rd-tool-caption').count(),0,
+   tag+': Word Context should not show a text caption');
+  assert.equal(await ctx.locator('svg.gn-rd-word-context-symbol').count(),1,
+   tag+': Word Context needs its distinct magnified Arabic glyph');
+  const actionBounds=await ctx.boundingBox();
+  assert.ok(actionBounds && actionBounds.width>=43 && actionBounds.width<=46,
+   tag+': Word Context control must remain 44px wide');
   assert.equal(await page.locator('#gnamma-word-context:not([hidden])').count(),0,
    tag+': Word Context auto-opened on selection');
   if(!mobile){

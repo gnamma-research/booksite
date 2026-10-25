@@ -9,7 +9,6 @@
    help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.6 2.6 0 1 1 4.1 2.1c-1.1.7-1.6 1.1-1.6 2.4"/><circle cx="12" cy="17" r=".75" fill="currentColor" stroke="none"/>',
    book:'<path d="M12 5.5C8 3.5 5 4.2 3 5.5v13c2.5-1.3 6-1.6 9 .3 3-1.9 6.5-1.6 9-.3v-13c-2-1.3-5-2-9 0ZM12 5.5v13.3"/>',
    home:'<path d="m3.5 10.5 8.5-7 8.5 7V20H4v-9.5M9 20v-6h6v6"/>',
-   read:'<path d="M4 12h14m-6-6 6 6-6 6"/>'
   };
   return '<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths[shape]+'</svg>';
  }
@@ -43,7 +42,7 @@
   var read=document.createElement('button');
   read.type='button';read.id='gnTopRead';read.className='gn-top-read';
   read.dataset.route='reader';read.setAttribute('aria-label','Read or resume the book');
-  read.title='Read or resume';read.innerHTML=icon('read')+'<span>Read</span>';
+  read.title='Read or resume';read.innerHTML=icon('book')+'<span>Read</span>';
   leading.appendChild(read);
   const syncTopDestinations=function(){
     const homeRoute=(location.hash||'#home').slice(1)==='home';
@@ -61,6 +60,50 @@
    if(document.body.classList.contains('reading-active')){
     event.preventDefault();event.stopPropagation();
    }
+  });
+
+
+  // A direct Home route is always possible without opening Contents.
+  // On compact phone toolbars it lives beside the reading dock rather than
+  // crowding the one-row scholarly actions.
+  var mobileHome=document.createElement('button');
+  mobileHome.id='gnReaderMobileHome';mobileHome.type='button';
+  mobileHome.setAttribute('aria-label','Home');
+  mobileHome.title='Home';mobileHome.innerHTML=icon('home');
+  document.body.appendChild(mobileHome);
+  mobileHome.addEventListener('click',function(){home.click();});
+
+  // Immersive modes deliberately omit the Contents medallion. Provide an
+  // always-discoverable exit and independent Home action, not a hidden gesture.
+  // The existing mode API preserves the saved section when leaving focus.
+  var escape=document.createElement('div');
+  escape.id='gnReaderEscape';
+  escape.setAttribute('role','group');
+  escape.setAttribute('aria-label','Leave immersive reading');
+  escape.innerHTML='<button id="gnExitFocus" type="button" aria-label="Exit focus or continuous mode">Exit focus</button>'+
+   '<button id="gnFocusHome" type="button" aria-label="Go to Home">Home</button>';
+  document.body.appendChild(escape);
+  function exitImmersive(){
+   var modes=window.GnammaReaderModes;
+   if(modes&&typeof modes.setMode==='function')modes.setMode('reading');
+   else document.getElementById('focusToolbar')?.click();
+  }
+  escape.querySelector('#gnExitFocus').addEventListener('click',exitImmersive);
+  escape.querySelector('#gnFocusHome').addEventListener('click',function(){
+   exitImmersive();home.click();
+  });
+  document.addEventListener('keydown',function(event){
+   if(event.key!=='Escape'||event.defaultPrevented)return;
+   if(!document.body.classList.contains('reader-enhanced')||
+      !document.body.classList.contains('reading-active')||
+      !document.body.classList.contains('focus-mode'))return;
+   // Escape closes a dialog first; only a second Escape leaves immersive mode.
+   var dialogOpen=Array.from(document.querySelectorAll(
+    'dialog[open],[role="dialog"]:not([hidden]),.overlay:not([hidden])'
+   )).some(function(el){return el.getClientRects().length>0;});
+   if(dialogOpen)return;
+   if(document.activeElement?.closest?.('input,textarea,[contenteditable="true"]'))return;
+   exitImmersive();
   });
 
   // Search/Display/Help are global actions, not part of the Focus group.
