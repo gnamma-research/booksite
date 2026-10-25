@@ -101,8 +101,8 @@
     // Preserve exactly the site's relative directory structure for local HTML links.
     const files = [
       ['daruri/index.html', 'index.html'],
-      ['daruri/copy-links.js','copy-links.js?v=20261024-copyicons2'],
-      ['daruri/copy-links.css','copy-links.css?v=20261024-copyicons2'],
+      ['daruri/copy-links.js','copy-links.js?v=20261025-copy-menu-only1'],
+      ['daruri/copy-links.css','copy-links.css?v=20261025-copy-menu-only1'],
       ['daruri/focus-locators.js','focus-locators.js?v=20261025-focus-locators-wordcontext3'],
       ['daruri/focus-locators.css','focus-locators.css?v=20261025-focus-locators-wordcontext3'],
       ['daruri/headerless-navigation.css','headerless-navigation.css?v=20261024-headerfix1'],
