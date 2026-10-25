@@ -11,7 +11,8 @@
     "pagedjs": "0.4.3",
     "@vivliostyle/viewer": "2.45.2",
     "vivliostyle-pdf": "0.3.3",
-    "@pdfme/pdf-lib": "6.1.12"
+    "@pdfme/pdf-lib": "6.1.12",
+    "jsdom": "26.1.0"
   },
   "scripts": {
     "typst-node": "node typst_node.mjs",
