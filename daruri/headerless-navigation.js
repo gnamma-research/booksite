@@ -48,12 +48,15 @@
              part.querySelector('.passage-grid');
            segment=passage?.dataset.segment;
            passageTop=passage?.getBoundingClientRect().top||threshold;
-           // The old mode switch guesses its anchor from the section heading
-           // position rather than the *displayed* dock section. Align that
-           // heading first, while the same section is still present in the DOM.
-           part.scrollIntoView({block:'start',behavior:'instant'});
+           // Do not scroll the entire continuous document before changing
+           // reading mode. Safari's scroll observer can update state.n from
+           // the previous section after the tap but before the transition.
          }
        }
+       // Freeze the section displayed in the dock before any mode-transition
+       // geometry/layout side effects. The ordinary Reading renderer uses
+       // state.n, and the user explicitly asked to preserve this location.
+       if(continuous&&currentNumber&&readerState)readerState.n=String(currentNumber);
        window.GnammaReaderModes?.setMode?.('reading');
        if(continuous&&segment!==null){
          const equivalent=document.querySelector('#reader .passage-grid[data-segment="'+segment+'"]');
