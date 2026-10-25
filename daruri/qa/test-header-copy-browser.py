@@ -51,7 +51,8 @@ def run_case(browser, engine, width):
     not_overlapping(logo,home,'mosaic / Home')
     not_overlapping(home,read,'Home / Read')
     assert not page.locator('#globalViewLabel').is_visible(), 'Duplicate Home caption'
-    assert page.locator('#gnTopRead svg path').count(), 'Read needs its distinct arrow icon'
+    assert page.locator('#gnTopRead svg path').count(), 'Read needs an open-book icon'
+    assert 'M12 5.5' in page.locator('#gnTopRead svg path').first.get_attribute('d'), 'Read icon is not the open book'
     assert page.locator('#gnTopHome svg path').count(), 'Home needs its own icon'
 
     page.goto(URL+'#section=64',wait_until='load',timeout=90000)
