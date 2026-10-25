@@ -10,7 +10,8 @@ const HERE=__dirname,ROOT=path.resolve(HERE,'../../..');
 const source=process.env.BENCH_SOURCE||'vivliostyle-micro';
 const which=process.env.BENCH_BROWSER||'chromium';
 const out=process.env.BENCH_OUT||('/tmp/gnamma-vivliostyle-'+source+'-'+which);
-const url='http://127.0.0.1:8991/daruri/qa/stage2_shootout/vivliostyle_pdf_browser.html?source='+encodeURIComponent(source);
+const url='http://127.0.0.1:8991/daruri/qa/stage2_shootout/vivliostyle_pdf_browser.html?source='+encodeURIComponent(source)+
+  (process.env.BENCH_REWRITE==='1'?'&rewrite=1':'');
 const sleep=x=>new Promise(r=>setTimeout(r,x));
 let child,browser,context;
 const consoleMessages=[],network=[],resourceErrors=[];
