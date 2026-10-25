@@ -3,7 +3,7 @@
   "work": "Daruri",
   "method": "Editorially selected exact English excerpts, each verified once in its bilingual segment; no proportional or machine-guessed token offsets.",
   "source": "daruri/edition-r3-20261020.js",
-  "source_blob": "03cf9fe4af7aa443fc963ce92d9be283e9805b76",
+  "source_blob": "4d310e477eb41b83b8ba49115d1c161c831fe81c",
   "note_prefix": "N",
   "all_notes": 122,
   "notes_with_english_phrase": 118,
@@ -48,7 +48,7 @@
       "section": "2",
       "segment": 1,
       "note_id": "N003",
-      "english": "a probe and a rule",
+      "english": "a method of examination (sibār) and a standard (qānūn)",
       "source": "arabic-anchored"
     },
     {
@@ -62,7 +62,7 @@
       "section": "7",
       "segment": 0,
       "note_id": "N005",
-      "english": "those who discuss this craft",
+      "english": "practitioners of kalām (mutakallimūn)",
       "source": "arabic-anchored"
     },
     {
