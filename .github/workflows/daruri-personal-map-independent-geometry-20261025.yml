@@ -1,0 +1,74 @@
+name: RESEARCH - independent published PDF map geometry checks
+on:
+  push:
+    branches: [research/daruri-authoritative-map-rebuild-20261025]
+    paths:
+      - '.github/workflows/daruri-personal-map-independent-geometry-20261025.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  validate-current-source-map-geometry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install independent PDF geometry reader
+        run: python -m pip install PyMuPDF==1.26.5
+      - name: Retrieve unpublished candidate maps from original 25 October rebuild
+        uses: actions/download-artifact@v4
+        with:
+          name: daruri-current-pdf-authoritative-map-rebuild
+          run-id: 40156923521
+          github-token: \${{ github.token }}
+          path: /tmp/personal-map-evidence
+      - name: Verify published source bytes and Word-map bounds
+        run: |
+          python - <<'PY'
+          import json,hashlib,pathlib,math,re,collections,fitz
+          base=pathlib.Path('daruri')
+          folder=pathlib.Path('/tmp/personal-map-evidence')
+          manifest=json.loads((base/'pdf-editions-manifest.json').read_text())
+          candidates={p.name:p for p in folder.rglob('*.json') if p.name.endswith('.pdf.json')}
+          assert len(candidates)==5,(len(candidates),list(candidates))
+          old=base/'personal-anchor-maps'
+          for name in ('daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'):
+              pdfbytes=(base/name).read_bytes()
+              sha=hashlib.sha256(pdfbytes).hexdigest()
+              assert sha==manifest['files'][name]['sha256'],name+' published PDF and release manifest mismatch'
+              candidate=json.loads(candidates[name+'.json'].read_text())
+              previous=json.loads((old/(name+'.json')).read_text())
+              assert candidate['source_sha256']==sha,name+' candidate not bound to current published bytes'
+              assert candidate['coverage']>=.995, 'Insufficient source-segment coverage'
+              assert set(candidate['segments'])==set(previous['segments']), 'Source segment keys changed'
+              # Ensure every validated word box belongs to an actual page of
+              # this exact published PDF, is finite, and stays within its bounds.
+              pdf=fitz.open(stream=pdfbytes,filetype='pdf')
+              n=0
+              for segment,words in candidate['segments'].items():
+                  assert words,'Empty mapped segment '+segment
+                  for word in words:
+                      token,page,x0,y0,x1,y1=word
+                      assert isinstance(token,str) and token.strip(),segment
+                      assert isinstance(page,int) and 1<=page<=len(pdf),segment
+                      w,h=pdf[page-1].rect.width,pdf[page-1].rect.height
+                      assert all(math.isfinite(v) for v in (x0,y0,x1,y1)),segment
+                      assert -2<=x0<x1<=w+2 and -2<=y0<y1<=h+2,(segment,word,w,h)
+                      n+=1
+              changes=sum(any(oldword!=newword for oldword,newword in zip(previous['segments'][key],candidate['segments'][key])) or len(previous['segments'][key])!=len(candidate['segments'][key]) for key in candidate['segments'])
+              print('VALIDATED-PUBLISHED-GEOMETRY',name,'sha',sha,'segments',len(candidate['segments']),
+                    'tokens',n,'changed-segments',changes,'coverage',candidate['coverage'],
+                    'pages',len(pdf),'expected-pages',manifest['files'][name]['pages'])
+              assert len(pdf)==manifest['files'][name]['pages']
+          # Arabic-only books are unchanged in all source word rectangles, despite new
+          # binary PDF metadata. Do not assert this about revised English text.
+          for name in ('daruri-arabic.pdf','daruri-arabic-vowelled.pdf'):
+              cand=json.loads(candidates[name+'.json'].read_text())
+              prev=json.loads((old/(name+'.json')).read_text())
+              assert cand['segments']==prev['segments'],name+' Arabic geometry unexpectedly changed'
+          print('GEOMETRY-BY-PUBLISHED-HASH PASSED; deterministic re-render byte identity still unverified')
+          PY
