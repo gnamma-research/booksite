@@ -1,0 +1,57 @@
+name: RESEARCH ONLY - five authoritative personal PDF maps
+on:
+  push:
+    branches: [research/daruri-authoritative-map-rebuild-20261025]
+    paths:
+      - '.github/workflows/daruri-personal-map-rebuild-audit-20261025.yml'
+      - 'daruri/build/build_personal_anchor_maps.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regenerate-in-isolation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install canonical layout and PDF libraries
+        run: python -m pip install -r daruri/build/requirements.txt
+      - name: Regenerate anchors against all five current published PDF SHA-256s
+        run: |
+          set -o pipefail
+          python daruri/build/build_personal_anchor_maps.py --publish 2>&1 | tee /tmp/map-rebuild-evidence.txt
+          python - <<'PY'
+          import json,hashlib,pathlib,re
+          root=pathlib.Path('daruri')
+          logs=pathlib.Path('/tmp/map-rebuild-evidence.txt').read_text()
+          assert logs.count('SHA-MATCH True')==5, 'Rebuilt canonical layout diverged from one or more published PDFs: do not accept maps'
+          names=['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf']
+          manifest=json.loads((root/'pdf-editions-manifest.json').read_text())
+          for name in names:
+              pdf=(root/name).read_bytes()
+              digest=hashlib.sha256(pdf).hexdigest()
+              assert digest==manifest['files'][name]['sha256'], f'{name} differs from signed manifest'
+              mapping=json.loads((root/'personal-anchor-maps'/(name+'.json')).read_text())
+              assert mapping['source_sha256']==digest, f'{name} checksum binding invalid'
+              assert mapping['coverage']>=.99, f'{name} insufficient exact-segment coverage: {mapping["coverage"]}'
+              assert len(mapping['segments'])>=400, f'{name} too few verified segments'
+              print('VALIDATED',name,'sha256',digest,'fraction',mapping['coverage'],'sections',len(mapping['segments']))
+          PY
+      - name: Verify existing exact-marker and selected-text source contracts
+        run: node daruri/qa/verify-personal-pdf-upgrade.cjs
+      - name: Upload regenerated maps and reproducibility evidence without publishing
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-current-pdf-authoritative-map-rebuild
+          path: |
+            daruri/personal-anchor-maps/*.json
+            /tmp/map-rebuild-evidence.txt
+          retention-days: 21
+          if-no-files-found: warn
