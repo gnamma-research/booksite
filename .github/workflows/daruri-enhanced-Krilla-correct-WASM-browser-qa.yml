@@ -1,0 +1,106 @@
+name: Daruri ORIGINAL-source enhanced Krilla correct target JCO full browser Scholarly PDF (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths: ['.github/workflows/daruri-enhanced-Krilla-correct-WASM-browser-qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: gnamma-enhanced-correct-jco-browser-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  transpile_patched_component_then_compile_in_real_browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Construct genuine current whole Scholarly HTML (625 notes 153 terms 157 articles)
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+            daruri/qa/stage2_shootout/runtime_ultimate scholarly
+          cp daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+            daruri/qa/stage2_shootout/runtime_ultimate/scholarly.source.txt
+      - name: Install unchanged MIT typst-wasm browser JS and exact pinned JCO compiler
+        run: |
+          cd daruri/qa/stage2_shootout
+          npm install --no-package-lock --no-audit --no-fund
+          npm install --no-save --no-package-lock --no-audit --no-fund @bytecodealliance/jco@1.24.6
+          if [ '${{ matrix.browser }}' = chromium ]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
+      - name: Download source-identified Typsastra fork WASI P2 component built by prior proof
+        uses: actions/download-artifact@v4
+        with:
+          repository: gnamma-research/booksite
+          run-id: 40159200305
+          name: daruri-enhanced-Krilla-CORRECT-wasm32-unknown-unknown-component-NONRELEASE
+          github-token: ${{ github.token }}
+          path: /tmp/gnamma-patched-component
+      - name: Transpile WASI component into raw core browser modules with EXACT upstream JCO ABI
+        run: |
+          set -euxo pipefail
+          echo 'b559565e204ad40e9b7d821d3157bf3ccf4b15309bad966cece878538ba9a1c4  /tmp/gnamma-patched-component/enhanced-typst-engine-NONRELEASE.wasm' | sha256sum --check
+          cd daruri/qa/stage2_shootout
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          import {transpile} from '@bytecodealliance/jco';
+          const module=new Uint8Array(fs.readFileSync('/tmp/gnamma-patched-component/enhanced-typst-engine-NONRELEASE.wasm'));
+          const result=await transpile(module,{
+            name:'engine',instantiation:'async',wasiShim:false,base64Cutoff:0
+          });
+          const dir='node_modules/typst-wasm/dist/engine';
+          const written=[];
+          for(const [name,content] of Object.entries(result.files)){
+            if(!name.endsWith('.wasm')){console.log('JCO_BINDING_OUTPUT',name,
+                typeof content==='string'?content.length:content.byteLength);continue;}
+            const destination=path.join(dir,path.basename(name));
+            if(!fs.existsSync(destination))throw Error('Unexpected core module name '+name);
+            fs.writeFileSync(destination,content);
+            written.push({name,bytes:fs.statSync(destination).size});
+          }
+          if(!written.find(x=>x.name==='engine.core.wasm'))
+            throw Error('JCO did not produce standard raw engine.core.wasm');
+          console.log('GNAMMA_ENHANCED_JCO_RAW_BROWSER_MODULES',JSON.stringify(written));
+          NODE
+          sha256sum node_modules/typst-wasm/dist/engine/*.wasm
+      - name: ACTUAL chromium/webkit from full current Scholarly HTML directly to on-device enhanced WASM Blob
+        env:
+          BENCH_BROWSER: ${{ matrix.browser }}
+          BENCH_OUT: /tmp/gnamma-enhanced-jco-browser-${{ matrix.browser }}
+        run: |
+          /usr/bin/time -v node daruri/qa/stage2_shootout/test_ultimate_typst_browser.cjs
+      - name: Assert complete book Arabic logical Unicode, 258 section links, qpdf and notes
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qpdf poppler-utils
+          pdf=/tmp/gnamma-enhanced-jco-browser-${{ matrix.browser }}/daruri-scholarly-625-notes-browser-typst-NONRELEASE.pdf
+          qpdf --check "$pdf"
+          python daruri/qa/stage2_shootout/verify_scholarly_candidate.py \
+            daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+            "$pdf" /tmp/gnamma-enhanced-jco-browser-${{ matrix.browser }}/scholarly-acceptance.json
+          python daruri/qa/browser_engine_shootout_20261025/enhanced_full_pdf_qa.py \
+            daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+            "$pdf" /tmp/gnamma-enhanced-jco-browser-${{ matrix.browser }}/enhanced-client-audit.json
+          python daruri/qa/browser_engine_shootout_20261025/directory_folios.py \
+            "$pdf" /tmp/gnamma-enhanced-jco-browser-${{ matrix.browser }}/dictionary-folios.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-enhanced-Krilla-JCO-actual-${{ matrix.browser }}-full-scholarly-NONRELEASE
+          path: /tmp/gnamma-enhanced-jco-browser-${{ matrix.browser }}
+          if-no-files-found: warn
+          retention-days: 14
