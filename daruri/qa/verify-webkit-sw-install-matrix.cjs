@@ -55,16 +55,21 @@ async function run(config,origin){
  let timedOut=false;
  try{
   await page.goto(origin+'/daruri/',{waitUntil:'domcontentloaded',timeout:30000});
-  await page.waitForFunction(async()=>{
-   const r=await navigator.serviceWorker.getRegistration();
-   return r?.active?.state==='activated';
-  },null,{timeout:28000}).catch(()=>{timedOut=true});
-  const snapshot=await page.evaluate(async()=>{
-   const r=await navigator.serviceWorker.getRegistration();
-   return {active:r?.active?.state||null,installing:r?.installing?.state||null,
-    waiting:r?.waiting?.state||null,controller:!!navigator.serviceWorker.controller,
-    caches:await caches.keys(),registrationError:document.body.dataset.registrationError||''};
-  });
+  // Poll resolved registration state in Node: the async promise returned
+  // by a browser waitForFunction callback was falsely treated as readiness.
+  let snapshot;
+  const deadline=Date.now()+45000;
+  do{
+   snapshot=await page.evaluate(async()=>{
+    const r=await navigator.serviceWorker.getRegistration();
+    return {active:r?.active?.state||null,installing:r?.installing?.state||null,
+     waiting:r?.waiting?.state||null,controller:!!navigator.serviceWorker.controller,
+     caches:await caches.keys(),registrationError:document.body.dataset.registrationError||''};
+   });
+   if(snapshot.active==='activated')break;
+   await page.waitForTimeout(400);
+  }while(Date.now()<deadline);
+  timedOut=snapshot.active!=='activated';
   const record={case:config.id,core:config.core,optional:config.optional,
    ms:Date.now()-started,timedOut,requests:queries.filter(q=>q.id===config.id).length,
    ...snapshot,errors};
