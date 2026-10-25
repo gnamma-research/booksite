@@ -1,0 +1,75 @@
+name: Daruri Typst 0.15.1 WASM latest Arabic/Unicode PDF text-layer quality (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths:
+      - '.github/workflows/daruri-typst-0151-arabic-wasm-qa.yml'
+      - 'daruri/qa/stage2_shootout/qa_typst015/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  wasm_0151_arabic_not_visual_only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install the separate latest Typst 0.15.1 WASM package
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout/qa_typst015 --no-package-lock --no-audit --no-fund
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qpdf poppler-utils
+          python -m pip install -q PyMuPDF==1.26.7
+      - name: Generate original Noto Arabic and English dictionary PDF with Typst 0.15.1 WASM
+        env:
+          QA_OUT: /tmp/gnamma-typst-015-Arabic
+        run: |
+          node --check daruri/qa/stage2_shootout/qa_typst015/arabic_pdf_qa.mjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/qa_typst015/arabic_pdf_qa.mjs
+      - name: Compare exact Arabic base letters, logical text layer and qpdf validity
+        run: |
+          pdf=/tmp/gnamma-typst-015-Arabic/daruri-typst-0151-real-Arabic-Noto-fonts.pdf
+          qpdf --check "$pdf"
+          pdftotext -layout "$pdf" /tmp/gnamma-typst-015-Arabic/poppler.txt
+          python - <<'PY'
+          import fitz,json,pathlib,unicodedata
+          p=pathlib.Path('/tmp/gnamma-typst-015-Arabic')
+          data=json.loads((p/'report.json').read_text())
+          with fitz.open(data['output_pdf']) as d:
+            text='\n'.join(x.get_text() for x in d)
+            links=[l for page in d for l in page.get_links()]
+            pages=len(d);outlines=len(d.get_toc())
+          poppler=(p/'poppler.txt').read_text('utf8',errors='replace')
+          def arabic_bases(s):
+            return ''.join(x for x in unicodedata.normalize('NFKC',s)
+                           if 0x621<=ord(x)<=0x64A and unicodedata.category(x).startswith('L'))
+          expected=data['arabic_title_expected']
+          target=arabic_bases(expected)
+          full=arabic_bases(text)
+          # Locate the title before the first historical dictionary heading.
+          cap=text.split('Historical dictionary')[0]
+          cap_bases=arabic_bases(cap)
+          results={'pages':pages,'outlines':outlines,'pdf_links':len(links),
+             'expected_title_base_letters':len(target),
+             'mupdf_cover_base_letters':len(cap_bases),
+             'mupdf_contains_exact_title_arabic_base_sequence':target in full,
+             'mupdf_has_expected_english':data['english_expected'] in text,
+             'poppler_contains_title_base_sequence':target in arabic_bases(poppler),
+             'text_excerpt':text[:320],
+             'compiler':data['engine_version']}
+          (p/'arabic-text-layer-qa.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
+          print('GNAMMA_TYPST_015_ARABIC_TEXT_QA',json.dumps(results,ensure_ascii=False))
+          if not results['mupdf_contains_exact_title_arabic_base_sequence']:
+             raise AssertionError('Arabic PDF ToUnicode still loses or duplicates base title characters')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-typst-0151-wasm-Arabic-ToUnicode-NONRELEASE
+          path: /tmp/gnamma-typst-015-Arabic
+          if-no-files-found: warn
+          retention-days: 14
