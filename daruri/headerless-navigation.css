@@ -547,3 +547,29 @@
 @media screen {
  body.reader-enhanced.reading-active.focus-mode #readerDock.reader-dock { opacity:1!important; background:var(--surface)!important; }
 }
+
+
+/* Home is an entry point rather than a repeated user manual. The full edition
+   and method statement stays in an opt-in native disclosure. */
+@media screen {
+  .gnamma-home .home-lead{max-width:690px;margin:17px 0}
+  .gnamma-home .home-actions{margin:16px 0 6px}
+  .gnamma-home .home-quiet-links{
+    display:flex;flex-wrap:wrap;align-items:center;
+    gap:4px 18px;margin:5px 0 0
+  }
+  .gnamma-home .home-quiet-links button{
+    box-sizing:border-box;min-height:44px;appearance:none;background:none;
+    border:0;padding:8px 0;color:var(--text-soft);
+    font:500 13px/1.35 var(--sans,system-ui);cursor:pointer;
+    text-decoration:underline;text-underline-offset:3px
+  }
+  .gnamma-home .home-quiet-links button:hover,
+  .gnamma-home .home-quiet-links button:focus-visible{color:var(--accent)}
+  .gnamma-home .home-quiet-links button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .gnamma-home .home-source-details{
+    display:block;max-width:790px;margin:20px 0 0;
+    border-top:1px solid var(--line);padding-top:10px
+  }
+  .gnamma-home .home-source-details>summary{cursor:pointer;min-height:44px;padding:11px 0}
+}
