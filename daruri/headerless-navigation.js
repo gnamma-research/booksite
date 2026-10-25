@@ -63,35 +63,14 @@
   });
 
 
-  // A direct Home route is always possible without opening Contents.
-  // On compact phone toolbars it lives beside the reading dock rather than
-  // crowding the one-row scholarly actions.
-  var mobileHome=document.createElement('button');
-  mobileHome.id='gnReaderMobileHome';mobileHome.type='button';
-  mobileHome.setAttribute('aria-label','Home');
-  mobileHome.title='Home';mobileHome.innerHTML=icon('home');
-  document.body.appendChild(mobileHome);
-  mobileHome.addEventListener('click',function(){home.click();});
-
-  // Immersive modes deliberately omit the Contents medallion. Provide an
-  // always-discoverable exit and independent Home action, not a hidden gesture.
-  // The existing mode API preserves the saved section when leaving focus.
-  var escape=document.createElement('div');
-  escape.id='gnReaderEscape';
-  escape.setAttribute('role','group');
-  escape.setAttribute('aria-label','Leave immersive reading');
-  escape.innerHTML='<button id="gnExitFocus" type="button" aria-label="Exit focus or continuous mode">Exit focus</button>'+
-   '<button id="gnFocusHome" type="button" aria-label="Go to Home">Home</button>';
-  document.body.appendChild(escape);
+  // The top reading-mode menu provides Home without a persistent floating
+  // overlay. The reader's section and scroll position are not reset by merely
+  // opening that menu.
   function exitImmersive(){
    var modes=window.GnammaReaderModes;
    if(modes&&typeof modes.setMode==='function')modes.setMode('reading');
-   else document.getElementById('focusToolbar')?.click();
   }
-  escape.querySelector('#gnExitFocus').addEventListener('click',exitImmersive);
-  escape.querySelector('#gnFocusHome').addEventListener('click',function(){
-   exitImmersive();home.click();
-  });
+
   document.addEventListener('keydown',function(event){
    if(event.key!=='Escape'||event.defaultPrevented)return;
    if(!document.body.classList.contains('reader-enhanced')||
@@ -110,7 +89,16 @@
   // Move the existing controls without replacing their event-bound elements.
   focus.after(trailing);
   var focusButton=document.getElementById('focusToolbar');
-  if(focusButton)trailing.insertBefore(focusButton,trailing.firstChild);
+  if(focusButton){
+   trailing.insertBefore(focusButton,trailing.firstChild);
+   // The book-shaped apparatus control is NOT the mode selector. Explicitly
+   // remove it instead of relying on contradictory legacy display rules.
+   var obsolete=document.getElementById('apparatusToolbar');
+   if(obsolete)obsolete.remove();
+   focusButton.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H4v5M15 3h5v5M4 16v5h5M20 16v5h-5"/></svg>';
+   focusButton.setAttribute('aria-label','Reading mode: Reading, Focus or Continuous');
+   focusButton.title='Reading mode';
+  }
   trailing.setAttribute('aria-label','Focus, search, theme, display and help');
 
   // Help is available in the Contents pane, not a permanent top button.
