@@ -69,6 +69,40 @@ def main():
         if n:counts[asset]=n
     if not all(asset in counts for asset in changed):
         raise SystemExit("Some updated assets missing from SW CORE: "+str([x for x in changed if x not in counts]))
+    # Optional fonts and PDFs may be absent. A missing *functional* reader
+    # module must instead abort a new install, preserving an older worker/cache.
+    required=["index.html","headerless-navigation.js","reading-mode-controls.js",
+      "gnamma-word-context.js","reading-desk.js","gnamma-search.js",
+      "visuals-controls.js","copy-links.js","editions-selector.js",
+      "reading-navigation-history.js","reading-navigation-bridge.js",
+      "general-section-picker.js","compact-menu.css","reading-desk.css",
+      "reading-mode-controls.css","gnamma-search.css","gnamma-word-context.css"]
+    install_anchor="self.addEventListener('install',event=>event.waitUntil(caches.open(NAME).then(async cache=>{"
+    replacement="""const REQUIRED_OFFLINE_CORE=new Set(%s);
+self.addEventListener('install',event=>event.waitUntil(caches.open(NAME).then(async cache=>{
+  const missingRequired=[];""" % json.dumps(required,separators=(',',':'))
+    if updated.count(install_anchor)!=1:
+        raise SystemExit("Unknown service worker install structure; do not overwrite")
+    updated=updated.replace(install_anchor,replacement)
+    old_catch="try{await cache.add(file);}catch(error){console.warn('Offline optional asset unavailable',file,error?.message||error);}"
+    new_catch="""try{await cache.add(file);}catch(error){
+        const name=new URL(file,self.location.href).pathname.split('/').pop();
+        if(REQUIRED_OFFLINE_CORE.has(name))missingRequired.push(file);
+        else console.warn('Offline optional asset unavailable',file,error?.message||error);
+      }"""
+    if updated.count(old_catch)!=1:
+        raise SystemExit("Unexpected service worker cache installer")
+    updated=updated.replace(old_catch,new_catch)
+    before_success="  await Promise.all(workers);\n"
+    if updated.count(before_success)!=1:
+        raise SystemExit("Missing worker completion guard")
+    updated=updated.replace(before_success,
+       before_success+"""  if(missingRequired.length){
+    await caches.delete(NAME);
+    throw new Error('Required offline reader assets unavailable: '+missingRequired.join(', '));
+  }
+""")
+    counts["requiredFunctionalAssets"]=len(required)
     write("sw.js",updated,counts)
     # First prove the baseline really had old registration and at least one live
     # HTML entrypoint refs; otherwise this is an invalid release recipe.
