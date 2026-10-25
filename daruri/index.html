@@ -5800,14 +5800,13 @@ function takeDictionaryReturn(){
       el.setAttribute('aria-label','Reading mode: '+label+'. Choose mode');
       el.title='Reading mode: '+label;
       el.classList.toggle('active',mode!=='reading');
-      // Keep the SVG node stable during continuous scroll, especially on Safari.
-      const iconLevel=mode==='reading'?'normal':mode==='continuous'?'focus-3':focusApparatus?'focus-1':'focus-2';
-      const iconHref='../assets/gnamma-reading-modes.svg#gn-'+iconLevel;
-      const symbol=el.querySelector('svg use');
-      if(symbol){
-        if(symbol.getAttribute('href')!==iconHref)symbol.setAttribute('href',iconHref);
-      }else{
-        el.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="'+iconHref+'"></use></svg>';
+      // The toolbar button selects a mode; it is not itself the mode's icon.
+      // Keep a four-corner Focus/reading-mode symbol in all modes so it cannot
+      // be mistaken for the separate open-book Read destination.
+      // Replace the old dynamic book/page sprite once; keep the node stable
+      // during scroll and subsequent updates (including mobile Safari).
+      if(!el.querySelector('svg[data-gn-reading-mode-trigger]')){
+        el.innerHTML='<svg data-gn-reading-mode-trigger="1" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H4v5M15 3h5v5M4 16v5h5M20 16v5h-5"/></svg>';
       }
     }
   }
