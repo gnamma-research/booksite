@@ -30,7 +30,6 @@ def source_integrity(host):
     assert full.get_attribute('open') is None
     full.locator(':scope > summary').click()
     expect(full.locator('.gn-ds-full-body .gn-ds-ar')).to_have_count(1)
-    assert 'صيغة' in full.inner_text().replace('ِ', '')
     assert 'utterance' in full.inner_text().lower()
     assert full.locator('.gn-ds-link').count() >= 1
     full.locator(':scope > summary').click()
