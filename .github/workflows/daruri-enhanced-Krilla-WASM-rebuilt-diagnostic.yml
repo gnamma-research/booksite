@@ -1,0 +1,159 @@
+name: Daruri enhanced Krilla CORRECT component with rebuilt JS and worker ABI diagnostics (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths: ['.github/workflows/daruri-enhanced-Krilla-WASM-rebuilt-diagnostic.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  rebuild_matching_WASM_browser_JS_ABI:
+    runs-on: ubuntu-latest
+    timeout-minutes: 46
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: typst-wasm/typst-wasm
+          ref: cf498a731ebbb801ccdfbff1bcca7ef9a94f9d31
+          path: pinned-typst-wasm
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Pin pnpm 11.5.2 and install original open Typst-WASM workspace dependencies
+        run: |
+          corepack enable
+          corepack prepare pnpm@11.5.2 --activate
+          cd pinned-typst-wasm
+          pnpm install --frozen-lockfile
+      - name: Download the identical verified 24.7MB enhanced Krilla WASI P2 component
+        uses: actions/download-artifact@v4
+        with:
+          name: daruri-enhanced-Krilla-CORRECT-wasm32-unknown-unknown-component-NONRELEASE
+          run-id: 40159200305
+          repository: gnamma-research/booksite
+          github-token: ${{ github.token }}
+          path: /tmp/gnamma-enhanced-component
+      - name: Rebuild JCO Worker AND JSPI bindings using EXACT upstream source/WIT
+        run: |
+          set -euxo pipefail
+          echo 'b559565e204ad40e9b7d821d3157bf3ccf4b15309bad966cece878538ba9a1c4  /tmp/gnamma-enhanced-component/enhanced-typst-engine-NONRELEASE.wasm' | sha256sum --check
+          cd pinned-typst-wasm
+          export COMPONENT_PATH=/tmp/gnamma-enhanced-component/enhanced-typst-engine-NONRELEASE.wasm
+          pnpm --dir packages/typst-wasm transpile:engine:worker
+          pnpm --dir packages/typst-wasm transpile:engine:jspi
+          find packages/typst-wasm/src/engine/generated/worker -maxdepth 1 -name 'engine.core*.wasm' -printf '%f %s bytes\n'
+      - name: Update pinned JS frontend type definitions for actual generated core module count
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,re
+          root=Path('pinned-typst-wasm/packages/typst-wasm')
+          engine=root/'src/engine/generated/worker'
+          names=sorted((p.name for p in engine.glob('engine.core*.wasm')),key=lambda s:(len(s),s))
+          print('GNAMMA_WIT_ENHANCED_GENERATED_MODULES',names,flush=True)
+          assert names[0]=='engine.core.wasm' and len(names)>=4
+          r=root/'src/engine/types.ts';s=r.read_text()
+          s=re.sub(r'export type CoreModuleName =\n(?:\s*\|[^\n]+\n)*\s*\|[^;]+;',
+              'export type CoreModuleName =\n'+'\n'.join('  | "'+n+'"' for n in names)+';',s)
+          r.write_text(s)
+          r=root/'src/engine/core-modules.ts';s=r.read_text()
+          s=re.sub(r'const coreModuleNames = \[[^\]]*\] as const',
+              'const coreModuleNames = [\n'+''.join('  "'+n+'",\n' for n in names)+'] as const',s,flags=re.S)
+          r.write_text(s)
+          p=root/'package.json';j=json.loads(p.read_text())
+          for n in names:j['exports']['./engine/'+n]='./dist/engine/'+n
+          p.write_text(json.dumps(j,indent=2)+'\n')
+          original=Path('daruri/qa/stage2_shootout/ultimate_typst_browser.mjs')
+          t=original.read_text()
+          for n in names:
+            if n in ('engine.core.wasm','engine.core2.wasm','engine.core3.wasm'):continue
+            a=n.split('.')[1].removeprefix('core')
+            alias='core'+a+'Url'
+            marker="import core3Url from 'typst-wasm/engine/engine.core3.wasm?url';"
+            assert marker in t
+            t=t.replace(marker,marker+'\nimport '+alias+" from 'typst-wasm/engine/"+n+"?url';")
+            old="'engine.core3.wasm':WebAssembly.compileStreaming(fetch(core3Url))"
+            assert old in t
+            t=t.replace(old,old+",\n     '"+n+"':WebAssembly.compileStreaming(fetch("+alias+"))")
+          original.write_text(t)
+          PY
+      - name: Build browser JS worker and regenerate matching core WASM exports
+        run: |
+          set -euxo pipefail
+          cd pinned-typst-wasm
+          pnpm --dir packages/typst-wasm exec tsdown
+          mkdir -p packages/typst-wasm/dist/engine
+          cp packages/typst-wasm/src/engine/generated/worker/engine.core*.wasm packages/typst-wasm/dist/engine/
+          find packages/typst-wasm/dist/engine -type f -printf '%f %s bytes\n'
+          find packages/typst-wasm/dist/worker -maxdepth 2 -type f -printf '%f %s bytes\n' | head -20
+      - name: Install baseline Gnamma research and TEST-ONLY replace entire matching npm Typst WASM package
+        run: |
+          set -euxo pipefail
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          dst=daruri/qa/stage2_shootout/node_modules/typst-wasm
+          rm -rf "$dst/dist"
+          cp -a pinned-typst-wasm/packages/typst-wasm/dist "$dst/dist"
+          cp pinned-typst-wasm/packages/typst-wasm/package.json "$dst/package.json"
+          echo '=== Browser library expected API ==='
+          rg -n -m 5 'add_source|addSource|setSource|addFile|MemoryFileLoader' "$dst/dist/index.js" "$dst/dist/worker/web-worker.js" || true
+          echo '=== Engine core modules ==='
+          find "$dst/dist/engine" -maxdepth 1 -type f -printf '%f %s bytes\n'
+          echo '=== Browser library API inspection ==='
+          cd daruri/qa/stage2_shootout
+          node --input-type=module <<'NODE'
+          import {createTypstCompiler} from './node_modules/typst-wasm/dist/index.js';
+          const code=createTypstCompiler.toString();
+          console.log('GNAMMA_BROWSER_COMPILER_SOURCE_PREFIX',code.slice(0,1800));
+          NODE
+          cd ../../..
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+      - name: Generate COMPLETE source-derived Scholarly PDF inside actual browser worker with enhanced Arabic
+        env:
+          BENCH_BROWSER: chromium
+          BENCH_OUT: /tmp/gnamma-enhanced-rebuilt-diagnostic
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+             daruri/qa/stage2_shootout/runtime_ultimate scholarly
+          cp daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+             daruri/qa/stage2_shootout/runtime_ultimate/scholarly.source.txt
+          # Instrument how far source/file setup proceeds without modifying production code.
+          cp daruri/qa/stage2_shootout/ultimate_typst_browser.mjs /tmp/original-gnamma-browser.mjs
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('daruri/qa/stage2_shootout/ultimate_typst_browser.mjs')
+          s=p.read_text()
+          old="  await compiler.addSource('main.typ',converted.source);"
+          assert old in s
+          s=s.replace(old,"  console.error('GNAMMA_DIAG_BEFORE_ADD_SOURCE',JSON.stringify({type:typeof compiler.addSource,method:String(compiler.addSource).slice(0,1100),file:converted.source.length}));\n"+old+"\n  console.error('GNAMMA_DIAG_AFTER_ADD_SOURCE');")
+          s=s.replace("cause:e?.cause==null?null:String(e.cause)","cause:e?.cause==null?null:JSON.stringify(e.cause,Object.getOwnPropertyNames(e.cause))")
+          p.write_text(s)
+          PY
+          node --check daruri/qa/stage2_shootout/ultimate_typst_browser.mjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/test_ultimate_typst_browser.cjs
+      - name: Require complete PDF structure, exact Arabic title copy and 153 printed lexicon links
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qpdf poppler-utils
+          pdf=/tmp/gnamma-enhanced-rebuilt-diagnostic/daruri-scholarly-625-notes-browser-typst-NONRELEASE.pdf
+          qpdf --check "$pdf"
+          python daruri/qa/stage2_shootout/verify_scholarly_candidate.py \
+            daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+            "$pdf" /tmp/gnamma-enhanced-rebuilt-diagnostic/scholarly-acceptance.json
+          python daruri/qa/browser_engine_shootout_20261025/enhanced_full_pdf_qa.py \
+            daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+            "$pdf" /tmp/gnamma-enhanced-rebuilt-diagnostic/enhanced-client-audit.json
+          python daruri/qa/browser_engine_shootout_20261025/directory_folios.py \
+            "$pdf" /tmp/gnamma-enhanced-rebuilt-diagnostic/directory-page-ref-audit.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-enhanced-Krilla-correct-JS-worker-ABI-DIAGNOSTIC-NONRELEASE
+          path: /tmp/gnamma-enhanced-rebuilt-browser
+          if-no-files-found: warn
+          retention-days: 14
