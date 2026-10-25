@@ -1,0 +1,112 @@
+name: Daruri Oct25 latest-master integrated browser candidate audit
+on:
+  push:
+    branches: [audit/daruri-current-master-context-focus-20261025]
+    paths:
+      - 'daruri/gnamma-word-context.js'
+      - 'daruri/qa/verify-*'
+      - '.github/workflows/daruri-latest-master-integration-audit-20261025.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  selection-context-and-pixels:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Validate source and QA JavaScript syntax
+        run: |
+          node --check daruri/gnamma-word-context.js
+          node --check daruri/qa/verify-current-master-selection-browser.cjs
+          node --check daruri/qa/verify-selection-drag-visual-browser.cjs
+      - name: Suppress inaccessible unrelated apt source
+        run: |
+          for f in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$f" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$f"; then sudo mv "$f" "$f.disabled"; fi
+          done
+      - name: Install browsers and PNG decoder
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 pngjs@7.0.0
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Test Word Context focus, Copy, selection, mobile and right-click
+        run: node daruri/qa/verify-current-master-selection-browser.cjs
+      - name: Test physical pixel selection using real drag across English and Arabic
+        if: always()
+        run: node daruri/qa/verify-selection-drag-visual-browser.cjs
+      - name: Test persistent saved highlight and Word Context across reload
+        if: always()
+        run: node daruri/qa/verify-highlight-word-context-browser.cjs
+      - name: Retain actual screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-exact-source-selection-pixels
+          path: |
+            daruri/qa/selection-current-audit/
+            daruri/qa/selection-drag-artifacts/
+          retention-days: 14
+          if-no-files-found: warn
+  routes-and-copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Suppress inaccessible unrelated apt source
+        run: |
+          for f in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$f" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$f"; then sudo mv "$f" "$f.disabled"; fi
+          done
+      - name: Install browser runners
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: 48 native pointer route/Focus/Contents checks
+        run: node daruri/qa/verify-focus-native-pointer-browser.cjs
+      - name: 8 public route, Reading Desk, history and Visuals combinations
+        if: always()
+        run: node daruri/qa/verify-route-graph-browser.cjs
+      - name: Live Copy scope crosses §11 to §12 with freeze for real selected text
+        if: always()
+        run: node daruri/qa/verify-copy-cross-section-browser.cjs
+      - name: Preserve route and Copy evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-current-route-copy-navigation
+          path: |
+            daruri/qa/focus-native-pointer-artifacts/
+            daruri/qa/route-audit-artifacts/
+            daruri/qa/copy-cross-section-results/
+          retention-days: 14
+          if-no-files-found: warn
+  colours-fonts-and-a11y:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Suppress inaccessible unrelated apt source
+        run: |
+          for f in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$f" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$f"; then sudo mv "$f" "$f.disabled"; fi
+          done
+      - run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 @axe-core/playwright@4.10.2
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: 36 actual Visuals combinations and 12 blocked Arabic font scenarios
+        run: node daruri/qa/verify-theme-accessibility-and-fonts.cjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-latest-theme-wcag-reports
+          path: daruri/qa/audit-artifacts/
+          retention-days: 14
+          if-no-files-found: warn
