@@ -10,6 +10,9 @@ on:
       - 'daruri/dictionary.html'
       - 'daruri/quran-context-ui.js'
       - 'daruri/gnamma-word-context.js'
+      - 'daruri/gnamma-morphology.js'
+      - 'daruri/morph-lexicon.json'
+      - 'daruri/morph-daruri-v1.json'
       - 'daruri/sw.js'
       - 'daruri/download-bundle.js'
       - 'daruri/qa/verify-full-dictionary-web.js'
@@ -44,6 +47,7 @@ jobs:
           node --check daruri/full-dictionary-data.js
           node --check daruri/quran-context-ui.js
           node --check daruri/gnamma-word-context.js
+          node --check daruri/gnamma-morphology.js
           node --check daruri/qa/verify-full-dictionary-web.js
           python daruri/build/export_full_dictionary_web.py --check
           node daruri/qa/verify-full-dictionary-web.js
