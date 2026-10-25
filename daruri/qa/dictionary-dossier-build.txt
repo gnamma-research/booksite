@@ -1,0 +1,92 @@
+/* Unified dictionary dossier: meaning, attributed sources, authorial usage.
+   Independent short extracts are NEVER represented as excerpts of unrelated full articles. */
+(()=>{
+'use strict';
+if(window.GnammaDictionaryDossier)return;
+window.GnammaDictionaryDossier={version:'20261025-unified1'};
+const base=document.currentScript?.src||new URL('dictionary-dossier.js',document.baseURI).href;
+const fullURL=new URL('full-dictionary-data.js?v=20261025-sinaa1',base).href;
+const $=(s,p=document)=>p.querySelector(s),$$=(s,p=document)=>[...p.querySelectorAll(s)];
+const el=(tag,cls='',value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=String(value);return n};
+const put=(p,tag,cls,value)=>{const n=el(tag,cls,value);p.append(n);return n};
+const norm=x=>String(x||'').normalize('NFD').replace(/[\u0300-\u036f\u064b-\u065f\u0670\u06d6-\u06ed\u0640]/g,'').replace(/[أإآٱ]/g,'ا').replace(/ى/g,'ي').replace(/\s/g,'').toLowerCase();
+function authorID(name){
+ const n=norm(name).replace(/[ʿʾʻ’]/g,'').replace(/ā/g,'a').replace(/ī/g,'i').replace(/ū/g,'u').replace(/ṭ/g,'t').replace(/ẓ/g,'z');
+ for(const [word,id] of [['jurj','J'],['munaw','M'],['tahan','K'],['raghib','R'],['mutarr','U'],['suyut','S'],['manzur','L'],['fayyum','F']])
+  if(n.includes(word))return id;
+ return null;
+}
+function json(id){try{return JSON.parse(document.getElementById(id)?.textContent||'null')}catch(_){return null}}
+function excerpts(term){
+ const d=json('dictionaryData');
+ if(d?.terms?.[term])return(d.terms[term].sources||[]).map(id=>d.sources?.[id]).filter(Boolean);
+ return (json('dictionaryEntries')||[]).find(x=>x.term===term)?.sources||[];
+}
+function unique(rows){
+ const seen=new Set();return rows.filter(s=>{
+  const key=[norm(s.author),norm(s.work),norm(s.entry),norm(s.quote)].join('|');
+  if(seen.has(key))return false;seen.add(key);return true;
+ });
+}
+let pending=null,scheduled=false;
+function load(){
+ if(window.GnammaFullDictionaryData)return Promise.resolve(window.GnammaFullDictionaryData);
+ if(!pending)pending=new Promise((resolve,reject)=>{
+  const s=el('script');s.async=true;s.src=fullURL;
+  s.onload=()=>resolve(window.GnammaFullDictionaryData);
+  s.onerror=()=>reject(Error('Complete historical lexicon could not be loaded'));
+  document.head.append(s);
+ }).then(data=>{
+  if(data?.schema_version!==1||data.terms?.length!==153||data.articles?.length!==157)
+   throw Error('Historical lexicon inventory failed verification');
+  return data;
+ }).catch(e=>{pending=null;throw e});
+ return pending;
+}
+function groupsFor(term,full){
+ const groups=new Map(),articleMap=new Map((full?.articles||[]).map(a=>[a.id,a]));
+ function get(id,author,work,meta){
+  const key=id||'other:'+norm(author)+'|'+norm(work);
+  if(!groups.has(key))groups.set(key,{key,author,work,meta,short:[],articles:[]});
+  const g=groups.get(key),source=full?.sources?.[id];
+  if(source){g.author=source.author;g.work=source.work;g.meta=source}
+  return g;
+ }
+ for(const s of unique(excerpts(term))){
+  const id=authorID(s.author),canonical=full?.sources?.[id];
+  get(id,canonical?.author||s.author,canonical?.work||s.work,
+   canonical||{date:s.sourceDate,chronology:s.chronology}).short.push(s);
+ }
+ for(const rel of full?.terms?.find(t=>t.term===term)?.articles||[]){
+  const article=articleMap.get(rel.id),source=full.sources?.[article?.source];
+  if(!article||!source)continue;
+  const g=get(article.source,source.author,source.work,source);
+  if(!g.articles.some(x=>x.article.id===article.id))
+   g.articles.push({article,relation:rel.relation||''});
+ }
+ const rank=g=>g.meta?.chronology==='E'?0:g.meta?.chronology==='L'?1:g.meta?.chronology==='M'?2:3;
+ return [...groups.values()].sort((a,b)=>rank(a)-rank(b)||a.author.localeCompare(b.author,'en'));
+}
+function external(parent,label,url){
+ if(!/^https:\/\//i.test(String(url||'')))return;
+ const a=put(parent,'a','gn-ds-link',label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';
+}
+function dating(group){
+ const date=group.meta?.date||group.short[0]?.sourceDate||'Date not established';
+ let era=group.meta?.chronology==='E'?'Before Ibn Rushd':
+  group.meta?.chronology==='L'?'After Ibn Rushd':
+  group.meta?.chronology==='M'?'Modern reference':'Date uncertain';
+ if(/muṭarrizī|mutarrizi/i.test(group.author))era='Near-contemporary · died after Ibn Rushd';
+ if(/rāghib|raghib/i.test(group.author))era='Before Ibn Rushd · dating disputed';
+ return {era,date};
+}
+function preview(value,limit){
+ const chars=Array.from(String(value||'').trim());
+ return chars.length<=limit?chars.join(''):chars.slice(0,limit).join('')+'…';
+}
+function parallel(parent,ar,en,cls=''){
+ const wrap=put(parent,'div','gn-ds-parallel '+cls);
+ const a=put(wrap,'blockquote','gn-ds-ar',ar||'Arabic text unavailable');a.lang='ar';a.dir='rtl';
+ const b=put(wrap,'p','gn-ds-en',en||'English translation unavailable');b.lang='en';b.dir='ltr';
+ return wrap;
+}
