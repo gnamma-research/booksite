@@ -86,10 +86,18 @@ const bootstrapAsset=readerBootstrap.match(/full-dictionary-context\.js\?v=([\w-
 assert(htmlAsset && bootstrapAsset,'Reader and standalone dictionary must reference a versioned full dictionary script');
 assert.equal(htmlAsset,bootstrapAsset,'Standalone dictionary and reader must use the same full dictionary script version');
 const ui=read('full-dictionary-context.js');
+const dossier=read('dictionary-dossier.js');
+assert(dossier.includes('function groupsFor('),'Sources must be grouped by dictionary');
+assert(dossier.includes('Read complete article'),'Complete articles must expand inside their own source');
+assert(dossier.includes('Before Ibn Rushd')&&dossier.includes('After Ibn Rushd'),'Historical dating must be visible');
+assert(dossier.includes('gn-ds-three-sections'),'Three-section layout must be enabled');
+assert(html.includes('dictionary-dossier.js?v=20261025-unified1'));
+assert(read('quran-context-ui.js').includes('dictionary-dossier.js?v=20261025-unified1'));
+
 for(const phrase of ['#mainContent .glossary-card','#lexArticle .lex-card','detailContent','gn-fd-parallel','source_references','Hide complete historical article'])
   assert(ui.includes(phrase),phrase);
 const cache=read('sw.js'),bundle=read('download-bundle.js');
-for(const fname of ['full-dictionary-context.js','full-dictionary-data.js','full-dictionary-index.js']){
+for(const fname of ['full-dictionary-context.js','full-dictionary-data.js','full-dictionary-index.js','dictionary-dossier.js']){
   assert(cache.includes(fname),fname+' missing offline service worker');
   assert(bundle.includes(fname),fname+' missing from portable bundle');
 }
