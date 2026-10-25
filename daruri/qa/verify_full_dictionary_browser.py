@@ -84,6 +84,11 @@ def check_sigha_popup(browser, width, height, label):
     expect(popup.locator('[data-lexjump="lex-author"]')).to_contain_text('2 examples')
     expect(popup.locator('#lex-sources .gn-fd-specific')).to_contain_text('command')
     assert popup.locator('#lex-author .lex-authorial').count() == 2
+    concordance = popup.locator('#lex-author .gn-fd-verified-forms')
+    expect(concordance.locator(':scope > summary')).to_contain_text('63 matching Arabic spellings across 37 sections')
+    concordance.locator(':scope > summary').click()
+    assert concordance.locator('button[data-section]').count() == 37
+    expect(concordance.locator('button[data-section="149"]')).to_contain_text('بصيغته')
     short = popup.locator('#lex-sources .dictionary-source').first
     assert 'al-Munāwī' in short.inner_text()
     assert 'الأمر' in short.inner_text()
