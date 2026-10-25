@@ -51,28 +51,29 @@ async function inspect(engine,name,url,language){
    const side=document.querySelector('#reader .passage-grid[data-segment="0"] .'+sideClass);
    window.getSelection()?.removeAllRanges();
    const walk=document.createTreeWalker(side,NodeFilter.SHOW_TEXT);
-   let node,match;
-   while((node=walk.nextNode())){
-    if(node.parentElement?.closest('sup,button,[aria-hidden="true"]'))continue;
-    match=sideClass==='passage-en'?node.textContent.match(/[A-Za-z][A-Za-z ,.\-;:'’()]{34,}/u):
-      node.textContent.match(/[\u0621-\u064a][\u0621-\u065f\s،]{20,}/u);
-    if(match)break;
-   }
-   if(!node||!match)throw Error('Could not find drag-capable '+sideClass+' segment');
-   const prefix=match.index,start=prefix+2;
-   const single=index=>{
-    const r=document.createRange();r.setStart(node,index);r.setEnd(node,index+1);
-    const box=r.getBoundingClientRect();
+   const single=(node,index)=>{
+    const range=document.createRange();range.setStart(node,index);range.setEnd(node,index+1);
+    const box=range.getBoundingClientRect();
     return {x:box.x+box.width/2,y:box.y+box.height/2,top:box.top,bottom:box.bottom};
    };
-   const a=single(start);
-   let b=null;
-   for(let i=start+6;i<Math.min(node.length-1,prefix+match[0].length-1);i++){
-    const candidate=single(i);
-    if(Math.abs(a.top-candidate.top)>4)continue;
-    if(Math.abs(a.x-candidate.x)>40){b=candidate;break;}
+   let node,a=null,b=null;
+   while((node=walk.nextNode())&&!b){
+    if(node.parentElement?.closest('sup,button,[aria-hidden="true"]'))continue;
+    const raw=node.textContent||'';
+    for(let start=0;start<raw.length-8&&!b;start++){
+     if(!/[\p{L}]/u.test(raw[start]))continue;
+     const first=single(node,start);
+     if(first.y<70||first.y>innerHeight-90||first.x<40||first.x>innerWidth-40)continue;
+     for(let end=start+5;end<Math.min(raw.length-1,start+38);end++){
+      if(!/[\p{L}]/u.test(raw[end]))continue;
+      const candidate=single(node,end);
+      if(Math.abs(first.top-candidate.top)<4&&Math.abs(first.x-candidate.x)>32){
+       a=first;b=candidate;break;
+      }
+     }
+    }
    }
-   if(!b)throw Error('No selectable characters on the same line');
+   if(!b)throw Error('Could not find a same-line Arabic/English drag range');
    const left=Math.max(0,Math.floor(Math.min(a.x,b.x)-16));
    const right=Math.min(innerWidth,Math.ceil(Math.max(a.x,b.x)+16));
    const top=Math.max(0,Math.floor(Math.min(a.top,b.top)-3));
