@@ -10,7 +10,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {JSDOM} from 'jsdom';
 import {makeTypstFromCanonicalHtml} from '../stage2_shootout/ultimate_html_to_typst.mjs';
-const ROOT=path.resolve(import.meta.dirname,'../../../..');
+const ROOT=path.resolve(import.meta.dirname,'../../..');
 const input=process.argv[2]||path.join(ROOT,'daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html');
 const metaFile=process.argv[3]||path.join(ROOT,'daruri/qa/stage2_shootout/runtime_ultimate/scholarly.source.json');
 const out=process.argv[4]||'/tmp/daruri-typst-enhanced/full-current-scholarly.typ';
