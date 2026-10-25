@@ -418,6 +418,15 @@
   }
 
   function sync() {
+    // The unified dossier owns all source lists and full-article disclosures.
+    // Do not recreate legacy bottom-of-card expanders or a second popup.
+    if (window.GnammaDictionaryDossier) {
+      document.querySelectorAll('#mainContent .glossary-card').forEach(card => {
+        const term=card.querySelector('h2')?.textContent?.trim();
+        if (term) alignCraftSummary(card,term);
+      });
+      return;
+    }
     const atlas = document.querySelector('.lexicon-mode-nav a[data-dictionary-atlas]');
     ifTextDiff(atlas, 'Browse full-page historical dictionary ↗');
     document.querySelectorAll('#mainContent .glossary-card').forEach(card => {
