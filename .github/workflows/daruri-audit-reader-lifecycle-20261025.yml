@@ -5,6 +5,8 @@ on:
     paths:
       - 'daruri/personal-export.js'
       - 'daruri/gnamma-word-context.js'
+      - 'daruri/reading-desk.css'
+      - 'daruri/qa/verify-copy-cross-section-browser.cjs'
       - 'daruri/qa/verify-reader-lifecycle-browser.cjs'
       - 'daruri/qa/verify-route-graph-browser.cjs'
       - '.github/workflows/daruri-audit-reader-lifecycle-20261025.yml'
@@ -13,6 +15,8 @@ on:
     paths:
       - 'daruri/personal-export.js'
       - 'daruri/gnamma-word-context.js'
+      - 'daruri/reading-desk.css'
+      - 'daruri/qa/verify-copy-cross-section-browser.cjs'
       - 'daruri/qa/verify-reader-lifecycle-browser.cjs'
       - 'daruri/qa/verify-route-graph-browser.cjs'
   workflow_dispatch:
@@ -35,6 +39,7 @@ jobs:
           node --check daruri/gnamma-word-context.js
           node --check daruri/qa/verify-route-graph-browser.cjs
           node --check daruri/qa/verify-reader-lifecycle-browser.cjs
+          node --check daruri/qa/verify-copy-cross-section-browser.cjs
           node daruri/qa/verify-copy-links.cjs
       - name: Disable unrelated inaccessible apt repository
         run: |
@@ -50,6 +55,9 @@ jobs:
           npx --prefix daruri/qa playwright install --with-deps chromium webkit
       - name: Reproduce and test detached exporter and Continuous Word Context
         run: node daruri/qa/verify-reader-lifecycle-browser.cjs
+      - name: Cross-section Copy follows visible paragraphs and protects real selections
+        if: always()
+        run: node daruri/qa/verify-copy-cross-section-browser.cjs
       - name: Traverse all routes including Reading Desk, Back, Forward and Visuals
         if: always()
         run: node daruri/qa/verify-route-graph-browser.cjs
@@ -61,5 +69,6 @@ jobs:
           path: |
             daruri/qa/audit-lifecycle-results/
             daruri/qa/route-audit-artifacts/
+            daruri/qa/copy-cross-section-results/
           retention-days: 14
           if-no-files-found: warn
