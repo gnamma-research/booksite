@@ -191,7 +191,7 @@
    });
   }
   var main=document.getElementById('mainContent');
-  if(main){new MutationObserver(enhanceHelp).observe(main,{childList:true});enhanceHelp();}
+  if(main){new MutationObserver(()=>{enhanceHelp();simplifyHome();}).observe(main,{childList:true});enhanceHelp();simplifyHome();}
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});
  else install();
