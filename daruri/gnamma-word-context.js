@@ -241,6 +241,37 @@ function wordMarkup(ctx){
   '<div class="gnw-body">'+provenance+analysisSection+dictionary+editorial+own+fullActions+
   '<p class="gnw-footnote">A dictionary term, source note, personal annotation and search match are independent layers. Nothing is changed or saved by opening this panel.</p></div>';
 }
+// Late lexical results must never replace the focused modal header.
+// Preserve the opened details, in-dialog focus and the reader's scroll.
+function refreshLoadedAnalysis(ctx){
+ const card=$('.gnw-card',shade),body=card&&$('.gnw-body',card);
+ if(!body)return;
+ const temp=document.createElement('div');temp.innerHTML=wordMarkup(ctx);
+ const fresh=$('.gnw-body',temp);if(!fresh)return;
+ const oldTop=body.scrollTop,oldLeft=body.scrollLeft;
+ const opened=new Set([...body.querySelectorAll('details[open]')]
+  .map(el=>el.querySelector('summary')?.textContent?.trim()).filter(Boolean));
+ const previousFocus=document.activeElement,focusInside=body.contains(previousFocus);
+ const attrs=['data-gnw-search','data-gnw-value','data-gnw-note','data-gnw-term','data-gnw-desk'];
+ const focusKey=focusInside?{
+  tag:previousFocus.tagName,label:previousFocus.textContent?.trim()||'',
+  values:attrs.map(a=>previousFocus.getAttribute(a))
+ }:null;
+ rendering=true;
+ try{
+  body.innerHTML=fresh.innerHTML;
+  for(const detail of body.querySelectorAll('details')){
+   if(opened.has(detail.querySelector('summary')?.textContent?.trim()))detail.open=true;
+  }
+  if(focusKey){
+   const next=[...body.querySelectorAll('button,summary')].find(el=>
+    el.tagName===focusKey.tag&&el.textContent?.trim()===focusKey.label&&
+    attrs.every((a,i)=>el.getAttribute(a)===focusKey.values[i]));
+   (next||$('.gnw-header [data-gnw-close]',card))?.focus({preventScroll:true});
+  }
+  body.scrollTop=oldTop;body.scrollLeft=oldLeft;
+ }finally{rendering=false;}
+}
 async function openWord(word,anchor,grid,trigger=null,point=null){
  if(!AR.test(word)||!BOOK)return;
  const section=String(grid?.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator()),segment=Number(grid?.dataset.segment||0);
@@ -277,14 +308,15 @@ async function openWord(word,anchor,grid,trigger=null,point=null){
    ctx.analysis=engine.disambiguate(word,occurrence.neighbours,'daruri',
      section?'passage:'+section+':'+segment:null,occurrence.position);
    ctx.terms=getInPageDictionary(word,ctx.analysis);
-   const card=$('.gnw-card',shade);
-   if(card)card.innerHTML=wordMarkup(ctx);
+   refreshLoadedAnalysis(ctx);
  }).catch(()=>{});
 }
 function close(){
  if(!shade||shade.hidden)return;
  shade.hidden=true;selected=null;
- try{oldFocus?.focus?.({preventScroll:true})}catch(_){}
+ const opener=oldFocus?.isConnected&&oldFocus.getClientRects?.().length?
+  oldFocus:$('#readerDock #openJump')||$('#readerCopyOptions')||$('#menuBtn');
+ try{opener?.focus?.({preventScroll:true})}catch(_){}
 }
 /* Called explicitly from Reading Desk's selected-word context actions.
    Translate the saved selection offset into an exact source word when the
