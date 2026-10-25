@@ -178,6 +178,7 @@
       ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261022-qcontext1'],
       ['daruri/full-dictionary-context.js', 'full-dictionary-context.js?v=20261025-sinaa1'],
       ['daruri/full-dictionary-data.js', 'full-dictionary-data.js?v=20261025-sinaa1'],
+      ['daruri/full-dictionary-index.js', 'full-dictionary-index.js?v=20261025-dossier2'],
       ['daruri/quran-context-ui.css', 'quran-context-ui.css?v=20261022-qcontext1'],
       ['daruri/quran-context-data.json', 'quran-context-data.json?v=20261022-qcontext1'],
       ['daruri/quran-context-data.js', 'quran-context-data.js?v=20261022-qcontext1'],
