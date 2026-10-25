@@ -67,7 +67,13 @@ async function exercise(engine,engineName,base){
    await page.locator('#infoOverlay[hidden]').waitFor({state:'attached'});
    await page.goto(base+'/daruri/#section=2',{waitUntil:'domcontentloaded'});
    await page.locator('.gn-note-en-range').first().waitFor();
-   await page.locator('.gn-note-en-ref[data-note-target="N003"]').click();
+   // N003 is now precisely anchored to the corrected English phrase,
+   // rather than requiring a redundant superscript reference.
+   const n003=page.locator('.gn-note-en-range[data-gn-en-note-ids*="N003"]').first();
+   assert.equal(await n003.count(),1,'Corrected N003 phrase anchor missing');
+   await n003.click();
+   const n003Chooser=page.locator('.gn-note-en-choice[role="dialog"]');
+   if(await n003Chooser.isVisible())await n003Chooser.getByRole('button',{name:/N003/}).click();
    await page.locator('#infoOverlay:not([hidden])').waitFor();
    assert.match(await page.locator('#detailTitle').innerText(),/N003.*§2/,'Corrected publisher note section');
    await page.locator('#detailContent [data-close-reference]').click();
