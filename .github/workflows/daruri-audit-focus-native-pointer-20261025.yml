@@ -1,0 +1,35 @@
+name: Daruri WebKit native pointer Focus comparison (nonrelease)
+on:
+  push:
+    branches: [audit/daruri-reader-lifecycle-20261025]
+    paths:
+      - 'daruri/qa/verify-focus-native-pointer-browser.cjs'
+      - '.github/workflows/daruri-audit-focus-native-pointer-20261025.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  native-pointer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Disable unrelated unavailable apt source
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then sudo mv "$source" "$source.disabled"; fi
+          done
+      - run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Probe 48 mode, engine and viewport combinations using coordinate clicks
+        run: node daruri/qa/verify-focus-native-pointer-browser.cjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-native-pointer-focus-evidence
+          path: daruri/qa/focus-native-pointer-artifacts/
+          retention-days: 14
+          if-no-files-found: warn
