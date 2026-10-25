@@ -27,12 +27,21 @@ async function inspect(engine,name,origin,width){
   await page.waitForFunction(()=>window.GnammaReaderModes?.setMode&&window.GnammaCopyLinks,
    null,{timeout:35000});
   await page.evaluate(()=>window.GnammaReaderModes.setMode('continuous'));
-  const scroller=async section=>page.evaluate(id=>{
+  const scroller=async section=>page.evaluate(async id=>{
    const grid=document.querySelector('#gn-continuous-'+id+' .passage-grid[data-segment="0"]');
    if(!grid)throw Error('Missing continuous §'+id+' paragraph');
-   grid.scrollIntoView({block:'start',behavior:'instant'});
-   window.scrollBy({top:-Math.min(140,innerHeight*.17),behavior:'instant'});
+   // Continuous-mode CSS and dock observers can adjust the initial position
+   // across animation frames. Settle on the real paragraph hitbox, not the hash.
+   for(let tries=0;tries<4;tries++){
+    const box=grid.getBoundingClientRect();
+    const dest=Math.max(0,window.scrollY+box.top-140);
+    window.scrollTo({top:dest,behavior:'instant'});
+    await new Promise(ok=>requestAnimationFrame(()=>requestAnimationFrame(ok)));
+   }
    window.dispatchEvent(new Event('scroll'));
+   const box=grid.getBoundingClientRect();
+   return {section:id,top:box.top,bottom:box.bottom,scrollY:scrollY,
+    current:window.GnammaCopyContext?.state?.n};
   },section);
   // Use the actual viewport button coordinates. Locator-based clicks can
   // auto-scroll a sticky toolbar before dispatching pointerdown in WebKit.
@@ -43,20 +52,19 @@ async function inspect(engine,name,origin,width){
    if(width<700)await page.touchscreen.tap(x,y);
    else await page.mouse.click(x,y);
   };
-  await scroller(11);
   await tapOptions();
   const menu=page.locator('#gn-copy-menu:not([hidden])'),label=menu.locator('.gn-copy-menu-head small');
   await menu.waitFor();
-  const initial=await page.evaluate(()=>({
+  const start=await page.evaluate(()=>({
    label:document.querySelector('#gn-copy-menu .gn-copy-menu-head small')?.textContent||'',
-   hash:location.hash,section:window.GnammaCopyContext?.state?.n,scrollY:scrollY,
-   grid11:document.querySelector('#gn-continuous-11 .passage-grid')?.getBoundingClientRect()?.top,
-   grid12:document.querySelector('#gn-continuous-12 .passage-grid')?.getBoundingClientRect()?.top
+   hash:location.hash,section:window.GnammaCopyContext?.state?.n,scrollY:scrollY
   }));
-  console.log('COPY INITIAL '+id+' '+JSON.stringify(initial));
+  const arrived11=await scroller(11);
+  console.log('COPY INITIAL '+id+' '+JSON.stringify({start,arrived11}));
   await page.waitForFunction(()=>document.querySelector('#gn-copy-menu:not([hidden]) .gn-copy-menu-head small')?.textContent?.includes('§11'),null,{timeout:12000});
   const before=await label.textContent();
-  await scroller(12);
+  const arrived12=await scroller(12);
+  console.log('COPY AFTER '+id+' '+JSON.stringify(arrived12));
   await page.waitForFunction(()=>document.querySelector('#gn-copy-menu:not([hidden]) .gn-copy-menu-head small')?.textContent?.includes('§12'),null,{timeout:15000});
   const after=await label.textContent();
   assert.notEqual(after,before,'Copy heading did not track the new section');
