@@ -52,6 +52,15 @@ async function workerState(page){
    caches:await caches.keys()};
  });
 }
+async function waitForActive(page,revision,label){
+ const deadline=Date.now()+60000;
+ while(Date.now()<deadline){
+  const status=await workerState(page);
+  if(status.active.includes(revision))return;
+  await page.waitForTimeout(400);
+ }
+ throw Error('Service worker '+label+' did not finish installation: '+JSON.stringify(await workerState(page)));
+}
 async function waitForControl(page,label,revision,origin){
  const controlled=async()=>page.waitForFunction(rev=>
   !!navigator.serviceWorker.controller?.scriptURL.includes(rev),
@@ -75,7 +84,7 @@ async function check(api,name,origin){
  page.on('pageerror',e=>console.log('PAGE ERROR '+name+' '+e.message));
  try{
   await page.goto(origin+'/daruri/',{waitUntil:'domcontentloaded',timeout:60000});
-  await page.waitForFunction(()=>navigator.serviceWorker.getRegistration().then(r=>!!r?.active),null,{timeout:90000});
+  await waitForActive(page,OLD,'old');
   await page.reload({waitUntil:'domcontentloaded',timeout:60000});
   await waitForControl(page,'old',OLD,origin);
   const old=await page.evaluate(async()=>{
@@ -90,8 +99,7 @@ async function check(api,name,origin){
   assert(old.oldResource?.includes('__qaReaderAsset="old"'),'Old library was not precached');
   phase='new';
   await page.reload({waitUntil:'domcontentloaded',timeout:60000});
-  await page.waitForFunction(rev=>navigator.serviceWorker.getRegistration().then(r=>
-   !!r?.active?.scriptURL.includes(rev)),NEW,{timeout:90000});
+  await waitForActive(page,NEW,'new');
   await waitForControl(page,'new',NEW,origin);
   await page.reload({waitUntil:'domcontentloaded',timeout:60000});
   const updated=await page.evaluate(async()=>{
