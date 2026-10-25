@@ -4,7 +4,7 @@
 'use strict';
 const C=window.GnammaCopyContext;
 if(!C?.book?.sections||!C?.state||!C?.sections)return;
-const REV='20261024-copylinks1';
+const REV='20261025-copy-menu-only1';
 /* Frozen 2026-10-24 paragraph registry: §§1–258, followed by the colophon.
    NEVER recompute identifiers after a textual split/merge. New IDs and aliases
    require an explicit edit to this registry and its acceptance tests. */
@@ -88,11 +88,13 @@ function annotate(){
    if(grid.dataset.gnParagraphId)continue;
    const p=gridLocation(grid);if(!p)continue;
    grid.dataset.gnParagraphId=p.id;
-   const btn=document.createElement('button');btn.type='button';btn.className='gn-paragraph-link';
-   btn.dataset.gnParLink=p.id;btn.dataset.gnParSection=p.section;
-   btn.textContent='¶'+(p.index+1);
-   btn.setAttribute('aria-label','Copy link to '+paragraphLabel(p.section,p.index));btn.title='Link to '+paragraphLabel(p.section,p.index);
-   grid.prepend(btn);
+   // The paragraph number is a source locator, not a Copy action. The
+   // toolbar Copy → Link sheet owns all link copying and paragraph selection.
+   const number=document.createElement('span');number.className='gn-paragraph-number';
+   number.textContent='¶'+(p.index+1);
+   number.setAttribute('role','note');
+   number.setAttribute('aria-label',paragraphLabel(p.section,p.index));
+   grid.prepend(number);
  }
  if(!document.querySelector('#readerCopyOptions'))mountCopyButton();
  if(location.hash.includes('&paragraph='))requestJump();
@@ -405,9 +407,6 @@ document.addEventListener('click',e=>{
  e.preventDefault();e.stopImmediatePropagation();quickCopy();
 },true);
 document.addEventListener('click',e=>{
- const par=e.target.closest?.('[data-gn-par-link]');if(par){e.preventDefault();e.stopImmediatePropagation();
-  const p={section:par.dataset.gnParSection,index:locate(par.dataset.gnParSection,par.dataset.gnParLink),id:par.dataset.gnParLink};
-  targeted=p;selected=null;openSheet('link',p);return;}
  const choice=e.target.closest?.('[data-gn-menu]');if(choice){e.preventDefault();const kind=choice.dataset.gnMenu;closeMenu();openSheet(kind);return;}
  if(menu&&!menu.hidden&&!e.target.closest('#readerCopyOptions,#gn-copy-menu'))closeMenu();
 },true);
