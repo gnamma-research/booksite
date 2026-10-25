@@ -3,8 +3,10 @@
  * Unlike a browser print dialog, this must emit an original Uint8Array.
  */
 import {emitPdfFromVivliostyleWindow, printHTML} from "vivliostyle-pdf";
+import {PDFDocument} from "@pdfme/pdf-lib";
 
 const sourceName = new URLSearchParams(location.search).get('source')||'vivliostyle-micro';
+const applyJsPdfRepair=new URLSearchParams(location.search).get('rewrite')==='1';
 const sourceUrl='/daruri/qa/stage2_shootout/runtime_ultimate/'+
   encodeURIComponent(sourceName)+'.source.txt';
 const button=document.querySelector('#generate');
@@ -71,7 +73,7 @@ button.addEventListener('click',async()=>{
           try{
             report('emitting','CSS paginated; emitting PDF page vectors and GoTo annotations');
             const before=performance.now();
-            const bytes=await emitPdfFromVivliostyleWindow(win,{
+            let bytes=await emitPdfFromVivliostyleWindow(win,{
               sourceHtml:markedUp,
               embedSourceHtml:false,
               metadata:{
@@ -91,6 +93,14 @@ button.addEventListener('click',async()=>{
                 bleedBox:false
               }
             });
+            const originalBytes=bytes.length;
+            if(applyJsPdfRepair){
+              report('repairing','Rebuild PDF object dictionary using browser-native JS pdf-lib; preserve all pages/GoTo');
+              const rebuilt=await PDFDocument.load(bytes,{
+                updateMetadata:false,throwOnInvalidObject:false
+              });
+              bytes=await rebuilt.save({useObjectStreams:false});
+            }
             if(!(bytes instanceof Uint8Array) || bytes.length<15000 ||
                String.fromCharCode(...bytes.slice(0,5))!=='%PDF-')
                 throw Error('The browser emitter did not return an actual PDF Uint8Array');
@@ -111,6 +121,8 @@ button.addEventListener('click',async()=>{
               full_HTML_source:true,prebuilt_PDF_input:false,
               browser_print_dialog:false,privileged_chrome_PDF_writer:false,
               pdf_bytes_from_client_Blob:true,
+              original_emitter_bytes:originalBytes,
+              repaired_with_in_browser_pdf_lib:applyJsPdfRepair,
               generation_ms:Math.round(performance.now()-started),
               messages:messages.slice(-40)
             };
