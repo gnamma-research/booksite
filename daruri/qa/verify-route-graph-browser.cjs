@@ -47,10 +47,10 @@ async function testBrowser(engine,name,origin,width){
      const details=root?.querySelector('#homeEditorialSources');
      const actions=root?.querySelectorAll('.home-actions>.action-btn');
      const quiet=root?.querySelectorAll('.home-quiet-links [data-route]');
-     return {words:(root?.innerText?.trim().split(/\\s+/)||[]).length,
+     return {words:(root?.innerText?.trim().split(/\s+/)||[]).length,
        actions:actions?.length||0,quiet:quiet?.length||0,
        details:!!details,detailsOpen:!!details?.open,
-       retainedProvenance:!!details?.innerText?.includes('al-ʿAlawī'),
+       retainedProvenance:!!details?.textContent?.includes('al-ʿAlawī'),
        sourceLabel:details?.querySelector('summary')?.textContent||''};
     });
     assert(home.words<105,'Home is too wordy; scholarly caveats should be collapsed: '+JSON.stringify(home));
