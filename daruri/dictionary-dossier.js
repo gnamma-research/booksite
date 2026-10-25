@@ -205,6 +205,7 @@ function upgrade(host,term,mode){
   if(h&&!usage.querySelector('.gn-ds-usage-note'))
    h.insertAdjacentElement('afterend',el('p','gn-ds-usage-note',
     'Selected illustrative passages from Ibn Rushd, not an exhaustive count of every inflected occurrence.'));
+  if(usage)window.GnammaFullDictionaryContext?.enhanceUsage?.(usage,term);
  }else{
   const card=host.closest('.lex-card');
   if(card){
