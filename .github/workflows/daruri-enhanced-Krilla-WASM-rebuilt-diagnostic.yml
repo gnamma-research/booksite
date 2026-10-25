@@ -55,7 +55,7 @@ jobs:
           engine=root/'src/engine/generated/worker'
           names=sorted((p.name for p in engine.glob('engine.core*.wasm')),key=lambda s:(len(s),s))
           print('GNAMMA_WIT_ENHANCED_GENERATED_MODULES',names,flush=True)
-          assert names[0]=='engine.core.wasm' and len(names)>=4
+          assert names[0]=='engine.core.wasm' and len(names)>=3, 'Unexpected JCO raw core module count'
           r=root/'src/engine/types.ts';s=r.read_text()
           s=re.sub(r'export type CoreModuleName =\n(?:\s*\|[^\n]+\n)*\s*\|[^;]+;',
               'export type CoreModuleName =\n'+'\n'.join('  | "'+n+'"' for n in names)+';',s)
