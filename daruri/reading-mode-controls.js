@@ -486,11 +486,20 @@ function ensureModePicker(){
   '<button type="button" class="gn-mode-choice" role="radio" data-gn-reader-mode="reading"><span>Reading<small>Section and scholarly apparatus</small></span></button>'+
   '<button type="button" class="gn-mode-choice" role="radio" data-gn-reader-mode="focus"><span>Focus<small>One section, fewer distractions</small></span></button>'+
   '<button type="button" class="gn-mode-choice" role="radio" data-gn-reader-mode="continuous"><span>Continuous<small>Scroll through the whole text</small></span></button></div>'+
-  '<label class="gn-mode-apparatus"><input type="checkbox" id="gn-focus-apparatus-choice"><span>In Focus, show apparatus below the text</span></label>';
+  '<label class="gn-mode-apparatus"><input type="checkbox" id="gn-focus-apparatus-choice"><span>In Focus, show apparatus below the text</span></label>'+
+  '<div class="gn-mode-destinations"><button type="button" id="gn-mode-go-home" aria-label="Return to Home">Home</button></div>';
  document.body.append(picker);
  picker.addEventListener('click',event=>{
   const choice=event.target.closest('[data-gn-reader-mode]');if(!choice)return;
   event.preventDefault();modeAPI?.setMode(choice.dataset.gnReaderMode);closeModePicker(); 
+ });
+ picker.querySelector('#gn-mode-go-home')?.addEventListener('click',()=>{
+  closeModePicker();
+  const modes=window.GnammaReaderModes;
+  if(modes?.setMode)modes.setMode('reading');
+  const home=document.getElementById('gnTopHome');
+  if(home)home.click();
+  else location.hash='#home';
  });
  picker.querySelector('#gn-focus-apparatus-choice')?.addEventListener('change',event=>{
   modeAPI?.setApparatus(event.target.checked);updateModePicker();
