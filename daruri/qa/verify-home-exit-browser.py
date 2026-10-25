@@ -56,8 +56,18 @@ def case(browser,engine,width,url):
     page.wait_for_function("location.hash==='#home'")
     page.goto(url+'#section=64',wait_until='load',timeout=90000)
     page.wait_for_function("document.body.classList.contains('reading-active') && window.GnammaReaderModes")
+    # The reading-mode selector must NEVER become the same open-book icon as Read.
+    def verify_mode_trigger(expected):
+        icon=page.locator('#focusToolbar svg[data-gn-reading-mode-trigger] path')
+        icon.wait_for(state='attached',timeout=10000)
+        assert icon.get_attribute('d')=='M9 3H4v5M15 3h5v5M4 16v5h5M20 16v5h-5', (
+            engine,width,expected,'reading mode icon is not four corners')
+        assert page.locator('#focusToolbar svg use').count()==0, (
+            engine,width,expected,'old dynamic book icon is still used')
+    verify_mode_trigger('reading')
     page.evaluate("window.GnammaReaderModes.setMode('focus')")
     page.wait_for_function("document.body.classList.contains('focus-mode')")
+    verify_mode_trigger('focus')
     box(page,'#gnExitFocus')
     box(page,'#gnFocusHome')
     page.locator('#gnExitFocus').click()
@@ -69,6 +79,7 @@ def case(browser,engine,width,url):
     page.wait_for_function("!document.body.classList.contains('focus-mode')")
     page.evaluate("window.GnammaReaderModes.setMode('continuous')")
     page.wait_for_function("document.body.classList.contains('focus-level-3')")
+    verify_mode_trigger('continuous')
     box(page,'#gnReaderEscape')
     page.locator('#gnFocusHome').click()
     page.wait_for_function("location.hash==='#home' && !document.body.classList.contains('reading-active')")
