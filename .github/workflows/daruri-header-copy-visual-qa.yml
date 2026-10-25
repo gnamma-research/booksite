@@ -8,6 +8,10 @@ on:
       - 'daruri/copy-links.js'
       - 'daruri/index.html'
       - 'daruri/sw.js'
+      - 'daruri/reading-desk.js'
+      - 'daruri/reading-desk.css'
+      - 'daruri/qa/verify-highlight-word-context-browser.cjs'
+      - 'daruri/qa/verify-home-exit-browser.py'
       - 'daruri/qa/test-header-copy-browser.py'
       - '.github/workflows/daruri-header-copy-visual-qa.yml'
   workflow_dispatch:
@@ -41,4 +45,38 @@ jobs:
         with:
           name: daruri-copy-icon-visuals
           path: /tmp/daruri-copy-icons-*.png
+          if-no-files-found: ignore
+
+  navigation-context-icons:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check icon/navigation JavaScript
+        run: |
+          node --check daruri/headerless-navigation.js
+          node --check daruri/reading-desk.js
+          node --check daruri/qa/verify-highlight-word-context-browser.cjs
+          python -m py_compile daruri/qa/verify-home-exit-browser.py
+      - name: Install Chromium and WebKit
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.58.0 pillow
+          python -m playwright install --with-deps chromium webkit
+          npm install --no-save --prefix daruri/qa playwright@1.58.0
+      - name: Test distinct Read/Focus/Word Context icons and direct Home access
+        run: |
+          python daruri/qa/verify-home-exit-browser.py
+          node daruri/qa/verify-highlight-word-context-browser.cjs
+      - name: Save Home header screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-header-icons-across-devices
+          path: /tmp/daruri-nav-home-*.png
           if-no-files-found: ignore
