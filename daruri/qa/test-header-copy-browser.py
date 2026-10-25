@@ -51,13 +51,19 @@ def run_case(browser, engine, width):
     not_overlapping(logo,home,'mosaic / Home')
     not_overlapping(home,read,'Home / Read')
     assert not page.locator('#globalViewLabel').is_visible(), 'Duplicate Home caption'
-    assert page.locator('#gnTopRead svg path').count(), 'Read needs its distinct arrow icon'
+    assert page.locator('#gnTopRead svg path').count(), 'Read needs a book icon'
+    assert 'M12 5.5' in page.locator('#gnTopRead svg path').first.get_attribute('d'), 'Read should display the open-book symbol'
     assert page.locator('#gnTopHome svg path').count(), 'Home needs its own icon'
 
     page.goto(URL+'#section=64',wait_until='load',timeout=90000)
     page.wait_for_function("document.body.classList.contains('reading-active') && document.querySelector('#readerCopyOptions') !== null",timeout=50000)
     assert not page.locator('#gnTopRead').is_visible(), 'Redundant Read in reading mode'
-    assert not page.locator('#gnTopHome').is_visible(), 'Redundant Home in compact reader'
+    if width<=620:
+        assert not page.locator('#gnTopHome').is_visible(), 'Mobile reader toolbar must stay compact'
+        visible_loc(page,'#gnReaderMobileHome')
+    else:
+        visible_loc(page,'#gnTopHome')
+        assert not page.locator('#gnReaderMobileHome').is_visible()
     parent=visible_loc(page,'.gn-copy-wrapper')
     primary=visible_loc(page,'#readerCopyAction')
     arrow=visible_loc(page,'#readerCopyOptions')
