@@ -17,16 +17,19 @@ const server=http.createServer((req,res)=>{
  res.writeHead(200,{'content-type':MIME[path.extname(file)]||'application/octet-stream'});
  fs.createReadStream(file).pipe(res);
 });
-function diffPNG(a,b){
+function diffPNG(a,b,rect){
  const x=PNG.sync.read(a),y=PNG.sync.read(b);
  assert.equal(x.width,y.width);assert.equal(x.height,y.height);
+ const left=Math.max(0,Math.floor(rect.x)),right=Math.min(x.width,Math.ceil(rect.x+rect.width));
+ const top=Math.max(0,Math.floor(rect.y)),bottom=Math.min(x.height,Math.ceil(rect.y+rect.height));
  let changed=0,strong=0;
- for(let k=0;k<x.data.length;k+=4){
-  const d=Math.max(Math.abs(x.data[k]-y.data[k]),
-   Math.abs(x.data[k+1]-y.data[k+1]),Math.abs(x.data[k+2]-y.data[k+2]));
-  if(d>15)changed++;if(d>45)strong++;
+ for(let row=top;row<bottom;row++)for(let col=left;col<right;col++){
+  const k=(row*x.width+col)*4;
+  const delta=Math.max(Math.abs(x.data[k]-y.data[k]),Math.abs(x.data[k+1]-y.data[k+1]),Math.abs(x.data[k+2]-y.data[k+2]));
+  if(delta>15)changed++;if(delta>45)strong++;
  }
- return {pixels:x.width*x.height,changed,strong,ratio:changed/(x.width*x.height)};
+ const pixels=Math.max(0,right-left)*Math.max(0,bottom-top);
+ return {pixels,changed,strong,ratio:changed/Math.max(1,pixels)};
 }
 const outcomes=[],issues=[];
 async function inspect(engine,name,url,language){
@@ -56,14 +59,20 @@ async function inspect(engine,name,url,language){
     if(match)break;
    }
    if(!node||!match)throw Error('Could not find drag-capable '+sideClass+' segment');
-   const prefix=match.index,start=prefix+2,end=prefix+Math.min(21,match[0].length-2);
+   const prefix=match.index,start=prefix+2;
    const single=index=>{
     const r=document.createRange();r.setStart(node,index);r.setEnd(node,index+1);
     const box=r.getBoundingClientRect();
     return {x:box.x+box.width/2,y:box.y+box.height/2,top:box.top,bottom:box.bottom};
    };
-   const a=single(start),b=single(end);
-   if(Math.abs(a.top-b.top)>5)throw Error('Selected characters wrap across lines; choose another phrase');
+   const a=single(start);
+   let b=null;
+   for(let i=start+6;i<Math.min(node.length-1,prefix+match[0].length-1);i++){
+    const candidate=single(i);
+    if(Math.abs(a.top-candidate.top)>4)continue;
+    if(Math.abs(a.x-candidate.x)>40){b=candidate;break;}
+   }
+   if(!b)throw Error('No selectable characters on the same line');
    const left=Math.max(0,Math.floor(Math.min(a.x,b.x)-16));
    const right=Math.min(innerWidth,Math.ceil(Math.max(a.x,b.x)+16));
    const top=Math.max(0,Math.floor(Math.min(a.top,b.top)-3));
@@ -73,21 +82,38 @@ async function inspect(engine,name,url,language){
     bg:pseudo.backgroundColor};
   },langClass);
   assert(pos.clip.width>30&&pos.clip.height>10,'Drag region not meaningful');
-  const before=await page.screenshot({clip:pos.clip});
+  const before=await page.screenshot({type:'png'});
   await page.mouse.move(pos.a.x,pos.a.y);
   await page.mouse.down();
   await page.mouse.move(pos.b.x,pos.b.y,{steps:15});
   await page.mouse.up();
   const selection=await page.evaluate(()=>window.getSelection()?.toString()||'');
-  const after=await page.screenshot({clip:pos.clip});
-  const pixels=diffPNG(before,after);
+  const actual=await page.evaluate(()=>{
+   const sel=window.getSelection(),range=sel?.rangeCount?sel.getRangeAt(0):null;
+   const rect=range?.getBoundingClientRect(),a=range?.startContainer?.parentElement,
+     b=range?.endContainer?.parentElement;
+   return {clip:rect?.toJSON()||null,focused:document.hasFocus(),
+    startClass:a?.closest('.passage-ar,.passage-en')?.className||'',
+    endClass:b?.closest('.passage-ar,.passage-en')?.className||'',
+    sameNode:range?.startContainer===range?.endContainer};
+  });
+  const after=await page.screenshot({type:'png'});
+  const sampled=actual.clip&&actual.clip.width>5?actual.clip:pos.clip;
+  const pixels=diffPNG(before,after,sampled);
+  fs.writeFileSync(path.join(OUT,id+'-before.png'),before);
+  fs.writeFileSync(path.join(OUT,id+'-after.png'),after);
+  let forced=null;
+  if(pixels.ratio<=.06){
+   await page.addStyleTag({content:'#reader .passage-ar::selection,#reader .passage-en::selection,#reader .passage-ar *::selection,#reader .passage-en *::selection{background:#00ff33!important;color:#000!important}'});
+   await page.waitForTimeout(100);
+   forced=diffPNG(before,await page.screenshot({type:'png'}),sampled);
+  }
   assert(selection.trim().length>=3,'Mouse drag selected no readable characters');
-  assert(pixels.changed>pixels.pixels*.06,
-   'Selection copied but lacked visible highlight: '+JSON.stringify(pixels));
+  assert(pixels.ratio>.06,'Selection text exists but pixels unchanged: '+JSON.stringify({pixels,forced,actual,sampled,selection}));
   assert.equal(await page.locator('#gnamma-word-context:visible').count(),0,
    'Ordinary dragging unexpectedly opened a Word Context dialog');
   await page.locator('#gn-rd-selection-bar:not([hidden])').waitFor();
-  const out={id,selected:selection.slice(0,70),highlight:pixels,color:pos.bg};
+  const out={id,selected:selection.slice(0,70),highlight:pixels,color:pos.bg,actual};
   outcomes.push(out);
   console.log('PASS '+JSON.stringify(out));
   await page.screenshot({path:path.join(OUT,id+'.png'),fullPage:false});
