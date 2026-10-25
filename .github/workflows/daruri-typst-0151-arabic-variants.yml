@@ -1,0 +1,66 @@
+name: Daruri Typst 0.15.1 Arabic vowelled versus unvowelled ToUnicode microtest (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths:
+      - '.github/workflows/daruri-typst-0151-arabic-variants.yml'
+      - 'daruri/qa/stage2_shootout/qa_typst015/arabic_variants.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contrast_diacritics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install isolated actual Typst 0.15.1 WASM compiler plus native readers
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout/qa_typst015 --no-package-lock --no-audit --no-fund
+          python -m pip install -q PyMuPDF==1.26.7
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qpdf poppler-utils
+      - name: Compile five distinct Arabic shaping/diacritics cases from Gnamma Naskh font
+        env:
+          QA_OUT: /tmp/daruri-typst015-Arabic-variants
+        run: node daruri/qa/stage2_shootout/qa_typst015/arabic_variants.mjs
+      - name: Verify each PDF is valid and quantify Arabic letter inflation separately
+        run: |
+          python - <<'PY'
+          import fitz,subprocess,unicodedata,json,pathlib
+          p=pathlib.Path('/tmp/daruri-typst015-Arabic-variants')
+          cases=json.loads((p/'source-cases.json').read_text())
+          fitz.TOOLS.mupdf_display_errors(False)
+          def arabic(s):
+              return ''.join(c for c in unicodedata.normalize('NFKC',s)
+                             if 0x621<=ord(c)<=0x64A and unicodedata.category(c).startswith('L'))
+          outcome={}
+          for case in cases:
+              raw=p/(case['name']+'.pdf')
+              q=subprocess.run(['qpdf','--check',str(raw)],capture_output=True)
+              pop=subprocess.run(['pdftotext','-raw',str(raw),'-'],capture_output=True,text=True,encoding='utf8',errors='replace')
+              with fitz.open(raw) as d:
+                  copied=''.join(page.get_text() for page in d)
+              expected=arabic(case['source']);reported=arabic(copied);reported_poppler=arabic(pop.stdout)
+              outcome[case['name']]={'expected_arabic_base_letters':len(expected),
+                'mupdf_arabic_base_letters':len(reported),
+                'poppler_arabic_base_letters':len(reported_poppler),
+                'mupdf_exact_sequence':expected in reported,
+                'poppler_exact_sequence':expected in reported_poppler,
+                'qpdf_valid':q.returncode==0,
+                'copied_mupdf':copied[:300]}
+              assert q.returncode==0
+          (p/'comparative_arabic_results.json').write_text(json.dumps(outcome,ensure_ascii=False,indent=2))
+          print('GNAMMA_TYPST_015_VOWEL_ARABIC_DIFFERENTIAL',json.dumps(outcome,ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-typst-0151-Arabic-vowel-micro-extraction-NONRELEASE
+          path: /tmp/daruri-typst015-Arabic-variants
+          if-no-files-found: warn
+          retention-days: 14
