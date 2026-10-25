@@ -152,3 +152,43 @@ body.gn-copy-sheet-open{overflow:hidden!important}
    left:8px!important;top:5px!important;
  }
 }
+
+
+/* The split Copy control must count as one bounded flex item within the
+   eight-action 320px Reading rail; its chevron may shrink, never disappear. */
+@media screen and (max-width:620px) {
+ body.reader-enhanced.reading-active:not(.focus-mode) #readingControls:not([hidden]) .gn-copy-wrapper {
+   box-sizing:border-box!important;display:inline-flex!important;
+   flex:0 0 auto!important;order:4!important;align-items:center!important;
+   min-width:0!important;max-width:none!important;
+   width:auto!important;height:44px!important;margin:0!important;padding:0!important;
+ }
+ body.reader-enhanced.reading-active:not(.focus-mode) #readingControls:not([hidden])
+   .gn-copy-wrapper #readerCopyAction {
+   box-sizing:border-box!important;flex:0 0 var(--gn-quiet-action,30px)!important;
+   width:var(--gn-quiet-action,30px)!important;
+   min-width:var(--gn-quiet-action,30px)!important;
+   max-width:var(--gn-quiet-action,30px)!important;
+   height:44px!important;min-height:44px!important;margin:0!important;padding:0!important;
+ }
+ body.reader-enhanced.reading-active:not(.focus-mode) #readingControls:not([hidden])
+   .gn-copy-wrapper #readerCopyOptions {
+   box-sizing:border-box!important;flex:0 0 var(--gn-quiet-copy-chevron,20px)!important;
+   width:var(--gn-quiet-copy-chevron,20px)!important;
+   min-width:var(--gn-quiet-copy-chevron,20px)!important;
+   max-width:var(--gn-quiet-copy-chevron,20px)!important;
+   height:44px!important;min-height:44px!important;margin:0!important;padding:0!important;
+ }
+}
+
+/* Paragraph markers are metadata, not edge-hanging controls: their entire
+   bounding boxes must stay in the regular Reading viewport on 320px phones. */
+@media screen and (max-width:850px) {
+ body.reader-enhanced.reading-active:not(.focus-mode) #reader .passage-grid > .gn-paragraph-number {
+   box-sizing:border-box!important;position:absolute!important;
+   left:10px!important;right:auto!important;top:5px!important;
+   min-width:27px!important;max-width:42px!important;
+   padding:2px 1px!important;text-align:start!important;
+   white-space:nowrap!important;pointer-events:none!important;
+ }
+}
