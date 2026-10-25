@@ -785,8 +785,8 @@ function create(ctx){
   bar.setAttribute('aria-label','Actions for selected text');bar.hidden=false;
   bar.innerHTML=rdTool('Highlight selected words','data-rd="selection-bookmark"','highlight')+
    rdTool('Add a personal note for selected words','data-rd="selection-note"','note')+
-   (next.lang==='ar' && /^[\p{L}\p{M}]+$/u.test(next.quote) && /[\u0621-\u064a]/u.test(next.quote) ?
-    rdTool('Word Context for selected word','data-rd="selection-word-context"','book',false,false,'Word Context') : '')+
+   (next.lang==='ar' && /[\u0621-\u064a]/u.test(next.quote) ?
+    rdTool('Word Context for Arabic selection','data-rd="selection-word-context"','book',false,false,'Word Context') : '')+
    rdTool('Dismiss selection actions','data-rd="selection-dismiss"','close');
  }
  function hideSelection(){const bar=$('#gn-rd-selection-bar');if(bar)bar.hidden=true;}
@@ -1591,7 +1591,7 @@ function create(ctx){
    const selectedWord={...selection};
    hideSelection();
    if(!window.GnammaWordContext?.openSelectedQuote?.(selectedWord)){
-    ctx.notify('Select exactly one Arabic word to open Word Context.');
+    ctx.notify('Select Arabic text from the current paragraph to open Word Context.');
    }
    return;
   }
