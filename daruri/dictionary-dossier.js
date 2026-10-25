@@ -130,7 +130,9 @@ function sourceCard(g,full){
   if(row.relation&&row.relation!=='exact headword')
    put(block,'p','gn-ds-relation','Relationship to this term: '+row.relation);
   const first=article.paragraphs?.[0];
-  if(first){
+  const alreadyQuoted=g.short.some(s=>norm(s.entry)===norm(article.headword)&&
+   (article.paragraphs||[]).some(p=>norm(p.ar).includes(norm(s.quote))));
+  if(first&&!alreadyQuoted){
    put(block,'p','gn-ds-small','Preview of the complete historical article');
    parallel(block,preview(first.ar,260),preview(first.en,350),'gn-ds-preview');
   }
