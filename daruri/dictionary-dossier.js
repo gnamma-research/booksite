@@ -124,6 +124,10 @@ function sourceCard(g,full){
  const header=put(card,'header','gn-ds-source-head');
  put(header,'h4','gn-ds-author',g.author);
  put(header,'p','gn-ds-work',g.work);
+ if(g.short.some(x=>/usul_source/.test(x.kind||'')))
+  put(header,'p','gn-ds-source-kind','Uṣūl treatise · contextual evidence, not a dictionary');
+ else if(g.short.some(x=>/encyclopaedia|encyclopedia/.test(x.kind||'')))
+  put(header,'p','gn-ds-source-kind','Juristic encyclopaedia');
  const when=dating(g);
  put(header,'p','gn-ds-date',when.era+' · '+when.date);
  if(when.era.startsWith('After')||when.era.startsWith('Modern'))
@@ -271,6 +275,7 @@ function styles(){
  '.gn-ds-author{font:600 18px/1.4 Georgia,serif;margin:0 0 3px}',
  '.gn-ds-work{font:13px/1.55 Georgia,serif;margin:0 0 5px}',
  '.gn-ds-date{font:600 12px/1.5 system-ui,sans-serif;color:var(--accent,inherit);margin:4px 0}',
+ '.gn-ds-source-kind{font:600 11px/1.5 system-ui,sans-serif;opacity:.8;margin:4px 0}',
  '.gn-ds-caution,.gn-ds-small,.gn-ds-relation{font:12px/1.55 system-ui,sans-serif;opacity:.82;margin:6px 0}',
  '.gn-ds-headword,.gn-ds-extract{margin:12px 0;padding:9px 0;border-bottom:1px dotted var(--line,var(--border,#ccc))}',
  '.gn-ds-lemma,.gn-ds-extract-title{font:600 14px/1.5 system-ui,sans-serif;margin:0 0 6px}',
