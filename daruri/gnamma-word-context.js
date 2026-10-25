@@ -333,7 +333,7 @@ function openSelectedQuote(target){
      return true;
    }
  }
- const grid=$('#reader .passage-grid[data-segment]').find(node=>
+ const grid=[...document.querySelectorAll('#reader .passage-grid[data-segment]')].find(node=>
    Number(node.dataset.segment)===Number(target.segment)&&
    String(node.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator())===String(target.section));
  const side=grid?.querySelector('.passage-ar');
