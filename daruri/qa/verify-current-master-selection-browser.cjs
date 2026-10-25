@@ -49,11 +49,12 @@ async function browserCases(api,engine,url,width){
     const enStyle=getComputedStyle(en,'::selection');
     return {ar:arStyle.backgroundColor,en:enStyle.backgroundColor,
       paper:getComputedStyle(ar).backgroundColor,
-      userSelect:getComputedStyle(ar).userSelect};
+      userSelect:getComputedStyle(ar).userSelect,
+      webkitUserSelect:getComputedStyle(ar).getPropertyValue('-webkit-user-select')};
    });
    assert(colors.ar!=='rgba(0, 0, 0, 0)'&&colors.ar!=='transparent','Arabic selection has no visible paint');
    assert(colors.en!=='rgba(0, 0, 0, 0)'&&colors.en!=='transparent','English selection has no visible paint');
-   assert.equal(colors.userSelect,'text','Browser text selection was disabled');
+   assert(colors.userSelect!=='none'&&colors.webkitUserSelect!=='none','Browser text selection was disabled');
    return colors;
   });
   await check(id+'-plain-tap-no-inspector',async()=>{
@@ -113,6 +114,71 @@ async function browserCases(api,engine,url,width){
    assert(heading.includes('§11'));
    await page.keyboard.press('Escape');
    return {opened:result};
+  });
+  await check(id+'-multiword-selection-no-word-context',async()=>{
+   const quote=await page.evaluate(()=>{
+    const side=document.querySelector('#reader .passage-grid[data-segment="0"] .passage-ar');
+    const walker=document.createTreeWalker(side,NodeFilter.SHOW_TEXT);
+    let node,match;
+    while((node=walker.nextNode())){
+     if(node.parentElement?.closest('sup,[aria-hidden="true"],button'))continue;
+     match=node.textContent.match(/[\u0621-\u064a][\u0621-\u065f]*\s+[\u0621-\u064a][\u0621-\u065f]*/u);
+     if(match)break;
+    }
+    if(!node||!match)throw Error('Could not find 2 adjacent Arabic words');
+    const range=document.createRange();
+    range.setStart(node,match.index);range.setEnd(node,match.index+match[0].length);
+    window.getSelection().removeAllRanges();window.getSelection().addRange(range);
+    document.dispatchEvent(new Event('selectionchange'));
+    return window.getSelection().toString();
+   });
+   await page.locator('#gn-rd-selection-bar:not([hidden])').waitFor();
+   await page.waitForTimeout(300);
+   assert.equal(await page.locator('#gn-rd-selection-bar [data-rd="selection-word-context"]').count(),0,
+    'Multiword selection must not inspect the first word');
+   assert.equal(await page.locator('#gn-rd-selection-bar [data-rd="selection-bookmark"]').count(),1);
+   assert.equal(await page.locator('#gn-rd-selection-bar [data-rd="selection-note"]').count(),1);
+   return {phrase:quote};
+  });
+  await check(id+'-lexicon-refresh-preserves-modal-focus',async()=>{
+   const state=await page.evaluate(async t=>{
+    const original=window.GnammaMorphology,grid=document.querySelector('#reader .passage-grid[data-segment="0"]');
+    const side=grid.querySelector('.passage-ar');
+    let revision=0;
+    window.__resolveLexicon=null;window.__morphUpdated=false;
+    window.GnammaMorphology={...original,
+     loadLexicon:()=>new Promise(resolve=>{window.__resolveLexicon=resolve;}),
+     disambiguate:(...args)=>{const result=original.disambiguate(...args);
+      revision++;if(revision>=2)window.__morphUpdated=true;return result;}
+    };
+    window.getSelection()?.removeAllRanges();
+    window.GnammaWordContext.openWord(t.quote,side,grid,side);
+    const dialog=document.querySelector('#gnamma-word-context'),card=dialog?.querySelector('.gnw-card');
+    const before=card?.querySelector('[data-gnw-close]'),body=card?.querySelector('.gnw-body');
+    if(!before||!body||typeof window.__resolveLexicon!=='function')throw Error('Delayed lexical test not established');
+    before.focus({preventScroll:true});
+    body.scrollTop=Math.min(100,Math.max(0,body.scrollHeight-body.clientHeight));
+    const oldTop=body.scrollTop;
+    window.__resolveLexicon();
+    const expiry=Date.now()+10000;
+    while(!window.__morphUpdated&&Date.now()<expiry)
+     await new Promise(resolve=>setTimeout(resolve,50));
+    if(!window.__morphUpdated)throw Error('Lexical response did not arrive');
+    await new Promise(resolve=>setTimeout(resolve,70));
+    const after=card.querySelector('[data-gnw-close]');
+    const report={sameHeaderButton:before===after,
+      originalButtonStillInDOM:before.isConnected,
+      focusedClose:document.activeElement===after,
+      oldTop,newTop:card.querySelector('.gnw-body')?.scrollTop};
+    window.GnammaMorphology=original;
+    window.GnammaWordContext.close();
+    return report;
+   },chosen);
+   assert(state.sameHeaderButton,'Async lexicon refresh removed original Close button');
+   assert(state.originalButtonStillInDOM,'Original focused Close button was disconnected');
+   assert(state.focusedClose,'Keyboard focus vanished after morphology update');
+   assert(Math.abs(state.newTop-state.oldTop)<=3,'Word Context scroll position was reset');
+   return state;
   });
   if(desktop){
    await check(id+'-right-click-without-selection',async()=>{
