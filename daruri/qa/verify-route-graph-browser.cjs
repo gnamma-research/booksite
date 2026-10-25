@@ -41,6 +41,24 @@ async function testBrowser(engine,name,origin,width){
    });
    assert.equal(data.state,route,'Navigation state mismatch on '+route);
    assert(data.textCharacters>40,'Empty '+route+' surface');
+   if(route==='home'){
+    const home=await page.evaluate(()=>{
+     const root=document.querySelector('#mainContent .gnamma-home');
+     const details=root?.querySelector('#homeEditorialSources');
+     const actions=root?.querySelectorAll('.home-actions>.action-btn');
+     const quiet=root?.querySelectorAll('.home-quiet-links [data-route]');
+     return {words:(root?.innerText?.trim().split(/\\s+/)||[]).length,
+       actions:actions?.length||0,quiet:quiet?.length||0,
+       details:!!details,detailsOpen:!!details?.open,
+       retainedProvenance:!!details?.innerText?.includes('al-ʿAlawī'),
+       sourceLabel:details?.querySelector('summary')?.textContent||''};
+    });
+    assert(home.words<105,'Home is too wordy; scholarly caveats should be collapsed: '+JSON.stringify(home));
+    assert.equal(home.actions,2,'Home should prioritize only Read/Resume and Contents');
+    assert.equal(home.quiet,2,'Downloads and Help should remain accessible but quiet');
+    assert(home.details&&!home.detailsOpen&&home.retainedProvenance&&home.sourceLabel.includes('AI-assisted'),
+      'Native scholarly source disclosure missing or already expanded');
+   }
    assert(data.scrollWidth<=data.viewportWidth+2,'Horizontal overflow on '+route+' '+JSON.stringify(data));
    results.push({route,chars:data.textCharacters,heading:data.heading});
   }
