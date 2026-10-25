@@ -102,7 +102,17 @@ self.addEventListener('install',event=>event.waitUntil(caches.open(NAME).then(as
     throw new Error('Required offline reader assets unavailable: '+missingRequired.join(', '));
   }
 """)
+    root_guard="""  if(!(await cache.match('./',{ignoreSearch:true}))&&!(await cache.match('index.html',{ignoreSearch:true})))
+    throw new Error('Cannot install offline reader without the reading page');"""
+    safe_guard="""  if(!(await cache.match('./',{ignoreSearch:true}))&&!(await cache.match('index.html',{ignoreSearch:true}))){
+    await caches.delete(NAME);
+    throw new Error('Cannot install offline reader without the reading page');
+  }"""
+    if updated.count(root_guard)!=1:
+        raise SystemExit("Unexpected SW root-page acceptance guard")
+    updated=updated.replace(root_guard,safe_guard)
     counts["requiredFunctionalAssets"]=len(required)
+    counts["rootFailureCleansPartialCache"]=True
     write("sw.js",updated,counts)
     # First prove the baseline really had old registration and at least one live
     # HTML entrypoint refs; otherwise this is an invalid release recipe.
