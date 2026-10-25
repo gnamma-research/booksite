@@ -1,0 +1,174 @@
+name: Daruri full integration audit gates (nonrelease)
+on:
+  push:
+    branches: [audit/daruri-reader-lifecycle-20261025]
+    paths:
+      - '.github/workflows/daruri-audit-full-integration-20261025.yml'
+      - 'daruri/personal-export.js'
+      - 'daruri/gnamma-word-context.js'
+      - 'daruri/qa/verify-reader-lifecycle-browser.cjs'
+      - 'daruri/qa/verify-route-graph-browser.cjs'
+      - 'daruri/qa/verify-copy-cross-section-browser.cjs'
+      - 'daruri/reading-desk.css'
+      - 'daruri/compact-menu.css'
+  workflow_dispatch:
+permissions: {contents: read}
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  core-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - run: npm install --no-save --prefix daruri/qa jsdom@26
+      - name: Primary-source integrity, navigation, personal safety and Q/H/N notes
+        run: |
+          node daruri/qa/verify-focus-modes.js
+          node daruri/qa/verify-reader-structure.js
+          node daruri/qa/verify-reading-desk-redesign.js
+          node daruri/qa/verify-reading-navigation-history.js
+          node daruri/qa/verify-compact-menus.js
+          node daruri/qa/verify-contents-structure.js
+          node daruri/qa/verify-copy-links.cjs
+          node daruri/qa/verify-reader-source-notes.js
+          node daruri/qa/verify-quran-context.js
+          node daruri/qa/verify-hadith-inline.cjs
+          node daruri/qa/verify-personal-export-safety.js
+  pdf-geometry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      # The full source->WeasyPrint map reproduction was completed successfully
+      # on the identical unchanged PDF/map inputs in Actions 40163186898.
+      # Avoid rerunning a nine-minute rebuild for UI-only changes.
+      - name: Check approved PDFs, strict map binding and exact note-phrase safety
+        run: |
+          node daruri/qa/verify-personal-pdf-upgrade.cjs
+          node daruri/qa/verify-personal-phrase-source-maps.cjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-personal-note-phrase-geometry
+          path: daruri/qa/personal-word-audit/report.json
+          retention-days: 14
+          if-no-files-found: warn
+  common-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Avoid unavailable unrelated apt source
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then sudo mv "$source" "$source.disabled"; fi
+          done
+      - run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Focus, Contents and section recovery using native viewport input
+        run: node daruri/qa/verify-focus-native-pointer-browser.cjs
+      - name: Word selection and benign Arabic taps
+        if: always()
+        run: node daruri/qa/verify-selection-context-browser.cjs
+      - name: Scroll-following Copy and Visuals
+        if: always()
+        run: node daruri/qa/verify-copy-visual-live-browser.cjs
+      - name: Real cross-section Copy scope and frozen selection
+        if: always()
+        run: node daruri/qa/verify-copy-cross-section-browser.cjs
+      - name: Privacy-safe lifecycle and scholarly modal focus
+        if: always()
+        run: node daruri/qa/verify-reader-lifecycle-browser.cjs
+      - name: Navigate all public routes and browser history at four widths
+        if: always()
+        run: node daruri/qa/verify-route-graph-browser.cjs
+      - name: Full scholarly Q/H/N and reading-return journey
+        if: always()
+        run: node daruri/qa/verify-scholarly-journey-browser.cjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-reader-browser-results
+          path: |
+            daruri/qa/focus-native-pointer-artifacts/
+            daruri/qa/copy-visual-artifacts/
+            daruri/qa/copy-cross-section-results/
+            daruri/qa/audit-lifecycle-results/
+            daruri/qa/route-audit-artifacts/
+          retention-days: 14
+          if-no-files-found: warn
+  editions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Avoid unavailable unrelated apt source
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then sudo mv "$source" "$source.disabled"; fi
+          done
+      - run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Publication configurations and saved-source/ZIP contract
+        run: |
+          node daruri/qa/verify-editions-configurator.js
+          node daruri/qa/verify-ready-editions.js
+          node daruri/qa/verify-published-selector.cjs
+          node daruri/qa/verify-editions-delivery.cjs
+      - name: Real browser Editions and Research archive delivery
+        if: always()
+        shell: bash
+        run: |
+          python3 -m http.server 8123 --bind 127.0.0.1 > /tmp/daruri-audit-http.log 2>&1 &
+          server=$!
+          trap 'kill $server || true' EXIT
+          for i in {1..40}; do
+            if curl --silent --fail http://127.0.0.1:8123/daruri/ > /dev/null; then break; fi
+            sleep 0.25
+          done
+          node daruri/qa/verify-published-selector-browser.mjs
+  accessibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Avoid unavailable unrelated apt source
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then sudo mv "$source" "$source.disabled"; fi
+          done
+      - run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1 @axe-core/playwright@4.10.2
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: All palette/mode combinations and missing font resiliency
+        run: node daruri/qa/verify-theme-accessibility-and-fonts.cjs
+      - name: Independent full reader audit
+        if: always()
+        run: node daruri/qa/verify-exhaustive-reader-audit.cjs
+      - name: Browser offline install/reload and no-JS passage
+        if: always()
+        run: node daruri/qa/verify-exhaustive-mode-offline.cjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-accessibility-and-offline
+          path: daruri/qa/audit-artifacts/
+          retention-days: 14
+          if-no-files-found: warn

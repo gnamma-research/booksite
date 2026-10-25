@@ -69,7 +69,15 @@ async function exercise(engine,name,base,w,mode){
   });
   const home=page.locator('#leftNav [data-route="home"]');
   if(mode>0){
-   await page.locator('#menuBtn').click();
+   // A locator click can auto-scroll the fixed toolbar first. In WebKit
+   // Continuous, that artificial scroll updates the active section BEFORE
+   // pointerdown and invalidates the original reading locus. Use the actual
+   // visible center point to exercise the real Contents touch action.
+   const hit=await page.locator('#menuBtn').boundingBox();
+   if(!hit)throw Error('Contents launcher has no visible rectangle');
+   const cx=hit.x+hit.width/2,cy=hit.y+hit.height/2;
+   if(w<=768)await page.touchscreen.tap(cx,cy);
+   else await page.mouse.click(cx,cy);
    if(mode===3)console.log('EXIT TRACE '+id+' '+JSON.stringify(await page.evaluate(()=>({
      sequence:window.__continuousExitTrace,after:{y:scrollY,hash:location.hash,n:window.GnammaCopyContext?.state?.n,dock:document.getElementById('dockSection')?.textContent?.trim(),mode:document.body.className}
    }))));

@@ -587,7 +587,13 @@ body.gn-rd-print #gn-rd-print-root{box-sizing:border-box}
  .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-main-action,
  .gn-rd-page .gn-rd-manage-menu>summary{padding:8px 6px;font-size:.73rem}
  .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-main-action svg{width:15px;height:15px}
- .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-toolbar-main{gap:3px}
+ /* On 320px WebKit the third action projected 6px beyond the viewport.
+    Wrap controls rather than clipping and keep the menu's panel onscreen. */
+ .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-toolbar-main{
+  gap:5px;flex-wrap:wrap;width:100%;max-width:100%
+ }
+ .gn-rd-page .gn-rd-manage-menu{max-width:100%}
+ .gn-rd-page .gn-rd-manage-items{left:0;right:auto;max-width:calc(100vw - 32px)}
  .gn-rd-page .gn-rd-tabs{gap:8px}
  #gn-rd-print-root .gn-rd-print-fields{grid-template-columns:1fr}
 }
