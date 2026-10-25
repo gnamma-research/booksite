@@ -380,7 +380,7 @@ function create(ctx){
   if(!row)return null;
   records.unshift(row);
   if(!persist()){records.shift();return null;}
-  ctx.notify(kind==='note'?'Personal note added to Reading Desk.':kind==='quote'?'Highlighted in Reading Desk.':'Bookmarked in Reading Desk.');
+  ctx.notify(kind==='note'?'Personal note added to Reading Desk.':kind==='quote'?(showPersonalMarks()?'Highlight saved and shown in the reader.':'Highlight saved; enable “Show private Reading Desk marks” in Settings to display it.'):'Bookmarked in Reading Desk.');
   if(state.route==='bookmarks')render();
   if(state.route==='reader')refreshReaderAfterBookmark(target);
   return row;
@@ -786,7 +786,7 @@ function create(ctx){
   bar.innerHTML=rdTool('Highlight selected words','data-rd="selection-bookmark"','highlight')+
    rdTool('Add a personal note for selected words','data-rd="selection-note"','note')+
    (next.lang==='ar' && /^[\p{L}\p{M}]+$/u.test(next.quote) && /[\u0621-\u064a]/u.test(next.quote) ?
-    rdTool('Word Context for selected word','data-rd="selection-word-context"','book') : '')+
+    rdTool('Word Context for selected word','data-rd="selection-word-context"','book',false,false,'Word Context') : '')+
    rdTool('Dismiss selection actions','data-rd="selection-dismiss"','close');
  }
  function hideSelection(){const bar=$('#gn-rd-selection-bar');if(bar)bar.hidden=true;}
@@ -911,7 +911,7 @@ function create(ctx){
   section.className='gn-rd-visuals-row';
   section.innerHTML='<label><input type="checkbox" id="gn-rd-visuals-toggle"'+(showPersonalMarks()?' checked':'')+
    '> Show private Reading Desk marks beside the text</label>'+
-   '<small>Editorial notes are controlled separately. Focus reading hides these marks.</small>';
+   '<small>Private highlights are independent of editorial notes and remain visible in Focus reading.</small>';
   panel.append(section);
  }
  function sectionToolbar(n,items){
@@ -1006,26 +1006,66 @@ function create(ctx){
   const range=document.createRange();try{range.setStart(start.node,start.offset);range.setEnd(end.node,end.offset);}catch(_){return null;}
   return range;
  }
+
+ /* CSS Highlights works without changing passage markup in current browsers.
+    Older Safari/WebKit releases lack it; mark the resolved text ranges inline
+    instead so saved highlights never disappear just because the API is absent.
+    Only text nodes are wrapped, preserving glossary/note anchor semantics. */
+ function clearInlineMarks(){
+  const marks=$('#reader')?.querySelectorAll('mark.gn-rd-saved-highlight')||[];
+  if(!marks.length)return;
+  const parents=new Set();
+  marks.forEach(mark=>{
+   const parent=mark.parentNode;
+   if(!parent)return;
+   mark.replaceWith(...mark.childNodes);
+   parents.add(parent);
+  });
+  parents.forEach(parent=>parent.normalize());
+ }
+ function paintInlineRange(range){
+  const common=range.commonAncestorContainer;
+  const nodes=[];
+  if(common.nodeType===Node.TEXT_NODE)nodes.push(common);
+  else {
+   const walker=document.createTreeWalker(common,NodeFilter.SHOW_TEXT);
+   while(walker.nextNode())nodes.push(walker.currentNode);
+  }
+  for(const node of nodes){
+   if(!node.isConnected||!range.intersectsNode(node))continue;
+   const a=node===range.startContainer?range.startOffset:0;
+   const b=node===range.endContainer?range.endOffset:node.length;
+   if(b<=a)continue;
+   const part=document.createRange(),mark=document.createElement('mark');
+   mark.className='gn-rd-saved-highlight';
+   part.setStart(node,a);part.setEnd(node,b);
+   try{part.surroundContents(mark);}catch(_){/* Never alter an unsupported range. */}
+  }
+ }
  function markReader(){
-  if(!window.CSS?.highlights||typeof Highlight==='undefined')return;
-  ['gn-rd-bookmark','gn-rd-note','gn-rd-target'].forEach(k=>CSS.highlights.delete(k));
-  if(state.focusMode||state.focusLevel===3||!showPersonalMarks())return;
+  const supportsCSS=!!window.CSS?.highlights&&typeof Highlight!=='undefined';
+  if(supportsCSS)['gn-rd-bookmark','gn-rd-note','gn-rd-target'].forEach(k=>CSS.highlights.delete(k));
+  clearInlineMarks();
+  if(!showPersonalMarks())return;
   const marks=[],annotations=[];
   for(const item of active()){
    const t=item.target;
    if(!isResolved(item)||t?.kind!=='quote'||!t.section)continue;
-   // In continuous mode, state.n identifies one active section but many others
-   // are visible: find each item's actual containing section.
+   // In continuous mode, locate each highlight's own passage, not just state.n.
    const root=$('#gn-continuous-'+CSS.escape(String(t.section)))||
     document.querySelector('#reader [data-reading-section="'+CSS.escape(String(t.section))+'"]')||
     (String(t.section)===String(state.n)?$('#reader'):null);
    const side=root?.querySelector('.passage-grid[data-segment="'+t.segment+'"] .passage-'+(t.lang==='ar'?'ar':'en'));
    if(!side)continue;
    const range=findRange(side,t);
-   if(range)(item.kind==='note'?annotations:marks).push(range);
+   if(!range)continue;
+   if(supportsCSS)(item.kind==='note'?annotations:marks).push(range);
+   else paintInlineRange(range);
   }
-  if(marks.length)CSS.highlights.set('gn-rd-bookmark',new Highlight(...marks));
-  if(annotations.length)CSS.highlights.set('gn-rd-note',new Highlight(...annotations));
+  if(supportsCSS){
+   if(marks.length)CSS.highlights.set('gn-rd-bookmark',new Highlight(...marks));
+   if(annotations.length)CSS.highlights.set('gn-rd-note',new Highlight(...annotations));
+  }
  }
  function followSharedSourceLink(){
   if(state.route!=='reader')return;
