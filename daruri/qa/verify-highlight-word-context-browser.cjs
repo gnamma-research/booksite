@@ -173,7 +173,8 @@ async function exercise(engine,{mobile=false}={}){
     });
     const action=page.locator('#gn-rd-selection-bar [data-rd="selection-word-context"]');
     await action.waitFor({state:'visible',timeout:18000});
-    assert.match(await action.innerText(),/Word Context/,tag+' Focus: missing context action for an Arabic phrase');
+    assert.equal(await action.getAttribute('aria-label'),'Word Context for Arabic selection',
+     tag+' Focus: icon-only Word Context action must remain accessible for Arabic phrases');
     await action.click();
     await page.locator('#gnamma-word-context:not([hidden])').waitFor({state:'visible',timeout:12000});
     await page.keyboard.press('Escape');
