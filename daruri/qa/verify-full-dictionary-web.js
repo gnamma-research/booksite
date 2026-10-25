@@ -80,9 +80,11 @@ assert(hmatch,'Dictionary entries missing');
 const inline=JSON.parse(hmatch[1]);
 assert.equal(inline.length,155,'The existing 155 web entries must be preserved');
 assert.equal(inline.find(t=>t.term==='ṣināʿa').definition,sin.definition);
-assert(html.includes('full-dictionary-context.js?v=20261025-dossier4'));
 const readerBootstrap=read('quran-context-ui.js');
-assert(readerBootstrap.includes('full-dictionary-context.js?v=20261025-dossier4'));
+const htmlAsset=html.match(/full-dictionary-context\.js\?v=([\w-]+)/)?.[1];
+const bootstrapAsset=readerBootstrap.match(/full-dictionary-context\.js\?v=([\w-]+)/)?.[1];
+assert(htmlAsset && bootstrapAsset,'Reader and standalone dictionary must reference a versioned full dictionary script');
+assert.equal(htmlAsset,bootstrapAsset,'Standalone dictionary and reader must use the same full dictionary script version');
 const ui=read('full-dictionary-context.js');
 for(const phrase of ['#mainContent .glossary-card','#lexArticle .lex-card','detailContent','gn-fd-parallel','source_references','Hide complete historical article'])
   assert(ui.includes(phrase),phrase);
