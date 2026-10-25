@@ -1,0 +1,46 @@
+name: Daruri full CURRENT-source Vivliostyle Viewer CSS pagination (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths: ['.github/workflows/daruri-vivliostyle-viewer-full-current-qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  vivliostyle_reference_page_renderer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 38
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Current canonical complete 625-note Scholarly HTML
+        run: |
+          python -m pip install -q beautifulsoup4
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+            daruri/qa/stage2_shootout/runtime_ultimate scholarly
+      - name: Install real self-hosted Vivliostyle Viewer engine and Playwright
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+          mkdir -p runtime_ultimate/viewer
+          cp -a node_modules/@vivliostyle/viewer/lib/. runtime_ultimate/viewer/
+      - name: Test complete current scholarly pagination in the actual browser
+        env:
+          BENCH_ENGINE: vivliostyle
+          BENCH_EDITION: scholarly
+          BENCH_BROWSER: chromium
+          BENCH_OUT: /tmp/gnamma-vivliostyle-full-viewer-current
+        run: |
+          node --check daruri/qa/stage2_shootout/ultimate_browser.cjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/ultimate_browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-vivliostyle-viewer-full-current-625-notes-NONRELEASE
+          path: /tmp/gnamma-vivliostyle-full-viewer-current
+          if-no-files-found: warn
+          retention-days: 14
