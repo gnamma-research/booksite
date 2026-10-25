@@ -9,7 +9,6 @@
    help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.6 2.6 0 1 1 4.1 2.1c-1.1.7-1.6 1.1-1.6 2.4"/><circle cx="12" cy="17" r=".75" fill="currentColor" stroke="none"/>',
    book:'<path d="M12 5.5C8 3.5 5 4.2 3 5.5v13c2.5-1.3 6-1.6 9 .3 3-1.9 6.5-1.6 9-.3v-13c-2-1.3-5-2-9 0ZM12 5.5v13.3"/>',
    home:'<path d="m3.5 10.5 8.5-7 8.5 7V20H4v-9.5M9 20v-6h6v6"/>',
-   read:'<path d="M4 12h14m-6-6 6 6-6 6"/>'
   };
   return '<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths[shape]+'</svg>';
  }
@@ -43,7 +42,7 @@
   var read=document.createElement('button');
   read.type='button';read.id='gnTopRead';read.className='gn-top-read';
   read.dataset.route='reader';read.setAttribute('aria-label','Read or resume the book');
-  read.title='Read or resume';read.innerHTML=icon('read')+'<span>Read</span>';
+  read.title='Read or resume';read.innerHTML=icon('book')+'<span>Read</span>';
   leading.appendChild(read);
   const syncTopDestinations=function(){
     const homeRoute=(location.hash||'#home').slice(1)==='home';
