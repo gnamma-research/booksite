@@ -411,3 +411,20 @@ body.focus-mode #mainContent .gn-note-en-section-list {
 @media print{
  #readerDock .gn-dock-private-status,.gn-dock-saved-sheet{display:none!important}
 }
+
+/* A quiet escape route inside the existing reading-mode chooser. */
+.gn-reading-mode-picker .gn-mode-destinations {
+ border-top:1px solid var(--border,var(--line));
+ padding:7px 5px 2px;
+}
+.gn-reading-mode-picker #gn-mode-go-home {
+ display:flex;align-items:center;justify-content:center;width:100%;
+ min-height:42px;padding:8px 12px;border:0;border-radius:8px;
+ background:transparent;color:var(--text-soft,var(--text));
+ font:600 13px/1.3 var(--sans,system-ui);cursor:pointer;
+}
+.gn-reading-mode-picker #gn-mode-go-home:hover,
+.gn-reading-mode-picker #gn-mode-go-home:focus-visible {
+ background:var(--accent-soft);color:var(--accent);
+ outline:2px solid var(--accent);outline-offset:-2px;
+}
