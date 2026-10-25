@@ -241,6 +241,34 @@ function wordMarkup(ctx){
   '<div class="gnw-body">'+provenance+analysisSection+dictionary+editorial+own+fullActions+
   '<p class="gnw-footnote">A dictionary term, source note, personal annotation and search match are independent layers. Nothing is changed or saved by opening this panel.</p></div>';
 }
+// Lexical reanalysis must not destroy the focused dialog header or scroll.
+function refreshLoadedAnalysis(ctx){
+ const card=$('.gnw-card',shade),body=card&&$('.gnw-body',card);
+ if(!body)return;
+ const temp=document.createElement('div');temp.innerHTML=wordMarkup(ctx);
+ const fresh=$('.gnw-body',temp);if(!fresh)return;
+ const oldTop=body.scrollTop,oldLeft=body.scrollLeft;
+ const opened=new Set([...body.querySelectorAll('details[open]')]
+  .map(d=>d.querySelector('summary')?.textContent?.trim()).filter(Boolean));
+ const focusBefore=document.activeElement,hadFocus=body.contains(focusBefore);
+ const focusAttrs=['data-gnw-search','data-gnw-value','data-gnw-note','data-gnw-term','data-gnw-desk'];
+ const key=hadFocus?{tag:focusBefore.tagName,text:focusBefore.textContent?.trim()||'',
+  values:focusAttrs.map(a=>focusBefore.getAttribute(a))}:null;
+ rendering=true;
+ try{
+  body.innerHTML=fresh.innerHTML;
+  for(const d of body.querySelectorAll('details')){
+   if(opened.has(d.querySelector('summary')?.textContent?.trim()))d.open=true;
+  }
+  if(key){
+   const restored=[...body.querySelectorAll('button,summary')].find(el=>
+    el.tagName===key.tag&&el.textContent?.trim()===key.text&&
+    focusAttrs.every((a,i)=>el.getAttribute(a)===key.values[i]));
+   (restored||$('.gnw-header [data-gnw-close]',card))?.focus({preventScroll:true});
+  }
+  body.scrollTop=oldTop;body.scrollLeft=oldLeft;
+ }finally{rendering=false;}
+}
 async function openWord(word,anchor,grid,trigger=null,point=null){
  if(!AR.test(word)||!BOOK)return;
  const section=String(grid?.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator()),segment=Number(grid?.dataset.segment||0);
@@ -277,8 +305,7 @@ async function openWord(word,anchor,grid,trigger=null,point=null){
    ctx.analysis=engine.disambiguate(word,occurrence.neighbours,'daruri',
      section?'passage:'+section+':'+segment:null,occurrence.position);
    ctx.terms=getInPageDictionary(word,ctx.analysis);
-   const card=$('.gnw-card',shade);
-   if(card)card.innerHTML=wordMarkup(ctx);
+   refreshLoadedAnalysis(ctx);
  }).catch(()=>{});
 }
 function close(){
