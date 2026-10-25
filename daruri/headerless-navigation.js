@@ -29,6 +29,40 @@
    menu.classList.add('gn-top-tile');
    menu.setAttribute('aria-label','Open or close Contents');
    menu.title='Contents';
+   // Contents is also the way out of a persisted Focus/Continuous state.
+   // The existing delegated menu handler must run AFTER we switch to Reading:
+   // otherwise the native Focus state immediately conceals the open drawer.
+   menu.addEventListener('click',function(){
+    if(!document.body.classList.contains('reading-active')||
+       !document.body.classList.contains('focus-mode'))return;
+    var modes=window.GnammaReaderModes;
+    if(!modes||typeof modes.setMode!=='function')return;
+    var wasContinuous=document.body.classList.contains('focus-level-3');
+    var readerState=window.GnammaCopyContext?.state;
+    var section=String(document.getElementById('dockSection')?.textContent?.match(/\d+/)?.[0]||readerState?.n||'');
+    var segment=null, originalTop=0;
+    if(wasContinuous&&section){
+     var part=document.getElementById('gn-continuous-'+section);
+     if(part){
+      var threshold=Math.max(110,Math.min(220,window.innerHeight*.3));
+      var passage=[...part.querySelectorAll('.passage-grid')]
+       .find(el=>el.getBoundingClientRect().bottom>=threshold)||part.querySelector('.passage-grid');
+      if(passage){
+       segment=passage.dataset.segment;
+       originalTop=passage.getBoundingClientRect().top;
+      }
+     }
+    }
+    // No pre-transition scroll: it changes Continuous's active section.
+    modes.setMode('reading');
+    if(wasContinuous&&segment!=null){
+     var equivalent=document.querySelector('#reader .passage-grid[data-segment="'+segment+'"]');
+     if(equivalent)window.scrollBy({top:equivalent.getBoundingClientRect().top-originalTop,behavior:'instant'});
+    }
+    // In Focus an already-open desktop pane is invisible. Make the same click
+    // OPEN Contents rather than close its stale leftVisible preference.
+    if(readerState)readerState.leftVisible=false;
+   },true);
   }
 
   // Home and Read are separate destinations, never loose text next to an icon.
