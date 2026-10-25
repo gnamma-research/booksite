@@ -16,7 +16,12 @@ function authorID(name){
   if(n.includes(word))return id;
  return null;
 }
-function json(id){try{return JSON.parse(document.getElementById(id)?.textContent||'null')}catch(_){return null}}
+const parsedSourceData=new Map();
+function json(id){
+ if(parsedSourceData.has(id))return parsedSourceData.get(id);
+ try{const data=JSON.parse(document.getElementById(id)?.textContent||'null');parsedSourceData.set(id,data);return data}
+ catch(_){return null}
+}
 function excerpts(term){
  const d=json('dictionaryData');
  if(d?.terms?.[term])return(d.terms[term].sources||[]).map(id=>d.sources?.[id]).filter(Boolean);
