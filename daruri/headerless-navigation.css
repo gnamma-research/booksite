@@ -611,3 +611,20 @@
 @media print {
  #gnReaderEscape,#gnReaderMobileHome {display:none!important;}
 }
+
+/* 25 Oct 2026: the obsolete apparatus/book button was resurfacing on phones.
+   Old high-specificity layout rules override its generic hidden attribute.
+   This is NOT the reading-mode trigger: #focusToolbar is, and has the
+   four-corner symbol. Never display the obsolete book next to AR/EN. */
+@media screen {
+ body.reader-enhanced #readingControls .reader-display-controls,
+ body.reader-enhanced #readingControls .reader-display-controls[hidden],
+ body.reader-enhanced #readingControls #apparatusToolbar,
+ body.reader-enhanced #readingControls #apparatusToolbar[hidden] {
+   display:none!important;
+ }
+ body.reader-enhanced.reading-active:not(.focus-mode) #readingControls #focusToolbar:not([hidden]) {
+   display:inline-flex!important;
+   visibility:visible!important;
+ }
+}
