@@ -101,6 +101,12 @@ def case(browser, engine, width, url):
     assert_no_floating_home(page)
     open_contents_from_focus(page, width, 'Focus')
 
+    # Contents owns the screen while open. A real user closes its shade
+    # before using the Reading-mode chooser; don't force-click through it.
+    page.locator('#drawerShade').click()
+    page.wait_for_function(
+        "document.querySelector('#menuBtn').getAttribute('aria-expanded')==='false'",
+        timeout=10000)
     # Home remains one deliberate step away in the reading-mode chooser.
     page.locator('#focusToolbar').click()
     page.locator('#gn-reading-mode-picker').wait_for(state='visible')
