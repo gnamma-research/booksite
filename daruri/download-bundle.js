@@ -106,7 +106,7 @@
       ['daruri/focus-locators.js','focus-locators.js?v=20261025-focus-locators-wordcontext3'],
       ['daruri/focus-locators.css','focus-locators.css?v=20261025-focus-locators-wordcontext3'],
       ['daruri/headerless-navigation.css','headerless-navigation.css?v=20261025-no-obsolete-book3'],
-      ['daruri/headerless-navigation.js','headerless-navigation.js?v=20261025-navigation-home2'],
+      ['daruri/headerless-navigation.js','headerless-navigation.js?v=20261025-focus-actual-icon3'],
       ['daruri/dock-ios-compact.css','dock-ios-compact.css?v=20261023-ux-dock1'],
       ['daruri/bookmark-ui.js', 'bookmark-ui.js?v=20261023-personal-icons'],
       ['daruri/bookmark-ui.css', 'bookmark-ui.css?v=20261023-personal-icons'],
