@@ -1,0 +1,35 @@
+name: Daruri current exact full Scholarly source HTML for paragraph-level Arabic QA (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths: ['.github/workflows/daruri-current-source-html-audit-snapshot.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pin_scholarly_html:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Rebuild exact source-only current Scholarly HTML and scholarly notes
+        run: |
+          python -m pip install -q beautifulsoup4
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py /tmp/gnamma-source-audit scholarly
+          python - <<'PY'
+          import hashlib,json,pathlib
+          p=pathlib.Path('/tmp/gnamma-source-audit')
+          h=(p/'scholarly.html').read_bytes()
+          j=json.loads((p/'scholarly.source.json').read_text())
+          assert hashlib.sha256(h).hexdigest()=='ca9457059d79674ded74c8f7dfda278d0154efdd157374dd9f8740f73fd35aba'
+          assert j['total_original_notes']==625
+          print('GNAMMA_CURRENT_SCHOLARLY_HTML_2060089_SHA',hashlib.sha256(h).hexdigest())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daruri-current-Scholarly-source-html-for-Arabic-geometry-collation-NONRELEASE
+          path: /tmp/gnamma-source-audit
+          retention-days: 14
+          if-no-files-found: error

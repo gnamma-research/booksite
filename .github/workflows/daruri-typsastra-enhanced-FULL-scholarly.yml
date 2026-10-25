@@ -1,0 +1,73 @@
+name: Daruri complete 625-note Scholarly Typst via enhanced Unicode Krilla v0.4.1 (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths:
+      - '.github/workflows/daruri-typsastra-enhanced-FULL-scholarly.yml'
+      - 'daruri/qa/browser_engine_shootout_20261025/export_full_typst_source.mjs'
+      - 'daruri/qa/browser_engine_shootout_20261025/enhanced_full_pdf_qa.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: gnamma-full-enhanced-krilla-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  entire_approved_source_enhanced_render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 42
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Build EXACT current canonical full HTML with 625 notes and 157 historical articles
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py /tmp/gnamma-enhanced-full-html scholarly
+      - name: Convert canonical HTML into exactly same full Typst source as old client WASM
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          node --check daruri/qa/browser_engine_shootout_20261025/export_full_typst_source.mjs
+          mkdir -p /tmp/gnamma-enhanced-full
+          node daruri/qa/browser_engine_shootout_20261025/export_full_typst_source.mjs \
+            /tmp/gnamma-enhanced-full-html/scholarly.html \
+            /tmp/gnamma-enhanced-full-html/scholarly.source.json \
+            /tmp/gnamma-enhanced-full/full-current-scholarly.typ
+      - name: Fetch exact checksummed patched open-source Typst 0.15.1 PDF engine
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/typsastra-engine
+          curl -LfsS --retry 3 --connect-timeout 20 --max-time 210 \
+            -o /tmp/typsastra-engine/engine.zip \
+            https://github.com/Sovichea/typsastra/releases/download/enhanced-unicode-v0.4.1/typsastra-enhanced-unicode-v0.4.1-x86_64-unknown-linux-gnu.zip
+          echo '3a6859ec1ab3af153b231fb5d99db66585eede76211b95d5bd4705ad2036f539  /tmp/typsastra-engine/engine.zip' | sha256sum --check
+          unzip -q /tmp/typsastra-engine/engine.zip -d /tmp/typsastra-engine
+          exe=$(find /tmp/typsastra-engine -type f -name typst | head -1)
+          test -n "$exe"
+          chmod +x "$exe"
+          echo "GNAMMA_ENHANCED_ENGINE=$exe" >> "$GITHUB_ENV"
+          "$exe" --version
+      - name: Compile complete original Scholarly book using enhanced Unicode exporter
+        run: |
+          /usr/bin/time -v "$GNAMMA_ENHANCED_ENGINE" compile \
+            /tmp/gnamma-enhanced-full/full-current-scholarly.typ \
+            /tmp/gnamma-enhanced-full/daruri-full-scholarship-enhanced-unicode-NONRELEASE.pdf \
+            --font-path daruri/build/fonts
+      - name: Native independent PDF extraction, bookmarks, all bilingual text and qpdf validity
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qpdf poppler-utils
+          pdf=/tmp/gnamma-enhanced-full/daruri-full-scholarship-enhanced-unicode-NONRELEASE.pdf
+          qpdf --check "$pdf"
+          python daruri/qa/browser_engine_shootout_20261025/enhanced_full_pdf_qa.py \
+            /tmp/gnamma-enhanced-full-html/scholarly.html \
+            "$pdf" /tmp/gnamma-enhanced-full/enhanced-full-scholarship-qa.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-full-625notes-153terms-157articles-enhanced-Krilla-NATIVE-NONRELEASE
+          path: /tmp/gnamma-enhanced-full
+          if-no-files-found: warn
+          retention-days: 14

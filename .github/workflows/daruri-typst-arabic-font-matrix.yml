@@ -1,0 +1,66 @@
+name: Daruri Typst WASM Arabic PDF copy with Naskh, Sans Arabic, DejaVu fonts (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths: ['.github/workflows/daruri-typst-arabic-font-matrix.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  font_unicode_copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install isolated newer Typst and MIT/OFL Arabic fonts for comparison
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout/qa_typst015 --no-package-lock --no-audit --no-fund
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          python -m pip install -q PyMuPDF==1.26.7
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qpdf poppler-utils
+      - name: Compile six independent Arabic short-text PDFs using WASM
+        env:
+          QA_OUT: /tmp/gnamma-typst-fontmatrix
+        run: node daruri/qa/stage2_shootout/qa_typst015/arabic_font_matrix.mjs
+      - name: Extract and compare Arabic characters from Naskh and alternative fonts
+        run: |
+          python - <<'PY'
+          import fitz,pathlib,json,subprocess,unicodedata
+          p=pathlib.Path('/tmp/gnamma-typst-fontmatrix')
+          cases=json.loads((p/'source-cases.json').read_text())
+          def bases(s):
+            return ''.join(c for c in unicodedata.normalize('NFKC',s)
+                 if 0x621<=ord(c)<=0x64A and unicodedata.category(c).startswith('L'))
+          out={}
+          for case in cases:
+            pdf=p/case['output_pdf']
+            with fitz.open(pdf) as d:
+              extracted=''.join(page.get_text() for page in d)
+              links=sum(len(page.get_links()) for page in d)
+            native=subprocess.run(['qpdf','--check',str(pdf)],capture_output=True,text=True)
+            pop=subprocess.run(['pdftotext','-raw',str(pdf),'-'],capture_output=True,text=True,encoding='utf8',errors='replace')
+            expected=bases(case['expected_arabic'])
+            out[case['name']]={
+              'font':case['font'],'expected_base_letters':len(expected),
+              'mupdf_base_letters':len(bases(extracted)),
+              'poppler_base_letters':len(bases(pop.stdout)),
+              'mupdf_exact':expected in bases(extracted),
+              'poppler_exact':expected in bases(pop.stdout),
+              'mupdf_copied_snippet':extracted[:180],
+              'qpdf_valid':native.returncode==0,'link_count':links}
+          (p/'arabic-font-qa.json').write_text(json.dumps(out,indent=2,ensure_ascii=False))
+          print('GNAMMA_TYPST_FONT_UNICODE_QA',json.dumps(out,ensure_ascii=False))
+          assert all(x['qpdf_valid'] for x in out.values())
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-typst-Arabic-Naskh-Sans-DejaVu-UTF16-NONRELEASE
+          path: /tmp/gnamma-typst-fontmatrix
+          retention-days: 14
+          if-no-files-found: warn

@@ -1,0 +1,85 @@
+name: Daruri Typsastra enhanced Krilla Unicode Arabic copy test, v0.4.1 (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths: ['.github/workflows/daruri-typsastra-enhanced-arabic-pdf-qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  real_gnamma_arabic_unicode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install independent PDF validators (not the engine)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qpdf poppler-utils unzip curl
+          python -m pip install -q PyMuPDF==1.26.7
+      - name: Download published enhanced Krilla Typst 0.15.1 standalone binary and verify exact SHA-256
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/typsastra-engine /tmp/gnamma-typsastra-qa
+          curl -LfsS --retry 3 --connect-timeout 20 --max-time 210 \
+            -o /tmp/typsastra-engine/engine.zip \
+            https://github.com/Sovichea/typsastra/releases/download/enhanced-unicode-v0.4.1/typsastra-enhanced-unicode-v0.4.1-x86_64-unknown-linux-gnu.zip
+          echo '3a6859ec1ab3af153b231fb5d99db66585eede76211b95d5bd4705ad2036f539  /tmp/typsastra-engine/engine.zip' | sha256sum --check
+          unzip -q /tmp/typsastra-engine/engine.zip -d /tmp/typsastra-engine
+          find /tmp/typsastra-engine -maxdepth 3 -type f -printf '%p %s bytes\n' | head -15
+          exe=$(find /tmp/typsastra-engine -type f -name typst | head -1)
+          if [ -z "$exe" ]; then echo '::error::Enhanced engine typst binary missing'; exit 1; fi
+          chmod +x "$exe"
+          echo "GNAMMA_ENHANCED_ENGINE=$exe" >> "$GITHUB_ENV"
+          "$exe" --version
+      - name: Produce only actual Gnamma real Arabic/English micro-PDFs
+        run: |
+          set -euo pipefail
+          python daruri/qa/browser_engine_shootout_20261025/typsastra_unicode_fixtures.py /tmp/gnamma-typsastra-qa
+          for filename in /tmp/gnamma-typsastra-qa/*.typ; do
+            "$GNAMMA_ENHANCED_ENGINE" compile "$filename" "${filename%.typ}.pdf" \
+              --font-path daruri/build/fonts --ignore-system-fonts
+          done
+          ls -lh /tmp/gnamma-typsastra-qa/*.pdf
+      - name: Compare full visual-source Arabic letters in Poppler and MuPDF
+        run: |
+          python - <<'PY'
+          import fitz,subprocess,json,unicodedata,pathlib
+          p=pathlib.Path('/tmp/gnamma-typsastra-qa')
+          cases=json.loads((p/'source-cases.json').read_text())
+          fitz.TOOLS.mupdf_display_errors(False)
+          def bases(s):
+              return ''.join(c for c in unicodedata.normalize('NFKC',s)
+                             if 0x621<=ord(c)<=0x64A and unicodedata.category(c).startswith('L'))
+          results={}
+          for case in cases:
+              file=p/case['output']
+              with fitz.open(file) as d:
+                  text='\n'.join(pg.get_text() for pg in d)
+                  links=sum(len(pg.get_links()) for pg in d)
+                  n=len(d)
+              pop=subprocess.run(['pdftotext','-raw',str(file),'-'],capture_output=True,text=True,encoding='utf8',errors='replace')
+              q=subprocess.run(['qpdf','--check',str(file)],capture_output=True,text=True)
+              exp=bases(case['arabic_expected'])
+              mu=bases(text);po=bases(pop.stdout)
+              results[case['id']]={'expected_arabic_base_letters':len(exp),
+                'mupdf_copied_base_letters':len(mu),
+                'poppler_copied_base_letters':len(po),
+                'mupdf_exact_unrepeated_logical_sequence':exp in mu,
+                'poppler_exact_unrepeated_logical_sequence':exp in po,
+                'mupdf_text_head':text[:230],'links':links,'pages':n,
+                'valid_qpdf':q.returncode==0}
+          (p/'enhanced-unicode-qa.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
+          print('GNAMMA_TYPST_ENHANCED_041_ARABIC_QA',json.dumps(results,ensure_ascii=False))
+          assert all(a['valid_qpdf'] for a in results.values()),'Malformed enhanced-engine PDFs'
+          assert all(a['mupdf_exact_unrepeated_logical_sequence'] for a in results.values()), 'Enhanced PDF still corrupts Arabic logical text'
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-typsastra-041-enhanced-Krilla-Gnamma-Arabic-QA-NONRELEASE
+          path: /tmp/gnamma-typsastra-qa
+          retention-days: 14
+          if-no-files-found: warn

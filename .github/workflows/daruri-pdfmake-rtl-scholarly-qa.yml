@@ -1,0 +1,67 @@
+name: Daruri pdfmake RTL real-source Scholarly Arabic text/links benchmark (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths:
+      - '.github/workflows/daruri-pdfmake-rtl-scholarly-qa.yml'
+      - 'daruri/qa/browser_engine_shootout_20261025/pdfmake_rtl/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  document_model_micro:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install pdfmake-RTL and independent readers
+        run: |
+          npm install --prefix daruri/qa/browser_engine_shootout_20261025/pdfmake_rtl --no-package-lock --no-audit --no-fund
+          python -m pip install -q PyMuPDF==1.26.7
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qpdf poppler-utils
+      - name: Generate actual scholarly Arabic and dictionary PDF with pdfmake-RTL
+        env:
+          QA_OUT: /tmp/gnamma-pdfmake-rtl
+        run: |
+          node --check daruri/qa/browser_engine_shootout_20261025/pdfmake_rtl/scholarly_micro.cjs
+          node daruri/qa/browser_engine_shootout_20261025/pdfmake_rtl/scholarly_micro.cjs
+      - name: Audit text extraction, internal references, footnote and Arabic correctness
+        run: |
+          pdf=/tmp/gnamma-pdfmake-rtl/daruri-pdfmake-rtl-scholarship.pdf
+          qpdf --check "$pdf"
+          pdftotext -layout "$pdf" /tmp/gnamma-pdfmake-rtl/poppler.txt
+          python - <<'PY'
+          import fitz,json,pathlib,unicodedata,collections
+          p=pathlib.Path('/tmp/gnamma-pdfmake-rtl')
+          s=json.loads((p/'report.json').read_text())
+          with fitz.open(p/'daruri-pdfmake-rtl-scholarship.pdf') as d:
+             text=' '.join(page.get_text() for page in d)
+             link=collections.Counter(x['kind'] for page in d for x in page.get_links())
+             toc=len(d.get_toc())
+             pages=len(d)
+          def ar(t):
+             return ''.join(x for x in unicodedata.normalize('NFKC',t)
+                            if 0x621<=ord(x)<=0x64A and unicodedata.category(x).startswith('L'))
+          expected=ar(s['source_title'])
+          outcome={'pages':pages,'outline_entries':toc,'links_by_kind':dict(link),
+             'title_base_letters':len(expected),'title_exact_arabic':expected in ar(text),
+             'definition_base_letters':len(ar(s['source_definition'])),
+             'definition_exact_arabic':ar(s['source_definition']) in ar(text),
+             'english_exact':s['english_definition'] in text,
+             'source_text_start':text[:420]}
+          (p/'native-text-link-qa.json').write_text(json.dumps(outcome,ensure_ascii=False,indent=2))
+          print('GNAMMA_PDFMAKE_RTL_ARABIC_VALIDATION',json.dumps(outcome,ensure_ascii=False))
+          assert pages>=1 and outcome['english_exact']
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-pdfmake-rtl-real-source-scholarly-micro-NONRELEASE
+          path: /tmp/gnamma-pdfmake-rtl
+          if-no-files-found: warn
+          retention-days: 14

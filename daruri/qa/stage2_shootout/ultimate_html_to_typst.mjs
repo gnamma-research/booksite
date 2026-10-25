@@ -185,9 +185,45 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
      return bodyGrid(el,false);
   if(tag==='table'&&el.classList.contains('lex-bilingual'))
      return bodyGrid(el,true);
+  // Scholarly dictionary directory: preserve a readable two-column
+  // alphabetic lookup with *actual generated page numbers* from Typst's
+  // page-location introspection. Original glossary/dictionary articles and
+  // exact links remain untouched; this replaces the generic one-column
+  // rendering only for .lex-directory-list, never for prose lists.
+  if(tag==='ol' && el.classList.contains('lex-directory-list')){
+    const pieces=['#columns(2,gutter:8mm)[\n'];
+    const entries=[...el.querySelectorAll(':scope > li')];
+    for(const li of entries){
+      const a=li.querySelector('a.lex-directory-link[href^="#"]');
+      if(!a){pieces.push(block(li));continue;}
+      const id=(a.getAttribute('href')||'').slice(1);
+      if(!labels.has(id))throw Error('Missing original glossary dossier '+id);
+      const target=labels.get(id);
+      const title=rich(a);
+      pieces.push('#block(breakable:false,above:0pt,below:1pt)['+
+        '#grid(columns:(1fr,auto),gutter:2mm,['+title+'],'+
+        '[#text(size:7pt)[#context locate(<'+target+'>).page()]])]\n');
+    }
+    pieces.push(']\n');
+    stats.dictionary_directory_original_entries=entries.length;
+    stats.dictionary_directory_printed_target_page_refs=entries.length;
+    return anchor(el)+pieces.join('');
+  }
+
   if(tag==='h1'||tag==='h2'||tag==='h3'||tag==='h4'||tag==='h5'||tag==='h6'){
     const level=Math.min(Number(tag[1]),5);
     const txt=childRich(el);
+    // Dictionary section labels must follow the visible heading, not sit
+    // at the bottom of the previous page when Typst keeps that heading
+    // with its first paragraph. Otherwise the table of terms prints the
+    // wrong destination folio (ibāḥa was printed as p155 but was on p156).
+    const ancestor=el.parentElement;
+    if((el.classList.contains('lex-term-heading') &&
+        ancestor?.classList.contains('lex-term')) ||
+       (el.classList.contains('lex-article-heading') &&
+        ancestor?.classList.contains('lex-article'))){
+      return '#heading(level:'+level+')['+txt+']'+anchor(ancestor)+anchor(el)+'\n';
+    }
     // All 258 authorial sections must appear in the PDF sidebar outline.
     // Preserve original heading level for other editorial apparatus.
     const sectionId=el.getAttribute('id')||'';
@@ -225,6 +261,16 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
     // The PDF-only bookmark is added by anchor() at the authoritative
     // section-N target below, not at this potentially orphaned wrapper.
     return anchor(el)+[...el.childNodes].map(block).join('');
+  }
+  // Source headword anchors are emitted AFTER their visual headings so
+  // destination links and page counters land on the actual article page.
+  if(el.classList.contains('lex-term')||el.classList.contains('lex-article')){
+    // Begin the first complete term dossier on a fresh page after the
+    // printed two-column directory, not just above its page footer.
+    // This prevents splitting the first definition from its headword.
+    const begin=el.classList.contains('lex-term') &&
+      el.getAttribute('data-directory-number')==='1' ? '#pagebreak()\n' : '';
+    return begin+[...el.childNodes].map(block).join('');
   }
   const begin=anchor(el);
   const breakBefore=el.matches('main.main-text')?'#pagebreak()\n':

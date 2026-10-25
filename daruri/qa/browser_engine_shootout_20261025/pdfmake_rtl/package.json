@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "gnamma-pdfmake-rtl-real-source-micro",
+  "version": "0.1.0",
+  "dependencies": {
+    "pdfmake-rtl": "2.1.2"
+  }
+}

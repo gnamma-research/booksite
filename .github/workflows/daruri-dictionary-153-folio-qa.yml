@@ -1,0 +1,51 @@
+name: Daruri strict 153-term dictionary printed-page versus PDF GoTo QA (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths: ['.github/workflows/daruri-dictionary-153-folio-qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  all_153_printed_folios:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - edition: enhanced-native
+            run_id: 40157333614
+            artifact: daruri-full-625notes-153terms-157articles-enhanced-Krilla-NATIVE-NONRELEASE
+            pdf: daruri-full-scholarship-enhanced-unicode-NONRELEASE.pdf
+          - edition: stock-browser-WASM
+            run_id: 40154725742
+            artifact: daruri-full-scholarly-625-note-typst-chromium-NONRELEASE
+            pdf: daruri-scholarly-625-notes-browser-typst-NONRELEASE.pdf
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install independent PyMuPDF parser
+        run: python -m pip install -q PyMuPDF==1.26.7
+      - name: Retrieve exact SHA-pinned research-only generated PDF from prior run
+        uses: actions/download-artifact@v4
+        with:
+          repository: gnamma-research/booksite
+          run-id: ${{ matrix.run_id }}
+          github-token: ${{ github.token }}
+          name: ${{ matrix.artifact }}
+          path: /tmp/gnamma-dict-${{ matrix.edition }}
+      - name: Check 153 actual printed folios and their 153 real GoTo target pages
+        run: |
+          python daruri/qa/browser_engine_shootout_20261025/directory_folios.py \
+            /tmp/gnamma-dict-${{ matrix.edition }}/${{ matrix.pdf }} \
+            /tmp/gnamma-dict-${{ matrix.edition }}/validated-153-directory-folios.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-153-term-directory-folios-${{ matrix.edition }}-NONRELEASE
+          path: /tmp/gnamma-dict-${{ matrix.edition }}/validated-153-directory-folios.json
+          retention-days: 14
+          if-no-files-found: warn

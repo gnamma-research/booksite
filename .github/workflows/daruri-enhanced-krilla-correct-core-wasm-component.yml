@@ -1,0 +1,94 @@
+name: Daruri enhanced Krilla core wasm32-unknown-unknown plus standard component adapter (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths: ['.github/workflows/daruri-enhanced-krilla-correct-core-wasm-component.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  patched_typst_wasm_build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: typst-wasm/typst-wasm
+          ref: cf498a731ebbb801ccdfbff1bcca7ef9a94f9d31
+          path: pinned-open-typst-wasm
+          persist-credentials: false
+      - name: Install Rust 1.92 core WASM target and normal upstream component adapter
+        run: |
+          rustup toolchain install 1.92.0 --profile minimal --component rust-src \
+            --target wasm32-unknown-unknown
+          rustup run 1.92.0 rustc --version
+          rustup run 1.92.0 cargo --version
+      - name: Install pinned standard wasm-tools for core-to-component wrapping
+        run: |
+          cargo install --locked wasm-tools --version 1.240.0
+          wasm-tools --version
+      - name: Substitute ONLY pinned Apache/MIT Enhanced Unicode Typst/Krilla forks
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('pinned-open-typst-wasm/packages/typst-wasm/engine/Cargo.toml')
+          data=p.read_text()
+          assert 'typst = "0.15.0"' in data
+          typst='https://github.com/Sovichea/typst.git'
+          rev='e3a60d5aa897d718b465efc3de0031c7d74efb3b'
+          krilla='https://github.com/Sovichea/krilla.git'
+          krev='bb0873416484587814b9ecb682e262056f8effe2'
+          names=['typst','typst-bundle','typst-eval','typst-html','typst-ide',
+            'typst-kit','typst-layout','typst-library','typst-macros','typst-pdf',
+            'typst-realize','typst-render','typst-svg','typst-syntax','typst-timing','typst-utils']
+          patch=['[patch.crates-io]']
+          patch.extend(f'{name} = {{git = "{typst}", rev = "{rev}"}}' for name in names)
+          patch.append(f'krilla = {{git = "{krilla}", rev = "{krev}"}}')
+          patch.append(f'krilla-svg = {{git = "{krilla}", rev = "{krev}"}}')
+          p.write_text(data+'\n'+'\n'.join(patch)+'\n')
+          Path('pinned-open-typst-wasm/ENHANCED-GNAMMA-PATCH.md').write_text(
+            '# Gnamma research-only Typst WASM fork\n\n'
+            + 'Pinned upstream typst-wasm cf498a731e;\n'
+            + 'Enhanced Typst '+rev+'; enhanced Krilla '+krev+'.\n'
+            + 'Do not publish compiled outputs before Arabic and license checks.\n')
+          PY
+      - name: Compile patched Typst as CORE wasm32-unknown-unknown, wrap with upstream wit-bindgen component metadata
+        run: |
+          set -euxo pipefail
+          cd pinned-open-typst-wasm/packages/typst-wasm/engine
+          rm -f Cargo.lock
+          rustup run 1.92.0 cargo metadata --format-version 1 --no-deps > /tmp/gnamma-wasm-metadata.json
+          rustup run 1.92.0 cargo build --target wasm32-unknown-unknown --release --jobs 2
+          find target/wasm32-unknown-unknown/release -maxdepth 1 -name '*.wasm' -printf '%f %s bytes\n'
+          mkdir -p /tmp/gnamma-enhanced-wasm
+          wasm-tools component new target/wasm32-unknown-unknown/release/typst_engine.wasm \
+            -o /tmp/gnamma-enhanced-wasm/enhanced-typst-engine-NONRELEASE.wasm
+          # This MUST be a 0x0001000d WASM component wrapping a 0x00000001 core;
+          # JCO performs the second canonical ABI conversion into browser JS.
+          sha256sum /tmp/gnamma-enhanced-wasm/*.wasm
+      - name: Run emitted WASM binary signature check
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          p=Path('/tmp/gnamma-enhanced-wasm/enhanced-typst-engine-NONRELEASE.wasm')
+          b=p.read_bytes()
+          assert b[:4]==b'\0asm' and len(b)>1000000
+          assert b[4:8]==bytes([0x0d,0,1,0]), 'Expected component model WASM wrapper' 
+          info={'format':'webassembly-component-from-wasm32-unknown-unknown','bytes':len(b),
+            'sha256':hashlib.sha256(b).hexdigest(),
+            'contains_current_patched_engine':True,
+            'browser_runtime_integration_completed':False,
+            'full_browser_pdf_test_completed':False,
+            'research_only':True}
+          Path('/tmp/gnamma-enhanced-wasm/compile-result.json').write_text(json.dumps(info,indent=2))
+          print('GNAMMA_ENHANCED_BROWSER_WASM_COMPILE',json.dumps(info))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-enhanced-Krilla-CORRECT-wasm32-unknown-unknown-component-NONRELEASE
+          path: /tmp/gnamma-enhanced-wasm
+          if-no-files-found: warn
+          retention-days: 7
