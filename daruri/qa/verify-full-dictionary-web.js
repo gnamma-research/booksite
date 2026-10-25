@@ -94,6 +94,7 @@ for(const fname of ['full-dictionary-context.js','full-dictionary-data.js','full
 const uiWord=read('gnamma-word-context.js');
 const popupFooter=uiWord.slice(uiWord.indexOf('function installDictionaryActions(){'),uiWord.indexOf("document.addEventListener('click',e=>{",uiWord.indexOf('function installDictionaryActions(){')));
 assert(!popupFooter.includes('morph-root')&&!popupFooter.includes('morph-lemma'),'The dictionary modal must not offer unsupported morphological searches');
+assert(ui.includes('VERIFIED_TEXT_SPELLINGS') && ui.includes('addVerifiedTextForms'));
 assert(ui.includes('reviseReaderPopup') && ui.includes('reviseStandalone') && ui.includes('fullLabel'));
 assert(ui.includes('addIndexedSearch') && ui.includes('gn-fd-morph-actions'));
 assert(uiWord.includes('groundedMorphActions'));
