@@ -10,7 +10,7 @@
   if (!document.querySelector('script[data-gn-full-dictionary-context]')) {
     const fullScript = document.createElement('script');
     fullScript.dataset.gnFullDictionaryContext = '1';
-    fullScript.async = true;
+    fullScript.async = false;
     fullScript.src = new URL('full-dictionary-context.js?v=20261025-dossier6',
       document.currentScript?.src || document.baseURI).href;
     document.head.append(fullScript);
@@ -20,7 +20,7 @@
   if (!document.querySelector('script[data-gn-dictionary-dossier]')) {
     const dossierScript=document.createElement('script');
     dossierScript.dataset.gnDictionaryDossier='1';
-    dossierScript.async=true;
+    dossierScript.async=false;
     dossierScript.src=new URL('dictionary-dossier.js?v=20261025-unified1',
       document.currentScript?.src||document.baseURI).href;
     document.head.append(dossierScript);
