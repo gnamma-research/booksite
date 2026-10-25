@@ -42,6 +42,31 @@ const server=http.createServer((req,res)=>{
  else{type='text/plain';body='ok';}
  res.writeHead(200,{'content-type':type,'cache-control':'no-store','content-length':Buffer.byteLength(body)});res.end(body);
 });
+async function workerState(page){
+ return page.evaluate(async()=>{
+  const r=await navigator.serviceWorker.getRegistration();
+  return {secure:isSecureContext,available:'serviceWorker' in navigator,
+   controller:navigator.serviceWorker.controller?.scriptURL||'',
+   active:r?.active?.scriptURL||'',waiting:r?.waiting?.scriptURL||'',
+   installing:r?.installing?.scriptURL||'',
+   caches:await caches.keys()};
+ });
+}
+async function waitForControl(page,label,revision,origin){
+ const controlled=async()=>page.waitForFunction(rev=>
+  !!navigator.serviceWorker.controller?.scriptURL.includes(rev),
+  revision,{timeout:12000}).then(()=>true).catch(()=>false);
+ if(await controlled())return;
+ // The WebKit context may not acquire a controller on the first reload;
+ // navigate to a fresh same-scope URL before calling this a site regression.
+ for(let i=0;i<3;i++){
+  await page.goto(origin+'/daruri/index.html?qaControllerRetry='+label+'-'+i,
+   {waitUntil:'domcontentloaded',timeout:25000});
+  if(await controlled())return;
+ }
+ throw Error('SW '+label+' active but page not controlled after scoped navigation: '+
+   JSON.stringify(await workerState(page)));
+}
 async function check(api,name,origin){
  phase='old';
  const browser=await api.launch({headless:true,...(name==='chromium'?{args:['--no-sandbox']}:{})});
@@ -52,7 +77,7 @@ async function check(api,name,origin){
   await page.goto(origin+'/daruri/',{waitUntil:'domcontentloaded',timeout:60000});
   await page.waitForFunction(()=>navigator.serviceWorker.getRegistration().then(r=>!!r?.active),null,{timeout:90000});
   await page.reload({waitUntil:'domcontentloaded',timeout:60000});
-  await page.waitForFunction(()=>!!navigator.serviceWorker.controller,null,{timeout:90000});
+  await waitForControl(page,'old',OLD,origin);
   const old=await page.evaluate(async()=>{
    localStorage.setItem('gnamma-qa-private-sentinel','preserve without touching private reader notes');
    const cachesList=await caches.keys();
@@ -67,7 +92,7 @@ async function check(api,name,origin){
   await page.reload({waitUntil:'domcontentloaded',timeout:60000});
   await page.waitForFunction(rev=>navigator.serviceWorker.getRegistration().then(r=>
    !!r?.active?.scriptURL.includes(rev)),NEW,{timeout:90000});
-  await page.waitForFunction(rev=>!!navigator.serviceWorker.controller?.scriptURL.includes(rev),NEW,{timeout:90000});
+  await waitForControl(page,'new',NEW,origin);
   await page.reload({waitUntil:'domcontentloaded',timeout:60000});
   const updated=await page.evaluate(async()=>{
    const all=await caches.keys();
@@ -92,9 +117,10 @@ async function check(api,name,origin){
   assert.equal(offline.sentinel,updated.sentinel,'Offline upgrade erased local state');
   results.push({engine:name,old,updated,offline});
   console.log('PASS UPGRADE '+name+' old->new->offline, no private data loss');
- }catch(e){const message=String(e.stack||e).slice(0,2200);
-  failures.push({engine:name,error:message});
-  console.log('FAIL UPGRADE '+name+' '+message);
+ }catch(e){const message=String(e.stack||e).slice(0,3000);
+  const state=await workerState(page).catch(()=>({unavailable:true}));
+  failures.push({engine:name,error:message,state});
+  console.log('FAIL UPGRADE '+name+' '+message+' STATE '+JSON.stringify(state));
  }finally{await ctx.close();await browser.close();}
 }
 (async()=>{
