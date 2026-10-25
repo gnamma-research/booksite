@@ -1,0 +1,73 @@
+name: Daruri browser PDF full reproducible OPEN KIT snapshot (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths:
+      - 'daruri/qa/browser_engine_shootout_20261025/*.md'
+      - '.github/workflows/daruri-pdf-browser-open-kit-package.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pack-reproducible-open-kit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Confirm authoritative source SHA and record contents
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          path=pathlib.Path('daruri/edition-r3-20261020.js')
+          sha=hashlib.sha256(path.read_bytes()).hexdigest()
+          assert sha=='d9f4f16ee0c01814c18914e673385f58b666c7feaecdc042376071342ac26a2d'
+          print('DARURI_OPEN_KIT_CURRENT_SOURCE_PIN',sha)
+          PY
+      - name: Package kit WITHOUT PDF binaries or font binaries
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/gnamma-browser-pdf-kit
+          cat > /tmp/gnamma-browser-pdf-kit/README.txt <<'EOF'
+          Daruri Scholarly Browser PDF Engine — source and evidence open kit.
+          Read daruri/qa/browser_engine_shootout_20261025/OPEN_KIT.md FIRST;
+          then RESULTS_AND_DECISION.md for measured outcomes, CI links, risks,
+          citations and work estimates. No fonts or generated PDFs included.
+          This kit is research-only. Do NOT publish or merge without sign-off.
+          EOF
+          zip -q -9 /tmp/gnamma-browser-pdf-kit/Daruri_Browser_PDF_Open_Kit_Sources_2026-10-25.zip \
+            daruri/qa/browser_engine_shootout_20261025/OPEN_KIT.md \
+            daruri/qa/browser_engine_shootout_20261025/RESULTS_AND_DECISION.md \
+            daruri/qa/stage2_shootout/EXACT_SCHOLARLY_PUBLISHED_PARITY_DECISION_2026-10-25.md \
+            daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+            daruri/qa/stage2_shootout/ultimate_html_to_typst.mjs \
+            daruri/qa/stage2_shootout/ultimate_typst_browser.mjs \
+            daruri/qa/stage2_shootout/test_ultimate_typst_browser.cjs \
+            daruri/qa/stage2_shootout/ultimate_pdf_qa.py \
+            daruri/qa/stage2_shootout/verify_scholarly_candidate.py \
+            daruri/qa/stage2_shootout/vivliostyle_micro_fixture.py \
+            daruri/qa/stage2_shootout/vivliostyle_pdf_browser.html \
+            daruri/qa/stage2_shootout/vivliostyle_pdf_browser.mjs \
+            daruri/qa/stage2_shootout/test_vivliostyle_pdf_browser.cjs \
+            daruri/qa/stage2_shootout/normalize_vivliostyle_pdf.mjs \
+            daruri/qa/stage2_shootout/qa_typst015/package.json \
+            daruri/qa/stage2_shootout/qa_typst015/arabic_pdf_qa.mjs \
+            daruri/qa/stage2_shootout/qa_typst015/arabic_variants.mjs \
+            daruri/qa/browser_engine_shootout_20261025/pdfmake_rtl/package.json \
+            daruri/qa/browser_engine_shootout_20261025/pdfmake_rtl/scholarly_micro.cjs \
+            daruri/qa/stage2_shootout/package.json \
+            daruri/edition-r3-20261020.js \
+            daruri/build/data/full-headwords.json \
+            daruri/pdf-editions-manifest.json \
+            .github/workflows/daruri-vivliostyle-pdf-full-qa.yml \
+            .github/workflows/daruri-vivliostyle-pdf-client-normalize-qa.yml \
+            .github/workflows/daruri-typst-dictionary-qa.yml \
+            .github/workflows/daruri-typst-0151-arabic-variants.yml \
+            .github/workflows/daruri-pdfmake-rtl-scholarly-qa.yml
+          (cd /tmp/gnamma-browser-pdf-kit && sha256sum Daruri_Browser_PDF_Open_Kit_Sources_2026-10-25.zip > SHA256SUMS.txt)
+          unzip -l /tmp/gnamma-browser-pdf-kit/Daruri_Browser_PDF_Open_Kit_Sources_2026-10-25.zip | tail -5
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daruri-browser-pdf-complete-reproducible-open-kit-NONRELEASE
+          path: /tmp/gnamma-browser-pdf-kit
+          retention-days: 14
+          if-no-files-found: error
