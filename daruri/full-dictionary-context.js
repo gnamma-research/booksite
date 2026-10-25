@@ -293,6 +293,24 @@
     const n = record.articles.length;
     ifTextDiff(label, n + ' complete selected historical ' + (n === 1 ? 'article' : 'articles') +
       ' (additional to short extracts)');
+    const firstSpans = [...meta.querySelectorAll(':scope > span')].filter(x => x !== label);
+    const shortAuthors = new Set([...article.querySelectorAll('[data-dict-panel="sources"] .hist-source summary strong')]
+      .map(x => x.textContent.trim()));
+    if (firstSpans.length >= 2)
+      ifTextDiff(firstSpans[1], shortAuthors.size + ' ' +
+        (shortAuthors.size === 1 ? 'author' : 'authors') + ' of short extracts');
+    const sourcePanel = article.querySelector('[data-dict-panel="sources"]');
+    if (sourcePanel && !sourcePanel.querySelector(':scope > .gn-fd-standalone-scope')) {
+      const note = el('p', 'gn-fd-standalone-scope',
+        'The short quotations and complete selected historical articles were compiled separately; a full article may come from a different author or a different headword.');
+      sourcePanel.querySelector('h2')?.insertAdjacentElement('afterend',note);
+    }
+    if (term === 'ṣīgha' && sourcePanel &&
+        !sourcePanel.querySelector(':scope > .gn-fd-standalone-specific')) {
+      const note = el('p','gn-fd-standalone-specific',
+        'For ṣīgha: the brief al-Munāwī quotation is under الأمر (command), whereas the complete article is al-Fayyūmī’s صوغ (form). These are separate works, not a summary and its continuation.');
+      sourcePanel.querySelector('.gn-fd-standalone-scope')?.insertAdjacentElement('afterend',note);
+    }
   }
   function reviseGlossary(card, term) {
     const toggle = card.querySelector(':scope > .gn-fd-toggle');
@@ -370,6 +388,7 @@
       '.gn-fd-extract-heading{font:600 15px/1.45 system-ui,sans-serif;margin:16px 0 8px}',
       '.gn-fd-scope,.gn-fd-example-scope{font:12px/1.55 system-ui,sans-serif;opacity:.8;margin:8px 0 14px}',
       '.gn-fd-specific{padding:10px 12px;background:var(--nav,var(--paper,#fafafa));border-inline-start:3px solid var(--accent,#668);font:13px/1.55 system-ui,sans-serif}',
+      '.gn-fd-standalone-scope{font:12px/1.55 system-ui,sans-serif;opacity:.85}.gn-fd-standalone-specific{font:13px/1.55 system-ui,sans-serif;padding:9px 12px;border-inline-start:3px solid var(--accent,#668);background:var(--nav,var(--paper,#fafafa))}',
       '.gn-fd-page-link{display:inline-flex;align-items:center;min-height:42px;font:600 12px/1.4 system-ui,sans-serif;margin:12px 8px 12px 0;color:var(--accent,inherit)}',
       '#lex-sources .gn-fd-toggle{max-width:100%}',
       '@media(max-width:660px){.gn-fd-parallel{grid-template-columns:minmax(0,1fr);gap:9px}.gn-fd-ar{font-size:21px!important}.gn-fd-body{padding:10px 12px 14px}}',
