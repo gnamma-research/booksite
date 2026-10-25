@@ -473,7 +473,7 @@
       // Close the source card before opening search, preserving its original
       // reader return position and avoiding two stacked modal focus traps.
       document.getElementById('detailClose')?.click();
-      search.openWith(value,mode,'text');
+      search.openWith(value,mode,'text','work');
     },true);
     styles();
     sync();
