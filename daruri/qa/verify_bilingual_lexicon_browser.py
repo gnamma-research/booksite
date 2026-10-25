@@ -22,7 +22,7 @@ CHECK_PASSAGES=r"""() => {
    const arLinks=[...ar.querySelectorAll('.inline-term[data-term]')].map(x=>x.dataset.term);
    const enLinks=[...en.querySelectorAll('.gn-en-lex-term[data-term]')].map(x=>x.dataset.term);
    const clean=en.cloneNode(true);
-   clean.querySelectorAll('.gn-en-lex-parenthesis,.gn-en-lex-tail,.note-ref-symbol').forEach(x=>x.remove());
+   clean.querySelectorAll('.gn-en-lex-parenthesis,.gn-en-lex-tail,.note-ref-symbol,.gn-note-en-section-list').forEach(x=>x.remove());
    const appended=en.querySelectorAll('.gn-en-lex-tail').length;
    const annotated=[...en.querySelectorAll('.gn-en-lex-term')].every(b=>
       b.tagName==='BUTTON'&&b.getAttribute('lang')==='ar'&&b.getAttribute('dir')==='rtl');
