@@ -185,6 +185,31 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
      return bodyGrid(el,false);
   if(tag==='table'&&el.classList.contains('lex-bilingual'))
      return bodyGrid(el,true);
+  // Scholarly dictionary directory: preserve a readable two-column
+  // alphabetic lookup with *actual generated page numbers* from Typst's
+  // page-location introspection. Original glossary/dictionary articles and
+  // exact links remain untouched; this replaces the generic one-column
+  // rendering only for .lex-directory-list, never for prose lists.
+  if(tag==='ol' && el.classList.contains('lex-directory-list')){
+    const pieces=['#columns(2,gutter:8mm)[\n'];
+    const entries=[...el.querySelectorAll(':scope > li')];
+    for(const li of entries){
+      const a=li.querySelector('a.lex-directory-link[href^="#"]');
+      if(!a){pieces.push(block(li));continue;}
+      const id=(a.getAttribute('href')||'').slice(1);
+      if(!labels.has(id))throw Error('Missing original glossary dossier '+id);
+      const target=labels.get(id);
+      const title=rich(a);
+      pieces.push('#block(breakable:false,above:0pt,below:1pt)['+
+        '#grid(columns:(1fr,auto),gutter:2mm,['+title+'],'+
+        '[#text(size:7pt)[#context counter(page).at(<'+target+'>).first()]])]\n');
+    }
+    pieces.push(']\n');
+    stats.dictionary_directory_original_entries=entries.length;
+    stats.dictionary_directory_printed_target_page_refs=entries.length;
+    return anchor(el)+pieces.join('');
+  }
+
   if(tag==='h1'||tag==='h2'||tag==='h3'||tag==='h4'||tag==='h5'||tag==='h6'){
     const level=Math.min(Number(tag[1]),5);
     const txt=childRich(el);
