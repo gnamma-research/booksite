@@ -7,7 +7,8 @@
   window.GnammaFullDictionaryContext = {version: '2026-10-25'};
   const thisScript = document.currentScript?.src || new URL('full-dictionary-context.js', document.baseURI).href;
   const dataURL = new URL('full-dictionary-data.js?v=20261025-sinaa1', thisScript).href;
-  let dataPromise = null, queued = false;
+  const indexURL = new URL('full-dictionary-index.js?v=20261025-dossier2', thisScript).href;
+  let dataPromise = null, indexPromise = null, queued = false;
   const el = (tag, className, value) => {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -47,6 +48,40 @@
     }
     return dataPromise;
   }
+
+  function getIndex() {
+    if (window.GnammaFullDictionaryIndex) return Promise.resolve(window.GnammaFullDictionaryIndex);
+    if (!indexPromise) indexPromise = new Promise((resolve,reject) => {
+      const script = el('script');
+      script.async = true;
+      script.src = indexURL;
+      script.onload = () => resolve(window.GnammaFullDictionaryIndex);
+      script.onerror = () => reject(Error('Compact dictionary source index unavailable'));
+      document.head.append(script);
+    }).then(index => {
+      if (index?.schema_version !== 1 || Object.keys(index.terms || {}).length !== 153)
+        throw Error('Compact dictionary index failed its schema/coverage check');
+      return index;
+    }).catch(error => { indexPromise = null; throw error; });
+    return indexPromise;
+  }
+  function indexed(term) {
+    return window.GnammaFullDictionaryIndex?.terms?.[term] || null;
+  }
+  function fullLabel(term, open) {
+    const record = indexed(term), articles = record?.articles || [];
+    if (open) return 'Hide complete historical article' + (articles.length === 1 ? '' : 's');
+    if (articles.length === 1)
+      return 'Show complete article · ' + articles[0].author +
+        ' (s.v. ' + articles[0].headword + ')';
+    if (articles.length > 1)
+      return 'Show ' + articles.length + ' complete selected historical articles';
+    return 'Show complete selected historical dictionary articles';
+  }
+  function ifTextDiff(node, value) {
+    if (node && node.textContent !== value) node.textContent = value;
+  }
+
   function sourceBlock(article, source, dossier, noteMap) {
     const card = el('section', 'gn-fd-article');
     card.dataset.fullArticleId = article.id;
@@ -122,7 +157,7 @@
     }
     const articles = new Map(data.articles.map(a => [a.id, a]));
     const intro = el('p', 'gn-fd-intro');
-    intro.textContent = 'Complete selected headword articles from the scholarly edition, with full Arabic text and working English translations. Later dictionaries are comparative witnesses and should not be treated as Ibn Rushd’s own definitions.';
+    intro.textContent = 'Complete selected headword articles reproduced from the scholarly edition, with Arabic and working English translations. Short quotations elsewhere on this page were selected independently: these articles may come from different dictionaries and are not necessarily expanded versions of those quotations. Later dictionary authors are comparative witnesses, not Ibn Rushd’s own definitions.';
     container.append(intro);
     let shown = 0;
     for (const association of row.articles || []) {
@@ -140,11 +175,11 @@
     if (!target || !term || target.querySelector(':scope > .gn-fd-toggle')) return;
     const toggle = el('details', 'gn-fd-toggle');
     toggle.dataset.dictionaryTerm = term;
-    const summary = el('summary', 'gn-fd-summary', 'Show full historical dictionary articles');
+    const summary = el('summary', 'gn-fd-summary', fullLabel(term, false));
     const body = el('div', 'gn-fd-body');
     toggle.append(summary, body);
     toggle.addEventListener('toggle', () => {
-      summary.textContent = toggle.open ? 'Hide full historical dictionary articles' : 'Show full historical dictionary articles';
+      summary.textContent = fullLabel(term, toggle.open);
       if (!toggle.open || toggle.dataset.gnFdReady === '1' || toggle.dataset.gnFdBusy === '1') return;
       toggle.dataset.gnFdBusy = '1';
       body.replaceChildren(el('p', 'gn-fd-status', 'Loading the complete Arabic and English dictionary articles…'));
@@ -160,6 +195,8 @@
       }).finally(() => { delete toggle.dataset.gnFdBusy; });
     });
     if (position === 'first') target.prepend(toggle);
+    else if (position === 'after-short' && target.querySelector(':scope > .glossary-primary-evidence'))
+      target.querySelector(':scope > .glossary-primary-evidence').insertAdjacentElement('afterend', toggle);
     else target.append(toggle);
   }
   function alignCraftSummary(host, term) {
@@ -175,18 +212,119 @@
         node.nodeValue = node.nodeValue.replace(before, after);
     }
   }
+
+  function reviseReaderPopup(body, term) {
+    const sources = body.querySelector('#lex-sources');
+    if (!sources) return;
+    // Previous "Historical sources" opened another short-excerpt overlay that
+    // repeated the sources already present. The full-page workspace remains
+    // available as an accurately named link at the bottom of the card.
+    body.querySelector(':scope > .lex-full-link')?.remove();
+    const toggle = sources.querySelector(':scope > .gn-fd-toggle');
+    const label = toggle?.querySelector(':scope > .gn-fd-summary');
+    ifTextDiff(label, fullLabel(term, !!toggle?.open));
+    if (!sources.querySelector(':scope > .gn-fd-section-title')) {
+      const heading = el('h3', 'gn-fd-section-title', 'Historical dictionary evidence');
+      sources.prepend(heading);
+    }
+    const evidence = sources.querySelector(':scope > .dictionary-source-list');
+    const shortCount = evidence?.querySelectorAll(':scope > .dictionary-source').length || 0;
+    const record = indexed(term), fullCount = record?.articles.length;
+    if (evidence && !sources.querySelector(':scope > .gn-fd-extract-heading')) {
+      const label = el('h4', 'gn-fd-extract-heading', 'Other selected dictionary excerpts');
+      sources.insertBefore(label, evidence);
+    }
+    const shortHeading = sources.querySelector(':scope > .gn-fd-extract-heading');
+    ifTextDiff(shortHeading, shortCount === 1 ?
+      'Selected short quotation (separate source evidence)' :
+      shortCount + ' selected short quotations (separate source evidence)');
+    if (!sources.querySelector(':scope > .gn-fd-scope')) {
+      const explain = el('p', 'gn-fd-scope');
+      sources.insertBefore(explain, toggle?.nextSibling || evidence || null);
+    }
+    const scope = sources.querySelector(':scope > .gn-fd-scope');
+    ifTextDiff(scope, 'The complete article and short quotations may come from different dictionaries. Expanding an article does not necessarily continue the preceding quotation.');
+    if (term === 'ṣīgha' && !sources.querySelector(':scope > .gn-fd-specific')) {
+      const p = el('p', 'gn-fd-specific',
+        'Source distinction: al-Munāwī’s short extract is from الأمر (command), whereas the complete article is al-Fayyūmī’s صوغ (fashioning / form). The former is related legal evidence, not an abridgement of the latter.');
+      sources.insertBefore(p, evidence || null);
+    }
+    const tab = body.querySelector('.lex-tabbar [data-lexjump="lex-sources"]');
+    if (tab) {
+      const description = fullCount === undefined ? shortCount + ' short extracts' :
+        fullCount + ' complete ' + (fullCount === 1 ? 'article' : 'articles') +
+        ' · ' + shortCount + ' short ' + (shortCount === 1 ? 'extract' : 'extracts');
+      ifTextDiff(tab, 'Sources · ' + description);
+      tab.setAttribute('aria-label', 'Show dictionary evidence: ' + description);
+    }
+    const author = body.querySelector('#lex-author');
+    if (author) {
+      const heading = author.querySelector('h3');
+      ifTextDiff(heading, 'Selected examples from Ibn Rushd');
+      const count = author.querySelectorAll('.lex-authorial').length;
+      const tab = body.querySelector('.lex-tabbar [data-lexjump="lex-author"]');
+      ifTextDiff(tab, 'In the text · ' + count + ' examples');
+      if (!author.querySelector(':scope > .gn-fd-example-scope')) {
+        const p = el('p', 'gn-fd-example-scope',
+          'These are curated illustrative passages, not a complete count of every inflected occurrence.');
+        if (heading) heading.insertAdjacentElement('afterend', p);
+      }
+    }
+    const footer = body.querySelector(':scope > .return-reading');
+    if (footer && !body.querySelector(':scope > .gn-fd-page-link')) {
+      const link = el('a', 'gn-fd-page-link', 'Open as a full-page dictionary entry ↗');
+      link.href = 'dictionary.html#term=' + encodeURIComponent(term);
+      link.dataset.dictionaryAtlas = term;
+      footer.insertAdjacentElement('beforebegin', link);
+    }
+  }
+  function reviseStandalone(article, term) {
+    const meta = article.querySelector('.entry-meta');
+    const record = indexed(term);
+    const toggle = article.querySelector('[data-dict-panel="sources"] > .gn-fd-toggle');
+    ifTextDiff(toggle?.querySelector(':scope > .gn-fd-summary'), fullLabel(term, !!toggle?.open));
+    if (!meta || !record) return;
+    let label = meta.querySelector('[data-gn-fd-full-count]');
+    if (!label) {
+      label = el('span');
+      label.dataset.gnFdFullCount = '1';
+      meta.append(label);
+    }
+    const n = record.articles.length;
+    ifTextDiff(label, n + ' complete selected historical ' + (n === 1 ? 'article' : 'articles') +
+      ' (additional to short extracts)');
+  }
+  function reviseGlossary(card, term) {
+    const toggle = card.querySelector(':scope > .gn-fd-toggle');
+    ifTextDiff(toggle?.querySelector(':scope > .gn-fd-summary'), fullLabel(term, !!toggle?.open));
+    const record = indexed(term);
+    if (!record) return;
+    const evidence = card.querySelector(':scope > .glossary-primary-evidence');
+    if (toggle && evidence && evidence.nextElementSibling !== toggle) {
+      evidence.insertAdjacentElement('afterend', toggle);
+    }
+    if (toggle && !toggle.dataset.gnFdGlossary) toggle.dataset.gnFdGlossary = '1';
+  }
+
   function sync() {
+    const atlas = document.querySelector('.lexicon-mode-nav a[data-dictionary-atlas]');
+    ifTextDiff(atlas, 'Browse full-page historical dictionary ↗');
     document.querySelectorAll('#mainContent .glossary-card').forEach(card => {
       const heading = card.querySelector('h2');
-      if (heading) { const term = heading.textContent.trim(); alignCraftSummary(card, term); enhance(card, term, 'end'); }
+      if (!heading) return;
+      const term = heading.textContent.trim();
+      alignCraftSummary(card, term);
+      enhance(card, term, 'after-short');
+      reviseGlossary(card, term);
     });
     const article = document.querySelector('#lexArticle .lex-card');
     if (article) {
       const title = article.querySelector('.lex-title')?.textContent?.trim();
-      const meaning = article.querySelector('[data-dict-panel="meaning"]');
       const sources = article.querySelector('[data-dict-panel="sources"]');
-      if (title && meaning) enhance(meaning, title, 'end');
-      if (title && sources) enhance(sources, title, 'end');
+      if (title && sources) {
+        enhance(sources, title, 'end');
+        reviseStandalone(article, title);
+      }
     }
     const popup = document.getElementById('infoOverlay');
     const body = document.getElementById('detailContent');
@@ -194,7 +332,12 @@
     if (popup && !popup.hidden && body && /DICTIONARY|LEXICAL|GLOSSARY/i.test(eyebrow)) {
       const title = document.getElementById('detailTitle')?.textContent?.trim() ||
         body.querySelector('h2')?.textContent?.trim();
-      if (title) { alignCraftSummary(body, title); enhance(body, title, 'end'); }
+      const sources = body.querySelector('#lex-sources');
+      if (title && sources) {
+        alignCraftSummary(body, title);
+        enhance(sources, title, 'first');
+        reviseReaderPopup(body, title);
+      }
     }
   }
   function schedule() {
@@ -222,7 +365,13 @@
       '.gn-fd-provenance{font:12px/1.55 system-ui,sans-serif}.gn-fd-provenance summary{cursor:pointer;color:var(--accent,inherit);padding:7px 0}',
       '.gn-fd-body a{color:var(--accent,inherit);text-decoration:underline;text-underline-offset:2px}',
       '.gn-fd-error{color:#a44939;font:13px/1.5 system-ui,sans-serif}.gn-fd-status{font:13px/1.5 system-ui,sans-serif}',
-      '#lexArticle[data-dict-view="all"] [data-dict-panel="sources"]>.gn-fd-toggle{display:none}',
+      '#mainContent .glossary-card > .gn-fd-toggle{grid-column:1/-1}',
+      '.gn-fd-section-title{font:600 18px/1.4 Georgia,serif;margin:10px 0;color:var(--ink,inherit)}',
+      '.gn-fd-extract-heading{font:600 15px/1.45 system-ui,sans-serif;margin:16px 0 8px}',
+      '.gn-fd-scope,.gn-fd-example-scope{font:12px/1.55 system-ui,sans-serif;opacity:.8;margin:8px 0 14px}',
+      '.gn-fd-specific{padding:10px 12px;background:var(--nav,var(--paper,#fafafa));border-inline-start:3px solid var(--accent,#668);font:13px/1.55 system-ui,sans-serif}',
+      '.gn-fd-page-link{display:inline-flex;align-items:center;min-height:42px;font:600 12px/1.4 system-ui,sans-serif;margin:12px 8px 12px 0;color:var(--accent,inherit)}',
+      '#lex-sources .gn-fd-toggle{max-width:100%}',
       '@media(max-width:660px){.gn-fd-parallel{grid-template-columns:minmax(0,1fr);gap:9px}.gn-fd-ar{font-size:21px!important}.gn-fd-body{padding:10px 12px 14px}}',
       '@media print{.gn-fd-toggle:not([open]){display:none}.gn-fd-toggle{break-inside:auto}.gn-fd-article{break-inside:avoid-page}}'
     ].join('\n');
@@ -231,6 +380,7 @@
   function start() {
     styles();
     sync();
+    getIndex().then(() => schedule()).catch(error => console.warn('Gnamma compact dictionary index:',error));
     const observer = new MutationObserver(schedule);
     // The reader changes its glossary and modal content dynamically; the
     // standalone dictionary replaces its article on each headword selection.
