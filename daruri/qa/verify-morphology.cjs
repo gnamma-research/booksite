@@ -53,6 +53,31 @@ async function test(name,fn){await fn();pass++;console.log('PASS '+name)}
    assert.ok(v.lemma>0,'Lemma should find actual passages');
    assert.ok(v.derived>0,'Transliterated root should find actual passages');
   });
+  await test('ṣīgha forms are attested, not invented root relatives',async()=>{
+   const v=await page.evaluate(async()=>{
+    const engine=window.GnammaMorphology;
+    const lemma=await engine.recognize('ṣīgha');
+    const forms=engine.formsFor('صيغة','daruri',20);
+    const found=window.GnammaUnifiedSearch.query('صيغة',
+      {mode:'morph-lemma',scope:'work',facet:'text'});
+    const root=window.GnammaUnifiedSearch.query('صوغ',
+      {mode:'morph-root',scope:'work',facet:'text'});
+    return {lemma:lemma.lemmas.map(x=>x.lemma),
+      root:lemma.lemmas.map(x=>x.root),
+      forms:forms.map(x=>x.form),
+      paragraphs:found.total,
+      occurrences:found.results.reduce((n,r)=>n+(r.matched?.occurrences?.length||0),0),
+      sections:new Set(found.results.map(x=>x.section)).size,
+      distinctRootLemmas:[...new Set(root.results.map(x=>x.matched?.lemma).filter(Boolean))]};
+   });
+   assert.ok(v.lemma.includes('صيغة'),JSON.stringify(v));
+   assert.ok(v.root.includes('صوغ'),JSON.stringify(v));
+   assert.ok(v.forms.some(x=>/صيغها|الصيغ/.test(x)),JSON.stringify(v));
+   assert.equal(v.paragraphs,46,JSON.stringify(v));
+   assert.equal(v.occurrences,63,JSON.stringify(v));
+   assert.equal(v.sections,37,JSON.stringify(v));
+   assert.deepEqual(v.distinctRootLemmas,['صيغة'],JSON.stringify(v));
+  });
   await test('typing never destroys and rebuilds the active input',async()=>{
    await page.locator('#searchBtn').click();
    const e=await page.evaluate(()=>{
