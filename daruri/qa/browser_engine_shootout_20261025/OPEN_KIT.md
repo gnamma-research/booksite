@@ -2,6 +2,10 @@
 
 **Saved 25 October 2026. Source of truth for any continuation chat.** This kit prevents redoing engine discovery and preserves both successes and NO-GO findings. **Research only; never merge or replace any published PDF on the basis of a benchmark.**
 
+## Important update after the full 25 October experiment suite
+
+**Before doing any further investigation, read [RESULTS_AND_DECISION.md](./RESULTS_AND_DECISION.md).** It is the definitive results log covering full Vivliostyle-PDF 248-page client Blob, failed qpdf and Arabic text layer; the successful partial in-browser JavaScript PDF reserialization repair; Typst 0.15.1 vowelled *and unvowelled* Arabic copy failure; 2-column Typst 153-term directory with generated page numbers and WebKit failure; separate pdfmake-RTL test; licenses, risks, all CI links, and engineering time estimates. The earlier notes below are preserved as historical starting hypotheses, not the newest decision. Specifically, do NOT rerun the same Vivliostyle direct PDF 0.3.3 or `pages-to-pdf` 0.4.1 unchanged, and do NOT assume a Typst 0.15 upgrade fixes Arabic text semantics.
+
 ## Where to resume immediately
 
 1. GitHub repository: `gnamma-research/booksite`, working branch `research/daruri-browser-pdf-engine-shootout-20261025`, starting from `research/daruri-published-parity-20261025` (draft [PR #177](https://github.com/gnamma-research/booksite/pull/177)). The current site production branch is `master` and must not be mutated by engine research.
