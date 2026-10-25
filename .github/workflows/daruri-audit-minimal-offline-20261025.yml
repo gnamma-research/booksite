@@ -1,0 +1,37 @@
+name: Daruri minimal WebKit offline reload control (nonrelease)
+on:
+  push:
+    branches: [audit/daruri-cache-upgrade-20261025]
+    paths:
+      - 'daruri/qa/verify-minimal-cache-offline-reload.cjs'
+      - '.github/workflows/daruri-audit-minimal-offline-20261025.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  cache-reload-control:
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Remove unrelated apt source
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then sudo mv "$source" "$source.disabled"; fi
+          done
+      - run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Test two engines' minimal cache-backed offline reloading
+        run: node daruri/qa/verify-minimal-cache-offline-reload.cjs
+      - name: Preserve minimal worker browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-minimal-offline-reload-baseline
+          path: daruri/qa/cache-audit-artifacts/minimal-cache-offline-reload.json
+          retention-days: 14
+          if-no-files-found: warn
