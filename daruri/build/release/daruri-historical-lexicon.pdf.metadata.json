@@ -2,8 +2,8 @@
   "filename": "daruri-historical-lexicon.pdf",
   "edition": "historical-lexicon",
   "pages": 90,
-  "bytes": 614983,
-  "sha256": "f949763e2cd4fefd6c84d5d293860566dff4ade095cc1686d4587f46a7f611d0",
+  "bytes": 614982,
+  "sha256": "febd6aed2ab6aebe4393c6c2aa34eb5cccb0d153939265b87bac37d7c7d6590f",
   "counts": {
     "term_dossiers": 153,
     "full_articles": 157,
@@ -22,7 +22,7 @@
   "scholarly_pdf": {
     "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf",
     "pages": 244,
-    "sha256": "478a7f996080871adc0855edaaff85fb12b25480d89f5f77ca410ca34addead9"
+    "sha256": "d48c347615dea180645a3d8718643b0d6b24102da4f15e6cb063657207bd8c35"
   },
   "section_links": [
     {
