@@ -5,6 +5,7 @@ on:
     branches: [master]
     paths:
       - 'daruri/full-dictionary-context.js'
+      - 'daruri/dictionary-dossier.js'
       - 'daruri/full-dictionary-data.js'
       - 'daruri/full-dictionary-index.js'
       - 'daruri/dictionary.html'
@@ -43,6 +44,7 @@ jobs:
       - name: Verify canonical source integrity and JS syntax
         run: |
           node --check daruri/full-dictionary-context.js
+          node --check daruri/dictionary-dossier.js
           node --check daruri/full-dictionary-index.js
           node --check daruri/full-dictionary-data.js
           node --check daruri/quran-context-ui.js
