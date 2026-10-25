@@ -1,0 +1,38 @@
+name: Daruri keyboard and focus cross-browser audit (nonrelease)
+on:
+  push:
+    branches: [audit/daruri-cache-upgrade-20261025]
+    paths:
+      - 'daruri/qa/verify-keyboard-modal-zoom-browser.cjs'
+      - '.github/workflows/daruri-audit-keyboard-zoom-20261025.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  keyboard-focus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Exclude unrelated failing apt source
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then sudo mv "$source" "$source.disabled"; fi
+          done
+      - name: Install local Chromium and WebKit
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Check 18 focus/modal keyboard journeys
+        run: node daruri/qa/verify-keyboard-modal-zoom-browser.cjs
+      - name: Retain pass/fail focus and noncertifying zoom diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-keyboard-focus-and-zoom
+          path: daruri/qa/keyboard-zoom-artifacts/keyboard-zoom-report.json
+          retention-days: 14
+          if-no-files-found: warn
