@@ -27,6 +27,24 @@ assert.equal(sighaRows.length,63);
 assert.equal(new Set(sighaRows.map(x=>x.id.split(':')[1])).size,37);
 assert.equal(morph.summary.seedLexiconEntries,morphLex.entries.length);
 
+const embedded=read('edition-r3-20261020.js').match(/textContent\s*=\s*("(?:\\.|[^"\\])*")\s*;/);
+assert(embedded,'Canonical edition data missing');
+const book=JSON.parse(JSON.parse(embedded[1]));
+const passages=new Map(book.sections.flatMap(section=>
+  (section.segments||[]).map((segment,i)=>['passage:'+section.id+':'+i,segment.ar||segment.vocalized||''])));
+const tokenizeArabic=text=>[...text.matchAll(/[\p{L}\p{N}_\u064b-\u065f\u0670]+/gu)]
+  .map(match=>match[0]).filter(token=>/[\u0621-\u064a]/u.test(token));
+for(const record of morph.records){
+  const text=passages.get(record.id);
+  assert(typeof text==='string',record.id+' has no canonical passage');
+  const tokens=tokenizeArabic(text);
+  for(const item of record.a.filter(x=>x[2]==='صيغة')){
+    assert.equal(tokens[item[0]],item[1],'ṣīgha index position diverges at '+record.id);
+    assert.equal(item[3],'صوغ');
+  }
+}
+
+
 assert.equal(exported.schema_version,1);
 assert.equal(exported.terms.length,153);
 assert.equal(exported.articles.length,157);
