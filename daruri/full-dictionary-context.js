@@ -391,6 +391,7 @@
       '.gn-fd-standalone-scope{font:12px/1.55 system-ui,sans-serif;opacity:.85}.gn-fd-standalone-specific{font:13px/1.55 system-ui,sans-serif;padding:9px 12px;border-inline-start:3px solid var(--accent,#668);background:var(--nav,var(--paper,#fafafa))}',
       '.gn-fd-page-link{display:inline-flex;align-items:center;min-height:42px;font:600 12px/1.4 system-ui,sans-serif;margin:12px 8px 12px 0;color:var(--accent,inherit)}',
       '#lex-sources .gn-fd-toggle{max-width:100%}',
+      '#detailContent #gnw-dictionary-search{display:none!important}',
       '@media(max-width:660px){.gn-fd-parallel{grid-template-columns:minmax(0,1fr);gap:9px}.gn-fd-ar{font-size:21px!important}.gn-fd-body{padding:10px 12px 14px}}',
       '@media print{.gn-fd-toggle:not([open]){display:none}.gn-fd-toggle{break-inside:auto}.gn-fd-article{break-inside:avoid-page}}'
     ].join('\n');
