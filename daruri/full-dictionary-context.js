@@ -504,6 +504,12 @@
     ].join('\n');
     document.head.append(st);
   }
+  // Preserve verified literal concordance and evidence-backed morphology inside
+  // the unified dossier's third section, never as a fourth popup or dead link.
+  window.GnammaFullDictionaryContext.enhanceUsage = (section,term) => {
+    addVerifiedTextForms(section,term);
+    addIndexedSearch(section,term);
+  };
   function start() {
     document.addEventListener('click',event => {
       const button=event.target.closest('[data-gn-fd-morph]');
