@@ -327,8 +327,8 @@
     }
     const shortHeading = sources.querySelector(':scope > .gn-fd-extract-heading');
     ifTextDiff(shortHeading, shortCount === 1 ?
-      'Selected short quotation (separate source evidence)' :
-      shortCount + ' selected short quotations (separate source evidence)');
+      'Selected short quotation' :
+      shortCount + ' selected short quotations');
     if (!sources.querySelector(':scope > .gn-fd-scope')) {
       const explain = el('p', 'gn-fd-scope');
       sources.insertBefore(explain, toggle?.nextSibling || evidence || null);
