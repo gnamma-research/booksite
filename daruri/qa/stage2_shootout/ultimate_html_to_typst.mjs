@@ -265,7 +265,12 @@ export function makeTypstFromCanonicalHtml(originalHtml,record){
   // Source headword anchors are emitted AFTER their visual headings so
   // destination links and page counters land on the actual article page.
   if(el.classList.contains('lex-term')||el.classList.contains('lex-article')){
-    return [...el.childNodes].map(block).join('');
+    // Begin the first complete term dossier on a fresh page after the
+    // printed two-column directory, not just above its page footer.
+    // This prevents splitting the first definition from its headword.
+    const begin=el.classList.contains('lex-term') &&
+      el.getAttribute('data-directory-number')==='1' ? '#pagebreak()\n' : '';
+    return begin+[...el.childNodes].map(block).join('');
   }
   const begin=anchor(el);
   const breakBefore=el.matches('main.main-text')?'#pagebreak()\n':
