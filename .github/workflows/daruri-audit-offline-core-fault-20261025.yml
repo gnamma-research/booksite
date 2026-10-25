@@ -1,0 +1,45 @@
+name: Daruri offline missing-core fault injection (nonrelease)
+on:
+  push:
+    branches: [audit/daruri-cache-upgrade-20261025]
+    paths:
+      - 'daruri/qa/verify-missing-offline-core.cjs'
+      - '.github/workflows/daruri-audit-offline-core-fault-20261025.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  missing-core:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Stage complete update into disposable checkout only
+        run: python daruri/qa/stage-release-cache-version.py --apply
+      - name: Exclude unrelated apt source
+        run: |
+          for source in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$source" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$source"; then sudo mv "$source" "$source.disabled"; fi
+          done
+      - name: Install Chromium
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium
+      - name: Simulate missing necessary module before new worker install
+        run: node daruri/qa/verify-missing-offline-core.cjs
+      - name: Archive detailed offline cache/install evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-incomplete-offline-core-evidence
+          path: daruri/qa/cache-audit-artifacts/incomplete-core-install.json
+          retention-days: 14
+          if-no-files-found: warn
