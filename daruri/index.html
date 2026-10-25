@@ -2298,7 +2298,7 @@ body:not(.reading-active) .reading-return-bar{
 <noscript><link rel="stylesheet" href="source-note-ui.css?v=20261021-fallback-quran1"></noscript>
 <link rel="stylesheet" href="quran-context-ui.css?v=20261022-qcontext1"/>
 <link rel="stylesheet" href="general-section-picker.css?v=20261023-hierarchy1"/>
-<link rel="stylesheet" href="headerless-navigation.css?v=20261025-navigation-home2"/><link rel="stylesheet" href="dock-ios-compact.css?v=20261023-ux-dock1"/>
+<link rel="stylesheet" href="headerless-navigation.css?v=20261025-no-obsolete-book3"/><link rel="stylesheet" href="dock-ios-compact.css?v=20261023-ux-dock1"/>
 <link rel="stylesheet" href="copy-links.css?v=20261025-copy-menu-only1"/><link rel="stylesheet" href="focus-locators.css?v=20261025-focus-locators-wordcontext3"/></head>
 <body><noscript><section aria-label="Complete Darūrī reader" id="fallbackReader"><input class="fb-drawer-check" id="fb-open-left" type="checkbox"/><details class="fb-settings" id="fb-settings"><summary><svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6M15 14v6"></path></svg><span class="fb-settings-open">Display</span><span class="fb-settings-close">Close ×</span></summary><div aria-label="Display and reading tools" class="fb-settings-card" role="group"><h2>Type &amp; appearance</h2>
 <div class="gn-setting-row"><label for="fb-page-style-select">Page style</label><select id="fb-page-style-select"><option value="quiet" selected="">Quiet reading</option><option value="book">Book page</option><option value="structured">Structured page</option></select></div>
@@ -6133,7 +6133,7 @@ gnShowLayer=function(...args){priorScholarLayer(...args);rd?.decorate();};
 
 window.DaruriReadingStyles?.init({value:state.pageStyle,preserve:preserveVisiblePassage,onChange:value=>{state.pageStyle=value;save();}});
 applyParallelOrder();applyArabicFont();applyEnglishFont();bind();bindReaderEnhancements();applyTheme();updateScale();syncRoute();bindResponsiveRepairs();takeDictionaryReturn();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261025-mode-trigger-corners5').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261025-focus-icon-fix3').catch(()=>{});
 })();
 
 </script><link rel="stylesheet" href="gnamma-search.css?v=20261023-qiyas-forms1"><link rel="stylesheet" href="gnamma-scholarly.css?v=20261022-scholarly1"><link rel="stylesheet" href="gnamma-word-context.css?v=20261025-selection-context-menu1"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-scholarly.js?v=20261022-scholarly1"></script><script src="gnamma-morphology.js?v=20261025-sigha-forms1"></script><script src="gnamma-search.js?v=20261025-sigha-forms1"></script><script src="gnamma-word-context.js?v=20261025-sigha-forms2"></script><script src="quran-context-ui.js?v=20261025-dossier4"></script><script src="copy-links.js?v=20261025-copy-menu-only1"></script><script src="focus-locators.js?v=20261025-focus-locators-wordcontext3"></script></body>
