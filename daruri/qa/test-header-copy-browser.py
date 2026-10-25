@@ -57,7 +57,12 @@ def run_case(browser, engine, width):
     page.goto(URL+'#section=64',wait_until='load',timeout=90000)
     page.wait_for_function("document.body.classList.contains('reading-active') && document.querySelector('#readerCopyOptions') !== null",timeout=50000)
     assert not page.locator('#gnTopRead').is_visible(), 'Redundant Read in reading mode'
-    assert not page.locator('#gnTopHome').is_visible(), 'Redundant Home in compact reader'
+    if width<=620:
+        assert not page.locator('#gnTopHome').is_visible(), 'Mobile toolbar must stay compact'
+        visible_loc(page,'#gnReaderMobileHome')
+    else:
+        visible_loc(page,'#gnTopHome')
+        assert not page.locator('#gnReaderMobileHome').is_visible()
     parent=visible_loc(page,'.gn-copy-wrapper')
     primary=visible_loc(page,'#readerCopyAction')
     arrow=visible_loc(page,'#readerCopyOptions')
@@ -122,6 +127,28 @@ def run_case(browser, engine, width):
         assert not page.locator('#leftNav').is_visible(), ('Closed Contents remains visible',width)
     docw=page.evaluate('document.documentElement.scrollWidth')
     assert docw<=width+6, ('Document overflows screen',width,docw)
+    if width in (390,1280):
+        # Immersive modes cannot strand a reader behind hidden navigation.
+        page.evaluate("window.GnammaReaderModes.setMode('focus')")
+        visible_loc(page,'#gnReaderEscape')
+        assert not page.locator('#menuBtn').is_visible(), 'Immersive mode should suppress Contents'
+        page.locator('#gnExitFocus').click()
+        page.wait_for_function("!document.body.classList.contains('focus-mode')")
+        visible_loc(page,'#menuBtn.gn-top-tile')
+        assert page.evaluate("location.hash")=='#section=64', 'Exiting focus must not change section'
+        page.evaluate("window.GnammaReaderModes.setMode('focus')")
+        page.keyboard.press('Escape')
+        page.wait_for_function("!document.body.classList.contains('focus-mode')")
+        page.evaluate("window.GnammaReaderModes.setMode('continuous')")
+        visible_loc(page,'#gnReaderEscape')
+        page.locator('#gnFocusHome').click()
+        page.wait_for_function("location.hash==='#home' && !document.body.classList.contains('reading-active')")
+        visible_loc(page,'#gnTopHome')
+    else:
+        # Return Home with one action, never by going through the Contents pane.
+        direct='#gnReaderMobileHome' if width<=620 else '#gnTopHome'
+        page.locator(direct).click()
+        page.wait_for_function("location.hash==='#home' && !document.body.classList.contains('reading-active')")
     assert not errors, (engine,width,errors[:4])
     if width in (320,390,860,1280) and engine=='chromium':
         page.screenshot(path=str(Path('/tmp')/f'daruri-header-{engine}-{width}.png'))
