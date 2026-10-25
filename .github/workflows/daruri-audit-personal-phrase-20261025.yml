@@ -1,0 +1,27 @@
+name: Daruri personal PDF phrase accuracy census (nonrelease)
+on:
+  push:
+    branches: [audit/daruri-reader-lifecycle-20261025]
+    paths:
+      - 'daruri/qa/verify-personal-phrase-source-maps.cjs'
+      - '.github/workflows/daruri-audit-personal-phrase-20261025.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  phrase-precision:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - run: |
+          node --check daruri/qa/verify-personal-phrase-source-maps.cjs
+          node daruri/qa/verify-personal-phrase-source-maps.cjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daruri-personal-map-english-note-precision
+          path: daruri/qa/personal-word-audit/report.json
+          retention-days: 14
+          if-no-files-found: warn
