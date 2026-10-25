@@ -90,3 +90,99 @@ function parallel(parent,ar,en,cls=''){
  const b=put(wrap,'p','gn-ds-en',en||'English translation unavailable');b.lang='en';b.dir='ltr';
  return wrap;
 }
+
+function fullArticle(parent,article,source,full){
+ put(parent,'p','gn-ds-biblio',(article.pages||'')+(source?.date?' · '+source.date:''));
+ for(const pair of article.paragraphs||[])parallel(parent,pair.ar,pair.en);
+ if(article.note){
+  const note=put(parent,'aside','gn-ds-note');
+  put(note,'strong','','Editorial explanation · not part of the historical text');
+  put(note,'p','',article.note);
+ }
+ for(const note of full.notesByArticle?.[article.id]||[]){
+  const aside=put(parent,'aside','gn-ds-note');
+  put(aside,'strong','','Scholarly note · '+note.id);
+  put(aside,'p','',note.text);
+  for(const ref of note.source_references||[])external(aside,ref.reference||'Source',ref.url);
+ }
+ const foot=put(parent,'p','gn-ds-provenance');
+ external(foot,'Original Arabic dictionary witness',article.url);
+ if(source?.bibliography||source?.source_status){
+  const d=put(parent,'details','gn-ds-edition');
+  put(d,'summary','','Edition and provenance');
+  if(source.bibliography)put(d,'p','',source.bibliography);
+  if(source.source_status)put(d,'p','',source.source_status);
+ }
+}
+function sourceCard(g,full){
+ const card=el('article','gn-ds-source');card.dataset.gnDsSource=g.key;
+ const header=put(card,'header','gn-ds-source-head');
+ put(header,'h4','gn-ds-author',g.author);
+ put(header,'p','gn-ds-work',g.work);
+ const when=dating(g);
+ put(header,'p','gn-ds-date',when.era+' · '+when.date);
+ if(when.era.startsWith('After')||when.era.startsWith('Modern'))
+  put(header,'p','gn-ds-caution','Comparative source; not evidence that Ibn Rushd knew this later formulation.');
+ for(const row of g.articles){
+  const article=row.article,block=put(card,'section','gn-ds-headword');
+  const title=put(block,'h5','gn-ds-lemma','Complete article available · ');
+  const ar=put(title,'bdi','',article.headword);ar.lang='ar';ar.dir='rtl';
+  if(row.relation&&row.relation!=='exact headword')
+   put(block,'p','gn-ds-relation','Relationship to this term: '+row.relation);
+  const first=article.paragraphs?.[0];
+  if(first){
+   put(block,'p','gn-ds-small','Preview of the complete historical article');
+   parallel(block,preview(first.ar,260),preview(first.en,350),'gn-ds-preview');
+  }
+  const disclosure=put(block,'details','gn-ds-full');
+  disclosure.dataset.gnDsArticle=article.id;
+  put(disclosure,'summary','gn-ds-full-summary','Read complete article · '+article.headword);
+  disclosure.addEventListener('toggle',()=>{
+   if(!disclosure.open||disclosure.dataset.ready==='1')return;
+   const body=put(disclosure,'div','gn-ds-full-body');
+   fullArticle(body,article,full.sources?.[article.source],full);
+   disclosure.dataset.ready='1';
+  });
+ }
+ for(const s of g.short){
+  const block=put(card,'section','gn-ds-extract');
+  const title=put(block,'h5','gn-ds-extract-title','Selected quotation · ');
+  const ar=put(title,'bdi','',s.entry||'');ar.lang='ar';ar.dir='rtl';
+  put(block,'p','gn-ds-small',
+   'Independent short extract. It is not necessarily an abridgement of any complete article above.');
+  parallel(block,s.quote,s.translation);
+  if(s.comment)put(block,'p','gn-ds-context',s.comment);
+  const refs=put(block,'p','gn-ds-provenance');
+  external(refs,'View original Arabic entry',s.url);
+  if(s.verification){
+   const details=put(block,'details','gn-ds-edition');
+   put(details,'summary','','Source verification');
+   put(details,'p','',s.verification);
+  }
+ }
+ return card;
+}
+function renderSources(host,term,full,mode){
+ const groups=groupsFor(term,full);
+ host.replaceChildren();
+ put(host,'h3','gn-ds-heading','Historical dictionary entries');
+ const articles=groups.reduce((n,g)=>n+g.articles.length,0);
+ const quotes=groups.reduce((n,g)=>n+g.short.length,0);
+ put(host,'p','gn-ds-overview',groups.length+' attributed '+(groups.length===1?'source':'sources')+
+  ' · '+articles+' complete '+(articles===1?'article':'articles')+
+  ' · '+quotes+' selected short '+(quotes===1?'extract':'extracts'));
+ put(host,'p','gn-ds-help',
+  'Each dictionary is dated relative to Ibn Rushd (d. 595 AH / 1198 CE). Arabic and English extracts are visible below. Expand the complete article within its own source. Independent quotations are not automatically summaries of that article.');
+ if(!groups.length)put(host,'p','gn-ds-empty','No historical dictionary source is available for this term.');
+ for(const g of groups)host.append(sourceCard(g,full));
+ host.dataset.gnDossierReady=term;
+ if(mode==='standalone'){
+  const meta=host.closest('.lex-card')?.querySelector('.entry-meta');
+  if(meta){
+   meta.replaceChildren();
+   put(meta,'span','',groups.length+' attributed sources');
+   put(meta,'span','',articles+' complete '+(articles===1?'article':'articles'));
+   put(meta,'span','',quotes+' short '+(quotes===1?'extract':'extracts'));
+  }
+ }
+}
