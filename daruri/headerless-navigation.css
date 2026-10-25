@@ -628,3 +628,24 @@
    visibility:visible!important;
  }
 }
+
+/* Reader navigation: Home belongs to the mode menu, never over the passage. */
+@media screen {
+ #gnReaderMobileHome,#gnReaderEscape {display:none!important;}
+ body.reader-enhanced.reading-active #readingControls #gnTopHome,
+ body.reader-enhanced.reading-active #readingControls #gnTopRead {display:none!important;}
+ body.reader-enhanced.reading-active #readingControls #apparatusToolbar,
+ body.reader-enhanced.reading-active #readingControls .reader-display-controls {display:none!important;}
+ body.reader-enhanced.reading-active #readingControls #focusToolbar:not([hidden]) {
+   display:inline-flex!important;visibility:visible!important;
+   align-items:center!important;justify-content:center!important;
+ }
+}
+@media screen and (max-width:620px) {
+ body.reader-enhanced.reading-active #readingControls .gn-reader-global-trailing
+ :is(#focusToolbar,#searchBtn,#themeBtn,#settingsBtn) {
+   width:38px!important;min-width:38px!important;height:40px!important;
+   min-height:40px!important;flex:0 0 38px!important;padding:0!important;
+ }
+ body.reader-enhanced.reading-active #readingControls .gn-reader-global-trailing {gap:4px!important;}
+}
