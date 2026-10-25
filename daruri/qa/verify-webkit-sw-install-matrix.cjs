@@ -58,7 +58,7 @@ async function run(config,origin){
   // Poll resolved registration state in Node: the async promise returned
   // by a browser waitForFunction callback was falsely treated as readiness.
   let snapshot;
-  const deadline=Date.now()+45000;
+  const deadline=Date.now()+(config.core===allCore.length?20000:4000);
   do{
    snapshot=await page.evaluate(async()=>{
     const r=await navigator.serviceWorker.getRegistration();
@@ -70,7 +70,10 @@ async function run(config,origin){
    await page.waitForTimeout(400);
   }while(Date.now()<deadline);
   timedOut=snapshot.active!=='activated';
-  const record={case:config.id,core:config.core,optional:config.optional,
+  const expectedFull=config.core===allCore.length;
+  const rejectedWithoutCache=!snapshot.active&&!snapshot.caches.some(k=>k.includes(config.id));
+  const passed=expectedFull?snapshot.active==='activated':rejectedWithoutCache;
+  const record={case:config.id,core:config.core,optional:config.optional,expectedFull,passed,
    ms:Date.now()-started,timedOut,requests:queries.filter(q=>q.id===config.id).length,
    ...snapshot,errors};
   result.push(record);
@@ -86,9 +89,10 @@ async function run(config,origin){
   server.close();
   fs.writeFileSync(path.join(OUT,'webkit-offline-install-matrix.json'),JSON.stringify(result,null,2));
   console.log('SW MATRIX SUMMARY '+JSON.stringify({cases:result.length,active:result.filter(x=>x.active==='activated').map(x=>x.case),
-   blocked:result.filter(x=>x.active!=='activated').map(x=>x.case)}));
+   blocked:result.filter(x=>x.active!=='activated').map(x=>x.case),
+   regressions:result.filter(x=>!x.passed).map(x=>x.case)}));
  }
  // This is a diagnostic matrix; archive failures, but don't mask material
  // installation failures behind a false successful overall workflow.
- if(result.length!==cases.length||result.some(x=>x.active!=='activated'))process.exitCode=1;
+ if(result.length!==cases.length||result.some(x=>!x.passed))process.exitCode=1;
 })().catch(e=>{server.close();console.error(e.stack||e);process.exitCode=1;});
