@@ -90,7 +90,12 @@
   focus.after(trailing);
   var focusButton=document.getElementById('focusToolbar');
   if(focusButton){
-   trailing.insertBefore(focusButton,trailing.firstChild);
+   // Put the actual Focus selector where the obsolete book was, immediately
+   // after AR/EN and before Bookmark. It must remain visible without scrolling
+   // through the long toolbar on a phone.
+   var actions=document.querySelector('#readingControls .reader-action-slot');
+   if(actions)actions.insertBefore(focusButton,actions.firstChild);
+   else trailing.insertBefore(focusButton,trailing.firstChild);
    // The book-shaped apparatus control is NOT the mode selector. Explicitly
    // remove it instead of relying on contradictory legacy display rules.
    var obsolete=document.getElementById('apparatusToolbar');
