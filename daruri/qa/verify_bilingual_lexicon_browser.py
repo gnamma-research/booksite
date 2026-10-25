@@ -34,7 +34,10 @@ CHECK_PASSAGES=r"""() => {
     missing:arLinks.filter(x=>!enLinks.includes(x)),
     unexpected:enLinks.filter(x=>!arLinks.includes(x)),
     duplicate,annotated,appended,
-    clean_match:cleaned===source,\n    mismatch,expected_context:source.slice(Math.max(0,mismatch-100),mismatch+150),\n    actual_context:cleaned.slice(Math.max(0,mismatch-100),mismatch+200),\n    html_excerpt:clean.innerHTML.slice(Math.max(0,mismatch-250),mismatch+500),
+    clean_match:cleaned===source,
+    mismatch,expected_context:source.slice(Math.max(0,mismatch-100),mismatch+150),
+    actual_context:cleaned.slice(Math.max(0,mismatch-100),mismatch+200),
+    html_excerpt:clean.innerHTML.slice(Math.max(0,mismatch-250),mismatch+500),
     clean_len:clean.textContent.length,
     original_len:sec.segments[i].en.length
    };
@@ -49,7 +52,8 @@ def check_section(page,number):
     total=0
     for item in data:
         detail=f'§{number} segment {item["i"]}: {json.dumps(item,ensure_ascii=False)}'
-        # Uncertain matches stay unmarked rather than being listed at the end.\n        assert not item['appended'],f'No trailing keyword list is permitted: {detail}'
+        # Uncertain matches stay unmarked rather than being listed at the end.
+        assert not item['appended'],f'No trailing keyword list is permitted: {detail}'
         assert not item['unexpected'],f'English invented a dictionary link: {detail}'
         assert not item['duplicate'],f'Duplicate English dictionary key: {detail}'
         assert item['annotated'],f'Incorrect language/key in English link: {detail}'
