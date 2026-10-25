@@ -188,7 +188,9 @@ function detailedGrammar(best,alternatives){
   '<ul>'+alternatives.slice(0,5).map(x=>'<li>'+
    '<bdi lang="ar" dir="rtl">'+esc(x.lemma)+'</bdi> · '+esc(grammarName('pos',x.pos))+
    (x.features?.cas?' · '+esc(grammarName('cas',x.features.cas)):'')+
-   ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search word forms</button></li>').join('')+'</ul></details>':'';
+   (groundedMorphActions(x.surface||best.surface||'',x.lemma,x.root).forms?
+    ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search indexed forms</button>':'')+
+   '</li>').join('')+'</ul></details>':'';
  return details+variants;
 }
 const MORPH_CORPUS=(BOOK?.sections||[]).flatMap(section =>
@@ -231,7 +233,9 @@ function wordMarkup(ctx){
     '</small>'+detailedGrammar(best,alts):
    alts.length?'<p>This form has several possible analyses in the current index. The reading of this occurrence is not established.</p>'+
     '<ul>'+alts.slice(0,5).map(x=>'<li><bdi lang="ar" dir="rtl">'+esc(x.lemma)+'</bdi> · '+esc(grammarName('pos',x.pos))+
-     ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search word forms</button></li>').join('')+'</ul>':
+     (groundedMorphActions(word,x.lemma,x.root).forms?
+       ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search indexed forms</button>':'')+
+     '</li>').join('')+'</ul>':
     '<p>No dependable analysis is available here yet. Ordinary word search remains available.</p>')+
   '</section>';
  const dictionary=terms.length?
