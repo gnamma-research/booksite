@@ -23,7 +23,7 @@ jobs:
           python daruri/qa/stage2_shootout/vivliostyle_micro_fixture.py \
             daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
             daruri/qa/stage2_shootout/runtime_ultimate/vivliostyle-micro.source.txt
-      - name: OVERRIDE ONLY in ephemeral research runner: latest pages-to-pdf 0.4.1
+      - name: "OVERRIDE ONLY in ephemeral research runner: latest pages-to-pdf 0.4.1"
         run: |
           cd daruri/qa/stage2_shootout
           npm pkg set overrides.pages-to-pdf=0.4.1
