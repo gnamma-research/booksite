@@ -785,6 +785,8 @@ function create(ctx){
   bar.setAttribute('aria-label','Actions for selected text');bar.hidden=false;
   bar.innerHTML=rdTool('Highlight selected words','data-rd="selection-bookmark"','highlight')+
    rdTool('Add a personal note for selected words','data-rd="selection-note"','note')+
+   (next.lang==='ar' && /^[\p{L}\p{M}]+$/u.test(next.quote) && /[\u0621-\u064a]/u.test(next.quote) ?
+    rdTool('Word Context for selected word','data-rd="selection-word-context"','book') : '')+
    rdTool('Dismiss selection actions','data-rd="selection-dismiss"','close');
  }
  function hideSelection(){const bar=$('#gn-rd-selection-bar');if(bar)bar.hidden=true;}
@@ -1545,6 +1547,14 @@ function create(ctx){
   if(action==='language'){ui.context=btn.dataset.value;const scroll=window.scrollY;render();window.scrollTo({top:scroll,behavior:'instant'});return;}
   if(action==='expand'){ui.expanded=!ui.expanded;const scroll=window.scrollY;render();window.scrollTo({top:scroll,behavior:'instant'});return;}
   if(action==='selection-dismiss'){hideSelection();return;}
+  if(action==='selection-word-context'&&selection){
+   const selectedWord={...selection};
+   hideSelection();
+   if(!window.GnammaWordContext?.openSelectedQuote?.(selectedWord)){
+    ctx.notify('Select exactly one Arabic word to open Word Context.');
+   }
+   return;
+  }
   if(action==='selection-bookmark'&&selection){upsert('quote',selection);hideSelection();window.getSelection()?.removeAllRanges();return;}
   if(action==='selection-note'&&selection){const chosen={...selection};hideSelection();window.getSelection()?.removeAllRanges();showEditor(chosen);return;}
   if(action==='section-bookmark'){toggleSection(String(btn.dataset.section||state.n));return;}
