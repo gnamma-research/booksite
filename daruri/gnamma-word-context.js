@@ -149,7 +149,7 @@ function actions(word,analysis){
 }
 function search(word,mode,facet='text'){
  close();
- window.GnammaUnifiedSearch?.openWith?.(word,mode,facet);
+ window.GnammaUnifiedSearch?.openWith?.(word,mode,facet,'work');
 }
 function showByKind(list,heading,css=''){
  if(!list?.length)return '';
