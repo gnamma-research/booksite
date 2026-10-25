@@ -44,6 +44,14 @@ button.addEventListener('click',async()=>{
     const response=await fetch(sourceUrl,{cache:'no-store'});
     if(!response.ok)throw Error('Full Scholarly HTML unavailable HTTP '+response.status);
     markedUp=await response.text();
+    // Vivliostyle loads source HTML via blob: and may resolve root-relative
+    // @font-face URLs against that blob rather than the original site. Use
+    // exact same-origin absolute URLs to preserve Noto Serif/Naskh Arabic
+    // and avoid hiding font loss behind the emitter's fallback fonts.
+    markedUp=markedUp.replaceAll('url("/daruri/build/fonts/',
+       'url("'+location.origin+'/daruri/build/fonts/')
+       .replaceAll("url('/daruri/build/fonts/",
+       "url('"+location.origin+"/daruri/build/fonts/");
     if(!markedUp.includes('parallel-text')||!markedUp.includes('lex-article')||
        !markedUp.includes('Noto Naskh Arabic'))throw Error('Input missing genuine Scholarly Arabic/English/lexicon');
     if(/\.pdf(\?|$)/i.test(sourceUrl))throw Error('Forbidden pre-existing PDF input');
