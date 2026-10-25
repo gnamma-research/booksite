@@ -17,13 +17,22 @@
 .gn-copy-type-mark{display:inline-block;font:700 16px/1 Georgia,serif;letter-spacing:-.065em;white-space:nowrap}
 .gn-copy-arrow{margin-left:auto;color:var(--muted,#777);font-size:16px}
 .gn-copy-rule{height:1px;background:var(--border,var(--line,#ddd));margin:5px 1px}
+/* Source-number markers remain visible but are never copy-link controls.
+   In Focus modes the § + ¶ metadata appears together above each passage. */
 #reader .passage-grid{position:relative}
-#reader .gn-paragraph-link{position:absolute;z-index:1;top:2px;left:-45px;min-width:38px;min-height:39px;border:0;border-radius:7px;background:transparent;color:var(--muted,#797b72);font:500 11px/1.4 var(--sans,system-ui);opacity:.42;cursor:pointer}
-#reader .passage-grid:hover>.gn-paragraph-link,#reader .gn-paragraph-link:focus-visible,#reader .gn-paragraph-link:hover{opacity:1;background:var(--accent-soft,#ede6df);color:var(--text,#2d342d)}
-#reader .gn-paragraph-link:focus-visible{outline:2px solid var(--accent,#956a4d);outline-offset:2px}
+#reader .gn-paragraph-number{
+ position:absolute;z-index:1;top:6px;left:-42px;
+ min-width:35px;padding:3px 2px;border:0;background:transparent;
+ color:var(--text-soft,var(--muted,#65615b));
+ font:600 12px/1.4 var(--sans,system-ui,sans-serif);
+ text-align:center;font-variant-numeric:tabular-nums;
+ opacity:.88;cursor:default;pointer-events:none;
+ -webkit-user-select:none;user-select:none
+}
+body:is(.focus-level-1,.focus-level-2,.focus-level-3) #reader .gn-paragraph-number{display:none!important}
 #reader .gn-copy-target{outline:2px solid var(--accent,#9c6f4f)!important;outline-offset:7px;background:var(--accent-soft,#f2e9df);transition:background 1.5s}
-@media(max-width:850px){#reader .gn-paragraph-link{left:-35px;min-width:30px;min-height:40px;opacity:.72}}
-@media(max-width:600px){#reader .gn-paragraph-link{position:absolute;left:-34px;top:0;min-height:44px;min-width:44px;margin:0;opacity:.8}}
+@media(max-width:850px){#reader .gn-paragraph-number{left:-33px;min-width:27px;font-size:11px}}
+@media(max-width:600px){#reader .gn-paragraph-number{left:-31px;top:5px;min-width:27px;font-size:11px}}
 .gn-copy-backdrop{position:fixed;inset:0;z-index:720;background:#101b1780;display:flex;justify-content:center;align-items:center;padding:12px;box-sizing:border-box;font-family:var(--sans,system-ui,sans-serif)}
 body.gn-copy-sheet-open{overflow:hidden!important}
 .gn-copy-sheet{width:min(460px,100%);max-height:min(88dvh,760px);display:flex;flex-direction:column;min-height:0;border-radius:15px;overflow:hidden;border:1px solid var(--border,var(--line,#ddd));background:var(--surface,#fffdf8);color:var(--text,#30372f);box-shadow:0 25px 90px #0004}
@@ -63,7 +72,7 @@ body.gn-copy-sheet-open{overflow:hidden!important}
 .gn-copy-toast{position:fixed;bottom:calc(75px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:800;max-width:calc(100vw - 24px);padding:9px 14px;background:var(--text,#253127);color:var(--surface,#fff);box-shadow:0 7px 20px #0003;border-radius:8px;font:12px/1.45 var(--sans,system-ui)}
 @media(max-width:600px){.gn-copy-backdrop{align-items:flex-end;padding:0}.gn-copy-sheet{width:100%;max-height:89dvh;border-radius:14px 14px 0 0;padding-bottom:env(safe-area-inset-bottom)}.gn-copy-sheet-body{padding:10px 14px 12px}.gn-copy-sheet-header{padding:11px 14px 8px}.gn-copy-menu{width:229px}.gn-copy-sheet-title{font-size:16px}}
 @media(prefers-reduced-motion:reduce){#reader .gn-copy-target{transition:none}}
-@media print{.gn-copy-wrapper .gn-copy-chevron,.gn-copy-menu,.gn-copy-backdrop,.gn-copy-toast,#reader .gn-paragraph-link{display:none!important}}
+@media print{.gn-copy-wrapper .gn-copy-chevron,.gn-copy-menu,.gn-copy-backdrop,.gn-copy-toast,#reader .gn-paragraph-number{display:none!important}}
 /* Preserve the entire toolbar on the narrowest iPhones without expanding the
    document viewport; the controls scroll horizontally inside their own rail. */
 @media(max-width:420px){
