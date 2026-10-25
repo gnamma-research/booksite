@@ -42,6 +42,7 @@ Object.assign(RD_ICON,{
  az:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19 8 5l5 14M5 15h6M16 6h5l-5 12h5"/></svg>',
  order:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 5h16M4 10h13M4 15h9M4 20h5"/></svg>',
  book:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 6c-3-2-6-2-10-1v14c4-1 7-1 10 1 3-2 6-2 10-1V5c-4-1-7-1-10 1zM12 6v14"/></svg>',
+ wordContext:'<svg class="gn-rd-word-context-symbol" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7.2"/><path d="m15.2 15.2 5.2 5.2"/><text x="10" y="13.2" text-anchor="middle" font-family="Amiri, Noto Naskh Arabic, serif" font-size="12" fill="currentColor" stroke="none">ع</text></svg>',
  index:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5h14M5 10h14M5 15h10M5 20h7"/></svg>',
  link:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 8 0l2-2a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-8 0l-2 2a5 5 0 0 0 7 7l2-2"/></svg>',
  lesson:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m2 10 10-5 10 5-10 5zM6 12v5c4 3 8 3 12 0v-5"/></svg>',
@@ -786,7 +787,7 @@ function create(ctx){
   bar.innerHTML=rdTool('Highlight selected words','data-rd="selection-bookmark"','highlight')+
    rdTool('Add a personal note for selected words','data-rd="selection-note"','note')+
    (next.lang==='ar' && /[\u0621-\u064a]/u.test(next.quote) ?
-    rdTool('Word Context for Arabic selection','data-rd="selection-word-context"','book',false,false,'Word Context') : '')+
+    rdTool('Word Context for Arabic selection','data-rd="selection-word-context"','wordContext') : '')+
    rdTool('Dismiss selection actions','data-rd="selection-dismiss"','close');
  }
  function hideSelection(){const bar=$('#gn-rd-selection-bar');if(bar)bar.hidden=true;}
