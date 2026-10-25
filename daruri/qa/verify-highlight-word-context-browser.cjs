@@ -108,6 +108,61 @@ async function exercise(engine,{mobile=false}={}){
    tag+': Word Context did not open for the selected Arabic word');
   await page.keyboard.press('Escape');
   await page.locator('#gnamma-word-context').waitFor({state:'hidden',timeout:6000});
+  // Focus modes must show both section and paragraph IN the reading flow,
+  // not merely in the dock or the hover-only paragraph permalink.
+  for(const level of [1,2,3]){
+   await page.evaluate(n=>{
+    const prefs=JSON.parse(localStorage.getItem('daruri-reader-v2')||'{}');
+    prefs.focusLevel=n;prefs.focusMode=true;prefs.focusApparatus=n===1;prefs.n='2';
+    localStorage.setItem('daruri-reader-v2',JSON.stringify(prefs));
+    history.replaceState(null,'','#section=2');
+   },level);
+   await page.reload({waitUntil:'domcontentloaded',timeout:90000});
+   await page.locator('body.focus-level-'+level).waitFor({state:'attached',timeout:35000});
+   const root=level===3?'#gn-continuous-2':'#reader';
+   const passage=page.locator(root+' .passage-grid[data-segment="1"]').first();
+   await passage.waitFor({state:'visible',timeout:30000});
+   const locator=passage.locator(':scope > .gn-focus-reading-locus');
+   await locator.waitFor({state:'visible',timeout:22000});
+   const inText=await locator.evaluate(node=>{
+    const grid=node.closest('.passage-grid'),rect=node.getBoundingClientRect();
+    const box=grid.getBoundingClientRect();
+    return {text:node.textContent,aria:node.getAttribute('aria-label'),
+     within:rect.left>=box.left-2&&rect.right<=box.right+2,
+     outsideSource:!node.closest('.passage-ar,.passage-en'),
+     size:rect.width>50&&rect.height>=15};
+   });
+   assert.match(inText.text,/§2\s*·\s*¶2/,tag+' Focus '+level+': incorrect inline locator');
+   assert.match(inText.aria,/Section 2, paragraph 2/,tag+' Focus '+level+': locator inaccessible');
+   assert.ok(inText.within&&inText.size&&inText.outsideSource,
+    tag+' Focus '+level+': locator hidden, off-column or inserted into source text: '+JSON.stringify(inText));
+   if(level===2){
+    // Select an entire Arabic passage, not precisely one word. The previous
+    // exact-one-word condition made Word Context disappear for real selections.
+    const arabic=passage.locator('.passage-ar');
+    if(!(await arabic.isVisible())){
+     await page.evaluate(()=>{
+      const toggle=document.querySelector('[data-language-toggle="arabic"]');
+      if(!toggle)throw Error('No Arabic toggle during Focus');
+      toggle.click();
+     });
+     await arabic.waitFor({state:'visible',timeout:18000});
+    }
+    await arabic.scrollIntoViewIfNeeded();
+    await arabic.evaluate(side=>{
+     const range=document.createRange();range.selectNodeContents(side);
+     const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);
+     document.dispatchEvent(new Event('selectionchange'));
+    });
+    const action=page.locator('#gn-rd-selection-bar [data-rd="selection-word-context"]');
+    await action.waitFor({state:'visible',timeout:18000});
+    assert.match(await action.innerText(),/Word Context/,tag+' Focus: missing context action for an Arabic phrase');
+    await action.click();
+    await page.locator('#gnamma-word-context:not([hidden])').waitFor({state:'visible',timeout:12000});
+    await page.keyboard.press('Escape');
+    await page.locator('#gnamma-word-context').waitFor({state:'hidden',timeout:12000});
+   }
+  }
   assert.ok(!errors.some(e=>/reading-desk|gnamma-word-context|find is not a function|surroundContents/i.test(e)),
    tag+': page errors '+JSON.stringify(errors));
   console.log('PASS '+tag+' persistent visible highlight and explicit Word Context');
