@@ -1,0 +1,91 @@
+name: Daruri latest master scholarly and delivery smoke (nonrelease)
+on:
+  push:
+    branches: [qa/daruri-current-selection-audit-20261025]
+    paths:
+      - 'daruri/qa/verify-copy-links.cjs'
+      - 'daruri/qa/verify-reading-navigation-history.js'
+      - 'daruri/qa/verify-reader-source-notes.js'
+      - 'daruri/qa/ENGLISH_NOTE_ALIGNMENT.json'
+      - 'daruri/reading-mode-controls.js'
+      - 'daruri/source-archive-manifest.json'
+      - '.github/workflows/daruri-latest-master-scholarly-smoke-20261025.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  source-and-assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --prefix daruri/qa jsdom@26
+      - name: Source scripts and exact offline release assets
+        run: |
+          node --check daruri/reading-mode-controls.js
+          node daruri/qa/verify-copy-links.cjs
+          node daruri/qa/verify-reading-navigation-history.js
+          node daruri/qa/verify-reader-source-notes.js
+          node daruri/qa/verify-quran-context.js
+          node daruri/qa/verify-ready-editions.js
+          node daruri/qa/verify-personal-export-safety.js
+          node daruri/qa/verify-current-source-archive.cjs
+  english-note-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Avoid unrelated apt errors
+        run: |
+          for f in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$f" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$f"; then sudo mv "$f" "$f.disabled"; fi
+          done
+      - run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Verify every English N note anchor after teacher edits
+        run: node daruri/qa/verify-english-publisher-notes.cjs
+  editions-download-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Avoid unrelated apt errors
+        run: |
+          for f in /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources; do
+            [ -f "$f" ] || continue
+            if grep -q 'packages.microsoft.com/ubuntu/24.04/prod' "$f"; then sudo mv "$f" "$f.disabled"; fi
+          done
+      - run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium
+      - name: Real local HTTP server and actual research ZIP download/checksum
+        shell: bash
+        run: |
+          python3 -m http.server 8123 --bind 127.0.0.1 > /tmp/daruri-source-http.log 2>&1 &
+          pid=$!
+          trap 'kill $pid || true' EXIT
+          for i in {1..50}; do
+            if curl --silent --fail http://127.0.0.1:8123/daruri/ > /dev/null; then break; fi
+            sleep 0.25
+          done
+          node daruri/qa/verify-published-selector-browser.mjs
+  personal-pdf-map-release-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fail closed if any of five current personal PDF maps are bound to old PDFs
+        run: node daruri/qa/verify-personal-pdf-upgrade.cjs
