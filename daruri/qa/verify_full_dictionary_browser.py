@@ -36,7 +36,7 @@ def check_dictionary(browser, width, height, label):
     page.screenshot(path=str(ARTIFACTS / ('dictionary-' + label + '.png')), full_page=False)
     details.locator(':scope > summary').click()
     assert details.get_attribute('open') is None
-    assert 'Show full historical dictionary' in details.locator('summary').inner_text()
+    assert 'Show full historical dictionary' in details.locator(':scope > summary').inner_text()
     page.close()
 
 
