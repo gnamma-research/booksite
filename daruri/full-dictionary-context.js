@@ -213,6 +213,64 @@
     }
   }
 
+  function addIndexedSearch(author, term) {
+    if (!author || author.dataset.gnFdMorphChecked) return;
+    author.dataset.gnFdMorphChecked = 'pending';
+    const row = indexed(term), engine = window.GnammaMorphology;
+    const search = window.GnammaUnifiedSearch;
+    if (!row?.ar || !engine?.loadLexicon || !engine?.ensure || !search?.query || !search?.openWith) {
+      author.dataset.gnFdMorphChecked = 'unavailable';
+      return;
+    }
+    engine.loadLexicon().then(lexicon => {
+      const lemma = engine.fold(row.ar);
+      if (!lexicon.some(x => x.normalized === lemma)) return null;
+      return engine.ensure('daruri').then(() => {
+        const result = search.query(row.ar, {mode:'morph-lemma',scope:'work',facet:'all'});
+        if (!result?.total) return null;
+        const occurrenceCount = result.results.reduce((n, item) =>
+          n + (item.matched?.occurrences?.length || 0), 0);
+        const distinctSections = new Set(result.results.map(x => x.section).filter(Boolean)).size;
+        if (!occurrenceCount || !distinctSections) return null;
+        const root = row.root;
+        let rootRelatives = false;
+        if (root) {
+          const rootResults = search.query(root, {mode:'morph-root',scope:'work',facet:'all'});
+          rootRelatives = rootResults.results.some(x =>
+            engine.fold(x.matched?.lemma || '') !== lemma &&
+            !!x.matched?.lemma);
+        }
+        return {lemma:row.ar,root,occurrenceCount,distinctSections,rootRelatives};
+      });
+    }).then(info => {
+      if (!author.isConnected || author.dataset.gnFdMorphChecked !== 'pending') return;
+      if (!info) {author.dataset.gnFdMorphChecked='no-indexed-results';return;}
+      const group = el('div','gn-fd-morph-actions');
+      appendText(group,'Search attested word forms','h4');
+      appendText(group,
+        info.occurrenceCount+' indexed occurrences in '+info.distinctSections+
+        ' sections · curated morphological grouping, not a complete grammatical analysis.',
+        'p','gn-fd-morph-summary');
+      const btn=el('button','gn-fd-morph-button','Find indexed forms in the text');
+      btn.type='button';
+      btn.dataset.gnFdMorph='morph-lemma';
+      btn.dataset.gnFdValue=info.lemma;
+      group.append(btn);
+      if (info.rootRelatives) {
+        const relative=el('button','gn-fd-morph-button','Explore attested root relatives');
+        relative.type='button';
+        relative.dataset.gnFdMorph='morph-root';
+        relative.dataset.gnFdValue=info.root;
+        group.append(relative);
+      }
+      author.append(group);
+      author.dataset.gnFdMorphChecked='ready';
+    }).catch(error => {
+      author.dataset.gnFdMorphChecked='unavailable';
+      console.warn('Indexed word forms not available for this term:',error);
+    });
+  }
+
   function reviseReaderPopup(body, term) {
     const sources = body.querySelector('#lex-sources');
     if (!sources) return;
@@ -269,6 +327,7 @@
           'These are curated illustrative passages, not a complete count of every inflected occurrence.');
         if (heading) heading.insertAdjacentElement('afterend', p);
       }
+      addIndexedSearch(author, term);
     }
     const footer = body.querySelector(':scope > .return-reading');
     if (footer && !body.querySelector(':scope > .gn-fd-page-link')) {
@@ -392,12 +451,30 @@
       '.gn-fd-page-link{display:inline-flex;align-items:center;min-height:42px;font:600 12px/1.4 system-ui,sans-serif;margin:12px 8px 12px 0;color:var(--accent,inherit)}',
       '#lex-sources .gn-fd-toggle{max-width:100%}',
       '#detailContent #gnw-dictionary-search{display:none!important}',
+      '.gn-fd-morph-actions{border-top:1px solid var(--line,var(--border,#ddd));margin-top:14px;padding-top:12px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}',
+      '.gn-fd-morph-actions h4,.gn-fd-morph-summary{flex-basis:100%;margin:0}',
+      '.gn-fd-morph-actions h4{font:600 14px/1.45 system-ui,sans-serif}.gn-fd-morph-summary{font:12px/1.55 system-ui,sans-serif;opacity:.85}',
+      '.gn-fd-morph-button{min-height:42px;border:1px solid var(--line,var(--border,#ccc));border-radius:8px;padding:9px 12px;background:var(--paper,transparent);color:var(--accent,inherit);font:600 12px/1.45 system-ui,sans-serif;cursor:pointer}',
       '@media(max-width:660px){.gn-fd-parallel{grid-template-columns:minmax(0,1fr);gap:9px}.gn-fd-ar{font-size:21px!important}.gn-fd-body{padding:10px 12px 14px}}',
       '@media print{.gn-fd-toggle:not([open]){display:none}.gn-fd-toggle{break-inside:auto}.gn-fd-article{break-inside:avoid-page}}'
     ].join('\n');
     document.head.append(st);
   }
   function start() {
+    document.addEventListener('click',event => {
+      const button=event.target.closest('[data-gn-fd-morph]');
+      if (!button) return;
+      event.preventDefault();
+      event.stopPropagation();
+      const search=window.GnammaUnifiedSearch;
+      if (!search?.openWith) return;
+      const mode=button.dataset.gnFdMorph, value=button.dataset.gnFdValue;
+      if (!value || !['morph-lemma','morph-root'].includes(mode)) return;
+      // Close the source card before opening search, preserving its original
+      // reader return position and avoiding two stacked modal focus traps.
+      document.getElementById('detailClose')?.click();
+      search.openWith(value,mode,'text');
+    },true);
     styles();
     sync();
     getIndex().then(() => schedule()).catch(error => console.warn('Gnamma compact dictionary index:',error));
