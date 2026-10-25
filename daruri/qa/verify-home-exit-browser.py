@@ -36,6 +36,7 @@ def case(browser,engine,width,url):
     read=box(page,'#gnTopRead')
     assert_gap(logo,home,'mosaic and Home overlap')
     assert_gap(home,read,'Home and Read overlap')
+    assert 'M12 5.5' in page.locator('#gnTopRead svg path').first.get_attribute('d'), 'Read must display the open-book symbol'
     assert not page.locator('#globalViewLabel').is_visible(), 'Duplicate Home caption'
     if width>=941:
         # The labels must be entirely inside their own buttons.
