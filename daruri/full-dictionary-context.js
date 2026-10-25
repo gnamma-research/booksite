@@ -144,6 +144,7 @@
     const body = el('div', 'gn-fd-body');
     toggle.append(summary, body);
     toggle.addEventListener('toggle', () => {
+      summary.textContent = toggle.open ? 'Hide full historical dictionary articles' : 'Show full historical dictionary articles';
       if (!toggle.open || toggle.dataset.gnFdReady === '1' || toggle.dataset.gnFdBusy === '1') return;
       toggle.dataset.gnFdBusy = '1';
       body.replaceChildren(el('p', 'gn-fd-status', 'Loading the complete Arabic and English dictionary articles…'));
@@ -169,7 +170,9 @@
     const article = document.querySelector('#lexArticle .lex-card');
     if (article) {
       const title = article.querySelector('.lex-title')?.textContent?.trim();
+      const meaning = article.querySelector('[data-dict-panel="meaning"]');
       const sources = article.querySelector('[data-dict-panel="sources"]');
+      if (title && meaning) enhance(meaning, title, 'end');
       if (title && sources) enhance(sources, title, 'end');
     }
     const popup = document.getElementById('infoOverlay');
@@ -206,6 +209,7 @@
       '.gn-fd-provenance{font:12px/1.55 system-ui,sans-serif}.gn-fd-provenance summary{cursor:pointer;color:var(--accent,inherit);padding:7px 0}',
       '.gn-fd-body a{color:var(--accent,inherit);text-decoration:underline;text-underline-offset:2px}',
       '.gn-fd-error{color:#a44939;font:13px/1.5 system-ui,sans-serif}.gn-fd-status{font:13px/1.5 system-ui,sans-serif}',
+      '#lexArticle[data-dict-view="all"] [data-dict-panel="sources"]>.gn-fd-toggle{display:none}',
       '@media(max-width:660px){.gn-fd-parallel{grid-template-columns:minmax(0,1fr);gap:9px}.gn-fd-ar{font-size:21px!important}.gn-fd-body{padding:10px 12px 14px}}',
       '@media print{.gn-fd-toggle:not([open]){display:none}.gn-fd-toggle{break-inside:auto}.gn-fd-article{break-inside:avoid-page}}'
     ].join('\n');
