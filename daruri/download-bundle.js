@@ -6,7 +6,7 @@
 
   // BEGIN DARURI RELEASE ASSETS
   const RELEASE_VERSION = "daruri13-lesson12-method-20261024";
-  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "download-bundle.js", "pdf-editions-manifest.json", "sw.js", "daruri-study-guide.pdf", "study-guide-data.js", "study-guide.js"]);
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "full-dictionary-context.js", "full-dictionary-data.js", "download-bundle.js", "pdf-editions-manifest.json", "sw.js", "daruri-study-guide.pdf", "study-guide-data.js", "study-guide.js"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -176,6 +176,8 @@
       ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-fallback-quran1'],
       ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261022-qcontext1'],
+      ['daruri/full-dictionary-context.js', 'full-dictionary-context.js?v=20261025-sinaa1'],
+      ['daruri/full-dictionary-data.js', 'full-dictionary-data.js?v=20261025-sinaa1'],
       ['daruri/quran-context-ui.css', 'quran-context-ui.css?v=20261022-qcontext1'],
       ['daruri/quran-context-data.json', 'quran-context-data.json?v=20261022-qcontext1'],
       ['daruri/quran-context-data.js', 'quran-context-data.js?v=20261022-qcontext1'],
