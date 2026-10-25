@@ -40,6 +40,11 @@ jobs:
           npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
           cd daruri/qa/stage2_shootout
           npx playwright install --with-deps --only-shell chromium
+      - name: Serve the emitter's explicitly documented licensed fallback fonts
+        run: |
+          mkdir -p fonts
+          cp daruri/qa/stage2_shootout/node_modules/vivliostyle-pdf/public/fonts/*.ttf fonts/
+          find fonts -name '*.ttf' -printf '%f %s bytes\n'
       - name: Produce ACTUAL in-browser PDF Blob from real Arabic + scholarly apparatus
         env:
           BENCH_BROWSER: ${{ matrix.browser }}
