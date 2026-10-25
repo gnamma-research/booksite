@@ -107,6 +107,7 @@
   window.GnammaPersonalExportModel=model;
   let manifest=null,records=[],selectedIds=new Set(),busy=false,resultURL=null,resultFile=null;
   const dynamicEditions=new Map(); // Volatile, browser-private; never uploaded.
+  let initGeneration=0; // Discard late fetches from a detached Editions form.
   let baseMapCatalog=null;
   let storageListenerInstalled=false;
   let lastFilename='';
@@ -115,7 +116,8 @@
     out.hidden=false;out.classList.add('error');out.textContent=text;
   }
   function info(text){
-    const out=$('pe-alert');out.hidden=!text;out.classList.remove('error');out.textContent=text||'';
+    const out=$('pe-alert');if(!out)return;
+    out.hidden=!text;out.classList.remove('error');out.textContent=text||'';
   }
   function mode(){return document.querySelector('input[name="pe-mode"]:checked')?.value||'none';}
   function prefs(){return {
@@ -136,6 +138,7 @@
     return new URL(file,URL_ROOT).href;
   }
   function syncForm(event){
+    if(!$('pe-form'))return; // A different route may have removed the inline editor.
     if(event?.type==='change'){$('pe-result').hidden=true;info('');}
     const has=mode()!=='none';
     $('pe-note-options').hidden=!has;
@@ -178,8 +181,10 @@
       (visible.length>240?' · Showing first 240; narrow the search to display other items':'');
   }
   function progress(label,percent){
-    $('pe-progress').hidden=false;$('pe-progress-text').textContent=label;
-    $('pe-bar').value=Math.max(0,Math.min(100,percent));
+    const progress=$('pe-progress'),text=$('pe-progress-text'),bar=$('pe-bar');
+    if(!progress||!text||!bar)return; // Export can outlive an unmounted dialog.
+    progress.hidden=false;text.textContent=label;
+    bar.value=Math.max(0,Math.min(100,percent));
   }
   function blankCanvas(size){
     const factor=2;
@@ -532,6 +537,7 @@
   }
   async function submit(event){
     event.preventDefault();if(busy)return;
+    const originForm=$('pe-form');if(!originForm)return;
     const file=$('pe-edition').value;
     if(!manifest?.files?.[file])return showError('Please choose an available edition.');
     if(mode()==='none'){window.location.assign(fileUrl(file));return;}
@@ -539,6 +545,8 @@
     busy=true;$('pe-result').hidden=true;info('');syncForm();
     try{
       const {blob,pages,linked,precise,unmapped,unsupported,hadWordMap}=await generate(file,rows,p);
+      // Do not reveal or download a stale PDF after navigating away mid-export.
+      if(!originForm.isConnected||$('pe-form')!==originForm)return;
       const stem=file.split('/').pop().replace(/\.pdf$/,'');
       startResult(blob,stem+'-personal-'+new Date().toISOString().slice(0,10)+'.pdf');
       info(rows.length+' personal item'+(rows.length===1?'':'s')+' included; '+linked+' linked P reference'+(linked===1?'':'s')+
@@ -550,7 +558,12 @@
           ' Choose Download my PDF below to save your copy.':
           ' On iPhone/iPad, use Open or Share if automatic downloading was blocked.'));
       progress('Personal PDF generated on this device.',100);
-    }catch(error){showError('PDF export failed: '+(error?.message||error)+'. The original PDF and your Reading Desk are unchanged.');$('pe-progress').hidden=true;}
+    }catch(error){
+      if(originForm.isConnected&&$('pe-form')===originForm){
+        showError('PDF export failed: '+(error?.message||error)+'. The original PDF and your Reading Desk are unchanged.');
+        const progress=$('pe-progress');if(progress)progress.hidden=true;
+      }
+    }
     finally{busy=false;syncForm();}
   }
   function decoratePersonalIcons(){
@@ -568,12 +581,17 @@
     }
   }
   async function init(){
+    const form=$('pe-form');if(!form)return;
+    const generation=++initGeneration;
+    const current=()=>generation===initGeneration&&form.isConnected&&$('pe-form')===form;
     decoratePersonalIcons();
     records=loadDesk();selectedIds=new Set(records.map(r=>r.id));
     try{
       const res=await fetch(new URL('pdf-editions-manifest.json',URL_ROOT),{cache:'no-cache'});
+      if(!current())return;
       if(!res.ok)throw Error('Edition list unavailable (HTTP '+res.status+')');
       const data=await res.json();
+      if(!current())return;
       if(!data.files||!data.default_pdf)throw Error('Edition list is incomplete');
       manifest=data;
       // Published Reading/Study A4 PDFs receive exact per-edition maps.
@@ -582,8 +600,10 @@
           fetch(new URL('editions/manifest.json',URL_ROOT),{cache:'no-cache'}),
           fetch(new URL('editions/maps/manifest.json',URL_ROOT),{cache:'no-cache'})
         ]);
+        if(!current())return;
         if(b.ok&&m.ok){
           const bas=await b.json(),maps=await m.json();
+          if(!current())return;
           if(bas.status==='verified'&&maps.status==='verified'&&
              Array.isArray(bas.files)&&bas.files.length===12&&
              Array.isArray(maps.files)&&maps.files.length===12){
@@ -635,7 +655,12 @@
         $('pe-highlights').checked=query.get('highlights')==='1';
       }
       if(!$('pe-edition').value)throw Error('No published editions available');
-    }catch(error){showError('Could not load the edition list: '+error.message);$('pe-edition').innerHTML='<option value="">Edition list unavailable</option>';}
+    }catch(error){
+      if(!current())return;
+      showError('Could not load the edition list: '+error.message);
+      const select=$('pe-edition');if(select)select.innerHTML='<option value="">Edition list unavailable</option>';
+    }
+    if(!current())return;
     document.querySelectorAll('input[name="pe-mode"]').forEach(e=>e.addEventListener('change',syncForm));
     ['pe-edition','pe-personal','pe-bookmarks','pe-highlights','pe-annotations','pe-appendix','pe-dates','pe-order'].forEach(id=>$(id).addEventListener('change',syncForm));
     $('pe-search').addEventListener('input',renderPicker);
@@ -644,7 +669,7 @@
     $('pe-check-none').addEventListener('click',()=>{selectedIds.clear();$('pe-result').hidden=true;info('');syncForm();});
     // Other tabs can update the local Reading Desk; never export stale selections.
     if(!storageListenerInstalled)window.addEventListener('storage',e=>{
-      if(e.key!==STORAGE)return;
+      if(e.key!==STORAGE||!$('pe-form'))return;
       records=loadDesk();
       const activeIds=new Set(records.map(r=>r.id));
       selectedIds=new Set([...selectedIds].filter(id=>activeIds.has(id)));
