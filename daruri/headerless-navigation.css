@@ -649,3 +649,26 @@
  }
  body.reader-enhanced.reading-active #readingControls .gn-reader-global-trailing {gap:4px!important;}
 }
+
+/* Mode chooser occupies the old apparatus-book slot, after AR/EN. */
+@media screen {
+ body.reader-enhanced.reading-active #readingControls .reader-action-slot > #focusToolbar {
+   display:inline-flex!important;visibility:visible!important;
+   position:relative!important;flex:0 0 40px!important;
+   width:40px!important;min-width:40px!important;max-width:40px!important;
+   height:40px!important;min-height:40px!important;
+   margin:0!important;padding:0!important;
+   align-items:center!important;justify-content:center!important;
+   border:1px solid var(--border)!important;border-radius:8px!important;
+   background:var(--surface)!important;color:var(--text-soft)!important;
+ }
+ body.reader-enhanced.reading-active #readingControls .reader-action-slot > #focusToolbar svg {
+   display:block!important;width:20px!important;height:20px!important;
+ }
+}
+@media screen and (max-width:620px) {
+ body.reader-enhanced.reading-active #readingControls .reader-action-slot > #focusToolbar {
+   flex:0 0 38px!important;width:38px!important;min-width:38px!important;
+   max-width:38px!important;height:40px!important;
+ }
+}
