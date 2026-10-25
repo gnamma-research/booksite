@@ -5,8 +5,8 @@
   'use strict';
 
   // BEGIN DARURI RELEASE ASSETS
-  const RELEASE_VERSION = "daruri13-lesson12-method-20261024";
-  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "full-dictionary-context.js", "full-dictionary-data.js", "download-bundle.js", "pdf-editions-manifest.json", "sw.js", "daruri-study-guide.pdf", "study-guide-data.js", "study-guide.js"]);
+  const RELEASE_VERSION = "daruri14-sinaa-full-dictionary-20261025";
+  const RELEASE_ASSETS = new Set(["daruri.pdf", "daruri-study.pdf", "daruri-english.pdf", "daruri-arabic.pdf", "daruri-arabic-vowelled.pdf", "edition-r3-20261020.js", "dictionary-r3-20261020.js", "source-reference-data.js", "download-bundle.js", "pdf-editions-manifest.json", "sw.js"]);
   // END DARURI RELEASE ASSETS
 
   const root = new URL('.', document.baseURI);
@@ -158,8 +158,8 @@
       ['daruri/icon-192.png', 'icon-192.png'],
       ['daruri/icon-512.png', 'icon-512.png'],
       ['daruri/dictionary.html', 'dictionary.html'],
-      ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri13-lesson12-method-20261024'],
-      ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=daruri13-lesson12-method-20261024'],
+      ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri14-sinaa-full-dictionary-20261025'],
+      ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=daruri14-sinaa-full-dictionary-20261025'],
       ['daruri/gnamma-search.js', 'gnamma-search.js?v=20261022-morphperf1'],
       ['daruri/gnamma-morphology.js', 'gnamma-morphology.js?v=20261022-morphperf1'],
       ['daruri/gnamma-word-context.js', 'gnamma-word-context.js?v=20261025-focus-locators-wordcontext3'],
@@ -172,7 +172,7 @@
       ['daruri/gnamma-proximity.js', 'gnamma-proximity.js?v=20261022-proximity1'],
       ['daruri/gnamma-scholarly.js', 'gnamma-scholarly.js?v=20261022-scholarly1'],
       ['daruri/gnamma-scholarly.css', 'gnamma-scholarly.css?v=20261022-scholarly1'],
-      ['daruri/source-reference-data.js', 'source-reference-data.js?v=daruri13-lesson12-method-20261024'],
+      ['daruri/source-reference-data.js', 'source-reference-data.js?v=daruri14-sinaa-full-dictionary-20261025'],
       ['daruri/source-note-ui.js', 'source-note-ui.js?v=20261021-qinline4'],
       ['daruri/source-note-ui.css', 'source-note-ui.css?v=20261021-fallback-quran1'],
       ['daruri/quran-context-ui.js', 'quran-context-ui.js?v=20261022-qcontext1'],
@@ -205,7 +205,7 @@
       ['daruri/hadith-context-english-tirmidhi-c.js', 'hadith-context-english-tirmidhi-c.js?v=20261023-hadithux3'],
       ['daruri/hadith-context-english-muslim.js', 'hadith-context-english-muslim.js?v=20261023-hadithux3'],
       ['daruri/hadith-context-english-other.js', 'hadith-context-english-other.js?v=20261023-hadithux3'],
-      ['daruri/download-bundle.js', 'download-bundle.js?v=daruri13-lesson12-method-20261024'],
+      ['daruri/download-bundle.js', 'download-bundle.js?v=daruri14-sinaa-full-dictionary-20261025'],
       ['daruri/study-guide-data.js', 'study-guide-data.js?v=daruri13-lesson12-method-20261024'],
       ['daruri/study-guide.js', 'study-guide.js?v=daruri13-lesson12-method-20261024'],
       ['daruri/study-guide.css', 'study-guide.css'],
@@ -244,10 +244,10 @@
       ['daruri/print.css', 'print.css?v=20261020-indexprint1'],
       ['daruri/print.js', 'print.js'],
       ['daruri/lesson-print.js', 'lesson-print.js'],
-      ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri13-lesson12-method-20261024'],
+      ['daruri/pdf-editions-manifest.json', 'pdf-editions-manifest.json?v=daruri14-sinaa-full-dictionary-20261025'],
       ...['daruri.pdf','daruri-study.pdf','daruri-english.pdf','daruri-arabic.pdf','daruri-arabic-vowelled.pdf'].map(name=>['daruri/personal-anchor-maps/'+name+'.json','personal-anchor-maps/'+name+'.json']),
       ['daruri/manifest.webmanifest', 'manifest.webmanifest'],
-      ['daruri/sw.js', 'sw.js?v=daruri13-lesson12-method-20261024'],
+      ['daruri/sw.js', 'sw.js?v=daruri14-sinaa-full-dictionary-20261025'],
       ['daruri/dictionary-data.json', 'dictionary-data.json'],
       ['daruri/lexicon-additions.json', 'lexicon-additions.json'],
       ['assets/gnamma-mark.svg', '../assets/gnamma-mark.svg'],
@@ -259,12 +259,12 @@
     // Include all five published reading editions even when a sidebar is hidden.
     // The Bou Akl variant report is supplementary; discover other on-site PDF links.
     const pdfs = new Map([
-      ['daruri/daruri.pdf', 'daruri.pdf?v=daruri13-lesson12-method-20261024'],
-      ['daruri/daruri-arabic.pdf', 'daruri-arabic.pdf?v=daruri13-lesson12-method-20261024'],
-      ['daruri/daruri-english.pdf', 'daruri-english.pdf?v=daruri13-lesson12-method-20261024'],
-      ['daruri/daruri-study.pdf', 'daruri-study.pdf?v=daruri13-lesson12-method-20261024'],
+      ['daruri/daruri.pdf', 'daruri.pdf?v=daruri14-sinaa-full-dictionary-20261025'],
+      ['daruri/daruri-arabic.pdf', 'daruri-arabic.pdf?v=daruri14-sinaa-full-dictionary-20261025'],
+      ['daruri/daruri-english.pdf', 'daruri-english.pdf?v=daruri14-sinaa-full-dictionary-20261025'],
+      ['daruri/daruri-study.pdf', 'daruri-study.pdf?v=daruri14-sinaa-full-dictionary-20261025'],
       ['daruri/daruri-study-guide.pdf', 'daruri-study-guide.pdf?v=daruri13-lesson12-method-20261024'],
-      ['daruri/daruri-arabic-vowelled.pdf', 'daruri-arabic-vowelled.pdf?v=daruri13-lesson12-method-20261024'],
+      ['daruri/daruri-arabic-vowelled.pdf', 'daruri-arabic-vowelled.pdf?v=daruri14-sinaa-full-dictionary-20261025'],
       ['daruri/bou-akl-2015-variant-report.pdf', 'bou-akl-2015-variant-report.pdf']
     ]);
     // Complete A4 Reading/Study PDFs, including both additive bilingual

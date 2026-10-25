@@ -1,0 +1,4220 @@
+{
+  "filename": "daruri-historical-lexicon.pdf",
+  "edition": "historical-lexicon",
+  "pages": 90,
+  "bytes": 614983,
+  "sha256": "f949763e2cd4fefd6c84d5d293860566dff4ade095cc1686d4587f46a7f611d0",
+  "counts": {
+    "term_dossiers": 153,
+    "full_articles": 157,
+    "paragraph_pairs": 283,
+    "paragraph_texts": 566,
+    "existing_article_notes": 79,
+    "source_notes": 13,
+    "dictionary_sources": 8,
+    "relation_rows": 153
+  },
+  "english_paragraphs_verified_in_pdf": 283,
+  "links": 2546,
+  "bookmarks": 329,
+  "internal_targets_checked": 321,
+  "missing_link_targets": [],
+  "scholarly_pdf": {
+    "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf",
+    "pages": 244,
+    "sha256": "478a7f996080871adc0855edaaff85fb12b25480d89f5f77ca410ca34addead9"
+  },
+  "section_links": [
+    {
+      "section": "16",
+      "page": 15,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=15"
+    },
+    {
+      "section": "17",
+      "page": 16,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=16"
+    },
+    {
+      "section": "27",
+      "page": 20,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=20"
+    },
+    {
+      "section": "203",
+      "page": 103,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=103"
+    },
+    {
+      "section": "154",
+      "page": 80,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=80"
+    },
+    {
+      "section": "165",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "191",
+      "page": 96,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=96"
+    },
+    {
+      "section": "212",
+      "page": 107,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=107"
+    },
+    {
+      "section": "221",
+      "page": 112,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=112"
+    },
+    {
+      "section": "100",
+      "page": 53,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=53"
+    },
+    {
+      "section": "103",
+      "page": 54,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=54"
+    },
+    {
+      "section": "104",
+      "page": 54,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=54"
+    },
+    {
+      "section": "231",
+      "page": 118,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=118"
+    },
+    {
+      "section": "236",
+      "page": 119,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=119"
+    },
+    {
+      "section": "237",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "250",
+      "page": 126,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=126"
+    },
+    {
+      "section": "23",
+      "page": 19,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=19"
+    },
+    {
+      "section": "56",
+      "page": 33,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=33"
+    },
+    {
+      "section": "204",
+      "page": 104,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=104"
+    },
+    {
+      "section": "205",
+      "page": 104,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=104"
+    },
+    {
+      "section": "130",
+      "page": 69,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=69"
+    },
+    {
+      "section": "133",
+      "page": 71,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=71"
+    },
+    {
+      "section": "134",
+      "page": 71,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=71"
+    },
+    {
+      "section": "137",
+      "page": 72,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=72"
+    },
+    {
+      "section": "138",
+      "page": 73,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=73"
+    },
+    {
+      "section": "57",
+      "page": 34,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=34"
+    },
+    {
+      "section": "59",
+      "page": 35,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=35"
+    },
+    {
+      "section": "103",
+      "page": 54,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=54"
+    },
+    {
+      "section": "171",
+      "page": 88,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=88"
+    },
+    {
+      "section": "43",
+      "page": 27,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=27"
+    },
+    {
+      "section": "44",
+      "page": 27,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=27"
+    },
+    {
+      "section": "183",
+      "page": 93,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=93"
+    },
+    {
+      "section": "184",
+      "page": 93,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=93"
+    },
+    {
+      "section": "185",
+      "page": 93,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=93"
+    },
+    {
+      "section": "186",
+      "page": 94,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=94"
+    },
+    {
+      "section": "187",
+      "page": 95,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=95"
+    },
+    {
+      "section": "188",
+      "page": 95,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=95"
+    },
+    {
+      "section": "146",
+      "page": 77,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=77"
+    },
+    {
+      "section": "1",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "81",
+      "page": 45,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=45"
+    },
+    {
+      "section": "148",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "141",
+      "page": 74,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=74"
+    },
+    {
+      "section": "142",
+      "page": 75,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=75"
+    },
+    {
+      "section": "146",
+      "page": 77,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=77"
+    },
+    {
+      "section": "217",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "153",
+      "page": 79,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=79"
+    },
+    {
+      "section": "164",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "180",
+      "page": 91,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=91"
+    },
+    {
+      "section": "4",
+      "page": 10,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=10"
+    },
+    {
+      "section": "217",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "158",
+      "page": 81,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=81"
+    },
+    {
+      "section": "177",
+      "page": 90,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=90"
+    },
+    {
+      "section": "62",
+      "page": 36,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=36"
+    },
+    {
+      "section": "141",
+      "page": 74,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=74"
+    },
+    {
+      "section": "210",
+      "page": 106,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=106"
+    },
+    {
+      "section": "212",
+      "page": 107,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=107"
+    },
+    {
+      "section": "1",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "5",
+      "page": 10,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=10"
+    },
+    {
+      "section": "6",
+      "page": 10,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=10"
+    },
+    {
+      "section": "148",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "150",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "227",
+      "page": 116,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=116"
+    },
+    {
+      "section": "45",
+      "page": 28,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=28"
+    },
+    {
+      "section": "49",
+      "page": 30,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=30"
+    },
+    {
+      "section": "50",
+      "page": 31,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=31"
+    },
+    {
+      "section": "28",
+      "page": 21,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=21"
+    },
+    {
+      "section": "56",
+      "page": 33,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=33"
+    },
+    {
+      "section": "206",
+      "page": 105,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=105"
+    },
+    {
+      "section": "141",
+      "page": 74,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=74"
+    },
+    {
+      "section": "142",
+      "page": 75,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=75"
+    },
+    {
+      "section": "247",
+      "page": 125,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=125"
+    },
+    {
+      "section": "9",
+      "page": 12,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=12"
+    },
+    {
+      "section": "15",
+      "page": 15,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=15"
+    },
+    {
+      "section": "75",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "159",
+      "page": 81,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=81"
+    },
+    {
+      "section": "160",
+      "page": 81,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=81"
+    },
+    {
+      "section": "161",
+      "page": 81,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=81"
+    },
+    {
+      "section": "228",
+      "page": 116,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=116"
+    },
+    {
+      "section": "242",
+      "page": 122,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=122"
+    },
+    {
+      "section": "243",
+      "page": 123,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=123"
+    },
+    {
+      "section": "244",
+      "page": 123,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=123"
+    },
+    {
+      "section": "245",
+      "page": 124,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=124"
+    },
+    {
+      "section": "164",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "166",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "171",
+      "page": 88,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=88"
+    },
+    {
+      "section": "174",
+      "page": 89,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=89"
+    },
+    {
+      "section": "181",
+      "page": 92,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=92"
+    },
+    {
+      "section": "182",
+      "page": 92,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=92"
+    },
+    {
+      "section": "190",
+      "page": 96,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=96"
+    },
+    {
+      "section": "96",
+      "page": 51,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=51"
+    },
+    {
+      "section": "246",
+      "page": 124,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=124"
+    },
+    {
+      "section": "256",
+      "page": 129,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=129"
+    },
+    {
+      "section": "257",
+      "page": 130,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=130"
+    },
+    {
+      "section": "15",
+      "page": 15,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=15"
+    },
+    {
+      "section": "44",
+      "page": 27,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=27"
+    },
+    {
+      "section": "74",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "75",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "76",
+      "page": 42,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=42"
+    },
+    {
+      "section": "237",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "239",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "240",
+      "page": 121,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=121"
+    },
+    {
+      "section": "243",
+      "page": 123,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=123"
+    },
+    {
+      "section": "96",
+      "page": 51,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=51"
+    },
+    {
+      "section": "181",
+      "page": 92,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=92"
+    },
+    {
+      "section": "229",
+      "page": 116,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=116"
+    },
+    {
+      "section": "246",
+      "page": 124,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=124"
+    },
+    {
+      "section": "94",
+      "page": 51,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=51"
+    },
+    {
+      "section": "95",
+      "page": 51,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=51"
+    },
+    {
+      "section": "96",
+      "page": 51,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=51"
+    },
+    {
+      "section": "97",
+      "page": 52,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=52"
+    },
+    {
+      "section": "249",
+      "page": 126,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=126"
+    },
+    {
+      "section": "250",
+      "page": 126,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=126"
+    },
+    {
+      "section": "251",
+      "page": 127,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=127"
+    },
+    {
+      "section": "252",
+      "page": 127,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=127"
+    },
+    {
+      "section": "255",
+      "page": 129,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=129"
+    },
+    {
+      "section": "17",
+      "page": 16,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=16"
+    },
+    {
+      "section": "38",
+      "page": 25,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=25"
+    },
+    {
+      "section": "42",
+      "page": 26,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=26"
+    },
+    {
+      "section": "45",
+      "page": 28,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=28"
+    },
+    {
+      "section": "1",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "210",
+      "page": 106,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=106"
+    },
+    {
+      "section": "212",
+      "page": 107,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=107"
+    },
+    {
+      "section": "223",
+      "page": 113,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=113"
+    },
+    {
+      "section": "191",
+      "page": 96,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=96"
+    },
+    {
+      "section": "209",
+      "page": 105,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=105"
+    },
+    {
+      "section": "212",
+      "page": 107,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=107"
+    },
+    {
+      "section": "215",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "74",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "75",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "76",
+      "page": 42,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=42"
+    },
+    {
+      "section": "78",
+      "page": 44,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=44"
+    },
+    {
+      "section": "229",
+      "page": 116,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=116"
+    },
+    {
+      "section": "246",
+      "page": 124,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=124"
+    },
+    {
+      "section": "49",
+      "page": 30,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=30"
+    },
+    {
+      "section": "229",
+      "page": 116,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=116"
+    },
+    {
+      "section": "94",
+      "page": 51,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=51"
+    },
+    {
+      "section": "95",
+      "page": 51,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=51"
+    },
+    {
+      "section": "96",
+      "page": 51,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=51"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "165",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "191",
+      "page": 96,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=96"
+    },
+    {
+      "section": "212",
+      "page": 107,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=107"
+    },
+    {
+      "section": "185",
+      "page": 93,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=93"
+    },
+    {
+      "section": "217",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "224",
+      "page": 114,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=114"
+    },
+    {
+      "section": "36",
+      "page": 24,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=24"
+    },
+    {
+      "section": "37",
+      "page": 24,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=24"
+    },
+    {
+      "section": "1",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "81",
+      "page": 45,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=45"
+    },
+    {
+      "section": "130",
+      "page": 69,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=69"
+    },
+    {
+      "section": "144",
+      "page": 76,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=76"
+    },
+    {
+      "section": "10",
+      "page": 13,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=13"
+    },
+    {
+      "section": "11",
+      "page": 13,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=13"
+    },
+    {
+      "section": "219",
+      "page": 111,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=111"
+    },
+    {
+      "section": "66",
+      "page": 38,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=38"
+    },
+    {
+      "section": "80",
+      "page": 44,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=44"
+    },
+    {
+      "section": "109",
+      "page": 56,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=56"
+    },
+    {
+      "section": "233",
+      "page": 118,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=118"
+    },
+    {
+      "section": "17",
+      "page": 16,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=16"
+    },
+    {
+      "section": "28",
+      "page": 21,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=21"
+    },
+    {
+      "section": "206",
+      "page": 105,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=105"
+    },
+    {
+      "section": "60",
+      "page": 35,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=35"
+    },
+    {
+      "section": "203",
+      "page": 103,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=103"
+    },
+    {
+      "section": "15",
+      "page": 15,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=15"
+    },
+    {
+      "section": "45",
+      "page": 28,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=28"
+    },
+    {
+      "section": "77",
+      "page": 43,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=43"
+    },
+    {
+      "section": "78",
+      "page": 44,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=44"
+    },
+    {
+      "section": "11",
+      "page": 13,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=13"
+    },
+    {
+      "section": "12",
+      "page": 14,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=14"
+    },
+    {
+      "section": "13",
+      "page": 14,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=14"
+    },
+    {
+      "section": "195",
+      "page": 99,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=99"
+    },
+    {
+      "section": "65",
+      "page": 38,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=38"
+    },
+    {
+      "section": "153",
+      "page": 79,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=79"
+    },
+    {
+      "section": "162",
+      "page": 83,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=83"
+    },
+    {
+      "section": "164",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "10",
+      "page": 13,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=13"
+    },
+    {
+      "section": "11",
+      "page": 13,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=13"
+    },
+    {
+      "section": "17",
+      "page": 16,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=16"
+    },
+    {
+      "section": "36",
+      "page": 24,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=24"
+    },
+    {
+      "section": "239",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "165",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "191",
+      "page": 96,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=96"
+    },
+    {
+      "section": "66",
+      "page": 38,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=38"
+    },
+    {
+      "section": "74",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "80",
+      "page": 44,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=44"
+    },
+    {
+      "section": "109",
+      "page": 56,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=56"
+    },
+    {
+      "section": "79",
+      "page": 44,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=44"
+    },
+    {
+      "section": "81",
+      "page": 45,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=45"
+    },
+    {
+      "section": "83",
+      "page": 47,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=47"
+    },
+    {
+      "section": "112",
+      "page": 59,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=59"
+    },
+    {
+      "section": "237",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "243",
+      "page": 123,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=123"
+    },
+    {
+      "section": "244",
+      "page": 123,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=123"
+    },
+    {
+      "section": "245",
+      "page": 124,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=124"
+    },
+    {
+      "section": "11",
+      "page": 13,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=13"
+    },
+    {
+      "section": "36",
+      "page": 24,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=24"
+    },
+    {
+      "section": "38",
+      "page": 25,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=25"
+    },
+    {
+      "section": "239",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "148",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "149",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "150",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "193",
+      "page": 98,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=98"
+    },
+    {
+      "section": "62",
+      "page": 36,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=36"
+    },
+    {
+      "section": "74",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "81",
+      "page": 45,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=45"
+    },
+    {
+      "section": "241",
+      "page": 122,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=122"
+    },
+    {
+      "section": "193",
+      "page": 98,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=98"
+    },
+    {
+      "section": "195",
+      "page": 99,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=99"
+    },
+    {
+      "section": "83",
+      "page": 47,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=47"
+    },
+    {
+      "section": "85",
+      "page": 48,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=48"
+    },
+    {
+      "section": "94",
+      "page": 51,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=51"
+    },
+    {
+      "section": "107",
+      "page": 55,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=55"
+    },
+    {
+      "section": "58",
+      "page": 34,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=34"
+    },
+    {
+      "section": "60",
+      "page": 35,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=35"
+    },
+    {
+      "section": "108",
+      "page": 56,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=56"
+    },
+    {
+      "section": "118",
+      "page": 62,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=62"
+    },
+    {
+      "section": "154",
+      "page": 80,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=80"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "54",
+      "page": 32,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=32"
+    },
+    {
+      "section": "55",
+      "page": 32,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=32"
+    },
+    {
+      "section": "176",
+      "page": 90,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=90"
+    },
+    {
+      "section": "220",
+      "page": 112,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=112"
+    },
+    {
+      "section": "221",
+      "page": 112,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=112"
+    },
+    {
+      "section": "66",
+      "page": 38,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=38"
+    },
+    {
+      "section": "71",
+      "page": 40,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=40"
+    },
+    {
+      "section": "114",
+      "page": 61,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=61"
+    },
+    {
+      "section": "92",
+      "page": 50,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=50"
+    },
+    {
+      "section": "218",
+      "page": 110,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=110"
+    },
+    {
+      "section": "238",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "23",
+      "page": 19,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=19"
+    },
+    {
+      "section": "49",
+      "page": 30,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=30"
+    },
+    {
+      "section": "50",
+      "page": 31,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=31"
+    },
+    {
+      "section": "56",
+      "page": 33,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=33"
+    },
+    {
+      "section": "195",
+      "page": 99,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=99"
+    },
+    {
+      "section": "11",
+      "page": 13,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=13"
+    },
+    {
+      "section": "13",
+      "page": 14,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=14"
+    },
+    {
+      "section": "37",
+      "page": 24,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=24"
+    },
+    {
+      "section": "239",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "56",
+      "page": 33,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=33"
+    },
+    {
+      "section": "93",
+      "page": 50,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=50"
+    },
+    {
+      "section": "205",
+      "page": 104,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=104"
+    },
+    {
+      "section": "19",
+      "page": 17,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=17"
+    },
+    {
+      "section": "146",
+      "page": 77,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=77"
+    },
+    {
+      "section": "217",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "1",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "6",
+      "page": 10,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=10"
+    },
+    {
+      "section": "9",
+      "page": 12,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=12"
+    },
+    {
+      "section": "149",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "151",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "197",
+      "page": 100,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=100"
+    },
+    {
+      "section": "223",
+      "page": 113,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=113"
+    },
+    {
+      "section": "26",
+      "page": 20,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=20"
+    },
+    {
+      "section": "32",
+      "page": 23,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=23"
+    },
+    {
+      "section": "33",
+      "page": 23,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=23"
+    },
+    {
+      "section": "34",
+      "page": 24,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=24"
+    },
+    {
+      "section": "52",
+      "page": 31,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=31"
+    },
+    {
+      "section": "53",
+      "page": 32,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=32"
+    },
+    {
+      "section": "60",
+      "page": 35,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=35"
+    },
+    {
+      "section": "1",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "15",
+      "page": 15,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=15"
+    },
+    {
+      "section": "76",
+      "page": 42,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=42"
+    },
+    {
+      "section": "152",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "157",
+      "page": 80,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=80"
+    },
+    {
+      "section": "158",
+      "page": 81,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=81"
+    },
+    {
+      "section": "152",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "197",
+      "page": 100,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=100"
+    },
+    {
+      "section": "164",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "166",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "193",
+      "page": 98,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=98"
+    },
+    {
+      "section": "224",
+      "page": 114,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=114"
+    },
+    {
+      "section": "74",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "79",
+      "page": 44,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=44"
+    },
+    {
+      "section": "90",
+      "page": 49,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=49"
+    },
+    {
+      "section": "237",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "257",
+      "page": 130,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=130"
+    },
+    {
+      "section": "169",
+      "page": 87,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=87"
+    },
+    {
+      "section": "170",
+      "page": 88,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=88"
+    },
+    {
+      "section": "174",
+      "page": 89,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=89"
+    },
+    {
+      "section": "177",
+      "page": 90,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=90"
+    },
+    {
+      "section": "43",
+      "page": 27,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=27"
+    },
+    {
+      "section": "56",
+      "page": 33,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=33"
+    },
+    {
+      "section": "57",
+      "page": 34,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=34"
+    },
+    {
+      "section": "86",
+      "page": 48,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=48"
+    },
+    {
+      "section": "87",
+      "page": 48,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=48"
+    },
+    {
+      "section": "90",
+      "page": 49,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=49"
+    },
+    {
+      "section": "98",
+      "page": 52,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=52"
+    },
+    {
+      "section": "153",
+      "page": 79,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=79"
+    },
+    {
+      "section": "199",
+      "page": 102,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=102"
+    },
+    {
+      "section": "200",
+      "page": 102,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=102"
+    },
+    {
+      "section": "203",
+      "page": 103,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=103"
+    },
+    {
+      "section": "60",
+      "page": 35,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=35"
+    },
+    {
+      "section": "11",
+      "page": 13,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=13"
+    },
+    {
+      "section": "13",
+      "page": 14,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=14"
+    },
+    {
+      "section": "37",
+      "page": 24,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=24"
+    },
+    {
+      "section": "45",
+      "page": 28,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=28"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "8",
+      "page": 11,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=11"
+    },
+    {
+      "section": "74",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "75",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "210",
+      "page": 106,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=106"
+    },
+    {
+      "section": "213",
+      "page": 108,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=108"
+    },
+    {
+      "section": "217",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "218",
+      "page": 110,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=110"
+    },
+    {
+      "section": "222",
+      "page": 112,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=112"
+    },
+    {
+      "section": "169",
+      "page": 87,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=87"
+    },
+    {
+      "section": "170",
+      "page": 88,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=88"
+    },
+    {
+      "section": "174",
+      "page": 89,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=89"
+    },
+    {
+      "section": "178",
+      "page": 90,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=90"
+    },
+    {
+      "section": "112",
+      "page": 59,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=59"
+    },
+    {
+      "section": "113",
+      "page": 60,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=60"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "195",
+      "page": 99,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=99"
+    },
+    {
+      "section": "90",
+      "page": 49,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=49"
+    },
+    {
+      "section": "237",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "241",
+      "page": 122,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=122"
+    },
+    {
+      "section": "257",
+      "page": 130,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=130"
+    },
+    {
+      "section": "17",
+      "page": 16,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=16"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "210",
+      "page": 106,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=106"
+    },
+    {
+      "section": "211",
+      "page": 106,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=106"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "235",
+      "page": 119,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=119"
+    },
+    {
+      "section": "252",
+      "page": 127,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=127"
+    },
+    {
+      "section": "28",
+      "page": 21,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=21"
+    },
+    {
+      "section": "29",
+      "page": 22,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=22"
+    },
+    {
+      "section": "56",
+      "page": 33,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=33"
+    },
+    {
+      "section": "206",
+      "page": 105,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=105"
+    },
+    {
+      "section": "43",
+      "page": 27,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=27"
+    },
+    {
+      "section": "150",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "228",
+      "page": 116,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=116"
+    },
+    {
+      "section": "229",
+      "page": 116,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=116"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "235",
+      "page": 119,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=119"
+    },
+    {
+      "section": "252",
+      "page": 127,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=127"
+    },
+    {
+      "section": "158",
+      "page": 81,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=81"
+    },
+    {
+      "section": "161",
+      "page": 81,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=81"
+    },
+    {
+      "section": "166",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "193",
+      "page": 98,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=98"
+    },
+    {
+      "section": "213",
+      "page": 108,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=108"
+    },
+    {
+      "section": "51",
+      "page": 31,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=31"
+    },
+    {
+      "section": "57",
+      "page": 34,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=34"
+    },
+    {
+      "section": "204",
+      "page": 104,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=104"
+    },
+    {
+      "section": "74",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "125",
+      "page": 66,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=66"
+    },
+    {
+      "section": "237",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "244",
+      "page": 123,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=123"
+    },
+    {
+      "section": "210",
+      "page": 106,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=106"
+    },
+    {
+      "section": "212",
+      "page": 107,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=107"
+    },
+    {
+      "section": "223",
+      "page": 113,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=113"
+    },
+    {
+      "section": "226",
+      "page": 115,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=115"
+    },
+    {
+      "section": "218",
+      "page": 110,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=110"
+    },
+    {
+      "section": "224",
+      "page": 114,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=114"
+    },
+    {
+      "section": "17",
+      "page": 16,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=16"
+    },
+    {
+      "section": "29",
+      "page": 22,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=22"
+    },
+    {
+      "section": "208",
+      "page": 105,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=105"
+    },
+    {
+      "section": "43",
+      "page": 27,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=27"
+    },
+    {
+      "section": "44",
+      "page": 27,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=27"
+    },
+    {
+      "section": "45",
+      "page": 28,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=28"
+    },
+    {
+      "section": "7",
+      "page": 11,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=11"
+    },
+    {
+      "section": "9",
+      "page": 12,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=12"
+    },
+    {
+      "section": "41",
+      "page": 26,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=26"
+    },
+    {
+      "section": "63",
+      "page": 36,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=36"
+    },
+    {
+      "section": "235",
+      "page": 119,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=119"
+    },
+    {
+      "section": "2",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "165",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "191",
+      "page": 96,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=96"
+    },
+    {
+      "section": "212",
+      "page": 107,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=107"
+    },
+    {
+      "section": "221",
+      "page": 112,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=112"
+    },
+    {
+      "section": "164",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "167",
+      "page": 86,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=86"
+    },
+    {
+      "section": "109",
+      "page": 56,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=56"
+    },
+    {
+      "section": "148",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "149",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "153",
+      "page": 79,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=79"
+    },
+    {
+      "section": "16",
+      "page": 15,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=15"
+    },
+    {
+      "section": "17",
+      "page": 16,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=16"
+    },
+    {
+      "section": "27",
+      "page": 20,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=20"
+    },
+    {
+      "section": "75",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "76",
+      "page": 42,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=42"
+    },
+    {
+      "section": "78",
+      "page": 44,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=44"
+    },
+    {
+      "section": "1",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "6",
+      "page": 10,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=10"
+    },
+    {
+      "section": "212",
+      "page": 107,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=107"
+    },
+    {
+      "section": "65",
+      "page": 38,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=38"
+    },
+    {
+      "section": "153",
+      "page": 79,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=79"
+    },
+    {
+      "section": "154",
+      "page": 80,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=80"
+    },
+    {
+      "section": "162",
+      "page": 83,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=83"
+    },
+    {
+      "section": "164",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "231",
+      "page": 118,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=118"
+    },
+    {
+      "section": "232",
+      "page": 118,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=118"
+    },
+    {
+      "section": "233",
+      "page": 118,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=118"
+    },
+    {
+      "section": "234",
+      "page": 119,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=119"
+    },
+    {
+      "section": "236",
+      "page": 119,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=119"
+    },
+    {
+      "section": "151",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "155",
+      "page": 80,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=80"
+    },
+    {
+      "section": "158",
+      "page": 81,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=81"
+    },
+    {
+      "section": "214",
+      "page": 108,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=108"
+    },
+    {
+      "section": "218",
+      "page": 110,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=110"
+    },
+    {
+      "section": "36",
+      "page": 24,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=24"
+    },
+    {
+      "section": "38",
+      "page": 25,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=25"
+    },
+    {
+      "section": "42",
+      "page": 26,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=26"
+    },
+    {
+      "section": "36",
+      "page": 24,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=24"
+    },
+    {
+      "section": "43",
+      "page": 27,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=27"
+    },
+    {
+      "section": "217",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "224",
+      "page": 114,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=114"
+    },
+    {
+      "section": "13",
+      "page": 14,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=14"
+    },
+    {
+      "section": "47",
+      "page": 29,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=29"
+    },
+    {
+      "section": "111",
+      "page": 58,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=58"
+    },
+    {
+      "section": "111",
+      "page": 58,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=58"
+    },
+    {
+      "section": "12",
+      "page": 14,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=14"
+    },
+    {
+      "section": "146",
+      "page": 77,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=77"
+    },
+    {
+      "section": "217",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "189",
+      "page": 95,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=95"
+    },
+    {
+      "section": "201",
+      "page": 102,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=102"
+    },
+    {
+      "section": "203",
+      "page": 103,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=103"
+    },
+    {
+      "section": "149",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "193",
+      "page": 98,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=98"
+    },
+    {
+      "section": "212",
+      "page": 107,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=107"
+    },
+    {
+      "section": "210",
+      "page": 106,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=106"
+    },
+    {
+      "section": "220",
+      "page": 112,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=112"
+    },
+    {
+      "section": "222",
+      "page": 112,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=112"
+    },
+    {
+      "section": "149",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "158",
+      "page": 81,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=81"
+    },
+    {
+      "section": "193",
+      "page": 98,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=98"
+    },
+    {
+      "section": "212",
+      "page": 107,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=107"
+    },
+    {
+      "section": "149",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "193",
+      "page": 98,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=98"
+    },
+    {
+      "section": "194",
+      "page": 98,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=98"
+    },
+    {
+      "section": "195",
+      "page": 99,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=99"
+    },
+    {
+      "section": "9",
+      "page": 12,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=12"
+    },
+    {
+      "section": "75",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "76",
+      "page": 42,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=42"
+    },
+    {
+      "section": "161",
+      "page": 81,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=81"
+    },
+    {
+      "section": "191",
+      "page": 96,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=96"
+    },
+    {
+      "section": "217",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "239",
+      "page": 120,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=120"
+    },
+    {
+      "section": "189",
+      "page": 95,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=95"
+    },
+    {
+      "section": "195",
+      "page": 99,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=99"
+    },
+    {
+      "section": "17",
+      "page": 16,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=16"
+    },
+    {
+      "section": "208",
+      "page": 105,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=105"
+    },
+    {
+      "section": "38",
+      "page": 25,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=25"
+    },
+    {
+      "section": "42",
+      "page": 26,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=26"
+    },
+    {
+      "section": "45",
+      "page": 28,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=28"
+    },
+    {
+      "section": "50",
+      "page": 31,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=31"
+    },
+    {
+      "section": "217",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "224",
+      "page": 114,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=114"
+    },
+    {
+      "section": "217",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "224",
+      "page": 114,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=114"
+    },
+    {
+      "section": "104",
+      "page": 54,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=54"
+    },
+    {
+      "section": "105",
+      "page": 54,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=54"
+    },
+    {
+      "section": "17",
+      "page": 16,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=16"
+    },
+    {
+      "section": "32",
+      "page": 23,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=23"
+    },
+    {
+      "section": "208",
+      "page": 105,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=105"
+    },
+    {
+      "section": "149",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "191",
+      "page": 96,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=96"
+    },
+    {
+      "section": "210",
+      "page": 106,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=106"
+    },
+    {
+      "section": "212",
+      "page": 107,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=107"
+    },
+    {
+      "section": "151",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "164",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "166",
+      "page": 85,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=85"
+    },
+    {
+      "section": "17",
+      "page": 16,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=16"
+    },
+    {
+      "section": "200",
+      "page": 102,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=102"
+    },
+    {
+      "section": "208",
+      "page": 105,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=105"
+    },
+    {
+      "section": "114",
+      "page": 61,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=61"
+    },
+    {
+      "section": "115",
+      "page": 61,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=61"
+    },
+    {
+      "section": "118",
+      "page": 62,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=62"
+    },
+    {
+      "section": "126",
+      "page": 67,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=67"
+    },
+    {
+      "section": "181",
+      "page": 92,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=92"
+    },
+    {
+      "section": "151",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "157",
+      "page": 80,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=80"
+    },
+    {
+      "section": "193",
+      "page": 98,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=98"
+    },
+    {
+      "section": "215",
+      "page": 109,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=109"
+    },
+    {
+      "section": "1",
+      "page": 8,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=8"
+    },
+    {
+      "section": "13",
+      "page": 14,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=14"
+    },
+    {
+      "section": "45",
+      "page": 28,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=28"
+    },
+    {
+      "section": "148",
+      "page": 78,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=78"
+    },
+    {
+      "section": "66",
+      "page": 38,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=38"
+    },
+    {
+      "section": "153",
+      "page": 79,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=79"
+    },
+    {
+      "section": "256",
+      "page": 129,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=129"
+    },
+    {
+      "section": "28",
+      "page": 21,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=21"
+    },
+    {
+      "section": "197",
+      "page": 100,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=100"
+    },
+    {
+      "section": "206",
+      "page": 105,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=105"
+    },
+    {
+      "section": "208",
+      "page": 105,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=105"
+    },
+    {
+      "section": "22",
+      "page": 18,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=18"
+    },
+    {
+      "section": "43",
+      "page": 27,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=27"
+    },
+    {
+      "section": "47",
+      "page": 29,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=29"
+    },
+    {
+      "section": "17",
+      "page": 16,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=16"
+    },
+    {
+      "section": "18",
+      "page": 17,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=17"
+    },
+    {
+      "section": "21",
+      "page": 18,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=18"
+    },
+    {
+      "section": "23",
+      "page": 19,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=19"
+    },
+    {
+      "section": "243",
+      "page": 123,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=123"
+    },
+    {
+      "section": "153",
+      "page": 79,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=79"
+    },
+    {
+      "section": "199",
+      "page": 102,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=102"
+    },
+    {
+      "section": "74",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "75",
+      "page": 41,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=41"
+    },
+    {
+      "section": "78",
+      "page": 44,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=44"
+    },
+    {
+      "section": "125",
+      "page": 66,
+      "url": "https://gnamma-research.github.io/booksite/daruri/daruri.pdf#page=66"
+    }
+  ],
+  "anchors": {
+    "lexicon": {
+      "page": 2,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "lexicon-introduction": {
+      "page": 2,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "lexicon-directory": {
+      "page": 2,
+      "x": 43.937007874015755,
+      "y": 353.08637070866143
+    },
+    "dict-term-39": {
+      "page": 4,
+      "x": 43.937007874015755,
+      "y": 57.47433070866142
+    },
+    "article-J-ibaha": {
+      "page": 4,
+      "x": 43.937007874015755,
+      "y": 127.36496988834892
+    },
+    "dict-term-38": {
+      "page": 4,
+      "x": 43.937007874015755,
+      "y": 220.30151754459888
+    },
+    "article-J-ibdal": {
+      "page": 4,
+      "x": 43.937007874015755,
+      "y": 290.1921567242863
+    },
+    "dict-term-41": {
+      "page": 4,
+      "x": 43.937007874015755,
+      "y": 417.09410438053646
+    },
+    "article-J-munawala": {
+      "page": 4,
+      "x": 43.937007874015755,
+      "y": 486.98474356022393
+    },
+    "article-S-ijaza": {
+      "page": 4,
+      "x": 43.937007874015755,
+      "y": 603.989091216474
+    },
+    "dict-term-44": {
+      "page": 4,
+      "x": 43.937007874015755,
+      "y": 719.013438872724
+    },
+    "article-J-ijtihad": {
+      "page": 5,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-43": {
+      "page": 5,
+      "x": 43.937007874015755,
+      "y": 202.58687836491143
+    },
+    "article-U-jaza": {
+      "page": 5,
+      "x": 43.937007874015755,
+      "y": 272.47751754459887
+    },
+    "SRC-BH01": {
+      "page": 6,
+      "x": 43.937007874015755,
+      "y": 268.3432907086615
+    },
+    "SRC-BH02": {
+      "page": 6,
+      "x": 43.937007874015755,
+      "y": 324.1707175086614
+    },
+    "SRC-BH03": {
+      "page": 6,
+      "x": 43.937007874015755,
+      "y": 368.0942843086613
+    },
+    "article-S-ijza": {
+      "page": 6,
+      "x": 43.937007874015755,
+      "y": 427.7344611086613
+    },
+    "dict-term-42": {
+      "page": 6,
+      "x": 43.937007874015755,
+      "y": 539.5590087649114
+    },
+    "article-J-ijma": {
+      "page": 6,
+      "x": 43.937007874015755,
+      "y": 609.4496479445988
+    },
+    "dict-term-1": {
+      "page": 7,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-ada": {
+      "page": 7,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-40": {
+      "page": 7,
+      "x": 43.937007874015755,
+      "y": 278.7255175445989
+    },
+    "article-J-idhn": {
+      "page": 7,
+      "x": 43.937007874015755,
+      "y": 348.6161567242864
+    },
+    "dict-term-49": {
+      "page": 7,
+      "x": 43.937007874015755,
+      "y": 460.7927043805364
+    },
+    "article-J-irada": {
+      "page": 7,
+      "x": 43.937007874015755,
+      "y": 530.6833435602239
+    },
+    "dict-term-57": {
+      "page": 8,
+      "x": 43.937007874015755,
+      "y": 68.94793070866143
+    },
+    "article-M-istithna": {
+      "page": 8,
+      "x": 43.937007874015755,
+      "y": 138.83856988834893
+    },
+    "dict-term-52": {
+      "page": 8,
+      "x": 43.937007874015755,
+      "y": 333.838203091474
+    },
+    "article-J-istihsan": {
+      "page": 8,
+      "x": 43.937007874015755,
+      "y": 403.7288422711614
+    },
+    "dict-term-51": {
+      "page": 8,
+      "x": 43.937007874015755,
+      "y": 627.6813899274116
+    },
+    "article-J-istidlal": {
+      "page": 9,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-54": {
+      "page": 9,
+      "x": 43.937007874015755,
+      "y": 183.86687836491143
+    },
+    "article-J-istishab": {
+      "page": 9,
+      "x": 43.937007874015755,
+      "y": 253.7575175445989
+    },
+    "dict-term-55": {
+      "page": 9,
+      "x": 43.937007874015755,
+      "y": 426.41946520084895
+    },
+    "article-K-maslaha": {
+      "page": 9,
+      "x": 43.937007874015755,
+      "y": 496.3101043805365
+    },
+    "dict-term-53": {
+      "page": 10,
+      "x": 43.937007874015755,
+      "y": 343.6029307086615
+    },
+    "article-J-istiara": {
+      "page": 10,
+      "x": 43.937007874015755,
+      "y": 413.49356988834904
+    },
+    "dict-term-56": {
+      "page": 11,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-istiqra": {
+      "page": 11,
+      "x": 43.937007874015755,
+      "y": 128.4396098883489
+    },
+    "dict-term-50": {
+      "page": 11,
+      "x": 43.937007874015755,
+      "y": 427.3471575445991
+    },
+    "article-J-mushtarak": {
+      "page": 11,
+      "x": 43.937007874015755,
+      "y": 497.2377967242866
+    },
+    "dict-term-6": {
+      "page": 12,
+      "x": 43.937007874015755,
+      "y": 369.3845307086613
+    },
+    "article-J-asl": {
+      "page": 12,
+      "x": 43.937007874015755,
+      "y": 439.27516988834884
+    },
+    "dict-term-146": {
+      "page": 12,
+      "x": 43.937007874015755,
+      "y": 532.2117175445987
+    },
+    "article-J-usul-fiqh": {
+      "page": 12,
+      "x": 43.937007874015755,
+      "y": 602.1023567242863
+    },
+    "dict-term-48": {
+      "page": 13,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-iqrar": {
+      "page": 13,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-47": {
+      "page": 13,
+      "x": 43.937007874015755,
+      "y": 240.24551754459895
+    },
+    "article-J-imkan": {
+      "page": 13,
+      "x": 43.937007874015755,
+      "y": 310.13615672428637
+    },
+    "dict-term-7": {
+      "page": 13,
+      "x": 43.937007874015755,
+      "y": 408.6167043805365
+    },
+    "article-J-batil": {
+      "page": 13,
+      "x": 43.937007874015755,
+      "y": 478.507343560224
+    },
+    "dict-term-9": {
+      "page": 13,
+      "x": 43.937007874015755,
+      "y": 717.3494244195992
+    },
+    "article-R-bara": {
+      "page": 14,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-10": {
+      "page": 14,
+      "x": 43.937007874015755,
+      "y": 569.875697114912
+    },
+    "article-J-burhan": {
+      "page": 15,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-R-burhan": {
+      "page": 15,
+      "x": 43.937007874015755,
+      "y": 414.0762783649118
+    },
+    "dict-term-8": {
+      "page": 15,
+      "x": 43.937007874015755,
+      "y": 708.0705115680365
+    },
+    "article-J-bayan": {
+      "page": 16,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-138": {
+      "page": 16,
+      "x": 43.937007874015755,
+      "y": 658.5842783649117
+    },
+    "article-M-ithm": {
+      "page": 17,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-139": {
+      "page": 17,
+      "x": 43.937007874015755,
+      "y": 227.00996391178637
+    },
+    "article-J-tawil": {
+      "page": 17,
+      "x": 43.937007874015755,
+      "y": 296.90060309147384
+    },
+    "dict-term-131": {
+      "page": 17,
+      "x": 43.937007874015755,
+      "y": 517.2105507477241
+    },
+    "article-M-takhshis": {
+      "page": 17,
+      "x": 43.937007874015755,
+      "y": 587.1011899274117
+    },
+    "dict-term-135": {
+      "page": 18,
+      "x": 43.937007874015755,
+      "y": 116.1272639117864
+    },
+    "article-J-tarjih": {
+      "page": 18,
+      "x": 43.937007874015755,
+      "y": 186.0179030914739
+    },
+    "dict-term-136": {
+      "page": 18,
+      "x": 43.937007874015755,
+      "y": 284.49845074772395
+    },
+    "article-J-tasdiq": {
+      "page": 18,
+      "x": 43.937007874015755,
+      "y": 354.3890899274114
+    },
+    "dict-term-137": {
+      "page": 18,
+      "x": 43.937007874015755,
+      "y": 469.41343758366145
+    },
+    "article-J-sawab": {
+      "page": 18,
+      "x": 43.937007874015755,
+      "y": 539.304076763349
+    },
+    "dict-term-128": {
+      "page": 19,
+      "x": 43.937007874015755,
+      "y": 284.8509307086614
+    },
+    "article-J-muarada": {
+      "page": 19,
+      "x": 43.937007874015755,
+      "y": 354.74156988834886
+    },
+    "dict-term-129": {
+      "page": 19,
+      "x": 43.937007874015755,
+      "y": 735.1795175445994
+    },
+    "article-M-taadul": {
+      "page": 20,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-134": {
+      "page": 20,
+      "x": 43.937007874015755,
+      "y": 252.23156391178634
+    },
+    "article-J-taqlid": {
+      "page": 20,
+      "x": 43.937007874015755,
+      "y": 322.1222030914738
+    },
+    "dict-term-130": {
+      "page": 20,
+      "x": 43.937007874015755,
+      "y": 473.97875074772395
+    },
+    "article-J-taklif": {
+      "page": 20,
+      "x": 43.937007874015755,
+      "y": 543.8693899274115
+    },
+    "dict-term-132": {
+      "page": 20,
+      "x": 43.937007874015755,
+      "y": 636.8059375836615
+    },
+    "article-J-tamthil": {
+      "page": 21,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-133": {
+      "page": 21,
+      "x": 43.937007874015755,
+      "y": 267.1108115680364
+    },
+    "article-J-tanbih": {
+      "page": 21,
+      "x": 43.937007874015755,
+      "y": 337.0014507477239
+    },
+    "dict-term-141": {
+      "page": 21,
+      "x": 43.937007874015755,
+      "y": 533.5363316070992
+    },
+    "article-J-khabar-mutawatir": {
+      "page": 21,
+      "x": 43.937007874015755,
+      "y": 603.4269707867867
+    },
+    "article-J-tawatur": {
+      "page": 22,
+      "x": 43.937007874015755,
+      "y": 565.5773307086621
+    },
+    "dict-term-140": {
+      "page": 22,
+      "x": 43.937007874015755,
+      "y": 677.753878364912
+    },
+    "article-F-waqf": {
+      "page": 23,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-142": {
+      "page": 23,
+      "x": 43.937007874015755,
+      "y": 541.562878364912
+    },
+    "article-U-waqafa": {
+      "page": 24,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "SRC-BH04": {
+      "page": 24,
+      "x": 43.937007874015755,
+      "y": 476.1829239117868
+    },
+    "dict-term-58": {
+      "page": 24,
+      "x": 43.937007874015755,
+      "y": 559.4167007117869
+    },
+    "article-M-jarh": {
+      "page": 25,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-60": {
+      "page": 25,
+      "x": 43.937007874015755,
+      "y": 278.6525639117865
+    },
+    "article-J-juzi-haqiqi": {
+      "page": 25,
+      "x": 43.937007874015755,
+      "y": 348.5432030914739
+    },
+    "article-J-juzi-idafi": {
+      "page": 25,
+      "x": 43.937007874015755,
+      "y": 517.1051507477242
+    },
+    "dict-term-59": {
+      "page": 26,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-jins": {
+      "page": 26,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-28": {
+      "page": 26,
+      "x": 43.937007874015755,
+      "y": 413.71751754459916
+    },
+    "article-K-hakim": {
+      "page": 26,
+      "x": 43.937007874015755,
+      "y": 483.6081567242867
+    },
+    "dict-term-34": {
+      "page": 27,
+      "x": 43.937007874015755,
+      "y": 297.9279307086615
+    },
+    "article-J-hujja": {
+      "page": 27,
+      "x": 43.937007874015755,
+      "y": 367.818569888349
+    },
+    "dict-term-26": {
+      "page": 27,
+      "x": 43.937007874015755,
+      "y": 479.6431175445991
+    },
+    "article-J-hadd": {
+      "page": 27,
+      "x": 43.937007874015755,
+      "y": 549.5337567242866
+    },
+    "dict-term-27": {
+      "page": 27,
+      "x": 43.937007874015755,
+      "y": 739.7023043805366
+    },
+    "article-M-sahih": {
+      "page": 28,
+      "x": 43.937007874015755,
+      "y": 65.62503070866143
+    },
+    "dict-term-30": {
+      "page": 28,
+      "x": 43.937007874015755,
+      "y": 309.6752639117865
+    },
+    "article-M-haram": {
+      "page": 28,
+      "x": 43.937007874015755,
+      "y": 366.3712630914739
+    },
+    "dict-term-31": {
+      "page": 28,
+      "x": 43.937007874015755,
+      "y": 522.7854294977241
+    },
+    "article-M-haraj": {
+      "page": 28,
+      "x": 43.937007874015755,
+      "y": 592.6760686774116
+    },
+    "dict-term-33": {
+      "page": 28,
+      "x": 43.937007874015755,
+      "y": 719.2223018805366
+    },
+    "article-J-ihsas": {
+      "page": 29,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-36": {
+      "page": 29,
+      "x": 43.937007874015755,
+      "y": 176.77087836491143
+    },
+    "article-J-husn": {
+      "page": 29,
+      "x": 43.937007874015755,
+      "y": 246.66151754459887
+    },
+    "dict-term-32": {
+      "page": 29,
+      "x": 43.937007874015755,
+      "y": 433.019465200849
+    },
+    "article-J-hasr": {
+      "page": 29,
+      "x": 43.937007874015755,
+      "y": 502.9101043805365
+    },
+    "dict-term-29": {
+      "page": 30,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-haqiqa": {
+      "page": 30,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-35": {
+      "page": 30,
+      "x": 43.937007874015755,
+      "y": 588.2749175445989
+    },
+    "article-J-hukm": {
+      "page": 30,
+      "x": 43.937007874015755,
+      "y": 658.1655567242865
+    },
+    "dict-term-66": {
+      "page": 31,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-khass": {
+      "page": 31,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-64": {
+      "page": 31,
+      "x": 43.937007874015755,
+      "y": 326.20551754459893
+    },
+    "article-J-khabar": {
+      "page": 31,
+      "x": 43.937007874015755,
+      "y": 396.0961567242864
+    },
+    "dict-term-65": {
+      "page": 32,
+      "x": 43.937007874015755,
+      "y": 271.5069307086614
+    },
+    "article-J-khabar-wahid": {
+      "page": 32,
+      "x": 43.937007874015755,
+      "y": 341.3975698883488
+    },
+    "dict-term-67": {
+      "page": 32,
+      "x": 43.937007874015755,
+      "y": 453.57411754459895
+    },
+    "article-J-khata": {
+      "page": 32,
+      "x": 43.937007874015755,
+      "y": 523.4647567242864
+    },
+    "dict-term-68": {
+      "page": 33,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-R-khutb": {
+      "page": 33,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-15": {
+      "page": 33,
+      "x": 43.937007874015755,
+      "y": 449.53820309147386
+    },
+    "article-J-dalala": {
+      "page": 34,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-16": {
+      "page": 34,
+      "x": 43.937007874015755,
+      "y": 464.3578783649118
+    },
+    "article-J-dalil": {
+      "page": 34,
+      "x": 43.937007874015755,
+      "y": 534.2485175445993
+    },
+    "dict-term-17": {
+      "page": 34,
+      "x": 43.937007874015755,
+      "y": 686.1050652008494
+    },
+    "article-J-mafh-mukhalafa": {
+      "page": 35,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-115": {
+      "page": 35,
+      "x": 43.937007874015755,
+      "y": 198.9442783649114
+    },
+    "article-U-rawa": {
+      "page": 35,
+      "x": 43.937007874015755,
+      "y": 268.83491754459885
+    },
+    "dict-term-116": {
+      "page": 35,
+      "x": 43.937007874015755,
+      "y": 555.5091507477243
+    },
+    "article-J-rukhsa": {
+      "page": 35,
+      "x": 43.937007874015755,
+      "y": 625.3997899274118
+    },
+    "dict-term-152": {
+      "page": 36,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-M-ziyada": {
+      "page": 36,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-126": {
+      "page": 36,
+      "x": 43.937007874015755,
+      "y": 308.51120309147404
+    },
+    "article-L-sabr": {
+      "page": 36,
+      "x": 43.937007874015755,
+      "y": 391.59648227116145
+    },
+    "SRC-BH05": {
+      "page": 39,
+      "x": 43.937007874015755,
+      "y": 264.21109070866135
+    },
+    "SRC-BH06": {
+      "page": 39,
+      "x": 43.937007874015755,
+      "y": 320.0385175086613
+    },
+    "SRC-BH07": {
+      "page": 39,
+      "x": 43.937007874015755,
+      "y": 375.86594430866114
+    },
+    "SRC-BH08": {
+      "page": 39,
+      "x": 43.937007874015755,
+      "y": 431.69337110866115
+    },
+    "SRC-BH09": {
+      "page": 39,
+      "x": 43.937007874015755,
+      "y": 487.5207979086611
+    },
+    "SRC-BH10": {
+      "page": 39,
+      "x": 43.937007874015755,
+      "y": 543.3482247086611
+    },
+    "SRC-BH11": {
+      "page": 39,
+      "x": 43.937007874015755,
+      "y": 599.1756515086611
+    },
+    "dict-term-117": {
+      "page": 39,
+      "x": 43.937007874015755,
+      "y": 682.4094283086608
+    },
+    "article-J-sabab": {
+      "page": 40,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-118": {
+      "page": 40,
+      "x": 43.937007874015755,
+      "y": 263.93087836491145
+    },
+    "dict-term-127": {
+      "page": 40,
+      "x": 43.937007874015755,
+      "y": 375.02585840397387
+    },
+    "article-J-sunna": {
+      "page": 40,
+      "x": 43.937007874015755,
+      "y": 444.91649758366134
+    },
+    "dict-term-125": {
+      "page": 41,
+      "x": 43.937007874015755,
+      "y": 259.6293307086614
+    },
+    "article-J-shubha": {
+      "page": 41,
+      "x": 43.937007874015755,
+      "y": 329.5199698883489
+    },
+    "dict-term-124": {
+      "page": 41,
+      "x": 43.937007874015755,
+      "y": 428.00051754459906
+    },
+    "article-J-shart": {
+      "page": 41,
+      "x": 43.937007874015755,
+      "y": 497.8911567242866
+    },
+    "dict-term-123": {
+      "page": 42,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-shar": {
+      "page": 42,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-119": {
+      "page": 42,
+      "x": 43.937007874015755,
+      "y": 240.4135175445989
+    },
+    "article-M-sihha": {
+      "page": 42,
+      "x": 43.937007874015755,
+      "y": 310.3041567242864
+    },
+    "dict-term-120": {
+      "page": 42,
+      "x": 43.937007874015755,
+      "y": 617.9022907867868
+    },
+    "article-M-salah": {
+      "page": 42,
+      "x": 43.937007874015755,
+      "y": 687.7929299664743
+    },
+    "dict-term-122": {
+      "page": 43,
+      "x": 43.937007874015755,
+      "y": 117.5737971149114
+    },
+    "article-J-sinaa": {
+      "page": 43,
+      "x": 43.937007874015755,
+      "y": 213.85371629459885
+    },
+    "dict-term-121": {
+      "page": 43,
+      "x": 43.937007874015755,
+      "y": 461.35006395084895
+    },
+    "article-F-sawgh": {
+      "page": 43,
+      "x": 43.937007874015755,
+      "y": 531.2407031305364
+    },
+    "dict-term-14": {
+      "page": 44,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-diddan": {
+      "page": 44,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-13": {
+      "page": 44,
+      "x": 43.937007874015755,
+      "y": 285.1415175445989
+    },
+    "article-J-darura": {
+      "page": 44,
+      "x": 43.937007874015755,
+      "y": 355.0321567242863
+    },
+    "dict-term-12": {
+      "page": 44,
+      "x": 43.937007874015755,
+      "y": 453.51270438053643
+    },
+    "article-M-daruri": {
+      "page": 44,
+      "x": 43.937007874015755,
+      "y": 523.4033435602239
+    },
+    "article-M-badihi": {
+      "page": 45,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-11": {
+      "page": 45,
+      "x": 43.937007874015755,
+      "y": 238.6205639117864
+    },
+    "article-J-mudmar": {
+      "page": 45,
+      "x": 43.937007874015755,
+      "y": 308.5112030914738
+    },
+    "dict-term-153": {
+      "page": 45,
+      "x": 43.937007874015755,
+      "y": 620.3411507477242
+    },
+    "article-F-talab": {
+      "page": 46,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-150": {
+      "page": 46,
+      "x": 43.937007874015755,
+      "y": 372.4162783649116
+    },
+    "article-J-zahir": {
+      "page": 46,
+      "x": 43.937007874015755,
+      "y": 442.3069175445992
+    },
+    "dict-term-151": {
+      "page": 47,
+      "x": 43.937007874015755,
+      "y": 179.5653307086614
+    },
+    "article-J-zann": {
+      "page": 47,
+      "x": 43.937007874015755,
+      "y": 249.45596988834885
+    },
+    "article-M-zann": {
+      "page": 47,
+      "x": 43.937007874015755,
+      "y": 370.10291754459894
+    },
+    "dict-term-3": {
+      "page": 47,
+      "x": 43.937007874015755,
+      "y": 630.3362839508492
+    },
+    "article-J-amm": {
+      "page": 48,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-37": {
+      "page": 48,
+      "x": 43.937007874015755,
+      "y": 387.18694477116156
+    },
+    "article-J-ibada": {
+      "page": 48,
+      "x": 43.937007874015755,
+      "y": 457.0775839508491
+    },
+    "dict-term-2": {
+      "page": 48,
+      "x": 43.937007874015755,
+      "y": 568.9021316070991
+    },
+    "article-J-adala": {
+      "page": 48,
+      "x": 43.937007874015755,
+      "y": 638.7927707867866
+    },
+    "dict-term-145": {
+      "page": 49,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-urf": {
+      "page": 49,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-5": {
+      "page": 49,
+      "x": 43.937007874015755,
+      "y": 267.10151754459895
+    },
+    "article-J-azima": {
+      "page": 49,
+      "x": 43.937007874015755,
+      "y": 336.99215672428636
+    },
+    "dict-term-4": {
+      "page": 49,
+      "x": 43.937007874015755,
+      "y": 502.19270438053667
+    },
+    "article-J-aql": {
+      "page": 49,
+      "x": 43.937007874015755,
+      "y": 572.0833435602242
+    },
+    "dict-term-46": {
+      "page": 50,
+      "x": 43.937007874015755,
+      "y": 386.5910639117865
+    },
+    "article-J-ilm": {
+      "page": 50,
+      "x": 43.937007874015755,
+      "y": 456.481703091474
+    },
+    "dict-term-45": {
+      "page": 51,
+      "x": 43.937007874015755,
+      "y": 358.3934639117865
+    },
+    "article-J-illa": {
+      "page": 51,
+      "x": 43.937007874015755,
+      "y": 428.2841030914741
+    },
+    "dict-term-143": {
+      "page": 51,
+      "x": 43.937007874015755,
+      "y": 724.6846507477243
+    },
+    "article-J-umum": {
+      "page": 52,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-144": {
+      "page": 52,
+      "x": 43.937007874015755,
+      "y": 240.4426783649114
+    },
+    "article-F-baliya": {
+      "page": 52,
+      "x": 43.937007874015755,
+      "y": 337.7194675445988
+    },
+    "SRC-BQ01": {
+      "page": 53,
+      "x": 43.937007874015755,
+      "y": 295.2982907086615
+    },
+    "dict-term-24": {
+      "page": 53,
+      "x": 43.937007874015755,
+      "y": 389.3916075086613
+    },
+    "article-J-ghaya": {
+      "page": 53,
+      "x": 43.937007874015755,
+      "y": 459.28224668834883
+    },
+    "dict-term-25": {
+      "page": 53,
+      "x": 43.937007874015755,
+      "y": 552.2187943445988
+    },
+    "dict-term-19": {
+      "page": 53,
+      "x": 43.937007874015755,
+      "y": 675.9347343836614
+    },
+    "article-J-fard": {
+      "page": 54,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-18": {
+      "page": 54,
+      "x": 43.937007874015755,
+      "y": 185.9522783649114
+    },
+    "article-J-far": {
+      "page": 54,
+      "x": 43.937007874015755,
+      "y": 255.84291754459883
+    },
+    "dict-term-23": {
+      "page": 54,
+      "x": 43.937007874015755,
+      "y": 382.74486520084895
+    },
+    "dict-term-20": {
+      "page": 54,
+      "x": 43.937007874015755,
+      "y": 493.8398452399115
+    },
+    "article-J-fasad": {
+      "page": 54,
+      "x": 43.937007874015755,
+      "y": 563.7304844195991
+    },
+    "dict-term-22": {
+      "page": 55,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-fil": {
+      "page": 55,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-21": {
+      "page": 55,
+      "x": 43.937007874015755,
+      "y": 335.535050747724
+    },
+    "article-J-fiqh": {
+      "page": 55,
+      "x": 43.937007874015755,
+      "y": 405.4256899274115
+    },
+    "dict-term-114": {
+      "page": 55,
+      "x": 43.937007874015755,
+      "y": 610.6582375836617
+    },
+    "article-R-qara": {
+      "page": 56,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "SRC-BH12": {
+      "page": 57,
+      "x": 43.937007874015755,
+      "y": 333.86389070866153
+    },
+    "dict-term-111": {
+      "page": 57,
+      "x": 43.937007874015755,
+      "y": 429.00152750866147
+    },
+    "article-J-qarina": {
+      "page": 57,
+      "x": 43.937007874015755,
+      "y": 498.892166688349
+    },
+    "dict-term-109": {
+      "page": 58,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-qada": {
+      "page": 58,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-110": {
+      "page": 58,
+      "x": 43.937007874015755,
+      "y": 444.81745074772414
+    },
+    "article-S-yaqiniyyat": {
+      "page": 58,
+      "x": 43.937007874015755,
+      "y": 514.7080899274117
+    },
+    "dict-term-112": {
+      "page": 58,
+      "x": 43.937007874015755,
+      "y": 641.6100375836618
+    },
+    "article-J-qiyas": {
+      "page": 59,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-qiyas-dabita": {
+      "page": 60,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-113": {
+      "page": 60,
+      "x": 43.937007874015755,
+      "y": 174.0746783649114
+    },
+    "article-K-shabah": {
+      "page": 60,
+      "x": 43.937007874015755,
+      "y": 243.96531754459886
+    },
+    "dict-term-62": {
+      "page": 62,
+      "x": 43.937007874015755,
+      "y": 425.09359711491163
+    },
+    "article-J-makruh": {
+      "page": 62,
+      "x": 43.937007874015755,
+      "y": 494.9842362945992
+    },
+    "dict-term-63": {
+      "page": 62,
+      "x": 43.937007874015755,
+      "y": 654.8221839508492
+    },
+    "article-J-kasb": {
+      "page": 63,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-61": {
+      "page": 63,
+      "x": 43.937007874015755,
+      "y": 170.52287836491143
+    },
+    "article-J-kalam": {
+      "page": 63,
+      "x": 43.937007874015755,
+      "y": 253.60815754459884
+    },
+    "dict-term-70": {
+      "page": 63,
+      "x": 43.937007874015755,
+      "y": 546.0141052008493
+    },
+    "article-J-kulli-haqiqi": {
+      "page": 63,
+      "x": 43.937007874015755,
+      "y": 615.9047443805368
+    },
+    "article-J-kulli-idafi": {
+      "page": 64,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-69": {
+      "page": 64,
+      "x": 43.937007874015755,
+      "y": 423.41087836491135
+    },
+    "article-J-kinaya": {
+      "page": 64,
+      "x": 43.937007874015755,
+      "y": 493.3015175445989
+    },
+    "dict-term-71": {
+      "page": 65,
+      "x": 43.937007874015755,
+      "y": 177.83193070866145
+    },
+    "article-J-lafz": {
+      "page": 65,
+      "x": 43.937007874015755,
+      "y": 247.72256988834891
+    },
+    "dict-term-87": {
+      "page": 65,
+      "x": 43.937007874015755,
+      "y": 359.8991175445989
+    },
+    "article-M-mubah": {
+      "page": 65,
+      "x": 43.937007874015755,
+      "y": 429.7897567242864
+    },
+    "dict-term-100": {
+      "page": 65,
+      "x": 43.937007874015755,
+      "y": 558.0693899274114
+    },
+    "article-J-mutawatir": {
+      "page": 65,
+      "x": 43.937007874015755,
+      "y": 647.873569966474
+    },
+    "dict-term-85": {
+      "page": 66,
+      "x": 43.937007874015755,
+      "y": 68.94793070866143
+    },
+    "article-J-mithal": {
+      "page": 66,
+      "x": 43.937007874015755,
+      "y": 138.83856988834893
+    },
+    "dict-term-75": {
+      "page": 66,
+      "x": 43.937007874015755,
+      "y": 264.00711754459894
+    },
+    "article-J-majaz": {
+      "page": 66,
+      "x": 43.937007874015755,
+      "y": 333.8977567242864
+    },
+    "dict-term-90": {
+      "page": 68,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-mujtahid": {
+      "page": 68,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-89": {
+      "page": 68,
+      "x": 43.937007874015755,
+      "y": 253.75751754459893
+    },
+    "article-J-mujmal": {
+      "page": 68,
+      "x": 43.937007874015755,
+      "y": 323.64815672428637
+    },
+    "dict-term-74": {
+      "page": 68,
+      "x": 43.937007874015755,
+      "y": 638.8126375836619
+    },
+    "dict-term-73": {
+      "page": 69,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-92": {
+      "page": 69,
+      "x": 43.937007874015755,
+      "y": 155.8756307477239
+    },
+    "article-S-mukhayyilat": {
+      "page": 69,
+      "x": 43.937007874015755,
+      "y": 225.76626992741134
+    },
+    "article-S-ikhala": {
+      "page": 69,
+      "x": 43.937007874015755,
+      "y": 342.77061758366136
+    },
+    "dict-term-88": {
+      "page": 69,
+      "x": 43.937007874015755,
+      "y": 502.20706609928646
+    },
+    "article-R-darak": {
+      "page": 69,
+      "x": 43.937007874015755,
+      "y": 572.097705278974
+    },
+    "dict-term-98": {
+      "page": 70,
+      "x": 43.937007874015755,
+      "y": 560.1653307086618
+    },
+    "article-J-mursal": {
+      "page": 70,
+      "x": 43.937007874015755,
+      "y": 630.0559698883494
+    },
+    "dict-term-99": {
+      "page": 71,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-musnad": {
+      "page": 71,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-84": {
+      "page": 71,
+      "x": 43.937007874015755,
+      "y": 420.99491754459916
+    },
+    "article-S-mashhurat": {
+      "page": 71,
+      "x": 43.937007874015755,
+      "y": 490.88555672428674
+    },
+    "dict-term-83": {
+      "page": 71,
+      "x": 43.937007874015755,
+      "y": 644.4755043805368
+    },
+    "dict-term-101": {
+      "page": 72,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-mutlaq": {
+      "page": 72,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-82": {
+      "page": 72,
+      "x": 43.937007874015755,
+      "y": 208.1815175445989
+    },
+    "article-J-maqulat-ula": {
+      "page": 72,
+      "x": 43.937007874015755,
+      "y": 278.07215672428634
+    },
+    "article-J-maqulat-thaniya": {
+      "page": 72,
+      "x": 43.937007874015755,
+      "y": 385.89510438053645
+    },
+    "article-J-maqul": {
+      "page": 72,
+      "x": 43.937007874015755,
+      "y": 474.4780520367864
+    },
+    "dict-term-77": {
+      "page": 72,
+      "x": 43.937007874015755,
+      "y": 586.6545996930363
+    },
+    "article-J-malul-akhir": {
+      "page": 72,
+      "x": 43.937007874015755,
+      "y": 656.5452388727239
+    },
+    "dict-term-78": {
+      "page": 73,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-maani": {
+      "page": 73,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "article-J-mana": {
+      "page": 73,
+      "x": 43.937007874015755,
+      "y": 298.617317544599
+    },
+    "dict-term-72": {
+      "page": 73,
+      "x": 43.937007874015755,
+      "y": 391.55386520084903
+    },
+    "article-J-mafh-muwafaqa": {
+      "page": 73,
+      "x": 43.937007874015755,
+      "y": 501.27158609928654
+    },
+    "article-M-mantuq": {
+      "page": 73,
+      "x": 43.937007874015755,
+      "y": 604.5799337555366
+    },
+    "dict-term-96": {
+      "page": 74,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-muqaddima": {
+      "page": 74,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-81": {
+      "page": 74,
+      "x": 43.937007874015755,
+      "y": 498.13891754459905
+    },
+    "article-R-qasd": {
+      "page": 74,
+      "x": 43.937007874015755,
+      "y": 568.0295567242866
+    },
+    "dict-term-97": {
+      "page": 75,
+      "x": 43.937007874015755,
+      "y": 373.20386391178664
+    },
+    "article-J-muqayyad": {
+      "page": 75,
+      "x": 43.937007874015755,
+      "y": 443.09450309147417
+    },
+    "dict-term-76": {
+      "page": 75,
+      "x": 43.937007874015755,
+      "y": 536.0310507477241
+    },
+    "dict-term-91": {
+      "page": 75,
+      "x": 43.937007874015755,
+      "y": 647.1260307867867
+    },
+    "dict-term-93": {
+      "page": 76,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-M-munasib": {
+      "page": 76,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "article-S-mulaim": {
+      "page": 76,
+      "x": 43.937007874015755,
+      "y": 218.19760309147392
+    },
+    "dict-term-94": {
+      "page": 76,
+      "x": 43.937007874015755,
+      "y": 316.678150747724
+    },
+    "dict-term-95": {
+      "page": 76,
+      "x": 43.937007874015755,
+      "y": 440.3940907867865
+    },
+    "dict-term-79": {
+      "page": 76,
+      "x": 43.937007874015755,
+      "y": 551.489070825849
+    },
+    "article-J-mandub": {
+      "page": 76,
+      "x": 43.937007874015755,
+      "y": 621.3797100055366
+    },
+    "dict-term-80": {
+      "page": 77,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-86": {
+      "page": 77,
+      "x": 43.937007874015755,
+      "y": 169.0702707477239
+    },
+    "article-J-muawwal": {
+      "page": 77,
+      "x": 43.937007874015755,
+      "y": 238.96090992741134
+    },
+    "dict-term-102": {
+      "page": 77,
+      "x": 43.937007874015755,
+      "y": 470.88145758366164
+    },
+    "dict-term-106": {
+      "page": 77,
+      "x": 43.937007874015755,
+      "y": 581.9764376227242
+    },
+    "article-J-naskh": {
+      "page": 78,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-105": {
+      "page": 78,
+      "x": 43.937007874015755,
+      "y": 300.69087836491144
+    },
+    "article-J-nass": {
+      "page": 78,
+      "x": 43.937007874015755,
+      "y": 370.5815175445989
+    },
+    "dict-term-107": {
+      "page": 78,
+      "x": 43.937007874015755,
+      "y": 554.5020652008491
+    },
+    "article-M-nazar": {
+      "page": 79,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-104": {
+      "page": 79,
+      "x": 43.937007874015755,
+      "y": 451.1245639117866
+    },
+    "article-J-manqul": {
+      "page": 80,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-M-athar": {
+      "page": 80,
+      "x": 43.937007874015755,
+      "y": 560.5932783649121
+    },
+    "dict-term-103": {
+      "page": 80,
+      "x": 43.937007874015755,
+      "y": 687.139511568037
+    },
+    "article-J-nahy": {
+      "page": 81,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "dict-term-108": {
+      "page": 81,
+      "x": 43.937007874015755,
+      "y": 143.83487836491142
+    },
+    "article-S-niyya": {
+      "page": 81,
+      "x": 43.937007874015755,
+      "y": 213.72551754459886
+    },
+    "dict-term-147": {
+      "page": 81,
+      "x": 43.937007874015755,
+      "y": 325.9020652008489
+    },
+    "article-J-wajib": {
+      "page": 81,
+      "x": 43.937007874015755,
+      "y": 395.7927043805363
+    },
+    "dict-term-148": {
+      "page": 82,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "article-J-wad": {
+      "page": 82,
+      "x": 43.937007874015755,
+      "y": 115.2449698883489
+    },
+    "dict-term-149": {
+      "page": 82,
+      "x": 43.937007874015755,
+      "y": 422.44145074772416
+    },
+    "article-J-yaqin": {
+      "page": 82,
+      "x": 43.937007874015755,
+      "y": 492.33208992741174
+    },
+    "lexicon-sources": {
+      "page": 84,
+      "x": 43.937007874015755,
+      "y": 45.35433070866142
+    },
+    "lex-source-R": {
+      "page": 84,
+      "x": 43.937007874015755,
+      "y": 106.39109070866141
+    },
+    "lex-source-U": {
+      "page": 84,
+      "x": 43.937007874015755,
+      "y": 249.2867745367864
+    },
+    "lex-source-L": {
+      "page": 84,
+      "x": 43.937007874015755,
+      "y": 379.56149836491136
+    },
+    "lex-source-F": {
+      "page": 84,
+      "x": 43.937007874015755,
+      "y": 522.4571821930365
+    },
+    "lex-source-J": {
+      "page": 84,
+      "x": 43.937007874015755,
+      "y": 665.3528660211615
+    },
+    "lex-source-S": {
+      "page": 85,
+      "x": 43.937007874015755,
+      "y": 82.65969070866142
+    },
+    "lex-source-M": {
+      "page": 85,
+      "x": 43.937007874015755,
+      "y": 225.55537453678642
+    },
+    "lex-source-K": {
+      "page": 85,
+      "x": 43.937007874015755,
+      "y": 355.83009836491135
+    },
+    "lexicon-relations": {
+      "page": 86,
+      "x": 43.937007874015755,
+      "y": 61.35433070866142
+    }
+  },
+  "input_sha256": {
+    "full-headwords.json": "7cf55eeac0bddc19c168453deb8af4e79d477ad3b871fd650e5e12d08fecea83",
+    "backmatter-source-notes.json": "86c7d66e0b54a21233b3bf86a4788b534b9377390ff3480d022359884e2085bf"
+  }
+}
