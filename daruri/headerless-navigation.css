@@ -492,3 +492,105 @@
  body.reader-enhanced:not(.reading-active) #readingControls :is(.gn-top-home,.gn-top-read) span{display:none!important}
  body.reader-enhanced.reading-active #readingControls .gn-reader-global-leading{gap:0!important}
 }
+
+/* 25 Oct 2026: accessible exit from focus/continuous reading and correctly
+   sized Home/Read navigation. Earlier inline compact-toolbar CSS sets every
+   leading button to 27–30px with !important, causing the labels and icons to
+   overlap on desktop. Reset the whole sizing contract, not just padding. */
+@media screen {
+ body.reader-enhanced #readingControls .gn-reader-global-leading :is(#gnTopHome,#gnTopRead) {
+   box-sizing:border-box!important;
+   display:inline-flex!important;position:relative!important;top:auto!important;
+   flex:0 0 auto!important;width:max-content!important;
+   min-width:80px!important;max-width:none!important;
+   height:44px!important;min-height:44px!important;max-height:44px!important;
+   margin:0!important;padding:0 12px!important;
+   align-items:center!important;justify-content:center!important;
+   gap:7px!important;overflow:hidden!important;
+   white-space:nowrap!important;
+ }
+ body.reader-enhanced #readingControls .gn-reader-global-leading :is(#gnTopHome,#gnTopRead)>svg {
+   display:block!important;position:static!important;transform:none!important;
+   flex:0 0 18px!important;width:18px!important;height:18px!important;
+   margin:0!important;padding:0!important;
+ }
+ body.reader-enhanced #readingControls .gn-reader-global-leading :is(#gnTopHome,#gnTopRead)>span {
+   display:inline!important;position:static!important;flex:0 0 auto!important;
+   margin:0!important;padding:0!important;overflow:visible!important;
+ }
+ body.reader-enhanced.reading-active:not(.focus-mode) #readingControls #gnTopHome {
+   display:inline-flex!important;
+ }
+ /* Read is redundant when reading; Home is not. */
+ body.reader-enhanced.reading-active #readingControls #gnTopRead {display:none!important;}
+ #gnReaderEscape,#gnReaderMobileHome {display:none!important;}
+ body.reader-enhanced.reading-active.focus-mode #gnReaderEscape {
+   display:flex!important;position:fixed!important;
+   left:calc(12px + env(safe-area-inset-left))!important;
+   bottom:calc(16px + env(safe-area-inset-bottom))!important;
+   z-index:65!important;align-items:center!important;gap:5px!important;
+   box-sizing:border-box!important;
+   padding:5px!important;border:1px solid var(--border)!important;
+   border-radius:11px!important;background:var(--surface)!important;
+   color:var(--text)!important;box-shadow:0 5px 22px #0002!important;
+ }
+ body.reader-enhanced.reading-active.focus-mode #gnReaderEscape>button {
+   display:inline-flex!important;align-items:center!important;justify-content:center!important;
+   box-sizing:border-box!important;min-height:40px!important;
+   padding:0 12px!important;margin:0!important;border:1px solid transparent!important;
+   border-radius:7px!important;background:transparent!important;
+   color:var(--text)!important;
+   font:600 13px/1.2 var(--sans,system-ui,sans-serif)!important;
+   cursor:pointer!important;white-space:nowrap!important;
+ }
+ body.reader-enhanced.reading-active.focus-mode #gnReaderEscape #gnExitFocus {
+   background:var(--accent-soft)!important;color:var(--accent)!important;
+ }
+ body.reader-enhanced #gnReaderEscape>button:is(:hover,:focus-visible),
+ body.reader-enhanced #gnReaderMobileHome:is(:hover,:focus-visible) {
+   outline:2px solid var(--accent)!important;outline-offset:2px!important;
+ }
+ /* Restore a route out even if a user separately hides the regular header. */
+ body.reader-enhanced.reading-active.header-collapsed:not(.focus-mode) #hiddenHeaderRecovery:not([hidden]) {
+   display:flex!important;
+ }
+ body.reader-enhanced.reading-active.header-collapsed:not(.focus-mode) #restoreHeader:not([hidden]) {
+   display:inline-flex!important;
+ }
+}
+@media screen and (min-width:621px) and (max-width:940px) {
+ /* Icon-only shortcuts leave room for language, bookmark and share controls. */
+ body.reader-enhanced #readingControls .gn-reader-global-leading :is(#gnTopHome,#gnTopRead) {
+   flex:0 0 44px!important;width:44px!important;
+   min-width:44px!important;max-width:44px!important;
+   padding:0!important;gap:0!important;
+ }
+ body.reader-enhanced #readingControls .gn-reader-global-leading :is(#gnTopHome,#gnTopRead)>span {
+   display:none!important;
+ }
+}
+@media screen and (max-width:620px) {
+ /* Preserve the established single-row reading toolbar on small screens. */
+ body.reader-enhanced.reading-active #readingControls #gnTopHome {display:none!important;}
+ body.reader-enhanced.reading-active:not(.focus-mode) #gnReaderMobileHome {
+   position:fixed!important;display:inline-flex!important;
+   left:calc(10px + env(safe-area-inset-left))!important;
+   bottom:calc(112px + env(safe-area-inset-bottom))!important;
+   z-index:55!important;box-sizing:border-box!important;
+   width:42px!important;height:42px!important;
+   justify-content:center!important;align-items:center!important;
+   padding:0!important;border:1px solid var(--border)!important;
+   border-radius:50%!important;background:var(--surface)!important;
+   color:var(--accent)!important;box-shadow:0 3px 13px #0002!important;
+   cursor:pointer!important;
+ }
+ body.reader-enhanced #gnReaderMobileHome>svg {
+   width:19px!important;height:19px!important;display:block!important;
+ }
+ body.reader-enhanced.reading-active.focus-mode #gnReaderEscape {
+   bottom:calc(112px + env(safe-area-inset-bottom))!important;
+ }
+}
+@media print {
+ #gnReaderEscape,#gnReaderMobileHome {display:none!important;}
+}
