@@ -698,6 +698,11 @@
  body.reader-enhanced :is(#gnReaderMobileHome,#gnReaderEscape) {
    display:none!important;
  }
+ /* Defeat the older higher-specificity desktop Home reinsertion rule. */
+ body.reader-enhanced.reading-active:not(.focus-mode) #readingControls #gnTopHome,
+ body.reader-enhanced.reading-active.focus-mode #readingControls #gnTopHome {
+   display:none!important;
+ }
  body.reader-enhanced.reading-active.focus-mode #readingControls:not([hidden])
    :is(#readerSaveAction,#readerShareAction,#searchBtn,#settingsBtn,#themeBtn,#gnTopHome,#gnTopRead,#gnTopHelp,.gn-copy-wrapper) {
    display:none!important;
