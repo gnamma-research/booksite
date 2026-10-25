@@ -8,6 +8,7 @@ from __future__ import annotations
 from pathlib import Path
 import argparse, html, json, re, hashlib, zipfile
 from weasyprint import HTML
+from english_lexicon_pdf import markup as inline_english_lexicon
 import fitz
 
 HERE=Path(__file__).resolve().parent
@@ -69,6 +70,10 @@ def css(c,mode):
   .number{font:600 7pt/1.3 "Noto Sans";color:#666;direction:ltr;unicode-bidi:isolate;vertical-align:top}
   .afterword{margin-top:12pt;padding-top:6pt;border-top:.3pt solid #aaa;font:8pt/1.35 "Noto Sans"}
   '''%c['margin']
+  out+='''.gn-en-added { direction:ltr;unicode-bidi:isolate; }
+  .gn-en-inline-link{font-family:"Noto Naskh Arabic",serif;direction:rtl;unicode-bidi:isolate;
+    font-size:1.1em;text-decoration:underline;text-decoration-style:dotted;color:inherit}
+  '''
   out+='''.reading-editorial-title{bookmark-level:3;bookmark-state:closed;font:600 9pt/1.32 "Noto Sans";color:#30383a;margin:6pt 0 3pt;break-after:avoid;break-inside:avoid}
   .reading-editorial-title small{font:600 7pt "Noto Sans";text-transform:uppercase;color:#5d6568;padding-right:5pt}
   '''
@@ -135,7 +140,7 @@ def build(mode,selection,scope,title,pdf,editorial_titles=False):
       cells=[]
       for i,seg in enumerate(s['segments']):
         label='<b class="number">'+str(n)+'</b> ' if i==0 else ''
-        cells.append('<tr><td class="english"><p>'+label+E(seg['en'])+'</p></td><td class="arabic" lang="ar" dir="rtl"><p>'+label+E(seg[c['ar']])+'</p></td></tr>')
+        cells.append('<tr><td class="english"><p>'+label+inline_english_lexicon(seg['en'],seg['ar'])+'</p></td><td class="arabic" lang="ar" dir="rtl"><p>'+label+E(seg[c['ar']])+'</p></td></tr>')
       content.append('<table id="section-'+str(n)+'" class="parallel"><tbody>'+''.join(cells)+'</tbody></table>')
     else:
       for i,seg in enumerate(s['segments']):
@@ -143,7 +148,7 @@ def build(mode,selection,scope,title,pdf,editorial_titles=False):
         attrs=(' class="en-body"' if mode=='english' else ' class="ar-body" dir="rtl" lang="ar"')
         source_id=' id="section-'+str(n)+'"' if i==0 else ''
         label='<b class="number">'+str(n)+'</b> ' if i==0 else ''
-        content.append('<p'+attrs+source_id+'>'+label+E(body)+'</p>')
+        content.append('<p'+attrs+source_id+'>'+label+(inline_english_lexicon(body,seg['ar']) if mode=='english' else E(body))+'</p>')
   if not mode.startswith('bilingual'):content.append('</article>')
   if scope=='full':
     content.append('<p class="afterword">The later copyist’s record and scholarly apparatus remain in the reference edition.</p>' if not mode.startswith('arabic') else '<p class="afterword" dir="rtl" lang="ar">توجد خاتمة الناسخ والحواشي النقدية والشروح في الطبعة العلمية.</p>')
