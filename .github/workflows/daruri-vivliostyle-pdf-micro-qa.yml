@@ -1,0 +1,77 @@
+name: Daruri Vivliostyle-PDF actual client microbook with Arabic, notes and dictionary (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths:
+      - 'daruri/qa/stage2_shootout/vivliostyle_*'
+      - 'daruri/qa/stage2_shootout/test_vivliostyle_pdf_browser.cjs'
+      - 'daruri/qa/stage2_shootout/package.json'
+      - '.github/workflows/daruri-vivliostyle-pdf-micro-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daruri-vivliostyle-micro-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser-microbook:
+    runs-on: ubuntu-latest
+    timeout-minutes: 32
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Construct canonical full Scholarly HTML then REAL subset microbook
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py \
+             daruri/qa/stage2_shootout/runtime_ultimate scholarly
+          python daruri/qa/stage2_shootout/vivliostyle_micro_fixture.py \
+             daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+             daruri/qa/stage2_shootout/runtime_ultimate/vivliostyle-micro.source.txt
+      - name: Install browser PDF emitter and native browser
+        run: |
+          npm install --prefix daruri/qa/stage2_shootout --no-package-lock --no-audit --no-fund
+          cd daruri/qa/stage2_shootout
+          npx playwright install --with-deps --only-shell chromium
+      - name: Produce ACTUAL in-browser PDF Blob from real Arabic + scholarly apparatus
+        env:
+          BENCH_BROWSER: ${{ matrix.browser }}
+          BENCH_SOURCE: vivliostyle-micro
+          BENCH_OUT: /tmp/gnamma-vivliostyle-micro-${{ matrix.browser }}
+        run: |
+          node --check daruri/qa/stage2_shootout/vivliostyle_pdf_browser.mjs
+          node --check daruri/qa/stage2_shootout/test_vivliostyle_pdf_browser.cjs
+          /usr/bin/time -v node daruri/qa/stage2_shootout/test_vivliostyle_pdf_browser.cjs
+      - name: Inspect actual PDF pages, internal links, Arabic ToUnicode and source notes
+        run: |
+          python - <<'PY'
+          import fitz,json,re,subprocess,unicodedata,pathlib
+          p=pathlib.Path('/tmp/gnamma-vivliostyle-micro-chromium/daruri-vivliostyle-micro-vivliostyle-pdf-NONRELEASE.pdf')
+          with fitz.open(p) as d:
+            links=[l for page in d for l in page.get_links()]
+            content=''.join(page.get_text() for page in d)
+            ar=[c for c in content if '\u0621'<=c<='\u064a']
+            result={'pages':len(d),'bytes':p.stat().st_size,'outlines':len(d.get_toc()),
+               'pdf_annotations':len(links),'named_destinations':len(d.resolve_names()),
+               'go_to_links':sum(l['kind']==fitz.LINK_GOTO for l in links),
+               'external_links':sum(l['kind']==fitz.LINK_URI for l in links),
+               'arabic_base_chars_detected':len(ar),
+               'extracted_preview':content[:160]}
+          pathlib.Path('/tmp/gnamma-vivliostyle-micro-chromium/micro-native-pdf-audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+          print('GNAMMA_VIVLIOSTYLE_MICRO_PDF_AUDIT',json.dumps(result,ensure_ascii=False))
+          assert 2<=result['pages']<100 and result['pdf_annotations']>=1
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-vivliostyle-pdf-micro-chromium-NONRELEASE
+          path: /tmp/gnamma-vivliostyle-micro-chromium
+          if-no-files-found: warn
+          retention-days: 14
