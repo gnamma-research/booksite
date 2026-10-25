@@ -57,7 +57,7 @@ async function exercise(engine,{mobile=false}={}){
    try{return JSON.parse(localStorage.getItem('gnamma-reading-desk-v1')||'{}').items
      ?.some(x=>x.kind==='quote'&&x.target?.section==='1'&&x.target?.lang==='en');}
    catch(_){return false;}
-  },{timeout:15000});
+  },null,{timeout:15000});
   const paint=await page.evaluate(()=>{
    const n=window.CSS?.highlights?.get('gn-rd-bookmark')?.size||0;
    const fallback=document.querySelectorAll('#reader mark.gn-rd-saved-highlight').length;
@@ -75,7 +75,17 @@ async function exercise(engine,{mobile=false}={}){
   await page.waitForFunction(()=>{
    return (window.CSS?.highlights?.get('gn-rd-bookmark')?.size||0)>0||
     document.querySelectorAll('#reader mark.gn-rd-saved-highlight').length>0;
-  },{timeout:18000});
+  },null,{timeout:18000});
+  // Phones can start English-only. Enable Arabic through the reader's real
+  // language control, rather than treating a hidden column as a selection bug.
+  if(mobile&&!(await ar.isVisible())){
+   await page.evaluate(()=>{
+    const button=document.querySelector('[data-language-toggle="arabic"]');
+    if(!button)throw Error('Arabic language toggle not mounted on mobile');
+    button.click();
+   });
+   await ar.waitFor({state:'visible',timeout:18000});
+  }
   // Neither ordinary tap nor native text selection should auto-launch modal.
   await ar.scrollIntoViewIfNeeded();
   const loc=await selectWord(page,'ar');
