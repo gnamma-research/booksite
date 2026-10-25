@@ -391,7 +391,7 @@ document.addEventListener('contextmenu',event=>{
  if(event.defaultPrevented||
     !window.matchMedia?.('(hover:hover) and (pointer:fine)').matches)return;
  if(shade&&!shade.hidden)return;
- if(event.target?.closest?.('a,button,input,textarea,select,[contenteditable],mark[data-rd],.note-anchored,[data-note-target],[data-rd]'))return;
+ if(event.target?.closest?.('a[href],button,input,textarea,select,[contenteditable],[data-rd]'))return;
  const side=event.target?.closest?.('#mainContent .passage-grid .passage-ar');
  if(!side)return;
  const sel=window.getSelection?.(),hasSelection=!!sel?.toString().trim();
