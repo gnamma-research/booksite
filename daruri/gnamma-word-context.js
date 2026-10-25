@@ -301,7 +301,7 @@ function openSelectedQuote(target){
      return true;
    }
  }
- const grid=$('#reader .passage-grid[data-segment]').find(node=>
+ const grid=$$('#reader .passage-grid[data-segment]').find(node=>
    Number(node.dataset.segment)===Number(target.segment)&&
    String(node.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator())===String(target.section));
  const side=grid?.querySelector('.passage-ar');
@@ -366,47 +366,80 @@ document.addEventListener('click',e=>{
  const dict=e.target?.closest?.('[data-term]');
  if(dict){lastDictionary={term:dict.dataset.term};queueMicrotask(installDictionaryActions);return;}
 }); 
-/* Desktop context menu appears only when no ordinary text is selected.
-   Native context menu (including Copy) stays intact for selections, links,
-   buttons, touch/long-press, and apparatus anchors. */
+/* Explicit word context; native mouse drag and touch selection are untouched.
+   For a selected Arabic word the custom right-click menu retains Copy.
+   Multiword / English selection continues to use the native browser menu. */
 let wordMenu=null,wordMenuTarget=null;
 function closeWordMenu(){
  wordMenu?.remove();wordMenu=null;wordMenuTarget=null;
 }
+async function copyWordFromMenu(text){
+ try{
+  if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');
+  await navigator.clipboard.writeText(text);return;
+ }catch(_){}
+ const saved=window.getSelection?.(),ranges=[];
+ if(saved)for(let i=0;i<saved.rangeCount;i++)ranges.push(saved.getRangeAt(i).cloneRange());
+ const field=document.createElement('textarea');
+ field.value=text;field.style.cssText='position:fixed;left:-9999px;top:0';
+ document.body.append(field);field.focus();field.select();
+ try{document.execCommand('copy');}catch(_){}
+ field.remove();
+ if(saved){saved.removeAllRanges();ranges.forEach(range=>saved.addRange(range));}
+}
 document.addEventListener('contextmenu',event=>{
- if(event.defaultPrevented||!window.matchMedia?.('(hover:hover) and (pointer:fine)').matches)return;
- if(shade&&!shade.hidden||window.getSelection?.()?.toString().trim())return;
+ if(event.defaultPrevented||
+    !window.matchMedia?.('(hover:hover) and (pointer:fine)').matches)return;
+ if(shade&&!shade.hidden)return;
  if(event.target?.closest?.('a,button,input,textarea,select,[contenteditable],mark[data-rd],.note-anchored,[data-note-target],[data-rd]'))return;
  const side=event.target?.closest?.('#mainContent .passage-grid .passage-ar');
  if(!side)return;
- const point=atTap(event);
- if(!point.node||!side.contains(point.node))return;
- const word=currentToken(point.node,point.offset);
- if(!word)return;
+ const sel=window.getSelection?.(),hasSelection=!!sel?.toString().trim();
+ let chosen=null;
+ if(hasSelection){
+  const selectedWord=findSelectedWord();
+  if(!selectedWord||selectedWord.anchor!==side)return;
+  const within=[...sel.getRangeAt(0).getClientRects()].some(rect=>
+   event.clientX>=rect.left-3&&event.clientX<=rect.right+3&&
+   event.clientY>=rect.top-3&&event.clientY<=rect.bottom+3);
+  if(!within)return;
+  chosen={...selectedWord,text:sel.toString(),selected:true};
+ }else{
+  const point=atTap(event);
+  if(!point.node||!side.contains(point.node))return;
+  const word=currentToken(point.node,point.offset);
+  if(!word)return;
+  chosen={word,anchor:side,grid:side.closest('.passage-grid'),point,text:word,selected:false};
+ }
+ if(!chosen?.word||!chosen.grid)return;
  event.preventDefault();
  closeWordMenu();
- wordMenuTarget={word,anchor:side,grid:side.closest('.passage-grid'),point};
+ wordMenuTarget=chosen;
  wordMenu=document.createElement('div');
  wordMenu.className='gnw-reader-menu';
  wordMenu.setAttribute('role','menu');
  wordMenu.setAttribute('aria-label','Word actions');
- wordMenu.innerHTML='<button type="button" role="menuitem" data-gnw-open-menu="1">Word Context · <bdi lang="ar" dir="rtl">'+esc(word)+'</bdi></button>';
+ wordMenu.innerHTML=
+  '<button type="button" role="menuitem" data-gnw-copy-menu="1">Copy '+(chosen.selected?'selected word':'word')+'</button>'+
+  '<button type="button" role="menuitem" data-gnw-open-menu="1">Word Context · <bdi lang="ar" dir="rtl">'+esc(chosen.word)+'</bdi></button>';
  document.body.append(wordMenu);
  const rect=wordMenu.getBoundingClientRect();
  wordMenu.style.left=Math.max(8,Math.min(event.clientX,innerWidth-rect.width-8))+'px';
  wordMenu.style.top=Math.max(8,Math.min(event.clientY,innerHeight-rect.height-8))+'px';
- wordMenu.querySelector('button')?.focus({preventScroll:true});
+ wordMenu.querySelector('[data-gnw-open-menu]')?.focus({preventScroll:true});
 },true);
 document.addEventListener('pointerdown',event=>{
  if(wordMenu&&!wordMenu.contains(event.target))closeWordMenu();
 },true);
 document.addEventListener('click',event=>{
- const trigger=event.target?.closest?.('[data-gnw-open-menu]');
+ const trigger=event.target?.closest?.('[data-gnw-open-menu],[data-gnw-copy-menu]');
  if(!trigger||!wordMenu?.contains(trigger))return;
  event.preventDefault();
- const chosen=wordMenuTarget;
+ const chosen=wordMenuTarget,copy=trigger.hasAttribute('data-gnw-copy-menu');
  closeWordMenu();
- if(chosen?.grid)openWord(chosen.word,chosen.anchor,chosen.grid,trigger,chosen.point);
+ if(!chosen)return;
+ if(copy)copyWordFromMenu(chosen.text);
+ else if(chosen.grid)openWord(chosen.word,chosen.anchor,chosen.grid,trigger,chosen.point);
 },true);
 document.addEventListener('keydown',e=>{
  if(e.key==='Escape'&&wordMenu){e.preventDefault();closeWordMenu();return;}
