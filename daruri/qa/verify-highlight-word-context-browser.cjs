@@ -120,13 +120,21 @@ async function exercise(engine,{mobile=false}={}){
   // Focus modes must show both section and paragraph IN the reading flow,
   // not merely in the dock or the hover-only paragraph permalink.
   for(const level of [1,2,3]){
-   await page.evaluate(n=>{
-    const prefs=JSON.parse(localStorage.getItem('daruri-reader-v2')||'{}');
-    prefs.focusLevel=n;prefs.focusMode=true;prefs.focusApparatus=n===1;prefs.n='2';
-    localStorage.setItem('daruri-reader-v2',JSON.stringify(prefs));
-    history.replaceState(null,'','#section=2');
-   },level);
-   await page.reload({waitUntil:'domcontentloaded',timeout:90000});
+   // Drive the supported three-mode menu, not synthetic internal preference
+   // keys carried over from older builds. Legacy focusMode may conflict with
+   // the current authoritative focusLevel/Focus-apparatus control.
+   await page.goto(URL.replace('section=1','section=2'),
+    {waitUntil:'domcontentloaded',timeout:90000});
+   await page.locator('#readerDock:not([hidden])').waitFor({state:'visible',timeout:35000});
+   await page.locator('#focusToolbar').click();
+   if(level===3){
+    await page.locator('[data-gn-reader-mode="continuous"]').click();
+   }else{
+    const apparatus=page.locator('#gn-focus-apparatus-choice');
+    if(level===1)await apparatus.check();
+    else await apparatus.uncheck();
+    await page.locator('[data-gn-reader-mode="focus"]').click();
+   }
    await page.locator('body.focus-level-'+level).waitFor({state:'attached',timeout:35000});
    const root=level===3?'#gn-continuous-2':'#reader';
    const passage=page.locator(root+' .passage-grid[data-segment="1"]').first();
