@@ -33,7 +33,11 @@ async function testBrowser(engine,name,origin,width){
    await page.waitForFunction(()=>document.getElementById('mainContent')?.innerText?.trim().length>40,null,{timeout:16000});
    const data=await page.evaluate(()=>{
     const content=document.getElementById('mainContent'),txt=content?.innerText.trim()||'';
-    return{state:window.GnammaCopyContext?.state?.route||'',textCharacters:txt.length,scrollWidth:document.documentElement.scrollWidth,viewportWidth:document.documentElement.clientWidth,heading:content?.querySelector('h1,h2')?.textContent.trim().slice(0,100)||''};
+    const viewport=document.documentElement.clientWidth;
+    const offenders=[...document.querySelectorAll('#mainContent *')].map(el=>({el,r:el.getBoundingClientRect()}))
+      .filter(({r})=>r.width&&r.right>viewport+2).sort((a,b)=>b.r.right-a.r.right)
+      .slice(0,7).map(({el,r})=>({tag:el.tagName,id:el.id,cls:String(el.className).slice(0,90),right:Math.round(r.right),left:Math.round(r.left),width:Math.round(r.width)}));
+    return{state:window.GnammaCopyContext?.state?.route||'',textCharacters:txt.length,scrollWidth:document.documentElement.scrollWidth,viewportWidth:viewport,heading:content?.querySelector('h1,h2')?.textContent.trim().slice(0,100)||'',offenders};
    });
    assert.equal(data.state,route,'Navigation state mismatch on '+route);
    assert(data.textCharacters>40,'Empty '+route+' surface');
