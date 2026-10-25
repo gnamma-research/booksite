@@ -113,6 +113,34 @@
   if(focusButton)trailing.insertBefore(focusButton,trailing.firstChild);
   trailing.setAttribute('aria-label','Focus, search, theme, display and help');
 
+  // The mobile reading-mode trigger must NEVER be the book destination.
+  // Some older CSS/reader initializers can leave the Read destination visible
+  // beside AR/EN, visually masquerading as the Focus selector.
+  // Reconcile both elements after route/mode changes, including iOS Safari.
+  var focusGlyph='<svg data-gn-reading-mode-trigger="1" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H4v5M15 3h5v5M4 16v5h5M20 16v5h-5"/></svg>';
+  function reconcileModeIcon(){
+   var reading=document.body.classList.contains('reading-active');
+   // The open book is only a Read destination outside the reader.
+   read.hidden=reading;
+   if(reading)read.style.setProperty('display','none','important');
+   else read.style.removeProperty('display');
+   var obsolete=document.getElementById('apparatusToolbar');
+   if(obsolete)obsolete.style.setProperty('display','none','important');
+   if(focusButton){
+    var symbol=focusButton.querySelector('svg[data-gn-reading-mode-trigger] path');
+    if(!symbol||symbol.getAttribute('d')!=='M9 3H4v5M15 3h5v5M4 16v5h5M20 16v5h-5'){
+     focusButton.innerHTML=focusGlyph;
+    }
+    focusButton.setAttribute('aria-haspopup','dialog');
+    focusButton.setAttribute('aria-controls','gn-reading-mode-picker');
+   }
+  }
+  reconcileModeIcon();
+  new MutationObserver(reconcileModeIcon).observe(document.body,{attributes:true,attributeFilter:['class']});
+  window.addEventListener('hashchange',reconcileModeIcon);
+  document.addEventListener('gnamma-reader-route-change',reconcileModeIcon);
+
+
   // Help is available in the Contents pane, not a permanent top button.
 
   var sidebar=document.querySelector('#leftNav .primary-nav');
