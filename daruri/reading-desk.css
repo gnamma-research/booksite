@@ -631,3 +631,38 @@ body.gn-rd-print #gn-rd-print-root{box-sizing:border-box}
 .gn-rd-card-open .gn-rd-item-heading>svg{width:17px;height:17px;flex:0 0 17px;color:var(--accent,#486f60)}
 .gn-rd-detail-actions button[data-rd="add-note"],.gn-rd-detail-actions button[data-rd="edit"],.gn-rd-inline-actions button[data-rd="edit"]{display:inline-flex;align-items:center;gap:7px}
 .gn-rd-detail-actions button .gn-note-icon,.gn-rd-inline-actions button .gn-note-icon{width:17px;height:17px;flex:0 0 17px}
+
+
+/* Audit 25 October 2026 — WebKit 320px: Reading Desk's three-action row
+   extended its Manage control/dropdown beyond the viewport by 6px. Keep
+   all actions usable without document overflow or clipping the popover. */
+@media screen and (max-width:380px){
+  .gn-rd-page .gn-rd-simplified-toolbar {
+    box-sizing:border-box;
+    min-width:0;
+    max-width:100%;
+  }
+  .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-toolbar-main {
+    box-sizing:border-box;
+    flex:1 1 auto;
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    gap:3px;
+  }
+  .gn-rd-page .gn-rd-simplified-toolbar .gn-rd-main-action {
+    box-sizing:border-box;
+    flex:1 1 0;
+    min-width:0;
+    padding-inline:3px;
+  }
+  .gn-rd-page .gn-rd-manage-menu {
+    flex:0 0 auto;
+  }
+  .gn-rd-page .gn-rd-manage-items {
+    box-sizing:border-box;
+    width:min(238px,calc(100vw - 24px));
+    min-width:0;
+    max-width:calc(100vw - 24px);
+  }
+}
