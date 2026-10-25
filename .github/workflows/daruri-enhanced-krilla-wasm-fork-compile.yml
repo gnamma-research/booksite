@@ -44,9 +44,10 @@ jobs:
           patch.append(f'krilla-svg = {{git = "{krilla}", rev = "{krev}"}}')
           p.write_text(data+'\n'+'\n'.join(patch)+'\n')
           Path('pinned-open-typst-wasm/ENHANCED-GNAMMA-PATCH.md').write_text(
-            '# Gnamma research-only Typst WASM fork\n\nPinned upstream typst-wasm cf498a731e;\n'
-            '+ 'Enhanced Typst '+rev+'; enhanced Krilla '+krev+'.\n'
-            '+ 'Do not publish compiled outputs before Arabic and license checks.\n')
+            '# Gnamma research-only Typst WASM fork\n\n'
+            + 'Pinned upstream typst-wasm cf498a731e;\n'
+            + 'Enhanced Typst '+rev+'; enhanced Krilla '+krev+'.\n'
+            + 'Do not publish compiled outputs before Arabic and license checks.\n')
           PY
       - name: Resolve patched WASM dependency graph, then compile exact browser-compatible component
         run: |
