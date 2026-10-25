@@ -18,6 +18,7 @@
 <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="arabic-fonts.css?v=20261020-fonts1" rel="stylesheet"/>
 <link href="english-fonts.css?v=20261020-fonts3" rel="stylesheet"/>
+<link href="english-lexicon-links.css?v=20261025-passage-align1" rel="stylesheet"/>
 <script>
 /* Restore reading fonts and page style before the first text is laid out. */
 try {
@@ -4021,7 +4022,8 @@ body:not(.reading-active) .reading-return-bar{
 
 </div>
 </div>
-</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri14-sinaa-full-dictionary-20261025"></script><script src="edition-r3-20261020.js?v=daruri14-sinaa-full-dictionary-20261025"></script><script defer src="download-bundle.js?v=daruri14-sinaa-full-dictionary-20261025-quietnav4"></script>
+</div><script id="dictionaryData" type="application/json">{}</script><script id="editionData" type="application/json">{}</script><script src="dictionary-r3-20261020.js?v=daruri14-sinaa-full-dictionary-20261025"></script><script src="edition-r3-20261020.js?v=daruri14-sinaa-full-dictionary-20261025"></script>
+<script src="english-lexicon-links.js?v=20261025-passage-align1"></script><script defer src="download-bundle.js?v=daruri14-sinaa-full-dictionary-20261025-quietnav4"></script>
 <script src="source-reference-data.js?v=daruri14-sinaa-full-dictionary-20261025"></script>
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
@@ -4398,8 +4400,16 @@ function renderArabicWithNotes(sec,segment,i){
  for(const a of selected){out+=esc(raw.slice(pos,a.start));out+=`<a class="note-anchored" href="#note-${esc(a.id)}" data-note-target="${esc(a.id)}" title="Textual or editorial note ${esc(a.id)}" aria-label="Read note ${esc(a.id)} on this Arabic wording">${esc(raw.slice(a.start,a.end))}<sup class="note-ref-symbol">${esc(a.id)}</sup></a>`;pos=a.end}
  return out+esc(raw.slice(pos));
 }
-function renderEnglishWithNotes(sec,segment,i,relTerms){
- return addQuranSourceMarkers(annotateEnglish(segment.en,relTerms),sec,i,'en',segment.en);
+function renderEnglishWithNotes(sec,segment,i,relTerms,arabicMarkup){
+ const raw=segment.en;
+ const base=addQuranSourceMarkers(esc(raw),sec,i,'en',raw);
+ const module=window.GnammaBilingualLexicon;
+ if(!module)return addQuranSourceMarkers(annotateEnglish(raw,relTerms),sec,i,'en',raw);
+ return module.annotate({rendered:base,source:raw,
+   arabicMarkup:arabicMarkup||renderArabicWithNotes(sec,segment,i),
+   enabled:state.showTerms&&!state.focusMode,
+   matchArabicAndEnglish:dictionaryMatches,
+   terms:READER_TERMS,dictionaries:DICTIONARIES});
 }
 function noteScopeHTML(note){
  const refs=noteScopes(note),refsUnique=[];
@@ -4467,7 +4477,7 @@ function renderReaderHeading(s,level='h1'){
 
 function renderReader(){const s=sections.get(state.n);if(!s)return;const edition=arabicCitation(s);const p=partFor(s);const pn=Number(s.id);const isCol=s.id==='colophon';const primary=BOOK.apps.filter(a=>String(a.n)===state.n);
  const relTerms=BOOK.glossary.filter(t=>(t.sections||[]).map(String).includes(state.n)).slice(0,30);
- const segments=s.segments.map((seg,i)=>`<div class="passage-grid" data-segment="${i}"><div class="passage-ar" lang="ar" dir="rtl" data-ar-seg="${i}">${renderArabicWithNotes(s,seg,i)}</div><div class="passage-en" lang="en">${renderEnglishWithNotes(s,seg,i,relTerms)}</div></div>`).join('');
+ const segments=s.segments.map((seg,i)=>{const arMarkup=renderArabicWithNotes(s,seg,i);return `<div class="passage-grid" data-segment="${i}"><div class="passage-ar" lang="ar" dir="rtl" data-ar-seg="${i}">${arMarkup}</div><div class="passage-en" lang="en">${renderEnglishWithNotes(s,seg,i,relTerms,arMarkup)}</div></div>`;}).join('');
 
  const critical=gnSectionNotes(s);
  const sourceSummary=gnNoteSourceSummary(critical);
@@ -5038,7 +5048,12 @@ function applyReadingState() {
     const s = sections.get(state.n);
     reader.querySelectorAll('[data-ar-seg]').forEach(el => {
       const i=Number(el.getAttribute('data-ar-seg'));
-      if(s?.segments[i]) el.innerHTML=renderArabicWithNotes(s,s.segments[i],i);
+      const segment=s?.segments[i];
+      if(!segment)return;
+      const arMarkup=renderArabicWithNotes(s,segment,i);
+      el.innerHTML=arMarkup;
+      const english=el.closest('.passage-grid')?.querySelector('.passage-en');
+      if(english)english.innerHTML=renderEnglishWithNotes(s,segment,i,null,arMarkup);
     });
     const rubric = reader.querySelector('.arabic-rubric');
     if (rubric) rubric.textContent = state.vowels ? (s.headingVocalized || s.headingAr) : bareArabic(s.headingAr);
