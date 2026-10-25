@@ -191,11 +191,36 @@ function detailedGrammar(best,alternatives){
    ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search word forms</button></li>').join('')+'</ul></details>':'';
  return details+variants;
 }
+const MORPH_CORPUS=(BOOK?.sections||[]).flatMap(section =>
+  (section.segments||[]).map((segment,i) => ({
+    work:'daruri',id:'passage:'+section.id+':'+i,section:section.id,
+    ar:segment.ar||'',en:segment.en||'',type:'text'
+  })));
+function groundedMorphActions(word,lemma,root){
+ const engine=morph();
+ if(!engine?.status?.('daruri')?.loaded || !(engine?.getLexicon?.()||[]).length)
+   return {forms:false,root:false};
+ const fold=engine.fold, target=fold(word), head=fold(lemma||'');
+ let forms=false,related=false;
+ if(lemma){
+  const observed=engine.formsFor(lemma,'daruri',20);
+  forms=observed.some(hit=>fold(hit.form)!==target);
+ }
+ if(root){
+  const result=engine.find(root,'morph-root',MORPH_CORPUS);
+  if(result.ready){
+   const lemmas=new Set(result.items.map(hit=>fold(hit.matched?.lemma||'')).filter(Boolean));
+   related=[...lemmas].some(value=>value!==head);
+  }
+ }
+ return {forms,root:related};
+}
 function wordMarkup(ctx){
  const {word,analysis,terms,notes,privateInfo,section,segment,highlightType}=ctx;
  const best=analysis?.best,alts=analysis?.alternatives||[];
  const names=actions(word,analysis||{});
  const root=names.root,lemma=names.lemma;
+ const grounded=groundedMorphActions(word,lemma,root);
  const analysisSection='<section class="gnw-block"><h3>Word in this passage</h3>'+
   (best?'<div class="gnw-morph-line"><span>Dictionary form</span> <bdi dir="rtl" lang="ar">'+esc(best.lemma)+'</bdi>'+
    (best.root?' · <span>Root</span> <bdi dir="rtl" lang="ar">'+esc(best.root)+'</bdi>':'')+
@@ -233,8 +258,8 @@ function wordMarkup(ctx){
    '<div class="gnw-action-grid">'+
    '<button type="button" data-gnw-search="literal" data-gnw-value="'+esc(word)+'">Exact word</button>'+
    '<button type="button" data-gnw-search="terms" data-gnw-value="'+esc(word)+'">Ordinary search</button>'+
-   (lemma?'<button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(lemma)+'">Other forms</button>':'')+
-   (root?'<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(root)+'">Root family</button>':'')+
+   (grounded.forms?'<button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(lemma)+'">Other indexed forms</button>':'')+
+   (grounded.root?'<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(root)+'">Indexed root relatives</button>':'')+
    '</div></section>';
  return '<header class="gnw-header"><div><small>WORD CONTEXT · '+(section?'§'+esc(section)+' · ¶'+(segment+1):'CURRENT SELECTION')+'</small>'+
   '<h2 id="gnw-title" lang="ar" dir="rtl">'+esc(word)+'</h2></div><button type="button" data-gnw-close="1" aria-label="Close word context">×</button></header>'+
