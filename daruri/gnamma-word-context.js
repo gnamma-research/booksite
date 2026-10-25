@@ -289,35 +289,50 @@ function close(){
 /* Called explicitly from Reading Desk's selected-word context actions.
    Translate the saved selection offset into an exact source word when the
    browser has already collapsed its Selection after a toolbar click. */
+function firstArabicToken(raw){
+ for(const match of String(raw||'').matchAll(/[\p{L}\p{M}]+/gu)){
+  if(AR.test(match[0]))return {word:match[0],index:match.index};
+ }
+ return null;
+}
+/* For a phrase, inspect its first selected Arabic word. Use the saved source
+   offset and the live passage text to resolve the correct occurrence. */
 function openSelectedQuote(target){
  if(!BOOK||target?.lang!=='ar')return false;
- const word=singleArabicWord(target.quote);
- if(!word)return false;
+ const first=firstArabicToken(target.quote);
+ if(!first)return false;
+ const {word}=first;
  const direct=findSelectedWord();
- if(direct&&direct.word===word){
-   const directSection=String(direct.grid.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator());
-   if(directSection===String(target.section)&&Number(direct.grid.dataset.segment)===Number(target.segment)){
-     openWord(word,direct.anchor,direct.grid,direct.anchor,direct.point);
-     return true;
-   }
+ if(direct&&direct.word.normalize('NFC')===word.normalize('NFC')){
+  const sec=String(direct.grid.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator());
+  if(sec===String(target.section)&&Number(direct.grid.dataset.segment)===Number(target.segment)){
+   openWord(word,direct.anchor,direct.grid,direct.anchor,direct.point);
+   return true;
+  }
  }
  const grid=$$('#reader .passage-grid[data-segment]').find(node=>
-   Number(node.dataset.segment)===Number(target.segment)&&
-   String(node.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator())===String(target.section));
+  Number(node.dataset.segment)===Number(target.segment)&&
+  String(node.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator())===String(target.section));
  const side=grid?.querySelector('.passage-ar');
  if(!side)return false;
- let remaining=Number(target.offset);
- if(!Number.isInteger(remaining)||remaining<0)return false;
- const walker=document.createTreeWalker(side,NodeFilter.SHOW_TEXT);
- let point=null;
+ const nodes=[],walker=document.createTreeWalker(side,NodeFilter.SHOW_TEXT);
  while(walker.nextNode()){
-   const node=walker.currentNode;
-   if(node.parentElement?.closest('sup,.gn-rd-passage-tools,[aria-hidden="true"]'))continue;
-   const length=node.textContent?.length||0;
-   if(remaining<length){point={node,offset:remaining};break;}
-   remaining-=length;
+  const node=walker.currentNode;
+  if(node.parentElement?.closest('sup,.gn-rd-passage-tools,[aria-hidden="true"]'))continue;
+  nodes.push(node);
  }
- if(!point||currentToken(point.node,point.offset)?.normalize('NFC')!==word.normalize('NFC'))return false;
+ const raw=nodes.map(node=>node.textContent||'').join('');
+ const desired=Number(target.offset||0)+Number(first.index||0);
+ const matches=[...raw.matchAll(/[\p{L}\p{M}]+/gu)]
+  .filter(match=>match[0].normalize('NFC')===word.normalize('NFC'))
+  .sort((a,b)=>Math.abs(a.index-desired)-Math.abs(b.index-desired));
+ if(!matches.length)return false;
+ let remaining=matches[0].index,point=null;
+ for(const node of nodes){
+  if(remaining<node.length){point={node,offset:remaining};break;}
+  remaining-=node.length;
+ }
+ if(!point)return false;
  openWord(word,side,grid,side,point);
  return true;
 }
@@ -394,33 +409,30 @@ document.addEventListener('contextmenu',event=>{
  if(event.target?.closest?.('a[href],button,input,textarea,select,[contenteditable],[data-rd]'))return;
  const side=event.target?.closest?.('#mainContent .passage-grid .passage-ar');
  if(!side)return;
- const sel=window.getSelection?.(),hasSelection=!!sel?.toString().trim();
- let chosen=null;
- if(hasSelection){
-  const selectedWord=findSelectedWord();
-  if(!selectedWord||selectedWord.anchor!==side)return;
-  const within=[...sel.getRangeAt(0).getClientRects()].some(rect=>
+ // The word under the pointer matters, even when a whole phrase is selected.
+ const point=atTap(event);
+ let word=point.node&&side.contains(point.node)?currentToken(point.node,point.offset):null;
+ const selectedWord=findSelectedWord();
+ if(!word&&selectedWord?.anchor===side)word=selectedWord.word;
+ if(!word)return;
+ const sel=window.getSelection?.(),selection=sel?.toString()||'';
+ const withinSelection=!!(selection&&sel?.rangeCount&&
+  [...sel.getRangeAt(0).getClientRects()].some(rect=>
    event.clientX>=rect.left-3&&event.clientX<=rect.right+3&&
-   event.clientY>=rect.top-3&&event.clientY<=rect.bottom+3);
-  if(!within)return;
-  chosen={...selectedWord,text:sel.toString(),selected:true};
- }else{
-  const point=atTap(event);
-  if(!point.node||!side.contains(point.node))return;
-  const word=currentToken(point.node,point.offset);
-  if(!word)return;
-  chosen={word,anchor:side,grid:side.closest('.passage-grid'),point,text:word,selected:false};
- }
- if(!chosen?.word||!chosen.grid)return;
+   event.clientY>=rect.top-3&&event.clientY<=rect.bottom+3));
+ const chosen={word,anchor:side,grid:side.closest('.passage-grid'),
+   point:point.node&&side.contains(point.node)?point:selectedWord?.point,
+   text:withinSelection?selection:word,selected:withinSelection};
+ if(!chosen.grid)return;
  event.preventDefault();
  closeWordMenu();
  wordMenuTarget=chosen;
  wordMenu=document.createElement('div');
  wordMenu.className='gnw-reader-menu';
  wordMenu.setAttribute('role','menu');
- wordMenu.setAttribute('aria-label','Word actions');
+ wordMenu.setAttribute('aria-label','Arabic word actions');
  wordMenu.innerHTML=
-  '<button type="button" role="menuitem" data-gnw-copy-menu="1">Copy '+(chosen.selected?'selected word':'word')+'</button>'+
+  '<button type="button" role="menuitem" data-gnw-copy-menu="1">Copy '+(chosen.selected?'selection':'word')+'</button>'+
   '<button type="button" role="menuitem" data-gnw-open-menu="1">Word Context · <bdi lang="ar" dir="rtl">'+esc(chosen.word)+'</bdi></button>';
  document.body.append(wordMenu);
  const rect=wordMenu.getBoundingClientRect();
