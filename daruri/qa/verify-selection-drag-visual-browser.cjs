@@ -103,14 +103,31 @@ async function inspect(engine,name,url,language){
   const pixels=diffPNG(before,after,sampled);
   fs.writeFileSync(path.join(OUT,id+'-before.png'),before);
   fs.writeFileSync(path.join(OUT,id+'-after.png'),after);
-  let forced=null;
+  let forced=null,custom=null;
   if(pixels.ratio<=.06){
    await page.addStyleTag({content:'#reader .passage-ar::selection,#reader .passage-en::selection,#reader .passage-ar *::selection,#reader .passage-en *::selection{background:#00ff33!important;color:#000!important}'});
    await page.waitForTimeout(100);
-   forced=diffPNG(before,await page.screenshot({type:'png'}),sampled);
+   const forcedImage=await page.screenshot({type:'png'});
+   fs.writeFileSync(path.join(OUT,id+'-forced.png'),forcedImage);
+   forced=diffPNG(before,forcedImage,sampled);
+   if(forced.ratio<=.06){
+    const supported=await page.evaluate(()=>{
+     const sel=window.getSelection(),range=sel?.rangeCount?sel.getRangeAt(0):null;
+     if(!range||!window.CSS?.highlights||typeof Highlight==='undefined')return false;
+     CSS.highlights.set('gn-audit-selected',new Highlight(range));
+     return true;
+    });
+    if(supported){
+     await page.addStyleTag({content:'::highlight(gn-audit-selected){background-color:#00ff33!important;color:#000!important}'});
+     await page.waitForTimeout(100);
+     const image=await page.screenshot({type:'png'});
+     fs.writeFileSync(path.join(OUT,id+'-custom.png'),image);
+     custom={supported,pixels:diffPNG(before,image,sampled)};
+    }else custom={supported:false};
+   }
   }
   assert(selection.trim().length>=3,'Mouse drag selected no readable characters');
-  assert(pixels.ratio>.06,'Selection text exists but pixels unchanged: '+JSON.stringify({pixels,forced,actual,sampled,selection}));
+  assert(pixels.ratio>.06,'Selection text exists without screenshot highlight: '+JSON.stringify({pixels,forced,custom,actual,sampled,selection}));
   assert.equal(await page.locator('#gnamma-word-context:visible').count(),0,
    'Ordinary dragging unexpectedly opened a Word Context dialog');
   await page.locator('#gn-rd-selection-bar:not([hidden])').waitFor();
