@@ -11,7 +11,7 @@
     const fullScript = document.createElement('script');
     fullScript.dataset.gnFullDictionaryContext = '1';
     fullScript.async = true;
-    fullScript.src = new URL('full-dictionary-context.js?v=20261025-dossier4',
+    fullScript.src = new URL('full-dictionary-context.js?v=20261025-dossier5',
       document.currentScript?.src || document.baseURI).href;
     document.head.append(fullScript);
   }
