@@ -34,11 +34,27 @@ async function inspect(engine,name,origin,width){
    window.scrollBy({top:-Math.min(140,innerHeight*.17),behavior:'instant'});
    window.dispatchEvent(new Event('scroll'));
   },section);
+  // Use the actual viewport button coordinates. Locator-based clicks can
+  // auto-scroll a sticky toolbar before dispatching pointerdown in WebKit.
+  const tapOptions=async()=>{
+   const box=await page.locator('#readerCopyOptions').boundingBox();
+   if(!box)throw Error('Copy options has no visible hitbox');
+   const x=box.x+box.width/2,y=box.y+box.height/2;
+   if(width<700)await page.touchscreen.tap(x,y);
+   else await page.mouse.click(x,y);
+  };
   await scroller(11);
-  await page.locator('#readerCopyOptions').click();
+  await tapOptions();
   const menu=page.locator('#gn-copy-menu:not([hidden])'),label=menu.locator('.gn-copy-menu-head small');
   await menu.waitFor();
-  await page.waitForFunction(()=>document.querySelector('#gn-copy-menu:not([hidden]) .gn-copy-menu-head small')?.textContent?.includes('§11'));
+  const initial=await page.evaluate(()=>({
+   label:document.querySelector('#gn-copy-menu .gn-copy-menu-head small')?.textContent||'',
+   hash:location.hash,section:window.GnammaCopyContext?.state?.n,scrollY:scrollY,
+   grid11:document.querySelector('#gn-continuous-11 .passage-grid')?.getBoundingClientRect()?.top,
+   grid12:document.querySelector('#gn-continuous-12 .passage-grid')?.getBoundingClientRect()?.top
+  }));
+  console.log('COPY INITIAL '+id+' '+JSON.stringify(initial));
+  await page.waitForFunction(()=>document.querySelector('#gn-copy-menu:not([hidden]) .gn-copy-menu-head small')?.textContent?.includes('§11'),null,{timeout:12000});
   const before=await label.textContent();
   await scroller(12);
   await page.waitForFunction(()=>document.querySelector('#gn-copy-menu:not([hidden]) .gn-copy-menu-head small')?.textContent?.includes('§12'),null,{timeout:15000});
@@ -62,7 +78,7 @@ async function inspect(engine,name,origin,width){
    document.dispatchEvent(new Event('selectionchange'));
    return match[0];
   });
-  await page.locator('#readerCopyOptions').click();await menu.waitFor();
+  await tapOptions();await menu.waitFor();
   await page.waitForFunction(()=>!!document.querySelector('#gn-copy-menu:not([hidden]) [data-gn-menu="selected"]'));
   const pinned=await label.textContent();
   assert(pinned.includes('§11'),'Actual selected word did not pin §11');
