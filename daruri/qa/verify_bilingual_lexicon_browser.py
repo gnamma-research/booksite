@@ -27,12 +27,14 @@ CHECK_PASSAGES=r"""() => {
    const annotated=[...en.querySelectorAll('.gn-en-lex-term')].every(b=>
       b.tagName==='BUTTON'&&b.getAttribute('lang')==='ar'&&b.getAttribute('dir')==='rtl');
    const duplicate=enLinks.filter((x,j)=>enLinks.indexOf(x)!==j);
+   const source=sec.segments[i].en,cleaned=clean.textContent;
+   let mismatch=0;while(mismatch<source.length&&source[mismatch]===cleaned[mismatch])mismatch++;
    return {
     i,actual_ar:arLinks,actual_en:enLinks,
     missing:arLinks.filter(x=>!enLinks.includes(x)),
     unexpected:enLinks.filter(x=>!arLinks.includes(x)),
     duplicate,annotated,appended,
-    clean_match:clean.textContent===sec.segments[i].en,
+    clean_match:cleaned===source,\n    mismatch,expected_context:source.slice(Math.max(0,mismatch-100),mismatch+150),\n    actual_context:cleaned.slice(Math.max(0,mismatch-100),mismatch+200),\n    html_excerpt:clean.innerHTML.slice(Math.max(0,mismatch-250),mismatch+500),
     clean_len:clean.textContent.length,
     original_len:sec.segments[i].en.length
    };
@@ -47,7 +49,7 @@ def check_section(page,number):
     total=0
     for item in data:
         detail=f'§{number} segment {item["i"]}: {json.dumps(item,ensure_ascii=False)}'
-        # An uncertain English alignment stays unmarked rather than creating\n        # a misleading link or an end-of-passage keyword inventory.\n        assert not item['appended'],f'No trailing keyword list is permitted: {detail}'
+        # Uncertain matches stay unmarked rather than being listed at the end.\n        assert not item['appended'],f'No trailing keyword list is permitted: {detail}'
         assert not item['unexpected'],f'English invented a dictionary link: {detail}'
         assert not item['duplicate'],f'Duplicate English dictionary key: {detail}'
         assert item['annotated'],f'Incorrect language/key in English link: {detail}'
