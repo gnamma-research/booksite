@@ -139,6 +139,38 @@
    var author=title.querySelector('.gn-sidebar-title-author');
    if(author)author.textContent='Ibn Rushd';
   }
+  // Keep the Home route a useful starting point, not a second Help manual.
+  // All edition provenance remains available in its native disclosure and
+  // in the About/Reference routes, including when the user has no JavaScript.
+  function simplifyHome(){
+   var homeView=document.querySelector('#mainContent .gnamma-home');
+   if(!homeView||homeView.dataset.gnMinimalHomeReady==='1')return;
+   homeView.dataset.gnMinimalHomeReady='1';
+   homeView.querySelector('.eyebrow')?.remove();
+   var author=homeView.querySelector('.home-author');
+   if(author)author.textContent='Ibn Rushd (Averroes)';
+   var lead=homeView.querySelector('.home-lead');
+   if(lead)lead.innerHTML='A bilingual reading edition of Ibn Rushd’s abridgment of al-Ghazālī’s <i>al-Mustaṣfā</i>.';
+   var actions=homeView.querySelector('.home-actions'),sources=homeView.querySelector('#homeEditorialSources');
+   if(!actions||!sources)return;
+   var contents=actions.querySelector('[data-route="contents"]');
+   if(contents)contents.textContent='Contents';
+   var quiet=document.createElement('div');
+   quiet.className='home-quiet-links';quiet.setAttribute('role','group');
+   quiet.setAttribute('aria-label','More about this edition');
+   for(const route of ['editions','help']){
+    const button=actions.querySelector('[data-route="'+route+'"]');
+    if(button){button.textContent=route==='editions'?'Downloads':'Help';quiet.append(button);}
+   }
+   var summary=sources.querySelector('summary');
+   if(summary)summary.textContent='Edition & sources · AI-assisted translation';
+   // Move the original complete scholarly disclosure before removing its
+   // now-redundant explanatory wrapper. This also preserves native <details>.
+   sources.remove();
+   homeView.querySelectorAll('.home-block').forEach(element=>element.remove());
+   if(quiet.childElementCount)homeView.append(quiet);
+   homeView.append(sources);
+  }
   function enhanceHelp(){
    var steps=document.querySelectorAll('#mainContent .gn-history-help .gn-help-step');
    if(!steps.length)return;
