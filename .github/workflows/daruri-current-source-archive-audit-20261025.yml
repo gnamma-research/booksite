@@ -1,0 +1,21 @@
+name: Daruri current scholarly source archive identity (nonrelease)
+on:
+  push:
+    branches: [qa/daruri-current-selection-audit-20261025]
+    paths:
+      - 'daruri/source-archive-manifest.json'
+      - 'daruri/qa/verify-current-source-archive.cjs'
+      - '.github/workflows/daruri-current-source-archive-audit-20261025.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify-source-identity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify exact actual ZIP digest, metadata, provenance and publication
+        run: node daruri/qa/verify-current-source-archive.cjs
