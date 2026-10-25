@@ -63,6 +63,50 @@
    }
   });
 
+
+  // A direct Home route is always possible without opening Contents.
+  // On compact phone toolbars it lives beside the reading dock rather than
+  // crowding the one-row scholarly actions.
+  var mobileHome=document.createElement('button');
+  mobileHome.id='gnReaderMobileHome';mobileHome.type='button';
+  mobileHome.setAttribute('aria-label','Home');
+  mobileHome.title='Home';mobileHome.innerHTML=icon('home');
+  document.body.appendChild(mobileHome);
+  mobileHome.addEventListener('click',function(){home.click();});
+
+  // Immersive modes deliberately omit the Contents medallion. Provide an
+  // always-discoverable exit and independent Home action, not a hidden gesture.
+  // The existing mode API preserves the saved section when leaving focus.
+  var escape=document.createElement('div');
+  escape.id='gnReaderEscape';
+  escape.setAttribute('role','group');
+  escape.setAttribute('aria-label','Leave immersive reading');
+  escape.innerHTML='<button id="gnExitFocus" type="button" aria-label="Exit focus or continuous mode">Exit focus</button>'+
+   '<button id="gnFocusHome" type="button" aria-label="Go to Home">Home</button>';
+  document.body.appendChild(escape);
+  function exitImmersive(){
+   var modes=window.GnammaReaderModes;
+   if(modes&&typeof modes.setMode==='function')modes.setMode('reading');
+   else document.getElementById('focusToolbar')?.click();
+  }
+  escape.querySelector('#gnExitFocus').addEventListener('click',exitImmersive);
+  escape.querySelector('#gnFocusHome').addEventListener('click',function(){
+   exitImmersive();home.click();
+  });
+  document.addEventListener('keydown',function(event){
+   if(event.key!=='Escape'||event.defaultPrevented)return;
+   if(!document.body.classList.contains('reader-enhanced')||
+      !document.body.classList.contains('reading-active')||
+      !document.body.classList.contains('focus-mode'))return;
+   // Escape closes a dialog first; only a second Escape leaves immersive mode.
+   var dialogOpen=Array.from(document.querySelectorAll(
+    'dialog[open],[role="dialog"]:not([hidden]),.overlay:not([hidden])'
+   )).some(function(el){return el.getClientRects().length>0;});
+   if(dialogOpen)return;
+   if(document.activeElement?.closest?.('input,textarea,[contenteditable="true"]'))return;
+   exitImmersive();
+  });
+
   // Search/Display/Help are global actions, not part of the Focus group.
   // Move the existing controls without replacing their event-bound elements.
   focus.after(trailing);
