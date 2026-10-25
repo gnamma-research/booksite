@@ -1,0 +1,78 @@
+name: Daruri Vivliostyle alternate pages-to-pdf 0.4.1 micro Unicode/PDF robustness (NONRELEASE)
+on:
+  push:
+    branches: [research/daruri-browser-pdf-engine-shootout-20261025]
+    paths: ['.github/workflows/daruri-vivliostyle-pdf-emitter-041-qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare_new_pdf_emitter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Genuine Scholarly bilingual note/dictionary microfixture
+        run: |
+          python -m pip install -q beautifulsoup4 PyMuPDF==1.26.7
+          python daruri/qa/stage2_shootout/ultimate_html_fixture.py daruri/qa/stage2_shootout/runtime_ultimate scholarly
+          python daruri/qa/stage2_shootout/vivliostyle_micro_fixture.py \
+            daruri/qa/stage2_shootout/runtime_ultimate/scholarly.html \
+            daruri/qa/stage2_shootout/runtime_ultimate/vivliostyle-micro.source.txt
+      - name: OVERRIDE ONLY in ephemeral research runner: latest pages-to-pdf 0.4.1
+        run: |
+          cd daruri/qa/stage2_shootout
+          npm pkg set overrides.pages-to-pdf=0.4.1
+          npm install --no-package-lock --no-audit --no-fund
+          npm ls pages-to-pdf --all || true
+          npx playwright install --with-deps --only-shell chromium
+          cd ../../..
+          mkdir -p fonts
+          cp daruri/qa/stage2_shootout/node_modules/vivliostyle-pdf/public/fonts/*.ttf fonts/
+      - name: Generate alternate real PDF Blob
+        env:
+          BENCH_BROWSER: chromium
+          BENCH_SOURCE: vivliostyle-micro
+          BENCH_OUT: /tmp/gnamma-vivlio-041-micro
+        run: node daruri/qa/stage2_shootout/test_vivliostyle_pdf_browser.cjs
+      - name: Independent PDF structure + Arabic copy reader checks
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qpdf poppler-utils
+          pdf=/tmp/gnamma-vivlio-041-micro/daruri-vivliostyle-micro-vivliostyle-pdf-NONRELEASE.pdf
+          set +e
+          qpdf --check "$pdf" > /tmp/gnamma-vivlio-041-micro/qpdf.txt 2>&1
+          qexit=$?
+          pdftotext -layout "$pdf" /tmp/gnamma-vivlio-041-micro/poppler.txt 2> /tmp/gnamma-vivlio-041-micro/poppler-errors.txt
+          pexit=$?
+          set -e
+          python - <<'PY'
+          import fitz,json,pathlib,collections
+          fitz.TOOLS.mupdf_display_errors(False)
+          p=pathlib.Path('/tmp/gnamma-vivlio-041-micro')
+          d=fitz.open(p/'daruri-vivliostyle-micro-vivliostyle-pdf-NONRELEASE.pdf')
+          text=''.join(x.get_text() for x in d)
+          import unicodedata
+          ar=sum('ARABIC' in unicodedata.name(c,'') and unicodedata.category(c).startswith('L') for c in text)
+          r={'pages':len(d),'outlines':len(d.get_toc()),'arabic_base_letters_by_mupdf':ar,
+           'has_english_GNAMMA_by_mupdf':'GNAMMA' in text,
+           'link_kinds':dict(collections.Counter(l['kind'] for pg in d for l in pg.get_links()))}
+          (p/'native-checks.json').write_text(json.dumps(r,indent=2))
+          print('GNAMMA_VIVLIOSTYLE_EMITTER_041_QA',r)
+          PY
+          echo "QPDF_EXIT=$qexit POPPLER_EXIT=$pexit"
+          head -25 /tmp/gnamma-vivlio-041-micro/qpdf.txt
+          if [ "$qexit" -ne 0 ] || [ "$pexit" -ne 0 ]; then
+            echo '::error::Prototype PDF cannot pass independent PDF validator'; exit 2
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daruri-vivliostyle-pdf-pages-to-pdf-041-alternate-micro-NONRELEASE
+          path: /tmp/gnamma-vivlio-041-micro
+          if-no-files-found: warn
+          retention-days: 14
