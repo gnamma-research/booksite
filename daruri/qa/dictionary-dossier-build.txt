@@ -186,3 +186,114 @@ function renderSources(host,term,full,mode){
   }
  }
 }
+
+function upgrade(host,term,mode){
+ if(!host||!term||host.dataset.gnDossierTerm===term)return;
+ host.dataset.gnDossierTerm=term;
+ host.dataset.gnDossierReady='';
+ if(mode==='popup'){
+  const body=$('#detailContent');
+  body?.querySelector(':scope > .lex-full-link')?.remove();
+  body?.querySelector(':scope > .lex-tabbar')?.remove();
+  body?.querySelector(':scope > .gn-fd-page-link')?.remove();
+  body?.querySelector(':scope > #gnw-dictionary-search')?.remove();
+  const meaning=$('#lex-meaning',body),usage=$('#lex-author',body);
+  const heading=meaning?.querySelector('.micro-label');
+  if(heading)heading.textContent='MEANING IN THE ḌARŪRĪ';
+  const h=usage?.querySelector('h3');
+  if(h)h.textContent='Usage in the Ḍarūrī';
+  if(h&&!usage.querySelector('.gn-ds-usage-note'))
+   h.insertAdjacentElement('afterend',el('p','gn-ds-usage-note',
+    'Selected illustrative passages from Ibn Rushd, not an exhaustive count of every inflected occurrence.'));
+ }else{
+  const card=host.closest('.lex-card');
+  if(card){
+   card.classList.add('gn-ds-three-sections');
+   card.querySelector('.dict-view-tabs')?.remove();
+   const meaning=card.querySelector('[data-dict-panel="meaning"] h2');
+   if(meaning)meaning.textContent='Meaning in the Ḍarūrī';
+   const usage=card.querySelector('[data-dict-panel="occurrences"] h2');
+   if(usage)usage.textContent='Usage in the Ḍarūrī';
+  }
+ }
+ host.replaceChildren(el('p','gn-ds-loading','Loading historical source entries…'));
+ const show=full=>{
+  if(host.isConnected&&host.dataset.gnDossierTerm===term)renderSources(host,term,full,mode);
+ };
+ load().then(show).catch(error=>{
+  if(!host.isConnected||host.dataset.gnDossierTerm!==term)return;
+  show(null);
+  const warning=el('p','gn-ds-error','Complete historical articles could not be loaded; the short extracts remain visible.');
+  host.prepend(warning);
+  const retry=el('button','gn-ds-retry','Retry complete articles');retry.type='button';
+  retry.addEventListener('click',()=>{delete host.dataset.gnDossierTerm;upgrade(host,term,mode)});
+  warning.insertAdjacentElement('afterend',retry);
+  console.warn('Dictionary dossier:',error);
+ });
+}
+function sync(){
+ const overlay=$('#infoOverlay'),body=$('#detailContent');
+ if(overlay&&!overlay.hidden&&body&&/DICTIONARY|LEXICAL|GLOSSARY/i.test($('#detailEyebrow')?.textContent||'')){
+  const term=$('#detailTitle',body)?.textContent?.trim();
+  if(term)upgrade($('#lex-sources',body),term,'popup');
+ }
+ const card=$('#lexArticle .lex-card');
+ if(card){
+  const term=$('.lex-title',card)?.textContent?.trim();
+  if(term)upgrade($('[data-dict-panel="sources"]',card),term,'standalone');
+ }
+ // Quick-glossary cards link to this single full study card; no floating
+ // "complete article" expander detached from its dictionary source.
+ for(const toggle of $$('#mainContent .glossary-card > .gn-fd-toggle'))toggle.remove();
+}
+function schedule(){
+ if(scheduled)return;
+ scheduled=true;
+ queueMicrotask(()=>{scheduled=false;sync()});
+}
+function styles(){
+ const st=el('style');st.id='gnamma-dictionary-dossier-css';
+ st.textContent=[
+ '.gn-ds-three-sections [data-dict-panel]{display:block!important}',
+ '.gn-ds-three-sections .dict-view-tabs{display:none!important}',
+ '.gn-ds-heading{font:600 20px/1.45 Georgia,serif;margin:0 0 9px}',
+ '.gn-ds-overview,.gn-ds-help,.gn-ds-usage-note{font:12px/1.55 system-ui,sans-serif;opacity:.86;margin:6px 0 12px}',
+ '.gn-ds-source{border:1px solid var(--line,var(--border,#ccc));border-radius:10px;padding:14px;margin:12px 0;background:var(--paper,var(--card,transparent));color:var(--ink,inherit);min-width:0}',
+ '.gn-ds-source-head{border-bottom:1px solid var(--line,var(--border,#ccc));padding-bottom:10px;margin-bottom:10px}',
+ '.gn-ds-author{font:600 18px/1.4 Georgia,serif;margin:0 0 3px}',
+ '.gn-ds-work{font:13px/1.55 Georgia,serif;margin:0 0 5px}',
+ '.gn-ds-date{font:600 12px/1.5 system-ui,sans-serif;color:var(--accent,inherit);margin:4px 0}',
+ '.gn-ds-caution,.gn-ds-small,.gn-ds-relation{font:12px/1.55 system-ui,sans-serif;opacity:.82;margin:6px 0}',
+ '.gn-ds-headword,.gn-ds-extract{margin:12px 0;padding:9px 0;border-bottom:1px dotted var(--line,var(--border,#ccc))}',
+ '.gn-ds-lemma,.gn-ds-extract-title{font:600 14px/1.5 system-ui,sans-serif;margin:0 0 6px}',
+ '.gn-ds-lemma bdi,.gn-ds-extract-title bdi{font:21px/1.5 var(--arabic,"Noto Naskh Arabic",serif)}',
+ '.gn-ds-parallel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;padding:8px 0;min-width:0}',
+ '.gn-ds-ar{font:20px/1.85 var(--arabic,"Noto Naskh Arabic",serif)!important;text-align:right;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}',
+ '.gn-ds-en{font:14px/1.65 Georgia,serif!important;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}',
+ '.gn-ds-full{margin:10px 0;border:1px solid var(--line,var(--border,#ccc));border-radius:8px;overflow:hidden}',
+ '.gn-ds-full-summary{cursor:pointer;list-style:none;padding:11px 13px;font:600 13px/1.5 system-ui,sans-serif;color:var(--accent,inherit);min-height:44px}',
+ '.gn-ds-full-summary::-webkit-details-marker{display:none}.gn-ds-full-summary::before{content:"›";margin-inline-end:8px;font-size:19px}',
+ '.gn-ds-full[open]>.gn-ds-full-summary::before{content:"⌄"}',
+ '.gn-ds-full-body{padding:11px 13px;border-top:1px solid var(--line,var(--border,#ccc));min-width:0}',
+ '.gn-ds-biblio,.gn-ds-provenance,.gn-ds-context{font:12px/1.6 system-ui,sans-serif;margin:9px 0;overflow-wrap:anywhere}',
+ '.gn-ds-context{opacity:.86}.gn-ds-note{padding:10px 12px;margin:10px 0;border-inline-start:3px solid var(--accent,#668);background:var(--nav,var(--paper,transparent));font:12px/1.6 system-ui,sans-serif}',
+ '.gn-ds-link{display:inline-block;color:var(--accent,inherit);text-decoration:underline;text-underline-offset:2px;margin-inline-end:12px}',
+ '.gn-ds-edition{font:12px/1.6 system-ui,sans-serif}.gn-ds-edition summary{cursor:pointer;color:var(--accent,inherit);padding:8px 0}',
+ '.gn-ds-loading,.gn-ds-error{font:13px/1.55 system-ui,sans-serif}.gn-ds-retry{min-height:42px}',
+ '@media(max-width:660px){.gn-ds-source{padding:12px}.gn-ds-parallel{grid-template-columns:minmax(0,1fr);gap:8px}.gn-ds-ar{font-size:21px!important}}',
+ '@media print{.gn-ds-full:not([open]){display:none}.gn-ds-source{break-inside:avoid-page}}'
+ ].join('\n');
+ document.head.append(st);
+}
+function start(){
+ styles();sync();
+ const observer=new MutationObserver(schedule);
+ for(const sel of ['#detailContent','#lexArticle','#mainContent']){
+  const node=$(sel);if(node)observer.observe(node,{subtree:true,childList:true});
+ }
+ const overlay=$('#infoOverlay');
+ if(overlay)observer.observe(overlay,{attributes:true,attributeFilter:['hidden','class','style']});
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});
+else start();
+})();
