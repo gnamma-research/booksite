@@ -89,7 +89,7 @@
         "comparative jurisprudence",
         "legal method"
       ],
-      "status": "editorial-preview",
+      "status": "research-preview",
       "url": "texts/ibn-rushd/bidayat-al-mujtahid/",
       "editions": [
         {
@@ -103,7 +103,7 @@
           "url": "texts/ibn-rushd/bidayat-al-mujtahid/human-life/"
         }
       ],
-      "note": "Two separately extracted research-reading views. Three existing illustrative case records and prior editorial notes are accessible; the full primary Bidāya corpus and Revision16 dossiers are not yet imported."
+      "note": "Two separate research-reading edition previews with three original illustrative cases, plus linked alternative-uṣūl and qawānīn archives. The full canonical Revision16 Bidāya primary text and legal dossier register remain unimported."
     }
   ],
   "research": [
@@ -118,6 +118,41 @@
       "status": "research-preview",
       "url": "research/usul-law-rushd/",
       "note": "A multi-text research synthesis using Ibn Rushd’s al-Ḍarūrī and Bidāyat al-Mujtahid; not a separate book, and not a complete translation of Bidāya."
+    },
+    {
+      "id": "bidaya-editions",
+      "title": "Bidāyat al-Mujtahid · Two research editions",
+      "area": [
+        "fiqh",
+        "legal reasoning",
+        "human formation"
+      ],
+      "status": "research-preview",
+      "url": "texts/ibn-rushd/bidayat-al-mujtahid/",
+      "note": "Edition I and Edition II share a legal foundation; complete Revision16 data not yet imported."
+    },
+    {
+      "id": "bidaya-alternative-usul",
+      "title": "Alternative Uṣūl: Provisional Casebook",
+      "area": [
+        "comparative law",
+        "legal reasoning"
+      ],
+      "status": "provisional-research",
+      "url": "research/usul-law-rushd/alternative-usul/",
+      "note": "12 extended v0.1 case studies, 13 supplemental v0.2 reviews, four countertests and 115 source records; separate from Revision16."
+    },
+    {
+      "id": "ibn-rushd-qawanin",
+      "title": "How Ibn Rushd establishes qawānīn",
+      "area": [
+        "methodology",
+        "logic",
+        "legal theory"
+      ],
+      "status": "archived-working-research",
+      "url": "research/usul-law-rushd/qawanin/",
+      "note": "Accessible 19 October working dossier; later expanded file not yet migrated."
     }
   ],
   "navigation": {
@@ -127,12 +162,6 @@
         "ids": [
           "ghazali-mustasfa",
           "ibn-rushd-daruri"
-        ]
-      },
-      {
-        "name": "Comparative fiqh",
-        "ids": [
-          "ibn-rushd-bidaya"
         ]
       },
       {
@@ -149,6 +178,9 @@
       }
     ],
     "research_ids": [
+      "bidaya-editions",
+      "bidaya-alternative-usul",
+      "ibn-rushd-qawanin",
       "bidaya-daruri"
     ]
   }
