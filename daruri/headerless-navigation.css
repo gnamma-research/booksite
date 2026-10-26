@@ -805,3 +805,12 @@
    --gn-quiet-action:38px;--gn-quiet-copy-chevron:24px;
  }
 }
+
+/* Appearance now lives in the Visuals panel (keep its original bound button
+   in the DOM but never in any desktop/Focus/mobile toolbar layout). */
+@media screen {
+ body #themeBtn[hidden],
+ body.reader-enhanced #readingControls .gn-reader-global-trailing #themeBtn{
+  display:none!important;
+ }
+}
