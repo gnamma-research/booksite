@@ -153,6 +153,12 @@ async function exercise(engine,name,origin){
   assert.notEqual(off.arColor,off.enColor,'AR/EN colours failed to update in Continuous');
   assert.match(off.mode,/mode-english/);
 
+  // Check AR/EN in Continuous, then return to ordinary Reading to open
+  // Visuals; Focus deliberately hides the global Visuals toolbar.
+  await page.locator('#focusToolbar').click();
+  await page.locator('[data-gn-reader-mode="reading"]').click();
+  await page.locator('body.focus-level-3').waitFor({state:'detached'});
+
   // Appearance lives inside Visuals; selecting it directly keeps saved theme
   // semantics. The original top button remains DOM-bound but hidden.
   assert.equal(await page.locator('#themeBtn').isVisible(),false,
@@ -172,9 +178,6 @@ async function exercise(engine,name,origin){
   await page.locator('#settingsClose').click();
   assert(!errors.some(e=>/forEach is not a function|continuousVowel|themeChoice|Cannot read properties/.test(e)),
     'Language/appearance page error: '+errors.join('; '));
-  await page.locator('#focusToolbar').click();
-  await page.locator('[data-gn-reader-mode="reading"]').click();
-  await page.locator('body.focus-level-3').waitFor({state:'detached'});
   // Continuous reading can leave us in a different paragraph/section.
   // Return to the exact saved passage before asserting passage-local counts.
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded'});
