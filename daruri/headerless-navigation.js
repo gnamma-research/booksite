@@ -139,7 +139,7 @@
    focusButton.setAttribute('aria-label','Reading mode: Reading, Focus or Continuous');
    focusButton.title='Reading mode';
   }
-  trailing.setAttribute('aria-label','Focus, search, theme, display and help');
+  trailing.setAttribute('aria-label','Search, Visuals and reading tools');
 
   // Help is available in the Contents pane, not a permanent top button.
 

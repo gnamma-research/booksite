@@ -64,7 +64,7 @@ body.focus-level-3 #readerDock .gn-dock-center>.reader-location{grid-column:auto
   border:0!important;
   border-radius:0!important;
   box-shadow:none!important;
-  transition:background-color .15s ease,color .15s ease;
+  transition:none!important;
 }
 #readingControls #persistentLanguages > button[data-language-toggle]:not(.active) {
   background:var(--surface)!important;

@@ -2289,12 +2289,12 @@ body:not(.reading-active) .reading-return-bar{
 }
 </style>
 <link href="reading-styles.css?v=20261020-menu1" rel="stylesheet"/>
-<link href="compact-menu.css?v=20261023-editions-delivery1" rel="stylesheet"/>
+<link href="compact-menu.css?v=20261026-visuals-lang-fast1" rel="stylesheet"/>
 <link href="subject-index.css?v=20261020-indexprint1" rel="stylesheet"/>
 <script src="reading-styles.js?v=20261020-menu1"></script>
-<script src="visuals-controls.js?v=20261020-visuals1"></script>
+<script src="visuals-controls.js?v=20261026-visuals-lang-fast1"></script>
 <link href="reader-structure.css?v=20261020-structure1" rel="stylesheet"/>
-<link rel="stylesheet" href="bookmark-ui.css?v=20261023-personal-icons"/><link rel="stylesheet" href="reading-desk.css?v=20261025-context-icon4"/><link rel="stylesheet" href="backup-transfer.css?v=20261023-transfer-release2"/><link rel="stylesheet" href="reading-mode-controls.css?v=20261025-quiet-nav4"/>
+<link rel="stylesheet" href="bookmark-ui.css?v=20261023-personal-icons"/><link rel="stylesheet" href="reading-desk.css?v=20261025-context-icon4"/><link rel="stylesheet" href="backup-transfer.css?v=20261023-transfer-release2"/><link rel="stylesheet" href="reading-mode-controls.css?v=20261026-visuals-lang-fast1"/>
 <link rel="stylesheet" href="reading-navigation-history.css?v=20261023-history-help1"/>
 <noscript><link rel="stylesheet" href="source-note-ui.css?v=20261021-fallback-quran1"></noscript>
 <link rel="stylesheet" href="quran-context-ui.css?v=20261022-qcontext1"/>
@@ -3876,7 +3876,7 @@ body:not(.reading-active) .reading-return-bar{
    
    <button id="focusToolbar" data-reader-only class="compact-reader-control" type="button" data-focus-toggle aria-pressed="false" aria-label="Enter focus mode" title="Focus on the text"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 3H4v5M15 3h5v5M4 16v5h5M20 16v5h-5"/></svg></button><div class="gn-reader-global-trailing" role="group" aria-label="Search, theme and settings">
 <button class="header-lookup" id="searchBtn" aria-label="Search the book and reference tools" title="Search" type="button"><svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg></button>
-<button aria-label="Toggle dark mode" class="icon-btn" id="themeBtn" title="Toggle dark mode" type="button"><svg class="icon"><use href="#i-moon"></use></svg></button>
+<button aria-label="Appearance is in Visuals" class="icon-btn" id="themeBtn" title="Appearance is in Visuals" type="button" hidden aria-hidden="true" tabindex="-1"><svg class="icon"><use href="#i-moon"></use></svg></button>
 <button aria-label="Display, themes and reading tools" class="icon-btn" id="settingsBtn" title="Display, themes and reading tools" type="button"><svg class="icon" aria-hidden="true"><use href="#i-sliders"></use></svg></button>
 </div>
   </div>
@@ -3982,7 +3982,10 @@ body:not(.reading-active) .reading-return-bar{
 <div class="gn-visual-marker" role="img" aria-label="Colour palette"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c-4.9 0-8.5 3.3-8.5 7.8 0 4 3 7.2 6.9 7.2h1.2c.8 0 1.2-.7.8-1.4l-.2-.4c-.5-1 .2-2.1 1.3-2.1H16c2.7 0 4.5-1.9 4.5-4.5 0-3.8-3.6-6.6-8.5-6.6Z"/><circle cx="8" cy="8.2" r=".8" fill="currentColor" stroke="none"/><circle cx="12" cy="6.8" r=".8" fill="currentColor" stroke="none"/><circle cx="15.8" cy="8.4" r=".8" fill="currentColor" stroke="none"/><circle cx="7.3" cy="12.2" r=".8" fill="currentColor" stroke="none"/></svg></div>
 <div class="palette-picker gn-visual-palettes" id="palettePicker" role="group" aria-label="Reading palette"></div>
 </div>
-<div id="settingsTheme" hidden aria-hidden="true"></div>
+<div class="gn-visual-row gn-appearance-row">
+<div class="gn-visual-marker" role="img" aria-label="Appearance"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></div>
+<div id="settingsTheme" class="gn-direct-options gn-appearance-options" role="group" aria-label="Appearance: System, Light or Dark"></div>
+</div>
 </div>
 </div>
 <div id="hiddenHeaderRecovery" class="hidden-header-recovery" role="group" aria-label="Controls while reader header is hidden" hidden>
@@ -4029,7 +4032,7 @@ body:not(.reading-active) .reading-return-bar{
 <script src="subject-index-data.js?v=20261020-structure1"></script>
 <script src="subject-index.js?v=20261020-indexprint1"></script>
 <script src="study-guide-data.js?v=daruri13-lesson12-method-20261024"></script>
-<script src="study-guide.js?v=daruri13-lesson12-method-20261024"></script><script src="editions.js?v=20261023-personal-icons"></script><script src="editions-icons.js?v=20261023-personal-icons"></script><script src="editions-selector.js?v=20261023-stage1-current"></script><script src="bookmark-ui.js?v=20261023-personal-icons"></script><script src="google-drive-config.js?v=20261023-transfer-release2"></script><script src="backup-transfer.js?v=20261023-transfer-release2"></script><script src="reading-desk.js?v=20261025-context-icon4"></script><script src="reading-mode-controls.js?v=20261025-quiet-nav4"></script><script src="reading-navigation-history.js?v=20261023-history-help2"></script><script src="reading-navigation-bridge.js?v=20261023-history-help2"></script><script src="headerless-navigation.js?v=20261025-quiet-nav4"></script><script src="general-section-picker.js?v=20261023-hierarchy1"></script><script>
+<script src="study-guide.js?v=daruri13-lesson12-method-20261024"></script><script src="editions.js?v=20261023-personal-icons"></script><script src="editions-icons.js?v=20261023-personal-icons"></script><script src="editions-selector.js?v=20261023-stage1-current"></script><script src="bookmark-ui.js?v=20261023-personal-icons"></script><script src="google-drive-config.js?v=20261023-transfer-release2"></script><script src="backup-transfer.js?v=20261023-transfer-release2"></script><script src="reading-desk.js?v=20261025-context-icon4"></script><script src="reading-mode-controls.js?v=20261025-quiet-nav4"></script><script src="reading-navigation-history.js?v=20261023-history-help2"></script><script src="reading-navigation-bridge.js?v=20261023-history-help2"></script><script src="headerless-navigation.js?v=20261026-visuals-lang-fast1"></script><script src="general-section-picker.js?v=20261023-hierarchy1"></script><script>
 (() => {
 'use strict';
 const BOOK = JSON.parse(document.getElementById('editionData').textContent);
@@ -4489,7 +4492,7 @@ function renderReader(){const s=sections.get(state.n);if(!s)return;const edition
  const appCards=primary.length?`<div id="applications">${primary.map(a=>`<div class="gn-app-unit"><div class="gn-app-desktop">${appCard(a)}</div><div class="gn-app-mobile">Bidāya Application: <button class="gn-text-link" type="button" data-gn-app-popup="${esc(a.id)}">${esc(a.book==='Marriage'?'Marriage':a.title.split(':')[0])}</button></div></div>`).join('')}</div>`:'';
  const afterText=(notesAndTerms||conceptsLine||appCards)?'<section class="gn-reading-aftertext gn-tidy-apparatus" aria-label="Reading apparatus">'+notesAndTerms+conceptsLine+appCards+'</section>':'';
  const nextN=isCol?null:pn===258?'colophon':pn+1,prevN=isCol?258:pn===1?null:pn-1;
- $('#mainContent').innerHTML=`<div class="reader mode-${state.lang}" id="reader"><div class="reader-heading"><div class="hero"><div class="eyebrow"><span class="rule"></span><span class="gn-heading-part"><span class="gn-part-title">${isCol?'LATER MANUSCRIPT RECORD':esc(p.label)}</span><span class="gn-section-number-ar-only">&nbsp;·&nbsp;${esc(sectionRef(s.id))}</span></span><button type="button" class="gn-heading-link" data-editorial-marker aria-haspopup="dialog" aria-label="Edition details and PDF links" title="Edition details and PDF links">↗</button></div>${renderReaderHeading(s)}<p class="subtitle">${isCol?'Copyist’s addition, not part of Ibn Rushd’s authorial text.':esc(p.caption)}</p></div></div><div id="searchLocator" class="search-locator" hidden aria-live="polite"></div><div class="reading-frame"><div class="parallel-text">${segments}</div></div>${afterText}<div class="chapter-nav" aria-label="Adjacent sections">${prevN?`<button type="button" aria-label="Read preceding section: ${esc(sections.get(String(prevN)).title)}" data-section="${esc(prevN)}"><span class="chapter-nav-direction" aria-hidden="true">${icon('left')}</span><span class="next-title">${esc(sections.get(String(prevN)).title)}</span></button>`:'<div style="flex:1"></div>'}${nextN?`<button type="button" aria-label="Read following section: ${esc(sections.get(String(nextN)).title)}" data-section="${esc(nextN)}"><span class="next-title">${esc(sections.get(String(nextN)).title)}</span><span class="chapter-nav-direction" aria-hidden="true">${icon('right')}</span></button>`:'<div style="flex:1"></div>'}</div></div>`;
+ $('#mainContent').innerHTML=`<div class="reader mode-${state.lang}" data-gn-rendered-vowels="${state.vowels}" id="reader"><div class="reader-heading"><div class="hero"><div class="eyebrow"><span class="rule"></span><span class="gn-heading-part"><span class="gn-part-title">${isCol?'LATER MANUSCRIPT RECORD':esc(p.label)}</span><span class="gn-section-number-ar-only">&nbsp;·&nbsp;${esc(sectionRef(s.id))}</span></span><button type="button" class="gn-heading-link" data-editorial-marker aria-haspopup="dialog" aria-label="Edition details and PDF links" title="Edition details and PDF links">↗</button></div>${renderReaderHeading(s)}<p class="subtitle">${isCol?'Copyist’s addition, not part of Ibn Rushd’s authorial text.':esc(p.caption)}</p></div></div><div id="searchLocator" class="search-locator" hidden aria-live="polite"></div><div class="reading-frame"><div class="parallel-text">${segments}</div></div>${afterText}<div class="chapter-nav" aria-label="Adjacent sections">${prevN?`<button type="button" aria-label="Read preceding section: ${esc(sections.get(String(prevN)).title)}" data-section="${esc(prevN)}"><span class="chapter-nav-direction" aria-hidden="true">${icon('left')}</span><span class="next-title">${esc(sections.get(String(prevN)).title)}</span></button>`:'<div style="flex:1"></div>'}${nextN?`<button type="button" aria-label="Read following section: ${esc(sections.get(String(nextN)).title)}" data-section="${esc(nextN)}"><span class="next-title">${esc(sections.get(String(nextN)).title)}</span><span class="chapter-nav-direction" aria-hidden="true">${icon('right')}</span></button>`:'<div style="flex:1"></div>'}</div></div>`;
  collapseDuplicateHeadings();
  applyReadingState();
 }
@@ -4941,7 +4944,17 @@ function toggleLanguageVisibility(value) {
  if(desired.lang===state.lang&&desired.vowels===state.vowels)return;
  preserveVisiblePassage(()=>{
   state.lang=desired.lang;state.vowels=desired.vowels;
-  save();applyReadingState();renderSettingsOptions();
+  // Paint the language and AR/EN pressed states before rebuilding any text.
+  const reader=$('.reader');
+  if(reader){
+   reader.classList.remove('mode-arabic','mode-english','mode-parallel');
+   reader.classList.add('mode-'+state.lang);
+  }
+  const controls=$('#persistentLanguages');
+  if(controls)controls.innerHTML=languageButtons();
+  save();applyReadingState();
+  if(state.focusLevel===3)requestAnimationFrame(renderSettingsOptions);
+  else renderSettingsOptions();
  });
 }
 function readerToolbar(){return '';}
@@ -5046,18 +5059,21 @@ function applyReadingState() {
   if (reader) {
     reader.classList.remove('mode-arabic','mode-english','mode-parallel');
     reader.classList.add('mode-'+state.lang);
-    const s = sections.get(state.n);
-    reader.querySelectorAll('[data-ar-seg]').forEach(el => {
-      const i=Number(el.getAttribute('data-ar-seg'));
-      const segment=s?.segments[i];
-      if(!segment)return;
-      const arMarkup=renderArabicWithNotes(s,segment,i);
-      el.innerHTML=arMarkup;
-      const english=el.closest('.passage-grid')?.querySelector('.passage-en');
-      if(english)english.innerHTML=renderEnglishWithNotes(s,segment,i,null,arMarkup);
-    });
-    const rubric = reader.querySelector('.arabic-rubric');
-    if (rubric) rubric.textContent = state.vowels ? (s.headingVocalized || s.headingAr) : bareArabic(s.headingAr);
+    // Language-only switches are CSS changes, never 416 text rewrites.
+    if(reader.dataset.gnRenderedVowels!==String(state.vowels)){
+      const s=sections.get(state.n);
+      reader.querySelectorAll('[data-ar-seg]').forEach(el=>{
+        const i=Number(el.getAttribute('data-ar-seg')),segment=s?.segments[i];
+        if(!segment)return;
+        const arMarkup=renderArabicWithNotes(s,segment,i);
+        el.innerHTML=arMarkup;
+        const english=el.closest('.passage-grid')?.querySelector('.passage-en');
+        if(english)english.innerHTML=renderEnglishWithNotes(s,segment,i,null,arMarkup);
+      });
+      const rubric=reader.querySelector('.arabic-rubric');
+      if(rubric&&s)rubric.textContent=state.vowels?(s.headingVocalized||s.headingAr):bareArabic(s.headingAr);
+      reader.dataset.gnRenderedVowels=String(state.vowels);
+    }
   }
   $$('[data-lang]').forEach(b=>{const active=b.dataset.lang===state.lang; b.classList.toggle('active',active); b.setAttribute('aria-pressed',String(active));});
   const sw=$('#vowelsSetting'); if(sw) sw.checked=state.vowels;
@@ -5779,26 +5795,53 @@ function takeDictionaryReturn(){
         renderReaderHeading(sec,'h3')+'</div></div>'+
         '<div class="reading-frame"><div class="parallel-text">'+paragraphs+'</div></div></section>');
     }
-    $('#mainContent').innerHTML='<div class="reader mode-'+state.lang+' gn-reader-continuous" id="reader">'+blocks.join('')+'</div>';
+    $('#mainContent').innerHTML='<div class="reader mode-'+state.lang+' gn-reader-continuous" data-gn-rendered-vowels="'+state.vowels+'" id="reader">'+blocks.join('')+'</div>';
   }
   renderReader=function(){
     if(state.route==='reader'&&state.focusLevel===3){renderContinuousReader();return;}
     oldRender();
   };
+  let continuousVowelGeneration=0;
   applyReadingState=function(){
     if(state.route==='reader'&&state.focusLevel===3){
       const reader=$('.reader');
       if(reader){
         reader.classList.remove('mode-arabic','mode-english','mode-parallel');
         reader.classList.add('mode-'+state.lang);
-        reader.querySelectorAll('[data-ar-seg]').forEach(el=>{
-          const id=el.closest('[data-reading-section]')?.dataset.readingSection;
-          const seg=sections.get(String(id))?.segments?.[Number(el.dataset.arSeg)];
-          if(seg)el.textContent=state.vowels?(seg.vocalized||seg.ar):bareArabic(seg.ar);
-        });
+        if(reader.dataset.gnRenderedVowels!==String(state.vowels)){
+          // Expensive tashkīl changes update in small chunks between paints.
+          const token=++continuousVowelGeneration, vowels=Boolean(state.vowels);
+          reader.dataset.gnRenderedVowels=String(vowels);
+          const paragraphs=[...reader.querySelectorAll('[data-ar-seg]')];
+          let cursor=0;
+          const chunk=()=>{
+            if(token!==continuousVowelGeneration||!reader.isConnected||
+               state.route!=='reader'||state.focusLevel!==3||Boolean(state.vowels)!==vowels)return;
+            for(const last=Math.min(cursor+24,paragraphs.length);cursor<last;cursor++){
+              const el=paragraphs[cursor];
+              const section=el.closest('[data-reading-section]')?.dataset.readingSection;
+              const segment=sections.get(String(section))?.segments?.[Number(el.dataset.arSeg)];
+              if(segment)el.textContent=vowels?(segment.vocalized||segment.ar):bareArabic(segment.ar);
+            }
+            if(cursor<paragraphs.length){requestAnimationFrame(chunk);return;}
+            reader.querySelectorAll('.gn-continuous-section').forEach(block=>{
+              const sec=sections.get(String(block.dataset.readingSection));
+              const rubric=block.querySelector('.arabic-rubric');
+              if(rubric&&sec?.headingAr)
+                rubric.textContent=vowels?(sec.headingVocalized||sec.headingAr):bareArabic(sec.headingAr);
+            });
+          };
+          requestAnimationFrame(chunk);
+        }
       }
-      $('[data-lang]').forEach(b=>{const active=b.dataset.lang===state.lang;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
+      // The earlier single-element $ selector threw on .forEach.
+      $$('[data-lang]').forEach(b=>{
+        const active=b.dataset.lang===state.lang;
+        b.classList.toggle('active',active);
+        b.setAttribute('aria-pressed',String(active));
+      });
       const vowel=$('#vowelsSetting');if(vowel)vowel.checked=state.vowels;
+      syncReadingChrome();
       return;
     }
     oldLangApply();
@@ -6141,7 +6184,11 @@ toggleBookmark=function(n){if(rd){rd.toggleSection(n);return;}priorBookmarkToggl
 const priorReader=renderReader;
 renderReader=function(){priorReader();rd?.afterReader();readingDock?.update();};
 const priorReadingApply=applyReadingState;
-applyReadingState=function(){priorReadingApply();rd?.afterReader();};
+applyReadingState=function(){
+ priorReadingApply();
+ if(state.focusLevel===3&&state.route==='reader')requestAnimationFrame(()=>rd?.afterReader());
+ else rd?.afterReader();
+};
 const priorRoute=renderRoute;
 renderRoute=function(route,n){priorRoute(route,n);rd?.afterRender(route);readingDock?.update();readingHistory?.afterRoute();};
 const priorScholarLayer=gnShowLayer;
@@ -6149,7 +6196,7 @@ gnShowLayer=function(...args){priorScholarLayer(...args);rd?.decorate();};
 
 window.DaruriReadingStyles?.init({value:state.pageStyle,preserve:preserveVisiblePassage,onChange:value=>{state.pageStyle=value;save();}});
 applyParallelOrder();applyArabicFont();applyEnglishFont();bind();bindReaderEnhancements();applyTheme();updateScale();syncRoute();bindResponsiveRepairs();takeDictionaryReturn();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261025-quiet-nav4').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js?v=20261026-visuals-lang-fast1').catch(()=>{});
 })();
 
 </script><link rel="stylesheet" href="gnamma-search.css?v=20261023-qiyas-forms1"><link rel="stylesheet" href="gnamma-scholarly.css?v=20261022-scholarly1"><link rel="stylesheet" href="gnamma-word-context.css?v=20261025-selection-context-menu1"><script src="gnamma-search-return.js?v=20261022-return2"></script><script src="gnamma-proximity.js?v=20261022-proximity1"></script><script src="gnamma-scholarly.js?v=20261022-scholarly1"></script><script src="gnamma-morphology.js?v=20261025-sigha-forms1"></script><script src="gnamma-search.js?v=20261025-sigha-forms1"></script><script src="gnamma-word-context.js?v=20261025-sigha-forms2"></script><script src="quran-context-ui.js?v=20261025-dossier4"></script><script src="copy-links.js?v=20261025-copy-menu-only1"></script><script src="focus-locators.js?v=20261025-focus-locators-wordcontext3"></script></body>
