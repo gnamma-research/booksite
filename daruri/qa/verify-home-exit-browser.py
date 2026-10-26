@@ -190,6 +190,7 @@ def case(browser, engine, width, url):
               removed:Number(root.dataset.gnHelpLinksRemoved||0)};
     }""")
     assert not details['internal'], ('Help still links elsewhere on site', engine, width, details)
+    assert details['removed'] > 0, ('Help cleanup did not find any original in-site link', engine, width, details)
     assert page.locator('#leftNav [data-route="reader"]').count(), 'Normal navigation removed with Help links'
 
     # One global Contents opener must remain on non-reading reference routes.
