@@ -5,13 +5,18 @@ const base=path.resolve(__dirname,'..');
 const read=p=>fs.readFileSync(path.join(base,p),'utf8');
 const html=read('index.html'),copy=read('copy-links.js'),css=read('copy-links.css'),sw=read('sw.js'),bundle=read('download-bundle.js');
 assert(html.includes('window.GnammaCopyContext={book:BOOK,state,sections,notes:rdNoteCatalog,rd}'),'Copy context must use authoritative Reader data and Reading Desk');
-assert(html.includes('copy-links.css?v=20261025-copy-menu-only1')&&html.includes('copy-links.js?v=20261025-copy-menu-only1'),'Current Reader must load both Copy assets');
+// Copy CSS and JS legitimately have separate revision tags: paragraph position
+// repairs can update the stylesheet without changing the Copy JavaScript.
 for(const filename of ['copy-links.js','copy-links.css']){
- const revision='20261025-copy-menu-only1';
- assert(sw.includes(filename+'?v='+revision),'Offline cache omits '+filename);
+ const assetPattern=new RegExp(filename.replace(/\./g,'\\.')+'\\?v=([A-Za-z0-9._-]+)');
+ const linked=html.match(assetPattern);
+ assert(linked,'Current Reader must load '+filename);
+ assert(sw.includes(filename+'?v='+linked[1]),'Offline cache omits current '+filename+' revision');
  assert(bundle.includes("'daruri/"+filename+"'"),'Complete download omits '+filename);
 }
-assert(html.includes('download-bundle.js?v=20261025-copy-menu-only1')&&sw.includes('download-bundle.js?v=20261025-copy-menu-only1'),'Offline package loader must be versioned');
+const downloader=html.match(/download-bundle\.js\?v=([A-Za-z0-9._-]+)/);
+assert(downloader&&sw.includes('download-bundle.js?v='+downloader[1]),
+ 'Offline package loader must use the current version');
 assert(copy.includes('C.rd?.records?.()'),'Personal annotations must come from Reading Desk only when requested');
 assert(copy.includes('config.personal'),'Personal notes opt-in missing');
 assert(copy.includes('selectionSnapshot()'),'Selected words must require a real browser selection');
