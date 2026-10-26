@@ -123,9 +123,19 @@ async function exercise(engine,{mobile=false}={}){
    // Drive the supported three-mode menu, not synthetic internal preference
    // keys carried over from older builds. Legacy focusMode may conflict with
    // the current authoritative focusLevel/Focus-apparatus control.
-   await page.goto(URL.replace('section=1','section=2'),
-    {waitUntil:'domcontentloaded',timeout:90000});
-   await page.locator('#readerDock:not([hidden])').waitFor({state:'visible',timeout:35000});
+   // Repeated 3MB page navigation on mobile WebKit can crash the engine;
+   // visit §2 only once, then switch modes through the existing public picker.
+   if(level===1){
+    await page.goto(URL.replace('section=1','section=2'),
+     {waitUntil:'domcontentloaded',timeout:90000});
+    await page.locator('#readerDock:not([hidden])').waitFor({state:'visible',timeout:35000});
+   }else{
+    await page.evaluate(()=>{
+     window.getSelection()?.removeAllRanges();
+     window.GnammaReaderModes.setMode('reading');
+    });
+    await page.locator('body.focus-mode').waitFor({state:'detached',timeout:10000});
+   }
    await page.locator('#focusToolbar').click();
    if(level===3){
     await page.locator('[data-gn-reader-mode="continuous"]').click();
