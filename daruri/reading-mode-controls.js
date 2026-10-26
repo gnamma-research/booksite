@@ -361,7 +361,9 @@ function create({state,rd}){
    }else jump.setAttribute('aria-label','Current section '+place.section+'. Open section navigator.');
   }
   const groups=classify(place.section),total=[...groups.values()].reduce((n,items)=>n+items.length,0);
-  const mobile=window.matchMedia?.('(max-width: 760px)').matches??false;
+  // A landscape phone may be 800–1000 CSS px wide but only 375px high.
+  // Keep its saved-item control in the same single-target mobile form.
+  const mobile=window.matchMedia?.('(max-width: 760px), (orientation: landscape) and (max-height: 560px) and (pointer: coarse)').matches??false;
   const signature=[place.section,place.segment,mobile,...categories.map(c=>groups.get(c.id).map(item=>item.id).join(','))].join('|');
   if(sheet&&sheetSection!==place.section)closeSheet();
   if(signature===last&&status.hidden===!total)return;

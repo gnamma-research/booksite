@@ -106,3 +106,115 @@
 @media print {
   #readerDock .gn-dock-private-status{display:none!important;}
 }
+
+/* GNAMMA 26 Oct 2026 LANDSCAPE DOCK
+   Phone landscape is often >760 CSS pixels wide. Without a short-height
+   override, the desktop dock stacks its section picker and saved status into
+   two rows, obscuring a large part of a ~375–430px-high reading viewport.
+   Keep the ordinary portrait rules unchanged. */
+@media screen and (orientation:landscape) and (max-height:560px) and (pointer:coarse) {
+  body.reader-enhanced.reading-active #readerDock.reader-dock:not([hidden]) {
+    box-sizing:border-box!important;
+    left:50%!important;right:auto!important;
+    transform:translateX(-50%)!important;
+    width:min(860px,calc(100vw - 16px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)))!important;
+    max-width:860px!important;
+    bottom:calc(4px + env(safe-area-inset-bottom,0px))!important;
+    height:52px!important;min-height:52px!important;max-height:52px!important;
+    padding:3px 5px!important;
+    grid-template-columns:44px minmax(0,1fr) 44px!important;
+    grid-auto-rows:44px!important;
+    align-items:center!important;align-content:center!important;
+    gap:4px!important;border-radius:11px!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .reader-step {
+    box-sizing:border-box!important;
+    min-height:44px!important;max-height:44px!important;height:44px!important;
+    padding:2px!important;margin:0!important;gap:0!important;
+    justify-content:center!important;align-items:center!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-center {
+    box-sizing:border-box!important;
+    display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;
+    align-items:center!important;justify-content:center!important;
+    width:100%!important;min-width:0!important;
+    height:44px!important;min-height:44px!important;max-height:44px!important;
+    gap:5px!important;margin:0!important;padding:0!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-center > #openJump {
+    box-sizing:border-box!important;display:flex!important;
+    flex:1 1 auto!important;width:auto!important;min-width:0!important;
+    min-height:44px!important;max-height:44px!important;height:44px!important;
+    align-items:center!important;justify-content:center!important;
+    padding:2px 5px!important;margin:0!important;
+    overflow:hidden!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-private-status {
+    box-sizing:border-box!important;
+    flex:0 0 52px!important;width:52px!important;min-width:52px!important;
+    max-width:52px!important;height:44px!important;min-height:44px!important;
+    max-height:44px!important;margin:0!important;padding:0!important;
+    align-items:center!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-private-status[hidden] {
+    display:none!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary {
+    box-sizing:border-box!important;display:flex!important;
+    width:52px!important;min-width:52px!important;max-width:52px!important;
+    height:44px!important;min-height:44px!important;max-height:44px!important;
+    align-items:center!important;justify-content:center!important;
+    padding:3px!important;margin:0!important;
+  }
+  /* At widths above 760px the portrait icon/count treatment is absent.
+     Force the same concise saved-item glyph + count, rather than allowing
+     category badges to wrap inside the new one-row dock. */
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary {
+    gap:3px!important;flex-wrap:nowrap!important;
+    border:1px solid var(--line)!important;border-radius:9px!important;
+    background:var(--surface-alt)!important;color:var(--text)!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary .gn-dock-summary-symbols,
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary .gn-dock-summary-caret {
+    display:none!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary .gn-dock-saved-prefix {
+    display:inline-flex!important;align-items:center!important;
+    flex:0 0 auto!important;margin:0!important;padding:0!important;
+    border:0!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary .gn-dock-saved-prefix>.gn-bm-ribbon {
+    width:16px!important;height:16px!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary::after {
+    content:attr(data-gn-total);display:inline-block!important;min-width:1ch;
+    color:var(--accent)!important;
+    font:750 12px/1 var(--sans,system-ui,sans-serif)!important;
+    font-variant-numeric:tabular-nums;text-align:center;
+  }
+  body.reader-enhanced.reading-active #readerDock .reader-location-meta {
+    margin:0!important;gap:3px!important;
+    font-size:10px!important;line-height:1.1!important;
+  }
+  body.reader-enhanced.reading-active #readerDock #dockTitle {
+    display:-webkit-box!important;-webkit-box-orient:vertical!important;
+    -webkit-line-clamp:1!important;
+    white-space:normal!important;overflow:hidden!important;
+    font-size:12px!important;line-height:1.2!important;
+  }
+  body.reader-enhanced.reading-active #readerDock #dockJumpCue {
+    display:none!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .reader-step > .icon {
+    width:17px!important;height:17px!important;
+  }
+  body.reader-enhanced.reading-active.focus-level-3 #readerDock.reader-dock:not([hidden]) {
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+  /* Enough scrollable space to read beneath the fixed dock, but do not keep
+     the old 160px portrait-only padding on a 375px-high landscape phone. */
+  body.reader-enhanced.reading-active .main-region,
+  body.reader-enhanced.reading-active.focus-mode .main-region {
+    padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))!important;
+  }
+}
