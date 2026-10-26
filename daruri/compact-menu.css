@@ -411,3 +411,29 @@
 /* One download destination. Editions contains the PDF and offline HTML choices;
    hide the duplicate PDF lists in enhanced and no-JS contents menus. */
 #downloadsMenu,#fb-downloads-menu{display:none!important}
+
+/* Appearance belongs inside Visuals, beside the existing colour palette. */
+@media screen {
+ .gn-visuals-panel .gn-appearance-control{
+   min-width:0;display:flex;flex-direction:column;gap:5px;
+ }
+ .gn-visuals-panel .gn-appearance-label{
+   display:block;color:var(--muted);font:600 11px/1.25 var(--sans,system-ui);
+   letter-spacing:.015em;
+ }
+ .gn-visuals-panel .gn-appearance-options{
+   display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+   grid-auto-flow:row;gap:6px;min-width:0;
+ }
+ .gn-visuals-panel .gn-appearance-options > button{
+   box-sizing:border-box;min-width:0;min-height:48px;
+   padding:6px 4px;font:600 12px/1.2 var(--sans,system-ui);
+   cursor:pointer;touch-action:manipulation;
+ }
+ .gn-visuals-panel .gn-appearance-options > button[aria-pressed="true"]{
+   color:var(--accent);
+ }
+ .gn-visuals-panel .gn-appearance-options > button:focus-visible{
+   outline:2px solid var(--accent);outline-offset:2px;
+ }
+}

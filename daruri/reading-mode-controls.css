@@ -428,3 +428,9 @@ body.focus-mode #mainContent .gn-note-en-section-list {
  background:var(--accent-soft);color:var(--accent);
  outline:2px solid var(--accent);outline-offset:-2px;
 }
+
+/* Immediate AR/EN visual feedback in Reading, Focus and Continuous.
+   Avoid animating palette state after a 416-passage Continuous redraw. */
+#readingControls #persistentLanguages > button[data-language-toggle]{
+  transition:none!important;
+}

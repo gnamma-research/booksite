@@ -679,3 +679,12 @@
    display:none!important;
  }
 }
+
+/* Appearance is now selected inside Visuals; retain the original themeBtn node
+   only for its established event binding, never as a second toolbar action. */
+@media screen {
+ body #themeBtn[hidden],
+ body.reader-enhanced #readingControls .gn-reader-global-trailing #themeBtn{
+   display:none!important;
+ }
+}

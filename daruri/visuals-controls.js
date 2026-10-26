@@ -80,6 +80,10 @@
       if(button.dataset.palette){
         show('Palette',button.getAttribute('aria-label')||button.dataset.palette);
       }
+      if(button.dataset.themeChoice){
+        const name={system:'System',light:'Light',dark:'Dark'}[button.dataset.themeChoice];
+        if(name)show('Appearance',name);
+      }
     });
     sync();
   }
