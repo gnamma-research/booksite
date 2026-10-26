@@ -95,15 +95,17 @@
         {
           "id": "law",
           "title": "Law and Legal Reasoning",
-          "url": "texts/ibn-rushd/bidayat-al-mujtahid/law/"
+          "url": "texts/ibn-rushd/bidayat-al-mujtahid/law/",
+          "casebook_url": "texts/ibn-rushd/bidayat-al-mujtahid/law/casebook/"
         },
         {
           "id": "human-life",
           "title": "Law and Human Life",
-          "url": "texts/ibn-rushd/bidayat-al-mujtahid/human-life/"
+          "url": "texts/ibn-rushd/bidayat-al-mujtahid/human-life/",
+          "casebook_url": "texts/ibn-rushd/bidayat-al-mujtahid/human-life/casebook/"
         }
       ],
-      "note": "Two separate research-reading edition previews with three original illustrative cases, plus linked alternative-uṣūl and qawānīn archives. The full canonical Revision16 Bidāya primary text and legal dossier register remain unimported."
+      "note": "Two edition research previews. Each now includes the recovered separate 25-case alternative-uṣūl casebook (12 full dossiers, 13 supplemental reviews, 115 source records); Edition II includes separate formation hypotheses. The canonical Revision16 primary text and 310/279 research registers remain unavailable and unimported."
     }
   ],
   "research": [
@@ -153,6 +155,17 @@
       "status": "archived-working-research",
       "url": "research/usul-law-rushd/qawanin/",
       "note": "Accessible 19 October working dossier; later expanded file not yet migrated."
+    },
+    {
+      "id": "bidaya-revision16-recovery",
+      "title": "Bidāya Revision16 recovery status",
+      "area": [
+        "textual recovery",
+        "research integrity"
+      ],
+      "status": "original-local-files-unavailable",
+      "url": "research/usul-law-rushd/recovery/",
+      "note": "Tracks missing original master reader, 310 groups, 279 K-positions, 542 stable addresses and source-recovery utility."
     }
   ],
   "navigation": {
@@ -181,7 +194,8 @@
       "bidaya-editions",
       "bidaya-alternative-usul",
       "ibn-rushd-qawanin",
-      "bidaya-daruri"
+      "bidaya-daruri",
+      "bidaya-revision16-recovery"
     ]
   }
 }
