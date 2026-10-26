@@ -726,7 +726,7 @@
     Do not hide Share or Visuals in ordinary Reading or overflow horizontally. */
  body.reader-enhanced.reading-active:not(.focus-mode) #readingControls {
    --gn-quiet-tile:36px;--gn-quiet-language:28px;
-   --gn-quiet-action:30px;--gn-quiet-copy-chevron:20px;
+   --gn-quiet-action:30px;--gn-quiet-copy-chevron:24px;
  }
  body.reader-enhanced.reading-active #readingControls:not([hidden]) .reading-controls-inner {
    box-sizing:border-box!important;width:100%!important;max-width:100%!important;
