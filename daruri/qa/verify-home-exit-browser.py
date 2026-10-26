@@ -10,7 +10,7 @@ from threading import Thread
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
-WIDTHS = (320, 375, 390, 620, 860, 1280)
+WIDTHS = (320, 350, 375, 390, 430, 620, 860, 1280)
 FULL_ACTIONS = (
     '#menuBtn.gn-top-tile', '#focusToolbar', '#readerSaveAction',
     '#readerCopyAction', '#readerCopyOptions', '#readerShareAction',
@@ -81,11 +81,16 @@ def case(browser, engine, width, url):
     assert_no_floating_home(page)
 
     if phone:
-        number = page.locator('#reader .gn-paragraph-number').first
-        number.wait_for(state='visible', timeout=15000)
-        rect = number.bounding_box()
-        assert rect and rect['x'] >= -1 and rect['x'] + rect['width'] <= width + 1, (
-            'Ordinary paragraph marker clipped', width, rect)
+        numbers = page.locator('#reader .passage-grid > .gn-paragraph-number')
+        numbers.first.wait_for(state='visible', timeout=15000)
+        for i in range(min(numbers.count(), 12)):
+            number = numbers.nth(i)
+            rect = number.bounding_box()
+            assert rect and rect['x'] >= -1 and rect['x'] + rect['width'] <= width + 1, (
+                'Ordinary paragraph marker clipped', width, i, rect)
+            grid = number.locator('xpath=..').bounding_box()
+            assert grid and rect['x'] >= grid['x'] - 1 and rect['x'] + rect['width'] <= grid['x'] + grid['width'] + 1, (
+                'Paragraph marker outside its own reading passage', width, i, rect, grid)
         assert page.evaluate('document.documentElement.scrollWidth') <= width + 2, (
             'Horizontal document overflow', width)
 
@@ -132,7 +137,60 @@ def case(browser, engine, width, url):
     page.wait_for_function("document.body.classList.contains('focus-level-3')", timeout=10000)
     mode_icon(page)
     assert_no_floating_home(page)
-    open_contents_from_focus(page, width, 'Continuous')
+    # Test true on-screen mobile tap after scrolling inside the actual full-book
+    # Continuous source. Locator.click() can auto-scroll the header into view,
+    # falsely passing a menu that is inaccessible during real reading.
+    if width in (320, 390, 860, 1280):
+        content = page.locator('#gn-continuous-64 .passage-grid').first
+        content.wait_for(state='visible', timeout=30000)
+        content.evaluate("""el=>{
+           window.scrollTo({top:window.scrollY + el.getBoundingClientRect().top - 150,
+                            behavior:'instant'});
+           window.dispatchEvent(new Event('scroll'));
+        }""")
+        page.wait_for_timeout(280)
+        before = page.locator('#dockSection').inner_text().strip()
+        menu_rect = page.locator('#menuBtn.gn-top-tile').bounding_box()
+        assert menu_rect and 0 <= menu_rect['y'] and menu_rect['y'] + menu_rect['height'] <= 850, (
+            'Contents inaccessible after Continuous scroll', engine, width, menu_rect)
+        px = menu_rect['x'] + menu_rect['width'] / 2
+        py = menu_rect['y'] + menu_rect['height'] / 2
+        hit = page.evaluate("""([x,y])=>{
+          let node=document.elementFromPoint(x,y);
+          return !!(node && node.closest('#menuBtn.gn-top-tile'));
+        }""",[px,py])
+        assert hit, ('Contents covered by another element', engine, width, menu_rect)
+        if phone:
+            page.touchscreen.tap(px, py)
+        else:
+            page.mouse.click(px, py)
+        page.wait_for_function(
+            "document.querySelector('#menuBtn').getAttribute('aria-expanded')==='true'",
+            timeout=10000)
+        page.wait_for_function("!document.body.classList.contains('focus-mode')", timeout=10000)
+        assert page.locator('#leftNav').is_visible(), 'Scrolled Continuous Contents hidden'
+        after = page.locator('#dockSection').inner_text().strip()
+        assert before == after, ('Continuous lost current section on Contents', engine, width, before, after)
+    else:
+        open_contents_from_focus(page, width, 'Continuous')
+
+    # Help is an explanation, not a second navigation hub. No link or route
+    # button inside its actual content may jump elsewhere on the site.
+    route(page, url, '#help')
+    guide = page.locator('#mainContent .gn-history-help')
+    guide.wait_for(state='visible', timeout=30000)
+    details = guide.evaluate("""root=>{
+      const links=[...root.querySelectorAll('a[href],[data-route]')];
+      const internal=links.filter(node=>{
+        if(node.hasAttribute('data-route'))return true;
+        try{return new URL(node.getAttribute('href'),location.href).origin===location.origin;}
+        catch(_){return true;}
+      });
+      return {all:links.length,internal:internal.map(node=>node.outerHTML.slice(0,150)),
+              removed:Number(root.dataset.gnHelpLinksRemoved||0)};
+    }""")
+    assert not details['internal'], ('Help still links elsewhere on site', engine, width, details)
+    assert page.locator('#leftNav [data-route="reader"]').count(), 'Normal navigation removed with Help links'
 
     # One global Contents opener must remain on non-reading reference routes.
     for destination in ('#index', '#glossary', '#study'):
@@ -162,4 +220,4 @@ if __name__ == '__main__':
     finally:
         server.shutdown()
         server.server_close()
-    print('PASS 12 browser/width navigation cases')
+    print('PASS 16 browser/width navigation cases and Help link cleanup')
