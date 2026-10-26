@@ -1,0 +1,54 @@
+name: Daruri language and Visuals immediate-response QA
+
+on:
+  push:
+    branches: [fix/daruri-language-visuals-20261026]
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/compact-menu.css'
+      - 'daruri/headerless-navigation.css'
+      - 'daruri/headerless-navigation.js'
+      - 'daruri/visuals-controls.js'
+      - 'daruri/reading-mode-controls.css'
+      - 'daruri/qa/verify-language-visuals-browser.cjs'
+      - '.github/workflows/daruri-language-visuals.yml'
+  pull_request:
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/compact-menu.css'
+      - 'daruri/headerless-navigation.css'
+      - 'daruri/headerless-navigation.js'
+      - 'daruri/visuals-controls.js'
+      - 'daruri/reading-mode-controls.css'
+      - 'daruri/qa/verify-language-visuals-browser.cjs'
+      - '.github/workflows/daruri-language-visuals.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daruri-language-visuals-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  immediate-language-and-appearance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check source syntax
+        run: |
+          node --check daruri/headerless-navigation.js
+          node --check daruri/visuals-controls.js
+          node --check daruri/download-bundle.js
+          node --check daruri/qa/verify-language-visuals-browser.cjs
+      - name: Install Chromium and WebKit
+        run: |
+          npm install --no-save --prefix daruri/qa playwright@1.56.1
+          npx --prefix daruri/qa playwright install --with-deps chromium webkit
+      - name: Exercise all reading modes and Appearance on mobile and desktop
+        run: node daruri/qa/verify-language-visuals-browser.cjs
