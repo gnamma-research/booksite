@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-library-manifest-v1",
   "project": "Gnamma Research",
-  "updated": "2026-10-19",
+  "updated": "2026-10-26",
   "collections": [
     "texts",
     "essays",
@@ -76,6 +76,34 @@
       "status": "editorial-preview",
       "url": "texts/al-jurjani/sharh-al-mawaqif/",
       "note": "Separate ongoing translation; not yet migrated into this repository. A limited scholarly reader preview is now available; source corpus still awaits import."
+    },
+    {
+      "id": "ibn-rushd-bidaya",
+      "title": "Bidāyat al-Mujtahid",
+      "arabic": "بداية المجتهد",
+      "author": "Ibn Rushd",
+      "author_slug": "ibn-rushd",
+      "work_slug": "bidayat-al-mujtahid",
+      "area": [
+        "fiqh",
+        "comparative jurisprudence",
+        "legal method"
+      ],
+      "status": "editorial-preview",
+      "url": "texts/ibn-rushd/bidayat-al-mujtahid/",
+      "editions": [
+        {
+          "id": "law",
+          "title": "Law and Legal Reasoning",
+          "url": "texts/ibn-rushd/bidayat-al-mujtahid/law/"
+        },
+        {
+          "id": "human-life",
+          "title": "Law and Human Life",
+          "url": "texts/ibn-rushd/bidayat-al-mujtahid/human-life/"
+        }
+      ],
+      "note": "Two separately extracted research-reading views. Three existing illustrative case records and prior editorial notes are accessible; the full primary Bidāya corpus and Revision16 dossiers are not yet imported."
     }
   ],
   "research": [
@@ -99,6 +127,12 @@
         "ids": [
           "ghazali-mustasfa",
           "ibn-rushd-daruri"
+        ]
+      },
+      {
+        "name": "Comparative fiqh",
+        "ids": [
+          "ibn-rushd-bidaya"
         ]
       },
       {
