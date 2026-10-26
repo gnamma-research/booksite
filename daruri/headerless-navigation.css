@@ -3,7 +3,7 @@
    design/daruri-headerless-tile-handoff-20261023,
    docs/design/daruri-selected-circular-tile-reference-64.png.
    No additional masthead or Contents button is introduced. */
-:root{--gn-daruri-tile:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAY1BMVEX579z27Nv169r16tnz6tr46NHz6djy6Nf35Mv04MXt4Mvs3MTs17vl1b7izrLby7PYw6fKvaW+rZS2jnCVmYuHfGRXc2sba3WeWDhWYEglXW4NXXRxQyk8JxMPS34dJjH/AP8Xb8eWAAAAIXRSTlP//////////////////////////////////////////wCfwdAhAAAG0ElEQVR42qVXi5bcKg50Ti4nAvEU4G677fn/v8yWwD2PZHIzu0syE8eGQkilklh+/p9j+eMXMpZj8bGk6K39bwEMZ+nHcXbmep5H7xLt1wGsSf04dfSFeanj8dyqpy8BWK5j9Yb9vzlmZ9p53yZe5r8DeCm1b7B+lfqdqW/ERioAtt5EJP0FwIhkuyzGhNKKcUbOsxpH0lKgZVnI907/BhCO/s2UEpi+++zY92F4dJatcSFLMOE88h8BFuzH3922bR1uZ+fiNkZ0jqX3ddsaqU1iPwcwcHc3RsaiTs7a+SyGPYc+XidieLjazwCM2ptMmesdnF8W1udgpNEPXsf7oCac3f8OQH3EneZOAetf9kIwQSivDzE0kcV4DfKbDa8AWI8IuDQAmqH2eDx2t/Ru7Pq4AWEcolfQO+rcXwHUMDGOgwsi2FWwXpeVYsrjdnvcCsGxBe70TGpD/ggQNV5iAxkyiynZ7w8dq6VhABBWW8JiiCzzOMThPwCAab1kZ9vaGhjEcQI8ChEMUGNW7wjf1rVQzEVD8R6gnVtZbGS7vugo5NcJsPrhAfxt1rbrY+RFczS/AYSjmu8mCNOc8wKXTYSd/XUCZ/v8hkgL/BC2SeoBIMVYRAwsugB2o0fXfcmK+rDZpVyfwIRjK+RMzU8AX4g1fGt6AryAcQaBvDHighA082rcHqzGU4LPNV4AJV78a68AzQS3yKOZXMAIWRzTegHEmSHdszwBtmLTBRCvaasJNSwlLbUuoZhUTbjWFxMmAJteJ0A65budDBZ6WhqWes+W8x2/TbrXReb6BEm4pprjsAOgXikAwckeCPs+ziBY63KtmRTFwLR9XyEIsYismhT5POMAAIkCta3A86UUa+HRIjjV/R6wvtYIgOCkJAYvE/4lzYtMdWTE8hPEVCdkyNh6u+2NQHfQGe4P4a6j5uydgZ4xog9WYIpxhTV9kdbLz6x6GR3bchuUaTh5rZBGub8O4SK1OpP3OQVibRG4CYA8PIrnQZjbIJ3/ke9HfbceCPiJy9xCp0TvYx0ZNQBAJB9Ce0WwS75/WH+HK9zr+tut+eiZ+wToZzQmHbLQG0KyIX4EiAFHvD7fxCy1Q/QrwgALMrEgPQVV4DmlWZc+ANzZhef+a7EB5m/Rk2R1IkRf9bA6Km/rY/gIEAOl4UHYRxxVUoQ5KgBUjxHTupA815ul3H91Yg0mrReCpXTAcd73BAAQEcWreNuuAxQKFad2713A+AVXPxECQQFMOKYP9Dj8DOMD2QICi0R+D2CyVNQq+0RAGBm69gzjWT20Um6PEQAQFuWVke/P5UBjpaK1vg19xPE5a8VWAAjylrwksrn1HhbIukgrNteCowBEQq2emxb3bAmy2jzZEmO7qGy3cyO/QaUMZW/DpasGS0PEYbIpB7KxTTUgGzMRNy0dsFx9gKTAEVVOWoEz9yko9E+9i3ea0xzxeOnBCzIlimjyE0xPCgAnFMpDJFCFXiUNird4Bz5Czb5JZb9fX9jN6mdp0+ICgKz1dzYC+ZoF8U+8JKhsxd7IDTQol9i9yFSv7m2vE8CjhZvvmC+AHUEBsWHIWAkgRP4VoM1WwUrOU1SzcGxDpcLTTuJRh1bLVKbzOD2NG6qKSMZXVfagCEGlxMT9kk4zgjFqI4C0wnjfnuAAABFoGDAAYqkWQoa0nLvs2QLp8aK1UVNIufNWG+H+mtDASPXlWdrsdkClfaS8rxjBerQHc2MTb4/HrM5BSbTuQiGDSP0s8bU2xgQ2SkRzEUBkMnDA46YG3Hg8jhzxIRqy3gfWPlpZmN/Ku0o0iO3hC/SDtesq3VglOqqQaKEvvUSQkIOto8HI7xsMj8w4FuN9aX10c230NQhe1kf8QY3ctNuN0Ws/eeb4oUPJ0Jit1Ugzxpn8bXiAt7aEfdT52b+twdfeNX/LxybLZ+2SUNVnlSVKGjokzYYCMYrFVX/JbKPNK7+2eXE0kOYyoeBhpdEbdjSsq+dpQE+2jEaz/NYnFo8vB4RiFt/oY0QBH5x13j9fQxD62D/83uoWnw8kNgsaNakZUB4pdh6oe4FdhshAbyDEev4cPmu2S0R7Dy94aBpYZbX0jJFVv42SAKVgO7KX8Hm7nzMJbjW4rYVUGiTAKQJICt5JBoGgerXjHuf+eOHALU/mhWdU7KAHhqD6qmfB3Q1q7XP6tytPzpyn4Vs7qo2ui9ahPt8dgu3DXy5dOVK8Ln3qUniEr/9tYn/d/tNrX8jwX5kYFW7L8xJYs485uS9dPF1K2kDAG/Bd7hvafGRATMF9/eobUk4eI2JYxt6fbf6XyzfEASgJPyHwj//h9v7F8R+2C+PtMCxEkwAAAABJRU5ErkJggg==");}
+:root{--gn-daruri-tile:url("data:image/png;base64,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");}
 @media screen and (min-width:621px) {
   :root {--reading-controls-height:56px;}
 }
@@ -804,4 +804,26 @@
    --gn-quiet-tile:44px;--gn-quiet-language:34px;
    --gn-quiet-action:38px;--gn-quiet-copy-chevron:24px;
  }
+}
+
+/* 26 Oct 2026: the original 64px tile has genuinely transparent negative space.
+   Leave the active reading palette visible through the artwork instead of
+   imposing an opaque paper circle. No extra navigation control is created. */
+@media screen {
+  body.reader-enhanced #readingControls .gn-reader-global-leading #menuBtn.gn-top-tile {
+    background-color:transparent!important;
+    border-color:transparent!important;
+  }
+  #fallbackReader .fb-topbar .gn-native-tile {
+    background-color:transparent!important;
+    border-color:transparent!important;
+  }
+  /* Keep visible feedback for pointer, keyboard and accessibility modes. */
+  body.reader-enhanced #readingControls .gn-reader-global-leading #menuBtn.gn-top-tile:is(:hover,:focus-visible) {
+    border-color:var(--accent)!important;
+  }
+  #fallbackReader .fb-topbar .fb-icon-button:focus-visible .gn-native-tile {
+    outline:2px solid var(--accent);
+    outline-offset:2px;
+  }
 }
