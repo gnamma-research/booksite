@@ -71,6 +71,20 @@ async function run(engine,name,origin){
   await page.goto(origin+'/daruri/#section=11',{waitUntil:'domcontentloaded',timeout:90000});
   await page.locator('#readerDock:not([hidden])').waitFor({state:'visible',timeout:40000});
   await page.locator('#readerDock .gn-dock-summary').waitFor({state:'visible',timeout:30000});
+  // Both popups must still be operable by actual touch with the compact dock.
+  // The browser's initial screen and viewport both match this landscape size.
+  const saved=page.locator('#readerDock .gn-dock-summary');
+  const r=await saved.boundingBox();
+  await page.touchscreen.tap(r.x+r.width/2,r.y+r.height/2);
+  await page.locator('.gn-dock-saved-sheet').waitFor({state:'visible',timeout:10000});
+  await page.locator('.gn-dock-sheet-close').click();
+  await page.locator('.gn-dock-saved-sheet').waitFor({state:'detached',timeout:10000});
+  const jump=await page.locator('#openJump').boundingBox();
+  await page.touchscreen.tap(jump.x+jump.width/2,jump.y+jump.height/2);
+  await page.locator('#jumpOverlay:not([hidden])').waitFor({state:'visible',timeout:10000});
+  await page.locator('#jumpClose').click();
+  await page.locator('#jumpOverlay').waitFor({state:'hidden',timeout:10000});
+  console.log('PASS '+name+' fresh landscape saved sheet + section picker touches');
   const reports=[];
   for(const [width,height] of sizes){
    await page.setViewportSize({width,height});
@@ -105,19 +119,6 @@ async function run(engine,name,origin){
     bottomGap:+data.bottomGap.toFixed(2),savedWidth:data.saved?.width});
    if(width===844)await page.screenshot({path:'/tmp/gnamma-landscape-dock-'+name+'.png'});
   }
-  // Both popups must still be operable by actual touch with the compact dock.
-  await page.setViewportSize({width:844,height:390});
-  const saved=page.locator('#readerDock .gn-dock-summary');
-  const r=await saved.boundingBox();
-  await page.touchscreen.tap(r.x+r.width/2,r.y+r.height/2);
-  await page.locator('.gn-dock-saved-sheet').waitFor({state:'visible',timeout:10000});
-  await page.locator('.gn-dock-sheet-close').click();
-  await page.locator('.gn-dock-saved-sheet').waitFor({state:'detached',timeout:10000});
-  const jump=await page.locator('#openJump').boundingBox();
-  await page.touchscreen.tap(jump.x+jump.width/2,jump.y+jump.height/2);
-  await page.locator('#jumpOverlay:not([hidden])').waitFor({state:'visible',timeout:10000});
-  await page.locator('#jumpClose').click();
-  await page.locator('#jumpOverlay').waitFor({state:'hidden',timeout:10000});
   // Portrait uses its own screen + viewport orientation. Playwright mobile
   // WebKit keeps screen=landscape when setViewportSize() alone is called,
   // so the latter is not a valid simulation of a physical phone rotation.
