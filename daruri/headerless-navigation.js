@@ -165,7 +165,32 @@
    if(author)author.textContent='Ibn Rushd';
   }
   function enhanceHelp(){
-   var steps=document.querySelectorAll('#mainContent .gn-history-help .gn-help-step');
+   var guide=document.querySelector('#mainContent .gn-history-help');
+   if(!guide)return;
+   // Help explains how the tools work; it must not be a second navigation menu.
+   // Convert only *internal* route links to ordinary readable text. Preserve
+   // external scholarly URLs and the real site navigation outside Help.
+   var removed=0;
+   guide.querySelectorAll('a[href], [data-route]').forEach(function(link){
+    var href=link.getAttribute('href')||'';
+    var internal=link.hasAttribute('data-route');
+    if(!internal&&href){
+     try{
+      var url=new URL(href,window.location.href);
+      internal=url.origin===window.location.origin||
+       !/^(?:https?:|mailto:|tel:)/i.test(url.protocol);
+     }catch(_){internal=true;}
+    }
+    if(!internal)return;
+    var plain=document.createElement('span');
+    plain.className='gn-help-static-reference';
+    while(link.firstChild)plain.appendChild(link.firstChild);
+    link.replaceWith(plain);
+    removed++;
+   });
+   if(removed)guide.dataset.gnHelpLinksRemoved=String(
+    Number(guide.dataset.gnHelpLinksRemoved||0)+removed);
+   var steps=guide.querySelectorAll('.gn-help-step');
    if(!steps.length)return;
    var names=['book','history','search','bookmark','download','settings'];
    var svgPaths={
