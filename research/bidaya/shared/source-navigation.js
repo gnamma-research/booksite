@@ -1,9 +1,9 @@
 (()=>{
- const params=new URLSearchParams(location.search),edition=params.get('edition')==='law'?'law':'human-life',scope=params.get('scope')==='reservoir'?'reservoir':'pilot';
+ const params=new URLSearchParams(location.search),edition=params.get('edition')==='human-life'?'human-life':'law',scope=params.get('scope')==='reservoir'?'reservoir':'pilot';
  const returnUrl=new URL('../'+edition+'/'+(scope==='reservoir'?'reservoir.html':''),location.href);
  const nav=document.createElement('nav');nav.className='source-edition-nav';nav.setAttribute('aria-label','Edition and sources');
  const back=document.createElement('a');back.href=returnUrl;back.textContent='← '+(edition==='law'?'Law and Legal Reasoning':'Law and Human Life');nav.append(back);
- for(const [id,label]of [['law','I · Law'],['human-life','II · Human life']]){const a=document.createElement('a');const u=new URL(location.href);u.searchParams.set('edition',id);a.href=u;a.dataset.sourceEdition=id;a.textContent=label;if(id===edition)a.setAttribute('aria-current','page');nav.append(a);}
+ for(const [id,label]of [['law','I · Law']]){const a=document.createElement('a');const u=new URL(location.href);u.searchParams.set('edition',id);a.href=u;a.dataset.sourceEdition=id;a.textContent=label;if(id===edition)a.setAttribute('aria-current','page');nav.append(a);}
  document.body.prepend(nav);
  // Restore exact page positions when switching editions within the shared viewer.
  if(typeof sourceUnit!=='undefined'){
