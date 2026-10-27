@@ -21,8 +21,8 @@ texts:[
  {heading:"Tafsīr",items:[{name:"al-Baḥr al-Madīd",href:"texts/ibn-ajiba/al-bahr-al-madid/"}]},
  {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"}]}
 ],
-essays:[{items:[{name:"Ibn Rushd and the craft of legal reasoning",href:"essays/ibn-rushd-method/"}]}],
-research:[{items:[{name:"Bidāya–Ḍarūrī: law and practical discernment",href:"research/usul-law-rushd/"}]}],
+essays:[],
+research:[{items:[{name:"Bidāyat al-Mujtahid · Edition I: Law and Legal Reasoning",href:"research/bidaya/law/"}]}],
 about:[{items:[
  {name:"Purpose & approach",href:"about/purpose/"},
  {name:"Sources & editorial method",href:"docs/source-and-licenses.html"}
