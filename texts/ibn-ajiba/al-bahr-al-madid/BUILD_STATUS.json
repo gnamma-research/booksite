@@ -1,0 +1,414 @@
+{
+  "status": "Publication interrupted by unavailable execution environment; this branch is a checkpoint, not a complete deployed site.",
+  "date": "2026-10-27",
+  "target": "texts/ibn-ajiba/al-bahr-al-madid/",
+  "preparedFiles": [
+    {
+      "path": "fonts/noto-naskh-arabic-regular.woff2",
+      "sha": "24b0971dfcd8b5a5ce4a03b27ef13cdf7caf64b9",
+      "size": 70592
+    },
+    {
+      "path": "core.js",
+      "sha": "fd2fabfcd099130fd42004460a397eb09976ec44",
+      "size": 4343
+    },
+    {
+      "path": "data/aliases.js",
+      "sha": "1a187ec6d58cf3ba568ce44bd18a32129eaeabb1",
+      "size": 2697
+    },
+    {
+      "path": "data/catalog.js",
+      "sha": "9ea5679a6f1773059c6bf43a2fcd264cc3fbce33",
+      "size": 112991
+    },
+    {
+      "path": "data/dictionary.js",
+      "sha": "93a122e3187cd18f84948821528208551e4d2458",
+      "size": 1871964
+    },
+    {
+      "path": "data/edition.js",
+      "sha": "024876eee1896254fbb6a000a6c79c60d76263fb",
+      "size": 2116
+    },
+    {
+      "path": "data/guides.js",
+      "sha": "19d6b7f523090aad9ac9a759fdd71a8cd99eff1a",
+      "size": 172595
+    },
+    {
+      "path": "data/indices.js",
+      "sha": "5d3dbce4f87bc646c69a120f57e96717cabd7fb1",
+      "size": 366028
+    },
+    {
+      "path": "data/lexicon.js",
+      "sha": "a14ec722b2f39eabc0129d3d75fe4b8b4e0009f0",
+      "size": 11630
+    },
+    {
+      "path": "data/notes.js",
+      "sha": "0f17775e751ae3c75eaba4ee5b0d9e94e2ff0ad5",
+      "size": 724474
+    },
+    {
+      "path": "data/passages-00.js",
+      "sha": "83ee21fc54632b80f3c5b4bdada9334087e720af",
+      "size": 316705
+    },
+    {
+      "path": "data/passages-01.js",
+      "sha": "c6389488a0797588ffade6777fad35081e78d681",
+      "size": 165565
+    },
+    {
+      "path": "data/passages-02.js",
+      "sha": "7f9f301c454c1c980426a05029da6499997967ce",
+      "size": 166561
+    },
+    {
+      "path": "data/passages-03.js",
+      "sha": "5fae779805bd413a5d7ea2ed25b07238721e3462",
+      "size": 125387
+    },
+    {
+      "path": "data/passages-04.js",
+      "sha": "023bb789502eb77594dead8a2dad75c2ec24a2f3",
+      "size": 144860
+    },
+    {
+      "path": "data/passages-05.js",
+      "sha": "e87e4faa985133bb8caa44d85b9bfe2292ba6586",
+      "size": 129226
+    },
+    {
+      "path": "data/passages-06.js",
+      "sha": "c704b9de17dca251c63cda9b8f93b8cf6b5143ed",
+      "size": 131270
+    },
+    {
+      "path": "data/passages-07.js",
+      "sha": "7805257435c81dceb49cf90041cc806d5e983bea",
+      "size": 117506
+    },
+    {
+      "path": "data/passages-08.js",
+      "sha": "13a414ac28dcfaef3b70c4236b71913a5cafa9d1",
+      "size": 123944
+    },
+    {
+      "path": "data/passages-09.js",
+      "sha": "713690afd9e16d761e1da9baeaef2717c3951028",
+      "size": 205828
+    },
+    {
+      "path": "data/passages-10.js",
+      "sha": "8811124141c521a080925b0ff06518a7290c4f4a",
+      "size": 216459
+    },
+    {
+      "path": "data/passages-11.js",
+      "sha": "7fe9f64b49d43c8f22b82609c15fb30f438947e4",
+      "size": 211534
+    },
+    {
+      "path": "data/passages-12.js",
+      "sha": "58b7bd3c72af4b7fdab71a60b6bb3f306b1c8bd0",
+      "size": 140466
+    },
+    {
+      "path": "data/passages-13.js",
+      "sha": "23ce897cc7f336ea903106f6b9c211fc6bdd4a2f",
+      "size": 177807
+    },
+    {
+      "path": "data/passages-14.js",
+      "sha": "315a4665ef45e1b32ae58a080a41d4e9ec541f8c",
+      "size": 144974
+    },
+    {
+      "path": "data/passages-15.js",
+      "sha": "3d4730b7efa156a535bed4ee05290a2154e51fb9",
+      "size": 188986
+    },
+    {
+      "path": "data/passages-16.js",
+      "sha": "f13179f51cfbe9ed7a757a1b0198f7d93e3fc3fa",
+      "size": 142911
+    },
+    {
+      "path": "data/passages-17.js",
+      "sha": "3eeca5ea5fa898265b48be91c3bedba94e0e1ecb",
+      "size": 200228
+    },
+    {
+      "path": "data/passages-18.js",
+      "sha": "4079aaeed1c29ccc628b2d3d2052f99f5da5ece9",
+      "size": 162284
+    },
+    {
+      "path": "data/passages-19.js",
+      "sha": "4e768de74c8da935e1ac6c46afa4571c78f8418c",
+      "size": 233504
+    },
+    {
+      "path": "data/passages-20.js",
+      "sha": "9f0b672307e8d0edd87936c0313e9a99edc67042",
+      "size": 199812
+    },
+    {
+      "path": "data/passages-21.js",
+      "sha": "41e3d1efe4776e9da5294fa2cf8928a0264fa9ac",
+      "size": 124710
+    },
+    {
+      "path": "data/passages-22.js",
+      "sha": "cd2c8d7cb6fea2e5114075e30123c30b2af03d9c",
+      "size": 177393
+    },
+    {
+      "path": "data/passages-23.js",
+      "sha": "97faef676b3b9730e5003f99620af6943330dd10",
+      "size": 197191
+    },
+    {
+      "path": "data/passages-24.js",
+      "sha": "adb83123b4da4d18933008a6205e38336d8f9bf3",
+      "size": 217857
+    },
+    {
+      "path": "data/passages-25.js",
+      "sha": "89afab1f612936356ea36fc80cebbe8eeb3ad6f7",
+      "size": 123999
+    },
+    {
+      "path": "data/passages-26.js",
+      "sha": "46735550c7a1b2823d1e7d5b9fab7b1ad55ebb55",
+      "size": 140341
+    },
+    {
+      "path": "data/passages-27.js",
+      "sha": "71362b5cbcc92c5d57566bf3032582affb2b0178",
+      "size": 138274
+    },
+    {
+      "path": "data/passages-28.js",
+      "sha": "1ba22dfddeb63bd76773dbc813c5fcd59aea003e",
+      "size": 147400
+    },
+    {
+      "path": "data/passages-29.js",
+      "sha": "a3f137fdf783b80028daa370d22ddbcccda8dfa0",
+      "size": 210431
+    },
+    {
+      "path": "data/passages-30.js",
+      "sha": "11a11e8ccab9f669efa480857109e7c29ec54e20",
+      "size": 234073
+    },
+    {
+      "path": "data/passages-31.js",
+      "sha": "b4131fb924633e43fbd14ec83ee3b32fd7d05aa4",
+      "size": 124172
+    },
+    {
+      "path": "data/passages-32.js",
+      "sha": "6e8fa274c38b585053f2925b63fdafd4163420b1",
+      "size": 182621
+    },
+    {
+      "path": "data/passages-33.js",
+      "sha": "49733b160dff670d7a10fcd3753d724d7a2ef5bc",
+      "size": 144459
+    },
+    {
+      "path": "data/passages-34.js",
+      "sha": "c20d1f9da39d43d7bcc313d5fe4d2706bd3b9e85",
+      "size": 131230
+    },
+    {
+      "path": "data/passages-35.js",
+      "sha": "44e452fa2e8570ba8c0d4dc734ced81af2f25266",
+      "size": 103011
+    },
+    {
+      "path": "data/passages-36.js",
+      "sha": "2b968d3a7cfae591591d32f91c8355546ff2fd34",
+      "size": 124461
+    },
+    {
+      "path": "data/passages-37.js",
+      "sha": "cbfa5fdf6acb970dfd806530d1dad96f596f3836",
+      "size": 106150
+    },
+    {
+      "path": "data/passages-38.js",
+      "sha": "66066456dbe53dff9cbab8d81adcc2f863fd0ae1",
+      "size": 133042
+    },
+    {
+      "path": "data/questions.js",
+      "sha": "3754a9ca71b00c53ec49c9b181bcfc11fb2f80bc",
+      "size": 17628
+    },
+    {
+      "path": "data/reports.js",
+      "sha": "d6e9157a334687e4e1aa6fc815c7a5077a3d0f7d",
+      "size": 178831
+    },
+    {
+      "path": "data/search.js",
+      "sha": "72dd4a3f992157b5f91e5fa3e82d6422327d8420",
+      "size": 4708074
+    },
+    {
+      "path": "data/sources.js",
+      "sha": "36bc465a6cd04462360ee6dbcd5eff7ba936e0f9",
+      "size": 661286
+    },
+    {
+      "path": "edition-manifest.json",
+      "sha": "e6644fb5e66aad6727b78c75553df30f67e732d6",
+      "size": 2553
+    },
+    {
+      "path": "editions/37_Questions_Register_XVIII.csv",
+      "sha": "b33c0cad59af68d7a459af282cf9546c6d0becfa",
+      "size": 12387
+    },
+    {
+      "path": "editions/Editorial_Audit_and_Docket_XVIII.pdf",
+      "sha": "1b2caa873afa4ce0cd55c601421de3a27db89b0a",
+      "size": 84542
+    },
+    {
+      "path": "README.md",
+      "sha": "94ee5acb811c3dcf907bd73f408e5a68709af796",
+      "size": 1960
+    }
+  ],
+  "pendingFiles": [
+    {
+      "path": "app.js",
+      "size": 63183,
+      "sha256": "4e20ef4d4d9905300acb0d4159d3cd126d796a1ed711e6430da65d73a173f732"
+    },
+    {
+      "path": "editions/PDF_1_English_Critical.pdf",
+      "size": 8253566,
+      "sha256": "4b80863035aa4bbad59d4d156f20447a8b7a160392fac02ffd44f22209043b9b"
+    },
+    {
+      "path": "editions/PDF_2_Bilingual_Unvowelled.pdf",
+      "size": 10654327,
+      "sha256": "d8c131f5e5768e0f29832f978868b9775fd66d9a86bc21d58a85731229ac5c44"
+    },
+    {
+      "path": "editions/PDF_3_Bilingual_Source_Vowels.pdf",
+      "size": 11750484,
+      "sha256": "4488949126c3f7548e18ad64b94793b97e9cfb74656b37c2faa39b6dd44083b2"
+    },
+    {
+      "path": "editions/PDF_4_Arabic_Only.pdf",
+      "size": 3237854,
+      "sha256": "39239bafce1b7167cf957c956547196d665da41205e0d9ff1e1817967e594eae"
+    },
+    {
+      "path": "editions/Specialist_Review_Worksheet_XVIII.csv",
+      "size": 6305,
+      "sha256": "3a166a1c5d7fd4f2bb1b520e751443328be967dfe81d52034b2e176640c31033"
+    },
+    {
+      "path": "fonts/OFL-Noto-Naskh-Arabic.txt",
+      "size": 4383,
+      "sha256": "01dfc2cdf10c808ca391fccf49d364e562408d77c4e0dc278ed4d384c817a032"
+    },
+    {
+      "path": "fonts/OFL-Source-Serif-4.txt",
+      "size": 4401,
+      "sha256": "6eff752a37f2300fcb32b7ba29ffc771996f92da8251c2e6badaa3b4a05d7b63"
+    },
+    {
+      "path": "fonts/source-serif-4-normal.woff2",
+      "size": 427556,
+      "sha256": "4453d73855919eb67a8291bf2bad07782ecaf8af0e4e363d58948ff993209d51"
+    },
+    {
+      "path": "index.html",
+      "size": 3474,
+      "sha256": "da668e93df6f8c058bf0f5579aaaae58ede496765289cc10224c46147e9417b7"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "size": 269,
+      "sha256": "550fcb55c12ac93d26d15598476dfa3ee7f862aca992f391d9172c8f10b4ed0f"
+    },
+    {
+      "path": "mark.svg",
+      "size": 355,
+      "sha256": "e2bf6fa1960f17f60f4b0cacda2d9387dcc0a41a41681061aba03da81e88200c"
+    },
+    {
+      "path": "offline-files.json",
+      "size": 1735,
+      "sha256": "618e133f5e6db35476c2abc6ba28fb7f43bf1c5d2238d6bb537aae39871053a6"
+    },
+    {
+      "path": "offline-reader.zip",
+      "size": 5851018,
+      "sha256": "b7b0fd66f653f6a9388613f24fed11f50d57bdb6d1b01fc5fb987f18f913166f"
+    },
+    {
+      "path": "plain/surah-1.html",
+      "size": 191732,
+      "sha256": "b64e71417ed9c7c1ff0477f02cdc71d5fa43f5ce9d71a7b605aa00524d7c790b"
+    },
+    {
+      "path": "plain/surah-2.html",
+      "size": 1873669,
+      "sha256": "33d22638b67f5bf99d21d609689a6565df4f25ab228e687a6b88bf6b16834af1"
+    },
+    {
+      "path": "plain/surah-3.html",
+      "size": 1156912,
+      "sha256": "ebbe655de5d2a136fb4b0883dffad36db86ea3ea0883a9fbefa7a5a1932eae15"
+    },
+    {
+      "path": "plain/surah-4.html",
+      "size": 1099107,
+      "sha256": "73ae22dcedc0fac184e86021240702c5bbcfc76983ef0d3549e74e05a7ab4114"
+    },
+    {
+      "path": "style.css",
+      "size": 22717,
+      "sha256": "4505d3055bc45288d4d305a1eebed5caaecb9fc43950b05602324db44241f07b"
+    },
+    {
+      "path": "sw.js",
+      "size": 1658,
+      "sha256": "4f5bf3d68abbc5b761fea11011f104fa38efd0b2be2d53e781df1e49eb187232"
+    }
+  ],
+  "validation": {
+    "integrityChecksPassed": 22,
+    "searchCasesPassed": 10,
+    "deskImportChecksPassed": 5,
+    "browserVisualQA": "Pending",
+    "deployed": false
+  },
+  "scope": {
+    "passages": 389,
+    "englishSegments": 1565,
+    "translatorAnnotations": 209,
+    "cairoNotes": 241,
+    "reportDossiers": 48,
+    "sourceOccurrences": 352,
+    "criticalQuestions": 37,
+    "dictionaryTerms": 120,
+    "dictionaryOccurrences": 2937,
+    "addedVowelling": false
+  },
+  "resume": "Reconnect the original workspace. The completed site files are in ibn-ajiba-site/site/ and the publication manifest is ibn-ajiba-site/publication-files.json. Finish the pending uploads, refresh the current master before updating the catalogue or merging, then run live desktop/mobile checks. Keep Daruri files intact."
+}
