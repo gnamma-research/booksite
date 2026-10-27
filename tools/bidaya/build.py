@@ -10,6 +10,8 @@ from urllib.parse import unquote
 import json,re,hashlib,shutil,sys
 
 ROOT=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else Path(__file__).resolve().parents[2]
+if not (ROOT/'research/gnamma-private-2026-10-27/password.txt').is_file():
+ raise SystemExit('Private Edition II is mandatory. Supply the local private build inputs; do not publish an unprotected build.')
 REPO=Path(sys.argv[2]).resolve() if len(sys.argv)>2 else ROOT/'sites/gnamma-booksite'
 DEST=REPO/'research/bidaya'; SHARED=DEST/'shared'
 AUDIT=ROOT/'research/gnamma-integration-2026-10-27'
@@ -245,3 +247,6 @@ for scope in ['pilot','reservoir']:
 write(AUDIT/'content-parity.json',json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 write(SHARED/'content-parity.json',json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print({'destination':str(DEST),'files':sum(p.is_file() for p in DEST.rglob('*')),'canonical':[(x['scope'],x['original_studies'],x['text_preserved']) for x in parity]})
+import runpy
+runpy.run_path(str(ROOT/'research/gnamma-text-reader-2026-10-27/integrate.py'))
+runpy.run_path(str(ROOT/'research/gnamma-text-reader-2026-10-27/protect-edition.py'))
