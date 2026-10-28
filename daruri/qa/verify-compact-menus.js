@@ -66,7 +66,7 @@ test('reading-first Contents navigation preserves direct destinations and second
  assert.deepEqual(items.map(node=>node.attrs['data-route']),['reader','contents','bookmarks','index','glossary','applications','study','editions']);
  const labels=['Read','Contents','Reading Desk','Subject index','Dictionary','Bidāya applications','Guided study','Editions & downloads'];
  items.forEach((node,i)=>{assert.equal(node.tag,'button');assert.equal(node.attrs.type,'button');assert.ok(node.text().startsWith(labels[i]));assert.ok(node.hasClass('nav-item'));assert.ok(!node.hasClass('primary'));});
- assert.deepEqual(items.map(node=>node.find(child=>child.tag==='use')?.attrs.href),['#i-book','#i-toc','#i-library','#i-subject','#i-dictionary','#i-balance','#i-study',undefined]);
+ assert.deepEqual(items.map(node=>node.find(child=>child.tag==='use')?.attrs.href),['#i-book','#i-toc','#i-library','#i-subject','#i-dictionary','#i-balance','#i-study','#i-editions']);
  const headings=nav.children.filter(node=>node.hasClass('gn-nav-section-label')).map(node=>node.text());
  assert.deepEqual(headings,['Reference tools','Explore further']);
  const footer=byId('leftNav').find(node=>node.hasClass('gn-nav-footer-links'));
