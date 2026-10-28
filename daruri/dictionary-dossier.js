@@ -3,7 +3,7 @@
 (()=>{
 'use strict';
 if(window.GnammaDictionaryDossier)return;
-window.GnammaDictionaryDossier={version:'20261025-unified1'};
+window.GnammaDictionaryDossier={version:'20261028-compact1'};
 const base=document.currentScript?.src||new URL('dictionary-dossier.js',document.baseURI).href;
 const fullURL=new URL('full-dictionary-data.js?v=20261025-sinaa1',base).href;
 const $=(s,p=document)=>p.querySelector(s),$$=(s,p=document)=>[...p.querySelectorAll(s)];
@@ -171,6 +171,15 @@ function sourceCard(g,full){
    put(details,'p','',s.verification);
   }
  }
+ // Preserve every source paragraph and note; keep the first view compact.
+ const fold=el('details','gn-ds-source-disclosure');
+ const label=put(fold,'summary','gn-ds-source-summary');
+ const title=put(label,'span','gn-ds-source-label',g.author);
+ put(label,'span','gn-ds-source-meta',g.work+' · '+when.era+' · '+when.date);
+ put(label,'span','gn-ds-source-count',g.articles.length+' full · '+g.short.length+' short');
+ const content=el('div','gn-ds-source-content');
+ while(card.firstChild)content.append(card.firstChild);
+ fold.append(content);card.append(fold);
  return card;
 }
 function renderSources(host,term,full,mode){
@@ -182,8 +191,18 @@ function renderSources(host,term,full,mode){
  put(host,'p','gn-ds-overview',groups.length+' attributed '+(groups.length===1?'source':'sources')+
   ' · '+articles+' complete '+(articles===1?'article':'articles')+
   ' · '+quotes+' selected short '+(quotes===1?'extract':'extracts'));
- put(host,'p','gn-ds-help',
+ const guide=put(host,'details','gn-ds-guidance');
+ put(guide,'summary','','About the evidence');
+ put(guide,'p','gn-ds-help',
   'Each dictionary is dated relative to Ibn Rushd (d. 595 AH / 1198 CE). Arabic and English extracts are visible below. Expand the complete article within its own source. Independent quotations are not automatically summaries of that article.');
+ const controls=put(host,'div','gn-ds-tools');
+ const expand=put(controls,'button','gn-ds-expand-all','Expand sources');expand.type='button';
+ expand.addEventListener('click',()=>{
+  const sources=[...host.querySelectorAll('.gn-ds-source-disclosure')];
+  const opening=sources.some(node=>!node.open);
+  for(const source of sources)source.open=opening;
+  expand.textContent=opening?'Collapse sources':'Expand sources';
+ });
  if(!groups.length)put(host,'p','gn-ds-empty','No historical dictionary source is available for this term.');
  for(const g of groups)host.append(sourceCard(g,full));
  host.dataset.gnDossierReady=term;
@@ -198,6 +217,30 @@ function renderSources(host,term,full,mode){
  }
 }
 
+function popupNavigation(term){
+ const body=$('#detailContent');if(!body)return;
+ const previous=body.querySelector('.gn-ds-popup-nav');
+ if(previous?.dataset.gnDsTerm===term)return;
+ previous?.remove();
+ const nav=el('nav','gn-ds-popup-nav');nav.dataset.gnDsTerm=term;
+ nav.setAttribute('aria-label','Jump within dictionary entry');
+ for(const [id,title] of [['lex-meaning','Meaning'],['lex-sources','Sources'],['lex-author','In the text']]){
+  const button=put(nav,'button','gn-ds-jump',title);
+  button.type='button';button.dataset.gnDsJump=id;
+ }
+ const full=put(nav,'a','gn-ds-fullpage','Full page');
+ full.href='dictionary.html#term='+encodeURIComponent(term);
+ full.dataset.dictionaryAtlas=term;
+ full.setAttribute('aria-label','Open the full-page dictionary entry, keeping return to reading');
+ const header=body.querySelector('.lex-header');
+ if(header)header.after(nav);else body.prepend(nav);
+}
+function jumpInsidePopup(id){
+ const body=$('#detailContent'),destination=document.getElementById(id);
+ if(!body||!destination||!body.contains(destination))return;
+ const top=body.scrollTop+destination.getBoundingClientRect().top-body.getBoundingClientRect().top-62;
+ body.scrollTo({top:Math.max(0,top),behavior:'instant'});
+}
 function upgrade(host,term,mode){
  if(!host||!term||host.dataset.gnDossierTerm===term)return;
  host.dataset.gnDossierTerm=term;
@@ -217,6 +260,7 @@ function upgrade(host,term,mode){
    h.insertAdjacentElement('afterend',el('p','gn-ds-usage-note',
     'Selected illustrative passages from Ibn Rushd, not an exhaustive count of every inflected occurrence.'));
   if(usage)window.GnammaFullDictionaryContext?.enhanceUsage?.(usage,term);
+  popupNavigation(term);
  }else{
   const card=host.closest('.lex-card');
   if(card){
@@ -245,7 +289,9 @@ function upgrade(host,term,mode){
 }
 function sync(){
  const overlay=$('#infoOverlay'),body=$('#detailContent');
- if(overlay&&!overlay.hidden&&body&&/DICTIONARY|LEXICAL|GLOSSARY/i.test($('#detailEyebrow')?.textContent||'')){
+ const dictionary=!!(overlay&&!overlay.hidden&&body&&/DICTIONARY|LEXICAL|GLOSSARY/i.test($('#detailEyebrow')?.textContent||''));
+ overlay?.classList.toggle('gn-ds-dictionary-open',dictionary);
+ if(dictionary){
   const term=$('#detailTitle',body)?.textContent?.trim();
   if(term)upgrade($('#lex-sources',body),term,'popup');
  }
@@ -294,11 +340,46 @@ function styles(){
  '.gn-ds-edition{font:12px/1.6 system-ui,sans-serif}.gn-ds-edition summary{cursor:pointer;color:var(--accent,inherit);padding:8px 0}',
  '.gn-ds-loading,.gn-ds-error{font:13px/1.55 system-ui,sans-serif}.gn-ds-retry{min-height:42px}',
  '@media(max-width:660px){.gn-ds-source{padding:12px}.gn-ds-parallel{grid-template-columns:minmax(0,1fr);gap:8px}.gn-ds-ar{font-size:21px!important}}',
+
+ /* Minimal dictionary: one modal scroll area and source disclosures, without altering any evidence. */
+ '#infoOverlay.gn-ds-dictionary-open .detail-dialog{display:flex;flex-direction:column;box-sizing:border-box;overflow:hidden;padding:0!important;width:min(760px,calc(100vw - 18px));max-height:calc(100dvh - 18px)}',
+ '#infoOverlay.gn-ds-dictionary-open .detail-top{box-sizing:border-box;position:relative;flex:0 0 auto;min-height:50px;padding:8px 18px;background:var(--surface);border-bottom:1px solid var(--line)}',
+ '#infoOverlay.gn-ds-dictionary-open #detailContent{box-sizing:border-box;min-width:0;min-height:0;flex:1 1 auto;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-gutter:stable;padding:12px clamp(14px,3vw,25px) 22px}',
+ '#infoOverlay.gn-ds-dictionary-open .lex-header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:3px 15px}',
+ '#infoOverlay.gn-ds-dictionary-open .lex-header h2{margin:0;font-size:clamp(23px,3vw,29px)}',
+ '#infoOverlay.gn-ds-dictionary-open .lex-header .arabic-detail{font-size:clamp(23px,3vw,28px);margin:0}',
+ '#infoOverlay.gn-ds-dictionary-open .gn-ds-popup-nav{position:sticky;top:-12px;z-index:5;display:flex;gap:5px;align-items:stretch;margin:10px 0 12px;padding:7px 0;border-bottom:1px solid var(--line);background:var(--surface)}',
+ '#infoOverlay.gn-ds-dictionary-open .gn-ds-jump,#infoOverlay.gn-ds-dictionary-open .gn-ds-fullpage{box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-width:0;min-height:42px;padding:6px 9px;border:1px solid var(--border);border-radius:7px;font:600 12px/1.3 var(--sans,system-ui);white-space:nowrap;text-decoration:none;background:var(--paper);color:var(--text);cursor:pointer}',
+ '#infoOverlay.gn-ds-dictionary-open .gn-ds-fullpage{margin-inline-start:auto;color:var(--accent)}',
+ '.gn-ds-source{padding:0!important;overflow:hidden;background:var(--paper,var(--surface));border:1px solid var(--line,var(--border))}',
+ '.gn-ds-source-summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:8px;align-items:center;padding:11px 13px 11px 32px;min-height:56px;position:relative;box-sizing:border-box;color:var(--text,var(--ink,inherit))}',
+ '.gn-ds-source-summary::-webkit-details-marker{display:none}.gn-ds-source-summary::marker{content:""}',
+ '.gn-ds-source-summary::before{content:"›";position:absolute;inset-inline-start:12px;top:50%;transform:translateY(-50%);font:600 22px/1 var(--sans,system-ui);color:var(--accent)}',
+ '.gn-ds-source-disclosure[open]>.gn-ds-source-summary{background:var(--accent-soft,var(--surface-alt));border-bottom:1px solid var(--line,var(--border))}',
+ '.gn-ds-source-disclosure[open]>.gn-ds-source-summary::before{transform:translateY(-50%) rotate(90deg)}',
+ '.gn-ds-source-label{font:600 16px/1.3 var(--serif,Georgia,serif);grid-column:1;min-width:0}',
+ '.gn-ds-source-meta{font:12px/1.5 var(--sans,system-ui);color:var(--text-soft,var(--muted,inherit));grid-column:1;overflow-wrap:anywhere}',
+ '.gn-ds-source-count{font:600 11px/1.4 var(--sans,system-ui);color:var(--text-soft,var(--muted,inherit));white-space:nowrap;grid-column:2;grid-row:1/3}',
+ '.gn-ds-source-content{padding:2px 13px 14px;min-width:0}.gn-ds-source-content>.gn-ds-source-head{margin:10px 0 0}',
+ '.gn-ds-heading{font:600 18px/1.3 var(--serif,Georgia,serif);margin:7px 0}',
+ '.gn-ds-overview{font:12px/1.5 var(--sans,system-ui)!important;color:var(--text-soft,var(--muted,inherit))!important;margin:4px 0 7px!important}',
+ '.gn-ds-tools{display:flex;justify-content:flex-end;margin:4px 0}',
+ '.gn-ds-expand-all{min-height:38px;border:1px solid var(--border);border-radius:7px;background:var(--paper);color:var(--text);font:600 12px/1.3 var(--sans,system-ui);padding:6px 10px;cursor:pointer}',
+ '.gn-ds-guidance{font:12px/1.55 var(--sans,system-ui);color:var(--text-soft,var(--muted,inherit))}.gn-ds-guidance>summary{cursor:pointer;min-height:34px;display:flex;align-items:center;color:var(--accent)}',
+ '.gn-ds-guidance .gn-ds-help{font:12px/1.55 var(--sans,system-ui)!important;margin:3px 0 8px!important}',
+ '.gn-ds-source-summary:focus-visible,.gn-ds-full-summary:focus-visible,.gn-ds-guidance>summary:focus-visible,.gn-ds-expand-all:focus-visible,.gn-ds-jump:focus-visible,.gn-ds-fullpage:focus-visible{outline:2px solid var(--accent);outline-offset:2px}',
+ '@media(max-width:600px){#infoOverlay.gn-ds-dictionary-open .detail-dialog{max-height:calc(100dvh - 12px)}#infoOverlay.gn-ds-dictionary-open .detail-top{padding:7px 11px}#infoOverlay.gn-ds-dictionary-open #detailContent{padding:9px 12px calc(14px + env(safe-area-inset-bottom,0px))}#infoOverlay.gn-ds-dictionary-open .gn-ds-popup-nav{top:-9px;gap:4px}#infoOverlay.gn-ds-dictionary-open .gn-ds-jump,#infoOverlay.gn-ds-dictionary-open .gn-ds-fullpage{font-size:11px;padding:6px 7px}.gn-ds-source-count{font-size:10px}}',
+ '@media(max-width:360px){#infoOverlay.gn-ds-dictionary-open .gn-ds-popup-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}#infoOverlay.gn-ds-dictionary-open .gn-ds-jump,#infoOverlay.gn-ds-dictionary-open .gn-ds-fullpage{font-size:10px;white-space:normal;text-align:center}}',
  '@media print{.gn-ds-full:not([open]){display:none}.gn-ds-source{break-inside:avoid-page}}'
  ].join('\n');
  document.head.append(st);
 }
 function start(){
+ document.addEventListener('click',event=>{
+  const button=event.target.closest?.('[data-gn-ds-jump]');
+  if(!button||!button.closest('#infoOverlay.gn-ds-dictionary-open'))return;
+  event.preventDefault();jumpInsidePopup(button.dataset.gnDsJump);
+ });
  styles();sync();
  const observer=new MutationObserver(schedule);
  for(const sel of ['#detailContent','#lexArticle','#mainContent']){

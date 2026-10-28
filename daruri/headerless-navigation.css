@@ -827,3 +827,39 @@
     outline-offset:2px;
   }
 }
+
+
+/* 28 October: match the Editions destination to the existing Contents glyph
+   geometry at desktop, portrait and landscape widths. Palette variables remain
+   live: icons use currentColor, never fixed paints. */
+@media screen {
+  #leftNav .primary-nav > .nav-item {
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  #leftNav .primary-nav > .nav-item > svg.icon {
+    display:block;
+    box-sizing:content-box;
+    width:18px;
+    height:18px;
+    min-width:18px;
+    min-height:18px;
+    flex:0 0 18px;
+    margin:0;
+    padding:0;
+    color:inherit;
+    fill:none;
+    stroke:currentColor;
+    stroke-width:1.8;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+  #leftNav .primary-nav > .nav-item[data-route="editions"] {
+    padding-inline-start:12px;
+  }
+  #leftNav .primary-nav > .nav-item:focus-visible {
+    outline:2px solid var(--accent);
+    outline-offset:2px;
+  }
+}

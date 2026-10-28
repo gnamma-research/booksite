@@ -21,7 +21,7 @@
     const dossierScript=document.createElement('script');
     dossierScript.dataset.gnDictionaryDossier='1';
     dossierScript.async=false;
-    dossierScript.src=new URL('dictionary-dossier.js?v=20261025-unified1',
+    dossierScript.src=new URL('dictionary-dossier.js?v=20261028-compact1',
       document.currentScript?.src||document.baseURI).href;
     document.head.append(dossierScript);
   }
