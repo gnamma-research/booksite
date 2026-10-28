@@ -91,8 +91,8 @@ assert(dossier.includes('function groupsFor('),'Sources must be grouped by dicti
 assert(dossier.includes('Read complete article'),'Complete articles must expand inside their own source');
 assert(dossier.includes('Before Ibn Rushd')&&dossier.includes('After Ibn Rushd'),'Historical dating must be visible');
 assert(dossier.includes('gn-ds-three-sections'),'Three-section layout must be enabled');
-assert(html.includes('dictionary-dossier.js?v=20261025-unified1'));
-assert(read('quran-context-ui.js').includes('dictionary-dossier.js?v=20261025-unified1'));
+assert(html.includes('dictionary-dossier.js?v=20261028-compact1'));
+assert(read('quran-context-ui.js').includes('dictionary-dossier.js?v=20261028-compact1'));
 
 for(const phrase of ['#mainContent .glossary-card','#lexArticle .lex-card','detailContent','gn-fd-parallel','source_references','Hide complete historical article'])
   assert(ui.includes(phrase),phrase);
