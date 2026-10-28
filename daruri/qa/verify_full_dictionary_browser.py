@@ -124,7 +124,8 @@ def responsive_icons_and_colours(browser, width, height, label):
     page.on('pageerror',lambda error:errors.append(str(error)))
     try:
         page.goto(BASE+'index.html#editions',wait_until='domcontentloaded',timeout=60000)
-        page.locator('.gn-editions .gn-ed-icon-options:visible').first.wait_for(timeout=30000)
+        page.locator('.gn-editions .gn-ed-reading-custom > summary').click(timeout=30000)
+        page.locator('.gn-editions .gn-ed-icon-options:visible').first.wait_for(timeout=15000)
         expect(page.locator('#leftNav .primary-nav [data-route="editions"] svg.icon use')).to_have_attribute('href','#i-editions')
         assert page.locator('symbol#i-editions').count()==1
         for theme,palette in [('light','default'),('dark','default'),('light','almohad'),('dark','gnamma'),('dark','nasrid'),('light','zellij')]:
