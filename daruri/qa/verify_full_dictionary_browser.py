@@ -123,9 +123,18 @@ def responsive_icons_and_colours(browser, width, height, label):
     errors=[]
     page.on('pageerror',lambda error:errors.append(str(error)))
     try:
-        page.goto(BASE+'#editions',wait_until='domcontentloaded',timeout=60000)
-        page.get_by_role('tab',name='Reading edition').click(timeout=30000)
-        page.locator('.gn-editions .gn-ed-reading-custom > summary').click(timeout=30000)
+        page.goto(BASE+'index.html#glossary',wait_until='domcontentloaded',timeout=60000)
+        page.locator('#mainContent .glossary-card').first.wait_for(timeout=30000)
+        page.locator('#leftNav [data-route="editions"]').dispatch_event('click')
+        page.locator('#mainContent .gn-editions').wait_for(state='attached',timeout=30000)
+        if not page.locator('#mainContent .gn-edition-nav, #mainContent .gn-ed-edition-nav').first.is_visible():
+            diagnostics=page.evaluate(\'''()=>({hash:location.hash,body:document.body.className,
+                main:document.getElementById("mainContent")?.outerHTML.slice(0,650),
+                classes:[...document.querySelectorAll(".gn-editions")].map(e=>({display:getComputedStyle(e).display,
+                parent:getComputedStyle(e.parentElement).display,parentClass:e.parentElement.className}))})\''')
+            raise AssertionError('Editions route not visible: '+str(diagnostics))
+        page.get_by_role('tab',name='Reading edition').click(timeout=15000)
+        page.locator('.gn-editions .gn-ed-reading-custom > summary').click(timeout=15000)
         page.locator('.gn-editions .gn-ed-icon-options:visible').first.wait_for(timeout=15000)
         expect(page.locator('#leftNav .primary-nav [data-route="editions"] svg.icon use')).to_have_attribute('href','#i-editions')
         assert page.locator('symbol#i-editions').count()==1
