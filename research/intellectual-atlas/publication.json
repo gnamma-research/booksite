@@ -1,0 +1,20 @@
+{
+  "title": "Texts in Time · Islamic Intellectual Atlas",
+  "revision": "integrated-2-2026-10-28",
+  "status": "working research",
+  "entries": 295,
+  "textual_relationships": 286,
+  "displayed_political_periods": 45,
+  "displayed_events": 36,
+  "individual_reign_rows": 0,
+  "pdf_pages": {
+    "overview": 15,
+    "reference": 204
+  },
+  "downloads": {
+    "Islamic_Intellectual_Timeline.pdf": "f75eba18a18b04a3a443a0f6a097ba05013179219ae5eafadcdb5fa5513235ba",
+    "Islamic_Timeline_Overview.pdf": "346e2cf5efcca1943d00361d7fcd8ca4cbf26b6510a24aa1417c0659da4258c8",
+    "Islamic_Timeline_Website_Package.zip": "e59c58abe950bd1611ebbd87b731cba55768be6a79be562f0eb8c65101e1391c",
+    "intellectual-atlas-data.json": "791a47a523d5da61483981d7b5903c93661443546058b40d3af5a7468b56c5da"
+  }
+}

@@ -24,7 +24,7 @@ This is the **library repository**, not the al-Mustaṣfā-only project.
 /texts/{author}/{work}/ Author/work-specific reader, data and editorial evidence
 /arabic/               Shared Arabic transcription (legacy root retained)
 /essays/               Essay collection; scaffold only
-/research/             Research and dossiers; scaffold only
+/research/             Comparative studies and evidence-linked research atlases
 /docs/                 Collection-wide editorial policy
 /assets/               Shared catalog stylesheet
 ```
@@ -64,3 +64,17 @@ See [branding and backgrounds](docs/GNAMMA_BRANDING_AND_BACKGROUNDS.md). The sce
 The homepage and category screens use a five-icon dock centred at the bottom. Tapping Texts, Essays, Research or About opens a small translucent list immediately above the dock, without hiding the mountain landscape. The list includes small category titles and, for Texts, waterhole-dot bullets and three scholarly groups: Uṣūl al-fiqh, Tafsīr, Kalām. Icons remain text-free; their aria-labels support assistive technology. Tapping the same icon, the Home icon, or the landscape closes the list. The category URL updates so back/forward navigation works. Static HTML lists remain as an accessible no-JavaScript fallback.
 
 **Bidāya–Ḍarūrī** is under **Research**, linked to the comparative legal-method study, not under Texts. The standalone al-Ḍarūrī fī Uṣūl al-Fiqh reader remains under Uṣūl. The old texts/ibn-rushd/bidayat-al-mujtahid/ preview remains available at its original address but is no longer in the catalogue. Individual books retain their own native reading apparatus and background themes; essays/research retain the full scholarly workspace.
+
+## Texts in Time · Islamic Intellectual Atlas (28 October 2026)
+
+[Open the research atlas](research/intellectual-atlas/). The integrated
+chronology places political periods, historical events and scholarly works on
+one calendar axis. It preserves 295 catalogue entries and 286 qualified textual
+relationships, with sources, dating notes and a critical audit. The display
+contains 45 political periods and 36 events, without individual reign rows.
+
+The Research menu links to the atlas alongside the Bidāya study. Its expandable
+introduction provides the overview and complete reference PDFs, a JSON register,
+and an offline/source package. This is selective, revisable research; the
+evidence and uncertainties remain part of the published records. See the
+[atlas maintenance notes](research/intellectual-atlas/README.md).

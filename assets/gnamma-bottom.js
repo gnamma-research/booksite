@@ -22,7 +22,10 @@ texts:[
  {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"}]}
 ],
 essays:[],
-research:[{items:[{name:"Bidāyat al-Mujtahid · Edition I: Law and Legal Reasoning",href:"research/bidaya/law/"}]}],
+research:[{items:[
+ {name:"Bidāyat al-Mujtahid · Edition I: Law and Legal Reasoning",href:"research/bidaya/law/"},
+ {name:"Texts in Time · Islamic Intellectual Atlas",href:"research/intellectual-atlas/"}
+]}],
 about:[{items:[
  {name:"Purpose & approach",href:"about/purpose/"},
  {name:"Sources & editorial method",href:"docs/source-and-licenses.html"}
