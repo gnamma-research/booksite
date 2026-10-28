@@ -2729,6 +2729,231 @@
       "type": "research",
       "accessed": "2026-10-28",
       "note": "Reports composition 1390 AH and 1395 AH; no precise month verified in this audit."
+    },
+    {
+      "id": "TH01",
+      "author": "M. Sait Özervarlı",
+      "title": "TEHZÎBÜ’l-MANTIK ve’l-KELÂM, TDV İslâm Ansiklopedisi",
+      "url": "https://islamansiklopedisi.org.tr/tehzibul-mantik-vel-kelam",
+      "note": "Composition 789 AH; logic versus kalām scope; extensive catalogue of commentaries and glosses; bibliographical reports of Sanandajī and Gelenbevī.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH02",
+      "author": "Mehmet Zahit Tiryaki",
+      "title": "Sa‘deddin Taftazânî’nin Tehzîbü’l-mantık İsimli Eseri: Sunuş, Tahkik, Tercüme (2012)",
+      "url": "https://dergipark.org.tr/en/pub/divan/article/273515",
+      "note": "Critical edition and analysis of the logic section, completed 789 AH; majority of commentaries concern logic.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH03",
+      "author": "Iranian manuscript catalogue (Fanhā)",
+      "title": "Tahdhīb al-manṭiq, manuscript and commentary inventory",
+      "url": "https://fahares.net/works/18182-%D8%AA%D9%87%D8%B0%DB%8C%D8%A8-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82",
+      "note": "Records 789 AH, early commentary chains, and distinct Yazdī works; index includes manuscript descriptions.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH04",
+      "author": "Princeton University Library",
+      "title": "Ḥāshiyat Mullā Jalāl bar Tahdhīb-i manṭiq (1496 manuscript)",
+      "url": "https://digital-collections.princeton.edu/i/%D8%AD%D8%A7%D8%B4%D9%8A%D8%A9-%D9%85%D9%84%D8%A7-%D8%AC%D9%84%D8%A7%D9%84-%D8%A8%D8%B1-%D8%AA%D9%87%D8%B0%D9%8A%D8%A8/item/610573e9-0bde-419d-a173-0577fa735457/viewer/2",
+      "note": "Surviving copy dated 1496 of Dawwānī's commentary; manuscript date does not equal composition date.",
+      "type": "manuscript/catalogue",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH05",
+      "author": "Princeton University Library",
+      "title": "Ḥāshiya ʿalā Sharḥ al-Dawwānī ʿalā al-Tahdhīb (Saʿīdī)",
+      "url": "https://digital-collections.princeton.edu/i/%D8%AD%D8%A7%D8%B4%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%B4%D8%B1%D8%AD-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%86%D9%8A-%D8%B9%D9%84%D9%89/item/56da8883-c844-432e-91f0-c65e94ccce66/viewer/9",
+      "note": "Manuscript dated 1667; explicitly on Dawwānī's commentary on the logic part. 1667 is a copy date, not Saʿīdī's composition date.",
+      "type": "manuscript/catalogue",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH06",
+      "author": "Mullā ʿAbd Allāh Study Institute",
+      "title": "Critical manuscript account of Yazdī's Ḥāshiya on Tahdhīb",
+      "url": "https://www.molaabdellah.ir/index.php/2maghalat/280-1356",
+      "note": "Reports completion in Najaf in 967 AH in some authorial colophons, and direct glossing of Taftāzānī.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH07",
+      "author": "Al-Req manuscript catalogue",
+      "title": "Yazdī: disputed death dates and works",
+      "url": "https://app.alreq.com/ar/Authors/Author/245a8573-723f-4869-e087-08d7902f2e12",
+      "note": "Records death 1015 AH in some references, 981 AH in others; do not present a settled death year.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH08",
+      "author": "Encyclopaedia Iranica",
+      "title": "ʿAbd al-Razzāq Lāhījī",
+      "url": "https://www.iranicaonline.org/articles/abd-al-razzaq-lahiji-11th-17th-century-theologian-and-philosopher/",
+      "note": "Lists Lāhījī's gloss on Yazdī on Tahdhīb; disputes traditional early death (1051 AH) and cautiously notes 1072/1661-62.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH09",
+      "author": "Mullā ʿAbd Allāh Study Institute",
+      "title": "Lāhījī's Persian Sharḥ Tahdhīb al-manṭiq edition",
+      "url": "https://www.molaabdellah.ir/ar/index.php/gozaresh/166-1626",
+      "note": "Describes the Persian direct commentary on the logic section, separately from the gloss on Yazdī.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH10",
+      "author": "Egyptian Dār al-Iftāʾ",
+      "title": "The scholar al-Khubayṣī and al-Tadhhīb fi sharḥ al-Tahdhīb",
+      "url": "https://www.dar-alifta.org/ar/ourreligion/details/91/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D8%AE%D8%A8%D9%8A%D8%B5%D9%8A",
+      "note": "Identifies Egyptian teaching tradition, al-Khubayṣī (death approximately 1050 AH), and marginalia by al-Desūqī, Yāsīn al-Ḥimṣī, al-ʿAṭṭār.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH11",
+      "author": "Egyptian Dār al-Iftāʾ",
+      "title": "Ḥasan al-ʿAṭṭār: scholarly works",
+      "url": "https://www.dar-alifta.org/ar/ourreligion/details/34/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D9%85-%D8%AD%D8%B3%D9%86-%D8%A7%D9%84%D8%B9%D8%B7%D8%A7%D8%B1",
+      "note": "Explicitly identifies ʿAṭṭār's gloss on al-Khubayṣī's commentary in logic.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH12",
+      "author": "Dr. ʿAbd al-Wahhāb Abū Sulaymān Library",
+      "title": "Taqrīb al-marām fī sharḥ Tahdhīb al-kalām (1901 catalogue)",
+      "url": "https://drabusulaimanlibrary.com/bib/15085",
+      "note": "Al-Sanandajī and appended material; 1901 print described as 335-page volume. Beware appended texts not automatically glosses on Sanandajī.",
+      "type": "manuscript/catalogue",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH13",
+      "author": "National Library of Tunisia",
+      "title": "Taqrīb al-marām with Ḥāshiyat al-muḥākamāt and other appended texts",
+      "url": "https://www.bibliotheque.nat.tn/BNT/detailstatic.aspx?RSC_BASE=SYRACUSE&RSC_DOCID=5675475",
+      "note": "Print 2009 record; identifies al-Sanandajī and appended notes, not a verified chain of direct glosses.",
+      "type": "manuscript/catalogue",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH14",
+      "author": "ʿAbd Allāh al-Ḥabashī",
+      "title": "Jāmiʿ al-shurūḥ wa-l-ḥawāshī: Tahdhīb al-kalām list, p. 803",
+      "url": "https://ablibrary.net/book_content/b/14015/803",
+      "note": "Lists Ṣundūqlī Hūdā al-nāẓirīn completed 1261 AH, al-Sanandajī Taqrīb al-marām, and Jār Allāh's Tanqīḥ al-kalām printed 1312 AH.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH15",
+      "author": "TDV İslâm Ansiklopedisi",
+      "title": "İsferâyînî, İsâmüddin (d. 945/1538)",
+      "url": "https://islamansiklopedisi.org.tr/isferayini-isamuddin",
+      "note": "Identifies ʿIṣām al-Dīn al-Isfarāyīnī and biographical terminus for his commentary.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH16",
+      "author": "Miriam Otten and academic collaborators",
+      "title": "All knowledge is either conception or assent (2024/25), section on Mīr Zāhid",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/09608788.2024.2400475",
+      "note": "Documents Mīr Zāhid's gloss on Dawwānī on Tahdhīb and wider logic corpus.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH17",
+      "author": "Khairābādī Institute",
+      "title": "Logic primers in Farangī Maḥall: Mir Zāhid on Dawwānī",
+      "url": "https://www.khairabadiinstitute.com/articles/logicprimers",
+      "note": "Modern practitioner report of text-commentary-gloss teaching sequence; do not generalize to every school.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH18",
+      "author": "TDV İslâm Ansiklopedisi",
+      "title": "Tahdhīb bibliography: Gelenbevī's gloss on Sharḥ al-Mīrī",
+      "url": "https://islamansiklopedisi.org.tr/tehzibul-mantik-vel-kelam",
+      "note": "Bibliography explicitly names Ḥāshiya ʿalā Sharḥ al-Mīrī; exact author of al-Mīrī needs separate verification.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH19",
+      "author": "ʿAbd Allāh al-Ḥabashī",
+      "title": "Jāmiʿ al-shurūḥ wa-l-ḥawāshī, Tahdhīb entries",
+      "url": "https://scribetools.com/en/library/takhrij/%D8%AC%D8%A7%D9%85%D8%B9-%D8%A7%D9%84%D8%B4%D8%B1%D9%88%D8%AD-%D9%88%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%B4%D9%8A/%D8%AC%D8%A7%D9%85%D8%B9-%D8%A7%D9%84%D8%B4%D8%B1%D9%88%D8%AD-%D9%88%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%B4%D9%8A-%D9%83%D8%AA%D8%A7%D8%A8-%D9%85%D8%B5%D9%88%D8%B1-0375-722dcaa5/text/0035",
+      "note": "Bibliographical inventory of later Iranian and South Asian glossing of Yazdī and Dawwānī. Particular titles and attributions must be compared against original catalogue entries.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH20",
+      "author": "Iranian manuscript catalogue, al-Dharīʿa",
+      "title": "Al-Dharīʿa on Lāhījī's Persian Tahdhīb commentary",
+      "url": "https://ablibrary.net/book_content/b/2134/161?lang=ar",
+      "note": "Identifies Persian direct commentary; oldest listed copy dated 1099 AH, not an authorial composition date.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH21",
+      "author": "NLI / Egyptian catalogue",
+      "title": "al-Khubayṣī Tadhhīb with al-Desūqī and al-ʿAṭṭār glosses",
+      "url": "https://www.nli.org.il/ar/books/NNL_ALEPH990039593120205171/NLI",
+      "note": "Confirms separately attributed glosses and print-package juxtaposition.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH22",
+      "author": "Sonja Brentjes",
+      "title": "Muṣliḥ al-Dīn al-Lārī, Biography of Astronomers",
+      "url": "https://ismi.mpiwg-berlin.mpg.de/biography/Lari_BEA.htm",
+      "note": "Lārī died 1572; contemporary Ottoman and South Asian intellectual setting.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH23",
+      "author": "Egyptian Dār al-Iftāʾ",
+      "title": "Al-Taftāzānī biography",
+      "url": "https://www.dar-alifta.org/ar/ourreligion/details/55/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D9%81%D8%AA%D8%A7%D8%B2%D8%A7%D9%86%D9%8A",
+      "note": "Reports Rajab 789 AH completion at Samarkand and deliberate logic-kalām division.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH24",
+      "author": "Āqā Buzurg al-Ṭihrānī",
+      "title": "Al-Dharīʿa on Lāhījī's gloss on Yazdī",
+      "url": "https://www.iranicaonline.org/articles/abd-al-razzaq-lahiji-11th-17th-century-theologian-and-philosopher/",
+      "note": "Do not conflate Lāhījī's Persian direct commentary with his separate gloss on Yazdī.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
+    },
+    {
+      "id": "TH25",
+      "author": "Bibliographical cross-reference",
+      "title": "Tahdhīb glossing and the contested Shāhjahānī attribution",
+      "url": "https://www.fahares.net/works/18182-%D8%AA%D9%87%D8%B0%DB%8C%D8%A8-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82",
+      "note": "Some descriptions associate Tuḥfat-i Shāhjahānī with Yazdī's own gloss. Do not create a separate Fayḍābādī author/work node from an unverified attribution.",
+      "type": "scholarly bibliography",
+      "accessed": "2026-10-28"
     }
   ],
   "nodes": [
@@ -2758,7 +2983,7 @@
       "temporal": {
         "start": -530,
         "end": -500,
-        "anchor": -515.0,
+        "anchor": -515,
         "kind": "context",
         "basis": "corpus or contextual dating",
         "label": "Activity c.530–500 BCE; no dated authored text",
@@ -3084,7 +3309,7 @@
       "temporal": {
         "start": 80,
         "end": 150,
-        "anchor": 115.0,
+        "anchor": 115,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c.100 CE",
@@ -3157,7 +3382,7 @@
       "temporal": {
         "start": 180,
         "end": 230,
-        "anchor": 205.0,
+        "anchor": 205,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c.200; attribution debated",
@@ -3451,7 +3676,7 @@
       "temporal": {
         "start": 529,
         "end": 535,
-        "anchor": 532.0,
+        "anchor": 532,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "After 529, probably early 530s",
@@ -3525,7 +3750,7 @@
       "temporal": {
         "start": 780,
         "end": 830,
-        "anchor": 805.0,
+        "anchor": 805,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "late 8th–early 9th century",
@@ -3636,7 +3861,7 @@
       "temporal": {
         "start": 780,
         "end": 850,
-        "anchor": 815.0,
+        "anchor": 815,
         "kind": "context",
         "basis": "corpus or contextual dating",
         "label": "c.800–mid-9th century (activity)",
@@ -3673,7 +3898,7 @@
       "temporal": {
         "start": 800,
         "end": 850,
-        "anchor": 825.0,
+        "anchor": 825,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "first half 9th century",
@@ -3928,7 +4153,7 @@
       "temporal": {
         "start": 700,
         "end": 900,
-        "anchor": 800.0,
+        "anchor": 800,
         "kind": "context",
         "basis": "corpus or contextual dating",
         "label": "8th–9th centuries (activity)",
@@ -3966,7 +4191,7 @@
       "temporal": {
         "start": 750,
         "end": 900,
-        "anchor": 825.0,
+        "anchor": 825,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "8th–9th-century transmitted text; attribution disputed",
@@ -4004,7 +4229,7 @@
       "temporal": {
         "start": 800,
         "end": 900,
-        "anchor": 850.0,
+        "anchor": 850,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "9th century (approximate)",
@@ -4042,7 +4267,7 @@
       "temporal": {
         "start": 800,
         "end": 900,
-        "anchor": 850.0,
+        "anchor": 850,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "9th c. (Kindian context probable)",
@@ -4080,7 +4305,7 @@
       "temporal": {
         "start": 600,
         "end": 900,
-        "anchor": 750.0,
+        "anchor": 750,
         "kind": "context",
         "basis": "corpus or contextual dating",
         "label": "Possible contact in 7th–9th c.; hypothesis studied in 2018/2022",
@@ -4116,7 +4341,7 @@
       "temporal": {
         "start": 800,
         "end": 900,
-        "anchor": 850.0,
+        "anchor": 850,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "Arabic epitome probably 9th c.; attribution of milieu proposed",
@@ -4153,7 +4378,7 @@
       "temporal": {
         "start": 850,
         "end": 900,
-        "anchor": 875.0,
+        "anchor": 875,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "Latter half of 9th c. proposed",
@@ -4263,7 +4488,7 @@
       "temporal": {
         "start": 860,
         "end": 910,
-        "anchor": 885.0,
+        "anchor": 885,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c.860–910 (catalogue range)",
@@ -4299,7 +4524,7 @@
       "temporal": {
         "start": 800,
         "end": 910,
-        "anchor": 855.0,
+        "anchor": 855,
         "kind": "context",
         "basis": "corpus or contextual dating",
         "label": "9th–early 10th c.; multiple versions",
@@ -4519,7 +4744,7 @@
       "temporal": {
         "start": 880,
         "end": 920,
-        "anchor": 900.0,
+        "anchor": 900,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c.900",
@@ -4592,7 +4817,7 @@
       "temporal": {
         "start": 870,
         "end": 920,
-        "anchor": 895.0,
+        "anchor": 895,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c.870–920 (catalogue range)",
@@ -4773,7 +4998,7 @@
       "temporal": {
         "start": 900,
         "end": 940,
-        "anchor": 920.0,
+        "anchor": 920,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c.900–940 (catalogue range)",
@@ -5066,7 +5291,7 @@
       "temporal": {
         "start": 970,
         "end": 990,
-        "anchor": 980.0,
+        "anchor": 980,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "970–989/90 (dictation and completion)",
@@ -5249,7 +5474,7 @@
       "temporal": {
         "start": 900,
         "end": 1000,
-        "anchor": 950.0,
+        "anchor": 950,
         "kind": "context",
         "basis": "corpus or contextual dating",
         "label": "10th c. corpus; formation disputed",
@@ -5584,7 +5809,7 @@
       "temporal": {
         "start": 1030,
         "end": 1034,
-        "anchor": 1032.0,
+        "anchor": 1032,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c. 1030–1034",
@@ -5790,7 +6015,7 @@
       "temporal": {
         "start": 1027,
         "end": 1037,
-        "anchor": 1032.0,
+        "anchor": 1032,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c.1027 (proposed); before 1037",
@@ -6242,7 +6467,7 @@
       "temporal": {
         "start": 1127,
         "end": 1131,
-        "anchor": 1129.0,
+        "anchor": 1129,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c.1127–1131 (dedication inference)",
@@ -6351,7 +6576,7 @@
       "temporal": {
         "start": 1137,
         "end": 1141,
-        "anchor": 1139.0,
+        "anchor": 1139,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "completed 1137–41",
@@ -6580,7 +6805,7 @@
       "temporal": {
         "start": 1180,
         "end": 1184,
-        "anchor": 1182.0,
+        "anchor": 1182,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c. 1180–1184; dating disputed",
@@ -6855,7 +7080,7 @@
       "temporal": {
         "start": 1190,
         "end": 1198,
-        "anchor": 1194.0,
+        "anchor": 1194,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "After c.1190; before 1198",
@@ -7081,7 +7306,7 @@
       "temporal": {
         "start": 1229,
         "end": 1233,
-        "anchor": 1231.0,
+        "anchor": 1231,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "after 1229; attested by 1233",
@@ -7118,7 +7343,7 @@
       "temporal": {
         "start": 1202,
         "end": 1238,
-        "anchor": 1220.0,
+        "anchor": 1220,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "1202–1231; revised 1234/35–1238",
@@ -7190,7 +7415,7 @@
       "temporal": {
         "start": 1180,
         "end": 1240,
-        "anchor": 1210.0,
+        "anchor": 1210,
         "kind": "context",
         "basis": "corpus or contextual dating",
         "label": "late 12th–early 13th century; before 1240",
@@ -8066,7 +8291,7 @@
       "temporal": {
         "start": 1294,
         "end": 1306,
-        "anchor": 1300.0,
+        "anchor": 1300,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "between 1294 and 1306",
@@ -8140,7 +8365,7 @@
       "temporal": {
         "start": 1280,
         "end": 1330,
-        "anchor": 1305.0,
+        "anchor": 1305,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "late 13th–early 14th century (approx.)",
@@ -8251,7 +8476,7 @@
       "temporal": {
         "start": 1330,
         "end": 1340,
-        "anchor": 1335.0,
+        "anchor": 1335,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c. 1330s (contextual estimate)",
@@ -8409,7 +8634,7 @@
       "temporal": {
         "start": 1330,
         "end": 1352,
-        "anchor": 1341.0,
+        "anchor": 1341,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "c. 1330–33; revised 1349–52",
@@ -8675,7 +8900,7 @@
       "temporal": {
         "start": 1300,
         "end": 1400,
-        "anchor": 1350.0,
+        "anchor": 1350,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "14th century; exact date unknown",
@@ -10133,7 +10358,7 @@
       "temporal": {
         "start": 1524,
         "end": 1526,
-        "anchor": 1525.0,
+        "anchor": 1525,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "1524; revised 1526",
@@ -10477,7 +10702,7 @@
       "temporal": {
         "start": 1606,
         "end": 1628,
-        "anchor": 1617.0,
+        "anchor": 1617,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "begun 1606; reported completion 1628",
@@ -11300,7 +11525,7 @@
       "temporal": {
         "start": 1642,
         "end": 1662,
-        "anchor": 1652.0,
+        "anchor": 1652,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "1642–c. 1662 (dedication / death bounds)",
@@ -11931,7 +12156,7 @@
       "temporal": {
         "start": 1682,
         "end": 1696,
-        "anchor": 1689.0,
+        "anchor": 1689,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "volumes completed 1682, 1687, 1696",
@@ -11968,7 +12193,7 @@
       "temporal": {
         "start": 1200,
         "end": 1700,
-        "anchor": 1450.0,
+        "anchor": 1450,
         "kind": "context",
         "basis": "corpus or contextual dating",
         "label": "13th–17th-century reception setting",
@@ -12819,7 +13044,7 @@
       "temporal": {
         "start": 1857,
         "end": 1883,
-        "anchor": 1870.0,
+        "anchor": 1870,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "mainly Damascus period 1857–1883",
@@ -13108,7 +13333,7 @@
       "temporal": {
         "start": 1886,
         "end": 1898,
-        "anchor": 1892.0,
+        "anchor": 1892,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "1886 lectures; revised by 1897/98",
@@ -13699,7 +13924,7 @@
       "temporal": {
         "start": 1955,
         "end": 1977,
-        "anchor": 1966.0,
+        "anchor": 1966,
         "kind": "range",
         "basis": "composition or textual activity",
         "label": "lectures 1334–1355 SH/1955–1976/77",
@@ -13899,6 +14124,971 @@
       "summary": false,
       "featured": false,
       "search_aliases": []
+    },
+    {
+      "id": "tahdhib_complete",
+      "title": "Tahdhīb al-manṭiq wa-l-kalām",
+      "title_ar": "تهذيب المنطق والكلام",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "author_dates": "d. 1390",
+      "date_label": "Rajab 789 AH / 1387 CE",
+      "date_start": 1387,
+      "date_end": 1387,
+      "date_status": "exact",
+      "date_note": "Completed in Samarqand in Rajab 789 AH according to biographical and bibliographical reports.",
+      "kind": "independent",
+      "tradition": "sunni",
+      "region": "Samarqand; later multi-regional",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01",
+        "TH02",
+        "TH23"
+      ],
+      "note": "A single 789 AH compendium in two parts. Logic had far more commentaries than kalām; do not treat the two reception histories as equal.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": 1387,
+        "end": 1387,
+        "anchor": 1387,
+        "kind": "exact",
+        "basis": "reported date of composition",
+        "label": "Rajab 789 AH / 1387 CE",
+        "note": "Composition date, where established."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [
+        "Tahdhib al Kalam",
+        "Tahdhib al Mantiq",
+        "تهذيب الكلام"
+      ],
+      "code": "W296"
+    },
+    {
+      "id": "tahdhib_logic",
+      "title": "Tahdhīb: Part I – Logic (analytical section)",
+      "title_ar": "القسم الأول: المنطق",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "author_dates": "d. 1390",
+      "date_label": "Rajab 789 AH / 1387 CE",
+      "date_start": 1387,
+      "date_end": 1387,
+      "date_status": "exact",
+      "date_note": "Completed in Samarqand in Rajab 789 AH according to biographical and bibliographical reports.",
+      "kind": "section",
+      "tradition": "sunni",
+      "region": "Samarqand; Iran, Ottoman, South Asia, Egypt",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01",
+        "TH02"
+      ],
+      "note": "Constituent part of the complete 1387 text, not an independent book. Its logic-commentary network crosses Sunni and Imami institutions.",
+      "node_type": "corpus",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": 1387,
+        "end": 1387,
+        "anchor": 1387,
+        "kind": "exact",
+        "basis": "reported date of composition",
+        "label": "Rajab 789 AH / 1387 CE",
+        "note": "Composition date, where established."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W297"
+    },
+    {
+      "id": "tahdhib_kalam",
+      "title": "Tahdhīb: Part II – Kalām (analytical section)",
+      "title_ar": "القسم الثاني: الكلام",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "author_dates": "d. 1390",
+      "date_label": "Rajab 789 AH / 1387 CE",
+      "date_start": 1387,
+      "date_end": 1387,
+      "date_status": "exact",
+      "date_note": "Completed in Samarqand in Rajab 789 AH according to biographical and bibliographical reports.",
+      "kind": "section",
+      "tradition": "sunni",
+      "region": "Samarqand; later Ottoman, Kurdish, Indian scholarship",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01",
+        "TH14"
+      ],
+      "note": "Constituent part of the complete 1387 text, not an independent book. Kātib Çelebi reports this part as an abridgement of the author's Maqāṣid; actual wording should be collated.",
+      "node_type": "corpus",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": 1387,
+        "end": 1387,
+        "anchor": 1387,
+        "kind": "exact",
+        "basis": "reported date of composition",
+        "label": "Rajab 789 AH / 1387 CE",
+        "note": "Composition date, where established."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W298"
+    },
+    {
+      "id": "tahdhib_kafiyaji",
+      "title": "Sharḥ Tahdhīb al-manṭiq (Kāfiyecī)",
+      "title_ar": "شرح تهذيب المنطق للكافياجي",
+      "author": "Muḥyī al-Dīn al-Kāfiyecī",
+      "author_dates": "d. 1474",
+      "date_label": "before 1474 (death bound)",
+      "date_start": null,
+      "date_end": 1474,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Ottoman Anatolia / Cairo",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01"
+      ],
+      "note": "Commentary attested in Süleymaniye manuscript catalogues; do not infer its standing from its occurrence in the list.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1474,
+        "anchor": 1474,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1474 (death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W299"
+    },
+    {
+      "id": "tahdhib_dawwani",
+      "title": "Sharḥ/Ḥāshiyat Tahdhīb al-manṭiq (Mullā Jalāl)",
+      "title_ar": "شرح / حاشية ملا جلال الدواني على تهذيب المنطق",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "author_dates": "d. 1502–03",
+      "date_label": "by 1496 (dated manuscript; composition earlier)",
+      "date_start": null,
+      "date_end": 1496,
+      "date_status": "terminus",
+      "date_note": "Princeton preserves a 1496 copy; do not convert a copy date into a composition date.",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Shiraz; Ottoman and South Asian reception",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01",
+        "TH04"
+      ],
+      "note": "An influential commentary on the LOGIC section, sometimes styled al-ʿAjāla/Mullā Jalāl. Numerous glosses critique or expand it.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1496,
+        "anchor": 1496,
+        "kind": "upper_bound",
+        "basis": "copy",
+        "label": "by 1496 (dated manuscript; composition earlier)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "code": "W300"
+    },
+    {
+      "id": "tahdhib_saiidi",
+      "title": "Ḥāshiya ʿalā Sharḥ al-Dawwānī (Mīr Abū l-Fatḥ al-Saʿīdī)",
+      "title_ar": "حاشية أبي الفتح السعيدي على شرح الدواني على التهذيب",
+      "author": "Mīr Abū l-Fatḥ al-Saʿīdī",
+      "author_dates": "16th c. attribution; precise death uncertain",
+      "date_label": "by 1667 (manuscript copy; composition earlier)",
+      "date_start": null,
+      "date_end": 1667,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "Iranian / Ottoman manuscript circulation",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH05"
+      ],
+      "note": "Princeton 1667 manuscript explicitly glosses Dawwānī's LOGIC commentary. Copy date is not author date.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1667,
+        "anchor": 1667,
+        "kind": "upper_bound",
+        "basis": "copy",
+        "label": "by 1667 (manuscript copy; composition earlier)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W301"
+    },
+    {
+      "id": "tahdhib_dashtaki",
+      "title": "Critical refutation of Dawwānī's Tahdhīb commentary",
+      "title_ar": "ردّ على شرح الدواني للتهذيب",
+      "author": "Mīr Ghiyāth al-Dīn Manṣūr Dashtakī",
+      "author_dates": "d. 1542",
+      "date_label": "before 1542 (death bound)",
+      "date_start": null,
+      "date_end": 1542,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "independent",
+      "tradition": "avicennan",
+      "region": "Shiraz; Dashtakī debates",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01",
+        "TH03"
+      ],
+      "note": "TDV identifies a refutation of Dawwānī's commentary; a philosophical dispute, not a gloss endorsing the base text.",
+      "node_type": "work",
+      "original_tradition": "avicennan",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1542,
+        "anchor": 1542,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1542 (death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W302"
+    },
+    {
+      "id": "tahdhib_kemalpasha",
+      "title": "Sharḥ Tahdhīb al-manṭiq (Kemālpaşazāde)",
+      "title_ar": "شرح تهذيب المنطق لابن كمال",
+      "author": "Kemālpaşazāde (Ibn Kemāl)",
+      "author_dates": "d. 1534",
+      "date_label": "before 1534 (death bound)",
+      "date_start": null,
+      "date_end": 1534,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Ottoman Empire",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01"
+      ],
+      "note": "Ottoman commentary catalogued by TDV; manuscript Atıf Efendi 2816.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1534,
+        "anchor": 1534,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1534 (death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W303"
+    },
+    {
+      "id": "tahdhib_isam",
+      "title": "Sharḥ Tahdhīb al-manṭiq (ʿIṣām al-Isfarāyīnī)",
+      "title_ar": "شرح تهذيب المنطق للعصام الإسفراييني",
+      "author": "ʿIṣām al-Dīn al-Isfarāyīnī",
+      "author_dates": "d. 1538",
+      "date_label": "before 1538 (death bound)",
+      "date_start": null,
+      "date_end": 1538,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Khorasan and Ottoman scholarly circulation",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01",
+        "TH15"
+      ],
+      "note": "Another commentary catalogued by TDV; distinct from ʿIṣām's other logical works.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1538,
+        "anchor": 1538,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1538 (death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W304"
+    },
+    {
+      "id": "tahdhib_lari",
+      "title": "Gloss on Dawwānī's Tahdhīb commentary (Lārī)",
+      "title_ar": "حاشية مصلح الدين اللاري على شرح الدواني للتهذيب",
+      "author": "Muṣliḥ al-Dīn al-Lārī",
+      "author_dates": "d. 1572",
+      "date_label": "before 1572 (death bound)",
+      "date_start": null,
+      "date_end": 1572,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "Iran, Mughal India, Ottoman Diyarbakır",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01",
+        "TH22"
+      ],
+      "note": "Gloss on Dawwānī; biographical movement across regions is not proof of a particular institution teaching this text.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1572,
+        "anchor": 1572,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1572 (death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W305"
+    },
+    {
+      "id": "tahdhib_fathullah",
+      "title": "Gloss on Dawwānī's Tahdhīb commentary (Mīr Fatḥ Allāh)",
+      "title_ar": "حاشية مير فتح الله الشيرازي على شرح الدواني",
+      "author": "Mīr Fatḥ Allāh al-Shīrāzī",
+      "author_dates": "d. 1589",
+      "date_label": "before 1589 (death bound)",
+      "date_start": null,
+      "date_end": 1589,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "gloss",
+      "tradition": "avicennan",
+      "region": "Iran / Mughal India",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01"
+      ],
+      "note": "Bibliographical attribution of gloss on Dawwānī, not merely general influence.",
+      "node_type": "work",
+      "original_tradition": "avicennan",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1589,
+        "anchor": 1589,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1589 (death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W306"
+    },
+    {
+      "id": "tahdhib_yazdi",
+      "title": "Ḥāshiyat Mullā ʿAbd Allāh ʿalā Tahdhīb al-manṭiq",
+      "title_ar": "حاشية ملا عبد الله اليزدي على تهذيب المنطق",
+      "author": "Mullā ʿAbd Allāh al-Yazdī",
+      "author_dates": "d. 1573 or 1606 (disputed)",
+      "date_label": "1560",
+      "date_start": 1560,
+      "date_end": 1560,
+      "date_status": "exact",
+      "date_note": "",
+      "kind": "gloss",
+      "tradition": "imami",
+      "region": "Najaf; Iran, India and Iraq",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01",
+        "TH06",
+        "TH07"
+      ],
+      "note": "Completed in Najaf in 967 AH according to some authorial colophons; directly glosses Taftāzānī's logic section, NOT simply Dawwānī's commentary. His death year is disputed.",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [],
+      "temporal": {
+        "start": 1560,
+        "end": 1560,
+        "anchor": 1560,
+        "kind": "exact",
+        "basis": "reported date of composition",
+        "label": "1560",
+        "note": "Composition date, where established."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "code": "W307"
+    },
+    {
+      "id": "tahdhib_lahiji_persian",
+      "title": "Persian Sharḥ Tahdhīb al-manṭiq (Lāhījī)",
+      "title_ar": "شرح فارسی تهذیب المنطق",
+      "author": "ʿAbd al-Razzāq Lāhījī",
+      "author_dates": "d. probably 1661–62; date uncertain",
+      "date_label": "before c. 1662 (probable death bound)",
+      "date_start": null,
+      "date_end": 1662,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "commentary",
+      "tradition": "imami",
+      "region": "Safavid Iran / Qom",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH09",
+        "TH20",
+        "TH08"
+      ],
+      "note": "A direct Persian commentary on Taftāzānī's logic text; distinguish it from Lāhījī's additional gloss on Yazdī.",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1662,
+        "anchor": 1662,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before c. 1662 (probable death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W308"
+    },
+    {
+      "id": "tahdhib_lahiji_yazdi",
+      "title": "Lāhījī's Ḥāshiya on Yazdī's Tahdhīb gloss",
+      "title_ar": "حاشية اللاهيجي على حاشية اليزدي على تهذيب المنطق",
+      "author": "ʿAbd al-Razzāq Lāhījī",
+      "author_dates": "d. probably 1661–62; date uncertain",
+      "date_label": "before c. 1662 (probable death bound)",
+      "date_start": null,
+      "date_end": 1662,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "gloss",
+      "tradition": "imami",
+      "region": "Safavid Iran",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH08",
+        "TH24"
+      ],
+      "note": "Iranica explicitly lists a commentary on Yazdī's gloss. Do not confuse it with Lāhījī's separate Persian direct commentary.",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1662,
+        "anchor": 1662,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before c. 1662 (probable death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W309"
+    },
+    {
+      "id": "tahdhib_khubaysi",
+      "title": "al-Tadhhīb fī sharḥ al-Tahdhīb (al-Khubayṣī)",
+      "title_ar": "التذهيب في شرح التهذيب للخبيصي",
+      "author": "ʿUbayd Allāh b. Faḍl Allāh al-Khubayṣī",
+      "author_dates": "d. c. 1640 (approximate)",
+      "date_label": "before c. 1640 (approximate death bound)",
+      "date_start": null,
+      "date_end": 1640,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Egypt / Azhar",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH10",
+        "TH21"
+      ],
+      "note": "Logic commentary with substantial Egyptian gloss literature; the full base book is two-part, but later commonly printed reception concentrates on logic.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1640,
+        "anchor": 1640,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before c. 1640 (approximate death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W310"
+    },
+    {
+      "id": "tahdhib_yasin_himsi",
+      "title": "Ḥāshiya on al-Khubayṣī's al-Tadhhīb (Yāsīn al-Ḥimṣī)",
+      "title_ar": "حاشية ياسين الحمصي على الخبيصي",
+      "author": "Yāsīn al-Ḥimṣī",
+      "author_dates": "d. 1651",
+      "date_label": "before 1651 (death bound)",
+      "date_start": null,
+      "date_end": 1651,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "Ottoman Syria / Egypt",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH10"
+      ],
+      "note": "Attested as a gloss on al-Khubayṣī, printed alongside other marginalia.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1651,
+        "anchor": 1651,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1651 (death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W311"
+    },
+    {
+      "id": "tahdhib_mirzahid",
+      "title": "Ḥāshiyat Mīr Zāhid ʿalā Sharḥ al-Dawwānī ʿalā al-Tahdhīb",
+      "title_ar": "حاشية مير زاهد على ملا جلال على التهذيب",
+      "author": "Mīr Zāhid al-Harawī",
+      "author_dates": "d. 1689–90",
+      "date_label": "before 1689–90 (death bound)",
+      "date_start": null,
+      "date_end": 1689,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "Mughal India / Kabul",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01",
+        "TH16",
+        "TH17"
+      ],
+      "note": "A central later South Asian gloss on Dawwānī's LOGIC commentary. Particularly significant for conception/assent and complex logical debates; teaching sequence reported in Khairābādī circles.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1689,
+        "anchor": 1689,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1689–90 (death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "code": "W312"
+    },
+    {
+      "id": "tahdhib_miri",
+      "title": "Sharḥ al-Mīrī ʿalā Tahdhīb (bibliographical intermediate)",
+      "title_ar": "الشرح الميري على التهذيب",
+      "author": "al-Mīrī (precise identity not established here)",
+      "author_dates": "before 1791; identity and chronology unresolved",
+      "date_label": "by 1791 (Gelenbevī death bound; intermediary earlier)",
+      "date_start": null,
+      "date_end": 1791,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Ottoman bibliographical tradition",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH18"
+      ],
+      "note": "The TDV bibliography names a Sharḥ al-Mīrī as base of Gelenbevī's gloss. This is an identification placeholder; do not merge with Mīr Zāhid without verification.",
+      "node_type": "corpus",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1791,
+        "anchor": 1791,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "by 1791 (Gelenbevī death bound; intermediary earlier)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W313"
+    },
+    {
+      "id": "tahdhib_gelenbevi",
+      "title": "Ḥāshiya ʿalā Sharḥ al-Mīrī ʿalā al-Tahdhīb",
+      "title_ar": "حاشية الكلنبوي على شرح الميري على التهذيب",
+      "author": "İsmāʿīl Gelenbevī",
+      "author_dates": "d. 1791",
+      "date_label": "before 1791 (death bound)",
+      "date_start": null,
+      "date_end": 1791,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "Ottoman Anatolia / Istanbul",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01",
+        "TH18"
+      ],
+      "note": "Gloss on an intermediate Sharḥ al-Mīrī, not automatically a direct gloss on Taftāzānī.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1791,
+        "anchor": 1791,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1791 (death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W314"
+    },
+    {
+      "id": "tahdhib_dasuqi",
+      "title": "al-Tajrīd al-shāfī: gloss on al-Khubayṣī",
+      "title_ar": "التجريد الشافي على تذهيب المنطق الكافي",
+      "author": "Muḥammad al-Desūqī",
+      "author_dates": "d. 1815",
+      "date_label": "before 1815 (death bound)",
+      "date_start": null,
+      "date_end": 1815,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "Egypt / Azhar",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH10",
+        "TH21"
+      ],
+      "note": "Egyptian commentary on al-Khubayṣī's al-Tadhhīb logic commentary; distinguish from a gloss on Taftāzānī directly.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1815,
+        "anchor": 1815,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1815 (death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W315"
+    },
+    {
+      "id": "tahdhib_attar",
+      "title": "Ḥāshiyat al-ʿAṭṭār ʿalā al-Khubayṣī",
+      "title_ar": "حاشية العطار على شرح الخبيصي للتهذيب",
+      "author": "Ḥasan al-ʿAṭṭār",
+      "author_dates": "d. 1835",
+      "date_label": "before 1835 (death bound)",
+      "date_start": null,
+      "date_end": 1835,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "Cairo / Azhar",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH10",
+        "TH11"
+      ],
+      "note": "An Egyptian gloss on al-Khubayṣī's logic commentary; distinct from al-ʿAṭṭār's other logical commentaries.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1835,
+        "anchor": 1835,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1835 (death bound)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W316"
+    },
+    {
+      "id": "tahdhib_sunduqli",
+      "title": "Hudā al-nāẓirīn fī sharḥ qism al-kalām min al-Tahdhīb",
+      "title_ar": "هدى الناظرين في شرح قسم الكلام من كتاب التهذيب",
+      "author": "ʿUthmān al-Ṣundūqlī al-Naqshbandī",
+      "author_dates": "d. 1301 AH / 1883–84",
+      "date_label": "1845",
+      "date_start": 1845,
+      "date_end": 1845,
+      "date_status": "exact",
+      "date_note": "",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Ottoman Kurdish / Syrian manuscript networks",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH14"
+      ],
+      "note": "Explicitly on the KALĀM section; bibliography records completion in 1261 AH. Not a commentary on Dawwānī's logic gloss.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": 1845,
+        "end": 1845,
+        "anchor": 1845,
+        "kind": "exact",
+        "basis": "reported date of composition",
+        "label": "1845",
+        "note": "Composition date, where established."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W317"
+    },
+    {
+      "id": "tahdhib_shahmiri",
+      "title": "Sharḥ Tahdhīb al-manṭiq (Shāh Mīrī al-Shīrāzī)",
+      "title_ar": "شرح تهذيب المنطق لشاه ميري الشيرازي",
+      "author": "Hibat Allāh b. ʿAṭāʾ Allāh al-Ḥusaynī, known as Shāh Mīrī",
+      "author_dates": "active by 882–898 AH / 1477–1493; death unverified",
+      "date_label": "by 957 AH / 1550–51 (dated manuscript)",
+      "date_start": null,
+      "date_end": 1551,
+      "date_status": "terminus",
+      "date_note": "A manuscript was completed in Dhu l-Qaʿda 957 AH; this establishes a copy-date terminus, not the author’s death or a composition year. Separate authored work revised in 898 AH.",
+      "kind": "commentary",
+      "tradition": "avicennan",
+      "region": "Shiraz; manuscripts later copied in Iran",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH03"
+      ],
+      "note": "A distinct mixed commentary (sharḥ mazjī) attested by al-Dharīʿa and Fanhā. The 957 AH manuscript provides a terminus ante quem. Do not conflate this author with the distinct Yazdī gloss or a doubtful Fayḍābādī attribution. Its confessional position is not inferred from the occurrence of a logic commentary in an Iranian manuscript.",
+      "node_type": "work",
+      "original_tradition": "shared",
+      "tags": [
+        "Logic reception",
+        "Confessional affiliation unverified"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1551,
+        "anchor": 1551,
+        "kind": "upper_bound",
+        "basis": "dated manuscript copy",
+        "label": "by 957 AH / 1550–51 (dated manuscript)",
+        "note": "A manuscript was completed in Dhu l-Qaʿda 957 AH; this establishes a copy-date terminus, not the author’s death or a composition year. Separate authored work revised in 898 AH."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W318"
+    },
+    {
+      "id": "tahdhib_sanandaji",
+      "title": "Taqrīb al-marām fī sharḥ Tahdhīb al-kalām",
+      "title_ar": "تقريب المرام في شرح تهذيب الكلام",
+      "author": "ʿAbd al-Qādir al-Sanandajī al-Kurdistānī",
+      "author_dates": "1211–1304 AH / d. 1886–87",
+      "date_label": "before 1887 (death bound); printed 1900–01",
+      "date_start": null,
+      "date_end": 1887,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Kurdistan / Cairo printed reception",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH01",
+        "TH12",
+        "TH13",
+        "TH14"
+      ],
+      "note": "Major later commentary specifically on KALĀM. The 1901 catalogue describes one 335-page volume, not guaranteed 630–680pp; appended Ḥāshiyat al-muḥākamāt is NOT proved to be a gloss on Sanandajī.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1887,
+        "anchor": 1887,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1887 (death bound); printed 1900–01",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "code": "W319"
+    },
+    {
+      "id": "tahdhib_lakhnawi",
+      "title": "Ḥāshiya ʿalā Ḥāshiyat al-Yazdī (Lakhnawī)",
+      "title_ar": "حاشية عبد الحي اللكنوي على حاشية اليزدي",
+      "author": "ʿAbd al-Ḥayy al-Lakhnawī",
+      "author_dates": "d. 1886",
+      "date_label": "before 1886 (death bound); printed 1311 AH later",
+      "date_start": null,
+      "date_end": 1886,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "South Asia / Lucknow",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH19"
+      ],
+      "note": "Bibliographic listing of a further South Asian gloss on Yazdī; later print date should not be equated with composition.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1886,
+        "anchor": 1886,
+        "kind": "upper_bound",
+        "basis": "author death / latest attestation",
+        "label": "before 1886 (death bound); printed 1311 AH later",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W320"
+    },
+    {
+      "id": "tahdhib_jarallah",
+      "title": "Tanqīḥ al-kalām: sharḥ al-juzʾ al-thānī min al-Tahdhīb",
+      "title_ar": "تنقيح الكلام شرح الجزء الثاني من التهذيب",
+      "author": "Burhān al-Dīn Jār Allāh Muḥammad al-Ḥusaynī",
+      "author_dates": "fl. late 19th century; death uncertain",
+      "date_label": "by 1312 AH / 1894–95 (printed witness)",
+      "date_start": null,
+      "date_end": 1895,
+      "date_status": "terminus",
+      "date_note": "",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "India",
+      "family": "Tahdhīb al-manṭiq wa-l-kalām",
+      "sources": [
+        "TH14"
+      ],
+      "note": "Bibliographically identified commentary on the SECOND/KALĀM part; publication attested in 1312 AH, not composition.",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1895,
+        "anchor": 1895,
+        "kind": "upper_bound",
+        "basis": "copy",
+        "label": "by 1312 AH / 1894–95 (printed witness)",
+        "note": "A latest possible date or manuscript attestation, not a composition year."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "code": "W321"
     }
   ],
   "edges": [
@@ -17722,6 +18912,346 @@
       ],
       "evidence": "Suhrawardī criticizes Avicennan doctrines; this corpus-level edge does not identify an exclusive source book.",
       "evidence_kind": "specialist reconstruction"
+    },
+    {
+      "id": "TH_e01",
+      "source": "tahdhib_complete",
+      "target": "tahdhib_logic",
+      "relation": "component",
+      "confidence": "direct",
+      "label": "contains Part I (logic)",
+      "sources": [
+        "TH01",
+        "TH02"
+      ],
+      "evidence": "Taftāzānī's two-part book comprises a logic section; this is a structural, not influence, relationship.",
+      "evidence_kind": "textual identification / manuscript"
+    },
+    {
+      "id": "TH_e02",
+      "source": "tahdhib_complete",
+      "target": "tahdhib_kalam",
+      "relation": "component",
+      "confidence": "direct",
+      "label": "contains Part II (kalām)",
+      "sources": [
+        "TH01"
+      ],
+      "evidence": "Taftāzānī's two-part book comprises a kalām section; this is a structural, not influence, relationship.",
+      "evidence_kind": "textual identification / manuscript"
+    },
+    {
+      "id": "TH_e03",
+      "source": "taftazani_maqasid",
+      "target": "tahdhib_kalam",
+      "relation": "reported_source",
+      "confidence": "qualified",
+      "label": "reported abridgement; collation pending",
+      "sources": [
+        "TH01",
+        "TH09"
+      ],
+      "evidence": "Kātib Çelebi reports the kalām part is a concise version of the author's Maqāṣid. Exact textual abridgement awaits direct collation; dates independently establish sequence.",
+      "evidence_kind": "bibliographical testimony / qualification"
+    },
+    {
+      "id": "TH_e04",
+      "source": "tahdhib_logic",
+      "target": "tahdhib_kafiyaji",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "commentary on LOGIC",
+      "sources": [
+        "TH01"
+      ],
+      "evidence": "A documented commentary or running exposition on the logic part; identity and scope given in node record.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e05",
+      "source": "tahdhib_logic",
+      "target": "tahdhib_dawwani",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "commentary on LOGIC",
+      "sources": [
+        "TH04"
+      ],
+      "evidence": "A documented commentary or running exposition on the logic part; identity and scope given in node record.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e06",
+      "source": "tahdhib_logic",
+      "target": "tahdhib_kemalpasha",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "commentary on LOGIC",
+      "sources": [
+        "TH01"
+      ],
+      "evidence": "A documented commentary or running exposition on the logic part; identity and scope given in node record.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e07",
+      "source": "tahdhib_logic",
+      "target": "tahdhib_isam",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "commentary on LOGIC",
+      "sources": [
+        "TH01"
+      ],
+      "evidence": "A documented commentary or running exposition on the logic part; identity and scope given in node record.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e08",
+      "source": "tahdhib_logic",
+      "target": "tahdhib_yazdi",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "commentary on LOGIC",
+      "sources": [
+        "TH06"
+      ],
+      "evidence": "A documented commentary or running exposition on the logic part; identity and scope given in node record.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e09",
+      "source": "tahdhib_logic",
+      "target": "tahdhib_lahiji_persian",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "commentary on LOGIC",
+      "sources": [
+        "TH09"
+      ],
+      "evidence": "A documented commentary or running exposition on the logic part; identity and scope given in node record.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e10",
+      "source": "tahdhib_logic",
+      "target": "tahdhib_khubaysi",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "commentary on LOGIC",
+      "sources": [
+        "TH10"
+      ],
+      "evidence": "A documented commentary or running exposition on the logic part; identity and scope given in node record.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e11",
+      "source": "tahdhib_logic",
+      "target": "tahdhib_miri",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "commentary on LOGIC",
+      "sources": [
+        "TH18"
+      ],
+      "evidence": "A documented commentary or running exposition on the logic part; identity and scope given in node record.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e12",
+      "source": "tahdhib_logic",
+      "target": "tahdhib_shahmiri",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "Shāh Mīrī commentary on logic",
+      "sources": [
+        "TH03"
+      ],
+      "evidence": "Fanhā's Tahdhīb catalogue identifies a distinct commentary by Shāh Mīrī al-Shīrāzī; a manuscript copied in 957 AH gives the latest bound, not an exact composition date.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e13",
+      "source": "tahdhib_dawwani",
+      "target": "tahdhib_saiidi",
+      "relation": "gloss",
+      "confidence": "documented",
+      "label": "gloss on Dawwānī",
+      "sources": [
+        "TH05"
+      ],
+      "evidence": "Bibliographical testimony identifies a gloss on Dawwānī's logic commentary; does not infer doctrinal assent.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e14",
+      "source": "tahdhib_dawwani",
+      "target": "tahdhib_lari",
+      "relation": "gloss",
+      "confidence": "documented",
+      "label": "gloss on Dawwānī",
+      "sources": [
+        "TH01"
+      ],
+      "evidence": "Bibliographical testimony identifies a gloss on Dawwānī's logic commentary; does not infer doctrinal assent.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e15",
+      "source": "tahdhib_dawwani",
+      "target": "tahdhib_fathullah",
+      "relation": "gloss",
+      "confidence": "documented",
+      "label": "gloss on Dawwānī",
+      "sources": [
+        "TH01"
+      ],
+      "evidence": "Bibliographical testimony identifies a gloss on Dawwānī's logic commentary; does not infer doctrinal assent.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e16",
+      "source": "tahdhib_dawwani",
+      "target": "tahdhib_mirzahid",
+      "relation": "gloss",
+      "confidence": "documented",
+      "label": "gloss on Dawwānī",
+      "sources": [
+        "TH16"
+      ],
+      "evidence": "Bibliographical testimony identifies a gloss on Dawwānī's logic commentary; does not infer doctrinal assent.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e17",
+      "source": "tahdhib_dawwani",
+      "target": "tahdhib_dashtaki",
+      "relation": "critique",
+      "confidence": "documented",
+      "label": "critical response",
+      "sources": [
+        "TH01"
+      ],
+      "evidence": "TDV explicitly lists a refutation of Dawwānī's commentary by Mīr Ghiyāth al-Dīn Manṣūr.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e18",
+      "source": "tahdhib_yazdi",
+      "target": "tahdhib_lahiji_yazdi",
+      "relation": "gloss",
+      "confidence": "documented",
+      "label": "gloss on Yazdī",
+      "sources": [
+        "TH08"
+      ],
+      "evidence": "Iranica identifies a distinct gloss by Lāhījī on Yazdī's gloss of Tahdhīb; separate from the Persian direct commentary.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e19",
+      "source": "tahdhib_yazdi",
+      "target": "tahdhib_lakhnawi",
+      "relation": "gloss",
+      "confidence": "documented",
+      "label": "later gloss on Yazdī",
+      "sources": [
+        "TH19"
+      ],
+      "evidence": "Catalogue identifies a South Asian gloss on Yazdī, lithographed after the commentator's life.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e20",
+      "source": "tahdhib_khubaysi",
+      "target": "tahdhib_yasin_himsi",
+      "relation": "gloss",
+      "confidence": "documented",
+      "label": "Egyptian gloss on al-Khubayṣī",
+      "sources": [
+        "TH10"
+      ],
+      "evidence": "Source identifies this as a gloss on al-Khubayṣī's commentary; not a direct commentary on Taftāzānī.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e21",
+      "source": "tahdhib_khubaysi",
+      "target": "tahdhib_dasuqi",
+      "relation": "gloss",
+      "confidence": "documented",
+      "label": "Egyptian gloss on al-Khubayṣī",
+      "sources": [
+        "TH21"
+      ],
+      "evidence": "Source identifies this as a gloss on al-Khubayṣī's commentary; not a direct commentary on Taftāzānī.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e22",
+      "source": "tahdhib_khubaysi",
+      "target": "tahdhib_attar",
+      "relation": "gloss",
+      "confidence": "documented",
+      "label": "Egyptian gloss on al-Khubayṣī",
+      "sources": [
+        "TH11"
+      ],
+      "evidence": "Source identifies this as a gloss on al-Khubayṣī's commentary; not a direct commentary on Taftāzānī.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e23",
+      "source": "tahdhib_miri",
+      "target": "tahdhib_gelenbevi",
+      "relation": "gloss",
+      "confidence": "qualified",
+      "label": "gloss on named intermediary",
+      "sources": [
+        "TH18"
+      ],
+      "evidence": "TDV bibliographical listing names Ḥāshiya on Sharḥ al-Mīrī; exact intermediate identity remains unresolved and must not be silently equated with Mīr Zāhid.",
+      "evidence_kind": "bibliographical testimony / qualification"
+    },
+    {
+      "id": "TH_e24",
+      "source": "tahdhib_kalam",
+      "target": "tahdhib_sunduqli",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "commentary on KALĀM",
+      "sources": [
+        "TH14"
+      ],
+      "evidence": "Catalogue or edition explicitly identifies this work as a commentary on the KALĀM section, not on the logic part.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e25",
+      "source": "tahdhib_kalam",
+      "target": "tahdhib_sanandaji",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "commentary on KALĀM",
+      "sources": [
+        "TH12"
+      ],
+      "evidence": "Catalogue or edition explicitly identifies this work as a commentary on the KALĀM section, not on the logic part.",
+      "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "TH_e26",
+      "source": "tahdhib_kalam",
+      "target": "tahdhib_jarallah",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "commentary on KALĀM",
+      "sources": [
+        "TH14"
+      ],
+      "evidence": "Catalogue or edition explicitly identifies this work as a commentary on the KALĀM section, not on the logic part.",
+      "evidence_kind": "bibliographical catalogue"
     }
   ],
   "notes": [
@@ -18108,6 +19638,23 @@
       "title": "Akbarian reception: qualification",
       "text": "Further leads deliberately not promoted to firm edges: DawwānīShawākil Akbarian citations; exact FarangīMaḥall curriculum recensions; book-specific sources of Taswiya; named-source dependency of Jīlī’s whole Insān; unproven ancient Buddhist or Iranian chains.",
       "sources": []
+    },
+    {
+      "title": "Tahdhīb, logic / kalām and commentary families (revision 4)",
+      "text": "Logic and kalām are constituent sections of one 1387 treatise, not separate authored works; their analytical nodes are labelled accordingly. Distinguish an original commentary, a gloss, a critique, and a report of abridgement. The section relationships are structural, not doctrinal influence. The logic part has a far larger commentary corpus; the list here is representative, not an exhaustive register of fifty-plus works. The 1560 completion date for Yazdī is supported; competing death dates 981 and 1015 AH remain visible. Lāhījī's Persian direct commentary and gloss on Yazdī are treated as distinct according to references, subject to future manuscript collation. Al-Mīrī's exact identity is not resolved; the Gelenbevī branch is marked qualified rather than equated with Mīr Zāhid. Sanandajī's Taqrīb and its printed appendices are not conflated; 335-page 1901 volume is the checked physical extent. Manuscript copy and later printing dates remain bounds, never silently converted into composition dates.",
+      "sources": [
+        "TH01",
+        "TH02",
+        "TH08",
+        "TH14"
+      ]
+    },
+    {
+      "title": "Tahdhīb attribution correction",
+      "text": "Shāh Mīrī al-Shīrāzī's Sharḥ is documented by Fanhā with a later manuscript copy in 957 AH. A purported independent work Tuḥfat-i Shāhjahānī by Ilāhī Bakhsh al-Fayḍābādī was not sufficiently established; the name must not be used as an invented independent node.",
+      "sources": [
+        "TH03"
+      ]
     }
   ],
   "audit": [
@@ -19578,7 +21125,7 @@
       "present": true
     }
   ],
-  "revision": "2.0 critical expansion;28October2026",
+  "revision": "4.0 Tahdhīb commentary expansion; 28 October 2026",
   "history": {
     "periods": [
       {
@@ -23407,7 +24954,10 @@
       "works": [
         "taftazani_aqaid",
         "taftazani_sharh_maqasid",
-        "taftazani_maqasid"
+        "taftazani_maqasid",
+        "tahdhib_complete",
+        "tahdhib_logic",
+        "tahdhib_kalam"
       ]
     },
     {
@@ -23498,7 +25048,8 @@
         "dawwani_zawra",
         "dawwani_adudiyya",
         "dawwani_tajrid",
-        "dawwani_sharh_zawra"
+        "dawwani_sharh_zawra",
+        "tahdhib_dawwani"
       ]
     },
     {
@@ -23640,7 +25191,8 @@
         "d. 1538"
       ],
       "works": [
-        "isam_aqaid"
+        "isam_aqaid",
+        "tahdhib_isam"
       ]
     },
     {
@@ -23660,7 +25212,8 @@
         "d.979 AH/1571–1572"
       ],
       "works": [
-        "lari_hidaya"
+        "lari_hidaya",
+        "tahdhib_lari"
       ]
     },
     {
@@ -23909,7 +25462,8 @@
         "d. 1690"
       ],
       "works": [
-        "mirzahid_mawaqif"
+        "mirzahid_mawaqif",
+        "tahdhib_mirzahid"
       ]
     },
     {
@@ -24315,6 +25869,207 @@
       "works": [
         "iranian_sages_claim"
       ]
+    },
+    {
+      "id": "author_tahdhib_01",
+      "name": "Muḥyī al-Dīn al-Kāfiyecī",
+      "date_labels": [
+        "d. 1474"
+      ],
+      "works": [
+        "tahdhib_kafiyaji"
+      ]
+    },
+    {
+      "id": "author_tahdhib_02",
+      "name": "Mīr Abū l-Fatḥ al-Saʿīdī",
+      "date_labels": [
+        "16th c. attribution; precise death uncertain"
+      ],
+      "works": [
+        "tahdhib_saiidi"
+      ]
+    },
+    {
+      "id": "author_tahdhib_03",
+      "name": "Mīr Ghiyāth al-Dīn Manṣūr Dashtakī",
+      "date_labels": [
+        "d. 1542"
+      ],
+      "works": [
+        "tahdhib_dashtaki"
+      ]
+    },
+    {
+      "id": "author_tahdhib_04",
+      "name": "Kemālpaşazāde (Ibn Kemāl)",
+      "date_labels": [
+        "d. 1534"
+      ],
+      "works": [
+        "tahdhib_kemalpasha"
+      ]
+    },
+    {
+      "id": "author_tahdhib_05",
+      "name": "Mīr Fatḥ Allāh al-Shīrāzī",
+      "date_labels": [
+        "d. 1589"
+      ],
+      "works": [
+        "tahdhib_fathullah"
+      ]
+    },
+    {
+      "id": "author_tahdhib_06",
+      "name": "Mullā ʿAbd Allāh al-Yazdī",
+      "date_labels": [
+        "d. 1573 or 1606 (disputed)"
+      ],
+      "works": [
+        "tahdhib_yazdi"
+      ]
+    },
+    {
+      "id": "author_tahdhib_07",
+      "name": "ʿAbd al-Razzāq Lāhījī",
+      "date_labels": [
+        "d. probably 1661–62; date uncertain"
+      ],
+      "works": [
+        "tahdhib_lahiji_persian",
+        "tahdhib_lahiji_yazdi"
+      ]
+    },
+    {
+      "id": "author_tahdhib_08",
+      "name": "ʿUbayd Allāh b. Faḍl Allāh al-Khubayṣī",
+      "date_labels": [
+        "d. c. 1640 (approximate)"
+      ],
+      "works": [
+        "tahdhib_khubaysi"
+      ]
+    },
+    {
+      "id": "author_tahdhib_09",
+      "name": "Yāsīn al-Ḥimṣī",
+      "date_labels": [
+        "d. 1651"
+      ],
+      "works": [
+        "tahdhib_yasin_himsi"
+      ]
+    },
+    {
+      "id": "author_tahdhib_10",
+      "name": "al-Mīrī (precise identity not established here)",
+      "date_labels": [
+        "before 1791; identity and chronology unresolved"
+      ],
+      "works": [
+        "tahdhib_miri"
+      ]
+    },
+    {
+      "id": "author_tahdhib_11",
+      "name": "İsmāʿīl Gelenbevī",
+      "date_labels": [
+        "d. 1791"
+      ],
+      "works": [
+        "tahdhib_gelenbevi"
+      ]
+    },
+    {
+      "id": "author_tahdhib_12",
+      "name": "Muḥammad al-Desūqī",
+      "date_labels": [
+        "d. 1815"
+      ],
+      "works": [
+        "tahdhib_dasuqi"
+      ]
+    },
+    {
+      "id": "author_tahdhib_13",
+      "name": "Ḥasan al-ʿAṭṭār",
+      "date_labels": [
+        "d. 1835"
+      ],
+      "works": [
+        "tahdhib_attar"
+      ]
+    },
+    {
+      "id": "author_tahdhib_14",
+      "name": "ʿUthmān al-Ṣundūqlī al-Naqshbandī",
+      "date_labels": [
+        "d. 1301 AH / 1883–84"
+      ],
+      "works": [
+        "tahdhib_sunduqli"
+      ]
+    },
+    {
+      "id": "author_tahdhib_16",
+      "name": "ʿAbd al-Qādir al-Sanandajī al-Kurdistānī",
+      "date_labels": [
+        "1211–1304 AH / d. 1886–87"
+      ],
+      "works": [
+        "tahdhib_sanandaji"
+      ]
+    },
+    {
+      "id": "author_tahdhib_17",
+      "name": "ʿAbd al-Ḥayy al-Lakhnawī",
+      "date_labels": [
+        "d. 1886"
+      ],
+      "works": [
+        "tahdhib_lakhnawi"
+      ]
+    },
+    {
+      "id": "author_tahdhib_18",
+      "name": "Burhān al-Dīn Jār Allāh Muḥammad al-Ḥusaynī",
+      "date_labels": [
+        "fl. late 19th century; death uncertain"
+      ],
+      "works": [
+        "tahdhib_jarallah"
+      ]
+    },
+    {
+      "id": "author_tahdhib_shahmiri",
+      "name": "Hibat Allāh b. ʿAṭāʾ Allāh al-Ḥusaynī, known as Shāh Mīrī",
+      "date_labels": [
+        "active by 882–898 AH; death unknown"
+      ],
+      "works": [
+        "tahdhib_shahmiri"
+      ]
     }
-  ]
+  ],
+  "tahdhib_revision": {
+    "revision": "tahdhib-3-2026-10-28",
+    "parent": "tahdhib_complete",
+    "logic": "tahdhib_logic",
+    "kalam": "tahdhib_kalam",
+    "added_records": 26,
+    "added_relationships": 26,
+    "source_count": 25,
+    "qualified_notes": [
+      "Logic and kalām are constituent sections of one 1387 treatise, not separate authored works; their analytical nodes are labelled accordingly.",
+      "Distinguish an original commentary, a gloss, a critique, and a report of abridgement. The section relationships are structural, not doctrinal influence.",
+      "The logic part has a far larger commentary corpus; the list here is representative, not an exhaustive register of fifty-plus works.",
+      "The 1560 completion date for Yazdī is supported; competing death dates 981 and 1015 AH remain visible.",
+      "Lāhījī's Persian direct commentary and gloss on Yazdī are treated as distinct according to references, subject to future manuscript collation.",
+      "Al-Mīrī's exact identity is not resolved; the Gelenbevī branch is marked qualified rather than equated with Mīr Zāhid.",
+      "Sanandajī's Taqrīb and its printed appendices are not conflated; 335-page 1901 volume is the checked physical extent.",
+      "Manuscript copy and later printing dates remain bounds, never silently converted into composition dates.",
+      "Correction: Shah Mīrī's commentary attested in dated 957 AH manuscript replaces an unsupported independent Fayḍābādī/Tuḥfat-i Shāhjahānī attribution."
+    ]
+  }
 }

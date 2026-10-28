@@ -65,16 +65,8 @@ The homepage and category screens use a five-icon dock centred at the bottom. Ta
 
 **Bidāya–Ḍarūrī** is under **Research**, linked to the comparative legal-method study, not under Texts. The standalone al-Ḍarūrī fī Uṣūl al-Fiqh reader remains under Uṣūl. The old texts/ibn-rushd/bidayat-al-mujtahid/ preview remains available at its original address but is no longer in the catalogue. Individual books retain their own native reading apparatus and background themes; essays/research retain the full scholarly workspace.
 
-## Texts in Time · Islamic Intellectual Atlas (28 October 2026)
+## Texts in Time · Islamic Intellectual Atlas (revision 4, 28 October 2026)
 
-[Open the research atlas](research/intellectual-atlas/). The integrated
-chronology places political periods, historical events and scholarly works on
-one calendar axis. It preserves 295 catalogue entries and 286 qualified textual
-relationships, with sources, dating notes and a critical audit. The display
-contains 45 political periods and 36 events, without individual reign rows.
+[Open the updated interactive atlas](research/intellectual-atlas/). The research register now includes **321 records and 312 qualified textual relationships**, with the 1387 **Tahdhīb al-manṭiq wa-l-kalām** and its logic/kalām commentaries added as a new genealogy. [Read the Tahdhīb dossier](research/intellectual-atlas/tahdhib/).
 
-The Research menu links to the atlas alongside the Bidāya study. Its expandable
-introduction provides the overview and complete reference PDFs, a JSON register,
-and an offline/source package. This is selective, revisable research; the
-evidence and uncertainties remain part of the published records. See the
-[atlas maintenance notes](research/intellectual-atlas/README.md).
+The updated 84-page reference register and 9-page focused supplement are linked from the atlas. The earlier 15-page overview and 204-page illustrated reference remain available as clearly labelled revision-2 historical map editions. The source-data JSON and offline interactive bundle now include the Tahdhīb additions. Commentary, gloss, critique, and historical coexistence are distinct relationship types; date uncertainties remain part of each record.

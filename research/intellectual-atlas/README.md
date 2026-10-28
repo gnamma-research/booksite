@@ -1,37 +1,43 @@
 # Texts in Time · Islamic Intellectual Atlas
 
-A working research atlas published in Gnamma's Research collection. The
-integrated chronology places empire/state periods, historical events and texts
-on one calendar axis, retaining the source notes, dating qualifications and
-evidence for textual relationships.
+Gnamma Research — revision 4, 28 October 2026.
 
-The revision contains 295 scholarly/context entries and 286 textual
-relationships. The historical display has 45 political periods and 36 events;
-individual ruler reigns are omitted. The older reign records remain in the
-downloadable archival dataset.
+Interactive map: https://gnamma-research.github.io/booksite/research/intellectual-atlas/
+Tahdhīb research dossier: https://gnamma-research.github.io/booksite/research/intellectual-atlas/tahdhib/
+
+The atlas has **321 work, work-series, analytical-section and contextual records**,
+**312 individually qualified textual relationships**, and **307 source records**.
+The expansion adds 26 records and 26 relationships covering Taftāzānī's
+**Tahdhīb al-manṭiq wa-l-kalām** (Rajab 789 AH / 1387 CE), the extensive logic
+commentary and glossing families, and the separately identified kalām commentaries.
 
 ## Files
 
-- `index.html`: self-contained interactive atlas with Gnamma navigation.
-- `site.css`: Gnamma-specific presentation around the atlas.
-- `downloads/`: overview and reference PDFs, canonical JSON data, and the
-  reviewed offline/source package.
-- `publication.json`: edition counts and download checksums.
-- `build.py`: generates the page from the reviewed package.
-
-Run `python research/intellectual-atlas/build.py` from the repository root
-after replacing the reviewed package or the matching PDF downloads. The
-application's data, date interpretation and interaction source are contained in
-the package. Keep PDF editions and dataset versions aligned.
-
-All links are relative to this directory or the repository root, so the page
-works under the GitHub Pages `/booksite/` prefix. The page needs no server-side
-API, database, remote runtime, or third-party script.
+- `index.html` embeds the current canonical dataset for offline-capable browsing.
+- `atlas-app.js` powers drag/zoom/time navigation, evidence panels, search, and the Tahdhīb preset.
+- `tahdhib/index.html`: full branch-by-branch critical research dossier.
+- `tahdhib-additions.json`: independently sourced addition register (26 nodes, 26 relationships, 25 sources).
+- `downloads/intellectual-atlas-data.json`: **canonical latest JSON**, including all earlier and new entries.
+- `downloads/Intellectual_Atlas_Reference_Revision4.pdf`: updated **84-page** text-focused complete catalogue, relationship evidence and bibliographical register.
+- `downloads/Tahdhib_Genealogy_Addendum.pdf`: focused **9-page** supplement.
+- `downloads/Islamic_Intellectual_Timeline.pdf`: illustrated **revision-2** atlas (204 pages); preserves historical diagrams but does not contain the Tahdhīb additions.
+- `downloads/Islamic_Timeline_Overview.pdf`: illustrated **revision-2** historical overview (15 pages).
+- `downloads/Islamic_Timeline_Website_Package.zip`: offline revision-4 viewer + canonical data and the new dossier.
+- `build.py`: validates canonical data and synchronizes the embedded HTML JSON / checksums. It no longer rebuilds from the earlier revision-2 offline ZIP.
 
 ## Editorial status
 
-This is selective, revisable research, not a complete or definitive history.
-Relation type and evidentiary confidence remain separate; political coexistence
-does not establish influence. The source register contains references and
-paraphrased notes rather than copies of complete third-party source texts.
-Public downloads match the reviewed integrated revision of 28 October 2026.
+This is selective, revisable research, not a definitive manuscript stemma.
+An analytical section of a treatise is **not** a separately authored book;
+a commentary is not necessarily an endorsement; a published witness or
+author's death is not a composition date.
+
+Specific cautions in the Tahdhīb family:
+- Yazdī's direct gloss was completed in 967 AH/1560; competing death dates remain unresolved.
+- Lāhījī's Persian direct commentary differs from his gloss on Yazdī.
+- Al-Mīrī is an intermediary identified by a catalogue title, not securely identified with Mīr Zāhid.
+- Al-Sanandajī's 1901 printed appendices are **not automatically** glosses on his own commentary.
+- Relationship from Taftāzānī's Maqāṣid to Tahdhīb's kalām section is a **reported abridgement**, pending collation.
+
+The two original illustrated PDFs remain available with explicit edition
+labels, while the revision-4 catalogue and supplement record the new evidence.
