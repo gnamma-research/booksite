@@ -118,67 +118,77 @@ def scholarly(browser):
 
 
 def responsive_icons_and_colours(browser, width, height, label):
-    """Inspect the actual reader + Editions DOM under portrait/landscape themes."""
+    """Check the CURRENT Downloads interface (gn-es), not its hidden legacy gn-editions view."""
     page=browser.new_page(viewport={'width':width,'height':height}, reduced_motion='reduce')
     errors=[]
     page.on('pageerror',lambda error:errors.append(str(error)))
     try:
-        page.goto(BASE+'index.html#glossary',wait_until='domcontentloaded',timeout=60000)
-        page.locator('#mainContent .glossary-card').first.wait_for(timeout=30000)
-        page.locator('#leftNav [data-route="editions"]').dispatch_event('click')
-        page.locator('#mainContent .gn-editions').wait_for(state='attached',timeout=30000)
-        if not page.locator('#mainContent .gn-edition-nav, #mainContent .gn-ed-edition-nav').first.is_visible():
-            diagnostics=page.evaluate('''()=>({hash:location.hash,body:document.body.className,
-                main:document.getElementById("mainContent")?.outerHTML.slice(0,650),
-                classes:[...document.querySelectorAll(".gn-editions")].map(e=>({display:getComputedStyle(e).display,
-                parent:getComputedStyle(e.parentElement).display,parentClass:e.parentElement.className}))})''')
-            raise AssertionError('Editions route not visible: '+str(diagnostics))
-        page.get_by_role('tab',name='Reading edition').click(timeout=15000)
-        page.locator('.gn-editions .gn-ed-reading-custom > summary').click(timeout=15000)
-        page.locator('.gn-editions .gn-ed-icon-options:visible').first.wait_for(timeout=15000)
+        page.goto(BASE+'index.html#editions',wait_until='domcontentloaded',timeout=60000)
+        tabs=page.locator('#mainContent .gn-es .gn-es-download-type')
+        expect(tabs).to_have_count(4,timeout=30000)
+        expect(tabs.first).to_be_visible()
         expect(page.locator('#leftNav .primary-nav [data-route="editions"] svg.icon use')).to_have_attribute('href','#i-editions')
         assert page.locator('symbol#i-editions').count()==1
+        seen={}
         for theme,palette in [('light','default'),('dark','default'),('light','almohad'),('dark','gnamma'),('dark','nasrid'),('light','zellij')]:
             page.evaluate('''({theme,palette})=>{
                 document.documentElement.dataset.theme=theme;
                 document.documentElement.dataset.palette=palette;
             }''',{'theme':theme,'palette':palette})
-            measures=page.evaluate('''()=>{
-                const root=document.documentElement,nav=[...document.querySelectorAll('#leftNav .primary-nav>.nav-item')];
-                const active=nav.find(e=>e.dataset.route==='editions');
-                const glyph=active.querySelector('svg.icon');
-                const attr=window.getComputedStyle(glyph);
-                const parent=window.getComputedStyle(active);
-                const icons=nav.map(e=>{
-                    const icon=e.querySelector('svg.icon');if(!icon)return null;
-                    const c=getComputedStyle(icon),rect=icon.getBoundingClientRect();
-                    return {id:e.dataset.route,w:parseFloat(c.width),h:parseFloat(c.height),
-                      color:c.color,stroke:c.stroke,visible:rect.width>0,
-                      middle:rect.y+rect.height/2,row:e.getBoundingClientRect().y+e.getBoundingClientRect().height/2}
+            metrics=page.evaluate('''()=>{
+                const root=document.documentElement;
+                const css=e=>getComputedStyle(e);
+                const nav=[...document.querySelectorAll('#leftNav .primary-nav>.nav-item')];
+                const editions=nav.find(e=>e.dataset.route==='editions');
+                const editionIcon=editions.querySelector('svg.icon');
+                const navIcons=nav.map(e=>{
+                    const svg=e.querySelector('svg.icon');if(!svg)return null;
+                    const style=css(svg),rect=svg.getBoundingClientRect(),parent=e.getBoundingClientRect();
+                    return {route:e.dataset.route,w:parseFloat(style.width),h:parseFloat(style.height),
+                        color:style.color,stroke:style.stroke,visible:rect.width>0,
+                        delta:Math.abs(rect.top+rect.height/2-parent.top-parent.height/2)};
                 }).filter(Boolean);
-                const editionIcons=[...document.querySelectorAll('.gn-editions .gn-ed-choice-glyph')].filter(e=>e.getClientRects().length);
-                const choices=editionIcons.map(e=>{let r=e.getBoundingClientRect();return {w:r.width,h:r.height,color:getComputedStyle(e).color,stroke:e.getAttribute('stroke')}});
-                const reference=parent.color;
-                return {accent:getComputedStyle(root).getPropertyValue('--accent').trim(),
-                  text:getComputedStyle(root).getPropertyValue('--text').trim(),
-                  mainWidth:document.documentElement.scrollWidth-window.innerWidth,
-                  navIcon:{width:parseFloat(attr.width),height:parseFloat(attr.height),color:attr.color,stroke:attr.stroke},
-                  parentColor:reference,icons,choices};
+                const types=[...document.querySelectorAll('#mainContent .gn-es .gn-es-download-type')].map(btn=>{
+                    const glyph=btn.querySelector('svg'),style=css(glyph),rect=glyph.getBoundingClientRect();
+                    const parent=btn.getBoundingClientRect();
+                    return {type:btn.dataset.esDownloadType,w:parseFloat(style.width),h:parseFloat(style.height),
+                        stroke:glyph.getAttribute('stroke'),color:style.color,
+                        buttonColor:css(btn).color,
+                        selected:btn.getAttribute('aria-selected')==='true',
+                        height:parent.height,delta:Math.abs(rect.top+rect.height/2-parent.top-parent.height/2)};
+                });
+                return {accent:css(root).getPropertyValue('--accent').trim(),
+                    text:css(root).getPropertyValue('--text').trim(),
+                    muted:css(root).getPropertyValue('--muted').trim(),
+                    overflow:document.documentElement.scrollWidth-window.innerWidth,
+                    navColor:css(editionIcon).color, navParent:css(editions).color,
+                    navIcons, types};
             }''')
-            assert measures['accent'] and measures['text'],(label,theme,palette,measures)
-            assert measures['mainWidth']<=6,(label,theme,palette,'viewport overflow',measures['mainWidth'])
-            assert measures['navIcon']['width']==18 and measures['navIcon']['height']==18,(label,theme,palette,measures['navIcon'])
-            assert measures['navIcon']['color']==measures['parentColor'],(label,theme,palette,'Ed icon fails to inherit theme')
-            assert all(17<=i['w']<=19 and 17<=i['h']<=19 for i in measures['icons']), (label,theme,palette,'nav glyph sizes',measures['icons'])
-            assert all(abs(i['row']-i['middle'])<=3 for i in measures['icons'] if i['visible']),(label,theme,palette,'nav alignment',measures['icons'])
-            assert len(measures['choices'])>=4,(label,theme,palette,'edition icons absent')
-            assert all(19<=x['w']<=27 and 19<=x['h']<=27 and x['color'] not in ('rgba(0, 0, 0, 0)','transparent') and x['stroke']=='currentColor'
-                for x in measures['choices']),(label,theme,palette,'Edition icon paint/sizes',measures['choices'][:12])
+            seen[(theme,palette)]=metrics['accent']
+            assert metrics['accent'] and metrics['text'] and metrics['muted'],(label,theme,palette,metrics)
+            assert metrics['overflow']<=6,(label,theme,palette,'unexpected horizontal page overflow',metrics['overflow'])
+            assert metrics['navColor']==metrics['navParent'],(label,theme,palette,'navigation icon fails to inherit palette',metrics)
+            assert all(17<=item['w']<=19 and 17<=item['h']<=19 for item in metrics['navIcons']), (label,theme,palette,'navigation icon size',metrics['navIcons'])
+            assert all(item['delta']<=3 for item in metrics['navIcons'] if item['visible']),(label,theme,palette,'navigation icon vertical misalignment',metrics['navIcons'])
+            assert len(metrics['types'])==4,(label,theme,palette,'missing download types',metrics['types'])
+            expected=18 if width<=450 else 21
+            assert all(abs(item['w']-expected)<=1 and abs(item['h']-expected)<=1
+                for item in metrics['types']),(label,theme,palette,'download icon sizes',metrics['types'])
+            assert all(item['stroke']=='currentColor' and item['color'] not in ('transparent','rgba(0, 0, 0, 0)')
+                for item in metrics['types']),(label,theme,palette,'SVG stroke or theme paint',metrics['types'])
+            assert all(item['height']>=44 and item['delta']<=3 for item in metrics['types']),(label,theme,palette,'download icon vertical alignment',metrics['types'])
+            assert all(item['color']==item['buttonColor'] for item in metrics['types'] if item['selected']), (label,theme,palette,'selected icon contrast does not match theme',metrics['types'])
             if theme=='dark' and palette=='gnamma':
                 page.screenshot(path=str(ARTIFACTS/('icons-'+label+'-dark.png')),full_page=False)
             if theme=='light' and palette=='default':
                 page.screenshot(path=str(ARTIFACTS/('icons-'+label+'-light.png')),full_page=False)
-        assert not any('edition' in e.lower() or 'dictionary' in e.lower() for e in errors),(label,errors)
+        assert len(set(seen.values()))>=3,(label,'palette colours did not change',seen)
+        for kind in ('guide','offline','source','book'):
+            tab=page.locator('#mainContent .gn-es [data-es-download-type="'+kind+'"]')
+            tab.click(timeout=15000)
+            expect(tab).to_have_attribute('aria-selected','true')
+            expect(page.locator('#mainContent .gn-es [data-es-type-panel="'+kind+'"]')).to_be_visible()
+        assert not any('edition' in err.lower() or 'dictionary' in err.lower() for err in errors),(label,errors)
     finally:
         page.close()
 
