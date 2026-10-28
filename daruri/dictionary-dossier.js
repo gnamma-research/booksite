@@ -198,7 +198,7 @@ function renderSources(host,term,full,mode){
  const controls=put(host,'div','gn-ds-tools');
  const expand=put(controls,'button','gn-ds-expand-all','Expand sources');expand.type='button';
  expand.addEventListener('click',()=>{
-  const sources=$('.gn-ds-source-disclosure',host);
+  const sources=[...host.querySelectorAll('.gn-ds-source-disclosure')];
   const opening=sources.some(node=>!node.open);
   for(const source of sources)source.open=opening;
   expand.textContent=opening?'Collapse sources':'Expand sources';
