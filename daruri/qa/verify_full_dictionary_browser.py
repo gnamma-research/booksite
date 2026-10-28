@@ -123,7 +123,8 @@ def responsive_icons_and_colours(browser, width, height, label):
     errors=[]
     page.on('pageerror',lambda error:errors.append(str(error)))
     try:
-        page.goto(BASE+'index.html#editions',wait_until='domcontentloaded',timeout=60000)
+        page.goto(BASE+'#editions',wait_until='domcontentloaded',timeout=60000)
+        page.get_by_role('tab',name='Reading edition').click(timeout=30000)
         page.locator('.gn-editions .gn-ed-reading-custom > summary').click(timeout=30000)
         page.locator('.gn-editions .gn-ed-icon-options:visible').first.wait_for(timeout=15000)
         expect(page.locator('#leftNav .primary-nav [data-route="editions"] svg.icon use')).to_have_attribute('href','#i-editions')
@@ -175,13 +176,13 @@ def responsive_icons_and_colours(browser, width, height, label):
 if __name__=='__main__':
     with sync_playwright() as p:
         browser=p.chromium.launch(headless=True)
-        for width,height,label in [(1365,850,'desktop'),(390,844,'portrait'),(844,390,'landscape'),(768,1024,'tablet')]:
-            responsive_icons_and_colours(browser,width,height,label)
         standalone(browser,1365,850,'desktop')
         standalone(browser,390,844,'mobile')
         reader(browser,1365,900,'desktop')
         reader(browser,390,844,'mobile')
         reader(browser,844,390,'landscape')
         scholarly(browser)
+        for width,height,label in [(1365,850,'desktop'),(390,844,'portrait'),(844,390,'landscape'),(768,1024,'tablet')]:
+            responsive_icons_and_colours(browser,width,height,label)
         browser.close()
     print('PASS: Unified dictionary, compact expandable sources, preserved Arabic/English evidence, one-scroller navigation, responsive Editions/nav icons, palette colour inheritance across 4 viewports and 6 themes.')
