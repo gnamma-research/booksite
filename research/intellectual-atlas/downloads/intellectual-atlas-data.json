@@ -22241,6 +22241,478 @@
       ],
       "evidence": "Catalogue or edition explicitly identifies this work as a commentary on the KALĀM section, not on the logic part.",
       "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "NP_e01",
+      "source": "aristotle_categories",
+      "target": "porphyry_categories_commentary",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP02"
+      ],
+      "evidence": "Porphyry’s extant questions-and-answers commentary explicitly explicates the Categories.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e02",
+      "source": "porphyry_isagoge",
+      "target": "boethius_isagoge",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP21"
+      ],
+      "evidence": "Boethius composed two commentaries on the Isagoge using distinct Latin versions.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e03",
+      "source": "plotinus_enneads",
+      "target": "porphyry_sententiae",
+      "relation": "textual_use",
+      "confidence": "qualified",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP02"
+      ],
+      "evidence": "Porphyry systematizes Plotinian themes; this is a documented philosophical indebtedness, not an assertion of continuous line-by-line paraphrase.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e04",
+      "source": "plotinus_enneads",
+      "target": "porphyry_vita_plotini",
+      "relation": "author_reference",
+      "confidence": "direct",
+      "label": "editorial witness",
+      "sources": [
+        "NP02"
+      ],
+      "evidence": "Porphyry edited and arranged Plotinus’ writings and prefixed the Life.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e05",
+      "source": "aristotle_metaphysics",
+      "target": "syrianus_metaphysics",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP04"
+      ],
+      "evidence": "The surviving commentary covers B, Gamma, M and N; Syrianus frequently contests Aristotle’s polemic against Platonism.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e06",
+      "source": "syrianus_metaphysics",
+      "target": "asclepius_metaphysics",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP04"
+      ],
+      "evidence": "Asclepius’ later Metaphysics commentary preserves and uses Syrianus’ philosophical exegesis among earlier sources.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e07",
+      "source": "plato_timaeus",
+      "target": "proclus_timaeus",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP05"
+      ],
+      "evidence": "Proclus’ lengthy extant text is explicitly a philosophical commentary on the Timaeus.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e08",
+      "source": "plato_parmenides",
+      "target": "proclus_parmenides",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP05"
+      ],
+      "evidence": "Proclus interprets the Parmenides as a theological treatment of the One and subsequent orders.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e09",
+      "source": "plato_parmenides",
+      "target": "proclus_platonic_theology",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP05"
+      ],
+      "evidence": "Proclus’ Platonic Theology draws heavily on the Parmenides’ theological hypotheses as treated in his school.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e10",
+      "source": "proclus_timaeus",
+      "target": "arabic_proclus_timaeus",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP16"
+      ],
+      "evidence": "A critical edition identifies the Arabic surviving passage as deriving from Proclus’ commentary at Timaeus 89e3–90c7; translator/date remain unverified.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e11",
+      "source": "proclus_elements",
+      "target": "arabic_proclus_selections",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP10"
+      ],
+      "evidence": "The ninth-century Arabic Proclus corpus contains recognizable reworkings of Elements propositions, some reassigned to Alexander.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e12",
+      "source": "proclus_eternity",
+      "target": "arabic_proclus_eternity",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP10"
+      ],
+      "evidence": "Arabic witness transmits selected eternity arguments from Proclus, with textual divergences and partial survival.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e13",
+      "source": "proclus_elements",
+      "target": "amiri_fusul",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP15"
+      ],
+      "evidence": "Wakelnig’s collation identifies passages of al-ʿĀmirī’s Fuṣūl paraphrasing propositions of Proclus’ Elements through Arabic transmission.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e14",
+      "source": "proclus_evil",
+      "target": "dionysius_divine_names",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP09"
+      ],
+      "evidence": "Pseudo-Dionysius’ Divine Names treatment of evil reuses Proclean material while reinterpreting it within Christian theology.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e15",
+      "source": "dionysius_divine_names",
+      "target": "sergius_dionysius_syriac",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP14"
+      ],
+      "evidence": "Sergius made an early Syriac version of the Dionysian corpus, later subject to redaction and translation questions.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e16",
+      "source": "dionysius_celestial",
+      "target": "sergius_dionysius_syriac",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP14"
+      ],
+      "evidence": "Celestial Hierarchy belongs to the Dionysian writings transmitted through Sergius’ Syriac version.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e17",
+      "source": "dionysius_mystical",
+      "target": "sergius_dionysius_syriac",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP14"
+      ],
+      "evidence": "Mystical Theology belongs to the Greek Dionysian corpus with early Syriac textual reception.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e18",
+      "source": "aristotle_categories",
+      "target": "ammonius_categories",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP06"
+      ],
+      "evidence": "Ammonius’ surviving work comments on the Categories within the Alexandrian Neoplatonic curriculum.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e19",
+      "source": "aristotle_categories",
+      "target": "simplicius_categories",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP07"
+      ],
+      "evidence": "Simplicius’ Categories commentary interprets Aristotle through earlier philosophical and Platonic commentary traditions.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e20",
+      "source": "aristotle_heavens",
+      "target": "simplicius_heavens",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP07"
+      ],
+      "evidence": "Simplicius’ treatise is an explicit commentary on Aristotle’s De caelo.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e21",
+      "source": "aristotle_metaphysics",
+      "target": "asclepius_metaphysics",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP04"
+      ],
+      "evidence": "Asclepius expounds Aristotle’s Metaphysics in the Alexandrian scholastic tradition.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e22",
+      "source": "aristotle_physics",
+      "target": "philoponus_physics",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP20"
+      ],
+      "evidence": "Philoponus’ early extant Greek commentary explicates Aristotle’s Physics, often critically.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e23",
+      "source": "aristotle_physics",
+      "target": "simplicius_physics",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP07"
+      ],
+      "evidence": "Simplicius’ substantial commentary explicitly addresses Aristotle’s Physics.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e24",
+      "source": "plotinus_enneads",
+      "target": "arabic_greek_sage",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP11"
+      ],
+      "evidence": "Sayings attributed to the Greek Sage share Arabic Plotinus material with the Theology and ultimately stem from Enneads IV–VI.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e25",
+      "source": "plotinus_enneads",
+      "target": "arabic_divine_science",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP11"
+      ],
+      "evidence": "The falsely Farabian Letter on Divine Science corresponds to part of Ennead V through the Arabic Plotinus translation family.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e26",
+      "source": "arabic_theology",
+      "target": "arabic_pure_good",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP11",
+        "NP18"
+      ],
+      "evidence": "Arabic Book of the Pure Good adapts Proclus using a simplified Plotinian hierarchy shaped by the Arabic Plotinus.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e27",
+      "source": "arabic_theology",
+      "target": "farabi_harmony",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP11"
+      ],
+      "evidence": "Harmony explicitly appeals to the Theology of Aristotle; attribution of Harmony to al-Fārābī remains disputed.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e28",
+      "source": "arabic_theology",
+      "target": "sijistani_yanabi",
+      "relation": "broad_influence",
+      "confidence": "qualified",
+      "label": "qualified philosophical reception",
+      "sources": [
+        "NP11",
+        "NP23"
+      ],
+      "evidence": "Al-Sijistānī reworks the Arabic Neoplatonic hierarchy within Ismāʿīlī teaching; this does not prove direct use of one extant Theology recension.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e29",
+      "source": "arabic_theology",
+      "target": "miskawayh_fawz",
+      "relation": "broad_influence",
+      "confidence": "qualified",
+      "label": "qualified philosophical reception",
+      "sources": [
+        "NP11"
+      ],
+      "evidence": "Miskawayh’s Fawz al-asghar shares terminology and doctrines with Arabic Plotinus; source path for particular passages needs collation.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e30",
+      "source": "arabic_theology",
+      "target": "isaac_israeli_definitions",
+      "relation": "broad_influence",
+      "confidence": "qualified",
+      "label": "qualified philosophical reception",
+      "sources": [
+        "NP11"
+      ],
+      "evidence": "Isaac Israeli draws on Arabic Plotinus and Kindian ideas; this records a scholarly account, not a secured direct citation of the Theology.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e31",
+      "source": "arabic_pure_good",
+      "target": "latin_liber_causis",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP17",
+        "NP18"
+      ],
+      "evidence": "Gerard of Cremona’s twelfth-century Latin Liber de causis transmits the Arabic Book of the Pure Good.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e32",
+      "source": "latin_liber_causis",
+      "target": "aquinas_liber_causis",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP17"
+      ],
+      "evidence": "Aquinas’ Expositio super Librum de causis directly comments on the Latin Book of Causes.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e33",
+      "source": "proclus_elements",
+      "target": "latin_proclus_elements",
+      "relation": "translation_adaptation",
+      "confidence": "direct",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP17"
+      ],
+      "evidence": "William of Moerbeke’s 1268 Latin translation offers direct access to the Elements.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e34",
+      "source": "latin_proclus_elements",
+      "target": "aquinas_liber_causis",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP17"
+      ],
+      "evidence": "Aquinas compares Latin Proclus with the Book of Causes to identify the latter’s Proclean origin.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e35",
+      "source": "alexander_principles_original",
+      "target": "sergius_alexander_principles",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP19",
+        "NP25"
+      ],
+      "evidence": "Sergius’ sixth-century Syriac adaptation modifies Alexander’s De principiis; the lost Greek original cannot be reconstructed from Syriac alone.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e36",
+      "source": "proclus_platonic_theology",
+      "target": "damascius_principles",
+      "relation": "critique",
+      "confidence": "qualified",
+      "label": "critical engagement",
+      "sources": [
+        "NP22"
+      ],
+      "evidence": "Damascius takes up and criticizes Proclean first-principle metaphysics, but a strict lemma-by-lemma response to this particular book is not asserted.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
     }
   ],
   "notes": [
@@ -22668,6 +23140,18 @@
         "GNA-H01",
         "GNA-H02",
         "GNA-H03"
+      ]
+    },
+    {
+      "title": "The missing Neoplatonic bridge (revision 7)",
+      "text": "Greek Neoplatonism was a complex late antique scholastic formation. Plato/Aristotle -> commentators -> Syriac/Greek-Arabic interventions -> al-Kindi and later Arabic philosophy must be read as different, sometimes parallel pathways. Arabic Plotinus is an interpretive reworking of Enneads IV–VI, while Arabic Proclus survives in several distinct recensions including but not reducible to the Book of Pure Good. Alexandrian, Athenian, Syriac and Baghdad settings overlap rather than form one unbroken institutional chain. Six text-centered families, scholarly networks and source-qualified relations have been added; no speculative influence links across mere chronological overlap.",
+      "sources": [
+        "NP01",
+        "NP05",
+        "NP10",
+        "NP11",
+        "NP12",
+        "NP15"
       ]
     }
   ],
@@ -26891,6 +27375,90 @@
       "Qajar emergence is gradual:1786 is a periodization convention here. ʿAbbās I’s accession is displayed as 1587/88 because cited specialist accounts differ.",
       "Open contemporary context windows end at 2026 only because that is the chart cutoff. Their endpoints are not predicted political events.",
       "Rulers are a deliberately selected contextual sample, not a complete regnal list. CE is used on the common horizontal axis."
+    ],
+    "networks": [
+      {
+        "id": "NET01",
+        "label": "Plotinus and Porphyry: Rome and eastern Mediterranean teaching",
+        "start": 245,
+        "end": 305,
+        "date_label": "c.245–305 CE (scholarly milieu)",
+        "region": "Rome / Tyre / Mediterranean",
+        "kind": "scholarly_network",
+        "record_group": "networks",
+        "note": "A philosophical transmission milieu centered on Plotinus and Porphyry, not a state, a continuous formal institution or an inference that every contemporary work was composed in Rome.",
+        "sources": [
+          "NP01",
+          "NP02"
+        ],
+        "confidence": "biographical and curricular reconstruction"
+      },
+      {
+        "id": "NET02",
+        "label": "Late Platonist teaching in Athens",
+        "start": 410,
+        "end": 529,
+        "date_label": "c.410–529 CE (conventional)",
+        "region": "Athens",
+        "kind": "scholarly_network",
+        "record_group": "networks",
+        "note": "Athenian teaching setting of Syrianus, Proclus and Damascius. The conventional 529 restriction should not be interpreted as an instantaneous extinction of Greek philosophy or total closure of all teaching.",
+        "sources": [
+          "NP01",
+          "NP05",
+          "NP22"
+        ],
+        "confidence": "conventional institutional frame"
+      },
+      {
+        "id": "NET03",
+        "label": "Alexandrian Neoplatonic Aristotelian school",
+        "start": 470,
+        "end": 630,
+        "date_label": "c.470–630 CE (pedagogical continuity)",
+        "region": "Alexandria / Constantinople",
+        "kind": "scholarly_network",
+        "record_group": "networks",
+        "note": "Teaching lineage from Ammonius through Philoponus, Olympiodorus and later expositors. Continuity across centuries is documented, but the band is not continuous personal instruction.",
+        "sources": [
+          "NP06",
+          "NP08"
+        ],
+        "confidence": "selective school-history context"
+      },
+      {
+        "id": "NET04",
+        "label": "Syriac Aristotelian and Dionysian scholarly traditions",
+        "start": 490,
+        "end": 800,
+        "date_label": "c.490–800 CE (regional networks, variable)",
+        "region": "Edessa / Nisibis / Reshaina / Syria / Mesopotamia",
+        "kind": "scholarly_network",
+        "record_group": "networks",
+        "note": "Overlapping Syriac communities preserved and transformed Aristotelian logic and Christian Neoplatonic theology. Not one continuous academy, not a single demonstrable route from Greek to Arabic.",
+        "sources": [
+          "NP10",
+          "NP12",
+          "NP13"
+        ],
+        "confidence": "broad regional pedagogical and textual context"
+      },
+      {
+        "id": "NET05",
+        "label": "Early Abbasid Baghdad: al-Kindī and translation circles",
+        "start": 790,
+        "end": 920,
+        "date_label": "c.790–920 CE (multiple translation circles)",
+        "region": "Baghdad / Iraq",
+        "kind": "scholarly_network",
+        "record_group": "networks",
+        "note": "Translations and free reworkings of Aristotle, Plotinus, Proclus and late antique commentators under early Abbasid sponsorship. Do not equate all versions with a single coherent school, fixed date or translation channel.",
+        "sources": [
+          "NP10",
+          "NP11"
+        ],
+        "confidence": "documented textual movement; broad institutional date"
+      }
     ]
   },
   "timeline_meta": {
@@ -27022,7 +27590,8 @@
         "GNA-P01",
         "GNA-P02",
         "GNA-P03"
-      ]
+      ],
+      "school_network_note": "Scholarly network bands are not political dynasties and do not assert direct transmission. See each detail/source."
     }
   },
   "author_index": [
@@ -29424,6 +29993,121 @@
       "within_family_relationships": 4,
       "explicit_commentary_links": 4,
       "scope": "Ṣadrā's multi-volume philosophical summa and its later glosses and continuations."
+    },
+    {
+      "id": "plato_timaeus",
+      "label": "Plato’s Timaeus: Greek and Arabic reception",
+      "section": "Greek commentary and transmission",
+      "root": "plato_timaeus",
+      "member_ids": [
+        "plato_timaeus",
+        "galen_timaeus",
+        "timaeus_arabic_compendium",
+        "proclus_timaeus",
+        "arabic_proclus_timaeus"
+      ],
+      "record_count": 5,
+      "within_family_relationships": 4,
+      "explicit_commentary_links": 2,
+      "scope": "Greek commentary and late Arabic excerpts, including Galen's epitome. These are distinct textual recensions; no claim that a full Proclus Greek text was translated."
+    },
+    {
+      "id": "aristotle_metaphysics",
+      "label": "Aristotle’s Metaphysics: Greek, Arabic and Latin commentaries",
+      "section": "Greek commentary and transmission",
+      "root": "aristotle_metaphysics",
+      "member_ids": [
+        "aristotle_metaphysics",
+        "syrianus_metaphysics",
+        "asclepius_metaphysics",
+        "themistius_lambda",
+        "arabic_themistius_lambda",
+        "arabic_metaphysics",
+        "thabit_metaphysics",
+        "farabi_aghrad",
+        "averroes_long_metaphysics"
+      ],
+      "record_count": 9,
+      "within_family_relationships": 10,
+      "explicit_commentary_links": 6,
+      "scope": "Named Metaphysics commentary and transmission family spanning Greek Alexandrian exegesis to Arabic commentaries. Syrianus covers only B, Γ, M, N."
+    },
+    {
+      "id": "aristotle_categories",
+      "label": "Aristotle’s Categories: Neoplatonic, Syriac, Arabic and Latin",
+      "section": "Greek commentary and transmission",
+      "root": "aristotle_categories",
+      "member_ids": [
+        "aristotle_categories",
+        "porphyry_categories_commentary",
+        "porphyry_isagoge",
+        "ammonius_categories",
+        "simplicius_categories",
+        "sergius_categories",
+        "arabic_categories",
+        "boethius_isagoge"
+      ],
+      "record_count": 8,
+      "within_family_relationships": 7,
+      "explicit_commentary_links": 5,
+      "scope": "Categories textual commentaries and the Isagoge preparatory curriculum; Boethius is a separate Latin line, not a Syriac-Arabic intermediate."
+    },
+    {
+      "id": "aristotle_physics",
+      "label": "Aristotle’s Physics: late antique commentaries",
+      "section": "Greek commentary and transmission",
+      "root": "aristotle_physics",
+      "member_ids": [
+        "aristotle_physics",
+        "philoponus_physics",
+        "simplicius_physics"
+      ],
+      "record_count": 3,
+      "within_family_relationships": 2,
+      "explicit_commentary_links": 2,
+      "scope": "A major base text with two important, often mutually critical late antique Greek commentators; direct Arabic translation of all of Simplicius not established."
+    },
+    {
+      "id": "plotinus_transmission",
+      "label": "Enneads and Arabic Plotinus transmission",
+      "section": "Greek–Arabic Neoplatonism",
+      "root": "plotinus_enneads",
+      "member_ids": [
+        "plotinus_enneads",
+        "porphyry_vita_plotini",
+        "porphyry_sententiae",
+        "arabic_theology",
+        "arabic_greek_sage",
+        "arabic_divine_science",
+        "avicenna_theology_notes",
+        "farabi_harmony",
+        "sijistani_yanabi",
+        "miskawayh_fawz",
+        "isaac_israeli_definitions"
+      ],
+      "record_count": 11,
+      "within_family_relationships": 10,
+      "explicit_commentary_links": 1,
+      "scope": "A reception network, NOT an exhaustive Greek commentary family. Different Arabic reworkings and indirect later receptions are not conflated with original Plotinus."
+    },
+    {
+      "id": "proclus_elements",
+      "label": "Proclus’ Elements: Arabic Proclus, Book of Causes and Latin",
+      "section": "Greek–Arabic Neoplatonism",
+      "root": "proclus_elements",
+      "member_ids": [
+        "proclus_elements",
+        "arabic_proclus_selections",
+        "arabic_pure_good",
+        "amiri_fusul",
+        "latin_liber_causis",
+        "latin_proclus_elements",
+        "aquinas_liber_causis"
+      ],
+      "record_count": 7,
+      "within_family_relationships": 7,
+      "explicit_commentary_links": 1,
+      "scope": "Greek source, Arabic adaptations and later Latin commentaries are distinct witnesses and must not be represented as a single continuous verbatim translation."
     }
   ],
   "textual_family_method": {
