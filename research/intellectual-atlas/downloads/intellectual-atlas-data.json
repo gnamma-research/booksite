@@ -20131,6 +20131,15 @@
         "GNA-A09",
         "GNA-A10"
       ]
+    },
+    {
+      "title": "Pre-Islamic political background (revision 6)",
+      "text": "Achaemenid, Hellenistic-successor and Roman imperial context bands explain chronological continuity before Islam. A Hellenistic collective interval is not one dynasty or state. The Roman band to the conventional 395 division overlaps with the Eastern Roman band from 330; these labels represent different emphases within the same historically continuous polity, not separate ancient empires. No influence is inferred.",
+      "sources": [
+        "GNA-H01",
+        "GNA-H02",
+        "GNA-H03"
+      ]
     }
   ],
   "audit": [
@@ -22408,6 +22417,63 @@
         "open_end": true,
         "end_is_chart_cutoff": true,
         "record_group": "periods"
+      },
+      {
+        "id": "GNA-P01",
+        "label": "Achaemenid Empire (regional context)",
+        "start": -550,
+        "end": -330,
+        "date_label": "c. 550–330 BCE",
+        "region": "Anatolia, Egypt, Iran and West/Central Asia; changing extent",
+        "track": "Ancient western Asia",
+        "kind": "polity",
+        "note": "Achaemenid administrative and political background to Ionian, Classical Greek, and eastern Mediterranean intellectual history. Dates are conventional dynasty-period boundaries, not dates of transmission or a uniform territorial extent.",
+        "sources": [
+          "GNA-H01"
+        ],
+        "confidence": "established broad chronology",
+        "date_basis": "conventional empire span",
+        "context_only": true,
+        "islamic_polity": false,
+        "record_group": "periods"
+      },
+      {
+        "id": "GNA-P02",
+        "label": "Hellenistic successor kingdoms",
+        "start": -323,
+        "end": -31,
+        "date_label": "323–31 BCE (conventional Hellenistic era)",
+        "region": "Eastern Mediterranean and western Asia; multiple successor kingdoms",
+        "track": "Hellenistic Greek world",
+        "kind": "polity",
+        "note": "Collective background period for the independent Ptolemaic, Seleucid, Antigonid, and other successor states; not one polity, state, dynasty or coherent empire. The endpoint is a historiographical convention.",
+        "sources": [
+          "GNA-H02"
+        ],
+        "confidence": "conventional era bounds",
+        "date_basis": "Alexander's death and late Ptolemaic endpoint",
+        "context_only": true,
+        "islamic_polity": false,
+        "record_group": "periods"
+      },
+      {
+        "id": "GNA-P03",
+        "label": "Roman imperial world (to division)",
+        "start": -27,
+        "end": 395,
+        "date_label": "27 BCE–395 CE (divided administration thereafter)",
+        "region": "Roman Mediterranean world; changing frontiers",
+        "track": "Late antique Mediterranean",
+        "kind": "polity",
+        "note": "Broad chronological setting for Roman-era Stoicism, Platonism, skepticism and Christian/Jewish philosophical works. The imperial polity continued in both western and eastern forms; eastern Roman/Byzantine chronology is displayed separately from its conventional 330 CE beginning.",
+        "sources": [
+          "GNA-H03"
+        ],
+        "confidence": "conventional political periodization",
+        "date_basis": "Augustan principate to 395 administrative division",
+        "context_only": true,
+        "islamic_polity": false,
+        "record_group": "periods"
       }
     ],
     "rulers": [
@@ -24244,6 +24310,33 @@
         "type": "historical reference",
         "accessed": "2026-10-28",
         "web_ref": "turn344view0"
+      },
+      {
+        "id": "GNA-H01",
+        "author": "The Metropolitan Museum of Art, Department of Ancient Near Eastern Art",
+        "title": "The Achaemenid Persian Empire (550–330 B.C.)",
+        "url": "https://www.metmuseum.org/essays/the-achaemenid-persian-empire-550-330-b-c",
+        "note": "Political and geographical background, 550–330 BCE.",
+        "type": "historical reference",
+        "accessed": "2026-10-29"
+      },
+      {
+        "id": "GNA-H02",
+        "author": "OpenStax, World History Volume 1",
+        "title": "6.3 The Hellenistic Era",
+        "url": "https://openstax.org/books/world-history-volume-1/pages/6-3-the-hellenistic-era",
+        "note": "Alexander's death 323 BCE to 31 BCE, successor kingdoms are several states.",
+        "type": "historical reference",
+        "accessed": "2026-10-29"
+      },
+      {
+        "id": "GNA-H03",
+        "author": "Christopher Lightfoot, Metropolitan Museum of Art",
+        "title": "The Roman Empire (27 B.C.–393 A.D.)",
+        "url": "https://www.metmuseum.org/essays/the-roman-empire-27-b-c-393-a-d",
+        "note": "Roman imperial periodization and later division; 395 convention applied with qualification.",
+        "type": "historical reference",
+        "accessed": "2026-10-29"
       }
     ],
     "method_notes": [
@@ -24292,7 +24385,7 @@
     "summary_count": 98,
     "featured_count": 38,
     "integrated_display": {
-      "version": "2.0",
+      "version": "2.1",
       "layout": "one shared chronological field",
       "exclude_individual_rulers": true,
       "excluded_period_ids": [
@@ -24332,7 +24425,10 @@
         "HL_P17": "British Raj",
         "HL_P18": "Turkish Republic",
         "HL_P19": "South Asia after Partition",
-        "HL_P20": "Iran after 1979"
+        "HL_P20": "Iran after 1979",
+        "GNA-P01": "Achaemenid Empire",
+        "GNA-P02": "Hellenistic kingdoms",
+        "GNA-P03": "Roman imperial world"
       },
       "event_labels": {
         "HEV01": "First revelations in Islamic tradition",
@@ -24347,7 +24443,7 @@
         "HL_E06": "Ottoman conquest of Mamluk Egypt",
         "HL_E08": "Safavid capital moves to Isfahan"
       },
-      "chronology_note": "Empire bars, event rules and work marks share the same time scale. Visual alignment establishes temporal context, not a new influence claim.",
+      "chronology_note": "Ancient Persian, Hellenistic and Roman periods join later empires as political context, not as an inference of intellectual influence; a Hellenistic era band represents multiple independent kingdoms. Empire bars and event rules share the textual year axis.",
       "period_ids": [
         "HEP01",
         "HEP02",
@@ -24393,7 +24489,10 @@
         "HL_P18",
         "HL_P10",
         "HL_P19",
-        "HL_P20"
+        "HL_P20",
+        "GNA-P01",
+        "GNA-P02",
+        "GNA-P03"
       ]
     }
   },
