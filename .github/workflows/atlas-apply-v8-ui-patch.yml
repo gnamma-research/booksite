@@ -1,0 +1,46 @@
+name: Apply verified Atlas 7.1 UI source migration
+
+on:
+  push:
+    branches: [atlas-continuous-pan-date-markers-2026-10-29]
+    paths:
+      - 'research/intellectual-atlas/qa/v8-code.patch.b64'
+
+permissions:
+  contents: write
+
+jobs:
+  apply-source-and-dates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Apply hash-verified source patch and two independently attested stages
+        run: |
+          python research/intellectual-atlas/qa/apply_v8_patch.py
+          node --check research/intellectual-atlas/atlas-app.js
+          python research/intellectual-atlas/build.py
+          python -m py_compile research/intellectual-atlas/tests/verify_continuous_scrub_browser.py
+      - name: Commit ordinary modified source files to the feature branch
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/intellectual-atlas/atlas-app.js
+          git add research/intellectual-atlas/site.css
+          git add research/intellectual-atlas/downloads/intellectual-atlas-data.json
+          git add research/intellectual-atlas/index.html
+          git add research/intellectual-atlas/README.md
+          git add research/intellectual-atlas/build.py
+          git add research/intellectual-atlas/publication.json
+          git diff --cached --quiet && { echo "No content changes; expected a new source commit"; exit 1; }
+          git commit -m "Atlas 7.1: continuously scrub years and separate book labels from date evidence"
+          git push origin HEAD:atlas-continuous-pan-date-markers-2026-10-29
