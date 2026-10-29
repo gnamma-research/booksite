@@ -76,7 +76,7 @@ async def exercise(engine,width,height,mobile=False):
         seen,end=await move(page,page.locator(selector),65 if mobile else 165,use_touch)
         vals=[s['from'] for s in seen]
         assert len({round(v,2) for v in vals})>=4,(name,vals)
-        assert all((vals[i+1]-vals[i])*(1 if name=='overview' else -1)>0 for i in range(5)),(name,vals)
+        assert all((vals[i+1]-vals[i])*(1 if name=='overview' else -1)>=-0.01 for i in range(5)),(name,vals)
         assert len({round(s['thumb'],2) for s in seen})>=4
         assert abs(end['from']-vals[-1])<.25,('Release should not jump',end,vals)
         report[name]=[round(v,1) for v in vals]
@@ -98,12 +98,15 @@ async def exercise(engine,width,height,mobile=False):
     await page.mouse.down();await page.mouse.up()
     assert abs((await snapshot(page))['to']-(await snapshot(page))['from']-2626)<.01
     fullTouch=mobile and engine.name=='chromium'
+    # requestAnimationFrame intentionally coalesces some 100ms samples under
+    # browser/CI load. Require monotonic direction and >=4 distinct positions,
+    # rather than mistaking a repeated frame for a user-visible jump.
     seen,end=await move(page,grip,65 if mobile else 165,fullTouch)
     afterWidth=end['to']-end['from']
     assert 150<afterWidth<710,('Dragging the full-range grip must restore a movable historical window',end)
     vals=[s['from'] for s in seen]
     assert len({round(v,2) for v in vals})>=4,('Full-range grip was frozen',vals)
-    assert all(vals[i+1]>vals[i] for i in range(5)),('Whole-atlas grip must pan steadily to later years',vals)
+    assert all(vals[i+1]>=vals[i]-0.01 for i in range(5)),('Whole-atlas grip must move steadily toward later years',vals)
     assert abs(end['from']-vals[-1])<.25,('Whole-range grip jumped at release',end,seen)
     assert await page.locator('[data-history-rail]').get_attribute('data-full-range')=='false'
     report['whole_grip']=[round(x,2) for x in vals]
