@@ -65,6 +65,63 @@ async def exercise(engine,width,height,mobile=False):
         assert len({round(s['thumb'],2) for s in seen})>=4
         assert abs(end['from']-vals[-1])<.25,('Release should not jump',end,vals)
         report[name]=[round(v,1) for v in vals]
+    # Regression: 'Whole atlas' fills the rail, which previously made the
+    # six-dot handle mathematically immovable (100% width, no remaining track).
+    # Beginning a real gesture must restore a movable time window immediately
+    # and continuously, without a second release-time jump.
+    await page.locator('[data-action="whole-atlas"]').click()
+    full=await snapshot(page)
+    assert abs((full['to']-full['from'])-2626)<.01,('Whole atlas must still show every year',full)
+    assert await page.locator('[data-history-rail]').get_attribute('data-full-range')=='true'
+    assert 'drag the six-dot handle to focus' in (
+        await page.locator('[data-history-rail]').get_attribute('aria-valuetext')).lower()
+    grip=page.locator('.ia-travel-grip')
+    await grip.scroll_into_view_if_needed()
+    # A static tap on the handle should not unexpectedly zoom.
+    box=await grip.bounding_box()
+    await page.mouse.move(box['x']+box['width']/2,box['y']+box['height']/2)
+    await page.mouse.down();await page.mouse.up()
+    assert abs((await snapshot(page))['to']-(await snapshot(page))['from']-2626)<.01
+    fullTouch=mobile and engine.name=='chromium'
+    seen,end=await move(page,grip,65 if mobile else 165,fullTouch)
+    afterWidth=end['to']-end['from']
+    assert 150<afterWidth<710,('Dragging the full-range grip must restore a movable historical window',end)
+    vals=[s['from'] for s in seen]
+    assert len({round(v,2) for v in vals})>=4,('Full-range grip was frozen',vals)
+    assert all(vals[i+1]>vals[i] for i in range(5)),('Whole-atlas grip must pan steadily to later years',vals)
+    assert abs(end['from']-vals[-1])<.25,('Whole-range grip jumped at release',end,seen)
+    assert await page.locator('[data-history-rail]').get_attribute('data-full-range')=='false'
+    report['whole_grip']=[round(x,2) for x in vals]
+    # Tapping a far-away century while fully zoomed out should seek that era
+    # rather than treating the entire 100%-wide highlight as a draggable thumb.
+    await page.locator('[data-action="whole-atlas"]').click()
+    rail=page.locator('[data-history-rail]')
+    await rail.scroll_into_view_if_needed()
+    r=await rail.bounding_box()
+    sx=r['x']+r['width']*.80;sy=r['y']+r['height']/2
+    if mobile:
+        await page.touchscreen.tap(sx,sy)
+    else:
+        await page.mouse.click(sx,sy)
+    await page.wait_for_timeout(120)
+    sought=await snapshot(page)
+    assert 150<(sought['to']-sought['from'])<710,('Whole overview bar seek must focus',sought)
+    seekYear=-600+.80*2626
+    assert abs((sought['from']+sought['to'])/2-seekYear)<35,('Track tap should seek tapped era',sought,seekYear)
+    # The lower diagram must also start meaningful time travel after Whole.
+    await page.locator('[data-action="whole-atlas"]').click()
+    scene=await move(page,page.locator('[data-chart]'),65 if mobile else 165,fullTouch)
+    seq,finish=scene
+    assert finish['to']-finish['from']<710,('Whole lower diagram drag must focus',finish)
+    assert len({round(x['from'],2) for x in seq})>=4,('Whole lower diagram drag was frozen',seq)
+    assert abs(finish['from']-seq[-1]['from'])<.25,('Lower diagram jumped on release',finish)
+    # The explicit earlier/later buttons must not look broken in a full range.
+    await page.locator('[data-action="whole-atlas"]').click()
+    await page.locator('[data-action="pan-forward"]').click()
+    moved=await snapshot(page)
+    assert moved['to']-moved['from']<710 and moved['from']>-600,('Later from Whole should focus+move',moved)
+    await page.locator('[data-action="whole-atlas"]').click()
+    report['whole_seek_year']=round((sought['from']+sought['to'])/2,1)
     for left,right,id,kind,stages in [
         (1320,1360,'iji_mawaqif','multiple_stages',2),
         (245,320,'plotinus_enneads','multiple_stages',2),
