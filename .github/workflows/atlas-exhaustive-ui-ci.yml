@@ -1,11 +1,6 @@
 name: Gnamma Atlas exhaustive UI control audit
 
 on:
-  push:
-    branches: [atlas-exhaustive-ui-audit-2026-10-29]
-    paths:
-      - 'research/intellectual-atlas/**'
-      - '.github/workflows/atlas-exhaustive-ui-ci.yml'
   pull_request:
     branches: [master]
     paths:
@@ -17,7 +12,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: atlas-exhaustive-ui-${{ github.ref }}
+  group: atlas-exhaustive-ui-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
 
 jobs:
