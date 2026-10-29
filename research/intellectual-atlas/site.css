@@ -123,3 +123,78 @@ body #kalam-timeline-app-v3 .ia-chart .ia-date-stem{stroke-width:1.1;stroke-dash
 @media(prefers-reduced-motion:reduce){body #kalam-timeline-app-v3 .ia-travel-window{transition:none}}
 
 body #kalam-timeline-app-v3 .ia-chart .ia-work-label.ia-selected-box{stroke:var(--ia-active);stroke-width:1.8;fill:var(--ia-soft)}
+
+/* Mobile-first 7.1.2. The graphic is the main content, not the last item
+   below a long project preface. All research text and controls remain accessible. */
+body #kalam-timeline-app-v3 .gn-atlas-introduction>summary,
+body #kalam-timeline-app-v3 .ia-secondary-controls>summary{display:none}
+body #kalam-timeline-app-v3 .ia-secondary-controls[open]>.ia-control-row{margin-top:8px}
+body #kalam-timeline-app-v3 .ia-secondary-controls{min-width:0}
+body #kalam-timeline-app-v3 .ia-secondary-controls>.ia-filters{margin-top:8px}
+body #kalam-timeline-app-v3 .ia-mobile-label,
+body #kalam-timeline-app-v3 .gn-atlas-mobile-site-nav{display:none}
+body #kalam-timeline-app-v3 .ia-explorer-shortcuts{display:block;min-width:0}
+body #kalam-timeline-app-v3 .ia-chart-whole{display:none}
+body #kalam-timeline-app-v3 .ia-timeline-help{margin:10px 0 3px;padding:7px 0;border-top:1px solid var(--ia-line)}
+body #kalam-timeline-app-v3 .ia-timeline-help>summary{font-size:12px;font-weight:600;cursor:pointer;color:var(--ia-link);padding:5px 2px}
+body #kalam-timeline-app-v3 .ia-timeline-help>div{padding:10px 3px 3px}
+body #kalam-timeline-app-v3 .ia-timeline-help .ia-travel-help{margin:0 0 8px}
+body #kalam-timeline-app-v3 .ia-timeline-help .ia-date-guide{margin:0 0 4px}
+body #kalam-timeline-app-v3 .ia-timeline-help summary:focus-visible,
+body #kalam-timeline-app-v3 .ia-secondary-controls>summary:focus-visible,
+body #kalam-timeline-app-v3 .gn-atlas-introduction>summary:focus-visible{outline:2px solid var(--ia-link);outline-offset:3px}
+
+@media(max-width:700px), (max-height:550px) and (pointer:coarse){
+  .gn-atlas-masthead{padding:8px 12px;min-height:44px}
+  .gn-atlas-masthead nav{display:none}
+  .gn-atlas-wordmark{font-size:21px}
+  .gn-atlas-wordmark img{width:29px;height:29px}
+  body #kalam-timeline-app-v3 .ia-head{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding:7px 12px 7px}
+  body #kalam-timeline-app-v3 .ia-brand .ia-eyebrow{display:none}
+  body #kalam-timeline-app-v3 h1{font-size:19px;line-height:1.15}
+  body #kalam-timeline-app-v3 .ia-nav{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:2px;max-width:100%;min-width:0;margin:0;scrollbar-width:thin;overscroll-behavior-x:contain}
+  body #kalam-timeline-app-v3 .ia-nav button{flex:0 0 auto;min-height:30px;padding:5px 8px;font-size:11px;white-space:nowrap}
+  body #kalam-timeline-app-v3 .gn-atlas-introduction{padding:0;border-bottom:1px solid var(--ia-line)}
+  body #kalam-timeline-app-v3 .gn-atlas-introduction>summary{display:list-item;cursor:pointer;font-size:12px;font-weight:600;color:var(--ia-link);padding:8px 15px;min-height:36px;list-style-position:inside}
+  body #kalam-timeline-app-v3 .gn-atlas-intro-body{padding:11px 14px 14px}
+  body #kalam-timeline-app-v3 .gn-atlas-mobile-site-nav{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 10px;font-size:12px}
+  body #kalam-timeline-app-v3:not([data-mobile-ready]) .gn-atlas-intro-body,
+  body #kalam-timeline-app-v3:not([data-mobile-ready]) .ia-secondary-controls>:not(summary){display:none!important}
+  body #kalam-timeline-app-v3 .ia-controls{padding:8px 12px 7px;gap:5px}
+  body #kalam-timeline-app-v3 .ia-quick-controls{gap:5px;display:grid;grid-template-columns:minmax(0,1fr)}
+  body #kalam-timeline-app-v3 .ia-search{width:100%;min-width:0;flex:auto}
+  body #kalam-timeline-app-v3 .ia-search input{min-height:38px;padding:6px 10px;font-size:16px}
+  body #kalam-timeline-app-v3 .ia-text-family-control{width:100%;display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:center;font-size:12px;flex:auto}
+  body #kalam-timeline-app-v3 .ia-text-family-control select{width:100%;max-width:100%;min-height:35px;font-size:14px;padding:5px 8px}
+  body #kalam-timeline-app-v3 .ia-secondary-controls{border-top:1px solid var(--ia-line);padding-top:3px}
+  body #kalam-timeline-app-v3 .ia-secondary-controls>summary{display:list-item;padding:5px 3px;cursor:pointer;font-size:12px;font-weight:600;min-height:29px;color:var(--ia-link);list-style-position:inside}
+  body #kalam-timeline-app-v3 .ia-secondary-controls[open]>.ia-control-row{margin:8px 0}
+  body #kalam-timeline-app-v3 .ia-secondary-controls .ia-field{flex:1 1 45%}
+  body #kalam-timeline-app-v3 .ia-secondary-controls .ia-region-network-control{flex:1 1 100%}
+  body #kalam-timeline-app-v3 .ia-text-family-status:not(.ia-route-active){display:none}
+  body #kalam-timeline-app-v3 .ia-text-family-status.ia-route-active{padding:6px 10px;font-size:11px;max-height:78px;overflow-y:auto}
+  body #kalam-timeline-app-v3 .ia-context-line{display:none}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:6px 10px;border-bottom:1px solid var(--ia-line)}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-explorer{min-width:0;padding:0;margin:0;border:1px solid var(--ia-line);border-radius:6px;overflow:visible;background:var(--ia-panel)}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-explorer>summary{display:block;list-style:none;cursor:pointer;text-align:center;min-height:32px;padding:7px 3px;font-size:12px;color:var(--ia-link);white-space:nowrap}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-explorer>summary::-webkit-details-marker{display:none}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-explorer[open]{grid-column:1/-1;order:5;padding:0 8px 9px}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-explorer[open]>summary{text-align:left;padding-left:6px}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-groups{grid-template-columns:1fr;margin-top:9px}
+  body #kalam-timeline-app-v3 .ia-explorer-shortcuts .ia-route-groups button{min-height:34px}
+  body #kalam-timeline-app-v3 .ia-desktop-label{display:none}
+  body #kalam-timeline-app-v3 .ia-mobile-label{display:inline}
+  body #kalam-timeline-app-v3 .ia-main{padding:9px 12px 18px}
+  body #kalam-timeline-app-v3 .ia-main-head{margin:0 0 7px;gap:5px;align-items:center}
+  body #kalam-timeline-app-v3 .ia-main-head>div:first-child{gap:0}
+  body #kalam-timeline-app-v3 .ia-main-head h2{font-size:14px;font-weight:650}
+  body #kalam-timeline-app-v3 .ia-main-head [data-range-caption]{font-size:11px}
+  body #kalam-timeline-app-v3 .ia-main-head .ia-actions{gap:4px}
+  body #kalam-timeline-app-v3 .ia-main-head .ia-actions button{min-height:32px;min-width:38px;padding:5px 8px;font-size:11px}
+  body #kalam-timeline-app-v3 .ia-chart-whole{display:inline-block}
+  body #kalam-timeline-app-v3 .ia-nav-overview{margin:0;padding:3px 2px 7px;gap:5px}
+  body #kalam-timeline-app-v3 .ia-travel-track{height:36px}
+  body #kalam-timeline-app-v3 .ia-travel-grip{height:29px}
+  body #kalam-timeline-app-v3 .ia-timeline-help{margin-top:7px}
+  body #kalam-timeline-app-v3 .ia-timeline-help>summary{padding:5px 1px}
+}
