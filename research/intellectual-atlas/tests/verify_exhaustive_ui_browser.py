@@ -492,6 +492,37 @@ async def run_audit(page,full=True):
         check(canvas not in ("","transparent","rgba(0, 0, 0, 0)"),
               f"Chart background becomes transparent in {scheme}")
         cases+=1
+    # Mobile click is not equivalent to a finger tap. Test the actual
+    # touch-generated activation path for high-traffic controls and SVG items
+    # in both Chromium and WebKit phone/landscape contexts.
+    if page.viewport_size["width"]<=500 or page.viewport_size["height"]<=500:
+        await reset(page)
+        await ensure_open(page,".ia-explorer-shortcuts .ia-route-explorer:has([data-text-route])")
+        await page.locator('.ia-explorer-shortcuts button[data-text-route="tajrid"]').tap()
+        check((await snap(page))["family"]=="tajrid","Touch tap failed on a textual-family route")
+        await reset(page)
+        await ensure_open(page,".ia-tradition-explorer")
+        await page.locator('.ia-tradition-explorer button[data-tradition-route="sunni"]').tap()
+        check((await snap(page))["traditions"]==["sunni"],"Touch tap failed on tradition route")
+        await reset(page)
+        await ensure_open(page,".ia-region-explorer")
+        await page.locator('.ia-region-explorer button[data-region-route="southasia"]').tap()
+        check((await snap(page))["region"]=="southasia","Touch tap failed on regional route")
+        await reset(page)
+        await page.locator('[data-chart] a[data-cluster]').first.tap()
+        check((await snap(page))["to"]-(await snap(page))["from"]<2626,
+              "Finger tap on century group was swallowed")
+        book=page.locator('[data-chart] a[data-work]').first
+        check(await book.count()>0,"Touch zoomed chart did not expose book links")
+        book_id=await book.get_attribute("data-work")
+        await book.tap()
+        touch_selected=await snap(page)
+        check(touch_selected["selected"]==book_id and touch_selected["detailType"]=="work",
+              "Finger tap on an SVG book failed to open details")
+        await page.locator('[data-action="close-detail"]').tap()
+        check(not await page.locator('[data-sheet]').is_visible(),
+              "Finger tap failed to close a detail panel")
+        cases+=6
     check(not errors,"Unhandled JS/console errors: "+str(errors[:6]))
     report={"checks":cases,"browser":page.context.browser.browser_type.name,
         "viewport":page.viewport_size,"full":full,
