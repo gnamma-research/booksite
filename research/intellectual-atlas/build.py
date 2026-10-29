@@ -50,7 +50,6 @@ assert len(data['history'].get('periods',[])) == 49
 assert len(data['history'].get('events',[])) == 36
 assert len(source_ids)==349 and len(node_ids)==375 and len(edge_ids)==348
 assert {'plotinus_transmission','proclus_elements','aristotle_metaphysics','aristotle_physics','plato_timaeus','aristotle_categories'} <= {f['id'] for f in families}
-assert {'neo' not in n['id'] for n in []} == set()
 palette={'ancient','neoplatonic','ashari','maturidi','translation','christian','jewish','falsafa','avicennan','ishraqi','akbarian','mutazili','sunni','imami','sadrian','critical','context'}
 assert all(n.get('tradition') in palette for n in data['nodes'])
 assert all(set(n.get('intellectual_traditions',[]))<=palette for n in data['nodes'])
