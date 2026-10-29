@@ -1,4 +1,4 @@
-"""Browser regression checks for the Gnamma Intellectual Atlas (revision 6).
+"""Browser regression checks for the Gnamma Intellectual Atlas (revision 7).
 
 Run on a local HTTP server from repository root at port 8123, with playwright and
 Chromium installed. CI captures the outcomes and screenshots under /tmp.
@@ -120,7 +120,7 @@ async def visit(browser, width, height, mobile=False):
     await page.locator('[data-region-network]').select_option('')
     await page.locator('[data-text-family]').select_option('')
     # The broad three-level hierarchy is discoverable without forcing one taxonomy.
-    assert_that(await page.locator('.ia-tradition-explorer [data-tradition-route]').count()==14,
+    assert_that(await page.locator('.ia-tradition-explorer [data-tradition-route]').count()==17,
                 "Tradition summary explorer lists all primary catalogue colours")
     assert_that(await page.locator('.ia-region-explorer [data-region-route]').count()==10,
                 "Regional summary explorer lists ten contextual routes")
@@ -140,12 +140,70 @@ async def visit(browser, width, height, mobile=False):
     assert_that((await read(page))['region']=='khurasan',"Regional summary buttons apply context filters")
     await page.locator('[data-action="whole-atlas"]').click()
     await page.locator('.ia-route-explorer:has([data-text-route]) > summary').click()
-    assert_that(await page.locator('.ia-route-explorer [data-text-route]').count()==12,
-                "12 peer-level commentary family buttons available")
+    assert_that(await page.locator('.ia-route-explorer [data-text-route]').count()==18,
+                "18 source-qualified commentary / transmission routes available")
     await page.locator('.ia-route-explorer [data-text-route="tajrid"]').click()
     family=await read(page)
     assert_that(family["family"]=='tajrid',"Textual family button selects Tajrid")
     await page.locator('[data-text-family]').select_option('')
+    # New Greek–Syriac–Arabic transmission routes and source-qualified overlays.
+    await page.locator('[data-action="whole-atlas"]').click()
+    await page.locator('.gn-atlas-neoplatonic-journey [data-text-route="plotinus_transmission"]').click()
+    np_route=await read(page)
+    assert_that(np_route["family"]=="plotinus_transmission","Arabic Plotinus route is navigable")
+    await page.locator('[data-action="whole-atlas"]').click()
+    await page.locator('.ia-tradition-explorer [data-tradition-route="neoplatonic"]').click()
+    np_school=await page.evaluate("""() => {
+      const a=document.querySelector('#kalam-timeline-app-v3').atlasTest;
+      return {count:a.filteredNodes(false).length,
+        includes:a.filteredNodes(false).some(n=>n.id==='arabic_theology')};
+    }""")
+    assert_that(np_school["count"]>=20 and np_school["includes"],
+                "Neoplatonic overlay includes Greek school and explicit Arabic textual reception")
+    await page.locator('[data-action="whole-atlas"]').click()
+    await page.evaluate("""() => document.querySelector('#kalam-timeline-app-v3')
+        .atlasTest.setRange(200,1050)""")
+    net=await page.evaluate("""() => ({
+      records:[...document.querySelectorAll('[data-network]')].map(x=>x.dataset.history),
+      nodes:document.querySelector('#kalam-timeline-app-v3').atlasTest.getVisible().nodes
+    })""")
+    assert_that('NET02' in net['records'] and 'NET03' in net['records']
+                and 'NET04' in net['records'] and 'NET05' in net['records'],
+                "Athenian, Alexandrian, Syriac and Baghdad bands visible independently")
+    await page.locator('details.ia-filters > summary').click()
+    await page.locator('input[data-control="schools"]').uncheck()
+    assert_that(await page.locator('[data-network]').count()==0,
+                "Scholarly-network layer toggles independently of political dynasties")
+    await page.locator('input[data-control="schools"]').check()
+    assert_that(await page.locator('[data-network]').count()>=4,
+                "Scholarly-network layer restores from the source dataset")
+    source=await page.evaluate("""() => {
+      const d=document.querySelector('#kalam-timeline-app-v3').atlasTest.data;
+      const node=d.nodes.find(n=>n.id==='arabic_proclus_timaeus');
+      const ts=d.nodes.find(n=>n.id==='taftazani_aqaid');
+      return {nodes:d.nodes.length,edges:d.edges.length,refs:d.sources.length,
+        routes:d.textual_families.length,networks:d.history.networks.length,
+        greekSource:d.nodes.some(n=>n.id==='syrianus_metaphysics'),
+        arabicDate:node.temporal.anchor,
+        ashari:ts.intellectual_traditions.includes('ashari'),
+        maturidiReception:ts.classification_evidence.some(x=>x.id==='maturidi'
+             && x.status.toLowerCase().includes('reception'))};
+    }""")
+    assert_that(source['nodes']==375 and source['edges']==348 and source['refs']==349
+                and source['routes']==18 and source['networks']==5,
+                "Revision-7 data counts exact and fully embedded")
+    assert_that(source['greekSource'] and source['arabicDate'] is None,
+                "Syrianus is catalogued and uncertain Arabic Proclus fragment is unplaced")
+    assert_that(source['ashari'] and source['maturidiReception'],
+                "Taftazani's Ashari authorship distinguished from Maturidi matn reception")
+    dossier=await page.request.get(URL+'neoplatonism/')
+    assert_that(dossier.status==200 and 'Between the Greeks and the Islamic philosophers' in await dossier.text(),
+                "Source-critical Neoplatonic dossier is available")
+    assert_that(await page.locator('a[href="downloads/Intellectual_Atlas_Reference_Revision7.pdf"]').count()==1,
+                "Current revised evidence PDF linked, rather than only legacy registers")
+    assert_that(await page.locator('a[href="downloads/Gnamma_Intellectual_Atlas_Offline_Revision7.zip"]').count()==1,
+                "Current offline package linked")
+    await page.locator('[data-action="whole-atlas"]').click()
     # Sourced ancient bridge and political context, without spurious influence edges.
     await page.evaluate("""() => {
         const a=document.querySelector('#kalam-timeline-app-v3').atlasTest;

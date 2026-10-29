@@ -78,3 +78,26 @@ body #kalam-timeline-app-v3 .ia-route-explorer summary:focus-visible{outline:2px
 body #kalam-timeline-app-v3 .ia-route-explorer>summary{padding:2px 0}
 body #kalam-timeline-app-v3 .ia-route-explorer .ia-route-groups button strong{font-weight:600;line-height:1.35}
 @media(max-width:700px){body #kalam-timeline-app-v3 .ia-route-explorer .ia-route-groups{grid-template-columns:1fr}}
+
+/* scholar-network-revision7: a separate layer for academies, curricula and
+   translation networks. Its appearance must never imply a political dynasty. */
+body #kalam-timeline-app-v3 .ia-chart .ia-scholar-network{
+  fill:light-dark(#ded4eb,#55416d);
+  stroke:light-dark(#916aad,#cba7ed);
+  stroke-width:1.2;stroke-dasharray:4 2;opacity:.82
+}
+body #kalam-timeline-app-v3 .ia-chart .ia-scholar-network-selected{
+  stroke:var(--ia-link);stroke-width:2.3;fill:var(--ia-soft);opacity:1
+}
+body #kalam-timeline-app-v3 .ia-chart .ia-network-label{
+  fill:light-dark(#4b315d,#f0e3ff);font-size:11px;font-weight:600;
+  pointer-events:none
+}
+body #kalam-timeline-app-v3 .ia-classifications{margin:14px 0;padding:9px 0;border-block:1px solid var(--ia-line)}
+body #kalam-timeline-app-v3 .ia-classifications>summary{color:var(--ia-link);cursor:pointer;font-weight:600}
+body #kalam-timeline-app-v3 .ia-classifications .ia-detail-row{line-height:1.6}
+body #kalam-timeline-app-v3 .gn-atlas-neoplatonic-journey{border-top:1px solid var(--ia-line);padding:14px 0 0;margin-top:12px}
+body #kalam-timeline-app-v3 .gn-atlas-neoplatonic-journey h2{font-size:15px;margin-bottom:6px}
+body #kalam-timeline-app-v3 .gn-atlas-neoplatonic-journey p{max-width:85ch;font-size:12px;line-height:1.6;color:var(--ia-muted)}
+body #kalam-timeline-app-v3 .gn-atlas-neoplatonic-journey .ia-actions{margin-top:9px}
+body #kalam-timeline-app-v3 .gn-atlas-neoplatonic-journey a{display:inline-block;padding:8px 4px}

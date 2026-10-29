@@ -1,11 +1,11 @@
 {
   "title": "Texts in Time · Islamic Intellectual Atlas",
-  "revision": "atlas-three-layers-6-2026-10-29",
+  "revision": "neoplatonic-bridge-7-2026-10-29",
   "status": "working research",
-  "entries": 331,
-  "textual_relationships": 312,
-  "sources": 317,
-  "textual_family_routes": 12,
+  "entries": 375,
+  "textual_relationships": 348,
+  "sources": 349,
+  "textual_family_routes": 18,
   "textual_family_note": "Curated, overlapping named-work commentary networks, distinct from intellectual traditions; regional context is an independent intersecting filter",
   "tahdhib_added_entries": 26,
   "tahdhib_added_relationships": 26,
@@ -26,13 +26,18 @@
     "canonical_data": "intellectual-atlas-data.json",
     "offline_package": "Islamic_Timeline_Website_Package.zip"
   },
-  "note": "Revision 6 adds 10 sourced, approximately dated ancient bridge entries and three overlapping navigation dimensions. The downloaded PDFs and offline ZIP reflect earlier editions; revision-4 reference PDF still covers 321 works and all 312 established relationships. Three additional sourced ancient political-background bands cover Achaemenid, Hellenistic, and Roman contexts without asserting influence.",
+  "note": "Revision 7 adds a source-qualified Greek Neoplatonic/late antique bridge and 5 separate scholarly networks while preserving all previous textual relations. The PDF and offline package are automatically generated and committed by release CI. Earlier 84-page PDF and illustrated editions remain historical.",
   "historical_sources": 72,
   "ancient_bridge_entries": 10,
   "classification_layers": [
-    "intellectual traditions",
-    "textual families",
-    "historical and regional networks"
+    "intellectual traditions and source-qualified Ashʿarī/Māturīdī/Neoplatonic overlays",
+    "named textual commentary and translation families",
+    "regional and historical scholarly networks"
   ],
-  "pdf_note": "Earlier PDF reference register and offline ZIP have not been rebuilt for revision 6."
+  "pdf_note": "The new revision-7 PDF is a full 375-record/348-edge critical evidence register; revisions 2 and 4 PDFs remain available as previous scholarship.",
+  "scholarly_networks": 5,
+  "neoplatonic_new_entries": 44,
+  "neoplatonic_new_relationships": 36,
+  "download_current_pdf": "Intellectual_Atlas_Reference_Revision7.pdf",
+  "download_current_offline": "Gnamma_Intellectual_Atlas_Offline_Revision7.zip"
 }

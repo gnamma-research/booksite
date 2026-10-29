@@ -41,10 +41,10 @@ jobs:
           s=(p/"index.html").read_text()
           h=json.loads(re.search(r'<script type="application/json" data-atlas>(.*?)</script>',s,re.S).group(1))
           assert h==d
-          assert len(d["nodes"])==331 and len(d["edges"])==312
-          assert len(d["sources"])==317 and len(d["history"]["sources"])==72
-          assert len(d["history"]["periods"])==49 and len(d["textual_families"])==12
-          print("Canonical data, embedded HTML and chronology parity verified")
+          assert len(d["nodes"])==375 and len(d["edges"])==348
+          assert len(d["sources"])==349 and len(d["history"]["sources"])==72
+          assert len(d["history"]["periods"])==49 and len(d["textual_families"])==18 and len(d["history"]["networks"])==5
+          print("Revision-7 canonical data, Neoplatonic relationships and historical-school bands verified")
           PY
       - name: Install Chromium and Playwright
         run: |

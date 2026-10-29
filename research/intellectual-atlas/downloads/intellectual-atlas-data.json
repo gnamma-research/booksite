@@ -3044,6 +3044,294 @@
       "type": "scholarly reference",
       "accessed": "2026-10-29",
       "note": "Outlines of Pyrrhonism; author lived probably second or third century CE"
+    },
+    {
+      "id": "NP01",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Neoplatonism",
+      "url": "https://plato.stanford.edu/entries/neoplatonism/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Late antique school and authors; synthesis rather than single doctrine"
+    },
+    {
+      "id": "NP02",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Porphyry",
+      "url": "https://plato.stanford.edu/entries/porphyry/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Life of Plotinus, Sententiae, Isagoge, Categories commentary and editorial work"
+    },
+    {
+      "id": "NP03",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Iamblichus",
+      "url": "https://plato.stanford.edu/entries/Iamblichus/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Reply to Porphyry, Pythagorean works and influence on later Platonism"
+    },
+    {
+      "id": "NP04",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Syrianus (revision 2025)",
+      "url": "https://plato.stanford.edu/entries/syrianus/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Surviving Metaphysics commentary restricted to Beta, Gamma, Mu, Nu"
+    },
+    {
+      "id": "NP05",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Proclus",
+      "url": "https://plato.stanford.edu/entries/proclus/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Timaeus and Parmenides commentaries, Platonic Theology and medieval reception"
+    },
+    {
+      "id": "NP06",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Ammonius",
+      "url": "https://plato.stanford.edu/entries/ammonius/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Alexandrian Neoplatonic commentary school and students"
+    },
+    {
+      "id": "NP07",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Simplicius",
+      "url": "https://plato.stanford.edu/entries/simplicius/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Greek Categories, Physics and De caelo; Arabic reception and disputed De anima attribution"
+    },
+    {
+      "id": "NP08",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Olympiodorus",
+      "url": "https://plato.stanford.edu/entries/olympiodorus/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Gorgias, Phaedo and school lectures, manuscript dating and later Arabic knowledge"
+    },
+    {
+      "id": "NP09",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Pseudo-Dionysius the Areopagite",
+      "url": "https://plato.stanford.edu/entries/pseudo-dionysius-areopagite/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Divine Names, hierarchy and philosophical debts to Proclus"
+    },
+    {
+      "id": "NP10",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Greek Sources in Arabic and Islamic Philosophy (revised March 2026)",
+      "url": "https://plato.stanford.edu/entries/arabic-islamic-greek/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Greek-Syriac-Arabic translation, Proclus excerpts and Philoponus"
+    },
+    {
+      "id": "NP11",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "The Theology of Aristotle",
+      "url": "https://plato.stanford.edu/entries/theology-aristotle/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Arabic Plotinus, Greek Sage, Letter on Divine Science, later commentaries"
+    },
+    {
+      "id": "NP12",
+      "author": "Daniel King (Cardiff University)",
+      "title": "The Syriac Aristotle between Alexandria and Baghdad",
+      "url": "https://orca.cardiff.ac.uk/id/eprint/78289/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Syriac Neoplatonic-Aristotelian pedagogical tradition; avoid assumed unbroken line"
+    },
+    {
+      "id": "NP13",
+      "author": "University of Salzburg / SergiusNet",
+      "title": "Sergius of Reshaina and classical knowledge transmission",
+      "url": "https://sergius.sbg.ac.at/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Sergius’ study with Ammonius and Syriac translation milieu"
+    },
+    {
+      "id": "NP14",
+      "author": "Oxford Handbook of Dionysius the Areopagite",
+      "title": "Notes on the Earliest Greco-Syriac Reception of the Dionysian Corpus",
+      "url": "https://academic.oup.com/edited-volume/42561/chapter-abstract/357111888",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Sergius’ early Syriac version and textual/redaction complications"
+    },
+    {
+      "id": "NP15",
+      "author": "Elvira Wakelnig (Brill, 2006)",
+      "title": "al-ʿĀmirī’s Kitāb al-Fuṣūl and the Arabic Proclus reception",
+      "url": "https://www.degruyterbrill.com/de/document/isbn/9789047410300/html",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Proclean proposition correspondences and textual family relationships"
+    },
+    {
+      "id": "NP16",
+      "author": "Cambridge University Press",
+      "title": "Proclus on Plato’s Timaeus 89e3–90c7",
+      "url": "https://www.cambridge.org/core/journals/arabic-sciences-and-philosophy/article/abs/proclus-on-platos-timaeus-89e390c7/06B7471A683129C6FC68D15E6FC00F21",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Arabic translation fragment, critical edition and Hunayn letter"
+    },
+    {
+      "id": "NP17",
+      "author": "Fran O’Rourke",
+      "title": "Unity in Aquinas' Commentary on the Liber de Causis",
+      "url": "https://franorourke.ie/wp-content/uploads/2020/10/Unity-in-Aquinas-Commentary-on-the-Liber-de-Causis-2.pdf",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Date of Aquinas’ commentary 1272; Moerbeke Proclus 1268; earlier Latin source"
+    },
+    {
+      "id": "NP18",
+      "author": "Routledge Encyclopedia of Philosophy",
+      "title": "Liber de causis",
+      "url": "https://www.rep.routledge.com/articles/thematic/liber-de-causis/v-1",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Anonymous ninth-century Arabic adaptation, later Latin transmission"
+    },
+    {
+      "id": "NP19",
+      "author": "Daniel King",
+      "title": "Alexander of Aphrodisias’ On the Principles of the Universe in Syriac",
+      "url": "https://orca.cardiff.ac.uk/id/eprint/29605/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Sergius’ deliberate omission of eternity claims in Syriac adaptation"
+    },
+    {
+      "id": "NP20",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "John Philoponus",
+      "url": "https://plato.stanford.edu/entries/philoponus/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Physics commentary, eternity polemics, De opificio mundi c. 546–549"
+    },
+    {
+      "id": "NP21",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Anicius Manlius Severinus Boethius (revision October 2026)",
+      "url": "https://plato.stanford.edu/entries/boethius/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Two Isagoge commentaries and Latin philosophical transmission"
+    },
+    {
+      "id": "NP22",
+      "author": "University of Michigan / Sara Ahbel-Rappe",
+      "title": "Damascius' Problems and Solutions Concerning First Principles",
+      "url": "https://lsa.umich.edu/classics/people/departmental-faculty/rappe/damascius--problems-and-solutions-concerning-first-principles--a.html",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Damascius’ aporetic critique of Proclean ontology"
+    },
+    {
+      "id": "NP23",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Mysticism in Arabic and Islamic Philosophy",
+      "url": "https://plato.stanford.edu/entries/arabic-islamic-mysticism/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Ismāʿīlī Neoplatonist adaptations and transmission caveats"
+    },
+    {
+      "id": "NP24",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Proclus Arabic reception and Latin influence",
+      "url": "https://plato.stanford.edu/entries/proclus/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Arabic Liber de Causis and Aquinas' identification of Proclus source"
+    },
+    {
+      "id": "NP25",
+      "author": "Silvia Fazzo and Mauro Zonta",
+      "title": "Critical translation of Alexander De principiis from Syriac and Arabic",
+      "url": "https://philarchive.org/rec/FAZTAC",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Original Greek lost, multiple Semitic versions critically different"
+    },
+    {
+      "id": "NP26",
+      "author": "Oxford University Press",
+      "title": "Syrianus on Aristotle’s Metaphysics (Frede et al., 2026)",
+      "url": "https://academic.oup.com/book/61850/chapter-abstract/547100224",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Recent study on metaphysics and Syrianus critique of Aristotle"
+    },
+    {
+      "id": "NP27",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Greek sources / late antique Syriac reception",
+      "url": "https://plato.stanford.edu/entries/arabic-islamic-greek/",
+      "type": "peer-reviewed scholarship / reference",
+      "accessed": "2026-10-29",
+      "note": "Aristotelian logic and Syriac teaching at Edessa/Nisibis"
+    },
+    {
+      "id": "SM01",
+      "author": "Wilferd Madelung (Encyclopaedia of Islam, 2nd ed.)",
+      "title": "Māturīdiyya",
+      "url": "https://nasafi.org/mat2-ei2/",
+      "note": "EI2 reference reproduced online; school history and later reception are not interchangeable.",
+      "type": "specialist source / school identification",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "SM02",
+      "author": "Oxford Handbook of Islamic Theology",
+      "title": "Ashʿarī–Māturīdī historical relations",
+      "url": "https://academic.oup.com/edited-volume/34345",
+      "note": "Historical and geographical school networks as distinguished strands of Sunni kalām.",
+      "type": "specialist source / school identification",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "SM03",
+      "author": "Navid Chizari, Darulfunun Ilahiyat 35/1 (2024)",
+      "title": "Determining Taftāzānī’s madhhab: Insights after the Decline Paradigm",
+      "url": "https://doi.org/10.26650/di.2023.34.2.1296825",
+      "note": "Argues for Taftazani's Ashʿarī affiliation in independent kalām, while emphasising commentary genre.",
+      "type": "specialist source / school identification",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "SM04",
+      "author": "Institut français de Damas, 1990 edition",
+      "title": "al-Nasafī: Tabṣirat al-adilla ʿalā ṭarīqat al-imām al-Māturīdī",
+      "url": "https://books.google.com/books?id=mC0uAAAAIAAJ",
+      "note": "Named Māturīdī textual line and source edition.",
+      "type": "specialist source / school identification",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "SM05",
+      "author": "Encyclopedia.com",
+      "title": "Abū Bakr al-Bāqillānī and Ashʿarī theological school",
+      "url": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/baqillani-al-1013",
+      "note": "Biographical role of Baqillani in consolidating Ashari theology.",
+      "type": "specialist source / school identification",
+      "accessed": "2026-10-29"
     }
   ],
   "nodes": [
@@ -3495,7 +3783,7 @@
       "date_status": "range",
       "date_note": "254–269 is the main writing period; 301 is the edition, not Plotinus’ composition year.",
       "kind": "collection",
-      "tradition": "ancient",
+      "tradition": "neoplatonic",
       "region": "Rome / later Porphyrian editorial context",
       "family": "Neoplatonic",
       "sources": [
@@ -3506,7 +3794,9 @@
       "node_type": "corpus",
       "code": "W168",
       "original_tradition": "ancient",
-      "tags": [],
+      "tags": [
+        "Neoplatonism"
+      ],
       "temporal": {
         "start": 254,
         "end": 301,
@@ -3518,7 +3808,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct philosophical school",
+          "sources": [
+            "NP01"
+          ]
+        }
+      ]
     },
     {
       "id": "porphyry_isagoge",
@@ -3532,7 +3834,7 @@
       "date_status": "terminus",
       "date_note": "No more precise composition date is established here.",
       "kind": "independent",
-      "tradition": "ancient",
+      "tradition": "neoplatonic",
       "region": "Greek-speaking Mediterranean",
       "family": "Neoplatonic logic",
       "sources": [
@@ -3543,7 +3845,9 @@
       "node_type": "work",
       "code": "W169",
       "original_tradition": "ancient",
-      "tags": [],
+      "tags": [
+        "Neoplatonism"
+      ],
       "temporal": {
         "start": null,
         "end": 305,
@@ -3555,7 +3859,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct philosophical school",
+          "sources": [
+            "NP01"
+          ]
+        }
+      ]
     },
     {
       "id": "themistius_soul",
@@ -3642,7 +3958,7 @@
       "date_status": "terminus",
       "date_note": "No more precise composition date is established here.",
       "kind": "independent",
-      "tradition": "ancient",
+      "tradition": "neoplatonic",
       "region": "Athens",
       "family": "Neoplatonic",
       "sources": [
@@ -3652,7 +3968,9 @@
       "node_type": "work",
       "code": "W170",
       "original_tradition": "ancient",
-      "tags": [],
+      "tags": [
+        "Neoplatonism"
+      ],
       "temporal": {
         "start": null,
         "end": 485,
@@ -3664,7 +3982,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct philosophical school",
+          "sources": [
+            "NP01"
+          ]
+        }
+      ]
     },
     {
       "id": "proclus_eternity",
@@ -3678,7 +4008,7 @@
       "date_status": "terminus",
       "date_note": "No more precise composition date is established here.",
       "kind": "independent",
-      "tradition": "ancient",
+      "tradition": "neoplatonic",
       "region": "Athens",
       "family": "Neoplatonic",
       "sources": [
@@ -3689,7 +4019,9 @@
       "node_type": "work",
       "code": "W171",
       "original_tradition": "ancient",
-      "tags": [],
+      "tags": [
+        "Neoplatonism"
+      ],
       "temporal": {
         "start": null,
         "end": 485,
@@ -3701,7 +4033,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct philosophical school",
+          "sources": [
+            "NP01"
+          ]
+        }
+      ]
     },
     {
       "id": "philoponus_proclus",
@@ -4178,7 +4522,19 @@
       },
       "summary": true,
       "featured": true,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "documented textual reception, not a school affiliation",
+          "sources": [
+            "NP11"
+          ]
+        }
+      ]
     },
     {
       "id": "kindi_intellect",
@@ -4366,7 +4722,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "documented textual reception, not a school affiliation",
+          "sources": [
+            "NP11"
+          ]
+        }
+      ]
     },
     {
       "id": "buddhist_kalam_hypothesis",
@@ -5024,7 +5392,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "ashari_luma",
@@ -5060,7 +5440,19 @@
       },
       "summary": true,
       "featured": true,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "arabic_posterior",
@@ -5168,7 +5560,19 @@
       },
       "summary": true,
       "featured": true,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "maturidi"
+      ],
+      "classification_evidence": [
+        {
+          "id": "maturidi",
+          "status": "Historical Māturīdī theological line, with possible cross-school reception",
+          "sources": [
+            "SM01"
+          ]
+        }
+      ]
     },
     {
       "id": "maturidi_tawilat",
@@ -5205,7 +5609,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "maturidi"
+      ],
+      "classification_evidence": [
+        {
+          "id": "maturidi",
+          "status": "Historical Māturīdī theological line, with possible cross-school reception",
+          "sources": [
+            "SM01"
+          ]
+        }
+      ]
     },
     {
       "id": "farabi_madina",
@@ -5609,7 +6025,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "Source-supported Ashʿarī theologian and works",
+          "sources": [
+            "SM05"
+          ]
+        }
+      ]
     },
     {
       "id": "baqillani_hidaya",
@@ -5645,7 +6073,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "Source-supported Ashʿarī theologian and works",
+          "sources": [
+            "SM05"
+          ]
+        }
+      ]
     },
     {
       "id": "ibnfurak_mujarrad",
@@ -6033,6 +6473,18 @@
         "Ibn Sina",
         "Ibn Sīnā",
         "ابن سينا"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "documented textual reception, not a school affiliation",
+          "sources": [
+            "NP11"
+          ]
+        }
       ]
     },
     {
@@ -6339,7 +6791,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "juwayni_shamil",
@@ -6375,7 +6839,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "ghazali_tahafut",
@@ -6451,7 +6927,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "abumuin_tabsira",
@@ -6488,7 +6976,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "maturidi"
+      ],
+      "classification_evidence": [
+        {
+          "id": "maturidi",
+          "status": "Work self-identifies the Māturīdī textual school",
+          "sources": [
+            "SM04"
+          ]
+        }
+      ]
     },
     {
       "id": "hamadani_zubda",
@@ -6710,7 +7210,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "maturidi"
+      ],
+      "classification_evidence": [
+        {
+          "id": "maturidi",
+          "status": "Historical Māturīdī theological line, with possible cross-school reception",
+          "sources": [
+            "SM01"
+          ]
+        }
+      ]
     },
     {
       "id": "abulbarakat_mutabar",
@@ -6827,7 +7339,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "averroes_tahafut",
@@ -7141,7 +7665,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "averroes_long_metaphysics",
@@ -8840,7 +9376,27 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari",
+        "maturidi"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "Taftāzānī: Ashʿarī scholar by genre-sensitive authorial analysis; Sharḥ al-ʿAqāʾid is a commentary on a Māturīdī matn",
+          "sources": [
+            "SM03"
+          ]
+        },
+        {
+          "id": "maturidi",
+          "status": "Māturīdī textual reception of al-Nasafī's base text; not the author's second confessional allegiance",
+          "sources": [
+            "SM03"
+          ]
+        }
+      ]
     },
     {
       "id": "haydar_nass",
@@ -8924,7 +9480,19 @@
       },
       "summary": true,
       "featured": true,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "Taftāzānī: Ashʿarī scholar by genre-sensitive authorial analysis; Sharḥ al-ʿAqāʾid is a commentary on a Māturīdī matn",
+          "sources": [
+            "SM03"
+          ]
+        }
+      ]
     },
     {
       "id": "taftazani_maqasid",
@@ -8960,7 +9528,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "Taftāzānī: Ashʿarī scholar by genre-sensitive authorial analysis; Sharḥ al-ʿAqāʾid is a commentary on a Māturīdī matn",
+          "sources": [
+            "SM03"
+          ]
+        }
+      ]
     },
     {
       "id": "mubarakshah_hikmat",
@@ -15549,6 +16129,2200 @@
       "summary": true,
       "featured": false,
       "search_aliases": []
+    },
+    {
+      "id": "porphyry_sententiae",
+      "title": "Sentences Leading to the Intelligibles",
+      "title_ar": "",
+      "author": "Porphyry",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 260 CE–305 CE (contextual activity window)",
+      "date_start": 260,
+      "date_end": 305,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Rome / Tyre",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP02"
+      ],
+      "note": "An extant philosophical collection on soul, incorporeality and ascent; not a direct commentary on a named Platonic dialogue.",
+      "node_type": "work",
+      "code": "W332",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP02"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 260,
+        "end": 305,
+        "anchor": 282.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 260 CE–305 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "porphyry_categories_commentary",
+      "title": "Commentary on Aristotle’s Categories (Questions and Answers)",
+      "title_ar": "",
+      "author": "Porphyry",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 265 CE–305 CE (contextual activity window)",
+      "date_start": 265,
+      "date_end": 305,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Rome / Tyre",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP02"
+      ],
+      "note": "Surviving concise commentary. A more extensive commentary by Porphyry is lost; distinguish from Isagoge.",
+      "node_type": "work",
+      "code": "W333",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP02"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 265,
+        "end": 305,
+        "anchor": 285,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 265 CE–305 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "porphyry_vita_plotini",
+      "title": "Life of Plotinus and editorial preface to the Enneads",
+      "title_ar": "",
+      "author": "Porphyry",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 301 CE–305 CE (contextual activity window)",
+      "date_start": 301,
+      "date_end": 305,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Rome",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP02"
+      ],
+      "note": "Porphyry arranged the Enneads into six groups of nine, with biography and editorial framing, around 301.",
+      "node_type": "work",
+      "code": "W334",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP02"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 301,
+        "end": 305,
+        "anchor": 303,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 301 CE–305 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "iamblichus_mysteries",
+      "title": "Reply of Master Abamon to Porphyry (De mysteriis)",
+      "title_ar": "",
+      "author": "Iamblichus of Chalcis",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 280 CE–325 CE (contextual activity window)",
+      "date_start": 280,
+      "date_end": 325,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Syria / Apamea",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP03"
+      ],
+      "note": "Response to Porphyry’s Letter to Anebo in an assumed Egyptian persona; theurgy and ritual defended, not a generic synthesis of all Platonists.",
+      "node_type": "work",
+      "code": "W335",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP03"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 280,
+        "end": 325,
+        "anchor": 302.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 280 CE–325 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "iamblichus_pythagorean",
+      "title": "On the Pythagorean Life (Pythagorean Way of Life)",
+      "title_ar": "",
+      "author": "Iamblichus of Chalcis",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 280 CE–325 CE (contextual activity window)",
+      "date_start": 280,
+      "date_end": 325,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Apamea / Syria",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP03"
+      ],
+      "note": "Surviving section of the Pythagorean compendium, combining older biographical traditions with Neoplatonic pedagogy.",
+      "node_type": "work",
+      "code": "W336",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP03"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 280,
+        "end": 325,
+        "anchor": 302.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 280 CE–325 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "syrianus_metaphysics",
+      "title": "Commentary on Aristotle's Metaphysics III, IV, XIII–XIV",
+      "title_ar": "",
+      "author": "Syrianus of Alexandria",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 420 CE–437 CE (contextual activity window)",
+      "date_start": 420,
+      "date_end": 437,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Athens",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP04"
+      ],
+      "note": "The surviving commentary covers B, Γ, M, N, not the whole Metaphysics; particularly important for criticisms of Aristotelian attacks on Platonic numbers.",
+      "node_type": "work",
+      "code": "W337",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP04"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 420,
+        "end": 437,
+        "anchor": 428.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 420 CE–437 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "proclus_timaeus",
+      "title": "Commentary on Plato’s Timaeus",
+      "title_ar": "",
+      "author": "Proclus",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 440 CE–485 CE (contextual activity window)",
+      "date_start": 440,
+      "date_end": 485,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Athens",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP05"
+      ],
+      "note": "Surviving large Platonic natural-philosophy commentary, preserving earlier school interpretations; chronology is an activity envelope.",
+      "node_type": "work",
+      "code": "W338",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP05"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 440,
+        "end": 485,
+        "anchor": 462.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 440 CE–485 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "proclus_parmenides",
+      "title": "Commentary on Plato’s Parmenides",
+      "title_ar": "",
+      "author": "Proclus",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 440 CE–485 CE (contextual activity window)",
+      "date_start": 440,
+      "date_end": 485,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Athens",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP05"
+      ],
+      "note": "Neoplatonic theological interpretation of the hypotheses about the One; not the same text as Platonic Theology.",
+      "node_type": "work",
+      "code": "W339",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP05"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 440,
+        "end": 485,
+        "anchor": 462.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 440 CE–485 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "proclus_platonic_theology",
+      "title": "Platonic Theology",
+      "title_ar": "",
+      "author": "Proclus",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 450 CE–485 CE (contextual activity window)",
+      "date_start": 450,
+      "date_end": 485,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Athens",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP05"
+      ],
+      "note": "Systematic exposition of theological principles through Platonic dialogues; not to be confused with the later Arabic Theology of Aristotle.",
+      "node_type": "work",
+      "code": "W340",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP05"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 450,
+        "end": 485,
+        "anchor": 467.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 450 CE–485 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "proclus_evil",
+      "title": "On the Existence of Evils (De malorum subsistentia)",
+      "title_ar": "",
+      "author": "Proclus",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 440 CE–485 CE (contextual activity window)",
+      "date_start": 440,
+      "date_end": 485,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Athens",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP09"
+      ],
+      "note": "Greek work survives through the medieval Latin transmission; significant textual basis for Pseudo-Dionysius’ treatment of evil.",
+      "node_type": "work",
+      "code": "W341",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP09"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 440,
+        "end": 485,
+        "anchor": 462.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 440 CE–485 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "ammonius_categories",
+      "title": "Commentary on Aristotle’s Categories",
+      "title_ar": "",
+      "author": "Ammonius son of Hermias",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 470 CE–517 CE (contextual activity window)",
+      "date_start": 470,
+      "date_end": 517,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Alexandria",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP06"
+      ],
+      "note": "Alexandrian course commentary; represents Neoplatonic teaching of Aristotelian logic.",
+      "node_type": "work",
+      "code": "W342",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP06"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 470,
+        "end": 517,
+        "anchor": 493.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 470 CE–517 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "ammonius_interpretation",
+      "title": "Commentary on Aristotle’s On Interpretation",
+      "title_ar": "",
+      "author": "Ammonius son of Hermias",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 470 CE–517 CE (contextual activity window)",
+      "date_start": 470,
+      "date_end": 517,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Alexandria",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP06"
+      ],
+      "note": "Surviving commentary on De interpretatione; an important Alexandrian interpretive source.",
+      "node_type": "work",
+      "code": "W343",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP06"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 470,
+        "end": 517,
+        "anchor": 493.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 470 CE–517 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "asclepius_metaphysics",
+      "title": "Commentary on Aristotle’s Metaphysics (from Ammonius’ lectures)",
+      "title_ar": "",
+      "author": "Asclepius of Tralles",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 500 CE–570 CE (contextual activity window)",
+      "date_start": 500,
+      "date_end": 570,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Alexandria",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP04"
+      ],
+      "note": "Commentary draws on Ammonius’ instruction and older commentators including Syrianus; do not assume that it is independent testimony to every earlier text.",
+      "node_type": "work",
+      "code": "W344",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP04"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 500,
+        "end": 570,
+        "anchor": 535,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 500 CE–570 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "damascius_principles",
+      "title": "Problems and Solutions Concerning First Principles",
+      "title_ar": "",
+      "author": "Damascius",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 510 CE–540 CE (contextual activity window)",
+      "date_start": 510,
+      "date_end": 540,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Athens / Persia",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP22"
+      ],
+      "note": "Aporias concerning first principles, the ineffable and critique of Proclean metaphysical architecture.",
+      "node_type": "work",
+      "code": "W345",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP22"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 510,
+        "end": 540,
+        "anchor": 525,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 510 CE–540 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "simplicius_physics",
+      "title": "Commentary on Aristotle’s Physics",
+      "title_ar": "",
+      "author": "Simplicius of Cilicia",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 529 CE–560 CE (contextual activity window)",
+      "date_start": 529,
+      "date_end": 560,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Athens / eastern Mediterranean",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP07"
+      ],
+      "note": "Preserves substantial otherwise lost earlier philosophical material; Greek, not demonstrably an Arabic translation of the whole.",
+      "node_type": "work",
+      "code": "W346",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP07"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 529,
+        "end": 560,
+        "anchor": 544.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 529 CE–560 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "simplicius_categories",
+      "title": "Commentary on Aristotle’s Categories",
+      "title_ar": "",
+      "author": "Simplicius of Cilicia",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 529 CE–560 CE (contextual activity window)",
+      "date_start": 529,
+      "date_end": 560,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Athens / eastern Mediterranean",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP07"
+      ],
+      "note": "Late antique survey and attempted harmonisation of Platonic/Aristotelian positions; evidence of Arabic reception exists but precise translation paths are qualified.",
+      "node_type": "work",
+      "code": "W347",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP07"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 529,
+        "end": 560,
+        "anchor": 544.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 529 CE–560 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "simplicius_heavens",
+      "title": "Commentary on Aristotle’s On the Heavens",
+      "title_ar": "",
+      "author": "Simplicius of Cilicia",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 529 CE–560 CE (contextual activity window)",
+      "date_start": 529,
+      "date_end": 560,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Athens / eastern Mediterranean",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP07"
+      ],
+      "note": "Complicated defence of Aristotelian cosmology and detailed arguments concerning philosophical predecessors.",
+      "node_type": "work",
+      "code": "W348",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP07"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 529,
+        "end": 560,
+        "anchor": 544.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 529 CE–560 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "olympiodorus_gorgias",
+      "title": "Commentary on Plato’s Gorgias",
+      "title_ar": "",
+      "author": "Olympiodorus of Alexandria",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 530 CE–570 CE (contextual activity window)",
+      "date_start": 530,
+      "date_end": 570,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Alexandria",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP08"
+      ],
+      "note": "Surviving lectures from the sixth-century Alexandrian philosophical curriculum.",
+      "node_type": "work",
+      "code": "W349",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP08"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 530,
+        "end": 570,
+        "anchor": 550,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 530 CE–570 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "olympiodorus_phaedo",
+      "title": "Commentary on Plato’s Phaedo",
+      "title_ar": "",
+      "author": "Olympiodorus of Alexandria",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 530 CE–570 CE (contextual activity window)",
+      "date_start": 530,
+      "date_end": 570,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "neoplatonic",
+      "region": "Alexandria",
+      "family": "Late antique Neoplatonism",
+      "sources": [
+        "NP08"
+      ],
+      "note": "Surviving lectures limited to portions of Phaedo; do not conflate with commentary falsely attributed to Olympiodorus on Philebus.",
+      "node_type": "work",
+      "code": "W350",
+      "original_tradition": "neoplatonic",
+      "tags": [
+        "Neoplatonism"
+      ],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "direct authorial context",
+          "sources": [
+            "NP08"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 530,
+        "end": 570,
+        "anchor": 550,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 530 CE–570 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "philoponus_physics",
+      "title": "Commentary on Aristotle’s Physics",
+      "title_ar": "",
+      "author": "John Philoponus",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 510 CE–535 CE (contextual activity window)",
+      "date_start": 510,
+      "date_end": 535,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "christian",
+      "region": "Alexandria",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP20"
+      ],
+      "note": "Early Greek Aristotelian commentary, philosophically innovative, distinct from his later anti-eternity polemics.",
+      "node_type": "work",
+      "code": "W351",
+      "original_tradition": "christian",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP20"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 510,
+        "end": 535,
+        "anchor": 522.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 510 CE–535 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "philoponus_creation",
+      "title": "On the Creation of the World (De opificio mundi)",
+      "title_ar": "",
+      "author": "John Philoponus",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 546 CE–549 CE (contextual activity window)",
+      "date_start": 546,
+      "date_end": 549,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "christian",
+      "region": "Alexandria",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP20"
+      ],
+      "note": "Commentary on Genesis; dates c.546–549 favoured in current SEP over older proposals.",
+      "node_type": "work",
+      "code": "W352",
+      "original_tradition": "christian",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP20"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 546,
+        "end": 549,
+        "anchor": 547.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 546 CE–549 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "dionysius_divine_names",
+      "title": "On the Divine Names",
+      "title_ar": "",
+      "author": "Pseudo-Dionysius the Areopagite",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 485 CE–530 CE (contextual activity window)",
+      "date_start": 485,
+      "date_end": 530,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "christian",
+      "region": "Late antique eastern Mediterranean",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP09"
+      ],
+      "note": "Christian theology indebted to Proclus; pseudonymous apostolic persona must not be treated as a first-century author.",
+      "node_type": "work",
+      "code": "W353",
+      "original_tradition": "christian",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP09"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 485,
+        "end": 530,
+        "anchor": 507.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 485 CE–530 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "dionysius_celestial",
+      "title": "On the Celestial Hierarchy",
+      "title_ar": "",
+      "author": "Pseudo-Dionysius the Areopagite",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 485 CE–530 CE (contextual activity window)",
+      "date_start": 485,
+      "date_end": 530,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "christian",
+      "region": "Late antique eastern Mediterranean",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP09"
+      ],
+      "note": "Christian hierarchic theology and liturgy; close in date to the Dionysian corpus rather than first-century apostolic writings.",
+      "node_type": "work",
+      "code": "W354",
+      "original_tradition": "christian",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP09"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 485,
+        "end": 530,
+        "anchor": 507.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 485 CE–530 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "dionysius_mystical",
+      "title": "On Mystical Theology",
+      "title_ar": "",
+      "author": "Pseudo-Dionysius the Areopagite",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 485 CE–530 CE (contextual activity window)",
+      "date_start": 485,
+      "date_end": 530,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "christian",
+      "region": "Late antique eastern Mediterranean",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP09"
+      ],
+      "note": "Apophatic and mystical theology, one component of the pseudonymous Dionysian corpus.",
+      "node_type": "work",
+      "code": "W355",
+      "original_tradition": "christian",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP09"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 485,
+        "end": 530,
+        "anchor": 507.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 485 CE–530 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "sergius_dionysius_syriac",
+      "title": "First Syriac version of the Dionysian corpus",
+      "title_ar": "",
+      "author": "Sergius of Reshaina",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 520 CE–536 CE (contextual activity window)",
+      "date_start": 520,
+      "date_end": 536,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "christian",
+      "region": "Reshaina / Syria",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP14"
+      ],
+      "note": "Early Syriac translation with textual/redaction complexities; it is not an unambiguous faithful witness to one final Greek edition.",
+      "node_type": "work",
+      "code": "W356",
+      "original_tradition": "christian",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP14"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 520,
+        "end": 536,
+        "anchor": 528,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 520 CE–536 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "sergius_alexander_principles",
+      "title": "Syriac adaptation of Alexander’s On the Principles of the Universe",
+      "title_ar": "",
+      "author": "Sergius of Reshaina",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 520 CE–536 CE (contextual activity window)",
+      "date_start": 520,
+      "date_end": 536,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "christian",
+      "region": "Reshaina / Syria",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP19"
+      ],
+      "note": "Adaptation omits explicit eternity claims and modifies the Greek Peripatetic background; original Greek work lost.",
+      "node_type": "work",
+      "code": "W357",
+      "original_tradition": "christian",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP19"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 520,
+        "end": 536,
+        "anchor": 528,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 520 CE–536 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "stephanus_alexandria_commentary",
+      "title": "On Interpretation and Aristotelian lectures (Alexandrian tradition)",
+      "title_ar": "",
+      "author": "Stephanus of Alexandria",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 595 CE–630 CE (contextual activity window)",
+      "date_start": 595,
+      "date_end": 630,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "christian",
+      "region": "Alexandria / Constantinople",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP08"
+      ],
+      "note": "Early seventh-century Alexandrian pedagogical continuity; authorship and boundaries of lecture dossiers are debated.",
+      "node_type": "work",
+      "code": "W358",
+      "original_tradition": "christian",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP08"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 595,
+        "end": 630,
+        "anchor": 612.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 595 CE–630 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "boethius_isagoge",
+      "title": "Two commentaries on Porphyry’s Isagoge",
+      "title_ar": "",
+      "author": "Boethius",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 500 CE–525 CE (contextual activity window)",
+      "date_start": 500,
+      "date_end": 525,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "christian",
+      "region": "Italy / Latin west",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP21"
+      ],
+      "note": "Parallel Latin, not a Syriac–Arabic conduit: second commentary engages universals through a Porphyrian curriculum.",
+      "node_type": "work",
+      "code": "W359",
+      "original_tradition": "christian",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP21"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 500,
+        "end": 525,
+        "anchor": 512.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 500 CE–525 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "arabic_greek_sage",
+      "title": "Sayings of the Greek Sage (Arabic Plotinus)",
+      "title_ar": "",
+      "author": "Anonymous Arabic redactor",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 800 CE–900 CE (contextual activity window)",
+      "date_start": 800,
+      "date_end": 900,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "translation",
+      "region": "Baghdad / Arabic intellectual networks",
+      "family": "Neoplatonic translation and transmission",
+      "sources": [
+        "NP11"
+      ],
+      "note": "Fragments share the Arabic Plotinus version underlying the Theology; no Greek Enneads I–III attested in Arabic.",
+      "node_type": "work",
+      "code": "W360",
+      "original_tradition": "translation",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP11"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 800,
+        "end": 900,
+        "anchor": 850,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 800 CE–900 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "arabic_divine_science",
+      "title": "Letter on Divine Science (pseudo-al-Fārābī)",
+      "title_ar": "",
+      "author": "Anonymous Arabic redactor",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 800 CE–900 CE (contextual activity window)",
+      "date_start": 800,
+      "date_end": 900,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "translation",
+      "region": "Arabic intellectual networks",
+      "family": "Neoplatonic translation and transmission",
+      "sources": [
+        "NP11"
+      ],
+      "note": "Free Arabic reworking of Ennead V; later false attribution to al-Fārābī must not be conflated with authorship.",
+      "node_type": "work",
+      "code": "W361",
+      "original_tradition": "translation",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP11"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 800,
+        "end": 900,
+        "anchor": 850,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 800 CE–900 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "arabic_proclus_selections",
+      "title": "Arabic Proclus: selections and reworkings of Elements of Theology",
+      "title_ar": "",
+      "author": "Al-Kindī’s translation circle / later Arabic redactors",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 800 CE–900 CE (contextual activity window)",
+      "date_start": 800,
+      "date_end": 900,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "translation",
+      "region": "Baghdad",
+      "family": "Neoplatonic translation and transmission",
+      "sources": [
+        "NP10"
+      ],
+      "note": "Partial propositions also circulated under Alexander’s name. The dossier is not identical to the Arabic Book of the Pure Good.",
+      "node_type": "work",
+      "code": "W362",
+      "original_tradition": "translation",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP10"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 800,
+        "end": 900,
+        "anchor": 850,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 800 CE–900 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "arabic_proclus_eternity",
+      "title": "Arabic version of Proclus’ Eighteen Arguments",
+      "title_ar": "",
+      "author": "Greek source Proclus; Arabic redactor uncertain",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 800 CE–925 CE (contextual activity window)",
+      "date_start": 800,
+      "date_end": 925,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "translation",
+      "region": "Baghdad / Arabic translation networks",
+      "family": "Neoplatonic translation and transmission",
+      "sources": [
+        "NP10"
+      ],
+      "note": "Partial survival of Proclus’ anti-Christian eternity arguments; the Arabic witness sometimes preserves material absent from Greek.",
+      "node_type": "work",
+      "code": "W363",
+      "original_tradition": "translation",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP10"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 800,
+        "end": 925,
+        "anchor": 862.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 800 CE–925 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "arabic_proclus_timaeus",
+      "title": "Arabic fragment of Proclus’ Commentary on Timaeus 89e–90c",
+      "title_ar": "",
+      "author": "Arabic translator uncertain",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "Arabic version known; composition/translation date unknown",
+      "date_start": null,
+      "date_end": null,
+      "date_status": "unplaced",
+      "date_note": "Do not assign a fabricated date.",
+      "kind": "independent",
+      "tradition": "translation",
+      "region": "Arabic manuscripts / translation network",
+      "family": "Neoplatonic translation and transmission",
+      "sources": [
+        "NP16"
+      ],
+      "note": "Undated Arabic transmission witness with a manuscript letter linked to Hunayn; neither translator nor date is assumed.",
+      "node_type": "work",
+      "code": "W364",
+      "original_tradition": "translation",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP16"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": null,
+        "end": null,
+        "anchor": null,
+        "kind": "unplaced",
+        "window_approximate": false,
+        "basis": "no verified translation date",
+        "label": "Arabic version known; composition/translation date unknown",
+        "note": "Unplaced deliberately"
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "amiri_fusul",
+      "title": "Kitāb al-Fuṣūl fī l-maʿālim al-ilāhiyya",
+      "title_ar": "",
+      "author": "Abū al-Ḥasan al-ʿĀmirī",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 940 CE–992 CE (contextual activity window)",
+      "date_start": 940,
+      "date_end": 992,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "falsafa",
+      "region": "Iran / Khurasan",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP15"
+      ],
+      "note": "Textually demonstrable paraphrases of Proclean Elements, analysed by Wakelnig; direct Greek access should not be inferred.",
+      "node_type": "work",
+      "code": "W365",
+      "original_tradition": "falsafa",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP15"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 940,
+        "end": 992,
+        "anchor": 966,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 940 CE–992 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "farabi_harmony",
+      "title": "Harmony of the Opinions of Plato and Aristotle (attributed)",
+      "title_ar": "",
+      "author": "Attributed to al-Fārābī; authorship debated",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 900 CE–1000 CE (contextual activity window)",
+      "date_start": 900,
+      "date_end": 1000,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "falsafa",
+      "region": "Baghdad / Arabic philosophical circles",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP11"
+      ],
+      "note": "Cites pseudo-Aristotle's Theology in arguing Plato–Aristotle harmony. Authorship and work’s date remain disputed.",
+      "node_type": "work",
+      "code": "W366",
+      "original_tradition": "falsafa",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP11"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 900,
+        "end": 1000,
+        "anchor": 950,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 900 CE–1000 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "latin_liber_causis",
+      "title": "Latin Liber de causis (Gerard of Cremona translation)",
+      "title_ar": "",
+      "author": "Arabic anonymous author; Latin translation by Gerard of Cremona",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 1150 CE–1187 CE (contextual activity window)",
+      "date_start": 1150,
+      "date_end": 1187,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "translation",
+      "region": "Toledo / Latin west",
+      "family": "Neoplatonic translation and transmission",
+      "sources": [
+        "NP17"
+      ],
+      "note": "Translation of Arabic Book of the Pure Good, originally transmitted with a false Aristotelian attribution.",
+      "node_type": "work",
+      "code": "W367",
+      "original_tradition": "translation",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP17"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 1150,
+        "end": 1187,
+        "anchor": 1168.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 1150 CE–1187 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "latin_proclus_elements",
+      "title": "Latin Elements of Theology (William of Moerbeke)",
+      "title_ar": "",
+      "author": "Proclus; translated by William of Moerbeke",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "1268 CE (dated)",
+      "date_start": 1268,
+      "date_end": 1268,
+      "date_status": "date attested",
+      "date_note": "Conventional reported text/translation date.",
+      "kind": "independent",
+      "tradition": "translation",
+      "region": "Latin west",
+      "family": "Neoplatonic translation and transmission",
+      "sources": [
+        "NP17"
+      ],
+      "note": "Moerbeke's 1268 Latin translation gave Aquinas a direct comparator against the Arabic-derived Book of Causes.",
+      "node_type": "work",
+      "code": "W368",
+      "original_tradition": "translation",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP17"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 1268,
+        "end": 1268,
+        "anchor": 1268,
+        "kind": "exact",
+        "window_approximate": false,
+        "basis": "dated text or translation",
+        "label": "1268 CE (dated)",
+        "note": "Conventional text date"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "aquinas_liber_causis",
+      "title": "Exposition on the Liber de causis",
+      "title_ar": "",
+      "author": "Thomas Aquinas",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "1272 CE (dated)",
+      "date_start": 1272,
+      "date_end": 1272,
+      "date_status": "date attested",
+      "date_note": "Conventional reported text/translation date.",
+      "kind": "independent",
+      "tradition": "christian",
+      "region": "Paris / Latin west",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP17"
+      ],
+      "note": "Comments on each proposition, distinguishing pseudo-Aristotelian Arabic source from Proclus’ Greek Elements through Latin translations.",
+      "node_type": "work",
+      "code": "W369",
+      "original_tradition": "christian",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP17"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 1272,
+        "end": 1272,
+        "anchor": 1272,
+        "kind": "exact",
+        "window_approximate": false,
+        "basis": "dated text or translation",
+        "label": "1272 CE (dated)",
+        "note": "Conventional text date"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "sijistani_yanabi",
+      "title": "Kitāb al-Yanābīʿ (Book of Wellsprings)",
+      "title_ar": "",
+      "author": "Abū Yaʿqūb al-Sijistānī",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 920 CE–1000 CE (contextual activity window)",
+      "date_start": 920,
+      "date_end": 1000,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "context",
+      "region": "Sijistan / Ismāʿīlī networks",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP23"
+      ],
+      "note": "Ismāʿīlī Neoplatonic cosmology and theological reworking; no unproved direct consultation of Plotinus Greek or Arabic claimed.",
+      "node_type": "work",
+      "code": "W370",
+      "original_tradition": "context",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP23"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 920,
+        "end": 1000,
+        "anchor": 960,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 920 CE–1000 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "miskawayh_fawz",
+      "title": "al-Fawz al-aṣghar (Shorter Attainment)",
+      "title_ar": "",
+      "author": "Miskawayh",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 950 CE–1030 CE (contextual activity window)",
+      "date_start": 950,
+      "date_end": 1030,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "falsafa",
+      "region": "Iran / Baghdad",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP11"
+      ],
+      "note": "Substantial Neoplatonic vocabulary and doctrine from Arabic Plotinus milieu; precise intermediary of any individual passage requires collation.",
+      "node_type": "work",
+      "code": "W371",
+      "original_tradition": "falsafa",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP11"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 950,
+        "end": 1030,
+        "anchor": 990,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 950 CE–1030 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "isaac_israeli_definitions",
+      "title": "Book of Definitions (Sefer ha-Gevulim)",
+      "title_ar": "",
+      "author": "Isaac Israeli",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 870 CE–950 CE (contextual activity window)",
+      "date_start": 870,
+      "date_end": 950,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "jewish",
+      "region": "Egypt / North Africa",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP11"
+      ],
+      "note": "Early Jewish Arabic philosophy drawing on Neoplatonic and Kindian materials; exact textual path qualified.",
+      "node_type": "work",
+      "code": "W372",
+      "original_tradition": "jewish",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP11"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 870,
+        "end": 950,
+        "anchor": 910,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 870 CE–950 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "alkirmani_rahat",
+      "title": "Rāḥat al-ʿaql",
+      "title_ar": "",
+      "author": "Ḥamīd al-Dīn al-Kirmānī",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 990 CE–1021 CE (contextual activity window)",
+      "date_start": 990,
+      "date_end": 1021,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "context",
+      "region": "Iran / Fāṭimid Ismāʿīlī networks",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP11"
+      ],
+      "note": "Complex Ismāʿīlī metaphysical adaptation, distinct from straightforward Plotinus translation.",
+      "node_type": "work",
+      "code": "W373",
+      "original_tradition": "context",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP11"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 990,
+        "end": 1021,
+        "anchor": 1005.5,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 990 CE–1021 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "aristotle_physics",
+      "title": "Physics (Greek Aristotle)",
+      "title_ar": "",
+      "author": "Aristotle",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "Before 322 BCE; exact composition date unknown",
+      "date_start": null,
+      "date_end": -322,
+      "date_status": "terminus",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "ancient",
+      "region": "Classical Greek philosophical world",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP07"
+      ],
+      "note": "Ancient base text for the later extensive Alexandrian and Athenian commentary tradition.",
+      "node_type": "work",
+      "code": "W374",
+      "original_tradition": "ancient",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP07"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": null,
+        "end": -322,
+        "anchor": -322,
+        "kind": "upper_bound",
+        "window_approximate": false,
+        "basis": "author life or documented working milieu",
+        "label": "Before 322 BCE; exact composition date unknown",
+        "note": "Death/upper bound is not composition year"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "alexander_principles_original",
+      "title": "On the Principles of the Universe (lost Greek original)",
+      "title_ar": "",
+      "author": "Alexander of Aphrodisias",
+      "author_dates": "See bibliographical record and contextual date",
+      "date_label": "c. 175 CE–235 CE (contextual activity window)",
+      "date_start": 175,
+      "date_end": 235,
+      "date_status": "contextual activity span",
+      "date_note": "The bounds are a broad contextual placement, not independent proof of composition across that interval.",
+      "kind": "independent",
+      "tradition": "ancient",
+      "region": "Greek-speaking Roman world",
+      "family": "Neoplatonic reception and related thought",
+      "sources": [
+        "NP25"
+      ],
+      "note": "Lost Greek De principiis reconstructed critically from non-identical Syriac and Arabic witnesses; no direct Greek copy now known.",
+      "node_type": "work",
+      "code": "W375",
+      "original_tradition": "ancient",
+      "tags": [],
+      "intellectual_traditions": [
+        "neoplatonic"
+      ],
+      "classification_evidence": [
+        {
+          "id": "neoplatonic",
+          "status": "textual reception or interpretive engagement",
+          "sources": [
+            "NP25"
+          ]
+        }
+      ],
+      "temporal": {
+        "start": 175,
+        "end": 235,
+        "anchor": 205,
+        "kind": "context",
+        "window_approximate": true,
+        "basis": "author life or documented working milieu",
+        "label": "c. 175 CE–235 CE (contextual activity window)",
+        "note": "Approximate placement; do not infer precise composition"
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
     }
   ],
   "edges": [
@@ -19712,6 +22486,478 @@
       ],
       "evidence": "Catalogue or edition explicitly identifies this work as a commentary on the KALĀM section, not on the logic part.",
       "evidence_kind": "bibliographical catalogue"
+    },
+    {
+      "id": "NP_e01",
+      "source": "aristotle_categories",
+      "target": "porphyry_categories_commentary",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP02"
+      ],
+      "evidence": "Porphyry’s extant questions-and-answers commentary explicitly explicates the Categories.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e02",
+      "source": "porphyry_isagoge",
+      "target": "boethius_isagoge",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP21"
+      ],
+      "evidence": "Boethius composed two commentaries on the Isagoge using distinct Latin versions.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e03",
+      "source": "plotinus_enneads",
+      "target": "porphyry_sententiae",
+      "relation": "textual_use",
+      "confidence": "qualified",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP02"
+      ],
+      "evidence": "Porphyry systematizes Plotinian themes; this is a documented philosophical indebtedness, not an assertion of continuous line-by-line paraphrase.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e04",
+      "source": "plotinus_enneads",
+      "target": "porphyry_vita_plotini",
+      "relation": "author_reference",
+      "confidence": "direct",
+      "label": "editorial witness",
+      "sources": [
+        "NP02"
+      ],
+      "evidence": "Porphyry edited and arranged Plotinus’ writings and prefixed the Life.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e05",
+      "source": "aristotle_metaphysics",
+      "target": "syrianus_metaphysics",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP04"
+      ],
+      "evidence": "The surviving commentary covers B, Gamma, M and N; Syrianus frequently contests Aristotle’s polemic against Platonism.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e06",
+      "source": "syrianus_metaphysics",
+      "target": "asclepius_metaphysics",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP04"
+      ],
+      "evidence": "Asclepius’ later Metaphysics commentary preserves and uses Syrianus’ philosophical exegesis among earlier sources.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e07",
+      "source": "plato_timaeus",
+      "target": "proclus_timaeus",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP05"
+      ],
+      "evidence": "Proclus’ lengthy extant text is explicitly a philosophical commentary on the Timaeus.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e08",
+      "source": "plato_parmenides",
+      "target": "proclus_parmenides",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP05"
+      ],
+      "evidence": "Proclus interprets the Parmenides as a theological treatment of the One and subsequent orders.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e09",
+      "source": "plato_parmenides",
+      "target": "proclus_platonic_theology",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP05"
+      ],
+      "evidence": "Proclus’ Platonic Theology draws heavily on the Parmenides’ theological hypotheses as treated in his school.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e10",
+      "source": "proclus_timaeus",
+      "target": "arabic_proclus_timaeus",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP16"
+      ],
+      "evidence": "A critical edition identifies the Arabic surviving passage as deriving from Proclus’ commentary at Timaeus 89e3–90c7; translator/date remain unverified.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e11",
+      "source": "proclus_elements",
+      "target": "arabic_proclus_selections",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP10"
+      ],
+      "evidence": "The ninth-century Arabic Proclus corpus contains recognizable reworkings of Elements propositions, some reassigned to Alexander.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e12",
+      "source": "proclus_eternity",
+      "target": "arabic_proclus_eternity",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP10"
+      ],
+      "evidence": "Arabic witness transmits selected eternity arguments from Proclus, with textual divergences and partial survival.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e13",
+      "source": "proclus_elements",
+      "target": "amiri_fusul",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP15"
+      ],
+      "evidence": "Wakelnig’s collation identifies passages of al-ʿĀmirī’s Fuṣūl paraphrasing propositions of Proclus’ Elements through Arabic transmission.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e14",
+      "source": "proclus_evil",
+      "target": "dionysius_divine_names",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP09"
+      ],
+      "evidence": "Pseudo-Dionysius’ Divine Names treatment of evil reuses Proclean material while reinterpreting it within Christian theology.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e15",
+      "source": "dionysius_divine_names",
+      "target": "sergius_dionysius_syriac",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP14"
+      ],
+      "evidence": "Sergius made an early Syriac version of the Dionysian corpus, later subject to redaction and translation questions.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e16",
+      "source": "dionysius_celestial",
+      "target": "sergius_dionysius_syriac",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP14"
+      ],
+      "evidence": "Celestial Hierarchy belongs to the Dionysian writings transmitted through Sergius’ Syriac version.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e17",
+      "source": "dionysius_mystical",
+      "target": "sergius_dionysius_syriac",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP14"
+      ],
+      "evidence": "Mystical Theology belongs to the Greek Dionysian corpus with early Syriac textual reception.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e18",
+      "source": "aristotle_categories",
+      "target": "ammonius_categories",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP06"
+      ],
+      "evidence": "Ammonius’ surviving work comments on the Categories within the Alexandrian Neoplatonic curriculum.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e19",
+      "source": "aristotle_categories",
+      "target": "simplicius_categories",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP07"
+      ],
+      "evidence": "Simplicius’ Categories commentary interprets Aristotle through earlier philosophical and Platonic commentary traditions.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e20",
+      "source": "aristotle_heavens",
+      "target": "simplicius_heavens",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP07"
+      ],
+      "evidence": "Simplicius’ treatise is an explicit commentary on Aristotle’s De caelo.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e21",
+      "source": "aristotle_metaphysics",
+      "target": "asclepius_metaphysics",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP04"
+      ],
+      "evidence": "Asclepius expounds Aristotle’s Metaphysics in the Alexandrian scholastic tradition.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e22",
+      "source": "aristotle_physics",
+      "target": "philoponus_physics",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP20"
+      ],
+      "evidence": "Philoponus’ early extant Greek commentary explicates Aristotle’s Physics, often critically.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e23",
+      "source": "aristotle_physics",
+      "target": "simplicius_physics",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP07"
+      ],
+      "evidence": "Simplicius’ substantial commentary explicitly addresses Aristotle’s Physics.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e24",
+      "source": "plotinus_enneads",
+      "target": "arabic_greek_sage",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP11"
+      ],
+      "evidence": "Sayings attributed to the Greek Sage share Arabic Plotinus material with the Theology and ultimately stem from Enneads IV–VI.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e25",
+      "source": "plotinus_enneads",
+      "target": "arabic_divine_science",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP11"
+      ],
+      "evidence": "The falsely Farabian Letter on Divine Science corresponds to part of Ennead V through the Arabic Plotinus translation family.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e26",
+      "source": "arabic_theology",
+      "target": "arabic_pure_good",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP11",
+        "NP18"
+      ],
+      "evidence": "Arabic Book of the Pure Good adapts Proclus using a simplified Plotinian hierarchy shaped by the Arabic Plotinus.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e27",
+      "source": "arabic_theology",
+      "target": "farabi_harmony",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP11"
+      ],
+      "evidence": "Harmony explicitly appeals to the Theology of Aristotle; attribution of Harmony to al-Fārābī remains disputed.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e28",
+      "source": "arabic_theology",
+      "target": "sijistani_yanabi",
+      "relation": "broad_influence",
+      "confidence": "qualified",
+      "label": "qualified philosophical reception",
+      "sources": [
+        "NP11",
+        "NP23"
+      ],
+      "evidence": "Al-Sijistānī reworks the Arabic Neoplatonic hierarchy within Ismāʿīlī teaching; this does not prove direct use of one extant Theology recension.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e29",
+      "source": "arabic_theology",
+      "target": "miskawayh_fawz",
+      "relation": "broad_influence",
+      "confidence": "qualified",
+      "label": "qualified philosophical reception",
+      "sources": [
+        "NP11"
+      ],
+      "evidence": "Miskawayh’s Fawz al-asghar shares terminology and doctrines with Arabic Plotinus; source path for particular passages needs collation.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e30",
+      "source": "arabic_theology",
+      "target": "isaac_israeli_definitions",
+      "relation": "broad_influence",
+      "confidence": "qualified",
+      "label": "qualified philosophical reception",
+      "sources": [
+        "NP11"
+      ],
+      "evidence": "Isaac Israeli draws on Arabic Plotinus and Kindian ideas; this records a scholarly account, not a secured direct citation of the Theology.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e31",
+      "source": "arabic_pure_good",
+      "target": "latin_liber_causis",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP17",
+        "NP18"
+      ],
+      "evidence": "Gerard of Cremona’s twelfth-century Latin Liber de causis transmits the Arabic Book of the Pure Good.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e32",
+      "source": "latin_liber_causis",
+      "target": "aquinas_liber_causis",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "direct commentary on",
+      "sources": [
+        "NP17"
+      ],
+      "evidence": "Aquinas’ Expositio super Librum de causis directly comments on the Latin Book of Causes.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e33",
+      "source": "proclus_elements",
+      "target": "latin_proclus_elements",
+      "relation": "translation_adaptation",
+      "confidence": "direct",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP17"
+      ],
+      "evidence": "William of Moerbeke’s 1268 Latin translation offers direct access to the Elements.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e34",
+      "source": "latin_proclus_elements",
+      "target": "aquinas_liber_causis",
+      "relation": "textual_use",
+      "confidence": "high",
+      "label": "demonstrable textual use",
+      "sources": [
+        "NP17"
+      ],
+      "evidence": "Aquinas compares Latin Proclus with the Book of Causes to identify the latter’s Proclean origin.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e35",
+      "source": "alexander_principles_original",
+      "target": "sergius_alexander_principles",
+      "relation": "translation_adaptation",
+      "confidence": "high",
+      "label": "translation or adaptation",
+      "sources": [
+        "NP19",
+        "NP25"
+      ],
+      "evidence": "Sergius’ sixth-century Syriac adaptation modifies Alexander’s De principiis; the lost Greek original cannot be reconstructed from Syriac alone.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
+    },
+    {
+      "id": "NP_e36",
+      "source": "proclus_platonic_theology",
+      "target": "damascius_principles",
+      "relation": "critique",
+      "confidence": "qualified",
+      "label": "critical engagement",
+      "sources": [
+        "NP22"
+      ],
+      "evidence": "Damascius takes up and criticizes Proclean first-principle metaphysics, but a strict lemma-by-lemma response to this particular book is not asserted.",
+      "evidence_kind": "named scholarly source; textual provenance described in note"
     }
   ],
   "notes": [
@@ -20139,6 +23385,28 @@
         "GNA-H01",
         "GNA-H02",
         "GNA-H03"
+      ]
+    },
+    {
+      "title": "The missing Neoplatonic bridge (revision 7)",
+      "text": "Greek Neoplatonism was a complex late antique scholastic formation. Plato/Aristotle -> commentators -> Syriac/Greek-Arabic interventions -> al-Kindi and later Arabic philosophy must be read as different, sometimes parallel pathways. Arabic Plotinus is an interpretive reworking of Enneads IV–VI, while Arabic Proclus survives in several distinct recensions including but not reducible to the Book of Pure Good. Alexandrian, Athenian, Syriac and Baghdad settings overlap rather than form one unbroken institutional chain. Six text-centered families, scholarly networks and source-qualified relations have been added; no speculative influence links across mere chronological overlap.",
+      "sources": [
+        "NP01",
+        "NP05",
+        "NP10",
+        "NP11",
+        "NP12",
+        "NP15"
+      ]
+    },
+    {
+      "title": "Selective source-based Ashʿarī and Māturīdī classification",
+      "text": "Do not split the entire Sunni kalām category from names or regions. Ashʿarī and Māturīdī tags identify only sourced cases. Taftāzānī's Sharḥ al-ʿAqāʾid is a Māturīdī textual family reception by a scholar whom a recent study treats as Ashʿarī: these separate axes must not be conflated.",
+      "sources": [
+        "SM01",
+        "SM02",
+        "SM03",
+        "SM04"
       ]
     }
   ],
@@ -21610,7 +24878,7 @@
       "present": true
     }
   ],
-  "revision": "atlas-three-layers-6-2026-10-29",
+  "revision": "neoplatonic-bridge-7-2026-10-29",
   "history": {
     "periods": [
       {
@@ -24362,11 +27630,95 @@
       "Qajar emergence is gradual:1786 is a periodization convention here. ʿAbbās I’s accession is displayed as 1587/88 because cited specialist accounts differ.",
       "Open contemporary context windows end at 2026 only because that is the chart cutoff. Their endpoints are not predicted political events.",
       "Rulers are a deliberately selected contextual sample, not a complete regnal list. CE is used on the common horizontal axis."
+    ],
+    "networks": [
+      {
+        "id": "NET01",
+        "label": "Plotinus and Porphyry: Rome and eastern Mediterranean teaching",
+        "start": 245,
+        "end": 305,
+        "date_label": "c.245–305 CE (scholarly milieu)",
+        "region": "Rome / Tyre / Mediterranean",
+        "kind": "scholarly_network",
+        "record_group": "networks",
+        "note": "A philosophical transmission milieu centered on Plotinus and Porphyry, not a state, a continuous formal institution or an inference that every contemporary work was composed in Rome.",
+        "sources": [
+          "NP01",
+          "NP02"
+        ],
+        "confidence": "biographical and curricular reconstruction"
+      },
+      {
+        "id": "NET02",
+        "label": "Late Platonist teaching in Athens",
+        "start": 410,
+        "end": 529,
+        "date_label": "c.410–529 CE (conventional)",
+        "region": "Athens",
+        "kind": "scholarly_network",
+        "record_group": "networks",
+        "note": "Athenian teaching setting of Syrianus, Proclus and Damascius. The conventional 529 restriction should not be interpreted as an instantaneous extinction of Greek philosophy or total closure of all teaching.",
+        "sources": [
+          "NP01",
+          "NP05",
+          "NP22"
+        ],
+        "confidence": "conventional institutional frame"
+      },
+      {
+        "id": "NET03",
+        "label": "Alexandrian Neoplatonic Aristotelian school",
+        "start": 470,
+        "end": 630,
+        "date_label": "c.470–630 CE (pedagogical continuity)",
+        "region": "Alexandria / Constantinople",
+        "kind": "scholarly_network",
+        "record_group": "networks",
+        "note": "Teaching lineage from Ammonius through Philoponus, Olympiodorus and later expositors. Continuity across centuries is documented, but the band is not continuous personal instruction.",
+        "sources": [
+          "NP06",
+          "NP08"
+        ],
+        "confidence": "selective school-history context"
+      },
+      {
+        "id": "NET04",
+        "label": "Syriac Aristotelian and Dionysian scholarly traditions",
+        "start": 490,
+        "end": 800,
+        "date_label": "c.490–800 CE (regional networks, variable)",
+        "region": "Edessa / Nisibis / Reshaina / Syria / Mesopotamia",
+        "kind": "scholarly_network",
+        "record_group": "networks",
+        "note": "Overlapping Syriac communities preserved and transformed Aristotelian logic and Christian Neoplatonic theology. Not one continuous academy, not a single demonstrable route from Greek to Arabic.",
+        "sources": [
+          "NP10",
+          "NP12",
+          "NP13"
+        ],
+        "confidence": "broad regional pedagogical and textual context"
+      },
+      {
+        "id": "NET05",
+        "label": "Early Abbasid Baghdad: al-Kindī and translation circles",
+        "start": 790,
+        "end": 920,
+        "date_label": "c.790–920 CE (multiple translation circles)",
+        "region": "Baghdad / Iraq",
+        "kind": "scholarly_network",
+        "record_group": "networks",
+        "note": "Translations and free reworkings of Aristotle, Plotinus, Proclus and late antique commentators under early Abbasid sponsorship. Do not equate all versions with a single coherent school, fixed date or translation channel.",
+        "sources": [
+          "NP10",
+          "NP11"
+        ],
+        "confidence": "documented textual movement; broad institutional date"
+      }
     ]
   },
   "timeline_meta": {
     "title": "Texts in time: Islamic intellectual traditions and historical context",
-    "version": "2.1",
+    "version": "3.0",
     "prepared": "29 October 2026",
     "main_domain": [
       570,
@@ -24493,8 +27845,10 @@
         "GNA-P01",
         "GNA-P02",
         "GNA-P03"
-      ]
-    }
+      ],
+      "school_network_note": "Scholarly network bands are not political dynasties and do not assert direct transmission. See each detail/source."
+    },
+    "school_subtradition_note": "Ashʿarī and Māturīdī overlays are sourced, selective and incomplete; a commentary on another school’s base text is classified as reception, not dual authorial allegiance."
   },
   "author_index": [
     {
@@ -26895,6 +30249,121 @@
       "within_family_relationships": 4,
       "explicit_commentary_links": 4,
       "scope": "Ṣadrā's multi-volume philosophical summa and its later glosses and continuations."
+    },
+    {
+      "id": "plato_timaeus",
+      "label": "Plato’s Timaeus: Greek and Arabic reception",
+      "section": "Greek commentary and transmission",
+      "root": "plato_timaeus",
+      "member_ids": [
+        "plato_timaeus",
+        "galen_timaeus",
+        "timaeus_arabic_compendium",
+        "proclus_timaeus",
+        "arabic_proclus_timaeus"
+      ],
+      "record_count": 5,
+      "within_family_relationships": 4,
+      "explicit_commentary_links": 2,
+      "scope": "Greek commentary and late Arabic excerpts, including Galen's epitome. These are distinct textual recensions; no claim that a full Proclus Greek text was translated."
+    },
+    {
+      "id": "aristotle_metaphysics",
+      "label": "Aristotle’s Metaphysics: Greek, Arabic and Latin commentaries",
+      "section": "Greek commentary and transmission",
+      "root": "aristotle_metaphysics",
+      "member_ids": [
+        "aristotle_metaphysics",
+        "syrianus_metaphysics",
+        "asclepius_metaphysics",
+        "themistius_lambda",
+        "arabic_themistius_lambda",
+        "arabic_metaphysics",
+        "thabit_metaphysics",
+        "farabi_aghrad",
+        "averroes_long_metaphysics"
+      ],
+      "record_count": 9,
+      "within_family_relationships": 10,
+      "explicit_commentary_links": 6,
+      "scope": "Named Metaphysics commentary and transmission family spanning Greek Alexandrian exegesis to Arabic commentaries. Syrianus covers only B, Γ, M, N."
+    },
+    {
+      "id": "aristotle_categories",
+      "label": "Aristotle’s Categories: Neoplatonic, Syriac, Arabic and Latin",
+      "section": "Greek commentary and transmission",
+      "root": "aristotle_categories",
+      "member_ids": [
+        "aristotle_categories",
+        "porphyry_categories_commentary",
+        "porphyry_isagoge",
+        "ammonius_categories",
+        "simplicius_categories",
+        "sergius_categories",
+        "arabic_categories",
+        "boethius_isagoge"
+      ],
+      "record_count": 8,
+      "within_family_relationships": 7,
+      "explicit_commentary_links": 5,
+      "scope": "Categories textual commentaries and the Isagoge preparatory curriculum; Boethius is a separate Latin line, not a Syriac-Arabic intermediate."
+    },
+    {
+      "id": "aristotle_physics",
+      "label": "Aristotle’s Physics: late antique commentaries",
+      "section": "Greek commentary and transmission",
+      "root": "aristotle_physics",
+      "member_ids": [
+        "aristotle_physics",
+        "philoponus_physics",
+        "simplicius_physics"
+      ],
+      "record_count": 3,
+      "within_family_relationships": 2,
+      "explicit_commentary_links": 2,
+      "scope": "A major base text with two important, often mutually critical late antique Greek commentators; direct Arabic translation of all of Simplicius not established."
+    },
+    {
+      "id": "plotinus_transmission",
+      "label": "Enneads and Arabic Plotinus transmission",
+      "section": "Greek–Arabic Neoplatonism",
+      "root": "plotinus_enneads",
+      "member_ids": [
+        "plotinus_enneads",
+        "porphyry_vita_plotini",
+        "porphyry_sententiae",
+        "arabic_theology",
+        "arabic_greek_sage",
+        "arabic_divine_science",
+        "avicenna_theology_notes",
+        "farabi_harmony",
+        "sijistani_yanabi",
+        "miskawayh_fawz",
+        "isaac_israeli_definitions"
+      ],
+      "record_count": 11,
+      "within_family_relationships": 10,
+      "explicit_commentary_links": 1,
+      "scope": "A reception network, NOT an exhaustive Greek commentary family. Different Arabic reworkings and indirect later receptions are not conflated with original Plotinus."
+    },
+    {
+      "id": "proclus_elements",
+      "label": "Proclus’ Elements: Arabic Proclus, Book of Causes and Latin",
+      "section": "Greek–Arabic Neoplatonism",
+      "root": "proclus_elements",
+      "member_ids": [
+        "proclus_elements",
+        "arabic_proclus_selections",
+        "arabic_pure_good",
+        "amiri_fusul",
+        "latin_liber_causis",
+        "latin_proclus_elements",
+        "aquinas_liber_causis"
+      ],
+      "record_count": 7,
+      "within_family_relationships": 7,
+      "explicit_commentary_links": 1,
+      "scope": "Greek source, Arabic adaptations and later Latin commentaries are distinct witnesses and must not be represented as a single continuous verbatim translation."
     }
   ],
   "textual_family_method": {
