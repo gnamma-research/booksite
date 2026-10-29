@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - atlas-three-layers-scroll-chronology-2026-10-29
+      - atlas-continuous-pan-date-markers-2026-10-29
     paths:
       - "research/intellectual-atlas/**"
       - ".github/workflows/atlas-chronology-browser-qa.yml"
