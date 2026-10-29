@@ -196,18 +196,31 @@ async def run_audit(page,full=True):
         s=await snap(page)
         check(abs(s["from"]-from_y)<1 and abs(s["to"]-to_y)<1,f"Date preset {label} misrouted")
         cases+=1
-    await page.locator('[data-action="whole-atlas-chart"]').click()
-    check((await snap(page))["to"]-(await snap(page))["from"]==2626,
-          "In-chart All years button did not restore full chronology")
-    cases+=1
-    # Click a real clickable century cluster to see whether zooming into its
-    # component texts follows the chronological bounds.
+    # The redundant in-chart All years button intentionally hides on wide
+    # desktop layouts; the main Whole atlas button remains available there.
+    chart_whole=page.locator('[data-action="whole-atlas-chart"]')
+    if await chart_whole.is_visible():
+        await chart_whole.click()
+        check((await snap(page))["to"]-(await snap(page))["from"]==2626,
+              "In-chart All years button did not restore full chronology")
+        cases+=1
+    await reset(page)
+    # An actual SVG tap must be delivered to its link rather than swallowed
+    # by the chart's pointer-capture handler.
     cluster=page.locator('[data-chart] a[data-cluster]').first
     check(await cluster.count()>0,"Overview does not expose any century group")
     await cluster.click()
     ss=await snap(page)
     check(ss["to"]-ss["from"]<2626,"Selecting a century group didn't zoom into it")
-    cases+=2
+    work=page.locator('[data-chart] a[data-work]').first
+    check(await work.count()>0,"Zoomed century contains no individually clickable texts")
+    wanted=await work.get_attribute('data-work')
+    await work.click()
+    selected=await snap(page)
+    check(selected["selected"]==wanted and selected["detailType"]=="work",
+          "SVG book click was swallowed by pointer capture rather than opening details")
+    await page.locator('[data-action="close-detail"]').click()
+    cases+=4
     await reset(page)
     full_range=await snap(page)
     check((full_range["from"],full_range["to"])==(-600,2026),"Whole atlas must show entire chronology")
