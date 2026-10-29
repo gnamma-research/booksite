@@ -52,22 +52,44 @@ async def visit(browser, width, height, mobile=False):
     assert_that(initial["chartHeight"]<=height+3,"Chart has bounded height")
     await page.locator('[data-chart]').scroll_into_view_if_needed()
     await page.locator('[data-chart]').hover(position={"x":30,"y":min(70,initial["chartHeight"]-10)},force=True)
-    await page.mouse.wheel(0,390)
-    await page.wait_for_timeout(180)
-    vertical=await read(page)
-    assert_that(vertical["scrollTop"]>0,"Ordinary vertical wheel must scroll the diagram")
-    await page.mouse.wheel(0,-170)
-    await page.wait_for_timeout(140)
-    scroll_back=await read(page)
-    assert_that(scroll_back["scrollTop"]<vertical["scrollTop"],
-                "The same long panel must scroll back UP, not just down")
-    await page.mouse.wheel(0,170)
-    await page.wait_for_timeout(140)
-    assert_that(vertical["from"]==initial["from"],"Ordinary vertical wheel must NOT pan centuries")
-    await page.mouse.wheel(420,0)
-    await page.wait_for_timeout(240)
-    horizontal=await read(page)
-    assert_that(horizontal["from"]!=initial["from"],"Horizontal trackpad gesture must pan chronology")
+    if mobile and browser.browser_type.name=='webkit':
+        # Mobile WebKit deliberately rejects mouse.wheel in Playwright. Check the
+        # actual scrollable region and the wheel intent handler without pretending
+        # a synthetic event verifies real finger-swipe momentum.
+        await page.locator('[data-chart]').evaluate('(e)=>e.scrollTop=390')
+        vertical=await read(page)
+        assert_that(vertical["scrollTop"]>0,"Mobile WebKit must expose a scrollable chart")
+        prevented=await page.locator('[data-chart]').evaluate("""(e)=>{
+            const w=new WheelEvent('wheel',{bubbles:true,cancelable:true,deltaY:220});
+            e.dispatchEvent(w);return w.defaultPrevented;
+        }""")
+        assert_that(not prevented,"Vertical wheel intent must not be trapped by WebKit handler")
+        await page.locator('[data-chart]').evaluate('(e)=>e.scrollTop=Math.max(0,e.scrollTop-170)')
+        scroll_back=await read(page)
+        assert_that(scroll_back["scrollTop"]<vertical["scrollTop"],"Mobile WebKit scroll region moves up")
+        await page.locator('[data-chart]').evaluate("""(e)=>{
+            e.dispatchEvent(new WheelEvent('wheel',
+               {bubbles:true,cancelable:true,deltaX:420,deltaY:0}));
+        }""")
+        await page.wait_for_timeout(250)
+        horizontal=await read(page)
+    else:
+        await page.mouse.wheel(0,390)
+        await page.wait_for_timeout(180)
+        vertical=await read(page)
+        assert_that(vertical["scrollTop"]>0,"Ordinary vertical wheel must scroll the diagram")
+        await page.mouse.wheel(0,-170)
+        await page.wait_for_timeout(140)
+        scroll_back=await read(page)
+        assert_that(scroll_back["scrollTop"]<vertical["scrollTop"],
+                    "The same long panel must scroll back UP, not just down")
+        await page.mouse.wheel(0,170)
+        await page.wait_for_timeout(140)
+        await page.mouse.wheel(420,0)
+        await page.wait_for_timeout(240)
+        horizontal=await read(page)
+    assert_that(vertical["from"]==initial["from"],"Vertical scrolling must NOT pan centuries")
+    assert_that(horizontal["from"]!=initial["from"],"Horizontal gesture must pan chronology")
     # The selected text panel must retain an independent scroll region on desktop.
     await page.evaluate("""() => document.querySelector('#kalam-timeline-app-v3')
         .atlasTest.selectNode('jurjani_mawaqif',true)""")
