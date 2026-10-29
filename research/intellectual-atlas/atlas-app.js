@@ -84,14 +84,35 @@
     const histogramMax=Math.max(1,...densitySamples);
     function drawNavigator(){const rail=q('[data-history-rail]');if(!rail)return;
       rail.setAttribute('aria-valuenow',String(Math.round((state.from+state.to)/2)));
-      rail.setAttribute('aria-valuetext',`${year(state.from)} to ${year(state.to)}`);
-      const left=(state.from-historyMin)/historyLength*100,width=(state.to-state.from)/historyLength*100;
-      rail.innerHTML=`<div class="ia-travel-histogram" aria-hidden="true">${densitySamples.map(n=>`<i style="height:${Math.max(3,Math.round(100*Math.sqrt(n/histogramMax)))}%"></i>`).join('')}</div><div class="ia-travel-window" style="left:${left}%;width:${width}%" aria-hidden="true"></div>`;
+      rail.setAttribute('aria-valuetext',`${year(state.from)} to ${year(state.to)}. Drag the highlighted window to pan continuously.`);
+      rail.setAttribute('title',`${year(state.from)} – ${year(state.to)} · drag the grip to move the view`);
+      if(!rail.querySelector('.ia-travel-window')){
+        const ticks=[0,500,1000,1500,2000].map(y=>`<i style="left:${(y-historyMin)/historyLength*100}%" title="${y} CE"></i>`).join('');
+        rail.innerHTML=`<div class="ia-travel-histogram" aria-hidden="true">${densitySamples.map(n=>`<i style="height:${Math.max(3,Math.round(100*Math.sqrt(n/histogramMax)))}%"></i>`).join('')}</div><div class="ia-travel-ticks" aria-hidden="true">${ticks}</div><div class="ia-travel-window" aria-hidden="true"><span class="ia-travel-grip"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><circle cx="9" cy="5" r="1.4"/><circle cx="15" cy="5" r="1.4"/><circle cx="9" cy="12" r="1.4"/><circle cx="15" cy="12" r="1.4"/><circle cx="9" cy="19" r="1.4"/><circle cx="15" cy="19" r="1.4"/></svg></span></div>`;
+      }
+      const thumb=rail.querySelector('.ia-travel-window');
+      thumb.style.left=`${(state.from-historyMin)/historyLength*100}%`;
+      thumb.style.width=`${(state.to-state.from)/historyLength*100}%`;
+    }
+    // Never confuse a chart callout with the period a work existed. Broad bounds
+    // are intervals of evidence, not durations of a book or its circulation.
+    function dateMeaning(n,t){
+      const kind=t.kind||'unknown',y=t.anchor===null?'unknown':year(t.anchor);
+      if(t.stages?.length)return {short:'Phases · '+t.stages.map(st=>compactYear(st.end)).join(' / '),long:'Several separately attested writing, redaction or editing stages. The gaps do not imply continuous writing.'};
+      if(/upper|terminus|before|death_bound/.test(kind))return {short:'By '+y+' · upper bound',long:'Latest possible date or attestation, often the author’s death; composition may be earlier.'};
+      if(/lower|after/.test(kind))return {short:'After '+y+' · lower bound',long:'Earliest possible date, not a verified completion year.'};
+      if(kind==='publication')return {short:'Printed/attested · '+y,long:'This dates an edition or publication witness, not necessarily the original work.'};
+      if(kind==='unplaced'||kind==='undated'||t.anchor===null)return {short:'Undated — not plotted',long:'Insufficient evidence to position this entry on the calendar axis.'};
+      if(kind==='exact')return {short:'Dated '+y,long:'A year-level textual date supported by the record; inspect its evidence for whether completion or another event is dated.'};
+      if(kind==='approximate')return {short:'Approx. '+y,long:'Approximate year or estimate; not verified to a precise completion date.'};
+      if(kind==='context')return {short:'Context / multiple stages',long:'An authorial or corpus activity envelope, not the duration of the book or a continuous composition interval.'};
+      if(kind==='range')return {short:'Approx. dating window',long:'A possible composition or attestation window, not a period during which the book continuously existed or was being written.'};
+      return {short:'Dated with qualifications',long:'The record has qualified date evidence; see the source and date note.'};
     }
     function cardTitleLines(t,width){const words=String(t).split(/\s+/),lines=[''];for(const word of words){const i=lines.length-1,tryText=lines[i]?(lines[i]+' '+word):word;measure.font='600 13px '+getComputedStyle(root).fontFamily;if(measure.measureText(tryText).width<width)lines[i]=tryText;else if(lines.length<2)lines.push(word);else lines[i]+=' '+word}return [fit(lines[0],width,13,600),fit(lines[1]||'',width,13,600)]}
     function drawTimeline(){
       const main=q('[data-main]');
-      if(!q('[data-chart]'))main.innerHTML=`<div class="ia-main-head"><div><h2>Texts, empires and events</h2><span class="ia-small" data-range-caption></span></div><div class="ia-actions"><button type="button" data-action="pan-back" aria-label="Earlier period">← Earlier</button><button type="button" data-action="zoom-in" aria-label="Zoom into timeline">+ Zoom</button><button type="button" data-action="zoom-out" aria-label="Zoom out of timeline">− Zoom</button><button type="button" data-action="pan-forward" aria-label="Later period">Later →</button></div></div><p class="ia-travel-help">Drag horizontally to travel through time. Scroll vertically to explore the diagram; Shift + wheel or horizontal trackpad gestures move through centuries. Ctrl/⌘ + wheel zooms. Select a century group to inspect its texts. Keyboard: ← →, + −, Home, End.</p><div class="ia-nav-overview"><span>600 BCE</span><div class="ia-travel-track" data-history-rail tabindex="0" role="slider" aria-label="Navigate the whole historical timeline" aria-valuemin="-600" aria-valuemax="2026" aria-valuenow="1300" aria-orientation="horizontal"></div><span>2026</span><span class="ia-zoom-tag" data-scale-caption></span></div><div class="ia-chart" data-chart tabindex="0" role="region" aria-label="Pan and zoom through texts, empires and historical events"></div><div class="ia-legend"><span><b>●</b> dated point</span><span><b>━</b> stated range</span><span><b>◀</b> upper bound</span><span><b>◇</b> approximate / context</span><span><b>■</b> publication witness</span><span><b>│</b> historical event</span><span><b>┄</b> interrupted territorial rule</span><span><b>▤</b> scholarly network (not a state)</span><span><b>→</b> textual relationship</span></div><div class="ia-family-legend" data-visible-families></div><p class="ia-bound-warning">Event rules share the texts’ calendar axis. Bounds retain their uncertainty; chronological overlap does not establish influence or patronage.</p><div data-unplaced></div>`;
+      if(!q('[data-chart]'))main.innerHTML=`<div class="ia-main-head"><div><h2>Texts, empires and events</h2><span class="ia-small" data-range-caption></span></div><div class="ia-actions"><button type="button" data-action="pan-back" aria-label="Earlier period">← Earlier</button><button type="button" data-action="zoom-in" aria-label="Zoom into timeline">+ Zoom</button><button type="button" data-action="zoom-out" aria-label="Zoom out of timeline">− Zoom</button><button type="button" data-action="pan-forward" aria-label="Later period">Later →</button></div></div><p class="ia-travel-help">Drag the overview's <strong>six-dot handle</strong> to move continuously through history, or tap elsewhere on that bar to seek. Swipe/drag the diagram horizontally to pan; scroll vertically to read. Shift + wheel / horizontal trackpad pan; Ctrl/⌘ + wheel zooms. Keyboard: ← →, + −, Home, End.</p><div class="ia-nav-overview"><span>600 BCE</span><div class="ia-travel-track" data-history-rail tabindex="0" role="slider" aria-label="Move the visible time window; drag its six-dot handle or use the arrow keys" aria-valuemin="-600" aria-valuemax="2026" aria-valuenow="1300" aria-orientation="horizontal"></div><span>2026</span><span class="ia-zoom-tag" data-scale-caption></span></div><p class="ia-date-guide"><strong>Work labels are not time spans.</strong> The small mark linked to each title is the date evidence: <strong>■</strong> an attested year, <strong>◆</strong> approximate position, <strong>◀</strong> latest possible date, <strong>⋯</strong> an uncertain window or separate stages. A book's label width has no chronological meaning.</p><div class="ia-chart" data-chart tabindex="0" role="region" aria-label="Continuously pan or zoom the timeline; book labels are connected to independent date marks"></div><div class="ia-legend"><span><b>■</b> attested year (small square)</span><span><b>⋯</b> uncertain window, NOT a duration</span><span><b>◀</b> latest bound (not completion)</span><span><b>◇</b> approximate or contextual</span><span><b>□</b> edition / publication witness</span><span><b>│</b> historical event</span><span><b>┄</b> interrupted territorial rule</span><span><b>▤</b> scholarly network (not a state)</span><span><b>→</b> textual relationship</span></div><div class="ia-family-legend" data-visible-families></div><p class="ia-bound-warning">Event rules share the texts’ calendar axis. Bounds retain their uncertainty; chronological overlap does not establish influence or patronage.</p><div data-unplaced></div>`;
       q('[data-range-caption]').textContent=`${year(state.from)} – ${year(state.to)} · ${D.nodes.length} entries in the complete atlas`;q('[data-scale-caption]').textContent=`${Math.round(state.to-state.from)} years in view`;drawNavigator();
       const chart=q('[data-chart]'),W=Math.max(280,Math.floor(chart.clientWidth||chart.getBoundingClientRect().width||900)),L=W<500?12:18,R=W<500?12:20,plotW=W-L-R;
       const x=value=>L+(value-state.from)/(state.to-state.from)*plotW,clamp=v=>Math.max(L,Math.min(W-R,v));
@@ -135,8 +156,9 @@
       const span=state.to-state.from,overviewMode=span>=(W<600?300:1050),deepMode=span<=240,mediumMode=span<=580,coreEvents=new Set(['HEV01','HEV02','HEV05','HEV06','HEV07','HEV08','HEV12','HEV15','HL_E01','HL_E03','HL_E04','HL_E06','HL_E07','HL_E08','HL_E09','HL_E12','HL_E14','HL_E18','HL_E20']);
       const labelEvents=events.filter(e=>span<=650||coreEvents.has(e.id)||e.id===state.detailId);
       visibleNodes=timelineNodes();
-      const cw=overviewMode?Math.min(W-25,172):deepMode?Math.min(W-25,260):mediumMode?Math.min(W-25,212):Math.min(W-25,164);
-      const workH=deepMode?123:mediumMode?91:73,ew=W<500?116:146;
+      // Label width and height are typographic only; never encode an edition's temporal duration.
+      const cw=overviewMode?Math.min(W-25,158):deepMode?Math.min(W-25,202):mediumMode?Math.min(W-25,180):Math.min(W-25,164);
+      const workH=deepMode?99:mediumMode?82:76,ew=W<500?116:146;
       const bucketSize=W<600?50:span>1850?125:100,buckets=new Map();
       if(overviewMode)for(const n of visibleNodes){const anchor=temporal(n).anchor;if(anchor===null)continue;const start=Math.floor(anchor/bucketSize)*bucketSize;if(!buckets.has(start))buckets.set(start,[]);buckets.get(start).push(n)}
       const cards=overviewMode?[...buckets].map(([start,items])=>({kind:'cluster',item:{start,end:start+bucketSize,items},anchor:start+bucketSize/2,w:cw})):visibleNodes.map(n=>({kind:'work',item:n,anchor:temporal(n).anchor,w:cw}));
@@ -158,17 +180,23 @@
           continue;
         }
         const n=a.item,t=temporal(n),px=clamp(x(t.anchor)),style=`--ia-series:${color(n)}`,selected=n.id===state.selected,cls=selected?'ia-selected-box':'ia-work-box';
-        pos.set(n.id,{x:px,y:ny+5,boxx:cardx,boxy:ny,boxw:cw});let mark='';const kind=t.kind||'';
-        if(/upper|terminus|before|death_bound/.test(kind))mark=`<line class="ia-date-mark" x1="${Math.max(L,px-19)}" x2="${px}" y1="${ny+5}" y2="${ny+5}" stroke-dasharray="2 2"/><path class="ia-date-mark" d="M ${px} ${ny+1} l -6 4 6 4 Z"/>`;
-        else if(/lower|after/.test(kind))mark=`<line class="ia-date-mark" x1="${px}" x2="${Math.min(W-R,px+19)}" y1="${ny+5}" y2="${ny+5}" stroke-dasharray="2 2"/><path class="ia-date-mark" d="M ${px} ${ny+1} l 6 4 -6 4 Z"/>`;
-        else if(kind==='publication'){const s=clamp(x(t.start??t.anchor)),b=clamp(x(t.end??t.anchor));mark=`<rect class="ia-date-mark" x="${px-3}" y="${ny+2}" width="6" height="6"/><line class="ia-date-mark" x1="${s}" x2="${b}" y1="${ny+5}" y2="${ny+5}"/>`}
-        else if(t.start!==null&&t.end!==null&&t.start!==t.end){const s=clamp(x(t.start)),b=clamp(x(t.end));mark=`<rect class="ia-range" x="${s}" y="${ny+1}" width="${Math.max(2,b-s)}" height="8"/><line class="ia-date-mark" x1="${s}" x2="${b}" y1="${ny+5}" y2="${ny+5}" ${t.window_approximate?'stroke-dasharray="3 3"':''}/>`}
-        else if(n.node_type!=='work'||/context|approx/.test(kind))mark=`<path class="ia-date-mark" d="M ${px} ${ny} l 5 5 -5 5 -5 -5 Z" fill="var(--ia-panel)"/>`;
-        else mark=`<circle class="ia-date-mark" cx="${px}" cy="${ny+5}" r="3.5"/>`;
+        const kind=t.kind||'',dateNote=dateMeaning(n,t),markerY=ny+6;
+        pos.set(n.id,{x:px,y:markerY,boxx:cardx,boxy:ny,boxw:cw});
+        const dotted=(start,end)=>`<line class="ia-date-window" x1="${clamp(x(start))}" x2="${clamp(x(end))}" y1="${markerY}" y2="${markerY}"/>`;
+        const dateRect=(at,fill=true)=>`<rect class="ia-date-glyph ${fill?'ia-date-certain':'ia-date-open'}" x="${clamp(x(at))-4.5}" y="${markerY-4.5}" width="9" height="9" rx="1.2"/>`;
+        let mark='';
+        if(t.stages?.length){mark=t.stages.filter(st=>st.end>=state.from&&st.start<=state.to).map(st=>`${dotted(st.start,st.end)}${dateRect(st.end,false)}`).join('')}
+        else if(/upper|terminus|before|death_bound/.test(kind))mark=`<path class="ia-date-window" d="M ${Math.max(L,px-17)} ${markerY} L ${px} ${markerY}"/><path class="ia-date-glyph" d="M ${px} ${markerY-5} l -8 5 8 5 Z"/>`;
+        else if(/lower|after/.test(kind))mark=`<path class="ia-date-window" d="M ${px} ${markerY} L ${Math.min(W-R,px+17)} ${markerY}"/><path class="ia-date-glyph" d="M ${px} ${markerY-5} l 8 5 -8 5 Z"/>`;
+        else if(kind==='publication')mark=`<rect class="ia-date-glyph ia-date-open" x="${px-4.5}" y="${markerY-4.5}" width="9" height="9"/>`;
+        else if(t.start!==null&&t.end!==null&&t.start!==t.end){mark=`${dotted(t.start,t.end)}${dateRect(t.anchor,false)}`}
+        else if(n.node_type!=='work'||/context|approx/.test(kind))mark=`<path class="ia-date-glyph ia-date-open" d="M ${px} ${markerY-5} l 5 5 -5 5 -5 -5 Z"/>`;
+        else mark=dateRect(t.anchor,true);
         const boxH=workH-18,lines=deepMode?cardTitleLines(n.title,cw-18):null;
-        const titleHTML=deepMode?`${svgText(cardx+8,ny+30,lines[0],'ia-node-title')}${svgText(cardx+8,ny+45,lines[1],'ia-node-title')}`:svgText(cardx+8,ny+29,fit(n.title,cw-16,12,600),'ia-node-title');
-        const infoHTML=deepMode?`${svgText(cardx+8,ny+64,fit(n.author,cw-16,12),'ia-node-sub')}${svgText(cardx+8,ny+81,fit(n.date_label,cw-16,11),'ia-node-sub')}${svgText(cardx+8,ny+98,fit(family(n)[0]+' · '+(n.kind||n.node_type||'work'),cw-16,11),'ia-node-sub')}`:mediumMode?`${svgText(cardx+8,ny+46,fit(n.author,cw-16,11),'ia-node-sub')}${svgText(cardx+8,ny+63,fit(family(n)[0]+' · '+n.date_label,cw-16,11),'ia-node-sub')}`:svgText(cardx+8,ny+46,fit(n.author+' · '+n.date_label,cw-16,11),'ia-node-sub');
-        nodeCards.push(`<a href="#work=${esc(n.id)}" data-work="${esc(n.id)}" style="${style}" aria-label="${esc(n.code+': '+n.title+'; '+n.author+'; '+n.date_label)}" data-tooltip="${esc(n.title+' · '+n.date_label)}">${mark}<line class="ia-date-stem" x1="${px}" x2="${Math.max(cardx+5,Math.min(cardx+cw-5,px))}" y1="${ny+5}" y2="${ny+12}"/><rect class="${cls}" x="${cardx}" y="${ny+12}" width="${cw}" height="${boxH}" rx="4" ${n.node_type!=='work'?'stroke-dasharray="3 2"':''}/><rect x="${cardx}" y="${ny+12}" width="3" height="${boxH}" fill="var(--ia-series)"/>${titleHTML}${infoHTML}</a>`);
+        const titleHTML=deepMode?`${svgText(cardx+8,ny+29,lines[0],'ia-node-title')}${svgText(cardx+8,ny+43,lines[1],'ia-node-title')}`:svgText(cardx+8,ny+29,fit(n.title,cw-16,12,600),'ia-node-title');
+        const dateBadge=fit(dateNote.short,cw-16,11);
+        const infoHTML=deepMode?`${svgText(cardx+8,ny+59,fit(n.author,cw-16,11),'ia-node-sub')}${svgText(cardx+8,ny+78,dateBadge,'ia-node-date')}`:mediumMode?`${svgText(cardx+8,ny+46,fit(n.author,cw-16,11),'ia-node-sub')}${svgText(cardx+8,ny+64,dateBadge,'ia-node-date')}`:svgText(cardx+8,ny+48,dateBadge,'ia-node-date');
+        nodeCards.push(`<a href="#work=${esc(n.id)}" data-work="${esc(n.id)}" data-date-kind="${esc(kind)}" style="${style}" aria-label="${esc(n.code+': '+n.title+'; '+n.author+'; '+n.date_label+'; '+dateNote.long)}" data-tooltip="${esc(n.title+' · '+n.date_label+' · '+dateNote.long)}">${mark}<line class="ia-date-stem" x1="${px}" x2="${Math.max(cardx+5,Math.min(cardx+cw-5,px))}" y1="${markerY}" y2="${ny+13}"/><rect class="${cls} ia-work-label" x="${cardx}" y="${ny+13}" width="${cw}" height="${boxH}" rx="5" ${n.node_type!=='work'?'stroke-dasharray="3 2"':''}/><rect x="${cardx}" y="${ny+13}" width="2" height="${boxH}" fill="var(--ia-series)"/>${titleHTML}${infoHTML}</a>`);
       }
       const fieldBottom=fieldTop+Math.max(70,fieldHeight)+7,h=fieldBottom+19;
       if(!visibleNodes.length)content.push(svgText(L,fieldTop+23,'No dated texts match this view.','ia-axis'));
@@ -198,7 +226,7 @@
     }
     function relationRow(e,id){const other=N.get(e.source===id?e.target:e.source);return `<div class="ia-detail-row"><span class="ia-small">${esc(edgeCode(e))} · ${esc((rels[e.relation]||['',e.relation])[1])} · ${esc(e.confidence)}</span><button type="button" data-work="${esc(other.id)}" data-center="1">${esc(other.title)}</button><div class="ia-small">${esc(other.author)} · ${esc(other.date_label)}</div><button type="button" class="ia-inspect" data-edge="${esc(e.id)}">Read relationship evidence</button></div>`}
     function workSheet(n){const directRoutes=textualFamilies.filter(f=>f.member_ids.includes(n.id)),otherRoutes=textualFamilies.filter(f=>!directRoutes.includes(f)&&f.member_ids.some(id=>N.get(id)?.author===n.author));const routeMarkup=(directRoutes.length||otherRoutes.length)?'<section class="ia-work-routes"><h3>Explore commentary families</h3>'+directRoutes.map(f=>'<button type="button" data-text-route="'+esc(f.id)+'">'+esc(f.label)+'</button>').join('')+(otherRoutes.length?'<p class="ia-small">Other textual networks involving this author, not necessarily this same work</p>'+otherRoutes.map(f=>'<button type="button" data-text-route="'+esc(f.id)+'">'+esc(f.label)+'</button>').join(''):'')+'</section>':'';const classifications=(n.classification_evidence||[]).map(c=>'<div class="ia-detail-row"><strong>'+esc(families[c.id]?.[1]||c.id)+'</strong> · '+esc(c.status||'qualified')+sourceButtons(c.sources)+'</div>').join('');
-      const incoming=D.edges.filter(e=>e.target===n.id),outgoing=D.edges.filter(e=>e.source===n.id),t=temporal(n);const extra=['affiliations','confession','tags','map_tags','not_a_work'].filter(k=>n[k]&&(Array.isArray(n[k])?n[k].length:true));return `<span class="ia-eyebrow">${esc(n.code)} · ${esc(family(n)[0])}</span><h2>${esc(n.title)}</h2>${n.title_ar?`<div class="ia-arabic" lang="ar">${esc(n.title_ar)}</div>`:''}<button type="button" class="ia-author" data-author="${esc(n.author)}">${esc(n.author)}</button><div class="ia-small">${esc(n.author_dates)}</div><div class="ia-badges"><span class="ia-badge">${esc(n.kind)}</span><span class="ia-badge">${esc(family(n)[1])}</span>${(n.map_tags||[]).map(t=>`<span class="ia-badge">${esc(t)}</span>`).join('')}</div>${routeMarkup}${classifications?'<details class="ia-classifications"><summary>Classification evidence and cautions</summary>'+classifications+'</details>':''}<dl><dt>Text date</dt><dd>${esc(n.date_label)}</dd><dt>Date status</dt><dd>${esc(n.date_status)}</dd><dt>Region</dt><dd>${esc(n.region)}</dd><dt>Text family</dt><dd>${esc(n.family)}</dd>${n.size?`<dt>Edition / extent</dt><dd>${esc(n.size)}</dd>`:''}</dl>${n.note?`<p>${esc(n.note)}</p>`:''}<details open><summary>Date evidence &amp; plotting</summary><p class="ia-small">${esc(n.date_note||'No additional composition evidence is recorded.')}</p>${t.note&&t.note!==n.date_note?`<p class="ia-small">${esc(t.note)}</p>`:''}<p class="ia-small">Display: ${esc(t.kind.replaceAll('_',' '))}${t.anchor!==null?' · marker at '+esc(year(t.anchor)):''}. ${/upper|terminus|bound/.test(t.kind)?'A bound marker does not identify the composition year.':''}</p></details><div class="ia-actions" style="margin:12px 0"><button type="button" class="ia-primary" data-action="focus-selected">Trace connections</button><button type="button" data-action="center-selected">Center in time</button><button type="button" data-action="copy-link">Copy link</button></div><details ${incoming.length?'open':''}><summary>Sources and antecedents (${incoming.length})</summary>${incoming.map(e=>relationRow(e,n.id)).join('')||'<p class="ia-small">No incoming book-to-book relation is asserted in this register.</p>'}</details><details><summary>Later reception (${outgoing.length})</summary>${outgoing.map(e=>relationRow(e,n.id)).join('')||'<p class="ia-small">No outgoing relation is asserted in this register.</p>'}</details><details><summary>Bibliography (${(n.sources||[]).length})</summary>${sourceHTML(n.sources)}</details>${extra.length?`<details><summary>Additional catalogue fields</summary><dl>${extra.map(k=>`<dt>${esc(k.replaceAll('_',' '))}</dt><dd>${esc(Array.isArray(n[k])?n[k].join('; '):n[k])}</dd>`).join('')}</dl></details>`:''}${n.kind==='independent'?'<p class="ia-small">“Independent” identifies a standalone work, not freedom from sources or influence.</p>':''}`}
+      const incoming=D.edges.filter(e=>e.target===n.id),outgoing=D.edges.filter(e=>e.source===n.id),t=temporal(n);const extra=['affiliations','confession','tags','map_tags','not_a_work'].filter(k=>n[k]&&(Array.isArray(n[k])?n[k].length:true));return `<span class="ia-eyebrow">${esc(n.code)} · ${esc(family(n)[0])}</span><h2>${esc(n.title)}</h2>${n.title_ar?`<div class="ia-arabic" lang="ar">${esc(n.title_ar)}</div>`:''}<button type="button" class="ia-author" data-author="${esc(n.author)}">${esc(n.author)}</button><div class="ia-small">${esc(n.author_dates)}</div><div class="ia-badges"><span class="ia-badge">${esc(n.kind)}</span><span class="ia-badge">${esc(family(n)[1])}</span>${(n.map_tags||[]).map(t=>`<span class="ia-badge">${esc(t)}</span>`).join('')}</div>${routeMarkup}${classifications?'<details class="ia-classifications"><summary>Classification evidence and cautions</summary>'+classifications+'</details>':''}<dl><dt>Text date</dt><dd>${esc(n.date_label)}</dd><dt>Date status</dt><dd>${esc(n.date_status)}</dd><dt>Marker means</dt><dd><strong>${esc(dateMeaning(n,t).short)}</strong> — ${esc(dateMeaning(n,t).long)}</dd><dt>Region</dt><dd>${esc(n.region)}</dd><dt>Text family</dt><dd>${esc(n.family)}</dd>${n.size?`<dt>Edition / extent</dt><dd>${esc(n.size)}</dd>`:''}</dl>${n.note?`<p>${esc(n.note)}</p>`:''}<details open><summary>Date evidence &amp; plotting</summary><p class="ia-small">${esc(n.date_note||'No additional composition evidence is recorded.')}</p>${t.note&&t.note!==n.date_note?`<p class="ia-small">${esc(t.note)}</p>`:''}<p class="ia-small">Date symbol: ${esc(dateMeaning(n,t).short)}${t.anchor!==null?' · plotting position '+esc(year(t.anchor)):''}. ${esc(dateMeaning(n,t).long)} ${t.stages?.length?'Separate stages: '+esc(t.stages.map(st=>`${year(st.start)}–${year(st.end)} (${st.label})`).join('; ')):''}</p></details><div class="ia-actions" style="margin:12px 0"><button type="button" class="ia-primary" data-action="focus-selected">Trace connections</button><button type="button" data-action="center-selected">Center in time</button><button type="button" data-action="copy-link">Copy link</button></div><details ${incoming.length?'open':''}><summary>Sources and antecedents (${incoming.length})</summary>${incoming.map(e=>relationRow(e,n.id)).join('')||'<p class="ia-small">No incoming book-to-book relation is asserted in this register.</p>'}</details><details><summary>Later reception (${outgoing.length})</summary>${outgoing.map(e=>relationRow(e,n.id)).join('')||'<p class="ia-small">No outgoing relation is asserted in this register.</p>'}</details><details><summary>Bibliography (${(n.sources||[]).length})</summary>${sourceHTML(n.sources)}</details>${extra.length?`<details><summary>Additional catalogue fields</summary><dl>${extra.map(k=>`<dt>${esc(k.replaceAll('_',' '))}</dt><dd>${esc(Array.isArray(n[k])?n[k].join('; '):n[k])}</dd>`).join('')}</dl></details>`:''}${n.kind==='independent'?'<p class="ia-small">“Independent” identifies a standalone work, not freedom from sources or influence.</p>':''}`}
     function edgeSheet(e){const a=N.get(e.source),b=N.get(e.target);return `<span class="ia-eyebrow">${esc(edgeCode(e))} · Relationship evidence</span><h2>${esc((rels[e.relation]||['',e.relation])[1])}</h2><div class="ia-detail-row"><button type="button" data-work="${esc(a.id)}" data-center="1">${esc(a.title)}</button><div class="ia-small">${esc(a.author+' · '+a.date_label)}</div></div><p class="ia-small">↓ ${esc(e.label||'')}</p><div class="ia-detail-row"><button type="button" data-work="${esc(b.id)}" data-center="1">${esc(b.title)}</button><div class="ia-small">${esc(b.author+' · '+b.date_label)}</div></div><dl><dt>Confidence</dt><dd>${esc(e.confidence)}</dd><dt>Evidence type</dt><dd>${esc(e.evidence_kind||'See the cited source record')}</dd></dl><p>${esc(e.evidence)}</p><details open><summary>Sources</summary>${sourceHTML(e.sources)}</details><p class="ia-small">Relationship type and evidentiary strength are separate. Commentary, criticism, and citation do not establish complete doctrinal agreement.</p>`}
     function historySheet(h){return `<span class="ia-eyebrow">Historical context · ${esc(h.kind||'event')}</span><h2>${esc(h.label)}</h2><dl><dt>Date</dt><dd>${esc(h.date_label||year(h.year??h.start))}</dd><dt>Region</dt><dd>${esc(h.region||'')}</dd>${h.role?`<dt>Role</dt><dd>${esc(h.role)}</dd>`:''}${h.confidence?`<dt>Qualification</dt><dd>${esc(h.confidence)}</dd>`:''}</dl><p>${esc(h.note||'')}</p><details open><summary>Historical sources</summary>${sourceHTML(h.sources)}</details><p class="ia-small">Temporal overlap does not establish teaching, patronage, agreement, residence or intellectual influence. Scholarly networks are distinct from political states.</p>`}
     function renderSheet(){const sheet=q('[data-sheet]'),open=!!state.detailType;sheet.hidden=!open;q('.ia-layout').classList.toggle('ia-has-detail',open);if(!open){sheet.innerHTML='';return}let body='';if(state.detailType==='work'&&N.has(state.detailId))body=workSheet(N.get(state.detailId));else if(state.detailType==='edge'&&E.has(state.detailId))body=edgeSheet(E.get(state.detailId));else if(state.detailType==='history'&&H.has(state.detailId))body=historySheet(H.get(state.detailId));else if(state.detailType==='source')body=`<span class="ia-eyebrow">Bibliographical record</span>${sourceHTML([state.detailId])}`;else if(state.detailType==='author'){const ns=D.nodes.filter(n=>n.author===state.detailId);body=`<span class="ia-eyebrow">Author profile</span><h2>${esc(state.detailId)}</h2><p class="ia-small">${esc([...new Set(ns.map(n=>n.author_dates))].join(' / '))}</p><p>${ns.length} entries in this selection.</p>${ns.map(n=>`<div class="ia-detail-row"><button type="button" data-work="${esc(n.id)}" data-center="1">${esc(n.title)}</button><div class="ia-small">${esc(n.date_label+' · '+family(n)[1])}</div></div>`).join('')}`}sheet.innerHTML=`<div class="ia-sheet-top"><span class="ia-small">Record details</span><button type="button" data-action="close-detail" aria-label="Close record details">Close ×</button></div>${body}`}
@@ -270,42 +298,101 @@
     root.addEventListener('change',event=>{const el=event.target;if(el.hasAttribute('data-text-family')){chooseTextFamily(el.value);return}if(el.hasAttribute('data-region-network')){state.regionNetwork=regionNetworks.some(([id])=>id===el.value)?el.value:'';state.page=1;render();setHash();return}if(el.dataset.control){const key=el.dataset.control;state[key]=el.type==='checkbox'?el.checked:key==='depth'?+el.value:el.value;state.page=1;render();setHash()}if(el.dataset.family){el.checked?state.families.add(el.dataset.family):state.families.delete(el.dataset.family);state.page=1;render();setHash()}if(el.dataset.rel){el.checked?state.rels.add(el.dataset.rel):state.rels.delete(el.dataset.rel);render();setHash()}});
     q('#ia-search-v3').addEventListener('input',event=>{state.q=event.target.value;state.page=1;clearTimeout(searchTimer);searchTimer=setTimeout(()=>{const results=D.nodes.filter(matches).slice(0,8),box=q('#ia-results-v3');box.hidden=!state.q;if(state.q)box.innerHTML=results.map(n=>`<button type="button" data-work="${esc(n.id)}" data-center="1"><span>${esc(n.code+' · '+n.title)}</span><span class="ia-small">${esc(n.author+' · '+n.date_label)}</span></button>`).join('')||'<div class="ia-small" style="padding:10px">No title or author matches.</div>';if(state.view==='timeline')drawTimeline();else if(state.view==='catalogue')drawCatalogue();else if(state.view==='audit')drawAudit();setHash(true)},180)});
     q('#ia-search-v3').addEventListener('keydown',event=>{if(event.key==='Escape'){q('#ia-results-v3').hidden=true;event.target.blur()}if(event.key==='Enter'){const first=D.nodes.find(matches);if(state.q&&first){q('#ia-results-v3').hidden=true;selectNode(first.id,true)}}});
-    // Pointer capture is on the stable viewport; the chart itself is repainted only after release.
-    let suppressNextClick=false,drag=null,miniDrag=null,wheelSum=0,wheelQueued=false;
+    // Continuous scrubbing, with a single authoritative [from,to] state.
+    // The rail and viewport are stable capture surfaces even when their children repaint.
+    let suppressNextClick=false,drag=null,miniDrag=null,liveFrame=0,pendingFrom=null,wheelPixels=0,wheelFrame=0,wheelCommitTimer=null;
+    function panFrom(from){
+      const span=state.to-state.from,next=Math.max(historyMin,Math.min(historyMax-span,from));
+      if(Math.abs(next-state.from)<1e-6)return;
+      state.from=next;state.to=next+span;state.page=1;
+      if(state.view==='timeline'&&q('[data-chart]')){sync();drawTimeline()}
+      else render();
+    }
+    function schedulePan(from){
+      const span=state.to-state.from;
+      pendingFrom=Math.max(historyMin,Math.min(historyMax-span,from));
+      // Cheap visual feedback even if a large SVG needs longer than one frame to paint.
+      const thumb=q('.ia-travel-window');if(thumb)thumb.style.left=((pendingFrom-historyMin)/historyLength*100)+'%';
+      const rail=q('[data-history-rail]');if(rail)rail.setAttribute('aria-valuetext',year(pendingFrom)+' to '+year(pendingFrom+span));
+      if(!liveFrame)liveFrame=requestAnimationFrame(()=>{liveFrame=0;const value=pendingFrom;pendingFrom=null;if(value!==null)panFrom(value)});
+    }
+    function flushPan(){
+      if(liveFrame){cancelAnimationFrame(liveFrame);liveFrame=0}
+      if(pendingFrom!==null){const value=pendingFrom;pendingFrom=null;panFrom(value)}
+    }
+    function finishGesture(target,changed){
+      if(target)target.classList.remove('ia-dragging');
+      flushPan();
+      if(changed){setHash(true);suppressNextClick=true;setTimeout(()=>suppressNextClick=false,260)}
+    }
     root.addEventListener('pointerdown',event=>{
+      if(event.button!==0)return;
       const rail=event.target.closest('[data-history-rail]');
-      if(rail){if(event.button!==0)return;const rect=rail.getBoundingClientRect();miniDrag={pointer:event.pointerId,rail,rect};rail.setPointerCapture(event.pointerId);return}
-      const chart=event.target.closest('[data-chart]');if(!chart||event.button!==0)return;
-      drag={pointer:event.pointerId,chart,x:event.clientX,y:event.clientY,moved:false,span:state.to-state.from,touch:event.pointerType==='touch'};
-      if(event.pointerType!=='touch')chart.setPointerCapture(event.pointerId);
+      if(rail){
+        const rect=rail.getBoundingClientRect(),thumb=rail.querySelector('.ia-travel-window');
+        const t=thumb?.getBoundingClientRect();
+        const hit=!!t&&event.clientX>=t.left-16&&event.clientX<=t.right+16;
+        miniDrag={pointer:event.pointerId,rail,rect,x:event.clientX,from:state.from,span:state.to-state.from,
+          mode:hit?'move':'seek',moved:false};
+        rail.setPointerCapture(event.pointerId);
+        if(!hit){miniDrag.moved=true;schedulePan(historyMin+(event.clientX-rect.left)/rect.width*historyLength-miniDrag.span/2)}
+        return;
+      }
+      const chart=event.target.closest('[data-chart]');if(!chart||state.view!=='timeline')return;
+      drag={pointer:event.pointerId,chart,x:event.clientX,y:event.clientY,from:state.from,span:state.to-state.from,moved:false,touch:event.pointerType==='touch'};
+      if(!drag.touch)chart.setPointerCapture(event.pointerId);
     });
     root.addEventListener('pointermove',event=>{
-      if(miniDrag&&event.pointerId===miniDrag.pointer){const x=(event.clientX-miniDrag.rect.left)/miniDrag.rect.width;const yearValue=historyMin+historyLength*Math.max(0,Math.min(1,x));const w=state.to-state.from;const left=(yearValue-w/2-historyMin)/historyLength*100;const thumb=q('.ia-travel-window');if(thumb)thumb.style.left=Math.max(0,Math.min(100-w/historyLength*100,left))+'%';return}
+      if(miniDrag&&event.pointerId===miniDrag.pointer){
+        const g=miniDrag,dx=event.clientX-g.x;
+        if(Math.abs(dx)>2)g.moved=true;
+        const value=g.mode==='move'?g.from+dx/g.rect.width*historyLength:
+          historyMin+(event.clientX-g.rect.left)/g.rect.width*historyLength-g.span/2;
+        schedulePan(value);
+        return;
+      }
       if(!drag||event.pointerId!==drag.pointer)return;
-      const dx=event.clientX-drag.x,dy=event.clientY-drag.y;
-      if(drag.touch&&Math.abs(dy)>Math.abs(dx)*1.15){drag=null;return}
-      if(Math.abs(dx)>7&&(!drag.touch||Math.abs(dx)>Math.abs(dy)*1.15))drag.moved=true;
-      if(drag.moved){drag.chart.classList.add('ia-dragging');const svg=drag.chart.querySelector('svg');if(svg)svg.style.transform=`translate3d(${dx}px,0,0)`}
+      const g=drag,dx=event.clientX-g.x,dy=event.clientY-g.y;
+      if(g.touch&&!g.moved&&Math.abs(dy)>Math.abs(dx)*1.15)return; // native vertical scrolling
+      if(!g.moved&&Math.abs(dx)>5&&(!g.touch||Math.abs(dx)>Math.abs(dy)*1.15)){
+        g.moved=true;g.chart.classList.add('ia-dragging');
+        if(g.touch){try{g.chart.setPointerCapture(event.pointerId)}catch{}}
+      }
+      if(g.moved){
+        if(event.cancelable)event.preventDefault();
+        schedulePan(g.from-dx/Math.max(220,lastWidth-38)*g.span);
+      }
     });
     root.addEventListener('pointerup',event=>{
-      if(miniDrag&&event.pointerId===miniDrag.pointer){const x=Math.max(0,Math.min(1,(event.clientX-miniDrag.rect.left)/miniDrag.rect.width));miniDrag=null;suppressNextClick=false;centerYear(historyMin+x*historyLength);return}
+      if(miniDrag&&event.pointerId===miniDrag.pointer){
+        const g=miniDrag;miniDrag=null;
+        if(g.moved){const dx=event.clientX-g.x;const value=g.mode==='move'?g.from+dx/g.rect.width*historyLength:
+          historyMin+(event.clientX-g.rect.left)/g.rect.width*historyLength-g.span/2;schedulePan(value)}
+        finishGesture(g.rail,g.moved);return;
+      }
       if(!drag||event.pointerId!==drag.pointer)return;
-      const dx=event.clientX-drag.x,wasMoved=drag.moved,span=drag.span,chart=drag.chart;drag=null;
-      chart.classList.remove('ia-dragging');const svg=chart.querySelector('svg');if(svg)svg.style.transform='';
-      if(wasMoved){suppressNextClick=true;shiftRange(-dx/Math.max(250,lastWidth-38)*span);}
+      const g=drag;drag=null;
+      if(g.moved)schedulePan(g.from-(event.clientX-g.x)/Math.max(220,lastWidth-38)*g.span);
+      finishGesture(g.chart,g.moved);
     });
-    root.addEventListener('pointercancel',event=>{if(drag&&drag.pointer===event.pointerId){drag.chart.classList.remove('ia-dragging');drag=null}if(miniDrag&&miniDrag.pointer===event.pointerId)miniDrag=null});
+    root.addEventListener('pointercancel',event=>{
+      if(drag&&drag.pointer===event.pointerId){const g=drag;drag=null;finishGesture(g.chart,g.moved)}
+      if(miniDrag&&miniDrag.pointer===event.pointerId){const g=miniDrag;miniDrag=null;finishGesture(g.rail,g.moved)}
+    });
     root.addEventListener('wheel',event=>{
       const chart=event.target.closest('[data-chart]');if(!chart||state.view!=='timeline')return;
-      // Preserve native vertical wheel scrolling through long diagrams and onward into the page.
       const horizontal=Math.abs(event.deltaX)>Math.abs(event.deltaY)*1.12;
-      if(!event.shiftKey&&!horizontal&&!event.ctrlKey&&!event.metaKey&&!event.altKey)return;
+      if(!event.shiftKey&&!horizontal&&!event.ctrlKey&&!event.metaKey&&!event.altKey)return; // native vertical scroll
       event.preventDefault();
       const rect=chart.getBoundingClientRect(),fraction=Math.max(0,Math.min(1,(event.clientX-rect.left)/rect.width));
       if(event.ctrlKey||event.metaKey||event.altKey){zoomAt(Math.exp(Math.max(-2,Math.min(2,event.deltaY/180))*.23),fraction,true);return}
-      const pixels=event.shiftKey?(Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY):event.deltaX;
-      wheelSum+=pixels;
-      if(!wheelQueued){wheelQueued=true;setTimeout(()=>{wheelQueued=false;const p=wheelSum;wheelSum=0;if(Math.abs(p)>.1)shiftRange(p/Math.max(250,lastWidth-38)*(state.to-state.from),true)},65)}
+      const units=event.deltaMode===1?16:event.deltaMode===2?rect.width:1;
+      wheelPixels+=(event.shiftKey?(Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY):event.deltaX)*units;
+      if(!wheelFrame)wheelFrame=requestAnimationFrame(()=>{
+        wheelFrame=0;const pixels=wheelPixels;wheelPixels=0;
+        if(Math.abs(pixels)>.01)panFrom(state.from+pixels/Math.max(220,lastWidth-38)*(state.to-state.from));
+      });
+      clearTimeout(wheelCommitTimer);wheelCommitTimer=setTimeout(()=>{flushPan();setHash(true)},180);
     },{passive:false});
     root.addEventListener('keydown',event=>{
       if(!event.target.closest('[data-chart],[data-history-rail]'))return;

@@ -2,6 +2,8 @@
   "title": "Texts in Time · Islamic Intellectual Atlas",
   "revision": "neoplatonic-bridge-7-2026-10-29",
   "status": "working research",
+  "ui_revision": "continuous-scrub-7.1-2026-10-29",
+  "date_marker_note": "Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.",
   "entries": 375,
   "textual_relationships": 348,
   "sources": 349,
@@ -39,6 +41,6 @@
     "Islamic_Timeline_Overview.pdf": "346e2cf5efcca1943d00361d7fcd8ca4cbf26b6510a24aa1417c0659da4258c8",
     "Islamic_Timeline_Website_Package.zip": "8673c89ac9b75ba35c5ca8ffbe63eba5345ba1d259d37b74488266b0ffab7352",
     "Tahdhib_Genealogy_Addendum.pdf": "331d46c9fe8bb2a7e059e18dd214fb117f8d1d8ff5bf5e0fe3d82a8e81db33ab",
-    "intellectual-atlas-data.json": "742e6fca68fc3fbcf658ae1082e3d2d3cb239d8f10001b80dd5ae735d4acb58b"
+    "intellectual-atlas-data.json": "e47487111e494b0583b4db4a5534cfe8b4d1e4e671d2c661b5d940ae4ad8d8b5"
   }
 }
