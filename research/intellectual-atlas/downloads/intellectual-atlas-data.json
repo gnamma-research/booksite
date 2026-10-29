@@ -2954,6 +2954,96 @@
       "note": "Some descriptions associate Tuḥfat-i Shāhjahānī with Yazdī's own gloss. Do not create a separate Fayḍābādī author/work node from an unverified attribution.",
       "type": "scholarly bibliography",
       "accessed": "2026-10-28"
+    },
+    {
+      "id": "GNA-A01",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Heraclitus",
+      "url": "https://plato.stanford.edu/entries/heraclitus/",
+      "type": "scholarly reference",
+      "accessed": "2026-10-29",
+      "note": "Activity around 500 BCE; ancient work survives as fragments"
+    },
+    {
+      "id": "GNA-A02",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Parmenides",
+      "url": "https://plato.stanford.edu/entries/parmenides/",
+      "type": "scholarly reference",
+      "accessed": "2026-10-29",
+      "note": "Early fifth-century BCE poem; On Nature not demonstrably the original title"
+    },
+    {
+      "id": "GNA-A03",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Empedocles",
+      "url": "https://plato.stanford.edu/entries/empedocles/",
+      "type": "scholarly reference",
+      "accessed": "2026-10-29",
+      "note": "Mid-fifth-century BCE poems; one-versus-two-work question contested"
+    },
+    {
+      "id": "GNA-A04",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Stoicism",
+      "url": "https://plato.stanford.edu/entries/stoicism/",
+      "type": "scholarly reference",
+      "accessed": "2026-10-29",
+      "note": "Early Stoa founded c.300 BCE; surviving evidence mainly fragments and later accounts"
+    },
+    {
+      "id": "GNA-A05",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Epicurus",
+      "url": "https://plato.stanford.edu/entries/epicurus/",
+      "type": "scholarly reference",
+      "accessed": "2026-10-29",
+      "note": "Letter to Herodotus preserved by Diogenes Laertius; composition date uncertain"
+    },
+    {
+      "id": "GNA-A06",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Antiochus of Ascalon",
+      "url": "https://plato.stanford.edu/entries/antiochus-ascalon/",
+      "type": "scholarly reference",
+      "accessed": "2026-10-29",
+      "note": "Late Hellenistic Academy, first century BCE; works known chiefly through testimony"
+    },
+    {
+      "id": "GNA-A07",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Lucretius",
+      "url": "https://plato.stanford.edu/entries/lucretius/",
+      "type": "scholarly reference",
+      "accessed": "2026-10-29",
+      "note": "De rerum natura in mid first century BCE; an early reference survives from 54 BCE"
+    },
+    {
+      "id": "GNA-A08",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Philo of Alexandria",
+      "url": "https://plato.stanford.edu/entries/philo/",
+      "type": "scholarly reference",
+      "accessed": "2026-10-29",
+      "note": "De opificio mundi is the cosmological work; chronology within author's life not exact"
+    },
+    {
+      "id": "GNA-A09",
+      "author": "John Dillon (Oxford Classical Dictionary)",
+      "title": "Alcinous",
+      "url": "https://academic.oup.com/edited-volume/61673/chapter-abstract/548061465",
+      "type": "scholarly reference",
+      "accessed": "2026-10-29",
+      "note": "Didaskalikos attributed to Alcinous; approximate second-century date remains uncertain"
+    },
+    {
+      "id": "GNA-A10",
+      "author": "Stanford Encyclopedia of Philosophy",
+      "title": "Sextus Empiricus",
+      "url": "https://plato.stanford.edu/entries/sextus-empiricus/",
+      "type": "scholarly reference",
+      "accessed": "2026-10-29",
+      "note": "Outlines of Pyrrhonism; author lived probably second or third century CE"
     }
   ],
   "nodes": [
@@ -15089,6 +15179,376 @@
       "featured": false,
       "search_aliases": [],
       "code": "W321"
+    },
+    {
+      "id": "heraclitus_fragments",
+      "title": "Heraclitus: surviving fragments of a lost book",
+      "title_ar": "",
+      "author": "Heraclitus of Ephesus",
+      "author_dates": "Active around 500 BCE",
+      "date_label": "Approximate context 510 BCE–490 BCE",
+      "date_start": -510,
+      "date_end": -490,
+      "date_status": "approximate context",
+      "date_note": "The plotted interval or bound is a conservative contextual placement, not an independently verified composition year.",
+      "kind": "context",
+      "tradition": "ancient",
+      "region": "Ephesus / Ionia",
+      "family": "Presocratic philosophy",
+      "sources": [
+        "GNA-A01"
+      ],
+      "note": "The supposed book is not extant as a complete work. Fragmentary testimony cannot fix a precise date of composition; no transmission to a later Arabic text is inferred.",
+      "node_type": "context",
+      "code": "W322",
+      "original_tradition": "ancient",
+      "tags": [],
+      "temporal": {
+        "start": -510,
+        "end": -490,
+        "anchor": -500,
+        "kind": "context",
+        "basis": "sourced approximate dating / historical corpus placement",
+        "label": "510 BCE–490 BCE",
+        "window_approximate": true,
+        "note": "Positioned as a scholarly context or bound; not a firm composition or influence date."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "parmenides_poem",
+      "title": "Philosophical poem (traditionally On Nature)",
+      "title_ar": "",
+      "author": "Parmenides of Elea",
+      "author_dates": "Early fifth century BCE",
+      "date_label": "Approximate context 500 BCE–450 BCE",
+      "date_start": -500,
+      "date_end": -450,
+      "date_status": "approximate context",
+      "date_note": "The plotted interval or bound is a conservative contextual placement, not an independently verified composition year.",
+      "kind": "work",
+      "tradition": "ancient",
+      "region": "Elea / Greek Italy",
+      "family": "Presocratic metaphysics",
+      "sources": [
+        "GNA-A02"
+      ],
+      "note": "‘On Nature’ is probably not the authentic title. Fragments survive through quotations in later writers, including Sextus and Simplicius; plotted span is broad scholarly context, not a dated composition.",
+      "node_type": "work",
+      "code": "W323",
+      "original_tradition": "ancient",
+      "tags": [],
+      "temporal": {
+        "start": -500,
+        "end": -450,
+        "anchor": -475,
+        "kind": "context",
+        "basis": "sourced approximate dating / historical corpus placement",
+        "label": "500 BCE–450 BCE",
+        "window_approximate": true,
+        "note": "Positioned as a scholarly context or bound; not a firm composition or influence date."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "empedocles_poems",
+      "title": "Empedoclean poems: On Nature / Purifications",
+      "title_ar": "",
+      "author": "Empedocles of Acragas",
+      "author_dates": "Fifth century BCE",
+      "date_label": "Approximate context 460 BCE–430 BCE",
+      "date_start": -460,
+      "date_end": -430,
+      "date_status": "approximate context",
+      "date_note": "The plotted interval or bound is a conservative contextual placement, not an independently verified composition year.",
+      "kind": "work",
+      "tradition": "ancient",
+      "region": "Acragas / Greek Sicily",
+      "family": "Presocratic natural philosophy",
+      "sources": [
+        "GNA-A03"
+      ],
+      "note": "Traditional two-title distinction is disputed; this is one analytic corpus entry, not a claim that two independent books were certainly composed. Four roots, Love and Strife appear in surviving fragments.",
+      "node_type": "work",
+      "code": "W324",
+      "original_tradition": "ancient",
+      "tags": [],
+      "temporal": {
+        "start": -460,
+        "end": -430,
+        "anchor": -445,
+        "kind": "context",
+        "basis": "sourced approximate dating / historical corpus placement",
+        "label": "460 BCE–430 BCE",
+        "window_approximate": true,
+        "note": "Positioned as a scholarly context or bound; not a firm composition or influence date."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "early_stoa_corpus",
+      "title": "Early Stoic logic and physics (fragmentary corpus)",
+      "title_ar": "",
+      "author": "Zeno of Citium, Cleanthes and Chrysippus",
+      "author_dates": "Early Stoa, c.300–206 BCE",
+      "date_label": "Approximate context 300 BCE–206 BCE",
+      "date_start": -300,
+      "date_end": -206,
+      "date_status": "approximate context",
+      "date_note": "The plotted interval or bound is a conservative contextual placement, not an independently verified composition year.",
+      "kind": "context",
+      "tradition": "ancient",
+      "region": "Athens / Hellenistic Mediterranean",
+      "family": "Early Stoicism",
+      "sources": [
+        "GNA-A04"
+      ],
+      "note": "Aggregate teaching/corpus anchor, not a single authentic book or a continuous composition period. No complete work of the earliest heads survives; their logic and physics are reconstructed from fragments and reports.",
+      "node_type": "context",
+      "code": "W325",
+      "original_tradition": "ancient",
+      "tags": [],
+      "temporal": {
+        "start": -300,
+        "end": -206,
+        "anchor": -253,
+        "kind": "context",
+        "basis": "sourced approximate dating / historical corpus placement",
+        "label": "300 BCE–206 BCE",
+        "window_approximate": true,
+        "note": "Positioned as a scholarly context or bound; not a firm composition or influence date."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "epicurus_herodotus",
+      "title": "Letter to Herodotus",
+      "title_ar": "",
+      "author": "Epicurus",
+      "author_dates": "341–270 BCE",
+      "date_label": "Before 270 BCE; date unknown",
+      "date_start": null,
+      "date_end": -270,
+      "date_status": "terminus",
+      "date_note": "The plotted interval or bound is a conservative contextual placement, not an independently verified composition year.",
+      "kind": "work",
+      "tradition": "ancient",
+      "region": "Athens / Greek world",
+      "family": "Epicureanism",
+      "sources": [
+        "GNA-A05"
+      ],
+      "note": "Preserved by Diogenes Laertius, book X. 270 BCE is the author's death bound, not a date established for this letter's composition.",
+      "node_type": "work",
+      "code": "W326",
+      "original_tradition": "ancient",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": -270,
+        "anchor": -270,
+        "kind": "upper_bound",
+        "basis": "sourced approximate dating / historical corpus placement",
+        "label": "Before 270 BCE",
+        "window_approximate": false,
+        "note": "Positioned as a scholarly context or bound; not a firm composition or influence date."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "antiochus_academy",
+      "title": "Antiochus of Ascalon: lost writings and reported doctrine",
+      "title_ar": "",
+      "author": "Antiochus of Ascalon",
+      "author_dates": "c.130–69/68 BCE",
+      "date_label": "Approximate context 110 BCE–68 BCE",
+      "date_start": -110,
+      "date_end": -68,
+      "date_status": "approximate context",
+      "date_note": "The plotted interval or bound is a conservative contextual placement, not an independently verified composition year.",
+      "kind": "context",
+      "tradition": "ancient",
+      "region": "Athens / Ascalon",
+      "family": "Middle Platonist antecedents",
+      "sources": [
+        "GNA-A06"
+      ],
+      "note": "No separate surviving book is asserted. Contemporary and later testimony connects the Academy with Stoic and Peripatetic discussion; influence on later Middle Platonism is debated.",
+      "node_type": "context",
+      "code": "W327",
+      "original_tradition": "ancient",
+      "tags": [],
+      "temporal": {
+        "start": -110,
+        "end": -68,
+        "anchor": -89,
+        "kind": "context",
+        "basis": "sourced approximate dating / historical corpus placement",
+        "label": "110 BCE–68 BCE",
+        "window_approximate": true,
+        "note": "Positioned as a scholarly context or bound; not a firm composition or influence date."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "lucretius_rerum",
+      "title": "De rerum natura (On the Nature of Things)",
+      "title_ar": "",
+      "author": "Lucretius",
+      "author_dates": "Mid-first century BCE",
+      "date_label": "Approximate context 65 BCE–50 BCE",
+      "date_start": -65,
+      "date_end": -50,
+      "date_status": "approximate context",
+      "date_note": "The plotted interval or bound is a conservative contextual placement, not an independently verified composition year.",
+      "kind": "work",
+      "tradition": "ancient",
+      "region": "Rome / Latin Mediterranean",
+      "family": "Roman Epicureanism",
+      "sources": [
+        "GNA-A07"
+      ],
+      "note": "Latin philosophical epic presenting Epicurean atomism. Mid-first-century span is approximate; its presence in the atlas does not establish transmission into Arabic philosophy.",
+      "node_type": "work",
+      "code": "W328",
+      "original_tradition": "ancient",
+      "tags": [],
+      "temporal": {
+        "start": -65,
+        "end": -50,
+        "anchor": -57.5,
+        "kind": "range",
+        "basis": "sourced approximate dating / historical corpus placement",
+        "label": "65 BCE–50 BCE",
+        "window_approximate": true,
+        "note": "Positioned as a scholarly context or bound; not a firm composition or influence date."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "philo_opificio",
+      "title": "De opificio mundi (On the Creation)",
+      "title_ar": "",
+      "author": "Philo of Alexandria",
+      "author_dates": "c.20 BCE–50 CE",
+      "date_label": "Approximate context 20 BCE–45 CE",
+      "date_start": -20,
+      "date_end": 45,
+      "date_status": "approximate context",
+      "date_note": "The plotted interval or bound is a conservative contextual placement, not an independently verified composition year.",
+      "kind": "work",
+      "tradition": "jewish",
+      "region": "Alexandria",
+      "family": "Hellenistic Jewish Platonism",
+      "sources": [
+        "GNA-A08"
+      ],
+      "note": "A Jewish engagement with the Timaeus, Stoicism, and scriptural cosmology. Broad placement follows the author's lifetime, not a documented composition interval.",
+      "node_type": "work",
+      "code": "W329",
+      "original_tradition": "jewish",
+      "tags": [],
+      "temporal": {
+        "start": -20,
+        "end": 45,
+        "anchor": 12.5,
+        "kind": "range",
+        "basis": "sourced approximate dating / historical corpus placement",
+        "label": "20 BCE–45 CE",
+        "window_approximate": true,
+        "note": "Positioned as a scholarly context or bound; not a firm composition or influence date."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "alcinous_didaskalikos",
+      "title": "Didaskalikos (Handbook of Platonism)",
+      "title_ar": "",
+      "author": "Alcinous (attribution)",
+      "author_dates": "Probably second century CE; uncertain",
+      "date_label": "Approximate context 100 CE–200 CE",
+      "date_start": 100,
+      "date_end": 200,
+      "date_status": "approximate context",
+      "date_note": "The plotted interval or bound is a conservative contextual placement, not an independently verified composition year.",
+      "kind": "work",
+      "tradition": "ancient",
+      "region": "Greek-speaking Mediterranean",
+      "family": "Middle Platonism",
+      "sources": [
+        "GNA-A09"
+      ],
+      "note": "Oxford Classical Dictionary stresses author identity and date remain uncertain; this is an approximate placement, not a dated composition or an identification with Albinus.",
+      "node_type": "work",
+      "code": "W330",
+      "original_tradition": "ancient",
+      "tags": [],
+      "temporal": {
+        "start": 100,
+        "end": 200,
+        "anchor": 150,
+        "kind": "range",
+        "basis": "sourced approximate dating / historical corpus placement",
+        "label": "100 CE–200 CE",
+        "window_approximate": true,
+        "note": "Positioned as a scholarly context or bound; not a firm composition or influence date."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": []
+    },
+    {
+      "id": "sextus_outlines",
+      "title": "Outlines of Pyrrhonism",
+      "title_ar": "",
+      "author": "Sextus Empiricus",
+      "author_dates": "Probably second–third centuries CE",
+      "date_label": "Approximate context 100 CE–250 CE",
+      "date_start": 100,
+      "date_end": 250,
+      "date_status": "approximate context",
+      "date_note": "The plotted interval or bound is a conservative contextual placement, not an independently verified composition year.",
+      "kind": "work",
+      "tradition": "ancient",
+      "region": "Greek-speaking Roman Mediterranean",
+      "family": "Pyrrhonian skepticism",
+      "sources": [
+        "GNA-A10"
+      ],
+      "note": "The author's date and location are uncertain, so the plotting interval is only contextual. Work preserves skeptical engagement with preceding philosophical schools.",
+      "node_type": "work",
+      "code": "W331",
+      "original_tradition": "ancient",
+      "tags": [],
+      "temporal": {
+        "start": 100,
+        "end": 250,
+        "anchor": 175,
+        "kind": "range",
+        "basis": "sourced approximate dating / historical corpus placement",
+        "label": "100 CE–250 CE",
+        "window_approximate": true,
+        "note": "Positioned as a scholarly context or bound; not a firm composition or influence date."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": []
     }
   ],
   "edges": [
@@ -19655,6 +20115,31 @@
       "sources": [
         "TH03"
       ]
+    },
+    {
+      "title": "Ancient bridge and chronological gaps (revision 6)",
+      "text": "The added Presocratic, Hellenistic, Roman, and Middle Platonist entries are a selective bridge across gaps in the older sample. Their plotted periods are contextual windows or bounds. No line of Greek-to-Arabic influence is inferred from their chronological coexistence.",
+      "sources": [
+        "GNA-A01",
+        "GNA-A02",
+        "GNA-A03",
+        "GNA-A04",
+        "GNA-A05",
+        "GNA-A06",
+        "GNA-A07",
+        "GNA-A08",
+        "GNA-A09",
+        "GNA-A10"
+      ]
+    },
+    {
+      "title": "Pre-Islamic political background (revision 6)",
+      "text": "Achaemenid, Hellenistic-successor and Roman imperial context bands explain chronological continuity before Islam. A Hellenistic collective interval is not one dynasty or state. The Roman band to the conventional 395 division overlaps with the Eastern Roman band from 330; these labels represent different emphases within the same historically continuous polity, not separate ancient empires. No influence is inferred.",
+      "sources": [
+        "GNA-H01",
+        "GNA-H02",
+        "GNA-H03"
+      ]
     }
   ],
   "audit": [
@@ -21125,7 +21610,7 @@
       "present": true
     }
   ],
-  "revision": "4.1 Gnamma textual-family explorer; 29 October 2026 (records unchanged)",
+  "revision": "atlas-three-layers-6-2026-10-29",
   "history": {
     "periods": [
       {
@@ -21726,11 +22211,11 @@
         "label": "Mughal dynasty",
         "start": 1526,
         "end": 1858,
-        "date_label": "1526–1858",
+        "date_label": "1526–1858; Delhi control interrupted 1540–1555",
         "region": "South Asia",
         "track": "South Asia",
         "kind": "polity",
-        "note": "Delhi rule interrupted by the Suris in 1540–1555; later emperors held much reduced effective authority.",
+        "note": "Mughal dynastic continuity and presence in exile must be distinguished from continuous control of Delhi. Afghan Suri rule displaced Mughal territorial rule in 1540–1555; the atlas draws a dashed interruption across the dynastic band. Later Mughal effective sovereignty declined sharply; an imperial label is not a uniform territorial claim.",
         "sources": [
           "HL17",
           "HL18",
@@ -21931,6 +22416,63 @@
         "confidence": "documented periodization",
         "open_end": true,
         "end_is_chart_cutoff": true,
+        "record_group": "periods"
+      },
+      {
+        "id": "GNA-P01",
+        "label": "Achaemenid Empire (regional context)",
+        "start": -550,
+        "end": -330,
+        "date_label": "c. 550–330 BCE",
+        "region": "Anatolia, Egypt, Iran and West/Central Asia; changing extent",
+        "track": "Ancient western Asia",
+        "kind": "polity",
+        "note": "Achaemenid administrative and political background to Ionian, Classical Greek, and eastern Mediterranean intellectual history. Dates are conventional dynasty-period boundaries, not dates of transmission or a uniform territorial extent.",
+        "sources": [
+          "GNA-H01"
+        ],
+        "confidence": "established broad chronology",
+        "date_basis": "conventional empire span",
+        "context_only": true,
+        "islamic_polity": false,
+        "record_group": "periods"
+      },
+      {
+        "id": "GNA-P02",
+        "label": "Hellenistic successor kingdoms",
+        "start": -323,
+        "end": -31,
+        "date_label": "323–31 BCE (conventional Hellenistic era)",
+        "region": "Eastern Mediterranean and western Asia; multiple successor kingdoms",
+        "track": "Hellenistic Greek world",
+        "kind": "polity",
+        "note": "Collective background period for the independent Ptolemaic, Seleucid, Antigonid, and other successor states; not one polity, state, dynasty or coherent empire. The endpoint is a historiographical convention.",
+        "sources": [
+          "GNA-H02"
+        ],
+        "confidence": "conventional era bounds",
+        "date_basis": "Alexander's death and late Ptolemaic endpoint",
+        "context_only": true,
+        "islamic_polity": false,
+        "record_group": "periods"
+      },
+      {
+        "id": "GNA-P03",
+        "label": "Roman imperial world (to division)",
+        "start": -27,
+        "end": 395,
+        "date_label": "27 BCE–395 CE (divided administration thereafter)",
+        "region": "Roman Mediterranean world; changing frontiers",
+        "track": "Late antique Mediterranean",
+        "kind": "polity",
+        "note": "Broad chronological setting for Roman-era Stoicism, Platonism, skepticism and Christian/Jewish philosophical works. The imperial polity continued in both western and eastern forms; eastern Roman/Byzantine chronology is displayed separately from its conventional 330 CE beginning.",
+        "sources": [
+          "GNA-H03"
+        ],
+        "confidence": "conventional political periodization",
+        "date_basis": "Augustan principate to 395 administrative division",
+        "context_only": true,
+        "islamic_polity": false,
         "record_group": "periods"
       }
     ],
@@ -23768,6 +24310,33 @@
         "type": "historical reference",
         "accessed": "2026-10-28",
         "web_ref": "turn344view0"
+      },
+      {
+        "id": "GNA-H01",
+        "author": "The Metropolitan Museum of Art, Department of Ancient Near Eastern Art",
+        "title": "The Achaemenid Persian Empire (550–330 B.C.)",
+        "url": "https://www.metmuseum.org/essays/the-achaemenid-persian-empire-550-330-b-c",
+        "note": "Political and geographical background, 550–330 BCE.",
+        "type": "historical reference",
+        "accessed": "2026-10-29"
+      },
+      {
+        "id": "GNA-H02",
+        "author": "OpenStax, World History Volume 1",
+        "title": "6.3 The Hellenistic Era",
+        "url": "https://openstax.org/books/world-history-volume-1/pages/6-3-the-hellenistic-era",
+        "note": "Alexander's death 323 BCE to 31 BCE, successor kingdoms are several states.",
+        "type": "historical reference",
+        "accessed": "2026-10-29"
+      },
+      {
+        "id": "GNA-H03",
+        "author": "Christopher Lightfoot, Metropolitan Museum of Art",
+        "title": "The Roman Empire (27 B.C.–393 A.D.)",
+        "url": "https://www.metmuseum.org/essays/the-roman-empire-27-b-c-393-a-d",
+        "note": "Roman imperial periodization and later division; 395 convention applied with qualification.",
+        "type": "historical reference",
+        "accessed": "2026-10-29"
       }
     ],
     "method_notes": [
@@ -23797,8 +24366,8 @@
   },
   "timeline_meta": {
     "title": "Texts in time: Islamic intellectual traditions and historical context",
-    "version": "2.0",
-    "prepared": "28 October 2026",
+    "version": "2.1",
+    "prepared": "29 October 2026",
     "main_domain": [
       570,
       2026
@@ -23807,7 +24376,7 @@
       -600,
       570
     ],
-    "source_register": "Critical genealogies, revision 2; all 295 entries and 286 relationships retained.",
+    "source_register": "Selective catalogue with 331 scholarly/context entries, 312 qualified textual relationships; new ancient bridge records carry separate sources.",
     "source_sha256": "cb2784ac3cbceafb5895eb94852ef476991f6e012665e54d7cffe03a17ca7751",
     "selection_note": "Selected political context for the regions represented by this corpus; not an exhaustive global history of Islam. Reign and polity spans are not borders or influence claims.",
     "dating_note": "Anchors place labels only. Intervals, upper bounds, publication witnesses, corpus spans and undated entries are visually distinct. No exact composition date is inferred from a death bound.",
@@ -23816,7 +24385,7 @@
     "summary_count": 98,
     "featured_count": 38,
     "integrated_display": {
-      "version": "2.0",
+      "version": "2.1",
       "layout": "one shared chronological field",
       "exclude_individual_rulers": true,
       "excluded_period_ids": [
@@ -23856,7 +24425,10 @@
         "HL_P17": "British Raj",
         "HL_P18": "Turkish Republic",
         "HL_P19": "South Asia after Partition",
-        "HL_P20": "Iran after 1979"
+        "HL_P20": "Iran after 1979",
+        "GNA-P01": "Achaemenid Empire",
+        "GNA-P02": "Hellenistic kingdoms",
+        "GNA-P03": "Roman imperial world"
       },
       "event_labels": {
         "HEV01": "First revelations in Islamic tradition",
@@ -23871,7 +24443,7 @@
         "HL_E06": "Ottoman conquest of Mamluk Egypt",
         "HL_E08": "Safavid capital moves to Isfahan"
       },
-      "chronology_note": "Empire bars, event rules and work marks share the same time scale. Visual alignment establishes temporal context, not a new influence claim.",
+      "chronology_note": "Ancient Persian, Hellenistic and Roman periods join later empires as political context, not as an inference of intellectual influence; a Hellenistic era band represents multiple independent kingdoms. Empire bars and event rules share the textual year axis.",
       "period_ids": [
         "HEP01",
         "HEP02",
@@ -23917,7 +24489,10 @@
         "HL_P18",
         "HL_P10",
         "HL_P19",
-        "HL_P20"
+        "HL_P20",
+        "GNA-P01",
+        "GNA-P02",
+        "GNA-P03"
       ]
     }
   },
