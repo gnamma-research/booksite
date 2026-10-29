@@ -470,6 +470,7 @@ async def main():
             ctx=await browser.new_context(viewport={"width":w,"height":h},
                                           is_mobile=mobile,has_touch=mobile)
             page=await ctx.new_page()
+            page.set_default_timeout(8000)
             page.on("pageerror",lambda e: RESULT["console"].append(str(e)))
             if (browser_name,w)==("chromium",1440):
                 await complete_matrix(page)
