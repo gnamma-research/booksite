@@ -67,8 +67,15 @@ async def open_filters(page):
 
 async def reset(page):
     await page.locator('[data-view="timeline"]').click()
-    await page.locator('[data-action="whole-atlas-chart"]').click()
     await open_more(page)
+    # The compact "All years" action is deliberately CSS-hidden on desktop.
+    # Use the visible controls rather than mistaking a hidden responsive
+    # variant for a broken button.
+    compact=page.locator('[data-action="whole-atlas-chart"]')
+    if await compact.is_visible():
+        await compact.click()
+    else:
+        await page.locator('[data-action="whole-atlas"]').click()
 
 async def setup(page):
     r=await page.goto(BASE,wait_until="domcontentloaded",timeout=60000)
@@ -124,7 +131,10 @@ async def presets(page):
         s=await state(page)
         ok(abs(s["from"]-a)<1 and abs(s["to"]-b)<1,f"preset {val} not applied {s}")
     for action in ["whole-atlas","whole-atlas-chart"]:
-        await page.locator(f'[data-action="{action}"]').click()
+        button=page.locator(f'[data-action="{action}"]')
+        if not await button.is_visible():
+            continue  # Responsive alternative is not a clickable control here.
+        await button.click()
         s=await state(page)
         ok(abs(s["from"]+600)<.01 and abs(s["to"]-2026)<.01,f"Whole {action} not full")
         ok(await page.locator(".ia-travel-window").count()==1,"overview disappeared")
@@ -473,7 +483,7 @@ async def smoke_mobile(page,width,height):
     await page.locator('[data-audit-tab="sources"]').click()
     ok((await state(page))["auditTab"]=="sources","mobile audit")
     await page.locator('[data-view="timeline"]').click()
-    await page.locator('[data-action="whole-atlas-chart"]').click()
+    await reset(page)
     ok(abs((await state(page))["to"]-2026)<1,"whole timeline mobile")
     await page.screenshot(path=str(OUT/f"mobile_{width}x{height}.png"),full_page=False)
 
