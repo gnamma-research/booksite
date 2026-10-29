@@ -65,8 +65,10 @@ The homepage and category screens use a five-icon dock centred at the bottom. Ta
 
 **Bidāya–Ḍarūrī** is under **Research**, linked to the comparative legal-method study, not under Texts. The standalone al-Ḍarūrī fī Uṣūl al-Fiqh reader remains under Uṣūl. The old texts/ibn-rushd/bidayat-al-mujtahid/ preview remains available at its original address but is no longer in the catalogue. Individual books retain their own native reading apparatus and background themes; essays/research retain the full scholarly workspace.
 
-## Texts in Time · Islamic Intellectual Atlas (revision 4, 28 October 2026)
+## Texts in Time · Islamic Intellectual Atlas (revision 5, 29 October 2026)
 
-[Open the updated interactive atlas](research/intellectual-atlas/). The research register now includes **321 records and 312 qualified textual relationships**, with the 1387 **Tahdhīb al-manṭiq wa-l-kalām** and its logic/kalām commentaries added as a new genealogy. [Read the Tahdhīb dossier](research/intellectual-atlas/tahdhib/).
+[Open the interactive intellectual atlas](research/intellectual-atlas/). The research register contains **321 scholarly/context records** and **312 qualified textual relationships**, including the dated logic and kalām commentary families around the 1387 **Tahdhīb al-manṭiq wa-l-kalām**. [Read its critical Tahdhīb dossier](research/intellectual-atlas/tahdhib/).
 
-The updated 84-page reference register and 9-page focused supplement are linked from the atlas. The earlier 15-page overview and 204-page illustrated reference remain available as clearly labelled revision-2 historical map editions. The source-data JSON and offline interactive bundle now include the Tahdhīb additions. Commentary, gloss, critique, and historical coexistence are distinct relationship types; date uncertainties remain part of each record.
+The atlas now provides **twelve equal-level textual-family routes** (including *Ishārāt*, *Tajrīd*, *Mawāqif*, *Maqāṣid*, *Tahdhīb*, *Shifāʾ*, *Fuṣūṣ* and *Asfār*), separate from the **intellectual-tradition** filters. A textual family is a source-book and commentary network, **not an independent doctrinal school**. Users can drag, scroll, zoom, select a family or return to all works. All recorded relationships retain evidence and dating qualifications.
+
+The 84-page updated text-focused reference register and 9-page Tahdhīb supplement are linked from the atlas. Earlier 15-page and 204-page illustrated editions remain clearly labelled as historical map editions. The online JSON and downloadable offline interactive bundle include the latest textual-family routes. Publication and editorial status remain revisable.

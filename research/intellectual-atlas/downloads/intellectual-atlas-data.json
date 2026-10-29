@@ -21125,7 +21125,7 @@
       "present": true
     }
   ],
-  "revision": "4.0 Tahdhīb commentary expansion; 28 October 2026",
+  "revision": "4.1 Gnamma textual-family explorer; 29 October 2026 (records unchanged)",
   "history": {
     "periods": [
       {
@@ -26071,5 +26071,262 @@
       "Manuscript copy and later printing dates remain bounds, never silently converted into composition dates.",
       "Correction: Shah Mīrī's commentary attested in dated 957 AH manuscript replaces an unsupported independent Fayḍābādī/Tuḥfat-i Shāhjahānī attribution."
     ]
+  },
+  "textual_families": [
+    {
+      "id": "shifa",
+      "label": "al-Shifāʾ",
+      "section": "Philosophical works and reception",
+      "root": "avicenna_shifa",
+      "member_ids": [
+        "avicenna_shifa",
+        "sadra_shifa",
+        "alawi_shifa",
+        "khwansari_husayn_shifa",
+        "khwansari_jamal_shifa",
+        "naraqi_shifa",
+        "jilveh_shifa",
+        "motahhari_shifa"
+      ],
+      "record_count": 8,
+      "within_family_relationships": 7,
+      "explicit_commentary_links": 7,
+      "scope": "Avicenna's summa and later commentaries on its metaphysics, including continuing Iranian Avicennism."
+    },
+    {
+      "id": "isharat",
+      "label": "al-Ishārāt wa-l-tanbīhāt",
+      "section": "Philosophical works and reception",
+      "root": "avicenna_isharat",
+      "member_ids": [
+        "avicenna_isharat",
+        "razi_isharat",
+        "tusi_isharat",
+        "ibnkammuna_isharat",
+        "qutb_muhakamat",
+        "jilveh_tusi_isharat"
+      ],
+      "record_count": 6,
+      "within_family_relationships": 7,
+      "explicit_commentary_links": 4,
+      "scope": "Rāzī, Ṭūsī and later commentaries, comparisons and adjudication of Avicenna's text."
+    },
+    {
+      "id": "hidaya",
+      "label": "Hidāyat al-ḥikma",
+      "section": "Philosophical works and reception",
+      "root": "abh_hidaya",
+      "member_ids": [
+        "abh_hidaya",
+        "maybudi_hidaya",
+        "lari_hidaya",
+        "sadra_hidaya"
+      ],
+      "record_count": 4,
+      "within_family_relationships": 3,
+      "explicit_commentary_links": 3,
+      "scope": "The Abharī textbook and its transmitted commentary branches; not the unrelated book titled Hidāyat al-mustarshidīn."
+    },
+    {
+      "id": "ishraq",
+      "label": "Ḥikmat al-ishrāq",
+      "section": "Philosophical works and reception",
+      "root": "suhrawardi_ishraq",
+      "member_ids": [
+        "suhrawardi_ishraq",
+        "shahrazuri_ishraq",
+        "qutb_shirazi_ishraq",
+        "harawi_anwariyya",
+        "sadra_ishraq_gloss",
+        "damad_ishraq_gloss"
+      ],
+      "record_count": 6,
+      "within_family_relationships": 8,
+      "explicit_commentary_links": 6,
+      "scope": "Suhrawardī's work with its commentaries and glosses, including later Iranian receptions."
+    },
+    {
+      "id": "nasafi",
+      "label": "al-ʿAqāʾid al-Nasafiyya",
+      "section": "Kalām texts and scholastic commentaries",
+      "root": "nasafi_aqaid",
+      "member_ids": [
+        "nasafi_aqaid",
+        "taftazani_aqaid",
+        "khayali_aqaid",
+        "kesteli_aqaid",
+        "isam_aqaid",
+        "siyalkuti_khayali",
+        "khalid_siyalkuti"
+      ],
+      "record_count": 7,
+      "within_family_relationships": 6,
+      "explicit_commentary_links": 6,
+      "scope": "Nasafī's short creed, Taftāzānī's commentary and the subsequent gloss tradition."
+    },
+    {
+      "id": "maqasid",
+      "label": "al-Maqāṣid / Sharḥ al-Maqāṣid",
+      "section": "Kalām texts and scholastic commentaries",
+      "root": "taftazani_maqasid",
+      "member_ids": [
+        "taftazani_sharh_maqasid",
+        "taftazani_maqasid",
+        "khayali_maqasid"
+      ],
+      "record_count": 3,
+      "within_family_relationships": 2,
+      "explicit_commentary_links": 2,
+      "scope": "Taftāzānī's own matn and sharḥ, with selected later glosses; separate from his Tahdhīb."
+    },
+    {
+      "id": "mawaqif",
+      "label": "al-Mawāqif / Sharḥ al-Mawāqif",
+      "section": "Kalām texts and scholastic commentaries",
+      "root": "iji_mawaqif",
+      "member_ids": [
+        "iji_mawaqif",
+        "jurjani_mawaqif",
+        "khayali_mawaqif",
+        "hasan_mawaqif",
+        "siyalkuti_mawaqif",
+        "mirzahid_mawaqif",
+        "khayrabadi_zahidiyya"
+      ],
+      "record_count": 7,
+      "within_family_relationships": 7,
+      "explicit_commentary_links": 6,
+      "scope": "Ījī, Jurjānī and later Ottoman and South Asian glosses. Unrelated works sharing the title Mawāqif are excluded."
+    },
+    {
+      "id": "tajrid",
+      "label": "Tajrīd al-iʿtiqād",
+      "section": "Kalām texts and scholastic commentaries",
+      "root": "tusi_tajrid",
+      "member_ids": [
+        "tusi_tajrid",
+        "hilli_kashf",
+        "isfahani_tasdid",
+        "jurjani_tajrid",
+        "qushji_tajrid",
+        "dashtaki_tajrid",
+        "dawwani_tajrid",
+        "ghiyath_dashtaki_gloss",
+        "khafri_tajrid",
+        "lahiji_shawariq",
+        "lahiji_khafri",
+        "astarabadi_barahin"
+      ],
+      "record_count": 12,
+      "within_family_relationships": 18,
+      "explicit_commentary_links": 10,
+      "scope": "The substantial Sunni–Imāmī cross-confessional commentary family around Ṭūsī, Ḥillī, Iṣfahānī, Jurjānī, Qūshjī and later scholars."
+    },
+    {
+      "id": "tahdhib",
+      "label": "Tahdhīb al-manṭiq wa-l-kalām",
+      "section": "Kalām texts and scholastic commentaries",
+      "root": "tahdhib_complete",
+      "member_ids": [
+        "tahdhib_complete",
+        "tahdhib_logic",
+        "tahdhib_kalam",
+        "tahdhib_kafiyaji",
+        "tahdhib_dawwani",
+        "tahdhib_kemalpasha",
+        "tahdhib_isam",
+        "tahdhib_dashtaki",
+        "tahdhib_shahmiri",
+        "tahdhib_yazdi",
+        "tahdhib_lari",
+        "tahdhib_fathullah",
+        "tahdhib_khubaysi",
+        "tahdhib_yasin_himsi",
+        "tahdhib_lahiji_persian",
+        "tahdhib_lahiji_yazdi",
+        "tahdhib_saiidi",
+        "tahdhib_mirzahid",
+        "tahdhib_miri",
+        "tahdhib_gelenbevi",
+        "tahdhib_dasuqi",
+        "tahdhib_attar",
+        "tahdhib_sunduqli",
+        "tahdhib_lakhnawi",
+        "tahdhib_sanandaji",
+        "tahdhib_jarallah"
+      ],
+      "record_count": 26,
+      "within_family_relationships": 25,
+      "explicit_commentary_links": 24,
+      "scope": "Taftāzānī's one treatise with two analytic subnodes: a larger logic commentary family and a smaller kalām commentary family. Not a separate doctrinal school."
+    },
+    {
+      "id": "jawhara",
+      "label": "Jawharat al-tawḥīd",
+      "section": "Kalām texts and scholastic commentaries",
+      "root": "laqani_jawhara",
+      "member_ids": [
+        "laqani_jawhara",
+        "laqani_umda",
+        "abd_salam_irshad",
+        "abd_salam_ithaf",
+        "bajuri_tuhfa"
+      ],
+      "record_count": 5,
+      "within_family_relationships": 6,
+      "explicit_commentary_links": 4,
+      "scope": "The North African/Egyptian creed poem and its family of systematic Sunni commentaries."
+    },
+    {
+      "id": "fusus",
+      "label": "Fuṣūṣ al-ḥikam",
+      "section": "Akbarian and later philosophical texts",
+      "root": "ibnarabi_fusus",
+      "member_ids": [
+        "ibnarabi_fusus",
+        "ibnarabi_naqsh",
+        "qunawi_fukuk",
+        "jandi_fusus",
+        "qaysari_fusus",
+        "kashani_fusus",
+        "haydar_nass",
+        "turka_fusus",
+        "jami_naqd",
+        "jami_fusus",
+        "bosnawi_fusus",
+        "nabulusi_fusus",
+        "jilveh_qaysari",
+        "konuk_fusus",
+        "khomeini_taliqat"
+      ],
+      "record_count": 15,
+      "within_family_relationships": 19,
+      "explicit_commentary_links": 13,
+      "scope": "Ibn ʿArabī's Fuṣūṣ and commentary/synopsis family across Ottoman, Iranian and South Asian receptions; does not exhaust the wider Akbarian school."
+    },
+    {
+      "id": "asfar",
+      "label": "al-Asfār al-arbaʿa",
+      "section": "Akbarian and later philosophical texts",
+      "root": "sadra_asfar",
+      "member_ids": [
+        "sadra_asfar",
+        "sabzavari_asfar",
+        "jilveh_asfar",
+        "tabatabai_asfar",
+        "javadi_rahiq"
+      ],
+      "record_count": 5,
+      "within_family_relationships": 4,
+      "explicit_commentary_links": 4,
+      "scope": "Ṣadrā's multi-volume philosophical summa and its later glosses and continuations."
+    }
+  ],
+  "textual_family_method": {
+    "type": "Curated source-text and commentary networks, not intellectual schools",
+    "membership": "Current recorded works connected by an identified source-text, commentary or gloss family; selected cross-referencing works explicitly included. Broader doctrinal influence is not automatically membership.",
+    "uncertainty": "Family membership does not imply doctrinal assent or manuscript collation; the catalogue and relationship evidence control claims.",
+    "selective_coverage": true,
+    "revision": "textual-family-explorer-2026-10-29"
   }
 }

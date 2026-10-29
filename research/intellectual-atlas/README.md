@@ -1,43 +1,58 @@
 # Texts in Time · Islamic Intellectual Atlas
+Gnamma Research · revision 5 · 29 October 2026.
 
-Gnamma Research — revision 4, 28 October 2026.
+[Explore the live atlas](https://gnamma-research.github.io/booksite/research/intellectual-atlas/)
+· [Tahdhīb source dossier](https://gnamma-research.github.io/booksite/research/intellectual-atlas/tahdhib/)
 
-Interactive map: https://gnamma-research.github.io/booksite/research/intellectual-atlas/
-Tahdhīb research dossier: https://gnamma-research.github.io/booksite/research/intellectual-atlas/tahdhib/
+The atlas contains **321 scholarly/context records**, **312 individually qualified textual
+relationships** and **307 source records**. Its integrated chronology interleaves
+empire periods, events and the dated textual network without individual ruler lanes.
 
-The atlas has **321 work, work-series, analytical-section and contextual records**,
-**312 individually qualified textual relationships**, and **307 source records**.
-The expansion adds 26 records and 26 relationships covering Taftāzānī's
-**Tahdhīb al-manṭiq wa-l-kalām** (Rajab 789 AH / 1387 CE), the extensive logic
-commentary and glossing families, and the separately identified kalām commentaries.
+## Two navigation levels — do not conflate them
 
-## Files
+**Intellectual traditions:** the long-lived philosophical or theological currents,
+represented by existing colors and filters (Avicennan, Illuminationist, Akbarian,
+Sunni kalām, Imāmī, Ṣadrian, etc.). These categories are non-exclusive receptions,
+not proof of a writer's full doctrinal allegiance.
 
-- `index.html` embeds the current canonical dataset for offline-capable browsing.
-- `atlas-app.js` powers drag/zoom/time navigation, evidence panels, search, and the Tahdhīb preset.
-- `tahdhib/index.html`: full branch-by-branch critical research dossier.
-- `tahdhib-additions.json`: independently sourced addition register (26 nodes, 26 relationships, 25 sources).
-- `downloads/intellectual-atlas-data.json`: **canonical latest JSON**, including all earlier and new entries.
-- `downloads/Intellectual_Atlas_Reference_Revision4.pdf`: updated **84-page** text-focused complete catalogue, relationship evidence and bibliographical register.
-- `downloads/Tahdhib_Genealogy_Addendum.pdf`: focused **9-page** supplement.
-- `downloads/Islamic_Intellectual_Timeline.pdf`: illustrated **revision-2** atlas (204 pages); preserves historical diagrams but does not contain the Tahdhīb additions.
-- `downloads/Islamic_Timeline_Overview.pdf`: illustrated **revision-2** historical overview (15 pages).
-- `downloads/Islamic_Timeline_Website_Package.zip`: offline revision-4 viewer + canonical data and the new dossier.
-- `build.py`: validates canonical data and synchronizes the embedded HTML JSON / checksums. It no longer rebuilds from the earlier revision-2 offline ZIP.
+**Textual families:** explicitly named base works and selected commentaries or
+glosses, represented by the equal-level **Textual family** selector. The twelve
+routes are al-Shifāʾ, al-Ishārāt, Hidāyat al-ḥikma, Ḥikmat al-ishrāq,
+al-ʿAqāʾid al-Nasafiyya, al-Maqāṣid, al-Mawāqif, Tajrīd al-iʿtiqād,
+Tahdhīb al-manṭiq wa-l-kalām, Jawharat al-tawḥīd, Fuṣūṣ al-ḥikam and
+al-Asfār. The full member list, root, and description of each are in
+`downloads/intellectual-atlas-data.json` under `textual_families`.
+The same text may participate in several families; the menu only traces works
+recorded in this *selective* atlas. Textual-family membership does not
+establish doctrinal agreement.
 
-## Editorial status
+The 1387 **Tahdhīb** is *one two-part treatise*: the logic and kalām
+analytical nodes are not separate authored books. Its 26 new entries and 26
+relationships form an important textual commentary network, not a new
+intellectual school. Read `tahdhib/index.html` for source and dating cautions.
 
-This is selective, revisable research, not a definitive manuscript stemma.
-An analytical section of a treatise is **not** a separately authored book;
-a commentary is not necessarily an endorsement; a published witness or
-author's death is not a composition date.
+## Files and versions
 
-Specific cautions in the Tahdhīb family:
-- Yazdī's direct gloss was completed in 967 AH/1560; competing death dates remain unresolved.
-- Lāhījī's Persian direct commentary differs from his gloss on Yazdī.
-- Al-Mīrī is an intermediary identified by a catalogue title, not securely identified with Mīr Zāhid.
-- Al-Sanandajī's 1901 printed appendices are **not automatically** glosses on his own commentary.
-- Relationship from Taftāzānī's Maqāṣid to Tahdhīb's kalām section is a **reported abridgement**, pending collation.
+- `index.html`: interactive atlas with embedded canonical research data.
+- `atlas-app.js`: drag/zoom, time travel, all-record navigation, text-family
+  selector, filters, selected-work panel, and evidence catalogue.
+- `downloads/intellectual-atlas-data.json`: canonical complete dataset,
+  including the textual-family membership registry.
+- `tahdhib/index.html`: focused critical dossier on logic and kalām.
+- `tahdhib-additions.json`: Tahdhīb additions and editorial cautions.
+- `downloads/Islamic_Timeline_Website_Package.zip`: updated *offline* viewer,
+  canonical data and Tahdhīb dossier.
+- `downloads/Intellectual_Atlas_Reference_Revision4.pdf`: 84-page
+  complete reference catalogue and evidence register, including Tahdhīb.
+- `downloads/Tahdhib_Genealogy_Addendum.pdf`: 9-page focused supplement.
+- `downloads/Islamic_Intellectual_Timeline.pdf` and
+  `downloads/Islamic_Timeline_Overview.pdf`: earlier illustrated maps
+  from revision 2 (204 / 15 pages); retained with the historical edition label.
+- `build.py`: validates and synchronizes the embedded data and manifest.
+  It **must not** replace the current site with the older illustrated/ZIP version.
 
-The two original illustrated PDFs remain available with explicit edition
-labels, while the revision-4 catalogue and supplement record the new evidence.
+All dates, manuscript witnesses and source qualifications are retained.
+A reported source is not a collated borrowing; a gloss need not endorse its
+base work; a death or print date is not automatically composition. Political
+coexistence is not intellectual influence. The catalogue is selective and
+revisable. No complete third-party books or manuscript scans are redistributed.

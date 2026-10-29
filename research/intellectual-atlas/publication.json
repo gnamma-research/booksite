@@ -1,10 +1,12 @@
 {
   "title": "Texts in Time · Islamic Intellectual Atlas",
-  "revision": "tahdhib-4-2026-10-28",
+  "revision": "textual-families-5-2026-10-29",
   "status": "working research",
   "entries": 321,
   "textual_relationships": 312,
   "sources": 307,
+  "textual_family_routes": 12,
+  "textual_family_note": "Curated named-work commentary networks; separate from intellectual traditions and non-exclusive doctrinal affiliations",
   "tahdhib_added_entries": 26,
   "tahdhib_added_relationships": 26,
   "displayed_political_periods": 45,
@@ -24,5 +26,5 @@
     "canonical_data": "intellectual-atlas-data.json",
     "offline_package": "Islamic_Timeline_Website_Package.zip"
   },
-  "note": "See README; new text-focused register updates all catalogue relationships, while illustrated revision-2 PDFs remain as explicitly dated diagrams."
+  "note": "All 321 scholarly entries and 312 relationships remain available. The interactive textual-family selector overlays curated subsets of the graph; previous illustrated PDFs remain explicitly marked as earlier editions."
 }
