@@ -3781,7 +3781,7 @@
       "date_start": 254,
       "date_end": 301,
       "date_status": "range",
-      "date_note": "254–269 is the main writing period; 301 is the edition, not Plotinus’ composition year.",
+      "date_note": "254–269 is the main writing period; 301 is the edition, not Plotinus’ composition year. The 301 CE mark represents Porphyry’s edition, not Plotinus composing through 301.",
       "kind": "collection",
       "tradition": "neoplatonic",
       "region": "Rome / later Porphyrian editorial context",
@@ -3800,11 +3800,23 @@
       "temporal": {
         "start": 254,
         "end": 301,
-        "anchor": 277.5,
-        "kind": "context",
+        "anchor": 301,
+        "kind": "multiple_stages",
         "basis": "corpus or contextual dating",
         "label": "Treatises c.254–269; edition 301",
-        "note": "The band spans the dated range or multiple stages stated in the label; it does not assert continuous composition. Its centre only positions the label."
+        "note": "Authorial treatises and the later six-Ennead editorial arrangement are distinct events. There is no claim of continuous composition 254–301.",
+        "stages": [
+          {
+            "start": 254,
+            "end": 269,
+            "label": "Plotinus treatises, c. 254–269"
+          },
+          {
+            "start": 301,
+            "end": 301,
+            "label": "Porphyry’s editorial arrangement c. 301"
+          }
+        ]
       },
       "summary": true,
       "featured": false,
@@ -9243,7 +9255,7 @@
       "date_start": 1330,
       "date_end": 1352,
       "date_status": "range",
-      "date_note": "Early redaction c.730–733 AH; revised 750–753 AH. Autograph completed early Jumādā II 753/1352, with further corrections.",
+      "date_note": "Early redaction c.730–733 AH; revised 750–753 AH. Autograph completed early Jumādā II 753/1352, with further corrections. The chronological map displays two separate stages instead of a single continuous bar or misleading midpoint; source F26 is the 2025 research chronology.",
       "kind": "matn",
       "tradition": "sunni",
       "region": "Tabriz and Shiraz",
@@ -9260,11 +9272,23 @@
       "temporal": {
         "start": 1330,
         "end": 1352,
-        "anchor": 1341,
-        "kind": "range",
+        "anchor": 1352,
+        "kind": "multiple_stages",
         "basis": "composition or textual activity",
         "label": "c. 1330–33; revised 1349–52",
-        "note": "The band spans the dated range or multiple stages stated in the label; it does not assert continuous composition. Its centre only positions the label."
+        "note": "Two documented recensional phases. A centre point at 1341 would invent a composition date. The label now follows the attested 1352 authorial copy; separate small markers indicate the earlier phase and revision, NOT 22 continuous years of writing.",
+        "stages": [
+          {
+            "start": 1330,
+            "end": 1333,
+            "label": "early recension, c. 730–733 AH"
+          },
+          {
+            "start": 1349,
+            "end": 1352,
+            "label": "revised recension and authorial copy, 750–753 AH"
+          }
+        ]
       },
       "summary": true,
       "featured": true,
@@ -23407,6 +23431,16 @@
         "SM02",
         "SM03",
         "SM04"
+      ]
+    },
+    {
+      "title": "Revision 7.1: evidence dates versus typography",
+      "text": "A book label has no duration meaning. The separate small symbol marks a dated year, publication witness, upper/lower bound, uncertain window or separately evidenced revision phases. Al-Ījī’s Mawāqif and Plotinus’ Enneads previously had artificial midpoints between writing and editing stages. The revised chronology plots the separate recorded stages. Other source qualifications remain unaltered.",
+      "sources": [
+        "F26",
+        "F35",
+        "G07",
+        "G06"
       ]
     }
   ],

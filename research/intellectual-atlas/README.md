@@ -136,3 +136,33 @@ browser QA checks Greek–Syriac–Arabic network bands as an independent layer.
 collations; several newly added temporal windows are deliberately approximate.
 “Translated”, “paraphrased”, “commented on”, “criticized”, and “reported to be
 influenced by” remain different evidence types.
+
+
+## Interface revision 7.1 — continuous time travel and date evidence
+
+The universal overview no longer jumps to a discrete centre on pointer
+release. Drag its six-dot handle to translate the selected time window in
+continuous increments; tap outside it for a deliberate seek. Drag/swipe the
+main diagram with the same live date scale, rather than a temporary SVG
+translation committed only when the finger lifts. Horizontal trackpad
+scrolling is frame-scheduled; vertical scroll retains its native behavior.
+The active window, chart axis and year captions remain synchronized.
+
+Work labels are now visually separate, compact typographic callouts.
+**Only the 9px square/diamond, bounded triangle, dotted possible date window,
+or individually marked redaction stages express time.** The callout width is
+never a duration of composition, circulation or publication. Each record's
+source-qualified date meaning is also written in the detail drawer, for
+keyboard and screen-reader access.
+
+The staged al-Mawāqif revisions (c.1330–33 and 1349–52) and Plotinus'
+treatises/editorial collection are plotted separately; the previously used
+midpoints were not historical composition dates. The Ṭūsī Tajrīd remains a
+*terminus ante quem* by the probable 669/1270–71 authorial witness; al-
+Taftāzānī's Maqāṣid/Sharḥ has the detailed January 1383 completion evidence.
+No exact day or composition year is invented for other uncertain works.
+
+Regression: tests/verify_continuous_scrub_browser.py tests live motion before
+release, bidirectional scroll intent, actual Chromium mobile touch gestures,
+WebKit/Chromium layouts, the date glyph geometry and the separate-stage
+provenance.

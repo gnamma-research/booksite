@@ -79,6 +79,8 @@ manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
     'revision': 'neoplatonic-bridge-7-2026-10-29',
     'status': 'working research',
+    'ui_revision': 'continuous-scrub-7.1-2026-10-29',
+    'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
     'entries': len(data['nodes']),
     'textual_relationships': len(data['edges']),
     'sources': len(data['sources']),
