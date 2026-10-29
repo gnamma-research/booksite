@@ -170,6 +170,7 @@ async def visit(browser, width, height, mobile=False):
     assert_that('NET02' in net['records'] and 'NET03' in net['records']
                 and 'NET04' in net['records'] and 'NET05' in net['records'],
                 "Athenian, Alexandrian, Syriac and Baghdad bands visible independently")
+    await page.locator('details.ia-filters > summary').click()
     await page.locator('input[data-control="schools"]').uncheck()
     assert_that(await page.locator('[data-network]').count()==0,
                 "Scholarly-network layer toggles independently of political dynasties")
@@ -196,7 +197,7 @@ async def visit(browser, width, height, mobile=False):
     assert_that(source['ashari'] and source['maturidiReception'],
                 "Taftazani's Ashari authorship distinguished from Maturidi matn reception")
     dossier=await page.request.get(URL+'neoplatonism/')
-    assert_that(dossier.status==200 and 'Greek–Syriac–Arabic' in await dossier.text(),
+    assert_that(dossier.status==200 and 'Between the Greeks and the Islamic philosophers' in await dossier.text(),
                 "Source-critical Neoplatonic dossier is available")
     assert_that(await page.locator('a[href="downloads/Intellectual_Atlas_Reference_Revision7.pdf"]').count()==1,
                 "Current revised evidence PDF linked, rather than only legacy registers")
