@@ -9,7 +9,7 @@
   "textual_family_note": "Curated, overlapping named-work commentary networks, distinct from intellectual traditions; regional context is an independent intersecting filter",
   "tahdhib_added_entries": 26,
   "tahdhib_added_relationships": 26,
-  "displayed_political_periods": 45,
+  "displayed_political_periods": 48,
   "displayed_events": 36,
   "individual_reign_rows": 0,
   "pdf_pages": {
@@ -26,8 +26,8 @@
     "canonical_data": "intellectual-atlas-data.json",
     "offline_package": "Islamic_Timeline_Website_Package.zip"
   },
-  "note": "Revision 6 adds 10 sourced, approximately dated ancient bridge entries and three overlapping navigation dimensions. The downloaded PDFs and offline ZIP reflect earlier editions; revision-4 reference PDF still covers 321 works and all 312 established relationships.",
-  "historical_sources": 69,
+  "note": "Revision 6 adds 10 sourced, approximately dated ancient bridge entries and three overlapping navigation dimensions. The downloaded PDFs and offline ZIP reflect earlier editions; revision-4 reference PDF still covers 321 works and all 312 established relationships. Three additional sourced ancient political-background bands cover Achaemenid, Hellenistic, and Roman contexts without asserting influence.",
+  "historical_sources": 72,
   "ancient_bridge_entries": 10,
   "classification_layers": [
     "intellectual traditions",
