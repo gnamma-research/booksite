@@ -1,12 +1,12 @@
 {
   "title": "Texts in Time · Islamic Intellectual Atlas",
-  "revision": "textual-families-5-2026-10-29",
+  "revision": "atlas-three-layers-6-2026-10-29",
   "status": "working research",
-  "entries": 321,
+  "entries": 331,
   "textual_relationships": 312,
-  "sources": 307,
+  "sources": 317,
   "textual_family_routes": 12,
-  "textual_family_note": "Curated named-work commentary networks; separate from intellectual traditions and non-exclusive doctrinal affiliations",
+  "textual_family_note": "Curated, overlapping named-work commentary networks, distinct from intellectual traditions; regional context is an independent intersecting filter",
   "tahdhib_added_entries": 26,
   "tahdhib_added_relationships": 26,
   "displayed_political_periods": 45,
@@ -26,5 +26,13 @@
     "canonical_data": "intellectual-atlas-data.json",
     "offline_package": "Islamic_Timeline_Website_Package.zip"
   },
-  "note": "All 321 scholarly entries and 312 relationships remain available. The interactive textual-family selector overlays curated subsets of the graph; previous illustrated PDFs remain explicitly marked as earlier editions."
+  "note": "Revision 6 adds 10 sourced, approximately dated ancient bridge entries and three overlapping navigation dimensions. The downloaded PDFs and offline ZIP reflect earlier editions; revision-4 reference PDF still covers 321 works and all 312 established relationships.",
+  "historical_sources": 69,
+  "ancient_bridge_entries": 10,
+  "classification_layers": [
+    "intellectual traditions",
+    "textual families",
+    "historical and regional networks"
+  ],
+  "pdf_note": "Earlier PDF reference register and offline ZIP have not been rebuilt for revision 6."
 }
