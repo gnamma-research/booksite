@@ -109,6 +109,16 @@ async def run_audit(page,full=True):
     check(s["family"]=="" and len(s["filtered"])==375,"All texts option failed")
     cases+=1
 
+    # The dedicated source-dossier shortcut and the in-place clear action.
+    await page.locator("#ia-text-family-v3").select_option("tajrid")
+    await page.locator('[data-action="clear-text-family"]').click()
+    check((await snap(page))["family"]=="","Clear-text-family button left route active")
+    cases+=1
+    await ensure_open(page,".gn-atlas-introduction")
+    await page.locator('[data-action="tahdhib-route"]').click()
+    check((await snap(page))["family"]=="tahdhib","Tahdhīb research shortcut is not connected")
+    cases+=1
+    await page.locator('[data-action="clear-text-family"]').click()
     # The other UI for the same textual families is the grouped exploration
     # button grid. Test every button, not just the underlying SELECT control.
     await ensure_open(page,".ia-explorer-shortcuts .ia-route-explorer:has([data-text-route])")
@@ -186,6 +196,18 @@ async def run_audit(page,full=True):
         s=await snap(page)
         check(abs(s["from"]-from_y)<1 and abs(s["to"]-to_y)<1,f"Date preset {label} misrouted")
         cases+=1
+    await page.locator('[data-action="whole-atlas-chart"]').click()
+    check((await snap(page))["to"]-(await snap(page))["from"]==2626,
+          "In-chart All years button did not restore full chronology")
+    cases+=1
+    # Click a real clickable century cluster to see whether zooming into its
+    # component texts follows the chronological bounds.
+    cluster=page.locator('[data-chart] a[data-cluster]').first
+    check(await cluster.count()>0,"Overview does not expose any century group")
+    await cluster.click()
+    ss=await snap(page)
+    check(ss["to"]-ss["from"]<2626,"Selecting a century group didn't zoom into it")
+    cases+=2
     await reset(page)
     full_range=await snap(page)
     check((full_range["from"],full_range["to"])==(-600,2026),"Whole atlas must show entire chronology")
@@ -258,6 +280,24 @@ async def run_audit(page,full=True):
         if val=="none":
             check((await metric(page))["edge"]==0,"Hidden links still drawn")
         cases+=1
+    await reset(page)
+
+    # Incompatible AND combinations must explain why a family map is empty,
+    # and provide a clear action without forcing a new historical era.
+    await reset(page)
+    await page.locator('#ia-text-family-v3').select_option('plato_timaeus')
+    await page.locator('#ia-region-network-v3').select_option('farangi')
+    empty=await snap(page)
+    check(len(empty["filtered"])==0,"Expected empty test intersection was not empty")
+    check(await page.locator('.ia-filter-empty').count()==1,
+          "Incompatible text-family/region filters lack actionable explanation")
+    await page.locator('[data-action="reset-filters"]').click()
+    clean=await snap(page)
+    check(clean["family"]=="" and clean["region"]=="" and len(clean["filtered"])==375,
+          "Clear restrictive filters did not restore all works")
+    check(abs(clean["from"]-empty["from"])<.01 and abs(clean["to"]-empty["to"])<.01,
+          "Clear restrictive filters unexpectedly changed selected years")
+    cases+=4
     await reset(page)
 
     # Four tab modes, six evidence sub-tabs, and catalogue pagination.
@@ -354,6 +394,17 @@ async def run_audit(page,full=True):
     await search.press("Escape")
     check(await page.locator('#ia-results-v3').is_hidden(),"Search Escape doesn't close suggestions")
     cases+=2
+    # Enter should select the first matching record just as the suggestion
+    # button does, without leaving stale search filters behind.
+    await reset(page)
+    await search.fill("Proclus")
+    await page.wait_for_timeout(300)
+    candidate=await page.locator('#ia-results-v3 button[data-work]').first.get_attribute('data-work')
+    await search.press("Enter")
+    enter=await snap(page)
+    check(candidate and enter["selected"]==candidate and enter["search"]=="",
+          "Search Enter fails to select/center its first result")
+    cases+=1
     await reset(page)
     await page.locator('.ia-tradition-explorer button[data-tradition-route="sunni"]').click()
     await search.fill("Porphyry")
@@ -408,6 +459,12 @@ async def run_audit(page,full=True):
     await page.keyboard.press("End")
     check((await snap(page))["to"]<=2026,"Overview keyboard End overshoots chronology")
     cases+=4
+    await page.locator('[data-view="timeline"]').focus()
+    await page.keyboard.press("ArrowRight")
+    check((await snap(page))["view"]=="relations",
+          "Keyboard ArrowRight does not switch main navigation tab")
+    await page.locator('[data-view="timeline"]').click()
+    cases+=1
     for scheme in ["dark","light"]:
         await page.emulate_media(color_scheme=scheme)
         canvas=await page.locator('[data-chart]').evaluate("(e)=>getComputedStyle(e).backgroundColor")
