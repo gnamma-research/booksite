@@ -397,6 +397,24 @@ async def deep_link(page):
     s3=await state(page)
     ok(s3["view"]=="catalogue","Back didn't restore previous view")
     await reset(page)
+    # Historial layer toggles must survive share/reload, not merely work in RAM.
+    await open_filters(page)
+    for flag in ["politics","events","contexts","schools"]:
+        await page.locator(f'[data-control="{flag}"]').uncheck()
+    await page.locator('[data-view="catalogue"]').click()
+    await page.locator('[data-action="next-page"]').click()
+    shared=await state(page)
+    ok(shared["page"]==2 and all(shared[k] is False for k in ["politics","events","contexts","schools"]),
+       "pre-share layer states incorrect")
+    ok("page=2" in page.url and all(x in page.url for x in ["politics=0","events=0","contexts=0","networks=0"]),
+       "share URL omits page or historical layer settings")
+    await page.reload(wait_until="domcontentloaded")
+    await page.wait_for_function("!!document.querySelector('#kalam-timeline-app-v3')?.atlasTest")
+    restored=await state(page)
+    ok(restored["page"]==2 and restored["view"]=="catalogue" and
+       all(restored[k] is False for k in ["politics","events","contexts","schools"]),
+       "reloaded URL failed to restore catalogue page or historical visibility")
+    await reset(page)
 
 async def downloads(page):
     await reset(page)
