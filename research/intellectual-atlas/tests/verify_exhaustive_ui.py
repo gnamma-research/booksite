@@ -224,7 +224,7 @@ async def relation_checkboxes(page):
 async def layer_toggles(page):
     await reset(page);await open_filters(page)
     await page.locator('[data-range="1100,1550"]').click()
-    for name in ["politics","events","schools","contexts","qualified","focusOnly"]:
+    for name in ["politics","events","schools","contexts","qualified"]:
         el=page.locator(f'[data-control="{name}"]')
         await el.uncheck()
         off=await state(page)
@@ -234,6 +234,21 @@ async def layer_toggles(page):
         if name=="schools":ok(off["networkCount"]==0,"schools still visible")
         await el.check()
         ok((await state(page))[name] is True,f"layer {name} not reenabled")
+    # Focus is a contextual filter, so the checkbox should not appear effective
+    # when there is no selected work.
+    focus=page.locator('[data-control="focusOnly"]')
+    ok(await focus.is_disabled(),"Focus Only must be disabled without a selected text")
+    await page.locator('#ia-search-v3').fill('Sharḥ al-Mawāqif')
+    await page.wait_for_timeout(350)
+    await page.locator('#ia-results-v3 [data-work]').first.click()
+    await open_filters(page)
+    ok(await focus.is_enabled(),"Selecting a text must enable neighborhood focus")
+    before=(await state(page))["matching"]
+    await focus.check()
+    s=await state(page)
+    ok(s["focusOnly"] is True and s["matching"]<=before,
+       "Focus Only did not restrict the current selection")
+    await focus.uncheck()
     await reset(page)
 
 async def selector_options(page):
