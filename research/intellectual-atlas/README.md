@@ -1,30 +1,39 @@
 # Texts in Time · Islamic Intellectual Atlas
-Gnamma Research · revision 6 · 29 October 2026.
+Gnamma Research · revision 7 · 29 October 2026.
 
 [Explore the live atlas](https://gnamma-research.github.io/booksite/research/intellectual-atlas/)
 · [Tahdhīb source dossier](https://gnamma-research.github.io/booksite/research/intellectual-atlas/tahdhib/)
 
-The atlas contains **331 scholarly/context records**, **312 individually qualified textual
-relationships** and **317 source records**, plus 72 historical references. Its integrated chronology interleaves
+The atlas contains **375 scholarly/context records**, **348 individually qualified textual
+relationships** and **349 scholarly sources**, plus 72 historical references. Its integrated chronology interleaves
 empire periods, events and the dated textual network without individual ruler lanes.
 
 ## Three overlapping classifications — do not conflate them
 
-**Intellectual traditions:** primary catalogue labels for long-lived philosophical or theological currents,
+**Intellectual traditions:** primary catalogue labels and selectively source-audited overlapping overlays for long-lived philosophical or theological currents,
 represented by existing colors and filters (Avicennan, Illuminationist, Akbarian,
-Sunni kalām, Imāmī, Ṣadrian, etc.). These categories are non-exclusive receptions,
+Sunni kalām, Greek Neoplatonic, Imāmī, Ṣadrian, etc., including audited but incomplete Ashʿarī and Māturīdī overlays). These categories are non-exclusive receptions,
 not proof of a writer's full doctrinal allegiance.
 
 **Textual families:** explicitly named base works and selected commentaries or
-glosses, represented by the equal-level **Textual family** selector. The twelve
-routes are al-Shifāʾ, al-Ishārāt, Hidāyat al-ḥikma, Ḥikmat al-ishrāq,
+glosses, represented by the equal-level **Textual family** selector. The eighteen
+routes include al-Shifāʾ, al-Ishārāt, Hidāyat al-ḥikma, Ḥikmat al-ishrāq,
 al-ʿAqāʾid al-Nasafiyya, al-Maqāṣid, al-Mawāqif, Tajrīd al-iʿtiqād,
 Tahdhīb al-manṭiq wa-l-kalām, Jawharat al-tawḥīd, Fuṣūṣ al-ḥikam and
-al-Asfār. The full member list, root, and description of each are in
+al-Asfār; and six source-critical families for Plato’s <em>Timaeus</em>, Aristotle’s <em>Metaphysics</em>, <em>Categories</em> and <em>Physics</em>, Arabic Plotinus, and Proclus’ <em>Elements of Theology</em> / the <em>Book of Causes</em>. The full member list, root, and description of each are in
 `downloads/intellectual-atlas-data.json` under `textual_families`.
 The same text may participate in several families; the menu only traces works
 recorded in this *selective* atlas. Textual-family membership does not
 establish doctrinal agreement.
+
+**New Greek–Syriac–Arabic bridge:** the Athenian school (Syrianus, Proclus,
+Damascius), Alexandrian Aristotelian/Platonic commentaries (Ammonius,
+Philoponus, Olympiodorus, Simplicius and others), selected Syriac witnesses,
+Arabic Plotinus, the Arabic Proclus and Book of Pure Good, and their different
+Arabic and Latin receptions. The 44 new work or witness entries, 36 qualified
+relations, six new textual-family routes and five scholarly-network bands do
+not imply one uninterrupted master-to-pupil genealogy. An Arabic Proclus
+Timaeus fragment is deliberately undated. Read `neoplatonism/index.html`.
 
 **Historical and regional networks:** a third, independent filter for places and
 regional scholarly contexts, including Baghdad/Iraq, Khurasan, Transoxiana,
@@ -61,6 +70,17 @@ analytical nodes are not separate authored books. Its 26 new entries and 26
 relationships form an important textual commentary network, not a new
 intellectual school. Read `tahdhib/index.html` for source and dating cautions.
 
+## Current revision 7 downloadable editions
+
+- `downloads/Intellectual_Atlas_Reference_Revision7.pdf`: full source-critical
+  bibliography and relationship register, built from canonical JSON using
+  `build_release.py` (metadata and evidence, not complete third-party books).
+- `downloads/Gnamma_Intellectual_Atlas_Offline_Revision7.zip`: portable atlas,
+  data, dossiers, and current PDF. Generated in release CI and committed with
+  checksums; legacy PDFs are not included inside this new archive.
+- `neoplatonism/index.html`: scholarly Neoplatonic transmission dossier
+  organized by five historical scholarly networks and six new textual routes.
+
 ## Files and versions
 
 - `index.html`: interactive atlas with embedded canonical research data.
@@ -72,10 +92,10 @@ intellectual school. Read `tahdhib/index.html` for source and dating cautions.
 - `tahdhib-additions.json`: Tahdhīb additions and editorial cautions.
 - `downloads/Islamic_Timeline_Website_Package.zip`: **earlier-version** offline viewer,
   canonical data of its own revision and the Tahdhīb dossier. It does **not**
-  contain the revision-6 routes, 10 ancient bridge entries or scrolling fixes.
+  contain the revision-7 routes, 10 ancient bridge entries or scrolling fixes.
 - `downloads/Intellectual_Atlas_Reference_Revision4.pdf`: 84-page
   earlier revision-4 reference catalogue and evidence register of the
-  **321-item** corpus, including Tahdhīb; not a complete revision-6 register.
+  **321-item** corpus, including Tahdhīb; not a complete revision-7 register.
 - `downloads/Tahdhib_Genealogy_Addendum.pdf`: 9-page focused supplement.
 - `downloads/Islamic_Intellectual_Timeline.pdf` and
   `downloads/Islamic_Timeline_Overview.pdf`: earlier illustrated maps
@@ -83,13 +103,13 @@ intellectual school. Read `tahdhib/index.html` for source and dating cautions.
 - `build.py`: validates and synchronizes the embedded data and manifest.
   It **must not** replace the current site with the older illustrated/ZIP version.
 
-All dates, manuscript witnesses and source qualifications are retained.
+All recorded dates, manuscript witnesses and source qualifications are retained.
 A reported source is not a collated borrowing; a gloss need not endorse its
 base work; a death or print date is not automatically composition. Political
 coexistence is not intellectual influence. The catalogue is selective and
 revisable. No complete third-party books or manuscript scans are redistributed.
 
-## Revision 6 checks
+## Revision 7 checks
 
 Run `python research/intellectual-atlas/build.py` to validate the canonical
 JSON, synchronize the HTML embed, and generate the current publication metadata.
@@ -97,8 +117,22 @@ Run `node --check research/intellectual-atlas/atlas-app.js` for syntax checking.
 The test plan in `tests/README.md` covers scrolling, regional and textual
 family navigation, mobile layout, date uncertainty and the Mughal interval.
 
-The summary drawers report only recorded members; the Sunni kalām primary
-colour still combines Ashʿarī, Māturīdī and other Sunni contributions until
-source-based subtradition memberships are separately audited. Selecting a
+The summary drawers report only recorded members; the broad Sunni kalām category
+is retained, but selective, source-audited Ashʿarī and Māturīdī secondary
+overlays now distinguish authorial affiliation from another school’s base text. Selecting a
 textual family **preserves** existing independent regional, tradition and
 relationship filters; use **Whole atlas** to reset them all.
+
+## Release reproducibility
+
+`python research/intellectual-atlas/build_release.py` rebuilds the reference
+PDF and offline ZIP reproducibly from the canonical JSON plus site files.
+The release workflow validates the PDF page count, Unicode text, archive
+integrity, JSON counts and viewer assets, then commits only the generated
+binaries and publication manifest on the default branch. The revised
+browser QA checks Greek–Syriac–Arabic network bands as an independent layer.
+
+**Editorial boundary:** 375 indexed records do not mean 375 verified manuscript
+collations; several newly added temporal windows are deliberately approximate.
+“Translated”, “paraphrased”, “commented on”, “criticized”, and “reported to be
+influenced by” remain different evidence types.
