@@ -40,6 +40,10 @@ jobs:
           name: atlas-exact-source-for-ui-audit
           path: /tmp/atlas-audit-source-bundle.zip
           retention-days: 7
+      - name: Verify audit Python and source syntax before browser installation
+        run: |
+          python -m py_compile research/intellectual-atlas/tests/verify_exhaustive_ui.py
+          node --check research/intellectual-atlas/atlas-app.js
       - name: Install cross-browser harness
         run: |
           python -m pip install -q playwright==1.58.0
