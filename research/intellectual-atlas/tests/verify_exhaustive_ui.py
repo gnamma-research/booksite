@@ -329,6 +329,9 @@ async def details_and_sources(page):
     ok((await state(page))["view"]=="timeline","center selected didn't restore timeline")
     # Source or related evidence opens its own details, and close dismisses.
     if await page.locator('[data-sheet] [data-source]').count():
+        section=page.locator('[data-sheet] details:has([data-source])').first
+        if await section.count() and not await section.evaluate("(el)=>el.open"):
+            await section.locator(":scope > summary").click()
         await page.locator('[data-sheet] [data-source]').first.click()
         ok((await state(page))["detail"]=="source","source citation button unresponsive")
     await page.locator('[data-sheet] [data-action="close-detail"]').click()
@@ -409,6 +412,7 @@ async def deep_link(page):
     ok(s2["family"]=="tajrid" and s2["view"]=="catalogue","share URL didn't restore family and view")
     await page.locator('[data-view="audit"]').click()
     await page.go_back(wait_until="domcontentloaded")
+    await page.wait_for_function("document.querySelector('#kalam-timeline-app-v3').atlasTest.state.view==='catalogue'")
     s3=await state(page)
     ok(s3["view"]=="catalogue","Back didn't restore previous view")
     await reset(page)
