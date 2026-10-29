@@ -66,6 +66,14 @@ async def visit(browser, width, height, mobile=False):
         assert_that(first_fold["bodyOverflow"]<=3,
                     "Unexpected mobile horizontal page overflow: "+str(first_fold))
         await page.screenshot(path=str(OUT/f"atlas_first_fold_{browser.browser_type.name}_{width}x{height}.png"),full_page=False)
+        assert_that(await page.locator('.ia-explorer-shortcuts > details').count()==3,
+                    "Tradition, text and regional maps remain directly accessible")
+        await page.locator('.gn-atlas-introduction > summary').click()
+        assert_that(await page.locator('.gn-atlas-introduction').evaluate('(e)=>e.open'),
+                    "Research introduction must reopen on demand")
+        assert_that(await page.locator('.gn-atlas-mobile-site-nav a').count()==2,
+                    "Research navigation remains reachable when masthead links are compacted")
+        await page.locator('.gn-atlas-introduction > summary').click()
         await page.locator('.ia-secondary-controls > summary').click()
         await page.locator('[data-chart]').scroll_into_view_if_needed()
     await page.locator('[data-chart]').hover(position={"x":30,"y":min(70,initial["chartHeight"]-10)},force=True)
