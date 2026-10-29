@@ -198,3 +198,14 @@ body #kalam-timeline-app-v3 .gn-atlas-introduction>summary:focus-visible{outline
   body #kalam-timeline-app-v3 .ia-timeline-help{margin-top:7px}
   body #kalam-timeline-app-v3 .ia-timeline-help>summary{padding:5px 1px}
 }
+
+/* A source-correct empty intersection is not a failed search.
+   Offer an explicit way to clear restrictive dimensions without changing time. */
+body #kalam-timeline-app-v3 .ia-filter-empty{
+  text-align:left;max-width:700px;margin:18px 0;padding:18px 20px;
+  border:1px solid var(--ia-line);border-radius:9px;
+  background:var(--ia-panel);color:var(--ia-fg)
+}
+body #kalam-timeline-app-v3 .ia-filter-empty h3{font-size:14px;margin:0 0 5px}
+body #kalam-timeline-app-v3 .ia-filter-empty p{font-size:12px;line-height:1.5;color:var(--ia-muted);margin:0 0 11px}
+body #kalam-timeline-app-v3 .ia-filter-empty button{font-size:12px;min-height:36px;color:var(--ia-link)}
