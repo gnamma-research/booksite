@@ -79,13 +79,28 @@
     function ticks(from,to,width){const step=stepSize(to-from,width),out=[];for(let y=Math.ceil(from/step)*step;y<=to;y+=step)if(y!==0)out.push(y);return out}
     function svgText(x,y,txt,cls='',attrs=''){return `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" class="${cls}" ${attrs}>${esc(txt)}</text>`}
     const historyMin=-600,historyMax=2026,historyLength=historyMax-historyMin;
+    let lastFocusedSpan=375; // Remember the user's last practical zoom, even while 'Whole atlas' is selected.
+    const allYearsInView=()=>state.to-state.from>=historyLength-.01;
+    function focusFromWhole(anchor,fraction=.5){
+      if(!allYearsInView())return false;
+      const span=Math.max(160,Math.min(700,lastFocusedSpan));
+      fraction=Math.max(0,Math.min(1,fraction));
+      changeRange(anchor-span*fraction,anchor+span*(1-fraction),true);
+      return true;
+    }
     const densitySamples=Array.from({length:56},()=>0);
     for(const n of D.nodes){const a=temporal(n).anchor;if(a!==null&&a>=historyMin&&a<=historyMax){const index=Math.min(densitySamples.length-1,Math.max(0,Math.floor((a-historyMin)/historyLength*densitySamples.length)));densitySamples[index]++}}
     const histogramMax=Math.max(1,...densitySamples);
     function drawNavigator(){const rail=q('[data-history-rail]');if(!rail)return;
+      const isWhole=allYearsInView();
+      if(!isWhole)lastFocusedSpan=state.to-state.from;
+      rail.dataset.fullRange=isWhole?'true':'false';
       rail.setAttribute('aria-valuenow',String(Math.round((state.from+state.to)/2)));
-      rail.setAttribute('aria-valuetext',`${year(state.from)} to ${year(state.to)}. Drag the highlighted window to pan continuously.`);
-      rail.setAttribute('title',`${year(state.from)} – ${year(state.to)} · drag the grip to move the view`);
+      rail.setAttribute('aria-valuetext',isWhole?
+        `${year(historyMin)} to ${year(historyMax)}. All years in view; drag the six-dot handle to focus into a movable window.`:
+        `${year(state.from)} to ${year(state.to)}. Drag the highlighted window to pan continuously.`);
+      rail.setAttribute('title',isWhole?'All years visible: drag the six-dot handle to zoom into a movable window':
+        `${year(state.from)} – ${year(state.to)} · drag the grip to move the view`);
       if(!rail.querySelector('.ia-travel-window')){
         const ticks=[0,500,1000,1500,2000].map(y=>`<i style="left:${(y-historyMin)/historyLength*100}%" title="${y} CE"></i>`).join('');
         rail.innerHTML=`<div class="ia-travel-histogram" aria-hidden="true">${densitySamples.map(n=>`<i style="height:${Math.max(3,Math.round(100*Math.sqrt(n/histogramMax)))}%"></i>`).join('')}</div><div class="ia-travel-ticks" aria-hidden="true">${ticks}</div><div class="ia-travel-window" aria-hidden="true"><span class="ia-travel-grip"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><circle cx="9" cy="5" r="1.4"/><circle cx="15" cy="5" r="1.4"/><circle cx="9" cy="12" r="1.4"/><circle cx="15" cy="12" r="1.4"/><circle cx="9" cy="19" r="1.4"/><circle cx="15" cy="19" r="1.4"/></svg></span></div>`;
@@ -112,7 +127,7 @@
     function cardTitleLines(t,width){const words=String(t).split(/\s+/),lines=[''];for(const word of words){const i=lines.length-1,tryText=lines[i]?(lines[i]+' '+word):word;measure.font='600 13px '+getComputedStyle(root).fontFamily;if(measure.measureText(tryText).width<width)lines[i]=tryText;else if(lines.length<2)lines.push(word);else lines[i]+=' '+word}return [fit(lines[0],width,13,600),fit(lines[1]||'',width,13,600)]}
     function drawTimeline(){
       const main=q('[data-main]');
-      if(!q('[data-chart]'))main.innerHTML=`<div class="ia-main-head"><div><h2>Texts, empires and events</h2><span class="ia-small" data-range-caption></span></div><div class="ia-actions"><button type="button" data-action="pan-back" aria-label="Earlier period">← Earlier</button><button type="button" data-action="zoom-in" aria-label="Zoom into timeline">+ Zoom</button><button type="button" data-action="zoom-out" aria-label="Zoom out of timeline">− Zoom</button><button type="button" data-action="pan-forward" aria-label="Later period">Later →</button></div></div><p class="ia-travel-help">Drag the overview's <strong>six-dot handle</strong> to move continuously through history, or tap elsewhere on that bar to seek. Swipe/drag the diagram horizontally to pan; scroll vertically to read. Shift + wheel / horizontal trackpad pan; Ctrl/⌘ + wheel zooms. Keyboard: ← →, + −, Home, End.</p><div class="ia-nav-overview"><span>600 BCE</span><div class="ia-travel-track" data-history-rail tabindex="0" role="slider" aria-label="Move the visible time window; drag its six-dot handle or use the arrow keys" aria-valuemin="-600" aria-valuemax="2026" aria-valuenow="1300" aria-orientation="horizontal"></div><span>2026</span><span class="ia-zoom-tag" data-scale-caption></span></div><p class="ia-date-guide"><strong>Work labels are not time spans.</strong> The small mark linked to each title is the date evidence: <strong>■</strong> an attested year, <strong>◆</strong> approximate position, <strong>◀</strong> latest possible date, <strong>⋯</strong> an uncertain window or separate stages. A book's label width has no chronological meaning.</p><div class="ia-chart" data-chart tabindex="0" role="region" aria-label="Continuously pan or zoom the timeline; book labels are connected to independent date marks"></div><div class="ia-legend"><span><b>■</b> attested year (small square)</span><span><b>⋯</b> uncertain window, NOT a duration</span><span><b>◀</b> latest bound (not completion)</span><span><b>◇</b> approximate or contextual</span><span><b>□</b> edition / publication witness</span><span><b>│</b> historical event</span><span><b>┄</b> interrupted territorial rule</span><span><b>▤</b> scholarly network (not a state)</span><span><b>→</b> textual relationship</span></div><div class="ia-family-legend" data-visible-families></div><p class="ia-bound-warning">Event rules share the texts’ calendar axis. Bounds retain their uncertainty; chronological overlap does not establish influence or patronage.</p><div data-unplaced></div>`;
+      if(!q('[data-chart]'))main.innerHTML=`<div class="ia-main-head"><div><h2>Texts, empires and events</h2><span class="ia-small" data-range-caption></span></div><div class="ia-actions"><button type="button" data-action="pan-back" aria-label="Earlier period">← Earlier</button><button type="button" data-action="zoom-in" aria-label="Zoom into timeline">+ Zoom</button><button type="button" data-action="zoom-out" aria-label="Zoom out of timeline">− Zoom</button><button type="button" data-action="pan-forward" aria-label="Later period">Later →</button></div></div><p class="ia-travel-help">Drag the overview's <strong>six-dot handle</strong> to move continuously through history. When <strong>Whole atlas</strong> shows every year, dragging it first restores a movable zoomed window; tap elsewhere on the bar to jump to an era. Swipe/drag the diagram horizontally to pan; scroll vertically to read. Shift + wheel / horizontal trackpad pan; Ctrl/⌘ + wheel zooms. Keyboard: ← →, + −, Home, End.</p><div class="ia-nav-overview"><span>600 BCE</span><div class="ia-travel-track" data-history-rail tabindex="0" role="slider" aria-label="Move the visible time window; drag its six-dot handle or use the arrow keys" aria-valuemin="-600" aria-valuemax="2026" aria-valuenow="1300" aria-orientation="horizontal"></div><span>2026</span><span class="ia-zoom-tag" data-scale-caption></span></div><p class="ia-date-guide"><strong>Work labels are not time spans.</strong> The small mark linked to each title is the date evidence: <strong>■</strong> an attested year, <strong>◆</strong> approximate position, <strong>◀</strong> latest possible date, <strong>⋯</strong> an uncertain window or separate stages. A book's label width has no chronological meaning.</p><div class="ia-chart" data-chart tabindex="0" role="region" aria-label="Continuously pan or zoom the timeline; book labels are connected to independent date marks"></div><div class="ia-legend"><span><b>■</b> attested year (small square)</span><span><b>⋯</b> uncertain window, NOT a duration</span><span><b>◀</b> latest bound (not completion)</span><span><b>◇</b> approximate or contextual</span><span><b>□</b> edition / publication witness</span><span><b>│</b> historical event</span><span><b>┄</b> interrupted territorial rule</span><span><b>▤</b> scholarly network (not a state)</span><span><b>→</b> textual relationship</span></div><div class="ia-family-legend" data-visible-families></div><p class="ia-bound-warning">Event rules share the texts’ calendar axis. Bounds retain their uncertainty; chronological overlap does not establish influence or patronage.</p><div data-unplaced></div>`;
       q('[data-range-caption]').textContent=`${year(state.from)} – ${year(state.to)} · ${D.nodes.length} entries in the complete atlas`;q('[data-scale-caption]').textContent=`${Math.round(state.to-state.from)} years in view`;drawNavigator();
       const chart=q('[data-chart]'),W=Math.max(280,Math.floor(chart.clientWidth||chart.getBoundingClientRect().width||900)),L=W<500?12:18,R=W<500?12:20,plotW=W-L-R;
       const x=value=>L+(value-state.from)/(state.to-state.from)*plotW,clamp=v=>Math.max(L,Math.min(W-R,v));
@@ -245,7 +260,15 @@
       q('[data-range-error]').textContent='';state.from=from;state.to=to;state.page=1;
       if(replaceHistory&&state.view==='timeline'&&q('[data-chart]')){sync();drawTimeline();setHash(true)}else{render();setHash()}
     }
-    function shiftRange(delta,fast=false){changeRange(state.from+delta,state.to+delta,fast)}
+    function shiftRange(delta,fast=false){
+      if(allYearsInView()&&delta){
+        focusFromWhole((historyMin+historyMax)/2);
+        const span=state.to-state.from;
+        changeRange(state.from+Math.sign(delta)*span*.18,state.to+Math.sign(delta)*span*.18,fast);
+        return;
+      }
+      changeRange(state.from+delta,state.to+delta,fast)
+    }
     function zoomAt(factor,fraction=.5,fast=false){fraction=Math.max(0,Math.min(1,fraction));const old=state.to-state.from,span=Math.min(historyLength,Math.max(20,old*factor)),anchor=state.from+old*fraction;changeRange(anchor-span*fraction,anchor+span*(1-fraction),fast)}
     function centerYear(y){const span=state.to-state.from;changeRange(y-span/2,y+span/2)}
     function chooseTextFamily(key){
@@ -331,11 +354,21 @@
       if(rail){
         const rect=rail.getBoundingClientRect(),thumb=rail.querySelector('.ia-travel-window');
         const t=thumb?.getBoundingClientRect();
-        const hit=!!t&&event.clientX>=t.left-16&&event.clientX<=t.right+16;
+        const full=allYearsInView();
+        const handle=rail.querySelector('.ia-travel-grip')?.getBoundingClientRect();
+        const nearHandle=!!handle&&event.clientX>=handle.left-16&&event.clientX<=handle.right+16;
+        const insideWindow=!!t&&event.clientX>=t.left-16&&event.clientX<=t.right+16;
+        // At 100% zoom the highlighted thumb fills the entire rail. Distinguish
+        // the six-dot grip (drag to restore focus) from the rest (tap to seek).
+        if(full&&!nearHandle){
+          const anchor=historyMin+(event.clientX-rect.left)/rect.width*historyLength;
+          focusFromWhole(anchor);
+        }
+        const mode=full?(nearHandle?'whole-grip':'seek'):(insideWindow?'move':'seek');
         miniDrag={pointer:event.pointerId,rail,rect,x:event.clientX,from:state.from,span:state.to-state.from,
-          mode:hit?'move':'seek',moved:false};
+          mode,moved:full&&!nearHandle};
         rail.setPointerCapture(event.pointerId);
-        if(!hit){miniDrag.moved=true;schedulePan(historyMin+(event.clientX-rect.left)/rect.width*historyLength-miniDrag.span/2)}
+        if(mode==='seek')schedulePan(historyMin+(event.clientX-rect.left)/rect.width*historyLength-miniDrag.span/2);
         return;
       }
       const chart=event.target.closest('[data-chart]');if(!chart||state.view!=='timeline')return;
@@ -345,6 +378,13 @@
     root.addEventListener('pointermove',event=>{
       if(miniDrag&&event.pointerId===miniDrag.pointer){
         const g=miniDrag,dx=event.clientX-g.x;
+        if(g.mode==='whole-grip'){
+          if(Math.abs(dx)<=4)return; // Just tapping the grip preserves Whole atlas.
+          const yearAtGrip=historyMin+(g.x-g.rect.left)/g.rect.width*historyLength;
+          focusFromWhole(yearAtGrip);
+          g.from=state.from;g.span=state.to-state.from;g.mode='move';g.moved=true;
+          g.rail.classList.add('ia-dragging');
+        }
         if(Math.abs(dx)>2)g.moved=true;
         const value=g.mode==='move'?g.from+dx/g.rect.width*historyLength:
           historyMin+(event.clientX-g.rect.left)/g.rect.width*historyLength-g.span/2;
@@ -360,12 +400,19 @@
       }
       if(g.moved){
         if(event.cancelable)event.preventDefault();
+        if(g.span>=historyLength-.01){
+          const rect=g.chart.getBoundingClientRect();
+          const fraction=Math.max(0,Math.min(1,(g.x-rect.left)/rect.width));
+          focusFromWhole(historyMin+fraction*historyLength,fraction);
+          g.from=state.from;g.span=state.to-state.from;
+        }
         schedulePan(g.from-dx/Math.max(220,lastWidth-38)*g.span);
       }
     });
     root.addEventListener('pointerup',event=>{
       if(miniDrag&&event.pointerId===miniDrag.pointer){
         const g=miniDrag;miniDrag=null;
+        if(g.mode==='whole-grip'&&!g.moved){finishGesture(g.rail,false);return}
         if(g.moved){const dx=event.clientX-g.x;const value=g.mode==='move'?g.from+dx/g.rect.width*historyLength:
           historyMin+(event.clientX-g.rect.left)/g.rect.width*historyLength-g.span/2;schedulePan(value)}
         finishGesture(g.rail,g.moved);return;
@@ -386,6 +433,9 @@
       event.preventDefault();
       const rect=chart.getBoundingClientRect(),fraction=Math.max(0,Math.min(1,(event.clientX-rect.left)/rect.width));
       if(event.ctrlKey||event.metaKey||event.altKey){zoomAt(Math.exp(Math.max(-2,Math.min(2,event.deltaY/180))*.23),fraction,true);return}
+      // A full-range horizontal wheel gesture cannot pan until a narrower
+      // focus window exists; reuse the most recent browsing zoom.
+      if(allYearsInView())focusFromWhole(historyMin+fraction*historyLength,fraction);
       const units=event.deltaMode===1?16:event.deltaMode===2?rect.width:1;
       wheelPixels+=(event.shiftKey?(Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY):event.deltaX)*units;
       if(!wheelFrame)wheelFrame=requestAnimationFrame(()=>{
