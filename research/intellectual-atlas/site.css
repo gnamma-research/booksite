@@ -25,3 +25,48 @@ body #kalam-timeline-app-v3 .gn-atlas-downloads span{display:block;font-size:12p
 body #kalam-timeline-app-v3 .gn-atlas-source-note{margin-top:15px!important;color:var(--ia-muted)}
 @media(max-width:700px){.gn-atlas-masthead{padding:12px 15px;align-items:flex-start;gap:14px}.gn-atlas-masthead nav{gap:7px;font-size:12px;max-width:175px}.gn-atlas-wordmark{font-size:24px}.gn-atlas-wordmark img{width:32px;height:32px}body #kalam-timeline-app-v3 .ia-head{padding-right:15px}body #kalam-timeline-app-v3 .ia-nav{margin-right:0}body #kalam-timeline-app-v3 .gn-atlas-introduction{padding:12px 15px}body #kalam-timeline-app-v3 .gn-atlas-deck span{display:block;margin-top:3px}body #kalam-timeline-app-v3 .gn-atlas-note-body{grid-template-columns:1fr;gap:15px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* atlas-vertical-scroll-v6: long SVG and detailed evidence panels scroll independently.
+   Higher specificity than the embedded legacy CSS without changing the source dataset. */
+body #kalam-timeline-app-v3 .ia-chart{
+  max-height:min(73dvh,820px);
+  min-height:270px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  overscroll-behavior:auto;
+  scrollbar-gutter:stable;
+  scrollbar-width:thin;
+  touch-action:pan-y;
+}
+body #kalam-timeline-app-v3 .ia-chart svg{touch-action:pan-y}
+@media(min-width:900px){
+  body #kalam-timeline-app-v3 .ia-layout.ia-has-detail .ia-sheet{
+    max-height:calc(100dvh - 16px);
+    overflow-y:auto;
+    overscroll-behavior-y:auto;
+    scrollbar-gutter:stable;
+    scrollbar-width:thin;
+  }
+}
+@media(max-width:700px){
+  body #kalam-timeline-app-v3 .ia-chart{max-height:min(70dvh,660px);min-height:220px}
+}
+body #kalam-timeline-app-v3 .ia-region-network-control{flex:1 1 200px;min-width:0}
+body #kalam-timeline-app-v3 .ia-region-network-control select{min-width:0;max-width:100%;width:100%}
+body #kalam-timeline-app-v3 .ia-route-explorer{padding:10px 25px 13px;border-bottom:1px solid var(--ia-line);background:var(--ia-panel)}
+body #kalam-timeline-app-v3 .ia-route-explorer summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--ia-link);width:fit-content}
+body #kalam-timeline-app-v3 .ia-route-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:13px;margin:14px 0 10px}
+body #kalam-timeline-app-v3 .ia-route-groups section{min-width:0}
+body #kalam-timeline-app-v3 .ia-route-groups h3{font-size:12px;margin-bottom:8px}
+body #kalam-timeline-app-v3 .ia-route-groups button{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:4px;width:100%;margin-bottom:6px;padding:9px 12px;border:1px solid var(--ia-line);background:var(--ia-bg);border-radius:7px}
+body #kalam-timeline-app-v3 .ia-route-groups button small{font-size:11px;color:var(--ia-muted)}
+body #kalam-timeline-app-v3 .ia-route-groups button:hover,body #kalam-timeline-app-v3 .ia-work-routes button:hover{border-color:var(--ia-link);background:var(--ia-soft)}
+body #kalam-timeline-app-v3 .ia-route-groups button:focus-visible,body #kalam-timeline-app-v3 .ia-work-routes button:focus-visible{outline:2px solid var(--ia-link);outline-offset:2px}
+body #kalam-timeline-app-v3 .ia-work-routes{margin:12px 0;padding:10px 0;border-block:1px solid var(--ia-line)}
+body #kalam-timeline-app-v3 .ia-work-routes h3{margin-bottom:7px;font-size:13px}
+body #kalam-timeline-app-v3 .ia-work-routes button{font-size:12px;padding:6px 10px;margin:3px 5px 3px 0;min-height:32px;text-align:left}
+body #kalam-timeline-app-v3 .ia-chart .ia-polity-gap{fill:none;stroke:var(--ia-muted);stroke-dasharray:3 2;stroke-width:1.2;opacity:.85}
+@media(max-width:700px){
+  body #kalam-timeline-app-v3 .ia-route-explorer{padding:10px 15px}
+  body #kalam-timeline-app-v3 .ia-region-network-control{flex:1 1 100%}
+}
