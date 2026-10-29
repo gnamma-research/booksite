@@ -50,7 +50,32 @@ async def visit(browser, width, height, mobile=False):
     assert_that(initial["chartScroll"]>initial["chartHeight"]+100,"Chart needs independent vertical scroll")
     assert_that(initial["overflow"] in ["auto","scroll"],"Chart vertical overflow must be scrollable")
     assert_that(initial["chartHeight"]<=height+3,"Chart has bounded height")
-    await page.locator('[data-chart]').scroll_into_view_if_needed()
+    # First-fold mobile acceptance before the user opens any advanced options.
+    if mobile:
+        first_fold=await page.evaluate("""() => ({
+          chartTop:document.querySelector('[data-chart]').getBoundingClientRect().top+window.scrollY,
+          introOpen:document.querySelector('.gn-atlas-introduction').open,
+          extraOpen:document.querySelector('.ia-secondary-controls').open,
+          bodyOverflow:document.documentElement.scrollWidth-document.documentElement.clientWidth,
+          compactNav:getComputedStyle(document.querySelector('.ia-nav')).overflowX
+        })""")
+        assert_that(not first_fold["introOpen"] and not first_fold["extraOpen"],
+                    "Mobile introduction and advanced options must start closed: "+str(first_fold))
+        assert_that(first_fold["chartTop"]< (680 if height>=600 else 600),
+                    "Mobile page has too much pre-chart material: "+str(first_fold))
+        assert_that(first_fold["bodyOverflow"]<=3,
+                    "Unexpected mobile horizontal page overflow: "+str(first_fold))
+        await page.screenshot(path=str(OUT/f"atlas_first_fold_{browser.browser_type.name}_{width}x{height}.png"),full_page=False)
+        assert_that(await page.locator('.ia-explorer-shortcuts > details').count()==3,
+                    "Tradition, text and regional maps remain directly accessible")
+        await page.locator('.gn-atlas-introduction > summary').click()
+        assert_that(await page.locator('.gn-atlas-introduction').evaluate('(e)=>e.open'),
+                    "Research introduction must reopen on demand")
+        assert_that(await page.locator('.gn-atlas-mobile-site-nav a').count()==2,
+                    "Research navigation remains reachable when masthead links are compacted")
+        await page.locator('.gn-atlas-introduction > summary').click()
+        await page.locator('.ia-secondary-controls > summary').click()
+        await page.locator('[data-chart]').scroll_into_view_if_needed()
     await page.locator('[data-chart]').hover(position={"x":30,"y":min(70,initial["chartHeight"]-10)},force=True)
     if mobile and browser.browser_type.name=='webkit':
         # Mobile WebKit deliberately rejects mouse.wheel in Playwright. Check the
@@ -148,7 +173,11 @@ async def visit(browser, width, height, mobile=False):
     await page.locator('[data-text-family]').select_option('')
     # New Greek–Syriac–Arabic transmission routes and source-qualified overlays.
     await page.locator('[data-action="whole-atlas"]').click()
+    if mobile:
+        await page.locator('.gn-atlas-introduction > summary').click()
     await page.locator('.gn-atlas-neoplatonic-journey [data-text-route="plotinus_transmission"]').click()
+    if mobile:
+        await page.locator('.gn-atlas-introduction > summary').click()
     np_route=await read(page)
     assert_that(np_route["family"]=="plotinus_transmission","Arabic Plotinus route is navigable")
     await page.locator('[data-action="whole-atlas"]').click()
