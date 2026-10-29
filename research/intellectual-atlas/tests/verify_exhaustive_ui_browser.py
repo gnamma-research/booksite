@@ -272,13 +272,31 @@ async def run_audit(page,full=True):
         await page.locator(f'[data-control="{key}"]').check()
         check((await snap(page))[key] is True,f"{key} checkbox didn't restore")
         cases+=2
-    for key in ["contexts","qualified","focusOnly"]:
+    for key in ["contexts","qualified"]:
         cb=page.locator(f'[data-control="{key}"]')
         old=await cb.is_checked()
         await cb.set_checked(not old)
         check((await snap(page))[key]==(not old),f"Toggle {key} has no effect")
         await cb.set_checked(old)
         cases+=2
+    # Focus Only requires an actual selected work; clicking it on an empty
+    # selection previously looked functional but made no visual difference.
+    focus=page.locator('[data-control="focusOnly"]')
+    check(await focus.is_disabled(),"Neighborhood scope should require a selected text")
+    await page.evaluate("""() => document.querySelector('#kalam-timeline-app-v3')
+        .atlasTest.selectNode('jurjani_mawaqif',true)""")
+    await ensure_open(page,".ia-secondary-controls")
+    await ensure_open(page,".ia-filters")
+    check(await focus.is_enabled(),"Selecting a work should enable neighborhood scope")
+    whole_count=len((await snap(page))["filtered"])
+    await focus.check()
+    selected=(await snap(page))
+    check(selected["focusOnly"] is True and len(selected["filtered"])<whole_count,
+          "Neighborhood focus did not actually narrow the visible text network")
+    await focus.uncheck()
+    await reset(page)
+    await ensure_open(page,".ia-filters")
+    cases+=4
     for val in ["1","2","3","4"]:
         await page.locator('[data-control="depth"]').select_option(val)
         check((await snap(page))["depth"]==int(val),f"Depth {val} ignored")
