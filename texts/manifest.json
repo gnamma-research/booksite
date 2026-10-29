@@ -108,7 +108,7 @@
       "note": "Two edition research previews. Each now includes the recovered separate 25-case alternative-uṣūl casebook (12 full dossiers, 13 supplemental reviews, 115 source records); Edition II includes separate formation hypotheses. The canonical Revision16 primary text and 310/279 research registers remain unavailable and unimported."
     },
     {
-      "id": "tusi-tajrid",
+      "id": "al-tusi-tajrid",
       "title": "Tajrīd al-iʿtiqād",
       "arabic": "تجريد الاعتقاد",
       "author": "Naṣīr al-Dīn al-Ṭūsī",
@@ -117,7 +117,7 @@
       "area": [
         "kalām",
         "metaphysics",
-        "philosophical theology"
+        "philosophy"
       ],
       "status": "working-bilingual-reader",
       "language": [
@@ -125,7 +125,7 @@
         "en"
       ],
       "url": "texts/al-tusi/tajrid-al-itiqad/",
-      "note": "837 aligned reference units (split preface); 182 expanded and 149 shorter editorial notes; full working translation, not a definitive manuscript collation."
+      "note": "837 aligned reading references; 182 extended annotated notes and 149 shorter notes; working translation, not a definitive manuscript collation."
     }
   ],
   "research": [
@@ -191,15 +191,14 @@
       "id": "tajrid-comparative",
       "title": "The Tajrīd Debates · Comparative Sourcebook",
       "area": [
-        "metaphysics",
         "kalām",
-        "logic",
-        "Akbarī thought",
-        "Illuminationism"
+        "Islamic philosophy",
+        "mysticism",
+        "causality"
       ],
-      "status": "working-quoted-sourcebook",
+      "status": "working-scholarly-sourcebook",
       "url": "research/tajrid-comparative/",
-      "note": "18 disputed research questions; 57 attributed Arabic/English extracts across primary commentary and parallel traditions; incomplete per-author coverage and remaining collations explicitly flagged."
+      "note": "18 research questions, 57 attributed extracts (40 inherited and 17 new); several primary commentary traditions await complete collation and translation."
     }
   ],
   "navigation": {
@@ -221,7 +220,7 @@
         "name": "Kalām",
         "ids": [
           "jurjani-mawaqif",
-          "tusi-tajrid"
+          "al-tusi-tajrid"
         ]
       }
     ],
