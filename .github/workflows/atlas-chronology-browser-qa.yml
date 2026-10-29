@@ -1,0 +1,72 @@
+name: Gnamma Intellectual Atlas — chronology and browser QA
+
+on:
+  push:
+    branches:
+      - atlas-three-layers-scroll-chronology-2026-10-29
+    paths:
+      - "research/intellectual-atlas/**"
+      - ".github/workflows/atlas-chronology-browser-qa.yml"
+  pull_request:
+    branches: [master]
+    paths:
+      - "research/intellectual-atlas/**"
+      - ".github/workflows/atlas-chronology-browser-qa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  atlas-source-and-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: JavaScript syntax and canonical data
+        run: |
+          node --check research/intellectual-atlas/atlas-app.js
+          python research/intellectual-atlas/build.py
+          python - <<'PY'
+          import json,re
+          from pathlib import Path
+          p=Path("research/intellectual-atlas")
+          d=json.loads((p/"downloads/intellectual-atlas-data.json").read_text())
+          s=(p/"index.html").read_text()
+          h=json.loads(re.search(r'<script type="application/json" data-atlas>(.*?)</script>',s,re.S).group(1))
+          assert h==d
+          assert len(d["nodes"])==331 and len(d["edges"])==312
+          assert len(d["sources"])==317 and len(d["history"]["sources"])==72
+          assert len(d["history"]["periods"])==49 and len(d["textual_families"])==12
+          print("Canonical data, embedded HTML and chronology parity verified")
+          PY
+      - name: Install Chromium and Playwright
+        run: |
+          python -m pip install -q playwright==1.58.0
+          python -m playwright install --with-deps chromium
+      - name: Browser QA at four viewports
+        shell: bash
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/gnamma-atlas-server.log 2>&1 &
+          server=$!
+          trap 'kill $server || true' EXIT
+          for i in {1..60}; do
+            if curl --silent --fail http://127.0.0.1:8123/research/intellectual-atlas/ > /dev/null; then break; fi
+            sleep .25
+          done
+          python research/intellectual-atlas/tests/verify_atlas_browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: intellectual-atlas-viewport-qa
+          path: |
+            /tmp/gnamma-atlas-browser/*.png
+            /tmp/gnamma-atlas-browser/report.json
+            /tmp/gnamma-atlas-server.log
+          if-no-files-found: ignore
