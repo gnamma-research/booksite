@@ -5,7 +5,7 @@ Gnamma Research · revision 6 · 29 October 2026.
 · [Tahdhīb source dossier](https://gnamma-research.github.io/booksite/research/intellectual-atlas/tahdhib/)
 
 The atlas contains **331 scholarly/context records**, **312 individually qualified textual
-relationships** and **317 source records**, plus 69 historical references. Its integrated chronology interleaves
+relationships** and **317 source records**, plus 72 historical references. Its integrated chronology interleaves
 empire periods, events and the dated textual network without individual ruler lanes.
 
 ## Three overlapping classifications — do not conflate them
