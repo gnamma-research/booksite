@@ -19,12 +19,13 @@ texts:[
  {name:"al-Ḍarūrī fī Uṣūl al-Fiqh",href:"daruri/"}
  ]},
  {heading:"Tafsīr",items:[{name:"al-Baḥr al-Madīd",href:"texts/ibn-ajiba/al-bahr-al-madid/"}]},
- {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"}]}
+ {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"},{name:"Tajrīd al-iʿtiqād",href:"texts/al-tusi/tajrid-al-itiqad/"}]}
 ],
 essays:[],
 research:[{items:[
  {name:"Bidāyat al-Mujtahid · Edition I: Law and Legal Reasoning",href:"research/bidaya/law/"},
- {name:"Texts in Time · Islamic Intellectual Atlas",href:"research/intellectual-atlas/"}
+ {name:"Texts in Time · Islamic Intellectual Atlas",href:"research/intellectual-atlas/"},
+ {name:"The Tajrīd Debates · Comparative Sourcebook",href:"research/tajrid-comparative/"}
 ]}],
 about:[{items:[
  {name:"Purpose & approach",href:"about/purpose/"},
