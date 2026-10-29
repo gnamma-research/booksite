@@ -20,7 +20,7 @@ historical or doctrinal influence. The canonical dataset is
 
 ## Browser checks
 
-CI runs the Chromium test `verify_atlas_browser.py` in four viewport sizes:
+CI runs Chromium and WebKit browser tests `verify_atlas_browser.py` in four Chromium viewport sizes and two additional WebKit sizes:
 1440 × 900, 1024 × 768, 390 × 844 (portrait) and 844 × 390 (landscape).
 It checks that an oversized timeline vertically scrolls inside the diagram,
 that ordinary vertical wheel motion does not unexpectedly pan time,
@@ -47,3 +47,10 @@ VoiceOver, TalkBack, iPhone Safari and trackpad gesture review.
 - [ ] Open direct links with `#view=timeline&text_family=tajrid&region=...`.
 - [ ] Inspect fonts, contrast and focus indicator in light and dark appearances.
 - [ ] Reconcile generated downloadable PDF/ZIP before calling them revision 6.
+
+## Safari-compatible engine verification
+
+WebKit automation is added to exercise the same independent scrolling and
+layer-navigation logic on desktop and iPhone-sized viewports. This does not
+prove physical iOS Safari touch momentum behavior, which remains an explicit
+manual-device acceptance test.
