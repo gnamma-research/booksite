@@ -105,7 +105,7 @@ async def visit(browser, width, height, mobile=False):
     await page.locator('.ia-region-explorer [data-region-route="khurasan"]').click()
     assert_that((await read(page))['region']=='khurasan',"Regional summary buttons apply context filters")
     await page.locator('[data-action="whole-atlas"]').click()
-        await page.locator('.ia-route-explorer summary').click()
+        await page.locator('.ia-route-explorer:has([data-text-route]) > summary').click()
     assert_that(await page.locator('.ia-route-explorer [data-text-route]').count()==12,
                 "12 peer-level commentary family buttons available")
     await page.locator('.ia-route-explorer [data-text-route="tajrid"]').click()
