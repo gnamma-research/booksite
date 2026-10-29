@@ -361,7 +361,15 @@ async def run_audit(page,full=True):
     await page.locator('[data-sheet] button[data-work]').first.click()
     check((await snap(page))["detailType"]=="work","Author-to-work navigation failed")
     await page.locator('[data-action="copy-link"]').click()
-    check("work=" in (await snap(page))["hash"],"Copy-link did not preserve deep link")
+    copy_state=await snap(page)
+    if "work=" not in copy_state["hash"]:
+        # Native hash fallback in throttled WebKit can trigger an asynchronous
+        # hashchange event rather than an immediate History API write.
+        await page.wait_for_timeout(160)
+        copy_state=await snap(page)
+    check("work=" in copy_state["hash"],
+          "Copy-link did not preserve deep link: "+str({k:copy_state[k] for k in
+            ["selected","detailType","detailId","hash","view"]}))
     await page.locator('[data-action="center-selected"]').click()
     s=await snap(page)
     check(s["view"]=="timeline" and s["from"]<s["to"],"Center selected work failed")
