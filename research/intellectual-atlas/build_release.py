@@ -233,7 +233,7 @@ their respective authors/publishers. No source books/manuscript scans included.
 with zipfile.ZipFile(ZIP,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=7,allowZip64=True) as z:
     for rel,src in files:
         if not src.exists(): raise FileNotFoundError(str(src))
-        z.write(src,arcname=rel if not rel.startswith('assets/') else rel)
+        z.write(src,arcname=root+rel if not rel.startswith('assets/') else rel)
     z.writestr('README-OFFLINE.txt',readme)
 with zipfile.ZipFile(ZIP) as z:
     assert z.testzip() is None
