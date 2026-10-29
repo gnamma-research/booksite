@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation coverage · The Tajrīd Debates · Gnamma</title>
+<link rel="icon" href="../../assets/gnamma-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../texts/al-tusi/tajrid-al-itiqad/reader.css">
+<link rel="stylesheet" href="research.css">
+<style>
+main{max-width:1240px;margin:0 auto;padding:38px 22px 80px}h1{font:500 clamp(30px,4vw,49px)/1.1 Georgia,serif}p{max-width:940px;line-height:1.65}
+.muted{color:var(--muted)}.keys{display:flex;flex-wrap:wrap;gap:10px;margin:15px 0 24px}
+.keys span{border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:12px}
+.matrix-wrap{max-width:100%;overflow:auto;border:1px solid var(--line);border-radius:10px}
+table{width:max-content;min-width:100%;border-collapse:collapse;font-size:12px}
+th,td{padding:10px 9px;min-width:64px;text-align:center;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+thead th{background:var(--surface);position:sticky;top:0;z-index:2;white-space:nowrap}
+tbody th{background:var(--surface);position:sticky;left:0;z-index:1;text-align:left;min-width:230px;max-width:290px;white-space:normal;font-weight:500}
+thead th:first-child{left:0;z-index:3}
+td a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+td.empty{color:var(--muted)}
+.coverage-note{max-width:1000px;padding:17px 0;color:var(--muted);font-size:13px}
+@media(max-width:600px){main{padding:26px 15px 60px}th,td{padding:9px 7px}tbody th{min-width:168px;max-width:195px}}
+</style></head>
+<body data-theme="paper"><header class="site-top">
+<a class="brand" href="../../">◌ <strong>gnamma</strong> <small>RESEARCH</small></a>
+<nav><a href="./">Back to sourcebook</a><a href="../../texts/al-tusi/tajrid-al-itiqad/">Tajrīd text</a></nav>
+</header><main>
+<p class="overline">EVIDENCE AUDIT · WORKING EDITION</p>
+<h1>Commentator coverage by research question</h1>
+<p>This matrix shows <strong>which passages are present in the current sourcebook</strong>. It is not a map of every historical author's views. A blank cell means <em>no extract has yet been incorporated</em>, not that an author was silent or agreed with another author.</p>
+<p class="muted" id="count">Loading quotation register…</p>
+<div class="keys">
+<span><strong>D</strong> · direct Tajrīd commentary or gloss</span>
+<span><strong>S</strong> · Ṭihrānī supercommentary</span>
+<span><strong>P</strong> · parallel primary philosophical text</span>
+<span><strong>X</strong> · cross-tradition comparative source</span>
+</div>
+<div class="matrix-wrap" role="region" aria-label="Quotation coverage by question and author" tabindex="0">
+<table id="matrix"><caption style="text-align:left;padding:12px">Verified sourcebook extracts grouped by question and named author</caption></table>
+</div>
+<p class="coverage-note">Codes give the number of excerpt records of each kind linked to a question. Click a nonempty cell to open the complete translated quotation and citation within that question. Some extracts appear in more than one question; the total number of unique sourcebook records is therefore smaller than the sum of cells. Speaker boundaries and exact edition loci remain subject to the editorial cautions in the <a href="EDITORIAL_STATUS.md">source status record</a>.</p>
+</main><script src="data/research-led.js"></script>
+<script>
+(()=>{"use strict";
+const d=window.RESEARCH_DATA;if(!d||!Array.isArray(d.chapters)||!Array.isArray(d.extracts))return;
+const cols=[
+["Ḥillī",a=>a==="al-Ḥillī"],
+["Iṣfahānī",a=>a==="al-Iṣfahānī"],
+["Jurjānī",a=>a.startsWith("al-Jurjānī")],
+["Qūshjī",a=>a==="al-Qūshjī"],
+["Lāhījī",a=>a==="al-Lāhījī"],
+["Ṭihrānī",a=>a==="al-Ṭihrānī"],
+["Taftāzānī",a=>a==="al-Taftāzānī"],
+["Shīrāzī",a=>a==="Quṭb al-Dīn al-Shīrāzī"],
+["Ṭūsī",a=>a==="al-Ṭūsī"],
+["Qūnawī",a=>a==="al-Qūnawī"],
+["Fanārī",a=>a==="al-Fanārī"],
+["Jāmī",a=>a==="Jāmī"],
+["Dawwānī",a=>a==="al-Dawwānī"],
+["Dashtakī",a=>a.includes("Dashtakī")],
+["Other",a=>!["al-Ḥillī","al-Iṣfahānī","al-Qūshjī","al-Lāhījī","al-Ṭihrānī","al-Taftāzānī","Quṭb al-Dīn al-Shīrāzī","al-Ṭūsī","al-Qūnawī","al-Fanārī","Jāmī","al-Dawwānī"].includes(a)&&!a.startsWith("al-Jurjānī")&&!a.includes("Dashtakī")]
+];
+const symbols={"Tajrīd sharḥ/ḥāshiya":"D","supercommentary":"S","parallel philosophical primary source":"P","cross-tradition source comparison":"X"};
+const extracts=new Map(d.extracts.map(x=>[x.id,x]));
+const table=document.getElementById("matrix"),head=document.createElement("thead"),hr=document.createElement("tr"),main=document.createElement("th");main.textContent="Research question";hr.appendChild(main);
+for(const [name]of cols){const th=document.createElement("th");th.scope="col";th.textContent=name;hr.appendChild(th)}head.appendChild(hr);table.appendChild(head);
+const body=document.createElement("tbody");
+for(const c of d.chapters){
+ const tr=document.createElement("tr"),th=document.createElement("th");th.scope="row";const a=document.createElement("a");a.href="index.html#q-"+c.id;a.textContent=c.id+" · "+c.title;th.appendChild(a);tr.appendChild(th);
+ const selected=c.extracts.map(id=>extracts.get(id)).filter(Boolean);
+ for(const [,match] of cols){const cell=document.createElement("td"),hits=selected.filter(x=>match(x.author));
+  if(hits.length){const counts=new Map();for(const x of hits){const code=symbols[x.source_kind]||"?";counts.set(code,(counts.get(code)||0)+1)}
+   const link=document.createElement("a");link.href="index.html#q-"+c.id;link.textContent=[...counts].map(([k,v])=>k+v).join(" · ");link.title=hits.map(x=>x.id+": "+x.author).join("; ");link.setAttribute("aria-label",hits.length+" available source excerpts; read question "+c.id);cell.appendChild(link);
+  }else{cell.textContent="—";cell.className="empty"}
+  tr.appendChild(cell);
+ }
+ body.appendChild(tr);
+}
+table.appendChild(body);
+document.getElementById("count").textContent=d.chapters.length+" research questions · "+d.extracts.length+" unique quotation records · "+cols.length+" author groups.";
+})();
+</script></body></html>
