@@ -173,7 +173,11 @@ async def visit(browser, width, height, mobile=False):
     await page.locator('[data-text-family]').select_option('')
     # New Greek–Syriac–Arabic transmission routes and source-qualified overlays.
     await page.locator('[data-action="whole-atlas"]').click()
+    if mobile:
+        await page.locator('.gn-atlas-introduction > summary').click()
     await page.locator('.gn-atlas-neoplatonic-journey [data-text-route="plotinus_transmission"]').click()
+    if mobile:
+        await page.locator('.gn-atlas-introduction > summary').click()
     np_route=await read(page)
     assert_that(np_route["family"]=="plotinus_transmission","Arabic Plotinus route is navigable")
     await page.locator('[data-action="whole-atlas"]').click()
