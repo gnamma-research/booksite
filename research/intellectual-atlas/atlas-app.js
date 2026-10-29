@@ -76,7 +76,7 @@
     function cardTitleLines(t,width){const words=String(t).split(/\s+/),lines=[''];for(const word of words){const i=lines.length-1,tryText=lines[i]?(lines[i]+' '+word):word;measure.font='600 13px '+getComputedStyle(root).fontFamily;if(measure.measureText(tryText).width<width)lines[i]=tryText;else if(lines.length<2)lines.push(word);else lines[i]+=' '+word}return [fit(lines[0],width,13,600),fit(lines[1]||'',width,13,600)]}
     function drawTimeline(){
       const main=q('[data-main]');
-      if(!q('[data-chart]'))main.innerHTML=`<div class="ia-main-head"><div><h2>Texts, empires and events</h2><span class="ia-small" data-range-caption></span></div><div class="ia-actions"><button type="button" data-action="pan-back" aria-label="Earlier period">← Earlier</button><button type="button" data-action="zoom-in" aria-label="Zoom into timeline">+ Zoom</button><button type="button" data-action="zoom-out" aria-label="Zoom out of timeline">− Zoom</button><button type="button" data-action="pan-forward" aria-label="Later period">Later →</button></div></div><p class="ia-travel-help">Drag or swipe inside the diagram to travel through time. Scroll over it to move horizontally; Ctrl/⌘ + scroll zooms around the pointer. Select a century group to open its texts. Keyboard: ← →, + −, Home, End.</p><div class="ia-nav-overview"><span>600 BCE</span><div class="ia-travel-track" data-history-rail tabindex="0" role="slider" aria-label="Navigate the whole historical timeline" aria-valuemin="-600" aria-valuemax="2026" aria-valuenow="1300" aria-orientation="horizontal"></div><span>2026</span><span class="ia-zoom-tag" data-scale-caption></span></div><div class="ia-chart" data-chart tabindex="0" role="region" aria-label="Pan and zoom through texts, empires and historical events"></div><div class="ia-legend"><span><b>●</b> dated point</span><span><b>━</b> stated range</span><span><b>◀</b> upper bound</span><span><b>◇</b> approximate / context</span><span><b>■</b> publication witness</span><span><b>│</b> historical event</span><span><b>→</b> textual relationship</span></div><div class="ia-family-legend" data-visible-families></div><p class="ia-bound-warning">Event rules share the texts’ calendar axis. Bounds retain their uncertainty; chronological overlap does not establish influence or patronage.</p><div data-unplaced></div>`;
+      if(!q('[data-chart]'))main.innerHTML=`<div class="ia-main-head"><div><h2>Texts, empires and events</h2><span class="ia-small" data-range-caption></span></div><div class="ia-actions"><button type="button" data-action="pan-back" aria-label="Earlier period">← Earlier</button><button type="button" data-action="zoom-in" aria-label="Zoom into timeline">+ Zoom</button><button type="button" data-action="zoom-out" aria-label="Zoom out of timeline">− Zoom</button><button type="button" data-action="pan-forward" aria-label="Later period">Later →</button></div></div><p class="ia-travel-help">Drag horizontally to travel through time. Scroll vertically to explore the diagram; Shift + wheel or horizontal trackpad gestures move through centuries. Ctrl/⌘ + wheel zooms. Select a century group to inspect its texts. Keyboard: ← →, + −, Home, End.</p><div class="ia-nav-overview"><span>600 BCE</span><div class="ia-travel-track" data-history-rail tabindex="0" role="slider" aria-label="Navigate the whole historical timeline" aria-valuemin="-600" aria-valuemax="2026" aria-valuenow="1300" aria-orientation="horizontal"></div><span>2026</span><span class="ia-zoom-tag" data-scale-caption></span></div><div class="ia-chart" data-chart tabindex="0" role="region" aria-label="Pan and zoom through texts, empires and historical events"></div><div class="ia-legend"><span><b>●</b> dated point</span><span><b>━</b> stated range</span><span><b>◀</b> upper bound</span><span><b>◇</b> approximate / context</span><span><b>■</b> publication witness</span><span><b>│</b> historical event</span><span><b>→</b> textual relationship</span></div><div class="ia-family-legend" data-visible-families></div><p class="ia-bound-warning">Event rules share the texts’ calendar axis. Bounds retain their uncertainty; chronological overlap does not establish influence or patronage.</p><div data-unplaced></div>`;
       q('[data-range-caption]').textContent=`${year(state.from)} – ${year(state.to)} · ${D.nodes.length} entries in the complete atlas`;q('[data-scale-caption]').textContent=`${Math.round(state.to-state.from)} years in view`;drawNavigator();
       const chart=q('[data-chart]'),W=Math.max(280,Math.floor(chart.getBoundingClientRect().width||900)),L=W<500?12:18,R=W<500?12:20,plotW=W-L-R;
       const x=value=>L+(value-state.from)/(state.to-state.from)*plotW,clamp=v=>Math.max(L,Math.min(W-R,v));
@@ -228,13 +228,15 @@
       const rail=event.target.closest('[data-history-rail]');
       if(rail){if(event.button!==0)return;const rect=rail.getBoundingClientRect();miniDrag={pointer:event.pointerId,rail,rect};rail.setPointerCapture(event.pointerId);return}
       const chart=event.target.closest('[data-chart]');if(!chart||event.button!==0)return;
-      drag={pointer:event.pointerId,chart,x:event.clientX,moved:false,span:state.to-state.from};
-      chart.setPointerCapture(event.pointerId);
+      drag={pointer:event.pointerId,chart,x:event.clientX,y:event.clientY,moved:false,span:state.to-state.from,touch:event.pointerType==='touch'};
+      if(event.pointerType!=='touch')chart.setPointerCapture(event.pointerId);
     });
     root.addEventListener('pointermove',event=>{
       if(miniDrag&&event.pointerId===miniDrag.pointer){const x=(event.clientX-miniDrag.rect.left)/miniDrag.rect.width;const yearValue=historyMin+historyLength*Math.max(0,Math.min(1,x));const w=state.to-state.from;const left=(yearValue-w/2-historyMin)/historyLength*100;const thumb=q('.ia-travel-window');if(thumb)thumb.style.left=Math.max(0,Math.min(100-w/historyLength*100,left))+'%';return}
       if(!drag||event.pointerId!==drag.pointer)return;
-      const dx=event.clientX-drag.x;if(Math.abs(dx)>7)drag.moved=true;
+      const dx=event.clientX-drag.x,dy=event.clientY-drag.y;
+      if(drag.touch&&Math.abs(dy)>Math.abs(dx)*1.15){drag=null;return}
+      if(Math.abs(dx)>7&&(!drag.touch||Math.abs(dx)>Math.abs(dy)*1.15))drag.moved=true;
       if(drag.moved){drag.chart.classList.add('ia-dragging');const svg=drag.chart.querySelector('svg');if(svg)svg.style.transform=`translate3d(${dx}px,0,0)`}
     });
     root.addEventListener('pointerup',event=>{
@@ -247,10 +249,13 @@
     root.addEventListener('pointercancel',event=>{if(drag&&drag.pointer===event.pointerId){drag.chart.classList.remove('ia-dragging');drag=null}if(miniDrag&&miniDrag.pointer===event.pointerId)miniDrag=null});
     root.addEventListener('wheel',event=>{
       const chart=event.target.closest('[data-chart]');if(!chart||state.view!=='timeline')return;
+      // Preserve native vertical wheel scrolling through long diagrams and onward into the page.
+      const horizontal=Math.abs(event.deltaX)>Math.abs(event.deltaY)*1.12;
+      if(!event.shiftKey&&!horizontal&&!event.ctrlKey&&!event.metaKey&&!event.altKey)return;
       event.preventDefault();
       const rect=chart.getBoundingClientRect(),fraction=Math.max(0,Math.min(1,(event.clientX-rect.left)/rect.width));
       if(event.ctrlKey||event.metaKey||event.altKey){zoomAt(Math.exp(Math.max(-2,Math.min(2,event.deltaY/180))*.23),fraction,true);return}
-      const pixels=Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY;
+      const pixels=event.shiftKey?(Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY):event.deltaX;
       wheelSum+=pixels;
       if(!wheelQueued){wheelQueued=true;setTimeout(()=>{wheelQueued=false;const p=wheelSum;wheelSum=0;if(Math.abs(p)>.1)shiftRange(p/Math.max(250,lastWidth-38)*(state.to-state.from),true)},65)}
     },{passive:false});
