@@ -166,3 +166,24 @@ Regression: tests/verify_continuous_scrub_browser.py tests live motion before
 release, bidirectional scroll intent, actual Chromium mobile touch gestures,
 WebKit/Chromium layouts, the date glyph geometry and the separate-stage
 provenance.
+
+## Revision 7.1.2 — mobile-first entry and Whole atlas grip
+
+On compact screens, long scholarly introductions, sources and downloads are
+preserved inside a native **About this atlas** disclosure. Search and textual
+family choices remain visible, while year inputs, region filters and secondary
+settings are under **More options**. Three small shortcuts lead to intellectual
+traditions, textual families and historical/region networks. A concise
+**All years** button remains next to the graphic. The complete gesture/date
+legend is available beneath the graphic instead of delaying it.
+
+At the full historical scale (600 BCE–2026), the summary highlight necessarily
+occupies the entire overview bar. Dragging its six-dot handle now restores a
+movable zoomed time window and pans without a release-time jump. Tapping outside
+the handle seeks the selected era; tapping the handle alone preserves the
+complete overview. Arrow navigation and horizontal chart gestures likewise
+restore a practical range when the complete span cannot physically pan.
+
+The browser checks also assert the initial phone screen contains the top of
+the actual graphic, not an expanded scholarly preface, and that the hidden
+content is fully reachable on demand.
