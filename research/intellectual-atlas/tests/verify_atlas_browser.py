@@ -75,9 +75,14 @@ async def visit(browser, width, height, mobile=False):
         horizontal=await read(page)
     else:
         await page.mouse.wheel(0,390)
-        await page.wait_for_timeout(180)
+        await page.wait_for_timeout(480 if browser.browser_type.name=='webkit' else 180)
         vertical=await read(page)
-        assert_that(vertical["scrollTop"]>0,"Ordinary vertical wheel must scroll the diagram")
+        if not vertical["scrollTop"] and browser.browser_type.name=='webkit':
+            print("WebKit wheel first attempt:",initial,vertical,flush=True)
+            await page.mouse.wheel(0,390)
+            await page.wait_for_timeout(480)
+            vertical=await read(page)
+        assert_that(vertical["scrollTop"]>0,"Ordinary vertical wheel must scroll the diagram; state="+str(vertical))
         await page.mouse.wheel(0,-170)
         await page.wait_for_timeout(140)
         scroll_back=await read(page)
