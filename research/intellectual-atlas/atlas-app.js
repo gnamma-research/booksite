@@ -250,7 +250,10 @@
       chart.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${h}" viewBox="0 0 ${W} ${h}" aria-label="Integrated chronology: empire bands above a common time axis; events extend as vertical rules among the works and textual connections" role="group" data-integrated-chart data-field-top="${fieldTop}" data-field-bottom="${fieldBottom}"><defs><marker id="ia-arrow-v3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="var(--ia-link)"/></marker><marker id="ia-arrow-open-v3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="var(--ia-link)" stroke-width="1.6"/></marker><marker id="ia-arrow-x-v3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="var(--ia-bad)"/></marker><marker id="ia-arrow-xopen-v3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="var(--ia-bad)" stroke-width="1.6"/></marker></defs><rect data-pan-surface x="0" y="0" width="${W}" height="${h}" fill="var(--ia-panel)"/>${back.join('')}${grid}${eventRules.join('')}${paths.join('')}${content.join('')}${nodeCards.join('')}</svg>`;
       locations=pos;
       q('[data-visible-families]').innerHTML=[...new Set(visibleNodes.map(n=>n.tradition))].map(f=>`<span><i class="ia-swatch" style="--ia-series:light-dark(${families[f][2]},${families[f][3]})"></i> ${esc(families[f][0]+' · '+families[f][1])}</span>`).join('');
-      const unplaced=filteredNodes(false).filter(n=>temporal(n).anchor===null);q('[data-unplaced]').innerHTML=unplaced.length?`<div class="ia-unplaced"><h3>Without a defensible calendar position</h3><p class="ia-small">These contextual entries remain available without inventing a date.</p>${unplaced.map(n=>`<button type="button" data-work="${esc(n.id)}">${esc(n.code+' · '+n.title)}</button>`).join('')}</div>`:'';
+      const unplaced=filteredNodes(false).filter(n=>temporal(n).anchor===null);
+      const noMatch=filteredNodes(false).length===0;
+      const emptyHTML=noMatch?`<div class="ia-empty ia-filter-empty" role="status"><h3>No texts match these combined filters</h3><p>Textual-family, tradition, regional and search filters are intersected. The current combination excludes every recorded work.</p><button type="button" data-action="reset-filters">Clear restrictive filters · keep these years</button></div>`:'';
+      q('[data-unplaced]').innerHTML=emptyHTML+(unplaced.length?`<div class="ia-unplaced"><h3>Without a defensible calendar position</h3><p class="ia-small">These contextual entries remain available without inventing a date.</p>${unplaced.map(n=>`<button type="button" data-work="${esc(n.id)}">${esc(n.code+' · '+n.title)}</button>`).join('')}</div>`:'');
       updateCounts();
     }
     function relationRow(e,id){const other=N.get(e.source===id?e.target:e.source);return `<div class="ia-detail-row"><span class="ia-small">${esc(edgeCode(e))} · ${esc((rels[e.relation]||['',e.relation])[1])} · ${esc(e.confidence)}</span><button type="button" data-work="${esc(other.id)}" data-center="1">${esc(other.title)}</button><div class="ia-small">${esc(other.author)} · ${esc(other.date_label)}</div><button type="button" class="ia-inspect" data-edge="${esc(e.id)}">Read relationship evidence</button></div>`}
@@ -303,6 +306,13 @@
     }
     function runAction(action){const span=state.to-state.from,mid=(state.from+state.to)/2;
       if(action==='clear-text-family'){chooseTextFamily('');return}
+      if(action==='reset-filters'){
+        state.textFamily='';state.regionNetwork='';state.q='';state.focusOnly=false;
+        state.families=new Set(Object.keys(families));state.rels=new Set(Object.keys(rels));
+        state.contexts=true;state.qualified=true;state.page=1;state.view='timeline';
+        render();setHash();announce('All restrictive filters cleared; the same historical years remain in view.');
+        return;
+      }
       if(action==='tahdhib-route'){chooseTextFamily('tahdhib');return}if(action==='whole-atlas'||action==='whole-atlas-chart'){Object.assign(state,{view:'timeline',density:'all',q:'',selected:null,detailType:null,detailId:null,focusOnly:false,depth:1,textFamily:'',regionNetwork:'',politics:true,events:true,schools:true,contexts:true,qualified:true,links:'focus'});state.families=new Set(Object.keys(families));state.rels=new Set(Object.keys(rels));changeRange(-600,2026)}if(action==='apply-range'){
         const fromText=q('#ia-from-v3').value.trim(),toText=q('#ia-to-v3').value.trim();
         const from=Number(fromText),to=Number(toText);
