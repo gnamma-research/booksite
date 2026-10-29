@@ -3287,6 +3287,51 @@
       "type": "peer-reviewed scholarship / reference",
       "accessed": "2026-10-29",
       "note": "Aristotelian logic and Syriac teaching at Edessa/Nisibis"
+    },
+    {
+      "id": "SM01",
+      "author": "Wilferd Madelung (Encyclopaedia of Islam, 2nd ed.)",
+      "title": "Māturīdiyya",
+      "url": "https://nasafi.org/mat2-ei2/",
+      "note": "EI2 reference reproduced online; school history and later reception are not interchangeable.",
+      "type": "specialist source / school identification",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "SM02",
+      "author": "Oxford Handbook of Islamic Theology",
+      "title": "Ashʿarī–Māturīdī historical relations",
+      "url": "https://academic.oup.com/edited-volume/34345",
+      "note": "Historical and geographical school networks as distinguished strands of Sunni kalām.",
+      "type": "specialist source / school identification",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "SM03",
+      "author": "Navid Chizari, Darulfunun Ilahiyat 35/1 (2024)",
+      "title": "Determining Taftāzānī’s madhhab: Insights after the Decline Paradigm",
+      "url": "https://doi.org/10.26650/di.2023.34.2.1296825",
+      "note": "Argues for Taftazani's Ashʿarī affiliation in independent kalām, while emphasising commentary genre.",
+      "type": "specialist source / school identification",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "SM04",
+      "author": "Institut français de Damas, 1990 edition",
+      "title": "al-Nasafī: Tabṣirat al-adilla ʿalā ṭarīqat al-imām al-Māturīdī",
+      "url": "https://books.google.com/books?id=mC0uAAAAIAAJ",
+      "note": "Named Māturīdī textual line and source edition.",
+      "type": "specialist source / school identification",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "SM05",
+      "author": "Encyclopedia.com",
+      "title": "Abū Bakr al-Bāqillānī and Ashʿarī theological school",
+      "url": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/baqillani-al-1013",
+      "note": "Biographical role of Baqillani in consolidating Ashari theology.",
+      "type": "specialist source / school identification",
+      "accessed": "2026-10-29"
     }
   ],
   "nodes": [
@@ -5347,7 +5392,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "ashari_luma",
@@ -5383,7 +5440,19 @@
       },
       "summary": true,
       "featured": true,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "arabic_posterior",
@@ -5491,7 +5560,19 @@
       },
       "summary": true,
       "featured": true,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "maturidi"
+      ],
+      "classification_evidence": [
+        {
+          "id": "maturidi",
+          "status": "Historical Māturīdī theological line, with possible cross-school reception",
+          "sources": [
+            "SM01"
+          ]
+        }
+      ]
     },
     {
       "id": "maturidi_tawilat",
@@ -5528,7 +5609,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "maturidi"
+      ],
+      "classification_evidence": [
+        {
+          "id": "maturidi",
+          "status": "Historical Māturīdī theological line, with possible cross-school reception",
+          "sources": [
+            "SM01"
+          ]
+        }
+      ]
     },
     {
       "id": "farabi_madina",
@@ -5932,7 +6025,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "Source-supported Ashʿarī theologian and works",
+          "sources": [
+            "SM05"
+          ]
+        }
+      ]
     },
     {
       "id": "baqillani_hidaya",
@@ -5968,7 +6073,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "Source-supported Ashʿarī theologian and works",
+          "sources": [
+            "SM05"
+          ]
+        }
+      ]
     },
     {
       "id": "ibnfurak_mujarrad",
@@ -6674,7 +6791,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "juwayni_shamil",
@@ -6710,7 +6839,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "ghazali_tahafut",
@@ -6786,7 +6927,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "abumuin_tabsira",
@@ -6823,7 +6976,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "maturidi"
+      ],
+      "classification_evidence": [
+        {
+          "id": "maturidi",
+          "status": "Work self-identifies the Māturīdī textual school",
+          "sources": [
+            "SM04"
+          ]
+        }
+      ]
     },
     {
       "id": "hamadani_zubda",
@@ -7045,7 +7210,19 @@
       },
       "summary": false,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "maturidi"
+      ],
+      "classification_evidence": [
+        {
+          "id": "maturidi",
+          "status": "Historical Māturīdī theological line, with possible cross-school reception",
+          "sources": [
+            "SM01"
+          ]
+        }
+      ]
     },
     {
       "id": "abulbarakat_mutabar",
@@ -7162,7 +7339,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "averroes_tahafut",
@@ -7476,7 +7665,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ]
     },
     {
       "id": "averroes_long_metaphysics",
@@ -9175,7 +9376,27 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari",
+        "maturidi"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "Taftāzānī: Ashʿarī scholar by genre-sensitive authorial analysis; Sharḥ al-ʿAqāʾid is a commentary on a Māturīdī matn",
+          "sources": [
+            "SM03"
+          ]
+        },
+        {
+          "id": "maturidi",
+          "status": "Māturīdī textual reception of al-Nasafī's base text; not the author's second confessional allegiance",
+          "sources": [
+            "SM03"
+          ]
+        }
+      ]
     },
     {
       "id": "haydar_nass",
@@ -9259,7 +9480,19 @@
       },
       "summary": true,
       "featured": true,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "Taftāzānī: Ashʿarī scholar by genre-sensitive authorial analysis; Sharḥ al-ʿAqāʾid is a commentary on a Māturīdī matn",
+          "sources": [
+            "SM03"
+          ]
+        }
+      ]
     },
     {
       "id": "taftazani_maqasid",
@@ -9295,7 +9528,19 @@
       },
       "summary": true,
       "featured": false,
-      "search_aliases": []
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "Taftāzānī: Ashʿarī scholar by genre-sensitive authorial analysis; Sharḥ al-ʿAqāʾid is a commentary on a Māturīdī matn",
+          "sources": [
+            "SM03"
+          ]
+        }
+      ]
     },
     {
       "id": "mubarakshah_hikmat",
@@ -23153,6 +23398,16 @@
         "NP12",
         "NP15"
       ]
+    },
+    {
+      "title": "Selective source-based Ashʿarī and Māturīdī classification",
+      "text": "Do not split the entire Sunni kalām category from names or regions. Ashʿarī and Māturīdī tags identify only sourced cases. Taftāzānī's Sharḥ al-ʿAqāʾid is a Māturīdī textual family reception by a scholar whom a recent study treats as Ashʿarī: these separate axes must not be conflated.",
+      "sources": [
+        "SM01",
+        "SM02",
+        "SM03",
+        "SM04"
+      ]
     }
   ],
   "audit": [
@@ -27592,7 +27847,8 @@
         "GNA-P03"
       ],
       "school_network_note": "Scholarly network bands are not political dynasties and do not assert direct transmission. See each detail/source."
-    }
+    },
+    "school_subtradition_note": "Ashʿarī and Māturīdī overlays are sourced, selective and incomplete; a commentary on another school’s base text is classified as reception, not dual authorial allegiance."
   },
   "author_index": [
     {
