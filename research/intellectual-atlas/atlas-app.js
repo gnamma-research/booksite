@@ -406,7 +406,8 @@
       }
       const chart=event.target.closest('[data-chart]');if(!chart||state.view!=='timeline')return;
       drag={pointer:event.pointerId,chart,x:event.clientX,y:event.clientY,from:state.from,span:state.to-state.from,moved:false,touch:event.pointerType==='touch'};
-      if(!drag.touch)chart.setPointerCapture(event.pointerId);
+      // Do not capture an ordinary click. Capturing before a real drag retargets
+      // the SVG <a> click to the chart and breaks work and century selection.
     });
     root.addEventListener('pointermove',event=>{
       if(miniDrag&&event.pointerId===miniDrag.pointer){
@@ -429,7 +430,8 @@
       if(g.touch&&!g.moved&&Math.abs(dy)>Math.abs(dx)*1.15)return; // native vertical scrolling
       if(!g.moved&&Math.abs(dx)>5&&(!g.touch||Math.abs(dx)>Math.abs(dy)*1.15)){
         g.moved=true;g.chart.classList.add('ia-dragging');
-        if(g.touch){try{g.chart.setPointerCapture(event.pointerId)}catch{}}
+        // Capture only once panning is deliberate; click/tap targets remain intact.
+        try{g.chart.setPointerCapture(event.pointerId)}catch{}
       }
       if(g.moved){
         if(event.cancelable)event.preventDefault();
