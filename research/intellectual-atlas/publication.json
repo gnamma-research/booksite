@@ -5,12 +5,24 @@
   "entries": 375,
   "textual_relationships": 348,
   "sources": 349,
+  "historical_sources": 72,
+  "ancient_bridge_entries": 10,
+  "neoplatonic_new_entries": 44,
+  "neoplatonic_new_relationships": 36,
+  "scholarly_networks": 5,
+  "classification_layers": [
+    "intellectual tradition",
+    "textual family",
+    "regional/historical network"
+  ],
   "textual_family_routes": 18,
-  "textual_family_note": "Curated, overlapping named-work commentary networks, distinct from intellectual traditions; regional context is an independent intersecting filter",
+  "textual_family_note": "Book-centred selective commentary/translation/reception networks; a source work can be in several families without implying doctrinal agreement",
   "tahdhib_added_entries": 26,
   "tahdhib_added_relationships": 26,
   "displayed_political_periods": 48,
   "displayed_events": 36,
+  "download_current_pdf": "Intellectual_Atlas_Reference_Revision7.pdf",
+  "download_current_offline": "Gnamma_Intellectual_Atlas_Offline_Revision7.zip",
   "individual_reign_rows": 0,
   "pdf_pages": {
     "illustrated_overview_legacy": 15,
@@ -18,26 +30,15 @@
     "complete_updated_register": 84,
     "focused_tahdhib_supplement": 9
   },
-  "downloads": {
-    "illustrated_reference_legacy": "Islamic_Intellectual_Timeline.pdf",
-    "illustrated_overview_legacy": "Islamic_Timeline_Overview.pdf",
-    "current_reference": "Intellectual_Atlas_Reference_Revision4.pdf",
-    "tahdhib_supplement": "Tahdhib_Genealogy_Addendum.pdf",
-    "canonical_data": "intellectual-atlas-data.json",
-    "offline_package": "Islamic_Timeline_Website_Package.zip"
-  },
-  "note": "Revision 7 adds a source-qualified Greek Neoplatonic/late antique bridge and 5 separate scholarly networks while preserving all previous textual relations. The PDF and offline package are automatically generated and committed by release CI. Earlier 84-page PDF and illustrated editions remain historical.",
-  "historical_sources": 72,
-  "ancient_bridge_entries": 10,
-  "classification_layers": [
-    "intellectual traditions and source-qualified Ashʿarī/Māturīdī/Neoplatonic overlays",
-    "named textual commentary and translation families",
-    "regional and historical scholarly networks"
-  ],
-  "pdf_note": "The new revision-7 PDF is a full 375-record/348-edge critical evidence register; revisions 2 and 4 PDFs remain available as previous scholarship.",
-  "scholarly_networks": 5,
-  "neoplatonic_new_entries": 44,
-  "neoplatonic_new_relationships": 36,
-  "download_current_pdf": "Intellectual_Atlas_Reference_Revision7.pdf",
-  "download_current_offline": "Gnamma_Intellectual_Atlas_Offline_Revision7.zip"
+  "pdf_note": "The revision-7 PDF and offline ZIP are built from this canonical dataset by build_release.py. Historical PDFs from revisions 2 and 4 retain earlier scholarship and are marked legacy.",
+  "download_sha256": {
+    "Gnamma_Intellectual_Atlas_Offline_Revision7.zip": "a4847c8bb9b2b24c91bc6aa82f823339fe52285ee49255097496cdbdb95d6769",
+    "Intellectual_Atlas_Reference_Revision4.pdf": "7d5bf70d9d683bbdeaaba21ce9b6f8bc3b7e112356bd81b50622466964858b24",
+    "Intellectual_Atlas_Reference_Revision7.pdf": "9f632970c80f60ea21680ee354d986e42aa4249c85dbbba11ac94ff16a41d3cf",
+    "Islamic_Intellectual_Timeline.pdf": "f75eba18a18b04a3a443a0f6a097ba05013179219ae5eafadcdb5fa5513235ba",
+    "Islamic_Timeline_Overview.pdf": "346e2cf5efcca1943d00361d7fcd8ca4cbf26b6510a24aa1417c0659da4258c8",
+    "Islamic_Timeline_Website_Package.zip": "8673c89ac9b75ba35c5ca8ffbe63eba5345ba1d259d37b74488266b0ffab7352",
+    "Tahdhib_Genealogy_Addendum.pdf": "331d46c9fe8bb2a7e059e18dd214fb117f8d1d8ff5bf5e0fe3d82a8e81db33ab",
+    "intellectual-atlas-data.json": "742e6fca68fc3fbcf658ae1082e3d2d3cb239d8f10001b80dd5ae735d4acb58b"
+  }
 }
