@@ -85,7 +85,27 @@ async def visit(browser, width, height, mobile=False):
                 "Regional and textual family dimensions must intersect rather than replace one another")
     await page.locator('[data-region-network]').select_option('')
     await page.locator('[data-text-family]').select_option('')
-    await page.locator('.ia-route-explorer summary').click()
+    # The broad three-level hierarchy is discoverable without forcing one taxonomy.
+    assert_that(await page.locator('.ia-tradition-explorer [data-tradition-route]').count()==14,
+                "Tradition summary explorer lists all primary catalogue colours")
+    assert_that(await page.locator('.ia-region-explorer [data-region-route]').count()==10,
+                "Regional summary explorer lists ten contextual routes")
+    await page.locator('.ia-tradition-explorer summary').click()
+    await page.locator('.ia-tradition-explorer [data-tradition-route="sunni"]').click()
+    await page.locator('[data-region-network]').select_option('southasia')
+    await page.locator('[data-text-family]').select_option('tahdhib')
+    independent=await page.evaluate("""() => {
+      const s=document.querySelector('#kalam-timeline-app-v3').atlasTest.state;
+      return {traditions:[...s.families],region:s.regionNetwork,family:s.textFamily};
+    }""")
+    assert_that(independent['traditions']==['sunni'] and independent['region']=='southasia' and independent['family']=='tahdhib',
+                "All three classification filters survive selection and can intersect")
+    await page.locator('[data-action="whole-atlas"]').click()
+    await page.locator('.ia-region-explorer summary').click()
+    await page.locator('.ia-region-explorer [data-region-route="khurasan"]').click()
+    assert_that((await read(page))['region']=='khurasan',"Regional summary buttons apply context filters")
+    await page.locator('[data-action="whole-atlas"]').click()
+    await page.locator('.ia-route-explorer:has([data-text-route]) > summary').click()
     assert_that(await page.locator('.ia-route-explorer [data-text-route]').count()==12,
                 "12 peer-level commentary family buttons available")
     await page.locator('.ia-route-explorer [data-text-route="tajrid"]').click()

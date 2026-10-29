@@ -70,3 +70,11 @@ body #kalam-timeline-app-v3 .ia-chart .ia-polity-gap{fill:none;stroke:var(--ia-m
   body #kalam-timeline-app-v3 .ia-route-explorer{padding:10px 15px}
   body #kalam-timeline-app-v3 .ia-region-network-control{flex:1 1 100%}
 }
+
+/* Atlas hierarchy v6.1 — 3 distinct summary drawers share the same compact cards. */
+body #kalam-timeline-app-v3 .ia-explorer-note{margin:8px 0 10px;max-width:90ch;font-size:12px;line-height:1.55}
+body #kalam-timeline-app-v3 .ia-tradition-explorer .ia-swatch{margin-right:6px;vertical-align:middle}
+body #kalam-timeline-app-v3 .ia-route-explorer summary:focus-visible{outline:2px solid var(--ia-link);outline-offset:4px}
+body #kalam-timeline-app-v3 .ia-route-explorer>summary{padding:2px 0}
+body #kalam-timeline-app-v3 .ia-route-explorer .ia-route-groups button strong{font-weight:600;line-height:1.35}
+@media(max-width:700px){body #kalam-timeline-app-v3 .ia-route-explorer .ia-route-groups{grid-template-columns:1fr}}
