@@ -1,0 +1,71 @@
+name: Gnamma Atlas exhaustive UI control audit
+
+on:
+  push:
+    branches: [atlas-exhaustive-ui-audit-2026-10-29]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/atlas-exhaustive-ui-ci.yml'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/atlas-exhaustive-ui-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: atlas-exhaustive-ui-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  all-controls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {engine: chromium, width: 1440, height: 900, full: "--full"}
+          - {engine: chromium, width: 390, height: 844, full: "--full"}
+          - {engine: chromium, width: 844, height: 390, full: ""}
+          - {engine: webkit, width: 1440, height: 900, full: "--full"}
+          - {engine: webkit, width: 390, height: 844, full: "--full"}
+          - {engine: webkit, width: 844, height: 390, full: ""}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Validate source and syntax
+        run: |
+          node --check research/intellectual-atlas/atlas-app.js
+          python -m py_compile research/intellectual-atlas/tests/verify_exhaustive_ui_browser.py
+          python research/intellectual-atlas/build.py
+      - name: Install Playwright and browser
+        run: |
+          python -m pip install -q playwright==1.58.0
+          python -m playwright install --with-deps ${{ matrix.engine }}
+      - name: End-to-end UI audit at ${{ matrix.engine }} ${{ matrix.width }}x${{ matrix.height }}
+        shell: bash
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/atlas-exhaustive-server.log 2>&1 &
+          server=$!
+          trap 'kill $server || true' EXIT
+          for i in {1..60}; do
+            if curl --silent --fail http://127.0.0.1:8123/research/intellectual-atlas/ >/dev/null; then break; fi
+            sleep 0.25
+          done
+          python research/intellectual-atlas/tests/verify_exhaustive_ui_browser.py --browser ${{ matrix.engine }} --width ${{ matrix.width }} --height ${{ matrix.height }} ${{ matrix.full }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: atlas-exhaustive-${{ matrix.engine }}-${{ matrix.width }}x${{ matrix.height }}
+          path: |
+            /tmp/gnamma-atlas-exhaustive/*.json
+            /tmp/gnamma-atlas-exhaustive/*.png
+            /tmp/atlas-exhaustive-server.log
+          if-no-files-found: ignore
