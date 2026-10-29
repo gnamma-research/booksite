@@ -10,7 +10,7 @@ empire periods, events and the dated textual network without individual ruler la
 
 ## Three overlapping classifications — do not conflate them
 
-**Intellectual traditions:** the long-lived philosophical or theological currents,
+**Intellectual traditions:** primary catalogue labels for long-lived philosophical or theological currents,
 represented by existing colors and filters (Avicennan, Illuminationist, Akbarian,
 Sunni kalām, Imāmī, Ṣadrian, etc.). These categories are non-exclusive receptions,
 not proof of a writer's full doctrinal allegiance.
@@ -36,9 +36,10 @@ regional descriptions; it is not yet a critically verified biographical
 itinerary or prosopography.
 
 **Nested map hierarchy:** the complete dated chronology is the universal map;
-intellectual traditions remain long-lived overlays; clicking **Browse textual
-commentary families** or a route button in a work's detail panel opens a
-selective commentary-family view. Individual works can occur in several
+collapsible tradition summaries provide catalogue counts and dated spans;
+clicking **Browse textual commentary families** or a route button in a work's
+detail panel opens a selective commentary-family view. Matching regional
+summary drawers provide contextual routes with approximate counts. Individual works can occur in several
 textual routes and intellectual currents simultaneously, and the regional
 filter may intersect either selection.
 
@@ -95,3 +96,9 @@ JSON, synchronize the HTML embed, and generate the current publication metadata.
 Run `node --check research/intellectual-atlas/atlas-app.js` for syntax checking.
 The test plan in `tests/README.md` covers scrolling, regional and textual
 family navigation, mobile layout, date uncertainty and the Mughal interval.
+
+The summary drawers report only recorded members; the Sunni kalām primary
+colour still combines Ashʿarī, Māturīdī and other Sunni contributions until
+source-based subtradition memberships are separately audited. Selecting a
+textual family **preserves** existing independent regional, tradition and
+relationship filters; use **Whole atlas** to reset them all.
