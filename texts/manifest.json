@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-library-manifest-v1",
   "project": "Gnamma Research",
-  "updated": "2026-10-26",
+  "updated": "2026-10-29",
   "collections": [
     "texts",
     "essays",
@@ -106,6 +106,26 @@
         }
       ],
       "note": "Two edition research previews. Each now includes the recovered separate 25-case alternative-uṣūl casebook (12 full dossiers, 13 supplemental reviews, 115 source records); Edition II includes separate formation hypotheses. The canonical Revision16 primary text and 310/279 research registers remain unavailable and unimported."
+    },
+    {
+      "id": "tusi-tajrid",
+      "title": "Tajrīd al-iʿtiqād",
+      "arabic": "تجريد الاعتقاد",
+      "author": "Naṣīr al-Dīn al-Ṭūsī",
+      "author_slug": "al-tusi",
+      "work_slug": "tajrid-al-itiqad",
+      "area": [
+        "kalām",
+        "metaphysics",
+        "philosophical theology"
+      ],
+      "status": "working-bilingual-reader",
+      "language": [
+        "ar",
+        "en"
+      ],
+      "url": "texts/al-tusi/tajrid-al-itiqad/",
+      "note": "837 aligned reference units (split preface); 182 expanded and 149 shorter editorial notes; full working translation, not a definitive manuscript collation."
     }
   ],
   "research": [
@@ -166,6 +186,20 @@
       "status": "original-local-files-unavailable",
       "url": "research/usul-law-rushd/recovery/",
       "note": "Tracks missing original master reader, 310 groups, 279 K-positions, 542 stable addresses and source-recovery utility."
+    },
+    {
+      "id": "tajrid-comparative",
+      "title": "The Tajrīd Debates · Comparative Sourcebook",
+      "area": [
+        "metaphysics",
+        "kalām",
+        "logic",
+        "Akbarī thought",
+        "Illuminationism"
+      ],
+      "status": "working-quoted-sourcebook",
+      "url": "research/tajrid-comparative/",
+      "note": "18 disputed research questions; 57 attributed Arabic/English extracts across primary commentary and parallel traditions; incomplete per-author coverage and remaining collations explicitly flagged."
     }
   ],
   "navigation": {
@@ -186,7 +220,8 @@
       {
         "name": "Kalām",
         "ids": [
-          "jurjani-mawaqif"
+          "jurjani-mawaqif",
+          "tusi-tajrid"
         ]
       }
     ],
@@ -195,7 +230,8 @@
       "bidaya-alternative-usul",
       "ibn-rushd-qawanin",
       "bidaya-daruri",
-      "bidaya-revision16-recovery"
+      "bidaya-revision16-recovery",
+      "tajrid-comparative"
     ]
   }
 }
