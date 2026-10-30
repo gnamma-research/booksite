@@ -19,7 +19,7 @@ texts:[
  {name:"al-Ḍarūrī fī Uṣūl al-Fiqh",href:"daruri/"}
  ]},
  {heading:"Tafsīr",items:[{name:"al-Baḥr al-Madīd",href:"texts/ibn-ajiba/al-bahr-al-madid/"}]},
- {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"}]}
+ {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"},{name:"Tahdhīb al-Kalām · Working translation",href:"texts/al-taftazani/tahdhib-al-kalam/"},{name:"Taqrīb al-Marām · Commentary",href:"texts/al-sanandaji/taqrib-al-maram/"}]}
 ],
 essays:[],
 research:[{items:[

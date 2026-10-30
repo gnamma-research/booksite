@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-library-manifest-v1",
   "project": "Gnamma Research",
-  "updated": "2026-10-26",
+  "updated": "2026-10-30",
   "collections": [
     "texts",
     "essays",
@@ -106,6 +106,47 @@
         }
       ],
       "note": "Two edition research previews. Each now includes the recovered separate 25-case alternative-uṣūl casebook (12 full dossiers, 13 supplemental reviews, 115 source records); Edition II includes separate formation hypotheses. The canonical Revision16 primary text and 310/279 research registers remain unavailable and unimported."
+    },
+    {
+      "id": "taftazani-tahdhib-kalam",
+      "title": "Tahdhīb al-Kalām",
+      "arabic": "تهذيب الكلام",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "author_slug": "al-taftazani",
+      "work_slug": "tahdhib-al-kalam",
+      "area": [
+        "kalām",
+        "philosophy"
+      ],
+      "status": "source-graded-working-translation",
+      "language": [
+        "ar",
+        "en-provisional"
+      ],
+      "url": "texts/al-taftazani/tahdhib-al-kalam/",
+      "related_commentary_id": "sanandaji-taqrib-maram",
+      "note": "81 source-ordered provisional translation units drawn from a larger 140-unit research register. Contains gaps and reconstructed readings; not a complete or definitive critical edition."
+    },
+    {
+      "id": "sanandaji-taqrib-maram",
+      "title": "Taqrīb al-Marām fī Sharḥ Tahdhīb al-Kalām",
+      "arabic": "تقريب المرام في شرح تهذيب الكلام",
+      "author": "ʿAbd al-Qādir al-Sanandajī",
+      "author_slug": "al-sanandaji",
+      "work_slug": "taqrib-al-maram",
+      "area": [
+        "kalām",
+        "commentary",
+        "philosophy"
+      ],
+      "status": "translation-begun",
+      "language": [
+        "ar-selections",
+        "en-selections"
+      ],
+      "url": "texts/al-sanandaji/taqrib-al-maram/",
+      "related_matn_id": "taftazani-tahdhib-kalam",
+      "note": "Six directly image-checked selective translations, starting from the authorial preface. The two-volume 632-page source is accessible; the complete commentary translation remains outstanding."
     }
   ],
   "research": [
@@ -186,7 +227,9 @@
       {
         "name": "Kalām",
         "ids": [
-          "jurjani-mawaqif"
+          "jurjani-mawaqif",
+          "taftazani-tahdhib-kalam",
+          "sanandaji-taqrib-maram"
         ]
       }
     ],
