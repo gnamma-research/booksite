@@ -151,6 +151,27 @@
       "url": "texts/al-sanandaji/taqrib-al-maram/",
       "related_matn_id": "taftazani-tahdhib-kalam",
       "note": "11 selected image-checked commentary extracts, including the preface, doctrinal epistemology, causation, and divine purposes; continuous two-volume translation remains outstanding."
+    },
+    {
+      "id": "taftazani-tahdhib-logic",
+      "title": "Tahdhīb al-Manṭiq",
+      "arabic": "تهذيب المنطق",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "author_slug": "al-taftazani",
+      "work_slug": "tahdhib-al-mantiq",
+      "area": [
+        "logic",
+        "philosophy",
+        "methods of inference"
+      ],
+      "status": "continuous-working-translation",
+      "language": [
+        "ar",
+        "en"
+      ],
+      "url": "texts/al-taftazani/tahdhib-al-mantiq/",
+      "related_kalam_id": "taftazani-tahdhib-kalam",
+      "note": "Nineteen continuous editorial sections of the short logic text in Arabic–English; original Arabic based on the user-supplied logic matn and later bilingual reader; critical proofing of the 1587 witness and detailed modal syllogism comparison outstanding."
     }
   ],
   "research": [
@@ -234,6 +255,12 @@
           "jurjani-mawaqif",
           "taftazani-tahdhib-kalam",
           "sanandaji-taqrib-maram"
+        ]
+      },
+      {
+        "name": "Logic",
+        "ids": [
+          "taftazani-tahdhib-logic"
         ]
       }
     ],
