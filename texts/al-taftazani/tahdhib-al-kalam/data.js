@@ -259,10 +259,18 @@ window.GNAMMA_BOOK={
       "id": "II.02",
       "title": "Existence and the necessary being",
       "arabic": "[والوجود ...] ينقسم إلى الواجب وغيره ... والحكماء على أن حقيقة الواجب وجود خاص قائم بنفسه، مغاير للوجود الممكن في حقيقته.",
-      "english": "[Existence] is divided into the necessary and what is not necessary. The philosophers maintain that the reality of the Necessary is a special existence subsisting in itself and essentially distinct from contingent existence.",
+      "english": "Existence is divided into the Necessary Existent and what is other than it. The philosophers maintain that the Necessary Existent’s reality is a special existence subsisting of itself, essentially unlike the existence of what is contingent. Thus one must distinguish what the mind means by ‘existence’ in common from the manner in which existence belongs to the Necessary and to possible beings.",
       "grade": "B",
       "gap": true,
       "notes": [
+        {
+          "type": "Source limitation",
+          "text": "The received OCR still contains a gap before the philosophers’ report. The English conveys the recoverable clauses plus a separated explanatory sentence, not a complete reconstruction of all omitted transitions."
+        },
+        {
+          "type": "Direct comparison · Taqrīb I:37–40",
+          "text": "See the reproduced commentary at PDF pp. 50–53. The larger upper text treats the common intelligible meaning of wujūd, then specifically marks the philosophers’ account of the Necessary. The final English sentence explicates the distinction; it must not be inserted into the author's Arabic."
+        },
         {
           "type": "Editorial",
           "text": "Several words between these assertions have not been reconstructed. The second sentence explicitly reports the philosophers’ doctrine."
@@ -277,10 +285,18 @@ window.GNAMMA_BOOK={
       "id": "II.03",
       "title": "Degrees and conceptual universality of being",
       "arabic": "[والوجود] المقول على الموجودات بالتشكيك كالنور على الأنوار، وما يقال [من أنه] في الكل نفس الماهية ... وإنما هو في العقل.",
-      "english": "Existence is predicated of existents with gradation, as “light” is predicated of lights. [The further claim concerning whether its common content is identical with each essence] concerns a distinction made by intellect, rather than a separate universal thing existing externally.",
+      "english": "Existence, as a concept predicable of different beings, is applied with degrees of priority or entitlement—rather as one speaks of light being present in different lights. Yet the shared intelligible meaning should not be mistaken for a single numerically identical existence existing separately from the things to which it is attributed.",
       "grade": "C",
       "gap": true,
       "notes": [
+        {
+          "type": "Textual caution",
+          "text": "The source OCR is damaged in this locus, and the exact Arabic phrase about the identity of quiddity in particular instances has not yet been re-established. This translation is deliberately restricted to the intelligible distinction."
+        },
+        {
+          "type": "Interpretive control · Taqrīb I:37–39",
+          "text": "At PDF pp. 50–52 the explanation distinguishes the common meaning of wujūd and the distinct existence of its instances. The second English sentence is explanatory, not a quotation from the short matn."
+        },
         {
           "type": "Editorial",
           "text": "The existence-predication clause is identifiable but the sentence as a whole is severely corrupted. The second sentence is explicitly an explanatory placeholder, not a secure full translation."
@@ -1586,6 +1602,7 @@ window.GNAMMA_BOOK={
     "81 imported source-graded units drawn from the earlier 140-unit register. Many are excerpts, and 80 entries in the 140-unit register previously carried explicit gap flags. None of the six chapters is completely collated.",
     "Revision 17 image collation: Sanandajī/Taqrīb I:8–22 (PDF pp. 21–35); the documentary record distinguishes embedded Tahdhīb lemmata, the upper running commentary, and marginal notes.",
     "Revision 19, 30 October 2026: direct image review of Taqrīb printed I:7–33 (PDF pp. 20–46), focused re-collation of I.01–I.07 and new inferential-process unit I.02a. The full Tahdhīb manuscript and the marginal Muḥākamāt still remain separate witnesses/voices.",
-    "Current critical source checks: Taqrīb I:7–33, PDF pages 20–46. Chapter I has source-based continuity in English; reconstructed Arabic connectors await independent manuscript verification."
+    "Current critical source checks: Taqrīb I:7–33, PDF pages 20–46. Chapter I has source-based continuity in English; reconstructed Arabic connectors await independent manuscript verification.",
+    "Revision 20: targeted direct checks in Taqrīb I:35–40, PDF pp. 48–53, for common meaning, existence of the Necessary, and graded application. Still not full Chapter II collation."
   ]
 };
