@@ -213,6 +213,7 @@ files=[
  ('avicennian-summa/causal-dependence.html',ROOT/'avicennian-summa/causal-dependence.html'),
  ('avicennian-summa/primary-translations.html',ROOT/'avicennian-summa/primary-translations.html'),
  ('avicennian-summa/late-commentators.html',ROOT/'avicennian-summa/late-commentators.html'),
+ ('avicennian-summa/INDIAN_PRIMARY_QUOTATION_01_KHAYRABADI_HEAT.md',ROOT/'avicennian-summa/INDIAN_PRIMARY_QUOTATION_01_KHAYRABADI_HEAT.md'),
  ('avicennian-summa/LATE_WITNESS_REGISTER_2026_10_31.json',ROOT/'avicennian-summa/LATE_WITNESS_REGISTER_2026_10_31.json'),
  ('avicennian-summa/LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md',ROOT/'avicennian-summa/LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md'),
  ('avicennian-summa/LATE_FASCICLE_02_LAHIJI_GAWHAR_TEMPORAL_CAUSATION.md',ROOT/'avicennian-summa/LATE_FASCICLE_02_LAHIJI_GAWHAR_TEMPORAL_CAUSATION.md'),
@@ -290,6 +291,7 @@ with zipfile.ZipFile(ZIP) as z:
     assert root+'avicennian-summa/chapters/index.html' in z.namelist()
     assert root+'avicennian-summa/primary-translations.html' in z.namelist()
     assert root+'avicennian-summa/late-commentators.html' in z.namelist()
+    assert root+'avicennian-summa/INDIAN_PRIMARY_QUOTATION_01_KHAYRABADI_HEAT.md' in z.namelist()
     assert root+'avicennian-summa/LATE_WITNESS_REGISTER_2026_10_31.json' in z.namelist()
     assert root+'avicennian-summa/LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md' in z.namelist()
     assert root+'avicennian-summa/LATE_FASCICLE_02_LAHIJI_GAWHAR_TEMPORAL_CAUSATION.md' in z.namelist()
