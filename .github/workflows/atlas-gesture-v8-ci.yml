@@ -40,8 +40,8 @@ jobs:
           html=(p/'index.html').read_text()
           embedded=json.loads(re.search(r'<script type="application/json" data-atlas>(.*?)</script>',html,re.S).group(1))
           assert data==embedded
-          assert (len(data['nodes']),len(data['edges']),len(data['sources']),len(data['textual_families']))==(375,348,349,18)
-          assert data['revision']=='neoplatonic-bridge-7-2026-10-29'
+          assert (len(data['nodes']),len(data['edges']),len(data['sources']),len(data['textual_families']))==(386,362,359,20)
+          assert data['revision']=='avicennian-extensions-7.2-2026-10-30'
           assert next(n for n in data['nodes'] if n['id']=='iji_mawaqif')['temporal']['kind']=='multiple_stages'
           assert next(n for n in data['nodes'] if n['id']=='plotinus_enneads')['temporal']['kind']=='multiple_stages'
           PY

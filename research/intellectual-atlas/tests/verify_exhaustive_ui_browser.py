@@ -78,8 +78,8 @@ async def run_audit(page,full=True):
         sources:d.sources.map(x=>x.id),graph:d.edges.map(e=>({id:e.id,source:e.source,target:e.target})),
         nodes:d.nodes.map(n=>({id:n.id,trad:n.tradition,secondary:n.intellectual_traditions||[],type:n.node_type}))};
     }""")
-    check((data["n"],data["e"],data["s"])==(375,348,349),"Canonical record/relationship/source count unexpectedly changed")
-    check(len(data["family"])==18,"There should be 18 textual family choices")
+    check((data["n"],data["e"],data["s"])==(386,362,359),"Canonical record/relationship/source count unexpectedly changed")
+    check(len(data["family"])==20,"There should be 20 textual family choices")
     check(await page.locator('[data-view]').count()==4,"Four main navigation tabs")
     check(await page.locator('#ia-text-family-v3 option').count()==19,"All texts + 18 text families")
     check(await page.locator('.ia-explorer-shortcuts > details').count()==3,"Three map exploration layers")
@@ -106,7 +106,7 @@ async def run_audit(page,full=True):
         cases+=6
     await page.locator("#ia-text-family-v3").select_option("")
     s=await snap(page)
-    check(s["family"]=="" and len(s["filtered"])==375,"All texts option failed")
+    check(s["family"]=="" and len(s["filtered"])==386,"All texts option failed")
     cases+=1
 
     # The dedicated source-dossier shortcut and the in-place clear action.
@@ -168,7 +168,7 @@ async def run_audit(page,full=True):
         check(not (await metric(page))["invalid"],f"SVG invalid for region {name}")
         cases+=3
     await page.locator("#ia-region-network-v3").select_option("")
-    check(len((await snap(page))["filtered"])==375,"All regions did not restore all records")
+    check(len((await snap(page))["filtered"])==386,"All regions did not restore all records")
     if full:
         for name in region_keys:
             await page.locator(f'.ia-region-explorer button[data-region-route="{name}"]').click()
@@ -324,7 +324,7 @@ async def run_audit(page,full=True):
           "Incompatible text-family/region filters lack actionable explanation")
     await page.locator('[data-action="reset-filters"]').click()
     clean=await snap(page)
-    check(clean["family"]=="" and clean["region"]=="" and len(clean["filtered"])==375,
+    check(clean["family"]=="" and clean["region"]=="" and len(clean["filtered"])==386,
           "Clear restrictive filters did not restore all works")
     check(abs(clean["from"]-empty["from"])<.01 and abs(clean["to"]-empty["to"])<.01,
           "Clear restrictive filters unexpectedly changed selected years")
@@ -426,7 +426,7 @@ async def run_audit(page,full=True):
     await page.locator('#ia-results-v3 button[data-work]').first.click()
     check((await snap(page))["selected"]==first,"Search suggestion did not open result")
     cases+=2
-    await search.fill("something_not_in_375_record_titles_9876")
+    await search.fill("something_not_in_386_record_titles_9876")
     await page.wait_for_timeout(310)
     check("No title or author matches" in await page.locator('#ia-results-v3').inner_text(),
           "Search no-results feedback missing")
