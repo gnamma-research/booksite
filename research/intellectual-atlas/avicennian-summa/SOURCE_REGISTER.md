@@ -16,7 +16,7 @@
 | AV-07 | Mullā Ṣadrā, *al-Asfār al-arbaʿa* | BIBLIOGRAPHY-VERIFIED, text witness not acquired here | High; proof pressure at each dispute | Existing GNAMMA Atlas *Asfār* family |
 | AV-08 | Mullā Ṣadrā, *Sharḥ / Taʿlīqāt Ilāhiyyāt al-Shifāʾ* | BIBLIOGRAPHY-VERIFIED | High; direct criticism of Ibn Sīnā; 2003/2011 editions | https://ci.nii.ac.jp/ncid/BC0979512X |
 | AV-09 | ʿAbd al-Razzāq al-Lāhījī, *Shawāriq al-ilhām* | PRIMARY-OPEN, TRANSLATION-PILOT (pp. 53, 159) | High; change, causality, jaʿl, contingency, attributes | https://ablibrary.net/book_content/b/9309/53?lang=ar |
-| AV-10 | al-Lāhījī, *Gawhar-i murād* | BIBLIOGRAPHY-VERIFIED | High; independent Persian systematic philosophical theology | Existing GNAMMA Atlas record |
+| AV-10 | al-Lāhījī, *Gawhar-i murād* | PRIMARY-OPEN, FOUR TRANSLATED BOUNDED ARGUMENT UNITS (II.3.4,6–8; Stage 05) | High; independent Persian systematic philosophical theology | Existing GNAMMA Atlas record |
 | AV-11 | Āqā Ḥusayn al-Khwānsārī, first *Ḥāshiya ʿalā Ilāhiyyāt al-Shifāʾ* | PROSPECT; partially printed | High; challenge to Ṣadrā | https://almahdi.edu/wahid-amin/ |
 | AV-12 | Muḥammad Bāqir al-Sabzawārī, *Ḥāshiya ʿalā Ilāhiyyāt al-Shifāʾ* | PROSPECT; partially printed | High; reply defending Ṣadrian readings against Khwānsārī | https://mullasadra.blogspot.com/2017/12/the-avicennian-tradition-iranian-and.html |
 | AV-13 | al-Khwānsārī, second *Ḥāshiya* replying to al-Sabzawārī | PROSPECT; reportedly unpublished | High; do not collapse this into his earlier gloss | https://mullasadra.blogspot.com/2017/12/the-avicennian-tradition-iranian-and.html |
@@ -131,7 +131,7 @@ The [ten-chapter integrated reader](chapters/reader.html#ch01) now includes [Cha
 
 ## Stage 4 source-unit translation additions · 31 October 2026
 
-**Scope assertion:** Six historical units now have continuous English translations from identified edited searchable Arabic texts, with selective reported variants and explicit authorial-layer attribution. This does **not** mean that the whole Arabic works, all commentary branches or critical manuscripts have been translated.
+**Scope assertion:** Six historical units now have continuous English translations from identified Arabic or Latin edited texts, with selective reported variants and explicit authorial-layer attribution. This does **not** mean that the whole Arabic works, all commentary branches or critical manuscripts have been translated.
 
 | Key | Textual unit actually translated | Working state | Edition / access | Research file |
 |---|---|---|---|---|
@@ -147,3 +147,32 @@ The [ten-chapter integrated reader](chapters/reader.html#ch01) now includes [Cha
 **Major intellectual gain:** Distinguish the material generator, a preparatory *muʿidd*, the extrinsic bestower of substantial form, the constitutive intrinsic form, the complete cause, and the continuous existential conserving principle. The same person or principle may fill more than one role; historical texts specify the allocation. Full comparison with Aquinas requires precise Latin witness readings rather than assuming equivalence.
 
 **Editorial warning:** Elsewhere in this register AV-01 and AV-09 retain old status labels, because those labels apply to their full works. These new keys apply **only** to the specified chapter/issue units, not to the whole source family.
+
+
+## Stage 05 · Later Persian, Indian and post-*Tajrīd* witnesses — 31 October 2026
+
+**Direct outputs:** [searchable 11-fascicle edition](late-commentators.html), [machine-readable witness ledger](LATE_WITNESS_REGISTER_2026_10_31.json), [full cumulative handoff](handoffs/STAGE_05_LATE_COMMENTATORS.md).
+
+The eleven fascicles correspond to **eight distinct directly accessed historical works**. Repeated chapters from Lāhījī's *Gawhar* are multiple *translated units*, not multiple independent manuscripts; quotations of Qūshjī or Mīr Zāhid nested inside a later author's report are not independent direct-source autopsies.
+
+| Key | Direct work and cited locus | Source-translation status | Reader edition |
+|---|---|---|---|
+| AV-10A | Lāhījī, *Gawhar-i murād* II.3.4 opening pp.290–293 | **TRANSLATED-BOUNDED-OPENING**, Persian; variants reported by edited print | [Fascicle 04](LATE_FASCICLE_04_LAHIJI_GAWHAR_EMANATION_UNITY.md) |
+| AV-10B | Lāhījī, *Gawhar* II.3.6 pp.301–303 | **TRANSLATED-BOUNDED-CHAPTER**, Active Intellect/natural forms | [Fascicle 01](LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md) |
+| AV-10C | Lāhījī, *Gawhar* II.3.7 pp.304–306 | **TRANSLATED-BOUNDED-CHAPTER**, conserving/originating causes | [Fascicle 02](LATE_FASCICLE_02_LAHIJI_GAWHAR_TEMPORAL_CAUSATION.md) |
+| AV-10D | Lāhījī, *Gawhar* II.3.8 pp.307–309 | **TRANSLATED-BOUNDED-CHAPTER**, divine *riḍā* versus *qaṣd* | [Fascicle 03](LATE_FASCICLE_03_LAHIJI_GAWHAR_DIVINE_AGENCY.md) |
+| AV-10E | Lāhījī, *Sarmāya-i īmān* pp.37–38 | **TRANSLATED-BOUNDED-PASSAGE**, continuous dependence and builder | [Fascicle 08](LATE_FASCICLE_08_LAHIJI_SARMAYA_IMAN_DEPENDENCE.md) |
+| KL-01 | Taftāzānī, *Sharḥ al-Maqāṣid* pp.78–79 | **THREE OBJECTIONS + ANSWER TRANSLATED**, mental existence | [Fascicle 06](LATE_FASCICLE_06_TAFTAZANI_MAQASID_MENTAL_EXISTENCE.md) |
+| KL-02 | Ījī/Jurjānī, *Mawāqif/Sharḥ* VI:7–8 with Siyālkūtī/Ḥalabī marginal layers | **LAYERED BOUNDED TRANSLATION**; anonymous glosses not identified with certainty | [Fascicle 07](LATE_FASCICLE_07_MAWAQIF_JURJANI_GLOSSES.md) |
+| IN-01 | Indian Tahānawī, *Kashshāf iṣṭilāḥāt* I:620–621, with Mīr Zāhid cited | **DIRECT ENTRY TRANSLATED; MĪR ZĀHID NESTED REPORT ONLY** | [Fascicle 05](LATE_FASCICLE_05_INDIAN_TAHANAWI_MIR_ZAHID_JAL.md) |
+| TJ-01 | Astarābādī, *al-Barāhīn al-qāṭiʿa* II:96–99, reporting Ṭūsī/Qūshjī/Khafrī/Khwānsārī | **DIRECT LATER COMMENTARY TRANSLATED; HISTORICAL VOICES NESTED** | [Fascicle 09](LATE_FASCICLE_09_POST_TAJRID_QUṢHJI_KHAFRI_KHWANSARI_POWER.md) |
+| PR-01 | Narāqī, *al-Lamaʿāt al-ʿarshiyya* pp.72 and 82 | **TWO BOUNDED NONCONTIGUOUS ARGUMENTS TRANSLATED** | [Fascicle 10](LATE_FASCICLE_10_NARAQI_LAMAAT_EXISTENCE_ESSENCE.md) |
+| PR-02 | Narāqī, *Sharḥ Ilāhiyyāt al-Shifāʾ* I:106–107, separate variant report p.110 | **BOUNDED COMMENTARY TRANSLATED; PRINTED AUTHOR-REPORTED NEGATION VARIANT** | [Fascicle 11](LATE_FASCICLE_11_NARAQI_SHARH_SHIFA_SECOND_INTENTIONS.md) |
+
+**Primary-site verified source entry points:** [Gawhar pp.301–303](https://ablibrary.net/book_content/b/17438/301?lang=ar), [Gawhar p.293](https://ablibrary.net/book_content/b/17438/293?lang=ar), [Tahānawī I:621](https://najafdesertlibrary.com/book/%D9%85%D9%88%D8%B3%D9%88%D8%B9%D8%A9-%D9%83%D8%B4%D8%A7%D9%81-%D8%A7%D8%B5%D8%B7%D9%84%D8%A7%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86-%D9%88%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85/v/1/p/621), [Astarābādī II:96–99](https://lib.rafed.net/view.php?b_id=718&page=91&type=c_fbook), [Narāqī *Lamaʿāt* p.72](https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%84%D9%85%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%B4%D9%8A%D8%A9/v/1/p/72).
+
+**Especially important direct historical verdict:** Lāhījī's *Gawhar* pp.301–303 unambiguously assigns rational souls and sublunary specific forms to the **tenth intellect**, while pp.290–293 say intermediaries are not independent **true existential creators**. The two claims must be reconciled by distinctions of higher existential causality, intellect-mediated form-bestowal, the intrinsic form, and material preparedness. Narāqī's *Lamaʿāt* demonstrates that later Persian ontology also develops existence-first positions. The Indian Tahānawī text traces Mīr Zāhid's reported *jaʿl* debate.
+
+**New separate witnesses located but NOT translated:** Mīr Zāhid [1856 public-domain scan](https://commons.wikimedia.org/wiki/File:Hashiya_Ala_Sharah_Al_Muwafiq_Umoor_E_Aamma_(IA_in.ernet.dli.2015.324001).pdf), [Delhi 1874](https://kutuphane.osmanlica.com/kitap/5250986), [Lucknow 1876](https://search.worldcat.org/title/alhashyh-lmyr-zahd-ala-shrh-almwaqf/oclc/978479874), Muḥammad ʿAbd al-Ḥaqq al-Khayrābādī's [Indian supercommentary c.1880](https://dar.bibalex.org/en/BookDetail/BookDetail.aspx?keyword=DAF-Job%3A166828&queryParam=id), Faḍl-i Ḥaqq's [1904 Cairo *al-Hadiyya*](https://ddl.ae/book/95961), and the original Khwānsārī/Jilwa works. These remain **acquisition and independent witness-collation tasks**, not entries falsely labelled as primary translations.
+
+**Integrity note:** neither a modern edited text nor a catalogue constitutes independent manuscript collation. This register documents source-verified passages, inferred philosophical implications, reported voices, and their limits. The end-to-end corpus is **not** exhaustive or critical in the full manuscript-stemmatic sense.
