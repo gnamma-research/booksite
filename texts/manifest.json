@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-library-manifest-v1",
   "project": "Gnamma Research",
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "collections": [
     "texts",
     "essays",
@@ -122,14 +122,16 @@
         "kalām",
         "philosophy"
       ],
-      "status": "source-graded-working-translation",
+      "status": "complete-page-coverage-working-translation",
       "language": [
-        "ar",
-        "en-provisional"
+        "ar-1912-facsimile",
+        "en-page-aligned-preliminary"
       ],
       "url": "texts/al-taftazani/tahdhib-al-kalam/",
       "related_commentary_id": "sanandaji-taqrib-maram",
-      "note": "Chapter I now consecutively readable and directly compared against Taqrīb I:7–33; 83 working units overall, with Chapters II–VI still discontinuous and uncertified. Direct locus register under editorial/."
+      "note": "1912 Cairo printing is available, with 113 source pages (15–127) covered by a page-aligned preliminary interpretive English draft. The shorter bilingual thematic reader retains unresolved textual gaps; clause-level critical translation and multiple witness collation remain outstanding. Linked Sanandajī translations are selected excerpts, not the entire two-volume commentary.",
+      "full_reader_url": "texts/al-taftazani/tahdhib-al-kalam/complete/",
+      "commentary_layer": "Taqrīb al-Marām · linked selected translations"
     },
     {
       "id": "sanandaji-taqrib-maram",
@@ -143,14 +145,14 @@
         "commentary",
         "philosophy"
       ],
-      "status": "translation-begun",
+      "status": "selected-translation-commentary-layer",
       "language": [
         "ar-selections",
         "en-selections"
       ],
       "url": "texts/al-sanandaji/taqrib-al-maram/",
       "related_matn_id": "taftazani-tahdhib-kalam",
-      "note": "19 directly image-checked selective commentary translations; two-volume complete sequential translation outstanding."
+      "note": "20 source-based selective commentary translations, including a newly translated opening methodological explanation, crosslinked to the Tahdhīb reader. The complete 632-scan-page work remains untranslated as continuous text."
     },
     {
       "id": "taftazani-tahdhib-logic",
@@ -164,14 +166,14 @@
         "philosophy",
         "methods of inference"
       ],
-      "status": "continuous-working-translation",
+      "status": "continuous-working-translation-partially-rechecked",
       "language": [
         "ar",
         "en"
       ],
       "url": "texts/al-taftazani/tahdhib-al-mantiq/",
       "related_kalam_id": "taftazani-tahdhib-kalam",
-      "note": "Nineteen continuous editorial sections of the short logic text in Arabic–English; original Arabic based on the user-supplied logic matn and later bilingual reader; critical proofing of the 1587 witness and detailed modal syllogism comparison outstanding."
+      "note": "Nineteen English logical divisions are available; opening four Arabic units corrected against the 1912 Cairo scan. Full Arabic collation, detailed proof of modal inferences and completion of explanatory commentary remain outstanding."
     }
   ],
   "research": [
