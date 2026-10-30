@@ -264,3 +264,12 @@ The earlier first IX.5 excerpt is now superseded as a translation-length limitat
 VI.1 provides the preceding **four causes** scheme and explicitly locates efficient causality in the bestowal of existence rather than in the accidental description “after not having existed.” The concluding thesis is that an effect needs the giver of existence for as long as it is existent. VI.2 differentiates the causal levels and temporal succession; IX.5 articulates the separate form-bestower's cooperation with natural preparations. This is a connected three-chapter demonstration of distinct but mutually ordered kinds of efficient causation, not a mere slogan about divine maintenance.
 
 The ten earlier thematic research chapters and all textual-integrity cautions remain unchanged. Full manuscript-critical collation, all twenty source domains, and live Pages validation remain open.
+
+
+## Synthesis 1.16 — Aquinas' explicit secondary conservation (31 October 2026)
+
+The full authorial structure of *Summa theologiae* I q.104 aa.1–2, comprising objections, contrary authorities, responses and replies, has now been translated from the Leonine Latin at [**Fascicle F**](PRIMARY_TRANSLATION_FASCICLE_F_AQUINAS_ST104.md) and made readable in the [GNAMMA primary reader](primary-translations.html#fascicle-f). Its authoritative printed-text paragraph markers are **32757–32774** ([Corpus Thomisticum](https://www.corpusthomisticum.org/sth1103.html)).
+
+Two direct, nonnegotiable conclusions follow. First, Aquinas agrees that the builder is a cause of a house's *fieri*, not directly its continuing *esse*, while the sun–air illustration expresses continuing dependence on a giver of being. Second, he **expressly allows causes intermediate between God and conserved effects** (*ST* I q.104 a.2): the First principally conserves, and intermediate causes secondarily conserve. The actual Avicenna–Aquinas difference concerns the specific allocations of the causation of forms, divine willing, cosmic mediation and the generation of composites, not a simple opposition between “mediated” and “unmediated” preservation.
+
+This fifth fascicle completes two bounded *Aquinas* articles, not all of q.104, and does not resolve primary evidence for later Persian and Indian commentaries.
