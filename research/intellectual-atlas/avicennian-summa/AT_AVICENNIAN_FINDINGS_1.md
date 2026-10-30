@@ -298,3 +298,8 @@ This is a complete translation of one Thomistic *question* (q.104) as bounded wo
 6. **Taftāzānī *Sharḥ al-Maqāṣid* pp.78–79 and composite *Sharḥ al-Mawāqif* VI:7–8** give the conceptual distinction between actual physical individuation and mental representation, while anonymously interleaved Siyālkūtī/Ḥalabī glosses still need individual attribution.
 
 **Critical status:** unlike earlier purely analytic plans, these entries have directly inspected original-language text and working translations. However, they do **not** amount to full corpus translation, a manuscript apparatus, or a definitive whole-of-school historiography. See Stage 05 witness ledger for exactly what remains uncertain.
+
+
+### Indian natural-philosophy documentary supplement (31 October 2026)
+
+A further **mediated historical quotation**, now translated and source-graded at [Indian annex 01](INDIAN_PRIMARY_QUOTATION_01_KHAYRABADI_HEAT.md), presents five arguments from Faḍl-i Ḥaqq al-Khayrābādī's *al-Hadiyya al-saʿīdiyya* (1904 pp.92–94) as reproduced by a modern history of heat (2023 pp.202–203). The examples of friction, sealed/porous vessels and ice concern *physical qualitative transformation* and in one case *kawn*. They show a live nineteenth-century Indian Peripatetic argument about material change, but **not** a verified departure from the separate Giver of Forms. This is explicitly a **quotation-through-secondary-source**: original 1904 witness and variants remain uncollated.
