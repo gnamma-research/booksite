@@ -48,7 +48,7 @@ function install(){
  window.addEventListener('resize',()=>{if(navOpen)setNav(true);sync();});
  window.addEventListener('hashchange',()=>{setNav(false);setTimeout(sync,0);});
  $('#reading-dock').insertAdjacentHTML('beforeend','<div id="saved-counts" hidden></div>');
- new MutationObserver(()=>{sync();enhanceDictionary();enhanceEditions();}).observe($('#main'),{childList:true});
+ new MutationObserver(()=>{sync();enhanceDictionary();}).observe($('#main'),{childList:true});
  new MutationObserver(enhanceDictionary).observe($('#sheet-body'),{childList:true});
  sync();
 }

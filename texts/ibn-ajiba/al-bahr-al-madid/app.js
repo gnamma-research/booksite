@@ -110,7 +110,16 @@ window.BahrReader={
  get selected(){return selected;},catalog,byId,E,N,data,record,readURL,sheet,closeSheet,toast,
  savePrefs,changeSetting,visiblePlace,restorePlace,renderReader,menu,contents,settings,
  page,home,annotation,readingDesk,citationPanel,passageNotes,download,
- saveDesk,paintHighlights,openDictionary,linkLexicon,
+ saveDesk,paintHighlights,openDictionary,linkLexicon,getSearchIndex,snippet,unitHTML,
+ importParsed(backup,choice={bookmarks:true,highlights:true,notes:true}){
+  const incoming=validateDesk(backup).filter(x=>choice[({bookmark:'bookmarks',highlight:'highlights',note:'notes'})[x.type]]);
+  const merged=mergeDesk(desk,incoming);
+  if(!writeStore('desk',merged.items))throw Error('Storage is unavailable. Your existing records have been kept.');
+  desk=merged.items;
+  return {changes:merged.added,conflicts:merged.conflicts,historyAdded:0};
+ },
+ backup(){return JSON.stringify({format:'gnamma-reading-desk',version:1,work:'ibn-ajiba-bahr-vol1',exportedAt:new Date().toISOString(),items:desk});},
+
  async setPrefs(values,repaint=false){const place=visiblePlace();Object.assign(prefs,values);savePrefs();if(repaint&&view==='read')await renderReader(current,'',place);else requestAnimationFrame(()=>restorePlace(place));},
  async resume(){const p=readStore('progress',{});location.hash=readURL(p.r||current||'preface',p.anchor||'',p.lang||'');},
  addBookmark(id){const r=id||visiblePlace()?.r||current;if(!byId.has(r))return;const existing=desk.find(x=>!x.archived&&x.type==='bookmark'&&x.r===r&&x.anchor==='unit-'+r);if(existing){location.hash='#/desk';return;}const now=new Date().toISOString();desk.push({id:newId(),type:'bookmark',r,anchor:'unit-'+r,lang:'en',quote:'',note:'',createdAt:now,updatedAt:now,archived:false});saveDesk();window.BahrUI?.sync();toast('Section bookmarked.');},
