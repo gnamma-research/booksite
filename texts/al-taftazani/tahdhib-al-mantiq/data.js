@@ -9,7 +9,7 @@ window.GNAMMA_BOOK={
     {
       "id": "L.01",
       "title": "Opening dedication and preface",
-      "arabic": "وجعل لنا التوفيق خير رفيق،الحمد لله الذي هدانا سواء الطريق ونوًرا،والصلاة والسلام على من أرسله هدى هو بالاهتداء حقيق وعلى آله وأصحابه الذين سعدوا في مناهج الصدق،به الاقتداء يليق فهذا غاية، وبعد. وصعدوا في معارج الحق بالتحقيق،بالتصديق وتقريب المرام من تقرير،تهذيب الَكَلام في تحرير الَمْنِطق والكلام جعلته تبصرة لمن حاول التبصر لدى الإفهام.عقائد الإسلام سيما الولد الأعز،وتذكرة لمن أراد أن يتذكر من ذوي الأفهام لا، سمي حبيب الله عليه التحية والسلام،الحفي الحري بالإكرام وعلى الله التوكل وبه، ومن التأييد عصام،زال له من التوفيق قوام .الاعتصام",
+      "arabic": "بسم الله الرحمن الرحيم. الحمد لله الذي هدانا سواء الطريق، وجعل لنا التوفيق خير رفيق، والصلاة والسلام على من أرسله هدى هو بالاهتداء حقيق، ونورا به الاقتداء يليق، وعلى آله وأصحابه الذين سعدوا في مناهج الصدق بالتصديق، وصعدوا في معارج الحق بالتحقيق. وبعد، فهذا غاية تهذيب الكلام في تحرير المنطق والكلام، وتقريب المرام من تقرير عقائد الإسلام. جعلته تبصرة لدى الأفهام، وتذكرة لمن أراد أن يتذكر من ذوي الأفهام، سيما الولد الأعز الحفي الحري بالإكرام، سمي حبيب الله عليه التحية والسلام. لا زال له من التوفيق قوام، ومن التأييد عصام، وعلى الله التوكل وبه الاعتصام.",
       "english": "Praise belongs to God, who has guided us to the straight course and made success [tawfīq] our best companion. Blessings and peace be upon the one whom He sent as a guidance worthy of being followed in finding guidance, and as a light whose example deserves to be followed; and upon his family and companions, who attained felicity, on the paths of truthfulness, through assent [taṣdīq], and ascended, on the steps of truth, through verification [taḥqīq]. To proceed: this is the utmost refinement of discourse, in setting forth logic and kalām, and in bringing near the intended aim through setting out the doctrines of Islam. I have made it an illumination for whoever seeks insight in the course of instruction, and a reminder for whoever among those possessing understanding wishes to recollect; and especially for the dearest, most affectionate son deserving of honour, the namesake of the Beloved of God—upon him greetings and peace. May success always sustain him, and divine support protect him. Our reliance is upon God, and in Him we seek protection.",
       "notes": [
         {
@@ -21,58 +21,82 @@ window.GNAMMA_BOOK={
       "gap": false,
       "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "3"
     },
     {
       "id": "L.02",
       "title": "First part: the introduction to logic",
-      "arabic": "الِعْلم إن كان إذعاًنا للنسبة: مقدمة.القسم الأول في الَمْنِطق ويقتسمان بالضرورة والاكتساب بالنظر، وإلا فتصور،فتصديق وقد يقع فيه الخطأ فاحتيج.وهو ملاحظة المعقول لتحصيل المجهول وموضوعه المعلوم. وهو الَمْنِطق،إلى قانون يعصم عنه في الفكر التصوري والتصديقي من حيث إنه يوصل إلى مطلوب تصوري أو تصديقي يسمى حجة،فيسمى معّرًفا",
+      "arabic": "القسم الأول في المنطق. مقدمة. العلم إن كان إذعانا للنسبة فتصديق وإلا فتصور، وينقسمان بالضرورة إلى الضرورة والاكتساب بالنظر، وهو ملاحظة المعقول لتحصيل المجهول، وقد يقع فيه الخطأ فاحتيج إلى قانون يعصم عنه وهو المنطق. وموضوعه المعلوم التصوري والتصديقي من حيث يوصل إلى مطلوب تصوري فيسمى معرفا أو تصديقي فيسمى حجة.",
       "english": "The first part concerns logic. Introduction. Knowledge [ʿilm], if it consists in assent to a relation [idhʿān li-l-nisba], is judgment or assent [taṣdīq]; otherwise it is conception [taṣawwur]. Each is divided into what is necessary or immediate [ḍarūrī] and what is acquired through rational consideration [naẓar]. The latter is the contemplation of something intelligible for the acquisition of something unknown. Error may arise in it; consequently a rule or canon that protects thinking from error was needed, namely, logic [manṭiq]. Its subject matter is what is already known, whether conceptually or propositionally, insofar as it leads to a sought conception—and is then called a means of definition [muʿarrif]—or to a sought judgment—and is then called a proof [ḥujja].",
       "notes": [
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "Taṣdīq is assent to the relation expressed in a judgment; taṣawwur is the apprehension of a meaning without that assent. The division is not the distinction between true and false propositions, but between two intellectual acts."
+        },
+        {
+          "type": "Terminology",
+          "text": "Naẓar is disciplined examination of intelligible materials to arrive at what is not yet known. The muʿarrif serves a sought conception, and the ḥujja a sought assent."
         }
       ],
       "grade": "B",
       "gap": false,
       "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
       "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-02",
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "4"
     },
     {
       "id": "L.03",
       "title": "Signification and expressions",
-      "arabic": "وعلى، وعلى جزئه تضمن،دلالة اللفظ على تمام ما وضع له مطابقة وتلزمهما، ولا بد فيه من اللزوم عقًلا أو عرًفا.الخارج التزام والموضوع إن قصد بجزئه الدلالة على.المطابقة ولو تقديًرا ولا عكس وإما ناقص تقييدي أو، إما تام خبر أو إنشاء،جزء معناه فمركب وهو إن استقل فمع الدلالة بهيئته على أحد. وإلا فمفرد،غيره وأيًضا إن اتحد. وإلا فأداة، وبدونها اسم،الأزمنة الثلاثة كلمة وبدونه متواطئ إن تساوت أفراده،معناه فمع تشخصه وضًعا علم فإن وضع لكل، وإن كثر.ومشكك إن تفاوتت بأولية أو أولوية وإلا فإن اشتهر في الثاني فمنقول ينسب إلى الناقل،ابتداء فمشترك .وإلا فحقيقة ومجاز",
+      "arabic": "فصل. دلالة اللفظ على تمام ما وضع له مطابقة، وعلى جزئه تضمن، وعلى الخارج التزام، ولا بد من اللزوم عقلا أو عرفا، وتلزمهما المطابقة ولو تقديرا ولا عكس. فصل. والموضوع له إن قصد بجزئه منه الدلالة على جزء المعنى فمركب، إما تام خبر أو إنشاء، وإما ناقص تقييدي أو غيره، وإلا فمفرد، وهو إن استقل في الدلالة بهيئته على أحد الأزمنة كلمة، وبدونها اسم، وإلا فأداة. وأيضا إن اتحد معناه فمع تشخصه وضعا علم، وبدونه متواطئ إن استوت أفراده، ومشكك إن تفاوتت إما بأولية أو أولوية، وإن كثر معناه فإن وضع لكل فمشترك، وإلا فإن اشتهر في الثاني فمنقول ينسب إلى الناقل، وإلا فحقيقة ومجاز.",
       "english": "A word’s signification [dalāla] of the whole meaning for which it was instituted is correspondence [muṭābaqa]; of part of that meaning, inclusion [taḍammun]; and of something external to it, implication [iltizām]. Implicative signification requires a necessary connection, whether rationally or by convention. Corresponding signification is presupposed by both inclusion and implication, even if only implicitly; the converse does not hold. If, in establishing an expression, it is intended that one of its components signify a component of its meaning, it is compound [murakkab]. Such an expression is either complete [tāmm], being a statement or an enunciation [khabar or inshāʾ], or incomplete [nāqiṣ], being restrictive or otherwise. If this is not intended, the expression is simple [mufrad].",
       "notes": [
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "Muṭābaqa names signification of the whole instituted meaning, taḍammun of its part, and iltizām of a necessary accompaniment external to it. The last presupposes an intelligible or conventional connection rather than mere association."
+        },
+        {
+          "type": "Explanation",
+          "text": "A mutawāṭiʾ is predicated without priority or gradation among its instances; mushakkik permits differentiated priority or intensity. Neither should be confused with equivocation (mushtarak)."
         }
       ],
       "grade": "B",
       "gap": false,
       "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "4–5"
     },
     {
       "id": "L.04",
       "title": "Particular and universal concepts; degrees of instantiation",
-      "arabic": "وإلا، المفهوم إن امتنع فرض صدقه على كثيرين فجزئي:فصل امتنعت أفراده أو أمكنت ولم توجد أو وجد الواحد فقط،فكلي أو الكثير مع التناهي أو عدمه،مع إمكان الغير أو امتناعه",
+      "arabic": "فصل. المفهوم إن امتنع فرض صدقه على كثيرين فجزئي وإلا فكلي؛ امتنعت أفراده أو أمكنت ولم توجد، أو وجد الواحد فقط مع إمكان الغير أو امتناعه، أو الكثير مع التناهي أو عدمه.",
       "english": "Chapter. If it is impossible to suppose that a concept truly applies to many [individuals], it is a particular [juzʾī]; otherwise it is a universal [kullī]. Instances of a universal may be impossible; or they may be possible but not exist; or only one may exist, either with others possible or with others impossible; or many may exist, whether finite or infinite in number.",
       "notes": [
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "A universal is defined by the possibility of being predicated truly of many, not by the actual existence of several instances. Hence it can have no instances, one instance, or many."
         }
       ],
       "grade": "B",
       "gap": false,
       "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "5"
     },
     {
       "id": "L.05",
@@ -193,6 +217,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "The standard modal forms distinguish necessity, permanence, description-dependent predication and temporal possibility. Their traditional inferential behavior should not be replaced by a generic modern necessity operator."
         }
       ],
       "grade": "B",
@@ -210,6 +238,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "In a true disjunction, both conjunction and joint falsity are excluded. A preventing-conjunction disjunction excludes simultaneous truth; a preventing-exclusion disjunction excludes simultaneous falsity."
         }
       ],
       "grade": "B",
@@ -231,6 +263,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "Traditional contradiction rules require attention to quantity, quality and modality under a fixed subject and predicate. A change of supposition or time can destroy the intended contradictory relation."
         }
       ],
       "grade": "B",
@@ -298,6 +334,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "The minor term is the subject of the conclusion, the major its predicate, and the middle term is repeated across both premises. The four figures are distinguished by the middle term’s position."
         }
       ],
       "grade": "B",
@@ -349,6 +389,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "The five syllogistic arts are classified by the epistemic standing of their premises and the ends of their use; demonstration differs from dialectic, rhetoric, poetics and sophistry in more than persuasive force."
         }
       ],
       "grade": "B",
