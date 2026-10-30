@@ -146,3 +146,23 @@ Aquinas, *De principiis naturae*, on the insufficiency of matter, form and priva
 For each author, collate (i) the definition of *fāʿil*, (ii) the distinctions of *muʿidd* and *mufīd al-wujūd*, (iii) the status of *ṣūra nawʿiyya*, (iv) the causal explanation of elemental and organic generation, and (v) whether *ʿaql faʿʿāl* remains an ontological bestower. Evidence for one is not evidence for all five.
 
 **Status:** An additional secondary-source-supported conceptual advance, not a completed critical edition of the late commentaries.
+
+
+## Synthesis 1.4 — causal sufficiency, procession, essence and finality (30 October 2026)
+
+### 1. Complete and incomplete cause: a genuinely post-Avicennian technical refinement
+Muhammet Fatih Kılıç, “The Emergence of the Distinction between Complete and Incomplete Causes from Avicenna to al-Abharī,” *Nazariyat* 4/1 (2017), 63–85, https://www.nazariyat.org/en/issues/vol4-iss1/m0036, traces *al-ʿilla al-tāmma* / *al-ʿilla al-nāqiṣa* through *Ishārāt* III.V.8, Abū al-Barakāt, Suhrawardī, Rāzī, Abharī and Kātibī. Kılıç attributes the first clear systematic distinction to Abharī and Kātibī; earlier formulations are not yet a fully defined dichotomy. A major research question is whether a complete cause includes divine willing or is conceived as necessitating its effect by sufficiency alone. This is an identifiable development of the causal *apparatus*, even if a particular author retains classical Avicennian cosmology.
+
+### 2. Rule of the One: general causal principle, not just emanation
+Davlat Dadikhuda, “Rule of the One: Avicenna, Bahmanyār, and al-Rāzī on the Argument from the Mubāḥathāt,” *Nazariyat* 6/2 (2020), 69–97, https://nazariyat.org/en/issues/cilt-6-sayi-2/bir-kurali-mubahasattaki-arguman-uzerine-i-bn-sina-behmenyar-ve-razi, distinguishes narrow and broad formulations of *qāʿidat al-wāḥid* and treats Avicenna's version as a general principle of efficient causality. Bahmanyār's criticism, subsequently prominent in Rāzī, must be collated against the actual *Mubāḥathāt* argument before concluding that a commentator abandons the whole emanative hierarchy. Distinguish (a) one immediate effect from an absolutely simple cause, (b) many effects through mediated causes, (c) numerical plurality of effects, and (d) differentiation by respects (*ḥaythiyyāt*).
+
+### 3. Essence/existence: three historically distinct options
+The SEP article https://plato.stanford.edu/entries/arabic-islamic-essence/ and the Rāzī entry https://plato.stanford.edu/entries/al-din-al-razi/ distinguish Avicenna's neutral consideration of quiddity, Rāzī's stronger account of essential priority and extra-mental distinction, and Suhrawardian challenges to reifying existence. Do not describe Rāzī's essence-as-such as a stock of independently subsisting nonexistents. Nor should the real-versus-conceptual distinction be confused with the later Ṣadrian priority of existence.
+
+### 4. Final causality in noncognitive nature
+https://plato.stanford.edu/archives/spr2019/entries/arabic-islamic-causation/ reports Rāzī's objection to natural ends without cognition and Ṭūsī's reply in his *Ishārāt* commentary (part IV, 7, 18), which appeals to a kind of *shuʿūr* attributed to nature. This is a separate dispute from whether natural efficient agents bestow species forms. Compare Aquinas on natural teleology and the ordering of noncognitive agents to ends; do not translate *shuʿūr* automatically as full rational deliberation.
+
+### Integrated comparison
+The post-Avicennian transformation has at least four independent axes: (i) *ontological* status of existence, (ii) *causal sufficiency* and divine willing, (iii) *scope of the Rule of the One* and procession, and (iv) *teleology* of noncognitive nature. These interact with (v) substantial generation, (vi) the Giver of Forms, and (vii) substantial motion but cannot be reduced to them.
+
+**Evidence level:** verified bibliographical abstracts and scholarly overview locators, not newly collated primary Arabic passages. The complete edition remains open.
