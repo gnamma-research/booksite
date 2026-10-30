@@ -24,7 +24,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  page.on('pageerror',e=>errors.push(String(e)));
  page.on('response',r=>{if(r.url().startsWith(url)&&r.status()>=400)errors.push(r.status()+' '+r.url());});
  const go=async route=>{await page.goto(url+'#/'+route);await page.waitForFunction(()=>!document.querySelector('.loading'));};
- const overflow=async name=>{assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),name+' horizontal overflow');};
+ const overflow=async name=>{const detail=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,items:[...document.querySelectorAll('body *')].filter(n=>{const b=n.getBoundingClientRect();return b.width&&b.right>innerWidth+1}).slice(0,12).map(n=>({tag:n.tagName,id:n.id,class:n.className,width:n.getBoundingClientRect().width,right:n.getBoundingClientRect().right}))}));if(detail.scroll>detail.width+1){console.error(name,JSON.stringify(detail));await page.screenshot({path:path.join(out,'overflow.png')});}assert(detail.scroll<=detail.width+1,name+' horizontal overflow');};
  await go('home');await page.locator('.chapter').first().waitFor();
  assert.equal(await page.locator('.chapter').count(),4);
  await page.screenshot({path:path.join(out,'home-desktop.png')});

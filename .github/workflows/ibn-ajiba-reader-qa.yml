@@ -8,7 +8,7 @@ on:
       - 'tests/ibn-ajiba/**'
       - '.github/workflows/ibn-ajiba-reader-qa.yml'
 permissions:
-  contents: read
+  contents: write
 jobs:
   reader:
     runs-on: ubuntu-latest
@@ -22,6 +22,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - run: python3 tests/ibn-ajiba/package_reader.py
       - run: node --test tests/ibn-ajiba/reader-core.cjs
       - run: npm install --no-save --package-lock=false playwright
       - run: npx playwright install --with-deps chromium
@@ -29,6 +30,14 @@ jobs:
         run: |
           python3 -m http.server 8766 --bind 127.0.0.1 --directory "$BAHR_DIR" > /tmp/bahr-server.log 2>&1 &
           node tests/ibn-ajiba/reader-browser.cjs
+      - name: Save the verified offline reader
+        if: github.event_name == 'push'
+        run: |
+          git add "$BAHR_DIR/offline-reader.zip" "$BAHR_DIR/offline-files.json"
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Refresh verified Ibn Ajiba offline reader"
+            git push origin HEAD:codex/ibn-ajiba-reader-20261030
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
