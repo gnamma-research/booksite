@@ -80,6 +80,8 @@ jobs:
               assert root+'avicennian-summa/index.html' in names
               assert root+'avicennian-summa/causal-dependence.html' in names
               assert root+'avicennian-summa/chapters/index.html' in names
+              assert root+'avicennian-summa/SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md' in names
+              assert root+'avicennian-summa/primary-translation-causation.md' in names
               assert root+'avicennian-summa/chapters/01-mental-existence-and-quiddity.md' in names
               assert root+'avicennian-summa/chapters/07-unity-plurality-and-divine-knowledge.md' in names
               assert root+'avicennian-summa/SOURCE_REGISTER.md' in names
