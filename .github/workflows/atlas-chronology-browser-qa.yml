@@ -44,8 +44,8 @@ jobs:
           assert h==d
           assert len(d["nodes"])==386 and len(d["edges"])==362
           assert len(d["sources"])==359 and len(d["history"]["sources"])==72
-          assert len(d["history"]["periods"])==49 and len(d["textual_families"])==18 and len(d["history"]["networks"])==5
-          print("Revision-7 canonical data, Neoplatonic relationships and historical-school bands verified")
+          assert len(d["history"]["periods"])==49 and len(d["textual_families"])==20 and len(d["history"]["networks"])==5
+          print("Revision-7.2 canonical data, Neoplatonic relationships and historical-school bands verified")
           PY
       - name: Install Chromium and Playwright
         run: |
