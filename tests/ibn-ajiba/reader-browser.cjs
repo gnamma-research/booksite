@@ -174,12 +174,22 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await page.locator('[data-print-tier="study"]').click();await page.locator('#print-custom').evaluate(el=>el.open=true);
  await page.locator('#print-start').selectOption('0');await page.locator('#print-end').selectOption('0');
  await page.locator('[data-print-option="index"]').uncheck();
+ const printHighlight=await page.evaluate(async()=>{
+  const r=await BahrReader.record('preface'),div=document.createElement('div');div.innerHTML=r.segments[0].html;
+  const p=div.querySelector('p'),walk=document.createTreeWalker(p,NodeFilter.SHOW_TEXT);let node,quote;
+  while(node=walk.nextNode()){if(node.textContent.trim().length>8){quote=node.textContent.trim().slice(0,8);break;}}
+  BahrReader.desk.push({id:'qa-print-highlight',type:'highlight',r:'preface',anchor:'en-preface-s1-p1',lang:'en',quote,note:'',createdAt:'2024-01-02T03:04:05Z',updatedAt:'2024-01-02T03:04:05Z',archived:false});
+  return quote;
+ });
+ await page.locator('[data-print-option="highlights"]').evaluate(el=>el.closest('details').open=true);
+ await page.locator('[data-print-option="highlights"]').check();
  await page.locator('[data-feature="prepare-book"]').click();
  await page.locator('#bahr-print-frame').waitFor();
  const frame=page.frameLocator('#bahr-print-frame');
  await frame.locator('.print-unit').waitFor();
  assert.equal(await frame.locator('.print-unit').count(),1);
  assert.equal(await frame.locator('.ar-column p').count(),records[0].ar.split('\n').length);
+ assert.equal(await frame.locator('#en-preface-s1-p1 mark').textContent(),printHighlight);
  await page.locator('[data-feature="close-print"]').click();
  await go('desk');await page.locator('.desk-manage summary').click();await page.locator('[data-feature="transfer"]').click();
  assert(await page.locator('#gn-transfer-shade').isVisible());

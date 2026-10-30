@@ -185,11 +185,12 @@ async function prepareBook(){
    const ar=settings.marks==='unvowelled'?r.ar.replace(/[\u064b-\u065f\u0670\u06d6-\u06ed]/g,''):r.ar;
    const en=r.segments.map((segment,i)=>{
     const temp=document.createElement('div');temp.innerHTML=segment.html;
+    temp.querySelectorAll('p').forEach((p,j)=>p.id='en-'+r.id+'-s'+(i+1)+'-p'+(j+1));
     temp.querySelectorAll('[data-note],a[href*="#/note/"]').forEach(x=>{const id=x.dataset.note||x.getAttribute('href').split('/').pop();if(id)noteIds.add(id);});
     temp.querySelectorAll('button').forEach(x=>x.replaceWith(document.createTextNode(x.textContent)));
     return '<section id="en-'+r.id+'-s'+(i+1)+'">'+(settings.headings==='editorial'||segment.authorial?'<h3>'+E(segment.title)+'</h3>':'')+temp.innerHTML+'</section>';
    }).join('');
-   html.push('<article class="print-unit '+(settings.ar&&settings.en?'':'single')+'"><h1>'+E(r.title)+'</h1><p>Q '+E(r.q)+' · Cairo '+E(r.cairo)+'</p><div class="parallel">'+(settings.ar?'<div class="ar-column" lang="ar" dir="rtl">'+ar.split('\n').map((p,i)=>'<p id="ar-'+r.id+'-'+(i+1)+'">'+E(p)+'</p>').join('')+'</div>':'')+(settings.en?'<div class="en-column">'+en+'</div>':'')+'</div>'+
+   html.push('<article id="unit-'+E(r.id)+'" class="print-unit '+(settings.ar&&settings.en?'':'single')+'"><h1>'+E(r.title)+'</h1><p>Q '+E(r.q)+' · Cairo '+E(r.cairo)+'</p><div class="parallel">'+(settings.ar?'<div class="ar-column" lang="ar" dir="rtl">'+ar.split('\n').map((p,i)=>'<p id="ar-'+r.id+'-'+(i+1)+'">'+E(p)+'</p>').join('')+'</div>':'')+(settings.en?'<div class="en-column">'+en+'</div>':'')+'</div>'+
    (settings.notes!=='none'&&r.cairo_notes.length?'<h2>Cairo editor’s notes</h2>'+r.cairo_notes.map(n=>'<div class="source-note"><p>'+E(n.id)+'</p><p lang="ar" dir="rtl">'+E(n.ar)+'</p><p>'+E(n.en)+'</p></div>').join(''):'')+'</article>');
   }
   if(settings.notes!=='none'){
