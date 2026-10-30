@@ -5,7 +5,7 @@
 A continuous, independent Arabic–English edition of al-Taftāzānī's six kalām chapters, with Arabic to the right and clean English to the left; selective checked vocalisation; page/folio provenance; and numbered explanatory footnotes. The prose translation should be understandable without expanding al-Taftāzānī's actual wording by silently adding the commentator's ideas. Interpretive expansion belongs in clearly attributed footnotes.
 
 ## Currently imported
-- 64 source-ordered provisional records from the earlier Revision 12 text, of which many are non-contiguous or contain reconstructed readings.
+- 81 source-ordered provisional records from the earlier Revision 12 text, of which many are non-contiguous or contain reconstructed readings.
 - Links to a separate reader for ʿAbd al-Qādir al-Sanandajī.
 - Source grade and translator/editorial notes displayed without conflating matn and commentary.
 - A larger **140-unit audit** is filed separately: its unit count is not evidence that the original text has been translated continuously. In the previous register, 80 entries had gap flags and none qualified for definitive certification.
