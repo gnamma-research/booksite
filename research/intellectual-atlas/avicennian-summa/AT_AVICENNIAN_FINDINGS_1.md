@@ -221,3 +221,28 @@ An acceptable synthesis must distinguish vertical existential dependence, horizo
 **A new domain: differentia and multiple causes.** “Thirteenth-Century Debate About Avicenna's Definitions of Differentia,” *The Monist* 108 (2025), https://academic.oup.com/monist/article/108/3/306/8236467 , documents the Rāzī–Khūnajī dispute over whether a numerically single effect can have two independent causes. This bridges logic (differentia), metaphysics (causal individuation), and the Rule of the One. It should be compared with the *Mubāḥathāt* debate, not assimilated to it without proof.
 
 **Caution:** This review verifies scholarly reports and source locations. It does not constitute independent transcription of the Arabic primary witnesses or full site deployment.
+
+
+## Primary translation fascicle A — Avicenna, *Ilāhiyyāt* IX.5 (30 October 2026)
+
+**Witness:** Arabic excerpt printed in a modern scholarly treatment of Avicenna's hylomorphism, citing *Ilāhiyyāt* IX.5, §§6–7, Arabic edition 412.15–413.1; see https://www.asau.ru/files/pdf/1710664.pdf (p.171 of the PDF's printed pagination). This is a translation of the **attested excerpt only**, not a claim to have collated IX.5 in full.
+
+**Arabic (excerpt):**
+
+> فإذا أفرط ذلك واشتدّت المناسبة اشتدّ الاستعداد فصار من حقّ الصورة النارية أن تفيض ومن حقّ هذه أن تبطل ولأنّ المادّة ليست تبقى بلا صورة فليس قوامها عن ما ينسب إليه من المبادئ الأولى وحدها بل عنها وعن الصورة.
+
+**New English translation (working, independently rendered):**
+
+“When that [heating] becomes excessive and the suitability grows stronger, the preparedness intensifies. It then becomes fitting that the fiery form should emanate, and that this [preceding form] should cease. Because matter does not remain without form, its subsistence is not derived from what is ascribed to the first principles alone, but from them together with the form.”
+
+**Apparatus and analysis:**
+- *munāsaba* (“suitability” or “correspondence”) refers to an acquired fit between prepared matter and the form; do not translate it as mere resemblance.
+- *istiʿdād* is preparedness or disposition; the natural heating has a real causal role in its intensification.
+- *tafīḍ* (“emanate/flow forth”) is the decisive verb. The passage does not identify the heated matter as the efficient source bestowing the fiery form.
+- *tabṭul* marks the cessation of the preceding form; the antecedent of *hādhihi* requires the surrounding paragraph for final adjudication.
+- *qiwām* (“subsistence/constitution”) explicitly rules out construing matter as a self-subsisting substrate prior to all form.
+- **Inference:** The text coordinates natural disposition, form emanation and material subsistence; it does not reduce natural processes to illusion. The precise causal contribution of the Active Intellect requires the surrounding IX.5 and *Kawn wa-fasād* 13–14.
+
+**Next translation boundaries:** IX.5 preceding and following paragraphs; *Kawn wa-fasād* 13–14; Ṭūsī's *Risāla fī al-ʿilla al-tāmma* (critical edition in Kılıç, *Mukaddime* 8/1, 2017, 137–153, https://doi.org/10.19059/mukaddime.296100); Ṭūsī's *Risāla fī qawl al-ḥukamāʾ* (critical edition in Tellioğlu Ünver, *Tahkik* 17, 2026, 145–200, https://doi.org/10.66746/tahkik.1851947). These last two are **edition leads**, not translated here.
+
+**Editorial status:** One excerpt translated with lexical notes; no manuscript comparison, no complete chapter translation. Do not mark the primary translation corpus as complete.
