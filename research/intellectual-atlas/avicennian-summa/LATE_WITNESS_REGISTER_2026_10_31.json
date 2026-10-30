@@ -294,5 +294,20 @@
     "A Tahānawī report of Mīr Zāhid does not count as an independent Mīr Zāhid text.",
     "Printed A/B/C/F variants are reported by editions; no original witness inspected.",
     "A successful commit is not proof of GitHub Pages publication or scholarly exhaustiveness."
+  ],
+  "mediated_documentary_annexes": [
+    {
+      "id": "IN-KH-QUOTED-01",
+      "file": "INDIAN_PRIMARY_QUOTATION_01_KHAYRABADI_HEAT.md",
+      "historical_author": "Faḍl-i Ḥaqq al-Khayrābādī",
+      "historical_work": "al-Hadiyya al-saʿīdiyya fī l-ḥikma al-ṭabīʿiyya",
+      "original_print": "Cairo 1904, cited pp.92–94",
+      "transmission": "Extensive historical Arabic quotation reproduced in Sāʾir Baṣmajī, Tārīkh ʿilm al-ḥarāra (Hindawi 2023), printed pp.202–203",
+      "source_url": "https://downloads.hindawi.org/books/81461536.pdf#page=202",
+      "status": "translated-mediated-quotation-not-independent-original",
+      "original_1904_witness_inspected": false,
+      "independent_collation": false,
+      "scope": "five anti-latent-fire objections; no independent form-bestowal conclusion"
+    }
   ]
 }
