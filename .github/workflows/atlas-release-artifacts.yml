@@ -79,6 +79,9 @@ jobs:
               assert root+'neoplatonism/index.html' in names
               assert root+'avicennian-summa/index.html' in names
               assert root+'avicennian-summa/causal-dependence.html' in names
+              assert root+'avicennian-summa/chapters/index.html' in names
+              assert root+'avicennian-summa/chapters/01-mental-existence-and-quiddity.md' in names
+              assert root+'avicennian-summa/chapters/07-unity-plurality-and-divine-knowledge.md' in names
               assert root+'avicennian-summa/SOURCE_REGISTER.md' in names
               assert root+'downloads/intellectual-atlas-data.json' in names
               assert root+'downloads/Intellectual_Atlas_Reference_Revision7.pdf' in names
