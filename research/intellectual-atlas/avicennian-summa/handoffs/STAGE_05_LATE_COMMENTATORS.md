@@ -88,3 +88,8 @@ Tahānawī explicitly names Mīr Zāhid on *jaʿl*, preserving a systematic Indi
 ## 8. Cumulative recovery links
 
 [Stage 01](STAGE_01_CORPUS_AUDIT.md) → [Stage 02](STAGE_02_TEN_CHAPTER_EDITION.md) → [Stage 03](STAGE_03_RELEASE_HANDOFF.md) → [Stage 04](STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md) → **Stage 05** → [HANDOFF_CURRENT](../HANDOFF_CURRENT.md). The earlier [20-domain system map](../COMPREHENSIVE_SYSTEM.md), [20-domain audit](../SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md), [source register](../SOURCE_REGISTER.md) and [AT–Avicennian findings](../AT_AVICENNIAN_FINDINGS_1.md) remain in place and authoritative subject to the specific Stage 05 corrections above.
+
+
+## 9. Additional Indian documentary witness recovered in the same stage
+
+The modern historian Sāʾir Baṣmajī quotes the 1904 Cairo *al-Hadiyya al-saʿīdiyya* of **Faḍl-i Ḥaqq al-Khayrābādī**, pp.92–94, in *Tārīkh ʿilm al-ḥarāra* (2023), printed pp.202–203. A new [Indian documentary annex](../INDIAN_PRIMARY_QUOTATION_01_KHAYRABADI_HEAT.md) gives the five historically transmitted counterexamples to a latent-fire theory. It is **not a direct collation of the 1904 printing**, is not included among the eleven direct-access source fascicles, and does **not** settle whether Khayrābādī changed the ontology of the Giver of Forms. The appendix provides page locations, original short Arabic anchors and a fresh English rendering with interpretive cautions.
