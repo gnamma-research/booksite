@@ -76,7 +76,7 @@ function sync(){
  root.dataset.palette=p.palette;root.dataset.pageStyle=p.pageStyle;root.dataset.arabicFont=p.arabicFont;root.dataset.englishFont=p.englishFont;
  root.style.setProperty('--en-size',(20*p.fontScale)+'px');root.style.setProperty('--ar-size',(28*p.fontScale)+'px');
  root.style.setProperty('--arabic',({'amiri':'"Amiri"','scheherazade':'"Scheherazade New"','noto':'"Noto Naskh Arabic"'})[p.arabicFont]+',serif');
- root.style.setProperty('--serif',({'original':'"Iowan Old Style",Georgia','source-serif':'"Source Sans 3"','literata':'"Lexend"'})[p.englishFont]+',serif');
+ root.style.setProperty('--reader-english-font',({'original':'"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia','source-serif':'"Source Sans 3"','literata':'"Lexend"'})[p.englishFont]+',serif');
  document.body.classList.toggle('ui-focus',R.view==='read'&&p.mode!=='reading');
  document.body.classList.toggle('ui-continuous',R.view==='read'&&p.mode==='continuous');
  document.body.classList.toggle('ui-hide-apparatus',R.view==='read'&&p.mode!=='reading'&&!p.focusApparatus);

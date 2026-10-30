@@ -220,7 +220,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await page.locator('.gnw-card [data-gnw-close]').click();
  await page.locator('#location-button').click();
  await page.locator('.toc-surah').nth(1).locator('summary').click();await page.locator('.toc-link').nth(1).click();await page.locator('#unit-'+catalog[1].id).waitFor();
- await page.locator('#location-button').click();assert(await page.locator('#reading-history').count());
+ await page.locator('#location-button').click();await page.locator('#sheet[open]').waitFor();assert(await page.locator('#reading-history').count());
  assert((await page.evaluate(()=>BahrFeatures.history.exportData())).entries.length>=2);
  await page.locator('#sheet-close').click();
  pass('Saved source references survive backups; source reopening, explicit Word Context and recent reading locations work');
