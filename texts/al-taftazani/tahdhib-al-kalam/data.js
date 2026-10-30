@@ -3,7 +3,7 @@ window.GNAMMA_BOOK={
   "title": "Tahdhīb al-Kalām",
   "arabicTitle": "تهذيب الكلام",
   "author": "Saʿd al-Dīn al-Taftāzānī",
-  "status": "Source-graded working translation; not yet a complete or definitive critical edition",
+  "status": "Working translation: 81 source-ordered units with substantive gaps; not continuously or critically complete",
   "description": "The theological half of Tahdhīb al-Manṭiq wa-l-Kalām. English phrasing is kept readable; lexical explanations and Sanandajī's interpretive guidance belong in notes. Untranslated intervals are not silently filled.",
   "units": [
     {
@@ -1177,11 +1177,317 @@ window.GNAMMA_BOOK={
           "text": "1912 Cairo printed witness, working OCR locator OCR 1677–1688; original printed pagination and manuscript witness still need confirmation."
         }
       ]
+    },
+    {
+      "id": "IV.05",
+      "title": "The counterproposal about continuity",
+      "arabic": "والآخرون على أن الأمر القابل للاتصال والانفصال هو الجسم نفسه، وما يعرض عليه من الاتصال والانفصال أعراض.",
+      "english": "Others maintain that the body itself receives continuity and separation, while these are accidents occurring to it.",
+      "grade": "A",
+      "gap": false,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The immediately preceding account and this reply must be kept distinct; the exact opposing school still requires primary-witness verification."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "IV.09",
+      "title": "Simple and composite bodies",
+      "arabic": "قالت الحكماء: الأجسام إن ائتلفت من أجسام مختلفة الطبائع فمركب، وإلا فبسيط؛ والبسيط إما فلكي أو عنصري.",
+      "english": "The philosophers maintain that bodies formed from bodies of differing natures are composite; otherwise they are simple. A simple body is either celestial or elemental.",
+      "grade": "A",
+      "gap": false,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "This reports a philosophical classification without endorsing the thesis of an eternal celestial world."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "IV.11",
+      "title": "Celestial motion and a voluntary agent",
+      "arabic": "وعندنا [الأفلاك] ممكنة، وحركتها مستندة إلى الفاعل المختار.",
+      "english": "On our position, celestial bodies are contingent, and their movement depends on an agent acting by choice.",
+      "grade": "B",
+      "gap": true,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The bracketed subject is an editorial recovery; the antecedent needs independent checking."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "IV.21",
+      "title": "Virtues as balanced faculties",
+      "arabic": "وأصول الأخلاق الفاضلة اعتدال القوة الشهوية وهي العفة، والغضبية وهي الشجاعة، والنطقية وهي الحكمة، ومجموعها العدالة.",
+      "english": "The roots of excellent character lie in moderation of the appetitive faculty, giving temperance; the irascible faculty, giving courage; and the rational faculty, giving wisdom. Their ordered union constitutes justice.",
+      "grade": "A",
+      "gap": false,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The text continues with the corresponding excesses and deficiencies, which are not translated in this excerpt."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "IV.22",
+      "title": "Separate intellects as a philosophical theory",
+      "arabic": "والعقول جواهر مجردة عن المواد في ذواتها وجميع أفعالها ... لا تكون أقل من عشرة ... والعاشر هو المدبر لعالم العناصر.",
+      "english": "The philosophers describe separate intellects as substances free from matter both in themselves and in their operations. They posit at least ten, of which the tenth governs the elemental realm.",
+      "grade": "B",
+      "gap": true,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The elliptical Arabic is a source-graded selection. Taqrīb II:100–101 uses a reported formulation, not an unqualified endorsement."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "V.01",
+      "title": "Contingency, origination and the Necessary",
+      "arabic": "الباب الخامس في الإلهيات ... لا بد للممكنات من واجب، وللمحدثات من قديم دفعًا للدور والتسلسل.",
+      "english": "Chapter Five: Divinity. Contingent things ultimately require a necessary existent, and originated things an unoriginated source, if circular dependence and infinite regress are to be avoided.",
+      "grade": "B",
+      "gap": true,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The argument from contingency and the argument from temporal origination are distinct routes, not synonyms."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "V.03",
+      "title": "The simplicity of the Necessary",
+      "arabic": "الواجب بذاته لا جزء له، وإلا لكان ممكنًا، ولا تعدد لأفراده ...",
+      "english": "The Necessary Existent in itself has no constituent parts, for dependence on constituents would make it contingent. Nor could several individuals share necessary existence as though it were a common essence.",
+      "grade": "B",
+      "gap": true,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "Middle stages in the anti-multiplicity argument remain unverified."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "V.15",
+      "title": "Vision as created apprehension",
+      "arabic": "الرؤية نوع من الإدراك يخلقه الله تعالى متى شاء كيف شاء لمن شاء بلا كيف.",
+      "english": "Vision is a kind of apprehension created by God whenever He wills, as He wills, and for whom He wills—without specifying its modality.",
+      "grade": "A",
+      "gap": false,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The term ‘without modality’ must not be replaced by a theory of physical optics."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "V.16",
+      "title": "Production and acquisition in human action",
+      "arabic": "موجد فعل العبد هو الله، وإنما للعبد الكسب، وهو أمر إضافي يحصل من العبد، لا يوجب وجود المقدور بل اتصاف الفاعل به.",
+      "english": "God brings the servant’s act into existence. The servant has acquisition (kasb), a relational determination belonging to the servant; it does not produce the existence of the act, but characterises the subject as acting.",
+      "grade": "A",
+      "gap": false,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The distinction is between producing an act’s existence and attributing it to the voluntary human subject; the exact matn must be independently checked."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "V.17",
+      "title": "The Muʿtazilī thesis on human production",
+      "arabic": "وعند المعتزلة الموجد هو العبد، وأطلقوا لفظ الخالق عليه ...",
+      "english": "The Muʿtazila, by contrast, hold that the human servant produces the act and apply the term ‘creator’ to that servant in this context.",
+      "grade": "B",
+      "gap": true,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The author reports an opposing position rather than endorsing it."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "V.20",
+      "title": "Moral evaluation and revelation",
+      "arabic": "فصل: الحسن والقبح بمعنى استحقاق المدح والذم والثواب والعقاب إنما جعله الله تعالى بالشرع ... وقالت المعتزلة بل بالعقل.",
+      "english": "Goodness and badness, when taken to mean deserving praise or blame and reward or punishment, are established by divine revelation on our account. The Muʿtazila hold that reason determines them.",
+      "grade": "B",
+      "gap": true,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The specific subject is desert of reward or punishment, not every kind of intellectual recognition of fittingness or benefit."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "VI.01",
+      "title": "Prophets and messengers",
+      "arabic": "الباب السادس في السمعيات. الفصل الأول: النبي إنسان بعثه الله لتبليغ ما يوحى إليه؛ وكذا الرسول، وقد يخص الرسول بمن له شريعة وكتاب.",
+      "english": "Chapter Six: Doctrines known by transmission. A prophet is a human being sent by God to convey revelation. A messenger is likewise sent, though the term may more narrowly designate one entrusted with a law and a book.",
+      "grade": "A",
+      "gap": false,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The proposed restriction of messenger is presented as a terminological distinction, not a universally agreed definition."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "VI.09",
+      "title": "The extraordinary acts of saints",
+      "arabic": "ومن خوارق العادات كرامات الأولياء، وتفارق المعجزة بعدم دعوى النبوة ...",
+      "english": "Among extraordinary departures from the customary order are the graces granted to saints. They differ from prophetic miracles in not being accompanied by a claim to prophethood.",
+      "grade": "B",
+      "gap": true,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The original goes on to distinguish karāma from other extraordinary occurrences."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "VI.10",
+      "title": "The saint and the prophet",
+      "arabic": "والولي لا يبلغ درجة النبي، ولا تسقط عنه التكاليف، ولا تكون الولاية أفضل من النبوة.",
+      "english": "A saint does not reach the rank of a prophet; religious obligations do not fall away from the saint; and sainthood is not superior to prophethood.",
+      "grade": "A",
+      "gap": false,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The later issue of the saintly aspect within prophethood is a different question from comparing a non-prophetic saint to a prophet."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "VI.17",
+      "title": "Reward, grace and justice",
+      "arabic": "الثواب فضل من الله، والعقاب عدل منه، ومع وجوب ما وعد به أو أوعد فلا يخلف الله وعده ...",
+      "english": "Reward is God’s grace and punishment an exercise of His justice. God does not break His promise; whether a threat may be remitted is treated separately.",
+      "grade": "B",
+      "gap": true,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "The argument is not a denial of moral order but rejects a debt upon God established independently of His own promise."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "VI.22",
+      "title": "Faith as assent",
+      "arabic": "الإيمان في اللغة التصديق، وفي الشرع التصديق بما علم مجيء النبي به بالضرورة.",
+      "english": "In ordinary language, faith is assent; in revealed law, it is assent to what is necessarily known to have been brought by the Prophet.",
+      "grade": "A",
+      "gap": false,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "Later passages distinguish inward assent and outward confession."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
+    },
+    {
+      "id": "VI.24",
+      "title": "The heart as the locus of faith",
+      "arabic": "وحقيقة الإيمان التصديق والإذعان والقبول ... وقد ورد: كتب في قلوبهم الإيمان.",
+      "english": "Faith fundamentally involves assent, yielding, and acceptance. The heart is its primary locus, as the scriptural expression about faith being inscribed in hearts indicates.",
+      "grade": "B",
+      "gap": true,
+      "notes": [
+        {
+          "type": "Editorial",
+          "text": "Faith is distinguished from possessing accurate information without assent."
+        },
+        {
+          "type": "Source",
+          "text": "Source-graded extract from the earlier 140-unit Revision 12 working register, based on imperfect 1912 Cairo OCR; not certified against independent witness."
+        }
+      ]
     }
   ],
   "sourceNotes": [
     "1912 Cairo annotated printing; 995 AH (1587 CE) al-Azhar manuscript as an independent partial control.",
     "ʿAbd al-Qādir al-Sanandajī, Taqrīb al-Marām, Cairo al-Maktaba al-Azhariyya li-l-Turāth, 1433/2012 reproducing earlier printed material; 2 vols., 632 PDF pages.",
-    "Only units transcribed in Revision 12 are included here; the six kalām divisions are not continuously translated. The wider 140-unit register contains further provisional and often reconstructed records."
+    "81 imported source-graded units drawn from the earlier 140-unit register. Many are excerpts, and 80 entries in the 140-unit register previously carried explicit gap flags. None of the six chapters is completely collated."
   ]
 };
