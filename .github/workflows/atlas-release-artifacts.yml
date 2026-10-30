@@ -47,6 +47,8 @@ jobs:
         run: python research/intellectual-atlas/build.py
       - name: Build critical PDF and offline ZIP
         run: python research/intellectual-atlas/build_release.py
+      - name: Validate nine bilingual chapters, source links and offline reading edition
+        run: python research/intellectual-atlas/tests/verify_summa_edition.py
       - name: Rebuild publication checksum manifest
         run: python research/intellectual-atlas/build.py
       - name: Verify full reference and portable viewer archive
