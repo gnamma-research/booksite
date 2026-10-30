@@ -186,3 +186,8 @@ Keep apart essence considered in itself, the universal predicable, the intelligi
 ## 1.8 — soul and imagination
 
 Treat vegetative, animal and rational powers separately. The rational soul's origin, immaterial cognition, persistence, and relation to the Active Intellect are not reducible to the account of elemental form. Later illuminationist and Sadrian doctrines of imaginal perception may revise the ontology of psychic faculties without entailing a uniform theory of physical substantial generation. Compare Shifāʾ Nafs V, Ishārāt psychology, Suhrawardī Ḥikmat al-ishrāq and Ṣadrā Asfār psychology. **Source status:** primary comparison required.
+
+
+## 1.9 — divine attributes and will
+
+Separate existence from essence, simplicity from the absence of all conceptual distinctions, knowledge of particulars, will, and the necessity of the effect. Avicennian causal necessity and Thomist free creation can agree on dependence while disagreeing on the modal status of the created order. Rāzī's objections and Ṭūsī's replies should be tested against the exact Avicennian demonstrations rather than classified generically as kalām versus falsafa. **Source status:** interpretive matrix.
