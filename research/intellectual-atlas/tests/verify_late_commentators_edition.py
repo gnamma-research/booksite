@@ -61,6 +61,16 @@ fascicles = data["translated_fascicles"]
 assert len(fascicles) == 11
 assert len(data["unresolved_witnesses"]) >= 11
 assert data["direct_source_work_count"] >= 8
+assert len(data.get("mediated_documentary_annexes",[])) == 1
+annex=data["mediated_documentary_annexes"][0]
+assert annex["status"] == "translated-mediated-quotation-not-independent-original"
+assert annex["original_1904_witness_inspected"] is False
+assert annex["independent_collation"] is False
+assert (BASE / annex["file"]).is_file()
+assert annex["file"] in html
+assert annex["file"] in BUILD.read_text(encoding="utf-8")
+assert html.count('id="indian-quoted"') == 1
+
 assert len({f["id"] for f in fascicles}) == len(fascicles)
 assert all(f["source_urls"] for f in fascicles)
 assert all(f["source_access"] == "direct-searchable-edited-text" for f in fascicles)
