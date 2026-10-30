@@ -40,8 +40,10 @@ async def verify(engine,width,height):
         assert await page.locator("article#ch05 [dir='rtl']").count()>0, "Arabic passages not RTL"
         assert await page.locator("article#ch10 [dir='rtl']").count()>0, "Chapter ten Arabic not RTL"
         await page.locator('.side a[href="#ch07"]').click()
+        await page.wait_for_function("() => { const c=document.getElementById(\'ch07\'); return !!c && !c.hidden; }")
         assert await page.locator("article#ch07:visible").count()==1
         await page.reload(wait_until="domcontentloaded")
+        await page.wait_for_function("() => { const c=document.getElementById(\'ch07\'); return !!c && !c.hidden; }")
         assert await page.locator("article#ch07:visible").count()==1, "Deep link did not survive reload"
         for color in ("light","dark"):
             await page.emulate_media(color_scheme=color)
