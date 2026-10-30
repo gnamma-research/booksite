@@ -3,7 +3,7 @@
 
 ## Stage 4 update — 31 October 2026 (current primary translations)
 
-**Read [Stage 4 cumulative handoff](handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md).** The ten chapters remain intact; this stage adds five complete **bounded** translated argument units and a static HTML primary translation reader. **New public reading entry:** [primary-translations.html](primary-translations.html).
+**Read [Stage 4 cumulative handoff](handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md).** The ten chapters remain intact; this stage adds six complete **bounded** translated argument units and a static HTML primary translation reader. **New public reading entry:** [primary-translations.html](primary-translations.html).
 
 - **Ibn Sīnā VI.1, pp.257–263:** [full English chapter on causation and conservation, Fascicle E](PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md).
 - **Ibn Sīnā VI.2, pp.263–267:** [full English chapter, Fascicle B](PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md).
@@ -11,6 +11,7 @@
 - **Lāhījī I:90–93:** [full English of Issues 23–24, Fascicle C](PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md).
 
 - **Aquinas, ST I q.104 aa.1–2:** [full fresh translation of two complete articles, Fascicle F](PRIMARY_TRANSLATION_FASCICLE_F_AQUINAS_ST104.md). Paragraphs [32757]–[32774] of the Leonine Latin text, including objections and replies.
+- **Aquinas, ST I q.104 aa.3–4:** [complete companion translation of the remaining articles, Fascicle G](PRIMARY_TRANSLATION_FASCICLE_G_AQUINAS_ST104_3_4.md), §32775–32790. Together Fascicles F and G translate all four articles of q.104.
 
 The site front page, chapter index and existing ten-chapter reader have links to the new public translation page. A successful source commit does not prove live deployment or manuscript collation; these remain separately auditable. The twenty-domain remit and Stage 01–03 corrections below all remain authoritative.
 
