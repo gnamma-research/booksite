@@ -3,7 +3,7 @@ window.GNAMMA_BOOK={
   "title": "Tahdhīb al-Kalām",
   "arabicTitle": "تهذيب الكلام",
   "author": "Saʿd al-Dīn al-Taftāzānī",
-  "status": "Source-graded work in progress: 81 excerpts, with the opening textual and commentary loci now individually checked (Taqrīb I:8–22); not a continuous certified critical edition.",
+  "status": "Chapter I now contains a consecutively readable working English translation including the first-obligation distinction and the full argument about transmitted and rational proofs. Chapters II–VI are still discontinuous and require complete collation.",
   "description": "The theological half of Tahdhīb al-Manṭiq wa-l-Kalām. English phrasing is kept readable; lexical explanations and Sanandajī's interpretive guidance belong in notes. Untranslated intervals are not silently filled.",
   "units": [
     {
@@ -14,6 +14,10 @@ window.GNAMMA_BOOK={
       "grade": "A",
       "gap": false,
       "notes": [
+        {
+          "type": "Direct collation · Taqrīb I:8–13",
+          "text": "The 2012 facsimile, PDF pp. 21–26 (printed I:8–13), distinguishes the lemmata ‘الكلام هو العلم بالعقائد’ (I:8), ‘الدينية’ and ‘عن الأدلة اليقينية’ (I:9), and the subject matter ‘المعلوم’ (I:11–13). Those lemmas belong to the matn; the surrounding explanations belong to Sanandajī."
+        },
         {
           "type": "Source witness",
           "text": "The quoted definitions are separately visible across Taqrīb al-Marām I:8–12 (2012 reproduction, PDF pp. 21–25): ‘al-kalām huwa al-ʿilm bi-l-ʿaqāʾid’ (I:8), ‘al-dīniyya’ and ‘ʿan al-adilla al-yaqīniyya’ (I:9), then ‘wa-mawḍūʿuhu al-maʿlūm...’ (I:11). The original Tahdhīb copy-text still requires independent full collation."
@@ -37,10 +41,18 @@ window.GNAMMA_BOOK={
       "id": "I.02",
       "title": "Accounts of knowledge",
       "arabic": "[والعلم ...] حصول صورة الشيء في العقل، أو الاعتقاد الجازم المطابق الثابت، أو صفة يتجلى بها المذكور لمن قامت به.",
-      "english": "Several accounts of knowledge are considered: the reception of a thing’s form in the intellect; firm, reality-conforming and settled assent; or a quality by which what is mentioned becomes disclosed to the subject in whom that quality inheres. The original transitions between these accounts remain to be checked.",
+      "english": "Several definitions of knowledge are considered. One treats knowledge as the presence of a thing’s form in the intellect; another as firm assent that corresponds to reality and is securely established; a third as a quality through which what can be mentioned is disclosed to the subject possessing it. These definitions do not have precisely the same extension.",
       "grade": "B",
       "gap": true,
       "notes": [
+        {
+          "type": "Philosophical note",
+          "text": "The formula ‘settled, true assent’ is narrower than conception: one can conceive an object without judging it to exist or making an affirmation about it. This distinction is important for the later discussion of propositions, reality-conformity, and certainty."
+        },
+        {
+          "type": "Collated · Taqrīb I:14–17",
+          "text": "The definitions are discussed on printed pp. 14–17 (facsimile PDF pp. 27–30). The commentary distinguishes the obtaining of a form, the assent to a judgment, and the wider quality through which an object becomes manifest. The translator must not present these rival formulations as one cumulative definition."
+        },
         {
           "type": "Sanandajī I:14–17",
           "text": "The commentary discusses differences between cognition by representation, assent to a proposition, and a wider capacity for apprehension. A definition restricted to firm assent cannot straightforwardly include conception (taṣawwur). The full argument, not simply its three slogans, must govern the final translation."
@@ -56,13 +68,46 @@ window.GNAMMA_BOOK={
       ]
     },
     {
+      "id": "I.02a",
+      "title": "What rational inquiry does: movement among intelligibles",
+      "arabic": "وحقيقة النظر حركة النفس في المعقولات عودًا على بدء لتحصيل المطلوب المجهول، وكونه مفيدًا للعلم في الجملة.",
+      "english": "In its proper sense, rational inquiry is a movement of the soul among intelligibles, proceeding and returning so as to attain the sought-but-unknown result. That such inquiry yields knowledge in at least some cases is the point at issue.",
+      "grade": "B",
+      "gap": true,
+      "statusText": "Arabic recomposed from separately printed matn lemmata; interpretation checked against running commentary, I:17–20",
+      "notes": [
+        {
+          "type": "Facsimile · Taqrīb I:17–20",
+          "text": "The facsimile PDF pp. 30–33 embeds the phrases ‘حقيقة النظر حركة النفس’, ‘في المعقولات’, ‘عودًا’, ‘على بدء’, ‘لتحصيل المطلوب المجهول’, and ‘مفيدًا للعلم في الجملة’ in the running commentary. The full Arabic sentence here joins those printed lemmata editorially; it is not yet claimed as a verified diplomatic reading of a separate Tahdhīb witness."
+        },
+        {
+          "type": "Sanandajī’s explanation",
+          "text": "The two movements are an initial search among what is intelligible for an appropriate mediating principle, followed by arranging that principle and returning from it to the result sought. The image at Taqrīb I:18, PDF p. 31, explicitly distinguishes the two movements."
+        },
+        {
+          "type": "Epistemology",
+          "text": "The first dispute concerns whether sound inquiry can actually lead to knowledge; the subsequent dispute concerns whether the resulting knowledge is produced by custom, generated causation, or necessary entailment. Keeping the two questions apart makes the compressed text intelligible."
+        }
+      ],
+      "link": "../../al-sanandaji/taqrib-al-maram/#u-S-12",
+      "linkLabel": "Read Sanandajī's explanation of rational inquiry"
+    },
+    {
       "id": "I.03",
       "title": "The causal connection of inquiry and knowledge",
       "arabic": "وهل هو بطريق العادة أو التوليد أو الوجوب فيه خلاف.",
-      "english": "There is a disagreement about whether [knowledge following sound inquiry] comes about by customary association, by generation, or by necessity.",
+      "english": "As to how knowledge follows a sound inquiry, there is disagreement: is the connection one of established divine custom, of generation by an act of inquiry, or of necessity?",
       "grade": "A",
       "gap": true,
       "notes": [
+        {
+          "type": "Scholastic distinction",
+          "text": "For the customary account, knowledge occurs according to God's established practice when sound inquiry is completed. ‘Generation’ invokes the thesis that an act may indirectly produce a further effect. ‘Necessity’ makes the result inseparable from the appropriately completed prerequisites. These must not be collapsed into one assertion that inference ‘causes’ knowledge."
+        },
+        {
+          "type": "Direct image check · Taqrīb I:24–26",
+          "text": "The three lemmata ‘بطريق العادة’, ‘بطريق التوليد’, and ‘بطريق الوجوب’ and the closing phrase ‘فيه خلاف’ occur across printed I:24–26, PDF pp. 37–39. The connective question concerns the mode of connection between inquiry and its consequent knowledge."
+        },
         {
           "type": "Sanandajī I:17–22",
           "text": "The alternatives concern the manner in which knowledge follows sound inferential inquiry: customary concurrence (ʿāda), causation by generation (tawlīd), or necessary connection (wujūb/luzūm). They are reported competing explanations. The theological significance changes if one silently renders them all as ‘reasoning produces knowledge’."
@@ -86,6 +131,10 @@ window.GNAMMA_BOOK={
       "gap": false,
       "notes": [
         {
+          "type": "Direct image check · I:26–30",
+          "text": "The text quoted by Sanandajī includes ‘والنظر في معرفة الله تعالى’, ‘واجب’, ‘بالنص’, ‘والإجماع’, and the explanation that inquiry is a prerequisite of required knowledge; see PDF pp. 39–43. These are distinct grounds and positions, not one undifferentiated proof."
+        },
+        {
           "type": "Editorial",
           "text": "The precise connective after إجماع and the final causal expression require manuscript checking."
         },
@@ -104,6 +153,10 @@ window.GNAMMA_BOOK={
       "gap": false,
       "notes": [
         {
+          "type": "Direct image check · I:30–31",
+          "text": "The quoted objection is visible at PDF pp. 43–44 (printed I:30–31). It concerns commanding an investigation of a prophetic miracle before the hearer has established the truth of the lawgiver's claim."
+        },
+        {
           "type": "Editorial",
           "text": "This is an attributed objection, not the author’s conclusion."
         },
@@ -116,40 +169,66 @@ window.GNAMMA_BOOK={
     {
       "id": "I.06",
       "title": "The reply: obligation versus recognition",
-      "arabic": "ورد بأن المتوقف على الشرع هو العلم بالوجوب، أما الوجوب [فـ...]",
-      "english": "The reply is that what depends upon revelation is knowledge of the obligation, whereas the obligation itself [is distinguished from the knowledge of its existence; continuation uncertain].",
-      "grade": "C",
-      "gap": true,
+      "arabic": "والجواب: أن المتوقف على ثبوت الشرع هو العلم بالوجوب، لا نفس الوجوب.",
+      "english": "The reply is that what depends on the establishment of revelation is knowledge that the inquiry is obligatory, not the obligation itself.",
+      "grade": "B",
+      "gap": false,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "Only the opening contrast is transcribed. R9’s extended explanation was a paraphrase and is not silently incorporated as a translation."
+          "type": "Facsimile reading · I:31",
+          "text": "The upper text at Taqrīb I:31 (PDF p. 44) distinguishes the words ‘الشرع’, ‘العلم بالوجوب’ and ‘لا نفس الوجوب’. The continuous short sentence above is an editorially joined reading of that contrast; the original Tahdhīb print still requires direct comparison."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 582–584; original printed pagination and manuscript witness still need confirmation."
+          "type": "Sanandajī's explanation",
+          "text": "A duty can obtain as a matter of the revealed command even before its addressee discovers or recognizes that duty. The potential circularity arises only if knowing the obligation is mistakenly taken to be a condition of the obligation's very existence."
+        },
+        {
+          "type": "Editorial correction",
+          "text": "This replaces the earlier bracketed unfinished paraphrase. It does not treat the commentary’s extended legal-theoretical explanation as al-Taftāzānī’s own words."
+        }
+      ]
+    },
+    {
+      "id": "I.06a",
+      "title": "The first obligation sought for its own sake",
+      "arabic": "وأول الواجبات المقصودة المعرفة، والنظر فيها وسيلة إليها فيجب لذلك.",
+      "english": "The first obligation pursued for its own sake is knowledge of God. Rational inquiry is obligatory because it is the means to that knowledge.",
+      "grade": "B",
+      "gap": false,
+      "notes": [
+        {
+          "type": "Textual basis",
+          "text": "This compressed formulation gathers the phrases concerning the first intended obligation and inquiry as a means in Taqrīb I:31–32 (PDF pp. 44–45), checked against the 1912 OCR around lines 582–584. The text is an editorially normalized sequence, pending independent manuscript comparison."
+        },
+        {
+          "type": "Sanandajī",
+          "text": "The point is not that the preparatory inquiry is dispensable, but that knowledge of God is obligatory as an intended end, while inquiry is obligatory as a necessary means."
         }
       ]
     },
     {
       "id": "I.07",
       "title": "Proofs and the priority of rational evidence",
-      "arabic": "والدليل ما يمكن أن يُتوصّل بالنظر فيه إلى حكم ... ثم إن توقف على نقل فنقلي، وإلا فعقلي ... وما توقف النقل عليه لا يثبت إلا بالعقل.",
-      "english": "A proof is something through consideration of which a judgment can be reached. […] If it depends on transmission, the proof is transmitted; otherwise it is rational. […] What the authority of transmitted proof depends upon can be established only by reason.",
+      "arabic": "والدليل ما يمكن أن يتوصّل بالنظر فيه إلى حكم، وقد يخصّ بالجازم فيقابل الأمارة، ثم إن توقّف على نقل فنقليّ وإلا فعقليّ، وقد يستفاد منه بمعونة القرائن القطع، ولا يثبت ما استوى طرفاه عند العقل إلا بالنقل، وما توقّف النقل عليه لا يثبت إلا بالعقل.",
+      "english": "A proof is something through consideration of which one can arrive at a judgment. Sometimes the name is restricted to what establishes a firm judgment, in contrast to an indicative sign. If a proof depends upon transmission, it is transmitted proof; otherwise it is rational proof. Transmitted evidence can yield certainty when supported by appropriate accompanying indications. Matters whose alternatives are equally possible to reason are established through transmission. But the very things upon which the authority of transmission depends cannot themselves be established except by reason.",
       "grade": "B",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
-          "type": "Editorial distinction",
-          "text": "The priority of rational proof applies to what is presupposed by the authority of transmitted evidence itself; it is not a claim that every transmitted proposition must be reconstructed independently from reason."
+          "type": "Matn and commentary collation",
+          "text": "The 1912 Cairo matn (Chapter I closing sentences; OCR lines 584–588) and the quoted lemmata of Taqrīb I:32–33 (1433/2012 facsimile PDF pp. 45–46) jointly support the consecutive clauses in this reading. Orthography and punctuation are editorial. Unlike the previous web text, none of these clauses is silently omitted."
         },
         {
-          "type": "Editorial",
-          "text": "Visible ellipses represent real interruptions. The missing discussion concerns the scope of proofs and the conditions of transmitted certainty."
+          "type": "Lexical note",
+          "text": "The contrast between dalīl and imāra occurs when dalīl is used in a restricted sense for evidence giving a decisive judgment; the broader definition may include grounds yielding a probable judgment."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 584–588; original printed pagination and manuscript witness still need confirmation."
+          "type": "Epistemological note",
+          "text": "The final claim gives a limited priority to reason: reason must establish the presuppositions that make transmission authoritative, such as the veracity of a claimant to prophecy. It does not require every transmitted proposition to be independently demonstrable."
+        },
+        {
+          "type": "Proofing status",
+          "text": "The quoted reading has been compared with the large upper-register commentary text, not with every variant in the 1587 manuscript or 1912 page image. It is a source-checked working text, not a certified critical variant."
         }
       ]
     },
@@ -180,10 +259,18 @@ window.GNAMMA_BOOK={
       "id": "II.02",
       "title": "Existence and the necessary being",
       "arabic": "[والوجود ...] ينقسم إلى الواجب وغيره ... والحكماء على أن حقيقة الواجب وجود خاص قائم بنفسه، مغاير للوجود الممكن في حقيقته.",
-      "english": "[Existence] is divided into the necessary and what is not necessary. The philosophers maintain that the reality of the Necessary is a special existence subsisting in itself and essentially distinct from contingent existence.",
+      "english": "Existence is divided into the Necessary Existent and what is other than it. The philosophers maintain that the Necessary Existent’s reality is a special existence subsisting of itself, essentially unlike the existence of what is contingent. Thus one must distinguish what the mind means by ‘existence’ in common from the manner in which existence belongs to the Necessary and to possible beings.",
       "grade": "B",
       "gap": true,
       "notes": [
+        {
+          "type": "Source limitation",
+          "text": "The received OCR still contains a gap before the philosophers’ report. The English conveys the recoverable clauses plus a separated explanatory sentence, not a complete reconstruction of all omitted transitions."
+        },
+        {
+          "type": "Direct comparison · Taqrīb I:37–40",
+          "text": "See the reproduced commentary at PDF pp. 50–53. The larger upper text treats the common intelligible meaning of wujūd, then specifically marks the philosophers’ account of the Necessary. The final English sentence explicates the distinction; it must not be inserted into the author's Arabic."
+        },
         {
           "type": "Editorial",
           "text": "Several words between these assertions have not been reconstructed. The second sentence explicitly reports the philosophers’ doctrine."
@@ -198,10 +285,18 @@ window.GNAMMA_BOOK={
       "id": "II.03",
       "title": "Degrees and conceptual universality of being",
       "arabic": "[والوجود] المقول على الموجودات بالتشكيك كالنور على الأنوار، وما يقال [من أنه] في الكل نفس الماهية ... وإنما هو في العقل.",
-      "english": "Existence is predicated of existents with gradation, as “light” is predicated of lights. [The further claim concerning whether its common content is identical with each essence] concerns a distinction made by intellect, rather than a separate universal thing existing externally.",
+      "english": "Existence, as a concept predicable of different beings, is applied with degrees of priority or entitlement—rather as one speaks of light being present in different lights. Yet the shared intelligible meaning should not be mistaken for a single numerically identical existence existing separately from the things to which it is attributed.",
       "grade": "C",
       "gap": true,
       "notes": [
+        {
+          "type": "Textual caution",
+          "text": "The source OCR is damaged in this locus, and the exact Arabic phrase about the identity of quiddity in particular instances has not yet been re-established. This translation is deliberately restricted to the intelligible distinction."
+        },
+        {
+          "type": "Interpretive control · Taqrīb I:37–39",
+          "text": "At PDF pp. 50–52 the explanation distinguishes the common meaning of wujūd and the distinct existence of its instances. The second English sentence is explanatory, not a quotation from the short matn."
+        },
         {
           "type": "Editorial",
           "text": "The existence-predication clause is identifiable but the sentence as a whole is severely corrupted. The second sentence is explicitly an explanatory placeholder, not a secure full translation."
@@ -1505,6 +1600,9 @@ window.GNAMMA_BOOK={
     "1912 Cairo annotated printing; 995 AH (1587 CE) al-Azhar manuscript as an independent partial control.",
     "ʿAbd al-Qādir al-Sanandajī, Taqrīb al-Marām, Cairo al-Maktaba al-Azhariyya li-l-Turāth, 1433/2012 reproducing earlier printed material; 2 vols., 632 PDF pages.",
     "81 imported source-graded units drawn from the earlier 140-unit register. Many are excerpts, and 80 entries in the 140-unit register previously carried explicit gap flags. None of the six chapters is completely collated.",
-    "Revision 17 image collation: Sanandajī/Taqrīb I:8–22 (PDF pp. 21–35); the documentary record distinguishes embedded Tahdhīb lemmata, the upper running commentary, and marginal notes."
+    "Revision 17 image collation: Sanandajī/Taqrīb I:8–22 (PDF pp. 21–35); the documentary record distinguishes embedded Tahdhīb lemmata, the upper running commentary, and marginal notes.",
+    "Revision 19, 30 October 2026: direct image review of Taqrīb printed I:7–33 (PDF pp. 20–46), focused re-collation of I.01–I.07 and new inferential-process unit I.02a. The full Tahdhīb manuscript and the marginal Muḥākamāt still remain separate witnesses/voices.",
+    "Current critical source checks: Taqrīb I:7–33, PDF pages 20–46. Chapter I has source-based continuity in English; reconstructed Arabic connectors await independent manuscript verification.",
+    "Revision 20: targeted direct checks in Taqrīb I:35–40, PDF pp. 48–53, for common meaning, existence of the Necessary, and graded application. Still not full Chapter II collation."
   ]
 };

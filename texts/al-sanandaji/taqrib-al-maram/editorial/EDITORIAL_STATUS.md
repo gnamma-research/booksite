@@ -16,3 +16,9 @@ Each commentary selection has a stable section ID and may be linked from its mat
 
 ## Revision 17
 Five more selected excerpts directly checked at I:8–14 (PDF pp. 21–27), principally the purpose of doctrinal assent and the scope of al-maʿlūm. No complete-page continuous translation is claimed.
+
+## Revision 19 direct translation extension
+Six additional selections are translated directly from the supplied scanned print, printed I:17–33 (physical PDF pp. 30–46), on the movement of inquiry, Ashʿarī customary concurrence, Muʿtazilī generation, necessitation, the difference between obligation and recognizing obligation, and a technical proof versus an indicatory sign. The selection comprises **17 entries** total. Each preserved ellipsis denotes omitted source prose; explanatory translation is distinguished from a matn quotation.
+
+## Revision 20 — source-checked excerpts
+The separate commentary reader has nineteen source-checked selections. Additional readings on distinct accounts of knowledge, on customary/generative/necessary consequences of inquiry, and on the concept of existence have been added from the user-supplied facsimile (I:17–40). These are selective passages, not a continuous translation of the commentator’s two-volume argument.
