@@ -103,3 +103,8 @@ The [critical chapters reader](chapters/index.html) links eight connected primar
 **Historical correction:** Mīrzā Abū al-Ḥasan Jilwa must not be labelled an unqualified opponent of substantial motion. Bibliographical evidence records a Tehran 1313 AH printing titled *Ithbāt al-ḥaraka al-jawhariyya*; its precise argument and authorship/context remain to be examined in the printed text. Narāqī's position on existential unity is not merely a blanket rejection: his *Jāmiʿ* II:165–167 distinguishes gradational and numerical-monist readings and advances an account of causal and epistemic inclusion. See Chapters 3 and 7.
 
 **Completion boundaries:** Some chapters contain complete, bounded arguments; others translate selected lemmata within longer discussions. The quoted original authors of glossed positions (e.g., Taftāzānī and Jurjānī in Lāhījī) require independent editions, and full manuscript-level collation across twenty domains has not been completed.
+
+
+## Twenty-domain findings and cross-source evidence audit
+
+[Read the integrated twenty-domain findings and evidence audit](SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md). This registers what has been translated from Ibn Sīnā, Lāhījī, Narāqī, Ṣadrā, al-Ḥillī and Aquinas, identifies which arguments demonstrate changes in doctrine versus stronger demonstrations, and explicitly marks gaps in *nafs al-amr*, providence, eschatology, ethics and nineteenth-century late natural philosophy. The earlier Narāqī [causation and regress dossier](primary-translation-causation.md) is incorporated from its separate working branch, preserving the material rather than leaving it in an unmerged pull request.
