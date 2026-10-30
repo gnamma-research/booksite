@@ -171,3 +171,8 @@ The post-Avicennian transformation has at least four independent axes: (i) *onto
 ## 1.5 — modality and essence
 
 Distinguish logical possibility (absence of contradiction), essential contingency (neither existence nor nonexistence follows from quiddity), and causal possibility (actual dependence on a sufficient cause). An Avicennian necessary existent is necessary through itself; a caused existent can be necessary through another when its complete cause obtains. Thus necessary-through-another does not remove contingency-through-itself. Compare Shifāʾ Ilāhiyyāt I.6, VI.1–3, VIII.1–3; Ishārāt metaphysics, and Rāzī's Sharḥ al-Ishārāt. **Source status:** passage targets, not freshly transcribed quotations.
+
+
+## 1.6 — knowledge and nafs al-amr
+
+Distinguish (a) concept in intellect, (b) intentional object, (c) extra-mental truthmaker, and (d) a wider order of objective correctness. Nafs al-amr must not be equated uncritically with physical external existence, a separate Platonic world, or a modern proposition ontology. Compare Ṭūsī's short treatise on nafs al-amr, later Dawwānī and Lāhījī discussions, and Asad Ahmed's work on later logic. For each judgment, ask what makes it true when its subject is absent, impossible, or relational. **Source status:** analytical research programme.
