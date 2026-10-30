@@ -91,8 +91,8 @@ async def complete_matrix(page):
     await check("four main navigation tabs",lambda:nav_tabs(page),page)
     await check("timeline preset buttons and whole-range reset",lambda:presets(page),page)
     await check("custom date-range validation and boundary years",lambda:ranges(page),page)
-    await check("all eighteen textual families in select",lambda:all_families(page),page)
-    await check("all eighteen book-family exploration buttons",lambda:family_buttons(page),page)
+    await check("all twenty textual families in select",lambda:all_families(page),page)
+    await check("all twenty book-family exploration buttons",lambda:family_buttons(page),page)
     await check("all seventeen intellectual-tradition buttons",lambda:tradition_buttons(page),page)
     await check("all ten regional-network buttons",lambda:region_buttons(page),page)
     await check("all seventeen tradition checkboxes",lambda:tradition_checkboxes(page),page)
@@ -110,9 +110,9 @@ async def complete_matrix(page):
     await check("source PDFs, ZIP, research dossier and downloads",lambda:downloads(page),page)
     await check("constrained chart, detail scrolling and light/dark mode",lambda:layout(page),page)
     await root.screenshot(path=str(OUT/"atlas-audited-desktop.png"))
-    RESULT["metadata"]["allControlsChecked"]={"views":4,"families":18,"traditions":17,
+    RESULT["metadata"]["allControlsChecked"]={"views":4,"families":20,"traditions":17,
        "regions":10,"relationshipFilters":13,"auditTabs":6,
-       "familyButtons":18,"layerToggles":6}
+       "familyButtons":20,"layerToggles":6}
 
 async def nav_tabs(page):
     for v in ["relations","catalogue","audit","timeline"]:
@@ -175,7 +175,7 @@ async def family_buttons(page):
     if not await menu.evaluate("(e)=>e.open"):await menu.locator(":scope > summary").click()
     values=await page.locator(".ia-explorer-shortcuts [data-text-route]").evaluate_all(
         "(xs)=>[...new Set(xs.map(x=>x.dataset.textRoute))]")
-    ok(len(values)==18,f"18 family buttons expected, got {len(values)}")
+    ok(len(values)==20,f"20 family buttons expected, got {len(values)}")
     for v in values:
         el=page.locator(f'.ia-explorer-shortcuts [data-text-route="{v}"]')
         await el.click()
@@ -296,7 +296,7 @@ async def combination_matrix(page):
     before=(s["from"],s["to"])
     await page.locator('[data-action="reset-filters"]').click()
     s=await state(page)
-    ok(s["matching"]==375 and s["family"]=="" and s["region"]=="","empty reset failed")
+    ok(s["matching"]==386 and s["family"]=="" and s["region"]=="","empty reset failed")
     ok(abs(s["from"]-before[0])<1 and abs(s["to"]-before[1])<1,"reset shifted dates")
     await reset(page)
 
