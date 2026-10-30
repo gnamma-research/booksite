@@ -196,3 +196,8 @@ Separate existence from essence, simplicity from the absence of all conceptual d
 ## 1.10 — time, creation and change
 
 Distinguish temporal beginning (ḥudūth zamānī), essential dependence (ḥudūth dhātī), change in an underlying subject, and creation ex nihilo. A perpetual dependent world is not thereby independent; conversely, essential dependence alone does not prove temporal eternity. Compare Avicenna Ilāhiyyāt VI, IX; Ghazālī Tahāfut first discussion; Rāzī Maṭālib; Aquinas De aeternitate mundi and Summa theologiae I q.46. **Source status:** primary comparison pending.
+
+
+## 1.11 — epistemic and doctrinal transmission
+
+Track distinct transmission routes: Avicennian Shifāʾ/Ishārāt; Rāzian objections; Ṭūsī's replies; Abharī and Kātibī logic; Suhrawardī; Dawwānī; Tajrīd commentary clusters; Ṣadrā and his critics; nineteenth-century Persian and Indian scholastic continuations. Do not assign a single continuous doctrinal position to this diverse network. Each purported innovation needs a before/after textual pair. **Source status:** historiographical schema.
