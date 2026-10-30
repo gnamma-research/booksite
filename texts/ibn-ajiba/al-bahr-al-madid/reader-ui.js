@@ -133,12 +133,89 @@ async function clipboard(value){
  try{await navigator.clipboard.writeText(value);R.toast('Copied.');R.closeSheet();}
  catch{R.sheet('Copy','<textarea id="copy-fallback" readonly aria-label="Text to copy">'+E(value)+'</textarea>');$('#copy-fallback').select();}
 }
-function copyMenu(){R.sheet('Copy','<div class="panel-nav">'+[['text','Visible text'],['with-heading','Text and heading'],['citation','Citation'],['link','Link to this place']].map(([id,label])=>'<button type="button" data-copy-choice="'+id+'">'+icon(id==='link'?'external':'copy')+' '+label+'</button>').join('')+'</div>','copy-options');}
-function share(){
- R.sheet('Share a passage','<p class="muted">Share a direct link, with the heading or text you choose.</p><fieldset><legend>Include with the link</legend>'+
- [['link','Link only'],['heading','Heading'],['text','Visible text']].map(([id,label])=>'<label class="toggle-row"><input type="radio" name="share-content" value="'+id+'" '+(id==='heading'?'checked':'')+'>'+label+'</label>').join('')+'</fieldset><div class="desk-toolbar"><button type="button" data-ui="share-copy">Copy message</button><button type="button" data-ui="share-native">Share…</button></div>','share-options');
+
+let copyConfig=null,copyRecord=null,copyTarget=null;
+const copyModes={selected:'Selected text',text:'Text',notes:'Scholarly notes',research:'Research extract',citation:'Citation',link:'Link'};
+const copySymbol={
+ selected:'<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" stroke-dasharray="2 2"/><path d="M7 9h10M7 13h6"/></svg>',
+ text:'<span class="gn-copy-type-mark">Aa</span>',
+ notes:'<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4zM8 9h8M8 13h6"/></svg>',
+ research:'<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="4.5" height="15" rx="1"/><path d="M10 3.5h4.5V21H10zM16.5 8.5l3.8-1 2 12.7-3.8 1zM3.5 18h2.5M11 18h2.5M18.2 18l2.7-.4"/></svg>',citation:'❞',link:'↗'
+};
+function copyMenu(){
+ copyTarget={...target()};R.sheet('Copy','<div class="panel-nav" role="menu" aria-label="Copy options">'+Object.entries(copyModes).filter(([id])=>id!=='selected'||copyTarget.quote).map(([id,label])=>'<button type="button" role="menuitem" data-copy-kind="'+id+'"><span class="copy-option-icon">'+copySymbol[id]+'</span><span>'+label+'</span><span aria-hidden="true">›</span></button>').join('')+'</div>','copy-options');
 }
-function shareText(){const kind=$('[name="share-content"]:checked')?.value||'link',r=R.byId.get(target().r||R.current);return(kind==='text'?textFor('text')+'\n\n':kind==='heading'?(r?.title||'The Immense Ocean')+'\n':'')+textFor('link');}
+function copyParagraphs(lang){
+ const r=copyRecord;if(lang==='ar')return r.ar.split('\n').map((text,i)=>({id:'ar-'+r.id+'-'+(i+1),text})).filter(x=>x.text.trim());
+ return r.segments.flatMap((s,i)=>{const root=document.createElement('div');root.innerHTML=s.html;const ps=[...root.querySelectorAll('p')];return ps.length?ps.map((p,j)=>({id:'en-'+r.id+'-s'+(i+1)+'-p'+(j+1),text:p.textContent,html:p.outerHTML})):[];});
+}
+const copyRadio=(name,values,current)=>'<div class="copy-choices">'+values.map(([v,t])=>'<label><input type="radio" name="'+name+'" value="'+v+'" '+(v===current?'checked':'')+'> '+t+'</label>').join('')+'</div>';
+const copyCheck=(name,label)=>'<label class="toggle-row"><input type="checkbox" data-copy-option="'+name+'" '+(copyConfig[name]?'checked':'')+'> '+label+'</label>';
+async function copySheet(kind){
+ copyTarget=copyTarget||target();copyRecord=await R.record(copyTarget.r||R.current);
+ copyConfig={kind,scope:kind==='selected'?'selected':'section',language:R.prefs.ar&&R.prefs.en?'both':R.prefs.ar?'ar':'en',marks:R.prefs.marks==='source',editorial:true,sources:true,variants:kind==='research',quranContext:kind==='research',hadithContext:kind==='research',dictionary:kind==='research',research:kind==='research',sectionNotes:kind==='research',personal:false,appendCitation:false,appendLink:false,rich:false,citationSource:'translation',arStart:0,arEnd:0,enStart:0,enEnd:0};
+ for(const lang of ['ar','en']){const i=copyParagraphs(lang).findIndex(x=>x.id===copyTarget.anchor);if(i>=0)copyConfig[lang+'Start']=copyConfig[lang+'End']=i;}
+ drawCopy();
+}
+function drawCopy(){
+ const c=copyConfig,simple=['citation','link','selected'].includes(c.kind),languages=c.language==='both'?['ar','en']:[c.language];
+ const chooser=(lang,end)=>{const key=lang+(end?'End':'Start');return '<label>'+((lang==='ar'?'Arabic':'English')+(end?' · To':' · From'))+'<select data-copy-option="'+key+'">'+copyParagraphs(lang).map((p,i)=>'<option value="'+i+'" '+(i===Number(c[key])?'selected':'')+'>¶'+(i+1)+' · '+E(p.text.slice(0,65))+'</option>').join('')+'</select></label>';};
+ const scopes=c.kind==='selected'?[['selected','Selected text']]:[['paragraph','Paragraph'],['range','Range'],['section','Section']];
+ const extras=['notes','research'].includes(c.kind)?'<details><summary>Adjust included material</summary>'+[['editorial','Editorial, translation and grammar notes'],['sources','Qurʾān / ḥadīth references'],['variants','Textual variants and manuscript notes'],['quranContext','Full cited verses and available Qurʾān context'],['hadithContext','Full cited ḥadīth transmissions and translations'],['dictionary','Historical dictionary excerpts'],['research','Relevant critical questions'],['sectionNotes','Also include section-wide notes (labelled)'],['personal','My personal Reading Desk notes (private)']].map(([key,label])=>copyCheck(key,label)).join('')+'</details>':'';
+ R.sheet(copyModes[c.kind],'<p class="muted">'+E(copyRecord.title)+'</p><div class="copy-config"><strong>'+(c.kind==='link'?'Link to':c.kind==='citation'?'Reference for':'What to copy')+'</strong>'+copyRadio('copy-scope',scopes,c.scope)+
+ (!simple?'<strong>Language</strong>'+copyRadio('copy-language',[['en','English'],['ar','Arabic'],['both','Both']],c.language)+(c.language!=='en'?copyCheck('marks','Arabic vowel marks'):''):'')+
+ (c.scope==='paragraph'||c.scope==='range'?'<div class="copy-ranges">'+(simple?[(copyTarget.lang||'en')]:languages).map(lang=>chooser(lang,false)+(c.scope==='range'?chooser(lang,true):'')).join('')+'<p class="muted">Arabic and English paragraph divisions follow their respective source texts.</p></div>':'')+
+ (c.kind==='citation'?'<strong>What are you citing?</strong>'+copyRadio('copy-citation',[['original','Arabic original'],['translation','Gnamma translation']],c.citationSource):'')+extras+
+ (!['link','citation'].includes(c.kind)?'<details><summary>Output options</summary>'+copyCheck('appendCitation','Add scholarly citation')+copyCheck('appendLink','Append one Gnamma passage link')+copyCheck('rich','Rich text (when supported)')+'</details>':'')+
+ '<p class="muted">'+(c.kind==='research'?'Available source contexts only; personal notes are excluded unless selected.':c.kind==='selected'?'The exact selected words; no automatic translation.':'')+'</p><p id="copy-status" role="status"></p><button type="button" data-ui="copy-submit">'+(c.kind==='link'?'Copy link':c.kind==='citation'?'Copy citation':'Copy')+'</button></div>','copy-configuration');
+}
+function chosenParagraphs(lang){const all=copyParagraphs(lang);if(copyConfig.scope==='section')return all;const a=Number(copyConfig[lang+'Start']),b=copyConfig.scope==='range'?Number(copyConfig[lang+'End']):a;if(b<a)throw Error('Ending paragraph must not precede starting paragraph.');return all.slice(a,b+1);}
+function copyLink(){
+ const c=copyConfig,lang=copyTarget.lang||'en',parts=chosenParagraphs(lang),anchor=c.scope==='section'?'':parts[0]?.id||'';
+ const link=new URL(R.readURL(copyRecord.id,anchor),location.href);if(c.scope==='range'&&parts.length>1)link.hash+='&through='+encodeURIComponent(parts.at(-1).id);return link.href;
+}
+function copyCitation(){return 'Ibn ʿAjība, '+(copyConfig.citationSource==='original'?'al-Baḥr al-Madīd':'The Immense Ocean (al-Baḥr al-Madīd), Gnamma translation')+', Volume I, '+copyRecord.q+', Cairo '+copyRecord.cairo+'.';}
+async function doCopy(){
+ const c=copyConfig,r=copyRecord,parts=[];
+ try{
+  if(c.kind==='link')parts.push(copyLink());else if(c.kind==='citation')parts.push(copyCitation());else{
+   if(c.kind==='selected')parts.push(copyTarget.quote||'');
+   if(['text','research'].includes(c.kind))for(const lang of c.language==='both'?['ar','en']:[c.language]){
+    let text=chosenParagraphs(lang).map(x=>x.text).join('\n\n');if(lang==='ar'&&!c.marks)text=text.replace(/[\u064b-\u065f\u0670\u06d6-\u06ed]/g,'');parts.push(text);
+   }
+   if(['notes','research'].includes(c.kind)){
+    const [notes,reports,sources,questions,dict]=await Promise.all(['notes','reports','sources','questions','dictionary'].map(R.data));
+    const full=r.segments.map(s=>s.html).join('\n'),fragment=c.scope==='section'?full:chosenParagraphs('en').map(p=>p.html||'').join('\n');
+    const relevant=notes.filter(n=>fragment.includes('/note/'+n.id+'"')||(c.scope==='section'||c.sectionNotes)&&(n.scope||[]).some(p=>p.record_id===r.id));
+    if(c.editorial||c.variants)parts.push('Translator annotations\n'+relevant.filter(n=>c.editorial||/variant|manuscript|reading/i.test(n.title+' '+n.content)).map(n=>(n.title||n.id)+'\n'+n.content+'\n'+(n.source||'')).join('\n\n'));
+    if(c.sources)parts.push('Section source references\n'+sources.filter(s=>s.passage_record===r.id).map(s=>[s.legacy_marker,s.current_status,s.current_source_locators].filter(Boolean).join('\n')).join('\n\n'));
+    if(c.quranContext&&r.quran_ar)parts.push('Qurʾānic passage · '+r.q+'\n'+(c.language!=='en'?r.quran_ar+'\n':'')+(c.language!=='ar'?r.quran_en:''));
+    if(c.hadithContext)parts.push('Cited report dossiers\n'+reports.filter(h=>fragment.includes('/hadith/'+h.id+'"')).map(h=>[h.title,h.arabic,h.english,h.source,h.grade,h.remarks].filter(Boolean).join('\n')).join('\n\n'));
+    if(c.dictionary)parts.push('Historical dictionary · section occurrences\n'+dict.filter(d=>d.occurrences.some(o=>o.r===r.id)).map(d=>d.term+' · '+d.ar+'\n'+d.gloss+'\n'+d.sources.map(s=>[s.author,s.work,s.quote,s.translation,s.comment].filter(Boolean).join('\n')).join('\n\n')).join('\n\n'));
+    if(c.research)parts.push('Section critical questions\n'+questions.filter(q=>q.passages.includes(r.id)).map(q=>[q.question,q.status,q.passage].filter(Boolean).join('\n')).join('\n\n'));
+    if(c.personal)parts.push('Private Reading Desk notes\n'+R.desk.filter(x=>!x.archived&&x.r===r.id&&x.note).map(x=>x.note).join('\n\n'));
+   }
+   if(c.appendCitation)parts.push(copyCitation());if(c.appendLink)parts.push(copyLink());
+  }
+  const text=parts.filter(Boolean).join('\n\n');
+  if(c.rich&&navigator.clipboard?.write&&window.ClipboardItem){try{await navigator.clipboard.write([new ClipboardItem({'text/plain':new Blob([text],{type:'text/plain'}),'text/html':new Blob(['<div style="white-space:pre-wrap">'+E(text)+'</div>'],{type:'text/html'})})]);R.toast('Copied.');R.closeSheet();return;}catch{}}
+  await clipboard(text);
+ }catch(error){if($('#copy-status'))$('#copy-status').textContent=error.message;}
+}
+let shareSelection='',shareId='';
+function share(){
+ const t=target(),r=R.byId.get(t.r||R.current);shareId=r?.id||R.current;shareSelection=t.quote||'';
+ R.sheet('Share a passage','<p class="muted">Share a direct link to this section, with the heading or text you choose.</p><fieldset><legend>Include with the link</legend><div class="share-mode-options">'+
+ [['editorial','Editorial title','The descriptive English heading'],['original','Original heading','With its English translation'],['excerpt','First passage','In the selected reading language(s)'],['selection','Selected text','The words highlighted in the passage'],['full','Complete section','The visible Arabic, English or both'],['link','Link only','']].map(([id,label,detail])=>'<label '+(id==='original'||id==='selection'&&!shareSelection?'hidden':'')+'><input type="radio" name="share-content" value="'+id+'" '+(id==='editorial'?'checked':'')+' '+(id==='original'?'disabled':'')+'><span>'+label+'<small>'+detail+'</small></span></label>').join('')+'</div></fieldset><label for="share-preview">Message preview</label><textarea id="share-preview" readonly rows="5"></textarea><div class="desk-toolbar"><button type="button" data-ui="share-copy">Copy message</button><button type="button" data-ui="share-native">Share…</button></div>','share-options');$('#share-preview').value=shareText();
+}
+function shareText(){
+ const kind=$('[name="share-content"]:checked')?.value||'editorial',r=R.byId.get(shareId),unit=document.getElementById('unit-'+shareId),link=new URL(R.readURL(shareId),location.href).href;
+ if(kind==='link')return link;let text=r?.title||'';
+ if(kind==='selection')text=shareSelection;
+ if(kind==='excerpt')text+='\n\n'+['ar','en'].filter(l=>R.prefs[l]).map(l=>unit?.querySelector('.'+l+'-column p')?.innerText||'').join('\n\n');
+ if(kind==='full')text+='\n\n'+['ar','en'].filter(l=>R.prefs[l]).map(l=>unit?.querySelector('.'+l+'-column')?.innerText||'').join('\n\n');
+ return 'Ibn ʿAjība · al-Baḥr al-Madīd\n'+text+'\n\n'+link;
+}
 function saved(){
  const rows=R.desk.filter(x=>!x.archived&&x.r===lastDock);
  R.sheet('Your saved items','<div class="panel-nav">'+rows.map(x=>'<a href="'+R.readURL(x.r,x.anchor,x.lang)+'">'+icon(x.type==='bookmark'?'bookmark-filled':'notes')+' '+E(x.note||x.quote||x.type)+'</a>').join('')+'</div><button type="button" data-nav="desk">Manage in Reading Desk</button>','saved-items');
@@ -167,7 +244,7 @@ function enhanceEditions(){
 }
 document.addEventListener('click',async event=>{
  const b=event.target.closest('button,a');if(!b)return;const d=b.dataset;
- const handled=d.ui||d.nav||d.mode||d.copyChoice||d.pageStyleChoice||d.arabicFontChoice||d.englishFontChoice||d.parallelSide||d.stackedOrder||d.palette||d.themeChoice||d.editionTab||d.language||['focus','settings','menu'].includes(d.action)||['smallerType','largerType'].includes(b.id);
+ const handled=d.ui||d.nav||d.mode||d.copyChoice||d.copyKind||d.pageStyleChoice||d.arabicFontChoice||d.englishFontChoice||d.parallelSide||d.stackedOrder||d.palette||d.themeChoice||d.editionTab||d.language||['focus','settings','menu'].includes(d.action)||['smallerType','largerType'].includes(b.id);
  if(!handled)return;event.preventDefault();event.stopImmediatePropagation();
  try{
   if(d.nav){setNav(false);R.closeSheet();if(d.nav==='read')return await R.resume();if(d.nav==='contents')return R.contents();if(d.nav==='help'){location.hash='#/help';return;}location.hash='#/'+d.nav;return;}
@@ -187,19 +264,28 @@ document.addEventListener('click',async event=>{
   if(d.palette){await set({palette:d.palette});notice(b.getAttribute('aria-label'));return;}
   if(d.themeChoice){await set({appearance:d.themeChoice});return;}
   if(b.id==='smallerType'||b.id==='largerType'){await set({fontScale:Math.min(1.5,Math.max(.8,+(R.prefs.fontScale+(b.id==='largerType'?.05:-.05)).toFixed(2)))});return;}
+  if(d.copyKind)return await copySheet(d.copyKind);
   if(d.copyChoice)return await clipboard(textFor(d.copyChoice));
   if(d.editionTab){for(const el of $$('[data-edition-tab]'))el.setAttribute('aria-selected',String(el===b));$('#published-editions').hidden=d.editionTab!=='published';$('#personal-editions').hidden=d.editionTab!=='personal';return;}
   switch(d.ui||d.action){
    case'menu':if(R.prefs.mode!=='reading'&&R.view==='read')await readingMode('reading');setNav(!navOpen);break;
    case'menu-close':setNav(false);break;case'focus':modes();break;case'settings':visuals();break;
    case'bookmark':R.addBookmark(lastDock||R.current);dock(lastDock||R.current);break;
-   case'copy-menu':copyMenu();break;case'share':share();break;case'share-copy':await clipboard(shareText());break;
+   case'copy-menu':copyMenu();break;case'copy-submit':await doCopy();break;case'share':share();break;case'share-copy':await clipboard(shareText());break;
    case'share-native':if(navigator.share){try{await navigator.share({title:'The Immense Ocean',text:shareText()});}catch(err){if(err.name!=='AbortError')R.toast('Sharing is unavailable. Use Copy message.');}}else await clipboard(shareText());break;
    case'saved':saved();break;
   }
  }catch(err){R.toast(err.message||String(err));}
 },true);
-document.addEventListener('change',event=>{if(event.target.id==='focus-apparatus')set({focusApparatus:event.target.checked});});
+document.addEventListener('change',event=>{
+ const t=event.target;if(t.id==='focus-apparatus')set({focusApparatus:t.checked});
+ if(t.name==='share-content'&&$('#share-preview'))$('#share-preview').value=shareText();
+ if(!copyConfig)return;
+ if(t.dataset.copyOption){copyConfig[t.dataset.copyOption]=t.type==='checkbox'?t.checked:t.value;}
+ if(t.name==='copy-scope'){copyConfig.scope=t.value;drawCopy();}
+ if(t.name==='copy-language'){copyConfig.language=t.value;drawCopy();}
+ if(t.name==='copy-citation')copyConfig.citationSource=t.value;
+});
 document.addEventListener('keydown',event=>{
  if(event.key==='Escape'&&navOpen){event.preventDefault();setNav(false);return;}
  if(event.key==='Escape'&&!$('#sheet').open&&R.prefs.mode!=='reading'&&R.view==='read')readingMode('reading');

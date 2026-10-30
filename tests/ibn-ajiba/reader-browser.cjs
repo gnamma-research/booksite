@@ -126,8 +126,8 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await page.reload();await page.locator('#unit-preface').waitFor();
  assert.equal(await page.locator('html').getAttribute('data-english-font'),'literata');
  pass('Page styles, six fonts, text size and independent mobile order persist');
- await page.locator('[data-ui="copy-menu"]').click();assert.equal(await page.locator('[data-copy-choice]').count(),4);await page.locator('#sheet-close').click();
- await page.locator('[data-ui="share"]').click();assert.equal(await page.locator('[name="share-content"]').count(),3);await page.locator('#sheet-close').click();
+ await page.locator('[data-ui="copy-menu"]').click();assert.equal(await page.locator('[data-copy-kind]').count(),5);await page.locator('#sheet-close').click();
+ await page.locator('[data-ui="share"]').click();assert.equal(await page.locator('[name="share-content"]').count(),6);await page.locator('#sheet-close').click();
  await page.locator('#readerSaveAction').click();await go('read/fatiha_1');await page.locator('#readerSaveAction').click();
  assert.equal(await page.locator('#readerSaveAction').getAttribute('aria-pressed'),'true');
  await page.locator('#saved-counts button').first().click();assert((await page.locator('#sheet-body').innerText()).includes('Manage in Reading Desk'));await page.locator('#sheet-close').click();
@@ -147,7 +147,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await page.locator('#gns-query').fill('mercy');
  await page.waitForFunction(()=>window.GnammaUnifiedSearch?.getState().results>0);
  assert((await page.locator('.gns-toggle-size').innerText()).includes('Research search'));
- await page.locator('[data-gns-expand="1"]').click();
+ await page.locator('.gns-toggle-size[data-gns-expand="1"]').click();
  assert.equal(await page.locator('#gns-mode option').count(),7);
  await page.locator('#gns-mode').selectOption('scholarly');
  await page.locator('#gns-query').fill('mercy AND NOT punishment');
