@@ -1,6 +1,14 @@
 # HANDOFF CURRENT — GNAMMA AVICENNIAN SUMMA
 **Cumulative release handoff, 30 October 2026.** This is the authoritative restart file for subsequent chats and tools. **Read [Stage 3](handoffs/STAGE_03_RELEASE_HANDOFF.md) for the full self-contained history and exact provenance.**
 
+## Stage 5 update — 31 October 2026 (late Persian, Indian and post-Tajrīd source edition)
+
+**Current start point:** [full cumulative Stage 05 handoff](handoffs/STAGE_05_LATE_COMMENTATORS.md) → [searchable edition with 11 fascicles](late-commentators.html) → [machine-readable direct/mediated witness ledger](LATE_WITNESS_REGISTER_2026_10_31.json). Stage 05 retains and cross-links the previous six Avicenna/Lāhījī/Aquinas primary fascicles, ten thematic chapters, comprehensive twenty-domain analysis and Stage 01–04 handoffs.
+
+**New decisive direct source:** Lāhījī, Persian *Gawhar-i murād* II.3.6 pp.301–303, explicitly **retains the tenth Active Intellect as bestower of rational souls and natural specific forms**, and explains individuation by material preparedness. *Gawhar* II.3.4 p.293 states intermediaries are not **independent true existential producers**; the distinction is causal mediation versus original divine existential agency. Compare II.3.7 (time-specific causes), II.3.8 (riḍā/qaṣd) and Narāqī *Lamaʿāt* (existence-first ontology). Also added Tahānawī (direct Indian *Kashshāf* report of Mīr Zāhid), Taftāzānī and layered Ījī/Jurjānī material, and Astarābādī's reported Ṭūsī–Qūshjī–Khafrī–Āqā Jamāl Khwānsārī discussion.
+
+**Unfinished:** independent manuscript/published text of Mīr Zāhid, the two Khwānsārīs' relevant originals, Jilwa, Faḍl-i Ḥaqq's physics and full Qūshjī/Khafrī glosses, plus whole works and further twenty-domain coverage. **No fabricated source translations.** A commit is not proof of public Pages deployment.
+
 ## Stage 4 update — 31 October 2026 (current primary translations)
 
 **Read [Stage 4 cumulative handoff](handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md).** The ten chapters remain intact; this stage adds six complete **bounded** translated argument units and a static HTML primary translation reader. **New public reading entry:** [primary-translations.html](primary-translations.html).
