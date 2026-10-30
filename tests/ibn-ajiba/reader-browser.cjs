@@ -167,7 +167,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  assert(await page.locator('.gns-concordance').count());
  await page.locator('[data-gns-close]').last().click();
  pass('Daruri Quick Find, Research, all seven modes, proximity, concordance and partial curated morphology work');
- await go('editions');
+ await go('editions');await page.locator('#download-types strong').first().waitFor();
  assert.deepEqual(await page.locator('#download-types strong').allTextContents(),['Book PDF','Study Guide','Offline reader','Research files']);
  assert.equal(await page.locator('.edition-card').count(),4);
  for(const purpose of ['guide','offline','source','book']){await page.locator('[data-download-type="'+purpose+'"]').click();assert(await page.locator('#download-'+purpose).isVisible());}
@@ -244,7 +244,11 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  assert((await preview.locator('#menuBtn').evaluate(el=>getComputedStyle(el).backgroundImage)).startsWith('url('));
  await preview.locator('[data-ui="copy-text"]').click();await preview.locator('[name="copy-scope"]').first().waitFor();await preview.locator('#sheet-close').click();
  for(const width of [320,390]){await preview.setViewportSize({width,height:844});assert(await preview.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}
- await preview.evaluate(()=>scrollTo(0,0));
+ await preview.evaluate(()=>{document.documentElement.style.scrollBehavior='auto';scrollTo(0,0);});
+ await preview.locator('#reading-dock').waitFor({state:'visible'});
+ const dockBounds=await preview.locator('#reading-dock').boundingBox();
+ assert(dockBounds&&dockBounds.y>=0&&dockBounds.y+dockBounds.height<=844,'Reading dock stays inside the phone viewport: '+JSON.stringify(dockBounds));
+ await preview.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
  await preview.screenshot({path:path.join(out,'reader-phone.png')});
  const reference=await visual.newPage();
  await reference.goto(new URL('../../../daruri/#section=1',url).href);
