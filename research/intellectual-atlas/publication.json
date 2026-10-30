@@ -38,9 +38,9 @@
   },
   "pdf_note": "The revision-7.2 PDF and offline ZIP are built from this canonical dataset by build_release.py. Historical PDFs from revisions 2 and 4 retain earlier scholarship and are marked legacy.",
   "download_sha256": {
-    "Gnamma_Intellectual_Atlas_Offline_Revision7.zip": "a9822f2440fb8bce18feb8d225b958f44d5a4cadc675c21adc4f3ab0b6a8d916",
+    "Gnamma_Intellectual_Atlas_Offline_Revision7.zip": "eb48c7f182005ec97bd400f2ecf424d2b884239b03ec04c23953de85b5328c5a",
     "Intellectual_Atlas_Reference_Revision4.pdf": "7d5bf70d9d683bbdeaaba21ce9b6f8bc3b7e112356bd81b50622466964858b24",
-    "Intellectual_Atlas_Reference_Revision7.pdf": "eb566cd12a21ec49355046308e08fc91c20aaab31bf118aecc38b82be963d7a8",
+    "Intellectual_Atlas_Reference_Revision7.pdf": "e3a68c0e0ce123f514277c735170f558a3a99ae00f3e5bbeb7e0fdda0cd17252",
     "Islamic_Intellectual_Timeline.pdf": "f75eba18a18b04a3a443a0f6a097ba05013179219ae5eafadcdb5fa5513235ba",
     "Islamic_Timeline_Overview.pdf": "346e2cf5efcca1943d00361d7fcd8ca4cbf26b6510a24aa1417c0659da4258c8",
     "Islamic_Timeline_Website_Package.zip": "8673c89ac9b75ba35c5ca8ffbe63eba5345ba1d259d37b74488266b0ffab7352",
