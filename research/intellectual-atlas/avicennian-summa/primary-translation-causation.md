@@ -180,3 +180,54 @@ The next textual collation must place Ibn Sīnā's *Ilāhiyyāt* VI on causation
 ### Next argument to translate
 
 The transition to Narāqī's fifth preliminary, on circularity and infinite regress, must distinguish an infinite temporal succession from a regress in a simultaneous, essentially ordered dependence structure. The mere existence of a causal chain does not establish that all infinite chains are impossible. Narāqī's distinct demonstrations and counter-objections should be translated individually before deriving a First Cause.
+
+
+## Argument bridge III — the fifth preliminary: circularity, regress, and the Necessary Existent
+
+**Source navigation:** Narāqī, *Jāmiʿ al-afkār*, I:41–56, https://lib.rafed.net/view.php?b_id=728&page=42&type=c_fbook . This is a **source-grounded structural analysis**, not a complete translation of the fifteen-page section.
+
+### The exact dependency problem
+
+The fourth preliminary proves a local proposition: any contingent existent depends upon an efficient cause both for its origination and continuance. The fifth preliminary asks whether an explanatory order composed of such dependent terms can be circular or indefinitely regressive. The first proposition does **not** by itself establish the second. The additional premise must be formulated and defended.
+
+**Argument map (editorial):**
+
+- P1. A possible existent, insofar as possible in itself, requires an existential determinant.
+- P2. A possible existent does not lose this dependence when it begins to exist.
+- P3. A dependent efficient cause can itself be a possible existent.
+- P4. A circular explanatory order cannot ground its own existential dependence, since the putative explanation would presuppose what it is supposed to explain.
+- P5. An infinite order of *essentially dependent* causes requires an argument establishing that the order as a whole does not independently explain its efficacy. The impossibility of every infinite temporal succession is **not** assumed.
+- C1. If P4 and P5 are demonstrated for the relevant causal order, that order cannot consist solely of mutually or infinitely derivative causal terms.
+- C2. An independent explanatory ground is therefore required. Its identity with a Necessary Existent, and the properties of that Necessary Existent, require further demonstration.
+
+### Narāqī's documented section order
+
+1. I:41–42 — definition of circularity, its varieties, and proofs of its impossibility.
+2. I:42–48 — definition of regress and the first proof, the *burhān al-taṭbīq* (correspondence/mapping proof), with objections, replies and an alternative formulation.
+3. I:48–52 — subsequent demonstrations, including the *burhān al-taḍāyuf* (proof from correlativity).
+4. I:52–56 — further regress arguments, culminating in a ninth proof and its objections.
+5. I:57 onward — first article on the Necessary Existent, explicitly separating philosophical, natural-philosophical and theological methods.
+
+**Research warning:** The headings of the online edition are useful navigation evidence but do not supply the actual proofs. No proof is marked translated until its Arabic argument, objections and replies have been transcribed and independently rendered.
+
+### Philosophical adjudication
+
+A *correspondence* proof must show why comparing two supposedly infinite orders generates a contradiction. Merely removing finitely many terms from an infinite series does not, in contemporary set theory, establish unequal cardinality. A historically faithful reading must identify the metaphysical assumptions governing the correspondence rather than impose modern cardinal arithmetic or dismiss the historical argument without analysis.
+
+A *correlativity* proof requires clarification of whether the terms are correlated as father/son, cause/effect, prior/posterior, or explanatory dependents; the impossibility of an infinite correlated series is not immediate.
+
+An *essentially ordered* causal argument may be more promising, but only if the dependence of instrumental causes upon an independent causal source is shown rather than inserted as a definition. This is where comparison with Aquinas on per se causation becomes philosophically meaningful.
+
+### Transition to the next chapter
+
+After establishing the appropriate regress principle, examine whether the independent cause is (a) necessary through itself, (b) unique, (c) simple, and (d) a freely willing creator. Each inference requires its own demonstration; none may be silently inherited from the contingency proof.
+
+### Cross-text programme
+
+- Ibn Sīnā, *al-Shifāʾ*, Ilāhiyyāt VI and VIII; *al-Ishārāt*, metaphysics, on contingency and causation.
+- Al-Rāzī and al-Ṭūsī, competing *Ishārāt* commentaries: objections to necessity, regress and the proof of the First.
+- Al-Lāhījī, *Shawāriq*, I:159 on *jaʿl*, plus relevant causal and regress chapters.
+- Mullā Ṣadrā, *al-Asfār* and *Taʿlīqāt al-Shifāʾ*: investigate whether substantial motion and the ontology of existential dependence change the regress proof.
+- Aquinas: per se and per accidens causal series, conservation and creation. This is a comparative investigation, not a claim of identical conclusions.
+
+**Current completion status:** causation argument substantially excerpted; regress arguments indexed but not translated in full; comparative Sadrian collation outstanding.
