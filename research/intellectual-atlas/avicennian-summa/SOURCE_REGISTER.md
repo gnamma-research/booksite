@@ -108,3 +108,8 @@ The [critical chapters reader](chapters/index.html) links eight connected primar
 ## Twenty-domain findings and cross-source evidence audit
 
 [Read the integrated twenty-domain findings and evidence audit](SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md). This registers what has been translated from Ibn Sīnā, Lāhījī, Narāqī, Ṣadrā, al-Ḥillī and Aquinas, identifies which arguments demonstrate changes in doctrine versus stronger demonstrations, and explicitly marks gaps in *nafs al-amr*, providence, eschatology, ethics and nineteenth-century late natural philosophy. The earlier Narāqī [causation and regress dossier](primary-translation-causation.md) is incorporated from its separate working branch, preserving the material rather than leaving it in an unmerged pull request.
+
+
+## Additional direct post-classical kalām primary-text comparison
+
+[Chapter 09: Hylomorphism and mental existence across the *Mawāqif* and *Maqāṣid*](chapters/09-mawaqif-maqasid-hylomorphism-mental-existence.md). The chapter translates directly identified late-kalām objections to prime matter (proof from connection/separation, the corporeal-form reply and spatial emplacement trilemma) and al-Taftāzānī's argument on mental existence, universals, absent objects, plus the heat/heavens/nonexistent objections and responses. Sources are *Mawāqif* VII:34–35,45 and *Sharḥ al-Maqāṣid* 78–79; Matn, Jurjānī commentary and Siyālkūtī/Ḥalabī layers are not conflated. This meaningfully extends coverage of the previously underrepresented Sunni scholastic mediation.
