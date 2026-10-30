@@ -3,9 +3,30 @@ window.GNAMMA_BOOK={
   "title": "Taqrīb al-Marām",
   "arabicTitle": "تقريب المرام في شرح تهذيب الكلام",
   "author": "ʿAbd al-Qādir al-Sanandajī",
-  "status": "Beginning of a separate commentary translation · five source-checked selections, not a continuous English edition",
-  "description": "A separate translation of Sanandajī, with the author’s running explanation kept distinct from quotations of al-Taftāzānī’s matn and from marginal scholia. Cross-links return to the corresponding shorter Tahdhīb passage.",
+  "status": "Beginning of a separate commentary translation: six image-checked selections including the authorial preface",
+  "description": "The commentary translation now begins with Sanandajī’s own preface, before selected philosophical and theological passages. All extracts identify matn, sharḥ and marginal voices where discernible.",
   "units": [
+    {
+      "id": "S.00",
+      "title": "Sanandajī’s opening words",
+      "arabic": "بسم الله الرحمن الرحيم. الحمد لله الذي هدانا لدين الإسلام، ووفقنا على تحرير المقاصد الدينية وتهذيب الكلام، والصلاة والسلام على سيدنا ومولانا محمد خير الأنام، وآله وصحبه ... وبعد، فيقول العبد الفقير إلى ألطاف ربه الغني عبد القادر ابن الشيخ محمد السعيد التختي: لما كان قسم التهذيب من الكلام الذي صنفه قدوة الأنام العلامة الثاني السعد التفتازاني، قدس سره، مع رصانته وجزالته مشتملاً على غرائب أفكار ...",
+      "english": "In the name of God, the Merciful, the Compassionate. Praise belongs to God, who guided us to the religion of Islam and granted us success in refining religious aims and in ordering discourse in kalām. May blessing and peace be upon our master Muḥammad, the best of humankind, and upon his family and companions. To proceed, the servant in need of the gracious kindness of his self-sufficient Lord, ʿAbd al-Qādir ibn al-Shaykh Muḥammad al-Saʿīd al-Takhtī, says: The kalām portion of the Tahdhīb composed by the exemplar of scholars, the second master, Saʿd al-Dīn al-Taftāzānī—may God sanctify his spirit—is, despite its firm composition and concentrated expression, filled with rare intellectual insights …",
+      "statusText": "Opening of the commentator’s own preface · vol. I, printed pp. 2–3 (PDF pp. 15–16)",
+      "notes": [
+        {
+          "type": "Textual",
+          "text": "These are selected opening lines from the main typographically larger preface. The ellipses mark material omitted before the passage continues; they are not supplied as a continuous translation of the whole preface."
+        },
+        {
+          "type": "Translation",
+          "text": "The author writes in rhymed, ornamented prose. The English aims to preserve the sense and authorial voice without reproducing every rhyme or repeating untranslated scholastic epithets."
+        },
+        {
+          "type": "Source",
+          "text": "Taqrīb al-Marām, 1433/2012 reproduced print, vol. I:2–3; user-supplied PDF pp. 15–16, directly inspected as page images."
+        }
+      ]
+    },
     {
       "id": "S.01",
       "title": "What belongs to kalām",
