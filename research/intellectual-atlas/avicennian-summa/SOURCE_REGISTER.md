@@ -89,7 +89,7 @@ E. Inspect and collate the now-located Cairo 1904 Arabic printing of Khayrābād
 
 ## Substantive translated chapters — GNAMMA edition, October 30, 2026
 
-The [critical chapters reader](chapters/index.html) links eight connected primary-source studies, rather than only the earlier preparatory outlines. Each chapter marks source text, authorial voice, complete bounded units versus selected passages, printed variants and manuscript-collation limitations.
+The [critical chapters reader](chapters/reader.html#ch01) links eight connected primary-source studies, rather than only the earlier preparatory outlines. Each chapter marks source text, authorial voice, complete bounded units versus selected passages, printed variants and manuscript-collation limitations.
 
 1. [mental existence and quiddity](chapters/01-mental-existence-and-quiddity.md)
 2. [making and causal explanation](chapters/02-making-and-causal-explanation.md)
@@ -113,3 +113,8 @@ The [critical chapters reader](chapters/index.html) links eight connected primar
 ## Additional direct post-classical kalām primary-text comparison
 
 [Chapter 09: Hylomorphism and mental existence across the *Mawāqif* and *Maqāṣid*](chapters/09-mawaqif-maqasid-hylomorphism-mental-existence.md). The chapter translates directly identified late-kalām objections to prime matter (proof from connection/separation, the corporeal-form reply and spatial emplacement trilemma) and al-Taftāzānī's argument on mental existence, universals, absent objects, plus the heat/heavens/nonexistent objections and responses. Sources are *Mawāqif* VII:34–35,45 and *Sharḥ al-Maqāṣid* 78–79; Matn, Jurjānī commentary and Siyālkūtī/Ḥalabī layers are not conflated. This meaningfully extends coverage of the previously underrepresented Sunni scholastic mediation.
+
+
+### GNAMMA integrated bilingual edition
+
+The complete nine-chapter working edition can now be read in the [self-contained bilingual reader](chapters/reader.html#ch01), including Arabic reading direction, original source links, English/Latin analyses, and internal chapter navigation. This is a browser/offline **edition presentation** of bounded translations and excerpts, not a claim of complete critical collation of every underlying treatise.
