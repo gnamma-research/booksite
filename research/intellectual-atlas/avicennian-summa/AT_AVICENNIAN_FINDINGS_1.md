@@ -176,3 +176,8 @@ Distinguish logical possibility (absence of contradiction), essential contingenc
 ## 1.6 — knowledge and nafs al-amr
 
 Distinguish (a) concept in intellect, (b) intentional object, (c) extra-mental truthmaker, and (d) a wider order of objective correctness. Nafs al-amr must not be equated uncritically with physical external existence, a separate Platonic world, or a modern proposition ontology. Compare Ṭūsī's short treatise on nafs al-amr, later Dawwānī and Lāhījī discussions, and Asad Ahmed's work on later logic. For each judgment, ask what makes it true when its subject is absent, impossible, or relational. **Source status:** analytical research programme.
+
+
+## 1.7 — universals and individuation
+
+Keep apart essence considered in itself, the universal predicable, the intelligible concept, and the concrete individual. A universal qua universal is in cognition, but that does not imply that the nature predicated has no extra-mental instances. The relation between matter, designated matter, accidents and individual existence must be collated separately. Compare Avicenna Ilāhiyyāt V.1–2, Suhrawardī's critiques, Ṭūsī's Tajrīd, and Aquinas De ente et essentia. **Source status:** established comparative distinctions; primary dossier pending.
