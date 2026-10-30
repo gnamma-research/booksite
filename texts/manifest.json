@@ -125,7 +125,7 @@
       ],
       "url": "texts/al-taftazani/tahdhib-al-kalam/",
       "related_commentary_id": "sanandaji-taqrib-maram",
-      "note": "64 source-ordered provisional units in the first web import; the extended 140-unit project register has many discontinuities. Not a complete or definitive critical edition."
+      "note": "81 source-ordered provisional translation units drawn from a larger 140-unit research register. Contains gaps and reconstructed readings; not a complete or definitive critical edition."
     },
     {
       "id": "sanandaji-taqrib-maram",
@@ -146,7 +146,7 @@
       ],
       "url": "texts/al-sanandaji/taqrib-al-maram/",
       "related_matn_id": "taftazani-tahdhib-kalam",
-      "note": "Five directly source-image checked selective units with speaker attribution; separate commentary translation not yet continuous. 632-page two-volume 1433/2012 reproduction supplied."
+      "note": "Six directly image-checked selective translations, starting from the authorial preface. The two-volume 632-page source is accessible; the complete commentary translation remains outstanding."
     }
   ],
   "research": [
