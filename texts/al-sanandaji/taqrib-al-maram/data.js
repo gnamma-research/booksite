@@ -3,7 +3,7 @@ window.GNAMMA_BOOK={
   "title": "Taqrīb al-Marām",
   "arabicTitle": "تقريب المرام في شرح تهذيب الكلام",
   "author": "ʿAbd al-Qādir al-Sanandajī",
-  "status": "Beginning of a separate commentary translation: six image-checked selections including the authorial preface",
+  "status": "A separate commentary translation begun with eleven selected, directly page-checked excerpts. Its entire two-volume continuous translation is still outstanding.",
   "description": "The commentary translation now begins with Sanandajī’s own preface, before selected philosophical and theological passages. All extracts identify matn, sharḥ and marginal voices where discernible.",
   "units": [
     {
@@ -129,10 +129,106 @@ window.GNAMMA_BOOK={
           "text": "Taqrīb II:201, PDF p. 496; continuation on printed pp. 202–203 remains under collation."
         }
       ]
+    },
+    {
+      "id": "S.06",
+      "title": "The different purposes of doctrine and practical ruling",
+      "arabic": "[العقائد] وهي الأحكام التي يتعلق الغرض بمجرد اعتقادها بالقلب، وأما التي يتعلق الغرض بعملها وإن كان الاعتقاد ...",
+      "english": "Doctrines are judgments whose intended end is that they should simply be assented to in the heart. As for judgments whose intended end is practical performance—even though assent to them also matters—…",
+      "statusText": "Selective, image-checked Sanandajī explanation · I:8–9, PDF pp. 21–22",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "Upper running commentary, 2012 reproduced print, vol. I, pp. 8–9; PDF pp. 21–22. The bracketed noun supplies the antecedent, and the final ellipsis marks an untranslated continuation."
+        },
+        {
+          "type": "Explanation",
+          "text": "This is a disciplinary distinction according to the primary purpose of inquiry. It does not deny the obligation to believe that particular legal rulings are true."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-01",
+      "linkLabel": "Return to al-Taftāzānī’s definition"
+    },
+    {
+      "id": "S.07",
+      "title": "Religious as an identifying restriction",
+      "arabic": "(الدينية) المنسوبة إلى دين نبينا محمد صلى الله عليه وسلم ...",
+      "english": "‘Religious’ means belonging to the religion of our Prophet Muḥammad—may God bless him and grant him peace …",
+      "statusText": "Directly checked lexical explanation · I:9, PDF p. 22",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "Taqrīb I:9 (PDF p. 22). The parenthetical term is the original matn lemma; the identifying explanation follows in the running commentary. Text after the ellipsis is deliberately excluded."
+        },
+        {
+          "type": "Translation",
+          "text": "The point is an identifying qualifier for the doctrines studied in Islamic kalām, not a definition of religion as knowledge alone."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-01"
+    },
+    {
+      "id": "S.08",
+      "title": "Certainty is not merely doctrinal vocabulary",
+      "arabic": "العلم اليقيني، لأن الدليل اليقيني ما أفاد اليقين ...",
+      "english": "Certain knowledge: for a conclusive proof is one that yields certainty …",
+      "statusText": "Directly checked excerpt · I:10, PDF p. 23",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "Taqrīb I:10, upper register. The opening expression is in the discussion following ‘ʿan al-adilla al-yaqīniyya’; the ellipsis denotes omitted argument."
+        },
+        {
+          "type": "Explanation",
+          "text": "The qualifier yaqīnī applies to the evidential warrant of doctrinal knowledge. This matters when distinguishing firm, true assent from mere psychological conviction."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-02"
+    },
+    {
+      "id": "S.09",
+      "title": "Why the subject is the knowable",
+      "arabic": "المعلوم ... [يتناول] الموجود والمعدوم ...",
+      "english": "The knowable extends to what exists and what does not exist …",
+      "statusText": "Image-checked abbreviated explanation · I:12, PDF p. 25",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "Taqrīb I:12, main upper-register discussion. Square brackets identify supplied connective wording; ellipses indicate omitted portions. This is an extract, not the whole commentary."
+        },
+        {
+          "type": "Explanation",
+          "text": "Sanandajī’s distinction allows kalām to ask whether a proposed object exists at all. It does not commit the text to the real extramental existence of every object conceivable to thought."
+        },
+        {
+          "type": "Editorial",
+          "text": "Compare al-Taftāzānī, Sharḥ al-Maqāṣid, introduction on the subject matter of kalām. This comparison is authorial context, not a replacement for the Tahdhīb text."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-01"
+    },
+    {
+      "id": "S.10",
+      "title": "The end and benefit of theological inquiry",
+      "arabic": "الفوز بسعادة الدارين ...",
+      "english": "Attaining felicity in the two abodes [this life and the hereafter] …",
+      "statusText": "Image-checked phrase within discussion · I:13–14, PDF pp. 26–27",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "Taqrīb I:13–14 (PDF pp. 26–27). This is a verified phrase embedded in a longer explanation of purpose, benefit and ultimate end."
+        },
+        {
+          "type": "Explanation",
+          "text": "This is the wider benefit of confirmed religious conviction, not a substitute for the discipline’s proximate aim of rationally establishing the doctrines."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-01"
     }
   ],
   "sourceNotes": [
     "Supplied two-volume facsimile, Cairo: al-Maktaba al-Azhariyya li-l-Turāth, 1433/2012; 632 PDF pages.",
-    "The upper register contains embedded Tahdhīb lemmata; the lower register may include Ḥāshiyat al-Muḥākamāt and other voices. Only selected passages checked against page images are transcribed."
+    "The upper register contains embedded Tahdhīb lemmata; the lower register may include Ḥāshiyat al-Muḥākamāt and other voices. Only selected passages checked against page images are transcribed.",
+    "Revision 17 extra direct page-image checks: Taqrīb I:8–14 (PDF pp. 21–27), distinguishing embedded matn quotations from Sanandajī's running text."
   ]
 };
