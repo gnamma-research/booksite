@@ -88,6 +88,12 @@ translation excerpts, each with a published-page link and distinct editorial
 notes. The complete argument-unit translations and manuscript collation are
 outstanding. A new developed chapter, [`On Contingency and Continuing Causation`](avicennian-summa/causal-dependence.html), adds a newly authored Arabic matn with English translations, three additional source lemmata from Narāqī, and an explicit comparison of proximal natural causes with continuing ontological dependence. The accessible 1904 Arabic printing of Khayrābādī's *al-Hadiyya* has been identified at https://ddl.ae/book/95961; no complete translation of it is claimed. This atlas does not redistribute commercial edition scans.
 
+### New critical-chapter edition, 30 October 2026
+
+The [eight-chapter bilingual critical reader](avicennian-summa/chapters/) now extends the original causation dossier with substantively translated and source-indexed studies of (1) mental existence and the nature considered in itself, (2) simple versus composite *jaʿl*, (3) substantial motion and the identity of the subject, (4) intellectual actualisation, imagination and personal identity, (5) the four causes and the Giver of Forms, (6) divine agency, cosmic necessity and plurality, (7) Narāqī's two critiques of *waḥdat al-wujūd* and his alternative, and (8) the three senses of universality and *nafs al-amr*. The original Arabic, English and relevant Latin passages are attributed separately, with printed edition variants where reported.
+
+**Important qualification:** The reader consists of major bounded argument units, selected extracts and analysis; it is **not** a complete, cross-manuscript critical translation of the entire late Avicennian tradition. The offline ZIP release includes all eight Markdown chapters, source files and the overview reader. No third-party printed book scans are distributed.
+
 ## Current revision 7.2 downloadable editions
 
 - `downloads/Intellectual_Atlas_Reference_Revision7.pdf`: full source-critical
