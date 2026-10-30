@@ -98,8 +98,8 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
     await overflow('Visuals '+viewport.width+' '+palette+' '+theme);
     assert(await page.locator('#sheet .gn-visual-row').count()>=8);
     await page.locator('#sheet-close').click();await overflow('reader');
-    const controls=await page.locator('#topbar button:visible').evaluateAll(nodes=>nodes.map(n=>{const b=n.getBoundingClientRect();return {x:b.x,right:b.right,w:b.width,h:b.height};}));
-    assert(controls.every(b=>b.x>=-1&&b.right<=viewport.width+1&&b.w>=28&&b.h>=40),'Toolbar fits '+viewport.width);
+    const controls=await page.locator('#topbar button:visible').evaluateAll(nodes=>nodes.map(n=>{const b=n.getBoundingClientRect();return {control:n.id||n.getAttribute('aria-label'),x:b.x,right:b.right,w:b.width,h:b.height};}));
+    assert(controls.every(b=>b.x>=-1&&b.right<=viewport.width+1&&b.w>=28&&b.h>=40),'Toolbar fits '+viewport.width+': '+JSON.stringify(controls));
     const colour=await page.locator('#readerSaveAction').evaluate(el=>({button:getComputedStyle(el).color,icon:getComputedStyle(el.querySelector('svg')).stroke}));
     assert.equal(colour.button,colour.icon);
    }
