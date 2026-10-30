@@ -212,6 +212,20 @@ files=[
  ('avicennian-summa/index.html',ROOT/'avicennian-summa/index.html'),
  ('avicennian-summa/causal-dependence.html',ROOT/'avicennian-summa/causal-dependence.html'),
  ('avicennian-summa/primary-translations.html',ROOT/'avicennian-summa/primary-translations.html'),
+ ('avicennian-summa/late-commentators.html',ROOT/'avicennian-summa/late-commentators.html'),
+ ('avicennian-summa/LATE_WITNESS_REGISTER_2026_10_31.json',ROOT/'avicennian-summa/LATE_WITNESS_REGISTER_2026_10_31.json'),
+ ('avicennian-summa/LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md',ROOT/'avicennian-summa/LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md'),
+ ('avicennian-summa/LATE_FASCICLE_02_LAHIJI_GAWHAR_TEMPORAL_CAUSATION.md',ROOT/'avicennian-summa/LATE_FASCICLE_02_LAHIJI_GAWHAR_TEMPORAL_CAUSATION.md'),
+ ('avicennian-summa/LATE_FASCICLE_03_LAHIJI_GAWHAR_DIVINE_AGENCY.md',ROOT/'avicennian-summa/LATE_FASCICLE_03_LAHIJI_GAWHAR_DIVINE_AGENCY.md'),
+ ('avicennian-summa/LATE_FASCICLE_04_LAHIJI_GAWHAR_EMANATION_UNITY.md',ROOT/'avicennian-summa/LATE_FASCICLE_04_LAHIJI_GAWHAR_EMANATION_UNITY.md'),
+ ('avicennian-summa/LATE_FASCICLE_05_INDIAN_TAHANAWI_MIR_ZAHID_JAL.md',ROOT/'avicennian-summa/LATE_FASCICLE_05_INDIAN_TAHANAWI_MIR_ZAHID_JAL.md'),
+ ('avicennian-summa/LATE_FASCICLE_06_TAFTAZANI_MAQASID_MENTAL_EXISTENCE.md',ROOT/'avicennian-summa/LATE_FASCICLE_06_TAFTAZANI_MAQASID_MENTAL_EXISTENCE.md'),
+ ('avicennian-summa/LATE_FASCICLE_07_MAWAQIF_JURJANI_GLOSSES.md',ROOT/'avicennian-summa/LATE_FASCICLE_07_MAWAQIF_JURJANI_GLOSSES.md'),
+ ('avicennian-summa/LATE_FASCICLE_08_LAHIJI_SARMAYA_IMAN_DEPENDENCE.md',ROOT/'avicennian-summa/LATE_FASCICLE_08_LAHIJI_SARMAYA_IMAN_DEPENDENCE.md'),
+ ('avicennian-summa/LATE_FASCICLE_09_POST_TAJRID_QUṢHJI_KHAFRI_KHWANSARI_POWER.md',ROOT/'avicennian-summa/LATE_FASCICLE_09_POST_TAJRID_QUṢHJI_KHAFRI_KHWANSARI_POWER.md'),
+ ('avicennian-summa/LATE_FASCICLE_10_NARAQI_LAMAAT_EXISTENCE_ESSENCE.md',ROOT/'avicennian-summa/LATE_FASCICLE_10_NARAQI_LAMAAT_EXISTENCE_ESSENCE.md'),
+ ('avicennian-summa/LATE_FASCICLE_11_NARAQI_SHARH_SHIFA_SECOND_INTENTIONS.md',ROOT/'avicennian-summa/LATE_FASCICLE_11_NARAQI_SHARH_SHIFA_SECOND_INTENTIONS.md'),
+ ('avicennian-summa/handoffs/STAGE_05_LATE_COMMENTATORS.md',ROOT/'avicennian-summa/handoffs/STAGE_05_LATE_COMMENTATORS.md'),
  ('avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md',ROOT/'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md'),
  ('avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md',ROOT/'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md'),
  ('avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md',ROOT/'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md'),
@@ -258,7 +272,7 @@ run: python -m http.server 8123 from the extraction folder and open
 http://localhost:8123/research/intellectual-atlas/
 
 Contents: source-critical PDF, current canonical JSON and interactive map;
-standalone Neoplatonism and Tahdhib dossiers; plus the Avicennian Summa ten-chapter reader, six new continuous primary translations, their source apparatus, and the source register.
+standalone Neoplatonism and Tahdhib dossiers; plus the Avicennian Summa ten-chapter reader, six Avicenna/Lahiji/Aquinas primary translations, eleven late Persian/Indian/post-Tajrid edition fascicles, their source apparatus, and the source register.
 Earlier edition PDFs/ZIPs on the web are NOT included in this archive.
 External scholarly hyperlinks require internet access. Sources belong to
 their respective authors/publishers. No source books/manuscript scans included.
@@ -275,6 +289,20 @@ with zipfile.ZipFile(ZIP) as z:
     assert root+'avicennian-summa/causal-dependence.html' in z.namelist()
     assert root+'avicennian-summa/chapters/index.html' in z.namelist()
     assert root+'avicennian-summa/primary-translations.html' in z.namelist()
+    assert root+'avicennian-summa/late-commentators.html' in z.namelist()
+    assert root+'avicennian-summa/LATE_WITNESS_REGISTER_2026_10_31.json' in z.namelist()
+    assert root+'avicennian-summa/LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md' in z.namelist()
+    assert root+'avicennian-summa/LATE_FASCICLE_02_LAHIJI_GAWHAR_TEMPORAL_CAUSATION.md' in z.namelist()
+    assert root+'avicennian-summa/LATE_FASCICLE_03_LAHIJI_GAWHAR_DIVINE_AGENCY.md' in z.namelist()
+    assert root+'avicennian-summa/LATE_FASCICLE_04_LAHIJI_GAWHAR_EMANATION_UNITY.md' in z.namelist()
+    assert root+'avicennian-summa/LATE_FASCICLE_05_INDIAN_TAHANAWI_MIR_ZAHID_JAL.md' in z.namelist()
+    assert root+'avicennian-summa/LATE_FASCICLE_06_TAFTAZANI_MAQASID_MENTAL_EXISTENCE.md' in z.namelist()
+    assert root+'avicennian-summa/LATE_FASCICLE_07_MAWAQIF_JURJANI_GLOSSES.md' in z.namelist()
+    assert root+'avicennian-summa/LATE_FASCICLE_08_LAHIJI_SARMAYA_IMAN_DEPENDENCE.md' in z.namelist()
+    assert root+'avicennian-summa/LATE_FASCICLE_09_POST_TAJRID_QUṢHJI_KHAFRI_KHWANSARI_POWER.md' in z.namelist()
+    assert root+'avicennian-summa/LATE_FASCICLE_10_NARAQI_LAMAAT_EXISTENCE_ESSENCE.md' in z.namelist()
+    assert root+'avicennian-summa/LATE_FASCICLE_11_NARAQI_SHARH_SHIFA_SECOND_INTENTIONS.md' in z.namelist()
+    assert root+'avicennian-summa/handoffs/STAGE_05_LATE_COMMENTATORS.md' in z.namelist()
     assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md' in z.namelist()
     assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md' in z.namelist()
     assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md' in z.namelist()
