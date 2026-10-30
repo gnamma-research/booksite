@@ -6,6 +6,7 @@ const icon=n=>window.GnammaBookmarkUI&&['bookmark','notes'].includes(n)?(n==='no
 const storageKey='gnamma-bahr-vol1-';
 
 const history=window.GnammaNavigationHistory.create({validSection:id=>R.byId.has(id)});
+window.BahrNavigation={history,snapshot,visitPlace};
 let lastSnapshot=null,skipTrail=false;
 function snapshot(){
  const p=R.visiblePlace();if(!p)return lastSnapshot;
@@ -102,7 +103,7 @@ function paragraphControls(){
   const r=p.closest('.passage').dataset.record,lang=p.dataset.lang;
   const row=document.createElement('div');row.className='personal-paragraph-tools';row.dataset.for=p.id;row.dataset.record=r;row.dataset.lang=lang;row.setAttribute('role','group');row.setAttribute('aria-label','Paragraph reading actions');
   row.innerHTML='<button type="button" data-paragraph-action="bookmark" aria-label="Bookmark paragraph">'+GnammaBookmarkUI.icon({kind:'paragraph',saved:R.desk.some(x=>!x.archived&&x.type==='bookmark'&&x.anchor===p.id)})+'</button><button type="button" data-paragraph-action="note" aria-label="Add personal note to paragraph">'+GnammaBookmarkUI.noteIcon()+'</button>';
-  p.before(row);
+  p.after(row);
  }
 }
 
@@ -145,7 +146,7 @@ function enhanceDownloads(){
  grid.before(section);section.append(grid);
  grid.insertAdjacentHTML('beforebegin','<h2>Book PDF</h2><p>Choose an edition of Ibn ʿAjība’s text.</p>'+customization()+'<h3>Published editions</h3>');
  const purpose=[['book','Book PDF','Reading, Study, Reference','book'],['guide','Study Guide','Lessons and exercises','study'],['offline','Offline reader','Interactive website','download'],['source','Research files','Source texts and notes','notes']];
- section.insertAdjacentHTML('beforebegin','<div id="download-types" role="tablist" aria-label="Download type">'+purpose.map(([id,t,sub,glyph],i)=>'<button type="button" role="tab" id="download-tab-'+id+'" data-download-type="'+id+'" aria-selected="'+(!i)+'" aria-controls="download-'+id+'">'+icon(glyph)+'<span><strong>'+t+'</strong><small>'+sub+'</small></span></button>').join('')+'</div>');
+ section.insertAdjacentHTML('beforebegin','<div id="download-types" role="tablist" aria-label="Download type">'+purpose.map(([id,t,sub,glyph],i)=>'<button type="button" role="tab" id="download-tab-'+id+'" data-download-type="'+id+'" aria-selected="'+(!i)+'" aria-controls="download-'+id+'">'+icon('download-'+id)+'<span><strong>'+t+'</strong><small>'+sub+'</small></span></button>').join('')+'</div>');
  const guide=document.createElement('section');guide.id='download-guide';guide.className='download-panel';guide.hidden=true;guide.setAttribute('role','tabpanel');guide.setAttribute('aria-labelledby','download-tab-guide');guide.innerHTML='<h2>Study Guide</h2><p>Twelve routes through Volume I, with passage links and study prompts.</p><a class="button" href="#/study">Read the guide</a> <button type="button" data-feature="print-guide">Print / PDF</button>';
  const offline=document.createElement('section');offline.id='download-offline';offline.className='download-panel';offline.hidden=true;offline.setAttribute('role','tabpanel');offline.setAttribute('aria-labelledby','download-tab-offline');
  const source=document.createElement('section');source.id='download-source';source.className='download-panel';source.hidden=true;source.setAttribute('role','tabpanel');source.setAttribute('aria-labelledby','download-tab-source');
@@ -258,3 +259,4 @@ new MutationObserver(()=>{enhanceDesk();enhanceDownloads();}).observe($('#main')
 window.BahrFeatures={prepareSearch,transfer,prepareBook,printShell,history};
 enhanceDesk();enhanceDownloads();paragraphControls();
 })();
+

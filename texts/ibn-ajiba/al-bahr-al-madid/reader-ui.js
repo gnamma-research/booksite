@@ -45,7 +45,7 @@ function install(){
  '<div class="reader-action-slot"><button type="button" id="focusToolbar" data-action="focus" aria-haspopup="dialog" aria-label="Reading mode: Reading, Focus or Continuous" title="Reading mode">'+icon('focus')+'<span class="sr-only" id="focus-label"></span></button>'+
  '<button type="button" id="readerSaveAction" data-ui="bookmark" aria-label="Bookmark section" title="Bookmark section">'+icon('bookmark')+'</button>'+
  '<div class="copy-group">'+button('copy-text','Copy text','copy')+'<button type="button" data-ui="copy-menu" aria-label="Copy options" title="Copy options" aria-haspopup="menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg></button></div>'+button('share','Share section','share')+'</div></div>'+
- '<div class="gn-reader-global-trailing"><button type="button" data-action="search" id="searchBtn" aria-label="Search the book and reference tools" title="Search">'+icon('search')+'</button><button type="button" data-action="settings" id="settingsBtn" aria-label="Visuals: display, themes and reading tools" title="Visuals">'+icon('sliders')+'</button></div></div>';
+ '<div class="gn-reader-global-trailing"><button type="button" data-action="search" id="searchBtn" aria-label="Search the book and reference tools" title="Search">'+icon('search')+'</button><button type="button" data-action="settings" id="settingsBtn" aria-label="Display, themes and reading tools" title="Visuals">'+icon('sliders')+'</button></div></div>';
  document.body.insertAdjacentHTML('beforeend','<div id="drawerShade" hidden></div><aside id="leftNav" hidden aria-label="Reader navigation"><div class="nav-heading"><h2><cite lang="ar" dir="rtl">البحر المديد</cite><span>Ibn ʿAjība</span></h2>'+button('menu-close','Close navigation','close')+'</div><nav class="primary-nav" aria-label="Main navigation">'+navHTML()+'</nav><div class="gn-nav-footer-links"><button type="button" data-nav="home">Home</button><button type="button" data-nav="about">About</button><a href="../../../">Gnamma library</a></div></aside>');
  $('#sheet-close').innerHTML=icon('close');
  $('#sheet').addEventListener('close',()=>{unlock();sync();});
@@ -53,7 +53,7 @@ function install(){
  new MutationObserver(()=>{if($('#sheet').open)lock();}).observe($('#sheet'),{attributes:true,attributeFilter:['open']});
  $('#drawerShade').addEventListener('click',()=>setNav(false));
  window.addEventListener('resize',()=>{if(navOpen)setNav(true);sync();});
- window.addEventListener('hashchange',()=>{setNav(false);setTimeout(sync,0);});
+ window.addEventListener('hashchange',()=>{if(compact())setNav(false);setTimeout(sync,0);});
  $('#reading-dock').insertAdjacentHTML('beforeend','<div id="saved-counts" hidden></div>');
  new MutationObserver(()=>{sync();enhanceDictionary();}).observe($('#main'),{childList:true});
  new MutationObserver(enhanceDictionary).observe($('#sheet-body'),{childList:true});
@@ -62,14 +62,14 @@ function install(){
 function lock(){if(modalFrozen)return;modalFrozen=true;modalY=scrollY;document.body.style.overflow='hidden';document.documentElement.style.overscrollBehavior='none';}
 function unlock(){if(navOpen&&compact())return;modalFrozen=false;document.body.style.overflow='';document.documentElement.style.overscrollBehavior='';}
 function setNav(open){
- const modal=compact();navOpen=open;$('#leftNav').hidden=!open;$('#drawerShade').hidden=!(open&&modal);
+ window.BahrParity?.closePopovers();const modal=compact();navOpen=open;try{sessionStorage.setItem('bahr-navigation-open',String(open));}catch{}$('#leftNav').hidden=!open;$('#drawerShade').hidden=!(open&&modal);
  document.body.classList.toggle('nav-open',open);document.body.classList.toggle('nav-modal',open&&modal);
  $('#menuBtn').setAttribute('aria-expanded',String(open));
  for(const id of ['main','topbar','reading-dock'])$('#'+id).inert=open&&modal;
  const nav=$('#leftNav');if(open&&modal){nav.setAttribute('role','dialog');nav.setAttribute('aria-modal','true');lock();}
  else{nav.removeAttribute('role');nav.removeAttribute('aria-modal');if(!$('#sheet').open)unlock();}
  if(open){navTrigger=document.activeElement;if(modal)nav.querySelector('button')?.focus({preventScroll:true});}
- else{if(navTrigger?.isConnected)navTrigger.focus({preventScroll:true});navTrigger=null;}
+ else{if(navTrigger?.isConnected&&modal)navTrigger.focus({preventScroll:true});navTrigger=null;}
 }
 function sync(){
  const p=R.prefs,root=document.documentElement;
@@ -83,17 +83,17 @@ function sync(){
  document.body.classList.toggle('ui-hide-apparatus',R.view==='read'&&p.mode!=='reading'&&!p.focusApparatus);
  document.body.classList.toggle('ui-hide-notes',!p.showNotes);document.body.classList.toggle('ui-hide-terms',!p.showTerms);document.body.classList.toggle('ui-hide-personal-marks',p.showPersonalMarks===false);
  document.body.classList.toggle('ui-parallel-right',p.parallelSide==='right');document.body.classList.toggle('ui-stack-bottom',p.stackedOrder==='bottom');
- const ar=$('#topbar [data-language="ar"]');if(ar){ar.textContent=p.ar&&p.marks==='source'?'ARَ':'AR';ar.setAttribute('aria-pressed',String(p.ar));ar.setAttribute('aria-label','Arabic: '+(p.ar?(p.marks==='source'?'source vowel marks':'unvowelled'):'hidden')+'. Activate to cycle.');}
- const en=$('#topbar [data-language="en"]');if(en)en.setAttribute('aria-pressed',String(p.en));
+ const ar=$('#topbar [data-language="ar"]');if(ar){ar.textContent='AR';ar.classList.toggle('has-vowels',p.ar&&p.marks==='source');ar.setAttribute('aria-pressed',String(p.ar));ar.setAttribute('aria-label','Arabic: '+(p.ar?(p.marks==='source'?'source vowel marks':'unvowelled'):'hidden')+'. Activate to cycle.');}
+ const en=$('#topbar [data-language="en"]');if(en){en.setAttribute('aria-pressed',String(p.en));en.setAttribute('aria-label',p.en?'Hide English':'Show English');}
  if($('#focusToolbar')){$('#focusToolbar').setAttribute('aria-pressed',String(p.mode!=='reading'));$('#focus-label').textContent=p.mode;}
  $$('[data-nav]').forEach(b=>{const active=b.dataset.nav===R.view||(b.dataset.nav==='read'&&R.view==='read');if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
- const id=R.visiblePlace()?.r||R.current;if(id)dock(id);
+ const id=R.visiblePlace()?.r||R.current;if(id)dock(id);window.BahrParity?.sync();
  if($('#sheet').open&&$('#sheet').classList.contains('visuals'))syncVisuals();
 }
 function dock(id){
  lastDock=id;const r=R.byId.get(id);if(!r)return;
- const prev=$('#previous'),next=$('#next');if(prev){prev.innerHTML=icon('left')+'<span>'+(r.index>0?r.index:'')+'</span>';prev.setAttribute('aria-label','Previous section'+(r.index>0?' '+r.index:''));}
- if(next){next.innerHTML='<span>'+(r.index<388?r.index+2:'')+'</span>'+icon('right');next.setAttribute('aria-label','Next section'+(r.index<388?' '+(r.index+2):''));}
+ const prev=$('#previous'),next=$('#next');if(prev){prev.innerHTML=icon('left')+'<span>'+(r.index>0?'§'+r.index:'')+'</span>';prev.setAttribute('aria-label','Previous section'+(r.index>0?' '+r.index:''));}
+ if(next){next.innerHTML=icon('right')+'<span>'+(r.index<388?'§'+(r.index+2):'')+'</span>';next.setAttribute('aria-label','Next section'+(r.index<388?' '+(r.index+2):''));}
  const active=R.desk.filter(x=>!x.archived&&x.r===id),bookmarked=active.some(x=>x.type==='bookmark'&&x.anchor==='unit-'+id),save=$('#readerSaveAction');
  if(save){save.innerHTML=icon(bookmarked?'bookmark-filled':'bookmark');save.setAttribute('aria-pressed',String(bookmarked));save.setAttribute('aria-label',bookmarked?'Section bookmarked; open Reading Desk':'Bookmark section');}
  const counts=$('#saved-counts');if(counts){const markup=['bookmark','highlight','note'].map(kind=>{const n=active.filter(x=>x.type===kind).length;return n?'<button type="button" data-ui="saved" aria-label="'+n+' saved '+kind+' items">'+icon(kind==='bookmark'?'bookmark-filled':kind==='note'?'notes':'highlight')+'<span>'+n+'</span></button>':'';}).join('');if(counts.innerHTML!==markup)counts.innerHTML=markup;counts.hidden=!markup;}
@@ -102,10 +102,7 @@ async function set(values,repaint=false){await R.setPrefs(values,repaint);sync()
 async function readingMode(mode){
  if(modeBusy)return;modeBusy=true;try{R.closeSheet();await set({mode,focus:mode==='reading'?'normal':'quiet',scope:mode==='continuous'?'continuous':'passage'},true);}finally{modeBusy=false;}
 }
-function modes(){
- R.sheet('Reading mode','<div class="mode-choices" role="radiogroup" aria-label="Reading mode choices">'+
- [['reading','Reading','Section and scholarly apparatus'],['focus','Focus','One section, fewer distractions'],['continuous','Continuous','Scroll through the whole text']].map(([id,label,detail])=>'<button type="button" role="radio" data-mode="'+id+'" aria-checked="'+(R.prefs.mode===id)+'"><span>'+label+'<small>'+detail+'</small></span></button>').join('')+'</div><label class="toggle-row"><input type="checkbox" id="focus-apparatus" '+(R.prefs.focusApparatus?'checked':'')+'> In Focus, show apparatus below the text</label><button type="button" data-nav="home">Home</button>','modes');
-}
+function modes(){window.BahrModeMenu.openModeMenu($('#focusToolbar'));}
 function visuals(){
  R.sheet('Visuals','<div class="gn-visuals-panel">'+window.BAHR_UI_ASSETS.visuals+'</div><div class="personal-marks-setting"><label class="toggle-row"><input type="checkbox" id="private-marks" '+(R.prefs.showPersonalMarks!==false?'checked':'')+'> Show private Reading Desk marks beside the text</label><small>Private highlights remain visible in Focus reading.</small></div>','visuals');
  syncVisuals();
@@ -150,7 +147,7 @@ const copySymbol={
  research:'<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="4.5" height="15" rx="1"/><path d="M10 3.5h4.5V21H10zM16.5 8.5l3.8-1 2 12.7-3.8 1zM3.5 18h2.5M11 18h2.5M18.2 18l2.7-.4"/></svg>',citation:'❞',link:'↗'
 };
 function copyMenu(){
- copyTarget={...target()};R.sheet('Copy','<div class="panel-nav" role="menu" aria-label="Copy options">'+Object.entries(copyModes).filter(([id])=>id!=='selected'||copyTarget.quote).map(([id,label])=>'<button type="button" role="menuitem" data-copy-kind="'+id+'"><span class="copy-option-icon">'+copySymbol[id]+'</span><span>'+label+'</span><span aria-hidden="true">›</span></button>').join('')+'</div>','copy-options');
+ copyTarget={...target()};window.BahrParity.copyMenu('<div class="panel-nav" role="menu" aria-label="Copy options">'+Object.entries(copyModes).filter(([id])=>id!=='selected'||copyTarget.quote).map(([id,label])=>'<button type="button" role="menuitem" data-copy-kind="'+id+'"><span class="copy-option-icon">'+copySymbol[id]+'</span><span>'+label+'</span><span aria-hidden="true">›</span></button>').join('')+'</div>');
 }
 function copyParagraphs(lang){
  const r=copyRecord;if(lang==='ar')return r.ar.split('\n').map((text,i)=>({id:'ar-'+r.id+'-'+(i+1),text})).filter(x=>x.text.trim());
@@ -159,7 +156,7 @@ function copyParagraphs(lang){
 const copyRadio=(name,values,current)=>'<div class="copy-choices">'+values.map(([v,t])=>'<label><input type="radio" name="'+name+'" value="'+v+'" '+(v===current?'checked':'')+'> '+t+'</label>').join('')+'</div>';
 const copyCheck=(name,label)=>'<label class="toggle-row"><input type="checkbox" data-copy-option="'+name+'" '+(copyConfig[name]?'checked':'')+'> '+label+'</label>';
 async function copySheet(kind){
- copyTarget=copyTarget||target();copyRecord=await R.record(copyTarget.r||R.current);
+ window.BahrParity.closePopovers();copyTarget=copyTarget||target();copyRecord=await R.record(copyTarget.r||R.current);
  copyConfig={kind,scope:kind==='selected'?'selected':'section',language:R.prefs.ar&&R.prefs.en?'both':R.prefs.ar?'ar':'en',marks:R.prefs.marks==='source',editorial:true,sources:true,variants:kind==='research',quranContext:kind==='research',hadithContext:kind==='research',dictionary:kind==='research',research:kind==='research',sectionNotes:kind==='research',personal:false,appendCitation:false,appendLink:false,rich:false,citationSource:'translation',arStart:0,arEnd:0,enStart:0,enEnd:0};
  for(const lang of ['ar','en']){const i=copyParagraphs(lang).findIndex(x=>x.id===copyTarget.anchor);if(i>=0)copyConfig[lang+'Start']=copyConfig[lang+'End']=i;}
  drawCopy();
@@ -230,13 +227,7 @@ function saved(){
 function help(){R.page('Help & guide','Read, study and keep your place.','<div class="help-steps"><h2>'+icon('book')+' Reading</h2><p>Ar cycles between source marks, hidden Arabic and unvowelled Arabic. En shows or hides English. At least one language remains visible. Source marks are retained from the supplied edition.</p><h2>'+icon('focus')+' Reading modes</h2><p>Reading shows one section. Focus reduces the controls and lets you choose whether apparatus remains below the text. Continuous includes all 389 sections. The centre of the bottom dock opens the section navigator.</p><h2>'+icon('search')+' Search & references</h2><p>Search Arabic, English and the scholarly reference layers. Dictionary entries retain their historical sources and exact occurrences. Closing a reference returns to your place.</p><h2>'+icon('library')+' Reading Desk</h2><p>Bookmark a section, or select text to highlight and annotate it. Your notes remain in this browser. Export a backup to transfer them, and use Import & merge to retain both collections.</p><h2>'+icon('editions')+' Editions & downloads</h2><p>Choose the supplied PDF editions, keep the complete HTML reader offline, or print your selected personal notes.</p><h2>'+icon('sliders')+' Visuals</h2><p>Choose page style, font, size, language order, six palettes and System, Light or Dark appearance. Layout choices for columns and stacked text are independent.</p></div>');}
 function enhanceDictionary(){
  const body=$('#sheet-body');if(!body||$('#sheet-kicker')?.textContent!=='HISTORICAL DICTIONARY'||body.dataset.enhanced==='yes')return;
- body.dataset.enhanced='yes';const sections=[...body.querySelectorAll(':scope > .source-evidence')];
- for(const [i,section] of sections.entries()){
-  const title=section.querySelector('h3')?.textContent||'Historical source '+(i+1),d=document.createElement('details');
-  d.className='dictionary-source';const summary=document.createElement('summary');summary.textContent=title;d.append(summary);
-  while(section.firstChild)d.append(section.firstChild);section.replaceWith(d);
- }
- const close=document.createElement('button');close.dataset.action='close-sheet';close.textContent='Return to your place';body.append(close);
+ window.BahrParity?.dictionarySections(body,JSON.parse($('#sheet').dataset.savedReference||'{}').id);
 }
 function enhanceEditions(){
  if(R.view!=='editions'||$('.edition-tabs'))return;
@@ -254,7 +245,7 @@ document.addEventListener('click',async event=>{
  const handled=d.ui||d.nav||d.mode||d.copyChoice||d.copyKind||d.pageStyleChoice||d.arabicFontChoice||d.englishFontChoice||d.parallelSide||d.stackedOrder||d.palette||d.themeChoice||d.editionTab||d.language||['focus','settings','menu'].includes(d.action)||['smallerType','largerType'].includes(b.id);
  if(!handled)return;event.preventDefault();event.stopImmediatePropagation();
  try{
-  if(d.nav){setNav(false);R.closeSheet();if(d.nav==='read')return await R.resume();if(d.nav==='contents')return R.contents();if(d.nav==='help'){location.hash='#/help';return;}location.hash='#/'+d.nav;return;}
+  if(d.nav){setNav(false);R.closeSheet();if(d.nav==='read')return await R.resume();if(d.nav==='contents'){location.hash='#/contents';if(R.view==='contents')window.BahrParity.contentsPage();return;}if(d.nav==='help'){location.hash='#/help';return;}location.hash='#/'+d.nav;return;}
   if(d.mode)return await readingMode(d.mode);
   if(d.language){
    if(d.language==='en'){if(!R.prefs.en||R.prefs.ar)await set({en:!R.prefs.en});}
@@ -278,7 +269,7 @@ document.addEventListener('click',async event=>{
    case'menu':if(R.prefs.mode!=='reading'&&R.view==='read')await readingMode('reading');setNav(!navOpen);break;
    case'menu-close':setNav(false);break;case'focus':modes();break;case'settings':visuals();break;
    case'bookmark':R.addBookmark(lastDock||R.current);dock(lastDock||R.current);break;
-   case'copy-text':copyTarget={...target()};await copySheet('text');break;case'copy-menu':copyMenu();break;case'copy-submit':await doCopy();break;case'share':share();break;case'share-copy':await clipboard(shareText());break;
+   case'copy-text':await clipboard(textFor('text'));break;case'copy-menu':copyMenu();break;case'copy-submit':await doCopy();break;case'share':share();break;case'share-copy':await clipboard(shareText());break;
    case'share-native':if(navigator.share){try{await navigator.share({title:'The Immense Ocean',text:shareText()});}catch(err){if(err.name!=='AbortError')R.toast('Sharing is unavailable. Use Copy message.');}}else await clipboard(shareText());break;
    case'saved':saved();break;
   }
@@ -304,6 +295,6 @@ document.addEventListener('keydown',event=>{
 });
 window.addEventListener('hashchange',()=>{if(location.hash==='#/help')setTimeout(help,0);});
 matchMedia('(prefers-color-scheme:dark)').addEventListener('change',sync);
-window.BahrUI={sync,dock};
-install();R.savePrefs();if(location.hash==='#/help')help();
+window.BahrUI={sync,dock,help,readingMode};
+install();window.BahrModeMenu.attachModes({getMode:()=>R.prefs.mode,getApparatus:()=>R.prefs.focusApparatus,setMode:readingMode,setApparatus:value=>set({focusApparatus:value})});R.savePrefs();if(location.hash==='#/help')help();if(!compact()){let opened=true;try{opened=sessionStorage.getItem('bahr-navigation-open')!=='false';}catch{}setNav(opened);}
 })();

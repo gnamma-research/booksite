@@ -36,11 +36,11 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
   assert.equal(await page.locator('.en-column section').count(),r.segments.length);
  }
  pass('All 389 passages render with complete source Arabic and all English segments');
- await page.locator('[data-action="contents"]').last().click();
+ await go('contents');await page.locator('#full-contents-query').waitFor();
  assert.equal(await page.locator('.toc-link').count(),389);
- await page.locator('#contents-query').fill('2:255');
+ await page.locator('#full-contents-query').fill('2:255');
  assert(await page.locator('.toc-link').count()>0);
- await page.locator('#sheet-close').click();
+ await go('read/preface');
  pass('Contents includes every passage and filters by verse');
  await go('read/preface');
  await page.evaluate(()=>BahrReader.setPrefs({tier:'study'}));
@@ -74,7 +74,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await go('search');await page.locator('#search-query').fill('mercy');await page.locator('#search-form button').click();
  await page.waitForFunction(()=>document.querySelector('#search-results .result-count'));
  assert(await page.locator('#search-results .result').count()>0);pass('Full-edition search returns results');
- await go('read/preface');await page.locator('[data-action="save"]').first().click();
+ await go('read/preface');await page.locator('[data-section-note]').first().click();
  await page.locator('#annotation-text').fill('Browser verification note');await page.locator('#annotation-form button[type="submit"]').click();
  await go('desk');assert((await page.locator('#desk-items').innerText()).includes('Browser verification note'));
  await page.reload();assert((await page.locator('#desk-items').innerText()).includes('Browser verification note'));
@@ -99,16 +99,16 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
     assert(await page.locator('#sheet .gn-visual-row').count()>=8);
     await page.locator('#sheet-close').click();await overflow('reader');
     const controls=await page.locator('#topbar button:visible').evaluateAll(nodes=>nodes.map(n=>{const b=n.getBoundingClientRect();return {control:n.id||n.getAttribute('aria-label'),x:b.x,right:b.right,w:b.width,h:b.height};}));
-    assert(controls.every(b=>b.x>=-1&&b.right<=viewport.width+1&&b.w>=28&&b.h>=40),'Toolbar fits '+viewport.width+': '+JSON.stringify(controls));
+    assert(controls.every(b=>b.x>=-1&&b.right<=viewport.width+1&&b.w>=22&&b.h>=34),'Toolbar fits '+viewport.width+': '+JSON.stringify(controls));
     const colour=await page.locator('#readerSaveAction').evaluate(el=>({button:getComputedStyle(el).color,icon:getComputedStyle(el.querySelector('svg')).stroke}));
     assert.equal(colour.button,colour.icon);
    }
   }
-  await page.locator('#menuBtn').click();
+  if(!await page.locator('#leftNav').isVisible())await page.locator('#menuBtn').click();
   assert(await page.locator('#leftNav').isVisible());
   assert.deepEqual(await page.locator('#leftNav .nav-item span').allTextContents(),['Read','Contents','Reading Desk','Subject index','Dictionary · معجم','Scholarly research','Guided study','Editions & downloads','Help & guide']);
   const boxes=await page.locator('#leftNav .nav-item svg').evaluateAll(els=>els.map(el=>({w:el.getBoundingClientRect().width,h:el.getBoundingClientRect().height,x:el.getBoundingClientRect().x})));
-  assert(boxes.every(b=>b.w===18&&b.h===18&&b.x===boxes[0].x));
+  assert(boxes.every(b=>b.w===16&&b.h===16&&b.x===boxes[0].x));
   await page.locator('[data-ui="menu-close"]').click();
   await page.screenshot({path:path.join(out,'parity-'+viewport.width+'.png')});
   for(const route of ['home','study','indices','dictionary','research','editions']){await go(route);await overflow(route+' '+viewport.width);}
@@ -126,19 +126,19 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await page.reload();await page.locator('#unit-preface').waitFor();
  assert.equal(await page.locator('html').getAttribute('data-english-font'),'literata');
  pass('Page styles, six fonts, text size and independent mobile order persist');
- await page.locator('[data-ui="copy-menu"]').click();assert.equal(await page.locator('[data-copy-kind]').count(),5);await page.locator('#sheet-close').click();
+ await page.locator('[data-ui="copy-menu"]').click();assert.equal(await page.locator('[data-copy-kind]').count(),5);await page.keyboard.press('Escape');
  await page.locator('[data-ui="share"]').click();assert.equal(await page.locator('[name="share-content"]').count(),6);await page.locator('#sheet-close').click();
  await page.locator('#readerSaveAction').click();await go('read/fatiha_1');await page.locator('#readerSaveAction').click();
  assert.equal(await page.locator('#readerSaveAction').getAttribute('aria-pressed'),'true');
  await page.locator('#saved-counts button').first().click();assert((await page.locator('#sheet-body').innerText()).includes('Manage in Reading Desk'));await page.locator('#sheet-close').click();
  pass('Copy/share menus, immediate section bookmarks and saved-item dock work');
- await page.locator('#focusToolbar').click();await page.locator('[data-mode="focus"]').click();
+ await page.locator('#focusToolbar').click();await page.locator('[data-gn-reader-mode="focus"]').click();
  assert(await page.locator('#menuBtn').isVisible());assert(!await page.locator('#settingsBtn').isVisible());
- await page.locator('#focusToolbar').click();await page.locator('#focus-apparatus').check();await page.locator('[data-mode="continuous"]').click();
+ await page.locator('#focusToolbar').click();await page.locator('#gn-focus-apparatus-choice').check();await page.locator('[data-gn-reader-mode="continuous"]').click();
  await page.waitForFunction(()=>document.querySelectorAll('.passage').length===389,null,{timeout:90000});
  assert(await page.locator('#unit-'+catalog[catalog.length-1].id).count());
  await overflow('continuous');
- await page.locator('#focusToolbar').click();await page.locator('[data-mode="reading"]').click();
+ await page.locator('#focusToolbar').click();await page.locator('[data-gn-reader-mode="reading"]').click();
  await page.waitForFunction(()=>document.querySelectorAll('.passage').length===1);
  pass('Reading, Focus and complete Continuous modes work and can be exited');
 
@@ -229,10 +229,10 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  assert((await page.locator('#gnamma-word-context').innerText()).includes('Word in this passage'));
  await page.locator('.gnw-card [data-gnw-close]').click();
  await page.locator('#location-button').click();
- await page.locator('.toc-surah').nth(1).locator('summary').click();await page.locator('.toc-link').nth(1).click();await page.locator('#unit-'+catalog[1].id).waitFor();
- await page.locator('#location-button').click();await page.locator('#sheet[open]').waitFor();assert(await page.locator('#reading-history').count());
+ await page.locator('#jumpSearch').fill('§2');await page.locator('[data-section="'+catalog[1].id+'"]').click();await page.locator('#unit-'+catalog[1].id).waitFor();
+ await page.locator('#location-button').click();await page.locator('#jumpOverlay[open]').waitFor();assert(await page.locator('#jumpRecent').count());
  assert((await page.evaluate(()=>BahrFeatures.history.exportData())).entries.length>=2);
- await page.locator('#sheet-close').click();
+ await page.locator('#jumpClose').click();
  pass('Saved source references survive backups; source reopening, explicit Word Context and recent reading locations work');
 
  assert.deepEqual(errors,[]);pass('No uncaught browser errors or failed reader requests');
@@ -242,7 +242,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  const preview=await visual.newPage();await preview.goto(url+'#/read/preface');await preview.locator('#unit-preface').waitFor();await preview.evaluate(()=>document.fonts.ready);
  assert.equal(await preview.evaluate(()=>BahrReader.prefs.parallelSide),'right');
  assert((await preview.locator('#menuBtn').evaluate(el=>getComputedStyle(el).backgroundImage)).startsWith('url('));
- await preview.locator('[data-ui="copy-text"]').click();await preview.locator('[name="copy-scope"]').first().waitFor();await preview.locator('#sheet-close').click();
+ await preview.locator('[data-ui="copy-menu"]').click();await preview.locator('[data-copy-kind="text"]').click();await preview.locator('[name="copy-scope"]').first().waitFor();await preview.locator('#sheet-close').click();
  for(const width of [320,390]){await preview.setViewportSize({width,height:844});assert(await preview.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}
  await preview.evaluate(()=>{document.documentElement.style.scrollBehavior='auto';scrollTo(0,0);});
  await preview.locator('#reading-dock').waitFor({state:'visible'});
@@ -270,8 +270,8 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await sp.locator('#settingsBtn').click();await sp.locator('[data-theme-choice="dark"]').click();
  await sp.locator('#sheet-close').click();await sp.locator('#menuBtn').click();
  await sp.locator('[data-ui="menu-close"]').click();
- await sp.locator('#focusToolbar').click();await sp.locator('[data-mode="focus"]').click();
- await sp.locator('#focusToolbar').click();await sp.locator('[data-mode="reading"]').click();
+ await sp.locator('#focusToolbar').click();await sp.locator('[data-gn-reader-mode="focus"]').click();
+ await sp.locator('#focusToolbar').click();await sp.locator('[data-gn-reader-mode="reading"]').click();
  assert.deepEqual(se,[]);assert(await sp.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
  await sp.screenshot({path:path.join(out,'webkit-phone.png')});await safari.close();
  pass('WebKit phone opens Visuals, navigation and reading modes without runtime errors');

@@ -1,7 +1,13 @@
 name: Ibn Ajiba complete reader QA
 on:
   push:
-    branches: [codex/ibn-ajiba-reader-20261030, codex/ibnajiba6-daruri-parity]
+    branches: [master, codex/ibn-ajiba-reader-20261030, codex/ibnajiba6-daruri-parity]
+    paths:
+      - 'texts/ibn-ajiba/al-bahr-al-madid/*.js'
+      - 'texts/ibn-ajiba/al-bahr-al-madid/*.css'
+      - 'texts/ibn-ajiba/al-bahr-al-madid/index.html'
+      - 'tests/ibn-ajiba/**'
+      - '.github/workflows/ibn-ajiba-reader-qa.yml'
   pull_request:
     paths:
       - 'texts/ibn-ajiba/al-bahr-al-madid/**'
