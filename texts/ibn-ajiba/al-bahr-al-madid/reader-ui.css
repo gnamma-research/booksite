@@ -251,7 +251,7 @@ html[data-page-style=structured] .parallel{background:var(--surface);border:0;pa
 /* Keep the shared navigation tile visible above compact-menu resets. */
 #readingControls:not([hidden]) .gn-reader-global-leading #menuBtn{background:var(--gn-daruri-tile) center/32px 32px no-repeat!important;border-color:transparent!important;padding:0!important;margin-inline-end:0!important;flex:0 0 36px!important;width:36px!important;min-width:36px!important;max-width:36px!important}
 #readingControls .copy-group{gap:0}#readingControls .copy-group>[data-ui=copy-text]{border-radius:8px 0 0 8px;border-right:0}#readingControls .copy-group>[data-ui=copy-menu]{width:28px;min-width:28px;border-radius:0 8px 8px 0}#readingControls .copy-group>[data-ui=copy-menu] .icon{width:14px;height:14px;flex-basis:14px}
-@media(max-width:350px){#readingControls button{width:28px;min-width:28px}#readingControls [data-language]{width:26px;min-width:26px}#readingControls .copy-group>[data-ui=copy-menu]{width:28px;min-width:28px}#readingControls .persistent-languages{gap:0;padding-right:0;border:0}}
+@media(max-width:350px){#readingControls button{width:28px;min-width:28px}#readingControls [data-language]{width:28px;min-width:28px}#readingControls .copy-group>[data-ui=copy-menu]{width:28px;min-width:28px}#readingControls .persistent-languages{gap:0;padding-right:0;border:0}}
 
 #readingControls .persistent-languages button[aria-pressed=true]{color:var(--surface);background:var(--accent);border-color:var(--accent)}
 @media(max-width:620px){#topbar,.reading #topbar{height:50px;min-height:50px}#readingControls{padding-block:3px}#leftNav{top:50px}}
