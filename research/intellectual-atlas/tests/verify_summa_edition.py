@@ -67,8 +67,36 @@ assert all((summa/'handoffs'/f'STAGE_{n:02d}_{suffix}.md').is_file() for n,suffi
 assert 'ch10' in reader and 'q.104' in reader
 assert 'HANDOFF_CURRENT.md' in release
 
+# Stage 4: verify actual complete bounded primary-source translation files
+# and their public/offline integration, without implying manuscript certification.
+fascicles={
+    'fascicle-e':'PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md',
+    'fascicle-b':'PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md',
+    'fascicle-d':'PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md',
+    'fascicle-c':'PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md',
+}
+primary=(summa/'primary-translations.html').read_text(encoding='utf-8')
+assert primary.startswith('<!doctype html>'), 'Missing public primary translation reader'
+assert primary.count('<article id="fascicle-')==4, 'Expected four complete primary fascicle articles'
+assert primary.count('</article>')==4, 'Malformed fascicle article closure'
+assert all(f'id="{id_}"' in primary and f'href="#{id_}"' in primary
+           for id_ in fascicles), 'Missing fascicle navigation'
+assert len(primary)>85000, 'Primary translation reader appears truncated'
+assert '§23 [263]' in primary and '§19.' in primary and '§17 [413]' in primary
+assert '§24.10' in primary, 'One or more translation endings not present'
+assert all((summa/name).is_file() and (summa/name).stat().st_size>12000
+           for name in fascicles.values()), 'A source translation file missing or incomplete'
+assert all('primary-translations.html' in page
+           for page in (landing,index,reader)), 'Public reader navigation incomplete'
+assert all(name in release for name in fascicles.values()), 'Offline source file omitted'
+assert 'primary-translations.html' in release, 'Offline HTML reader omitted'
+assert 'STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md' in release
+assert (summa/'handoffs'/'STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md').is_file()
+assert 'AV-01E' in register and 'AV-09C' in register
+
 print({
     'critical_chapters':len(mds),
+    'complete_bounded_fascicles':len(fascicles),
     'html_article_ids':len(p.articles),
     'rtl_blocks':p.rtl,
     'links':len(p.links),
