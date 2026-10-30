@@ -49,6 +49,8 @@ jobs:
         run: python research/intellectual-atlas/build_release.py
       - name: Validate ten bilingual chapters, source links and offline reading edition
         run: python research/intellectual-atlas/tests/verify_summa_edition.py
+      - name: Validate late Persian Indian and post-Tajrid primary editions
+        run: python research/intellectual-atlas/tests/verify_late_commentators_edition.py
       - name: Rebuild publication checksum manifest
         run: python research/intellectual-atlas/build.py
       - name: Verify full reference and portable viewer archive
@@ -84,6 +86,20 @@ jobs:
               assert root+'avicennian-summa/chapters/index.html' in names
               assert root+'avicennian-summa/chapters/reader.html' in names
               assert root+'avicennian-summa/primary-translations.html' in names
+              assert root+'avicennian-summa/late-commentators.html' in names
+              assert root+'avicennian-summa/LATE_WITNESS_REGISTER_2026_10_31.json' in names
+              assert root+'avicennian-summa/handoffs/STAGE_05_LATE_COMMENTATORS.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_02_LAHIJI_GAWHAR_TEMPORAL_CAUSATION.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_03_LAHIJI_GAWHAR_DIVINE_AGENCY.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_04_LAHIJI_GAWHAR_EMANATION_UNITY.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_05_INDIAN_TAHANAWI_MIR_ZAHID_JAL.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_06_TAFTAZANI_MAQASID_MENTAL_EXISTENCE.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_07_MAWAQIF_JURJANI_GLOSSES.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_08_LAHIJI_SARMAYA_IMAN_DEPENDENCE.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_09_POST_TAJRID_QUṢHJI_KHAFRI_KHWANSARI_POWER.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_10_NARAQI_LAMAAT_EXISTENCE_ESSENCE.md' in names
+              assert root+'avicennian-summa/LATE_FASCICLE_11_NARAQI_SHARH_SHIFA_SECOND_INTENTIONS.md' in names
               assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md' in names
               assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md' in names
               assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md' in names
