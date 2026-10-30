@@ -41,10 +41,10 @@ function install(){
  $('#topbar').innerHTML='<div id="readingControls" class="reading-controls-inner" aria-label="Navigation and reading controls">'+
  '<div class="gn-reader-global-leading"><button type="button" id="menuBtn" class="gn-top-tile" data-ui="menu" aria-label="Open or close Contents" aria-controls="leftNav" aria-expanded="false" title="Contents"></button>'+
  '<button type="button" id="gnTopHome" data-nav="home" aria-label="Home">'+icon('home')+'<span>Home</span></button><button type="button" id="gnTopRead" data-nav="read" aria-label="Read or resume the book">'+icon('book')+'<span>Read</span></button></div>'+
- '<div class="reading-tools"><div class="persistent-languages" role="group" aria-label="Visible languages; at least one must remain active"><button data-language="ar" title="Arabic: hidden, source marks, or unvowelled" aria-label="Toggle Arabic">Ar</button><button data-language="en" title="English" aria-label="Toggle English">En</button></div>'+
+ '<div class="reading-tools"><div class="persistent-languages" role="group" aria-label="Visible languages; at least one must remain active"><button data-language="ar" title="Arabic: hidden, source marks, or unvowelled" aria-label="Toggle Arabic">AR</button><button data-language="en" title="English" aria-label="Toggle English">EN</button></div>'+
  '<div class="reader-action-slot"><button type="button" id="focusToolbar" data-action="focus" aria-haspopup="dialog" aria-label="Reading mode: Reading, Focus or Continuous" title="Reading mode">'+icon('focus')+'<span class="sr-only" id="focus-label"></span></button>'+
  '<button type="button" id="readerSaveAction" data-ui="bookmark" aria-label="Bookmark section" title="Bookmark section">'+icon('bookmark')+'</button>'+
- '<div class="copy-group">'+button('copy-menu','Copy options','copy')+'</div>'+button('share','Share section','share')+'</div></div>'+
+ '<div class="copy-group">'+button('copy-text','Copy text','copy')+'<button type="button" data-ui="copy-menu" aria-label="Copy options" title="Copy options" aria-haspopup="menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg></button></div>'+button('share','Share section','share')+'</div></div>'+
  '<div class="gn-reader-global-trailing"><button type="button" data-action="search" id="searchBtn" aria-label="Search the book and reference tools" title="Search">'+icon('search')+'</button><button type="button" data-action="settings" id="settingsBtn" aria-label="Visuals: display, themes and reading tools" title="Visuals">'+icon('sliders')+'</button></div></div>';
  document.body.insertAdjacentHTML('beforeend','<div id="drawerShade" hidden></div><aside id="leftNav" hidden aria-label="Reader navigation"><div class="nav-heading"><h2><cite lang="ar" dir="rtl">البحر المديد</cite><span>Ibn ʿAjība</span></h2>'+button('menu-close','Close navigation','close')+'</div><nav class="primary-nav" aria-label="Main navigation">'+navHTML()+'</nav><div class="gn-nav-footer-links"><button type="button" data-nav="home">Home</button><button type="button" data-nav="about">About</button><a href="../../../">Gnamma library</a></div></aside>');
  $('#sheet-close').innerHTML=icon('close');
@@ -83,7 +83,7 @@ function sync(){
  document.body.classList.toggle('ui-hide-apparatus',R.view==='read'&&p.mode!=='reading'&&!p.focusApparatus);
  document.body.classList.toggle('ui-hide-notes',!p.showNotes);document.body.classList.toggle('ui-hide-terms',!p.showTerms);document.body.classList.toggle('ui-hide-personal-marks',p.showPersonalMarks===false);
  document.body.classList.toggle('ui-parallel-right',p.parallelSide==='right');document.body.classList.toggle('ui-stack-bottom',p.stackedOrder==='bottom');
- const ar=$('#topbar [data-language="ar"]');if(ar){ar.textContent=p.ar&&p.marks==='source'?'Arَ':'Ar';ar.setAttribute('aria-pressed',String(p.ar));ar.setAttribute('aria-label','Arabic: '+(p.ar?(p.marks==='source'?'source vowel marks':'unvowelled'):'hidden')+'. Activate to cycle.');}
+ const ar=$('#topbar [data-language="ar"]');if(ar){ar.textContent=p.ar&&p.marks==='source'?'ARَ':'AR';ar.setAttribute('aria-pressed',String(p.ar));ar.setAttribute('aria-label','Arabic: '+(p.ar?(p.marks==='source'?'source vowel marks':'unvowelled'):'hidden')+'. Activate to cycle.');}
  const en=$('#topbar [data-language="en"]');if(en)en.setAttribute('aria-pressed',String(p.en));
  if($('#focusToolbar')){$('#focusToolbar').setAttribute('aria-pressed',String(p.mode!=='reading'));$('#focus-label').textContent=p.mode;}
  $$('[data-nav]').forEach(b=>{const active=b.dataset.nav===R.view||(b.dataset.nav==='read'&&R.view==='read');if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
@@ -278,7 +278,7 @@ document.addEventListener('click',async event=>{
    case'menu':if(R.prefs.mode!=='reading'&&R.view==='read')await readingMode('reading');setNav(!navOpen);break;
    case'menu-close':setNav(false);break;case'focus':modes();break;case'settings':visuals();break;
    case'bookmark':R.addBookmark(lastDock||R.current);dock(lastDock||R.current);break;
-   case'copy-menu':copyMenu();break;case'copy-submit':await doCopy();break;case'share':share();break;case'share-copy':await clipboard(shareText());break;
+   case'copy-text':copyTarget={...target()};await copySheet('text');break;case'copy-menu':copyMenu();break;case'copy-submit':await doCopy();break;case'share':share();break;case'share-copy':await clipboard(shareText());break;
    case'share-native':if(navigator.share){try{await navigator.share({title:'The Immense Ocean',text:shareText()});}catch(err){if(err.name!=='AbortError')R.toast('Sharing is unavailable. Use Copy message.');}}else await clipboard(shareText());break;
    case'saved':saved();break;
   }

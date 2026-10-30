@@ -231,6 +231,10 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  const visual=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block'});
  const preview=await visual.newPage();await preview.goto(url+'#/read/preface');await preview.locator('#unit-preface').waitFor();await preview.evaluate(()=>document.fonts.ready);
  assert.equal(await preview.evaluate(()=>BahrReader.prefs.parallelSide),'right');
+ assert((await preview.locator('#menuBtn').evaluate(el=>getComputedStyle(el).backgroundImage)).startsWith('url('));
+ await preview.locator('[data-ui="copy-text"]').click();await preview.locator('[name="copy-scope"]').first().waitFor();await preview.locator('#sheet-close').click();
+ for(const width of [320,390]){await preview.setViewportSize({width,height:844});assert(await preview.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}
+ await preview.evaluate(()=>scrollTo(0,0));
  await preview.screenshot({path:path.join(out,'reader-phone.png')});
  const reference=await visual.newPage();
  await reference.goto(new URL('../../../daruri/#section=1',url).href);
