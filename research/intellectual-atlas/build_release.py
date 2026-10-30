@@ -212,6 +212,7 @@ files=[
  ('avicennian-summa/index.html',ROOT/'avicennian-summa/index.html'),
  ('avicennian-summa/causal-dependence.html',ROOT/'avicennian-summa/causal-dependence.html'),
  ('avicennian-summa/chapters/index.html',ROOT/'avicennian-summa/chapters/index.html'),
+ ('avicennian-summa/chapters/reader.html',ROOT/'avicennian-summa/chapters/reader.html'),
  ('avicennian-summa/chapters/01-mental-existence-and-quiddity.md',ROOT/'avicennian-summa/chapters/01-mental-existence-and-quiddity.md'),
  ('avicennian-summa/chapters/02-making-and-causal-explanation.md',ROOT/'avicennian-summa/chapters/02-making-and-causal-explanation.md'),
  ('avicennian-summa/chapters/03-substantial-motion-dispute.md',ROOT/'avicennian-summa/chapters/03-substantial-motion-dispute.md'),
@@ -260,6 +261,7 @@ with zipfile.ZipFile(ZIP) as z:
     assert root+'avicennian-summa/index.html' in z.namelist()
     assert root+'avicennian-summa/causal-dependence.html' in z.namelist()
     assert root+'avicennian-summa/chapters/index.html' in z.namelist()
+    assert root+'avicennian-summa/chapters/reader.html' in z.namelist()
     assert root+'avicennian-summa/SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md' in z.namelist()
     assert root+'avicennian-summa/primary-translation-causation.md' in z.namelist()
     assert all(root+'avicennian-summa/chapters/'+chapter in z.namelist() for chapter in ["01-mental-existence-and-quiddity.md","02-making-and-causal-explanation.md","03-substantial-motion-dispute.md","04-intellect-soul-and-identity.md","05-four-causes-form-bestowal.md","06-divine-agency-necessity-and-plurality.md","07-unity-plurality-and-divine-knowledge.md","08-universals-quiddity-nafs-al-amr.md","09-mawaqif-maqasid-hylomorphism-mental-existence.md"])
