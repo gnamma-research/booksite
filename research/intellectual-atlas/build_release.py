@@ -1,4 +1,4 @@
-"""Build a self-contained revision-7 evidence register and offline viewer.
+"""Build a self-contained revision-7.2 evidence register and offline viewer.
 
 Pure source: downloads/intellectual-atlas-data.json. No external books or scans
 are included; bibliographical records and evidence summaries only.
@@ -30,8 +30,8 @@ DATA=DOWNLOADS/'intellectual-atlas-data.json'
 PDF=DOWNLOADS/'Intellectual_Atlas_Reference_Revision7.pdf'
 ZIP=DOWNLOADS/'Gnamma_Intellectual_Atlas_Offline_Revision7.zip'
 D=json.loads(DATA.read_text(encoding='utf-8'))
-assert D['revision']=='neoplatonic-bridge-7-2026-10-29'
-assert (len(D['nodes']),len(D['edges']),len(D['sources']),len(D['textual_families']))==(375,348,349,18)
+assert D['revision']=='avicennian-extensions-7.2-2026-10-30'
+assert (len(D['nodes']),len(D['edges']),len(D['sources']),len(D['textual_families']))==(386,362,359,20)
 N={n['id']:n for n in D['nodes']}
 S={s['id']:s for s in D['sources']+D['history']['sources']}
 assert len(N)==len(D['nodes']) and len(S)==len(D['sources'])+len(D['history']['sources'])
@@ -81,13 +81,13 @@ def page_number(canvas,doc):
     canvas.setStrokeColor(RULE);canvas.setLineWidth(.45)
     canvas.line(40,42,w-40,42)
     canvas.setFont(regular,7.5);canvas.setFillColor(MUTED)
-    canvas.drawString(43,30,'Gnamma Research  |  Intellectual Atlas rev. 7  |  29 Oct 2026')
+    canvas.drawString(43,30,'Gnamma Research  |  Intellectual Atlas rev. 7.2  |  30 Oct 2026')
     canvas.drawRightString(w-43,30,f'Page {doc.page}')
     canvas.restoreState()
 
 p('Texts in Time',s_title)
-p('Islamic Intellectual Atlas  |  Critical reference and evidence register  |  Revision 7  |  29 October 2026',s_subtitle)
-p('A source-qualified, selective map of late antique, Islamic and later philosophical, theological and mystical textual networks. The current edition adds the Greek Neoplatonic, Alexandrian, Syriac, Arabic and Latin transmission bridge without inventing a direct line of influence.',s_body)
+p('Islamic Intellectual Atlas  |  Critical reference and evidence register  |  Revision 7.2  |  30 October 2026',s_subtitle)
+p('A source-qualified, selective map of late antique, Islamic and later philosophical, theological and mystical textual networks. This revision preserves the Greek Neoplatonic–Syriac–Arabic–Latin transmission bridge and adds eleven source-qualified Avicennian works, fourteen relationships and two textual families without implying doctrinal agreement.',s_body)
 counts=[('Scholarly and contextual records',len(D['nodes'])),
  ('Textual relationships',len(D['edges'])),
  ('Scholarly sources',len(D['sources'])),
@@ -102,11 +102,11 @@ t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,-1),colors.HexColor('#f0f3f3')),
 story.append(t);gap(16)
 p('Editorial warning',s_h2)
 p('A commentary is not necessarily an endorsement; a translation may alter the source; the word “Aristotle” in the Arabic Theology is a transmitted pseudonymous attribution. A date may be an author’s activity envelope or upper bound, not a composition date. Schools and political periods are context unless a specific written source justifies an edge.',s_body)
-p('The PDF preserves metadata, evidence summaries and bibliographical links. It does not contain complete copyrighted third-party texts or manuscript images. The companion offline archive contains the revision-7 interactive atlas and the canonical JSON source register.',s_small)
+p('The PDF preserves metadata and evidence; the companion Avicennian Summa reader begins a bilingual primary-source translation series. It does not contain complete copyrighted third-party texts or manuscript images. The companion offline archive contains the revision-7.2 interactive atlas and the canonical JSON source register.',s_small)
 gap(8)
 p('Contents',s_h2)
 for text_ in ['1. The Neoplatonic historical bridge','2. Named textual commentary and transmission families',
- '3. Full scholarly work and context register (375 records)','4. Relationship evidence register (348 entries)',
+ '3. Full scholarly work and context register (386 records)','4. Relationship evidence register (362 entries)',
  '5. Historical political and school networks','6. Scholarly and historical source bibliography']:
     p(esc(text_),s_small)
 
@@ -141,7 +141,7 @@ for f in D['textual_families']:
           '  —  '+esc(n.get('author',''))+'  ['+esc(n.get('date_label',''))+']',s_tiny)
 
 ch('3. Full work and context register',
- 'All 375 canonical records. Temporal anchors are for plotting labels; the full qualification is retained under each record.')
+ 'All 386 canonical records. Temporal anchors are for plotting labels; the full qualification is retained under each record.')
 for i,n in enumerate(D['nodes'],1):
     name=f"{i:03d}  {n.get('code',n['id'])}  {n['title']}"
     p(esc(name),s_h2)
@@ -209,6 +209,8 @@ files=[
  ('downloads/intellectual-atlas-data.json',DATA),
  ('downloads/Intellectual_Atlas_Reference_Revision7.pdf',PDF),
  ('neoplatonism/index.html',ROOT/'neoplatonism/index.html'),
+ ('avicennian-summa/index.html',ROOT/'avicennian-summa/index.html'),
+ ('avicennian-summa/SOURCE_REGISTER.md',ROOT/'avicennian-summa/SOURCE_REGISTER.md'),
  ('tahdhib/index.html',ROOT/'tahdhib/index.html'),
  ('publication.json',ROOT/'publication.json')
 ]
@@ -216,8 +218,8 @@ files=[
 # remain marked historical and accessible from the live site.
 mark=(ROOT/'../../assets/gnamma-mark.svg').resolve()
 if mark.is_file(): files.append(('assets/gnamma-mark.svg',mark))
-readme="""GNAMMA INTELLECTUAL ATLAS — OFFLINE REVISION 7
-October 2026. Extract the ZIP and open:
+readme="""GNAMMA INTELLECTUAL ATLAS — OFFLINE REVISION 7.2
+30 October 2026. Extract the ZIP and open:
     research/intellectual-atlas/index.html
 The interactive SVG and scholarly records work locally without a server in
 modern browsers allowing local scripts. If a browser blocks file:// scripts,
@@ -225,7 +227,7 @@ run: python -m http.server 8123 from the extraction folder and open
 http://localhost:8123/research/intellectual-atlas/
 
 Contents: source-critical PDF, current canonical JSON and interactive map;
-standalone Neoplatonism critical dossier and Tahdhib overview.
+standalone Neoplatonism and Tahdhib dossiers; plus the Avicennian Summa reader and source register.
 Earlier edition PDFs/ZIPs on the web are NOT included in this archive.
 External scholarly hyperlinks require internet access. Sources belong to
 their respective authors/publishers. No source books/manuscript scans included.
@@ -238,6 +240,7 @@ with zipfile.ZipFile(ZIP,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=7,al
 with zipfile.ZipFile(ZIP) as z:
     assert z.testzip() is None
     assert root+'index.html' in z.namelist()
+    assert root+'avicennian-summa/index.html' in z.namelist()
     assert root+'downloads/intellectual-atlas-data.json' in z.namelist()
     assert root+'downloads/Intellectual_Atlas_Reference_Revision7.pdf' in z.namelist()
 print(json.dumps({'revision':D['revision'],'pdf_bytes':PDF.stat().st_size,
