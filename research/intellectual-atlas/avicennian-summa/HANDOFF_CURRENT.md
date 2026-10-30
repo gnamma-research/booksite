@@ -66,3 +66,8 @@ Additional inherited work: `primary-translation-causation.md`, `causal-dependenc
 3. Work on **complete bounded argument units** (Arabic/Persian/Latin + faithful English), objections and replies, and then comparative adjudication, rather than writing more outlines.
 4. Extend each stage handoff **cumulatively**, keep a timestamped immutable stage file and update this pointer.
 5. Update reader, source register, static tests, browser QA, offline builder, and site; run checks before merging.
+
+
+### Stage 5 Indian quotation annex (31 October 2026)
+
+[Faḍl-i Ḥaqq al-Khayrābādī: five objections to latent fire](INDIAN_PRIMARY_QUOTATION_01_KHAYRABADI_HEAT.md) is now an independent documentary appendix to the eleven source fascicles; modern Hindawi 2023 quotes *al-Hadiyya* original 1904 pp.92–94. The historical passage is **mediated**, not direct inspection of 1904 and not a claimed demonstration of his theory of the Giver of Forms. The source reader links the annex, and the witness ledger retains **11 direct fascicles** plus **one mediated documentary annex**.
