@@ -255,3 +255,12 @@ The earlier first IX.5 excerpt is now superseded as a translation-length limitat
 **New textual demonstration:** VI.2 locates the continuous essential causal dependence of natural composites while permitting indefinite successions of preparatory causes; IX.5 explicitly combines real natural preparations and celestial influence with the Giver of Forms' separate bestowal, and rejects the notion of matter subsisting without any specific constitutive form; Lāhījī articulates why neither an intrinsic nor an extrinsic *preference short of sufficient necessitation* can fully ground occurrence. The historical allocation of natural versus separate causality is now supported by a full paired Avicennian reading rather than isolated quotations.
 
 **Limits:** These are complete chapters/issues as *translation units* only. No new manuscripts independently collated, no claimed exhaustive Arabic/Persian translations for all twenty research domains, and no claim of verified live Pages deployment merely from GitHub commits.
+
+
+## Synthesis 1.15 — full *Ilāhiyyāt* VI.1 restored to the causal pair (31 October 2026)
+
+[**New primary translation: Ibn Sīnā, *Ilāhiyyāt* VI.1, pp.257–263**](PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md), with 23 translation units, editions and scholastic commentary. The [public primary reader](primary-translations.html) now holds **four** continuous bounded historical argument units, including VI.1, VI.2, IX.5 and *Shawāriq* Issues 23–24.
+
+VI.1 provides the preceding **four causes** scheme and explicitly locates efficient causality in the bestowal of existence rather than in the accidental description “after not having existed.” The concluding thesis is that an effect needs the giver of existence for as long as it is existent. VI.2 differentiates the causal levels and temporal succession; IX.5 articulates the separate form-bestower's cooperation with natural preparations. This is a connected three-chapter demonstration of distinct but mutually ordered kinds of efficient causation, not a mere slogan about divine maintenance.
+
+The ten earlier thematic research chapters and all textual-integrity cautions remain unchanged. Full manuscript-critical collation, all twenty source domains, and live Pages validation remain open.
