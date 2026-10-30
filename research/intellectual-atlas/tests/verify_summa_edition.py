@@ -75,16 +75,17 @@ fascicles={
     'fascicle-d':'PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md',
     'fascicle-c':'PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md',
     'fascicle-f':'PRIMARY_TRANSLATION_FASCICLE_F_AQUINAS_ST104.md',
+    'fascicle-g':'PRIMARY_TRANSLATION_FASCICLE_G_AQUINAS_ST104_3_4.md',
 }
 primary=(summa/'primary-translations.html').read_text(encoding='utf-8')
 assert primary.startswith('<!doctype html>'), 'Missing public primary translation reader'
-assert primary.count('<article id="fascicle-')==5, 'Expected five complete primary fascicle articles'
-assert primary.count('</article>')==5, 'Malformed fascicle article closure'
+assert primary.count('<article id="fascicle-')==6, 'Expected six complete primary fascicle articles'
+assert primary.count('</article>')==6, 'Malformed fascicle article closure'
 assert all(f'id="{id_}"' in primary and f'href="#{id_}"' in primary
            for id_ in fascicles), 'Missing fascicle navigation'
-assert len(primary)>100000, 'Primary translation reader appears truncated'
+assert len(primary)>120000, 'Primary translation reader appears truncated'
 assert '§23 [263]' in primary and '§19.' in primary and '§17 [413]' in primary
-assert '[32774]' in primary
+assert '[32774]' in primary and '[32790]' in primary
 assert '§24.10' in primary, 'One or more translation endings not present'
 assert all((summa/name).is_file() and (summa/name).stat().st_size>12000
            for name in fascicles.values()), 'A source translation file missing or incomplete'
@@ -94,7 +95,7 @@ assert all(name in release for name in fascicles.values()), 'Offline source file
 assert 'primary-translations.html' in release, 'Offline HTML reader omitted'
 assert 'STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md' in release
 assert (summa/'handoffs'/'STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md').is_file()
-assert 'AV-01E' in register and 'AV-09C' in register and 'AT-104F' in register
+assert 'AV-01E' in register and 'AV-09C' in register and 'AT-104F' in register and 'AT-104G' in register
 
 print({
     'critical_chapters':len(mds),
