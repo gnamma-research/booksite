@@ -25,10 +25,14 @@
 | AV-16 | Mīrzā Abū al-Ḥasan Jilwa, *Ḥāshiya ʿalā al-Shifāʾ* | PROSPECT | High; late independent Avicennian gloss | https://seop.illc.uva.nl/archives/sum2016/entries/mulla-sadra/ |
 | AV-17 | Jilwa, gloss on Ṭūsī's *Sharḥ al-Ishārāt* | PROSPECT | High; later critical *Ishārāt* reception | Existing GNAMMA Atlas *Ishārāt* family |
 | AV-18 | Jilwa, marginalia on *al-Asfār* and *Risāla fī l-ḥaraka al-jawhariyya* | PROSPECT | High; direct critique of Sadrian motion | Existing GNAMMA Atlas records |
-| AV-19 | Faḍl-i Ḥaqq Khayrābādī, *al-Hadiyya al-saʿīdiyya fī l-ḥikma al-ṭabīʿiyya* | BIBLIOGRAPHY-VERIFIED, Arabic primary edition not obtained | High; post-Avicennian natural philosophy in nineteenth-century India | https://academic.oup.com/edited-volume/38657/chapter-abstract/335770784 |
+| AV-19 | Faḍl-i Ḥaqq Khayrābādī, *al-Hadiyya al-saʿīdiyya fī l-ḥikma al-ṭabīʿiyya* | HISTORICAL ARABIC PRINT LOCATED; not transcribed/collated | High; nineteenth-century Indian natural philosophy. A Cairo 1904 printing is digitally available at https://ddl.ae/book/95961; McGinnis and Ahmed date composition approximately 1840–1846 from its dedication. | https://academic.oup.com/edited-volume/38657/chapter-abstract/335770784 |
 | AV-20 | Ḥasan Malikshāhī, *Tarjamah wa sharḥ-i Ishārāt wa tanbīhāt-i Ibn Sīnā* | BIBLIOGRAPHY-VERIFIED; Persian two-volume text not acquired | Medium; most substantial verified late complete explanatory modern commentary, not asserted independent Peripatetic doctrine | https://ci.nii.ac.jp/ncid/BA10409003 |
 | AV-21 | Rizvi, "An Avicennian Engagement with and Appropriation of Mullā Ṣadrā" (2020) | SCHOLARSHIP-OPEN (CC BY 4.0) | Methodological guide, check primary-source claims | https://doi.org/10.1163/18778372-04801008 |
 | AV-22 | Wahid M. Amin, "Āqā Ḥusayn Khwānsārī" (2026) | SCHOLARSHIP-BIBLIOGRAPHY | Late Safavid historiography of objections | https://doi.org/10.1163/9789004758421-004 |
+
+### Public-domain primary edition located: Khayrābādī
+
+A **1904 Arabic printing**, edited by ʿAbd al-Raḥmān al-Barqūqī and published by Maṭbaʿat Majallat al-Manār in Cairo, is catalogued at [UAE Digital Knowledge Center](https://ddl.ae/book/95961). This gives a much more definite acquisition path than the previous scholarly bibliography alone. We have not independently collated the underlying scan nor transcribed its natural philosophy. The Oxford Handbook discussion of the dedication suggests the **composition interval 1840–1846**, not the print year 1904; these dates must remain separate.
 
 ### Translation actually begun
 
@@ -38,6 +42,8 @@ The [summa reader](index.html#texts) contains five primary passages with Arabic/
 - Lāhījī, *Shawāriq* I:53, the enduring subject of motion.
 - Lāhījī, *Shawāriq* I:159, jaʿl and the producer of particular existence.
 - Narāqī, *Jāmiʿ* I:38–39, dependence through possibility at origination and continuance.
+
+The [first developed summa chapter](causal-dependence.html) adds five newly written Arabic theses with English translations, three exact short translated lemmata from Narāqī's *Jāmiʿ al-afkār* I:38–42, and an explicit comparative argument map. Its newly composed Arabic must never be confused with a historical edition.
 
 These are **excerpts**, not unabridged passage blocks. Every ellipsis denotes omitted text. Verification against manuscript witnesses, multiple editions, and relevant glosses is outstanding.
 
@@ -61,6 +67,6 @@ C. Work through Avicenna *Ilāhiyyāt* I.5, I.6, V.1 and VI.1–5; collate the R
 
 D. Investigate manuscript/edition signatures for Jilwa's glosses and the Khwānsārī–Sabzawārī reply exchange.
 
-E. Obtain and identify a reliable Arabic edition of Khayrābādī's *Hadiyya* before claiming any original translated text from it.
+E. Inspect and collate the now-located Cairo 1904 Arabic printing of Khayrābādī's *Hadiyya* before publishing translations; confirm edition variants and the dedication-based composition window.
 
 **Editorial warning:** Scholarly bibliographies and web transcriptions are research leads, not copyright licenses or independent textual authentication. No complete book has been downloaded into this GNAMMA packet.

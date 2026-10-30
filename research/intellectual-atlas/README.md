@@ -83,10 +83,10 @@ counts do not imply complete manuscript collation or finished translations.
 [Read the Avicennian Summa pilot](avicennian-summa/) ·
 [Source acquisition register](avicennian-summa/SOURCE_REGISTER.md).
 
-The pilot records 32 philosophical questions and five short Arabic–English
+The research reader records 32 philosophical questions and five short Arabic–English
 translation excerpts, each with a published-page link and distinct editorial
 notes. The complete argument-unit translations and manuscript collation are
-outstanding. This atlas does not redistribute commercial edition scans.
+outstanding. A new developed chapter, [`On Contingency and Continuing Causation`](avicennian-summa/causal-dependence.html), adds a newly authored Arabic matn with English translations, three additional source lemmata from Narāqī, and an explicit comparison of proximal natural causes with continuing ontological dependence. The accessible 1904 Arabic printing of Khayrābādī's *al-Hadiyya* has been identified at https://ddl.ae/book/95961; no complete translation of it is claimed. This atlas does not redistribute commercial edition scans.
 
 ## Current revision 7.2 downloadable editions
 

@@ -210,6 +210,7 @@ files=[
  ('downloads/Intellectual_Atlas_Reference_Revision7.pdf',PDF),
  ('neoplatonism/index.html',ROOT/'neoplatonism/index.html'),
  ('avicennian-summa/index.html',ROOT/'avicennian-summa/index.html'),
+ ('avicennian-summa/causal-dependence.html',ROOT/'avicennian-summa/causal-dependence.html'),
  ('avicennian-summa/SOURCE_REGISTER.md',ROOT/'avicennian-summa/SOURCE_REGISTER.md'),
  ('tahdhib/index.html',ROOT/'tahdhib/index.html'),
  ('publication.json',ROOT/'publication.json')
@@ -241,6 +242,7 @@ with zipfile.ZipFile(ZIP) as z:
     assert z.testzip() is None
     assert root+'index.html' in z.namelist()
     assert root+'avicennian-summa/index.html' in z.namelist()
+    assert root+'avicennian-summa/causal-dependence.html' in z.namelist()
     assert root+'downloads/intellectual-atlas-data.json' in z.namelist()
     assert root+'downloads/Intellectual_Atlas_Reference_Revision7.pdf' in z.namelist()
 print(json.dumps({'revision':D['revision'],'pdf_bytes':PDF.stat().st_size,
