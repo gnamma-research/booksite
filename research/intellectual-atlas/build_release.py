@@ -224,6 +224,8 @@ files=[
  ('avicennian-summa/PRIMARY_TEXT_CROSSWALK_01.md',ROOT/'avicennian-summa/PRIMARY_TEXT_CROSSWALK_01.md'),
  ('avicennian-summa/four-causes-and-forms-research.md',ROOT/'avicennian-summa/four-causes-and-forms-research.md'),
  ('avicennian-summa/AT_AVICENNIAN_FINDINGS_1.md',ROOT/'avicennian-summa/AT_AVICENNIAN_FINDINGS_1.md'),
+ ('avicennian-summa/SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md',ROOT/'avicennian-summa/SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md'),
+ ('avicennian-summa/primary-translation-causation.md',ROOT/'avicennian-summa/primary-translation-causation.md'),
  ('avicennian-summa/SOURCE_REGISTER.md',ROOT/'avicennian-summa/SOURCE_REGISTER.md'),
  ('tahdhib/index.html',ROOT/'tahdhib/index.html'),
  ('publication.json',ROOT/'publication.json')
@@ -257,6 +259,8 @@ with zipfile.ZipFile(ZIP) as z:
     assert root+'avicennian-summa/index.html' in z.namelist()
     assert root+'avicennian-summa/causal-dependence.html' in z.namelist()
     assert root+'avicennian-summa/chapters/index.html' in z.namelist()
+    assert root+'avicennian-summa/SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md' in z.namelist()
+    assert root+'avicennian-summa/primary-translation-causation.md' in z.namelist()
     assert all(root+'avicennian-summa/chapters/'+chapter in z.namelist() for chapter in ["01-mental-existence-and-quiddity.md","02-making-and-causal-explanation.md","03-substantial-motion-dispute.md","04-intellect-soul-and-identity.md","05-four-causes-form-bestowal.md","06-divine-agency-necessity-and-plurality.md","07-unity-plurality-and-divine-knowledge.md","08-universals-quiddity-nafs-al-amr.md"])
     assert root+'downloads/intellectual-atlas-data.json' in z.namelist()
     assert root+'downloads/Intellectual_Atlas_Reference_Revision7.pdf' in z.namelist()
