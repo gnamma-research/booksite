@@ -19,21 +19,22 @@ async def verify(engine,width,height):
         browser=await getattr(p,engine).launch(headless=True)
         page=await browser.new_page(viewport={"width":width,"height":height})
         page.on("pageerror",lambda error:errors.append(str(error)))
-        for chapter in (1,5,9):
+        for chapter in (1,5,9,10):
             num=f"ch{chapter:02d}"
             response=await page.goto(URL+"#"+num,wait_until="domcontentloaded",timeout=60000)
             assert response.status==200, f"Reader HTTP {response.status}"
             await page.wait_for_function(
                 "(id) => !!document.querySelector('#'+id) && !document.querySelector('#'+id).hidden",arg=num
             )
-            assert await page.locator("article.scholar-chapter").count()==9
+            assert await page.locator("article.scholar-chapter").count()==10
             assert await page.locator("article.scholar-chapter:visible").count()==1
             assert await page.locator(f"article#{num}:visible").count()==1
-            assert await page.locator("#current-title").inner_text()==f"Chapter {chapter} of 9"
+            assert await page.locator("#current-title").inner_text()==f"Chapter {chapter} of 10"
             assert await page.locator(f'article#{num} a[href^="http"]').count()>0
             overflow=await page.evaluate("document.documentElement.scrollWidth-document.documentElement.clientWidth")
             assert overflow<=4, f"Horizontal overflow {overflow} pixels in chapter {num}"
         assert await page.locator("article#ch05 [dir='rtl']").count()>0, "Arabic passages not RTL"
+        assert await page.locator("article#ch10 [dir='rtl']").count()>0, "Chapter ten Arabic not RTL"
         await page.locator('.side a[href="#ch07"]').click()
         assert await page.locator("article#ch07:visible").count()==1
         await page.reload(wait_until="domcontentloaded")
@@ -43,7 +44,7 @@ async def verify(engine,width,height):
             await page.screenshot(path=str(OUT/f"summa-{engine}-{width}x{height}-{color}.png"),full_page=False)
         assert not errors, f"JavaScript page errors: {errors}"
         await browser.close()
-        print(json.dumps({"browser":engine,"size":[width,height],"chapters":9,
+        print(json.dumps({"browser":engine,"size":[width,height],"chapters":10,
             "deep_links":True,"RTL":True,"themes":2,"status":"pass"}))
 
 if __name__=="__main__":

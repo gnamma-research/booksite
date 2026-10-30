@@ -47,7 +47,7 @@ jobs:
         run: python research/intellectual-atlas/build.py
       - name: Build critical PDF and offline ZIP
         run: python research/intellectual-atlas/build_release.py
-      - name: Validate nine bilingual chapters, source links and offline reading edition
+      - name: Validate ten bilingual chapters, source links and offline reading edition
         run: python research/intellectual-atlas/tests/verify_summa_edition.py
       - name: Rebuild publication checksum manifest
         run: python research/intellectual-atlas/build.py
@@ -88,6 +88,11 @@ jobs:
               assert root+'avicennian-summa/chapters/01-mental-existence-and-quiddity.md' in names
               assert root+'avicennian-summa/chapters/07-unity-plurality-and-divine-knowledge.md' in names
               assert root+'avicennian-summa/chapters/09-mawaqif-maqasid-hylomorphism-mental-existence.md' in names
+              assert root+'avicennian-summa/chapters/10-conservation-first-cause-and-secondary-agency.md' in names
+              assert root+'avicennian-summa/HANDOFF_CURRENT.md' in names
+              assert root+'avicennian-summa/handoffs/STAGE_01_CORPUS_AUDIT.md' in names
+              assert root+'avicennian-summa/handoffs/STAGE_02_TEN_CHAPTER_EDITION.md' in names
+              assert root+'avicennian-summa/handoffs/STAGE_03_RELEASE_HANDOFF.md' in names
               assert root+'avicennian-summa/SOURCE_REGISTER.md' in names
               assert root+'downloads/intellectual-atlas-data.json' in names
               assert root+'downloads/Intellectual_Atlas_Reference_Revision7.pdf' in names

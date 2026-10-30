@@ -21,7 +21,7 @@ register=(summa/'SOURCE_REGISTER.md').read_text(encoding='utf-8')
 release=(root/'build_release.py').read_text(encoding='utf-8')
 
 mds=sorted(chapter_dir.glob('[0-9][0-9]-*.md'))
-assert len(mds)==9, f'Expected 9 translated chapters, got {len(mds)}'
+assert len(mds)==10, f'Expected 10 translated chapters, got {len(mds)}'
 assert (chapter_dir/'reader.html').stat().st_size>120000
 assert all(p.stat().st_size>8000 for p in mds), 'A chapter appears truncated'
 assert all(re.search(r'[\u0600-\u06ff]',p.read_text(encoding='utf-8')) for p in mds)
@@ -49,7 +49,7 @@ class Collector(HTMLParser):
             if u.startswith('#'):self.hashes.append(u[1:])
 
 p=Collector();p.feed(reader)
-ids=['ch'+str(i).zfill(2) for i in range(1,10)]
+ids=['ch'+str(i).zfill(2) for i in range(1,11)]
 assert p.articles==ids, f'Article order {p.articles}'
 assert len(p.ids)==len(set(p.ids)), 'Duplicate HTML ids'
 assert p.rtl>=18, 'Missing Arabic RTL typography'
@@ -62,6 +62,10 @@ assert 'chapters/reader.html' in landing and 'chapters/reader.html' in register
 assert 'chapters/reader.html' in release
 assert (summa/'primary-translation-causation.md').is_file()
 assert (summa/'AT_AVICENNIAN_FINDINGS_1.md').is_file()
+assert (summa/'HANDOFF_CURRENT.md').is_file()
+assert all((summa/'handoffs'/f'STAGE_{n:02d}_{suffix}.md').is_file() for n,suffix in ((1,'CORPUS_AUDIT'),(2,'TEN_CHAPTER_EDITION'),(3,'RELEASE_HANDOFF')))
+assert 'ch10' in reader and 'q.104' in reader
+assert 'HANDOFF_CURRENT.md' in release
 
 print({
     'critical_chapters':len(mds),
