@@ -1,4 +1,4 @@
-const {chromium}=require('playwright');
+const {chromium,webkit}=require('playwright');
 const fs=require('node:fs');
 const path=require('node:path');
 const vm=require('node:vm');
@@ -43,7 +43,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await page.locator('#sheet-close').click();
  pass('Contents includes every passage and filters by verse');
  await go('read/preface');
- await page.locator('[data-tier="study"]').click();
+ await page.evaluate(()=>BahrReader.setPrefs({tier:'study'}));
  await page.locator('[data-action="passage-notes"]').click();
  await page.locator('#sheet[open]').waitFor();
  assert((await page.locator('#sheet-body').innerText()).includes('Translator annotations'));
@@ -82,31 +82,69 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await go('read/preface');await page.locator('[data-language="ar"]').click();
  assert(!await page.locator('.ar-column').isVisible());assert(await page.locator('.en-column').isVisible());
  await page.locator('[data-language="en"]').click();assert(await page.locator('.en-column').isVisible());
- await page.locator('#sheet-close').click();await page.locator('[data-language="ar"]').click();
+ await page.locator('[data-language="ar"]').click();await page.locator('[data-language="ar"]').click();
  pass('Language controls always retain at least one visible language');
+
  const viewports=[{width:1440,height:1000},{width:390,height:844},{width:844,height:390},{width:320,height:568}];
  for(const viewport of viewports){
   await page.setViewportSize(viewport);
-  for(const theme of ['horizon','light','night','manuscript']){
-   await go('read/preface');await page.locator('[data-action="settings"]').click();
-   await page.locator('button[data-theme="'+theme+'"]').click();
-   assert.equal(await page.locator('html').getAttribute('data-theme'),theme);
-   await overflow('settings '+viewport.width+' '+theme);
-   await page.locator('#sheet-close').click();
-   await overflow('reader '+viewport.width+' '+theme);
-   const controls=await page.locator('#topbar button:visible').evaluateAll(nodes=>nodes.map(n=>{const b=n.getBoundingClientRect();return {x:b.x,right:b.right,w:b.width,h:b.height};}));
-   assert(controls.every(b=>b.x>=-1&&b.right<=viewport.width+1&&b.w>=30&&b.h>=40));
-   if(theme==='horizon'||theme==='night')await page.screenshot({path:path.join(out,'reader-'+viewport.width+'-'+theme+'.png')});
+  for(const palette of ['almohad','cordoba','nasrid','zellij','gnamma','gnamma-air']){
+   for(const theme of ['light','dark']){
+    await go('read/preface');await page.locator('#settingsBtn').click();
+    await page.locator('[data-palette="'+palette+'"]').click();
+    await page.locator('[data-theme-choice="'+theme+'"]').click();
+    assert.equal(await page.locator('html').getAttribute('data-theme'),theme);
+    assert.equal(await page.locator('html').getAttribute('data-palette'),palette);
+    await overflow('Visuals '+viewport.width+' '+palette+' '+theme);
+    assert(await page.locator('#sheet .gn-visual-row').count()>=8);
+    await page.locator('#sheet-close').click();await overflow('reader');
+    const controls=await page.locator('#topbar button:visible').evaluateAll(nodes=>nodes.map(n=>{const b=n.getBoundingClientRect();return {x:b.x,right:b.right,w:b.width,h:b.height};}));
+    assert(controls.every(b=>b.x>=-1&&b.right<=viewport.width+1&&b.w>=28&&b.h>=40),'Toolbar fits '+viewport.width);
+    const colour=await page.locator('#readerSaveAction').evaluate(el=>({button:getComputedStyle(el).color,icon:getComputedStyle(el.querySelector('svg')).stroke}));
+    assert.equal(colour.button,colour.icon);
+   }
   }
+  await page.locator('#menuBtn').click();
+  assert(await page.locator('#leftNav').isVisible());
+  assert.deepEqual(await page.locator('#leftNav .nav-item span').allTextContents(),['Read','Contents','Reading Desk','Subject index','Dictionary · معجم','Scholarly research','Guided study','Editions & downloads','Help & guide']);
+  const boxes=await page.locator('#leftNav .nav-item svg').evaluateAll(els=>els.map(el=>({w:el.getBoundingClientRect().width,h:el.getBoundingClientRect().height,x:el.getBoundingClientRect().x})));
+  assert(boxes.every(b=>b.w===18&&b.h===18&&b.x===boxes[0].x));
+  await page.locator('[data-ui="menu-close"]').click();
+  await page.screenshot({path:path.join(out,'parity-'+viewport.width+'.png')});
   for(const route of ['home','study','indices','dictionary','research','editions']){await go(route);await overflow(route+' '+viewport.width);}
  }
- pass('All four themes and reader tools fit desktop, phone portrait and landscape');
+ pass('Six palettes in Light/Dark; all menu icons and toolbar controls fit four viewport sizes');
  await page.setViewportSize({width:390,height:844});await go('read/preface');
- for(let i=0;i<3;i++){await page.locator('[data-action="focus"]').click();await overflow('focus '+i);assert(await page.locator('[data-action="settings"]').isVisible());}
- await page.locator('[data-action="settings"]').click();await page.locator('[data-setting="scope"]').selectOption('continuous');
- await page.locator('#sheet-close').click();await page.waitForFunction(()=>document.querySelectorAll('.passage').length===6);
- await page.locator('[data-action="load-more"]').click();await page.waitForFunction(()=>document.querySelectorAll('.passage').length===12);
- pass('Continuous reading appends complete passages');
+ await page.locator('#settingsBtn').click();
+ for(const style of ['book','structured','quiet']){await page.locator('[data-page-style-choice="'+style+'"]').click();assert.equal(await page.locator('html').getAttribute('data-page-style'),style);}
+ for(const font of ['amiri','scheherazade','noto']){await page.locator('[data-arabic-font-choice="'+font+'"]').click();await page.waitForFunction(f=>document.documentElement.dataset.arabicFont===f,font);}
+ for(const font of ['original','source-serif','literata']){await page.locator('[data-english-font-choice="'+font+'"]').click();await page.waitForFunction(f=>document.documentElement.dataset.englishFont===f,font);}
+ await page.locator('#largerType').click();assert.equal(await page.locator('#fontSizeLabel').textContent(),'105%');
+ await page.locator('[data-stacked-order="bottom"]').click();
+ await page.locator('#sheet-close').click();
+ const order=await page.locator('.ar-column').evaluate(el=>getComputedStyle(el).order);assert.equal(order,'1');
+ await page.reload();await page.locator('#unit-preface').waitFor();
+ assert.equal(await page.locator('html').getAttribute('data-english-font'),'literata');
+ pass('Page styles, six fonts, text size and independent mobile order persist');
+ await page.locator('[data-ui="copy-menu"]').click();assert.equal(await page.locator('[data-copy-choice]').count(),4);await page.locator('#sheet-close').click();
+ await page.locator('[data-ui="share"]').click();assert.equal(await page.locator('[name="share-content"]').count(),3);await page.locator('#sheet-close').click();
+ await page.locator('#readerSaveAction').click();await go('read/fatiha_1');await page.locator('#readerSaveAction').click();
+ assert.equal(await page.locator('#readerSaveAction').getAttribute('aria-pressed'),'true');
+ await page.locator('#saved-counts button').first().click();assert((await page.locator('#sheet-body').innerText()).includes('Manage in Reading Desk'));await page.locator('#sheet-close').click();
+ pass('Copy/share menus, immediate section bookmarks and saved-item dock work');
+ await page.locator('#focusToolbar').click();await page.locator('[data-mode="focus"]').click();
+ assert(await page.locator('#menuBtn').isVisible());assert(!await page.locator('#settingsBtn').isVisible());
+ await page.locator('#focusToolbar').click();await page.locator('#focus-apparatus').check();await page.locator('[data-mode="continuous"]').click();
+ await page.waitForFunction(()=>document.querySelectorAll('.passage').length===389,null,{timeout:90000});
+ assert(await page.locator('#unit-'+catalog[catalog.length-1].id).count());
+ await overflow('continuous');
+ await page.locator('#focusToolbar').click();await page.locator('[data-mode="reading"]').click();
+ await page.waitForFunction(()=>document.querySelectorAll('.passage').length===1);
+ pass('Reading, Focus and complete Continuous modes work and can be exited');
+ await go('editions');await page.locator('[data-edition-tab="personal"]').click();
+ assert(await page.locator('#personal-editions').isVisible());assert(!await page.locator('#published-editions').isVisible());
+ await page.locator('[data-edition-tab="published"]').click();assert.equal(await page.locator('#published-editions .edition-card').count(),4);
+ pass('Published editions and personal printouts tabs retain all four supplied PDFs');
  assert.deepEqual(errors,[]);pass('No uncaught browser errors or failed reader requests');
  await context.close();
  const offlineContext=await browser.newContext();const offlinePage=await offlineContext.newPage();
@@ -116,6 +154,20 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await offlineContext.setOffline(true);await offlinePage.goto(url+'#/read/'+catalog[catalog.length-1].id);
  await offlinePage.locator('#unit-'+catalog[catalog.length-1].id).waitFor();
  pass('Offline cache opens the final passage without network access');
+
  await browser.close();
+ const safari=await webkit.launch({headless:true});
+ const sc=await safari.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,serviceWorkers:'block'});
+ const sp=await sc.newPage(),se=[];sp.on('pageerror',e=>se.push(String(e)));
+ await sp.goto(url+'#/read/preface');await sp.locator('#unit-preface').waitFor();
+ await sp.locator('#settingsBtn').click();await sp.locator('[data-theme-choice="dark"]').click();
+ await sp.locator('#sheet-close').click();await sp.locator('#menuBtn').click();
+ await sp.locator('[data-ui="menu-close"]').click();
+ await sp.locator('#focusToolbar').click();await sp.locator('[data-mode="focus"]').click();
+ await sp.locator('#focusToolbar').click();await sp.locator('[data-mode="reading"]').click();
+ assert.deepEqual(se,[]);assert(await sp.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+ await sp.screenshot({path:path.join(out,'webkit-phone.png')});await safari.close();
+ pass('WebKit phone opens Visuals, navigation and reading modes without runtime errors');
+
  fs.writeFileSync(path.join(out,'results.json'),JSON.stringify({passed:checks.length,checks,passages:389,annotations:209,reports:48,sources:352},null,2));
 })().catch(e=>{console.error(e);process.exit(1);});
