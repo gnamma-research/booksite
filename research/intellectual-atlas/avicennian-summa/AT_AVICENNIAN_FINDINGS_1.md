@@ -93,3 +93,31 @@ The twenty-domain project should be read as a connected explanatory system, not 
 ### Publication and completion criterion
 
 Each of the twenty domains must eventually include (i) a question and conceptual distinctions, (ii) primary passage with edition/page or folio, (iii) checked transcription and translation, (iv) objections and replies across named authors, (v) comparison with Aquinas where applicable, (vi) evidence-based verdict with confidence level, and (vii) cross-links. The current synthesis meets the analytical integration criterion but **does not** meet the full primary-text collation criterion. Never mark those twenty dossiers as source-complete without that work.
+
+
+## Source-collation supplement 1.2 — directly inspectable loci (30 October 2026)
+
+### Dossier: separate bestowal and physical preparation
+Dag Nikolaus Hasse, *Avicenna's Giver of Forms in Latin Philosophy*, [PDF](https://www.philosophie.uni-wuerzburg.de/fileadmin/06100000/2019_und_frueher/Hasse_2012_-_Giver_of_Forms.pdf), identifies *Ilāhiyyāt* IX.5, p.335 l.18 and p.337 l.26 (edition used by Hasse), *al-Kawn wa-l-fasād* chs.13–14, pp.187,190, and *Fī l-afʿāl wa-l-infiʿālāt* p.256. The Giver is ontological rather than merely epistemological. Cross-check edition pagination before transferring to another print. Compare [SEP natural philosophy](https://plato.stanford.edu/entries/ibn-sina-natural/) on natural parents as physical/dispositional causes versus metaphysical bestowal. Do not conflate with denial of natural causal powers.
+
+### Dossier: substantial motion and proximate causality
+Ṣadrā, *Risāla fī al-ḥudūth*, ch.4, [online Arabic page 149](https://najafdesertlibrary.com/book/%D8%B1%D8%B3%D8%A7%D9%84%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AB-%D8%AD%D8%AF%D9%88%D8%AB-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/v/1/p/149):
+
+> لما كانت الحركة معناها التجدد والانقضاء، فيجب أن يكون علتها القريبة أمرا غير ثابت الذات
+
+Working translation: “Since motion means renewal and passing away, its proximate cause must be something not fixed in its essence.” The next argument excludes an unchanging separate intellect as the *unmediated proximate mover*, not as a higher metaphysical cause. This is a critical qualification when comparing Ṣadrā's substantial motion to Avicennian cosmic intellects and Thomist secondary causes. The online edition has variant readings; no manuscript collation has been performed here.
+
+### Dossier: Lāhījī's counterposition
+Lāhījī, *Shawāriq al-ilhām*, vol.1 p.405, [Arabic page](https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/1/p/405), distinguishes priority in existence from efficient communication of existence; one thing can be ontologically prior without itself imparting being. This prevents an invalid inference from *priority* to *efficient causation*. Dadikhuda, “Motion Denied” (2025), DOI 10.1163/9789004734951_027, examines Lāhījī's opposition to substantial motion. This secondary study does not substitute for translating the full *Shawāriq* objections and replies.
+
+### Dossier: species forms and Platonic exemplars
+Hashem Morvarid, “Avicenna on the Theory of Forms,” *Philosophy and Phenomenological Research* 111 (2025):235–259, DOI 10.1111/phpr.70020, distinguishes Avicenna's target from later Muslim Platonist reformulations and highlights his logical use of *min ḥaythu hiya hiya*. Keep the rejection of separately subsisting Platonic Forms distinct from the acceptance of a separate efficient *giver* of immanent substantial forms.
+
+### New cross-domain inferences (interpretive, not historical attributions)
+1. Existential conservation does not entail a theory of substantial generation.
+2. Priority in being does not entail direct efficient production (Lāhījī's example).
+3. A separate cause can be indispensable at one level without being the immediate mover at another (Ṣadrā).
+4. Rejecting separate Platonic species exemplars does not entail rejecting a separate intellect bestowing intrinsic natural forms (Avicenna).
+5. Different kinds of natural form (elemental, artefactual, organic) should not be flattened into a single example; see Peter Adamson, “Natural, Artificial, and Organic Forms in Avicenna” (2023), DOI 10.1093/oso/9780192897664.003.0013.
+
+**Integrity statement:** These are inspectable source anchors and provisional translations, not an exhaustive Arabic/Persian critical edition. No conclusion about Khwānsārī, Jilwa, or Khayrābādī is assigned without verified passages.
