@@ -24,7 +24,7 @@ async def verify(engine,width,height):
             response=await page.goto(URL+"#"+num,wait_until="domcontentloaded",timeout=60000)
             assert response.status==200, f"Reader HTTP {response.status}"
             await page.wait_for_function(
-                "(id) => !!document.querySelector('#'+id) && !document.querySelector('#'+id).hidden",num
+                "(id) => !!document.querySelector('#'+id) && !document.querySelector('#'+id).hidden",arg=num
             )
             assert await page.locator("article.scholar-chapter").count()==9
             assert await page.locator("article.scholar-chapter:visible").count()==1
