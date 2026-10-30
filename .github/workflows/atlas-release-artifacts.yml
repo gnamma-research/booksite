@@ -83,6 +83,13 @@ jobs:
               assert root+'avicennian-summa/causal-dependence.html' in names
               assert root+'avicennian-summa/chapters/index.html' in names
               assert root+'avicennian-summa/chapters/reader.html' in names
+              assert root+'avicennian-summa/primary-translations.html' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_F_AQUINAS_ST104.md' in names
+              assert root+'avicennian-summa/handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md' in names
               assert root+'avicennian-summa/SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md' in names
               assert root+'avicennian-summa/primary-translation-causation.md' in names
               assert root+'avicennian-summa/chapters/01-mental-existence-and-quiddity.md' in names
