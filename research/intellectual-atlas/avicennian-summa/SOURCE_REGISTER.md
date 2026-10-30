@@ -85,3 +85,21 @@ E. Inspect and collate the now-located Cairo 1904 Arabic printing of Khayrābād
 ## Primary-text crosswalk across domains
 
 [Read the new bilingual Lāhījī primary-text dossier](PRIMARY_TEXT_CROSSWALK_01.md), with source-linked excerpts on intrinsic possibility, causal necessity, dependence, substantial form, unity and individuation. The dossier separates confirmed translations from the missing complete argument units and later-author collation.
+
+
+## Substantive translated chapters — GNAMMA edition, October 30, 2026
+
+The [critical chapters reader](chapters/index.html) links eight connected primary-source studies, rather than only the earlier preparatory outlines. Each chapter marks source text, authorial voice, complete bounded units versus selected passages, printed variants and manuscript-collation limitations.
+
+1. [mental existence and quiddity](chapters/01-mental-existence-and-quiddity.md)
+2. [making and causal explanation](chapters/02-making-and-causal-explanation.md)
+3. [substantial motion dispute](chapters/03-substantial-motion-dispute.md)
+4. [intellect soul and identity](chapters/04-intellect-soul-and-identity.md)
+5. [four causes form bestowal](chapters/05-four-causes-form-bestowal.md)
+6. [divine agency necessity and plurality](chapters/06-divine-agency-necessity-and-plurality.md)
+7. [unity plurality and divine knowledge](chapters/07-unity-plurality-and-divine-knowledge.md)
+8. [universals quiddity nafs al amr](chapters/08-universals-quiddity-nafs-al-amr.md)
+
+**Historical correction:** Mīrzā Abū al-Ḥasan Jilwa must not be labelled an unqualified opponent of substantial motion. Bibliographical evidence records a Tehran 1313 AH printing titled *Ithbāt al-ḥaraka al-jawhariyya*; its precise argument and authorship/context remain to be examined in the printed text. Narāqī's position on existential unity is not merely a blanket rejection: his *Jāmiʿ* II:165–167 distinguishes gradational and numerical-monist readings and advances an account of causal and epistemic inclusion. See Chapters 3 and 7.
+
+**Completion boundaries:** Some chapters contain complete, bounded arguments; others translate selected lemmata within longer discussions. The quoted original authors of glossed positions (e.g., Taftāzānī and Jurjānī in Lāhījī) require independent editions, and full manuscript-level collation across twenty domains has not been completed.
