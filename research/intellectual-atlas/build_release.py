@@ -211,6 +211,12 @@ files=[
  ('neoplatonism/index.html',ROOT/'neoplatonism/index.html'),
  ('avicennian-summa/index.html',ROOT/'avicennian-summa/index.html'),
  ('avicennian-summa/causal-dependence.html',ROOT/'avicennian-summa/causal-dependence.html'),
+ ('avicennian-summa/primary-translations.html',ROOT/'avicennian-summa/primary-translations.html'),
+ ('avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md',ROOT/'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md'),
+ ('avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md',ROOT/'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md'),
+ ('avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md',ROOT/'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md'),
+ ('avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md',ROOT/'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md'),
+ ('avicennian-summa/handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md',ROOT/'avicennian-summa/handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md'),
  ('avicennian-summa/chapters/index.html',ROOT/'avicennian-summa/chapters/index.html'),
  ('avicennian-summa/chapters/reader.html',ROOT/'avicennian-summa/chapters/reader.html'),
  ('avicennian-summa/chapters/01-mental-existence-and-quiddity.md',ROOT/'avicennian-summa/chapters/01-mental-existence-and-quiddity.md'),
@@ -250,7 +256,7 @@ run: python -m http.server 8123 from the extraction folder and open
 http://localhost:8123/research/intellectual-atlas/
 
 Contents: source-critical PDF, current canonical JSON and interactive map;
-standalone Neoplatonism and Tahdhib dossiers; plus the Avicennian Summa reader and source register.
+standalone Neoplatonism and Tahdhib dossiers; plus the Avicennian Summa ten-chapter reader, four new continuous primary translations, their source apparatus, and the source register.
 Earlier edition PDFs/ZIPs on the web are NOT included in this archive.
 External scholarly hyperlinks require internet access. Sources belong to
 their respective authors/publishers. No source books/manuscript scans included.
@@ -266,6 +272,12 @@ with zipfile.ZipFile(ZIP) as z:
     assert root+'avicennian-summa/index.html' in z.namelist()
     assert root+'avicennian-summa/causal-dependence.html' in z.namelist()
     assert root+'avicennian-summa/chapters/index.html' in z.namelist()
+    assert root+'avicennian-summa/primary-translations.html' in z.namelist()
+    assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md' in z.namelist()
+    assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md' in z.namelist()
+    assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md' in z.namelist()
+    assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md' in z.namelist()
+    assert root+'avicennian-summa/handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md' in z.namelist()
     assert root+'avicennian-summa/chapters/reader.html' in z.namelist()
     assert root+'avicennian-summa/chapters/10-conservation-first-cause-and-secondary-agency.md' in z.namelist()
     assert root+'avicennian-summa/HANDOFF_CURRENT.md' in z.namelist()
