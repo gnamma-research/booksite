@@ -1,4 +1,4 @@
-const {chromium}=require('playwright');
+const {chromium,webkit}=require('playwright');
 const fs=require('node:fs');
 const path=require('node:path');
 const vm=require('node:vm');
@@ -18,7 +18,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  assert.equal(records.length,389);
  for(const f of meta.downloads){assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,f.path))).digest('hex'),f.sha256);}
  pass('All edition downloads retain their source hashes');
- const browser=await chromium.launch({headless:true});
+ const browser=await (process.env.BAHR_ENGINE==='webkit'?webkit:chromium).launch({headless:true});
  const context=await browser.newContext({viewport:{width:1440,height:1000},serviceWorkers:'block'});
  const page=await context.newPage(),errors=[];
  page.on('pageerror',e=>errors.push(String(e)));

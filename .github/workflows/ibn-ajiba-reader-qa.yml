@@ -7,6 +7,9 @@ on:
       - 'texts/ibn-ajiba/al-bahr-al-madid/**'
       - 'tests/ibn-ajiba/**'
       - '.github/workflows/ibn-ajiba-reader-qa.yml'
+concurrency:
+  group: ibn-ajiba-reader-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -25,11 +28,12 @@ jobs:
       - run: python3 tests/ibn-ajiba/package_reader.py
       - run: node --test tests/ibn-ajiba/reader-core.cjs
       - run: npm install --no-save --package-lock=false playwright
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium webkit
       - name: Browser verification
         run: |
           python3 -m http.server 8766 --bind 127.0.0.1 --directory "$BAHR_DIR" > /tmp/bahr-server.log 2>&1 &
-          node tests/ibn-ajiba/reader-browser.cjs
+          BAHR_QA_OUTPUT=qa-artifacts/chromium node tests/ibn-ajiba/reader-browser.cjs
+          BAHR_ENGINE=webkit BAHR_QA_OUTPUT=qa-artifacts/webkit node tests/ibn-ajiba/reader-browser.cjs
       - name: Save the verified offline reader
         if: github.event_name == 'push'
         run: |
