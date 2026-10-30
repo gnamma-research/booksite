@@ -3,7 +3,7 @@ window.GNAMMA_BOOK={
   "title": "Taqrīb al-Marām",
   "arabicTitle": "تقريب المرام في شرح تهذيب الكلام",
   "author": "ʿAbd al-Qādir al-Sanandajī",
-  "status": "A separate commentary translation begun with eleven selected, directly page-checked excerpts. Its entire two-volume continuous translation is still outstanding.",
+  "status": "Seventeen source-checked selective commentary translations, including six new direct collation passages on knowledge and rational proof; the complete commentary is much longer.",
   "description": "The commentary translation now begins with Sanandajī’s own preface, before selected philosophical and theological passages. All extracts identify matn, sharḥ and marginal voices where discernible.",
   "units": [
     {
@@ -224,11 +224,126 @@ window.GNAMMA_BOOK={
         }
       ],
       "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-01"
+    },
+    {
+      "id": "S.12",
+      "title": "Why inference involves an outward and a returning movement",
+      "arabic": "(وحقيقة النظر حركة النفس) ... (في المعقولات) ... (عودًا) ... (على بدء) ... (لتحصيل المطلوب المجهول)",
+      "english": "In speaking of inquiry as the soul’s movement among intelligibles, two movements are distinguished. The mind first seeks the appropriate mediating principle for the question it faces; it then returns from that principle to what was sought, obtaining the conclusion previously unknown.",
+      "statusText": "Direct page-image selected translation · Taqrīb I:17–18, facsimile PDF pp. 30–31",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "Taqrīb I:17–18, facsimile PDF pp. 30–31. Main running commentary and embedded matn lemmata were distinguished by printed typography."
+        },
+        {
+          "type": "Textual boundary",
+          "text": "The Arabic line is a series of verbatim parenthetical matn fragments with marked omissions. The English renders Sanandajī’s explanation of their sequence rather than pretending the full paragraph is a continuous quotation from the matn."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-02a",
+      "linkLabel": "Compare al-Taftāzānī's shorter matn"
+    },
+    {
+      "id": "S.13",
+      "title": "Customary concurrence: the Ashʿarī explanation",
+      "arabic": "(بطريق العادة) ... هذا مذهب الأشعري، حيث قال إن حصول العلم عقيب النظر الصحيح بإجراء العادة ...",
+      "english": "The words ‘by customary concurrence’ express the Ashʿarī account: knowledge follows sound consideration through the customary order established by God. The inquiry does not of itself produce knowledge as an independently efficacious cause.",
+      "statusText": "Direct page-image selected translation · Taqrīb I:24, PDF p. 37",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "Taqrīb I:24, PDF p. 37. Main running commentary and embedded matn lemmata were distinguished by printed typography."
+        },
+        {
+          "type": "Textual boundary",
+          "text": "Sanandajī explicitly identifies the customary explanation as the Ashʿarī position. His longer discussion concerns the possibility of deviations from the habitual conjunction; the supplied excerpt is not a complete rendering of the whole printed page."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-03",
+      "linkLabel": "Compare al-Taftāzānī's shorter matn"
+    },
+    {
+      "id": "S.14",
+      "title": "Generation (tawlīd) and action through an intermediary",
+      "arabic": "(التوليد) ... وهو أن يصدر من الفاعل فعل بواسطة فعل آخر صادر منه، كحركة المفتاح بواسطة حركة اليد ...",
+      "english": "Generation (*tawlīd*) means that one action proceeds from an agent through another action proceeding from that agent—for example, the movement of a key through the movement of the hand. Applied to inquiry, the view treats the resulting knowledge as an effect generated through the agent’s act of considering.",
+      "statusText": "Direct page-image selected translation · Taqrīb I:24–25, PDF pp. 37–38",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "Taqrīb I:24–25, PDF pp. 37–38. Main running commentary and embedded matn lemmata were distinguished by printed typography."
+        },
+        {
+          "type": "Textual boundary",
+          "text": "The example and general definition are read in the large running text; the later application to inquiry is a contextual explanation. This view is discussed as an alternative, not attributed to al-Taftāzānī as his preferred theory."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-03",
+      "linkLabel": "Compare al-Taftāzānī's shorter matn"
+    },
+    {
+      "id": "S.15",
+      "title": "The necessity account of knowledge following inquiry",
+      "arabic": "(أو) بطريق (الوجوب) ... وجوب حصول العلم عقيب النظر الصحيح ... عند الاستعداد التام ...",
+      "english": "The third account appeals to necessity: with the relevant conditions completely prepared, knowledge necessarily follows a sound inference. This differs from the claim that an agent, by an act of inquiry, produces knowledge through generation.",
+      "statusText": "Direct page-image selected translation · Taqrīb I:25, PDF p. 38",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "Taqrīb I:25, PDF p. 38. Main running commentary and embedded matn lemmata were distinguished by printed typography."
+        },
+        {
+          "type": "Textual boundary",
+          "text": "Sanandajī distinguishes completion of the requisite conditions from the independently creative action of the human subject. The Arabic is a source excerpt with ellipses; the English explanatory second sentence identifies the contrast."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-03",
+      "linkLabel": "Compare al-Taftāzānī's shorter matn"
+    },
+    {
+      "id": "S.16",
+      "title": "Duty itself and knowing that one is under a duty",
+      "arabic": "... التوقف على ثبوت الشرع عند المكلف (هو العلم بالوجوب) أي وجوب النظر (لا نفس الوجوب) ...",
+      "english": "What depends upon the proof of revelation, so far as the person subject to the command is concerned, is knowledge of the obligation to inquire, not the obligation itself. The obligation may obtain in reality through the revealed command even before the addressee knows that it obtains.",
+      "statusText": "Direct page-image selected translation · Taqrīb I:31, PDF p. 44",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "Taqrīb I:31, PDF p. 44. Main running commentary and embedded matn lemmata were distinguished by printed typography."
+        },
+        {
+          "type": "Textual boundary",
+          "text": "The parentheses enclose original matn expressions; the intervening identification of ‘inquiry’ belongs to Sanandajī’s running explanation. The distinction blocks a circularity objection without treating the hearer as already knowing the revelatory proof."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-06",
+      "linkLabel": "Compare al-Taftāzānī's shorter matn"
+    },
+    {
+      "id": "S.17",
+      "title": "A proof and the distinction between demonstration and indication",
+      "arabic": "(والدليل) هو (ما يمكن أن يتوصل بالنظر فيه إلى حكم) جازم أو غير جازم (وقد يخص) بالحكم (الجازم فيقابل بالإمارة) ...",
+      "english": "A proof is something through consideration of which one can arrive at a judgment, whether the judgment is certain or merely probable. The term ‘proof’ is sometimes restricted to what yields firm judgment; on that usage it is contrasted with an indicative sign (*imāra*).",
+      "statusText": "Direct page-image selected translation · Taqrīb I:32, PDF p. 45",
+      "notes": [
+        {
+          "type": "Source",
+          "text": "Taqrīb I:32, PDF p. 45. Main running commentary and embedded matn lemmata were distinguished by printed typography."
+        },
+        {
+          "type": "Textual boundary",
+          "text": "The printed typography alternates short Tahdhīb lemmata with commentary connectors. The interpretation of imāra as a sign leading to probable rather than certain judgment is supported by the surrounding discussion; the final ellipsis indicates further omitted material."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-07",
+      "linkLabel": "Compare al-Taftāzānī's shorter matn"
     }
   ],
   "sourceNotes": [
     "Supplied two-volume facsimile, Cairo: al-Maktaba al-Azhariyya li-l-Turāth, 1433/2012; 632 PDF pages.",
     "The upper register contains embedded Tahdhīb lemmata; the lower register may include Ḥāshiyat al-Muḥākamāt and other voices. Only selected passages checked against page images are transcribed.",
-    "Revision 17 extra direct page-image checks: Taqrīb I:8–14 (PDF pp. 21–27), distinguishing embedded matn quotations from Sanandajī's running text."
+    "Revision 17 extra direct page-image checks: Taqrīb I:8–14 (PDF pp. 21–27), distinguishing embedded matn quotations from Sanandajī's running text.",
+    "Revision 19 checked the supplied two-volume facsimile, especially printed I:17–33 / PDF pp. 30–46, and preserved explicit ellipses where the commentator's arguments extend beyond the selected passage."
   ]
 };
