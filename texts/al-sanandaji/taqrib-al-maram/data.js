@@ -3,7 +3,7 @@ window.GNAMMA_BOOK={
   "title": "Taqrīb al-Marām",
   "arabicTitle": "تقريب المرام في شرح تهذيب الكلام",
   "author": "ʿAbd al-Qādir al-Sanandajī",
-  "status": "Seventeen source-checked selective commentary translations, including six new direct collation passages on knowledge and rational proof; the complete commentary is much longer.",
+  "status": "Nineteen image-checked commentary selections, including directly checked explanations of knowledge and the beginning of general ontology. The remaining two-volume prose still requires continuous translation.",
   "description": "The commentary translation now begins with Sanandajī’s own preface, before selected philosophical and theological passages. All extracts identify matn, sharḥ and marginal voices where discernible.",
   "units": [
     {
@@ -338,6 +338,52 @@ window.GNAMMA_BOOK={
       ],
       "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-07",
       "linkLabel": "Compare al-Taftāzānī's shorter matn"
+    },
+    {
+      "id": "S.18",
+      "title": "One meaning of existence or merely one word?",
+      "arabic": "ثم اختلفوا في أن اشتراك الموجودات في الوجود معنوي أو لفظي ...",
+      "english": "They then disagreed whether the different existents share the meaning of ‘existence’ or merely share a word. The question of a concept applying to several things must be kept distinct from the question whether the things themselves possess one identical reality.",
+      "statusText": "Direct source-image checked selection · Taqrīb I:37–38, PDF pp. 50–51",
+      "notes": [
+        {
+          "type": "Reference",
+          "text": "Taqrīb I:37–38, PDF pp. 50–51 from the two-volume facsimile supplied by the reader."
+        },
+        {
+          "type": "Voice",
+          "text": "The English final sentence is an explanation of the argument’s structure, not an assertion that all later philosophers accept the same account of the unity of existence."
+        },
+        {
+          "type": "Translation boundary",
+          "text": "The ellipsis marks genuinely omitted surrounding commentary. This passage is not a complete translation of the source page."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-II-03",
+      "linkLabel": "Corresponding Tahdhīb lemma"
+    },
+    {
+      "id": "S.19",
+      "title": "The reported philosophical account of necessary existence",
+      "arabic": "والحكماء على أن حقيقة الواجب وجود خاص ...",
+      "english": "The philosophers hold that the Necessary Existent has a special reality of existence, distinct from what existence means in the case of contingent beings.",
+      "statusText": "Direct source-image checked selection · Taqrīb I:39–40, PDF pp. 52–53",
+      "notes": [
+        {
+          "type": "Reference",
+          "text": "Taqrīb I:39–40, PDF pp. 52–53 from the two-volume facsimile supplied by the reader."
+        },
+        {
+          "type": "Voice",
+          "text": "This is reported philosophical doctrine. Sanandajī is explaining the positions in the dispute, not thereby offering an independent endorsement of the philosopher’s theory."
+        },
+        {
+          "type": "Translation boundary",
+          "text": "The ellipsis marks genuinely omitted surrounding commentary. This passage is not a complete translation of the source page."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-II-02",
+      "linkLabel": "Corresponding Tahdhīb lemma"
     }
   ],
   "sourceNotes": [
