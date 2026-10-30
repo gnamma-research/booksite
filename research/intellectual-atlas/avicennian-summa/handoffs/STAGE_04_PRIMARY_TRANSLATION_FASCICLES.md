@@ -1,15 +1,16 @@
-# GNAMMA Avicennian Summa — Cumulative handoff STAGE 04: four complete bounded primary translations
+# GNAMMA Avicennian Summa — Cumulative handoff STAGE 04: five complete bounded primary translations
 
-**31 October 2026** · Source-grounded edition expansion. This stage preserves the ten existing thematic chapters and all Stage 01–03 research and adds independently accessible, continuous English translations of four *bounded historical argument units*. It does **not** make the whole multi-author programme complete.
+**31 October 2026** · Source-grounded edition expansion. This stage preserves the ten existing thematic chapters and all Stage 01–03 research and adds independently accessible, continuous English translations of five *bounded historical argument units*. It does **not** make the whole multi-author programme complete.
 
 ## 0. Immediate restart instructions
 
 1. Read [HANDOFF_CURRENT.md](../HANDOFF_CURRENT.md), then this file, then [Stage 03](STAGE_03_RELEASE_HANDOFF.md) for the complete ten-chapter lineage and earlier source corrections. Earlier material must not be overwritten.
-2. New public HTML reader: [primary-translations.html](../primary-translations.html); it contains all the translation prose and apparatus from the four fascicles, rendered as a responsive, printable static HTML page.
+2. New public HTML reader: [primary-translations.html](../primary-translations.html); it contains all the translation prose and apparatus from the five fascicles, rendered as a responsive, printable static HTML page.
 3. The source files remain editable in Markdown:
    - [Fascicle E: Avicenna, *Ilāhiyyāt* VI.1](../PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md), pp.257–263, 23 editorial translation paragraphs. Ends immediately before VI.2.
    - [Fascicle B: Avicenna, *Ilāhiyyāt* VI.2](../PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md), printed pp.263–267, 19 bounded translation paragraphs. Ends immediately before VI.3.
    - [Fascicle D: Avicenna, *Ilāhiyyāt* IX.5](../PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md), pp.409–413, 17 paragraphs. Ends immediately before IX.6.
+   - [Fascicle F: Aquinas *ST* I q.104 aa.1–2](../PRIMARY_TRANSLATION_FASCICLE_F_AQUINAS_ST104.md), all objections, *sed contra*, bodies and replies, Latin paragraphs 32757–32774.
    - [Fascicle C: Lāhījī, *Shawāriq al-ilhām* I:90–93](../PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md), issues 23 and 24, 27+10 translation paragraphs, with the source unit ending before the following lemma on antecedent and consequent necessity.
 4. The new page has direct navigation from [summa home](../index.html), [chapter directory](../chapters/index.html), and [ten-chapter reader](../chapters/reader.html); these preserve the original ten chapter texts and chapter hashes.
 
@@ -39,6 +40,12 @@
 - Jurjānī and Dawwānī are translated **as embedded in Lāhījī's report**. They have not been independently recollated. The p.92 electronic transcription appears damaged in a negation critical to the argument, and the translation flags this rather than making a silent critical correction.
 - Base: *Shawāriq*, printed vol I [pp.90](https://ablibrary.net/book_content/b/9309/90?lang=ar)–[93](https://ablibrary.net/book_content/b/9309/93?lang=ar).
 
+### D. Aquinas, *Summa theologiae* I q.104 aa.1–2
+
+- The complete article sequences on all creatures' need for divine conservation and whether that conservation is immediate have been freshly translated from the Latin; all four+three objections and their replies are included.
+- Aquinas establishes that God remains the principal conserving cause while **created intermediaries can also conserve**, sometimes without initiating new changes. Aquinas and Avicenna therefore agree more extensively on a layered account of conservation than a caricature suggests.
+- Latin source: [Corpus Thomisticum](https://www.corpusthomisticum.org/sth1103.html), §32757–32774.
+
 ## 2. Integrated philosophical consequences (not automatic author attributions)
 
 1. **Complete cause** is not a synonym for prior event. Ibn Sīnā's differentiated essential, incidental and preparatory causes bear on Lāhījī's proof that insufficient preference does not account for actual occurrence.
@@ -55,6 +62,7 @@
 | *Ilāhiyyāt* VI.1 | Full English of the printed chapter | New Arabic manuscript edition; entire Book VI |
 | *Ilāhiyyāt* VI.2 | Full English translation of the printed prose chapter | Full Arabic manuscript critical edition; all of Book VI |
 | *Ilāhiyyāt* IX.5 | Full English translation of chapter | All of Book IX or natural philosophy; independently verified Latin witness |
+| *ST* I q.104 aa.1–2 | Fresh complete English translation of the two articles | *ST* q.104 aa.3–4; Latin critical variants |
 | *Shawāriq* I:90–93 | Full English of bounded issues 23 and 24 | Full *Shawāriq*; full independent Taftāzānī/Jurjānī/Dawwānī witnesses |
 | GNAMMA site | Static HTML new fascicle page committed; links from three existing HTML entry points | Browser-tested rendering, GitHub Pages publication verified for this stage |
 | Wider programme | Ten retained chapters + four new continuous translations + source maps | Exhaustive twenty-domain primary-source translations, manuscripts and late commentators |
@@ -83,4 +91,4 @@ For this stage, directly fetch each GitHub file after commit; check that the sta
 - [Twenty-domain plan](../COMPREHENSIVE_SYSTEM.md)
 - [Source register](../SOURCE_REGISTER.md)
 
-**Research status: demonstrably advanced with four additional primary source units; not the complete scholarly project.**
+**Research status: demonstrably advanced with five additional primary source units; not the complete scholarly project.**
