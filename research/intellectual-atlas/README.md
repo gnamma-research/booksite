@@ -1,11 +1,12 @@
 # Texts in Time · Islamic Intellectual Atlas
-Gnamma Research · revision 7 · 29 October 2026.
+Gnamma Research · revision 7.2 · 30 October 2026.
 
 [Explore the live atlas](https://gnamma-research.github.io/booksite/research/intellectual-atlas/)
+· [Post-Sadrian Avicennian Summa](https://gnamma-research.github.io/booksite/research/intellectual-atlas/avicennian-summa/)
 · [Tahdhīb source dossier](https://gnamma-research.github.io/booksite/research/intellectual-atlas/tahdhib/)
 
-The atlas contains **375 scholarly/context records**, **348 individually qualified textual
-relationships** and **349 scholarly sources**, plus 72 historical references. Its integrated chronology interleaves
+The atlas contains **386 scholarly/context records**, **362 individually qualified textual
+relationships** and **359 scholarly sources**, plus 72 historical references. Its integrated chronology interleaves
 empire periods, events and the dated textual network without individual ruler lanes.
 
 ## Three overlapping classifications — do not conflate them
@@ -16,11 +17,11 @@ Sunni kalām, Greek Neoplatonic, Imāmī, Ṣadrian, etc., including audited but
 not proof of a writer's full doctrinal allegiance.
 
 **Textual families:** explicitly named base works and selected commentaries or
-glosses, represented by the equal-level **Textual family** selector. The eighteen
+glosses, represented by the equal-level **Textual family** selector. The twenty
 routes include al-Shifāʾ, al-Ishārāt, Hidāyat al-ḥikma, Ḥikmat al-ishrāq,
 al-ʿAqāʾid al-Nasafiyya, al-Maqāṣid, al-Mawāqif, Tajrīd al-iʿtiqād,
 Tahdhīb al-manṭiq wa-l-kalām, Jawharat al-tawḥīd, Fuṣūṣ al-ḥikam and
-al-Asfār; and six source-critical families for Plato’s <em>Timaeus</em>, Aristotle’s <em>Metaphysics</em>, <em>Categories</em> and <em>Physics</em>, Arabic Plotinus, and Proclus’ <em>Elements of Theology</em> / the <em>Book of Causes</em>. The full member list, root, and description of each are in
+al-Asfār, plus the distinct al-Najāt and ʿUyūn al-ḥikma branches; and six source-critical families for Plato’s <em>Timaeus</em>, Aristotle’s <em>Metaphysics</em>, <em>Categories</em> and <em>Physics</em>, Arabic Plotinus, and Proclus’ <em>Elements of Theology</em> / the <em>Book of Causes</em>. The full member list, root, and description of each are in
 `downloads/intellectual-atlas-data.json` under `textual_families`.
 The same text may participate in several families; the menu only traces works
 recorded in this *selective* atlas. Textual-family membership does not
@@ -70,7 +71,24 @@ analytical nodes are not separate authored books. Its 26 new entries and 26
 relationships form an important textual commentary network, not a new
 intellectual school. Read `tahdhib/index.html` for source and dating cautions.
 
-## Current revision 7 downloadable editions
+## Post-Sadrian Avicennian programme (revision 7.2)
+
+The expanded main atlas adds **11 works, 14 documentary relationships and 10 sources**
+beyond the earlier 375/348/349 register. These include Narāqī's independent
+*Jāmiʿ al-afkār*, the Khwānsārī–Sabzawārī response sequence, Khayrābādī's
+*al-Hadiyya*, Malikshāhī's two-volume Persian *Ishārāt* commentary, and
+new *al-Najāt* and *ʿUyūn al-ḥikma* commentary families. Catalogue
+counts do not imply complete manuscript collation or finished translations.
+
+[Read the Avicennian Summa pilot](avicennian-summa/) ·
+[Source acquisition register](avicennian-summa/SOURCE_REGISTER.md).
+
+The pilot records 32 philosophical questions and five short Arabic–English
+translation excerpts, each with a published-page link and distinct editorial
+notes. The complete argument-unit translations and manuscript collation are
+outstanding. This atlas does not redistribute commercial edition scans.
+
+## Current revision 7.2 downloadable editions
 
 - `downloads/Intellectual_Atlas_Reference_Revision7.pdf`: full source-critical
   bibliography and relationship register, built from canonical JSON using
@@ -132,7 +150,7 @@ integrity, JSON counts and viewer assets, then commits only the generated
 binaries and publication manifest on the default branch. The revised
 browser QA checks Greek–Syriac–Arabic network bands as an independent layer.
 
-**Editorial boundary:** 375 indexed records do not mean 375 verified manuscript
+**Editorial boundary:** 386 indexed records do not mean 386 verified manuscript
 collations; several newly added temporal windows are deliberately approximate.
 “Translated”, “paraphrased”, “commented on”, “criticized”, and “reported to be
 influenced by” remain different evidence types.

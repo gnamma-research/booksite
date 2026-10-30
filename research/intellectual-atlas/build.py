@@ -1,4 +1,4 @@
-"""Validate and synchronize the Gnamma intellectual atlas (revision 7).
+"""Validate and synchronize the Gnamma intellectual atlas (revision 7.2).
 Canonical data: downloads/intellectual-atlas-data.json.
 Do not use the older illustrated or offline editions to overwrite newer HTML.
 Run: python research/intellectual-atlas/build.py
@@ -14,17 +14,19 @@ node_ids = {n['id'] for n in data['nodes']}
 edge_ids = {e['id'] for e in data['edges']}
 source_ids = {s['id'] for s in data['sources']}
 all_source_ids=source_ids|{s['id'] for s in data.get('history',{}).get('sources',[])}
-assert len(source_ids) == len(data['sources']) >= 349
+assert len(source_ids) == len(data['sources']) >= 359
 assert len(node_ids)==len(data['nodes'])
 assert len(source_ids)+len(data.get('history',{}).get('sources',[]))==len(all_source_ids)
-assert len(node_ids) == len(data['nodes']) >= 375
-assert len(edge_ids) == len(data['edges']) >= 348
+assert len(node_ids) == len(data['nodes']) >= 386
+assert len(edge_ids) == len(data['edges']) >= 362
 assert all(e['source'] in node_ids and e['target'] in node_ids for e in data['edges'])
 assert all(set(n.get('sources', [])) <= all_source_ids for n in data['nodes'])
 assert all(set(e.get('sources', [])) <= all_source_ids for e in data['edges'])
 
 families = data.get('textual_families', [])
-assert len(families) >= 18
+assert len(families) >= 20
+assert {'najat','uyun','shifa','isharat'} <= {f['id'] for f in families}
+assert all(f['within_family_relationships'] == sum(e['source'] in f['member_ids'] and e['target'] in f['member_ids'] for e in data['edges']) for f in families)
 assert len({f['id'] for f in families}) == len(families)
 for f in families:
     members = f['member_ids']
@@ -44,11 +46,11 @@ assert "if(!event.shiftKey&&!horizontal" in script
 mughal=next(p for p in data['history']['periods'] if p['id']=='HL_P13')
 assert mughal['segments']==[[1526,1540],[1555,1858]]
 assert {n['id'] for n in data['nodes']} >= {'pythagoras_anchor','parmenides_poem','early_stoa_corpus','sextus_outlines'}
-assert data['revision']=='neoplatonic-bridge-7-2026-10-29'
+assert data['revision']=='avicennian-extensions-7.2-2026-10-30'
 assert len(data['history'].get('networks',[])) == 5
 assert len(data['history'].get('periods',[])) == 49
 assert len(data['history'].get('events',[])) == 36
-assert len(source_ids)==349 and len(node_ids)==375 and len(edge_ids)==348
+assert len(source_ids)==359 and len(node_ids)==386 and len(edge_ids)==362
 assert {'plotinus_transmission','proclus_elements','aristotle_metaphysics','aristotle_physics','plato_timaeus','aristotle_categories'} <= {f['id'] for f in families}
 palette={'ancient','neoplatonic','ashari','maturidi','translation','christian','jewish','falsafa','avicennan','ishraqi','akbarian','mutazili','sunni','imami','sadrian','critical','context'}
 assert all(n.get('tradition') in palette for n in data['nodes'])
@@ -77,7 +79,7 @@ for p in sorted((ROOT/'downloads').iterdir()):
         downloads[p.name] = hashlib.sha256(p.read_bytes()).hexdigest()
 manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
-    'revision': 'neoplatonic-bridge-7-2026-10-29',
+    'revision': 'avicennian-extensions-7.2-2026-10-30',
     'status': 'working research',
     'ui_revision': 'mobile-first-whole-range-7.1.2-2026-10-29',
     'mobile_interface_note': 'Compact phone introduction, search-first controls, disclosed research/filters, inline family shortcuts; chart appears high on first screen.',
@@ -95,6 +97,8 @@ manifest = {
     'textual_family_routes': len(families),
     'textual_family_note': 'Book-centred selective commentary/translation/reception networks; a source work can be in several families without implying doctrinal agreement',
     'tahdhib_added_entries': 26,
+    'avicennian_extension_entries': 11,
+    'avicennian_new_textual_routes': 2,
     'tahdhib_added_relationships': 26,
     'displayed_political_periods': len([p for p in data['history']['periods'] if p['id'] != 'HEP05']),
     'displayed_events': len(data['history']['events']),
@@ -103,7 +107,7 @@ manifest = {
     'individual_reign_rows': 0,
     'pdf_pages': {'illustrated_overview_legacy': 15, 'illustrated_reference_legacy': 204,
                   'complete_updated_register': 84, 'focused_tahdhib_supplement': 9},
-    'pdf_note': ('The revision-7 PDF and offline ZIP are built from this canonical dataset by build_release.py. '
+    'pdf_note': ('The revision-7.2 PDF and offline ZIP are built from this canonical dataset by build_release.py. '
                  'Historical PDFs from revisions 2 and 4 retain earlier scholarship and are marked legacy.'),
     'download_sha256': downloads,
 }

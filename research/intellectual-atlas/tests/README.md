@@ -1,8 +1,8 @@
 # Gnamma Intellectual Atlas — comprehensive UI QA
 
-**Current atlas research corpus:** 375 scholarly/context entries, 348 evidence-qualified
-relationships, 349 specialist bibliographic source records and 72 historical
-references. It contains 18 textual commentary/translation families,
+**Current atlas research corpus:** 386 scholarly/context entries, 362 evidence-qualified
+relationships, 359 specialist bibliographic source records and 72 historical
+references. It contains 20 textual commentary/translation families,
 17 intellectual/reception classifications (including qualified overlays),
 10 regional context routes and five explicit scholarly-network bands.
 Political and textual coincidence is **not** asserted to be intellectual
@@ -26,7 +26,7 @@ in **six** configurations:
 Unlike code-inspection smoke tests, this browser test **activates** controls
 and verifies state and rendered content after each action. It exercises:
 
-- Every **18** textual family option in the drop-down, and all **18** corresponding
+- Every **20** textual family option in the drop-down, and all **20** corresponding
   exploration buttons; roots, memberships, range, evidence status and reset.
 - Every **17** tradition button, all 17 tradition checkboxes, including
   non-exclusive Neoplatonic, Ashʿarī and Māturīdī reception overlays.

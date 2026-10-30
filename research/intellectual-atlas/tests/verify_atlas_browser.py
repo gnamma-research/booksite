@@ -1,4 +1,4 @@
-"""Browser regression checks for the Gnamma Intellectual Atlas (revision 7).
+"""Browser regression checks for the Gnamma Intellectual Atlas (revision 7.2).
 
 Run on a local HTTP server from repository root at port 8123, with playwright and
 Chromium installed. CI captures the outcomes and screenshots under /tmp.
@@ -165,8 +165,8 @@ async def visit(browser, width, height, mobile=False):
     assert_that((await read(page))['region']=='khurasan',"Regional summary buttons apply context filters")
     await page.locator('[data-action="whole-atlas"]').click()
     await page.locator('.ia-route-explorer:has([data-text-route]) > summary').click()
-    assert_that(await page.locator('.ia-route-explorer [data-text-route]').count()==18,
-                "18 source-qualified commentary / transmission routes available")
+    assert_that(await page.locator('.ia-route-explorer [data-text-route]').count()==20,
+                "20 source-qualified commentary / transmission routes available")
     await page.locator('.ia-route-explorer [data-text-route="tajrid"]').click()
     family=await read(page)
     assert_that(family["family"]=='tajrid',"Textual family button selects Tajrid")
@@ -218,9 +218,9 @@ async def visit(browser, width, height, mobile=False):
         maturidiReception:ts.classification_evidence.some(x=>x.id==='maturidi'
              && x.status.toLowerCase().includes('reception'))};
     }""")
-    assert_that(source['nodes']==375 and source['edges']==348 and source['refs']==349
-                and source['routes']==18 and source['networks']==5,
-                "Revision-7 data counts exact and fully embedded")
+    assert_that(source['nodes']==386 and source['edges']==362 and source['refs']==359
+                and source['routes']==20 and source['networks']==5,
+                "Revision-7.2 data counts exact and fully embedded")
     assert_that(source['greekSource'] and source['arabicDate'] is None,
                 "Syrianus is catalogued and uncertain Arabic Proclus fragment is unplaced")
     assert_that(source['ashari'] and source['maturidiReception'],
