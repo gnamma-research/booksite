@@ -41,3 +41,6 @@ The uploaded 632-page Taqrīb scan has now been rechecked at I:8–22 (PDF pp. 2
 | Proof and epistemic priority | I:32–33 | 45–46 | Tie the proof definition and its rational/transmitted distinction to the scanned commentary |
 
 **Certification boundary:** this is a direct **commentary-image collation** of a complete chapter-span, *not* an independent line-by-line critical collation of the Tahdhīb matn. The opening Arabic reading still needs to be compared with the independent 1587 witness and the 1912 matn itself before a definitive edition can be certified. The legacy 140-unit register remains attached and was not silently declared complete.
+
+## Revision 20 — direct source collation
+Chapter I is consecutively readable in English; its last proof passage has been completed rather than left with ellipses. A first-obligation passage and a rational inquiry section have been restored with explicit textual notes. The physical page-image collation covered Taqrīb volume I printed pages 7–33, corresponding to PDF pages 20–46, with additional checks in I:35–40 for initial general ontology. The linked direct-witness reconciliation CSV lists twelve loci and the precise unfinished proofing action. Do not mark all Arabic variants as manuscript verified: this is a **working reading text**, not yet a definitive critical edition. Chapters II–VI have untranslated material.
