@@ -127,3 +127,20 @@ The complete ten-chapter working edition can now be read in the [self-contained 
 The [ten-chapter integrated reader](chapters/reader.html#ch01) now includes [Chapter 10 — conservation and secondary agency](chapters/reader.html#ch10): a connected argument-level comparison of Ibn Sīnā, Narāqī and Aquinas, including *ST* I q.104.2, in which Aquinas explicitly recognises **created intermediary conserving causes**. The direct Avicennian proof begins in *Ilāhiyyāt* VI.1 (printed pp.261–262), before VI.2's heading at p.264. Both corrections are in the chapter.
 
 **Cumulative handoff trail:** [Stage 1 corpus audit](handoffs/STAGE_01_CORPUS_AUDIT.md) · [Stage 2 ten-chapter reader](handoffs/STAGE_02_TEN_CHAPTER_EDITION.md) · [Stage 3 release](handoffs/STAGE_03_RELEASE_HANDOFF.md) · [HANDOFF_CURRENT](HANDOFF_CURRENT.md). The edition is source-graded with some complete bounded units and some selective passages; the twenty-domain multi-manuscript translation remains incomplete.
+
+
+## Stage 4 source-unit translation additions · 31 October 2026
+
+**Scope assertion:** Three historical units now have continuous English translations from identified edited searchable Arabic texts, with selective reported variants and explicit authorial-layer attribution. This does **not** mean that the whole Arabic works, all commentary branches or critical manuscripts have been translated.
+
+| Key | Textual unit actually translated | Working state | Edition / access | Research file |
+|---|---|---|---|---|
+| AV-01B | Ibn Sīnā, *al-Shifāʾ: al-Ilāhiyyāt* VI.2, printed pp.263–267 | **TRANSLATED-BOUNDED-CHAPTER**, 19 numbered translation paragraphs; printed variants selected | [Arabic VI.2](https://lib.rafed.net/view.php?b_id=1128&page=264&type=c_fbook), ed. Anawati–Zāyid | [Fascicle B](PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md) |
+| AV-01D | Ibn Sīnā, *al-Ilāhiyyāt* IX.5, pp.409–413 | **TRANSLATED-BOUNDED-CHAPTER**, 17 paragraphs; 8 Arabic anchors | [Arabic IX.5](https://lib.rafed.net/view.php?b_id=1128&page=410&type=c_fbook), ed. Anawati–Zāyid | [Fascicle D](PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md) |
+| AV-09C | Lāhījī, *Shawāriq al-ilhām* I:90–93, Issues 23–24 | **TRANSLATED-BOUNDED-ISSUES**, 27 + 10 paragraphs; embedded voices not independently witnessed; p.92 transcription issue flagged | [I:90](https://ablibrary.net/book_content/b/9309/90?lang=ar), [91](https://ablibrary.net/book_content/b/9309/91?lang=ar), [92](https://ablibrary.net/book_content/b/9309/92?lang=ar), [93](https://ablibrary.net/book_content/b/9309/93?lang=ar) | [Fascicle C](PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md) |
+
+**Display:** [GNAMMA primary-translations.html](primary-translations.html), a static reading page containing all three complete working translations and apparatus, linked from Summa and ten-chapter reader. The public Pages deployment must be separately checked.
+
+**Major intellectual gain:** Distinguish the material generator, a preparatory *muʿidd*, the extrinsic bestower of substantial form, the constitutive intrinsic form, the complete cause, and the continuous existential conserving principle. The same person or principle may fill more than one role; historical texts specify the allocation. Full comparison with Aquinas requires precise Latin witness readings rather than assuming equivalence.
+
+**Editorial warning:** Elsewhere in this register AV-01 and AV-09 retain old status labels, because those labels apply to their full works. These new keys apply **only** to the specified chapter/issue units, not to the whole source family.
