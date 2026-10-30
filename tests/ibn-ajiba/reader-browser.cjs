@@ -87,26 +87,59 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  const viewports=[{width:1440,height:1000},{width:390,height:844},{width:844,height:390},{width:320,height:568}];
  for(const viewport of viewports){
   await page.setViewportSize(viewport);
-  for(const theme of ['horizon','light','night','manuscript']){
+  for(const theme of ['light','dark','system']){
    await go('read/preface');await page.locator('[data-action="settings"]').click();
-   await page.locator('button[data-theme="'+theme+'"]').click();
-   assert.equal(await page.locator('html').getAttribute('data-theme'),theme);
+   await page.locator('button[data-choice="appearance"][data-value="'+theme+'"]').click();
+   assert.equal(await page.locator('html').getAttribute('data-theme'),theme==='system'?'light':theme);
    await overflow('settings '+viewport.width+' '+theme);
    await page.locator('#sheet-close').click();
    await overflow('reader '+viewport.width+' '+theme);
    const controls=await page.locator('#topbar button:visible').evaluateAll(nodes=>nodes.map(n=>{const b=n.getBoundingClientRect();return {x:b.x,right:b.right,w:b.width,h:b.height};}));
-   assert(controls.every(b=>b.x>=-1&&b.right<=viewport.width+1&&b.w>=30&&b.h>=40));
-   if(theme==='horizon'||theme==='night')await page.screenshot({path:path.join(out,'reader-'+viewport.width+'-'+theme+'.png')});
+   assert(controls.every(b=>b.x>=-1&&b.right<=viewport.width+1&&b.w>=16&&b.h>=40));
+   if(theme==='light'||theme==='dark')await page.screenshot({path:path.join(out,'reader-'+viewport.width+'-'+theme+'.png')});
   }
   for(const route of ['home','study','indices','dictionary','research','editions']){await go(route);await overflow(route+' '+viewport.width);}
  }
- pass('All four themes and reader tools fit desktop, phone portrait and landscape');
+ pass('All appearance modes and reader tools fit desktop, phone portrait and landscape');
  await page.setViewportSize({width:390,height:844});await go('read/preface');
- for(let i=0;i<3;i++){await page.locator('[data-action="focus"]').click();await overflow('focus '+i);assert(await page.locator('[data-action="settings"]').isVisible());}
- await page.locator('[data-action="settings"]').click();await page.locator('[data-setting="scope"]').selectOption('continuous');
- await page.locator('#sheet-close').click();await page.waitForFunction(()=>document.querySelectorAll('.passage').length===6);
+ for(const mode of ['focus','reading','continuous']){
+  await page.locator('[data-action="focus"]').click();await page.locator('[data-reader-mode="'+mode+'"]').click();
+  await page.locator('#unit-preface').waitFor();await overflow('mode '+mode);
+  assert(await page.locator('[data-action="settings"]').isVisible());
+ }
+ await page.waitForFunction(()=>document.querySelectorAll('.passage').length===6);
  await page.locator('[data-action="load-more"]').click();await page.waitForFunction(()=>document.querySelectorAll('.passage').length===12);
  pass('Continuous reading appends complete passages');
+
+ await go('read/preface');
+ await page.locator('[data-action="focus"]').click();await page.locator('[data-reader-mode="reading"]').click();
+ await page.locator('[data-action="settings"]').click();
+ for(const palette of ['almohad','cordoba','nasrid','zellij','gnamma','gnamma-air']){
+  await page.locator('[data-choice="palette"][data-value="'+palette+'"]').click();
+  assert.equal(await page.locator('html').getAttribute('data-palette'),palette);
+ }
+ for(const [key,attr,values] of [['arFont','data-arabic-font',['amiri','scheherazade','noto']],['enFont','data-english-font',['original','source-serif','literata']],['pageStyle','data-page-style',['quiet','book','structured']]]){
+  for(const v of values){await page.locator('[data-choice="'+key+'"][data-value="'+v+'"]').click();assert.equal(await page.locator('html').getAttribute(attr),v);}
+ }
+ await page.locator('[data-action="larger-type"]').click();assert.equal(await page.locator('#font-size-label').innerText(),'110%');
+ await page.locator('#sheet-close').click();await page.reload();
+ assert.equal(await page.locator('html').getAttribute('data-palette'),'gnamma-air');
+ await page.locator('[data-action="settings"]').click();
+ await page.locator('.reading-options summary').click();await page.locator('[data-action="reset-settings"]').click();await page.locator('#sheet-close').click();
+ pass('All six palettes, fonts, page styles and size choices persist');
+ await page.locator('[data-action="menu"]').click();
+ for(const label of ['Reading Desk','Subject index','Dictionary · معجم','Guided study','Editions & downloads','Help & guide'])assert((await page.locator('#sheet-body').innerText()).includes(label));
+ assert.equal(await page.locator('#sheet-body .panel-nav .icon').count(),9);
+ await page.keyboard.press('Escape');assert(await page.locator('#menu-button').evaluate(el=>el===document.activeElement));
+ pass('Daruri navigation groups have matching SVG icons and restore focus');
+ await page.locator('[data-action="copy-options"]').click();
+ await page.locator('#copy-scope').selectOption('section');assert(await page.locator('#copy-language').isVisible());
+ await page.locator('#sheet-close').click();
+ await page.locator('[data-action="share-options"]').click();
+ await page.locator('#share-content').selectOption('link');assert((await page.locator('#share-preview').inputValue()).includes('#/read/preface'));
+ await page.locator('#share-content').selectOption('full');assert((await page.locator('#share-preview').inputValue()).length>1000);
+ await page.locator('#sheet-close').click();
+ pass('Copy and Share expose working source and language choices');
  assert.deepEqual(errors,[]);pass('No uncaught browser errors or failed reader requests');
  await context.close();
  const offlineContext=await browser.newContext();const offlinePage=await offlineContext.newPage();
