@@ -58,9 +58,13 @@
         "tafsīr",
         "ishārāt"
       ],
-      "status": "editorial-preview",
+      "status": "complete-volume-working-critical-edition",
       "url": "texts/ibn-ajiba/al-bahr-al-madid/",
-      "note": "Translation project exists separately; not yet migrated into this repository. A limited scholarly reader preview is now available; source corpus still awaits import."
+      "note": "Complete recovered Volume I: preface through Q 4:176, 389 Arabic–English passages, 209 current annotations, 241 Cairo notes, 48 report dossiers, 352 source occurrences, indices, dictionary and four unchanged PDF editions. Critical working edition; independent manuscript collation and specialist review remain outstanding.",
+      "language": [
+        "ar",
+        "en"
+      ]
     },
     {
       "id": "jurjani-mawaqif",

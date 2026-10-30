@@ -1,0 +1,36 @@
+name: Ibn Ajiba complete reader QA
+on:
+  push:
+    branches: [codex/ibn-ajiba-reader-20261030]
+  pull_request:
+    paths:
+      - 'texts/ibn-ajiba/al-bahr-al-madid/**'
+      - 'tests/ibn-ajiba/**'
+      - '.github/workflows/ibn-ajiba-reader-qa.yml'
+permissions:
+  contents: read
+jobs:
+  reader:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      BAHR_DIR: texts/ibn-ajiba/al-bahr-al-madid
+      BAHR_URL: http://127.0.0.1:8766/
+      BAHR_QA_OUTPUT: qa-artifacts
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/ibn-ajiba/reader-core.cjs
+      - run: npm install --no-save --package-lock=false playwright
+      - run: npx playwright install --with-deps chromium
+      - name: Browser verification
+        run: |
+          python3 -m http.server 8766 --bind 127.0.0.1 --directory "$BAHR_DIR" > /tmp/bahr-server.log 2>&1 &
+          node tests/ibn-ajiba/reader-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ibn-ajiba-browser-qa
+          path: qa-artifacts/
