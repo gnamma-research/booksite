@@ -165,8 +165,8 @@ async def visit(browser, width, height, mobile=False):
     assert_that((await read(page))['region']=='khurasan',"Regional summary buttons apply context filters")
     await page.locator('[data-action="whole-atlas"]').click()
     await page.locator('.ia-route-explorer:has([data-text-route]) > summary').click()
-    assert_that(await page.locator('.ia-route-explorer [data-text-route]').count()==18,
-                "18 source-qualified commentary / transmission routes available")
+    assert_that(await page.locator('.ia-route-explorer [data-text-route]').count()==20,
+                "20 source-qualified commentary / transmission routes available")
     await page.locator('.ia-route-explorer [data-text-route="tajrid"]').click()
     family=await read(page)
     assert_that(family["family"]=='tajrid',"Textual family button selects Tajrid")
