@@ -25,7 +25,8 @@ for(const [key,value] of Object.entries(uiDefaults))if(existing[key]===undefined
 if(!existing.uiVersion){
  existing.mode=existing.scope==='continuous'?'continuous':existing.focus==='normal'?'reading':'focus';
  existing.appearance=existing.theme==='night'?'dark':existing.theme==='system'?'system':'light';
- existing.parallelSide=existing.order==='ar'?'left':'right';existing.uiVersion=1;
+ let savedOrder=null;try{savedOrder=JSON.parse(localStorage.getItem('gnamma-bahr-vol1-settings')||'{}').order;}catch{}
+ existing.parallelSide=savedOrder?(savedOrder==='ar'?'left':'right'):'right';existing.uiVersion=1;
 }
 let navOpen=false,navTrigger=null,modalY=0,modalFrozen=false,lastDock='',modeBusy=false;
 const compact=()=>matchMedia('(max-width:940px), (max-height:540px)').matches;

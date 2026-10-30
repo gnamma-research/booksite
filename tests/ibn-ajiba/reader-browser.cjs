@@ -227,12 +227,15 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
 
  assert.deepEqual(errors,[]);pass('No uncaught browser errors or failed reader requests');
 
- await page.setViewportSize({width:390,height:844});await go('read/preface');await page.screenshot({path:path.join(out,'reader-phone.png')});
- const reference=await context.newPage();await reference.setViewportSize({width:390,height:844});
+ await context.close();
+ const visual=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block'});
+ const preview=await visual.newPage();await preview.goto(url+'#/read/preface');await preview.locator('#unit-preface').waitFor();await preview.evaluate(()=>document.fonts.ready);
+ assert.equal(await preview.evaluate(()=>BahrReader.prefs.parallelSide),'right');
+ await preview.screenshot({path:path.join(out,'reader-phone.png')});
+ const reference=await visual.newPage();
  await reference.goto(new URL('../../../daruri/#section=1',url).href);
  await reference.locator('#reader').waitFor({timeout:60000});
- await reference.screenshot({path:path.join(out,'daruri-phone.png')});await reference.close();
- await context.close();
+ await reference.screenshot({path:path.join(out,'daruri-phone.png')});await reference.close();await visual.close();
  const offlineContext=await browser.newContext();const offlinePage=await offlineContext.newPage();
  await offlinePage.goto(url+'#/editions');await offlinePage.locator('[data-download-type="offline"]').waitFor();
  await offlinePage.evaluate(()=>navigator.serviceWorker.ready);await offlinePage.locator('[data-download-type="offline"]').click();await offlinePage.locator('[data-action="offline"]').click();
