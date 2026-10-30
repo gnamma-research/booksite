@@ -1,7 +1,7 @@
 name: Ibn Ajiba complete reader QA
 on:
   push:
-    branches: [codex/ibn-ajiba-reader-20261030]
+    branches: [codex/ibn-ajiba-reader-20261030, codex/ibnajiba6-daruri-parity]
   pull_request:
     paths:
       - 'texts/ibn-ajiba/al-bahr-al-madid/**'
@@ -12,10 +12,10 @@ permissions:
 jobs:
   reader:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     env:
       BAHR_DIR: texts/ibn-ajiba/al-bahr-al-madid
-      BAHR_URL: http://127.0.0.1:8766/
+      BAHR_URL: http://127.0.0.1:8766/texts/ibn-ajiba/al-bahr-al-madid/
       BAHR_QA_OUTPUT: qa-artifacts
     steps:
       - uses: actions/checkout@v4
@@ -25,18 +25,20 @@ jobs:
       - run: python3 tests/ibn-ajiba/package_reader.py
       - run: node --test tests/ibn-ajiba/reader-core.cjs
       - run: npm install --no-save --package-lock=false playwright
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium webkit
       - name: Browser verification
         run: |
-          python3 -m http.server 8766 --bind 127.0.0.1 --directory "$BAHR_DIR" > /tmp/bahr-server.log 2>&1 &
+          python3 -m http.server 8766 --bind 127.0.0.1 > /tmp/bahr-server.log 2>&1 &
           node tests/ibn-ajiba/reader-browser.cjs
       - name: Save the verified offline reader
         if: github.event_name == 'push'
         run: |
-          git add "$BAHR_DIR/offline-reader.zip" "$BAHR_DIR/offline-files.json"
+          mkdir -p docs/ibnajiba6-review
+          cp qa-artifacts/reader-phone.png qa-artifacts/daruri-phone.png docs/ibnajiba6-review/
+          git add "$BAHR_DIR/offline-reader.zip" "$BAHR_DIR/offline-files.json" docs/ibnajiba6-review/
           if ! git diff --cached --quiet; then
             git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Refresh verified Ibn Ajiba offline reader"
-            git push origin HEAD:codex/ibn-ajiba-reader-20261030
+            git push origin "HEAD:$GITHUB_REF_NAME"
           fi
       - uses: actions/upload-artifact@v4
         if: always()
