@@ -22,7 +22,10 @@ texts:[
  {heading:"Logic",items:[{name:"Tahdhīb al-Manṭiq",href:"texts/al-taftazani/tahdhib-al-mantiq/"}]},
  {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"},{name:"Tahdhīb al-Kalām · Working translation",href:"texts/al-taftazani/tahdhib-al-kalam/"},{name:"Taqrīb al-Marām · Commentary",href:"texts/al-sanandaji/taqrib-al-maram/"}]}
 ],
-essays:[],
+essays:[{items:[
+ {name:"Being in Order · Substance, Relation, and Poinsot’s Modes",href:"essays/being-in-order/"},
+ {name:"Why Ibn Rushd begins with method · Working essay",href:"essays/ibn-rushd-method/"}
+]}],
 research:[{items:[
  {name:"Bidāyat al-Mujtahid · Edition I: Law and Legal Reasoning",href:"research/bidaya/law/"},
  {name:"Texts in Time · Islamic Intellectual Atlas",href:"research/intellectual-atlas/"}
