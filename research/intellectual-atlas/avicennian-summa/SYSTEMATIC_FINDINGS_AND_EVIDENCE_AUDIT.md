@@ -17,14 +17,14 @@ This register is an **audit of achieved evidence**, not a list of intended resea
 | 4. Nafs al-amr and truths | Late Tajrīd and logical *nafs al-amr* tradition | Eight/08 | Problem analysed, primary late texts not extracted | Do not infer an independent realm of essences or truth-makers from bare predicability. | OPEN: specific post-Avicennian *nafs al-amr* witnesses |
 | 5. Essence and existence | Lāhījī, Shawāriq I:52; Ibn Sīnā V.1 | One/01 | Complete Lāhījī fifth question | One concrete existent need not be split into two pre-existing items joined by an attribute of existence. | Firm critique of reification; not proof of the Thomistic real distinction |
 | 6. *Jaʿl* and causation | Lāhījī, Shawāriq I:158–161 | Two/02 | Main objections + replies (not every connecting paragraph) | Simple making of an existent vs absurd composite making of an essence's own definition. | Firm late argument refinement; Taftāzānī/Jurjānī reported quotes need independent editions |
-| 7. Prime matter and form | Ibn Sīnā, Ilāhiyyāt II.4 p.120 | Five/05 | Short lemma + analysis | Matter is not an independently actual substrate before all substantial form. | Strong shared hylomorphic premise; later varieties OPEN |
+| 7. Prime matter and form | Ibn Sīnā, Ilāhiyyāt II.4 p.120; Mawāqif VII:34–35,45 | Five/05 | Short lemma + analysis | Matter is not an independently actual substrate before all substantial form. | Strong shared hylomorphic premise; later varieties OPEN |
 | 8. Four causes | Ibn Sīnā, Ilāhiyyāt VI.1 p.257 | Five/05 | Complete bounded definitions + printed variants | Natural efficient agency is described in terms of motion; metaphysical agency in terms of conferring existence. | Firm Avicennian textual baseline; AT taxonomy similar, allocation differs |
 | 9. Giver of Forms | Ibn Sīnā, Ilāhiyyāt IX.5 p.413; Aquinas De potentia III.8 | Five/05 | Direct AV/Latin argument units | Disposed elemental matter receives form from the Giver; Aquinas instead specifies the generated composite as natural agent's effect. | Genuine disagreement; late Narāqī/Jilwa/Khayrābādī natural texts remain uncollated |
 | 10. Substantial motion | Lāhījī I:53; Ṣadrā Asfār IV:85–87; al-Ḥillī IV:399,410 | Three/03 | Connected Lāhījī unit + Sadrian counterargument excerpts | Identity of a persistent subject versus continuous individuated existence, not 'change vs no change'. | Real doctrinal innovation and objection, complete printed text apparatus pending |
 | 11. Individuation & unity | Lāhījī II:185; Ṣadrā Asfār V:190 | Three/03, Four/04 | Selective source-linked passages | Matter remains while form perishes; personal unity can outlast replacement of bodily components. | Multiple theories; cannot infer numerical identity of all existences |
 | 12. Contingency and necessity | Lāhījī I:88–89; Narāqī Jāmi I:38–42 | Older primary crosswalk + causation dossier | Detailed extracts and analysis, not uninterrupted whole chapter | Intrinsic possibility, causal necessity and later time-bound existence are different modalities. | Argument convergence with AT, divine freedom not deduced |
 | 13. Regress & First | Narāqī Jāmi I:41–56 | Causation dossier | Argument-map only, individual demonstrations not fully translated | Temporal infinity distinct from simultaneous derivative causal orders. | OPEN for full nine demonstrations and comparative rigor |
-| 14. Intellect and abstraction | Ibn Sīnā Nafs V.5 pp.321–337; Aquinas ST I.85 | Four/04 | Six excerpts and Latin lemma | Prepared imagination and mathematical middle terms enable reception; intellect as actually intelligible depends upon Active Intellect in Ibn Sīnā. | Genuine difference from human-agent-intellect account, later receipt OPEN |
+| 14. Intellect and abstraction | Ibn Sīnā Nafs V.5 pp.321–337; Aquinas ST I.85; Maqāṣid pp.78–79 | Four/04 | Six excerpts and Latin lemma | Prepared imagination and mathematical middle terms enable reception; intellect as actually intelligible depends upon Active Intellect in Ibn Sīnā. | Genuine difference from human-agent-intellect account, later receipt OPEN |
 | 15. Soul's development | Ṣadrā Asfār V:190; Ibn Sīnā Nafs V.5 | Four/04 | Selected primary passages | Personal identity survives material replacement; Ṣadrā proposes existential developmental unity. | Narāqī soul origination/eschatology full sources OPEN |
 | 16. Divine simplicity/knowledge | Ibn Sīnā IX.1 & IX.4; Narāqī II:165–167 | Six/06, Seven/07 | Several continuous source units | Knowing effects is not blind natural necessity; divine self-knowledge can include dependent things without many accidental representations. | AT convergence on simplicity, disagreement concerning necessary cosmos |
 | 17. Divine freedom/emanation | Ibn Sīnā IX.1, IX.4; Aquinas De potentia III.16 | Six/06 | Direct Greek-influenced Arabic/Latin argument units | First's causal immutability and knowing vs Aquinas' non-necessary cosmic selection; cosmological first-effect mediation contested. | Genuine disagreement; later kalām freedom solutions not yet transcribed |
@@ -34,7 +34,7 @@ This register is an **audit of achieved evidence**, not a list of intended resea
 
 **Reading key:** chapters are Markdown files at [the critical reader](chapters/index.html). “Complete bounded argument” means a full explicitly delimited question/argument in a longer book, **not** a complete surah, printed volume or whole philosophical treatise. “Selected passages” means real transcribed passages with gaps, not a claim of exhaustiveness.
 
-## Eight earned substantive conclusions
+## Nine earned substantive conclusions
 
 ### 1. Later Peripatetic ontology is *not* essence plus an independent existence-object
 
@@ -68,6 +68,14 @@ Narāqī *Jāmiʿ* II:166–167 explicitly rejects (i) placing God at the top of
 
 Ibn Sīnā *Ilāhiyyāt* V.1: what horseness **means** does not itself include the conditions of mental being, external actuality, universality or singularity. The *meaning's* neutrality is not proof of actual uninstantiated horses. Lāhījī's distinction of mental being from the real act of understanding provides the next needed step; AT *species qua/quod* supplies a related but not identical epistemological account. [Chapter 08](chapters/08-universals-quiddity-nafs-al-amr.md).
 
+### 9. Later kalām sharpened both hylomorphic and epistemological demonstrations
+
+The *Mawāqif* commentary and later glosses VII:34–35, 45 reconstruct an argument for prime matter from the reception of connection and separation, then contest it with the possibility that **corporeal form itself** is receptive of varying magnitude. The theological trilemma insists that purported matter must either be an independently spatial body, a spatially dependent attribute, or something with no intelligible relation to extension. This is not a slogan-level repudiation but a precise challenge to the **demonstrative status** of prime matter.
+
+Taftāzānī's *Sharḥ al-Maqāṣid* pp.78–79 similarly distinguishes the meaning of a universal from an actual extramental instance and replies to three objections to mental existence: representation of heat need not physically heat the intellect; representation of the heavens need not place immense bodies inside the brain; and thinking the nonexistent does not make it an extramental real substance. The distinction between **primary external actualisation** and **intellectual representation** supplies an indispensable stage between Ibn Sīnā's *Ilāhiyyāt* V.1 and Lāhījī's refined psychology of intellectual forms. [Chapter 09](chapters/09-mawaqif-maqasid-hylomorphism-mental-existence.md).
+
+**Historical qualification:** Matn, commentary and later glosses are interleaved in this particular *Mawāqif* printing. No unverified sentence is assigned to Siyālkūtī or Ḥalabī merely because the copy includes their glosses.
+
 ## The fundamental test for philosophical coherence with AT
 
 We can now state the problem more sharply than “Are Ibn Sīnā and Aquinas basically the same?”:
@@ -94,10 +102,11 @@ These gaps are real. A **critical comparative edition of dozens of multi-volume 
 2. [Mental existence](chapters/01-mental-existence-and-quiddity.md)
 3. [What making produces](chapters/02-making-and-causal-explanation.md)
 4. [The four causes and natural generation](chapters/05-four-causes-form-bestowal.md)
-5. [The substantial-motion challenge](chapters/03-substantial-motion-dispute.md)
-6. [The intellect, soul and personal identity](chapters/04-intellect-soul-and-identity.md)
-7. [Divine agency and plurality](chapters/06-divine-agency-necessity-and-plurality.md)
-8. [Narāqī's response to unity of being](chapters/07-unity-plurality-and-divine-knowledge.md)
-9. [Narāqī causation and regress bridge](primary-translation-causation.md)
+5. [Kalām scrutiny of matter and mental existence](chapters/09-mawaqif-maqasid-hylomorphism-mental-existence.md)
+6. [The substantial-motion challenge](chapters/03-substantial-motion-dispute.md)
+7. [The intellect, soul and personal identity](chapters/04-intellect-soul-and-identity.md)
+8. [Divine agency and plurality](chapters/06-divine-agency-necessity-and-plurality.md)
+9. [Narāqī's response to unity of being](chapters/07-unity-plurality-and-divine-knowledge.md)
+10. [Narāqī causation and regress bridge](primary-translation-causation.md)
 
 **Editorial footer:** All links lead to source-identified chapters. These are working translations; manuscript collation remains outstanding. Unsupported completion claims have been removed in favour of evidence-graded reporting.
