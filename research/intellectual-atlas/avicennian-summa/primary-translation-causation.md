@@ -135,3 +135,48 @@ Moreover, were temporal origination the cause of dependence, a thing would have 
 If it is objected that possibility is a property of the contingent thing in relation to existence—since it means that existence and nonexistence stand in an equal relation to the contingent quiddity—and must therefore be posterior to existence, so that it cannot be the cause of dependence, which is prior to existence by several ranks, we reply: although possibility is posterior to the quiddity itself and also to the concept of existence, it is not posterior to the quiddity's actually being existent. Rather, it is prior to the quiddity's being qualified by existence. Hence the quiddity and its existence may be described as possible before the quiddity is qualified by existence. Temporal origination, however, cannot qualify the quiddity or its existence unless it has become existent. Moreover, the posteriority of origination to the conferral of existence is beyond doubt: hence it is correct to say, 'He brought it into existence, and so it originated.' The conclusion is established whether or not we also say that origination is posterior to existence itself.
 
 **Critical note:** The ranks are explanatory, not chronological. The objection distinguishes the concept of existence from the quiddity's actual existence. The online edition identifies this as the fourth preliminary; its navigation inconsistently says third. Source: https://lib.rafed.net/view.php?b_id=728&page=39&type=c_fbook . This addition still does not constitute a full critical collation of the preliminary or the matching Avicennian/Sadrian texts.
+
+
+## Argument bridge II — dependence, jaʿl, and ontology (30 October 2026)
+
+### Why this bridge is needed
+
+Narāqī's argument on *imkān* and *baqāʾ* demonstrates that contingency persists after origination and that an efficient cause is required for the continued existence of a contingent being. But this conclusion is not yet an account of **what is made** (*al-majʿūl*). Lāhījī's discussion in *Shawāriq al-ilhām* I:159 addresses precisely this further question.
+
+### A new verified Lāhījī lemma
+
+**Arabic**
+
+> والجواب عن الأول بأن معنى حاجة الممكن إلى الجاعل أن وجوده منه لا ماهيته؛ وعن الثاني أن المجعول هو الوجود الخاص وما هو من أفراد الوجود، لا ماهية الوجود ومفهومه؛ وعن الثالث أنه ليس تقرر الماهية إلا وجودها.
+
+**Working translation**
+
+The reply to the first is that a contingent being's need for a producer means that its existence comes from the producer, not its quiddity. The reply to the second is that what is made is particular existence—something that is an instance of existence—not the quiddity or concept of existence. The reply to the third is that a quiddity has no established actuality other than its existence.
+
+**Source:** https://ablibrary.net/book_content/b/9309/159?lang=ar , printed volume I, p.159. This is an excerpt of a larger objection-and-reply sequence; transcription and punctuation have not been collated against manuscript witnesses.
+
+### Five connected questions, with inferential status
+
+**1. Why does the contingent require a cause?** Narāqī: because its intrinsic possibility does not explain why it exists. This depends upon the principle that one of two equally related alternatives cannot prevail without a determinant. The status of that principle remains open to examination.
+
+**2. Why must the cause continue to be relevant?** The possible being remains possible while actual. The explanatory ground of dependence therefore persists. This is a claim about existential dependence, not a claim that every event requires a newly repeated act of temporal origination.
+
+**3. What does the efficient cause make?** Lāhījī: the specific existence of the possible thing, not the universal meaning of existence. This distinguishes *existence as an intelligible concept* from *the existence of this particular being*. It does not yet determine the status of quiddity as an ontological principle.
+
+**4. Does this establish the primacy of existence (*aṣālat al-wujūd*)?** No. It may be consistent with some formulations of that thesis, but the proposition that the cause bestows existence does not by itself demonstrate that quiddity is merely an abstraction. One must separately analyse the ontological status of the existent, the quiddity's intelligibility and the relation between conceptual and extramental distinction.
+
+**5. Does primacy of existence establish substantial motion or the unity of being?** No. Substantial motion requires a separate account of persistence and change within substance. Ontological unity requires a separate argument concerning the multiplicity of finite existents. Neither follows formally from continuing causal dependence.
+
+### Two objections requiring adjudication
+
+**Objection A — Does a contingent quiddity have some status before it exists?** If possibility is predicated of a quiddity before actuality, does this commit the philosopher to the extramental establishment of the non-existent thing? The inference is invalid without a further premise: intelligibility of a quiddity does not by itself entail its extramental subsistence. This must be checked against the Muʿtazilī *maʿdūm* controversy, Avicenna's three considerations of quiddity, and the later discussion of *nafs al-amr*.
+
+**Objection B — Does a builder really cause a house?** Narāqī's builder objection separates rearrangement and natural production from the ultimate conferral of existence. But that does not establish that the builder is not a real efficient cause *in his own order*. A complete account needs to distinguish the causation of motion, form, composition, substantial generation, and existential conservation. A Thomistic analogy is promising, but not yet an established identity of doctrines.
+
+### Source-critical caution
+
+The next textual collation must place Ibn Sīnā's *Ilāhiyyāt* VI on causation beside Lāhījī's *Shawāriq* discussion, and then consult Ṣadrā's *Asfār* and his annotations on the *Shifāʾ*. The present dossier contains no independently verified verbatim Sadrian passage. Therefore, **no final attribution of agreement or disagreement to Ṣadrā is warranted from this dossier alone**.
+
+### Next argument to translate
+
+The transition to Narāqī's fifth preliminary, on circularity and infinite regress, must distinguish an infinite temporal succession from a regress in a simultaneous, essentially ordered dependence structure. The mere existence of a causal chain does not establish that all infinite chains are impossible. Narāqī's distinct demonstrations and counter-objections should be translated individually before deriving a First Cause.
