@@ -75,3 +75,8 @@ E. Inspect and collate the now-located Cairo 1904 Arabic printing of Khayrābād
 ## Research redirection: four causes and the Giver of Forms
 
 [Open the AT–Avicennian comparative dossier](four-causes-and-forms-research.md). This is now the primary research track, ahead of the exhaustive regress proofs. It investigates whether the later Avicennian tradition retained, modified or rejected the separate Active Intellect's role in substantial generation. The distinction between an intrinsic substantial form, the natural agent disposing matter, and the existential cause of the composite must remain explicit. The dossier contains a source acquisition order, a doctrine/evidence matrix and the requirements for eventual full Arabic–English collation. **No late philosopher's unverified position is presented as a discovered primary quotation.**
+
+
+## Whole-system Avicennian–AT investigation
+
+[Comprehensive twenty-domain system map and critical apparatus](COMPREHENSIVE_SYSTEM.md): ontology, logic, mental existence, four causes, natural philosophy, substantial motion, psychology, intellect, theology, providence, creation, unity, ethics and more. This replaces the earlier overemphasis on the Giver of Forms and regress. It is a preliminary synthesis, not a completed collation of the full commentarial tradition.
