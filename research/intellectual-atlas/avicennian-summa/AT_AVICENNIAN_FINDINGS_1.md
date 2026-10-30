@@ -246,3 +246,12 @@ An acceptable synthesis must distinguish vertical existential dependence, horizo
 **Next translation boundaries:** IX.5 preceding and following paragraphs; *Kawn wa-fasād* 13–14; Ṭūsī's *Risāla fī al-ʿilla al-tāmma* (critical edition in Kılıç, *Mukaddime* 8/1, 2017, 137–153, https://doi.org/10.19059/mukaddime.296100); Ṭūsī's *Risāla fī qawl al-ḥukamāʾ* (critical edition in Tellioğlu Ünver, *Tahkik* 17, 2026, 145–200, https://doi.org/10.66746/tahkik.1851947). These last two are **edition leads**, not translated here.
 
 **Editorial status:** One excerpt translated with lexical notes; no manuscript comparison, no complete chapter translation. Do not mark the primary translation corpus as complete.
+
+
+## Synthesis 1.14 — source translation turning point (31 October 2026)
+
+The earlier first IX.5 excerpt is now superseded as a translation-length limitation by **three complete bounded working translations**: [VI.2](PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md) (pp.263–267), [IX.5](PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md) (pp.409–413), and [Lāhījī on preference](PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md) (*Shawāriq* I:90–93). All three are readable in the [GNAMMA English primary-translations edition](primary-translations.html); a [cumulative Stage 4 handoff](handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md) accounts for boundaries and unfinished sources.
+
+**New textual demonstration:** VI.2 locates the continuous essential causal dependence of natural composites while permitting indefinite successions of preparatory causes; IX.5 explicitly combines real natural preparations and celestial influence with the Giver of Forms' separate bestowal, and rejects the notion of matter subsisting without any specific constitutive form; Lāhījī articulates why neither an intrinsic nor an extrinsic *preference short of sufficient necessitation* can fully ground occurrence. The historical allocation of natural versus separate causality is now supported by a full paired Avicennian reading rather than isolated quotations.
+
+**Limits:** These are complete chapters/issues as *translation units* only. No new manuscripts independently collated, no claimed exhaustive Arabic/Persian translations for all twenty research domains, and no claim of verified live Pages deployment merely from GitHub commits.
