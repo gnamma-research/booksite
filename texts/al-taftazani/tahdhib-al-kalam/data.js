@@ -3,28 +3,32 @@ window.GNAMMA_BOOK={
   "title": "Tahdhīb al-Kalām",
   "arabicTitle": "تهذيب الكلام",
   "author": "Saʿd al-Dīn al-Taftāzānī",
-  "status": "Working translation: 81 source-ordered units with substantive gaps; not continuously or critically complete",
+  "status": "Source-graded work in progress: 81 excerpts, with the opening textual and commentary loci now individually checked (Taqrīb I:8–22); not a continuous certified critical edition.",
   "description": "The theological half of Tahdhīb al-Manṭiq wa-l-Kalām. English phrasing is kept readable; lexical explanations and Sanandajī's interpretive guidance belong in notes. Untranslated intervals are not silently filled.",
   "units": [
     {
       "id": "I.01",
       "title": "Definition and subject of kalām",
       "arabic": "الكلام هو العلم بالعقائد الدينية عن الأدلة اليقينية، وموضوعه المعلوم من حيث يتعلق به إثباتها.",
-      "english": "Kalām is knowledge of religious doctrines grounded in conclusive proofs. Its subject matter is everything knowable, insofar as establishing those doctrines depends upon it.",
+      "english": "Kalām is knowledge of religious doctrines on the basis of conclusive proofs. Its subject matter is the knowable, insofar as the establishment of those doctrines depends upon it.",
       "grade": "A",
       "gap": false,
       "notes": [
         {
-          "type": "Sanandajī",
-          "text": "Taqrīb al-Marām I:8–10 distinguishes doctrines whose purpose is assent from practical rulings whose purpose is action. These are the categories relevant to the subject of kalām."
+          "type": "Source witness",
+          "text": "The quoted definitions are separately visible across Taqrīb al-Marām I:8–12 (2012 reproduction, PDF pp. 21–25): ‘al-kalām huwa al-ʿilm bi-l-ʿaqāʾid’ (I:8), ‘al-dīniyya’ and ‘ʿan al-adilla al-yaqīniyya’ (I:9), then ‘wa-mawḍūʿuhu al-maʿlūm...’ (I:11). The original Tahdhīb copy-text still requires independent full collation."
         },
         {
-          "type": "Editorial",
-          "text": "The reading of موضوعه المعلوم is independently supported by the 995 AH al-Azhar manuscript as inspected in the earlier handoff and by the parallel at Sharḥ al-Maqāṣid, opening introduction."
+          "type": "Sanandajī I:8–9",
+          "text": "The criterion separating doctrinal and practical rulings is the intended object: assent of the heart in the first case, performance in the second. That practical rulings must be believed true does not by itself make their detailed study kalām."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 525–529; original printed pagination and manuscript witness still need confirmation."
+          "type": "Sanandajī I:11–13",
+          "text": "He explains why the subject is the knowable (al-maʿlūm), not merely the existent (al-mawjūd): kalām treats existence and nonexistence, among other disputed categories, insofar as their study serves the establishment of religious doctrines."
+        },
+        {
+          "type": "Translator",
+          "text": "‘On the basis of’ renders ʿan without implying that kalām is merely a store of inherited beliefs. ‘The knowable’ is broader than actual being; it does not entail that every conceivable nonentity subsists as a thing."
         }
       ],
       "link": "../../al-sanandaji/taqrib-al-maram/#u-S-01"
@@ -33,10 +37,14 @@ window.GNAMMA_BOOK={
       "id": "I.02",
       "title": "Accounts of knowledge",
       "arabic": "[والعلم ...] حصول صورة الشيء في العقل، أو الاعتقاد الجازم المطابق الثابت، أو صفة يتجلى بها المذكور لمن قامت به.",
-      "english": "Knowledge is [alternatively explained as] the reception of a thing’s form in the intellect; as firm, reality-conforming, settled belief; or as a quality through which the object that can be mentioned becomes disclosed to the subject possessing that quality.",
+      "english": "Several accounts of knowledge are considered: the reception of a thing’s form in the intellect; firm, reality-conforming and settled assent; or a quality by which what is mentioned becomes disclosed to the subject in whom that quality inheres. The original transitions between these accounts remain to be checked.",
       "grade": "B",
       "gap": true,
       "notes": [
+        {
+          "type": "Sanandajī I:14–17",
+          "text": "The commentary discusses differences between cognition by representation, assent to a proposition, and a wider capacity for apprehension. A definition restricted to firm assent cannot straightforwardly include conception (taṣawwur). The full argument, not simply its three slogans, must govern the final translation."
+        },
         {
           "type": "Editorial",
           "text": "The opening conjunction and intervening discussion are damaged in the OCR. The three definitions are competing characterisations; they are not a single cumulative definition."
@@ -55,6 +63,10 @@ window.GNAMMA_BOOK={
       "grade": "A",
       "gap": true,
       "notes": [
+        {
+          "type": "Sanandajī I:17–22",
+          "text": "The alternatives concern the manner in which knowledge follows sound inferential inquiry: customary concurrence (ʿāda), causation by generation (tawlīd), or necessary connection (wujūb/luzūm). They are reported competing explanations. The theological significance changes if one silently renders them all as ‘reasoning produces knowledge’."
+        },
         {
           "type": "Editorial",
           "text": "The bracketed English specifies the antecedent; the antecedent must still be checked on the scan."
@@ -127,6 +139,10 @@ window.GNAMMA_BOOK={
       "grade": "B",
       "gap": true,
       "notes": [
+        {
+          "type": "Editorial distinction",
+          "text": "The priority of rational proof applies to what is presupposed by the authority of transmitted evidence itself; it is not a claim that every transmitted proposition must be reconstructed independently from reason."
+        },
         {
           "type": "Editorial",
           "text": "Visible ellipses represent real interruptions. The missing discussion concerns the scope of proofs and the conditions of transmitted certainty."
@@ -1488,6 +1504,7 @@ window.GNAMMA_BOOK={
   "sourceNotes": [
     "1912 Cairo annotated printing; 995 AH (1587 CE) al-Azhar manuscript as an independent partial control.",
     "ʿAbd al-Qādir al-Sanandajī, Taqrīb al-Marām, Cairo al-Maktaba al-Azhariyya li-l-Turāth, 1433/2012 reproducing earlier printed material; 2 vols., 632 PDF pages.",
-    "81 imported source-graded units drawn from the earlier 140-unit register. Many are excerpts, and 80 entries in the 140-unit register previously carried explicit gap flags. None of the six chapters is completely collated."
+    "81 imported source-graded units drawn from the earlier 140-unit register. Many are excerpts, and 80 entries in the 140-unit register previously carried explicit gap flags. None of the six chapters is completely collated.",
+    "Revision 17 image collation: Sanandajī/Taqrīb I:8–22 (PDF pp. 21–35); the documentary record distinguishes embedded Tahdhīb lemmata, the upper running commentary, and marginal notes."
   ]
 };

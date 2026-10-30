@@ -21,3 +21,6 @@ Every original-text interval must have (a) clear diplomatic Arabic, (b) independ
 
 ## Language principles
 Translate key distinctions accurately: ʿilm / taṣdīq, thubūt / wujūd, shayʾ / maʿdūm, imkān / ḥudūth, ʿilla fāʿiliyya / ʿilla muʿidda, ḥikma / gharaḍ, and kasb / ījād. Do not infer an author's endorsement from the doctrines he introduces as reports. Footnotes cite the correct speaker and printed page.
+
+## Revision 17 checks
+The uploaded 632-page Taqrīb scan has now been rechecked at I:8–22 (PDF pp. 21–35). The online opening translation I.01–I.03 has newly attributed footnotes on the knowable, certainty, and the epistemology of inquiry. The downloadable Revision 17 corpus consolidates all 140 inherited units, but the online reading selection still contains 81 source-graded units, and neither is continuous or a definitive critical edition.

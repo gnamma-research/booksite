@@ -1,5 +1,5 @@
 # Taqrīb al-Marām — separate translation project
-**30 October 2026 · Six image-checked selective passages; entire two-volume commentary remains untranslated.**
+**30 October 2026 · Eleven image-checked selective passages; entire two-volume commentary remains untranslated.**
 
 The copy supplied by the user has 632 physical PDF pages and both printed volumes. The title page identifies ʿAbd al-Qādir al-Sanandajī's commentary alongside *Ḥāshiyat al-Muḥākamāt* associated with Muḥammad Wasīm al-Kurdistānī. The supplied reproduction is marked Cairo: al-Maktaba al-Azhariyya li-l-Turāth, 1433/2012. Do not misdate this reproduction as a 1901 printing.
 
@@ -13,3 +13,6 @@ Initial passages begin with Sanandajī’s actual preface and cover (a) doctrina
 
 ### Integration
 Each commentary selection has a stable section ID and may be linked from its matched Tahdhīb passage. Do not present quoted lemmata embedded in the sharḥ as Sanandajī's independently authored assertions.
+
+## Revision 17
+Five more selected excerpts directly checked at I:8–14 (PDF pp. 21–27), principally the purpose of doctrinal assent and the scope of al-maʿlūm. No complete-page continuous translation is claimed.
