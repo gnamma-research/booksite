@@ -64,3 +64,32 @@ E. Compare Aquinas *De principiis naturae* ch. 3 and *De potentia* q.3 a.8 with 
 ## Edition status and integrity
 
 This is a **finished analytical synthesis of the evidence presently established**, not a completed Arabic critical edition. It includes no invented historical quotations. The late Peripatetic primary-text question — **did any named later author abandon or significantly modify the Giver of Forms?** — is **unresolved** until the relevant natural-philosophical texts are transcribed and translated. Do not call it resolved merely because the research programme has been written.
+
+
+## Synthesis 1.1 — integrated philosophical decision tree (30 October 2026)
+
+The twenty-domain project should be read as a connected explanatory system, not twenty independent essays. The following dependencies clarify what counts as a change to Avicennism.
+
+1. **Ontology → causality.** First distinguish the shared *concept* of existence from its extra-mental instantiation, from gradation in reality, and from a strong unity-of-being thesis. None entails the next without additional premises. Only then ask what precisely is made (*majʿūl*) by an efficient cause: a quiddity, a particular existence, or the composite. Lāhījī's distinction at *Shawāriq* I:159 makes a simple “Peripatetics produce essences, Ṣadrā produces existence” contrast untenable without qualification.
+2. **Dependence → generation.** The proof that a contingent existent requires an existential cause while it exists does not settle whether a natural agent generates a substantial composite. Narāqī's distinction between *imkān* and *ḥudūth* establishes the first kind of dependence, not a resolution of the second. Thus Avicenna and Aquinas may converge on sustained dependence yet disagree on the division of labour between proximate natural agent and separate intellect.
+3. **Natural form → substantial motion.** If substantial form is intrinsic to the composite, this does not by itself determine whether substance undergoes continuous essential renewal. Ṣadrā's substantial motion alters the persistence model; Lāhījī's subject-persistence objection targets this further claim, not necessarily intrinsic form as such.
+4. **Cosmological mediation → divine action.** Separate intellects, the Active Intellect, and the Necessary Existent belong to distinguishable explanatory levels. To say that God is always causally operative does not establish that Avicenna means immediate divine concurrence in the same sense as Aquinas. Their accounts also differ over the necessity or freedom of cosmic procession.
+5. **Epistemology → metaphysics.** Mental existence, abstraction, *nafs al-amr*, and the status of universals should be compared with the external-existence theses without treating logical universality as an independently existing universal thing. This is the bridge to the Tajrīd, Mawāqif and post-Rāzian logical traditions.
+6. **Relations → divine and created order.** A relation may be conceptually described, extra-mentally founded, or construed as a distinct real accident; the precise options must be source-collated before comparing with Thomist real relations or proposing an ontology of social structures.
+7. **Akbarian integration → non-equivalence.** A single common concept of *wujūd*, Ṣadrian graded existence, and Akbarian manifestation are three separate theses. A commentator's use of *tajallī* or *ẓuhūr* is insufficient by itself to prove acceptance of the strongest unity thesis.
+
+### Author-by-author evidence discipline
+
+| Author or corpus | Established interpretive contribution | Still requires direct collation |
+|---|---|---|
+| Ibn Sīnā | Intrinsic form, natural preparation, separate bestowal, continuing contingent dependence | Generation/corruption passages against *Ilāhiyyāt* IX.4–5 |
+| Fakhr al-Dīn al-Rāzī and Ṭūsī | Major argumentative interlocutors in post-Avicennian metaphysics | Exact objections and responses on matter, form, causal efficacy |
+| Ṣadrā | Primacy/gradation of existence and substantial motion | Specific form-bestowal passages and treatment of intellects |
+| Lāhījī | Objection to substantial motion; particular existence as made | Full *Shawāriq* objection-and-response context |
+| Narāqī | Possibility, not temporal origination, grounds continuing existential dependence | Whether he revises the Active Intellect's natural role |
+| Khwānsārī, Jilwa, Khayrābādī | Historically relevant later continuations | No definitive doctrine on form-bestowal can yet be assigned |
+| Aquinas | Eduction of form through natural generation of composite; divine conservation | Exact Latin loci and distinctions between creation and generation |
+
+### Publication and completion criterion
+
+Each of the twenty domains must eventually include (i) a question and conceptual distinctions, (ii) primary passage with edition/page or folio, (iii) checked transcription and translation, (iv) objections and replies across named authors, (v) comparison with Aquinas where applicable, (vi) evidence-based verdict with confidence level, and (vii) cross-links. The current synthesis meets the analytical integration criterion but **does not** meet the full primary-text collation criterion. Never mark those twenty dossiers as source-complete without that work.
