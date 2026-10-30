@@ -273,3 +273,12 @@ The full authorial structure of *Summa theologiae* I q.104 aa.1–2, comprising 
 Two direct, nonnegotiable conclusions follow. First, Aquinas agrees that the builder is a cause of a house's *fieri*, not directly its continuing *esse*, while the sun–air illustration expresses continuing dependence on a giver of being. Second, he **expressly allows causes intermediate between God and conserved effects** (*ST* I q.104 a.2): the First principally conserves, and intermediate causes secondarily conserve. The actual Avicenna–Aquinas difference concerns the specific allocations of the causation of forms, divine willing, cosmic mediation and the generation of composites, not a simple opposition between “mediated” and “unmediated” preservation.
 
 This fifth fascicle completes two bounded *Aquinas* articles, not all of q.104, and does not resolve primary evidence for later Persian and Indian commentaries.
+
+
+## Synthesis 1.17 — completing Aquinas' conservation question (31 October 2026)
+
+[New Fascicle G](PRIMARY_TRANSLATION_FASCICLE_G_AQUINAS_ST104_3_4.md) translates all objections, replies and primary arguments in *ST* I q.104 **aa.3–4**, §§32775–32790, completing the entire four-article Question 104 in fresh working English across [Fascicle F](PRIMARY_TRANSLATION_FASCICLE_F_AQUINAS_ST104.md) and Fascicle G. The [public primary reader](primary-translations.html) now has **six** bounded translations.
+
+Aquinas' further positions must be kept distinct: (1) God can withhold the influx of existence because creatures proceed from free divine willing rather than necessity of divine nature; (2) he nevertheless maintains that no creature is actually annihilated, as a different question. These theses arise in the same discussion as his affirmation of intermediate conserving causes. They make clearer where the Aristotelian–Thomistic comparison truly diverges from Avicennian necessitarian procession, even where the two systems share vertical existential dependence and qualified secondary conservers.
+
+This is a complete translation of one Thomistic *question* (q.104) as bounded work, not a completion of the Aquinas or Avicennian corpora; critical Latin variants and the late Persian natural-philosophy sources remain outstanding.
