@@ -217,6 +217,7 @@ files=[
  ('avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md',ROOT/'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md'),
  ('avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md',ROOT/'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md'),
  ('avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_F_AQUINAS_ST104.md',ROOT/'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_F_AQUINAS_ST104.md'),
+ ('avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_G_AQUINAS_ST104_3_4.md',ROOT/'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_G_AQUINAS_ST104_3_4.md'),
  ('avicennian-summa/handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md',ROOT/'avicennian-summa/handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md'),
  ('avicennian-summa/chapters/index.html',ROOT/'avicennian-summa/chapters/index.html'),
  ('avicennian-summa/chapters/reader.html',ROOT/'avicennian-summa/chapters/reader.html'),
@@ -257,7 +258,7 @@ run: python -m http.server 8123 from the extraction folder and open
 http://localhost:8123/research/intellectual-atlas/
 
 Contents: source-critical PDF, current canonical JSON and interactive map;
-standalone Neoplatonism and Tahdhib dossiers; plus the Avicennian Summa ten-chapter reader, five new continuous primary translations, their source apparatus, and the source register.
+standalone Neoplatonism and Tahdhib dossiers; plus the Avicennian Summa ten-chapter reader, six new continuous primary translations, their source apparatus, and the source register.
 Earlier edition PDFs/ZIPs on the web are NOT included in this archive.
 External scholarly hyperlinks require internet access. Sources belong to
 their respective authors/publishers. No source books/manuscript scans included.
@@ -279,6 +280,7 @@ with zipfile.ZipFile(ZIP) as z:
     assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md' in z.namelist()
     assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md' in z.namelist()
     assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_F_AQUINAS_ST104.md' in z.namelist()
+    assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_G_AQUINAS_ST104_3_4.md' in z.namelist()
     assert root+'avicennian-summa/handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md' in z.namelist()
     assert root+'avicennian-summa/chapters/reader.html' in z.namelist()
     assert root+'avicennian-summa/chapters/10-conservation-first-cause-and-secondary-agency.md' in z.namelist()
