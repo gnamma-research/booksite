@@ -89,6 +89,7 @@ jobs:
               assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md' in names
               assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md' in names
               assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_F_AQUINAS_ST104.md' in names
+              assert root+'avicennian-summa/PRIMARY_TRANSLATION_FASCICLE_G_AQUINAS_ST104_3_4.md' in names
               assert root+'avicennian-summa/handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md' in names
               assert root+'avicennian-summa/SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md' in names
               assert root+'avicennian-summa/primary-translation-causation.md' in names
