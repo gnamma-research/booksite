@@ -22,7 +22,11 @@ async def verify(engine,width,height):
         for chapter in (1,5,9,10):
             num=f"ch{chapter:02d}"
             response=await page.goto(URL+"#"+num,wait_until="domcontentloaded",timeout=60000)
-            assert response.status==200, f"Reader HTTP {response.status}"
+            # Playwright returns None for same-document hash navigation; this is a valid route.
+            if response is not None:
+                assert response.status==200, f"Reader HTTP {response.status}"
+            else:
+                assert page.url.endswith("#"+num), "Expected same-document chapter navigation"
             await page.wait_for_function(
                 "(id) => !!document.querySelector('#'+id) && !document.querySelector('#'+id).hidden",arg=num
             )
