@@ -157,7 +157,7 @@ async def all_families(page):
     await reset(page)
     sel=page.locator("[data-text-family]")
     values=await sel.locator("option").evaluate_all("(xs)=>xs.map(x=>x.value).filter(Boolean)")
-    ok(len(values)==18,f"expected 18 text families: {values}")
+    ok(len(values)==20,f"expected 20 text families: {values}")
     for v in values:
         await sel.select_option(v)
         s=await state(page)
