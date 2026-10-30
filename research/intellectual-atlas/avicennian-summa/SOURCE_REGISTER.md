@@ -131,15 +131,16 @@ The [ten-chapter integrated reader](chapters/reader.html#ch01) now includes [Cha
 
 ## Stage 4 source-unit translation additions · 31 October 2026
 
-**Scope assertion:** Three historical units now have continuous English translations from identified edited searchable Arabic texts, with selective reported variants and explicit authorial-layer attribution. This does **not** mean that the whole Arabic works, all commentary branches or critical manuscripts have been translated.
+**Scope assertion:** Four historical units now have continuous English translations from identified edited searchable Arabic texts, with selective reported variants and explicit authorial-layer attribution. This does **not** mean that the whole Arabic works, all commentary branches or critical manuscripts have been translated.
 
 | Key | Textual unit actually translated | Working state | Edition / access | Research file |
 |---|---|---|---|---|
+| AV-01E | Ibn Sīnā, *al-Ilāhiyyāt* VI.1, pp.257–263 | **TRANSLATED-BOUNDED-CHAPTER**, 23 editorial paragraphs; reported printed variants only | [Arabic VI.1](https://lib.rafed.net/view.php?b_id=1128&page=257&type=c_fbook) and [continuation](https://lib.rafed.net/view.php?b_id=1128&page=264&type=c_fbook) | [Fascicle E](PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md) |
 | AV-01B | Ibn Sīnā, *al-Shifāʾ: al-Ilāhiyyāt* VI.2, printed pp.263–267 | **TRANSLATED-BOUNDED-CHAPTER**, 19 numbered translation paragraphs; printed variants selected | [Arabic VI.2](https://lib.rafed.net/view.php?b_id=1128&page=264&type=c_fbook), ed. Anawati–Zāyid | [Fascicle B](PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md) |
 | AV-01D | Ibn Sīnā, *al-Ilāhiyyāt* IX.5, pp.409–413 | **TRANSLATED-BOUNDED-CHAPTER**, 17 paragraphs; 8 Arabic anchors | [Arabic IX.5](https://lib.rafed.net/view.php?b_id=1128&page=410&type=c_fbook), ed. Anawati–Zāyid | [Fascicle D](PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md) |
 | AV-09C | Lāhījī, *Shawāriq al-ilhām* I:90–93, Issues 23–24 | **TRANSLATED-BOUNDED-ISSUES**, 27 + 10 paragraphs; embedded voices not independently witnessed; p.92 transcription issue flagged | [I:90](https://ablibrary.net/book_content/b/9309/90?lang=ar), [91](https://ablibrary.net/book_content/b/9309/91?lang=ar), [92](https://ablibrary.net/book_content/b/9309/92?lang=ar), [93](https://ablibrary.net/book_content/b/9309/93?lang=ar) | [Fascicle C](PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md) |
 
-**Display:** [GNAMMA primary-translations.html](primary-translations.html), a static reading page containing all three complete working translations and apparatus, linked from Summa and ten-chapter reader. The public Pages deployment must be separately checked.
+**Display:** [GNAMMA primary-translations.html](primary-translations.html), a static reading page containing all four complete working translations and apparatus, linked from Summa and ten-chapter reader. The public Pages deployment must be separately checked.
 
 **Major intellectual gain:** Distinguish the material generator, a preparatory *muʿidd*, the extrinsic bestower of substantial form, the constitutive intrinsic form, the complete cause, and the continuous existential conserving principle. The same person or principle may fill more than one role; historical texts specify the allocation. Full comparison with Aquinas requires precise Latin witness readings rather than assuming equivalence.
 
