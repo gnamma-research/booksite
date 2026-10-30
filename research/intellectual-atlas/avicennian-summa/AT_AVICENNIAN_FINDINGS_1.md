@@ -166,3 +166,8 @@ https://plato.stanford.edu/archives/spr2019/entries/arabic-islamic-causation/ re
 The post-Avicennian transformation has at least four independent axes: (i) *ontological* status of existence, (ii) *causal sufficiency* and divine willing, (iii) *scope of the Rule of the One* and procession, and (iv) *teleology* of noncognitive nature. These interact with (v) substantial generation, (vi) the Giver of Forms, and (vii) substantial motion but cannot be reduced to them.
 
 **Evidence level:** verified bibliographical abstracts and scholarly overview locators, not newly collated primary Arabic passages. The complete edition remains open.
+
+
+## 1.5 — modality and essence
+
+Distinguish logical possibility (absence of contradiction), essential contingency (neither existence nor nonexistence follows from quiddity), and causal possibility (actual dependence on a sufficient cause). An Avicennian necessary existent is necessary through itself; a caused existent can be necessary through another when its complete cause obtains. Thus necessary-through-another does not remove contingency-through-itself. Compare Shifāʾ Ilāhiyyāt I.6, VI.1–3, VIII.1–3; Ishārāt metaphysics, and Rāzī's Sharḥ al-Ishārāt. **Source status:** passage targets, not freshly transcribed quotations.
