@@ -97,6 +97,15 @@ assert 'STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md' in release
 assert (summa/'handoffs'/'STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md').is_file()
 assert 'AV-01E' in register and 'AV-09C' in register and 'AT-104F' in register and 'AT-104G' in register
 
+# Stage 5 is a separate reader with independent source-provenance checks.
+# Keep earlier six primary fascicles, all ten chapters, and all handoffs.
+assert (summa/'late-commentators.html').is_file()
+assert (summa/'LATE_WITNESS_REGISTER_2026_10_31.json').is_file()
+assert (summa/'handoffs'/'STAGE_05_LATE_COMMENTATORS.md').is_file()
+assert 'late-commentators.html' in landing and 'late-commentators.html' in index
+assert 'late-commentators.html' in reader and 'late-commentators.html' in primary
+assert 'late-commentators.html' in release
+
 print({
     'critical_chapters':len(mds),
     'complete_bounded_fascicles':len(fascicles),
