@@ -89,7 +89,7 @@ E. Inspect and collate the now-located Cairo 1904 Arabic printing of Khayrābād
 
 ## Substantive translated chapters — GNAMMA edition, October 30, 2026
 
-The [critical chapters reader](chapters/reader.html#ch01) links eight connected primary-source studies, rather than only the earlier preparatory outlines. Each chapter marks source text, authorial voice, complete bounded units versus selected passages, printed variants and manuscript-collation limitations.
+The [critical chapters reader](chapters/reader.html#ch01) links ten connected primary-source studies, rather than only the earlier preparatory outlines. Each chapter marks source text, authorial voice, complete bounded units versus selected passages, printed variants and manuscript-collation limitations.
 
 1. [mental existence and quiddity](chapters/01-mental-existence-and-quiddity.md)
 2. [making and causal explanation](chapters/02-making-and-causal-explanation.md)
@@ -99,6 +99,8 @@ The [critical chapters reader](chapters/reader.html#ch01) links eight connected 
 6. [divine agency necessity and plurality](chapters/06-divine-agency-necessity-and-plurality.md)
 7. [unity plurality and divine knowledge](chapters/07-unity-plurality-and-divine-knowledge.md)
 8. [universals quiddity nafs al amr](chapters/08-universals-quiddity-nafs-al-amr.md)
+9. [later kalām hylomorphism and mental existence](chapters/09-mawaqif-maqasid-hylomorphism-mental-existence.md)
+10. [conservation and secondary agency](chapters/10-conservation-first-cause-and-secondary-agency.md)
 
 **Historical correction:** Mīrzā Abū al-Ḥasan Jilwa must not be labelled an unqualified opponent of substantial motion. Bibliographical evidence records a Tehran 1313 AH printing titled *Ithbāt al-ḥaraka al-jawhariyya*; its precise argument and authorship/context remain to be examined in the printed text. Narāqī's position on existential unity is not merely a blanket rejection: his *Jāmiʿ* II:165–167 distinguishes gradational and numerical-monist readings and advances an account of causal and epistemic inclusion. See Chapters 3 and 7.
 
@@ -117,4 +119,11 @@ The [critical chapters reader](chapters/reader.html#ch01) links eight connected 
 
 ### GNAMMA integrated bilingual edition
 
-The complete nine-chapter working edition can now be read in the [self-contained bilingual reader](chapters/reader.html#ch01), including Arabic reading direction, original source links, English/Latin analyses, and internal chapter navigation. This is a browser/offline **edition presentation** of bounded translations and excerpts, not a claim of complete critical collation of every underlying treatise.
+The complete ten-chapter working edition can now be read in the [self-contained bilingual reader](chapters/reader.html#ch01), including Arabic reading direction, original source links, English/Latin analyses, and internal chapter navigation. This is a browser/offline **edition presentation** of bounded translations and excerpts, not a claim of complete critical collation of every underlying treatise.
+
+
+### Current cumulative delivery: ten chapters and three stage handoffs
+
+The [ten-chapter integrated reader](chapters/reader.html#ch01) now includes [Chapter 10 — conservation and secondary agency](chapters/reader.html#ch10): a connected argument-level comparison of Ibn Sīnā, Narāqī and Aquinas, including *ST* I q.104.2, in which Aquinas explicitly recognises **created intermediary conserving causes**. The direct Avicennian proof begins in *Ilāhiyyāt* VI.1 (printed pp.261–262), before VI.2's heading at p.264. Both corrections are in the chapter.
+
+**Cumulative handoff trail:** [Stage 1 corpus audit](handoffs/STAGE_01_CORPUS_AUDIT.md) · [Stage 2 ten-chapter reader](handoffs/STAGE_02_TEN_CHAPTER_EDITION.md) · [Stage 3 release](handoffs/STAGE_03_RELEASE_HANDOFF.md) · [HANDOFF_CURRENT](HANDOFF_CURRENT.md). The edition is source-graded with some complete bounded units and some selective passages; the twenty-domain multi-manuscript translation remains incomplete.

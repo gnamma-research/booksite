@@ -83,18 +83,24 @@ counts do not imply complete manuscript collation or finished translations.
 [Read the Avicennian Summa pilot](avicennian-summa/) ·
 [Source acquisition register](avicennian-summa/SOURCE_REGISTER.md).
 
-The research reader records 32 philosophical questions and five short Arabic–English
+The introductory pilot records 32 philosophical questions and five short Arabic–English
 translation excerpts, each with a published-page link and distinct editorial
 notes. The complete argument-unit translations and manuscript collation are
 outstanding. A new developed chapter, [`On Contingency and Continuing Causation`](avicennian-summa/causal-dependence.html), adds a newly authored Arabic matn with English translations, three additional source lemmata from Narāqī, and an explicit comparison of proximal natural causes with continuing ontological dependence. The accessible 1904 Arabic printing of Khayrābādī's *al-Hadiyya* has been identified at https://ddl.ae/book/95961; no complete translation of it is claimed. This atlas does not redistribute commercial edition scans.
 
 ### New critical-chapter edition, 30 October 2026
 
-The [nine-chapter bilingual critical reader](avicennian-summa/chapters/reader.html#ch01) now extends the original causation dossier with substantively translated and source-indexed studies of (1) mental existence and the nature considered in itself, (2) simple versus composite *jaʿl*, (3) substantial motion and the identity of the subject, (4) intellectual actualisation, imagination and personal identity, (5) the four causes and the Giver of Forms, (6) divine agency, cosmic necessity and plurality, (7) Narāqī's two critiques of *waḥdat al-wujūd* and his alternative, and (8) the three senses of universality and *nafs al-amr*, and (9) the late Sunni kalām objections in the *Mawāqif* and *Maqāṣid* concerning prime matter, hylomorphism and mental existence. The original Arabic, English and relevant Latin passages are attributed separately, with printed edition variants where reported.
+The [ten-chapter bilingual critical reader](avicennian-summa/chapters/reader.html#ch01) now extends the original causation dossier with substantively translated and source-indexed studies of (1) mental existence and the nature considered in itself, (2) simple versus composite *jaʿl*, (3) substantial motion and the identity of the subject, (4) intellectual actualisation, imagination and personal identity, (5) the four causes and the Giver of Forms, (6) divine agency, cosmic necessity and plurality, (7) Narāqī's two critiques of *waḥdat al-wujūd* and his alternative, and (8) the three senses of universality and *nafs al-amr*, (9) the late Sunni kalām objections in the *Mawāqif* and *Maqāṣid* concerning prime matter, hylomorphism and mental existence, and (10) Avicenna–Narāqī–Aquinas on conservation, intermediary causes and divine agency. The original Arabic, English and relevant Latin passages are attributed separately, with printed edition variants where reported.
 
 The [twenty-domain evidence audit](avicennian-summa/SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md) now lists each domain's translated primary passages, substantive findings and incompleteness, and the earlier [Narāqī causation dossier](avicennian-summa/primary-translation-causation.md) is included in the offline edition rather than stranded on a separate working branch.
 
-**Important qualification:** The reader consists of major bounded argument units, selected extracts and analysis; it is **not** a complete, cross-manuscript critical translation of the entire late Avicennian tradition. The offline ZIP release includes all eight Markdown chapters, source files and the overview reader. No third-party printed book scans are distributed.
+**Important qualification:** The reader consists of major bounded argument units, selected extracts and analysis; it is **not** a complete, cross-manuscript critical translation of the entire late Avicennian tradition. The offline ZIP release includes all ten Markdown chapters, source files and the overview reader. No third-party printed book scans are distributed.
+
+### Cumulative scholarly handoffs, 30 October 2026
+
+The [ten-chapter integrated reader](avicennian-summa/chapters/reader.html#ch01) includes a new [conservation and secondary causation chapter](avicennian-summa/chapters/reader.html#ch10). Its [primary-source Markdown](avicennian-summa/chapters/10-conservation-first-cause-and-secondary-agency.md) directly compares Ibn Sīnā *Ilāhiyyāt* VI.1 pp.261–262 and VI.2 p.264; Narāqī I:38–42; and Aquinas *ST* I q.104 aa.1–3. Aquinas expressly acknowledges subordinate created conserving causes; this corrects an oversimplified prior reading of his view.
+
+The immutable handoffs are [Stage 1](avicennian-summa/handoffs/STAGE_01_CORPUS_AUDIT.md), [Stage 2](avicennian-summa/handoffs/STAGE_02_TEN_CHAPTER_EDITION.md), and [Stage 3](avicennian-summa/handoffs/STAGE_03_RELEASE_HANDOFF.md). [HANDOFF_CURRENT](avicennian-summa/HANDOFF_CURRENT.md) is the authoritative restart point. These are packaged with the ten chapter source files in the Atlas offline ZIP. A successful site/UI release **does not** mean the uncollated twenty-domain primary corpus is a definitive critical edition.
 
 ## Current revision 7.2 downloadable editions
 
