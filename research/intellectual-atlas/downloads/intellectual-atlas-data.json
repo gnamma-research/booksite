@@ -3388,6 +3388,42 @@
       "type": "specialist secondary account",
       "accessed": "2026-10-30",
       "note": "Recent scholarly investigation of Khwānsārī and his metaphysical setting; direct evidence for the specific gloss exchange requires individual manuscript collation."
+    },
+    {
+      "id": "AVP07",
+      "author": "British Library Archives & Manuscripts Catalogue",
+      "title": "Ibn Sīnā, Kitāb al-najāh, Add MS 16659, ff.35r–100v",
+      "url": "https://searcharchives.bl.uk/catalog/041-004053093",
+      "type": "manuscript catalogue",
+      "accessed": "2026-10-30",
+      "note": "Confirms the author's text in logic, physics and metaphysics; the 1768–69 date belongs to the manuscript copy, not original composition."
+    },
+    {
+      "id": "AVP08",
+      "author": "CiNii Books / Hāmid Nājī Iṣfahānī (ed.)",
+      "title": "Sharḥ Kitāb al-Najāh li-Ibn Sīnā (qism al-ilāhiyyāt), al-Isfarāʾīnī, 2004",
+      "url": "https://ci.nii.ac.jp/ncid/BA83207713",
+      "type": "bibliographical edition",
+      "accessed": "2026-10-30",
+      "note": "576-page published edition of metaphysical commentary. Author's exact dates and attribution need examination, not inferred from printing."
+    },
+    {
+      "id": "AVP09",
+      "author": "Dimitri Gutas, Stanford Encyclopedia of Philosophy",
+      "title": "Ibn Sina [Avicenna], works bibliography (ʿUyūn al-ḥikma and al-Najāt)",
+      "url": "https://plato.stanford.edu/entries/ibn-sina/",
+      "type": "specialist encyclopedia",
+      "accessed": "2026-10-30",
+      "note": "Establishes distinct Avicennian titles and major critical editions; no exact composition date is asserted for these works."
+    },
+    {
+      "id": "AVP10",
+      "author": "Wellcome Collection",
+      "title": "ʿUyūn al-ḥikma by Ibn Sīnā with Fakhr al-Dīn al-Rāzī's Sharḥ (1994 catalogue)",
+      "url": "https://wellcomecollection.org/works/frd5y363",
+      "type": "bibliographical edition",
+      "accessed": "2026-10-30",
+      "note": "Printed Arabic multi-part logic, natural philosophy and metaphysics commentary; edition dates are not composition dates."
     }
   ],
   "nodes": [
@@ -18610,6 +18646,249 @@
       "summary": true,
       "featured": false,
       "search_aliases": []
+    },
+    {
+      "id": "avicenna_najat",
+      "code": "W381",
+      "title": "al-Najāt",
+      "title_ar": "كتاب النجاة",
+      "author": "Ibn Sīnā (Avicenna)",
+      "author_dates": "d. 1037",
+      "date_label": "before 1037",
+      "date_start": null,
+      "date_end": 1037,
+      "date_status": "terminus",
+      "date_note": "Author-death upper bound only, not a known year of composition or publication.",
+      "kind": "independent",
+      "tradition": "avicennan",
+      "region": "Isfahan / Hamadan; Iran",
+      "family": "al-Najāt",
+      "sources": [
+        "AVP07",
+        "AVP09"
+      ],
+      "note": "Avicenna's philosophical compendium spanning logic, physics and metaphysics. The eighteenth-century British Library manuscript is a later witness, not evidence of composition then.",
+      "node_type": "work",
+      "original_tradition": "Avicennian reception",
+      "tags": [
+        "Independent philosophical work"
+      ],
+      "map_tags": [
+        "Source-qualified identification"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1037,
+        "anchor": 1037,
+        "kind": "upper_bound",
+        "label": "before 1037",
+        "note": "Author-death upper bound only, not a known year of composition or publication."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "isfarayini_sharh_najat",
+      "code": "W382",
+      "title": "Sharḥ Kitāb al-Najāh (qism al-ilāhiyyāt)",
+      "title_ar": "شرح كتاب النجاة لابن سينا: قسم الإلهيات",
+      "author": "Fakhr al-Dīn Muḥammad b. ʿAlī al-Isfarāʾīnī al-Nīsābūrī",
+      "author_dates": "floruit disputed; likely post-Avicennian",
+      "date_label": "undated; see bibliographical note",
+      "date_start": null,
+      "date_end": null,
+      "date_status": "unknown",
+      "date_note": "No defensible work-composition date is available from the consulted catalogue; do not plot author death as work composition.",
+      "kind": "commentary",
+      "tradition": "avicennan",
+      "region": "Nishapur / Khurasan; manuscript transmission",
+      "family": "al-Najāt",
+      "sources": [
+        "AVP08",
+        "AVP01"
+      ],
+      "note": "Substantial commentary on the metaphysics of the Najāt; printed by Ḥāmid Nājī Iṣfahānī. Author's precise dates/identity require manuscript collation; he is NOT Fakhr al-Dīn al-Rāzī.",
+      "node_type": "work",
+      "original_tradition": "Avicennian reception",
+      "tags": [
+        "Textual commentary tradition"
+      ],
+      "map_tags": [
+        "Bibliographical witness only; edition attribution requires further checking"
+      ],
+      "temporal": {
+        "start": null,
+        "end": null,
+        "anchor": null,
+        "kind": "unplaced",
+        "label": "date not established",
+        "note": "No defensible work-composition date is available from the consulted catalogue; do not plot author death as work composition."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "avicenna_uyun",
+      "code": "W383",
+      "title": "ʿUyūn al-ḥikma",
+      "title_ar": "عيون الحكمة",
+      "author": "Ibn Sīnā (Avicenna)",
+      "author_dates": "d. 1037",
+      "date_label": "before 1037",
+      "date_start": null,
+      "date_end": 1037,
+      "date_status": "terminus",
+      "date_note": "Author-death upper bound only, not a known year of composition or publication.",
+      "kind": "independent",
+      "tradition": "avicennan",
+      "region": "Iran; wider Islamic transmission",
+      "family": "ʿUyūn al-ḥikma",
+      "sources": [
+        "AVP09",
+        "AVP10"
+      ],
+      "note": "Concise philosophical compendium in logic, natural philosophy and metaphysics; later commentary by Fakhr al-Dīn al-Rāzī.",
+      "node_type": "work",
+      "original_tradition": "Avicennian reception",
+      "tags": [
+        "Independent philosophical work"
+      ],
+      "map_tags": [
+        "Source-qualified identification"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1037,
+        "anchor": 1037,
+        "kind": "upper_bound",
+        "label": "before 1037",
+        "note": "Author-death upper bound only, not a known year of composition or publication."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "razi_sharh_uyun",
+      "code": "W384",
+      "title": "Sharḥ ʿUyūn al-ḥikma",
+      "title_ar": "شرح عيون الحكمة",
+      "author": "Fakhr al-Dīn al-Rāzī",
+      "author_dates": "d. 1210",
+      "date_label": "before 1210",
+      "date_start": null,
+      "date_end": 1210,
+      "date_status": "terminus",
+      "date_note": "Author-death upper bound only, not a known year of composition or publication.",
+      "kind": "commentary",
+      "tradition": "avicennan",
+      "region": "Rayy / Khurasan; later transmission",
+      "family": "ʿUyūn al-ḥikma",
+      "sources": [
+        "AVP10"
+      ],
+      "note": "Critically engages Ibn Sīnā's compendium across logic, nature and metaphysics. The classification denotes textual reception, not doctrinal Avicennian allegiance.",
+      "node_type": "work",
+      "original_tradition": "Avicennian reception",
+      "tags": [
+        "Textual commentary tradition"
+      ],
+      "map_tags": [
+        "Source-qualified identification"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1210,
+        "anchor": 1210,
+        "kind": "upper_bound",
+        "label": "before 1210",
+        "note": "Author-death upper bound only, not a known year of composition or publication."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "fadil_hindi_awn",
+      "code": "W385",
+      "title": "ʿAwn ikhwan al-ṣafāʾ (selected marginalia on al-Shifāʾ)",
+      "title_ar": "عون إخوان الصفاء",
+      "author": "Bahāʾ al-Dīn al-Iṣfahānī (Fāḍil-i Hindī)",
+      "author_dates": "d. 1725",
+      "date_label": "before 1725",
+      "date_start": null,
+      "date_end": 1725,
+      "date_status": "terminus",
+      "date_note": "Author-death upper bound only, not a known year of composition or publication.",
+      "kind": "gloss",
+      "tradition": "avicennan",
+      "region": "Isfahan; Iranian philosophical circles",
+      "family": "al-Shifāʾ",
+      "sources": [
+        "AVP01"
+      ],
+      "note": "Shifāʾ marginalia principally on logic, with very brief metaphysics selections. Do not describe it as a complete commentary on the Ilāhiyyāt.",
+      "node_type": "work",
+      "original_tradition": "Avicennian reception",
+      "tags": [
+        "Textual commentary tradition"
+      ],
+      "map_tags": [
+        "Bibliographical witness only; edition attribution requires further checking"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1725,
+        "anchor": 1725,
+        "kind": "upper_bound",
+        "label": "before 1725",
+        "note": "Author-death upper bound only, not a known year of composition or publication."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": []
+    },
+    {
+      "id": "linjani_nur_urafa",
+      "code": "W386",
+      "title": "Nūr al-ʿurafāʾ fī sharḥ Ilāhiyyāt al-Shifāʾ",
+      "title_ar": "نور العرفاء في شرح إلهيات الشفاء",
+      "author": "Sayyid ʿAbd al-ʿAẓīm al-Linjānī",
+      "author_dates": "alive after 1816",
+      "date_label": "undated; see bibliographical note",
+      "date_start": null,
+      "date_end": null,
+      "date_status": "unknown",
+      "date_note": "No defensible work-composition date is available from the consulted catalogue; do not plot author death as work composition.",
+      "kind": "commentary",
+      "tradition": "avicennan",
+      "region": "Iran / India; manuscript transmission",
+      "family": "al-Shifāʾ",
+      "sources": [
+        "AVP01"
+      ],
+      "note": "Adjudication of Khwānsārī and Ṣadrā concerning the opening of Ibn Sīnā's Ilāhiyyāt; reported to extend only through I.4. Date unknown: author attestation after 1816 cannot date the work.",
+      "node_type": "work",
+      "original_tradition": "Avicennian reception",
+      "tags": [
+        "Textual commentary tradition"
+      ],
+      "map_tags": [
+        "Bibliographical witness only; edition attribution requires further checking"
+      ],
+      "temporal": {
+        "start": null,
+        "end": null,
+        "anchor": null,
+        "kind": "unplaced",
+        "label": "date not established",
+        "note": "No defensible work-composition date is available from the consulted catalogue; do not plot author death as work composition."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": []
     }
   ],
   "edges": [
@@ -23350,6 +23629,84 @@
       ],
       "evidence": "The Oxford study situates Khayrābādī's natural philosophy in the post-Avicennian tradition. This does not establish direct use of Ibn Sīnā's Shifāʾ, hence qualified rather than a quotation edge.",
       "evidence_kind": "specialist secondary account"
+    },
+    {
+      "id": "AVP_e09",
+      "source": "avicenna_najat",
+      "target": "isfarayini_sharh_najat",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "commentary on al-Najāt",
+      "sources": [
+        "AVP08"
+      ],
+      "evidence": "Published edition is explicitly a commentary on the metaphysics of Ibn Sīnā's Najāt.",
+      "evidence_kind": "bibliographical identification"
+    },
+    {
+      "id": "AVP_e10",
+      "source": "avicenna_uyun",
+      "target": "razi_sharh_uyun",
+      "relation": "commentary",
+      "confidence": "direct",
+      "label": "commentary on ʿUyūn",
+      "sources": [
+        "AVP10"
+      ],
+      "evidence": "Wellcome's edition catalogue identifies the two named works and their relationship.",
+      "evidence_kind": "bibliographical identification"
+    },
+    {
+      "id": "AVP_e11",
+      "source": "avicenna_shifa",
+      "target": "fadil_hindi_awn",
+      "relation": "gloss",
+      "confidence": "documented",
+      "label": "selected glosses",
+      "sources": [
+        "AVP01"
+      ],
+      "evidence": "Rizvi reports the 'ʿAwn ikhwan al-ṣafāʾ' gloss, predominantly on logic and with short metaphysics selections. Full primary-text collation is outstanding.",
+      "evidence_kind": "scholarly bibliography"
+    },
+    {
+      "id": "AVP_e12",
+      "source": "avicenna_shifa",
+      "target": "linjani_nur_urafa",
+      "relation": "commentary",
+      "confidence": "documented",
+      "label": "partial metaphysics adjudication",
+      "sources": [
+        "AVP01"
+      ],
+      "evidence": "Rizvi records the named partial commentary up to book I.4; it is not a comprehensive Shifāʾ commentary.",
+      "evidence_kind": "scholarly bibliography"
+    },
+    {
+      "id": "AVP_e13",
+      "source": "khwansari_husayn_shifa",
+      "target": "linjani_nur_urafa",
+      "relation": "textual_use",
+      "confidence": "qualified",
+      "label": "reported adjudication",
+      "sources": [
+        "AVP01"
+      ],
+      "evidence": "Rizvi reports Linjānī's comparison with Khwānsārī; direct lemmata not yet collated.",
+      "evidence_kind": "scholarly bibliography"
+    },
+    {
+      "id": "AVP_e14",
+      "source": "sadra_shifa",
+      "target": "linjani_nur_urafa",
+      "relation": "textual_use",
+      "confidence": "qualified",
+      "label": "reported adjudication",
+      "sources": [
+        "AVP01"
+      ],
+      "evidence": "Rizvi reports Linjānī's comparison with Ṣadrā; this does not establish wholesale doctrinal agreement.",
+      "evidence_kind": "scholarly bibliography"
     }
   ],
   "notes": [
@@ -25280,7 +25637,7 @@
       "present": true
     }
   ],
-  "revision": "neoplatonic-bridge-7-2026-10-29",
+  "revision": "avicennian-extension-8-2026-10-30",
   "history": {
     "periods": [
       {
@@ -28848,7 +29205,9 @@
         "avicenna_corpus",
         "avicenna_theology_notes",
         "avicenna_lambda",
-        "avicenna_danishnama"
+        "avicenna_danishnama",
+        "avicenna_najat",
+        "avicenna_uyun"
       ]
     },
     {
@@ -29008,7 +29367,8 @@
         "razi_mulakhkhas",
         "razi_muhassal",
         "razi_arba_in",
-        "razi_matalib"
+        "razi_matalib",
+        "razi_sharh_uyun"
       ]
     },
     {
@@ -29903,7 +30263,8 @@
       "id": "author_1b192332d4",
       "name": "Muḥammad Mahdī al-Narāqī",
       "date_labels": [
-        "d. 1794/5"
+        "d. 1794/5",
+        "d. 1794/95"
       ],
       "works": [
         "naraqi_shifa",
@@ -30413,6 +30774,46 @@
       "works": [
         "malikshahi_isharat"
       ]
+    },
+    {
+      "id": "author_extended_khwansari_husayn_shifa_second",
+      "name": "Āqā Ḥusayn al-Khwānsārī",
+      "date_labels": [
+        "d. 1686/87"
+      ],
+      "works": [
+        "khwansari_husayn_shifa_second"
+      ]
+    },
+    {
+      "id": "author_extended_isfarayini_sharh_najat",
+      "name": "Fakhr al-Dīn Muḥammad b. ʿAlī al-Isfarāʾīnī al-Nīsābūrī",
+      "date_labels": [
+        "floruit disputed; likely post-Avicennian"
+      ],
+      "works": [
+        "isfarayini_sharh_najat"
+      ]
+    },
+    {
+      "id": "author_extended_fadil_hindi_awn",
+      "name": "Bahāʾ al-Dīn al-Iṣfahānī (Fāḍil-i Hindī)",
+      "date_labels": [
+        "d. 1725"
+      ],
+      "works": [
+        "fadil_hindi_awn"
+      ]
+    },
+    {
+      "id": "author_extended_linjani_nur_urafa",
+      "name": "Sayyid ʿAbd al-ʿAẓīm al-Linjānī",
+      "date_labels": [
+        "alive after 1816"
+      ],
+      "works": [
+        "linjani_nur_urafa"
+      ]
     }
   ],
   "tahdhib_revision": {
@@ -30451,11 +30852,13 @@
         "jilveh_shifa",
         "motahhari_shifa",
         "sabzawari_baqir_shifa",
-        "khwansari_husayn_shifa_second"
+        "khwansari_husayn_shifa_second",
+        "fadil_hindi_awn",
+        "linjani_nur_urafa"
       ],
-      "record_count": 10,
-      "within_family_relationships": 12,
-      "explicit_commentary_links": 9,
+      "record_count": 12,
+      "within_family_relationships": 16,
+      "explicit_commentary_links": 11,
       "scope": "Avicenna's summa and later commentaries on its metaphysics, including continuing Iranian Avicennism."
     },
     {
@@ -30476,6 +30879,34 @@
       "within_family_relationships": 8,
       "explicit_commentary_links": 4,
       "scope": "Rāzī, Ṭūsī and later commentaries, comparisons and adjudication of Avicenna's text."
+    },
+    {
+      "id": "najat",
+      "label": "al-Najāt and its commentaries",
+      "section": "Philosophical works and reception",
+      "root": "avicenna_najat",
+      "member_ids": [
+        "avicenna_najat",
+        "isfarayini_sharh_najat"
+      ],
+      "record_count": 2,
+      "within_family_relationships": 1,
+      "explicit_commentary_links": 1,
+      "scope": "A distinct Avicennian compendium and its medieval metaphysics commentary. Unknown composition years remain unplaced."
+    },
+    {
+      "id": "uyun",
+      "label": "ʿUyūn al-ḥikma and its commentary",
+      "section": "Philosophical works and reception",
+      "root": "avicenna_uyun",
+      "member_ids": [
+        "avicenna_uyun",
+        "razi_sharh_uyun"
+      ],
+      "record_count": 2,
+      "within_family_relationships": 1,
+      "explicit_commentary_links": 1,
+      "scope": "Avicenna's concise philosophical compendium and Fakhr al-Dīn al-Rāzī's extensive three-part commentary."
     },
     {
       "id": "hidaya",
@@ -30808,7 +31239,7 @@
     "membership": "Current recorded works connected by an identified source-text, commentary or gloss family; selected cross-referencing works explicitly included. Broader doctrinal influence is not automatically membership.",
     "uncertainty": "Family membership does not imply doctrinal assent or manuscript collation; the catalogue and relationship evidence control claims.",
     "selective_coverage": true,
-    "revision": "textual-family-explorer-2026-10-29"
+    "revision": "textual-family-explorer-2026-10-30"
   },
   "avicennian_supplement": {
     "date": "2026-10-30",
