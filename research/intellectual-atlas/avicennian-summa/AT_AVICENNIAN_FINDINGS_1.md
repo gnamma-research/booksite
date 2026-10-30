@@ -201,3 +201,8 @@ Distinguish temporal beginning (ḥudūth zamānī), essential dependence (ḥud
 ## 1.11 — epistemic and doctrinal transmission
 
 Track distinct transmission routes: Avicennian Shifāʾ/Ishārāt; Rāzian objections; Ṭūsī's replies; Abharī and Kātibī logic; Suhrawardī; Dawwānī; Tajrīd commentary clusters; Ṣadrā and his critics; nineteenth-century Persian and Indian scholastic continuations. Do not assign a single continuous doctrinal position to this diverse network. Each purported innovation needs a before/after textual pair. **Source status:** historiographical schema.
+
+
+## 1.12 — AT comparative adjudication
+
+An acceptable synthesis must distinguish vertical existential dependence, horizontal proximate causation, divine concurrence, cosmological mediation and substantial generation. The claim that God works through secondary causes is not sufficient to settle whether a separate Active Intellect bestows the form. Aquinas' doctrine that the composite is generated through natural agency is a live disagreement with classical Avicennian bestowal, despite strong structural convergence in hylomorphism. **Source status:** cumulative reasoned verdict, not claim of textual identity.
