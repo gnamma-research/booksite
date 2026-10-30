@@ -1,6 +1,16 @@
 # HANDOFF CURRENT — GNAMMA AVICENNIAN SUMMA
 **Cumulative release handoff, 30 October 2026.** This is the authoritative restart file for subsequent chats and tools. **Read [Stage 3](handoffs/STAGE_03_RELEASE_HANDOFF.md) for the full self-contained history and exact provenance.**
 
+## Stage 4 update — 31 October 2026 (current primary translations)
+
+**Read [Stage 4 cumulative handoff](handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md).** The ten chapters remain intact; this stage adds three complete **bounded** translated argument units and a static HTML primary translation reader. **New public reading entry:** [primary-translations.html](primary-translations.html).
+
+- **Ibn Sīnā VI.2, pp.263–267:** [full English chapter, Fascicle B](PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md).
+- **Ibn Sīnā IX.5, pp.409–413:** [full English chapter on the Giver of Forms, Fascicle D](PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md).
+- **Lāhījī I:90–93:** [full English of Issues 23–24, Fascicle C](PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md).
+
+The site front page, chapter index and existing ten-chapter reader have links to the new public translation page. A successful source commit does not prove live deployment or manuscript collation; these remain separately auditable. The twenty-domain remit and Stage 01–03 corrections below all remain authoritative.
+
 ## Purpose
 Reconstruct the **whole mature Avicennian system**, tracing Ibn Sīnā through Rāzī/Ṭūsī, the later *Tajrīd/Mawāqif/Maqāṣid* commentaries, Illuminationist/Akbarian/Ṣadrian objections, late Peripatetic synthesis, and a precise Aristotelian–Thomistic comparison in **20 philosophical domains**. The point is not merely the Giver of Forms or regress. Preserve complete text, objections, replies, actual historical differences and useful AT convergence.
 
