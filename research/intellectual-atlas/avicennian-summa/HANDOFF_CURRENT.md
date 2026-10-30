@@ -1,0 +1,46 @@
+# HANDOFF CURRENT — GNAMMA AVICENNIAN SUMMA
+**Cumulative release handoff, 30 October 2026.** This is the authoritative restart file for subsequent chats and tools. **Read [Stage 3](handoffs/STAGE_03_RELEASE_HANDOFF.md) for the full self-contained history and exact provenance.**
+
+## Purpose
+Reconstruct the **whole mature Avicennian system**, tracing Ibn Sīnā through Rāzī/Ṭūsī, the later *Tajrīd/Mawāqif/Maqāṣid* commentaries, Illuminationist/Akbarian/Ṣadrian objections, late Peripatetic synthesis, and a precise Aristotelian–Thomistic comparison in **20 philosophical domains**. The point is not merely the Giver of Forms or regress. Preserve complete text, objections, replies, actual historical differences and useful AT convergence.
+
+## Repository and exact entry points
+- [GitHub repository](https://github.com/gnamma-research/booksite): `research/intellectual-atlas/avicennian-summa/`
+- [Integrated bilingual reader](chapters/reader.html#ch01) · ten chapter IDs `ch01` … `ch10`.
+- [Chapter directory](chapters/index.html) · [whole research map](COMPREHENSIVE_SYSTEM.md) · [source bibliography](SOURCE_REGISTER.md) · [20-domain evidence audit](SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md).
+- [Stage 1 corpus audit](handoffs/STAGE_01_CORPUS_AUDIT.md) → [Stage 2 ten-chapter integration](handoffs/STAGE_02_TEN_CHAPTER_EDITION.md) → [Stage 3 full cumulative handoff](handoffs/STAGE_03_RELEASE_HANDOFF.md).
+- Atlas canonical JSON `../downloads/intellectual-atlas-data.json` (386 work/context records / 362 links / 359 scholarly sources / 20 textual families). Off-site source PDFs are **not redistributed**.
+
+## All ten scholarly chapters
+01 [Mental existence and quiddity](chapters/01-mental-existence-and-quiddity.md);
+02 [Making and causal explanation](chapters/02-making-and-causal-explanation.md);
+03 [Substantial motion](chapters/03-substantial-motion-dispute.md);
+04 [Intellect and personal identity](chapters/04-intellect-soul-and-identity.md);
+05 [Four causes and Giver of Forms](chapters/05-four-causes-form-bestowal.md);
+06 [Divine agency and plurality](chapters/06-divine-agency-necessity-and-plurality.md);
+07 [Narāqī on divine knowledge and unity](chapters/07-unity-plurality-and-divine-knowledge.md);
+08 [Universals, quiddity and *nafs al-amr*](chapters/08-universals-quiddity-nafs-al-amr.md);
+09 [Mawāqif/Maqāṣid on matter and mental existence](chapters/09-mawaqif-maqasid-hylomorphism-mental-existence.md);
+10 [Conservation, First Cause and secondary agency](chapters/10-conservation-first-cause-and-secondary-agency.md).
+
+Additional inherited work: `primary-translation-causation.md`, `causal-dependence.html`, `AT_AVICENNIAN_FINDINGS_1.md`, `PRIMARY_TEXT_CROSSWALK_01.md`, `four-causes-and-forms-research.md`. Do **not** overwrite.
+
+## Most important source-critical corrections
+1. **Ibn Sīnā's direct conservation argument already appears at *Ilāhiyyāt* VI.1, pp.261–262** in the checked printed edition. The **VI.2 heading is at p.264**. Do not credit Narāqī with first inventing continual dependence.
+2. **Aquinas, *ST* I.104.2 expressly allows created intermediary conserving causes**, subordinate to divine primary conservation; do not contrast “Avicenna's intermediaries” with “Aquinas's exclusion of intermediaries.”
+3. Still distinguish *cause of coming-to-be*, *cause of form*, *cause of continuing being*, and the First's transcendental causation; real difference about separate intellects and divine free willing remains.
+4. Do not treat Lāhījī's quoted *Maqāṣid/Mawāqif* authors as direct readings of separate editions, or print variants as original manuscript collation.
+5. The reported work titled *Ithbāt al-ḥaraka al-jawhariyya* makes Jilwa's precise position unverified; inspect the text rather than asserting universal opposition to Ṣadrā.
+6. Shared concept of being, gradation, existential participation and strong *waḥdat al-wujūd* are separate propositions; never infer one automatically from another.
+
+## Completion and remaining work
+**Complete for current release scope:** ten chapter texts in Markdown, connected reader and evidence-graded comparison, navigable GNAMMA chapter index, three cumulative handoff milestones, source register and offline packaging configuration.
+
+**Not complete:** exhaustive full Arabic/Persian/Latin edition for all 20 domains; independent manuscript variants, late natural-philosophy writings of all authors, and every full objection–reply exchange. These must continue under the same handoff protocol. Site/browser CI status must be checked on the pull request, and a successful merge verified before claiming the site is live.
+
+## How to continue correctly
+1. Read this file and Stage 3; inspect current branch/PR rather than relying on memory.
+2. Compare every new claim against precise primary text, noting edition, printed page and authorial layer.
+3. Work on **complete bounded argument units** (Arabic/Persian/Latin + faithful English), objections and replies, and then comparative adjudication, rather than writing more outlines.
+4. Extend each stage handoff **cumulatively**, keep a timestamped immutable stage file and update this pointer.
+5. Update reader, source register, static tests, browser QA, offline builder, and site; run checks before merging.
