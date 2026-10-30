@@ -2,11 +2,47 @@
 (function(){
 'use strict';
 const R=window.BahrReader,$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],E=R.E;
-const icon=n=>'<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-'+n+'"></use></svg>';
+const icon=n=>window.GnammaBookmarkUI&&['bookmark','notes'].includes(n)?(n==='notes'?GnammaBookmarkUI.noteIcon():GnammaBookmarkUI.icon()).replace('class="','class="icon '):'<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-'+n+'"></use></svg>';
 const storageKey='gnamma-bahr-vol1-';
+
+const history=window.GnammaNavigationHistory.create({validSection:id=>R.byId.has(id)});
+let lastSnapshot=null,skipTrail=false;
+function snapshot(){
+ const p=R.visiblePlace();if(!p)return lastSnapshot;
+ const nodes=[...document.querySelectorAll('#unit-'+CSS.escape(p.r)+' [data-anchor]')],i=nodes.findIndex(x=>x.id===p.anchor);
+ return {section:p.r,y:scrollY,anchor:i>=0?{segment:String(i),top:document.getElementById(p.anchor)?.getBoundingClientRect().top||0}:null,at:Date.now()};
+}
+async function visitPlace(p){
+ if(!p)return;skipTrail=true;R.closeSheet();const records=await R.record(p.section),unit=document.createElement('div');unit.innerHTML=R.unitHTML(records);
+ const anchor=p.anchor?unit.querySelectorAll('[data-anchor]')[Number(p.anchor.segment)]?.id:'';
+ location.hash=R.readURL(p.section,anchor||'');
+}
+function historyPanel(){
+ if(!$('#contents-query')||$('#reading-history'))return;
+ const root=document.createElement('div');root.id='reading-history';
+ root.innerHTML='<div class="desk-toolbar"><button type="button" data-history="back" '+(!history.previous()?'disabled':'')+'>↶ Back</button><button type="button" data-history="forward" '+(!history.next()?'disabled':'')+'>Forward ↷</button></div><details><summary>Recent places</summary><div class="panel-nav">'+history.recentList().slice(0,16).map((p,i)=>'<button type="button" data-history-visit="'+i+'">'+E(R.byId.get(p.section)?.title||p.section)+'</button>').join('')+'</div><button type="button" data-history="clear">Clear recent places</button></details>';
+ $('#contents-query').parentElement.after(root);
+}
+document.addEventListener('click',event=>{
+ if(['previous','next'].includes(event.target.closest('button')?.id))skipTrail=true;
+ const button=event.target.closest('[data-history],[data-history-visit]');if(!button){if(R.view==='read')lastSnapshot=snapshot();return;}
+ event.preventDefault();event.stopImmediatePropagation();
+ if(button.dataset.history==='back')visitPlace(history.back(snapshot()));
+ else if(button.dataset.history==='forward')visitPlace(history.forward(snapshot()));
+ else if(button.dataset.history==='clear'){history.clear();$('#reading-history')?.remove();historyPanel();}
+ else visitPlace(history.recentVisit(Number(button.dataset.historyVisit),snapshot()));
+},true);
+window.addEventListener('hashchange',()=>{
+ const match=location.hash.match(/^#\/read\/([^?]+)/);if(!match)return;
+ const id=decodeURIComponent(match[1]);if(!R.byId.has(id))return;
+ if(lastSnapshot&&!skipTrail&&lastSnapshot.section!==id)history.record(lastSnapshot,{section:id,y:0,anchor:null,at:Date.now()});
+ skipTrail=false;lastSnapshot={section:id,y:0,anchor:null,at:Date.now()};
+});
+new MutationObserver(historyPanel).observe($('#sheet-body'),{childList:true});
+
 const transfer=window.GnammaBackupTransfer.create({
  sections:R.byId,state:{get route(){return R.view==='read'?'reader':R.view;}},
- rd:{backup:R.backup,importParsed:R.importParsed,downloadBackup:(body,name)=>R.download(name,body)},
+ rd:{backup:()=>JSON.stringify({...JSON.parse(R.backup()),readingNavigation:history.exportData()}),importParsed:(data,choice)=>{const result=R.importParsed(data,choice);if(choice.history)result.historyAdded=history.importData(data.readingNavigation);return result;},downloadBackup:(body,name)=>R.download(name,body)},
  savePrefs:R.savePrefs,applyPrefs:()=>R.setPrefs({},R.view==='read'),goSection:id=>location.hash=R.readURL(id)
 });
 function script(path){return new Promise((resolve,reject)=>{const el=document.createElement('script');el.src=path;el.onload=resolve;el.onerror=()=>{el.remove();reject(Error('Could not load '+path));};document.head.append(el);});}
@@ -19,11 +55,12 @@ function prepareSearch(){
    sections:R.catalog,glossary:dictionary.map(d=>({term:d.term,ar:d.ar,definition:d.gloss})),
    index:indices.topics.map(x=>({term:x.h,sub:(x.subs||[]).map(y=>({label:y.t,sections:[...new Set((y.refs||[]).map(ref=>indices.targets[ref]?.r).filter(Boolean))]}))}))
   }};
-  await script('gnamma-search.js');
+  await script('gnamma-search.js');await script('gnamma-word-context.js');
  })().catch(err=>{searchReady=null;throw err;});
  return searchReady;
 }
-let query='',sort='created-desc',deskCategory='all';
+const wordButton=document.createElement('button');wordButton.type='button';wordButton.dataset.feature='word-context';wordButton.textContent='Word Context';$('#selection-tools').append(wordButton);
+let query='',sort='created-desc',deskCategory='all',deskSource='all';
 function enhanceDesk(){
  if(R.view!=='desk'||$('#desk-query'))return;
  const toolbar=$('#main .desk-toolbar');if(!toolbar)return;
@@ -31,6 +68,12 @@ function enhanceDesk(){
  const tabs=$('#main .index-tabs');if(tabs)tabs.innerHTML=[['all','All'],['bookmark','Bookmarks'],['highlight','Highlights'],['note','My notes']].map(([v,t])=>'<button data-desk-filter="'+v+'" aria-pressed="'+(deskCategory===v)+'">'+t+'</button>').join('')+(deskCategory==='archived'?'<span class="muted">Bin · <button data-desk-filter="all">Return to saved items</button></span>':'');
  toolbar.insertAdjacentHTML('afterend','<div class="desk-browse"><label for="desk-query">Search saved items<input type="search" id="desk-query" placeholder="Search bookmarks, highlights and notes…" value="'+E(query)+'"></label><label for="desk-sort">Sort<select id="desk-sort">'+[['created-desc','Newest saved'],['created-asc','Oldest saved'],['modified-desc','Recently edited'],['source','Text / source order'],['alpha','Title A–Z']].map(([id,label])=>'<option value="'+id+'" '+(id===sort?'selected':'')+'>'+label+'</option>').join('')+'</select></label></div>');
  $$('.desk-card').forEach(card=>{const id=card.querySelector('[data-edit-note]')?.dataset.editNote;if(id)card.dataset.deskId=id;const archive=card.querySelector('[data-archive-note]');if(archive&&archive.textContent==='Archive')archive.textContent='Move to Bin';});
+ const sourceLabel=document.createElement('label');sourceLabel.innerHTML='Saved from <select id="desk-source">'+[['all','All sources'],['text','Text passages'],['note','Source notes'],['dictionary','Dictionary'],['index','Subject index'],['question','Scholarly research'],['lesson','Study lessons']].map(([v,t])=>'<option value="'+v+'" '+(v===deskSource?'selected':'')+'>'+t+'</option>').join('')+'</select>';$('#desk-sort').parentElement.before(sourceLabel);
+ for(const card of $('.desk-card')){
+  const item=R.desk.find(x=>x.id===card.dataset.deskId);if(!item?.reference)continue;
+  card.querySelector('h3').textContent=item.reference.title;
+  const link=card.querySelector('footer a');if(link){link.textContent='Open saved source';link.dataset.savedReference=item.id;link.href='#/desk';}
+ }
  filterDesk();
 }
 function filterDesk(){
@@ -41,7 +84,7 @@ function filterDesk(){
   if(sort==='alpha')return(R.byId.get(x.r)?.title||x.r).localeCompare(R.byId.get(y.r)?.title||y.r);
   const field=sort==='modified-desc'?'updatedAt':'createdAt';return(sort==='created-asc'?1:-1)*(Date.parse(x[field])-Date.parse(y[field]));
  });
- for(const card of cards){card.hidden=!R.N(card.textContent).includes(R.N(query));$('#desk-items').append(card);}
+ for(const card of cards){const row=rows.get(card.dataset.deskId),kind=row?.reference?.kind||'text';card.hidden=!R.N(card.textContent).includes(R.N(query))||(deskSource!=='all'&&(deskSource==='note'?!['note','report','source'].includes(kind):kind!==deskSource));$('#desk-items').append(card);}
  if(!$('#desk-filter-count'))$('#desk-items').before(Object.assign(document.createElement('p'),{id:'desk-filter-count',className:'muted'}));
  $('#desk-filter-count').textContent=cards.filter(x=>!x.hidden).length+' saved items';
 }
@@ -49,6 +92,25 @@ function markdown(){
  const text=R.desk.filter(x=>!x.archived).map(x=>'## '+(R.byId.get(x.r)?.title||x.r)+'\n\n'+(x.quote?'> '+x.quote.replace(/\n/g,'\n> ')+'\n\n':'')+(x.note?x.note+'\n\n':'')+'Saved: '+x.createdAt+'\n\n'+new URL(R.readURL(x.r,x.anchor,x.lang),location.href).href).join('\n\n---\n\n');
  R.download('Ibn-Ajiba-reading-notes.md','# Reading Desk\n\n'+text,'text/markdown;charset=utf-8');
 }
+
+function referenceControls(){
+ const ref=$('#sheet').dataset.savedReference;if(!ref||$('#save-source-reference'))return;
+ const button=document.createElement('button');button.id='save-source-reference';button.type='button';button.dataset.feature='save-reference';button.innerHTML=icon('bookmark')+' Bookmark source';
+ $('#sheet-body').prepend(button);
+}
+function sourceSaveControls(){
+ if(R.view==='indices')for(const details of $('#index-results>details')){
+  if(details.querySelector('[data-save-index]'))continue;const title=details.querySelector('summary').textContent,key=$('[data-index][aria-pressed="true"]')?.dataset.index||'topics';
+  const button=document.createElement('button');button.type='button';button.dataset.saveIndex=key+'|'+title;button.dataset.sourceTitle=title;button.innerHTML=icon('bookmark')+' Bookmark index entry';details.append(button);
+ }
+ if(R.view==='study')for(const details of $('.guide-list>details')){
+  if(details.querySelector('[data-save-lesson]'))continue;const title=details.querySelector('summary').textContent.replace(/^\s*\d+\s*/,'').trim();
+  const button=document.createElement('button');button.type='button';button.dataset.saveLesson=title;button.innerHTML=icon('bookmark')+' Bookmark lesson';details.append(button);
+ }
+}
+window.addEventListener('bahr-reference-open',referenceControls);
+new MutationObserver(sourceSaveControls).observe($('#main'),{childList:true,subtree:true});
+
 const printDefaults={tier:'reading',en:true,ar:true,marks:'source',notes:'none',headings:'original',glossary:false,index:false,research:false,sources:false,personal:false,bookmarks:false,highlights:false,dates:true,order:'source',start:0,end:388};
 let printPrefs={...printDefaults};
 const select=(id,options,value)=>'<select data-print-option="'+id+'" id="print-'+id+'">'+options.map(([v,t])=>'<option value="'+v+'" '+(String(value)===String(v)?'selected':'')+'>'+E(t)+'</option>').join('')+'</select>';
@@ -141,6 +203,8 @@ document.addEventListener('click',async event=>{
  const button=event.target.closest('button,a');if(!button)return;
  const d=button.dataset;
  if(d.deskFilter){deskCategory=d.deskFilter;return;}
+ if(d.savedReference){event.preventDefault();event.stopImmediatePropagation();const row=R.desk.find(x=>x.id===d.savedReference);if(row?.reference)await R.openReference(row.reference);return;}
+ if(d.saveIndex||d.saveLesson){event.preventDefault();event.stopImmediatePropagation();R.addReference({kind:d.saveIndex?'index':'lesson',id:d.saveIndex||d.saveLesson,title:d.sourceTitle||d.saveLesson});return;}
  if(button.id==='searchBtn'){event.preventDefault();event.stopImmediatePropagation();try{await prepareSearch();R.closeSheet();window.GnammaUnifiedSearch.open();}catch(err){R.toast(err.message);location.hash='#/search';}return;}
  if(!d.feature&&!d.printTier&&!d.printToggle&&!d.downloadType)return;
  event.preventDefault();event.stopImmediatePropagation();
@@ -149,6 +213,8 @@ document.addEventListener('click',async event=>{
   if(d.printTier){printPrefs.tier=d.printTier;Object.assign(printPrefs,d.printTier==='reading'?{notes:'none',index:false,glossary:false,research:false,sources:false}:d.printTier==='study'?{notes:'selected',index:true,glossary:false,research:false,sources:false}:{notes:'full',index:true,glossary:true,research:true,sources:true,headings:'editorial'});refreshPrintOptions();return;}
   if(d.printToggle){if(d.printToggle==='en'){if(!printPrefs.en||printPrefs.ar)printPrefs.en=!printPrefs.en;}else if(!printPrefs.ar){printPrefs.ar=true;printPrefs.marks='unvowelled';}else if(printPrefs.marks==='unvowelled')printPrefs.marks='source';else if(printPrefs.en)printPrefs.ar=false;else printPrefs.marks='unvowelled';refreshPrintOptions();return;}
   switch(d.feature){
+   case'save-reference':R.addReference(JSON.parse($('#sheet').dataset.savedReference));break;
+   case'word-context':{const selection=R.selected;if(!selection||selection.lang!=='ar'){R.toast('Select an Arabic word in the text.');break;}await prepareSearch();if(!window.GnammaWordContext.openSelectedQuote(selection))R.toast('Select one Arabic word to inspect its source occurrence.');break;}
    case'transfer':R.closeSheet();transfer.open();break;
    case'new-note':R.annotation('note',R.current||'preface');break;
    case'markdown':markdown();break;
@@ -161,7 +227,7 @@ document.addEventListener('click',async event=>{
  }catch(err){R.toast(err.message);}
 },true);
 document.addEventListener('input',event=>{if(event.target.id==='desk-query'){query=event.target.value;filterDesk();}});
-document.addEventListener('change',event=>{const t=event.target;if(t.id==='desk-sort'){sort=t.value;filterDesk();}if(t.dataset.printOption){const k=t.dataset.printOption;if(Object.hasOwn(printPrefs,k))printPrefs[k]=t.type==='checkbox'?t.checked:t.value;}});
+document.addEventListener('change',event=>{const t=event.target;if(t.id==='desk-sort'){sort=t.value;filterDesk();}if(t.id==='desk-source'){deskSource=t.value;filterDesk();}if(t.dataset.printOption){const k=t.dataset.printOption;if(Object.hasOwn(printPrefs,k))printPrefs[k]=t.type==='checkbox'?t.checked:t.value;}});
 document.addEventListener('keydown',event=>{
  const editable=event.target.matches?.('input,textarea,select,[contenteditable="true"]');
  if(((event.ctrlKey||event.metaKey)&&event.key.toLowerCase()==='k')||(event.key==='/'&&!editable&&!event.altKey&&!event.ctrlKey&&!event.metaKey)){
@@ -174,6 +240,6 @@ document.addEventListener('keydown',event=>{
  }
 });
 new MutationObserver(()=>{enhanceDesk();enhanceDownloads();}).observe($('#main'),{childList:true});
-window.BahrFeatures={prepareSearch,transfer,prepareBook,printShell};
+window.BahrFeatures={prepareSearch,transfer,prepareBook,printShell,history};
 enhanceDesk();enhanceDownloads();
 })();

@@ -186,7 +186,7 @@ function buildCore(){
   const type=({arabic:'text',english:'text',passage:'text',notes:'note',reports:'source',sources:'source',dictionary:'dictionary',indices:'concept',questions:'application'})[r.kind]||'study';
   const section=r.r||'',meta=R.byId.get(section),id=r.kind+':'+(r.anchor||r.id||i);
   return entry({id,sourceId:r.id,sourceKind:r.kind,type,section,anchor:r.anchor||'',segment:i,
-   title:r.title||meta?.title||'',locator:meta?.q||r.id||'',subtype:({arabic:'Arabic text',english:'English text',notes:'Translator annotation',reports:'Report dossier',sources:'Source reference',dictionary:'Historical dictionary',questions:'Critical question',indices:'Subject index'})[r.kind]||r.kind,
+   title:r.title||meta?.title||'',locator:meta?.q||r.id||'',subtype:({arabic:'Authorial text',english:'Authorial text',notes:'Translator annotation',reports:'Report dossier',sources:'Source reference',dictionary:'Historical dictionary',questions:'Critical question',indices:'Subject index'})[r.kind]||r.kind,
    ar:r.kind==='arabic'?r.text:'',en:r.kind==='english'?r.text:'',body:['arabic','english'].includes(r.kind)?'':r.text||'',related:r.refs||[]});
  });
 }

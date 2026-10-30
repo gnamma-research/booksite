@@ -236,3 +236,5 @@ body:has(#bahr-print-overlay){overflow:hidden}.gn-transfer-dialog .gn-transfer-c
 @media(max-width:520px){.share-mode-options{grid-template-columns:1fr}}
 
 .linked-range{box-shadow:inset 3px 0 0 var(--accent);background:var(--accent-soft,var(--surface-alt));padding-inline:12px}
+
+.desk-browse{grid-template-columns:minmax(0,1fr) minmax(140px,.4fr) minmax(160px,.4fr)}#save-source-reference{margin-bottom:18px}#reading-history{margin:15px 0}#reading-history .panel-nav{max-height:220px;overflow:auto}.gn-bm-ribbon,.gn-note-icon,.gn-highlight-icon{width:20px;height:20px}#selection-tools{max-width:calc(100vw - 16px);flex-wrap:wrap}#selection-tools .icon{width:18px;height:18px}@media(max-width:700px){.desk-browse{grid-template-columns:1fr}}

@@ -16,12 +16,12 @@ function citation(r,anchor,quote){const base='Ibn ʿAjība, The Immense Ocean (a
 function validateDesk(data){
  if(!data||data.format!=='gnamma-reading-desk'||data.work!=='ibn-ajiba-bahr-vol1'||data.version!==1||!Array.isArray(data.items))throw Error('This is not a Baḥr al-Madīd Reading Desk backup.');
  if(data.items.length>5000)throw Error('This backup exceeds 5,000 entries.');
- return data.items.map(x=>{if(!x||typeof x.id!=='string'||x.id.length>180||!['bookmark','note','highlight'].includes(x.type)||typeof x.r!=='string'||!Number.isFinite(Date.parse(x.createdAt)))throw Error('The backup contains an invalid entry.');return{id:x.id,type:x.type,r:x.r.slice(0,100),anchor:String(x.anchor||'').slice(0,200),lang:['ar','en'].includes(x.lang)?x.lang:'en',quote:String(x.quote||'').slice(0,20000),note:String(x.note||'').slice(0,20000),createdAt:x.createdAt,updatedAt:Number.isFinite(Date.parse(x.updatedAt))?x.updatedAt:x.createdAt,archived:!!x.archived};});
+ return data.items.map(x=>{if(!x||typeof x.id!=='string'||x.id.length>180||!['bookmark','note','highlight'].includes(x.type)||typeof x.r!=='string'||!Number.isFinite(Date.parse(x.createdAt)))throw Error('The backup contains an invalid entry.');if(x.reference&&(!['note','report','source','question','dictionary','index','lesson'].includes(x.reference.kind)||typeof x.reference.id!=='string'||x.reference.id.length>500))throw Error('The backup contains an invalid source reference.');return{...(x.reference?{reference:{kind:x.reference.kind,id:x.reference.id,title:String(x.reference.title||'').slice(0,500)}}:{}),id:x.id,type:x.type,r:x.r.slice(0,100),anchor:String(x.anchor||'').slice(0,200),lang:['ar','en'].includes(x.lang)?x.lang:'en',quote:String(x.quote||'').slice(0,20000),note:String(x.note||'').slice(0,20000),createdAt:x.createdAt,updatedAt:Number.isFinite(Date.parse(x.updatedAt))?x.updatedAt:x.createdAt,archived:!!x.archived};});
 }
 function mergeDesk(existing,incoming){
  const out=existing.map(x=>({...x}));let added=0,conflicts=0;
- const fields=['type','r','anchor','lang','quote','note','createdAt','archived'];
- const same=(a,b)=>fields.every(k=>(a[k]??'')===(b[k]??''));
+ const fields=['type','r','anchor','lang','quote','note','createdAt','archived','reference'];
+ const same=(a,b)=>fields.every(k=>JSON.stringify(a[k]??'')===JSON.stringify(b[k]??''));
  for(const x of incoming){
   const found=out.find(y=>y.id===x.id);
   if(!found){out.push({...x});added++;continue;}

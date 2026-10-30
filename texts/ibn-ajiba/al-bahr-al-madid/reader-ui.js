@@ -3,7 +3,13 @@
 (function(){
 'use strict';
 const R=window.BahrReader,$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],E=R.E;
-const icon=name=>'<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-'+name+'"></use></svg>';
+const icon=name=>{
+ const shared=window.GnammaBookmarkUI;
+ if(shared&&['bookmark','bookmark-filled','highlight','notes'].includes(name)){
+  const svg=name==='highlight'?shared.highlightIcon():name==='notes'?shared.noteIcon():shared.icon({saved:name==='bookmark-filled'});
+  return svg.replace('class="','class="icon ');
+ }
+ return '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-'+name+'"></use></svg>';};
 const button=(action,label,glyph)=>'<button type="button" data-ui="'+action+'" aria-label="'+E(label)+'" title="'+E(label)+'">'+icon(glyph)+'</button>';
 const palettes=[
  ['almohad','Almohad plaster',['#f3eee6','#fdfaf4','#82503d','#292d2a','#8b7350']],
@@ -89,7 +95,7 @@ function dock(id){
  if(next){next.innerHTML='<span>'+(r.index<388?r.index+2:'')+'</span>'+icon('right');next.setAttribute('aria-label','Next section'+(r.index<388?' '+(r.index+2):''));}
  const active=R.desk.filter(x=>!x.archived&&x.r===id),bookmarked=active.some(x=>x.type==='bookmark'&&x.anchor==='unit-'+id),save=$('#readerSaveAction');
  if(save){save.innerHTML=icon(bookmarked?'bookmark-filled':'bookmark');save.setAttribute('aria-pressed',String(bookmarked));save.setAttribute('aria-label',bookmarked?'Section bookmarked; open Reading Desk':'Bookmark section');}
- const counts=$('#saved-counts');if(counts){const markup=['bookmark','highlight','note'].map(kind=>{const n=active.filter(x=>x.type===kind).length;return n?'<button type="button" data-ui="saved" aria-label="'+n+' saved '+kind+' items">'+icon(kind==='bookmark'?'bookmark-filled':kind==='note'?'notes':'check')+'<span>'+n+'</span></button>':'';}).join('');if(counts.innerHTML!==markup)counts.innerHTML=markup;counts.hidden=!markup;}
+ const counts=$('#saved-counts');if(counts){const markup=['bookmark','highlight','note'].map(kind=>{const n=active.filter(x=>x.type===kind).length;return n?'<button type="button" data-ui="saved" aria-label="'+n+' saved '+kind+' items">'+icon(kind==='bookmark'?'bookmark-filled':kind==='note'?'notes':'highlight')+'<span>'+n+'</span></button>':'';}).join('');if(counts.innerHTML!==markup)counts.innerHTML=markup;counts.hidden=!markup;}
 }
 async function set(values,repaint=false){await R.setPrefs(values,repaint);sync();}
 async function readingMode(mode){

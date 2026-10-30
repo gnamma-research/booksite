@@ -196,7 +196,42 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await page.locator('#desk-query').fill('Selectively restored');assert.equal(await page.locator('.desk-card:visible').count(),1);
  await page.locator('#desk-query').fill('');await page.locator('#desk-sort').selectOption('created-asc');
  pass('Four download purposes, customized print preview, selective backup restore, dates and Reading Desk filtering work');
+
+ await page.evaluate(()=>BahrReader.closeSheet());
+ await go('dictionary');await page.locator('.dictionary-card').first().click();
+ await page.locator('[data-feature="save-reference"]').click();await page.locator('#sheet-close').click();
+ await go('desk');await page.locator('#desk-source').selectOption('dictionary');
+ assert.equal(await page.locator('.desk-card:visible').count(),1);
+ await page.locator('[data-saved-reference]').click();await page.locator('#sheet[open]').waitFor();
+ assert((await page.locator('#sheet-kicker').textContent()).includes('HISTORICAL DICTIONARY'));
+ await page.locator('#sheet-close').click();
+ const refBackup=await page.evaluate(()=>JSON.parse(BahrReader.backup()));
+ assert(refBackup.items.some(x=>x.reference?.kind==='dictionary'));
+ const preserved=await page.evaluate(b=>BahrCore.validateDesk(b).filter(x=>x.reference).length,refBackup);
+ assert(preserved>0);
+ await go('read/preface');await page.evaluate(()=>BahrFeatures.prepareSearch());
+ const inspected=await page.evaluate(()=>{
+  const p=document.querySelector('.ar-column [data-anchor]');
+  const quote=p.textContent.trim();
+  return GnammaWordContext.openSelectedQuote({r:'preface',anchor:p.id,lang:'ar',quote});
+ });
+ assert(inspected);await page.locator('#gnamma-word-context').waitFor();
+ assert((await page.locator('#gnamma-word-context').innerText()).includes('Word in this passage'));
+ await page.locator('.gnw-card [data-gnw-close]').click();
+ await page.locator('#location-button').click();
+ await page.locator('.toc-link').nth(1).click();await page.locator('#unit-'+catalog[1].id).waitFor();
+ await page.locator('#location-button').click();assert(await page.locator('#reading-history').count());
+ assert((await page.evaluate(()=>BahrFeatures.history.exportData())).entries.length>=2);
+ await page.locator('#sheet-close').click();
+ pass('Saved source references survive backups; source reopening, explicit Word Context and recent reading locations work');
+
  assert.deepEqual(errors,[]);pass('No uncaught browser errors or failed reader requests');
+
+ await page.setViewportSize({width:390,height:844});await go('read/preface');await page.screenshot({path:path.join(out,'reader-phone.png')});
+ const reference=await context.newPage();
+ await reference.goto(new URL('../../../daruri/#section=1',url).href);
+ await reference.locator('#reader').waitFor({timeout:60000});
+ await reference.screenshot({path:path.join(out,'daruri-phone.png')});await reference.close();
  await context.close();
  const offlineContext=await browser.newContext();const offlinePage=await offlineContext.newPage();
  await offlinePage.goto(url+'#/editions');await offlinePage.locator('[data-download-type="offline"]').waitFor();
