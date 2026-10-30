@@ -114,3 +114,24 @@ We reply: The efficient cause acts in respect of the continuation and persistenc
 5. Supply full footnotes with variant editions and cross-school arguments.
 
 **No complete collation or full translation is claimed in this version.**
+
+
+## Supplement — full explanatory-priority argument and modal objection (I:38–39)
+
+**Arabic**
+
+وأيضا لو كان الحدوث علّة الاحتياج لزم تقدّم الشيء على نفسه بمراتب. بيانه : انّ الحدوث كيفية الوجود ووصف له ـ لانّه عبارة عن مسبوقية الوجود بالعدم ـ ، فتأخّر الوجود المتأخّر عن الايجاد المتاخّر عن الاحتياج ، لانّ الشيء إذا لم يكن محتاجا إلى المؤثّر لم يتصوّر تأثيره فيه ـ كما في الواجب والممتنع ـ ، فالايجاد فرع الاحتياج والاحتياج متأخّر عن علّته ـ لوجوب تقدّم العلّة على المعلول ـ ، فلو كان الحدوث علّة للاحتياج أو جزء لها أو شرطا لها وجب تقدّمه على الاحتياج المتقدّم على الايجاد المتقدّم على الوجود المتقدّم على الحدوث ، فيلزم تقدّمه على نفسه بأربع مراتب ـ على تقدير العلّية والشرطية ـ ، وبخمس مراتب ـ على تقدير الجزئية ، لوجوب تقدّم جزء العلّة عليها ـ. وأمّا الامكان فلا ريب في انّه مقدّم على الاحتياج بالذات لعدم تصوّر الاحتياج بدون تصوّر الامكان.
+
+**Translation**
+
+Moreover, were temporal origination the cause of dependence, a thing would have to precede itself by several ranks. Origination is a mode and attribute of existence, since it means that existence is preceded by nonexistence. Existence is therefore posterior to the conferral of existence, which is posterior to dependence: if a thing did not require an efficient cause, the cause could not be conceived as acting upon it, as in the cases of the necessary and the impossible. Thus conferring existence presupposes dependence, and dependence is posterior to its cause. If origination were the cause of dependence, part of that cause, or a condition of it, origination would have to precede dependence, which precedes conferring existence, which precedes existence, which precedes origination. It would thus precede itself by four ranks if it were the cause or a condition, and by five if it were a constituent part, since a part of a cause precedes that cause. Possibility, by contrast, is prior to dependence in the order of essence, since dependence cannot be conceived without possibility.
+
+**Arabic**
+
+فان قيل : الامكان صفة للممكن بالقياس إلى الوجود ـ لانّه عبارة عن مساوات نسبة الوجود والعدم إلى الماهية الممكنة ـ ، فيكون متأخّرا عن الوجود فلا يكون علة للاحتياج المتقدّم على الوجود بمراتب ؛ قلنا : الامكان وإن كان متأخّرا عن الماهية نفسها وعن مفهوم الوجود أيضا لكنّه ليس متأخّرا عن كون الماهية موجودة بل مقدّم على اتصاف الماهية بالوجود ، ولذا يوصف الماهية ووجودها بالامكان قبل اتصاف الماهية بالوجود. وامّا الحدوث فلا يتصف الماهية ولا وجودها به إلاّ إذا صارت موجودة ؛ على انّ تاخّر الحدوث عن الايجاد ممّا لا ريب فيه ، ولذا صحّ أن يقال : أوجد فحدث ، وبذلك ثبت المطلوب سواء قلنا انّه متأخّر عن الوجود أيضا أم لا.
+
+**Translation**
+
+If it is objected that possibility is a property of the contingent thing in relation to existence—since it means that existence and nonexistence stand in an equal relation to the contingent quiddity—and must therefore be posterior to existence, so that it cannot be the cause of dependence, which is prior to existence by several ranks, we reply: although possibility is posterior to the quiddity itself and also to the concept of existence, it is not posterior to the quiddity's actually being existent. Rather, it is prior to the quiddity's being qualified by existence. Hence the quiddity and its existence may be described as possible before the quiddity is qualified by existence. Temporal origination, however, cannot qualify the quiddity or its existence unless it has become existent. Moreover, the posteriority of origination to the conferral of existence is beyond doubt: hence it is correct to say, 'He brought it into existence, and so it originated.' The conclusion is established whether or not we also say that origination is posterior to existence itself.
+
+**Critical note:** The ranks are explanatory, not chronological. The objection distinguishes the concept of existence from the quiddity's actual existence. The online edition identifies this as the fourth preliminary; its navigation inconsistently says third. Source: https://lib.rafed.net/view.php?b_id=728&page=39&type=c_fbook . This addition still does not constitute a full critical collation of the preliminary or the matching Avicennian/Sadrian texts.
