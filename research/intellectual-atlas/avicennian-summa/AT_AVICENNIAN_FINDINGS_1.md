@@ -191,3 +191,8 @@ Treat vegetative, animal and rational powers separately. The rational soul's ori
 ## 1.9 — divine attributes and will
 
 Separate existence from essence, simplicity from the absence of all conceptual distinctions, knowledge of particulars, will, and the necessity of the effect. Avicennian causal necessity and Thomist free creation can agree on dependence while disagreeing on the modal status of the created order. Rāzī's objections and Ṭūsī's replies should be tested against the exact Avicennian demonstrations rather than classified generically as kalām versus falsafa. **Source status:** interpretive matrix.
+
+
+## 1.10 — time, creation and change
+
+Distinguish temporal beginning (ḥudūth zamānī), essential dependence (ḥudūth dhātī), change in an underlying subject, and creation ex nihilo. A perpetual dependent world is not thereby independent; conversely, essential dependence alone does not prove temporal eternity. Compare Avicenna Ilāhiyyāt VI, IX; Ghazālī Tahāfut first discussion; Rāzī Maṭālib; Aquinas De aeternitate mundi and Summa theologiae I q.46. **Source status:** primary comparison pending.
