@@ -211,6 +211,19 @@ files=[
  ('neoplatonism/index.html',ROOT/'neoplatonism/index.html'),
  ('avicennian-summa/index.html',ROOT/'avicennian-summa/index.html'),
  ('avicennian-summa/causal-dependence.html',ROOT/'avicennian-summa/causal-dependence.html'),
+ ('avicennian-summa/chapters/index.html',ROOT/'avicennian-summa/chapters/index.html'),
+ ('avicennian-summa/chapters/01-mental-existence-and-quiddity.md',ROOT/'avicennian-summa/chapters/01-mental-existence-and-quiddity.md'),
+ ('avicennian-summa/chapters/02-making-and-causal-explanation.md',ROOT/'avicennian-summa/chapters/02-making-and-causal-explanation.md'),
+ ('avicennian-summa/chapters/03-substantial-motion-dispute.md',ROOT/'avicennian-summa/chapters/03-substantial-motion-dispute.md'),
+ ('avicennian-summa/chapters/04-intellect-soul-and-identity.md',ROOT/'avicennian-summa/chapters/04-intellect-soul-and-identity.md'),
+ ('avicennian-summa/chapters/05-four-causes-form-bestowal.md',ROOT/'avicennian-summa/chapters/05-four-causes-form-bestowal.md'),
+ ('avicennian-summa/chapters/06-divine-agency-necessity-and-plurality.md',ROOT/'avicennian-summa/chapters/06-divine-agency-necessity-and-plurality.md'),
+ ('avicennian-summa/chapters/07-unity-plurality-and-divine-knowledge.md',ROOT/'avicennian-summa/chapters/07-unity-plurality-and-divine-knowledge.md'),
+ ('avicennian-summa/chapters/08-universals-quiddity-nafs-al-amr.md',ROOT/'avicennian-summa/chapters/08-universals-quiddity-nafs-al-amr.md'),
+ ('avicennian-summa/COMPREHENSIVE_SYSTEM.md',ROOT/'avicennian-summa/COMPREHENSIVE_SYSTEM.md'),
+ ('avicennian-summa/PRIMARY_TEXT_CROSSWALK_01.md',ROOT/'avicennian-summa/PRIMARY_TEXT_CROSSWALK_01.md'),
+ ('avicennian-summa/four-causes-and-forms-research.md',ROOT/'avicennian-summa/four-causes-and-forms-research.md'),
+ ('avicennian-summa/AT_AVICENNIAN_FINDINGS_1.md',ROOT/'avicennian-summa/AT_AVICENNIAN_FINDINGS_1.md'),
  ('avicennian-summa/SOURCE_REGISTER.md',ROOT/'avicennian-summa/SOURCE_REGISTER.md'),
  ('tahdhib/index.html',ROOT/'tahdhib/index.html'),
  ('publication.json',ROOT/'publication.json')
@@ -243,6 +256,8 @@ with zipfile.ZipFile(ZIP) as z:
     assert root+'index.html' in z.namelist()
     assert root+'avicennian-summa/index.html' in z.namelist()
     assert root+'avicennian-summa/causal-dependence.html' in z.namelist()
+    assert root+'avicennian-summa/chapters/index.html' in z.namelist()
+    assert all(root+'avicennian-summa/chapters/'+chapter in z.namelist() for chapter in ["01-mental-existence-and-quiddity.md","02-making-and-causal-explanation.md","03-substantial-motion-dispute.md","04-intellect-soul-and-identity.md","05-four-causes-form-bestowal.md","06-divine-agency-necessity-and-plurality.md","07-unity-plurality-and-divine-knowledge.md","08-universals-quiddity-nafs-al-amr.md"])
     assert root+'downloads/intellectual-atlas-data.json' in z.namelist()
     assert root+'downloads/Intellectual_Atlas_Reference_Revision7.pdf' in z.namelist()
 print(json.dumps({'revision':D['revision'],'pdf_bytes':PDF.stat().st_size,
