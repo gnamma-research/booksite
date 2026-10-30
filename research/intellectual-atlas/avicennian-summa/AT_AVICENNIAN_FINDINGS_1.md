@@ -181,3 +181,8 @@ Distinguish (a) concept in intellect, (b) intentional object, (c) extra-mental t
 ## 1.7 — universals and individuation
 
 Keep apart essence considered in itself, the universal predicable, the intelligible concept, and the concrete individual. A universal qua universal is in cognition, but that does not imply that the nature predicated has no extra-mental instances. The relation between matter, designated matter, accidents and individual existence must be collated separately. Compare Avicenna Ilāhiyyāt V.1–2, Suhrawardī's critiques, Ṭūsī's Tajrīd, and Aquinas De ente et essentia. **Source status:** established comparative distinctions; primary dossier pending.
+
+
+## 1.8 — soul and imagination
+
+Treat vegetative, animal and rational powers separately. The rational soul's origin, immaterial cognition, persistence, and relation to the Active Intellect are not reducible to the account of elemental form. Later illuminationist and Sadrian doctrines of imaginal perception may revise the ontology of psychic faculties without entailing a uniform theory of physical substantial generation. Compare Shifāʾ Nafs V, Ishārāt psychology, Suhrawardī Ḥikmat al-ishrāq and Ṣadrā Asfār psychology. **Source status:** primary comparison required.
