@@ -81,7 +81,7 @@ async def run_audit(page,full=True):
     check((data["n"],data["e"],data["s"])==(386,362,359),"Canonical record/relationship/source count unexpectedly changed")
     check(len(data["family"])==20,"There should be 20 textual family choices")
     check(await page.locator('[data-view]').count()==4,"Four main navigation tabs")
-    check(await page.locator('#ia-text-family-v3 option').count()==19,"All texts + 18 text families")
+    check(await page.locator('#ia-text-family-v3 option').count()==21,"All texts + 20 text families")
     check(await page.locator('.ia-explorer-shortcuts > details').count()==3,"Three map exploration layers")
     await ensure_open(page,".ia-secondary-controls")
     await ensure_open(page,".ia-filters")
@@ -122,7 +122,7 @@ async def run_audit(page,full=True):
     # The other UI for the same textual families is the grouped exploration
     # button grid. Test every button, not just the underlying SELECT control.
     await ensure_open(page,".ia-explorer-shortcuts .ia-route-explorer:has([data-text-route])")
-    check(await page.locator('.ia-explorer-shortcuts button[data-text-route]').count()==18,
+    check(await page.locator('.ia-explorer-shortcuts button[data-text-route]').count()==20,
           "Missing a text-family exploration button")
     if full:
         for f in data["family"]:
