@@ -84,6 +84,7 @@ jobs:
               assert root+'avicennian-summa/primary-translation-causation.md' in names
               assert root+'avicennian-summa/chapters/01-mental-existence-and-quiddity.md' in names
               assert root+'avicennian-summa/chapters/07-unity-plurality-and-divine-knowledge.md' in names
+              assert root+'avicennian-summa/chapters/09-mawaqif-maqasid-hylomorphism-mental-existence.md' in names
               assert root+'avicennian-summa/SOURCE_REGISTER.md' in names
               assert root+'downloads/intellectual-atlas-data.json' in names
               assert root+'downloads/Intellectual_Atlas_Reference_Revision7.pdf' in names
