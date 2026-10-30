@@ -87,6 +87,7 @@ jobs:
               assert root+'avicennian-summa/chapters/reader.html' in names
               assert root+'avicennian-summa/primary-translations.html' in names
               assert root+'avicennian-summa/late-commentators.html' in names
+              assert root+'avicennian-summa/INDIAN_PRIMARY_QUOTATION_01_KHAYRABADI_HEAT.md' in names
               assert root+'avicennian-summa/LATE_WITNESS_REGISTER_2026_10_31.json' in names
               assert root+'avicennian-summa/handoffs/STAGE_05_LATE_COMMENTATORS.md' in names
               assert root+'avicennian-summa/LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md' in names
