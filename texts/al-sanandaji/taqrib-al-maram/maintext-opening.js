@@ -37,10 +37,9 @@ const items=[
 const book=window.GNAMMA_BOOK;
 if(book?.id==="taqrib"){
  const existing=new Set(book.units.map(u=>u.id));
- for(const x of items)if(!existing.has(x.id)){
-   book.units.push({id:x.id,title:x.title,arabic:x.arabic,english:x.english,notes:x.insights.map(text=>({type:"Explanation",text})),link:"../../al-taftazani/tahdhib-al-kalam/#u-I-01",linkLabel:"Read the corresponding Tahdhīb passage"});
- }
+ const additions=items.filter(x=>!existing.has(x.id)).map(x=>({id:x.id,title:x.title,arabic:x.arabic,english:x.english,notes:x.insights.map(text=>({type:"Explanation",text})),link:"../../al-taftazani/tahdhib-al-kalam/#u-I-01",linkLabel:"Read the corresponding Tahdhīb passage"}));
+ const index=Math.max(0,book.units.findIndex(u=>u.id==="S.00")+1);book.units.splice(index,0,...additions);
 }
 const layer=window.GNAMMA_SANANDAJI_LAYER;
-if(layer){const target=(layer.units??={});const group=(target["I.01"]??=[]);const seen=new Set(group.map(x=>x.id));for(const x of items)if(!seen.has(x.id))group.push(x);}
+if(layer){const target=(layer.units??={});const group=(target["I.01"]??=[]);const seen=new Set(group.map(x=>x.id));for(const x of items)if(!seen.has(x.id))group.unshift(x);}
 })();
