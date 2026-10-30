@@ -220,6 +220,7 @@ files=[
  ('avicennian-summa/chapters/06-divine-agency-necessity-and-plurality.md',ROOT/'avicennian-summa/chapters/06-divine-agency-necessity-and-plurality.md'),
  ('avicennian-summa/chapters/07-unity-plurality-and-divine-knowledge.md',ROOT/'avicennian-summa/chapters/07-unity-plurality-and-divine-knowledge.md'),
  ('avicennian-summa/chapters/08-universals-quiddity-nafs-al-amr.md',ROOT/'avicennian-summa/chapters/08-universals-quiddity-nafs-al-amr.md'),
+ ('avicennian-summa/chapters/09-mawaqif-maqasid-hylomorphism-mental-existence.md',ROOT/'avicennian-summa/chapters/09-mawaqif-maqasid-hylomorphism-mental-existence.md'),
  ('avicennian-summa/COMPREHENSIVE_SYSTEM.md',ROOT/'avicennian-summa/COMPREHENSIVE_SYSTEM.md'),
  ('avicennian-summa/PRIMARY_TEXT_CROSSWALK_01.md',ROOT/'avicennian-summa/PRIMARY_TEXT_CROSSWALK_01.md'),
  ('avicennian-summa/four-causes-and-forms-research.md',ROOT/'avicennian-summa/four-causes-and-forms-research.md'),
@@ -261,7 +262,7 @@ with zipfile.ZipFile(ZIP) as z:
     assert root+'avicennian-summa/chapters/index.html' in z.namelist()
     assert root+'avicennian-summa/SYSTEMATIC_FINDINGS_AND_EVIDENCE_AUDIT.md' in z.namelist()
     assert root+'avicennian-summa/primary-translation-causation.md' in z.namelist()
-    assert all(root+'avicennian-summa/chapters/'+chapter in z.namelist() for chapter in ["01-mental-existence-and-quiddity.md","02-making-and-causal-explanation.md","03-substantial-motion-dispute.md","04-intellect-soul-and-identity.md","05-four-causes-form-bestowal.md","06-divine-agency-necessity-and-plurality.md","07-unity-plurality-and-divine-knowledge.md","08-universals-quiddity-nafs-al-amr.md"])
+    assert all(root+'avicennian-summa/chapters/'+chapter in z.namelist() for chapter in ["01-mental-existence-and-quiddity.md","02-making-and-causal-explanation.md","03-substantial-motion-dispute.md","04-intellect-soul-and-identity.md","05-four-causes-form-bestowal.md","06-divine-agency-necessity-and-plurality.md","07-unity-plurality-and-divine-knowledge.md","08-universals-quiddity-nafs-al-amr.md","09-mawaqif-maqasid-hylomorphism-mental-existence.md"])
     assert root+'downloads/intellectual-atlas-data.json' in z.namelist()
     assert root+'downloads/Intellectual_Atlas_Reference_Revision7.pdf' in z.namelist()
 print(json.dumps({'revision':D['revision'],'pdf_bytes':PDF.stat().st_size,
