@@ -19,7 +19,7 @@ const palettes=[
  ['gnamma','Gnamma landscape',['#bfa38a','#faf4e7','#35616b','#c5a88b','#332f2a']],
  ['gnamma-air','Gnamma · open landscape',['#bfa38a','#f4e5d4','#2e6570','#f8f3eb','#3b3832']]
 ];
-const uiDefaults={mode:'reading',focusApparatus:false,pageStyle:'quiet',palette:'almohad',appearance:'system',arabicFont:'amiri',englishFont:'original',fontScale:1,parallelSide:'right',stackedOrder:'top',showNotes:true,showTerms:true,showConcepts:true};
+const uiDefaults={mode:'reading',focusApparatus:false,pageStyle:'quiet',palette:'almohad',appearance:'system',arabicFont:'amiri',englishFont:'original',fontScale:1,parallelSide:'right',stackedOrder:'top',showNotes:true,showTerms:true,showConcepts:true,showPersonalMarks:true};
 const existing=R.prefs;
 for(const [key,value] of Object.entries(uiDefaults))if(existing[key]===undefined)existing[key]=value;
 if(!existing.uiVersion){
@@ -80,7 +80,7 @@ function sync(){
  document.body.classList.toggle('ui-focus',R.view==='read'&&p.mode!=='reading');
  document.body.classList.toggle('ui-continuous',R.view==='read'&&p.mode==='continuous');
  document.body.classList.toggle('ui-hide-apparatus',R.view==='read'&&p.mode!=='reading'&&!p.focusApparatus);
- document.body.classList.toggle('ui-hide-notes',!p.showNotes);document.body.classList.toggle('ui-hide-terms',!p.showTerms);
+ document.body.classList.toggle('ui-hide-notes',!p.showNotes);document.body.classList.toggle('ui-hide-terms',!p.showTerms);document.body.classList.toggle('ui-hide-personal-marks',p.showPersonalMarks===false);
  document.body.classList.toggle('ui-parallel-right',p.parallelSide==='right');document.body.classList.toggle('ui-stack-bottom',p.stackedOrder==='bottom');
  const ar=$('#topbar [data-language="ar"]');if(ar){ar.textContent=p.ar&&p.marks==='source'?'Arَ':'Ar';ar.setAttribute('aria-pressed',String(p.ar));ar.setAttribute('aria-label','Arabic: '+(p.ar?(p.marks==='source'?'source vowel marks':'unvowelled'):'hidden')+'. Activate to cycle.');}
  const en=$('#topbar [data-language="en"]');if(en)en.setAttribute('aria-pressed',String(p.en));
@@ -106,7 +106,7 @@ function modes(){
  [['reading','Reading','Section and scholarly apparatus'],['focus','Focus','One section, fewer distractions'],['continuous','Continuous','Scroll through the whole text']].map(([id,label,detail])=>'<button type="button" role="radio" data-mode="'+id+'" aria-checked="'+(R.prefs.mode===id)+'"><span>'+label+'<small>'+detail+'</small></span></button>').join('')+'</div><label class="toggle-row"><input type="checkbox" id="focus-apparatus" '+(R.prefs.focusApparatus?'checked':'')+'> In Focus, show apparatus below the text</label><button type="button" data-nav="home">Home</button>','modes');
 }
 function visuals(){
- R.sheet('Visuals','<div class="gn-visuals-panel">'+window.BAHR_UI_ASSETS.visuals+'</div>','visuals');
+ R.sheet('Visuals','<div class="gn-visuals-panel">'+window.BAHR_UI_ASSETS.visuals+'</div><div class="personal-marks-setting"><label class="toggle-row"><input type="checkbox" id="private-marks" '+(R.prefs.showPersonalMarks!==false?'checked':'')+'> Show private Reading Desk marks beside the text</label><small>Private highlights remain visible in Focus reading.</small></div>','visuals');
  syncVisuals();
 }
 function syncVisuals(){
@@ -131,8 +131,8 @@ function textFor(kind,quoted=false){
  if(quoted&&R.selected?.quote)return R.selected.quote;
  if(!unit)return '';
  if(kind==='with-heading')parts.push(r.title);
- if(R.prefs.ar)parts.push(unit.querySelector('.ar-column').innerText);
- if(R.prefs.en)parts.push(unit.querySelector('.en-column').innerText);
+ if(R.prefs.ar)parts.push([...unit.querySelectorAll('.ar-column [data-anchor]')].map(x=>x.innerText).join('\n\n'));
+ if(R.prefs.en)parts.push([...unit.querySelectorAll('.en-column [data-anchor]')].map(x=>x.innerText).join('\n\n'));
  return parts.join('\n\n');
 }
 async function clipboard(value){
@@ -219,7 +219,7 @@ function shareText(){
  if(kind==='link')return link;let text=r?.title||'';
  if(kind==='selection')text=shareSelection;
  if(kind==='excerpt')text+='\n\n'+['ar','en'].filter(l=>R.prefs[l]).map(l=>unit?.querySelector('.'+l+'-column p')?.innerText||'').join('\n\n');
- if(kind==='full')text+='\n\n'+['ar','en'].filter(l=>R.prefs[l]).map(l=>unit?.querySelector('.'+l+'-column')?.innerText||'').join('\n\n');
+ if(kind==='full')text+='\n\n'+['ar','en'].filter(l=>R.prefs[l]).map(l=>[...unit?.querySelectorAll('.'+l+'-column [data-anchor]')||[]].map(x=>x.innerText).join('\n\n')).join('\n\n');
  return 'Ibn ʿAjība · al-Baḥr al-Madīd\n'+text+'\n\n'+link;
 }
 function saved(){
@@ -284,7 +284,7 @@ document.addEventListener('click',async event=>{
  }catch(err){R.toast(err.message||String(err));}
 },true);
 document.addEventListener('change',event=>{
- const t=event.target;if(t.id==='focus-apparatus')set({focusApparatus:t.checked});
+ const t=event.target;if(t.id==='focus-apparatus')set({focusApparatus:t.checked});if(t.id==='private-marks')set({showPersonalMarks:t.checked});
  if(t.name==='share-content'&&$('#share-preview'))$('#share-preview').value=shareText();
  if(!copyConfig)return;
  if(t.dataset.copyOption){copyConfig[t.dataset.copyOption]=t.type==='checkbox'?t.checked:t.value;}

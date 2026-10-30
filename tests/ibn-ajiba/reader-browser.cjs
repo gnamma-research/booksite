@@ -21,7 +21,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  const browser=await chromium.launch({headless:true});
  const context=await browser.newContext({viewport:{width:1440,height:1000},serviceWorkers:'block'});
  const page=await context.newPage(),errors=[];
- page.on('pageerror',e=>errors.push(String(e)));
+ page.on('pageerror',e=>{errors.push(String(e));console.error('BROWSER ERROR',String(e));});
  page.on('response',r=>{if(r.url().startsWith(url)&&r.status()>=400)errors.push(r.status()+' '+r.url());});
  const go=async route=>{await page.goto(url+'#/'+route);await page.waitForFunction(()=>!document.querySelector('.loading'));};
  const overflow=async name=>{const detail=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,items:[...document.querySelectorAll('body *')].filter(n=>{const b=n.getBoundingClientRect();return b.width&&b.right>innerWidth+1}).slice(0,12).map(n=>({tag:n.tagName,id:n.id,class:n.className,width:n.getBoundingClientRect().width,right:n.getBoundingClientRect().right}))}));if(detail.scroll>detail.width+1){console.error(name,JSON.stringify(detail));await page.screenshot({path:path.join(out,'overflow.png')});}assert(detail.scroll<=detail.width+1,name+' horizontal overflow');};
@@ -202,7 +202,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  await page.locator('[data-feature="save-reference"]').click();await page.locator('#sheet-close').click();
  await go('desk');await page.locator('#desk-source').selectOption('dictionary');
  assert.equal(await page.locator('.desk-card:visible').count(),1);
- await page.locator('[data-saved-reference]').click();await page.locator('#sheet[open]').waitFor();
+ await page.locator('a[data-saved-reference]').click();await page.locator('#sheet[open]').waitFor();
  assert((await page.locator('#sheet-kicker').textContent()).includes('HISTORICAL DICTIONARY'));
  await page.locator('#sheet-close').click();
  const refBackup=await page.evaluate(()=>JSON.parse(BahrReader.backup()));
@@ -228,7 +228,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  assert.deepEqual(errors,[]);pass('No uncaught browser errors or failed reader requests');
 
  await page.setViewportSize({width:390,height:844});await go('read/preface');await page.screenshot({path:path.join(out,'reader-phone.png')});
- const reference=await context.newPage();
+ const reference=await context.newPage();await reference.setViewportSize({width:390,height:844});
  await reference.goto(new URL('../../../daruri/#section=1',url).href);
  await reference.locator('#reader').waitFor({timeout:60000});
  await reference.screenshot({path:path.join(out,'daruri-phone.png')});await reference.close();

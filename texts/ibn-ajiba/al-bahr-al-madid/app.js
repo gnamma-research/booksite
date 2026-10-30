@@ -111,6 +111,13 @@ window.BahrReader={
  savePrefs,changeSetting,visiblePlace,restorePlace,renderReader,menu,contents,settings,
  page,home,annotation,readingDesk,citationPanel,passageNotes,download,
  saveDesk,paintHighlights,openDictionary,linkLexicon,getSearchIndex,snippet,unitHTML,
+ annotateAt(type,target){if(!byId.has(target.r))return;selected={...target};annotation(type);},
+ addParagraphBookmark(target){
+  const old=desk.find(x=>!x.archived&&x.type==='bookmark'&&x.r===target.r&&x.anchor===target.anchor);
+  if(old){location.hash='#/desk';return;}
+  const now=new Date().toISOString(),row={...target,id:newId(),type:'bookmark',quote:'',note:'',createdAt:now,updatedAt:now,archived:false};
+  if(!writeStore('desk',[...desk,row]))throw Error('Could not save this bookmark.');desk.push(row);window.BahrUI?.sync();toast('Paragraph bookmarked.');
+ },
  addReference(reference){
   const found=desk.find(x=>!x.archived&&x.reference?.kind===reference.kind&&x.reference?.id===reference.id);
   if(found){toast('Already saved in Reading Desk.');return found;}
@@ -121,7 +128,7 @@ window.BahrReader={
  },
  async openReference(ref){
   if(ref.kind==='note')return openNote(ref.id);if(ref.kind==='report')return openReport(ref.id);if(ref.kind==='source')return openSource(ref.id);if(ref.kind==='question')return openQuestion(ref.id);if(ref.kind==='dictionary')return openDictionary(ref.id);
-  if(ref.kind==='index'){const split=ref.id.indexOf('|');indexKind=ref.id.slice(0,split);indexFilter=ref.id.slice(split+1);location.hash='#/indices';if(view==='indices')await indices();}
+  if(ref.kind==='index'){const split=ref.id.indexOf('|');if(split<0||!['topics','names','works','poetry'].includes(ref.id.slice(0,split))){toast('This saved index location is unavailable. The bookmark is retained.');return;}indexKind=ref.id.slice(0,split);indexFilter=ref.id.slice(split+1);location.hash='#/indices';if(view==='indices')await indices();}
   if(ref.kind==='lesson'){location.hash='#/study';if(view==='study')await study();setTimeout(()=>{const guide=[...document.querySelectorAll('.guide-list>details')].find(x=>x.querySelector('summary').textContent.includes(ref.id));if(guide){guide.open=true;guide.scrollIntoView({block:'center'});}},150);}
  },
 

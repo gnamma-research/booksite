@@ -69,7 +69,7 @@ function enhanceDesk(){
  toolbar.insertAdjacentHTML('afterend','<div class="desk-browse"><label for="desk-query">Search saved items<input type="search" id="desk-query" placeholder="Search bookmarks, highlights and notes…" value="'+E(query)+'"></label><label for="desk-sort">Sort<select id="desk-sort">'+[['created-desc','Newest saved'],['created-asc','Oldest saved'],['modified-desc','Recently edited'],['source','Text / source order'],['alpha','Title A–Z']].map(([id,label])=>'<option value="'+id+'" '+(id===sort?'selected':'')+'>'+label+'</option>').join('')+'</select></label></div>');
  $$('.desk-card').forEach(card=>{const id=card.querySelector('[data-edit-note]')?.dataset.editNote;if(id)card.dataset.deskId=id;const archive=card.querySelector('[data-archive-note]');if(archive&&archive.textContent==='Archive')archive.textContent='Move to Bin';});
  const sourceLabel=document.createElement('label');sourceLabel.innerHTML='Saved from <select id="desk-source">'+[['all','All sources'],['text','Text passages'],['note','Source notes'],['dictionary','Dictionary'],['index','Subject index'],['question','Scholarly research'],['lesson','Study lessons']].map(([v,t])=>'<option value="'+v+'" '+(v===deskSource?'selected':'')+'>'+t+'</option>').join('')+'</select>';$('#desk-sort').parentElement.before(sourceLabel);
- for(const card of $('.desk-card')){
+ for(const card of $$('.desk-card')){
   const item=R.desk.find(x=>x.id===card.dataset.deskId);if(!item?.reference)continue;
   card.querySelector('h3').textContent=item.reference.title;
   const link=card.querySelector('footer a');if(link){link.textContent='Open saved source';link.dataset.savedReference=item.id;link.href='#/desk';}
@@ -93,23 +93,36 @@ function markdown(){
  R.download('Ibn-Ajiba-reading-notes.md','# Reading Desk\n\n'+text,'text/markdown;charset=utf-8');
 }
 
+
+function paragraphControls(){
+ if(R.view!=='read')return;
+ const existing=new Set($$('.personal-paragraph-tools').map(x=>x.dataset.for));
+ for(const p of $$('#main .passage [data-anchor]')){
+  if(existing.has(p.id))continue;
+  const r=p.closest('.passage').dataset.record,lang=p.dataset.lang;
+  const row=document.createElement('div');row.className='personal-paragraph-tools';row.dataset.for=p.id;row.dataset.record=r;row.dataset.lang=lang;row.setAttribute('role','group');row.setAttribute('aria-label','Paragraph reading actions');
+  row.innerHTML='<button type="button" data-paragraph-action="bookmark" aria-label="Bookmark paragraph">'+GnammaBookmarkUI.icon({kind:'paragraph',saved:R.desk.some(x=>!x.archived&&x.type==='bookmark'&&x.anchor===p.id)})+'</button><button type="button" data-paragraph-action="note" aria-label="Add personal note to paragraph">'+GnammaBookmarkUI.noteIcon()+'</button>';
+  p.before(row);
+ }
+}
+
 function referenceControls(){
  const ref=$('#sheet').dataset.savedReference;if(!ref||$('#save-source-reference'))return;
  const button=document.createElement('button');button.id='save-source-reference';button.type='button';button.dataset.feature='save-reference';button.innerHTML=icon('bookmark')+' Bookmark source';
  $('#sheet-body').prepend(button);
 }
 function sourceSaveControls(){
- if(R.view==='indices')for(const details of $('#index-results>details')){
+ if(R.view==='indices')for(const details of $$('#index-results>details')){
   if(details.querySelector('[data-save-index]'))continue;const title=details.querySelector('summary').textContent,key=$('[data-index][aria-pressed="true"]')?.dataset.index||'topics';
   const button=document.createElement('button');button.type='button';button.dataset.saveIndex=key+'|'+title;button.dataset.sourceTitle=title;button.innerHTML=icon('bookmark')+' Bookmark index entry';details.append(button);
  }
- if(R.view==='study')for(const details of $('.guide-list>details')){
+ if(R.view==='study')for(const details of $$('.guide-list>details')){
   if(details.querySelector('[data-save-lesson]'))continue;const title=details.querySelector('summary').textContent.replace(/^\s*\d+\s*/,'').trim();
   const button=document.createElement('button');button.type='button';button.dataset.saveLesson=title;button.innerHTML=icon('bookmark')+' Bookmark lesson';details.append(button);
  }
 }
 window.addEventListener('bahr-reference-open',referenceControls);
-new MutationObserver(sourceSaveControls).observe($('#main'),{childList:true,subtree:true});
+new MutationObserver(()=>{sourceSaveControls();paragraphControls();}).observe($('#main'),{childList:true,subtree:true});
 
 const printDefaults={tier:'reading',en:true,ar:true,marks:'source',notes:'none',headings:'original',glossary:false,index:false,research:false,sources:false,personal:false,bookmarks:false,highlights:false,dates:true,order:'source',start:0,end:388};
 let printPrefs={...printDefaults};
@@ -203,6 +216,7 @@ document.addEventListener('click',async event=>{
  const button=event.target.closest('button,a');if(!button)return;
  const d=button.dataset;
  if(d.deskFilter){deskCategory=d.deskFilter;return;}
+ if(d.paragraphAction){event.preventDefault();event.stopImmediatePropagation();const row=button.closest('.personal-paragraph-tools'),t={r:row.dataset.record,anchor:row.dataset.for,lang:row.dataset.lang,quote:''};if(d.paragraphAction==='bookmark'){R.addParagraphBookmark(t);button.innerHTML=GnammaBookmarkUI.icon({kind:'paragraph',saved:true});}else R.annotateAt('note',t);return;}
  if(d.savedReference){event.preventDefault();event.stopImmediatePropagation();const row=R.desk.find(x=>x.id===d.savedReference);if(row?.reference)await R.openReference(row.reference);return;}
  if(d.saveIndex||d.saveLesson){event.preventDefault();event.stopImmediatePropagation();R.addReference({kind:d.saveIndex?'index':'lesson',id:d.saveIndex||d.saveLesson,title:d.sourceTitle||d.saveLesson});return;}
  if(button.id==='searchBtn'){event.preventDefault();event.stopImmediatePropagation();try{await prepareSearch();R.closeSheet();window.GnammaUnifiedSearch.open();}catch(err){R.toast(err.message);location.hash='#/search';}return;}
@@ -241,5 +255,5 @@ document.addEventListener('keydown',event=>{
 });
 new MutationObserver(()=>{enhanceDesk();enhanceDownloads();}).observe($('#main'),{childList:true});
 window.BahrFeatures={prepareSearch,transfer,prepareBook,printShell,history};
-enhanceDesk();enhanceDownloads();
+enhanceDesk();enhanceDownloads();paragraphControls();
 })();
