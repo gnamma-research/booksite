@@ -1,4 +1,4 @@
-name: Gnamma Intellectual Atlas — revision-7 PDF and offline edition
+name: Gnamma Intellectual Atlas — revision-7.2 PDF and offline edition
 
 on:
   pull_request:
@@ -59,16 +59,16 @@ jobs:
           b=Path('research/intellectual-atlas')
           d=json.loads((b/'downloads/intellectual-atlas-data.json').read_text())
           m=json.loads((b/'publication.json').read_text())
-          assert (len(d['nodes']),len(d['edges']),len(d['sources']),len(d['textual_families']))==(375,348,349,18)
-          assert m['entries']==375 and m['textual_relationships']==348
-          assert m['sources']==349 and m['scholarly_networks']==5
-          assert m['revision']=='neoplatonic-bridge-7-2026-10-29'
+          assert (len(d['nodes']),len(d['edges']),len(d['sources']),len(d['textual_families']))==(386,362,359,20)
+          assert m['entries']==386 and m['textual_relationships']==362
+          assert m['sources']==359 and m['scholarly_networks']==5
+          assert m['revision']=='avicennian-extensions-7.2-2026-10-30'
           pdf=b/'downloads/Intellectual_Atlas_Reference_Revision7.pdf'
           off=b/'downloads/Gnamma_Intellectual_Atlas_Offline_Revision7.zip'
           reader=PdfReader(str(pdf))
           assert len(reader.pages)>=65, f'Unusually short register: {len(reader.pages)} pages'
           first=reader.pages[0].extract_text()
-          assert '375' in first and '348' in first and 'Neoplatonic' in first
+          assert '386' in first and '362' in first and 'Neoplatonic' in first
           assert pdf.stat().st_size>55000
           with zipfile.ZipFile(off) as z:
               assert z.testzip() is None
@@ -77,13 +77,15 @@ jobs:
               assert root+'index.html' in names and root+'atlas-app.js' in names
               assert root+'site.css' in names
               assert root+'neoplatonism/index.html' in names
+              assert root+'avicennian-summa/index.html' in names
+              assert root+'avicennian-summa/SOURCE_REGISTER.md' in names
               assert root+'downloads/intellectual-atlas-data.json' in names
               assert root+'downloads/Intellectual_Atlas_Reference_Revision7.pdf' in names
               j=json.loads(z.read(root+'downloads/intellectual-atlas-data.json'))
-              assert len(j['nodes'])==375 and len(j['edges'])==348
+              assert len(j['nodes'])==386 and len(j['edges'])==362
               html=z.read(root+'index.html').decode()
               assert 'Textual family' in html and 'Greek' in html
-          print(json.dumps({'pdf_pages':len(reader.pages),'pdf_bytes':pdf.stat().st_size,'zip_bytes':off.stat().st_size,'source_counts':[375,348,349,18,5]},indent=2))
+          print(json.dumps({'pdf_pages':len(reader.pages),'pdf_bytes':pdf.stat().st_size,'zip_bytes':off.stat().st_size,'source_counts':[386,362,359,20,5]},indent=2))
           PY
           mkdir -p /tmp/atlas-pdf-preview
           pdftoppm -f 1 -l 2 -r 110 -png research/intellectual-atlas/downloads/Intellectual_Atlas_Reference_Revision7.pdf /tmp/atlas-pdf-preview/page >/dev/null 2>&1
@@ -91,7 +93,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: gnamma-atlas-revision7-reference-offline-and-preview
+          name: gnamma-atlas-revision7-2-reference-offline-and-preview
           path: |
             research/intellectual-atlas/downloads/Intellectual_Atlas_Reference_Revision7.pdf
             research/intellectual-atlas/downloads/Gnamma_Intellectual_Atlas_Offline_Revision7.zip
@@ -108,7 +110,7 @@ jobs:
           git add -f research/intellectual-atlas/downloads/Gnamma_Intellectual_Atlas_Offline_Revision7.zip
           git add research/intellectual-atlas/publication.json
           if ! git diff --cached --quiet; then
-            git commit -m "Atlas release: rebuild revision-7 PDF, portable viewer and checksums"
+            git commit -m "Atlas release: rebuild revision-7.2 PDF, portable viewer and checksums"
             git push origin HEAD:master
           else
             echo "No generated changes to publish"
