@@ -59,3 +59,73 @@ Does later Avicennian philosophy preserve Ibn Sīnā's assignment of substantial
 ### Editorial completion criteria
 
 A topic is **source-complete** only when the full Arabic/Persian passages for each principal author, edition/page locators, textual variants, and all objection–reply sequences are included. A topic is **analytically complete** only when doctrinal agreement and disagreement are separately adjudicated and the AT comparison is grounded in exact Thomistic loci. At present this dossier is a research architecture and preliminary analysis, **not** a finished critical translation or collation.
+
+
+## Comparative adjudication 1 — the three senses of causing a form
+
+**This section is original philosophical analysis, not a purported translation.** Its purpose is to prevent a misleading binary between 'the Active Intellect causes everything' and 'nature causes everything'.
+
+### (1) Constitutive explanation
+
+The substantial form is an **intrinsic** formal cause of a composite, regardless of whether its origination is attributed to a natural generator or a separate intellect. A form's being received from a separate intellect does not make the form itself an extrinsic constituent of the completed substance. Thus the shared commitment to intrinsic form is real but does not settle efficient causation.
+
+### (2) Proximate generation
+
+A natural agent acts upon material conditions, including heating, cooling, mixture, local motion and the organisation of a receptive subject. In the classical Avicennian framework, the Active Intellect's bestowal of form is not simply another physical step in this sequence. It explains why a suitably disposed substrate is actualised with the relevant form. Therefore 'natural causes merely prepare' is shorthand for a division of explanatory labour, **not** the thesis that they are unreal causes.
+
+### (3) Universal existential dependence
+
+The existence of the resulting composite is contingent and requires a sustaining ground. Narāqī's argument for conservation establishes this level without settling whether the Active Intellect is indispensable to every natural generation. This level is where comparison with Aquinas's primary causation is promising, but its similarity cannot erase the distinct question of natural form-production.
+
+### A test case: substantial generation
+
+Suppose a living organism generates another of its kind.
+
+- **AT thesis to test:** the generator is a genuine proximate efficient cause of substantial generation; the substantial form is educed from matter's potency through natural agency under God's universal causal concurrence. This must be qualified for special cases such as the rational soul.
+- **Classical Avicennian thesis to test:** natural causes dispose the material subject and the separate Giver of Forms bestows the substantial form. Do not assume that all texts use identical language or that Ibn Sīnā denies all natural efficient action.
+- **Late Avicennian alternatives to search for:** retention of the hierarchy; natural powers given a stronger productive role; a distinction between elemental forms, organic forms and intellectual soul; or rejection of the universal bestowal thesis.
+- **Decision rule:** a philosopher's affirmation of hylomorphism, existential contingency or the Active Intellect in epistemology is **not sufficient evidence** that they affirm the Active Intellect's causal role in substantial generation.
+
+### Four potentially substantial changes in post-classical Avicennism
+
+**A. Demonstrative repair without doctrinal change.** Rāzī's objections and Ṭūsī's replies may produce sharper proofs without modifying the causal architecture. Record such cases as *argument strengthened*, not *new doctrine*.
+
+**B. Reallocation of causality.** If a later philosopher assigns the production of substantial form to a natural agent rather than a separate intellect, that would be a major doctrinal change and a strong potential convergence with AT. This remains a **target of investigation**, not an established result.
+
+**C. Ontological reinterpretation.** A thinker may retain separate intellects while replacing the substance/form framework with an account of graded existence and substantial motion. That would change the explanation of generation even without a straightforward denial of the Active Intellect.
+
+**D. Revision of causal necessity.** A thinker may retain the causal hierarchy but distinguish necessary dependence of the effect from the claim that the First acts without freedom. This matters to the AT comparison independently of substantial forms.
+
+### A warning about the rational soul
+
+The rational soul must not be treated as an ordinary material form in either tradition. In Aquinas, the human rational soul has a special mode of creation and subsistence. In Avicennian philosophy, its immateriality and its relation to the Active Intellect require separate treatment. The seed/tree example is useful for natural generation but cannot simply be transferred to human ensoulment.
+
+### Minimum passage-level evidence needed for a final judgment
+
+For each late author, obtain **both** a passage on the nature of substantial form and a passage on its efficient production. Identify the causal verb and its grammatical agent; then ask whether that same agent produces the composite's existence, merely disposes matter, or conserves it. Where no such passage survives, record the historical claim as unresolved.
+
+## Comparative adjudication 2 — a precise AT compatibility hypothesis
+
+**Hypothesis H1:** Avicenna and Aquinas share an explanatory hierarchy in which created things have intrinsic forms, real secondary causes and continuing existential dependence.
+
+**Hypothesis H2:** They differ over whether a separate created intellect universally mediates the production of sublunary substantial forms. If this difference is present, it is a **real cosmological and causal disagreement**, not just a change of vocabulary.
+
+**Hypothesis H3:** Later Avicennian writers may have weakened or altered H2, but no general historical verdict is warranted until their actual natural-philosophical passages are translated.
+
+**Hypothesis H4:** Even if H2 is resolved, further differences concerning necessary emanation, divine will, creation, and the individuation of substances remain. A successful synthesis must address these rather than announce total identity.
+
+## Primary research ledger
+
+| Passage cluster | Questions for extraction | Evidence status |
+|---|---|---|
+| *Shifāʾ*, natural philosophy and *Kawn wa-fasād* | Natural generation; disposition; reception of substantial form | Locator-level only; Arabic passage not yet collated |
+| *Shifāʾ*, *Ilāhiyyāt* II, VI, IX | Four causes; existential causation; celestial intellects | Locator-level only |
+| Rāzī's *Mabāḥith* and *Sharḥ al-Ishārāt* | Objections to substantial forms and intellects | Not yet translated |
+| Ṭūsī's *Ḥall mushkilāt* and later *Tajrīd* glosses | Repairs, objections, and causal distinctions | Not yet translated |
+| Lāhījī's *Shawāriq* I:53 and I:159 | Enduring subject of change; particular existence as *majʿūl* | Short excerpts translated; context incomplete |
+| Narāqī's *Jāmiʿ* I:38–42 | Why existence continues to require a cause | Selective bilingual translation in separate dossier |
+| Narāqī's *Sharḥ Ilāhiyyāt* | Natural and intellectual causes | Unfinished commentary; passages to locate |
+| Jilwa and Khayrābādī | Nineteenth-century survival or revision of form-bestowal | Bibliographic witnesses identified; not collated |
+| Aquinas, *De principiis naturae* and *De potentia* | Eduction of form, causation and conservation | Primary Latin locators; extracts to acquire |
+
+**Conclusion at this stage:** There is a substantial **structural compatibility** between the systems, but the Giver of Forms remains a potential decisive point of disagreement. The later tradition's actual answer is not yet established. It would be methodologically wrong to declare the comparative project finished before checking the missing primary passages.
