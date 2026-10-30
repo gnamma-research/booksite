@@ -121,3 +121,28 @@ Hashem Morvarid, “Avicenna on the Theory of Forms,” *Philosophy and Phenomen
 5. Different kinds of natural form (elemental, artefactual, organic) should not be flattened into a single example; see Peter Adamson, “Natural, Artificial, and Organic Forms in Avicenna” (2023), DOI 10.1093/oso/9780192897664.003.0013.
 
 **Integrity statement:** These are inspectable source anchors and provisional translations, not an exhaustive Arabic/Persian critical edition. No conclusion about Khwānsārī, Jilwa, or Khayrābādī is assigned without verified passages.
+
+
+## Synthesis 1.3 — natural efficient causality and the fourfold classification (30 October 2026)
+
+### Important correction to a simplistic opposition
+Kara Richardson, “Avicenna's Conception of the Efficient Cause,” *British Journal for the History of Philosophy* 21 (2013), 220–239, https://doi.org/10.1080/09608788.2012.693065, argues that Avicenna has a unified account of efficient cause encompassing natural and divine agents. Natural agents give being in a qualified manner, specifically through motions and changes, whereas the highest metaphysical agent bestows existence more completely. This **does not** mean that a natural parent bestows the offspring's substantial species form: compare Avicenna *Physics* I.10, *Metaphysics* VI.1–3 and IX.5, as distinguished in https://plato.stanford.edu/entries/arabic-islamic-causation/ and https://plato.stanford.edu/entries/ibn-sina-natural/.
+
+### Four species of efficient cause
+Aquinas, *In Metaphysicam* V, lect. 2, §§766–769, explicitly attributes to Avicenna a classification of efficient cause into perfective, dispositive, auxiliary and advisory: https://aquinas101.thomisticinstitute.org/articles/selection-from-st-thomas-aquinas-commentary-on-the-metaphysics-bk-5-lect-2-nn-765-770. This taxonomy shows that Avicennian causality was never simply “one transcendent cause plus inert matter.” It also gives a systematic framework for comparing levels of natural and separate agency.
+
+### Four distinct theses that must not be conflated
+A. Natural bodies possess genuine efficient powers to cause motion and accidental transformations.
+B. Such powers dispose matter for reception of a new species form.
+C. The proximate natural generator produces the newly generated substantial composite as such.
+D. The whole composite's existence depends continuously on higher causes.
+
+Avicenna accepts A, B and D in characteristic formulations; C is precisely the disputed step in the comparison with Aquinas. Aquinas accepts A, B, C and D, with qualifications for the rational soul. In particular, B does not entail C, and D does not entail a separate Giver of Forms.
+
+### New textual comparison
+Aquinas, *De principiis naturae*, on the insufficiency of matter, form and privation for generation, https://aquinas101.thomisticinstitute.org/articles/selection-from-st-thomas-aquinas-on-the-principles-of-nature-cc-18-21, insists on an agent actualising potency and a final cause. His account should not be reduced to natural self-creation, because the natural agent itself has derivative being and power.
+
+### Implications for subsequent commentaries
+For each author, collate (i) the definition of *fāʿil*, (ii) the distinctions of *muʿidd* and *mufīd al-wujūd*, (iii) the status of *ṣūra nawʿiyya*, (iv) the causal explanation of elemental and organic generation, and (v) whether *ʿaql faʿʿāl* remains an ontological bestower. Evidence for one is not evidence for all five.
+
+**Status:** An additional secondary-source-supported conceptual advance, not a completed critical edition of the late commentaries.
