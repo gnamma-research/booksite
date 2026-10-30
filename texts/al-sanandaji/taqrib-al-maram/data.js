@@ -28,6 +28,21 @@ window.GNAMMA_BOOK={
       ]
     },
     {
+      "id": "S.20",
+      "title": "Why theology opens with knowledge and demonstration",
+      "arabic": "الكلام عامة بمباحث العلم والنظر والدليل، لأن تحصيل العقائد بطريق النظر والاستدلال، والرد على منكري حصول العلم مطلقا أو استفادته من النظر مطلقا أو في الإلهيات خاصة، متوقف على ذلك؛ وبدأ بها رعاية للقاعدة في كل علم لتكون مقدمة الشروع.",
+      "english": "The discussion of kalām begins with the subjects of knowledge, rational consideration, and proof. This is because the acquisition of doctrines by way of investigation and inference, and the reply to those who deny the attainment of knowledge altogether or deny its derivation from investigation—either in general or specifically in divine matters—depend upon those subjects. He therefore begins with them, observing the rule that each discipline is preceded by what it requires as an introduction.",
+      "statusText": "Taqrīb al-Marām, I:8 · scanned PDF p. 21 · running commentary",
+      "notes": [
+        {
+          "type": "Explanation",
+          "text": "Sanandajī explains the order of al-Taftāzānī's introduction: epistemology and proof are prerequisites for theology, not detachable preliminary ornament."
+        }
+      ],
+      "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-01",
+      "linkLabel": "Compare the definition of kalām"
+    },
+    {
       "id": "S.01",
       "title": "What belongs to kalām",
       "arabic": "والكلام هو العلم بالعقائد، وهي الأحكام التي يتعلق الغرض بمجرد اعتقادها بالقلب ... والمراد بالعقائد (الدينية) المنسوبة إلى دين نبينا محمد صلى الله عليه وسلم.",
