@@ -3,8 +3,9 @@
 
 ## Stage 4 update — 31 October 2026 (current primary translations)
 
-**Read [Stage 4 cumulative handoff](handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md).** The ten chapters remain intact; this stage adds three complete **bounded** translated argument units and a static HTML primary translation reader. **New public reading entry:** [primary-translations.html](primary-translations.html).
+**Read [Stage 4 cumulative handoff](handoffs/STAGE_04_PRIMARY_TRANSLATION_FASCICLES.md).** The ten chapters remain intact; this stage adds four complete **bounded** translated argument units and a static HTML primary translation reader. **New public reading entry:** [primary-translations.html](primary-translations.html).
 
+- **Ibn Sīnā VI.1, pp.257–263:** [full English chapter on causation and conservation, Fascicle E](PRIMARY_TRANSLATION_FASCICLE_E_AVICENNA_VI1.md).
 - **Ibn Sīnā VI.2, pp.263–267:** [full English chapter, Fascicle B](PRIMARY_TRANSLATION_FASCICLE_B_AVICENNA_VI2.md).
 - **Ibn Sīnā IX.5, pp.409–413:** [full English chapter on the Giver of Forms, Fascicle D](PRIMARY_TRANSLATION_FASCICLE_D_AVICENNA_IX5.md).
 - **Lāhījī I:90–93:** [full English of Issues 23–24, Fascicle C](PRIMARY_TRANSLATION_FASCICLE_C_LAHIJI_PREFERENCE.md).
