@@ -80,3 +80,8 @@ E. Inspect and collate the now-located Cairo 1904 Arabic printing of Khayrābād
 ## Whole-system Avicennian–AT investigation
 
 [Comprehensive twenty-domain system map and critical apparatus](COMPREHENSIVE_SYSTEM.md): ontology, logic, mental existence, four causes, natural philosophy, substantial motion, psychology, intellect, theology, providence, creation, unity, ethics and more. This replaces the earlier overemphasis on the Giver of Forms and regress. It is a preliminary synthesis, not a completed collation of the full commentarial tradition.
+
+
+## Primary-text crosswalk across domains
+
+[Read the new bilingual Lāhījī primary-text dossier](PRIMARY_TEXT_CROSSWALK_01.md), with source-linked excerpts on intrinsic possibility, causal necessity, dependence, substantial form, unity and individuation. The dossier separates confirmed translations from the missing complete argument units and later-author collation.
