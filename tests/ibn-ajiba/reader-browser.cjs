@@ -91,7 +91,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
   for(const palette of ['almohad','cordoba','nasrid','zellij','gnamma','gnamma-air']){
    for(const theme of ['light','dark']){
     await go('read/preface');await page.locator('#settingsBtn').click();
-    await page.locator('[data-palette="'+palette+'"]').click();
+    await page.locator('button[data-palette="'+palette+'"]').click();
     await page.locator('[data-theme-choice="'+theme+'"]').click();
     assert.equal(await page.locator('html').getAttribute('data-theme'),theme);
     assert.equal(await page.locator('html').getAttribute('data-palette'),palette);
