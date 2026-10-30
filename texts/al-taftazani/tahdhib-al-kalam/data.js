@@ -3,7 +3,7 @@ window.GNAMMA_BOOK={
   "title": "Tahdhīb al-Kalām",
   "arabicTitle": "تهذيب الكلام",
   "author": "Saʿd al-Dīn al-Taftāzānī",
-  "status": "Source-graded work in progress: 81 excerpts, with the opening textual and commentary loci now individually checked (Taqrīb I:8–22); not a continuous certified critical edition.",
+  "status": "Chapter I now contains a consecutively readable working English translation including the first-obligation distinction and the full argument about transmitted and rational proofs. Chapters II–VI are still discontinuous and require complete collation.",
   "description": "The theological half of Tahdhīb al-Manṭiq wa-l-Kalām. English phrasing is kept readable; lexical explanations and Sanandajī's interpretive guidance belong in notes. Untranslated intervals are not silently filled.",
   "units": [
     {
@@ -189,28 +189,46 @@ window.GNAMMA_BOOK={
       ]
     },
     {
-      "id": "I.07",
-      "title": "Proofs and the priority of rational evidence",
-      "arabic": "والدليل ما يمكن أن يُتوصّل بالنظر فيه إلى حكم ... ثم إن توقف على نقل فنقلي، وإلا فعقلي ... وما توقف النقل عليه لا يثبت إلا بالعقل.",
-      "english": "A proof is something through consideration of which a judgment can be reached. […] If it depends on transmission, the proof is transmitted; otherwise it is rational. […] What the authority of transmitted proof depends upon can be established only by reason.",
+      "id": "I.06a",
+      "title": "The first obligation sought for its own sake",
+      "arabic": "وأول الواجبات المقصودة المعرفة، والنظر فيها وسيلة إليها فيجب لذلك.",
+      "english": "The first obligation pursued for its own sake is knowledge of God. Rational inquiry is obligatory because it is the means to that knowledge.",
       "grade": "B",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
-          "type": "Source · Taqrīb I:32–33",
-          "text": "Sanandajī quotes or unpacks ‘والدليل’, ‘ما يمكن أن يتوصل بالنظر فيه إلى حكم’, ‘وقُدّ يخصّ’, ‘الجازم’, ‘فيقابل الإمارة’, and ‘على نقل / عقلي’ on printed I:32–33 (PDF pp. 45–46). The middle material remains source-graded; no omitted sentence has been silently fabricated."
+          "type": "Textual basis",
+          "text": "This compressed formulation gathers the phrases concerning the first intended obligation and inquiry as a means in Taqrīb I:31–32 (PDF pp. 44–45), checked against the 1912 OCR around lines 582–584. The text is an editorially normalized sequence, pending independent manuscript comparison."
         },
         {
-          "type": "Editorial distinction",
-          "text": "The priority of rational proof applies to what is presupposed by the authority of transmitted evidence itself; it is not a claim that every transmitted proposition must be reconstructed independently from reason."
+          "type": "Sanandajī",
+          "text": "The point is not that the preparatory inquiry is dispensable, but that knowledge of God is obligatory as an intended end, while inquiry is obligatory as a necessary means."
+        }
+      ]
+    },
+    {
+      "id": "I.07",
+      "title": "Proofs and the priority of rational evidence",
+      "arabic": "والدليل ما يمكن أن يتوصّل بالنظر فيه إلى حكم، وقد يخصّ بالجازم فيقابل الأمارة، ثم إن توقّف على نقل فنقليّ وإلا فعقليّ، وقد يستفاد منه بمعونة القرائن القطع، ولا يثبت ما استوى طرفاه عند العقل إلا بالنقل، وما توقّف النقل عليه لا يثبت إلا بالعقل.",
+      "english": "A proof is something through consideration of which one can arrive at a judgment. Sometimes the name is restricted to what establishes a firm judgment, in contrast to an indicative sign. If a proof depends upon transmission, it is transmitted proof; otherwise it is rational proof. Transmitted evidence can yield certainty when supported by appropriate accompanying indications. Matters whose alternatives are equally possible to reason are established through transmission. But the very things upon which the authority of transmission depends cannot themselves be established except by reason.",
+      "grade": "B",
+      "gap": false,
+      "notes": [
+        {
+          "type": "Matn and commentary collation",
+          "text": "The 1912 Cairo matn (Chapter I closing sentences; OCR lines 584–588) and the quoted lemmata of Taqrīb I:32–33 (1433/2012 facsimile PDF pp. 45–46) jointly support the consecutive clauses in this reading. Orthography and punctuation are editorial. Unlike the previous web text, none of these clauses is silently omitted."
         },
         {
-          "type": "Editorial",
-          "text": "Visible ellipses represent real interruptions. The missing discussion concerns the scope of proofs and the conditions of transmitted certainty."
+          "type": "Lexical note",
+          "text": "The contrast between dalīl and imāra occurs when dalīl is used in a restricted sense for evidence giving a decisive judgment; the broader definition may include grounds yielding a probable judgment."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 584–588; original printed pagination and manuscript witness still need confirmation."
+          "type": "Epistemological note",
+          "text": "The final claim gives a limited priority to reason: reason must establish the presuppositions that make transmission authoritative, such as the veracity of a claimant to prophecy. It does not require every transmitted proposition to be independently demonstrable."
+        },
+        {
+          "type": "Proofing status",
+          "text": "The quoted reading has been compared with the large upper-register commentary text, not with every variant in the 1587 manuscript or 1912 page image. It is a source-checked working text, not a certified critical variant."
         }
       ]
     },
@@ -1567,6 +1585,7 @@ window.GNAMMA_BOOK={
     "ʿAbd al-Qādir al-Sanandajī, Taqrīb al-Marām, Cairo al-Maktaba al-Azhariyya li-l-Turāth, 1433/2012 reproducing earlier printed material; 2 vols., 632 PDF pages.",
     "81 imported source-graded units drawn from the earlier 140-unit register. Many are excerpts, and 80 entries in the 140-unit register previously carried explicit gap flags. None of the six chapters is completely collated.",
     "Revision 17 image collation: Sanandajī/Taqrīb I:8–22 (PDF pp. 21–35); the documentary record distinguishes embedded Tahdhīb lemmata, the upper running commentary, and marginal notes.",
-    "Revision 19, 30 October 2026: direct image review of Taqrīb printed I:7–33 (PDF pp. 20–46), focused re-collation of I.01–I.07 and new inferential-process unit I.02a. The full Tahdhīb manuscript and the marginal Muḥākamāt still remain separate witnesses/voices."
+    "Revision 19, 30 October 2026: direct image review of Taqrīb printed I:7–33 (PDF pp. 20–46), focused re-collation of I.01–I.07 and new inferential-process unit I.02a. The full Tahdhīb manuscript and the marginal Muḥākamāt still remain separate witnesses/voices.",
+    "Current critical source checks: Taqrīb I:7–33, PDF pages 20–46. Chapter I has source-based continuity in English; reconstructed Arabic connectors await independent manuscript verification."
   ]
 };
