@@ -167,7 +167,7 @@
         },
         {
           "recordId": "lah-eman-cont",
-          "section": 2,
+          "section": 3,
           "role": "Number of intellects qualified",
           "relation": "authorial-continuation",
           "claim": "Ten is not a proved upper limit; Ṭūsī's reading of the Ishārāt is cited.",
@@ -175,7 +175,7 @@
         },
         {
           "recordId": "lah-eman-cont",
-          "section": 3,
+          "section": 4,
           "role": "Combinatorial reply",
           "relation": "reported-objection-reply",
           "claim": "Lāhījī enumerates twelve possible third-level effects to answer Suhrawardī's fixed-star objection.",
@@ -183,7 +183,7 @@
         },
         {
           "recordId": "lah-eman-cont",
-          "section": 4,
+          "section": 5,
           "role": "Conclusion of IV",
           "relation": "chapter-conclusion",
           "claim": "The objection is judged answered; Section V then shifts to elements.",
@@ -678,7 +678,7 @@
         },
         {
           "recordId": "lah-eman-cont",
-          "section": 3,
+          "section": 4,
           "level": "primary passage",
           "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
         }
@@ -962,13 +962,13 @@
         },
         {
           "recordId": "lah-eman-cont",
-          "section": 2,
+          "section": 3,
           "level": "primary passage",
           "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
         },
         {
           "recordId": "lah-eman-cont",
-          "section": 3,
+          "section": 4,
           "level": "primary passage",
           "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
         },
