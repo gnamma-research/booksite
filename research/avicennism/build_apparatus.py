@@ -9,10 +9,15 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 context=json.loads((ROOT/"argument-context.json").read_text(encoding="utf-8"))
 links=json.loads((ROOT/"argument-links.json").read_text(encoding="utf-8"))
+dedup=json.loads((ROOT/"TAJRID_DEDUP_AND_POST_ASFAR_SCOPE.json").read_text(encoding="utf-8"))
+after=json.loads((ROOT/"POST_ASFAR_DISTINCTIVE_DOSSIERS.json").read_text(encoding="utf-8"))
+assert len(context["records"])==22
 assert len(context["tradition"]["families"])>=16
+assert len(after["dossiers"])==12
+assert len(dedup["sharedExactPageRecords"])==2
 assert len(links["debates"])==10
 assert len(links["domainEvidence"])==20
-result="window.AVICENNIAN_APPARATUS="+json.dumps({"context":context,"links":links},ensure_ascii=False,separators=(",",":")).replace("<","\\u003c")+";\n"
+result="window.AVICENNIAN_APPARATUS="+json.dumps({"context":context,"links":links,"tajrid":dedup,"afterAsfar":after},ensure_ascii=False,separators=(",",":")).replace("<","\\u003c")+";\n"
 out=ROOT/"argument-apparatus.js"
 if "--check" in sys.argv:
     assert out.read_text(encoding="utf-8")==result,"Browser apparatus differs from context and source-link registers"
