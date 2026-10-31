@@ -26,9 +26,11 @@ def build()->str:
         js=(ROOT/file).read_text(encoding="utf-8")
         page=page.replace(tag,"<script>\n"+js.replace("</script","<\\/script")+"\n</script>",1)
     assert page.count("<script>")==len(ASSETS)
+    assert "window.AVICENNIAN_APPARATUS=" in page
+    assert "Tajrid" not in page[:100] or "Avicennism" in page
     assert "const D=V.data,$=V.$,$$=V.$$;" in page
     assert "window.AVICENNIAN_CORPUS=" in page
-    assert len(page.encode("utf-8"))>400000
+    assert len(page.encode("utf-8"))>540000
     return page
 
 if __name__=="__main__":
