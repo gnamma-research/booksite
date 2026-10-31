@@ -79,3 +79,17 @@ Priority unresolved:
 - SP-17 whether distinct early Arabic sources entail exemplary prior intelligibles or give rival internal explanations.
 
 **Verdict deliberately withheld.** This register concerns evidence, not a yes/no rating of the book. Where a quotation is missing, label U rather than refute or confirm.
+
+
+---
+
+## Stage 2.2 upstream source impact — not yet a verdict
+
+The Quṭb al-Dīn al-Rāzī *Risāla fī Taḥqīq al-Kulliyyāt* (https://atharah.net/mission-in-achieving-totalities/), not itself among the direct notes 129–165 of Spiker's §2.3.2, has now been read in substantial context and registered as S16.
+
+- SP-03/04: Quṭb offers explicit earlier philosophical **disagreement** over genus/differentia. His own argument defends one actual species versus conceptually distinguished essential predicates. This strengthens the requirement to verify each of Spiker's historical attributions rather than treating genus→matter and difference→form as a settled doctrine.
+- SP-10/12: A cognitive act's form as individual quality is ontologically distinguishable from the object-known as universal, which complicates claims that intellectual universality rules out actual individual psychical being.
+- SP-13/14: The author's mental form / known-object distinction supplies an internal Arabic conceptual alternative to simply saying that cognition is either a relation or a real quality. It requires the precise question and sense of each term.
+- Evidence levels for Spiker's own original citations remain UNCHANGED: a nearby author reporting a doctrine cannot verify the exact pages Spiker cites.
+
+The earlier source text is not permission to import AT terminology such as species expressa or suprasubjectivity as if it were an exact translation. Full comparative crosswalk is a later stage.
