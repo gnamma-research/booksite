@@ -19,8 +19,8 @@
     "atlas_sources": 374,
     "scholarly_boundary": "Mechanical preservation/link checks, plus selected page-image inspection; not exhaustive critical collation."
   },
-  "sourcebook_sha256": "cf08ffcecc168ef9bdae42e75aca437ec76353be59b31e595a30c10fc7ce5673",
-  "crosswalk_sha256": "79a5e9804436c4707b090abbbf010e6a5e45b43a3368afcc537098a822c1fe43",
+  "sourcebook_sha256": "3a4dc555c20f89a9d434e5d5efbf67ded4c628ff638ec87ad5dd285d8ab1561e",
+  "crosswalk_sha256": "ce03a28831c76266cf9ad2968a1f7bfe3998bf1ab2ae118e44f547e0892d89e1",
   "atlas_revision": "tajrid-critical-links-8-2026-10-31",
   "source_boundary": "Selected primary printed passages and mediated catalogue evidence; no exhaustive critical edition or complete Ghiyath manuscript.",
   "missing_prior_archive": "Tajrid_Continuation_2026-10-31.zip was not acquired; the original 30-October uploaded archive is preserved."

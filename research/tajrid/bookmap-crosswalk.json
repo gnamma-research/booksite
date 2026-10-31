@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "scope": "All 224 cumulative source records and 837 inherited Tusi units, with named contextual works; unresolved original works remain unresolved.",
+  "scope": "224 uniquely identified cumulative source records,837 inherited Tusi units and47 named/contextual works; unidentified originals remain unresolved.",
   "record_count": 224,
   "matn": {
     "work_id": "tusi_tajrid",
@@ -620,9 +620,10 @@
         "qushji_tajrid"
       ],
       "related_work_ids": [],
-      "relation_to_work": "direct printed gloss",
-      "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
-      "cited_locator": "Sharḥ Tajrīd al-ʿaqāʾid, ed. al-Zāriʿī al-Riḍāʾī, I p.173 (PDF p.173), from وقد قيل في شرحه to عدما مطلقا",
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Qūshjī I, printed/PDF p.130, complete paragraph beginning والجواب الحاسم",
       "cited_url": "https://archive.org/download/charhTajridKochaji/charhTajridKochaji.pdf"
     },
     "T6": {
@@ -3097,7 +3098,7 @@
       "relation_to_work": "direct printed gloss",
       "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
       "cited_locator": "Tasdīd al-qawāʿid, İSAM edition, II p.225, §77 (PDF p.227)",
-      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf#page=227"
     },
     "C31I04": {
       "source_record_id": "C31I04",
@@ -3110,7 +3111,7 @@
       "relation_to_work": "direct printed gloss",
       "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
       "cited_locator": "Tasdīd al-qawāʿid, İSAM edition, II pp.226–227, §78 (PDF pp.228–229)",
-      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf#page=228"
     },
     "C31J02": {
       "source_record_id": "C31J02",
@@ -3123,7 +3124,7 @@
       "relation_to_work": "direct printed gloss",
       "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
       "cited_locator": "Ḥāshiya in the İSAM Tasdīd edition, II pp.225–226, gloss 77.1 (PDF pp.227–228)",
-      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf#page=227"
     },
     "C31J03": {
       "source_record_id": "C31J03",
@@ -3136,7 +3137,7 @@
       "relation_to_work": "direct printed gloss",
       "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
       "cited_locator": "Ḥāshiya in the İSAM Tasdīd edition, II p.227, gloss 78.1 continuation (PDF p.229); objection and answer",
-      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf#page=229"
     },
     "C31J04": {
       "source_record_id": "C31J04",
@@ -3149,7 +3150,20 @@
       "relation_to_work": "direct printed gloss",
       "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
       "cited_locator": "Ḥāshiya in the İSAM Tasdīd edition, II p.227, gloss 78.2 (PDF p.229)",
-      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf#page=229"
+    },
+    "C31Q06": {
+      "source_record_id": "C31Q06",
+      "work_id": "qushji_tajrid",
+      "source_work_id": "qushji_tajrid",
+      "work_ids": [
+        "qushji_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "direct printed gloss",
+      "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
+      "cited_locator": "Sharḥ Tajrīd al-ʿaqāʾid, ed. al-Zāriʿī al-Riḍāʾī, I p.173 (PDF p.173), from وقد قيل في شرحه to عدما مطلقا",
+      "cited_url": "https://archive.org/download/charhTajridKochaji/charhTajridKochaji.pdf#page=173"
     },
     "C31Q05": {
       "source_record_id": "C31Q05",
@@ -3162,7 +3176,7 @@
       "relation_to_work": "direct printed gloss",
       "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
       "cited_locator": "Sharḥ Tajrīd al-ʿaqāʾid, ed. al-Zāriʿī al-Riḍāʾī, I pp.173–174 (PDF pp.173–174), أقول: فيه نظر through لغوا محضا",
-      "cited_url": "https://archive.org/download/charhTajridKochaji/charhTajridKochaji.pdf"
+      "cited_url": "https://archive.org/download/charhTajridKochaji/charhTajridKochaji.pdf#page=173"
     },
     "C31G02": {
       "source_record_id": "C31G02",
