@@ -8,19 +8,15 @@ window.GNAMMA_BOOK={
   "units": [
     {
       "id": "I.01",
-      "title": "Definition and subject of kalām",
-      "arabic": "الكلام هو العلم بالعقائد الدينية عن الأدلة اليقينية، وموضوعه المعلوم من حيث يتعلق به إثباتها.",
-      "english": "Kalām is knowledge of religious doctrines on the basis of conclusive proofs. Its subject matter is the knowable, insofar as the establishment of those doctrines depends upon it.",
+      "title": "The definition and subject of kalām",
+      "arabic": "الكلام هو العلم بالعقائد الدينية عن الأدلة اليقينية، وموضوعه المعلوم من حيث يتعلق بذلك.",
+      "english": "Kalām is knowledge of religious doctrines acquired through conclusive proofs. Its subject is the knowable insofar as it bears upon that purpose.",
       "grade": "A",
       "gap": false,
       "notes": [
         {
-          "type": "Direct collation · Taqrīb I:8–13",
-          "text": "The 2012 facsimile, PDF pp. 21–26 (printed I:8–13), distinguishes the lemmata ‘الكلام هو العلم بالعقائد’ (I:8), ‘الدينية’ and ‘عن الأدلة اليقينية’ (I:9), and the subject matter ‘المعلوم’ (I:11–13). Those lemmas belong to the matn; the surrounding explanations belong to Sanandajī."
-        },
-        {
-          "type": "Source witness",
-          "text": "The quoted definitions are separately visible across Taqrīb al-Marām I:8–12 (2012 reproduction, PDF pp. 21–25): ‘al-kalām huwa al-ʿilm bi-l-ʿaqāʾid’ (I:8), ‘al-dīniyya’ and ‘ʿan al-adilla al-yaqīniyya’ (I:9), then ‘wa-mawḍūʿuhu al-maʿlūm...’ (I:11). The original Tahdhīb copy-text still requires independent full collation."
+          "type": "Explanation",
+          "text": "As Sanandajī explains, the intended end of kalām is assent to doctrine; its subject is the knowable, not solely the existent, because inquiry into nonexistence and possibility also serves theological demonstration (Taqrīb I:8–12)."
         },
         {
           "type": "Sanandajī I:8–9",
@@ -35,202 +31,172 @@ window.GNAMMA_BOOK={
           "text": "‘On the basis of’ renders ʿan without implying that kalām is merely a store of inherited beliefs. ‘The knowable’ is broader than actual being; it does not entail that every conceivable nonentity subsists as a thing."
         }
       ],
-      "link": "../../al-sanandaji/taqrib-al-maram/#u-S-01"
+      "link": "../../al-sanandaji/taqrib-al-maram/#u-S-01",
+      "printedPages": "15",
+      "sourceEdition": "Cairo 1330 AH / 1912",
+      "statusText": ""
     },
     {
       "id": "I.02",
-      "title": "Accounts of knowledge",
-      "arabic": "[والعلم ...] حصول صورة الشيء في العقل، أو الاعتقاد الجازم المطابق الثابت، أو صفة يتجلى بها المذكور لمن قامت به.",
-      "english": "Several definitions of knowledge are considered. One treats knowledge as the presence of a thing’s form in the intellect; another as firm assent that corresponds to reality and is securely established; a third as a quality through which what can be mentioned is disclosed to the subject possessing it. These definitions do not have precisely the same extension.",
-      "grade": "B",
-      "gap": true,
+      "title": "Why knowledge is explained rather than defined",
+      "arabic": "والعلم لا يحد، والتفسير له بمثل حصول صورة الشيء في العقل، أو الاعتقاد الجازم المطابق الثابت، أو صفة يتجلى بها المذكور لمن قامت به، أو إدراك المركب أو الكلي، تنبيه على اختلاف الاصطلاحات.",
+      "english": "Knowledge admits of no strict definition. It may be explained as the obtaining of the form of a thing in the intellect; as firm, reality-conforming, settled belief; as a quality through which the object in question becomes manifest to its possessor; or as the apprehension of something composite or universal. The alternatives alert us to differences in technical usage.",
+      "grade": "A",
+      "gap": false,
       "notes": [
+        {
+          "type": "Explanation",
+          "text": "A definition restricted to firm assent does not capture conception, and a definition based on representation may apply more widely than the acceptance of a true proposition. The alternatives are not cumulative conditions."
+        },
         {
           "type": "Philosophical note",
           "text": "The formula ‘settled, true assent’ is narrower than conception: one can conceive an object without judging it to exist or making an affirmation about it. This distinction is important for the later discussion of propositions, reality-conformity, and certainty."
         },
         {
-          "type": "Collated · Taqrīb I:14–17",
-          "text": "The definitions are discussed on printed pp. 14–17 (facsimile PDF pp. 27–30). The commentary distinguishes the obtaining of a form, the assent to a judgment, and the wider quality through which an object becomes manifest. The translator must not present these rival formulations as one cumulative definition."
-        },
-        {
           "type": "Sanandajī I:14–17",
           "text": "The commentary discusses differences between cognition by representation, assent to a proposition, and a wider capacity for apprehension. A definition restricted to firm assent cannot straightforwardly include conception (taṣawwur). The full argument, not simply its three slogans, must govern the final translation."
-        },
-        {
-          "type": "Editorial",
-          "text": "The opening conjunction and intervening discussion are damaged in the OCR. The three definitions are competing characterisations; they are not a single cumulative definition."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 527–553; original printed pagination and manuscript witness still need confirmation."
         }
-      ]
+      ],
+      "printedPages": "15–16",
+      "sourceEdition": "Cairo 1330 AH / 1912",
+      "statusText": ""
     },
     {
       "id": "I.02a",
-      "title": "What rational inquiry does: movement among intelligibles",
-      "arabic": "وحقيقة النظر حركة النفس في المعقولات عودًا على بدء لتحصيل المطلوب المجهول، وكونه مفيدًا للعلم في الجملة.",
-      "english": "In its proper sense, rational inquiry is a movement of the soul among intelligibles, proceeding and returning so as to attain the sought-but-unknown result. That such inquiry yields knowledge in at least some cases is the point at issue.",
-      "grade": "B",
-      "gap": true,
-      "statusText": "Arabic recomposed from separately printed matn lemmata; interpretation checked against running commentary, I:17–20",
+      "title": "Rational inquiry and the possibility of knowledge",
+      "arabic": "وحقيقة النظر حركة النفس في المعقولات عودًا على بدء لتحصيل المجهول، وكونه مفيدًا للعلم في الجملة ولو في الإلهيات، وبدونه العلم ضروري، والمنكر معاند كالسفسطائي المنكر للحسيات أو الأوليات أو كليهما.",
+      "english": "Rational inquiry properly so called is the soul’s movement among intelligibles, advancing and returning in order to attain what is unknown. It yields knowledge in at least some cases, even in divine matters. Knowledge reached without inquiry is immediate. One who denies the possibility of such knowledge obstinately resists evidence, like a sophist who rejects sense-perception, first principles, or both.",
+      "grade": "A",
+      "gap": false,
+      "statusText": "",
       "notes": [
         {
-          "type": "Facsimile · Taqrīb I:17–20",
-          "text": "The facsimile PDF pp. 30–33 embeds the phrases ‘حقيقة النظر حركة النفس’, ‘في المعقولات’, ‘عودًا’, ‘على بدء’, ‘لتحصيل المطلوب المجهول’, and ‘مفيدًا للعلم في الجملة’ in the running commentary. The full Arabic sentence here joins those printed lemmata editorially; it is not yet claimed as a verified diplomatic reading of a separate Tahdhīb witness."
+          "type": "Explanation",
+          "text": "Sanandajī explains the ‘outward’ movement as seeking an appropriate mediating principle and the ‘returning’ movement as reasoning back to the sought conclusion (Taqrīb I:17–18)."
         },
         {
           "type": "Sanandajī’s explanation",
           "text": "The two movements are an initial search among what is intelligible for an appropriate mediating principle, followed by arranging that principle and returning from it to the result sought. The image at Taqrīb I:18, PDF p. 31, explicitly distinguishes the two movements."
-        },
-        {
-          "type": "Epistemology",
-          "text": "The first dispute concerns whether sound inquiry can actually lead to knowledge; the subsequent dispute concerns whether the resulting knowledge is produced by custom, generated causation, or necessary entailment. Keeping the two questions apart makes the compressed text intelligible."
         }
       ],
       "link": "../../al-sanandaji/taqrib-al-maram/#u-S-12",
-      "linkLabel": "Read Sanandajī's explanation of rational inquiry"
+      "linkLabel": "Read Sanandajī's explanation of rational inquiry",
+      "printedPages": "16",
+      "sourceEdition": "Cairo 1330 AH / 1912"
     },
     {
       "id": "I.03",
-      "title": "The causal connection of inquiry and knowledge",
+      "title": "Why knowledge follows inquiry",
       "arabic": "وهل هو بطريق العادة أو التوليد أو الوجوب فيه خلاف.",
-      "english": "As to how knowledge follows a sound inquiry, there is disagreement: is the connection one of established divine custom, of generation by an act of inquiry, or of necessity?",
+      "english": "It is disputed whether knowledge follows rational inquiry by customary conjunction, generated production, or necessity.",
       "grade": "A",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
-          "type": "Scholastic distinction",
-          "text": "For the customary account, knowledge occurs according to God's established practice when sound inquiry is completed. ‘Generation’ invokes the thesis that an act may indirectly produce a further effect. ‘Necessity’ makes the result inseparable from the appropriately completed prerequisites. These must not be collapsed into one assertion that inference ‘causes’ knowledge."
-        },
-        {
-          "type": "Direct image check · Taqrīb I:24–26",
-          "text": "The three lemmata ‘بطريق العادة’, ‘بطريق التوليد’, and ‘بطريق الوجوب’ and the closing phrase ‘فيه خلاف’ occur across printed I:24–26, PDF pp. 37–39. The connective question concerns the mode of connection between inquiry and its consequent knowledge."
+          "type": "Explanation",
+          "text": "These are different accounts of the causal or epistemic relation between sound inquiry and resultant knowledge, not three ways of expressing the same doctrine (Taqrīb I:17–25)."
         },
         {
           "type": "Sanandajī I:17–22",
           "text": "The alternatives concern the manner in which knowledge follows sound inferential inquiry: customary concurrence (ʿāda), causation by generation (tawlīd), or necessary connection (wujūb/luzūm). They are reported competing explanations. The theological significance changes if one silently renders them all as ‘reasoning produces knowledge’."
-        },
-        {
-          "type": "Editorial",
-          "text": "The bracketed English specifies the antecedent; the antecedent must still be checked on the scan."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 553–556; original printed pagination and manuscript witness still need confirmation."
         }
-      ]
+      ],
+      "printedPages": "16",
+      "sourceEdition": "Cairo 1330 AH / 1912",
+      "statusText": ""
     },
     {
       "id": "I.04",
-      "title": "Why inquiry is obligatory",
-      "arabic": "والنظر في معرفة الله تعالى واجب بالنص والإجماع، ولكونه مقدمة للمعرفة الواجبة عندنا بذلك، وعند المعتزلة لكونه دافعًا لضرر خوف العقاب.",
-      "english": "Rational inquiry toward knowledge of God is obligatory by scriptural evidence and consensus. On our position it is obligatory because it is a prerequisite of knowledge that is obligatory by those grounds; for the Muʿtazila it is obligatory because it removes the harm feared from punishment.",
-      "grade": "B",
+      "title": "Why inquiry directed to God is obligatory",
+      "arabic": "والنظر في معرفة الله تعالى واجب بالنص والإجماع، ولكونه مقدمة للمعرفة الواجبة عندنا بذلك، وعند المعتزلة لكونها دافعة لضرر خوف العقاب.",
+      "english": "Inquiry directed toward knowledge of God, exalted is He, is obligatory by revealed text and consensus. On our account, it is obligatory as a prerequisite for knowledge made obligatory by those authorities; according to the Muʿtazila, the knowledge sought averts the harm of feared punishment.",
+      "grade": "A",
       "gap": false,
       "notes": [
         {
-          "type": "Direct image check · I:26–30",
-          "text": "The text quoted by Sanandajī includes ‘والنظر في معرفة الله تعالى’, ‘واجب’, ‘بالنص’, ‘والإجماع’, and the explanation that inquiry is a prerequisite of required knowledge; see PDF pp. 39–43. These are distinct grounds and positions, not one undifferentiated proof."
-        },
-        {
-          "type": "Editorial",
-          "text": "The precise connective after إجماع and the final causal expression require manuscript checking."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 557–559; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "The first account grounds obligation in text and consensus and treats inquiry as an instrument; the second invokes fear of harm as the reason for its obligatoriness."
         }
-      ]
+      ],
+      "printedPages": "16",
+      "sourceEdition": "Cairo 1330 AH / 1912",
+      "statusText": ""
     },
     {
       "id": "I.05",
-      "title": "The objection of circularity",
-      "arabic": "قالوا: لو لم يجب إلا شرعًا لما صح الأمر بالنظر في المعجزة، لعدم الوجوب قبل ثبوت الشرع.",
-      "english": "They objected: if inquiry were obligatory solely by revelation, ordering someone to investigate a miracle would not be valid, since no such obligation would yet obtain before revelation had been established.",
-      "grade": "B",
+      "title": "The objection: inquiry before revealed authority",
+      "arabic": "قالوا: لو لم يجب إلا شرعًا لما صح إلزام النظر في المعجزة لعدم الوجوب قبل ثبوت الشرع.",
+      "english": "They object: if inquiry were obligatory only by revealed law, it would not be legitimate to require someone to examine a miracle, for no such obligation would yet be recognised before the authority of revelation was established.",
+      "grade": "A",
       "gap": false,
       "notes": [
         {
-          "type": "Direct image check · I:30–31",
-          "text": "The quoted objection is visible at PDF pp. 43–44 (printed I:30–31). It concerns commanding an investigation of a prophetic miracle before the hearer has established the truth of the lawgiver's claim."
-        },
-        {
-          "type": "Editorial",
-          "text": "This is an attributed objection, not the author’s conclusion."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 559–560; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "The challenge is circularity: one is asked to examine the miracle in order to establish the authority of the revelation that supposedly first makes the examination obligatory."
         }
-      ]
+      ],
+      "printedPages": "16",
+      "sourceEdition": "Cairo 1330 AH / 1912",
+      "statusText": ""
     },
     {
       "id": "I.06",
-      "title": "The reply: obligation versus recognition",
-      "arabic": "والجواب: أن المتوقف على ثبوت الشرع هو العلم بالوجوب، لا نفس الوجوب.",
-      "english": "The reply is that what depends on the establishment of revelation is knowledge that the inquiry is obligatory, not the obligation itself.",
-      "grade": "B",
+      "title": "The distinction between obligation and knowing it",
+      "arabic": "ورد بأن المتوقف على الشرع هو العلم بالوجوب لا نفس الوجوب.",
+      "english": "The reply is that what depends on revelation is knowledge of the obligation, not the obligation itself.",
+      "grade": "A",
       "gap": false,
       "notes": [
         {
-          "type": "Facsimile reading · I:31",
-          "text": "The upper text at Taqrīb I:31 (PDF p. 44) distinguishes the words ‘الشرع’, ‘العلم بالوجوب’ and ‘لا نفس الوجوب’. The continuous short sentence above is an editorially joined reading of that contrast; the original Tahdhīb print still requires direct comparison."
+          "type": "Explanation",
+          "text": "An obligation and the agent’s prior recognition of that obligation are distinct. This is the hinge of the reply to the objection (Taqrīb I:31–32)."
         },
         {
           "type": "Sanandajī's explanation",
           "text": "A duty can obtain as a matter of the revealed command even before its addressee discovers or recognizes that duty. The potential circularity arises only if knowing the obligation is mistakenly taken to be a condition of the obligation's very existence."
-        },
-        {
-          "type": "Editorial correction",
-          "text": "This replaces the earlier bracketed unfinished paraphrase. It does not treat the commentary’s extended legal-theoretical explanation as al-Taftāzānī’s own words."
         }
-      ]
+      ],
+      "printedPages": "17",
+      "sourceEdition": "Cairo 1330 AH / 1912",
+      "statusText": ""
     },
     {
       "id": "I.06a",
-      "title": "The first obligation sought for its own sake",
-      "arabic": "وأول الواجبات المقصودة المعرفة، والنظر فيها وسيلة إليها فيجب لذلك.",
-      "english": "The first obligation pursued for its own sake is knowledge of God. Rational inquiry is obligatory because it is the means to that knowledge.",
-      "grade": "B",
+      "title": "Knowledge as an end; inquiry as its means",
+      "arabic": "ثم إنها أول الواجبات المقصودة لتوقف البواقي عليها، والنظر فيها وسيلة إليها فيجب لذلك.",
+      "english": "Moreover, knowledge of God is the first obligation sought as an end in itself, since the others depend upon it. Inquiry into it is a means toward that knowledge and is obligatory on that account.",
+      "grade": "A",
       "gap": false,
       "notes": [
         {
-          "type": "Textual basis",
-          "text": "This compressed formulation gathers the phrases concerning the first intended obligation and inquiry as a means in Taqrīb I:31–32 (PDF pp. 44–45), checked against the 1912 OCR around lines 582–584. The text is an editorially normalized sequence, pending independent manuscript comparison."
+          "type": "Explanation",
+          "text": "The antecedent of the feminine «إنها» is the required knowledge; naẓar is instrumental rather than another ultimate obligation."
         },
         {
           "type": "Sanandajī",
           "text": "The point is not that the preparatory inquiry is dispensable, but that knowledge of God is obligatory as an intended end, while inquiry is obligatory as a necessary means."
         }
-      ]
+      ],
+      "printedPages": "17",
+      "sourceEdition": "Cairo 1330 AH / 1912",
+      "statusText": ""
     },
     {
       "id": "I.07",
-      "title": "Proofs and the priority of rational evidence",
-      "arabic": "والدليل ما يمكن أن يتوصّل بالنظر فيه إلى حكم، وقد يخصّ بالجازم فيقابل الأمارة، ثم إن توقّف على نقل فنقليّ وإلا فعقليّ، وقد يستفاد منه بمعونة القرائن القطع، ولا يثبت ما استوى طرفاه عند العقل إلا بالنقل، وما توقّف النقل عليه لا يثبت إلا بالعقل.",
-      "english": "A proof is something through consideration of which one can arrive at a judgment. Sometimes the name is restricted to what establishes a firm judgment, in contrast to an indicative sign. If a proof depends upon transmission, it is transmitted proof; otherwise it is rational proof. Transmitted evidence can yield certainty when supported by appropriate accompanying indications. Matters whose alternatives are equally possible to reason are established through transmission. But the very things upon which the authority of transmission depends cannot themselves be established except by reason.",
-      "grade": "B",
+      "title": "Proof, indication, reason and transmission",
+      "arabic": "والدليل ما يمكن أن يتوصل بالنظر فيه إلى حكم، وقد يختص بالجازم فيقابله الأمارة، ثم إن توقف على نقل فنقلي وإلا فعقلي، وقد يستفاد منه بمونة القرائن القطع، ولا يثبت ما استوى طرفاه عند العقل إلا بالنقل، وما يتوقف النقل عليه لا يثبت إلا بالعقل.",
+      "english": "A proof is that through consideration of which one can arrive at a judgment. Sometimes the term is restricted to what yields a firm judgment, in contrast to an indicative sign. If it depends on transmission it is a transmitted proof; otherwise it is rational. Certainty may be obtained from transmitted evidence with the aid of corroborating indications. What presents alternatives equally possible to reason is established by transmission, whereas what the authority of transmission itself depends upon can be established only by reason.",
+      "grade": "A",
       "gap": false,
       "notes": [
         {
-          "type": "Matn and commentary collation",
-          "text": "The 1912 Cairo matn (Chapter I closing sentences; OCR lines 584–588) and the quoted lemmata of Taqrīb I:32–33 (1433/2012 facsimile PDF pp. 45–46) jointly support the consecutive clauses in this reading. Orthography and punctuation are editorial. Unlike the previous web text, none of these clauses is silently omitted."
-        },
-        {
-          "type": "Lexical note",
-          "text": "The contrast between dalīl and imāra occurs when dalīl is used in a restricted sense for evidence giving a decisive judgment; the broader definition may include grounds yielding a probable judgment."
-        },
-        {
-          "type": "Epistemological note",
-          "text": "The final claim gives a limited priority to reason: reason must establish the presuppositions that make transmission authoritative, such as the veracity of a claimant to prophecy. It does not require every transmitted proposition to be independently demonstrable."
-        },
-        {
-          "type": "Proofing status",
-          "text": "The quoted reading has been compared with the large upper-register commentary text, not with every variant in the 1587 manuscript or 1912 page image. It is a source-checked working text, not a certified critical variant."
+          "type": "Explanation",
+          "text": "The broader and narrower uses of dalīl should not be conflated. Rational evidence has epistemic priority in establishing the trustworthiness of transmitted evidence, but this does not make each transmitted proposition independently demonstrable by reason (Taqrīb I:32–33)."
         }
-      ]
+      ],
+      "printedPages": "17",
+      "sourceEdition": "Cairo 1330 AH / 1912",
+      "statusText": ""
     },
     {
       "id": "II.01",
