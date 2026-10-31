@@ -1,5 +1,5 @@
 {
-  "revision": "tajrid-critical-reader-2-2026-10-31",
+  "revision": "tajrid-reader-ui-3-2026-10-31",
   "date": "2026-10-31",
   "title": "Tajrīd comparative critical sourcebook",
   "url": "https://gnamma-research.github.io/booksite/research/tajrid/",
@@ -23,5 +23,13 @@
   "crosswalk_sha256": "ce03a28831c76266cf9ad2968a1f7bfe3998bf1ab2ae118e44f547e0892d89e1",
   "atlas_revision": "tajrid-critical-links-8-2026-10-31",
   "source_boundary": "Selected primary printed passages and mediated catalogue evidence; no exhaustive critical edition or complete Ghiyath manuscript.",
-  "missing_prior_archive": "Tajrid_Continuation_2026-10-31.zip was not acquired; the original 30-October uploaded archive is preserved."
+  "missing_prior_archive": "Tajrid_Continuation_2026-10-31.zip was not acquired; the original 30-October uploaded archive is preserved.",
+  "content_revision": "tajrid-critical-reader-2-2026-10-31",
+  "ui": {
+    "navigation": "Persistent navigation, debate views, contextual passage sequences, filtered libraries, comparison, reading desk and exact bookmap return links",
+    "source_data_changed": false,
+    "mixed_note_formats_supported": true,
+    "validated_debate_views": 120,
+    "validated_source_pages": 224
+  }
 }

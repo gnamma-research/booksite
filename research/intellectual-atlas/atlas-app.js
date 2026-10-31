@@ -5,7 +5,7 @@
     if(!root||root.dataset.ready)return;root.dataset.ready='true';
     const D=JSON.parse(root.querySelector('[data-atlas]').textContent);
     const readerRoute=new URLSearchParams(location.hash.slice(1)).get('reader')||'';
-    const safeReader=/^(home|contents|books|collation|ghiyath|help|downloads|desk|matn|(?:source|debate|book|matn)\/[A-Za-z0-9_-]+)$/.test(readerRoute)?readerRoute:'';
+    const safeReader=readerRoute.length<=4000&&/^(home|contents|sources|books|collation|ghiyath|map|help|downloads|desk|matn|(?:source|book|matn)\/[A-Za-z0-9_-]+|debate\/[0-9]{2}(?:\/(?:argument|sources|compare|matn))?)(?:\?[A-Za-z0-9%=&+._~-]*)?$/.test(readerRoute)?readerRoute:'';
     if(safeReader){root.classList.add('ia-from-reader');root.querySelector('.gn-atlas-introduction')?.removeAttribute('open');const banner=document.createElement('div');banner.className='ia-reader-return';const a=document.createElement('a');a.href='../tajrid/#'+safeReader;a.textContent='← Return to Tajrīd reading';banner.append(a);const p=document.createElement('span');p.textContent='The selected book is highlighted. Relationships retain their evidence and uncertainty labels.';banner.append(p);root.prepend(banner)}
     // Textual-family views are book-centred curated subsets, not confessional schools.
     const textualFamilies=Array.isArray(D.textual_families)?D.textual_families:[];
@@ -526,3 +526,4 @@
     root.atlasTest={data:D,state,render,selectNode,selectEdge,selectHistory,temporal,filteredNodes,timelineNodes,getVisible:()=>({nodes:visibleNodes.map(n=>n.id),edges:visibleEdges.map(e=>e.id)}),setView:v=>{state.view=v;render()},setRange:(a,b)=>changeRange(a,b),zoomAt,centerYear,shiftRange};
   })();
   
+
