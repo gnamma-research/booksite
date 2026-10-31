@@ -17,7 +17,7 @@ FILES = [
     "reader-scope.js", "corpus-primary.js", "corpus-analysis.js",
     "argument-apparatus.js", "argument-context.json", "argument-links.json",
     "tradition-coverage.json", "TAJRID_DEDUP_AND_POST_ASFAR_SCOPE.json",
-    "POST_ASFAR_DISTINCTIVE_DOSSIERS.json", "build_standalone.py",
+    "POST_ASFAR_DISTINCTIVE_DOSSIERS.json", "TAJRID_NON_DUPLICATION_CROSSWALK.json", "build_standalone.py",
     "build_apparatus.py", "standalone.html", "NAMA_INTEGRATION.md", "README.md",
 ]
 START = (
@@ -29,7 +29,7 @@ START = (
     "The separate NAMA site has NOT been modified by this archive build.\n"
     "Working English arguments and selected original-language anchors are\n"
     "not equivalent to a full manuscript-critical edition of late Avicennism.\n"
-    "The separate Tajrid project owns duplicate matn/sharh collation.\n"
+    "The separate Tajrid project owns its 30 canonical matn/sharh questions; the crosswalk links them without copying.\n"
 )
 
 def build() -> dict[str, object]:
