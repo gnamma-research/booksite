@@ -126,7 +126,7 @@ window.GNAMMA_BOOK={
       "id": "I.05",
       "title": "The objection: inquiry before revealed authority",
       "arabic": "قالوا: لو لم يجب إلا شرعًا لما صح إلزام النظر في المعجزة لعدم الوجوب قبل ثبوت الشرع.",
-      "english": "They object: if inquiry were obligatory only by revealed law, it would not be legitimate to require someone to examine a miracle, for no such obligation would yet be recognised before the authority of revelation was established.",
+      "english": "They object: if inquiry were obligatory only by revealed law, it would not be legitimate to require someone to examine a miracle, for the obligation would not yet obtain before the authority of revelation had been established.",
       "grade": "A",
       "gap": false,
       "notes": [
