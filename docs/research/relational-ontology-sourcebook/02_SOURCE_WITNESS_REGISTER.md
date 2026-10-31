@@ -50,3 +50,6 @@ S11: 163 Spiker warns thubūt is not interchangeable with wujūd, 165 Gelenbevī
 4. URLs to web PDF require screenshot verification if analyzed through web; current citations rely on Arabic HTML, not uninspected PDFs.
 5. Keep long quotations out of public publication unless licensed or permission is established. Sourcebook records arguments with short precise excerpts plus links; fuller original Arabic can be handled in separately licensed research witnesses.
 6. The most important open issue is whether a relational configuration of a bed is an actual dependent mode or merely conceptually formed—as different glosses in S02 appear to disagree. The answer is not settled by translating it as a 'relational form'.
+
+
+| S16 | Quṭb al-Dīn al-Rāzī al-Taḥtānī, Risāla fī Taḥqīq al-Kulliyyāt (with 2020 editor's apparatus) | Upstream genealogy relevant to Spiker nn.129,134,156–158 (not directly cited in §2.3.2) | https://atharah.net/mission-in-achieving-totalities/ | READ-HTML: a full five-qāʿida argument + rebuttals; published editor claims 5 collated MSS but we did NOT recollate them. See 08_DOSSIER_QUTB_RAZI_UNIVERSALS.md. | Compare with Taftāzānī I105, Isfahānī Tasdīd I406–407 and mental-existence doctrine. |
