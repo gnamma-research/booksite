@@ -12,6 +12,12 @@ const icon=name=>{
  return '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-'+name+'"></use></svg>';};
 const button=(action,label,glyph)=>'<button type="button" data-ui="'+action+'" aria-label="'+E(label)+'" title="'+E(label)+'">'+icon(glyph)+'</button>';
 const palettes=[
+ ['almohad','Almohad plaster',['#f3eee6','#fdfaf4','#82503d','#292d2a','#8b7350']],
+ ['cordoba','Córdoba arches',['#f5f1e9','#fffdfa','#984d45','#2c2e30','#9b795c']],
+ ['nasrid','Nasrid mineral',['#eef3f1','#fcfefa','#2e617b','#21323a','#a3864f']],
+ ['zellij','Zellij green',['#f0f3ed','#fdfef9','#2b6b59','#27342e','#88865a']],
+ ['gnamma','Gnamma landscape',['#bfa38a','#faf4e7','#35616b','#c5a88b','#332f2a']],
+ ['gnamma-air','Gnamma · open landscape',['#bfa38a','#f4e5d4','#2e6570','#f8f3eb','#3b3832']],
  ['tetouan','Tétouan Doorway',['#f5f4ed','#fffef9','#12635f','#70513d','#8a6a37']],
  ['horizon','Mediterranean Horizon',['#edf6f4','#fcfffb','#075b83','#4d989e','#c5ad79']],
  ['manuscript','Maghribī Manuscript',['#f4ecdc','#fff8e9','#81512e','#3c3027','#a17443']],
@@ -123,10 +129,13 @@ function syncVisuals(){
  const p=R.prefs,attributes={'data-page-style-choice':p.pageStyle,'data-arabic-font-choice':p.arabicFont,'data-english-font-choice':p.englishFont,'data-parallel-side':p.parallelSide,'data-stacked-order':p.stackedOrder};
  for(const [attr,val] of Object.entries(attributes))$$('['+attr+']').forEach(b=>b.setAttribute('aria-pressed',String(b.getAttribute(attr)===val)));
  if($('#fontSizeLabel'))$('#fontSizeLabel').textContent=Math.round(p.fontScale*100)+'%';
+ if($('#smallerType'))$('#smallerType').disabled=p.fontScale<=.85;
+ if($('#largerType'))$('#largerType').disabled=p.fontScale>=1.4;
+ $$('#sheet [data-home-scene]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.homeScene===p.homeScene)));
  if($('#palettePicker')&&!$('#palettePicker').children.length)$('#palettePicker').innerHTML=palettes.map(([id,name,colours])=>'<button type="button" class="palette-option" data-palette="'+id+'" aria-label="'+E(name)+'" title="'+E(name)+'" aria-pressed="'+(id===p.palette)+'"><span class="palette-swatches">'+colours.map(c=>'<span style="background:'+c+'"></span>').join('')+'</span><strong>'+E(name)+'</strong></button>').join('');
- $('[data-palette]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.palette===p.palette)));
+ $$('#palettePicker [data-palette]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.palette===p.palette)));
  if($('#settingsTheme')&&!$('#settingsTheme').children.length)$('#settingsTheme').innerHTML=['system','light','dark'].map(id=>'<button type="button" data-theme-choice="'+id+'" aria-pressed="'+(id===p.appearance)+'">'+id[0].toUpperCase()+id.slice(1)+'</button>').join('');
- $('[data-theme-choice]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.themeChoice===p.appearance)));
+ $$('#settingsTheme [data-theme-choice]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.themeChoice===p.appearance)));
 }
 function notice(label){$('#sheet-kicker').textContent=label;}
 async function font(key,value){
@@ -276,7 +285,7 @@ document.addEventListener('click',async event=>{
   if(d.homeScene){await set({homeScene:d.homeScene});return;}
   if(d.palette){await set({palette:d.palette});notice(b.getAttribute('aria-label'));return;}
   if(d.themeChoice){await set({appearance:d.themeChoice});return;}
-  if(b.id==='smallerType'||b.id==='largerType'){await set({fontScale:Math.min(1.5,Math.max(.8,+(R.prefs.fontScale+(b.id==='largerType'?.05:-.05)).toFixed(2)))});return;}
+  if(b.id==='smallerType'||b.id==='largerType'){await set({fontScale:Math.min(1.4,Math.max(.85,+(R.prefs.fontScale+(b.id==='largerType'?.05:-.05)).toFixed(2)))});return;}
   if(d.copyKind)return await copySheet(d.copyKind);
   if(d.copyChoice)return await clipboard(textFor(d.copyChoice));
   if(d.editionTab){for(const el of $$('[data-edition-tab]'))el.setAttribute('aria-selected',String(el===b));$('#published-editions').hidden=d.editionTab!=='published';$('#personal-editions').hidden=d.editionTab!=='personal';return;}
