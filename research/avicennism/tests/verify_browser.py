@@ -64,7 +64,7 @@ async def run(browser_name="chromium",width=1440,height=900):
         await page.locator("header [data-action='settings']").click()
         await page.locator("select[data-pref='theme']").select_option("dark")
         assert await page.evaluate("document.documentElement.style.colorScheme")== "dark"
-        await page.locator("[data-action='close-panel']").click()
+        await page.locator("#panel .dialoghead [data-action='close-panel']").click()
         await page.locator("header [data-action='focus']").click()
         assert await page.evaluate("document.body.classList.contains('focusmode')")
         await page.locator("header [data-action='focus']").click()
