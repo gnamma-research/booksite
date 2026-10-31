@@ -1,0 +1,2077 @@
+{
+  "works": [
+    {
+      "id": "mufid_awail",
+      "title": "Awāʾil al-maqālāt",
+      "author": "al-Shaykh al-Mufīd",
+      "author_dates": "d.1022",
+      "date_label": "probably 1005–16",
+      "date_start": 1005,
+      "date_end": 1016,
+      "date_status": "approximate",
+      "date_note": "Approximate period or reported date; see the cited evidence.",
+      "tradition": "imami",
+      "family": "Early Imami",
+      "sources": [
+        "E26"
+      ],
+      "note": "Compares positions, including agreements and differences with Muʿtazilīs. It is a doctrinal catalogue rather than a full demonstrative summa.",
+      "kind": "independent",
+      "region": "Baghdad",
+      "node_type": "work",
+      "title_ar": "",
+      "code": "W144",
+      "original_tradition": "imami",
+      "tags": [],
+      "temporal": {
+        "start": 1005,
+        "end": 1016,
+        "anchor": 1010.5,
+        "kind": "range",
+        "basis": "composition or textual activity",
+        "label": "probably 1005–16",
+        "note": "An approximate catalogue window supports positioning. Its numerical endpoints add no precision beyond the original date label; the centre only positions that label.",
+        "window_approximate": true
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/mufid_awail",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "avicenna_shifa",
+      "title": "al-Shifāʾ",
+      "title_ar": "الشفاء",
+      "author": "Ibn Sīnā (Avicenna)",
+      "author_dates": "d. 1037",
+      "date_label": "1010s–1020s; completed in Isfahan",
+      "date_start": 1010,
+      "date_end": 1029,
+      "date_status": "approximate",
+      "date_note": "Compiled in stages. Modern accounts differ on early dating; Gutas places completion in the Isfahan period beginning 1024. Range is approximate, not a dated colophon.",
+      "kind": "independent",
+      "tradition": "avicennan",
+      "region": "Hamadan and Isfahan",
+      "family": "Avicennian summae",
+      "sources": [
+        "F01"
+      ],
+      "note": "The large philosophical encyclopedia supplying logic, physics, mathematics and metaphysics to later philosophy and kalam.",
+      "size": "Cairo 1952–83 edition: 22 large volumes across all disciplines.",
+      "code": "W003",
+      "node_type": "work",
+      "original_tradition": "shared",
+      "tags": [],
+      "temporal": {
+        "start": 1010,
+        "end": 1029,
+        "anchor": 1019.5,
+        "kind": "range",
+        "basis": "composition or textual activity",
+        "label": "1010s–1020s; completed in Isfahan",
+        "note": "An approximate catalogue window supports positioning. Its numerical endpoints add no precision beyond the original date label; the centre only positions that label.",
+        "window_approximate": true
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [
+        "Avicenna",
+        "Ibn Sina",
+        "Ibn Sīnā",
+        "ابن سينا"
+      ],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/avicenna_shifa",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "avicenna_isharat",
+      "title": "al-Ishārāt wa-l-tanbīhāt",
+      "title_ar": "الإشارات والتنبيهات",
+      "author": "Ibn Sīnā (Avicenna)",
+      "author_dates": "d. 1037",
+      "date_label": "c. 1030–1034",
+      "date_start": 1030,
+      "date_end": 1034,
+      "date_status": "approximate",
+      "date_note": "Approximate late-career dating, not an exact completion record.",
+      "kind": "independent",
+      "tradition": "avicennan",
+      "region": "Isfahan",
+      "family": "Isharat",
+      "sources": [
+        "F01",
+        "F02"
+      ],
+      "note": "Compressed late philosophical summa; its difficult arguments became a sustained commentary and adjudication curriculum.",
+      "code": "W004",
+      "node_type": "work",
+      "original_tradition": "shared",
+      "tags": [],
+      "temporal": {
+        "start": 1030,
+        "end": 1034,
+        "anchor": 1032,
+        "kind": "range",
+        "basis": "composition or textual activity",
+        "label": "c. 1030–1034",
+        "note": "An approximate catalogue window supports positioning. Its numerical endpoints add no precision beyond the original date label; the centre only positions that label.",
+        "window_approximate": true
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [
+        "Avicenna",
+        "Ibn Sina",
+        "Ibn Sīnā",
+        "ابن سينا"
+      ],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/avicenna_isharat",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "suhrawardi_hayakil",
+      "title": "Hayākil al-nūr",
+      "title_ar": "هياكل النور",
+      "author": "Shihāb al-Dīn al-Suhrawardī",
+      "author_dates": "c.1154–1191",
+      "date_label": "before 1191; exact date unknown",
+      "date_start": null,
+      "date_end": 1191,
+      "date_status": "terminus",
+      "date_note": "Author-death bound; proposals of an early date are not treated as certain.",
+      "kind": "independent",
+      "tradition": "ishraqi",
+      "region": "Iran / Anatolia / Syria",
+      "family": "Hayākil al-nūr",
+      "sources": [
+        "A10"
+      ],
+      "note": "Short philosophical work with extensive later commentary.",
+      "tags": [
+        "Suhrawardī corpus",
+        "Illuminationist"
+      ],
+      "confession": "Sunni background",
+      "code": "W215",
+      "node_type": "work",
+      "original_tradition": "ishraqi",
+      "temporal": {
+        "start": null,
+        "end": 1191,
+        "anchor": 1191,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "before 1191; exact date unknown",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/suhrawardi_hayakil",
+        "record_count": 2
+      }
+    },
+    {
+      "id": "razi_muhassal",
+      "title": "Muḥaṣṣal afkār al-mutaqaddimīn wa-l-mutaʾakhkhirīn",
+      "title_ar": "محصل أفكار المتقدمين والمتأخرين",
+      "author": "Fakhr al-Dīn al-Rāzī",
+      "author_dates": "d. 1210",
+      "date_label": "c. 585–590/1189–1194",
+      "date_start": 1189,
+      "date_end": 1194,
+      "date_status": "approximate",
+      "date_note": "Approximate range proposed by Altaş; not an exact composition year.",
+      "kind": "independent",
+      "tradition": "sunni",
+      "region": "Iran and Transoxiana",
+      "family": "Muhassal",
+      "sources": [
+        "F06",
+        "F34"
+      ],
+      "note": "Compact systematic theological synthesis; its commentaries and critiques form a separate family from the Isharat debate.",
+      "code": "W016",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": 1189,
+        "end": 1194,
+        "anchor": 1191.5,
+        "kind": "range",
+        "basis": "composition or textual activity",
+        "label": "c. 585–590/1189–1194",
+        "note": "An approximate catalogue window supports positioning. Its numerical endpoints add no precision beyond the original date label; the centre only positions that label.",
+        "window_approximate": true
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "School affiliation or distinct Ashʿarī intellectual context; not doctrinal agreement with every passage",
+          "sources": [
+            "SM02"
+          ]
+        }
+      ],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/razi_muhassal",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "ibnarabi_fusus",
+      "title": "Fuṣūṣ al-ḥikam",
+      "title_ar": "فصوص الحكم",
+      "author": "Muḥyī al-Dīn Ibn ʿArabī",
+      "author_dates": "1165–1240",
+      "date_label": "after 1229; attested by 1233",
+      "date_start": 1229,
+      "date_end": 1233,
+      "date_status": "range",
+      "date_note": "Written after the reported 1229 vision. A 1233 manuscript read to the author supplies upper bound; often summarized as c. 1230.",
+      "kind": "independent",
+      "tradition": "akbarian",
+      "region": "Damascus",
+      "family": "Akbarian foundational works",
+      "sources": [
+        "I39",
+        "I40"
+      ],
+      "note": "Foundational short work with a vast commentary tradition. The 1233witness bound is retained; later interpretation is neither exclusively Ṣadrian nor uniformly Sunni or Imami.",
+      "code": "W020",
+      "node_type": "work",
+      "original_tradition": "akbarian",
+      "tags": [],
+      "temporal": {
+        "start": 1229,
+        "end": 1233,
+        "anchor": 1231,
+        "kind": "range",
+        "basis": "composition or textual activity",
+        "label": "after 1229; attested by 1233",
+        "note": "The band spans the dated range or multiple stages stated in the label; it does not assert continuous composition. Its centre only positions the label."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/ibnarabi_fusus",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "tusi_tajrid",
+      "title": "Tajrīd al-iʿtiqād / Tajrīd al-kalām",
+      "title_ar": "تجريد الاعتقاد / تجريد الكلام",
+      "author": "Naṣīr al-Dīn al-Ṭūsī",
+      "author_dates": "d. 1274",
+      "date_label": "by 669/1270–71?; date uncertain",
+      "date_start": null,
+      "date_end": 1271,
+      "date_status": "terminus",
+      "date_note": "Probable authorial manuscript dated 669supplies a qualified upper bound; exact composition year remains unestablished.",
+      "kind": "matn",
+      "tradition": "imami",
+      "region": "Ilkhanid Iran",
+      "family": "Tajrid",
+      "sources": [
+        "F19",
+        "F20"
+      ],
+      "note": "Compressed six-part theological text: general ontology, substances and accidents, theology, prophecy, imamate and resurrection. Its commentary tradition became cross-confessional.",
+      "code": "W025",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1271,
+        "anchor": 1271,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "by 669/1270–71?; date uncertain",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/tusi_tajrid",
+        "record_count": 11
+      }
+    },
+    {
+      "id": "qunawi_miftah",
+      "title": "Miftāḥ ghayb al-jamʿ wa-l-wujūd",
+      "title_ar": "مفتاح غيب الجمع والوجود",
+      "author": "Ṣadr al-Dīn al-Qūnawī",
+      "author_dates": "1205/07–1274",
+      "date_label": "before Nuṣūṣ; before 1274",
+      "date_start": null,
+      "date_end": 1274,
+      "date_status": "terminus",
+      "date_note": "Relative priority to Nuṣūṣ is established by self-reference.",
+      "kind": "independent",
+      "tradition": "akbarian",
+      "region": "Konya",
+      "family": "Miftāḥ commentary family",
+      "sources": [
+        "K05",
+        "K06"
+      ],
+      "note": "Systematic metaphysics with a separate, long-lived commentary family.",
+      "code": "W247",
+      "node_type": "work",
+      "original_tradition": "akbarian",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1274,
+        "anchor": 1274,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "before Nuṣūṣ; before 1274",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/qunawi_miftah",
+        "record_count": 2
+      }
+    },
+    {
+      "id": "qunawi_tusi_correspondence",
+      "title": "Qūnawī–Ṭūsī correspondence / al-Murāsalāt",
+      "title_ar": "المراسلات بين القونوي والطوسي",
+      "author": "Ṣadr al-Dīn al-Qūnawī and Naṣīr al-Dīn al-Ṭūsī",
+      "author_dates": "both d.1274",
+      "date_label": "before 1274 (upper bound)",
+      "date_start": null,
+      "date_end": 1274,
+      "date_status": "terminus",
+      "date_note": "Do not transfer this contact into a claimed dependency of Ṭūsī’s Tajrīd.",
+      "kind": "correspondence",
+      "tradition": "akbarian",
+      "region": "Konya ↔ Iran",
+      "family": "Sufi–Avicennan philosophical debate",
+      "sources": [
+        "K06"
+      ],
+      "note": "Questions and replies about philosophical and mystical knowledge; collection contains both authors’ contributions.",
+      "code": "W250",
+      "node_type": "work",
+      "original_tradition": "shared",
+      "tags": [],
+      "map_tags": [
+        "cross-tradition synthesis / exchange"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1274,
+        "anchor": 1274,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "before 1274 (upper bound)",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/qunawi_tusi_correspondence",
+        "record_count": 24
+      }
+    },
+    {
+      "id": "qutb_shirazi_ishraq",
+      "title": "Sharḥ Ḥikmat al-ishrāq",
+      "title_ar": "شرح حكمة الإشراق",
+      "author": "Quṭb al-Dīn Maḥmūd al-Shīrāzī",
+      "author_dates": "1236–1311",
+      "date_label": "694 AH/1295",
+      "date_start": 1295,
+      "date_end": 1295,
+      "date_status": "exact",
+      "date_note": "Dated completion.",
+      "kind": "commentary",
+      "tradition": "ishraqi",
+      "region": "Iran / Anatolia",
+      "family": "Ḥikmat al-ishrāq",
+      "sources": [
+        "A12"
+      ],
+      "note": "Reworks prior commentaries; reception does not mean agreement on every doctrine.",
+      "tags": [
+        "Suhrawardī reception",
+        "Avicennan engagement"
+      ],
+      "code": "W220",
+      "node_type": "work",
+      "original_tradition": "ishraqi",
+      "temporal": {
+        "start": 1295,
+        "end": 1295,
+        "anchor": 1295,
+        "kind": "exact",
+        "basis": "composition or textual activity",
+        "label": "694 AH/1295",
+        "note": "Year-level date; read the original date label for finer precision and qualifications."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/qutb_shirazi_ishraq",
+        "record_count": 7
+      }
+    },
+    {
+      "id": "hilli_kashf",
+      "title": "Kashf al-murād fī sharḥ Tajrīd al-iʿtiqād",
+      "title_ar": "كشف المراد في شرح تجريد الاعتقاد",
+      "author": "al-ʿAllāma al-Ḥillī",
+      "author_dates": "d. 1325–1326",
+      "date_label": "mid-Rabīʿ I 696/January 1297",
+      "date_start": 1297,
+      "date_end": 1297,
+      "date_status": "exact",
+      "date_note": "Reported completion 15 or 16 Rabīʿ I 696; day varies in secondary reports, so month is the safe precision.",
+      "kind": "commentary",
+      "tradition": "imami",
+      "region": "Hilla",
+      "family": "Tajrid",
+      "sources": [
+        "F22"
+      ],
+      "note": "Early authoritative Imami exposition of Tusi’s Tajrid; especially important for its explicitly Imami theological sections.",
+      "code": "W029",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [],
+      "temporal": {
+        "start": 1297,
+        "end": 1297,
+        "anchor": 1297,
+        "kind": "exact",
+        "basis": "composition or textual activity",
+        "label": "mid-Rabīʿ I 696/January 1297",
+        "note": "Year-level date; read the original date label for finer precision and qualifications."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/hilli_kashf",
+        "record_count": 33
+      }
+    },
+    {
+      "id": "isfahani_tasdid",
+      "title": "Tasdīd al-qawāʿid fī sharḥ Tajrīd al-ʿaqāʾid",
+      "title_ar": "تسديد القواعد في شرح تجريد العقائد",
+      "author": "Shams al-Dīn Maḥmūd al-Iṣfahānī",
+      "author_dates": "d. 1348–1349",
+      "date_label": "before 1348–49; date unknown",
+      "date_start": null,
+      "date_end": 1349,
+      "date_status": "terminus",
+      "date_note": "Death 749 AH is only an upper bound. Often called the old commentary, contrasted with Qushji’s later new commentary.",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Iran and Cairo",
+      "family": "Tajrid",
+      "sources": [
+        "F19",
+        "F25"
+      ],
+      "note": "Sunni commentary on an Imami base text; the later Jurjānī gloss is a distinct layer.",
+      "size": "İSAM 2020 edition 3 volumes: study plus critical Arabic text with Jurjani and other layers.",
+      "code": "W032",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1349,
+        "anchor": 1349,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "before 1348–49; date unknown",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/isfahani_tasdid",
+        "record_count": 8
+      }
+    },
+    {
+      "id": "iji_mawaqif",
+      "title": "al-Mawāqif fī ʿilm al-kalām",
+      "title_ar": "المواقف في علم الكلام",
+      "author": "ʿAḍud al-Dīn al-Ījī",
+      "author_dates": "d. 1355",
+      "date_label": "c. 1330–33; revised 1349–52",
+      "date_start": 1330,
+      "date_end": 1352,
+      "date_status": "range",
+      "date_note": "Early redaction c.730–733 AH; revised 750–753 AH. Autograph completed early Jumādā II 753/1352, with further corrections. The chronological map displays two separate stages instead of a single continuous bar or misleading midpoint; source F26 is the 2025 research chronology.",
+      "kind": "matn",
+      "tradition": "sunni",
+      "region": "Tabriz and Shiraz",
+      "family": "Mawaqif",
+      "sources": [
+        "F26",
+        "F35"
+      ],
+      "note": "Six-part philosophical kalām; later read with Jurjānī’s commentary and glosses.",
+      "code": "W033",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": 1330,
+        "end": 1352,
+        "anchor": 1352,
+        "kind": "multiple_stages",
+        "basis": "composition or textual activity",
+        "label": "c. 1330–33; revised 1349–52",
+        "note": "Two documented recensional phases. A centre point at 1341 would invent a composition date. The label now follows the attested 1352 authorial copy; separate small markers indicate the earlier phase and revision, NOT 22 continuous years of writing.",
+        "stages": [
+          {
+            "start": 1330,
+            "end": 1333,
+            "label": "early recension, c. 730–733 AH"
+          },
+          {
+            "start": 1349,
+            "end": 1352,
+            "label": "revised recension and authorial copy, 750–753 AH"
+          }
+        ]
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/iji_mawaqif",
+        "record_count": 2
+      }
+    },
+    {
+      "id": "taftazani_sharh_maqasid",
+      "title": "Sharḥ al-Maqāṣid",
+      "title_ar": "شرح المقاصد",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "author_dates": "d. 1390",
+      "date_label": "Dhū l-Qaʿda 784/January 1383",
+      "date_start": 1383,
+      "date_end": 1383,
+      "date_status": "exact",
+      "date_note": "Completed with the matn in Samarqand according to the detailed TDV chronology.",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Samarqand",
+      "family": "Maqasid",
+      "sources": [
+        "F27",
+        "F28",
+        "F29"
+      ],
+      "note": "Large authorial commentary and a major peer of Sharh al-Mawaqif; it demonstrably uses Iji’s text but is not its commentary.",
+      "code": "W037",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": 1383,
+        "end": 1383,
+        "anchor": 1383,
+        "kind": "exact",
+        "basis": "composition or textual activity",
+        "label": "Dhū l-Qaʿda 784/January 1383",
+        "note": "Year-level date; read the original date label for finer precision and qualifications."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "intellectual_traditions": [
+        "ashari"
+      ],
+      "classification_evidence": [
+        {
+          "id": "ashari",
+          "status": "Taftāzānī: Ashʿarī scholar by genre-sensitive authorial analysis; Sharḥ al-ʿAqāʾid is a commentary on a Māturīdī matn",
+          "sources": [
+            "SM03"
+          ]
+        }
+      ],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/taftazani_sharh_maqasid",
+        "record_count": 9
+      }
+    },
+    {
+      "id": "jurjani_mawaqif",
+      "title": "Sharḥ al-Mawāqif",
+      "title_ar": "شرح المواقف",
+      "author": "al-Sayyid al-Sharīf al-Jurjānī",
+      "author_dates": "d. 1413",
+      "date_label": "beginning Shawwāl 807/1405",
+      "date_start": 1405,
+      "date_end": 1405,
+      "date_status": "exact",
+      "date_note": "Princeton manuscript records completion in early Shawwāl 807 at Samarqand:1405, not 1404.",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Samarqand; then Shiraz",
+      "family": "Mawaqif",
+      "sources": [
+        "F30",
+        "F35"
+      ],
+      "note": "Major exposition of Ījī; subsequent glosses continue its analysis.",
+      "code": "W039",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": 1405,
+        "end": 1405,
+        "anchor": 1405,
+        "kind": "exact",
+        "basis": "composition or textual activity",
+        "label": "beginning Shawwāl 807/1405",
+        "note": "Year-level date; read the original date label for finer precision and qualifications."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [
+        "Sharh al Mawaqif",
+        "Sharh al-Mawaqif",
+        "شرح المواقف",
+        "Jurjani",
+        "Gurgani"
+      ],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/jurjani_mawaqif",
+        "record_count": 5
+      }
+    },
+    {
+      "id": "jurjani_tajrid",
+      "title": "Ḥāshiya ʿalā Sharḥ al-Tajrīd",
+      "title_ar": "حاشية على شرح التجريد",
+      "author": "al-Sayyid al-Sharīf al-Jurjānī",
+      "author_dates": "d. 1413",
+      "date_label": "before 1413; date unknown",
+      "date_start": null,
+      "date_end": 1413,
+      "date_status": "terminus",
+      "date_note": "Death is an upper bound only. This gloss is on Isfahani’s old commentary, not on Qushji’s later work.",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "Shiraz and Samarqand",
+      "family": "Tajrid",
+      "sources": [
+        "F25"
+      ],
+      "note": "Gloss on Iṣfahānī’s commentary, not directly on Ṭūsī’s bare text.",
+      "code": "W040",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1413,
+        "anchor": 1413,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "before 1413; date unknown",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/jurjani_tajrid",
+        "record_count": 10
+      }
+    },
+    {
+      "id": "fanari_misbah",
+      "title": "Miṣbāḥ al-uns bayn al-maʿqūl wa-l-mashhūd",
+      "title_ar": "مصباح الأنس بين المعقول والمشهود",
+      "author": "Shams al-Dīn Muḥammad al-Fanārī",
+      "author_dates": "1350–1431",
+      "date_label": "before 1431 (upper bound)",
+      "date_start": null,
+      "date_end": 1431,
+      "date_status": "terminus",
+      "date_note": "Exact completion date not verified here.",
+      "kind": "commentary",
+      "tradition": "akbarian",
+      "region": "Ottoman Anatolia; later Iran",
+      "family": "Miftāḥ commentary family",
+      "sources": [
+        "K11",
+        "K12"
+      ],
+      "note": "Large commentary on Qūnawī, influential in subsequent metaphysical teaching.",
+      "code": "W254",
+      "node_type": "work",
+      "original_tradition": "akbarian",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1431,
+        "anchor": 1431,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "before 1431 (upper bound)",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/fanari_misbah",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "dawwani_shawakil",
+      "title": "Shawākil al-ḥūr fī sharḥ Hayākil al-nūr",
+      "title_ar": "شواكل الحور في شرح هياكل النور",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "author_dates": "1426/27–1502",
+      "date_label": "4 May 1468",
+      "date_start": 1468,
+      "date_end": 1468,
+      "date_status": "exact",
+      "date_note": "11 Shawwāl 872 AH.",
+      "kind": "commentary",
+      "tradition": "ishraqi",
+      "region": "Tabriz / Shiraz",
+      "family": "Hayākil al-nūr",
+      "sources": [
+        "A13"
+      ],
+      "note": "Widely transmitted commentary.",
+      "tags": [
+        "Suhrawardī reception",
+        "philosophical kalām",
+        "commentary/reception does not imply doctrinal assent"
+      ],
+      "confession": "Sunni / Ashʿarī",
+      "code": "W222",
+      "node_type": "work",
+      "original_tradition": "shared",
+      "temporal": {
+        "start": 1468,
+        "end": 1468,
+        "anchor": 1468,
+        "kind": "exact",
+        "basis": "composition or textual activity",
+        "label": "4 May 1468",
+        "note": "Year-level date; read the original date label for finer precision and qualifications."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/dawwani_shawakil",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "qushji_tajrid",
+      "title": "Sharḥ al-Tajrīd (the new commentary)",
+      "title_ar": "شرح التجريد",
+      "author": "ʿAlī al-Qūshjī",
+      "author_dates": "d. 1474",
+      "date_label": "before 1474; composition year unverified",
+      "date_start": null,
+      "date_end": 1474,
+      "date_status": "terminus",
+      "date_note": "1474 is author-death upper bound, not composition date.",
+      "kind": "commentary",
+      "tradition": "sunni",
+      "region": "Samarkand / Iran / Istanbul",
+      "family": "Tajrīd",
+      "sources": [
+        "I01",
+        "I03"
+      ],
+      "note": "Sunni commentary on an Imami matn; a major shared platform for later glosses.",
+      "code": "W044",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1474,
+        "anchor": 1474,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "before 1474; composition year unverified",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/qushji_tajrid",
+        "record_count": 8
+      }
+    },
+    {
+      "id": "maybudi_diwan_ali",
+      "title": "Sharḥ Dīwān ʿAlī (including Fawātiḥ)",
+      "title_ar": "شرح ديوان علي / فواتح",
+      "author": "Qāḍī Mīr Ḥusayn al-Maybudī",
+      "author_dates": "d.1504",
+      "date_label": "890/1485",
+      "date_start": 1485,
+      "date_end": 1485,
+      "date_status": "exact",
+      "date_note": "Fawātiḥ is its introduction, often copied separately.",
+      "kind": "commentary",
+      "tradition": "akbarian",
+      "region": "Yazd / Shiraz",
+      "family": "Shiraz philosophical–Sufi synthesis",
+      "sources": [
+        "K20"
+      ],
+      "note": "Long cosmological introduction, explicitly Akbarian in orientation; author remained a Shāfiʿī judge.",
+      "affiliations": [
+        "Sunni",
+        "Akbarian reception"
+      ],
+      "code": "W268",
+      "node_type": "work",
+      "original_tradition": "shared",
+      "tags": [
+        "Sunni",
+        "Akbarian reception"
+      ],
+      "map_tags": [
+        "cross-tradition synthesis / exchange"
+      ],
+      "temporal": {
+        "start": 1485,
+        "end": 1485,
+        "anchor": 1485,
+        "kind": "exact",
+        "basis": "composition or textual activity",
+        "label": "890/1485",
+        "note": "Year-level date; read the original date label for finer precision and qualifications."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/maybudi_diwan_ali",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "dashtaki_hayakil",
+      "title": "Ishrāq Hayākil al-nūr",
+      "title_ar": "إشراق هياكل النور",
+      "author": "Ghiyāth al-Dīn Manṣūr al-Dashtakī",
+      "author_dates": "1462–1541/42",
+      "date_label": "before c.1490 (reported bound: 895 AH)",
+      "date_start": null,
+      "date_end": 1490,
+      "date_status": "terminus",
+      "date_note": "Source reports before 895 AH/1490; 895 AH spans 1489–1490. This is a bound, not an exact completion date.",
+      "kind": "commentary",
+      "tradition": "ishraqi",
+      "region": "Shiraz",
+      "family": "Hayākil al-nūr",
+      "sources": [
+        "A13"
+      ],
+      "note": "Also a sustained critique of Dawwānī’s exposition.",
+      "tags": [
+        "Suhrawardī reception",
+        "Shiraz philosophy",
+        "commentary/reception does not imply doctrinal assent"
+      ],
+      "confession": "Imami",
+      "code": "W223",
+      "node_type": "work",
+      "original_tradition": "shared",
+      "temporal": {
+        "start": null,
+        "end": 1490,
+        "anchor": 1490,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "before c.1490 (reported bound: 895 AH)",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/dashtaki_hayakil",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "jami_durra",
+      "title": "al-Durra al-fākhira",
+      "title_ar": "الدرة الفاخرة",
+      "author": "ʿAbd al-Raḥmān al-Jāmī",
+      "author_dates": "1414–1492",
+      "date_label": "short recension c. 886/1481; expanded before 1492",
+      "date_start": 1481,
+      "date_end": 1492,
+      "date_status": "range",
+      "date_note": "Heerpp 5–6 distinguishes the original sent to MehmedII from the expanded version.",
+      "kind": "independent",
+      "tradition": "akbarian",
+      "region": "Herat → Ottoman court",
+      "family": "Adjudication of kalām, falsafa and Sufism",
+      "sources": [
+        "K16"
+      ],
+      "note": "Compares eleven disputed questions; argues for the Sufi positions.",
+      "affiliations": [
+        "Sunni",
+        "Akbarian",
+        "Philosophical"
+      ],
+      "code": "W264",
+      "node_type": "work",
+      "original_tradition": "akbarian",
+      "tags": [
+        "Sunni",
+        "Akbarian",
+        "Philosophical"
+      ],
+      "temporal": {
+        "start": 1481,
+        "end": 1492,
+        "anchor": 1486.5,
+        "kind": "range",
+        "basis": "composition or textual activity",
+        "label": "short recension c. 886/1481; expanded before 1492",
+        "note": "The band spans the dated range or multiple stages stated in the label; it does not assert continuous composition. Its centre only positions the label."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/jami_durra",
+        "record_count": 2
+      }
+    },
+    {
+      "id": "dashtaki_tajrid",
+      "title": "Ḥawāshī on Sharḥ al-Tajrīd",
+      "title_ar": "حواشي شرح التجريد",
+      "author": "Ṣadr al-Dīn Muḥammad al-Dashtakī",
+      "author_dates": "d. 1498",
+      "date_label": "late 15th century; before 1498",
+      "date_start": null,
+      "date_end": 1498,
+      "date_status": "terminus",
+      "date_note": "Aggregate of the dispute sequence; exact dates of individual installments unverified.",
+      "kind": "aggregate of gloss installments",
+      "tradition": "avicennan",
+      "region": "Shiraz",
+      "family": "Tajrīd",
+      "sources": [
+        "I03",
+        "I04"
+      ],
+      "note": "Aggregate node for Dashtakī’s counter-glosses against Dawwānī. It does not assert an individually verified chronological sequence for every reply. Separate installment records now identify the bibliographic sequence; they do not establish whole-work collation.",
+      "code": "W054",
+      "node_type": "work",
+      "original_tradition": "shared",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1498,
+        "anchor": 1498,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "late 15th century; before 1498",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "installment_ids": [
+        "dashtaki_tajrid_first",
+        "dashtaki_tajrid_second"
+      ],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/dashtaki_tajrid",
+        "record_count": 2
+      }
+    },
+    {
+      "id": "dawwani_tajrid",
+      "title": "Ḥāshiya on Qūshjī’s Sharḥ al-Tajrīd",
+      "title_ar": "حاشية على شرح التجريد",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "author_dates": "1426/7–1502",
+      "date_label": "late 15th century; before 1502",
+      "date_start": null,
+      "date_end": 1502,
+      "date_status": "terminus",
+      "date_note": "Individual glosses require separate dating; author death supplies upper bound.",
+      "kind": "aggregate of gloss installments",
+      "tradition": "sunni",
+      "region": "Shiraz",
+      "family": "Tajrīd",
+      "sources": [
+        "I02",
+        "I03"
+      ],
+      "note": "Aggregate node for Dawwānī’s Tajrīd gloss controversy; Princeton explicitly catalogs the first gloss. Individual installments are not separately dated here. Separate installment records now identify the bibliographic sequence; they do not establish whole-work collation.",
+      "code": "W056",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1502,
+        "anchor": 1502,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "late 15th century; before 1502",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": true,
+      "featured": false,
+      "search_aliases": [],
+      "installment_ids": [
+        "dawwani_tajrid_qadima",
+        "dawwani_tajrid_jadida",
+        "dawwani_tajrid_ajadd"
+      ],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/dawwani_tajrid",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "ghiyath_dashtaki_gloss",
+      "title": "Tajrīd al-ghawāshī / al-Muḥākamāt (Tajrīd disputes)",
+      "title_ar": "تجريد الغواشي / المحاكمات",
+      "author": "Ghiyāth al-Dīn Manṣūr al-Dashtakī",
+      "author_dates": "1462–1541",
+      "date_label": "before 1541",
+      "date_start": null,
+      "date_end": 1541,
+      "date_status": "terminus",
+      "date_note": "Upper bound from author death only.",
+      "kind": "critique",
+      "tradition": "imami",
+      "region": "Shiraz",
+      "family": "Tajrīd",
+      "sources": [
+        "I04",
+        "TJ_S04"
+      ],
+      "note": "Adjudicates disputes between Ṣadr al-Dīn and Dawwānī; distinct from Quṭb al-Dīn’s Ishārāt Muḥākamāt. Catalogue p.381 also attests Tajrīd al-ghawāshī and MUHAKEMAT ala HAVAŞİ ŞERHU’t-TECRID for inventory809. Same work-level record retained; individual manuscript identity and title witnesses remain explicit. The catalogue/partial-image evidence does not establish full text collation.",
+      "code": "W058",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1541,
+        "anchor": 1541,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "before 1541",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [
+        "Tajrid al-ghawashi",
+        "Tajrid al ghawashi",
+        "Muhakamat",
+        "تجريد الغواشي على الطبقات الجلالية على الصدرية"
+      ],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/ghiyath_dashtaki_gloss",
+        "record_count": 2
+      }
+    },
+    {
+      "id": "lahiji_shawariq",
+      "title": "Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām",
+      "title_ar": "شوارق الإلهام في شرح تجريد الكلام",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "author_dates": "d. 1661/2",
+      "date_label": "before c. 1662 (conventional death bound)",
+      "date_start": null,
+      "date_end": 1662,
+      "date_status": "terminus",
+      "date_note": "Conventional death bound is uncertain; exact composition year is unverified.",
+      "kind": "commentary",
+      "tradition": "imami",
+      "region": "Qom",
+      "family": "Tajrīd",
+      "sources": [
+        "I14"
+      ],
+      "note": "Expansive commentary synthesizing earlier disputations; surviving text ends around divine speech.",
+      "code": "W073",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1662,
+        "anchor": 1662,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "before c. 1662 (conventional death bound)",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/lahiji_shawariq",
+        "record_count": 63
+      }
+    },
+    {
+      "id": "astarabadi_barahin",
+      "title": "al-Barāhīn al-qāṭiʿa fī sharḥ Tajrīd al-ʿaqāʾid al-sāṭiʿa",
+      "title_ar": "البراهين القاطعة في شرح تجريد العقائد الساطعة",
+      "author": "Muḥammad Jaʿfar al-Astarābādī (Sharīʿatmadār)",
+      "author_dates": "1781–1847",
+      "date_label": "19 Jumādā I 1254 AH /1838",
+      "date_start": 1838,
+      "date_end": 1838,
+      "date_status": "exact",
+      "date_note": "Edition introduction quotes authorial colophon for completion.",
+      "kind": "commentary",
+      "tradition": "imami",
+      "region": "Qajar Iran / Iraqi shrine cities",
+      "family": "Tajrīd",
+      "sources": [
+        "I28",
+        "I29"
+      ],
+      "note": "Large later Imami commentary demonstrating continued Tajrīd-based theology alongside Sadrian philosophy.",
+      "size": "4 parts in cited modern edition",
+      "code": "W097",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [],
+      "temporal": {
+        "start": 1838,
+        "end": 1838,
+        "anchor": 1838,
+        "kind": "exact",
+        "basis": "composition or textual activity",
+        "label": "19 Jumādā I 1254 AH /1838",
+        "note": "Year-level date; read the original date label for finer precision and qualifications."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/astarabadi_barahin",
+        "record_count": 4
+      }
+    },
+    {
+      "id": "yazdi_tajrid",
+      "title": "Ḥāshiya on Dawwānī’s old Tajrīd gloss",
+      "title_ar": "حاشية على حاشية الشرح الجديد للتجريد",
+      "author": "Mullā ʿAbd Allāh al-Yazdī (al-Bahābādī)",
+      "author_dates": "",
+      "date_label": "composition date unverified; not placed on calendar",
+      "date_start": null,
+      "date_end": null,
+      "date_status": "unknown",
+      "date_note": "No chronological anchor is asserted in this audit.",
+      "kind": "supergloss",
+      "tradition": "imami",
+      "region": "Iran",
+      "family": "Tajrīd",
+      "sources": [
+        "TJ_S01"
+      ],
+      "note": "Distinct from Yazdī’s famous Tahdhīb logic gloss. Published volume contains two treatises; some lemma boundaries in the second are editorial conjectures. Selected passages verified, not whole-work collation.",
+      "code": "TJ001",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": null,
+        "anchor": null,
+        "kind": "unplaced",
+        "basis": "undated",
+        "label": "composition date unverified; not placed on calendar",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/yazdi_tajrid",
+        "record_count": 9
+      }
+    },
+    {
+      "id": "dawwani_tajrid_qadima",
+      "title": "al-Ḥāshiya al-qadīma al-Jalāliyya",
+      "title_ar": "الحاشية القديمة الجلالية",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "author_dates": "d.1502",
+      "date_label": "by 1502; composition date unverified",
+      "date_start": null,
+      "date_end": 1502,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "Shiraz",
+      "family": "Tajrīd",
+      "sources": [
+        "TJ_S02",
+        "TJ_S03",
+        "TJ_S15"
+      ],
+      "note": "First Jalālī installment; selected original manuscript clauses inspected. Installment numbering follows the conventional dossier grouping, not a fixed composition chronology; revisions and jadīd/ajadd witness identities are disputed.",
+      "code": "TJ002",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1502,
+        "anchor": 1502,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1502; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/dawwani_tajrid_qadima",
+        "record_count": 2
+      }
+    },
+    {
+      "id": "dashtaki_tajrid_first",
+      "title": "First Ṣadrī gloss on Qūshjī’s Tajrīd commentary",
+      "title_ar": "الحاشية الصدرية الأولى على شرح التجريد",
+      "author": "Ṣadr al-Dīn Muḥammad al-Dashtakī",
+      "author_dates": "d.1498",
+      "date_label": "by 1498; composition date unverified",
+      "date_start": null,
+      "date_end": 1498,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "gloss",
+      "tradition": "avicennan",
+      "region": "Shiraz",
+      "family": "Tajrīd",
+      "sources": [
+        "TJ_S02",
+        "TJ_S15"
+      ],
+      "note": "First Ṣadrī response; original text not collated in this sourcebook. Installment numbering follows the conventional dossier grouping, not a fixed composition chronology; revisions and jadīd/ajadd witness identities are disputed.",
+      "code": "TJ003",
+      "node_type": "work",
+      "original_tradition": "avicennan",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1498,
+        "anchor": 1498,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1498; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/dashtaki_tajrid_first",
+        "record_count": 0
+      }
+    },
+    {
+      "id": "dawwani_tajrid_jadida",
+      "title": "al-Ḥāshiya al-jadīda al-Jalāliyya",
+      "title_ar": "الحاشية الجديدة الجلالية",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "author_dates": "d.1502",
+      "date_label": "by 1502; composition date unverified",
+      "date_start": null,
+      "date_end": 1502,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "Shiraz",
+      "family": "Tajrīd",
+      "sources": [
+        "TJ_S02",
+        "TJ_S15"
+      ],
+      "note": "Second Jalālī installment; bibliographic identification only. Installment numbering follows the conventional dossier grouping, not a fixed composition chronology; revisions and jadīd/ajadd witness identities are disputed.",
+      "code": "TJ004",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1502,
+        "anchor": 1502,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1502; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/dawwani_tajrid_jadida",
+        "record_count": 0
+      }
+    },
+    {
+      "id": "dashtaki_tajrid_second",
+      "title": "Second Ṣadrī gloss on Qūshjī’s Tajrīd commentary",
+      "title_ar": "الحاشية الصدرية الثانية على شرح التجريد",
+      "author": "Ṣadr al-Dīn Muḥammad al-Dashtakī",
+      "author_dates": "d.1498",
+      "date_label": "by 1498; composition date unverified",
+      "date_start": null,
+      "date_end": 1498,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "gloss",
+      "tradition": "avicennan",
+      "region": "Shiraz",
+      "family": "Tajrīd",
+      "sources": [
+        "TJ_S02",
+        "TJ_S15"
+      ],
+      "note": "Second Ṣadrī response; incipit reported as Ṣadr kalām arbāb al-tajrīd. Original uncollated. Installment numbering follows the conventional dossier grouping, not a fixed composition chronology; revisions and jadīd/ajadd witness identities are disputed.",
+      "code": "TJ005",
+      "node_type": "work",
+      "original_tradition": "avicennan",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1498,
+        "anchor": 1498,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1498; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/dashtaki_tajrid_second",
+        "record_count": 0
+      }
+    },
+    {
+      "id": "dawwani_tajrid_ajadd",
+      "title": "al-Ḥāshiya al-ajadd al-Jalāliyya",
+      "title_ar": "الحاشية الأجد الجلالية",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "author_dates": "d.1502",
+      "date_label": "by 1502; composition date unverified",
+      "date_start": null,
+      "date_end": 1502,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "Shiraz",
+      "family": "Tajrīd",
+      "sources": [
+        "TJ_S02",
+        "TJ_S15"
+      ],
+      "note": "Third Jalālī installment; bibliographic identification only. Installment numbering follows the conventional dossier grouping, not a fixed composition chronology; revisions and jadīd/ajadd witness identities are disputed.",
+      "code": "TJ006",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1502,
+        "anchor": 1502,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1502; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/dawwani_tajrid_ajadd",
+        "record_count": 0
+      }
+    },
+    {
+      "id": "jurjani_tarifat",
+      "title": "al-Taʿrīfāt",
+      "title_ar": "التعريفات",
+      "author": "al-Sayyid al-Sharīf al-Jurjānī",
+      "author_dates": "d.1413",
+      "date_label": "by 1413; composition date unverified",
+      "date_start": null,
+      "date_end": 1413,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "lexicon",
+      "tradition": "sunni",
+      "region": "",
+      "family": "Terminology",
+      "sources": [
+        "TJ_S06"
+      ],
+      "note": "Terminological lexicon transmitted under Jurjānī’s name. B1 is a lexicon comparison; it is not a fourth Tajrīd gloss.",
+      "code": "TJ007",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1413,
+        "anchor": 1413,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1413; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/jurjani_tarifat",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "tihrani_tawdih",
+      "title": "Tawḍīḥ al-murād",
+      "title_ar": "توضيح المراد",
+      "author": "Hāshim al-Ḥusaynī al-Ṭihrānī",
+      "author_dates": "",
+      "date_label": "1961–1967 original publication; composition date unverified",
+      "date_start": 1961,
+      "date_end": 1967,
+      "date_status": "publication",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "supercommentary",
+      "tradition": "imami",
+      "region": "Tehran",
+      "family": "Tajrīd",
+      "sources": [
+        "TJ_S05"
+      ],
+      "note": "Commentary on al-Ḥillī’s Kashf al-murād. Keeps Ṭūsī’s matn, al-Ḥillī’s exposition and Ṭihrānī’s explanation distinct.",
+      "code": "TJ008",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": 1961,
+        "end": 1967,
+        "anchor": 1967,
+        "kind": "publication",
+        "basis": "publication witness",
+        "label": "1961–1967 original publication; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/tihrani_tawdih",
+        "record_count": 7
+      }
+    },
+    {
+      "id": "ibntaymiyya_radd_mantiqiyyin",
+      "title": "al-Radd ʿalā al-manṭiqiyyīn",
+      "title_ar": "الرد على المنطقيين",
+      "author": "Ibn Taymiyya",
+      "author_dates": "d.728AH/1328",
+      "date_label": "by 1328; composition date unverified",
+      "date_start": null,
+      "date_end": 1328,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "independent critique",
+      "tradition": "sunni",
+      "region": "Syria",
+      "family": "Logic critique",
+      "sources": [
+        "TJ_S07"
+      ],
+      "note": "Independent critique of definitions, demonstration and philosophical logic. Comparative source only; no direct response to Tajrīd is asserted.",
+      "code": "TJ009",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1328,
+        "anchor": 1328,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1328; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/ibntaymiyya_radd_mantiqiyyin",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "qari_radd_wahda",
+      "title": "al-Radd ʿalā al-qāʾilīn bi-waḥdat al-wujūd",
+      "title_ar": "الرد على القائلين بوحدة الوجود",
+      "author": "Mullā ʿAlī al-Qārī",
+      "author_dates": "",
+      "date_label": "by1014AH/1605–1606; composition date unverified",
+      "date_start": null,
+      "date_end": 1606,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "independent critique",
+      "tradition": "sunni",
+      "region": "Mecca",
+      "family": "Unity of existence debate",
+      "sources": [
+        "TJ_S08"
+      ],
+      "note": "Independent polemic on unity of existence. Sourcebook SN17 reports competing ways of knowing God; claims about opponents remain attributed.",
+      "code": "TJ010",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1606,
+        "anchor": 1606,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by1014AH/1605–1606; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/qari_radd_wahda",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "hilli_wajib_itiqad",
+      "title": "Wājib al-iʿtiqād ʿalā jamīʿ al-ʿibād",
+      "title_ar": "واجب الاعتقاد على جميع العباد",
+      "author": "al-ʿAllāma al-Ḥillī",
+      "author_dates": "d.1325–1326",
+      "date_label": "by 1326; composition date unverified",
+      "date_start": null,
+      "date_end": 1326,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "matn",
+      "tradition": "imami",
+      "region": "",
+      "family": "Wājib al-iʿtiqād",
+      "sources": [
+        "TJ_S09"
+      ],
+      "note": "Distinct short creed underlying al-Siyūrī’s al-Iʿtimād; not Ṭūsī’s Tajrīd.",
+      "code": "TJ011",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1326,
+        "anchor": 1326,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1326; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/hilli_wajib_itiqad",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "siyuri_itimad",
+      "title": "al-Iʿtimād fī sharḥ Wājib al-iʿtiqād",
+      "title_ar": "الاعتماد في شرح واجب الاعتقاد",
+      "author": "al-Miqdād al-Siyūrī",
+      "author_dates": "",
+      "date_label": "by826AH/1422–1423; composition date unverified",
+      "date_start": null,
+      "date_end": 1423,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "commentary",
+      "tradition": "imami",
+      "region": "Hilla / Najaf",
+      "family": "Wājib al-iʿtiqād",
+      "sources": [
+        "TJ_S09"
+      ],
+      "note": "Commentary on al-Ḥillī’s Wājib al-iʿtiqād; SYR01 is a short comparative quotation.",
+      "code": "TJ012",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1423,
+        "anchor": 1423,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by826AH/1422–1423; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/siyuri_itimad",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "mawardi_alam_nubuwwa",
+      "title": "Aʿlām al-nubuwwa",
+      "title_ar": "أعلام النبوة",
+      "author": "Abū al-Ḥasan al-Māwardī",
+      "author_dates": "d.1058",
+      "date_label": "by 1058; composition date unverified",
+      "date_start": null,
+      "date_end": 1058,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "independent treatise",
+      "tradition": "sunni",
+      "region": "Baghdad",
+      "family": "Prophecy",
+      "sources": [
+        "TJ_S10"
+      ],
+      "note": "Independent account of prophetic verification. MAW01 is a short extract and supplies no evidence of a Tajrīd commentary relation.",
+      "code": "TJ013",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1058,
+        "anchor": 1058,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1058; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/mawardi_alam_nubuwwa",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "taskoprizade_nahal",
+      "title": "al-Nahal wa-l-ʿalal fī taḥqīq aqsām al-ʿilal",
+      "title_ar": "النهل والعلل في تحقيق أقسام العلل",
+      "author": "Taşköprüzāde Aḥmad Efendi",
+      "author_dates": "d.1561",
+      "date_label": "by 1561; composition date unverified",
+      "date_start": null,
+      "date_end": 1561,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "independent treatise",
+      "tradition": "sunni",
+      "region": "Ottoman Anatolia",
+      "family": "Causation",
+      "sources": [
+        "TJ_S11"
+      ],
+      "note": "Treatise on divisions of causes, complete causes and priority; preserves objections and replies. NEW18 is an unnamed disputant reported within it.",
+      "code": "TJ014",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1561,
+        "anchor": 1561,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1561; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/taskoprizade_nahal",
+        "record_count": 3
+      }
+    },
+    {
+      "id": "dawwani_ithbat_qadima",
+      "title": "Risālat ithbāt al-wājib al-qadīma",
+      "title_ar": "رسالة إثبات الواجب القديمة",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "author_dates": "d.1502",
+      "date_label": "by 1502; composition date unverified",
+      "date_start": null,
+      "date_end": 1502,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "independent treatise",
+      "tradition": "sunni",
+      "region": "Shiraz",
+      "family": "Necessary Existent proofs",
+      "sources": [
+        "TJ_S12"
+      ],
+      "note": "Old treatise proving the Necessary Existent, printed in Sabʿ rasāʾil. Its al-Kātibī reports are mediated; distinct from the old Tajrīd gloss.",
+      "code": "TJ015",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1502,
+        "anchor": 1502,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1502; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/dawwani_ithbat_qadima",
+        "record_count": 11
+      }
+    },
+    {
+      "id": "shirazi_qawl_sadid",
+      "title": "al-Qawl al-sadīd fī sharḥ al-Tajrīd",
+      "title_ar": "القول السديد في شرح التجريد",
+      "author": "Muḥammad al-Ḥusaynī al-Shīrāzī",
+      "author_dates": "",
+      "date_label": "1381AH/1961 printing; composition date unverified",
+      "date_start": null,
+      "date_end": 1961,
+      "date_status": "publication",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "commentary",
+      "tradition": "imami",
+      "region": "",
+      "family": "Tajrīd",
+      "sources": [
+        "TJ_S13"
+      ],
+      "note": "Modern direct Tajrīd commentary. EXT13 is a short digital extract; author is not Ṣadr al-Dīn al-Dashtakī or Mullā Ṣadrā.",
+      "code": "TJ016",
+      "node_type": "work",
+      "original_tradition": "imami",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1961,
+        "anchor": 1961,
+        "kind": "publication",
+        "basis": "publication witness",
+        "label": "1381AH/1961 printing; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/shirazi_qawl_sadid",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "avicenna_mabda_maad",
+      "title": "al-Mabdaʾ wa-l-maʿād",
+      "title_ar": "المبدأ والمعاد",
+      "author": "Ibn Sīnā (Avicenna)",
+      "author_dates": "d.1037",
+      "date_label": "by 1037; composition date unverified",
+      "date_start": null,
+      "date_end": 1037,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "independent treatise",
+      "tradition": "avicennan",
+      "region": "",
+      "family": "Avicennan philosophy",
+      "sources": [
+        "TJ_S14"
+      ],
+      "note": "Treatise cited in TIH06 through Ṭihrānī; the quoted locus has not been independently collated in this continuation.",
+      "code": "TJ017",
+      "node_type": "work",
+      "original_tradition": "avicennan",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1037,
+        "anchor": 1037,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "by 1037; composition date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/avicenna_mabda_maad",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "avicenna_shifa_burhan",
+      "title": "al-Burhān of al-Shifāʾ (analytical section)",
+      "title_ar": "البرهان من الشفاء",
+      "author": "Ibn Sīnā (Avicenna)",
+      "author_dates": "",
+      "date_label": "within al-Shifāʾ, completed by1029; section date unverified",
+      "date_start": null,
+      "date_end": 1029,
+      "date_status": "terminus",
+      "date_note": "An author-death bound is not a composition date; a publication marker dates the cited edition only.",
+      "kind": "constituent section",
+      "tradition": "avicennan",
+      "region": "",
+      "family": "al-Shifāʾ",
+      "sources": [
+        "F01"
+      ],
+      "note": "The demonstration section of al-Shifāʾ, named as further comparison in SN10. No new direct extract or independent composition is asserted. The generic phrase “Avicennian Burhān” in SN10 is an editorial comparison pointer; identification with this Shifāʾ section is provisional, not an identified quotation.",
+      "code": "TJ018",
+      "node_type": "work",
+      "original_tradition": "avicennan",
+      "tags": [
+        "Tajrīd sourcebook coverage"
+      ],
+      "temporal": {
+        "start": null,
+        "end": 1029,
+        "anchor": 1029,
+        "kind": "upper_bound",
+        "basis": "author-death upper bound",
+        "label": "within al-Shifāʾ, completed by1029; section date unverified",
+        "note": "No exact composition date is claimed."
+      },
+      "summary": false,
+      "featured": false,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/avicenna_shifa_burhan",
+        "record_count": 1
+      }
+    },
+    {
+      "id": "tusi_isharat",
+      "title": "Ḥall mushkilāt al-Ishārāt / Sharḥ al-Ishārāt",
+      "title_ar": "حل مشكلات الإشارات / شرح الإشارات",
+      "author": "Naṣīr al-Dīn al-Ṭūsī",
+      "author_dates": "d. 1274",
+      "date_label": "Ṣafar 644/June–July 1246",
+      "date_start": 1246,
+      "date_end": 1246,
+      "date_status": "exact",
+      "date_note": "Completion month and year supplied by TDV; distinct from later manuscript copy dates.",
+      "kind": "commentary",
+      "tradition": "avicennan",
+      "region": "Quhistan",
+      "family": "Isharat",
+      "sources": [
+        "F15",
+        "F16"
+      ],
+      "note": "Explains Avicenna while answering Razi’s objections; a foundational philosophical text later read across confessional boundaries.",
+      "code": "W022",
+      "node_type": "work",
+      "original_tradition": "shared",
+      "tags": [],
+      "temporal": {
+        "start": 1246,
+        "end": 1246,
+        "anchor": 1246,
+        "kind": "exact",
+        "basis": "composition or textual activity",
+        "label": "Ṣafar 644/June–July 1246",
+        "note": "Year-level date; read the original date label for finer precision and qualifications."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/tusi_isharat",
+        "record_count": 0
+      }
+    },
+    {
+      "id": "siyalkuti_mawaqif",
+      "title": "Ḥāshiya on Sharḥ al-Mawāqif",
+      "title_ar": "حاشية على شرح المواقف",
+      "author": "ʿAbd al-Ḥakīm al-Siyālkūtī",
+      "author_dates": "d. 1657",
+      "date_label": "Before 1657 (upper bound)",
+      "date_start": null,
+      "date_end": 1657,
+      "date_status": "terminus",
+      "date_note": "Composition year not established here; author death supplies an upper bound, not a composition date.",
+      "kind": "gloss",
+      "tradition": "sunni",
+      "region": "South Asia; Ottoman reception",
+      "family": "Mawāqif",
+      "sources": [
+        "S02"
+      ],
+      "note": "Frequently responds to Hasan Celebi in defense of Jurjani.",
+      "code": "W070",
+      "node_type": "work",
+      "original_tradition": "sunni",
+      "tags": [],
+      "temporal": {
+        "start": null,
+        "end": 1657,
+        "anchor": 1657,
+        "kind": "upper_bound",
+        "basis": "composition or textual activity",
+        "label": "Before 1657 (upper bound)",
+        "note": "The cap marks a latest bound or attestation, not a verified composition year. The open direction has no established lower endpoint."
+      },
+      "summary": true,
+      "featured": true,
+      "search_aliases": [],
+      "tajrid_reader": {
+        "href": "../tajrid/#book/siyalkuti_mawaqif",
+        "record_count": 0
+      }
+    }
+  ],
+  "tajrid_members": [
+    "tusi_tajrid",
+    "hilli_kashf",
+    "isfahani_tasdid",
+    "jurjani_tajrid",
+    "qushji_tajrid",
+    "dashtaki_tajrid",
+    "dawwani_tajrid",
+    "ghiyath_dashtaki_gloss",
+    "khafri_tajrid",
+    "lahiji_shawariq",
+    "lahiji_khafri",
+    "astarabadi_barahin",
+    "yazdi_tajrid",
+    "dawwani_tajrid_qadima",
+    "dashtaki_tajrid_first",
+    "dawwani_tajrid_jadida",
+    "dashtaki_tajrid_second",
+    "dawwani_tajrid_ajadd",
+    "tihrani_tawdih",
+    "shirazi_qawl_sadid"
+  ]
+}

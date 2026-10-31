@@ -28,7 +28,8 @@ essays:[{items:[
 ]}],
 research:[{items:[
  {name:"Bidāyat al-Mujtahid · Edition I: Law and Legal Reasoning",href:"research/bidaya/law/"},
- {name:"Texts in Time · Islamic Intellectual Atlas",href:"research/intellectual-atlas/"}
+ {name:"Texts in Time · Islamic Intellectual Atlas",href:"research/intellectual-atlas/"},
+ {name:"Tajrīd · Comparative Critical Sourcebook",href:"research/tajrid/"}
 ]}],
 about:[{items:[
  {name:"Purpose & approach",href:"about/purpose/"},
@@ -142,3 +143,4 @@ document.addEventListener("pointerdown",e=>{
  if(!dock.contains(e.target)&&!panel.contains(e.target))navigate("home");
 });
 })();
+

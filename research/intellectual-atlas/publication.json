@@ -1,14 +1,14 @@
 {
   "title": "Texts in Time · Islamic Intellectual Atlas",
-  "revision": "avicennian-extensions-7.2-2026-10-30",
+  "revision": "tajrid-critical-links-8-2026-10-31",
   "status": "working research",
-  "ui_revision": "mobile-first-whole-range-7.1.2-2026-10-29",
+  "ui_revision": "tajrid-reader-return-links-8-2026-10-31",
   "mobile_interface_note": "Compact phone introduction, search-first controls, disclosed research/filters, inline family shortcuts; chart appears high on first screen.",
   "whole_range_note": "Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.",
   "date_marker_note": "Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.",
-  "entries": 386,
-  "textual_relationships": 362,
-  "sources": 359,
+  "entries": 404,
+  "textual_relationships": 377,
+  "sources": 374,
   "historical_sources": 72,
   "ancient_bridge_entries": 10,
   "neoplatonic_new_entries": 44,
@@ -27,24 +27,18 @@
   "tahdhib_added_relationships": 26,
   "displayed_political_periods": 48,
   "displayed_events": 36,
-  "download_current_pdf": "Intellectual_Atlas_Reference_Revision7.pdf",
-  "download_current_offline": "Gnamma_Intellectual_Atlas_Offline_Revision7.zip",
+  "download_current_pdf": null,
+  "download_current_offline": "Gnamma_Intellectual_Atlas_Offline_Revision8.zip",
   "individual_reign_rows": 0,
   "pdf_pages": {
     "illustrated_overview_legacy": 15,
     "illustrated_reference_legacy": 204,
-    "complete_updated_register": 84,
+    "historical_revision7_register": 84,
     "focused_tahdhib_supplement": 9
   },
-  "pdf_note": "The revision-7.2 PDF and offline ZIP are built from this canonical dataset by build_release.py. Historical PDFs from revisions 2 and 4 retain earlier scholarship and are marked legacy.",
+  "pdf_note": "Revision 8 adds Tajrid critical-reader links. The current data and offline map include these additions; revision 7 PDF/ZIP are historical snapshots. Historical PDFs from revisions 2 and 4 retain earlier scholarship and are marked legacy.",
   "download_sha256": {
-    "Gnamma_Intellectual_Atlas_Offline_Revision7.zip": "50a705efd9814ff291cd317582257ae40f3e8ddb53e366ce30d103635b59a5a6",
-    "Intellectual_Atlas_Reference_Revision4.pdf": "7d5bf70d9d683bbdeaaba21ce9b6f8bc3b7e112356bd81b50622466964858b24",
-    "Intellectual_Atlas_Reference_Revision7.pdf": "56fdc288c6171980b9313540a10698434185c656b6a2f3909317b8d0ef5920b9",
-    "Islamic_Intellectual_Timeline.pdf": "f75eba18a18b04a3a443a0f6a097ba05013179219ae5eafadcdb5fa5513235ba",
-    "Islamic_Timeline_Overview.pdf": "346e2cf5efcca1943d00361d7fcd8ca4cbf26b6510a24aa1417c0659da4258c8",
-    "Islamic_Timeline_Website_Package.zip": "8673c89ac9b75ba35c5ca8ffbe63eba5345ba1d259d37b74488266b0ffab7352",
-    "Tahdhib_Genealogy_Addendum.pdf": "331d46c9fe8bb2a7e059e18dd214fb117f8d1d8ff5bf5e0fe3d82a8e81db33ab",
-    "intellectual-atlas-data.json": "9bc847854bdaf386d056b6c50e2270b2d963a3ea53bb5eddb79177cc1081e6b2"
+    "Gnamma_Intellectual_Atlas_Offline_Revision8.zip": "68bd7c14ee2696d5432ac57b8584c46968187d9b96b9e1a6dc370939f8f4779e",
+    "intellectual-atlas-data.json": "9c028f2160730ae5d9e5f0ba01330d4a7a9c05fea86a7a4aac070a5100c2520f"
   }
 }

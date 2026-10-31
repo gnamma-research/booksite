@@ -1,0 +1,27 @@
+{
+  "revision": "tajrid-critical-reader-2-2026-10-31",
+  "date": "2026-10-31",
+  "title": "Tajrīd comparative critical sourcebook",
+  "url": "https://gnamma-research.github.io/booksite/research/tajrid/",
+  "counts": {
+    "status": "pass",
+    "debates": 30,
+    "source_records": 224,
+    "original_source_ids_retained": 198,
+    "continuation_records": 26,
+    "tusi_units": 837,
+    "tusi_units_equal_original": true,
+    "original_release_files_byte_identical": 39,
+    "all_record_book_links_resolve": true,
+    "named_contextual_works_audited": 47,
+    "atlas_nodes": 404,
+    "atlas_edges": 377,
+    "atlas_sources": 374,
+    "scholarly_boundary": "Mechanical preservation/link checks, plus selected page-image inspection; not exhaustive critical collation."
+  },
+  "sourcebook_sha256": "cf08ffcecc168ef9bdae42e75aca437ec76353be59b31e595a30c10fc7ce5673",
+  "crosswalk_sha256": "79a5e9804436c4707b090abbbf010e6a5e45b43a3368afcc537098a822c1fe43",
+  "atlas_revision": "tajrid-critical-links-8-2026-10-31",
+  "source_boundary": "Selected primary printed passages and mediated catalogue evidence; no exhaustive critical edition or complete Ghiyath manuscript.",
+  "missing_prior_archive": "Tajrid_Continuation_2026-10-31.zip was not acquired; the original 30-October uploaded archive is preserved."
+}

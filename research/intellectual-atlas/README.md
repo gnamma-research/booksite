@@ -1,3 +1,13 @@
+Tajrīd critical-reader integration — revision 8, 31 October 2026
+
+Current canonical data: 404 nodes, 377 textual relationships, 374 bibliographical sources. Added18 works/installments,15 sources and15 qualified edges; all224 Tajrīd source records and47 named/contextual work records map to stable IDs. This is bibliographical coverage, not complete collation.
+
+Every mapped book can open its available reader passages. Reader links carry a validated reader route; the map selects the work, focuses connections and preserves an exact return link. Dossier chronology, uncertain attributions and undated composition remain qualified. Ghiyāth’s Tajrīd al-ghawāshī and al-Muḥākamāt share the existing work ID; Ragıp Paşa809 is the corrected witness.
+
+Run build.py to validate the canonical data and synchronize index.html/publication.json. Revision8 offline ZIP embeds the current map; historical PDFs and revision7 ZIP remain earlier snapshots. The public Tajrīd reading package provides a complete static edition for offline use.
+
+Previous implementation history follows.
+
 # Texts in Time · Islamic Intellectual Atlas
 Gnamma Research · revision 7.2 · 30 October 2026.
 
@@ -219,3 +229,4 @@ restore a practical range when the complete span cannot physically pan.
 The browser checks also assert the initial phone screen contains the top of
 the actual graphic, not an expanded scholarly preface, and that the hidden
 content is fully reachable on demand.
+

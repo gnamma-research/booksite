@@ -1,0 +1,3894 @@
+{
+  "schema_version": 1,
+  "scope": "All 224 cumulative source records and 837 inherited Tusi units, with named contextual works; unresolved original works remain unresolved.",
+  "record_count": 224,
+  "matn": {
+    "work_id": "tusi_tajrid",
+    "unit_count": 837,
+    "all_units_same_work": true
+  },
+  "records": {
+    "T1": {
+      "source_record_id": "T1",
+      "work_id": "isfahani_tasdid",
+      "source_work_id": "isfahani_tasdid",
+      "work_ids": [
+        "isfahani_tasdid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Shams al-Dīn al-Iṣfahānī  |  Tasdīd al-qawāʿid, İSAM 2020, vol. II, printed pp. 99–100 (passage selected, not the whole subsection). | Arabic source: https://archive.org/download/tsdidqawaed/tqat2.pdf",
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+    },
+    "T8": {
+      "source_record_id": "T8",
+      "work_id": "isfahani_tasdid",
+      "source_work_id": "isfahani_tasdid",
+      "work_ids": [
+        "isfahani_tasdid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Shams al-Dīn al-Iṣfahānī  |  Tasdīd al-qawāʿid, İSAM vol. II, printed pp. 354–355 (selected closing division of the causes). | Arabic source: https://archive.org/download/tsdidqawaed/tqat2.pdf",
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+    },
+    "WIT11": {
+      "source_record_id": "WIT11",
+      "work_id": "isfahani_tasdid",
+      "source_work_id": "isfahani_tasdid",
+      "work_ids": [
+        "isfahani_tasdid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Search-indexed Arabic excerpt only: full PDF access blocked by source site; not image-checked",
+      "cited_locator": "al-Iṣfahānī, Tasdīd al-qawāʿid, topic “the persisting contingent needs an agent,” §2.66 (search-indexed PDF transcription; physical printed page not verified)",
+      "cited_url": "https://shamela.org/gen/dc15b463c8910b0dbdd9bc304eb9abbc_gen.pdf"
+    },
+    "WIT12": {
+      "source_record_id": "WIT12",
+      "work_id": "isfahani_tasdid",
+      "source_work_id": "isfahani_tasdid",
+      "work_ids": [
+        "isfahani_tasdid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Search-indexed Arabic excerpt only; the work’s sustained reply not directly image-checked",
+      "cited_locator": "al-Iṣfahānī, Tasdīd al-qawāʿid, topic §2.66, an objection reported in the commentary (search-indexed snippet)",
+      "cited_url": "https://shamela.org/gen/dc15b463c8910b0dbdd9bc304eb9abbc_gen.pdf"
+    },
+    "WIT13": {
+      "source_record_id": "WIT13",
+      "work_id": "isfahani_tasdid",
+      "source_work_id": "isfahani_tasdid",
+      "work_ids": [
+        "isfahani_tasdid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Search-indexed Arabic excerpt only; source site blocks direct PDF access",
+      "cited_locator": "al-Iṣfahānī, Tasdīd al-qawāʿid, topic §2.66, reply paraphrased in searchable source (printed page not verified)",
+      "cited_url": "https://shamela.org/gen/dc15b463c8910b0dbdd9bc304eb9abbc_gen.pdf"
+    },
+    "C31I01": {
+      "source_record_id": "C31I01",
+      "work_id": "isfahani_tasdid",
+      "source_work_id": "isfahani_tasdid",
+      "work_ids": [
+        "isfahani_tasdid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Tasdīd, İSAM II, printed pp.108–109 (= PDF pages 110–111), base text only from الحجة الثانية to قيام العرض بالعرض",
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+    },
+    "T2": {
+      "source_record_id": "T2",
+      "work_id": "jurjani_tajrid",
+      "source_work_id": "jurjani_tajrid",
+      "work_ids": [
+        "jurjani_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Al-Sayyid al-Sharīf al-Jurjānī  |  Ḥāshiya in the İSAM edition of Tasdīd, vol. II, printed p. 100, marginal commentary (selected beginning). | Arabic source: https://archive.org/download/tsdidqawaed/tqat2.pdf",
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+    },
+    "T9": {
+      "source_record_id": "T9",
+      "work_id": "jurjani_tajrid",
+      "source_work_id": "jurjani_tajrid",
+      "work_ids": [
+        "jurjani_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Al-Sayyid al-Sharīf al-Jurjānī  |  Ḥāshiya in Tasdīd, İSAM vol. II, printed p. 355 (initial paragraph of a longer critique). | Arabic source: https://archive.org/download/tsdidqawaed/tqat2.pdf",
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+    },
+    "JRG01": {
+      "source_record_id": "JRG01",
+      "work_id": "jurjani_tajrid",
+      "source_work_id": "jurjani_tajrid",
+      "work_ids": [
+        "jurjani_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Heer printed introduction and edition verified; manuscript collation pending",
+      "cited_locator": "al-Jurjānī, Ḥāshiyat Sharḥ al-Tajrīd, gloss I; Garrett 865 fols. 16a–16b, Yahuda 5373 fols. 87b–88a; ed./transcription Nicholas Heer, Five Unedited Texts, p. 2.",
+      "cited_url": "https://faculty.washington.edu/heer/jurjani-texts.pdf"
+    },
+    "JRG02": {
+      "source_record_id": "JRG02",
+      "work_id": "jurjani_tajrid",
+      "source_work_id": "jurjani_tajrid",
+      "work_ids": [
+        "jurjani_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Heer printed introduction and edition verified; manuscript collation pending",
+      "cited_locator": "al-Jurjānī, Ḥāshiyat Sharḥ al-Tajrīd, gloss II; Garrett 865 fol. 22a; Nicholas Heer, Five Unedited Texts, p. 2.",
+      "cited_url": "https://faculty.washington.edu/heer/jurjani-texts.pdf"
+    },
+    "JRG03": {
+      "source_record_id": "JRG03",
+      "work_id": "jurjani_tajrid",
+      "source_work_id": "jurjani_tajrid",
+      "work_ids": [
+        "jurjani_tajrid"
+      ],
+      "related_work_ids": [
+        "maybudi_diwan_ali"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Heer printed page 3 inspected; manuscript collation and exhaustive variants pending",
+      "cited_locator": "al-Jurjānī, Ḥāshiyat Sharḥ al-Tajrīd, gloss III; Garrett 865 fols. 62b–63b and Yahuda 5373 fols. 88a–89a; Nicholas Heer, Five Unedited Texts, pp. 2–3.",
+      "cited_url": "https://faculty.washington.edu/heer/jurjani-texts.pdf"
+    },
+    "C31I02": {
+      "source_record_id": "C31I02",
+      "work_id": "jurjani_tajrid",
+      "source_work_id": "jurjani_tajrid",
+      "work_ids": [
+        "jurjani_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Ḥāshiyat al-Tajrīd in İSAM Tasdīd II, printed p.109 (= PDF page 111), complete gloss [17.5]",
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+    },
+    "T3": {
+      "source_record_id": "T3",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic digital transcription checked 2026-10-29; printed-edition and MS collation pending",
+      "cited_locator": "Al-ʿAllāma al-Ḥillī  |  Kashf al-murād, chapter on thingness, displayed in the Rafed transcription (corresponding to the Āmulī edition discussion around pp. 62–63). | Arabic source: https://lib.rafed.net/view.php?b_id=3486&page=56&type=c_fbook",
+      "cited_url": "https://lib.rafed.net/view.php?b_id=3486&page=56&type=c_fbook"
+    },
+    "T4": {
+      "source_record_id": "T4",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic digital page 19 checked 2026-10-29; printed-edition and MS collation pending",
+      "cited_locator": "Al-ʿAllāma al-Ḥillī  |  Kashf al-murād, discussion of mental existence; al-Zanjānī recension, p. 19 (also Āmulī ed. around pp. 39–40). | Arabic source: https://ablibrary.net/book_content/b/3438/19?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3438/19?lang=ar"
+    },
+    "T7": {
+      "source_record_id": "T7",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Al-ʿAllāma al-Ḥillī  |  Kashf al-murād, ed. Āmulī, p. 78 (complete two-argument reply within the selected issue). | Arabic source: https://ablibrary.net/book_content/b/3439/78?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/78?lang=ar"
+    },
+    "T10": {
+      "source_record_id": "T10",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Al-ʿAllāma al-Ḥillī  |  Kashf al-murād, ed. Āmulī, p. 198, discussion of the final cause. | Arabic source: https://ablibrary.net/book_content/b/3439/198?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/198?lang=ar"
+    },
+    "T12": {
+      "source_record_id": "T12",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Al-ʿAllāma al-Ḥillī  |  Kashf al-murād, ed. Āmulī, pp. 174–175, continuous passage across the page break. | Arabic source: https://ablibrary.net/book_content/b/3439/174?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/174?lang=ar"
+    },
+    "ALH01": {
+      "source_record_id": "ALH01",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct Tajrīd commentary",
+      "cited_locator": "al-Ḥillī | Direct Tajrīd commentary | printed p. 29, edition with Ḥasan Zādeh Āmulī annotation. Arabic: https://ablibrary.net/book_content/b/3439/29?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/29?lang=ar"
+    },
+    "ALH02": {
+      "source_record_id": "ALH02",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct Tajrīd commentary",
+      "cited_locator": "al-Ḥillī | Direct Tajrīd commentary | printed p. 34, edition with Ḥasan Zādeh Āmulī annotation. Arabic: https://ablibrary.net/book_content/b/3439/34?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/34?lang=ar"
+    },
+    "ALH03": {
+      "source_record_id": "ALH03",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct Tajrīd commentary",
+      "cited_locator": "al-Ḥillī | Direct Tajrīd commentary | printed p. 68, edition with Ḥasan Zādeh Āmulī annotation. Arabic: https://ablibrary.net/book_content/b/3439/68?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/68?lang=ar"
+    },
+    "ALH04": {
+      "source_record_id": "ALH04",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct Tajrīd commentary",
+      "cited_locator": "al-Ḥillī | Direct Tajrīd commentary | printed p. 117, edition with Ḥasan Zādeh Āmulī annotation. Arabic: https://ablibrary.net/book_content/b/3439/117?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/117?lang=ar"
+    },
+    "ALH05": {
+      "source_record_id": "ALH05",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct Tajrīd commentary",
+      "cited_locator": "al-Ḥillī | Direct Tajrīd commentary | printed p. 149, edition with Ḥasan Zādeh Āmulī annotation. Arabic: https://ablibrary.net/book_content/b/3439/149?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/149?lang=ar"
+    },
+    "ALH06": {
+      "source_record_id": "ALH06",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct Tajrīd commentary",
+      "cited_locator": "al-Ḥillī | Direct Tajrīd commentary | printed p. 169, edition with Ḥasan Zādeh Āmulī annotation. Arabic: https://ablibrary.net/book_content/b/3439/169?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/169?lang=ar"
+    },
+    "ALH08": {
+      "source_record_id": "ALH08",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct Tajrīd commentary",
+      "cited_locator": "al-Ḥillī | Direct Tajrīd commentary | printed p. 275, edition with Ḥasan Zādeh Āmulī annotation. Arabic: https://ablibrary.net/book_content/b/3439/275?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/275?lang=ar"
+    },
+    "ALH09": {
+      "source_record_id": "ALH09",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct Tajrīd commentary",
+      "cited_locator": "al-Ḥillī | Direct Tajrīd commentary | printed p. 277, edition with Ḥasan Zādeh Āmulī annotation. Arabic: https://ablibrary.net/book_content/b/3439/277?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/277?lang=ar"
+    },
+    "ALH10": {
+      "source_record_id": "ALH10",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct Tajrīd commentary",
+      "cited_locator": "al-Ḥillī | Direct Tajrīd commentary | printed p. 210, edition with Ḥasan Zādeh Āmulī annotation. Arabic: https://ablibrary.net/book_content/b/3439/210?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/210?lang=ar"
+    },
+    "NEW12": {
+      "source_record_id": "NEW12",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Kashf al-murād, p.230, Ḥasanzāda Āmulī ed. (exact URL in source_url)",
+      "cited_url": "https://najafdesertlibrary.com/book/%D9%83%D8%B4%D9%81-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AF-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D8%AF-%D8%AA%D8%AD%D9%82%D9%8A%D9%82-%D8%A7%D9%84%D8%A2%D9%85%D9%84%D9%8A/v/1/p/230"
+    },
+    "NEW19": {
+      "source_record_id": "NEW19",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Kashf al-murād, p.410, Ḥasanzāda Āmulī ed. (exact URL in source_url)",
+      "cited_url": "https://najafdesertlibrary.com/book/%D9%83%D8%B4%D9%81-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AF-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D8%AF-%D8%AA%D8%AD%D9%82%D9%8A%D9%82-%D8%A7%D9%84%D8%A2%D9%85%D9%84%D9%8A/v/1/p/410"
+    },
+    "NEW24": {
+      "source_record_id": "NEW24",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Kashf al-murād, p.178, Ḥasanzāda Āmulī ed.",
+      "cited_url": "https://najafdesertlibrary.com/book/كشف-المراد-في-شرح-تجريد-الاعتقاد-تحقيق-الآملي/v/1/p/178"
+    },
+    "NEW25": {
+      "source_record_id": "NEW25",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Kashf al-murād, p.181, Ḥasanzāda Āmulī ed.",
+      "cited_url": "https://najafdesertlibrary.com/book/كشف-المراد-في-شرح-تجريد-الاعتقاد-تحقيق-الآملي/v/1/p/181"
+    },
+    "COLL04": {
+      "source_record_id": "COLL04",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "كشف المراد في شرح تجريد الاعتقاد, p. 35. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/35?lang=ar"
+    },
+    "COLL05": {
+      "source_record_id": "COLL05",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "كشف المراد في شرح تجريد الاعتقاد, p. 36. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/36?lang=ar"
+    },
+    "COLL06": {
+      "source_record_id": "COLL06",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "كشف المراد في شرح تجريد الاعتقاد, p. 37. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/37?lang=ar"
+    },
+    "COLL08": {
+      "source_record_id": "COLL08",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "كشف المراد في شرح تجريد الاعتقاد, p. 77, Zanjānī edition of Kashf. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/3438/77?lang=ar"
+    },
+    "EXT21": {
+      "source_record_id": "EXT21",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://lib.rafed.net/view.php?b_id=3486&page=274&type=c_fbook"
+    },
+    "EXT22": {
+      "source_record_id": "EXT22",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://lib.rafed.net/view.php?b_id=3486&page=274&type=c_fbook"
+    },
+    "EXT23": {
+      "source_record_id": "EXT23",
+      "work_id": "hilli_kashf",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://lib.rafed.net/view.php?b_id=3486&page=274&type=c_fbook"
+    },
+    "T5": {
+      "source_record_id": "T5",
+      "work_id": "qushji_tajrid",
+      "source_work_id": "qushji_tajrid",
+      "work_ids": [
+        "qushji_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "ʿAlī al-Qūshjī  |  Sharḥ al-Tajrīd, ed. al-Zāriʿī al-Riḍāʾī, vol. I, printed p. 132, final substantive paragraph of the page. | Arabic source: https://archive.org/details/charhTajridKochaji",
+      "cited_url": "https://archive.org/details/charhTajridKochaji"
+    },
+    "T11": {
+      "source_record_id": "T11",
+      "work_id": "qushji_tajrid",
+      "source_work_id": "qushji_tajrid",
+      "work_ids": [
+        "qushji_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "ʿAlī al-Qūshjī  |  Sharḥ al-Tajrīd, ed. al-Zāriʿī al-Riḍāʾī, vol. I, printed pp. 557–558; selected argument, excluding the separately attributed Dawwānī footnote. | Arabic source: https://archive.org/details/charhTajridKochaji",
+      "cited_url": "https://archive.org/details/charhTajridKochaji"
+    },
+    "T13": {
+      "source_record_id": "T13",
+      "work_id": "qushji_tajrid",
+      "source_work_id": "qushji_tajrid",
+      "work_ids": [
+        "qushji_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "ʿAlī al-Qūshjī  |  Sharḥ al-Tajrīd, ed. al-Zāriʿī al-Riḍāʾī, vol. I, printed pp. 570–571 (selected opening and response). | Arabic source: https://archive.org/details/charhTajridKochaji",
+      "cited_url": "https://archive.org/details/charhTajridKochaji"
+    },
+    "C31Q01": {
+      "source_record_id": "C31Q01",
+      "work_id": "qushji_tajrid",
+      "source_work_id": "qushji_tajrid",
+      "work_ids": [
+        "qushji_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Sharḥ Tajrīd al-ʿaqāʾid, ed. Muḥammad Ḥusayn al-Zāriʿī al-Riḍāʾī, I, printed/PDF p.128, from وأورد عليه to ما فيه ماهية الحرارة",
+      "cited_url": "https://archive.org/download/charhTajridKochaji/charhTajridKochaji.pdf"
+    },
+    "C31Q02": {
+      "source_record_id": "C31Q02",
+      "work_id": "qushji_tajrid",
+      "source_work_id": "qushji_tajrid",
+      "work_ids": [
+        "qushji_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Qūshjī I, printed/PDF pp.128–129, أجيب to أول أقول فيه بحث",
+      "cited_url": "https://archive.org/download/charhTajridKochaji/charhTajridKochaji.pdf"
+    },
+    "C31Q03": {
+      "source_record_id": "C31Q03",
+      "work_id": "qushji_tajrid",
+      "source_work_id": "qushji_tajrid",
+      "work_ids": [
+        "qushji_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Qūshjī I, pp.129–130, أقول فيه بحث through وكذا الكلام في الامتناع وأمثاله",
+      "cited_url": "https://archive.org/download/charhTajridKochaji/charhTajridKochaji.pdf"
+    },
+    "C31Q04": {
+      "source_record_id": "C31Q04",
+      "work_id": "qushji_tajrid",
+      "source_work_id": "qushji_tajrid",
+      "work_ids": [
+        "qushji_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "direct printed gloss",
+      "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
+      "cited_locator": "Sharḥ Tajrīd al-ʿaqāʾid, ed. al-Zāriʿī al-Riḍāʾī, I p.173 (PDF p.173), from وقد قيل في شرحه to عدما مطلقا",
+      "cited_url": "https://archive.org/download/charhTajridKochaji/charhTajridKochaji.pdf"
+    },
+    "T6": {
+      "source_record_id": "T6",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī  |  Shawāriq al-ilhām, older Iṣfahān edition, vol. I, p. 48 (one argument unit; the discussion continues). | Arabic source: https://ablibrary.net/book_content/b/9309/48?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/48?lang=ar"
+    },
+    "T14": {
+      "source_record_id": "T14",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [
+        "avicenna_isharat"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī  |  Shawāriq al-ilhām, ed. Asad ʿAlīzāda, vol. II, printed pp. 295–297 (excerpt through the Avicennian formulation). | Arabic source: https://ablibrary.net/book_content/b/14865/296?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/14865/296?lang=ar"
+    },
+    "LAH01": {
+      "source_record_id": "LAH01",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "New continuation: printed/digital text; manuscript collation pending",
+      "cited_locator": "al-Lāhījī, Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, I, 468, heading Ishāra ʿirfāniyya.",
+      "cited_url": "https://najafdesertlibrary.com/book/شوارق-الإلهام-في-شرح-تجريد-الكلام/v/1/p/468"
+    },
+    "LAH02": {
+      "source_record_id": "LAH02",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "New continuation: printed/digital text; manuscript collation pending",
+      "cited_locator": "al-Lāhījī, Shawāriq al-ilhām, I, 469, Ishāra ʿirfāniyya.",
+      "cited_url": "https://najafdesertlibrary.com/book/شوارق-الإلهام-في-شرح-تجريد-الكلام/v/1/p/469"
+    },
+    "LAH03": {
+      "source_record_id": "LAH03",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "New continuation: printed/digital text; manuscript collation pending",
+      "cited_locator": "al-Lāhījī, Shawāriq al-ilhām, I, 473, end of Ishāra ʿirfāniyya.",
+      "cited_url": "https://najafdesertlibrary.com/book/شوارق-الإلهام-في-شرح-تجريد-الكلام/v/1/p/473"
+    },
+    "NEW02": {
+      "source_record_id": "NEW02",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Shawāriq al-ilhām, vol. I, p.124 (Mahdawī printing) (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/124?lang=ar"
+    },
+    "NEW03": {
+      "source_record_id": "NEW03",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Shawāriq al-ilhām, vol. I, p.122 (Mahdawī printing) (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/122?lang=ar"
+    },
+    "NEW04": {
+      "source_record_id": "NEW04",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Shawāriq al-ilhām, vol. I, p.123 (Mahdawī printing) (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/123?lang=ar"
+    },
+    "NEW05": {
+      "source_record_id": "NEW05",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Shawāriq al-ilhām, vol. I, p.90 (Mahdawī printing) (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/90?lang=ar"
+    },
+    "NEW06": {
+      "source_record_id": "NEW06",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Shawāriq al-ilhām, vol. I, p.91 (Mahdawī printing) (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/91?lang=ar"
+    },
+    "NEW07": {
+      "source_record_id": "NEW07",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Shawāriq al-ilhām, vol. I, p.89 (Mahdawī printing) (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/89?lang=ar"
+    },
+    "NEW23": {
+      "source_record_id": "NEW23",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Shawāriq al-ilhām, Ahlulbayt Library, 258-page printing, vol. I p.30 (distinct pagination) (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/30?lang=ar"
+    },
+    "WIT01": {
+      "source_record_id": "WIT01",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Page-indexed electronic transcription checked against the displayed page; print image not collated",
+      "cited_locator": "Lāhījī, Shawāriq al-ilhām, ed. Asad ʿAlīzāda, I, p.468",
+      "cited_url": "https://najafdesertlibrary.com/book/شوارق-الإلهام-في-شرح-تجريد-الكلام/v/1/p/468"
+    },
+    "WIT02": {
+      "source_record_id": "WIT02",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Page-indexed electronic transcription checked against the displayed page; print image not collated",
+      "cited_locator": "Lāhījī, Shawāriq al-ilhām, ed. Asad ʿAlīzāda, I, p.469",
+      "cited_url": "https://najafdesertlibrary.com/book/شوارق-الإلهام-في-شرح-تجريد-الكلام/v/1/p/469"
+    },
+    "WIT03": {
+      "source_record_id": "WIT03",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Page-indexed electronic transcription checked against the displayed page; pp.470–472 not accessed",
+      "cited_locator": "Lāhījī, Shawāriq al-ilhām, ed. Asad ʿAlīzāda, I, p.473",
+      "cited_url": "https://najafdesertlibrary.com/book/شوارق-الإلهام-في-شرح-تجريد-الكلام/v/1/p/473"
+    },
+    "WIT04": {
+      "source_record_id": "WIT04",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Page-indexed electronic transcription checked against the displayed page; print image not collated",
+      "cited_locator": "Lāhījī, Shawāriq al-ilhām, ed. Asad ʿAlīzāda, I, p.474",
+      "cited_url": "https://najafdesertlibrary.com/book/شوارق-الإلهام-في-شرح-تجريد-الكلام/v/1/p/474"
+    },
+    "C31L01": {
+      "source_record_id": "C31L01",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Shawāriq I, scan printed p.462; PDF page 463; electronic p.468",
+      "cited_url": "https://ablibrary.net/book_content/b/14864/468?lang=ar"
+    },
+    "C31L02": {
+      "source_record_id": "C31L02",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Shawāriq I, printed p.463; PDF page 464; electronic pp.469–470",
+      "cited_url": "https://ablibrary.net/book_content/b/14864/470?lang=ar"
+    },
+    "C31L03": {
+      "source_record_id": "C31L03",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Shawāriq I, printed pp.463–464; PDF pages 464–465; electronic p.470",
+      "cited_url": "https://ablibrary.net/book_content/b/14864/470?lang=ar"
+    },
+    "C31L04": {
+      "source_record_id": "C31L04",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Shawāriq I, printed p.464 to opening of 465; PDF pages 465–466; electronic p.471",
+      "cited_url": "https://ablibrary.net/book_content/b/14864/471?lang=ar"
+    },
+    "C31L05": {
+      "source_record_id": "C31L05",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [
+        "jurjani_tajrid",
+        "dawwani_tajrid"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "attribution_note": "Jurjānī and Dawwānī are reported by Lāhījī; Dawwānī’s individual gloss is not identified here.",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Shawāriq I, printed p.465; PDF page 466; electronic p.472",
+      "cited_url": "https://ablibrary.net/book_content/b/14864/472?lang=ar"
+    },
+    "C31L06": {
+      "source_record_id": "C31L06",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Shawāriq I, printed p.466; PDF page 467; electronic p.472 end–473",
+      "cited_url": "https://ablibrary.net/book_content/b/14864/473?lang=ar"
+    },
+    "T7R": {
+      "source_record_id": "T7R",
+      "work_id": "razi_muhassal",
+      "source_work_id": "razi_muhassal",
+      "work_ids": [
+        "razi_muhassal"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Fakhr al-Dīn al-Rāzī (comparative primary source, not a Tajrīd commentator)  |  Al-Muḥaṣṣal, text printed pp. 206–207 (two short, non-contiguous statements; modern editorial introduction also quotes them). | Arabic source: https://books.rafed.net/view/3639/page/206",
+      "cited_url": "https://books.rafed.net/view/3639/page/206"
+    },
+    "A1": {
+      "source_record_id": "A1",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Ṣadr al-Dīn al-Qūnawī · Question 1 (opening; continuous selection)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=2"
+    },
+    "A2": {
+      "source_record_id": "A2",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Naṣīr al-Dīn al-Ṭūsī · Reply to Question 1 (two continuous response paragraphs)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=2"
+    },
+    "A3": {
+      "source_record_id": "A3",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Ṣadr al-Dīn al-Qūnawī · Conclusion of Question 1 (continuous passage)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=2"
+    },
+    "A4": {
+      "source_record_id": "A4",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Naṣīr al-Dīn al-Ṭūsī · Final response to Question 1 (complete paragraph)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=2"
+    },
+    "A5": {
+      "source_record_id": "A5",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Ṣadr al-Dīn al-Qūnawī · Question 2 (opening and first horn of the dilemma)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=3"
+    },
+    "A6": {
+      "source_record_id": "A6",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Naṣīr al-Dīn al-Ṭūsī · Reply to Question 2 (continuous selection)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=3"
+    },
+    "A7": {
+      "source_record_id": "A7",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Naṣīr al-Dīn al-Ṭūsī · Reply to Question 3 (opening continuous paragraph)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=4"
+    },
+    "A8": {
+      "source_record_id": "A8",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Naṣīr al-Dīn al-Ṭūsī · Conclusion of Reply to Question 3 (complete final paragraph)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=4"
+    },
+    "A9": {
+      "source_record_id": "A9",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Ṣadr al-Dīn al-Qūnawī · Question 4 (first critical paragraph, selected)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=5"
+    },
+    "A10": {
+      "source_record_id": "A10",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Ṣadr al-Dīn al-Qūnawī · Question 4 (continuous selected passage)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=5"
+    },
+    "A11": {
+      "source_record_id": "A11",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Naṣīr al-Dīn al-Ṭūsī · Reply to Question 4 (opening argument)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=5"
+    },
+    "A12": {
+      "source_record_id": "A12",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Naṣīr al-Dīn al-Ṭūsī · Reply to Question 4 (paragraph after his combinatorial example)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=5"
+    },
+    "A13": {
+      "source_record_id": "A13",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Naṣīr al-Dīn al-Ṭūsī · Reply to Question 4 (continuous selected passage)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=5"
+    },
+    "A14": {
+      "source_record_id": "A14",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Naṣīr al-Dīn al-Ṭūsī · Final reply to Question 4 (complete concluding paragraph)",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=5"
+    },
+    "NEW37": {
+      "source_record_id": "NEW37",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "directly inspected searchable Arabic online transcription; independent manuscript collation pending",
+      "cited_locator": "al-Murāsalāt, question 1; Arabic online witness, URL id=2; not a manuscript/critical collation",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=2"
+    },
+    "NEW38": {
+      "source_record_id": "NEW38",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "directly inspected searchable Arabic online transcription; independent manuscript collation pending",
+      "cited_locator": "al-Murāsalāt, question 1; Arabic online witness, URL id=2; not a manuscript/critical collation",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=2"
+    },
+    "NEW39": {
+      "source_record_id": "NEW39",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "directly inspected searchable Arabic online transcription; independent manuscript collation pending",
+      "cited_locator": "al-Murāsalāt, question 2; Arabic online witness, URL id=3; not a manuscript/critical collation",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=3"
+    },
+    "NEW40": {
+      "source_record_id": "NEW40",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "directly inspected searchable Arabic online transcription; independent manuscript collation pending",
+      "cited_locator": "al-Murāsalāt, question 2; Arabic online witness, URL id=3; not a manuscript/critical collation",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=3"
+    },
+    "NEW41": {
+      "source_record_id": "NEW41",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "directly inspected searchable Arabic online transcription; independent manuscript collation pending",
+      "cited_locator": "al-Murāsalāt, question 3; Arabic online witness, URL id=4; not a manuscript/critical collation",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=4"
+    },
+    "NEW42": {
+      "source_record_id": "NEW42",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "directly inspected searchable Arabic online transcription; independent manuscript collation pending",
+      "cited_locator": "al-Murāsalāt, question 3; Arabic online witness, URL id=4; not a manuscript/critical collation",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=4"
+    },
+    "EXT26": {
+      "source_record_id": "EXT26",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=3"
+    },
+    "EXT27": {
+      "source_record_id": "EXT27",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=3"
+    },
+    "EXT28": {
+      "source_record_id": "EXT28",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=3"
+    },
+    "EXT29": {
+      "source_record_id": "EXT29",
+      "work_id": "qunawi_tusi_correspondence",
+      "source_work_id": "qunawi_tusi_correspondence",
+      "work_ids": [
+        "qunawi_tusi_correspondence"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://www.ibnalarabi.com/qunawi/tusi.php?id=3"
+    },
+    "B1": {
+      "source_record_id": "B1",
+      "work_id": "jurjani_tarifat",
+      "source_work_id": "jurjani_tarifat",
+      "work_ids": [
+        "jurjani_tarifat"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "al-Sayyid al-Sharīf al-Jurjānī · al-Taʿrīfāt, entry dhū al-ʿaql wa-l-ʿayn (parallel text, not a Tajrīd gloss)",
+      "cited_url": "https://usul.ai/ar/t/tacrifat/103"
+    },
+    "C1": {
+      "source_record_id": "C1",
+      "work_id": "jami_durra",
+      "source_work_id": "jami_durra",
+      "work_ids": [
+        "jami_durra"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "ʿAbd al-Raḥmān al-Jāmī · al-Durra al-fākhira, opening (two continuous paragraphs)",
+      "cited_url": "https://almuada.4umer.com/t6169-topic"
+    },
+    "C2": {
+      "source_record_id": "C2",
+      "work_id": "jami_durra",
+      "source_work_id": "jami_durra",
+      "work_ids": [
+        "jami_durra"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "ʿAbd al-Raḥmān al-Jāmī · al-Durra al-fākhira, section §18–19, printed p. 8 (selected)",
+      "cited_url": "https://almuada.4umer.com/t6169-topic"
+    },
+    "D1": {
+      "source_record_id": "D1",
+      "work_id": "fanari_misbah",
+      "source_work_id": "fanari_misbah",
+      "work_ids": [
+        "fanari_misbah"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Shams al-Dīn al-Fanārī · Miṣbāḥ al-uns, Khvājavī ed., printed p. 93, numbered statements 56–60 (selected)",
+      "cited_url": "https://ablibrary.net/book_content/b/4696/93?lang=ar"
+    },
+    "E1": {
+      "source_record_id": "E1",
+      "work_id": "dawwani_shawakil",
+      "source_work_id": "dawwani_shawakil",
+      "work_ids": [
+        "dawwani_shawakil"
+      ],
+      "related_work_ids": [
+        "suhrawardi_hayakil"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Jalāl al-Dīn al-Dawwānī · commentary on Suhrawardī’s Hayākil al-nūr, in Thalāth rasāʾil, p. 180 (selected lemma and explanation)",
+      "cited_url": "https://ablibrary.net/book_content/b/8221/180?lang=fa"
+    },
+    "E2": {
+      "source_record_id": "E2",
+      "work_id": "dashtaki_hayakil",
+      "source_work_id": "dashtaki_hayakil",
+      "work_ids": [
+        "dashtaki_hayakil"
+      ],
+      "related_work_ids": [
+        "suhrawardi_hayakil"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Ghiyāth al-Dīn Manṣūr al-Dashtakī · Ishrāq Hayākil al-nūr, ed. Awjabī, printed p. 252 (short continuous passage)",
+      "cited_url": "https://ablibrary.net/book_content/b/12230/252?lang=ar"
+    },
+    "H1": {
+      "source_record_id": "H1",
+      "work_id": "tihrani_tawdih",
+      "source_work_id": "tihrani_tawdih",
+      "work_ids": [
+        "tihrani_tawdih"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Hāshim al-Ḥusaynī al-Ṭihrānī, Tawḍīḥ al-murād, vol. I (printed page ranges from heading notes)",
+      "cited_url": ""
+    },
+    "H2": {
+      "source_record_id": "H2",
+      "work_id": "tihrani_tawdih",
+      "source_work_id": "tihrani_tawdih",
+      "work_ids": [
+        "tihrani_tawdih"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Hāshim al-Ḥusaynī al-Ṭihrānī, Tawḍīḥ al-murād, vol. I (printed page ranges from heading notes)",
+      "cited_url": ""
+    },
+    "H3": {
+      "source_record_id": "H3",
+      "work_id": "tihrani_tawdih",
+      "source_work_id": "tihrani_tawdih",
+      "work_ids": [
+        "tihrani_tawdih"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Hāshim al-Ḥusaynī al-Ṭihrānī, Tawḍīḥ al-murād, vol. I (printed page ranges from heading notes)",
+      "cited_url": ""
+    },
+    "H4": {
+      "source_record_id": "H4",
+      "work_id": "tihrani_tawdih",
+      "source_work_id": "tihrani_tawdih",
+      "work_ids": [
+        "tihrani_tawdih"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Hāshim al-Ḥusaynī al-Ṭihrānī, Tawḍīḥ al-murād, vol. I (printed page ranges from heading notes)",
+      "cited_url": ""
+    },
+    "H5": {
+      "source_record_id": "H5",
+      "work_id": "tihrani_tawdih",
+      "source_work_id": "tihrani_tawdih",
+      "work_ids": [
+        "tihrani_tawdih"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Hāshim al-Ḥusaynī al-Ṭihrānī, Tawḍīḥ al-murād, vol. I (printed page ranges from heading notes)",
+      "cited_url": ""
+    },
+    "TIH06": {
+      "source_record_id": "TIH06",
+      "work_id": "tihrani_tawdih",
+      "source_work_id": "tihrani_tawdih",
+      "work_ids": [
+        "tihrani_tawdih"
+      ],
+      "related_work_ids": [
+        "avicenna_mabda_maad",
+        "lahiji_shawariq"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "New continuation: printed/digital text; manuscript collation pending",
+      "cited_locator": "Hāshim al-Ḥusaynī al-Ṭihrānī, Tawḍīḥ al-murād, I, 425; citations of Ibn Sīnā, al-Mabdaʾ wa-l-maʿād, and Lāhījī, Shawāriq.",
+      "cited_url": "https://books.rafed.net/view/778/page/425?search=%D8%B4%D9%8A%D8%AE"
+    },
+    "TIH07": {
+      "source_record_id": "TIH07",
+      "work_id": "tihrani_tawdih",
+      "source_work_id": "tihrani_tawdih",
+      "work_ids": [
+        "tihrani_tawdih"
+      ],
+      "related_work_ids": [
+        "mufid_awail"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "New continuation: printed/digital text; manuscript collation pending",
+      "cited_locator": "Hāshim al-Ḥusaynī al-Ṭihrānī, Tawḍīḥ al-murād, I, printed pp. 643–644; section “fī wujūb al-biʿtha”.",
+      "cited_url": "https://lib.rafed.net/view.php?b_id=778&page=644&type=c_fbook"
+    },
+    "SN01": {
+      "source_record_id": "SN01",
+      "work_id": "taftazani_sharh_maqasid",
+      "source_work_id": "taftazani_sharh_maqasid",
+      "work_ids": [
+        "taftazani_sharh_maqasid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "al-Taftāzānī | Sharḥ al-Maqāṣid | 1401/1981 electronic ed., p. 79 | source: https://usul.ai/ar/t/sharh-maqasid/79",
+      "cited_url": "https://usul.ai/ar/t/sharh-maqasid/79"
+    },
+    "SN02": {
+      "source_record_id": "SN02",
+      "work_id": "taftazani_sharh_maqasid",
+      "source_work_id": "taftazani_sharh_maqasid",
+      "work_ids": [
+        "taftazani_sharh_maqasid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "al-Taftāzānī | Sharḥ al-Maqāṣid | 1401/1981 electronic ed., p. 71 | source: https://usul.ai/ar/t/sharh-maqasid/71",
+      "cited_url": "https://usul.ai/ar/t/sharh-maqasid/71"
+    },
+    "SN03": {
+      "source_record_id": "SN03",
+      "work_id": "taftazani_sharh_maqasid",
+      "source_work_id": "taftazani_sharh_maqasid",
+      "work_ids": [
+        "taftazani_sharh_maqasid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "al-Taftāzānī | Sharḥ al-Maqāṣid | 1401/1981 electronic ed., p. 79 | source: https://usul.ai/ar/t/sharh-maqasid/79",
+      "cited_url": "https://usul.ai/ar/t/sharh-maqasid/79"
+    },
+    "SN04": {
+      "source_record_id": "SN04",
+      "work_id": "taftazani_sharh_maqasid",
+      "source_work_id": "taftazani_sharh_maqasid",
+      "work_ids": [
+        "taftazani_sharh_maqasid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "al-Taftāzānī | Sharḥ al-Maqāṣid | 1401/1981 electronic ed., introduction p. 11 | source: https://usul.ai/ar/t/sharh-maqasid",
+      "cited_url": "https://usul.ai/ar/t/sharh-maqasid"
+    },
+    "SN07": {
+      "source_record_id": "SN07",
+      "work_id": "taftazani_sharh_maqasid",
+      "source_work_id": "taftazani_sharh_maqasid",
+      "work_ids": [
+        "taftazani_sharh_maqasid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "al-Taftāzānī | Sharḥ al-Maqāṣid | 1401/1981 electronic ed., vol. I, p. 162 | source: https://almntqim.com/٤٥٠١_شرح-المقاصد-في-علم-الكلام-التفتازاني-ج-١/١٦٢_الصفحة",
+      "cited_url": "https://almntqim.com/٤٥٠١_شرح-المقاصد-في-علم-الكلام-التفتازاني-ج-١/١٦٢_الصفحة"
+    },
+    "SN08": {
+      "source_record_id": "SN08",
+      "work_id": "taftazani_sharh_maqasid",
+      "source_work_id": "taftazani_sharh_maqasid",
+      "work_ids": [
+        "taftazani_sharh_maqasid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "al-Taftāzānī | Sharḥ al-Maqāṣid | 1401/1981 electronic ed., p. 133 | source: https://usul.ai/ar/t/sharh-maqasid/133",
+      "cited_url": "https://usul.ai/ar/t/sharh-maqasid/133"
+    },
+    "TAF01": {
+      "source_record_id": "TAF01",
+      "work_id": "taftazani_sharh_maqasid",
+      "source_work_id": "taftazani_sharh_maqasid",
+      "work_ids": [
+        "taftazani_sharh_maqasid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Usul.ai page 61 checked 2026-10-29; printed-page/MS collation pending",
+      "cited_locator": "al-Taftāzānī, Sharḥ al-Maqāṣid, digital numbered p. 61 (Usul.ai, 1981 edition metadata), existence as shared concept vs real ontology.",
+      "cited_url": "https://usul.ai/ar/t/sharh-maqasid/61"
+    },
+    "TAF02": {
+      "source_record_id": "TAF02",
+      "work_id": "taftazani_sharh_maqasid",
+      "source_work_id": "taftazani_sharh_maqasid",
+      "work_ids": [
+        "taftazani_sharh_maqasid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Usul.ai page 69 checked 2026-10-29; printed-page/MS collation pending",
+      "cited_locator": "al-Taftāzānī, Sharḥ al-Maqāṣid, digital numbered p. 69, response to existence/quiddity regress (Usul.ai, metadata first ed. 1401/1981).",
+      "cited_url": "https://usul.ai/ar/t/sharh-maqasid/69"
+    },
+    "NEW01": {
+      "source_record_id": "NEW01",
+      "work_id": "taftazani_sharh_maqasid",
+      "source_work_id": "taftazani_sharh_maqasid",
+      "work_ids": [
+        "taftazani_sharh_maqasid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Sharḥ al-Maqāṣid, vol. I, p.344 (ʿUmayra ed.) (exact URL in source_url)",
+      "cited_url": "https://books.rafed.net/view/3513/page/344"
+    },
+    "SN05": {
+      "source_record_id": "SN05",
+      "work_id": "jurjani_mawaqif",
+      "source_work_id": "jurjani_mawaqif",
+      "work_ids": [
+        "jurjani_mawaqif"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "containing commentary identified; marginal voice unresolved",
+      "attribution_note": "Map points to the containing Sharḥ al-Mawāqif, not an unverified attribution of the marginal words to Jurjānī, Siyālkūtī or the glossator labelled Ḥalabī in the inherited record.",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "al-Jurjānī | Sharḥ al-Mawāqif | Usul electronic recension, p. 174; marginal strata require checking | source: https://usul.ai/ar/t/sharh-al-mawaqif/174",
+      "cited_url": "https://usul.ai/ar/t/sharh-al-mawaqif/174"
+    },
+    "SN09": {
+      "source_record_id": "SN09",
+      "work_id": "jurjani_mawaqif",
+      "source_work_id": "jurjani_mawaqif",
+      "work_ids": [
+        "jurjani_mawaqif"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "containing commentary identified; marginal voice unresolved",
+      "attribution_note": "Map points to the containing Sharḥ al-Mawāqif, not an unverified attribution of the marginal words to Jurjānī, Siyālkūtī or the glossator labelled Ḥalabī in the inherited record.",
+      "possible_gloss_work_ids": [
+        "siyalkuti_mawaqif"
+      ],
+      "unresolved_reported_work": "The inherited label Ḥalabī has not been securely identified; it is not silently equated with the existing Ḥasan Çelebi node.",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "al-Jurjānī and attached gloss tradition | Sharḥ al-Mawāqif, with Siyālkūtī / Ḥalabī glosses | Composite printing, initial page 15 | source: https://ablibrary.net/book_content/b/9294/15?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/9294/15?lang=ar"
+    },
+    "NEW13": {
+      "source_record_id": "NEW13",
+      "work_id": "jurjani_mawaqif",
+      "source_work_id": "jurjani_mawaqif",
+      "work_ids": [
+        "jurjani_mawaqif"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Sharḥ al-Mawāqif with marginalia, vol. as hosted at Ahlulbayt Library, p.45 (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/9300/45"
+    },
+    "NEW14": {
+      "source_record_id": "NEW14",
+      "work_id": "jurjani_mawaqif",
+      "source_work_id": "jurjani_mawaqif",
+      "work_ids": [
+        "jurjani_mawaqif"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "containing commentary identified; marginal voice unresolved",
+      "attribution_note": "Map points to the containing Sharḥ al-Mawāqif, not an unverified attribution of the marginal words to Jurjānī, Siyālkūtī or the glossator labelled Ḥalabī in the inherited record.",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Sharḥ al-Mawāqif with marginalia, same edition p.45, attached marginal stratum (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/9300/45"
+    },
+    "NEW15": {
+      "source_record_id": "NEW15",
+      "work_id": "jurjani_mawaqif",
+      "source_work_id": "jurjani_mawaqif",
+      "work_ids": [
+        "jurjani_mawaqif"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Sharḥ al-Mawāqif with marginalia, another volume, p.276 (Ahlulbayt Library edition) (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/9299/276?lang=ar"
+    },
+    "SN06": {
+      "source_record_id": "SN06",
+      "work_id": "iji_mawaqif",
+      "source_work_id": "iji_mawaqif",
+      "work_ids": [
+        "iji_mawaqif"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "Mawāqif tradition container identified; base/commentary layering not fully resolved",
+      "attribution_note": "Electronic source labelled al-Mawāqif includes commentary-like expansion; do not assign every word to Ījī.",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "al-Ījī / later explanatory stratum | al-Mawāqif, causal discussion as transmitted in the electronic text | Electronic page 345 (printed correspondence not yet independently checked) | source: https://usul.ai/ar/t/al-mawaqif-fi-%27ilm-al-kalam/345",
+      "cited_url": "https://usul.ai/ar/t/al-mawaqif-fi-%27ilm-al-kalam/345"
+    },
+    "SN16": {
+      "source_record_id": "SN16",
+      "work_id": "iji_mawaqif",
+      "source_work_id": "iji_mawaqif",
+      "work_ids": [
+        "iji_mawaqif"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "Mawāqif tradition container identified; base/commentary layering not fully resolved",
+      "attribution_note": "Electronic source labelled al-Mawāqif includes commentary-like expansion; do not assign every word to Ījī.",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "al-Ījī and the *Mawāqif* tradition | al-Mawāqif | Usul electronic p. 208 | source: https://usul.ai/ar/t/al-mawaqif-fi-%27ilm-al-kalam/208",
+      "cited_url": "https://usul.ai/ar/t/al-mawaqif-fi-%27ilm-al-kalam/208"
+    },
+    "SN10": {
+      "source_record_id": "SN10",
+      "work_id": "qutb_shirazi_ishraq",
+      "source_work_id": "qutb_shirazi_ishraq",
+      "work_ids": [
+        "qutb_shirazi_ishraq"
+      ],
+      "related_work_ids": [
+        "avicenna_shifa_burhan"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "contextual_mapping_note": "Avicennian Burhān is an editorial comparison pointer; the Shifāʾ demonstration section is a provisional contextual identification, not an identified quotation.",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Quṭb al-Dīn al-Shīrāzī | Sharḥ Ḥikmat al-Ishrāq | Tehran printed edition, p. 96 | source: https://ablibrary.net/book_content/b/8254/124?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/8254/124?lang=ar"
+    },
+    "SN11": {
+      "source_record_id": "SN11",
+      "work_id": "qutb_shirazi_ishraq",
+      "source_work_id": "qutb_shirazi_ishraq",
+      "work_ids": [
+        "qutb_shirazi_ishraq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Quṭb al-Dīn al-Shīrāzī | Sharḥ Ḥikmat al-Ishrāq | Tehran printed edition, pp. 53, 85 | source: https://ablibrary.net/book_content/b/8254/81?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/8254/81?lang=ar"
+    },
+    "SN12": {
+      "source_record_id": "SN12",
+      "work_id": "qutb_shirazi_ishraq",
+      "source_work_id": "qutb_shirazi_ishraq",
+      "work_ids": [
+        "qutb_shirazi_ishraq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Quṭb al-Dīn al-Shīrāzī | Sharḥ Ḥikmat al-Ishrāq | Printed p. 197 | source: https://najafdesertlibrary.com/book/%D8%B4%D8%B1%D8%AD-%D8%AD%D9%83%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%B4%D8%B1%D8%A7%D9%82/v/1/p/197",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D8%B1%D8%AD-%D8%AD%D9%83%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%B4%D8%B1%D8%A7%D9%82/v/1/p/197"
+    },
+    "SN13": {
+      "source_record_id": "SN13",
+      "work_id": "qutb_shirazi_ishraq",
+      "source_work_id": "qutb_shirazi_ishraq",
+      "work_ids": [
+        "qutb_shirazi_ishraq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Quṭb al-Dīn al-Shīrāzī | Sharḥ Ḥikmat al-Ishrāq | Printed p. 346 | source: https://ablibrary.net/book_content/b/8254/374",
+      "cited_url": "https://ablibrary.net/book_content/b/8254/374"
+    },
+    "SN14": {
+      "source_record_id": "SN14",
+      "work_id": "qutb_shirazi_ishraq",
+      "source_work_id": "qutb_shirazi_ishraq",
+      "work_ids": [
+        "qutb_shirazi_ishraq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Quṭb al-Dīn al-Shīrāzī | Sharḥ Ḥikmat al-Ishrāq | Printed p. 349 | source: https://ablibrary.net/book_content/b/8254/377?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/8254/377?lang=ar"
+    },
+    "QTS15": {
+      "source_record_id": "QTS15",
+      "work_id": "qutb_shirazi_ishraq",
+      "source_work_id": "qutb_shirazi_ishraq",
+      "work_ids": [
+        "qutb_shirazi_ishraq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "New continuation: printed/digital text; manuscript collation pending",
+      "cited_locator": "Quṭb al-Dīn al-Shīrāzī, Sharḥ Ḥikmat al-ishrāq, printed p. 346, ch. 10.",
+      "cited_url": "https://ablibrary.net/book_content/b/8254/374?lang=ar"
+    },
+    "QTS16": {
+      "source_record_id": "QTS16",
+      "work_id": "qutb_shirazi_ishraq",
+      "source_work_id": "qutb_shirazi_ishraq",
+      "work_ids": [
+        "qutb_shirazi_ishraq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "New continuation: printed/digital text; manuscript collation pending",
+      "cited_locator": "Quṭb al-Dīn al-Shīrāzī, Sharḥ Ḥikmat al-ishrāq, printed p. 349.",
+      "cited_url": "https://ablibrary.net/book_content/b/8254/377?lang=ar"
+    },
+    "SN15": {
+      "source_record_id": "SN15",
+      "work_id": "ibntaymiyya_radd_mantiqiyyin",
+      "source_work_id": "ibntaymiyya_radd_mantiqiyyin",
+      "work_ids": [
+        "ibntaymiyya_radd_mantiqiyyin"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Ibn Taymiyya | al-Radd ʿalā al-manṭiqiyyīn | Electronic introduction, p. 2 | source: https://usul.ai/ar/t/radd-cala-mantiqiyyin/2",
+      "cited_url": "https://usul.ai/ar/t/radd-cala-mantiqiyyin/2"
+    },
+    "SN17": {
+      "source_record_id": "SN17",
+      "work_id": "qari_radd_wahda",
+      "source_work_id": "qari_radd_wahda",
+      "work_ids": [
+        "qari_radd_wahda"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Inherited extract: direct source/voice/collation still needs full audit",
+      "cited_locator": "Mullā ʿAlī al-Qārī | al-Radd ʿalā al-qāʾilīn bi-waḥdat al-wujūd | Electronic opening p. 1 | source: https://usul.ai/ar/t/radd-cala-qailin-bi-wahdat-wujud",
+      "cited_url": "https://usul.ai/ar/t/radd-cala-qailin-bi-wahdat-wujud"
+    },
+    "SYR01": {
+      "source_record_id": "SYR01",
+      "work_id": "siyuri_itimad",
+      "source_work_id": "siyuri_itimad",
+      "work_ids": [
+        "siyuri_itimad"
+      ],
+      "related_work_ids": [
+        "hilli_wajib_itiqad"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Independent later kalām comparison",
+      "cited_locator": "al-Miqdād al-Siyūrī | al-Iʿtimād fī sharḥ Wājib al-iʿtiqād | printed p. 51 | https://ablibrary.net/book_content/b/9146/51?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/9146/51?lang=ar"
+    },
+    "MAW01": {
+      "source_record_id": "MAW01",
+      "work_id": "mawardi_alam_nubuwwa",
+      "source_work_id": "mawardi_alam_nubuwwa",
+      "work_ids": [
+        "mawardi_alam_nubuwwa"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Independent Sunni nubuwwa comparison",
+      "cited_locator": "al-Māwardī | Aʿlām al-nubuwwa | printed p. 111 | https://ablibrary.net/book_content/b/9174/111?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/9174/111?lang=ar"
+    },
+    "NEW16": {
+      "source_record_id": "NEW16",
+      "work_id": "taskoprizade_nahal",
+      "source_work_id": "taskoprizade_nahal",
+      "work_ids": [
+        "taskoprizade_nahal"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "al-Nahal wa-l-ʿAlal fī taḥqīq aqsām al-ʿilal, critical text p.45 (Üçer ed.) (exact URL in source_url)",
+      "cited_url": "https://www.nazariyat.org/content/6-online-first/2-ibrahim-halil-ucer-taskoprizade/ucer_son_kontrol.pdf"
+    },
+    "NEW17": {
+      "source_record_id": "NEW17",
+      "work_id": "taskoprizade_nahal",
+      "source_work_id": "taskoprizade_nahal",
+      "work_ids": [
+        "taskoprizade_nahal"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "al-Nahal wa-l-ʿAlal fī taḥqīq aqsām al-ʿilal, critical text p.48 (Üçer ed.) (exact URL in source_url)",
+      "cited_url": "https://www.nazariyat.org/content/6-online-first/2-ibrahim-halil-ucer-taskoprizade/ucer_son_kontrol.pdf"
+    },
+    "NEW18": {
+      "source_record_id": "NEW18",
+      "work_id": "taskoprizade_nahal",
+      "source_work_id": "taskoprizade_nahal",
+      "work_ids": [
+        "taskoprizade_nahal"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "attribution_note": "Unnamed disputant reported within Taşköprüzāde; no invented author/work identity.",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "al-Nahal wa-l-ʿAlal fī taḥqīq aqsām al-ʿilal, critical text p.51 (Üçer ed.) (exact URL in source_url)",
+      "cited_url": "https://www.nazariyat.org/content/6-online-first/2-ibrahim-halil-ucer-taskoprizade/ucer_son_kontrol.pdf"
+    },
+    "NEW20": {
+      "source_record_id": "NEW20",
+      "work_id": "ibnarabi_fusus",
+      "source_work_id": "ibnarabi_fusus",
+      "work_ids": [
+        "ibnarabi_fusus"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Fuṣūṣ al-ḥikam, p.76, ʿAfīfī ed. (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/2783/76?lang=ar"
+    },
+    "NEW21": {
+      "source_record_id": "NEW21",
+      "work_id": "qunawi_miftah",
+      "source_work_id": "qunawi_miftah",
+      "work_ids": [
+        "qunawi_miftah"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Miftāḥ ghayb al-jamʿ, p.21, Muḥammad Khwājawī ed. (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/3711/41"
+    },
+    "NEW22": {
+      "source_record_id": "NEW22",
+      "work_id": "qunawi_miftah",
+      "source_work_id": "qunawi_miftah",
+      "work_ids": [
+        "qunawi_miftah"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Miftāḥ ghayb al-jamʿ, p.109, Muḥammad Khwājawī ed. (exact URL in source_url)",
+      "cited_url": "https://ablibrary.net/book_content/b/3711/129?lang=ar"
+    },
+    "NEW26": {
+      "source_record_id": "NEW26",
+      "work_id": "dawwani_ithbat_qadima",
+      "source_work_id": "dawwani_ithbat_qadima",
+      "work_ids": [
+        "dawwani_ithbat_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Risālat ithbāt al-wājib al-qadīma (in Sabʿ rasāʾil), p.71, Mīrāth-i Maktūb ed.",
+      "cited_url": "https://ablibrary.net/book_content/b/9272/71?lang=ar"
+    },
+    "NEW27": {
+      "source_record_id": "NEW27",
+      "work_id": "dawwani_ithbat_qadima",
+      "source_work_id": "dawwani_ithbat_qadima",
+      "work_ids": [
+        "dawwani_ithbat_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Risālat ithbāt al-wājib al-qadīma, p.88, Mīrāth-i Maktūb ed.",
+      "cited_url": "https://ablibrary.net/book_content/b/9272/88?lang=ar"
+    },
+    "NEW28": {
+      "source_record_id": "NEW28",
+      "work_id": "dawwani_ithbat_qadima",
+      "source_work_id": "dawwani_ithbat_qadima",
+      "work_ids": [
+        "dawwani_ithbat_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Risālat ithbāt al-wājib al-qadīma, p.89, Mīrāth-i Maktūb ed.",
+      "cited_url": "https://ablibrary.net/book_content/b/9272/89?lang=ar"
+    },
+    "NEW29": {
+      "source_record_id": "NEW29",
+      "work_id": "dawwani_ithbat_qadima",
+      "source_work_id": "dawwani_ithbat_qadima",
+      "work_ids": [
+        "dawwani_ithbat_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Risālat ithbāt al-wājib al-qadīma, p.90, Mīrāth-i Maktūb ed.",
+      "cited_url": "https://ablibrary.net/book_content/b/9272/90?lang=ar"
+    },
+    "NEW30": {
+      "source_record_id": "NEW30",
+      "work_id": "dawwani_ithbat_qadima",
+      "source_work_id": "dawwani_ithbat_qadima",
+      "work_ids": [
+        "dawwani_ithbat_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "attribution_note": "Al-Kātibī’s objection is reported by Dawwānī; no separate al-Kātibī work is established.",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Risālat ithbāt al-wājib al-qadīma, p.91, Mīrāth-i Maktūb ed.",
+      "cited_url": "https://ablibrary.net/book_content/b/9272/91?lang=ar"
+    },
+    "NEW31": {
+      "source_record_id": "NEW31",
+      "work_id": "dawwani_ithbat_qadima",
+      "source_work_id": "dawwani_ithbat_qadima",
+      "work_ids": [
+        "dawwani_ithbat_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Risālat ithbāt al-wājib al-qadīma, p.92, Mīrāth-i Maktūb ed.",
+      "cited_url": "https://ablibrary.net/book_content/b/9272/92?lang=ar"
+    },
+    "NEW32": {
+      "source_record_id": "NEW32",
+      "work_id": "dawwani_ithbat_qadima",
+      "source_work_id": "dawwani_ithbat_qadima",
+      "work_ids": [
+        "dawwani_ithbat_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Risālat ithbāt al-wājib al-qadīma, p.93, Mīrāth-i Maktūb ed.",
+      "cited_url": "https://ablibrary.net/book_content/b/9272/93?lang=ar"
+    },
+    "NEW33": {
+      "source_record_id": "NEW33",
+      "work_id": "dawwani_ithbat_qadima",
+      "source_work_id": "dawwani_ithbat_qadima",
+      "work_ids": [
+        "dawwani_ithbat_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Risālat ithbāt al-wājib al-qadīma, p.94, Mīrāth-i Maktūb ed.",
+      "cited_url": "https://ablibrary.net/book_content/b/9272/94?lang=ar"
+    },
+    "NEW34": {
+      "source_record_id": "NEW34",
+      "work_id": "dawwani_ithbat_qadima",
+      "source_work_id": "dawwani_ithbat_qadima",
+      "work_ids": [
+        "dawwani_ithbat_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Risālat ithbāt al-wājib al-qadīma, p.72, Mīrāth-i Maktūb ed.",
+      "cited_url": "https://ablibrary.net/book_content/b/9272/72?lang=ar"
+    },
+    "NEW35": {
+      "source_record_id": "NEW35",
+      "work_id": "dawwani_ithbat_qadima",
+      "source_work_id": "dawwani_ithbat_qadima",
+      "work_ids": [
+        "dawwani_ithbat_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Risālat ithbāt al-wājib al-qadīma, p.85, Mīrāth-i Maktūb ed.",
+      "cited_url": "https://ablibrary.net/book_content/b/9272/85?lang=ar"
+    },
+    "NEW36": {
+      "source_record_id": "NEW36",
+      "work_id": "dawwani_ithbat_qadima",
+      "source_work_id": "dawwani_ithbat_qadima",
+      "work_ids": [
+        "dawwani_ithbat_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "published-page-checked short extract; no manuscript variants collated",
+      "cited_locator": "Risālat ithbāt al-wājib al-qadīma, p.80, Mīrāth-i Maktūb ed.",
+      "cited_url": "https://najafdesertlibrary.com/book/سبع-رسائل/v/1/p/80"
+    },
+    "MATN210": {
+      "source_record_id": "MATN210",
+      "work_id": "tusi_tajrid",
+      "source_work_id": "tusi_tajrid",
+      "work_ids": [
+        "tusi_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "inherited",
+      "cited_locator": "Division 1 · General matters / Chapter 3 · Cause and effect · inherited aligned unit 210",
+      "cited_url": ""
+    },
+    "MATN213": {
+      "source_record_id": "MATN213",
+      "work_id": "tusi_tajrid",
+      "source_work_id": "tusi_tajrid",
+      "work_ids": [
+        "tusi_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "inherited",
+      "cited_locator": "Division 1 · General matters / Chapter 3 · Cause and effect · inherited aligned unit 213",
+      "cited_url": ""
+    },
+    "MATN572": {
+      "source_record_id": "MATN572",
+      "work_id": "tusi_tajrid",
+      "source_work_id": "tusi_tajrid",
+      "work_ids": [
+        "tusi_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "inherited",
+      "cited_locator": "Division 3 · Establishing the Maker, exalted is He, His attributes, and His effects / Chapter 1 · His existence, exalted is He · inherited aligned unit 572",
+      "cited_url": ""
+    },
+    "ALH07": {
+      "source_record_id": "ALH07",
+      "work_id": "tusi_tajrid",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "tusi_tajrid",
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "Ṭūsī lemma transmitted within al-Ḥillī’s commentary",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct Tajrīd commentary",
+      "cited_locator": "al-Ṭūsī (quoted by al-Ḥillī) | Direct Tajrīd commentary | printed p. 187, edition with Ḥasan Zādeh Āmulī annotation. Arabic: https://ablibrary.net/book_content/b/3439/187?lang=ar",
+      "cited_url": "https://ablibrary.net/book_content/b/3439/187?lang=ar"
+    },
+    "NEW08": {
+      "source_record_id": "NEW08",
+      "work_id": "tusi_tajrid",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "tusi_tajrid",
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "Ṭūsī lemma transmitted within al-Ḥillī’s commentary",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Tajrīd / Kashf al-murād, p.117, Ḥasanzāda Āmulī ed. (exact URL in source_url)",
+      "cited_url": "https://najafdesertlibrary.com/book/%D9%83%D8%B4%D9%81-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AF-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D8%AF-%D8%AA%D8%AD%D9%82%D9%8A%D9%82-%D8%A7%D9%84%D8%A2%D9%85%D9%84%D9%8A/v/1/p/117"
+    },
+    "NEW09": {
+      "source_record_id": "NEW09",
+      "work_id": "tusi_tajrid",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "tusi_tajrid",
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "Ṭūsī lemma transmitted within al-Ḥillī’s commentary",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Tajrīd / Kashf al-murād, p.198, Ḥasanzāda Āmulī ed. (exact URL in source_url)",
+      "cited_url": "https://najafdesertlibrary.com/book/%D9%83%D8%B4%D9%81-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AF-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D8%AF-%D8%AA%D8%AD%D9%82%D9%8A%D9%82-%D8%A7%D9%84%D8%A2%D9%85%D9%84%D9%8A/v/1/p/198"
+    },
+    "NEW10": {
+      "source_record_id": "NEW10",
+      "work_id": "tusi_tajrid",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "tusi_tajrid",
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "Ṭūsī lemma transmitted within al-Ḥillī’s commentary",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Tajrīd / Kashf al-murād, p.423, Ḥasanzāda Āmulī ed. (exact URL in source_url)",
+      "cited_url": "https://najafdesertlibrary.com/book/%D9%83%D8%B4%D9%81-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AF-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D8%AF-%D8%AA%D8%AD%D9%82%D9%8A%D9%82-%D8%A7%D9%84%D8%A2%D9%85%D9%84%D9%8A/v/1/p/423"
+    },
+    "NEW11": {
+      "source_record_id": "NEW11",
+      "work_id": "tusi_tajrid",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "tusi_tajrid",
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "Ṭūsī lemma transmitted within al-Ḥillī’s commentary",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-verified short extract; not full contextual collation",
+      "cited_locator": "Tajrīd / Kashf al-murād, p.229, Ḥasanzāda Āmulī ed. (exact URL in source_url)",
+      "cited_url": "https://najafdesertlibrary.com/book/%D9%83%D8%B4%D9%81-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AF-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D8%AF-%D8%AA%D8%AD%D9%82%D9%8A%D9%82-%D8%A7%D9%84%D8%A2%D9%85%D9%84%D9%8A/v/1/p/229"
+    },
+    "COLL07": {
+      "source_record_id": "COLL07",
+      "work_id": "tusi_tajrid",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "tusi_tajrid",
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "Ṭūsī lemma transmitted within al-Ḥillī’s commentary",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "كشف المراد في شرح تجريد الاعتقاد, p. 77, Zanjānī edition of Kashf. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/3438/77?lang=ar"
+    },
+    "COLL14": {
+      "source_record_id": "COLL14",
+      "work_id": "tusi_tajrid",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "tusi_tajrid",
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "Ṭūsī lemma transmitted within al-Ḥillī’s commentary",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "كشف المراد في شرح تجريد الاعتقاد, p. 150, Āmulī edition of Kashf. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/15583/152?lang=ar"
+    },
+    "EXT20": {
+      "source_record_id": "EXT20",
+      "work_id": "tusi_tajrid",
+      "source_work_id": "hilli_kashf",
+      "work_ids": [
+        "tusi_tajrid",
+        "hilli_kashf"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "Ṭūsī lemma transmitted within al-Ḥillī’s commentary",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://lib.rafed.net/view.php?b_id=3486&page=274&type=c_fbook"
+    },
+    "COLL01": {
+      "source_record_id": "COLL01",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, I, p. 129. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14864/129?lang=ar"
+    },
+    "COLL02": {
+      "source_record_id": "COLL02",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, I, p. 131. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14864/131?lang=ar"
+    },
+    "COLL03": {
+      "source_record_id": "COLL03",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, I, p. 132. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14864/132?lang=ar"
+    },
+    "COLL09": {
+      "source_record_id": "COLL09",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, I, p. 138, Mahdavī edition of Shawāriq. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/138?lang=ar"
+    },
+    "COLL10": {
+      "source_record_id": "COLL10",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, I, p. 139, Mahdavī edition of Shawāriq. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/139?lang=ar"
+    },
+    "COLL11": {
+      "source_record_id": "COLL11",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, I, p. 140, Mahdavī edition of Shawāriq. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/140?lang=ar"
+    },
+    "COLL12": {
+      "source_record_id": "COLL12",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, I, p. 140, Mahdavī edition of Shawāriq. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/140?lang=ar"
+    },
+    "COLL13": {
+      "source_record_id": "COLL13",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, I, p. 141, Mahdavī edition of Shawāriq. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/141?lang=ar"
+    },
+    "COLL15": {
+      "source_record_id": "COLL15",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, III, p. 144. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14866/144?lang=ar"
+    },
+    "COLL16": {
+      "source_record_id": "COLL16",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, III, p. 145. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14866/145?lang=ar"
+    },
+    "COLL17": {
+      "source_record_id": "COLL17",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, III, p. 146. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14866/146?lang=ar"
+    },
+    "COLL18": {
+      "source_record_id": "COLL18",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, III, p. 147. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14866/147?lang=ar"
+    },
+    "COLL19": {
+      "source_record_id": "COLL19",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, III, p. 148. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14866/148?lang=ar"
+    },
+    "COLL20": {
+      "source_record_id": "COLL20",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, III, p. 149. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14866/149?lang=ar"
+    },
+    "COLL21": {
+      "source_record_id": "COLL21",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, III, p. 150. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14866/150?lang=ar"
+    },
+    "COLL22": {
+      "source_record_id": "COLL22",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, III, p. 151. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14866/151?lang=ar"
+    },
+    "COLL23": {
+      "source_record_id": "COLL23",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, III, p. 152. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14866/152?lang=ar"
+    },
+    "COLL24": {
+      "source_record_id": "COLL24",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, III, p. 153. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14866/153?lang=ar"
+    },
+    "COLL25": {
+      "source_record_id": "COLL25",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "شوارق الإلهام في شرح تجريد الكلام, III, p. 154. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/14866/154?lang=ar"
+    },
+    "COLL26": {
+      "source_record_id": "COLL26",
+      "work_id": "astarabadi_barahin",
+      "source_work_id": "astarabadi_barahin",
+      "work_ids": [
+        "astarabadi_barahin"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "البراهين القاطعة في شرح تجريد العقائد الساطعة, I, p. 282. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/9198/282?lang=ar"
+    },
+    "COLL27": {
+      "source_record_id": "COLL27",
+      "work_id": "astarabadi_barahin",
+      "source_work_id": "astarabadi_barahin",
+      "work_ids": [
+        "astarabadi_barahin"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "البراهين القاطعة في شرح تجريد العقائد الساطعة, I, p. 281. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/9198/281?lang=ar"
+    },
+    "COLL28": {
+      "source_record_id": "COLL28",
+      "work_id": "astarabadi_barahin",
+      "source_work_id": "astarabadi_barahin",
+      "work_ids": [
+        "astarabadi_barahin"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic page directly inspected in accessible publisher-identified digital transcription; image/manuscript collation pending",
+      "cited_locator": "البراهين القاطعة في شرح تجريد العقائد الساطعة, I, p. 283. Direct Arabic HTML transcription checked 2026-10-30; print witness and manuscript variants not collated.",
+      "cited_url": "https://ablibrary.net/book_content/b/9198/283?lang=ar"
+    },
+    "EXT14": {
+      "source_record_id": "EXT14",
+      "work_id": "astarabadi_barahin",
+      "source_work_id": "astarabadi_barahin",
+      "work_ids": [
+        "astarabadi_barahin"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "Muḥammad Jaʿfar al-Astarābādī | al-Barāhīn al-qāṭiʿa fī sharḥ Tajrīd al-ʿaqāʾid al-sāṭiʿa | vol. I:262 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%86-%D8%A7%D9%84%D9%82%D8%A7%D8%B7%D8%B9%D8%A9-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%A6%D8%AF-%D8%A7%D9%84%D8%B3%D8%A7%D8%B7%D8%B9%D8%A9/v/1/p/262"
+    },
+    "EXT01": {
+      "source_record_id": "EXT01",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | I:119 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/1/p/119"
+    },
+    "EXT02": {
+      "source_record_id": "EXT02",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | I:188 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/1/p/188"
+    },
+    "EXT03": {
+      "source_record_id": "EXT03",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | I:154 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/1/p/154"
+    },
+    "EXT04": {
+      "source_record_id": "EXT04",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | I:219 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/1/p/219"
+    },
+    "EXT05": {
+      "source_record_id": "EXT05",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | I:219 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/1/p/219"
+    },
+    "EXT06": {
+      "source_record_id": "EXT06",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | I:552 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/1/p/552"
+    },
+    "EXT07": {
+      "source_record_id": "EXT07",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | III:459 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/3/p/459"
+    },
+    "EXT08": {
+      "source_record_id": "EXT08",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | I:447 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/1/p/447"
+    },
+    "EXT09": {
+      "source_record_id": "EXT09",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [
+        "avicenna_shifa"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "Ibn Sīnā (quoted by al-Lāhījī) | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | V:161, reported from al-Shifāʾ, Ilāhiyyāt VIII.7 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/5/p/161"
+    },
+    "EXT10": {
+      "source_record_id": "EXT10",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | V:285 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/5/p/285"
+    },
+    "EXT11": {
+      "source_record_id": "EXT11",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "ʿAbd al-Razzāq al-Lāhījī | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | V:285 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/5/p/285"
+    },
+    "EXT12": {
+      "source_record_id": "EXT12",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "attribution_note": "Ibn Rushd is quoted in Shawāriq; the original Arabic work is not identified in this record. No guessed Ibn Rushd work link.",
+      "unresolved_reported_work": "Ibn Rushd, original work not established",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "Ibn Rushd (quoted in al-Lāhījī) | Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām, Asad ʿAlīzāda edition | V:200, section explicitly headed “Ibn Rushd on divine knowledge” | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%B4%D9%88%D8%A7%D8%B1%D9%82-%D8%A7%D9%84%D8%A5%D9%84%D9%87%D8%A7%D9%85-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85/v/5/p/200"
+    },
+    "EXT15": {
+      "source_record_id": "EXT15",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/46?lang=ar"
+    },
+    "EXT16": {
+      "source_record_id": "EXT16",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/46?lang=ar"
+    },
+    "EXT17": {
+      "source_record_id": "EXT17",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://najafdesertlibrary.com/book/شوارق-الإلهام-في-شرح-تجريد-الكلام/v/1/p/346"
+    },
+    "EXT18": {
+      "source_record_id": "EXT18",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://najafdesertlibrary.com/book/شوارق-الإلهام-في-شرح-تجريد-الكلام/v/1/p/346"
+    },
+    "EXT19": {
+      "source_record_id": "EXT19",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/86?lang=ar"
+    },
+    "EXT24": {
+      "source_record_id": "EXT24",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/53?lang=ar"
+    },
+    "EXT25": {
+      "source_record_id": "EXT25",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/53?lang=ar"
+    },
+    "EXT30": {
+      "source_record_id": "EXT30",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "",
+      "cited_locator": "",
+      "cited_url": "https://ablibrary.net/book_content/b/9309/46?lang=ar"
+    },
+    "EXT13": {
+      "source_record_id": "EXT13",
+      "work_id": "shirazi_qawl_sadid",
+      "source_work_id": "shirazi_qawl_sadid",
+      "work_ids": [
+        "shirazi_qawl_sadid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "page-indexed Arabic transcription read; short excerpt; manuscript variants unchecked",
+      "cited_locator": "Muḥammad al-Ḥusaynī al-Shīrāzī | al-Qawl al-sadīd fī sharḥ al-Tajrīd | vol. I:56 | digital transcription read 2026-10-30, no print/manuscript collation",
+      "cited_url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%82%D9%88%D9%84-%D8%A7%D9%84%D8%B3%D8%AF%D9%8A%D8%AF-%D9%81%D9%8A-%D8%B4%D8%B1%D8%AD-%D8%A7%D9%84%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF/v/1/p/56"
+    },
+    "WIT05": {
+      "source_record_id": "WIT05",
+      "work_id": "yazdi_tajrid",
+      "source_work_id": "yazdi_tajrid",
+      "work_ids": [
+        "yazdi_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic visually transcribed from published PDF page image; quotation is Yazdī’s explanation",
+      "cited_locator": "Yazdī, Ḥāshiya ʿalā ḥāshiyat Sharḥ al-Tajrīd (gloss on Dawwānī’s old gloss), published PDF printed p.15; PDF image 14",
+      "cited_url": "https://www.molaabdellah.ir/images/kotob/tajrid.pdf"
+    },
+    "WIT06": {
+      "source_record_id": "WIT06",
+      "work_id": "yazdi_tajrid",
+      "source_work_id": "yazdi_tajrid",
+      "work_ids": [
+        "yazdi_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic visually transcribed from published PDF page image; bounded quotation",
+      "cited_locator": "Yazdī, Ḥāshiya ʿalā ḥāshiyat Sharḥ al-Tajrīd, published PDF printed p.17; PDF image 16",
+      "cited_url": "https://www.molaabdellah.ir/images/kotob/tajrid.pdf"
+    },
+    "WIT07": {
+      "source_record_id": "WIT07",
+      "work_id": "yazdi_tajrid",
+      "source_work_id": "yazdi_tajrid",
+      "work_ids": [
+        "yazdi_tajrid"
+      ],
+      "related_work_ids": [
+        "dashtaki_tajrid"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "attribution_note": "Probable Ṣadr al-Dīn al-Dashtakī reported by Yazdī; specific first/second installment is unresolved.",
+      "source_status": "Printed p.33 inspected; title-context checked against p.12 nn.6/8 and editor’s introduction p.5; probable attribution only",
+      "cited_locator": "Yazdī, printed p.33; mediated quotation; contextual attribution revised 31 October 2026",
+      "cited_url": "https://www.molaabdellah.ir/images/kotob/tajrid.pdf"
+    },
+    "WIT08": {
+      "source_record_id": "WIT08",
+      "work_id": "yazdi_tajrid",
+      "source_work_id": "yazdi_tajrid",
+      "work_ids": [
+        "yazdi_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic visually transcribed from published PDF; Yazdī’s own answer",
+      "cited_locator": "Yazdī, Ḥāshiya ʿalā ḥāshiyat Sharḥ al-Tajrīd, published PDF printed p.33; PDF image 32",
+      "cited_url": "https://www.molaabdellah.ir/images/kotob/tajrid.pdf"
+    },
+    "WIT09": {
+      "source_record_id": "WIT09",
+      "work_id": "yazdi_tajrid",
+      "source_work_id": "yazdi_tajrid",
+      "work_ids": [
+        "yazdi_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Published PDF p.72 visually checked; wording regularized against readable page; no manuscript collation",
+      "cited_locator": "Yazdī, Ḥāshiya ʿalā ḥāshiyat Sharḥ al-Tajrīd, published PDF printed p.72; PDF image 71; selected abbreviated clauses",
+      "cited_url": "https://www.molaabdellah.ir/images/kotob/tajrid.pdf"
+    },
+    "WIT10": {
+      "source_record_id": "WIT10",
+      "work_id": "yazdi_tajrid",
+      "source_work_id": "yazdi_tajrid",
+      "work_ids": [
+        "yazdi_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Arabic visually transcribed from the published PDF page; Yazdī’s own comment",
+      "cited_locator": "Yazdī, Ḥāshiya ʿalā ḥāshiyat Sharḥ al-Tajrīd, published PDF printed p.89; PDF image 88",
+      "cited_url": "https://www.molaabdellah.ir/images/kotob/tajrid.pdf"
+    },
+    "C31Y01": {
+      "source_record_id": "C31Y01",
+      "work_id": "yazdi_tajrid",
+      "source_work_id": "yazdi_tajrid",
+      "work_ids": [
+        "yazdi_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Yazdī, printed p.12 (= PDF page 12), paragraphs on aqdamiyya and ashaddiyya",
+      "cited_url": "https://www.molaabdellah.ir/images/kotob/tajrid.pdf"
+    },
+    "C31Y02": {
+      "source_record_id": "C31Y02",
+      "work_id": "yazdi_tajrid",
+      "source_work_id": "yazdi_tajrid",
+      "work_ids": [
+        "yazdi_tajrid"
+      ],
+      "related_work_ids": [
+        "dashtaki_tajrid"
+      ],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "attribution_note": "Probable Ṣadr al-Dīn al-Dashtakī reported by Yazdī; specific first/second installment is unresolved.",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Yazdī, printed p.33 (= PDF page 33), complete paragraph beginning ثم أقول",
+      "cited_url": "https://www.molaabdellah.ir/images/kotob/tajrid.pdf"
+    },
+    "C31Y03": {
+      "source_record_id": "C31Y03",
+      "work_id": "yazdi_tajrid",
+      "source_work_id": "yazdi_tajrid",
+      "work_ids": [
+        "yazdi_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Printed page image inspected; normalized Arabic transcription and fresh working translation",
+      "cited_locator": "Yazdī p.33, sequence from فهو من حيث أنه ليس في الخارج through الذاتيات",
+      "cited_url": "https://www.molaabdellah.ir/images/kotob/tajrid.pdf"
+    },
+    "WIT14": {
+      "source_record_id": "WIT14",
+      "work_id": "lahiji_shawariq",
+      "source_work_id": "lahiji_shawariq",
+      "work_ids": [
+        "lahiji_shawariq",
+        "qushji_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "Qūshjī quoted in Lāhījī; direct Qūshjī locus not collated",
+      "mapping_status": "identified from record source and notes",
+      "reported_work_ids": [
+        "qushji_tajrid"
+      ],
+      "source_status": "Lāhījī printed-page electronic edition checked; mediated Qūshjī reading, not manuscript-collated",
+      "cited_locator": "al-Qūshjī, Sharḥ al-Tajrīd, p.23, three objections as reproduced by Lāhījī, Shawāriq, I p.274 (mediated text)",
+      "cited_url": "https://najafdesertlibrary.com/book/شوارق-الإلهام-في-شرح-تجريد-الكلام/v/1/p/274"
+    },
+    "C31D01": {
+      "source_record_id": "C31D01",
+      "work_id": "dawwani_tajrid_qadima",
+      "source_work_id": "dawwani_tajrid_qadima",
+      "work_ids": [
+        "dawwani_tajrid_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct manuscript image inspected; bounded clause only",
+      "cited_locator": "Princeton Garrett 1787Y, manifest image 6, left page, selected clause",
+      "cited_url": "https://figgy.princeton.edu/concern/scanned_resources/5f9a74f5-5292-495b-be95-3049a3cde041/manifest"
+    },
+    "C31D02": {
+      "source_record_id": "C31D02",
+      "work_id": "dawwani_tajrid_qadima",
+      "source_work_id": "dawwani_tajrid_qadima",
+      "work_ids": [
+        "dawwani_tajrid_qadima"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "extract in cited work",
+      "mapping_status": "identified from record source and notes",
+      "source_status": "Direct manuscript image inspected; bounded initial sentences transcribed and translated",
+      "cited_locator": "Princeton Garrett 1787Y, manifest image 12, right page, bounded opening at قوله عن أحوال الممكن",
+      "cited_url": "https://figgy.princeton.edu/concern/scanned_resources/5f9a74f5-5292-495b-be95-3049a3cde041/manifest"
+    },
+    "C31G01": {
+      "source_record_id": "C31G01",
+      "work_id": "ghiyath_dashtaki_gloss",
+      "source_work_id": "ghiyath_dashtaki_gloss",
+      "work_ids": [
+        "ghiyath_dashtaki_gloss"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "incipit quoted in catalogue; mediated manuscript text",
+      "mapping_status": "work title and Muḥākamāt alias attested in catalogue; manuscript identity separately controlled",
+      "source_status": "Catalogue page image inspected; mediated incipit quotation. A title/ownership thumbnail and one interior manuscript preview spread acquired, but not the manuscript opening or a complete scan.",
+      "cited_locator": "Fahras al-makhṭūṭāt al-ʿArabiyya wa-l-Turkiyya wa-l-Fārisiyya fī Maktabat Rāghib Bāshā, vol. 6, printed/PDF p. 381, entry 1042; Ragıp Paşa 809 (catalogue al-raqm al-Ḥamīdī 809); selected incipit clauses",
+      "cited_url": "https://bibliography.mk.iq/files/ab356e6a27dd2ea7.pdf"
+    },
+    "C31I03": {
+      "source_record_id": "C31I03",
+      "work_id": "isfahani_tasdid",
+      "source_work_id": "isfahani_tasdid",
+      "work_ids": [
+        "isfahani_tasdid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "direct printed gloss",
+      "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
+      "cited_locator": "Tasdīd al-qawāʿid, İSAM edition, II p.225, §77 (PDF p.227)",
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+    },
+    "C31I04": {
+      "source_record_id": "C31I04",
+      "work_id": "isfahani_tasdid",
+      "source_work_id": "isfahani_tasdid",
+      "work_ids": [
+        "isfahani_tasdid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "direct printed gloss",
+      "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
+      "cited_locator": "Tasdīd al-qawāʿid, İSAM edition, II pp.226–227, §78 (PDF pp.228–229)",
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+    },
+    "C31J02": {
+      "source_record_id": "C31J02",
+      "work_id": "jurjani_tajrid",
+      "source_work_id": "jurjani_tajrid",
+      "work_ids": [
+        "jurjani_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "direct printed gloss",
+      "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
+      "cited_locator": "Ḥāshiya in the İSAM Tasdīd edition, II pp.225–226, gloss 77.1 (PDF pp.227–228)",
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+    },
+    "C31J03": {
+      "source_record_id": "C31J03",
+      "work_id": "jurjani_tajrid",
+      "source_work_id": "jurjani_tajrid",
+      "work_ids": [
+        "jurjani_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "direct printed gloss",
+      "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
+      "cited_locator": "Ḥāshiya in the İSAM Tasdīd edition, II p.227, gloss 78.1 continuation (PDF p.229); objection and answer",
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+    },
+    "C31J04": {
+      "source_record_id": "C31J04",
+      "work_id": "jurjani_tajrid",
+      "source_work_id": "jurjani_tajrid",
+      "work_ids": [
+        "jurjani_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "direct printed gloss",
+      "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
+      "cited_locator": "Ḥāshiya in the İSAM Tasdīd edition, II p.227, gloss 78.2 (PDF p.229)",
+      "cited_url": "https://archive.org/download/tsdidqawaed/tqat2.pdf"
+    },
+    "C31Q05": {
+      "source_record_id": "C31Q05",
+      "work_id": "qushji_tajrid",
+      "source_work_id": "qushji_tajrid",
+      "work_ids": [
+        "qushji_tajrid"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "direct printed gloss",
+      "source_status": "Independently transcribed and translated from the specified printed page images; edition apparatus not exhaustively collated",
+      "cited_locator": "Sharḥ Tajrīd al-ʿaqāʾid, ed. al-Zāriʿī al-Riḍāʾī, I pp.173–174 (PDF pp.173–174), أقول: فيه نظر through لغوا محضا",
+      "cited_url": "https://archive.org/download/charhTajridKochaji/charhTajridKochaji.pdf"
+    },
+    "C31G02": {
+      "source_record_id": "C31G02",
+      "work_id": "ghiyath_dashtaki_gloss",
+      "source_work_id": "ghiyath_dashtaki_gloss",
+      "work_ids": [
+        "ghiyath_dashtaki_gloss"
+      ],
+      "related_work_ids": [],
+      "relation_to_work": "catalogue-mediated excipit; local speaker unresolved",
+      "source_status": "Printed catalogue facsimile inspected and transcribed; original terminal folio not acquired; qualification reading conjecturally normalized only in translation",
+      "cited_locator": "Fahras al-makhṭūṭāt al-ʿArabiyya wa-l-Turkiyya wa-l-Fārisiyya fī Maktabat Rāghib Bāshā, vol. 6, printed/PDF p. 382, continuation of entry 1042, Ragıp Paşa 809; excipit from خامسها through حتى يصدق القضية; manuscript folio not directly inspected",
+      "cited_url": "https://bibliography.mk.iq/files/ab356e6a27dd2ea7.pdf"
+    }
+  },
+  "work_inventory": [
+    {
+      "work_id": "astarabadi_barahin",
+      "title": "al-Barāhīn al-qāṭiʿa fī sharḥ Tajrīd al-ʿaqāʾid al-sāṭiʿa",
+      "author": "Muḥammad Jaʿfar al-Astarābādī (Sharīʿatmadār)",
+      "already_in_atlas": true,
+      "record_ids": [
+        "COLL26",
+        "COLL27",
+        "COLL28",
+        "EXT14"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "avicenna_isharat",
+      "title": "al-Ishārāt wa-l-tanbīhāt",
+      "author": "Ibn Sīnā (Avicenna)",
+      "already_in_atlas": true,
+      "record_ids": [],
+      "related_record_ids": [
+        "T14"
+      ],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "avicenna_mabda_maad",
+      "title": "al-Mabdaʾ wa-l-maʿād",
+      "author": "Ibn Sīnā (Avicenna)",
+      "already_in_atlas": false,
+      "record_ids": [],
+      "related_record_ids": [
+        "TIH06"
+      ],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "avicenna_shifa",
+      "title": "al-Shifāʾ",
+      "author": "Ibn Sīnā (Avicenna)",
+      "already_in_atlas": true,
+      "record_ids": [],
+      "related_record_ids": [
+        "EXT09"
+      ],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "avicenna_shifa_burhan",
+      "title": "al-Burhān of al-Shifāʾ (analytical section)",
+      "author": "Ibn Sīnā (Avicenna)",
+      "already_in_atlas": false,
+      "record_ids": [],
+      "related_record_ids": [
+        "SN10"
+      ],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "dashtaki_hayakil",
+      "title": "Ishrāq Hayākil al-nūr",
+      "author": "Ghiyāth al-Dīn Manṣūr al-Dashtakī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "E2"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "dashtaki_tajrid",
+      "title": "Ḥawāshī on Sharḥ al-Tajrīd",
+      "author": "Ṣadr al-Dīn Muḥammad al-Dashtakī",
+      "already_in_atlas": true,
+      "record_ids": [],
+      "related_record_ids": [
+        "WIT07",
+        "C31Y02"
+      ],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "dawwani_ithbat_qadima",
+      "title": "Risālat ithbāt al-wājib al-qadīma",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "already_in_atlas": false,
+      "record_ids": [
+        "NEW26",
+        "NEW27",
+        "NEW28",
+        "NEW29",
+        "NEW30",
+        "NEW31",
+        "NEW32",
+        "NEW33",
+        "NEW34",
+        "NEW35",
+        "NEW36"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "dawwani_shawakil",
+      "title": "Shawākil al-ḥūr fī sharḥ Hayākil al-nūr",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "E1"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "dawwani_tajrid",
+      "title": "Ḥāshiya on Qūshjī’s Sharḥ al-Tajrīd",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "already_in_atlas": true,
+      "record_ids": [],
+      "related_record_ids": [
+        "C31L05"
+      ],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "dawwani_tajrid_qadima",
+      "title": "al-Ḥāshiya al-qadīma al-Jalāliyya",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "already_in_atlas": false,
+      "record_ids": [
+        "C31D01",
+        "C31D02"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "fanari_misbah",
+      "title": "Miṣbāḥ al-uns bayn al-maʿqūl wa-l-mashhūd",
+      "author": "Shams al-Dīn Muḥammad al-Fanārī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "D1"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "ghiyath_dashtaki_gloss",
+      "title": "al-Muḥākamāt (Tajrīd disputes)",
+      "author": "Ghiyāth al-Dīn Manṣūr al-Dashtakī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "C31G01"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "hilli_kashf",
+      "title": "Kashf al-murād fī sharḥ Tajrīd al-iʿtiqād",
+      "author": "al-ʿAllāma al-Ḥillī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "T3",
+        "T4",
+        "T7",
+        "T10",
+        "T12",
+        "ALH01",
+        "ALH02",
+        "ALH03",
+        "ALH04",
+        "ALH05",
+        "ALH06",
+        "ALH08",
+        "ALH09",
+        "ALH10",
+        "NEW12",
+        "NEW19",
+        "NEW24",
+        "NEW25",
+        "COLL04",
+        "COLL05",
+        "COLL06",
+        "COLL08",
+        "EXT21",
+        "EXT22",
+        "EXT23",
+        "ALH07",
+        "NEW08",
+        "NEW09",
+        "NEW10",
+        "NEW11",
+        "COLL07",
+        "COLL14",
+        "EXT20"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "hilli_wajib_itiqad",
+      "title": "Wājib al-iʿtiqād ʿalā jamīʿ al-ʿibād",
+      "author": "al-ʿAllāma al-Ḥillī",
+      "already_in_atlas": false,
+      "record_ids": [],
+      "related_record_ids": [
+        "SYR01"
+      ],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "ibnarabi_fusus",
+      "title": "Fuṣūṣ al-ḥikam",
+      "author": "Muḥyī al-Dīn Ibn ʿArabī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "NEW20"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "ibntaymiyya_radd_mantiqiyyin",
+      "title": "al-Radd ʿalā al-manṭiqiyyīn",
+      "author": "Ibn Taymiyya",
+      "already_in_atlas": false,
+      "record_ids": [
+        "SN15"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "iji_mawaqif",
+      "title": "al-Mawāqif fī ʿilm al-kalām",
+      "author": "ʿAḍud al-Dīn al-Ījī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "SN06",
+        "SN16"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "isfahani_tasdid",
+      "title": "Tasdīd al-qawāʿid fī sharḥ Tajrīd al-ʿaqāʾid",
+      "author": "Shams al-Dīn Maḥmūd al-Iṣfahānī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "T1",
+        "T8",
+        "WIT11",
+        "WIT12",
+        "WIT13",
+        "C31I01"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "jami_durra",
+      "title": "al-Durra al-fākhira",
+      "author": "ʿAbd al-Raḥmān al-Jāmī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "C1",
+        "C2"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "jurjani_mawaqif",
+      "title": "Sharḥ al-Mawāqif",
+      "author": "al-Sayyid al-Sharīf al-Jurjānī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "SN05",
+        "SN09",
+        "NEW13",
+        "NEW14",
+        "NEW15"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "jurjani_tajrid",
+      "title": "Ḥāshiya ʿalā Sharḥ al-Tajrīd",
+      "author": "al-Sayyid al-Sharīf al-Jurjānī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "T2",
+        "T9",
+        "JRG01",
+        "JRG02",
+        "JRG03",
+        "C31I02"
+      ],
+      "related_record_ids": [
+        "C31L05"
+      ],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "jurjani_tarifat",
+      "title": "al-Taʿrīfāt",
+      "author": "al-Sayyid al-Sharīf al-Jurjānī",
+      "already_in_atlas": false,
+      "record_ids": [
+        "B1"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "lahiji_shawariq",
+      "title": "Shawāriq al-ilhām fī sharḥ Tajrīd al-kalām",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "T6",
+        "T14",
+        "LAH01",
+        "LAH02",
+        "LAH03",
+        "NEW02",
+        "NEW03",
+        "NEW04",
+        "NEW05",
+        "NEW06",
+        "NEW07",
+        "NEW23",
+        "WIT01",
+        "WIT02",
+        "WIT03",
+        "WIT04",
+        "C31L01",
+        "C31L02",
+        "C31L03",
+        "C31L04",
+        "C31L05",
+        "C31L06",
+        "COLL01",
+        "COLL02",
+        "COLL03",
+        "COLL09",
+        "COLL10",
+        "COLL11",
+        "COLL12",
+        "COLL13",
+        "COLL15",
+        "COLL16",
+        "COLL17",
+        "COLL18",
+        "COLL19",
+        "COLL20",
+        "COLL21",
+        "COLL22",
+        "COLL23",
+        "COLL24",
+        "COLL25",
+        "EXT01",
+        "EXT02",
+        "EXT03",
+        "EXT04",
+        "EXT05",
+        "EXT06",
+        "EXT07",
+        "EXT08",
+        "EXT09",
+        "EXT10",
+        "EXT11",
+        "EXT12",
+        "EXT15",
+        "EXT16",
+        "EXT17",
+        "EXT18",
+        "EXT19",
+        "EXT24",
+        "EXT25",
+        "EXT30",
+        "WIT14"
+      ],
+      "related_record_ids": [
+        "TIH06"
+      ],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "mawardi_alam_nubuwwa",
+      "title": "Aʿlām al-nubuwwa",
+      "author": "Abū al-Ḥasan al-Māwardī",
+      "already_in_atlas": false,
+      "record_ids": [
+        "MAW01"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "maybudi_diwan_ali",
+      "title": "Sharḥ Dīwān ʿAlī (including Fawātiḥ)",
+      "author": "Qāḍī Mīr Ḥusayn al-Maybudī",
+      "already_in_atlas": true,
+      "record_ids": [],
+      "related_record_ids": [
+        "JRG03"
+      ],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "mufid_awail",
+      "title": "Awāʾil al-maqālāt",
+      "author": "al-Shaykh al-Mufīd",
+      "already_in_atlas": true,
+      "record_ids": [],
+      "related_record_ids": [
+        "TIH07"
+      ],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "qari_radd_wahda",
+      "title": "al-Radd ʿalā al-qāʾilīn bi-waḥdat al-wujūd",
+      "author": "Mullā ʿAlī al-Qārī",
+      "already_in_atlas": false,
+      "record_ids": [
+        "SN17"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "qunawi_miftah",
+      "title": "Miftāḥ ghayb al-jamʿ wa-l-wujūd",
+      "author": "Ṣadr al-Dīn al-Qūnawī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "NEW21",
+        "NEW22"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "qunawi_tusi_correspondence",
+      "title": "Qūnawī–Ṭūsī correspondence / al-Murāsalāt",
+      "author": "Ṣadr al-Dīn al-Qūnawī and Naṣīr al-Dīn al-Ṭūsī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "NEW37",
+        "NEW38",
+        "NEW39",
+        "NEW40",
+        "NEW41",
+        "NEW42",
+        "EXT26",
+        "EXT27",
+        "EXT28",
+        "EXT29"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "qushji_tajrid",
+      "title": "Sharḥ al-Tajrīd (the new commentary)",
+      "author": "ʿAlī al-Qūshjī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "T5",
+        "T11",
+        "T13",
+        "C31Q01",
+        "C31Q02",
+        "C31Q03",
+        "C31Q04",
+        "WIT14"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "qutb_shirazi_ishraq",
+      "title": "Sharḥ Ḥikmat al-ishrāq",
+      "author": "Quṭb al-Dīn Maḥmūd al-Shīrāzī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "SN10",
+        "SN11",
+        "SN12",
+        "SN13",
+        "SN14",
+        "QTS15",
+        "QTS16"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "razi_muhassal",
+      "title": "Muḥaṣṣal afkār al-mutaqaddimīn wa-l-mutaʾakhkhirīn",
+      "author": "Fakhr al-Dīn al-Rāzī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "T7R"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "shirazi_qawl_sadid",
+      "title": "al-Qawl al-sadīd fī sharḥ al-Tajrīd",
+      "author": "Muḥammad al-Ḥusaynī al-Shīrāzī",
+      "already_in_atlas": false,
+      "record_ids": [
+        "EXT13"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "siyuri_itimad",
+      "title": "al-Iʿtimād fī sharḥ Wājib al-iʿtiqād",
+      "author": "al-Miqdād al-Siyūrī",
+      "already_in_atlas": false,
+      "record_ids": [
+        "SYR01"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "suhrawardi_hayakil",
+      "title": "Hayākil al-nūr",
+      "author": "Shihāb al-Dīn al-Suhrawardī",
+      "already_in_atlas": true,
+      "record_ids": [],
+      "related_record_ids": [
+        "E1",
+        "E2"
+      ],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "taftazani_sharh_maqasid",
+      "title": "Sharḥ al-Maqāṣid",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "SN01",
+        "SN02",
+        "SN03",
+        "SN04",
+        "SN07",
+        "SN08",
+        "TAF01",
+        "TAF02",
+        "NEW01"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "taskoprizade_nahal",
+      "title": "al-Nahal wa-l-ʿalal fī taḥqīq aqsām al-ʿilal",
+      "author": "Taşköprüzāde Aḥmad Efendi",
+      "already_in_atlas": false,
+      "record_ids": [
+        "NEW16",
+        "NEW17",
+        "NEW18"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "tihrani_tawdih",
+      "title": "Tawḍīḥ al-murād",
+      "author": "Hāshim al-Ḥusaynī al-Ṭihrānī",
+      "already_in_atlas": false,
+      "record_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "TIH06",
+        "TIH07"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "tusi_tajrid",
+      "title": "Tajrīd al-iʿtiqād / Tajrīd al-kalām",
+      "author": "Naṣīr al-Dīn al-Ṭūsī",
+      "already_in_atlas": true,
+      "record_ids": [
+        "MATN210",
+        "MATN213",
+        "MATN572",
+        "ALH07",
+        "NEW08",
+        "NEW09",
+        "NEW10",
+        "NEW11",
+        "COLL07",
+        "COLL14",
+        "EXT20"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "yazdi_tajrid",
+      "title": "Ḥāshiya on Dawwānī’s old Tajrīd gloss",
+      "author": "Mullā ʿAbd Allāh al-Yazdī (al-Bahābādī)",
+      "already_in_atlas": false,
+      "record_ids": [
+        "WIT05",
+        "WIT06",
+        "WIT07",
+        "WIT08",
+        "WIT09",
+        "WIT10",
+        "C31Y01",
+        "C31Y02",
+        "C31Y03"
+      ],
+      "related_record_ids": [],
+      "status": "actual cited work"
+    },
+    {
+      "work_id": "dawwani_tajrid_jadida",
+      "title": "al-Ḥāshiya al-jadīda al-Jalāliyya",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "already_in_atlas": false,
+      "record_ids": [],
+      "related_record_ids": [],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "dashtaki_tajrid_first",
+      "title": "First Ṣadrī gloss on Qūshjī’s Tajrīd commentary",
+      "author": "Ṣadr al-Dīn Muḥammad al-Dashtakī",
+      "already_in_atlas": false,
+      "record_ids": [],
+      "related_record_ids": [],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "dashtaki_tajrid_second",
+      "title": "Second Ṣadrī gloss on Qūshjī’s Tajrīd commentary",
+      "author": "Ṣadr al-Dīn Muḥammad al-Dashtakī",
+      "already_in_atlas": false,
+      "record_ids": [],
+      "related_record_ids": [],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "dawwani_tajrid_ajadd",
+      "title": "al-Ḥāshiya al-ajadd al-Jalāliyya",
+      "author": "Jalāl al-Dīn al-Dawwānī",
+      "already_in_atlas": false,
+      "record_ids": [],
+      "related_record_ids": [],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "siyalkuti_mawaqif",
+      "title": "Ḥāshiya on Sharḥ al-Mawāqif",
+      "author": "ʿAbd al-Ḥakīm al-Siyālkūtī",
+      "already_in_atlas": true,
+      "record_ids": [],
+      "related_record_ids": [],
+      "status": "named contextual / pending collation work"
+    },
+    {
+      "work_id": "tusi_isharat",
+      "title": "Ḥall mushkilāt al-Ishārāt / Sharḥ al-Ishārāt",
+      "author": "Naṣīr al-Dīn al-Ṭūsī",
+      "already_in_atlas": true,
+      "record_ids": [],
+      "related_record_ids": [],
+      "status": "named contextual / pending collation work"
+    }
+  ],
+  "unresolved": [
+    "EXT12: Ibn Rushd original title not established",
+    "NEW30: al-Kātibī original title not established",
+    "SN05/SN09/NEW14: composite Mawāqif marginal voices unresolved",
+    "WIT07/C31Y02: reported probable Dashtakī; installment unresolved"
+  ]
+}

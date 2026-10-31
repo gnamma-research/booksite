@@ -209,3 +209,11 @@ body #kalam-timeline-app-v3 .ia-filter-empty{
 body #kalam-timeline-app-v3 .ia-filter-empty h3{font-size:14px;margin:0 0 5px}
 body #kalam-timeline-app-v3 .ia-filter-empty p{font-size:12px;line-height:1.5;color:var(--ia-muted);margin:0 0 11px}
 body #kalam-timeline-app-v3 .ia-filter-empty button{font-size:12px;min-height:36px;color:var(--ia-link)}
+
+
+.ia-reader-return{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:14px 18px;margin:8px 0 20px;border:1px solid var(--ia-line,#b7c1bd);border-radius:10px;background:var(--ia-panel,#e9eee9)}.ia-reader-return a,.ia-reader-links a{font-weight:600}.ia-reader-return span{font-size:12px}.ia-reader-links{padding:14px 0;border-block:1px solid var(--ia-line,#b7c1bd);margin:18px 0}
+
+#kalam-timeline-app-v3.ia-from-reader .gn-atlas-introduction:not([open]){display:none}
+#kalam-timeline-app-v3.ia-from-reader .gn-atlas-introduction{display:none!important}
+
+.ia-reader-return{position:sticky;top:0;z-index:50;background:var(--ia-panel)}.ia-from-reader .ia-layout{scroll-margin-top:75px}

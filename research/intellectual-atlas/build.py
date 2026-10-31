@@ -1,4 +1,4 @@
-"""Validate and synchronize the Gnamma intellectual atlas (revision 7.2).
+"""Validate and synchronize the Gnamma intellectual atlas (revision 8).
 Canonical data: downloads/intellectual-atlas-data.json.
 Do not use the older illustrated or offline editions to overwrite newer HTML.
 Run: python research/intellectual-atlas/build.py
@@ -46,11 +46,11 @@ assert "if(!event.shiftKey&&!horizontal" in script
 mughal=next(p for p in data['history']['periods'] if p['id']=='HL_P13')
 assert mughal['segments']==[[1526,1540],[1555,1858]]
 assert {n['id'] for n in data['nodes']} >= {'pythagoras_anchor','parmenides_poem','early_stoa_corpus','sextus_outlines'}
-assert data['revision']=='avicennian-extensions-7.2-2026-10-30'
+assert data['revision']=='tajrid-critical-links-8-2026-10-31'
 assert len(data['history'].get('networks',[])) == 5
 assert len(data['history'].get('periods',[])) == 49
 assert len(data['history'].get('events',[])) == 36
-assert len(source_ids)==359 and len(node_ids)==386 and len(edge_ids)==362
+assert len(source_ids)==374 and len(node_ids)==404 and len(edge_ids)==377
 assert {'plotinus_transmission','proclus_elements','aristotle_metaphysics','aristotle_physics','plato_timaeus','aristotle_categories'} <= {f['id'] for f in families}
 palette={'ancient','neoplatonic','ashari','maturidi','translation','christian','jewish','falsafa','avicennan','ishraqi','akbarian','mutazili','sunni','imami','sadrian','critical','context'}
 assert all(n.get('tradition') in palette for n in data['nodes'])
@@ -79,9 +79,9 @@ for p in sorted((ROOT/'downloads').iterdir()):
         downloads[p.name] = hashlib.sha256(p.read_bytes()).hexdigest()
 manifest = {
     'title': 'Texts in Time · Islamic Intellectual Atlas',
-    'revision': 'avicennian-extensions-7.2-2026-10-30',
+    'revision': 'tajrid-critical-links-8-2026-10-31',
     'status': 'working research',
-    'ui_revision': 'mobile-first-whole-range-7.1.2-2026-10-29',
+    'ui_revision': 'tajrid-reader-return-links-8-2026-10-31',
     'mobile_interface_note': 'Compact phone introduction, search-first controls, disclosed research/filters, inline family shortcuts; chart appears high on first screen.',
     'whole_range_note': 'Drag the six-dot grip from Whole atlas to restore a movable focus window, or tap another time on the overview to seek.',
     'date_marker_note': 'Marker is a dated event, bound, uncertainty window or distinct editing stage; label width is non-temporal.',
@@ -102,15 +102,16 @@ manifest = {
     'tahdhib_added_relationships': 26,
     'displayed_political_periods': len([p for p in data['history']['periods'] if p['id'] != 'HEP05']),
     'displayed_events': len(data['history']['events']),
-    'download_current_pdf': 'Intellectual_Atlas_Reference_Revision7.pdf',
-    'download_current_offline': 'Gnamma_Intellectual_Atlas_Offline_Revision7.zip',
+    'download_current_pdf': None,
+    'download_current_offline': 'Gnamma_Intellectual_Atlas_Offline_Revision8.zip',
     'individual_reign_rows': 0,
     'pdf_pages': {'illustrated_overview_legacy': 15, 'illustrated_reference_legacy': 204,
-                  'complete_updated_register': 84, 'focused_tahdhib_supplement': 9},
-    'pdf_note': ('The revision-7.2 PDF and offline ZIP are built from this canonical dataset by build_release.py. '
+                  'historical_revision7_register': 84, 'focused_tahdhib_supplement': 9},
+    'pdf_note': ('Revision 8 adds Tajrid critical-reader links. The current data and offline map include these additions; revision 7 PDF/ZIP are historical snapshots. '
                  'Historical PDFs from revisions 2 and 4 retain earlier scholarship and are marked legacy.'),
     'download_sha256': downloads,
 }
 (ROOT/'publication.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
 print(json.dumps({'entries': len(data['nodes']), 'relationships': len(data['edges']),
                   'textual_families': len(families), 'download_files': len(downloads)}))
+
