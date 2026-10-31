@@ -1,4 +1,5 @@
 (function(){'use strict';const V=window.AVR;if(!V||!V.pages)return;const P=V.pages,D=V.data,$=V.$,$$=V.$$,E=V.esc,H=V.head,I=V.icon;
+const notice=t=>'<div class="critical-notice">'+t+'</div>';
 const terms=[
 ['wujūd','وجود','Existence or actuality; distinguish the common concept from a particular existing being.'],
 ['māhiyya','ماهية','Quiddity, a thing considered with respect to what it is.'],
