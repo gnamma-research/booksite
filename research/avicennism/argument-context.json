@@ -633,6 +633,63 @@
         "subsequent result"
       ],
       "sourceGrade": "mediated-quotation"
+    },
+    "lah-making": {
+      "id": "lah-making",
+      "part": "Gawhar-i murād, Article II, Book III, Sections I–II",
+      "locator": "Persian printed pp.278–282, linked individually",
+      "question": "What is meant by ijād, takwīn, ibdāʿ and jaʿl, and does the maker directly produce quiddity, existence or the attribution of one to the other?",
+      "immediatePrior": "Book II of Gawhar examines the Necessary Existent and divine attributes; Book III opens the theory of divine action and production.",
+      "base": "Lāhījī reports divergent use of creation terms, then favors simple making of actual quiddity understood as something externally issued by its cause rather than making a separately real general concept of existence.",
+      "objections": "An existence-first thesis may merely rename the issued actuality; an attribution-first thesis threatens self-explanatory relata or indefinite regress. A fourth version, making a thing be its own essence, is rejected.",
+      "reply": "The meaning of existence is abstracted from the quiddity's actuality; production of the actual thing already explains why it exists. Avicenna's apricot formulation is quoted and interpreted by Lāhījī, NOT an independently collated Avicennian original.",
+      "continuation": "Section III pp.283–289 asks how the effect relates to the First, including a report and critique of accounts of waḥdat al-wujūd.",
+      "sections": [
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "extent": "Connected five-page working English across two distinct full historical sections, with source page links and voice tags. No complete Persian manuscript collation.",
+      "confidence": "contextual-rendering-checked-pages",
+      "sourceVoice": "Lāhījī himself, with philosophers/theologians compared and a reported Avicenna–Bahmanyār exchange",
+      "comparisons": [
+        "making",
+        "concept",
+        "one"
+      ],
+      "missing": "Independent Avicennian apricot source and cross-edition Persian collations; compare precise Lāhījī Shawāriq question instead of assuming textual identity."
+    },
+    "lah-unity": {
+      "id": "lah-unity",
+      "part": "Gawhar-i murād, Article II, Book III, Section III",
+      "locator": "Persian printed pp.283–289, linked individually",
+      "question": "In what sense does an effect proceed from its cause, and can divine unity of existence be understood without making all created individuals numerically identical?",
+      "immediatePrior": "Sections I–II established what is produced and distinguished the conceptual predicate 'exists' from an additional made entity.",
+      "base": "A report of the Sufis describes ta-jallī and unity; Lāhījī distinguishes experiential claims, conceptual reconstructions, the Necessary as self-subsistent ground and contingent realities as derivative.",
+      "objections": "An analogy with an indeterminate natural universal would require the Necessary Reality to receive finite determinations to exist; Lāhījī objects that necessary existence is precisely not dependent on such determinations.",
+      "reply": "Multiple created realities receive their existence through relation to one unconditioned reality; the text resists simply identifying that ground with each finite individual. A further speculative collective-unity analogy is attributed to unnamed authorities and not simply endorsed.",
+      "continuation": "Section IV pp.290–297 moves to the Rule of the One, separate intellects and Suhrawardī's fixed-star objection.",
+      "sections": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "extent": "Full seven-page bounded historical section in continuous page order as working English. Reports and commentary distinguished; not an independently collated Persian archetype.",
+      "confidence": "contextual-rendering-checked-pages",
+      "sourceVoice": "Lāhījī reports Sufi doctrine and philosophical reconstructions, objects to one analogy, gives a differentiated account and cites unnamed eminent writers",
+      "comparisons": [
+        "one",
+        "concept",
+        "making",
+        "giver"
+      ],
+      "missing": "Textual/terminological comparison with Ṣadrā's independent Asfār discussions; direct verification of cited Sufi/Akbarian passages."
     }
   },
   "tradition": {
@@ -1098,6 +1155,8 @@
   },
   "workSequence": [
     [
+      "lah-making",
+      "lah-unity",
       "lah-eman",
       "lah-eman-cont",
       "lah-element",
@@ -1105,5 +1164,6 @@
       "lah-temporal",
       "lah-divine"
     ]
-  ]
+  ],
+  "notes": "Gawhar II.III Sections I-VIII pp278–309 now have connected working English treatments in eight linked source files. Their historical printed sections remain separate; do not conflate this with all of the 758-page book or a manuscript-critical edition."
 }
