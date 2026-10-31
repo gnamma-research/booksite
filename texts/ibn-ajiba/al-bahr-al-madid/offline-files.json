@@ -110,5 +110,9 @@
   "reading-navigation-history.js",
   "style.css",
   "sw.js",
-  "ui-assets/gnamma-landscape.webp"
+  "ui-assets/gnamma-landscape.webp",
+  "book-atmosphere.css",
+  "ui-assets/aegean-depths.png",
+  "ui-assets/first-light.png",
+  "ui-assets/night-sea.png"
 ]

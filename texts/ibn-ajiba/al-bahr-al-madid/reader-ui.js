@@ -12,14 +12,21 @@ const icon=name=>{
  return '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-'+name+'"></use></svg>';};
 const button=(action,label,glyph)=>'<button type="button" data-ui="'+action+'" aria-label="'+E(label)+'" title="'+E(label)+'">'+icon(glyph)+'</button>';
 const palettes=[
- ['almohad','Almohad plaster',['#f3eee6','#fdfaf4','#82503d','#292d2a','#8b7350']],
- ['cordoba','Córdoba arches',['#f5f1e9','#fffdfa','#984d45','#2c2e30','#9b795c']],
- ['nasrid','Nasrid mineral',['#eef3f1','#fcfefa','#2e617b','#21323a','#a3864f']],
- ['zellij','Zellij green',['#f0f3ed','#fdfef9','#2b6b59','#27342e','#88865a']],
- ['gnamma','Gnamma landscape',['#bfa38a','#faf4e7','#35616b','#c5a88b','#332f2a']],
- ['gnamma-air','Gnamma · open landscape',['#bfa38a','#f4e5d4','#2e6570','#f8f3eb','#3b3832']]
+ ['tetouan','Tétouan Doorway',['#f5f4ed','#fffef9','#12635f','#70513d','#8a6a37']],
+ ['horizon','Mediterranean Horizon',['#edf6f4','#fcfffb','#075b83','#4d989e','#c5ad79']],
+ ['manuscript','Maghribī Manuscript',['#f4ecdc','#fff8e9','#81512e','#3c3027','#a17443']],
+ ['indigo','Indigo Night',['#151e37','#1c2943','#9eced4','#e7dfc9','#d0b779']]
 ];
-const uiDefaults={mode:'reading',focusApparatus:false,pageStyle:'quiet',palette:'almohad',appearance:'system',arabicFont:'amiri',englishFont:'original',fontScale:1,parallelSide:'right',stackedOrder:'top',showNotes:true,showTerms:true,showConcepts:true,showPersonalMarks:true};
+const homeScenes=[['first-light','First Light'],['night-sea','Night Sea'],['aegean','Aegean Depths']];
+function sceneButtons(){return homeScenes.map(([id,label])=>'<button type="button" data-home-scene="'+id+'" aria-pressed="'+(R.prefs.homeScene===id)+'"><span class="scene-swatch scene-'+id+'" aria-hidden="true"></span><span>'+label+'</span></button>').join('');}
+function enhanceHome(){
+ const hero=$('.home-hero');
+ if(hero&&!hero.querySelector('.book-seascape'))hero.insertAdjacentHTML('beforeend','<div class="book-seascape"><div class="sea-arch" role="img" aria-label="A quiet Mediterranean sea horizon"></div><div class="home-scene-picker" role="group" aria-label="Home atmosphere">'+sceneButtons()+'</div></div>');
+ $$('[data-home-scene]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.homeScene===R.prefs.homeScene)));
+ const sea=hero?.querySelector('.sea-arch');if(sea)sea.setAttribute('aria-label',({'first-light':'First light over the open Mediterranean','night-sea':'An indigo night sea beneath a crescent moon',aegean:'Deep cobalt Aegean water and a broad Mediterranean horizon'})[R.prefs.homeScene]);
+}
+
+const uiDefaults={mode:'reading',focusApparatus:false,pageStyle:'quiet',palette:'tetouan',homeScene:'aegean',appearance:'system',arabicFont:'amiri',englishFont:'original',fontScale:1,parallelSide:'right',stackedOrder:'top',showNotes:true,showTerms:true,showConcepts:true,showPersonalMarks:true};
 const existing=R.prefs;
 for(const [key,value] of Object.entries(uiDefaults))if(existing[key]===undefined)existing[key]=value;
 if(!existing.uiVersion){
@@ -28,6 +35,11 @@ if(!existing.uiVersion){
  let savedOrder=null;try{savedOrder=JSON.parse(localStorage.getItem('gnamma-bahr-vol1-settings')||'{}').order;}catch{}
  existing.parallelSide=savedOrder?(savedOrder==='ar'?'left':'right'):'right';existing.uiVersion=1;
 }
+// Retain existing preferences while replacing the borrowed Daruri palettes.
+const legacyPalettes={almohad:'tetouan',cordoba:'manuscript',nasrid:'horizon',zellij:'tetouan',gnamma:'horizon','gnamma-air':'horizon'};
+existing.palette=legacyPalettes[existing.palette]||existing.palette;
+if(!palettes.some(p=>p[0]===existing.palette))existing.palette='tetouan';
+if(!homeScenes.some(s=>s[0]===existing.homeScene))existing.homeScene='aegean';
 let navOpen=false,navTrigger=null,modalY=0,modalFrozen=false,lastDock='',modeBusy=false;
 const compact=()=>matchMedia('(max-width:940px), (max-height:540px)').matches;
 const items=[['read','Read','book'],['contents','Contents','toc'],['desk','Reading Desk','library'],
@@ -41,7 +53,7 @@ function install(){
  $('#topbar').innerHTML='<div id="readingControls" class="reading-controls-inner" aria-label="Navigation and reading controls">'+
  '<div class="gn-reader-global-leading"><button type="button" id="menuBtn" class="gn-top-tile" data-ui="menu" aria-label="Open or close Contents" aria-controls="leftNav" aria-expanded="false" title="Contents"></button>'+
  '<button type="button" id="gnTopHome" data-nav="home" aria-label="Home">'+icon('home')+'<span>Home</span></button><button type="button" id="gnTopRead" data-nav="read" aria-label="Read or resume the book">'+icon('book')+'<span>Read</span></button></div>'+
- '<div class="reading-tools"><div class="persistent-languages" role="group" aria-label="Visible languages; at least one must remain active"><button data-language="ar" title="Arabic: hidden, source marks, or unvowelled" aria-label="Toggle Arabic">AR</button><button data-language="en" title="English" aria-label="Toggle English">EN</button></div>'+
+ '<div class="reading-tools"><div class="persistent-languages" role="group" aria-label="Visible languages; at least one must remain active"><button data-language="ar" title="Arabic: hidden, source marks, or unvowelled" aria-label="Toggle Arabic"><span class="gn-language-label">AR</span></button><button data-language="en" title="English" aria-label="Toggle English"><span class="gn-language-label">EN</span></button></div>'+
  '<div class="reader-action-slot"><button type="button" id="focusToolbar" data-action="focus" aria-haspopup="dialog" aria-label="Reading mode: Reading, Focus or Continuous" title="Reading mode">'+icon('focus')+'<span class="sr-only" id="focus-label"></span></button>'+
  '<button type="button" id="readerSaveAction" data-ui="bookmark" aria-label="Bookmark section" title="Bookmark section">'+icon('bookmark')+'</button>'+
  '<div class="copy-group">'+button('copy-text','Copy text','copy')+'<button type="button" data-ui="copy-menu" aria-label="Copy options" title="Copy options" aria-haspopup="menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg></button></div>'+button('share','Share section','share')+'</div></div>'+
@@ -74,7 +86,7 @@ function setNav(open){
 function sync(){
  const p=R.prefs,root=document.documentElement;
  root.dataset.theme=p.appearance==='system'?(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'):p.appearance;
- root.dataset.palette=p.palette;root.dataset.pageStyle=p.pageStyle;root.dataset.arabicFont=p.arabicFont;root.dataset.englishFont=p.englishFont;
+ root.dataset.palette=p.palette;root.dataset.homeScene=p.homeScene;root.dataset.pageStyle=p.pageStyle;enhanceHome();root.dataset.arabicFont=p.arabicFont;root.dataset.englishFont=p.englishFont;
  root.style.setProperty('--en-size',(20*p.fontScale)+'px');root.style.setProperty('--ar-size',(28*p.fontScale)+'px');
  root.style.setProperty('--arabic',({'amiri':'"Amiri"','scheherazade':'"Scheherazade New"','noto':'"Noto Naskh Arabic"'})[p.arabicFont]+',serif');
  root.style.setProperty('--reader-english-font',({'original':'"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia','source-serif':'"Source Sans 3"','literata':'"Lexend"'})[p.englishFont]+',serif');
@@ -83,7 +95,7 @@ function sync(){
  document.body.classList.toggle('ui-hide-apparatus',R.view==='read'&&p.mode!=='reading'&&!p.focusApparatus);
  document.body.classList.toggle('ui-hide-notes',!p.showNotes);document.body.classList.toggle('ui-hide-terms',!p.showTerms);document.body.classList.toggle('ui-hide-personal-marks',p.showPersonalMarks===false);
  document.body.classList.toggle('ui-parallel-right',p.parallelSide==='right');document.body.classList.toggle('ui-stack-bottom',p.stackedOrder==='bottom');
- const ar=$('#topbar [data-language="ar"]');if(ar){ar.textContent='AR';ar.classList.toggle('has-vowels',p.ar&&p.marks==='source');ar.setAttribute('aria-pressed',String(p.ar));ar.setAttribute('aria-label','Arabic: '+(p.ar?(p.marks==='source'?'source vowel marks':'unvowelled'):'hidden')+'. Activate to cycle.');}
+ const ar=$('#topbar [data-language="ar"]');if(ar){if(!ar.querySelector('.gn-language-label'))ar.innerHTML='<span class="gn-language-label">AR</span>';ar.classList.toggle('has-vowels',p.ar&&p.marks==='source');ar.setAttribute('aria-pressed',String(p.ar));ar.setAttribute('aria-label','Arabic: '+(p.ar?(p.marks==='source'?'source vowel marks':'unvowelled'):'hidden')+'. Activate to cycle.');}
  const en=$('#topbar [data-language="en"]');if(en){en.setAttribute('aria-pressed',String(p.en));en.setAttribute('aria-label',p.en?'Hide English':'Show English');}
  if($('#focusToolbar')){$('#focusToolbar').setAttribute('aria-pressed',String(p.mode!=='reading'));$('#focus-label').textContent=p.mode;}
  $$('[data-nav]').forEach(b=>{const active=b.dataset.nav===R.view||(b.dataset.nav==='read'&&R.view==='read');if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
@@ -104,15 +116,17 @@ async function readingMode(mode){
 }
 function modes(){window.BahrModeMenu.openModeMenu($('#focusToolbar'));}
 function visuals(){
- R.sheet('Visuals','<div class="gn-visuals-panel">'+window.BAHR_UI_ASSETS.visuals+'</div><div class="personal-marks-setting"><label class="toggle-row"><input type="checkbox" id="private-marks" '+(R.prefs.showPersonalMarks!==false?'checked':'')+'> Show private Reading Desk marks beside the text</label><small>Private highlights remain visible in Focus reading.</small></div>','visuals');
+ R.sheet('Visuals','<div class="gn-visuals-panel">'+window.BAHR_UI_ASSETS.visuals+'<fieldset class="book-scene-settings"><legend>Home atmosphere</legend><div class="home-scene-picker" role="group" aria-label="Home atmosphere">'+sceneButtons()+'</div><small>Independent of the reading palette.</small></fieldset></div><div class="personal-marks-setting"><label class="toggle-row"><input type="checkbox" id="private-marks" '+(R.prefs.showPersonalMarks!==false?'checked':'')+'> Show private Reading Desk marks beside the text</label><small>Private highlights remain visible in Focus reading.</small></div>','visuals');
  syncVisuals();
 }
 function syncVisuals(){
  const p=R.prefs,attributes={'data-page-style-choice':p.pageStyle,'data-arabic-font-choice':p.arabicFont,'data-english-font-choice':p.englishFont,'data-parallel-side':p.parallelSide,'data-stacked-order':p.stackedOrder};
  for(const [attr,val] of Object.entries(attributes))$$('['+attr+']').forEach(b=>b.setAttribute('aria-pressed',String(b.getAttribute(attr)===val)));
  if($('#fontSizeLabel'))$('#fontSizeLabel').textContent=Math.round(p.fontScale*100)+'%';
- if($('#palettePicker'))$('#palettePicker').innerHTML=palettes.map(([id,name,colours])=>'<button type="button" class="palette-option" data-palette="'+id+'" aria-label="'+E(name)+'" title="'+E(name)+'" aria-pressed="'+(id===p.palette)+'"><span class="palette-swatches">'+colours.map(c=>'<span style="background:'+c+'"></span>').join('')+'</span><strong>'+E(name)+'</strong></button>').join('');
- if($('#settingsTheme'))$('#settingsTheme').innerHTML=['system','light','dark'].map(id=>'<button type="button" data-theme-choice="'+id+'" aria-pressed="'+(id===p.appearance)+'">'+id[0].toUpperCase()+id.slice(1)+'</button>').join('');
+ if($('#palettePicker')&&!$('#palettePicker').children.length)$('#palettePicker').innerHTML=palettes.map(([id,name,colours])=>'<button type="button" class="palette-option" data-palette="'+id+'" aria-label="'+E(name)+'" title="'+E(name)+'" aria-pressed="'+(id===p.palette)+'"><span class="palette-swatches">'+colours.map(c=>'<span style="background:'+c+'"></span>').join('')+'</span><strong>'+E(name)+'</strong></button>').join('');
+ $('[data-palette]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.palette===p.palette)));
+ if($('#settingsTheme')&&!$('#settingsTheme').children.length)$('#settingsTheme').innerHTML=['system','light','dark'].map(id=>'<button type="button" data-theme-choice="'+id+'" aria-pressed="'+(id===p.appearance)+'">'+id[0].toUpperCase()+id.slice(1)+'</button>').join('');
+ $('[data-theme-choice]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.themeChoice===p.appearance)));
 }
 function notice(label){$('#sheet-kicker').textContent=label;}
 async function font(key,value){
@@ -224,7 +238,7 @@ function saved(){
  const rows=R.desk.filter(x=>!x.archived&&x.r===lastDock);
  R.sheet('Your saved items','<div class="panel-nav">'+rows.map(x=>'<a href="'+R.readURL(x.r,x.anchor,x.lang)+'">'+icon(x.type==='bookmark'?'bookmark-filled':'notes')+' '+E(x.note||x.quote||x.type)+'</a>').join('')+'</div><button type="button" data-nav="desk">Manage in Reading Desk</button>','saved-items');
 }
-function help(){R.page('Help & guide','Read, study and keep your place.','<div class="help-steps"><h2>'+icon('book')+' Reading</h2><p>Ar cycles between source marks, hidden Arabic and unvowelled Arabic. En shows or hides English. At least one language remains visible. Source marks are retained from the supplied edition.</p><h2>'+icon('focus')+' Reading modes</h2><p>Reading shows one section. Focus reduces the controls and lets you choose whether apparatus remains below the text. Continuous includes all 389 sections. The centre of the bottom dock opens the section navigator.</p><h2>'+icon('search')+' Search & references</h2><p>Search Arabic, English and the scholarly reference layers. Dictionary entries retain their historical sources and exact occurrences. Closing a reference returns to your place.</p><h2>'+icon('library')+' Reading Desk</h2><p>Bookmark a section, or select text to highlight and annotate it. Your notes remain in this browser. Export a backup to transfer them, and use Import & merge to retain both collections.</p><h2>'+icon('editions')+' Editions & downloads</h2><p>Choose the supplied PDF editions, keep the complete HTML reader offline, or print your selected personal notes.</p><h2>'+icon('sliders')+' Visuals</h2><p>Choose page style, font, size, language order, six palettes and System, Light or Dark appearance. Layout choices for columns and stacked text are independent.</p></div>');}
+function help(){R.page('Help & guide','Read, study and keep your place.','<div class="help-steps"><h2>'+icon('book')+' Reading</h2><p>Ar cycles between source marks, hidden Arabic and unvowelled Arabic. En shows or hides English. At least one language remains visible. Source marks are retained from the supplied edition.</p><h2>'+icon('focus')+' Reading modes</h2><p>Reading shows one section. Focus reduces the controls and lets you choose whether apparatus remains below the text. Continuous includes all 389 sections. The centre of the bottom dock opens the section navigator.</p><h2>'+icon('search')+' Search & references</h2><p>Search Arabic, English and the scholarly reference layers. Dictionary entries retain their historical sources and exact occurrences. Closing a reference returns to your place.</p><h2>'+icon('library')+' Reading Desk</h2><p>Bookmark a section, or select text to highlight and annotate it. Your notes remain in this browser. Export a backup to transfer them, and use Import & merge to retain both collections.</p><h2>'+icon('editions')+' Editions & downloads</h2><p>Choose the supplied PDF editions, keep the complete HTML reader offline, or print your selected personal notes.</p><h2>'+icon('sliders')+' Visuals</h2><p>Choose page style, font, size, language order, four Moroccan and maritime palettes, three home scenes, and System, Light or Dark appearance. Layout choices for columns and stacked text are independent.</p></div>');}
 function enhanceDictionary(){
  const body=$('#sheet-body');if(!body||$('#sheet-kicker')?.textContent!=='HISTORICAL DICTIONARY'||body.dataset.enhanced==='yes')return;
  window.BahrParity?.dictionarySections(body,JSON.parse($('#sheet').dataset.savedReference||'{}').id);
@@ -242,7 +256,7 @@ function enhanceEditions(){
 }
 document.addEventListener('click',async event=>{
  const b=event.target.closest('button,a');if(!b)return;const d=b.dataset;
- const handled=d.ui||d.nav||d.mode||d.copyChoice||d.copyKind||d.pageStyleChoice||d.arabicFontChoice||d.englishFontChoice||d.parallelSide||d.stackedOrder||d.palette||d.themeChoice||d.editionTab||d.language||['focus','settings','menu'].includes(d.action)||['smallerType','largerType'].includes(b.id);
+ const handled=d.ui||d.nav||d.mode||d.copyChoice||d.copyKind||d.pageStyleChoice||d.arabicFontChoice||d.englishFontChoice||d.parallelSide||d.stackedOrder||d.homeScene||d.palette||d.themeChoice||d.editionTab||d.language||['focus','settings','menu'].includes(d.action)||['smallerType','largerType'].includes(b.id);
  if(!handled)return;event.preventDefault();event.stopImmediatePropagation();
  try{
   if(d.nav){setNav(false);R.closeSheet();if(d.nav==='read')return await R.resume();if(d.nav==='contents'){location.hash='#/contents';if(R.view==='contents')window.BahrParity.contentsPage();return;}if(d.nav==='help'){location.hash='#/help';return;}location.hash='#/'+d.nav;return;}
@@ -259,6 +273,7 @@ document.addEventListener('click',async event=>{
   if(d.englishFontChoice)return await font('englishFont',d.englishFontChoice);
   if(d.parallelSide){await set({parallelSide:d.parallelSide});return;}
   if(d.stackedOrder){await set({stackedOrder:d.stackedOrder});return;}
+  if(d.homeScene){await set({homeScene:d.homeScene});return;}
   if(d.palette){await set({palette:d.palette});notice(b.getAttribute('aria-label'));return;}
   if(d.themeChoice){await set({appearance:d.themeChoice});return;}
   if(b.id==='smallerType'||b.id==='largerType'){await set({fontScale:Math.min(1.5,Math.max(.8,+(R.prefs.fontScale+(b.id==='largerType'?.05:-.05)).toFixed(2)))});return;}

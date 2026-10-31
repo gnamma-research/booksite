@@ -13,6 +13,9 @@ on:
       - 'texts/ibn-ajiba/al-bahr-al-madid/**'
       - 'tests/ibn-ajiba/**'
       - '.github/workflows/ibn-ajiba-reader-qa.yml'
+concurrency:
+  group: ibn-ajiba-reader-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -42,7 +45,7 @@ jobs:
         if: github.event_name == 'push'
         run: |
           mkdir -p docs/ibnajiba6-review
-          cp qa-artifacts/reader-phone.png qa-artifacts/daruri-phone.png docs/ibnajiba6-review/
+          cp qa-artifacts/reader-phone.png qa-artifacts/daruri-phone.png qa-artifacts/reader-desktop.png qa-artifacts/book-themes.png qa-artifacts/home-desktop.png qa-artifacts/home-aegean.png qa-artifacts/home-first-light.png qa-artifacts/home-night-sea.png qa-artifacts/home-phone.png docs/ibnajiba6-review/
           git add "$BAHR_DIR/offline-reader.zip" "$BAHR_DIR/offline-files.json" docs/ibnajiba6-review/
           if ! git diff --cached --quiet; then
             git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Refresh verified Ibn Ajiba offline reader"

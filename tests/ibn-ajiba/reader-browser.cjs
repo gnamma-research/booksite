@@ -29,6 +29,17 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  assert.equal(await page.locator('.chapter').count(),4);
  await page.screenshot({path:path.join(out,'home-desktop.png')});
  pass('Home has all four surahs');
+ assert.equal(await page.locator('html').getAttribute('data-palette'),'tetouan');
+ for(const scene of ['first-light','night-sea','aegean']){
+  await page.locator('.home-hero [data-home-scene="'+scene+'"]').click();
+  assert.equal(await page.locator('html').getAttribute('data-home-scene'),scene);
+  assert.equal(await page.locator('html').getAttribute('data-palette'),'tetouan');
+  assert.equal(await page.locator('.home-hero [data-home-scene="'+scene+'"]').getAttribute('aria-pressed'),'true');
+ }
+ await page.reload();await page.locator('.sea-arch').waitFor();
+ assert.equal(await page.locator('html').getAttribute('data-home-scene'),'aegean');
+ await page.screenshot({path:path.join(out,'home-desktop.png')});
+ pass('Three maritime scenes persist independently of the Moroccan reading palette');
  for(const r of records){
   await go('read/'+r.id);await page.locator('#unit-'+r.id).waitFor();
   const actual=await page.locator('.ar-column p').allTextContents();
@@ -88,7 +99,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  const viewports=[{width:1440,height:1000},{width:390,height:844},{width:844,height:390},{width:320,height:568}];
  for(const viewport of viewports){
   await page.setViewportSize(viewport);
-  for(const palette of ['almohad','cordoba','nasrid','zellij','gnamma','gnamma-air']){
+  for(const palette of ['tetouan','horizon','manuscript','indigo']){
    for(const theme of ['light','dark']){
     await go('read/preface');await page.locator('#settingsBtn').click();
     await page.locator('button[data-palette="'+palette+'"]').click();
@@ -102,6 +113,13 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
     assert(controls.every(b=>b.x>=-1&&b.right<=viewport.width+1&&b.w>=22&&b.h>=34),'Toolbar fits '+viewport.width+': '+JSON.stringify(controls));
     const colour=await page.locator('#readerSaveAction').evaluate(el=>({button:getComputedStyle(el).color,icon:getComputedStyle(el.querySelector('svg')).stroke}));
     assert.equal(colour.button,colour.icon);
+    assert.equal(await page.locator('.ar-column').first().evaluate(el=>getComputedStyle(el).backgroundImage),'none');
+    assert.equal(await page.locator('body').evaluate(el=>getComputedStyle(el).backgroundImage),'none');
+    assert.equal(await page.locator('[data-language="ar"] .gn-language-label').textContent(),'AR');
+    if(viewport.width>=941){
+     const metrics=await page.locator('#focusToolbar,#readerSaveAction,[data-ui="copy-text"],[data-ui="share"],#searchBtn,#settingsBtn').evaluateAll(nodes=>nodes.map(b=>{const r=b.getBoundingClientRect(),i=b.querySelector('svg').getBoundingClientRect();return {id:b.id||b.dataset.ui,w:r.width,h:r.height,y:r.y,dx:Math.abs((r.left+r.width/2)-(i.left+i.width/2)),dy:Math.abs((r.top+r.height/2)-(i.top+i.height/2))};}));
+     assert(metrics.every(m=>m.w===44&&m.h===44&&m.y===metrics[0].y&&m.dx<=1&&m.dy<=1),'Desktop control geometry: '+JSON.stringify(metrics));
+    }
    }
   }
   if(!await page.locator('#leftNav').isVisible())await page.locator('#menuBtn').click();
@@ -113,7 +131,7 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
   await page.screenshot({path:path.join(out,'parity-'+viewport.width+'.png')});
   for(const route of ['home','study','indices','dictionary','research','editions']){await go(route);await overflow(route+' '+viewport.width);}
  }
- pass('Six palettes in Light/Dark; all menu icons and toolbar controls fit four viewport sizes');
+ pass('Four book-specific palettes in Light/Dark; all menu icons and toolbar controls fit four viewport sizes');
  await page.setViewportSize({width:390,height:844});await go('read/preface');
  await page.locator('#settingsBtn').click();
  for(const style of ['book','structured','quiet']){await page.locator('[data-page-style-choice="'+style+'"]').click();assert.equal(await page.locator('html').getAttribute('data-page-style'),style);}
@@ -250,6 +268,13 @@ function pass(name){checks.push(name);console.log('PASS '+name);}
  assert(dockBounds&&dockBounds.y>=0&&dockBounds.y+dockBounds.height<=844,'Reading dock stays inside the phone viewport: '+JSON.stringify(dockBounds));
  await preview.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
  await preview.screenshot({path:path.join(out,'reader-phone.png')});
+ await preview.setViewportSize({width:1440,height:1000});await preview.reload();await preview.locator('#unit-preface').waitFor();
+ await preview.evaluate(()=>{document.documentElement.style.scrollBehavior='auto';scrollTo(0,0)});
+ await preview.screenshot({path:path.join(out,'reader-desktop.png')});
+ await preview.locator('#settingsBtn').click();await preview.screenshot({path:path.join(out,'book-themes.png')});await preview.locator('#sheet-close').click();
+ await preview.goto(url+'#/home');await preview.locator('.sea-arch').waitFor();
+ for(const scene of ['first-light','night-sea','aegean']){await preview.locator('.home-hero [data-home-scene="'+scene+'"]').click();await preview.screenshot({path:path.join(out,'home-'+scene+'.png')});}
+ await preview.setViewportSize({width:390,height:844});await preview.screenshot({path:path.join(out,'home-phone.png')});
  const reference=await visual.newPage();
  await reference.goto(new URL('../../../daruri/#section=1',url).href);
  await reference.locator('#reader').waitFor({timeout:60000});
