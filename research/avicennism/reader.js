@@ -19,6 +19,8 @@ case 'domain':$('#main').innerHTML=P.domain(p[1]);break;
 case 'witnesses':$('#main').innerHTML=P.witnesses();break;
 case 'tradition':P.tradition();break;
 case 'method':P.contextMethod();break;
+case 'post-asfar':if(p[1])P.dossier(p[1]);else P.afterAsfar();break;
+case 'tajrid-overlap':P.tajridOverlap();break;
 case 'glossary':P.glossary();break;
 case 'search':P.search(route.query.get('q')||'');break;
 case 'desk':P.desk();break;
