@@ -474,21 +474,22 @@ window.GNAMMA_BOOK={
     },
     {
       "id": "II.13",
-      "title": "Individuality and its principles",
-      "arabic": "[فصل في التعين ...] أفراد النوع إنما تمتاز بالعوارض ... والتعين والتشخص ...",
-      "english": "Individuals of one species are distinguished by individuating qualifications. The subsequent discussion asks what individuation (taʿayyun) and particularisation (tashakhkhuṣ) amount to and whether the ground is a material principle, a further specification, or the impossibility of participation in the individual.",
+      "title": "Determination: its meanings and the real–considerational distinction",
+      "arabic": "فصل في التعين. أفراد النوع إنما تتميز بعوارض ربما تنتهي إلى ما يفيد الماهية، فبعد تلخيص أن التعين والتشخص هو تلك الماهية أو ما يفيدها أو كون الفرد بحيث لا يقبل الشركة أو عدم قبوله لها، وأن العدمي هو المعدوم أو العدم المضاف أو ما يدخل في مفهومه العدم، والوجودي بخلافه، وأن الحقيقي ما له ثبوت في نفس الأمر من غير شائبة فرض وتقدير، والاعتباري بخلافه، لا شبهة أن التعين وجودي أو عدمي…",
+      "english": "Chapter on determination. Individuals of a species are distinguished by accidents that may ultimately terminate in what specifies the quiddity. Once the suggested meanings of determination and individuation have been clarified—the quiddity itself, what gives rise to it, the individual’s being such that it cannot be shared, or its not admitting sharing—and once the negative has been explained as the nonexistent, a qualified nonexistence, or what includes nonexistence in its conception, with the positive as its contrary; and once the real has been explained as what is established in the matter itself (nafs al-amr) without supposition or estimation, with the considerational as its contrary, then it is beyond doubt that determination is positive or negative… [the sentence continues on printed p. 23].",
       "grade": "C",
       "gap": true,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "The Arabic is too broken here for a continuous translation; this paragraph is an interpretative abstract of the problem only."
+          "type": "Explanation",
+          "text": "These are alternative definitions of individual determination and individuation, not cumulative conditions. The real–considerational opposition depends upon what obtains in nafs al-amr, independently of mere stipulation."
         },
         {
           "type": "Sanandajī",
-          "text": "The general concept of determination can apply to many, although each individual's determination is proper to it. This is the starting point for distinguishing taʿayyun from essence, existence and unity (Taqrīb I:78–80)."
+          "text": "The fact that determination is a universal concept does not imply that an individual’s particular determination is shared numerically with other individuals (Taqrīb I:78–80)."
         }
-      ]
+      ],
+      "printedPages": "22"
     },
     {
       "id": "II.14",
