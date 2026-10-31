@@ -19,6 +19,9 @@ if(book?.id==="taqrib"){
    link:"../../al-taftazani/tahdhib-al-kalam/#u-I-01",
    linkLabel:"Read the corresponding Tahdhīb passage"});
  }
+ const staged=book.units.filter(u=>/^S\.02[1-5]$/.test(u.id)).sort((a,b)=>parseInt(a.id.split(".")[1])-parseInt(b.id.split(".")[1]));
+ for(let i=book.units.length-1;i>=0;i--)if(/^S\.02[1-5]$/.test(book.units[i].id))book.units.splice(i,1);
+ book.units.splice(Math.max(0,book.units.findIndex(u=>u.id==="S.00")+1),0,...staged);
 }
 if(layer){
  const target=(layer.units??={})["I.01"]??=([]);
@@ -29,5 +32,8 @@ if(layer){
      insights:[r.note]};
   if(existing)Object.assign(existing,u);else target.push(u);
  }
+ const staged=target.filter(u=>/^S\.02[1-5]$/.test(u.id)).sort((a,b)=>parseInt(a.id.split(".")[1])-parseInt(b.id.split(".")[1]));
+ for(let i=target.length-1;i>=0;i--)if(/^S\.02[1-5]$/.test(target[i].id))target.splice(i,1);
+ target.unshift(...staged);
 }
 })();
