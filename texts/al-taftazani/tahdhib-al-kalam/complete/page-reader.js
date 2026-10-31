@@ -4,7 +4,7 @@ if(!book?.pages?.length)return;
 const $=id=>document.getElementById(id),pages=book.pages;
 const found=location.hash.match(/^#p-(\d{1,3})$/);let current=found?Math.min(127,Math.max(15,+found[1])):15;
 let commentary=false,explanatory=true;
-const commentaryPages={"I.01":15,"I.02":15,"I.02a":16,"I.03":16,"I.06":17,"I.07":17,"II.01":17,"II.02":18,"II.03":18,"II.24":31,"IV.22":76,"V.20":93};
+const commentaryPages={"I.01":15,"I.02":15,"I.02a":16,"I.03":16,"I.06":17,"I.07":17,"II.01":17,"II.02":18,"II.03":18,"II.09":20,"II.10":21,"II.24":31,"IV.22":76,"V.20":93};
 const byPage={};
 for(const [key,items] of Object.entries(source)){const page=commentaryPages[key];if(!page)continue;(byPage[page]??=[]).push(...items);}
 const make=(name,cls,txt)=>{const el=document.createElement(name);if(cls)el.className=cls;if(txt!==undefined)el.textContent=txt;return el};
