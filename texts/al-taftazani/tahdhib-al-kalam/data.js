@@ -324,12 +324,12 @@ window.GNAMMA_BOOK={
           "text": "The objection about the relation between the knower and the known continues here; its exact wording is not supplied."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 640–645; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "The reasoning draws on universal and impossible objects of thought and on affirmative judgments concerning things absent externally: they require an account of what is apprehended, not an external phoenix or an externally existent contradiction."
         },
         {
           "type": "Explanation",
-          "text": "The reasoning draws on universal and impossible objects of thought and on affirmative judgments concerning things absent externally: they require an account of what is apprehended, not an external phoenix or an externally existent contradiction."
+          "text": "A thing can be represented in the intellect without the mind possessing externally the attribute represented. Al-Taftāzānī’s example is a believer’s conceiving unbelief without thereby becoming an unbeliever (Cairo p. 19)."
         }
       ]
     },
@@ -368,12 +368,12 @@ window.GNAMMA_BOOK={
           "text": "The denial applies to independent ontological establishment. It does not mean that the non-existent cannot be thought of or described; compare the author’s commentary on al-Nasafī."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 648–650; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "The controversy is over the independently established status of the nonexistent, not the possibility of discussing it meaningfully. Sanandajī gives the opposing arguments from distinctness and possibility before disputing their inference."
         },
         {
           "type": "Explanation",
-          "text": "The controversy is over the independently established status of the nonexistent, not the possibility of discussing it meaningfully. Sanandajī gives the opposing arguments from distinctness and possibility before disputing their inference."
+          "text": "The denial of independent thinghood and establishment to what does not exist is an ontological thesis. It does not entail that the nonexistent cannot be conceived or enter true judgments (Cairo p. 19)."
         }
       ]
     },
@@ -390,12 +390,12 @@ window.GNAMMA_BOOK={
           "text": "The missing connecting discussion must be restored before this is marked continuous. “Nafs al-amr” is not automatically identical with external existence."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 670–674; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "Informative affirmative predication joins identity of what the subject and predicate designate with a difference of concepts. Truth is correspondence to how the matter stands in itself (nafs al-amr), irrespective of the act of judging or conceiving it."
         },
         {
           "type": "Explanation",
-          "text": "Informative affirmative predication joins identity of what the subject and predicate designate with a difference of concepts. Truth is correspondence to how the matter stands in itself (nafs al-amr), irrespective of the act of judging or conceiving it."
+          "text": "Affirmative judgment requires identity of referent while allowing conceptual diversity of subject and predicate. The truth of the predication is conformity to nafs al-amr, what obtains in itself regardless of the individual judger (Cairo p. 20)."
         }
       ]
     },
@@ -410,6 +410,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Explanation",
           "text": "Sanandajī distinguishes the restrictive ‘with something’, ‘without anything’, and unrestricted ‘without condition’ considerations. The nonexistence claim attaches to the restrictive abstracted nature, not to any act of thinking about it (Taqrīb I:63–68)."
+        },
+        {
+          "type": "Sanandajī",
+          "text": "The three considerations of quiddity differ by their conditions of intellectual attention: with accompanying features, with their exclusion, and without either stipulation. The distinctions are used to explain predicability and instantiation, not three independent externally existing natures (Taqrīb I:63–83)."
         }
       ],
       "printedPages": "20–21",
@@ -494,12 +498,8 @@ window.GNAMMA_BOOK={
       "gap": true,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "The division is clear, but its first linking sentence is lost in the OCR; the bracketed explanation is provisional."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 755–788; original printed pagination and manuscript witness still need confirmation."
+          "type": "Sanandajī",
+          "text": "Essential necessity, impossibility and possibility are considered through a thing itself; their counterparts ‘through another’ must be distinguished from the contingent nature considered independently of its complete cause (Taqrīb I:84–88)."
         }
       ]
     },
@@ -534,8 +534,8 @@ window.GNAMMA_BOOK={
           "text": "The three different technical senses must not be translated indiscriminately as one modern modal operator."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 783–788; original printed pagination and manuscript witness still need confirmation."
+          "type": "Sanandajī",
+          "text": "Future-directed possibility and preparedness (imkān istiʿdādī) are distinct from intrinsic possibility. Preparedness is a disposition of a receptive subject and can vary in its proximity to actualisation (Taqrīb I:88–90)."
         }
       ]
     },
@@ -552,8 +552,8 @@ window.GNAMMA_BOOK={
           "text": "The difference between explanatory determination and a free act of preference is central and should not be erased."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 806–815; original printed pagination and manuscript witness still need confirmation."
+          "type": "Sanandajī",
+          "text": "The issue is whether a contingent requires an effective determinant because of its essential possibility, its temporal origination, or both. Al-Sanandajī treats causal preponderance, objections from freedom and arguments from regress as distinct steps (Taqrīb I:91–106)."
         }
       ]
     },
@@ -588,8 +588,8 @@ window.GNAMMA_BOOK={
           "text": "This remains a fragment; its importance lies in the possible distinction between causal origination and causal conservation."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 817–838; original printed pagination and manuscript witness still need confirmation."
+          "type": "Sanandajī",
+          "text": "The need of an effect at its first origination must be distinguished from the question whether its continued existence remains causally dependent. In both cases the explanatory ground, not merely the temporal description, is at issue (Taqrīb I:96–105)."
         }
       ]
     },
@@ -638,12 +638,8 @@ window.GNAMMA_BOOK={
       "gap": true,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "The list of technical relation-names is OCR-damaged; not all terms should be treated as verified."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 898–904; original printed pagination and manuscript witness still need confirmation."
+          "type": "Sanandajī",
+          "text": "The predicates one, many, eternal and originated arise in different respects. Numerical unity should not be inferred merely from unity of a common concept, and the opposition of one and many is not the opposition of being and nonbeing (Taqrīb I:107–112)."
         }
       ]
     },
