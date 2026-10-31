@@ -50,10 +50,27 @@ for item in dedup["records"]:
         for id_ in item["otherProjectRecordIds"]:
             assert id_ in tajrid["records"], f"Overlapping Tajrid record missing: {id_}"
 
-def section_count(md):
-    # The JavaScript parser starts an initial metadata section, followed by
-    # all Markdown level-2 headings.
-    return 1+len(re.findall(r"^##\s+",md,flags=re.M))
+def section_titles(md: str) -> list[str]:
+    """Mirror the reader's section handling, skipping empty heading containers."""
+    sections = []
+    title = "Edition and source status"
+    acc = []
+    def push():
+        if any(v.strip() for v in acc) or not sections:
+            sections.append(title)
+    for line in md.splitlines():
+        match = re.match(r"^##\s+(.+)",line)
+        if match:
+            push()
+            title = match.group(1)
+            acc = []
+        elif not re.match(r"^# [^#]",line):
+            acc.append(line)
+    push()
+    return sections
+
+def section_count(md: str) -> int:
+    return len(section_titles(md))
 def check_reference(ref):
     id_=ref["recordId"]
     assert id_ in record_map, f"Unknown referenced record {id_}"
@@ -61,6 +78,11 @@ def check_reference(ref):
     assert ref["section"]<section_count(record_map[id_]["md"]), (
         f"Out-of-range section index {id_}:{ref['section']}"
     )
+assert section_titles(record_map["lah-making"]["md"])[6].startswith("Page 280")
+assert section_titles(record_map["lah-making"]["md"])[7].startswith("Page 281")
+assert section_titles(record_map["lah-making"]["md"])[8].startswith("Page 282")
+assert section_titles(record_map["lah-unity"]["md"])[5].startswith("Page 286")
+assert section_titles(record_map["lah-unity"]["md"])[6].startswith("Page 287")
 for debate in links["debates"].values():
     assert len(debate["sequence"])>=2
     for item in debate["sequence"]:
