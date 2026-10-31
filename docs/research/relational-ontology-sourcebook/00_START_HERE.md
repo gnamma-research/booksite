@@ -52,3 +52,8 @@ Each claim and term must identify AUTHOR, WORK, EDITION, MATN/SHARH/HASHIYA, PAG
 ## Restart instruction
 
 In a new chat: **Read all linked Gnamma research files from this folder. Continue the Arabic sourcebook at the next unverified witness, particularly Mubārakshāh/Jurjānī on Ḥikmat al-ʿAyn pp. 38, 41, 43–44, 48; al-Iṣfahānī, Tasdīd I 406–407; and Bannānī I 102. Use full argumentative contexts. Update 01_FULL_CUMULATIVE_HANDOFF.md cumulatively with the new stage, witness details, changed claim statuses, and open problems. Do not introduce Thomism before the Arabic critical reconstruction.**
+
+
+## Stage 2.2 upstream source completed (2026-10-31)
+
+An additional argument-bounded upstream Arabic source is now archived: [08_DOSSIER_QUTB_RAZI_UNIVERSALS.md](08_DOSSIER_QUTB_RAZI_UNIVERSALS.md). Quṭb al-Dīn al-Rāzī, Risāla fī Taḥqīq al-Kulliyyāt (five-manuscript edited 2020 public Arabic text), explicitly differentiates *ṣūra* as an individual mental *kayfiyya* and as *al-maʿlūm* distinguished through the former; discusses three positions on whether genus/differentia are externally separate; criticizes inference from mental compositional distinctions to multiple outside existences. Source https://atharah.net/mission-in-achieving-totalities/ . This witness is an edited web publication, not independently re-collated manuscripts.
