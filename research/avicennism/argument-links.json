@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-31-explicit-links",
+  "version": "2026-11-01-post-asfar-differential-sources",
   "description": "Only these explicitly documented source/reply connections may drive primary recommended comparison. Keyword-based selection prohibited.",
   "debates": {
     "giver": {
@@ -667,6 +667,136 @@
           "explanation": "Different authors address aspects of divine agency but no direct dialogue is claimed."
         }
       ]
+    },
+    "presence": {
+      "question": "Can a soul know itself without a second representation?",
+      "status": "Direct eighteenth-century argument unit; the larger proof remains incomplete",
+      "scope": "Narāqī's objections and replies regarding self-awareness, sensation and the soul's faculties—not a duplicate Tajrīd mental-existence glossary.",
+      "sequence": [
+        {
+          "recordId": "nara-presence",
+          "section": 1,
+          "role": "Location in divine-knowledge proof",
+          "relation": "source-context",
+          "claim": "The first inquiry on divine knowledge uses cognition as a preliminary.",
+          "why": "Third proof continues beyond these pages."
+        },
+        {
+          "recordId": "nara-presence",
+          "section": 2,
+          "role": "Material faculty objection and answer",
+          "relation": "specific-objection-reply",
+          "claim": "A strong imagination does not automatically yield intellectual universality.",
+          "why": "Both 'if it is said' and 'I reply' are present."
+        },
+        {
+          "recordId": "nara-presence",
+          "section": 2,
+          "role": "Positive presential argument",
+          "relation": "same-author-inference",
+          "claim": "The uniquely self-present 'I' is not acquired through another universal image.",
+          "why": "Regress argument is explicit."
+        },
+        {
+          "recordId": "nara-presence",
+          "section": 2,
+          "role": "Presence of pain and instruments",
+          "relation": "authorial-continuation",
+          "claim": "Immediate pain and a special relation to bodily faculties extend the account.",
+          "why": "Printed p.27 continues onto p.28, not treated as complete."
+        },
+        {
+          "recordId": "nara-presence",
+          "section": 4,
+          "role": "Distinct later development",
+          "relation": "editorial-differential",
+          "claim": "The problem of knowledge by presence exceeds the baseline Tajrīd question about mental forms.",
+          "why": "Direct Ṣadrā comparison remains undone."
+        }
+      ],
+      "links": [
+        {
+          "from": "nara-presence",
+          "to": "nara-second",
+          "kind": "same-author-different-work",
+          "explanation": "Narāqī's second-intention discussion is a different text and question."
+        }
+      ],
+      "tajridBaseline": "07",
+      "warnings": [
+        "Al-Asfār original locus not collated.",
+        "Narāqī's whole proof of divine knowledge not translated.",
+        "Printed source only, no manuscript stemma."
+      ]
+    },
+    "motion-subject": {
+      "question": "Can substantial motion retain a numerically persistent subject?",
+      "status": "Composite printed witness, incomplete middle pages and separate modern notes",
+      "scope": "Avicenna Physics II.3's specific dilemma and the later answer locating movement in a flowing substantial existence.",
+      "sequence": [
+        {
+          "recordId": "sabz-motion",
+          "section": 1,
+          "role": "Inferred inherited subject problem",
+          "relation": "prior-question",
+          "claim": "What persists when the category of substance itself is moving?",
+          "why": "Earlier ghurar on matter and form are relevant."
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 2,
+          "role": "Opening verses of Sabzavārī",
+          "relation": "authorial-verse",
+          "claim": "Substantial movement is described as a flowing form with a persisting material principle.",
+          "why": "Metrical transcription is imperfect."
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 4,
+          "role": "Quoted Avicennian dilemma",
+          "relation": "mediated-older-objection",
+          "claim": "If species stays, change is accidental; otherwise every phase brings another substance.",
+          "why": "Avicenna's Physics II.3 is quoted, not independently collated here."
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 3,
+          "role": "Flowing-substance answer",
+          "relation": "layered-printed-reply",
+          "claim": "The motion's subject is its intrinsically flowing actual existence.",
+          "why": "A composite original/gloss edition requires author separation."
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 5,
+          "role": "Form as such versus particular form",
+          "relation": "modern-gloss-layer-present",
+          "claim": "Matter depends on some actual form but not necessarily this individual form.",
+          "why": "Explicit (ح.ح) notes belong to Ḥasan Ḥasanzāda Āmulī."
+        },
+        {
+          "recordId": "ch03",
+          "section": 2,
+          "role": "Editorial comparison to Ṣadrā and Lāhījī",
+          "relation": "secondary-analysis",
+          "claim": "An earlier synthesis introduces the older disagreement.",
+          "why": "Not a direct independent witness."
+        }
+      ],
+      "links": [
+        {
+          "from": "sabz-motion",
+          "to": "ch03",
+          "kind": "editorial-cross-reference-not-textual-dependence",
+          "explanation": "The Sabzavārī printing preserves its own quoted Avicennian objection; the chapter is a modern reconstruction."
+        }
+      ],
+      "tajridBaseline": "18",
+      "warnings": [
+        "Missing source pages 303–304.",
+        "Modern Ḥasanzāda notes interwoven.",
+        "Cannot certify a complete ghurar translation."
+      ]
     }
   },
   "domainEvidence": {
@@ -812,6 +942,12 @@
           "section": 2,
           "level": "primary passage",
           "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "nara-presence",
+          "section": 2,
+          "level": "bounded post-Ṣadrian source",
+          "reason": "A direct sequence on presential self-awareness; full divine-knowledge proof continues after checked page 27."
         }
       ],
       "comparative": [
@@ -828,7 +964,7 @@
           "reason": "This is comparison or context; not a separately authenticated primary text"
         }
       ],
-      "gap": "Original-Siyālkūtī and separate late glosses unverified."
+      "gap": "Original-Siyālkūtī and separate late glosses unverified. Narāqī's ensuing proof is not completely translated."
     },
     "causation": {
       "direct": [
@@ -904,6 +1040,12 @@
           "section": 1,
           "level": "primary passage",
           "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 4,
+          "level": "specific older objection",
+          "reason": "A reported Avicennian reason against gradual substantial form, not the Giver of Forms thesis."
         }
       ],
       "comparative": [
@@ -935,6 +1077,12 @@
           "section": 1,
           "level": "primary passage",
           "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 5,
+          "level": "layered post-Ṣadrian reception",
+          "reason": "Matter/form problem in ongoing substantial movement."
         }
       ],
       "comparative": [
@@ -966,6 +1114,18 @@
           "section": 3,
           "level": "primary passage",
           "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 4,
+          "level": "layered printed source",
+          "reason": "Avicenna Physics II.3 dilemma quoted in a later annotated source."
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 5,
+          "level": "layered printed source",
+          "reason": "Flowing-substantial-existence reply; modern annotation layers require separation."
         }
       ],
       "comparative": [
@@ -976,7 +1136,7 @@
           "reason": "This is comparison or context; not a separately authenticated primary text"
         }
       ],
-      "gap": "The distinct Khayrābādī source is mediated, not evidence for Ṣadrian substantial motion."
+      "gap": "The distinct Khayrābādī source is mediated, not evidence for Ṣadrian substantial motion. Sabzavārī's intervening pp.303–304 are uncollated."
     },
     "modality": {
       "direct": [
@@ -1120,6 +1280,12 @@
           "section": 1,
           "level": "primary passage",
           "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "nara-presence",
+          "section": 2,
+          "level": "bounded post-Ṣadrian source",
+          "reason": "A direct sequence on presential self-awareness; full divine-knowledge proof continues after checked page 27."
         }
       ],
       "comparative": [
@@ -1130,7 +1296,7 @@
           "reason": "This is comparison or context; not a separately authenticated primary text"
         }
       ],
-      "gap": "Avicenna's al-Nafs and Sadrian/Jilwa psychology require extensive source translation."
+      "gap": "Avicenna's al-Nafs and Sadrian/Jilwa psychology require extensive source translation. Narāqī's ensuing proof is not completely translated."
     },
     "knowledge": {
       "direct": [
@@ -1151,6 +1317,12 @@
           "section": 1,
           "level": "primary passage",
           "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "nara-presence",
+          "section": 2,
+          "level": "bounded post-Ṣadrian source",
+          "reason": "A direct sequence on presential self-awareness; full divine-knowledge proof continues after checked page 27."
         }
       ],
       "comparative": [
@@ -1167,7 +1339,7 @@
           "reason": "This is comparison or context; not a separately authenticated primary text"
         }
       ],
-      "gap": "Active Intellect epistemic role and real intentional relation require further primary source."
+      "gap": "Active Intellect epistemic role and real intentional relation require further primary source. Narāqī's ensuing proof is not completely translated."
     },
     "imagination": {
       "direct": [],
@@ -1201,6 +1373,12 @@
           "section": 1,
           "level": "editorial/contextual discussion",
           "reason": "This is comparison or context; not a separately authenticated primary text"
+        },
+        {
+          "recordId": "nara-presence",
+          "section": 1,
+          "level": "preliminary not complete conclusion",
+          "reason": "Narāqī's argument on self-awareness is preparatory to a longer divine-knowledge proof."
         }
       ],
       "gap": "No independent direct comparative proof of God's knowledge of particulars yet."
