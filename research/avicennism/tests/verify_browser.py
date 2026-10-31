@@ -58,8 +58,16 @@ async def run(browser_name="chromium",width=1440,height=900):
         assert await page.locator(".tradition-family").count()==16
         assert await page.get_by_text("No direct source unit currently edited from this stream.").count()>=5
         await page.goto(BASE+"#domain/providence",wait_until="domcontentloaded")
-        await page.wait_for_function("()=>document.querySelector('#main')?.textContent.includes('No direct')")
-        assert "No direct" in await page.locator("#main").inner_text()
+        await page.wait_for_timeout(250)
+        domain_text=await page.locator("#main").inner_text()
+        if "No direct" not in domain_text:
+            print("PROVIDENCE_DIAGNOSTIC",{
+                "url":page.url,
+                "headings":await page.locator("#main h1").all_text_contents(),
+                "excerpt":domain_text[:500],
+                "page_errors":errors[-4:],
+            },flush=True)
+        assert "No direct" in domain_text, "Missing truthful empty-primary-state on provenance domain"
         await page.goto(BASE+"#method",wait_until="domcontentloaded")
         await page.wait_for_function("()=>document.querySelector('#main')?.textContent.includes('Minimum unit')")
         await page.goto(BASE+"#full/lah-making",wait_until="domcontentloaded")
