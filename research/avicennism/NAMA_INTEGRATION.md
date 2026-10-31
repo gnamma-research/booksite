@@ -3,6 +3,12 @@
 **Destination:** NAMA website → **Research** section, alongside the *Tajrīd* sourcebook.  
 **Current constraint:** the available GitHub connection is to `gnamma-research/booksite`, **not to NAMA**. No independent NAMA repository, domain, or writable site backend has been confirmed. This file provides installable source; it does not claim NAMA's live website has been updated.
 
+## Stage 8 source context and nonduplication update
+
+The portable reader now includes **22 historical source units (6 baseline, 15 later, one mediated), ten editorial chapters, sixteen historical transmission routes, ten explicitly located philosophical argument chains and twelve post-Asfār change dossiers**. In particular, a consecutive **32-page working English interpretation of Lāhījī's independent *Gawhar-i murād* Book III Sections I–VIII, pp.278–309** replaces isolated brief extracts. The textual edition identifies authorial voices, preceding premise, objection, reply, source locations and next textual step. Original Persian and Arabic remain **selected anchors**, not complete aligned manuscripts.
+
+For overlap with the separate **Tajrīd reader**, link existing sourcebook passages rather than treating the same printed pages as independent source witnesses. The registered shared pages are *Shawāriq* I:90–91 and *Maqāṣid* p.79; a different passage of the same work is not automatically duplication. The integrated reader now exposes dedicated **Tajrīd overlap** and **After-Asfār transformations** routes.
+
 ## Portable installation
 
 There are two equivalent delivery formats:
