@@ -37,7 +37,7 @@ assert all(r["sourceUrl"].startswith("http") for r in allrecords)
 assert all(set(t["records"]).issubset(set(ids)) for t in extra["themes"])
 assert all(set(t["records"]).issubset(set(ids)) for t in extra["debates"])
 assert len(set(t["id"] for t in extra["themes"]))==20
-assert len(set(t["id"] for t in extra["debates"]))==10
+assert len(set(t["id"] for t in extra["debates"]))==12
 
 class Parse(HTMLParser):
     def __init__(self):
