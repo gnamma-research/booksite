@@ -85,29 +85,30 @@ window.GNAMMA_BOOK={
     {
       "id": "L.05",
       "title": "Relations between two universals",
-      "arabic": "وإلا فإن تصادقا كلًّي ا من، الكليان إن تفارقا كلًّي ا فمتباينان:فصل أو من جانب واحد فأعم، ونقيضاهما كذلك،الجانبين فمتساويان وإلا فمن وجه وبين نقيضيهما، ونقيضاهما بالعكس،وأخص مطلًقا وهو، الُجْزِئي للأخص من الشيء: وقد يقال.تباين جزئي كالمتباينين .أعم",
-      "english": "Chapter. If two universals are entirely disjoint, they are mutually exclusive [mutabāyinān]. Otherwise, if the individuals falling under them coincide universally on both sides, they are coextensive [mutasāwiyān], and their contradictories are likewise coextensive. If coincidence occurs universally on one side alone, one is absolutely more general and the other absolutely more specific [aʿamm wa-akhaṣṣ muṭlaqan], while their contradictories have the reverse relation. Otherwise they overlap in some respect [min wajh], and there is partial exclusion between their contradictories, as is also the case with two disjoint universals. A term may also be called particular in relation to another, when it is more specific than the other; this relative particular is more general [than the absolutely particular as previously defined].",
+      "arabic": "والكليان إن تفارقا كلياً فمتباينان، وإلا فإن تصادقا كلياً من الجانبين فمتساويان ونقيضاهما كذلك، أو من جانب فأعم وأخص مطلقاً ونقيضاهما بالعكس، وإلا فمن وجه، وبين نقيضيهما تباين جزئي كالمتباينين. وقد يقال الجزئي للأخص وهو أعم.",
+      "english": "If two universals are entirely separate in extension, they are disjoint. Otherwise, if they coincide in their instances universally in both directions, they are coextensive, and their contradictories are likewise coextensive. If the inclusion is universal in only one direction, one is absolutely more general and the other absolutely more specific, while the relation between their contradictories is reversed. Otherwise they overlap in some respects; their contradictories exhibit partial exclusion, as do those of disjoint universals. The term ‘particular’ may also designate what is more specific relative to another, and in this relative sense it extends beyond the absolute particular.",
       "notes": [
         {
-          "type": "Source",
-          "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+          "type": "Explanation",
+          "text": "These are logical relations between ranges of predication, not claims that the universals are numerically separate entities."
         }
       ],
       "grade": "B",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "5"
     },
     {
       "id": "L.06",
       "title": "The five predicables: genus",
-      "arabic": "وهو المقول على كثيرين مختلفين، الِجْنس: الأول.والكليات خمس بالحقائق في جواب ما هو؟ فإن كان الجواب عن الماهية وعن ،بعض مشاركاتها هو الجواب عنها وعن الكل فقريب كالحيوان .وإلا فبعيد كالجسم النامي",
-      "english": "There are five universals [the five predicables]. First: Genus [jins]. This is what is predicated of many things differing in essence [ḥaqāʾiq] in answer to the question “What is it?” If it provides the answer concerning an essence and some of its associates in the same way that it provides the answer concerning all of them, it is a proximate genus [jins qarīb], such as animal. Otherwise it is a remote genus [jins baʿīd], such as growing body [jism nāmī].",
+      "arabic": "والكليات خمس: الأول الجنس، وهو المقول على الكثرة المختلفة الحقيقة في جواب ما هو، فإن كان الجواب عن الماهية وعن بعض مشاركاتها هو الجواب عنها وعن الكل فقريب كالحيوان، وإلا فبعيد كالجسم النامي.",
+      "english": "The five predicables are as follows. First, genus: what is predicated of many things differing in their specific natures in answer to ‘What is it?’ If the answer, for a quiddity and some of the things sharing its genus, is also the answer for all such sharers, it is a proximate genus, such as ‘animal’; otherwise a remote genus, such as ‘growing body’.",
       "notes": [
         {
-          "type": "Source",
-          "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+          "type": "Explanation",
+          "text": "Genus is predicable of distinct specific natures; the distinction between proximate and remote is relative to the classification being made."
         },
         {
           "type": "Explanation",
@@ -116,19 +117,20 @@ window.GNAMMA_BOOK={
       ],
       "grade": "B",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "5"
     },
     {
       "id": "L.07",
       "title": "Species, differentia, property and common accident",
-      "arabic": "وهو المقول على كثيرين متفقين بالحقائق في جواب ما، الَّن ْوع:الثاني هو؟ وقد يقال على الماهية المقول عليها وعلى غيرها الِجْنس في وبينهما،جواب ما هو؟ ومختص بالاسم الإضافي كالأول بالحقيقي لتصادقهما على الإنسان وتفارقهما في،عموم وخصوص من وجه ثم الأجناس قد تترتب متصاعدة إلى العالي.الحيوان والنقطة والأنواع متنازلة إلى السافل،كالجوهر ويسمى جنس الأجناس وهو، الَفْص ل: الثالث. وما بينهما متوسطات،ويسمى نوع الأنواع المقول على الشيء في جواب أي شيء هو في ذاته؟ فإن ميزه عن وإذا نسب إلى ما.المشاركات في الِجْنس القريب فقريب وإلا فبعيد والمقوم للعالي مقوم للسافل، وإلى ما يميزه عنه فمقسم،يميزه فمقوم وهو الخارج المقول، الخاصة: الرابع. والمقسم بالعكس،ولا عكس وهو، الَعَرض العام: الخامس.على ما تحت حقيقة واحدة فقط وكل منهما إن امتنع انفكاكه عن.الخارج المقول عليها وعلى غيرها بين يلزم تصوره من،الشيء فلازم بالنظر إلى الماهية أو الُوُجود وإلا،تصور الملزوم أو من تصورهما الجزم باللزوم وغير بين بخلافه .فعرض مفارق يدوم أو يزول بسرعة أو بطء",
-      "english": "Second: Species [nawʿ]. This is what is predicated of many individuals agreeing in essence in answer to the question “What is it?” The term is also applied to an essence of which—and of something else—a genus is predicated in answer to that question. This second sense is distinctive of relative species, just as the first is distinctive of real species [nawʿ ḥaqīqī]. Their relation is one of overlap in some respects: they meet in human, and separate in animal and point. Genera may be ordered upwards toward the highest genus, such as substance [jawhar], which is called the genus of genera. Species may be ordered downwards toward the lowest species, called the species of species; those between are intermediate. Third: Differentia [faṣl]. This is what is predicated of a thing in answer to “Which sort of thing is it in itself?” If it distinguishes the thing from those sharing its proximate genus, it is a proximate differentia; otherwise a remote differentia. Considered relative to that which it differentiates and constitutes, the differentia is constitutive [muqawwim]; considered relative to what it differentiates it from, it is divisive [muqassim]. Whatever constitutes a higher [kind] also constitutes a lower one, but not conversely; in the case of what divides, the direction is reversed. Fourth: Property [khāṣṣa]. This is an attribute extrinsic to the essence, predicated of what falls under just one essence. Fifth: Common accident [ʿaraḍ ʿāmm]. This is an extrinsic attribute predicated of members of that essence as well as of others. Either kind, if incapable of separation from the thing, is a necessary concomitant [lāzim], considered with respect to essence or existence. A concomitant is evident [bayyin] if conceiving the subject alone, or conceiving the two together, suffices for certainty concerning the implication; otherwise it is non-evident [ghayr bayyin]. Where separation is possible, the attribute is a separable accident [ʿaraḍ mufāriq], which may endure or may disappear quickly or slowly.",
+      "arabic": "الثاني النوع، وهو المقول على الكثرة المتفقة الحقيقة في جواب ما هو. وقد يقال على الماهية الكلية المقول عليها وعلى غيرها الجنس في جواب ما هو، ويختص هذا النوع باسم الإضافي كالأول بالحقيقي، وبينهما عموم من وجه لتصادقهما على الإنسان وتفارقهما في الحيوان والنقطة. ثم الأجناس قد تترتب متصاعدة إلى العالي كالجوهر ويسمى جنس الأجناس، والأنواع قد تترتب متنازلة إلى السافل ويسمى نوع الأنواع، وما بينهما متوسطات. الثالث الفصل، وهو المقول على الشيء في جواب أي شيء هو في ذاته، فإن ميزه عن المشاركات في الجنس القريب فقريب وإلا فبعيد، وإذا نسب إلى ما يميزه فمقوم وإلى ما يميزه عنه فمقسم، والمقوم للعالي مقوم للسافل ولا عكس، والمقسم بالعكس. الرابع الخاصة، وهو الخارج المقول على ما تحت حقيقة واحدة فقط. الخامس العرض العام، وهو الخارج المقول عليها وعلى غيرها، وكل منهما إن امتنع انفكاكه عن الشيء فلازم بالنظر إلى الماهية أو الوجود؛ بين يلزم تصوره من تصور الملزوم أو من تصورهما الجزم باللزوم، وغير بين بخلافه. وإلا فعرض مفارق يدوم أو يزول بسرعة أو بطء.",
+      "english": "Second, species: what is predicated of many things agreeing in specific nature in answer to ‘What is it?’ The word also applies to a quiddity of which, and of something else, a genus is predicated; the latter is a relative species, the former a real species. They overlap in human nature, while ‘animal’ and ‘point’ distinguish their applications. Genera can ascend toward a highest genus such as substance; species descend toward a lowest species, with intermediate ranks between. Third, differentia: what is predicated in answer to ‘What sort of thing is it in itself?’ It is proximate when it distinguishes something from those sharing its proximate genus, otherwise remote. Relative to what it constitutes it is constitutive, and relative to what it divides from it is divisive. What constitutes a higher kind also constitutes its subordinate kind, but not conversely; for what divides, the direction is reversed. Fourth, property: an extrinsic predicable belonging exclusively under one specific nature. Fifth, common accident: an extrinsic predicable applicable also to other natures. Either may be inseparable from its subject, in which case it is a concomitant, considered through essence or existence. An evident concomitant is known as following from the conception of the subject alone or from conceiving subject and concomitant together; otherwise it is non-evident. What may separate is a separable accident, whether enduring or departing quickly or slowly.",
       "notes": [
         {
-          "type": "Source",
-          "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+          "type": "Explanation",
+          "text": "The real versus relative species distinction and the five predicables should not be confused with a theory of five independent constituents of substances."
         },
         {
           "type": "Explanation",
@@ -137,23 +139,24 @@ window.GNAMMA_BOOK={
       ],
       "grade": "B",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "5–7"
     },
     {
       "id": "L.08",
       "title": "Three senses of ‘universal’",
-      "arabic": "مفهوم الُكِّلي يسمى كلًّي ا منطقًّي ا ومعروضه طبيعًّي ا والمجموع:خاتمة والحق أن وجود الطبيعي بمعنى وجود، وكذا الأنواع الخمسة،عقلًّي ا .أشخاصه",
-      "english": "Conclusion. The concept of universality is called the logical universal [al-kullī al-manṭiqī]; that of which universality is predicated, the natural universal [al-kullī al-ṭabīʿī]; and their combination, the intellectual universal [al-kullī al-ʿaqlī]. The same distinction applies to the five predicables. The correct position is that the existence of the natural universal means the existence of its individual instances.",
+      "arabic": "خاتمة. مفهوم الكلي يسمى كلياً منطقياً ومعروضه طبيعياً والمجموع عقلياً، وكذا الأنواع الخمسة، والحق وجود الطبيعي بمعنى وجود أشخاصه.",
+      "english": "Conclusion. The concept of universality is the logical universal; the nature of which universality is predicated is the natural universal; and the two considered together are the intellectual universal. The same distinction applies to the five predicables. The correct account of the natural universal’s existence is that its individual instances exist.",
       "notes": [
+        {
+          "type": "Explanation",
+          "text": "Natural universality is not an additional independently subsisting universal: the existent nature is realised in its individuals; logical universality concerns its predicability."
+        },
         {
           "type": "Interpretation",
           "text": "The natural universal exists through its individuals, not as a separated independently existing object. This bears on the kalām discussion of essence and mental being."
-        },
-        {
-          "type": "Source",
-          "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
         },
         {
           "type": "Explanation",
@@ -162,19 +165,20 @@ window.GNAMMA_BOOK={
       ],
       "grade": "B",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": "../../al-taftazani/tahdhib-al-kalam/#u-II-01",
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "7"
     },
     {
       "id": "L.09",
       "title": "Definitional accounts",
-      "arabic": "ويشترط أن، معّرف الشيء ما يقال عليه لإفادة تصوره:فصل فلا يصح بالأعم والأخص والمساوي،يكون مساوًيا له وأجلى وبالخاصة، والتعريف بالفصل القريب حد.معرفة وجهالة والأخفى ولم يعتبروا. فإن كان مع الِجْنس القريب فتام وإلا فناقص،رسم وهو، وقد أجيز في الناقص أن يكون أعم كاللفظي،بالعرض العام .ما يصدق به تفسير مدلول اللفظ",
-      "english": "Chapter. A definitional account [muʿarrif] of a thing is what is predicated of it for the purpose of furnishing its conception. It must be coextensive with the thing and clearer than it. It is therefore invalid to define by something more general, more specific, equally known or unknown, or more obscure. A definition formulated through the proximate differentia is an essential definition [ḥadd]; one formulated through a property is a description [rasm]. If joined with the proximate genus, either is complete [tāmm]; otherwise it is incomplete [nāqiṣ]. They do not count the common accident [as furnishing the appropriate definitional factor]. Incomplete descriptions have sometimes been permitted to be more general, as with a verbal explanation [taʿrīf lafẓī], by which the meaning signified by an expression is explained.",
+      "arabic": "فصل في المعرف وأقسامه. معرف الشيء ما يقال لإفادة تصوره، ويشترط أن يكون مساوياً وأجلى، فلا يصح بالأعم والأخص والمساوي في المعرفة والجهالة والأخفى. والتعريف بالفصل القريب حد وبالخاصة رسم، فإن كان مع الجنس القريب فتام وإلا فناقص، ولم يعتبروا العرض العام. وقد أجيز في الناقص أن يكون أعم كاللفظي وهو ما يصدق به تفسير مدلول اللفظ.",
+      "english": "Chapter on accounts that make things known and their divisions. A defining account is what is said to furnish conception of the thing; it must be coextensive with its object and clearer. Hence one cannot properly define through what is more general or more specific, equally known or unknown, or less intelligible. Explanation by proximate differentia constitutes an essential definition (ḥadd), and by a property a descriptive account (rasm). Either is complete when joined to the proximate genus; otherwise it is incomplete. The common accident is not counted as the required element. An incomplete account is sometimes permitted to be more general, as with a verbal explanation clarifying the meaning signified by an expression.",
       "notes": [
         {
-          "type": "Source",
-          "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+          "type": "Explanation",
+          "text": "The requirement of clearer, coextensive definition applies to the scientific aim of conveying a conception, not to every informal explanation of a word."
         },
         {
           "type": "Explanation",
@@ -183,9 +187,10 @@ window.GNAMMA_BOOK={
       ],
       "grade": "B",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "7"
     },
     {
       "id": "L.10",
