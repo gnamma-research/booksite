@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-01",
+  "version": "2026-11-01-after-asfar-reconciled",
   "source": "Tajrid 30-question master (30 Oct 2026), independently compared with late sourcebook",
   "tajridEdition": "research/tajrid/#debate/01 ... #debate/30",
   "lateEdition": "research/avicennism/",
@@ -104,10 +104,11 @@
       "existingEvidence": [
         "taft-mental",
         "jurj-mental",
-        "nara-second"
+        "nara-second",
+        "nara-presence"
       ],
-      "remaining": "New Narāqī Jāmiʿ al-afkār section needed, not duplicate generic colour objection.",
-      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "remaining": "Narāqī's Jāmiʿ al-afkār II:25–27 has a contextual argument for direct awareness (including objections and replies), but the divine-knowledge proof continues past p.27. Primary Ṣadrian/other Persian comparisons remain outstanding.",
+      "noveltyStatus": "one-direct-later-contextual-argument-full-authorial-proof-open",
       "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
     },
     {
@@ -250,10 +251,11 @@
       "differenceToInvestigate": "Contrast later essential forms, prime matter, continuous substance and divisibility, with full nearby objections.",
       "existingEvidence": [
         "lah-element",
-        "ch03"
+        "ch03",
+        "sabz-motion"
       ],
-      "remaining": "Lāhījī–Ṣadrā remains incomplete in primary original context.",
-      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "remaining": "Sabzavārī's ghurar 111 p.301–302 and separately p.305 directly quote Avicenna Physics II.3 and discuss a flowing subject; uninspected pp.303–304 and modern Ḥasanzāda notes preclude full chapter collation.",
+      "noveltyStatus": "one-layered-later-source-with-middle-page-gap",
       "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
     },
     {
@@ -266,10 +268,11 @@
       "existingEvidence": [
         "lah-temporal",
         "nara-actual",
-        "khay-fire"
+        "khay-fire",
+        "sabz-motion"
       ],
-      "remaining": "Indian heat quote is mediated and NOT direct proof of stance on substantial motion.",
-      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "remaining": "Sabzavārī's ghurar 111 p.301–302 and separately p.305 directly quote Avicenna Physics II.3 and discuss a flowing subject; uninspected pp.303–304 and modern Ḥasanzāda notes preclude full chapter collation.",
+      "noveltyStatus": "one-layered-later-source-with-middle-page-gap",
       "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
     },
     {
@@ -296,10 +299,11 @@
       "differenceToInvestigate": "Translate Narāqī, Sabzavārī, Jilwa and Zunūzī on knowledge by presence, embodiment, faculties and persistence.",
       "existingEvidence": [
         "lah-active",
-        "nara-second"
+        "nara-second",
+        "nara-presence"
       ],
-      "remaining": "Original psychological commentary remains sparse; no total-coverage claim.",
-      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "remaining": "Narāqī's Jāmiʿ al-afkār II:25–27 has a contextual argument for direct awareness (including objections and replies), but the divine-knowledge proof continues past p.27. Primary Ṣadrian/other Persian comparisons remain outstanding.",
+      "noveltyStatus": "one-direct-later-contextual-argument-full-authorial-proof-open",
       "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
     },
     {
@@ -355,10 +359,11 @@
       "lateScope": "Major post-Asfār priority",
       "differenceToInvestigate": "Focus Narāqī's developed arguments on presential knowledge, knowledge of changing particulars and relation to distinct faculties and divine simplicity.",
       "existingEvidence": [
-        "nara-second"
+        "nara-second",
+        "nara-presence"
       ],
-      "remaining": "Jāmiʿ al-afkār II is a newly located long original witness; no full chapter translated yet.",
-      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "remaining": "Narāqī's Jāmiʿ al-afkār II:25–27 has a contextual argument for direct awareness (including objections and replies), but the divine-knowledge proof continues past p.27. Primary Ṣadrian/other Persian comparisons remain outstanding.",
+      "noveltyStatus": "one-direct-later-contextual-argument-full-authorial-proof-open",
       "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
     },
     {
@@ -437,10 +442,11 @@
       "lateScope": "Later epistemology",
       "differenceToInvestigate": "Study later Iranian debate on presential versus acquired knowledge, ontological grounding of self-awareness, and epistemic methodology.",
       "existingEvidence": [
-        "nara-second"
+        "nara-second",
+        "nara-presence"
       ],
-      "remaining": "New Narāqī proof and related commentaries needed.",
-      "noveltyStatus": "bounded-direct-or-mediated-evidence-not-exhaustive",
+      "remaining": "Narāqī's Jāmiʿ al-afkār II:25–27 has a contextual argument for direct awareness (including objections and replies), but the divine-knowledge proof continues past p.27. Primary Ṣadrian/other Persian comparisons remain outstanding.",
+      "noveltyStatus": "one-direct-later-contextual-argument-full-authorial-proof-open",
       "duplicatePolicy": "Do not independently retranslate or reproduce Tajrīd's generic Ṭūsī/Ḥillī/Qūshjī matn and objections; link baseline with question id."
     }
   ],
@@ -462,5 +468,6 @@
     "28",
     "29",
     "30"
-  ]
+  ],
+  "sharedWitnessImportantNote": "This crosswalk is a question-level division of labour. TAJRID_DEDUP_AND_POST_ASFAR_SCOPE.json is the complementary page/record-level overlap audit. A new Narāqī or Sabzavārī locus is one historical witness, not a new proof or second independent version of a Tajrīd passage."
 }
