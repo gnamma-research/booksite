@@ -198,3 +198,26 @@
  .full-unit-toc{display:none}
  .compare-full-text{max-height:none!important;overflow:visible!important}
 }
+
+
+/* Stage 8 — post-Asfār developments and cross-project source ownership */
+.distinctive-dossier{margin:24px 0 36px;padding:clamp(18px,3.5vw,32px);border-radius:9px;background:var(--paper);border:1px solid var(--line)}
+.distinctive-dossier>h2{font:normal clamp(27px,3vw,35px)/1.25 Georgia,serif;margin:12px 0}
+.distinctive-dossier>.lead{font:clamp(17px,1.7vw,20px)/1.7 Georgia,serif;max-width:90ch}
+.distinctive-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:22px 0;border-top:1px solid var(--line);padding-top:12px}
+.distinctive-columns section{min-width:0}
+.distinctive-columns h3{font:normal 20px Georgia,serif;margin:16px 0 8px}
+.distinctive-columns p{font-size:14px;line-height:1.75;color:var(--muted)}
+.distinctive-evidence{border:1px solid var(--line);background:var(--wash);border-radius:6px;margin:10px 0;padding:16px 18px}
+.distinctive-evidence>.eyebrow{font-size:10px}
+.distinctive-evidence h4{font:normal 19px/1.4 Georgia,serif;margin:8px 0}
+.distinctive-evidence h4 a{text-decoration:none}
+.distinctive-evidence p{font-size:14px;line-height:1.7;margin-bottom:9px}
+.distinctive-source-links{display:flex;flex-wrap:wrap;gap:10px 19px;margin:14px 0 0;font-size:12px}
+.distinctive-source-links a{overflow-wrap:anywhere}
+.scope-row{padding:13px 0;border-bottom:1px solid var(--line);font:15px/1.65 Georgia,serif}
+.scope-row .small{font-family:'Source Sans 3',Arial,sans-serif}
+#main .distinctive-dossier .section-head{margin-top:25px}
+@media(max-width:850px){.distinctive-columns{grid-template-columns:1fr;gap:4px}}
+@media(max-width:600px){.distinctive-dossier{padding:16px;margin:15px 0}.distinctive-evidence{padding:12px 14px}}
+@media print{.distinctive-dossier{break-before:page}.distinctive-evidence{break-inside:avoid}}
