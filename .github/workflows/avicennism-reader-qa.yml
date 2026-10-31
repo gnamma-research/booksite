@@ -52,6 +52,13 @@ jobs:
           done
           python research/avicennism/tests/verify_browser.py --browser chromium
           python research/avicennism/tests/verify_browser.py --browser webkit
+      - name: Build complete portable reader package
+        run: python research/avicennism/build_portable.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: NAMA-ready-Late-Avicennism-reader
+          path: research/avicennism/NAMA_Late_Avicennism_Reader_2026-10-31.zip
+          retention-days: 30
       - uses: actions/upload-artifact@v4
         if: always()
         with:
