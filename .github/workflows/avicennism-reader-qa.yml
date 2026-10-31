@@ -34,6 +34,8 @@ jobs:
         run: |
           for js in research/avicennism/*.js; do node --check "$js"; done
           python -m py_compile research/avicennism/tests/*.py
+      - name: Verify canonical standalone script parity
+        run: python research/avicennism/build_standalone.py --check
       - name: Verify corpus, links, provenance and offline bundle
         run: python research/avicennism/tests/verify_reader.py
       - name: Install browser test harness
