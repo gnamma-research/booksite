@@ -13,7 +13,7 @@ import sys
 ROOT=Path(__file__).resolve().parent
 ASSETS=["corpus-primary.js","corpus-analysis.js","argument-apparatus.js",
         "reader-foundation.js","reader-pages.js","reader-extras.js",
-        "reader-context.js","reader.js"]
+        "reader-context.js","reader-scope.js","reader.js"]
 
 def build()->str:
     page=(ROOT/"index.html").read_text(encoding="utf-8")
