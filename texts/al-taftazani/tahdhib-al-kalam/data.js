@@ -201,7 +201,7 @@ window.GNAMMA_BOOK={
     {
       "id": "II.01",
       "title": "The concept of existence",
-      "arabic": "تصور الوجود ضروري، وتعريفه بالكون والتحقق والشيئية لفظي.",
+      "arabic": "تصور الوجود ضروري، والتعريف بالكون والتحقق والشيئية لفظي.",
       "english": "Our conception of existence is immediate. To define it using ‘being’, ‘actuality’ or ‘thinghood’ is only to clarify the expression by other familiar expressions.",
       "grade": "A",
       "gap": false,
@@ -217,6 +217,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "1912 Cairo printed witness, working OCR locator OCR 589–591; original printed pagination and manuscript witness still need confirmation."
+        },
+        {
+          "type": "Explanation",
+          "text": "A self-evident concept is not a self-evident proof of the necessary existence of a particular being. The definitions offered are verbal elucidations of an immediately apprehended meaning."
         }
       ],
       "link": "../../al-sanandaji/taqrib-al-maram/#u-S-02"
@@ -244,6 +248,14 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "1912 Cairo printed witness, working OCR locator OCR 591–621; original printed pagination and manuscript witness still need confirmation."
+        },
+        {
+          "type": "Explanation",
+          "text": "The claimed addition of existence to quiddity is primarily conceptual: the mind can deny existence of a quiddity and learn something by affirming it. This does not posit two independently existing external objects."
+        },
+        {
+          "type": "Explanation",
+          "text": "Al-Taftāzānī attributes to philosophers the claim that the Necessary Existent is a specific existence subsisting through itself, distinct in reality from the existence of contingent things."
         }
       ]
     },
@@ -270,13 +282,17 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "1912 Cairo printed witness, working OCR locator OCR 618–621; original printed pagination and manuscript witness still need confirmation."
+        },
+        {
+          "type": "Explanation",
+          "text": "Tashkīk means graded predication or analogy: existence is spoken of across beings according to differences such as priority, not simply as an equivocal sound."
         }
       ]
     },
     {
       "id": "II.04",
       "title": "Four uses of “existence”",
-      "arabic": "ثم الوجود ينقسم إلى العيني والذهني حقيقة، وإلى اللفظي والخطي مجازًا؛ إذ ليس في اللفظ والخط من الإنسان الشخص والماهية، بل الاسم وصورته.",
+      "arabic": "ثم الوجود ينقسم إلى العيني والذهني حقيقة وإلى اللفظي والخطي مجازًا.",
       "english": "Existence is then divided, properly speaking, into extramental and mental existence, and figuratively into verbal and written existence. For neither a spoken word nor a written inscription contains the human individual or the human essence; it contains only the name and its graphic or verbal form.",
       "grade": "B",
       "gap": false,
@@ -288,6 +304,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "1912 Cairo printed witness, working OCR locator OCR 621–640; original printed pagination and manuscript witness still need confirmation."
+        },
+        {
+          "type": "Explanation",
+          "text": "External and mental modes are called existence properly; verbal and written 'existence' are so called figuratively, because a sound or sign signifies its object rather than being that object."
         }
       ]
     },
@@ -306,6 +326,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "1912 Cairo printed witness, working OCR locator OCR 640–645; original printed pagination and manuscript witness still need confirmation."
+        },
+        {
+          "type": "Explanation",
+          "text": "The reasoning draws on universal and impossible objects of thought and on affirmative judgments concerning things absent externally: they require an account of what is apprehended, not an external phoenix or an externally existent contradiction."
         }
       ]
     },
@@ -324,13 +348,17 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "1912 Cairo printed witness, working OCR locator OCR 644–648; original printed pagination and manuscript witness still need confirmation."
+        },
+        {
+          "type": "Explanation",
+          "text": "Intentional reception of a form does not entail that the intellect becomes externally qualified by all the properties it conceives; one can understand unbelief without thereby being an unbeliever."
         }
       ]
     },
     {
       "id": "II.07",
       "title": "Thinghood, establishment, and nonexistence",
-      "arabic": "والمعقول من الوجود والشيئية ليس إلا الثبوت، ومن العدم إلا النفي؛ فالمعدوم ليس بشيء ولا ثابت، ولا واسطة بينه وبين الموجود.",
+      "arabic": "ثم المعقول من الوجود والشيئية ليس إلا الثبوت، ومن العدم إلا النفي؛ فالمعدوم ليس بشيء ولا ثابت، ولا واسطة بينه وبين الموجود.",
       "english": "What is understood by existence and thinghood is nothing other than establishment; and by nonexistence, nothing other than negation. Thus a non-existent is neither a thing nor established, and there is no intermediary between it and the existent.",
       "grade": "A",
       "gap": false,
@@ -342,13 +370,17 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "1912 Cairo printed witness, working OCR locator OCR 648–650; original printed pagination and manuscript witness still need confirmation."
+        },
+        {
+          "type": "Explanation",
+          "text": "The controversy is over the independently established status of the nonexistent, not the possibility of discussing it meaningfully. Sanandajī gives the opposing arguments from distinctness and possibility before disputing their inference."
         }
       ]
     },
     {
       "id": "II.08",
       "title": "Existence as predicate and copula",
-      "arabic": "ثم كل من الوجود والعدم قد يقع محمولًا وقد يقع رابطة ... وصدقُه كونُ مطابقته لما في نفس الأمر.",
+      "arabic": "ثم كل من الوجود والعدم قد يقع محمولًا وقد يقع رابطة، ويقتضي الحمل الإيجابي اتحاد الطرفين هويةً ليصح وتغايرهما مفهومًا ليفيد، وصدقه يكون بمطابقته لما في نفس الأمر، ومعناه ما يفهم من قولنا: هذا الأمر كذا في نفسه، مع قطع النظر عن حكم الحاكم وإدراك المدرك.",
       "english": "Existence and nonexistence may each function as a predicate, and each may function as a copula or relational term. […] The truth of a judgment consists in its accordance with what obtains in the matter itself (nafs al-amr).",
       "grade": "B",
       "gap": true,
@@ -360,6 +392,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "1912 Cairo printed witness, working OCR locator OCR 670–674; original printed pagination and manuscript witness still need confirmation."
+        },
+        {
+          "type": "Explanation",
+          "text": "Informative affirmative predication joins identity of what the subject and predicate designate with a difference of concepts. Truth is correspondence to how the matter stands in itself (nafs al-amr), irrespective of the act of judging or conceiving it."
         }
       ]
     },
