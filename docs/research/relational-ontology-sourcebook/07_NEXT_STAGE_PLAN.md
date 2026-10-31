@@ -103,3 +103,10 @@ The essential core work can proceed with discoverable printed Arabic sources and
 ## F. Immediate continuation prompt
 
 “Continue Relational Ontology in Later Kalām and Falsafa from Gnamma docs/research/relational-ontology-sourcebook/00_START_HERE.md. Read all seven existing research files and resume Task A1: *Ḥikmat al-ʿAyn* with Mubārakshāh and Jurjānī on real/relational/mixed composite quiddities. Recover enough original Arabic and commentary context to trace the full argument, not isolated proof-texts. If Arabic image unavailable, log accurately, then proceed A2 Tasdīd and A3 Bannānī. Update 01_FULL_CUMULATIVE_HANDOFF.md, witness register, lexicon and claim audit in one cumulative checkpoint. No premature AT comparison.”
+
+
+---
+
+## Stage 2.2 newly accomplished and added cross-check
+
+A new upstream Arabic dossier now exists as 08_DOSSIER_QUTB_RAZI_UNIVERSALS.md, from an edited 2020 publication of Quṭb al-Dīn al-Rāzī's treatise, based on five listed manuscripts. In the next Tasdīd and Hikmat collations, compare every genus/differentia assertion with the three explicit competing theses in that document. In the mental existence dossier, use Quṭb's distinction between mental actual quality and known object to test whether a doctrine of *relational cognition* is the same question as a doctrine of *mental presence*. Keep the direct-citation hierarchy: Quṭb is an UPSTREAM WITNESS, not a source that by itself verifies Spiker's references.
