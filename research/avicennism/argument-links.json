@@ -1,0 +1,1227 @@
+{
+  "version": "2026-10-31-explicit-links",
+  "description": "Only these explicitly documented source/reply connections may drive primary recommended comparison. Keyword-based selection prohibited.",
+  "debates": {
+    "giver": {
+      "question": "Who confers a natural substantial form?",
+      "status": "bounded cross-source reconstruction",
+      "scope": "Differentiate the reported physical theory, Avicenna's rejection, material preparation, form-bestowal, and the later identification of the tenth intellect.",
+      "sequence": [
+        {
+          "recordId": "av-ix5",
+          "section": 4,
+          "role": "Avicennian base argument",
+          "relation": "base-source",
+          "claim": "A friction-only account wrongly presupposes corporeality without specific form.",
+          "why": "Read the reported opponent and ensuing refutation in IX.5, rather than a sentence about the Active Intellect alone."
+        },
+        {
+          "recordId": "lah-element",
+          "section": 1,
+          "role": "Reported target position",
+          "relation": "reported-objection",
+          "claim": "Lāhījī first cites Avicenna's report of unnamed natural philosophers.",
+          "why": "Section V starts with the mistaken physical account; it is not Lāhījī's settled doctrine."
+        },
+        {
+          "recordId": "lah-element",
+          "section": 2,
+          "role": "Response and replacement",
+          "relation": "later-retelling-of-base",
+          "claim": "Lāhījī retells Avicenna's hylomorphic objection and form-bestowing explanation.",
+          "why": "The reply answers the precise rival account just reported."
+        },
+        {
+          "recordId": "lah-element",
+          "section": 3,
+          "role": "Physical preparation",
+          "relation": "sequential-explanation",
+          "claim": "The discussion then explains mixtures and dispositions leading to composite forms.",
+          "why": "The next section requires this immediately preceding explanation."
+        },
+        {
+          "recordId": "lah-active",
+          "section": 1,
+          "role": "Identifying the separate source",
+          "relation": "immediate-continuation",
+          "claim": "Section VI argues that the tenth intellect supplies rational souls and species forms.",
+          "why": "The conclusion follows the discussion of preparation, not from a keyword match."
+        },
+        {
+          "recordId": "aq-104a",
+          "section": 1,
+          "role": "External philosophical comparison",
+          "relation": "comparative-not-direct-reply",
+          "claim": "Aquinas distinguishes generation of the form in matter from an abiding existential cause.",
+          "why": "This is a later editorial comparison, not Aquinas answering Lāhījī historically."
+        }
+      ],
+      "links": [
+        {
+          "from": "av-ix5",
+          "to": "lah-element",
+          "kind": "reported-reception",
+          "explanation": "Gawhar V explicitly retells Avicenna's Ilāhiyyāt IX.5, including the rejected friction hypothesis."
+        },
+        {
+          "from": "lah-element",
+          "to": "lah-active",
+          "kind": "adjacent-chapter-premise",
+          "explanation": "After establishing form-bestowal and physical dispositions, Gawhar VI asks which intellect is the source."
+        },
+        {
+          "from": "av-ix5",
+          "to": "aq-104a",
+          "kind": "cross-tradition-analogy-not-direct-reply",
+          "explanation": "Both discuss formal production versus ongoing existence, but not with identical allocations."
+        }
+      ]
+    },
+    "dependence": {
+      "question": "Why does a contingent existent need an abiding cause?",
+      "status": "bounded argument comparison",
+      "scope": "The thing's existential need is distinct from an artisan's time-limited preparation.",
+      "sequence": [
+        {
+          "recordId": "av-vi1",
+          "section": 4,
+          "role": "Demonstration of permanent need",
+          "relation": "base-source",
+          "claim": "VI.1 argues existence, not past temporal nonexistence, is the object of causal giving.",
+          "why": "Use the whole closing proof rather than the isolated builder illustration."
+        },
+        {
+          "recordId": "av-vi2",
+          "section": 1,
+          "role": "Counterexamples and refinement",
+          "relation": "immediate-next-chapter",
+          "claim": "VI.2 resolves father, builder and fire, and separates simultaneous essential from successive preparatory causes.",
+          "why": "The chapter directly follows VI.1 and depends on its demonstration."
+        },
+        {
+          "recordId": "lah-sarmaya",
+          "section": 2,
+          "role": "Independent Persian exposition",
+          "relation": "later-parallel",
+          "claim": "Lāhījī distinguishes potter or builder from conserving existential cause.",
+          "why": "Similar thesis; no direct borrowing demonstrated."
+        },
+        {
+          "recordId": "aq-104a",
+          "section": 1,
+          "role": "Aquinas on conserving being",
+          "relation": "comparative-analogy",
+          "claim": "Aquinas distinguishes causation secundum fieri from secundum esse.",
+          "why": "He independently addresses a closely parallel problem."
+        },
+        {
+          "recordId": "aq-104a",
+          "section": 2,
+          "role": "Aquinas on created intermediaries",
+          "relation": "comparative-qualification",
+          "claim": "Aquinas permits some secondary conservation under the First.",
+          "why": "Avoid the false contrast that Aquinas rejects every intermediate conserving cause."
+        }
+      ],
+      "links": [
+        {
+          "from": "av-vi1",
+          "to": "av-vi2",
+          "kind": "authorial-sequence",
+          "explanation": "The second book VI chapter answers counterexamples to the first chapter's proof."
+        },
+        {
+          "from": "av-vi1",
+          "to": "lah-sarmaya",
+          "kind": "doctrinal-continuity-not-proved-copy",
+          "explanation": "Lāhījī independently presents the continuing-need reasoning."
+        },
+        {
+          "from": "av-vi1",
+          "to": "aq-104a",
+          "kind": "cross-tradition-parallel",
+          "explanation": "Both link conservation to caused esse but differ in other claims."
+        }
+      ]
+    },
+    "one": {
+      "question": "How can the absolutely One explain many effects?",
+      "status": "direct continuous Persian argument partly restored",
+      "scope": "Read all of Gawhar IV, including the ten-intellect qualification and the counterargument about fixed stars.",
+      "sequence": [
+        {
+          "recordId": "lah-eman",
+          "section": 1,
+          "role": "Rule of the One",
+          "relation": "original-base",
+          "claim": "Only one effect directly proceeds from the absolutely One.",
+          "why": "This is Lāhījī reporting a philosophical rule, not a generic statement about all forms."
+        },
+        {
+          "recordId": "lah-eman",
+          "section": 3,
+          "role": "Derived aspects",
+          "relation": "inferential-development",
+          "claim": "Non-self-subsistent respects of the first intellect explain mediated plurality.",
+          "why": "The response does not posit many independent effects directly from the First."
+        },
+        {
+          "recordId": "lah-eman-cont",
+          "section": 2,
+          "role": "Number of intellects qualified",
+          "relation": "authorial-continuation",
+          "claim": "Ten is not a proved upper limit; Ṭūsī's reading of the Ishārāt is cited.",
+          "why": "This page was omitted in the old extraction."
+        },
+        {
+          "recordId": "lah-eman-cont",
+          "section": 3,
+          "role": "Combinatorial reply",
+          "relation": "reported-objection-reply",
+          "claim": "Lāhījī enumerates twelve possible third-level effects to answer Suhrawardī's fixed-star objection.",
+          "why": "The opponent's objection, and the scope of the numerical reply, must both be shown."
+        },
+        {
+          "recordId": "lah-eman-cont",
+          "section": 4,
+          "role": "Conclusion of IV",
+          "relation": "chapter-conclusion",
+          "claim": "The objection is judged answered; Section V then shifts to elements.",
+          "why": "Do not present the closing line as an unrelated claim about star counts."
+        }
+      ],
+      "links": [
+        {
+          "from": "lah-eman",
+          "to": "lah-eman-cont",
+          "kind": "same-historical-chapter",
+          "explanation": "The omitted pp.294–297 complete Section IV of Gawhar."
+        },
+        {
+          "from": "lah-eman-cont",
+          "to": "lah-element",
+          "kind": "next-chapter",
+          "explanation": "The following Section V tests form bestowal against elemental generation."
+        }
+      ]
+    },
+    "temporal": {
+      "question": "Why does this event arise now from an eternal cause?",
+      "status": "connected original and later response",
+      "scope": "Distinguish universal causal dependence from the extra determination of the time of a novel effect.",
+      "sequence": [
+        {
+          "recordId": "av-vi2",
+          "section": 1,
+          "role": "Causal succession and motion",
+          "relation": "earlier-foundation",
+          "claim": "Successive preparatory conditions do not form a simultaneous essential regress.",
+          "why": "This is in the complete VI.2 response, not an isolated formula."
+        },
+        {
+          "recordId": "lah-temporal",
+          "section": 1,
+          "role": "New problem posed",
+          "relation": "later-derivation",
+          "claim": "Contingency grounds need for being; temporal origination requires a further time-specific explanation.",
+          "why": "This distinction follows Gawhar VI on form-bestowing intellect."
+        },
+        {
+          "recordId": "lah-temporal",
+          "section": 2,
+          "role": "Cause of timing",
+          "relation": "authorial-reply",
+          "claim": "Motion varies continuously, differentiating a cause's relation to an effect.",
+          "why": "The earlier eternal principle is not altered by the new event."
+        },
+        {
+          "recordId": "lah-temporal",
+          "section": 3,
+          "role": "Final natural preparation",
+          "relation": "chapter-conclusion",
+          "claim": "Material readiness reaches completion and the event receives existence.",
+          "why": "This paragraph supplies the actual answer to why now."
+        }
+      ],
+      "links": [
+        {
+          "from": "av-vi2",
+          "to": "lah-temporal",
+          "kind": "Avicennian-problem-reception",
+          "explanation": "Later formulation solves the same dependency-versus-temporal-novelty problem under a celestial hypothesis."
+        },
+        {
+          "from": "lah-active",
+          "to": "lah-temporal",
+          "kind": "adjacent-section",
+          "explanation": "The intellect source was specified in Section VI; the timing of its effects is Section VII."
+        }
+      ]
+    },
+    "choice": {
+      "question": "Does necessity through willing negate genuine choice?",
+      "status": "reported objections, not direct multi-author collations",
+      "scope": "The question is the modal meaning of power when a complete cause includes will; it is not identical to whether natural causes exist.",
+      "sequence": [
+        {
+          "recordId": "lah-shaw",
+          "section": 2,
+          "role": "Necessary effect through cause",
+          "relation": "modal-background",
+          "claim": "Extrinsic preference is insufficient until it becomes causally decisive.",
+          "why": "Not in itself an account of voluntary alternative possibilities."
+        },
+        {
+          "recordId": "astar-choice",
+          "section": 1,
+          "role": "Ṭūsī/Qūshjī modal distinction as reported",
+          "relation": "later-report",
+          "claim": "An effect may be possible through itself but necessary with will as part of its completed cause.",
+          "why": "Qūshjī is not directly edited here."
+        },
+        {
+          "recordId": "astar-choice",
+          "section": 2,
+          "role": "Khafrī's objection as reported",
+          "relation": "reported-critical-reply",
+          "claim": "If divine will is identical with essence, the modal possibility of not willing remains disputed.",
+          "why": "The objection is a reported voice inside Astarābādī."
+        },
+        {
+          "recordId": "astar-choice",
+          "section": 3,
+          "role": "Astarābādī's reported solutions",
+          "relation": "later-reply",
+          "claim": "A later response invokes newly arising choice or time-specific object of will.",
+          "why": "Must not be attributed wholesale to the original Ṭūsī."
+        },
+        {
+          "recordId": "lah-divine",
+          "section": 1,
+          "role": "Lāhījī's own agency question",
+          "relation": "related-independent-debate",
+          "claim": "Does benefiting others constitute a perfection gained by God?",
+          "why": "This is a different question about riḍā/qaṣd, not a direct reply to Khafrī."
+        },
+        {
+          "recordId": "aq-104b",
+          "section": 1,
+          "role": "Aquinas on free conservation",
+          "relation": "cross-tradition-contrast",
+          "claim": "God may withhold being through free willing.",
+          "why": "Contrast rather than historical response."
+        }
+      ],
+      "links": [
+        {
+          "from": "astar-choice",
+          "to": "lah-divine",
+          "kind": "conceptual-cross-reference",
+          "explanation": "The modal power dispute and the divine-purpose dispute have overlapping terms but different immediate questions."
+        },
+        {
+          "from": "astar-choice",
+          "to": "aq-104b",
+          "kind": "cross-tradition-contrast",
+          "explanation": "Aquinas' free willing is a separate text and thesis, not a post-Tajrīd gloss."
+        }
+      ]
+    },
+    "making": {
+      "question": "What does the producer actually make—quiddity or actual being?",
+      "status": "two different formulations and different source genres",
+      "scope": "Separate a lexical report of simple/compound jaʿl from an independent treatment of particular existence.",
+      "sequence": [
+        {
+          "recordId": "taha-jal",
+          "section": 1,
+          "role": "Technical division",
+          "relation": "direct-lexical-source",
+          "claim": "Simple making versus making a thing be something.",
+          "why": "Lexicographic entry, not authorial Mīr Zāhid proof."
+        },
+        {
+          "recordId": "taha-jal",
+          "section": 2,
+          "role": "Attribution to Mīr Zāhid",
+          "relation": "mediated-tradition",
+          "claim": "Tahānawī quotes or reports Mīr Zāhid's gloss.",
+          "why": "A nested report counts as one direct later witness."
+        },
+        {
+          "recordId": "taha-jal",
+          "section": 3,
+          "role": "Arguments on each side",
+          "relation": "reconstructed-dispute",
+          "claim": "Debate over the production of quiddity and the relation of existence.",
+          "why": "One must retain arguments and counterarguments together."
+        },
+        {
+          "recordId": "nara-actual",
+          "section": 1,
+          "role": "Narāqī's distinct argument",
+          "relation": "independent-later-discussion",
+          "claim": "Quiddity/existence attribution is mental, actual being not two self-subsisting things.",
+          "why": "Narāqī is not directly replying to Tahānawī in this text."
+        },
+        {
+          "recordId": "ch02",
+          "section": 2,
+          "role": "Secondary editorial analysis",
+          "relation": "editorial-comparison",
+          "claim": "Longer Jawl debate can be reconstructed from Shawāriq.",
+          "why": "This analytical chapter is not itself a new primary witness."
+        }
+      ],
+      "links": [
+        {
+          "from": "taha-jal",
+          "to": "nara-actual",
+          "kind": "thematic-parallel-not-proved-influence",
+          "explanation": "Both consider the object of making, but no documented exchange is established."
+        }
+      ]
+    },
+    "mind": {
+      "question": "Does apprehending heat make the mind hot?",
+      "status": "parallel objection/reply sequences",
+      "scope": "The subject is mental representation, not a physical theory that a thought is the same as a hot body.",
+      "sequence": [
+        {
+          "recordId": "taft-mental",
+          "section": 3,
+          "role": "The three objections",
+          "relation": "direct-text",
+          "claim": "Physical qualities and vast celestial magnitudes cannot be in the mind in the external sense.",
+          "why": "Need to read the objections as directed against mental existence."
+        },
+        {
+          "recordId": "taft-mental",
+          "section": 4,
+          "role": "Reply to the objections",
+          "relation": "direct-response",
+          "claim": "Mental forms do not produce external physical concomitants.",
+          "why": "Do not infer an unqualified metaphysical category of all mental objects."
+        },
+        {
+          "recordId": "jurj-mental",
+          "section": 1,
+          "role": "Ījī matn + Jurjānī exposition",
+          "relation": "layered-parallel",
+          "claim": "A related blackness/whiteness and mountain objection appears.",
+          "why": "Different speakers must remain distinct in the composite witness."
+        },
+        {
+          "recordId": "jurj-mental",
+          "section": 2,
+          "role": "Reply and unsigned glosses",
+          "relation": "layered-reply",
+          "claim": "Actual external huwiyya differs from mentally represented quiddity.",
+          "why": "Unsigned glosses must remain unsigned."
+        },
+        {
+          "recordId": "nara-second",
+          "section": 1,
+          "role": "Later logical distinction",
+          "relation": "related-not-reply",
+          "claim": "Second intentions presuppose intelligibles qua intelligible.",
+          "why": "Not a direct response to physical heat objection."
+        }
+      ],
+      "links": [
+        {
+          "from": "taft-mental",
+          "to": "jurj-mental",
+          "kind": "parallel-scholastic-problem",
+          "explanation": "These two sources handle variants of the same classical objection with distinct apparatus."
+        },
+        {
+          "from": "nara-second",
+          "to": "taft-mental",
+          "kind": "logical-background-not-direct-reply",
+          "explanation": "Second-intention categorization is background rather than the exact objection."
+        }
+      ]
+    },
+    "motion": {
+      "question": "What actually changes in natural and substantial transformation?",
+      "status": "sources do not establish single continuous historical controversy",
+      "scope": "Separate substantial motion from alteration, generation and physical heat; do not use an Indian experiment as proof of Ṣadrian substantial motion.",
+      "sequence": [
+        {
+          "recordId": "av-ix5",
+          "section": 4,
+          "role": "Avicennian hylomorphic account",
+          "relation": "original-target",
+          "claim": "Matter cannot exist first as bare corporeality and later acquire all specific form.",
+          "why": "The reply addresses a theory of elemental formation, not Ṣadrā's later continuous substance motion."
+        },
+        {
+          "recordId": "lah-element",
+          "section": 2,
+          "role": "Lāhījī on elemental forms",
+          "relation": "Avicennian-reception",
+          "claim": "Rehearses the critique of friction-only generation.",
+          "why": "A distinct text on physical generation."
+        },
+        {
+          "recordId": "ch03",
+          "section": 2,
+          "role": "Editorial account of substantial motion debate",
+          "relation": "secondary-analysis",
+          "claim": "Lāhījī's persistence objection and Ṣadrā's answer are surveyed.",
+          "why": "Not a direct newly collated full Persian/Arabic exchange."
+        },
+        {
+          "recordId": "khay-fire",
+          "section": 1,
+          "role": "Nineteenth-century India, mediated quote",
+          "relation": "related-not-same-dispute",
+          "claim": "Frictional heating and concealed fire concern natural alteration and generation.",
+          "why": "This does not directly prove or refute the continuous substantial motion thesis."
+        }
+      ],
+      "links": [
+        {
+          "from": "av-ix5",
+          "to": "lah-element",
+          "kind": "reported-philosophical-source",
+          "explanation": "Lāhījī reports Avicenna IX.5 with a direct source reference."
+        },
+        {
+          "from": "khay-fire",
+          "to": "ch03",
+          "kind": "explicitly-not-same-thesis",
+          "explanation": "The material-change discussion is a different problem from Ṣadrā's substantial motion."
+        }
+      ]
+    },
+    "concept": {
+      "question": "Are existence and essence two external entities?",
+      "status": "two different primary considerations and editorial synthesis",
+      "scope": "Distinguish identity of a particular actuality from mental concept distinction and Thomist essence–esse composition.",
+      "sequence": [
+        {
+          "recordId": "nara-actual",
+          "section": 1,
+          "role": "Objections to two external realities",
+          "relation": "original-argument",
+          "claim": "Predicative 'quiddity exists' need not posit two separate external objects.",
+          "why": "The objection is directly about how the attribution is understood."
+        },
+        {
+          "recordId": "nara-actual",
+          "section": 2,
+          "role": "A separate later passage",
+          "relation": "noncontiguous-continuation-not-established",
+          "claim": "Limitation grounds abstractable quiddity in contingent existence.",
+          "why": "The intervening pages 73–81 are missing and must not be bridged."
+        },
+        {
+          "recordId": "lah-eman",
+          "section": 2,
+          "role": "First-intellect existence/quiddity respects",
+          "relation": "separate-context",
+          "claim": "Externally united, mentally different respects are used in the procession proof.",
+          "why": "This is not Narāqī answering an earlier author."
+        },
+        {
+          "recordId": "ch01",
+          "section": 1,
+          "role": "Interpretive analysis",
+          "relation": "editorial-synthesis",
+          "claim": "Mental existence and essence predication form a wider philosophical problem.",
+          "why": "Not another direct primary author."
+        }
+      ],
+      "links": [
+        {
+          "from": "nara-actual",
+          "to": "lah-eman",
+          "kind": "conceptual-comparison",
+          "explanation": "Two later Persian authors deploy a similar distinction in different questions; no direct answer is shown."
+        }
+      ]
+    },
+    "created": {
+      "question": "Can the First Cause cease conserving what exists?",
+      "status": "Thomist bounded question plus later Persian comparison",
+      "scope": "Differentiate continuous dependence from divine freedom, possibility of withholding and actual annihilation.",
+      "sequence": [
+        {
+          "recordId": "aq-104a",
+          "section": 1,
+          "role": "Need for conservation",
+          "relation": "base-source",
+          "claim": "Creatures cannot sustain themselves independently of the First.",
+          "why": "This is not yet a proof that God might choose to cease conserving."
+        },
+        {
+          "recordId": "aq-104a",
+          "section": 2,
+          "role": "Possible intermediate conservation",
+          "relation": "qualification",
+          "claim": "Created causes may participate subordinately in conserving effects.",
+          "why": "Do not contrast Aquinas and Avicenna as pure intermediary/no intermediary."
+        },
+        {
+          "recordId": "aq-104b",
+          "section": 1,
+          "role": "Ability to withhold being",
+          "relation": "Aquinas-following-article",
+          "claim": "The source of created existence is free divine willing.",
+          "why": "The possibility of cessation is a new modal claim."
+        },
+        {
+          "recordId": "aq-104b",
+          "section": 2,
+          "role": "Actual annihilation",
+          "relation": "Aquinas-following-article",
+          "claim": "Aquinas denies that anything actually is annihilated.",
+          "why": "Distinguish possible from actual."
+        },
+        {
+          "recordId": "lah-divine",
+          "section": 1,
+          "role": "Lāhījī on divine approval",
+          "relation": "cross-tradition-difference",
+          "claim": "Riḍā/qaṣd controversy does not settle Aquinas' alternative possibilities.",
+          "why": "Not an answer to Aquinas historically."
+        }
+      ],
+      "links": [
+        {
+          "from": "aq-104a",
+          "to": "aq-104b",
+          "kind": "same-quaestio-authorial-sequence",
+          "explanation": "Articles 1–2 establish conservation; 3–4 then separate possibility of annihilation from its actuality."
+        },
+        {
+          "from": "aq-104b",
+          "to": "lah-divine",
+          "kind": "cross-tradition-contrast",
+          "explanation": "Different authors address aspects of divine agency but no direct dialogue is claimed."
+        }
+      ]
+    }
+  },
+  "domainEvidence": {
+    "method": {
+      "direct": [
+        {
+          "recordId": "nara-second",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "av-vi1",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch01",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        },
+        {
+          "recordId": "ch08",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "No complete cross-commentarial treatment of the subject of metaphysics or Ibn Sīnā's I.1–I.2."
+    },
+    "existence": {
+      "direct": [
+        {
+          "recordId": "nara-actual",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-eman",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch01",
+          "section": 2,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        },
+        {
+          "recordId": "ch02",
+          "section": 2,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "The Rāzian–Ṭūsian and later Persian positions need independent primary loci."
+    },
+    "unity": {
+      "direct": [
+        {
+          "recordId": "lah-eman",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-eman-cont",
+          "section": 3,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch07",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Independent monism/gradation primary texts remain uncollated."
+    },
+    "mental-existence": {
+      "direct": [
+        {
+          "recordId": "taft-mental",
+          "section": 3,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "taft-mental",
+          "section": 4,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "jurj-mental",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "jurj-mental",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch01",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        },
+        {
+          "recordId": "ch08",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Original-Siyālkūtī and separate late glosses unverified."
+    },
+    "causation": {
+      "direct": [
+        {
+          "recordId": "av-vi1",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "av-vi2",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-element",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch05",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Extensive first-cause / natural efficient-agent commentary still missing."
+    },
+    "forms": {
+      "direct": [
+        {
+          "recordId": "av-ix5",
+          "section": 4,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-element",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-element",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-element",
+          "section": 3,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-active",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch05",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Direct Rāzī/Ṭūsī/Qūshjī/Jilwa on form-bestowal is not yet collated."
+    },
+    "matter": {
+      "direct": [
+        {
+          "recordId": "av-ix5",
+          "section": 3,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-element",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-active",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch09",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        },
+        {
+          "recordId": "ch03",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Matter and form through the natural-physics commentary chain remain open."
+    },
+    "motion": {
+      "direct": [
+        {
+          "recordId": "lah-temporal",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-element",
+          "section": 3,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch03",
+          "section": 2,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "The distinct Khayrābādī source is mediated, not evidence for Ṣadrian substantial motion."
+    },
+    "modality": {
+      "direct": [
+        {
+          "recordId": "lah-shaw",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-shaw",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "astar-choice",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "astar-choice",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch06",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Primary Qūshjī and Khafrī sources uncollated."
+    },
+    "conservation": {
+      "direct": [
+        {
+          "recordId": "av-vi1",
+          "section": 4,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "av-vi2",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-sarmaya",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "aq-104a",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "aq-104a",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch10",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "More independent later Arabic witnesses needed."
+    },
+    "cosmology": {
+      "direct": [
+        {
+          "recordId": "lah-eman",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-eman-cont",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-eman-cont",
+          "section": 3,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-active",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "av-ix5",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch06",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Celestial framework disputed and not a modern physical claim."
+    },
+    "soul": {
+      "direct": [
+        {
+          "recordId": "lah-active",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch04",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Avicenna's al-Nafs and Sadrian/Jilwa psychology require extensive source translation."
+    },
+    "knowledge": {
+      "direct": [
+        {
+          "recordId": "taft-mental",
+          "section": 4,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "jurj-mental",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "nara-second",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch04",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        },
+        {
+          "recordId": "ch08",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Active Intellect epistemic role and real intentional relation require further primary source."
+    },
+    "imagination": {
+      "direct": [],
+      "comparative": [
+        {
+          "recordId": "ch04",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        },
+        {
+          "recordId": "ch07",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "No contextualized multi-author original argument unit on imagination or resurrection yet."
+    },
+    "divine-knowledge": {
+      "direct": [],
+      "comparative": [
+        {
+          "recordId": "ch06",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        },
+        {
+          "recordId": "ch07",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "No independent direct comparative proof of God's knowledge of particulars yet."
+    },
+    "divine-will": {
+      "direct": [
+        {
+          "recordId": "lah-divine",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-divine",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "astar-choice",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "astar-choice",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "aq-104b",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch06",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Separate original Qūshjī/Khafrī source texts are missing."
+    },
+    "providence": {
+      "direct": [],
+      "comparative": [
+        {
+          "recordId": "ch06",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        },
+        {
+          "recordId": "aq-104b",
+          "section": 2,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Avicenna IX.6 and later commentaries on providence and evil remain to be translated."
+    },
+    "proofs": {
+      "direct": [
+        {
+          "recordId": "av-vi1",
+          "section": 4,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "av-vi2",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "lah-shaw",
+          "section": 2,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch10",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Complete cross-author proofs and regress discussion remain partial."
+    },
+    "universals": {
+      "direct": [
+        {
+          "recordId": "nara-second",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        },
+        {
+          "recordId": "taft-mental",
+          "section": 1,
+          "level": "primary passage",
+          "reason": "Identified segment bears on domain subject, without extrapolation to the entire author"
+        }
+      ],
+      "comparative": [
+        {
+          "recordId": "ch08",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        },
+        {
+          "recordId": "ch01",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "Independent post-Rāzian logic, Shamsiyya and Moroccan Jumal tradition not represented."
+    },
+    "practical": {
+      "direct": [],
+      "comparative": [
+        {
+          "recordId": "ch04",
+          "section": 1,
+          "level": "editorial/contextual discussion",
+          "reason": "This is comparison or context; not a separately authenticated primary text"
+        }
+      ],
+      "gap": "No primary contextualized ethics, political and practical philosophy material."
+    }
+  },
+  "rule": "Every suggested comparison states what proposition is related, which author voices it, what it answers, and whether relation is genuine historical reception or editorial analogy."
+}
