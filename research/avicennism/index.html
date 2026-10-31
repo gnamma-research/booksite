@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#eff3f0">
+<meta name="description" content="A navigable critical sourcebook for mature Avicennism, Persian and Indian commentaries, the post-Tajrīd tradition and Aquinas. Source-graded English translations with original Arabic and Persian anchors.">
+<title>Late Avicennism · Comparative Critical Reader</title>
+<link rel="stylesheet" href="reader.css">
+</head>
+<body class="reader-app">
+<svg aria-hidden="true" class="symbols" height="0" width="0" xmlns="http://www.w3.org/2000/svg">
+<symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v11H3V10Z"/><path d="M9 21v-8h6v8"/></symbol>
+<symbol id="i-toc" viewBox="0 0 24 24"><path d="M5 4v16M5 7h5M5 13h5M5 19h5M12 7h8M12 13h8M12 19h8"/></symbol>
+<symbol id="i-study" viewBox="0 0 24 24"><path d="m2 8 10-5 10 5-10 5L2 8Z"/><path d="M6 11v5c3.5 2.5 8.5 2.5 12 0v-5M22 8v8"/></symbol><symbol id="i-editions" viewBox="0 0 24 24"><path d="M6.5 4H19a1.5 1.5 0 0 1 1.5 1.5V20H8.5a2 2 0 0 1-2-2V4Z"/><path d="M6.5 7H4.75A1.75 1.75 0 0 0 3 8.75V18a2 2 0 0 0 2 2h3.5M10 9h7M10 13h7M10 17h5"/></symbol>
+<symbol id="i-balance" viewBox="0 0 24 24"><path d="M12 3v18M4 7h16M6 7l-4 8h8l-4-8ZM18 7l-4 8h8l-4-8ZM2 15c1 2 7 2 8 0M14 15c1 2 7 2 8 0M8 21h8"/></symbol>
+<symbol id="i-subject" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="7" r="2"/><circle cx="8" cy="18" r="2"/><path d="M8 6.2h8M7 8l1 8M16.7 9l-7 7"/></symbol>
+<symbol id="i-dictionary" viewBox="0 0 24 24"><path d="M6 3h14v18H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3ZM6 3v18M10 16l2.5-7 2.5 7M11 14h3"/></symbol>
+<symbol id="i-library" viewBox="0 0 24 24"><path d="M5 3h11l3 3v15H5V3ZM16 3v4h3M8 10h7M8 13h5M8 17h4"/><path d="m15 16 4-4 2 2-4 4-3 1z"/></symbol>
+<symbol id="i-jump" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m9 15 2-5 5-2-2 5-5 2Z"/><circle cx="12" cy="12" r=".5"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.3"></circle><path d="m16 16 4.5 4.5"></path></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5.5C8 3.5 5 4.2 3 5.5v13c2.5-1.3 6-1.6 9 .3 3-1.9 6.5-1.6 9-.3v-13c-2-1.3-5-2-9 0ZM12 5.5v13.3"></path></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"></path></symbol>
+<symbol id="i-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"></path></symbol>
+<symbol id="i-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></symbol>
+<symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3.5h12v17L12 16l-6 4.5Z"></path><path d="M12 8v5.3M9.35 10.65h5.3"></path></symbol>
+<symbol id="i-bookmark-filled" viewBox="0 0 24 24"><path d="M6 3.5h12v17L12 16l-6 4.5Z"></path><path d="m9.35 10.65 2 2 3.7-4"></path></symbol>
+<symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6M15 14v6"></path></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M19 5l-2 2M7 17l-2 2"></path></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 15a8 8 0 0 1-11-11A8.5 8.5 0 1 0 20 15Z"></path></symbol>
+<symbol id="i-language" viewBox="0 0 24 24"><path d="M4 5h12M10 3v3M6 8c1.5 5 5.5 8 10 10M14 8c-1.3 4-4 7-9 10M14 14h7M17.5 11l-3.5 10M17.5 11l3.5 10"></path></symbol>
+<symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h12M4 6h1M4 12h1M4 18h1"></path></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect height="7" rx="1" width="7" x="3" y="3"></rect><rect height="7" rx="1" width="7" x="14" y="3"></rect><rect height="7" rx="1" width="7" x="3" y="14"></rect><rect height="7" rx="1" width="7" x="14" y="14"></rect></symbol>
+<symbol id="i-external" viewBox="0 0 24 24"><path d="M12 5H5v14h14v-7M14 4h6v6M20 4l-9 9"></path></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><rect height="12" rx="1.5" width="12" x="8" y="8"></rect><path d="M16 8V4H4v12h4"></path></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"></path></symbol>
+<symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7h.01"></path></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"></path></symbol>
+<symbol id="i-notes" viewBox="0 0 24 24"><path d="M5 3h14v18H5zM9 8h7M9 12h7M9 16h4"></path></symbol>
+<symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.3"/><circle cx="5" cy="12" r="2.3"/><circle cx="18" cy="19" r="2.3"/><path d="m7.1 11 8.5-5M7.1 13l8.5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to main reading</a>
+<header class="toolbar" aria-label="Reading tools">
+<button type="button" class="icon-button" data-action="menu" aria-label="Toggle navigation" aria-expanded="true" aria-controls="navigation"><svg aria-hidden="true"><use href="#i-menu"/></svg></button>
+<a class="brand" href="#home" aria-label="Late Avicennism overview"><span class="brand-monogram" aria-hidden="true">ا</span><span class="brand-words">Avicennism<small>CRITICAL RESEARCH READER</small></span></a>
+<div class="languages" role="group" aria-label="Show source anchors and translations">
+<button type="button" data-action="ar" aria-pressed="true" aria-label="Show or hide original-language source excerpts" title="Original-language anchors (not whole witness)">AR</button>
+<button type="button" data-action="en" aria-pressed="true" aria-label="Show or hide working English translations" title="English translation and commentary">EN</button>
+</div>
+<div class="toolbar-reading">
+<button type="button" class="icon-button" data-action="focus" aria-label="Toggle focused reading" aria-pressed="false" title="Focus reading"><svg aria-hidden="true"><use href="#i-book"/></svg></button>
+<button type="button" class="icon-button" data-action="bookmark" aria-label="Bookmark current reading" aria-pressed="false" title="Bookmark"><svg aria-hidden="true"><use href="#i-bookmark"/></svg></button>
+<button type="button" class="icon-button" data-action="share" aria-label="Copy deep link to current reading" title="Copy reading link"><svg aria-hidden="true"><use href="#i-share"/></svg></button>
+</div>
+<div class="toolbar-end">
+<button type="button" class="search-trigger" data-action="search" aria-label="Search the sourcebook" title="Search /"><svg aria-hidden="true"><use href="#i-search"/></svg><span>Search</span><kbd>/</kbd></button>
+<button type="button" class="icon-button" data-action="settings" aria-label="Reader appearance and settings" title="Appearance and reading settings"><svg aria-hidden="true"><use href="#i-sliders"/></svg></button>
+</div>
+</header>
+<button id="scrim" class="scrim" type="button" tabindex="-1" hidden aria-label="Close navigation"></button>
+<aside id="navigation" aria-label="Reader navigation">
+<div class="nav-title"><span dir="rtl" lang="ar">ما بعد ابن سينا</span><button type="button" class="icon-button" data-action="close-menu" aria-label="Close menu"><svg aria-hidden="true"><use href="#i-close"/></svg></button><small>A source-graded comparative edition</small></div>
+<nav aria-label="Research reader sections">
+<div class="nav-group"><p>READ</p><a href="#home" data-nav="home"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Overview</span></a><a href="#contents" data-nav="contents"><svg aria-hidden="true"><use href="#i-toc"/></svg><span>All texts & chapters</span></a><a href="#texts" data-nav="texts"><svg aria-hidden="true"><use href="#i-book"/></svg><span>Primary-source translations</span></a><a href="#chapters" data-nav="chapters"><svg aria-hidden="true"><use href="#i-study"/></svg><span>Research chapters</span></a><a href="#compare" data-nav="compare"><svg aria-hidden="true"><use href="#i-balance"/></svg><span>Compare commentators</span></a></div>
+<div class="nav-group"><p>EXPLORE</p><a href="#domains" data-nav="domains"><svg aria-hidden="true"><use href="#i-subject"/></svg><span>Twenty domains</span></a><a href="#witnesses" data-nav="witnesses"><svg aria-hidden="true"><use href="#i-editions"/></svg><span>Witnesses & editions</span></a><a href="#glossary" data-nav="glossary"><svg aria-hidden="true"><use href="#i-dictionary"/></svg><span>Dictionary</span></a><a href="#search" data-nav="search"><svg aria-hidden="true"><use href="#i-search"/></svg><span>Search sources</span></a></div>
+<div class="nav-group"><p>YOUR READING</p><a href="#desk" data-nav="desk"><svg aria-hidden="true"><use href="#i-bookmark"/></svg><span>Reading desk</span></a><a href="#downloads" data-nav="downloads"><svg aria-hidden="true"><use href="#i-download"/></svg><span>Editions & export</span></a><a href="#help" data-nav="help"><svg aria-hidden="true"><use href="#i-info"/></svg><span>Method & help</span></a></div>
+</nav>
+<div class="nav-footer"><a href="https://gnamma-research.github.io/booksite/research/tajrid/" target="_blank" rel="noopener">Tajrīd sourcebook ↗</a><a href="#witnesses">Critical status ↗</a><span>Portable, NAMA-ready edition</span></div>
+</aside>
+<div id="workspace"><main id="main" tabindex="-1" aria-busy="true"><div class="loading"><div class="eyebrow">LATE AVICENNISM</div><h1>Preparing the critical reader…</h1><p>Loading text units, translations, sources and analytical crosswalks.</p><p><a href="https://github.com/gnamma-research/booksite/tree/master/research/intellectual-atlas/avicennian-summa">View the manuscript and translation register</a></p></div></main><footer class="reader-footer">Working source-critical edition · Original-language anchors are excerpts, not a complete transcribed Arabic/Persian/Latin witness. The bibliography and witness register distinguish direct from mediated testimony.</footer></div>
+<nav id="pager" aria-label="Previous and next section" hidden><a id="prev" href="#contents"><svg aria-hidden="true"><use href="#i-left"/></svg><span>Previous</span></a><button id="where" type="button" data-action="jump" aria-label="Choose a section"><span>Choose passage</span></button><a id="next" href="#contents"><span>Next</span><svg aria-hidden="true"><use href="#i-right"/></svg></a></nav>
+<dialog id="panel" aria-labelledby="paneltitle"><div class="dialoghead"><h2 id="paneltitle"></h2><button type="button" class="icon-button" data-action="close-panel" aria-label="Close dialog"><svg aria-hidden="true"><use href="#i-close"/></svg></button></div><div id="panelbody"></div></dialog>
+<div id="notice" role="status" aria-live="polite" hidden></div>
+<noscript><p class="nojs">JavaScript is needed for this reader. The <a href="https://gnamma-research.github.io/booksite/research/intellectual-atlas/avicennian-summa/primary-translations.html">six original primary fascicles</a>, <a href="https://gnamma-research.github.io/booksite/research/intellectual-atlas/avicennian-summa/late-commentators.html">later commentaries</a>, and <a href="https://gnamma-research.github.io/booksite/research/intellectual-atlas/avicennian-summa/chapters/">ten research chapters</a> remain readable.</p></noscript>
+<script src="corpus-primary.js" defer></script>
+<script src="corpus-analysis.js" defer></script>
+<script src="reader-foundation.js" defer></script>
+<script src="reader-pages.js" defer></script>
+<script src="reader-extras.js" defer></script>
+<script src="reader.js" defer></script>
+</body>
+</html>
