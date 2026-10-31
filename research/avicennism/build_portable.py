@@ -34,6 +34,6 @@ with ZipFile(out,"w",compression=ZIP_DEFLATED,compresslevel=8) as z:
 with ZipFile(out) as z:
     assert z.testzip() is None
     assert set(z.namelist())=={"late-avicennism/"+n for n in FILES}|{"START_HERE.txt"}
-    assert len(z.read("late-avicennism/standalone.html"))>400000
+    assert len(z.read("late-avicennism/standalone.html"))>540000
 print(json.dumps({"archive":str(out),"size":out.stat().st_size,
                   "files":len(FILES)+1,"integrity":"passed"}))
