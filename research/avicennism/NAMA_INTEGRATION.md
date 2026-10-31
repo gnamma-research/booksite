@@ -5,9 +5,13 @@
 
 ## Stage 8 source context and nonduplication update
 
-The portable reader now includes **22 historical source units (6 baseline, 15 later, one mediated), ten editorial chapters, sixteen historical transmission routes, ten explicitly located philosophical argument chains and twelve post-Asfār change dossiers**. In particular, a consecutive **32-page working English interpretation of Lāhījī's independent *Gawhar-i murād* Book III Sections I–VIII, pp.278–309** replaces isolated brief extracts. The textual edition identifies authorial voices, preceding premise, objection, reply, source locations and next textual step. Original Persian and Arabic remain **selected anchors**, not complete aligned manuscripts.
+The portable reader now includes **24 historical source units (6 baseline, 17 later, one mediated), ten editorial chapters, sixteen historical transmission routes, twelve explicitly located philosophical argument chains and twelve post-Asfār change dossiers**. In particular, a consecutive **32-page working English interpretation of Lāhījī's independent *Gawhar-i murād* Book III Sections I–VIII, pp.278–309** replaces isolated brief extracts. The textual edition identifies authorial voices, preceding premise, objection, reply, source locations and next textual step. Original Persian and Arabic remain **selected anchors**, not complete aligned manuscripts.
 
 For overlap with the separate **Tajrīd reader**, link existing sourcebook passages rather than treating the same printed pages as independent source witnesses. The registered shared pages are *Shawāriq* I:90–91 and *Maqāṣid* p.79; a different passage of the same work is not automatically duplication. The integrated reader now exposes dedicated **Tajrīd overlap** and **After-Asfār transformations** routes.
+
+### Stage 9: canonical Tajrīd question map and post-*Asfār* additions
+
+The new `#tajrid-questions` view crosslinks all thirty sourcebook debates and their post-*Asfār* implications without retranslating the existing Tajrīd matn. The original `#tajrid-overlap` page still distinguishes exact shared text from different passages in a single work. New Narāqī *Jāmiʿ al-afkār* II:25–27 and Sabzavārī *Sharḥ al-Manẓūma* IV:301–302 and p.305 are explicitly provisional argument units, not completed whole books. The latter has missing pp.303–304 and interleaved twentieth-century Ḥasanzāda annotations.
 
 ## Portable installation
 
