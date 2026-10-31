@@ -19,9 +19,9 @@ def read_json_js(path:Path,prefix:str,suffix:str):
 
 primary=read_json_js(P,"window.AVICENNIAN_CORPUS=",";")
 extra=read_json_js(A,"window.AVICENNIAN_CORPUS=window.AVICENNIAN_CORPUS||{};\nObject.assign(window.AVICENNIAN_CORPUS,",");")
-assert len(primary["records"])==20
+assert len(primary["records"])==22
 assert sum(r["kind"]=="primary" for r in primary["records"])==6
-assert sum(r["kind"]=="late" for r in primary["records"])==13
+assert sum(r["kind"]=="late" for r in primary["records"])==15
 assert sum(r["kind"]=="mediated" for r in primary["records"])==1
 assert len(extra["analysis"])==10
 assert len(extra["themes"])==20
@@ -29,7 +29,7 @@ assert len(extra["debates"])==10
 assert len(primary["unresolved"])>=11
 allrecords=primary["records"]+extra["analysis"]
 ids=[r["id"] for r in allrecords]
-assert len(ids)==len(set(ids))==30
+assert len(ids)==len(set(ids))==32
 assert all(len(r["md"])>2000 for r in allrecords)
 assert all(r["sourceFile"] for r in allrecords)
 assert all(not r["manuscriptCollated"] for r in allrecords)
@@ -55,7 +55,7 @@ class Parse(HTMLParser):
 
 p=Parse();p.feed(HTML.read_text(encoding="utf-8"))
 assert len(p.ids)==len(set(p.ids))
-assert p.scripts==["corpus-primary.js","corpus-analysis.js","argument-apparatus.js","reader-foundation.js","reader-pages.js","reader-extras.js","reader-context.js","reader.js"]
+assert p.scripts==["corpus-primary.js","corpus-analysis.js","argument-apparatus.js","reader-foundation.js","reader-pages.js","reader-extras.js","reader-context.js","reader-scope.js","reader.js"]
 assert "reader.css" in p.links
 assert all((ROOT/s).is_file() for s in p.scripts)
 assert {"menu","ar","en","focus","bookmark","share","search","settings"}.issubset(set(p.actions))
@@ -66,7 +66,7 @@ assert (ROOT/"README.md").is_file()
 html=STAND.read_text(encoding="utf-8")
 assert html.startswith("<!doctype html>")
 assert "corpus-primary.js" not in html or '<script src="corpus-primary.js"' not in html
-assert html.count("<script>")==8
+assert html.count("<script>")==9
 assert "Late Avicennism" in html
 assert len(html)>540000
 assert all(p in html for p in ['"kind":"mediated"','"id":"av-ix5"','"id":"lah-active"','"id":"lah-making"','"id":"lah-unity"','"id":"ch10"'])
@@ -80,7 +80,7 @@ assert "<link rel=\"stylesheet\"" not in html
 context=json.loads((ROOT/"argument-context.json").read_text(encoding="utf-8"))
 links=json.loads((ROOT/"argument-links.json").read_text(encoding="utf-8"))
 history=json.loads((ROOT/"tradition-coverage.json").read_text(encoding="utf-8"))
-assert len(context["records"])==20
+assert len(context["records"])==22
 assert set(context["records"])=={r["id"] for r in primary["records"]}
 assert len(history["families"])>=16
 assert len(links["debates"])==10
@@ -130,13 +130,13 @@ assert source_heading["lah-eman-cont"][5].startswith("[p. 297]")
 assert source_heading["lah-element"][2].startswith("II.")
 # The two previously omitted units MUST be in the embedded corpus as full
 # contextual source documents, not empty pointers or external citations.
-for uid,word in [("lah-eman-cont","Suhraward"),("lah-element","mixture")]:
+for uid,word in [("lah-making","apricot"),("lah-unity","natural universal"),("lah-eman-cont","Suhraward"),("lah-element","mixture")]:
     assert len(known_by_id[uid]["md"])>8500
     assert word.lower() in known_by_id[uid]["md"].lower()
 
 assert sum(not f["recordIds"] for f in history["families"])>=5
 assert [q for q in context["workSequence"][0]]==[
-  "lah-eman","lah-eman-cont","lah-element",
+  "lah-making","lah-unity","lah-eman","lah-eman-cont","lah-element",
   "lah-active","lah-temporal","lah-divine"
 ]
 assert context["protocol"]["noAutoKeywordPassages"] is True
@@ -168,9 +168,11 @@ assert any(not v["direct"] for v in links["domainEvidence"].values())
 assert any(r["kind"]=="mediated" for r in primary["records"])
 assert "argument-apparatus.js" in HTML.read_text(encoding="utf-8")
 assert "reader-context.js" in HTML.read_text(encoding="utf-8")
-assert "reader-context.js" in HTML.read_text(encoding="utf-8")
+assert "reader-scope.js" in HTML.read_text(encoding="utf-8")
 assert (ROOT/"build_apparatus.py").is_file()
 assert (ROOT/"tradition-coverage.json").is_file()
+assert (ROOT/"TAJRID_DEDUP_AND_POST_ASFAR_SCOPE.json").is_file()
+assert (ROOT/"POST_ASFAR_DISTINCTIVE_DOSSIERS.json").is_file()
 
 print(json.dumps({
     "status":"STATIC PASS; no claim of primary manuscript collation",
