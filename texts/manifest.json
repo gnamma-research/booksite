@@ -122,16 +122,17 @@
         "kalām",
         "philosophy"
       ],
-      "status": "chapter-I-source-verified-remaining-draft",
+      "status": "full-page-working-reader-partially-uncondensed",
       "language": [
         "ar-1912-facsimile",
         "en-page-aligned-preliminary"
       ],
       "url": "texts/al-taftazani/tahdhib-al-kalam/",
       "related_commentary_id": "sanandaji-taqrib-maram",
-      "note": "Cairo 1912 source: Chapter I directly aligned and checked sentence by sentence (27 authorial units on printed pp. 15–17); entire kalām printing also has page-by-page first-pass English coverage, while Chapters II–VI still require full literal verification. Sanandajī commentary is accessible as a layer.",
+      "note": "All 113 original Cairo 1912 kalam pages have page-linked English draft; selected passages are expanded or clause-verified, but 38 of the older 83 thematic units retain gap=true and other portions are not yet fully literal. Not a definitive edition.",
       "full_reader_url": "texts/al-taftazani/tahdhib-al-kalam/complete/",
-      "commentary_layer": "Taqrīb al-Marām · linked selected translations"
+      "commentary_layer": "Taqrīb al-Marām · linked selected translations",
+      "cumulative_reader": "texts/al-taftazani/tahdhib-al-kalam/complete/2026-10-31_cumulative_113_page_reader.md"
     },
     {
       "id": "sanandaji-taqrib-maram",
@@ -145,14 +146,15 @@
         "commentary",
         "philosophy"
       ],
-      "status": "commentary-continuous-opening-plus-selections",
+      "status": "working-draft-and-selected-commentary",
       "language": [
         "ar-selections",
         "en-selections"
       ],
       "url": "texts/al-sanandaji/taqrib-al-maram/",
       "related_matn_id": "taftazani-tahdhib-kalam",
-      "note": "Continuous translation of the main commentary on I:8–12 (PDF pp. 21–25), with additional selective translations and a linked layer on the Tahdhīb reader; both complete volumes remain untranslated."
+      "note": "50-page source-following English draft I:13–62 recovered; Arabic–English selected commentary through I:80, with main text and ḥāshiya distinguished. Next requested 100-page translation I:81–180 is not started as matn remains unfinished.",
+      "cumulative_text": "texts/al-sanandaji/taqrib-al-maram/2026-10-31_parallel_selected_commentary.md"
     },
     {
       "id": "taftazani-tahdhib-logic",
@@ -166,14 +168,15 @@
         "philosophy",
         "methods of inference"
       ],
-      "status": "logic-working-translation-partially-source-verified",
+      "status": "full-Cairo-reading-independent-collation-open",
       "language": [
         "ar",
         "en"
       ],
       "url": "texts/al-taftazani/tahdhib-al-mantiq/",
       "related_kalam_id": "taftazani-tahdhib-kalam",
-      "note": "Continuous working English text in nineteen editorial divisions; 1912 pp. 4–5 verified in fourteen sentence-level units. Remaining logic divisions require exact clause-by-clause checking and commentary collation."
+      "note": "19 bilingual divisions of the Cairo 1912 logic matn restored in source order, including repaired L.11 modalities and removal of an unwitnessed commentary addition in L.16. Explanatory notes and the النظريات/فطريات variant recorded; independent manuscript collation not complete.",
+      "critical_reading": "texts/al-taftazani/tahdhib-al-mantiq/2026-10-31_parallel_reading.md"
     }
   ],
   "research": [
