@@ -11,8 +11,9 @@ from pathlib import Path
 import sys
 
 ROOT=Path(__file__).resolve().parent
-ASSETS=["corpus-primary.js","corpus-analysis.js","reader-foundation.js",
-        "reader-pages.js","reader-extras.js","reader.js"]
+ASSETS=["corpus-primary.js","corpus-analysis.js","argument-apparatus.js",
+        "reader-foundation.js","reader-pages.js","reader-extras.js",
+        "reader-context.js","reader.js"]
 
 def build()->str:
     page=(ROOT/"index.html").read_text(encoding="utf-8")
@@ -35,7 +36,7 @@ if __name__=="__main__":
     out=ROOT/"standalone.html"
     if "--check" in sys.argv:
         assert out.read_text(encoding="utf-8")==html, "Standalone drifted from canonical source"
-        print("Standalone matches all six scripts byte-for-byte")
+        print(f"Standalone matches all {len(ASSETS)} scripts byte-for-byte")
     else:
         out.write_text(html,encoding="utf-8")
         print(f"Built {out}, {out.stat().st_size} bytes")
