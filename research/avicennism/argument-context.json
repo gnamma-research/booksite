@@ -692,6 +692,61 @@
         "giver"
       ],
       "missing": "Textual/terminological comparison with Ṣadrā's independent Asfār discussions; direct verification of cited Sufi/Akbarian passages."
+    },
+    "nara-presence": {
+      "part": "Jāmiʿ al-afkār wa-nāqid al-anẓār, vol. II, divine knowledge, first inquiry, third way, first preliminary",
+      "locator": "Arabic edited print pp.25–27. The preliminary and third proof continue after p.27.",
+      "question": "How can the subject apprehend itself and its bodily faculties without an added representative image?",
+      "immediatePrior": "The preceding distinction between acquired conceptual knowledge and the object existing outside the mind; prior senses and abstraction argument.",
+      "base": "The intellectual subject's awareness of itself is grounded in immediate presence, not an added universal representation.",
+      "objections": "Faculty differences might be due only to varying impairments; perhaps a stronger imaginative or estimative power eventually apprehends universals.",
+      "reply": "Narāqī answers the faculty objection conditionally, distinguishes immaterial intellection, then uses uniquely indexical self-knowledge, a regress of representing images, pain and bodily-faculty awareness to motivate presential cognition.",
+      "continuation": "The awareness of particular images and faculties continues on the next page; a second preliminary through Bahmanyār and the conclusion of divine knowledge follow much later.",
+      "sections": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "extent": "Three consecutive checked printed pages with selected original anchors and argument-level translations; no full third proof or line-aligned Arabic.",
+      "confidence": "contextual-three-pages-not-full-proof",
+      "sourceVoice": "Narāqī is the direct author; the 'if it is said' opponents are anonymous as reported by him.",
+      "comparisons": [
+        "mind",
+        "presence"
+      ],
+      "missing": "Printed pp.28 onward; Bahmanyār source in al-Taḥṣīl; independently source direct Ṣadrian presential knowledge passages and later Qajar replies.",
+      "sourceGrade": "contextual-three-pages-not-full-proof"
+    },
+    "sabz-motion": {
+      "part": "Sharḥ al-Manẓūma / Ghurar al-farāʾid, natural philosophy, section/ghurar no.111",
+      "locator": "Modern annotated printed vol. IV pp.301–302 and 305; pp.303–304 were not independently accessed.",
+      "question": "How can substantial motion have a persistent subject if the natural substance itself flows?",
+      "immediatePrior": "Earlier ghurar on body, matter, form, and which categories admit movement, especially no.110 immediately preceding.",
+      "base": "The substantial nature's real existence is a flowing actuality and need not have a separate stationary substantial subject.",
+      "objections": "Avicenna's Physics II.3 argues either an underlying species remains (then only an accident changes) or it does not (then every intermediate stage is a new substance).",
+      "reply": "The later passage reframes the subject as the intrinsically flowing existence itself; the further subject-in-matter qualification invokes continuous individual determinations, but the modern annotator's notes cannot be conflated with Sabzavārī.",
+      "continuation": "Following ghurar no.112 addresses numerical/specific unity of motion; missing pp.303–304 of no.111 remain uncollated.",
+      "sections": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "extent": "Connected beginning pp.301–302 and separate p.305 only; printed witness has Sabzavārī and Hasan Ḥasanzāda Āmulī interleaved.",
+      "confidence": "incomplete-pages-composite-with-modern-gloss",
+      "sourceVoice": "Sabzavārī's introductory verse certain; printed exposition may include later Hasan Ḥasanzāda Āmulī remarks marked (ح.ح); Avicenna is quoted within the printed source.",
+      "comparisons": [
+        "motion-subject",
+        "motion"
+      ],
+      "missing": "Directly inspect pp.303–304, mark exact verse/commentator/gloss divisions and compare a pre-Ḥasanzāda print plus original Physics II.3.",
+      "sourceGrade": "incomplete-pages-composite-with-modern-gloss"
     }
   },
   "tradition": {
