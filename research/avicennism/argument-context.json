@@ -1,0 +1,1109 @@
+{
+  "version": "2026-10-31-argument-context-audit",
+  "purpose": "Historical argument provenance, not literary keywords. Each passage must be read within its own source and identified reply chain.",
+  "records": {
+    "av-vi1": {
+      "part": "al-Shifāʾ, Metaphysics (Ilāhiyyāt), Book VI, Chapter 1",
+      "locator": "Anawati–Zāyid edited Arabic, printed pp.257–263",
+      "question": "What counts as a cause of existence, rather than a cause merely of coming-to-be?",
+      "immediatePrior": "The earlier metaphysical division of being and its concomitants leads to the general division of material, formal, efficient and final causes.",
+      "base": "The agent as giver of existence is distinguished from a physical principle of motion.",
+      "objections": "The effect may allegedly cease to need its cause once the cause has produced it, as with a built house.",
+      "reply": "Only the builder's preparatory activity has ceased; the contingent existent still needs an abiding cause of being for as long as it exists.",
+      "continuation": "VI.2 answers father/builder/fire counterexamples and distinguishes essential from preparatory causes.",
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extent": "Entire bounded authorial chapter in working English, not fully aligned with the Arabic witness.",
+      "confidence": "working-translation-unverified",
+      "sourceVoice": "Ibn Sīnā, author",
+      "comparisons": [
+        "dependence",
+        "giver",
+        "created"
+      ],
+      "missing": "Sentence-to-sentence Arabic checking and edition variant collation.",
+      "id": "av-vi1",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "working-translation-unverified"
+    },
+    "av-vi2": {
+      "part": "al-Shifāʾ, Metaphysics, Book VI, Chapter 2",
+      "locator": "Anawati–Zāyid, pp.263–267",
+      "question": "Why must an essential cause accompany its effect if builders and parents can disappear?",
+      "immediatePrior": "VI.1 has established that contingent existence depends on a cause while it exists.",
+      "base": "An artisan or natural parent is not necessarily the continuing existential cause of the resulting form.",
+      "objections": "Father-child, builder-house and fire-heat counterexamples; apparent infinite regress of changing conditions.",
+      "reply": "Preparatory movements and temporal conditions may succeed; essential actual causes accompany their effects. Continuously changing motion avoids the false series of discrete instants.",
+      "continuation": "VI.3 concerns further causal relations; IX.5 specifies the distinct form-bestowing and material-preparatory levels.",
+      "sections": [
+        1
+      ],
+      "extent": "One continuous VI.2 working translation under a single top-level section with several internal subsections.",
+      "confidence": "working-translation-unverified",
+      "sourceVoice": "Ibn Sīnā",
+      "comparisons": [
+        "dependence",
+        "temporal",
+        "giver"
+      ],
+      "missing": "Collate the Arabic paragraph boundaries and the natural-philosophy arguments on generation.",
+      "id": "av-vi2",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "working-translation-unverified"
+    },
+    "av-ix5": {
+      "part": "al-Shifāʾ, Metaphysics, Book IX, Chapter 5",
+      "locator": "Anawati–Zāyid pp.409–413",
+      "question": "How do sublunary elements obtain differing substantial forms through celestial and separate causes?",
+      "immediatePrior": "IX.4 develops the order of separate intelligences and celestial causes; VI.2 has distinguished preparatory from abiding efficient causes.",
+      "base": "Matter receives a determinate readiness through natural/celestial changes and a form from a separate giver.",
+      "objections": "The theory that elemental differences arise solely from friction, heat, cooling and rarefaction presupposes body without any specific form.",
+      "reply": "The subject must already be constituted by some form; natural preparation is real but not the whole ontological account.",
+      "continuation": "IX.6 turns to providence and evil; compare Lāhījī's direct retelling in Gawhar Section V.",
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extent": "Bounded chapter working English; eight Arabic lemmata are anchors rather than a complete aligned original.",
+      "confidence": "working-translation-unverified",
+      "sourceVoice": "Ibn Sīnā; rival view explicitly reported then criticised",
+      "comparisons": [
+        "giver",
+        "motion"
+      ],
+      "missing": "Check full Arabic paragraphs and lexical readings against independent edition.",
+      "id": "av-ix5",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "working-translation-unverified"
+    },
+    "lah-shaw": {
+      "part": "Shawāriq al-ilhām, vol.I, issues 23 and 24 of the general ontology arguments",
+      "locator": "printed I:90–93",
+      "question": "Can intrinsically contingent being possess an intrinsic preference or merely extrinsic preponderance that explains actuality short of necessity?",
+      "immediatePrior": "The division of necessary, possible and impossible establishes that neither alternative is intrinsically necessary; it does not by itself rule out a weak intrinsic preference.",
+      "base": "A contingent effect does not occur unless its existence becomes necessary through its cause.",
+      "objections": "Taftāzānī distinguishes several meanings of preference; later objections question whether weak preference is possible and whether an extrinsic cause really necessitates.",
+      "reply": "The sufficiency requirement targets preference adequate for occurrence, not every conceivable inclination; the later author's objections and replies must remain attributed.",
+      "continuation": "The following lemma concerns antecedent and consequent necessity, which is not translated in this fascicle.",
+      "sections": [
+        1,
+        2
+      ],
+      "extent": "Two explicitly bounded issues, but the edition prints reported Taftāzānī/Jurjānī/Dawwānī voices rather than independent collations.",
+      "confidence": "working-translation-with-nested-voices",
+      "sourceVoice": "Lāhījī quoting or paraphrasing Ṭūsī, Taftāzānī, Jurjānī, Dawwānī",
+      "comparisons": [
+        "choice",
+        "making",
+        "dependence"
+      ],
+      "missing": "Original editions for every quoted interlocutor and the p.92 problematic negation.",
+      "id": "lah-shaw",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "working-translation-with-nested-voices"
+    },
+    "aq-104a": {
+      "part": "Summa theologiae I, quaestio 104, articles 1 and 2",
+      "locator": "Leonine Latin, Corpus Thomisticum §§32757–32774",
+      "question": "Does each creature require conservation by God, and can intermediary creatures conserve?",
+      "immediatePrior": "Earlier creation theology distinguishes giving esse from imposing a particular new natural form.",
+      "base": "Every created existent depends continuously on God as primary conserving cause; some effects are also conserved by intermediary causes.",
+      "objections": "Builder/house counterexample, incorruptible creature, conservation as a new action; then objection that immediate creation entails only immediate conservation.",
+      "reply": "Conservation is the continuation of the giving of being, not a new movement; created causes may conserve subordinately.",
+      "continuation": "Articles 3 and 4 distinguish the possibility of annihilation from whether it occurs.",
+      "sections": [
+        1,
+        2
+      ],
+      "extent": "Two complete bounded scholastic articles in English, with source Latin anchors only.",
+      "confidence": "working-translation-unverified",
+      "sourceVoice": "Aquinas; each article: objections, sed contra, respondeo, replies",
+      "comparisons": [
+        "dependence",
+        "created",
+        "giver"
+      ],
+      "missing": "Latin variant apparatus; do not assimilate to Avicenna's separate form-bestowing scheme.",
+      "id": "aq-104a",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "working-translation-unverified"
+    },
+    "aq-104b": {
+      "part": "Summa theologiae I, q.104, articles 3 and 4",
+      "locator": "Leonine Latin §§32775–32790",
+      "question": "Can God withhold existence, and does God actually reduce any creature to nothing?",
+      "immediatePrior": "Articles 1 and 2 establish continuous divine causality and permit subordinated conserving causes.",
+      "base": "The capacity to withhold existence follows from free divine giving, but Aquinas argues that no creature is in fact annihilated.",
+      "objections": "Whether free divine agency can cease its sustaining action; whether the finite powers of creatures entail eventual annihilation.",
+      "reply": "Distinguish a possible act of withdrawal from what God actually does.",
+      "continuation": "Question 105 treats divine agency in created things.",
+      "sections": [
+        1,
+        2
+      ],
+      "extent": "Two complete scholastic articles in new working English.",
+      "confidence": "working-translation-unverified",
+      "sourceVoice": "Aquinas",
+      "comparisons": [
+        "created",
+        "choice"
+      ],
+      "missing": "Do not treat Aquinas's free will as contained in Avicenna's contingency proof.",
+      "id": "aq-104b",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "working-translation-unverified"
+    },
+    "lah-eman": {
+      "part": "Gawhar-i murād, Article II, Book III, Section IV, beginning",
+      "locator": "Persian pp.290–293 of a chapter continuing to p.297",
+      "question": "How can the absolutely One produce many beings while remaining simple?",
+      "immediatePrior": "The preceding demonstrations of causal simplicity and a Necessary Existent.",
+      "base": "One effect proceeds directly; derivative aspects of the first intellect mediate multiplicity.",
+      "objections": "Direct plurality would require distinct respects in the absolute One; explanatory intermediaries appear to violate divine causal unity.",
+      "reply": "Derived respects belong to the first intellect; intermediaries do not independently originate existence.",
+      "continuation": "The original chapter continues pp.294–297 with revealed language, ten-intellect count, Ṭūsī's reading, and Suhrawardī's fixed-star objection, now restored in a separate continuation record.",
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extent": "ONLY the opening pp.290–293 of an eight-page chapter. Not a complete chapter by itself.",
+      "confidence": "contextual-rendering-checked-pages",
+      "sourceVoice": "Lāhījī with a reported philosophers' proof; later attribution to Ṭūsī and Suhrawardī is in continuation",
+      "comparisons": [
+        "one",
+        "giver",
+        "concept"
+      ],
+      "missing": "Must be read together with lah-eman-cont pp.294–297.",
+      "id": "lah-eman",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "contextual-rendering-checked-pages"
+    },
+    "lah-eman-cont": {
+      "part": "Gawhar-i murād, Article II, Book III, Section IV, conclusion",
+      "locator": "Persian pp.294–297, directly accessible page-linked text",
+      "question": "What supports the identification of the first intellect, how fixed is the ten-intellect count, and what answers Suhrawardī's plurality objection?",
+      "immediatePrior": "Section IV pp.290–293 proves one immediate emanation and derivative plurality through intelligible respects.",
+      "base": "The count ten is not proved to be a maximum; multiple effects can follow in the third level through ordered mediating relations.",
+      "objections": "Reported Suhrawardian complaint that early intellects lack enough respects to account for fixed stars.",
+      "reply": "Lāhījī introduces twelve third-level possibilities from distinct indirect channels; this undermines the simple objection but is not a physical count.",
+      "continuation": "Section V immediately tests the causal theory against elemental forms, mixture and Avicenna's hylomorphic refutation of friction-only physics.",
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extent": "Working page-ordered English for the complete omitted four-page continuation.",
+      "confidence": "contextual-rendering-checked-pages",
+      "sourceVoice": "Lāhījī, exegetical reports, Rāzī in tafsīr as reported, Ṭūsī gloss as reported, Suhrawardī objection as reported",
+      "comparisons": [
+        "one",
+        "giver"
+      ],
+      "missing": "Independent verification of the Rāzī, Ṭūsī and Suhrawardī original loci; no manuscript collation.",
+      "id": "lah-eman-cont",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "contextual-rendering-checked-pages"
+    },
+    "lah-element": {
+      "part": "Gawhar-i murād, Article II, Book III, Section V",
+      "locator": "Persian pp.298–300, immediately after IV and before VI",
+      "question": "Why do the four elements have different species forms and how do their mixtures prepare composite natural forms?",
+      "immediatePrior": "Section IV argues for multiple effects through a structured order of intellects.",
+      "base": "The view that friction alone produces the elements presupposes a body constituted without any specific form.",
+      "objections": "An unnamed group's friction and cooling hypothesis is reported by Avicenna then rejected by him as retold by Lāhījī.",
+      "reply": "The separate intellect bestows forms in concert with celestial/natural preparations; distinct mixtures prepare matter for further composite species.",
+      "continuation": "Section VI asks why the specific tenth intellect, rather than an earlier or horizontal species-lord, explains the plurality of rational souls and natural forms.",
+      "sections": [
+        1,
+        2,
+        3
+      ],
+      "extent": "Previously omitted complete three-page working contextual English rendering of Section V.",
+      "confidence": "contextual-rendering-checked-pages",
+      "sourceVoice": "Lāhījī narrates Ibn Sīnā's quotation of an unnamed group, his objection and replacement explanation",
+      "comparisons": [
+        "giver",
+        "motion"
+      ],
+      "missing": "Independent comparison of the *Shifāʾ* and *Mabdaʾ wa-l-maʿād* source text beyond the existing working IX.5.",
+      "id": "lah-element",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "contextual-rendering-checked-pages"
+    },
+    "lah-active": {
+      "part": "Gawhar-i murād, Article II, Book III, Section VI",
+      "locator": "Persian pp.301–303",
+      "question": "Which separate principle causes rational souls and natural forms when individuals of one species are numerically many?",
+      "immediatePrior": "Section V has argued that the elements' material dispositions, mixtures and composite forms cannot be explained by friction alone.",
+      "base": "The tenth intellect causes the specific form of rational souls and natural kinds, while their numerical individuation depends on differentiated preparedness of bodies.",
+      "objections": "First Cause alone, first intellect, or celestial bodies cannot explain multiplicity of individuals in one species in the manner assumed.",
+      "reply": "The tenth intellect is positioned at the relevant sublunary level, and different respects and material conditions account for species/individual differences.",
+      "continuation": "Section VII explains why contingent temporal events can arise under an eternal causal order.",
+      "sections": [
+        1
+      ],
+      "extent": "Entire short Section VI in working English with Persian print source-linked.",
+      "confidence": "contextual-rendering-checked-pages",
+      "sourceVoice": "Lāhījī; draws on Ibn Sīnā and Illuminationist species-lords as reported",
+      "comparisons": [
+        "giver",
+        "one"
+      ],
+      "missing": "Precise medieval source genealogy of the 'lords of species' critique.",
+      "id": "lah-active",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "contextual-rendering-checked-pages"
+    },
+    "lah-temporal": {
+      "part": "Gawhar-i murād, Article II, Book III, Section VII",
+      "locator": "Persian pp.304–306",
+      "question": "How is this event produced at its precise time by an order rooted in eternal causes?",
+      "immediatePrior": "Section VI assigns specific forms and souls to the tenth intellect; the present question concerns when the matter becomes prepared.",
+      "base": "Distinguish the cause of existence itself from the additional cause that specifies the time of a temporally novel event.",
+      "objections": "Why does an event not follow an eternally complete cause at once? Would a regress of new causes be required?",
+      "reply": "A continuous motion yields varying dispositions, with proximate preparedness specifying a time and existential effusion following the completed conditions.",
+      "continuation": "Section VIII turns to divine willing, intent, satisfaction, and the good resulting from actions.",
+      "sections": [
+        1,
+        2,
+        3
+      ],
+      "extent": "Entire short Persian Section VII (pp.304–306) in working English.",
+      "confidence": "contextual-rendering-checked-pages",
+      "sourceVoice": "Lāhījī contrasts philosophers and theologians in the causal-ground question",
+      "comparisons": [
+        "temporal",
+        "dependence"
+      ],
+      "missing": "Independent verification of quoted general scholastic positions; historical celestial astronomy remains a presupposition.",
+      "id": "lah-temporal",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "contextual-rendering-checked-pages"
+    },
+    "lah-divine": {
+      "part": "Gawhar-i murād, Article II, Book III, Section VIII",
+      "locator": "Persian pp.307–309",
+      "question": "Can the First Cause will the benefit of others without acquiring perfection for himself?",
+      "immediatePrior": "Section VII established existential and temporal causal dependence; this chapter examines the mode and goal of highest agency.",
+      "base": "Lāhījī distinguishes a non-acquisitive divine approval or riḍā from a deliberative qaṣd seeking an end for the agent.",
+      "objections": "How can a perfect agent intend benefit without gaining perfection? Theologians dispute whether purposes in divine acts are valid.",
+      "reply": "He offers a possible terminological reconciliation with some Muʿtazilī positions, while rejecting blind natural compulsion.",
+      "continuation": "The next textual division begins after p.309 and has not been included in the present segment.",
+      "sections": [
+        1,
+        2,
+        3
+      ],
+      "extent": "Entire short Section VIII with explicit voice shifts in working English.",
+      "confidence": "contextual-rendering-checked-pages",
+      "sourceVoice": "Lāhījī reports philosophers, Ashʿarī and Muʿtazilī positions with his own proposed reconciliation",
+      "comparisons": [
+        "choice",
+        "created"
+      ],
+      "missing": "Direct independent editions of the theological positions he generalizes.",
+      "id": "lah-divine",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "contextual-rendering-checked-pages"
+    },
+    "lah-sarmaya": {
+      "part": "Sarmāya-i īmān, section on contingency, preference, and causal dependence",
+      "locator": "Persian pp.37–38; argument continues around p.39",
+      "question": "Why does possible existence need a cause for its continuance?",
+      "immediatePrior": "Dispute over whether a weaker preference than necessity can explain actual existence.",
+      "base": "Continuing need derives from intrinsic possibility, not merely temporal origination.",
+      "objections": "Builder/potter analogy: their effects remain after their actions cease.",
+      "reply": "Builders effect movements and preparations, not the continuing existence of the composite in the relevant respect.",
+      "continuation": "The p.39 follow-on needs boundary checking before describing the unit as complete.",
+      "sections": [
+        1,
+        2
+      ],
+      "extent": "Two-page bounded passage; not demonstrated as the full historical chapter.",
+      "confidence": "selective-paraphrase",
+      "sourceVoice": "Lāhījī in an independent Persian short creed",
+      "comparisons": [
+        "dependence"
+      ],
+      "missing": "Collate the full preceding and subsequent textual division of this creed.",
+      "id": "lah-sarmaya",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "selective-paraphrase"
+    },
+    "taft-mental": {
+      "part": "Sharḥ al-Maqāṣid, mental existence section",
+      "locator": "Printed pp.78–79 only; preliminaries selective",
+      "question": "Must the object of conception have a mode of mental existence, or is an intentional relation enough?",
+      "immediatePrior": "Proofs appeal to universals, absent objects and affirmative predication.",
+      "base": "The intelligible content's determination differs from an external instantiation.",
+      "objections": "Understanding heat would heat the intellect; contemplating the heavens would require enormous space; nonexistents in mind would be external.",
+      "reply": "Mental representation lacks the physical effects and individuating status of extra-mental heat/heavens.",
+      "continuation": "Surrounding logical and ontological premises are not fully translated and must be restored from earlier pages.",
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extent": "Selected p.78 introduction, and p.79 objection/reply; no complete full chapter.",
+      "confidence": "selective-excerpt",
+      "sourceVoice": "Taftāzānī with reported Mawāqif positions",
+      "comparisons": [
+        "mind"
+      ],
+      "missing": "Full contiguous context and independent al-Ījī witness.",
+      "id": "taft-mental",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "selective-excerpt"
+    },
+    "jurj-mental": {
+      "part": "al-Mawāqif / Sharḥ al-Mawāqif, composite edition vol.VI",
+      "locator": "Printed VI:7–8 with interleaved glosses",
+      "question": "If mental form is present, do physical contrary qualities and celestial magnitude inhabit the intellect?",
+      "immediatePrior": "Arguments about cognition and mental existence in the matn and sharḥ.",
+      "base": "Differentiation between the individual external reality and the known quiddity.",
+      "objections": "Knowledge of black/white would instantiate contraries; apprehending a mountain exceeds mind's dimensions.",
+      "reply": "The mental form is not the external hāwiyya with physical accidents; the latter is what cannot inhabit the intellect.",
+      "continuation": "Anonymous marginal responses need attribution and surrounding text from each gloss.",
+      "sections": [
+        1,
+        2
+      ],
+      "extent": "Two printed pages in a composite text; not an independently separated edition of each gloss.",
+      "confidence": "layered-attribution-uncertain",
+      "sourceVoice": "al-Ījī matn, al-Jurjānī sharḥ, anonymous glosses NOT assigned individually to Siyālkūtī or Ḥalabī",
+      "comparisons": [
+        "mind"
+      ],
+      "missing": "Visual audit of column/footnote separation and full surrounding commentarial sequence.",
+      "id": "jurj-mental",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "layered-attribution-uncertain"
+    },
+    "taha-jal": {
+      "part": "Kashshāf iṣṭilāḥāt al-funūn, entry al-jaʿl",
+      "locator": "Vol.I pp.620–621",
+      "question": "Does the maker produce a thing simpliciter or produce the relation of a quiddity's existing?",
+      "immediatePrior": "Technical distinction between simple and compound making in a lexicon.",
+      "base": "The entry reports conflicting doctrines, quoting Mīr Zāhid's gloss on Sharḥ al-Mawāqif.",
+      "objections": "Making quiddity itself seems circular; making existence a separate object threatens regress or conceptualism.",
+      "reply": "Opposed arguments are catalogued; the lexicon is not itself an adjudicated independent Mīr Zāhid edition.",
+      "continuation": "Original Mīr Zāhid ḥāshiya and the named Sullam glosses require extraction in their own contexts.",
+      "sections": [
+        1,
+        2,
+        3
+      ],
+      "extent": "Two-page lexical argument entry only; cited earlier voice is mediated.",
+      "confidence": "nested-report",
+      "sourceVoice": "Tahānawī is direct; Mīr Zāhid nested quotation/report, not independently collated",
+      "comparisons": [
+        "making"
+      ],
+      "missing": "Direct Mīr Zāhid witness and its matn and scholastic reply.",
+      "id": "taha-jal",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "nested-report"
+    },
+    "astar-choice": {
+      "part": "al-Barāhīn al-qāṭiʿa, vol.II, discussion of divine power and causal modality",
+      "locator": "II:96–99",
+      "question": "Can the full cause necessitate the act without abolishing genuine divine power or choice?",
+      "immediatePrior": "Definition of divine power as ability to act and refrain under relevant considerations.",
+      "base": "An effect is possible in itself, necessary given a completed cause, impossible when required causes are absent.",
+      "objections": "Qūshjī's reported answer faces al-Khafrī's objection: if divine will is identical with essence, how can it be otherwise? A Khwānsārī point probes the temporal object.",
+      "reply": "The later author explores newly arising will or a distinct temporal object; quoted voices cannot be treated as verified originals.",
+      "continuation": "Check subsequent and preceding pages of the printed author; separately collate Qūshjī/Khafrī/Jamāl Khwānsārī.",
+      "sections": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extent": "Argument reported in a later author; independent editions of cited historical interlocutors missing.",
+      "confidence": "nested-report",
+      "sourceVoice": "Astarābādī direct; Ṭūsī, Ḥillī, Qūshjī, Khafrī, Āqā Jamāl Khwānsārī mediated",
+      "comparisons": [
+        "choice"
+      ],
+      "missing": "Full source genealogy and page/folio collation of each named speaker.",
+      "id": "astar-choice",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "nested-report"
+    },
+    "nara-actual": {
+      "part": "al-Lamaʿāt al-ʿarshiyya, separate arguments about existence and quiddity",
+      "locator": "Arabic pp.72 and 82, noncontiguous",
+      "question": "If existence is primary, how can quiddity be distinguished without reifying two external entities?",
+      "immediatePrior": "Existence/quiddity predication and the question whether existence attaches to a prior thing.",
+      "base": "Particular existence is primary in actuality; quiddity is abstracted from determinate limiting aspects.",
+      "objections": "If existence precedes quiddity, predicate precedes subject; if subsequent, regress; if separate, no unity.",
+      "reply": "The attribution is intellectual; external actual individuality is not two self-standing objects.",
+      "continuation": "The omitted pp.73–81 must not be silently bridged as one continuous proof.",
+      "sections": [
+        1,
+        2
+      ],
+      "extent": "Two disconnected source excerpts, **not** a contiguous argument, with different contexts.",
+      "confidence": "noncontiguous-selective",
+      "sourceVoice": "Narāqī author",
+      "comparisons": [
+        "concept",
+        "making"
+      ],
+      "missing": "Acquire and translate pp.73–81 to identify the intervening arguments and transitions.",
+      "id": "nara-actual",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "noncontiguous-selective"
+    },
+    "nara-second": {
+      "part": "Sharḥ Ilāhiyyāt al-Shifāʾ, commentary on metaphysics' subject and attributes",
+      "locator": "Vol.I pp.106–107, plus separate note p.110",
+      "question": "How are general attributes of being distinguished from logical second intentions?",
+      "immediatePrior": "Avicennian account of the subject of metaphysics and shared principles of sciences.",
+      "base": "Being-as-being's concomitants can be distinguished from properties predicated of intelligibles qua intelligible.",
+      "objections": "The proposed criterion risks reducing real attributes to mere classifications.",
+      "reply": "Attributes of second intentions presuppose an intelligible subject; metaphysics has broader subject matter.",
+      "continuation": "p.110 is a separate textual-critical report of a negation, not continuous part of p.106–107.",
+      "sections": [
+        1,
+        2
+      ],
+      "extent": "Bounded pp.106–107 with noncontiguous p.110 textual note.",
+      "confidence": "partial-with-discrete-variant",
+      "sourceVoice": "Narāqī with reported opponent and reported copy variants",
+      "comparisons": [
+        "mind",
+        "concept"
+      ],
+      "missing": "Separate the source's original Avicennian lemma and its commentary in a double-column witness.",
+      "id": "nara-second",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "partial-with-discrete-variant"
+    },
+    "khay-fire": {
+      "part": "al-Hadiyya al-saʿīdiyya, reported arguments from original printed pp.92–94",
+      "locator": "Cairo 1904, quoted in secondary modern history 2023 pp.202–203",
+      "question": "Does hidden imported fire explain heat, or do local transformations suffice?",
+      "immediatePrior": "Debate with a latent-fire hypothesis in nineteenth-century natural philosophy.",
+      "base": "Arguments from friction, sealed vessels, pressure and ice challenge occult influx accounts of thermal change.",
+      "objections": "Claim that incoming subtle fire is required for change.",
+      "reply": "Cited experiments and cases support transformation in the medium; modern physical truth is not settled.",
+      "continuation": "The original 1904 print and wider motion/time/atoms chapters remain uncollated.",
+      "sections": [
+        1
+      ],
+      "extent": "Modern quotation with historical page attribution, not direct 1904 text.",
+      "confidence": "mediated-quotation",
+      "sourceVoice": "Khayrābādī as represented by a modern writer, not an independently read original",
+      "comparisons": [
+        "motion"
+      ],
+      "missing": "Original 1904 Arabic source, full chapter, and distinguishing Faḍl-i Ḥaqq from other Khayrābādīs.",
+      "id": "khay-fire",
+      "requiredBoundaries": [
+        "heading of current chapter",
+        "immediately preceding lemma",
+        "objection or target view",
+        "author's answer",
+        "subsequent result"
+      ],
+      "sourceGrade": "mediated-quotation"
+    }
+  },
+  "tradition": {
+    "version": "2026-10-31-coverage-audit",
+    "claim": "This is a historical coverage map and acquisition plan, NOT an exhaustive edition.",
+    "families": [
+      {
+        "id": "earliest",
+        "title": "Avicenna and earliest appropriations",
+        "period": "eleventh–twelfth centuries",
+        "languages": "Arabic / Persian",
+        "works": [
+          "Ibn Sīnā — al-Shifāʾ: Ilāhiyyāt, Ṭabīʿiyyāt, Nafs",
+          "al-Ishārāt wa-l-tanbīhāt",
+          "Bahmanyār — al-Taḥṣīl",
+          "Abū al-Barakāt al-Baghdādī — al-Kitāb al-Muʿtabar",
+          "al-Ghazālī — Maqāṣid al-falāsifa / Tahāfut al-falāsifa"
+        ],
+        "task": "Reconstruct which claims were transmitted as mathematical/natural science, metaphysics, psychology and logic before later school labels.",
+        "status": "partial-primary",
+        "recordIds": [
+          "av-vi1",
+          "av-vi2",
+          "av-ix5"
+        ],
+        "referenceIds": [
+          "wisnovsky",
+          "sepmet"
+        ]
+      },
+      {
+        "id": "razy",
+        "title": "Rāzian critical transformation",
+        "period": "twelfth–thirteenth centuries",
+        "languages": "Arabic",
+        "works": [
+          "Fakhr al-Dīn al-Rāzī — al-Mabāḥith al-mashriqiyya",
+          "al-Muḥaṣṣal",
+          "Sharḥ al-Ishārāt",
+          "al-Maṭālib al-ʿāliya",
+          "al-Rāzī's interlocutors, including Abū al-Barakāt"
+        ],
+        "task": "Recover each Rāzian objection in its own chapter and follow the particular response, not just its later scholastic citation.",
+        "status": "untranslated-original",
+        "recordIds": [],
+        "referenceIds": [
+          "wisnovsky",
+          "sepmet"
+        ]
+      },
+      {
+        "id": "abha",
+        "title": "Abharī, Khūnajī, Urmawī and Kātibī",
+        "period": "thirteenth century",
+        "languages": "Arabic",
+        "works": [
+          "Athīr al-Dīn al-Abharī — Hidāyat al-ḥikma, Kashf al-ḥaqāʾiq",
+          "Afḍal al-Dīn al-Khūnajī — Kashf al-asrār, al-Jumal",
+          "Sirāj al-Dīn al-Urmawī — Maṭāliʿ al-anwār",
+          "Najm al-Dīn al-Kātibī — Ḥikmat al-ʿayn, al-Shamsiyya"
+        ],
+        "task": "Distinguish revised modal logic and subject matter of logic from the related, but distinct, natural-philosophy treatises.",
+        "status": "no-direct-primary",
+        "recordIds": [],
+        "referenceIds": [
+          "elrou",
+          "street"
+        ]
+      },
+      {
+        "id": "isharat",
+        "title": "The Ishārāt commentary-and-adjudication cycle",
+        "period": "thirteenth–fifteenth centuries",
+        "languages": "Arabic",
+        "works": [
+          "Ibn Sīnā — al-Ishārāt",
+          "Fakhr al-Dīn al-Rāzī — Sharḥ al-Ishārāt",
+          "Naṣīr al-Dīn al-Ṭūsī — Ḥall mushkilāt al-Ishārāt",
+          "Quṭb al-Dīn al-Rāzī al-Taḥtānī — al-Muḥākamāt",
+          "Later glosses on those works"
+        ],
+        "task": "Translate the common Avicennian lemma plus Rāzī's objection, Ṭūsī's answer and Quṭb's adjudication as one documented debate.",
+        "status": "no-independent-collation",
+        "recordIds": [],
+        "referenceIds": [
+          "wisnovsky",
+          "elrou"
+        ]
+      },
+      {
+        "id": "tajrid",
+        "title": "The Tajrīd, Kashf and Sharḥ commentary trees",
+        "period": "thirteenth–eighteenth centuries",
+        "languages": "Arabic / Persian",
+        "works": [
+          "Ṭūsī — Tajrīd al-iʿtiqād",
+          "al-ʿAllāma al-Ḥillī — Kashf al-murād",
+          "al-Iṣfahānī — Sharḥ al-Tajrīd",
+          "ʿAlī Qūshjī — al-Sharḥ al-jadīd",
+          "Dawwānī, Dashtakī, al-Khafrī, Lāhījī and later superglosses"
+        ],
+        "task": "Always anchor each commentary to the identical matn sentence and distinguish opposite disputants and reported testimony.",
+        "status": "selective-later",
+        "recordIds": [
+          "lah-shaw",
+          "astar-choice"
+        ],
+        "referenceIds": [
+          "balik",
+          "wisnovsky"
+        ]
+      },
+      {
+        "id": "kalam",
+        "title": "Post-Rāzian philosophical kalām",
+        "period": "fourteenth–seventeenth centuries",
+        "languages": "Arabic",
+        "works": [
+          "al-Ījī — al-Mawāqif",
+          "al-Jurjānī — Sharḥ al-Mawāqif",
+          "al-Taftāzānī — Sharḥ al-Maqāṣid",
+          "Siyālkūtī, Ḥasan Çelebi, Ḥalabī and other gloss layers"
+        ],
+        "task": "Separate matn, sharḥ, gloss and cited objection; identify the epistemic thesis actually being disputed.",
+        "status": "selective-primary",
+        "recordIds": [
+          "taft-mental",
+          "jurj-mental"
+        ],
+        "referenceIds": [
+          "wisnovsky",
+          "balik"
+        ]
+      },
+      {
+        "id": "logic",
+        "title": "Shamsiyya, second intentions and disputation",
+        "period": "thirteenth–nineteenth centuries",
+        "languages": "Arabic / Persian / Turkish",
+        "works": [
+          "Kātibī — al-Shamsiyya",
+          "Quṭb al-Dīn al-Rāzī — Taḥrīr al-qawāʿid",
+          "Shams al-Dīn al-Samarqandī — works on logic and ādāb al-baḥth",
+          "Taftāzānī — Tahdhīb al-manṭiq",
+          "Indian, Ottoman and North African supercommentaries"
+        ],
+        "task": "Treat logical arguments and philosophy of language as primary parts of late Avicennism, not metaphysical appendices.",
+        "status": "topic-only",
+        "recordIds": [
+          "nara-second"
+        ],
+        "referenceIds": [
+          "street",
+          "elrou"
+        ]
+      },
+      {
+        "id": "ishraqi",
+        "title": "Illuminationist revisions and responses",
+        "period": "twelfth–sixteenth centuries",
+        "languages": "Arabic / Persian",
+        "works": [
+          "Shihāb al-Dīn al-Suhrawardī — Ḥikmat al-ishrāq",
+          "Shams al-Dīn al-Shahrazūrī — commentaries",
+          "Ibn Kammūna — commentaries and al-Jadīd fī l-ḥikma",
+          "Quṭb al-Dīn al-Shīrāzī — Sharḥ Ḥikmat al-ishrāq"
+        ],
+        "task": "Compare logical, ontological and epistemic revisions with their precise Avicennian target.",
+        "status": "no-primary-unit",
+        "recordIds": [],
+        "referenceIds": [
+          "suh",
+          "wisnovsky"
+        ]
+      },
+      {
+        "id": "akbari",
+        "title": "Akbarian philosophical and theological encounters",
+        "period": "thirteenth–nineteenth centuries",
+        "languages": "Arabic / Persian",
+        "works": [
+          "Ibn ʿArabī — al-Futūḥāt, Fuṣūṣ",
+          "Ṣadr al-Dīn al-Qūnawī — philosophical works",
+          "Dāwūd al-Qayṣarī — Sharḥ al-Fuṣūṣ",
+          "Mullā Fanārī — Miṣbāḥ al-uns",
+          "Jāmī and later Akbarian interpretive works"
+        ],
+        "task": "Trace explicit borrowings and disagreements on wujūd, causality and divine knowledge; do not equate every use of tajallī with numerical monism.",
+        "status": "no-primary-unit",
+        "recordIds": [],
+        "referenceIds": [
+          "wisnovsky",
+          "ziai"
+        ]
+      },
+      {
+        "id": "shiraz",
+        "title": "Late Timurid and Shiraz disputations",
+        "period": "fifteenth–seventeenth centuries",
+        "languages": "Arabic / Persian",
+        "works": [
+          "Jalāl al-Dīn al-Dawwānī — post-Tajrīd works",
+          "Ṣadr al-Dīn al-Dashtakī — counterglosses",
+          "Ghiyāth al-Dīn Manṣūr al-Dashtakī — philosophical works",
+          "Shams al-Dīn al-Khafrī — glosses",
+          "Other late Shirazi interlocutors"
+        ],
+        "task": "Separate the Dawwānī–Dashtakī exchange from al-Sayyid al-Sanad (generally Jurjānī).",
+        "status": "reported-only",
+        "recordIds": [
+          "astar-choice"
+        ],
+        "referenceIds": [
+          "iranica",
+          "ziai"
+        ]
+      },
+      {
+        "id": "isfahan",
+        "title": "Safavid Isfahan and competing Avicennisms",
+        "period": "sixteenth–eighteenth centuries",
+        "languages": "Persian / Arabic",
+        "works": [
+          "Mīr Dāmād — al-Qabasāt",
+          "Mīr Fendereskī — philosophical works",
+          "Mullā Ṣadrā — al-Asfār and Shifāʾ glosses",
+          "Mullā Muḥsin Fayḍ and Rajab ʿAlī Tabrīzī",
+          "Lāhījī, Khwānsārī and Sabzawārī correspondence and glosses"
+        ],
+        "task": "Distinguish Ṣadrian new metaphysics from the independent Peripatetic and kalām responses of his contemporaries.",
+        "status": "partial-primary",
+        "recordIds": [
+          "lah-eman",
+          "lah-active",
+          "lah-temporal",
+          "lah-divine",
+          "lah-sarmaya",
+          "lah-shaw"
+        ],
+        "referenceIds": [
+          "iranica",
+          "ziai"
+        ]
+      },
+      {
+        "id": "persianlate",
+        "title": "Late Persian, Qajar and Tehran school",
+        "period": "eighteenth–early twentieth centuries",
+        "languages": "Persian / Arabic",
+        "works": [
+          "Muḥammad Mahdī al-Narāqī — Jāmiʿ al-afkār, Lamaʿāt",
+          "Mullā ʿAlī Nūrī and Mullā Hādī Sabzawārī",
+          "Āqā ʿAlī Zunūzī / Mudarris Ṭihrānī",
+          "Mīrzā Abū al-Ḥasan Jilwa",
+          "Qumshaʾī and late teaching lineages"
+        ],
+        "task": "Recover direct texts on substantial motion, particular existence, soul and physics, instead of assigning group-level doctrines.",
+        "status": "partial-primary",
+        "recordIds": [
+          "nara-actual",
+          "nara-second"
+        ],
+        "referenceIds": [
+          "iranica",
+          "ziai"
+        ]
+      },
+      {
+        "id": "ottoman",
+        "title": "Ottoman and Kurdish-province Hidāya chain",
+        "period": "fifteenth–nineteenth centuries",
+        "languages": "Arabic / Ottoman Turkish",
+        "works": [
+          "Abharī — Hidāyat al-ḥikma",
+          "Qāḍī Mīr Maybudī — Sharḥ al-Hidāya",
+          "Muṣliḥ al-Dīn Lārī — ḥāshiya",
+          "Ottoman supergloss traditions",
+          "Meḥmed Akkirmānī — İklīlü’t-terācim"
+        ],
+        "task": "Work through one full Hidāya lemma, Maybudī's commentary, Lārī's gloss, later reply and Turkish translation before claiming the doctrine settled.",
+        "status": "no-primary-unit",
+        "recordIds": [],
+        "referenceIds": [
+          "turkoz",
+          "balik"
+        ]
+      },
+      {
+        "id": "southasia",
+        "title": "South Asian Shifāʾ, Mawāqif and Dars-e-Niẓāmī",
+        "period": "sixteenth–twentieth centuries",
+        "languages": "Arabic / Persian / Urdu",
+        "works": [
+          "Mīr Zāhid al-Harawī — glosses",
+          "Qāḍī Mubārak Shāh and further ḥawāshī",
+          "Muḥammad ʿAbd al-Ḥaqq al-Khayrābādī",
+          "Faḍl-i Ḥaqq al-Khayrābādī — al-Hadiyya al-saʿīdiyya",
+          "Safavid Shifāʾ commentary manuscripts preserved in India"
+        ],
+        "task": "Differentiate historical authors and manuscript copy/transmission from original composition; do not confuse Faḍl-i Ḥaqq and Muḥammad ʿAbd al-Ḥaqq.",
+        "status": "mediated-selective",
+        "recordIds": [
+          "taha-jal",
+          "khay-fire",
+          "astar-choice"
+        ],
+        "referenceIds": [
+          "panzeca",
+          "khal"
+        ]
+      },
+      {
+        "id": "maghrib",
+        "title": "Western Islamic logic and Khūnajī's Jumal",
+        "period": "fourteenth–seventeenth centuries",
+        "languages": "Arabic",
+        "works": [
+          "Khūnajī — al-Jumal",
+          "Maghribi commentators on al-Jumal",
+          "Ibn Wāṣil / Urmawī lines received westward",
+          "Distinctive local logical handbooks"
+        ],
+        "task": "The western logic tradition was broadly post-Avicennian but not a mere copy of eastern al-Shamsiyya teaching.",
+        "status": "no-primary-unit",
+        "recordIds": [],
+        "referenceIds": [
+          "logicwest"
+        ]
+      },
+      {
+        "id": "modern",
+        "title": "Modern editorial and teaching continuations",
+        "period": "nineteenth–twenty-first centuries",
+        "languages": "Arabic / Persian / Urdu / English",
+        "works": [
+          "Persian explanatory commentary on the Ishārāt",
+          "Modern Ṣadrian and anti-Ṣadrian teaching",
+          "Critical editions of medieval and early modern scholastic works",
+          "Modern philosophical reconstruction and reception studies"
+        ],
+        "task": "Place contemporary scholarship apart from historical authorial witnesses; distinguish modern pedagogy from new primary doctrinal positions.",
+        "status": "bibliographical",
+        "recordIds": [],
+        "referenceIds": [
+          "ziai",
+          "wisnovsky"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "id": "wisnovsky",
+        "title": "Robert Wisnovsky, Avicenna and the Avicennian Tradition (2006)",
+        "url": "https://www.cambridge.org/core/books/abs/cambridge-companion-to-arabic-philosophy/avicenna-and-the-avicennian-tradition/9EF914D6FBF7C8EF3E121B068FAEB00C",
+        "use": "Framing fusion of falsafa and kalām rather than a bounded sect"
+      },
+      {
+        "id": "sepmet",
+        "title": "SEP, Arabic and Islamic Metaphysics, post-Avicennian period",
+        "url": "https://plato.stanford.edu/entries/arabic-islamic-metaphysics/",
+        "use": "Differentiates continuation, revision and rejection"
+      },
+      {
+        "id": "elrou",
+        "title": "Khaled El-Rouayheb, Post-Avicennian Logicians on Subject Matter of Logic (2012)",
+        "url": "https://www.cambridge.org/core/journals/arabic-sciences-and-philosophy/article/abs/postavicennan-logicians-on-the-subject-matter-of-logic-some-thirteenth-and-fourteenthcentury-discussions/FDCA8E8F38780688E983B7CDF631E675",
+        "use": "Khūnajī/Kātibī versus Ṭūsī/Samarqandī/Quṭb al-Dīn al-Rāzī"
+      },
+      {
+        "id": "street",
+        "title": "Tony Street, Kātibī, Taḥtānī, and the Shamsiyya (2016)",
+        "url": "https://academic.oup.com/edited-volume/38657/chapter-abstract/335768982",
+        "use": "Thirteenth-fourteenth-century logical corpus and Qutb al-Din commentarial uptake"
+      },
+      {
+        "id": "turkoz",
+        "title": "Cem Türköz, The Making of an Ottoman Tradition of Natural Philosophy (2026)",
+        "url": "https://dash.harvard.edu/handle/1/42740341",
+        "use": "Ottoman Hidāyat al-ḥikma–Maybudī–Lārī–Akkirmānī axis"
+      },
+      {
+        "id": "panzeca",
+        "title": "Ivana Panzeca, Commentaries of Ibn Sīnā’s Shifāʾ Preserved in India (2023)",
+        "url": "https://iris.unipa.it/handle/10447/666061",
+        "use": "Indian manuscript preservation and independent source streams"
+      },
+      {
+        "id": "balik",
+        "title": "Efe Murat Balıkçıoğlu, Verifying the Truth on Their Own Terms (2022)",
+        "url": "https://edizionicafoscari.unive.it/media/pdf/books/978-88-6969-644-2/978-88-6969-644-2-ch-04_r4MkLs2.pdf",
+        "use": "Ottoman Madāris via Hidāya, Tajrīd and Mawāqif"
+      },
+      {
+        "id": "iranica",
+        "title": "Encyclopaedia Iranica, School of Isfahan",
+        "url": "https://www.iranicaonline.org/articles/isfahan-school-of-philosophy/",
+        "use": "Historically contested labels for Shiraz/Isfahan/Tehran"
+      },
+      {
+        "id": "suh",
+        "title": "SEP Suhrawardī, later Illuminationist commentary",
+        "url": "https://plato.stanford.edu/entries/suhrawardi/",
+        "use": "Ibn Kammūna versus Shahrazūrī commentarial receptions"
+      },
+      {
+        "id": "khal",
+        "title": "Oxford Handbook, Faḍl-i Ḥaqq Khayrābādī's al-Hadiyya",
+        "url": "https://academic.oup.com/edited-volume/38657/chapter-abstract/335770784",
+        "use": "Independent South Asian natural philosophy, motion, time, atomism"
+      },
+      {
+        "id": "logicwest",
+        "title": "Khaled El-Rouayheb, The Development of Arabic Logic (1200–1800), Western tradition",
+        "url": "https://www.schwabeonline.ch/schwabe-xaveropp/elibrary/start.xav?start=%2F%2F%2A%5B%40attr_id%3D%27pdf.978-3-7965-3937-4.9783796539374_V._1350_1600_The_Western_Islamic_Tradition%27+and+%40outline_id%3D%27pdf.978-3-7965-3937-4.9783796539374_V._1350_1600_The_Western_Islamic_Tradition%27%5D",
+        "use": "Maghribi Khūnajī/Jumal branch versus eastern Shamsiyya tradition"
+      },
+      {
+        "id": "ziai",
+        "title": "Hossein Ziai, Recent Trends in Arabic and Persian Philosophy (2006)",
+        "url": "https://www.cambridge.org/core/books/abs/cambridge-companion-to-arabic-philosophy/recent-trends-in-arabic-and-persian-philosophy/E7FEB006A924BE4E4BD416A1D63AE46C",
+        "use": "Shiraz, Isfahan and later Persian philosophical currents"
+      }
+    ],
+    "requirements": [
+      "Historical family -> base work -> work division -> chapter/masʾala -> identical lemma -> objections/replies",
+      "Direct witness or later author's report labelled without substitution",
+      "Original-language translation from enough consecutive context, not keyword snippets",
+      "Variant collation and edition page/folio independently checked",
+      "Reader comparison justified explicitly, with connection and difference",
+      "Unsupported families displayed as unedited, not absent from history"
+    ],
+    "statusLegend": {
+      "partial-primary": "Bounded material present but no complete family corpus",
+      "no-primary-unit": "No directly translated primary unit in current corpus",
+      "untranslated-original": "Named original texts not independently translated",
+      "topic-only": "Some related concepts present but not adequate primary coverage",
+      "mediated-selective": "Quoted/partial/secondary evidence, original sources lacking",
+      "reported-only": "Mediated transmission, independent witness uncollated",
+      "selective-primary": "Small focused primary passages only",
+      "no-independent-collation": "No independent edition-level collation",
+      "bibliographical": "Bibliography and later scholarship only"
+    }
+  },
+  "protocol": {
+    "noAutoKeywordPassages": true,
+    "minimumCompleteArgument": [
+      "base author's exact question and heading",
+      "position being attacked or reported",
+      "objection and reply in order",
+      "historical voice on each claim",
+      "next boundary or continuation",
+      "source URLs and page/folio"
+    ],
+    "statusCodes": {
+      "contextual-rendering-checked-pages": "Direct page sequence inspected; working contextual English, not line-by-line source collation",
+      "working-translation-unverified": "Described as a full working unit, but no sentence-level verification completed",
+      "selective-excerpt": "Only a subsection or objection/reply translated",
+      "noncontiguous-selective": "Separate passages with missing intervening pages",
+      "nested-report": "Original historical author only represented through a later writer",
+      "layered-attribution-uncertain": "Mixed matn, sharḥ and anonymous glosses",
+      "mediated-quotation": "Historical excerpt quoted in a modern source, original not read"
+    }
+  },
+  "workSequence": [
+    [
+      "lah-eman",
+      "lah-eman-cont",
+      "lah-element",
+      "lah-active",
+      "lah-temporal",
+      "lah-divine"
+    ]
+  ]
+}
