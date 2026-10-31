@@ -23,10 +23,10 @@ async def run(browser_name="chromium",width=1440,height=900):
         assert "Late Avicennism" in await page.title()
         assert await page.locator("#main h1").count()>0
         await page.goto(BASE+"#contents",wait_until="domcontentloaded")
-        await page.wait_for_function("()=>document.querySelectorAll('.document-row').length>=30")
-        assert await page.locator(".document-row").count()==30
+        await page.wait_for_function("()=>document.querySelectorAll('.document-row').length>=32")
+        assert await page.locator(".document-row").count()==32
         await page.locator("#doc-filter").fill("Lāhījī")
-        assert 0<await page.locator(".document-row").count()<30
+        assert 0<await page.locator(".document-row").count()<32
         await page.locator("#doc-filter").fill("")
         await page.goto(BASE+"#text/lah-active/1",wait_until="domcontentloaded")
         await page.wait_for_function("()=>document.querySelector('.reading h2')!==null")
