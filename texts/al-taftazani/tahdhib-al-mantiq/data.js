@@ -26,52 +26,36 @@ window.GNAMMA_BOOK={
     },
     {
       "id": "L.02",
-      "title": "First part: the introduction to logic",
-      "arabic": "القسم الأول في المنطق. مقدمة. العلم إن كان إذعانا للنسبة فتصديق وإلا فتصور، وينقسمان بالضرورة إلى الضرورة والاكتساب بالنظر، وهو ملاحظة المعقول لتحصيل المجهول، وقد يقع فيه الخطأ فاحتيج إلى قانون يعصم عنه وهو المنطق. وموضوعه المعلوم التصوري والتصديقي من حيث يوصل إلى مطلوب تصوري فيسمى معرفا أو تصديقي فيسمى حجة.",
-      "english": "The first part concerns logic. Introduction. Knowledge [ʿilm], if it consists in assent to a relation [idhʿān li-l-nisba], is judgment or assent [taṣdīq]; otherwise it is conception [taṣawwur]. Each is divided into what is necessary or immediate [ḍarūrī] and what is acquired through rational consideration [naẓar]. The latter is the contemplation of something intelligible for the acquisition of something unknown. Error may arise in it; consequently a rule or canon that protects thinking from error was needed, namely, logic [manṭiq]. Its subject matter is what is already known, whether conceptually or propositionally, insofar as it leads to a sought conception—and is then called a means of definition [muʿarrif]—or to a sought judgment—and is then called a proof [ḥujja].",
+      "title": "Knowledge, rational inquiry and the subject of logic",
+      "arabic": "العلم إن كان إذعانًا للنسبة فتصديق وإلا فتصور، وينقسمان بالضرورة إلى الضرورة والاكتساب بالنظر، وهو ملاحظة المعقول لتحصيل المجهول، وقد يقع فيه الخطأ فاحتيج إلى قانون يعصم عنه وهو المنطق. وموضوعه المعلوم التصوري والتصديقي من حيث يوصل إلى مطلوب تصوري فيسمى معرِّفًا، أو تصديقي فيسمى حجة.",
+      "english": "If knowledge is assent to a relation, it is judgment (taṣdīq); otherwise, conception (taṣawwur). Both are divided into what is immediate and what is acquired through rational consideration. Rational consideration is attention to the intelligible in order to attain what is unknown. Error may occur in it, and so a rule was needed to protect the mind against error: logic. Its subject is what is already known, whether conceptual or propositional, insofar as this leads to a sought conception, called a means of definition (muʿarrif), or to a sought judgment, called a proof (ḥujja).",
       "notes": [
         {
-          "type": "Source",
-          "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
-        },
-        {
           "type": "Explanation",
-          "text": "Taṣdīq is assent to the relation expressed in a judgment; taṣawwur is the apprehension of a meaning without that assent. The division is not the distinction between true and false propositions, but between two intellectual acts."
-        },
-        {
-          "type": "Terminology",
-          "text": "Naẓar is disciplined examination of intelligible materials to arrive at what is not yet known. The muʿarrif serves a sought conception, and the ḥujja a sought assent."
+          "text": "The decisive distinction is between the act of conceiving something and assenting to a propositional relation. A means of definition and a proof correspond to these two kinds of cognitive aim."
         }
       ],
-      "grade": "B",
+      "grade": "A",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": "../../al-taftazani/tahdhib-al-kalam/#u-I-02",
       "linkLabel": "Related discussion in Tahdhīb al-Kalām",
       "printedPages": "4"
     },
     {
       "id": "L.03",
-      "title": "Signification and expressions",
-      "arabic": "فصل. دلالة اللفظ على تمام ما وضع له مطابقة، وعلى جزئه تضمن، وعلى الخارج التزام، ولا بد من اللزوم عقلا أو عرفا، وتلزمهما المطابقة ولو تقديرا ولا عكس. فصل. والموضوع له إن قصد بجزئه منه الدلالة على جزء المعنى فمركب، إما تام خبر أو إنشاء، وإما ناقص تقييدي أو غيره، وإلا فمفرد، وهو إن استقل في الدلالة بهيئته على أحد الأزمنة كلمة، وبدونها اسم، وإلا فأداة. وأيضا إن اتحد معناه فمع تشخصه وضعا علم، وبدونه متواطئ إن استوت أفراده، ومشكك إن تفاوتت إما بأولية أو أولوية، وإن كثر معناه فإن وضع لكل فمشترك، وإلا فإن اشتهر في الثاني فمنقول ينسب إلى الناقل، وإلا فحقيقة ومجاز.",
-      "english": "A word’s signification [dalāla] of the whole meaning for which it was instituted is correspondence [muṭābaqa]; of part of that meaning, inclusion [taḍammun]; and of something external to it, implication [iltizām]. Implicative signification requires a necessary connection, whether rationally or by convention. Corresponding signification is presupposed by both inclusion and implication, even if only implicitly; the converse does not hold. If, in establishing an expression, it is intended that one of its components signify a component of its meaning, it is compound [murakkab]. Such an expression is either complete [tāmm], being a statement or an enunciation [khabar or inshāʾ], or incomplete [nāqiṣ], being restrictive or otherwise. If this is not intended, the expression is simple [mufrad].",
+      "title": "Signification, simple and compound expressions, and kinds of names",
+      "arabic": "دلالة اللفظ على تمام ما وضع له مطابقة، وعلى جزئه تضمن، وعلى الخارج التزام، ولا بد من اللزوم عقلا أو عرفا، وتلزمهما المطابقة ولو تقديرا ولا عكس. والموضوع له إن قصد بجزئه منه الدلالة على جزء المعنى فمركب، إما تام خبر أو إنشاء وإما ناقص تقييدي أو غيره، وإلا فمفرد، وهو إن استقل في الدلالة بهيئته على أحد الأزمنة كلمة، وبدونها اسم، وإلا فأداة. وأيضا إن اتحد معناه فمع تشخصه وضعا عَلَم، وبدونه متواطئ إن استوت أفراده، ومشكك إن تفاوتت إما بأولية أو أولوية، وإن كثر معناه فإن وضع لكل فمشترك، وإلا فإن اشتهر في الثاني فمنقول ينسب إلى الناقل، وإلا فحقيقة ومجاز.",
+      "english": "Signification of the whole instituted meaning is correspondence (muṭābaqa), of part of that meaning inclusion (taḍammun), and of something outside it implication (iltizām). Implication requires a rational or customary necessary connection; the latter two kinds of signification presuppose correspondence, at least implicitly, though not the converse. An expression is compound if its constituent parts are intended to signify constituents of its meaning: it may be complete, either an assertive statement or a nonassertive utterance, or incomplete, whether restrictive or otherwise. If not, it is simple. If it signifies independently with reference to one of the three times, it is a verb (kalima); without that temporal feature, a noun; without independent signification, a particle. When an expression has one meaning instituted for a particular person or thing it is a proper name; otherwise, it is univocal when its instances stand equally under that meaning, and analogically graded (mushakkik) when they differ by priority or precedence. If several meanings are independently instituted for it, it is equivocal (mushtarak). If a second meaning becomes established it is a transferred term attributed to the person or convention responsible for the transfer; otherwise, we distinguish literal and figurative usage.",
       "notes": [
         {
-          "type": "Source",
-          "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
-        },
-        {
           "type": "Explanation",
-          "text": "Muṭābaqa names signification of the whole instituted meaning, taḍammun of its part, and iltizām of a necessary accompaniment external to it. The last presupposes an intelligible or conventional connection rather than mere association."
-        },
-        {
-          "type": "Explanation",
-          "text": "A mutawāṭiʾ is predicated without priority or gradation among its instances; mushakkik permits differentiated priority or intensity. Neither should be confused with equivocation (mushtarak)."
+          "text": "Iltizām does not designate mere psychological association: a recognised rational or conventional implication is required. Univocal, analogically graded, equivocal and transferred predication are distinct classifications, not interchangeable translations."
         }
       ],
-      "grade": "B",
+      "grade": "A",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": null,
       "linkLabel": "Related discussion in Tahdhīb al-Kalām",
       "printedPages": "4–5"
