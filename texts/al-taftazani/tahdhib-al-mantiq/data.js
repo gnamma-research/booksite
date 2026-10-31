@@ -195,13 +195,9 @@ window.GNAMMA_BOOK={
     {
       "id": "L.10",
       "title": "Judgments: categorical propositions, quantification, existential import",
-      "arabic": "فإن، الَقِض َّي ة قول يحتمل الصدق والكذب:فصل في التصديقات كان الحكم فيها بثبوت شيء لشيء أو نفيه عنه فحملية موجبة أو والدال على، ويسمى المحكوم عليه موضوًعا والمحكوم به محموًلا،سالبة ويسمى الجزء، وإلا فشرطية، وقد استعير لها هو،النسبة رابطة والموضوع إن كان شخًص ا معيًنا سميت.الأول مقدًما والثاني تالًيا وإلا، وإن كان نفس الحقيقة فطبعية،الَقِض َّي ة شخصية ومخصوصة فإن بين كمية أفراده كًّلا أو بعًضا فمحصورة كلية أو جزئية وما به ولا بد في الموجبة من. وإلا فمهملة وتلازم الجزئية،البيان سور وجود الموضوع إما محقًقا فهي الخارجية أو مقدًرا فالحقيقية أو ذهًنا .فالذهنية",
+      "arabic": "فصل في التصديقات. القضية قول يحتمل الصدق والكذب، فإن كان الحكم فيها بثبوت شيء لشيء أو نفيه عنه فحملية موجبة أو سالبة، ويسمى المحكوم عليه موضوعاً والمحكوم به محمولاً، والدال على النسبة رابطة وقد استعير لها «هو»، وإلا فشرطية ويسمى الجزء الأول مقدماً والثاني تالياً. والموضوع إن كان شخصاً معيناً سميت القضية شخصية ومخصوصة، وإن كان نفس الحقيقة فطبيعية، وإلا فإن بين كمية أفراده كلا أو بعضاً فمحصورة كلية أو جزئية وما به البيان سور، وإلا فمهملة وتلازم الجزئية. ولا بد في الموجبة من وجود الموضوع إما محققاً فهي الخارجية أو مقدراً فالحقيقية أو ذهناً فالذهنية.",
       "english": "Chapter on judgments. A proposition [qaḍiyya] is a discourse capable of truth or falsity. If it judges that something belongs to something else or is denied of it, the proposition is categorical [ḥamliyya], affirmative or negative. The thing judged about is the subject [mawḍūʿ], and what is affirmed or denied is the predicate [maḥmūl]. What indicates their predicative relation is the copula [rābiṭa], for which the pronoun huwa (“is/he”) has been adopted [as a linguistic sign]. Otherwise the proposition is conditional [sharṭiyya], whose first component is the antecedent [muqaddam] and the second the consequent [tālī]. If the subject is a determinate individual the categorical proposition is singular [shakhṣiyya] or specific [makhṣūṣa]. If it is the nature itself, the proposition is natural [ṭabīʿiyya]. Otherwise, if the number of its individuals is specified as all or some, it is quantified [maḥṣūra], universal or particular, and the expression making the quantity explicit is the quantifier [sūr]; otherwise it is indeterminate [muhmala], equivalent [in inferential effect] to a particular proposition. An affirmative [categorical proposition] requires the subject to exist: either as actually realised, in which case the proposition is external [khārijiyya]; or as supposed/estimated, in which case it is real or essentially quantified [ḥaqīqiyya]; or mentally, in which case it is mental [dhihniyya].",
       "notes": [
-        {
-          "type": "Source",
-          "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
-        },
         {
           "type": "Explanation",
           "text": "The proposition is truth-apt; categorical propositions affirm or deny predicates of subjects. The copula expresses their relationship, rather than supplying an additional independent object."
@@ -209,9 +205,10 @@ window.GNAMMA_BOOK={
       ],
       "grade": "B",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "7–8"
     },
     {
       "id": "L.11",
@@ -238,13 +235,9 @@ window.GNAMMA_BOOK={
     {
       "id": "L.12",
       "title": "Conditional propositions",
-      "arabic": "الشرطية متصلة إن حكم فيها بثبوت نسبة على تقدير أخرى أو:فصل ومنفصلة إن حكم، لزومية إن كان ذلك بعلاقة وإلا فاتفاقية،نفيها ،فيها بتنافي النسبتين أو لا تنافيهما صدًقا وكذًبا مًعا وهي الحقيقية وكل منهما. أو كذًبا فقط فمانعة الخلو،أو صدًقا فقط فمانعة الجمع ثم الحكم في.عنادية إن كان التنافي لذاتي الجزئين وإلا فاتفاقية أو بعضها مطلًقا،الشرطية إن كان على جميع تقادير الُمَقَّد م فكلية وطرفا الشرطية في الأصل. وإلا فمهملة، أو معيًنا فشخصية،فجزئية إلا أنهما،قضيتان حمليتان أو متصلتان أو منفصلتان أو مختلفتان .خرجتا بزيادة أداة الاتصال والانفصال عن التمام",
+      "arabic": "فصل في أقسام الشرطية. الشرطية متصلة إن حكم فيها بثبوت نسبة على تقدير أخرى أو نفيها، لزومية إن كان ذلك بعلاقة وإلا فاتفاقية. ومنفصلة إن حكم فيها بتنافي النسبتين أو لا تنافيهما صدقاً وكذباً معاً وهي الحقيقية، أو صدقاً فقط فمانعة الجمع، أو كذباً فقط فمانعة الخلو. وكل منهما عنادية إن كان التنافي لذاتي الجزئين وإلا فاتفاقية. ثم الحكم في الشرطية إن كان على جميع تقادير المقدم فكلية، أو بعضها مطلقاً فجزئية، أو معيناً فشخصية، وإلا فمهملة. وطرفا الشرطية في الأصل قضيتان حمليتان أو متصلتان أو منفصلتان أو مختلفتان، إلا أنهما خرجتا بزيادة أداة الاتصال والانفصال عن التمام.",
       "english": "Chapter. A conditional proposition is connected [muttaṣila] if it judges that one relation holds, or does not hold, on the supposition of another. It is implicative [luzūmiyya] when there is a connection between the two relations; otherwise it is coincidental [ittifāqiyya]. It is disjunctive [munfaṣila] if it judges that the two relations are incompatible, or not incompatible, with respect to truth and falsity together, in which case it is the true disjunctive [ḥaqīqiyya]; or with respect to truth only, in which case it prevents conjunction [māniʿat al-jamʿ]; or with respect to falsity only, in which case it prevents joint exclusion [māniʿat al-khulū]. Each [of these disjunctive types] is essentially opposed [ʿinādiyya] if the exclusion arises from the natures of its two components, and otherwise is coincidental. Again, if the judgment in a conditional holds under all suppositions concerning the antecedent, it is universal; if under some, without specification, particular; if under a determinate supposition, singular; otherwise indeterminate. The two members of a conditional are originally two categorical propositions, two connected conditionals, two disjunctives, or two different kinds. The addition of the connective or disjunctive particle deprives them of [their independent] completeness.",
       "notes": [
-        {
-          "type": "Source",
-          "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
-        },
         {
           "type": "Explanation",
           "text": "In a true disjunction, both conjunction and joint falsity are excluded. A preventing-conjunction disjunction excludes simultaneous truth; a preventing-exclusion disjunction excludes simultaneous falsity."
@@ -252,9 +245,10 @@ window.GNAMMA_BOOK={
       ],
       "grade": "B",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "9"
     },
     {
       "id": "L.13",
@@ -297,23 +291,15 @@ window.GNAMMA_BOOK={
     {
       "id": "L.15",
       "title": "Conversion by contraposition (ʿaks al-naqīḍ)",
-      "arabic": "عكس النقيض تبديل نقيضي الطرفين مع بقاء الصدق:فصل وحكم. أو جعل نقيض الثاني أوًلا مع مخالفة الكيف،والكيف والبيان،الموجبات ههنا حكم السوالب في المستوي وبالعكس وقد بين انعكاس الخاصتين من الموجبة. والنقض النقض،البيان .الجزئية ههنا ومن السالبة الجزئية ثمة إلى العرفية الخاصة بالافتراض .فتأمل",
+      "arabic": "فصل. عكس النقيض تبديل نقيضي الطرفين مع بقاء الصدق والكيف، أو جعل نقيض الثاني أولاً مع مخالفة الكيف. وحكم الموجبات ههنا حكم السوالب في المستوي وبالعكس. والبيان البيان والنقض النقض. وقد بين انعكاس الخاصتين من الموجبة الجزئية ههنا ومن السالبة الجزئية ثمة إلى العرفية الخاصة بالافتراض فتأمل.",
       "english": "Chapter. Conversion by contraposition [ʿaks al-naqīḍ] consists in interchanging the contradictories of the two terms while retaining truth and quality; or in placing the contradictory of the second term first while reversing the quality [of the predication]. The rules for affirmative propositions here are those of negative propositions in simple conversion, and conversely. The proof is the same proof and the counterexample the same counterexample. By assuming an instance [bi-l-iftirāḍ], it has been shown that the two specific forms can be converted from the particular affirmative here, and from the particular negative there [under simple conversion], to the specific customary form. Reflect upon this.",
-      "notes": [
-        {
-          "type": "Verification",
-          "text": "The modalities, figures and exact technical conditions still require detailed comparison with the commentary. This is a continuous translation, not a certified formal reconstruction."
-        },
-        {
-          "type": "Source",
-          "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
-        }
-      ],
+      "notes": [],
       "grade": "B",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "11"
     },
     {
       "id": "L.16",
@@ -351,24 +337,20 @@ window.GNAMMA_BOOK={
     {
       "id": "L.17",
       "title": "Conjunctive conditional and exceptive syllogisms",
-      "arabic": "الشرطي من الاقتراني إما أن يتركب من متصلتين أو:فصل ،منفصلتين أو حملية ومتصلة أو حملية ومنفصلة أو متصلة ومنفصلة الاستثنائي: فصل. وفي تفصيلها طول،وينعقد فيه الأشكال الأربعة ومن الحقيقية وضع كل،ينتج من المتصلة وضع الُمَقَّد م ورفع الَّت اِلي وقد يختص باسم قياس الخلف وهو،كمانعة الجمع ورفعه كمانعة الخلو ومرجعه إلى استثنائي،ما يقصد به إثبات المطلوب بإبطال نقيضه .واقتراني",
+      "arabic": "فصل. الشرطي من الاقتراني إما أن يتركب من متصلتين أو منفصلتين أو حملية ومتصلة أو حملية ومنفصلة أو متصلة ومنفصلة، وينعقد فيه الأشكال الأربعة وفي تفصيلها طول. فصل. الاستثنائي ينتج من المتصلة وضع المقدم ورفع التالي، والحقيقية بوضع كل كمانعة الجمع ورفعه كمانعة الخلو، وقد يختص باسم قياس الخلف ما يقصد به إثبات المطلوب بإبطال نقيضه، ومرجعه إلى استثنائي واقتراني.",
       "english": "Chapter. The conditional variety of conjunctive syllogism may be composed of two connected conditionals, two disjunctives, a categorical and a connected conditional, a categorical and a disjunctive, or a connected and a disjunctive proposition. The four figures can be formed in it. A detailed treatment would be lengthy. Chapter. The exceptive syllogism yields a conclusion, from a connected conditional, by affirming its antecedent or denying its consequent; from a true disjunctive, it yields a conclusion when either member is affirmed, as in the preventing-conjunction form, or denied, as in the preventing- exclusion form. It may specifically be called a syllogism by reductio [qiyās al-khalf]: this is the procedure that aims to establish what is sought by invalidating its contradictory. It reduces to a combination of an exceptive and a conjunctive syllogism.",
-      "notes": [
-        {
-          "type": "Source",
-          "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
-        }
-      ],
+      "notes": [],
       "grade": "B",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "13"
     },
     {
       "id": "L.18",
       "title": "Induction, analogy, and the five kinds of syllogistic discourse",
-      "arabic": "والتمثيل بيان، الاستقراء تصفح الجزئيات لإثبات حكم كلي:فصل والعمدة في طريقه،مشاركة جزئي لآخر في علة الحكم ليثبت فيه الِقَياس إما برهاني يتألف من اليقينيات: فصل.الدوران والترديد وأصولها الأوليات والمشاهدات والتجربيات والحدسيات ثم إن كان الأوسط مع عليته للنسبة في.والمتواترات والنظريات وأما جدلي يتألف من.الِّذْهن علة لها في الواقع فلمي وإلا فإني وأما خطابي يتألف من المقبولات،المشهورات والمسلمات وأما سفسطي، وأما شعري يتألف من المخيلات،والمظنونات .يتألف من الوهميات والمشبهات",
+      "arabic": "فصل. الاستقراء تصفح الجزئيات لإثبات حكم كلي، والتمثيل بيان مشاركة جزئي لآخر في علة الحكم ليثبت فيه، والعمدة في طريقه الدوران والترديد. فصل. القياس إما برهاني يتألف من اليقينيات وأصولها الأوليات والمشاهدات والتجربيات والحدسيات والمتواترات والنظريات، ثم إن كان الأوسط مع عليته للنسبة في الذهن علة لها في الواقع فلمّي وإلا فإنّي، وإما جدلي يتألف من المشهورات والمسلمات، وإما خطابي يتألف من المقبولات والمظنونات، وإما شعري يتألف من المخيلات، وإما سفسطي يتألف من الوهميات والمشبهات.",
       "english": "Chapter. Induction [istiqrāʾ] is a survey of particulars in order to establish a universal judgment. Analogy [tamthīl] is the disclosure that one particular shares with another the cause of a judgment, in order to establish that judgment of the former. The principal basis of its method is concomitant variation [dawarān] and disjunctive elimination [tardīd]. Chapter. A syllogism is either demonstrative [burhānī], being composed of certainties [yaqīniyyāt]. Their fundamental kinds are first principles [awwaliyyāt], direct observations [mushāhadāt], experiential judgments [tajribiyyāt], intuitive judgments [ḥadsiyyāt], multiply transmitted judgments [mutawātirāt], and theoretical judgments [naẓariyyāt] (Cairo reading). If the middle term is a cause of the predicative relation not only in the mind but also in reality, the demonstration is demonstration of why [limmī]; otherwise it is demonstration of that [innī]. Or a syllogism is dialectical [jadalī], composed of generally accepted and conceded premises [mashhūrāt, musallamāt]; rhetorical [khiṭābī], composed of accepted on authority and probable premises [maqbūlāt, maẓnūnāt]; poetic [shiʿrī], composed of imaginative premises [mukhayyalāt]; or sophistical [safsaṭī], composed of estimative and deceptively similar premises [wahmiyyāt, mushabbahāt].",
       "notes": [
         {
@@ -378,9 +360,10 @@ window.GNAMMA_BOOK={
       ],
       "grade": "B",
       "gap": false,
-      "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
+      "statusText": "",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "13–14"
     },
     {
       "id": "L.19",
