@@ -1,0 +1,45 @@
+/* Stable editorial locators in the reading flow: Focus I, Focus II and
+   Continuous Focus III. The regular reading view keeps its existing layout. */
+#reader .gn-focus-reading-locus{
+ display:none;
+ grid-column:1/-1;
+ order:-1;
+ align-self:stretch;
+ width:100%;
+ margin:0;
+ padding:8px 0 4px;
+ gap:9px;
+ align-items:center;
+ color:var(--text-soft,#52645c);
+ text-align:start;
+ font:650 13px/1.35 var(--sans,system-ui,sans-serif);
+ letter-spacing:.01em;
+ font-variant-numeric:tabular-nums;
+ user-select:none;
+ -webkit-user-select:none;
+}
+body:is(.focus-level-1,.focus-level-2,.focus-level-3) #reader .gn-focus-reading-locus{
+ display:flex!important;
+}
+#reader .gn-focus-locus-section{
+ color:var(--accent,#285b51);
+ font-weight:750;
+}
+#reader .gn-focus-locus-separator{opacity:.65}
+#reader .gn-focus-locus-paragraph{
+ color:var(--text,#24342d);
+ font-weight:750;
+}
+#reader.mode-arabic .gn-focus-reading-locus{
+ direction:rtl;
+ justify-content:flex-start;
+}
+#reader.mode-arabic .gn-focus-reading-locus>span{direction:ltr;unicode-bidi:isolate}
+@media(max-width:600px){
+ #reader .gn-focus-reading-locus{
+  width:100%;padding:8px 0 3px;gap:7px;font-size:12.5px;
+ }
+}
+@media print{
+ #reader .gn-focus-reading-locus{display:none!important}
+}

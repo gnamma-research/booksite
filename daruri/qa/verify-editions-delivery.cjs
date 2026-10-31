@@ -113,8 +113,14 @@ for(const file of [
   assert(sw.includes(file+'?v=20261023-stage1'),
     'Offline worker must pre-cache the published browser generator: '+file);
 }
-assert(html.includes('sw.js?v=20261023-stage1'),
-  'The current reader must register this Stage1 cache revision');
+// A reader-navigation release may rename the worker/cache (e.g. the compact dock).
+// Require matching versioned registration and cache identity; Stage 1's signed
+// generator files are verified independently by the CORE pre-cache loop above.
+const registeredWorker=/navigator\.serviceWorker\.register\(['"]sw\.js\?v=([a-zA-Z0-9._-]+)['"]\)/.exec(html);
+const activeWorkerCache=/\bconst NAME=["']daruri-reader-([a-zA-Z0-9._-]+)["']/.exec(sw);
+assert(registeredWorker && activeWorkerCache &&
+       registeredWorker[1]===activeWorkerCache[1],
+  'Reader must register the same versioned worker as the active cache');
 assert(html.includes('editions-selector.js?v=20261023-stage1'),
   'The current reader must actually load the generation-first selector');
 assert(onDeviceHtml.includes('dynamic-pdf/client.js?v=20261023-stage1'));

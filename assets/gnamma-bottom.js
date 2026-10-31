@@ -19,10 +19,18 @@ texts:[
  {name:"al-Ḍarūrī fī Uṣūl al-Fiqh",href:"daruri/"}
  ]},
  {heading:"Tafsīr",items:[{name:"al-Baḥr al-Madīd",href:"texts/ibn-ajiba/al-bahr-al-madid/"}]},
- {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"}]}
+ {heading:"Logic",items:[{name:"Tahdhīb al-Manṭiq",href:"texts/al-taftazani/tahdhib-al-mantiq/"}]},
+ {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"},{name:"Tahdhīb al-Kalām · Working translation",href:"texts/al-taftazani/tahdhib-al-kalam/"},{name:"Taqrīb al-Marām · Commentary",href:"texts/al-sanandaji/taqrib-al-maram/"}]}
 ],
-essays:[{items:[{name:"Ibn Rushd and the craft of legal reasoning",href:"essays/ibn-rushd-method/"}]}],
-research:[{items:[{name:"Bidāya–Ḍarūrī: law and practical discernment",href:"research/usul-law-rushd/"}]}],
+essays:[{items:[
+ {name:"Being in Order · Substance, Relation, and Poinsot’s Modes",href:"essays/being-in-order/"},
+ {name:"Why Ibn Rushd begins with method · Working essay",href:"essays/ibn-rushd-method/"}
+]}],
+research:[{items:[
+ {name:"Bidāyat al-Mujtahid · Edition I: Law and Legal Reasoning",href:"research/bidaya/law/"},
+ {name:"Texts in Time · Islamic Intellectual Atlas",href:"research/intellectual-atlas/"},
+ {name:"Tajrīd · Comparative Critical Sourcebook",href:"research/tajrid/"}
+]}],
 about:[{items:[
  {name:"Purpose & approach",href:"about/purpose/"},
  {name:"Sources & editorial method",href:"docs/source-and-licenses.html"}
@@ -135,3 +143,4 @@ document.addEventListener("pointerdown",e=>{
  if(!dock.contains(e.target)&&!panel.contains(e.target))navigate("home");
 });
 })();
+

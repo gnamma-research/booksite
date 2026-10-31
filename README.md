@@ -24,7 +24,7 @@ This is the **library repository**, not the al-Mustaṣfā-only project.
 /texts/{author}/{work}/ Author/work-specific reader, data and editorial evidence
 /arabic/               Shared Arabic transcription (legacy root retained)
 /essays/               Essay collection; scaffold only
-/research/             Research and dossiers; scaffold only
+/research/             Comparative studies and evidence-linked research atlases
 /docs/                 Collection-wide editorial policy
 /assets/               Shared catalog stylesheet
 ```
@@ -64,3 +64,11 @@ See [branding and backgrounds](docs/GNAMMA_BRANDING_AND_BACKGROUNDS.md). The sce
 The homepage and category screens use a five-icon dock centred at the bottom. Tapping Texts, Essays, Research or About opens a small translucent list immediately above the dock, without hiding the mountain landscape. The list includes small category titles and, for Texts, waterhole-dot bullets and three scholarly groups: Uṣūl al-fiqh, Tafsīr, Kalām. Icons remain text-free; their aria-labels support assistive technology. Tapping the same icon, the Home icon, or the landscape closes the list. The category URL updates so back/forward navigation works. Static HTML lists remain as an accessible no-JavaScript fallback.
 
 **Bidāya–Ḍarūrī** is under **Research**, linked to the comparative legal-method study, not under Texts. The standalone al-Ḍarūrī fī Uṣūl al-Fiqh reader remains under Uṣūl. The old texts/ibn-rushd/bidayat-al-mujtahid/ preview remains available at its original address but is no longer in the catalogue. Individual books retain their own native reading apparatus and background themes; essays/research retain the full scholarly workspace.
+
+## Texts in Time · Islamic Intellectual Atlas (revision 5, 29 October 2026)
+
+[Open the interactive intellectual atlas](research/intellectual-atlas/). The research register contains **321 scholarly/context records** and **312 qualified textual relationships**, including the dated logic and kalām commentary families around the 1387 **Tahdhīb al-manṭiq wa-l-kalām**. [Read its critical Tahdhīb dossier](research/intellectual-atlas/tahdhib/).
+
+The atlas now provides **twelve equal-level textual-family routes** (including *Ishārāt*, *Tajrīd*, *Mawāqif*, *Maqāṣid*, *Tahdhīb*, *Shifāʾ*, *Fuṣūṣ* and *Asfār*), separate from the **intellectual-tradition** filters. A textual family is a source-book and commentary network, **not an independent doctrinal school**. Users can drag, scroll, zoom, select a family or return to all works. All recorded relationships retain evidence and dating qualifications.
+
+The 84-page updated text-focused reference register and 9-page Tahdhīb supplement are linked from the atlas. Earlier 15-page and 204-page illustrated editions remain clearly labelled as historical map editions. The online JSON and downloadable offline interactive bundle include the latest textual-family routes. Publication and editorial status remain revisable.

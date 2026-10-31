@@ -1,0 +1,220 @@
+/* Compact iOS-safe personal-saved control in the existing Darūrī dock.
+ * Single and multiple records both open the same saved-items sheet.
+ * The single large, labelled target replaces the former low, full-width row. */
+@media screen and (max-width:760px) {
+  body.reading-active #readerDock.reader-dock {
+    box-sizing:border-box!important;
+    bottom:max(24px,calc(env(safe-area-inset-bottom) + 20px))!important;
+    left:8px!important;right:8px!important;width:calc(100% - 16px)!important;
+    transform:none!important;
+    grid-template-columns:44px minmax(0,1fr) 44px!important;
+    gap:3px!important;
+    min-height:62px!important;max-height:74px!important;
+    padding:4px 5px!important;border-radius:13px!important;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:transparent;
+  }
+  body.reading-active #readerDock .reader-step {
+    box-sizing:border-box!important;
+    min-height:46px!important;max-height:66px!important;
+    padding:4px!important;touch-action:manipulation;
+  }
+  body.reading-active #readerDock .gn-dock-center {
+    display:flex!important;flex-flow:row nowrap!important;
+    align-items:center!important;justify-content:center!important;
+    gap:5px!important;min-height:51px!important;max-height:66px!important;
+    min-width:0!important;overflow:visible!important;
+  }
+  body.reading-active #readerDock .gn-dock-center>#openJump {
+    box-sizing:border-box!important;display:flex!important;
+    flex:1 1 0!important;min-width:0!important;
+    width:auto!important;min-height:48px!important;max-height:64px!important;
+    padding:4px 2px!important;
+    touch-action:manipulation;
+  }
+  body.reading-active #readerDock .gn-dock-private-status {
+    box-sizing:border-box!important;display:flex!important;
+    width:50px!important;min-width:50px!important;max-width:50px!important;
+    height:44px!important;min-height:44px!important;max-height:44px!important;
+    flex:0 0 50px!important;justify-content:center!important;
+    align-items:center!important;margin:0!important;padding:0!important;
+  }
+  body.reading-active #readerDock .gn-dock-private-status[hidden] {
+    display:none!important;
+  }
+  body.reading-active #readerDock .gn-dock-summary {
+    box-sizing:border-box!important;display:flex!important;
+    flex-flow:row nowrap!important;align-items:center!important;justify-content:center!important;
+    width:50px!important;min-width:50px!important;max-width:50px!important;
+    height:44px!important;min-height:44px!important;max-height:44px!important;
+    margin:0!important;padding:5px 3px!important;gap:3px!important;
+    border:1px solid var(--line)!important;border-radius:9px!important;
+    background:var(--surface-alt)!important;color:var(--text)!important;
+    cursor:pointer;touch-action:manipulation;
+  }
+  body.reading-active #readerDock .gn-dock-summary .gn-dock-saved-prefix {
+    display:inline-flex!important;flex:0 0 auto!important;
+    margin:0!important;padding:0!important;border:0!important;
+  }
+  body.reading-active #readerDock .gn-dock-summary .gn-dock-saved-prefix>.gn-bm-ribbon {
+    width:16px!important;height:16px!important;
+  }
+  body.reading-active #readerDock .gn-dock-summary-symbols,
+  body.reading-active #readerDock .gn-dock-summary-caret {
+    display:none!important;
+  }
+  body.reading-active #readerDock .gn-dock-summary::after {
+    content:attr(data-gn-total);display:inline-block;min-width:1ch;
+    font:750 12px/1 var(--sans,system-ui,sans-serif);
+    color:var(--accent);font-variant-numeric:tabular-nums;text-align:center;
+  }
+  body.reading-active #readerDock #dockTitle {
+    font-size:clamp(11px,3vw,13px)!important;
+    line-height:1.24!important;
+    -webkit-line-clamp:2!important;
+  }
+  body.reading-active #readerDock .reader-location-meta {
+    gap:3px!important;margin-bottom:2px!important;
+    font-size:10px!important;line-height:1.2!important;
+  }
+  body.reading-active .main-region {
+    padding-bottom:calc(160px + env(safe-area-inset-bottom))!important;
+  }
+  /* The saved-items sheet stays above the dock; independent list scrolling remains.
+     Manage is a separate optional action, not an extra menu in the section picker. */
+  .gn-dock-saved-sheet {
+    max-height:min(57dvh,410px);
+    border-radius:13px;
+  }
+  .gn-dock-sheet-heading {padding:8px 10px 6px;}
+  .gn-dock-sheet-list {padding:2px 9px;touch-action:pan-y;}
+  .gn-dock-sheet-item {min-height:49px;padding:9px 8px;}
+  .gn-dock-saved-sheet footer {padding:4px 8px;}
+}
+@media screen and (max-width:360px) {
+  body.reading-active #readerDock.reader-dock {
+    grid-template-columns:39px minmax(0,1fr) 39px!important;
+    gap:2px!important;left:6px!important;right:6px!important;width:calc(100% - 12px)!important;
+    padding-inline:3px!important;
+  }
+  body.reading-active #readerDock .gn-dock-private-status,
+  body.reading-active #readerDock .gn-dock-summary {
+    width:46px!important;min-width:46px!important;max-width:46px!important;
+  }
+  body.reading-active #readerDock .gn-dock-private-status{flex-basis:46px!important;}
+}
+@media print {
+  #readerDock .gn-dock-private-status{display:none!important;}
+}
+
+/* GNAMMA 26 Oct 2026 LANDSCAPE DOCK
+   Phone landscape is often >760 CSS pixels wide. Without a short-height
+   override, the desktop dock stacks its section picker and saved status into
+   two rows, obscuring a large part of a ~375–430px-high reading viewport.
+   Keep the ordinary portrait rules unchanged. */
+@media screen and (orientation:landscape) and (max-height:560px) and (pointer:coarse) {
+  body.reader-enhanced.reading-active #readerDock.reader-dock:not([hidden]) {
+    box-sizing:border-box!important;
+    left:50%!important;right:auto!important;
+    transform:translateX(-50%)!important;
+    width:min(860px,calc(100vw - 16px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)))!important;
+    max-width:860px!important;
+    bottom:calc(4px + env(safe-area-inset-bottom,0px))!important;
+    height:52px!important;min-height:52px!important;max-height:52px!important;
+    padding:3px 5px!important;
+    grid-template-columns:44px minmax(0,1fr) 44px!important;
+    grid-auto-rows:44px!important;
+    align-items:center!important;align-content:center!important;
+    gap:4px!important;border-radius:11px!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .reader-step {
+    box-sizing:border-box!important;
+    min-height:44px!important;max-height:44px!important;height:44px!important;
+    padding:2px!important;margin:0!important;gap:0!important;
+    justify-content:center!important;align-items:center!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-center {
+    box-sizing:border-box!important;
+    display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;
+    align-items:center!important;justify-content:center!important;
+    width:100%!important;min-width:0!important;
+    height:44px!important;min-height:44px!important;max-height:44px!important;
+    gap:5px!important;margin:0!important;padding:0!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-center > #openJump {
+    box-sizing:border-box!important;display:flex!important;
+    flex:1 1 auto!important;width:auto!important;min-width:0!important;
+    min-height:44px!important;max-height:44px!important;height:44px!important;
+    align-items:center!important;justify-content:center!important;
+    padding:2px 5px!important;margin:0!important;
+    overflow:hidden!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-private-status {
+    box-sizing:border-box!important;
+    flex:0 0 52px!important;width:52px!important;min-width:52px!important;
+    max-width:52px!important;height:44px!important;min-height:44px!important;
+    max-height:44px!important;margin:0!important;padding:0!important;
+    align-items:center!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-private-status[hidden] {
+    display:none!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary {
+    box-sizing:border-box!important;display:flex!important;
+    width:52px!important;min-width:52px!important;max-width:52px!important;
+    height:44px!important;min-height:44px!important;max-height:44px!important;
+    align-items:center!important;justify-content:center!important;
+    padding:3px!important;margin:0!important;
+  }
+  /* At widths above 760px the portrait icon/count treatment is absent.
+     Force the same concise saved-item glyph + count, rather than allowing
+     category badges to wrap inside the new one-row dock. */
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary {
+    gap:3px!important;flex-wrap:nowrap!important;
+    border:1px solid var(--line)!important;border-radius:9px!important;
+    background:var(--surface-alt)!important;color:var(--text)!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary .gn-dock-summary-symbols,
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary .gn-dock-summary-caret {
+    display:none!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary .gn-dock-saved-prefix {
+    display:inline-flex!important;align-items:center!important;
+    flex:0 0 auto!important;margin:0!important;padding:0!important;
+    border:0!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary .gn-dock-saved-prefix>.gn-bm-ribbon {
+    width:16px!important;height:16px!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .gn-dock-summary::after {
+    content:attr(data-gn-total);display:inline-block!important;min-width:1ch;
+    color:var(--accent)!important;
+    font:750 12px/1 var(--sans,system-ui,sans-serif)!important;
+    font-variant-numeric:tabular-nums;text-align:center;
+  }
+  body.reader-enhanced.reading-active #readerDock .reader-location-meta {
+    margin:0!important;gap:3px!important;
+    font-size:10px!important;line-height:1.1!important;
+  }
+  body.reader-enhanced.reading-active #readerDock #dockTitle {
+    display:-webkit-box!important;-webkit-box-orient:vertical!important;
+    -webkit-line-clamp:1!important;
+    white-space:normal!important;overflow:hidden!important;
+    font-size:12px!important;line-height:1.2!important;
+  }
+  body.reader-enhanced.reading-active #readerDock #dockJumpCue {
+    display:none!important;
+  }
+  body.reader-enhanced.reading-active #readerDock .reader-step > .icon {
+    width:17px!important;height:17px!important;
+  }
+  body.reader-enhanced.reading-active.focus-level-3 #readerDock.reader-dock:not([hidden]) {
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+  /* Enough scrollable space to read beneath the fixed dock, but do not keep
+     the old 160px portrait-only padding on a 375px-high landscape phone. */
+  body.reader-enhanced.reading-active .main-region,
+  body.reader-enhanced.reading-active.focus-mode .main-region {
+    padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))!important;
+  }
+}

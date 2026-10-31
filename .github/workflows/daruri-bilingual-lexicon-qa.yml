@@ -1,0 +1,49 @@
+name: Daruri bilingual dictionary parity QA
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'daruri/index.html'
+      - 'daruri/english-lexicon-links.js'
+      - 'daruri/english-lexicon-links.css'
+      - 'daruri/sw.js'
+      - 'daruri/qa/verify_bilingual_lexicon_browser.py'
+      - '.github/workflows/daruri-bilingual-lexicon-qa.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: daruri-bilingual-lexicon-qa-main
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  bilingual-term-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check JS syntax
+        run: node --check daruri/english-lexicon-links.js
+      - name: Install Chromium
+        run: |
+          python -m pip install -q playwright==1.58.0
+          python -m playwright install --with-deps chromium
+      - name: Verify English-Arabic dictionary parity
+        run: |
+          python -m http.server 8124 --bind 127.0.0.1 >/tmp/daruri-lexicon-qa.log 2>&1 &
+          server=$!
+          trap 'kill $server || true' EXIT
+          for i in {1..60}; do
+            if curl --silent --fail http://127.0.0.1:8124/daruri/ > /dev/null; then break; fi
+            sleep 0.25
+          done
+          DARURI_QA_BASE=http://127.0.0.1:8124/daruri/ python daruri/qa/verify_bilingual_lexicon_browser.py

@@ -1,0 +1,72 @@
+name: Gnamma Atlas 7.1 — continuous gestures and date evidence QA
+
+on:
+  push:
+    branches: [atlas-continuous-pan-date-markers-2026-10-29]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/atlas-gesture-v8-ci.yml'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'research/intellectual-atlas/**'
+      - '.github/workflows/atlas-gesture-v8-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  continuous-pan-and-dating:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate JS, canonical source and embedded data
+        run: |
+          node --check research/intellectual-atlas/atlas-app.js
+          python research/intellectual-atlas/build.py
+          python - <<'PY'
+          import json,re
+          from pathlib import Path
+          p=Path('research/intellectual-atlas')
+          data=json.loads((p/'downloads/intellectual-atlas-data.json').read_text())
+          html=(p/'index.html').read_text()
+          embedded=json.loads(re.search(r'<script type="application/json" data-atlas>(.*?)</script>',html,re.S).group(1))
+          assert data==embedded
+          assert (len(data['nodes']),len(data['edges']),len(data['sources']),len(data['textual_families']))==(386,362,359,20)
+          assert data['revision']=='avicennian-extensions-7.2-2026-10-30'
+          assert next(n for n in data['nodes'] if n['id']=='iji_mawaqif')['temporal']['kind']=='multiple_stages'
+          assert next(n for n in data['nodes'] if n['id']=='plotinus_enneads')['temporal']['kind']=='multiple_stages'
+          PY
+      - name: Install Playwright browsers
+        run: |
+          python -m pip install -q playwright==1.58.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Six old viewports plus continuous touch gesture and date tests
+        shell: bash
+        run: |
+          python -m http.server 8123 --bind 127.0.0.1 >/tmp/gnamma-atlas-server.log 2>&1 &
+          server=$!
+          trap 'kill $server || true' EXIT
+          for i in {1..60}; do
+            if curl --silent --fail http://127.0.0.1:8123/research/intellectual-atlas/ > /dev/null; then break; fi
+            sleep .25
+          done
+          python research/intellectual-atlas/tests/verify_atlas_browser.py
+          python research/intellectual-atlas/tests/verify_continuous_scrub_browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: atlas-7-1-gesture-qa
+          path: |
+            /tmp/gnamma-atlas-browser/*.png
+            /tmp/gnamma-atlas-browser/*.json
+            /tmp/gnamma-atlas-server.log
+          if-no-files-found: ignore

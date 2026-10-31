@@ -1,0 +1,62 @@
+(function(){'use strict';
+const D=window.AVICENNIAN_CORPUS;
+if(!D||!Array.isArray(D.records)||!Array.isArray(D.analysis)){document.getElementById('main').textContent='Source corpus could not be loaded.';return;}
+const V={data:D,records:D.records.concat(D.analysis),byId:new Map(),sectionsCache:new Map(),storeKey:'avicennism-reader-v1'};
+V.records.forEach(r=>V.byId.set(r.id,r));
+V.$=s=>document.querySelector(s);
+V.$$=s=>Array.from(document.querySelectorAll(s));
+V.esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+V.norm=s=>String(s==null?'':s).normalize('NFKD').replace(/[\u0300-\u036f\u064b-\u065f\u0670ʿʾ’']/g,'').toLowerCase().replace(/[-_\s]+/g,' ');
+V.clean=s=>String(s==null?'':s).replace(/[*_#>\[\]]/g,'').replace(/\s+/g,' ').trim();
+V.snip=(s,n=270)=>{let t=V.clean(s);return t.length>n?t.slice(0,n).trim()+'…':t;};
+V.icon=n=>'<svg aria-hidden="true"><use href="#i-'+V.esc(n)+'"/></svg>';
+V.href=(p,q)=>{const u=new URLSearchParams();Object.keys(q||{}).forEach(k=>{if(q[k]!==null&&q[k]!==undefined&&q[k]!=='')u.set(k,String(q[k]));});return '#'+p+(u.toString()?'?'+u:'');};
+V.route=()=>{let s=location.hash.slice(1)||'home',i=s.indexOf('?'),p=i<0?s:s.slice(0,i);try{p=decodeURIComponent(p);}catch{p='home';}if(!/^(home|contents|texts|chapters|compare(?:\/[a-z0-9-]+)?|domains|domain\/[a-z0-9-]+|witnesses|glossary|search|desk|downloads|help|text\/[a-z0-9-]+(?:\/[0-9]+)?)$/.test(p))p='home';return{path:p,query:new URLSearchParams(i<0?'':s.slice(i+1))};};
+V.sourceLinks=r=>(r.sourceUrls&&r.sourceUrls.length?r.sourceUrls:[r.sourceUrl||r.source]).filter(Boolean);
+V.extLink=(url,label)=>url?'<a href="'+V.esc(url)+'" target="_blank" rel="noopener noreferrer">'+V.esc(label||'Source')+' ↗</a>':'';
+V.kind=r=>r.kind==='mediated'?'Mediated quotation':r.kind==='analysis'?'Editorial synthesis':r.kind==='late'?'Later primary witness':'Primary working translation';
+V.badge=r=>'<span class="status-pill '+(r.kind==='mediated'?'mediated':'direct')+'">'+V.esc(V.kind(r))+'</span>';
+V.findLink=u=>{u=String(u||'');if(/^(https?:\/\/|mailto:|#)/.test(u))return u;const name=u.replace(/^\.\//,'').split('#')[0].split('?')[0];const r=V.records.find(x=>x.sourceFile&&x.sourceFile.endsWith('/'+name));if(r)return '#text/'+r.id;return 'https://github.com/gnamma-research/booksite/blob/master/research/intellectual-atlas/avicennian-summa/'+name;};
+V.inline=s=>{let links=[];let text=String(s||'').replace(/\[([^\]]+)\]\(([^)\s]+)\)/g,function(_,label,u){const i=links.length;const target=V.findLink(u);links.push('<a href="'+V.esc(target)+'"'+(/^https?:/.test(target)?' target="_blank" rel="noopener noreferrer"':'')+'>'+V.esc(label)+'</a>');return '§§LINK'+i+'§§';});return V.esc(text).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/\*([^*\n]+)\*/g,'<em>$1</em>').replace(/§§LINK(\d+)§§/g,(_,i)=>links[Number(i)]||'');};
+V.md=md=>{const ls=String(md||'').split(/\r?\n/),out=[];let i=0,list=null;const cl=()=>{if(list){out.push('</'+list+'>');list=null;}};const cells=s=>s.replace(/^\||\|$/g,'').split('|').map(x=>x.trim());while(i<ls.length){let s=ls[i].trim(),next=(ls[i+1]||'').trim(),m;if(!s){cl();i++;continue;}if((m=s.match(/^(#{1,5})\s+(.+)/))){cl();const level=m[1].length+1;out.push('<h'+level+'>'+V.inline(m[2])+'</h'+level+'>');i++;continue;}if(s==='---'){cl();out.push('<hr>');i++;continue;}if(s[0]==='|'&&/^\|[\s:|-]+\|?$/.test(next)){cl();out.push('<div class="table-scroll"><table><thead><tr>'+cells(s).map(x=>'<th>'+V.inline(x)+'</th>').join('')+'</tr></thead><tbody>');i+=2;while(i<ls.length&&ls[i].trim().startsWith('|')){out.push('<tr>'+cells(ls[i].trim()).map(x=>'<td>'+V.inline(x)+'</td>').join('')+'</tr>');i++;}out.push('</tbody></table></div>');continue;}if(s.startsWith('>')){cl();const q=[];while(i<ls.length&&ls[i].trim().startsWith('>')){q.push(ls[i].trim().replace(/^>\s?/,''));i++;}out.push('<blockquote>'+V.inline(q.join(' '))+'</blockquote>');continue;}if((m=s.match(/^(-|\*|\d+\.)\s+(.+)/))){const type=/^\d/.test(m[1])?'ol':'ul';if(list!==type){cl();list=type;out.push('<'+type+'>');}out.push('<li>'+V.inline(m[2])+'</li>');i++;continue;}cl();const par=[s];i++;while(i<ls.length){let t=ls[i].trim();if(!t||/^(#{1,5}\s|>\s?|\|.*\||(?:-|\*|\d+\.)\s|---$)/.test(t))break;par.push(t);i++;}out.push('<p>'+V.inline(par.join(' '))+'</p>');}cl();return out.join('\n');};
+V.sections=r=>{if(V.sectionsCache.has(r.id))return V.sectionsCache.get(r.id);const lines=String(r.md||'').split(/\r?\n/),sections=[];let cur={title:'Edition and source status',lines:[]};function push(){if(cur.lines.some(x=>x.trim())||!sections.length)sections.push(cur);}lines.forEach(s=>{const m=s.match(/^##\s+(.+)/);if(m){push();cur={title:V.clean(m[1]),lines:[]};}else if(!/^# [^#]/.test(s))cur.lines.push(s);});push();const arr=sections.map((a,i)=>{let orig=[],rest=[],q=[];function flush(){if(!q.length)return;const t=q.join(' ').trim();if(/[\u0600-\u06ff]/.test(t))orig.push(t);else rest.push('> '+t);q=[];}a.lines.forEach(line=>{if(/^\s*>\s?/.test(line)){q.push(line.replace(/^\s*>\s?/,''));return;}flush();rest.push(line);
+// Extract only original-language anchors explicitly printed in witness tables.
+// These anchors are NOT full source transcriptions or reconstructed Arabic.
+if((r.lang==='ar'||r.lang==='fa')&&/^\s*\|/.test(line)&&/[\u0600-\u06ff]/.test(line)){
+ const cells=line.replace(/^\s*\||\|\s*$/g,'').split('|').map(x=>x.trim().replace(/^\*\*|\*\*$/g,'').replace(/<[^>]*>/g,''));
+ const c=cells.find(t=>/[\u0600-\u06ff]/.test(t)&&!/^[-:\s]+$/.test(t));
+ if(c&&c.length>3&&c.length<500&&!orig.includes(c))orig.push(c);
+}
+if((r.lang==='ar'||r.lang==='fa')&&/^(?:Arabic heading:|Arabic anchor:|Persian heading:)/i.test(line)){
+ const m=line.match(/\*\*([\u0600-\u06FF][^*]{3,450})\*\*/);
+ if(m&&!orig.includes(m[1]))orig.push(m[1]);
+}
+if(r.lang==='la'&&/^\s*\|\s*327\d+\s*\|/.test(line)){
+ const cells=line.replace(/^\s*\||\|\s*$/g,'').split('|').map(x=>x.trim().replace(/^\*|\*$/g,''));
+ const c=cells[1];
+ if(c&&c.length>4&&c.length<350&&!orig.includes(c))orig.push(c);
+}
+});flush();const m=rest.join('\n').trim();return{index:i,title:a.title,originals:orig,body:m,search:V.norm(a.title+' '+m+' '+orig.join(' ')),notes:/apparatus|notes|editorial|variant|source|cross.link|status|limit|bibliograph|witness/i.test(a.title)};});V.sectionsCache.set(r.id,arr);return arr;};
+V.sectionLink=(r,i)=>'#text/'+r.id+'/'+i;
+V.original=(r,s)=>s.originals.length?'<div class="originals">'+s.originals.map(q=>'<blockquote class="source-quote" lang="'+(r.lang==='fa'?'fa':r.lang==='la'?'la':'ar')+'" dir="'+(r.lang==='la'?'ltr':'rtl')+'">'+V.esc(q)+'</blockquote>').join('')+'</div><p class="source-notice">Short source excerpts only; not a complete aligned transcription.</p>':'<div class="source-warning">The complete original language is <strong>not transcribed in this working file</strong>. Follow the linked historical source. Only passages actually reproduced in the source Markdown are shown here.</div>';
+V.citeLinks=r=>'<div class="source-links">'+V.sourceLinks(r).slice(0,7).map((u,i)=>V.extLink(u,'Source '+(i+1))).join('')+V.extLink('https://github.com/gnamma-research/booksite/blob/master/'+r.sourceFile,'Working Markdown')+'</div>';
+V.recordLink=r=>'<a class="document-row" href="#text/'+r.id+'"><div><div class="eyebrow">'+V.esc(r.author)+' · '+V.esc(r.locus||'')+'</div><h3>'+V.esc(r.title)+'</h3><p>'+V.esc(r.work)+' · '+V.esc(r.coverage||'')+'</p><small>'+V.esc(r.family||'')+'</small></div><span class="row-action">Read →</span></a>';
+V.head=(label,title,lead)=>'<div class="eyebrow">'+V.esc(label)+'</div><h1>'+V.esc(title)+'</h1>'+(lead?'<p class="lead">'+V.esc(lead)+'</p>':'');
+V.crumb=entries=>'<nav class="breadcrumbs"><a href="#home">Avicennism</a>'+entries.map(x=>'<span>'+(x[1]?'<a href="'+x[1]+'">'+V.esc(x[0])+'</a>':V.esc(x[0]))+'</span>').join('')+'</nav>';
+V.note='';V.toast=function(t){const e=V.$('#notice');e.textContent=t;e.hidden=false;clearTimeout(V.note);V.note=setTimeout(()=>e.hidden=true,3200);};
+V.saved={marks:[],notes:{},history:[],prefs:{ar:true,en:true,theme:'light',palette:'mineral',size:19,order:'en',layout:'parallel',mode:'reading',fontAr:'Amiri',fontEn:'Georgia'}};
+try{const raw=JSON.parse(localStorage.getItem(V.storeKey)||'null');if(raw&&typeof raw==='object')V.saved={...V.saved,...raw,marks:Array.isArray(raw.marks)?raw.marks:[],notes:raw.notes&&typeof raw.notes==='object'?raw.notes:{},history:Array.isArray(raw.history)?raw.history:[],prefs:{...V.saved.prefs,...(raw.prefs||{})}};}catch{}
+if(!V.saved.prefs.ar&&!V.saved.prefs.en)V.saved.prefs.en=true;
+V.save=()=>{try{localStorage.setItem(V.storeKey,JSON.stringify(V.saved));return true;}catch{V.toast('Browser storage unavailable. Export notes to keep them.');return false;}};
+V.colors=()=>{const p=V.saved.prefs,dark=p.theme==='dark'||(p.theme==='system'&&matchMedia('(prefers-color-scheme:dark)').matches);const palettes={mineral:['#eff3f0','#fbfcf8','#273536','#617174','#d5dfd9','#315d70','#e3eef1'],zellij:['#f1f2ea','#fafbf4','#28352d','#657367','#d4dccf','#3e6650','#e4ebdf'],cordoba:['#f4eee4','#fffaf1','#40382f','#776b5d','#dfd3bf','#79593d','#eee4d3']};const colors=dark?['#19282b','#233338','#e5efed','#acc1bd','#40575b','#afd6db','#2b4148']:(palettes[p.palette]||palettes.mineral);['bg','paper','text','muted','line','accent','wash'].forEach((n,i)=>document.documentElement.style.setProperty('--'+n,colors[i]));document.documentElement.style.colorScheme=dark?'dark':'light';document.documentElement.style.setProperty('--size',Math.min(29,Math.max(16,Number(p.size)||19))+'px');document.documentElement.style.setProperty('--arabic',"'"+(p.fontAr||'Amiri')+"'");document.documentElement.style.setProperty('--english',"'"+(p.fontEn||'Georgia')+"'");for(const[c,on]of[['lang-ar-off',!p.ar],['lang-en-off',!p.en],['stacked',p.layout==='stacked'],['order-ar',p.order==='ar'],['focusmode',p.mode==='focus']])document.body.classList.toggle(c,on);['ar','en'].forEach(x=>{const e=V.$('[data-action='+x+']');if(e)e.setAttribute('aria-pressed',String(!!p[x]));});const f=V.$('[data-action=focus]');if(f)f.setAttribute('aria-pressed',String(p.mode==='focus'));};
+V.current='home';
+V.label=route=>{const p=route.split('?')[0].split('/');const r=V.byId.get(p[1]);if(p[0]==='text'&&r)return r.title+(p[2]?' · section '+(Number(p[2])+1):'');const d=(D.debates||[]).find(x=>x.id===p[1]),t=(D.themes||[]).find(x=>x.id===p[1]);return d?.question||t?.title||({home:'Overview',contents:'Contents',texts:'Primary texts',chapters:'Research chapters',compare:'Compare',domains:'Twenty domains',witnesses:'Witnesses',glossary:'Dictionary',search:'Search',desk:'Reading desk',downloads:'Downloads',help:'Help'})[p[0]]||route;};
+V.bookmarked=()=>V.saved.marks.some(m=>m.route===V.current);
+V.bookmark=()=>{const i=V.saved.marks.findIndex(x=>x.route===V.current);if(i>=0){V.saved.marks.splice(i,1);V.toast('Bookmark removed.');}else{V.saved.marks.unshift({route:V.current,label:V.label(V.current),date:new Date().toISOString()});V.toast('Saved in reading desk.');}V.save();};
+V.track=()=>{V.saved.history=V.saved.history.filter(x=>x.route!==V.current);V.saved.history.unshift({route:V.current,label:V.label(V.current),date:new Date().toISOString()});V.saved.history=V.saved.history.slice(0,35);V.save();};
+V.download=(name,text,type)=>{const blob=new Blob([text],{type:type||'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);};
+V.copy=async value=>{try{await navigator.clipboard.writeText(value);V.toast('Copied.');}catch{const t=document.createElement('textarea');t.value=value;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{document.execCommand('copy');V.toast('Copied.');}catch{V.toast('Copy unavailable.');}t.remove();}};
+V.panel=(title,body)=>{V.$('#paneltitle').textContent=title;V.$('#panelbody').innerHTML=body;const p=V.$('#panel');if(!p.open)p.showModal();};
+V.pager=(prev,next,label)=>{const p=V.$('#pager');p.hidden=false;V.$('#prev').href=prev;V.$('#next').href=next;V.$('#where').innerHTML=V.esc(label);};
+window.AVR=V;
+})();

@@ -1,41 +1,41 @@
 {
-  "revision": "daruri8-structure-20261020",
+  "revision": "daruri14-sinaa-full-dictionary-20261025",
   "pdfs": {
     "daruri.pdf": {
-      "pages": 243,
-      "size_bytes": 2660384,
-      "sha256": "5fcedd45daeac5b9b08ef1fdd8517c06d223c11c873b051a5d27322dfa33dab3",
+      "pages": 244,
+      "size_bytes": 2670615,
+      "sha256": "d48c347615dea180645a3d8718643b0d6b24102da4f15e6cb063657207bd8c35",
       "installed_matches": true
     },
     "daruri-study.pdf": {
       "pages": 131,
-      "size_bytes": 1513503,
-      "sha256": "0e72c8670dd698c25a989a35ee487c8c5218ac19ca072edba5b4cbcc55bbb6bc",
+      "size_bytes": 1515949,
+      "sha256": "816dff1bb4a21b9d48993b7bf673ccd89c53eba441aabdab5415b8de27c280ca",
       "installed_matches": true
     },
     "daruri-english.pdf": {
       "pages": 97,
-      "size_bytes": 831971,
-      "sha256": "adcb955e4e4140408898e8ec94cd2e6a8b5fd27355cf53d40ba79f4e9d829ead",
+      "size_bytes": 837528,
+      "sha256": "aff35905337193c2af89c30aab8d0c5be772cd00bf334aa66b42472bf930b5cf",
       "installed_matches": true
     },
     "daruri-arabic.pdf": {
-      "pages": 73,
-      "size_bytes": 531748,
-      "sha256": "a3a7ec0e87cff9e858f1cf1ce390503b517c00b53ed3d08f9a467a464a1728d7",
+      "pages": 72,
+      "size_bytes": 532629,
+      "sha256": "6c49ab6c86d66c2c944ca1007350146ae6a355a55c4c0fe7fe336902548c388c",
       "installed_matches": true
     },
     "daruri-arabic-vowelled.pdf": {
-      "pages": 69,
-      "size_bytes": 833252,
-      "sha256": "18c75ac09f91d5f0e308d0ab7f55e449738a095816af74b526a43db1e3e823c8",
+      "pages": 68,
+      "size_bytes": 833586,
+      "sha256": "5d30e6e07441c50d73edeac4f76ec12189571734c89550350948072181965df1",
       "installed_matches": true
     }
   },
   "companion_pages_preserved": 85,
   "study_companion": {
-    "bytes": 568637,
-    "sha256": "69f8bd820f1f48ce9c1f168986e4ce36532698030992a715936a806fc000dc80",
+    "bytes": 570027,
+    "sha256": "61e16b3a45ef04cdda445b2732e731f69077bd725d4480e68a0a770d9ae3cd78",
     "pages": 85,
     "refreshed": false
   },
@@ -43,25 +43,33 @@
   "static_heading_destinations": 259,
   "static_contents_destinations": 306,
   "static_page_numbers_changed": 0,
-  "download_panels": 2,
-  "download_links": 10,
+  "download_panels": 0,
+  "download_links": 0,
+  "modern_fallback_downloads": 5,
   "study_fallback_levels_preserved": 84,
   "dynamic_destinations": 259,
   "dynamic_page_numbers_changed": 0,
-  "notes_preserved": 628,
+  "notes_preserved": 625,
   "files_needing_update": [],
   "all_installed_pdfs_match": true,
   "ready": true,
   "mode": "apply",
   "files_written": [
-    "download-bundle.js"
+    "pdf-editions-manifest.json",
+    "sw.js"
   ],
   "files_updated": [
     {
-      "path": "download-bundle.js",
-      "before_sha256": "4ebe30938bc1af3eb4700592adfd4452217d56e37fdce71287b2d4b5fb7ddd52",
-      "after_sha256": "c80c51bd3aff4f85df98579fb1dab8c36a17ad73362637954c3fdd2de615de20",
-      "size_bytes": 13462
+      "path": "pdf-editions-manifest.json",
+      "before_sha256": "327b60a182fcd82941d422cf1a045664cda74af5d31c501f09dbcc451d001754",
+      "after_sha256": "b35506867ee9835cdfadb3276d7bffd529174b4ebeb3ae06dd68027edb2788cc",
+      "size_bytes": 5768
+    },
+    {
+      "path": "sw.js",
+      "before_sha256": "7aa3a536e6cea535a86d24f30d423e3eb43a300fe8d308405dacf59b542a34fa",
+      "after_sha256": "562cfa7a7cee6455e80be4c347e11423648d99368e517d65703b97efe8c1a697",
+      "size_bytes": 11113
     }
   ]
 }

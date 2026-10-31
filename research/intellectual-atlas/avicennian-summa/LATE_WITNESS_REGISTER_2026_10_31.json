@@ -1,0 +1,313 @@
+{
+  "edition": "GNAMMA late-commentator Stage05",
+  "date": "2026-10-31",
+  "source_policy": "All directly accessed texts are digital edited witnesses, not newly collated manuscripts. Nested cited authors count as only mediated testimony.",
+  "translated_fascicle_count": 11,
+  "direct_source_work_count": 8,
+  "translated_fascicles": [
+    {
+      "id": "LC-04",
+      "file": "LATE_FASCICLE_04_LAHIJI_GAWHAR_EMANATION_UNITY.md",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "work": "Gawhar-i murād",
+      "language": "Persian",
+      "scope": "II.3.4 opening pp.290–293",
+      "source_urls": [
+        "https://ablibrary.net/book_content/b/17438/290?lang=ar",
+        "https://ablibrary.net/book_content/b/17438/291?lang=ar",
+        "https://ablibrary.net/book_content/b/17438/292?lang=ar",
+        "https://ablibrary.net/book_content/b/17438/293?lang=ar"
+      ],
+      "translation_type": "bounded-opening-argument",
+      "source_access": "direct-searchable-edited-text",
+      "original_manuscripts_inspected": false,
+      "independent_collation": false,
+      "completed_full_historical_work": false
+    },
+    {
+      "id": "LC-01",
+      "file": "LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "work": "Gawhar-i murād",
+      "language": "Persian",
+      "scope": "II.3.6 pp.301–303",
+      "source_urls": [
+        "https://ablibrary.net/book_content/b/17438/301?lang=ar",
+        "https://ablibrary.net/book_content/b/17438/302?lang=ar",
+        "https://ablibrary.net/book_content/b/17438/303?lang=ar"
+      ],
+      "translation_type": "bounded-complete-chapter",
+      "source_access": "direct-searchable-edited-text",
+      "original_manuscripts_inspected": false,
+      "independent_collation": false,
+      "completed_full_historical_work": false
+    },
+    {
+      "id": "LC-02",
+      "file": "LATE_FASCICLE_02_LAHIJI_GAWHAR_TEMPORAL_CAUSATION.md",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "work": "Gawhar-i murād",
+      "language": "Persian",
+      "scope": "II.3.7 pp.304–306",
+      "source_urls": [
+        "https://ablibrary.net/book_content/b/17438/304?lang=ar",
+        "https://ablibrary.net/book_content/b/17438/305?lang=ar",
+        "https://ablibrary.net/book_content/b/17438/306?lang=ar"
+      ],
+      "translation_type": "bounded-complete-chapter",
+      "source_access": "direct-searchable-edited-text",
+      "original_manuscripts_inspected": false,
+      "independent_collation": false,
+      "completed_full_historical_work": false
+    },
+    {
+      "id": "LC-03",
+      "file": "LATE_FASCICLE_03_LAHIJI_GAWHAR_DIVINE_AGENCY.md",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "work": "Gawhar-i murād",
+      "language": "Persian",
+      "scope": "II.3.8 pp.307–309",
+      "source_urls": [
+        "https://ablibrary.net/book_content/b/17438/307?lang=ar",
+        "https://ablibrary.net/book_content/b/17438/308?lang=ar",
+        "https://ablibrary.net/book_content/b/17438/309?lang=ar"
+      ],
+      "translation_type": "bounded-complete-chapter",
+      "source_access": "direct-searchable-edited-text",
+      "original_manuscripts_inspected": false,
+      "independent_collation": false,
+      "completed_full_historical_work": false
+    },
+    {
+      "id": "LC-08",
+      "file": "LATE_FASCICLE_08_LAHIJI_SARMAYA_IMAN_DEPENDENCE.md",
+      "author": "ʿAbd al-Razzāq al-Lāhījī",
+      "work": "Sarmāya-i īmān",
+      "language": "Persian",
+      "scope": "pp.37–38",
+      "source_urls": [
+        "https://ablibrary.net/book_content/17348/37",
+        "https://ablibrary.net/book_content/17348/38"
+      ],
+      "translation_type": "bounded-excerpt",
+      "source_access": "direct-searchable-edited-text",
+      "original_manuscripts_inspected": false,
+      "independent_collation": false,
+      "completed_full_historical_work": false
+    },
+    {
+      "id": "LC-06",
+      "file": "LATE_FASCICLE_06_TAFTAZANI_MAQASID_MENTAL_EXISTENCE.md",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "work": "Sharḥ al-Maqāṣid",
+      "language": "Arabic",
+      "scope": "pp.78–79",
+      "source_urls": [
+        "https://usul.ai/ar/t/sharh-maqasid/78",
+        "https://usul.ai/ar/t/sharh-maqasid/79"
+      ],
+      "translation_type": "objections-and-replies-complete",
+      "source_access": "direct-searchable-edited-text",
+      "original_manuscripts_inspected": false,
+      "independent_collation": false,
+      "completed_full_historical_work": false
+    },
+    {
+      "id": "LC-07",
+      "file": "LATE_FASCICLE_07_MAWAQIF_JURJANI_GLOSSES.md",
+      "author": "al-Ījī / al-Jurjānī / unnamed marginal layers",
+      "work": "al-Mawāqif with Sharḥ",
+      "language": "Arabic",
+      "scope": "vol.VI pp.7–8",
+      "source_urls": [
+        "https://ablibrary.net/book_content/b/9299/7?lang=ar",
+        "https://ablibrary.net/book_content/b/9299/8?lang=ar"
+      ],
+      "translation_type": "layered-excerpt-attribution-unresolved",
+      "source_access": "direct-searchable-edited-text",
+      "original_manuscripts_inspected": false,
+      "independent_collation": false,
+      "completed_full_historical_work": false
+    },
+    {
+      "id": "LC-05",
+      "file": "LATE_FASCICLE_05_INDIAN_TAHANAWI_MIR_ZAHID_JAL.md",
+      "author": "Muḥammad ʿAlī al-Tahānawī (reports Mīr Zāhid)",
+      "work": "Kashshāf iṣṭilāḥāt al-funūn",
+      "language": "Arabic",
+      "scope": "vol.I pp.620–621",
+      "source_urls": [
+        "https://najafdesertlibrary.com/book/%D9%85%D9%88%D8%B3%D9%88%D8%B9%D8%A9-%D9%83%D8%B4%D8%A7%D9%81-%D8%A7%D8%B5%D8%B7%D9%84%D8%A7%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86-%D9%88%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85/v/1/p/620",
+        "https://najafdesertlibrary.com/book/%D9%85%D9%88%D8%B3%D9%88%D8%B9%D8%A9-%D9%83%D8%B4%D8%A7%D9%81-%D8%A7%D8%B5%D8%B7%D9%84%D8%A7%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86-%D9%88%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85/v/1/p/621"
+      ],
+      "translation_type": "primary-entry-with-nested-mir-zahid-report",
+      "source_access": "direct-searchable-edited-text",
+      "original_manuscripts_inspected": false,
+      "independent_collation": false,
+      "completed_full_historical_work": false
+    },
+    {
+      "id": "LC-09",
+      "file": "LATE_FASCICLE_09_POST_TAJRID_QUṢHJI_KHAFRI_KHWANSARI_POWER.md",
+      "author": "Muḥammad Jaʿfar al-Astarābādī (reports Ṭūsī, Qūshjī, al-Khafrī, al-Khwānsārī)",
+      "work": "al-Barāhīn al-qāṭiʿa",
+      "language": "Arabic",
+      "scope": "vol.II pp.96–99",
+      "source_urls": [
+        "https://lib.rafed.net/view.php?b_id=718&page=91&type=c_fbook"
+      ],
+      "translation_type": "primary-commentary-with-nested-reports",
+      "source_access": "direct-searchable-edited-text",
+      "original_manuscripts_inspected": false,
+      "independent_collation": false,
+      "completed_full_historical_work": false
+    },
+    {
+      "id": "LC-10",
+      "file": "LATE_FASCICLE_10_NARAQI_LAMAAT_EXISTENCE_ESSENCE.md",
+      "author": "Muḥammad Mahdī al-Narāqī",
+      "work": "al-Lamaʿāt al-ʿarshiyya",
+      "language": "Arabic",
+      "scope": "pp.72 and 82, noncontiguous",
+      "source_urls": [
+        "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%84%D9%85%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%B4%D9%8A%D8%A9/v/1/p/72",
+        "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%84%D9%85%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%B4%D9%8A%D8%A9/v/1/p/82"
+      ],
+      "translation_type": "two-bounded-selected-arguments",
+      "source_access": "direct-searchable-edited-text",
+      "original_manuscripts_inspected": false,
+      "independent_collation": false,
+      "completed_full_historical_work": false
+    },
+    {
+      "id": "LC-11",
+      "file": "LATE_FASCICLE_11_NARAQI_SHARH_SHIFA_SECOND_INTENTIONS.md",
+      "author": "Muḥammad Mahdī al-Narāqī",
+      "work": "Sharḥ Ilāhiyyāt al-Shifāʾ",
+      "language": "Arabic",
+      "scope": "vol.I pp.106–107 plus p.110 variant report",
+      "source_urls": [
+        "https://ablibrary.net/book_content/b/15109/138?lang=ar",
+        "https://ablibrary.net/book_content/b/15109/139?lang=ar",
+        "https://ablibrary.net/book_content/b/15109/142?lang=ar"
+      ],
+      "translation_type": "bounded-argument-and-discrete-variant",
+      "source_access": "direct-searchable-edited-text",
+      "original_manuscripts_inspected": false,
+      "independent_collation": false,
+      "completed_full_historical_work": false
+    }
+  ],
+  "unresolved_witnesses": [
+    {
+      "id": "MI-1856",
+      "author": "Mīr Zāhid al-Harawī",
+      "work": "Ḥāshiya ʿalā Sharḥ al-Mawāqif — al-umūr al-ʿāmma",
+      "edition": "printed 1856, 106-page scan",
+      "status": "public-domain-scan-located-not-collated",
+      "url": "https://commons.wikimedia.org/wiki/File:Hashiya_Ala_Sharah_Al_Muwafiq_Umoor_E_Aamma_(IA_in.ernet.dli.2015.324001).pdf",
+      "evidence": "nested-report-in-Tahanawi-only"
+    },
+    {
+      "id": "MI-1874",
+      "author": "Mīr Zāhid",
+      "work": "Ḥāshiya ʿalā Sharḥ al-Mawāqif",
+      "edition": "Delhi 1874, 79 pages",
+      "status": "catalogued-limited-access",
+      "url": "https://kutuphane.osmanlica.com/kitap/5250986"
+    },
+    {
+      "id": "MI-1876",
+      "author": "Mīr Zāhid",
+      "work": "al-Ḥāshiya ʿalā Sharḥ al-Mawāqif",
+      "edition": "Lucknow 1876, 139 pages, editor Muḥammad Ṣādiq ʿAlī Lakhnawī",
+      "status": "catalogued-limited-access",
+      "url": "https://search.worldcat.org/title/alhashyh-lmyr-zahd-ala-shrh-almwaqf/oclc/978479874"
+    },
+    {
+      "id": "KM-1879",
+      "author": "Muḥammad ʿAbd al-Ḥaqq al-Khayrābādī",
+      "work": "Sharḥ al-ḥāshiya al-Zāhidiyya ʿalā al-umūr al-ʿāmma",
+      "edition": "Kanpur c.1879–1880",
+      "status": "digitized-catalogued-not-transcribed",
+      "url": "https://dar.bibalex.org/en/BookDetail/BookDetail.aspx?keyword=DAF-Job%3A166828&queryParam=id"
+    },
+    {
+      "id": "KH-1904",
+      "author": "Faḍl-i Ḥaqq al-Khayrābādī",
+      "work": "al-Hadiyya al-saʿīdiyya fī l-ḥikma al-ṭabīʿiyya",
+      "edition": "Cairo 1904 edited by ʿAbd al-Raḥmān al-Barqūqī",
+      "status": "digitized-scan-located-not-transcribed",
+      "url": "https://ddl.ae/book/95961",
+      "warning": "Do not infer separate form-bestowal position from secondary discussion of motion"
+    },
+    {
+      "id": "KHW-1",
+      "author": "Āqā Ḥusayn al-Khwānsārī",
+      "work": "Ḥāshiya ʿalā Ilāhiyyāt al-Shifāʾ",
+      "status": "partial-edition-lead-not-collated",
+      "url": "https://almahdi.edu/wahid-amin/"
+    },
+    {
+      "id": "KHW-2",
+      "author": "Āqā Jamāl al-Khwānsārī",
+      "work": "Gloss reported in al-Barāhīn al-qāṭiʿa",
+      "status": "nested-objection-only-not-independent-source",
+      "url": "https://lib.rafed.net/view.php?b_id=718&page=91&type=c_fbook",
+      "warning": "NOT Āqā Ḥusayn; distinguish father from son"
+    },
+    {
+      "id": "JIL",
+      "author": "Mīrzā Abū al-Ḥasan Jilwa",
+      "work": "Ḥawāshī al-Shifāʾ / Ithbāt al-ḥaraka al-jawhariyya",
+      "status": "bibliography-lead-no-secure-passage",
+      "url": "https://seop.illc.uva.nl/archives/sum2016/entries/mulla-sadra/",
+      "warning": "Do not assert straightforward rejection of substantial motion without actual treatise"
+    },
+    {
+      "id": "QSH",
+      "author": "ʿAlī Qūshjī",
+      "work": "Sharḥ al-Tajrīd",
+      "status": "nested-quotation-in-Astarabadi-original-witness-unverified",
+      "url": "https://lib.rafed.net/view.php?b_id=718&page=91&type=c_fbook",
+      "locator": "reported pp.310–311"
+    },
+    {
+      "id": "KHAFRI",
+      "author": "Ghiyāth al-Dīn al-Khafrī",
+      "work": "Ḥāshiya ʿalā Ilāhiyyāt Sharḥ al-Qūshjī",
+      "status": "nested-quotation-manuscript-citation-not-verified",
+      "url": "https://lib.rafed.net/view.php?b_id=718&page=91&type=c_fbook",
+      "locator": "reported manuscript fol.5"
+    },
+    {
+      "id": "QMB",
+      "author": "Qāḍī Mubārak Shāh",
+      "work": "Ḥāshiya ʿalā Ḥāshiyat Mīr Zāhid",
+      "status": "catalogued-manuscript-not-transcribed",
+      "url": "https://islamarchive.cc/manuscript/792038"
+    }
+  ],
+  "conflict_rules": [
+    "Do not identify al-Sayyid al-Sanad with Ṣadr al-Dīn al-Dashtakī; title normally denotes al-Sayyid al-Sharīf al-Jurjānī.",
+    "Āqā Jamāl al-Khwānsārī is not his father Āqā Ḥusayn.",
+    "A Tahānawī report of Mīr Zāhid does not count as an independent Mīr Zāhid text.",
+    "Printed A/B/C/F variants are reported by editions; no original witness inspected.",
+    "A successful commit is not proof of GitHub Pages publication or scholarly exhaustiveness."
+  ],
+  "mediated_documentary_annexes": [
+    {
+      "id": "IN-KH-QUOTED-01",
+      "file": "INDIAN_PRIMARY_QUOTATION_01_KHAYRABADI_HEAT.md",
+      "historical_author": "Faḍl-i Ḥaqq al-Khayrābādī",
+      "historical_work": "al-Hadiyya al-saʿīdiyya fī l-ḥikma al-ṭabīʿiyya",
+      "original_print": "Cairo 1904, cited pp.92–94",
+      "transmission": "Extensive historical Arabic quotation reproduced in Sāʾir Baṣmajī, Tārīkh ʿilm al-ḥarāra (Hindawi 2023), printed pp.202–203",
+      "source_url": "https://downloads.hindawi.org/books/81461536.pdf#page=202",
+      "status": "translated-mediated-quotation-not-independent-original",
+      "original_1904_witness_inspected": false,
+      "independent_collation": false,
+      "scope": "five anti-latent-fire objections; no independent form-bestowal conclusion"
+    }
+  ]
+}

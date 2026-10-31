@@ -42,6 +42,7 @@ Object.assign(RD_ICON,{
  az:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 19 8 5l5 14M5 15h6M16 6h5l-5 12h5"/></svg>',
  order:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 5h16M4 10h13M4 15h9M4 20h5"/></svg>',
  book:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 6c-3-2-6-2-10-1v14c4-1 7-1 10 1 3-2 6-2 10-1V5c-4-1-7-1-10 1zM12 6v14"/></svg>',
+ wordContext:'<svg class="gn-rd-word-context-symbol" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7.2"/><path d="m15.2 15.2 5.2 5.2"/><text x="10" y="13.2" text-anchor="middle" font-family="Amiri, Noto Naskh Arabic, serif" font-size="12" fill="currentColor" stroke="none">ع</text></svg>',
  index:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5h14M5 10h14M5 15h10M5 20h7"/></svg>',
  link:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 8 0l2-2a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-8 0l-2 2a5 5 0 0 0 7 7l2-2"/></svg>',
  lesson:'<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m2 10 10-5 10 5-10 5zM6 12v5c4 3 8 3 12 0v-5"/></svg>',
@@ -380,7 +381,7 @@ function create(ctx){
   if(!row)return null;
   records.unshift(row);
   if(!persist()){records.shift();return null;}
-  ctx.notify(kind==='note'?'Personal note added to Reading Desk.':kind==='quote'?'Highlighted in Reading Desk.':'Bookmarked in Reading Desk.');
+  ctx.notify(kind==='note'?'Personal note added to Reading Desk.':kind==='quote'?(showPersonalMarks()?'Highlight saved and shown in the reader.':'Highlight saved; enable “Show private Reading Desk marks” in Settings to display it.'):'Bookmarked in Reading Desk.');
   if(state.route==='bookmarks')render();
   if(state.route==='reader')refreshReaderAfterBookmark(target);
   return row;
@@ -785,6 +786,8 @@ function create(ctx){
   bar.setAttribute('aria-label','Actions for selected text');bar.hidden=false;
   bar.innerHTML=rdTool('Highlight selected words','data-rd="selection-bookmark"','highlight')+
    rdTool('Add a personal note for selected words','data-rd="selection-note"','note')+
+   (next.lang==='ar' && /[\u0621-\u064a]/u.test(next.quote) ?
+    rdTool('Word Context for Arabic selection','data-rd="selection-word-context"','wordContext') : '')+
    rdTool('Dismiss selection actions','data-rd="selection-dismiss"','close');
  }
  function hideSelection(){const bar=$('#gn-rd-selection-bar');if(bar)bar.hidden=true;}
@@ -909,7 +912,7 @@ function create(ctx){
   section.className='gn-rd-visuals-row';
   section.innerHTML='<label><input type="checkbox" id="gn-rd-visuals-toggle"'+(showPersonalMarks()?' checked':'')+
    '> Show private Reading Desk marks beside the text</label>'+
-   '<small>Editorial notes are controlled separately. Focus reading hides these marks.</small>';
+   '<small>Private highlights are independent of editorial notes and remain visible in Focus reading.</small>';
   panel.append(section);
  }
  function sectionToolbar(n,items){
@@ -1004,26 +1007,66 @@ function create(ctx){
   const range=document.createRange();try{range.setStart(start.node,start.offset);range.setEnd(end.node,end.offset);}catch(_){return null;}
   return range;
  }
+
+ /* CSS Highlights works without changing passage markup in current browsers.
+    Older Safari/WebKit releases lack it; mark the resolved text ranges inline
+    instead so saved highlights never disappear just because the API is absent.
+    Only text nodes are wrapped, preserving glossary/note anchor semantics. */
+ function clearInlineMarks(){
+  const marks=$('#reader')?.querySelectorAll('mark.gn-rd-saved-highlight')||[];
+  if(!marks.length)return;
+  const parents=new Set();
+  marks.forEach(mark=>{
+   const parent=mark.parentNode;
+   if(!parent)return;
+   mark.replaceWith(...mark.childNodes);
+   parents.add(parent);
+  });
+  parents.forEach(parent=>parent.normalize());
+ }
+ function paintInlineRange(range){
+  const common=range.commonAncestorContainer;
+  const nodes=[];
+  if(common.nodeType===Node.TEXT_NODE)nodes.push(common);
+  else {
+   const walker=document.createTreeWalker(common,NodeFilter.SHOW_TEXT);
+   while(walker.nextNode())nodes.push(walker.currentNode);
+  }
+  for(const node of nodes){
+   if(!node.isConnected||!range.intersectsNode(node))continue;
+   const a=node===range.startContainer?range.startOffset:0;
+   const b=node===range.endContainer?range.endOffset:node.length;
+   if(b<=a)continue;
+   const part=document.createRange(),mark=document.createElement('mark');
+   mark.className='gn-rd-saved-highlight';
+   part.setStart(node,a);part.setEnd(node,b);
+   try{part.surroundContents(mark);}catch(_){/* Never alter an unsupported range. */}
+  }
+ }
  function markReader(){
-  if(!window.CSS?.highlights||typeof Highlight==='undefined')return;
-  ['gn-rd-bookmark','gn-rd-note','gn-rd-target'].forEach(k=>CSS.highlights.delete(k));
-  if(state.focusMode||state.focusLevel===3||!showPersonalMarks())return;
+  const supportsCSS=!!window.CSS?.highlights&&typeof Highlight!=='undefined';
+  if(supportsCSS)['gn-rd-bookmark','gn-rd-note','gn-rd-target'].forEach(k=>CSS.highlights.delete(k));
+  clearInlineMarks();
+  if(!showPersonalMarks())return;
   const marks=[],annotations=[];
   for(const item of active()){
    const t=item.target;
    if(!isResolved(item)||t?.kind!=='quote'||!t.section)continue;
-   // In continuous mode, state.n identifies one active section but many others
-   // are visible: find each item's actual containing section.
+   // In continuous mode, locate each highlight's own passage, not just state.n.
    const root=$('#gn-continuous-'+CSS.escape(String(t.section)))||
     document.querySelector('#reader [data-reading-section="'+CSS.escape(String(t.section))+'"]')||
     (String(t.section)===String(state.n)?$('#reader'):null);
    const side=root?.querySelector('.passage-grid[data-segment="'+t.segment+'"] .passage-'+(t.lang==='ar'?'ar':'en'));
    if(!side)continue;
    const range=findRange(side,t);
-   if(range)(item.kind==='note'?annotations:marks).push(range);
+   if(!range)continue;
+   if(supportsCSS)(item.kind==='note'?annotations:marks).push(range);
+   else paintInlineRange(range);
   }
-  if(marks.length)CSS.highlights.set('gn-rd-bookmark',new Highlight(...marks));
-  if(annotations.length)CSS.highlights.set('gn-rd-note',new Highlight(...annotations));
+  if(supportsCSS){
+   if(marks.length)CSS.highlights.set('gn-rd-bookmark',new Highlight(...marks));
+   if(annotations.length)CSS.highlights.set('gn-rd-note',new Highlight(...annotations));
+  }
  }
  function followSharedSourceLink(){
   if(state.route!=='reader')return;
@@ -1545,6 +1588,14 @@ function create(ctx){
   if(action==='language'){ui.context=btn.dataset.value;const scroll=window.scrollY;render();window.scrollTo({top:scroll,behavior:'instant'});return;}
   if(action==='expand'){ui.expanded=!ui.expanded;const scroll=window.scrollY;render();window.scrollTo({top:scroll,behavior:'instant'});return;}
   if(action==='selection-dismiss'){hideSelection();return;}
+  if(action==='selection-word-context'&&selection){
+   const selectedWord={...selection};
+   hideSelection();
+   if(!window.GnammaWordContext?.openSelectedQuote?.(selectedWord)){
+    ctx.notify('Select Arabic text from the current paragraph to open Word Context.');
+   }
+   return;
+  }
   if(action==='selection-bookmark'&&selection){upsert('quote',selection);hideSelection();window.getSelection()?.removeAllRanges();return;}
   if(action==='selection-note'&&selection){const chosen={...selection};hideSelection();window.getSelection()?.removeAllRanges();showEditor(chosen);return;}
   if(action==='section-bookmark'){toggleSection(String(btn.dataset.section||state.n));return;}
