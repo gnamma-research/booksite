@@ -402,38 +402,34 @@ window.GNAMMA_BOOK={
     {
       "id": "II.09",
       "title": "Three considerations of quiddity",
-      "arabic": "ماهية الشيء ما يجاب به عن السؤال: ما هو؟ وقد تؤخذ بشرط شيء فتسمى المخلوطة ... وبشرط لا شيء فتسمى المجردة ... ولا بشرط شيء ...",
-      "english": "The quiddity of a thing is what answers the question “What is it?” It may be considered together with an additional condition, in which case it is called mixed; considered under the condition of excluding additional qualifications, in which case it is called abstracted; or considered without stipulating either inclusion or exclusion of such qualifications.",
-      "grade": "B",
-      "gap": true,
+      "arabic": "فصل. ماهية الشيء ما به يجاب عن السؤال ما هو، وقد تؤخذ بشرط شيء فتسمى المخلوطة ولا خفاء في وجودها، وبشرط لا شيء فتسمى المجردة ولا توجد في الأذهان فضلا عن الأعيان، ولا بشرط شيء وهي أعم من المخلوطة.",
+      "english": "The quiddity of a thing is what answers the question, ‘What is it?’ It may be considered on condition of something further and is then called mixed; that it exists is beyond dispute. Or it may be considered on condition of nothing further, and is then called abstracted: as so restricted, it does not exist in minds, much less externally. Or it may be considered without stipulating either condition; this unrestricted nature is more general than the mixed quiddity.",
+      "grade": "A",
+      "gap": false,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "The second and third technical forms are restored from partially damaged print; the exact order and forms of the three labels need proofing."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 675–695; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "Sanandajī distinguishes the restrictive ‘with something’, ‘without anything’, and unrestricted ‘without condition’ considerations. The nonexistence claim attaches to the restrictive abstracted nature, not to any act of thinking about it (Taqrīb I:63–68)."
         }
-      ]
+      ],
+      "printedPages": "20–21",
+      "statusText": ""
     },
     {
       "id": "II.10",
       "title": "Quiddity and the natural universal",
-      "arabic": "ثم إذا اعتبرت معروضة للكل فهو الكلي الطبيعي، وإنما يوجد منه المعروض دون العوارض ...",
-      "english": "When the quiddity is considered as that to which universality is attributed, it is the natural universal. What exists of it is the subject to which the attribute belongs, not the additional conceptual attributes considered together with that subject.",
-      "grade": "B",
-      "gap": true,
+      "arabic": "ثم إذا اعتبرت معروضة للكل فهو الكلي الطبيعي، وإنما يوجد منه المعروض دون العوارض مجردا عن العوارض وهي الأفراد.",
+      "english": "When [the quiddity] is considered as the subject to which universality is attributed, it is the natural universal. What is found externally is the subject of those attributes, not the attributes considered as additional entities; the individuals exist with their concomitants.",
+      "grade": "A",
+      "gap": false,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "The phrase “what exists of it” must be understood together with the logic division of the natural, logical and intellectual universal."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 693–696; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "The natural universal denotes the nature instantiated; logical universality is a feature of the intellect’s mode of predication, not a freestanding external accident (Taqrīb I:69–70)."
         }
-      ]
+      ],
+      "printedPages": "21",
+      "statusText": ""
     },
     {
       "id": "II.11",
@@ -672,25 +668,23 @@ window.GNAMMA_BOOK={
     {
       "id": "II.24",
       "title": "Definition and divisions of cause",
-      "arabic": "العلة هي ما يحتاج إليه الشيء. فإن كانت داخلة ... [فهي صورية أو مادية] ...",
-      "english": "A cause is that upon which something depends. If it is internal to what depends upon it, the analysis distinguishes formal and material cause; external causes require a separate analysis of productive agency and finality.",
-      "grade": "C",
-      "gap": true,
+      "arabic": "فصل في العلة والمعلول. العلة هي ما يحتاج إليه الشيء، فإن كانت داخلة فوجوب الشيء معها إما بالفعل فهي صورية وإما بالقوة فهي مادية، وإن كانت خارجة فالشيء إما بها فهي فاعلية أو لأجلها فهي غائية، ومرجع جمع الشروط والآلات إلى الفاعل. وجميع ما يتوقف عليه الشيء يسمى علة تامة، وعند تمام الفاعل يجب وجود المعلول لامتناع الترجيح بلا مرجح.",
+      "english": "A cause is that upon which something depends. If internal, the thing depends upon it either in actuality, and it is formal, or in potency, and it is material. If external, the thing is produced through it, and it is efficient, or exists for its sake, and it is final. Conditions and instruments are referred to the agent. Everything upon which the thing depends, taken together, is called its complete cause. When the agent is complete [with the conditions of its action], the effect must exist: otherwise one alternative would be preferred without a determinant.",
+      "grade": "A",
+      "gap": false,
       "notes": [
+        {
+          "type": "Explanation",
+          "text": "The four causes are explicitly distinguished. The necessity of the effect is stated conditionally upon the complete causal nexus; it should not be turned into an assertion of independent natural creative efficacy (Cairo p. 31; compare Taqrīb I:141–142)."
+        },
         {
           "type": "Sanandajī",
           "text": "See Taqrīb I:141–142 for the relation between a complete cause, its conditions, and the necessary presence of the effect when that cause is complete."
-        },
-        {
-          "type": "Editorial",
-          "text": "This section is badly corrupted. The English after the definition is an explanatory reconstruction and must not be cited as the author’s exact wording."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 975–987; original printed pagination and manuscript witness still need confirmation."
         }
       ],
-      "link": "../../al-sanandaji/taqrib-al-maram/#u-S-03"
+      "link": "../../al-sanandaji/taqrib-al-maram/#u-S-03",
+      "printedPages": "31",
+      "statusText": ""
     },
     {
       "id": "II.25",
