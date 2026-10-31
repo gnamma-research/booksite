@@ -28,9 +28,13 @@
       "otherProjectAssociatedRecords": 62,
       "otherProjectRelatedRecords": 1,
       "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/lahiji_shawariq",
-      "relation": "same historical work; some exact loci may overlap",
-      "handling": "link-only",
-      "editorialRule": "Tajrīd project owns lemma-level Tawsi → Lahiji quotation/commentary critical translation. Late Avicennism uses source as antecedent/bridge only; no second independent Lahiji translation unless a new non-overlapping argument or post-Ṣadrian shift is demonstrated."
+      "relation": "Exact *Shawāriq* I:90–91 appears as Tajrīd records NEW05 and NEW06; Late edition additionally treats connected issue 24 and the wider argument.",
+      "handling": "shared-exact-page-partial",
+      "editorialRule": "Do NOT independently recollect/retranslate I:90–91 for Tajrīd. Reuse its textual evidence, cite both projects, and keep the larger I:90–93 discussion in Late reader only as a contextually fuller connected unit.",
+      "otherProjectRecordIds": [
+        "NEW05",
+        "NEW06"
+      ]
     },
     {
       "id": "astar-choice",
@@ -41,9 +45,15 @@
       "otherProjectAssociatedRecords": 4,
       "otherProjectRelatedRecords": 0,
       "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/astarabadi_barahin",
-      "relation": "same historical work and divine-power controversy",
-      "handling": "link-only",
-      "editorialRule": "Tajrīd owns cited Astarabadi verses/reply chain and attribution of Qushji/Khafri/Khwānsāri. Late Avicennism discusses what the controversy implies for later divine will and complete-cause theories; source reports linked not recopied."
+      "relation": "Astarābādī *al-Barāhīn*, vol.II pp.96–99 in Late Avicennism; Tajrīd records COLL26–28 and EXT14 are volume I pp.262,281–283.",
+      "handling": "same-work-distinct-locus",
+      "editorialRule": "Same work but demonstrably different loci; preserve the distinct late philosophical question and explicitly cross-reference Tajrīd where relevant.",
+      "otherProjectRecordIds": [
+        "COLL26",
+        "COLL27",
+        "COLL28",
+        "EXT14"
+      ]
     },
     {
       "id": "taft-mental",
@@ -54,9 +64,13 @@
       "otherProjectAssociatedRecords": 9,
       "otherProjectRelatedRecords": 0,
       "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/taftazani_sharh_maqasid",
-      "relation": "same Sharh al-Maqasid work; mental-existence debate overlaps",
-      "handling": "link-only",
-      "editorialRule": "Tajrīd owns base scholastic lemma and critical passages in mental existence; Late Avicennism can compare later mind/body and second-intention transformations once independently sourced."
+      "relation": "Exact *Sharḥ al-Maqāṣid* p.79 appears as Tajrīd SN01 and SN03; both are short extracts with incomplete collation.",
+      "handling": "shared-exact-page-partial",
+      "editorialRule": "Share source witness/page and attribution across projects. Use the longer objections-and-replies context when arguing about later epistemological development, but do not count it as a second independent textual witness.",
+      "otherProjectRecordIds": [
+        "SN01",
+        "SN03"
+      ]
     },
     {
       "id": "jurj-mental",
@@ -67,9 +81,16 @@
       "otherProjectAssociatedRecords": 5,
       "otherProjectRelatedRecords": 0,
       "otherProjectLink": "https://gnamma-research.github.io/booksite/research/tajrid/#book/jurjani_mawaqif",
-      "relation": "same Sharh al-Mawaqif witness family; composite gloss source",
-      "handling": "link-only",
-      "editorialRule": "Tajrīd owns matn/sharh/marginal textual collation; Late Avicennism treats further epistemology and the difference between mental form and independently external entity, without claiming new Siyalkuti readings."
+      "relation": "Late reading *Sharḥ al-Mawāqif* composite vol.VI pp.7–8; Tajrīd records include a different composite and volumes/pages. Match the printed edition before claiming duplicate pages.",
+      "handling": "same-work-witness-uncertain",
+      "editorialRule": "Do not assume textual identity across editions/volumes. Preserve unattributed marginal voices and require scan-image checks before merging witness records.",
+      "otherProjectRecordIds": [
+        "SN05",
+        "SN09",
+        "NEW13",
+        "NEW14",
+        "NEW15"
+      ]
     },
     {
       "id": "lah-eman",
@@ -287,5 +308,17 @@
     "Ottoman Maybudī–Lārī natural philosophy, original Hidayat lemma and later reply.",
     "Indian Khayrābādī, Mīr Zāhid, Qāḍī Mubārak and Ṣadrā on Hidāya: original contextual passage and transmission.",
     "Independent Sadrian Asfār passages only as comparator, not a substitute for later critics."
-  ]
+  ],
+  "overlapMethod": "Exact overlap requires same work AND edition-equivalent locus and same bounded argument; matching author/work/theme alone is not duplication.",
+  "sharedExactPageRecords": [
+    "lah-shaw",
+    "taft-mental"
+  ],
+  "sameWorkDifferentLocus": [
+    "astar-choice"
+  ],
+  "sameWorkNeedsEditionCollation": [
+    "jurj-mental"
+  ],
+  "sourceCrosswalkVerifiedAt": "research/tajrid/bookmap-crosswalk.json (224 record links, 47 works)"
 }
