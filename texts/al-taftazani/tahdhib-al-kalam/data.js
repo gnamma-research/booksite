@@ -590,52 +590,50 @@ window.GNAMMA_BOOK={
     {
       "id": "II.20",
       "title": "Eternity and origination",
-      "arabic": "القدم بمعنى عدم المسبوقية بالغير، وهو الذاتي، أو بالعدم، وهو الزماني؛ والحدوث بخلافه، ولا قديم بالذات سوى الله تعالى.",
-      "english": "Eternity means not being preceded by another, in the essential sense, or not being preceded by nonexistence, in the temporal sense. Origination is the contrary in each case. Nothing is essentially eternal except God Most High.",
-      "grade": "A",
+      "arabic": "القدم بمعنى عدم المسبوقية بالغير وهو الذاتي، أو بالعدم وهو الزماني، والحدوث بخلافه. ولا قديم بالذات سوى الله تعالى، وبالزمان سوى صفاته. ولا يستند القدم إلى مختار، لأن القصد إلى الإيجاد يستلزم العدم.",
+      "english": "Pre-eternity means not being preceded by something else, which is essential pre-eternity, or not being preceded by nonexistence, which is temporal pre-eternity; origination is the opposite of each. Nothing is essentially pre-eternal except God Most High, and nothing else is temporally pre-eternal except His attributes. [The objection is raised that] a pre-eternal thing cannot depend upon a choosing agent, since the intention to bring something into being appears to presuppose its nonexistence.",
+      "grade": "B",
       "gap": false,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "Essential and temporal priority are formally distinct; one must not substitute “beginningless” for both senses."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 860–865; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "This last argument is introduced as an objection concerning a choosing cause. An author's report of the objection must not be converted into his unconditional endorsement."
         }
-      ]
+      ],
+      "printedPages": "27",
+      "statusText": ""
     },
     {
       "id": "II.21",
       "title": "Different orders of priority",
-      "arabic": "التقدم والتأخر ... بالعِلّية، أو بالطبع، أو بالزمان، أو بالشرف، أو بالرتبة الحسية أو العقلية ...",
-      "english": "Priority and posteriority may be understood by causality, by nature, by time, by dignity or excellence, or by sensible or intelligible rank.",
+      "arabic": "التقدم والتأخر بالعلية أو بالطبع أو بالذات أو بالشرف أو بالرتبة أو بالزمان. وسبق العدم على الحادث لا يلزم أن يكون بالزمان فيلزم قدم الزمان، كما لا يلزم أن يكون له إمكان استعدادي يلزم قدم مادة له.",
+      "english": "Priority and posteriority may be understood through causality, through nature, through essence, through dignity, through rank, or through time. The nonexistence preceding an originated thing need not be prior in time—for that would entail the pre-eternity of time itself. Nor need an originated thing have a dispositional possibility in some pre-existing matter, which would make that matter pre-eternal.",
       "grade": "B",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "The enumeration is truncated at one end and must be checked before formal citation."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 889–895; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "The precedence of nonexistence over origination need not be another temporal interval. Essential, causal, natural and temporal priority must remain distinct."
         }
-      ]
+      ],
+      "printedPages": "28",
+      "statusText": ""
     },
     {
       "id": "II.22",
       "title": "Unity and multiplicity",
-      "arabic": "الوحدة والكثرة من المعاني الواضحة، ومقوليتهما بالتشكيك ... وتسمى الوحدة في الجنس مجانسة، وفي النوع مماثلة ... وفي الكيف مشابهة ...",
-      "english": "Unity and multiplicity are evident notions, and their application admits degrees or different respects. Sharing a genus is called generic community; sharing a species, specific likeness; sharing a quality, resemblance. Other forms are designated by relations of quantity, property, position and proportion.",
+      "arabic": "الوحدة والكثرة من المعاني الواضحة ومقوليتهما بالتشكيك، فتكون جهة الوحدة مقومة أو عارضة أو منسوبة. وتسمى الوحدة في الجنس مجانسة، وفي النوع مماثلة، وفي الكم مساواة، وفي الكيف مشابهة، وفي الخاصة مشاكلة، وفي الأطراف مطابقة، وفي الوضع موازاة، وفي النسبة مناسبة.",
+      "english": "Unity and multiplicity belong to evident concepts, and are predicated with gradation. The respect in which there is unity can be constitutive, accidental, or relational. Unity in genus is called commonality of genus (mujānasa); in species, sameness of species (mumāthala); in quantity, equality (musāwāt); in quality, resemblance (mushābaha); in a proper attribute, likeness (mushākala); in corresponding extremities, correspondence (muṭābaqa); in position, parallelism (muwāzāt); and in relation, proportion (munāsaba).",
       "grade": "B",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
-          "type": "Sanandajī",
-          "text": "The predicates one, many, eternal and originated arise in different respects. Numerical unity should not be inferred merely from unity of a common concept, and the opposition of one and many is not the opposition of being and nonbeing (Taqrīb I:107–112)."
+          "type": "Explanation",
+          "text": "These are different respects in which a plurality may be called ‘one’ or ‘the same’. None of them, considered alone, establishes numerical identity of two substances."
         }
-      ]
+      ],
+      "printedPages": "28",
+      "statusText": ""
     },
     {
       "id": "II.23",
@@ -697,20 +695,18 @@ window.GNAMMA_BOOK={
     {
       "id": "II.26",
       "title": "Form, matter, and finality by extension",
-      "arabic": "وقد يقال الصورة لكل هيئة في قابل وحداني بالذات أو بالاعتبار، والمادة لما يقابلها، كالبياض والجسم ... والغاية لما ينتهي إليه الفعل وإن لم يكن له جهة علية واحتياج من الفعل إليه، بل وإن لم يكن للفاعل قصد.",
-      "english": "“Form” may also be used for any configuration in a recipient possessing unity either in itself or by consideration, and “matter” for what underlies it, as whiteness and its bodily subject. “End” may also designate what an action terminates in, even if that terminus is not a cause upon which the action depends, and even if the agent did not aim at it.",
+      "arabic": "قد يقال الصورة لكل هيئة في قابل وحداني بالذات أو بالاعتبار، والمادة لما يقبل، كالبياض والجسم. والغاية ما ينتهي إليه الفعل وإن لم يكن له جهة علية واحتياج من الفعل إليه، بل وإن لم يكن للفاعل قصد.",
+      "english": "The term ‘form’ is sometimes also applied to any configuration inhering in a receptive subject whose unity is real or is established by consideration, and ‘matter’ to that which receives it, as in the case of whiteness and body. Likewise, ‘end’ can be used for what an action terminates in, even if it is not genuinely a final cause on which the action depends and even if the agent did not intend that terminus.",
       "grade": "B",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "A deliberate widening of terms beyond strict substantial form, prime matter, or final causality."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 1083–1092; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "An extended usage of ṣūra does not imply every configuration is a substantial form. Likewise the terminus of an action need not be the intention-guiding final cause."
         }
-      ]
+      ],
+      "printedPages": "35",
+      "statusText": ""
     },
     {
       "id": "II.27",
