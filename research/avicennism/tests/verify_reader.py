@@ -68,8 +68,11 @@ assert html.startswith("<!doctype html>")
 assert "corpus-primary.js" not in html or '<script src="corpus-primary.js"' not in html
 assert html.count("<script>")==8
 assert "Late Avicennism" in html
-assert len(html)>400000
-assert all(p in html for p in ['"kind":"mediated"','"id":"av-ix5"','"id":"lah-active"','"id":"ch10"'])
+assert len(html)>540000
+assert all(p in html for p in ['"kind":"mediated"','"id":"av-ix5"','"id":"lah-active"','"id":"lah-making"','"id":"lah-unity"','"id":"ch10"'])
+assert "window.AVICENNIAN_APPARATUS=" in html
+assert "shared-exact-page-partial" in html
+assert "post-asfar" in html
 assert "iframe" not in html.lower()
 assert "<link rel=\"stylesheet\"" not in html
 
