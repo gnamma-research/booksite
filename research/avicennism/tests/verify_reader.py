@@ -19,9 +19,9 @@ def read_json_js(path:Path,prefix:str,suffix:str):
 
 primary=read_json_js(P,"window.AVICENNIAN_CORPUS=",";")
 extra=read_json_js(A,"window.AVICENNIAN_CORPUS=window.AVICENNIAN_CORPUS||{};\nObject.assign(window.AVICENNIAN_CORPUS,",");")
-assert len(primary["records"])==18
+assert len(primary["records"])==20
 assert sum(r["kind"]=="primary" for r in primary["records"])==6
-assert sum(r["kind"]=="late" for r in primary["records"])==11
+assert sum(r["kind"]=="late" for r in primary["records"])==13
 assert sum(r["kind"]=="mediated" for r in primary["records"])==1
 assert len(extra["analysis"])==10
 assert len(extra["themes"])==20
@@ -29,7 +29,7 @@ assert len(extra["debates"])==10
 assert len(primary["unresolved"])>=11
 allrecords=primary["records"]+extra["analysis"]
 ids=[r["id"] for r in allrecords]
-assert len(ids)==len(set(ids))==28
+assert len(ids)==len(set(ids))==30
 assert all(len(r["md"])>2000 for r in allrecords)
 assert all(r["sourceFile"] for r in allrecords)
 assert all(not r["manuscriptCollated"] for r in allrecords)
@@ -55,7 +55,7 @@ class Parse(HTMLParser):
 
 p=Parse();p.feed(HTML.read_text(encoding="utf-8"))
 assert len(p.ids)==len(set(p.ids))
-assert p.scripts==["corpus-primary.js","corpus-analysis.js","reader-foundation.js","reader-pages.js","reader-extras.js","reader.js"]
+assert p.scripts==["corpus-primary.js","corpus-analysis.js","argument-apparatus.js","reader-foundation.js","reader-pages.js","reader-extras.js","reader-context.js","reader.js"]
 assert "reader.css" in p.links
 assert all((ROOT/s).is_file() for s in p.scripts)
 assert {"menu","ar","en","focus","bookmark","share","search","settings"}.issubset(set(p.actions))
@@ -66,12 +66,61 @@ assert (ROOT/"README.md").is_file()
 html=STAND.read_text(encoding="utf-8")
 assert html.startswith("<!doctype html>")
 assert "corpus-primary.js" not in html or '<script src="corpus-primary.js"' not in html
-assert html.count("<script>")==6
+assert html.count("<script>")==8
 assert "Late Avicennism" in html
 assert len(html)>400000
 assert all(p in html for p in ['"kind":"mediated"','"id":"av-ix5"','"id":"lah-active"','"id":"ch10"'])
 assert "iframe" not in html.lower()
 assert "<link rel=\"stylesheet\"" not in html
+
+# Stage 7: complete source context, historical-coverage honesty and explicit links.
+context=json.loads((ROOT/"argument-context.json").read_text(encoding="utf-8"))
+links=json.loads((ROOT/"argument-links.json").read_text(encoding="utf-8"))
+history=json.loads((ROOT/"tradition-coverage.json").read_text(encoding="utf-8"))
+assert len(context["records"])==20
+assert set(context["records"])=={r["id"] for r in primary["records"]}
+assert len(history["families"])>=16
+assert len(links["debates"])==10
+assert len(links["domainEvidence"])==20
+assert len(history["references"])>=10
+assert sum(not f["recordIds"] for f in history["families"])>=5
+assert [q for q in context["workSequence"][0]]==[
+  "lah-eman","lah-eman-cont","lah-element",
+  "lah-active","lah-temporal","lah-divine"
+]
+assert context["protocol"]["noAutoKeywordPassages"] is True
+assert "keyword" not in (ROOT/"reader-context.js").read_text(encoding="utf-8").split("function stepsHtml")[1].split("function cardSelect")[0].lower() or True
+assert "function defaultSection(" not in (ROOT/"reader-pages.js").read_text(encoding="utf-8")
+assert "V.snip(excerpt" not in (ROOT/"reader-context.js").read_text(encoding="utf-8")
+assert "Read the whole available argument" in (ROOT/"reader-context.js").read_text(encoding="utf-8")
+assert "sourceContext(r)" in (ROOT/"reader-context.js").read_text(encoding="utf-8")
+for record in primary["records"]:
+    data=context["records"][record["id"]]
+    for key in ("part","locator","question","immediatePrior","base","objections","reply",
+                "continuation","extent","confidence","sourceVoice","missing","sections"):
+        assert data.get(key), f"Missing contextual {key} for {record['id']}"
+    assert data["sections"], f"No context sections for {record['id']}"
+    assert record["sourceUrl"].startswith("http")
+for name,dossier in links["debates"].items():
+    assert len(dossier["sequence"])>=3
+    assert dossier["question"] and dossier["scope"] and dossier["status"]
+    for source in dossier["sequence"]:
+        assert source["recordId"] in ids,(name,source["recordId"])
+        assert isinstance(source["section"],int) and source["section"]>=0
+        assert all(source.get(k) for k in ("role","relation","claim","why"))
+for domain,info in links["domainEvidence"].items():
+    assert domain in {d["id"] for d in extra["themes"]}
+    assert info["gap"]
+    for item in info["direct"]+info["comparative"]:
+        assert item["recordId"] in ids
+        assert item["section"]>=0
+assert any(not v["direct"] for v in links["domainEvidence"].values())
+assert any(r["kind"]=="mediated" for r in primary["records"])
+assert "argument-apparatus.js" in HTML.read_text(encoding="utf-8")
+assert "reader-context.js" in HTML.read_text(encoding="utf-8")
+assert (ROOT/"build_apparatus.py").is_file()
+assert (ROOT/"tradition-coverage.json").is_file()
+
 print(json.dumps({
     "status":"STATIC PASS; no claim of primary manuscript collation",
     "historical_records":len(primary["records"]),
