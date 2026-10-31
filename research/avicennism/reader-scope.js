@@ -2,6 +2,7 @@
 const V=window.AVR,A=window.AVICENNIAN_APPARATUS;if(!V||!V.pages||!A||!A.afterAsfar||!A.tajrid)return;
 const P=V.pages,D=V.data,E=V.esc,H=V.head,I=V.icon,$=V.$;
 const dossiers=A.afterAsfar.dossiers,boundary=A.tajrid,overlaps=new Map(boundary.records.map(r=>[r.id,r]));
+const canonicalQuestions=A.questionCrosswalk?.questions||[];
 function gradeLabel(s){return ({'direct-contextual-source':'Direct bounded original','direct-contextual-section':'Direct bounded original','direct-contextual-with-reported-voices':'Direct text; some speakers reported','partially-established-two-direct-works':'Two different original works','direct-plus-mediated':'Direct and mediated','direct-bounded-segments':'Bounded original arguments','analytical-only-gap':'Primary gap — analytical only','bibliographical-not-primary':'Bibliographical lead only','direct-plus-mediated-large-gap':'Large unresolved witness gap','bibliographical-plus-one-primary-excerpt':'One bounded excerpt; wider gap','research-gap-with-anchors':'Comparative hypothesis; primary gap'})[s]||s.replace(/-/g,' ');}
 function localEvidence(x){
  const r=V.byId.get(x.recordId);if(!r)return '<div class="source-warning">Referenced record unavailable.</div>';
@@ -80,7 +81,62 @@ P.home=function(){
  return _home()+
  '<div class="section-head"><h2>Distinct from the Tajrīd project</h2></div>'+
  '<div class="tiles"><a class="tile" href="#post-asfar"><div class="eyebrow">Research focus</div><h3>What changed after the Asfār?</h3><p>Twelve carefully differentiated problems with direct evidence and explicit source gaps.</p></a>'+
- '<a class="tile" href="#tajrid-overlap"><div class="eyebrow">Cross-project integrity</div><h3>Reuse Tajrīd, do not duplicate it</h3><p>See two page-level overlaps, differences of locus and the division of translation ownership.</p></a></div>';
+ '<a class="tile" href="#tajrid-questions"><div class="eyebrow">Thirty-question crosswalk</div><h3>What belongs to Tajrīd?</h3><p>Canonical questions, late changes and still-missing texts.</p></a>'+
+'<a class="tile" href="#tajrid-overlap"><div class="eyebrow">Cross-project integrity</div><h3>Reuse Tajrīd, do not duplicate it</h3><p>See two page-level overlaps, differences of locus and the division of translation ownership.</p></a></div>';
 };
+
+function questionCard(q){
+ const evidence=q.existingEvidence.map(id=>{
+   const r=V.byId.get(id);
+   if(!r)return '<li class="source-warning">Missing source record '+E(id)+'</li>';
+   const overlap=overlaps.get(id);
+   const shared=overlap&&overlap.handling==='shared-exact-page-partial';
+   return '<li><a href="#full/'+E(id)+'">'+E(r.author)+' — '+E(r.title)+'</a>'+
+      '<span class="small"> · '+(shared?'Shared text already in Tajrīd':E(r.coverage||'Working unit'))+'</span></li>';
+ }).join('');
+ return '<article class="crosswalk-question" id="tajrid-q-'+E(q.id)+'">'+
+ '<div class="eyebrow">Question '+E(q.id)+' · '+E(q.lateScope)+'</div>'+
+ '<h3>'+E(q.title)+'</h3>'+
+ '<div class="crosswalk-columns"><section><h4>Canonical Tajrīd baseline</h4>'+
+ '<p>Matn, standard philosophical problem, earlier authorial objections and replies remain in the separate Tajrīd edition.</p>'+
+ '<p><a href="'+E(q.referencePath)+'" target="_blank" rel="noopener noreferrer">Read Tajrīd Q'+E(q.id)+' ↗</a></p></section>'+
+ '<section><h4>Distinct development to investigate</h4>'+
+ '<p>'+E(q.differenceToInvestigate)+'</p>'+
+ '<p class="small"><strong>Evidence status:</strong> '+E(q.noveltyStatus.replace(/-/g,' '))+'</p>'+
+ (evidence?'<ul>'+evidence+'</ul>':'<p class="source-warning">No independently edited later source unit yet.</p>')+
+ '</section></div>'+
+ '<details class="section-notes"><summary>Unfinished evidence and non-duplication rule</summary><p>'+
+ E(q.remaining)+'</p><p>'+E(q.duplicatePolicy)+'</p></details></article>';
+}
+P.tajridQuestions=function(){
+ if(!canonicalQuestions.length){
+   $('#main').innerHTML=H('Missing source register','The thirty-question crosswalk is unavailable','The independent Tajrīd sourcebook remains accessible.');
+   return;
+ }
+ const count=canonicalQuestions.length,absent=canonicalQuestions.filter(q=>!q.existingEvidence.length).length;
+ $('#main').innerHTML=H('Cross-project edition','Thirty Tajrīd questions: what actually changes later?',
+ 'Tajrīd is the canonical source for the common matn and commentary debates. Late Avicennism develops independent later arguments, differences, and research gaps.')+
+ '<div class="statline"><div><strong>'+count+'</strong><span>baseline questions</span></div>'+
+ '<div><strong>'+absent+'</strong><span>with no linked later source</span></div>'+
+ '<div><strong>'+A.questionCrosswalk.priorityDeltaQuestions.length+'</strong><span>priority later questions</span></div></div>'+
+ '<div class="critical-notice"><strong>Do not count the same text twice:</strong> shared Tajrīd material is linked rather than retranscribed as an independent source. Similar keywords do not establish a historical reply, and every later position needs a source passage with question, objection and answer.</div>'+
+ '<div class="actions"><a class="button primary" href="../tajrid/" target="_blank" rel="noopener noreferrer">Tajrīd primary reader ↗</a>'+
+ '<a class="button" href="#tajrid-overlap">Exact shared witness audit</a><a class="button" href="#post-asfar">Post-Asfār research</a></div>'+
+ '<div class="filter-fields"><label>Find baseline or later issue<input id="tajrid-q-search" type="search" placeholder="motion, existence, relation, soul…"></label>'+
+ '<label>Evidence<select id="tajrid-q-status"><option value="all">All questions</option>'+
+ '<option value="with">Some later material</option><option value="missing">No late unit</option></select></label></div>'+
+ '<div class="countline" id="tajrid-q-count"></div><div id="tajrid-q-list"></div>';
+ $('#pager').hidden=true;
+ function filter(){
+   const q=V.norm($('#tajrid-q-search').value),mode=$('#tajrid-q-status').value;
+   const rows=canonicalQuestions.filter(x=>(!q||V.norm([x.id,x.title,x.differenceToInvestigate,x.remaining,(x.existingEvidence||[]).join(' ')].join(' ')).includes(q))&&
+   (mode==='all'||(mode==='missing'?!x.existingEvidence.length:x.existingEvidence.length>0)));
+   $('#tajrid-q-count').textContent=rows.length+' / '+count+' questions';
+   $('#tajrid-q-list').innerHTML=rows.map(questionCard).join('')||'<p class="empty-state">No matching questions.</p>';
+ }
+ ['tajrid-q-search','tajrid-q-status'].forEach(id=>$('#'+id).addEventListener('input',filter));
+ filter();
+};
+
 window.AVR.scope={dossiers,boundary};
 })();
