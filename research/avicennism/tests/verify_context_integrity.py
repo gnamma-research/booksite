@@ -28,17 +28,24 @@ dedup=json.loads((HERE/"TAJRID_DEDUP_AND_POST_ASFAR_SCOPE.json").read_text(encod
 asfar=json.loads((HERE/"POST_ASFAR_DISTINCTIVE_DOSSIERS.json").read_text(encoding="utf-8"))
 coverage=json.loads((HERE/"tradition-coverage.json").read_text(encoding="utf-8"))
 tajrid=json.loads((ROOT/"tajrid"/"bookmap-crosswalk.json").read_text(encoding="utf-8"))
-assert len(corpus["records"])==22
+assert len(corpus["records"])==24
 assert len(analysis["analysis"])==10
-assert len(context["records"])==22
-assert len(links["debates"])==10 and len(links["domainEvidence"])==20
+assert len(context["records"])==24
+assert len(links["debates"])==12 and len(links["domainEvidence"])==20
 assert len(asfar["dossiers"])==12
 assert len(coverage["families"])==16
+crosswalk=json.loads((HERE/"TAJRID_NON_DUPLICATION_CROSSWALK.json").read_text(encoding="utf-8"))
+assert len(crosswalk["questions"])==30
+assert len({q["id"] for q in crosswalk["questions"]})==30
+assert all(set(q["existingEvidence"])<={r["id"] for r in corpus["records"]+analysis["analysis"]} for q in crosswalk["questions"])
+assert "nara-presence" in next(q for q in crosswalk["questions"] if q["id"]=="24")["existingEvidence"]
+assert "sabz-motion" in next(q for q in crosswalk["questions"] if q["id"]=="18")["existingEvidence"]
+
 assert tajrid["record_count"]==dedup["otherProject"]["distinct_source_records"]==224
 assert len(tajrid["work_inventory"])==47
 assert tajrid["matn"]["unit_count"]==837
 record_map={r["id"]:r for r in corpus["records"]+analysis["analysis"]}
-assert len(record_map)==32
+assert len(record_map)==34
 assert set(context["records"])=={r["id"] for r in corpus["records"]}
 assert len({r["id"] for r in corpus["records"]})==len(corpus["records"])
 assert set(dedup["sharedExactPageRecords"])=={"lah-shaw","taft-mental"}
@@ -99,6 +106,15 @@ for dossier in asfar["dossiers"]:
     for source in dossier["sources"]:
         check_reference(source)
         assert source["relation"] and source["claim"] and source["locator"]
+
+# Distinguish late post-Asfar source witnesses from the Tajrīd baseline.
+for dossier_id,primary_id in [("presence","nara-presence"),("motion-subject","sabz-motion")]:
+    assert dossier_id in links["debates"]
+    assert any(x["recordId"]==primary_id for x in links["debates"][dossier_id]["sequence"])
+    assert primary_id in context["records"]
+    assert "un" in context["records"][primary_id]["missing"].lower() or len(context["records"][primary_id]["missing"])>30
+assert "questionCrosswalk" in (HERE/"argument-apparatus.js").read_text(encoding="utf-8")
+assert "tajrid-questions" in (HERE/"reader-scope.js").read_text(encoding="utf-8")
 
 gawhar=context["workSequence"][0]
 assert gawhar==["lah-making","lah-unity","lah-eman","lah-eman-cont","lah-element","lah-active","lah-temporal","lah-divine"]
