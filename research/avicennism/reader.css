@@ -221,3 +221,22 @@
 @media(max-width:850px){.distinctive-columns{grid-template-columns:1fr;gap:4px}}
 @media(max-width:600px){.distinctive-dossier{padding:16px;margin:15px 0}.distinctive-evidence{padding:12px 14px}}
 @media print{.distinctive-dossier{break-before:page}.distinctive-evidence{break-inside:avoid}}
+
+
+/* Stage 9: the canonical Tajrīd questions belong to their own edition. */
+.crosswalk-question{margin:20px 0;padding:22px 24px;border:1px solid var(--line);border-radius:9px;background:var(--paper);scroll-margin-top:84px}
+.crosswalk-question h3{font:normal clamp(21px,2.3vw,27px)/1.3 Georgia,serif;margin:10px 0 16px}
+.crosswalk-question h4{font:normal 17px/1.35 Georgia,serif;margin:5px 0 12px}
+.crosswalk-columns{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:24px}
+.crosswalk-columns>section{min-width:0}
+.crosswalk-columns>section+section{padding-left:24px;border-left:1px solid var(--line)}
+.crosswalk-columns p,.crosswalk-columns li{font-size:14px;line-height:1.7}
+.crosswalk-columns li{margin:7px 0}
+.crosswalk-columns small{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.crosswalk-question details{margin-top:13px}
+.crosswalk-question .source-warning{margin:10px 0}
+.crosswalk-question .eyebrow{overflow-wrap:anywhere}
+.crosswalk-columns a{overflow-wrap:anywhere}
+@media(max-width:800px){.crosswalk-columns{grid-template-columns:1fr;gap:15px}.crosswalk-columns>section+section{padding:17px 0 0;border-left:0;border-top:1px solid var(--line)}}
+@media(max-width:600px){.crosswalk-question{padding:15px 14px;margin:13px 0}.crosswalk-question h3{font-size:21px}}
+@media print{.crosswalk-question{break-inside:avoid}.crosswalk-question details{display:block}}
