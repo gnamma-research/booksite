@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-31-argument-context-audit",
+  "version": "2026-11-01-Tajrid-aware-post-Asfar",
   "purpose": "Historical argument provenance, not literary keywords. Each passage must be read within its own source and identified reply chain.",
   "records": {
     "av-vi1": {
@@ -750,7 +750,7 @@
     }
   },
   "tradition": {
-    "version": "2026-10-31-coverage-audit",
+    "version": "2026-11-01-post-asfar-source-coverage",
     "claim": "This is a historical coverage map and acquisition plan, NOT an exhaustive edition.",
     "families": [
       {
@@ -976,7 +976,7 @@
           "Mullā Muḥsin Fayḍ and Rajab ʿAlī Tabrīzī",
           "Lāhījī, Khwānsārī and Sabzawārī correspondence and glosses"
         ],
-        "task": "Distinguish Ṣadrian new metaphysics from the independent Peripatetic and kalām responses of his contemporaries.",
+        "task": "Distinguish Ṣadrian new metaphysics from the independent Peripatetic and kalām responses of his contemporaries. The later Narāqī/Sabzavārī reception of Ṣadrian issues is crosslinked separately from this Safavid stream, not reclassified as Safavid contemporaries.",
         "status": "partial-primary",
         "recordIds": [
           "lah-eman",
@@ -1003,11 +1003,13 @@
           "Mīrzā Abū al-Ḥasan Jilwa",
           "Qumshaʾī and late teaching lineages"
         ],
-        "task": "Recover direct texts on substantial motion, particular existence, soul and physics, instead of assigning group-level doctrines.",
-        "status": "partial-primary",
+        "task": "Recover direct texts on substantial motion, particular existence, soul and physics, instead of assigning group-level doctrines. Direct Narāqī *Jāmiʿ al-afkār* II:25–27 and Sabzavārī *Sharḥ al-Manẓūma* IV:301–302, 305 are now bounded working dossiers, NOT complete surrounding proofs.",
+        "status": "partial-primary-new-source-loci",
         "recordIds": [
           "nara-actual",
-          "nara-second"
+          "nara-second",
+          "nara-presence",
+          "sabz-motion"
         ],
         "referenceIds": [
           "iranica",
