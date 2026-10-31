@@ -83,13 +83,60 @@ assert len(history["families"])>=16
 assert len(links["debates"])==10
 assert len(links["domainEvidence"])==20
 assert len(history["references"])>=10
+# Source context and comparative mappings must resolve to ACTUAL existing argument
+# sections, rather than silently matching another keyword-similar paragraph.
+def source_sections(md:str)->list[str]:
+    import re
+    lines=md.splitlines()
+    sections=[]
+    title="Edition and source status"
+    acc=[]
+    def push():
+        if any(v.strip() for v in acc) or not sections:
+            sections.append(title)
+    for line in lines:
+        match=re.match(r"^##\s+(.+)",line)
+        if match:
+            push()
+            title=match.group(1)
+            acc=[]
+        elif not re.match(r"^# [^#]",line):
+            acc.append(line)
+    push()
+    return sections
+
+known_by_id={r["id"]:r for r in allrecords}
+source_heading={r["id"]:source_sections(r["md"]) for r in allrecords}
+for uid,entry in context["records"].items():
+    assert uid in known_by_id, f"Unknown historical source {uid}"
+    for idx in entry["sections"]:
+        assert isinstance(idx,int) and 0<=idx<len(source_heading[uid]),(
+            uid,idx,len(source_heading[uid]))
+for qid,d in links["debates"].items():
+    for step in d["sequence"]:
+        rid,idx=step["recordId"],step["section"]
+        assert isinstance(idx,int) and 0<=idx<len(source_heading[rid]),(
+            qid,rid,idx,source_heading[rid])
+for did,group in links["domainEvidence"].items():
+    for item in group["direct"]+group["comparative"]:
+        rid,idx=item["recordId"],item["section"]
+        assert isinstance(idx,int) and 0<=idx<len(source_heading[rid]),(
+            did,rid,idx,source_heading[rid])
+assert source_heading["lah-eman-cont"][2].startswith("[p. 294]")
+assert source_heading["lah-eman-cont"][5].startswith("[p. 297]")
+assert source_heading["lah-element"][2].startswith("II.")
+# The two previously omitted units MUST be in the embedded corpus as full
+# contextual source documents, not empty pointers or external citations.
+for uid,word in [("lah-eman-cont","Suhraward"),("lah-element","mixture")]:
+    assert len(known_by_id[uid]["md"])>8500
+    assert word.lower() in known_by_id[uid]["md"].lower()
+
 assert sum(not f["recordIds"] for f in history["families"])>=5
 assert [q for q in context["workSequence"][0]]==[
   "lah-eman","lah-eman-cont","lah-element",
   "lah-active","lah-temporal","lah-divine"
 ]
 assert context["protocol"]["noAutoKeywordPassages"] is True
-assert "keyword" not in (ROOT/"reader-context.js").read_text(encoding="utf-8").split("function stepsHtml")[1].split("function cardSelect")[0].lower() or True
 assert "function defaultSection(" not in (ROOT/"reader-pages.js").read_text(encoding="utf-8")
 assert "V.snip(excerpt" not in (ROOT/"reader-context.js").read_text(encoding="utf-8")
 assert "Read the whole available argument" in (ROOT/"reader-context.js").read_text(encoding="utf-8")
@@ -117,6 +164,7 @@ for domain,info in links["domainEvidence"].items():
 assert any(not v["direct"] for v in links["domainEvidence"].values())
 assert any(r["kind"]=="mediated" for r in primary["records"])
 assert "argument-apparatus.js" in HTML.read_text(encoding="utf-8")
+assert "reader-context.js" in HTML.read_text(encoding="utf-8")
 assert "reader-context.js" in HTML.read_text(encoding="utf-8")
 assert (ROOT/"build_apparatus.py").is_file()
 assert (ROOT/"tradition-coverage.json").is_file()
