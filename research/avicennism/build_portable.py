@@ -11,8 +11,10 @@ ROOT=Path(__file__).resolve().parent
 NAME="NAMA_Late_Avicennism_Reader_2026-10-31.zip"
 FILES=[
     "index.html","reader.css","reader.js","reader-foundation.js",
-    "reader-pages.js","reader-extras.js","corpus-primary.js",
-    "corpus-analysis.js","standalone.html","NAMA_INTEGRATION.md","README.md"
+    "reader-pages.js","reader-extras.js","reader-context.js","corpus-primary.js",
+    "corpus-analysis.js","argument-apparatus.js","argument-context.json",
+    "argument-links.json","tradition-coverage.json","build_standalone.py",
+    "build_apparatus.py","standalone.html","NAMA_INTEGRATION.md","README.md"
 ]
 out=ROOT/NAME
 for file in FILES:
@@ -28,7 +30,7 @@ with ZipFile(out,"w",compression=ZIP_DEFLATED,compresslevel=8) as z:
                "The NAMA website itself has not been deployed from this build.\n"
                "For deployment copy the folder to /research/late-avicennism/.\n"
                "See NAMA_INTEGRATION.md. The original Arabic/Persian is excerpted,\n"
-               "not a complete critical edition of the historical corpus.\n")
+               "not a complete critical edition of the historical corpus.\n"
 with ZipFile(out) as z:
     assert z.testzip() is None
     assert set(z.namelist())=={"late-avicennism/"+n for n in FILES}|{"START_HERE.txt"}
