@@ -38,7 +38,7 @@
   },
   "pdf_note": "Revision 8 adds Tajrid critical-reader links. The current data and offline map include these additions; revision 7 PDF/ZIP are historical snapshots. Historical PDFs from revisions 2 and 4 retain earlier scholarship and are marked legacy.",
   "download_sha256": {
-    "Gnamma_Intellectual_Atlas_Offline_Revision8.zip": "68bd7c14ee2696d5432ac57b8584c46968187d9b96b9e1a6dc370939f8f4779e",
+    "Gnamma_Intellectual_Atlas_Offline_Revision8.zip": "54052638e49845168906777a8df251f11f442fae662a3fbeb02f284d95099e2e",
     "intellectual-atlas-data.json": "9c028f2160730ae5d9e5f0ba01330d4a7a9c05fea86a7a4aac070a5100c2520f"
   }
 }
