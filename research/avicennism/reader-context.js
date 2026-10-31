@@ -41,7 +41,7 @@ P.full=function(id){
     '<p class="critical-notice"><strong>Full available argument:</strong> the text below presents every section of the working edition in its original sequence, without a short-excerpt character cutoff. It is <em>not</em> a claim that every historical-language sentence has been transcribed or that variants were independently collated.</p>'+
     sourceContext(r)+V.citeLinks(r);
   const toc='<nav class="full-unit-toc" aria-label="Contents of this source"><div class="eyebrow">This text in sequence</div><ol>'+
-    chapters.map(x=>'<li><a href="#full-unit-'+x.index+'">'+E(x.title)+'</a></li>').join('')+'</ol></nav>';
+    chapters.map(x=>'<li><button type="button" class="toc-jump" data-scroll-to="full-unit-'+x.index+'">'+E(x.title)+'</button></li>').join('')+'</ol></nav>';
   const text=chapters.map(x=>
     '<section class="full-unit-section" id="full-unit-'+x.index+'">'+
       '<h2>'+E(x.title)+'</h2>'+
