@@ -494,106 +494,98 @@ window.GNAMMA_BOOK={
     {
       "id": "II.14",
       "title": "Necessity, impossibility and possibility",
-      "arabic": "الوجوب والامتناع والإمكان معقولات تحصل ... [وينقسم كل من الأولين إلى الذاتي والغيري].",
-      "english": "Necessity, impossibility and possibility are intelligible notions. [Necessity and impossibility are further distinguished according to whether they belong to a thing through itself or through another.]",
+      "arabic": "فصل. الوجوب والامتناع والإمكان معقولات تحصل من نسبة المفهوم إلى هيئة بسيطة أو مركبة، وتصورها ضروري، والتعريف بمثل ضرورة الوجود أو ضرورة العدم أو لا ضرورتهما لفظي.",
+      "english": "Necessity, impossibility and possibility are intelligible notions apprehended by regarding a concept under a simple or composite modal qualification. Their conception is immediate. Explaining them as necessity of existence, necessity of nonexistence, or the absence of either necessity is a verbal elucidation rather than a strict demonstration.",
       "grade": "B",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
-          "type": "Sanandajī",
-          "text": "Essential necessity, impossibility and possibility are considered through a thing itself; their counterparts ‘through another’ must be distinguished from the contingent nature considered independently of its complete cause (Taqrīb I:84–88)."
+          "type": "Explanation",
+          "text": "The immediate grasp of a modal concept is distinct from proving that a particular subject possesses that modal status."
         }
-      ]
+      ],
+      "printedPages": "23–24",
+      "statusText": ""
     },
     {
       "id": "II.15",
       "title": "Necessary and impossible through themselves",
-      "arabic": "فالموصوف بذاته من الواجب واجب الوجود لذاته، وهو الله تعالى ... والموصوف [بالامتناع الذاتي] كشريك الباري ...",
-      "english": "That whose necessity belongs to its very essence is necessary in existence through itself: God Most High. […] A putative peer of the Creator is impossible through itself.",
+      "arabic": "وينقسم كل من الأولين إلى الذاتي والغيري؛ فالموصوف بالذاتي من الواجب واجب الوجود لذاته وهو الله تعالى، أو لشيء آخر كزوجية الأربعة، ومن الممتنع ممتنع الوجود لذاته كشريك الباري أو لشيء آخر كفردية الأربعة. والموصوف بالغيري كممكن هو واجب الوجود حين وجوده وممتنع الوجود حين عدمه.",
+      "english": "Necessity and impossibility admit distinctions between what belongs through the subject itself and what belongs in respect of something else. Existence through itself belongs necessarily to God, exalted is He; evenness belongs necessarily to four. A partner of the Creator is intrinsically impossible, while oddness is impossible for the number four. A possible being becomes necessary in the circumstance of its existence and impossible in the circumstance of its nonexistence when the determining conditions are fixed.",
       "grade": "B",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "The examples are readable although particles and classification labels need witness-level confirmation."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 778–784; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "Necessity of existence through oneself differs from a property necessarily belonging to a subject and from the consequent necessity of an event given complete conditions."
         }
-      ]
+      ],
+      "printedPages": "24",
+      "statusText": ""
     },
     {
       "id": "II.16",
       "title": "Possibility and preparedness",
-      "arabic": "وقد يؤخذ معنى سلب ضرورة الوجود أو العدم في نفس الأمر فيسمى بالإمكان العام ... وقد يعتبر بالنظر إلى الاستقبال فيسمى بالاستقبالي ... ويسمى بالاستعدادي.",
-      "english": "Possibility may mean the denial of necessity of existence or of nonexistence considered in itself: this is general possibility. It may also be considered with reference to future existence, and is then called prospective possibility, or with reference to a subject’s preparedness under conditions, and is then called dispositional possibility.",
+      "arabic": "وقد يؤخذ بمعنى سلب ضرورة الوجود أو العدم فيسمى بالإمكان العام لعمومه الخاص، وضرورة الطرف الآخر. وقد يعتبر بالنظر إلى الاستقبال ويسمى بالاستقبالي، ومعنى تهيؤ المادة لحصول الشيء باعتبار تحقق الشرائط شيئاً فشيئاً فيسمى بالاستعدادي.",
+      "english": "Possibility may mean the denial of necessity on one side, that is, of existence or nonexistence. This is general possibility and is wider than special possibility, since it can coexist with necessity on the other side. Possibility may instead be considered with reference to what lies in the future, and is then called future-directed possibility. Preparation of matter for the occurrence of something as its conditions come to be fulfilled successively is called dispositional possibility (imkān istiʿdādī).",
       "grade": "B",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "The three different technical senses must not be translated indiscriminately as one modern modal operator."
-        },
-        {
-          "type": "Sanandajī",
-          "text": "Future-directed possibility and preparedness (imkān istiʿdādī) are distinct from intrinsic possibility. Preparedness is a disposition of a receptive subject and can vary in its proximity to actualisation (Taqrīb I:88–90)."
+          "type": "Explanation",
+          "text": "Essential possibility, general possibility, future-directed possibility and material preparedness are analytically distinct."
         }
-      ]
+      ],
+      "printedPages": "24",
+      "statusText": ""
     },
     {
       "id": "II.17",
       "title": "Why the contingent needs a cause",
-      "arabic": "احتياج الممكن إلى المؤثر لامتناع ترجح أحد طرفيه بلا مرجح ضروري، وهذا غير ترجيح المختار أحد المتساويين على الآخر بمحض الإرادة، كمن يسلك أحد الطريقين ...",
-      "english": "The dependence of the possible on an efficient determinant is necessary, since one side of a genuine possibility cannot prevail without what determines it. This is distinct from a choosing agent’s selecting one of two equally available alternatives by sheer volition—for example, a traveller who takes one of two roads.",
+      "arabic": "ثم احتياج الممكن إلى المؤثر لامتناع ترجيح أحد طرفيه بلا مرجح ضروري، وهذا غير ترجيح اختيار أحد المتساويين على الآخر بالاختصاص بمحض الإرادة كالهارب يسلك أحد الطريقين والجائع يأكل أحد الرغيفين.",
+      "english": "The possible being's need of an efficient cause is necessary, since one of its two alternatives cannot prevail without a determining ground. This differs from a choosing agent's selection of one from two equal alternatives simply by the exercise of will, as when a fugitive takes one of two roads or a hungry person eats one of two loaves.",
       "grade": "B",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "The difference between explanatory determination and a free act of preference is central and should not be erased."
-        },
-        {
-          "type": "Sanandajī",
-          "text": "The issue is whether a contingent requires an effective determinant because of its essential possibility, its temporal origination, or both. Al-Sanandajī treats causal preponderance, objections from freedom and arguments from regress as distinct steps (Taqrīb I:91–106)."
+          "type": "Explanation",
+          "text": "The demand for an explanation of the actuality of a contingent being is distinguished from a choice between otherwise equal available objects."
         }
-      ]
+      ],
+      "printedPages": "25",
+      "statusText": ""
     },
     {
       "id": "II.18",
       "title": "Objection: producing what is already present",
-      "arabic": "فإن قيل: التأثير حال الوجود تحصيل الحاصل، وحال العدم جمع بين النقيضين. قلنا: الممتنع تحصيل الحاصل بتحصيل آخر ...",
-      "english": "It may be objected: if causal production occurs when the effect exists, this amounts to producing what already exists; but if it occurs while the effect is nonexistent, it combines contradictories. We reply: what is impossible is giving something a second production when it already exists [the rest of the response requires collation].",
+      "arabic": "فإن قيل التأثير حال الوجود تحصيل الحاصل وحال العدم جمع بين النقيضين، قلنا الممتنع تحصيل الحاصل بتحصيل آخر، والموجب هو الإمكان أو الحدوث ولكل وجه.",
+      "english": "It may be objected: if production occurs while the effect exists, it merely produces what is already present; if it occurs while the effect does not exist, it joins contradictories. The reply is that what is impossible is to produce what is already present by a second production. The ground claimed for the need of causation is possibility or origination, each position having its argument.",
       "grade": "B",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "The wording after the reply is partially lost. The translation preserves the explicit argument but not a complete demonstration."
-        },
-        {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 814–817; original printed pagination and manuscript witness still need confirmation."
+          "type": "Explanation",
+          "text": "The objection distinguishes production prior to existence from production of an already existing effect. The reply rejects only a redundant second production."
         }
-      ]
+      ],
+      "printedPages": "25",
+      "statusText": ""
     },
     {
       "id": "II.19",
       "title": "The two senses of dependence",
-      "arabic": "ومعنى الاحتياج إما توقف الوجود والعدم أو استمرارهما على ...",
-      "english": "Dependence may concern the coming about of existence or nonexistence, or the continuance of either. [The precise qualifying terms are not yet established.]",
-      "grade": "C",
-      "gap": true,
+      "arabic": "ومعنى الاحتياج إما توقف الوجود أو العدم أو استمرارهما على أمر ما، ولا تعقل أولوية بالذات لأحد الطرفين.",
+      "english": "Dependence can mean the dependence of a thing's existence or nonexistence, or the persistence of either, upon some further condition. Neither alternative possesses, through the contingent nature itself, any intrinsic priority over the other.",
+      "grade": "B",
+      "gap": false,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "This remains a fragment; its importance lies in the possible distinction between causal origination and causal conservation."
-        },
-        {
-          "type": "Sanandajī",
-          "text": "The need of an effect at its first origination must be distinguished from the question whether its continued existence remains causally dependent. In both cases the explanatory ground, not merely the temporal description, is at issue (Taqrīb I:96–105)."
+          "type": "Explanation",
+          "text": "The analysis differentiates original causal dependence from continued dependence; a contingent nature as such does not privilege one alternative."
         }
-      ]
+      ],
+      "printedPages": "25",
+      "statusText": ""
     },
     {
       "id": "II.20",
