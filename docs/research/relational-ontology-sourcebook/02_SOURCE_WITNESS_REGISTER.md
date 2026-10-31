@@ -25,6 +25,9 @@ READ-HTML = relevant original Arabic read in pagination-marked website transcrip
 | S14 | Avicenna, Shifāʾ, Ilāhiyyāt and relevant Logic, later al-Ishārāt / commentaries | upstream lexicon and subject-vs-accident distinctions | source to collect | EXPLICIT RESEARCH LEAD, not yet collated. |
 | S15 | al-Ṭūsī / al-Ḥillī commentary relations on Tajrīd | S04 collateral; p41 Hikmat al-ʿAyn gloss credits al-Ḥillī | later source chain | RESEARCH LEAD, not independently verified. |
 
+
+| S16 | Quṭb al-Dīn al-Rāzī al-Taḥtānī, Risāla fī Taḥqīq al-Kulliyyāt (with 2020 editor's apparatus) | Upstream genealogy relevant to Spiker nn.129,134,156–158 (not directly cited in §2.3.2) | https://atharah.net/mission-in-achieving-totalities/ | READ-HTML: a full five-qāʿida argument + rebuttals; published editor claims 5 collated MSS but we did NOT recollate them. See 08_DOSSIER_QUTB_RAZI_UNIVERSALS.md. | Compare with Taftāzānī I105, Isfahānī Tasdīd I406–407 and mental-existence doctrine. |
+
 ## Source-family priorities
 
 P1: S01+S02 fully collated including original scan and authorship layers.
@@ -52,4 +55,3 @@ S11: 163 Spiker warns thubūt is not interchangeable with wujūd, 165 Gelenbevī
 6. The most important open issue is whether a relational configuration of a bed is an actual dependent mode or merely conceptually formed—as different glosses in S02 appear to disagree. The answer is not settled by translating it as a 'relational form'.
 
 
-| S16 | Quṭb al-Dīn al-Rāzī al-Taḥtānī, Risāla fī Taḥqīq al-Kulliyyāt (with 2020 editor's apparatus) | Upstream genealogy relevant to Spiker nn.129,134,156–158 (not directly cited in §2.3.2) | https://atharah.net/mission-in-achieving-totalities/ | READ-HTML: a full five-qāʿida argument + rebuttals; published editor claims 5 collated MSS but we did NOT recollate them. See 08_DOSSIER_QUTB_RAZI_UNIVERSALS.md. | Compare with Taftāzānī I105, Isfahānī Tasdīd I406–407 and mental-existence doctrine. |
