@@ -12,6 +12,8 @@ This is **not** another translation of Lāhījī's separate *Shawāriq al-ilhām
 
 ## Section I, pp.278–279 — the meanings of production
 
+**Historical argument-unit boundary.** Lāhījī first establishes what diverse terms for making mean and which sense includes an eternal effect as well as a temporally originated effect. These definitions are premises for, not replies to, the following section's ontological dispute.
+
 ## Page 278: what counts as giving existence?
 
 **Context and working translation.** It was established earlier that a contingent thing needs a cause for the preponderance of its existence, and that the chain of causes depends upon the Necessary Existent. Thus all contingent existents ultimately depend on God, whether immediately or through intermediaries. *Ījād* means bestowing existence; in one usage *takwīn* means the same. Existence bestowed by a cause is broader than existence preceded by temporal nonbeing: the relevant priority can be **essential** rather than temporal. Hence even if an effect were temporally eternal, it would remain caused in this sense.
@@ -33,6 +35,8 @@ Lāhījī notes a difference of usage. Some theologians confine “acting,” �
 **Connection:** This is a carefully staged semantic distinction. When the subsequent section says “the made thing is a quiddity,” it does not mean merely that the *concept* of an essence is physically manufactured. The subject is the actual thing issued by a maker.
 
 ## Section II, pp.280–282 — what is made: quiddity, existence, or attribution?
+
+**Historical argument-unit boundary.** Having distinguished modes and words of production, Lāhījī now asks **which reality is directly made**. The opposed answers—quiddity, existence and attribution—are stated first, then defended or refuted in sequence. His reported Avicenna–Bahmanyār phrase belongs at the conclusion, not at the opening of the proof.
 
 ## Page 280: the three alternatives and Lāhījī's stated preference
 
