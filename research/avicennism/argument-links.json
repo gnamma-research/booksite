@@ -150,58 +150,80 @@
       "scope": "Read all of Gawhar IV, including the ten-intellect qualification and the counterargument about fixed stars.",
       "sequence": [
         {
-          "recordId": "lah-eman",
-          "section": 1,
-          "role": "Rule of the One",
-          "relation": "original-base",
-          "claim": "Only one effect directly proceeds from the absolutely One.",
-          "why": "This is Lāhījī reporting a philosophical rule, not a generic statement about all forms."
+          "recordId": "lah-unity",
+          "section": 2,
+          "role": "Reported Sufi claim",
+          "relation": "separate-school-report",
+          "claim": "A unity of existence and manifestation is reported before Lāhījī tests its meaning.",
+          "why": "This is p.283, another school's view, not his immediate assent."
+        },
+        {
+          "recordId": "lah-unity",
+          "section": 5,
+          "role": "Objection to treating existence as a natural universal",
+          "relation": "authorial-reply",
+          "claim": "A natural universal depends on determination for external instantiation; necessary existence cannot depend in that way.",
+          "why": "The objection is in Gawhar III p.286."
+        },
+        {
+          "recordId": "lah-unity",
+          "section": 6,
+          "role": "One ultimate ground, multiple dependent truths",
+          "relation": "authorial-refinement",
+          "claim": "One reality is existentially unconditioned while dependent actual realities remain multiple.",
+          "why": "The refinement in p.287 needs its prior opponent and analogy."
+        },
+        {
+          "recordId": "lah-unity",
+          "section": 8,
+          "role": "Cautious collective-unity formula",
+          "relation": "reported-unattributed-maxim",
+          "claim": "An attributed maxim distinguishes the existences of all collectively from each particular singly.",
+          "why": "The speaker is unnamed and the author ends with a declaration of difficulty."
         },
         {
           "recordId": "lah-eman",
-          "section": 3,
-          "role": "Derived aspects",
-          "relation": "inferential-development",
-          "claim": "Non-self-subsistent respects of the first intellect explain mediated plurality.",
-          "why": "The response does not posit many independent effects directly from the First."
+          "section": 1,
+          "role": "Rule of the One",
+          "relation": "next-authorial-section",
+          "claim": "Section IV asks how a single First Cause generates the sequence of separate intellects.",
+          "why": "This is a different question from the conceptual status of being in Section III."
         },
         {
           "recordId": "lah-eman-cont",
           "section": 3,
-          "role": "Number of intellects qualified",
-          "relation": "authorial-continuation",
-          "claim": "Ten is not a proved upper limit; Ṭūsī's reading of the Ishārāt is cited.",
-          "why": "This page was omitted in the old extraction."
+          "role": "Ten-intellect count not demonstrably maximal",
+          "relation": "qualified-numerical-claim",
+          "claim": "Lāhījī notes no decisive proof that intellects cannot exceed ten.",
+          "why": "Section IV p.295, with reported Ṭūsī reading."
         },
         {
           "recordId": "lah-eman-cont",
           "section": 4,
-          "role": "Combinatorial reply",
+          "role": "Suhrawardian fixed-star objection",
           "relation": "reported-objection-reply",
-          "claim": "Lāhījī enumerates twelve possible third-level effects to answer Suhrawardī's fixed-star objection.",
-          "why": "The opponent's objection, and the scope of the numerical reply, must both be shown."
-        },
-        {
-          "recordId": "lah-eman-cont",
-          "section": 5,
-          "role": "Conclusion of IV",
-          "relation": "chapter-conclusion",
-          "claim": "The objection is judged answered; Section V then shifts to elements.",
-          "why": "Do not present the closing line as an unrelated claim about star counts."
+          "claim": "Twelve third-level possibilities answer the insufficiency-of-respects complaint.",
+          "why": "Section IV p.296, argumentative counterexample rather than observed cosmology."
         }
       ],
       "links": [
         {
-          "from": "lah-eman",
-          "to": "lah-eman-cont",
-          "kind": "same-historical-chapter",
-          "explanation": "The omitted pp.294–297 complete Section IV of Gawhar."
+          "from": "lah-unity",
+          "to": "lah-eman",
+          "kind": "adjacent-historical-chapters",
+          "explanation": "Gawhar Section III establishes terms of causal procession; Section IV then articulates the mediated intellect hierarchy."
         },
         {
-          "from": "lah-eman-cont",
-          "to": "lah-element",
-          "kind": "next-chapter",
-          "explanation": "The following Section V tests form bestowal against elemental generation."
+          "from": "lah-eman",
+          "to": "lah-eman-cont",
+          "kind": "within-same-authorial-section",
+          "explanation": "The initial Rule-of-One argument continues through the numerical objection and reply on pp.294–297."
+        },
+        {
+          "from": "lah-unity",
+          "to": "nara-actual",
+          "kind": "later-independent-metaphysical-comparison",
+          "explanation": "The Unity debate and Narāqī's existence-first theory are related but not documented as a direct reply."
         }
       ]
     },
@@ -333,52 +355,80 @@
       "scope": "Separate a lexical report of simple/compound jaʿl from an independent treatment of particular existence.",
       "sequence": [
         {
-          "recordId": "taha-jal",
-          "section": 1,
-          "role": "Technical division",
-          "relation": "direct-lexical-source",
-          "claim": "Simple making versus making a thing be something.",
-          "why": "Lexicographic entry, not authorial Mīr Zāhid proof."
+          "recordId": "lah-making",
+          "section": 6,
+          "role": "Independent Gawhar alternative",
+          "relation": "later-author-original",
+          "claim": "Lāhījī lists three candidates for the made object and argues that actual produced quiddity underlies the abstraction of 'exists'.",
+          "why": "This is Section II p.280, not the Tajrīd Shawāriq gloss."
         },
         {
-          "recordId": "taha-jal",
-          "section": 2,
-          "role": "Attribution to Mīr Zāhid",
-          "relation": "mediated-tradition",
-          "claim": "Tahānawī quotes or reports Mīr Zāhid's gloss.",
-          "why": "A nested report counts as one direct later witness."
+          "recordId": "lah-making",
+          "section": 7,
+          "role": "Attribution-first objection",
+          "relation": "authorial-argument",
+          "claim": "If the attribution itself is made without making the relata, it threatens self-subsistence or regress.",
+          "why": "The precise objection is on p.281."
         },
         {
-          "recordId": "taha-jal",
-          "section": 3,
-          "role": "Arguments on each side",
-          "relation": "reconstructed-dispute",
-          "claim": "Debate over the production of quiddity and the relation of existence.",
-          "why": "One must retain arguments and counterarguments together."
+          "recordId": "lah-making",
+          "section": 8,
+          "role": "Reported Ibn Sīnā–Bahmanyār remark",
+          "relation": "reported-quotation",
+          "claim": "The apricot dictum is interpreted as rejecting making a thing be its pre-existing whatness.",
+          "why": "Lāhījī's quotation is not a second independent Ibn Sīnā witness."
         },
         {
           "recordId": "nara-actual",
           "section": 1,
-          "role": "Narāqī's distinct argument",
-          "relation": "independent-later-discussion",
-          "claim": "Quiddity/existence attribution is mental, actual being not two self-subsisting things.",
-          "why": "Narāqī is not directly replying to Tahānawī in this text."
+          "role": "Later existence-first argument",
+          "relation": "independent-persian-later",
+          "claim": "Narāqī rejects two externally separate things called quiddity and existence, prioritizing particular actuality.",
+          "why": "The first accessible source passage is al-Lamaʿāt p.72, not a direct refutation of Gawhar."
         },
         {
-          "recordId": "ch02",
+          "recordId": "nara-actual",
           "section": 2,
-          "role": "Secondary editorial analysis",
-          "relation": "editorial-comparison",
-          "claim": "Longer Jawl debate can be reconstructed from Shawāriq.",
-          "why": "This analytical chapter is not itself a new primary witness."
+          "role": "Noncontiguous further result",
+          "relation": "noncontiguous-later",
+          "claim": "Narāqī argues that conceptual distinction and external unity coexist.",
+          "why": "Pages 73–81 intervene; do not pretend these two extracts comprise one uninterrupted proof."
+        },
+        {
+          "recordId": "taha-jal",
+          "section": 3,
+          "role": "Indian lexical scholastic report",
+          "relation": "separate-source-problem",
+          "claim": "Tahānawī reports simple versus compound jaʿl and arguments linked to Mīr Zāhid.",
+          "why": "The Indian work is a later lexical testimony, not a Tajrīd original."
+        },
+        {
+          "recordId": "lah-shaw",
+          "section": 2,
+          "role": "Shared Tajrīd antecedent",
+          "relation": "cross-project-link-only",
+          "claim": "Lāhījī's separate Shawāriq argument can be compared, but its original lemma-level collation belongs to Tajrīd.",
+          "why": "Tajrīd NEW05/NEW06 already index *Shawāriq* I:90–91; do not count as a new independent witness."
         }
       ],
       "links": [
         {
-          "from": "taha-jal",
+          "from": "lah-making",
           "to": "nara-actual",
-          "kind": "thematic-parallel-not-proved-influence",
-          "explanation": "Both consider the object of making, but no documented exchange is established."
+          "kind": "independent-later-philosophical-comparison",
+          "explanation": "Actual produced quiddity versus individual existence-first actuality are differently formulated in separate Persian works; no direct reply is established."
+        },
+        {
+          "from": "lah-making",
+          "to": "lah-shaw",
+          "kind": "same-author-different-work-and-tajrid-crosslink",
+          "explanation": "Gawhar Section II and Shawariq belong to the same author, but are different works; shared Shawariq pages are indexed in the Tajrid sourcebook."
+        },
+        {
+          "from": "taha-jal",
+          "to": "lah-making",
+          "kind": "lexicographic-parallel",
+          "explanation": "Indian simple/compound jaʿl is related by subject but no documented transmission of these specific pages is established."
         }
       ]
     },
@@ -502,44 +552,58 @@
       "scope": "Distinguish identity of a particular actuality from mental concept distinction and Thomist essence–esse composition.",
       "sequence": [
         {
+          "recordId": "lah-making",
+          "section": 6,
+          "role": "What is created in actual being?",
+          "relation": "original-distinct-work",
+          "claim": "Lāhījī argues that the actual produced quiddity grounds the concept 'exists'.",
+          "why": "The issue is Gawhar Section II, not an inherited Tajrīd lemma."
+        },
+        {
+          "recordId": "lah-unity",
+          "section": 6,
+          "role": "One ground of being; many created realities",
+          "relation": "next-section-context",
+          "claim": "Lāhījī holds unity of unconditioned existential ground with multiplicity of dependent things.",
+          "why": "Read Gawhar III p.287 with its prior conceptual objections."
+        },
+        {
           "recordId": "nara-actual",
           "section": 1,
-          "role": "Objections to two external realities",
-          "relation": "original-argument",
-          "claim": "Predicative 'quiddity exists' need not posit two separate external objects.",
-          "why": "The objection is directly about how the attribution is understood."
+          "role": "Narāqī: actual existence and quiddity",
+          "relation": "independent-later-source",
+          "claim": "He analyzes particular existence as primary reality rather than two separate external things.",
+          "why": "Al-Lamaʿāt p.72, not independently an answer to Lāhījī."
         },
         {
           "recordId": "nara-actual",
           "section": 2,
-          "role": "A separate later passage",
-          "relation": "noncontiguous-continuation-not-established",
-          "claim": "Limitation grounds abstractable quiddity in contingent existence.",
-          "why": "The intervening pages 73–81 are missing and must not be bridged."
+          "role": "Quiddity abstracted from finite limits",
+          "relation": "later-but-not-continuous",
+          "claim": "On p.82 Narāqī treats a real grounding of intelligible quiddity in a finite actuality.",
+          "why": "The pages between the two Narāqī passages are not collated."
         },
         {
-          "recordId": "lah-eman",
+          "recordId": "ch02",
           "section": 2,
-          "role": "First-intellect existence/quiddity respects",
-          "relation": "separate-context",
-          "claim": "Externally united, mentally different respects are used in the procession proof.",
-          "why": "This is not Narāqī answering an earlier author."
-        },
-        {
-          "recordId": "ch01",
-          "section": 1,
-          "role": "Interpretive analysis",
-          "relation": "editorial-synthesis",
-          "claim": "Mental existence and essence predication form a wider philosophical problem.",
-          "why": "Not another direct primary author."
+          "role": "Tajrīd antecedent as editorial context",
+          "relation": "cross-project-secondary-analysis",
+          "claim": "The earlier Shawariq discussion belongs to the Tajrīd sourcebook's textual collation.",
+          "why": "Reader analysis only, not a second authorial witness."
         }
       ],
       "links": [
         {
-          "from": "nara-actual",
-          "to": "lah-eman",
-          "kind": "conceptual-comparison",
-          "explanation": "Two later Persian authors deploy a similar distinction in different questions; no direct answer is shown."
+          "from": "lah-making",
+          "to": "nara-actual",
+          "kind": "cross-author-conceptual-disagreement",
+          "explanation": "The two authors use different terms for the made actuality; the evidence does not by itself establish borrowing or a direct polemic."
+        },
+        {
+          "from": "lah-unity",
+          "to": "lah-making",
+          "kind": "immediate-historical-sequence",
+          "explanation": "Lāhījī follows the question of the made object by asking how the effect proceeds from the First."
         }
       ]
     },
@@ -640,6 +704,18 @@
     "existence": {
       "direct": [
         {
+          "recordId": "lah-unity",
+          "section": 6,
+          "level": "direct late Persian argument",
+          "reason": "Direct Gawhar p.287 on one existential ground and many actual dependent realities"
+        },
+        {
+          "recordId": "lah-making",
+          "section": 6,
+          "level": "direct late Persian argument",
+          "reason": "Direct independent Gawhar p.280 on the made quiddity"
+        },
+        {
           "recordId": "nara-actual",
           "section": 1,
           "level": "primary passage",
@@ -670,6 +746,24 @@
     },
     "unity": {
       "direct": [
+        {
+          "recordId": "lah-unity",
+          "section": 6,
+          "level": "direct late Persian argument",
+          "reason": "One ultimate ground and multiplicity of realities"
+        },
+        {
+          "recordId": "lah-unity",
+          "section": 5,
+          "level": "direct late Persian argument",
+          "reason": "Lāhījī's objection to the natural universal analogy"
+        },
+        {
+          "recordId": "lah-unity",
+          "section": 2,
+          "level": "direct late Persian argument",
+          "reason": "Reported Sufi unity in the independent Persian work"
+        },
         {
           "recordId": "lah-eman",
           "section": 1,
@@ -738,6 +832,18 @@
     },
     "causation": {
       "direct": [
+        {
+          "recordId": "lah-making",
+          "section": 4,
+          "level": "direct late Persian argument",
+          "reason": "Ibdāʿ and simple versus compound making"
+        },
+        {
+          "recordId": "lah-making",
+          "section": 3,
+          "level": "direct late Persian argument",
+          "reason": "Creation terms including ījād and temporal/essential origination"
+        },
         {
           "recordId": "av-vi1",
           "section": 1,
@@ -875,6 +981,12 @@
     "modality": {
       "direct": [
         {
+          "recordId": "lah-making",
+          "section": 6,
+          "level": "direct late Persian argument",
+          "reason": "Causal making and distinctions of actual quiddity/existence"
+        },
+        {
           "recordId": "lah-shaw",
           "section": 1,
           "level": "primary passage",
@@ -954,6 +1066,12 @@
     },
     "cosmology": {
       "direct": [
+        {
+          "recordId": "lah-unity",
+          "section": 7,
+          "level": "direct late Persian argument",
+          "reason": "The First as perfect and superabundant precedes the hierarchy of intellects"
+        },
         {
           "recordId": "lah-eman",
           "section": 1,
@@ -1090,6 +1208,12 @@
     "divine-will": {
       "direct": [
         {
+          "recordId": "lah-unity",
+          "section": 7,
+          "level": "direct late Persian argument",
+          "reason": "Perfect/superabundant cause and nonacquisitive divine willing"
+        },
+        {
           "recordId": "lah-divine",
           "section": 1,
           "level": "primary passage",
@@ -1150,6 +1274,12 @@
     },
     "proofs": {
       "direct": [
+        {
+          "recordId": "lah-making",
+          "section": 3,
+          "level": "direct late Persian argument",
+          "reason": "Dependence of every contingent event upon the Necessary in Section I"
+        },
         {
           "recordId": "av-vi1",
           "section": 4,
