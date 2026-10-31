@@ -106,3 +106,48 @@ Update the linked source dossier, lexicon and claim audit in the SAME stage. Do 
 Acquire/verify the source image of the **Kātibī–Mubārakshāh–Jurjānī Ḥikmat al-ʿAyn** chain. A Library of Congress 1882 witness with multiple marginal layers is catalogued, and a transcription exists at usul.ai, but the latter contains visibly garbled OCR. Locate the exact Spiker pages 38,41,43–44,48 by first matching the argument, NOT assuming pagination. Then check the 2012/other edition of **Tasdīd al-Qawāʿid** pp.406–407, and **Bannānī** I p.102 in a readable scan.
 
 **New-chat handoff prompt:** "Read the Gnamma repository folder docs/research/relational-ontology-sourcebook (start with 00 and 01), then continue Arabic contextual source collation, historical lexicon and Spiker claim audit. Do not yet compare with AT. Update the full cumulative handoff, all new evidence and every current uncertainty."
+
+
+---
+
+## STAGE CHECKPOINT — 31 October 2026, Stage 2.1: durable sourcebook baseline and contextual verification
+
+**Work actually completed:** Created the cumulative, restartable Arabic ontology research sourcebook in the Gnamma repository (master branch):
+
+- 00_START_HERE.md — purpose, current findings, restart instructions.
+- 01_FULL_CUMULATIVE_HANDOFF.md — this unabridged cumulative research state.
+- 02_SOURCE_WITNESS_REGISTER.md — first 16 Arabic/secondary witness families, links, editions and verification status.
+- 03_HISTORICAL_LEXICON.md — ~100 candidate Arabic headwords organized by ontological problem, sourced sense-seeds and explicit unresolved meanings. Some are discovery leads rather than attested technical terms.
+- 04_DOSSIER_SHARH_MAQASID.md — extended, page-by-page Arabic argument reconstruction I99–108 and I171–173, including objections and the important p172 artificial form.
+- 05_DOSSIER_MAWAQIF.md — extended III35–40 and III54–60 including the army's *mawjūd bilā shubha*, p38 **khārijan ay ḥissan**, p54 dependence versus inherence and p59 disputed bed.
+- 06_SPIKER_CLAIM_AUDIT.md — 20 numbered propositions with evidential E/Q/R/I/C/U statuses, including explicit source gaps.
+- 07_NEXT_STAGE_PLAN.md — acquisition, verification and staged-delivery conditions.
+
+### Fresh checks and witness availability
+
+- Directly reopened page https://usul.ai/ar/t/sharh-maqasid/106 : this digital witness visibly contains *ṣūra ijtimāʿiyya maḥḍ iʿtibār al-ʿaql*, the army made of individuals, **fīhi taraddud** on substantial species form versus accidental mixture, and the bed as mixed material/relational constituents. No printed facsimile verification.
+- Reopened https://usul.ai/ar/t/sharh-maqasid/105 : explicit separation of external individual subjects from intelligible genus/differentia, qualified when matter/form principles correspond in the entity. It explicitly distinguishes **jism taken as matter** from **jism taken as genus**, a historically important precise example of one Arabic word with two conceptual roles.
+- Reopened https://usul.ai/ar/t/sharh-maqasid/107 and /108 : the problem of making a quiddity, act of being, and whether dependency means need for a producer or intrinsic need for parts, all developed beyond Spiker's isolated p106.
+- Reopened https://ablibrary.net/book_content/b/9296/38?lang=ar : *khārijan ay ḥissan* as opposed to an alternative sense opposed to mind; provenance layers still need a scan.
+- Reopened III54, 57–60: p54 qiyām / maḥall vs iḥtiyāj; p57 strong objection dependence not sufficient; p58 army and medicinal mix, stone+human counterexample; p59 **some** propose bed as substance-plus-accident and marginalia question this; p60 army collection **exists without doubt** while single substantial unity is perspectival.
+- Manuscript record newly confirmed: https://manuscript.iium.edu.my/id/eprint/3263/ exposes an unrestricted 10 MB sample/scanned PDF with the original filename *m[ARABICMSS261]kitabhikmatalayn_T.pdf*, alongside a separate 1 GB restricted file. The web document reader rejected the 10 MB content as too large (not read); do **not** claim the needed manuscript passages have been collated. The alternative https://usul.ai/ar/t/sharh-hikmat-al-ayn/37 and /162 is visibly corrupt OCR, so it cannot be used for exact quotation without image comparison.
+- Tasdīd: modern Arabic searchable edition is found at https://ketabonline.com/ar/books/102884 and https://shamela.org/pdf/218d4667575af64a9af8e8d2f06f9acb , but the exact Spiker 406–407 print pagination and its specific argumentative unit remain unverified. Do not quote uninspected PDF pages as scan-verified.
+
+### Claim-level results adjusted by this stage
+
+SP-03 / SP-04: NEED TO VERIFY *Tasdīd* cited edition; the original Taftāzānī I105 explicitly warns against reading logical genus+fasl as two extramental items.  
+SP-05: E+Q — army's *iʿtibārī* collective unity is supported, but the army as actual aggregate is clearly called existing, so phrase carefully.  
+SP-07: E for Jurjānī's close analysis of *al-aqrab*; Bayḍāwī original p84 pending.  
+SP-08: E (mixed quiddity wood + tartīb); *Hikmat* p48 pending.
+SP-09: R+Q+C — bed as substantial union through accident is a reported and contested hypothesis, not obviously the author's unqualified conclusion.  
+SP-10: U — two senses of iʿtibārī in Bannānī not source-image-verified.  
+SP-12: I — Spiker's universal denial of extramental actual relations is **his explanatory claim**, not an independently verified inference from the citation chain.  
+SP-17: I+U — prior exemplary realm/Divine knowledge cannot be pronounced proved by the army/bed argument alone.
+
+### What MUST happen next
+
+1. Start 08_DOSSIER_HIKMAT_AL_AYN.md once a legible source image is obtained; map pp38,41,43–44,48 by phrases and topic not blind page number.
+2. Start 09_DOSSIER_TASDID.md after the corresponding I406–407 of Spiker's PRINT edition is found.
+3. Start 10_DOSSIER_BANNANI.md after reading scanned I102; establish the two khārij and iʿtibārī senses.
+4. Extend the historical lexicon and link original citations to claim audit. Don't introduce Latin equivalents before the Arabic internal critical synthesis.
+5. Preserve THIS HANDOFF at every milestone and maintain the claim statuses; do not delete unresolved concerns in later summaries.
