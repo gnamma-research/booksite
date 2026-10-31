@@ -10,7 +10,7 @@
 
 **Problem carried into pp. 294–297:** Is the proposed procession identifiable with Islamic descriptions of the first creation? Must the chain contain precisely ten separate intellects? Can the limited respects in the early intellects explain the immense numerical multiplicity of fixed stars? The last is an objection attributed to **Shaykh al-Ishrāq (Suhrawardī)**. The conclusion on p.297 is a reply to that objection, *not* a freestanding assertion about the number of stars.
 
-### [p. 294] The First Intellect as intellect, spirit and pen
+## [p. 294] The First Intellect as intellect, spirit and pen
 
 In certain traditions the first created reality is named “my intellect,” and in others “my spirit”; other reports describe the Pen as the first of created things. Lāhījī argues that these varying expressions need not contradict one another if they all allude to the First Intellect. He also recalls his earlier account of the Prophet's existential rank as related, in the returning series of being, to the First Intellect in the descending series. The identification is explicitly an **interpretation of reported traditions**, not a further physical demonstration.
 
@@ -18,7 +18,7 @@ The same principle supplies an analogy for the Pen: the First Intellect mediates
 
 *Original-language control:* «و نيز چون عقل اوّل واسطهء فيضان علوم و كمالات است». [Source p.294](https://ablibrary.net/book_content/b/17438/294?lang=ar).
 
-### [p. 295] The number ten is an explanatory lower bound, not an impossibility proof against eleven
+## [p. 295] The number ten is an explanatory lower bound, not an impossibility proof against eleven
 
 Continuing the report attributed to Rāzī, Lāhījī notes traditions identifying the first creature as an intellect, a pen, or a certain simple substance, and construes their subject as a single underlying referent. He then makes a qualification indispensable to an accurate account of later Avicennism: **the philosophers do not profess to have demonstrated that more than ten separate intellects are impossible**. The standard count is advanced because the arguments discussed have reached that number.
 
@@ -28,7 +28,7 @@ On an older cosmological identification of the first sphere with the sphere of t
 
 *Original-language control:* «قول به تعيين عدد عشره در عقول مجرّده ، مجزوم به حكما نيست». [Source p.295](https://ablibrary.net/book_content/b/17438/295?lang=ar).
 
-### [p. 296] Reply to the fixed-star plurality objection: twelve possible effects
+## [p. 296] Reply to the fixed-star plurality objection: twelve possible effects
 
 Lāhījī now develops the response to the objection that the early intellects lack enough distinct aspects to explain the fixed stars. Take the absolutely One as **A** and its sole immediate effect as **B**. At the second causal level we can have **C** proceeding from A through B, as well as **D** from B itself. Thus already two effects can coexist at the second level without violating the rule that only one immediate effect proceeds from A. If we also allow the lower principle B to operate in a more complicated mediation involving the higher source, the range of possibilities increases.
 
@@ -38,7 +38,7 @@ If further orders of mediation—such as the operation of a lower source through
 
 *Original-language control:* «در مرتبهء سوّم دوازده معلول متحقق تواند شد». [Source p.296](https://ablibrary.net/book_content/b/17438/296?lang=ar).
 
-### [p. 297] Conclusion: the objection of Shaykh al-Ishrāq
+## [p. 297] Conclusion: the objection of Shaykh al-Ishrāq
 
 Even the simplified third-level enumeration can be augmented by taking into account additional causal respects in the first intellect and differing orderings of intermediaries. On those suppositions the numerical possibilities become too numerous to list exhaustively. Lāhījī therefore concludes that the criticism attributed to **Shaykh al-Ishrāq**, that the second intellect has insufficient plurality to account for the many fixed stars, is answered.
 
