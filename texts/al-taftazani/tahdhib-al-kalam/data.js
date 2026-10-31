@@ -380,14 +380,14 @@ window.GNAMMA_BOOK={
     {
       "id": "II.08",
       "title": "Existence as predicate and copula",
-      "arabic": "ثم كل من الوجود والعدم قد يقع محمولًا وقد يقع رابطة، ويقتضي الحمل الإيجابي اتحاد الطرفين هويةً ليصح وتغايرهما مفهومًا ليفيد، وصدقه يكون بمطابقته لما في نفس الأمر، ومعناه ما يفهم من قولنا: هذا الأمر كذا في نفسه، مع قطع النظر عن حكم الحاكم وإدراك المدرك.",
-      "english": "Existence and nonexistence may each function as a predicate, and each may function as a copula or relational term. […] The truth of a judgment consists in its accordance with what obtains in the matter itself (nafs al-amr).",
+      "arabic": "ثم كل من الوجود والعدم قد يقع محمولاً وقد يقع رابطة، ويفتقر الحمل الإيجابي إلى اتحاد الطرفين هوية ليصح، وتغايرهما مفهوماً ليفيد، وصدقه يكون بمطابقته لما في نفس الأمر، ومعناه ما يفهم من قولنا هذا الأمر كذا في نفسه مع قطع النظر عن حكم الحاكم وإدراك المدرك.",
+      "english": "Both existence and nonexistence can occur as a predicate or as the nexus of a proposition. Affirmative predication requires the two terms to be identical in referent if it is to be true, and different in conception if it is to convey information. Its truth consists in correspondence to what obtains in the matter itself (nafs al-amr): what we understand when we say that this thing is thus in itself, independently of the judgment of the one judging or the apprehension of the one apprehending.",
       "grade": "B",
       "gap": true,
       "notes": [
         {
-          "type": "Editorial",
-          "text": "The missing connecting discussion must be restored before this is marked continuous. “Nafs al-amr” is not automatically identical with external existence."
+          "type": "Explanation",
+          "text": "‘Identity in referent’ does not imply sameness in conceptual meaning. Nafs al-amr describes the way the matter stands independent of a judgment; it is not simply another name for physical existence."
         },
         {
           "type": "Explanation",
@@ -397,7 +397,8 @@ window.GNAMMA_BOOK={
           "type": "Explanation",
           "text": "Affirmative judgment requires identity of referent while allowing conceptual diversity of subject and predicate. The truth of the predication is conformity to nafs al-amr, what obtains in itself regardless of the individual judger (Cairo p. 20)."
         }
-      ]
+      ],
+      "printedPages": "20"
     },
     {
       "id": "II.09",
@@ -448,8 +449,8 @@ window.GNAMMA_BOOK={
           "text": "Real composition is not reducible to a grouping made by the intellect."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 701–704; original printed pagination and manuscript witness still need confirmation."
+          "type": "Sanandajī",
+          "text": "Al-Sanandajī distinguishes a real compound with dependent constituents from a merely considered compound such as an army. In the latter case, individuals exist externally without a further collective substance existing over and above them (Taqrīb I:74–76)."
         }
       ]
     },
@@ -466,8 +467,8 @@ window.GNAMMA_BOOK={
           "text": "This is a compressed statement of the surviving argument; intervening syntax is missing. Do not cite as a complete literal translation."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 705–708; original printed pagination and manuscript witness still need confirmation."
+          "type": "Sanandajī",
+          "text": "The dispute over jaʿl concerns whether the quiddity as such is made, the actual existent is made, or ‘made’ means dependence upon an agent. It must be separated from the agreed necessity that a contingent existent depends upon a cause (Taqrīb I:76–77)."
         }
       ]
     },
@@ -484,8 +485,8 @@ window.GNAMMA_BOOK={
           "text": "The Arabic is too broken here for a continuous translation; this paragraph is an interpretative abstract of the problem only."
         },
         {
-          "type": "Source",
-          "text": "1912 Cairo printed witness, working OCR locator OCR 729–754; original printed pagination and manuscript witness still need confirmation."
+          "type": "Sanandajī",
+          "text": "The general concept of determination can apply to many, although each individual's determination is proper to it. This is the starting point for distinguishing taʿayyun from essence, existence and unity (Taqrīb I:78–80)."
         }
       ]
     },
