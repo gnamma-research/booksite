@@ -1,5 +1,5 @@
 {
-  "revision": "tajrid-reader-ui-3-2026-10-31",
+  "revision": "tajrid-reader-ui-3.1-2026-10-31",
   "date": "2026-10-31",
   "title": "Tajrīd comparative critical sourcebook",
   "url": "https://gnamma-research.github.io/booksite/research/tajrid/",
@@ -30,6 +30,7 @@
     "source_data_changed": false,
     "mixed_note_formats_supported": true,
     "validated_debate_views": 120,
-    "validated_source_pages": 224
+    "validated_source_pages": 224,
+    "legacy_work_locus_records_supported": 16
   }
 }
