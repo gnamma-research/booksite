@@ -149,3 +149,23 @@ Every entry must eventually give: headword and forms; original Arabic with sourc
 3. For each author record *whether the word appears in original lemma or later gloss*. No false historical attributions.
 4. Keep **AT comparisons completely out of this lexicon** until separate, fully sourced comparative stage. Later establish separate Latin entries for substantia, suppositum, subiectum, ratio, ens reale, ens rationis, accidentia, relatio, respectus, modus, esse ad, esse in, and check each for historical senses before crosswalk.
 5. Source-page anchors: Maqāṣid I103,105,106,172; Mawāqif III38,54,57–60; Jurjānī Taʿrīfāt p16; Tahānawī Kashshāf I657–658.
+
+
+---
+
+## Stage 2.2 addendum: Quṭb al-Dīn al-Rāzī's pivotal sense distinctions (2026-10-31)
+
+**Full source context:** Quṭb, Risāla fī Taḥqīq al-Kulliyyāt, 2020 edited Arabic, first/fourth/fifth qāʿidas and rejoinders. https://atharah.net/mission-in-achieving-totalities/ . See 08_DOSSIER_QUTB_RAZI_UNIVERSALS.md.
+
+- **ṣūra (صورة)** explicitly has TWO distinguishable meanings in the passage: an actually occurring particular *kayfiyya* (quality) in the intellect, the instrument through which intellection occurs; and *al-maʿlūm* (the known object) cognitively distinguished by means of it. Universality attaches in the relevant sense to the second, not as a numerical quality of the psychic accident.
+- **kayfiyya (كيفية)** in this context is a real cognitive determination, *not* simply an English word 'mode' and not a synonym for universal concept as object.
+- **al-maʿlūm (المعلوم)** is the object-known as differentiated through cognitive actuality; it need not be another psychic accident *numerically identical* with the actual cognitive quality.
+- **ṣūra shakhsiyya (صورة شخصية)** can denote a singular mental representation; its singularity does not entail that the represented nature cannot have universal predicability. The distinction of how *individual* applies to mental states and external objects is especially important.
+- **kullī ṭabīʿī, kullī manṭiqī, kullī ʿaqlī**: three senses of universal carefully distinguished by the author; do not identify each with a separately existing real universal.
+- **khārij (خارج)** contrasted to *dhihn* in the argument about universal in things, while the source's manuscript apparatus also records variant expressions around the idea of 'not distinguishable sensibly'. Compare Mawāqif III38 *khārijan ay ḥissan*: another direct illustration of why 'external' has local rather than fixed English meaning.
+- **jins/faṣl (جنس، فصل)**: an intellectual genus and specific differentia need not be two separate externally existing things, although some earlier schools report them as distinct in nature or being. Author classifies THREE positions; interpret the position defended, not a reported objection.
+- **ʿilliyya of faṣl (علية الفصل)**: explanatory 'cause' as specification/removal of generic conceptual indeterminacy, not a proof that a separate material being has been efficiently produced.
+- **iʿtibār (اعتبار)**: intellectual regard can present the SAME actual individual nature under multiple essential concepts; multiplicity of concept is not automatically multiplicity of external existential acts.
+- **shakhṣ / tashakhkhuṣ (شخص / تشخص)**: an actual individual cannot be numerically universal, but a mental individual act may be intentionally about many particular subjects.
+
+The source reports Quṭb's historical teachers/pupils in its introduction, but a philosophical genealogy needs independent demonstration of direct uptake. Next compare passage-by-passage with Taftāzānī Maqāṣid I105 and Isfahānī Tasdīd I406–407.
