@@ -4,6 +4,7 @@
   "app.js",
   "backup-transfer.css",
   "backup-transfer.js",
+  "book-atmosphere.css",
   "bookmark-ui.js",
   "core.js",
   "daruri-controls.css",
@@ -110,9 +111,8 @@
   "reading-navigation-history.js",
   "style.css",
   "sw.js",
-  "ui-assets/gnamma-landscape.webp",
-  "book-atmosphere.css",
   "ui-assets/aegean-depths.png",
   "ui-assets/first-light.png",
+  "ui-assets/gnamma-landscape.webp",
   "ui-assets/night-sea.png"
 ]
