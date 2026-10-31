@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-31-post-asfar-dossiers",
+  "version": "2026-11-01-distinctive-late-primary-evidence",
   "status": "Research-grade change questions, not an exhaustive historically established edition",
   "priority": "After Ṣadrā's Asfār (17th c onward), with post-Tajrīd background (13th c onward). Some later Safavid works are contemporary, not necessarily chronologically later than every Asfār passage.",
   "sourceMethod": "No conjectural Arabic or Persian quotation: direct record ids link to existing working editions; original witnesses must be checked for full-context translations.",
@@ -302,9 +302,30 @@
       "id": "08-motion",
       "title": "Substantial motion and its later critics remain undercollated",
       "phase": "Ṣadrā → post-Ṣadrian Persia/Qajar",
-      "thesis": "Ṣadrā's substantial motion redefines continuity in existence; later critics must be assessed through complete objection-and-reply units, not by calling any physical change 'substantial motion'.",
+      "thesis": "A nineteenth-century printed Sabzavārī section explicitly presents the Avicennian dilemma of a persistent subject in substantial change and a later response treating the existence of substance as flowing. The print includes modern Ḥasanzāda notes; direct authorial attribution at each line remains unresolved.",
       "before": "Classical Avicennian alteration, elemental generation and hylomorphic persistence.",
       "sources": [
+        {
+          "recordId": "sabz-motion",
+          "section": 2,
+          "relation": "nineteenth-century authorial poetic statement",
+          "locator": "Sabzavārī Sharḥ al-Manẓūma vol. IV, ghurar 111, p.301",
+          "claim": "Source poses the subject/persistence problem through a flowing form and material substrate."
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 4,
+          "relation": "later printing quotes Avicenna's exact objection",
+          "locator": "vol. IV p.302, reporting Physics II.3",
+          "claim": "Either species remains and only accidents change, or gradual change produces successive substances."
+        },
+        {
+          "recordId": "sabz-motion",
+          "section": 5,
+          "relation": "printed later reply with modern-gloss contamination marked",
+          "locator": "vol. IV pp.302 and 305; pp.303–304 uncollated",
+          "claim": "Later flowing-substance solution and form-as-such argument; (ح.ح) denotes Ḥasanzāda's modern notes."
+        },
         {
           "recordId": "ch03",
           "section": 2,
@@ -328,10 +349,10 @@
         }
       ],
       "change": "This is a **research question**, not a verified lineage of all critics. Further post-Asfār source acquisition is needed.",
-      "unique": "Jilwa/Sabzawārī/Zunūzī original texts would make this distinct; not yet translated here.",
+      "unique": "Exact post-Asfār ghurar 111 with the quoted Physics II.3 objection and later response, not merely Tajrīd's categories of substance and motion.",
       "tajrid": "Tajrīd is background only; do not retranslate the old matn to substitute for Qajar objections.",
-      "gap": "Direct Arabic/Persian of Jilwa, Āqā ʿAlī Zunūzī, Sabzawārī and Khwānsārī on substantial motion; independently collate Ṣadrā's Asfār sections.",
-      "status": "analytical-only-gap"
+      "gap": "Printed pp.303–304 were not independently inspected, the original poetic text requires metrical correction, and Ḥasanzāda's twentieth-century notes must be separated from Sabzavārī before declaring this a complete primary edition.",
+      "status": "layered-post-asfar-source-incomplete-middle"
     },
     {
       "id": "09-ottoman",
@@ -399,9 +420,23 @@
       "id": "12-later-knowledge",
       "title": "From mental representation to knowledge as a mode of being",
       "phase": "Ṣadrian synthesis and later reception",
-      "thesis": "The Sadrian claim that knowing is a mode of existence revises accounts of mental existence, abstraction and intentional relationship; later acceptance/resistance is not yet adequately traced.",
+      "thesis": "Narāqī's Jāmiʿ al-afkār develops a distinct case for presential knowledge: the subject's immediate apprehension of itself and its own faculties does not require another universal image. This lies within a longer proof of God's knowledge rather than being a duplicate of the Tajrīd mental-existence lemma.",
       "before": "Taftāzānī–Jurjānī's mental-existence objections, the separate epistemic functions of the Active Intellect, and Avicenna's Shifāʾ.",
       "sources": [
+        {
+          "recordId": "nara-presence",
+          "section": 2,
+          "relation": "direct eighteenth-century author; objections and replies",
+          "locator": "Narāqī Jāmiʿ al-afkār II:25–27, first inquiry on divine knowledge, third proof",
+          "claim": "A stronger material imagination is challenged as sufficient for universals; direct self-awareness motivates knowledge by presence."
+        },
+        {
+          "recordId": "nara-presence",
+          "section": 3,
+          "relation": "argument voice and opponent map",
+          "locator": "II:25–27 objection-and-reply table",
+          "claim": "The self, representational form, pain and its own bodily faculties play distinct epistemic roles."
+        },
         {
           "recordId": "nara-second",
           "section": 1,
@@ -418,10 +453,10 @@
         }
       ],
       "change": "A distinct problem requiring reception history, not a retroactive claim that every thinker moved from mental form to presential cognition.",
-      "unique": "The direct later issue concerns how post-Ṣadrian commentators incorporate or reject epistemology; older Tajrīd readings are linked only.",
+      "unique": "Contiguous three-page late original discussion with two actual objections/replies, regress and pain/faculty examples, within Narāqī's first divine-knowledge inquiry.",
       "tajrid": "Tajrīd owns the inherited Taftāzānī/Jurjānī primary collation; no need to re-extract it here.",
-      "gap": "Collate Asfār ʿilm sections, Fayḍ, Qājār responses, and the original Narāqī commentary in full.",
-      "status": "research-gap-with-anchors"
+      "gap": "The same historical proof continues beyond p.27 and reaches a second preliminary through Bahmanyār. Do not claim completed divine-knowledge proof or full comparison with Ṣadrā's Asfār until those witnesses are collated.",
+      "status": "partial-direct-eighteenth-century-knowledge-argument"
     }
   ]
 }
