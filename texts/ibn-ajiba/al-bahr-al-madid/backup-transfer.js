@@ -10,7 +10,8 @@ const PROGRESS_KEY='gnamma-bahr-vol1-backup-progress-v1';
 const DRIVE_SCOPE='https://www.googleapis.com/auth/drive.file';
 const DRIVE_FOLDER='Gnamma Backups';
 const ALLOWED_PREFS={
- appearance:['system','light','dark'],palette:['almohad','cordoba','nasrid','zellij','gnamma','gnamma-air'],
+ appearance:['system','light','dark'],palette:['almohad','cordoba','nasrid','zellij','gnamma','gnamma-air','tetouan','horizon','manuscript','indigo'],
+ homeScene:['first-light','night-sea','aegean'],
  arabicFont:['amiri','scheherazade','noto'],englishFont:['original','source-serif','literata'],
  pageStyle:['quiet','book','structured'],parallelSide:['left','right'],stackedOrder:['top','bottom'],
  marks:['source','unvowelled']
@@ -40,7 +41,7 @@ function snapshotAppearance(){return validAppearance(window.BahrReader.prefs);}
 function validAppearance(value){
  const result={};if(!value||typeof value!=='object')return result;
  for(const [key,options] of Object.entries(ALLOWED_PREFS))if(options.includes(value[key]))result[key]=value[key];
- for(const key of ['ar','en','showNotes','showTerms','showConcepts'])if(typeof value[key]==='boolean')result[key]=value[key];
+ for(const key of ['ar','en','showNotes','showTerms','showConcepts','showPersonalMarks'])if(typeof value[key]==='boolean')result[key]=value[key];
  if(result.ar===false&&result.en===false)result.en=true;
  const size=Number(value.fontScale);if(Number.isFinite(size)&&size>=.8&&size<=1.5)result.fontScale=size;
  return result;
