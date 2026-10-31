@@ -151,3 +151,23 @@ SP-17: I+U — prior exemplary realm/Divine knowledge cannot be pronounced prove
 3. Start 10_DOSSIER_BANNANI.md after reading scanned I102; establish the two khārij and iʿtibārī senses.
 4. Extend the historical lexicon and link original citations to claim audit. Don't introduce Latin equivalents before the Arabic internal critical synthesis.
 5. Preserve THIS HANDOFF at every milestone and maintain the claim statuses; do not delete unresolved concerns in later summaries.
+
+
+---
+
+## STAGE CHECKPOINT — 31 October 2026, Stage 2.2: new upstream Arabic source on mental form and universals
+
+A new extended dossier was created: **08_DOSSIER_QUTB_RAZI_UNIVERSALS.md**, analyzing a sustained five-qāʿida Arabic argument by **Quṭb al-Dīn al-Rāzī al-Taḥtānī**, *Risāla fī Taḥqīq al-Kulliyyāt*, edited online 14 December 2020 with five manuscript witnesses identified (and marked textual variants), https://atharah.net/mission-in-achieving-totalities/ .
+
+This is directly pertinent to the user's insistence on the exact meanings of terms **prior** to translating them into English and to tracing the arguments historically.
+
+**Source findings:**
+1. Quṭb explicitly says *ṣūra* is used for (i) an actual individual *kayfiyya* in intellect, which serves as a cognitive instrument, and (ii) **al-maʿlūm**, the object made intelligible through this form. This divides an actual cognitive subject's mental state from its represented content within the Arabic tradition itself; it cannot simply be relabelled as modern subjectivity or later AT intentionality without further comparative proof.
+2. He records three disputed analyses of genus–difference composition: two kinds of extramental composition and one in which the species is externally one but composed in intellect. He argues for the last as his own conclusion. The central issue is ontological separability versus actual parts of a predicable, not a denial of all material substantial principles.
+3. He differentiates actual numerically particular mental cognitive forms from intellectual universality of what those forms represent. Hence *particular* may apply to the psychic act itself; *in mind* cannot imply *not particular*.
+4. In his argument, specific difference removes the conceptual indeterminacy of genus. This is not automatically the efficient causation of an externally actual material substance.
+5. The published editor records significant manuscript variants (e.g. external vs sensible distinctions) and notes the author's varied presentations in his different logical works; therefore one cannot attribute a single view to an author without date, genre and argument.
+
+**Implications:** Historical lexicon entries *ṣūra, kayfiyya, maʿlūm, dhihn, shakhsī, kullī, khārij, jins, faṣl, iʿtibār* now require Quṭb's text as a primary sense witness. The internal Spiker audit SP-03/04 on genus–difference and SP-13/14 on mental cognition can now be examined against one further independent earlier author. The Quṭb text does NOT yet establish that al-Taftāzānī, Mubārakshāh, al-Jurjānī or Spiker all adopted its conclusions.
+
+**Still pending:** Cross-collate print sources and exact Spiker references in Hikmat al-ʿAyn, Tasdīd and Bannānī. The final AT comparison remains withheld; preserve these distinctions and do not confuse the psychic mental form and its object.
