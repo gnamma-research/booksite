@@ -171,3 +171,51 @@ Only once the above are stable proceed to Spiker's points about the army, bed, *
 For every stage, retain all eight sections, append (1) newly sourced texts, (2) original Arabic and argued translations, (3) cross-edition page maps, (4) lexical changes, (5) claim-to-source verification outcomes, (6) explicit doubts and retractions, (7) source status and work actually completed, and (8) unresolved next tasks. Never mark an Arabic paragraph as verified solely because an inherited translation or unproofed OCR contains it. Mark a statement as **matn / sharḥ / ḥāshiya / modern inference**.
 
 **End Stage 1 master. Next active task: complete JAW-001-A, the extended Taftāzānī locus, followed by Avicenna and al-Ḥillī control.**
+
+
+---
+
+# Stage 2 · Sharḥ al-Maqāṣid I.173–180 — argumentative continuation
+
+**Status (2026-11-01):** Eight sequential printed-page entries of the Arabic searchable edition located, and their connected argument reviewed. Original facsimile/page-image witness not yet compared in this stage; thus this is **source-context reading, not final critical text**. The edition is not the same page map as the other two/three volume edition. This source reading is appended cumulatively; Stage 1 inventory and caveats remain unchanged.
+
+## Dossier JAW-001-A: argumentative map of the full opening context
+| Locus | Argumentative act | Key result and voice distinction |
+|---|---|---|
+| I.173 | Immediately preceding discussion of final causality and disagreement about efficient causation; opens the *maqṣad fī al-aʿrāḍ* | The earlier treatment of an artisan, intention, and final causes is not an unrelated flourish: it controls the later example of a bed. Philosophers' efficient cause versus kalām customary succession is *reported* and contextualized, not one shared ontology. |
+| I.173–174 | Reports theologians' division of originated beings into spatial jawhar and accidents | **Mutaḥayyiz bi-dhātihi** is the operative criterion in the reported theological scheme. Immaterial created jawhar is excluded as unproven; the purported philosophical impossibility proof is explicitly criticized as weak. Do not turn lack of proof into logical impossibility. |
+| I.174 | Reports philosophers' contrast between Necessary and possible; possible jawhar vs accident | `mawḍūʿ` means preconstituted supporting subject, not every `maḥall`; a substantial ṣūra can require matter while being independent of an *already constituted* subject of accidental inherence. |
+| I.174 | Distinguishes inherence from location | The existence of an accident *in itself* is identical in a relevant respect with its existence in its receptive subject. A body in a place can change place while remaining the same existent. This is not a spatial definition of inherence. |
+| I.174–175 | Lists nine accident categories; appraises attempts to demonstrate exhaustiveness | The tenfold doctrine is explained by `istiqrāʾ` (induction). The proposed divisions have gaps; exactly ten and genus-status of each are **not demonstrated** by a neat table. |
+| I.175 | Discusses status of substance as genus and the *in/not in a subject* characterization | The familiar formula is characterized as `rasm bi-l-lāzim`—a description through a necessary consequence, not a complete essential `ḥadd`. The formula must be interpreted conditionally for possible quiddities not presently actual. |
+| I.176 | Challenges exhaustiveness through unity, point, necessity, possibility, motion, relational categories | Some universals and categorical relations are not `aʿyān khārijiyya`; this does **not** automatically identify them with private fiction. The author is asking whether an enumerated genus captures a *quiddity* or a rational consideration. |
+| I.176–177 | Can one accident inhere numerically in two separate subjects? | Reports proximity, adjacency, brothers as examples alleged to involve one relational accident jointly inhering in two; a rebuttal distinguishes numerically diverse individual relations in the two extreme subjects. Different schools/arguments must be distinguished. |
+| I.177 | Abū Hāshim's `taʾlīf` (composition/linking) as accident of two jawāhir | Why should a link between two atoms not inhere in more than two? Does removal of one constituent destroy the link of the remainder? Objections and replies consider re-created linking determinations. This is directly relevant to whether relations 'are' real accidents; the source does NOT uniformly deny such candidates. |
+| I.178 | Can an accident be transferred from one subject to another? | Reviews arguments from the dependence of an accident's numerically individual identity on its subject. Multiple grounds are objected to; not all listed proofs are endorsed. |
+| I.179–180 | Inherence through intermediary accidents; unity/being as not ordinarily accidents; persistence of accidents across two instants | Differentiates direct vs mediate support; reviews weaker and stronger arguments for universal impermanence of accidents. `ʿaraḍ` in Arabic etymology (transience) must be distinguished from its categorial meaning (dependent inherence). |
+
+**Direct online witness:** https://ablibrary.net/book_content/b/7740/173?lang=ar and pages https://almntqim.com/… (edition I printed 174–180). Example pages:
+- https://almntqim.com/%D9%A4%D9%A5%D9%A0%D9%A1_%D8%B4%D8%B1%D8%AD-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B5%D8%AF-%D9%81%D9%8A-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D9%81%D8%AA%D8%A7%D8%B2%D8%A7%D9%86%D9%8A-%D8%AC-%D9%A1/%D9%A1%D9%A7%D9%A7_%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9
+- https://almntqim.com/%D9%A4%D9%A5%D9%A0%D9%A1_%D8%B4%D8%B1%D8%AD-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B5%D8%AF-%D9%81%D9%8A-%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D9%81%D8%AA%D8%A7%D8%B2%D8%A7%D9%86%D9%8A-%D8%AC_%D9%A1/%D9%A1%D9%A7%D9%A8_%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9 (verify URL if referring; alternatively find via publisher's text search).
+
+## New internal findings (no AT comparison yet)
+**JAW001-H, status B:** A discourse on relation and composition *within* kalām itself cannot be reduced to 'relations do not exist outside mind'. Some views explicitly analyze relational accidents as belonging to two relata; alternative objections offer numerically different relations in different subjects. What is disputed is the ontology and individuation of the relational determination itself, not whether real terms can be compared.
+
+**JAW001-I, status B:** The disagreement on `taʾlīf` as an accident of two atoms is a direct antecedent for asking whether a collective configuration has an ontological bearer. The cases of the bed and army need these preceding arguments, and not just a contrast between `tarkīb ḥaqīqī` and `iʿtibārī`.
+
+**JAW001-J, status B:** al-Taftāzānī distinguishes the logical/linguistic association of transience with `ʿaraḍ` from its technical dependence upon a subject; a proof from etymology cannot independently establish that all accidents cease every instant.
+
+**JAW001-K, status B:** The identity of an accident can be **mediate through another accident**, not only by immediate attachment to a jawhar. This will require tracking `qiyām`, `ḥulūl`, `maḥall awwal`, `mawḍūʿ` and `tashakhkhuṣ` before comparing with AT mode/inherence.
+
+## Source and verification constraints carried over
+This is the Arabic **searchable edition** collation, not a complete manuscript-based transcription. Only short quoted lemmata and detailed paraphrase have been established. To mark the dossier complete, locate the modern printed facsimile in the Library ZIP or approved external scan; compare every lemma and any editorial variants; transcribe/translate the entire original passage without omitting its objections, replies, and transitions. Page 178–180 contain incomplete proofs at leaf breaks; extend the extraction until their arguments close. Record whether a reported view is argued for, rejected, or left undecided.
+
+## Next stage target: cross-author checking
+Follow I.173–180 with:
+1. Ibn Sīnā *Maqūlāt* pp.93–97 and *Ilāhiyyāt* II.1 on secondary/intelligible substance, and *Nafs* §§1–3 on perfection vs jawhar.
+2. Rāzī *Mabāḥith* I.137 onward on individuation of accidents and technical inherence.
+3. Ṭūsī §§253–258 + al-Ḥillī pp.214–219 on category, locus, subject, second intelligibles.
+4. *Sharḥ al-Maqāṣid* III.5–12 on the five-fold philosophical jawhar and the polemic concerning corporeal form; then recheck I.102–106 for composite quiddities.
+5. Revisit earlier Spiker paraphrases and references only AFTER Arabic contexts are established.
+
+**End Stage 2. All Stage 1 records remain valid unless expressly corrected above.**
