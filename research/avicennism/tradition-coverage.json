@@ -1,0 +1,443 @@
+{
+  "version": "2026-11-01-post-asfar-source-coverage",
+  "claim": "This is a historical coverage map and acquisition plan, NOT an exhaustive edition.",
+  "families": [
+    {
+      "id": "earliest",
+      "title": "Avicenna and earliest appropriations",
+      "period": "eleventh–twelfth centuries",
+      "languages": "Arabic / Persian",
+      "works": [
+        "Ibn Sīnā — al-Shifāʾ: Ilāhiyyāt, Ṭabīʿiyyāt, Nafs",
+        "al-Ishārāt wa-l-tanbīhāt",
+        "Bahmanyār — al-Taḥṣīl",
+        "Abū al-Barakāt al-Baghdādī — al-Kitāb al-Muʿtabar",
+        "al-Ghazālī — Maqāṣid al-falāsifa / Tahāfut al-falāsifa"
+      ],
+      "task": "Reconstruct which claims were transmitted as mathematical/natural science, metaphysics, psychology and logic before later school labels.",
+      "status": "partial-primary",
+      "recordIds": [
+        "av-vi1",
+        "av-vi2",
+        "av-ix5"
+      ],
+      "referenceIds": [
+        "wisnovsky",
+        "sepmet"
+      ]
+    },
+    {
+      "id": "razy",
+      "title": "Rāzian critical transformation",
+      "period": "twelfth–thirteenth centuries",
+      "languages": "Arabic",
+      "works": [
+        "Fakhr al-Dīn al-Rāzī — al-Mabāḥith al-mashriqiyya",
+        "al-Muḥaṣṣal",
+        "Sharḥ al-Ishārāt",
+        "al-Maṭālib al-ʿāliya",
+        "al-Rāzī's interlocutors, including Abū al-Barakāt"
+      ],
+      "task": "Recover each Rāzian objection in its own chapter and follow the particular response, not just its later scholastic citation.",
+      "status": "untranslated-original",
+      "recordIds": [],
+      "referenceIds": [
+        "wisnovsky",
+        "sepmet"
+      ]
+    },
+    {
+      "id": "abha",
+      "title": "Abharī, Khūnajī, Urmawī and Kātibī",
+      "period": "thirteenth century",
+      "languages": "Arabic",
+      "works": [
+        "Athīr al-Dīn al-Abharī — Hidāyat al-ḥikma, Kashf al-ḥaqāʾiq",
+        "Afḍal al-Dīn al-Khūnajī — Kashf al-asrār, al-Jumal",
+        "Sirāj al-Dīn al-Urmawī — Maṭāliʿ al-anwār",
+        "Najm al-Dīn al-Kātibī — Ḥikmat al-ʿayn, al-Shamsiyya"
+      ],
+      "task": "Distinguish revised modal logic and subject matter of logic from the related, but distinct, natural-philosophy treatises.",
+      "status": "no-direct-primary",
+      "recordIds": [],
+      "referenceIds": [
+        "elrou",
+        "street"
+      ]
+    },
+    {
+      "id": "isharat",
+      "title": "The Ishārāt commentary-and-adjudication cycle",
+      "period": "thirteenth–fifteenth centuries",
+      "languages": "Arabic",
+      "works": [
+        "Ibn Sīnā — al-Ishārāt",
+        "Fakhr al-Dīn al-Rāzī — Sharḥ al-Ishārāt",
+        "Naṣīr al-Dīn al-Ṭūsī — Ḥall mushkilāt al-Ishārāt",
+        "Quṭb al-Dīn al-Rāzī al-Taḥtānī — al-Muḥākamāt",
+        "Later glosses on those works"
+      ],
+      "task": "Translate the common Avicennian lemma plus Rāzī's objection, Ṭūsī's answer and Quṭb's adjudication as one documented debate.",
+      "status": "no-independent-collation",
+      "recordIds": [],
+      "referenceIds": [
+        "wisnovsky",
+        "elrou"
+      ]
+    },
+    {
+      "id": "tajrid",
+      "title": "The Tajrīd, Kashf and Sharḥ commentary trees",
+      "period": "thirteenth–eighteenth centuries",
+      "languages": "Arabic / Persian",
+      "works": [
+        "Ṭūsī — Tajrīd al-iʿtiqād",
+        "al-ʿAllāma al-Ḥillī — Kashf al-murād",
+        "al-Iṣfahānī — Sharḥ al-Tajrīd",
+        "ʿAlī Qūshjī — al-Sharḥ al-jadīd",
+        "Dawwānī, Dashtakī, al-Khafrī, Lāhījī and later superglosses"
+      ],
+      "task": "Always anchor each commentary to the identical matn sentence and distinguish opposite disputants and reported testimony.",
+      "status": "selective-later",
+      "recordIds": [
+        "lah-shaw",
+        "astar-choice"
+      ],
+      "referenceIds": [
+        "balik",
+        "wisnovsky"
+      ]
+    },
+    {
+      "id": "kalam",
+      "title": "Post-Rāzian philosophical kalām",
+      "period": "fourteenth–seventeenth centuries",
+      "languages": "Arabic",
+      "works": [
+        "al-Ījī — al-Mawāqif",
+        "al-Jurjānī — Sharḥ al-Mawāqif",
+        "al-Taftāzānī — Sharḥ al-Maqāṣid",
+        "Siyālkūtī, Ḥasan Çelebi, Ḥalabī and other gloss layers"
+      ],
+      "task": "Separate matn, sharḥ, gloss and cited objection; identify the epistemic thesis actually being disputed.",
+      "status": "selective-primary",
+      "recordIds": [
+        "taft-mental",
+        "jurj-mental"
+      ],
+      "referenceIds": [
+        "wisnovsky",
+        "balik"
+      ]
+    },
+    {
+      "id": "logic",
+      "title": "Shamsiyya, second intentions and disputation",
+      "period": "thirteenth–nineteenth centuries",
+      "languages": "Arabic / Persian / Turkish",
+      "works": [
+        "Kātibī — al-Shamsiyya",
+        "Quṭb al-Dīn al-Rāzī — Taḥrīr al-qawāʿid",
+        "Shams al-Dīn al-Samarqandī — works on logic and ādāb al-baḥth",
+        "Taftāzānī — Tahdhīb al-manṭiq",
+        "Indian, Ottoman and North African supercommentaries"
+      ],
+      "task": "Treat logical arguments and philosophy of language as primary parts of late Avicennism, not metaphysical appendices.",
+      "status": "topic-only",
+      "recordIds": [
+        "nara-second"
+      ],
+      "referenceIds": [
+        "street",
+        "elrou"
+      ]
+    },
+    {
+      "id": "ishraqi",
+      "title": "Illuminationist revisions and responses",
+      "period": "twelfth–sixteenth centuries",
+      "languages": "Arabic / Persian",
+      "works": [
+        "Shihāb al-Dīn al-Suhrawardī — Ḥikmat al-ishrāq",
+        "Shams al-Dīn al-Shahrazūrī — commentaries",
+        "Ibn Kammūna — commentaries and al-Jadīd fī l-ḥikma",
+        "Quṭb al-Dīn al-Shīrāzī — Sharḥ Ḥikmat al-ishrāq"
+      ],
+      "task": "Compare logical, ontological and epistemic revisions with their precise Avicennian target.",
+      "status": "no-primary-unit",
+      "recordIds": [],
+      "referenceIds": [
+        "suh",
+        "wisnovsky"
+      ]
+    },
+    {
+      "id": "akbari",
+      "title": "Akbarian philosophical and theological encounters",
+      "period": "thirteenth–nineteenth centuries",
+      "languages": "Arabic / Persian",
+      "works": [
+        "Ibn ʿArabī — al-Futūḥāt, Fuṣūṣ",
+        "Ṣadr al-Dīn al-Qūnawī — philosophical works",
+        "Dāwūd al-Qayṣarī — Sharḥ al-Fuṣūṣ",
+        "Mullā Fanārī — Miṣbāḥ al-uns",
+        "Jāmī and later Akbarian interpretive works"
+      ],
+      "task": "Trace explicit borrowings and disagreements on wujūd, causality and divine knowledge; do not equate every use of tajallī with numerical monism.",
+      "status": "no-primary-unit",
+      "recordIds": [],
+      "referenceIds": [
+        "wisnovsky",
+        "ziai"
+      ]
+    },
+    {
+      "id": "shiraz",
+      "title": "Late Timurid and Shiraz disputations",
+      "period": "fifteenth–seventeenth centuries",
+      "languages": "Arabic / Persian",
+      "works": [
+        "Jalāl al-Dīn al-Dawwānī — post-Tajrīd works",
+        "Ṣadr al-Dīn al-Dashtakī — counterglosses",
+        "Ghiyāth al-Dīn Manṣūr al-Dashtakī — philosophical works",
+        "Shams al-Dīn al-Khafrī — glosses",
+        "Other late Shirazi interlocutors"
+      ],
+      "task": "Separate the Dawwānī–Dashtakī exchange from al-Sayyid al-Sanad (generally Jurjānī).",
+      "status": "reported-only",
+      "recordIds": [
+        "astar-choice"
+      ],
+      "referenceIds": [
+        "iranica",
+        "ziai"
+      ]
+    },
+    {
+      "id": "isfahan",
+      "title": "Safavid Isfahan and competing Avicennisms",
+      "period": "sixteenth–eighteenth centuries",
+      "languages": "Persian / Arabic",
+      "works": [
+        "Mīr Dāmād — al-Qabasāt",
+        "Mīr Fendereskī — philosophical works",
+        "Mullā Ṣadrā — al-Asfār and Shifāʾ glosses",
+        "Mullā Muḥsin Fayḍ and Rajab ʿAlī Tabrīzī",
+        "Lāhījī, Khwānsārī and Sabzawārī correspondence and glosses"
+      ],
+      "task": "Distinguish Ṣadrian new metaphysics from the independent Peripatetic and kalām responses of his contemporaries. The later Narāqī/Sabzavārī reception of Ṣadrian issues is crosslinked separately from this Safavid stream, not reclassified as Safavid contemporaries.",
+      "status": "partial-primary",
+      "recordIds": [
+        "lah-eman",
+        "lah-active",
+        "lah-temporal",
+        "lah-divine",
+        "lah-sarmaya",
+        "lah-shaw"
+      ],
+      "referenceIds": [
+        "iranica",
+        "ziai"
+      ]
+    },
+    {
+      "id": "persianlate",
+      "title": "Late Persian, Qajar and Tehran school",
+      "period": "eighteenth–early twentieth centuries",
+      "languages": "Persian / Arabic",
+      "works": [
+        "Muḥammad Mahdī al-Narāqī — Jāmiʿ al-afkār, Lamaʿāt",
+        "Mullā ʿAlī Nūrī and Mullā Hādī Sabzawārī",
+        "Āqā ʿAlī Zunūzī / Mudarris Ṭihrānī",
+        "Mīrzā Abū al-Ḥasan Jilwa",
+        "Qumshaʾī and late teaching lineages"
+      ],
+      "task": "Recover direct texts on substantial motion, particular existence, soul and physics, instead of assigning group-level doctrines. Direct Narāqī *Jāmiʿ al-afkār* II:25–27 and Sabzavārī *Sharḥ al-Manẓūma* IV:301–302, 305 are now bounded working dossiers, NOT complete surrounding proofs.",
+      "status": "partial-primary-new-source-loci",
+      "recordIds": [
+        "nara-actual",
+        "nara-second",
+        "nara-presence",
+        "sabz-motion"
+      ],
+      "referenceIds": [
+        "iranica",
+        "ziai"
+      ]
+    },
+    {
+      "id": "ottoman",
+      "title": "Ottoman and Kurdish-province Hidāya chain",
+      "period": "fifteenth–nineteenth centuries",
+      "languages": "Arabic / Ottoman Turkish",
+      "works": [
+        "Abharī — Hidāyat al-ḥikma",
+        "Qāḍī Mīr Maybudī — Sharḥ al-Hidāya",
+        "Muṣliḥ al-Dīn Lārī — ḥāshiya",
+        "Ottoman supergloss traditions",
+        "Meḥmed Akkirmānī — İklīlü’t-terācim"
+      ],
+      "task": "Work through one full Hidāya lemma, Maybudī's commentary, Lārī's gloss, later reply and Turkish translation before claiming the doctrine settled.",
+      "status": "no-primary-unit",
+      "recordIds": [],
+      "referenceIds": [
+        "turkoz",
+        "balik"
+      ]
+    },
+    {
+      "id": "southasia",
+      "title": "South Asian Shifāʾ, Mawāqif and Dars-e-Niẓāmī",
+      "period": "sixteenth–twentieth centuries",
+      "languages": "Arabic / Persian / Urdu",
+      "works": [
+        "Mīr Zāhid al-Harawī — glosses",
+        "Qāḍī Mubārak Shāh and further ḥawāshī",
+        "Muḥammad ʿAbd al-Ḥaqq al-Khayrābādī",
+        "Faḍl-i Ḥaqq al-Khayrābādī — al-Hadiyya al-saʿīdiyya",
+        "Safavid Shifāʾ commentary manuscripts preserved in India"
+      ],
+      "task": "Differentiate historical authors and manuscript copy/transmission from original composition; do not confuse Faḍl-i Ḥaqq and Muḥammad ʿAbd al-Ḥaqq.",
+      "status": "mediated-selective",
+      "recordIds": [
+        "taha-jal",
+        "khay-fire",
+        "astar-choice"
+      ],
+      "referenceIds": [
+        "panzeca",
+        "khal"
+      ]
+    },
+    {
+      "id": "maghrib",
+      "title": "Western Islamic logic and Khūnajī's Jumal",
+      "period": "fourteenth–seventeenth centuries",
+      "languages": "Arabic",
+      "works": [
+        "Khūnajī — al-Jumal",
+        "Maghribi commentators on al-Jumal",
+        "Ibn Wāṣil / Urmawī lines received westward",
+        "Distinctive local logical handbooks"
+      ],
+      "task": "The western logic tradition was broadly post-Avicennian but not a mere copy of eastern al-Shamsiyya teaching.",
+      "status": "no-primary-unit",
+      "recordIds": [],
+      "referenceIds": [
+        "logicwest"
+      ]
+    },
+    {
+      "id": "modern",
+      "title": "Modern editorial and teaching continuations",
+      "period": "nineteenth–twenty-first centuries",
+      "languages": "Arabic / Persian / Urdu / English",
+      "works": [
+        "Persian explanatory commentary on the Ishārāt",
+        "Modern Ṣadrian and anti-Ṣadrian teaching",
+        "Critical editions of medieval and early modern scholastic works",
+        "Modern philosophical reconstruction and reception studies"
+      ],
+      "task": "Place contemporary scholarship apart from historical authorial witnesses; distinguish modern pedagogy from new primary doctrinal positions.",
+      "status": "bibliographical",
+      "recordIds": [],
+      "referenceIds": [
+        "ziai",
+        "wisnovsky"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "wisnovsky",
+      "title": "Robert Wisnovsky, Avicenna and the Avicennian Tradition (2006)",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-companion-to-arabic-philosophy/avicenna-and-the-avicennian-tradition/9EF914D6FBF7C8EF3E121B068FAEB00C",
+      "use": "Framing fusion of falsafa and kalām rather than a bounded sect"
+    },
+    {
+      "id": "sepmet",
+      "title": "SEP, Arabic and Islamic Metaphysics, post-Avicennian period",
+      "url": "https://plato.stanford.edu/entries/arabic-islamic-metaphysics/",
+      "use": "Differentiates continuation, revision and rejection"
+    },
+    {
+      "id": "elrou",
+      "title": "Khaled El-Rouayheb, Post-Avicennian Logicians on Subject Matter of Logic (2012)",
+      "url": "https://www.cambridge.org/core/journals/arabic-sciences-and-philosophy/article/abs/postavicennan-logicians-on-the-subject-matter-of-logic-some-thirteenth-and-fourteenthcentury-discussions/FDCA8E8F38780688E983B7CDF631E675",
+      "use": "Khūnajī/Kātibī versus Ṭūsī/Samarqandī/Quṭb al-Dīn al-Rāzī"
+    },
+    {
+      "id": "street",
+      "title": "Tony Street, Kātibī, Taḥtānī, and the Shamsiyya (2016)",
+      "url": "https://academic.oup.com/edited-volume/38657/chapter-abstract/335768982",
+      "use": "Thirteenth-fourteenth-century logical corpus and Qutb al-Din commentarial uptake"
+    },
+    {
+      "id": "turkoz",
+      "title": "Cem Türköz, The Making of an Ottoman Tradition of Natural Philosophy (2026)",
+      "url": "https://dash.harvard.edu/handle/1/42740341",
+      "use": "Ottoman Hidāyat al-ḥikma–Maybudī–Lārī–Akkirmānī axis"
+    },
+    {
+      "id": "panzeca",
+      "title": "Ivana Panzeca, Commentaries of Ibn Sīnā’s Shifāʾ Preserved in India (2023)",
+      "url": "https://iris.unipa.it/handle/10447/666061",
+      "use": "Indian manuscript preservation and independent source streams"
+    },
+    {
+      "id": "balik",
+      "title": "Efe Murat Balıkçıoğlu, Verifying the Truth on Their Own Terms (2022)",
+      "url": "https://edizionicafoscari.unive.it/media/pdf/books/978-88-6969-644-2/978-88-6969-644-2-ch-04_r4MkLs2.pdf",
+      "use": "Ottoman Madāris via Hidāya, Tajrīd and Mawāqif"
+    },
+    {
+      "id": "iranica",
+      "title": "Encyclopaedia Iranica, School of Isfahan",
+      "url": "https://www.iranicaonline.org/articles/isfahan-school-of-philosophy/",
+      "use": "Historically contested labels for Shiraz/Isfahan/Tehran"
+    },
+    {
+      "id": "suh",
+      "title": "SEP Suhrawardī, later Illuminationist commentary",
+      "url": "https://plato.stanford.edu/entries/suhrawardi/",
+      "use": "Ibn Kammūna versus Shahrazūrī commentarial receptions"
+    },
+    {
+      "id": "khal",
+      "title": "Oxford Handbook, Faḍl-i Ḥaqq Khayrābādī's al-Hadiyya",
+      "url": "https://academic.oup.com/edited-volume/38657/chapter-abstract/335770784",
+      "use": "Independent South Asian natural philosophy, motion, time, atomism"
+    },
+    {
+      "id": "logicwest",
+      "title": "Khaled El-Rouayheb, The Development of Arabic Logic (1200–1800), Western tradition",
+      "url": "https://www.schwabeonline.ch/schwabe-xaveropp/elibrary/start.xav?start=%2F%2F%2A%5B%40attr_id%3D%27pdf.978-3-7965-3937-4.9783796539374_V._1350_1600_The_Western_Islamic_Tradition%27+and+%40outline_id%3D%27pdf.978-3-7965-3937-4.9783796539374_V._1350_1600_The_Western_Islamic_Tradition%27%5D",
+      "use": "Maghribi Khūnajī/Jumal branch versus eastern Shamsiyya tradition"
+    },
+    {
+      "id": "ziai",
+      "title": "Hossein Ziai, Recent Trends in Arabic and Persian Philosophy (2006)",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-companion-to-arabic-philosophy/recent-trends-in-arabic-and-persian-philosophy/E7FEB006A924BE4E4BD416A1D63AE46C",
+      "use": "Shiraz, Isfahan and later Persian philosophical currents"
+    }
+  ],
+  "requirements": [
+    "Historical family -> base work -> work division -> chapter/masʾala -> identical lemma -> objections/replies",
+    "Direct witness or later author's report labelled without substitution",
+    "Original-language translation from enough consecutive context, not keyword snippets",
+    "Variant collation and edition page/folio independently checked",
+    "Reader comparison justified explicitly, with connection and difference",
+    "Unsupported families displayed as unedited, not absent from history"
+  ],
+  "statusLegend": {
+    "partial-primary": "Bounded material present but no complete family corpus",
+    "no-primary-unit": "No directly translated primary unit in current corpus",
+    "untranslated-original": "Named original texts not independently translated",
+    "topic-only": "Some related concepts present but not adequate primary coverage",
+    "mediated-selective": "Quoted/partial/secondary evidence, original sources lacking",
+    "reported-only": "Mediated transmission, independent witness uncollated",
+    "selective-primary": "Small focused primary passages only",
+    "no-independent-collation": "No independent edition-level collation",
+    "bibliographical": "Bibliography and later scholarship only"
+  }
+}

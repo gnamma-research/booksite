@@ -11,8 +11,9 @@ from pathlib import Path
 import sys
 
 ROOT=Path(__file__).resolve().parent
-ASSETS=["corpus-primary.js","corpus-analysis.js","reader-foundation.js",
-        "reader-pages.js","reader-extras.js","reader.js"]
+ASSETS=["corpus-primary.js","corpus-analysis.js","argument-apparatus.js",
+        "reader-foundation.js","reader-pages.js","reader-extras.js",
+        "reader-context.js","reader-scope.js","reader.js"]
 
 def build()->str:
     page=(ROOT/"index.html").read_text(encoding="utf-8")
@@ -25,9 +26,11 @@ def build()->str:
         js=(ROOT/file).read_text(encoding="utf-8")
         page=page.replace(tag,"<script>\n"+js.replace("</script","<\\/script")+"\n</script>",1)
     assert page.count("<script>")==len(ASSETS)
+    assert "window.AVICENNIAN_APPARATUS=" in page
+    assert "Tajrid" not in page[:100] or "Avicennism" in page
     assert "const D=V.data,$=V.$,$$=V.$$;" in page
     assert "window.AVICENNIAN_CORPUS=" in page
-    assert len(page.encode("utf-8"))>400000
+    assert len(page.encode("utf-8"))>540000
     return page
 
 if __name__=="__main__":
@@ -35,7 +38,7 @@ if __name__=="__main__":
     out=ROOT/"standalone.html"
     if "--check" in sys.argv:
         assert out.read_text(encoding="utf-8")==html, "Standalone drifted from canonical source"
-        print("Standalone matches all six scripts byte-for-byte")
+        print(f"Standalone matches all {len(ASSETS)} scripts byte-for-byte")
     else:
         out.write_text(html,encoding="utf-8")
         print(f"Built {out}, {out.stat().st_size} bytes")

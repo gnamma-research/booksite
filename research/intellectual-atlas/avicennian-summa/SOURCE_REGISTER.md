@@ -181,3 +181,41 @@ The eleven fascicles correspond to **eight distinct directly accessed historical
 ### Indian documentary quotation annex — separate from direct printed witnesses
 
 An extended **direct historical Arabic quotation** of Faḍl-i Ḥaqq al-Khayrābādī, *al-Hadiyya al-saʿīdiyya*, **1904 pp.92–94**, appears in Sāʾir Baṣmajī, *Tārīkh ʿilm al-ḥarāra* (Hindawi 2023), printed pp.202–203. We translated the **five reported arguments** against latent fire and documented the limits in [Indian annex 01](INDIAN_PRIMARY_QUOTATION_01_KHAYRABADI_HEAT.md). The historical author argues by rubbing solids, porous and dense vessels, sealed heating, bursting water containers and cooling by ice. **Witness status remains mediated through a modern historian; the 1904 original has not been inspected or independently collated.** It must not be counted as a twelfth directly read original work or proof of rejection of the separate Giver of Forms. [Modern quotation](https://downloads.hindawi.org/books/81461536.pdf#page=202); [original printing catalogue](https://ddl.ae/book/95961).
+
+
+## Stage 07–08 source-continuity and de-duplication audit · 31 October 2026
+
+The separate `research/tajrid/bookmap-crosswalk.json` now has **224 source records**, **837 inherited Ṭūsī units** and **47 named/contextual works**, including **62** entries from Lāhījī's distinct `Shawāriq al-ilhām` work, **33** from Ḥillī's `Kashf al-murād`, and material from Qūshjī, Taftāzānī, Jurjānī, Dawwānī and others. **These are heterogeneous source-level evidence records, not 224 fully collated complete passages.** For exact overlap see [Tajrīd de-dup register](../../avicennism/TAJRID_DEDUP_AND_POST_ASFAR_SCOPE.json): *Shawāriq* **I:90–91** = Tajrīd **NEW05/NEW06** and *Sharḥ al-Maqāṣid* **p.79** = Tajrīd **SN01/SN03**. Different volumes of Astarābādī are different arguments and must not be merged based only on work title.
+
+### Independent Persian philosophical source newly recovered (different work from Shawāriq)
+
+**Lāhījī, `Gawhar-i murād`, Article II, Book III, Sections I–VIII, consecutive printed pp.278–309** is now reconstructed as **working contextual English**, in original printed order. These sources are newly recovered as an *independent work*, not independent variants of a Tajrīd gloss. The original books are linked at each page; printed manuscript variations remain editor-reported rather than independently collated.
+
+| Key | Historical division | Actual printed span | New work file | Context statement |
+|---|---|---:|---|---|
+| GW-01 | Section I: terms of creating; Section II: what is made | 278–282 | [Gawhar act, `jaʿl` and made quiddity](LATE_CONTEXT_FASCICLE_14_GAWHAR_ACT_CAUSATION_MAKING.md) | Simple versus compound making; Lāhījī's analysis of making actual quiddity, existence or a relation; Bahmanyār exchange **reported by Lāhījī** |
+| GW-02 | Section III: nature of procession and unity | 283–289 | [Gawhar unity and effect](LATE_CONTEXT_FASCICLE_15_GAWHAR_UNITY_PROCESSION.md) | Reports of Sufi unity, critique of existence-as-natural-universal, one unconditioned ground vs many dependent realities |
+| GW-03 | Section IV, beginning | 290–293 | [First emanation](LATE_FASCICLE_04_LAHIJI_GAWHAR_EMANATION_UNITY.md) | Rule of One and derivative aspects of intellect |
+| GW-04 | Section IV, conclusion | 294–297 | [Fixed-star objection and reply](LATE_CONTEXT_FASCICLE_12_LAHIJI_GAWHAR_CH4_COMPLETION.md) | Ten not demonstrated to be maximum; **Suhrawardī reported** as critic; combinatorial reply |
+| GW-05 | Section V: natural element differences and mixture | 298–300 | [Elemental forms](LATE_CONTEXT_FASCICLE_13_LAHIJI_GAWHAR_CH5_ELEMENTS.md) | Unnamed friction theory reported through Ibn Sīnā, its **hylomorphic rebuttal**, and material disposition |
+| GW-06 | Section VI: tenth intellect and species forms | 301–303 | [Active Intellect](LATE_FASCICLE_01_LAHIJI_GAWHAR_ACTIVE_INTELLECT.md) | The form bestower and individuating material preparations |
+| GW-07 | Section VII: time and persistence | 304–306 | [Temporal causation](LATE_FASCICLE_02_LAHIJI_GAWHAR_TEMPORAL_CAUSATION.md) | *Mubqiya* and *muḥditha* separated |
+| GW-08 | Section VIII: divine will and perfection | 307–309 | [Divine agency](LATE_FASCICLE_03_LAHIJI_GAWHAR_DIVINE_AGENCY.md) | *Riḍā* contrasted with *qaṣd* in context |
+
+**Read the whole working unit** at [Late Avicennism reader](../../avicennism/#full/lah-making) and its eight linked Section records, or [post-Asfār distinctive questions](../../avicennism/#post-asfar). These are not a Persian diplomatic archetype. Every edition item is classified in [context metadata](../../avicennism/argument-context.json), with prior argument, opposing position, specific reply and next step; [explicit connections](../../avicennism/argument-links.json) replace keyword extraction.
+
+**Important doctrinal caution:** Lāhījī in *Gawhar* Section II (pp.280–282) favors simple making of an **actually issued quiddity**, while Narāqī *al-Lamaʿāt* pp.72,82 formulates the made object's actuality as **particular existence**. This is a substantive comparison but not proof of a direct polemic, a unanimous trend, or even incompatible doctrine until their senses of quiddity/existence are carefully distinguished. Historical source context matters more than categorical labels.
+
+
+## Stage 09 · 1 November 2026: The Tajrīd nonduplication crosswalk and original later reception texts
+
+**Research division:** the [Tajrīd reader](../../tajrid/) remains canonical for all thirty common matn/commentary questions; its source quotations and translations must not be repeated as independently verified new witnesses here. The [30-question ownership crosswalk](../../avicennism/TAJRID_NON_DUPLICATION_CROSSWALK.json) documents the later research delta per question; the [exact shared-page register](../../avicennism/TAJRID_DEDUP_AND_POST_ASFAR_SCOPE.json) documents literal page/voice overlaps.
+
+| Key | Direct work / precise location | Actually checked or newly translated | Limit |
+|---|---|---|---|
+| PS-01 | **Muḥammad Mahdī al-Narāqī**, *Jāmiʿ al-afkār wa-nāqid al-anẓār*, vol. II, chapter on divine knowledge, first inquiry, third proof, first preliminary, **pp.25–27** | [Contextual working English, objections and replies, original Arabic anchors](POST_ASFAR_01_NARAQI_PRESENTIAL_KNOWLEDGE_CONTEXT_25_27.md). Direct edited-source [p.25](https://najafdesertlibrary.com/book/جامع-الأفكار-وناقد-الأنظار/v/2/p/25), [26](https://najafdesertlibrary.com/book/جامع-الأفكار-وناقد-الأنظار/v/2/p/26), [27](https://najafdesertlibrary.com/book/جامع-الأفكار-وناقد-الأنظار/v/2/p/27). **Novel focus:** direct self-awareness and cognition of one's own faculties without a further representation. | Entire proof on divine omniscience continues; no independent manuscript comparison; compare with Asfār only when original pages checked. |
+| PS-02 | **Mullā Hādī Sabzavārī**, *Sharḥ al-Manẓūma*, natural philosophy, ghurar **111**, printed vol. IV **pp.301–302 and 305** | [Layered contextual argument](POST_ASFAR_02_SABZAVARI_MOTION_SUBJECT_301_305.md), including Avicenna *Physics* II.3's dilemma and flowing-substance answer. Direct edited pages [301](https://najafdesertlibrary.com/book/شرح-المنظومة/v/4/p/301), [302](https://najafdesertlibrary.com/book/شرح-المنظومة/v/4/p/302), [305](https://najafdesertlibrary.com/book/شرح-المنظومة/v/4/p/305). | **Pp.303–304 missing**; Ḥasan Ḥasanzāda Āmulī later notes marked `(ح.ح)` interwoven; cannot assign the whole printed exposition to Sabzavārī or claim continuous full ghurar translation. |
+
+The distinct later research questions attach to canonical **Tajrīd Q07/Q20/Q24/Q30** for Narāqī and **Q17/Q18** for Sabzavārī. The earlier concepts remain in the Tajrīd edition; the later texts are original developments in their own work, not newly authenticated Tajrīd commentaries. The reader now contains **24 historical source units, 12 source-grounded comparisons** and **30 crosslinked Tajrīd questions**, with original-language omissions explicitly labelled.
+
+**Do not count a page of Jāmiʿ al-afkār as evidence that Narāqī's entire proof is completed. Do not count a modern (ح.ح) annotation as Sabzavārī's authorial sentence.**

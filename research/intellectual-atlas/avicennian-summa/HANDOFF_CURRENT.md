@@ -1,6 +1,28 @@
 # HANDOFF CURRENT — GNAMMA AVICENNIAN SUMMA
 **Cumulative release handoff, 30 October 2026.** This is the authoritative restart file for subsequent chats and tools. **Read [Stage 3](handoffs/STAGE_03_RELEASE_HANDOFF.md) for the full self-contained history and exact provenance.**
 
+## Stage 09 current update — 1 November 2026: Nonduplication and later source developments
+
+**Start here:** [Stage 09 cumulative handoff](handoffs/STAGE_09_TAJRID_NON_DUPLICATION_AND_POST_ASFAR.md) → [new crosswalk of all thirty Tajrīd debates](../../avicennism/TAJRID_NON_DUPLICATION_CROSSWALK.json) → [exact witness-level overlap audit](../../avicennism/TAJRID_DEDUP_AND_POST_ASFAR_SCOPE.json) → [twelve post-Asfār dossiers](../../avicennism/POST_ASFAR_DISTINCTIVE_DOSSIERS.json).
+
+**Division of labour:** the separate Tajrīd project is canonical for the thirty baseline matn/commentator questions; this Late Avicennism project concerns **independently sourced historical changes after Ṭūsī and especially after the Asfār**. The reader crosslinks rather than retranslates shared original extracts.
+
+**New primary units:**
+- [Narāqī, *Jāmiʿ al-afkār*, II:25–27](POST_ASFAR_01_NARAQI_PRESENTIAL_KNOWLEDGE_CONTEXT_25_27.md) — three contiguous checked pages within a longer proof of divine knowledge, objections on intellectual universals, direct knowledge by presence, self-awareness, bodily faculties. **The full proof is not yet translated.**
+- [Sabzavārī, *Sharḥ al-Manẓūma*, natural philosophy, ghurar 111](POST_ASFAR_02_SABZAVARI_MOTION_SUBJECT_301_305.md), vol. IV pp.301–302, separately p.305 — specific Avicenna *Physics* II.3 dilemma on substantial motion and the later flowing-substance response. **Printed pp.303–304 unread; twentieth-century Ḥasanzāda notes interleaved, so authorial layers remain provisional.**
+
+**Reader accounting:** 24 historical reading units (6 earlier, 17 later, 1 mediated), 10 analytical chapters, 12 explicit question chains, 20 domains, 16 transmission routes and 30 Tajrīd baseline links. This is a contextual working sourcebook, not an exhaustive corpus edition or a separately deployed NAMA site.
+
+## Stage 7–8 current update — 31 October 2026 · source context and project separation
+
+**Start here:** [Stage 07 full scholarly handoff](handoffs/STAGE_07_POST_ASFAR_DISTINCT_AND_TAJRID_DEDUP.md) → [contextual source reader](../../avicennism/) → [Tajrīd exact overlap register](../../avicennism/TAJRID_DEDUP_AND_POST_ASFAR_SCOPE.json) → [12 distinctive post-Asfār dossiers](../../avicennism/POST_ASFAR_DISTINCTIVE_DOSSIERS.json).
+
+The separate **Tajrīd** work's connected crosswalk has **224 source records, 837 inherited Ṭūsī text units and 47 named/contextual works**. The new project avoids recollecting its *matn–sharḥ–ḥāshiya* chain; two exact shared page groups are identified. An older Astarābādī volume-I source is **not** identical to the Late Avicennism volume-II text.
+
+**Independently reconstructed here:** Lāhījī's *Gawhar-i murād*, Article II, Book III, **all eight consecutive sections pp.278–309** as extended working English arguments, eight source-unit files, and original page links. Newly restored Sections I–III pp.278–289 supply the philosophical meaning of making, the quiddity/existence distinction, reports of unity of existence and Lāhījī's criticism of the universal-being model. Sections IV–VIII follow through separate intellects, elemental mixtures, tenth-intellect form-bestowal, temporal specification and will. **Do not equate the 32-page working context with a diplomatic Persian manuscript edition, nor equate it with complete Late Avicennism.**
+
+**Reader repaired:** the keyword-selected comparison excerpts were removed; explicit argument-role and relation records now drive comparisons, which display the full available selected argumentative section. Each historical source has a previous question, target objection, authorial reply and continuation. The tradition map explicitly names unedited Ottoman, Indian, Qajar, Shirazi and other source families. NAMA is separately hosted and unconnected; the GNAMMA publication plus portable NAMA ZIP does not certify NAMA deployment.
+
 ## Stage 5 update — 31 October 2026 (late Persian, Indian and post-Tajrīd source edition)
 
 **Current start point:** [full cumulative Stage 05 handoff](handoffs/STAGE_05_LATE_COMMENTATORS.md) → [searchable edition with 11 fascicles](late-commentators.html) → [machine-readable direct/mediated witness ledger](LATE_WITNESS_REGISTER_2026_10_31.json). Stage 05 retains and cross-links the previous six Avicenna/Lāhījī/Aquinas primary fascicles, ten thematic chapters, comprehensive twenty-domain analysis and Stage 01–04 handoffs.

@@ -23,10 +23,10 @@ async def run(browser_name="chromium",width=1440,height=900):
         assert "Late Avicennism" in await page.title()
         assert await page.locator("#main h1").count()>0
         await page.goto(BASE+"#contents",wait_until="domcontentloaded")
-        await page.wait_for_function("()=>document.querySelectorAll('.document-row').length>=28")
-        assert await page.locator(".document-row").count()==28
+        await page.wait_for_function("()=>document.querySelectorAll('.document-row').length>=34")
+        assert await page.locator(".document-row").count()==34
         await page.locator("#doc-filter").fill("Lāhījī")
-        assert 0<await page.locator(".document-row").count()<28
+        assert 0<await page.locator(".document-row").count()<34
         await page.locator("#doc-filter").fill("")
         await page.goto(BASE+"#text/lah-active/1",wait_until="domcontentloaded")
         await page.wait_for_function("()=>document.querySelector('.reading h2')!==null")
@@ -40,8 +40,77 @@ async def run(browser_name="chromium",width=1440,height=900):
         await page.goto(BASE+"#compare/giver",wait_until="domcontentloaded")
         await page.wait_for_function("()=>document.querySelectorAll('.compare-work').length===2")
         assert await page.locator(".compare-work").count()==2
-        await page.locator("#compare-left").select_option("ch05")
-        await page.wait_for_function("()=>document.querySelector('#compare-left')?.value==='ch05'")
+        await page.locator("#compare-left").select_option("3")
+        await page.wait_for_function("()=>document.querySelector('#compare-left')?.value==='3'")
+        assert await page.locator(".argument-stages li").count()>=5
+        assert len(await page.locator(".compare-full-text").first.inner_text())>400
+        # Full source should contain all available sections, not a clipped snippet.
+        await page.goto(BASE+"#full/lah-element",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelectorAll('.full-unit-section').length>=4")
+        assert await page.locator(".full-unit-section").count()>=4
+        assert await page.locator(".argument-context-grid .argument-context-cell").count()==6
+        assert "What is being answered here?" in await page.locator(".argument-context-panel").first.inner_text()
+        await page.locator(".toc-jump").last.click()
+        assert await page.evaluate("document.documentElement.scrollTop")>0
+        # Historical map must expose absent source families rather than claim completeness.
+        await page.goto(BASE+"#tradition",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelectorAll('.tradition-family').length>=16")
+        assert await page.locator(".tradition-family").count()==16
+        assert await page.get_by_text("No direct source unit currently edited from this stream.").count()>=5
+        await page.goto(BASE+"#domain/providence",wait_until="domcontentloaded")
+        await page.wait_for_timeout(250)
+        domain_text=await page.locator("#main").inner_text()
+        if "No direct" not in domain_text:
+            print("PROVIDENCE_DIAGNOSTIC",{
+                "url":page.url,
+                "headings":await page.locator("#main h1").all_text_contents(),
+                "excerpt":domain_text[:500],
+                "page_errors":errors[-4:],
+            },flush=True)
+        assert "No direct" in domain_text, "Missing truthful empty-primary-state on provenance domain"
+        await page.goto(BASE+"#method",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelector('#main')?.textContent.includes('Minimum unit')")
+        await page.goto(BASE+"#full/lah-making",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelectorAll('.full-unit-section').length>=8")
+        assert "Page 282" in await page.locator("#main").inner_text()
+        await page.goto(BASE+"#full/lah-unity",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelectorAll('.full-unit-section').length>=9")
+        await page.goto(BASE+"#post-asfar",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelectorAll('.toc-card').length>=12")
+        await page.goto(BASE+"#post-asfar/01-making",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelectorAll('.distinctive-evidence').length>=4")
+
+        # The question-level crosswalk preserves thirty canonical Tajrīd questions
+        # while showing only independently grounded later research extensions.
+        await page.goto(BASE+"#tajrid-questions",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelectorAll('.crosswalk-question').length===30")
+        assert await page.locator('.crosswalk-question').count()==30
+        assert await page.locator('#tajrid-q-07 a[href*="tajrid"]').count()>=1
+        await page.locator('#tajrid-q-search').fill('substantial')
+        assert 0<await page.locator('.crosswalk-question').count()<30
+        await page.locator('#tajrid-q-search').fill('')
+        assert await page.locator('.crosswalk-question').count()==30
+        # New later-source material must appear as exact objections and replies,
+        # not duplicated baseline snippets.
+        await page.goto(BASE+"#full/nara-presence",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelectorAll('.full-unit-section').length>=6")
+        assert 'presen' in (await page.locator('#main').inner_text()).lower()
+        await page.goto(BASE+"#full/sabz-motion",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelectorAll('.full-unit-section').length>=9")
+        assert '303' in await page.locator('#main').inner_text()
+        for debate in ('presence','motion-subject'):
+            await page.goto(BASE+"#compare/"+debate,wait_until="domcontentloaded")
+            await page.wait_for_function("()=>document.querySelectorAll('.compare-work').length===2")
+            assert await page.locator('.argument-stages li').count()>=5
+        await page.goto(BASE+"#post-asfar/08-motion",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelector('#main')?.textContent.includes('Sabzavārī')")
+        await page.goto(BASE+"#post-asfar/12-later-knowledge",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelector('#main')?.textContent.includes('Narāqī')")
+        await page.goto(BASE+"#tajrid-overlap",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelector('#main')?.textContent.includes('NEW05')")
+        await page.goto(BASE+"#compare/making",wait_until="domcontentloaded")
+        await page.wait_for_function("()=>document.querySelectorAll('.compare-full-text').length===2")
+        assert len(await page.locator(".compare-full-text").first.inner_text())>300
         await page.goto(BASE+"#search?q=tenth%20intellect",wait_until="domcontentloaded")
         await page.wait_for_function("()=>document.querySelector('#result-count')?.textContent.includes('matching')")
         assert await page.locator(".result-item").count()>0
