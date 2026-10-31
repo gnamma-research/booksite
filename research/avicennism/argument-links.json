@@ -356,7 +356,7 @@
       "sequence": [
         {
           "recordId": "lah-making",
-          "section": 4,
+          "section": 6,
           "role": "Independent Gawhar alternative",
           "relation": "later-author-original",
           "claim": "Lāhījī lists three candidates for the made object and argues that actual produced quiddity underlies the abstraction of 'exists'.",
@@ -364,7 +364,7 @@
         },
         {
           "recordId": "lah-making",
-          "section": 5,
+          "section": 7,
           "role": "Attribution-first objection",
           "relation": "authorial-argument",
           "claim": "If the attribution itself is made without making the relata, it threatens self-subsistence or regress.",
@@ -372,7 +372,7 @@
         },
         {
           "recordId": "lah-making",
-          "section": 6,
+          "section": 8,
           "role": "Reported Ibn Sīnā–Bahmanyār remark",
           "relation": "reported-quotation",
           "claim": "The apricot dictum is interpreted as rejecting making a thing be its pre-existing whatness.",
@@ -553,7 +553,7 @@
       "sequence": [
         {
           "recordId": "lah-making",
-          "section": 4,
+          "section": 6,
           "role": "What is created in actual being?",
           "relation": "original-distinct-work",
           "claim": "Lāhījī argues that the actual produced quiddity grounds the concept 'exists'.",
@@ -711,7 +711,7 @@
         },
         {
           "recordId": "lah-making",
-          "section": 4,
+          "section": 6,
           "level": "direct late Persian argument",
           "reason": "Direct independent Gawhar p.280 on the made quiddity"
         },
@@ -834,7 +834,7 @@
       "direct": [
         {
           "recordId": "lah-making",
-          "section": 2,
+          "section": 4,
           "level": "direct late Persian argument",
           "reason": "Ibdāʿ and simple versus compound making"
         },
@@ -982,7 +982,7 @@
       "direct": [
         {
           "recordId": "lah-making",
-          "section": 4,
+          "section": 6,
           "level": "direct late Persian argument",
           "reason": "Causal making and distinctions of actual quiddity/existence"
         },
