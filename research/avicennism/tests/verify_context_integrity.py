@@ -13,7 +13,7 @@ import re
 from urllib.parse import urlparse, parse_qs
 
 HERE=Path(__file__).resolve().parents[1]
-ROOT=HERE.parents[1]
+ROOT=HERE.parent
 def parse_js(path,prefix,suffix):
     raw=(HERE/path).read_text(encoding="utf-8")
     assert raw.startswith(prefix)
