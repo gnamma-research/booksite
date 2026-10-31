@@ -12,7 +12,7 @@ This is **not** another translation of Lāhījī's separate *Shawāriq al-ilhām
 
 ## Section I, pp.278–279 — the meanings of production
 
-### Page 278: what counts as giving existence?
+## Page 278: what counts as giving existence?
 
 **Context and working translation.** It was established earlier that a contingent thing needs a cause for the preponderance of its existence, and that the chain of causes depends upon the Necessary Existent. Thus all contingent existents ultimately depend on God, whether immediately or through intermediaries. *Ījād* means bestowing existence; in one usage *takwīn* means the same. Existence bestowed by a cause is broader than existence preceded by temporal nonbeing: the relevant priority can be **essential** rather than temporal. Hence even if an effect were temporally eternal, it would remain caused in this sense.
 
@@ -22,7 +22,7 @@ Lāhījī notes a difference of usage. Some theologians confine “acting,” �
 
 **Doctrinal function:** The distinction between temporal and essential beginning is the presupposition of the following *jaʿl* controversy. A contingent being cannot cease needing its cause simply because it has existed for some time.
 
-### Page 279: *ibdāʿ*, *takwīn*, *iḥdāth* and simple/compound making
+## Page 279: *ibdāʿ*, *takwīn*, *iḥdāth* and simple/compound making
 
 **Working translation.** The philosophers reserve *ibdāʿ* for bestowing existence without prior **matter or duration**, treating it as the most eminent mode of giving being. Bringing into being through prior matter can be called *takwīn* in a narrower sense, and existence after prior duration *iḥdāth*. On that usage separate intellects are produced by *ibdāʿ*, material things by *takwīn*, and daily temporal events are *muḥdath*. Some theologians further include awareness and will in the notion of action, thus withholding it from spontaneous natural occurrences such as the heating of fire or illumination of the sun. Others deny that a cause must necessitate its effect and therefore resist applying “cause” to God under the philosophers' stronger definition.
 
@@ -34,7 +34,7 @@ Lāhījī notes a difference of usage. Some theologians confine “acting,” �
 
 ## Section II, pp.280–282 — what is made: quiddity, existence, or attribution?
 
-### Page 280: the three alternatives and Lāhījī's stated preference
+## Page 280: the three alternatives and Lāhījī's stated preference
 
 **Question heading rendered:** “Whether what really proceeds and is made by the Most High is the quiddity of things, the existence of things, or the quiddity's qualification by existence.”
 
@@ -46,7 +46,7 @@ He then asks the advocate of making *existence* whether “existence” names th
 
 **Important interpretive limit:** Calling an actual quiddity the thing produced is not equivalent to asserting that essence exists independently *before* its production. And “existence as abstract concept” is not equivalent to saying that nothing real exists.
 
-### Page 281: why simply making the attribution leads to regress
+## Page 281: why simply making the attribution leads to regress
 
 **Working translation.** Lāhījī continues: if someone says that a real actuality distinct from quiddity is what is called existence, yet ultimately means only the same actual produced quiddity, the dispute may collapse into differing names. But if a third candidate—*the quiddity's attribution to existence*—is what is made in itself while neither quiddity nor existence is made in itself, several problems arise.
 
@@ -58,7 +58,7 @@ The chapter closes this chain by identifying a fourth conceivable possibility: a
 
 **What is answering what:** The regress is aimed at the third **attribution-first** thesis. It is not a blanket denial of intellectual distinction or of relations grounded in realities.
 
-### Page 282: “the maker did not make the apricot apricot”
+## Page 282: “the maker did not make the apricot apricot”
 
 **Working translation.** The fourth proposal is that the maker makes a quiddity acquire precisely the quiddity it already is—for example, makes a human a human. Its defect is obvious. Lāhījī appeals to Avicenna's response to his student Bahmanyār: “The maker did not make the apricot an apricot; rather he made the apricot exist.” Yet Lāhījī warns that this should **not** be interpreted as Avicenna endorsing a compound creation of an essence plus a distinct existence-attribute, as an attribution-first theory would demand.
 
