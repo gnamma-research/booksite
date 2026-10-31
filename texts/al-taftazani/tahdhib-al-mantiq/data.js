@@ -108,6 +108,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "A genus is predicated essentially across several differing species in answer to 'What is it?', not merely as a trait shared accidentally."
         }
       ],
       "grade": "B",
@@ -125,6 +129,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "A specific difference answers what a thing is essentially; an exclusive property accompanies a single species without forming part of its essence, while a common accident may belong to different kinds."
         }
       ],
       "grade": "B",
@@ -146,6 +154,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "The logical universal is predicability of many; the natural universal is the nature to which universality applies; the intellectual universal consists in their conceptual conjunction."
         }
       ],
       "grade": "B",
@@ -163,6 +175,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "An adequate definition must be coextensive with, and clearer than, what it defines. Essential definition employs proximate differentia; descriptive definition employs a distinctive property."
         }
       ],
       "grade": "B",
@@ -180,6 +196,10 @@ window.GNAMMA_BOOK={
         {
           "type": "Source",
           "text": "Arabic transcribed from the five-page matn presented in the al-Yazdī commentary tradition and compared against the uploaded 21-page logic edition. The translation derives from the existing 19-section parallel reader; its vocalisation and all modal technicalities have not yet been critically certified."
+        },
+        {
+          "type": "Explanation",
+          "text": "The proposition is truth-apt; categorical propositions affirm or deny predicates of subjects. The copula expresses their relationship, rather than supplying an additional independent object."
         }
       ],
       "grade": "B",
