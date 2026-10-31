@@ -19,17 +19,17 @@ def read_json_js(path:Path,prefix:str,suffix:str):
 
 primary=read_json_js(P,"window.AVICENNIAN_CORPUS=",";")
 extra=read_json_js(A,"window.AVICENNIAN_CORPUS=window.AVICENNIAN_CORPUS||{};\nObject.assign(window.AVICENNIAN_CORPUS,",");")
-assert len(primary["records"])==22
+assert len(primary["records"])==24
 assert sum(r["kind"]=="primary" for r in primary["records"])==6
-assert sum(r["kind"]=="late" for r in primary["records"])==15
+assert sum(r["kind"]=="late" for r in primary["records"])==17
 assert sum(r["kind"]=="mediated" for r in primary["records"])==1
 assert len(extra["analysis"])==10
 assert len(extra["themes"])==20
-assert len(extra["debates"])==10
+assert len(extra["debates"])==12
 assert len(primary["unresolved"])>=11
 allrecords=primary["records"]+extra["analysis"]
 ids=[r["id"] for r in allrecords]
-assert len(ids)==len(set(ids))==32
+assert len(ids)==len(set(ids))==34
 assert all(len(r["md"])>2000 for r in allrecords)
 assert all(r["sourceFile"] for r in allrecords)
 assert all(not r["manuscriptCollated"] for r in allrecords)
@@ -80,10 +80,10 @@ assert "<link rel=\"stylesheet\"" not in html
 context=json.loads((ROOT/"argument-context.json").read_text(encoding="utf-8"))
 links=json.loads((ROOT/"argument-links.json").read_text(encoding="utf-8"))
 history=json.loads((ROOT/"tradition-coverage.json").read_text(encoding="utf-8"))
-assert len(context["records"])==22
+assert len(context["records"])==24
 assert set(context["records"])=={r["id"] for r in primary["records"]}
 assert len(history["families"])>=16
-assert len(links["debates"])==10
+assert len(links["debates"])==12
 assert len(links["domainEvidence"])==20
 assert len(history["references"])>=10
 # Source context and comparative mappings must resolve to ACTUAL existing argument
@@ -173,6 +173,26 @@ assert (ROOT/"build_apparatus.py").is_file()
 assert (ROOT/"tradition-coverage.json").is_file()
 assert (ROOT/"TAJRID_DEDUP_AND_POST_ASFAR_SCOPE.json").is_file()
 assert (ROOT/"POST_ASFAR_DISTINCTIVE_DOSSIERS.json").is_file()
+question_crosswalk=json.loads((ROOT/"TAJRID_NON_DUPLICATION_CROSSWALK.json").read_text(encoding="utf-8"))
+assert len(question_crosswalk["questions"])==30
+assert {q["id"] for q in question_crosswalk["questions"]}=={f"{i:02d}" for i in range(1,31)}
+assert all(q["referencePath"]==f"../tajrid/#debate/{q['id']}" for q in question_crosswalk["questions"])
+assert all(q["duplicatePolicy"] and q["differenceToInvestigate"] and q["remaining"] for q in question_crosswalk["questions"])
+assert all(set(q["existingEvidence"])<=set(ids) for q in question_crosswalk["questions"])
+assert "questionCrosswalk" in (ROOT/"argument-apparatus.js").read_text(encoding="utf-8")
+assert "tajrid-questions" in HTML.read_text(encoding="utf-8")
+assert "P.tajridQuestions" in (ROOT/"reader-scope.js").read_text(encoding="utf-8")
+for uid in ("nara-presence","sabz-motion"):
+    assert uid in known_by_id, uid
+    assert uid in context["records"]
+    assert all(context["records"][uid].get(k) for k in ("question","immediatePrior","base","objections","reply","continuation","missing"))
+assert any(s["recordId"]=="nara-presence" for s in links["debates"]["presence"]["sequence"])
+assert any(s["recordId"]=="sabz-motion" for s in links["debates"]["motion-subject"]["sequence"])
+assert (ROOT/"../intellectual-atlas/avicennian-summa/POST_ASFAR_01_NARAQI_PRESENTIAL_KNOWLEDGE_CONTEXT_25_27.md").is_file()
+assert (ROOT/"../intellectual-atlas/avicennian-summa/POST_ASFAR_02_SABZAVARI_MOTION_SUBJECT_301_305.md").is_file()
+assert "Ḥasanzāda" in known_by_id["sabz-motion"]["md"]
+assert "full" in known_by_id["nara-presence"]["md"].lower()
+
 
 print(json.dumps({
     "status":"STATIC PASS; no claim of primary manuscript collation",
