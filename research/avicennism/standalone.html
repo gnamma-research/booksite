@@ -854,7 +854,7 @@ case 'text':P.text(p[1],p[2]);break;
 case 'full':P.full(p[1]);break;
 case 'compare':if(p[1])P.compare(p[1],route.query);else $('#main').innerHTML=P.compareList();break;
 case 'domains':$('#main').innerHTML=P.domainMap();break;
-case 'domain':$('#main').innerHTML=P.domain(p[1]);break;
+case 'domain':P.domain(p[1]);break;
 case 'witnesses':$('#main').innerHTML=P.witnesses();break;
 case 'tradition':P.tradition();break;
 case 'method':P.contextMethod();break;
