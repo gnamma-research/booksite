@@ -383,7 +383,7 @@ window.GNAMMA_BOOK={
       "arabic": "ثم كل من الوجود والعدم قد يقع محمولاً وقد يقع رابطة، ويفتقر الحمل الإيجابي إلى اتحاد الطرفين هوية ليصح، وتغايرهما مفهوماً ليفيد، وصدقه يكون بمطابقته لما في نفس الأمر، ومعناه ما يفهم من قولنا هذا الأمر كذا في نفسه مع قطع النظر عن حكم الحاكم وإدراك المدرك.",
       "english": "Both existence and nonexistence can occur as a predicate or as the nexus of a proposition. Affirmative predication requires the two terms to be identical in referent if it is to be true, and different in conception if it is to convey information. Its truth consists in correspondence to what obtains in the matter itself (nafs al-amr): what we understand when we say that this thing is thus in itself, independently of the judgment of the one judging or the apprehension of the one apprehending.",
       "grade": "B",
-      "gap": true,
+      "gap": false,
       "notes": [
         {
           "type": "Explanation",
@@ -398,7 +398,8 @@ window.GNAMMA_BOOK={
           "text": "Affirmative judgment requires identity of referent while allowing conceptual diversity of subject and predicate. The truth of the predication is conformity to nafs al-amr, what obtains in itself regardless of the individual judger (Cairo p. 20)."
         }
       ],
-      "printedPages": "20"
+      "printedPages": "20",
+      "statusText": ""
     },
     {
       "id": "II.09",
@@ -475,21 +476,22 @@ window.GNAMMA_BOOK={
     {
       "id": "II.13",
       "title": "Determination: its meanings and the real–considerational distinction",
-      "arabic": "فصل في التعين. أفراد النوع إنما تتميز بعوارض ربما تنتهي إلى ما يفيد الماهية، فبعد تلخيص أن التعين والتشخص هو تلك الماهية أو ما يفيدها أو كون الفرد بحيث لا يقبل الشركة أو عدم قبوله لها، وأن العدمي هو المعدوم أو العدم المضاف أو ما يدخل في مفهومه العدم، والوجودي بخلافه، وأن الحقيقي ما له ثبوت في نفس الأمر من غير شائبة فرض وتقدير، والاعتباري بخلافه، لا شبهة أن التعين وجودي أو عدمي…",
-      "english": "Chapter on determination. Individuals of a species are distinguished by accidents that may ultimately terminate in what specifies the quiddity. Once the suggested meanings of determination and individuation have been clarified—the quiddity itself, what gives rise to it, the individual’s being such that it cannot be shared, or its not admitting sharing—and once the negative has been explained as the nonexistent, a qualified nonexistence, or what includes nonexistence in its conception, with the positive as its contrary; and once the real has been explained as what is established in the matter itself (nafs al-amr) without supposition or estimation, with the considerational as its contrary, then it is beyond doubt that determination is positive or negative… [the sentence continues on printed p. 23].",
-      "grade": "C",
-      "gap": true,
+      "arabic": "فصل في التعين. أفراد النوع إنما تتميز بعوارض ربما تنتهي إلى ما يفيد الماهية، فبعد تلخيص أن التعين والتشخص هو تلك الماهية أو ما يفيدها أو كون الفرد بحيث لا يقبل الشركة أو عدم قبوله لها، وأن العدمي هو المعدوم أو العدم المضاف أو ما يدخل في مفهومه العدم، والوجودي بخلافه، وأن الحقيقي ما له ثبوت في نفس الأمر من غير شائبة فرض وتقدير، والاعتباري بخلافه، لا شبهة أن التعين وجودي أو عدمي، حقيقي أو اعتباري، ولا شبهة أنه إما يستند إلى الفاعل القادر أو إلى الوجود الخارجي أو إلى أسباب أخر من نفس الماهية أو المادة المتشخصة بما يلحقها من العوارض بحسب تعاقب الاستعدادات.",
+      "english": "Chapter on individuation. Individuals belonging to one species are distinguished by accidents, which may ultimately terminate in what specifies the quiddity. The various proposed meanings of determination and individuation must first be distinguished: the quiddity itself; that which gives it determination; an individual's being incapable of numerical participation by another; or the nonparticipation itself. Likewise ‘negative’ may mean what is nonexistent, a qualified absence, or something whose concept contains a negation; ‘positive’ is opposed to these. The real is what has establishment in the matter itself (nafs al-amr), apart from mere supposition or stipulation; the considerational is its opposite. Once these meanings have been clarified, determination can be examined as positive or negative and as real or considerational. It is also clear that its explanation must be sought either in a capable agent, in external existence, or in other principles belonging to the quiddity itself or to individuated matter with its successive concomitant accidents and states of preparedness.",
+      "grade": "B",
+      "gap": false,
       "notes": [
         {
           "type": "Explanation",
-          "text": "These are alternative definitions of individual determination and individuation, not cumulative conditions. The real–considerational opposition depends upon what obtains in nafs al-amr, independently of mere stipulation."
+          "text": "The alternatives—quiddity, specification, nonshareability and its absence—are distinct proposed analyses, not cumulative properties of an extra individuating entity. The printed sentence continues from Cairo p. 22 into p. 23."
         },
         {
           "type": "Sanandajī",
-          "text": "The fact that determination is a universal concept does not imply that an individual’s particular determination is shared numerically with other individuals (Taqrīb I:78–80)."
+          "text": "Al-Sanandajī distinguishes a universal concept of determination from the numerically proper determination of an individual (Taqrīb I:78–80)."
         }
       ],
-      "printedPages": "22"
+      "printedPages": "22–23",
+      "statusText": ""
     },
     {
       "id": "II.14",
