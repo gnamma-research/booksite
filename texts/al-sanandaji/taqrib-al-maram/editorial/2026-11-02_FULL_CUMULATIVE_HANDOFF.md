@@ -128,3 +128,54 @@ Continue source-image inspection and *abbreviated initial orientation* at **I:14
 ### Four direct-language translation specimens added after Stage 05
 
 `source-selected-I106-I140.js` and `editorial/2026-11-02_DIRECT_ARABIC_ENGLISH_EXCERPTS.md` now preserve **four continuous selected upper-register Arabic–English translations**, not merely page-topic summaries: I:106 on choice in complete causality; I:125 on separability in intellect versus external being; I:139 on formal/material causes; I:140 on causes of quiddity versus existence. First-pass Arabic readings were inspected at physical source PDF pp.119, 138, 152 and 153. No second-witness collation is claimed, and **0 complete pages** remains correct. The NAMA reader loads these four as additional source selections alongside, not replacing, their original page-level first-pass guides. Lower-register notes on these pages remain incompletely translated and are not assigned automatically to Wasīm.
+
+---
+
+## 13. Stage 06 — full source-page crosswalk and continuation I:141–160 (2 November 2026)
+
+### A. Source text and pagination correction
+
+The source scan is **632 physical PDF images**, but the combined *numbered main text* consists of **volume I pp.1–280 and volume II pp.1–335 = 615 numbered pages**. Source image p.14 is printed I:1, source image p.293 is I:280, p.294–295 are the volume I index, p.296 is printed II:1, and p.630 is II:335. Other image positions are preliminary/cover leaves. Source layout has been checked at the volume boundary and at both ends. Earlier percentages computed over 632 image leaves were simply **image-page presence proxies**, not the percentage of the printed two-volume text translated.
+
+Authorial layers remain **(a)** al-Taftāzānī lemmata embedded in the commentary, **(b)** Sanandajī upper running sharḥ, **(c)** Muḥammad Wasīm al-Kurdistānī's attributable *Ḥāshiyat al-Muḥākamāt*, and **(d)** miscellaneous lower-register notes that the title page expressly ascribes to additional writers. Do not convert all text below the rule into Wasīm without positive attribution. His II:117 fragment is still the only individually corroborated material in the dedicated Wasīm layer.
+
+### B. New source-reading contribution
+
+- **I:141–160 / physical PDF pp.154–173:** twenty additional source-image inspected, meaning-oriented English page accounts with limited Arabic anchors. JS `firstpass-I141-I160.js`; cumulative Markdown `editorial/2026-11-02_FIRSTPASS_I141-I160_AND_DIRECT_CLAUSES.md`.
+- **Six new manually transcribed short Arabic–English selections** on printed I:141, 142, 150, 156, 157 and 158, saved as `source-selected-I141-I158.js` and in the Markdown. These are **real selected clauses**, not complete-page translations or critical diplomatic transcriptions.
+- Argument order of new pages: complete versus incomplete causes; effect's necessity when the efficient cause and its conditions are complete; whether a numerically one effect demands one cause; the philosophers' thesis about what can proceed from the absolutely One; the agency/receptivity distinction; finite bodily powers; proof against circular causation and regress through the totality of contingent beings.
+- Principal upper text on I:157–159 occupies very little page area, while small-type marginal disputation fills most of the page. Hence **translation of the principal commentary alone is not a valid measure of the combined Sanandajī–Wasīm work's completion**.
+
+### C. Cumulative material preserved, not retranslated
+
+- Existing 50-page English interpretive draft I:13–62 and its original Markdown archive.
+- I:63–80 previous partial working accounts.
+- I:81–140 prior source-image first readings and direct selected quotations.
+- Wasīm II:117 source-matched provisional passage with separately indicated selected Sanandajī context.
+- Independent Tahdhīb matn work in the other chat remains untouched. No three-layer merger has been attempted.
+
+### D. Honest quantitative report
+
+| Metric | Status |
+|---|---|
+| Entire numbered combined source **located/indexed** | **615/615 = 100% source pagination**, NOT translated |
+| Vol. I pages represented by **some** preliminary English | **I:8–160 = 153 pages** |
+| Page-presence fraction relative to both printed volumes | **153/615 = 24.88%**, NOT translation completeness |
+| Individually positively identified Wasīm note examples | **One located excerpt on II:117**, no reliable denominator for all his note-units |
+| Complete, line-by-line dual-register English for each printed page | **0/615 formally certified as complete** |
+| Independently source-collated and critically definitive pages | **0/615 = 0%** |
+
+Do not infer from 24.88% that 24.88% of original Arabic words has been translated. In several previous records, selected quotations and general meaning notes omit most of the page, and all of its lower apparatus.
+
+### E. Source registry, website and downloads
+
+- **Source atlas:** `texts/al-sanandaji/taqrib-al-maram/source-atlas.html`, with client-side volume/status filtering and exact PDF position.
+- **Complete 615-row CSV:** `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv`.
+- **New reader layers:** `firstpass-I141-I160.js`, `source-selected-I141-I158.js`.
+- **New manuscript:** `editorial/2026-11-02_FIRSTPASS_I141-I160_AND_DIRECT_CLAUSES.md`.
+- **Original facsimile packet:** I:141–160 image pages may be distributed in the separate local source PDF; it must not be mistaken for the translation.
+- **Public NAMA route:** `https://gnamma-research.github.io/booksite/texts/al-sanandaji/taqrib-al-maram/`. Real deployment and device-browser QA are not yet checked in this stage; static source and syntax checks are separate from a claim of live release success.
+
+### F. Mandatory continuation
+
+A complete first translation pass means **every clause** of the upper Sanandajī prose and **every separately attributed marginal annotation** in both volumes. The current rapid reading pass has **not** achieved that standard. The next image interval is **I:161–180 (PDF pp.174–193)**. It must preserve interruption of arguments at page boundaries, explicit Arabic speaker indicators, lemma boundaries, marginal incipits, and honest status of any uncertainty. After broad source coverage, execute the full literal pass, independent second reading, witnesses and variant collation, and final critical revision. No merger into the independent Tahdhīb matn before both projects are genuinely critically definitive.
