@@ -1,0 +1,48 @@
+/* Taqrīb-specific controls. Shared Tahdhīb, Darūrī, and Mawāqif assets are untouched. */
+.taqrib-control-panel{border-block:1px solid var(--rule);padding:12px 0 16px;margin:0 0 25px}
+.taqrib-control-panel .tool-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:5px 0}
+.taqrib-control-panel .tool-label{font:600 11px/1.4 system-ui;color:var(--muted);letter-spacing:.03em;min-width:96px}
+.taqrib-control-panel button,.taqrib-navigation button{font:12px/1.4 system-ui;border:1px solid var(--rule);border-radius:5px;background:var(--paper);color:var(--ink);padding:8px 11px;min-height:34px}
+.taqrib-control-panel button[aria-pressed=true]{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.taqrib-control-panel button:focus-visible,.taqrib-unit button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.taqrib-control-panel .toggle-caveat{font:11px/1.5 system-ui;color:var(--muted);margin:6px 0}
+.taqrib-progress,.taqrib-import-status{font:12px/1.6 system-ui;color:var(--muted);margin:6px 0 12px}
+.taqrib-navigation{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin:8px 0 22px;font:12px system-ui;color:var(--muted)}
+.taqrib-navigation[hidden]{display:none}
+.taqrib-navigation button:disabled{opacity:.4;cursor:default}
+.taqrib-unit .taqrib-unit-heading{padding-bottom:12px}
+.taqrib-unit h3{margin:4px 0 8px}
+.taqrib-unit .unit-status{margin:2px 0 8px}
+.quality-flag{display:inline-block;margin:0;color:var(--muted);font:11px/1.5 system-ui}
+.taqrib-unit .layer-block{border-top:1px solid var(--rule)}
+.taqrib-unit .layer-head{padding:11px 20px;display:flex;gap:8px;align-items:baseline;justify-content:space-between;flex-wrap:wrap;background:var(--soft)}
+.taqrib-unit .layer-head strong{font:600 14px Georgia,serif;color:var(--ink)}
+.taqrib-unit .layer-head small{font:11px/1.5 system-ui;color:var(--muted)}
+.taqrib-unit .layer-block .reading{border-top:0}
+.taqrib-unit .margin-layer .layer-head,.taqrib-unit .wasim-layer .layer-head{background:var(--paper)}
+.taqrib-unit .missing-text{font-style:italic;color:var(--muted);font-size:.79em}
+.taqrib-unit .editorial-notes{border-top:1px solid var(--rule);background:var(--soft);padding:14px 20px;font:13px/1.6 system-ui}
+.taqrib-unit .editorial-notes summary{cursor:pointer;color:var(--accent)}
+.taqrib-unit .editorial-notes li{margin:8px 0}
+.taqrib-unit .taqrib-card-foot{padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid var(--rule);font:11px/1.4 system-ui;color:var(--muted)}
+.taqrib-unit .copy-cite{padding:6px 9px;background:transparent;border:1px solid var(--rule);border-radius:5px;color:var(--accent);font:11px system-ui}
+.taqrib-unit .empty-layer{padding:15px 20px;color:var(--muted);font-size:14px}
+#readings[data-order="ar-first"] .reading .arabic{order:-1;border-left:0;border-right:1px solid var(--rule)}
+#readings[data-order="ar-first"] .reading .english{order:0}
+#readings.lang-en .reading .english{order:0}
+#readings.lang-ar .reading .arabic{order:0;border:0}
+.taqrib-quicklinks{display:flex;gap:14px;flex-wrap:wrap;font:12px system-ui;margin-top:15px}
+.taqrib-toc-caption{font:11px/1.5 system-ui;color:var(--muted);margin:5px 0 9px}
+@media(max-width:860px){
+ .taqrib-control-panel .tool-label{flex:0 0 100%;margin-top:6px}
+ .taqrib-unit .layer-head{padding:10px 16px}
+ .taqrib-unit .taqrib-card-foot{padding:10px 16px}
+ #readings[data-order="ar-first"] .reading .arabic{border:0;border-bottom:1px solid var(--rule)}
+ .taqrib-unit .english,.taqrib-unit .arabic{padding:16px}
+ .taqrib-navigation{justify-content:space-between}
+}
+@media print{
+ .taqrib-control-panel,.taqrib-navigation,.taqrib-card-foot button{display:none!important}
+ .taqrib-unit{break-inside:auto;page-break-inside:auto}
+ .taqrib-unit .layer-block{break-inside:avoid}
+}
