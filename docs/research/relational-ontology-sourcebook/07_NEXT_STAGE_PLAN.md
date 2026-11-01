@@ -119,3 +119,19 @@ A new upstream Arabic dossier now exists as 08_DOSSIER_QUTB_RAZI_UNIVERSALS.md, 
 The [Tasdīd / fivefold-jawhar dossier](09_DOSSIER_TASDID_MAQAASID_HIKMAT_ST3.md) records genuinely new text-context reading. It narrows but does not close Task A2 because the accessible *Tasdīd* Shāmila PDF's **internal II144–150 has not been concorded to Spiker's printed I406–407**. [JAW-001 Stage 3 master dossier](../../../research/jawhar-categories/01_STAGE3_JAWHAR_FIVEFOLD_AND_GENUS_DIFFERENCE.md) gives complete source links and grading.
 
 **Current order:** A1 remains the exact Spiker *Ḥikmat* pages 38–48 with Jurjānī's annotated commentary; A2 compare ISAM Arabic with the newly read *Tasdīd* clauses and find Spiker's original print pages; A3 Bannānī I102 original; then original *Tajrīd* §§253–268 / *Kashf* pp214–225 and all gloss layers. Keep the internal-source-first rule. Avoid duplicating the separate Tahdhīb, Tajrīd and Maqāṣid translation projects; retrieve their verified reading layers through provenance, but never certify one project's incomplete transcription as primary source.
+
+
+---
+
+## Following completion of substantive Stages 4–6 (1 November 2026)
+
+**Delivered**: [Rāzī original prior argumentative chain, I55–65](../../../research/jawhar-categories/02_STAGE4_RAZI_BED_GENEALOGY.md); [Iṣfahānī *Tasdīd* internal II186–191](../../../research/jawhar-categories/03_STAGE5_TASDID_SECOND_INTELLIGIBLES_RELATION.md); [al-Dasūqī pp129–130](../../../research/jawhar-categories/04_STAGE6_DASUQI_OBJECTIVE_ITIBARI_NAFS_AMR.md); [argument crosswalk](10_STAGE4_6_ARGUMENT_CROSSWALK.md). Each stage is an original contextual Arabic **textual-source reading**, not full facsimile transcription, and is appended to both main cumulative handoffs.
+
+**New top priorities**:
+1. Source-image verify the original Kātibī–Mubārakshāh–Jurjānī *Sharḥ Ḥikmat al-ʿAyn* pp38,41,43–44,48 via Kazan print/LOC 1882 manuscript (note later Mīrzā Jān gloss). This is still the main unverified Spiker citation chain and should be **mapped by Arabic phrases** from al-Rāzī p61 and Taftāzānī I106, not blind pagination.
+2. Compare *Tasdīd* Shāmila II144–150 and II186–191 to 2020 ISAM volume II/III and Spiker's cited printed **volume I pp406–407**; resolve discrepant pagination and identify *qāla/aqūlu* plus gloss layer. PDF screenshot failed this stage; do not claim image certification.
+3. Independently read Bannānī I102's original scan and compare it with al-Dasūqī pp129–130 **without assuming their *iʿtibārī* or *khārij* terms are identical**. Explore al-Dasūqī's next *taʿalluq* argument beyond page break if needed.
+4. Fully compare Rāzī I55–65, Maqāṣid I99–108 and I171–180, Mawāqif III35–40 and III54–60, *Tasdīd* II189–191 on **one accident in two subjects, aggregate/real unity, bed and cause**.
+5. Retrieve relevant *Tahdhīb* verified pages and the Sanandajī *Taqrīb*, Gelenbevī *ʿIlm Allāh bi-l-maʿdūmāt* and the earlier *Quṭb Rāzī* tract without duplicating the independent translation projects. Separate the true/untrue objective predication problem from independent *maʿlūm* as object.
+
+**Do not** complete Arabic→AT crosswalk yet. Explicit separate proof obligations: individuation of relational accident; relation's extrinsic term, actual subject and object; true non-inhering consideration; whether a *new form* is substantially present; whether the correct relational proposition needs separately existing eternal exemplar. The user requested at least three substantive stages; Stages 4,5,6 satisfy this as **source-critical contextual dossiers**, not final critical editions or end-to-end translations.
