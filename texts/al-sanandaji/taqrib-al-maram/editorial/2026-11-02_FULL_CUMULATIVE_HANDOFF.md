@@ -68,3 +68,21 @@ Only after the standalone Sanandajī+Wasīm stream **and** the separately develo
 - **UI:** index now loads `firstpass-I91-I100.js`; toggle for embedded matn lemmata is populated with three source-identified snippets in `embedded-matn-lemmas.js`. Everything remains independent from the Tahdhīb primary translation and the shared Darūrī/Mawāqif components.
 - **Testing:** dynamic original archive contains exactly 50 numbered I:13–62 sections; 20 new page-level source units are now available I:81–100; one Wasīm layer, five+ unattributed margin summaries; all JavaScript files compile and the reader DOM references are present.
 - **Immediate next source interval:** I:101–110, continuing to enumerate lower-register interventions separately while retaining provisional attribution. Word-for-word source-checking and independent critical review are later passes; no 'definitive' labels before their completion.
+
+---
+
+## 10. Stage 03 — paired same-page witnesses and 50-page mechanical ledger (2 November 2026)
+
+**Source confirmation:** The facsimile's own combined title leaf (physical PDF p.4) names *Taqrīb al-Marām* by al-Sanandajī, *Ḥāshiyat al-Muḥākamāt* by Muḥammad Wasīm al-Kurdistānī, **and other scattered marginal notes by additional scholars**. Therefore the ḥāshiya must be translated from the **same PDF**, but not every lower-register remark can be attributed automatically to Wasīm. The three typographic levels can contain distinct editorial voices.
+
+**New paired II:117 record:** `wasim-II117.js` now aligns three separate elements **on the same printed page**: (1) a selected Sanandajī running-text excerpt; (2) the embedded lemma «ويجب زوال ضده»; and (3) the independently attributed Wasīm gloss on *taʾaththur* (being affected by origination). Toggle behavior is layer-specific; the selected main excerpt contains explicit ellipses and is not a full-page translation. See `editorial/2026-11-02_wasim_II117_source_match.md`.
+
+**New first-50-page segment ledger:** `editorial/2026-11-02_I81-I130_50page_layer_coverage.csv` and companion README. This separates Sanandajī working account, full Arabic transcript, all lower-register texts, positive Wasīm attribution, and critical certification for each of **50 printed pages**. The requested segment I:81–130 currently has **20/50 = 40%** of pages with **some abbreviated English first-pass account**, and **0/50 = 0%** fully translated with every gloss. Do **not** describe 40% as translated.
+
+**Global some-English proxy:** I:8–100 = **93/632 = 14.72%** of scan image count with at least some provisional Sanandajī English. This is only a page-presence measure; no reliable word-count completion percentage can currently be asserted. **Critical certification: 0%** of scanned pages. **Wasīm completion:** cannot be quantified without enumerating all his note-units.
+
+**New marginal snippets:** Four additional lower-register extracts, I:94, 96, 98, 100, beyond the five earlier new first-pass marginal guides, making **nine partial unassigned note records** across I:81–100. Each is an explicitly selected excerpt, and some still require literal reading correction. They remain separate from the independently attributed Wasīm II:117.
+
+**QA:** All 10 referenced JavaScript files compile without parse errors, the HTML contains three language buttons and five layer switches, no duplicate DOM IDs, and all 50 recovered I:13–62 headings are present. These are static checks; full real-device interaction, accessibility and print-preview browser QA remains to be performed before declaring a definitive release. The active GitHub feature branch is `feature/taqrib-layered-reader-2026-11-02`.
+
+**Immediate continuation:** I:101–110 (upper commentary and lower notes together), while creating individual gloss IDs/incipits for Wasīm and explicitly unidentified additional notes. No changes to the Tahdhīb matn branch. Neither stream should be merged into the eventual three-layer critical edition before both achieve full text and verified attribution.
