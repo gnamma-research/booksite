@@ -56,3 +56,15 @@ Only after the standalone Sanandajī+Wasīm stream **and** the separately develo
 - Repo `gnamma-research/booksite`; directory `texts/al-sanandaji/taqrib-al-maram/`.
 - Static validation during this release found **50** distinct I:13–62 archive entries, **10** new I:81–90 records, **one** Wasīm II:117 record, **no** JavaScript parse error, and **no** missing required DOM ID in the changed HTML.
 - The manuscript PDF has **no embedded text**, so full literal translation requires further **manual visual** transcription and independent review.
+
+
+---
+
+## 9. Stage 02 cumulative continuation (2 November 2026; supersedes earlier numeric checkpoint)
+
+- **New source-facing first-pass page accounts:** volume I **91–100** (physical PDF **104–113**); ten numbered entries `P1.091`–`P1.100` in `firstpass-I91-I100.js` and `editorial/2026-11-02_firstpass_I91-I100.md`. These are individually inspected **abbreviated interpretive summaries**, not whole-page literal translations.
+- **Cumulative first-pass some-coverage denominator:** printed I:8–100 inclusive = **93 pages with some English among 632 PDF page images = 14.72%** of scanned-page counts, **not** completion of Arabic words / ḥāshiya notes / full translation. The preexisting I:13–62 fifty-page English draft is reused, not retranslated. The Stage 01 value 83/632 = 13.13% is retained above only as the *earlier checkpoint*.
+- **Critically certified complete pages:** **0/632 = 0%**. **Wasīm:** one separate image-matched and independently attributed excerpt II:117, with no established denominator for the gloss corpus. Upper-register and lower-register omissions still require a full new pass.
+- **UI:** index now loads `firstpass-I91-I100.js`; toggle for embedded matn lemmata is populated with three source-identified snippets in `embedded-matn-lemmas.js`. Everything remains independent from the Tahdhīb primary translation and the shared Darūrī/Mawāqif components.
+- **Testing:** dynamic original archive contains exactly 50 numbered I:13–62 sections; 20 new page-level source units are now available I:81–100; one Wasīm layer, five+ unattributed margin summaries; all JavaScript files compile and the reader DOM references are present.
+- **Immediate next source interval:** I:101–110, continuing to enumerate lower-register interventions separately while retaining provisional attribution. Word-for-word source-checking and independent critical review are later passes; no 'definitive' labels before their completion.
