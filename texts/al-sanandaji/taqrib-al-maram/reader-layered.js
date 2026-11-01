@@ -66,7 +66,7 @@ function render(){const selected=eligible();state.focus=Math.max(0,Math.min(stat
  for(let i=0;i<selected.length;i++){const u=selected[i],li=el("li"),a=el("a","",u.id+" · "+(u.page<9999?(u.volume==="II"?"II:":"I:")+u.page+" · ":"")+u.title);a.href="#u-"+u.id.replaceAll(".","-");a.addEventListener("click",ev=>{if(state.mode==="focus"){ev.preventDefault();state.focus=i;render()}toc.classList.remove("open")});li.append(a);toc.append(li)}
  if(!selected.length)main.append(el("p","", "No passages match these filters."));
  main.className="lang-"+state.lang;main.dataset.order=state.order;
- const c=selected.length;count.textContent=c+" records · 133/632 scanned pages represented by some provisional English (21.04% page-presence proxy; not text completeness) · Wasīm: 1 source-matched fragment; total unit count not yet established · critically complete pages: 0";
+ const c=selected.length;count.textContent=c+" records · 153/615 numbered pages have SOME preliminary English (24.88% page-presence only; NOT text translated) · Wasīm: 1 source-matched fragment; total unit count not yet established · critically complete pages: 0";
  const nav=$("taqrib-navigation");if(nav){nav.hidden=state.mode!=="focus";$("taqrib-position").textContent=selected.length?(state.focus+1)+" / "+selected.length:"0 / 0";$("taqrib-prev").disabled=state.focus===0;$("taqrib-next").disabled=state.focus>=selected.length-1;}
  controlSync();}
 function bind(){search.addEventListener("input",()=>{state.focus=0;render()});$("toc-toggle").addEventListener("click",()=>{const open=toc.classList.toggle("open");$("toc-toggle").setAttribute("aria-expanded",String(open));});
