@@ -57,3 +57,8 @@ In a new chat: **Read all linked Gnamma research files from this folder. Continu
 ## Stage 2.2 upstream source completed (2026-10-31)
 
 An additional argument-bounded upstream Arabic source is now archived: [08_DOSSIER_QUTB_RAZI_UNIVERSALS.md](08_DOSSIER_QUTB_RAZI_UNIVERSALS.md). Quṭb al-Dīn al-Rāzī, Risāla fī Taḥqīq al-Kulliyyāt (five-manuscript edited 2020 public Arabic text), explicitly differentiates *ṣūra* as an individual mental *kayfiyya* and as *al-maʿlūm* distinguished through the former; discusses three positions on whether genus/differentia are externally separate; criticizes inference from mental compositional distinctions to multiple outside existences. Source https://atharah.net/mission-in-achieving-totalities/ . This witness is an edited web publication, not independently re-collated manuscripts.
+
+
+## Current addition — 1 November 2026 (Stage 2.3)
+
+After reading the entire JAW-001 cumulative master, Stage 3 expanded the classification of *jawhar* and the genus–differentia problem. [Read new dossier 09](09_DOSSIER_TASDID_MAQAASID_HIKMAT_ST3.md) and [JAW-001 Stage 3](../../../research/jawhar-categories/01_STAGE3_JAWHAR_FIVEFOLD_AND_GENUS_DIFFERENCE.md); prior stages and their cautions remain operative. An independently accessible *Tasdīd* textual PDF demonstrates that genus and differentia resemble, rather than universally identify with, matter and form; the specific difference does not make genus exist in external reality. **Tasdīd's exact Spiker printed pagination is not verified.** The next principal targets remain a legible original *Ḥikmat al-ʿAyn* gloss, ISAM *Tasdīd* image concordance and Bannānī I102.
