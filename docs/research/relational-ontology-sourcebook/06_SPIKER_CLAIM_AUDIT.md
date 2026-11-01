@@ -93,3 +93,20 @@ The Quṭb al-Dīn al-Rāzī *Risāla fī Taḥqīq al-Kulliyyāt* (https://atha
 - Evidence levels for Spiker's own original citations remain UNCHANGED: a nearby author reporting a doctrine cannot verify the exact pages Spiker cites.
 
 The earlier source text is not permission to import AT terminology such as species expressa or suprasubjectivity as if it were an exact translation. Full comparative crosswalk is a later stage.
+
+
+---
+
+## Stage 2.3 cross-audit — the new Tasdīd comparison (2026-11-01)
+
+For full Arabic witness context and explicit uncertainties see [new source dossier 09](09_DOSSIER_TASDID_MAQAASID_HIKMAT_ST3.md) and [JAW-001 Stage 3](../../../research/jawhar-categories/01_STAGE3_JAWHAR_FIVEFOLD_AND_GENUS_DIFFERENCE.md).
+
+| SP claim | New source evidence | Editorial decision |
+|---|---|---|
+| SP-02/03 | *Maqāṣid* III5–12 openly treats the philosopher's fivefold *jawhar* as conditional on contested atomism/immateriality/hylomorphism; *Ḥikmat* pp210–212 sharply distinguishes matter/form from subject/accident | Qualify broad use of “substance”; earlier evidence grades retained |
+| SP-04 / Spiker n134 | Readable *Tasdīd* commentary (internal vol. II pp144–148) says genus/differentia are NOT numerically separate extramentally, can be derived from actual external principles or not; causal role of faṣl for jins is intellective; explicitly “wa-tawahhum kawn al-faṣl ʿilla li-ṭabīʿat al-jins fī al-khārij khaṭaʾ” | **Strong contextual qualification** to generalized genus≈matter and difference≈form, but **NOT** verified as precisely his edition I406–407. No false E upgrade |
+| SP-05/09/11 | *Maqāṣid* III7 chair-shape example is illustrative; III8–11 distinguish accidental *taʾlīf* and formed bodies; inherited I172 calls artifact shape accidental *hayʾa* | Stronger reason **not** to infer independent bed-substance from a mixed quiddity; bed origin/Jurjānī gloss still not certified |
+| SP-10 | *Tasdīd* II150 explicitly distinguishes hypothetical and genuine *iʿtibārī* composites | Historical parallel; **not** confirmation of Bannānī I102 or an independent pre-intellectual realm |
+| SP-12/17 | The sources' conditional category and cognitive explanation do not themselves establish impossibility of all individually real relations, nor a separate exemplary ontological domain | Remain Spiker-specific philosophical arguments to test, not acquired primary conclusions |
+
+**Caution:** The Shāmila-generated PDF is textual reading with a PDF screenshot spot check, NOT full edition-by-edition image collation. The 2020 ISAM Arabic volumes and Spiker's I406–407 print pagination remain unaligned. No final comparative AT judgment is implied.
