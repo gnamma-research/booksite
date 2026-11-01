@@ -244,3 +244,52 @@ Follow I.173–180 with:
 **Next exact proof obligations:** (1) image/page collate *Ḥikmat* Spiker pp38–48 incl. Jurjānī's separate gloss; (2) ISAM 2020 *Tasdīd* vols 2/3 and cited earlier print I406–407 align passage by wording and context; (3) *Tajrīd* 253–268 and al-Ḥillī 214–225 complete with marginal voices; (4) Bannānī 102 scan, *Mawāqif* source-layer prints; (5) source-ground Spiker bed/army and only then compare to Aquinas/Poinsot.
 
 **Stage 3 readiness:** conceptual reconstruction improved and new readable Arabic source passages documented; **not** complete facsimile/diplomatic collation, publication-grade critical edition, definitive translation, or finalized Spiker audit.
+
+
+---
+
+# Stage 4 — Rāzī's full antecedent to the bed and composition problem (2026-11-01)
+
+**Prior Stages 1–3 retained without alteration.** Full original stage work and argument map: [02_STAGE4_RAZI_BED_GENEALOGY.md](02_STAGE4_RAZI_BED_GENEALOGY.md).
+
+**Independent source acquisition:** Fakhr al-Dīn al-Rāzī, *al-Mabāḥith al-Mashriqiyya*, I pp55–65, direct readable Arabic HTML in the Bīdār/Qom text [pp56–64](https://ablibrary.net/book_content/b/8217/56?lang=ar). Page by page, an argument extending from interdependence and unity, through the intellectual/external composition difference and taxonomy of mixed/relative quiddities, to the nature of predication and the restricted inference to genus/differentia. **READ-HTML; no original scan-page collation.** This is historical antecedent, not yet proof of any direct literary borrowing.
+
+- **JAW001-R (B):** p61 explicitly identifies the bed as wood plus necessary *tartīb* and says the arrangement is an *amr nasabī*, **not** an independently subsisting *māhiyya*. Objective condition on materials does not by itself mean separate substantial form.
+- **JAW001-S (B):** pp57–58 and 62–63 distinguish logical genus/difference from independent external constituents and use *lā bi-sharṭ / bi-sharṭ* to explain genus vs matter. Rāzī answers the objection that specific difference must produce the external genus with an appeal to the real giver of existence and quiddity-priority, not a newly created external generic substance.
+- **JAW001-T (B):** p56 distinguishes genuinely constituted unity from stone beside person, using medicinal compound objection/reply, but this does not settle whether any human-made bed receives a new natural substantial form.
+
+**Spiker:** SP-03/04 and 08/09/11 now have an independent earlier technical locus, not cited by Spiker; SP-17 prior exemplary realm remains an *additional inference*. Context and page images still to compare against Taftāzānī/Mawāqif and source editions. **Stage completed as contextual source reading, not critical edition.**
+
+---
+
+# Stage 5 — Al-Iṣfahānī's suspension on jawhar and two-subject relations (2026-11-01)
+
+**Full stage:** [03_STAGE5_TASDID_SECOND_INTELLIGIBLES_RELATION.md](03_STAGE5_TASDID_SECOND_INTELLIGIBLES_RELATION.md).
+
+**New textual witness read:** *Tasdīd al-Qawāʿid*, internal volume II pp186–191, [Shāmila PDF](https://shamela.org/gen/eea1bf004328c97cd62b22182d5a7a0d_gen.pdf), plus al-Ḥillī *Kashf al-Murād* HTML pp214–218. **PDF TEXT only:** attempted PDF screenshot gave NO REFERER; no facsimile inspection. Spiker's print **I406–407** and the modern ISAM Arabic text volume concordance still outstanding. Ṭūsī's *qāla* and Iṣfahānī's *aqūlu* explicitly separated where identifiable; unassigned marginalia flagged.
+
+- **JAW001-U (B-/PDF text):** *Tasdīd* tests multiple arguments against *jawhar* as highest genus, then expressly declares **“أما أن الجوهر هل هو جنس أم لا؟ فلم يتحقق عندي”**. Al-Iṣfahānī suspends judgment on jawhar's genus status, while denying “accident” is genus of all accidents. Ṭūsī's second-intelligible argument thus has a **documented internal disputant**, without denying actual particular beings.
+- **JAW001-V (B-/PDF text):** in the discussion of indivisible numerical accident and its locus, reports Abū Hāshim's *taʾlīf* alleged to subsist in two jawāhir and relative examples like two neighbors/brothers. The response distinguishes a relation's foundation in the **first** from the opposed relation's foundation in the **second**; numerical sameness of one accidental *ḥāll* in two subjects is rejected.
+- **JAW001-W (analytic inference):** rejecting **one numerically identical accident in two subjects** is not proof that all relations are fictitious or that all individual real relations are impossible. Need original voices and a full ontology of each directional determination, not hasty Thomistic equivalence.
+
+**Spiker:** SP-12 absolute claim about non-extramental individuated relations stays an interpretive/unproven generalization; SP-03/04 require alternative genus/second-intelligible senses. Link back to *Maqāṣid* I176–180 and *Kashf* p218. **Stage completed contextual textual reading only.**
+
+---
+
+# Stage 6 — Al-Dasūqī's independent Sunni distinction of objective iʿtibāriyyāt (2026-11-01)
+
+**Full stage:** [04_STAGE6_DASUQI_OBJECTIVE_ITIBARI_NAFS_AMR.md](04_STAGE6_DASUQI_OBJECTIVE_ITIBARI_NAFS_AMR.md).
+
+**NEW source:** Muḥammad al-Dasūqī, *Ḥāshiya ʿalā Sharḥ Umm al-Barāhīn*, directly read Arabic [p129](https://www.islamarchive.cc/ketab_content/102912/p-129) and [p130](https://www.islamarchive.cc/ketab_content/102912/p-130) in the source's **separately tagged Sanūsī matn (ص), sharḥ (ش), and Dasūqī gloss**. Textual edition reproduced digitally, NOT original printed-image collated.
+
+- **JAW001-X (READ-HTML B):** Al-Dasūqī, in the controversy of divine *ṣifāt maʿnawiyya* and *aḥwāl*, distinguishes (1) *amr iʿtibārī thābit fī nafsihi bi-qaṭʿ al-naẓar ʿan iʿtibār al-muʿtabir wa-farḍ al-fāriḍ* (objective consideration), examples *imkān/ḥudūth*; from (2) a merely considered false attribution, e.g. a generous man falsely treated as miserly. The first lacks **a separate abiding condition qārr fī al-dhāt** yet is not made true by a subjective opinion.
+- **JAW001-Y (READ-HTML B):** being objectively *thābit* does not imply an additional *ḥāl* or real inhering *ʿaraḍ*; the theological debate over what counts as an extra property survives truthful attribution.
+- **JAW001-Z (inference):** this distinction establishes neither an independent exemplary realm nor Spiker's specific account of its source. The difference from Iṣfahānī *Tasdīd* II150 (*ḥaqīqī/farḍī obtains by consideration*) must be confronted, not assumed equivalent.
+
+**Spiker:** SP-10 gains strong independent later Sunni *parallel*, but original **Bannānī I102 is STILL UNVERIFIED**, as is the juristic context and original two meanings of *khārij*. SP-13/14 *taʿalluq* and SP-15 objective blindness now have an internal kalām comparison. SP-17 is still an independent metaphysical proof obligation.
+
+### Cumulative controls and next tasks (after Stage 6)
+
+The three new source dossiers **add to**, do not overwrite: JAW001-A–Q, corrections TC001–008, the separate Relational Ontology 20-claim audit, Taftāzānī I99–108/I171–180, Mawāqif III35–40/III54–60, the Stage3 *Tasdīd* genus/fasl and Quṭb Rāzī universal dossier. **NOT COMPLETE:** original Arabic scanned-page checks, original Kātibī/Mubārakshāh/Jurjānī *Ḥikmat* p38/41/43/44/48, *Tasdīd* printed I406–407 and 2020 ISAM 3vol concordance, Bannānī I102, complete original Ṭūsī Tajrīd/Kashf commentaries, full Spiker n127–165 source re-verification, final AT comparison.
+
+**Next strongest argument unit:** explicitly resolve whether al-Rāzī p61's bed and *Sharḥ al-Mawāqif* III59's disputed bed imply (i) an accidental *hayʾa*, (ii) a grounded relational consideration, or (iii) a fresh substantial form; test the false dilemma using *Tasdīd* and al-Dasūqī while separating authors and editions. Retrieve the original multi-layer *Ḥikmat* printed text to avoid building conclusions on its conjectural attribution. New grades B/READ-HTML or B-/PDF-TEXT are not manuscript-certified. No premature AT crosswalk.
