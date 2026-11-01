@@ -7,10 +7,15 @@
   "category": "selection",
   "quality": "source-matched-wasim",
   "title": "Wasīm: why a newly occurring attribute would entail divine alteration",
-  "arabic": "",
-  "english": "",
+  "arabic": "ورد بأن الممتنع في الأزل هو الاتصاف في الأزل لا نفس الاتصاف ... وضد الحادث حادث لأنه منقطع إلى الحادث ... لأن ما ثبت قدمه امتنع عدمه",
+  "english": "A reply is offered: what is impossible in eternity is being qualified eternally, not qualification as such. … The opposite of an originated attribute is itself originated, since it ceases upon the arrival of that originated attribute. … Whatever has been established as beginningless cannot cease to be.",
+  "sharhCitation": "Sanandajī, Taqrīb al-Marām II:117, source-image upper register, SELECTED clauses separated by explicit ellipses (PDF p.412).",
   "citation": "Ḥāshiyat al-Muḥākamāt, in Taqrīb al-Marām II:117 (scan PDF p.412), lower printed register. Author attribution in independent published quotation by Waleed Ibn al-Salah (2022); critical text still provisional.",
   "notes": [
+    {
+      "type": "New upper-register collation",
+      "text": "Sanandajī's running argument on the same printed page has now been added as a selective, image-inspected excerpt, alongside the independently attributed Wasīm lower-register passage. Omitted intervening wording is marked with ellipses; the whole page is NOT translated."
+    },
     {
       "type": "Source",
       "text": "The quoted Arabic was read directly from the lower register of the uploaded PDF's physical page 412, numbered II:117. It independently matches a modern quoted passage attributing it explicitly to Muḥammad Wasīm."
@@ -25,6 +30,7 @@
     }
   ],
   "layers": {
+    "matn": {"arabic":"ويجب زوال ضده","english":"Its opposite must cease.","citation":"Embedded Tahdhīb lemma within Sanandajī II:117; source-image upper register"},
     "wasim": [
       {
         "arabic": "ثم أقول لا يبعد أن يقال المراد من التغير المحال عليه الحاصل بذلك الاتصاف تأثره بحدوث ذلك الحادث فيه ولو بإحداث من ذاته، فإنه كما يمتنع تأثره بحدوث ذاته ولو من ذاته كذلك يمتنع تأثره بحدوث الوصف فيه ولو من ذاته، فليتأمل تأملا يليق بالمقام.",
