@@ -188,3 +188,37 @@ The source reports Quṭb's historical teachers/pupils in its introduction, but 
 - **ṣūra (صورة):** The *Sharḥ al-Maqāṣid* III7 cites chair/bed shape as form in a classificatory illustration; the earlier I172 text identifies many artificial forms as accidental *hayʾa*. The same surface word may denote a substance-constituting formal principle, a sensible arrangement, or an intelligible nature under analysis. No general “new natural form” from craft examples.
 
 **Verification:** These senses have direct readable textual backing but await facsimile collation and precise attribution of all commentarial layers. They supplement the older entries without replacing them.
+
+
+---
+
+## Stage 2.4–2.6 — newly attested distinctions from Rāzī, Iṣfahānī and al-Dasūqī (1 November 2026)
+
+**This is an additive historical sense ledger**, not replacement of the existing lexicon or an Aquinas/Poinsot translation. Source argument spans and page links: [JAW Stage4 Rāzī](../../../research/jawhar-categories/02_STAGE4_RAZI_BED_GENEALOGY.md), [Stage5 Tasdīd](../../../research/jawhar-categories/03_STAGE5_TASDID_SECOND_INTELLIGIBLES_RELATION.md), [Stage6 Dasūqī](../../../research/jawhar-categories/04_STAGE6_DASUQI_OBJECTIVE_ITIBARI_NAFS_AMR.md).
+
+### Rāzī, *Mabāḥith* I55–65 (HTML read, original image uncollated)
+
+- **تركيب حقيقي / تركيب ذهني / تركيب خارجي**: *Real unity* needs interdependence appropriate to constitutive components, while logical genus/differentia can be mentally distinct without being two actual external items. The combination of a man and adjoining stone is the paradigmatic false substantial unity (p56). Negative or merely accidental shared predicates do not prove genuine essential composition (pp63–65).
+- **جزء مادي / صورة معجونية**: Rāzī's medicinal compound objection/reply (p56) distinguishes ingredient aggregate as material principle from alleged specific resultant medicinal form and effects. A compound's effects do not necessarily prove an autonomous new natural substance; further argument required.
+- **ترتيب / أمر نسبي / ماهية مستقلة بنفسها**: Rāzī p61 bed: wooden components true existents; *tartīb* is required and relational, **not an independent self-subsisting quiddity**. That does not state it is a false or arbitrary relation.
+- **حيوان لا بشرط / بشرط شيء / بشرط لا**: p62–63, whether “animal” acts as essential predicable genus or as restricted material constituent. A material part is not predicable of the complete human; a genus is. *Taqayyud* as prior determination need not be **a separate preceding external being**.
+- **جنس وفصل**: logical distinctions justified by essential positive shared and different constituents, not every instance of sharing and difference; colour/blackness shows external existential unity with cognitive multiplicity.
+- **إضافة / نسبي / حقيقي / ممتزج**: p60–61, mixed types of quiddity's constituents; do not identify “real constituents” with a genuinely new substantial compound.
+
+### Ṭūsī/Iṣfahānī, *Tasdīd* II186–191 (searchable PDF text only, print/screenshot not verified)
+
+- **جوهرية / عرضية / ثواني المعقولات**: original Ṭūsī predicate classification as second intelligibles, challenged in commentarial argument. Do not treat the modes of categorization as separate externally existing accidents simply because predicated; do not infer absence of subjects either.
+- **جنس الجوهر**: Iṣfahānī explicitly says **لم يتحقق عندي** whether jawhar is genus. He denies *ʿaraḍ* is one genus of accidents but suspends jawhar, so do not ascribe a universally fixed ontology of highest genus to post-Tajrīd authors (internal p189).
+- **وحدة الحال / وحدة المحل**: *one and same inhering determination* vs *one locus*. Reference to a second term is not numeric subsistence simultaneously in two substrata.
+- **تأليف / مجاورة / أخوة**: Abū Hāshim's alleged one *taʾlīf* in two jawāhir is objected to; neighbor/brother relative predicates are separately attributed in the two directional subjects. Whether relational predicates have individually real categorical accidents needs further local exposition; no universal iʿtibārī conclusion from this.
+- **نسبة / إضافة / قيام**: distinguish a relation's first-term subject, second-term terminus, actual inherence *qiyām*, and objectively correct predication; categories are not synonyms.
+
+### al-Dasūqī, *Ḥāshiya Sharḥ Umm al-Barāhīn* pp129–130 (HTML read in explicit gloss layer)
+
+- **أمر اعتباري ثابت في نفسه**: *iʿtibārī* determination objectively established **independently of the particular considerer/supposer**, but on the anti-*aḥwāl* reading not a separate abiding *ḥāl* in the substrate. Examples al-Dasūqī actually gives: possibility (*imkān*) and origination (*ḥudūth*). Source https://www.islamarchive.cc/ketab_content/102912/p-129 .
+- **قسم لا تحقق له إلا في الذهن**: mind-only fictitious ascription, e.g. taking genuinely generous person as miserly. Objective *iʿtibārī* vs false mental stipulation not equivalent to “external substance” versus “nothing.” https://www.islamarchive.cc/ketab_content/102912/p-130 .
+- **قارة في الذات / غير قارة في الذات**: debated *aḥwāl* as genuinely abiding in subject vs an objectively true *iʿtibār* not constituting an additional stable attribute of its subject. Whether the objective notion depends on a present knower is separate from whether a distinct positive inhering determination exists.
+- **صفات المعاني / صفات معنوية / حال / تعلق**: divine attributes *maʿānī* vs second-order divine predicates *maʿnawiyya*. *Taʿalluq* is not automatically an additional relation for each mode of predicate attribution; examine the al-Dasūqī layers, and avoid deriving God's ontological nature directly from the grammatical scheme.
+- **“اعتباري حقيقي” in Tasdīd vs “ثابت في نفسه بقطع النظر عن اعتبار المعتبر” in Dasūqī**: different **explicit criteria**: obtains under correct consideration vs remains true regardless of psychological consideration. Do not treat them as historically identical without clarifying actual *iʿtibār* as act vs valid objective consideration as content.
+
+**Retained caveat:** Bannānī p102 remains unverified and the print image of al-Dasūqī is not inspected. These are readings from distinct historical periods and disputes, not one uninterrupted doctrine. The term “real” alone cannot substitute for **thubūt**, **taḥaqquq**, **wujūd**, **qiyām**, or **taʿalluq**.
