@@ -34,3 +34,9 @@ The reader now presents all inherited excerpts, the pre-existing **50-page** int
 ### Continuing first-pass checkpoint (2 November 2026)
 
 Ten additional image-inspected interpretive page accounts **I:91–100** are recorded in [`2026-11-02_firstpass_I91-I100.md`](2026-11-02_firstpass_I91-I100.md) and `firstpass-I91-I100.js`; this page range has **not** been independently certified or fully literally translated. The current book-level indicator is **93/632 pages with some English = 14.72% scanned-page proxy**, but **0/632 critically complete**. Only source-matched Wasīm II:117 is attributed. The paragraph-by-paragraph main-text and all lower marginalia remain to be transcribed and translated fully.
+
+
+## 2 November 2026 — Layered Sanandajī + Wasīm site, cumulative stages 01–03
+The existing 50-page I:13–62 English interpretive draft is retained without retranslation. New image-inspected, **abbreviated** first-pass accounts cover I:81–100 (20 printed pages, facsimile PDF pp.94–113). These entries are *not* continuous literal translations. The previously existing I:63–80 prose remains separate. The 50-page target I:81–130 has 20 page accounts and 0 complete two-register translations; see `2026-11-02_I81-I130_50page_layer_coverage.csv`.
+
+One separately attributed Wasīm passage is image-matched at II:117 (PDF 412), with selected Sanandajī upper-register and matn lemma now aligned on the **same page**. Smaller type in the combined print may also be other scholars' notes; unattributed notes use their own reader layer. Critically verified complete-page count remains zero. See `2026-11-02_FULL_CUMULATIVE_HANDOFF.md` for source witnesses, percentages, multi-pass plan and reproducibility.
