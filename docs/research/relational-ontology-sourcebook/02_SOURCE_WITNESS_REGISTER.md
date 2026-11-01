@@ -69,3 +69,17 @@ S11: 163 Spiker warns thubūt is not interchangeable with wujūd, 165 Gelenbevī
 | S20 | al-Ḥillī, *Kashf al-Murād*, Āmulī edition p218 | https://ablibrary.net/book_content/b/3439/218?lang=ar ; limits inference from demonstrative middle to second intelligible *jawhariyya* | READ-HTML (not facsimile) | Full pp214–225 plus original Ṭūsī matn and editorial margin distinctions outstanding |
 
 **Source grade:** These are new, independently readable **contextual** witnesses, not the exact citations Spiker supplies. Existing S00–S16 status unchanged. Extended [JAW-001 Stage 3 dossier](../../../research/jawhar-categories/01_STAGE3_JAWHAR_FIVEFOLD_AND_GENUS_DIFFERENCE.md).
+
+
+---
+
+## Stages 2.4–2.6 — witnesses acquired on 2026-11-01 (S21–S24)
+
+| ID | Author and argument unit | Digital witness + page/edition | Evidence level | Unresolved source question |
+|---|---|---|---|---|
+| S21 | Fakhr al-Dīn al-Rāzī, *al-Mabāḥith al-Mashriqiyya*, real/mental composition, mixed bed, genus/difference | [Bīdār/Qom transcription I pp55–65](https://ablibrary.net/book_content/b/8217/56?lang=ar); read connected chapters 5–10; p61 exact bed | **READ-HTML B**, original Arabic textual witness, scan NOT collated | Compare printed Bīdār facsimile and editions; historical borrowing to Maqāṣid/Mawāqif not demonstrated |
+| S22 | al-Ṭūsī, *Tajrīd* lemmas / al-Iṣfahānī *Tasdīd* on whether jawhar is genus and accident's numerical individuality | [Shāmila generated PDF](https://shamela.org/gen/eea1bf004328c97cd62b22182d5a7a0d_gen.pdf), internal vol.II pp186–191; connected reading | **READ-PDF-TEXT B-**; screenshot attempted, **NO REFERER**, NOT image verified | Match ISAM critical Arabic and Spiker print I406–407, establish gloss/matn layered pagination |
+| S23 | Muḥammad al-Dasūqī, *Ḥāshiya ʿalā Sharḥ Umm al-Barāhīn* on *aḥwāl*, *ṣifāt maʿnawiyya* and objective *iʿtibār* | [IslamArchive p129](https://www.islamarchive.cc/ketab_content/102912/p-129), [p130](https://www.islamarchive.cc/ketab_content/102912/p-130), al-Ḥalabī edition indicated; *matn/Sharḥ/ḥāshiya* labels distinctly recovered | **READ-HTML B**, not print-image | Exact print folio/edition check and complete *taʿalluq* follow-up; **NOT** exact Bannānī I102 |
+| S24 | *Sharḥ Ḥikmat al-ʿAyn* multiple margins, Kātibī/Mubārakshāh/Jurjānī and Mīrzā Jān | LOC 1882 manuscript catalogue https://www.loc.gov/resource/amed.2017454638/ and Kazan 1903/1904 printed multiple-marginal layers noted by bibliographic research | **CATALOGUED ONLY**, no direct manuscript text or source image read | Map Spiker p38,41,43–44,48 against a legible original and separate exactly each named glossator |
+
+**Integration / indexing:** full [JAW Stage4](../../../research/jawhar-categories/02_STAGE4_RAZI_BED_GENEALOGY.md), [Stage5](../../../research/jawhar-categories/03_STAGE5_TASDID_SECOND_INTELLIGIBLES_RELATION.md), [Stage6](../../../research/jawhar-categories/04_STAGE6_DASUQI_OBJECTIVE_ITIBARI_NAFS_AMR.md), and [argument crosswalk](10_STAGE4_6_ARGUMENT_CROSSWALK.md). Existing S00–S20 and source reliability caveats remain unchanged; identification of a digital source is not facsimile verification.
