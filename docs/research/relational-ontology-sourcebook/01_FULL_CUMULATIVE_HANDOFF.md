@@ -171,3 +171,21 @@ This is directly pertinent to the user's insistence on the exact meanings of ter
 **Implications:** Historical lexicon entries *ṣūra, kayfiyya, maʿlūm, dhihn, shakhsī, kullī, khārij, jins, faṣl, iʿtibār* now require Quṭb's text as a primary sense witness. The internal Spiker audit SP-03/04 on genus–difference and SP-13/14 on mental cognition can now be examined against one further independent earlier author. The Quṭb text does NOT yet establish that al-Taftāzānī, Mubārakshāh, al-Jurjānī or Spiker all adopted its conclusions.
 
 **Still pending:** Cross-collate print sources and exact Spiker references in Hikmat al-ʿAyn, Tasdīd and Bannānī. The final AT comparison remains withheld; preserve these distinctions and do not confuse the psychic mental form and its object.
+
+
+---
+
+## STAGE CHECKPOINT — 1 November 2026, Stage 2.3: consolidated *jawhar* classification and new *Tasdīd* passage
+
+The separate but complementary **JAW-001** master has been fully read (Stages 1–2) and extended as **Stage 3**, preserving its eight original textual corrections and eleven prior source findings. See:
+- [JAW-001 cumulative master](../../../research/jawhar-categories/00_CUMULATIVE_HANDOFF.md)
+- [New Stage 3 critical source dossier](../../../research/jawhar-categories/01_STAGE3_JAWHAR_FIVEFOLD_AND_GENUS_DIFFERENCE.md)
+- [This sourcebook's new 09 dossier](09_DOSSIER_TASDID_MAQAASID_HIKMAT_ST3.md)
+
+**New source readings**: Taftāzānī *Sharḥ al-Maqāṣid* III5–12 (Arabic HTML); *Ḥikmat al-ʿAyn* Mashhad pp210–212 (Arabic HTML, NOT Spiker's p38–48 edition); al-Ḥillī *Kashf al-Murād* p218; searchable *Tasdīd al-Qawāʿid* Shāmila-generated PDF, internal vol. II pp144–150, text extraction plus screenshot call. These are **not** independent facsimile-image-to-edition collations, and *Tasdīd* has **not yet been matched to the Spiker print volume I pp406–407**.
+
+**New results**: The fivefold Peripatetic *jawhar* (body, matter, form, soul, intellect) and theologians' spatial jawhar/body/atom are different, contested classifications. The conditional definition of a substantial quiddity does not make its individual cognitive image an accidentless substance. *Maḥall* is broader than *mawḍūʿ* and *ḥāll* broader than *ʿaraḍ*. The *Tasdīd* text sharply limits the genus/differentia–matter/form parallel: genus and differentia may be distinguished in intellectual conception without independent extramental existences; their role is analogous (ashbah) to material/formal components, and specific difference as a “cause” does not externally produce the genus. The book explicitly rejects the latter inference. The same source distinguishes *iʿtibārī farḍī* from *iʿtibārī ḥaqīqī* but does not establish identity with Bannānī's two senses of perspective-independence. al-Ḥillī objects to the sufficiency of a proof that *jawhariyya* is a second intelligible.
+
+**Claims:** SP-03/04 substantially qualified by new original Arabic context, **not marked citation-exact**; SP-09/10/12/17 still require exact independent originals and separate philosophical premises. No source-specific Spiker verdict and no AT comparison yet.
+
+**Editorial debt preserved:** Direct *Ḥikmat* pp38–48 Jurjānī gloss, *Tasdīd* ISAM Arabic edition/Spiker I406–407 concordance, Bannānī scan I102, four-layer *Mawāqif* printed source, 1912 *Tahdhīb* scan. The pre-existing registers, corrections and uncertainties stand unaltered. This is a source-critical contextual collation stage, not a critical edition or full text translation.
