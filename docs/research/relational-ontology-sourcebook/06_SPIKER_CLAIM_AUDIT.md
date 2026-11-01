@@ -110,3 +110,23 @@ For full Arabic witness context and explicit uncertainties see [new source dossi
 | SP-12/17 | The sources' conditional category and cognitive explanation do not themselves establish impossibility of all individually real relations, nor a separate exemplary ontological domain | Remain Spiker-specific philosophical arguments to test, not acquired primary conclusions |
 
 **Caution:** The Shāmila-generated PDF is textual reading with a PDF screenshot spot check, NOT full edition-by-edition image collation. The 2020 ISAM Arabic volumes and Spiker's I406–407 print pagination remain unaligned. No final comparative AT judgment is implied.
+
+
+---
+
+## Stage 2.4–2.6: additional direct Arabic comparisons and unchanged citation debts (2026-11-01)
+
+[Full crosswalk](10_STAGE4_6_ARGUMENT_CROSSWALK.md), [Rāzī](../../../research/jawhar-categories/02_STAGE4_RAZI_BED_GENEALOGY.md), [Tasdīd](../../../research/jawhar-categories/03_STAGE5_TASDID_SECOND_INTELLIGIBLES_RELATION.md), [al-Dasūqī](../../../research/jawhar-categories/04_STAGE6_DASUQI_OBJECTIVE_ITIBARI_NAFS_AMR.md).
+
+| Spiker numbered claim | Direct new source evidence | Audit consequence, without silently upgrading the *cited* page |
+|---|---|---|
+| SP-03/04 (genus, difference, real composition) | Rāzī *Mabāḥith* I56–58, 62–64: essential genus/difference may be intellectually distinguished while real individual external existence is one; separate material/formal grounds must be defended | Contemporaneous/predecessor independent **E/Q**, Spiker's specific Iṣfahānī *Tasdīd* n134 **still requires exact edition/page concordance** |
+| SP-05 (army unity) | Rāzī distinguishes true composite from aggregate; inherited Mawāqif III60 army actual aggregate “exists without doubt” but additional unity is iʿtibārī | Keep important object *army collection exists*, but no automatic new natural substance |
+| SP-08/09/11/20 (bed arrangement and objectivity) | Rāzī I61 explicitly wood+relative *tartīb* **not independent quiddity**; inherited Taftāzānī I172 artificial form accidental *hayʾa*; Mawāqif III59 multiple gloss objections | Strong internal caution against treating any objective configuration as an additional substantial or separately exemplarial form. **Not** a refutation of objective functional arrangement |
+| SP-10 (two kinds of *iʿtibārī*) | NEW al-Dasūqī *Ḥāshiya Umm al-Barāhīn* pp129–130 explicitly distinguishes objectively established consideration from arbitrary false attribution, within dispute over *aḥwāl* | **Independent Sunni E** supports existence of the two-sense distinction, but **Bannānī I102 cited by Spiker remains U**. The difference from *Tasdīd* II150 still open |
+| SP-12 (relations not individuated extra-mentally as such) | *Tasdīd* II189–191: one numerically same accident cannot subsist in two distinct loci, but converse relations can be numerically distinct, one in each subject, while referring to the other | **I / inference not proved** for blanket “all relations not objective individuals.” A two-term reference ≠ one two-subject inherence; could require nuanced categories of real vs considerational relation |
+| SP-13/14 (knowledge relation and mental existence) | al-Dasūqī p130 moves from *iʿtibārī* predicates to *taʿalluq*, and Quṭb Rāzī already distinguishes psychic form and known content | Helpful distinctions but original Taftāzānī/*Taqrīb* pp50–51 and Taşköprüzāde/Gelenbevī passages are still not directly verified |
+| SP-15 (objective blindness) | al-Dasūqī p130 cites blind person as genuinely qualified by blindness despite lack of positive distinct entity, in a cited gloss discussion | Independent theological parallel; **Gelenbevī p187 original still U** |
+| SP-16/17/18/19 (objective reality and prior exemplary world) | New primary sources support objectivity of true conceptual and relational distinctions with no additional actual individual substance. The bed and ḥāshiya yield no proof of **independent prior exemplary hypostasis** | The further priority/henological claims remain Spiker's independent philosophical thesis requiring separate demonstration and sources. **No blanket negative verdict** |
+
+**Evidence conditions:** Rāzī and al-Dasūqī HTML direct argument contextual reading; Shāmila *Tasdīd* PDF text, screenshot attempted but tool failed. All source-image collation, print alignment and exact attribution caveats unchanged. The older SP01–20 per-claim statuses in the original table remain unless specifically qualified above; no earlier evidence deleted.
