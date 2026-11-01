@@ -169,3 +169,22 @@ Every entry must eventually give: headword and forms; original Arabic with sourc
 - **shakhṣ / tashakhkhuṣ (شخص / تشخص)**: an actual individual cannot be numerically universal, but a mental individual act may be intentionally about many particular subjects.
 
 The source reports Quṭb's historical teachers/pupils in its introduction, but a philosophical genealogy needs independent demonstration of direct uptake. Next compare passage-by-passage with Taftāzānī Maqāṣid I105 and Isfahānī Tasdīd I406–407.
+
+
+---
+
+## Stage 2.3: source-controlled senses (1 November 2026)
+
+**New witnesses:** *Sharḥ al-Maqāṣid* III5–12 (https://ablibrary.net/book_content/b/9291/5?lang=ar); *Ḥikmat al-ʿAyn* and commentary pp210–212 (https://ablibrary.net/book_content/b/8246/210?lang=ar); *Tasdīd* searchable PDF internally II144–150 (https://shamela.org/gen/eea1bf004328c97cd62b22182d5a7a0d_gen.pdf); al-Ḥillī *Kashf* p218 (https://ablibrary.net/book_content/b/3439/218?lang=ar). Full argument and caveats in [JAW-001 Stage 3](../../../research/jawhar-categories/01_STAGE3_JAWHAR_FIVEFOLD_AND_GENUS_DIFFERENCE.md). None of these should be equated silently with Spiker's *Hikmat* pp38–48 or *Tasdīd* I406–407 editions.
+
+- **jawhar (جوهر):** Reported kalām spatial bearer *mutaḥayyiz bi-dhātihi* (divisible body or indivisible atom) versus the reported conditional categorial *māhiyya* which, were it actual among concrete things, would exist *lā fī mawḍūʿ*. Its **five** Peripatetic subtypes (body, matter, form, soul, intellect) presuppose disputed metaphysical claims; don't translate as five fully separate self-sufficient substances.
+- **maḥall/mawḍūʿ (محل / موضوع):** The former is genus-like for a receptive locus, including prime matter dependent for its actual constitution on substantial form, and preconstituted subject whose accidental attribute does not constitute its being. Mere relation to or containment of something does not suffice. An accident in an intermediary can make an external substance an indirect subject of further accident (speed–motion–body).
+- **ḥāll/ʿaraḍ (حالّ / عرض):** *Ḥāll* includes the substantial informing constituent and accidental inhering determination; therefore categorial accident ≠ every inhering item.
+- **jins/faṣl (جنس / فصل):** *Tasdīd* II145–148 states that essential predicables may be **intellectually distinguishable without separate external individual existences**. In certain species they can be extracted from distinct extramental principles, in other intelligible species not. The proposition *al-jins ka-l-mādda, al-faṣl ka-l-ṣūra* is explicitly explicated as **ashbah** (“more like”) with matter/form, not numerically identical.
+- **ʿilla of faṣl (علّة الفصل):** *Tasdīd* II148 explicitly rejects *faṣl* as the cause producing a *jins* in external actuality; it determines the generic concept *fī al-ʿaql* (in understanding). This precludes transfer of a cognitive explanatory use to an actual efficient or material-formal production without another argument.
+- **jism (جسم):** As matter of an animal it is a nonpredicable constitutive principle; as generic essential predicate it is predicable of its species. The two uses **do not indicate two external body individuals** (*Tasdīd* II147). Atomist *jism* may instead be a composite of atomic *jawāhir* rather than prime matter/form.
+- **iʿtibārī ḥaqīqī/farḍī (اعتباري حقيقي / فرضي):** *Tasdīd* II150 contrasts considerations necessarily obtaining **with proper consideration** against freely posited composites whose actuality does not follow merely from considering them. **Open:** precise relation to Bannānī's independent-of-the-considerer distinction. Do not erase explicit **bi-l-iʿtibār**.
+- **jawhariyya/ʿaraḍiyya (جوهرية / عرضية):** al-Ṭūsī's classification as secondary intelligibles receives al-Ḥillī's methodological objection: inferential proof demonstrates a concept is added to primitive understanding, not by itself its being a *maʿqūl thān*.
+- **ṣūra (صورة):** The *Sharḥ al-Maqāṣid* III7 cites chair/bed shape as form in a classificatory illustration; the earlier I172 text identifies many artificial forms as accidental *hayʾa*. The same surface word may denote a substance-constituting formal principle, a sensible arrangement, or an intelligible nature under analysis. No general “new natural form” from craft examples.
+
+**Verification:** These senses have direct readable textual backing but await facsimile collation and precise attribution of all commentarial layers. They supplement the older entries without replacing them.
