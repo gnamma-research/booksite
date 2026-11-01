@@ -28,7 +28,7 @@ function parsePageDrafts(markdown){const chunks=markdown.split(/(?=^### I:\d+\s*
  return out;
 }
 function safeText(u){return [u.id,u.title,u.arabic,u.english,cite(u),...(u.notes||[]).map(n=>n.text),...(u.layers?.margins||[]).map(x=>(x.arabic||"")+" "+(x.english||""))].join(" ").toLocaleLowerCase();}
-function order(){return records.slice().sort((a,b)=>a.page-b.page || (a.category==="selection"?-1:1) - (b.category==="selection"?-1:1) || a._index-b._index);}
+function order(){const pos=u=>(u.volume==="II"?1000:0)+u.page;return records.slice().sort((a,b)=>pos(a)-pos(b) || (a.category==="selection"?-1:1)-(b.category==="selection"?-1:1) || a._index-b._index);}
 function eligible(){const q=search.value.trim().toLocaleLowerCase();return order().filter(u=>(state.scope==="all"||u.category===state.scope)&&(!q||safeText(u).includes(q)));}
 function controlSync(){document.querySelectorAll("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",String(state.lang===b.dataset.lang)));
  document.querySelectorAll("[data-layer]").forEach(b=>b.setAttribute("aria-pressed",String(state.layers[b.dataset.layer])));
@@ -47,7 +47,7 @@ function layerBlock(title,subtitle,ar,en,cls){const block=el("section","layer-bl
 function article(u){const card=el("article","unit taqrib-unit");card.id="u-"+u.id.replaceAll(".","-");
  const head=el("header","taqrib-unit-heading");head.append(el("span","unit-id",u.id),el("h3","",u.title));head.append(el("p","unit-status",cite(u)));card.append(head);
  if(u.category==="page-draft"){head.append(el("p","quality-flag","Page-level English working draft; not a continuous verified translation"));}
- else head.append(el("p","quality-flag",u.quality==="first-pass-image"?"New image-inspected interpretive first pass; not a literal complete-page edition":"Selected source excerpt; omissions may remain"));
+ else head.append(el("p","quality-flag",u.quality==="first-pass-image"?"New image-inspected interpretive first pass; not a literal complete-page edition":u.quality==="source-matched-wasim"?"Wasīm fragment · print image + independent attribution · not critical certification":"Selected source excerpt; omissions may remain"));
  const layers=u.layers||{};let shown=0;
  if(state.layers.matn&&layers.matn){card.append(layerBlock("Quoted Tahdhīb lemma","Embedded quotation only — NOT the independent Tahdhīb edition",layers.matn.arabic,layers.matn.english,"matn-layer"));shown++;}
  if(state.layers.sharh){card.append(layerBlock("Sanandajī · sharḥ",u.category==="page-draft"?"Previously recovered English interpretive draft; Arabic not yet transcribed":"Running commentary / identifiable selected passage",u.arabic,u.english,"sharh-layer"));shown++;}
@@ -60,13 +60,13 @@ function article(u){const card=el("article","unit taqrib-unit");card.id="u-"+u.i
 function render(){const selected=eligible();state.focus=Math.max(0,Math.min(state.focus,selected.length-1));main.replaceChildren();toc.replaceChildren();
  const shown=state.mode==="focus"?selected.slice(state.focus,state.focus+1):selected;
  let last="";
- for(const u of shown){const group=u.page<9999?"I · Printed commentary / p. "+Math.floor((u.page-1)/25)*25+"–"+(Math.floor((u.page-1)/25)*25+25):"Unlocated selections";
+ for(const u of shown){const group=u.page<9999?(u.volume==="II"?"II":"I")+" · Printed "+(u.volume==="II"?"gloss/commentary":"commentary")+" / p. "+(Math.floor((u.page-1)/25)*25+1)+"–"+(Math.floor((u.page-1)/25)*25+25):"Unlocated selections";
  if(group!==last){last=group;main.append(el("h2","chapter",group));}main.append(article(u));}
  // Contents follows all eligible passages, not only the focused item.
- for(let i=0;i<selected.length;i++){const u=selected[i],li=el("li"),a=el("a","",u.id+" · "+(u.page<9999?"I:"+u.page+" · ":"")+u.title);a.href="#u-"+u.id.replaceAll(".","-");a.addEventListener("click",ev=>{if(state.mode==="focus"){ev.preventDefault();state.focus=i;render()}toc.classList.remove("open")});li.append(a);toc.append(li)}
+ for(let i=0;i<selected.length;i++){const u=selected[i],li=el("li"),a=el("a","",u.id+" · "+(u.page<9999?(u.volume==="II"?"II:":"I:")+u.page+" · ":"")+u.title);a.href="#u-"+u.id.replaceAll(".","-");a.addEventListener("click",ev=>{if(state.mode==="focus"){ev.preventDefault();state.focus=i;render()}toc.classList.remove("open")});li.append(a);toc.append(li)}
  if(!selected.length)main.append(el("p","", "No passages match these filters."));
  main.className="lang-"+state.lang;main.dataset.order=state.order;
- const c=selected.length;count.textContent=c+" records · 83/632 pages represented by some first-pass English (13.1%); complete critical pages: 0";
+ const c=selected.length;count.textContent=c+" records · 83/632 pages with provisional main-text English (13.1% page proxy) · Wasīm: 1 source-matched fragment · critical pages: 0";
  const nav=$("taqrib-navigation");if(nav){nav.hidden=state.mode!=="focus";$("taqrib-position").textContent=selected.length?(state.focus+1)+" / "+selected.length:"0 / 0";$("taqrib-prev").disabled=state.focus===0;$("taqrib-next").disabled=state.focus>=selected.length-1;}
  controlSync();}
 function bind(){search.addEventListener("input",()=>{state.focus=0;render()});$("toc-toggle").addEventListener("click",()=>{const open=toc.classList.toggle("open");$("toc-toggle").setAttribute("aria-expanded",String(open));});
