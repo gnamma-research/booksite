@@ -55,3 +55,17 @@ S11: 163 Spiker warns thubūt is not interchangeable with wujūd, 165 Gelenbevī
 6. The most important open issue is whether a relational configuration of a bed is an actual dependent mode or merely conceptually formed—as different glosses in S02 appear to disagree. The answer is not settled by translating it as a 'relational form'.
 
 
+
+
+---
+
+## Stage 2.3 witness additions (2026-11-01): NEVER conflate editions
+
+| ID | Source witness | Text actually read | Status | Exact unresolved issue |
+|---|---|---|---|---|
+| S17 | al-Taftāzānī, *Sharḥ al-Maqāṣid*, vol. III in the Qom/al-Sharīf al-Raḍī pagination | https://ablibrary.net/book_content/b/9291/5?lang=ar through /12; fivefold philosophical jawhar, atomistic jawhar, subject/locus, mental substantial nature, *taʾlīf* | READ-HTML, connected pp5–12 (not source image collated) | Earlier volume/page systems must be mapped; distinguish text/matn/modern notes |
+| S18 | al-Kātibī *Ḥikmat al-ʿAyn* with al-Bukhārī commentary, Mashhad printing | https://ablibrary.net/book_content/b/8246/210?lang=ar through /212; conditions of matter/form and *jawhar*, individual mental image vs quiddity | READ-HTML; separate from Spiker's cited edition | **Does not** fulfill S03: Jurjānī's margin p41, p48, Spiker pp38–48 unverified |
+| S19 | al-Iṣfahānī, *Tasdīd al-Qawāʿid*, Shāmila-generated searchable PDF | https://shamela.org/gen/eea1bf004328c97cd62b22182d5a7a0d_gen.pdf; internal vol. II pp144–150, connected arguments concerning real composition, genus, difference, matter/form, two kinds of *iʿtibārī* | READ-PDF-TEXT and PDF screenshot spot check; no manual printed facsimile comparison | **Does not** fulfill S04: exact match to Spiker print I406–407 and ISAM Arabic 2020 volumes still unproved; distinguish numbered annotations from authored text |
+| S20 | al-Ḥillī, *Kashf al-Murād*, Āmulī edition p218 | https://ablibrary.net/book_content/b/3439/218?lang=ar ; limits inference from demonstrative middle to second intelligible *jawhariyya* | READ-HTML (not facsimile) | Full pp214–225 plus original Ṭūsī matn and editorial margin distinctions outstanding |
+
+**Source grade:** These are new, independently readable **contextual** witnesses, not the exact citations Spiker supplies. Existing S00–S16 status unchanged. Extended [JAW-001 Stage 3 dossier](../../../research/jawhar-categories/01_STAGE3_JAWHAR_FIVEFOLD_AND_GENUS_DIFFERENCE.md).
