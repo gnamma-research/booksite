@@ -110,3 +110,12 @@ The essential core work can proceed with discoverable printed Arabic sources and
 ## Stage 2.2 newly accomplished and added cross-check
 
 A new upstream Arabic dossier now exists as 08_DOSSIER_QUTB_RAZI_UNIVERSALS.md, from an edited 2020 publication of Quṭb al-Dīn al-Rāzī's treatise, based on five listed manuscripts. In the next Tasdīd and Hikmat collations, compare every genus/differentia assertion with the three explicit competing theses in that document. In the mental existence dossier, use Quṭb's distinction between mental actual quality and known object to test whether a doctrine of *relational cognition* is the same question as a doctrine of *mental presence*. Keep the direct-citation hierarchy: Quṭb is an UPSTREAM WITNESS, not a source that by itself verifies Spiker's references.
+
+
+---
+
+## Stage 2.3 completion and next backlog (1 November 2026)
+
+The [Tasdīd / fivefold-jawhar dossier](09_DOSSIER_TASDID_MAQAASID_HIKMAT_ST3.md) records genuinely new text-context reading. It narrows but does not close Task A2 because the accessible *Tasdīd* Shāmila PDF's **internal II144–150 has not been concorded to Spiker's printed I406–407**. [JAW-001 Stage 3 master dossier](../../../research/jawhar-categories/01_STAGE3_JAWHAR_FIVEFOLD_AND_GENUS_DIFFERENCE.md) gives complete source links and grading.
+
+**Current order:** A1 remains the exact Spiker *Ḥikmat* pages 38–48 with Jurjānī's annotated commentary; A2 compare ISAM Arabic with the newly read *Tasdīd* clauses and find Spiker's original print pages; A3 Bannānī I102 original; then original *Tajrīd* §§253–268 / *Kashf* pp214–225 and all gloss layers. Keep the internal-source-first rule. Avoid duplicating the separate Tahdhīb, Tajrīd and Maqāṣid translation projects; retrieve their verified reading layers through provenance, but never certify one project's incomplete transcription as primary source.
