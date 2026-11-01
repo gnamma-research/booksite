@@ -219,3 +219,28 @@ Follow I.173–180 with:
 5. Revisit earlier Spiker paraphrases and references only AFTER Arabic contexts are established.
 
 **End Stage 2. All Stage 1 records remain valid unless expressly corrected above.**
+
+
+---
+
+# Stage 3 · Fivefold jawhar and the Tasdīd control (2026-11-01)
+
+**New cumulative continuation; all Stage 1–2 claims, source-control grades, and TC-001–008 remain preserved above.** Full new [Stage 3 source dossier](01_STAGE3_JAWHAR_FIVEFOLD_AND_GENUS_DIFFERENCE.md); companion record in [Relational Ontology 09](../../docs/research/relational-ontology-sourcebook/09_DOSSIER_TASDID_MAQAASID_HIKMAT_ST3.md).
+
+**New direct readable Arabic source contexts** (HTML/print-transcription, not original scanned-page collation): al-Taftāzānī, *Sharḥ al-Maqāṣid* III pp5–12 in the al-Maktaba al-ʿArabiyya pagination (https://ablibrary.net/book_content/b/9291/5?lang=ar through /12); *Ḥikmat al-ʿAyn* with commentary, Mashhad edition pp210–212 (https://ablibrary.net/book_content/b/8246/210?lang=ar through /212); al-Ḥillī *Kashf* p218 (https://ablibrary.net/book_content/b/3439/218?lang=ar); al-Iṣfahānī, *Tasdīd al-Qawāʿid*, a Shāmila-generated **searchable PDF** (https://shamela.org/gen/eea1bf004328c97cd62b22182d5a7a0d_gen.pdf), internal vol.II pp144–150, textual reading and a PDF screenshot call. **No verified edition concordance with Spiker's cited Tasdīd I406–407**; no image collation of the *Ḥikmat* pp38/41/43–44/48 or *Tasdīd* ISAM 2020 witnesses. Do not equate PDF pagination, scanned printed folio or web HTML number.
+
+**JAW001-L:** The reported Peripatetic fivefold classification (body, prime matter, substantial form, soul and intellect) depends on contested premises, whereas the theologians' scheme divides a spatial jawhar into *jism* and *jawhar fard*. Some ancient philosophers reject separately substantial matter and form. The classifications cannot be translated as one monolithic “substance” taxonomy.
+
+**JAW001-M:** Conditional *jawhar* predicates a quiddity **as it would exist not in an already constituted subject**; the numerically individual mental occurrence of a represented substantial nature can still be a particular accident. The old false antinomy comes from equivocating on whether conditional or actual existence is meant. *Maḥall* encompasses both material recipient and accidental subject; *mawḍūʿ* is narrower.
+
+**JAW001-N/O:** The new *Tasdīd* witness distinguishes conceptual genus and differentia from actual extramental principles. *Al-jins ashbah bi-l-mādda ... al-faṣl ashbah bi-l-ṣūra* is an analogy, not universal ontological identity. The specific difference qualifies as a cause of generic nature's determination **in intellect**; treating the difference as an external cause of the genus is explicitly described as error: *wa-tawahhum kawn al-faṣl ʿilla li-ṭabīʿat al-jins fī al-khārij khaṭaʾ*. A real external nature may ground multiple conceptual predicables without hosting distinct genus/difference entities. The same argument allows some logical divisions to have extramental material/formal principles and others not. **B-grade, searchable PDF witness; print concordance not done**.
+
+**JAW001-P:** The commentary distinguishes *iʿtibārī farḍī* from *iʿtibārī ḥaqīqī* in its argument against arbitrary quiddities. It specifically uses *yalzam taḥaqququhu bi-l-iʿtibār* of the latter; **do not automatically equate that with Bannānī's purported perspective-independent objective establishment**. Bannānī I102 still needs original verification.
+
+**JAW001-Q:** al-Ḥillī, *Kashf* p218, explicitly restricts an argument for the second intelligible status of *jawhariyya*: an inferential middle proves its *additionality*, not simply its being a *maʿqūl thān*. Nor is treating a categorial predicate as second intelligible equivalent to denying actual substances.
+
+**Implications for the earlier Spiker sourcebook:** SP-03/04 now have a contemporaneous caution against conflating mental genus/difference with real external principles; SP-09 still contested; SP-10 acquires an independent lexical witness but Bannānī remains unverified; SP-12 (no extramental real individual relations) and SP-17 (prior exemplary reality) remain interpretive arguments, not consequences proven by this category collation. Sourcebook 20-claim audit not otherwise marked as fully verified.
+
+**Next exact proof obligations:** (1) image/page collate *Ḥikmat* Spiker pp38–48 incl. Jurjānī's separate gloss; (2) ISAM 2020 *Tasdīd* vols 2/3 and cited earlier print I406–407 align passage by wording and context; (3) *Tajrīd* 253–268 and al-Ḥillī 214–225 complete with marginal voices; (4) Bannānī 102 scan, *Mawāqif* source-layer prints; (5) source-ground Spiker bed/army and only then compare to Aquinas/Poinsot.
+
+**Stage 3 readiness:** conceptual reconstruction improved and new readable Arabic source passages documented; **not** complete facsimile/diplomatic collation, publication-grade critical edition, definitive translation, or finalized Spiker audit.
