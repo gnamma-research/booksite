@@ -123,3 +123,8 @@ Continue source-image inspection and *abbreviated initial orientation* at **I:14
 - **Cumulative new JS:** `firstpass-I101-I115.js`, `firstpass-I116-I130.js`, `firstpass-I131-I140.js`; no older JS rewritten.
 - **New MD:** `editorial/2026-11-02_FIRSTPASS_I101-I130.md` and `editorial/2026-11-02_FIRSTPASS_I131-I140.md`.
 - **Next:** I:141, image PDF p.154, no completion claim.
+
+
+### Four direct-language translation specimens added after Stage 05
+
+`source-selected-I106-I140.js` and `editorial/2026-11-02_DIRECT_ARABIC_ENGLISH_EXCERPTS.md` now preserve **four continuous selected upper-register Arabic–English translations**, not merely page-topic summaries: I:106 on choice in complete causality; I:125 on separability in intellect versus external being; I:139 on formal/material causes; I:140 on causes of quiddity versus existence. First-pass Arabic readings were inspected at physical source PDF pp.119, 138, 152 and 153. No second-witness collation is claimed, and **0 complete pages** remains correct. The NAMA reader loads these four as additional source selections alongside, not replacing, their original page-level first-pass guides. Lower-register notes on these pages remain incompletely translated and are not assigned automatically to Wasīm.
