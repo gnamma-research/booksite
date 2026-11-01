@@ -86,3 +86,40 @@ Only after the standalone Sanandajī+Wasīm stream **and** the separately develo
 **QA:** All 10 referenced JavaScript files compile without parse errors, the HTML contains three language buttons and five layer switches, no duplicate DOM IDs, and all 50 recovered I:13–62 headings are present. These are static checks; full real-device interaction, accessibility and print-preview browser QA remains to be performed before declaring a definitive release. The active GitHub feature branch is `feature/taqrib-layered-reader-2026-11-02`.
 
 **Immediate continuation:** I:101–110 (upper commentary and lower notes together), while creating individual gloss IDs/incipits for Wasīm and explicitly unidentified additional notes. No changes to the Tahdhīb matn branch. Neither stream should be merged into the eventual three-layer critical edition before both achieve full text and verified attribution.
+
+
+---
+
+## 11. Stage 04 — substantive next source batch I:101–130 (2 November 2026)
+
+**Authoritative predecessor:** Stage 03 above. Stage 04 does **not** redo I:8–100, the earlier I:13–62 fifty-page draft, the distinct `Risāla fī Muhimmāt Masāʾil al-Iʿtiqād`, or the independently developed Tahdhīb matn.
+
+- **Source witness:** the same photographed 632-page printed two-volume `taqribmaram.pdf`. Printed vol. I **pp.101–130** = **physical PDF pp.114–143** (30 images inspected). Original pagination and note-rule geometry maintained.
+- **New source-facing JS:** `firstpass-I101-I115.js` and `firstpass-I116-I130.js`, stable IDs `P1.101`–`P1.130`. Together they contain 30 argued English page-level preliminary renderings, each with a short Arabic selected anchor, source locator and warning that **a full literal translation is NOT supplied**.
+- **New complete portable textual handoff for these readings:** `editorial/2026-11-02_FIRSTPASS_I101-I130.md`; *complete here means all 30 of these provisional working records, not completeness of the Arabic source.* This has page-by-page English and short Arabic anchors, with 13 new lower-register selected notes flagged **unassigned**; not one is automatically Wasīm.
+- **One particularly important reading:** p.104 describes **two extrinsic necessities** flanking contingent existence, `وجود الممكن محفوف بوجوبين`, not two antecedent or subsequent nonexistences. I:106 specifies that choice is part of the complete cause, `وهذا لا ينافي الاختيار لأن الاختيار من تمام العلة`. Log the distinction in any future clause verification.
+- **Theological transition:** I:109 opens the *qidam/huduth* discussion, I:114–117 differentiates temporal from other forms of precedence, I:118–123 treats unity, plurality and genuine union, and I:124–130 distinguishes conceptual from extramental differentiation in the divine-attribute debate.
+- **50-page target I:81–130:** **50/50 printed pages have SOME abbreviated English working account** (100% *page-presence*, not translation). `editorial/2026-11-02_I81-I130_50page_layer_coverage.csv` now marks all 50 as image-inspected, **0** fully transcribed Arabic, **0** complete literal sharḥ translations, **0** pages with all ḥāshiya notes translated, **0** critically certified. There are **22 partial unassigned lower-register anchor records** across I:81–130 (9 predecessor + 13 new), but they are not the full marginal layer.
+- **Workstream boundary:** one positively attributed Wasīm excerpt II:117 remains as before. No trustworthy Wasīm corpus denominator yet exists, so no % of his ḥāshiya is claimed.
+
+## 12. Stage 05 — extend into the chapter on opposition and four causes, I:131–140
+
+- **Further source images inspected:** printed vol. I **pp.131–140**, physical scan **pp.144–153** (10 pages).
+- **New files:** `firstpass-I131-I140.js` and `editorial/2026-11-02_FIRSTPASS_I131-I140.md`. Stable IDs `P1.131`–`P1.140`; these are again **abbreviated first readings, not complete translations**. The lower margin is not translated completely.
+- **Argument transitions:** psychological/essential attributes and non-identity I:131–132; *taḍādd* and the criterion 'in one subject and one respect' I:133–135; the four divisions of opposition—contradiction, contrariety, privation/possession, correlatives—I:136–137; new `فصل في العلة والمعلول` I:138; material and formal causes I:139; efficient/final causes and conditions I:140.
+- **Cumulative new images in Stages 04–05:** **40** consecutive printed pages I:101–140. They extend, but do not replace, existing I:8–100 material.
+- **Global SOME-English page-presence proxy:** **I:8–140 = 133 printed main-text pages**, or **133/632 physical scanned image pages = 21.04%**. This is explicitly a heterogeneous *proxy*, not the percentage of Arabic words or of either author's complete text translated.
+- **Complete dual-layer page critical certification:** **0/632 = 0%**, no change. Total Wasīm-note translation percentage remains uncomputed. Selections, summaries, literal complete translation and independent verification are different statuses.
+- **Reader:** NAMA URL `https://gnamma-research.github.io/booksite/texts/al-sanandaji/taqrib-al-maram/` now loads all three newly added JS files; preserves language and layer toggles, two-column ordering, full/focus reading, original static archives and separate author attribution. No Tahdhīb text data modified.
+
+### Required next-stage protocol
+
+Continue source-image inspection and *abbreviated initial orientation* at **I:141–160**, then the remaining two volumes, keeping source layers separate. In parallel—or immediately after broad coverage—undertake a genuine **Pass 1 full transcription/full English** by clause in each register, plus **Pass 2 independent visual proof**, **Pass 3 witness collation**, **Pass 4 argument, terminology and author-identification review**. Do not permit earlier 'first-pass page account' entries to masquerade as complete authored text. Pay special attention to negations, changes of interlocutor (qāla/qīla/uʿturiḍa), modal and causal particles, embedded Taftāzānī lemmata, and where a lower-register note crosses the page boundary.
+
+### Source and numerical reproducibility
+
+- Master source `taqribmaram.pdf`, 632 physical scanned leaves; edition reproduction date and original 1318–1319 AH title information retained separately.
+- For all new volume I intervals, pdf_page = printed_page + 13; independently re-check after a bound-volume transition.
+- **Cumulative new JS:** `firstpass-I101-I115.js`, `firstpass-I116-I130.js`, `firstpass-I131-I140.js`; no older JS rewritten.
+- **New MD:** `editorial/2026-11-02_FIRSTPASS_I101-I130.md` and `editorial/2026-11-02_FIRSTPASS_I131-I140.md`.
+- **Next:** I:141, image PDF p.154, no completion claim.
