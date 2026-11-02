@@ -1,11 +1,11 @@
 /* Gnamma Research | Qawāʿid al-Tawḥīd | ancestor's MATN ONLY
-   Twenty-four translated lemmata; digitized Āshtiyānī 1982 pp.48–109.
+   Twenty-eight translated lemmata; digitized Āshtiyānī 1982 pp.48–121.
    Not a complete translation and not a manuscript-critical edition.
    Commentary informs notes ONLY, and is never spliced into the matn.
 */
 window.GNAMMA_QAWAID_MATN = {
   "edition": "Āshtiyānī 1982, digital page transcription",
-  "status": "24-source-located-matn-passages-provisional-unphotographed-uncollated",
+  "status": "28-source-located-matn-passages-provisional-unphotographed-uncollated",
   "units": [
     {
       "id": "QT-001",
@@ -472,6 +472,92 @@ window.GNAMMA_QAWAID_MATN = {
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/305?lang=ar"
+    },
+    {
+      "id": "QT-025",
+      "title": "The First Principle cannot be one separate species among existents",
+      "pages": [
+        111,
+        112
+      ],
+      "arabic": "تنبيه: اعلم أن اعتقاد كون المبدأ الأول الواجب بذاته أنيّة خاصّة نوعيّة، يلزم من فرضها على ما يقولون به رفع ما يعتقدون فيه، مع اعتقاد كونها علّة لسائر الأشياء والأنواع العينيّة الباقية بالمباينة وعدم المناسبة، ومندرجة تحت الوجود العيني المطلق الذي يشمل سائر الأشياء العينيّة المستندة إليها عندهم، اعتبارياً كما ذهب إليه البعض، أو حقيقيّاً موجوداً بنفسه في الأعيان كما ذهب إليه الباقون، مثل اندراجها تحت جميع الكلّيات والأمور العامّة وكثير من الكلّيات الباقية ممّا عداها، فهو بعيد عن الحدس المبين والعقل السليم والفكر الصحيح. فتأمّل في المباحث السالفة والآتية عسى أن يلوح لك الحقّ ويتبيّن اليقين لو كنت من أصحاب الذكاء والفطنة والملكات المرضيّة الفاضلة. على أنّا نقول: إنّا نعلم بالضرورة أنّ الكون الذي يشترك فيه الأكوان العينيّة، كون عينيّ تكون طبيعته عن تلك الأكوان في الأعيان والأذهان، وأمّا اختلافها وتعدّدها فهو بالإضافة والنسب والاعتبارات المخصّصة الحقيقيّة لا غير.",
+      "english": "An admonition: Know that to regard the First Principle, necessary through itself, as a particular species-like entity involves—on their own assumptions—undermining what they believe concerning it. For they also believe that it is the cause of the other things and kinds in external reality while being entirely distinct from them and lacking any affinity with them, and yet that it falls under absolute external existence, which encompasses all the other external things dependent upon it—whether existence is treated as a conceptual consideration, as some hold, or as a real self-subsisting reality, as others hold. They likewise subsume it under all the inclusive universals and general notions, as well as many other universals. This account is remote from illuminating intuition, sound intellect, and correct reasoning. Reflect upon the preceding and forthcoming discussions; perhaps truth will become apparent and certainty clear to you, if you possess intelligence, discernment, and excellent developed dispositions. Furthermore, we maintain that the being in which external beings share is itself objective being, and that the nature of that being is the very reality of those external beings, both outside the mind and in thought; their difference and multiplicity come solely from particularizing relations, connections, and considerations.",
+      "notes": [
+        "The ancestor introduces this lemma as تنبيه. It begins at p. 111 and ends before the descendant's أقول on p. 112. The modern bracketed heading [في إثبات وحدة الوجود] is editorial and excluded.",
+        "Technical target: an iinniyya khāṣṣa nawʿiyya (a specifically kinded 'that-it-is') assigned to the First Principle, while also construing it as a cause unrelated in kind to its effects yet subsumed under shared being and general predicates.",
+        "The clause ‘تكون طبيعته عن تلك الأكوان’ is syntactically suspicious. The grandson paraphrases it at p. 114 as ‘تكون تلك الأكوان ... نفس حقيقة ذلك الكون وعين طبيعتها’. English provisionally reads **عن** as a damaged **عين**-like identity claim on that internal evidence, WITHOUT emending the printed Arabic; manuscript proofing remains essential.",
+        "Claims concerning ontological affinity or lack of affinity between cause and effects must not be conflated with the Peripatetics' conventional treatment of common intelligible predicates."
+      ],
+      "variants": [
+        {
+          "lemma": "يتبيّن",
+          "other": "يبيّن",
+          "remark": "Reported printed variant in the appeal to certainty."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/307?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/308?lang=ar"
+    },
+    {
+      "id": "QT-026",
+      "title": "Why absolute existence, not its determinations, is primordial",
+      "pages": [
+        114
+      ],
+      "arabic": "ومتى عرفت هذا فنقول: إنّ من الأولى الأوجب أن نجعل الكون الحقيقيّ العينيّ الكون المطلق الذي يحيط بسائر المتعيّنات، وأن نجعل المتعيّنات من حيث هي متعيّنات معاني عقليّة وطبائع مأخوذة مع إضافات ونسب اعتباريّة.",
+      "english": "Once this is understood, we say: what is most fitting—and indeed most necessary—is to regard real objective being as absolute being that encompasses every determinate thing, and to regard determinate things, precisely insofar as they are determinate, as intelligible meanings and natures considered together with conceptual relations and relational aspects.",
+      "notes": [
+        "The later sharḥ expressly discusses why the ancestor says 'more fitting' (أولى) rather than adopting a simple assertion; the rhetorical nuance should be preserved.",
+        "The sharp contrast is between objective being as intrinsically real, and the plurality of determinations qua determinations, understood through conceptual/relation-based differentiations.",
+        "At p. 117 the commentator compares the position to light as what reveals colors, against the view that only colors possess reality. The analogy is the grandson's, NOT a sentence of the grandfather's matn."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/310?lang=ar"
+    },
+    {
+      "id": "QT-027",
+      "title": "Pure absolute existence and the non-attribution of names",
+      "pages": [
+        118
+      ],
+      "arabic": "ومتى تقرّر هذا عرفت أنّ الحقّ هو الوجود المطلق الذي لا اختلاف فيه ولا تكثّر، بل هو محض الوجود بحيث لا يمازجه غيره ولا يخلطه سواه. وهو بهذا الاعتبار لا تركيب فيه ولا كثرة، بل لا اسم من الأسماء الحقيقيّة ولا رسم، بل لا نعت له ولا وصف؛ فإنّ الصفات والأسماء والأحكام لا تُنسب إلى الذات المطلق من غير اعتبار التعيّنات ووجوه التخصيصات، وسلب ما عدا الإطلاق المحض عنه الذي يستلزم سلب الأحكام والأوصاف والتعيّنات الحقيقيّة حكم سلبيّ مبدؤه تعيّن غير حقيقيّ، لا تصحّ المناقضة عند التحقيق. فتأمّل ذلك.",
+      "english": "Once this has been established, you will understand that the Real is absolute existence, in which there is neither difference nor multiplicity: it is sheer existence, unmixed with anything other than itself. In this respect there is neither composition nor plurality in it, nor any genuine name or distinguishing description—indeed, no attribute or qualification. For attributes, names, and judgments cannot be assigned to the absolute Essence without considering determinations and modes of particularization. Even the denial of everything other than sheer absoluteness—which entails denying judgments, attributes, and real determinations of it—is a negative judgment whose principle is a determination that is not itself real. Consequently it does not constitute a genuine contradiction upon investigation. Consider this.",
+      "notes": [
+        "The ancestor's original statement is categorical about sheer existence and qualified concerning predication: 'in this respect' (بهذا الاعتبار) and 'without considering determinations' (من غير اعتبار التعيّنات) are indispensable.",
+        "The concluding negative judgment does not imply that the divine Essence acquires a real new accident; the ancestor distinguishes a merely privative intellectual determination from real names and attributes.",
+        "Printed alternatives for عرفت / عرّف and التحقيق / التحقق are logged. The printed 'وفإن' before attributes is evidently garbled; the normalized Arabic gives فإن provisionally, to be checked in a facsimile.",
+        "The accompanying grandson's long account of ghayb al-huwiyya, lā-taʿayyun, and names begins after أقول; it is not included."
+      ],
+      "variants": [
+        {
+          "lemma": "عرفت",
+          "other": "عرّف",
+          "remark": "Reported variant affecting verbal form at the opening."
+        },
+        {
+          "lemma": "التحقيق",
+          "other": "التحقق",
+          "remark": "Alternative reading at the closing statement about contradiction."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/314?lang=ar"
+    },
+    {
+      "id": "QT-028",
+      "title": "Knowledge as the first relation of the Absolute Essence",
+      "pages": [
+        121
+      ],
+      "arabic": "واعلم أنّ تلك الهويّة المطلقة الواحدة بالوحدة الحقيقيّة تلزمها النسبة العلميّة أولاً بحصول نفسها في نفسها لنفسها، وتلزمها بتوسّط هذا اللازم الواجبيّة بالذات والموجبيّة والمفيضيّة وغيرها من الصفات المترتّبة وغير المترتّبة اللازمة لذاتها.",
+      "english": "Know that this absolute identity, one through true unity, has as its first necessary concomitant a relation of knowledge: its self-presence in itself to itself. Through this concomitant there follow intrinsic necessity, the power of necessitation, effusiveness or bestowal, and the other ordered and non-ordered attributes that belong to it through itself.",
+      "notes": [
+        "This is a single ancestral lemma quoted at p. 121, followed by the descendant's independent treatment of the unfolding of the divine names.",
+        "الحصول is a particularly important term. The grandson at p. 128 explicitly explains why the ancestor employs the philosophers' term for cognitive 'obtaining/presence' despite the Akbarian metaphysical commitment to manifestation. Do not translate it as though ordinary acquired representation in a separate knower were necessarily intended.",
+        "الموجبيّة is the capacity of producing or necessitating an effect, not being obligated; المفيضيّة is the quality of imparting/effusing.",
+        "The bracketed editorial phrase وغير المترتبة in the digitized source is kept while recording that its transmission and relation to المترتبة require photographic verification."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/317?lang=ar"
     }
   ]
 };
