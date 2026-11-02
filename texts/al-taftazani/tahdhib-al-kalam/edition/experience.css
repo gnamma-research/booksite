@@ -143,3 +143,29 @@ body[data-reading-style="flow"] .page-strip .page-label{font-size:11px}
  body{background:white;color:black;padding:0}
  body[data-reading-style="immersive"] .main{padding:0}
 }
+
+
+/* Scholarly terminology desk: source-linked, non-authorial and fully searchable. */
+.gn-terms-overlay[hidden]{display:none!important}
+.gn-terms-overlay{position:fixed;inset:0;z-index:44;background:rgba(15,28,27,.73);display:grid;place-items:center;padding:clamp(8px,2vw,23px)}
+.gn-terms-sheet{width:min(780px,100%);max-height:min(91dvh,970px);overflow:hidden;display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--border);border-radius:14px;padding:clamp(16px,3vw,26px);box-shadow:0 24px 70px #0005;color:var(--ink)}
+.gn-terms-head{display:flex;align-items:start;justify-content:space-between;gap:15px}
+.gn-terms-head h2{font:500 clamp(21px,3vw,29px)/1.3 var(--gn-en-reader);margin:0 0 9px}
+.gn-terms-close{border:0;background:transparent;color:var(--ink);font-size:30px;line-height:1;padding:0 7px;cursor:pointer}
+.gn-terms-warning,.gn-terms-footer{font:12px/1.6 system-ui;color:var(--muted);margin:4px 0 14px}
+.gn-terms-search{display:grid;gap:6px;font:600 12px/1.5 system-ui;color:var(--muted)}
+.gn-terms-search input{width:100%;min-height:44px;padding:10px 12px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--ink);font-size:15px}
+.gn-terms-count{font:12px/1.4 system-ui;color:var(--muted);margin:10px 0}
+.gn-terms-list{min-height:0;overflow:auto;padding:3px 5px 10px;scrollbar-width:thin;overscroll-behavior:contain}
+.gn-terms-entry{padding:16px 0;margin:0;border:0;border-bottom:1px solid var(--border)}
+.gn-terms-term-row{display:flex;align-items:baseline;justify-content:space-between;gap:18px}
+.gn-terms-ar{font:500 24px/1.7 var(--gn-ar-reader);text-align:right;margin:0}
+.gn-terms-en{font:650 15px/1.5 var(--gn-en-reader);text-align:start}
+.gn-terms-gloss{font:15px/1.75 var(--gn-en-reader);margin:4px 0 9px}
+.gn-terms-occurrences{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.gn-terms-occurs-label,.gn-terms-more,.gn-terms-unseen{font:11px/1.5 system-ui;color:var(--muted)}
+.gn-terms-source-link{border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--accent);font:600 11px/1.4 system-ui;padding:5px 8px;cursor:pointer}
+.gn-terms-source-link:hover,.gn-terms-source-link:focus-visible{background:var(--wash)}
+.gn-terms-footer{margin:12px 0 0;border-top:1px solid var(--border);padding-top:8px}
+@media(max-width:570px){.gn-terms-term-row{display:block}.gn-terms-ar{text-align:start}.gn-terms-en{display:block}.gn-terms-sheet{max-height:93dvh}}
+@media print{.gn-terms-overlay{display:none!important}}
