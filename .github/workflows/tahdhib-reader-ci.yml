@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/tahdhib-reader-ci.yml"
       - "tools/tahdhib/reader_qa.mjs"
+      - "tools/tahdhib/experience_qa.mjs"
       - "tools/tahdhib/verify_logic_core.py"
       - "tools/tahdhib/verify_fourth_figure_scope.py"
       - "tools/tahdhib/verify_special_modal_temporal_shadow.py"
@@ -146,4 +147,8 @@ jobs:
           SERVER=$!
           trap 'kill "$SERVER" || true' EXIT
           sleep 2
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/reader.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/experience.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/vowels.js
           node tools/tahdhib/reader_qa.mjs
+          node tools/tahdhib/experience_qa.mjs
