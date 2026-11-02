@@ -56,8 +56,8 @@ function createTools(){
  const ref=el('label','gn-reference-choice');const refCheck=el('input');refCheck.type='checkbox';refCheck.id='gn-page-references';refCheck.checked=prefs.pageRefs;ref.append(refCheck,document.createTextNode(' Show discreet source-page locators'));panel.append(ref);
  const vocInfo=el('p','gn-vowels-disclaimer','† Assisted vowel marks are partial learning aids. They are not an independently collated or fully grammatically verified reading.');
  panel.append(vocInfo);options.append(summary,panel);box.append(options);
- $('#gn-ar-font')?.addEventListener('change',e=>{prefs.arFont=e.target.value;savePrefs();apply()});
- $('#gn-en-font')?.addEventListener('change',e=>{prefs.enFont=e.target.value;savePrefs();apply()});
+ box.querySelector('#gn-ar-font')?.addEventListener('change',e=>{prefs.arFont=e.target.value;savePrefs();apply()});
+ box.querySelector('#gn-en-font')?.addEventListener('change',e=>{prefs.enFont=e.target.value;savePrefs();apply()});
  refCheck.addEventListener('change',()=>{prefs.pageRefs=refCheck.checked;savePrefs();apply()});
  const noteButton=control('My reading notes');noteButton.id='gn-notebook-button';noteButton.className='toolbar-icon';noteButton.textContent='Notes';noteButton.addEventListener('click',()=>showNotebook());box.append(noteButton);
  toolbar.append(box);
@@ -144,7 +144,7 @@ function buildFlow(){
   const originalHeading=isOriginalHeading(u);
   const editorialHeading=isLogic&&!!u.title;
   if(!run || originalHeading || editorialHeading){fresh()}
-  if(originalHeading){headingPair(u,run.section,'source');lastPage=u.page;run.count=0;continue}
+  if(originalHeading){headingPair(u,run.section,'source');if(lastPage!==u.page){run.para.en.append(pageMark(u.page,'en',lastPage===null));run.para.ar.append(pageMark(u.page,'ar',lastPage===null))}lastPage=u.page;run.count=0;continue}
   if(editorialHeading){const tag=el('h3','gn-editorial-title',u.title);tag.dataset.headingOrigin='editorial';run.section.prepend(tag)}
   if(lastPage!==u.page){
    run.para.en.append(pageMark(u.page,'en',lastPage===null));
@@ -284,5 +284,5 @@ if(prefs.mode!=='study'){
  if(api.getState().scope!=='continuous')$('[data-scope="continuous"]')?.click();
  else buildFlow();
 }
-window.GnammaTahdhibExperience={getPrefs:()=>({...prefs}),flow:buildFlow,closeNotebook};
+window.GnammaTahdhibExperience={getPrefs:()=>({...prefs}),setMode,flow:buildFlow,closeNotebook,assisted:u=>arabic(u),getNotes:()=>({...notes})};
 })();
