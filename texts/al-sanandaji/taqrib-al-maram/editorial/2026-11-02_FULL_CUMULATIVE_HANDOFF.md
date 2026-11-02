@@ -300,3 +300,58 @@ The **same** supplied 632-page source-image PDF is the witness. This new set is 
 5. Continue the preliminary direct-image pass at I:221–240, **then** the rest of the print. Later passes must produce full Arabic transcription, clause-complete dual-layer English, independent text proof, edition collation and specialist critical review, replacing provisional summaries rather than falsely certifying them.
 
 **The independent al-Taftāzānī Tahdhīb matn in the other chat has not been modified** and remains excluded from a premature definitive three-layer merger.
+
+
+---
+
+## 16. Stage 09 — mental existence, cognition, assent, will and power (2 November 2026)
+
+**Authorial and project boundaries remain unchanged.** The combined 632-image two-volume PDF contains Sanandajī's *Taqrīb al-Marām*, Muḥammad Wasīm al-Kurdistānī's *Ḥāshiyat al-Muḥākamāt*, embedded lemmata from al-Taftāzānī and additional marginal notes by other authors. This project translates the **Sanandajī and Wasīm layers together** but keeps them *separate from the independent Tahdhīb matn project*, and cannot attribute a given note to Wasīm merely because it is below the dividing line.
+
+### A. Exact source and significant textual correction
+
+- **New source segment:** original printed **volume I:221–240**, source PDF physical pages **234–253** (20 pages). All twenty original image pages were individually inspected, not only the generated contact sheets. The PDF has no embedded machine-readable text.
+- **Critical layout fact:** printed **I:222 / physical PDF p.235** has **no new Sanandajī upper-register paragraph**. The entire page is a continuation of the previous small-print marginal discussion. Therefore it is recorded as `marginal_continuation_only_no_upper` in the canonical 615-page register and shown by default with no sharḥ paragraph. Enabling the **Unattributed marginalia** layer displays the short translated fragment there. It must not be credited to Sanandajī or automatically to Wasīm.
+- The source images have mixed upper/lower layouts: e.g., I:225 and I:233 have only a few lines of upper text above long marginal discussions. Do not pretend that translating the upper few lines completes the page. Other pages may have running text through most of their area; visual attribution depends on actual layout, not a rigid page-height threshold.
+
+### B. Philosophical sequence preserved
+
+- **I:221–226:** apprehension (idrāk), knowledge by presence (*ʿilm ḥuḍūrī*), form/image in mental existence, competing accounts of cognitive correspondence, and the proposal that cognition is a mere relation between knower and known.
+- **I:222:** full-page marginal continuation debates mental representation; its opening reports two schools known as **ahl al-ḥaqīqa** and **ahl al-shabaḥ**. The translator must not flatten these positions into the same one.
+- **I:227–229:** four kinds of apprehension: *iḥsās*, *takhayyul*, *tawahhum*, *taʿaqqul*; distinction of individual sensible form from abstract intelligible content, then certainty and assent.
+- **I:230–233:** simple/compound ignorance, acquired and immediate knowledge, possibility of changing cognitive status, and whether created knowledge multiplies when its objects multiply.
+- **I:234–240:** where knowledge is located, will (*irāda*), appetite and aversion, rival theological accounts of will, capacity/power (*qudra*), and obligation beyond capability (*taklīf bimā lā yuṭāq*).
+
+### C. New files and translation counts, carefully qualified
+
+1. `firstpass-I221-I240.js` contains **20 page-specific brief argument synopses or, in I:222, a marginal-only page locator**, with source-image positions and explicit `layout` and `quality` metadata. These are *not continuous source translations*, and short Arabic anchors are not full transcriptions.
+2. `source-selected-I221-I240.js` contains **16 short source-based Arabic–English translations from the upper printed text** and **three short marginal excerpts**, all individually UNASSIGNED pending independent authorship attribution. Some upper text may be quoted Taftāzānī lemmata; that split also requires later source-proof.
+3. `editorial/2026-11-02_STAGE09_I221-I240_SOURCE_AND_TRANSLATION.md` was generated from the two JS sources. It preserves all twenty page records and the exact 19 short direct translated selections, avoiding independently rewritten but divergent English.
+4. `editorial/2026-11-02_STAGE09_I221-I240_LAYER_LEDGER.csv` records one original page per row, whether any upper/main text is present, number of short translated segments, unknown marginal authorship and remaining literal/critical work.
+5. `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv` updates **exactly twenty** records, including the special marginal-only I:222 status, leaving the 595 other numbered page records unchanged.
+6. NAMA `index.html` adds the two JS records; `reader-layered.js` and `source-atlas.js` report the revised page presence and explicitly handle I:222 as lower-register-only.
+
+### D. Cumulative metrics (Stage 09; do not confuse denominators)
+
+| Metric | Current verified status |
+|---|---|
+| Numbered printed source-page locator entries | **615/615 = 100% indexed**, NOT translated |
+| Pages in continuous I:8–240 interval **with some English** | **233/615 = 37.89%** *page-presence proxy*, not translated words |
+| Of those 233, pages with any upper-running-text account | **232** (I:222 is marginal-only) |
+| New short upper-register direct translations | **16** short selections (NOT full pages) |
+| New short lower-register direct translations, individual author unassigned | **3** |
+| New fully verified Wasīm glosses | **0**, separate pre-existing II:117 source match unchanged |
+| Entire upper commentary + every lower marginal note, complete, verified and critically certified | **0/615 = 0%** |
+
+A full source-English word alignment and complete count of **Wasīm's actual marginal units** have still not been established. Therefore a reliable percentage of *the text translated*—rather than the number of pages represented by at least some provisional English—**cannot yet be reported**.
+
+### E. Required continuation and multistage critical method
+
+- Next **rapid source-image** interval **I:241–260 / PDF physical pp.254–273**, respecting marginal-only leaves, source registers, authorial flags and uncertain readings. No prior already translated material should be redone.
+- **Pass 1** must be a complete clause-by-clause transcription and English translation of both all upper-running Sanandajī prose and all marginal ḥāshiya from original images, with numbered incipits and the author of each note when demonstrated. Do not equate the brief Pass 0 guides with a completed first translation pass.
+- **Pass 2:** independent visual Arabic verification of every word, especially negations, modal particles, reported opponent/reply formulas, and page-boundary continuations.
+- **Pass 3:** collate another print or manuscript witness and record genuine variants without silently normalizing.
+- **Pass 4:** argumentative and terminological scholarly revision, including individual gloss authorship. Check the theory of mental existence against the detailed sources rather than substituting generic epistemology.
+- **Pass 5:** mobile, desktop, print/PDF bilingual alignment QA, reader controls, citation copying and preservation tests. Only fully complete and checked work may be labelled definitive.
+
+**No merge** with the independent Tahdhīb matn translation until both standalone streams are critically definitive. The new GitHub changes affect only `texts/al-sanandaji/taqrib-al-maram/` in `gnamma-research/booksite`.
