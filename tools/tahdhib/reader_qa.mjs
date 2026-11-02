@@ -73,6 +73,13 @@ async function check(kind, viewport) {
     assert(!l17.includes('وقد يختص باسم قياس الخلف'), 'L17 comparator wording leaked into Cairo');
     assert(await page.locator('.witness-variant').count() > 0, 'L17 printed comparator panel missing');
     assert(await page.locator('.source-issue:not(.witness-variant)').count() > 0, 'L17 uncertain connector not visibly flagged');
+    await page.goto(new URL(route + '#page=16', base).href, { waitUntil: 'networkidle' });
+    const l16English = await page.locator('#u-L-16 .english').textContent();
+    assert(l16English.includes('A possible premise is not required'), 'L16 figure-II possibility scope explanation absent');
+    assert(l16English.includes('universal-negative case'), 'L16 fourth-figure negative quantity exception absent');
+    const l16Arabic = await page.locator('#u-L-16 .arabic').textContent();
+    assert(l16Arabic.includes('مع الموجبة الموجبتين، ومع السالبة السالبتين'), 'L16 shorter Cairo wording not preserved');
+    assert(!l16Arabic.includes('مع الموجبة الكلية الموجبتين'), 'L16 Cairo contaminated by comparator reading');
   } else {
     const cairo39 = await page.locator('#passages').textContent();
     assert(cairo39.includes('مقدار طبيعة غير قارة'), 'p39 corrected Cairo طبيعة not visible');
