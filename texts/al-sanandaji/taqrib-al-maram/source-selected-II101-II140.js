@@ -277,29 +277,6 @@
     "layers": {}
   },
   {
-    "id": "L.II.117.512",
-    "volume": "II",
-    "page": 117,
-    "pdf": 412,
-    "category": "selection",
-    "quality": "short-image-read-firstpass",
-    "title": "The origination of a contrary and the impossibility of change",
-    "arabic": "وضد الحادث حادث",
-    "english": "The contrary of an originated thing is [itself] originated.",
-    "citation": "Taqrīb al-Marām, combined source printed II:117, image PDF 412, selected Arabic phrase, first-pass visual reading 2 Nov 2026",
-    "notes": [
-      {
-        "type": "Coverage boundary",
-        "text": "Only these quoted Arabic words are directly translated. Complete printed main passage, its interlocutors and the entire lower marginal apparatus remain incomplete."
-      },
-      {
-        "type": "Source-voice qualification",
-        "text": "The upper page contains both the embedded Tahdhīb lemmata and Sanandajī's explanation. Precise ownership of an isolated clause remains subject to the authorial boundary collation."
-      }
-    ],
-    "layers": {}
-  },
-  {
     "id": "L.II.118.513",
     "volume": "II",
     "page": 118,
