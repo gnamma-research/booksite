@@ -169,7 +169,7 @@
     "category": "page-draft",
     "quality": "source-image-meaning-pass",
     "title": "White, black and intermediate colours",
-    "arabic": "الشِّفافة الصَّفْرة والسواد",
+    "arabic": "الصفرة والسواد",
     "english": "The commentary examines blackness, whiteness and intermediate colours in the course of evaluating competing theories of mixtures, light and the visual object. It considers whether a colour may result from blending other qualities and whether an observer's sensation is equivalent to the external thing's possessing that quality. A theory that classifies colours by degrees of illumination must also account for the observed contrasts between differently coloured bodies.",
     "citation": "Taqrīb al-Marām, vol. I:208 · source image PDF p.221 · visually inspected 2 Nov 2026",
     "notes": [
