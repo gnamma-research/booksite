@@ -31,6 +31,7 @@
 <div class="segments" aria-label="Reading scope" role="group"><button data-scope="page" aria-pressed="true">Page</button><button data-scope="continuous" aria-pressed="false">Continuous</button></div>
 <button id="smaller" class="toolbar-icon" aria-label="Decrease font size">A−</button>
 <button id="larger" class="toolbar-icon" aria-label="Increase font size">A+</button>
+<button id="focus" class="toolbar-icon" aria-label="Cycle reading focus">◎ <span>Focus</span></button>
 <button id="theme" class="toolbar-icon" aria-label="Cycle appearance">☼ <span>Theme</span></button>
 <button id="export" class="toolbar-icon" aria-label="Export options">⇩ <span>Export</span></button>
 </div>
@@ -40,6 +41,7 @@
 <p class="foot">Textual basis: Cairo 1912, Maṭbaʿat al-Saʿāda. Clause identifiers are editorial. Statements on source checking refer to the single printed witness, not to independent manuscript agreement. Translation and editorial reconstruction require scholarly confirmation before citation as a definitive edition.</p>
 </main>
 </div>
+<nav class="reading-dock" id="reading-dock" aria-label="Persistent reading navigation"><button id="dock-prev" aria-label="Previous passage">‹ <span id="dock-prev-num"></span></button><button id="dock-current" aria-label="Current page or division">Current position</button><button id="dock-next" aria-label="Next passage"><span id="dock-next-num"></span> ›</button></nav>
 <div class="modal-backdrop" id="export-modal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="export-title"><button id="export-close" class="modal-close" aria-label="Close">×</button><h2 id="export-title">Editions &amp; downloads</h2><p>Export the current structured working corpus or make a printable PDF from the reader. The original facsimile remains a separate witness.</p><div class="download-list"><button data-export="json">Structured corpus · JSON</button><button data-export="csv">Bilingual clause table · CSV</button><button data-export="text">English reading text · TXT</button><button data-export="print">Print / Save as PDF</button><a href="https://archive.org/details/tahdeeb-almanti9" target="_blank" rel="noopener noreferrer">Original 1912 Cairo facsimile ↗</a></div></section></div>
 <script src="data.js"></script><script defer src="reader.js"></script>
 </body></html>
