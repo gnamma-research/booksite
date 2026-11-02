@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/tahdhib-pdfs.yml"
       - "tools/tahdhib/build_pdfs.py"
+      - "tools/tahdhib/write_pdf_manifests.py"
       - "texts/al-taftazani/tahdhib-al-kalam/edition/data.js"
       - "texts/al-taftazani/tahdhib-al-mantiq/edition/data.js"
 permissions:
@@ -46,6 +47,20 @@ jobs:
               assert len(pdf.pages)>0,(p,'empty PDF')
               assert p.stat().st_size>10_000,(p,'truncated')
               print(p,len(pdf.pages),'pages')
+          PY
+      - name: Register published PDFs with source SHA-256 and per-file checksums
+        run: |
+          python tools/tahdhib/write_pdf_manifests.py
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json
+          for p in Path('texts/al-taftazani').glob('*/edition/pdfs/edition_manifest.json'):
+              obj=json.loads(p.read_text(encoding='utf-8'))
+              assert hashlib.sha256((p.parent.parent / obj['source']).read_bytes()).hexdigest()==obj['source_sha256']
+              assert len(obj['files'])==3
+              for f in obj['files']:
+                  assert hashlib.sha256((p.parent / f['name']).read_bytes()).hexdigest()==f['sha256']
+              print('Verified manifest:',p)
           PY
       - name: Publish versioned working PDFs
         run: |
