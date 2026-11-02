@@ -1,0 +1,59 @@
+name: Tahdhib bilingual PDF editions
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/tahdhib-pdfs.yml"
+      - "tools/tahdhib/build_pdfs.py"
+      - "texts/al-taftazani/tahdhib-al-kalam/edition/data.js"
+      - "texts/al-taftazani/tahdhib-al-mantiq/edition/data.js"
+permissions:
+  contents: write
+concurrency:
+  group: tahdhib-pdf-editions
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Arabic font and PDF rendering dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-hosny-amiri fonts-dejavu-core
+          python -m pip install --upgrade pip
+          python -m pip install 'weasyprint>=62,<70' 'pypdf>=5,<7'
+      - name: Build source-qualified logic and kalam PDF variants
+        run: |
+          python tools/tahdhib/build_pdfs.py --corpus texts/al-taftazani/tahdhib-al-kalam/edition/data.js --output texts/al-taftazani/tahdhib-al-kalam/edition/pdfs
+          python tools/tahdhib/build_pdfs.py --corpus texts/al-taftazani/tahdhib-al-mantiq/edition/data.js --output texts/al-taftazani/tahdhib-al-mantiq/edition/pdfs
+      - name: Verify all six PDFs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          files=sorted(Path('texts/al-taftazani').glob('*/edition/pdfs/*.pdf'))
+          assert len(files)==6, files
+          for p in files:
+              pdf=PdfReader(str(p))
+              assert len(pdf.pages)>0,(p,'empty PDF')
+              assert p.stat().st_size>10_000,(p,'truncated')
+              print(p,len(pdf.pages),'pages')
+          PY
+      - name: Publish versioned working PDFs
+        run: |
+          git config user.name "gnamma-editions-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add texts/al-taftazani/tahdhib-al-kalam/edition/pdfs/ texts/al-taftazani/tahdhib-al-mantiq/edition/pdfs/
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish six source-qualified Tahdhib working PDF editions"
+            git pull --rebase origin master
+            git push origin HEAD:master
+          fi
