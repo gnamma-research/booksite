@@ -42,3 +42,12 @@ C. Recheck every Arabic condition, negative particle, theological attribution, a
 D. Verify regenerated 6 canonical NAMA PDFs and their manifests against the corresponding `data.js` hashes; run both bilingual reader browser regressions. Build/CI success does **not** confer manuscript certification.
 
 **Current two-part readers:** [Logic](../../tahdhib-al-mantiq/edition/) · [Kalām](./).
+
+
+## Stage 100 independent-witness reality check — 3 November 2026
+
+- The **995 AH al-Azhar manuscript** is a real digitized independent candidate, not a second print. Selected photographic pages of its [41-image PDF](https://cp.alukah.net/Manu/Files/Manuscript_6154/Makhtotah.pdf) were inspected. **No precise manuscript folio-side-line matching KAL-077.03 has been established**, so **NO manuscript variant or final p.77 correction** is reported. A manuscript's digitization and its collation are different events.
+- **Princeton Garrett 4139Y**: [the catalogue](https://digital-collections.princeton.edu/i/%D8%AA%D9%87%D8%B0%D9%8A%D8%A8-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82-%D9%88%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AE/item/6a23d92c-5192-4801-a8e9-c40fd9c9118d/metadata) lists the *Tahdhīb al-manṭiq wa-l-kalām* component at fols.1b–21b but describes its origin/incipit as **Tahdhīb al-manṭiq**. Whether that copy includes the *kalām* passages in question cannot be certified from the heading; inspect the actual ending first. Public PDF access was challenged. It has **not** supplied an independent p.77/p.100/p.124 reading.
+- **KAL-077.03**: Cairo has a small graphically difficult group before «على كل كلام» resembling «وفاء». This is printed-only provisional transcription; it is not silently corrected to a conjectured smoother form. Clause ID and English argument remain unchanged, with a clearer editorial warning.
+- **Numerical status is unchanged:** **1,044** clause-aligned bilingual units; **112/113** pages checked against the one Cairo print; original page **77** remains unresolved. No source has been independently collation-certified at the three formerly difficult readings.
+- See the [source and modal non-vacuity dossier](../../tahdhib-al-mantiq/edition/STAGE100_MODAL_NONVACUITY_AND_INDEPENDENT_WITNESS_STATUS.md). The separate Sanandajī–Wasīm commentary translation remains distinct.
