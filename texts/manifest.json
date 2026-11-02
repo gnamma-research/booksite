@@ -201,7 +201,7 @@
       "note": "19 bilingual divisions of the Cairo 1912 logic matn restored in source order, including repaired L.11 modalities and removal of an unwitnessed commentary addition in L.16. Explanatory notes and the النظريات/فطريات variant recorded; independent manuscript collation not complete.",
       "critical_reading": "texts/al-taftazani/tahdhib-al-mantiq/2026-10-31_parallel_reading.md",
       "enhanced_reader_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/",
-      "enhanced_reader_status": "Continuous 19-unit bilingual logic draft; exact rule verification and manuscript collation pending",
+      "enhanced_reader_status": "Stage78: 19/19 complete bilingual logic divisions mapped to Cairo 1912 printed pp3–14; seven compared printed readings recorded; L13 and L16 Cairo text corrected, Stage77 L16 misattribution explicitly retracted. All modal-inference and manuscript proofing remains open.",
       "enhanced_reader_scope": {
         "editorial_divisions": 19
       },
@@ -220,7 +220,9 @@
         }
       ],
       "pdf_edition_status": "Published working editions from canonical corpus; not independent manuscript certified",
-      "edition_audit_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/LOGIC_AUDIT.md"
+      "edition_audit_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE78_CAIRO_LOGIC_COLLATION.md",
+      "printed_witness_comparisons": 7,
+      "cairo_original_logic_page_span": "3–14"
     }
   ],
   "research": [
