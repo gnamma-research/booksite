@@ -1,5 +1,8 @@
 # Tahdhīb al-Manṭiq — Round 2 logical and textual audit
 
+> **Stage 78 editorial correction (2 November 2026):** The Stage 77 claim that Cairo 1912 p. 12 contains «الموجبة الكلية ... السالبة الكلية» was **retracted after direct rereading**. Cairo reads «مع الموجبة الموجبتين، ومع السالبة السالبتين»; the longer wording belongs to the commentary-contained printed witness. Do not cite the old Stage 77 assertion as Cairo wording. See the [Stage 78 collation dossier](STAGE78_CAIRO_LOGIC_COLLATION.md).
+
+
 **2 November 2026.** Source is the continuous nineteen-unit bilingual working translation in the existing Gnamma reader. The 19 divisions are editorial; they do not mean nineteen pages of an original witness.
 
 **Status:** 19/19 units have an English draft. Full Arabic line-by-line print verification, independent manuscript collation, and formal reconstruction of difficult inference rules have **not** yet been certified. This is an audit programme, not a record of completed verification.
