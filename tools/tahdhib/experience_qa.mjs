@@ -17,8 +17,9 @@ async function check(kind,size){
  assert(await page.locator('body[data-reading-style="flow"]').count()===1,kind+' must default to flowing view');
  assert(await page.locator('#flow-passages:not([hidden])').count()===1,'flow surface missing');
  assert(await page.locator('#passages[hidden]').count()===1,'study cards should not be shown behind flowing text');
- assert(await page.locator('#flow-passages .gn-flow-unit').count()===counts*2,
-        'flow lost a clause or duplicates it: '+await page.locator('#flow-passages .gn-flow-unit').count());
+ const semantic=page.locator('#flow-passages .gn-flow-unit,#flow-passages .gn-source-heading [data-clause-id]');
+ assert(await semantic.count()===counts*2,
+        'flow lost a clause or duplicates it: '+await semantic.count());
  assert(await page.locator('#flow-passages .clause').count()===0,'flow still contains boxed clauses');
  assert(await page.locator('#flow-passages .gn-flow-section').count()>0,'flow has no sections');
  assert(await page.evaluate(() => getComputedStyle(document.querySelector('.gn-flow-section')).borderTopWidth)==='0px',
