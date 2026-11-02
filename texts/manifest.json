@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-library-manifest-v1",
   "project": "Gnamma Research",
-  "updated": "2026-10-31",
+  "updated": "2026-11-02",
   "collections": [
     "texts",
     "essays",
@@ -132,7 +132,14 @@
       "note": "All 113 original Cairo 1912 kalam pages have page-linked English draft; selected passages are expanded or clause-verified, but 38 of the older 83 thematic units retain gap=true and other portions are not yet fully literal. Not a definitive edition.",
       "full_reader_url": "texts/al-taftazani/tahdhib-al-kalam/complete/",
       "commentary_layer": "Taqrīb al-Marām · linked selected translations",
-      "cumulative_reader": "texts/al-taftazani/tahdhib-al-kalam/complete/2026-10-31_cumulative_113_page_reader.md"
+      "cumulative_reader": "texts/al-taftazani/tahdhib-al-kalam/complete/2026-10-31_cumulative_113_page_reader.md",
+      "enhanced_reader_url": "texts/al-taftazani/tahdhib-al-kalam/edition/",
+      "enhanced_reader_status": "Stage 75 complete 1,044-clause bilingual working edition; 108/113 Cairo print pages checked; five pending; no independent manuscript certification",
+      "enhanced_reader_scope": {
+        "clauses": 1044,
+        "printed_pages": 113,
+        "cairo_single_print_checked_pages": 108
+      }
     },
     {
       "id": "sanandaji-taqrib-maram",
@@ -176,7 +183,12 @@
       "url": "texts/al-taftazani/tahdhib-al-mantiq/",
       "related_kalam_id": "taftazani-tahdhib-kalam",
       "note": "19 bilingual divisions of the Cairo 1912 logic matn restored in source order, including repaired L.11 modalities and removal of an unwitnessed commentary addition in L.16. Explanatory notes and the النظريات/فطريات variant recorded; independent manuscript collation not complete.",
-      "critical_reading": "texts/al-taftazani/tahdhib-al-mantiq/2026-10-31_parallel_reading.md"
+      "critical_reading": "texts/al-taftazani/tahdhib-al-mantiq/2026-10-31_parallel_reading.md",
+      "enhanced_reader_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/",
+      "enhanced_reader_status": "Continuous 19-unit bilingual logic draft; exact rule verification and manuscript collation pending",
+      "enhanced_reader_scope": {
+        "editorial_divisions": 19
+      }
     }
   ],
   "research": [
