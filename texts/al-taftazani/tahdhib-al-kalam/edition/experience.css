@@ -169,3 +169,14 @@ body[data-reading-style="flow"] .page-strip .page-label{font-size:11px}
 .gn-terms-footer{margin:12px 0 0;border-top:1px solid var(--border);padding-top:8px}
 @media(max-width:570px){.gn-terms-term-row{display:block}.gn-terms-ar{text-align:start}.gn-terms-en{display:block}.gn-terms-sheet{max-height:93dvh}}
 @media print{.gn-terms-overlay{display:none!important}}
+
+
+/* Compact landscape: a tall sticky toolbar can cover the very passage being
+   scrolled into view (especially during keyboard and bookmark navigation).
+   Keep controls in document flow at short viewport heights; the dock remains. */
+@media (max-height: 510px) and (min-width: 701px) {
+ .toolbar { position:relative;top:auto; }
+ .clause, .gn-flow-unit, .flow-page-ref { scroll-margin-top: 14px; }
+ .gn-experience-controls { gap: 4px; }
+ .gn-experience-controls .segments button { min-height: 31px;padding:5px 8px; }
+}
