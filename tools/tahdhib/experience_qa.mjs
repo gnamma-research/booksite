@@ -26,6 +26,25 @@ async function check(kind,size){
         'immersive prose should not have a clause border');
  assert(await page.locator('#flow-passages .flow-page-ref[data-flow-side="en"]').count() ===
     (kind==='kalam'?113:19),'every page or division must keep a discreet locator');
+ // Editorial glossary: independently sourced technical aids, not authorial matn.
+ assert(await page.locator('.gn-terms-button').count()===1,'terminology access is missing');
+ await page.locator('.gn-terms-button').click();
+ assert(await page.locator('#gn-terms-overlay:not([hidden]) .gn-terms-entry').count()>=30,'editorial glossary entries missing');
+ await page.locator('#gn-terms-query').fill('necessity');
+ assert(await page.locator('#gn-terms-overlay .gn-terms-entry').count()>0,'English term search not functioning');
+ await page.locator('#gn-terms-query').fill('العلم');
+ assert(await page.locator('#gn-terms-overlay .gn-terms-source-link').count()>0,'glossary term source link missing');
+ await page.locator('.gn-terms-close').click();
+ assert(await page.locator('#gn-terms-overlay[hidden]').count()===1,'glossary close failed');
+ if(kind==='kalam'){
+  // Study keeps both editorial continuation markers; Flow visually joins them.
+  const a=await page.locator('#flow-u-KAL-015-07-ar').textContent();
+  const b=await page.locator('#flow-u-KAL-016-01-ar').textContent();
+  assert(!/\.\.\.\s*$/.test(a)&&!/^\s*\.\.\./.test(b),'paired source-page ellipses still disrupt flowing Arabic');
+  const sa=await page.locator('#u-KAL-015-07 .arabic').textContent();
+  const sb=await page.locator('#u-KAL-016-01 .arabic').textContent();
+  assert(sa.includes('...')&&sb.includes('...'),'source-critical Study text lost its continuation markers');
+ }
  await page.locator('[data-view="ar"]').click();
  assert(await page.locator('#flow-passages[data-view="ar"]').count()===1,'flow Arabic-only display not active');
  const first=kind==='kalam'?'u-KAL-015-04':'u-L-01';
