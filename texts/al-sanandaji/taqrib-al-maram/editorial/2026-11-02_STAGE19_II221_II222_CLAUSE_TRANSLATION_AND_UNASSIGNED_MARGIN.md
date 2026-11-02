@@ -72,10 +72,10 @@
 **English:** in matters which reason can know independently, such as the existence of the Creator, His knowledge and His power;
 **Layer:** Sanandajī running explanatory register; Running commentary.
 
-#### B6.M.II222.04 — A difficult reading about reason
-**Arabic [printed II:222; PDF 517]:** ⟦ومعارضته؟ / ومعاضدته؟⟧
-**English:** and [a further function with respect to reason; the printed reading has not yet been settled]
-**Layer:** Unsettled parenthetical reading; editorial conjecture not certified.; The photograph is not sufficiently clear to discriminate the competing readings; do NOT silently normalize to 'assisting' or 'contradicting'.
+#### B6.M.II222.04 — Revelation's assistance to reason (1912 witness verified)
+**Arabic [printed II:222; PDF 517]:** ومعاونته
+**English:** and assisting it [the intellect]
+**Layer:** Parenthesized al-Taftāzānī lemma, independently confirmed from the 1912 Cairo printed *Tahdhīb* p.97. The earlier conjectures ومعارضته / ومعاضدته are rejected. Sanandajī's following explanatory text specifies reason's inability to establish some theological matters on its own.
 
 #### B6.S.II222.04 — Matters reason cannot establish independently
 **Arabic [printed II:222; PDF 517]:** فيما لا يستقل به مثل الكلام والرؤية والمعاد الجسماني
@@ -123,7 +123,7 @@ The principal logical distinction is between a **conjunction** of scripture AND 
 
 ### C. Critical apparatus, exclusions, and next source step
 
-The main segment's reading of the brief lemma about reason is **open**: the source image may read ومعارضته or ومعاضدته, and neither has been silently normalized. The English is deliberately noncommittal; compare a second print witness before making a conjectural emendation.
+**Resolved against an independent print witness:** enlarged Sanandajī II:222 and the separate Cairo *Tahdhīb* 1912 printed p.97 both read **ومعاونته**, 'and assisting it [reason]'. This overturns this Stage 19 document's preliminary conjectures **ومعارضته** and **ومعاضدته**. The neighbouring lemma **ورفع الاحتمال** in the 1912 source should not be silently replaced by **ورفع الإشكال** merely because a prior working English/Arabic edition transcribed the latter. Cite the original 1912 image and mark the third-party working transcription as differing.
 
 Several parts of printed II:221 concern divine names, not Book Six; the lower note on II:221 and the first part of II:222 concern the same earlier topic and remain unfinished. The lower note beginning (قوله بوجوب البعثة) is another unit and its cross-page continuation remains pending. Thus a single bounded note translated here does NOT mean the whole lower register is complete.
 
