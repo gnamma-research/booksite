@@ -633,3 +633,58 @@ Original layers: (1) quoted Taftāzānī lemmata embedded in the large upper tex
 - **Pass 4:** review philosophical, theological, and terminological consistency, including necessity, mental relations, divine attributes and acts.
 - **Pass 5:** test Arabic–English alignment, manuscript/printed page references, desktop/mobile and right-to-left UI, note toggles, citation export, source PDF parity and reader reproducibility.
 - **Merge policy:** do not overwrite the separate al-Taftāzānī *Tahdhīb* project or perform a canonical three-layer critical merger before both projects are independently complete and critically definitive.
+
+
+---
+
+## 22. Stage 14 — printed volume II:141–180, speech, takwīn, vision and human agency (2 November 2026)
+
+### A. Primary source and source-sensitive correction
+
+Original *Taqrīb al-Marām* plus *Ḥāshiyat al-Muḥākamāt* continues to be read directly from the same scanned two-volume witness `taqribmaram.pdf`. Printed volume **II:141–180 = physical PDF images 436–475**. All forty original page images were rendered and visually inspected in their original upper and lower typography, not inferred from generic outlines or automatic OCR. The 40-page unchanged facsimile is preserved as a separate source PDF.
+
+**Important correction to the initial Stage 14 reading:** the first contact-sheet review overextended the divine-speech discussion to approximately II:153 and placed the ruʾya discussion at II:154. Enlarged original-page inspection shows the actual order:
+
+- **II:141–148:** *kalām nafsī* versus divine speech understood as audible letters, sounds, statements, commands, reports and linguistic signs; claims concerning eternal speech versus originated forms.
+- **II:149–150:** a distinct discussion of *baqāʾ* (subsistence/persistence) and *takwīn* (bringing into existence), including whether production is a new real intrinsic divine attribute or an intelligible relation grounded in producer and effect.
+- **II:151:** an explicit original new section, **«فصل في أحواله»**, introduces the question whether God can be seen and His reality known. The upper text discusses the possibility of vision **«من غير جهة ولا مقابلة»** (without direction or being face-to-face). **Divine vision begins at II:151, not II:154.**
+- **II:152–165:** Moses' request to see God, the condition associated with the mountain, the force of `lan tarānī`, divine vision without spatial requirements, the differences among perception, comprehension and knowledge, and scriptural arguments.
+- **II:166:** a second original chapter **«فصل في أفعاله»**, shifting to God's acts and the creation of the acts of the servants and other animals.
+- **II:167–180:** divine will and creative power, human choice and agency, permission versus approval/command, the theory of *kasb* (acquisition), the objections attributed to the Muʿtazila from praise, blame and responsibility, and the relation between created human power and the actual existence of actions.
+
+These are **source-located philosophical and theological argument maps**, not complete translations of the original pages. They should be revisited in the full literal passage round.
+
+### B. New text and author-layer controls
+
+1. `firstpass-II141-II160.js`, `firstpass-II161-II180.js`: **forty** page-identified first-reading guides `P2.141`–`P2.180`. Each has its printed and physical PDF position and only a selected short Arabic anchor; full running text and long lower marginalia remain untranscribed. Revised source classifications for II:149–153 are committed explicitly as corrections.
+2. `source-selected-II141-II180.js`: **21** short directly translated source-Arabic upper phrases. These are not twenty-one completed paragraphs or distinct full pages; several also appear as partial words in the paired records below. Count overlap only once in word-level future coverage.
+3. `source-aligned-II141-II177.js`: **four** partial source-aligned reading records at **II:141, II:150, II:151, II:166**. These distinguish printed parenthesized Tahdhīb lemmata from Sanandajī’s running explanation or a printed chapter heading, including a more substantial selected passage at II:151 on nonspatial vision. **Ellipses explicitly mark omitted source words.** These quoted lemmata do not modify or replace the independent al-Taftāzānī matn translation.
+4. The same file has a newly translated **lower-register source excerpt at printed II:177 / physical PDF 472** on the difference between acquiring an act (*kasb*) and bringing it into existence. The source wording explains that acquisition can obtain when another agent supplies existence, whereas creation is the giving of existence. This is a materially useful translation of part of a longer printed marginal argument. The individual historical author is **UNASSIGNED**; it is not counted as an authenticated Wasīm excerpt.
+5. `editorial/2026-11-02_STAGE14_II141_II180_SOURCE_AND_TRANSLATION.md`: canonical Stage 14 source-facing Markdown, generated directly from the reader records, containing all forty editorial guides, the twenty-one short translations, the four paired records and the lower *kasb* excerpt with explicit source caveats.
+6. `editorial/2026-11-02_STAGE14_II141_II180_LAYER_LEDGER.csv`: a forty-row audit of image inspection, short upper excerpts, matn/sharḥ separation, lower-register excerpts, Wasīm authentication, and the still-incomplete critical stages.
+7. `editorial/2026-11-02_STAGE14_II141_II180_MARGIN_WITNESS_INVENTORY.csv`: a distinct record for each source page with lower-print presence and unverified authorship; the new II:177 translated incipit is specifically recorded.
+8. `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv`: exactly forty `II:141`–`II:180` original page entries updated; no preceding source page status overwritten and the existing source-matched **Wasīm II:117** remains separate and unchanged.
+9. NAMA `index.html`, `reader-layered.js`, `source-atlas.js` now load the new data with Arabic-only, English-only, dual-column, matn, Sanandajī sharḥ, positively attributed Wasīm, unidentified other marginalia and modern editorial-note controls intact.
+
+### C. Current cumulative page-presence numbers — NOT translation completion
+
+| Measure | Checkpoint |
+| --- | --- |
+| Full two-volume numbered original source pages indexed | **615/615 = 100% source navigation**, not translated |
+| Volume I with some preliminary English | I:8–280 = **273**, including marginal-only I:222 |
+| Volume II with some preliminary English | II:2–180 = **179**, excluding title-only II:1 |
+| Total numbered printed page positions with **some** English | **452/615 = 73.50% page-presence proxy**, not proportion of source words translated |
+| New stage pages inspected, with preliminary English guides | **40**, II:141–180 |
+| Short direct upper source extracts | **21** new records; some source overlap with paired alignments |
+| New paired matn/sharḥ source records | **4** (II:141, 150, 151, 166) |
+| New translated lower-register excerpt of unverified author | **1** (II:177) |
+| New independently verified Wasīm notes | **0**; the earlier II:117 passage remains source-matched |
+| Full Arabic/English main sharḥ plus ALL marginalia translated, independently checked, critically certified | **0/615 = 0%** |
+
+**Do not describe the book as 73.5% translated.** A page can count as having some English if it has merely an introductory summary, while most original Arabic and especially small-print historical marginal discussion is still absent. Genuine word-level translation coverage and the number of independently identifiable Wasīm notes have not yet been established.
+
+### D. Next original pages and required editorial passes
+
+**Next rapid direct-source interval: printed II:181–200, source PDF physical pages 476–495.** Continue preserving all source boundaries and a defensible account of the upper and small-print layers. Do not retranslate the existing Wasīm II:117 quotation, nor revisit the separate historical Sanandajī treatise excerpt from the earlier addendum as if it were new `Taqrīb` text.
+
+**Full literal Pass 1** must eventually be distinguished rigorously from these Pass-0 reading guides: transcribe and translate every upper Sanandajī Arabic clause, every embedded al-Taftāzānī lemma and **every lower marginal note** with positive author attribution where possible and otherwise explicit uncertainty; preserve original pagination and continuations. **Pass 2** independently checks every Arabic particle, negation, speaker attribution, source line and English clause. **Pass 3** compares independent print/manuscript witnesses, logs variants and emendations. **Pass 4** studies the philosophical arguments and consistency of *kalām nafsī*, *takwīn*, *baqāʾ*, *ruʾya*, divine causality and *kasb*. **Pass 5** verifies Markdown, JS, PDF, Arabic fonts, dark theme, mobile layout and every reader control. Do not merge the separate Tahdhīb matn stream into a definitive three-layer edition before each stream is critically complete.
