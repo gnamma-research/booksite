@@ -2,40 +2,38 @@
   "schema": "gnamma-tahdhib-edition-publication-v1",
   "book": "Tahdhīb al-Kalām",
   "source": "data.js",
-  "source_sha256": "b976c07387ca5478212f5ff25507b4d63aa6e8935da067c5ccc849261cf97535",
-  "source_bytes": 411179,
+  "source_sha256": "1e7cfea022202f0f9b2ca9b5c3f3e67c8563a3747fbc84e6c1e5efa1165a541e",
+  "source_bytes": 465462,
   "source_witness": "Cairo 1330 AH / 1912, pp. 15–127",
-  "editorial_status": "Working bilingual edition; 110/113 Cairo printed pages source-checked following Stage81 recovery of p80 conclusion; remaining page-level printed readings 77, 100, 124; no independent manuscript collation",
+  "editorial_status": "Working bilingual edition; 112/113 Cairo 1912 printed kalam pages directly source-checked after Stage98 p100/p124 photographic restoration; only p77 remains a single-print reading crux; NO independent manuscript collation or definitive historical modal verification.",
   "unit_count": 1044,
   "page_or_division_count": 113,
   "navigation_kind": "printed-page",
   "unresolved_printed_pages_or_divisions": [
-    77,
-    100,
-    124
+    77
   ],
   "files": [
     {
       "name": "tahdhib-kalam-parallel.pdf",
       "purpose": "bilingual",
-      "sha256": "c37db8c721b6d72e254f6bda4ce2866446dad68ba7b5c72dae853793cf37ced9",
-      "bytes": 594036,
+      "sha256": "af0cb68ac7fd837ea5c171479b8647676264d59133e5667429266a29b42d6603",
+      "bytes": 592857,
       "a4_pages": 170,
       "href": "pdfs/tahdhib-kalam-parallel.pdf"
     },
     {
       "name": "tahdhib-kalam-ar-only.pdf",
       "purpose": "arabic",
-      "sha256": "d916dc2990cd084e19a5fd4e6eb31e5e9e56b84a075949e5fb04c7924f2ae936",
-      "bytes": 324165,
+      "sha256": "666836162412590886167d65ccbdd0404bf3c7c147c950bad6ff5d4b3445add3",
+      "bytes": 324330,
       "a4_pages": 133,
       "href": "pdfs/tahdhib-kalam-ar-only.pdf"
     },
     {
       "name": "tahdhib-kalam-en-only.pdf",
       "purpose": "english",
-      "sha256": "857dc136525560c7dfbdd6d416942d2ee3ef35f8164df837a2b24c21eab58e8f",
-      "bytes": 294160,
+      "sha256": "932e4e93211a9fe791e5e644de7a32376ec9ccb3a618c1a948adec9661909a8b",
+      "bytes": 293157,
       "a4_pages": 120,
       "href": "pdfs/tahdhib-kalam-en-only.pdf"
     }
