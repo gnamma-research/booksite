@@ -7,8 +7,8 @@
 3. **Then, and only then, separately edit/translate the sharḥ:** the descendant's *a-qūlu* explanations must occupy a different text/witness layer and must not enter the ancestor's English prose.
 
 ## Current work completed
-- Eleven short authorial lemmata, QT-001 through QT-011, reproduced in normalized Arabic and translated into scholarly English.
-- Printed locus mapping: Āshtiyānī's Arabic pagination pp. **48, 49, 52, 53–54, 55, 59–60, 63–64, 67–68, 71–72**.
+- **24** authorial quotation lemmata, QT-001–QT-024, reproduced in normalized but source-located Arabic and independently translated into scholarly English (not manuscript-collated).
+- Printed locus mapping: **Āshtiyānī's Arabic pp. 48–109**, with separate source-page links for every quotation; the many pages of the descendant's commentary are not falsely represented as translated matn.
 - Exclusion of the descendant's own extensive introduction (beginning at printed p. 3) and commentary from the matn layer.
 - First-pass register of seven reported printed variants in the first six ancestral quotations; none yet independently assigned to manuscript witnesses, without attributing readings to uninspected manuscripts.
 - Translator notes informed by the sharḥ, particularly his identification of Peripatetics and mutakallimūn (p. 49), and his gloss on *ḥads* (p. 54).
@@ -19,6 +19,29 @@
 - **QT-008–010 (pp. 67, 68, 71):** a position is introduced in the form of an **objection**, elaborating a nature to which common existence is attached and a **tashkīk** account of its predication. These are *qāla* quotations but **not the ancestor's own endorsed conclusion**.
 - **QT-011–012 (pp. 72, 74):** a reply based on the intrinsic possibility of hypothesized individuals of a necessary nature and the alternative of intrinsic determination. The commentator’s intervening paragraphs are excluded.
 - The new passages have been checked against the electronic Arabic page transcriptions **only**. They are provisional; none has been image- or manuscript-collated. Joseph Lumbard's selection ends during the commentary after QT-006 and cannot be used as a translation comparator for these later lemmata.
+
+## Stage 03: necessary reality, determination, and mental existence (pp. 78–109)
+
+Twelve more **ancestor's quoted lemmata** have been translated **QT-013–QT-024**; all 24 current units are aligned in [parallel-matn.md](../data/parallel-matn.md) and the interactive reader. Boundary criterion: each recovered segment is introduced by **قال** and ends before the next **أقول**; intervening grandson's explanation and Qajar glosses are excluded.
+
+| Unit | Base printed pages | Principal point / special control |
+|---|---|---|
+| QT-013 | 78 | Dilemma about a separate necessary nature: equivocally distinct or impossible intrinsically necessary concomitant; two alternative readings registered. |
+| QT-014 | 81 | Contradictory ontological roles of supposed identicals: inherence versus substratum. |
+| QT-015 | 82–83 | Anti-*tashkīk* dialectic; a merely possible objection versus a proposed proof. The latter risks **muṣādara ʿalā l-maṭlūb**. |
+| QT-016 | 87 | Concept of intrinsic determination; its universal intelligible meaning and relational predication. |
+| QT-017 | 89–90 | Essence-identical determination without reduction to sheer individual *shakhṣiyya*; anomalous masculine Arabic predicates preserved. |
+| QT-018 | 93 | Necessary reality as intellect, knower and known; knowing by aspects need not comprehend essence. |
+| QT-019 | 94 | Different modes of association with non-opposed relations and conditions, not an external physical coupling. |
+| QT-020 | 95 | Reciprocal philosophical objection; **unsettled grammar and potential corruption** in final Arabic phrase. English interpretation provisional. |
+| QT-021 | 98 | Necessary characteristics need not restrict unrestricted existence. |
+| QT-022 | 100–101 | Why philosophical disputation still answers objections despite the claimant's demonstration; **ḥads** and public pedagogy. |
+| QT-023 | 106 | Four readings of particular existence: unqualified subject, accident alone, composite, subject qua qualified. |
+| QT-024 | 109 | Mental and extramental existence are one in reality though distinct in conceptual consideration; major **بالفرض/بالعرض** alternative. |
+
+**Limits:** these are checked against the *electronic transcription of Āshtiyānī's printed edition*, not against photographs or independent manuscripts. Terminology and philosophical glosses informed by the grandson's **أقول** are clearly presented as **editorial notes**. Only the **earlier QT-001–006** fall within Lumbard's translated selection; his published English cannot be used as a comparison for QT-013–024.
+
+**Independent critical correction:** Āshtiyānī's later note at Arabic printed p. 86 expressly says the author and commentator treat *tashkīk ʿāmmī* while leaving *tashkīk khāṣṣī* undeveloped. This is *his* interpretation, not a statement of the ancestral matn. The new translation does not silently assimilate the argument to later Ṣadrian *tashkīk*.
 
 ## What this edition is NOT
 - NOT the entire original treatise.
@@ -53,4 +76,4 @@ Preserve *wujūd* (existence), *wujūdāt khāṣṣa* (particular existences), 
 
 **English translation comparator:** Joseph E. B. Lumbard, “Establishing the Principles,” *An Anthology of Philosophy in Persia*, vol. IV, pp. 464–479. A clause-by-clause [Lumbard comparison and attribution audit](LUMBARD_COMPARISON.md) now tracks his technical choices, identifies his editorial-heading note, and distinguishes quotations from the ancestor's *other* works from the original *Qawāʿid* matn. The new English translation is independently authored, not reproduced from Lumbard.
 
-_Gnamma Research · editorial status v0.1 · 2 November 2026_
+_Gnamma Research · editorial status v0.3 · 2 November 2026_
