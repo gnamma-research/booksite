@@ -565,3 +565,11 @@ A source page with a short Arabic anchor and a one-paragraph interpretive guide 
 - At the next available full-text round, perform a **real complete Pass 1**, not another outline: write every clause of the Sanandajī running text and each lower-register note in separate Arabic and English witnesses, with original printed page and nested objection/reply sequence. Treat the source text, not OCR or editorial paraphrase, as authoritative.
 - Conduct independent second reading and letter-by-letter proof of Arabic, collation of additional printed or manuscript witnesses, separate identification of Wasīm’s notes, and a philosophical review of faculties, universals, soul, intellect and causality. Then execute bilingual HTML/MD/PDF parity and accessibility tests.
 - No modification of the independent al-Taftāzānī matn branch and no canonical three-layer merger until the distinct projects are critically definitive.
+
+
+### F. Stage 12 marginal witness inventory and portable excerpt PDF
+
+- A separate `editorial/2026-11-02_STAGE12_II061_II100_MARGIN_WITNESS_INVENTORY.csv` now records the existence of lower-register commentary on each of forty original printed pages, the absence of full transcription/translation, and whether a selected source snippet is available. The two selected lower incipits are located at **II:62 and II:74**, but their author is **unassigned**. **Zero** new pages have been positively and independently identified as Wasīm.
+- Source facsimile extraction: original physical PDF image pages **356–395**, kept as a forty-page unchanged scan, not mistakenly called a translated PDF.
+- Working selected-translation PDF: **25** short upper-register and **two** short unassigned lower excerpts, with the same wording as the Stage 12 source-selected JS. Arabic shaping was reviewed in the rendered PDF. It deliberately excludes most source words and prominently labels this limitation.
+- The canonical cumulative scientific handoff is this Markdown in GitHub. Portable files are checkpoint copies and must not supersede source or version control.
