@@ -7,8 +7,8 @@
 3. **Then, and only then, separately edit/translate the sharḥ:** the descendant's *a-qūlu* explanations must occupy a different text/witness layer and must not enter the ancestor's English prose.
 
 ## Current work completed
-- **42** source-located ancestor quotation lemmata, QT-001–QT-042, reproduced in normalized but source-located Arabic and independently translated into scholarly English (not manuscript-collated).
-- Printed locus mapping: **Āshtiyānī's Arabic pp. 48–190**, with separate source-page links for every quotation; the many pages of the descendant's commentary are not falsely represented as translated matn.
+- **46** source-located ancestor quotation lemmata, QT-001–QT-046, reproduced in normalized but source-located Arabic and independently translated into scholarly English (not manuscript-collated).
+- Printed locus mapping: **Āshtiyānī's Arabic pp. 48–207**, with separate source-page links for every quotation; the many pages of the descendant's commentary are not falsely represented as translated matn.
 - Exclusion of the descendant's own extensive introduction (beginning at printed p. 3) and commentary from the matn layer.
 - First-pass register of seven reported printed variants in the first six ancestral quotations; none yet independently assigned to manuscript witnesses, without attributing readings to uninspected manuscripts.
 - Translator notes informed by the sharḥ, particularly his identification of Peripatetics and mutakallimūn (p. 49), and his gloss on *ḥads* (p. 54).
@@ -70,6 +70,21 @@ These passages are **not** the grandson's long construction of the first determi
 
 **Attribution alert:** the long passages on divine names, celestial cosmology, Qūnawī's metaphysical principles, and perfect-human ontology that follow the grandfather's brief quotations often belong to the **grandson**. Their presence in the same printed page does not make them original matn. Lumbard's English selection ends near Arabic p. 63 and does not cover these passages.
 
+## Stage 06: exhaustive mirrorhood, perfection and cognitive restriction (pp. 193–207)
+
+Four additional original ancestor **قال** quotations have been isolated, verified in the printed-edition electronic transcription and independently translated as **QT-043–QT-046**, bringing the total to **46 bilingual authorial lemmata**. The latest quoted source ends on **printed p. 207**. These are the *grandfather's matn*, not the grandson's intervening or subsequent **أقول** paragraphs.
+
+| Locus | Printed pages | Argument and editorial boundaries |
+|---|---|---|
+| **QT-043** | **193–195** | Three candidates for the exhaustive divine mirror: identity with human reality; unrestricted existence; or existence determined by the full range of divine names and relations. The latter might imply the macrocosm instead of any particular person, while unbounded kinds and differing human perfections contest exhaustive individual mirroring. Original quote ends p.195 at **أقول**. The published editor argues that p.194's repeated **لصحّ أن يقال** is scribal; **not silently removed**. |
+| **QT-044** | **197–198** | A dilemma from **final causality (علّة غائيّة)** and the Necessary's intrinsic sufficiency: either the cosmic manifestation supplies no real divine perfection, or one of the Necessary's perfections appears to depend upon possible, originated existence. The quotation includes the ancestor's own internal **فلئن قيل ... قلنا**. Closes before (1) **أقول** p.198. |
+| **QT-045** | **202–203** | An argumentative *report* that mystical perfection requires detachment from the sensory and bodily faculties; this is used to challenge describing a disembodied perfected intellect as the comprehensive cosmic totality. **Reported objection, not a final rejection of Sufism**. Closes before (1) **أقول** p.203; the long Persian and Arabic glossing pp.203–205 is not inserted. |
+| **QT-046** | **206–207** | A further objection: supposed gnosis beyond intellect is not amenable to ordinary intellectual apprehension or verbal expression, while acquired natural constraints cannot be removed merely by ceasing to attend to them. Closes at the printed **أقول** p.207. The subsequent many pages of rational and psychological analysis are the descendant's commentary. |
+
+**Important source controls and uncertainties:** In QT-043, the editor reports **الحاسّة/الحادسة** and a probable duplicate string; at QT-044, **فلئن قيل/فلئن قلتم** and **بعض/البعض**; at QT-045, **تقوية/تقوى** and the case of **القوى**; at QT-046, **وبيّن/فإن** and the source's grammatically strained **أن يصل ... القوّة**. The Arabic has been lightly normalized; **independent photographed print comparison and manuscript collation remain unperformed**.
+
+The recovery chain has now covered quoted lemmata through p.207, but p.208 onward has not been exhaustively checked for all remaining ancestor citations; do not assign an unwitnessed QT-047 or claim complete extraction. The *Tamhīd* continues far beyond the latest translated lemma.
+
 ## What this edition is NOT
 - NOT the entire original treatise.
 - NOT a manuscript-collated, stemmatically established, fully critical edition.
@@ -103,7 +118,7 @@ Preserve *wujūd* (existence), *wujūdāt khāṣṣa* (particular existences), 
 
 **English translation comparator:** Joseph E. B. Lumbard, “Establishing the Principles,” *An Anthology of Philosophy in Persia*, vol. IV, pp. 464–479. A clause-by-clause [Lumbard comparison and attribution audit](LUMBARD_COMPARISON.md) now tracks his technical choices, identifies his editorial-heading note, and distinguishes quotations from the ancestor's *other* works from the original *Qawāʿid* matn. The new English translation is independently authored, not reproduced from Lumbard.
 
-_Gnamma Research · editorial status v0.5 · 2 November 2026_
+_Gnamma Research · editorial status v0.6 · 2 November 2026_
 
 
 **Technical bridge glossary:** [Matn-anchored Avicennian–Akbarian terminology](TECHNICAL_GLOSSARY.md), with distinct layers for original claims, objections, and later glosses.
