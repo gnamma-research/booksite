@@ -515,3 +515,53 @@ Next unprocessed source-first interval **II:21–40, PDF physical images 316–3
 6. **Pass 5 — publication QA:** same canonical Markdown/JS/PDF text, reader layer toggles, Arabic/English/both, desktop and phone layout, bibliography, searchable page index, print and export checks.
 
 **Three-layer merger with al-Taftāzānī** is deferred until the independent matn stream and this combined Sanandajī–Wasīm work reach full independently justified critical completion.
+
+
+---
+
+## 20. Stage 12 — faculties, rational soul and separate intellects (2 November 2026)
+
+**Workstream:** Sanandajī’s *Taqrīb al-Marām* and the printed Wasīm *Ḥāshiyat al-Muḥākamāt* in the **same** independent source-facing translation project. The separate al-Taftāzānī *Tahdhīb* matn edition is **not modified**. Existing translations and excerpts are retained and not retranslated.
+
+### Source access and exact boundaries
+
+- **Primary facsimile:** user-uploaded `taqribmaram.pdf` (632 raster images of a two-volume printed work). The new source pages are **printed volume II:61–100 = PDF physical images 356–395**. All 40 pages were directly inspected, with enlarged source crops used for specific Arabic clauses. Raster text was not silently generated from faulty OCR.
+- **II:61–63:** powers of vegetation and generation, formation of offspring and the question whether the generative function is one or several faculties.
+- **II:64–73:** animal apprehension and movement, external sense faculties, opposed explanations of sight, *al-ḥiss al-mushtarak*, imagination, estimation, memory and the composing faculty. The lower register contains extensive interlocutor-specific objections, mostly untranslated.
+- **II:74** opens **«مقالة في المجردات وفيها بحثان»** and the first investigation **«البحث الأول في النفس»**. This is a new major article within the printed book, not an arbitrary modern editorial title.
+- **II:75–94:** rational human soul, bodily physiological spirit, perception of universals/particulars, arguments for and against locating intelligibles in bodily organs, and the alleged simplicity of an intellectual subject. Often the first printed lines are a short main-text transition followed by a much longer marginal critical discussion.
+- **II:95** opens **«البحث الثاني من المقالة في العقل»** on proposed separate intellects and the philosophers’ rational-cosmological arguments.
+- **II:96–100:** hierarchy of intellects, proposed intermediaries and causal plurality. These are typically *reported philosophical doctrines* and objections, not unqualified authorial endorsements.
+
+### New committed source-facing objects
+
+1. `firstpass-II061-II080.js` and `firstpass-II081_II100.js` contain **40 new first-reading page records** (`P2.061`–`P2.100`) with original source locators, only selected reliable Arabic anchors, and short English **argument synopses**. **These synopses do not translate the complete original page**.
+2. `source-selected-II061-II100.js` contains **25 short directly translated source-Arabic fragments** from the upper printed register and **two short lower-register excerpts whose individual authorship is UNASSIGNED**. The lower excerpts are not falsely labelled Wasīm and are not entire ḥāshiya units.
+3. `source-aligned-II064-II095.js` contains **three explicit source-level alignments** (II:64, II:74, II:95), identifying parenthesized matn lemmata where visible and distinguishing them from Sanandajī’s bridging explanation or new heading. Ellipses indicate omitted source words. It does not merge or overwrite the separately translated Tahdhīb matn.
+4. `editorial/2026-11-02_STAGE12_II061_II100_SOURCE_AND_TRANSLATION.md` is the cumulative Stage 12 Markdown dossier generated from these reader objects, containing the full 40-page English first-reading account and the actual short Arabic–English translations, with independent textual status flags.
+5. `editorial/2026-11-02_STAGE12_II061_II100_LAYER_LEDGER.csv` is a forty-row source-witness ledger separating selected translation counts, unassigned margins, paired alignment, full-text completeness and critical verification.
+6. `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv` has been updated on exactly 40 existing `II:61`–`II:100` rows, without modifying other source positions.
+7. NAMA `index.html`, `reader-layered.js` and `source-atlas.js` now expose Stage 12 with independently controllable Arabic, English, dual columns, Sanandajī running text, embedded lemmata, identified Wasīm excerpts and unattributed marginal notes. **The later three-layer definitive edition remains deferred.**
+
+### Cumulative metrics — replace Stage 11 checkpoint without conflation
+
+| Measure | Stage 12 checkpoint |
+|---|---|
+| All numbered printed page positions indexed | **615/615 = 100% bibliographic indexing**, NOT translated text |
+| Volume I page positions with some provisional English | I:8–280 = **273**, including marginal-only I:222 |
+| Volume II pages with some provisional English | II:2–100 = **99**; II:1 is a title/paratext leaf |
+| Combined page-presence proxy | **372/615 = 60.49%**, NOT percentage of original Arabic words or complete arguments translated |
+| New Stage 12 image-inspected source pages | **40** |
+| New Stage 12 directly translated short upper excerpts | **25** |
+| New lower-register short translated excerpts with authorship unverified | **2**, not credited to Wasīm |
+| New independently corroborated Wasīm notes | **0**; the pre-existing matched II:117 fragment remains |
+| Full main sharḥ + ALL lower notes continuously translated, independently verified and critically certified | **0/615 = 0%** |
+
+A source page with a short Arabic anchor and a one-paragraph interpretive guide is **not a translated page**. The true percentage of Sanandajī’s Arabic words translated, and the fraction of Wasīm’s attributable note-units translated, **cannot be computed from the page-presence proxy**.
+
+### Source method and immediate continuation
+
+- Continue the first-reading survey at **II:101–120, PDF physical pages 396–415**. The already source-matched Wasīm II:117 passage must be **reused, not retranslated**. Register other notes on the same page under independently attributable voices or `unassigned`.
+- At the next available full-text round, perform a **real complete Pass 1**, not another outline: write every clause of the Sanandajī running text and each lower-register note in separate Arabic and English witnesses, with original printed page and nested objection/reply sequence. Treat the source text, not OCR or editorial paraphrase, as authoritative.
+- Conduct independent second reading and letter-by-letter proof of Arabic, collation of additional printed or manuscript witnesses, separate identification of Wasīm’s notes, and a philosophical review of faculties, universals, soul, intellect and causality. Then execute bilingual HTML/MD/PDF parity and accessibility tests.
+- No modification of the independent al-Taftāzānī matn branch and no canonical three-layer merger until the distinct projects are critically definitive.
