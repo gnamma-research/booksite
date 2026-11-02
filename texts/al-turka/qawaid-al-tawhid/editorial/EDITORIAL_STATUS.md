@@ -10,7 +10,7 @@
 - Six short authorial lemmata, QT-001 through QT-006, reproduced in normalized Arabic and translated into scholarly English.
 - Printed locus mapping: Āshtiyānī's Arabic pagination pp. **48, 49, 52, 53–54, 55, 59–60**.
 - Exclusion of the descendant's own extensive introduction (beginning at printed p. 3) and commentary from the matn layer.
-- First-pass register of six reported printed variants within the ancestral quotations, without attributing readings to uninspected manuscripts.
+- First-pass register of seven reported printed variants within the ancestral quotations, without attributing readings to uninspected manuscripts.
 - Translator notes informed by the sharḥ, particularly his identification of Peripatetics and mutakallimūn (p. 49), and his gloss on *ḥads* (p. 54).
 
 ## What this edition is NOT
