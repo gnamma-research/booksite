@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "local_links_checked": 13513,
+  "broken_links": [],
+  "duplicate_ids": [],
+  "source_image_hashes": 81,
+  "shared_primary_records": 17,
+  "bilingual_selections": 29,
+  "original_manuscripts_unchanged": true,
+  "extended_reader_text_preserved": true,
+  "legal_core_identical": true,
+  "independent_casebook_originals_preserved": true,
+  "qawanin_unchanged": true,
+  "privacy_exception": "Legacy Edition II casebook encrypted; public duplicate formation paragraphs removed and navigation relabelled. Local originals retain baseline hashes."
+}

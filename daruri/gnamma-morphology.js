@@ -6,7 +6,7 @@
 (function(global){
 'use strict';
 const SCHEMA='gnamma-morph-v1',POST_SCHEMA='gnamma-morph-postings-v2',
- DETAIL_SCHEMA='gnamma-morph-detail-v2',VERSION='20261023-morphcontext3';
+ DETAIL_SCHEMA='gnamma-morph-detail-v2',VERSION='20261025-sigha-forms1';
 const data=new Map(),pending=new Map(),errors=new Map(),listeners=new Set();
 let lexicon=null,lexiconPromise=null,notice='';
 const AR=/[\u0621-\u064a]/u;

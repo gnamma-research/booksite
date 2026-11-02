@@ -1096,9 +1096,9 @@ function renderResultsOnly(){
  const aside=$('.gns-sidebar',host);
  if(aside)aside.outerHTML=facetSidebar();
 }
-function openWith(query,mode='terms',facet='all'){
+function openWith(query,mode='terms',facet='all',scope=null){
  if(!ui.opened)open();
- ui.query=String(query||'');ui.mode=mode;ui.facet=facet;ui.expanded=true;ui.mobileView='results';
+ ui.query=String(query||'');ui.mode=mode;ui.facet=facet;if(scope==='work'||scope==='library')ui.scope=scope;ui.expanded=true;ui.mobileView='results';
  ui.showFilters=false;ui.page=CONFIG.pageSize;ui.pendingReturn=null;
  const mobile=window.matchMedia('(max-width:760px)').matches;
  rerender(!mobile);

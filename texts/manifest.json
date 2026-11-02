@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-library-manifest-v1",
   "project": "Gnamma Research",
-  "updated": "2026-10-19",
+  "updated": "2026-11-02",
   "collections": [
     "texts",
     "essays",
@@ -58,9 +58,13 @@
         "tafsīr",
         "ishārāt"
       ],
-      "status": "editorial-preview",
+      "status": "complete-volume-working-critical-edition",
       "url": "texts/ibn-ajiba/al-bahr-al-madid/",
-      "note": "Translation project exists separately; not yet migrated into this repository. A limited scholarly reader preview is now available; source corpus still awaits import."
+      "note": "Complete recovered Volume I: preface through Q 4:176, 389 Arabic–English passages, 209 current annotations, 241 Cairo notes, 48 report dossiers, 352 source occurrences, indices, dictionary and four unchanged PDF editions. Critical working edition; independent manuscript collation and specialist review remain outstanding.",
+      "language": [
+        "ar",
+        "en"
+      ]
     },
     {
       "id": "jurjani-mawaqif",
@@ -76,6 +80,147 @@
       "status": "editorial-preview",
       "url": "texts/al-jurjani/sharh-al-mawaqif/",
       "note": "Separate ongoing translation; not yet migrated into this repository. A limited scholarly reader preview is now available; source corpus still awaits import."
+    },
+    {
+      "id": "ibn-rushd-bidaya",
+      "title": "Bidāyat al-Mujtahid",
+      "arabic": "بداية المجتهد",
+      "author": "Ibn Rushd",
+      "author_slug": "ibn-rushd",
+      "work_slug": "bidayat-al-mujtahid",
+      "area": [
+        "fiqh",
+        "comparative jurisprudence",
+        "legal method"
+      ],
+      "status": "research-preview",
+      "url": "texts/ibn-rushd/bidayat-al-mujtahid/",
+      "editions": [
+        {
+          "id": "law",
+          "title": "Law and Legal Reasoning",
+          "url": "texts/ibn-rushd/bidayat-al-mujtahid/law/",
+          "casebook_url": "texts/ibn-rushd/bidayat-al-mujtahid/law/casebook/"
+        },
+        {
+          "id": "human-life",
+          "title": "Law and Human Life",
+          "url": "texts/ibn-rushd/bidayat-al-mujtahid/human-life/",
+          "casebook_url": "texts/ibn-rushd/bidayat-al-mujtahid/human-life/casebook/"
+        }
+      ],
+      "note": "Two edition research previews. Each now includes the recovered separate 25-case alternative-uṣūl casebook (12 full dossiers, 13 supplemental reviews, 115 source records); Edition II includes separate formation hypotheses. The canonical Revision16 primary text and 310/279 research registers remain unavailable and unimported."
+    },
+    {
+      "id": "taftazani-tahdhib-kalam",
+      "title": "Tahdhīb al-Kalām",
+      "arabic": "تهذيب الكلام",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "author_slug": "al-taftazani",
+      "work_slug": "tahdhib-al-kalam",
+      "area": [
+        "kalām",
+        "philosophy"
+      ],
+      "status": "full-page-working-reader-partially-uncondensed",
+      "language": [
+        "ar-1912-facsimile",
+        "en-page-aligned-preliminary"
+      ],
+      "url": "texts/al-taftazani/tahdhib-al-kalam/",
+      "related_commentary_id": "sanandaji-taqrib-maram",
+      "note": "All 113 original Cairo 1912 kalam pages have page-linked English draft; selected passages are expanded or clause-verified, but 38 of the older 83 thematic units retain gap=true and other portions are not yet fully literal. Not a definitive edition.",
+      "full_reader_url": "texts/al-taftazani/tahdhib-al-kalam/complete/",
+      "commentary_layer": "Taqrīb al-Marām · linked selected translations",
+      "cumulative_reader": "texts/al-taftazani/tahdhib-al-kalam/complete/2026-10-31_cumulative_113_page_reader.md",
+      "enhanced_reader_url": "texts/al-taftazani/tahdhib-al-kalam/edition/",
+      "enhanced_reader_status": "Stage 75 complete 1,044-clause bilingual working edition; 108/113 Cairo print pages checked; five pending; no independent manuscript certification",
+      "enhanced_reader_scope": {
+        "clauses": 1044,
+        "printed_pages": 113,
+        "cairo_single_print_checked_pages": 108
+      },
+      "available_static_pdfs": [
+        {
+          "kind": "bilingual",
+          "url": "texts/al-taftazani/tahdhib-al-kalam/edition/pdfs/tahdhib-kalam-parallel.pdf"
+        },
+        {
+          "kind": "arabic",
+          "url": "texts/al-taftazani/tahdhib-al-kalam/edition/pdfs/tahdhib-kalam-ar-only.pdf"
+        },
+        {
+          "kind": "english",
+          "url": "texts/al-taftazani/tahdhib-al-kalam/edition/pdfs/tahdhib-kalam-en-only.pdf"
+        }
+      ],
+      "pdf_edition_status": "Published working editions from canonical corpus; not independent manuscript certified",
+      "edition_audit_url": "texts/al-taftazani/tahdhib-al-kalam/edition/EDITORIAL_STATUS.md"
+    },
+    {
+      "id": "sanandaji-taqrib-maram",
+      "title": "Taqrīb al-Marām fī Sharḥ Tahdhīb al-Kalām",
+      "arabic": "تقريب المرام في شرح تهذيب الكلام",
+      "author": "ʿAbd al-Qādir al-Sanandajī",
+      "author_slug": "al-sanandaji",
+      "work_slug": "taqrib-al-maram",
+      "area": [
+        "kalām",
+        "commentary",
+        "philosophy"
+      ],
+      "status": "working-draft-and-selected-commentary",
+      "language": [
+        "ar-selections",
+        "en-selections"
+      ],
+      "url": "texts/al-sanandaji/taqrib-al-maram/",
+      "related_matn_id": "taftazani-tahdhib-kalam",
+      "note": "50-page source-following English draft I:13–62 recovered; Arabic–English selected commentary through I:80, with main text and ḥāshiya distinguished. Next requested 100-page translation I:81–180 is not started as matn remains unfinished.",
+      "cumulative_text": "texts/al-sanandaji/taqrib-al-maram/2026-10-31_parallel_selected_commentary.md"
+    },
+    {
+      "id": "taftazani-tahdhib-logic",
+      "title": "Tahdhīb al-Manṭiq",
+      "arabic": "تهذيب المنطق",
+      "author": "Saʿd al-Dīn al-Taftāzānī",
+      "author_slug": "al-taftazani",
+      "work_slug": "tahdhib-al-mantiq",
+      "area": [
+        "logic",
+        "philosophy",
+        "methods of inference"
+      ],
+      "status": "full-Cairo-reading-independent-collation-open",
+      "language": [
+        "ar",
+        "en"
+      ],
+      "url": "texts/al-taftazani/tahdhib-al-mantiq/",
+      "related_kalam_id": "taftazani-tahdhib-kalam",
+      "note": "19 bilingual divisions of the Cairo 1912 logic matn restored in source order, including repaired L.11 modalities and removal of an unwitnessed commentary addition in L.16. Explanatory notes and the النظريات/فطريات variant recorded; independent manuscript collation not complete.",
+      "critical_reading": "texts/al-taftazani/tahdhib-al-mantiq/2026-10-31_parallel_reading.md",
+      "enhanced_reader_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/",
+      "enhanced_reader_status": "Continuous 19-unit bilingual logic draft; exact rule verification and manuscript collation pending",
+      "enhanced_reader_scope": {
+        "editorial_divisions": 19
+      },
+      "available_static_pdfs": [
+        {
+          "kind": "bilingual",
+          "url": "texts/al-taftazani/tahdhib-al-mantiq/edition/pdfs/tahdhib-logic-parallel.pdf"
+        },
+        {
+          "kind": "arabic",
+          "url": "texts/al-taftazani/tahdhib-al-mantiq/edition/pdfs/tahdhib-logic-ar-only.pdf"
+        },
+        {
+          "kind": "english",
+          "url": "texts/al-taftazani/tahdhib-al-mantiq/edition/pdfs/tahdhib-logic-en-only.pdf"
+        }
+      ],
+      "pdf_edition_status": "Published working editions from canonical corpus; not independent manuscript certified",
+      "edition_audit_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/LOGIC_AUDIT.md"
     }
   ],
   "research": [
@@ -90,6 +235,52 @@
       "status": "research-preview",
       "url": "research/usul-law-rushd/",
       "note": "A multi-text research synthesis using Ibn Rushd’s al-Ḍarūrī and Bidāyat al-Mujtahid; not a separate book, and not a complete translation of Bidāya."
+    },
+    {
+      "id": "bidaya-editions",
+      "title": "Bidāyat al-Mujtahid · Two research editions",
+      "area": [
+        "fiqh",
+        "legal reasoning",
+        "human formation"
+      ],
+      "status": "research-preview",
+      "url": "texts/ibn-rushd/bidayat-al-mujtahid/",
+      "note": "Edition I and Edition II share a legal foundation; complete Revision16 data not yet imported."
+    },
+    {
+      "id": "bidaya-alternative-usul",
+      "title": "Alternative Uṣūl: Provisional Casebook",
+      "area": [
+        "comparative law",
+        "legal reasoning"
+      ],
+      "status": "provisional-research",
+      "url": "research/usul-law-rushd/alternative-usul/",
+      "note": "12 extended v0.1 case studies, 13 supplemental v0.2 reviews, four countertests and 115 source records; separate from Revision16."
+    },
+    {
+      "id": "ibn-rushd-qawanin",
+      "title": "How Ibn Rushd establishes qawānīn",
+      "area": [
+        "methodology",
+        "logic",
+        "legal theory"
+      ],
+      "status": "archived-working-research",
+      "url": "research/usul-law-rushd/qawanin/",
+      "note": "Accessible 19 October working dossier; later expanded file not yet migrated."
+    },
+    {
+      "id": "bidaya-revision16-recovery",
+      "title": "Bidāya Revision16 recovery status",
+      "area": [
+        "textual recovery",
+        "research integrity"
+      ],
+      "status": "original-local-files-unavailable",
+      "url": "research/usul-law-rushd/recovery/",
+      "note": "Tracks missing original master reader, 310 groups, 279 K-positions, 542 stable addresses and source-recovery utility."
     }
   ],
   "navigation": {
@@ -110,12 +301,24 @@
       {
         "name": "Kalām",
         "ids": [
-          "jurjani-mawaqif"
+          "jurjani-mawaqif",
+          "taftazani-tahdhib-kalam",
+          "sanandaji-taqrib-maram"
+        ]
+      },
+      {
+        "name": "Logic",
+        "ids": [
+          "taftazani-tahdhib-logic"
         ]
       }
     ],
     "research_ids": [
-      "bidaya-daruri"
+      "bidaya-editions",
+      "bidaya-alternative-usul",
+      "ibn-rushd-qawanin",
+      "bidaya-daruri",
+      "bidaya-revision16-recovery"
     ]
   }
 }

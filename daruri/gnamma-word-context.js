@@ -3,8 +3,9 @@
  * and temporary search highlight. Do not turn one into another.
  *
  * PRECEDENCE: explicitly interactive anchors keep their existing action;
- * a plain Arabic word opens this hub; text selections retain Reading Desk
- * actions plus an opt-in Explore action. Personal material never leaves localStorage.
+ * text taps/clicks never open this hub; explicit selection-toolbar actions
+ * and desktop right-click menus open Word Context. Selection and copying
+ * keep native browser behaviour. Personal data remains local.
  */
 (()=>{
 'use strict';
@@ -121,13 +122,21 @@ function atTap(e){
  return {node:pos?.offsetNode||range?.startContainer,
    offset:pos?.offset??range?.startOffset??0};
 }
+function singleArabicWord(raw){
+ const words=String(raw||'').trim().match(/[\p{L}\p{M}]+/gu)||[];
+ return words.length===1&&AR.test(words[0])?words[0]:null;
+}
 function findSelectedWord(){
- const sel=window.getSelection?.();if(!sel||sel.isCollapsed||!sel.rangeCount)return null;
- const text=sel.toString().trim().split(/\s+/)[0].replace(/[^\p{L}\p{M}]/gu,'');
- if(!AR.test(text))return null;
- const parent=(sel.anchorNode?.nodeType===1?sel.anchorNode:sel.anchorNode?.parentElement);
- const grid=parent?.closest?.('.passage-grid');
- return {word:text,anchor:parent,grid};
+ const sel=window.getSelection?.();
+ if(!sel||sel.isCollapsed||!sel.rangeCount)return null;
+ const word=singleArabicWord(sel.toString());
+ if(!word)return null;
+ const range=sel.getRangeAt(0),parent=node=>node?.nodeType===1?node:node?.parentElement;
+ const side=parent(range.startContainer)?.closest('.passage-ar');
+ if(!side||parent(range.endContainer)?.closest('.passage-ar')!==side||
+    !$('#reader')?.contains(side))return null;
+ const grid=side.closest('.passage-grid');
+ return grid?{word,anchor:side,grid,point:{node:range.startContainer,offset:range.startOffset}}:null;
 }
 function actions(word,analysis){
  let lemma=analysis.best?.lemma||'',root=analysis.best?.root||'';
@@ -140,7 +149,7 @@ function actions(word,analysis){
 }
 function search(word,mode,facet='text'){
  close();
- window.GnammaUnifiedSearch?.openWith?.(word,mode,facet);
+ window.GnammaUnifiedSearch?.openWith?.(word,mode,facet,'work');
 }
 function showByKind(list,heading,css=''){
  if(!list?.length)return '';
@@ -179,14 +188,41 @@ function detailedGrammar(best,alternatives){
   '<ul>'+alternatives.slice(0,5).map(x=>'<li>'+
    '<bdi lang="ar" dir="rtl">'+esc(x.lemma)+'</bdi> · '+esc(grammarName('pos',x.pos))+
    (x.features?.cas?' · '+esc(grammarName('cas',x.features.cas)):'')+
-   ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search word forms</button></li>').join('')+'</ul></details>':'';
+   (groundedMorphActions(x.surface||best.surface||'',x.lemma,x.root).forms?
+    ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search indexed forms</button>':'')+
+   '</li>').join('')+'</ul></details>':'';
  return details+variants;
+}
+const MORPH_CORPUS=(BOOK?.sections||[]).flatMap(section =>
+  (section.segments||[]).map((segment,i) => ({
+    work:'daruri',id:'passage:'+section.id+':'+i,section:section.id,
+    ar:segment.ar||'',en:segment.en||'',type:'text'
+  })));
+function groundedMorphActions(word,lemma,root){
+ const engine=morph();
+ if(!engine?.status?.('daruri')?.loaded || !(engine?.getLexicon?.()||[]).length)
+   return {forms:false,root:false};
+ const fold=engine.fold, target=fold(word), head=fold(lemma||'');
+ let forms=false,related=false;
+ if(lemma){
+  const observed=engine.formsFor(lemma,'daruri',20);
+  forms=observed.some(hit=>fold(hit.form)!==target);
+ }
+ if(root){
+  const result=engine.find(root,'morph-root',MORPH_CORPUS);
+  if(result.ready){
+   const lemmas=new Set(result.items.map(hit=>fold(hit.matched?.lemma||'')).filter(Boolean));
+   related=[...lemmas].some(value=>value!==head);
+  }
+ }
+ return {forms,root:related};
 }
 function wordMarkup(ctx){
  const {word,analysis,terms,notes,privateInfo,section,segment,highlightType}=ctx;
  const best=analysis?.best,alts=analysis?.alternatives||[];
  const names=actions(word,analysis||{});
  const root=names.root,lemma=names.lemma;
+ const grounded=groundedMorphActions(word,lemma,root);
  const analysisSection='<section class="gnw-block"><h3>Word in this passage</h3>'+
   (best?'<div class="gnw-morph-line"><span>Dictionary form</span> <bdi dir="rtl" lang="ar">'+esc(best.lemma)+'</bdi>'+
    (best.root?' · <span>Root</span> <bdi dir="rtl" lang="ar">'+esc(best.root)+'</bdi>':'')+
@@ -197,7 +233,9 @@ function wordMarkup(ctx){
     '</small>'+detailedGrammar(best,alts):
    alts.length?'<p>This form has several possible analyses in the current index. The reading of this occurrence is not established.</p>'+
     '<ul>'+alts.slice(0,5).map(x=>'<li><bdi lang="ar" dir="rtl">'+esc(x.lemma)+'</bdi> · '+esc(grammarName('pos',x.pos))+
-     ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search word forms</button></li>').join('')+'</ul>':
+     (groundedMorphActions(word,x.lemma,x.root).forms?
+       ' <button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(x.lemma)+'">Search indexed forms</button>':'')+
+     '</li>').join('')+'</ul>':
     '<p>No dependable analysis is available here yet. Ordinary word search remains available.</p>')+
   '</section>';
  const dictionary=terms.length?
@@ -224,8 +262,8 @@ function wordMarkup(ctx){
    '<div class="gnw-action-grid">'+
    '<button type="button" data-gnw-search="literal" data-gnw-value="'+esc(word)+'">Exact word</button>'+
    '<button type="button" data-gnw-search="terms" data-gnw-value="'+esc(word)+'">Ordinary search</button>'+
-   (lemma?'<button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(lemma)+'">Other forms</button>':'')+
-   (root?'<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(root)+'">Root family</button>':'')+
+   (grounded.forms?'<button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(lemma)+'">Other indexed forms</button>':'')+
+   (grounded.root?'<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(root)+'">Indexed root relatives</button>':'')+
    '</div></section>';
  return '<header class="gnw-header"><div><small>WORD CONTEXT · '+(section?'§'+esc(section)+' · ¶'+(segment+1):'CURRENT SELECTION')+'</small>'+
   '<h2 id="gnw-title" lang="ar" dir="rtl">'+esc(word)+'</h2></div><button type="button" data-gnw-close="1" aria-label="Close word context">×</button></header>'+
@@ -234,7 +272,7 @@ function wordMarkup(ctx){
 }
 async function openWord(word,anchor,grid,trigger=null,point=null){
  if(!AR.test(word)||!BOOK)return;
- const section=locator(),segment=Number(grid?.dataset.segment||0);
+ const section=String(grid?.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator()),segment=Number(grid?.dataset.segment||0);
  const originalTarget=trigger||anchor;
  const hasSource=!!originalTarget?.closest?.('[data-note-target]');
  const noted=attachedNotes(section,segment,
@@ -277,30 +315,68 @@ function close(){
  shade.hidden=true;selected=null;
  try{oldFocus?.focus?.({preventScroll:true})}catch(_){}
 }
+/* Called explicitly from Reading Desk's selected-word context actions.
+   Translate the saved selection offset into an exact source word when the
+   browser has already collapsed its Selection after a toolbar click. */
+function firstArabicToken(raw){
+ for(const match of String(raw||'').matchAll(/[\p{L}\p{M}]+/gu)){
+  if(AR.test(match[0]))return {word:match[0],index:match.index};
+ }
+ return null;
+}
+/* For a phrase, inspect its first selected Arabic word. Use the saved source
+   offset and the live passage text to resolve the correct occurrence. */
+function openSelectedQuote(target){
+ if(!BOOK||target?.lang!=='ar')return false;
+ const first=firstArabicToken(target.quote);
+ if(!first)return false;
+ const {word}=first;
+ const direct=findSelectedWord();
+ if(direct&&direct.word.normalize('NFC')===word.normalize('NFC')){
+  const sec=String(direct.grid.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator());
+  if(sec===String(target.section)&&Number(direct.grid.dataset.segment)===Number(target.segment)){
+   openWord(word,direct.anchor,direct.grid,direct.anchor,direct.point);
+   return true;
+  }
+ }
+ const grid=$$('#reader .passage-grid[data-segment]').find(node=>
+  Number(node.dataset.segment)===Number(target.segment)&&
+  String(node.closest('.gn-continuous-section[data-reading-section]')?.dataset.readingSection||locator())===String(target.section));
+ const side=grid?.querySelector('.passage-ar');
+ if(!side)return false;
+ const nodes=[],walker=document.createTreeWalker(side,NodeFilter.SHOW_TEXT);
+ while(walker.nextNode()){
+  const node=walker.currentNode;
+  if(node.parentElement?.closest('sup,.gn-rd-passage-tools,[aria-hidden="true"]'))continue;
+  nodes.push(node);
+ }
+ const raw=nodes.map(node=>node.textContent||'').join('');
+ const desired=Number(target.offset||0)+Number(first.index||0);
+ const matches=[...raw.matchAll(/[\p{L}\p{M}]+/gu)]
+  .filter(match=>match[0].normalize('NFC')===word.normalize('NFC'))
+  .sort((a,b)=>Math.abs(a.index-desired)-Math.abs(b.index-desired));
+ if(!matches.length)return false;
+ let remaining=matches[0].index,point=null;
+ for(const node of nodes){
+  if(remaining<node.length){point={node,offset:remaining};break;}
+  remaining-=node.length;
+ }
+ if(!point)return false;
+ openWord(word,side,grid,side,point);
+ return true;
+}
 function installDictionaryActions(){
- const popup=$('#infoOverlay'),container=$('#detailContent');
- if(!popup||popup.hidden||!container||$('#gnw-dictionary-search',container))return;
- if(!/(DICTIONARY|LEXICAL|GLOSSARY)/i.test($('#detailEyebrow')?.textContent||''))return;
- const t=lastDictionary?.term||container.querySelector('h2')?.textContent?.trim();
- if(!t)return;
- const button=document.createElement('div');
- button.id='gnw-dictionary-search';button.className='gnw-dictionary-actions';
- button.innerHTML='<p><strong>Explore this term</strong> · dictionary information remains above</p>'+
-   '<button type="button" data-gnw-search="terms" data-gnw-value="'+esc(t)+'">Search text</button>'+
-   '<button type="button" data-gnw-search="morph-lemma" data-gnw-value="'+esc(t)+'">Word forms</button>'+
-   '<button type="button" data-gnw-search="morph-root" data-gnw-value="'+esc(t)+'">Root family</button>';
- container.append(button);
+ // The lexical dossier already includes authorial passages and source navigation.
+ // The old footer offered Word forms / Root family for every glossary label,
+ // even when no reviewed morphology had been indexed (e.g. ṣīgha / صوغ).
+ // Remove that misleading duplicate panel; contextual morphological operations
+ // remain available from actual word occurrences when analysis supports them.
+ const old=$('#gnw-dictionary-search');
+ if(old)old.remove();
 }
-function augmentSelectionBar(){
- const bar=$('#gn-rd-selection-bar');
- if(!bar||bar.hidden||bar.querySelector('[data-gnw-selection]'))return;
- const selected=findSelectedWord();if(!selected)return;
- const b=document.createElement('button');b.type='button';b.dataset.gnwSelection='1';
- b.className='gn-rd-tool-icon gnw-select-word';b.textContent='Explore word';b.title='Dictionary, notes and root/lemma search';
- bar.append(b);
-}
+
 document.addEventListener('click',e=>{
- const btn=e.target?.closest?.('[data-gnw-close],[data-gnw-search],[data-gnw-term],[data-gnw-note],[data-gnw-desk],[data-gnw-selection]');
+ const btn=e.target?.closest?.('[data-gnw-close],[data-gnw-search],[data-gnw-term],[data-gnw-note],[data-gnw-desk]');
  if(btn){
   if(btn.hasAttribute('data-gnw-close')){e.preventDefault();close();return;}
   if(btn.hasAttribute('data-gnw-search')){
@@ -326,28 +402,84 @@ document.addEventListener('click',e=>{
    related?.click();return;
   }
   if(btn.hasAttribute('data-gnw-desk')){e.preventDefault();close();$('[data-route=bookmarks]')?.click();return;}
-  if(btn.hasAttribute('data-gnw-selection')){
-   e.preventDefault();e.stopPropagation();const current=findSelectedWord();
-   if(current)openWord(current.word,current.anchor,current.grid,e.target);
-   return;
-  }
  }
  const dict=e.target?.closest?.('[data-term]');
  if(dict){lastDictionary={term:dict.dataset.term};queueMicrotask(installDictionaryActions);return;}
+}); 
+/* Explicit word context; native mouse drag and touch selection are untouched.
+   For a selected Arabic word the custom right-click menu retains Copy.
+   Multiword / English selection continues to use the native browser menu. */
+let wordMenu=null,wordMenuTarget=null;
+function closeWordMenu(){
+ wordMenu?.remove();wordMenu=null;wordMenuTarget=null;
+}
+async function copyWordFromMenu(text){
+ try{
+  if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');
+  await navigator.clipboard.writeText(text);return;
+ }catch(_){}
+ const saved=window.getSelection?.(),ranges=[];
+ if(saved)for(let i=0;i<saved.rangeCount;i++)ranges.push(saved.getRangeAt(i).cloneRange());
+ const field=document.createElement('textarea');
+ field.value=text;field.style.cssText='position:fixed;left:-9999px;top:0';
+ document.body.append(field);field.focus();field.select();
+ try{document.execCommand('copy');}catch(_){}
+ field.remove();
+ if(saved){saved.removeAllRanges();ranges.forEach(range=>saved.addRange(range));}
+}
+document.addEventListener('contextmenu',event=>{
+ if(event.defaultPrevented||
+    !window.matchMedia?.('(hover:hover) and (pointer:fine)').matches)return;
  if(shade&&!shade.hidden)return;
- if(e.button!==0||e.detail===0)return;
- const content=e.target?.closest?.('#mainContent .passage-grid .passage-ar');
- if(!content)return;
- // Notes, source markers, dictionary links, saved-item controls and normal
- // text selection must retain their own established click semantics.
- if(e.target.closest('a,button,input,mark[data-rd],.note-anchored,[data-note-target],[data-rd]'))return;
- if(window.getSelection?.()?.toString().trim())return;
- const at=atTap(e),n=at.node;
- if(!n||!content.contains(n))return;
- const word=currentToken(n,at.offset);
- if(word)openWord(word,n.parentElement,content.closest('.passage-grid'),e.target,at);
-});
+ if(event.target?.closest?.('a[href],button,input,textarea,select,[contenteditable],[data-rd]'))return;
+ const side=event.target?.closest?.('#mainContent .passage-grid .passage-ar');
+ if(!side)return;
+ // The word under the pointer matters, even when a whole phrase is selected.
+ const point=atTap(event);
+ let word=point.node&&side.contains(point.node)?currentToken(point.node,point.offset):null;
+ const selectedWord=findSelectedWord();
+ if(!word&&selectedWord?.anchor===side)word=selectedWord.word;
+ if(!word)return;
+ const sel=window.getSelection?.(),selection=sel?.toString()||'';
+ const withinSelection=!!(selection&&sel?.rangeCount&&
+  [...sel.getRangeAt(0).getClientRects()].some(rect=>
+   event.clientX>=rect.left-3&&event.clientX<=rect.right+3&&
+   event.clientY>=rect.top-3&&event.clientY<=rect.bottom+3));
+ const chosen={word,anchor:side,grid:side.closest('.passage-grid'),
+   point:point.node&&side.contains(point.node)?point:selectedWord?.point,
+   text:withinSelection?selection:word,selected:withinSelection};
+ if(!chosen.grid)return;
+ event.preventDefault();
+ closeWordMenu();
+ wordMenuTarget=chosen;
+ wordMenu=document.createElement('div');
+ wordMenu.className='gnw-reader-menu';
+ wordMenu.setAttribute('role','menu');
+ wordMenu.setAttribute('aria-label','Arabic word actions');
+ wordMenu.innerHTML=
+  '<button type="button" role="menuitem" data-gnw-copy-menu="1">Copy '+(chosen.selected?'selection':'word')+'</button>'+
+  '<button type="button" role="menuitem" data-gnw-open-menu="1">Word Context · <bdi lang="ar" dir="rtl">'+esc(chosen.word)+'</bdi></button>';
+ document.body.append(wordMenu);
+ const rect=wordMenu.getBoundingClientRect();
+ wordMenu.style.left=Math.max(8,Math.min(event.clientX,innerWidth-rect.width-8))+'px';
+ wordMenu.style.top=Math.max(8,Math.min(event.clientY,innerHeight-rect.height-8))+'px';
+ wordMenu.querySelector('[data-gnw-open-menu]')?.focus({preventScroll:true});
+},true);
+document.addEventListener('pointerdown',event=>{
+ if(wordMenu&&!wordMenu.contains(event.target))closeWordMenu();
+},true);
+document.addEventListener('click',event=>{
+ const trigger=event.target?.closest?.('[data-gnw-open-menu],[data-gnw-copy-menu]');
+ if(!trigger||!wordMenu?.contains(trigger))return;
+ event.preventDefault();
+ const chosen=wordMenuTarget,copy=trigger.hasAttribute('data-gnw-copy-menu');
+ closeWordMenu();
+ if(!chosen)return;
+ if(copy)copyWordFromMenu(chosen.text);
+ else if(chosen.grid)openWord(chosen.word,chosen.anchor,chosen.grid,trigger,chosen.point);
+},true);
 document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&wordMenu){e.preventDefault();closeWordMenu();return;}
  if(e.key==='Escape'&&shade&&!shade.hidden){e.preventDefault();close();}
  if(e.key==='Tab'&&shade&&!shade.hidden){
   const focus=$$('button:not([disabled]),a[href]',shade).filter(x=>x.getClientRects().length);
@@ -356,14 +488,8 @@ document.addEventListener('keydown',e=>{
   else if(!e.shiftKey&&document.activeElement===focus.at(-1)){e.preventDefault();focus[0].focus();}
  }
 });
-document.addEventListener('selectionchange',()=>{
- // Existing Reading Desk toolbar is responsible for save actions. Do not
- // replace it; add an optional word exploration action when it appears.
- queueMicrotask(augmentSelectionBar);
-});
 new MutationObserver(()=>{
  if(!rendering)installDictionaryActions();
- augmentSelectionBar();
 }).observe(document.body,{subtree:true,childList:true,attributes:false});
-window.GnammaWordContext=Object.freeze({openWord,close,findSelectedWord,locateOccurrence:passageOccurrence});
+window.GnammaWordContext=Object.freeze({openWord,openSelectedQuote,close,findSelectedWord,locateOccurrence:passageOccurrence});
 })();

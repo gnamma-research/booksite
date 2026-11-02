@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-27",
+  "checks": [
+    "Home: short introduction, eight links, separate method guide",
+    "Two legal cards in Edition I; six perspectives in Edition II",
+    "Salam legal/scriptural comparison and unique Fath commentary popup",
+    "Daruri Arabic and English selection with original scan links",
+    "Edition switch retains active study and legal comparison",
+    "390px: switchable spiritual/alchemical comparison tabs",
+    "320px: legal cards, no horizontal document overflow",
+    "320px: Arabic/English source viewer and independent page controls",
+    "Source edition switch preserves Arabic page, English page and layout",
+    "1280px: wider legal reader has72 study markers and344 legal-core blocks",
+    "Wider reader console has no captured errors"
+  ],
+  "limitations": [
+    "No physical-device certification",
+    "No new source-critical or historical validation",
+    "Print command retained; no new paginated PDF edition generated"
+  ]
+}

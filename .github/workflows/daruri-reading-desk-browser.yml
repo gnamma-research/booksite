@@ -6,6 +6,9 @@ on:
     paths:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
+      - 'daruri/qa/verify-highlight-word-context-browser.cjs'
+      - 'daruri/gnamma-word-context.js'
+      - 'daruri/gnamma-word-context.css'
       - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
       - 'daruri/qa/verify-contextual-bookmarks.cjs'
       - 'daruri/reading-mode-controls.js'
@@ -23,6 +26,9 @@ on:
     paths:
       - '.github/workflows/daruri-reading-desk-browser.yml'
       - 'daruri/qa/verify-reading-desk-real-browser.cjs'
+      - 'daruri/qa/verify-highlight-word-context-browser.cjs'
+      - 'daruri/gnamma-word-context.js'
+      - 'daruri/gnamma-word-context.css'
       - 'daruri/qa/verify-reading-desk-recovery-search.cjs'
       - 'daruri/qa/verify-contextual-bookmarks.cjs'
       - 'daruri/reading-mode-controls.js'
@@ -72,6 +78,8 @@ jobs:
         run: node daruri/qa/verify-reading-desk-recovery-search.cjs
       - name: Verify contextual reference navigation in mobile and desktop browsers
         run: node daruri/qa/verify-contextual-bookmarks.cjs
+      - name: Verify visible saved highlights and explicit Word Context in Chromium and WebKit
+        run: node daruri/qa/verify-highlight-word-context-browser.cjs
       - name: Verify manual backup, selective restoration and mocked Google Drive
         run: node daruri/qa/verify-backup-transfer-browser.cjs
       - name: Preserve screenshots for review

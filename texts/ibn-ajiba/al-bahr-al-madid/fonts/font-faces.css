@@ -1,0 +1,49 @@
+/* Complete Arabic font families; licences and sources are in this directory. */
+
+@font-face {
+  font-family: 'Amiri';
+  src: url('./amiri-regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amiri';
+  src: url('./amiri-bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Scheherazade New';
+  src: url('./scheherazade-new-regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Scheherazade New';
+  src: url('./scheherazade-new-bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  src: url('./noto-naskh-arabic-regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  src: url('./noto-naskh-arabic-bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

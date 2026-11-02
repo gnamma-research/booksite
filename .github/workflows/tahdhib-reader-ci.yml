@@ -1,0 +1,66 @@
+name: Tahdhib actual reader and logic verification
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/tahdhib-reader-ci.yml"
+      - "tools/tahdhib/reader_qa.mjs"
+      - "tools/tahdhib/verify_logic_core.py"
+      - "texts/al-taftazani/tahdhib-al-kalam/edition/**"
+      - "texts/al-taftazani/tahdhib-al-mantiq/edition/**"
+permissions:
+  contents: read
+jobs:
+  logical-core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check non-modal inference reconstructions and source-corpus integrity
+        run: |
+          python tools/tahdhib/verify_logic_core.py
+          python - <<'PY'
+          import json, pathlib
+          base=pathlib.Path('texts/al-taftazani')
+          def load(name):
+              data=(base/name/'edition/data.js').read_text(encoding='utf-8')
+              return json.loads(data.split('=',1)[1].rstrip(';\n '))
+          logic=load('tahdhib-al-mantiq');kalam=load('tahdhib-al-kalam')
+          assert len(logic['units'])==19 and len(kalam['units'])==1044
+          assert len({u['id'] for u in kalam['units']})==1044
+          assert len({u['page'] for u in kalam['units']})==113
+          assert len(logic['open_issues'])>=6 and len(kalam['open_issues'])==5
+          text={u['id']:u['ar'] for u in logic['units']}
+          assert 'الوقتيتان المطلقتان' in text['L.11']
+          assert 'وإلا لزم سلب الشيء عن نفسه' in text['L.14']
+          assert 'مع الموجبة الكلية الموجبتين' in text['L.16']
+          assert 'والنظريات' in text['L.18']
+          assert 'والله أعلم بالصواب' in text['L.19']
+          print('PASS: published Arabic corrections and 19 / 1,044 corpus integrity')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tahdhib-nonmodal-proof-report
+          path: tools/tahdhib/verified_nonmodal_results.json
+
+  reader-chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install headless Chromium test dependencies
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Exercise both bilingual readers in desktop, portrait, and landscape
+        run: |
+          python3 -m http.server 8765 >/tmp/tahdhib-http.log 2>&1 &
+          SERVER=$!
+          trap 'kill "$SERVER" || true' EXIT
+          sleep 2
+          node tools/tahdhib/reader_qa.mjs

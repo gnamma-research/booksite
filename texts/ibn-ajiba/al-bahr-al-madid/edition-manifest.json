@@ -1,0 +1,94 @@
+{
+  "work": "al-Bahr al-Madid",
+  "volume": 1,
+  "release": "2026-10-30",
+  "passages": 389,
+  "segments": 1565,
+  "notes": 209,
+  "cairoNotes": 241,
+  "reports": 48,
+  "sources": 352,
+  "criticalQuestions": 37,
+  "dictionaryTerms": 120,
+  "dictionaryOccurrences": 2937,
+  "chunks": [
+    "passages-00",
+    "passages-01",
+    "passages-02",
+    "passages-03",
+    "passages-04",
+    "passages-05",
+    "passages-06",
+    "passages-07",
+    "passages-08",
+    "passages-09",
+    "passages-10",
+    "passages-11",
+    "passages-12",
+    "passages-13",
+    "passages-14",
+    "passages-15",
+    "passages-16",
+    "passages-17",
+    "passages-18",
+    "passages-19",
+    "passages-20",
+    "passages-21",
+    "passages-22",
+    "passages-23",
+    "passages-24",
+    "passages-25",
+    "passages-26",
+    "passages-27",
+    "passages-28",
+    "passages-29",
+    "passages-30",
+    "passages-31",
+    "passages-32",
+    "passages-33",
+    "passages-34",
+    "passages-35",
+    "passages-36",
+    "passages-37",
+    "passages-38"
+  ],
+  "downloads": [
+    {
+      "path": "editions/37_Questions_Register_XVIII.csv",
+      "bytes": 12387,
+      "sha256": "18813d4fef1454951f07c511027d64efa584db915c53e129568d81f1219315b5"
+    },
+    {
+      "path": "editions/Editorial_Audit_and_Docket_XVIII.pdf",
+      "bytes": 84542,
+      "sha256": "e1fe593a4d4eae0f1f5c456182e2f9c4d120af44b06828a289e2b0ef1332dd49"
+    },
+    {
+      "path": "editions/PDF_1_English_Critical.pdf",
+      "bytes": 8253566,
+      "sha256": "4b80863035aa4bbad59d4d156f20447a8b7a160392fac02ffd44f22209043b9b"
+    },
+    {
+      "path": "editions/PDF_2_Bilingual_Unvowelled.pdf",
+      "bytes": 10654327,
+      "sha256": "d8c131f5e5768e0f29832f978868b9775fd66d9a86bc21d58a85731229ac5c44"
+    },
+    {
+      "path": "editions/PDF_3_Bilingual_Source_Vowels.pdf",
+      "bytes": 11750484,
+      "sha256": "4488949126c3f7548e18ad64b94793b97e9cfb74656b37c2faa39b6dd44083b2"
+    },
+    {
+      "path": "editions/PDF_4_Arabic_Only.pdf",
+      "bytes": 3237854,
+      "sha256": "39239bafce1b7167cf957c956547196d665da41205e0d9ff1e1817967e594eae"
+    },
+    {
+      "path": "editions/Specialist_Review_Worksheet_XVIII.csv",
+      "bytes": 6305,
+      "sha256": "3a166a1c5d7fd4f2bb1b520e751443328be967dfe81d52034b2e176640c31033"
+    }
+  ],
+  "alignment": "Passage-level Arabic/English pairing. Separate stable Arabic paragraphs and English segments; no unverified paragraph-to-paragraph alignment.",
+  "arabic": "Original Cairo source marks; optional display stripping only. No added vowelling layer."
+}
