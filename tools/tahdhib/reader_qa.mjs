@@ -56,6 +56,11 @@ async function check(kind, viewport) {
   if (kind === 'logic') {
     assert(await page.locator('.witness-variant').count() > 0, 'L13 independent printed readings panel missing');
     assert((await page.locator('.witness-variant').first().textContent()).includes('Cairo 1912'), 'variant labels missing');
+    await page.goto(new URL(route + '#page=12', base).href, { waitUntil: 'networkidle' });
+    const l12 = await page.locator('#passages').textContent();
+    assert(l12.includes('وكل منها عنادية'), 'L12 shorter Cairo classification must be visible');
+    assert(!l12.includes('وكل منهما عنادية'), 'commentary-print L12 text must not silently replace Cairo main reading');
+    assert(await page.locator('.witness-variant').count() > 0, 'L12 distinct printed reading panel missing');
   } else {
     const cairo39 = await page.locator('#passages').textContent();
     assert(cairo39.includes('مقدار طبيعة غير قارة'), 'p39 corrected Cairo طبيعة not visible');
