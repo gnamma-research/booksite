@@ -191,9 +191,9 @@
     "pdf": 444,
     "category": "page-draft",
     "quality": "source-image-meaning-pass",
-    "title": "Speech's distinctness from other divine perfections",
-    "arabic": "الاستقراء الناقصة",
-    "english": "The printed argument considers the difference between enumerating occurrences of 'speech' in common usage and proving that a divine speech attribute must exist in a particular mode. The status of commands and reports, and the impossibility of successive sounds subsisting eternally in the divine essence, remain disputed. The marginal notes examine whether the same concept can be predicated of God and humans without making them possess identical accidents.",
+    "title": "Subsistence (baqāʾ), divine attributes and the distinct takwīn controversy",
+    "arabic": "البقاء ... التكوين",
+    "english": "The printed text moves beyond the earlier speech discussion to the disputed status of divine subsistence (baqāʾ). It reports the view that affirming subsistence as an additional eternal quality might involve a further attribute and considers objections about the necessary being's existence. It then turns to takwīn, the bringing of things into existence, asking whether it is an eternal attribute distinct from power and will or the relation of production to what is produced. The two controversies must not be collapsed into speech.",
     "citation": "Taqrīb al-Marām, vol. II, printed 149; scanned original image PDF 444; inspected 2 November 2026",
     "notes": [
       {
@@ -214,9 +214,9 @@
     "pdf": 445,
     "category": "page-draft",
     "quality": "source-image-meaning-pass",
-    "title": "Divine speech, necessary existence and the fear of intrinsic change",
-    "arabic": "الكلام",
-    "english": "An objection asks whether speech newly originating in God would imply a transition between states, contrary to the independence of the necessary being. Distinguishing the attribute of speech from its effects, or the meaningful content from its audible production, is part of the reply. The issue is not resolved merely by affirming that God has the power to speak; the account must explain how the attribute and the act are related.",
+    "title": "Is takwīn a real attribute or an extrinsic relation?",
+    "arabic": "ليس صفة حقيقية كالعلم والإرادة بل هو معنى إضافي يعقل من تعلق المؤثر بالأثر",
+    "english": "The extended discussion concerns takwīn, origination and the relation of an effect to its producer. A reported argument rejects making 'bringing into existence' an additional real intrinsic quality like knowledge or will, understanding it instead as a relational intelligible arising from the producer's relation to the produced. Opposing arguments about necessity, eternal power and temporal effects are considered. The bottom register debates whether the proposed relational interpretation truly avoids a new intrinsic divine state.",
     "citation": "Taqrīb al-Marām, vol. II, printed 150; scanned original image PDF 445; inspected 2 November 2026",
     "notes": [
       {
@@ -237,9 +237,9 @@
     "pdf": 446,
     "category": "page-draft",
     "quality": "source-image-meaning-pass",
-    "title": "Speech and the scriptural proofs of divine address",
-    "arabic": "قول",
-    "english": "Evidence for divine speaking is examined in connection with report, command, revelation and the prophetic reception of an address. The commentary tests the inference from hearing an expression to an intrinsic temporal change in the speaker. The lower argument distinguishes the uttered words from the divine perfection they are taken to disclose.",
+    "title": "Metaphorical attributes and new section on divine states, including vision",
+    "arabic": "فصل في أحواله ... من غير جهة ولا مقابلة",
+    "english": "The upper discussion distinguishes expressions of divine power and will from literal spatial readings of 'establishing over the throne', 'hand', 'face' and 'right hand', treating these as figurative or representational expressions of divine attributes. It then explicitly opens a new section, 'On His states/conditions' (فصل في أحواله). Its initial question is whether God may be seen and whether His reality can be known. The defended account allows a kind of perceptual state termed vision while denying the ordinary requirements of direction and facing the object. This is the actual start of the vision debate, earlier than previously charted.",
     "citation": "Taqrīb al-Marām, vol. II, printed 151; scanned original image PDF 446; inspected 2 November 2026",
     "notes": [
       {
@@ -260,9 +260,9 @@
     "pdf": 447,
     "category": "page-draft",
     "quality": "source-image-meaning-pass",
-    "title": "Moses' divine address and the request to see God",
-    "arabic": "موسى عليه السلام",
-    "english": "The treatment moves from divine communication with Moses into the possibility of divine vision. The request to see God is presented as evidence for its possibility by those who deny that a prophet would ask for what is intrinsically impossible. A response must still address whether the promised or denied occurrence concerns the worldly state and the conditions familiar in bodily vision.",
+    "title": "Moses' request to see God and the limits of worldly vision",
+    "arabic": "طلب الرؤية ... قال تعالى حكاية عنه رب أرني أنظر إليك",
+    "english": "The response invokes Moses' request to see God as evidence for the possibility of vision, reasoning that a prophet would not request an intrinsic impossibility. Opponents question this inference and whether Moses sought fuller assurance rather than a new sensory condition. The lower commentary distinguishes an event's possibility in itself from its occurrence in the worldly state and develops objections from divine nonspatiality.",
     "citation": "Taqrīb al-Marām, vol. II, printed 152; scanned original image PDF 447; inspected 2 November 2026",
     "notes": [
       {
@@ -283,9 +283,9 @@
     "pdf": 448,
     "category": "page-draft",
     "quality": "source-image-meaning-pass",
-    "title": "Moses' request and the difference between possibility and occurrence",
+    "title": "Moses' request, expectation and the negation 'You shall not see Me'",
     "arabic": "أو طلب الرؤية",
-    "english": "The source continues the evidence from Moses' asking for vision and the reported argument from seeking something to its possibility. A crucial distinction separates the possibility of a particular event in itself from its occurrence under a given condition. The scriptural phrase 'You shall not see Me' is examined for what kind of negation it expresses; the extensive lower register discusses the force of the temporal circumstance.",
+    "english": "The vision argument continues by comparing interpretations of what Moses requested and what the scriptural denial negates. Does 'You shall not see Me' concern the present circumstances or the possibility of seeing God altogether? Another argument considers a request for strengthened assurance, as in Abraham's request to witness the reviving of the dead. The much longer marginal text disputes the force of these analogies.",
     "citation": "Taqrīb al-Marām, vol. II, printed 153; scanned original image PDF 448; inspected 2 November 2026",
     "notes": [
       {
