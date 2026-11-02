@@ -1,11 +1,11 @@
 /* Gnamma Research | Qawāʿid al-Tawḥīd | ancestor's MATN ONLY
-   Forty-one translated lemmata; digitized Āshtiyānī 1982 pp.48–186.
+   Forty-two translated lemmata; digitized Āshtiyānī 1982 pp.48–190.
    Not a complete translation and not a manuscript-critical edition.
    Commentary informs notes ONLY, and is never spliced into the matn.
 */
 window.GNAMMA_QAWAID_MATN = {
   "edition": "Āshtiyānī 1982, digital page transcription",
-  "status": "41-quoted-matn-lemmas-print-transcription-not-manuscript-collated",
+  "status": "42-quoted-matn-lemmas-print-transcription-not-manuscript-collated",
   "units": [
     {
       "id": "QT-001",
@@ -896,6 +896,32 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "url": "https://ablibrary.net/book_content/b/17638/381?lang=ar",
       "moreUrl": "https://ablibrary.net/book_content/b/17638/382?lang=ar"
+    },
+    {
+      "id": "QT-042",
+      "title": "Can the entire human cosmos mirror the complete divine image?",
+      "pages": [
+        189,
+        190
+      ],
+      "arabic": "فإن قيل: العقل الأوّل لا يصلح لمرآتيّة صورته الجامعة لسائر صفاته الكماليّة والتعيّنات الأسمائيّة، بل إنما يصلح لمرآتيّة تلك الصورة الكون الجامع الذي يظهر به سائر الأسماء والصفات والتعيّنات، وهو في مظهريّته موقياً لها عن التحريف والتغيير، إذ ما من قابل من القوابل يقبل الفيض المقدّس على نحو من القبول، أو يظهر فيه الصور الإلهيّة على ضرب من التعيّن، إلا وفي الإنسان الكامل مثال ذلك على الوجه الأكمل. قلنا: إن حقيقته السارية في كلّ المظاهر هاهنا بوحدتها الحقيقيّة غير مدركة في كلّ المراتب الموجودة في الكون الجامع، بل إنما يدرك صورتها هاهنا في بعض المراتب، فيكون إدراك بعض صور الأسماء تعقّليّاً غيبيّاً لا غير. ومتى تحقّق هذا فمن البيّن حينئذ أن مرآتيّة الكون الجامع ليست لصورتها.",
+      "english": "If it is objected: ‘The First Intellect cannot serve as the mirror of the comprehensive image embracing all the divine attributes of perfection and the determinations of the names. Only comprehensive being can serve as the mirror of that image, since every name, attribute, and determination appears through it, and in its manifestation it preserves their representation from distortion or alteration. For there is no receptive locus receiving the holy effusion in a particular manner, nor any locus in which the divine forms appear through a given determination, without a more complete analogue of it in the Perfect Human.’ We reply: the reality pervading every manifestation in its true unity is not apprehended across all the levels present in comprehensive being; rather, only some of its levels disclose its image here, so that certain images of the names remain known solely through intellectual apprehension of the unseen. Once this is recognized, it is evident that the comprehensive world cannot serve as the mirror of that reality's entire image.",
+      "notes": [
+        "This grandfather's dialectical quote starts with **فإن قيل** on printed p. 189 and his reply **قلنا** concludes at the beginning of p. 190, before the grandson's أقول. The two must remain one argumentative unit, not two separately endorsed premises.",
+        "The conditional claim is precisely that the Perfect Human contains a maximally comprehensive analogue of all divine manifestations. The reply argues that not all divine levels are actually apprehended there; thus the mirror metaphor requires qualification.",
+        "The accompanying grandson's response defends the comprehensive human manifestation and distinguishes it from the First Intellect. That defence is not imported into the grandfather's text.",
+        "The word **موقياً - موق** is unstable in the digital print and has been minimally normalized to موقياً in the working text. The last sentence's apparent tension with QT-040 is preserved, not artificially harmonized.",
+        "Critically compare against the text after p. 193, where another grandfather lemma explores the distinction between the reality of the Real, human likeness, and the wider cosmos. That **following lemma has not yet been translated in this installment**."
+      ],
+      "variants": [
+        {
+          "lemma": "موقياً",
+          "other": "موق",
+          "remark": "Digitized base offers an unclear double form in the first-page objection; morphology requires image-based verification."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/385?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/386?lang=ar"
     }
   ]
 };
