@@ -161,3 +161,24 @@ When the complete matn is established, begin a **separate** sharḥ register (co
 | QT-052 | 237 | [237](https://ablibrary.net/book_content/b/17638/433?lang=ar) | Self-contained quotation before (1) أقول; damaged/doubled syntactic clause. |
 
 No printed-page photography or independent manuscript collation has been carried out for these six passages. The printed transcription is NOT an independently authenticated critical matn. Editorial headings, Persian material, and extended أقول commentary must remain excluded.
+
+
+## Stage 08: last attested original quotations and their closing boundary
+
+| Unit | Printed p. | Digital base transcription | Verified quotation boundary |
+|---|---|---|---|
+| QT-053 | 243–244 | [243](https://ablibrary.net/book_content/b/17638/439?lang=ar) · [244](https://ablibrary.net/book_content/b/17638/440?lang=ar) | **قال** to next **أقول**. |
+| QT-054 | 248 | [248](https://ablibrary.net/book_content/b/17638/444?lang=ar) | **قال** to next **أقول**. |
+| QT-055 | 249–250 | [249](https://ablibrary.net/book_content/b/17638/445?lang=ar) · [250](https://ablibrary.net/book_content/b/17638/446?lang=ar) | **قال** to next **أقول**. |
+| QT-056 | 252–253–254–255 | [252](https://ablibrary.net/book_content/b/17638/448?lang=ar) · [253](https://ablibrary.net/book_content/b/17638/449?lang=ar) · [254](https://ablibrary.net/book_content/b/17638/450?lang=ar) · [255](https://ablibrary.net/book_content/b/17638/451?lang=ar) | **قال** to next **أقول**. |
+| QT-057 | 257–258 | [257](https://ablibrary.net/book_content/b/17638/453?lang=ar) · [258](https://ablibrary.net/book_content/b/17638/454?lang=ar) | **قال** to next **أقول**. |
+| QT-058 | 260 | [260](https://ablibrary.net/book_content/b/17638/456?lang=ar) | **قال** to next **أقول**. |
+| QT-059 | 262–263–264 | [262](https://ablibrary.net/book_content/b/17638/458?lang=ar) · [263](https://ablibrary.net/book_content/b/17638/459?lang=ar) · [264](https://ablibrary.net/book_content/b/17638/460?lang=ar) | **قال** to next **أقول**. |
+| QT-060 | 266–267 | [266](https://ablibrary.net/book_content/b/17638/462?lang=ar) · [267](https://ablibrary.net/book_content/b/17638/463?lang=ar) | **قال** to next **أقول**. |
+| QT-061 | 269–270 | [269](https://ablibrary.net/book_content/b/17638/465?lang=ar) · [270](https://ablibrary.net/book_content/b/17638/466?lang=ar) | **قال** to next **أقول**; authorial final formula p.270. |
+
+**Important source loss at QT-059:** the Āshtiyānī printed editorial apparatus on pp.262–263, particularly Persian note at printed p.263, reports a scribal omission of more than one page in the ancestor's words, common to the exemplars used. Our lemma records only the surviving quotation. No reconstruction or independent manuscript text is being asserted.
+
+**Book-ending distinction:** the ancestor's original Qawāʿid concludes at printed p.270 with its own formal closing words, immediately preceding the grandson's independent (1) أقول. The latter continues through p.274; the grandson's closing and modern colophon are not ancestral Qawāʿid.
+
+These were read in a single electronic text transcription of Āshtiyānī. No complete photographic reading, independent manuscript collation, or proof that surviving *Tamhīd* quotations capture all words of a separate ancestral matn manuscript is asserted.
