@@ -20,6 +20,16 @@ This register distinguishes **text consulted**, **printed comparators not collat
 
 **Caution:** The library transcription embeds older glosses, explanatory notes, and its author's commentary after the quotations. We have not individually verified these transcriptions against images of every printed page. The book's Persian introductory pagination is distinct from the Arabic pagination.
 
+## Stage 02 additional consulted printed pages
+- QT-007, pp. 63–64: https://ablibrary.net/book_content/b/17638/259?lang=ar and https://ablibrary.net/book_content/b/17638/260?lang=ar
+- QT-008, p. 67: https://ablibrary.net/book_content/b/17638/263?lang=ar
+- QT-009, p. 68: https://ablibrary.net/book_content/b/17638/264?lang=ar
+- QT-010, p. 71: https://ablibrary.net/book_content/b/17638/267?lang=ar
+- QT-011, p. 72: https://ablibrary.net/book_content/b/17638/268?lang=ar
+- QT-012, p. 74: https://ablibrary.net/book_content/b/17638/270?lang=ar
+
+These are **unphotographed digital printed-text transcriptions**, not newly collated independent witnesses. Original quotation boundaries are verified by **قال** and subsequent **أقول** in each passage; p. 63 quotation ends on p. 64. Later material is not part of Lumbard's English selection.
+
 ## Independent manuscript leads — NOT yet collated
 - **M1 — Mashhad, Farhang va Honar, MS alif-28:** catalogue reports a copy dated 851 AH, scribe Aḥmad ibn ʿAlī al-Bayhaqī al-Sabzawārī.
 - **M2 — Mashhad, Āstān-i Quds Riḍawī, MS 812:** catalogue reports 18 folios, dated 1067 AH.
