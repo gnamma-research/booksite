@@ -10,6 +10,8 @@ on:
       - "tools/tahdhib/verify_special_modal_temporal_shadow.py"
       - "tools/tahdhib/verify_special_modal_witness_scope.py"
       - "tools/tahdhib/verify_fourth_figure_mode8_temporal_shadow.py"
+      - "tools/tahdhib/verify_fourth_figure_special_46_mix_types.py"
+      - "tools/tahdhib/verify_fourth_figure_modes6_7_temporal_shadow.py"
       - "tools/tahdhib/verify_modal_type_crosswalk.py"
       - "texts/al-taftazani/tahdhib-al-kalam/edition/**"
       - "texts/al-taftazani/tahdhib-al-mantiq/edition/**"
@@ -30,6 +32,8 @@ jobs:
           python tools/tahdhib/verify_special_modal_temporal_shadow.py
           python tools/tahdhib/verify_special_modal_witness_scope.py
           python tools/tahdhib/verify_fourth_figure_mode8_temporal_shadow.py
+          python tools/tahdhib/verify_fourth_figure_special_46_mix_types.py
+          python tools/tahdhib/verify_fourth_figure_modes6_7_temporal_shadow.py
           python tools/tahdhib/verify_modal_type_crosswalk.py
           python - <<'PY'
           import json, pathlib
@@ -53,13 +57,17 @@ jobs:
           assert 'مع الموجبة الكلية الموجبتين' not in text['L.16']
           assert 'التناقض اختلاف قضيتين' in text['L.13']
           assert 'في الكيف والكم والجهة' in text['L.13']
-          assert kalam['pending_pages']==[77,100,124]
+          assert kalam['pending_pages']==[77]
           ktext={u['id']:u['ar'] for u in kalam['units']}
           assert 'مقدار طبيعة غير قارة' in ktext['KAL-039.03']
           assert 'ولامتناع فنائه لما مر' in ktext['KAL-039.04']
           assert 'مقدار أسرعها' in ktext['KAL-039.05']
           assert 'فمنها القدرة لاستناد الحوادث إليه تعالى وفاقا' in ktext['KAL-080.11']
           assert 'و«وهم راكعون» للعطف' in ktext['KAL-124.06']
+          assert 'ولدين موسى' in ktext['KAL-100.02']
+          assert 'أو بحكمة البعثة' in ktext['KAL-100.07']
+          assert 'لا كصلاة اليهود أو خاضعون' in ktext['KAL-124.06']
+          assert '[موضع يحتاج مقابلة' not in ktext['KAL-124.06']
           assert len(logic['stage78_source_concordance']['unit_printed_pages'])==19
           assert len(logic.get('witness_comparisons_stage77',[]))>=10
           assert 'والنظريات' in text['L.18']
@@ -111,6 +119,8 @@ jobs:
             tools/tahdhib/verified_special_modal_temporal_shadow.json
             tools/tahdhib/verified_special_modal_witness_scope.json
             tools/tahdhib/verified_fourth_figure_mode8_temporal_shadow.json
+            tools/tahdhib/verified_fourth_figure_special_46_mix_types.json
+            tools/tahdhib/verified_fourth_figure_modes6_7_temporal_shadow.json
             tools/tahdhib/verified_modal_type_crosswalk.json
 
   reader-chromium:
