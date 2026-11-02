@@ -1,52 +1,44 @@
-# Tahdhīb al-Kalām — source and translation status
+# Tahdhīb al-Kalām — editorial, witness and translation status (Stage 98)
 
-**Release:** Stage 84 interpretative and source-locus verification (2 November 2026), after Stage 83 full-line logic repairs and Stage 81 Cairo p.80/p.124 fixes. The stage count does not imply a new page-level certificate.
+**Date:** 2 November 2026. **Author:** Saʿd al-Dīn al-Taftāzānī. **Controlling printed copy:** Cairo, Maṭbaʿat al-Saʿāda, 1330 AH/1912 CE, Arabic main text pp.15–127. **Do not call this a fully manuscript-collated critical edition.**
 
-**Author:** Saʿd al-Dīn al-Taftāzānī  
-**Controlling print:** Cairo, Maṭbaʿat al-Saʿāda, 1330 AH / 1912, printed kalām pp. 15–127.
+## Single-print completion versus genuine critical collation
 
-## What the new edition contains
+- The complete set of **113 Cairo printed kalām pages (15–127)** has a continuous **1,044-stable-ID** Arabic–English working edition; annotated commentary below the printing's separator is a distinct editorial voice.
+- **112/113 main-text printed pages** have recorded direct printed-line / clause / English source checks. Stage98 rechecked all printed lines on pp. **100 and 124** photographically and restored their actual short source readings; this upgrades the previous 110/113 Stage81 tally without adding or deleting clause IDs.
+- **One Cairo single-print page remains unresolved: 77**, at **KAL-077.03** (short word immediately before «على كل كلام»). **KAL-077.10**’s unusual masculine «ذات الواجب مخالف» is securely printed and must not be silently feminised.
+- The **995 AH al-Azhar manuscript, 1714 Princeton Garrett 4139Y and 2017 modern edition have NOT been collated by folio/page and line** at the difficult loci. Thus **112/113 is single-Cairo-print coverage only**. Its arithmetic has *no bearing* on independent manuscript certification, definitive reading or absolute absence of omissions.
+- The Sanandajī–Wasīm commentary edition is an independent Arabic witness/translation workstream, not an authorial Taftāzānī witness.
 
-- All **113 printed pages** represented by **1,044 stable Arabic–English clause records** (including two letter-suffixed restoration identifiers).
-- **110 of 113 pages** recorded as having full comparison of the main printed lines with the clause stream and English. Cairo p.39 was photographically rechecked in Stage80; the missing divine-power sentence on p.80 was restored in Stage81. No independent manuscript certification is implied.
-- Full-text search across Arabic and English, stable clause citations, original printed-page navigation, local bookmarks, parallel/monolingual reading, themes and PDF/structured-data exports.
-- Distinct, source-labelled **authorial text**, **translator's explanations**, **unresolved readings**, and **independent commentary**; commentary does not silently expand the matn.
+## Page-by-page issue register
 
-**This is not yet a critical edition certified against multiple witnesses.** In particular, the comparison records do not establish that a 995 AH manuscript or 2017 critical printing has been collated.
+| Cairo page | Clause | Cairo printed reading status | Independent-source problem |
+|---|---|---|---|
+| **77** | KAL-077.03 | **Unresolved** initial closure word. Clear continuation «على كل كلام في كل باب أعرضنا عنه مخافة الإطناب والله الهادي إلى طريق الصواب» | Needs secure independent manuscript reading, not a smooth conjecture. |
+| **100** | KAL-100.02; KAL-100.07 | **Directly restored** «ولدِين موسى تمسكوا بالسبت أبدا وهذه شريعة مؤبدة ما دامت السماوات والأرض»; also «أو **بحكمة** البعثة» | A **reported opponent's allegation** about Mosaic law, not authenticated Biblical quotation. Independent Tahdhīb manuscript collation still uncompleted. |
+| **124** | KAL-124.06 | **Directly restored** the terse Cairo «وهم راكعون للعطف لا كصلاة اليهود أو خاضعون» instead of placeholder. | Meaning and syntax are compressed; Taftāzānī's *Sharḥ al-Maqāṣid* V p.271 expands it but is *not* a Tahdhīb manuscript variant. |
 
-## Three residual Cairo-print problems
+**Photographed source-and-correction dossier:** [Stage98 full report](STAGE98_CAIRO_P100_P124_AND_P77_AUDIT.md). Earlier [Stage84 issue dossier](STAGE84_KALAM_CRUX_INTERPRETIVE_DOSSIER.md) is retained as a **historical pre-Stage98 state**, not the current source certification count.
 
-| Printed page | Clause(s) | Unresolved point |
-|---|---|---|
-| 77 | KAL-077.03 | The opening phrase of the closing sentence before «على كل كلام» remains a printed crux; the unusual «ذات الواجب مخالف» at KAL-077.10 is now directly confirmed in Cairo and corroborated by a later Sanandajī quotation, not a manuscript. |
-| 100 | KAL-100.02 | Attribution of an alleged Sabbath formula in the objection about Mosaic law. |
-| 124 | KAL-124.06 | «وهم راكعون للعطف» restored from Cairo, but the following printed expression about Jewish prayer/humility still requires independent collation. |
+## Other important source restorations retained
 
-Authorial conceptual comparanda, **not variant witnesses**, are in al-Taftāzānī's *Sharḥ al-Maqāṣid* at:
-- p. 39 discussion: https://ablibrary.net/book_content/b/9290/187?lang=ar
-- p. 77 discussion: https://ablibrary.net/book_content/b/9292/23?lang=ar
-- p. 100 discussion: https://ablibrary.net/book_content/b/9293/44?lang=ar
-- p. 124 discussion: https://ablibrary.net/book_content/b/9293/271?lang=ar
+- Stage80 Cairo p.39 photographic corrections: «مقدار طبيعة غير قارة», «ولامتناع فنائه لما مر», «مقدار أسرعها». [Stage80 evidence](STAGE80_CAIRO_P39_SOURCE_CORRECTIONS.md).
+- Stage81 Cairo p.80 restored the complete divine-power clause «فمنها القدرة لاستناد الحوادث إليه تعالى وفاقا». [Stage81 evidence](STAGE81_CAIRO_P80_AND_P124.md).
+- The text on p.77 «ذات الواجب مخالف» is printed with masculine predicate. The al-Sanandajī quotation corroborating this is **later commentary**; it is not claimed to be the independent 995 AH source.
 
-**Stage80 p. 39 photographic repair:** The Cairo print reads `مقدار طبيعة غير قارة`, `ولامتناع فنائه لما مر مقدار الحركة المستديرة`, and `مقدار أسرعها`. These replace three provisional transcriptions. The full source and reasoning are preserved in [Stage80 Cairo p.39 dossier](STAGE80_CAIRO_P39_SOURCE_CORRECTIONS.md). This corrects the *single printed base*, not the independent-manuscript evidence. The **1,044 clause IDs** are unchanged.
+## Textual witnesses and their actual access status
 
-**Stage81 p.80/p.124 repair:** the Cairo print at p.80 continues after «قلنا ممنوع» with «فمنها القدرة لاستناد الحوادث إليه تعالى وفاقا» (restored in KAL-080.11). The p.124 passage now contains «وهم راكعون» and «للعطف», while retaining the following compressed phrase as an explicit crux. See [Stage81 source dossier](STAGE81_CAIRO_P80_AND_P124.md). The 1,044 stable clause records remain unchanged.
+1. **P1912** controlling Cairo original, photographed and directly checked. Accessible in the project user-file corpus; do not confuse original print with its English working transcript.
+2. **Al-Azhar 995 AH manuscript**, identified as al-Azhar private 2468/general 96067. A **41-image photo PDF was opened and sample spreads visually inspected in Stage98**, at <https://www.alukah.net/Manu/Files/Manuscript_6154/Makhtotah.pdf>. A reliable photographic folio-to-Cairo concordance and exact readings for pp.77,100,124 **are not yet recorded**. Therefore do not cite manuscript agreement.
+3. **Princeton Garrett 4139Y**, composite codex dated 1126 AH/1714 CE, [Princeton metadata](https://digital-collections.princeton.edu/i/%D8%AA%D9%87%D8%B0%D9%8A%D8%A8-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82-%D9%88%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AE/item/6a23d92c-5192-4801-a8e9-c40fd9c9118d/metadata). Exact source lines not directly collated.
+4. **2017 scholarly printing**, ed. ʿImād al-Suhaylī and Masʿūd Saʿīdī, known bibliographically, but no textual reading recorded from an inspected copy. Catalogue is not a text witness.
+5. **Authorial conceptual parallels:** *Sharḥ al-Maqāṣid* at [p.100 Sabbath issue](https://ablibrary.net/book_content/b/9293/44?lang=ar) and [p.124 grammar issue](https://ablibrary.net/book_content/b/9293/271?lang=ar). They aid interpretation but **must never be copied into a claimed *Tahdhīb* Arabic reading**.
 
-**Stage84 independent-voice separation:** the printed «ذات الواجب مخالف» is preserved without gender smoothing; a secondary study quotes al-Sanandajī's reading while the Tahdhīb and Taqrīb projects stay independent. Authorial Sharḥ al-Maqāṣid provides a distinct explanatory layer for p.100’s reported perpetuity argument and p.124’s coordinated/circumstantial meanings of «وهم راكعون». The unresolved-page total remains **three**. See [Stage84 source dossier](STAGE84_KALAM_CRUX_INTERPRETIVE_DOSSIER.md).
+## Release and evidence gates
 
-## Independent sources to collate
+A. Single-Cairo-print: finish **p.77's** closure from secure photographed primary evidence; do not manufacture a smooth “solution.”
+B. Critical manuscript edition: align actual manuscript folio sides at each disputed locus; record page, photographed lines, exact adopted/rejected variants.
+C. Recheck every Arabic condition, negative particle, theological attribution, and translation against independently verified source when feasible; the current 1,044-unit volume is a working edition.
+D. Verify regenerated 6 canonical NAMA PDFs and their manifests against the corresponding `data.js` hashes; run both bilingual reader browser regressions. Build/CI success does **not** confer manuscript certification.
 
-1. **Al-Azhar 995 AH manuscript** (private 2468 / general 96067, 40 folios); digitization: https://api.alukah.net/Manu/Files/Manuscript_6154/Makhtotah.pdf. Its exact extent and text first need direct verification.
-2. **Princeton Garrett 4139Y**, manuscript dated 1126 AH/1714 CE: https://digital-collections.princeton.edu/i/%D8%AA%D9%87%D8%B0%D9%8A%D8%A8-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82-%D9%88%D8%A7%D9%84%D9%83%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AE/item/6a23d92c-5192-4801-a8e9-c40fd9c9118d/metadata . Check which portion of the work it contains before using its readings.
-3. **2017 edited printing**, ed. ʿImād al-Suhaylī and Masʿūd Saʿīdī, Dār al-Ḍiyāʾ, Kuwait: https://maktabat.mu.edu.sa/bib/41056. No textual variant may be reported from a catalogue entry.
-
-## Completion gates
-
-- **A — Single-print completion:** eliminate the **three** residual page-level reading problems (77, 100, 124) from readable evidence or preserve them explicitly as cruces.
-- **B — Critical text:** collate at least one genuinely independent *Tahdhīb* textual witness at each variant locus, recording page/folio and photographic evidence.
-- **C — English second pass:** independently check logical particles, conditionals, Arabic negatives, speakers and theological school attributions across all 1,044 clauses.
-- **D — Publish:** update the canonical corpus, regenerate bilingual/Arabic/English PDFs, inspect fonts and page layout, check reader regressions and commit the edition manifest.
-
-### Commentary separation
-
-The accompanying project on al-Sanandajī's *Taqrīb al-Marām* together with Muḥammad Wasīm al-Kurdistānī's *Ḥāshiyat al-Muḥākamāt* retains its own witnesses, pagination, aligned lemmata, variants and translations. No passage in that commentary stream should be represented as Taftāzānī's authorial matn.
+**Current two-part readers:** [Logic](../../tahdhib-al-mantiq/edition/) · [Kalām](./).
