@@ -1,0 +1,71 @@
+name: Tahdhib source-preserving machine vowel candidates
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/tahdhib-machine-vowels.yml"
+      - "tools/tahdhib/generate_machine_vowels.py"
+      - "texts/al-taftazani/tahdhib-al-kalam/edition/data.js"
+      - "texts/al-taftazani/tahdhib-al-mantiq/edition/data.js"
+permissions:
+  contents: write
+concurrency:
+  group: tahdhib-machine-vowels
+  cancel-in-progress: false
+jobs:
+  vocalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install offline pretrained Arabic vocalizer
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install text2tashkeel
+      - name: Generate separate source-aligned unreviewed vowel candidates
+        run: |
+          python tools/tahdhib/generate_machine_vowels.py
+      - name: Check all source letters, exact counts and published provenance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib,unicodedata
+          marks=set(chr(i) for i in range(0x64b,0x660))
+          marks.update(chr(i) for i in range(0x6d6,0x6ee))
+          marks.add(chr(0x670))
+          def strip(s):
+              return ''.join(c for c in unicodedata.normalize('NFC',s) if c not in marks)
+          for slug,n in [('tahdhib-al-kalam',1044),('tahdhib-al-mantiq',19)]:
+              root=Path('texts/al-taftazani')/slug/'edition'
+              source=(root/'data.js').read_bytes()
+              corpus=json.loads(source.decode().split('=',1)[1].rstrip(';\n '))
+              raw=(root/'machine-vowels.js').read_text(encoding='utf-8').split('=',1)[1].rstrip(';\n ')
+              generated=json.loads(raw)
+              assert generated['unit_count']==n
+              assert len(generated['units'])==n
+              assert hashlib.sha256(source).hexdigest()==generated['source_sha256']
+              assert generated['changed_units']>0
+              for u in corpus['units']:
+                  assert strip(generated['units'][u['id']])==strip(u['ar']),u['id']
+              print('PASS',slug,generated['changed_units'],'/',n,
+                    'units diacritized with no source-letter substitutions')
+          PY
+      - name: Publish unreviewed candidate overlays separately from authorial source
+        run: |
+          git config user.name "gnamma-editions-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add texts/al-taftazani/tahdhib-al-kalam/edition/machine-vowels.js
+          git add texts/al-taftazani/tahdhib-al-kalam/edition/machine-vowels-manifest.json
+          git add texts/al-taftazani/tahdhib-al-mantiq/edition/machine-vowels.js
+          git add texts/al-taftazani/tahdhib-al-mantiq/edition/machine-vowels-manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish UNREVIEWED Tahdhib machine-vowel candidates and source-hash manifests"
+            git pull --rebase origin master
+            git push origin HEAD:master
+          fi
