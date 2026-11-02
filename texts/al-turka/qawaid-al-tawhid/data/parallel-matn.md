@@ -1,7 +1,7 @@
 # Qawāʿid al-Tawḥīd — ancestral matn
 ## Abū Ḥāmid Turka al-Iṣfahānī · Arabic–English critical working translation
 
-**Status: PARTIAL.** **46** source-located ancestral quotations from the grandson Ṣāʾin al-Dīn Ibn Turka's *Tamhīd al-Qawāʿid*, in the order in which the commentary quotes them; latest quoted locus on printed **p. 207**. This is **not a complete ancestral matn** and **not a manuscript-collated critical edition**.
+**Status: PARTIAL.** **52** source-located ancestral quotations from the grandson Ṣāʾin al-Dīn Ibn Turka's *Tamhīd al-Qawāʿid*, in the order in which the commentary quotes them; latest quoted locus on printed **p. 237**. This is **not a complete ancestral matn** and **not a manuscript-collated critical edition**.
 
 **Source:** Ibn Turka, *Tamhīd al-Qawāʿid*, ed. Sayyid Jalāl al-Dīn Āshtiyānī (Tehran, second printing 1360 SH/1982), accessed via published digital transcription of Arabic printed pp. **48–207**, with printed-page links below. Printed photographic leaf checks and independent manuscripts are pending. Quotations marked by the commentator's **قال** are translated as *matn*; his subsequent **أقول**, later Qajar marginal notes, modern Persian editorial discussion, and extracts quoted from the ancestor's *other books* are excluded. Editorial punctuation, headings and transliteration are provisional.
 
@@ -1245,7 +1245,167 @@ The ancestor continues the critical examination of the doctrine that the Perfect
 - **QT-045 (202–203):** a purported Sufi consensus that perfection requires leaving behind sensory, imaginative, estimative and discursive faculties is used as an **adversarial objection** to calling the spiritually perfected human a comprehensive microcosm, including predatory creatures and celestial realms. Historical cosmology is not being asserted as current science.
 - **QT-046 (206–207):** a further objection argues that a perfection beyond intellect is unthinkable and inexpressible, and that natural psychic restrictions cannot be removed by mere withdrawal of attention. Distinguish the *ancestor's report of the argument* from Ibn Turka's later long analysis beginning **أقول** on p.207.
 
-The subsequent body of the printed commentary includes extensive grandson's replies and Qajar editorial notes. Not every source page beyond 207 has been exhaustively inspected for the next authorial lemma; therefore the next original unit has **not yet been assigned** a QT number.
+The subsequent body of the printed commentary includes extensive grandson's replies and Qajar editorial notes. Not every source page beyond 207 has been exhaustively inspected for the next authorial lemma; therefore the following authorial quotations are now registered as **QT-047–QT-052**.
+
+## Stage 07: reconstructed matn QT-047–QT-052, pp. 212–237
+
+Source boundaries: each new unit begins with **قال** and ends before its corresponding **أقول**. Modern Persian marginal notes (notably printed pp.216, 229) interrupt the page flow but do not belong to the Arabic original. These are provisional reading-text transcriptions from a single digitized printed edition; scanned pages and independent manuscript witnesses are still required.
+
+### QT-047 · Dialectical counter-objection: ascetic practice, humoral imbalance, and the validity of perception
+
+**Printed Āshtiyānī pages:** 212–213 · [p.212](https://ablibrary.net/book_content/b/17638/408?lang=ar) · [p.213](https://ablibrary.net/book_content/b/17638/409?lang=ar).
+
+**Arabic — ancestral matn (provisional digital printed-text transcription)**
+
+> على أنّا نقول: إنّ الكمالات الفعليّة المستندة إلى الحجج القويّة والبراهين القاطعة، الحاصلة للنفس الناطقة بالأفكار الصحيحة عند اعتدال مزاج البدن واعتدال أمزجة سائر الأعضاء والقوى الحيوانيّة والنفسانيّة والطبيعيّة، لو صحّ أن يقال إنّها من المناقض والخيالات الفاسدة والحجب المانعة للوصول إلى الكمالات الحقيقيّة، لصحّ أن يقال إنّ الإدراكات الحاصلة من تكرار بعض الألفاظ المعيّنة بالأصوات القويّة المحلّلة للأرواح النفسانيّة، المدهشة للحواسّ البشريّة، لا سيّما عند التخلّي عن الخلائق والسكون في المواضع المظلمة وتناول الأغذية الرديّة المولّدة للكيموسات الفاسدة في الأوقات المضرّة وملازمة الطريقة المسمّاة عندهم بمخالفة النفس، من جملة الإدراكات الحاصلة لأرباب الماليخولياء والممرورين الذين يحكمون بثبوت ما لا تحقّق له في الأعيان لسوء ظنونهم وفساد أفكارهم، ويشاهدون صوراً وأصواتاً لا وجود لها في الخارج أصلاً، لانحراف أمزجتهم وفساد بنيتهم. أمّا الحالة المسمّاة عندهم بمخالفة النفس، فهي بالحقيقة إيلام للروح وإتعاب للبدن بالجوع والسهر المفرطين المجفّفين للدماغ وأجزائه المخرجين لأمزجة الأعضاء والأرواح والبدن عن الاعتدال، وبارتكاب الآلام والمشقّات وترك الراحات بالاختيار وتعذيب النفس به تحصيل ملكة نفسانيّة تكليفيّة — تكلّفيّة — يفيد الحزن والبكاء والهمّ والخوف والتقوّس والذلّة وقلّة الحميّة والفقر والمسكنة وسقوط الهمّة والتفرّس والبؤس، وينفي السرور والفرح واعتدال المزاج الموجب للذّة البدنيّة والروحانيّة. فهذه الحالة لا شكّ أنّها مسقطة للطبيعة، مضعّفة للقوّة، موجبة لانحراف الأمزجة الإنسانيّة عن الحالة الاعتداليّة، مفيدة لأمراض كثيرة بعضها بدنيّة وبعضها نفسانيّة، معدّة لقرب الموت وزوال القوّة بالضرورة، فالإدراكات المتفرّعة على هذه الطريقة لا شكّ أنّها من جملة الإدراكات الفاسدة.
+
+**Independent working English translation**
+
+> Moreover, we say: if it were legitimate to describe the actual perfections grounded in powerful arguments and decisive demonstrations—attained by the rational soul through sound thinking while the temperaments of the body, its organs, and its animal, psychic, and natural faculties remain in balance—as deficiencies, false imaginings, and veils barring true perfection, then it would likewise be legitimate to classify perceptions brought about by repeatedly uttering particular phrases in powerful voices, which dissipate the psychic spirits and overwhelm the senses, among the perceptions of those suffering from melancholy or disorders of the humours. This charge would seem especially pertinent when such recitation is accompanied by withdrawal from others, remaining in dark places, consuming unsuitable foods that produce corrupted humours at harmful times, and pursuing what is called 'opposition to the soul'. Those afflicted by such disorders judge what lacks external reality to exist and perceive forms and sounds that do not exist outside themselves, owing to defective suppositions, disordered thought, and imbalance of their constitutions. As for what is called 'opposition to the soul', it entails inflicting pain on the spirit and exhausting the body by excessive hunger and sleeplessness, which dry out the brain and disturb the equilibrium of the organs, psychic spirits, and body. Voluntary hardship and deprivation produce a strained psychic habit marked by sorrow, tears, anxiety, fear, abasement, loss of vigour and aspiration, destitution and misery, while extinguishing the joy and temperamental equilibrium conducive to bodily and spiritual pleasure. Such a condition weakens the constitution, disturbs the human temperaments, and produces bodily and psychological illnesses that hasten death and diminish strength. Perceptions arising from this procedure would therefore be classified as corrupt perceptions.
+
+**Textual and philosophical notes (grandson's sharḥ excluded)**
+
+1. The ancestor's قال begins on printed p.212 and ends on p.213 immediately before (1) أقول; pp.208–211 are the grandson's response to QT-046. The grandson calls the objection a shubha already raised earlier. The passage is an argumentative counter-accusation, not an independently demonstrated medical diagnosis or a simple rejection of every Sufi practice.
+
+2. Printed p.212 has المناقض, while the descendant's explanatory reprise on p.213 has المناقص; 'deficiencies' follows the contextual sense but is not a witnessed emendation. Similarly, the print has an alternative concerning the production of chymous humours, and the awkward clause تحصيل ملكة نفسانيّة تكليفيّة / تكلّفيّة requires photographic collation.
+
+3. The list includes the obscure printed التفرّس; its exact sense in this hostile enumeration remains unsettled and is not assigned a firm English equivalent. The technical rhetoric of melancholy and humours reflects inherited medieval physiology.
+
+**Reported variants and conjectures (not manuscript-collated)**
+
+- **المناقض / المناقص (in grandson's reprise):** Possible printed error, not manuscript-assigned.
+- **تكليفيّة / تكلّفيّة:** Printed alternative for acquired psychic habit.
+- **المولّدة للكيموسات / المؤديّة للكيموسات:** Printed p.212 alternative; check source images.
+
+---
+
+### QT-048 · Four degrees of the comprehensive manifestation and the Perfect Human's modes of knowing
+
+**Printed Āshtiyānī pages:** 215–216–217–218 · [p.215](https://ablibrary.net/book_content/b/17638/411?lang=ar) · [p.216](https://ablibrary.net/book_content/b/17638/412?lang=ar) · [p.217](https://ablibrary.net/book_content/b/17638/413?lang=ar) · [p.218](https://ablibrary.net/book_content/b/17638/414?lang=ar).
+
+**Arabic — ancestral matn (provisional digital printed-text transcription)**
+
+> قلنا: إنّ المظهر الكامل هو الكون الجامع الحاصر لجميع المظاهر في سائر المراتب الموجودة فيه، فإنّ المرتبة الأولى يوجد فيها العلم بالذوات وسائر الصفات والتعيّنات والماهيّات علماً غيبيّاً إجماليّاً غير تفصيليّ، وفي المرتبة الثانية يوجد فيها العلم بالجميع علماً عينيّاً غيبيّاً تفصيليّاً، وفي المرتبة الثالثة يوجد تلك المعاني وجوداً عينيّاً تفصيليّاً، ويدرك فيها الجمع بعدّة ضروب من نوع الإدراك، وفي المرتبة الرابعة يوجد فيها جميع ما في هذه المراتب، لاشتمالها عليها، مع اشتمالها على معنى الأحديّة الجمعيّة الحقيقيّة الكماليّة التي لا يتصوّر الزيادة عليها من جهة التمام والكمال. فظهر أنّ الصورة الأكمليّة الظاهرة بحسب جميع هذه المظاهر لا يمكن ظهورها من حيث هي كذلك إلّا في هذا المظهر، فتأمّل ذلك. قوله: فيكون إدراك بعض الصور والأسماء تعقّليّاً غيبيّاً، مردود؛ لأنّ الحقيقة السارية في الكلّ يدرك بذاتها ذاتها وما عدا ذاتها من لوازم ذاتها علماً غيبيّاً إجماليّاً في الإنسان الكامل والكون الجمع المتضمّن بسائر المظاهر، المشتمل على جملة ما ذكرنا من المراتب. وإنّما يدرك الأمرين جميعاً فيه ببعض التعيّنات والأسماء الإلهيّة إدراكاً عقليّاً تفصيليّاً على حسب بعض ما فيه من القوابل، ويدركهما أيضاً ببعض تعيّنات وأسماء أخر إدراكاً وهميّاً وتخيّليّاً على حسب بعض ما فيه من قوابل أخر، ويدرك أيضاً بتعيّنات وأسماء أخر إدراكات حسّيّة على حسب ما فيه من القوابل التي تتعلّق بتلك التعيّنات، فهي إنّما تدرك الكلّ بالكلّ بحسب ما فيها من الكلّ إدراكاً تامّاً لا مزيد عليه، فتأمّل ذلك.
+
+**Independent working English translation**
+
+> We reply: the complete locus of manifestation is the comprehensive being that embraces every locus of manifestation in all the levels contained within it. At the first level there is knowledge of the essences, attributes, determinations, and quiddities, an unseen and undifferentiated knowledge, not yet detailed. At the second there is knowledge of the totality that is objective, unseen, and differentiated in detail. At the third those meanings possess differentiated objective existence, and the whole is apprehended through several kinds of cognition. At the fourth, everything present in the preceding levels is present because this level embraces them, together with a real and perfectional unity-in-comprehensiveness, beyond which no further completeness or perfection can be conceived. Thus the most complete form disclosed through all these loci cannot appear as such except within this locus of manifestation. Consider this carefully. As for the claim that apprehension of certain forms and names would be only intellectual and unseen, it must be rejected. The reality pervading all things knows itself by itself, as well as what belongs to it as its necessary concomitants, with an unseen, comprehensive knowledge in the Perfect Human, the comprehensive being encompassing all these levels. Through certain divine names and determinations and their corresponding receptivities it apprehends both aspects in differentiated intellectual cognition; through others it apprehends them in estimative and imaginative cognition; and through still others it acquires sensory perceptions according to their corresponding receptivities. Thus it apprehends the whole by means of the whole, in virtue of all that it contains: a complete apprehension to which nothing can be added. Reflect on this.
+
+**Textual and philosophical notes (grandson's sharḥ excluded)**
+
+1. The quotation begins with قال on p.215 and ends before (1) أقول on p.218. Printed p.216 contains one short continuation of the original clause at its top, followed by a very long modern Persian annotation. The Persian material is excluded; the matn resumes at the top of p.217 and finishes at p.218.
+
+2. The commentator later identifies the levels with undifferentiated knowing, differentiated noetic knowledge, articulated cosmos, and human comprehensiveness. This scheme is explanatory rather than a set of labels literally supplied by the quoted ancestor. The Arabic's عيني/غيبي combination is retained as 'objective/unseen' instead of equating عيني with sensory existence.
+
+3. The anomalous agreement الحقيقة السارية ... يدرك is transmitted in the digital print and should be checked against photographs rather than silently normalized.
+
+---
+
+### QT-049 · The form of the whole, active and receptive determinations, and the One manifest in many respects
+
+**Printed Āshtiyānī pages:** 224–225 · [p.224](https://ablibrary.net/book_content/b/17638/420?lang=ar) · [p.225](https://ablibrary.net/book_content/b/17638/421?lang=ar).
+
+**Arabic — ancestral matn (provisional digital printed-text transcription)**
+
+> ولا بدّ أن يراد بحقيقة الكلّ وصورته الوجود المتعيّن بسائر التعيّنات التي بها يكون مصدراً لجميع الأفعال الكماليّة وجملة الآثار الفعليّة. ولا شكّ أنّ الإنسان من حيث هو حاصر لجميع القوابل العلويّة والسفليّة والروحانيّة والمثاليّة والطبيعيّة الجسمانيّة على سبيل الجمع والتركيب والامتزاج الحقيقي، فهو بهذه الحيثيّة إنّما يصحّ أن يصير مظهراً لتلك الصورة بذلك الاعتبار والحيثيّة المذكورة على سبيل الجمع والتركيب الحقيقي. فلئن قيل: إنّ الوجود المتعيّن بجملة التعيّنات الانفعاليّة لا يغاير حقيقته وصورته بالحقيقة، وحينئذ يرتفع الفرق بين الظاهر والمظهر، على أنّ جعل الحقيقة المتعيّنة بالتعيّنات الفعليّة صورة له دون الحقيقة المتعيّنة بالتعيّنات الانفعاليّة، مع أنّه من التحكّمات الباردة، يستلزم خلاف ما ذهبتم إليه، فإنّ صورته حينئذ ليست الحقيقة الجامعة لسائر التعيّنات، بل هي الحقيقة المتعيّنة ببعض التعيّنات. قلنا: إنّ الحقيقة المأخوذة بالتحقّقات والوجوه الوجوبيّة والاعتبارات الشريفة التي بها يتحقّق الحقّيّة المبدئيّة غير الحقيقة المأخوذة بالوجوه الإمكانيّة التي بها يتحقّق الخلقيّة والمعلوليّة. على أنّ حقيقة الحقائق الحقّيّة لا يغاير حقيقة الحقائق والتعيّنات الخلقيّة من جهة الحقيقة المطلقة، فتلك الحقيقة ببعض الاعتبارات هي الباطنة، وببعض الاعتبارات هي الظاهرة، وببعضها هي المظاهر، وببعضها هي المكامن، والكلّ واحد من جهة الحقيقة المطلقة والذاتيّة غير المقيّدة، وليس بواحد من جهة الإضافات والنسب الاعتباريّة.
+
+**Independent working English translation**
+
+> By the reality and form of the whole one must mean existence as determined by all the determinations through which it becomes the source of every perfection-producing action and the entire range of actual effects. Human beings, precisely insofar as they gather every higher and lower receptivity—spiritual, imaginal, natural, and corporeal—through genuine combination, composition, and intermixture, can in this respect become the locus in which that form is manifested. If someone objects that existence determined by the totality of receptive determinations is not really distinct from its own reality and form, so that the distinction between the manifest and its locus of manifestation vanishes, we reply as follows. The further objection is that arbitrarily making reality under its active determinations the form of the whole, instead of reality under its receptive determinations, contradicts the claim of comprehensive unity, since the proposed form would then embrace only some determinations. The reply is that reality considered under the realizations and necessary aspects by which it is the Real and the originating principle differs, under that consideration, from reality considered under the possible aspects by which creaturehood and being an effect are established. Yet the reality of realities is not, as unrestricted reality, different from the reality and determinations of created things. Under one consideration this reality is hidden; under another it is manifest; under others it constitutes the loci of manifestation and the places of concealment. All are one in respect of absolute, unqualified reality, but not one in respect of the conceptual additions and relations under which they are differentiated.
+
+**Textual and philosophical notes (grandson's sharḥ excluded)**
+
+1. The ancestor's quotation runs from قال on p.224 to the quotation close immediately before (1) أقول on p.225. The much longer explanation on pp.225–228 is the grandson's, not part of this passage.
+
+2. Critical distinction: فعال / انفعال indicates active and receptive determinations, rather than two really separate substances. The final unrestricted unity is explicitly qualified by distinct relational considerations (إضافات ونسب اعتبارية), not a simple numerical identity of all determinate things.
+
+3. Reported p.224 alternatives include المأخوذة/الموجودة, الجامعة/جامعة, الحقيّة/الحقّة, and التعيّنات/التحقّقات. None is assigned to an independent manuscript in this working edition. The final masculine ليس بواحد should be checked rather than harmonized silently.
+
+**Reported variants and conjectures (not manuscript-collated)**
+
+- **المأخوذة / الموجودة:** Printed p.224 alternative.
+- **حقيقة الحقائق الحقّيّة / الحقّة:** Printed alternative; meaningfulness requires further collation.
+
+---
+
+### QT-050 · Why an embodied soul can be a genuine natural unity while the cosmos is only an aggregate
+
+**Printed Āshtiyānī pages:** 228–229–230 · [p.228](https://ablibrary.net/book_content/b/17638/424?lang=ar) · [p.229](https://ablibrary.net/book_content/b/17638/425?lang=ar) · [p.230](https://ablibrary.net/book_content/b/17638/426?lang=ar).
+
+**Arabic — ancestral matn (provisional digital printed-text transcription)**
+
+> ونحن قد بيّنّا في العلوم الحقيقيّة الأصليّة أنّ من الممكن أن يتألّف من جزئيّات العناصر أبدان معتدلة ذوات أعضاء تحمل قوى كثيرة يحصل عنها أفعال متنوّعة، يحصل من امتزاجها واختلاط بعضها بالبعض أحوال اعتداليّة، وينبعث تلك القوى عن نفوس مجرّدة هي كالصورة لتلك الأبدان المعتدلة، ويحصل من مجموع البدن والنفس المجرّدة وحدة حقيقيّة ونوعيّة طبيعيّة، يصدر عن ذلك المركّب الحقيقي أفعال طبيعيّة يمتنع صدورها عن مبادئ متكثّرة من حيث هي متكثّرة، غير واحدة بالوحدة الحقيقيّة؛ فإنّ من الممتنع أن يحصل من كلّيّاتها مركّبات حقيقيّة، كما أنّ من الممتنع أن يحصل منها ومن الأفلاك والكواكب والمبادئ الموجدة لها والجواهر المجرّدة التي هي كالصورة النوعيّة بالنسبة إليها مركّبات حقيقيّة وأنواع طبيعيّة، وإن أمكن أن يحصل لها وحدة اجتماعيّة. لكن تحقيق البحث في هذين الموضعين وتوجيه الحجج وتقرير البيّنات لا يحتمله هذا المختصر.
+
+**Independent working English translation**
+
+> We have shown in the fundamental sciences of reality that balanced bodies composed of organs can arise from portions of the elements. These organs bear numerous faculties from which diverse acts proceed; through their interaction and intermixture balanced conditions arise. Those faculties proceed from separate souls that stand to the balanced bodies as form stands to matter. The conjunction of body and separate soul accordingly constitutes a real unity and a natural unity of species. Natural acts issue from this genuinely composite being that could not proceed from a plurality of principles merely insofar as they remain many and are not united in a genuine unity. No comparable genuine natural composite can be constituted from the elements taken in their universality; nor can a genuine composite or natural species be constituted from the collective of these elements, the celestial spheres and stars, the principles that bring them into being, and the separate substances that stand to them in a relation analogous to substantial form. Such a collection can possess an aggregative unity, but the demonstration of these two propositions, with the requisite proofs and arguments, exceeds the scope of this short treatise.
+
+**Textual and philosophical notes (grandson's sharḥ excluded)**
+
+1. Starts with قال near the foot of printed p.228, continues in a single original quoted sequence through brief text on p.229 and p.230, and closes immediately before (1) أقول p.230. Extensive Persian editor's annotations on p.229 do not belong to the quote.
+
+2. The argument rests on genuine natural composition of body and soul versus the mere unity of a cosmic aggregate. It is not a claim about current physical astronomy; the mention of spheres and stars reflects inherited cosmology.
+
+3. Printed p.228 has أفعال / أفعالها, and p.230 فإن / وإن. No independent manuscript witness has been consulted.
+
+**Reported variants and conjectures (not manuscript-collated)**
+
+- **أفعال / أفعالها:** Printed p.228 alternative in a body–faculty clause.
+
+---
+
+### QT-051 · Finite noble species, lesser species, and perfection shared within the human kind
+
+**Printed Āshtiyānī pages:** 234 · [p.234](https://ablibrary.net/book_content/b/17638/430?lang=ar).
+
+**Arabic — ancestral matn (provisional digital printed-text transcription)**
+
+> وقد بيّن أيضاً فيها أنّ الأنواع الشريفة التي يمكن أن يصدر عنها الأفعال الكماليّة متناهية، ولا اعتبار بالأنواع الناقصة الخسيسة هاهنا، فإنّ جميع ما يصدر عن الخسيس من الأفعال الكماليّة يصدر عن الشريف، وبصدر عن الشريف ما لا يمكن صدوره عن الخسيس، والنوع الشريف الواحد بالوحدة الحقيقيّة يتضمّن سائر الأنواع الخسيسة بالنسبة إليه بالمعنى الذي أشير إليه هاهنا، وإن كانت غير متناهية بحسب العدد. وأمّا الكمال الأصلي الممكن بحسب النوع هاهنا، فإنّما يشترك فيه جميع الأشخاص الكاملة من النوع، ولا اعتبار بالكمالات الجزئيّة التي تختلف بحسب اختلاف الاستعدادات الجزئيّة. وأمّا تفصيل الكلام في هذه المواضع وتوجيه البحث فيه وتحقيقه، فلا يخفى على الذكيّ العارف بأصول المباحث السالفة، فلا وجه لتطويل البيان وتكثير المقدّمات في هذا المختصر.
+
+**Independent working English translation**
+
+> It has also been established in those sciences that the noble kinds from which acts of perfection may proceed are finite. Inferior, deficient kinds need not be taken into account here: whatever perfectional acts proceed from an inferior kind also proceed from a superior kind, whereas the superior kind can produce acts that the inferior cannot. A single noble kind possessing real unity thus includes within itself all the inferior kinds relative to it, in the sense indicated here, even if these are unlimited in number. As for the primary perfection possible to the kind considered as a kind, all perfected individuals belonging to it share in that perfection. Particular perfections that differ according to individual capacities are not decisive for this purpose. A perceptive reader familiar with the foundations of the preceding discussions will understand how these questions are to be argued and established; extending the explanation and multiplying premises in this short treatise would serve no purpose.
+
+**Textual and philosophical notes (grandson's sharḥ excluded)**
+
+1. A self-contained original قال passage begins and ends on p.234 before (1) أقول. The following p.235–236 extended discussion of noble and inferior species is the descendant's commentary.
+
+2. The statement that 'noble kinds' are finite has a technical teleological role in answering the objection that the human kind cannot include or represent an indefinitely varied cosmos. It should not be read as a contemporary biological taxonomy.
+
+3. Printed وبصدر rather than the syntactically expected ويصدر is retained. The word هاهنا / منها has a reported alternative; grammatical number in وإن كانت غير متناهية بحسب العدد warrants examination.
+
+**Reported variants and conjectures (not manuscript-collated)**
+
+- **وبصدر / ويصدر (editorial conjecture, not attested here):** Apparent printing/transcription problem p.234.
+- **هاهنا / منها:** Printed alternative p.234.
+
+---
+
+### QT-052 · Can the Real's manifestation depend upon determinations without compromising necessity?
+
+**Printed Āshtiyānī pages:** 237 · [p.237](https://ablibrary.net/book_content/b/17638/433?lang=ar).
+
+**Arabic — ancestral matn (provisional digital printed-text transcription)**
+
+> ولا يمتنع أن يتوقّف الحقّ في الاتّصاف ببعض الصفات والتعيّنات على صفات وتعيّنات أخر لاحقة به من ذاته. فلئن قيل: إنّها من حيث هي موجودات خاصّة أمور ممكنة، ولا يجوز أن يتوقّف الحقّ في الاتّصاف بصفة كماليّة على أمر ممكن — ببعض الصفات الممكنة. قلنا: لا يستحيل أن يتوقّف الحقّ في الاتّصاف ببعض الصفات الممكنة على صفات أخر ممكنة، كالكمالات الأسمائيّة مثلاً على صفات أخر ممكنة، والصفة الكماليّة هي ظهوره في المظهر التامّ الكامل الكلّيّ المطلق الذي هو من الصفات اللازمة والتعيّنات الواجبة به، لا من غيره.
+
+**Independent working English translation**
+
+> There is nothing impossible in the Real's being described by certain attributes and determinations depending upon other attributes and determinations that accrue to Him from His own reality. If it is objected that, insofar as these are particular existents, they are possible things and the Real cannot depend upon something possible in order to be described by a perfectional attribute, we reply that there is no impossibility in His being described by certain possible attributes depending upon other possible attributes—for example, certain perfections of the divine names depending upon other possible attributes. The perfectional attribute in question is His manifestation in the complete, perfected, universal, and unrestricted locus of manifestation. This manifestation belongs among His necessary concomitant attributes and determinations through Himself, not through another.
+
+**Textual and philosophical notes (grandson's sharḥ excluded)**
+
+1. Self-contained ancestor's قال at p.237 ends before (1) أقول, which launches the grandson's longer reply to the objection of divine need. The independent source includes a displaced or doubled string after الاتّصاف; the Arabic above marks the interruption without inventing a manuscript correction.
+
+2. The crucial distinction is between possible relative qualifications and the necessity of the Real in Himself. This is an internal modal distinction in the matn, not permission to make the divine essence dependent upon an externally independent cause.
+
+3. The word 'necessary' qualifies the manifestation as a concomitant through the Real (الواجبة به لا من غيره); it does not convert the possible qualifications themselves into separately necessary entities.
+
+**Reported variants and conjectures (not manuscript-collated)**
+
+- **الاتّصاف بصفة كماليّة على أمر ممكن — ببعض الصفات الممكنة / Reconstruction of clause order unresolved:** Printed p.237 includes an awkward disrupted insertion; source photograph needed.
+
+---
 
 ## Remaining critical-edition requirements
 
@@ -1258,4 +1418,4 @@ The subsequent body of the printed commentary includes extensive grandson's repl
 
 [Current Gnamma reader](../) · [Editorial status](../editorial/EDITORIAL_STATUS.md) · [Witness register](../editorial/WITNESS_REGISTER.md) · [Technical glossary](../editorial/TECHNICAL_GLOSSARY.md).
 
-_Gnamma Research · working stage 06 · 2 November 2026_
+_Gnamma Research · working stage 07 · 3 November 2026_
