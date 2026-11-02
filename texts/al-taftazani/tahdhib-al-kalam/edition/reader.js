@@ -41,6 +41,7 @@ function render(){
  const dis=state.scope==='continuous';for(const name of ['previous','bottom-prev'])$('#'+name).disabled=dis||state.page===MIN;for(const name of ['next','bottom-next'])$('#'+name).disabled=dis||state.page===MAX;
  renderNav();updateDock();
  if(lastFocus){const focus=lastFocus;lastFocus=null;requestAnimationFrame(()=>$('#'+CSS.escape(focus))?.scrollIntoView({block:'start'}))}
+ document.dispatchEvent(new CustomEvent('gnamma-tahdhib-render',{detail:{page:state.page,view:state.view,scope:state.scope}}));
 }
 function renderNav(){
  const list=$('#page-list');list.replaceChildren();const frag=document.createDocumentFragment();
@@ -50,11 +51,11 @@ function renderNav(){
  b.addEventListener('click',()=>go(p));frag.append(b)}list.append(frag)
 }
 function go(p,target){state.page=Math.max(MIN,Math.min(MAX,Number(p)||MIN));store();const hash=target?'#'+target:'#page='+state.page;history.replaceState(null,'',hash);
- if(state.scope==='continuous'){renderNav();updateDock();requestAnimationFrame(()=>document.getElementById(target||'page-'+state.page)?.scrollIntoView({block:'start',behavior:'smooth'}))}
+ if(state.scope==='continuous'){renderNav();updateDock();requestAnimationFrame(()=>{const point=document.body.dataset.readingStyle==='study'?document.getElementById(target||'page-'+state.page):document.getElementById(target?'flow-'+target:'flow-page-'+state.page);point?.scrollIntoView({block:'start',behavior:'smooth'})})}
  else{lastFocus=target||'page-'+state.page;render()}$('#contents').classList.remove('shown');$('#open-contents')?.setAttribute('aria-expanded','false')}
 function updateDock(){const prev=$('#dock-prev'),next=$('#dock-next'),current=$('#dock-current');if(!prev||!next||!current)return;prev.disabled=state.page===MIN;next.disabled=state.page===MAX;$('#dock-prev-num').textContent=state.page>MIN?(isDivision?'L'+cap(state.page-1):String(state.page-1)):'·';$('#dock-next-num').textContent=state.page<MAX?(isDivision?'L'+cap(state.page+1):String(state.page+1)):'·';const first=(byPage.get(state.page)||[])[0];current.textContent=(isDivision?'Logic · L'+cap(state.page):'Kalām · Cairo p. '+state.page)+(isDivision&&first?.title?' · '+first.title:'');current.title='Open the page navigator'}
 $('#dock-prev')?.addEventListener('click',()=>go(state.page-1));$('#dock-next')?.addEventListener('click',()=>go(state.page+1));$('#dock-current')?.addEventListener('click',()=>{$('#contents').classList.add('shown');$('#search').focus()});
-let scrollPending=false;window.addEventListener('scroll',()=>{if(state.scope!=='continuous'||scrollPending)return;scrollPending=true;requestAnimationFrame(()=>{scrollPending=false;const heads=$('#passages .printed-page');let page=MIN;for(const h of heads){if(h.getBoundingClientRect().top<185)page=Number(h.dataset.page||h.id.replace('page-',''));else break}if(page!==state.page){state.page=page;updateDock()}})},{passive:true});
+let scrollPending=false;window.addEventListener('scroll',()=>{if(state.scope!=='continuous'||scrollPending)return;scrollPending=true;requestAnimationFrame(()=>{scrollPending=false;const heads=(document.body.dataset.readingStyle==='study'?$('#passages .printed-page'):$('#flow-passages .flow-page-ref[data-flow-side="en"]'));let page=MIN;for(const h of heads){if(h.getBoundingClientRect().top<185)page=Number(h.dataset.page||h.id.replace('page-',''));else break}if(page!==state.page){state.page=page;updateDock()}})},{passive:true});
 function search(){
  const q=norm(state.query.trim()),box=$('#search-results');box.replaceChildren();if(!q)return;
  const hits=units.filter(u=>norm(u.ar).includes(q)||norm(u.en).includes(q)||norm(u.id).includes(q));const info=el('div','search-info',hits.length+' matching clauses');box.append(info);
@@ -63,7 +64,7 @@ function search(){
 }
 function toggleScope(scope){state.scope=scope;if(state.focus===3&&scope!=='continuous')state.focus=0;store();render()}
 function hashState(){const h=decodeURIComponent(location.hash.slice(1));if(/^page=\d+$/.test(h))return{page:Number(h.split('=')[1])};if(h.startsWith('u-')){const id=units.find(u=>idFor(u)===h);if(id)return{page:id.page,target:h}}return null}
-$$('[data-view]').forEach(b=>b.addEventListener('click',()=>{state.view=b.dataset.view;store();applySettings()}));
+$$('[data-view]').forEach(b=>b.addEventListener('click',()=>{state.view=b.dataset.view;store();applySettings();document.dispatchEvent(new CustomEvent('gnamma-tahdhib-view',{detail:{view:state.view}}))}));
 $$('[data-scope]').forEach(b=>b.addEventListener('click',()=>toggleScope(b.dataset.scope)));
 $('#previous').addEventListener('click',()=>go(state.page-1));$('#next').addEventListener('click',()=>go(state.page+1));
 $('#bottom-prev').addEventListener('click',()=>go(state.page-1));$('#bottom-next').addEventListener('click',()=>go(state.page+1));
@@ -117,5 +118,6 @@ $$('[data-export]').forEach(b=>b.addEventListener('click',()=>{const v=b.dataset
  else modal.hidden=true
 }));
 window.addEventListener('afterprint',()=>{state.scope=preferences().scope||'page';render()});
+window.GnammaTahdhibReader={getState:()=>({...state,bookmarks:[...state.bookmarks]}),go,render,units,isDivision,bookmark(id){if(state.bookmarks.has(id))state.bookmarks.delete(id);else state.bookmarks.add(id);store();renderNav();document.dispatchEvent(new CustomEvent('gnamma-tahdhib-bookmarks'));return state.bookmarks.has(id)},getBookmarked:()=>[...state.bookmarks]};
 const initial=hashState();if(initial){state.page=initial.page;lastFocus=initial.target||'page-'+initial.page}render();search();
 })();
