@@ -1,0 +1,60 @@
+{
+  "schema": "gnamma-tahdhib-edition-publication-v1",
+  "book": "Tahdhīb al-Manṭiq",
+  "source": "data.js",
+  "source_sha256": "39da463778016855711d4993e0f65c34ee9f4160083c3d94d84c85c0f8b4f3b6",
+  "source_bytes": 63465,
+  "source_witness": "Cairo 1912 and compared printed logic text; original pagination recorded per unit",
+  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open.",
+  "unit_count": 19,
+  "page_or_division_count": 19,
+  "navigation_kind": "division",
+  "unresolved_printed_pages_or_divisions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "files": [
+    {
+      "name": "tahdhib-logic-parallel.pdf",
+      "purpose": "bilingual",
+      "sha256": "29912d97d8de45c6ac194c0c47b5f0dccce03e8e200cbc16e15217b04d305b6f",
+      "bytes": 100541,
+      "a4_pages": 21,
+      "href": "pdfs/tahdhib-logic-parallel.pdf"
+    },
+    {
+      "name": "tahdhib-logic-ar-only.pdf",
+      "purpose": "arabic",
+      "sha256": "fdf4c291262e7f8c6c8731c217f0bd304d6be0a592576c173611db9cdff2c7d7",
+      "bytes": 69714,
+      "a4_pages": 11,
+      "href": "pdfs/tahdhib-logic-ar-only.pdf"
+    },
+    {
+      "name": "tahdhib-logic-en-only.pdf",
+      "purpose": "english",
+      "sha256": "aafcfbb3518e6e3c123827064b61213402b8ab358da6dce906137b32ace0c33f",
+      "bytes": 46817,
+      "a4_pages": 11,
+      "href": "pdfs/tahdhib-logic-en-only.pdf"
+    }
+  ],
+  "description": "SHA-256 inventories are reproducibility records, NOT certificates of authorial fidelity or independent manuscript collation."
+}

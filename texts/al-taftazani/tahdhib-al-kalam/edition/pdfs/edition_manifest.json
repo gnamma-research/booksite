@@ -1,0 +1,46 @@
+{
+  "schema": "gnamma-tahdhib-edition-publication-v1",
+  "book": "Tahdhīb al-Kalām",
+  "source": "data.js",
+  "source_sha256": "33d4c8508986202a40f84b4554a19f474935fe87e332be032b814be25c763e7b",
+  "source_bytes": 407930,
+  "source_witness": "Cairo 1330 AH / 1912, pp. 15–127",
+  "editorial_status": "Working bilingual edition; 108/113 Cairo printed pages recorded as source checked; five pages outstanding; no independent manuscript collation",
+  "unit_count": 1044,
+  "page_or_division_count": 113,
+  "navigation_kind": "printed-page",
+  "unresolved_printed_pages_or_divisions": [
+    39,
+    77,
+    80,
+    100,
+    124
+  ],
+  "files": [
+    {
+      "name": "tahdhib-kalam-parallel.pdf",
+      "purpose": "bilingual",
+      "sha256": "47268e51f3c95f2d10d233a829e5c93981fc2810869305196c5b40391919fd26",
+      "bytes": 592460,
+      "a4_pages": 170,
+      "href": "pdfs/tahdhib-kalam-parallel.pdf"
+    },
+    {
+      "name": "tahdhib-kalam-ar-only.pdf",
+      "purpose": "arabic",
+      "sha256": "5b3c705986507891d46b8883f8ff286055d6482a059bcce435508f7c558820fd",
+      "bytes": 324222,
+      "a4_pages": 133,
+      "href": "pdfs/tahdhib-kalam-ar-only.pdf"
+    },
+    {
+      "name": "tahdhib-kalam-en-only.pdf",
+      "purpose": "english",
+      "sha256": "460bdc9151a61f364513efa415851a4e6be8ff6029e3a08aee95b356d6f38a98",
+      "bytes": 292585,
+      "a4_pages": 120,
+      "href": "pdfs/tahdhib-kalam-en-only.pdf"
+    }
+  ],
+  "description": "SHA-256 inventories are reproducibility records, NOT certificates of authorial fidelity or independent manuscript collation."
+}
