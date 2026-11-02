@@ -1,12 +1,12 @@
-/* Gnamma Research | Qawāʿid al-Tawḥīd | ancestor's MATN ONLY
-   Sixty-one provisional bilingual ancestral quotation units; digitized Āshtiyānī print pp.48–270.
-   The original's closing formula is on p.270. QT-059 has a documented substantial lacuna.
-   This is NOT a complete manuscript-collated critical edition.
-   The grandson's أقول explanations are not spliced into the matn.
+/* Gnamma Research | Qawāʿid al-Tawḥīd | Ancestral MATN ONLY
+   61 provisional bilingual authorial quotation units from Āshtiyānī pp.48–270.
+   Version 0.9 adds explicit variant classes and conservative source-status metadata.
+   A major lacuna remains in QT-059; zero independent manuscripts have been collated.
+   Do not cite the working text as a stemmatically established critical edition.
 */
 window.GNAMMA_QAWAID_MATN = {
   "edition": "Āshtiyānī 1982, digital page transcription",
-  "status": "61-source-located-ancestral-lemmas-through-authorial-closure-p270-lacunose-not-manuscript-critical",
+  "status": "61-bilingual-matn-lemmas-ending-at-p270-critical-audit-open-lacuna-QT059-no-manuscript-collation",
   "units": [
     {
       "id": "QT-001",
@@ -21,7 +21,15 @@ window.GNAMMA_QAWAID_MATN = {
         "On p. 49 the commentator suggests that the 'disputatious speculative scholars' are the mutakallimūn, whereas the 'learned investigators' are the Peripatetic philosophers. These identifications are the commentator's, not definitions supplied by the matn."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/244?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/244?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-002",
@@ -39,10 +47,20 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "احتراق",
           "other": "احتراف",
-          "remark": "Āshtiyānī's edition reports 'احتراف' as an alternative, signalled خ; verify against printed page and manuscript sigla."
+          "remark": "Āshtiyānī's edition reports 'احتراف' as an alternative, signalled خ; verify against printed page and manuscript sigla.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/245?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/245?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-003",
@@ -56,7 +74,15 @@ window.GNAMMA_QAWAID_MATN = {
         "The syntax continues into QT-004 ('I wished to write a treatise'), but several pages of commentary intervene in the printed sharḥ. The ellipsis here marks the interrupted quotation as transmitted by the commentary, not missing authorial content."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/248?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/248?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-004",
@@ -76,36 +102,56 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "حقّية",
           "other": "حقيقة",
-          "remark": "Both are recorded; base signifies the truth/rightfulness of the doctrine, variant could mean its reality/nature."
+          "remark": "Both are recorded; base signifies the truth/rightfulness of the doctrine, variant could mean its reality/nature.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "من الحدس",
           "other": "بالحدس",
-          "remark": "Reported variation in preposition."
+          "remark": "Reported variation in preposition.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "وأردنا",
           "other": "ورأينا",
-          "remark": "Reported reading alters the verb, and removes the abrupt shift from singular to plural."
+          "remark": "Reported reading alters the verb, and removes the abrupt shift from singular to plural.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "المناظرين",
           "other": "الناظرين",
-          "remark": "Disputants versus speculative investigators."
+          "remark": "Disputants versus speculative investigators.",
+          "criticalClass": "unclassified-requires-image-check",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "نشدّ",
           "other": "تشتدّ",
-          "remark": "Changes verbal subject and the syntax of 'desire'."
+          "remark": "Changes verbal subject and the syntax of 'desire'.",
+          "criticalClass": "unclassified-requires-image-check",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "والبقاء",
           "other": "بالبقاء [digital transcription uncertain]",
-          "remark": "The digitized witness reads يالبقاء in its variant note, plausibly an OCR/transcription error; manuscript or printed-image confirmation pending."
+          "remark": "The digitized witness reads يالبقاء in its variant note, plausibly an OCR/transcription error; manuscript or printed-image confirmation pending.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/249?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/250?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/250?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-005",
@@ -120,7 +166,15 @@ window.GNAMMA_QAWAID_MATN = {
         "The claim of a shared meaning does not, by itself, demonstrate that the extramental reality of existence is one numerical individual; that further metaphysical step must be tracked in the subsequent proofs."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/251?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/251?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-006",
@@ -138,7 +192,15 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/255?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/256?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/256?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-007",
@@ -156,7 +218,15 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/259?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/260?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/260?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-008",
@@ -171,7 +241,15 @@ window.GNAMMA_QAWAID_MATN = {
         "Malzūm is what implies a lāzim, its necessary concomitant. The reciprocal wording here—one among the malzūmāt of what was mentioned—is unusual and should be checked against the independent matn manuscripts."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/263?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/263?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-009",
@@ -186,7 +264,15 @@ window.GNAMMA_QAWAID_MATN = {
         "Lā bi-sharṭ al-wujūd, and the differing roles of lāzim/malzūm, require comparison with Avicennian predication and the later doctrine of tashkīk. The English remains provisional pending manuscript checks."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/264?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/264?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-010",
@@ -201,7 +287,15 @@ window.GNAMMA_QAWAID_MATN = {
         "The commentary (pp. 71–72) develops this defense while continuing the reconstruction of the opposing position."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/267?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/267?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-011",
@@ -216,7 +310,15 @@ window.GNAMMA_QAWAID_MATN = {
         "The ancestor's formulation uses the post-Avicennian technical contrast of possibility/necessity in itself and through another. Whether the inference is valid if its 'individuals' are mental suppositions is one of the critical questions."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/268?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/268?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-012",
@@ -233,7 +335,15 @@ window.GNAMMA_QAWAID_MATN = {
         "The commentator's footnote concluding that denial of instances implies unity of existence is not part of the ancestor's quoted wording."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/270?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/270?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-013",
@@ -253,15 +363,27 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "فيه",
           "other": "فيها",
-          "remark": "Reported printed alternative in the clause واشتراكها فيه; grammatical antecedent needs collation."
+          "remark": "Reported printed alternative in the clause واشتراكها فيه; grammatical antecedent needs collation.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "لشيء",
           "other": "شيء",
-          "remark": "The digital edition prints a redundant-looking alternative; neither an independent witness nor a justified emendation yet."
+          "remark": "The digital edition prints a redundant-looking alternative; neither an independent witness nor a justified emendation yet.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/274?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/274?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-014",
@@ -277,7 +399,15 @@ window.GNAMMA_QAWAID_MATN = {
         "Do not infer that every shared predicate makes two things identical; the matn's claim presupposes the strict sameness of relevant reality."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/277?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/277?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-015",
@@ -297,7 +427,15 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/278?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/279?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/279?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-016",
@@ -317,10 +455,20 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "الحقيقة",
           "other": "حقيقته",
-          "remark": "Reported in printed edition in the final 'كنه الحقيقة' clause."
+          "remark": "Reported in printed edition in the final 'كنه الحقيقة' clause.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/283?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/283?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-017",
@@ -339,7 +487,15 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/285?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/286?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/286?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-018",
@@ -358,10 +514,20 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "معقولة",
           "other": "معقولية",
-          "remark": "Printed alternative before لأكثر العقول; alters morphology and may require emendation."
+          "remark": "Printed alternative before لأكثر العقول; alters morphology and may require emendation.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/289?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/289?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-019",
@@ -376,7 +542,15 @@ window.GNAMMA_QAWAID_MATN = {
         "The paragraph is the ancestor's separate قال, followed by the descendant's أقول; the latter invokes his own theory of divine relations and manifestations and is not imported into the matn."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/290?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/290?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-020",
@@ -395,10 +569,20 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "بعين",
           "other": "لعين",
-          "remark": "Digitized print records لعين as alternative near the final predicate; the antecedent and case-ending remain unsettled."
+          "remark": "Digitized print records لعين as alternative near the final predicate; the antecedent and case-ending remain unsettled.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "not-found-verbatim-in-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/291?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/291?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-021",
@@ -414,7 +598,15 @@ window.GNAMMA_QAWAID_MATN = {
         "This is one of the clearest original lemmata for comparing Akbarian iṭlāq with Avicennian necessity and later metaphysics of lā bi-sharṭ."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/294?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/294?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-022",
@@ -433,7 +625,15 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/296?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/297?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/297?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-023",
@@ -450,7 +650,15 @@ window.GNAMMA_QAWAID_MATN = {
         "The ancestor explicitly denies that absolute existence has **intrinsically** differentiated instances, while admitting multiplicity in additional possible qualifications. This is not the same thesis as the impossibility of distinctions at every level of discourse."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/302?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/302?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-024",
@@ -469,10 +677,20 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "بالفرض",
           "other": "بالعرض",
-          "remark": "Reported printed alternative; materially changes the epistemic/ontological description of conceptual existentness."
+          "remark": "Reported printed alternative; materially changes the epistemic/ontological description of conceptual existentness.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/305?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/305?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-025",
@@ -493,11 +711,21 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "يتبيّن",
           "other": "يبيّن",
-          "remark": "Reported printed variant in the appeal to certainty."
+          "remark": "Reported printed variant in the appeal to certainty.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/307?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/308?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/308?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-026",
@@ -513,7 +741,15 @@ window.GNAMMA_QAWAID_MATN = {
         "At p. 117 the commentator compares the position to light as what reveals colors, against the view that only colors possess reality. The analogy is the grandson's, NOT a sentence of the grandfather's matn."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/310?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/310?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-027",
@@ -533,15 +769,27 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "عرفت",
           "other": "عرّف",
-          "remark": "Reported variant affecting verbal form at the opening."
+          "remark": "Reported variant affecting verbal form at the opening.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "التحقيق",
           "other": "التحقق",
-          "remark": "Alternative reading at the closing statement about contradiction."
+          "remark": "Alternative reading at the closing statement about contradiction.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/314?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/314?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-028",
@@ -558,7 +806,15 @@ window.GNAMMA_QAWAID_MATN = {
         "The bracketed editorial phrase وغير المترتبة in the digitized source is kept while recording that its transmission and relation to المترتبة require photographic verification."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/317?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/317?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-029",
@@ -577,7 +833,15 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/326?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/327?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/327?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-030",
@@ -598,15 +862,27 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "أنها",
           "other": "كونها",
-          "remark": "Editorially signalled alternative [كونها - ظ] inside the phrase من حيث هي أنها مغايرة."
+          "remark": "Editorially signalled alternative [كونها - ظ] inside the phrase من حيث هي أنها مغايرة.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "غير الفرضيين",
           "other": "العرضيين",
-          "remark": "Editorially conjectured [العرضيين - ظ]; affects whether existence is excluded as merely supposed or as accidental."
+          "remark": "Editorially conjectured [العرضيين - ظ]; affects whether existence is excluded as merely supposed or as accidental.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/329?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/329?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-031",
@@ -627,11 +903,21 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "فإن قيل",
           "other": "فلئن قيل",
-          "remark": "Printed alternative at opening of the objection."
+          "remark": "Printed alternative at opening of the objection.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/333?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/334?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/334?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-032",
@@ -647,7 +933,15 @@ window.GNAMMA_QAWAID_MATN = {
         "The immediate grandson's commentary explains this as a later manifestation; it would be premature to identify it with a particular fixed Ṣadrian ontological stage without further evidence."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/337?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/337?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-033",
@@ -668,11 +962,21 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "ملخّص",
           "other": "تلخيص",
-          "remark": "Reported alternative near reference to arguments in the author's other philosophical books."
+          "remark": "Reported alternative near reference to arguments in the author's other philosophical books.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/339?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/340?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/340?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-034",
@@ -694,16 +998,28 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "أنبتوها",
           "other": "أثبتوها [editorial conjecture only]",
-          "remark": "Digital text reads أنبتوها, but context requires critical verification; أثبتوها is not independently attested in the consulted witnesses."
+          "remark": "Digital text reads أنبتوها, but context requires critical verification; أثبتوها is not independently attested in the consulted witnesses.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "بنا إلى التطويل",
           "other": "بنا على التطويل / إلى التطويل",
-          "remark": "Digital edition has problematic بنا على التطويل and editor-supplied إلى التطويل; English normalizes the idiom but Arabic witness still requires image-checking."
+          "remark": "Digital edition has problematic بنا على التطويل and editor-supplied إلى التطويل; English normalizes the idiom but Arabic witness still requires image-checking.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/344?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/345?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/345?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-035",
@@ -724,20 +1040,34 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "فإنها لو قارنها الوجود صارت موجودة بالضرورة",
           "other": "فإنها لو قارنت الوجود",
-          "remark": "Second formulation signalled خ ل, with a stray الوجود in the digitized text after the parenthesis."
+          "remark": "Second formulation signalled خ ل, with a stray الوجود in the digitized text after the parenthesis.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "الماهية",
           "other": "الماهيات",
-          "remark": "Printed alternative in ولو كانت الماهية."
+          "remark": "Printed alternative in ولو كانت الماهية.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "العوارض الذهنية",
           "other": "العدمية [editorial suggestion]",
-          "remark": "Digitized base shows الذهنية with [العدمية - ظ]; choose only after image and witness checks."
+          "remark": "Digitized base shows الذهنية with [العدمية - ظ]; choose only after image and witness checks.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/350?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/350?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-036",
@@ -758,21 +1088,35 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "في الظهور",
           "other": "في الطور",
-          "remark": "The digital base reads في الظهور with في الطور marked as a variant; BASE في الظهور is retained in Arabic pending independent collation."
+          "remark": "The digital base reads في الظهور with في الطور marked as a variant; BASE في الظهور is retained in Arabic pending independent collation.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "الحكمة المنيعة",
           "other": "الحكمة المتقنة / الحكمة المتبعة",
-          "remark": "Three reported readings of the separately authored work's title."
+          "remark": "Three reported readings of the separately authored work's title.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "وحصل باعتبار بعض صفات أخر… [twice]",
           "other": "one occurrence [unverified conjecture]",
-          "remark": "Apparent repeated line, preserved; independent print comparison required."
+          "remark": "Apparent repeated line, preserved; independent print comparison required.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "descriptive-not-literal-lemma"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/356?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/357?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/357?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-037",
@@ -792,15 +1136,27 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "الإنية المدركة المتصرفة الأخيرة",
           "other": "الإنية المدركة المتصرفة في المرتبة الأخيرة",
-          "remark": "Editorially reported option resolves the elliptical designation of the last level."
+          "remark": "Editorially reported option resolves the elliptical designation of the last level.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "هي",
           "other": "هو",
-          "remark": "Reported alternative in subordinate relative clause relating higher levels."
+          "remark": "Reported alternative in subordinate relative clause relating higher levels.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/360?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/360?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-038",
@@ -817,7 +1173,15 @@ window.GNAMMA_QAWAID_MATN = {
         "The claims about post-mortem faculties are the historical author's metaphysical position, not independently established empirical facts."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/363?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/363?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-039",
@@ -838,16 +1202,28 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "تحت",
           "other": "بحسب",
-          "remark": "Printed alternative after انمحى الكثرة: under the domination versus by reason of domination."
+          "remark": "Printed alternative after انمحى الكثرة: under the domination versus by reason of domination.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "الحقائق الظلية",
           "other": "والمجالي الظلمانية",
-          "remark": "Variant replaces shadow-like realities with darker loci of manifestation; material doctrinal difference."
+          "remark": "Variant replaces shadow-like realities with darker loci of manifestation; material doctrinal difference.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/368?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/369?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/369?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-040",
@@ -867,10 +1243,20 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "شأنه",
           "other": "نشئاته",
-          "remark": "Reported alternative in بما في شأنه الكلية."
+          "remark": "Reported alternative in بما في شأنه الكلية.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/376?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/376?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-041",
@@ -892,11 +1278,21 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "تجلّيه له",
           "other": "تجلّيه فيه",
-          "remark": "Reported variant in nested mirror quotation, at p. 186."
+          "remark": "Reported variant in nested mirror quotation, at p. 186.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/381?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/382?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/382?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-042",
@@ -918,11 +1314,21 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "موقياً",
           "other": "موق",
-          "remark": "Digitized base offers an unclear double form in the first-page objection; morphology requires image-based verification."
+          "remark": "Digitized base offers an unclear double form in the first-page objection; morphology requires image-based verification.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/385?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/386?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/386?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-043",
@@ -945,21 +1351,35 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "الحاسّة",
           "other": "الحادسة",
-          "remark": "Reported alternative p.194: sensory versus intuiting faculty; technically consequential."
+          "remark": "Reported alternative p.194: sensory versus intuiting faculty; technically consequential.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "النوع الإنساني",
           "other": "نوع الإنسان",
-          "remark": "Alternative noted with the later expression جميع الكمالات الممكنة لنوع الإنساني."
+          "remark": "Alternative noted with the later expression جميع الكمالات الممكنة لنوع الإنساني.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "not-found-verbatim-in-working-reading"
         },
         {
           "lemma": "لصحّ أن يقال ... لصحّ أن يقال",
           "other": "editorial suggestion: delete repeated passage",
-          "remark": "Āshtiyānī's footnote (citing Mīrzā Hāshim) sees a scribal duplication; the transmitted wording is preserved pending witness collation."
+          "remark": "Āshtiyānī's footnote (citing Mīrzā Hāshim) sees a scribal duplication; the transmitted wording is preserved pending witness collation.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "descriptive-not-literal-lemma"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/389?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/391?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/391?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-044",
@@ -981,16 +1401,28 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "فلئن قيل",
           "other": "فلئن قلتم",
-          "remark": "Printed alternative on p.198."
+          "remark": "Printed alternative on p.198.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "إلى بعض",
           "other": "إلى البعض",
-          "remark": "Reported difference in the phrase انضمام بعضها إلى بعض."
+          "remark": "Reported difference in the phrase انضمام بعضها إلى بعض.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/393?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/394?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/394?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-045",
@@ -1012,11 +1444,21 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "تقوية القوى القدسيّة",
           "other": "وتقوى القوى / وتقوى للقوى",
-          "remark": "Printed alternatives in p.202; prefer coherent base 'strengthening holy faculties' until independent witness checking."
+          "remark": "Printed alternatives in p.202; prefer coherent base 'strengthening holy faculties' until independent witness checking.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/398?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/399?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/399?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-046",
@@ -1038,16 +1480,28 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "وبيّن",
           "other": "فإن",
-          "remark": "Printed alternative before the claim about continual consideration of the Absolute."
+          "remark": "Printed alternative before the claim about continual consideration of the Absolute.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "غايتها",
           "other": "غاياتها [unwitnessed editorial normalization]",
-          "remark": "Singular as transmitted after plural pronouns; do not silently assume the corrected plural is an actual variant."
+          "remark": "Singular as transmitted after plural pronouns; do not silently assume the corrected plural is an actual variant.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/402?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/403?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/403?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-047",
@@ -1067,21 +1521,35 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "المناقض",
           "other": "المناقص (in grandson's reprise)",
-          "remark": "Possible printed error, not manuscript-assigned."
+          "remark": "Possible printed error, not manuscript-assigned.",
+          "criticalClass": "commentarial-parallel",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "تكليفيّة",
           "other": "تكلّفيّة",
-          "remark": "Printed alternative for acquired psychic habit."
+          "remark": "Printed alternative for acquired psychic habit.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "المولّدة للكيموسات",
           "other": "المؤديّة للكيموسات",
-          "remark": "Printed p.212 alternative; check source images."
+          "remark": "Printed p.212 alternative; check source images.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/408?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/409?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/409?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-048",
@@ -1101,7 +1569,15 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/411?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/414?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/414?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-049",
@@ -1121,16 +1597,28 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "المأخوذة",
           "other": "الموجودة",
-          "remark": "Printed p.224 alternative."
+          "remark": "Printed p.224 alternative.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "حقيقة الحقائق الحقّيّة",
           "other": "الحقّة",
-          "remark": "Printed alternative; meaningfulness requires further collation."
+          "remark": "Printed alternative; meaningfulness requires further collation.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/420?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/421?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/421?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-050",
@@ -1151,11 +1639,21 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "أفعال",
           "other": "أفعالها",
-          "remark": "Printed p.228 alternative in a body–faculty clause."
+          "remark": "Printed p.228 alternative in a body–faculty clause.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/424?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/426?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/426?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-051",
@@ -1174,15 +1672,27 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "وبصدر",
           "other": "ويصدر (editorial conjecture, not attested here)",
-          "remark": "Apparent printing/transcription problem p.234."
+          "remark": "Apparent printing/transcription problem p.234.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "هاهنا",
           "other": "منها",
-          "remark": "Printed alternative p.234."
+          "remark": "Printed alternative p.234.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/430?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/430?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-052",
@@ -1201,10 +1711,20 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "الاتّصاف بصفة كماليّة على أمر ممكن — ببعض الصفات الممكنة",
           "other": "Reconstruction of clause order unresolved",
-          "remark": "Printed p.237 includes an awkward disrupted insertion; source photograph needed."
+          "remark": "Printed p.237 includes an awkward disrupted insertion; source photograph needed.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/433?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/433?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-053",
@@ -1225,16 +1745,28 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "هربت",
           "other": "هُذّبت",
-          "remark": "Printed alternative for the transformation of the lower faculties."
+          "remark": "Printed alternative for the transformation of the lower faculties.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "يتحرّك",
           "other": "يحرّك",
-          "remark": "Printed p.244 alternative; changes active vs transitive sense."
+          "remark": "Printed p.244 alternative; changes active vs transitive sense.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/439?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/440?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/440?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-054",
@@ -1254,15 +1786,27 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "العقلي",
           "other": "العقل [contextual conjecture]",
-          "remark": "Digital p.248 shows an intrusive final yāʾ."
+          "remark": "Digital p.248 shows an intrusive final yāʾ.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "not-found-verbatim-in-working-reading"
         },
         {
           "lemma": "بتوسّط استخراج الأوساط ... على أنّ الحافظة (repeated)",
           "other": "possible dittography, not independently witnessed",
-          "remark": "The duplicated phrase is retained and marked; original boundaries cannot yet be reconstructed."
+          "remark": "The duplicated phrase is retained and marked; original boundaries cannot yet be reconstructed.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "descriptive-not-literal-lemma"
         }
       ],
-      "url": "https://ablibrary.net/book_content/b/17638/444?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/444?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-055",
@@ -1282,16 +1826,28 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "بوجوب مطاوعتها",
           "other": "بوجود مطاوعتها",
-          "remark": "Printed p.250 alternative."
+          "remark": "Printed p.250 alternative.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "تقيّد انجذابها",
           "other": "ويفيد انجذابها",
-          "remark": "Printed p.250 alternative with awkward source grammar."
+          "remark": "Printed p.250 alternative with awkward source grammar.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/445?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/446?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/446?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-056",
@@ -1316,21 +1872,35 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "فلا يجوز بالنسبة إلى المرتاضين",
           "other": "فلا يجوز إلّا بالنسبة إلى ... [conjecture]",
-          "remark": "Print's negative conflicts with its surrounding therapeutic argument. Do not silently emend."
+          "remark": "Print's negative conflicts with its surrounding therapeutic argument. Do not silently emend.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "الأحقّ",
           "other": "الأخلق",
-          "remark": "Printed p.252 alternatives."
+          "remark": "Printed p.252 alternatives.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "مخالفة النفس في طريق التعليم والنظر",
           "other": "في طريقة التعليم والنظر",
-          "remark": "Printed p.255 alternative."
+          "remark": "Printed p.255 alternative.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "not-found-verbatim-in-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/448?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/451?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/451?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-057",
@@ -1349,16 +1919,28 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "لاتّضح",
           "other": "لانفتح",
-          "remark": "Printed p.258 alternative."
+          "remark": "Printed p.258 alternative.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "أوفق",
           "other": "أوثق",
-          "remark": "Final descriptor 'more fitting' vs 'more reliable'."
+          "remark": "Final descriptor 'more fitting' vs 'more reliable'.",
+          "criticalClass": "unclassified-requires-image-check",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/453?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/454?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/454?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-058",
@@ -1374,7 +1956,15 @@ window.GNAMMA_QAWAID_MATN = {
         "The phrase فإنّه من الضرورات الواقعة في الطريق is awkward; the English does not assert a forced solution. The broader context refers to distractions both in rational and spiritual practice."
       ],
       "variants": [],
-      "url": "https://ablibrary.net/book_content/b/17638/456?lang=ar"
+      "url": "https://ablibrary.net/book_content/b/17638/456?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-059",
@@ -1396,11 +1986,22 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "The quoted matn is incomplete in the printed transmission",
           "other": "More than one page reportedly omitted by copyists",
-          "remark": "Editorial Persian n.1 on pp.262–263, not a conjectural fill or translated commentary."
+          "remark": "Editorial Persian n.1 on pp.262–263, not a conjectural fill or translated commentary.",
+          "criticalClass": "reported-lacuna",
+          "lemmaAnchor": "descriptive-not-literal-lemma"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/458?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/460?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/460?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": true,
+        "notes": "Reported multi-line or page-length loss; surviving quotation only."
+      }
     },
     {
       "id": "QT-060",
@@ -1421,21 +2022,35 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "فوقع نفسه",
           "other": "فأوقع نفسه",
-          "remark": "Printed p.267 alternative; first is grammatically suspect."
+          "remark": "Printed p.267 alternative; first is grammatically suspect.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "المفرفة",
           "other": "المغرقة [editorial conjecture]",
-          "remark": "The source marks this probable correction."
+          "remark": "The source marks this probable correction.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "not-found-verbatim-in-working-reading"
         },
         {
           "lemma": "فيتقن خبث",
           "other": "فليتقِ خبث [editorial conjecture]",
-          "remark": "Printed ending appears corrupt; English chooses a plausible imperative."
+          "remark": "Printed ending appears corrupt; English chooses a plausible imperative.",
+          "criticalClass": "editorial-conjecture",
+          "lemmaAnchor": "not-found-verbatim-in-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/462?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/463?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/463?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     },
     {
       "id": "QT-061",
@@ -1457,16 +2072,39 @@ window.GNAMMA_QAWAID_MATN = {
         {
           "lemma": "وترتيبها",
           "other": "وتزيينها",
-          "remark": "Printed p.270 variant."
+          "remark": "Printed p.270 variant.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         },
         {
           "lemma": "غير المتّسقة المنتظمة",
           "other": "غير المنسّقة المنتظمة",
-          "remark": "Printed alternative; syntax remains uncertain."
+          "remark": "Printed alternative; syntax remains uncertain.",
+          "criticalClass": "reported-in-edition",
+          "lemmaAnchor": "present-in-normalized-working-reading"
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/465?lang=ar",
-      "moreUrl": "https://ablibrary.net/book_content/b/17638/466?lang=ar"
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/466?lang=ar",
+      "criticalReview": {
+        "sourceLayer": "single-modern-printed-digital-transcription",
+        "independentManuscriptsCollated": 0,
+        "photographedPrintedLeafChecked": false,
+        "authorialBoundaryIndependentCheck": false,
+        "apparatusStatus": "provisional",
+        "knownLacuna": false
+      }
     }
-  ]
+  ],
+  "criticalEdition": {
+    "version": "0.9",
+    "updated": "2026-11-03",
+    "matnUnitCount": 61,
+    "earliestPrintedPage": 48,
+    "latestPrintedPage": 270,
+    "independentlyCollatedManuscripts": 0,
+    "baseWitness": "Āshtiyānī 1982, electronic transcription",
+    "apparatus": "editorial/CRITICAL_APPARATUS.md",
+    "status": "LACUNOSE PROVISIONAL READING TEXT; NOT A COMPLETE CRITICAL EDITION"
+  }
 };
