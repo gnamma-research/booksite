@@ -30,3 +30,5 @@ body[data-focus="1"] .main,body[data-focus="2"] .main,body[data-focus="3"] .main
 body[data-focus="2"] .editorial-note,body[data-focus="3"] .editorial-note,body[data-focus="2"] .source-issue,body[data-focus="3"] .source-issue{display:none}
 @media(max-width:700px){body[data-focus="1"] .contents.shown,body[data-focus="2"] .contents.shown,body[data-focus="3"] .contents.shown{display:block}.reading-dock{height:48px;grid-template-columns:64px minmax(0,1fr) 64px}#dock-current{padding:0 8px;font-size:11px}}
 @media print{body{padding:0}.reading-dock{display:none!important}body[data-focus="1"] .source-issue,body[data-focus="2"] .source-issue,body[data-focus="3"] .source-issue{display:none!important}}
+
+.division-title{font:500 19px/1.35 Georgia,serif;margin:6px 0 12px}.division-source{font:11px/1.4 system-ui;color:var(--muted);margin:-7px 0 14px}
