@@ -875,3 +875,48 @@ NAMA `index.html` adds the seven Stage 17/18 JS resources, links both major sour
 ### F. Next substantive task (do not re-do Stage 17/18 source indexing)
 
 Start complete upper and lower original Arabic transcription and clause-by-clause close English of one *continuous substantive stretch*, preferably printed **II:221–228** followed by its marginalia, then II:228–240 and onward. Separately enumerate every marginal note and positively identify Wasīm only where the actual printed note or independently collated witness establishes his authorship. Maintain source passage IDs, corrected Arabic word joins, logical particles, objections/replies, original page joins and second-pass audit. Complete the entirety of original II:1–335 and volume I without conflating original printed endorsements, contents and post-index imamate with normal running `sharḥ`. Only genuine full text + independently checked attribution + witness collation supports a critically complete release.
+
+
+---
+
+## 27. Stages 19–22: genuinely source-facing Book Six clauses and 1912 Cairo witness correction (3 November 2026)
+
+**Source access:** The same user-uploaded complete 632-image Arabic `taqribmaram(2).pdf` is directly mounted and inspected (printed volume II:221–234 = physical PDF images **516–529**). The separate original `At-taftazaniSadAd-din1912_text.pdf` was also materialized and visually inspected for *printed* **pp.97, 98, 100**. The two sources must not be conflated: Sanandajī's larger upper register interleaves Taftāzānī parenthesized original lemmata with his own explanations, and a long smaller register includes Wasīm and other/historically uncertain gloss writers.
+
+### Critical corrective collation — II:222, printed Cairo 1912 p.97
+
+An originally unresolved source-lemma reading in Stage 19 (`⟦ومعارضته؟ / ومعاضدته؟⟧`) is now **resolved from two distinct physical print witnesses as `ومعاونته`**: *“and assisting it [reason].”* Sanandajī II:222 (source PDF 517) and the separate Cairo 1912 Taftāzānī printed p.97 agree. The neighbouring source lemma reads **`ورفع الاحتمال`**, “and removing uncertainty”; a distinct earlier *working bilingual Tahdhīb* archive had `ورفع الإشكال`, which is a working-transcription discrepancy **not yet established as a manuscript variant**. The corrected reading has been applied non-destructively to Stage 19's original `continuous-II221-II222-source-clauses.js`, the full Stage 19 Markdown and the Stage 19 audit ledger. **The separate independently developed Tahdhīb translation project is not edited here.**
+
+### Stages 19 and 19B (retained from prior release, now critically corrected)
+
+- **II:221–222:** 20 originally transcribed, clause-aligned upper units, original headings, base lemmata and Sanandajī explanations with the II:221→222 physical word join maintained. One longer **bounded first-pass lower-register marginal note** at II:222 analyzes **`wa` versus `aw`** in the prophet/messenger definition; its individual historical author remains **UNASSIGNED**, not positively Wasīm.
+- **II:223–224:** 12 further direct source-clause records on a prophet's knowledge of divine commissioning and the definition of miracles as extraordinary events, challenge, absence of effective counter-performance, and divine creation of immediate knowledge. The II:223→224 physical sentence-join is preserved.
+- Editorial full-dossier and register from Stage 19 remain available without duplicated or overwritten earlier historical excerpts.
+
+### Stage 20 — original II:224–228, plus independent 1912 p.98
+
+- `continuous-II224-II228-miracle-proof-clauses.js`: **25 further original short source-based bilingual clause units**, with `sourceLayer` tags for original **matn**, Sanandajī **sharḥ**, or authentic **heading**. Several phrases intentionally overlap the previous Stage 19/19B selection work and are **not distinct complete paragraphs**.
+- A short **individual-author UNASSIGNED** marginal excerpt at **II:227** concerning the **three stages of the miracle's inferential proof**; it remains part of a longer incomplete small-type note.
+- `editorial/2026-11-03_STAGE20_II224_II228_MIRACLE_WITNESS_COLLATION_AND_TRANSLATIONS.md`: 25 phrases, close English and critical discussion of the king's public threefold act as explicit affirmation, merely imagined alternative causes versus ordinary certainty, successful counter-performance, God as effective producer in the specified miraculous case, and avoidance of circular proof.
+- Original Cairo 1912 Taftāzānī printed p.98 was independently image-inspected. It contains selected base matn on the same miracle definition, royal analogy, objections from possible hidden causes, customary certainty, and the necessity of avoiding circular appeal to a prophetic report. **This is a collation witness to embedded lemmata, not a merger with the independent Tahdhīb edition.**
+
+### Stage 21 — II:229–230, the *ṣarfa* question and kinds of prophetic evidence
+
+- `continuous-II229-II230-quran-and-sarfa-clauses.js`: **14** further short source-based bilingual upper-register selections with explicit matn versus sharḥ identity. The original distinguishes *intrinsic inimitability* of Arabic composition from the reported `ṣarfa` view, attributed by the **Sanandajī text** to al-Naẓẓām and some other scholastic groups. This reported attribution requires independent doxographic checking before being counted as al-Naẓẓām's own preserved formulation.
+- A short **author-UNASSIGNED** lower-register selection **G.II.229.21.01** develops the *parts versus whole* objection: from the ability to produce constituent Qurʾānic expressions one cannot immediately infer the ability to match the entire composition; `حكم الجملة قد يخالف حكم الأجزاء`. **The complete note remains untranslated** and no historical author is fabricated.
+- `editorial/2026-11-03_STAGE21_II229_II230_SARFA_QURAN_PROPHETIC_PROOF.md`: all 14 selected originals, close English, extended editorial analysis and that source-matched lower-register excerpt. Further distinctions from earlier prophetic narratives and prediction of events (Romans, spoils, host defeated) are recorded rather than flattened into the same argument as eloquence.
+
+### Stage 22 — II:233–234, the conditions of prophethood
+
+- `continuous-II233-II234-prophetic-conditions-clauses.js`: **15** further directly source-read short Arabic-English units from the Night Journey/Ascension and original `فصل من شرائط النبوة` at II:234. Separated al-Taftāzānī lemmata include the condition of intellectual completeness, strength of judgement, freedom from repellent characteristics, and the adopted account of prophetic protection. Sanandajī's explanatory additions, including the case of Jesus as a child, remain separately attributed.
+- Cairo **1912 printed p.100 independently rendered and inspected**, corroborating the *original base-text sequence* on prophetic qualifications. This establishes that Sanandajī's explanatory `الفطنة` and other bridge words must not be miscredited to the quoted matn.
+- `editorial/2026-11-03_STAGE22_II233_II234_PROPHETIC_CONDITIONS_SOURCE_TRANSLATIONS.md` records the primary source clauses, witness comparison and the limits of the philosophical/theological conclusions.
+
+### New source verification ledger and web reader
+
+- `editorial/2026-11-03_STAGE20_22_CLAUSE_AND_WITNESS_AUDIT.csv`: **54 new upper original-source selections** (25+14+15) and **2 short author-unassigned lower excerpts** (II:227 and II:229). Source IDs, Arabic, close English, original physical PDF page, source register and incomplete verification/status are distinct. Overlaps with prior Stage 19 passages and the same printed base text are not independent translated-word increments.
+- NAMA `index.html` now links to all Stage 20–22 dossiers and loads all new JS. `reader-layered.js` already respects `sourceLayer` so selected Tahdhīb matn-only units do not get mislabelled as Sanandajī. Existing Arabic/English/both, matn, sharḥ, independently verified Wasīm and unattributed margin controls remain intact.
+
+**Completion warning:** The prior **601/615 printed page-position English-context proxy** (97.72%) is **UNCHANGED**, not increased by overlapping clauses or by independent matn collation. Actual coverage of Arabic words and lower marginal note units is still much smaller. **0 whole printed pages** have been critically certified with every upper clause, all lower notes, independent second reading and print/manuscript variants. The named Wasīm gloss-unit denominator is still unknown. The page-respecting first-pass text now reaches selected source units at **II:234**, with many omitted intervening portions and entire lower notes still requiring substantial work.
+
+**Next substantial original source interval:** II:235–239 (physical PDF images 530–534): continue the distinct positions concerning `ʿiṣma`, scope of prophetic actions before and after the mission, the legal force of transmitted reports and the boundary to the resurrection chapter at II:240. Priority remains *continuous complete upper and lower transcription and close English*, not further broad source-page topic surveys.
