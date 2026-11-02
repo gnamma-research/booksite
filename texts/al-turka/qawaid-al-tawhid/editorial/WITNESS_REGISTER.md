@@ -91,6 +91,26 @@ The chain of quoted matn has reached printed p. **190**. A further independent m
 
 **Important authorial layers:** QT-041 has a nested citation from *Fuṣūṣ al-Ḥikam* followed by the ancestor's own **ففيه نظر** critique. QT-042 reports a further objection and replies within the ancestor's own words. The grandson's subsequent defence of Ibn ʿArabī must not be silently substituted for the grandfather's reply.
 
+## Stage 06 primary printed text and attribution — QT-043–046
+
+The **ancestor's own quotations** and their boundaries are verified in a **single online transcription of Āshtiyānī's printed Arabic edition**, not a manuscript or photographic facsimile:
+
+| Locus | Arabic printed pages | Source pages and authorial switch |
+|---|---|---|
+| QT-043 | 193–195 | [193](https://ablibrary.net/book_content/b/17638/389?lang=ar), [194](https://ablibrary.net/book_content/b/17638/390?lang=ar), [195](https://ablibrary.net/book_content/b/17638/391?lang=ar): starts **قال: على أنَّا نقول**; ends before **أقول** p.195 |
+| QT-044 | 197–198 | [197](https://ablibrary.net/book_content/b/17638/393?lang=ar), [198](https://ablibrary.net/book_content/b/17638/394?lang=ar): starts **قال: وحينئذ**; ends before **(1) أقول** p.198 |
+| QT-045 | 202–203 | [202](https://ablibrary.net/book_content/b/17638/398?lang=ar), [203](https://ablibrary.net/book_content/b/17638/399?lang=ar): starts **قال: ثم إنهم**; ends before **(1) أقول** p.203 |
+| QT-046 | 206–207 | [206](https://ablibrary.net/book_content/b/17638/402?lang=ar), [207](https://ablibrary.net/book_content/b/17638/403?lang=ar): starts **قال: ثم إن من البين**; ends before **(1) أقول** p.207 |
+
+**Printed and syntactic cruxes:**
+- QT-043 p.194 **الحاسّة / الحادسة**, plus Āshtiyānī's recorded Mīrzā Hāshim suggestion that the repeated conditional wording **لصح ... لصح** is an intrusion by a copyist. The working Arabic **retains** the passage.
+- QT-044 p.198 **فلئن قيل / فلئن قلتم**, **إلى بعض / إلى البعض**. Do not confuse these nested objections with the grandson's independent **أقول**.
+- QT-045 p.202 **وتقوية / وتقوى**, **القوى / للقوى**. One paragraph beginning **قال** includes multiple criticisms the grandfather attributes to the spiritual aspirants' assumptions.
+- QT-046 p.207 **وبيّن / فإن**, and the grammatically awkward **فامتنع أن يصل إليه القوة العاقلة**. A conjectural feminine **تصل** has not been silently inserted.
+- Pages **199–201**, **203–205**, and most pages **208 onward** contain extensive descendant commentary and later glosses. Their appearance in a printed volume does not make them passages of the original matn.
+
+**Progress note:** the original chain of matn quotations is located through **p.207**. A later section of the commentary on pp.208–241 was sampled for context but NOT thoroughly inventoried; a continuous full matn extraction **cannot yet be claimed**. Independent grandfather manuscripts remain **uncollated**.
+
 ## Independent manuscript leads — NOT yet collated
 - **M1 — Mashhad, Farhang va Honar, MS alif-28:** catalogue reports a copy dated 851 AH, scribe Aḥmad ibn ʿAlī al-Bayhaqī al-Sabzawārī.
 - **M2 — Mashhad, Āstān-i Quds Riḍawī, MS 812:** catalogue reports 18 folios, dated 1067 AH.
