@@ -354,4 +354,4 @@
     ],
     "layers": {}
   }
-])if(!seen.has(u.id))b.units.push(u);})();
+])if(!seen.has(u.id)){u.sourceLayer=/^B6\.(M\.|MATN\.)/.test(u.id)?'matn':/^B6\.H\./.test(u.id)?'heading':'sharh';if(u.sourceLayer==='matn'){u.layers=u.layers||{};u.layers.matn=u.layers.matn||{arabic:u.arabic,english:u.english,citation:u.citation};}b.units.push(u);}})();
