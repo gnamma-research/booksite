@@ -37,6 +37,10 @@ jobs:
           assert 'وإلا لزم سلب الشيء عن نفسه' in text['L.14']
           assert 'مع الموجبة الموجبتين، ومع السالبة السالبتين' in text['L.16']
           assert 'مع الموجبة الكلية الموجبتين' not in text['L.16']
+          assert 'التناقض اختلاف قضيتين' in text['L.13']
+          assert 'في الكيف والكم والجهة' in text['L.13']
+          assert len(logic['stage78_source_concordance']['unit_printed_pages'])==19
+          assert len(logic.get('witness_comparisons_stage77',[]))>=7
           assert 'والنظريات' in text['L.18']
           assert 'والله أعلم بالصواب' in text['L.19']
           print('PASS: Cairo L16 witness kept separate from longer commentary-contained print and 19 / 1,044 corpus integrity')
