@@ -582,7 +582,7 @@
     ],
     "layers": {}
   }
-])if(!seen.has(u.id))b.units.push(u);const pg=b.units.find(u=>u.id==='P2.222');if(pg){pg.layers=pg.layers||{};pg.layers.margins=pg.layers.margins||[];const g={
+])if(!seen.has(u.id)){u.sourceLayer=/^B6\.(M\.|MATN\.)/.test(u.id)?'matn':/^B6\.H\./.test(u.id)?'heading':'sharh';if(u.sourceLayer==='matn'){u.layers=u.layers||{};u.layers.matn=u.layers.matn||{arabic:u.arabic,english:u.english,citation:u.citation};}b.units.push(u);}const pg=b.units.find(u=>u.id==='P2.222');if(pg){pg.layers=pg.layers||{};pg.layers.margins=pg.layers.margins||[];const g={
   "id": "G.II.222.02",
   "page": 222,
   "pdf": 517,
