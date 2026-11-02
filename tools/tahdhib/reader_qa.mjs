@@ -50,6 +50,15 @@ async function check(kind, viewport) {
   assert(await page.locator('#page-number').textContent() === (kind === 'kalam' ? '15' : '1'), 'dock previous failed');
   await page.locator('#search').fill(kind === 'kalam' ? 'العلم' : 'القياس');
   assert((await page.locator('.search-hit').count()) > 0, 'Arabic search failed');
+  // Visit source-critical loci via stable reader links; never conflate witnesses.
+  const targetPage = kind === 'kalam' ? 39 : 13;
+  await page.goto(new URL(route + '#page=' + targetPage, base).href, { waitUntil: 'networkidle' });
+  if (kind === 'logic') {
+    assert(await page.locator('.witness-variant').count() > 0, 'L13 independent printed readings panel missing');
+    assert((await page.locator('.witness-variant').first().textContent()).includes('Cairo 1912'), 'variant labels missing');
+  } else {
+    assert(await page.locator('.source-issue').count() > 0, 'p39 unresolved textual issue not visible');
+  }
   const overflow = await page.evaluate(() => ({
     width: document.documentElement.clientWidth, scrollWidth: document.documentElement.scrollWidth
   }));
