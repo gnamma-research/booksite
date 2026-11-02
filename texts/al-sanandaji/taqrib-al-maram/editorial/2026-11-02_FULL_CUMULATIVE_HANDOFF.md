@@ -454,3 +454,64 @@ Source is the **same 632-image scanned combined *Taqrīb al-Marām* / *Ḥāshiy
 ### E. Next action and source-sensitive priorities
 
 Next unprocessed source-first interval **II:21–40, PDF physical images 316–335**. The following correction and critical translation pass should prioritize **I:275–280 on relation**, **II:2–20 on substantial body and the indivisible atom**, and **all Wasīm/intervening marginal notes** before calling a page complete. For every page, retain photographed text, separate lemma IDs, commentator's running clauses, marginal-note incipits and exact attributed author; translate ALL clauses, not only selected snippets; check negatives, disputant voice and logical particles. Then conduct independent visual proof, witness collation, argumentative review, and PDF/website parity QA. The eventual three-author-layer merger with the independent *Tahdhīb* is still forbidden until both editions are critically definitive.
+
+
+---
+
+## 19. Stage 11 — printed volume II:21–60, source-image reading and separated lemmata (2 November 2026)
+
+**Authoritative predecessor:** Stage 10 in this document. This continuation does not retranslate or overwrite previous I:8–280, II:2–20 or the independently attributed Wasīm II:117 source fragment; the independent *Tahdhīb* matn in the other chat is untouched.
+
+### A. Original primary source and pagination
+
+- The combined user-supplied facsimile `taqribmaram.pdf`, 632 physical image pages, contains the printed two-volume *Taqrīb al-Marām* with *Ḥāshiyat al-Muḥākamāt* and other marginalia. **Printed volume II pp.21–60 = physical PDF pp.316–355**. All 40 pages were inspected directly as images, with enlarged original views for selected Arabic text.
+- The original **40-page unchanged facsimile extract**, `Taqrib_Stage11_II21-II60_Original_Facsimile.pdf`, contains precisely those physical PDF pages. This is a *source facsimile*, not a translated PDF.
+- Main register (Sanandajī + quoted Taftāzānī lemmata) and small marginal register (Wasīm + other authors) are never automatically conflated. **No marginal note is assigned to Wasīm based on typography alone**.
+
+### B. Original argument sequence — verified section landmarks
+
+- **II:21** opens **فصل في أحكام الأجسام**, concerning the properties of bodies, the individuality of indivisible parts, and the dispute whether kinds of body differ by substantial forms or by accidents. The preceding atom argument concludes on the same page.
+- **II:22–30** covers bodily commonality, specific nature, extension, magnitude, geometric shape and boundaries, the use of correspondence arguments, and the relation between actual and potential divisions. Large stretches of some pages are lower-register critical discussions, not continuous upper text.
+- **II:31–38** returns to the proofs, objections and replies on the temporal origination of the world and bodies: being the substratum of originated accidents versus being a contingent product of a freely choosing agent, together with debates over endless succession and regress.
+- **II:39** opens **فصل في تقسيم الجسم وبيان أقسامه على ما قالت الحكماء**, setting out the philosophers' natural body as simple or composite, with celestial and elemental simple kinds.
+- **II:40–44** extends the historical celestial model, orientation and geometrical motion; do not treat these reports as current astronomy.
+- **II:45–49** treats the four elements (fire, air, water, earth), their characteristic properties and associated historical accounts of atmospheric and terrestrial phenomena.
+- **II:50** opens **فصل في المركبات التي لها مزاج**, concerning the elements' mixture, the production of a mean quality and the resulting compound temperament.
+- **II:51–60** continues debates about qualitative interaction and temperamental balance before proceeding into organismal nutritive, growth and related capacities.
+
+### C. What was added and what was NOT done
+
+- New NAMA modules `firstpass-II021-II040.js` and `firstpass-II041-II060.js`: **40 source-image first-reading guides**, each with an exact printed/PDF locator, explicit textual-layer qualification, and a short Arabic anchor **only where confidently recovered**. **These are synopses, not word-for-word translations of whole pages**.
+- `source-selected-II021-II060.js`: **17 selected short upper-register Arabic–English translations**, and **one selected lower-register marginal note on II:39 with author UNASSIGNED**.
+- `source-aligned-II031-II039.js`: two additional *paired layer records* at II:31 and II:39, showing the typographically parenthesized quoted lemmata separately from Sanandajī's bridging interpretation. Ellipses explicitly mark omitted original words; no complete-page claim follows. The **matn toggle is based on embedded quotation only**, not a merger with the separately translated Tahdhīb text.
+- `editorial/2026-11-02_STAGE11_II021-II060_SOURCE_AND_TRANSLATION.md`: the synchronized source-facing Markdown for the same pages and selected Arabic–English quotations, with the two additional aligned records.
+- `editorial/2026-11-02_STAGE11_II021-II060_LAYER_LEDGER.csv`: 40 source-page rows, separate counts for short upper passages, paired matn/sharḥ excerpts, unassigned lower notes, and source-completeness/critical-certification flags.
+- `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv`: **exactly 40** existing II:21–60 entries updated; all other rows preserved. NAMA's `index.html`, `reader-layered.js`, and `source-atlas.js` updated correspondingly.
+
+### D. New completion ledger, with honest denominators
+
+| Metric | At end of Stage 11 |
+|---|---|
+| Entire printed 2-volume source bibliographically indexed | **615/615 numbered page positions = 100% source indexing** |
+| Vol. I page positions with some provisional English | **I:8–280 = 273**, including marginal-only I:222 |
+| Vol. II substantive page positions with some provisional English | **II:2–60 = 59**; title-only II:1 excluded |
+| Combined page-presence proxy | **332/615 = 53.98%** of pages having at least some provisional English; **NOT 53.98% of original text translated** |
+| New preliminary source-page guides | **40** (II:21–60), not complete translations |
+| New directly translated short upper-register quotations | **17** |
+| New paired matn/sharḥ partial alignments | **2**, II:31 and II:39 |
+| New lower-register translated selections, author unverified | **1**, II:39 |
+| New independently identified Wasīm note units | **0**; the earlier II:117 remains |
+| Complete main + all lower-register text, independently verified and certified | **0/615** printed pages |
+
+**Do not call the reader finished or half-translated.** The page-presence fraction is a locator-level metric; extensive untranslated prose remains even within source pages counted among the 332. The *word-level* first pass and a separately countable Wasīm gloss corpus have not been completed.
+
+### E. Continuing the mandatory multi-pass strategy
+
+1. **Pass 0 — broad first reading:** continue source-image first-reading from **II:61**, physical PDF **356**, without recycling earlier English as new translation. Record page boundaries, clauses confidently read and margin extent.
+2. **Pass 1 — genuine full-text translation:** continuously transcribe ALL Sanandajī prose, all embedded lemmas, and **each and every lower-register gloss** as distinct identifiable units with Arabic and complete English, including long objection/reply chains.
+3. **Pass 2 — source verification:** second independent reading of every Arabic word, especially negations, conditionals, modalities, speaker labels and continuations across page breaks.
+4. **Pass 3 — print/manuscript comparison:** collation of independent edition witnesses, variant reading apparatus and author-level provenance of Wasīm versus additional marginal writers.
+5. **Pass 4 — philosophical and theological review:** causality, substances, temporality, elements, `mizāj` and other scholastic concepts; correct mistranslations and reconstruct dialectical context without anachronism.
+6. **Pass 5 — publication QA:** same canonical Markdown/JS/PDF text, reader layer toggles, Arabic/English/both, desktop and phone layout, bibliography, searchable page index, print and export checks.
+
+**Three-layer merger with al-Taftāzānī** is deferred until the independent matn stream and this combined Sanandajī–Wasīm work reach full independently justified critical completion.
