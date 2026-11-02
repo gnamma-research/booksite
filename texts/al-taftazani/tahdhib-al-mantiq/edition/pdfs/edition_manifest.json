@@ -2,10 +2,10 @@
   "schema": "gnamma-tahdhib-edition-publication-v1",
   "book": "Tahdhīb al-Manṭiq",
   "source": "data.js",
-  "source_sha256": "3634a8222194355827a898a4c4a1f3d217ec5a8583b58dafd8b3d7a3f97fc312",
-  "source_bytes": 94640,
+  "source_sha256": "ca99f10c5773c18219ead99f7fee883c8c8042ba0749831b3c6bd13ded61f43b",
+  "source_bytes": 96855,
   "source_witness": "Cairo 1912 and compared printed logic text; original pagination recorded per unit",
-  "editorial_status": "NAMA working bilingual edition of Taftazani's Tahdhib al-Mantiq: 19 clause-aligned editorial divisions, Cairo 1330/1912 logic pp.3–14; ten documented comparisons with a different printed Tahdhib text (NOT collated manuscript variants). Stage97 has completed a source-typed 46-case register for the three exceptional fourth-figure modal moods (12 sixth, 22 seventh, 12 eighth), drawing from al-Katibi and later Ibn Mubarakshah's tables; bounded temporal tests do NOT prove full historical necessity or all modal entailments. Cairo words, printed witness differences and commentary explanations remain separately attributed; manuscripts and remaining L17 printed connector still require independent verification.",
+  "editorial_status": "NAMA working bilingual edition of Taftazani's Tahdhib al-Mantiq: 19 clause-aligned editorial divisions, Cairo 1330/1912 logic pp.3–14; ten documented comparisons with a different printed Tahdhib text (NOT collated manuscript variants). Stage97 has completed a source-typed 46-case register for the three exceptional fourth-figure modal moods (12 sixth, 22 seventh, 12 eighth), drawing from al-Katibi and later Ibn Mubarakshah's tables; bounded temporal tests do NOT prove full historical necessity or all modal entailments. Cairo words, printed witness differences and commentary explanations remain separately attributed; manuscripts and remaining L17 printed connector still require independent verification. Stage100 diagnostic: all 46 exceptional fourth-figure mixes are historically SOURCE-CLASSIFIED; four IEO pairs with referential L/A majors have zero satisfying antecedents in the newly specified two-world/temporal fragment. Not a disproof or full medieval necessity certification. Independent manuscripts and remaining L17 connector unresolved.",
   "unit_count": 19,
   "page_or_division_count": 19,
   "navigation_kind": "division",
@@ -34,24 +34,24 @@
     {
       "name": "tahdhib-logic-parallel.pdf",
       "purpose": "bilingual",
-      "sha256": "bda6b0607d4aa8ed9d86fc83674dcf369865b36b551fd7491a33d343373f0300",
-      "bytes": 103972,
-      "a4_pages": 21,
+      "sha256": "a58a59572472b25a52df001299fff6b5cac0c47f3f1ff9952e6df52f021a9a22",
+      "bytes": 104872,
+      "a4_pages": 22,
       "href": "pdfs/tahdhib-logic-parallel.pdf"
     },
     {
       "name": "tahdhib-logic-ar-only.pdf",
       "purpose": "arabic",
-      "sha256": "23b3add7d6e9a9e7796946e9b6057307d94ee3e55ffe4d5fd7e986881e954f67",
-      "bytes": 70390,
+      "sha256": "440eb390b8a795e99e8cf490894e794fe26cf415f0732fff34fb105e9947fc70",
+      "bytes": 70748,
       "a4_pages": 11,
       "href": "pdfs/tahdhib-logic-ar-only.pdf"
     },
     {
       "name": "tahdhib-logic-en-only.pdf",
       "purpose": "english",
-      "sha256": "9eb70a799d7e93961669eb220d4368457fc4ae2ea163f5d4e5d0b93ed7291a51",
-      "bytes": 50355,
+      "sha256": "13aabad50183d4718bfb9ed898c29be777bb234753ef5c5a11ba6a88f3f48f6f",
+      "bytes": 50712,
       "a4_pages": 12,
       "href": "pdfs/tahdhib-logic-en-only.pdf"
     }
