@@ -73,3 +73,23 @@ _Gnamma Research · translator's critical glossary v0.1 · 2 November 2026_
 | **رؤية البصيرة / رؤية الباصرة** | QT-041, pp. 185–186 | Intellectual self-cognition versus corporeal sight; original critical engagement with Ibn ʿArabī's mirror analogy. |
 
 Later **sharḥ** material is used for labelled interpretation only. No claim that Āshtiyānī, the Qajar glossators, or Lumbard have personally verified the new English translation.
+
+
+## Stage 06: mirrorhood and the limits of knowing (pp. 193–207)
+
+| Arabic expression | English and locus | Inherited and contested metaphysical role |
+|---|---|---|
+| **الظاهر / المظهر / المرآة / المرئي** | what manifests / locus of manifestation / mirror / what is seen, **QT-043** | The grandfather insists that identity of mirror and reflected reality would erase necessary distinctions; genuine manifestation cannot simply be declared a separate individuated reality either. |
+| **العقل المجرّد** | separate intellect, **QT-043** | If unrestricted existence is the object mirrored, a non-human separate intellect could equally claim a capacity for manifestation. A direct Avicennian challenge to exclusivity of the Perfect Human. |
+| **الكون الجامع / العالم الكبير** | comprehensive being / great cosmos, **QT-043–044** | Is the cosmos as a totality more suitable than a particular human being to include all determinations? This differs from saying the cosmos is a single substantial individual. |
+| **استعدادات غير متناهية** | unbounded capacities/dispositions, **QT-043** | Human perfections differ across time, so exhaustive manifestation by one individual encounters a modal and mereological problem. |
+| **العلّة الغائيّة / الإرادة المخصّصة** | final cause / particularizing will, **QT-044** | Whether God's willing cosmic self-disclosure implies intrinsic perfection dependent upon a created, possible, originated intermediary. |
+| **واجب من جميع جهاته** | necessary in every respect, **QT-044** | An Avicennian principle directed against an account of divine self-perfection requiring what is other than the divine reality. |
+| **انحلال العقد / التخلّص عن القيود / الإطلاق** | untying bonds / release from restrictions / unrestrictedness, **QT-045** | The grandfather stages a critique of gnosis understood as purely leaving bodily powers behind; the claim is reported as 'theirs' in the objection. |
+| **القوى الجسمانية / القدسية / العاقلة** | bodily / holy / intellectual faculties, **QT-045–046** | The claim that perfection requires suspension of sensory cognition is tested against the idea that the Perfect Human encompasses all existential and cognitive levels. |
+| **الحسّي / الخيالي / الوهمي / الفكري** | sensation / imagination / estimation / discursive thought, **QT-045–046** | Post-Avicennian psychology provides a fine-grained list of faculties; its metaphysical target is an Akbarian doctrine of spiritual perfection. |
+| **الأطوار التي فوق العقل / العبارة** | modes beyond intellect / verbal expression, **QT-046** | The objector argues that knowledge transcending intellect is inexpressible and therefore unavailable. This latter inference must itself be critically examined; it is not self-evident. |
+| **القوة الناطقة / القيود الطبيعية** | rational soul/faculty / natural limitations, **QT-046** | Distinguishes temporary changes of attention from genuinely altering deep-seated natural dispositions; intersects with both philosophical psychology and spiritual discipline. |
+
+**Dialectical caution:** QT-045 and QT-046 are descendants' quotations of the *ancestor's representations of an objection*. One should not credit these hostile premises to the ancestor as a positive doctrine, much less attribute them to all historical Sufis. Also distinguish the grandson's later lengthy reply, the modern Persian notes, and the grandfather's actual short argument.
+
