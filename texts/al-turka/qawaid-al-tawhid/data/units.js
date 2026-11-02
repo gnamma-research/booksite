@@ -1,11 +1,11 @@
 /* Gnamma Research | Qawāʿid al-Tawḥīd | ancestor's MATN ONLY
-   Forty-two translated lemmata; digitized Āshtiyānī 1982 pp.48–190.
+   Forty-six translated lemmata; digitized Āshtiyānī 1982 pp.48–207.
    Not a complete translation and not a manuscript-critical edition.
    Commentary informs notes ONLY, and is never spliced into the matn.
 */
 window.GNAMMA_QAWAID_MATN = {
   "edition": "Āshtiyānī 1982, digital page transcription",
-  "status": "42-quoted-matn-lemmas-print-transcription-not-manuscript-collated",
+  "status": "46-source-located-original-matn-lemmas-digital-print-not-manuscript-collated",
   "units": [
     {
       "id": "QT-001",
@@ -922,6 +922,131 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "url": "https://ablibrary.net/book_content/b/17638/385?lang=ar",
       "moreUrl": "https://ablibrary.net/book_content/b/17638/386?lang=ar"
+    },
+    {
+      "id": "QT-043",
+      "title": "Three possible subjects of the perfect mirror—and the infinity of human perfections",
+      "pages": [
+        193,
+        194,
+        195
+      ],
+      "arabic": "على أنّا نقول: إن حقيقة الحق وصورته الحقيقيّة لو كانت نفس حقيقة الإنسان وصورته، لم يبق فرق بين الظاهر والمظهر والمرآة والمرئي. ولو كانت غيرها، فلو كانت نفس حقيقة الوجود المطلق، كان غير الإنسان الكامل، كالعقل المجرّد، يصحّ أن يكون مجلىً ومظهراً لها. ولو كانت هي الوجود المتعيّن بجميع هذه التعيّنات وسائر الصفات والإضافات، لصحّ أن يكون مظهرها مجموع العالم الكبير، فإن مجموع أجزاء العالم الكبير الواحد بالموضوع وبالهيئة الصوريّة الاجتماعيّة مثل مجموع الإنسان المتألّفة من النفس المجرّدة والقوّة العاقلة والحاسّة والبدن المادّي الإنساني. فلو صحّ أن يقال إنّ هاهنا وحدة حقيقيّة وصورة طبيعيّة نوعيّة لصحّ أن يقال إنّ هناك أيضاً وحدة حقيقيّة وصورة طبيعيّة نوعيّة هي المدبّرة المتصرّفة الموحّدة لجميع أجزائه المدركة لها جميعاً على ما يقولون به. على أن من جملة أجزاء العالم أنواعاً غير متناهية، وجد بعضها في الأزمنة الماضية ثمّ انقرض بالكلّيّة، ووجد بعضها في الأزمنة الحاضرة ثمّ إنّها تنقرض بالكلّيّة في الأزمنة المستقبلة، ووجد البعض الباقي منها في الأزمنة الآتية مع أنّه لم يوجد في الأزمنة الماضية والحاضرة، لكنّه إنّما يصير منقرضاً بعد زمان بالكلّيّة. ثمّ إنّ جميع الكمالات الممكنة للنوع الإنساني لا يمكن حصولها لشخص واحد من الأشخاص الكاملين من ذلك النوع المختلفين بحسب الاستعدادات غير المتناهية الموجودة في الأزمنة غير المحدودة، فلا يمكن أن يجعل فرد منهم من المظاهر التامّة الكاملة بالنسبة إلى صورة تلك الحقيقة. وكيف لا، فإنّ الكمال الذي يكون لخاتم الأنبياء لا يمكن حصوله لنبيّ آخر، والكمال الذي لخاتم الأولياء عندهم لا يمكن حصوله لوليّ آخر من الأولياء.",
+      "english": "We further maintain that if the reality of the Real and its true image were identical with the reality and image of the human being, there would remain no difference between what manifests and its locus of manifestation, or between a mirror and what appears in it. If it were something other than the human reality, then, supposing it were the reality of unrestricted existence itself, something besides the Perfect Human—such as a separate intellect—could also serve as its place of disclosure and manifestation. But if the reality in question were existence as determined by all these determinations, attributes and relations, the entire great cosmos could serve as its manifestation. For the totality of the parts of the great cosmos, united in subject and in its collective formal configuration, is comparable to the totality constituting a human being: separate soul, intellectual and sensory faculty, and material body. If one may posit true unity and a specific natural form here, one could also posit such unity and form in the cosmos as a whole, governing and coordinating all its parts and apprehending them together, as the interlocutors maintain. Moreover, among the cosmos's parts are indefinitely many kinds: some existed in earlier times and have entirely passed away; others exist now but will disappear in future times; still others will appear only in times to come and will ultimately pass away too. Nor could every possible perfection of the human species belong to any one of its perfected individuals: individuals differ in their capacities across unbounded times. None of them, therefore, could serve as a completely exhaustive manifestation of that reality's image. Indeed, the perfection belonging to the Seal of the Prophets could not belong to another prophet, nor, in their account, could the perfection of the Seal of the Saints belong to any other saint.",
+      "notes": [
+        "This is one uninterrupted original ancestor's قال passage: p.193 beginning على أنا نقول, continued through p.194, ending at the beginning of p.195 before the grandson's أقول. No intervening grandson's prose is translated.",
+        "The threefold dilemma distinguishes (a) identity of divine and human reality, (b) unrestricted existence as mirror-subject, and (c) a fully determined collective cosmic reality. The argument questions exclusive and exhaustive mirrorhood rather than simply denying every meaningful sense of the Perfect Human.",
+        "The printed p.194 parenthetical heading كيفية إحاطة الإنسان على المظاهر الوجودية and long modern Persian glosses are editorial, not authorial.",
+        "Printed apparatus on p.194 explicitly suspects scribal repetition between لصح and طبيعية. This *working diplomatic-leaning* Arabic retains the repeated clause rather than conjecturally deleting it.",
+        "Reported alternatives: الحاسّة/الحادسة; الإنسان/الإنساني; the edition also flags a repeated conditional as possibly زائد and contains a syntactic agreement crux in مجموع أجزاء العالم الكبير الواحد. Check print photographs and independent manuscripts before choosing an emendation."
+      ],
+      "variants": [
+        {
+          "lemma": "الحاسّة",
+          "other": "الحادسة",
+          "remark": "Reported alternative p.194: sensory versus intuiting faculty; technically consequential."
+        },
+        {
+          "lemma": "النوع الإنساني",
+          "other": "نوع الإنسان",
+          "remark": "Alternative noted with the later expression جميع الكمالات الممكنة لنوع الإنساني."
+        },
+        {
+          "lemma": "لصحّ أن يقال ... لصحّ أن يقال",
+          "other": "editorial suggestion: delete repeated passage",
+          "remark": "Āshtiyānī's footnote (citing Mīrzā Hāshim) sees a scribal duplication; the transmitted wording is preserved pending witness collation."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/389?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/391?lang=ar"
+    },
+    {
+      "id": "QT-044",
+      "title": "Can the cosmos be the mirror without making divine perfection dependent on it?",
+      "pages": [
+        197,
+        198
+      ],
+      "arabic": "وحينئذ لو صحّ أن يجعل ذلك المظهر جميع أجزاء العالم الذي يكون من جملته الإنسان وأشخاصه، ثمّ إنّ إدراك ذاتها من حيث هي جامعة لجميع الكمالات على النسق المذكور لو لم يكن من الكمالات الحقيقيّة المؤثّرة المرغوب فيها المطلوب لذاتها، لم يصلح أن يكون علّة غائيّة لإيجاد العوالم على ما ذهبتم إليه، ولا ينبعث نحوه الإرادة المخصّصة والمحبّة الذاتيّة الإلهيّة. ولو وجب أن يكون من جملتها، لتوقّف الواجب لذاته في شيء من كمالاته الحقيقيّة على غيره الممكن بحسب ذاته الحادث من جهة نشأته، فلم يكن الواجب لذاته واجباً من جميع جهاته. فلئن قيل: إن توقّفه في ذلك على الكون الجامع لا يمكن أن يكون من حيث هو مغاير إيّاه، قلنا: إنّ توقّفه عليه من جهة اشتماله على جميع القوابل والمظاهر وانضمام بعضها إلى بعض وما يشبهه، ولا شكّ أنّ الكون الجامع من هذه الجهة مغاير له.",
+      "english": "If, then, that locus of manifestation were taken to be all the parts of the cosmos, including human beings and their individual members, we would face the following dilemma. Suppose that the reality's apprehension of itself as embracing all perfections in the manner described is not itself a real, efficacious perfection sought for its own sake. Then it could not be the final cause of the world's creation, as you maintain, nor could a particularizing divine will and essential love be directed toward it. But if such self-apprehension is necessarily one of those perfections, the Necessary Existent would depend, with respect to one of its real perfections, upon something other than itself—a being possible in itself and originated in its particular constitution. It would therefore no longer be necessary in every respect. If someone objects that the relevant dependence upon comprehensive being cannot be dependence upon it insofar as it is other than the Real, we reply that the dependence is upon it precisely because it encompasses all receptive subjects and loci of manifestation, their mutual conjunction, and similar relations. Considered in that way, comprehensive being is unquestionably distinct from the Real.",
+      "notes": [
+        "One quoted ancestral lemma begins at the end of p.197 and closes on p.198 before Ibn Turka's explicitly marked (1) أقول. This is NOT the grandson's long discussion of divine perfection in Persian on pp.199–201.",
+        "The key inherited philosophical principle is that the Necessary must be necessary min jamīʿ al-jihāt ('in all respects'). The dilemma confronts an Akbarian account of divine self-disclosure and perfection with Avicennian metaphysical independence.",
+        "The final فلئن قيل ... قلنا is *internal* to Abū Ḥāmid's original matn. It does not introduce an independent later gloss.",
+        "The variant فلئن قيل/فلئن قلتم changes the quoted interlocutor, not the conclusion. The printed variant انضمام بعضها إلى بعض / إلى البعض remains unresolved.",
+        "Because the grammatical antecedent of ذاتها refers to the divine reality, the English supplies 'the reality' explicitly without adding a separate noun to the Arabic."
+      ],
+      "variants": [
+        {
+          "lemma": "فلئن قيل",
+          "other": "فلئن قلتم",
+          "remark": "Printed alternative on p.198."
+        },
+        {
+          "lemma": "إلى بعض",
+          "other": "إلى البعض",
+          "remark": "Reported difference in the phrase انضمام بعضها إلى بعض."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/393?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/394?lang=ar"
+    },
+    {
+      "id": "QT-045",
+      "title": "Objection: detachment from bodily faculties versus the comprehensiveness of the Perfect Human",
+      "pages": [
+        202,
+        203
+      ],
+      "arabic": "ثمّ إنّهم قد اتّفقوا على أنّ وصول الإنسان إلى حدّ الكمال الحقيقي لا يمكن إلّا بانحلال العقد والتخلّص عن القيود وبحصول الانطلاق والوصول إلى حدّ الإطلاق، فيكون الكمال الحقيقي والإدراك الحقيقي العيني لا يحصل عندهم للسالكين ما لم يصلوا إلى مرتبة الإطلاق. فالإدراك والعلم الذي هو الكمال عندهم ما ينكشف لهم عند الوصول إلى هذه المرتبة وسقوط سائر القوى الجسمانيّة المدركة والمعيّنة على الإدراك عن التأثّر والفاعليّة، وتوجّه القوى القدسيّة والعاقلة بالكلّيّة نحو القدس وانخراطها في سلك الملإ الأعلى من الأرواح المجرّدة، وكونها بمعزل في تلك الحالة عن استعمال تلك القوى الجسمانيّة. وحينئذ فلا اعتبار عندهم بمثل هذه الإدراكات الحسّيّة والخياليّة والوهميّة والفكريّة، بل هذه الإدراكات عندهم مانعة لحصول ما هو الكمال الحقيقي عندهم، لاتّفاقهم على أنّ حصوله لا يمكن إلّا بقهر القوى الطبيعيّة وتقوية القوى القدسيّة وتبديل الأخلاق السيّئة بالحسنة وملازمة الأفعال الجميلة. وحينئذ كان الإنسان الكامل هو المشارك للعقول المجرّدة والأرواح الكاملة. فلا يمكن أن يقال إنّه هو الكون الجامع، إذ لا يوجد فيه ما هو مثل العفاريت والمردة، ولا ما يماثل السباع والوحوش والبهائم والحشرات المؤذية. ومن البيّن أنّه لا يوجد فيه ما يماثل الأفلاك والكواكب غير القابلة للخرق والالتيام المتحرّكة على سبيل الاستمرار والدوام، مع عدم عروض الانقطاع.",
+      "english": "Furthermore, they have agreed that a human being cannot attain true perfection except by untying the knots, casting off restrictions, becoming released, and reaching the level of unrestrictedness. On their view, neither true perfection nor an objective apprehension of reality is attained by travellers of the path until they reach that level. The apprehension and knowledge they call perfection is what becomes disclosed when they arrive there: the bodily faculties responsible for cognition and assisting it cease to act or be affected; the holy and intellective faculties turn wholly toward holiness and enter the company of the higher assembly of separate spirits; and the traveller ceases, in that state, to employ the bodily faculties. Accordingly, sensory, imaginative, estimative, and discursive cognition carry no weight for them; indeed, they regard these as impediments to true perfection. For they hold that perfection requires subduing the natural faculties, strengthening the holy faculties, exchanging bad dispositions for good, and consistently undertaking noble actions. On this account, the Perfect Human becomes one who shares in the qualities of separate intellects and perfected spirits. But then one cannot call such a human the comprehensive cosmos: there are no counterparts within this human of powerful rebellious spirits, predatory or wild animals, beasts, or harmful insects. Equally, nothing within the human corresponds to the celestial spheres and stars which, on the inherited cosmological account, do not admit rupture or rejoining and move continually without interruption.",
+      "notes": [
+        "The whole passage starts with the grandfather's قال near the end of p.202 and ends before the grandson's (1) أقول at the start of p.203. The heading في بيان أن الإنسان لا يصل ... is a modern editorial heading, not the original matn.",
+        "This is a dialectical *objection to an interpretation of spiritual perfection*, framed as the positions 'they' supposedly accept. It must not be mistaken for the ancestor's own final rejection of spiritual discipline or for neutral evidence that all Sufis agreed on these premises.",
+        "انحلال العقد / التخلّص عن القيود / الإطلاق are notions of release from determinations. The challenged theory treats embodied sensory cognition as an obstacle; the grandfather then presses whether such a disembodied knower can really mirror the full differentiated cosmos.",
+        "The critic's use of al-aflāk as non-rupturing and perpetual belongs to medieval celestial physics, not to an empirical account endorsed by the modern editor.",
+        "Printed alternatives include تقوية/تقوى and القوى/للقوى; the apparent double meaning of معيّنة (helping a faculty) versus مُعيَّنة (specifying a faculty) cannot yet be settled by the unvowelled source."
+      ],
+      "variants": [
+        {
+          "lemma": "تقوية القوى القدسيّة",
+          "other": "وتقوى القوى / وتقوى للقوى",
+          "remark": "Printed alternatives in p.202; prefer coherent base 'strengthening holy faculties' until independent witness checking."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/398?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/399?lang=ar"
+    },
+    {
+      "id": "QT-046",
+      "title": "Objection: if perfection transcends intellect and expression, how can it be attained?",
+      "pages": [
+        206,
+        207
+      ],
+      "arabic": "ثمّ إنّ من البيّن أنّ الكمال الذي يقولون به كالأمر الممتنع، لأنّه لو وصل إليه السالك وأدركه، لما أمكنه أن يعقله بالقوّة العاقلة، لاتّفاقهم على أنّ العقل يستحيل أن يدركه لكونه من الأطوار التي فوق العقل، فامتنع أن يصل إليه القوّة العاقلة، فامتنع أن يتعلّق به شيء من القوى الجسمانيّة المدركة بالحفظ والإحساس والتخيّل والمحاكاة، وهذا بيّن لا يحتاج إلى بيان زائد، فامتنع أن يعبّر عنه بشيء من العبارات. على أنّ تجرّد القوّة الناطقة القدسيّة عن القيود الطبيعيّة لا يتحقّق إلّا بالموت، ولا يتحقّق بالإعراض عنها بعدم التفاتها إليها وإلى مقتضياتها وأفعالها وغايتها، وبيّن أنّ انحصار النظر في الأمر المطلق ودوام الملاحظة له لا يوجب رفعها وصيرورتها في حكم العدم. ثمّ إنّ الروح الناطقة لا تتجرّد بالموت عن كثير من القيود التي هي من لوازمها وكالأجزاء بالنسبة إليها.",
+      "english": "It is also evident, the objection continues, that the perfection of which they speak appears to be something impossible. For were a traveller to attain and apprehend it, the traveller could not grasp it through the intellectual faculty: they themselves agree that the intellect cannot apprehend it, since it belongs to a mode beyond intellect. Consequently the intellect cannot reach it, and neither could any bodily faculty involved in retention, sensation, imagination, or representation take it as an object. This is clear without further elaboration; accordingly it could not be expressed in words. Furthermore, the complete release of the holy rational faculty from its natural restrictions is realized only at death, not by merely turning away from those restrictions and withholding attention from them and from their demands, activities, and ends. Concentrating thought upon what is absolute, even continually, does not thereby remove the natural restrictions or reduce them to nonexistence. Nor, even at death, does the rational spirit shed many restrictions that are necessary concomitants of it and stand to it as though they were its parts.",
+      "notes": [
+        "The ancestor's قال begins in the closing line of p.206 and ends at p.207 before the descendant's marked (1) أقول. The grandson's lengthy ensuing logical analysis is *not* part of this lemma.",
+        "The argument is a **reported critical position**: from beyond-intellectual knowledge, the objector infers inexpressibility and then unavailability. This is not an editorial endorsement of the inference; in particular, inexpressibility does not in itself logically entail impossibility.",
+        "The inherited distinction between the intellect and the faculties of memory, sense, imagination and representation is Avicennian in register, but the target is the gnoseological use made of 'beyond intellect'.",
+        "The source reads the grammatically awkward فامتنع أن يصل إليه القوّة العاقلة; this is retained pending collation. The printed variation وبيّن / فإن affects the premise linking meditation and release from natural dispositions.",
+        "Natural restrictions are treated as deeply rooted *malakāt* or necessary features of faculties, and not automatically abolished by turning attention elsewhere. The grandson elaborates an alternative account of perfection after أقول."
+      ],
+      "variants": [
+        {
+          "lemma": "وبيّن",
+          "other": "فإن",
+          "remark": "Printed alternative before the claim about continual consideration of the Absolute."
+        },
+        {
+          "lemma": "غايتها",
+          "other": "غاياتها [unwitnessed editorial normalization]",
+          "remark": "Singular as transmitted after plural pronouns; do not silently assume the corrected plural is an actual variant."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/402?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/403?lang=ar"
     }
   ]
 };
