@@ -37,7 +37,7 @@ https://download.almohsinlibrary.com/OBooks/OB1677.pdf
 **Do not confuse this text with** Abū al-Muʿīn al-Nasafī's separate *al-Tamhīd li-Qawāʿid al-Tawḥīd*, a Māturīdī kalām book, or its later commentaries. Similar titles are not sufficient evidence of identical authorship.
 
 ## Variant policy and first-pass register
-Textual variants reported by the printed edition (علامة خ) are logged in the reader. Six substantial loci currently include:
+Textual variants reported by the printed edition (علامة خ) are logged in the reader. Seven variant pairs currently appear in the following loci:
 - p. 49: احتراق / احتراف
 - p. 53: حقّية / حقيقة; من الحدس / بالحدس
 - p. 54: وأردنا / ورأينا; المناظرين / الناظرين; نشدّ / تشتدّ; والبقاء / [digital variant uncertain]
