@@ -57,7 +57,7 @@ async function check(kind, viewport) {
     assert(await page.locator('.witness-variant').count() > 0, 'L13 independent printed readings panel missing');
     assert((await page.locator('.witness-variant').first().textContent()).includes('Cairo 1912'), 'variant labels missing');
     await page.goto(new URL(route + '#page=12', base).href, { waitUntil: 'networkidle' });
-    const l12 = await page.locator('#passages').textContent();
+    const l12 = await page.locator('#u-L-12 .arabic').textContent();
     assert(l12.includes('وكل منها عنادية'), 'L12 shorter Cairo classification must be visible');
     assert(!l12.includes('وكل منهما عنادية'), 'commentary-print L12 text must not silently replace Cairo main reading');
     assert(await page.locator('.witness-variant').count() > 0, 'L12 distinct printed reading panel missing');
