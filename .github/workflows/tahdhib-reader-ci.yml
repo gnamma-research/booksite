@@ -13,6 +13,7 @@ on:
       - "tools/tahdhib/verify_fourth_figure_special_46_mix_types.py"
       - "tools/tahdhib/verify_fourth_figure_modes6_7_temporal_shadow.py"
       - "tools/tahdhib/verify_modal_type_crosswalk.py"
+      - "tools/tahdhib/verify_modal_distinctions_stage100.py"
       - "texts/al-taftazani/tahdhib-al-kalam/edition/**"
       - "texts/al-taftazani/tahdhib-al-mantiq/edition/**"
 permissions:
@@ -35,6 +36,7 @@ jobs:
           python tools/tahdhib/verify_fourth_figure_special_46_mix_types.py
           python tools/tahdhib/verify_fourth_figure_modes6_7_temporal_shadow.py
           python tools/tahdhib/verify_modal_type_crosswalk.py
+          python tools/tahdhib/verify_modal_distinctions_stage100.py
           python - <<'PY'
           import json, pathlib
           base=pathlib.Path('texts/al-taftazani')
@@ -68,6 +70,8 @@ jobs:
           assert 'أو بحكمة البعثة' in ktext['KAL-100.07']
           assert 'لا كصلاة اليهود أو خاضعون' in ktext['KAL-124.06']
           assert '[موضع يحتاج مقابلة' not in ktext['KAL-124.06']
+          assert any('Stage100' in (n.get('text','')) for u in logic['units'] if u['id']=='L.16' for n in u.get('notes',[]))
+          assert kalam['pending_pages']==[77]
           assert len(logic['stage78_source_concordance']['unit_printed_pages'])==19
           assert len(logic.get('witness_comparisons_stage77',[]))>=10
           assert 'والنظريات' in text['L.18']
@@ -122,6 +126,7 @@ jobs:
             tools/tahdhib/verified_fourth_figure_special_46_mix_types.json
             tools/tahdhib/verified_fourth_figure_modes6_7_temporal_shadow.json
             tools/tahdhib/verified_modal_type_crosswalk.json
+            tools/tahdhib/verified_modal_distinctions_stage100.json
 
   reader-chromium:
     runs-on: ubuntu-latest
