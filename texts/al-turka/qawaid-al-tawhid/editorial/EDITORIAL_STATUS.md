@@ -7,8 +7,8 @@
 3. **Then, and only then, separately edit/translate the sharḥ:** the descendant's *a-qūlu* explanations must occupy a different text/witness layer and must not enter the ancestor's English prose.
 
 ## Current work completed
-- **24** authorial quotation lemmata, QT-001–QT-024, reproduced in normalized but source-located Arabic and independently translated into scholarly English (not manuscript-collated).
-- Printed locus mapping: **Āshtiyānī's Arabic pp. 48–109**, with separate source-page links for every quotation; the many pages of the descendant's commentary are not falsely represented as translated matn.
+- **28** authorial quotation lemmata, QT-001–QT-028, reproduced in normalized but source-located Arabic and independently translated into scholarly English (not manuscript-collated).
+- Printed locus mapping: **Āshtiyānī's Arabic pp. 48–121**, with separate source-page links for every quotation; the many pages of the descendant's commentary are not falsely represented as translated matn.
 - Exclusion of the descendant's own extensive introduction (beginning at printed p. 3) and commentary from the matn layer.
 - First-pass register of seven reported printed variants in the first six ancestral quotations; none yet independently assigned to manuscript witnesses, without attributing readings to uninspected manuscripts.
 - Translator notes informed by the sharḥ, particularly his identification of Peripatetics and mutakallimūn (p. 49), and his gloss on *ḥads* (p. 54).
@@ -43,6 +43,17 @@ Twelve more **ancestor's quoted lemmata** have been translated **QT-013–QT-024
 
 **Independent critical correction:** Āshtiyānī's later note at Arabic printed p. 86 expressly says the author and commentator treat *tashkīk ʿāmmī* while leaving *tashkīk khāṣṣī* undeveloped. This is *his* interpretation, not a statement of the ancestral matn. The new translation does not silently assimilate the argument to later Ṣadrian *tashkīk*.
 
+## Stage 04: positive Akbarian metaphysics, the unity of Being and names (pp. 111–121)
+
+After the rigorous anti-*tashkīk* dialectic, the author proceeds to state the positive position. Four more authorial **قال** passages have been extracted and translated:
+
+- **QT-025, pp. 111–112:** *Tanbīh* against describing the First Principle as a particular species-like objective entity standing in estrangement from its effects, while also being included under universal being. **Textual crux:** the printed wording **تكون طبيعته عن تلك الأكوان** appears suspect; grandson paraphrases **عين طبيعتها** on p. 114, but the Arabic remains unemended pending collation.
+- **QT-026, p. 114:** the priority of unrestricted objective existence over determinate things qua determinate, which are analyzed through intelligible notions and conceptual relations.
+- **QT-027, p. 118:** the one Real identified with unrestricted existence, and the inapplicability of names and predicates **without taking determinations into consideration**. Printed variants for **عرفت/عرّف** and **التحقيق/التحقق** retained.
+- **QT-028, p. 121:** the self-presence of the Absolute Essence and the first relation of knowledge, followed conceptually by necessity, causal necessitation, and effusion; the grandson explains the deliberately philosophical term **حصول** at p. 128.
+
+These passages are **not** the grandson's long construction of the first determination, Muḥammadan Reality, and divine names found in his own commentary at pp. 122–128. The 28 currently selected lemmata are complete as an aligned bilingual working set but the ancestor's **whole treatise remains incomplete**. No additional printed photographic or manuscript witnesses have yet been verified.
+
 ## What this edition is NOT
 - NOT the entire original treatise.
 - NOT a manuscript-collated, stemmatically established, fully critical edition.
@@ -76,4 +87,4 @@ Preserve *wujūd* (existence), *wujūdāt khāṣṣa* (particular existences), 
 
 **English translation comparator:** Joseph E. B. Lumbard, “Establishing the Principles,” *An Anthology of Philosophy in Persia*, vol. IV, pp. 464–479. A clause-by-clause [Lumbard comparison and attribution audit](LUMBARD_COMPARISON.md) now tracks his technical choices, identifies his editorial-heading note, and distinguishes quotations from the ancestor's *other* works from the original *Qawāʿid* matn. The new English translation is independently authored, not reproduced from Lumbard.
 
-_Gnamma Research · editorial status v0.3 · 2 November 2026_
+_Gnamma Research · editorial status v0.4 · 2 November 2026_
