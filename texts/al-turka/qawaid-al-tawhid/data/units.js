@@ -1,5 +1,5 @@
 /* Gnamma Research | Qawāʿid al-Tawḥīd | ancestor's MATN ONLY
-   Six translated lemmata; digitized Āshtiyānī 1982 pp.48–60.
+   Twelve translated lemmata; digitized Āshtiyānī 1982 pp.48–74.
    Not a complete translation and not a manuscript-critical edition.
    Commentary informs notes ONLY, and is never spliced into the matn.
 */
@@ -216,6 +216,23 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/268?lang=ar"
+    },
+    {
+      "id": "QT-012",
+      "title": "Intrinsic determination and the impossibility of multiple instances",
+      "pages": [
+        74
+      ],
+      "arabic": "وإن لم يمكن أن تكون ذات أفراد ذهنية أو عقلية، إمّا لأن تعيّنها نفس حقيقتها في الخارج، أو لأنها اقتضت تعيّنها لذاتها، فامتنعت الأفراد الباقية الموجودة لذاتها أيضاً، أو لأن تلك الطبيعة المتعيّنة بالذات لما استحال أن تكون معقولة لشيء من العقول، فاستحال أن تكون ذات أفراد كثيرة، أو لأن تلك الطبيعة لما امتنع اقترانها بالغير واقتران الغير بها، فاستحال أن تكون ذات أفراد عقلية أو ذهنية.",
+      "english": "If, however, it cannot have individual instances in the mind or in intellection, this is either because its determination is identical with its reality in external existence; or because it entails its own determination in virtue of itself, so that the remaining purported existing instances are impossible in themselves as well; or because a nature determined in itself cannot become an intelligible object for any intellect, and so cannot possess a plurality of instances; or because such a nature cannot be joined to anything else, nor anything else to it, and so cannot have intellectual or mental instances.",
+      "notes": [
+        "The sharḥ expressly identifies this as the alternative that Ibn Turka regards as correct; the four 'either/or' explanations remain distinct in the matn.",
+        "Do not conflate taʿayyun (determination/individuation), tashakhkhuṣ (individuation), and the limitation of a universal by accidents. The text explores whether a necessary nature can be intrinsically determinate without being an instantiable universal.",
+        "Potential textual issue in the digital transcription: فامتنعت الأفراد الباقية الموجودة لذاتها أيضا. This can sound contradictory ('other existing individuals' that are impossible). The translation makes the dialectical supposition explicit but a manuscript check is required before changing the Arabic.",
+        "The commentator's footnote concluding that denial of instances implies unity of existence is not part of the ancestor's quoted wording."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/270?lang=ar"
     }
   ]
 };
