@@ -34,24 +34,24 @@
     {
       "name": "tahdhib-logic-parallel.pdf",
       "purpose": "bilingual",
-      "sha256": "1a37441549ac0f1b159845a7134f2b58d553a0d385b015678902b8dc5a16b5b7",
-      "bytes": 100543,
+      "sha256": "cb818a89210414effe7d20a9afd56015260ab7990194e6d8ed6523187a8c68ac",
+      "bytes": 100542,
       "a4_pages": 21,
       "href": "pdfs/tahdhib-logic-parallel.pdf"
     },
     {
       "name": "tahdhib-logic-ar-only.pdf",
       "purpose": "arabic",
-      "sha256": "dce676f981164c3b0ebbc50a26d7c21ac674ac25c32d8c2abc820c9ed4dbe17e",
-      "bytes": 69708,
+      "sha256": "ae00cffe62855de8ba2aa09336a0a215fed799636885a27397285f9c79bf1290",
+      "bytes": 69710,
       "a4_pages": 11,
       "href": "pdfs/tahdhib-logic-ar-only.pdf"
     },
     {
       "name": "tahdhib-logic-en-only.pdf",
       "purpose": "english",
-      "sha256": "1ac83433925c663ba05ff2e494dc2bd99f18319dc4feca085d6b7fcedd2a2a8f",
-      "bytes": 46823,
+      "sha256": "a14c545f00a79257b137fa860921ad7c8e036e0ae1dd7da9710aa5f33eaa2607",
+      "bytes": 46821,
       "a4_pages": 11,
       "href": "pdfs/tahdhib-logic-en-only.pdf"
     }
