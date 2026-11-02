@@ -30,6 +30,29 @@ This register distinguishes **text consulted**, **printed comparators not collat
 
 These are **unphotographed digital printed-text transcriptions**, not newly collated independent witnesses. Original quotation boundaries are verified by **قال** and subsequent **أقول** in each passage; p. 63 quotation ends on p. 64. Later material is not part of Lumbard's English selection.
 
+## Stage 03: additional primary printed-text pages now consulted
+
+These are digital transcriptions of **Āshtiyānī's** printed pages, **not** independent manuscript readings:
+
+- QT-013, p. **78**, https://ablibrary.net/book_content/b/17638/274?lang=ar
+- QT-014, p. **81**, https://ablibrary.net/book_content/b/17638/277?lang=ar
+- QT-015, pp. **82–83**, https://ablibrary.net/book_content/b/17638/278?lang=ar and https://ablibrary.net/book_content/b/17638/279?lang=ar
+- QT-016, p. **87**, https://ablibrary.net/book_content/b/17638/283?lang=ar
+- QT-017, pp. **89–90**, https://ablibrary.net/book_content/b/17638/285?lang=ar and https://ablibrary.net/book_content/b/17638/286?lang=ar
+- QT-018, p. **93**, https://ablibrary.net/book_content/b/17638/289?lang=ar
+- QT-019, p. **94**, https://ablibrary.net/book_content/b/17638/290?lang=ar
+- QT-020, p. **95**, https://ablibrary.net/book_content/b/17638/291?lang=ar
+- QT-021, p. **98**, https://ablibrary.net/book_content/b/17638/294?lang=ar
+- QT-022, pp. **100–101**, https://ablibrary.net/book_content/b/17638/296?lang=ar and https://ablibrary.net/book_content/b/17638/297?lang=ar
+- QT-023, p. **106**, https://ablibrary.net/book_content/b/17638/302?lang=ar
+- QT-024, p. **109**, https://ablibrary.net/book_content/b/17638/305?lang=ar
+
+All source pages have explicit **قال** boundaries followed by the descendant's **أقول**. The same source's commentary appears between the lemma-loci and is not part of the translated ancestor's original.
+
+**Notable reading controls:** QT-013 **فيه/فيها**; QT-016 **الحقيقة/حقيقته**; QT-017 anomalous masculine agreement **يمتاز/يفيد** retained; QT-018 **معقولة/معقولية**; QT-020 **به عين/لعين** and unresolved grammar; QT-024 **بالفرض/بالعرض**. These are reported readings in a single digital edition, **not yet** manuscript-identified variants. Arabic orthography and punctuation were lightly normalized and require print-image verification.
+
+**Editorial criticism to preserve:** At p. 86 the modern editor Āshtiyānī writes in Persian that the author and commentator understand an ordinary/general concept of gradation but leave *specific* gradation unexplored. His assertion belongs to **editorial reception**, not to Abū Ḥāmid's text.
+
 ## Independent manuscript leads — NOT yet collated
 - **M1 — Mashhad, Farhang va Honar, MS alif-28:** catalogue reports a copy dated 851 AH, scribe Aḥmad ibn ʿAlī al-Bayhaqī al-Sabzawārī.
 - **M2 — Mashhad, Āstān-i Quds Riḍawī, MS 812:** catalogue reports 18 folios, dated 1067 AH.
