@@ -401,3 +401,56 @@ Do not claim that 41.14% of the two-volume work is translated; it means only tha
 Next interval: **printed I:261–280 / original facsimile physical PDF images 274–293**, which completes **volume I**. Thereafter PDF images **294–295** carry index material and **volume II printed p.1 is physical PDF image 296**. Retain the precise page-map change across the transition, and do not apply the +13 offset to volume II.
 
 Repeat the same *rapid argument-based source survey* across the unexamined source, but keep its status lower than a full translation. Later complete the whole main commentary and marginal ḥāshiya in a **literal Pass 1**, perform independent source-by-source sentence verification (Pass 2), variant collation and author-identity checks (Pass 3), philosophical/terminological review (Pass 4), and bilingual NAMA/PDF publication QA (Pass 5). No integration into the separately translated al-Taftāzānī *Tahdhīb* matn until both independent streams are truly critically definitive.
+
+
+---
+
+## 18. Stage 10 — volume I concluded; volume II substantive start, II:2–20 (2 November 2026)
+
+### A. Scope and source control
+
+Source is the **same 632-image scanned combined *Taqrīb al-Marām* / *Ḥāshiyat al-Muḥākamāt*** supplied by the user and previously used throughout. Each photographed page has been visually inspected for this stage; ordinary PDF extraction returns no selectable Arabic. **Nothing already translated on I:8–260 or II:117 has been retranslated.** Changes are limited to the Sanandajī/Wasīm standalone NAMA reader directory; the independently translated al-Taftāzānī *Tahdhīb* matn remains untouched.
+
+- **Volume I printed I:261–280 = PDF physical 274–293:** 20 new preliminary English argument accounts, 16 direct short Arabic–English excerpts from selected upper text, and **one short lower-register annotation** with author **UNASSIGNED**.
+- **PDF 294–295:** two original volume-I index pages. These are not new translation pages.
+- **Volume II's initial leaf, II:1 / PDF 296:** a part-title and introductory provenance/attribution notice. **Not counted as a translated running-commentary paragraph**; it remains mapped as title/paratext.
+- **Volume II, first substantive II:2–10 = PDF 297–305:** nine new preliminary page accounts and eight selected direct upper Arabic–English excerpts.
+- **Volume II II:11–20 = PDF 306–315:** ten further preliminary page accounts, three selected direct Arabic–English excerpts.
+- All PDFs use original facsimile images, not substituted OCR; a source packet `Taqrib_Stage10_I261-I280_and_II1-II20_Original_Facsimile.pdf` (42 contiguous image pages 274–315) is created as an external download.
+
+### B. Argumentative landmarks and critical divisions
+
+**Volume I, motion (I:261–274):** distinction between growth/withering, rarefaction/condensation, and sensory alteration; intrinsic versus accidental motion, natural/violent/voluntary motion; numerical, specific and generic identity of a movement; whether ascending and descending are opposed motions; division by time, fast/slow comparisons, and whether a moment of rest intervenes when a body reverses direction. I:274 tests two movements in one moving body, especially a person or object aboard a moving vessel.
+
+**Volume I, relation and other accidents (I:275–280):** **فصل في الإضافة** begins I:275. It discusses reciprocal reference, fatherhood/sonship, greater/lesser, categories of relatives, relation's extramental or intellectual status and its grounding in actual subjects. By I:279 the text turns to **الوضع** (posture) and, at I:280, **الملك** (having/possession), **أن يفعل** (acting) and **أن ينفعل** (being acted upon). This is the close of the previous division on accidents.
+
+**Volume II, beginning of substances:** the major boundary **الباب الرابع في الجواهر** occurs on **II:2 / PDF 297**, not on the preceding title leaf. Theologians' **divisible body versus indivisible atom** is compared with philosophers' **body as substance capable of three mutually perpendicular dimensions**, and with the concepts of natural and mathematical body. II:6–17 treats actual versus possible divisions, contact and separation, atomist versus hylomorphic interpretations, and arguments based on geometry and motion. **II:18** opens **فصل في أحكام الجزء**, discussing whether an indivisible constituent can receive life and its accompanying qualities; II:19–20 tests arguments from a part lying across a contact joint.
+
+### C. Files committed and what they actually contain
+
+- `firstpass-I261-I280.js`, `firstpass-II002-II010.js`, `firstpass-II011-II020.js`: **39 image-checked substantive page-level interpretive FIRST-READING guides**, not continuous source English and not full Arabic transcripts.
+- `source-selected-I261-I280.js`, `source-selected-II002-II010.js`, `source-selected-II011-II020.js`: **27 selected direct short Arabic–English excerpts** (16 + 8 + 3). These are *fragments only*.
+- `editorial/2026-11-02_STAGE10_I261-I280_II002-II010_SOURCE_AND_TRANSLATION.md` and `editorial/2026-11-02_STAGE10B_II011-II020_SOURCE_AND_TRANSLATION.md`: synchronized English page guides, direct quotations and notes; each prints the individual source page and critical caveat.
+- `editorial/2026-11-02_STAGE10_PAGE_AND_AUTHOR_LAYER_LEDGER.csv`: 40 rows for 20 I pages, one II title leaf, and 19 II substantive pages, with separate status for upper direct quotations, lower author-attribution and complete translation.
+- `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv` updated on exactly these **40 printed page positions**. Every other source row has been retained.
+- NAMA `index.html`, `reader-layered.js` and `source-atlas.js` load the new work, preserve Arabic/English/both and distinct lemmata/sharḥ/Wasīm/unassigned-margin filters, and display updated source-page percentages.
+
+### D. Honest cumulative completion — supersedes Stage 09B figures
+
+| Measure | Stage 10 |
+| --- | --- |
+| All printed page positions in the two-volume crosswalk | **615/615 = 100% indexed**; this includes the II:1 title/notice position |
+| Volume I containing at least some provisional English | I:8–280 = **273 positions**; I:222 is a marginal-only page |
+| Volume II substantive pages containing some provisional English | II:2–20 = **19 pages** |
+| Total page positions with *some preliminary English* | **292/615 = 47.48% page presence only**, NOT 47.48% of Arabic translated |
+| New source-inspected substantive pages in Stage 10 | **39** (20 + 19); plus inspected II:1 title page and two index leaves |
+| New short directly translated upper-register source excerpts | **27** selected passages |
+| New identified direct lower-register excerpts | **one**, with authorship **UNASSIGNED** |
+| New positively attributed Wasīm ḥāshiya excerpts | **none**; previously identified II:117 remains separate |
+| Pages fully transcribed, translated in both registers and independently certified | **0/615 = 0%** |
+
+**Do not call the 47.48% figure a translation-completion percentage.** Some English appears on many source pages but may cover a tiny fraction of their words, especially large marginal discussions. The actual denominator of **Wasīm's distinct note-units** is not yet known; no valid Wasīm percentage can be supplied.
+
+### E. Next action and source-sensitive priorities
+
+Next unprocessed source-first interval **II:21–40, PDF physical images 316–335**. The following correction and critical translation pass should prioritize **I:275–280 on relation**, **II:2–20 on substantial body and the indivisible atom**, and **all Wasīm/intervening marginal notes** before calling a page complete. For every page, retain photographed text, separate lemma IDs, commentator's running clauses, marginal-note incipits and exact attributed author; translate ALL clauses, not only selected snippets; check negatives, disputant voice and logical particles. Then conduct independent visual proof, witness collation, argumentative review, and PDF/website parity QA. The eventual three-author-layer merger with the independent *Tahdhīb* is still forbidden until both editions are critically definitive.
