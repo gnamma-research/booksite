@@ -31,7 +31,7 @@ jobs:
           assert len(logic['units'])==19 and len(kalam['units'])==1044
           assert len({u['id'] for u in kalam['units']})==1044
           assert len({u['page'] for u in kalam['units']})==113
-          assert len(logic['open_issues'])>=6 and len(kalam['open_issues'])==5
+          assert len(logic['open_issues'])>=6 and len(kalam['open_issues'])==4
           text={u['id']:u['ar'] for u in logic['units']}
           assert 'الوقتيتان المطلقتان' in text['L.11']
           assert 'وإلا لزم سلب الشيء عن نفسه' in text['L.14']
@@ -39,6 +39,11 @@ jobs:
           assert 'مع الموجبة الكلية الموجبتين' not in text['L.16']
           assert 'التناقض اختلاف قضيتين' in text['L.13']
           assert 'في الكيف والكم والجهة' in text['L.13']
+          assert kalam['pending_pages']==[77,80,100,124]
+          ktext={u['id']:u['ar'] for u in kalam['units']}
+          assert 'مقدار طبيعة غير قارة' in ktext['KAL-039.03']
+          assert 'ولامتناع فنائه لما مر' in ktext['KAL-039.04']
+          assert 'مقدار أسرعها' in ktext['KAL-039.05']
           assert len(logic['stage78_source_concordance']['unit_printed_pages'])==19
           assert len(logic.get('witness_comparisons_stage77',[]))>=7
           assert 'والنظريات' in text['L.18']
