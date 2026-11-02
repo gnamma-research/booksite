@@ -182,3 +182,23 @@ No printed-page photography or independent manuscript collation has been carried
 **Book-ending distinction:** the ancestor's original Qawāʿid concludes at printed p.270 with its own formal closing words, immediately preceding the grandson's independent (1) أقول. The latter continues through p.274; the grandson's closing and modern colophon are not ancestral Qawāʿid.
 
 These were read in a single electronic text transcription of Āshtiyānī. No complete photographic reading, independent manuscript collation, or proof that surviving *Tamhīd* quotations capture all words of a separate ancestral matn manuscript is asserted.
+
+
+## Bibliographical cross-check of printed comparators (3 November 2026)
+
+This section records **publication verification, not textual collation**. Numbers of printed pages and surviving manuscript readings must not be conflated.
+
+| Proposed siglum | Bibliographical record cross-checked | Check actually made | Access/philological status |
+|---|---|---|---|
+| **T₁** | 1315 AH/1898 Tehran lithograph, 234 pp., Ṣāʾin al-Dīn Turka, *Hādhā huwa al-sharḥ ʿalā Qawāʿid al-Tawḥīd al-musammā bi-Tamhīd al-Qawāʿid*, copied by ʿAlī Akbar al-Ṭālaqānī; [CDSIA](https://kias.sakura.ne.jp/ibnarabi/index.php/Sain_al-Din_Turka). | Bibliographical identification, collation **not** made. | The catalogue also lists supplementary works. The 234 pages are **not** a separate 234-page ancestor's *Qawāʿid*. |
+| **A₁** | Āshtiyānī first edition, Tehran 1976, Arabic section 274 pp., [CDSIA](https://kias.sakura.ne.jp/ibnarabi/index.php/Sain_al-Din_Turka). | Publication verified; page images **not** transcribed. | Do not count as independent codex without exemplar analysis. |
+| **A** | Āshtiyānī second edition 1982, Arabic section 274 pp.; [published electronic transcription](https://ablibrary.net/book_content/b/17638/244?lang=ar), [CDSIA](https://kias.sakura.ne.jp/ibnarabi/index.php/Sain_al-Din_Turka). | Previously used electronic reading text; Arabic images and printed variant sigla **not** independently checked here. | Present base. |
+| **A₂** | Later 2012 480-page printing by Bustān-i Kitāb / Qum of Āshtiyānī's edition, [CiNii record](https://ci.nii.ac.jp/ncid/BB21957813.amp). | Publication only. | May be a reprint, not an independent witness. |
+| **Ḥ** | Qum 1381 SH [2002/03], *al-Tamhīd fī Sharḥ Qawāʿid al-Tawḥīd*, edited/annotated by Ḥasan-zādeh Āmulī, [WorldCat](https://search.worldcat.org/title/64451311). | Bibliography only. | Separate editor; textual readings not yet compared. |
+| **R** | 2018 Beirut, *al-Tamhīd fī Sharḥ Qawāʿid al-Tawḥīd*, Ḥasan Ramaḍānī al-Khurāsānī, 676 pp., [publisher](https://darmaarefhekmiya.org/). | Earlier catalogue lead only. | Extent, page mapping and actual independence must be checked from a physical or scanned copy. |
+| **M₁–M₃** | Manuscripts reported at Mashhad, Farhang va Honar (alif-28) and Astan-i Quds (812; 822), listed in inherited register above. | No direct shelfmark or folio inspection in this stage. | **Not extant witnesses in our collation dataset until their photographs can be examined.** |
+
+**Lumbard's independent English selection** compares selected Arabic printed editions, but only opening original matn lemmata (approximately QT-001–006) are present there. It is an English interpretative comparator and cannot independently establish Arabic variants. Other books with the same or similar title, especially the kalām manual of Abū al-Muʿīn al-Nasafī or Shahīd al-Thānī's juristic *Tamhīd al-Qawāʿid*, are **not witnesses** to Turka's work.
+
+**Per-lemma analytical apparatus:** [CRITICAL_APPARATUS.md](CRITICAL_APPARATUS.md). All 69 provisional variant, conjecture and transmission problem records are tagged with their evidentiary type. The QT-059 substantial loss remains a **reported** loss pending manuscript verification. No stemma or restored missing text is claimed.
+
