@@ -1,11 +1,11 @@
 /* Gnamma Research | Qawāʿid al-Tawḥīd | ancestor's MATN ONLY
-   Fifty-two translated lemmata; digitized Āshtiyānī 1982 pp.48–237.
-   Not a complete translation and not a manuscript-critical edition.
-   Commentary informs notes ONLY, and is never spliced into the matn.
+   Fifty-seven provisional bilingual lemmata, print pp.48–258.
+   Partial reconstruction from digitized Āshtiyānī edition; no independent manuscript collation.
+   The grandson's أقول is never spliced into the ancestor's matn.
 */
 window.GNAMMA_QAWAID_MATN = {
   "edition": "Āshtiyānī 1982, digital page transcription",
-  "status": "52-source-located-original-matn-lemmas-digital-print-not-manuscript-collated",
+  "status": "57-source-located-ancestral-lemmas-digital-printed-text-not-manuscript-collated",
   "units": [
     {
       "id": "QT-001",
@@ -1204,6 +1204,160 @@ window.GNAMMA_QAWAID_MATN = {
         }
       ],
       "url": "https://ablibrary.net/book_content/b/17638/433?lang=ar"
+    },
+    {
+      "id": "QT-053",
+      "title": "The senses under the holy faculty: real comprehensiveness without suppressing the lower powers",
+      "pages": [
+        243,
+        244
+      ],
+      "arabic": "فلا يلزم أن تكون الإدراكات الحسّيّة والوهميّة والفكريّة غير معتبرة لو كان الكمال الحقيقي والإدراك اليقيني لا يحصل إلّا عند الوصول إلى مرتبة الإطلاق، فإنّ القوّة القدسيّة لو أخذت العلوم والمعارف عن مآخذها ومعادنها عند تجرّدها واستولت على هذه القوى المدركة بحيث لا تستقلّ بنفسها في شيء من حركاتها وأفعالها بدون استخدامها إيّاها وقهرها لتلك القوى على وجوب متابعتها ومبايعتها بالضرورة، لاعتُبر بالضرورة سائر إدراكاتها وتصرّفاتها، واستحال أن يكون شيء منها مانعاً لحصول ما هو الكمال الحقيقي عندهم، بل لا بدّ أن يكون معيّناً لحصول ما هو الكمال الحقيقي ورسوخه وسهولة الترقّي إلى أقصى مراتبه، فاعلم ذلك. وأمّا نظائر العفاريت والمردة فلا نسلّم أنّها غير موجودة فيه. نعم، القوى التي هي نظائرها لمّا تسخّرت وهربت [هُذّبت: قراءة بديلة] بالمجاهدات المعتبرة عند أصحاب الاستكمال في الأشخاص الكاملة، فقد صارت الأفعال المحمودة الصادرة عنها ملكيّة، فصارت ممنوعة عمّا يصحّ أن يصدر عنها حسب اقتضاء طبائعها أو مطاوعتها لبعض القوى الجسمانيّة كالقوّة الوهميّة وشبهها، من غير استخدام القوّة القدسيّة إيّاها. وهكذا الكلام بعينه في الأنواع المماثلة للوحوش والسباع والبهائم والحشرات المؤذية. وأمّا الطبائع التي هي نظائر الأفلاك والكواكب، فلا يجب اتّصافها بجميع الصفات التي تتّصف بها الأفلاك والكواكب، فإنّ ما يكون مثالاً للشيء المعيّن لا يجب اتّصافه بجميع ما يتّصف به ذلك الشيء بعينه. ولا نسلّم أنّه ليس هناك ما يتحرّك على سبيل الدوام والاستمرار، فإنّ الشرايين وشبهها كالرئة متحرّكة دائماً من غير ضعف ولا فتور.",
+      "english": "It does not follow that sensory, estimative, and discursive perceptions cease to count if true perfection and certain apprehension are attained only upon reaching the level of unrestrictedness. For when the holy faculty draws its knowledge and cognitions from their proper sources in its state of detachment, and comes to command the other cognitive faculties so thoroughly that none acts independently without being employed and made to obey it, then the perceptions and operations of those faculties are themselves to be taken into account. None need obstruct the perfection sought by the spiritual practitioners; instead they assist its acquisition, consolidation, and advancement to its highest degrees. Understand this. Nor do we concede that the counterparts of rebellious spirits and demons are absent from the perfected human. Rather, the faculties corresponding to them, having been brought under control and disciplined through the recognised exercises of perfection, perform praiseworthy acts of an angelic character. They are prevented from acting merely according to their own natural impulses or in obedience to lower bodily faculties, such as estimation, independently of the holy faculty. The same applies to the counterparts of wild beasts, predators, animals, and harmful insects. As for the natures corresponding to the celestial spheres and stars, a likeness need not share every property of its original. Nor is it true that nothing in the human being moves continuously: the arteries and organs such as the lungs are in continual motion without interruption or exhaustion [as the author's inherited physiology represents them].",
+      "notes": [
+        "The original starts with قال p.243 and closes on p.244 immediately before the descendant's (1) أقول. The preceding p.243 sentence defining unrestrictedness is the grandson's, not the quoted matn.",
+        "The argument replies directly to QT-045. The perfected human retains ordered lower faculties; comprehensive unity is hierarchical integration, not their annihilation.",
+        "The printed word هربت is difficult; a recorded alternative is هذّبت. This edition preserves the base and marks the variant. The printed 'لا اعتبر' is rendered conditionally as لاعتُبر; exact particles require page-image verification.",
+        "The author's description of the spheres and the body is historically situated cosmology/physiology and should not be treated as scientific evidence."
+      ],
+      "variants": [
+        {
+          "lemma": "هربت",
+          "other": "هُذّبت",
+          "remark": "Printed alternative for the transformation of the lower faculties."
+        },
+        {
+          "lemma": "يتحرّك",
+          "other": "يحرّك",
+          "remark": "Printed p.244 alternative; changes active vs transitive sense."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/439?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/440?lang=ar"
+    },
+    {
+      "id": "QT-054",
+      "title": "Knowledge beyond discursive thought need not be beyond intellect or expression",
+      "pages": [
+        248
+      ],
+      "arabic": "ولا نسلّم أنّ العقل لا يدرك كلّ ما يدرك في الطور الذي هو فوق العقل. نعم، إنّ من الأشياء الخفيّة ما لا يصل إليه العقل، ولا يدرك إلّا بقوّة أخرى هي أشرف منه، وأمّا الأشياء الباقية فكلّ ما يدرك بتلك القوّة يدرك أيضاً بالعقل. على أنّا نقول: إنّ كلّ ما يدرك معنى كلّيّاً أو حقيقة كلّيّة يصدق عليه حدّ العقل واسمه. نعم، إنّ العقل الذي يقولون به ويعبّرون عن العلوم المنسوبة إليه بالعلوم الرسميّة إنّما يريدون به القوّة الفكريّة التي تأخذ العلوم من مبادئها بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب، على أنّ الحافظة بتوسّط استخراج الأوساط وتأليفها مع حدّي المطلوب، على أنّ الحافظة والمتوهّمة والمتخيّلة قد لا تطيع العقل الفكري وتنقاد لتلك القوّة، بل تصير من جملة خدمها وآلاتها. فلا يمتنع أن يعبّر عمّا أدركته تلك القوّة بشيء من العبارات عنه.",
+      "english": "We do not concede that the intellect is incapable of apprehending everything apprehended in the mode said to lie above intellect. Certainly, some hidden matters cannot be reached by the intellect on its own, but are apprehended only through another faculty nobler than it. Yet other things apprehended by that higher faculty can also be apprehended by intellect. Indeed, whatever apprehends a universal meaning or universal reality falls under the definition and name of intellect. By 'intellect', however, when they speak of the sciences associated with it as formal sciences, they have in mind the discursive faculty that draws knowledge from its principles by finding middle terms and combining them with the two terms of the conclusion. [At this point the transmitted Arabic appears to repeat part of its previous clause.] Memory, estimation, and imagination need not obey the discursive intellect, yet they can submit to the nobler faculty and become its servants and instruments. Accordingly nothing prevents what that faculty apprehends from being expressed, in some measure, in words.",
+      "notes": [
+        "Single self-contained ancestor's قال at p.248, ending before (1) أقول. The grandson's succeeding expansion on p.248–249 is excluded.",
+        "The philosophically significant distinction is intellect in the broad sense versus discursive thought (fikr) in the narrow sense. 'Beyond discursive reason' need not mean utterly unintelligible or verbally incommunicable.",
+        "The base electronic transcription duplicates 'بتوسط استخراج الأوساط وتأليفها مع حدي المطلوب، على أن الحافظة' within the quote. The Arabic reading text retains this visible duplication; the English signals the defect rather than inventing a repaired continuous original.",
+        "Printed العقلي is grammatically awkward where العقل is expected; a correction cannot be represented as a manuscript reading."
+      ],
+      "variants": [
+        {
+          "lemma": "العقلي",
+          "other": "العقل [contextual conjecture]",
+          "remark": "Digital p.248 shows an intrusive final yāʾ."
+        },
+        {
+          "lemma": "بتوسّط استخراج الأوساط ... على أنّ الحافظة (repeated)",
+          "other": "possible dittography, not independently witnessed",
+          "remark": "The duplicated phrase is retained and marked; original boundaries cannot yet be reconstructed."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/444?lang=ar"
+    },
+    {
+      "id": "QT-055",
+      "title": "Sustained contemplation can alter acquired dispositions and subordinate the bodily faculties",
+      "pages": [
+        249,
+        250
+      ],
+      "arabic": "وبيّن أنّ دوام المراقبة والمواظبة على ما ذكرنا من الملاحظة مع ملازمة الآداب والشروط المعتبرة عند أرباب هذه الصناعة، وترك استعمال شيء من القوى الجسمانيّة في جذب الملاذّ الدنيويّة ودفع المكاره البدنيّة، ثمّ قهرها على المطاوعة والمتابعة وممانعة اقتضاء ما تقتضيه القيود المذكورة، إمّا بحسب ذاتها أو بوجوب مطاوعتها للهوى، والقوّة الوهميّة أو المتخيّلة البدنيّة إنّما يقهرها على المتابعة والمدافعة عن توجّهها بالكلّيّة نحو البدن وتقيّد انجذابها نحو المادّة والكدورات الماديّة. فإنّ الأسباب الفاعلة لا يبعد أن تصير معزولة عن بعض ضروب الفاعليّة، مقهورة على ضرب آخر يقابل الضرب الأوّل بأسباب أخر قويّة.",
+      "english": "It is clear that sustained watchfulness, continued attention of the kind described, observance of the recognised disciplines and conditions of this art, and the refusal to employ the bodily faculties merely to procure worldly pleasures or repel bodily discomforts, can bring those faculties into obedience. The practitioner resists the tendencies flowing from the restrictions just mentioned, whether these arise from the faculties' own nature or from their habitual submission to appetite. The bodily faculties of estimation and imagination, in particular, can be made to follow the higher faculty and prevented from turning wholly toward the body and becoming bound to matter and its obscuring conditions. For there is nothing improbable in an operative cause being prevented, by other and more powerful causes, from exercising one kind of activity and constrained instead to exercise an activity opposed to it.",
+      "notes": [
+        "Begins on p.249 and ends on p.250 before the descendant's (1) أقول. The text is one sentence whose subordination is grammatically unstable in the digital print; English clarifies agency but does not claim exact final syntax.",
+        "This replies to the fixed-disposition objection of QT-046 by positing stronger contrary causes, not the mere conceiving of abstraction. No implicit endorsement of extreme deprivation should be inferred.",
+        "Printed alternative بوجوب / بوجود مطاوعتها and تقيّد / يفيد انجذابها materially affect the construction; inspection of images is required."
+      ],
+      "variants": [
+        {
+          "lemma": "بوجوب مطاوعتها",
+          "other": "بوجود مطاوعتها",
+          "remark": "Printed p.250 alternative."
+        },
+        {
+          "lemma": "تقيّد انجذابها",
+          "other": "ويفيد انجذابها",
+          "remark": "Printed p.250 alternative with awkward source grammar."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/445?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/446?lang=ar"
+    },
+    {
+      "id": "QT-056",
+      "title": "Against confusing reason with delusion: disciplined ascetic practice, temperamental balance, and moral purification",
+      "pages": [
+        252,
+        253,
+        254,
+        255
+      ],
+      "arabic": "ومن جعل المعارف العقليّة والعلوم اليقينيّة المستندة إلى البراهين القطعيّة، الحاصلة للإنسان المعتدل المزاج الذي لم تستول عليه الرذائل الطبيعيّة البدنيّة، من الخيالات الفاسدة والحجب المانعة للكمالات الحقيقيّة، لا نفسها ولا من الأسباب المعدّة بالنسبة إلى ما هو من الكمالات الحقيقيّة عنده، فمن الأولى، الأحقّ، الأخلق، أن تعدّه من زمرة المجانين وأصحاب الماليخولياء ومنكري العلوم الضروريّة. وأمّا تكرار بعض الألفاظ المعيّنة حال المراقبة فإنّما يكون سبباً لاستمرار ما ذكرنا من الملاحظة، وأمّا قوّة الصوت ومجاهرته فغير معتبرة عند أرباب الصناعة. وأمّا التخلّي عن الخلق وملازمة المواضع الخالية فإنّه أمر ضروريّ، لا يتصوّر بدونه تفريغ القلب عن الوساوس والشواغل المانعة، والتبرّي من العلائق المظلمة، والإقبال بكنه الهمّة على الله بالكلّيّة، كما لا يتصوّر بدونه استنباط العلوم الفكريّة اليقينيّة والمطالب البرهانيّة مجرّدة عن الشكوك والشبهات الوهميّة والخياليّة. ومن شرط في هذا الأمر وطريقه تناول الأغذية الرديّة فهو جاهل أو ممرور. نعم، إنّ من السالكين من يناسبه غذاء معيّن دون غذاء آخر، ومنهم من يكون على عكس ذلك، فإنّ الأمزجة مختلفة والصفات الذميمة الطبيعيّة الحاجبة بحسب ذلك أيضاً مختلفة. ولا شكّ أنّ التدبير بحسب الأغذية والأدوية وغيرهما في مداواة الأمراض النفسانيّة إنّما يختلف حسب اختلاف تلك العلل والأمراض، كما في العلل والأمراض البدنيّة. وأمّا الجوع الشديد والسهر المفرط فهو مذموم كلّ الذمّ في طريق التصوّف والمجاهدة، كما هو مذموم في طريق التعلّم والنظر. نعم، القدر المعتبر عندهم من الغذاء ما لا تسقط بقلّته القوّة ولا تستولي به على المزاج المرّة، ولا تعرض أذيّتها من الاضطراب والغفلة، ولا يوجب تكثّر الكسل ولا ثور الشهوة، ولا يوجب انصراف همّه عن جانب القدس وإقباله على الهضم والتغذية ودفع الفضول وتوليد البراز وما يشبه ذلك. وهكذا الكلام بعينه في النوم والسهر. وبالجملة فكلّ ما هو شرط في أحد الطريقين فهو شرط بعينه في الطريق الآخر. وأمّا ارتكاب الآلام والمشقّات وترك الراحات بالاختيار فلا يجوز إلّا بالنسبة إلى المستكمل الذي اعتاد الترفّه والتنعّم والراحة البدنيّة واستولت على مزاجه الشهوات، وغلب عليه أخلاق المخانيث والشهوات والنسوان. وهكذا الكلام بعينه في تحصيل الملكات المفيدة لهيئة الحزن والهمّ والبكاء وما يشبهها. وأمّا كسب الملكات المفيدة للذلّة وقلّة الحميّة والمسكنة وما يشبهها، فلا يجوز بالنسبة إلى المرتاضين الذين غلب على مزاجهم الغضب الشديد والعجب والتكبّر والقهر والسطوة وحبّ الجاه وما يشبهها. ولا شكّ أنّ معالجة الأمراض النفسانيّة والتخلّص عن الأخلاق الرديّة المهلكة وتجريد النفس عن العادات الخبيثة المظلمة لا يمكن بدون اتّصافها بملكات مرضيّة وعادات حسنة تقابل تلك الأخلاق الذميمة والصفات الخبيثة بمقابلاتها؛ فإنّ دفع أحد الضدّين لا يمكن إلّا بالضدّ الآخر، كما في معالجة الأمراض الجسمانيّة. ومن البيّن أنّ سورة أحد الضدّين متى انكسرت بسورة الضدّ الآخر حصلت هناك حالة متوسّطة قريبة من الاعتدال. والمزاج الذي استولت عليه الشهوة الخبيثة البهيميّة متى انكسرت الكيفيّة الموجبة لتلك الحالة بسورة الكيفيّة التي تقابلها مال إلى الحالة الاعتداليّة. وهكذا الكلام في المزاج الذي غلبت عليه شدّة القهر وحدّة الغضب، فإنّه متى انكسرت الكيفيّة المفيدة لتينك الحالتين بسورة الكيفيّة التي تقابلها مال إلى الحالة المتوسّطة، وإن لم يتّفق الوصول إلى حدّ الاعتدال الحقيقي. ولا يخفى عليك أنّ إخراج المزاج الواقع في الحدود المقابلة لحدّ الاعتدال إلى حدّ الاعتدال باستعمال القوانين المعتبرة في صناعتي الطبّ والحكمة لا يكون إسقاماً وتمريضاً للبدن، بل يكون بالحقيقة إبراءً وتقويةً للنفس والبدن وإفادةً لصحّتهما. ولا تتوهّم أنّ ما يكون علاجاً لمرض معيّن في محلّ جزئيّ بحسب وقت وحال معيّنين يكون علاجاً لسائر الأمراض الباقية، فإنّ الأمراض النفسانيّة إنّما يختصّ بعضها بالحدود الواقعة في جانب الإفراط، والبعض الآخر بالحدود الواقعة في جانب التفريط، على أنّ مداواة مرض معيّن إنّما تختلف بحسب اختلاف الأوقات والأحوال والموضوعات والعادات وما يشبهها. فتأمّل ذلك. واعلم أنّ مخالفة النفس بالمعنى الذي ذهب إليه العارفون كما يجب اعتبارها في طريق التصوّف، يجب أيضاً اعتبارها في طريق التعليم والنظر. وقد أشرنا إلى ذلك في كثير من المواضع فلا حاجة هاهنا إلى تكرار الكلام وتوضيح البيان، فاعرف ذلك.",
+      "english": "Whoever classes intellectual cognitions and certain sciences founded on conclusive demonstrations, attained by a person of balanced constitution who is not overwhelmed by bodily vices, among corrupt imaginings and veils to genuine perfection—neither themselves being such veils nor incapable of serving as preparatory conditions for the perfection at issue—deserves rather to be numbered among the mad, the melancholic, and those who deny necessary knowledge. Repetition of certain words during vigilant contemplation serves to sustain the attention described above; forceful or loud utterance is not an essential condition recognised by practitioners of the discipline. Withdrawal from people and remaining in solitude is needed to clear the heart of distracting thoughts, relinquish obscuring attachments, and devote one's whole concern to God. But the same freedom from distraction is required for deriving certain discursive knowledge and demonstrative conclusions without the intrusion of imaginative and estimative doubts. Whoever makes the consumption of unsuitable foods a condition of this path is ignorant or disturbed. Foods suitable to one traveller may harm another: constitutions differ, and so do the dispositions that obstruct them. Management of food and remedies for psychological disorders must therefore vary with the condition, just as treatment of bodily illnesses does. Severe hunger and excessive sleeplessness are thoroughly condemned in the path of Sufi discipline no less than in the path of teaching and investigation. The requisite food is that which sustains strength without upsetting the humours, producing heedlessness, lethargy or turbulent desire, or so occupying a person with digestion and bodily elimination that attention to higher things is lost. Sleep and wakefulness must be regulated by the same principle. In short, whatever condition is genuinely required for one of the two paths is required for the other. Voluntary pain, hardship and relinquishment of comfort are only justified as a corrective for a person habituated to luxury, bodily ease, and excessive desire. The same qualified principle applies to cultivating dispositions of sorrow, concern, and tears. As for dispositions of humility, restrained assertiveness and lowliness, the transmitted clause concerning those dominated by anger, vanity, pride, coerciveness, and love of status is syntactically and philosophically problematic [see the textual note below]. Yet the explicit principle that follows is that destructive habits can only be cured through praiseworthy habits opposed to them. As the force of one contrary is broken by the force of its opposite, a condition nearer the mean arises. Where appetite predominates, an opposing disposition draws the temperament toward equilibrium; where violence and anger predominate, the appropriate contrary does likewise, even if complete balance is not attained. Restoring a disordered constitution toward equilibrium under the principles of medicine and practical wisdom is not making the soul and body ill, but healing and strengthening them. One must not imagine that a remedy suited to one disorder in one patient at one moment cures every disorder. Some psychological disorders arise through excess, others through deficiency; remedies vary according to persons, times, circumstances and habits. Finally, 'opposing the lower soul', understood in the sense of the gnostics, is as necessary in teaching and rational inquiry as in Sufi practice. We have explained this elsewhere, so need not prolong the account here.",
+      "notes": [
+        "One lengthy ancestor's قال starts on p.252 and ends on p.255 before (1) أقول. The publisher's Persian note interrupting the quotation at p.254–255 is excluded, as is the long grandson's commentary after the closing marker.",
+        "This is the author's express reversal of QT-047: spiritual practice is not intrinsically pathological, excess hunger and wakefulness are condemned, and the moral equilibrium required for sound knowledge is also required for philosophy.",
+        "Substantive textual difficulty: p.253 prints فلا يجوز بالنسبة إلى المرتاضين ... when the surrounding prescription of contraries would suggest لا يجوز إلا بالنسبة إلى. The working Arabic retains the negative and the English explicitly warns, rather than silently changing it.",
+        "Source alternatives include الأحق/الأخلق, مجاهرته/جهاريته, الضروري/أمر ضروري, تكثّر/تكثير, همّه/همّته, التخليص/تخليص النفس, بأضدادها/بمقابلاتها, and in p.255 في طريقة التعليم والنظر. The text is not manuscript collated.",
+        "Derogatory gendered language in the catalogue of luxurious habits is retained as source evidence in the Arabic; it is historical rhetoric and not the translator's judgement.",
+        "The sections on humours, temperament, food, sleeplessness, and treatment of mental conditions describe premodern theories; this is not advice to pursue restrictive diets or intense ascetic practices."
+      ],
+      "variants": [
+        {
+          "lemma": "فلا يجوز بالنسبة إلى المرتاضين",
+          "other": "فلا يجوز إلّا بالنسبة إلى ... [conjecture]",
+          "remark": "Print's negative conflicts with its surrounding therapeutic argument. Do not silently emend."
+        },
+        {
+          "lemma": "الأحقّ",
+          "other": "الأخلق",
+          "remark": "Printed p.252 alternatives."
+        },
+        {
+          "lemma": "مخالفة النفس في طريق التعليم والنظر",
+          "other": "في طريقة التعليم والنظر",
+          "remark": "Printed p.255 alternative."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/448?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/451?lang=ar"
+    },
+    {
+      "id": "QT-057",
+      "title": "Why philosophers regard the contemplative path as possible but difficult",
+      "pages": [
+        257,
+        258
+      ],
+      "arabic": "واعلم أنّ المحقّقين من النظّار لا ينكرون إمكان طريق التصوّف وإفضاءه إلى المقصد على الندور، لكنّهم استوعروه واستبعدوا اجتماع شروطه، وزعموا أنّ محو العلائق إلى ذلك الحدّ كالمتعذّر، وإن حصل في حالة ومدّة قريبة فثباته أبعد منه، إذ أدنى وسوسة وخاطر يشوّش القلب ويشغله. وفي أثناء المجاهدة قد يفسد المزاج ويختلّ العقل ويمرض البدن، ومتى لم تتقدّم رياضة تهذيبه بحقائق العلوم تتشبّث بالقلب خيالات فاسدة يطمئنّ النفس إليها مدّة مديدة. فكم من سالك سلك هذا الطريق ثمّ بقي في خيال واحد عشرين سنة وأكثر من ذلك، ولو كان قد أتقن العلم من قبل لاتّضح له وجه التباس ذلك الخيال في الحال. وحينئذ كان الاشتغال بطريق النظر أسهل وأقرب إلى الغرض وأوفق.",
+      "english": "Know that the accomplished investigators among speculative thinkers do not deny that the Sufi path is possible or that it occasionally reaches its intended end. Nevertheless, they regard it as arduous and think that bringing together its necessary conditions is unlikely. They suppose that effacing attachments to the required degree is almost unattainable; even if achieved briefly, retaining that condition is still harder, because the slightest obsessive thought or passing notion disturbs and distracts the heart. During spiritual exertion, moreover, the constitution may be disturbed, judgement confused and the body made ill. Unless the practitioner has first trained and disciplined the mind through genuine sciences, corrupt imaginings may take hold of the heart and satisfy the soul for a very long time. Many a traveller has pursued this path only to remain caught in a single image for twenty years or more, when prior mastery of knowledge would have disclosed the confusion immediately. In this sense the path of rational investigation appears easier, closer to its objective, and more fitting.",
+      "notes": [
+        "Introduced by قال p.257 and ends p.258 immediately before the grandson's (1) أقول. This paragraph REPORTS the opinion of 'accomplished investigators among speculative thinkers'; it is not the ancestor's final methodological judgement.",
+        "One p.258 print alternative reads لاتّضح / لانفتح; another reads أوفق / أوثق. Both modify the final nuance. The later p.260 original begins وأما نحن فنقول, distinguishing the author's reply from the position represented here."
+      ],
+      "variants": [
+        {
+          "lemma": "لاتّضح",
+          "other": "لانفتح",
+          "remark": "Printed p.258 alternative."
+        },
+        {
+          "lemma": "أوفق",
+          "other": "أوثق",
+          "remark": "Final descriptor 'more fitting' vs 'more reliable'."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/453?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/454?lang=ar"
     }
   ]
 };
