@@ -147,3 +147,17 @@ Textual variants reported by the printed edition (علامة خ) are logged in t
 - *Sharḥ*, p. 60: syllogistic reconstruction of the necessity proof, with additional independent proofs by the commentator.
 
 When the complete matn is established, begin a **separate** sharḥ register (commentator's text, manuscripts, glosses, and English translation) and keep both layers aligned by QT identifiers.
+
+
+## Stage 07: new ancestral quotations (digital Āshtiyānī transcript only)
+
+| Unit | Printed pages | Online Arabic source location | Citation boundary |
+|---|---|---|---|
+| QT-047 | 212–213 | [212](https://ablibrary.net/book_content/b/17638/408?lang=ar), [213](https://ablibrary.net/book_content/b/17638/409?lang=ar) | Ends before (1) أقول p.213. |
+| QT-048 | 215–218 | [215](https://ablibrary.net/book_content/b/17638/411?lang=ar), [216](https://ablibrary.net/book_content/b/17638/412?lang=ar), [217](https://ablibrary.net/book_content/b/17638/413?lang=ar), [218](https://ablibrary.net/book_content/b/17638/414?lang=ar) | The original passes around long modern Persian annotations and ends before (1) أقول p.218. |
+| QT-049 | 224–225 | [224](https://ablibrary.net/book_content/b/17638/420?lang=ar), [225](https://ablibrary.net/book_content/b/17638/421?lang=ar) | Ends before (1) أقول p.225. |
+| QT-050 | 228–230 | [228](https://ablibrary.net/book_content/b/17638/424?lang=ar), [229](https://ablibrary.net/book_content/b/17638/425?lang=ar), [230](https://ablibrary.net/book_content/b/17638/426?lang=ar) | Ends before (1) أقول p.230; Persian page 229 marginalia excluded. |
+| QT-051 | 234 | [234](https://ablibrary.net/book_content/b/17638/430?lang=ar) | Self-contained quotation before (1) أقول. |
+| QT-052 | 237 | [237](https://ablibrary.net/book_content/b/17638/433?lang=ar) | Self-contained quotation before (1) أقول; damaged/doubled syntactic clause. |
+
+No printed-page photography or independent manuscript collation has been carried out for these six passages. The printed transcription is NOT an independently authenticated critical matn. Editorial headings, Persian material, and extended أقول commentary must remain excluded.
