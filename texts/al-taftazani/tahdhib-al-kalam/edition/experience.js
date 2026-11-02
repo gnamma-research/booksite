@@ -132,6 +132,7 @@ function makeUnit(u,side){
  span.title=u.id+' · click for citation, bookmark, and notes';
  if(api.getBookmarked().includes(u.id))span.classList.add('gn-is-bookmarked');
  if(notes[u.id]?.body)span.classList.add('gn-has-note');
+ if(notes[u.id]?.highlight)span.classList.add('gn-is-highlighted');
  return span;
 }
 function buildFlow(){
@@ -182,12 +183,18 @@ function popupAt(u,node){
  const name=el('span','gn-selected-ref',u.id);
  const bookmark=control('Bookmark '+u.id);bookmark.textContent=api.getBookmarked().includes(u.id)?'★ Saved':'☆ Bookmark';
  bookmark.addEventListener('click',()=>{api.bookmark(u.id);hidePopup();buildFlow()});
+ const highlight=control('Highlight this clause');highlight.textContent=notes[u.id]?.highlight?'◈ Highlighted':'◇ Highlight';
+ highlight.addEventListener('click',()=>{const old=notes[u.id]||{},next={...old,highlight:!old.highlight};
+  if(!next.highlight&&!next.body)delete notes[u.id];else notes[u.id]=next;
+  if(!saveNotes()){window.alert('Browser storage unavailable; highlight not saved.');return}
+  hidePopup();buildFlow();
+ });
  const citation=control('Copy citation');citation.textContent='Copy reference';
  citation.addEventListener('click',async()=>{const c='al-Taftāzānī, '+corpus.work+', '+(isLogic?'editorial division ':'Cairo 1912 p. ')+u.page+', '+u.id+' (Gnamma working edition)';try{await navigator.clipboard.writeText(c);citation.textContent='Copied'}catch{window.prompt('Copy citation',c)}});
  const notesButton=control('Read or write notes');notesButton.textContent='Notes & variants';
  notesButton.addEventListener('click',()=>{hidePopup();showNotebook(u)});
  const close=control('Close selected clause actions');close.textContent='×';close.addEventListener('click',hidePopup);
- box.append(name,bookmark,citation,notesButton,close);
+ box.append(name,bookmark,highlight,citation,notesButton,close);
  const r=node.getBoundingClientRect();
  box.hidden=false;
  const w=Math.min(390,window.innerWidth-20),left=Math.max(10,Math.min(r.left,window.innerWidth-w-10));
@@ -211,7 +218,8 @@ function showNotebook(u=null){
   const save=control('Save my note');save.textContent='Save note';
   save.addEventListener('click',()=>{
    const val=area.value.slice(0,15000);
-   if(val)notes[u.id]={body:val,updated:new Date().toISOString()};
+   if(val)notes[u.id]={...(notes[u.id]||{}),body:val,updated:new Date().toISOString()};
+   else if(notes[u.id]?.highlight)notes[u.id]={highlight:true};
    else delete notes[u.id];
    if(!saveNotes()){window.alert('Browser storage is unavailable; copy your note before leaving.');return}
    closeNotebook();buildFlow();
@@ -229,9 +237,9 @@ function showNotebook(u=null){
   }
  }else{
   const list=el('div','gn-notes-list');
-  const items=Object.entries(notes).filter(([id,n])=>keys.has(id)&&n&&n.body);
+  const items=Object.entries(notes).filter(([id,n])=>keys.has(id)&&n&&(n.body||n.highlight));
   if(!items.length)list.append(el('p',null,'Your private notes will appear here. Select a clause in Flow view to add a note.'));
-  for(const [id,n] of items){const b=control('Open note '+id);b.textContent=id+' · '+n.body.slice(0,95);b.addEventListener('click',()=>showNotebook(corpus.units.find(u=>u.id===id)));list.append(b)}
+  for(const [id,n] of items){const b=control('Open note '+id);b.textContent=id+' · '+(n.body||'Highlighted clause').slice(0,95);b.addEventListener('click',()=>showNotebook(corpus.units.find(u=>u.id===id)));list.append(b)}
   sheet.append(list)
  }
  const actions=el('div','gn-note-backups');const exportBtn=control('Export my notes');exportBtn.textContent='Export notes';
@@ -249,7 +257,7 @@ function showNotebook(u=null){
    if(data.format!=='gnamma-tahdhib-private-notes-v1'||data.work!==corpus.work||typeof data.notes!=='object'||!data.notes)throw Error('Wrong notes format or book');
    const next={...notes};
    for(const [id,n] of Object.entries(data.notes)){
-    if(keys.has(id)&&typeof n?.body==='string'&&n.body.length<=15000)next[id]={body:n.body,updated:String(n.updated||'')};
+    if(keys.has(id)&&n&&typeof n==='object'&&(typeof n.body==='string'||n.highlight===true)&&String(n.body||'').length<=15000)next[id]={body:String(n.body||''),highlight:n.highlight===true,updated:String(n.updated||'')};
    }
    notes=next;if(!saveNotes())throw Error('Unable to save notes');
    showNotebook(u);
