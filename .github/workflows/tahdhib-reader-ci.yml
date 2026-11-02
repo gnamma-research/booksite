@@ -6,6 +6,7 @@ on:
       - ".github/workflows/tahdhib-reader-ci.yml"
       - "tools/tahdhib/reader_qa.mjs"
       - "tools/tahdhib/verify_logic_core.py"
+      - "tools/tahdhib/verify_fourth_figure_scope.py"
       - "texts/al-taftazani/tahdhib-al-kalam/edition/**"
       - "texts/al-taftazani/tahdhib-al-mantiq/edition/**"
 permissions:
@@ -21,6 +22,7 @@ jobs:
       - name: Check non-modal inference reconstructions and source-corpus integrity
         run: |
           python tools/tahdhib/verify_logic_core.py
+          python tools/tahdhib/verify_fourth_figure_scope.py
           python - <<'PY'
           import json, pathlib
           base=pathlib.Path('texts/al-taftazani')
@@ -89,7 +91,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: tahdhib-nonmodal-proof-report
-          path: tools/tahdhib/verified_nonmodal_results.json
+          path: |
+            tools/tahdhib/verified_nonmodal_results.json
+            tools/tahdhib/verified_fourth_figure_scope.json
 
   reader-chromium:
     runs-on: ubuntu-latest
