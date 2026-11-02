@@ -5,7 +5,7 @@ window.GNAMMA_CRITICAL_CORPUS={
   "author": "Saʿd al-Dīn al-Taftāzānī",
   "edition": "Stage 75 Cairo 1912 working bilingual text",
   "witness": "Cairo 1330 AH / 1912, pp. 15–127",
-  "editorial_status": "Working bilingual edition; 112/113 Cairo 1912 printed kalam pages directly source-checked after Stage98 p100/p124 photographic restoration; only p77 remains a single-print reading crux; NO independent manuscript collation or definitive historical modal verification.",
+  "editorial_status": "Working bilingual edition; 112/113 Cairo 1912 printed kalam pages directly source-checked after Stage98 p100/p124 photographic restoration; only p77 remains a single-print reading crux; NO independent manuscript collation or definitive historical modal verification. Stage100 note: 995 AH Azhar selected manuscript images inspected; no certified folio/line variant at p77; Princeton Garrett 4139Y's original kalām extent remains unconfirmed. 112/113 Cairo print tally unchanged.",
   "pending_pages": [
     77
   ],
@@ -4114,7 +4114,7 @@ window.GNAMMA_CRITICAL_CORPUS={
       "ar": "وفاء على كل كلام في كل باب أعرضنا عنه مخافة الإطناب والله الهادي إلى طريق الصواب.",
       "en": "We have omitted many further discussions belonging to each topic for fear of excessive prolixity. God guides to the right path.",
       "status": "1912_PRINT_FIRST_VISUAL_PASS",
-      "editorial_note": "Stage84 direct photographic inspection, Cairo p.77: the opening formula in this brief closure remains graphically/syntactically uncertain; do not resolve it by stylistic normalization. The unambiguous continuation is «على كل كلام في كل باب أعرضنا عنه مخافة الإطناب والله الهادي إلى طريق الصواب». The rest of the printed page, including the Necessary Being's essential distinction, has been revisited. Only this localized sentence prevents p.77 from receiving a full single-print certificate."
+      "editorial_note": "Stage84 direct photographic inspection, Cairo p.77: the opening formula in this brief closure remains graphically/syntactically uncertain; do not resolve it by stylistic normalization. The unambiguous continuation is «على كل كلام في كل باب أعرضنا عنه مخافة الإطناب والله الهادي إلى طريق الصواب». The rest of the printed page, including the Necessary Being's essential distinction, has been revisited. Only this localized sentence prevents p.77 from receiving a full single-print certificate.\nSTAGE100 independent-witness audit (2026-11-03): The Cairo 1912 photo continues after «ولا يمتنع ظهور الكل على بعض الأبصار وفي بعض الأحوال» with a visually ambiguous initial small graphic group conventionally transcribed «وفاء» preceding «على كل كلام في كل باب أعرضنا عنه مخافة الإطناب». No confidently matched 995 AH al-Azhar manuscript folio+line is available for this group despite inspecting accessible scanned spreads; Princeton Garrett 4139Y is described ambiguously as full Tahdhib in contents but abbreviated logic in the incipit/origin field, and photographed folios were inaccessible for this crux. Thus «وفاء» remains DIPLOMATICALLY PROVISIONAL rather than a certified authorial reading. Neither manuscript agreement nor smooth conjectural emendation is claimed. Printed p.77 remains the sole unresolved Cairo page (112/113 already checked)."
     },
     {
       "id": "KAL-077.04",
@@ -7336,7 +7336,7 @@ window.GNAMMA_CRITICAL_CORPUS={
       "ids": [
         "KAL-077.03"
       ],
-      "issue": "Cairo p.77 «ذات الواجب مخالف لسائر الذوات» was confirmed directly and corroborated by al-Sanandajī's later quotation; only the exact opening closure before «على كل كلام في كل باب» remains a marked printed crux. Page-level single-print review therefore remains incomplete.",
+      "issue": "Cairo p.77 «ذات الواجب مخالف لسائر الذوات» was confirmed directly and corroborated by al-Sanandajī's later quotation; only the exact opening closure before «على كل كلام في كل باب» remains a marked printed crux. Page-level single-print review therefore remains incomplete. Stage100: 995 AH manuscript is digitized and selected images inspected but NO folio+line correspondence for this word was proven; Princeton catalog's scope is ambiguous; «وفاء» remains an UNCERTIFIED printed transcription.",
       "parallel": "https://jsad.journals.ekb.eg/article_29277_e975f19de651409ac89c49389977bd1a.pdf",
       "parallel_role": "Secondary study quoting al-Sanandajī, Taqrīb al-Marām I/2 p.106; corroborative later commentary, not an independent Tahdhīb manuscript"
     },
