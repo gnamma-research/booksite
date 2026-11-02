@@ -142,13 +142,48 @@ assert any(P["A"](s,p) and not P["I"](p,s)
 assert any(P["O"](s,p) and not P["O"](p,s)
            for s,p in itertools.product(SETS,repeat=2))
 
+# Stage 88: al-Yazdi's qiyas al-musawah illustration (commentary p.87).
+# An *arbitrary* binary relation R is not transitive merely because
+# R(a,b) and R(b,c). The link R(a,c) needs an *additional* rule/axiom:
+# for all x,y,z, R(x,y) and R(y,z) imply R(x,z).
+# This models logical dependence on an extra premise. It does NOT assert
+# that mathematical identity/equality is actually non-transitive!
+pairs=list(itertools.product(UNIVERSE,repeat=2))
+relation_worlds=[]
+for mask in range(1 << len(pairs)):
+    rel=frozenset(pair for i,pair in enumerate(pairs) if mask & (1 << i))
+    if (0,1) not in rel or (1,2) not in rel:continue
+    transitive=all((a,b) not in rel or (b,c) not in rel or (a,c) in rel
+                   for a,b,c in itertools.product(UNIVERSE,repeat=3))
+    relation_worlds.append({
+        "relation":rel,
+        "transitive":transitive,
+        "conclusion":(0,2) in rel,
+    })
+assert relation_worlds
+assert any(not w["conclusion"] for w in relation_worlds)
+assert all(w["conclusion"] for w in relation_worlds if w["transitive"])
+# Minimal counterexample to composition without the external premise.
+assert {(0,1),(1,2)} in [set(w["relation"]) for w in relation_worlds
+                           if not w["conclusion"]]
+musawah_probe={
+    "universe":3,
+    "number_of_binary_relation_interpretations":1 << len(pairs),
+    "models_satisfying_two_relational_premises":len(relation_worlds),
+    "conclusion_valid_without_transitivity":False,
+    "conclusion_valid_if_transitivity_assumed":True,
+    "example_nontransitive_relational_fact_pairs":[[0,1],[1,2]],
+    "scope":"Modern relational skeleton, not a verdict on mathematical equality",
+}
+
 # Universal affirmative does not generally convert universally; O not converse.
 assert any(P['A'](m['S'],m['P']) and not P['A'](m['P'],m['S']) for m in MODELS)
 assert any(P['O'](m['S'],m['P']) and not P['O'](m['P'],m['S']) for m in MODELS)
 report={"domain_elements":N,"set_theoretic_models":len(MODELS),
         "test_scope":"Non-modal reconstruction only, not historic modal or manuscript certification",
         "categorical_moods":results,"disjunction_truth_table":table,
-        "nonmodal_contraposition_probe":contra_tests}
+        "nonmodal_contraposition_probe":contra_tests,
+        "musawah_extra_premise_probe":musawah_probe}
 out=pathlib.Path(__file__).with_name("verified_nonmodal_results.json")
 out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("PASS",len(MOODS),"nonmodal moods,",len(MODELS),
@@ -156,3 +191,4 @@ print("PASS",len(MOODS),"nonmodal moods,",len(MODELS),
 print("PASS three kinds of disjunction, two invalid conversions,")
 print("     material-conditional schematic and quantified-negation scope")
 print("PASS both L15 nonmodal complement schemas: A and O valid, E and I have countermodels")
+print("PASS L16 relational-chain probe: transitively licensed only with extra relation rule")
