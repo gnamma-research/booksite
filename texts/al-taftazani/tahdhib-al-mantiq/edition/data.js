@@ -126,7 +126,7 @@ window.GNAMMA_CRITICAL_CORPUS={
       "ar": "والكليات خمس: الأول الجنس، وهو المقول على الكثرة المختلفة الحقيقة في جواب ما هو، فإن كان الجواب عن الماهية وعن بعض مشاركاتها هو الجواب عنها وعن الكل فقريب كالحيوان، وإلا فبعيد كالجسم النامي.",
       "en": "The five predicables are as follows. First, genus: what is predicated of many things differing in their specific natures in answer to ‘What is it?’ If the answer, for a quiddity and some of the things sharing its genus, is also the answer for all such sharers, it is a proximate genus, such as ‘animal’; otherwise a remote genus, such as ‘growing body’.",
       "status": "B",
-      "source_location": "5",
+      "source_location": "5–6",
       "notes": [
         {
           "type": "Explanation",
@@ -267,7 +267,7 @@ window.GNAMMA_CRITICAL_CORPUS={
       "ar": "فصل في التناقض. التناقض اختلاف قضيتين بحيث يلزم لذاته من صدق كل كذب الأخرى وبالعكس، ولا بد من الاختلاف في الكيف والكم والجهة والاتحاد فيما عداها، والنقيض الضرورية الممكنة العامة، والدائمة المطلقة العامة، والمشروطة العامة الحينية الممكنة، والعرفية العامة الحينية المطلقة، وللمركب المفهوم المردد بين نقيضي الجزأين، لكن في الجزئية بالنسبة إلى كل فرد.",
       "en": "Contradiction is a difference between two propositions such that the truth of either intrinsically entails the falsity of the other, and conversely. They must differ in quality, quantity, and modal determination while agreeing in all other respects. The contradictory of a necessary proposition is a generally possible proposition of the opposite quality; of a permanent proposition, a generally absolute proposition of the opposite quality; of a generally conditioned proposition, the temporally possible form; and of a generally customary proposition, the temporally absolute form. For a compound modal, the contradictory is expressed through a disjunctive meaning involving the contradictories of its two components, with the particular formulation assessed relative to each individual.",
       "status": "B",
-      "source_location": "",
+      "source_location": "9–10",
       "notes": [
         {
           "type": "Explanatory and textual note",
@@ -291,7 +291,7 @@ window.GNAMMA_CRITICAL_CORPUS={
       "ar": "فصل. العكس المستوي تبديل طرفي القضية مع بقاء الصدق والكيف، والموجبة إنما تنعكس جزئية لجواز عموم المحمول أو التالي، والسالبة الكلية تنعكس كلية وإلا لزم سلب الشيء عن نفسه، والجزئية لا تنعكس أصلاً لجواز عموم الموضوع أو المقدم. وأما بحسب الجهة فمن الموجبات تنعكس الدائمتان والعامتان حينية مطلقة، والخاصتان حينية لا دائمة، والوقتيتان والوجوديتان والمطلقة العامة مطلقة عامة، ولا عكس للممكنتين. ومن السوالب تنعكس الدائمتان دائمة، والعامتان عرفية عامة، والخاصتان عرفية لا دائمة في البعض. والبيان في الكل أن نقيض العكس مع الأصل ينتج المحال، ولا عكس للبواقي بالنقض.",
       "en": "Simple conversion exchanges a proposition’s two terms while preserving truth and quality. An affirmative converts only to a particular affirmative, since its predicate—or a conditional’s consequent—may be more general. A universal negative converts universally; otherwise something would have to be denied of itself. A particular negative does not convert, since its subject—or antecedent—may be general. With respect to modality, the two permanent and two general affirmative forms convert into a temporally qualified absolute; the two special forms into a temporally qualified nonpermanent; and the temporal, existential and general absolute forms into a general absolute. Neither possibility form converts. Among negatives, the two permanent forms convert as permanent, the two general forms as generally customary, and the two special forms, in some cases, as customary nonpermanent. Each valid conversion can be demonstrated by deriving an impossibility from the original and the contradictory of its converse; the invalid cases are defeated by counterexample.",
       "status": "B",
-      "source_location": "",
+      "source_location": "10",
       "notes": [
         {
           "type": "Explanatory and textual note",
@@ -300,6 +300,10 @@ window.GNAMMA_CRITICAL_CORPUS={
         {
           "type": "Stage 77 verified Cairo print correction",
           "text": "Cairo 1912 p.10: Repaired merged nonsensical وإلزام to وإلا لزم; proof by contradiction: otherwise something would be negated of itself. The full logic unit remains unverified against an independent manuscript."
+        },
+        {
+          "type": "Stage78 independently compared printed witnesses",
+          "text": "Cairo p10 shorter form; commentary-containing print includes the further qualification مطلقة. See https://www.arabicdawateislami.net/bookslibrary/3507/page/14 for the comparison; no independent manuscript has been collated."
         }
       ],
       "title": "Simple conversion (ʿaks mustawī)",
@@ -323,7 +327,7 @@ window.GNAMMA_CRITICAL_CORPUS={
       "ar": "فصل في القياس. القياس قول مؤلف من قضايا يلزم لذاته قول آخر، فإن كان مذكوراً فيه بمادته وهيئته فاستثنائي وإلا فاقتراني حملي أو شرطي. وموضوع المطلوب من الحملي يسمى أصغر ومحموله أكبر والمكرر أوسط، وما فيه الأصغر صغرى والأكبر كبرى والهيئة شكلاً. والأوسط إما محمول الصغرى أو موضوع الكبرى فهو الشكل الأول، أو محمولهما فالثاني، أو موضوعهما فالثالث، أو عكس الأول فالرابع. ويشترط في الأول إيجاب الصغرى وفعليتها وكلية الكبرى لينتج الموجبتان مع الموجبة الموجبتين، ومع السالبة السالبتين بالضرورة. وفي الثاني اختلافهما في الكيف وكلية الكبرى، أما مع دوام الصغرى أو انعكاس سالبة الكبرى وكون الممكنة مع ضرورة أو مع كبرى مشروطة، لينتج الكليتان سالبة كلية والمختلفتان في الكم أيضاً سالبة جزئية بالخلف أو عكس الكبرى أو الترتيب ثم النتيجة. وفي الثالث إيجاب الصغرى وفعليتها مع كلية إحداهما لينتج الموجبتان مع الموجبة أو بالعكس موجبة جزئية، أو مع السالبة الكلية أو الكلية مع الجزئية سالبة جزئية بالخلف أو عكس الصغرى أو عكس الترتيب ثم النتيجة. وفي الرابع إيجابهما مع كلية الصغرى أو اختلافهما مع كلية إحداهما لينتج الموجبة الكلية مع الأربع، والجزئية مع السالبة الكلية، والسالبتان مع الموجبة الكلية، وكليتها مع الموجبة الجزئية جزئية موجبة إن لم تكن بسلب وإلا فسالبة، بالخلف أو بعكس الترتيب ثم النتيجة أو بعكس المقدمتين أو بالرد إلى الثاني بعكس الصغرى أو الثالث بعكس الكبرى.",
       "en": "Chapter. A syllogism [qiyās] is a discourse composed of propositions from which, by virtue of that composition itself, another proposition necessarily follows. If the resulting proposition is mentioned within it in matter and form [bi-māddatihi wa-hayʾatihi], the syllogism is exceptive [istisnāʾī]; otherwise it is conjunctive [iqtirānī], either categorical or conditional. In a categorical syllogism, the subject of the sought conclusion is called the minor term [al-aṣghar]; its predicate, the major term [al-akbar]; and what is repeated, the middle term [al-awsaṭ]. The premise containing the minor term is the minor premise [al-ṣughrā], and that containing the major term the major premise [al-kubrā]. The middle term may be the predicate of the minor and the subject of the major: this is the first figure. Or it may be the predicate of both: the second figure. Or it may be the subject of both: the third figure. Or the reverse of the first arrangement: the fourth figure. First figure. The minor must be affirmative and actual [fiʿliyya], together with a universal major. It then produces, with two affirmative premises and a universal affirmative major, an affirmative conclusion [universal or particular according to the quantity of the minor]; with a universal negative major, a negative conclusion [universal or particular according to the minor], necessarily. Second figure. The premises must differ in quality, and the major premise must be universal; together with permanence of the minor premise, or the possibility of converting the negative major, or the presence of a possible premise with a necessary one, or a conditional major. Two universal premises then yield a universal negative; and where their quantities also differ, a particular negative. This is shown by reductio [khalf], or by conversion of the major or the minor, followed by arranging [the converted premises] and deriving the conclusion. Third figure. The minor premise must be affirmative and actual, with at least one premise universal. Two affirmatives, with the major universal, or the reverse, yield a particular affirmative; and with a universal negative, or with a universal and a particular [of opposing qualities], they yield a particular negative. This is established by reductio, or by conversion of minor or major followed by arranging and deriving the conclusion. Fourth figure. The premises must both be affirmative with the minor universal, or must differ in quality with at least one universal. A universal affirmative joined with [any of] the four [appropriate forms], a particular affirmative with a universal negative, either of the two negative forms paired with a universal affirmative, and the universal [negative] with a particular affirmative yield a particular affirmative if the result is not obtained by negation, and otherwise a particular negative. Proof is by reductio, or by reversing the order and then converting the conclusion, or by converting both premises, or by reduction to the second figure through conversion of the minor, or to the third through conversion of the major.",
       "status": "B",
-      "source_location": "",
+      "source_location": "11–12",
       "notes": [
         {
           "type": "Explanation",
@@ -348,6 +352,10 @@ window.GNAMMA_CRITICAL_CORPUS={
         {
           "type": "Stage 78 correction to Stage 77 attribution",
           "text": "The Cairo 1912 printing, p.12, reads «مع الموجبة الموجبتين، ومع السالبة السالبتين». The wording «الموجبة الكلية ... السالبة الكلية» occurs instead in the separately printed text of Sharḥ al-Tahdhīb (online p.14). Stage 77 inadvertently imported the latter wording into its Cairo transcription. Cairo already states «وكلية الكبرى» among the general requirements. This is a printing-level variant; it has not been settled by manuscript collation."
+        },
+        {
+          "type": "Stage78 independently compared printed witnesses",
+          "text": "Substantive paragraph present in the alternate printed text but absent from Cairo 1912 p12; record as structural printed-text difference, not a scribal deletion established by manuscript. See https://www.arabicdawateislami.net/bookslibrary/3507/page/14 for the comparison; no independent manuscript has been collated."
         }
       ],
       "title": "Syllogism, terms, figures, and the four sets of conditions",
@@ -391,7 +399,7 @@ window.GNAMMA_CRITICAL_CORPUS={
       "ar": "فصل. أجزاء العلوم ثلاثة: الموضوعات، وهي التي يطلب في العلم عن أعراضها الذاتية، والمبادئ وهي حدود الموضوعات وأجزاؤها وأعراضها ومقدمات بينة أو مأخوذة يبتنى عليها قياسات العلم، والمسائل وهي قضايا تطلب في العلم وموضوعاتها موضوع العلم أو نوع منه أو عرض ذاتي له أو متركب، ومحمولاتها أمور خارجة عنها لاحقة لذاتها، وقد تقال المبادئ لما يبدأ به قبل المقصود، والمقدمات أيضا لما يتوقف عليه الشروع بوجه الخبرة، والله أعلم بالصواب.",
       "en": "The constituents of the sciences are three: subjects, principles and investigated problems. Subjects are those things whose essential properties the science investigates. Principles include the definitions of subjects, their parts and attributes, and self-evident or borrowed premises on which the science’s arguments are built. Problems are propositions investigated in the science: their subjects are the subject matter of the discipline itself, a species of it, one of its essential properties, or a compound of these; their predicates are matters external to those subjects yet attaching to them in virtue of their nature. The word ‘principles’ may also designate what is presented before the principal aim, and ‘preliminaries’ what one must know in order to undertake an inquiry competently. God knows best what is correct.",
       "status": "B",
-      "source_location": "",
+      "source_location": "14",
       "notes": [
         {
           "type": "Explanatory and textual note",
@@ -510,6 +518,20 @@ window.GNAMMA_CRITICAL_CORPUS={
       "other": "اختلاف القضيتين؛ في الكم والكيف والجهة",
       "source": "https://www.arabicdawateislami.net/bookslibrary/3507/page/13",
       "status": "Stage78 direct Cairo pp9–10 image comparison against online commentary-containing print"
+    },
+    {
+      "id": "L.14",
+      "cairo": "ومن السوالب تنعكس الدائمتان دائمة ... والخاصتان عرفية لا دائمة",
+      "other": "ومن السوالب تنعكس الدائمتان دائمة مطلقة ... والخاصتان عرفية لا دائمة",
+      "source": "https://www.arabicdawateislami.net/bookslibrary/3507/page/14",
+      "status": "Cairo p10 shorter form; commentary-containing print includes the further qualification مطلقة."
+    },
+    {
+      "id": "L.16",
+      "cairo": "Figure-four proof ends «أو الثالث بعكس الكبرى»; the next printed page begins «فصل» on conditionals.",
+      "other": "After the fourth figure the commentary-container adds «وضابطة شرائط الأربعة أنه لا بد لها ...»",
+      "source": "https://www.arabicdawateislami.net/bookslibrary/3507/page/14",
+      "status": "Substantive paragraph present in the alternate printed text but absent from Cairo 1912 p12; record as structural printed-text difference, not a scribal deletion established by manuscript."
     }
   ],
   "print_corrections_stage78": [
@@ -528,5 +550,29 @@ window.GNAMMA_CRITICAL_CORPUS={
       "after": "التناقض اختلاف قضيتين ... الاختلاف في الكيف والكم والجهة",
       "grade": "Direct Cairo print image verification"
     }
-  ]
+  ],
+  "stage78_source_concordance": {
+    "scope": "Cairo 1912 main text printed pp3–14; section starts and ends visually checked, not independent manuscript readings",
+    "unit_printed_pages": {
+      "L.01": "3",
+      "L.02": "4",
+      "L.03": "4–5",
+      "L.04": "5",
+      "L.05": "5",
+      "L.06": "5–6",
+      "L.07": "5–7",
+      "L.08": "7",
+      "L.09": "7",
+      "L.10": "7–8",
+      "L.11": "8–9",
+      "L.12": "9",
+      "L.13": "9–10",
+      "L.14": "10",
+      "L.15": "11",
+      "L.16": "11–12",
+      "L.17": "13",
+      "L.18": "13–14",
+      "L.19": "14"
+    }
+  }
 };
