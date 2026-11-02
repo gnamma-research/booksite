@@ -2,10 +2,10 @@
   "schema": "gnamma-tahdhib-edition-publication-v1",
   "book": "Tahdhīb al-Manṭiq",
   "source": "data.js",
-  "source_sha256": "39da463778016855711d4993e0f65c34ee9f4160083c3d94d84c85c0f8b4f3b6",
-  "source_bytes": 63465,
+  "source_sha256": "897b34c96c61e524f318a69e75be55fe6bba44161f10bad681b13562b31c87f2",
+  "source_bytes": 64771,
   "source_witness": "Cairo 1912 and compared printed logic text; original pagination recorded per unit",
-  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open.",
+  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn.",
   "unit_count": 19,
   "page_or_division_count": 19,
   "navigation_kind": "division",
@@ -34,24 +34,24 @@
     {
       "name": "tahdhib-logic-parallel.pdf",
       "purpose": "bilingual",
-      "sha256": "14ba7753fc6393ef6c6403c1f3a568ff74be48d14a63de0af7c410f2382c56bc",
-      "bytes": 100544,
+      "sha256": "cc42b5d691cdbf869975531892edf46b46d20ede6ff2b8fcfc6f7a831ca6fdb0",
+      "bytes": 102960,
       "a4_pages": 21,
       "href": "pdfs/tahdhib-logic-parallel.pdf"
     },
     {
       "name": "tahdhib-logic-ar-only.pdf",
       "purpose": "arabic",
-      "sha256": "f47025f1bca4c7092a29e6dfa79ec8e1f9e2d8b60b2ff087a059d4732700064e",
-      "bytes": 69717,
+      "sha256": "0f908f17a611de2a4e606615aaf86f2dd5ef1dacc0dba09ffc76f519dee9525a",
+      "bytes": 72133,
       "a4_pages": 11,
       "href": "pdfs/tahdhib-logic-ar-only.pdf"
     },
     {
       "name": "tahdhib-logic-en-only.pdf",
       "purpose": "english",
-      "sha256": "d6559ad27f477eafed0d3320c9a0c17ea7dbc19b9573f306a096fbbb047cbe97",
-      "bytes": 46816,
+      "sha256": "21c0b4b95ae207d8c28ecf452c89e21ba9d6fdae92913983569c41cf83eefc4f",
+      "bytes": 49241,
       "a4_pages": 11,
       "href": "pdfs/tahdhib-logic-en-only.pdf"
     }
