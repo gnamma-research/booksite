@@ -2,10 +2,10 @@
   "schema": "gnamma-tahdhib-edition-publication-v1",
   "book": "Tahdhīb al-Manṭiq",
   "source": "data.js",
-  "source_sha256": "0c3badd11fdc232217878ced98055c9d5c607d72640318364cfec92c12a81b62",
-  "source_bytes": 68304,
+  "source_sha256": "b17894088ad50ec478e2eefc82a951b7d78b86f539df113036f19da43ec2d68a",
+  "source_bytes": 71681,
   "source_witness": "Cairo 1912 and compared printed logic text; original pagination recorded per unit",
-  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn. Stage83 Cairo L12–L13 additional printed-line fidelity repairs (indefinite «نسبتين», omitted «معاً», «جميع التقادير للمقدم», repeated governing lām in contradiction). Stage85 direct Cairo L10–L11 p8–9 proofing removes explanatory insertions from Arabic, restores p8 subject condition, source modal definiteness/negation/prepositions and the p8–p9 seam of specific possibility. Traditional modal inference proofing remains outstanding.",
+  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn. Stage83 Cairo L12–L13 additional printed-line fidelity repairs (indefinite «نسبتين», omitted «معاً», «جميع التقادير للمقدم», repeated governing lām in contradiction). Stage85 direct Cairo L10–L11 p8–9 proofing removes explanatory insertions from Arabic, restores p8 subject condition, source modal definiteness/negation/prepositions and the p8–p9 seam of specific possibility. Traditional modal inference proofing remains outstanding. Stage86 direct Cairo p11 L15 restoration: «في العكس المستوي ... وبين انعكاس الخاصتين», without borrowed «بالافتراض فتأمل»; ninth distinct printed-form comparison recorded.",
   "unit_count": 19,
   "page_or_division_count": 19,
   "navigation_kind": "division",
@@ -34,24 +34,24 @@
     {
       "name": "tahdhib-logic-parallel.pdf",
       "purpose": "bilingual",
-      "sha256": "bbff464daeb4ff15b38b5ad7483fbdfd5a89fd90a1cb82c2e4865deee4b3e009",
-      "bytes": 105310,
-      "a4_pages": 21,
+      "sha256": "ceb1f5f2b14ce22596ac7ef3f0d7416e653a1dbddfbd9472fbf44f98c1d1a428",
+      "bytes": 107824,
+      "a4_pages": 22,
       "href": "pdfs/tahdhib-logic-parallel.pdf"
     },
     {
       "name": "tahdhib-logic-ar-only.pdf",
       "purpose": "arabic",
-      "sha256": "fc6c574d5900c9ce565aedc66f91940aa12fc9482c6f7ea113bbf3c5f2fb7016",
-      "bytes": 73920,
+      "sha256": "e7a2615454e1e852ffa3b9db95d4710ef94a50ca53710377fd6f601c26c24220",
+      "bytes": 75399,
       "a4_pages": 11,
       "href": "pdfs/tahdhib-logic-ar-only.pdf"
     },
     {
       "name": "tahdhib-logic-en-only.pdf",
       "purpose": "english",
-      "sha256": "f68b7999ae01a7cc335875e7771a03d633840b5341a2522440240084d0539354",
-      "bytes": 51392,
+      "sha256": "21885561e62fbb1a3e3f261240d23f188a8efc8c6858650e10a8535d1c08fa54",
+      "bytes": 53353,
       "a4_pages": 11,
       "href": "pdfs/tahdhib-logic-en-only.pdf"
     }
