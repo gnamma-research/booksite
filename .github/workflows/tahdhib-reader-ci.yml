@@ -72,6 +72,8 @@ jobs:
           assert 'وقد يخص باسم قياس الخلف' in text['L.17']
           assert 'وقد يختص باسم قياس الخلف' not in text['L.17']
           assert any(z.get('page')==17 for z in logic.get('open_issues',[]))
+          assert any(z.get('page')==16 and 'negative' in z.get('issue','') for z in logic.get('open_issues',[]))
+          assert any('Stage91' in (n.get('text','')) for u in logic['units'] if u['id']=='L.16' for n in u.get('notes',[]))
           assert 'فتأمل' not in text['L.15']
           assert 'وقد بين انعكاس الخاصتين' not in text['L.15']
           assert 'وجود الموضوع محققاً وهي الخارجية' in text['L.10']
