@@ -40,7 +40,7 @@ function render(){
  $('#visible-count').textContent=n+' '+unitLabel+' · '+(state.scope==='continuous'?(MAX-MIN+1)+' '+(isDivision?'divisions':'printed pages'):(isDivision?'division ':'p. ')+state.page);
  const dis=state.scope==='continuous';for(const name of ['previous','bottom-prev'])$('#'+name).disabled=dis||state.page===MIN;for(const name of ['next','bottom-next'])$('#'+name).disabled=dis||state.page===MAX;
  renderNav();updateDock();
- if(lastFocus){const focus=lastFocus;lastFocus=null;requestAnimationFrame(()=>$('#'+CSS.escape(focus))?.scrollIntoView({block:'start'}))}
+ if(lastFocus){const focus=lastFocus;lastFocus=null;requestAnimationFrame(()=>{const flow=document.body.dataset.readingStyle!=='study';const dest=flow?'flow-'+focus+(state.view==='ar'?'-ar':''):focus;document.getElementById(dest)?.scrollIntoView({block:'start'})})}
  document.dispatchEvent(new CustomEvent('gnamma-tahdhib-render',{detail:{page:state.page,view:state.view,scope:state.scope}}));
 }
 function renderNav(){
@@ -51,11 +51,11 @@ function renderNav(){
  b.addEventListener('click',()=>go(p));frag.append(b)}list.append(frag)
 }
 function go(p,target){state.page=Math.max(MIN,Math.min(MAX,Number(p)||MIN));store();const hash=target?'#'+target:'#page='+state.page;history.replaceState(null,'',hash);
- if(state.scope==='continuous'){renderNav();updateDock();requestAnimationFrame(()=>{const point=document.body.dataset.readingStyle==='study'?document.getElementById(target||'page-'+state.page):document.getElementById(target?'flow-'+target:'flow-page-'+state.page);point?.scrollIntoView({block:'start',behavior:'smooth'})})}
+ if(state.scope==='continuous'){renderNav();updateDock();requestAnimationFrame(()=>{const point=document.body.dataset.readingStyle==='study'?document.getElementById(target||'page-'+state.page):document.getElementById('flow-'+(target||'page-'+state.page)+(state.view==='ar'?'-ar':''));point?.scrollIntoView({block:'start',behavior:'smooth'})})}
  else{lastFocus=target||'page-'+state.page;render()}$('#contents').classList.remove('shown');$('#open-contents')?.setAttribute('aria-expanded','false')}
 function updateDock(){const prev=$('#dock-prev'),next=$('#dock-next'),current=$('#dock-current');if(!prev||!next||!current)return;prev.disabled=state.page===MIN;next.disabled=state.page===MAX;$('#dock-prev-num').textContent=state.page>MIN?(isDivision?'L'+cap(state.page-1):String(state.page-1)):'·';$('#dock-next-num').textContent=state.page<MAX?(isDivision?'L'+cap(state.page+1):String(state.page+1)):'·';const first=(byPage.get(state.page)||[])[0];current.textContent=(isDivision?'Logic · L'+cap(state.page):'Kalām · Cairo p. '+state.page)+(isDivision&&first?.title?' · '+first.title:'');current.title='Open the page navigator'}
 $('#dock-prev')?.addEventListener('click',()=>go(state.page-1));$('#dock-next')?.addEventListener('click',()=>go(state.page+1));$('#dock-current')?.addEventListener('click',()=>{$('#contents').classList.add('shown');$('#search').focus()});
-let scrollPending=false;window.addEventListener('scroll',()=>{if(state.scope!=='continuous'||scrollPending)return;scrollPending=true;requestAnimationFrame(()=>{scrollPending=false;const heads=(document.body.dataset.readingStyle==='study'?$('#passages .printed-page'):$('#flow-passages .flow-page-ref[data-flow-side="en"]'));let page=MIN;for(const h of heads){if(h.getBoundingClientRect().top<185)page=Number(h.dataset.page||h.id.replace('page-',''));else break}if(page!==state.page){state.page=page;updateDock()}})},{passive:true});
+let scrollPending=false;window.addEventListener('scroll',()=>{if(state.scope!=='continuous'||scrollPending)return;scrollPending=true;requestAnimationFrame(()=>{scrollPending=false;const heads=(document.body.dataset.readingStyle==='study'?$('#passages .printed-page'):$('#flow-passages .flow-page-ref[data-flow-side="'+(state.view==='ar'?'ar':'en')+'"]'));let page=MIN;for(const h of heads){if(h.getBoundingClientRect().top<185)page=Number(h.dataset.page||h.id.replace('page-',''));else break}if(page!==state.page){state.page=page;updateDock()}})},{passive:true});
 function search(){
  const q=norm(state.query.trim()),box=$('#search-results');box.replaceChildren();if(!q)return;
  const hits=units.filter(u=>norm(u.ar).includes(q)||norm(u.en).includes(q)||norm(u.id).includes(q));const info=el('div','search-info',hits.length+' matching clauses');box.append(info);
@@ -113,6 +113,11 @@ function quote(s){return '"'+String(s??'').replace(/"/g,'""')+'"'}
 $$('[data-export]').forEach(b=>b.addEventListener('click',()=>{const v=b.dataset.export;
  if(v==='json')download('tahdhib-'+(isDivision?'logic':'kalam')+'-working-corpus.json','application/json;charset=utf-8',JSON.stringify(corpus,null,2));
  if(v==='csv')download('tahdhib-'+(isDivision?'logic':'kalam')+'-clauses.csv','text/csv;charset=utf-8','id,printed_page,arabic,english,status\r\n'+units.map(u=>[u.id,u.page,u.ar,u.en,u.status].map(quote).join(',')).join('\r\n'));
+ if(v==='assisted'){
+  const helper=window.GNAMMA_TAHDHIB_DIACRITICS;
+  const text=corpus.work+' · PARTIALLY vocalized Arabic learning aid. NOT a fully vowelled or manuscript-certified edition.\n\n'+units.map(u=>u.id+' [Cairo '+u.page+']\n'+(helper?.get(u).text||u.ar)).join('\n\n');
+  download('tahdhib-'+(isDivision?'logic':'kalam')+'-arabic-partial-vowels.txt','text/plain;charset=utf-8',text);
+ }
  if(v==='text')download('tahdhib-'+(isDivision?'logic':'kalam')+'-english.txt','text/plain;charset=utf-8',corpus.work+' · English Working Edition\nIndependent collation outstanding\n\n'+units.map(u=>u.id+' [p. '+u.page+']\n'+u.en).join('\n\n'));
  if(v==='print'){modal.hidden=true;state.scope='continuous';render();requestAnimationFrame(()=>requestAnimationFrame(()=>window.print()))}
  else modal.hidden=true
