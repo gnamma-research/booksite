@@ -9,6 +9,7 @@ on:
       - "tools/tahdhib/verify_fourth_figure_scope.py"
       - "tools/tahdhib/verify_special_modal_temporal_shadow.py"
       - "tools/tahdhib/verify_special_modal_witness_scope.py"
+      - "tools/tahdhib/verify_fourth_figure_mode8_temporal_shadow.py"
       - "tools/tahdhib/verify_modal_type_crosswalk.py"
       - "texts/al-taftazani/tahdhib-al-kalam/edition/**"
       - "texts/al-taftazani/tahdhib-al-mantiq/edition/**"
@@ -28,6 +29,7 @@ jobs:
           python tools/tahdhib/verify_fourth_figure_scope.py
           python tools/tahdhib/verify_special_modal_temporal_shadow.py
           python tools/tahdhib/verify_special_modal_witness_scope.py
+          python tools/tahdhib/verify_fourth_figure_mode8_temporal_shadow.py
           python tools/tahdhib/verify_modal_type_crosswalk.py
           python - <<'PY'
           import json, pathlib
@@ -108,6 +110,7 @@ jobs:
             tools/tahdhib/verified_fourth_figure_scope.json
             tools/tahdhib/verified_special_modal_temporal_shadow.json
             tools/tahdhib/verified_special_modal_witness_scope.json
+            tools/tahdhib/verified_fourth_figure_mode8_temporal_shadow.json
             tools/tahdhib/verified_modal_type_crosswalk.json
 
   reader-chromium:
