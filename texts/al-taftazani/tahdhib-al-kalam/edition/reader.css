@@ -32,3 +32,7 @@ body[data-focus="2"] .editorial-note,body[data-focus="3"] .editorial-note,body[d
 @media print{body{padding:0}.reading-dock{display:none!important}body[data-focus="1"] .source-issue,body[data-focus="2"] .source-issue,body[data-focus="3"] .source-issue{display:none!important}}
 
 .division-title{font:500 19px/1.35 Georgia,serif;margin:6px 0 12px}.division-source{font:11px/1.4 system-ui;color:var(--muted);margin:-7px 0 14px}
+
+/* In focus reading, the bottom dock can always reopen the contents on desktop. */
+body[data-focus="1"] .contents.shown,body[data-focus="2"] .contents.shown,body[data-focus="3"] .contents.shown{display:block;position:fixed;left:0;top:0;bottom:0;height:100vh;max-height:100vh;z-index:26;width:min(310px,90vw);background:var(--paper);border-right:1px solid var(--border);box-shadow:8px 0 35px #0002;padding:22px;overflow-y:auto}
+body[data-focus="1"] .contents.shown #close-contents,body[data-focus="2"] .contents.shown #close-contents,body[data-focus="3"] .contents.shown #close-contents{display:inline-flex}
