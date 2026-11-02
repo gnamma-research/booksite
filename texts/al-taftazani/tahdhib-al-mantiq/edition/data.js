@@ -5,7 +5,7 @@ window.GNAMMA_CRITICAL_CORPUS={
   "author": "Saʿd al-Dīn al-Taftāzānī",
   "edition": "Continuous bilingual 19-unit logic working text",
   "witness": "Cairo 1912 and compared printed logic text; original pagination recorded per unit",
-  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open.",
+  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn.",
   "navigation_kind": "division",
   "unit_type": "editorial divisions",
   "start_page": 1,
@@ -248,14 +248,18 @@ window.GNAMMA_CRITICAL_CORPUS={
     {
       "id": "L.12",
       "page": 12,
-      "ar": "فصل في أقسام الشرطية. الشرطية متصلة إن حكم فيها بثبوت نسبة على تقدير أخرى أو نفيها، لزومية إن كان ذلك بعلاقة وإلا فاتفاقية. ومنفصلة إن حكم فيها بتنافي النسبتين أو لا تنافيهما صدقاً وكذباً معاً وهي الحقيقية، أو صدقاً فقط فمانعة الجمع، أو كذباً فقط فمانعة الخلو. وكل منهما عنادية إن كان التنافي لذاتي الجزئين وإلا فاتفاقية. ثم الحكم في الشرطية إن كان على جميع تقادير المقدم فكلية، أو بعضها مطلقاً فجزئية، أو معيناً فشخصية، وإلا فمهملة. وطرفا الشرطية في الأصل قضيتان حمليتان أو متصلتان أو منفصلتان أو مختلفتان، إلا أنهما خرجتا بزيادة أداة الاتصال والانفصال عن التمام.",
-      "en": "Chapter. A conditional proposition is connected [muttaṣila] if it judges that one relation holds, or does not hold, on the supposition of another. It is implicative [luzūmiyya] when there is a connection between the two relations; otherwise it is coincidental [ittifāqiyya]. It is disjunctive [munfaṣila] if it judges that the two relations are incompatible, or not incompatible, with respect to truth and falsity together, in which case it is the true disjunctive [ḥaqīqiyya]; or with respect to truth only, in which case it prevents conjunction [māniʿat al-jamʿ]; or with respect to falsity only, in which case it prevents joint exclusion [māniʿat al-khulū]. Each [of these disjunctive types] is essentially opposed [ʿinādiyya] if the exclusion arises from the natures of its two components, and otherwise is coincidental. Again, if the judgment in a conditional holds under all suppositions concerning the antecedent, it is universal; if under some, without specification, particular; if under a determinate supposition, singular; otherwise indeterminate. The two members of a conditional are originally two categorical propositions, two connected conditionals, two disjunctives, or two different kinds. The addition of the connective or disjunctive particle deprives them of [their independent] completeness.",
+      "ar": "فصل في أقسام الشرطية. الشرطية متصلة إن حكم فيها بثبوت نسبة على تقدير أخرى أو نفيها، لزومية إن كان ذلك لعلاقة وإلا فاتفاقية. ومنفصلة إن حكم فيها بتنافي النسبتين أو لا تنافيهما صدقاً وكذباً معاً وهي الحقيقية، أو صدقاً فقط فمانعة الجمع، أو كذباً فقط فمانعة الخلو. وكل منها عنادية إن كان التنافي لذات الجزأين وإلا فاتفاقية. ثم الحكم في الشرطية إن كان على جميع تقادير المقدم فكلية، أو بعضها مطلقاً فجزئية، أو معيناً فشخصية، وإلا فمهملة. وطرفا الشرطية في الأصل قضيتان حمليتان أو متصلتان أو منفصلتان أو مختلفتان، إلا أنهما خرجتا بزيادة أداة الاتصال والانفصال عن التمام.",
+      "en": "Chapter. A conditional proposition is connected [muttaṣila] if it judges that one relation holds, or does not hold, on the supposition of another. It is implicative [luzūmiyya] when there is a connection between the two relations; otherwise it is coincidental [ittifāqiyya]. It is disjunctive [munfaṣila] if it judges that the two relations are incompatible, or not incompatible, with respect to truth and falsity together, in which case it is the true disjunctive [ḥaqīqiyya]; or with respect to truth only, in which case it prevents conjunction [māniʿat al-jamʿ]; or with respect to falsity only, in which case it prevents joint exclusion [māniʿat al-khulū]. Each of the foregoing disjunctive forms is intrinsically opposed [ʿinādiyya] if the incompatibility derives from the two members themselves; otherwise its opposition is coincidental. Again, if the judgment in a conditional holds under all suppositions concerning the antecedent, it is universal; if under some, without specification, particular; if under a determinate supposition, singular; otherwise indeterminate. The two members of a conditional are originally two categorical propositions, two connected conditionals, two disjunctives, or two different kinds. The addition of the connective or disjunctive particle deprives them of [their independent] completeness.",
       "status": "B",
       "source_location": "9",
       "notes": [
         {
           "type": "Explanation",
           "text": "In a true disjunction, both conjunction and joint falsity are excluded. A preventing-conjunction disjunction excludes simultaneous truth; a preventing-exclusion disjunction excludes simultaneous falsity."
+        },
+        {
+          "type": "Stage82 confirmed Cairo p9 vs commentary-containing printed form p13",
+          "text": "Cairo has «لعلاقة», «وكل منها عنادية», «لذات الجزأين»; the second printed text has «بعلاقة», «وكل منهما عنادية», «لذاتي الجزئين». Preserve the plural-reference wording in Cairo; the difference bears on whether the following criterion applies to all three previously mentioned disjunctions or an implied pair. Manuscript priority remains unknown."
         }
       ],
       "title": "Conditional propositions",
@@ -532,6 +536,13 @@ window.GNAMMA_CRITICAL_CORPUS={
       "other": "After the fourth figure the commentary-container adds «وضابطة شرائط الأربعة أنه لا بد لها ...»",
       "source": "https://www.arabicdawateislami.net/bookslibrary/3507/page/14",
       "status": "Substantive paragraph present in the alternate printed text but absent from Cairo 1912 p12; record as structural printed-text difference, not a scribal deletion established by manuscript."
+    },
+    {
+      "id": "L.12",
+      "cairo": "لزومية إن كان ذلك لعلاقة ... وكل منها عنادية إن كان التنافي لذات الجزأين",
+      "other": "لزومية إن كان ذلك بعلاقة ... وكل منهما عنادية إن كان التنافي لذاتي الجزئين",
+      "source": "https://www.arabicdawateislami.net/bookslibrary/3507/page/13",
+      "status": "Cairo 1912 p9 compared with the alternate matn on online p13; printed-level singular/dual and particle variation, no independent manuscript priority"
     }
   ],
   "print_corrections_stage78": [
