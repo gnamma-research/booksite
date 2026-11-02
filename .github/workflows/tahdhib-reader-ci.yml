@@ -35,10 +35,11 @@ jobs:
           text={u['id']:u['ar'] for u in logic['units']}
           assert 'الوقتيتان المطلقتان' in text['L.11']
           assert 'وإلا لزم سلب الشيء عن نفسه' in text['L.14']
-          assert 'مع الموجبة الكلية الموجبتين' in text['L.16']
+          assert 'مع الموجبة الموجبتين، ومع السالبة السالبتين' in text['L.16']
+          assert 'مع الموجبة الكلية الموجبتين' not in text['L.16']
           assert 'والنظريات' in text['L.18']
           assert 'والله أعلم بالصواب' in text['L.19']
-          print('PASS: published Arabic corrections and 19 / 1,044 corpus integrity')
+          print('PASS: Cairo L16 witness kept separate from longer commentary-contained print and 19 / 1,044 corpus integrity')
           PY
       - uses: actions/upload-artifact@v4
         with:
