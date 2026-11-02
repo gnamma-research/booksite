@@ -573,3 +573,63 @@ A source page with a short Arabic anchor and a one-paragraph interpretive guide 
 - Source facsimile extraction: original physical PDF image pages **356–395**, kept as a forty-page unchanged scan, not mistakenly called a translated PDF.
 - Working selected-translation PDF: **25** short upper-register and **two** short unassigned lower excerpts, with the same wording as the Stage 12 source-selected JS. Arabic shaping was reviewed in the rendered PDF. It deliberately excludes most source words and prominently labels this limitation.
 - The canonical cumulative scientific handoff is this Markdown in GitHub. Portable files are checkpoint copies and must not supersede source or version control.
+
+
+---
+
+## 21. Stage 13 — original printed volume II:101–140 (2 November 2026)
+
+### A. Scope and witness
+
+The primary witness remains the *same combined Sanandajī + Wasīm printed PDF*, `taqribmaram.pdf`, 632 scanned physical images, original numbered volumes I:1–280 and II:1–335 (615 numbered page positions). This stage directly inspected **40 original printed pages, II:101–140, physical PDF images 396–435**. No defective OCR was substituted for source Arabic. Existing I:8–280, II:2–100 and the pre-existing Wasīm II:117 passage were retained, not retranslated.
+
+Original layers: (1) quoted Taftāzānī lemmata embedded in the large upper text; (2) Sanandajī's running explanation; (3) positively identified Wasīm `Ḥāshiyat al-Muḥākamāt` excerpts; and (4) other or individually unidentified small-print marginal notes. The printed *Tahdhīb* matn being translated in the **other chat** is not modified or merged.
+
+### B. Book architecture, arguments and exact printed transitions
+
+- **II:101–102:** end of separate-intellect and celestial-soul treatment, followed by reported accounts of spirits, angels and jinn. Philosophers' identifications of angels with separate intellects are distinguished from the reported theological account of angels as subtle bodies.
+- **II:103:** closes angelology and opens the original **«الباب الخامس في الإلهيات»** (*Book Five: Divine Matters*) and **«الفصل الأول في تقرير الأدلة»** (the first chapter setting out proofs). These are source headings, not editorial inventions.
+- **II:104–116:** demonstration of necessary existence from the dependence of possible beings, circularity/regress objections, discussion of composition, divine unity and incorporeality, and related distinctions between sharing a conceptual predicate and sharing an ontological genus.
+- **II:117:** source-image contextual guide to the impossibility of divine intrinsic change; the existing `W.II.117.01` Wasīm passage on **taʾaththur** is explicitly **reused by a link**. No duplicate new translation has been created.
+- **II:118:** the original chapter **«فصل في الصفات الوجودية»**, on knowledge, power, will and other affirmative divine attributes.
+- **II:119–138:** the status of divine attributes and the divine essence; the scope of power and knowledge; created objects of eternal knowledge and will, temporal determination, and the distinction between intrinsic divine change and external effects.
+- **II:139–140:** affirmation of life, hearing, seeing and speech; scriptural and argumentative accounts and the distinction between divine and bodily sensory instruments.
+
+### C. New source-facing files and precise translation claims
+
+1. `firstpass-II101-II120.js` and `firstpass-II121-II140.js`: **40 distinct original-page first-reading guides**, stable `P2.101`–`P2.140`, each with printed and PDF page references. These are *interpretive argument summaries*, **NOT complete Arabic–English transcriptions**.
+2. `source-selected-II101-II140.js`: **23 new short direct Arabic–English source selections** (a duplicate quotation from II:117 was deliberately removed rather than counting it again). Their total Arabic coverage remains only selected phrases; none completes a page.
+3. `source-aligned-II103-II139.js`: five additional chapter-heading, matn-versus-sharḥ or source-voice records, including a split example at **II:104** and the existential-attributes heading at II:118. Overlapping source words are not counted twice.
+4. One new lower-register selected phrase at **II:118** is placed in the **author-unassigned** marginalia layer, *not* in the positively attributed Wasīm layer. Its context is a contested entailment concerning divine freedom from originated qualities; the full surrounding printed note remains untranslated.
+5. `editorial/2026-11-02_STAGE13_II101_II140_SOURCE_AND_TRANSLATION.md`: the same page-first readings, selected directly translated Arabic, layer alignments and re-use citation for Wasīm II:117, generated from the JS source records.
+6. `editorial/2026-11-02_STAGE13_II101_II140_LAYER_LEDGER.csv`: 40 original printed-page rows distinguishing source-image inspection, new direct snippets, previously identified Wasīm material, unassigned lower snippets, and what is **not complete**.
+7. `editorial/2026-11-02_STAGE13_II101_II140_MARGIN_WITNESS_INVENTORY.csv`: coarse record of lower-register text on 40 pages; neither the exact total number of discrete notes nor the author of each note has yet been established. No fabricated Wasīm denominator is supplied.
+8. `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv`: updated exactly the II:101–140 page positions; all earlier and later records preserved.
+9. NAMA `index.html`, `reader-layered.js`, and `source-atlas.js`: load new source units, preserve English/Arabic/parallel and four distinct author/source layers, and allow the page-II:117 guide to jump to the existing source-matched Wasīm excerpt.
+
+### D. Cumulative coverage — accurately described
+
+| Measure | Stage 13 status |
+|---|---|
+| Source pages with accurate printed/PDF locators | **615/615 = 100% source indexing** |
+| Volume I pages with SOME English | **I:8–280 = 273** (I:222 is marginal-only) |
+| Volume II pages with SOME English | **II:2–140 = 139** (II:1 is a title/paratext leaf) |
+| Page-position presence proxy | **412/615 = 66.99%** with *some preliminary English*, NOT the percentage of Arabic words translated |
+| Newly inspected printed pages and new provisional guides | **40**, II:101–140 |
+| New selected directly translated upper snippets | **23**; overlapping aligned quotes are not additional text coverage |
+| New paired alignment/heading records | **5** |
+| New lower-register translated short excerpt with author unverified | **1**, II:118 |
+| Newly independently corroborated Wasīm units | **0**; existing II:117 remains source-matched and linked, not rewritten |
+| **Complete, independent critically certified upper + ALL lower-register pages** | **0/615 = 0%** |
+
+**This is NOT a two-thirds translation.** A selected Arabic phrase and English interpretive page summary often account for only a small fraction of the source, especially because lengthy lower marginal disputes remain untranslated. A true word-level or Wasīm-specific completion percentage is still not available.
+
+### E. Next source and critical translation protocol
+
+- **Next rapid source interval:** printed **II:141–160**, original PDF images **436–455**. Continue the existing running source and argument boundaries, not arbitrary excerpts presented as complete passages.
+- **Pass 1 (true full translation):** translate **every** Sanandajī clause and **every** small-print gloss unit continuously from Arabic, with stable lemma/sharḥ/margin IDs and page-boundary joins. Properly number and positively identify Wasīm notes separately from other writers.
+- **Pass 2 (source checking):** independently proofread the complete source Arabic and translation, particularly negation, conditional/temporal particles, reported opponents, changes of interlocutor and the exact status of impossibility/necessity.
+- **Pass 3:** collate distinct independent printed/manuscript witnesses and document variants and emendations.
+- **Pass 4:** review philosophical, theological, and terminological consistency, including necessity, mental relations, divine attributes and acts.
+- **Pass 5:** test Arabic–English alignment, manuscript/printed page references, desktop/mobile and right-to-left UI, note toggles, citation export, source PDF parity and reader reproducibility.
+- **Merge policy:** do not overwrite the separate al-Taftāzānī *Tahdhīb* project or perform a canonical three-layer critical merger before both projects are independently complete and critically definitive.
