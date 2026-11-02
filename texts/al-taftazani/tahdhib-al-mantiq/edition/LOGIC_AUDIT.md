@@ -1,5 +1,7 @@
 # Tahdhīb al-Manṭiq — Round 2 logical and textual audit
 
+> **Stage 79 (2 November 2026):** The non-modal finite-model verifier has been repaired to include **all 512** three-term interpretations, including empty terms; the prior 343-model enumeration could not test its existential-import exceptions correctly. See [Stage 79's scoped L10–L17 audit](STAGE79_MODAL_AND_MODEL_AUDIT.md). The historical modal results and the five Kalām readings remain uncertified; no corpus or PDF wording was changed.
+
 > **Stage 78 editorial correction (2 November 2026):** The Stage 77 claim that Cairo 1912 p. 12 contains «الموجبة الكلية ... السالبة الكلية» was **retracted after direct rereading**. Cairo reads «مع الموجبة الموجبتين، ومع السالبة السالبتين»; the longer wording belongs to the commentary-contained printed witness. Do not cite the old Stage 77 assertion as Cairo wording. See the [Stage 78 collation dossier](STAGE78_CAIRO_LOGIC_COLLATION.md).
 
 
