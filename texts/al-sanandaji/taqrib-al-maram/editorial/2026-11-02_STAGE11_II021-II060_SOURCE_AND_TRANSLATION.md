@@ -579,3 +579,43 @@ These are the **only words translated directly** in the stage's selection layer.
 - **Wasīm attribution:** no new independently authenticated Wasīm note-unit this stage; the previously confirmed fragment at II:117 remains preserved separately.
 - **Next rapid source interval:** II:61–80 (source PDF pp.356–375). The next *literal* full-text pass must proceed by stable clauses with complete word-by-word source coverage, author identification for each marginal note, argument chains, independent second reading, and witness comparison.
 - **Independent Tahdhīb matn:** not modified or merged.
+
+---
+
+# D. New paired source-layer alignments (quoted lemmata vs Sanandajī explanation)
+
+**Editorial qualification:** The printed parentheses are source typographic evidence for embedded lemma words; individual quoted spans are *not continuous* where ellipses are shown. The translations cover **selected** original clauses only, not full pages. The shared NAMA reader can turn the quoted-lemma layer on or off independently of the Sanandajī running text.
+
+### A.II.031.01 · Two arguments for the origination of bodies: changing accidents and elective agency (printed II:31, PDF 326)
+
+**Sanandajī's selected running explanation (not continuous):**
+
+> لما تشاهده من حدوث الحركات القائمة به وتجدد الأعراض الحالة فيه كالأضواء والألوان والأشكال ... في الإلهيات ... بل كل ممكن
+
+**English:** This is evident from the origination of the motions subsisting in the body and the renewal of accidents inhering in it, such as lights, colours and shapes. The related principle is to be discussed in theology. The point concerns every contingent being, not merely bodies.
+
+**Embedded lemma quotations — typographically parenthesized and separated by ellipses:**
+
+> أن الجسم محل للحوادث ... ولا شيء من القديم كذلك لما سيأتي ... والوجه الثالث أن الجسم ... أثر الفاعل المختار
+
+**English:** A body is the locus of originated occurrences. … Nothing beginningless is like that, as will be explained later. … The third approach is that a body … is the effect of a freely choosing agent.
+
+**Attribution/collation note:** The selected directly read argument stops before the printed opponents' subsequent claims and replies. Ellipses in Arabic and English denote omitted source words; no complete-page translation is asserted. The parenthesized lemmata are shown separately from Sanandajī's running explanatory words. They are quotations within this work, not a merger with the independent Tahdhīb matn edition.
+
+### A.II.039.01 · Simple and composite bodies: the opening of the philosophers' classification (printed II:39, PDF 334)
+
+**Sanandajī's selected running explanation (not continuous):**
+
+> في تقسيم الجسم وبيان أقسامه على ما قالت الحكماء، وهو أن الجسم الطبيعي ... حقيقة في نفس الأمر ... يتركب منها ... وهو قسمان: الأفلاك والكواكب ... وهو قسم واحد وهو العناصر الأربعة
+
+**English:** The section concerns the division of body and the explanation of its kinds according to the philosophers. A natural body is meant here, with composition understood as something obtaining in reality itself. If a body is not so composed, it is simple. In the celestial division he identifies two classes, the heavenly spheres and stars; in the elemental division he identifies the four elements.
+
+**Embedded lemma quotations — typographically parenthesized and separated by ellipses:**
+
+> الجسم ... إن تألف ... من أجسام مختلفة الطبائع فمركب وإلا ... فبسيط ... البسيط إما فلكي ... أو عنصري
+
+**English:** Body … if constituted by bodies of different natures, is composite; otherwise … simple. … The simple is either celestial … or elemental.
+
+**Attribution/collation note:** The Arabic uses editorial ellipses to preserve the difference between parenthesized quotations and the commentary's bridging explanation. Not all upper-page clauses are transcribed. These classifications are reported as the philosophers' account; do not state that Sanandajī independently endorses their natural philosophy.
+
+The dossier and the NAMA page now share these exact selected source excerpts. They do not revise any already translated Tahdhīb matn in the separate chat.
