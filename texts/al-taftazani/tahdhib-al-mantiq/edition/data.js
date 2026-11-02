@@ -5,7 +5,7 @@ window.GNAMMA_CRITICAL_CORPUS={
   "author": "Saʿd al-Dīn al-Taftāzānī",
   "edition": "Continuous bilingual 19-unit logic working text",
   "witness": "Cairo 1912 and compared printed logic text; original pagination recorded per unit",
-  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn. Stage83 Cairo L12–L13 additional printed-line fidelity repairs (indefinite «نسبتين», omitted «معاً», «جميع التقادير للمقدم», repeated governing lām in contradiction). Stage85 direct Cairo L10–L11 p8–9 proofing removes explanatory insertions from Arabic, restores p8 subject condition, source modal definiteness/negation/prepositions and the p8–p9 seam of specific possibility. Traditional modal inference proofing remains outstanding. Stage86 direct Cairo p11 L15 restoration: «في العكس المستوي ... وبين انعكاس الخاصتين», without borrowed «بالافتراض فتأمل»; ninth distinct printed-form comparison recorded.",
+  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn. Stage83 Cairo L12–L13 additional printed-line fidelity repairs (indefinite «نسبتين», omitted «معاً», «جميع التقادير للمقدم», repeated governing lām in contradiction). Stage85 direct Cairo L10–L11 p8–9 proofing removes explanatory insertions from Arabic, restores p8 subject condition, source modal definiteness/negation/prepositions and the p8–p9 seam of specific possibility. Traditional modal inference proofing remains outstanding. Stage86 direct Cairo p11 L15 restoration: «في العكس المستوي ... وبين انعكاس الخاصتين», without borrowed «بالافتراض فتأمل»; ninth distinct printed-form comparison recorded. Stage87 corrected four short Cairo L17 expressions, registered tenth printed-form comparison and explicitly flagged the still ambiguous list connector.",
   "navigation_kind": "division",
   "unit_type": "editorial divisions",
   "start_page": 1,
@@ -394,11 +394,16 @@ window.GNAMMA_CRITICAL_CORPUS={
     {
       "id": "L.17",
       "page": 17,
-      "ar": "فصل. الشرطي من الاقتراني إما أن يتركب من متصلتين أو منفصلتين أو حملية ومتصلة أو حملية ومنفصلة أو متصلة ومنفصلة، وينعقد فيه الأشكال الأربعة وفي تفصيلها طول. فصل. الاستثنائي ينتج من المتصلة وضع المقدم ورفع التالي، والحقيقية بوضع كل كمانعة الجمع ورفعه كمانعة الخلو، وقد يختص باسم قياس الخلف ما يقصد به إثبات المطلوب بإبطال نقيضه، ومرجعه إلى استثنائي واقتراني.",
-      "en": "Chapter. The conditional variety of conjunctive syllogism may be composed of two connected conditionals, two disjunctives, a categorical and a connected conditional, a categorical and a disjunctive, or a connected and a disjunctive proposition. The four figures can be formed in it. A detailed treatment would be lengthy. Chapter. The exceptive syllogism yields a conclusion, from a connected conditional, by affirming its antecedent or denying its consequent; from a true disjunctive, it yields a conclusion when either member is affirmed, as in the preventing-conjunction form, or denied, as in the preventing- exclusion form. It may specifically be called a syllogism by reductio [qiyās al-khalf]: this is the procedure that aims to establish what is sought by invalidating its contradictory. It reduces to a combination of an exceptive and a conjunctive syllogism.",
+      "ar": "فصل. الشرطي من الاقتراني إما أن يتركب من المتصلتين أو منفصلتين أو حملية ومتصلة أو حملية ومنفصلة أو متصلة ومنفصلة، وتنعقد فيه الأشكال الأربعة وفي تفصيلها طول. فصل. الاستثنائي ينتج من المتصلة وضع المقدم ورفع التالي، والحقيقية وضع كل كمانعة الجمع ورفعه كمانعة الخلو، وقد يخص باسم قياس الخلف ما يقصد به إثبات المطلوب بإبطال نقيضه، ومرجعه إلى استثنائي واقتراني.",
+      "en": "Chapter. The conditional variety of conjunctive syllogism may be composed of two connected conditionals, two disjunctives, a categorical and a connected conditional, a categorical and a disjunctive, or a connected and a disjunctive proposition. The four figures can be formed in it. A detailed treatment would be lengthy. Chapter. The exceptive syllogism yields a conclusion, from a connected conditional, by affirming its antecedent or denying its consequent; from a true disjunctive, it yields a conclusion when either member is affirmed, as in the preventing-conjunction form, or denied, as in the preventing- exclusion form. The designation ‘syllogism by reductio’ [qiyās al-khalf] may be reserved specifically for an argument intended to establish the desired conclusion by refuting its contradictory. It reduces to a combination of an exceptive and a conjunctive syllogism.",
       "status": "B",
       "source_location": "13",
-      "notes": [],
+      "notes": [
+        {
+          "type": "Stage87 direct Cairo p13 L17 and different printed text",
+          "text": "Cairo 1330/1912 p.13 clearly gives «من المتصلتين», «وتنعقد فيه الأشكال الأربعة», «والحقيقية وضع كل», and «وقد يخص باسم قياس الخلف». The matn printed inside Sharḥ al-Tahdhīb (online p.15) instead has «من متصلتين», «وينعقد», «ومن الحقيقية وضع كل», and «وقد يختص باسم قياس الخلف». These are printed-source differences, not collated manuscript readings. A distinct difficult Cairo sequence in the middle of the fivefold conditional-conjunctive list appears graphically close to «أو من حملية أو متصلة», but is not adopted as a certified positive variant because it could require a syntactic/typographical repair; the current working «أو حملية ومتصلة» is an editorial reconstruction at that narrow locus, to be checked against an independent witness."
+        }
+      ],
       "title": "Conjunctive conditional and exceptive syllogisms",
       "status_text": ""
     },
@@ -575,6 +580,13 @@ window.GNAMMA_CRITICAL_CORPUS={
       "other": "حكم السوالب في المستوي ... والبيان البيان والنقض النقض وقد بُيّن انعكاس الخاصتين من الموجبة الجزئية ههنا ومن السالبة الجزئية ثمة إلى العرفية الخاصة بالافتراض. فتأمل",
       "source": "https://www.arabicdawateislami.net/bookslibrary/3507/page/14",
       "status": "Stage86 independently compared PRINTED forms: Cairo p11 unvowelled «وبين» and shorter ending; alternate has «وقد بُيّن» + «بالافتراض. فتأمل». This is not a collated manuscript variant; do not supply an iftirāḍ proof as Cairo matn."
+    },
+    {
+      "id": "L.17",
+      "cairo": "الشرطي من الاقتراني إما أن يتركب من المتصلتين ... وتنعقد فيه الأشكال الأربعة ... والحقيقية وضع كل كمانعة الجمع ... وقد يخص باسم قياس الخلف",
+      "other": "الشرطي من الاقتراني إما أن يتركب من متصلتين ... وينعقد فيه الأشكال الأربعة ... ومن الحقيقية وضع كل كمانعة الجمع ... وقد يختص باسم قياس الخلف",
+      "source": "https://www.arabicdawateislami.net/bookslibrary/3507/page/15",
+      "status": "Stage87 Cairo 1912 p13 vs separately typeset commentary-containing matn, online p15. The uncertain mixed-premise connector is not promoted to a definitive text; all forms remain printed-level comparisons without manuscript priority."
     }
   ],
   "print_corrections_stage78": [
