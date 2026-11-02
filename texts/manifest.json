@@ -20,14 +20,15 @@
         "metaphysics",
         "Avicennian–Akbarian encounter"
       ],
-      "status": "partial-matn-working-edition",
+      "status": "partial-matn-working-edition-12-loci",
       "language": [
         "ar-selected",
         "en-selected"
       ],
       "url": "texts/al-turka/qawaid-al-tawhid/",
-      "note": "Eleven lemmata of the ancestor's original matn (Āshtiyānī pp. 48–72), extracted from his descendant's Tamhīd al-Qawāʿid. Scholarly Arabic-English working translation and reported printed variants; NOT a complete translation or manuscript-collated critical text. Sharḥ not yet translated. Lumbard (Anthology IV, pp. 464–479) checked as an English comparator; its commentary and other-work quotations excluded.",
-      "comparative_translation_notes_url": "texts/al-turka/qawaid-al-tawhid/editorial/LUMBARD_COMPARISON.md"
+      "note": "Eleven lemmata of the ancestor's original matn (Āshtiyānī pp. 48–72), extracted from his descendant's Tamhīd al-Qawāʿid. Scholarly Arabic-English working translation and reported printed variants; NOT a complete translation or manuscript-collated critical text. Sharḥ not yet translated. Lumbard (Anthology IV, pp. 464–479) checked as an English comparator; its commentary and other-work quotations excluded. Second stage distinguishes the opponent's graded-existence account (pp. 67–71) from the ancestor's critical replies (pp. 72–74).",
+      "comparative_translation_notes_url": "texts/al-turka/qawaid-al-tawhid/editorial/LUMBARD_COMPARISON.md",
+      "matn_units": 12
     },
     {
       "id": "ghazali-mustasfa",
