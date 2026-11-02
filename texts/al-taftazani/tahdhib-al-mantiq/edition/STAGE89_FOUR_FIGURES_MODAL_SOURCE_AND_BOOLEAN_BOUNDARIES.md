@@ -1,5 +1,7 @@
 # Tahdhīb Stage 89 — Four-figure modal conditions: source-aligned argument register
 
+> **Stage90 copy-text supersession (2 Nov 2026):** A direct enlargement of Cairo original p.12 after this dossier was composed confirmed «وكون الممكنة مع ضرورية» and «وكليتهما مع الموجبة الجزئية موجبة جزئية إن لم يكن بسلب وإلا فسالبة». This replaces the provisional «ضرورة / كليتها / جزئية موجبة / تكن». The Stage89 formal model, cited secondary text, and conditional historical caveats are unchanged. See [Stage90 original-print corrections](STAGE90_CAIRO_L16_FINAL_RESULT_PHRASE.md).
+
 **Date:** 2 November 2026. **Work:** Saʿd al-Dīn al-Taftāzānī, *Tahdhīb al-Manṭiq*, editorial **L.16**, Cairo 1330/1912 original **pp. 11–12**.
 
 ## Method and witness layers
@@ -102,7 +104,7 @@ These are carefully limited **countermodels to an unqualified Boolean reading**,
 
 ### The compressed negative result and an English correction
 
-The sequence **«جزئية موجبة إن لم تكن بسلب وإلا فسالبة»** should *not* be translated as though **every negative conclusion must be particular**: Y p. 146 explicitly identifies pattern **3**, a universal-negative minor with universal-affirmative major, as yielding a **universal negative**. Y notes that the author's compression invites a misleading narrower construal. The revised English L16 keeps the short list but states in brackets that a negative conclusion may be universal or particular according to the pattern.
+The **Stage90-corrected Cairo reading** **«موجبة جزئية إن لم يكن بسلب وإلا فسالبة»** should *not* be translated as though **every negative conclusion must be particular**: Y p. 146 explicitly identifies pattern **3**, a universal-negative minor with universal-affirmative major, as yielding a **universal negative**. Y notes that the author's compression invites a misleading narrower construal. The revised English L16 keeps the short list but states in brackets that a negative conclusion may be universal or particular according to the pattern.
 
 This distinction is an **interpretative correction**, not a revision of Cairo's photographed Arabic.
 
@@ -116,7 +118,7 @@ This distinction is an **interpretative correction**, not a revision of Cairo's 
 
 ## VII. Editorial effects and unchanged counts
 
-- **L.16 bilingual reader:** no change to Cairo Arabic; English clarifies the figure-II possibility restriction and the figure-IV universal-negative exception. Two new separately sourced commentary/explanatory notes identify the quotation and voice layers.
+- **L.16 bilingual reader:** Stage89 made no Arabic change and clarified the figure-II possibility restriction and figure-IV negative-quantity exception in English. **Stage90 subsequently rechecked Cairo p.12 and corrected its Arabic at «مع ضرورية» and «وكليتهما ... موجبة جزئية إن لم يكن بسلب»**. This note supersedes Stage89's previous transcription of that closing sequence. Two new separately sourced commentary/explanatory notes identify the quotation and voice layers.
 - **Executable QA:** new `verify_fourth_figure_scope.py` with eight numbered configurations, 512 models, existential qualifications and explicit all-nonempty countermodels for 6–8; CI configured to invoke and archive the report.
 - **Logic:** 19 continuous bilingual editorial divisions, **10 printed-text comparisons**; manuscript collation and full historical modality proofs incomplete.
 - **Kalām:** still **1,044** bilingual clauses, **110/113** Cairo printed pages single-print checked; unresolved pp. **77**, **100**, **124**; no change to separate Sanandajī–Wasīm translation project.
