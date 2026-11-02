@@ -10,8 +10,15 @@
 - Eleven short authorial lemmata, QT-001 through QT-011, reproduced in normalized Arabic and translated into scholarly English.
 - Printed locus mapping: Āshtiyānī's Arabic pagination pp. **48, 49, 52, 53–54, 55, 59–60, 63–64, 67–68, 71–72**.
 - Exclusion of the descendant's own extensive introduction (beginning at printed p. 3) and commentary from the matn layer.
-- First-pass register of seven reported printed variants within the ancestral quotations, without attributing readings to uninspected manuscripts.
+- First-pass register of seven reported printed variants in the first six ancestral quotations; none yet independently assigned to manuscript witnesses, without attributing readings to uninspected manuscripts.
 - Translator notes informed by the sharḥ, particularly his identification of Peripatetics and mutakallimūn (p. 49), and his gloss on *ḥads* (p. 54).
+
+## Stage 02: the Avicennian–Akbarian dialectic (pp. 63–74)
+
+- **QT-007 (pp. 63–64):** the necessary reality is not universal *qua* universal, nor specified through a negative or positive distinct qualification; otherwise composition or extrinsic dependence follows.
+- **QT-008–010 (pp. 67, 68, 71):** a position is introduced in the form of an **objection**, elaborating a nature to which common existence is attached and a **tashkīk** account of its predication. These are *qāla* quotations but **not the ancestor's own endorsed conclusion**.
+- **QT-011–012 (pp. 72, 74):** a reply based on the intrinsic possibility of hypothesized individuals of a necessary nature and the alternative of intrinsic determination. The commentator’s intervening paragraphs are excluded.
+- The new passages have been checked against the electronic Arabic page transcriptions **only**. They are provisional; none has been image- or manuscript-collated. Joseph Lumbard's selection ends during the commentary after QT-006 and cannot be used as a translation comparator for these later lemmata.
 
 ## What this edition is NOT
 - NOT the entire original treatise.
