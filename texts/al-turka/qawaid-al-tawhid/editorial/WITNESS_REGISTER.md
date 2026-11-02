@@ -64,6 +64,33 @@ These are still *one printed edition's electronic transcription*. The old matn q
 
 **Unresolved QT-025 reading:** source p. 112 has **تكون طبيعته عن تلك الأكوان**; commentary p. 114 explains the conclusion with **عين طبيعتها**, suggesting a likely transcription/print problem. Preserve the raw **عن** until witnessed. QT-027 prints alternatives **عرفت/عرّف**, **التحقيق/التحقق**. The new English reflects authorial reasoning but is not a diplomatic collated critical text.
 
+## Stage 05 additional consulted printed pages (QT-029–042)
+
+These are **digital transcriptions** of the original printed Arabic pagination; they are **not** independent manuscripts or print-image checks:
+
+| Locus | Original page(s) | Online printed-page indices (printed p. + 196) |
+|---|---|---|
+| QT-029 | 130–131 | [130](https://ablibrary.net/book_content/b/17638/326?lang=ar), [131](https://ablibrary.net/book_content/b/17638/327?lang=ar) |
+| QT-030 | 133 | [133](https://ablibrary.net/book_content/b/17638/329?lang=ar) |
+| QT-031 | 137–138 | [137](https://ablibrary.net/book_content/b/17638/333?lang=ar), [138](https://ablibrary.net/book_content/b/17638/334?lang=ar) |
+| QT-032 | 141 | [141](https://ablibrary.net/book_content/b/17638/337?lang=ar) |
+| QT-033 | 143–144 | [143](https://ablibrary.net/book_content/b/17638/339?lang=ar), [144](https://ablibrary.net/book_content/b/17638/340?lang=ar) |
+| QT-034 | 148–149 | [148](https://ablibrary.net/book_content/b/17638/344?lang=ar), [149](https://ablibrary.net/book_content/b/17638/345?lang=ar) |
+| QT-035 | 154 | [154](https://ablibrary.net/book_content/b/17638/350?lang=ar) |
+| QT-036 | 160–161 | [160](https://ablibrary.net/book_content/b/17638/356?lang=ar), [161](https://ablibrary.net/book_content/b/17638/357?lang=ar) |
+| QT-037 | 164 | [164](https://ablibrary.net/book_content/b/17638/360?lang=ar) |
+| QT-038 | 167 | [167](https://ablibrary.net/book_content/b/17638/363?lang=ar) |
+| QT-039 | 172–173 | [172](https://ablibrary.net/book_content/b/17638/368?lang=ar), [173](https://ablibrary.net/book_content/b/17638/369?lang=ar) |
+| QT-040 | 180 | [180](https://ablibrary.net/book_content/b/17638/376?lang=ar) |
+| QT-041 | 185–186 | [185](https://ablibrary.net/book_content/b/17638/381?lang=ar), [186](https://ablibrary.net/book_content/b/17638/382?lang=ar) |
+| QT-042 | 189–190 | [189](https://ablibrary.net/book_content/b/17638/385?lang=ar), [190](https://ablibrary.net/book_content/b/17638/386?lang=ar) |
+
+The chain of quoted matn has reached printed p. **190**. A further independent matn quote **begins at printed p. 193**; its remainder and follow-on source boundary require inspection and are **not** within this current translation stage. The fact that the digital print at p. 192 displays only a fragment is an added reason to consult the page image before claiming exhaustive extraction.
+
+**Substantive issues for further collation:** QT-030's pair **الفرضيين/العرضيين**; QT-031's clause **يكون حاصلة**; QT-033's **الجود/الوجود**; QT-034's **أنبتوها/أثبتوها** (the latter is an editorial conjecture, not a witnessed variant); QT-035's apparent extra **الوجود** after an embedded variant; QT-036's repeated clause and three disputed readings of *al-Ḥikmah al-Manīʿah*; QT-037 **الإنية المدركة المتصرفة الأخيرة/في المرتبة الأخيرة**; QT-039's variant **الحقائق الظلية/المجالي الظلمانية**; QT-041's awkward **مرئي بالذات بالعرض**; QT-042 **موقياً/موق**.
+
+**Important authorial layers:** QT-041 has a nested citation from *Fuṣūṣ al-Ḥikam* followed by the ancestor's own **ففيه نظر** critique. QT-042 reports a further objection and replies within the ancestor's own words. The grandson's subsequent defence of Ibn ʿArabī must not be silently substituted for the grandfather's reply.
+
 ## Independent manuscript leads — NOT yet collated
 - **M1 — Mashhad, Farhang va Honar, MS alif-28:** catalogue reports a copy dated 851 AH, scribe Aḥmad ibn ʿAlī al-Bayhaqī al-Sabzawārī.
 - **M2 — Mashhad, Āstān-i Quds Riḍawī, MS 812:** catalogue reports 18 folios, dated 1067 AH.
