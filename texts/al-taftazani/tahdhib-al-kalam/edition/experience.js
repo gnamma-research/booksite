@@ -7,6 +7,11 @@ const corpus=window.GNAMMA_CRITICAL_CORPUS;
 const api=window.GnammaTahdhibReader;
 if(!corpus||!api||!Array.isArray(corpus.units))return;
 const vowels=window.GNAMMA_TAHDHIB_DIACRITICS;
+const machine=window.GNAMMA_TAHDHIB_MACHINE_VOWELS;
+const machineAvailable=!!(vowels?.strip&&machine?.schema==='gnamma-tahdhib-unverified-machine-vowels-v1'&&
+ machine.work===corpus.work&&machine.unit_count===corpus.units.length&&
+ corpus.units.every(u=>typeof machine.units?.[u.id]==='string'&&vowels.strip(machine.units[u.id])===vowels.strip(u.ar)));
+
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
 const isLogic=api.isDivision;
 const idFor=u=>'u-'+u.id.replace(/[^a-zA-Z0-9-]/g,'-');
@@ -17,7 +22,7 @@ function read(key){try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{
 const old=read(key);
 const prefs={
  mode:['study','flow','immersive'].includes(old.mode)?old.mode:'flow',
- vocalization:old.vocalization==='assisted'?'assisted':'original',
+ vocalization:old.vocalization==='machine'&&machineAvailable?'machine':old.vocalization==='assisted'?'assisted':'original',
  arFont:['amiri','scheherazade','noto'].includes(old.arFont)?old.arFont:'amiri',
  enFont:['literary','sans','accessible'].includes(old.enFont)?old.enFont:'literary',
  pageRefs:old.pageRefs!==false
@@ -43,8 +48,9 @@ function createTools(){
  }
  box.append(group);
  const voc=el('div','gn-vowel-choice segments');voc.setAttribute('role','group');voc.setAttribute('aria-label','Arabic vocalization');
- for(const [id,name] of [['original','Arabic original'],['assisted','Arabic · vowels†']]){
+ for(const [id,name] of [['original','Arabic original'],['assisted','Arabic · vowels†'],['machine',machineAvailable?'Machine vowels‡':'Machine draft unavailable']]){
   const b=control(name);b.type='button';b.dataset.vowelMode=id;b.textContent=name;
+  if(id==='machine'&&!machineAvailable){b.disabled=true;b.title='Not yet published. The original and partial-aid options are usable.'}
   b.addEventListener('click',()=>{prefs.vocalization=id;savePrefs();apply();refreshArabic()});voc.append(b)
  }
  box.append(voc);
@@ -54,7 +60,7 @@ function createTools(){
  makeSelect('English type','gn-en-font',[['literary','Literary serif'],['sans','Readable sans'],['accessible','Lexend']],prefs.enFont)
  );
  const ref=el('label','gn-reference-choice');const refCheck=el('input');refCheck.type='checkbox';refCheck.id='gn-page-references';refCheck.checked=prefs.pageRefs;ref.append(refCheck,document.createTextNode(' Show discreet source-page locators'));panel.append(ref);
- const vocInfo=el('p','gn-vowels-disclaimer','† Assisted vowel marks are partial learning aids. They are not an independently collated or fully grammatically verified reading.');
+ const vocInfo=el('p','gn-vowels-disclaimer','† Assisted vowel marks are partial and manually sampled. ‡ Machine vowels, if published, are automatic and UNREVIEWED: possible grammar/case-ending errors. Neither is a critical manuscript reading.');
  panel.append(vocInfo);options.append(summary,panel);box.append(options);
  box.querySelector('#gn-ar-font')?.addEventListener('change',e=>{prefs.arFont=e.target.value;savePrefs();apply()});
  box.querySelector('#gn-en-font')?.addEventListener('change',e=>{prefs.enFont=e.target.value;savePrefs();apply()});
@@ -80,8 +86,8 @@ function apply(){
  $$('[data-vowel-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.vowelMode===prefs.vocalization)));
  const n=$('#gn-vowelling-status');
  if(n){
-  n.hidden=prefs.vocalization!=='assisted'||prefs.mode==='study';
-  n.textContent=prefs.vocalization==='assisted'?'Assisted, partially vowelled Arabic · original consonantal text preserved · not a verified vocalized edition':'';
+  n.hidden=prefs.vocalization==='original'||prefs.mode==='study';
+  n.textContent=prefs.vocalization==='assisted'?'Assisted PARTIAL vowels · original Arabic letters preserved · not a verified vocalized edition':prefs.vocalization==='machine'?'Machine-generated vowelled candidate · UNREVIEWED grammatical endings · original Arabic letters preserved':'';
  }
  flow.dataset.view=api.getState().view;
 }
@@ -96,6 +102,7 @@ function isOriginalHeading(u){
  return s.length<=100&&/^(?:الباب|الفصل|فصل|المقصد|مقصد)(?:\s|[.:،])/u.test(s);
 }
 function arabic(u){
+ if(prefs.vocalization==='machine'&&machineAvailable){const proposed=machine.units?.[u.id];if(typeof proposed==='string'&&vowels.strip(proposed)===vowels.strip(u.ar))return proposed;}
  if(prefs.vocalization==='assisted'&&vowels?.get)return vowels.get(u).text;
  return u.ar||'';
 }
@@ -316,5 +323,5 @@ if(prefs.mode!=='study'){
  if(api.getState().scope!=='continuous')$('[data-scope="continuous"]')?.click();
  else buildFlow();
 }
-window.GnammaTahdhibExperience={getPrefs:()=>({...prefs}),setMode,flow:buildFlow,closeNotebook,assisted:u=>arabic(u),getNotes:()=>({...notes})};
+window.GnammaTahdhibExperience={getPrefs:()=>({...prefs,machineAvailable}),setMode,flow:buildFlow,closeNotebook,assisted:u=>arabic(u),getNotes:()=>({...notes})};
 })();
