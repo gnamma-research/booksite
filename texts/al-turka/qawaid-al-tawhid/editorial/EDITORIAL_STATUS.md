@@ -7,8 +7,8 @@
 3. **Then, and only then, separately edit/translate the sharḥ:** the descendant's *a-qūlu* explanations must occupy a different text/witness layer and must not enter the ancestor's English prose.
 
 ## Current work completed
-- **52** source-located ancestor quotation lemmata, QT-001–QT-052, reproduced in normalized but source-located Arabic and independently translated into scholarly English (not manuscript-collated).
-- Printed locus mapping: **Āshtiyānī's Arabic pp. 48–237**, with separate source-page links for every quotation; the many pages of the descendant's commentary are not falsely represented as translated matn.
+- **61** source-located ancestor quotation lemmata, QT-001–QT-061, reproduced in normalized but source-located Arabic and independently translated into scholarly English (not manuscript-collated).
+- Printed locus mapping: **Āshtiyānī's Arabic pp. 48–270**, with separate source-page links for every quotation; the many pages of the descendant's commentary are not falsely represented as translated matn.
 - Exclusion of the descendant's own extensive introduction (beginning at printed p. 3) and commentary from the matn layer.
 - First-pass register of seven reported printed variants in the first six ancestral quotations; none yet independently assigned to manuscript witnesses, without attributing readings to uninspected manuscripts.
 - Translator notes informed by the sharḥ, particularly his identification of Peripatetics and mutakallimūn (p. 49), and his gloss on *ḥads* (p. 54).
@@ -102,6 +102,30 @@ Six further **ancestor's قال quotations, QT-047–QT-052**, have been separat
 
 **Open textual cruxes:** QT-047 المناقض/المناقص, تكليفية/تكلّفية, obscure التفرس; QT-048 authorial agreement يدرك with الحقيقة; QT-049 المأخوذة/الموجودة and reported alternatives; QT-050 أفعال/أفعالها; QT-051 وبصدر/ويصدر conjecture; QT-052 displaced bصفة كمالية ... ببعض الصفات الممكنة. Printed-page photos and independent manuscripts are mandatory before treating these as settled.
 
+## Stage 08: surviving conclusion of the ancestor's Qawāʿid, pp. 243–270
+
+**Nine newly extracted and translated original lemmata, QT-053–QT-061.**
+
+| Unit | Arabic printed pp. | Boundaries and position |
+|---|---|---|
+| QT-053 | 243–244 | Sensory, estimative and intellectual faculties can remain active under the holy faculty; replies to the perfection–comprehensiveness objection. Ends before (1) أقول p.244. |
+| QT-054 | 248 | Beyond the *discursive* faculty is not beyond intellect in every sense; expression is possible. Printed phrase duplicated; reported as corrupt. |
+| QT-055 | 249–250 | Contemplation and the subordination of the bodily powers; stronger opposing causes can displace habitual activity. |
+| QT-056 | 252–255 | Extended defence of balanced discipline and properly qualified asceticism; condemns excessive hunger/sleeplessness; moral preparation necessary for contemplative and demonstrative inquiry alike. P.254–255 Persian notes excluded. |
+| QT-057 | 257–258 | **Reported** philosophers' assessment of contemplative discipline as possible but rare/difficult. Not the final authorial view. |
+| QT-058 | 260 | **Author's own reply**, introduced وأما نحن: both routes require ordered psychic faculties, moderate temperament, and avoidance of distraction. |
+| QT-059 | 262–264 | Senses are preparatory in **both** paths and the effusive Principle is the source of intelligible knowledge. **SUBSTANTIAL LACUNA:** the editor reports omissions longer than one page in the ancestor's text. The surviving abbreviated quotation is translated but cannot be treated as textually complete. |
+| QT-060 | 266–267 | **Both routes are genuine**; contemplation and disciplined reasoning each require purification; critique of disputatious book learning without virtue. |
+| QT-061 | 269–270 | The closing *daqīqa*: conflicting unveilings require discrimination informed by logic and theoretical knowledge, unless a perfected guide provides direction. **Author explicitly ends his treatise** at p.270. |
+
+### Status of original matn versus edition
+
+**Established:** The grandson's commentary embeds original quotations through printed p.270, where the grandfather says **«وهذا آخر ما أردنا أن نورده في هذه الرسالة»**. The last marked original quotation is QT-061; the descendant resumes with **(1) أقول** on p.270 and concludes his commentary separately on p.274. The **61** identified printed lemmata are available in aligned Arabic/English.
+
+**Not established:** This is not a complete ancestral critical edition. Most importantly the base's marginal note at pp.262–263 states that its exemplars omitted **more than one page** of the original at QT-059. Other conspicuous corruptions include a duplicated clause QT-054; a logically inverted negative in QT-056; unusual grammatical forms at QT-053/055; and several disputed readings QT-060/061. Earlier lemmata also require page-image verification and comparison against independent manuscripts (e.g. early Mashhad and AQR holdings).
+
+**Do not backfill** the missing ancestor text from the grandson's **أقول** paraphrase, Persian editor remarks, or modern interpretive summaries. Obtain independent shorter-matn manuscript witnesses and alternative editions before calling the translation textually complete.
+
 ## What this edition is NOT
 - NOT the entire original treatise.
 - NOT a manuscript-collated, stemmatically established, fully critical edition.
@@ -135,7 +159,7 @@ Preserve *wujūd* (existence), *wujūdāt khāṣṣa* (particular existences), 
 
 **English translation comparator:** Joseph E. B. Lumbard, “Establishing the Principles,” *An Anthology of Philosophy in Persia*, vol. IV, pp. 464–479. A clause-by-clause [Lumbard comparison and attribution audit](LUMBARD_COMPARISON.md) now tracks his technical choices, identifies his editorial-heading note, and distinguishes quotations from the ancestor's *other* works from the original *Qawāʿid* matn. The new English translation is independently authored, not reproduced from Lumbard.
 
-_Gnamma Research · editorial status v0.6 · 2 November 2026_
+_Gnamma Research · editorial status v0.8 · 3 November 2026_
 
 
 **Technical bridge glossary:** [Matn-anchored Avicennian–Akbarian terminology](TECHNICAL_GLOSSARY.md), with distinct layers for original claims, objections, and later glosses.
