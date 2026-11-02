@@ -44,4 +44,6 @@ Preserve *wujūd* (existence), *wujūdāt khāṣṣa* (particular existences), 
 
 **External bibliography and witness leads:** see [WITNESS_REGISTER.md](WITNESS_REGISTER.md). **Current text:** [parallel-matn.md](../data/parallel-matn.md).
 
+**English translation comparator:** Joseph E. B. Lumbard, “Establishing the Principles,” *An Anthology of Philosophy in Persia*, vol. IV, pp. 464–479. A clause-by-clause [Lumbard comparison and attribution audit](LUMBARD_COMPARISON.md) now tracks his technical choices, identifies his editorial-heading note, and distinguishes quotations from the ancestor's *other* works from the original *Qawāʿid* matn. The new English translation is independently authored, not reproduced from Lumbard.
+
 _Gnamma Research · editorial status v0.1 · 2 November 2026_
