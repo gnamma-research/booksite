@@ -88,3 +88,6 @@ Preserve *wujūd* (existence), *wujūdāt khāṣṣa* (particular existences), 
 **English translation comparator:** Joseph E. B. Lumbard, “Establishing the Principles,” *An Anthology of Philosophy in Persia*, vol. IV, pp. 464–479. A clause-by-clause [Lumbard comparison and attribution audit](LUMBARD_COMPARISON.md) now tracks his technical choices, identifies his editorial-heading note, and distinguishes quotations from the ancestor's *other* works from the original *Qawāʿid* matn. The new English translation is independently authored, not reproduced from Lumbard.
 
 _Gnamma Research · editorial status v0.4 · 2 November 2026_
+
+
+**Technical bridge glossary:** [Matn-anchored Avicennian–Akbarian terminology](TECHNICAL_GLOSSARY.md), with distinct layers for original claims, objections, and later glosses.
