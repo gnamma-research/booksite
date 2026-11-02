@@ -70,10 +70,14 @@ pattern_by_number={n:(minor,major,conclusion) for n,minor,major,conclusion in PA
 assert pattern_by_number[6]==("O","A","O")
 assert pattern_by_number[7]==("A","O","O")
 assert pattern_by_number[8]==("E","I","O")
-# The sixth mood's ONLY NEGATIVE premise is the minor, not the major.
-# Nevertheless, the received Arabic of Shamsiyyah §103 / signed gloss
-# speaks of "الكبرى في الضرب السادس من المنعكسة السوالب".
-# Record as an unresolved source-internal crux rather than changing witnesses.
+# Stage92 refined reading: mode 6 has negative MINOR and affirmative MAJOR.
+# In Shamsiyyah §103, "المنعكسة السوالب" can denote those proposition
+# CLASSES whose NEGATIVE FORMS convert; it does NOT imply that the
+# actual major premise is negative. The expanded earlier commentary
+# spells out the two independent requirements: the minor is one of the
+# two specially convertible negatives, and the affirmative major
+# belongs to the class with convertible negative counterparts.
+# Quṭb al-Dīn al-Rāzī's Taḥrīr al-Qawāʿid spells out the six classes.
 assert pattern_by_number[6][0] == "O" and pattern_by_number[6][1] == "A"
 
 bridges={}
@@ -120,12 +124,15 @@ bridges["8"]={
   "intermediate_step_valid":True,
   "license_proved_by_boolean_model":False,
 }
-source_direction_issue={
-  "earlier_source":"al-Katibi, Shamsiyyah, §§95.8, 103–104; Tony Street 2024 pp.65, 68–69",
+sixth_modal_source_clarification={
+  "earlier_source":"al-Katibi, Shamsiyyah §§95.8, 103–104; Tony Street 2024 pp.65,68–69",
   "reported_Arabic":"كون الكبرى في السادس من المنعكسة السوالب",
-  "semantic_problem":"sixth mood has a negative minor and affirmative major",
-  "independent_internal_evidence":"§104 explicitly obtains the sixth by conversion of the minor",
-  "editorial_status":"unresolved internal source wording; do not silently emend الكبرى to الصغرى",
+  "sixth_pattern":"negative minor O(M,S), affirmative major A(P,M)",
+  "major_class_reading":"the affirmative major belongs to a class whose negative form converts",
+  "distinct_minor_reading":"the minor negative itself is one of the two specially convertible modal negatives",
+  "source_for_expansion":"2019 edition of Shamsiyyah self-commentary attributed to al-Katibi, printed p.89",
+  "expository_source":"Qutb al-Din al-Razi, Tahrir al-qawaid, p.419: six classes whose universal negatives convert",
+  "editorial_status":"Stage92: apparent major/minor contradiction retracted as premature; distinguish modal class from currently negative premise",
 }
 
 report={
@@ -138,7 +145,7 @@ report={
     "existence_required":[{"ordinal":1,"term":"P"},{"ordinal":4,"term":"M"}],
     "not_valid_merely_by_nonemptiness":[6,7,8],
     "reduction_bridges":bridges,
-    "shamsiyya_sixth_major_minor_crux":source_direction_issue,
+    "shamsiyya_sixth_modal_source_clarification":sixth_modal_source_clarification,
 }
 out=Path(__file__).with_name("verified_fourth_figure_scope.json")
 out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
