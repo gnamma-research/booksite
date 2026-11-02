@@ -490,6 +490,15 @@ window.GNAMMA_CRITICAL_CORPUS={
         "L.19"
       ],
       "issue": "The ending differs between witnesses: the longer eight introductory headings should not be imported into the Cairo 1912 conclusion without evidence."
+    },
+    {
+      "page": 17,
+      "ids": [
+        "L.17"
+      ],
+      "issue": "The 1912 Cairo p.13 mixed-premise list seems graphically to have an awkward connector near «أو من حملية أو متصلة», while the online working text has the syntactically regularized «أو حملية ومتصلة». The words at this narrow locus require an independent witness/print comparison before certifying a diplomatic reading. The other four Cairo L17 corrections are verified print forms.",
+      "parallel": "https://www.arabicdawateislami.net/bookslibrary/3507/page/15",
+      "parallel_role": "Alternative printed matn has a coherent five-type enumeration. Explanatory comparison only; not proof of Cairo or authorial wording."
     }
   ],
   "print_corrections_stage77": [
