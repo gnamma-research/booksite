@@ -52,6 +52,12 @@ jobs:
           assert 'وكل منها عنادية إن كان التنافي لذات الجزأين' in text['L.12']
           assert 'وكل منهما عنادية' not in text['L.12']
           assert 'لزومية إن كان ذلك لعلاقة' in text['L.12']
+          assert 'بتنافي نسبتين' in text['L.12'] and 'بتنافي النسبتين' not in text['L.12']
+          assert 'صدقاً وكذباً معاً' not in text['L.12']
+          assert 'على جميع التقادير للمقدم' in text['L.12']
+          assert 'أو لبعضها مطلقاً جزئية' in text['L.12']
+          assert 'والنقيض للضرورية الممكنة العامة' in text['L.13']
+          assert 'وللدائمة المطلقة العامة' in text['L.13']
           assert 'والله أعلم بالصواب' in text['L.19']
           print('PASS: Cairo L16 witness kept separate from longer commentary-contained print and 19 / 1,044 corpus integrity')
           PY
