@@ -92,3 +92,15 @@ Translation: The splitting of the moon.
 5. The two printed pages are NOT critically certified in their entirety; their `P2.229` and `P2.230` source-location guides remain separate from the new clause records.
 
 **Next exact source:** printed II:231–234 (source PDF 526–529), continuing evidence for the Prophet's mission and reaching the original conditions-of-prophethood chapter at II:234. The workflow remains full source Arabic, close English, original print/source-layer identifiers, then second witness collation and proof, without conflating page presence with full translation.
+
+### IV. New lower-register excerpt on the fallacy of reasoning from parts to a whole
+
+**Source:** Printed II:229 / original image PDF 524, small lower-register type. **Historical individual author: UNASSIGNED, not confirmed as Muḥammad Wasīm.** Source-selected excerpt; the ellipsis marks untranscribed printed words.
+
+> واحتجوا على سهولة المعارضة مع عدمها بالقطع بأن فصحاء العرب كانوا قادرين على التكلم بمثل مفردات السور وركباتها القصيرة مثل الحمد لله ومثل رب العالمين ... فيكونون قادرين على الإتيان بمثل سورة منه لكن الله صرف هممهم عن ذلك. وأجيب بأن حكم الجملة قد يخالف حكم الأجزاء كما هنا
+
+**Close English:** “They argued that the eloquent Arabs were certainly capable of producing expressions individually found in the sūras, as well as short combinations such as ‘Praise belongs to God’ and ‘Lord of the worlds’. … They thus inferred that they could produce the like of a complete sūra, but God turned their resolve away. The reply is that a property of the whole may differ from the properties of its constituent parts, as it does here.”
+
+**Critical significance:** This is not an argument *about* whether two particular Arabic phrases can be uttered; the disputed inference is from **the ability to generate short components** to **the ability to generate a complete composition of a specified literary character**. The response denies that the former logically entails the latter. It therefore targets a specific logical premise used in defence of `ṣarfa` and should be collated with scholastic discussions of `ḥukm al-jumla` and `ḥukm al-ajzāʾ`. This does not by itself settle all other theories of Qurʾānic inimitability.
+
+**Extent and status:** The printed note is longer than the excerpt. Its original line-joins, full objection/answer sequence, independent author attribution and second-source verification all remain to be completed.
