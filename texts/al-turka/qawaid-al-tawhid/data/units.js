@@ -1,11 +1,11 @@
 /* Gnamma Research | Qawāʿid al-Tawḥīd | ancestor's MATN ONLY
-   Twelve translated lemmata; digitized Āshtiyānī 1982 pp.48–74.
+   Twenty-four translated lemmata; digitized Āshtiyānī 1982 pp.48–109.
    Not a complete translation and not a manuscript-critical edition.
    Commentary informs notes ONLY, and is never spliced into the matn.
 */
 window.GNAMMA_QAWAID_MATN = {
   "edition": "Āshtiyānī 1982, digital page transcription",
-  "status": "working, partial, manuscript collation pending",
+  "status": "24-source-located-matn-passages-provisional-unphotographed-uncollated",
   "units": [
     {
       "id": "QT-001",
@@ -233,6 +233,245 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/270?lang=ar"
+    },
+    {
+      "id": "QT-013",
+      "title": "The dilemma of distinct existence and a supposed necessary nature",
+      "pages": [
+        78
+      ],
+      "arabic": "فإن كانت حقيقته من حيث هي مغايرة لحقيقة الوجود الخارجي والكون العيني الذي تتكون به الماهيات [الحقيقية] المختلفة بمقارنتها في الأعيان بالذات، كان إطلاق لفظ الوجود على الحقيقتين بالاشتراك اللفظي دون المعنوي، على أن تلك الطبيعة لا بد وأن لا يكون في نفسها الكون العيني، لوجوب بساطتها، وحينئذ إما أن يكون شيئاً من الماهيات الحقيقية، أو أمراً من الأمور العقلية، ويلزم من ذلك كثير المحالات. وإن لم تكن مغايرة [لها]، فإما امتنع استلزام الوجودات الخاصة العينية الممكنة لحقيقة الوجود المطلق واشتراكها فيه وصدق تلك الحقيقة عليها، أو وجب استلزامها للحقيقة الواجبة واشتراكها فيها وصدق تلك الحقيقة عليها، ومن الممتنع أن تكون الوجودات الخاصة الممكنة ملزومة للحقيقة الواجبة بحسب الذات، فإنّا قد برهنا في كتبنا الحكمية أن تلك الطبيعة يمتنع أن يكون فيها جهة إمكانيّة محضة وقابليّة لشيء من الأوصاف الوجودية الحقيقية.",
+      "english": "If its reality, considered in itself, is different from the reality of external existence and objective being—through whose conjunction with different real quiddities those quiddities come to be in external reality—then applying the expression ‘existence’ to the two realities would involve verbal homonymy rather than a common meaning. Moreover, that supposed nature could not itself contain objective being, since it must be simple. It would consequently have to be either one of the real quiddities or something belonging to intellectual considerations; numerous impossibilities would follow. If, however, it is not distinct from that reality, then either the particular possible existences in external reality cannot entail the reality of absolute existence, share in it, or receive its true predication; or they must entail, share in, and be truly predicated of by the necessary reality. But it is impossible for particular possible existences to be intrinsic underlying terms to which the necessary reality belongs as a concomitant. For we have demonstrated in our philosophical writings that such a nature cannot contain a purely possible aspect or any receptivity for a real existential attribute.",
+      "notes": [
+        "The entire paragraph is introduced by قال and ends before the descendant's أقول at printed p. 78. The argument is a dilemma against a purported necessary nature distinguishable from absolute existence.",
+        "The inherited philosophical vocabulary is particularly explicit: ishtirāk lafẓī / maʿnawī, maḥiyya, simple nature, imkān, receptivity and lāzim/malzūm. The opposition is constructed from within the Peripatetic terms.",
+        "The edition's dashes around الحقيقية and لها suggest editorial supplementation; square brackets here flag these words as provisional, not silently authenticated. Independent print/manuscript comparison is still required.",
+        "ملزومة للحقيقة الواجبة is kept distinct from لازمة لها: the possible existences would be underlying relata to which a necessary concomitant belongs; that is the hypothesis rejected here."
+      ],
+      "variants": [
+        {
+          "lemma": "فيه",
+          "other": "فيها",
+          "remark": "Reported printed alternative in the clause واشتراكها فيه; grammatical antecedent needs collation."
+        },
+        {
+          "lemma": "لشيء",
+          "other": "شيء",
+          "remark": "The digital edition prints a redundant-looking alternative; neither an independent witness nor a justified emendation yet."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/274?lang=ar"
+    },
+    {
+      "id": "QT-014",
+      "title": "Indistinguishable similars cannot have opposite ontological roles",
+      "pages": [
+        81
+      ],
+      "arabic": "على أن اجتماع الأمثال واختصاص أحد المتماثلين بالحالّية والآخر بالمحلّية، واتصاف أحدهما بصفة دون الآخر، من غير أن يكون هناك فارق، من الأحكام والأحوال المستحيلة بالذات.",
+      "english": "Moreover, the coming together of things exactly alike, with one of the two assigned the status of what inheres and the other the status of a locus in which something inheres, and with one possessing a qualification that the other lacks despite there being no differentiating factor—these are among the judgments and states intrinsically impossible.",
+      "notes": [
+        "The grandson's following أقول explicitly identifies الحالّية as the role of an accident (عارضية) and المحلّية as that of the underlying subject (معروضية), not spatial containment.",
+        "His commentary makes the contradiction concrete: beings allegedly identical in existential reality would be assigned necessary versus possible existence without a differentiating ground. The original lemma itself is much shorter.",
+        "Do not infer that every shared predicate makes two things identical; the matn's claim presupposes the strict sameness of relevant reality."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/277?lang=ar"
+    },
+    {
+      "id": "QT-015",
+      "title": "Two alternatives for tashkīk—and the circularity of its proof",
+      "pages": [
+        82,
+        83
+      ],
+      "arabic": "ثم إن الوجود الحاصل للماهيات المختلفة والطبائع المتخالفة لا يقبل الوجود والعدم لذاته لما أشير إليه في موضعه، فيجب أن يكون واجباً لذاته، وحينئذ لو وجد هناك موجود آخر مغاير له، لتعدّد الواجب لذاته، والقائل بالتشكيك ينكره كل الإنكار. هذا إذا ذهب القائل بالتشكيك مذهب التجويز والاحتمال العقلي لا غير، وأما إذا ذهب مذهب الوجوب والثبوت الضروري، تمسّك في بيانه بإثبات الأولويّة والأقدميّة والأشدّيّة والأكمليّة والأتمّيّة وشبهها بالنسبة إلى الطبيعة الواجبة الملزومة للكون العيني المطلق ومقابلاتها بالنسبة إلى الملزومات الأُخر الباقية، منعنا ذلك؛ فإن ثبوت تلك الأحوال لها بالقياس إليها مبنيّ على ثبوت تلك الطبيعة الملزومة في نفس الأمر على ما ذكرتموه، فلو بُيّن ثبوتها بذلك، لزم المصادرة على المطلوب.",
+      "english": "Furthermore, the existence that obtains for differing quiddities and divergent natures does not, in virtue of itself, admit existence and nonexistence, as indicated in the appropriate place. It must therefore be necessary through itself. If some other existent distinct from it were found, that which is necessary through itself would be multiplied—a consequence the defender of gradation rejects utterly. This addresses the case in which the advocate of gradation advances no more than a rational possibility or supposition. If instead he claims that gradation is necessary and established with certainty, and appeals to priority, precedence, greater intensity, greater perfection, greater completeness, and similar qualifications on the part of the necessary nature underlying absolute external being, together with their opposites on the part of the other underlying terms, we deny this. For the obtaining of these relative conditions in the former as compared with the latter presupposes that the supposed underlying nature is established in reality in exactly the manner you allege. To demonstrate its establishment by these very conditions would beg the question.",
+      "notes": [
+        "This matn passage opens at p. 82 and closes at p. 83 immediately before أقول. Its printed page boundary must not be mistaken for a break between author and commentator.",
+        "The printed Arabic says لا يقبل الوجود والعدم لذاته, not merely 'does not admit nonexistence'; the translation retains both terms. The author treats existence itself, not a quiddity acquiring existence, as the subject.",
+        "The two horns distinguish a merely defensive possibility (تجويز واحتمال عقلي) from a positive demonstration of gradation (وجوب وثبوت ضروري). The accusation of circular reasoning is made against the latter.",
+        "Āshtiyānī's note at printed p. 86 criticizes author and commentator for discussing common gradation (tashkīk ʿāmmī) while insufficiently treating specific gradation (tashkīk khāṣṣī). That is later editor's criticism, not the ancestor's own assertion.",
+        "Lumbard's translated selection does not extend this far; these paragraphs are translated from the Arabic witness itself."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/278?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/279?lang=ar"
+    },
+    {
+      "id": "QT-016",
+      "title": "Can determination itself have differing meanings?",
+      "pages": [
+        87
+      ],
+      "arabic": "ثم إنا نقول: إن مفهوم تلك الطبيعة غير مفهوم شيء من التعيّنات التي هي من العوارض المستدعية لتحقّق موضوعات تتعلّق بها في الوجود العيني والعقلي، وجودية كانت أو عدمية بالضرورة. فلئن قيل: إن تعيّنها الذي هو نفس تلك الطبيعة في الأعيان جاز أن يكون ملزوم مطلق التعيّن، ويكون قول التعيّن المطلق عليه وعلى غيره من التعيّنات الباقية إما على سبيل التشكيك وإما على سبيل الاشتراك اللفظي دون المعنوي، وحينئذ جاز أن لا يكون تعيّنها معقولاً ولا مستدعياً لتحقّق موضوعات يتعلّق بها في الوجود على شيء من هذين التقديرين. قلنا: قد بيّنّا في كتبنا الحكمية أن مفهوم التعيّن ومعناه مفهوم واحد ضروري، لا يختلف إلا باختلاف الإضافات إلى الموضوعات؛ ومن البيّن أن تعقّل الإضافة لا يستدعي تعقّل المضاف إليه بكنه الحقيقة.",
+      "english": "We further maintain that the concept of that nature is distinct from the concept of every determination that is an accident requiring the realization of a subject to which it attaches, whether in external or intellectual existence, and whether that determination is positive or privative. If it is objected that its determination, which is identical with that nature in external reality, may be the underlying term for determination absolutely, and that ‘determination’ is predicated of it and of the other determinations either by gradation or by mere verbal homonymy rather than a shared meaning, it could then be neither intelligible nor in need of an underlying subject under either supposition. We reply: in our philosophical writings we have established that the concept and meaning of determination are one self-evident concept, varying only with differences in relations to subjects. It is evident that understanding a relation does not require comprehending the intrinsic reality of the term to which it relates.",
+      "notes": [
+        "The printed passage at p. 87 clearly has قال for the ancestor and أقول for the descendant. The topical heading [في بيان حقيقة التعيين] is editorial and is not reproduced as authorial wording.",
+        "Key conceptual move: the intension of taʿayyun is one intelligible meaning, even if the necessary reality itself is not comprehended in its quiddity.",
+        "The ancestor's reference to iḍāfa / muḍāf ilayh concerns relational intelligibility, not automatic knowledge of the real essence of the referent. This creates a direct bridge to Avicennian logical and metaphysical debates.",
+        "The digital text reads ملزوم مطلق التعين without an explicit nominative alif: normalized minimally; verify case/syntax against independent prints."
+      ],
+      "variants": [
+        {
+          "lemma": "الحقيقة",
+          "other": "حقيقته",
+          "remark": "Reported in printed edition in the final 'كنه الحقيقة' clause."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/283?lang=ar"
+    },
+    {
+      "id": "QT-017",
+      "title": "Intrinsic determination is not merely bare thisness",
+      "pages": [
+        89,
+        90
+      ],
+      "arabic": "ثم إن معنى كون تعيّنها نفسها في الأعيان، هو أنها تمتاز عمّا عداها بنفسها لا بصفة زائدة عليها في الأعيان، ولا يلزم من هذا أن يكون نفسها هي الشخصيّة بعينها، وإلا امتنع أن يكون عاقلاً لنفسها ولغيرها. ثم إنها بنفسها تفيد لنفسها ما تفيد شخصيّة الشخص له بالنسبة إلى غيره من الأشخاص الباقية من النوع.",
+      "english": "The meaning of its determination being identical with itself in external reality is that it is distinguished from everything other than itself through itself, not through a quality externally additional to it. This does not entail that its very reality is identical with sheer individuality (shakhṣiyya); otherwise it could not intellectually apprehend itself and other things. Rather, through itself it provides for itself what the individuality of an individual provides to that individual in relation to other individuals of the same species.",
+      "notes": [
+        "The printed matn begins with قال near the end of p. 89 and closes before the descendant's أقول on p. 90.",
+        "The matn contrasts taʿayyun (intrinsic determination), a differentiating accident externally added, and shakhṣiyya (individuality or particularity). They must not be silently conflated in the translation.",
+        "The main Arabic transcription reads masculine predicates يمتاز / يكون عاقلاً despite feminine antecedent الطبيعة; the normalized English avoids a conjectural grammatical repair. The verb تفيد reflects feminine agreement and is a translation-friendly reading, but verify original printed form يفيد.",
+        "The commentary clarifies the argument's target: self-determination does not reduce the Necessary to a bundle of external relational accidents."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/285?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/286?lang=ar"
+    },
+    {
+      "id": "QT-018",
+      "title": "The Necessary is intellect, intellection, and intelligible",
+      "pages": [
+        93
+      ],
+      "arabic": "ولا نسلّم أنها غير معقولة لشيء من العقول، فإنّا قد برهنّا في سائر كتبنا الحكمية أنها عاقلة ومعقولة وعقل لذاتها، ثم إنها معقولة بالنسبة إلى كل العقول بحسب اعتبارات وإضافات ونسب زائدة عليها، وإن لم تكن معقولة لأكثر العقول بكنه حقيقتها.",
+      "english": "We do not concede that it cannot be intelligible to any intellect. We have demonstrated in our other philosophical works that in virtue of itself it is an intellective knower, an intelligible object, and intellect. Moreover, it is intelligible to all intellects by virtue of considerations, relations, and relational aspects additional to it, even if most intellects do not grasp its intrinsic reality in its very essence.",
+      "notes": [
+        "The three terms عاقلة ومعقولة وعقل deliberately echo Avicennian discussion of the Necessary's identity as intellect, intellective, and intelligible. Preserve their threefold distinction.",
+        "The difference between knowledge of something through relations or aspects and full comprehension of its essence is important; the author rejects absolute unintelligibility without promising comprehension of the divine quiddity.",
+        "The immediately following أقول identifies this as the refutation of the third of the preceding four hypothetical ways to deny conceptual individuals."
+      ],
+      "variants": [
+        {
+          "lemma": "معقولة",
+          "other": "معقولية",
+          "remark": "Printed alternative before لأكثر العقول; alters morphology and may require emendation."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/289?lang=ar"
+    },
+    {
+      "id": "QT-019",
+      "title": "Relation to something other is not necessarily contrariety",
+      "pages": [
+        94
+      ],
+      "arabic": "ولا نسلّم أنه يمتنع اقترانها بالغير واقتران الغير بها لو لم يُرد بالغير المنافي أو المقابل، لما ستعرفه أن النسب والإضافات والأحوال السلبية والوجودية إنما يقترن بها ضرباً ما من المقارنة، وهي إنما تقارن ضرباً آخر من ضروب المقارنة، فتأمّل ذلك.",
+      "english": "Nor do we concede that it is impossible for it to be conjoined in some manner with another or for another to be conjoined with it, unless ‘another’ means something incompatible with it or opposed to it. For, as will become clear, relations, relational connections, and privative and positive conditions are associated with it in one manner of association, while it is associated with them in another. Consider this carefully.",
+      "notes": [
+        "The original does not posit two independent existents physically joined together. It distinguishes absolute metaphysical opposition (munāfī / muqābil) from different modes of association or predicative attribution.",
+        "The paragraph is the ancestor's separate قال, followed by the descendant's أقول; the latter invokes his own theory of divine relations and manifestations and is not imported into the matn."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/290?lang=ar"
+    },
+    {
+      "id": "QT-020",
+      "title": "A reciprocal objection against unrestricted necessary existence",
+      "pages": [
+        95
+      ],
+      "arabic": "فلئن قيل: لو صحّ ما ذكرتموه في بيان أن الواجب لذاته لا يجوز أن يكون تلك الطبيعة الملزومة للوجود المطلق، لصحّ أن يقال: إنه لا يجوز أن يكون نفس الوجود المطلق بمثل ما ذكرتموه؛ فإن حقيقته لو كانت ذات أفراد عقلية فلا بدّ وأن يوجد منه فرد، فامتنعت الأفراد الباقية، لاستحالة أن يوجد كلّها وأن لا يوجد شيء منها، وحينئذ كان وجوب بعضها وامتناع ما عداه بالغير لا بالذات. وإن لم تكن ذات أفراد عقلية لشيء مما ذكر من الوجوه، فإن كانت حقيقته مغايرة لحقيقة الوجودات العينية الخاصّة الممكنة، كان إطلاق لفظ الوجود عليه وعلى الوجودات الممكنة بالاشتراك اللفظي دون المعنوي، وإن لم تكن مغايرة لها، لزم اتصاف الوجودات الممكنة بالوجوب الذاتي. قلنا: إن تلك الطبيعة لا بدّ وأن تكون مغايرة للوجود العيني وملزومه، لما ذكرنا، دون الوجود الواجب لذاته القائم بنفسه الممتاز عمّا عداه بعين حقيقته.",
+      "english": "If it is objected: ‘If your arguments are sound in showing that what is necessary through itself cannot be the nature to which absolute existence is a necessary concomitant, the same arguments could be used to show that it cannot be absolute existence itself. For if the reality of absolute existence admitted intellectual instances, one instance would have to exist, while the remaining instances would be impossible: neither could all of them exist nor could none exist. Then the necessity of some and the impossibility of the others would be due to another rather than to themselves. If it admits no intellectual instances for any of the reasons given, then either its reality differs from the realities of the particular possible existences in external reality—in which case the term “existence” would apply to them only equivocally—or it does not differ from them, in which case the possible existences themselves would possess intrinsic necessity.’ We reply: the supposed underlying necessary nature must, for the reasons already given, differ from external existence and what underlies it. That does not apply to existence necessary through itself, subsisting through itself, and distinguished from everything else by its very reality.",
+      "notes": [
+        "The opponent deliberately turns the ancestor's earlier fourfold reasoning back against unrestricted existence. The passage must be presented as objection then response, not as a single affirmative doctrine.",
+        "The final sentence is textually strained in the online Arabic transcription (لا بد وأن يكون مغايرة للوجود العيني وملزومه ... به عين (لعين - خ ل) حقيقة). The translation gives the commentator-supported sense without claiming the Arabic is securely constituted. This is a priority for photographic manuscript comparison.",
+        "The sharḥ at pp. 96–97 explains the supposed necessary nature as a determinate particular alongside others, whereas the unrestricted necessary reality is not opposed to determinate existence in that way."
+      ],
+      "variants": [
+        {
+          "lemma": "بعين",
+          "other": "لعين",
+          "remark": "Digitized print records لعين as alternative near the final predicate; the antecedent and case-ending remain unsettled."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/291?lang=ar"
+    },
+    {
+      "id": "QT-021",
+      "title": "Necessity need not restrict absolute existence",
+      "pages": [
+        98
+      ],
+      "arabic": "فلئن قيل: إن الحقيقة المطلقة لو كانت واجبة لذاتها قائمة بنفسها، لما كانت مطلقة، بل كانت مقيّدة بالوجوب الذاتي. قلنا: إن الحقيقة المطلقة من حيث هي مطلقة، قد تكون لها أحكام ضرورية لا يخرجها عن حدّ الإطلاق، ولا يوجب تقيّدها بشيء منها في الأعيان.",
+      "english": "If it is objected: ‘Were the absolute reality necessary through itself and self-subsisting, it would cease to be absolute and would instead be restricted by its intrinsic necessity.’ We reply: the absolute reality, precisely insofar as it is absolute, may have necessary characteristics that do not take it outside the scope of absoluteness or entail any extramental restriction by those characteristics.",
+      "notes": [
+        "The distinction is between an intrinsic necessary implication (ḥukm ḍarūrī) and a differentiating existential limitation (qayd).",
+        "The grandchild's following أقول explains that a truly additional restricting condition would violate absoluteness, whereas an intellectual consideration arising from the nature itself need not.",
+        "This is one of the clearest original lemmata for comparing Akbarian iṭlāq with Avicennian necessity and later metaphysics of lā bi-sharṭ."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/294?lang=ar"
+    },
+    {
+      "id": "QT-022",
+      "title": "Why answer objections even after a demonstration?",
+      "pages": [
+        100,
+        101
+      ],
+      "arabic": "فلئن قيل: لو صحّ أن تكون حقيقته المطلقة من حيث هي مطلقة قائمة بنفسها بحسب الوجود في الأعيان، من غير أن تفتقر إلى اقترانها بشيء من المخصّصات والمعيّنات، ويصدق عليها الوجوب بالذات بالبرهان، لم يتوجّه بوجه من الوجوه أن يورد هاهنا ما ذُكر من الاحتمال، ولم يصحّ منكم الشروع في الجواب. والتزام الجواب، مع أنه عدول عن طريقة التوجيه، لا يفيد فائدة سوى تطويل الكلام وتكثير المقدمات وتمكين المخالف من المنع والنقض وتزييف البيان. على أنّا نقول: إنّا نعلم بالضرورة أن كل واحد من الوجودات الممكنة العينية الخاصّة من أفراد الوجود العيني المطلق، كما أنّا نعلم بالضرورة أن الوجود الواجب بالذات المنافي لكل واحد من الوجودات الممكنة الخاصّة من جملة أفراده. قلنا: إن الزكيّ الحادس يعلم يقيناً أن الكون العيني الكائن بنفسه في الخارج يمتنع أن يتكوّن فيه بشيء من الكائنات التي تتكوّن فيه به وبمقارنته. ولكن الجمهور إنما يعتقدون أن حكم مطلقه حكم سائر المطلقات من الماهيات الحقيقية العينية، وينكرون الفرق بين الصورتين، ويبادر إلى الفهم الاحتمال المذكور. وحينئذ كان إبطال هذا الاحتمال بعد تسليم كون الإيراد موجّهاً، ودفع سائر الشبه المانعة لحصول اليقين والقطع العقلي في المحل غير المألوف بالقياس إلى طباع الجمهور، يكون مفيداً بالنسبة إلى من هو أشدّ ذكاءً منهم وأبعد عن رذيلتي البلادة ورسوخ التقليد الوهمي والخيالي. ومن البيّن أن رفع سائر الاحتمالات والشبه يكون إعداداً للأذهان الضعيفة أن يلوح لهم الحق، ويكون منعاً للحركات الفكرية المشوّشة عن الاضطراب المستفادة من الوساوس العادية والتقليدات المنكرة الراسخة في النفوس الطالبة.",
+      "english": "If it is objected: ‘If absolute existence, considered precisely as absolute, could subsist through itself in external reality without needing to be joined to any specifying or individuating factor, and its necessity through itself could be established demonstratively, there would be no proper occasion to raise the hypothesis just mentioned, nor would it be appropriate for you to begin answering it. To undertake an answer would depart from the proper procedure of directing an objection and would serve only to prolong the discussion, multiply premises, and give an adversary opportunities to deny, counterargue, and undermine the proof. Moreover, we necessarily know that each particular possible existence in external reality is an instance of absolute extramental existence; and we likewise necessarily know that existence which is necessary through itself, and which is incompatible with each particular possible existence, is one of its instances.’ We reply: the perceptive thinker endowed with intellectual intuition knows with certainty that objective being, subsisting through itself externally, cannot acquire being through any of the things that themselves obtain being through it and through conjunction with it. The majority, however, suppose that unrestricted existence is governed by the same rule as other unrestricted natures belonging to real external quiddities. They fail to distinguish the two cases, and so the hypothesis just stated readily occurs to them. Refuting it even after provisionally conceding that it is a properly formed objection, and removing other doubts that obstruct certainty and intellectual conviction in a matter unfamiliar to most people, is therefore useful for those who are more perceptive and less burdened by dullness and entrenched habits of imaginative imitation. Removing such suppositions and doubts prepares weaker minds for the truth to dawn upon them, restraining the disordered movements of thought generated by habitual misgivings and entrenched erroneous beliefs in receptive seekers.",
+      "notes": [
+        "This is a continuous qāla quotation beginning on printed p. 100 and closing on p. 101 before أقول. The footnoted discussion of divine names visible on p. 100 belongs to a later gloss, not the ancestor's matn.",
+        "The passage reveals the author's self-conscious adoption of the methods of kalām and philosophical disputation despite relying on ḥads, and it supplies a pedagogical justification for answering otherwise unfounded objections.",
+        "The analogy between absolute existence and unrestricted quiddities is treated as precisely the illicit transfer from Avicennian conceptual universality to Akbarian unrestricted reality.",
+        "Some punctuation and agreement are normalized. The long ending concerning منعاً للحركات الفكرية المشوشة عن الاضطراب is syntactically awkward in the digital print; the English is provisional pending direct printed-image verification."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/296?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/297?lang=ar"
+    },
+    {
+      "id": "QT-023",
+      "title": "Four ways to understand a particular existent",
+      "pages": [
+        106
+      ],
+      "arabic": "ومن الضروري أن دعوى الضرورة في محلّ النزاع غير مسموعة. على أن الوجود الخاصّ الممكن الذي ذُكر، لو أريد به معروض شيء من هذه التعيّنات والصفات والأحوال من غير اعتبارها معه، فهو بالحقيقة محض الوجود الواجب بالذات. ولو أريد به شيء من هذه العوارض الموجودة بالعرض، من غير اعتبار الوجود الموجود بالذات، فلا نسلّم أنه فرد من أفراد الوجود المطلق. ولو أريد به مجموع الأمرين، فلا نسلّم إمكان وجود [مثل] هذا المجموع في الأعيان، وحينئذ كان امتناع الأفراد الذهنية هاهنا في الأعيان بالذات. ولو أريد به معروض شيء من تلك العوارض من حيث هو معروضه، أي مع اعتبار هذا العارض معه على ما هو الموجود في الأعيان، كان كل واحد من الموجودات الخاصّة بل جميعها موجوداً واحداً واجباً بالذات، كثيراً بحسب صفات ممكنة زائدة على الذات. وحينئذ لم يكن للوجود المطلق أفراد ذاتية مختلفة بحسب الوجوب والإمكان والامتناع. وأما القول بالمنافاة التي ذهب إليها، فلا طائل تحته لما سبق تقريره من قبل.",
+      "english": "It is self-evident that a claim to self-evidence cannot be accepted at the very point in dispute. As for the particular possible existent in question: if this means the subject of some determination, quality, or state, without taking that qualification into account with it, it is in reality pure existence, necessary through itself. If it means one of those accidents, which exists only accidentally, apart from existence that exists through itself, we deny that it is an instance of absolute existence. If it means the sum of both, we deny that such a composite can exist in external reality; accordingly, mentally supposed individuals of that sort would be intrinsically impossible externally. If, finally, it means the bearer of an accident precisely as its bearer—that is, with that accident taken into account as it exists outside the mind—then each particular existent, indeed all of them, is one existent necessary through itself, multiple only through possible attributes additional to the essence. Absolute existence would therefore have no individuals differing intrinsically as necessary, possible, or impossible. As for the alleged incompatibility between such instances, there is nothing in the claim, for the reasons already explained.",
+      "notes": [
+        "The four alternatives, reconstructed explicitly in the subsequent sharḥ (p. 107), are (1) substratum without accident, (2) accident without substratum, (3) composite sum, and (4) subject qua bearing an accident.",
+        "Crucial distinction: موجود بالذات (existent through itself) versus موجود بالعرض (existing incidentally/derivatively), not the identical distinction as substance versus accident.",
+        "The bracketed [مثل] follows a visibly editorially inserted word in the digitized edition; manuscript comparison outstanding.",
+        "The ancestor explicitly denies that absolute existence has **intrinsically** differentiated instances, while admitting multiplicity in additional possible qualifications. This is not the same thesis as the impossibility of distinctions at every level of discourse."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/302?lang=ar"
+    },
+    {
+      "id": "QT-024",
+      "title": "Mental existence and external existence are one in essence",
+      "pages": [
+        109
+      ],
+      "arabic": "فلئن قيل: إن الوجود الذهني الذي يمتنع أن يوجد في الأعيان فرد من أفراد الوجود المطلق الذي يكون من جملة أفراده الفرد العيني الواجب بحسب الذات. قلنا: الكون الذهني هو الكون العيني بالذات وإن كان مغايراً له بالاعتبار، فإن عروض المعاني العقلية إنما هو للوجود العيني في بعض مراتبه، أو بشرط اتصافه بصفات أُخر عارضة له. ولا اعتبار هاهنا بالموجودية بالفرض التي تعرض المعاني العقلية، مثل عروضها لسائر الماهيات وجميع النسب والصفات والأحوال؛ إذ الكلام هاهنا إنما هو في الوجود الموجود بنفسه الواجب بالذات.",
+      "english": "If it is objected: ‘Mental existence, which cannot exist externally, is an instance of absolute existence, just as the instance externally necessary through itself is one of its instances.’ We reply: mental being is external being in its essence, although it differs from it under a conceptual consideration. Intellectual meanings are attributed to external existence at certain of its levels, or when it is considered as qualified by other accidental attributes. We are not concerned here with the being-existent imputed by supposition to intellectual meanings, as it may be imputed to other quiddities and to relations, attributes, and states; the discussion here concerns existence that exists through itself and is necessary through itself.",
+      "notes": [
+        "The objection exploits the fact that mental being, considered *as mental*, cannot be an extramental individual; the reply separates an intrinsic existential reality from its relational and conceptual qualifications.",
+        "The printed variant بالفرض / بالعرض (‘by supposition’ / ‘incidentally’) has a significant ontological effect. The provisional base keeps بالفرض, but the stronger familiar technical reading might be بالعرض. Neither should be emended without a verified witness.",
+        "The sharḥ on p. 110 develops Akbarian levels and aʿyān thābita. Those additional explanations remain outside the ancestor's matn."
+      ],
+      "variants": [
+        {
+          "lemma": "بالفرض",
+          "other": "بالعرض",
+          "remark": "Reported printed alternative; materially changes the epistemic/ontological description of conceptual existentness."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/305?lang=ar"
     }
   ]
 };
