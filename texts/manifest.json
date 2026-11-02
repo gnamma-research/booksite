@@ -20,15 +20,15 @@
         "metaphysics",
         "Avicennian–Akbarian encounter"
       ],
-      "status": "partial-matn-working-edition-42-loci",
+      "status": "partial-matn-working-edition-46-loci",
       "language": [
         "ar-selected",
         "en-selected"
       ],
       "url": "texts/al-turka/qawaid-al-tawhid/",
-      "note": "42 source-located ancestral Qawāʿid al-Tawḥīd matn lemmata independently translated from Arabic, Āshtiyānī printed pp.48–190. Lumbard comparison for first six only. Separate dialectical objections from author's endorsed responses, and keep later grandson's sharḥ out of original. NOT a complete or independently manuscript-collated critical edition; philological apparatus and printed variants remain provisional.",
+      "note": "46 source-located ancestral Qawāʿid al-Tawḥīd matn lemmata, independently translated into English from Āshtiyānī's electronic Arabic printed pages 48–207. Original matn and later grandson's sharḥ separated; adversarial objections labelled, including Perfect Human mirrorhood and beyond-intellect spiritual perfection (QT-043–046). Lumbard checked as a comparator only for opening six. NOT the complete ancestor's matn, and NOT a manuscript- or photographically collated critical edition.",
       "comparative_translation_notes_url": "texts/al-turka/qawaid-al-tawhid/editorial/LUMBARD_COMPARISON.md",
-      "matn_units": 42,
+      "matn_units": 46,
       "edition_audit_url": "texts/al-turka/qawaid-al-tawhid/editorial/EDITORIAL_STATUS.md",
       "glossary_url": "texts/al-turka/qawaid-al-tawhid/editorial/TECHNICAL_GLOSSARY.md"
     },
