@@ -56,3 +56,12 @@ The combined printed two-volume witness contains **615 numbered main text pages*
 **New this stage:** I:141–160, scanned image pp.154–173: twenty checked page images with abbreviated English first readings and six separate **short selected source-Arabic/English** clauses. Both kinds are in `2026-11-02_FIRSTPASS_I141-I160_AND_DIRECT_CLAUSES.md`. The first kind is not literal complete-page translation; the second kind is direct selected translation only. The lower printed margin (Wasīm and other contributors) remains largely untranscribed and untranslated, including pages with only one or two lines of Sanandajī's running text.
 
 **Cumulative:** I:8–160 = 153 numbered pages with at least some preliminary English, **153/615 = 24.88% page-presence proxy**. There is one independently attributed Wasīm II:117 fragment separately. **0/615** printed pages are *certified complete sharḥ + every ḥāshiya* or critically definitive. No whole-text translation percentage can responsibly be derived yet. The independent Tahdhīb matn edition has not been merged or overwritten.
+
+
+## Stage 07 (2 November 2026) — new I:161–200 with controlled source-layer claims
+
+Forty original source images (printed I:161–200 = physical facsimile pp.174–213) were directly inspected. Three new `firstpass-` modules preserve **40 page-level interpretive guides**, not complete literal page translations. Two `source-selected-` modules add **22 short upper-register Arabic-English translations** and **six shorter lower-register translations whose individual authors remain unverified**, maintained under the unattributed marginalia filter. No new authenticated Wasīm gloss has been counted: the previously attributed II:117 fragment remains separate.
+
+New textual master: `2026-11-02_STAGE07_I161-I200_SOURCE_AND_TRANSLATION.md`, generated directly from the reader JS records. New layer ledger: `2026-11-02_STAGE07_I161-I200_LAYER_LEDGER.csv`; the canonical `2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv` has been updated for all 40 new pages.
+
+**Global:** I:8–200 = **193/615 numbered source pages (31.38%) with at least some preliminary English**. This figure is explicitly **not** a full-text translation percentage. **0/615** pages have all original sharḥ and lower ḥāshiya transcribed, translated, independently checked and certified definitive. Next: I:201–220 (PDF pp.214–233). Independently authored Tahdhīb remains unmerged. See cumulative handoff §14.
