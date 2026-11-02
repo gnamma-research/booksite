@@ -53,6 +53,17 @@ All source pages have explicit **قال** boundaries followed by the descendant'
 
 **Editorial criticism to preserve:** At p. 86 the modern editor Āshtiyānī writes in Persian that the author and commentator understand an ordinary/general concept of gradation but leave *specific* gradation unexplored. His assertion belongs to **editorial reception**, not to Abū Ḥāmid's text.
 
+## Stage 04: positive ontological matn sources, separately authenticated
+
+- **QT-025**, pp. 111–112: https://ablibrary.net/book_content/b/17638/307?lang=ar and https://ablibrary.net/book_content/b/17638/308?lang=ar
+- **QT-026**, p. 114: https://ablibrary.net/book_content/b/17638/310?lang=ar
+- **QT-027**, p. 118: https://ablibrary.net/book_content/b/17638/314?lang=ar
+- **QT-028**, p. 121: https://ablibrary.net/book_content/b/17638/317?lang=ar
+
+These are still *one printed edition's electronic transcription*. The old matn quotation is delimited by قال and the grandson's following أقول. Do not insert the grandson's exposition of the Muḥammadan Reality or divine names at pp. 122–128, or his quotation of the ancestor's other *al-Ḥikmah al-Rashīdiyyah*, into the original *Qawāʿid al-Tawḥīd*.
+
+**Unresolved QT-025 reading:** source p. 112 has **تكون طبيعته عن تلك الأكوان**; commentary p. 114 explains the conclusion with **عين طبيعتها**, suggesting a likely transcription/print problem. Preserve the raw **عن** until witnessed. QT-027 prints alternatives **عرفت/عرّف**, **التحقيق/التحقق**. The new English reflects authorial reasoning but is not a diplomatic collated critical text.
+
 ## Independent manuscript leads — NOT yet collated
 - **M1 — Mashhad, Farhang va Honar, MS alif-28:** catalogue reports a copy dated 851 AH, scribe Aḥmad ibn ʿAlī al-Bayhaqī al-Sabzawārī.
 - **M2 — Mashhad, Āstān-i Quds Riḍawī, MS 812:** catalogue reports 18 folios, dated 1067 AH.
