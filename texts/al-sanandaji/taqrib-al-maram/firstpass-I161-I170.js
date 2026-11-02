@@ -108,7 +108,7 @@
     "category": "page-draft",
     "quality": "source-image-meaning-pass",
     "title": "Matter, recipient and form as different considerations",
-    "arabic": "المادة عليها أي محل تلك الهيئة تعني الأمر القابل",
+    "arabic": "المادة محلها أي محل تلك الهيئة",
     "english": "Material receptivity is considered in terms of the underlying subject that receives a form or configuration. Calling something matter, a recipient, or a constituent involves different ways of considering what is present in the constituted whole. The argument distinguishes matter as a subject of form from an efficient cause acting on what receives it, and asks how quiddity and the actuality of a compound enter the explanation. The extended marginal argument develops the dependence of form and matter without simply treating either as an unrelated external cause.",
     "citation": "Taqrīb al-Marām I:165, original combined scan PDF p.178; main register inspected 2 Nov 2026",
     "notes": [
@@ -208,8 +208,8 @@
     "category": "page-draft",
     "quality": "source-image-meaning-pass",
     "title": "Accidentality, motion and rest, and the classification of sensible properties",
-    "arabic": "حياة الله سبحانه واحدة ضروري",
-    "english": "The account of accidents distinguishes qualities and related categories, including sensible motion and rest. It also raises theological complications in applying general categorical distinctions to divine attributes: the existence and unity of a divine perfection are not necessarily treated in the same way as transient accidents of bodies. The exposition leads into a more direct question about the conditions under which an accident occupies a single substratum.",
+    "arabic": "وأجناسه العالية بحكم الاستقراء تسعة",
+    "english": "The commentary enumerates the nine highest genera of accident, as obtained by induction: they include quantity, quality, place, relation, posture, possession and kinds of action and passion. It then discusses how one accident may depend upon another, including the question of numerical unity or plurality in inhering states. This is an account of the accidental categories and their bearers, not a new enumeration of divine attributes.",
     "citation": "Taqrīb al-Marām I:169, original combined scan PDF p.182; main register inspected 2 Nov 2026",
     "notes": [
       {
@@ -231,7 +231,7 @@
     "category": "page-draft",
     "quality": "source-image-meaning-pass",
     "title": "Unity and the distinct meanings of accidental predication",
-    "arabic": "فقد نهى عليه بأن حصول عرض واحد في محلين كحصول الجسم الواحد في مكانين",
+    "arabic": "حصول عرض واحد في محلين كحصول الجسم الواحد في مكانين",
     "english": "The commentary reviews whether a single accident can be found in more than one bearer, and whether this is analogous to locating a single body in two places. The relevant determination cannot be inferred simply from shared descriptive terms: real inherence and intellectual predication are different relations. It also distinguishes descriptions such as unity, existence, necessity and possibility from an independently subsisting accidental object in each case.",
     "citation": "Taqrīb al-Marām I:170, original combined scan PDF p.183; main register inspected 2 Nov 2026",
     "notes": [
