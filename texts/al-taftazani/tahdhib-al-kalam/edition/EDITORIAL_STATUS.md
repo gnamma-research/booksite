@@ -1,6 +1,6 @@
 # Tahdhīb al-Kalām — source and translation status
 
-**Release:** Stage 80 Cairo p.39 source repair (2 November 2026), succeeding the Stage 76 site integration and Stage 79 logic audit.
+**Release:** Stage 81 Cairo p.80 restoration and p.124 partial repair (2 November 2026), after the Stage 80 p.39 source repair and Stage 79 logic audit.
 
 **Author:** Saʿd al-Dīn al-Taftāzānī  
 **Controlling print:** Cairo, Maṭbaʿat al-Saʿāda, 1330 AH / 1912, printed kalām pp. 15–127.
@@ -8,20 +8,19 @@
 ## What the new edition contains
 
 - All **113 printed pages** represented by **1,044 stable Arabic–English clause records** (including two letter-suffixed restoration identifiers).
-- **109 of 113 pages** recorded as having full comparison of the main printed lines with the clause stream and English. Cairo p.39 was photographically rechecked in Stage80; no independent manuscript certification is implied.
+- **110 of 113 pages** recorded as having full comparison of the main printed lines with the clause stream and English. Cairo p.39 was photographically rechecked in Stage80; the missing divine-power sentence on p.80 was restored in Stage81. No independent manuscript certification is implied.
 - Full-text search across Arabic and English, stable clause citations, original printed-page navigation, local bookmarks, parallel/monolingual reading, themes and PDF/structured-data exports.
 - Distinct, source-labelled **authorial text**, **translator's explanations**, **unresolved readings**, and **independent commentary**; commentary does not silently expand the matn.
 
 **This is not yet a critical edition certified against multiple witnesses.** In particular, the comparison records do not establish that a 995 AH manuscript or 2017 critical printing has been collated.
 
-## Four residual Cairo-print problems
+## Three residual Cairo-print problems
 
 | Printed page | Clause(s) | Unresolved point |
 |---|---|---|
 | 77 | KAL-077.03, KAL-077.10 | Transition and wording/gender in the description of the Necessary essence. |
-| 80 | KAL-080.11 | Response particle in the objection about effects of two powers. The print preserves «فلا تختلف آثارهما». |
 | 100 | KAL-100.02 | Attribution of an alleged Sabbath formula in the objection about Mosaic law. |
-| 124 | KAL-124.06 | Concise «وهم راكعون» grammatical argument: circumstance versus coordination, and reference to Jewish prayer. |
+| 124 | KAL-124.06 | «وهم راكعون للعطف» restored from Cairo, but the following printed expression about Jewish prayer/humility still requires independent collation. |
 
 Authorial conceptual comparanda, **not variant witnesses**, are in al-Taftāzānī's *Sharḥ al-Maqāṣid* at:
 - p. 39 discussion: https://ablibrary.net/book_content/b/9290/187?lang=ar
@@ -31,6 +30,8 @@ Authorial conceptual comparanda, **not variant witnesses**, are in al-Taftāzān
 
 **Stage80 p. 39 photographic repair:** The Cairo print reads `مقدار طبيعة غير قارة`, `ولامتناع فنائه لما مر مقدار الحركة المستديرة`, and `مقدار أسرعها`. These replace three provisional transcriptions. The full source and reasoning are preserved in [Stage80 Cairo p.39 dossier](STAGE80_CAIRO_P39_SOURCE_CORRECTIONS.md). This corrects the *single printed base*, not the independent-manuscript evidence. The **1,044 clause IDs** are unchanged.
 
+**Stage81 p.80/p.124 repair:** the Cairo print at p.80 continues after «قلنا ممنوع» with «فمنها القدرة لاستناد الحوادث إليه تعالى وفاقا» (restored in KAL-080.11). The p.124 passage now contains «وهم راكعون» and «للعطف», while retaining the following compressed phrase as an explicit crux. See [Stage81 source dossier](STAGE81_CAIRO_P80_AND_P124.md). The 1,044 stable clause records remain unchanged.
+
 ## Independent sources to collate
 
 1. **Al-Azhar 995 AH manuscript** (private 2468 / general 96067, 40 folios); digitization: https://api.alukah.net/Manu/Files/Manuscript_6154/Makhtotah.pdf. Its exact extent and text first need direct verification.
@@ -39,7 +40,7 @@ Authorial conceptual comparanda, **not variant witnesses**, are in al-Taftāzān
 
 ## Completion gates
 
-- **A — Single-print completion:** eliminate the **four** residual page-level reading problems (77, 80, 100, 124) from readable evidence or preserve them explicitly as cruces.
+- **A — Single-print completion:** eliminate the **three** residual page-level reading problems (77, 100, 124) from readable evidence or preserve them explicitly as cruces.
 - **B — Critical text:** collate at least one genuinely independent *Tahdhīb* textual witness at each variant locus, recording page/folio and photographic evidence.
 - **C — English second pass:** independently check logical particles, conditionals, Arabic negatives, speakers and theological school attributions across all 1,044 clauses.
 - **D — Publish:** update the canonical corpus, regenerate bilingual/Arabic/English PDFs, inspect fonts and page layout, check reader regressions and commit the edition manifest.
