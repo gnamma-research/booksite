@@ -264,8 +264,8 @@ window.GNAMMA_CRITICAL_CORPUS={
     {
       "id": "L.13",
       "page": 13,
-      "ar": "فصل في التناقض. التناقض اختلاف القضيتين بحيث يلزم لذاته من صدق كل كذب الأخرى وبالعكس، ولا بد من الاختلاف في الكم والكيف والجهة والاتحاد فيما عداها، والنقيض الضرورية الممكنة العامة، والدائمة المطلقة العامة، والمشروطة العامة الحينية الممكنة، والعرفية العامة الحينية المطلقة، وللمركب المفهوم المردد بين نقيضي الجزأين، لكن في الجزئية بالنسبة إلى كل فرد.",
-      "en": "Contradiction is the opposition of two propositions such that the truth of either requires the falsity of the other, and conversely. They differ in quantity, quality and modal qualification, but agree in the other respects. The contradictory of a necessary proposition is generally possible; of a permanent proposition, generally absolute; of a generally conditioned proposition, a temporally possible form; and of a generally customary proposition, a temporally absolute form. In the compound case the relevant sense alternates between the contradictories of its components, with the particular force assessed in relation to each individual.",
+      "ar": "فصل في التناقض. التناقض اختلاف قضيتين بحيث يلزم لذاته من صدق كل كذب الأخرى وبالعكس، ولا بد من الاختلاف في الكيف والكم والجهة والاتحاد فيما عداها، والنقيض الضرورية الممكنة العامة، والدائمة المطلقة العامة، والمشروطة العامة الحينية الممكنة، والعرفية العامة الحينية المطلقة، وللمركب المفهوم المردد بين نقيضي الجزأين، لكن في الجزئية بالنسبة إلى كل فرد.",
+      "en": "Contradiction is a difference between two propositions such that the truth of either intrinsically entails the falsity of the other, and conversely. They must differ in quality, quantity, and modal determination while agreeing in all other respects. The contradictory of a necessary proposition is a generally possible proposition of the opposite quality; of a permanent proposition, a generally absolute proposition of the opposite quality; of a generally conditioned proposition, the temporally possible form; and of a generally customary proposition, the temporally absolute form. For a compound modal, the contradictory is expressed through a disjunctive meaning involving the contradictories of its two components, with the particular formulation assessed relative to each individual.",
       "status": "B",
       "source_location": "",
       "notes": [
@@ -276,6 +276,10 @@ window.GNAMMA_CRITICAL_CORPUS={
         {
           "type": "Explanation",
           "text": "Traditional contradiction rules require attention to quantity, quality and modality under a fixed subject and predicate. A change of supposition or time can destroy the intended contradictory relation."
+        },
+        {
+          "type": "Stage 78 Cairo print comparison (pp. 9–10)",
+          "text": "The 1912 print opens «التناقض اختلاف قضيتين» (p.9) and continues «ولا بد من الاختلاف في الكيف والكم والجهة» (p.10). The separately typeset Sharḥ al-Tahdhīb online p.13 instead has «اختلاف القضيتين» and «في الكم والكيف والجهة». These are printing-level wording/order variants, not demonstrably authorial manuscript variants. The revised English makes the opposite quality of modal contradiction explicit."
         }
       ],
       "title": "Contradictory propositions",
@@ -499,6 +503,13 @@ window.GNAMMA_CRITICAL_CORPUS={
       "other": "لينتج الموجبتان مع الموجبة الكلية الموجبتين، ومع السالبة الكلية السالبتين بالضرورة",
       "source": "https://www.arabicdawateislami.net/bookslibrary/3507/page/14",
       "status": "Two printed witnesses differ; Stage 77 Cairo restoration retracted, not an independent manuscript collation."
+    },
+    {
+      "id": "L.13",
+      "cairo": "اختلاف قضيتين؛ في الكيف والكم والجهة",
+      "other": "اختلاف القضيتين؛ في الكم والكيف والجهة",
+      "source": "https://www.arabicdawateislami.net/bookslibrary/3507/page/13",
+      "status": "Stage78 direct Cairo pp9–10 image comparison against online commentary-containing print"
     }
   ],
   "print_corrections_stage78": [
@@ -509,6 +520,13 @@ window.GNAMMA_CRITICAL_CORPUS={
       "after": "لينتج الموجبتان مع الموجبة الموجبتين، ومع السالبة السالبتين بالضرورة",
       "grade": "Cairo print image verified",
       "note": "Retraction of Stage77 false print attribution"
+    },
+    {
+      "id": "L.13",
+      "printed_pages": "9–10",
+      "before": "التناقض اختلاف القضيتين ... الاختلاف في الكم والكيف والجهة",
+      "after": "التناقض اختلاف قضيتين ... الاختلاف في الكيف والكم والجهة",
+      "grade": "Direct Cairo print image verification"
     }
   ]
 };
