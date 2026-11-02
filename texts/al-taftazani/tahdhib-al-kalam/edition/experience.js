@@ -135,12 +135,33 @@ function makeUnit(u,side){
  if(notes[u.id]?.highlight)span.classList.add('gn-is-highlighted');
  return span;
 }
+
+/* Printed-page seams: the legacy transcription uses paired "..." continuations.
+   Suppress only those explicit editorial continuation marks in Flow/Immersive.
+   The canonical study Arabic and English remain unchanged and fully inspectable. */
+function joinEditorialContinuation(previous,previousNodes,current,currentNodes){
+ if(!previous||!previousNodes||previous.page===current.page)return;
+ const ends=s=>/(?:\.{3}|…)\s*$/u.test(String(s||''));
+ const starts=s=>/^\s*(?:\.{3}|…)/u.test(String(s||''));
+ if(!ends(previous.ar)||!starts(current.ar))return;
+ for(const side of ['ar','en']){
+  const before=side==='ar'?previous.ar:previous.en;
+  const after=side==='ar'?current.ar:current.en;
+  const priorSpan=previousNodes[side],nextSpan=currentNodes[side];
+  if(!priorSpan||!nextSpan)continue;
+  if(ends(before))priorSpan.textContent=priorSpan.textContent.replace(/\s*(?:\.{3}|…)\s*$/u,'');
+  if(starts(after))nextSpan.textContent=nextSpan.textContent.replace(/^\s*(?:\.{3}|…)\s*/u,'');
+  nextSpan.dataset.editorialPageSeam='joined';
+  nextSpan.title=current.id+' · editorial page-continuation marks omitted in the Flow presentation; inspect Study for complete source transcription';
+ }
+}
+
 function buildFlow(){
  if(prefs.mode==='study')return;
  const root=$('#flow-passages');const frag=document.createDocumentFragment();
  const view=api.getState(),selected=view.scope==='continuous'?corpus.units:corpus.units.filter(u=>u.page===view.page);
- let run=null,lastPage=null,previousEnded=true;
- function fresh(){run=makeRun();frag.append(run.section)}
+ let run=null,lastPage=null,lastUnit=null,lastRendered=null;
+ function fresh(){run=makeRun();frag.append(run.section);lastUnit=null;lastRendered=null}
  for(const u of selected){
   const originalHeading=isOriginalHeading(u);
   const editorialHeading=isLogic&&!!u.title;
@@ -155,11 +176,14 @@ function buildFlow(){
   // The gaps are typographic word spaces, never synthetic author's punctuation.
   if(run.para.en.childNodes.length)run.para.en.append(document.createTextNode(' '));
   if(run.para.ar.childNodes.length)run.para.ar.append(document.createTextNode(' '));
-  run.para.en.append(makeUnit(u,'en'));run.para.ar.append(makeUnit(u,'ar'));
+  const nextUnits={en:makeUnit(u,'en'),ar:makeUnit(u,'ar')};
+  joinEditorialContinuation(lastUnit,lastRendered,u,nextUnits);
+  run.para.en.append(nextUnits.en);run.para.ar.append(nextUnits.ar);
+  lastUnit=u;lastRendered=nextUnits;
   run.count++;
   const atSentenceEnd=/[.!?؟؛۔…]$/u.test(String(u.ar||'').trim());
   if(run.count>=14 && atSentenceEnd)newParagraph(run);
-  previousEnded=atSentenceEnd;
+  // The type rhythm follows original punctuation, not synthetic ellipses.
  }
  root.replaceChildren(frag);root.dataset.view=view.view;
 }
