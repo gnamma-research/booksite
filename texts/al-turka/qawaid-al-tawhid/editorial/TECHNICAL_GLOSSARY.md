@@ -54,3 +54,22 @@ When the grandson cites Abū Ḥāmid's **al-Ḥikmah al-Rashīdiyya** or **al-I
 **Bibliography:** [Source register](WITNESS_REGISTER.md) · [Current translation](../data/parallel-matn.md) · [Editorial limits](EDITORIAL_STATUS.md) · [Lumbard comparison](LUMBARD_COMPARISON.md).
 
 _Gnamma Research · translator's critical glossary v0.1 · 2 November 2026_
+
+
+## Stage 05: additional verified term loci (printed pp. 130–190)
+
+| Term | Printed ancestor matn anchor | Why it matters |
+|---|---|---|
+| **علم إجمالي جمعي / تفصيلي** (collected vs detailed knowledge) | QT-029–030, pp. 130–133 | Knowledge of all necessary attributes does not entail multiple realities; critique of Peripatetic causal representation. |
+| **الأعيان الثابتة** (*aʿyān thābita*) | QT-030, QT-034–035 | Not caused or made insofar as essentially distinct from divine knowing, but relational predication and manifestation must still be explained. |
+| **العاقلية / المعقولية** (knowing / being known) | QT-031, pp. 137–138 | Relational difference is not proof of existential duality; self-cognition of the Necessary. |
+| **الظهور / البروز / الغيب / الشهادة** | QT-032, p. 141 | Transition from undifferentiated inward disclosure to manifestly distinct levels. |
+| **عالم المثال / عالم الأرواح / عالم الأجسام** | QT-033 and objector QT-034, pp. 143–149 | Ancestor affirms imaginal hierarchy; opponent cites Peripatetic denial of imaginal realm. Do not invert the attribution. |
+| **الموجودية / الوجود المطلق** | QT-035, p. 154 | Predicative ‘being-existent’ is a mental consideration, but absolute existence is objectively real; critique of reduction of all existence to mental iʿtibār. |
+| **الأكملية / مراتب الإدراك** | QT-037, p. 164 | Diverse modes of apprehension may make a lower stage more comprehensive in one restricted sense. |
+| **الملكات** (*malakāt*) | QT-038, p. 167 | Acquired stable capacities unite psychology, spiritual discipline and perfect-human ontology. |
+| **المظهر الكلي / الكون الجامع / الإنسان الكامل** | QT-039–042, pp. 172–190 | The Perfect Human as comprehensive locus of unity and plurality; also subject to philosophical objections about whether human manifestation reveals every divine level. |
+| **انبعاث إرادي** | QT-040, p. 180 | Volitional self-disclosure, to be distinguished from unqualified causal necessitation. |
+| **رؤية البصيرة / رؤية الباصرة** | QT-041, pp. 185–186 | Intellectual self-cognition versus corporeal sight; original critical engagement with Ibn ʿArabī's mirror analogy. |
+
+Later **sharḥ** material is used for labelled interpretation only. No claim that Āshtiyānī, the Qajar glossators, or Lumbard have personally verified the new English translation.
