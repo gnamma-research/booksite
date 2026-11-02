@@ -7,8 +7,13 @@ Taftāzānī's full modal logic and NOT manuscript evidence.
 import itertools, json, pathlib
 N=3
 UNIVERSE=range(N)
+# Include the empty extension: excluding it silently imposes existential import
+# on every term, disguising countermodels to four traditional syllogistic moods.
 SETS=[frozenset(i for i in UNIVERSE if mask & (1 << i)) for mask in range(1 << N)]
 MODELS=[dict(zip("SPM",sets)) for sets in itertools.product(SETS, repeat=3)]
+assert len(SETS) == 8 and len(MODELS) == 512, (
+    "Universe must include empty terms for existential-premise QA")
+assert any(not m["S"] and not m["P"] and not m["M"] for m in MODELS)
 P={
  "A": lambda x,y:x <= y,
  "E": lambda x,y: not (x & y),
@@ -54,6 +59,14 @@ for mood in MOODS:
  results.append(dict(name=mood[0],figure=mood[1],models_with_premises=len(valid),
                      existential_condition=mood[-1],unqualified_countermodel=(
                      {k:sorted(v) for k,v in counter.items()} if counter else None)))
+# Stage 79: ensure the four countermodels really depend on a nonempty term.
+# This is a modern SET-THEORETIC interpretation, not a reconstruction of
+# medieval modal, temporal or conditional proposition semantics.
+needs_existence={m[0]:m[-1] for m in MOODS if m[-1]}
+assert needs_existence=={"Darapti":"M","Felapton":"M",
+                         "Bramantip":"P","Fesapo":"M"}
+assert sum(bool(r["unqualified_countermodel"]) for r in results)==4
+
 # Positive and negative disjunctions are semantically distinct.
 table=[]
 for a,b in itertools.product((False,True),repeat=2):
@@ -61,6 +74,28 @@ for a,b in itertools.product((False,True),repeat=2):
                    haqiqiyya=a!=b, mani_al_jam=not(a and b),mani_al_khulu=a or b))
 assert any(r['mani_al_jam'] and not r['P'] and not r['Q'] for r in table)
 assert any(r['mani_al_khulu'] and r['P'] and r['Q'] for r in table)
+# L17: modern material-implication schematic checks only. Do not identify
+# truth-functional implication with the historic luzumiyya without a commentary.
+implies=lambda a,b: (not a) or b
+for a,b in itertools.product((False,True),repeat=2):
+    if implies(a,b) and a: assert b          # affirm antecedent (modus ponens)
+    if implies(a,b) and not b: assert not a  # deny consequent (modus tollens)
+    if a != b:
+        assert (a and not b) or (b and not a) # strict disjunction
+    if not (a and b) and a: assert not b     # prevents conjunction
+    if (a or b) and not a: assert b          # prevents joint falsity
+assert any(implies(a,b) and b and not a for a,b in itertools.product((False,True),repeat=2))
+assert any(implies(a,b) and not a and b for a,b in itertools.product((False,True),repeat=2))
+# L13: negation of universal conjunctive predication distributes to
+# EXISTENTIAL disjunctive negation, not to conjunction of two existential negations.
+for ps in itertools.product((False,True),repeat=2):
+    for qs in itertools.product((False,True),repeat=2):
+        lhs=not all(p and q for p,q in zip(ps,qs))
+        rhs=any((not p) or (not q) for p,q in zip(ps,qs))
+        assert lhs==rhs
+assert (not all(p and q for p,q in zip((False,True),(True,True))))
+assert not (any(not q for q in (True,True)))
+
 # Universal affirmative does not generally convert universally; O not converse.
 assert any(P['A'](m['S'],m['P']) and not P['A'](m['P'],m['S']) for m in MODELS)
 assert any(P['O'](m['S'],m['P']) and not P['O'](m['P'],m['S']) for m in MODELS)
@@ -69,5 +104,7 @@ report={"domain_elements":N,"set_theoretic_models":len(MODELS),
         "categorical_moods":results,"disjunction_truth_table":table}
 out=pathlib.Path(__file__).with_name("verified_nonmodal_results.json")
 out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-print("PASS",len(MOODS),"nonmodal moods,",len(MODELS),"finite models; 4 conditional existential countermodels")
-print("PASS three kinds of disjunction and two invalid-conversion counterexamples")
+print("PASS",len(MOODS),"nonmodal moods,",len(MODELS),
+      "finite models including empty terms; 4 existential-premise countermodels")
+print("PASS three kinds of disjunction, two invalid conversions,")
+print("     material-conditional schematic and quantified-negation scope")
