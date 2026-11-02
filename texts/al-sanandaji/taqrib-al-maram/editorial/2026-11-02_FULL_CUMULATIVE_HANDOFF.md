@@ -704,3 +704,47 @@ These are **source-located philosophical and theological argument maps**, not co
 - **Unchanged numerical checkpoint:** 615/615 original numbered pages indexed; 452/615 have some preliminary English page presence; 0/615 independently certified complete main-plus-every-margin translations. One previous Wasīm source-matched excerpt at II:117, with no total gloss denominator. **No new page claimed translated in Stage 15A.**
 
 **Next sequential original images still pending:** printed **II:181–200**, source PDF physical pages **476–495**. Full original images must be available to make actual new source claims. Do not create page-guide guesses or generic fabricated Arabic. The separate al-Taftāzānī `Tahdhīb` project remains entirely untouched.
+
+
+---
+
+## 24. Stage 15B — original source recovered; sequential printed II:181–200 (2 November 2026)
+
+**The user re-uploaded the actual primary document as `taqribmaram(2).pdf`; direct independent inspection of the mounted binary established **632 PDF images**, despite a truncated interface-level preview showing only 400 pages.** It is a scanned two-volume edition with image-only Arabic; no text layer. Numbered original volumes are I:1–280 and II:1–335 (615 printed positions). The previously unavailable **printed II:181–200 = physical PDF pages 476–495** were rendered directly, and every original image was visually inspected in sequence. The source scan can now support genuinely source-dependent translation rather than generic anticipation.
+
+### Newly confirmed source structure and content
+
+- **II:181–191:** concluding and extending debates on divine creation of human actions, foreknowledge, human acquisition versus origination, motive, power and choice, divine decree versus its object, divine will versus moral approval, and the difference between commanding an action and willing its occurrence.
+- **II:186** is especially significant for a continuous upper-register argument: `الكفر مقضي لا قضاء`, with `والرضا إنما يجب بالقضاء لا بالمقضي`; the reply then distinguishes `من حيث أنه مقضي` from `من حيث ذاته`. An extended translated selection is recorded in the Stage 15B source-translation addendum.
+- **Printed II:192** opens the exact original **`فصل في الحسن والقبح`**, contrasting descriptive perfection/deficiency, correspondence with purpose and, centrally, moral desert of divine praise/blame and reward/punishment. The disagreement is not simply whether intellect knows any goodness whatsoever.
+- **II:193–196:** continuation of rational moral judgements, including an unusually extensive **unattributed lower-register** argument about truth, falsehood, apparently self-referential statements and whether rational moral assessments are universal. This has been **located**, NOT fully transcribed, nor individually attributed to Wasīm.
+- **Printed II:197** begins another source-original section **`فصل في التكليف بما لا يطاق`**, explicitly connecting the question to the prior `ḥusn wa-qubḥ` controversy. **II:197–200** develops impossibility, capacity, conceivability of commands, and the interpretation of scriptural constraints on obligation.
+
+### New files, without overwriting predecessor translations
+
+1. `firstpass-II181-II200.js` — **20** source-image first-reading records with `P2.181`–`P2.200` stable page identifiers, page-specific **interpretive guides**, brief directly read Arabic anchors and original physical source locators. **Not** continuous literal translations.
+2. `source-selected-II181-II200.js` — **15** short upper-register, directly inspected Arabic-English source selections with stable `L.II.*` identifiers. Chapter headings are explicitly original. Embedded matn versus running sharḥ remains a source-typography attribution task.
+3. `editorial/2026-11-02_STAGE15B_II181_II200_SOURCE_GUIDES.md` — same provisional page guides plus source boundary corrections.
+4. `editorial/2026-11-02_STAGE15B_II181_II200_EXTENDED_SOURCE_TRANSLATIONS.md` — new **longer connected selected source passages**, especially at II:186 and II:192, with close bilingual translation and philosophical apparatus; short selected source text at II:197. These may overlap other short excerpts and **do not count as extra whole-page translations**.
+5. `editorial/2026-11-02_STAGE15B_II181_II200_LAYER_LEDGER.csv` — twenty rows separating page guides, selected upper text, missing complete upper transcription, missing full main English, outstanding margins, positive Wasīm attribution and independent verification.
+6. `editorial/2026-11-02_STAGE15B_II181_II200_MARGIN_WITNESS_INVENTORY.csv` — visible but still unenumerated small-print marginal texts of the twenty source pages. No new Wasīm unit falsely assigned by layout.
+7. Canonical `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv` — **exactly 20** printed II:181–200 rows changed to provisional English/source inspected; prior 595 rows left unchanged.
+8. `index.html`, `source-atlas.js`, `reader-layered.js` — NAMA site now loads both new JS sources and reflects the revised truthful source-page-presence counter, preserving Arabic/English/both views, layer controls and original archived passages. No independent Tahdhīb matn files modified.
+
+### Numerators and honest completion denominators
+
+| Measure | Stage 15B |
+|---|---|
+| Original numbered printed positions bibliographically indexed | **615/615 = 100% indexing**, not translation |
+| Volume I with some provisional English | I:8–280 = **273**, including marginal-only I:222 |
+| Volume II with some provisional English | II:2–200 = **199**, title-only II:1 excluded |
+| Numbered positions with some English | **472/615 = 76.75% page-presence only**, not Arabic words translated |
+| New source-inspected and preliminary guided pages | **20**, II:181–200 |
+| New short direct upper passages | **15**, not complete pages |
+| Additional longer selected bilingual source passages | II:186, II:192, II:197 with possible overlap |
+| New fully verified Wasīm glosses | **0**; prior II:117 remains independently source-located |
+| Complete main text plus every margin, independently proofed and critically certified | **0/615 = 0%** |
+
+This stage **does not** certify any complete printed page. Every long marginal discussion remains in the future full-text Pass 1, followed by independent Arabic proof, edition collation, technical commentary and author-specific attribution. The existing separate al-Taftāzānī `Tahdhīb al-Kalām` workstream has not been touched.
+
+**Next direct-image interval:** **printed II:201–220 / physical PDF pages 496–515**, in the same 632-image source now mounted and available for source work. Full-text clause-by-clause main and margin translation should increasingly replace interpretive page guides, never be confused with them.
