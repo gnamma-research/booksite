@@ -65,3 +65,10 @@ Forty original source images (printed I:161–200 = physical facsimile pp.174–
 New textual master: `2026-11-02_STAGE07_I161-I200_SOURCE_AND_TRANSLATION.md`, generated directly from the reader JS records. New layer ledger: `2026-11-02_STAGE07_I161-I200_LAYER_LEDGER.csv`; the canonical `2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv` has been updated for all 40 new pages.
 
 **Global:** I:8–200 = **193/615 numbered source pages (31.38%) with at least some preliminary English**. This figure is explicitly **not** a full-text translation percentage. **0/615** pages have all original sharḥ and lower ḥāshiya transcribed, translated, independently checked and certified definitive. Next: I:201–220 (PDF pp.214–233). Independently authored Tahdhīb remains unmerged. See cumulative handoff §14.
+
+
+## Stage 08 source-first continuation (2 November 2026)
+
+Source images printed **I:201–220 / PDF 214–233** were directly inspected. The reader now includes 20 further **meaning-oriented English page guides** (not complete literal page translation), **10 short selected upper-register Arabic–English translations**, and **one lower-register sound-related excerpt** explicitly marked **author unassigned**. The source image at I:208 was checked again and an uncertain Arabic verb deleted rather than presented as a definite reading.
+
+Together with Stage 07, this turn adds **60** original pages of preliminary reading and **32 upper + seven lower** selected short translations. The broader printed source is 615 numbered pages; **I:8–220 = 213/615 = 34.63%** has *some* English (page-presence proxy only), while **0/615** pages are certified complete across the Sanandajī running text plus all marginal annotations. The independently identified Wasīm II:117 excerpt remains a separate existing contribution. The next rapid pass begins I:221/PDF 234. Canonical running details: `2026-11-02_FULL_CUMULATIVE_HANDOFF.md` §15.
