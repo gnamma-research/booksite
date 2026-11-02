@@ -91,6 +91,7 @@ function createTools(){
  const dialog=el('div','gn-notes-overlay');dialog.id='gn-notes-overlay';dialog.hidden=true;dialog.setAttribute('role','presentation');dialog.addEventListener('click',e=>{if(e.target===dialog)closeNotebook()});document.body.append(dialog);
 }
 function apply(){
+ const priorReadingStyle=document.body.dataset.readingStyle;
  document.body.dataset.readingStyle=prefs.mode;
  document.documentElement.dataset.arabicFont=prefs.arFont;
  document.documentElement.dataset.englishFont=prefs.enFont;
@@ -99,7 +100,7 @@ function apply(){
  const source=$('#passages'),flow=$('#flow-passages');
  source.hidden=prefs.mode!=='study';flow.hidden=prefs.mode==='study';
  if(prefs.mode==='immersive'){document.body.dataset.focus='3';}
- else if(document.body.dataset.focus==='3'){document.body.dataset.focus='0';}
+ else if(priorReadingStyle==='immersive'&&document.body.dataset.focus==='3'){document.body.dataset.focus='0';}
  $$('[data-reader-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.readerMode===prefs.mode)));
  $$('[data-vowel-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.vowelMode===prefs.vocalization)));
  const n=$('#gn-vowelling-status');
