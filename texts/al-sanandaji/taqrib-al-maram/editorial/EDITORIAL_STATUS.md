@@ -83,3 +83,14 @@ The same 632-image combined source witness has now been directly examined throug
 The corpus has **615 numbered original pages**: I:1–280 and II:1–335. **I:8–240 = 233 pages with some provisional English (37.89% page-presence)**, of which only 232 have any upper-running-text English record because of I:222. **0/615** printed pages are complete, critically verified bilingual sharḥ-plus-all-margins editions. The confirmed Wasīm II:117 selected passage remains distinct from the new unattributed lower material.
 
 The new source-facing Markdown and twenty-row ledger are `2026-11-02_STAGE09_I221-I240_SOURCE_AND_TRANSLATION.md` and `2026-11-02_STAGE09_I221-I240_LAYER_LEDGER.csv`. Next source interval I:241–260 / scanned images 254–273. The independent Tahdhīb matn project remains unmodified; consult cumulative handoff §16.
+
+
+## Stage 09A+B (2 November 2026) — I:221–260
+
+The original combined Sanandajī–Wasīm source images were directly inspected for **40 consecutive printed pages, I:221–260 (physical PDF pp.234–273)**. This adds **40 page-based explanatory first readings or marginal locators**, **31 short upper-register Arabic–English translated selections**, and **three short lower-register translations** whose individual authorship is still unverified. These are excerpts and source-oriented guides, **not 40 fully translated pages**.
+
+**Major layout correction:** printed **I:222 is entirely a marginal continuation**, without a new Sanandajī upper paragraph. It is counted only among pages with **some** English, not those with upper commentary represented. Important conceptual boundaries: I:221–229 on apprehension/mental existence and the four kinds of cognition; I:233 on multiplication of knowledge; I:235–243 on will and power; I:250 opens **فصل في الأين** and I:254–260 develops spatial occurrence, motion and rest.
+
+**Cumulative source page presence:** I:8–260 = **253/615 = 41.14%** of numbered printed pages with **some English**, but only 252 have any upper running-text account. These are **not word-completion percentages**. Positively new authenticated Wasīm glosses in this instalment: **0**; the existing source-matched excerpt II:117 remains. **Critically complete two-register pages: 0/615**.
+
+Source-aligned new Markdown: `2026-11-02_STAGE09_I221-I240_SOURCE_AND_TRANSLATION.md` and `2026-11-02_STAGE09B_I241-I260_SOURCE_AND_TRANSLATION.md`; separate CSV ledgers accompany them. The canonical `2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv` and NAMA reader/source atlas were updated on the original page IDs. Full chronological handoff §16–17. Next printed interval **I:261–280** (physical PDF 274–293) completes volume I; volume II begins at PDF 296 after the volume I index.
