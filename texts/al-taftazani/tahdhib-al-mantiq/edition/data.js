@@ -5,7 +5,7 @@ window.GNAMMA_CRITICAL_CORPUS={
   "author": "Saʿd al-Dīn al-Taftāzānī",
   "edition": "Continuous bilingual 19-unit logic working text",
   "witness": "Cairo 1912 and compared printed logic text; original pagination recorded per unit",
-  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn.",
+  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn. Stage83 Cairo L12–L13 additional printed-line fidelity repairs (indefinite «نسبتين», omitted «معاً», «جميع التقادير للمقدم», repeated governing lām in contradiction).",
   "navigation_kind": "division",
   "unit_type": "editorial divisions",
   "start_page": 1,
@@ -248,7 +248,7 @@ window.GNAMMA_CRITICAL_CORPUS={
     {
       "id": "L.12",
       "page": 12,
-      "ar": "فصل في أقسام الشرطية. الشرطية متصلة إن حكم فيها بثبوت نسبة على تقدير أخرى أو نفيها، لزومية إن كان ذلك لعلاقة وإلا فاتفاقية. ومنفصلة إن حكم فيها بتنافي النسبتين أو لا تنافيهما صدقاً وكذباً معاً وهي الحقيقية، أو صدقاً فقط فمانعة الجمع، أو كذباً فقط فمانعة الخلو. وكل منها عنادية إن كان التنافي لذات الجزأين وإلا فاتفاقية. ثم الحكم في الشرطية إن كان على جميع تقادير المقدم فكلية، أو بعضها مطلقاً فجزئية، أو معيناً فشخصية، وإلا فمهملة. وطرفا الشرطية في الأصل قضيتان حمليتان أو متصلتان أو منفصلتان أو مختلفتان، إلا أنهما خرجتا بزيادة أداة الاتصال والانفصال عن التمام.",
+      "ar": "فصل في أقسام الشرطية. الشرطية متصلة إن حكم فيها بثبوت نسبة على تقدير أخرى أو نفيها، لزومية إن كان ذلك لعلاقة وإلا فاتفاقية. ومنفصلة إن حكم فيها بتنافي نسبتين أو لا تنافيهما صدقاً وكذباً وهي الحقيقية، أو صدقاً فقط فمانعة الجمع، أو كذباً فقط فمانعة الخلو. وكل منها عنادية إن كان التنافي لذات الجزأين وإلا فاتفاقية. ثم الحكم في الشرطية إن كان على جميع التقادير للمقدم فكلية، أو لبعضها مطلقاً جزئية، أو معيناً فشخصية، وإلا فمهملة. وطرفا الشرطية في الأصل قضيتان حمليتان أو متصلتان أو منفصلتان أو مختلفتان، إلا أنهما خرجتا بزيادة أداة الاتصال والانفصال عن التمام.",
       "en": "Chapter. A conditional proposition is connected [muttaṣila] if it judges that one relation holds, or does not hold, on the supposition of another. It is implicative [luzūmiyya] when there is a connection between the two relations; otherwise it is coincidental [ittifāqiyya]. It is disjunctive [munfaṣila] if it judges that the two relations are incompatible, or not incompatible, with respect to truth and falsity together, in which case it is the true disjunctive [ḥaqīqiyya]; or with respect to truth only, in which case it prevents conjunction [māniʿat al-jamʿ]; or with respect to falsity only, in which case it prevents joint exclusion [māniʿat al-khulū]. Each of the foregoing disjunctive forms is intrinsically opposed [ʿinādiyya] if the incompatibility derives from the two members themselves; otherwise its opposition is coincidental. Again, if the judgment in a conditional holds under all suppositions concerning the antecedent, it is universal; if under some, without specification, particular; if under a determinate supposition, singular; otherwise indeterminate. The two members of a conditional are originally two categorical propositions, two connected conditionals, two disjunctives, or two different kinds. The addition of the connective or disjunctive particle deprives them of [their independent] completeness.",
       "status": "B",
       "source_location": "9",
@@ -260,6 +260,10 @@ window.GNAMMA_CRITICAL_CORPUS={
         {
           "type": "Stage82 confirmed Cairo p9 vs commentary-containing printed form p13",
           "text": "Cairo has «لعلاقة», «وكل منها عنادية», «لذات الجزأين»; the second printed text has «بعلاقة», «وكل منهما عنادية», «لذاتي الجزئين». Preserve the plural-reference wording in Cairo; the difference bears on whether the following criterion applies to all three previously mentioned disjunctions or an implied pair. Manuscript priority remains unknown."
+        },
+        {
+          "type": "Stage83 direct Cairo p.9 full-line transcription correction",
+          "text": "High-resolution rereading of the controlling Cairo 1330/1912 p.9 confirms «بتنافي نسبتين» (not «بتنافي النسبتين»), no written «معاً» after «صدقاً وكذباً», and «على جميع التقادير للمقدم ... أو لبعضها مطلقاً جزئية» rather than the earlier editorial rewording. The English may explain simultaneous truth/falsity, but «معاً» must not be placed inside the claimed Cairo Arabic. This is photographic single-print evidence only."
         }
       ],
       "title": "Conditional propositions",
@@ -268,7 +272,7 @@ window.GNAMMA_CRITICAL_CORPUS={
     {
       "id": "L.13",
       "page": 13,
-      "ar": "فصل في التناقض. التناقض اختلاف قضيتين بحيث يلزم لذاته من صدق كل كذب الأخرى وبالعكس، ولا بد من الاختلاف في الكيف والكم والجهة والاتحاد فيما عداها، والنقيض الضرورية الممكنة العامة، والدائمة المطلقة العامة، والمشروطة العامة الحينية الممكنة، والعرفية العامة الحينية المطلقة، وللمركب المفهوم المردد بين نقيضي الجزأين، لكن في الجزئية بالنسبة إلى كل فرد.",
+      "ar": "فصل في التناقض. التناقض اختلاف قضيتين بحيث يلزم لذاته من صدق كل كذب الأخرى وبالعكس، ولا بد من الاختلاف في الكيف والكم والجهة والاتحاد فيما عداها، والنقيض للضرورية الممكنة العامة، وللدائمة المطلقة العامة، وللمشروطة العامة الحينية الممكنة، وللعرفية العامة الحينية المطلقة، وللمركب المفهوم المردد بين نقيضي الجزأين، لكن في الجزئية بالنسبة إلى كل فرد.",
       "en": "Contradiction is a difference between two propositions such that the truth of either intrinsically entails the falsity of the other, and conversely. They must differ in quality, quantity, and modal determination while agreeing in all other respects. The contradictory of a necessary proposition is a generally possible proposition of the opposite quality; of a permanent proposition, a generally absolute proposition of the opposite quality; of a generally conditioned proposition, the temporally possible form; and of a generally customary proposition, the temporally absolute form. For a compound modal, the contradictory is expressed through a disjunctive meaning involving the contradictories of its two components, with the particular formulation assessed relative to each individual.",
       "status": "B",
       "source_location": "9–10",
@@ -284,6 +288,10 @@ window.GNAMMA_CRITICAL_CORPUS={
         {
           "type": "Stage 78 Cairo print comparison (pp. 9–10)",
           "text": "The 1912 print opens «التناقض اختلاف قضيتين» (p.9) and continues «ولا بد من الاختلاف في الكيف والكم والجهة» (p.10). The separately typeset Sharḥ al-Tahdhīb online p.13 instead has «اختلاف القضيتين» and «في الكم والكيف والجهة». These are printing-level wording/order variants, not demonstrably authorial manuscript variants. The revised English makes the opposite quality of modal contradiction explicit."
+        },
+        {
+          "type": "Stage83 direct Cairo p.10 modal contradiction correction",
+          "text": "Cairo p.10 explicitly prints «والنقيض للضرورية الممكنة العامة وللدائمة المطلقة العامة وللمشروطة العامة الحينية الممكنة وللعرفية العامة الحينية المطلقة». Restore the repeated governing prepositions «لـ» and do not silently suppress them. The English interpretation distinguishes named modal forms and opposite quantity/quality; modern formal semantics remains separate."
         }
       ],
       "title": "Contradictory propositions",
