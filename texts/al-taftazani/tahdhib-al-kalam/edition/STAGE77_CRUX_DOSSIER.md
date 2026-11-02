@@ -1,5 +1,7 @@
 # Tahdhīb — Stage 77 source-facing corrections and residual cruces
 
+> **Stage 80 supersession (2 November 2026):** Cairo p. 39 was rechecked directly against a magnified photograph. It reads **«مقدار طبيعة غير قارة»**, **«ولامتناع فنائه لما مر مقدار الحركة المستديرة»**, and **«مقدار أسرعها»**. The earlier Stage77 p.39 unresolved linker and the 108/113 tally are now historical, not current. See [Stage80 photographic ledger](STAGE80_CAIRO_P39_SOURCE_CORRECTIONS.md): **109/113 single-print pages checked, four printed-page questions remain (77, 80, 100, 124)**. This is not manuscript collation.
+
 > **Stage 78 editorial correction (2 November 2026):** The Stage 77 claim that Cairo 1912 p. 12 contains «الموجبة الكلية ... السالبة الكلية» was **retracted after direct rereading**. Cairo reads «مع الموجبة الموجبتين، ومع السالبة السالبتين»; the longer wording belongs to the commentary-contained printed witness. Do not cite the old Stage 77 assertion as Cairo wording. See the [Stage 78 collation dossier](../../tahdhib-al-mantiq/edition/STAGE78_CAIRO_LOGIC_COLLATION.md).
 
 
