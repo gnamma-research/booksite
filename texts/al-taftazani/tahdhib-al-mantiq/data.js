@@ -120,7 +120,7 @@ window.GNAMMA_BOOK={
       "statusText": "",
       "link": null,
       "linkLabel": "Related discussion in Tahdhīb al-Kalām",
-      "printedPages": "5"
+      "printedPages": "5–6"
     },
     {
       "id": "L.07",
@@ -277,7 +277,8 @@ window.GNAMMA_BOOK={
       "gap": false,
       "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "9–10"
     },
     {
       "id": "L.14",
@@ -298,7 +299,8 @@ window.GNAMMA_BOOK={
       "gap": false,
       "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "10"
     },
     {
       "id": "L.15",
@@ -352,7 +354,8 @@ window.GNAMMA_BOOK={
       "gap": false,
       "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "11–12"
     },
     {
       "id": "L.17",
@@ -404,12 +407,14 @@ window.GNAMMA_BOOK={
       "gap": false,
       "statusText": "Continuously translated • editorial proofing and manuscript collation outstanding",
       "link": null,
-      "linkLabel": "Related discussion in Tahdhīb al-Kalām"
+      "linkLabel": "Related discussion in Tahdhīb al-Kalām",
+      "printedPages": "14"
     }
   ],
   "sourceNotes": [
     "Arabic witness: uploaded 21-page edited matn of Tahdhīb al-Manṭiq, and the five-page wording in the al-Yazdī commentary tradition.",
     "English translation: prior bilingual Revision 6 with corrected fourth-figure wording.",
-    "Logic source and translation must be checked against the 1587 manuscript for a definitive critical text."
+    "Logic source and translation must be checked against the 1587 manuscript for a definitive critical text.",
+    "Stage 78: all 19 logic sections mapped directly onto printed Cairo 1912 pages 3–14. Section pagination and separate witness readings are not independent manuscript certification."
   ]
 };
