@@ -44,6 +44,7 @@
 .gn-flow-unit:target{background:var(--wash)}
 .gn-flow-unit.gn-is-bookmarked{box-shadow:inset 0 -2px 0 var(--accent)}
 .gn-flow-unit.gn-has-note{background:linear-gradient(transparent 81%,var(--wash) 81%)}
+.gn-flow-unit.gn-is-highlighted{background:linear-gradient(transparent 32%,rgba(206,169,84,.19) 32%,rgba(206,169,84,.19) 85%,transparent 85%)}
 .gn-flow-unit.gn-is-bookmarked.gn-has-note{box-shadow:inset 0 -2px 0 var(--accent)}
 .flow-page-ref{font:600 10px/1.2 system-ui;color:var(--accent);opacity:.7;text-decoration:none;vertical-align:super;white-space:nowrap;display:inline-block;margin:0 4px;scroll-margin-top:115px}
 .flow-page-ref:hover,.flow-page-ref:focus-visible{text-decoration:underline;opacity:1}
