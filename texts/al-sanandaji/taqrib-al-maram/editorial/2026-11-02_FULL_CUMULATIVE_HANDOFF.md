@@ -355,3 +355,49 @@ A full source-English word alignment and complete count of **Wasīm's actual mar
 - **Pass 5:** mobile, desktop, print/PDF bilingual alignment QA, reader controls, citation copying and preservation tests. Only fully complete and checked work may be labelled definitive.
 
 **No merge** with the independent Tahdhīb matn translation until both standalone streams are critically definitive. The new GitHub changes affect only `texts/al-sanandaji/taqrib-al-maram/` in `gnamma-research/booksite`.
+
+
+---
+
+## 17. Stage 09B — I:241–260, continued rapid direct-image reading (2 November 2026)
+
+**Authoritative predecessor:** Stage 09 §16 above. The earlier source text and direct translations remain unchanged. This stage adds twenty consecutive printed pages **I:241–260**, physical PDF **254–273**, from the same combined Sanandajī–Wasīm facsimile. Each image was inspected; no automated OCR has been treated as source-certified Arabic.
+
+### New content and argumentative sequence
+
+- **I:241–243:** disputes about human power (*qudra*) and whether ability is simultaneous with, precedes, or is prevented from issuing in action; disagreements between Muʿtazilī and Ashʿarī accounts.
+- **I:244–249:** kinds of quality and oppositions, pleasure and pain, intellect versus sensation, health and illness, colours, surface, figure, angles and preparedness as qualities.
+- **I:250:** exact new chapter boundary **«فصل في الأين»**. This initiates the category of spatial occupancy or "where", not a continuation of sensory quality.
+- **I:251–253:** a body's occupancy of a spatial region, movement into another, and related accounts of motion and rest; several pages have very short upper discussion and extended marginal debate.
+- **I:254–260:** *akwān* of motion, rest, conjunction and separation, numerical unity of a particular spatial state, successive occupancies, philosophical gradual transition from potentiality to actuality, the temporal instant, intermediate motion between origin and destination, and the four categories of change in place, posture, magnitude and quality.
+
+### New committed files
+
+- `firstpass-I241-I260.js` — **20 new page-specific argument guides** and short Arabic anchors; status intentionally **interpretive first reading, NOT whole-page English**.
+- `source-selected-I241-I260.js` — **15 short selected upper-register Arabic–English translations**, containing only visibly read words from the source. Individual embedded matn lemmata need later author-level collation.
+- `editorial/2026-11-02_STAGE09B_I241-I260_SOURCE_AND_TRANSLATION.md` — synchronized Markdown generated from the new JS records. Contains 20 guides and 15 short translations, not complete source coverage.
+- `editorial/2026-11-02_STAGE09B_I241-I260_LAYER_LEDGER.csv` — twenty page-level records preserving their uncompleted upper, lower and Wasīm layers.
+- `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv` — the previous complete 615-page register has been updated for **exactly twenty** new I:241–260 rows, with the marginal-only I:222 exception retained.
+- `index.html`, `reader-layered.js` and `source-atlas.js` — NAMA reader, full page atlas, and public site now recognize both Stage09A and Stage09B.
+
+### Stage 09A+B combined and revised cumulative totals
+
+| Measure | Stage 09B checkpoint |
+|---|---|
+| Source pages newly image-inspected this turn | **40 consecutive original pages, I:221–260** (PDF 234–273) |
+| New page-identified English first-reading records | **40**, of which I:222 is lower-only |
+| New short direct upper-register Arabic–English selections | **31** (16 in A + 15 in B) |
+| New short translated lower-register selections of unverified individual authorship | **3** (all in A; **0** in B) |
+| NEW independently authenticated Wasīm notes | **0** (previous II:117 attribution remains) |
+| Source index completeness | **615/615 original numbered printed pages indexed, 100% bibliographic** |
+| Pages having **some** English in I:8–260 | **253 of 615 = 41.14% page presence**, NOT the portion of text translated |
+| Of those 253 pages, with any preliminary upper text account | **252** (I:222 marginal-only) |
+| Complete, independently verified upper running commentary AND every lower marginal note | **0/615 = 0%** |
+
+Do not claim that 41.14% of the two-volume work is translated; it means only that a corresponding printed-page record contains at least some English guidance or direct selected text. For many pages the actual Arabic running text and extensive marginal prose remain mostly untranscribed. A meaningful **Wasīm-specific translation percentage requires locating and attributing all of his individual notes**, not merely counting printed pages.
+
+### Next checkpoint and critical policy
+
+Next interval: **printed I:261–280 / original facsimile physical PDF images 274–293**, which completes **volume I**. Thereafter PDF images **294–295** carry index material and **volume II printed p.1 is physical PDF image 296**. Retain the precise page-map change across the transition, and do not apply the +13 offset to volume II.
+
+Repeat the same *rapid argument-based source survey* across the unexamined source, but keep its status lower than a full translation. Later complete the whole main commentary and marginal ḥāshiya in a **literal Pass 1**, perform independent source-by-source sentence verification (Pass 2), variant collation and author-identity checks (Pass 3), philosophical/terminological review (Pass 4), and bilingual NAMA/PDF publication QA (Pass 5). No integration into the separately translated al-Taftāzānī *Tahdhīb* matn until both independent streams are truly critically definitive.
