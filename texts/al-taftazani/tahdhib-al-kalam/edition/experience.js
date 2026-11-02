@@ -67,6 +67,24 @@ function createTools(){
  refCheck.addEventListener('change',()=>{prefs.pageRefs=refCheck.checked;savePrefs();apply()});
  const noteButton=control('My reading notes');noteButton.id='gn-notebook-button';noteButton.className='toolbar-icon';noteButton.textContent='Notes';noteButton.addEventListener('click',()=>showNotebook());box.append(noteButton);
  toolbar.append(box);
+ // Download the ENTIRE separate model candidate without changing original text.
+ const exportList=$('.download-list');
+ if(exportList){
+  const draft=el('button','gn-machine-export',machineAvailable?'Arabic with machine vowels · TXT (UNREVIEWED)':'Machine vowelled TXT · not yet generated');
+  draft.type='button';draft.disabled=!machineAvailable;
+  draft.title=machineAvailable?'AI-generated tashkīl may contain grammatical errors; original source letters are checked.':'This document will be available only after source-integrity checks and publication.';
+  draft.addEventListener('click',()=>{
+   if(!machineAvailable)return;
+   const text=corpus.work+' · Arabic with AUTOMATIC UNREVIEWED vowels.\nThis is not the authorial text or a manuscript-collated vocalized edition. The underlying source letters are preserved.\n\n'+
+     corpus.units.map(u=>u.id+' [Cairo '+u.page+']\n'+machine.units[u.id]).join('\n\n');
+   const blob=new Blob([text],{type:'text/plain;charset=utf-8'});
+   const url=URL.createObjectURL(blob),a=document.createElement('a');
+   a.href=url;a.download='tahdhib-'+(isLogic?'logic':'kalam')+'-machine-unreviewed-vowels.txt';
+   a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
+  });
+  exportList.prepend(draft);
+ }
+
  const original=$('#passages'),flow=el('div','gn-flow-reading');flow.id='flow-passages';flow.hidden=true;original.insertAdjacentElement('afterend',flow);
  const notice=el('p','gn-vowelling-status');notice.id='gn-vowelling-status';notice.setAttribute('role','status');flow.before(notice);
  const popup=el('div','gn-inline-toolbar');popup.id='gn-inline-toolbar';popup.hidden=true;popup.setAttribute('role','group');popup.setAttribute('aria-label','Selected clause actions');document.body.append(popup);
