@@ -9,6 +9,26 @@
   ],
   "texts": [
     {
+      "id": "turka-qawaid-tawhid",
+      "title": "Qawāʿid al-Tawḥīd",
+      "arabic": "قواعد التوحيد",
+      "author": "Abū Ḥāmid Turka al-Iṣfahānī",
+      "author_slug": "al-turka",
+      "work_slug": "qawaid-al-tawhid",
+      "area": [
+        "ʿirfān naẓarī",
+        "metaphysics",
+        "Avicennian–Akbarian encounter"
+      ],
+      "status": "partial-matn-working-edition",
+      "language": [
+        "ar-selected",
+        "en-selected"
+      ],
+      "url": "texts/al-turka/qawaid-al-tawhid/",
+      "note": "Six lemmata of the ancestor's original matn (Āshtiyānī pp. 48–60), extracted from his descendant's Tamhīd al-Qawāʿid. Scholarly Arabic-English working translation and reported printed variants; NOT a complete translation or manuscript-collated critical text. Sharḥ not yet translated."
+    },
+    {
       "id": "ghazali-mustasfa",
       "title": "al-Mustaṣfā min ʿIlm al-Uṣūl",
       "arabic": "المستصفى من علم الأصول",
@@ -306,6 +326,12 @@
           "jurjani-mawaqif",
           "taftazani-tahdhib-kalam",
           "sanandaji-taqrib-maram"
+        ]
+      },
+      {
+        "name": "ʿIrfān and metaphysics",
+        "ids": [
+          "turka-qawaid-tawhid"
         ]
       },
       {
