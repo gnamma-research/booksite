@@ -243,6 +243,28 @@
       "edition_audit_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE78_CAIRO_LOGIC_COLLATION.md",
       "printed_witness_comparisons": 7,
       "cairo_original_logic_page_span": "3–14"
+    },
+    {
+      "id": "abu-hamid-turka-qawaid",
+      "title": "Qawāʿid al-Tawḥīd",
+      "arabic": "قواعد التوحيد",
+      "author": "Afḍal al-Dīn Abū Ḥāmid Muḥammad al-Iṣfahānī (Turka)",
+      "author_slug": "abu-hamid-turka",
+      "work_slug": "qawaid-al-tawhid",
+      "area": [
+        "ʿirfān",
+        "Akbarian metaphysics",
+        "philosophy"
+      ],
+      "status": "six-locus-matn-provisional-not-critical",
+      "language": [
+        "ar-selected",
+        "en-selected"
+      ],
+      "url": "texts/abu-hamid-turka/qawaid-al-tawhid/",
+      "note": "Matn-first bilingual scholarly working edition. Six ancestor quotation loci from Āshtiyānī pp.48–60 with fresh English translation, compared to Lumbard; no independent manuscript collation. Commentary reserved until full critical matn is complete.",
+      "editorial_status_url": "texts/abu-hamid-turka/qawaid-al-tawhid/editorial/EDITORIAL_STATUS.md",
+      "matn_units": 6
     }
   ],
   "research": [
@@ -338,6 +360,12 @@
         "name": "Logic",
         "ids": [
           "taftazani-tahdhib-logic"
+        ]
+      },
+      {
+        "name": "ʿIrfān",
+        "ids": [
+          "abu-hamid-turka-qawaid"
         ]
       }
     ],
