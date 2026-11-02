@@ -387,19 +387,19 @@
     "page": 222,
     "pdf": 517,
     "category": "selection",
-    "quality": "diplomatic-firstpass-uncertain",
-    "title": "A difficult reading about reason",
-    "arabic": "⟦ومعارضته؟ / ومعاضدته؟⟧",
-    "english": "and [a further function with respect to reason; the printed reading has not yet been settled]",
+    "quality": "source-verified-against-1912-cairo-tahdhib",
+    "title": "Revelation assists the intellect — reading confirmed",
+    "arabic": "ومعاونته",
+    "english": "and assisting it [that is, the intellect]",
     "citation": "Taqrīb al-Marām II:222; original user-uploaded 632-image facsimile physical PDF 517; directly inspected source image, 2 November 2026.",
     "notes": [
       {
         "type": "Layer",
-        "text": "Unsettled parenthetical reading; editorial conjecture not certified."
+        "text": "Verified parenthetical Taftāzānī lemma, collated to independent Cairo 1912 printed source, original p.97."
       },
       {
         "type": "Source audit",
-        "text": "The photograph is not sufficiently clear to discriminate the competing readings; do NOT silently normalize to 'assisting' or 'contradicting'."
+        "text": "Corrected after enlarged Sanandajī II:222 photo and separate original 1912 Cairo Tahdhīb p.97 were inspected: both read ومعاونته, not ومعارضته or ومعاضدته. Retain original witness and audit the neighbouring رفع الاحتمال also against the 1912 print."
       },
       {
         "type": "Scope",
