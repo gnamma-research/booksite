@@ -179,3 +179,67 @@ Do not infer from 24.88% that 24.88% of original Arabic words has been translate
 ### F. Mandatory continuation
 
 A complete first translation pass means **every clause** of the upper Sanandajī prose and **every separately attributed marginal annotation** in both volumes. The current rapid reading pass has **not** achieved that standard. The next image interval is **I:161–180 (PDF pp.174–193)**. It must preserve interruption of arguments at page boundaries, explicit Arabic speaker indicators, lemma boundaries, marginal incipits, and honest status of any uncertainty. After broad source coverage, execute the full literal pass, independent second reading, witnesses and variant collation, and final critical revision. No merger into the independent Tahdhīb matn before both projects are genuinely critically definitive.
+
+
+---
+
+## 14. Stage 07 — I:161–200, integrated source-reading and first direct excerpts (2 November 2026)
+
+**Canonical source:** previously uploaded two-volume combined facsimile `taqribmaram.pdf`, 632 scanned image pages (no embedded digital text). Original printing numbered text pages: I:1–280 and II:1–335 = **615 printed pages**. For all new pages in this stage: printed I:p = PDF physical p+13. The 40 originals inspected are images **174–213**, supplied separately as an unchanged 40-page Arabic facsimile extract. A searchable OCR has not been taken as a verified Arabic witness.
+
+### A. Content and original page sequence
+
+- **I:161–164:** *burhān al-taṭbīq* and the comparison of purportedly endless series of causes and effects; problem of numerical excess, correspondence and the difference between an imagined comparison and actual dependence.
+- **I:165–166:** matter, form and recipient; the distinction between agent and receptive subject, and the interpretation of contingent secondary efficacy as customary conjunction.
+- **I:167:** **الباب الثالث في الأعراض** (the third major division: accidents) — exact book boundary is preserved.
+- **I:168–170:** categories of accidents (nine highest categories by inductive enumeration), sensible and relational descriptions, individuality and the alleged possibility of one accident existing in two substrates.
+- **I:171–178:** whether an accident can migrate between bearers; persistence, ceasing-to-be, renewed states, and arguments for or against the continued existence of accidents.
+- **I:179:** **فصل في بيان الكم** (quantity) — second chapter boundary preserved.
+- **I:180–183:** discrete quantity, number, continuous magnitude, line, surface, body and the difference between actual versus possible division.
+- **I:184–192:** time, its successive parts and their apparent absence at the present; temporal precedence without a second time; time as a measure of motion and objections to its independent existence.
+- **I:193:** **فصل في المكان** (place) — exact new section marker.
+- **I:194–200:** rival analyses of place as surrounding surface, measurable extension, or void; body-to-body contact and displacement of air/water; the water-in-a-tube example.
+
+### B. New source-facing files and exact completion level
+
+The following are new and have no overlapping original unit IDs with earlier I:8–160 material:
+
+1. `firstpass-I161-I170.js`, `firstpass-I171-I180.js`, and `firstpass-I181-I200.js`: **40 newly source-inspected printed pages** with stable IDs `P1.161` to `P1.200`. These contain **meaning-oriented first readings** of the upper argument, with short Arabic anchors where safely recoverable, **NOT complete literal translations**. Some pages have many lines of untranslated printed commentary or marginal disputation.
+2. `source-selected-I161-I180.js` and `source-selected-I181-I200.js`: **22 short selected Arabic–English translations from the upper printed register**, plus **six short translated lower-register fragments** whose individual authorship remains **UNASSIGNED**. Exact authorial allocation of embedded lemmata also awaits line collation.
+3. `editorial/2026-11-02_STAGE07_I161-I200_SOURCE_AND_TRANSLATION.md`: the entire new source-facing dossier, generated from the five JS sources above. Includes all 40 English page readings, their short Arabic anchors, all 22 direct bilingual selections and all six lower-register excerpts. **This is a complete record of the provisional new work, not a complete translation of the forty source pages.**
+4. `editorial/2026-11-02_STAGE07_I161-I200_LAYER_LEDGER.csv`: one row per printed page with separate counts for upper direct extracts, unassigned lower excerpts, complete transcription, Wasīm-specific attribution, critical review and translation completeness. Every row explicitly remains incomplete.
+5. `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv`: existing full 615-page crosswalk was updated for I:161–200, retaining all other records. No previously translated page was retranslated.
+6. `index.html`, `reader-layered.js`, and `source-atlas.js`: load and display the new records using the existing NAMA dual-column and author-layer controls. The source atlas and the reader now use the same printed-page coverage checkpoint.
+
+### C. Important factual correction to the previous fast pass
+
+Immediately before entering Stage 07, directly checking I:165, I:169 and I:170 identified errors in earlier *selected Arabic anchors* and in the provisional summary of I:169. I:169 enumerates **nine categories of accidents**, not a discussion primarily enumerating divine attributes. The earlier JS has been corrected with an explicit GitHub commit; the register treats those as correction-only, not new translated material. This is why first-pass page summaries must not be certified merely from topical resemblance or OCR.
+
+### D. Coverage with honest denominators (supersedes Stage 06)
+
+| Measure | Stage 07 status |
+| --- | --- |
+| Full source pagination indexed | **615/615 = 100%**, a bibliographic locator achievement, NOT translated text |
+| Volume I with **some** preliminary English (I:8–200) | **193 distinct printed pages**, 193/615 = **31.38% page presence** |
+| New pages with first-pass *interpretive guide* | **40** (I:161–200) |
+| New selected direct upper-register excerpts | **22** (short passages) |
+| New translated but **author-unassigned** lower-register excerpts | **6** (short passages) |
+| Newly positively attributed Wasīm glosses | **0**; the preceding source-matched fragment II:117 remains |
+| Independently critically certified **complete page** with all sharḥ and all marginal commentary | **0/615 = 0%** |
+
+The **31.38%** value is deliberately labelled *pages with some provisional English*, not the fraction of original Arabic words translated. It is not a quantitative measure of either the full Sanandajī sharḥ or Wasīm's ḥāshiya. No reliable Wasīm-specific denominator of individual marginal notes has yet been established.
+
+### E. Multi-pass execution protocol
+
+- **Pass 0 (rapid):** broad direct source-image reading; cite printed page and register main versus marginal layers; publish an interpretive guide without claiming completeness. Continue I:201–220 next (physical PDF images 214–233), then the remainder of volume I and volume II.
+- **Pass 1 (full-text):** manually transcribe each and every Arabic clause in the larger Sanandajī text and lower annotations, preserve all connective particles and nested objections; translate every clause, including substantial marginal passages, with stable IDs and source joins. Every printed page must have a text coverage check.
+- **Pass 2 (independent verification):** second separate facsimile reading; log illegible letters, negation/affirmation, speaker attribution, omitted marginal lines, pagination transitions, and translation reversals.
+- **Pass 3 (witness collation):** compare the original Cairo printing and reproduction with independent accessible witnesses; maintain manuscript or print variant records and source provenance.
+- **Pass 4 (critical interpretation):** check terminology, *qāla/aqūlu/uʿturiḍa* speakers, the philosophical argument, quoted authors, and precise distinction between Wasīm's *Muḥākamāt* and miscellaneous third-party ḥawāshī.
+- **Pass 5 (publication QA):** Arabic–English print/PDF parity, mobile/desktop layout, all controls, keyboard access, gloss toggles, source citations, duplication and checksum audits. Only full completion + specialist approval warrants the label 'critically definitive'.
+
+**Merge policy remains:** the independent al-Taftāzānī *Tahdhīb* project is not edited, overwritten or integrated as the canonical matn until both the Sanandajī–Wasīm stream and the separate matn stream meet their own critical publication gates. Embedded matn lemmata may still be shown in the independent Taqrīb reader as clearly marked quotations.
+
+### F. Next exact handoff checkpoint
+
+**Printed I:201**, source PDF **physical p.214**, continuing the discussions of place and void. The next release must provide separate statistics for (1) new pages inspected, (2) first-pass orientations, (3) actual Arabic words transcribed and directly translated, (4) complete text coverage, (5) named Wasīm note units, (6) unattributed marginal notes, and (7) critically certified pages. Maintain a cumulative and non-destructive handoff each time.
