@@ -65,8 +65,8 @@
     "category": "selection",
     "quality": "direct-arabic-english-firstpass",
     "title": "A proposed cause of whiteness",
-    "arabic": "تحيل البياض من مخالطة الضوء للأجسام الشفافة",
-    "english": "It explains whiteness as arising from the intermingling of light with transparent bodies.",
+    "arabic": "مخالطة الضوء للأجسام الشفافة",
+    "english": "The intermingling of light with transparent bodies.",
     "citation": "Taqrīb al-Marām, printed vol. I:208, source image PDF p.221; selected upper-register reading",
     "notes": [
       {
