@@ -55,7 +55,7 @@
     "quality": "direct-source-firstpass",
     "title": "Signs of speech",
     "arabic": "يدل عليها بالعبارة والكتابة والإشارة",
-    "english": "It is indicated by expression, writing and indication.",
+    "english": "It is signified by verbal expression, writing, and gesture/sign.",
     "citation": "Taqrīb al-Marām, printed II:141; original scan image 436; selected Arabic inspected 2 Nov 2026",
     "notes": [
       {
