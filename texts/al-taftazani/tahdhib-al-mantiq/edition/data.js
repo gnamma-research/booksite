@@ -5,7 +5,7 @@ window.GNAMMA_CRITICAL_CORPUS={
   "author": "Saʿd al-Dīn al-Taftāzānī",
   "edition": "Continuous bilingual 19-unit logic working text",
   "witness": "Cairo 1912 and compared printed logic text; original pagination recorded per unit",
-  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn. Stage83 Cairo L12–L13 additional printed-line fidelity repairs (indefinite «نسبتين», omitted «معاً», «جميع التقادير للمقدم», repeated governing lām in contradiction). Stage85 direct Cairo L10–L11 p8–9 proofing removes explanatory insertions from Arabic, restores p8 subject condition, source modal definiteness/negation/prepositions and the p8–p9 seam of specific possibility. Traditional modal inference proofing remains outstanding.",
+  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn. Stage83 Cairo L12–L13 additional printed-line fidelity repairs (indefinite «نسبتين», omitted «معاً», «جميع التقادير للمقدم», repeated governing lām in contradiction). Stage85 direct Cairo L10–L11 p8–9 proofing removes explanatory insertions from Arabic, restores p8 subject condition, source modal definiteness/negation/prepositions and the p8–p9 seam of specific possibility. Traditional modal inference proofing remains outstanding. Stage86 direct Cairo p11 L15 restoration: «في العكس المستوي ... وبين انعكاس الخاصتين», without borrowed «بالافتراض فتأمل»; ninth distinct printed-form comparison recorded.",
   "navigation_kind": "division",
   "unit_type": "editorial divisions",
   "start_page": 1,
@@ -333,11 +333,16 @@ window.GNAMMA_CRITICAL_CORPUS={
     {
       "id": "L.15",
       "page": 15,
-      "ar": "فصل. عكس النقيض تبديل نقيضي الطرفين مع بقاء الصدق والكيف، أو جعل نقيض الثاني أولاً مع مخالفة الكيف. وحكم الموجبات ههنا حكم السوالب في المستوي وبالعكس. والبيان البيان والنقض النقض. وقد بين انعكاس الخاصتين من الموجبة الجزئية ههنا ومن السالبة الجزئية ثمة إلى العرفية الخاصة بالافتراض فتأمل.",
-      "en": "Chapter. Conversion by contraposition [ʿaks al-naqīḍ] consists in interchanging the contradictories of the two terms while retaining truth and quality; or in placing the contradictory of the second term first while reversing the quality [of the predication]. The rules for affirmative propositions here are those of negative propositions in simple conversion, and conversely. The proof is the same proof and the counterexample the same counterexample. By assuming an instance [bi-l-iftirāḍ], it has been shown that the two specific forms can be converted from the particular affirmative here, and from the particular negative there [under simple conversion], to the specific customary form. Reflect upon this.",
+      "ar": "فصل. عكس النقيض تبديل نقيضي الطرفين مع بقاء الصدق والكيف، أو جعل نقيض الثاني أولاً مع مخالفة الكيف. وحكم الموجبات ههنا حكم السوالب في العكس المستوي وبالعكس. والبيان البيان والنقض النقض، وبين انعكاس الخاصتين من الموجبة الجزئية هنا والسالبة الجزئية ثمة إلى العرفية الخاصة.",
+      "en": "Chapter. Conversion by contraposition [ʿaks al-naqīḍ] consists in interchanging the contradictories of the two terms while retaining truth and quality; or in placing the contradictory of the second term first while reversing the quality [of the predication]. The rules for affirmative propositions here are those of negative propositions in simple conversion, and conversely. The proof is the corresponding proof, and the counterexample the corresponding counterexample. The final sentence calls for establishing the conversion of the two special modal forms: from a particular affirmative here [in contraposition], or from a particular negative there [in simple conversion], to the specific customary form (ʿurfiyya khāṣṣa). [Cairo p. 11 reads «وبين», without «قد» or «بالافتراض»; the exhortatory reading is provisionally preferred, while the separate commentary-contained printing explicitly says that this conversion has been demonstrated by supposition.]",
       "status": "B",
       "source_location": "11",
-      "notes": [],
+      "notes": [
+        {
+          "type": "Stage86 Cairo p11 L15 photographic correction and source separation",
+          "text": "Direct enlarged Cairo 1330/1912 p.11: «في العكس المستوي», «والبيان البيان والنقض النقض وبين انعكاس الخاصتين من الموجبة الجزئية هنا والسالبة الجزئية ثمة إلى العرفية الخاصة». The earlier Cairo-labelled transcript omitted «العكس», inserted «قد», «من», «بالافتراض», «فتأمل», and wrote «ههنا» where this Cairo page has «هنا». These words occur, in some combinations, in the distinct commentary-containing matn (online p.14), including «وقد بُيّن ... بالافتراض. فتأمل». Cairo's unvowelled «وبين» is not vocalized as a certain imperative without external corroboration. Al-Yazdī's explanation and proof by iftirāḍ (his commentary p.83–84) belong in the commentary/explanatory layer, not the Cairo authorial Arabic."
+        }
+      ],
       "title": "Conversion by contraposition (ʿaks al-naqīḍ)",
       "status_text": ""
     },
@@ -559,6 +564,13 @@ window.GNAMMA_CRITICAL_CORPUS={
       "other": "لزومية إن كان ذلك بعلاقة ... وكل منهما عنادية إن كان التنافي لذاتي الجزئين",
       "source": "https://www.arabicdawateislami.net/bookslibrary/3507/page/13",
       "status": "Cairo 1912 p9 compared with the alternate matn on online p13; printed-level singular/dual and particle variation, no independent manuscript priority"
+    },
+    {
+      "id": "L.15",
+      "cairo": "حكم السوالب في العكس المستوي ... والبيان البيان والنقض النقض وبين انعكاس الخاصتين من الموجبة الجزئية هنا والسالبة الجزئية ثمة إلى العرفية الخاصة",
+      "other": "حكم السوالب في المستوي ... والبيان البيان والنقض النقض وقد بُيّن انعكاس الخاصتين من الموجبة الجزئية ههنا ومن السالبة الجزئية ثمة إلى العرفية الخاصة بالافتراض. فتأمل",
+      "source": "https://www.arabicdawateislami.net/bookslibrary/3507/page/14",
+      "status": "Stage86 independently compared PRINTED forms: Cairo p11 unvowelled «وبين» and shorter ending; alternate has «وقد بُيّن» + «بالافتراض. فتأمل». This is not a collated manuscript variant; do not supply an iftirāḍ proof as Cairo matn."
     }
   ],
   "print_corrections_stage78": [
