@@ -20,15 +20,15 @@
         "metaphysics",
         "Avicennian–Akbarian encounter"
       ],
-      "status": "partial-matn-working-edition-24-loci",
+      "status": "partial-matn-working-edition-28-loci",
       "language": [
         "ar-selected",
         "en-selected"
       ],
       "url": "texts/al-turka/qawaid-al-tawhid/",
-      "note": "Twenty-four consecutive ancestor quotation lemmata translated from Āshtiyānī's Tamhīd al-Qawāʿid, printed pp. 48–109. New English translation, source-page links, dialectical argument labels, variant register, Lumbard comparison for opening six only. Source-located working edition, NOT a full matn or independently manuscript-collated critical edition; sharḥ reserved until full matn completed.",
+      "note": "Twenty-eight consecutive ancestor quotation lemmata (Āshtiyānī printed pp. 48–121), Arabic and independently composed English with printed page links and provisional variants. Lumbard comparison for the opening six only; p.111 onward moves into constructive Akbarian unity and divine names. Original matn remains incomplete and independent manuscript collation not done. Descendant's sharḥ reserved.",
       "comparative_translation_notes_url": "texts/al-turka/qawaid-al-tawhid/editorial/LUMBARD_COMPARISON.md",
-      "matn_units": 24,
+      "matn_units": 28,
       "edition_audit_url": "texts/al-turka/qawaid-al-tawhid/editorial/EDITORIAL_STATUS.md"
     },
     {
