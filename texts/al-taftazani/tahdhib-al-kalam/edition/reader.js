@@ -77,7 +77,35 @@ $('#close-contents').addEventListener('click',()=>$('#contents').classList.remov
 document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#contents').classList.add('shown');$('#search').focus()}if(e.key==='Escape'){$('#contents').classList.remove('shown');$('#export-modal').hidden=true}if(e.target.matches('input, textarea'))return;if(e.key==='ArrowLeft'&&!e.ctrlKey&&!e.metaKey&&state.scope==='page')go(state.page-1);if(e.key==='ArrowRight'&&!e.ctrlKey&&!e.metaKey&&state.scope==='page')go(state.page+1)});
 window.addEventListener('hashchange',()=>{const s=hashState();if(s)go(s.page,s.target)});
 const modal=$('#export-modal');let pdfsChecked=false;
-function showPublishedPDFs(){if(pdfsChecked)return;pdfsChecked=true;const slug=isDivision?'logic':'kalam';const list=$('.download-list');for(const [kind,label] of [['parallel','Parallel bilingual PDF'],['ar-only','Arabic-only PDF'],['en-only','English-only PDF']]){const url='pdfs/tahdhib-'+slug+'-'+kind+'.pdf';fetch(url,{method:'HEAD'}).then(r=>{if(!r.ok)return;const a=el('a',null,label+' · Published working edition ↗');a.href=url;a.target='_blank';a.rel='noopener noreferrer';list.prepend(a)}).catch(()=>{})}}
+async function showPublishedPDFs(){
+ if(pdfsChecked)return;pdfsChecked=true;
+ const list=$('.download-list'),notice=el('p','edition-check','Checking published PDFs against the current source revision…');list.prepend(notice);
+ try{
+   const manifestResponse=await fetch('pdfs/edition_manifest.json',{cache:'no-store'});
+   if(!manifestResponse.ok)throw Error('Edition manifest is not yet published');
+   const manifest=await manifestResponse.json();
+   if(!window.crypto?.subtle)throw Error('Source checksum verification requires a secure browser connection');
+   const dataResponse=await fetch('data.js',{cache:'no-store'});
+   if(!dataResponse.ok)throw Error('Current source data is unavailable');
+   const digest=await window.crypto.subtle.digest('SHA-256',await dataResponse.arrayBuffer());
+   const hash=[...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('');
+   if(hash!==manifest.source_sha256){
+     notice.textContent='PDF editions are for a different source revision. Use structured text exports until the updated PDFs are published.';
+     return;
+   }
+   const expected=isDivision?19:1044;
+   if(manifest.unit_count!==expected)throw Error('PDF edition count does not match this reader');
+   let n=0;for(const file of manifest.files||[]){
+     if(!/\.pdf$/i.test(file.href||''))continue;
+     const r=await fetch(file.href,{method:'HEAD',cache:'no-store'});if(!r.ok)continue;
+     const a=el('a',null,(file.purpose==='bilingual'?'Parallel':file.purpose==='arabic'?'Arabic only':'English only')+' · '+file.a4_pages+' pp. · PDF');
+     a.href=file.href;a.target='_blank';a.rel='noopener noreferrer';
+     a.title='Manifest SHA-256: '+file.sha256+' (PDF content hash verified by publication workflow)';
+     list.prepend(a);n++;
+   }
+   notice.textContent=n===3?'All three published PDF editions match this reader’s source revision (SHA-256 source match).':'Some listed PDF editions are not yet available.';
+ }catch(error){notice.textContent='Verified PDF editions are not available yet: '+error.message+'. Structured exports remain available.'}
+}
 $('#export').addEventListener('click',()=>{modal.hidden=false;showPublishedPDFs();$('#export-close').focus()});$('#export-close').addEventListener('click',()=>modal.hidden=true);modal.addEventListener('click',e=>{if(e.target===modal)modal.hidden=true});
 function download(name,mime,text){const obj=new Blob([text],{type:mime}),url=URL.createObjectURL(obj),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),2000)}
 function quote(s){return '"'+String(s??'').replace(/"/g,'""')+'"'}
