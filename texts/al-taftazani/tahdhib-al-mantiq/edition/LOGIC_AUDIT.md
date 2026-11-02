@@ -1,5 +1,7 @@
 # Tahdhīb al-Manṭiq — Round 2 logical and textual audit
 
+> **Stage 83 direct Cairo proofing (2 November 2026):** High-resolution reading of original pp. 9–10 repairs L12's «بتنافي نسبتين», deletes the printed-text-invented «معاً», restores «على جميع التقادير للمقدم … أو لبعضها مطلقاً جزئية», and restores the governing «لـ» with each named modal opposite in L13. This is printed-source fidelity, not manuscript verification; see [Stage83 dossier](STAGE83_CAIRO_L12_L13_FULL_LINE_AUDIT.md).
+
 > **Stage 82 source correction (2 November 2026):** A high-magnification rereading of Cairo 1912 p. 9 distinguishes L12 «لعلاقة», «وكل منها عنادية», and «لذات الجزأين» from the commentary-containing printed matn's «بعلاقة», «وكل منهما عنادية», «لذاتي الجزئين». A scope-sensitive source comparison is now in the reader (the eighth confirmed printed comparison). See [Stage82 dossier](STAGE82_L12_PRINTED_SCOPE_COLLATION.md). This is not manuscript collation.
 
 > **Stage 79 (2 November 2026):** The non-modal finite-model verifier has been repaired to include **all 512** three-term interpretations, including empty terms; the prior 343-model enumeration could not test its existential-import exceptions correctly. See [Stage 79's scoped L10–L17 audit](STAGE79_MODAL_AND_MODEL_AUDIT.md). The historical modal results and the five Kalām readings remain uncertified; no corpus or PDF wording was changed.
