@@ -243,3 +243,60 @@ The **31.38%** value is deliberately labelled *pages with some provisional Engli
 ### F. Next exact handoff checkpoint
 
 **Printed I:201**, source PDF **physical p.214**, continuing the discussions of place and void. The next release must provide separate statistics for (1) new pages inspected, (2) first-pass orientations, (3) actual Arabic words transcribed and directly translated, (4) complete text coverage, (5) named Wasīm note units, (6) unattributed marginal notes, and (7) critically certified pages. Maintain a cumulative and non-destructive handoff each time.
+
+
+---
+
+## 15. Stage 08 — further source-first continuation I:201–220 (2 November 2026)
+
+The **same** supplied 632-page source-image PDF is the witness. This new set is 20 numbered printed pages I:201–220 = scanned physical PDF pages **214–233**. Every source image was inspected in sequence. The marginal apparatus remains part of the same combined print but is not silently attributed to Wasīm.
+
+### Source and argument sequence
+
+- I:201 opens the classification of *kayf* as accident with respect to the divisibility and relational predication characteristic of other kinds.
+- I:202–205 develops the sensible qualities, heat/cold, elemental properties and natural tendencies.
+- I:206–211 considers visible qualities, colour, light, theories of whiteness and blackness, rays and the conditions of visual perception.
+- I:212–216 concerns sound, hearing, the physical production of sound and its relation to letters, speech and articulation.
+- I:217–220 moves into the other tangible qualities, psychical dispositions, the animal faculties, knowledge/power/will, and *rūḥ*.
+- These are editorial **meaning-oriented first readings**, not a claim that the Arabic main text or all lower-register notes have been completely translated.
+
+### New files and direct translation
+
+- `firstpass-I201-I220.js`: **20** new printed-page English preliminary reading records, with short source-image Arabic anchors and complete source locators. Stable IDs `P1.201`–`P1.220`.
+- `source-selected-I201-I220.js`: **ten** short upper-register direct Arabic–English selections, one further translated **lower-register excerpt** (sound external to sensation, I:212) with **unverified individual author**.
+- `editorial/2026-11-02_STAGE08_I201-I220_SOURCE_AND_TRANSLATION.md`: source-facing Markdown generated from those two JS files, keeping the same text content as the reader.
+- `editorial/2026-11-02_STAGE08_I201-I220_LAYER_LEDGER.csv`: precise source-page and text-layer incompleteness record for I:201–220.
+- `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv`: source index updated on exactly 20 original rows and all other rows preserved.
+- `index.html`, `reader-layered.js` and `source-atlas.js`: display the I:201–220 corpus and new page-presence metric.
+
+### Stage 07 + 08 combined, this turn
+
+- **60** newly image-inspected numbered printed pages: I:161–220, source PDF physical pages **174–233**. None duplicates the previous I:8–160 material.
+- **60** numbered page-level preliminary English accounts, not complete literal translation.
+- **32** selected upper-register Arabic–English translations, each **short**.
+- **Seven** selected lower-register excerpts translated, but **unassigned** to a named marginal commentator until further source evidence.
+- Existing **one independently attributed Wasīm II:117** passage unchanged; Wasīm unit-denominator still unknown. Do not describe seven unidentified marginal passages as seven Wasīm translations.
+
+### Cumulative quantitative state — replace older denominators
+
+| Measure | Updated Stage 08 |
+|---|---|
+| Numbered printed pages source-indexed | **615/615 = 100% source navigation** |
+| Pages with at least some provisional English upper argument | **I:8–220 = 213 distinct printed pages** |
+| Page-presence percentage of both numbered volumes | **213/615 = 34.63%** (NOT fraction of source text translated) |
+| Pages with entire main and all marginal registers literally translated and certified | **0/615 = 0%** |
+| New authenticated Wasīm notes in these 60 pages | **0** |
+| New unattributed lower-register translated excerpts | **7** |
+| Next original page to inspect | **I:221 / physical PDF p.234** |
+
+**Critical caveat:** full source word and note coverage remains unsolved even for many earlier pages with English. The high page-presence figure measures the geographic breadth of the initial scholarly reading, not the achievement of a finished translation. A source text with 90% of a page omitted cannot be considered a translated page.
+
+### Specific corrections and quality gates
+
+1. The source-checked I:208 Arabic anchor was reduced to the securely visible phrase `مخالطة الضوء للأجسام الشفافة` after rejecting a doubtful introductory verb. The revision is recorded in the GitHub history rather than concealing the correction.
+2. In the transition from I:200 to I:201 do **not** treat the later section as merely a continued dispute about void. The printed text shifts into **quality and sensible properties**.
+3. The order of the major category discussion must be retained: I:167 accidents, I:179 quantity, I:201 quality, before subsequent categories.
+4. The full Wasīm and other marginal-note corpus must be enumerated by independent note IDs, incipits, source volume/page, and author attribution before a valid Hashiya translation percentage can be stated.
+5. Continue the preliminary direct-image pass at I:221–240, **then** the rest of the print. Later passes must produce full Arabic transcription, clause-complete dual-layer English, independent text proof, edition collation and specialist critical review, replacing provisional summaries rather than falsely certifying them.
+
+**The independent al-Taftāzānī Tahdhīb matn in the other chat has not been modified** and remains excluded from a premature definitive three-layer merger.
