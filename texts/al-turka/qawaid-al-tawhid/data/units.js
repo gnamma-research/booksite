@@ -1,11 +1,11 @@
 /* Gnamma Research | Qawāʿid al-Tawḥīd | ancestor's MATN ONLY
-   Twenty-eight translated lemmata; digitized Āshtiyānī 1982 pp.48–121.
+   Thirty-nine translated lemmata; digitized Āshtiyānī 1982 pp.48–173.
    Not a complete translation and not a manuscript-critical edition.
    Commentary informs notes ONLY, and is never spliced into the matn.
 */
 window.GNAMMA_QAWAID_MATN = {
   "edition": "Āshtiyānī 1982, digital page transcription",
-  "status": "28-source-located-matn-passages-provisional-unphotographed-uncollated",
+  "status": "39-quoted-matn-lemmas-print-transcription-not-manuscript-collated",
   "units": [
     {
       "id": "QT-001",
@@ -558,6 +558,295 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/317?lang=ar"
+    },
+    {
+      "id": "QT-029",
+      "title": "Knowing the Essence entails knowledge of its necessary attributes",
+      "pages": [
+        130,
+        131
+      ],
+      "arabic": "ثم إن إدراكها لذاتها يتضمّن إدراك سائر الصفات التي تلزمها، لكونها عين ذاتها، وإدراك جميع ما تستلزمه تلك الصفات جمعاً وفرادى.",
+      "english": "Moreover, its apprehension of itself includes apprehension of all the attributes necessarily belonging to it, since they are identical with its very essence, and apprehension of everything entailed by those attributes, both collectively and individually.",
+      "notes": [
+        "The ancestor's قال begins near the end of printed p. 130; the lemma closes at the very beginning of p. 131 before the grandson's explicit أقول. The voluminous commentary on the first self-disclosure that follows is excluded.",
+        "‘Collectively and individually’ renders جمعاً وفرادى; the corresponding grandson's commentary distinguishes the gathered unity of the divine names from their differentiated consequences, not a plurality of independent divine knowers.",
+        "A marginal gloss on p. 130, discussing the human soul and knowledge ‘summarily in the very act of detailed disclosure,’ belongs to the later Qummī editor and is not grandfather's wording.",
+        "The verb الإدراك can signify apprehension or knowledge; the chosen rendering preserves an intelligible cognitive relation without presupposing separate representations."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/326?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/327?lang=ar"
+    },
+    {
+      "id": "QT-030",
+      "title": "Comprehensive divine knowledge and a criticism of Peripatetic causality",
+      "pages": [
+        133
+      ],
+      "arabic": "ويوجبه أيضاً على النسق المنتظم في الوجود الخارجي علماً إجمالياً جمعياً لا تفصيلياً، لا لما قيل: إن العلم بالعلّة يوجب العلم بالمعلول المباين لها بحسب الوجود، على ما ذهب إليه المشّاؤون. فإن الماهيّات والأعيان الثابتة غير مجعولة ولا معلولة بالذات، واعتبار كونها معقولة إنما هو باعتبار كونها غير مغايرة للذات العاقلة في الخارج، فإنها من حيث هي أنها مغايرة لها لا تكون موجودة بالفعل هاهنا، ولا معقولة بالمعنى الذي ذهب إليه محقّق المشّائين، وهو كون الشيء حاصلاً للعلّة القابلة، أو حاصلاً للعلّة الفاعليّة الموجبة المباينة له، فلا يصحّ أن يقال إنها مفتقرة إليها بحسب أحد الوجودين غير الفرضيّين.",
+      "english": "It also entails knowledge of them in the order that obtains in external existence: a comprehensive and gathered knowledge, not a knowledge partitioned into distinct details. This is not because, as the Peripatetics maintain, knowing a cause entails knowing an effect that is existentially separate from it. Quiddities and the fixed entities are neither made nor caused in themselves. To consider them intelligible is to consider them as not distinct, in external reality, from the essence that knows. Insofar as they are regarded as distinct from it, they are not actually existent here, nor are they intelligible in the sense accepted by the investigators among the Peripatetics—namely, as a thing's being present to a receptive cause or to a productive, necessitating cause distinct from it. It is thus incorrect to say that they depend on that essence in either of the two non-merely-hypothetical modes of existence.",
+      "notes": [
+        "This is a continuous grandfather's quotation at p. 133, ending before أقول. The heading ‘Differences between essential and nominal perfection’ is a modern/editorial heading, not part of his matn.",
+        "THE AVICENNIAN–AKBARIAN DIVIDE: the grandfather rejects the inference ‘knowledge of cause entails knowledge of an externally distinct effect’ in this divine context; he instead grounds intelligibility in non-difference from the knowing essence. This does not negate all ordinary causality or empirical genesis.",
+        "الأعيان الثابتة (fixed entities) are said to be neither made nor caused *in themselves*; the later commentator distinguishes their nonexistence qua distinct from their reality under divine self-knowledge.",
+        "Printed text presents ‘من حيث هي أنها [كونها - ظ] مغايرة’ and ‘الغير الفرضيين [العرضيين - ظ]’; [كونها] is a plausible editor's supplementation, and the meaning of the second expression (‘non-suppositional’ vs ‘non-accidental’) is unsettled. The English adopts the first printed form and remains provisional.",
+        "Don't conflate the grandson's lengthy critique of the Avicennian theory of ʿināya on p. 134 with Abū Ḥāmid's quoted formulation."
+      ],
+      "variants": [
+        {
+          "lemma": "أنها",
+          "other": "كونها",
+          "remark": "Editorially signalled alternative [كونها - ظ] inside the phrase من حيث هي أنها مغايرة."
+        },
+        {
+          "lemma": "غير الفرضيين",
+          "other": "العرضيين",
+          "remark": "Editorially conjectured [العرضيين - ظ]; affects whether existence is excluded as merely supposed or as accidental."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/329?lang=ar"
+    },
+    {
+      "id": "QT-031",
+      "title": "Knowing and being known do not necessitate two divine realities",
+      "pages": [
+        137,
+        138
+      ],
+      "arabic": "فإن قيل: العاقليّة يقابل المعقوليّة، فعند انتفاء المغايرة فلا عاقليّة ولا معقوليّة. قلنا: لو صحّ ما ذكرتموه مطلقاً، لوجب أن لا يكون الواجب لذاته ولا شيء من الملائكة المجرّدة عاقلاً لنفسه. ثم إن تلك المغايرة هاهنا إنما حصل بالاعتبار فقط، مثل حصول تلك الماهيّات من حيث هي مغايرة لها، ومن البيّن أن تلك الماهيّات من حيث هي مغايرة لها لا تكون إلا نسباً وإضافات تعيينيّة، لا تمايز بينها بالفعل بحسب الخارج لكون موضوعها واحداً بتلك الوحدة الحقيقيّة، فلا يصحّ أن يقال إن شيئاً منها بتلك الحيثيّة موجود بشيء من الوجودين في هذا الموضع. نعم إنها باعتبار كونها عين تلك الهويّة في الخارج يكون حاصلة لها حصول نفسها لنفسها.",
+      "english": "If it is objected: ‘Being an intellective knower stands opposite to being an intelligible object; where all difference is absent, there can be neither knowing nor being known.’ We reply: If your claim were universally sound, neither the Necessary Existent nor any separate angelic intellect could know itself. Here, however, difference obtains only through an intellectual consideration, as is the case when those quiddities are considered distinct from the knowing essence. It is evident that, precisely insofar as they are distinct from it, those quiddities are only relations and determining connections, without actual extramental differentiation among themselves, because their underlying reality is one with that true unity. Thus none of them, considered under that aspect, can be said to exist in either mode of existence at this level. Yet insofar as they are identical with that identity in external reality, they are present to it through its own presence to itself.",
+      "notes": [
+        "The lemma begins printed p. 137 and concludes at the very opening of p. 138, immediately before the grandson's أقول. The lengthy discourse on sacred effusion, divine love, and hidden treasure that follows belongs to the grandson or later glosses.",
+        "The text distinguishes *relational* difference between knowing and being known from a real multiplicity within the divine Essence; its reductio cites self-knowledge attributed also to separate angelic intellects.",
+        "Two modes of existence (الوجودين) refer to the preceding treatment of intellectual and external existence. The last predicate is grammatically irregular in the electronic base (يكون حاصلة); it has been **retained** in Arabic rather than silently normalized.",
+        "فإن قيل has a printed alternative فلئن قيل. The objection is reported by the ancestor, not his own conclusion."
+      ],
+      "variants": [
+        {
+          "lemma": "فإن قيل",
+          "other": "فلئن قيل",
+          "remark": "Printed alternative at opening of the objection."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/333?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/334?lang=ar"
+    },
+    {
+      "id": "QT-032",
+      "title": "Manifestation from hiddenness into witnessing",
+      "pages": [
+        141
+      ],
+      "arabic": "ثم إنها اقتضت الظهور والبروز من حدّ الغيب إلى حدّ الشهادة، وحصول تلك الصفات والتعيّنات متمايزة في الأعيان بالفعل، وتعقّلها على وجه التفصيل.",
+      "english": "It then entailed manifestation and emergence from the realm of the unseen into that of witnessing, the actual presence of those attributes and determinations as differentiated in external reality, and their intellectual apprehension in detail.",
+      "notes": [
+        "A very short, complete قال quotation at printed p. 141. It follows the grandson's analogy of colorless light appearing through differently colored glass—an analogy belonging to the commentary, not the matn.",
+        "The ancestor distinguishes ‘the unseen’ (al-ghayb), ‘the witnessed’ (al-shahāda), determinate external appearances, and their subsequent detailed intelligibility. The editorial heading before قال must not be inserted into the ancestor's wording.",
+        "The immediate grandson's commentary explains this as a later manifestation; it would be premature to identify it with a particular fixed Ṣadrian ontological stage without further evidence."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/337?lang=ar"
+    },
+    {
+      "id": "QT-033",
+      "title": "The worlds of spirits, image, and bodies",
+      "pages": [
+        143,
+        144
+      ],
+      "arabic": "فأوجدت عالم الأرواح، أي عالم العقول والنفوس، فإن ظهور الجود فيه أتمّ من عالم المعاني، ثم عالم المثال، ثم عالم الأجسام. وفي هذا العالم تمّ ظهور الوجود، فإن ظهور التجلّي الوجودي كمل وتمّ عند إيجاد الجرم الأوّل، أعني محدِّد الجهات الذي هو العرش الجسماني، مقام الاستواء في الكلام الإلهي. ثم إن الترتيب المعتبر في كل عالم من هذه العوالم، وتفصيل المراتب المحصورة فيها، وملخّص الحجج والبراهين في كل موضع موضع من هذه المواضع، قد أشبعنا القول فيها في كتبنا المعمولة في صناعة الحكمة.",
+      "english": "It then brought into manifestation the world of spirits—that is, the world of intellects and souls—for the disclosure of munificence there is more complete than in the world of meanings; then the imaginal world; then the world of bodies. In the latter world the manifestation of existence reached completion, for existential self-disclosure attained its fullness with the origination of the first celestial body: the sphere delimiting spatial directions, the bodily Throne, identified in divine discourse with the station of ‘establishment’. As for the order obtaining in each of these worlds, the subdivisions of the levels contained within them, and the summary of proofs and demonstrations concerning each of these matters, we have treated them fully in our other writings devoted to philosophical science.",
+      "notes": [
+        "The quote begins at printed p. 143 only after the grandson has completed a long citation from Ibn ʿArabī's Fuṣūṣ; that earlier *Fuṣūṣ* material is **not** the grandfather's matn. His quote continues onto p. 144, ending before أقول.",
+        "The reading ظهور الجود (‘disclosure of munificence’), rather than وجود (‘existence’), is preserved from the electronic edition and must be checked against the printed image; later in the very same lemma the text speaks of ظهور الوجود.",
+        "The reference to محدّد الجهات and the celestial Throne reflects the inherited philosophical astronomy and medieval cosmology, not a contemporary astronomical claim. This is a direct meeting point of Akbarian levels and post-Avicennian celestial physics.",
+        "The note ‘ملخّص / تلخيص’ occurs in the printed text as a variant and may alter the final sentence's syntax."
+      ],
+      "variants": [
+        {
+          "lemma": "ملخّص",
+          "other": "تلخيص",
+          "remark": "Reported alternative near reference to arguments in the author's other philosophical books."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/339?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/340?lang=ar"
+    },
+    {
+      "id": "QT-034",
+      "title": "Six objections: possibility, generation, imagination, and the scale of perfection",
+      "pages": [
+        148,
+        149
+      ],
+      "arabic": "فلئن قيل: فعلى هذا لا سبيل إلى القول بالإمكان، لكون الوجود واجباً بالذات، وكون الماهيّات والنسب والإضافات من الصفات غير مجعولة ولا معلولة، لكونها غير موجودة بل غير قابلة للوجود. ومتى تحقّق هذا، فلا سبيل إلى القول بالإمكان، بل بالإيجاب والاقتضاء، وهذا بيّن لا حاجة بنا إلى التطويل والإطناب، ولا سبيل أيضاً إلى القول بالظهور، لأنه لو أريد به الوجود نفسه فإن بطلان اقتضائه الظهور لم يحتج إلى بيان زائد، ولو أريد به الوجود المقيّد بقيد من القيود المعيّنة، فمن البيّن أن شيئاً من جزئيه لا يقبل الجعل والتأثير، لما أشير إليه من قبل؛ وهكذا الكلام في المجموع من حيث هو مجموع، فإن ما يقوم بشيء ما لا يقبل الوجود أيضاً. وأما الوجود العقلي فإنه لا يقبل الوجود العيني ولا العقلي، وقد عرفت القول المحقّق فيما عدا الوجودين من القيود المخصّصة، وهذا الكلام في المجموع العقلي فلا وجه للإعادة. ولو أريد به شيء من الماهيّات أو النسب والإضافات فقد عرفت ما فيه فلا حاجة إلى تقرير وتوضيح، ولا فرق بين ما ذكرتم من عالم المعاني وعالم الشهادة، فإن حصول الموجودات فيهما واحد لا اختلاف فيه عند التحقيق. وأما الأسماء والصور النوعيّة والإضافات والنسب العقليّة، وبالجملة الأعيان الثابتة التي هي من عوارض الوجود والوجود المطلق، فلا اختلاف في شيء منها إلا بحسب الموضوع والمحل، ولا بحسب المفهوم ولا بشيء من العوارض. وأما القول بالإجمال والتفصيل فلا طائل تحته لاشتراك العالمين في الموضوع الذي يستلزم تلك الماهيّات والصفات، وليس في أحد الموضوعين دون الآخر شرط زائد أو تحقّق مانع. وأما القول بعالم المثال فلا طائل تحته أيضاً، وكيف لا وقد ذهب إلى نفيه جمهور المشّائين واحتجّوا على ذلك بحجج قويّة قاطعة قد أنبتوها في كتبهم. وأما القول بأن ما يكون أبعد من منبع الوجود وأقرب إلى طبيعة الإمكان الصرف والعدم المحض فإن ظهور الوجود يكون فيه أتمّ وأكمل، فهو بعيد عن الحق والصواب، بل الأولى الأجود أن يُجعل الأمر على العكس، فإن ما يكون أبعد عن الفساد والتغيير والفناء فلا بدّ أن يكون ظهور الوجود وظهور خاصّته فيه أتمّ وأكمل.",
+      "english": "If it is objected: ‘On this account, it is impossible to speak of possibility: existence is necessary in itself, whereas quiddities, relations, and relational qualifications are neither made nor caused, for they do not exist and are not even capable of existence. Once this is established, possibility has no place; there can only be necessitation and entailment. This is clear enough to require no lengthy elaboration. Nor can one speak of manifestation. If by manifestation you mean existence itself, it hardly needs further argument to show that existence cannot produce its own manifestation. If you mean existence qualified by a particular determining condition, neither constituent can undergo making or causal production, as indicated earlier. The same applies to the aggregate considered as an aggregate: what subsists in something else does not receive existence either. Intellectual existence admits neither extramental nor intellectual existence; and we have already seen the correct account of the further specifying qualifications beyond those two modes of existence. This concerns the intellectual composite, and need not be repeated. If manifestation means some quiddity or relation, the objections already considered suffice. Nor is there any distinction between your so-called world of meanings and world of witnessing, since the obtaining of existents in both is in reality one and the same. As for names, specific forms, intellectual relations and connections—in short, the fixed entities, which are accidents of existence or of absolute existence—none differs except by subject or locus, and not by intelligible meaning or another accident. Distinguishing summary from detail achieves nothing, because both worlds share the subject that entails those quiddities and attributes: there is no additional condition or realized impediment in one rather than the other. Nor is there substance in positing an imaginal world, which most Peripatetics have denied, supporting the denial with decisive demonstrations set out in their works. Finally, the doctrine that the farther a level is from the source of existence, and the nearer it is to pure possibility and sheer nonexistence, the more fully existence is manifested in it, is far from the truth. It would be more reasonable to reverse the assertion: that which is farther from corruption, change and perishing must disclose existence and its distinctive properties more completely.’",
+      "notes": [
+        "**DIALECTICAL WARNING:** this entire extended quotation, from قال at p. 148 to closing guillemet at p. 149, is a *hostile objection formulated by the ancestor* with فلئن قيل. It is NOT Abū Ḥāmid's own denial of the imaginal world or his endorsement of Peripatetic cosmology. The grandson's refutation begins at p. 150, after the quoted lemma.",
+        "The grandson counts **six** connected objections: impossibility of possibility; loss of meaningful necessitation; the problem of manifestation; indistinction of worlds of meaning and witnessing; denial of an independent imaginal world; and allegedly reversed perfection at more remote ontological levels. The numbering is commentary interpretation, not the grandfather's headings.",
+        "Especially important: the Peripatetic denial of the *ʿālam al-mithāl* is cited by an adversary to press the Akbarian hierarchy; do not list the grandfather as a philosophical critic of the imaginal realm.",
+        "The digital Arabic prints أنبتوها (‘made them grow’) where context appears to demand أثبتوها (‘established them’) in reference to written demonstrations. The raw electronic reading is retained, **not** silently emended. The editor also presents competing formulations around ‘التطويل’; punctuation is lightly normalized.",
+        "The wording ‘none differs except by subject or locus, and not by intelligible meaning ...’ is the objector's compressed reasoning, not an endorsed resolution of the relation between universal and individual."
+      ],
+      "variants": [
+        {
+          "lemma": "أنبتوها",
+          "other": "أثبتوها [editorial conjecture only]",
+          "remark": "Digital text reads أنبتوها, but context requires critical verification; أثبتوها is not independently attested in the consulted witnesses."
+        },
+        {
+          "lemma": "بنا إلى التطويل",
+          "other": "بنا على التطويل / إلى التطويل",
+          "remark": "Digital edition has problematic بنا على التطويل and editor-supplied إلى التطويل; English normalizes the idiom but Arabic witness still requires image-checking."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/344?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/345?lang=ar"
+    },
+    {
+      "id": "QT-035",
+      "title": "What bears possibility? Existing quiddities versus existence itself",
+      "pages": [
+        154
+      ],
+      "arabic": "قلنا: إن موضوعات الإمكان ومتعلّقاته بالطبع هي التعيّنات، ولا نسلّم أن الماهيّات والنسب والإضافات غير قابلة للوجود، فإنها لو قارنها الوجود صارت موجودة بالضرورة، فإن من التعيّنات ما يكون موضوعها الطبيعي الوجود الخارجي، ومنها ما يكون موضوعها الطبيعي الوجود العقلي، ومنها ما يكون موضوعها بالطبع الوجود المطلق. نعم إنها غير موجودة بوجود يكون نفسها أو مقوّماً من مقوّماتها؛ ولو كانت الماهيّة من حيث هي هي غير مجعولة ولا معلولة، فلا يلزم أن تكون الماهيّات الموجودة غير مجعولة ولا معلولة، فإنها لما صارت بمقارنة الوجود موجودة احتاجت في موجوديّتها إلى مقارنة الوجود الذي هو غيرها بالضرورة. ولا يجب أن يكون كل موجود موجوداً بالذات، فإن من الموجودات ما يكون موجوداً بالعرض. فتأمّل ذلك. وهذه الموجوديّة من الاعتبارات العقليّة، ولهذا قد تعرض الصفات السلبيّة والعوارض الذهنيّة. ومن جعل الوجود المطلق من الاعتبارات العقليّة فلعلّه لم يفرّق بينه وبين هذه الموجوديّة، بل التبس على نظره أمر القسمين، فجعل الحقيقة المحقّقة بذاتها التي هي أصل سائر الحقائق أمراً اعتباريّاً. فاعرف ذلك.",
+      "english": "We reply: the subjects of possibility, and the things to which it naturally pertains, are determinations. We do not grant that quiddities, relations, and relational connections are incapable of existence. If existence were conjoined with them, they would thereby become existent. Among determinations, some naturally have external existence as their subject; others have intellectual existence as their subject; still others naturally have absolute existence as their subject. Admittedly, they do not exist by an existence identical with their own essence or constituting one of their essential elements. And although a quiddity considered precisely in itself is neither made nor caused, it does not follow that existing quiddities are neither made nor caused. When they become existent through conjunction with existence, their being-existent necessarily depends upon that conjunction with existence, which is distinct from them. It is not necessary for every existent to exist through itself: some things are existent only incidentally. Consider this. This being-existent is one of the intellect's considerations; hence even privative attributes and mental accidents may be predicated as existing. Whoever regards absolute existence itself as a mere intellectual consideration has perhaps failed to distinguish it from this being-existent, confusing the two categories and relegating the self-realized reality that grounds all other realities to the status of a mere mental consideration. Understand this.",
+      "notes": [
+        "This is the **ancestor's direct reply** introduced by قال and قلنا at p. 154, closing before the commentator's أقول on the same page. It is the answer to the hostile six-part objection QT-034.",
+        "The contrast between **وجود مطلق** (absolute reality of existence) and **موجودية** (existence predicated of something, being-existent) is central; he assigns mental consideration to the latter but emphatically not to the former. This is a direct response to Illuminationist conceptualism; avoid conflating it with Suhrawardī's denial of external reality.",
+        "Being existent **through itself** versus **incidentally** is not automatically identical to substance versus accident. The grandfather is discussing modes of existential predication and dependence.",
+        "Textual warnings: the electronic text repeats الوجود after an editorial alternative to فإنها لو قارنها الوجود صارت موجودة بالضرورة. I have excluded that apparently duplicated isolated word in the readable provisional Arabic but logged the uncertainty here; this is not a critical emendation based on manuscripts.",
+        "الموضوع / متعلق can refer to logical subject or metaphysical basis, depending on the determination. The grandson's commentary on pp. 155–158 helps explain the analogy but is not part of the matn."
+      ],
+      "variants": [
+        {
+          "lemma": "فإنها لو قارنها الوجود صارت موجودة بالضرورة",
+          "other": "فإنها لو قارنت الوجود",
+          "remark": "Second formulation signalled خ ل, with a stray الوجود in the digitized text after the parenthesis."
+        },
+        {
+          "lemma": "الماهية",
+          "other": "الماهيات",
+          "remark": "Printed alternative in ولو كانت الماهية."
+        },
+        {
+          "lemma": "العوارض الذهنية",
+          "other": "العدمية [editorial suggestion]",
+          "remark": "Digitized base shows الذهنية with [العدمية - ظ]; choose only after image and witness checks."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/350?lang=ar"
+    },
+    {
+      "id": "QT-036",
+      "title": "Kinds and modes of manifestation at successive levels",
+      "pages": [
+        160,
+        161
+      ],
+      "arabic": "وأما الطبيعة النوعيّة التي يشمل النوع العيني والعقلي، لمّا اقتضت الظهور العيني تعيّنت بالتعيّن العيني، فلزمتها الصفات اللازمة لها عينيّة أيضاً، فيحصل منها باعتبار بعض صفاتها أنواع أخر عينيّة معيّنة كاملة بالذات، وحصل باعتبار بعض صفات أخر أنواع أخر عينيّة غير كاملة بالذات، وحصل باعتبار بعض صفات أخر أنواع أخر عينيّة غير كاملة بالذات، متميّز كل ما في الطور الأعلى عن كل ما في الظهور الذي تحته ويليه. فتأمّل هذه النكتة ليظهر لك الفرق بين الصورتين، ويظهر لك الفرق بين العالمين، فإن حصول الشيء في الكون المطلق من حيث هو كون مطلق إنما يكون بحسب الإطلاق. على أنّا نقول: إن تحقيق القول في هذا الموضع إنما يحتاج إلى كلام مبسوط لا يحتمله هذا المختصر، فعليك بمطالعة كتابنا المسمّى بالحكمة المنيعة.",
+      "english": "As for the specific nature which embraces both the externally realized kind and its intelligible counterpart: when it entails external manifestation, it becomes determinate through external determination, and the attributes necessarily belonging to it become external as well. Through some of its attributes there then arise other determinate external kinds complete in themselves; and through other attributes there arise other external kinds not complete in themselves. Again, the text speaks of other attributes giving rise to further external kinds not complete in themselves, with everything belonging to the higher level distinguished from everything in the manifestation immediately below it. Reflect on this point so that the distinction between the two cases and between the two worlds becomes evident. For a thing's presence in unrestricted being, insofar as it is unrestricted being, occurs according to unrestrictedness. A full account of this question would require a much more extensive discussion than this short treatise permits; consult our book entitled *al-Ḥikmah al-Manīʿah*.",
+      "notes": [
+        "The ancestor's matn begins on p. 160, runs onto the beginning of p. 161 and stops immediately before the grandson's أقول. **Only the book TITLE al-Ḥikmah al-Manīʿah is cited here; no prose from that other work has been inserted.**",
+        "The online base repeats the line ‘وحصل باعتبار بعض صفات أخر أنواع أخر عينية غير كاملة بالذات’ twice. The new English transparently reflects the repetition instead of pretending the ancestor makes only two distinctions; verify whether the duplication is a transcription accident or transmitted text.",
+        "The words نوعيّة / عينيّة / عقليّة combine Avicennian categories of specific natures and external versus mental existence with the Akbarian account of successive manifestation. This passage requires close study with printed facsimiles.",
+        "Printed alternatives: higher / lower stage appears as في الظهور [في الطور - خ]; book title الحكمة المنيعة [المتقنة، المتبعة]—do not decide the title's definitive orthography prematurely."
+      ],
+      "variants": [
+        {
+          "lemma": "في الظهور",
+          "other": "في الطور",
+          "remark": "The digital base reads في الظهور with في الطور marked as a variant; BASE في الظهور is retained in Arabic pending independent collation."
+        },
+        {
+          "lemma": "الحكمة المنيعة",
+          "other": "الحكمة المتقنة / الحكمة المتبعة",
+          "remark": "Three reported readings of the separately authored work's title."
+        },
+        {
+          "lemma": "وحصل باعتبار بعض صفات أخر… [twice]",
+          "other": "one occurrence [unverified conjecture]",
+          "remark": "Apparent repeated line, preserved; independent print comparison required."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/356?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/357?lang=ar"
+    },
+    {
+      "id": "QT-037",
+      "title": "Why greater manifestation may occur at the lowest ontological level",
+      "pages": [
+        164
+      ],
+      "arabic": "وأما حديث الأكمليّة بحسب ظهور الوجود في المرتبة الأخيرة، فلعلّهم أرادوا بها أن ما يكون مدركاً على سبيل الإجمال، ومعقولاً على سبيل التفصيل، ومخيّلاً وموهوماً ومحسوساً بالحواس الظاهرة، فإن خواصّ الوجود وآثاره فيه تكون أكثر وأكمل مما لا يدرك بجميع هذه الوجوه، على أنّ من البيّن أن الإنّيّة المدركة المتصرّفة الأخيرة مدركة بجميع هذه الإدراكات، بخلاف الإنّيّة المدركة المتصرّفة في المراتب الباقية التي هي فوق هذه المرتبة. فتأمّل ذلك.",
+      "english": "As for calling the manifestation of existence ‘more complete’ at the final level, perhaps what is meant is this: a thing apprehended comprehensively in an undifferentiated way, understood in detail, represented in imagination, apprehended by estimation, and perceived by the outward senses possesses more numerous and complete existential properties and effects than something that is not apprehended through all these modes. It is evident that the apprehending and acting ‘that-it-is’ at the final level is subject to all these modes of apprehension, unlike the apprehending and acting ‘that-it-is’ at the remaining levels above it. Consider this.",
+      "notes": [
+        "The ancestor explicitly prefaces his explanation with **فلعلهم أرادوا** (‘perhaps they meant’) and thereby gives a charitable interpretation of greater perfection at the final level, rather than claiming that the lowest level is unconditionally superior in all respects.",
+        "The five cognitional modes combine Avicennian psychology (summary/general apprehension, detailed intellection, imagination, estimation, sensation) with an Akbarian claim about comprehensiveness of manifested effects.",
+        "‘الإنية المدركة المتصرفة الأخيرة’ is unclear as transmitted. The edition reports ‘في المرتبة الأخيرة’ as an alternative, which may yield ‘the apprehending and acting reality in the final level’. The English's ‘that-it-is’ marks the literal anniyya and is provisional.",
+        "Do not import the grandson's detailed examples of universal concepts, partial estimative meanings, and the corporeal senses into the ancestor's compact lemma."
+      ],
+      "variants": [
+        {
+          "lemma": "الإنية المدركة المتصرفة الأخيرة",
+          "other": "الإنية المدركة المتصرفة في المرتبة الأخيرة",
+          "remark": "Editorially reported option resolves the elliptical designation of the last level."
+        },
+        {
+          "lemma": "هي",
+          "other": "هو",
+          "remark": "Reported alternative in subordinate relative clause relating higher levels."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/360?lang=ar"
+    },
+    {
+      "id": "QT-038",
+      "title": "The perfected human being, stable cognitive dispositions, and death",
+      "pages": [
+        167
+      ],
+      "arabic": "والإنسان المستكمل لا يكون كماله إلا بأن تحصل له ملكات هذه الإدراكات في مراتبها، ولا يكون الإدراك الحسّي وما يلزمه من القيود الحاصلة له بالطبع مانعاً لسائر الضروب الباقية التي لا تحصل له بحسب الأكثر إلا بالكسب والاختيار. ولا يكون الموت بالحقيقة تنقيصاً للنفس، بل تكميلاً لها، فإن النفوس الكاملة إنما يتمكّنون بعد الموت على جميع ما يتمكّنون عليه قبله، وتحقيق هذا البحث والتفصيل المعتبر فيه إنما يحتاج إلى بسط كلام لا يحتمله هذا المختصر.",
+      "english": "The perfected human being attains perfection only through acquiring stable dispositions for these modes of apprehension in their respective degrees. Sensory apprehension, together with the restrictions naturally attending it, does not preclude the other kinds of apprehension, which generally become available only through effort and deliberate choice. Nor does death truly diminish the soul; rather, it perfects it, for perfected souls retain after death the capacity for all they were capable of before it. Establishing this thesis and its necessary distinctions would require a longer exposition than this concise treatise allows.",
+      "notes": [
+        "The entire quoted matn is contained at p. 167. The following أقول raises apparent objections from ascetical restraint of senses and the loss of bodily faculties at death; those are the grandson's exposition, not part of the matn.",
+        "**Malakāt (ملكات)** should mean stable acquired capacities or dispositions, not merely episodes of psychological experience. This is a precise bridge from Avicennian psychology and virtue acquisition to the Akbarian perfect human.",
+        "Printed masculine plural يتمكّنون with feminine plural النفوس is retained in the source as transmitted rather than silently normalizing morphology.",
+        "The claims about post-mortem faculties are the historical author's metaphysical position, not independently established empirical facts."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/363?lang=ar"
+    },
+    {
+      "id": "QT-039",
+      "title": "The need for a comprehensive manifestation of the One",
+      "pages": [
+        172,
+        173
+      ],
+      "arabic": "وإذا عرفت هذا فنقول: إن تلك الهويّة الواحدة بالوحدة الحقيقيّة لما غلب فيها أحكام الوحدة على أحكام الكثرة، بل انمحى الكثرة تحت القهر الأحدي في مقام الجمع المعنوي، ثم ظهرت في مظاهر متفرّقة غير جامعة من مظاهر هذه العوالم العينيّة على سبيل التفصيل والتفريق، بحيث غلبت الكثرة في أحكامها على أحكام الوحدة، وخفي هناك أمر الوحدة بحسب اقتضاء التفريق الفعلي والتفصيل العيني، أراد أن يظهر ذاته في مظهر كامل يتضمّن سائر المظاهر النورانيّة والحقائق الظلّيّة، ويشتمل على جميع الحقائق السرّيّة والجهريّة، ويحتوي على جملة الرقائق البطنيّة والظهريّة.",
+      "english": "Once this is understood, we say: when the one absolute identity, one through true unity, has the characteristics of unity prevailing over those of multiplicity—indeed, when multiplicity is effaced beneath the dominance of oneness in the station of comprehensive intelligible unity—and then appears through separate, non-comprehensive manifestations within the externally realized worlds, differentiated and distributed so that multiplicity prevails over unity in their characteristics and unity becomes concealed by their actual dispersion and external differentiation, it wills to manifest itself in a complete locus of manifestation. Such a locus embraces all the luminous manifestations and shadow-like realities, encompasses the hidden and openly disclosed realities, and contains all the subtle correspondences of inward and outward existence.",
+      "notes": [
+        "The quote begins with قال near the end of p. 172 and ends at the start of p. 173, where the grandson's long philosophical anthropology begins with أقول. The latter's elaboration of the human as the most inclusive existent and his quotation of Ibn ʿArabī's *Inshāʾ al-Dawāʾir* are **not** part of the original *Qawāʿid* matn.",
+        "The phrase ‘shadow-like realities’ renders الحقائق الظلية. The reported alternative ‘والمجالي الظلمانية’ adds darkened loci of manifestation; this substantive alternative must be collated before constituting the text.",
+        "The syntactic shift from a feminine subject الهويّة to a masculine verb أراد occurs in the source. The English retains the referent to the one divine identity without adding an independent divine agent.",
+        "Conceptual point: the Perfect Human is introduced as the comprehensive manifestation in which determinate plurality does not obscure unity. This is constructive Akbarian metaphysics rather than a proof borrowed directly from Avicennian emanationism."
+      ],
+      "variants": [
+        {
+          "lemma": "تحت",
+          "other": "بحسب",
+          "remark": "Printed alternative after انمحى الكثرة: under the domination versus by reason of domination."
+        },
+        {
+          "lemma": "الحقائق الظلية",
+          "other": "والمجالي الظلمانية",
+          "remark": "Variant replaces shadow-like realities with darker loci of manifestation; material doctrinal difference."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/368?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/369?lang=ar"
     }
   ]
 };
