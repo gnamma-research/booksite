@@ -1,0 +1,13 @@
+{
+  "schema": "gnamma-tahdhib-unverified-machine-vowels-v1",
+  "status": "AUTOMATIC UNREVIEWED DIACRITICS. NOT A SCHOLARLY OR MANUSCRIPT-CERTIFIED READING.",
+  "work": "Tahdhīb al-Manṭiq",
+  "source_sha256": "ca99f10c5773c18219ead99f7fee883c8c8042ba0749831b3c6bd13ded61f43b",
+  "model": "text2tashkeel/rawi-ensemble",
+  "generator": "tools/tahdhib/generate_machine_vowels.py",
+  "python_package_version": "0.1.0",
+  "unit_count": 19,
+  "changed_units": 19,
+  "units_with_any_diacritic": 19,
+  "unchanged_units": 0
+}
