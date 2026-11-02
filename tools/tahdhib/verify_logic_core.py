@@ -96,15 +96,63 @@ for ps in itertools.product((False,True),repeat=2):
 assert (not all(p and q for p,q in zip((False,True),(True,True))))
 assert not (any(not q for q in (True,True)))
 
+# Stage 86: finite-set probes of the TWO verbal formulations of
+# 'aks al-naqid (L15). These are NOT the medieval MODAL conversion rules.
+# A: all S are P; E: no S are P; I: some S are P; O: some S are not P.
+# Same-quality complement swap:  Q(S,P) => Q(non-P, non-S).
+# Reverse-quality single complement: Q(S,P) => Q*(non-P, S).
+# In Boolean set semantics, A and O validate both schemas; E and I
+# have countermodels. Unlike a naive modern contraposition slogan,
+# universal existence is NOT silently assumed.
+univ=frozenset(UNIVERSE)
+complement=lambda subset: univ-subset
+opposite_quality={"A":"E","E":"A","I":"O","O":"I"}
+contra_tests=[]
+for quality in "AEIO":
+    failures_equal=[]; failures_reverse=[]
+    for subj,pred in itertools.product(SETS,repeat=2):
+        if not P[quality](subj,pred):continue
+        if not P[quality](complement(pred),complement(subj)):
+            failures_equal.append((subj,pred))
+        if not P[opposite_quality[quality]](complement(pred),subj):
+            failures_reverse.append((subj,pred))
+    predicted_valid=quality in ("A","O")
+    assert (not failures_equal)==predicted_valid,(quality,failures_equal[:1])
+    assert (not failures_reverse)==predicted_valid,(quality,failures_reverse[:1])
+    contra_tests.append({
+        "quality":quality,
+        "complement_swap_valid":not failures_equal,
+        "reversed_quality_valid":not failures_reverse,
+        "complement_swap_first_countermodel":(
+            {"S":sorted(failures_equal[0][0]),"P":sorted(failures_equal[0][1])}
+            if failures_equal else None),
+        "reversed_quality_first_countermodel":(
+            {"S":sorted(failures_reverse[0][0]),"P":sorted(failures_reverse[0][1])}
+            if failures_reverse else None),
+    })
+# L14 simple conversion (nonmodal skeleton), with existence explicitly fixed.
+assert all((not P["E"](s,p)) or P["E"](p,s)
+           for s,p in itertools.product(SETS,repeat=2))
+assert all((not P["I"](s,p)) or P["I"](p,s)
+           for s,p in itertools.product(SETS,repeat=2))
+assert all((not P["A"](s,p)) or (not s) or P["I"](p,s)
+           for s,p in itertools.product(SETS,repeat=2))
+assert any(P["A"](s,p) and not P["I"](p,s)
+           for s,p in itertools.product(SETS,repeat=2))
+assert any(P["O"](s,p) and not P["O"](p,s)
+           for s,p in itertools.product(SETS,repeat=2))
+
 # Universal affirmative does not generally convert universally; O not converse.
 assert any(P['A'](m['S'],m['P']) and not P['A'](m['P'],m['S']) for m in MODELS)
 assert any(P['O'](m['S'],m['P']) and not P['O'](m['P'],m['S']) for m in MODELS)
 report={"domain_elements":N,"set_theoretic_models":len(MODELS),
         "test_scope":"Non-modal reconstruction only, not historic modal or manuscript certification",
-        "categorical_moods":results,"disjunction_truth_table":table}
+        "categorical_moods":results,"disjunction_truth_table":table,
+        "nonmodal_contraposition_probe":contra_tests}
 out=pathlib.Path(__file__).with_name("verified_nonmodal_results.json")
 out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("PASS",len(MOODS),"nonmodal moods,",len(MODELS),
       "finite models including empty terms; 4 existential-premise countermodels")
 print("PASS three kinds of disjunction, two invalid conversions,")
 print("     material-conditional schematic and quantified-negation scope")
+print("PASS both L15 nonmodal complement schemas: A and O valid, E and I have countermodels")
