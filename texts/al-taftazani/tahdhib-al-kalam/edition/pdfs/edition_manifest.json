@@ -2,8 +2,8 @@
   "schema": "gnamma-tahdhib-edition-publication-v1",
   "book": "Tahdhīb al-Kalām",
   "source": "data.js",
-  "source_sha256": "33d4c8508986202a40f84b4554a19f474935fe87e332be032b814be25c763e7b",
-  "source_bytes": 407930,
+  "source_sha256": "aa0ff262919823609246d1ba1638a40195abb44816ea8ac49353a58e5b484b7f",
+  "source_bytes": 408278,
   "source_witness": "Cairo 1330 AH / 1912, pp. 15–127",
   "editorial_status": "Working bilingual edition; 108/113 Cairo printed pages recorded as source checked; five pages outstanding; no independent manuscript collation",
   "unit_count": 1044,
@@ -20,24 +20,24 @@
     {
       "name": "tahdhib-kalam-parallel.pdf",
       "purpose": "bilingual",
-      "sha256": "47268e51f3c95f2d10d233a829e5c93981fc2810869305196c5b40391919fd26",
-      "bytes": 592460,
+      "sha256": "fbb446f34d0d014e970c27621e5d27d76db3a997a3cad2d777ed8015b787f9ab",
+      "bytes": 592798,
       "a4_pages": 170,
       "href": "pdfs/tahdhib-kalam-parallel.pdf"
     },
     {
       "name": "tahdhib-kalam-ar-only.pdf",
       "purpose": "arabic",
-      "sha256": "5b3c705986507891d46b8883f8ff286055d6482a059bcce435508f7c558820fd",
-      "bytes": 324222,
+      "sha256": "5e16f3fe2c2610540840a1564393f2f2bad6171803f23eeecaaccaca35671d54",
+      "bytes": 324228,
       "a4_pages": 133,
       "href": "pdfs/tahdhib-kalam-ar-only.pdf"
     },
     {
       "name": "tahdhib-kalam-en-only.pdf",
       "purpose": "english",
-      "sha256": "460bdc9151a61f364513efa415851a4e6be8ff6029e3a08aee95b356d6f38a98",
-      "bytes": 292585,
+      "sha256": "c0af92c47ff0f3d6a52a438fc091f50f680c078daac2ded257ad47bb9589494a",
+      "bytes": 292879,
       "a4_pages": 120,
       "href": "pdfs/tahdhib-kalam-en-only.pdf"
     }
