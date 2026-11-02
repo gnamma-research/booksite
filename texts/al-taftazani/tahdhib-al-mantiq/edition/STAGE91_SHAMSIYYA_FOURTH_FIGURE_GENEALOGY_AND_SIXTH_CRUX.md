@@ -1,5 +1,7 @@
 # Tahdhīb Stage 91 — Al-Kātibī’s Shamsiyyah as the earlier source of the eight fourth-figure moods
 
+> **Stage92 supersession / correction:** The alleged sixth-mode **internal textual contradiction** diagnosed in the first version of this dossier is **retracted**. «المنعكسة السوالب» can mean modal proposition *classes whose negative forms convert*, not a currently negative major. The 2019 manuscript-based edition of a commentary probably by al-Kātibī explicitly distinguishes the sixth's **special negative minor** from its **affirmative major whose negative form is convertible**. It also attributes the additional three modes to al-Abharī and expands the conditions from five to six. See [Stage92 corrected account](STAGE92_ABHARI_KATIBI_SIX_MODAL_CONDITIONS.md). The historical source trail is preserved below with its framing revised.
+
 **Date:** 2 November 2026  
 **Workstream:** Authorial *Tahdhīb al-Manṭiq* translation / critical reader, not the separate Sanandajī–Wasīm commentary translation.  
 **Controlled Tahdhīb print:** Cairo, Maṭbaʿat al-Saʿāda, 1330/1912, L16 on original pp. 11–12.  
@@ -26,26 +28,26 @@ Thus the Stage89 outcome—five familiar nonmodal patterns, three not validated 
 | 1 | Actuality (*fiʿliyya*) in the fourth-figure premises | A merely possible identification of M with S or P does not support an actual predicative conclusion without an explicit bridge |
 | 2 | Any negative premise used must be **convertible** under its full modal qualification | Ordinary O-propositions do not simply convert; a specific *khāṣṣa* negative may warrant a different rule |
 | 3 | In mode 3, either the minor holds permanently or the major satisfies the general customary (*ʿurfiyya ʿāmma*) requirement | Quantifies a persistence condition needed for a universal-negative modal result |
-| 4 | Source wording says **the major** in mode 6 must be a convertible negative | **INTERNAL SOURCE CRUX:** mode 6's negative is the **minor**, and §104 reduces the mode by converting that minor |
+| 4 | The **major** in mode 6 belongs to «المنعكسة السوالب» | **Technical-class distinction:** a (positive) major from modal classes **whose negative forms convert**. Compatible with the separate special negative minor |
 | 5 | In mode 8, the minor must be one of the two special forms and the major must meet general customary conditions | Constrains the reversal and the **conversion of the resulting conclusion** |
 
-**Witness-level caution at #4.** The source's Arabic as printed by Street, p. 68, reads `كون الكبرى في السادس من المنعكسة السوالب`. A later note signed `سل` in the al-Yazdī tradition repeats `الكبرى`; these are **two textual occurrences** but not enough evidence for autographic authorial intent. The internal conflict is real; do **not** silently emend to `الصغرى` or attribute the conjecture to al-Kātibī.
+**Stage92 clarification at #4.** Street's Shamsiyya text retains `كون الكبرى في السادس من المنعكسة السوالب`, and a later signed `سل` note repeats it. The phrase is not necessarily inconsistent: `المنعكسة السوالب` can designate **proposition classes whose negative versions convert**. The separate class of the **major** need not itself be a negative premise. Do not emend `الكبرى`: the 2019 expanded commentary explains why both the major and the special negative minor have distinct conditions.
 
-It is possible that #4 is a mechanical transmission error, that a different enumeration is intended, or that it is an abbreviated reference with a specialized convention. The immediate context favors the **minor** as the target of conversion, but that supports an **editorial conjecture**, not a certified source reading.
+The **minor** remains the premise converted in §104, while §103's **major** satisfies a **modal-class condition** governing its negative counterpart. Both are required in the expanded six-condition exposition. The inference itself remains to be formally reconstructed under traditional modal semantics.
 
 ## 3. The sixth-mode problem triangulated from independent passages
 
 | Locus | What it explicitly asserts |
 |---|---|
 | al-Kātibī **§95.8**, Street p.65 | Mode 6: **particular negative minor**, **universal affirmative major** |
-| al-Kātibī **§103**, Street p.68 | Fourth condition: **major** in mode 6 must belong to convertible negatives |
+| al-Kātibī **§103**, Street p.68 | Fourth condition: **major belongs to a class whose negative form converts** |
 | al-Kātibī **§104**, Street p.69 | Result of mode 6 obtained through **conversion of the minor**, then reduction to figure II |
-| al-Yazdī-associated signed `سل` gloss, p.145 | Repeats the apparently anomalous **major** designation |
+| al-Yazdī-associated signed `سل` gloss, p.145 | Retains **major** terminology for the convertible-negative **class**, not necessarily negative quality |
 | Ḥāshiyat `Tuḥfa` on the other printed *Sharḥ al-Tahdhīb*, online p.241 | Says explicitly that the sixth works by **conversion of the minor**, requiring it to be among the two special negative forms |
 
-The fourth condition in its literal wording conflicts with both the sixth mood's listed premise qualities and the proposed proof. The controlled Taftāzānī Arabic says neither `الكبرى` nor `الصغرى` in this fine-grained source; therefore this dispute belongs **in the historical explanatory apparatus and its own variant inquiry**, never as a forced emendation to Cairo L16.
+The apparent conflict disappears once **actual premise quality** is separated from the **class of proposition whose negative form admits conversion**. §104 converts the **minor**; §103 regulates the **major's class**. The controlled Taftāzānī Arabic states neither of those fine-grained conditions, so both belong to the explanatory apparatus rather than the Cairo L16 transcription.
 
-This is the first substantive **source-internal historical puzzle** uncovered by the proof-level audit after the original Stage90 Cairo phrase repair.
+This was a productive **terminological ambiguity** in the modern source reading, not a demonstrated textual corruption. The expanded 2019 source and Quṭb al-Dīn al-Rāzī's gloss on the six negative-convertible classes clarify it. Modal proof, however, is still open.
 
 ## 4. Source-authorized reduction plans for the three extra moods
 
