@@ -7,8 +7,8 @@
 3. **Then, and only then, separately edit/translate the sharḥ:** the descendant's *a-qūlu* explanations must occupy a different text/witness layer and must not enter the ancestor's English prose.
 
 ## Current work completed
-- **46** source-located ancestor quotation lemmata, QT-001–QT-046, reproduced in normalized but source-located Arabic and independently translated into scholarly English (not manuscript-collated).
-- Printed locus mapping: **Āshtiyānī's Arabic pp. 48–207**, with separate source-page links for every quotation; the many pages of the descendant's commentary are not falsely represented as translated matn.
+- **52** source-located ancestor quotation lemmata, QT-001–QT-052, reproduced in normalized but source-located Arabic and independently translated into scholarly English (not manuscript-collated).
+- Printed locus mapping: **Āshtiyānī's Arabic pp. 48–237**, with separate source-page links for every quotation; the many pages of the descendant's commentary are not falsely represented as translated matn.
 - Exclusion of the descendant's own extensive introduction (beginning at printed p. 3) and commentary from the matn layer.
 - First-pass register of seven reported printed variants in the first six ancestral quotations; none yet independently assigned to manuscript witnesses, without attributing readings to uninspected manuscripts.
 - Translator notes informed by the sharḥ, particularly his identification of Peripatetics and mutakallimūn (p. 49), and his gloss on *ḥads* (p. 54).
@@ -84,6 +84,23 @@ Four additional original ancestor **قال** quotations have been isolated, veri
 **Important source controls and uncertainties:** In QT-043, the editor reports **الحاسّة/الحادسة** and a probable duplicate string; at QT-044, **فلئن قيل/فلئن قلتم** and **بعض/البعض**; at QT-045, **تقوية/تقوى** and the case of **القوى**; at QT-046, **وبيّن/فإن** and the source's grammatically strained **أن يصل ... القوّة**. The Arabic has been lightly normalized; **independent photographed print comparison and manuscript collation remain unperformed**.
 
 The recovery chain has now covered quoted lemmata through p.207, but p.208 onward has not been exhaustively checked for all remaining ancestor citations; do not assign an unwitnessed QT-047 or claim complete extraction. The *Tamhīd* continues far beyond the latest translated lemma.
+
+## Stage 07: the embodied human, comprehensive manifestation, and divine attributes (pp. 212–237)
+
+Six further **ancestor's قال quotations, QT-047–QT-052**, have been separately translated and placed into the bilingual reader.
+
+| ID | Printed pages | Boundary / principal argument |
+|---|---|---|
+| QT-047 | 212–213 | An extended hypothetical counter-objection comparing orderly demonstration with supposedly disordered ascetic perception; finishes before grandson's أقول p.213. |
+| QT-048 | 215–218 | Four levels of comprehensive being; intellectual, estimative, imaginative and sensory apprehension in the Perfect Human. The printed p.216 and p.217 contain interleaved Persian editor notes excluded from the quote. |
+| QT-049 | 224–225 | Difference between active and passive determinations and unrestricted reality under its distinct relative aspects. |
+| QT-050 | 228–230 | True natural composite of body and separate soul contrasted with mere aggregate of cosmic principles; printed p.229 has intrusive Persian commentary. |
+| QT-051 | 234 | Finite superior types, inferior types and kind-wide versus particular perfections. |
+| QT-052 | 237 | Possible relative attributes versus divine necessity, including a problematic broken printed clause. |
+
+**Latest translated ancestor's matn ends on printed p.237.** All passages remain *provisional transcriptions* from one digital edition, not manuscript-collated readings or a claim of a complete original. The grandson's reply starting p.237 is excluded. P.238 onward has not been exhaustively extracted.
+
+**Open textual cruxes:** QT-047 المناقض/المناقص, تكليفية/تكلّفية, obscure التفرس; QT-048 authorial agreement يدرك with الحقيقة; QT-049 المأخوذة/الموجودة and reported alternatives; QT-050 أفعال/أفعالها; QT-051 وبصدر/ويصدر conjecture; QT-052 displaced bصفة كمالية ... ببعض الصفات الممكنة. Printed-page photos and independent manuscripts are mandatory before treating these as settled.
 
 ## What this edition is NOT
 - NOT the entire original treatise.
