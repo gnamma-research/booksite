@@ -6,6 +6,12 @@ const failures = [];
 const assert = (condition, message) => { if (!condition) throw Error(message); };
 async function check(kind, viewport) {
   const ctx = await browser.newContext({ viewport, reducedMotion: 'reduce' });
+  await ctx.addInitScript(() => {
+    // This legacy citation/apparatus regression tests scholarly Study mode.
+    // The new independent experience QA tests the default flowing layout.
+    const kind = location.pathname.includes('tahdhib-al-kalam') ? 'kalam' : 'logic';
+    try { localStorage.setItem('gnamma-tahdhib-experience-v1-'+kind, JSON.stringify({mode:'study'})); } catch {}
+  });
   const page = await ctx.newPage();
   const errors = [];
   page.on('pageerror', error => errors.push(String(error)));
