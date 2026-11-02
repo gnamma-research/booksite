@@ -1,5 +1,5 @@
 # Qawāʿid al-Tawḥīd — Editorial status
-**Gnamma Research working translation · initiated 2 November 2026**
+**Gnamma Research bilingual source-critical working edition · initiated 2 November, audited 3 November 2026**
 
 ## Scope, order of operations
 1. **Matn first:** reconstruct and translate the complete original *Qawāʿid al-Tawḥīd* of Abū Ḥāmid / Afḍal al-Dīn Muḥammad Turka al-Iṣfahānī, separately from the much longer commentary by his descendant Ṣāʾin al-Dīn ʿAlī ibn Turka.
@@ -126,6 +126,24 @@ Six further **ancestor's قال quotations, QT-047–QT-052**, have been separat
 
 **Do not backfill** the missing ancestor text from the grandson's **أقول** paraphrase, Persian editor remarks, or modern interpretive summaries. Obtain independent shorter-matn manuscript witnesses and alternative editions before calling the translation textually complete.
 
+## Stage 09: source-critical integrity audit (3 November 2026)
+
+This stage improves the **critical apparatus and editorial reliability**, **not** the manuscript basis of the Arabic. The full 61-lemma bilingual text is in [parallel-matn.md](../data/parallel-matn.md); the [per-lemma critical apparatus](CRITICAL_APPARATUS.md) includes all recorded readings and source links.
+
+### Completed checks
+
+- Gnamma catalogue and public reader now consistently display **61** authorial lemmata, from base printed p.48 through the explicit authorial conclusion on p.270. The previous website badge saying **46** was out of date and has been corrected.
+- The existing problem register contains **69** entries: **50** readings/alternatives as reported in the *electronic* Āshtiyānī apparatus, **14** editorial conjectures, **1** parallel in the grandson's commentary, **1** major reported loss in the original, and **3** entries where the precise source category cannot be established without checking images. These are **not 69 collated manuscript variants**.
+- All 61 reader units now carry an explicit witness status: 0 independently collated manuscripts, no independent leaf-image verification, and distinct authorial **قال** / commentator **أقول** layers.
+- Automated Arabic-normalization checks found **six recorded base-lemma labels absent verbatim** from their corresponding current Arabic reader units: **QT-020, QT-043, QT-054, QT-056 and two labels in QT-060**. These are tagged in the apparatus instead of silently declared authenticated.
+- **QT-054 and QT-060** are especially revealing: at least some proposed grammatical improvements were already incorporated into the *normalized reading text* although the apparatus still cites their unrevised electronic base forms. This is a reason **not to label the Arabic diplomatic**.
+
+### Remaining material barriers
+
+The reported multi-line/more-than-page loss at **QT-059, printed pp.262–264**, remains unresolved. The 1898 Tehran printing, Āshtiyānī's 1976/1982 editions, the Ḥasan-zādeh Āmulī 1381 SH / 2002–03 edition, and independent ancestor manuscript leads have not been actually collated against one another in this stage. An independent manuscript with the lost portion is required to repair a lacuna responsibly. None of the grandson's explanatory prose may stand in for unknown ancestral words.
+
+**Critical edition verdict:** the presently published material is a **source-critical bilingual working edition with a full preliminary apparatus**, **not a definitive, exhaustively collated critical edition**. Reaching the original conclusion and listing manuscripts are not the same as establishing the original.
+
 ## What this edition is NOT
 - NOT the entire original treatise.
 - NOT a manuscript-collated, stemmatically established, fully critical edition.
@@ -159,7 +177,7 @@ Preserve *wujūd* (existence), *wujūdāt khāṣṣa* (particular existences), 
 
 **English translation comparator:** Joseph E. B. Lumbard, “Establishing the Principles,” *An Anthology of Philosophy in Persia*, vol. IV, pp. 464–479. A clause-by-clause [Lumbard comparison and attribution audit](LUMBARD_COMPARISON.md) now tracks his technical choices, identifies his editorial-heading note, and distinguishes quotations from the ancestor's *other* works from the original *Qawāʿid* matn. The new English translation is independently authored, not reproduced from Lumbard.
 
-_Gnamma Research · editorial status v0.8 · 3 November 2026_
+_Gnamma Research · editorial status v0.9 · 3 November 2026_
 
 
 **Technical bridge glossary:** [Matn-anchored Avicennian–Akbarian terminology](TECHNICAL_GLOSSARY.md), with distinct layers for original claims, objections, and later glosses.
