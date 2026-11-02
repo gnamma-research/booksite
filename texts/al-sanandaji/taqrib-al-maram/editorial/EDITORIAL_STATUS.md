@@ -72,3 +72,14 @@ New textual master: `2026-11-02_STAGE07_I161-I200_SOURCE_AND_TRANSLATION.md`, ge
 Source images printed **I:201–220 / PDF 214–233** were directly inspected. The reader now includes 20 further **meaning-oriented English page guides** (not complete literal page translation), **10 short selected upper-register Arabic–English translations**, and **one lower-register sound-related excerpt** explicitly marked **author unassigned**. The source image at I:208 was checked again and an uncertain Arabic verb deleted rather than presented as a definite reading.
 
 Together with Stage 07, this turn adds **60** original pages of preliminary reading and **32 upper + seven lower** selected short translations. The broader printed source is 615 numbered pages; **I:8–220 = 213/615 = 34.63%** has *some* English (page-presence proxy only), while **0/615** pages are certified complete across the Sanandajī running text plus all marginal annotations. The independently identified Wasīm II:117 excerpt remains a separate existing contribution. The next rapid pass begins I:221/PDF 234. Canonical running details: `2026-11-02_FULL_CUMULATIVE_HANDOFF.md` §15.
+
+
+## Stage 09 (2 November 2026) — I:221–240 and mandatory marginal-only warning
+
+The same 632-image combined source witness has now been directly examined through **volume I, printed p.240 (physical scan p.253)**. Stage 09 contributes **20** page-identified orienting records, **16** short directly translated upper-register source phrases and **three** short lower-register excerpt translations with author unassigned. It is **not** a complete translation of those pages.
+
+**Printed I:222 is a whole-page marginal continuation** from I:221, without a new upper Sanandajī paragraph; the site shows its only translated material when the Unattributed marginalia layer is turned on. In printed I:225 and I:233 only a small amount of main commentary appears above the much more extensive marginal apparatus. No new passage has been positively assigned to Wasīm.
+
+The corpus has **615 numbered original pages**: I:1–280 and II:1–335. **I:8–240 = 233 pages with some provisional English (37.89% page-presence)**, of which only 232 have any upper-running-text English record because of I:222. **0/615** printed pages are complete, critically verified bilingual sharḥ-plus-all-margins editions. The confirmed Wasīm II:117 selected passage remains distinct from the new unattributed lower material.
+
+The new source-facing Markdown and twenty-row ledger are `2026-11-02_STAGE09_I221-I240_SOURCE_AND_TRANSLATION.md` and `2026-11-02_STAGE09_I221-I240_LAYER_LEDGER.csv`. Next source interval I:241–260 / scanned images 254–273. The independent Tahdhīb matn project remains unmodified; consult cumulative handoff §16.
