@@ -748,3 +748,56 @@ These are **source-located philosophical and theological argument maps**, not co
 This stage **does not** certify any complete printed page. Every long marginal discussion remains in the future full-text Pass 1, followed by independent Arabic proof, edition collation, technical commentary and author-specific attribution. The existing separate al-Taftāzānī `Tahdhīb al-Kalām` workstream has not been touched.
 
 **Next direct-image interval:** **printed II:201–220 / physical PDF pages 496–515**, in the same 632-image source now mounted and available for source work. Full-text clause-by-clause main and margin translation should increasingly replace interpretive page guides, never be confused with them.
+
+
+---
+
+## 25. Stage 16 — source-first printed II:201–220: divine purposes, guidance, death, provision, divine names (2 November 2026)
+
+### Source, exact page crosswalk and project separation
+
+The user-reuploaded original complete two-volume, image-only `taqribmaram(2).pdf` was inspected at physical PDF pages **496–515**, corresponding to original **printed volume II:201–220**. All twenty original page images were directly viewed. The combined title and printing retain **615 numbered printed pages** (I:1–280, II:1–335) in **632 physical PDF images**. No default OCR reading has been substituted for the original Arabic. All source layers remain distinct: embedded al-Taftāzānī lemmata, Sanandajī's upper running `sharḥ`, positively identified Wasīm lower glosses, and notes by other / currently unknown writers. **No edits to the separately translated al-Taftāzānī Tahdhīb matn.**
+
+An unchanged source-only facsimile packet, `Taqrib_Stage16_II201_II220_Original_Facsimile.pdf`, contains **20** original photographed images. It is emphatically **not** a bilingual translation of all those pages.
+
+### Correct original intellectual architecture
+
+1. **II:201** opens an original `فصل` on explaining God's acts by ends: `ذهبت المعتزلة إلى تعليل أفعاله تعالى بالأغراض والأشاعرة إلى عدمه`. Legal sanctions and expiations, prohibition of intoxicants and the evidentiary validity of `qiyās` appear as cases of purposive rationales. **II:202–203** ask whether such purposes are *necessary* or *universal* and distinguish benefit accruing to servants from any need of the Creator.
+2. **II:204** begins a separate `فصل` about `hudā`, `iḍlāl`, `tawfīq`, `khidhlān`. **II:205–208** distinguish indication of the way, creation of the state or power of guidance, and different senses of calling God or creatures responsible for misguidance. **II:207–208** contain particularly long lower-register objections with only small upper passages.
+3. **II:209** begins `فصل والأجل` about the appointed term of death, including `والمقتول ميت بأجله`. **II:210** concerns the murderer's culpable act and the meaning of transmitted reports of lifespan increase; divine knowledge and the actor's responsibility must not be conflated.
+4. **II:211** contains TWO original divisions: first a `فصل` on `rizq` and the question whether unlawfully acquired nourishment can be provision; then a **second original `فصل` near the page's foot**, stating an apparent agreement that God does not do the reprehensible or omit the obligatory. **II:212–215** extend that into divine justice and alleged rational obligation to do the most beneficial for servants, reward, punishment and their duration. **II:214** is mainly **lower-register** commentary, not a full new Sanandajī page.
+5. **II:216** opens the chapter on divine names. **II:216–220** investigate `ism`, `musammā`, `tasmiyah`, whether the name is the named, common reference versus different significations, and permissibility or propriety of names applied to God. Extended small-print philosophical objections remain outstanding.
+
+### Substantive source-facing new files (non-destructive, no duplicated old pages)
+
+- `firstpass-II201-II220.js`: 20 page-specific, original-image inspected English **meaning-oriented preliminary guides**, stable IDs `P2.201`–`P2.220`, exact original PDF positions, short Arabic anchors and candid noncompletion notices. **NOT twenty complete literal page translations.**
+- `source-selected-II201-II220.js`: **23 short selected directly viewed Arabic-English upper-register expressions** with source IDs `L.II.*`. Quoted lemma versus Sanandajī voice not silently conflated.
+- `source-aligned-II201-II216.js`: **5** additional original-section and partial embedded matn/running sharḥ alignment records at II:201, 204, 209, 211 and 216. Ellipses mark noncontiguous spans; words overlapping with the 23 short excerpts **are not new translated words**.
+- `source-marginal-II202.js`: **one** short translated lower-register excerpt at II:202, `G.II.202.01`, explicitly **individual writer UNASSIGNED**. The full underlying marginal note is NOT translated and it is NOT credited automatically to Wasīm.
+- `editorial/2026-11-02_STAGE16_II201_II220_SOURCE_GUIDES_AND_BILINGUAL_SELECTIONS.md`: the same canonical 20 guides, all 23 directly translated source expressions, five selected source alignments, the sole short marginal excerpt, source-critical caveats, page-source provenance and coverage ledger.
+- `editorial/2026-11-02_STAGE16_II201_II220_EXTENDED_SELECTED_TRANSLATIONS.md`: additionally longer **connected but intentionally discontinuous selections** concerning divine purposes, guidance/misguidance, appointed death, provision and names. Explicit ellipses preserve omitted source words. **Not whole pages**, and not independently collation-certified.
+- `editorial/2026-11-02_STAGE16_II201_II220_LAYER_LEDGER.csv`: twenty original-page rows, new source snippets per page, layer and completeness flags.
+- `editorial/2026-11-02_STAGE16_II201_II220_MARGIN_WITNESS_INVENTORY.csv`: the lower register's appearance on each inspected page and its still-pending full note division, Arabic transcription, translation and author identification.
+- `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv`: **exactly 20 II:201–220 rows updated** as source-inspected with preliminary English, **all 595 other source positions preserved**.
+- NAMA `index.html`, `reader-layered.js`, `source-atlas.js` updated to load the new documents and report only page-presence statistics. Prior source selections, user controls and separate authors remain intact.
+
+### Measured result, not a false translation percentage
+
+| Measure | Stage 16 checkpoint |
+|---|---|
+| Original numbered printed pages indexed | **615/615**, bibliographic mapping only |
+| Volume I with any previous provisional English | **I:8–280 = 273**, including special marginal-only I:222 |
+| Volume II with any provisional English | **II:2–220 = 219**, II:1 part-title excluded |
+| Combined numbered positions with at least *some* English | **492/615 = 80.00% PAGE PRESENCE**, NOT percentage of source words or chapters translated |
+| New source-image guides | **20**, II:201–220 |
+| Directly translated short upper excerpts | **23**, selected fragments, not complete paragraphs/pages |
+| Separate source-alignment records | **5**, some textual overlaps |
+| Newly translated short lower marginal excerpts, writer unassigned | **1**, II:202 |
+| Newly independently corroborated Wasīm gloss units | **0**, earlier source-matched II:117 retained |
+| All original main + every marginal text fully translated and independently critically certified | **0/615** |
+
+The source's long lower-register debates continue to contain most of the uncompleted text on various leaves. A meaningful Wasīm-specific completion percentage cannot be computed before **individually enumerating and positively attributing** all of his gloss units.
+
+### Next handoff
+
+**Next initial source interval:** printed **II:221–240**, original PDF images **516–535**. In addition, urgently undertake a genuinely complete **Pass 1** that transcribes and translates *every original Arabic clause* of both upper and lower registers, with original author-voice markers and page joins. Then conduct independent second-image reading, witness collation, technical logical/theological review and bilingual publication QA. Do not represent the existing short selections or interpretive page notes as a definitive exhaustive critical translation, and do not merge into the separately translated Tahdhīb matn project until both independent editions are genuinely complete.
