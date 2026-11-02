@@ -1,11 +1,12 @@
 /* Gnamma Research | Qawāʿid al-Tawḥīd | ancestor's MATN ONLY
-   Fifty-seven provisional bilingual lemmata, print pp.48–258.
-   Partial reconstruction from digitized Āshtiyānī edition; no independent manuscript collation.
-   The grandson's أقول is never spliced into the ancestor's matn.
+   Sixty-one provisional bilingual ancestral quotation units; digitized Āshtiyānī print pp.48–270.
+   The original's closing formula is on p.270. QT-059 has a documented substantial lacuna.
+   This is NOT a complete manuscript-collated critical edition.
+   The grandson's أقول explanations are not spliced into the matn.
 */
 window.GNAMMA_QAWAID_MATN = {
   "edition": "Āshtiyānī 1982, digital page transcription",
-  "status": "57-source-located-ancestral-lemmas-digital-printed-text-not-manuscript-collated",
+  "status": "61-source-located-ancestral-lemmas-through-authorial-closure-p270-lacunose-not-manuscript-critical",
   "units": [
     {
       "id": "QT-001",
@@ -1358,6 +1359,114 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "url": "https://ablibrary.net/book_content/b/17638/453?lang=ar",
       "moreUrl": "https://ablibrary.net/book_content/b/17638/454?lang=ar"
+    },
+    {
+      "id": "QT-058",
+      "title": "Contemplation and disciplined inquiry require the same conditions of clarity and equilibrium",
+      "pages": [
+        260
+      ],
+      "arabic": "وأمّا نحن فنقول: إنّ كلّ شرط يعتبر في طريق التصوّف فلا بدّ من اعتباره في طريق النظر عند التحقيق، فإنّ رفع العلائق المشوّشة أمر ضروريّ لا بدّ منه في كلا الطريقين، وهذا بيّن لا يحتاج إلى بيان زائد، وهكذا الكلام في النوم والسهر. وبالجملة فإنّ اعتبار جميع ما به يعتدل المزاج ضروريّ في الصورتين، كما أنّ الاجتناب عن جميع ما يخرجه عن الاعتدال ضروريّ فيهما، ويُعرف من هذا أنّه لا استبعاد في اجتماع شروطه. وأمّا الخواطر المشوّشة لجمع الهمّة فهي من جملة الموانع في الطريقين، فإنّه من الضرورات الواقعة في الطريق حسب اقتضاء الحكمة البالغة، لكنّ تسكين المتخيّلة المتحرّكة بالحركات المضطربة المشوّشة وإلجامها ومنعها عنها غير متعذّر عند أرباب الصناعة، كما هو مذكور في كتبهم.",
+      "english": "As for us, we say that, on proper examination, every condition that must be observed in the Sufi path must also be observed in the path of rational investigation. The removal of distracting attachments is necessary in both; that is clear without further demonstration. The same is true of the regulation of sleep and wakefulness. In short, everything required to maintain a balanced constitution must be observed in either path, while everything that disturbs that balance must be avoided. This also shows that there is nothing inherently incredible about bringing together the conditions of contemplative practice. Distracting thoughts that disperse concentration are obstacles to both paths. Such disturbances do arise in the course of one's activity under the order of providential wisdom; nevertheless, practitioners of the discipline do not regard it as impossible to quiet the imagination when it is driven by confused, agitated motions, restraining it and preventing its disturbances, as their books explain.",
+      "notes": [
+        "One complete original lemma introduced by قال and marked 'وأما نحن' p.260, ending before the grandson's (1) أقول. The intervening p.258–260 commentary belongs to the grandson and is excluded.",
+        "This is the ancestor's explicit answer to the view reported in QT-057: contemplative inquiry and demonstrative inquiry both require concentration and temperamental equilibrium, rather than one being inherently immune to bodily and psychic impediments.",
+        "The phrase فإنّه من الضرورات الواقعة في الطريق is awkward; the English does not assert a forced solution. The broader context refers to distractions both in rational and spiritual practice."
+      ],
+      "variants": [],
+      "url": "https://ablibrary.net/book_content/b/17638/456?lang=ar"
+    },
+    {
+      "id": "QT-059",
+      "title": "Sense and intellect are preparatory causes in both paths; the effusion of knowledge is from the First Principle [LACUNOSE]",
+      "pages": [
+        262,
+        263,
+        264
+      ],
+      "arabic": "وما قيل إنّ علوم النظّار مأخوذة من الحواسّ وعلوم أصحاب المجاهدة مأخوذة من المبدأ الفيّاض فليس بشيء، فإنّ الحواسّ هي المعدّات الأُوَل في الطريقين، ومفيض المعارف والعلوم هو المبدأ الفيّاض بالذات. أمّا الأوّل فكونها معدّة في طريق النظر ظاهر، وكونها معدّة في الطريق الآخر فلأنّها لو لم تكن معدّة لما تعلّقت النفس الناطقة ببدنه البتّة، ثمّ إنّ الكمال الحقيقي لا بدّ وأن يحصل لها بعد انقطاع ذلك التعلّق بالموت. فلئن قيل: جاز أن يكتسب من ذلك التعلّق ما يمنعه عن الوصول إليه. قلنا: فعلى هذا يجب حصول ذلك الكمال قبل تعلّقها، وحينئذ لم تتعلّق به البتّة. فلئن قلتم: فكما يكتسب من ذلك التعلّق ملكات مانعة للوصول فلا يبعد أن يكتسب منه ملكات أُخَر تُعَدّ من جملة الأسباب والشروط المطلقة. قلنا: فعلى هذا قد رجعتم إلى ما هو الحقّ واعترفتم به بعد ما أنكرتموه. وأمّا الثاني فلما بيّنّاه في كتبنا المعمولة في صناعة الحكمة.",
+      "english": "The assertion that the speculative philosophers derive their knowledge from the senses, whereas those who undertake spiritual exertion derive theirs from the effusive Principle, is mistaken. The senses provide the first preparatory conditions in both paths, while the principle that actually bestows cognitions and sciences is, through itself, the effusive Principle. As for the first claim: that the senses prepare one for rational investigation is obvious. But they are preparatory also for the other path: were they not, the rational soul would never have become attached to its body. True perfection, moreover, must become available to the soul when that bodily attachment is severed by death. If one objects that bodily association can impart dispositions that prevent attainment, we answer that, on that supposition, the perfection must have been attainable prior to association with the body; why, then, should the soul have become attached to it at all? If the opponent replies that, just as bodily association can impart obstructive habits, it may equally impart other habits that serve as preparatory causes and conditions, we answer: you have now returned to the truth and conceded what you previously denied. As for the second claim, its explanation has already been supplied in our works on philosophical science.",
+      "notes": [
+        "CRITICAL LACUNA: printed p.262 n.1 (continuing p.263) says the available copies share an abbreviated original quote, and a later scholar reported that scribes omitted more than a printed page. The exact lost clauses are not represented by the words reproduced here. This unit translates the SURVIVING quoted text only, not a reconstructed full ancestral argument.",
+        "Starts قال on p.262 and runs across p.263, closing with 'وأما الثاني ...' on p.264 before (1) أقول. The grandson's lengthy later 'وأما بيان الثاني' at p.266 explains the missing argument but is NOT independently proven to be the grandfather's exact original and has been excluded.",
+        "Material corruption near p.263: the 1st conditional's reading 'وحينئذ لم تعلّق به' is syntactically difficult; a stronger inference may be intended. It is not silently repaired.",
+        "Technically: the senses are causes of iʿdād (preparation), NOT sources that efficiently bestow intelligible forms (ifāḍa). Both routes receive knowledge from the effusive Principle; this does not erase differences in their immediate psychological operations."
+      ],
+      "variants": [
+        {
+          "lemma": "The quoted matn is incomplete in the printed transmission",
+          "other": "More than one page reportedly omitted by copyists",
+          "remark": "Editorial Persian n.1 on pp.262–263, not a conjectural fill or translated commentary."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/458?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/460?lang=ar"
+    },
+    {
+      "id": "QT-060",
+      "title": "Two legitimate routes to unveiled knowledge, both requiring purification",
+      "pages": [
+        266,
+        267
+      ],
+      "arabic": "على أنّا نقول: إنّ العلوم كلّها موجودة فينا، لما ستعرفه لو تأمّلت في المباحث السالفة، لكنّها مخفيّة بالحجب المانعة عن الظهور. ولا يخفى عليك أنّ ظهورها تارة يكون بالحركات اللطيفة الفكريّة الروحانيّة بعد تسليط القوّة القدسيّة على قوّتي الوهميّة والمتخيّلة وسائر القوى الجسمانيّة وتهذيب الأخلاق وتزيين النفس بالأخلاق الحسنة، وتارة أخرى بتسكين المتخيّلة والمتوهّمة وإلجامهما ومنعهما عن الحركات المضطربة المشوّشة بعد تسخير القوى الجسمانيّة بالتزكية والتصفية. وكلا الطريقين حقّ عند أكثر المحقّقين من أهل النظر وأصحاب المجاهدة. [شعر] خذ أبطن هرشى أو قفاها فإنّه * كلا جانبي هرشى لهنّ طريق. ومن اعتقد أنّه لا اعتبار بالتزكية والتصفية في طريق التعليم والنظر، ركب متن الهوى والهوس حسب هذه العقيدة الفاسدة، وغلبت على نفسه الشهوة والغضب، واستولت عليه الرذائل الطبيعيّة المهلكة، وحُرمت عليها الفضائل الملكيّة المحبّيّة، واشتغل بقراءة كتب مقلّدي الفلاسفة وزبر المتكلّمين من أصحاب الجدل والمشاغبة، وضيّع عمره في ضبط الآراء المتناقضة وحفظ الأحوال والأقوال المتقابلة، فوقع نفسه في لجج الخيالات الفاسدة والأوهام الباطلة، عند تلاطم أمواج الشكوك والشبهات المغرقة. فاضمحلّ نور قلبه وعميت بصيرته بتراكم الكدورات المظلمة والعقائد الفاسدة، وازداد فيه الجهل والتردّد وحصل له البهت والتحيّر، ولا يدري أين يذهب، فلحق به من الحقّ الغضب، وظنّ أنّ الكمال ما حصل له ووصل إليه، وليس وراءه حالة مرغوبة كماليّة ولا سعادة باقية، فليتقِ خبث هذه العقيدة ووجه ضررها من لطفه وليستعذ به من مكره وغضبه.",
+      "english": "We further say that all the sciences are already present within us, as reflection upon the earlier discussions will show, but they remain hidden behind veils preventing their manifestation. They can become manifest in one way through subtle, spiritual movements of discursive thought, after the holy faculty has been given mastery over estimation, imagination, and the other bodily faculties and after the character has been refined and the soul adorned with good qualities. They can become manifest in another way through stilling estimation and imagination, bridling them and restraining their confused movements once the bodily faculties have been disciplined through purification and clarification. Most accomplished investigators, whether rational scholars or practitioners of spiritual exertion, accept both paths as legitimate. As the quoted verse puts it: 'Take the inner slope of Harshā or its far side: either side affords a path.' Someone who believes that purification and refinement of character have no place in teaching and rational inquiry follows caprice and whim. Appetite and anger dominate the soul, destructive natural vices take possession of it, and angelic, loving virtues are denied to it. Such a person devotes himself to the books of imitators of philosophers and to contentious theologians, wasting his life memorising contradictory opinions and rival statements. Tossed into a sea of corrupt imaginings and false suppositions amid overwhelming waves of doubts, the light of his heart fades and his insight is blinded by the accumulation of obscuring conditions and false beliefs. Ignorance and hesitation intensify; perplexity takes hold; he no longer knows which way to turn. Yet he supposes that the learning he has acquired is the whole of perfection and that there is no more desirable state or abiding felicity beyond it. Let him beware the corruption and danger of that belief and seek protection from its consequences.",
+      "notes": [
+        "Original قال starts near bottom of p.266 and concludes on p.267 before (1) أقول. The grandson's explanatory 'two ways' model on pp.267–269 is kept separate.",
+        "The ancestor explicitly asserts 'وكلا الطريقين حق', offering contemplative stillness and active disciplined intellectual motion as complementary ways; both require moral purification. The internal poetic verse is part of the quotation, not the grandson's note.",
+        "The verse's Harshā is a toponym/metaphor for two approaches, not a mathematical claim that the paths are identical in every respect. The broader polemic attacks bookish disputation unaccompanied by moral reform, not learning or logic as such.",
+        "Printed variants p.267 فوقع/فأوقع, the doubtful word المفرفة/muġriqa, and p.267's imperative فيتقن ... (possibly فليتقِ) have not been settled by manuscripts. English renders the intended admonition while retaining the printed dilemma in notes."
+      ],
+      "variants": [
+        {
+          "lemma": "فوقع نفسه",
+          "other": "فأوقع نفسه",
+          "remark": "Printed p.267 alternative; first is grammatically suspect."
+        },
+        {
+          "lemma": "المفرفة",
+          "other": "المغرقة [editorial conjecture]",
+          "remark": "The source marks this probable correction."
+        },
+        {
+          "lemma": "فيتقن خبث",
+          "other": "فليتقِ خبث [editorial conjecture]",
+          "remark": "Printed ending appears corrupt; English chooses a plausible imperative."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/462?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/463?lang=ar"
+    },
+    {
+      "id": "QT-061",
+      "title": "The final criterion: logic, contradictory unveilings, rational preparation, and the perfected teacher",
+      "pages": [
+        269,
+        270
+      ],
+      "arabic": "دقيقة: قد بقي هاهنا بحث مفيد لا بدّ وأن نشير إليه إشارة خفيّة. اعلم أنّ أصحاب النظر والتعليم عندهم علم يمكن أن يتميّز به النظر الصحيح عن الفاسد، ويمكن أيضاً أن يعرف به وجه الحقّ عن الباطل، وليس عند السالكين من أصحاب المجاهدة آلة شأنها ما ذكرناه. فلئن قيل: إنّ علومنا وجدانيّة، وكما لا يفتقر في حصول العلوم الوجدانيّة الضروريّة إلى صناعة آليّة مميّزة، فكذلك العلوم الحاصلة لنا بالذوق والوجدان. قلنا: إنّ ما يجده بعض السالكين قد يكون مناقضاً لما يجده البعض الآخر منهم، ولهذا قد ينكر البعض منهم البعض الآخر في إدراكاتهم ومعارفهم. ومتى عرفت هذا فنقول: لا بدّ للسالكين من أصحاب المجاهدة أن يحصّلوا العلوم الحقيقيّة الفكريّة النظريّة أوّلاً، بعد تصفية القلب بقطع العلائق المكدّرة المظلمة وتهذيب الأخلاق وترتيبها، حتّى تصير هذه العلوم النظريّة التي تكون من جملتها الصناعة الآليّة المميّزة بالنسبة إلى المعارف الذوقيّة كالعلم الآلي المنطقي بالنسبة إلى العلوم النظريّة غير المتّسقة المنتظمة. فلو تحيّر الطالب السالك وتوقّف في بعض المطالب التي لا تحصل له بالفكر والنظر، حصّله بالطريق الآخر، ويدرك وجه الحقّ فيه بالملكات المستفادة من هذه العلوم الحاصلة له بالفكر والنظر. هذا إذا لم يكن له شيخ مكمّل يرشده في كلّ مقام ومنزل. واعلم أنّ تحقيق الكلام في هذا الموضع إنّما يحتاج إلى كلام مبسوط لا يحتمله هذا المختصر. وهذا آخر ما أردنا أن نورده في هذه الرسالة، والحمد لله ربّ العالمين، والصلاة والسلام على نبيّه محمّد المصطفى وآله الطاهرين.",
+      "english": "A subtle point remains, one useful inquiry to which we must allude briefly. Know that those who pursue rational investigation and formal instruction possess a science by which sound reasoning can be distinguished from unsound reasoning, and the true aspect of a matter can be distinguished from the false. The travellers of the path who practise spiritual exertion do not possess an instrument of precisely this description. If they object that their knowledge is immediately experienced, and just as necessary knowledge given in direct awareness needs no instrumental science to distinguish it, so their knowledge obtained through spiritual taste and immediate finding requires none, our reply is that what one spiritual traveller experiences may contradict what another experiences. Indeed, practitioners sometimes reject one another's perceptions and cognitions. Once this is understood, we say that those who follow the path of spiritual exertion must first acquire the genuine discursive and theoretical sciences, after purifying their hearts by severing darkening attachments and refining and ordering their dispositions, so that those sciences—including the instrumental discipline that discriminates correct from incorrect thinking—will stand in relation to experiential cognitions much as the instrumental science of logic stands in relation to theoretical sciences whose arguments require ordering. Then, if the seeker becomes perplexed and reaches an impasse on a question not resolved by discursive reasoning, he may attain it by the other path and discern its true aspect through the stable intellectual dispositions acquired from his theoretical studies. This applies where he has no perfected spiritual teacher to guide him at every station and stage. A full treatment of this question would require a lengthy discussion beyond this brief treatise. This is the end of what we intended to present in this epistle. Praise belongs to God, Lord of the worlds, and blessings and peace upon His Prophet Muḥammad the Chosen and his pure family.",
+      "notes": [
+        "THE AUTHORIAL END: this is the final marked ancestor's قال, from p.269 to p.270, closing with the explicit statement 'وهذا آخر ما أردنا أن نورده في هذه الرسالة'. The subsequent (1) أقول and pp.271–274 belong to the grandson and are excluded from this matn.",
+        "Central methodological result: vision alone does not settle conflicting claims. Logic and the habits cultivated by theoretical science furnish a discriminative criterion for experiential cognition; experience may then reach a question unresolved by discursive reasoning. This is a cooperation of methods, not either a denial of mystical perception or an unconditional declaration that all visionary claims are true.",
+        "The clause 'غير المتسقة المنتظمة' is unstable: the source reports 'المنسقة' as a variant and the placement of 'المنتظمة' may reflect an erroneous or unclear syntax. English supplies the likely comparison with logic but flags uncertainty.",
+        "Printed p.270 has تهذيب الأخلاق وترتيبها / وتزيينها; the ethical exercise is an integral prerequisite, not a decorative addition. The teacher exception is explicit; it cannot simply be erased to make the author a purely rationalist.",
+        "This establishes the END of the transmitted quoted treatise in this edition, not independent completeness of a manuscript critical text (cf. the loss reported in QT-059)."
+      ],
+      "variants": [
+        {
+          "lemma": "وترتيبها",
+          "other": "وتزيينها",
+          "remark": "Printed p.270 variant."
+        },
+        {
+          "lemma": "غير المتّسقة المنتظمة",
+          "other": "غير المنسّقة المنتظمة",
+          "remark": "Printed alternative; syntax remains uncertain."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/465?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/466?lang=ar"
     }
   ]
 };
