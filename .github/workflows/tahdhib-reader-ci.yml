@@ -7,6 +7,7 @@ on:
       - "tools/tahdhib/reader_qa.mjs"
       - "tools/tahdhib/verify_logic_core.py"
       - "tools/tahdhib/verify_fourth_figure_scope.py"
+      - "tools/tahdhib/verify_special_modal_temporal_shadow.py"
       - "texts/al-taftazani/tahdhib-al-kalam/edition/**"
       - "texts/al-taftazani/tahdhib-al-mantiq/edition/**"
 permissions:
@@ -23,6 +24,7 @@ jobs:
         run: |
           python tools/tahdhib/verify_logic_core.py
           python tools/tahdhib/verify_fourth_figure_scope.py
+          python tools/tahdhib/verify_special_modal_temporal_shadow.py
           python - <<'PY'
           import json, pathlib
           base=pathlib.Path('texts/al-taftazani')
@@ -100,6 +102,7 @@ jobs:
           path: |
             tools/tahdhib/verified_nonmodal_results.json
             tools/tahdhib/verified_fourth_figure_scope.json
+            tools/tahdhib/verified_special_modal_temporal_shadow.json
 
   reader-chromium:
     runs-on: ubuntu-latest
