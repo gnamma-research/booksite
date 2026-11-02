@@ -1,11 +1,11 @@
 /* Gnamma Research | Qawāʿid al-Tawḥīd | ancestor's MATN ONLY
-   Thirty-nine translated lemmata; digitized Āshtiyānī 1982 pp.48–173.
+   Forty-one translated lemmata; digitized Āshtiyānī 1982 pp.48–186.
    Not a complete translation and not a manuscript-critical edition.
    Commentary informs notes ONLY, and is never spliced into the matn.
 */
 window.GNAMMA_QAWAID_MATN = {
   "edition": "Āshtiyānī 1982, digital page transcription",
-  "status": "39-quoted-matn-lemmas-print-transcription-not-manuscript-collated",
+  "status": "41-quoted-matn-lemmas-print-transcription-not-manuscript-collated",
   "units": [
     {
       "id": "QT-001",
@@ -847,6 +847,55 @@ window.GNAMMA_QAWAID_MATN = {
       ],
       "url": "https://ablibrary.net/book_content/b/17638/368?lang=ar",
       "moreUrl": "https://ablibrary.net/book_content/b/17638/369?lang=ar"
+    },
+    {
+      "id": "QT-040",
+      "title": "Volitional self-disclosure in the Perfect Human",
+      "pages": [
+        180
+      ],
+      "arabic": "فانبعث انبعاثاً إراديّاً إلى المظهر الكلّي والكون الجامع الحاصر للأمر الإلهي، وهو الإنسان الكامل؛ فإنه الجامع بين مظهريّة الذات المطلقة وبين مظهريّة الأسماء والصفات والأفعال بما في شأنه الكلّيّة من الجمعيّة والاعتدال، وبما في مظهريّته من السعة والكمال، وهو الجامع أيضاً بين الحقائق الوجوبيّة ونسب الأسماء الإلهيّة وبين الحقائق الإمكانيّة والصفات الخلقيّة، فهو جامع بين مرتبتي الجمع والتفصيل، محيط بجوامع ما في سلسلة الوجود، ليظهر فيه بحسبه، ويدرك ذاته حسبما ذكرنا من الحيثيّة الجامعة والجهة الكاملة.",
+      "english": "Thus a volitional movement proceeds toward the universal locus of manifestation, the comprehensive mode of being that encompasses the divine command: the Perfect Human. For the human unites the capacity to manifest the absolute Essence with the capacity to manifest the divine names, attributes, and acts, through the comprehensiveness and equilibrium of the human's universal constitution and through the breadth and perfection of that capacity for manifestation. The human likewise brings together the realities of necessity and the relations of the divine names with the realities of possibility and the attributes of creatures. Thus the human joins the level of comprehensive unity to that of differentiation, encompassing the principal levels in the chain of existence, so that the Real may become manifest in the human according to that capacity and apprehend its own reality under the comprehensive and perfected aspect just described.",
+      "notes": [
+        "This is the complete grandfather's quotation at printed p. 180, delimited by قال and the grandson's subsequent أقول. The earlier long discourse on the descending and returning circle of existence (pp. 180–183) is the grandson's commentary and should not be conflated with the matn.",
+        "The phrase انبعاثاً إرادياً makes volitional, purposive manifestation explicit. The descendant's subsequent explanation contrasts this with involuntary Peripatetic necessitation, but that comparative interpretation belongs to his sharḥ.",
+        "The manuscript alternative شأنه / نشئاته is significant: ‘its affair/state’ versus ‘its constitutions/forms’. Base شأنه retained, with the English rendering the philosophical sense contextually.",
+        "The Perfect Human is presented as encompassing **wujūb** and **imkān**, divine names and creaturely attributes, unity and detailed multiplicity—without collapsing all contrasts into an undifferentiated identity."
+      ],
+      "variants": [
+        {
+          "lemma": "شأنه",
+          "other": "نشئاته",
+          "remark": "Reported alternative in بما في شأنه الكلية."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/376?lang=ar"
+    },
+    {
+      "id": "QT-041",
+      "title": "Critique of the mirror analogy: intellectual vision versus sensory vision",
+      "pages": [
+        185,
+        186
+      ],
+      "arabic": "وما قيل: «إن رؤية الشيء نفسه بنفسه ما هي مثل رؤيته نفسه في أمر آخر يكون له كالمرآة، فإنه يظهر له في نفسه في صورة يعطيها المحلّ المنظور فيه مما لم يكن يظهر له من غير وجود هذا المحلّ ولا تجلّيه له»، ففيه نظر؛ فإنه لو أريد بالرؤية هاهنا الإدراك المنسوب إلى البصيرة، وهو الإدراك العقلي، فالأمر الذي يصحّ أن يكون مرآة لرؤية نفسه فيه هو العقل الأوّل من جملة معلولاته. ولو أريد بها الإدراك المنسوب إلى الباصرة، وهو الإدراك الجزئي، فمن البيّن أن الواجب لذاته لا يكون جزئيّاً، لما عرفت أن كل جزئي لا بدّ أن يكون ممكناً لذاته؛ وكيف لا، وإن كل مرئيّ بالذات برؤية الباصرة لا بدّ أن يكون عرضاً جسمانيّاً، وكل ما هو مرئيّ بالذات بالعرض برؤية الباصرة فهو مادّي، جسماً كان أو جسمانيّاً.",
+      "english": "As for the saying, ‘A thing's seeing itself by itself is not like its seeing itself in something else that functions as a mirror: in the latter, it appears to itself in a form supplied by the locus in which it looks, a form that would not have appeared without that locus and its disclosure to it,’ this requires scrutiny. If ‘seeing’ here means perception by inner vision—that is, intellectual cognition—then the thing that could serve as a mirror for its self-perception is the First Intellect, one of its effects. If, however, it means the perception belonging to eyesight—that is, particular sensory cognition—it is evident that the Necessary Existent cannot be a sensory particular; for, as already explained, every particular must be possible through itself. Indeed, everything seen directly by eyesight must be a corporeal accident, and whatever is seen by eyesight in a derivative manner must be material, whether a body or something corporeal.",
+      "notes": [
+        "The grandfather begins his قال at p. 185 with an extended statement closely related to Ibn ʿArabī's *Fuṣūṣ*, ends its nested quotation at the beginning of p. 186, and then gives his own **ففيه نظر** critique before the grandson's أقول. This reveals genuine critical engagement within the Akbarian system, not mere repetition.",
+        "The grandfather distinguishes intellectual seeing (بصيرة / إدراك عقلي) from sensory vision (باصرة / إدراك جزئي), invoking the First Intellect and a philosophical theory of perceptible accidents against a literal reading of the mirror metaphor.",
+        "The clause كل ما هو مرئي بالذات بالعرض برؤية الباصرة is awkward in the electronic base, combining ‘intrinsically’ and ‘incidentally’. The English gives a cautious distinction between direct and derivative visual objects, but a photographed witness is required before adopting the logical inference unconditionally.",
+        "Nested guillemets are **editorial punctuation** to clarify what the ancestor is quoting and what he argues; other later quotations from Ibn ʿArabī elsewhere in the sharḥ are not part of the grandfather's original matn.",
+        "The digitized edition reports the alternative تجلّيه فيه for تجلّيه له; source difference affects the identity of the locus where manifestation occurs."
+      ],
+      "variants": [
+        {
+          "lemma": "تجلّيه له",
+          "other": "تجلّيه فيه",
+          "remark": "Reported variant in nested mirror quotation, at p. 186."
+        }
+      ],
+      "url": "https://ablibrary.net/book_content/b/17638/381?lang=ar",
+      "moreUrl": "https://ablibrary.net/book_content/b/17638/382?lang=ar"
     }
   ]
 };
