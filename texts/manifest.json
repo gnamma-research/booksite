@@ -139,7 +139,23 @@
         "clauses": 1044,
         "printed_pages": 113,
         "cairo_single_print_checked_pages": 108
-      }
+      },
+      "available_static_pdfs": [
+        {
+          "kind": "bilingual",
+          "url": "texts/al-taftazani/tahdhib-al-kalam/edition/pdfs/tahdhib-kalam-parallel.pdf"
+        },
+        {
+          "kind": "arabic",
+          "url": "texts/al-taftazani/tahdhib-al-kalam/edition/pdfs/tahdhib-kalam-ar-only.pdf"
+        },
+        {
+          "kind": "english",
+          "url": "texts/al-taftazani/tahdhib-al-kalam/edition/pdfs/tahdhib-kalam-en-only.pdf"
+        }
+      ],
+      "pdf_edition_status": "Published working editions from canonical corpus; not independent manuscript certified",
+      "edition_audit_url": "texts/al-taftazani/tahdhib-al-kalam/edition/EDITORIAL_STATUS.md"
     },
     {
       "id": "sanandaji-taqrib-maram",
@@ -188,7 +204,23 @@
       "enhanced_reader_status": "Continuous 19-unit bilingual logic draft; exact rule verification and manuscript collation pending",
       "enhanced_reader_scope": {
         "editorial_divisions": 19
-      }
+      },
+      "available_static_pdfs": [
+        {
+          "kind": "bilingual",
+          "url": "texts/al-taftazani/tahdhib-al-mantiq/edition/pdfs/tahdhib-logic-parallel.pdf"
+        },
+        {
+          "kind": "arabic",
+          "url": "texts/al-taftazani/tahdhib-al-mantiq/edition/pdfs/tahdhib-logic-ar-only.pdf"
+        },
+        {
+          "kind": "english",
+          "url": "texts/al-taftazani/tahdhib-al-mantiq/edition/pdfs/tahdhib-logic-en-only.pdf"
+        }
+      ],
+      "pdf_edition_status": "Published working editions from canonical corpus; not independent manuscript certified",
+      "edition_audit_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/LOGIC_AUDIT.md"
     }
   ],
   "research": [
