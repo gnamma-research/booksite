@@ -114,3 +114,14 @@ The same user-supplied combined two-volume facsimile was inspected at **printed 
 Verified chapter boundaries and themes: **فصل في أحكام الأجسام** at II:21, proofs and objections about the world's temporal origination around II:31–38, **فصل في تقسيم الجسم** at II:39, simple/composite celestial/elemental bodies, and **فصل في المركبات التي لها مزاج** at II:50.
 
 **Cumulative:** 273 numbered pages with some English in volume I, 59 in volume II; **332/615 = 53.98% of printed page positions with SOME provisional English**. This is NOT a percentage of source words translated. **0/615 pages have complete, independently critically verified upper-plus-every-lower-register translation**. Wasīm's overall note denominator has not been enumerated; no new positively verified Wasīm note is claimed. Continue at II:61 / PDF 356. All substantive details are in the full cumulative handoff §19 and in `2026-11-02_STAGE11_II021-II060_SOURCE_AND_TRANSLATION.md`.
+
+
+## Stage 12 (2 November 2026) — animal faculties, immaterial soul and separate intellects
+
+The same user-supplied combined source images were directly inspected at **printed II:61–100 = physical PDF p.356–395**. NAMA now includes **40 image-indexed provisional English guides**, **25 short directly translated upper-register Arabic excerpts**, **two lower-register excerpts of individual author UNASSIGNED**, and **three source-aligned opening/lemma units** at II:64, II:74 and II:95. Most of the original text and lengthy lower-register critical discussions remain untranslated.
+
+The main original divisions are important: **مقالة في المجردات وفيها بحثان** at II:74, beginning with a treatment of the human soul and the alleged immaterial nature of intellection; **البحث الثاني من المقالة في العقل** at II:95, introducing the philosophers' separate intellects and the arguments surrounding them. Authorial endorsement must not be inferred from Sanandajī reporting philosophical positions.
+
+**Cumulative:** 273 original volume-I pages with some preliminary English + 99 substantive volume-II pages = **372/615 = 60.49% of mapped printed source page positions with SOME English**, not a source-word translation percentage. The only positively identified prior Wasīm excerpt remains II:117. **0/615 pages** have completely translated and independently critically verified upper commentary together with every lower marginal note. Next first-reading interval **II:101–120 / PDF p.396–415**, taking care not to retranslate the already matched II:117 excerpt.
+
+Canonical source-facing dossier: `2026-11-02_STAGE12_II061_II100_SOURCE_AND_TRANSLATION.md`; page-layer audit: `2026-11-02_STAGE12_II061_II100_LAYER_LEDGER.csv`; full cumulative handoff §20.
