@@ -67,6 +67,12 @@ async function check(kind, viewport) {
     assert(l15.includes('وبين انعكاس الخاصتين'), 'L15 Cairo short proof clause not visible');
     assert(!l15.includes('بالافتراض') && !l15.includes('فتأمل'), 'L15 Cairo matn contaminated by commentary printing');
     assert(await page.locator('.witness-variant').count() > 0, 'L15 alternate printed source panel missing');
+    await page.goto(new URL(route + '#page=17', base).href, { waitUntil: 'networkidle' });
+    const l17 = await page.locator('#u-L-17 .arabic').textContent();
+    assert(l17.includes('وقد يخص باسم قياس الخلف'), 'L17 Cairo shorter naming rule missing');
+    assert(!l17.includes('وقد يختص باسم قياس الخلف'), 'L17 comparator wording leaked into Cairo');
+    assert(await page.locator('.witness-variant').count() > 0, 'L17 printed comparator panel missing');
+    assert(await page.locator('.source-issue:not(.witness-variant)').count() > 0, 'L17 uncertain connector not visibly flagged');
   } else {
     const cairo39 = await page.locator('#passages').textContent();
     assert(cairo39.includes('مقدار طبيعة غير قارة'), 'p39 corrected Cairo طبيعة not visible');
