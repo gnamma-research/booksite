@@ -1,6 +1,6 @@
 # Tahdhīb al-Kalām — source and translation status
 
-**Release:** Stage 81 Cairo p.80 restoration and p.124 partial repair (2 November 2026), after the Stage 80 p.39 source repair and Stage 79 logic audit.
+**Release:** Stage 84 interpretative and source-locus verification (2 November 2026), after Stage 83 full-line logic repairs and Stage 81 Cairo p.80/p.124 fixes. The stage count does not imply a new page-level certificate.
 
 **Author:** Saʿd al-Dīn al-Taftāzānī  
 **Controlling print:** Cairo, Maṭbaʿat al-Saʿāda, 1330 AH / 1912, printed kalām pp. 15–127.
@@ -18,7 +18,7 @@
 
 | Printed page | Clause(s) | Unresolved point |
 |---|---|---|
-| 77 | KAL-077.03, KAL-077.10 | Transition and wording/gender in the description of the Necessary essence. |
+| 77 | KAL-077.03 | The opening phrase of the closing sentence before «على كل كلام» remains a printed crux; the unusual «ذات الواجب مخالف» at KAL-077.10 is now directly confirmed in Cairo and corroborated by a later Sanandajī quotation, not a manuscript. |
 | 100 | KAL-100.02 | Attribution of an alleged Sabbath formula in the objection about Mosaic law. |
 | 124 | KAL-124.06 | «وهم راكعون للعطف» restored from Cairo, but the following printed expression about Jewish prayer/humility still requires independent collation. |
 
@@ -31,6 +31,8 @@ Authorial conceptual comparanda, **not variant witnesses**, are in al-Taftāzān
 **Stage80 p. 39 photographic repair:** The Cairo print reads `مقدار طبيعة غير قارة`, `ولامتناع فنائه لما مر مقدار الحركة المستديرة`, and `مقدار أسرعها`. These replace three provisional transcriptions. The full source and reasoning are preserved in [Stage80 Cairo p.39 dossier](STAGE80_CAIRO_P39_SOURCE_CORRECTIONS.md). This corrects the *single printed base*, not the independent-manuscript evidence. The **1,044 clause IDs** are unchanged.
 
 **Stage81 p.80/p.124 repair:** the Cairo print at p.80 continues after «قلنا ممنوع» with «فمنها القدرة لاستناد الحوادث إليه تعالى وفاقا» (restored in KAL-080.11). The p.124 passage now contains «وهم راكعون» and «للعطف», while retaining the following compressed phrase as an explicit crux. See [Stage81 source dossier](STAGE81_CAIRO_P80_AND_P124.md). The 1,044 stable clause records remain unchanged.
+
+**Stage84 independent-voice separation:** the printed «ذات الواجب مخالف» is preserved without gender smoothing; a secondary study quotes al-Sanandajī's reading while the Tahdhīb and Taqrīb projects stay independent. Authorial Sharḥ al-Maqāṣid provides a distinct explanatory layer for p.100’s reported perpetuity argument and p.124’s coordinated/circumstantial meanings of «وهم راكعون». The unresolved-page total remains **three**. See [Stage84 source dossier](STAGE84_KALAM_CRUX_INTERPRETIVE_DOSSIER.md).
 
 ## Independent sources to collate
 
