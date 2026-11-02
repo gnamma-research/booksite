@@ -57,7 +57,12 @@ async function check(kind, viewport) {
     assert(await page.locator('.witness-variant').count() > 0, 'L13 independent printed readings panel missing');
     assert((await page.locator('.witness-variant').first().textContent()).includes('Cairo 1912'), 'variant labels missing');
   } else {
-    assert(await page.locator('.source-issue').count() > 0, 'p39 unresolved textual issue not visible');
+    const cairo39 = await page.locator('#passages').textContent();
+    assert(cairo39.includes('مقدار طبيعة غير قارة'), 'p39 corrected Cairo طبيعة not visible');
+    assert(cairo39.includes('ولامتناع فنائه لما مر'), 'p39 restored printed linker لما مر not visible');
+    assert(await page.locator('.source-issue').count() === 0, 'p39 should now be single-print visually checked');
+    await page.goto(new URL(route + '#page=77', base).href, { waitUntil: 'networkidle' });
+    assert(await page.locator('.source-issue').count() > 0, 'p77 unresolved witness issue not visible');
   }
   const overflow = await page.evaluate(() => ({
     width: document.documentElement.clientWidth, scrollWidth: document.documentElement.scrollWidth
