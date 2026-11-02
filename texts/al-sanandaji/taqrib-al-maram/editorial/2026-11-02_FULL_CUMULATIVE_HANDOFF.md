@@ -801,3 +801,77 @@ The source's long lower-register debates continue to contain most of the uncompl
 ### Next handoff
 
 **Next initial source interval:** printed **II:221–240**, original PDF images **516–535**. In addition, urgently undertake a genuinely complete **Pass 1** that transcribes and translates *every original Arabic clause* of both upper and lower registers, with original author-voice markers and page joins. Then conduct independent second-image reading, witness collation, technical logical/theological review and bilingual publication QA. Do not represent the existing short selections or interpretive page notes as a definitive exhaustive critical translation, and do not merge into the separately translated Tahdhīb matn project until both independent editions are genuinely complete.
+
+
+---
+
+## 26. Stage 17–18 — remainder of the original printed source located and critically divided (2 November 2026)
+
+### A. Source and evidence level
+
+The same user-reuploaded complete **632-image source PDF** was directly processed. Original printed volume II positions **221–335** correspond to physical PDF **516–630**; **115 original page images** were rendered and inspected (individual full-size checks for critical boundaries and contact-sheet review for all remaining leaves). An **original-source facsimile PDF** for II:221–260, one for II:261–314, and one for the distinct II:315–335 final / index / post-index section were saved as separate unchanged scanned source packets. The index page offsets were independently checked against the original photographed page numbers. **No OCR transcription was accepted as source-certified Arabic.**
+
+This phase adds more **bibliographic and interpretive coverage**, NOT complete text translation. Many of these pages have only short source-heading quotation and an English topic-level guide. None of the newly examined lower marginal arguments has received a full Arabic transcription and complete English translation. No new marginal phrase was automatically assigned to Muḥammad Wasīm.
+
+### B. Stage 17 — printed II:221–260 / original PDF 516–555
+
+- **40** numbered source-position section-context guides: `firstpass-II221-II260.js`; IDs `P2.221`–`P2.260`.
+- **12** short directly translated Arabic source excerpts: `source-selected-II221-II260.js`. They include original chapter titles and short selected propositions; they are not whole paragraphs/pages.
+- Source facing combined Arabic/English and argument guide: `editorial/2026-11-02_STAGE17_II221_II260_SOURCE_GUIDES_AND_SELECTED_TRANSLATIONS.md`.
+- Separate original-page and lower-register incomplete-source ledgers: `editorial/2026-11-02_STAGE17_II221_II260_LAYER_LEDGER.csv` and `..._MARGIN_INVENTORY.csv`.
+- **Four key original printed transitions:** Book Six `الباب السادس في السمعيات` at **II:221**, original chapter on Muḥammad's prophethood **II:228**, conditions of prophethood **II:234**, and resurrection `فصل في المعاد` **II:240**. The newly mapped span covers miracles and the Qurʾānic challenge, prophetic protection, bodily resurrection and reconstitution.
+- Precisely **40** positions II:221–260 marked as **preliminary context only** in the canonical 615-page register, leaving all older positions intact.
+
+### C. Stage 18 — printed II:261–335 / original PDF 556–630
+
+The original pages were examined by original-image survey with enlarged source checks at all central divisions. The resulting architecture is not continuous running commentary from II:261 through II:335 without interruption.
+
+- **II:261:** reward as divine favour and punishment as justice.
+- **II:264:** permanence of Paradise and the punishment of unbelievers, with cases of sinning Muslims.
+- **II:270:** forgiveness and divine pardon, intercession and repentance.
+- **II:275:** chapter on repentance, then commanding right and forbidding wrong.
+- **II:282:** nature of `īmān` as `taṣdīq`, its relation to works and legal profession.
+- **II:297:** `islām` and `īmān`, reciprocal inclusion and distinct meanings.
+- **II:301:** the validity of adding a qualification or `istithnāʾ` to the assertion of belief.
+- **II:302–314:** the majority position on the validity of a `muqallid`'s faith, inquiry and assent.
+- **II:315:** printed closing colophon, including date **1319 AH** (source verified).
+- **II:316–317:** printed commendations and poetic material with different named contributors. These are distinct documentary / paratextual registers.
+- **II:318–320:** printed **contents index** for the preceding commentary, ending with the treatment of `īmān al-muqallid`. The index does not list the following imamate material.
+- **II:321–335:** actual source text resumes **after** index under `فصل في الإمامة`. II:327 introduces `فصل الإمام الحق بعد رسول الله`, addressing the caliphal succession. II:335 ends with a closing prayer and separate editorial note. This proves a **post-index source sequence**, not the historical reason for its unusual printing/binding placement. Do not decide whether it is an authorial supplement, later editor's insert or rebinding without an independent witness.
+
+**New Stage 18 files:**
+
+- `firstpass-II261-II280.js`: 20 source-context page locators.
+- `firstpass-II281-II314.js`: 34 further locators.
+- `firstpass-II321-II335.js`: 15 explicitly **post-index** locators with unresolved authorial-placement note.
+- `source-selected-II261-II314.js`: 12 original-source **short bilingual selections**, mostly printed section openings.
+- `source-selected-II321-II335.js`: 5 separate short source selections from post-index imamate pages.
+- `editorial/2026-11-02_STAGE18_II261_II335_FINAL_SOURCE_SURVEY_AND_SELECTED_TRANSLATIONS.md`: original section architecture, every new source-context record and short translations.
+- `editorial/2026-11-02_STAGE18_EXTENDED_CRITICAL_TRANSLATIONS_II261_II335.md`: extended **selected connected original sentences**, close English and critical apparatus on divine grace, permanence, pardon, repentance, `taṣdīq`, Islam/faith, `īmān al-muqallid`, imamate; overlaps with short excerpts do not increase translated-word coverage.
+- `editorial/2026-11-02_STAGE18_II261_II335_SECTION_PARATEXT_LEDGER.csv`, `..._MARGIN_AND_WITNESS_LEDGER.csv`: explicit original-source categories and incomplete lower-register status for **75** numbered positions (including six separate paratext leaves).
+- Canonical `editorial/2026-11-02_COMPLETE_615_PRINTED_PAGE_SOURCE_REGISTER.csv` updated on exactly **75** II:261–335 positions: 54 continuing main-text section-context, six II:315–320 paratext, fifteen post-index imamate. Original I and all earlier II source rows remain intact.
+
+### D. Completion measures with honest labels
+
+| Measure | Stage 18 state |
+|---|---|
+| Numbered printed positions indexed in both volumes | **615/615**, 100% bibliography |
+| Positions with any earlier English guide / selection | Volume I:8–280 **273**; volume II:2–314 **313**; post-index II:321–335 **15** |
+| All positions with *some editorial English context or selected quotation* | **601/615 = 97.72%** page-position presence. **This does NOT mean 97.72% of the source text is translated.** Much material is at best section-level contextual guidance. |
+| Deliberately excluded source positions | I:1–7 opening not yet translated; II:1 part-title; II:315–320 distinct colophon, endorsements, index |
+| Newly source-located II:221–335 positions | 115 original pages, including six paratext leaves |
+| New Stage 17 context guides | 40 |
+| New Stage 18 context guides | 69 (54 ordinary + 15 post-index) |
+| New directly translated short upper selections in Stages 17–18 | 12 + 17 = **29** short selections |
+| Newly fully translated separately authenticated Wasīm note units | **0** (prior II:117 independently attributed selection preserved) |
+| Full original upper and ALL margins translated, second-proofed, collated and critically certified | **0/615**, unchanged |
+
+This is **full physical surveying and near-full page-position orientation**, not an exhaustive translation. Word-by-word translation of the Sanandajī sharḥ and full enumeration/translation of the lower marginal *Ḥāshiyat al-Muḥākamāt* must be treated as unfinished major scholarly work. No Wasīm denominator is yet responsibly calculable.
+
+### E. Publication and workstream boundary
+
+NAMA `index.html` adds the seven Stage 17/18 JS resources, links both major source dossiers and the extended source-critical translation, and updates truthful page-orientation counts. `reader-layered.js` and `source-atlas.js` show **601/615 English-locator presence** (not textual completion), with source-atlas exceptions for the colophon, other paratext, and post-index imamate section. The independently progressing al-Taftāzānī *Tahdhīb al-Kalām* workstream is NOT edited or merged. The source facsimile packets and original complete source scan remain available for genuine full-text Pass 1.
+
+### F. Next substantive task (do not re-do Stage 17/18 source indexing)
+
+Start complete upper and lower original Arabic transcription and clause-by-clause close English of one *continuous substantive stretch*, preferably printed **II:221–228** followed by its marginalia, then II:228–240 and onward. Separately enumerate every marginal note and positively identify Wasīm only where the actual printed note or independently collated witness establishes his authorship. Maintain source passage IDs, corrected Arabic word joins, logical particles, objections/replies, original page joins and second-pass audit. Complete the entirety of original II:1–335 and volume I without conflating original printed endorsements, contents and post-index imamate with normal running `sharḥ`. Only genuine full text + independently checked attribution + witness collation supports a critically complete release.
