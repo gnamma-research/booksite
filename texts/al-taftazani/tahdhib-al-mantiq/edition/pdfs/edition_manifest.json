@@ -2,10 +2,10 @@
   "schema": "gnamma-tahdhib-edition-publication-v1",
   "book": "Tahdhīb al-Manṭiq",
   "source": "data.js",
-  "source_sha256": "933f59d33905a165a74f963a1bd5716d659d4f48a50cf773537bad6195cacfba",
-  "source_bytes": 78836,
+  "source_sha256": "850b44d61f2f5415ff12b387c22297cb108d65cd3637b3a6598c6333fbb8d532",
+  "source_bytes": 80135,
   "source_witness": "Cairo 1912 and compared printed logic text; original pagination recorded per unit",
-  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn. Stage83 Cairo L12–L13 additional printed-line fidelity repairs (indefinite «نسبتين», omitted «معاً», «جميع التقادير للمقدم», repeated governing lām in contradiction). Stage85 direct Cairo L10–L11 p8–9 proofing removes explanatory insertions from Arabic, restores p8 subject condition, source modal definiteness/negation/prepositions and the p8–p9 seam of specific possibility. Traditional modal inference proofing remains outstanding. Stage86 direct Cairo p11 L15 restoration: «في العكس المستوي ... وبين انعكاس الخاصتين», without borrowed «بالافتراض فتأمل»; ninth distinct printed-form comparison recorded. Stage87 corrected four short Cairo L17 expressions, registered tenth printed-form comparison and explicitly flagged the still ambiguous list connector. Stage88 commentary-based L16 argument audit distinguishes intrinsic consequence from a hidden transitivity premise (al-Yazdī p.87), independently tested; no new Cairo wording or manuscript certification. Stage89 aligns L16 English with al-Yazdī's first/second modal qualifications and fourth-figure universal-negative exception; eight commentary headings are formally tested as *nonmodal* schemes only. Cairo Arabic remains unchanged.",
+  "editorial_status": "19 translated logic units; Stage78 corrected a Stage77 conflation of the 1912 Cairo print with commentary-contained edition at L16. Modal inference proofing and manuscript collation remain open. Stage82 directly restored Cairo L12 printed variants (لعلاقة / كل منها / لذات الجزأين), distinguished from the commentary-containing matn. Stage83 Cairo L12–L13 additional printed-line fidelity repairs (indefinite «نسبتين», omitted «معاً», «جميع التقادير للمقدم», repeated governing lām in contradiction). Stage85 direct Cairo L10–L11 p8–9 proofing removes explanatory insertions from Arabic, restores p8 subject condition, source modal definiteness/negation/prepositions and the p8–p9 seam of specific possibility. Traditional modal inference proofing remains outstanding. Stage86 direct Cairo p11 L15 restoration: «في العكس المستوي ... وبين انعكاس الخاصتين», without borrowed «بالافتراض فتأمل»; ninth distinct printed-form comparison recorded. Stage87 corrected four short Cairo L17 expressions, registered tenth printed-form comparison and explicitly flagged the still ambiguous list connector. Stage88 commentary-based L16 argument audit distinguishes intrinsic consequence from a hidden transitivity premise (al-Yazdī p.87), independently tested; no new Cairo wording or manuscript certification. Stage89 aligns L16 English with al-Yazdī's first/second modal qualifications and fourth-figure universal-negative exception; eight commentary headings are formally tested as *nonmodal* schemes only. Cairo Arabic remains unchanged. Stage90 directly verified Cairo L16 p12 «مع ضرورية» and «وكليتهما ... موجبة جزئية إن لم يكن بسلب» against original photo; printed dual, result ordering and agreement repaired without importing commentary.",
   "unit_count": 19,
   "page_or_division_count": 19,
   "navigation_kind": "division",
@@ -34,24 +34,24 @@
     {
       "name": "tahdhib-logic-parallel.pdf",
       "purpose": "bilingual",
-      "sha256": "7ad894556fd912fe144387d23e85d1b4937c1f305958155269418da02b806758",
-      "bytes": 108765,
+      "sha256": "0205a4e9770f11a1e8783d964ebf3320205fbb7bbd44f4638cdccb7da5e73945",
+      "bytes": 109459,
       "a4_pages": 22,
       "href": "pdfs/tahdhib-logic-parallel.pdf"
     },
     {
       "name": "tahdhib-logic-ar-only.pdf",
       "purpose": "arabic",
-      "sha256": "60728a34256ab862ff0b3dea99d1e166346470b4b6ba7493ce701e4f30c71a3a",
-      "bytes": 76036,
+      "sha256": "4795aa293c193392215878158ded7952a4213e97736686ae9d757014c8046cfe",
+      "bytes": 76728,
       "a4_pages": 11,
       "href": "pdfs/tahdhib-logic-ar-only.pdf"
     },
     {
       "name": "tahdhib-logic-en-only.pdf",
       "purpose": "english",
-      "sha256": "1ade097a6643a627bc3b7f81a8ec2c6c7ae3235e6df90dad473d6736b1e51ccf",
-      "bytes": 54629,
+      "sha256": "21132a5337d252fc784c29d3631f99bcb95a711f84045b16a76b60b2783ae646",
+      "bytes": 55302,
       "a4_pages": 12,
       "href": "pdfs/tahdhib-logic-en-only.pdf"
     }
