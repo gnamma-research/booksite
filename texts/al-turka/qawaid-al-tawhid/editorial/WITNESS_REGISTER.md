@@ -12,6 +12,11 @@ This register distinguishes **text consulted**, **printed comparators not collat
 - Semantic sharing of existence, p. 55: https://ablibrary.net/book_content/b/17638/251?lang=ar
 - Opening necessity argument, p. 59: https://ablibrary.net/book_content/b/17638/255?lang=ar
 - Necessity argument ending, p. 60: https://ablibrary.net/book_content/b/17638/256?lang=ar
+- Qualification and absolute reality, pp. 63–64: https://ablibrary.net/book_content/b/17638/259?lang=ar and https://ablibrary.net/book_content/b/17638/260?lang=ar
+- Later Peripatetic objection, p. 67: https://ablibrary.net/book_content/b/17638/263?lang=ar
+- Support of the opponent's graded-existence interpretation, p. 68: https://ablibrary.net/book_content/b/17638/264?lang=ar
+- Extramental identity and mental predication, p. 71: https://ablibrary.net/book_content/b/17638/267?lang=ar
+- Reply from intrinsic vs. extrinsic modality, p. 72: https://ablibrary.net/book_content/b/17638/268?lang=ar
 
 **Caution:** The library transcription embeds older glosses, explanatory notes, and its author's commentary after the quotations. We have not individually verified these transcriptions against images of every printed page. The book's Persian introductory pagination is distinct from the Arabic pagination.
 
