@@ -61,6 +61,12 @@ async function check(kind, viewport) {
     assert(l12.includes('وكل منها عنادية'), 'L12 shorter Cairo classification must be visible');
     assert(!l12.includes('وكل منهما عنادية'), 'commentary-print L12 text must not silently replace Cairo main reading');
     assert(await page.locator('.witness-variant').count() > 0, 'L12 distinct printed reading panel missing');
+    await page.goto(new URL(route + '#page=15', base).href, { waitUntil: 'networkidle' });
+    const l15 = await page.locator('#u-L-15 .arabic').textContent();
+    assert(l15.includes('في العكس المستوي'), 'L15 Cairo complete phrase not visible');
+    assert(l15.includes('وبين انعكاس الخاصتين'), 'L15 Cairo short proof clause not visible');
+    assert(!l15.includes('بالافتراض') && !l15.includes('فتأمل'), 'L15 Cairo matn contaminated by commentary printing');
+    assert(await page.locator('.witness-variant').count() > 0, 'L15 alternate printed source panel missing');
   } else {
     const cairo39 = await page.locator('#passages').textContent();
     assert(cairo39.includes('مقدار طبيعة غير قارة'), 'p39 corrected Cairo طبيعة not visible');
