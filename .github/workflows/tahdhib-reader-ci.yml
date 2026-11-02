@@ -150,5 +150,9 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/reader.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/experience.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/vowels.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/glossary.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/glossary-ui.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/machine-vowels.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/machine-vowels.js
           node tools/tahdhib/reader_qa.mjs
           node tools/tahdhib/experience_qa.mjs
