@@ -47,7 +47,7 @@ jobs:
           assert 'فمنها القدرة لاستناد الحوادث إليه تعالى وفاقا' in ktext['KAL-080.11']
           assert 'و«وهم راكعون» للعطف' in ktext['KAL-124.06']
           assert len(logic['stage78_source_concordance']['unit_printed_pages'])==19
-          assert len(logic.get('witness_comparisons_stage77',[]))>=9
+          assert len(logic.get('witness_comparisons_stage77',[]))>=10
           assert 'والنظريات' in text['L.18']
           assert 'وكل منها عنادية إن كان التنافي لذات الجزأين' in text['L.12']
           assert 'وكل منهما عنادية' not in text['L.12']
@@ -60,6 +60,12 @@ jobs:
           assert 'في العكس المستوي' in text['L.15']
           assert 'وبين انعكاس الخاصتين' in text['L.15']
           assert 'بالافتراض' not in text['L.15']
+          assert 'من المتصلتين' in text['L.17']
+          assert 'وتنعقد فيه الأشكال الأربعة' in text['L.17']
+          assert 'والحقيقية وضع كل' in text['L.17']
+          assert 'وقد يخص باسم قياس الخلف' in text['L.17']
+          assert 'وقد يختص باسم قياس الخلف' not in text['L.17']
+          assert any(z.get('page')==17 for z in logic.get('open_issues',[]))
           assert 'فتأمل' not in text['L.15']
           assert 'وقد بين انعكاس الخاصتين' not in text['L.15']
           assert 'وجود الموضوع محققاً وهي الخارجية' in text['L.10']
