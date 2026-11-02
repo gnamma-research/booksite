@@ -18,24 +18,24 @@
     {
       "name": "tahdhib-kalam-parallel.pdf",
       "purpose": "bilingual",
-      "sha256": "f44a28356812d4b2b99b527fd69967f3bdbf96e28cbfbbe89f097b44e0760fa4",
-      "bytes": 594035,
+      "sha256": "a0619ee439f8b115c5576b87484e8821090d00025235a48600ae54624fcb5822",
+      "bytes": 594040,
       "a4_pages": 170,
       "href": "pdfs/tahdhib-kalam-parallel.pdf"
     },
     {
       "name": "tahdhib-kalam-ar-only.pdf",
       "purpose": "arabic",
-      "sha256": "8950ed62a4f8b707d654c6fda5362aecd5fd0c0a23fd8d00c356ee33687a8dee",
-      "bytes": 324160,
+      "sha256": "89685cb49f353c696695bf744682f88733df33b69ac779a7c3ab64c89391bbe5",
+      "bytes": 324166,
       "a4_pages": 133,
       "href": "pdfs/tahdhib-kalam-ar-only.pdf"
     },
     {
       "name": "tahdhib-kalam-en-only.pdf",
       "purpose": "english",
-      "sha256": "7eaa3d46168eeb04cbccc064dbbdd0ea936da6c74298140e35bcbb84ad1787fa",
-      "bytes": 294160,
+      "sha256": "e331aac35fec03b4eb28b110a07ddebc11cf69a34ac482e5d1479f04e6200bdc",
+      "bytes": 294159,
       "a4_pages": 120,
       "href": "pdfs/tahdhib-kalam-en-only.pdf"
     }
