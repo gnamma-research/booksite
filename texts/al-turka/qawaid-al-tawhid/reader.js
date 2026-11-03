@@ -180,7 +180,8 @@ function sheetMarkup(kind){
  '<a href="editorial/COMMENTARY_TRANSLATION.md">Commentary translation <small>Two verified excerpts at p.274, editorial policy and next sequence</small></a>'+
  '<a href="editorial/CRITICAL_APPARATUS.md">Critical apparatus <small>Reported readings, conjectures and editorial decisions</small></a>'+
  '<a href="editorial/EDITORIAL_STATUS.md">Editorial status <small>Evidence limits and original versus commentary</small></a>'+
- '<a href="editorial/TECHNICAL_GLOSSARY.md">Avicennian–Akbarian glossary <small>Existence, determination, ḥads, discursive thought</small></a>'+
+ '<a href="editorial/TECHNICAL_GLOSSARY.md">Avicennian–Akbarian glossary <small>Existence, determination, ḥads, discursive thought</small></a>'+ 
+ '<a href="editorial/READER_PARITY_AUDIT.md">Reader interface and feature status <small>Implemented features and deliberately absent features</small></a>'+
  '<a href="editorial/MANUSCRIPT_COLLATION_DOSSIER.md">Witness and manuscript dossier</a>'+
  '</div><p>QT-059 retains the surviving text, with a source omission noted. This does not block the working translation.</p></div>';
  case "about":
@@ -278,4 +279,5 @@ window.addEventListener("scroll",()=>{
  });
 },{passive:true});
 render();
+if(deepIndex>=0){requestAnimationFrame(()=>{const destination=state.focus===3?$(units[state.index].id):$("reading");destination?.scrollIntoView({block:"start"});});}
 })();
