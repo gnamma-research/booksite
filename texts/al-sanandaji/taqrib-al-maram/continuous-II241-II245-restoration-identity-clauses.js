@@ -49,30 +49,6 @@
     "layers": {}
   },
   {
-    "id": "TQ24.241.003",
-    "volume": "II",
-    "page": 241,
-    "pdf": 536,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "The philosophical objection",
-    "arabic": "لما كان المعاد الجسماني على بعض الأقوال متوقفا على إعادة المعدوم",
-    "english": "Since bodily resurrection, on some accounts, depends upon the reinstatement of what has ceased to exist ...",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:241, original user-supplied 632-image PDF page 536; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
-  },
-  {
     "id": "TQ24.241.004",
     "volume": "II",
     "page": 241,
@@ -101,30 +77,6 @@
         "citation": "Select original lemma II:241, PDF 536."
       }
     }
-  },
-  {
-    "id": "TQ24.241.005",
-    "volume": "II",
-    "page": 241,
-    "pdf": 536,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "What is under dispute",
-    "arabic": "المعدوم مثل المعدوم",
-    "english": "That which is nonexistent is, as such, nonexistent.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:241, original user-supplied 632-image PDF page 536; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
   },
   {
     "id": "TQ24.241.006",
@@ -307,54 +259,6 @@
     "layers": {}
   },
   {
-    "id": "TQ24.242.013",
-    "volume": "II",
-    "page": 242,
-    "pdf": 537,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "Material and compositional elements of return",
-    "arabic": "إعادة الأجزاء",
-    "english": "Restoration of the constituent parts.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:242, original user-supplied 632-image PDF page 537; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ24.242.014",
-    "volume": "II",
-    "page": 242,
-    "pdf": 537,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "The distinction between an agent and capacity",
-    "arabic": "الفاعل",
-    "english": "The agent / effective cause.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:242, original user-supplied 632-image PDF page 537; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
-  },
-  {
     "id": "TQ24.242.015",
     "volume": "II",
     "page": 242,
@@ -377,156 +281,6 @@
       }
     ],
     "layers": {}
-  },
-  {
-    "id": "TQ24.243.016",
-    "volume": "II",
-    "page": 243,
-    "pdf": 538,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "Capacity of an agent and its recipient",
-    "arabic": "الفاعل والمستعد",
-    "english": "The agent and the recipient possessing a disposition.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:243, original user-supplied 632-image PDF page 538; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ24.243.017",
-    "volume": "II",
-    "page": 243,
-    "pdf": 538,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "Restoration ascribed to God's power",
-    "arabic": "الله تعالى",
-    "english": "God, exalted is He.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:243, original user-supplied 632-image PDF page 538; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ24.243.018",
-    "volume": "II",
-    "page": 243,
-    "pdf": 538,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "Return of matter and parts as previously assembled",
-    "arabic": "إعادة الأجزاء والمواد",
-    "english": "The restoration of constituents and material elements.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:243, original user-supplied 632-image PDF page 538; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ24.243.019",
-    "volume": "II",
-    "page": 243,
-    "pdf": 538,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "Life following separation of bodily constituents",
-    "arabic": "إحياء الأجزاء",
-    "english": "Bringing the constituents to life.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:243, original user-supplied 632-image PDF page 538; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ24.243.020",
-    "volume": "II",
-    "page": 243,
-    "pdf": 538,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "The disputed sameness of resurrected individual",
-    "arabic": "عينه",
-    "english": "The very same one [rather than merely another like it].",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:243, original user-supplied 632-image PDF page 538; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ24.244.021",
-    "volume": "II",
-    "page": 244,
-    "pdf": 539,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "Denial based on the identity of return",
-    "arabic": "ولا إعادة المعدوم لصحة العود",
-    "english": "Nor [is the matter settled by denying] the reinstatement of the nonexistent on the basis of the possibility of a return.",
-    "sourceLayer": "matn",
-    "citation": "Taqrīb al-Marām, printed vol II:244, original user-supplied 632-image PDF page 539; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Selected parenthesized base-text lemma, requiring further second reading of its typography and collation."
-      }
-    ],
-    "layers": {
-      "matn": {
-        "arabic": "ولا إعادة المعدوم لصحة العود",
-        "english": "Nor [is the matter settled by denying] the reinstatement of the nonexistent on the basis of the possibility of a return.",
-        "citation": "Select original lemma II:244, PDF 539."
-      }
-    }
   },
   {
     "id": "TQ24.244.022",
@@ -613,30 +367,6 @@
     }
   },
   {
-    "id": "TQ24.244.025",
-    "volume": "II",
-    "page": 244,
-    "pdf": 539,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "The disputed meaning of a defining individual feature",
-    "arabic": "المشخصات",
-    "english": "Individuating characteristics.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:244, original user-supplied 632-image PDF page 539; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
-  },
-  {
     "id": "TQ24.244.026",
     "volume": "II",
     "page": 244,
@@ -665,30 +395,6 @@
         "citation": "Select original lemma II:244, PDF 539."
       }
     }
-  },
-  {
-    "id": "TQ24.244.027",
-    "volume": "II",
-    "page": 244,
-    "pdf": 539,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "The sufficiency of rational distinction",
-    "arabic": "الإشارة العقلية كافية",
-    "english": "A rational indication or distinction is sufficient.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:244, original user-supplied 632-image PDF page 539; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
   },
   {
     "id": "TQ24.244.028",
@@ -851,29 +557,5 @@
         "citation": "Select original lemma II:245, PDF 540."
       }
     }
-  },
-  {
-    "id": "TQ24.245.034",
-    "volume": "II",
-    "page": 245,
-    "pdf": 540,
-    "category": "selection",
-    "quality": "direct-image-selected-source-clause-firstpass",
-    "title": "Naming the objection",
-    "arabic": "التغاير",
-    "english": "Difference or nonidentity.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām, printed vol II:245, original user-supplied 632-image PDF page 540; direct source inspection 3 Nov 2026.",
-    "notes": [
-      {
-        "type": "Scope",
-        "text": "This is a source-selection only, not a complete paragraph or page. Elided source words, cross-page connections and any longer marginal notes remain untranslated."
-      },
-      {
-        "type": "Speaker",
-        "text": "Running commentary / reported source argument, with source claims not automatically endorsed as established metaphysics."
-      }
-    ],
-    "layers": {}
   }
 ])if(!seen.has(u.id))b.units.push(u);})();
