@@ -920,3 +920,66 @@ An originally unresolved source-lemma reading in Stage 19 (`⟦ومعارضته�
 **Completion warning:** The prior **601/615 printed page-position English-context proxy** (97.72%) is **UNCHANGED**, not increased by overlapping clauses or by independent matn collation. Actual coverage of Arabic words and lower marginal note units is still much smaller. **0 whole printed pages** have been critically certified with every upper clause, all lower notes, independent second reading and print/manuscript variants. The named Wasīm gloss-unit denominator is still unknown. The page-respecting first-pass text now reaches selected source units at **II:234**, with many omitted intervening portions and entire lower notes still requiring substantial work.
 
 **Next substantial original source interval:** II:235–239 (physical PDF images 530–534): continue the distinct positions concerning `ʿiṣma`, scope of prophetic actions before and after the mission, the legal force of transmitted reports and the boundary to the resurrection chapter at II:240. Priority remains *continuous complete upper and lower transcription and close English*, not further broad source-page topic surveys.
+
+
+---
+
+## 28. Stages 23–25 — direct-source correction and resurrection identity, from printed II:235 to II:260 (3 November 2026)
+
+### Source and the crucial correction to the old first-reading map
+
+The user-supplied **632-image** primary PDF was directly inspected for **26 consecutive original numbered printed pages**, II:235–260 = physical PDF **530–555**. Each page was rendered at high resolution and individually checked; a separate unchanged 26-page source facsimile was extracted and pixel-verified against the corresponding original source pages. Original scanned page numbers are authoritative.
+
+**Critical Stage 17 error corrected:** The old broad source map overstated the length of the prophetic-conditions discussion. The original II:235–239 actually moves from reported numbers of prophets and angelic disobedience/protection to **angels versus prophets and human beings**, and **karāmāt of saints**, before the original resurrection chapter opens at II:240. Stages 23–25 revised `firstpass-II221-II260.js` on exactly 20 old source positions (II:235–239 and II:246–260), preserving all unrelated records. These are corrections to **source context**, not new translations of whole pages.
+
+### Stage 23 — printed II:235–245 (source PDF 530–540)
+
+New `continuous-II235-II240-prophets-angels-karamat-maad.js`: **33** direct bilingual short source selections, after second-review removal of 9 ambiguous or overreconstructed tentative snippets. The text covers 124,000 and 313 as reported prophet/messenger numbers, angelic protection, the status of Iblīs, different arguments for the rank of angels and humans, the *karāma* distinction from prophetic miracle, and the actual opening of resurrection at II:240.
+
+New `continuous-II241-II245-restoration-identity-clauses.js`: **21** direct Arabic-English source short selections after removing 13 dubious or generic initial draft items. Core disputed phrases include `يجوز إعادة المعدوم`, `الإمكان الذاتي لا يزول بحسب الأوقات`, `لا يبقى فرق بين المبدأ والمعاد`, and the first/later occurrence distinction `والمعاد واقع ثانيا`. These distinguish restoring the identical annihilated subject from merely reassembling and revivifying surviving material.
+
+New `upper-continuous-II242-restoration-vs-reassembly.js`: **one 38-word continuous upper-register original passage**, with close English and its source reference to the *Maqāṣid* and Qurʾān 36:79. The significantly longer lower-register discussion on that very same page is **not** complete; this **does not qualify as a fully translated page**. Words overlapping the 21 selected fragments are not counted twice.
+
+New `source-marginals-II241-II245.js`: **four** lower-register source records, all with historical individual writer **UNASSIGNED**, not credited to Wasīm:
+- `G.II.241.23.01` is a near-complete bounded *short first note* beginning `(قوله من التجرد)`, explaining that a soul's return from corporeal separation does not make it immaterial in itself for the first time.
+- `G.II.244.23.01` is a selected phrase distinguishing apprehension of a universal from knowledge of the *numerically particular restored individual*.
+- `G.II.245.23.01` and `G.II.245.23.02` are short parts of a longer objection about first and later occurrence, far from a full marginal page.
+
+Full Stage 23 source-facing dossier: `editorial/2026-11-03_STAGE23_II235_II245_CRITICAL_SOURCE_TRANSLATIONS.md`. It includes all 54 short bilingual source units (33+21), the 38-word continuous upper source, first-pass English, and a critical comparison of angelic/human merit, saintly wonders, reinstatement, composition and numerical identity. The original source PDF extraction for II:235–245 remains a facsimile, NOT a translated PDF.
+
+### Stage 25 — printed II:246–260 (source PDF 541–555)
+
+New `continuous-II246-II260-resurrection-objections-and-afterlife.js`: **34** new source-image selected Arabic-English units after a second-review removal of 10 uncertain or mispaginated tentative snippets. The physical page-crossing expression `فإن أكل` (II:248) → `إنسان إنسانا` (II:249) is retained under its distinct original locators rather than fabricated as one page sentence.
+
+A critical sequence in II:248–251 is the **eater/eaten objection** to bodily reconstitution: original bodily constituents `الأجزاء الأصلية` versus surplus or acquired `الأجزاء الفاضلة`, and whether both individuals could claim the same matter in resurrection. This must be treated as an issue of **numerical identity**, not simply proof that God possesses creative power.
+
+The later physical source continues into the created/prepared status of Paradise and the Fire, the distinction between this life's material processes and the hereafter, and at **II:256** an authentic original `فصل` on **grave interrogation and punishment**. II:257–259 discuss the Qurʾānic two deaths and two lives and the possibility of intermediate perception; II:260 moves toward reckoning, the scales and the bridge.
+
+Full Stage 25 source-facing dossier: `editorial/2026-11-03_STAGE25_II246_II260_BODILY_IDENTITY_GRAVE_TRANSLATIONS.md`, with all short source selections, precise page locators and an analysis of the scriptural argument from Pharaoh's punishment before the Hour. **No new small-type marginal gloss from II:246–260 is fully or positively attributed.**
+
+### Physical outputs, source audit and NAMA controls
+
+- Source-only scanned originals for all 26 inspected printed pages combined in the 26-page PDF `Taqrib_Stages23-25_II235-II260_Original_Source.pdf` (physical source pp.530–555), visually and pixel verified against four sample pages of the user-uploaded original. It is NOT a translation.
+- `editorial/2026-11-03_STAGE23_25_SOURCE_WORD_AND_MARGIN_AUDIT.csv`: **93 distinct record rows**: 88 directly translated upper **selected phrases**, 4 lower fragments with **unassigned** historical author, and 1 additional **continuous** upper 38-Arabic-word passage partially overlapping already selected text. All 93 records include source PDF page, original/English and honest incompleteness flags.
+- NAMA `index.html` now loads all five Stage 23–25 JS resources (two Stage23 selection files, one continuous short upper record, one distinct lower-source file, and one Stage25 selection file) and links the two source-facing Markdown dossiers.
+- The existing `reader-layered.js` respects original layer attribution via `sourceLayer` so matn-only quoted lemmas are not labelled as Sanandajī's running prose. The 615-page source atlas retains pagination for all source pages.
+- The original 2012 reproduction is used for these source readings; the independently inspected Cairo 1912 Taftāzānī print from Stage 20 is *only* an independent base-lemma witness and is NOT overwritten or merged into the external Tahdhīb stream.
+
+### Accurate completion counts — crucial distinction
+
+| Counter | After Stage 25 |
+|---|---|
+| Original numbered two-volume pages bibliographically indexed | **615/615**, unchanged |
+| Original numbered positions with *some prior English context or selected source phrase* | **601/615 = 97.72% page-location presence**, unchanged |
+| NEW physical original images directly inspected at high resolution | **26**, II:235–260 |
+| NEW direct short Arabic/English source selection records | **88** (many short, including repeated subject matter) |
+| NEW continuous but still first-pass upper excerpt | **1**, 38 Arabic words at II:242 (overlaps selection records) |
+| NEW individually distinct lower-source fragments, author not verified | **4**, II:241, II:244 and II:245; only the first is a provisionally bounded complete short note |
+| Fully transcribed **ALL** upper and **ALL** margins, independently twice-proofed, attribution verified, critically collated original pages | **0/615**, unchanged |
+| New positively identified Wasīm notes | **0**; the historical II:117 source-matched excerpt remains separate |
+
+The work so far has **located essentially the whole printed corpus but has not translated the whole corpus**, nor does the page-position fraction measure the Arabic words translated. Extensive upper prose and an even larger total of small-type marginal discussion remain outstanding across both volumes. The Wasīm note denominator remains unenumerated, therefore **no responsible Wasīm percentage exists**.
+
+### Continuation objective — do not return to superficial page summaries
+
+Priority after this stage: **full Arabic and close English of every original clause and each separately numbered small-type marginal note** in an uninterrupted source stretch, with precise authorial attribution, source-page joins, independently proofed readings and print/manuscript variants. The next sequential page after newly selected original text is **II:261**, beginning a section on reward as divine grace and punishment as justice; earlier II:235–260 also require a true full upper-and-margins pass. Preserve the separate al-Taftāzānī `Tahdhīb` workstream and keep the post-index II:321–335 imamate continuation flagged as source placement still requiring collation.
