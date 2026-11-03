@@ -20,24 +20,25 @@
         "metaphysics",
         "Avicennian–Akbarian encounter"
       ],
-      "status": "source-critical-working-edition-61-loci-lacunose",
+      "status": "bilingual-reading-edition-61-lemmas-qt059-source-note",
       "language": [
         "ar-selected",
         "en-selected"
       ],
       "url": "texts/al-turka/qawaid-al-tawhid/",
-      "note": "61 source-located bilingual original Qawāʿid al-Tawḥīd quotations from the ancestor's matn (Āshtiyānī Arabic printed pp.48–270), including the explicit original conclusion. Includes source-critical apparatus classifying 69 recorded textual issues, with 14 editorial conjectures and the substantial reported lacuna at QT-059. Grandson's Tamhīd commentary is kept separate. This is a provisional, non-diplomatic working edition: independent manuscript/photographic witness collation and recovery of the lost passage are outstanding. Lumbard compared for selected opening lemmata only.",
+      "note": "61 source-located Arabic–English quotations of the ancestor's Qawāʿid al-Tawḥīd from the currently available Āshtiyānī electronic transcription (printed pp.48–270), including the treatise's closing passage. QT-059 retains all its surviving text; an apparent omission reported in printed editorial notes is recorded but reconstruction is deferred and not a blocker for this reading edition. A source-critical apparatus distinguishes 69 recorded issues including conjectures. Commentary is kept separate; independent manuscript and print-image collation have not been carried out, so this is not a definitive manuscript-critical edition.",
       "comparative_translation_notes_url": "texts/al-turka/qawaid-al-tawhid/editorial/LUMBARD_COMPARISON.md",
       "matn_units": 61,
       "edition_audit_url": "texts/al-turka/qawaid-al-tawhid/editorial/EDITORIAL_STATUS.md",
       "glossary_url": "texts/al-turka/qawaid-al-tawhid/editorial/TECHNICAL_GLOSSARY.md",
       "critical_apparatus_url": "texts/al-turka/qawaid-al-tawhid/editorial/CRITICAL_APPARATUS.md",
-      "source_critical_status": "provisional-lacunose-zero-manuscripts-collated",
+      "source_critical_status": "extant-transcription-translated; QT059 omission noted-and-deferred; manuscript-critical-validation-pending",
       "manuscript_dossier_url": "texts/al-turka/qawaid-al-tawhid/editorial/MANUSCRIPT_COLLATION_DOSSIER.md",
       "collation_register_url": "texts/al-turka/qawaid-al-tawhid/editorial/COLLATION_REGISTER.json",
       "catalogued_original_manuscripts": 3,
       "independently_inspected_manuscript_images": 0,
-      "separate_original_matn_publication": "Majid Hadizadeh edition, Nusus wa-Rasail IV:37-72 (not yet inspected)"
+      "separate_original_matn_publication": "Majid Hadizadeh edition, Nusus wa-Rasail IV:37-72 (not yet inspected)",
+      "qt059_disposition": "source-note-only-no-reconstruction-current-edition"
     },
     {
       "id": "ghazali-mustasfa",
