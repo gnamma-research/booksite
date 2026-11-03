@@ -83,6 +83,49 @@ function createTools(){
    a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
   });
   exportList.prepend(draft);
+
+  // Verify the separate AUTOMATIC Arabic PDF before showing a live link.
+  // The static six canonical working PDFs remain independent/unaltered.
+  const pdfStatus=el('p','gn-machine-pdf-status',
+    machineAvailable?'Machine-vowelled Arabic PDF: checking published edition…':'Machine-vowelled Arabic PDF unavailable until full overlay is verified.');
+  exportList.prepend(pdfStatus);
+  let pdfChecked=false;
+  $('#export')?.addEventListener('click',async()=>{
+    if(!machineAvailable||pdfChecked)return;
+    pdfChecked=true;
+    try{
+      if(!window.crypto?.subtle)throw Error('Secure source verification unavailable');
+      const [res,source,sourceVowels]=await Promise.all([
+        fetch('vocalization/edition_manifest.json',{cache:'no-store'}),
+        fetch('data.js',{cache:'no-store'}),
+        fetch('machine-vowels.js',{cache:'no-store'})
+      ]);
+      if(!res.ok||!source.ok||!sourceVowels.ok)throw Error('Published file/manifest not found');
+      const manifest=await res.json();
+      async function hash(r){
+        const digest=await window.crypto.subtle.digest('SHA-256',await r.arrayBuffer());
+        return Array.from(new Uint8Array(digest)).map(v=>v.toString(16).padStart(2,'0')).join('');
+      }
+      const [sourceSha,vowelSha]=await Promise.all([hash(source),hash(sourceVowels)]);
+      if(manifest.schema!=='gnamma-tahdhib-machine-vowels-pdf-v1'||
+          manifest.unit_count!==corpus.units.length||
+          manifest.source_sha256!==sourceSha||
+          manifest.machine_vowels_sha256!==vowelSha||
+          manifest.original_arabic_unmodified!==true||
+          !/^tahdhib-(kalam|logic)-arabic-machine-unreviewed\.pdf$/.test(manifest.pdf_file||''))
+        throw Error('PDF provenance differs from this source revision');
+      const url='vocalization/'+manifest.pdf_file;
+      const head=await fetch(url,{method:'HEAD',cache:'no-store'});
+      if(!head.ok)throw Error('PDF file is not yet online');
+      const link=el('a','gn-machine-pdf','Arabic with machine vowels · '+manifest.pdf_pages+' pp. PDF (UNREVIEWED)');
+      link.href=url;link.target='_blank';link.rel='noopener noreferrer';
+      link.title='Generated vowel marks are not proofread; source and overlay SHA-256 verified. PDF SHA-256: '+manifest.pdf_sha256;
+      pdfStatus.replaceWith(link);
+    }catch(error){
+      pdfStatus.textContent='Machine-vowelled PDF not yet verified for this source revision: '+error.message;
+      pdfChecked=false;
+    }
+  });
  }
 
  const original=$('#passages'),flow=el('div','gn-flow-reading');flow.id='flow-passages';flow.hidden=true;original.insertAdjacentElement('afterend',flow);
