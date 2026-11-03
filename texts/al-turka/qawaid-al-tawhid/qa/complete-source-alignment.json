@@ -1,0 +1,722 @@
+{
+  "date": "2026-11-04",
+  "newMainSections": 45,
+  "totalMainSections": 64,
+  "sourcePageSpan": [
+    95,
+    270
+  ],
+  "newCommentaryPageSpan": [
+    95,
+    269
+  ],
+  "wholeAvailableSourceSequenceTranslated": true,
+  "independentlyCollatedManuscripts": 0,
+  "unchangedMatnSha256": "5e8b19062486059043909e479a856d23e98a74f30313fe950a017ef9e8b236bb",
+  "excludedUnmarkedTails": [
+    {
+      "page": 205,
+      "reason": "untagged later editorial tail headed هامش",
+      "excludedTailSha256": "6563dbfe374974df7d7a491153e0a771f52ea355927571ee6bbf0e7bc025218c"
+    },
+    {
+      "page": 208,
+      "reason": "untagged later editorial tail headed هامش",
+      "excludedTailSha256": "955a55cfeb0aef4499c6a04fb75a48c66dd46a4928b0462c2c4cc653f6e88655"
+    },
+    {
+      "page": 219,
+      "reason": "untagged later editorial tail headed هامش",
+      "excludedTailSha256": "4568a5ba8e2da4eda38ae6406cce861b0cdc5d510ca37aff16ba999a3263a7be"
+    },
+    {
+      "page": 240,
+      "reason": "untagged later editorial tail headed هامش",
+      "excludedTailSha256": "4f9c1dd3dbc4cf0333d7868cd131ad36f5be044c6001453d24d9fc758d461e98"
+    }
+  ],
+  "repairedDraftJsonWithoutTextChange": [
+    "main-commentary-026-027.en.json",
+    "main-commentary-028.en.json"
+  ],
+  "rows": [
+    {
+      "id": "SH-020",
+      "matnId": "QT-020",
+      "pages": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "sourceTextSha256": "6565c065da74d5de3d6444a7d3adcaa02f47db718409a57fc62e95227b5dba52",
+      "englishSha256": "6972a8bbbd11654b155c4bcdfb0a9cb3988da64b10d77bcfa76327d23751140d",
+      "arabicTokensIncludingApparatus": 663,
+      "englishWords": 693,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-021",
+      "matnId": "QT-021",
+      "pages": [
+        98,
+        99
+      ],
+      "sourceTextSha256": "9f6459fee6b60518def07cfb4e71baef683a7266e49644e0089250dc4e429972",
+      "englishSha256": "c6412c763cdb55f5773269aa296b4f28055e23b9441e3b11991e1260d8c3dc02",
+      "arabicTokensIncludingApparatus": 380,
+      "englishWords": 398,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-022",
+      "matnId": "QT-022",
+      "pages": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "sourceTextSha256": "a3dd9fec15470a9aa9e6413a8a2a37f52a1cfbd12efff4e0c26d71dd1b154457",
+      "englishSha256": "5b92936a3f1b312c5895993fd57beec2bed43df0b1f3272f008c1036718ab6a6",
+      "arabicTokensIncludingApparatus": 1398,
+      "englishWords": 1386,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-023",
+      "matnId": "QT-023",
+      "pages": [
+        106,
+        107,
+        108,
+        109
+      ],
+      "sourceTextSha256": "ee8084f31ea17d447b5382d6db167b61e316913c5c59769f4f0d4475a7dd63b0",
+      "englishSha256": "660206f2d6a4438d780fe8ac3de04a291479cbb38012f84f744f3a0f9a86e5d5",
+      "arabicTokensIncludingApparatus": 656,
+      "englishWords": 696,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-024",
+      "matnId": "QT-024",
+      "pages": [
+        109,
+        110,
+        111
+      ],
+      "sourceTextSha256": "82ca347c6df01db3e5c49a8b197922390752cf5aab16313b9d127a101dc3415c",
+      "englishSha256": "9f0b12c5312616a889318b02e7ffe473011a90d1a77928c13ff09134a4f71fc0",
+      "arabicTokensIncludingApparatus": 703,
+      "englishWords": 663,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-025",
+      "matnId": "QT-025",
+      "pages": [
+        112,
+        113,
+        114
+      ],
+      "sourceTextSha256": "fcdb2cc9673abb9d7aca1296f0cff3ade99b922be71fb5e4cf6ddff8569d112a",
+      "englishSha256": "4caa581d26896c20a194b7d8f6c90fcd8b20b9e8906b3fba6ae53384e36b8479",
+      "arabicTokensIncludingApparatus": 659,
+      "englishWords": 651,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-026",
+      "matnId": "QT-026",
+      "pages": [
+        114,
+        115,
+        116,
+        117
+      ],
+      "sourceTextSha256": "76930e7ed722350eaaf78d48de08c3f561c225173c469b44f2850a8c05cfa370",
+      "englishSha256": "d3986805b381181409b88414561de3b08051b232352cb955e2ff7063e354e301",
+      "arabicTokensIncludingApparatus": 602,
+      "englishWords": 617,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-027",
+      "matnId": "QT-027",
+      "pages": [
+        118,
+        119,
+        120,
+        121
+      ],
+      "sourceTextSha256": "07c5abfbde4d29bd87d33bf8a2c9a17fae2f7889b287779eb2dc608b5b8dadea",
+      "englishSha256": "cdac59ccd0e6bd2fa0ba291d8221478c8b44727fbc7433d2dcc9f57ebfc32140",
+      "arabicTokensIncludingApparatus": 875,
+      "englishWords": 860,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-028",
+      "matnId": "QT-028",
+      "pages": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "sourceTextSha256": "0f49b8719790ddc663f5aaf15b7f3deb1c52fe3473bffcfcfa6a142e894d59ab",
+      "englishSha256": "bb4dc59676c0008363768035551bcf47a17405796ffbc29494faf4fd4691f04f",
+      "arabicTokensIncludingApparatus": 2057,
+      "englishWords": 1972,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-029",
+      "matnId": "QT-029",
+      "pages": [
+        131,
+        132
+      ],
+      "sourceTextSha256": "c39c501abe5f18b77b05e099b75bcfd4a1f22ce38db3c0b34d41cde5f4cc9af2",
+      "englishSha256": "24a9a52ada91a4991a58c3ee4c66c3af24a4f40d3a888cba7ecd77b18b3809c9",
+      "arabicTokensIncludingApparatus": 484,
+      "englishWords": 452,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-030",
+      "matnId": "QT-030",
+      "pages": [
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "sourceTextSha256": "7ee591212fd003200cd8a8f0a17292f53720fc9b07006fa62290497bdfb2ce8e",
+      "englishSha256": "b9098b7004cc5d5631d242996ef5abc631c19f54ff030bc597cf370c80bd9f20",
+      "arabicTokensIncludingApparatus": 1056,
+      "englishWords": 995,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-031",
+      "matnId": "QT-031",
+      "pages": [
+        138,
+        139,
+        140,
+        141
+      ],
+      "sourceTextSha256": "b941a20724da95a6ff6d7167e4e442f19e46d2d80513d1c3f4ddb5d27a194d76",
+      "englishSha256": "a8e997450f7dd2528de5bce436907e3cf25aec2892c440223613492491cc3f7a",
+      "arabicTokensIncludingApparatus": 642,
+      "englishWords": 602,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-032",
+      "matnId": "QT-032",
+      "pages": [
+        141,
+        142,
+        143
+      ],
+      "sourceTextSha256": "b233ecc0cdb6febdd1767e4ac9735af750a2682f4712f0973c9ca47bdb63e9e6",
+      "englishSha256": "b643dacba56741b72b78580508005c099c623d426364563b7a06a838b7476a87",
+      "arabicTokensIncludingApparatus": 528,
+      "englishWords": 568,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-033",
+      "matnId": "QT-033",
+      "pages": [
+        144,
+        145,
+        146,
+        147,
+        148
+      ],
+      "sourceTextSha256": "8702a282c36b0bf062816ba87e962fb22ac08216575e7d3282690b1c572fdc83",
+      "englishSha256": "18b0416f61e5621d8d3a83f61767055fb25e0d694a88b7ef770c45941088d44a",
+      "arabicTokensIncludingApparatus": 1288,
+      "englishWords": 1284,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-034",
+      "matnId": "QT-034",
+      "pages": [
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "sourceTextSha256": "85593363f25b436a24d7e4396d532d470577cebc4d3854bdee51d5d2b87412fa",
+      "englishSha256": "0bffe29567b0264252b85c917f7d24fe49d04a47d6c221f15595978306720455",
+      "arabicTokensIncludingApparatus": 1260,
+      "englishWords": 1048,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-035",
+      "matnId": "QT-035",
+      "pages": [
+        154,
+        155,
+        156,
+        157,
+        158
+      ],
+      "sourceTextSha256": "9576fc3e64fc4b4dede7308c7ce9a15d456da2173c7195b7cabab9eaf5cea976",
+      "englishSha256": "087f8a00bf45fadd82c07a21aa4594bf680c930309308da53e354cb79bdef7f7",
+      "arabicTokensIncludingApparatus": 967,
+      "englishWords": 902,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-035-B",
+      "matnId": "QT-035",
+      "pages": [
+        158,
+        159,
+        160
+      ],
+      "sourceTextSha256": "0ab53d83bf728a37d834b4fb6e5c628883c5672d4f168f786df2d3cc38181048",
+      "englishSha256": "da0e965188c1c417b3cae2ca20217a94158428dc8f124989d7c648b13130e0c1",
+      "arabicTokensIncludingApparatus": 646,
+      "englishWords": 622,
+      "additionalMatnQuotation": true
+    },
+    {
+      "id": "SH-036",
+      "matnId": "QT-036",
+      "pages": [
+        161,
+        162,
+        163
+      ],
+      "sourceTextSha256": "44f2de434f7cf99e5e803744c4d0f4e59a1a48063652c6eb54bb2ed3de0bf136",
+      "englishSha256": "364cdf2938ec80ce7d7445f9f53c4d6c3fc42599e613278d55e76896a090687e",
+      "arabicTokensIncludingApparatus": 668,
+      "englishWords": 570,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-036-B",
+      "matnId": "QT-036",
+      "pages": [
+        163,
+        164
+      ],
+      "sourceTextSha256": "44a91f5163fa2e55c8a64950f6504a9815f3520e8200b4442f120e198b4ffff2",
+      "englishSha256": "d070cf8ae58e6057f60a2516d7c2fa25ef2eb22fba7cf8b18a401ba0fedd5c9c",
+      "arabicTokensIncludingApparatus": 238,
+      "englishWords": 226,
+      "additionalMatnQuotation": true
+    },
+    {
+      "id": "SH-037",
+      "matnId": "QT-037",
+      "pages": [
+        164,
+        165,
+        166,
+        167
+      ],
+      "sourceTextSha256": "d313444e9a512cb8677fe4c4d9b0543b428781f88c87dcef27d3a986e55f72d8",
+      "englishSha256": "18e0bd34c3e703e5b5385ccfd639bfe60cf861bb92a941a62974ca9cda5ebe15",
+      "arabicTokensIncludingApparatus": 745,
+      "englishWords": 740,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-038",
+      "matnId": "QT-038",
+      "pages": [
+        167,
+        168,
+        169,
+        170,
+        171,
+        172
+      ],
+      "sourceTextSha256": "77871fc831fcbb06b267fdce97849e0df34dad34985172e2ebc028242b7532f8",
+      "englishSha256": "e059a25d2641829fcc5e709aacf325e73cff2ace7481bc790d78b5246629a078",
+      "arabicTokensIncludingApparatus": 980,
+      "englishWords": 929,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-039",
+      "matnId": "QT-039",
+      "pages": [
+        173,
+        174,
+        175,
+        176,
+        177
+      ],
+      "sourceTextSha256": "fa1873a7ab3220049bada02539310e375ce7a5863677c1f06707bcd6707e0fa5",
+      "englishSha256": "2100855db926e78eaf2ab743278e65357ffb7a2a5ad2fe589b48100cba932947",
+      "arabicTokensIncludingApparatus": 1377,
+      "englishWords": 1327,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-039-B",
+      "matnId": "QT-039",
+      "pages": [
+        178,
+        179,
+        180
+      ],
+      "sourceTextSha256": "966d94a7ab11393380bad0d1c0df658e168de3420941a04766c90a64c17caa0f",
+      "englishSha256": "5d1e19de67cbfc9824999ca273b9a6dd1d38b9d7c9382b89ddd5edfc8e0b05c8",
+      "arabicTokensIncludingApparatus": 525,
+      "englishWords": 482,
+      "additionalMatnQuotation": true
+    },
+    {
+      "id": "SH-040",
+      "matnId": "QT-040",
+      "pages": [
+        180,
+        181,
+        182,
+        183,
+        184
+      ],
+      "sourceTextSha256": "c1303d00ece3fa131e08723fb375f3dbf96fccedee93968b2f0d30dccba534d2",
+      "englishSha256": "8da1f5c42612b2215bff7ebc428f19e1dda6d94fcdbee2d8aa54db5a081d2d17",
+      "arabicTokensIncludingApparatus": 659,
+      "englishWords": 644,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-040-B",
+      "matnId": "QT-040",
+      "pages": [
+        184,
+        185
+      ],
+      "sourceTextSha256": "def3a5339ed3752dbd1559593da43d1fc884f00be1311c1ade10563770603da7",
+      "englishSha256": "5a338d224538f8bc983133e47f3a352695afaeb8b2e380db225efc3ff3f95532",
+      "arabicTokensIncludingApparatus": 367,
+      "englishWords": 350,
+      "additionalMatnQuotation": true
+    },
+    {
+      "id": "SH-041",
+      "matnId": "QT-041",
+      "pages": [
+        186,
+        187,
+        188,
+        189
+      ],
+      "sourceTextSha256": "ccc2606c0e7cdfa9b1e437218ad75e2c0fc313b90badc52df07aa4779e195e1f",
+      "englishSha256": "f6ffc99c9c738b7dbde047f1ea8b7f9ab34b1e9f80675674093e43e4e05bcf95",
+      "arabicTokensIncludingApparatus": 908,
+      "englishWords": 806,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-042",
+      "matnId": "QT-042",
+      "pages": [
+        190,
+        191,
+        192,
+        193
+      ],
+      "sourceTextSha256": "a4cbfa9ec848d743a9f9db607ed2233330e09da285926feaf0f2a215edbba9c3",
+      "englishSha256": "2d3a9632c6b1ac594b0e3d6bc863c8e77282c7d73c1207fce7117d11aff9fae7",
+      "arabicTokensIncludingApparatus": 384,
+      "englishWords": 373,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-043",
+      "matnId": "QT-043",
+      "pages": [
+        195,
+        196,
+        197
+      ],
+      "sourceTextSha256": "72cc9abd2140f17aa45a7d750fd7c123a6936f596b040087f20886844adc5192",
+      "englishSha256": "034f8ee90d306f5a006fdccda4b245c1cc82bf273bc6770eb90fb5cc25b0667a",
+      "arabicTokensIncludingApparatus": 661,
+      "englishWords": 540,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-044",
+      "matnId": "QT-044",
+      "pages": [
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "sourceTextSha256": "52a6a285855e1c9f615ef2e7d32ee541fb0df782f45a7fe4345ad800fb867c39",
+      "englishSha256": "8a189f32505113a686fba26a246f97a2d33cb83718e512cdee82a2a2ccf0ccfa",
+      "arabicTokensIncludingApparatus": 407,
+      "englishWords": 412,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-045",
+      "matnId": "QT-045",
+      "pages": [
+        203,
+        204,
+        205,
+        206
+      ],
+      "sourceTextSha256": "b6475f0a20e8a59b7bd35d80514e383fe7894e6d1b30784764e960b708d83258",
+      "englishSha256": "d57ce3407815f54704cd942125dd170e94d5f3acdf800579a3c513d62565f80d",
+      "arabicTokensIncludingApparatus": 462,
+      "englishWords": 378,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-046",
+      "matnId": "QT-046",
+      "pages": [
+        207,
+        208,
+        209,
+        210,
+        211,
+        212
+      ],
+      "sourceTextSha256": "a188d092c9056bbaa9688296fd97b07c9c477858be6adaed74f958ae32fe1abd",
+      "englishSha256": "fead86ab2567c99a291f2a18a15d20ca50b30279b7b9f7634d32a6dc1732368f",
+      "arabicTokensIncludingApparatus": 592,
+      "englishWords": 473,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-047",
+      "matnId": "QT-047",
+      "pages": [
+        213,
+        214,
+        215
+      ],
+      "sourceTextSha256": "7f3ff9b822dcaf3c246267ace7daf455158ecfdcb8cfdf0dad2b6db9cfafd3f7",
+      "englishSha256": "88dc66e6ccf561fc97d43b563ba60c681a0bb94791837332efa200dd67cc8e2b",
+      "arabicTokensIncludingApparatus": 567,
+      "englishWords": 500,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-048",
+      "matnId": "QT-048",
+      "pages": [
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224
+      ],
+      "sourceTextSha256": "25227c642420dec9850bcabd971407bfe604c9f83850fbeb44c300d20a86dd4c",
+      "englishSha256": "5fe515db47294baebf4fb2e570f658d5e1990ba7b4cba0bfefcc57c883bfc4b6",
+      "arabicTokensIncludingApparatus": 1115,
+      "englishWords": 994,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-049",
+      "matnId": "QT-049",
+      "pages": [
+        225,
+        226,
+        227,
+        228
+      ],
+      "sourceTextSha256": "71f01b36fbc190565c87e49b18acb7a32936aef9feaf53c4321278adaf243ea6",
+      "englishSha256": "8f036c0c89cbd687e3d0dd32eac09f38abd6da33b32ce0e9750888659a08fa52",
+      "arabicTokensIncludingApparatus": 750,
+      "englishWords": 584,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-050",
+      "matnId": "QT-050",
+      "pages": [
+        230,
+        231,
+        232,
+        233,
+        234
+      ],
+      "sourceTextSha256": "d962bc8b23ada9998a88a123cb883937bbb12c488df2507dd45367c0f9df4b8b",
+      "englishSha256": "929c1f56a6b9915c99a36e48db7e0152df39f0b60c03609a7595213563ef3ad0",
+      "arabicTokensIncludingApparatus": 822,
+      "englishWords": 665,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-051",
+      "matnId": "QT-051",
+      "pages": [
+        234,
+        235,
+        236,
+        237
+      ],
+      "sourceTextSha256": "f1bbe02fea479a43959a6d1c12de74970177cada2e08e7b582b163c422750a76",
+      "englishSha256": "b794913a06348378405551f53deca76f7ab22c38207bf5c2a4e2821767da576e",
+      "arabicTokensIncludingApparatus": 738,
+      "englishWords": 622,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-052",
+      "matnId": "QT-052",
+      "pages": [
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243
+      ],
+      "sourceTextSha256": "69fc8c9111a5d33cb99d043b6ba9e4ec51e78c460ed2dddc85e7f17a2b1e838d",
+      "englishSha256": "3e047761abfdedf754d1192d49a97688366c5223a3826a240a27be357296feed",
+      "arabicTokensIncludingApparatus": 390,
+      "englishWords": 357,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-053",
+      "matnId": "QT-053",
+      "pages": [
+        244,
+        245,
+        246,
+        247
+      ],
+      "sourceTextSha256": "639fd26642645f45574c27147de1638bfb662e31bb5ca45a02756bd2f06a5408",
+      "englishSha256": "6230609d741b81413aa1ebf5b56ea5f08737cd818dd18df09d1e5f829f04dfba",
+      "arabicTokensIncludingApparatus": 1191,
+      "englishWords": 943,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-054",
+      "matnId": "QT-054",
+      "pages": [
+        248,
+        249
+      ],
+      "sourceTextSha256": "c26d414b9723d20569dc9d8ce76f1116384674b7c00c9390f53342c2c58c5301",
+      "englishSha256": "e90462e0e4ae60339c05ce1e736540e3b087b50fae1564b94c17df78b2675ec0",
+      "arabicTokensIncludingApparatus": 380,
+      "englishWords": 331,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-055",
+      "matnId": "QT-055",
+      "pages": [
+        250,
+        251,
+        252
+      ],
+      "sourceTextSha256": "c09797bbbc4de50692cb6f42aa3a3e93c93814aeea7c2fb3348fbb7e7e595032",
+      "englishSha256": "764b52527828742ece48615919486576e1f415dc969baf9e7f4ca5297c5dc486",
+      "arabicTokensIncludingApparatus": 538,
+      "englishWords": 451,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-056",
+      "matnId": "QT-056",
+      "pages": [
+        255,
+        256,
+        257
+      ],
+      "sourceTextSha256": "cec90bd177345a2f3167e43fe4d97a915c17ef4aee13f2a7d2b222d07fc6649b",
+      "englishSha256": "973a0bc9610217f8219a76b6b3b748dee9781b79ce1b987342cb36af446d76eb",
+      "arabicTokensIncludingApparatus": 508,
+      "englishWords": 409,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-057",
+      "matnId": "QT-057",
+      "pages": [
+        258,
+        259,
+        260
+      ],
+      "sourceTextSha256": "76d322b16b6c3bd1c717e07b37ad2023a37f533b9be2c9a049c6fee5b8cbb10f",
+      "englishSha256": "8d2b86984af0f2bec46de1d4e94ffe01a2fffa223cedb4a28d001c49b5c28c92",
+      "arabicTokensIncludingApparatus": 560,
+      "englishWords": 475,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-058",
+      "matnId": "QT-058",
+      "pages": [
+        260,
+        261,
+        262
+      ],
+      "sourceTextSha256": "2c5c22ccbbcd114b0021f90106e518ce4cc6d3e9dfaa52e2d376b99f5467cbf1",
+      "englishSha256": "e5cc666824ac97050aaa077965d497b1c56618ce9af150e86cf709f78543e5f7",
+      "arabicTokensIncludingApparatus": 701,
+      "englishWords": 529,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-059",
+      "matnId": "QT-059",
+      "pages": [
+        264,
+        265,
+        266
+      ],
+      "sourceTextSha256": "464bf934569d6737fe17c3e3b47b906da94ed26c212e203e0a0efd0840176896",
+      "englishSha256": "d000679cfffcad49286b8e96f41a4bf62058044326d28a17149c161ab5537057",
+      "arabicTokensIncludingApparatus": 572,
+      "englishWords": 504,
+      "additionalMatnQuotation": false
+    },
+    {
+      "id": "SH-060",
+      "matnId": "QT-060",
+      "pages": [
+        267,
+        268,
+        269
+      ],
+      "sourceTextSha256": "af0d3ff0223562aefe8d036c5a347e2cbe9192b480ae40c984f54125a082ac60",
+      "englishSha256": "f3c9abc1bfaebf584c1d5bbcc8a225b342f3d59506f7b370ab10ccf298215384",
+      "arabicTokensIncludingApparatus": 545,
+      "englishWords": 454,
+      "additionalMatnQuotation": false
+    }
+  ],
+  "newEnglishWords": 30477
+}

@@ -39,3 +39,6 @@ body[data-focus="3"] .section-meta{font-size:9px}
 
 /* Keep paragraph divisions in full-length commentary translations. */
 .text-pair .en,.text-pair .ar{white-space:pre-line}
+
+/* Attribution for previously unnumbered ancestral bridges. */
+.source-bridge{margin:24px 0;padding:18px;border:1px solid var(--line);border-radius:10px;background:var(--wash)}.source-bridge .part-name{font:600 12px ui-sans-serif,system-ui;color:var(--accent);margin:0 0 14px}.source-bridge .text-pair .ar{font-size:calc(21px * var(--scale))}.source-bridge .text-pair .en{font-size:calc(16px * var(--scale))}

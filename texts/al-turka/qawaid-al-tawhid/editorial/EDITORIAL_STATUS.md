@@ -1,3 +1,7 @@
+## Current release — complete available commentary (4 November 2026)
+
+110 bilingual commentary units now cover the consulted authorial introduction, every main explanation, four connecting sections and the conclusion. QT-059’s lost ancestor wording remains deferred, not reconstructed. [Current full status](COMMENTARY_TRANSLATION.md). Earlier stages below are historical.
+
 ## Current release — 65 commentary units (3 November 2026)
 
 The authorial introduction (40 units), main explanations QT001–019 (19 units, A pp.48–95), and concluding discussion (6 units) are translated. QT020–060 remains pending. [Current source and translation register](COMMENTARY_TRANSLATION.md). Earlier stages below are historical and do not describe current coverage.

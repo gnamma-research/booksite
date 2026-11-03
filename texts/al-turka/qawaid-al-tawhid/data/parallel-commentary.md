@@ -1,12 +1,12 @@
-# Tamhīd al-Qawāʿid — Arabic–English commentary
+# Tamhīd al-Qawāʿid — complete available Arabic–English working translation
 
-**Ṣāʾin al-Dīn ʿAlī Ibn Turka**
+**Ṣāʾin al-Dīn Ibn Turka**
 
-Working translation · 3 November 2026
+4 November 2026
 
-**Scope:** 40 authorial introductory sections; 19 complete main explanations on QT-001–QT-019 (A pp.48–95); six concluding sections (A pp.270–274). Commentary QT-020–QT-060 remains untranslated. The ancestor’s 61-unit matn is separate.
+40 introductory units, 64 main commentary units (including four connecting explanations), and six concluding units. All authorial commentary in the consulted sources is translated. This is a source-based draft, not a manuscript-established critical edition. The lost ancestral material reported at QT-059 is not reconstructed.
 
-The introduction uses edition N; the main and closing commentary use edition A. Their page numbers must not be conflated. Lumbard’s selections are a checked comparator, not the English copy-text. The translation is based on medieval Arabic, not a reproduction of a modern translation. Independent manuscript collation and specialist review remain outstanding.
+The introduction follows edition N; the main commentary follows edition A, pp.48–274. Joseph E. B. Lumbard is a checked comparator for his overlapping selections, not the English copy-text.
 
 ## Contents
 
@@ -69,6 +69,51 @@ The introduction uses edition N; the main and closing commentary use edition A. 
 - SH-017 — Determination by opposition versus determination by all-comprehensiveness
 - SH-018 — Knowing the Necessary through itself and under an aspect
 - SH-019 — Relation to another need not be opposition to another
+- SH-020 — Does the objection to a determinate Necessary also defeat unrestricted existence?
+- SH-021 — Why necessary predicates need not restrict unrestricted existence
+- SH-022 — Why answer a flawed objection? Intuition, instruction, and the analogy of light
+- SH-023 — Four interpretations of a particular existent and the proper subject of possibility
+- SH-024 — Mental and external being: one reality, different considerations
+- SH-025 — Can a wholly unrelated First Principle also be cause and share general predicates?
+- SH-026 — Gathering and distinction: why unrestricted being is prior to its determinations
+- SH-027 — How the unqualified essence can be named without becoming qualified
+- SH-028 — The first determination, four primordial names, and the relation of knowledge to causality
+- SH-029 — Four modes of the essence's manifestation to itself
+- SH-030 — Ordered divine knowledge without externally separated known objects
+- SH-031 — Self-intellection, relational opposition, and the coloured-glass analogy
+- SH-032 — The Breath of the All-Merciful and the unfolding of the names
+- SH-033 — Divine action, the worlds, and the five comprehensive levels
+- SH-034 — Six objections: possibility, causation, manifestation, worlds, imagination, and perfection
+- SH-035 — Possible determinations, accidental existence, and the recovery of making and causation
+- SH-035-B — Manifestation is determination, not existence produced from nothing
+- SH-036 — Distinguishing the worlds by analogy with substances and dependent properties
+- SH-036-B — Establishing the imaginal world's existence without digressing into its full reality
+- SH-037 — Why a lower level can display more comprehensive manifestation
+- SH-038 — Sensory discipline, the holy faculty, and the soul's perfection after death
+- SH-039 — Why the human constitution joins divine comprehensiveness and cosmic differentiation
+- SH-039-B — Why primordial self-knowledge does not replace comprehensive manifested knowledge
+- SH-040 — The human terminus and return of the existential movement
+- SH-040-B — Objection: why are divine self-knowledge and the First Intellect insufficient?
+- SH-041 — Seeing in a mirror: intellectual apprehension, sensible forms, and transcendence
+- SH-042 — Does the comprehensive human mirror actually disclose every level?
+- SH-043 — Could the whole cosmos, rather than one human, be the comprehensive mirror?
+- SH-044 — Would the divine goal make the Necessary dependent on a possible being?
+- SH-045 — Objection: does liberation from restrictions destroy human comprehensiveness?
+- SH-046 — Objection: an attainment beyond intellect would be inexpressible and unattainable
+- SH-047 — Objection: are ascetic perceptions effects of a disordered temperament?
+- SH-048 — Four levels of manifestation and the human union of comprehensive and differentiated knowing
+- SH-049 — Active and receptive determinations: one reality, distinct relational aspects
+- SH-050 — Why the embodied human can be a natural unity while the cosmos is an aggregate
+- SH-051 — Species-wide perfection, individual variation, and the completing seal
+- SH-052 — Relative dependence in manifestation and intrinsic divine self-sufficiency
+- SH-053 — Ordered faculties rather than abolished faculties: the human correspondences of the worlds
+- SH-054 — Beyond discursive thought does not mean beyond every form of intellect
+- SH-055 — How watchfulness can change the operation of established dispositions
+- SH-056 — Purification restores balance rather than deliberately producing disorder
+- SH-057 — The reflective investigators' qualified acceptance of the contemplative path
+- SH-058 — Both paths require purification, attention, and a balanced constitution
+- SH-059 — The senses prepare in both paths; the bestowal of knowledge belongs to the Principle
+- SH-060 — Two routes to knowledge, both requiring ordered character and faculties
 - SH-061-C — Why the final subtle point concerns a criterion of knowledge
 - SH-061-D — Immediate experience does not settle disagreement among experiencers
 - SH-061-E — Different capacities still require a discriminating measure
@@ -86,13 +131,11 @@ The introduction uses edition N; the main and closing commentary use edition A. 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-**Comparator:** Lumbard, pp. 464–465; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 الحمد لله الذي جعل مكامن ظلال جلاله مجالي أنوار جماله؛ تفصيلا لما أجمل من الأحكام، وصير صور تجلياته مشارق شموس المعاني؛ تكميلا لما عم من الأنعام، فأصبحت لعباده من أولي وداده، ولأهل عناده من ذوي بعاده مطالع طوالع المعارف، ومغارب طلائع العوارف؛ إسعافا لما عبر عنه لسان الاستعداد من المرام. فسبحانه من باطن ليس لخفائه سبب سوى غاية الظهور بنيرات منصاته، وما تستوجبه من لوامع الأضواء ظهور الأنوار بالأكمام. وجل شأنه من ظاهر لا علة لظهوره غير توغل كونه في بطائن حجبه، وما يستدعيه من غياهب الظلام، فباطن لا يكاد يخفى، وظاهر لا يكاد يبدو.
 
-### English
+### Commentary — English
 
 Praise belongs to God, who made the hidden recesses of the shadows of His majesty places where the lights of His beauty appear, unfolding in detail the governing properties previously gathered together; who made the forms of His self-disclosures rising-places for the suns of meanings, bringing to completion His universally bestowed favours. For His servants who enjoy His love, and for His adversaries who remain far from Him, these became respectively the horizons where the stars of knowledge rise and where the first gleams of gracious gifts set, answering the desire expressed by the tongue of preparedness. Glorified is He: hidden for no reason other than the utmost manifestation through the luminaries of His places of disclosure and the flashes of radiance called forth when lights emerge within their enveloping sheaths. Exalted is His affair: manifest for no reason other than the deep penetration of His being into the interiors of His veils and the depths of darkness that this entails. Hidden, yet scarcely concealed; manifest, yet scarcely appearing.
 
@@ -110,13 +153,11 @@ Praise belongs to God, who made the hidden recesses of the shadows of His majest
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-**Comparator:** Lumbard, pp. 465; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 ثم الصلاة والسلام على محمد؛ مطلع تناشر كل خير وتمام، ومفتتح فواتح كل فتح، ومختتم كل ختام، ذلك هو النور الساطح الذي لا يشوبه شوائب الفيء، ولا غوائل الغمام. لا ترم في شمسه ظلا سوى / فهي شمس وهي ظل وهي فيء. وعلى آله مشكوة شمل كل شتات، ومصباح جمع كل نظام.
 
-### English
+### Commentary — English
 
 Then blessings and peace upon Muḥammad: the horizon from which every good and perfection spreads, the one who inaugurates the beginnings of every opening and brings every completion to its close. That is the radiant light unmixed with the blemishes of shade or the obscuring deceptions of cloud. ‘Seek no shadow of otherness within his sun: it is sun, it is shadow, it is shade.’ And blessings upon his family, the niche that gathers all that is dispersed and the lamp that draws every ordered whole together.
 
@@ -134,13 +175,11 @@ Then blessings and peace upon Muḥammad: the horizon from which every good and 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-**Comparator:** Lumbard, pp. 465–466; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 وبعد، فإن مسألة التوحيد حسب ما حققه المشاهدون، وطبق ما شاهده المحققون من أولي الكشف والعيان، مما لم يهتد إليه إلى الآن نظر ذوي العقول بمشاغل الحجج والبرهان؛ إلا من أيده الله بنور منه، ووفقه بهدايته إليه؛ من الحائزين منهم مرتبتي الاستدلال العقلي والشهود الذوقي، الفائزين بمنقبتي العلم الإني والكشف العلي، الذين خلصهم الله تعالى عن مضائق المقدمات من الخطابية والبرهانية إلى أفضية الواردات الكشفية والمخاطبات العيانية، بحسن متابعة الأنبياء، صلوات الله عليهم أجمعين؛ الذين هم روابط رقائق الحقائق من عين الجمع إلى محل التفصيل، ووسائط نزول المعاني عن سماء القدس إلى مقام التنزيل، سيما من تأسى منهم أسوة حسنة بالأول منهم وجودا ورتبة، والآخر منهم زمانا وبعثة؛ محمد، صلى الله عليه وآله، الذي هو غاية الغايات وآثاره المنيفة مورد الكمالات، ومنبع السعادات، عليه وعلى آله أفضل الصلوات وأكمل التحيات.
 
-### English
+### Commentary — English
 
 To proceed: the question of divine unity, as established by those who witness and as witnessed by those who have attained realization through unveiling and direct vision, is one to which the reasoning of intellectual investigators occupied with arguments and demonstrations has not yet found its way—except for those whom God supports with a light from Himself and successfully guides to it. These combine the two ranks of rational inference and experiential witnessing, and possess the twin excellences of inferential knowledge from effects and unveiling of causes. Through their faithful following of the prophets, God has delivered them from the narrow confines of rhetorical and demonstrative premises into the open expanses of disclosures received through unveiling and addresses encountered in direct vision. Blessings upon all those prophets, who connect the subtle links of realities from the very source of gathered unity to the domain of differentiation, and mediate the descent of meanings from the heaven of holiness to the level of their unfolding. This applies especially to those who take as their excellent example the first of the prophets in existence and rank and the last in time and mission: Muḥammad, blessings upon him and his family. He is the end of all ends, and his exalted legacy is the fountain of perfections and the source of felicities. Upon him and his family be the best blessings and most complete greetings.
 
@@ -158,13 +197,11 @@ To proceed: the question of divine unity, as established by those who witness an
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-**Comparator:** Lumbard, pp. 466; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 ولذا ترى أولياءه الشريفة إذا حاولوا تحقيق معاني التوحيد، وفقوا بين البراهين العقلية والنواميس النقلية بما لا يتصور عليه المزيد، حيث يدفعون شبهات بعض الفلاسفة القاصرين عن تطبيق ما أفادهم النظر الصحيح لما أنزل عليهم من النص الصريح، وكذلك في سائر العلوم الحقيقية، والمعارف اليقينية، قد بينوا مواقع خللهم، وأظهروا مواضع زللهم، بما يستبان منه محل اللبس، ويتميز به السهاء من الشمس، كل ذلك إنما هي شعشعة من ذكاء تميط ليلا أدهم، بل شنشنة أعرفها من أخزم.
 
-### English
+### Commentary — English
 
 Thus, when his noble friends undertake to establish the meanings of divine unity, you find them bringing rational demonstrations and transmitted divine laws into the fullest conceivable agreement. They dispel the difficulties raised by certain philosophers who fall short of reconciling what sound reasoning has yielded with the explicit revealed text. In the other sciences of reality and fields of certain knowledge, too, they expose the points at which those philosophers' reasoning breaks down and the places where their feet slip. Confusion is thereby disclosed for what it is, and the faint star is distinguished from the sun. All this is but a ray of sunlight dispersing a pitch-black night—or, to use the proverb, a familiar trait recognized in Akhzam.
 
@@ -181,13 +218,11 @@ Thus, when his noble friends undertake to establish the meanings of divine unity
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-**Comparator:** Lumbard, pp. 466–467; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 هذا، وإن زماننا هذا قد بلغ منتهى كماله، واستوى دوحة إقباله، وحان أوان اجتناء ثماره، وكشف القناع عن مخدرات أبكاره، بما استنارت على صفحات أيامه، من الآثار الموجودة في الكتب المنزلة السماوية والزبر الكشفية العالية، ولعمرنا تجد ما لا تصل إليه الأكابر إلا بعد ارتياض نفوسهم بالرياضات المتعبة الشاقة، مدى الليالي والأيام، قد صار مضغة للخاص والعام، وما كان إفشائه أفتى بإهراق دم الكبار، قد أصبح في الاشتهار كالشمس في رابعة من النهار. وبالجملة، ما لا يمكن للكمل أن يطؤوا مراحل طواه إلا بعد خلع النعلين، ولا لأحد أن يحوم حول حماه إلا بانطواء القدمين؛ بل بالانخلاع عن القوتين، قد تسمع أسراره من شراكهما، وتقتنص نوادي دقائقه من رقائق نضدهما واشتباكهما، اقتناص شوارد حقائقه من حبائل إدراكهما، فإن اللبيب بقوتي الوهم والعقل، وترتيب مدركاتهما بميامن هذه الأحيان والأوقات وصل إليه وعثر عليه وصوله إلى أجلى اليقينيات، وعثوره على أول البديهيات. كم ذا تلوح بالشعبتين والعلم / والأمر أوضح من نار على علم.
 
-### English
+### Commentary — English
 
 Our age has now reached the fullness of its development. The great tree of its flourishing stands mature; the season has come to gather its fruit and to lift the veil from its hitherto secluded, untouched discoveries, through the traces shining upon the pages of its days in the heavenly revealed books and the lofty writings of unveiling. By my life, you will find that what the great masters attained only after exhausting and strenuous discipline over many days and nights has become a morsel on the tongues of the learned and the common alike. Matters whose disclosure once occasioned verdicts calling for the blood of great men are now as publicly known as the sun in broad daylight. In brief, the secrets of a sacred valley whose stages the perfected could tread only after removing both sandals, and whose protected precinct none could approach without folding both feet away—indeed, stripping away both faculties—can now be heard, as it were, from the sandals' own straps. Their elusive subtleties can be caught in the fine interweaving of the faculties themselves, as their fugitive realities are caught in the nets of apprehension. Through the faculties of estimation and intellect and the ordering of what they apprehend, under the favourable conditions of these times, the discerning person reaches them as readily as the clearest certainties and encounters them as the first self-evident truths. ‘How long will you gesture toward the two branches and the landmark, when the matter is clearer than a fire upon a hill?’
 
@@ -205,13 +240,11 @@ Our age has now reached the fullness of its development. The great tree of its f
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-**Comparator:** Lumbard, pp. 467; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 على أن المختار عند الصدر الأول من الحكماء، الذين هم من جملة الأصفياء من الأنبياء، والأولياء، عليهم السلام، على ما أخبر عنه المؤرخون، كآغاثاذيمون، المدعو بلسان الشريعة ب«لقمان»، وهرمس الهرامسه، المدعو ب«إدريس»، وفيثاغورث المدعو ب«شيث»، وأفلاطن الإلهي، ليس إلا هذا. لكن المتأخرين من أصحاب المعلم الأول؛ أعني المشائين، لما قصروا طريق الاستفاضة، واستعلام الحكمة الحقة على الحجة المحضة، والبحث البحت، حجزهم حجب الشبهات المظلمة الناشئة مما أسست عليه مناهجهم من القواعد الجدلية، عن أن يتفطنوا لما هو الحق في تلك المسألة الجلية. والذي يقضى منه العجب، أن من رام منهم إفادة تحقيق، أو زيادة تدقيق، إنما جاء بإلحاق منع ونقض، فأصبحت مؤلفاتهم بتراكم المناقضات مجموعة من ظلمات بعضها فوق بعض، فما يخلص عن دياجيرها إلا الأقلون، «وما ظلمهم الله ولكن كانوا أنفسهم يظلمون».
 
-### English
+### Commentary — English
 
 Moreover, this alone was the position preferred by the earliest sages—those counted, according to the historians, among the chosen prophets and friends of God: Agathodaimon, called Luqmān in the language of revelation; Hermes of the Hermeses, called Idrīs; Pythagoras, called Seth; and the divine Plato. But the later followers of the First Teacher, by whom I mean the Peripatetics, confined the reception and acquisition of true wisdom to argument alone and unassisted inquiry. The dark veils of difficulties arising from the dialectical rules on which their procedures were founded then prevented them from discerning the truth of this clear question. What is astonishing is that anyone among them who proposes a fresh verification or a more exact investigation merely adds another denial or counterargument. Through the accumulation of contradictions their writings become a collection of darknesses piled upon one another, from whose gloom very few escape. ‘God did not wrong them; they were wronging themselves.’
 
@@ -229,13 +262,11 @@ Moreover, this alone was the position preferred by the earliest sages—those co
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-**Comparator:** Lumbard, pp. 467–468; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 وأما الرسالة التي صنفها مولاي وجدي؛ أبوحامد محمد الاصبهاني، المشتهر ب«تركة» قدس سره فإنه مع جعلها مشتملة على البراهين القاطعة والحجج الساطعة على أصل المسألة، وفق ما ذهب إليه المحققون، قد بالغ في دفع تلك الشبهات بلطائف بيانه، وبذل الجهد في إماطة تلك الأذيات بمكابس تبيانه، بحيث لا يبقى لمن له أدنى دربة في العقليات، شائبة خدشة في ما هو الحق من تلك اليقينيات، لكن لبعد غوره في الحكميات وعلو طوره في البرهانيات، قد قصرت فهوم أكثر المستفيدين عن مرامي مقاصده المنيعة، وعجزت مدارك سائر المسترشدين عن مباني فوائده الرفيعة، فحاولت حين مذاكراتي مع بعض المشاركين في التحصيل من خلص الإخوان، أن أكشف قناع الإيجاز عن وجوه مخدرات تلك العبارات بأوضح بيان؛ تعميما لفوائدها المنيفة، وتتميما لعوائدها الشريفة، مشيرا إلى معظم أصول أهل الكشف وأمهات قواعدهم، مؤميا إلى معاقد تلك المباحث وكليات مقاصدهم، حافظا للألفاظ المتداولة بينهم وعباراتهم، مراعيا للمناسبات المعتبرة بين مصطلحاتهم ومستعاراتهم، حذرا من أن يفهم خلاف المراد، فيفضي إلى الخبط في البحث والفساد. وقد سمي بعد فراغه ب«كتاب التمهيد في شرح رسالة قواعد التوحيد».
 
-### English
+### Commentary — English
 
 As for the treatise composed by my master and ancestor Abū Ḥāmid Muḥammad al-Iṣfahānī, known as Turka—may his secret be sanctified—it contains decisive demonstrations and luminous arguments for the fundamental question, in accordance with the position of those who have attained realization. Through the subtlety of his exposition he went to great lengths to remove those doubts, and exerted himself to sweep away their impediments with the force of his explanations, leaving no trace of misgiving about these truths for anyone with even modest training in intellectual inquiry. Yet the depth of his penetration into philosophical wisdom and the elevated level of his demonstrations put his difficult objectives beyond the understanding of most students, and the foundations of his lofty insights beyond the grasp of many seekers of guidance. During discussions with some of my sincere companions in study, therefore, I sought to remove the veil of concision from the secluded meanings of his expressions through the clearest explanation. My purpose was to make their benefits more widely available and complete their valuable results: indicating the principal doctrines and fundamental rules of the people of unveiling, pointing to the crucial connections of their investigations and the general scope of their aims, preserving their customary terms and expressions, and respecting the relationships between their technical vocabulary and their metaphors. I wished to guard against an unintended meaning being understood and thereby producing confusion and corruption in the inquiry. Once completed, the work was entitled The Book of Preparation: Commentary on the Treatise Principles of Divine Unity.
 
@@ -253,11 +284,11 @@ As for the treatise composed by my master and ancestor Abū Ḥāmid Muḥammad 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 على أنني في فترة شاغلة عن طريق المباحثة، واشتغال صارف عن المطالعة والقيل والقال، فالمرجو من العاثر على ما يرى من السهو، أن يسبل عليه ذيل العفو، عصمنا الله وإياكم عن طريق الغرور والأباطيل، وهدانا وإياكم سواء السبيل، وسقانا من المشرب الخاص المحمدي، عليه وعلى آله من الصلوات أفضلها وأتمها، ومن التحيات أشملها وأعمها، ما يروي الغليل. ثم إنه لما كان سوق الكلام في هذه الرسالة إنما هو على مساق أهل الاستدلال، ناسب أن نصدر الكلام بمقدمة مبينة لتصوير ما فيه على سبيل الإجمال، مميزة بين ما يختص بهذا العلم من الموضوع والمبادي والمسائل، تأسيا بهم وجريا على عادتهم في تقديم هذا المقال. وبعد ذلك نشرع في تحرير مقاصد الرسالة وتبيين فوائدها، إن شاء الله وحده العزيز.
 
-### English
+### Commentary — English
 
 I am, however, living through an interval that keeps me away from sustained discussion, and occupations divert me from reading and learned debate. I therefore hope that anyone who encounters an oversight will cover it with the mantle of pardon. May God protect us and you from the paths of delusion and falsehood, guide us and you along the right way, and give us a draught sufficient to quench our thirst from the specifically Muḥammadan spring—upon him and his family be the finest and fullest blessings and the most comprehensive greetings. Since the argument of this treatise follows the method of those who reason by inference, it is appropriate to begin with a prolegomenon that presents its contents in outline and distinguishes the subject, principles, and questions proper to this science. In doing so we follow their example and their custom of placing such an account first. Thereafter we shall set out the treatise's purposes precisely and explain its benefits, God alone, the Mighty, willing.
 
@@ -274,11 +305,11 @@ I am, however, living through an interval that keeps me away from sustained disc
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 أما المقدمة: فاعلم أن العلم المبحوث عنه ههنا، لما كان هو العلم الإلهي المطلق الذي هو أعلى العلوم مطلقا، يجب أن يكون موضوعه أعم الموضوعات مفهوما، بل أتم المفهومات حيطة وشمولا، وأبينها معنى، وأقدمها تصورا وتعقلا، لما تقرر في فن البرهان، إن علو العلوم بحسب عموم الموضوع وشمول حيطته. فالعلم إنما يكون أعلى مطلقا إذا كان موضوعه أعم مطلقا بالنسبة إلى سائر الموضوعات حتى يكون موضوعات جميع العلوم من جزئياته. فلئن قيل: إنما يلزم ذلك، أن لو وجب أن يكون موضوع السافل أخص من موضوع العالي مطلقا، وليس كذلك؛ لجواز كونه مباينا كالموسيقى بالنسبة إلى الحساب فإنهم صرحوا بأنه تحته مع تباين موضوعهما بالذات. قلنا: يجب أن يكون موضوع السافل تحت موضوع العالي وأخص منه، إما بذاته أو بالحيثية المبحوث عنها، وإلا لا يكون سافلا، وعلم الموسيقى إنما جعل تحت الحساب باعتبار حيثيته، فإن النغم المبحوث عنها فيه وإن كانت من الكيفيات المباينة لمطلق الكم، لكن لا يصير موضوعا للموسيقى إلا إذا عرضت لها عوارض من باب الكم المنفصل، فهو بهذه الحيثية يكون تحت الحساب ضرورة. لا يقال: لو كفى هذا في تحقق النسبة ههنا، لم يلزم أن يكون موضوع الأعلى أعم بالذات، لجواز أن يكون عمومه باعتبار حيثية لاحقة، فلا يتم إذا البيان. لأنا نقول بعد المساعدة على الملازمة المذكورة؛ إن الحيثية ههنا ليست خارجة عن الموضوع؛ بل نفس مفهومه، فالعموم بالذات حينئذ لازم على التقديرين.
 
-### English
+### Commentary — English
 
 As for the prolegomenon: know that the science considered here is unrestricted divine science, which is the highest science without qualification. Its subject must therefore be the most general of subjects in conception—indeed, the most comprehensively inclusive of concepts, the clearest in meaning, and the first in conception and intellection. For the theory of demonstration establishes that the superiority of sciences corresponds to the generality and comprehensiveness of their subjects. A science is highest without qualification only when its subject is more general than every other subject, so that the subjects of all the sciences are particular cases falling under it. An objection may be raised: that conclusion follows only if the subject of a subordinate science must always be narrower than the subject of a superior science. Yet the subjects may differ essentially, as music and arithmetic do: music is expressly subordinated to arithmetic despite the essential distinction between their subjects. We reply that the subordinate subject must fall under the superior and be narrower either in itself or under the aspect investigated; otherwise the science would not be subordinate. Music falls under arithmetic by reason of the aspect it studies. Although musical tones are qualities and thus differ from quantity as such, they become the subject of musical science only insofar as properties belonging to discrete quantity attach to them. Under that aspect, music necessarily falls under arithmetic. Nor should one object that this would permit the superior subject's generality to derive merely from an additional aspect rather than from itself. Granting the proposed implication, the relevant aspect in our present case is not external to the subject: it is its very concept. Intrinsic generality therefore follows on either account.
 
@@ -295,11 +326,11 @@ As for the prolegomenon: know that the science considered here is unrestricted d
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 فإن قلت: لو كان حيثية الموضوع ههنا نفس مفهومه وطبيعته، يلزم أن يكون البحث فيه عما يلحق الوجود من حيث إنه وجود، فيكون بحثه مقصورا على ما لا يكون في وجوده وحدوده محتاجا إلى المادة، ضرورة أن ما يكون فيهما أو في أحدهما محتاجا إلى المادة، فالبحث عنه إنما يكون عما يلحقه من الحيثية الخاصة به وإلا فلا يكون بحثا عنه، وحينئذ يكون هذا هو العلم المسمى ب«علم ما بعد الطبيعة»، لا غير. قلنا: إنما يلزم ذلك أن لو كان الوجود المأخوذ ههنا موضوعا، هو الوجود المجرد المطلق، وأما إذا كان هو مطلق الوجود، بدون اعتبار الإطلاق معه من حيث هو كذلك، فلا شك أن سائر الخصوصيات والحيثيات؛ مادية كانت أو غير مادية تكون مندرجة فيه، كما سيجيء بيانه على التفصيل.
 
-### English
+### Commentary — English
 
 You may object: if the aspect under which the subject is considered is simply its concept and nature, the investigation must concern what belongs to existence insofar as it is existence. Its scope would then be confined to what depends on no matter either in its existence or in its definition. Anything dependent on matter in either respect has to be investigated under its particular aspect; otherwise it is not that thing which is being investigated. This would therefore be none other than the science called metaphysics. We reply: this would follow only if the subject adopted here were abstract, absolute existence. But if the subject is existence without restriction, with absoluteness itself not included as an additional qualification, all particularities and aspects—whether material or immaterial—fall within it. This will be explained in detail below.
 
@@ -316,11 +347,11 @@ You may object: if the aspect under which the subject is considered is simply it
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 فإن قلت: هذا غير موافق لما علم من تصفح كلامهم، فإن شيخ المشائين؛ ابن سينا قدس سره قد صرح في الفصل الثاني من المقالة الأولى من إلهيات الشفاء، من أن الموجود بما هو موجود أمر مشترك بين المقولات وأنه يجب أن يجعل الموضوع لهذه الصناعة. قلنا: أن الموجودية المشتركة بالمعنى الذي جعل به موضوعا للصناعة وإن شملت جميع المقولات من حيث أنها عارضة إياها، لكن خصوصيات كل منها وحيثياتها ليست داخلة فيها ولا صادقة عليها بما هو هو عندهم، فيكون بالحقيقة هو المعنى المجرد، دون المعنى الذي جعل به موضوعا لهذا العلم، فإنها بهذا المعنى نفس حقيقة الخصوصيات، وعين تلك الحيثيات؛ إذ تلك إنما هي تصور تعيناتها المتمائزة بمجرد النسب والإضافات وصنوف الاعتبارات، على ما ستطلع عليه، إن شاء الله تعالى. فإذا عرفت هذا، عرفت أن الفرق بين هذا العلم الإلهي، والعلم الإلهي المسمى ب«ما بعد الطبيعة»، كالفرق بين المطلق والمقيد من غير فرق.
 
-### English
+### Commentary — English
 
 You may say that this does not agree with what a survey of their writings reveals. The master of the Peripatetics, Ibn Sīnā—may his secret be sanctified—expressly states in the second chapter of the first book of the Metaphysics of the Healing that existent as existent is common to the categories and must be made the subject of that discipline. We reply that existentness, in the common sense in which they make it the subject of the discipline, encompasses all the categories insofar as it is predicated of them. But, on their account, the distinctive characteristics and aspects of each category are neither included within that common meaning nor predicated of it as identical with it. It is therefore an abstract meaning, not the meaning adopted as the subject of this science. In the latter sense, existentness is the very reality of those particularities and those very aspects: they are but the determination-forms distinguished through relations, correlations, and different considerations, as you will come to understand, God willing. Once this is grasped, the difference between the divine science discussed here and the divine science called metaphysics is precisely the difference between the unrestricted and the restricted.
 
@@ -338,11 +369,11 @@ You may say that this does not agree with what a survey of their writings reveal
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 ثم لما تقرر بحكم الحصر العقلي أنه ليس ولا واحد من المفهومات إلا وهو مندرج تحت موضوع أحد من العلوم الثلاثة؛ أعني العلم المنسوب إلى الطبيعة وما بعدها والمتوسط بينهما اندراج موضوع ما هو الأعلى من تلك العلوم تحت موضوع هذا العلم، ظهر وجوب عمومه بالنسبة إلى سائر المفهومات مطلقا. ووجوب كونه أبينها معنى وأقدمها تصورا أيضا؛ ضرورة أنه لو كان بين المفهومات ما هو أبين منه يلزم أن لا يكون هو أعم المفهومات مطلقا، وإلا يلزم أن يكون الخاص أبين من العام، وذلك محال. وإذا ظهر اندراج سائر الموضوعات تحت موضوع هذا العلم، ظهر حكم سائر المسائل والمبادي التي هي أحكام الموضوع ومبينات تلك الأحكام. وإذا عرفت هذا، فاعلم: أن التعبير عما يصلح لأن يكون موضوعا لهذا العلم من المعنى المحيط والمفهوم الشامل الذي لا يشذ منه شيء، ولا يقابله شيء عسير جدا. فلو عبر عنه بلفظ الوجود المطلق أو الحق إنما ذلك تعبير عن الشيء بأخص أوصافه الذي هو أعم المفهومات ههنا؛ إذ لو وجد لفظ يكون ذا مفهوم محصل أشمل من ذلك وأبين، لكان أقرب إليه وأخص به، وكان ذلك هو الصالح لأن يعبر به عن موضوع العلم الإلهي المطلق لا غير.
 
-### English
+### Commentary — English
 
 Rational division establishes that every concept falls under the subject of one of the three sciences: the science concerned with nature, the science beyond nature, or the science intermediate between them. Since the subject of the highest of those sciences itself falls under the subject of this science, the latter must be universally comprehensive in relation to all other concepts. It must also be the clearest in meaning and the first to be conceived. Were another concept clearer, it could not be the most general without qualification; otherwise what is particular would be clearer than what is general, which is impossible. Once it becomes clear that the other subjects fall under the subject of this science, the position of their questions and principles also becomes clear, since these are judgments concerning the subject and what makes those judgments evident. Yet expressing this all-embracing meaning—the comprehensive concept from which nothing escapes and to which nothing stands opposed—is exceedingly difficult. Calling it absolute existence or the Real is to designate it through its most proper attribute, which here is the most general of concepts. Were a term available with a more comprehensive and clearer determinate meaning, it would be closer and more proper to the subject, and that alone would be the appropriate expression for the subject of unrestricted divine science.
 
@@ -360,11 +391,11 @@ Rational division establishes that every concept falls under the subject of one 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 ثم إنه ليس بين الألفاظ المتداولة ههنا شيء أحق من لفظ الوجود بذلك؛ إذ معناه أعم المفهومات حيطة وشمولا، وأبينها تصورا، وأقدمها تعقلا وحصولا، بالوجهين: أما الأول، فلأن تحقق معنى نسبة العموم والخصوص راجع إلى أن المتصف بأحد الحصولين من أفراد الخاص مندرج في المتصف بذلك الحصول من أفراد العام دون العكس، وبين أن كل مفهوم لا يتحقق عموم المفهومات إلا بعد اتصافها بأحد قسميه لابد وأن يكون ذلك المفهوم مطلقا أعم المفهومات ضرورة.
 
-### English
+### Commentary — English
 
 Among the terms used here, none has a better claim to that role than existence. Its meaning is the most comprehensive of concepts, the clearest to conceive, and the first in intellection and occurrence. This can be shown in two respects. First, the meaning of the relation between generality and particularity is that an instance of the narrower concept possessing either mode of occurrence is included among the instances of the wider concept possessing that same mode, but not conversely. Any concept such that the generality of other concepts becomes actual only when they are qualified by one of its two divisions must therefore itself be the most general of concepts without qualification.
 
@@ -381,11 +412,11 @@ Among the terms used here, none has a better claim to that role than existence. 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 وأما الثاني، فلأن معنى كون الشيء بينا أو غير بين أيضا راجع إلى عدم احتياجه في الاتصاف بأحد الحصولين والوجودين إلى واسطة وإلى احتياجه إليها، فإن ما يكون في الاتصاف المذكور مسبوقا بغيره ومحتاجا في تلك النسبة الاتصافية التي بينهما إلى واسطة، يكون بعيدا عن الحصول المذكور ويقال: إنه غير بين، ويتفاوت البعد بحسب قلة الوسائط وكثرتها، وما لا يكون في الاتصاف المذكور مسبوقا بغيره ولا محتاجا فيه إلى واسطة؛ بل له الاتصاف بالحصول المذكور أولا وبالذات يكون قريبا منه، ويقال: إنه بين، وبين أن كل ما تكون نسبة القرب من خواصه منه توجب أن يكون المنتسب إليه بينا، ونسبة البعد عنه تستدعي أن يكون غير بين لابد وأن يكون أبين المفهومات وإلا لم تكن تلك النسبة موجبة للتبيين ولا عدمها مانعا له، على أنه أقرب المعاني بالنسبة إلى المبدأ؛ فإنه ما من شيء يتحقق بنفسه أو بشيء آخر إلا ويكون مقارنته إياه أولا، وكذلك لا يكون حصوله في نفسه أو لشيء إلا بعد حصول ذلك المعنى له وتحققه به، ولذا تجد ذلك اللفظ أظهر دلالة وأكثر تداولا في عبارات المحققين عند إدارتهم إياه من سائر الأسماء والألفاظ.
 
-### English
+### Commentary — English
 
 Second, being evident or not evident likewise turns on whether something needs an intermediary in order to possess one of the two modes of occurrence or existence. What is preceded by something else in acquiring that qualification, and needs an intermediary for the qualifying relation, is remote from the occurrence in question and is called non-evident. The remoteness varies with the number of intermediaries. What is not preceded by another and requires no intermediary, but has that occurrence primarily and through itself, is close to it and is called evident. Now, that to which proximity makes what is related to it evident, while distance makes it non-evident, must be the clearest of concepts. Otherwise proximity would not explain evidence, nor its absence the lack of evidence. Existence is also the meaning closest to the Principle. Nothing is realized through itself or through another unless it is first conjoined with existence; nor does anything occur in itself or for another without that meaning first obtaining for it and its being realized through it. Hence, when those who have attained realization intend this subject, the word existence is clearer in indication and more frequent in their expressions than any other name or term.
 
@@ -403,11 +434,11 @@ Second, being evident or not evident likewise turns on whether something needs a
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 فلئن قيل: الموضوع في كل علم على ما تعارف بينهم، هو ما يبحث في ذلك العلم عن أعراضه الذاتية الخاصة به؛ أي المحمولات الخارجة عن ذات الموضوع اللاحقة إياها، إما لذاتها أو لما يساويها، جزءا كان أو خارجا، ولا شك أن صدق ما يحمل ههنا على الموضوع من الأسماء والحقائق لا يمكن أن يكون على سبيل اللحوق؛ فإن ذلك الموضوع نفس الأسماء والحقائق على ما قلتم ولا شيء بخارج عنه أصلا. سلمناه، لكن نمنع أن يكون ذلك اللحوق لذاته أو لأمر يساويها، وإلا يلزم عدم انفكاك شيء من اللواحق عن الموضوع العام، فالعام لا يكون عاما بالنسبة إلى محمولات مسائله، فلا يكون جعله موضوعا أولى من غيره من المفهومات المساوية له. وأيضا قد تقرر على قواعد أهل التحقيق أن الأسماء والحقائق كلها إنما هي من مقتضيات الذات نفسها في نفسها لنفسها، فيمتنع أن تنفك عنها فإن مقتضى الذات لا يمكن أن يتخلف عنها أصلا، فكيف يتصور حينئذ عموم ما دل عليها وإحاطتها بالنسبة إلى تلك الحقائق والأسماء.
 
-### English
+### Commentary — English
 
 An objection may be raised. According to the customary account, the subject of a science is that whose proper essential accidents the science investigates: predicates outside the subject's essence which belong to it either through itself or through something coextensive with it, whether an intrinsic part or an extrinsic factor. But the names and realities predicated of the subject here cannot belong to it by such an attachment. On your account the subject is itself those names and realities, and nothing at all lies outside it. Even if attachment is conceded, why should it arise through the subject itself or through something coextensive with it? If it did, no attached predicate could be separated from the general subject. The subject would then not be more general than the predicates of its propositions, and there would be no greater reason to choose it as subject than any other coextensive concept. Moreover, according to the principles of the people of realization, all the names and realities are required by the essence itself, in itself and for itself. They cannot be separated from it, since what the essence requires cannot fail to accompany it. How, then, can the concept indicating that essence be more general and comprehensive than those names and realities?
 
@@ -424,11 +455,11 @@ An objection may be raised. According to the customary account, the subject of a
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 قلنا: إن ههنا مقدمة لابد من الاطلاع عليها أولا، وهي أن كل مفهوم إنما يتصور عمومه بالقياس إلى الجزئيات المندرجة تحته، لكن لتلك الجزئيات اعتباران: أحدهما، من حيث صدق ذلك المفهوم الكلي عليها بما هو هو، واشتماله على كلها، وبهذا الاعتبار ليست شيئا زائدا على نفس ذلك المفهوم أصلا. والآخر، من حيث حقائقها الامتيازية وخصوصياتها النسبية الاعتبارية التي بها يمتاز كل منها عما عداه، وبهذا الاعتبار ليست نفس ذلك المفهوم، ولا داخلة فيه؛ بل إنما هي من الأمور الخارجة عنه، اللاحقة إياه لذاته. وذلك لأن خصوصية المعنى المحيط التي بها يمتاز عن سائر ما عداه، إنما هي الشمول والإحاطة، ولا شك أن هذه الخصوصية إنما تقتضي ملحوقية المعنى المحيط بسائر المفهومات، وعدم مانعيتها لشيء من الخصوصيات المتقابل المتتابع المتمانع بعضها مع بعض، على ما هو مقتضى طبيعة الإحاطة والشمول، كما ستطلع عليه. وهذا يناسب ما تسمعه من أئمة التحقيق يسمون الهوية المطلقة «مجمع الأضداد»، ولهذه الدقيقة مواضع تقع في هذه الرسالة، فليكن على ذكر من المستبصرين. فإذا تقرر هذا، ظهر أن تلك الأسماء والحقائق بهذا الاعتبار من اللواحق التي تصلح لأن تكون مبحوثة عنها في الفن، كما أن ملحوقها بذلك الاعتبار صالح للموضوعية. ومساواتها للموضوع لو سلمت لا ينافي موضوعيتها لتلك الأسماء والحقائق، كما في الخواص واللوازم المساوية بالنسبة إلى الحقائق النوعية.
 
-### English
+### Commentary — English
 
 We reply that a preliminary point must first be understood. The generality of a concept is conceived only in relation to the particulars falling under it. But those particulars admit two considerations. First, the universal concept is truly predicated of them as what they are and encompasses them all. Under this consideration they add nothing to that concept itself. Second, they have distinctive realities and relational, conceptually considered particularities by which each differs from everything else. Under this consideration they are neither that concept itself nor included in it, but are matters outside its conceptual content that belong to it through itself. For the distinguishing character of the all-encompassing meaning is precisely its inclusiveness and comprehensiveness. That character requires it to admit the attachment of all other concepts without excluding any particularities, even when those particularities oppose, succeed, or exclude one another. Such is what comprehensive inclusion requires, as you will see. This accords with the masters' description of absolute identity as the gathering-place of opposites. The same subtle point will recur in the treatise, so the discerning reader should keep it in mind. It now becomes clear that, under this consideration, the names and realities are attached predicates suitable for investigation, while that to which they belong is suitable as the subject. Even if their coextension with the subject is conceded, this does not disqualify it from being their subject, just as coextensive properties and necessary concomitants can be investigated in relation to specific natures.
 
@@ -446,11 +477,11 @@ We reply that a preliminary point must first be understood. The generality of a 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 ثم إن اقتضاء الذات جميع الأسماء بنفسها واشتمال كل منها على الذات بجميع اعتباراتها وإن كانت مقررة عندهم، لكنها إنما تختلف بحسب ظهور أحكامها في القوابل، فإنه قد يكون الغالب منها بحسب ظهور أحكامها في بعض المظاهر اسما كليا، وقد يكون اسما جزئيا، ويكون ذلك الغالب هو الظاهر الناعت له دون غيره من الأسماء، فإن أحكامها مستهلكة تحت حكم اسمه المهيمن، كما في الطبائع المركبة عند حكمنا بأنها حارة أو باردة. وإذا تقرر هذا ظهر أنه لا يلزم من اقتضاء حقيقة في نفسها اسما وعدم انفكاكه عنها في الوجود أن يكون ذلك الاسم ظاهرا حكمه في جميع صور تعيناتها، ناعتا إياها في الكل.
 
-### English
+### Commentary — English
 
 They do indeed maintain that the essence of itself requires all the names and that each name encompasses the essence under all its considerations. Yet the names differ in the manifestation of their governing effects within receptive loci. In some manifestations the predominant name, judged by the appearance of its effects, may be universal; in others it may be particular. The predominant name is the one that appears and qualifies that manifestation, while the effects of the other names are absorbed beneath the ruling effect of its governing name. The comparison is with composite natures which we call hot or cold. Thus a reality's intrinsically requiring a name, and that name's inseparability from it in existence, do not entail that the name's effect is manifest in every form of the reality's determination or that it qualifies all those forms alike.
 
@@ -467,11 +498,11 @@ They do indeed maintain that the essence of itself requires all the names and th
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 وأما مباديه المختصة به: فالتصورية منها، هي تصور أمهات الحقائق اللازمة لوجود الحق سبحانه المسماة عند القوم بالأسماء الذاتية، وما يليها من أسماء الصفات، ثم أسماء الأفعال وأسماء النسب والإضافات الواقعة بين كل منها. والتصديقية منها، هي الحكم عليها بثبوتها في نفسها أو بثبوت بعض لوازمها لها.
 
-### English
+### Commentary — English
 
 As for the principles proper to this science: its conceptual principles consist in conceiving the fundamental realities necessarily accompanying the existence of the Real, glorified is He. Among the people of this discipline these are called the names of the essence; next come the names of attributes, then the names of acts and the names of the relations and correlations obtaining among them. Its assertoric principles consist in judging that these realities are established in themselves, or that certain necessary concomitants are established of them.
 
@@ -488,11 +519,11 @@ As for the principles proper to this science: its conceptual principles consist 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 فلئن قيل: يجب أن يكون المبادي إما بينة بنفسها، أو مبينة في العلم الأعلى مسلمة في علمها، وهذه الحقائق لما لم تكن بينة بنفسها، تجب أن تكون مبينة في العلم الأعلى، ولا أعلى من هذا العلم، على ما تقرر. قلنا: طريق استعلام المبادي على ما تقرر، وهي الحقائق المذكورة في هذا العلم أيضا إنما بأحد الوجهين: إما بظهور آثارها في العالم، ومشاهدة العارف لتلك الآثار والأحكام حسا وعقلا أو حدسا وكشفا، وتعلمه منها، وهو بمنزلة البينة في العلوم الرسمية. وإما بأخذها عن صاحب كشف أعلى وأتم منه، كالكمل من الأنبياء والأولياء، وذلك بمنزلة المبين في العلم الأعلى.
 
-### English
+### Commentary — English
 
 One may object that principles must either be evident through themselves or have been established in a higher science and accepted in the science that uses them. Since these realities are not self-evident, they must be established in a higher science; but you have said that there is no science higher than this one. We reply that the principles—the realities discussed here—likewise become known in either of two ways. They may become known through their effects appearing in the world and the knower witnessing those effects and governing properties by sense and intellect, or by intellectual intuition and unveiling, and learning from them. This corresponds to what is self-evident in the formally organized sciences. Alternatively, they are received from someone whose unveiling is higher and more complete, such as the perfected among the prophets and friends of God. This corresponds to what has been established in a higher science.
 
@@ -509,11 +540,11 @@ One may object that principles must either be evident through themselves or have
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 لا يقال: إنما يصح ذلك لو كان عندهم ميزان يتميز به صحيح ما يختص بذلك العلم عن غيره، كما هو في سائر العلوم النظرية، حتى يؤخذ ما يؤخذ من تلك العلوم معيرا بمعياره الصحيح، وإلا فلا تعويل في العلوم الحقيقية على ما حصل منها بمجرد التقليد. لأنا نقول: ممنوع أنه ليس عندهم آلة كذلك، فإنه قد ثبت عند المحققين من أهل الكشف، أن له بحسب كل شخص ووقت ميزانا ومرتبة يناسبه، ولذلك تجدهم يظهرون لشخص من تلك الحقائق ما يخفون عن آخر، ويخفون عنه في وقت ما يظهرون له في وقت آخر، ولولا ذلك ما يمكن للإنسان من التفرقة بين الإلقاء الصحيح الإلهي وبين التسويل الفاسد الشيطاني.
 
-### English
+### Commentary — English
 
 It should not be objected that this is sound only if they possess a criterion by which what is correct in this science can be distinguished from what is not, as in the other theoretical sciences, so that what is received can be tested by its proper measure; otherwise, mere imitation affords no reliable foundation in the sciences of reality. We deny that they lack such an instrument. The people of realization who possess unveiling maintain that there is a suitable measure and degree corresponding to each person and time. Thus they disclose certain realities to one person while withholding them from another, and withhold them at one time from someone to whom they reveal them at another. Without this, a person could not distinguish a genuine divine communication from corrupt satanic suggestion.
 
@@ -530,11 +561,11 @@ It should not be objected that this is sound only if they possess a criterion by
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 وأما المسائل ههنا، فهي عبارة عما تتبين به متعلقات هذه الحقائق والأسماء من المراتب والمواطن، وتخصيص كل منها بموطنه ومحتده، فإن لكل اسم موطنا يختص به، وهذا هو المراد بتوقيفية أسماء الله تعالى على قواعدهم، وبيان تفاصيل أحكامها ونسبها المختصة بكل منها. فإن قلت: المسألة في كل علم إنما تطلق على ما يبرهن عليه في ذلك العلم، فحيث لا برهان كيف يتصور المسألة؟ قلت: البرهان إنما هو تأليف المبادي اليقينية من البينة أو المسلمة، بحيث ينساق إلى الحكم المطلوب المسمى ب«المسألة»، وإذ قد عرفت في هذا العلم ما هو بإزاء الضربين المذكورين من المبادي، فما حصل مما يتألف منها عند استحصال المطالب العلمية والمعارف الحقيقية، تكون مسألة.
 
-### English
+### Commentary — English
 
 The questions investigated here concern the levels and domains to which these realities and names relate, the assignment of each to its proper domain and source, and the detailed articulation of its particular governing properties and relations. Each name has a domain proper to it; according to their principles, this is what is meant by the divine names being established by authoritative disclosure. You may ask: in every science, a question is something demonstrated within that science. Where there is no demonstration, how can there be a question in this technical sense? I reply that a demonstration is an arrangement of certain principles, whether self-evident or accepted, which leads to the judgment sought—the judgment called the question. You have now learned what corresponds in this science to those two sorts of principles. Whatever is established by combining them in the pursuit of scientific inquiries and knowledge of reality constitutes one of its questions.
 
@@ -551,11 +582,11 @@ The questions investigated here concern the levels and domains to which these re
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 على أن هذا كله إنما هو قواعد مصطلحة في العلوم الرسمية الجزئية المقيدة، فلا يلزم انطباقها على العلم الكلي المطلق، لما بين من مباينة خصوصية المطلق لخصوصيات جزئياته، وعدم وجوب انطباق أحكام الجزئيات على الكلي المنطبق على جزئياته؛ إذ الواجب إنما هو انطباق أحكام الكلي المطلق على جزئياته دون العكس، لكن لما كان مبنى الكلام في هذه الرسالة إنما هو على طريقة أهل النظر والاستدلال، لا يكون التزام هذه التطبيقات خارجا عن قانون التوجيه كل الخروج.
 
-### English
+### Commentary — English
 
 Besides, all these are conventional rules of the formally constituted sciences, which are particular and restricted. Their application to unrestricted universal science does not follow of necessity. The characteristic proper to what is unrestricted differs from the characteristics of its particular instances, and the judgments belonging to the particulars need not apply to the universal that applies to them. What must hold is the application of the judgments of the unrestricted universal to its particulars, not the reverse. Nevertheless, since the argument in this treatise is built upon the method of reflective investigation and inference, undertaking these correspondences is not altogether outside the bounds of a reasonable exposition.
 
@@ -572,11 +603,11 @@ Besides, all these are conventional rules of the formally constituted sciences, 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 اعلم أن بعض الألفاظ المتداولة ههنا لما فيه من الاشتراك بحسب عرفي أهل النظر والتحقيق، يقع للدخيل اختباط باختلاط الاصطلاحين، وأخذ أحدهما مكان الآخر، فوجب التنبيه أولا للمعنيين حسب الاصطلاحين تحريرا للبحث. منها، لفظ الوجود؛ فإنه عند أهل النظر إنما يطلق على الكون في الأعيان، أو الكون مطلقا، والكون في عرفهم وإن كان مرادفا للوجود، إلا أنه يحسن عندهم، أن يعرفوا أمثال هذه الطبائع البسيطة بلفظ أجلى منه، تعريفا لفظيا تنبيهيا.
 
-### English
+### Commentary — English
 
 Know that certain terms used here have different meanings in the conventions of reflective investigators and of those who have attained realization. A newcomer becomes confused by mixing these two terminologies and substituting one for the other. To make the inquiry precise, we must therefore first draw attention to the two meanings under the two conventions. One such term is existence. For reflective investigators it denotes being in external things, or being without further qualification. Although being is synonymous with existence in their terminology, they consider it appropriate to explain simple natures of this kind by a clearer term: a verbal explanation intended to direct attention, rather than a definition through constituent parts.
 
@@ -593,11 +624,11 @@ Know that certain terms used here have different meanings in the conventions of 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 ثم إن الوجود عندهم لما كان أمرا زائدا على ماهيات الموجودات، ولم يكن لشيء منها تحقق إلا باقترانه إليه، ودخوله في نوع من أنواع مطلق الحصول، حقيقيا كان أو اعتباريا، تخيلوا أن نسبة الماهيات إلى الوجود كنسبة الأجسام إلى الحيز، فكما أن لكل جسم اختصاصا طبيعيا بمكان خاص لا يتعدى من نوع ذلك المكان أصلا، كذلك الماهيات بالنسبة إلى الوجود؛ فإن منها ما لا يكون لها تحقق إلا بحسب الفرض العقلي، وهو الذي وجودها في القوى المدركة فقط كالنسب والإضافات الاعتبارية، وهذا النوع من الوجود يسمى عندهم بالوجود الفرضي، والأمور الاعتبارية معروضاته. ومنها، ما يكون لها تحقق خارج الفرض والاعتبار، سواء وجد الفرض العقلي، أو لم يوجد، ويسمى عندهم بالوجود الحقيقي والوجود في نفس الأمر.
 
-### English
+### Commentary — English
 
 Since, on their account, existence is additional to the quiddities of existing things, and no quiddity is realized without being conjoined with existence and entering one of the forms of occurrence, whether real or conceptually posited, they pictured the relation of quiddities to existence as like the relation of bodies to spatial location. Just as each body has a natural affinity with a particular place and does not depart from that kind of place, so, they thought, quiddities stand in relation to existence. Some are realized only through intellectual supposition: they exist solely in the cognitive faculties, as do conceptually posited relations and correlations. This kind is called hypothetical existence, and conceptually posited matters are its subjects. Others are realized independently of supposition and conceptual consideration, whether or not an intellectual supposition is made. This is called real existence, or existence in the order of things as they are—nafs al-amr.
 
@@ -614,11 +645,11 @@ Since, on their account, existence is additional to the quiddities of existing t
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 ومن هذا القسم ما يكون بالقياس إلى الخارج أيضا موجودا، وهو المسمى بالوجود الخارجي؛ أي الخارج عن المشاعر، ومنه ما يكون تحققه في المشاعر كالنسب والإضافات الحقيقية وسائر ما يقع في الدرجة الثانية من التعقل. لا يقال: فحينئذ يكون هذا من أقسام الوجود الفرضي، ضرورة أن حصوله إنما هو في القوى المدركة؛ لأنا نقول: حصوله وإن كان في القوى المدركة ولكن ليس مختصا بها، بل له في الخارج عنها وجود، فهو من أقسام الموجودات الحقيقية؛ إذ محصل هذا التقسيم أن ما يتصوره العقل لا يخلو من أن يكون قابلا للحوق الوجود في نفسه، أو يكن، فإن لم يكن فهو الموجودات الفرضية وإن كان قابلا له، فهو الموجود الحقيقي، وذلك لا يخلو من أن يختص بلحوقه له خارجا عن المشاعر أو لا، فالأول هو الموجود الخارجي، والثاني هو الموجود الذهني.
 
-### English
+### Commentary — English
 
 Within this latter division, some things also exist externally; their existence is called external existence, that is, existence outside the faculties of awareness. Others are realized within those faculties, such as real relations and correlations and the other matters occurring at the second level of intellection. It should not be objected that these must therefore belong to hypothetical existence because they occur only in the cognitive faculties. We reply that, although they occur in those faculties, they are not confined to them: they also have existence outside them and so belong to real existents. The point of the division is this: whatever intellect conceives either admits existence in itself or does not. What does not belongs to hypothetical existents; what does is a real existent. The latter either possesses that existence specifically outside the faculties of awareness or does not. The first is the external existent; the second is the mental existent.
 
@@ -636,11 +667,11 @@ Within this latter division, some things also exist externally; their existence 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 فعلم من هذا: أن الموجودات الذهنية المذكورة من أقسام الموجود الحقيقي والموجود في نفس الأمر، فنفس الأمر حينئذ أعم من الخارج، لأنه متى تحقق أمر في الخارج تحقق في نفس الأمر، وليس كل ما تحقق في نفس الأمر تحقق في الخارج، فإن إنسانية زيد المعدوم في الخارج متحقق في نفس الأمر، وليس بمتحقق في الخارج. فلئن قيل: فكيف يحكم بصدق إنسانية زيد المعدوم، وكذب حماريته إذا لم يكن لها مطابق في الخارج أصلا، والصادق هو الذي له مطابق في الخارج دون الكاذب. قلنا: إن الخارج مشترك بالاشتراك اللفظي، تارة يطلق ويراد به الواقع في الخارج؛ أي الخارج عن اعتبار العقل، كما يقال: هذا الخبر له مطابق في الخارج، وهذا ليس فيه مطابق، وهو مرادف لنفس الأمر. وتارة يطلق على ما يقابل الوجود الذهني، كما في بحثنا هذا، وهذا المعنى أخص من المعنى الأول كما عرفت آنفا. وإذا تقرر هذا، ظهر أنه لا يلزم من عدم مطابق للخبر في الخارج بالمعنى الأخص، أن لا يكون له مطابق فيه بالمعنى الأعم.
 
-### English
+### Commentary — English
 
 It follows that the mental existents just mentioned are kinds of real existent and of existent in nafs al-amr. Nafs al-amr is therefore broader than the external: whatever is realized externally is realized in nafs al-amr, but not everything realized in nafs al-amr is realized externally. The humanity of a Zayd who does not exist outside the mind, for example, is established in nafs al-amr without being realized externally. An objection may be raised: how can the humanity of this nonexistent Zayd be judged true, and his being a donkey false, when there is no external counterpart at all? A true statement, unlike a false one, is precisely one that has an external counterpart. We reply that external is equivocal. Sometimes it means what obtains independently of the intellect's act of consideration, as when we say that a report has a counterpart in reality or lacks one. In that use it is synonymous with nafs al-amr. At other times it means what stands in contrast to mental existence, as in our present division. This second meaning is narrower than the first. Consequently, a statement's lacking a counterpart in the external in the narrower sense does not entail that it lacks a counterpart in the broader sense.
 
@@ -657,11 +688,11 @@ It follows that the mental existents just mentioned are kinds of real existent a
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 لا يقال: الضرورة قاضية ههنا بأن كل موجود ليس له وجود في القوى المدركة لابد وأن يكون له في الخارج عن تلك القوى وجود، وإلا لا يكون موجودا أصلا، والقول بأن وراء الوجودين أمرا آخر يسمى بنفس الأمر، فمما يحتاج هليته إلى بيان، وإثباته إلى برهان. لأنا نقول: قد قيل في إثباته أنه قد ثبت بمقتضى القوانين العقلية وجود موجود في الخارج قائم بنفسه غير ذي وضع مشتمل بالفعل على جميع المعقولات التي يمكن أن تخرج إلى الفعل، بحيث يستحيل عليه، وعليها التغير والاستحالة والتجدد والزوال، ويكون هو وهي بهذه الصفات أزلا وأبدا، يسمونه بالعقل الكل، واللوح المحفوظ عندهم إشارة إليه. فقد أورد عليه بعض المتأخرين نقضا بالواجب والعقول، فإنه يلزم أن لا يكون لهما وجود في نفس الأمر حينئذ، وحقق بعد ذلك بما حاصله: أن نفس الأمر عبارة عن حقائق الأشياء بحسب ذواتها مع قطع النظر عن الأمور الخارجة عنها. ولا يخفى أن هذا التحقيق إنما أفاد ههنا زيادة إجمال من القول، اللهم إلا أن يحمل كلامه على ما ذهب إليه المتقدمون، من أن سائر المعقولات من الصور والمعاني، لها تمثل في نفسه وتقرر في ذاته على ما هو مذهب المحققين، لكن لما كان المعترض من نفي هذا القول، لا يمكن حمل كلامه عليه.
 
-### English
+### Commentary — English
 
 One should not object that necessity dictates that anything existent which does not exist in the cognitive faculties must exist outside them, or else not exist at all; hence a third order beyond these two, called nafs al-amr, requires its existence to be demonstrated. We reply that one attempted demonstration proceeds as follows. Rational principles establish an externally existing, self-subsistent being without spatial position, actually containing all intelligibles capable of becoming actual. Neither it nor those intelligibles can change, undergo alteration, newly arise, or cease; it and they possess these characteristics eternally. This is called the universal intellect, and the Preserved Tablet is taken to refer to it. A later thinker objected by citing the Necessary and the intellects: on this account, they would have no existence in nafs al-amr. He then proposed an account whose gist was that nafs al-amr means the realities of things according to their own essences, abstracting from matters external to them. But this explanation only adds obscurity—unless his words are understood in the ancient sense that all intelligible forms and meanings are represented and established in that intellect itself, as the people of realization maintain. Since the objector denies that position, however, his statement cannot be interpreted in this way.
 
@@ -679,11 +710,11 @@ One should not object that necessity dictates that anything existent which does 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 والوجه في تحقيق هذا الكلام على طريقتهم أن يقال: إن نفس الأمر عبارة عما ثبت فيه الصور والمعاني الحقة؛ أعني العالم الأعلى الذي هو عالم المجردات، ويؤيده إطلاق عالم الأمر على هذا العالم، وذلك لأن كل ما هو حق وصدق من المعاني والصور لابد وأن يكون له مطابق في ذلك، كما يلوح تحقيقه من كلام معلم المشائين أرسطو في الميمر الثامن من كتابه في العلم الإلهي، المسمى ب«أثولوجيا»، بعد فراغه عن أن العالم الأعلى هو الحي التام الذي فيه جميع الأشياء، وأن هذا العالم الحسي كالصنم والأنموذج لذلك العالم من أن أول فعل الحق هو العقل الأول؛ فلذلك صار له من القوة ما ليس لغيره، وأنه ليس جوهر من الجواهر التي بعد العقل الأول، إلا وهو من فعل العقل الأول، وإذا كان هذا كذلك، قلنا: إن الأشياء كلها هي العقل، والعقل هي الأشياء، وإنما صار العقل هو جميع الأشياء؛ لأن فيه جميع كليات الأشياء وصفاتها وصورها وجميع الأشياء التي كانت وتكون مطابقة لما في العقل الأول كما أن معارفنا التي في نفوسنا مطابقة للأعيان التي في الوجود، ولا يمكن غير ذلك. ولو جوزنا غير ذلك؛ أعني أن يكون بين تلك الصور التي في نفوسنا وبين الصور التي في الوجود تباين أو اختلاف، ما عرفنا تلك الصور، ولا أدركنا حقائقها؛ لأن حقيقة الشيء ما هو به هو، وإذا لم يكن، فلا محالة غيره، وغير الشيء نقيضه. فإذن جميع ما تدركه النفس وتتصوره من أعيان الموجودات، هو تلك الموجودات، إلا أنه بنوع ونوع. وإنما أوردت هذا الكلام كله؛ لأنه مع انطوائه لما نحن بصدده مشتمل أيضا على تحقيق معنى الحقيقة، ومعنى الصدق والحق، وسبب تسمية هذا الوجود بالوجود الحقيقي وغيره من اللطائف، فليتأمل.
 
-### English
+### Commentary — English
 
 The appropriate explanation on their method is that nafs al-amr denotes that in which true forms and meanings are established: the higher world, the world of immaterial beings. Calling it the world of the Command supports this understanding. Every true meaning or form must have a corresponding reality there. An exposition of this may be discerned in what the teacher of the Peripatetics, Aristotle, says in the eighth discourse of the work on divine science called the Theology. Having explained that the higher world is the complete living being containing all things, and that the sensible world is like its image and model, he says that the Real's first act is the First Intellect. For that reason it possesses a power possessed by nothing else, and every substance after it is an effect of it. On this account, all things are intellect and intellect is all things, because intellect contains all their universals, attributes, and forms. Everything that has been or will be corresponds to what is in the First Intellect, just as the cognitions within our souls correspond to the entities that exist; it cannot be otherwise. Were we to allow a difference or disparity between the forms in our souls and the forms in existence, we would neither know those forms nor apprehend their realities. For a thing's reality is that through which it is what it is; without this, what is apprehended would be something else, and what is other than the thing is its negation. Thus everything the soul apprehends and conceives of existing entities is those entities themselves, though in one mode here and another there. I have reproduced this entire discussion because, besides bearing on our present question, it clarifies reality, truth and the real, the reason for calling this mode of existence real existence, and other subtle matters. Reflect upon it.
 
@@ -702,11 +733,11 @@ The appropriate explanation on their method is that nafs al-amr denotes that in 
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 واعلم: أن أكثر مباحث هذا الكتاب لبعده عن الطبائع، وغرابته عن الأذهان منطوية على نصوص المشايخ لما أنها عرضة لأنظار أهل الاستدلال، وقل ما يوجد فيهم الناقد البصير، فلابد من التعرض فيها لما يصلح؛ لأن يستند إليه ويعتمد عليه على ما اقتضت عادتهم وجرت عليه استفادتهم وإفادتهم ليطمئن به قلوبهم بعض الاطمئنان، عسى الله أن يفتح عليهم بمفاتيح ذلك الإذعان والإيمان أبواب الحق واليقين، فإنه هو الفتاح المبين، وإلا فأمثال هذه الأبحاث لا يليق بها الاستشهاد بالأقاويل النقلية، كما لا يحتاج إليه نظم البراهين العقلية، وهذا كله على رأي أهل النظر والاستدلال، وباقي الألفاظ لاشتهار معانيها المتعارفة عندهم وعدم الاشتباه فيها ما احتيج إلى التعرض لها ههنا.
 
-### English
+### Commentary — English
 
 Know that most of this book's discussions, being remote from ordinary dispositions and unfamiliar to minds, incorporate passages from the masters. They will be exposed to the scrutiny of those who reason by inference, among whom a perceptive critic is seldom found. It is therefore necessary to mention authorities on whom such readers can rely, in keeping with their customary ways of learning and teaching, so that their hearts may acquire some confidence. Perhaps God will use the keys of that assent and trust to open for them the doors of truth and certainty, for He is the clear Opener. Otherwise, discussions of this kind do not properly rest on citations of transmitted statements, just as the construction of rational demonstrations does not require them. All the foregoing has been according to the view of reflective investigators and reasoners. The remaining terms, whose conventional meanings are familiar among them and not liable to confusion, need not be discussed here.
 
@@ -723,11 +754,11 @@ Know that most of this book's discussions, being remote from ordinary dispositio
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 وأما عند المحققين، فالوجود ليس شيئا زائدا على الموجودات؛ بل الموجودات إنما هي جزئياته النوعية، المقول هو عليها بهو هو، وتنوعاته المعينة المتمائزة بمجرد النسب، وأحوالها الطارئة لها بحسب المدارك والمشاعر. فإن أعيان تلك الحقائق هي عين هويتها ووجودها، لا غير، كما يلوح تفصيل ذلك من تحقيق الشيخ رحمه الله في كتابه المسمى ب«إنشاء الدوائر»، حيث قال: «اعلم أن الوجود والعدم ليسا بشيء زائد على الموجود والمعدوم. لكن الوهم يتخيل أن الوجود والعدم صفتان راجعتان إلى الموجود والمعدوم، ويتخيلهما كالبيت قد دخلا فيه، ولهذا تقول: قد دخل هذا الشيء في الوجود بعد إن لم يكن، وإنما المراد بذلك عند المحققين: أن هذا الشيء وجد في عينه، والوجود والعدم عبارتان عن إثبات عين الشيء ونفيه. ثم إذا ثبت عين الشيء أو انتفى، فقد يجوز عليها الاتصاف بالعدم والوجود معا، وذلك بالنسبة والإضافة، فيكون زيد الموجود في عينه موجودا في السوق، معدوما في الدار، فلو كان العدم والوجود من الأوصاف التي ترجع إلى الموجود، كالسواد والبياض، لاستحال وصفه بهما معا؛ بل إذا كان معدوما لم يكن موجودا، كما أنه إذا كان أسود لا يكون أبيض، وقد صح وصفه بالوجود والعدم معا في زمان واحد، هذا هو الوجود الإضافي والعدم الإضافي مع ثبوت العين. فإذا صح أنه ليس بصفة قائمة بالموصوف، ولا بموصوف معقول وحده دون إضافة، فثبت أنه من باب الإضافة والنسب مطلقا، مثل المشرق والمغرب واليمين والشمال والأمام والوراء…». إلى هنا كلامه بعبارته الشريفة.
 
-### English
+### Commentary — English
 
 For those who have attained realization, however, existence is not something additional to existing things. Rather, existing things are its specific particularizations, of which it is predicated as what they are: its determinate varieties, distinguished merely through relations and the states that accrue to them in accordance with the faculties of apprehension and awareness. The very entities of these realities are their own identity and existence, and nothing else. The detailed sense emerges from the Shaykh's discussion in his work called The Construction of Circles: ‘Know that existence and nonexistence are not something additional to the existent and the nonexistent. Yet estimation imagines them as attributes referring to the existent and nonexistent, and imagines them as a house into which things have entered. Hence one says that something entered existence after not having been. What the people of realization mean is that the thing came to exist in its own entity: existence and nonexistence express the affirmation and negation of the entity itself. Once the entity is affirmed or denied, it may be qualified by existence and nonexistence together, through relation and correlation. Thus Zayd, who exists in himself, is present in the market and absent from the house. Were existence and nonexistence intrinsic attributes like blackness and whiteness, it would be impossible to qualify him by both: if nonexistent, he would not be existent, just as if black he would not be white. Yet he can correctly be described as existent and nonexistent at the same time. This is relative existence and relative nonexistence, while the entity itself is established. Once it is clear that this is neither an attribute subsisting in a subject nor a subject intelligible on its own without relation, it is established that it belongs wholly to relations and correlations, like east and west, right and left, front and back…’ Here ends his own noble wording.
 
@@ -746,11 +777,11 @@ For those who have attained realization, however, existence is not something add
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 أطلق عنان الفكر في فحاويها وأمعن لحاظ النظر في مطاويها، حتى يظهر لك أن ما فهمه المتأخرون من لفظ الوجود واصطلحوا عليه، حيث ذهبوا إلى أنه من الاعتبارات العقلية العارضة للموجودات في العقل ليس من الوجود الحقيقي الذي هو أس عقائد المحققين ومبنى معاقدهم في شيء، ولا من الصفات الحقيقية المختصة به؛ بل إنما هو من الإضافات التي لا دخل لها في حقيقة الوجود أصلا، كما تبين منها أيضا منشأ غلطهم ومزال قدمهم. والعجب كل العجب أن ما استدل به صاحب الإشراق على اعتبارية الوجود، هو أمر النسبة على الوجه الذي ذكره الشيخ رحمه الله بعينه، حيث جعل مفهوم زيد يوجد في السوق، وزيد يوجد في الدار، وزيد يوجد في الذهن، وزيد يوجد في العين، كلها بمعنى واحد، وهو معنى النسبة المشار إليها، قد جعل معنى الوجود منحصرا في المعنى النسبي بأمثال هذه الدلائل، وسيجيء لهذا البحث مزيد تحقيق، إن شاء الله.
 
-### English
+### Commentary — English
 
 Give thought free rein over the implications of these words and examine their inner content carefully. It will become clear that what later thinkers understood by the term existence, and made their convention when they treated it as an intellectual consideration attaching mentally to existents, is not the real existence on which the doctrines and fundamental commitments of the people of realization are based, nor one of its proper real attributes. It is merely a relation that does not enter into the reality of existence at all. The source of their error and the point at which they slipped thus become apparent. What is especially astonishing is that the author of the Philosophy of Illumination argues for existence's conceptual status by using precisely the relational meaning described by the Shaykh. He treats ‘Zayd exists in the market’, ‘Zayd exists in the house’, ‘Zayd exists in the mind’, and ‘Zayd exists in external reality’ as having one and the same meaning: the relation just mentioned. By arguments of this kind he confines the meaning of existence to the relational sense. This question will receive further examination below, God willing.
 
@@ -767,11 +798,11 @@ Give thought free rein over the implications of these words and examine their in
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 وأما لفظ الكون فقد قال الشيخ في شرح الألفاظ على طريقة أهل الله: «إن الكون كل أمر وجودي»، وتحقيق معنى هذا الكلام يحتاج إلى تمهيد مقدمة جليلة الجدوى، وهي أن للوحدة اعتبارين: أحدهما ذاتي لها، وهي بذلك الاعتبار تسمى ب«الوحدة المطلقة والحقيقية»، وهي كون الشيء بحيث لا يعتبر في مفهومه ما يشعر بتعدد الوجوه والإثنينية أصلا، حتى أن عدم اعتبار الكثرة أيضا غير معتبر في مفهومه، لما فيه من الإشعار بمقابلتها للكثرة المستلزمة للإثنينيّة، فالواحد بهذا الاعتبار لا يكون في مقابلة شيء، ولا في مقابلته شيء، فلا يكون مقابلة للكثير، فيكون غير الواحد المعتبر في الأعداد، وقولهم: «الله واحد لا بالعدد» إشارة إلى هذا المعنى. والثاني لاحق لها، عارض إياها، وهي بذلك الاعتبار تسمى ب«الوحدة الإضافية والنسبية»، وهو كون الشيء لا ينقسم في ذاته إلى الأمور المتعددة من حيث هو كذلك، والواحد بهذا المعنى هو الذي قيل فيه: إنه مقابل للكثير تقابلا عرضيا.
 
-### English
+### Commentary — English
 
 As for the term kawn, the Shaykh says in his explanation of the vocabulary of the people of God that it means every existential affair. To establish the sense of this statement requires a preliminary point of great importance: unity admits two considerations. One belongs to it intrinsically; under this consideration it is called absolute and real unity. It is a thing's being such that its concept includes nothing suggesting a plurality of aspects or any duality at all. Even the non-consideration of multiplicity is not included in the concept, since that would suggest an opposition to multiplicity and thus entail duality. The one under this consideration stands opposed to nothing, and nothing stands opposed to it. It is therefore not opposed to the many and is not the one considered in numbers. The saying ‘God is one, not numerically’ points to this meaning. The second consideration attaches to unity incidentally; under it unity is called relational or relative unity. It is a thing's not being divided in itself into multiple items insofar as it is so considered. This is the one said to stand in an accidental opposition to the many.
 
@@ -789,11 +820,11 @@ As for the term kawn, the Shaykh says in his explanation of the vocabulary of th
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 ثم أن الكثرة أيضا لها اعتباران: أحدهما ذاتي لها، وهي بذلك الاعتبار يسمى «الكثرة الحقيقية»، وهي كون الأشياء المتعددة بحيث لا يعتبر فيها ما يشعر بالجهة الاتحادية وما به الاشتراك أصلا، حتى أن عدم اعتبار الوحدة أيضا غير معتبر ههنا، لما فيه من الإشعار بالجهة الاتحادية. فلئن قيل: عدم اعتبار ما يشعر بالجهة الاتحادية، جهة اتحادية، يمكن أن يشترك فيها أفراد الكثير، وكذلك عدم اعتبار ما يشعر بتعدد الوجوه مشعر بتعدد الوجوه في مفهوم الوحدة المطلقة، وذلك لأنه مفهوم عدمي لاحق لها بالإضافة إلى الغير، فيكون مغايرا لحقيقتها ضرورة، ويلزم حينئذ تعدد الجهات.
 
-### English
+### Commentary — English
 
 Multiplicity likewise admits two considerations. One belongs to it intrinsically; under this consideration it is called genuine multiplicity. It consists in the multiple things being considered without anything suggesting a unifying aspect or a common element. Even the non-consideration of unity is not itself included, since that would suggest a unifying aspect. An objection may be raised: the non-consideration of a unifying aspect is itself a unifying aspect in which the members of the multiplicity can share. Similarly, excluding whatever suggests a plurality of aspects introduces a plurality of aspects into the concept of absolute unity. For that exclusion is a negative concept attached to unity in relation to something else, and must therefore differ from its reality; a plurality of aspects follows after all.
 
@@ -810,11 +841,11 @@ Multiplicity likewise admits two considerations. One belongs to it intrinsically
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 قلنا: إن للعقل أن يفرض للأمور المجهولة حقائقها من حيث هي هي جهاتا، بالنظر إلى ذواتها بتصور تلك الحقائق، ويعبر عنها بتلك الجهات، وإن كانت متنافية لتلك الحقائق بالنظر إلى الخارج عنها، كما في قولنا: المجهول مطلقا يمتنع الحكم عليه، فإنه فرض للذات المجهولة مطلقا وصفا معلوما، يتصورها به، ويحكم عليها باعتباره، مع منافاة تلك الذات من حيث هي الذات لهذا الوصف. فإن قلت: كيف يتصور أحد المتنافيين بالآخر، ويحكم عليه باعتباره، والوجه الذي يعلم به الأشياء ويحكم عليها به، يجب أن يكون من الأوصاف المحمولة عليها بهو هو. قلت: إن الأوصاف لها اعتباران: أحدهما بحسب طبائعها في نفسها، وهي بهذا الاعتبار لا منافاة بينها وبين ذواتها أصلا؛ بل لابد من صدقها عليها بهو هو. والآخر بحسب العوارض اللاحقة إياها باعتبار حصولها في العقل، وإنما يتحقق المنافاة بهذا الاعتبار، وهذا ظاهر في المثال المفروض، فإن وصف المجهولية إذا اعتبر طبيعته من حيث هي هي، لا منافاة بينه وبين ذاته أصلا، وإلا لا يكون ذاتا له، ولا يكون صادقا عليها بهو هو.
 
-### English
+### Commentary — English
 
 We reply that intellect can posit aspects through which to conceive the realities of things whose realities are unknown in themselves, and can refer to them through those aspects. This remains possible even when, under an external consideration, those aspects conflict with the realities concerned. Consider the statement, ‘No judgment can be made about what is wholly unknown.’ Here a known description is posited for the wholly unknown reality, through which it is conceived and judged, even though being known in this manner conflicts with that reality considered as wholly unknown. You may ask how one of two incompatible things can be conceived through the other and judged under its aspect. The aspect by which a thing is known and judged must be a description truly predicable of it as what it is. I reply that descriptions admit two considerations. First, they may be considered according to their natures in themselves; under this consideration there is no incompatibility between them and their subjects, and they must be truly predicable of those subjects. Second, they may be considered together with the features that accrue to them through occurring in intellect. Incompatibility arises only under this second consideration. This is plain in the example: the nature of unknownness, considered just in itself, is not incompatible with its subject. Otherwise it would not be that subject's description or be truly predicated of it.
 
@@ -831,11 +862,11 @@ We reply that intellect can posit aspects through which to conceive the realitie
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 أما إذا اعتبر معه الهوية اللاحقة له باعتبار حصوله في العقل، تتحقق حينئذ باعتبار هذه الهوية العرضية التي إنما تلحقه بالنظر إلى الخارج عن تعينه المنافاة بينه وبين الذات، ولا شك أن العوارض اللاحقة للأشياء باعتبار الأمور الخارجة عن أنفسها، لا دخل لها في الأحكام الذاتية، وما يعرض تلك الأشياء لذواتها، وإلا يلزم أن لا يكون شيء من المفهومات باقيا على كليتها عند تصورها؛ إذ كل ما حصل في العقل باعتبار حصوله فيه جزئي، وهذا من مقتضى الحكمة البالغة أنه قد جعل الله للعقل قوة خاصة وغريزة بها يتصور المفهومات الحاصلة فيه كما هي هي معراة عن اللواحق الطارئة لها باعتبار حصولها العرضي وتقيداتها التابعة للمحال الجزئية؛ حتى يتمكن من تميز الأحكام الحقة التي لها بحسب الأمر بعينه المفهمة المقومة لها والمميزة إياها في ذاتها عن غيرها من اللواحق العارضة لها باعتبار المجالي والمراتب؛ ليقدر بذلك على تصور الأشياء على ما هي عليه في الوجود، والتجلي بالحقائق كما هي هي، وهذه القوة من آثار ما أشير إليه آنفا بأنه أول فعل الحق العقل الأول ومن تصور تعيناته في هذه النشأة، فتنبه.
 
-### English
+### Commentary — English
 
 If, however, the description is considered together with the identity it acquires by occurring in intellect, an incompatibility between it and its subject arises through that incidental identity, which belongs to it only by an extrinsic consideration. Features that accrue to things through circumstances outside their own natures do not enter into their intrinsic judgments or the properties they possess through themselves. Otherwise no concept could remain universal when conceived, since whatever occurs in intellect is, considered in that occurrence, a particular. It belongs to God's consummate wisdom that He has given intellect a special power and innate capacity to conceive the concepts present in it just as they are, stripped of the features arising from their incidental occurrence and the restrictions dependent on particular receptacles. Intellect can thereby distinguish the true judgments that belong to them as they are—the judgments making their constitution intelligible and distinguishing them in themselves—from the other features that accrue to them through their loci of appearance and degrees. Thus it can conceive things as they are in existence and become illumined by realities as they are. This power is among the effects of the First Intellect, of which we said earlier that it is the Real's first act, and among the forms of its determinations in this realm. Take heed.
 
@@ -853,11 +884,11 @@ If, however, the description is considered together with the identity it acquire
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 والاعتبار الثاني للكثرة؛ وهو الذي يسمى «الكثرة الإضافية والنسبية»، وهو كون الشيء بحيث ينقسم إلى الأمور المتعددة من حيث هو كذلك، والفرق بين هذا الاعتبار، والاعتبار اللاحق للوحدة غير مختف. ثم إذا تحقق هذا، فنقول: إن الوجود الواحد الحق الظاهر بنوره الذاتي، الذي هو المجلي له باعتبار غيب هويته المطلقة، إذا اعتبرت التعددات الظاهرة في مجلاه، التي هي عبارة عن تعدد الشؤون المتجلي، كما ستحقق في موضعه، إن شاء الله، حصل هناك باعتبارها في الحضرتين أربع اعتبارات: وحدة وكثرة حقيقتان، ووحدة وكثرة نسبيتان اعتباريتان.
 
-### English
+### Commentary — English
 
 The second consideration of multiplicity is what is called relative or relational multiplicity: a thing's being such that it is divided into multiple items insofar as it is so considered. The difference between this consideration and the incidental consideration of unity is evident. With this established, we say that true, one existence appears through its own essential light, which discloses it in respect of the hiddenness of its absolute identity. When the pluralities appearing in its locus of disclosure are considered—pluralities consisting in the multiple affairs of the self-disclosing reality, as will be established in its proper place, God willing—four considerations arise across the two presences: genuine unity and genuine multiplicity, and conceptually considered relational unity and relational multiplicity.
 
@@ -875,11 +906,11 @@ The second consideration of multiplicity is what is called relative or relationa
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 فمتى اعتبرت الوحدة الحقيقية في الحضرتين المذكورتين المتميزتين بنسبتي البطون والظهور، قيل: «حق». وإن اعتبرت الكثرة الحقيقية فيهما، قيل: «خلق» و«سوى» و«مظاهر» و«صور» و«شؤون» ونحو ذلك. وإن اعتبرت الوحدة النسبية بأن أخذت جميعها نسبا راجعة إلى عين واحدة، قيل: هي «أسماء الحق» وأحواله. وإن اعتبرت الكثرة النسبية بأن أخذت تلك الكثرة من حيث إنها منتسبة إلى الأمر الجامع انتسابا ما وعقلت متوحدة مجردة عن الصبغة الوجودية، فهي «الأمر» المشار إليه المنسوب إلى الوجود المسمى ب«الكون» و«حقيقة معنى العالم» و«عينه الثابتة»، ونحو ذلك.
 
-### English
+### Commentary — English
 
 When genuine unity is considered in the two presences distinguished by hiddenness and manifestation, the designation is the Real. When genuine multiplicity is considered in them, the designations are creation, otherness, loci of manifestation, forms, affairs, and the like. When relational unity is considered—taking them all as relations returning to one entity—they are called the names and states of the Real. When relational multiplicity is considered—taking that plurality insofar as it stands in some relation to the comprehensive principle, and conceiving it as unified but stripped of existential coloration—it is the affair referred to earlier as related to existence. It is called kawn, the reality signified by the cosmos, its fixed entity, and similar names.
 
@@ -897,11 +928,11 @@ When genuine unity is considered in the two presences distinguished by hiddennes
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 فعلم من هذا: أن لفظ الكون بالمعنى الذي ذهب إليه المحققون، يباين لفظ الوجود على اصطلاحهم، وأما على رأي أهل النظر، فبينهما تساو؛ بل ترادف على ما سبق، فيكون بين معنيي الوجود، عموم وخصوص من وجه؛ لتصادقهما في الماهيات الحقيقية، وتخالفهما في الحقائق الإلهية والصور الكونية. لا يقال: الماهية عند أهل النظر غير موجودة في نفسها، فكيف تكون مادة التصادق؟ لأن الكلام إنما هو في الماهيات الحقيقية الموجودة، وهي بذلك الاعتبار صالحة للتصادق وبين معنيي الكون عموم وخصوص مطلقا؛ ثم إنه، قد ظهر لك مما سلف من البيان: أن للوحدة اعتبارتين.
 
-### English
+### Commentary — English
 
 It follows that kawn, in the meaning adopted by the people of realization, differs from existence in their terminology. For the reflective investigators, by contrast, the two are coextensive—indeed synonymous, as explained above. The two meanings of existence therefore overlap without either simply containing the other: they coincide in real quiddities, while diverging in divine realities and cosmic forms. It should not be objected that, for the reflective investigators, a quiddity does not exist in itself and therefore cannot provide a case in which the two meanings coincide. The discussion concerns real, existing quiddities, which under that consideration can indeed provide such a case. Between the two meanings of kawn, on the other hand, there is unrestricted inclusion of the narrower in the wider. The preceding account has also shown that unity admits two considerations.
 
@@ -919,11 +950,11 @@ It follows that kawn, in the meaning adopted by the people of realization, diffe
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 فاعلم، أن أحد اعتباري الوحدة وهو الحقيقي منهما، هو معنى «الإطلاق» الذي يلحق الوجود لذاته، ويقتضيه أولا، فإنه من خواصه اللازمة البينة، فحقيقة الوجود حيث يظهر لا يظهر إلا به، ولا يتحقق أحكامها إلا باعتباره، وظاهر الوجود في كلام المحققين عبارة عنه، فإن الظاهر من الشيء هو أول ما يدرك به الشيء منه، والوجوب إشارة إليه.
 
-### English
+### Commentary — English
 
 Know, then, that the genuine consideration of unity is the meaning of unrestrictedness which belongs to existence through itself and which existence primarily requires. It is one of existence's evident and necessary properties. Wherever the reality of existence appears, it appears only through this unrestrictedness, and its governing properties are realized only under that consideration. This is what the people of realization mean by the manifest aspect of existence, for what is manifest in a thing is that through which the thing is first apprehended. Necessity points to this aspect.
 
@@ -940,11 +971,11 @@ Know, then, that the genuine consideration of unity is the meaning of unrestrict
 
 https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/
 
-### Arabic
+### Commentary — Arabic
 
 والثاني من الاعتبارين، وهو النسبي منهما، هو الذي يلاحظ فيه الرقائق الارتباطية الراجعة إلى العين الوحدة، ولا شك أنه إنما يلحق الوجود بعد اعتبار لحوق العلم إياه، فهو الذي تقتضيه الطبيعة العلمية أولا، وتظهر به أحكامها، و«الإمكان» إشارة إليه. وههنا نكتة شريفة لطيفة يظهر بالتأمل، وسيجيء لهذا الكلام ولباقي الألفاظ المتداولة لديهم في أثناء الكلام على الرسالة زيادة بيان وتحقيق، إن شاء الله وحده العزيز، فلا نطول المقدمة بها.
 
-### English
+### Commentary — English
 
 The second consideration, the relational one, is that in which the subtle connections returning to the single entity are taken into account. It belongs to existence only after knowledge's belonging to existence has been considered. It is therefore what the nature of knowledge primarily requires and through which its governing properties become manifest. Possibility points to this aspect. There is a noble and subtle point here that becomes apparent through reflection. This discussion and the other terms used by the people of this discipline will receive further explanation and investigation in the course of the commentary, God alone, the Mighty, willing. We shall therefore not prolong the prolegomenon with them.
 
@@ -956,7 +987,7 @@ The second consideration, the relational one, is that in which the subtle connec
 
 ---
 
-# II. Main commentary: QT-001–QT-019
+# II. Continuous main commentary
 
 ## SH-001 — The two objectives announced in the opening
 
@@ -964,11 +995,7 @@ The second consideration, the relational one, is that in which the subtle connec
 
 https://ablibrary.net/book_content/b/17638/244?lang=ar
 
-**Linked matn:** QT-001
-
-**Comparator:** Lumbard, pp. 468–469; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 أقول : اعلم ان هذه القرينة المُصَدَّر بها هاهنا مع اشتمالها على ما هو الواجب تقديمه . في نظر التأليف و التصنيف ، متضمنة ايضاً لما يدل عليه مقاصد هذه الرسالة اجمالًا على ما هو مقتضى صناعة التعليم و التفهيم ، و ذلك لأن الكلام فيها يرجع إلى مطلبين :
 الأول ، إثبات وحدة مطلق الوجود و وجوبه ، و حصر ما يستوجب الحمد ، من الصفات الكماليَّة فيه ، فيكون قوله : الحمد لوليّه ، إشارة إليه .
@@ -978,7 +1005,7 @@ https://ablibrary.net/book_content/b/17638/244?lang=ar
 و قوله : و أشار إليه المحققون ، إشارة إلى المتقدمين كالأنبياء ، سلام اللَّه عليهم ، و تلامذتهم الأولياء من الهرامسة و الحكماء القدماء الذين لا يقصدونها في غالب عباراتهم الا بنوع من الرّمز و الإيماء جرياً في كل زمان على مقتضى مدارك اهله و تنزلًا إلى مدارج أفهامهم ، و لا يدلّون عليها الا بتلويح يكون فيه ضرب من الستر و الخفاء تعميماً لما افاده على الخاص و العام جميعاً من جوامع كلامهم .
 قوله : الناظرين من المجادلين ، يمكن ان يكون المراد به المتكلمين ، كما ان القصد بقوله ، الفضلاء الباحثين ، طائفة من الحكماء المشّاءين .
 
-### English
+### Commentary — English
 
 I say: know that this opening formula, besides containing what ought to be placed first when composing and arranging a book, also indicates the treatise's purposes in outline, as the art of instruction and explanation requires. Its discussion returns to two objectives.
 
@@ -997,8 +1024,6 @@ By ‘reflective investigators among the disputants’, he may mean the theologi
 3. The identification of the two groups of critics is expressly tentative in the first case: يمكن أن يكون. The translation preserves that qualification.
 4. Lumbard pp.468–469 was consulted for comparison; the English here is independently translated from A.
 
-Source-text SHA-256: `229d84b80dc81f1ceb964b8d8a082cf752cbc6c031f2bc8f634f3da762dff7e0`
-
 ---
 
 ## SH-002 — The opponent's physiological objection and its proposed inference
@@ -1007,11 +1032,7 @@ Source-text SHA-256: `229d84b80dc81f1ceb964b8d8a082cf752cbc6c031f2bc8f634f3da762
 
 https://ablibrary.net/book_content/b/17638/245?lang=ar
 
-**Linked matn:** QT-002
-
-**Comparator:** Lumbard, pp. 469–470–471; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 أقول : اعلم ان من عادة المصنّف ، كما علم من تَصَفُّح كلامه في ساير كتبه ، ان يقرِّر اولًا عند إثبات المطالب النظريَّة كلام الخصم بما استدلّ به عليه بأوثق بيان ، و يجتهد في تأسيس قواعده و تشييد معاقده
 
@@ -1027,7 +1048,7 @@ https://ablibrary.net/book_content/b/17638/245?lang=ar
 التي هي من المشاهدات و الفطريَّة التي هي الأوليّات و العزيزية إلى هي الوجدانيات ، و ذلك لما في زعمهم من ان الحكم بتمايز الماهيات ، و تخالف المتعيّنات على ما هو مقتضى تلك المقدمات ، ينافي الحكم بهذه المسألة الرافعة لأحكام التفرقة و التميز .
 ثمَّ ان بُدوّ علامات الأمراض إذا كان مسبوقاً بارتكاب أسبابها ممّا يقضى به الحدس القويم و الذهن المستقيم على طريان ذلك المرض الخبيث ، و لهذا استعقب ذلك الاستدلال بقوله ، عقيب ارتكاب المجاهدات و الرياضات الجزافيَّة ، التي هي عبارة عن السهر و الجوع المفرطين الموجبين لاستيلاء المرّة السّوداء على الأعضاء الدماغيَّة الشريفة الأصليَّة التي هي مناط ساير الإدراكات العقليَّة التي هي المبدأ الأصلي للصورة المقوِّمة للحقيقة النوعية الانسانيَّة .
 
-### English
+### Commentary — English
 
 I say: know that it is the author's custom, as a survey of his other books shows, first to present an opponent's position and its supporting argument in the strongest formulation when establishing a theoretical conclusion. He strives as far as possible to secure its foundations and reinforce its connections. Only then does he explain the sources of its doubts and confusions and cut off the grounds of its specious arguments. He intended to follow that customary procedure in this treatise. He therefore began with what an opponent might use to demonstrate the unsoundness of the practitioners' path to their sought-for unveilings and experiential knowledge: the path called purification and emptying oneself. Its status here corresponds to the question of whether reasoning yields knowledge on the inferential path, and so it must precede the remaining investigations and discussions.
 
@@ -1053,8 +1074,6 @@ Furthermore, when the signs of an illness appear after its causes have been unde
 6. Raqīqa and munāsaba are rendered as subtle connection and correspondence; this retains the causal analogy rather than introducing a mechanical connector not present in the text.
 7. Inline reported readings retained separately from the reading text: ( موارد - خ ); ( لذلك - خ ); ( موجب - خ )
 
-Source-text SHA-256: `601361146efc50602cc8ec0b564458122d2ae0ac4d61936c6f39b0c5cd3d7e85`
-
 ---
 
 ## SH-003 — Reversing the objection—and acknowledging the disputed premise
@@ -1063,11 +1082,7 @@ Source-text SHA-256: `601361146efc50602cc8ec0b564458122d2ae0ac4d61936c6f39b0c5cd
 
 https://ablibrary.net/book_content/b/17638/248?lang=ar
 
-**Linked matn:** QT-003
-
-**Comparator:** Lumbard, pp. 471–472; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 أقول : و ذلك ، لأن ما استدلّوا به على سوء امزجة موضوعات القوى النفسانيَّة ، انّما هو دليل على صحَّة تلك الأمزجة و استقامتها ، فان ادراك القوى المدركة و المشاعر الشاعرة ، إذا كان مطابقاً لما في الأمر نفسه ، و يكون حكمها على الأشياء بما هي عليه ، انّما يدلّ على استقامة أمزجة موضوعاتها ، لأن صدور الأفعال عن الموضوعات سالمة عن النقص ، انّما هو دليل على صحَّتها ، فيكون الأمر في الاستدلال المذكور ، على خلاف ما ظنُّوه ، بل على عكس ما تخيَّلوه ، إذ ما جعلوه دليلًا على سوء مزاج موضوعات إدراكات القاطعين بالقطع اليقيني بالمسألة الحقَّة ، انما يدل على استحكام سوء مزاج موضوعات ادراك القاصرين عن تلك الدرجة . و ذلك لأن كل قوَّة و مبدأ ، طبيعيَّة كانت أو حيوانيّة أو نفسانيّة ، إذا جعلت لغاية مختصة بها ، ثم تخلفت عنها تلك الغاية في ترتُّبها عليها ، انّما يكون
 
@@ -1075,7 +1090,7 @@ https://ablibrary.net/book_content/b/17638/248?lang=ar
 فان قلت : القول بان مسألة التوحيد على النحو المذكور ، من جملة الإدراكات التي للأشياء على ما هي عليه ، و انّها الغاية المطلوبة للقوى النفسانيَّة ، اول المسألة و محل النزاع ، فكيف يصحّ الاستدلال به في طريقتهم ؟ .
 قلنا : فليكن هذه القضايا مسلَّمة موضوعة هاهنا ، حتى يبرهن عليها في الموضع الذي يليق به في أثناء الرسالة على ما هو المتعارف عندهم ، في إثبات المطالب النظريَّة .
 
-### English
+### Commentary — English
 
 I say: this is because what the opponents took as evidence of a disordered temperament in the substrates of the soul's faculties is instead evidence of those temperaments' health and soundness. When the apprehensions of the cognitive faculties and organs of awareness agree with things as they are, and their judgments concern things as they really are, this indicates the soundness of their substrates' temperaments. For the unimpaired issuing of operations from their substrates indicates their health. The situation in the proposed inference is therefore contrary to what the critics supposed—indeed, the reverse of what they imagined. What they offered as evidence of a disordered temperament in those who possess certain conviction of the true doctrine actually indicates an entrenched disorder in the cognitive substrates of those who fall short of that degree.
 
@@ -1090,8 +1105,6 @@ You may object that treating the doctrine of unity in the stated sense as an app
 3. Lumbard pp.471–472 provides a comparator, but the conditional and provisional force is controlled by A's Arabic.
 4. Inline reported readings retained separately from the reading text: ( ادراك - خ ); ( خاصّة - خ ); ( طريقهم - خ )
 
-Source-text SHA-256: `a002b41f67874f600f9ddec398918af0a9dc078ef262990451ae6dd027d484dd`
-
 ---
 
 ## SH-004 — Intellectual intuition, acquired learning, and enduring perfection
@@ -1100,16 +1113,12 @@ Source-text SHA-256: `a002b41f67874f600f9ddec398918af0a9dc078ef262990451ae6dd027
 
 https://ablibrary.net/book_content/b/17638/250?lang=ar
 
-**Linked matn:** QT-004
-
-**Comparator:** Lumbard, pp. 472–473; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 أقول : اعلم ، ان من دأب المصنّف ، ان يسند ساير المعاني الذَّوقيَّة أو الكشفيَّة ، على اختلاف العبارات ، إلى الحدس ، على ما هو قاعدة اهل النظر . فانّه ليس في مقابلة الفكر عندهم سوى الحدس ، شيء ، كما سيجيء تحقيقه ، و باقى ألفاظ الكتاب هاهنا ، ظاهر .
 ثم انّما خصَّص خطاب الوصيّة باخوان التحصيل ، اعنى المستبصرين بطريق اهل النظر ، لقرب استعدادهم إلى اقتناص المعارف الذوقيَّة ، و استيهالهم لاستفاضة الكمالات الحقيقيَّة ، بترقيهم عن الصور الخياليَّة و المحسوسات الجزئيّة ، إلى المعاني العقليَّة و المعارف الكليَّة ، و خلاصهم عن ربقة التقليدات الراسخة المستدعية لالتباس احكام الجزئيّات الوهميَّة بالحقائق الكليَّة ، عند العقل و قبوله للظنيّات و الوهميّات ، حين قبول اليقينيّات و العقليّات ، لكن لقصورهم عن تحصيل الكمال الحقيقي ، بحصرهم نوع الكمال على استحضار الاصطلاحات الجزئيّة المرتسمة في الآلات البدنية و القوى الجسمانيَّة المنطويَّة بانطواء موضوعاتها عند انقراض النشأة العنصريَّة ، ما نفعهم ذلك الترقي كلّ النفع ، و استرداف الكمال الحقيقي بالبقاء الأبدى في المتن إشارة إلى هذا المعنى .
 
-### English
+### Commentary — English
 
 I say: know that the author habitually ascribes all experiential or unveiled meanings, despite the different expressions used for them, to intellectual intuition, following the convention of reflective investigators. In their classification there is nothing opposed to discursive thought except intellectual intuition, as will be established later. The remaining expressions in this passage are clear.
 
@@ -1123,8 +1132,6 @@ Yet these investigators fall short of genuine perfection when they restrict perf
 2. Taqlīd is uncritical acceptance in this epistemic context; the translation does not reduce it to mere social custom.
 3. The passage criticizes confinement to recalled terminology, not every use of technical language or intellectual study.
 
-Source-text SHA-256: `973384090e2f84f2f61cf195356ee4590d280f200ad69be37c8682d0b2986afd`
-
 ---
 
 ## SH-005 — The shared meaning and reality of existence: quotations from the ancestor's philosophical works
@@ -1133,11 +1140,7 @@ Source-text SHA-256: `973384090e2f84f2f61cf195356ee4590d280f200ad69be37c8682d0b2
 
 https://ablibrary.net/book_content/b/17638/251?lang=ar
 
-**Linked matn:** QT-005
-
-**Comparator:** Lumbard, pp. 473–474–475–476–477; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 أقول : لمّا كان حقيقة الوجود بيِّنة الهليّة و المائيّة الحقيقيَّة ، كما سبق التنبيه عليه ، شرع في أحكامه ، و قدّم الاشتراك ، لأنه أقرب الأحكام بالنسبة إلى الحقيقة ، و مناط ساير الأحكام و الأبحاث المقصودة في هذه الرسالة كالوجوب و الوحدة .
 ثم ، ان بداهة الحقيقة و ان استلزمت بداهة اشتراكها ، لكنّ المصنّف قد أفاد ، هاهنا بوجوه منبِّهة مزيداً للتبصرة ، من جملتها ، ان مفهوم الوجود المعلوم بالبديهة لو لم يكن مشتركاً بين جميع الموجودات ، لم يلزم من فرض انتفائه من الكلّ ، انتفاء الكلّ بالكليَّة ، لكنّ التالي باطل ، لأنا نعلم بالضرورة ، ان كل ما ليس له مفهوم الكون المعلوم بالبديهة ، فهو منفىٌّ بالكليَّة .
@@ -1164,7 +1167,7 @@ https://ablibrary.net/book_content/b/17638/251?lang=ar
 الذي ذهبوا إلى اعتباريَّة هو الذي بيَّن المصنف بالوجوه المذكورة ، انَّه حقيقى . كما ان ما ذهبوا إلى انّه حقيقى من الماهيات ، ذهب إلى انّها من النسب و الاعتبارات . ثم انّهم لما خصَّصوا - لفظ الوجود من جميع مراتبه و اقسامه بما يكون له احد الكونين و عمومه للكائنات بالكون العيني ، انفصلوا عمّا ذهب إليه المحقِّقون في ذلك بالعموم و الخصوص على ما أشير إليه في المقدمة . و اما ما ذهب إليه المصنّف حسبما عرف عن تصفُّح كلامه - من وجه فيما دون هذه الرسالة فبالخصوص فقط دون العموم .
 و إذا تقرَّر هذا ، فتمّ كلامه معهم ، و استدلاله عليهم ، لأنَّ ما ثبت للعامَّة . لا بدَّ من ثبوته للخاصَّة .
 
-### English
+### Commentary — English
 
 I say: since the reality of existence is evident both as to whether it is and as to what it truly is, as was indicated previously, the author begins with its properties. He gives priority to its being common in meaning, because this is the property nearest to the reality itself and the basis of the other properties and investigations intended here, such as necessity and unity.
 
@@ -1201,8 +1204,6 @@ They restrict the term existence, throughout its degrees and divisions, to what 
 7. The claims about the reality of existence are the ancestor's and commentator's arguments. Their translation does not certify their philosophical validity.
 8. Inline reported readings retained separately from the reading text: ( عن - خ ); ( معنيى - خ ); ( الحقيقي - خ ); ( المعنى بالوجود ، لدينا - خ ); ( بالاعتبار - خ ); ( بالبديهة - خ ); ( المتبعة - خ ); ( يقتضي - خ ل ); ( تنزُّله - خ ل ); [ صناعتهم - ظ ]; [ عمّموه - ظ ]; ( من - خ ); ( لخواصِّه - خ )
 
-Source-text SHA-256: `49896b9c9d8fda1d97d83221e8285e091dd9636ce80cb2d3563f08a793ec6618`
-
 ---
 
 ## SH-006 — The argument from non-admission of nonexistence and five further proofs
@@ -1211,11 +1212,7 @@ Source-text SHA-256: `49896b9c9d8fda1d97d83221e8285e091dd9636ce80cb2d3563f08a793
 
 https://ablibrary.net/book_content/b/17638/256?lang=ar
 
-**Linked matn:** QT-006
-
-**Comparator:** Lumbard, pp. 477–478–479; independent translation from Arabic.
-
-### Arabic
+### Commentary — Arabic
 
 أقول : بعد إثبات اشتراك معنى الوجود ، شرع في بيان وجوبه الذي هو احد المقاصد ، و تقرير ذلك ، ان حقيقة الوجود من حيث هي هي ، لا يقبل العدم لذاتها ، و كلُّ ما لا يقبل العدم لذاتها ، يكون واجبة لذاتها ، أنتج انَّ حقيقة الوجود واجبة لذاتها . اما الكبرى فظاهرة و اما الصغرى فلان حقيقة الوجود لو كانت قابلة للعدم لذاتها ، لأمكن اتِّصافها به ، و لو أمكن اتِّصافها به ، لم يلزم من فرض وقوعه محال ، لكن التالي باطل ، لاستلزام فرض وقوعه المحال . و ذلك لان الموصوف حينئذ لا يخلو من ان يكون باقياً على حقيقته عند اتصافه بالعدم اولًا ، فان كان باقياً ، يلزم اتِّصاف احد النقيضين بالآخر ضرورة ، و ان لم يكن باقياً ، يلزم انقلاب طبيعة الوجود إلى طبيعة العدم ، و كلاهما بيِّن الاستحالة .
 هذا ما اكتفى به المصنِّف في إثبات وجوب الوجود ، إذ اللّبيب يكفيه اليسير ، و البليد لا يكفيه الكثير ،
@@ -1242,7 +1239,7 @@ https://ablibrary.net/book_content/b/17638/256?lang=ar
 الرابع ، الوجود موجود ، و وجوده نفسه ، و كلّما كان كذلك ، فهو واجب لذاته . اما كونه موجوداً ، فلما تقدَّم ، و اما انَّ وجوده نفسه ، فلانَّه لو لا ذلك ، لكان اما جزءاً له ، أو خارجاً عنه ، و الأول يفضي إلى تركيب الوجود ، و قد سبق بطلانه ، و الثاني يستلزم التسلسل المحال .
 الخامس ، الموجود شيء له الوجود ، و ما له الوجود أعمُّ من ان يكون عينه ، أو غيره ؟ بخلاف طبيعة الوجود ، فان الشيء ثابت لنفسه ، لأنَّ ما بالذات لا يمكن رفعه ، فلا يؤثِّر الخارج فيه ، و ما ثبت له الوجود لا بواسطة أمر ، فهو الواجب .
 
-### English
+### Commentary — English
 
 I say: after establishing the common meaning of existence, the author begins to explain its necessity, one of the treatise's objectives. The argument is this. The reality of existence, considered just as itself, does not of itself admit nonexistence. Whatever does not of itself admit nonexistence is necessary through itself. Therefore the reality of existence is necessary through itself. The major premise is evident. As for the minor: if the reality of existence admitted nonexistence through itself, its qualification by nonexistence would be possible. Supposing that qualification to occur would then entail no impossibility. But it does entail an impossibility. The subject either remains what it is while qualified by nonexistence or does not. If it remains, one contradictory is qualified by the other; if it does not, the nature of existence is transformed into the nature of nonexistence. Both are manifestly impossible.
 
@@ -1277,8 +1274,6 @@ Fifth: an existent is something possessing existence. Possessing existence is br
 5. The final proof's punctuation is unstable in the digital source. ‘Possessing existence is broad enough…’ renders the comparative أعمّ rather than reproducing an accidental question-mark as a logical interrogation.
 6. Inline reported readings retained separately from the reading text: ( ليتنبَّه - خ )
 
-Source-text SHA-256: `076a2ef6e77ae2ef4f00727dc78e15fe697f99ec53b4b81485f81789e068906b`
-
 ---
 
 ## SH-007 — Why genuine unrestrictedness is not a condition added to existence
@@ -1287,9 +1282,7 @@ Source-text SHA-256: `076a2ef6e77ae2ef4f00727dc78e15fe697f99ec53b4b81485f81789e0
 
 https://ablibrary.net/book_content/b/17638/260?lang=ar
 
-**Linked matn:** QT-007
-
-### Arabic
+### Commentary — Arabic
 
 أقول : إذ قد يطلق الوجود من حيث هو هو ، على المقيَّد بالعموم و الإطلاق اعنى الطبيعة به شرط لا شيء ، كما انَّه يطلق على المجرَّد من هذا القيد أيضاً ، اعنى الطبيعة لا به شرط شيء ، و المذكور في البرهان انّما هو إثبات وجوب الطبيعة من حيث هي هي ، شرع يبيِّن ان المثبت وجوبه ليس
 
@@ -1305,7 +1298,7 @@ https://ablibrary.net/book_content/b/17638/260?lang=ar
 و ليعلم المتفطِّن اللبيب ، ان هذا بيان شاف و برهان كاف للمستبصر الناقد ، على ان الحقيقة الحقَّة و الطبيعة الواجبة ، من حيث انّها طبيعة واجبة ، لا يمكن ان يشوبها شائبة القيد بوجه من الوجوه ، و لا يتطرّق إليها التعيُّنات الخارجة عنها بجهة من الجهات .
 نعم تعيُّنها انّما هو الإطلاق الحقيقي ، و أحديَّة الجمع الذاتي ، كما نبهَّت عليه في المقدمة ، فليتدبّر ، فانّها من جلائل النكت .
 
-### English
+### Commentary — English
 
 I say: existence considered just as itself is sometimes applied to what is qualified by generality and absoluteness—that is, the nature conditioned by the exclusion of anything else. It is also applied to what is free even of this condition: the nature taken without the condition of anything. Since the preceding demonstration established the necessity of the nature considered just as itself, the author now explains that what has been shown necessary is not what is qualified by generality. It is the reality unrestricted in the genuine sense, not absoluteness opposed to restriction, since that opposition itself constitutes a restriction. The Necessary cannot be restricted in any way.
 
@@ -1328,8 +1321,6 @@ Let the discerning reader understand that this is, for the perceptive critic, an
 3. This section lies beyond the end of Lumbard's supplied selection. It is translated directly from A, not reconstructed from modern English.
 4. The conclusion is the commentator's claim of adequacy for his proof, not an editorial certification that its premises are beyond dispute.
 
-Source-text SHA-256: `9c10643f4664a1a650f651b48a01d2915ecb5d95723a7c403ece54d1f9680611`
-
 ---
 
 ## SH-008 — Presenting the later Peripatetic alternative in its strongest form
@@ -1338,9 +1329,7 @@ Source-text SHA-256: `9c10643f4664a1a650f651b48a01d2915ecb5d95723a7c403ece54d1f9
 
 https://ablibrary.net/book_content/b/17638/263?lang=ar
 
-**Linked matn:** QT-008
-
-### Arabic
+### Commentary — Arabic
 
 أقول : بعد إثبات ما هو الحق ، أراد ان ينبِّه على إبطال ما ذهب إليه المتأخّرون من المشاءين ، مما نسبوه إلى الحكماء المحققين ، تحقيقاً لما مهّده بالبرهان ، و تشييداً لما اسَّسه من البنيان . فإنهم ذهبوا إلى ان الحقيقة الواجبة هي الطبيعة الخاصَّة التي هي فرد من افراد الوجود المطلق ، و مقابل للوجودات الخاصة الممكنة ، الا ان الوجودات الممكنات لها ماهيّات معروضة لها دون الطبيعة الخاصَّة الواجبة ، الا ان الوجودات الممكنات لها ماهيّات معروضة له دون الطبيعة الخاصَّة الواجبة ، فان الوجود نفس ماهيَّتها ، إذ ليس للواجب ماهية غير طبيعة الوجود ، كما قضت به البراهين القاطعة - ، فيكون هذه الطبيعة مما انتقض به الدليل المذكور ، ضرورة - فلهذا أورد مذهبهم في صورة النقض الإجمالي عليه .
 و تقرير ذلك ان الدليل بجميع مقدماته كما يستلزم الطبيعة المطلقة بالإطلاق الحقيقي ، كذلك يستلزم الطبيعة المطلقة من حيث انّها مطلقة ، التي هي من الطبايع الملزومة لها ، فانّها ايضاً وجود بحت لا اعتبار معها غير اعتبار عدم القيود ، و ذلك و ان كان من القيود الخارجة ، الا انَّه من الاعتبارات العدميَّة التي لا دخل لها في طبيعة الوجود ، و ما زاد باعتبارها على نفس الطبيعة شيء فتكون الطبيعة حينئذ بحتاً مجرَّداً .
@@ -1348,7 +1337,7 @@ https://ablibrary.net/book_content/b/17638/263?lang=ar
 
 من ملزومات ما ذكر . . .
 
-### English
+### Commentary — English
 
 I say: after establishing what is true, the author intends to expose the falsity of a position adopted by later Peripatetics and attributed by them to accomplished philosophers. This will confirm what he has prepared by demonstration and reinforce the structure he has established. They maintain that the necessary reality is a particular nature: one individual of unrestricted existence, standing in contrast to particular possible existences. Possible existences have quiddities that serve as their subjects, whereas the particular necessary nature does not, because existence is its very quiddity. Decisive demonstrations establish that the Necessary has no quiddity other than the nature of existence. This nature would therefore provide a counterexample to the preceding proof, and the author accordingly presents their position as an undifferentiated challenge to that proof.
 
@@ -1362,8 +1351,6 @@ Furthermore, since they predicate unrestricted existence of particular existence
 2. A repeats almost verbatim the sentence contrasting possible quiddities with the necessary nature. The Arabic source preserves that repetition; the English renders the repeated content once, with the duplication explicitly registered here.
 3. Malzūm means what entails a concomitant. It is not automatically translated as an efficient cause; causal claims are rendered only where the text makes them.
 
-Source-text SHA-256: `4048db8be27957dbfb113ba49ee5886c444d578a49ad2aae12439e4e50624b83`
-
 ---
 
 ## SH-009 — Graded predication, conceptual attachment, and the highest instance
@@ -1372,9 +1359,7 @@ Source-text SHA-256: `4048db8be27957dbfb113ba49ee5886c444d578a49ad2aae12439e4e50
 
 https://ablibrary.net/book_content/b/17638/264?lang=ar
 
-**Linked matn:** QT-009
-
-### Arabic
+### Commentary — Arabic
 
 أقول : هذا شروع في دفع ما يمكن إيراده على ما ذهب إليه المتأخّرون حتى يتحقَّق به - يحقَّق - مذهبهم ، و سيبيَّن بعد ذلك إبطاله ، جرياً على مقتضى عادته ، كما سبق التنبيه عليه .
 من جملة ذلك انَّه يلزم حينئذ ان تكون تلك الحقيقة ، أي الطبيعة الواجبة من الماهيّات المغايرة للوجود ، ضرورة وجوب تحقُّق المغايرة بين الملزوم و لازمه ، و حينئذ - يلزم ان تكون تلك الطبيعة مؤثِّرة في الوجود ، لا به شرط الوجود ، أي بدون اعتبار انضمامها بالوجود ، و ذلك لما تقرَّر ، ان الحقيقة الواجبة هي العلَّة التامة المؤثِّرة الموجبة بالذات ، بدون الاحتياج إلى امر خارج ، و اعتبار انضمامه معها .
@@ -1396,7 +1381,7 @@ https://ablibrary.net/book_content/b/17638/264?lang=ar
 شعر :
 عباراتنا شتّى ، و حسنك واحد * و كلٌّ إلى ذاك الجمال ، يشير
 
-### English
+### Commentary — English
 
 I say: the author now begins to answer objections that could be raised against the later thinkers' position, so that their doctrine is first established in its strongest form. Afterwards he will explain its falsity, following the customary procedure already noted.
 
@@ -1425,8 +1410,6 @@ Verse: ‘Our expressions differ, while Your beauty is one; each points towards 
 5. Ḥiṣṣa is rendered share to preserve its difference from an independently existing individual. The technical sense is explained by the argument itself.
 6. Inline reported readings retained separately from the reading text: ( يبيَّن - خ ); [ الوجود - ظ ]
 
-Source-text SHA-256: `fd282cd4b0904ca0b9e043bb245ecd54f22c60b89d93f1507c39cd1a8e803a8b`
-
 ---
 
 ## SH-010 — Answering the objection that the Necessary would exist twice
@@ -1435,9 +1418,7 @@ Source-text SHA-256: `fd282cd4b0904ca0b9e043bb245ecd54f22c60b89d93f1507c39cd1a8e
 
 https://ablibrary.net/book_content/b/17638/267?lang=ar
 
-**Linked matn:** QT-010
-
-### Arabic
+### Commentary — Arabic
 
 أقول : هذا أيضاً دفع لما يمكن ان يورد هاهنا ، و هو انَّ الوجود المطلق لو كان مقولًا على الحقيقة الواجبة و على ساير الوجودات بالتشكيك و العروض ، يلزم ان تكون تلك الحقيقة موجودة مرَّتين ، و التالي ظاهر الفساد ، اما بيان الملازمة ، فلانَّه إذا كان الوجود مشكِّكاً عارضاً ، يلزم ان يكون معنى مشتركاً بين ساير الوجودات و بين تلك الحقيقة فكما ان ساير الوجودات موجودة مرَّتين ، إحداهما ، من حيث انَّها وجودات في نفسها ، و الأُخرى من حيث عروض الوجود المطلق ايّاها ، يلزم ان تكون تلك الحقيقة ايضاً كذلك ، سيَّما إذا كانت تلك الحقيقة واجبة لذاتها ، فانّها يلزم ان تكون علَّة مؤثِّرة في جميع ما عداها ، فيلزم ان يكون مقدماً في الوجود
 
@@ -1445,7 +1426,7 @@ https://ablibrary.net/book_content/b/17638/267?lang=ar
 فأجاب عن ذلك ب : انَّه انّما يلزم ذلك ، ان لو كانت الموجوديَّة المشتركة بين الوجودات أمراً مغايراً في الأعيان لتلك الحقيقة ، و ليس كذلك ، بل الموجوديَّة ، نفس تلك الحقيقة في الأعيان ، و ان كانت من العوارض الزائدة عليها بحسب العقول و الأذهان .
 لا يقال : إذا كانت الموجوديَّة المشتركة نفس تلك الحقيقة في الأعيان ، يلزم ان تكون تلك الحقيقة في الأعيان لاحقةً للماهيّات ، و ذلك باطل بالضرورة ، لأنَّه انما يلزم ذلك ان لو كان في الأعيان من اللحوق المذكور اثر ، و ليس كذلك ، فان للموجوديَّة المشتركة حصصاً مختلفة الحقائق ، يكون باعتبار كل حصَّة كذلك ، كالماشى مثلًا بالنسبة إلى حصصه الموجودة في الإنسان و الفرس و غيرهما ، فإنه ليس للشيء المطلق في الخارج وجود متميِّز في تلك الماهيّات عن حصصه المتخالفة ، و ان كان في العقل مستقلًا في الوجود ، مثل حصصه لا حقاً ايّاها . فاللحوق انّما يعرض للمطلق باعتبار حصوله في العقل ، و اما في الخارج ، فليس الا الحصص المتخالفة ، فلا لحوق فيه أصلًا .
 
-### English
+### Commentary — English
 
 I say: this too answers an objection that might be raised here. If unrestricted existence is predicated of the necessary reality and other existences by gradation and as an attribute, the necessary reality would have to exist twice—an evidently false consequence. The entailment is explained as follows. If existence is a graded, attached predicate, it must be a meaning common to the other existences and to that reality. Just as the other existences would exist twice—once insofar as they are existences in themselves, and again insofar as unrestricted existence attaches to them—the same would hold of the necessary reality. This is especially so if that reality is necessary through itself: it must efficiently cause everything else and therefore precede everything in existence, even the common meaning of existentness, since an efficient cause necessarily precedes its effect through existence.
 
@@ -1459,8 +1440,6 @@ It should not be objected that, if common existentness is externally identical w
 2. The reply remains part of the exposition of the rival position. Its eventual criticism follows in SH-011 and subsequent sections.
 3. Mawjūdiyya is translated existentness here so that the argument's shift between wujūd and the predicable being-existent remains visible.
 
-Source-text SHA-256: `074d7d4a45d1685c3306c97548f9342a9498df718987610a02a7c5f43157405e`
-
 ---
 
 ## SH-011 — Could a necessary nature have several conceivable individuals?
@@ -1469,9 +1448,7 @@ Source-text SHA-256: `074d7d4a45d1685c3306c97548f9342a9498df718987610a02a7c5f431
 
 https://ablibrary.net/book_content/b/17638/269?lang=ar
 
-**Linked matn:** QT-011
-
-### Arabic
+### Commentary — Arabic
 
 أقول : هذا جواب لما أورده نقضاً على الدليل المذكور ممّا ذهب إليه المشّاءون يبطل به مذهبهم ، و هو ان يقال : الطبيعة الملزومة لمطلق الوجود التي هي الواجبة عندكم ، ان صحَّ ان تكون ذات افراد و يكون الطبيعة بالنسبة إليها حقيقة كلية ، سواء كانت ذات افراد حقيقيَّة عقليَّة ، كسائر الكليات الحقيقيَّة ، أو كانت ذات افراد اعتباريَّة ذهنيَّة ، كالكليّات الفرضيَّة ، مثل اللاشيء و اللاإمكان ، أو لا يصح ؟ فان صحَّ ، فلا يخلو من ان يكون الموجود منه واحداً ، أو اكثر ، و الثاني ظاهر البطلان ، و على التقدير الأول يلزم ان يكون افراد الطبيعة الواجبة ممكنة بالذات ، امتنعت الافراد الباقية منها ، أو أمكنت ، ضرورة امتناع وجود بها بالذات و امتناعها بها ، و الا يلزم خلاف الفرض .
 لا يقال : انما يلزم الفرض المذكور ، ان يكون ممكنة الاتصاف ، لا ممكنة الوجود ، فان الطبيعية الملزومة الواجبة عندهم لما كانت نفس الوجود ، تكون ممكنة الاتصاف بعينه هو ممكنة الوجود .
@@ -1482,7 +1459,7 @@ https://ablibrary.net/book_content/b/17638/269?lang=ar
 و هذا مفهوم الإمكان العام ، لا الخاص .
 قلنا : الكلام على تقدير ان تكون تلك الطبيعة الواجبة البسيطة ذات افراد ، - و ان يكون - الموجود منها واحدا أو لباقى ممتنعاً . و حينئذ ظهر لزوم كون الأفراد كلّها ممكنة بالإمكان الخاصَّ ، فانَّه لو لم يكن كذلك ، فامّا ان يكون افرادها مختلفة متنوعة في الوجوب و الامتناع و الإمكان أو متّفقة ؟ و الأول تدفعه البساطة الواجبة ، فحينئذ لو لم يكن كلّها ممكنة بالإمكان الخاص ، فاما كلُّها واجبة ، أو كلّها ممتنعة ، و الأول يستلزم وجوب الممتنع ، و الثاني امتناع الواجب ، و من هذا تعرف اقتضاء طبيعة الوجوب الوحدة الذاتية ، فتنبه .
 
-### English
+### Commentary — English
 
 I say: this answers the Peripatetic position offered as a counterexample to the preceding proof and thereby refutes their doctrine. The argument is this. The nature entailing unrestricted existence, which you identify as necessary, either can have individuals relative to which it is a universal reality, or cannot. This covers both real intelligible individuals, as with other real universals, and merely posited mental individuals, as with hypothetical universals such as nothingness and non-possibility. If it can have individuals, either one exists or more than one. The second case is evidently false. In the first, the individuals of the necessary nature must be possible through themselves, whether the remaining individuals are impossible or possible. They cannot be intrinsically necessary or intrinsically impossible without contradicting what has been supposed.
 
@@ -1501,8 +1478,6 @@ We reply that the supposition concerns a simple necessary nature having individu
 3. The proof reasons under a stated supposition about one existing and other impossible individuals. The translation does not silently substitute a general proof of every doctrine of divine simplicity.
 4. Inline reported readings retained separately from the reading text: ( اما ان يصحَّ - خ ل )
 
-Source-text SHA-256: `dc8e1c6a61678e752f17eb993dcd447b83e04bb7608c90b8554a5f770a4e741d`
-
 ---
 
 ## SH-012 — Four explanations of a nature's inability to have multiple individuals
@@ -1511,9 +1486,7 @@ Source-text SHA-256: `dc8e1c6a61678e752f17eb993dcd447b83e04bb7608c90b8554a5f770a
 
 https://ablibrary.net/book_content/b/17638/270?lang=ar
 
-**Linked matn:** QT-012
-
-### Arabic
+### Commentary — Arabic
 
 أقول : هذا بيان للشِّق الثاني من الترديد المذكور ، و هو ان تكون الطبيعة الواجبة مما لم يمكن ان تكون ذات افراد ذهنيَّة أو عقليَّة ، و لمّا كان الحق هو هذا ، و قد استبعده العقل غاية الاستبعاد ، بناء على ان الطبايع المعقولة يمتنع ان لا تكون ذات افراد ، كما ان الحقائق بدون ان تكون محفوفة بالعوارض الخارجيَّة المشخَّصة و الغواشي الغريبة المحدودة ، يستحيل ان يصير جزئيَّة حقيقيَّة ، أراد ان يحقِّق ذلك و ينبَّه - يبيِّنه - بوجوه عديدة ، يظهر بها ان منشأ ذلك الاستبعاد رسوخ العقايد العادية .
 
@@ -1535,7 +1508,7 @@ https://ablibrary.net/book_content/b/17638/270?lang=ar
 فان قلت : غاية ما في الباب ان يكون ذلك الصدق ممتنعاً ، و فرض الممتنع ليس بمستحيل ، بل ممكن ، فيمكن فرض صدقه .
 قلنا : ما هو غير مستحيل ، فرض الممتنع ، و ما يلزم هاهنا - فرض ممتنع ، و الفرق بينهما بَيِّن .
 
-### English
+### Commentary — English
 
 I say: this explains the second branch of the preceding division: the necessary nature cannot have mental or intelligible individuals. This is the true alternative, but intellect regards it as extremely remote because it assumes that an intelligible nature cannot lack individuals, and that a reality cannot become a genuine particular unless surrounded by extrinsic individuating attributes and alien limiting coverings. The author therefore seeks to establish the point through several approaches, showing that this sense of improbability originates in the entrenchment of habitual beliefs.
 
@@ -1562,8 +1535,6 @@ You may object that this follows only if a universal nature must actually be pre
 3. The conclusion distinguishes فرض الممتنع from فرض ممتنع: supposing an impossible object versus a supposition alleged itself to be impossible. The English keeps this distinction explicit without endorsing the success of the reply.
 4. The long account of the fourfold division and both final objections is translated in full, rather than replaced by a summary of the doctrine.
 
-Source-text SHA-256: `c773afc00b96d291e51e82ed039a55fc8789f1d22a2eeef3c10a2a64f6480f5d`
-
 ---
 
 ## SH-013 — The dilemma of intrinsic difference and common existential reality
@@ -1572,9 +1543,7 @@ Source-text SHA-256: `c773afc00b96d291e51e82ed039a55fc8789f1d22a2eeef3c10a2a64f6
 
 https://ablibrary.net/book_content/b/17638/274?lang=ar
 
-**Linked matn:** QT-013
-
-### Arabic
+### Commentary — Arabic
 
 أقول : إذا تقرِّر ان الطبيعة الواجبة الملزومة لمطلق الوجود يمتنع ان تكون ذات افراد ذهنيَّة أو عقلية ، فحينئذ نقول : تلك الطبيعة لا يخلو من ان تكون مغايرة بالذات لحقيقة الوجود الخارجي و الكون العيني الذي هو عبارة عما يتكوَّن الماهيّات بمقارنتها في الأعيان بحيث لا يكون معنى مشترك بينهما أصلًا ، بل انحصر ما به الاشتراك بينهما على مجرّد اطلاق
 
@@ -1588,7 +1557,7 @@ https://ablibrary.net/book_content/b/17638/274?lang=ar
 الوجوديَّة ، و الا يلزم ان يكون الواجب لذاته ليس واحداً من جميع الجهات .
 لا يقال : من انتفاء المغايرة بالذات لا يلزم ان تكون المغايرة مطلقا منتفية ، إذ قد تكون المغايرة بحسب اللواحق و العوارض متحققة ، فان مثل هذه المغايرة لا يتخالف بها الحقائق ، فيكون الملزوم على هذا التقدير ايضاً هو الحقيقة الواجبة لا غير ، و يلزم الأُمور المذكورة .
 
-### English
+### Commentary — English
 
 I say: once it has been established that the necessary nature entailing unrestricted existence cannot have mental or intelligible individuals, we argue as follows. Either that nature differs essentially from the reality of external existence and concrete being—the being by conjunction with which quiddities occur externally—so that they share no meaning and have only the word existence in common, or it does not differ in that way. If it does, the word existence applies to the two realities equivocally, not through a shared meaning.
 
@@ -1614,8 +1583,6 @@ It should not be objected that the absence of essential difference need not excl
 4. ‘Both agent and recipient’ translates the source's own causal objection; no universal denial of every kind of self-relation is added.
 5. Inline reported readings retained separately from the reading text: ( الوجود الخاص العيني الممكن - خ ); [ واجباً - ظ ]
 
-Source-text SHA-256: `321ead8369b2450ed63a493bbb046830db9ac74dea63bd39378cbdd23dab484f`
-
 ---
 
 ## SH-014 — Why indistinguishable instances cannot receive opposing modal roles
@@ -1624,9 +1591,7 @@ Source-text SHA-256: `321ead8369b2450ed63a493bbb046830db9ac74dea63bd39378cbdd23d
 
 https://ablibrary.net/book_content/b/17638/277?lang=ar
 
-**Linked matn:** QT-014
-
-### Arabic
+### Commentary — Arabic
 
 أقول : هذا دليل آخر بالاستقلال على إبطال الشَّق الثاني من الترديد ، و ذلك لأنَّه إذا كانت الحقيقة الواجبة غير مغايرة بالذات لمطلق الوجود و لا الوجودات الممكنة ايضاً مغايرة لها ، يلزم ان يكون الكل متماثلًا في الحقيقة ، و يلزم اختصاص احد المتماثلين بالحالِّية أي العارضيَّة ، و الاخرى بالمحلية أي المعروضيَّة ، و يلزم ايضاً اختصاص أحدهما بصفة الواجبية و الثاني بالممكنيَّة من غير ان يكون هناك فارق ، و اختصاص المتماثلات بالأمور المتقابلة المتنافية من الأحكام المستحيلة بالذات ، إذ تنافي اللوازم انما يتحقق يتنافى الملزومات ، فلهذا يستدلُّون به عليه ، و التنافي بين العارضيَّة و المعروضيَّة و الواجبيَّة و الممكنيَّة بيّن .
 لا يقال : مع بقاء احتمال القول بالتشكيك خالياً عن الدافع ، كيف يتمُّ الجزم بالتماثل ، فلأنَّ اللازم من الترديد المذكور ، ان ساير
@@ -1634,7 +1599,7 @@ https://ablibrary.net/book_content/b/17638/277?lang=ar
 الموجودات واجبة كانت أو ممكنة ، متماثلة في حقيقة الوجود المطلق ، و لا يلزم منه ان لا يكون مشكِّكاً أصلًا ، إذ ساير الطبايع الكلّية مشكِّكاً أو متواطياً . عارضة أو ذاتيَّة - فان لها افراداً خاصَّة اعتباريَّة يكون قولها عليها قولًا نوعياً ، و ان كان قول كلُّ منهما مخالفاً للآخر بالنسبة إلى الافراد الحقيقيَّة منهما .
 لأنَّا نقول : سنشير آنفاً إلى دفع ذلك الاحتمال بالاستقلال ، و تلخيص هذا البرهان ان يقال ، ان الوجود الخاص الواجبى الملزوم لحقيقة الوجود المطلق ، اما ان يكون قابلًا للاشتراك ، أو لا ، و الأول ظاهر البطلان ، لمنافاة الوجوب الذاتي على ما عرفت ، و على تقدير الثاني لا يخلو ان يكون حقيقته غير حقيقة الوجود المطلق ، و ذلك باطل للزوم تقدُّم الشيء على نفسه ، و غيره من وجوه المحالات أو عين حقيقته ، و يلزم حينئذ احد الأمرين ، اما امتناع استلزام الوجودات الخاصَّة الممكنة لمطلق الوجود ، أو استلزامها للوجود الخاصِّ الواجبى ، و كلاهما بَيّن الاستحالة ، اما الأول ، فلاقتضاء الخاص ، استلزامه للمطلق العام ضرورة ، و اما الثاني فلما برهنوا عليه . فعلم من هذا ان القول بالطبيعة الملزومة التي هي الوجود الخاص باطل .
 
-### English
+### Commentary — English
 
 I say: this is another independent proof against the second branch of the dilemma. If the necessary reality does not differ essentially from unrestricted existence, and possible existences do not differ from it either, all must be alike in reality. One of two alike things would then be assigned inhering status—that is, being an attribute—while the other would be assigned the status of a locus—that is, being a subject. One would likewise be assigned necessity and the other possibility, without any differentiating factor. Assigning mutually opposed and incompatible properties to indistinguishable things is intrinsically impossible. Incompatibility among concomitants arises only from incompatibility among what entails them; this is why the former is used to infer the latter. The incompatibility between being an attribute and being its subject, and between necessity and possibility, is evident.
 
@@ -1649,8 +1614,6 @@ We reply that the possibility of graded predication will shortly be excluded ind
 3. The English preserves the distinction between this alleged particular necessary existence and unrestricted existence; confusing them would erase the dilemma.
 4. Inline reported readings retained separately from the reading text: ( فانَّ - خ )
 
-Source-text SHA-256: `0d1c5f90d24f72945d8025f4eec1127d9724654dab6b773d2de22b52e9eab45b`
-
 ---
 
 ## SH-015 — Two dialectical defences of graded predication and the reply to each
@@ -1659,9 +1622,7 @@ Source-text SHA-256: `0d1c5f90d24f72945d8025f4eec1127d9724654dab6b773d2de22b52e9
 
 https://ablibrary.net/book_content/b/17638/279?lang=ar
 
-**Linked matn:** QT-015
-
-### Arabic
+### Commentary — Arabic
 
 أقول : هذا دليل على بطلان القول بالتشكيك الذي هو مبنى قواعد المشّاءين في هذه المسألة ، و عمدة عقائدهم ، و لمّا التزم المصنِّف ان يسوق الكلام في هذه الرسالة مساق اهل النظر ، وجب عليه ان يراعى في الاستدلال سائر طرقهم الممكنة الورود ، تتميماً لما هو بصدده ، و تسديداً للنقل عن مواقع خلله . و لمّا كان كلامه فيما تقدم من الأدلَّة المذكورة مسوقاً على طريق التعليل و الاستدلال ، فالأوفق للقائلين بالتشكيك هاهنا ان يسلكوا في البحث مسلك المنع على طريقة التجويز و الاحتمال ، فلهذا قدّم هذا الشقَّ .
 و لهم ان يسلكوا في البحث مسلك التعليل على سبيل المعارضة فشدَّد اولًا مبانى كلامه عن الثلمتين ، لئلا يدخل فيه شيء من المدخلين ، و الأول إذا كان دفعه انّما هو بإثبات المقدمة الممنوعة .
@@ -1680,7 +1641,7 @@ https://ablibrary.net/book_content/b/17638/279?lang=ar
 
 شيء من الماهيات النوعيَّة من حيث انَّها ماهية واحدة نوعية ، ان أريد بها ذلك ، و الا فلا نسلّم امتناع تقوُّم الماهيات به - حينئذ - فان ما يكون احد فرديه بالنسبة إلى احدى الماهيَّتين اقوى ، و الآخر انقص بالنسبة إلى الاخرى ، جازان يتقوَّم به الماهية ، إذ الجسميَّة عند المشّاءين مقوِّمة لأنواع الأجسام ، مع ان الفرد الذي يوجد منها في الأفلاك ، اقوى و اشدّ من الذي يوجد منها في العناصر .
 
-### English
+### Commentary — English
 
 I say: this is a proof against graded predication, on which the Peripatetics base their principles and chief commitments concerning this question. Since the author has undertaken to conduct the discussion according to the method of reflective investigators, he must consider every argumentative route they might employ, completing his purpose and protecting his proof against possible defects. The preceding arguments have proceeded by positive reasoning and demonstration. The advocates of graded predication can therefore most suitably respond here by denying a premise on the basis of a rationally admissible possibility. The author accordingly addresses this route first. They might instead undertake a positive counterargument. He therefore secures his account against both breaches, so that neither route provides an opening.
 
@@ -1705,8 +1666,6 @@ Once this is established, we argue that successive replacement of existences dif
 5. A's introductory للنقل has a reported للدليل alternative. The English ‘proof’ follows the latter contextual reading and does not claim independent manuscript confirmation.
 6. Inline reported readings retained separately from the reading text: ( للدليل - خ ل ); ( تدافع - خ ل ); ( فسدَّد - خ ); ( بشيء - خ ); ( الصفة - خ ل ); ( بيَّنه - خ )
 
-Source-text SHA-256: `9e662b2effe688879c042d325ec7be322a54699259ffada83671824c91c4859b`
-
 ---
 
 ## SH-016 — Can the necessary reality be determination itself?
@@ -1715,9 +1674,7 @@ Source-text SHA-256: `9e662b2effe688879c042d325ec7be322a54699259ffada83671824c91
 
 https://ablibrary.net/book_content/b/17638/283?lang=ar
 
-**Linked matn:** QT-016
-
-### Arabic
+### Commentary — Arabic
 
 أقول : لمّا تقرر عند القائلين بإثبات الطبيعة الملزومة ، انّها لا يمكن ان تكون ذات افراد ذهنيَّة أو عقليَّة ، حتى يصلح لان تكون حقيقته واجبة ، كما عرفت و الطبايع الممتنعة الأفراد ذهناً و خارجاً منحصرة في الصُّور الأربع ، كما نبَّهت عليه ، شرع يبيِّن انتفاء الصور الأربع عن الطبيعة الملزومة تحقيقاً لما هو الحق ، في نظر التعليم و التبيين ، من عدم صلوحها للواجبيَّة على
 
@@ -1728,7 +1685,7 @@ https://ablibrary.net/book_content/b/17638/283?lang=ar
 افراد مطلق التعيُّن مختلفات الحقائق ، يمكن ان تكون بعضها قائماً بنفسه و بعضها قائماً بغيره . و لئن سلّمنا ذلك ، لكن لم لا يجوز ان يكون قول التعين المطلق على التعيّن الواقع و على غيره من التعيُّنات الباقية ، اما على سبيل التشكيك ، و اما على سبيل الاشتراك اللفظي دون المعنوي ، و حينئذ ، جازان لا يكون نفس الطبيعة الواجبة معقولا و لا مستدعيا لتحقق موضوعات يتعلق بها دون غيره من التعيُّنات على شيء من هذين التقديرين .
 قلنا : قد بَيَّن المصنِّف - قده - في كتبه الحكميَّة ، ان مفهوم التعين و معناه مفهوم واحد ضرورى ، فلا يتطرق إليه المنع ، لجواز القول بالتشكيك و الاشتراك اللفظي ، و ان اختلاف افراده انما هو باختلاف الإضافات إلى الموضوعات ، و لا شك انَّ اختلافات افراد التعين إذا كان باختلافات الإضافات المستندة إلى الموضوعات لا يحتمل ان تكون بحسب حقائقها على هذا التقدير ، بل لا تكون الاختلافات الا بحسب العوارض اللاحقة بها بالقياس إلى الأمور الخارجة ، فحينئذ ، يمتنع ان لا يكون التعيُّن الواجبى معقولًا ، فان الإضافة التي تحتاج إلى تعقُّلها ، تعقُّل التعيُّن الواجبى معلومة ، إذا الإضافة لا تستدعى تعقُّل المضاف إليه بكُنه حقيقته ، حتى يستحيل تعقُّلها ، فيمتنع تعقُّل التعين الواجبى ، بل انَّما يستدعى تعقُّل المضاف إليه بوجه من الوجوه ، و ذلك غير محال بالضرورة - بل ضرورى - .
 
-### English
+### Commentary — English
 
 I say: the proponents of the nature entailing unrestricted existence concede that it cannot have mental or intelligible individuals if it is to qualify as the necessary reality, as already explained. The cases in which a nature cannot have individuals mentally or externally have been restricted to four. The author now explains why none of the four applies to the alleged entailing nature. This establishes, for purposes of instruction and explanation, that even if its existence is conceded, it cannot qualify as necessary. It also follows the method of investigation by granting some of the opponent's premises.
 
@@ -1747,8 +1704,6 @@ We reply that the author has established in his philosophical books that the con
 3. The source's refusal of equivocity and gradation is reported as the author's established premise, not supplied with an invented independent proof.
 4. Inline reported readings retained separately from the reading text: ( الواجبى - خ ); ( غيرها - خ )
 
-Source-text SHA-256: `24a85f9a2ad8cb083336c865d255ae09b6cc50abc96e40600c98d4803ea67fb4`
-
 ---
 
 ## SH-017 — Determination by opposition versus determination by all-comprehensiveness
@@ -1757,9 +1712,7 @@ Source-text SHA-256: `24a85f9a2ad8cb083336c865d255ae09b6cc50abc96e40600c98d4803e
 
 https://ablibrary.net/book_content/b/17638/286?lang=ar
 
-**Linked matn:** QT-017
-
-### Arabic
+### Commentary — Arabic
 
 أقول : هذا إشارة إلى بيان انتفاء الصورة الثانية من الصور الأربع عن الطبيعة الملزومة بوجه يعلم منه معنى قول المحققين عن آخرهم ، ان تعيُّن الواجب نفسه ، و لذلك طوى التصريح بكون التعيُّن مقتضى الذات على ما هو المصرَّح به في الصورة المذكورة ، لأنَّه يستلزمه على ما لا يخفى .
 و تقرير ذلك ، ان معنى قولهم ، تعيُّن الواجب نفسه في الأعيان ، هو انَّه بنفسه ممتاز عن ساير ما عداه ، لا انَّه يقتضي صفة زائدة خارجة بها يمتاز عمّا عداه ، و الا يلزمهم الوقوع فيما هربوا منه ، و هو احتياج الواجب إلى امر خارج عن ذاته .
@@ -1776,7 +1729,7 @@ https://ablibrary.net/book_content/b/17638/286?lang=ar
 النوعين الوجوديِّين ، من انواع المتقابلات و أصنافها .
 و إذا تقرَّر هذا ، عرفت معنى قوله ، ان الواجب يفيد لنفسه ما يفيد شخصيَّة الشخص ، و تأمَّل في هذه النكتة ، فانّها منطوية على معانى جُمَّة كثيرة الجدوى .
 
-### English
+### Commentary — English
 
 I say: this indicates why the second of the four cases does not apply to the entailing nature, in a manner that explains what all the people of realization mean when they say that the Necessary's determination is itself. The author therefore omits an explicit statement that determination is required by the essence, although that was the formulation used in the earlier case: the present account plainly entails it.
 
@@ -1807,8 +1760,6 @@ With this established, the statement that the Necessary supplies for itself what
 5. The verse is Q112:3–4, translated directly. The phrase concerning two positive kinds of opposition is terse; no elaborate classification absent from the paragraph has been supplied.
 6. Inline reported readings retained separately from the reading text: ( الهذيَّة - خ ); ( الهذيَّة - خ ل ); ( متميِّزاً - خ ل ); ( الخارجة - خ ); ( للسرّ - خ ); ( للنظر - خ ); ( التعين - خ ); ( فبه - خ ل ); ( لهذه - خ )
 
-Source-text SHA-256: `3120af5d68b558dc1b76d3e2bff078e65fe26035a1894fef8d1ad8a6e29f96ba`
-
 ---
 
 ## SH-018 — Knowing the Necessary through itself and under an aspect
@@ -1817,15 +1768,13 @@ Source-text SHA-256: `3120af5d68b558dc1b76d3e2bff078e65fe26035a1894fef8d1ad8a6e2
 
 https://ablibrary.net/book_content/b/17638/289?lang=ar
 
-**Linked matn:** QT-018
-
-### Arabic
+### Commentary — Arabic
 
 أقول : هذا إشارة إلى بيان انتفاء الصورة الثالثة من الصُّور الأربع عن
 
 الطبيعة الملزومة ، و بيانه ، ان المقدَّمة القائلة بأنّها غير معقولة لشيء من العقول ، على إطلاقها ممنوعة ، كيف ، و قد برهن في الحكمة ، ان تلك الطبيعة ، لا بُدَّ و ان تكون عاقلة و معقولة و عقلًا لذاتها ، فلا يمكن ان يقال : انّها ليست معقولة لذاتها أصلًا ، و لأن سلَّمنا انها غير معقولة لذاتها بالنسبة إلى العقول المفارقة ، لكن مسلّم ، انها ليست معقولة بحسب الاعتبارات و الإضافات ، فانّها بحسب نسبتها الزائدة عليها و إضافاتها اللاحقة لها بالقياس إلى ساير المدارك ، يجب ان يكون معقولة لكل العقول ، و ان لم تكن معقولة لأكثر العقول بكُنه حقيقتها ، و حاصل هذا الكلام ، ان من الصُّور التي يمتنع بها ان تكون الطبيعة ذات افراد ذهنيَّة أو عقليَّة ، هو ان تكون الطبيعة غير معقولة أصلًا ، لا بالكنه و لا بالوجه ، حتى ينتفي معها نسبة الاشتراك و التطابق اللازمين لكون الافراد افراداً ، و اما إذا كانت معقولة بالوجه لكل العقول و بالكنه للبعض ، فلا يلزم ذلك .
 
-### English
+### Commentary — English
 
 I say: this indicates why the third of the four cases does not apply to the entailing nature. The premise that it is unintelligible to any intellect is denied when stated without qualification. How could it be maintained, when philosophical demonstration establishes that this nature must be knower, intelligible, and intellect through itself? It cannot therefore be said to be altogether unintelligible to itself.
 
@@ -1839,8 +1788,6 @@ The point is this. One condition that would prevent a nature from having mental 
 2. The distinctions between self-intellection, knowledge by other intellects, aspectual knowledge, and comprehensive knowledge are all retained.
 3. This passage revisits the third proposed explanation in SH-012. It confirms why that earlier proposal should not be cited alone as the commentator's final position.
 
-Source-text SHA-256: `906d132f21f88b3f272a6dcfc3bb1e3dc0c43b0564a66eed6c4709a69493f215`
-
 ---
 
 ## SH-019 — Relation to another need not be opposition to another
@@ -1849,15 +1796,13 @@ Source-text SHA-256: `906d132f21f88b3f272a6dcfc3bb1e3dc0c43b0564a66eed6c4709a694
 
 https://ablibrary.net/book_content/b/17638/290?lang=ar
 
-**Linked matn:** QT-019
-
-### Arabic
+### Commentary — Arabic
 
 أقول : هذا إشارة إلى انتفاء الصورة الرابعة من الصور الأربع عن الطبيعة الملزومة ، و بيانه ان الاقتران بالغير انّما يكون محالًا لو كان المراد بالغير المنافى و المقابل ، كما نبَّهت عليه آنفاً ، من ان تميُّزه ليس عن المقابل ، فان الغير بمعنى المقابل هاهنا هو العدم المحض و اللاشيء الصرف ، و اما إذا أريد به ما سوى المقابل من الأمور المغايرة المنسوبة إليها ، فلا نسلم استحالته ، لما ستعرفه من ان النسب و الإضافات و الأحوال السلبيَّة و الوجوديَّة ، لا
 
 يستحيل اقترانها بالطبيعة الواجبة ، بل انّما يقترن بها ضرباً من المقارنة ، و هي انّما يقارن تلك الأمور ضرباً من ضروب المقارنة . و تحقيق هذا الكلام راجع إلى ما نبّهت عليه في المقدمة من الفرق بين الكثرة النسبيَّة التي باعتبارها تسمّى الكثير كوناً و عالماً و بين الوحدة الاعتبارية المسمّاة باعتبارها أسماء الحق و شئونه و نسبه ، فليتذكَّر ، و إذا صحَّ هذا في الطبيعة المطلقة الواحدة بالذات ، فتلك الطبيعة الملزومة بذلك أجدر ، فتأمَّل فيه .
 
-### English
+### Commentary — English
 
 I say: this indicates why the fourth of the four cases does not apply to the entailing nature. Conjunction with another would be impossible only if another meant what is incompatible and opposed. As I indicated above, the Necessary's distinction is not distinction from an opposite. What is other in the sense of an opposite here is sheer nonexistence and absolute nothingness.
 
@@ -1872,15 +1817,2266 @@ The explanation returns to the distinction made in the introduction between rela
 3. Kawn is retained as a technical term already defined in the introductory translation, not automatically equated with wujūd in every occurrence.
 4. Inline reported readings retained separately from the reading text: ( المسمّاة باعتبارها الكثير - خ )
 
-Source-text SHA-256: `f497d8494fedb88fbe0d30efcdf6addbd12aec4827c0e7858e2dfb0b28e963d2`
+---
+
+## SH-020 — Does the objection to a determinate Necessary also defeat unrestricted existence?
+
+**Source:** A, printed pp. 95–98
+
+https://ablibrary.net/book_content/b/17638/291?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذه صورة نقض اجمالى على الدليل المذكور ، و تقريره ، ان ما ذكرتموه في بيان ان الواجب لذاته لا يجوز ان تكون تلك الطبيعة
+
+الملزومة للوجود المطلق ، لو كان صحيحاً بجميع مقدماته ، لزم ان يكون الوجود المطلق ايضاً ليس واجباً ، لصدق الدليل المذكور عليه . و بيان ذلك ان الواجب لا يمكن ان يكون نفس الوجود المطلق ، لأنَّ حقيقته لو كانت ذات افراد عقليَّة ، فلا بُدَّ و ان يوجد منه فرد ، و امتنعت الأفراد الباقية ، لاستحالة ان يكون للوجود من الحقيقة الواجبة افراداً كثيرة ، و ان لا يكون شيء منها موجوداً . و إذا تقرَّر ان الموجود ، منها لا يكون الا فرداً ، و الباقي ممتنع ، لزم ان يكون وجود ذلك الفرد بالغير ، فيكون وجوبه بالغير ، و كذا امتناع الباقي ، يلزم ان تكون بالغير لا بالذات . و بيان ذلك ان الطبيعة الواجبة ، لا بدَّ و ان تكون طبيعة نوعيَّة ، و الا لزم ان تكون افرادها مختلفة الحقائق ، فيلزم التركيب في الواجب ، و ذلك محال . و إذا كانت طبيعة الواجب طبيعة نوعيَّة ، يمتنع ان يختلف مقتضى افرادها بالذات ، فلو لم يقتض بعض افرادها الوجوب و البعض الآخر الامتناع ، لزم ان لا يكون ذلك الاقتضاء بالذات ، بل ، بالغير ، فيلزم ان يكون الواجب في وجوبه محتاجاً إلى الغير ، و ذلك بَيِّن الاستحالة ، و ان لم يمكن ان تكون ذات افراد عقليَّة لشيء ممّا ذكر من الوجوه الأربعة ، فان كانت تلك الحقيقة المطلقة مغايرة لحقيقة الوجودات العينيَّة الخاصَّة المسمّاة بالوجودات الممكنة ، كان اطلاق لفظ الوجود عليها و على الوجودات الممكنة بالاشتراك اللفظي دون المعنوي لتغاير المعنيين ، و انحصار ما به الاشتراك بينهما في اطلاق لفظ الوجود فقط ، و ان لم تكن مغايرة للوجودات العينيَّة ، لزم اتصاف الوجودات الممكنة بالوجوب الذاتي ، ضرورة وجوب اتصاف كل جزئي من جزئيّات الحقيقة بلوازمها . فأجاب بان هذا النقض انّما يرد على - مَن - جعل الطبيعة الواجبة متعيّنة مقابلًا لسائر المتعيِّنات ،
+
+فيكون مغايراً للوجود العيني و ملزوماً له ، بناءً على ان يكون الاشتراك معنويّاً ، بأن تكون الطبيعة في نفسها هي الكون العيني ، فيكون الكون المطلق المقول عليها و على غيرها مغايراً لها و لازماً لها ، ضرورة ، دون ما إذا جعلناه الوجود المطلق الشامل الواجب القائم بنفسه ، إذ لا شيء سواهُ يقوِّمه الممتاز عمّا عداه به عين حقيقته ، إذ ما عداه عدم محض ، فلا يحتاج إلى مميِّز خارج .
+و الحاصل انّهم لمّا ذهبوا إلى ان الواجب هي الطبيعة الخاصة المتعيِّنة ، مثل ساير المتعيِّنات ، لزم من قولهم : ان يكون مغايراً للمطلق المقول عليها و على مقابلها ، كما لزم ان يكون مقابلًا لسائر المتعيِّنات الممكنة التي بإزائها ، و حينئذ لزم عليهم ما لزم . اما إذا جعل الوجود المطلق الشامل الذي لا يشذُّ منه نسبة و لا صفة و لا فرد من الافراد المتماثلة و المتنافية ، فلم يرد عليهم من المحالات الواردة على القائلين بالتعيُّن ، شيء أصلًا .
+فان قيل : يلزم عليهم ايضاً احد الأمرين ، اما انتفاء القول بالإمكان و الممكنات و ساير الماهيّات ، و اما ان يكون في الواجب جهة امكان ، و كلاهما ظاهر الاستحالة .
+قلنا ان أريد بانتفاء الإمكان ، انتفاؤه مطلقا ، فلزومه ممنوع ، و ان أريد انتفاؤه عن الوجود من حيث انه وجود ، فلزومه مسلَّم ، لكن استحالته ممنوعة ، فان الإمكان حسبما نبّهت عليه في المقدمة ، انّما هو اعتبار تعرض للأشياء باعتبار ظهور العلم ، و بين ظهور العلم و ظهور الوجود ، فرق ظاهر .
+و اعلم انَّ امثال هذه الأبحاث عند الأزكياء من ارباب الذوق من اجلى البديهيات ، و اما عند غيرهم من الفضلاء المتقيّدين 
+
+بقلائد التقليد ، فهي ممّا لا يكاد ينفهم و لا غرو « وَ مَنْ لَمْ يَجْعَلِ اللَّهُ لَهُ نُوراً فَما لَهُ مِنْ نُورٍ » .
+
+### Commentary — English
+
+I say: this is a general counter-objection to the argument just given. Its formulation is that, if all the premises of your argument showing that what is necessary through itself cannot be the nature to which unrestricted existence necessarily belongs were sound, unrestricted existence itself would likewise fail to be necessary, since the same argument applies to it.
+
+The explanation is as follows. The Necessary cannot be unrestricted existence itself. For, if its reality admits intellectual instances, one instance must exist and the remaining instances must be impossible: it is impossible both that the necessary reality should have many actual instances and that none of them should exist. Once it is established that only one instance exists while the others are impossible, that instance must exist through another, and so its necessity must be through another. Likewise, the impossibility of the remaining instances must be through another, not through themselves. The reason is that the necessary nature must be a specific nature; otherwise its instances would have different realities, entailing composition in the Necessary, which is impossible. If it is a specific nature, what its instances intrinsically require cannot differ. Thus, if some instances required necessity and others impossibility [the reported alternative reading], that requirement would not arise through themselves but through another. The Necessary would then depend on another for its necessity, which is plainly impossible.
+
+If, instead, it cannot have intellectual instances for any of the four reasons previously mentioned, then either this unrestricted reality differs from the reality of particular external existences called possible existences, or it does not. If it differs, the term existence is applied to it and to possible existences equivocally, not with a common meaning: the meanings are different, and all that they share is the application of the word. If it does not differ from external existences, possible existences must be qualified by intrinsic necessity, since each particular instance of a reality must possess that reality's necessary concomitants.
+
+The author replies that this counter-objection applies only to someone who makes the necessary nature a determinate thing standing over against the other determinate things. It would then differ from external existence and be that to which existence necessarily belongs. If the commonality is one of meaning, and that nature is itself a case of external being, the unrestricted being predicated both of it and of other things must nevertheless differ from it and necessarily accompany it. The objection does not apply when we identify the Necessary with unrestricted, all-encompassing, self-subsistent existence. Nothing other than it sustains it, and it is distinguished from everything else by its own reality: everything other than it is sheer nonbeing, so it needs no extrinsic differentiator.
+
+In sum, once they hold that the Necessary is a particular determinate nature like the other determinate things, it follows that it differs from the unrestricted meaning predicated both of it and of what stands opposite it. It must also stand opposite the other possible determinate things. The consequences already stated then follow. But if the Necessary is all-encompassing unrestricted existence, from which no relation, attribute, or instance—whether similar or incompatible—falls outside, none of the impossibilities facing those who assert such a determination applies.
+
+One may object that this account must still entail one of two things: either there can be no possibility, possible things, or other quiddities, or there must be an aspect of possibility within the Necessary. Both are plainly impossible. We reply that, if the denial of possibility means denying it without qualification, the alleged consequence is not conceded. If it means denying possibility of existence insofar as it is existence, the consequence is conceded, but its impossibility is not. As explained in the prolegomenon, possibility is a consideration that attaches to things in respect of the manifestation of knowledge; and the manifestation of knowledge is plainly distinct from the manifestation of existence.
+
+Know that, for discerning people of spiritual taste, discussions of this kind belong among the clearest self-evident matters. For other learned persons, bound by the necklaces of uncritical adherence, they are scarcely intelligible. Nor is this surprising: ‘For anyone to whom God gives no light, there is no light.’
+
+### Textual and translation notes
+
+1. The opening is a counter-objection. The answer begins with the distinction between a determinate Necessary standing opposite others and unrestricted, comprehensive existence. The English preserves that change of speaker.
+2. The displayed فلو لم يقتض conflicts with the inferential role of the conditional; the source reports فلو اقتضى. The English explicitly follows that reported alternative at this point, without claiming independent manuscript support.
+3. The phrase distinguishing the Necessary by its own reality is syntactically unstable in the source (به عين حقيقته). Its contextual sense is translated; no silently repaired Arabic text is asserted.
+4. The concluding Quranic phrase is translated independently from the quoted Arabic (Q24:40). The explanation of possibility is Ibn Turka’s account, not an independently certified philosophical conclusion.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( فلو اقتضى - خ ل ); ( للزم - خ ); ( عليه - خ ); ( فضلاء المقلِّدين - خ ); ( ينفعهم - خ ل )
+
+---
+
+## SH-021 — Why necessary predicates need not restrict unrestricted existence
+
+**Source:** A, printed pp. 98–99
+
+https://ablibrary.net/book_content/b/17638/294?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا شروع فيما يرد على ظاهر مذهب المحققين و دفعه من الإيرادات الموهمة للناظرين المجادلين من ارباب العقول الضعيفة و الأفكار السخيفة و المشوّشة لبعض المسترشدين من المتعوِّد عقولهم بالمغالطات الفكريَّة و القرائن الجدليَّة ، من جملتها ان الطبيعة المطلقة التي هي الواجب عندهم ، انّما هو باعتبار عدم اعتبار القيود و النسب مطلقا ، حتى عن هذا الاعتبار العدمي ايضاً ، فإنها غير مقيَّدة بالإطلاق على مذهبهم ، فحينئذ ، لو كانت تلك الطبيعة المفروضة واجبة لذاتها ، لزم خلاف الفرض . و بيان ذلك انّه لو كانت واجبة لذاتها و كان الوجوب مقتضى ذاتها ، لامتنع انفكاكه عنها ، و ذلك يستلزم ان لا يكون مطلقة ، حينئذ ، بل كانت مقيَّدة بالوجوب الذاتي ، إذ لا معنى للقيد - الا اعتبار معنى زائد على نفس الطبيعة ، و إذا كان ذلك المعنى من مقتضى الذات لازماً لها ، فلا بُدَّ من اعتباره معها ، فحينئذ لا يكون الطبيعة المطلقة مطلقة . هذا خلف .
+فأجاب ، بانَّ الطبيعة المطلقة من حيث هي مطلقة ، قد تكون لها احكام ضرورى لا يخرجها عن حدِّ الإطلاق ، فانَّ الأحكام انّما تكون مخرجة
+
+للطبيعة عن إطلاقها ، إذا كانت زائدة عليها ، حاصلة باعتبار معنى زائد في الخارج ، و يكون تحقُّقها و تعلُّقها انّما هو بالقياس إلى ذلك المعنى الخارجي . أما إذا كانت من الاعتبارات العقليَّة الحاصلة لها بالقياس إلى نفسها بدون اعتبار معنى زائد ، يشوب صرافة الإطلاق به ، و لا نسبة خارجيَّة تورث اضافة التقيُّد إليه ، لا يخرج الطبيعة بشيء منها حدِّ إطلاقها في الخارج ، و لا يوجب تقيُّدها بشيء منها في الأعيان .
+لا يقال : كلُّ - ما تغاير الطبيعة المطلقة من المفهومات ، سواء كانت اعتباريَّة عقليَّة حاصلة لها لذاتها ، أو محصّلة لاحقة لها من غيرها ، إذا اعتبرت معها يكون مخرجة لها حد إطلاقها الذاتي ، ضرورة .
+لانّا نقول : انّما تكون مخرجة لها ، ان لو كانت اموراً زائدة عليها في الأعيان منضمّة معها فيها ، أو كان مبدأ عروضها و منشؤها غير حيثيَّة الإطلاق الذاتي ، اما إذا كانت من الاعتبارات الحاصلة لها في العقل بالنظر إلى إطلاقها الذاتي ، فلا تخرجها ، ضرورة امتناع تنافي الشيء لمبدئه .
+و من هاهنا تعرف منشأ التفرقة بين الأسماء الإلهيَّة و الكونيَّة .
+
+### Commentary — English
+
+I say: the author now begins to state and answer objections to the apparent meaning of the doctrine of the people of realization. These objections mislead disputants of weak understanding and shallow thought, and unsettle some seekers of guidance whose minds have grown accustomed to intellectual sophistries and dialectical associations.
+
+One objection is this. The unrestricted nature which they identify as the Necessary is considered without any conditions or relations whatever—even without this negative consideration itself, since, on their doctrine, it is not restricted by unrestrictedness. If this nature were necessary through itself, the supposition would therefore be contradicted. For, if it were necessary through itself and necessity were required by its essence, necessity could not be separated from it. It would then no longer be unrestricted but would be qualified by intrinsic necessity. A qualification means nothing other than the consideration of a meaning additional to the nature itself. If that meaning is intrinsically required and necessarily accompanies it, it must be considered along with it. Thus the unrestricted nature would not be unrestricted: a contradiction.
+
+The author answers that the unrestricted nature, precisely as unrestricted, can possess necessary judgments which do not take it outside unrestrictedness. Judgments do so only if they are additional to it through an additional extramental meaning, and their realization and attachment depend upon that external meaning. But suppose they are intellectual considerations belonging to the nature in relation to itself, without any additional meaning contaminating its pure unrestrictedness and without an external relation ascribing restriction to it. None of them then removes it from its extramental unrestrictedness or makes it externally qualified by any of them.
+
+It should not be objected that every concept distinct from the unrestricted nature must, when considered along with it, take it outside intrinsic unrestrictedness—whether the concept is an intellectual consideration belonging to it through itself or an actual feature accruing to it from another. We reply that this would follow only if these were additional extramental things joined to it, or if the source and origin of their attachment were something other than its intrinsic unrestrictedness. When they are considerations arising in intellect precisely in view of that unrestrictedness, they do not remove it from it. A thing cannot be incompatible with the very source from which it arises.
+
+From this one can understand the basis of the distinction between divine names and cosmic names.
+
+### Textual and translation notes
+
+1. The reply distinguishes additional extramental determinants from intellectual considerations arising from unrestrictedness itself. It does not simply deny the intelligibility of every predicate applied to the Real.
+2. The first paragraph preserves the commentator’s polemical characterization of opponents; it is not the translator’s judgment.
+3. Modern footnote markers and their explanatory material are excluded. The concluding contrast between divine and cosmic names is present in the medieval main text.
+
+---
+
+## SH-022 — Why answer a flawed objection? Intuition, instruction, and the analogy of light
+
+**Source:** A, printed pp. 101–106
+
+https://ablibrary.net/book_content/b/17638/297?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا إشارة إلى ايرادين صعبين قد استشكلهما المستبصرون من اهل النظر غاية الاستشكال عند اكثر الأزكياء من المخالفين هما الدَّاء العضال ، و الحقُّ ان كلًا منهما عِرق ، يتشعّب منه فنون الشغب و الجدال ، و اصل يتفرع عليه أغصان الشبه و أفنان الأشكال ، لا ينحسم مادتها الا باستعانة من الحدس القويم و فكر عن شوائب التعصُّب و التقليد سليم ، اما الأول منهما فمبنىٌّ على مقدمة عَدُّوها من المسلَّمات ، لشدَّة اشتباهها بها ، و هي ان الطبيعة المطلقة من حيث انّها مطلقة عند من ذهب منهم إلى وجودها لا يمكن ان تكون قائمة بنفسها في الأعيان بدون انضمامها بشيء من القيود ، فان وجود المطلق على تقدير وجوده في رأيهم انّما هو وجود المقيَّد لا غير .
+إذا تقرَّر هذا ، فنقول ، لو صحَّ ان تكون الطبيعة المطلقة من حيث هي مطلقة التي هي بديهيَّة التصوُّر عند الجمهور قائمة بنفسها في الأعيان بدون انضمامها إلى شيء من المخصصات ، و يصدق عليها الوجوب بالذات بالبرهان ، على ما سبق تحقيقه آنفاً ، لم يتوجَّه بوجه من الوجوه ان يورد هاهنا ما ذكر
+
+من الاحتمال ، لا منعاً و لا نقضاً . اما المنع فلامتناع تطرُّقه إلى مقدمتي الدليل حينئذ ، اما الاولى ، فلانّها مبرهنة ، و اما الثانية ، فلانَّها بديهيَّة ، و اما النقض ، فلان تخلُّف الحكم من الدليل ، انّما يتصور فيما لا يكون من افراد ما استدل عليه ، و الطبيعة الملزومة لمّا كانت من افراد المطلق من حيث انّه مطلق ، لا يصلح لأن تكون صورة للنقض .
+و إذا كان الأمر على هذا الوجه ، فلا يصحُّ للعارف بطرق التحصيل و انحائه ان يشرع في جواب أمثاله ، إذ الشروع في جواب ما لا يرد على قانون البحث و أساليب المناظرة في قوة الخطاء ، على ان التزام الجواب مع انّه عدول عن طريقة التوجيه لا يفيد فائدة سوى تطويل الكلام ، و تكثير المقدمات ، و تمكين المخالف من المنع و النقض ، و تزييف البيان ، و كلُّ ذلك محذور في قواعد الجدل و قوانين البرهان .
+و اما الثاني من الايرادين ، فتقريره ، انّه لو صحَّ ان يكون الوجود المطلق من حيث انّه مطلق واجباً للزم ان لا يكون وصفاً مشتركاً ، بين ساير افراد الوجود ، و التالي باطل ، اما اللازمة فظاهرة ، و اما بطلان التالي ، فلانا نعلم بالضرورة ، انَّ كل واحد من افراد الوجودات الممكنة العينيَّة الخاصَّة هو من افراد الوجود العيني المطلق ، كما انّا نعلم بالضرورة ان الوجود الواجب بالذات المنافى لكل واحد من الوجودات الخاصَّة منافاة احد القسمين للآخر ايضاً من جملة افراده .
+ثمَّ ان هاتين الشبهتين لما فيهما من المقدمات المقبولة المألوفة لأكثر افهام الأزكياء سيَّما تلك المقدمة التي هي مبنى الشبهة و أساسها ، يحتاج دفعها إلى نوع من الحدس ، إذ به يتخلَّص الذكي اللبيب من ربقة الخطابيات المقبولة و الجدليّات المموِّهة و الساذجة ، و بسنوحه ينحلُّ عقود التقليدات
+
+و الاعتقادات الراسخة - الراسجة - لما فيه من الخلوص - الخلوِّ - عن شوائب التصرُّفات التعمليَّة الناشية من القوى الادراكيَّة العمليَّة - العلمية - عند اقتناص المطالب النظرية ، و لما فيه من الرُّسوخ و الطمأنينة اللازمة للعطايا الوهبيَّة الامتنانيَّة ، و كانت النسبة بين الفكر و الحدس في طريق النظر كالنسبة بين السلوك و الجذبة في غيره ، فلهذا قال في الجواب : ان الزَّكىَّ الحادس ، يعلم يقيناً ان الكون العيني الكائن بنفسه في الخارج ، الذي وجود سائر الأشياء في الخارج انّما هو باشراق بارقة من بوارق نوره و ظهورها بتناثر لمعة من لوامع ظهوره ، يمتنع ان يتكوَّن في الخارج بشيء من الكائنات التي انّما يتكوَّن فيه به ، و بمقارنته .
+ثمَّ انَّ وضوح هذه المقدمة في مبادى العقول لما بلغ مبلغاً لا يرتاب فيه من له ادنى تميُّز فضلًا عن السّابقين في مضمار غوامض العقليات و معالق اليقينيات ، أراد ان ينبّه على مرامى سهام سهوهم و مواطى خطوات خطائهم ، اعتذاراً منهم على وقوعهم في هذا الخطاء الفاحش و الغلط الظاهر ، و من نفسه على الاشتغال بجوابهم و تمكينهم من المنع و النقض ، بقوله : و لكنَّ الجمهور انّما يعتقدون انّ حكم مطلقه حكم ساير المطلقات . و تقرير ذلك انّهم لما رأوا ، ان لسائر المطلقات حكماً و هو ان وجوده في الخارج لا يتحقَّق الا بعد تخصُّصه بالفصول المقوِّمة و العوارض المشخَّصة ،
+
+و بالجملة ، انما ينضمُّ إليه الوجود الخارجي ، و يتقوم به في ضمن افراده ، حسبوا ، ان الوجود نفسه ايضاً من هذا القبيل ، فحكموا ان المطلق منه لا يكون قائماً بنفسه ، فلا يصلح للواجبيَّة - و يجب ان يكون له مخصِّص و مقوِّم ، حتى يتقوَّم في الخارج و يصلح للواجبيَّة - و مثل قياسهم هذا في المشاهدات ، كمثل من زعم في المبصرات من المحسوسات ، انه لها لم يمكن ادراك شيء منها بدون ان يظهرها نور من الأنوار ، و ذلك الاظهار ، انّما يتمُّ بعد ان يكون لذلك المحسوس سطوح متلوِّنة ، فكذلك النُّور ايضاً لأنّه من المبصرات يجب ان يكون ظهوره بنور آخر بشرائطه ، الا ان الوهم لمّا كان ليس له دخل في المشاهدات ، لم يقع شكٌّ للمشاهدين في المثال المحسوس ، حتى لو أورد هذه الشبهة على الأعمى ، لم يبعد ان يعجز عن الجواب بخلاف المسألة المبحوث عنها ، فانّها لمّا كانت من المعاني العقليَّة ، كان الأمر فيه بالنسبة إلى اكثر العقول العديمة البصيرة الواقعة تحت حكمى الوهم و الخيال ، كما وقع للأعمى ، فيما أورد عليه من المثال ، و هذا من جملة حكم اللَّه البديعة ، ان جعل الوهم حارساً لحضرته المنيعة ان يكون شريعة لكل بصيرة حولاء و فطانة بتراء ، الا لعباده المخلصين الذين فتح اللَّه بصيرتهم بنور اليقين حتى رأوا الحق على ما هو عليه بنوره المبين « وَ مَنْ لَمْ يَجْعَلِ اللَّهُ لَهُ نُوراً فَما لَهُ مِنْ نُورٍ » اللهم اجعلنا ممن ليس للشيطان عليهم سلطان هذا كلام وقع في البين ، فلا بُدَّ ان نرجع لما نحن بصدده ، و نقول : انّهم لمّا لم يفرِّقوا بين المطلق هذا ، و غيره من المطلقات ، حتى اعتقدوا ، ان حكم مطلق الوجود في عدم تحقُّقه الا في ضمن المقيَّد ، حكم ساير المطلقات من الماهيّات
+
+الحقيقيَّة العينيَّة المبهمة في نفسها المتحقِّقة بغيرها ، لا يبعد ان يبادر إلى أذهانهم الاحتمال المذكور ، و هو ان الواجب يجب ان يكون من الوجودات الخاصَّة و التعيُّنات الجزئيَّة ، و الا يلزم ان يكون الواجب ممّا لا يقوم بنفسه في الخارج بل يحتاج في تحقُّقه و قيامه في الخارج إلى غيره ، و حينئذ كان إبطال هذا الاحتمال بعد تسليم كون الإيراد مُوَجَّهاً على سبيل التنزُّل لا يكون خارجاً عن قانون التوجيه ، بل دفع ساير الشبه المانعة لحصول اليقين و القطع العقلي في المحل الغير المألوف بالقياس إلى طباع الجمهور ، و انّما يكون مفيداً بالنسبة إلى من اختصَّ منهم بفضل الذكاء فيكون التزامه في نظر التعليم واجباً ، و ذلك ان جمهور اهل العقل من المناظرين انّما يعتكفون عند المسلَّمات و النظريّات الغير المحتاجة إلى شيء غير ترتيب الضروريات و الاوليّات ، و اما امثال هذه المقدمات المحتاجة مع ذلك الترتيب الفكرى إلى ضرب من الحدس و الذَّوق يكون في غاية البعد عن طباعهم ، فلا بدَّ من رفع الشبه المانعة لعروجهم إلى مراقى الحقائق ، و ذلك و ان لم يكن مفيداً بالنسبة إلى كلّهم ، لكن يكون مفيداً بالنسبة إلى من هو اشدُّ ذكاءً منهم و أبعد عن رذيلتى البلادة و رسوخ التقليد الوهمي و الخيالى . و هذا تلويح بان الكلام في هذه الرسالة ليس مع الجمهور من اهل العقل ، بل مع من اختص منهم بمزيد الذكاء و فضل التفطُّن ، و مع هذا كلّه يكون له حدس قوى و كشف ذوقى .
+ثمَّ لو سُلِّم ، انّ دفع هذا الاحتمال لا توجيه له بالنسبة إلى المخالفين من الناظرين ، لكن من البَيِّن ، انَّ دفع ساير الاحتمالات و الشبه الممكنة الورود بالنسبة إلى الطالبين و المسترشدين ، يكون اعداداً لأذهانهم الضعيفة ، ان يلوح لهم الحقّ ، فيكون منعاً للحركات الفكريَّة المشوِّشة لهم عن الاضطرابات المستفادة من الوساوس العادية و التقليدات المنكرة
+
+الراسخة في نفوسهم القابلة الطالبة .
+و لا شكَّ ان التعرُّض لما يوجب تنظيف المحلّ عن العقائد التقليديَّة الراسخة ، و ما يوجبه من الحركات المشوشة ، المانعة الذي هو هاهنا بمنزلة رفع الموانع ، المعبَّر عنه بالتخلية ، واجب في نظر التعليم و التعلُّم ، كما انَّ التعرُّض لما يوجب اعداد المحل من المقدمات اليقينيَّة التي هي للاستفاضة بمنزلة المقتضى المسمّى بالتحلية ، واجب . في هذا النظر .
+
+### Commentary — English
+
+I say: this points to two difficult objections which reflective investigators have found profoundly troublesome. Most discerning opponents regard them as an incurable affliction. In truth, each is a root from which varieties of contentious dispute branch out, a foundation supporting boughs of doubt and perplexity. Their source cannot be cut off without the aid of sound intellectual intuition and thought free of the taint of partisanship and uncritical adherence.
+
+The first objection rests upon a premise counted among the conceded truths because of its strong resemblance to them. The premise is that an unrestricted nature, insofar as it is unrestricted, cannot, even for those who admit its existence, subsist by itself in external reality without being conjoined with some qualification. On their view, the existence of what is unrestricted—assuming it exists—is nothing other than the existence of what is qualified.
+
+With this understood, the objection runs as follows. Suppose that the unrestricted nature as unrestricted, whose conception the generality regard as self-evident, could subsist independently in external things without any particularizing factor, and that its intrinsic necessity had been demonstratively established, as was just argued. There would then be no legitimate way of raising the previously mentioned possibility, either by denying a premise or by presenting a counter-instance. Denial could not affect either premise of the argument: the first has been demonstrated, and the second is self-evident. Nor would a counter-instance be available. Failure of the conclusion to follow despite the proof would have to occur in something outside the instances covered by the proposition established; but the nature to which existence necessarily belongs is itself an instance of the unrestricted as unrestricted, and so cannot serve as such a counter-instance.
+
+If that is so, anyone acquainted with the methods of acquiring knowledge should not embark on answering objections of this kind. Answering what has no standing under the rules of inquiry and disputation is virtually an error. Apart from departing from proper argumentative procedure, undertaking an answer adds nothing except lengthening the discussion, multiplying premises, and enabling an opponent to deny, counter, and impugn the exposition. All these are to be avoided according to the rules of dialectic and demonstration.
+
+The second objection is this. If unrestricted existence as unrestricted were necessary, it could not be an attribute common to the other instances of existence. But that consequent is false. The implication is obvious; the falsity of the consequent follows because we necessarily know every particular possible external existence to be an instance of unrestricted external existence. We likewise necessarily know intrinsically necessary existence—which excludes each particular possible existence as one division excludes the other—to be among its instances.
+
+Both objections contain premises accepted by, and familiar to, most acute minds, especially the premise forming the foundation of the first difficulty. Removing them therefore requires a kind of intellectual intuition. Through it the discerning thinker escapes the bonds of accepted rhetorical propositions and deceptive or unsophisticated dialectical arguments. When it dawns, the knots of inherited convictions and deeply rooted beliefs are loosened. Intuition is free from the interference of contrived operations arising from the cognitive faculties during the pursuit of theoretical conclusions, and possesses the firmness and assurance accompanying freely bestowed gifts. In reflective inquiry, the relation of discursive thought to intuition is like the relation of spiritual wayfaring to attraction in the other path.
+
+For this reason the author replies that an intelligent person endowed with intuition knows with certainty that external being, subsisting of itself outside the mind, cannot acquire its being through any of the things which themselves acquire external being only through it and through conjunction with it. Those other things exist only through the shining of a flash of its light and become manifest through the scattering of a gleam of its manifestation.
+
+This premise is so evident to the first principles of intellect that even someone with the slightest discernment should have no doubt about it, much less those who lead the field in subtle intellectual questions and the difficult matters of certainty. The author therefore wished to identify where their errors had gone astray. In doing so he explains both how they came to commit this conspicuous mistake and why he himself undertakes to answer them, thereby permitting their denials and counter-objections. Hence his words, ‘But the generality believe that what holds of its unrestricted form holds of the other unrestricted natures.’
+
+The explanation is that they observe a rule applying to the other unrestricted natures: these do not exist externally until they have been specified by constitutive differentiae and individuating accidents. In short, extramental existence attaches to them and sustains them within their instances. They assume that existence itself is another case of the same kind. They therefore conclude that unrestricted existence cannot subsist by itself and so cannot be the Necessary; it must possess a particularizing and sustaining factor before it can subsist externally and qualify as necessary.
+
+An analogous mistake in sensible experience would be to reason that, since no visible thing can be seen without some light making it manifest, and since that manifestation requires the sensible thing to have coloured surfaces, light too—as something visible—must be manifested by another light under the same conditions. But because estimation has no role in overriding direct observation in this example, those who see it have no doubt. Presented to a blind person, however, the objection might well leave him unable to answer. Our present question concerns intelligible meanings, and most intellects lacking insight, subject to estimation and imagination, are in the same position as the blind person confronted with that example.
+
+Among God's marvellous acts of wisdom is His making estimation a guard over His inaccessible presence, preventing it from becoming a watering-place open to every cross-eyed insight and mutilated cleverness. An exception is made for His sincere servants, whose inward sight He opens by the light of certainty so that they see the Real as He is through His illuminating light: ‘For anyone to whom God gives no light, there is no light.’ O God, make us among those over whom Satan has no authority. This has been a parenthetical remark; we must return to the present purpose.
+
+Because they fail to distinguish this unrestricted reality from other unrestricted natures, they believe that unrestricted existence is realized only within something qualified, just as real external quiddities, indeterminate in themselves, are realized through another. It is therefore unsurprising that the stated possibility immediately occurs to them: the Necessary must be one of the particular existences and individual determinations, or else it would not be self-subsistent but would depend on another for its realization and subsistence outside the mind. Refuting this possibility, after granting for argument's sake that the objection is properly raised, is not outside sound argumentative procedure. Rather, removing doubts that obstruct intellectual certainty in a matter unfamiliar to ordinary dispositions benefits those distinguished by exceptional intelligence; addressing them is therefore obligatory from the standpoint of instruction.
+
+Most rational disputants remain with conceded premises and theoretical propositions requiring nothing beyond the arrangement of necessary and primary truths. Premises which, in addition to that discursive arrangement, need a measure of intuition and spiritual taste lie very far from their accustomed dispositions. The doubts obstructing their ascent toward the realities must therefore be removed. Although this does not benefit all of them, it benefits the more intelligent and those furthest from dullness and deeply rooted submission to estimation and imagination. This intimates that the treatise does not address the generality of rational thinkers, but those endowed with exceptional intelligence and discernment, together with powerful intuition and experiential unveiling.
+
+Even conceding that answering this possibility has no proper argumentative role with such opponents, removing the various objections and doubts that may occur to students and seekers of guidance plainly prepares their weaker minds for the truth to become apparent. It restrains the disordered movements of thought arising from habitual suggestions and ingrained, objectionable imitations within their receptive and seeking souls.
+
+Instruction and learning therefore require attention to whatever cleanses the receptacle of entrenched inherited convictions and the obstructive, distracting movements they produce. Here that is the removal of impediments, called emptying or purification. Equally necessary is attention to the certain premises that prepare the receptacle to receive an effusion: these function as the positive requisite, called adornment.
+
+### Textual and translation notes
+
+1. Manʿ and naqḍ are rendered as denial of a premise and counter-objection/counter-instance where the argument calls for those technical distinctions. The elaborate initial objection is not the commentator’s final rejection of answering objections.
+2. The passage explicitly compares fikr/ḥads with sulūk/jadhba. Discursive thought, intellectual intuition, spiritual wayfaring, and attraction are kept distinct rather than translated as interchangeable forms of inspiration.
+3. The light analogy and the criticism of opponents are the medieval author’s. The reference to a blind person is a philosophical analogy from the text, not an assertion about anyone’s intellectual ability today.
+4. Several displayed dash-separated forms (e.g. الراسخة/الراسجة, الخلوص/الخلوّ, العملية/العلمية) are editorially unstable. The English follows the contextual argument while the exact electronic transcription is retained separately.
+5. Takhliya and taḥliya are deliberately paired at the close: removal of impediments and positive preparation. Neither is omitted as a redundant flourish.
+6. Reported electronic apparatus strings, not independent manuscript readings: ( التبصرة - خ ل ); ( للحضرة - خ ); ( سبيل - خ ); ( دفع - خ ); ( عند - خ )
+
+---
+
+## SH-023 — Four interpretations of a particular existent and the proper subject of possibility
+
+**Source:** A, printed pp. 106–109
+
+https://ablibrary.net/book_content/b/17638/302?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا إشارة إلى الجواب الثاني من الايرادين المذكورين ، لمّا
+
+كان السائل ادعى الضرورة في المتنازع فيه ، يمكن دفعه ، بان ادعاء الضرورة في محل النزاع غير مسموع على ما هو مقتضى صناعة النظر ، إذ قولنا ، كل بديهى لا يتنازع فيه ، ينعكس إلى كل ما يتنازع فيه ، لا يكون بديهياً ، لكن بكون مجادلة ، و الشبهة بمادتها باقية بحالها .
+فالجواب الحاسم لمادة الشبهة ان يقال ، انَّ الوجود الخاصّ الممكن الذي هو عبارة عن الوجودات المخصوصة بالتعيُّنات و الإضافات و الأحوال النسبيَّة العدميَّة ، لا يمكن ان يكون من افراد الوجود المطلق ، و ذلك لأنَّ المراد بالوجودات الخاصَّة التي هي افراد الوجود المطلق ، لا يخلو من ان يكون معروض تلك التعيُّنات بدون اعتبار العارض معها أصلًا ، أو تلك العوارض بدون اعتبار المعروضات معها أصلًا ، أو يكون المراد به هو المعروض مع اعتبار العارض ، و حينئذ ، لا يخلو من ان يكون اعتبار العارض على سبيل العروض أو الجزئيَّة .
+فحصل هاهنا أربعة اقسام لا مزيد عليها عقلًا و وجوداً ، و لا يمكن على شيء من التقادير ان يكون للوجود المطلق افراد هي ممكنة في ذاتها ، و ذلك لأنه لو أريد بها معروض شيء من هذه التعيُّنات و الصفات و الأحوال ، بدون اعتبارها معه الذي هو القسم الأول من الأقسام الأربعة ، فهو بالحقيقة محض الوجود الواحد الواجب بالذات ، و لو أريد بها شيء من العوارض الموجودة بالعرض ، من غير اعتبار الوجود الموجودات بالذات معها الذي هو القسم الثاني من الأقسام المذكورة ، فلا نسلِّم انّها فرد من افراد الوجود المطلق ، ضرورة انّها معدومة بالذَّات بهذا الاعتبار ، فكيف يصحُّ ان يصدق عليه الموجود بهو هو ، حتى يكون من افراده ، فان افراد الوجود انّما هو الموجود لذاته ، الصادق مفهوم الوجود عليه بهو هو ، و لو أريد بها مجموع الأمرين ، أي المركَّب من العارض و المعروض الذي هو القسم
+
+الثالث من الأقسام ، فلا نسلَّم امكان وجود مثل هذا المركَّب ، ضرورة امتناع كون الوجود جزءاً من الماهيات في الأعيان على ما تقرَّر عندهم ، و حينئذ ، يلزم على هذا التقدير ان يكون امتناع الأفراد الذهنيَّة في الأعيان بالذات ، فيلزم حينئذ اختلاف افراد الوجود ، و قد ثبت استحالته .
+فان قلت : انّما يلزم المحال لو كان ممتنعاً مطلقاً ، اما إذا كان ممتنعاً في الخارج فقط ، فلا نسلَّم استحالته .
+قلت : ما يكون فرداً للوجود المطلق و يصدق عليه الوجود بهو هو ، لا بدَّ و ان يقتضي الوجود لذاته ، فيستحيل ان يكون مقتضياً للعدم في مرتبة من مراتبه ، و لو أريد بها معروض شيء من تلك العوارض من حيث هو معروضه - أي مع - اعتبار هذا العارض معه من حيث هو عارض على ما هو الموجود في الأعيان ، فان الموجود في الأعيان ، من الوجودات الخاصَّة انّما هو ملحوقات تلك التعيُّنات ، و هو القسم الرابع من الأقسام المذكورة ، فيكون كلُّ واحد من الوجودات الخاصَّة متحداً مع الآخر بالذات بهذا الاعتبار ، بل مجموعها ليس الا امراً واحداً واجباً بالذات ، فان ما بالذات لا يتغيُّر بلحوق اللواحق و العوارض فان الوحدة هي الذاتيَّة له و الكثرة انّما هي لواحق عرضت له بحسب صفات معدومة بالذات موجودة بالعرض ، فيكون المتَّصف بالإمكان ليس الا هذه اللواحق المعدومة الزائدة على الذات ، فيقرَّر من هذا التحقيق انّه لا يمكن للوجود المطلق من حيث انَّه وجود مطلق ، افراد ذاتيَّة مختلفة بحسب الوجوب و الإمكان و الامتناع ، ضرورة ان الوحدة الحقيقيَّة هي الذاتيَّة له .
+و هذا الكلام يفيدك زيادة تبيين لما مهَّدنا لك في المقدمة ، من ان الإمكان انَّما يعرض باعتبار ظاهر العلم ، و الوجوب باعتبار ظاهر الوجود ، و بين ظاهرهما فرق ظاهر .
+
+و اما القول بالمنافاة بين الممكن و الواجب ، فمبنىٌّ على تعدُّد افراد الوجود ، و اختصاص فرد منه بالوجوب دون غيره ، و قد عرفت ما فيه من الخلل فيما سبق من البيان ، فلا حاجة لتطويل الكلام به .
+
+### Commentary — English
+
+I say: this points to the answer to the second of the two objections. Since the questioner claims necessary knowledge precisely where the matter is disputed, he could be answered by saying that an appeal to necessity within the point at issue is not admissible under the discipline of inquiry. The proposition ‘Every self-evident matter is undisputed’ converts by contraposition into ‘Whatever is disputed is not self-evident.’ But this would be dialectical disputation, leaving the substance of the difficulty intact.
+
+The answer that cuts off its source is to say that a particular possible existence—meaning existence specified by determinations, relations, and relative privative states—cannot be an instance of unrestricted existence in the required sense. For what is meant by the particular existences alleged to be its instances must be one of the following: the subject of those determinations, without considering the accruing determinations along with it; those accruing determinations, without considering their subject at all; or the subject together with the accruing determination. In the last case the determination is considered either as something accruing to the subject or as a constituent part.
+
+Four exhaustive alternatives result, both intellectually and in existence. None permits unrestricted existence to have instances that are possible in themselves. Under the first, what is meant is the subject of some determination, attribute, or state without considering that feature along with it. This is in truth pure, one existence, necessary through itself. Under the second, what is meant is an incidentally existing feature without considering the existence which exists through itself along with it. We do not concede that such a feature is an instance of unrestricted existence: under that consideration it is intrinsically nonexistent. How, then, could existent be predicated of it as what it is, making it an instance? An instance of existence is what exists through itself and of which the concept of existence is truly predicated as what it is.
+
+Under the third, what is meant is the sum of both, a composite of the accruing feature and its subject. We do not concede that such a composite can exist, since, as they themselves establish, existence cannot be a constituent of quiddities in external reality. On this supposition the intellectual instances would therefore be intrinsically impossible in external things. Differences among the instances of existence would follow, although their impossibility has already been demonstrated.
+
+You may object that the impossible consequence follows only if the composite is impossible without qualification, whereas its being impossible externally alone need not be impossible in the required sense. I reply that anything which is an instance of unrestricted existence, and of which existence is predicated as what it is, must require existence through itself. It cannot therefore require nonbeing at any of its levels.
+
+Under the fourth alternative, what is meant is the subject of an accruing feature insofar as it is that feature's subject: the feature is considered along with it as accruing to it, as is actually the case externally. Particular existences in external reality are simply that to which these determinations belong. Under this consideration each particular existence is intrinsically identical with the others; indeed, all of them together are nothing but one reality necessary through itself. What belongs intrinsically does not change through the addition of concomitants and accruing features. Unity is intrinsic to it, while multiplicity consists in features accruing through attributes that are intrinsically nonexistent and exist incidentally. It is therefore only these intrinsically nonexistent concomitants, additional to the essence, that are qualified by possibility.
+
+This investigation establishes that unrestricted existence as unrestricted existence cannot possess intrinsic instances differing in necessity, possibility, and impossibility, because genuine unity belongs to it intrinsically. It further clarifies what we explained in the prolegomenon: possibility accrues in consideration of the manifest aspect of knowledge, and necessity in consideration of the manifest aspect of existence. The distinction between their manifest aspects is evident.
+
+As for the assertion that the possible and the necessary exclude each other, it rests upon positing multiple instances of existence and assigning necessity to one rather than the others. The defect in that position has already been explained, so there is no need to prolong the discussion.
+
+### Textual and translation notes
+
+1. The self-evidence argument is explicitly set aside as merely dialectical. The fourfold analysis that follows is the substantive answer, not a modern reconstruction supplied by the translator.
+2. The four cases distinguish a subject alone, an accruing feature alone, a composite of both as parts, and a subject qualified by an accruing feature. They must not be collapsed into a two-case substance/accident division.
+3. Existing through itself and being intrinsically nonexistent are used within Ibn Turka’s argument about existence and determinations. Their use here should not be read as an independent assertion that ordinary possible beings are necessary in every respect.
+4. The variation يعرض/يفرض at the close is retained in the apparatus. The English follows the displayed يعرض, ‘accrues’.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( معه - خ ); ( يفرض - خ )
+
+---
+
+## SH-024 — Mental and external being: one reality, different considerations
+
+**Source:** A, printed pp. 109–111
+
+https://ablibrary.net/book_content/b/17638/305?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا ايراد بعض على ما برهن عليه ، من امتناع اختلاف افراد الوجود المطلق في الوجوب و الإمكان و الامتناع ، و تقريره ، انَّ الوجود الذهني ، فرد من افراد الوجود المطلق ، لأنّه ، قسم من اقسامه ، مع انّه يمتنع ان يوجد في الأعيان من حيث هو هو كذلك ، و الا يلزم ان لا يكون وجوداً ذهنياً ، كما ان الواجب ايضاً فرد من افراد الوجود المطلق - مع انّه يجب ان يكون موجوداً في الأعيان بحسب الذات ، فيلزم اختلاف افراده في الوجوب و الامتناع .
+لا يقال : الذي يمتنع ان يوجد في الخارج ، الكائن في الذهن من حيث انّه كائن في الذهن ، لا الكون الذهني الذي هو من قبيل الأعراض الخارجية ، فانَّ الكون الذهني عبارة عن حصول الصورة العقليَّة ، و لا شكَّ انّها من
+
+حيث هي عارضة للعقول موجودة في الخارج .
+لأنّا نقول : الصور العقليَّة هي العوارض للعقول ، و اما ما تكوَّنت فيها ، فامر آخر غير نفس الصورة انّما اعتبره العقل عند ملاحظته لما ملاحظة تكوُّنها فيه ، و لا شك ان ذلك انّما وقعت في الدرجة الثانية من التعقُّل ، فيمتنع حينئذ ان يكون لها وجود في الخارج ، و يلزم الاختلاف المذكور .
+و جوابه ان الكون الذهني هو الكون العيني بالذات ، و ان كان مغايراً له بالاعتبار ، و تحقيق هذا الكلام موقوف على تمهيد مقدمة ، و هي انَّ الوجود المطلق بالمعنى الذي ذهب إليه المحقّقون ، لا على ما اصطلح عليه المتأخّرون - كما نبّهت عليه في المقدمة ، له أحوال اولية يسمُّونها بهذا الاعتبار شئوناً ذاتيَّة ، لاقتضائها ان يظهر الذات بحسبها . و ان شئت قلت :
+اقتضاء الذات ان يظهر بحسبها منصبغاً باحكامها ، إظهاراً لكمالاتها الاسمائية اللازمة للكمال الذاتي ، كما سيجيء تفصيله انشاء اللَّه . و تلك الشئون المسماة في مرتبة اخرى بالأعيان الثابتة ، و باعتبار آخر بالأسماء ، مختلفة بحسب الحيطة و القرب الذاتي ، بعضها كلّيات مشتمل ظهورها على ظهور جميع الجزئيّات بحسبها بالفعل ، يسمى بالمراتب ، و لا يمكن ظهور الذات ، بالأبعد منها - الا بعد ظهورها بالأقرب ، ضرورة انَّ الظهور مندرج في تلك الكلّيات من عالم الأرواح و المثال ، إلى ان يتمَّ بعالم الحس ، و هي المرتبة الاخيرة من كليات المراتب المسمّاة عند اهل التحقيق بالمجالى ، و الوجود في هذه المرتبة يعبَّر عنه في عرف آخر بالكون العيني .
+و إذا عرفت هذا و قد ظهر لك مما سبق من الأبحاث ، ان تلك الأحوال و ما يتبعها من الأحكام المخصصة للوجود سواء كانت من الأحوال الكلية المسماة بالمراتب ، أو الجزئيَّة المحاطة لها - انما هي اعتبارات و نسب عدميَّة ليس
+
+لها دخل في حقيقة الوجود من حيث هي . فلا يخفى عليك حينئذ ، ان الكون الذهني ايضاً الذي هو مرتبة من تلك المراتب ، هو الكون العيني بالذات ، و ان كان مغايراً له بالاعتبار ، فان عروض المعاني العقليَّة انما هو للوجود العيني أيضاً ، لكن في بعض مراتبه أو به شرط اتّصافه بصفات آخر عارضة له ، فان عروض بعض اللّواحق قد يكون مسبوقاً بلحوق الأقدم رتبة كما عرفت آنفاً . و في الجملة لحوق هذه الاعتبارات و الاحكام كلّها في أي مرتبة كانت من المراتب ، انّما هو للكون العيني لا غير ، إذ هو الآخر ظهوراً و الأول رتبة . فتنبَّه .
+قوله : و لا اعتبار هاهنا في الموجوديَّة بالفرض ، دفع لما يمكن ان يورد هاهنا ، من ان الشبهة باقية بحالها ، فان المعنى الاعتباري من الوجود الذي يعرض المعاني العقليَّة مثل عروضها لسائر الماهيّات الاعتبارية و جميع النسب و الإضافات العدمية غير المعنى الحقيقي منه الأصلي الذي هو متَّحد بالكون العيني الذي ساير الحقائق الوجوديَّة و الماهيّات الحقيقيَّة من صور تعيُّناته و مراتبه على ما تحقق في صدر الرسالة ، و صورة النقض انّما هو الأول دون الثاني ، حتى يندفع بما قيل في الجواب . و بيان دفعه ، انَّ ذلك المعنى الاعتباري منه خارج عن المبحث ، لأن الكلام هاهنا أي في هذه الرسالة انّما هو في الوجود الموجود بنفسه الواجب بالذات ، لا في المعنى الاعتباري منه الذي هو من من قبيل النسب و الإضافات التي هي من الاعتبارات العدميَّة .
+
+### Commentary — English
+
+I say: this presents a counter-instance to the demonstration that instances of unrestricted existence cannot differ in necessity, possibility, and impossibility. Mental existence is one of the divisions, and therefore one of the instances, of unrestricted existence. Yet, insofar as it is mental, it cannot exist externally: otherwise it would cease to be mental existence. The Necessary is likewise an instance of unrestricted existence, yet must exist externally through itself. Its instances would therefore differ in necessity and impossibility.
+
+It should not be replied that what cannot exist externally is the thing in the mind insofar as it is in the mind, not mental being itself, which belongs among external accidents. On this reply, mental being means the occurrence of an intelligible form, and that form, insofar as it accrues to intellects, unquestionably exists externally. For we answer that intelligible forms are what accrue to intellects, whereas what constitutes their being there is something else, distinct from the form itself. Intellect considers it when attending to the form's coming to be within intellect. It thus occurs at the second level of intellection, cannot exist externally, and yields the difference just alleged.
+
+The answer is that mental being is intrinsically the same as external being, though it differs from it in consideration. Establishing this requires a preliminary explanation. Unrestricted existence, in the sense adopted by the people of realization—not the meaning conventionally adopted by later thinkers, as the prolegomenon explained—has primary states. These are called intrinsic affairs because they require the essence to manifest according to them. Or, equivalently, the essence requires that it manifest according to them, coloured by their governing properties, so as to display the perfections of the names necessarily accompanying essential perfection. This will be explained in detail, God willing.
+
+Those affairs, called fixed entities at another level and names under another consideration, differ in comprehensiveness and essential proximity. Some are universals whose manifestation actually encompasses the manifestation of all the particulars falling under them; these are called levels. The essence cannot manifest in the more remote levels without first manifesting in the nearer. Manifestation proceeds through these comprehensive levels, from the world of spirits and the imaginal world, until it reaches completion in the world of sense. This is the last of the comprehensive levels, which the people of realization call loci of disclosure. In another terminology, existence at this level is called external being.
+
+Now recall what the preceding discussions have established. These states and the judgments that follow them in specifying existence—whether comprehensive states called levels or particular states encompassed by them—are merely conceptual considerations and privative relations. They do not enter into the reality of existence as such. Mental being, which is one of those levels, is therefore intrinsically external being, though distinct in consideration. Intelligible meanings too accrue to external being, but at certain levels or on condition that it is qualified by other accruing attributes. Some concomitants arise only after a prior concomitant has attached, as explained above. In short, all these considerations and judgments, at whatever level, belong only to external being: it is last in manifestation and first in rank. Take heed.
+
+The author's words, ‘Existence by supposition is not considered here,’ answer a possible renewed objection. The intellectually considered meaning of existence, which accrues to intelligible meanings as it accrues to other conceptually considered quiddities and privative relations, differs from the primary real meaning identical with external being. All existential realities and real quiddities are forms of the determinations and levels of the latter, as established at the opening of the treatise. The proposed counter-instance concerns the first meaning, not the second, and so the given answer would not remove it.
+
+The objection is answered by observing that the intellectually considered meaning is outside the present inquiry. Here, in this treatise, the discussion concerns existence which exists through itself and is intrinsically necessary. It does not concern the conceptually considered meaning belonging to the relations and correlations that are privative considerations.
+
+### Textual and translation notes
+
+1. The displayed passage explaining what distinguishes the intelligible form from ‘its being there’ has unstable wording (including ما تكوّنت فيها and عند ملاحظته لما). The English is a contextual construction; the raw source is retained for revision.
+2. The author moves between external being as a manifestation at the sensible level and external being as the underlying reality appearing at every level. The translation preserves that shift and the explicit phrase ‘last in manifestation and first in rank’.
+3. The lemma بالفرض has the reported alternative بالعرض. The English follows the displayed ‘by supposition’; ‘incidentally’ would alter the force of this final answer and remains a documented alternative.
+4. Imaginal translates mithāl; it is not interchangeable here with a private imagined fiction. The argument is Ibn Turka’s proposed resolution, not a definition imposed on all theories of mental existence.
+5. Reported electronic apparatus strings, not independent manuscript readings: [ نقض - ظ ]; ( تكون - خ ); ( التي تحتها - خ ); ( بالجملة - خ ); ( بالعرض - خ )
+
+---
+
+## SH-025 — Can a wholly unrelated First Principle also be cause and share general predicates?
+
+**Source:** A, printed pp. 112–114
+
+https://ablibrary.net/book_content/b/17638/308?lang=ar
+
+### Commentary — Arabic
+
+أقول : لمّا فرغ عن بيان ما هو المطلب الأول هاهنا على طريقة النظر و الاستدلال و دفع ما يرد عليه من وجوه الاحتمال و إبطال ما ذهب إليه المخالف بتبيين ما اشتمل عليه مبانيه من الوهن و الاختلال على مقتضى ما التزمه في مطلع الرسالة ، أراد ان يتردّف تلك الأبحاث بوجه تنبيهى يكفى للمانع المنازع ، ان نظر به عين الانصاف و الاعتبار ، و يفيد للمريد الطالب مزيد الاستكشاف و الإستبصار ، تنبيهاً على ان المطلب من البديهيات التي لا يحتاج في تحصيلها إلى التنبيهات . و بيان ذلك ، انّهم يعتقدون في ابيّة الواجب و هويَّته تعالى ، ما ينافي الصفات الواجبة الثبوت له عندهم و كل ما ينافي لواحقه السوابق من المذاهب و الأحكام ، يتبين للمتأمِّل بطلانه - ان أمعن النظر فيها حق الإمعان - فلهذا سمّى هذا المبحث تنبيهاً .
+و بيان ذلك ، انهم يعتقدون في الواجب انّه انيِّة خاصة نوعية ، أي كون عينى خاص مخالف بالذات لسائر الأكوان العينيَّة و مع ذلك يعتقدون انّها مبدأ و علة لسائر الأكوان و الأنواع الباقية بالمباينة و عدم المناسبة ، و كذلك يعتقدون
+
+مع هذا ايضاً انها مندرجة تحت الوجود العيني المطلق الذي يشمل ساير الأشياء العينيَّة المستندة إليها عندهم على اختلاف معنى الوجود ، سواء كان اعتبارياً كما ذهب إليه البعض ، أو حقيقيًّا كما ذهب إليه الباقون . و بالجملة يحكمون باندراجها تحته ، كما يحكمون باندراجها تحت جميع الكلّيات الشّاملة و الأمور العامة ، مثل كونها حقيقة و كونها علَّة و متعيّناً و واحداً ، و باندراجها تحت كثير من الكليات الباقية ممّا عداها و هي الصفات الواجبة الثبوت لها كالعالميَّة و القادريَّة و المريديَّة و غيرها ، و لا شكّ ان اعتقاد المبدئيَّة التي هي نفس النِّسبة ، و كذا الأولية للشيء ، تنافي اعتقادهم عدم المناسبة بينها و بين شيء من معلولاتها ، كما انَّ اعتقاد عدم المناسبة ينافي اعتقاد اشتراكها في الكون العيني الذي انّيته الخاصَّة عبارة عنه ، و كذلك اندراجها تحت شيء من الكليات و الأمور العامة ينافي عدم المناسبة بينها و بين جميع المعلولات كما يستلزم الاشتراك مع المندرج في ذلك المشترك من الأنواع العينيَّة . فظهر على من استشم في الوجود رايحه اليقين ، انّ اعتقاد مثل هذا في الواجب بعيد عن الحدس المبين ، بل عن العقل السليم و الفكر الصحيح ، لما استلزمه من التناقض الظاهر ، و المحال الصريح .
+فلئن قيل : الاشتراك اللّازم في هذه الصُّور انّما هو الاشتراك في العوارض الخارجيَّة ، إذا الكون المطلق عندهم عارض للانيَّة الواجبة عندهم ، كما ان المبدئية ايضاً عندهم من النسب العدميَّة و اللواحق الخارجية التي تلحقها ، بقياسها إلى الأمور الخارجيَّة ، و كذلك ساير الكلّيات الشاملة ، كالماهيَّة و العليَّة و غيرهما .
+و ايضاً الوجود عندهم من الاعتبارات العقليَّة التي انّما يعرض للانيات و الوجودات الخاصَّة في العقل ، و كذلك سائر الصفات الشاملة ، فانّها من الاعتبارات العقليَّة ، فاشتراك الماهيَّة و الانيَّات
+
+التابعة في شيء منها ، لا تنافي المباينة بحسب الخارج على مقتضى مذهبهم .
+قلنا : قد ظهر من المباحث السابقة و ممَّا سيجيء من المنبهات الذوقيَّة و البراهين العقليَّة ، ان الوجود لا يمكن ان يكون ذات افراد مختلفة الحقائق بحسبه ، حتى يكون قول الوجود المطلق عليها قولًا عرضيّا مشكِّكاً .
+و ايضاً لا يخفى على من له ادنى دربة بأساليب اولى الأذواق الكاملة من اصحاب الذكاء و الفطنة و الملكات المرضيَّة الفاضلة ، ان الضرورة حاكمة بأن الكون العيني الذي يشترك فيه الأكوان العينيَّة التي بها يتكوَّن الأعيان في الخارج ، لا بدَّ و ان يكون كوناً عينيّا و ان تكون تلك الأكوان في الأعيان و الأذهان نفس حقيقة ذلك الكون و عين طبيعتها ، و اختلاف تلك الأكوان و تعدُّدها انّما يكون بالاضافات و النسب الاعتباريَّة المخصَّصة لا غير ، و انَّ ما فهموه من لفظ الوجود انّه اعتبار عقلي ، مما لا اعتبار به في عرف التحقيق على ما سبق بيانه غير مرَّة ، و كان قوله فتأمّل إلى آخره ، إشارة دفع هذين الايرادين .
+
+### Commentary — English
+
+I say: after establishing the first objective through reflective investigation and inference, answering the possible objections, and refuting the opponent's position by exposing the weakness of its foundations—as promised at the opening—the author wishes to add an indication to those discussions. It will suffice for the denying opponent who looks with fairness and consideration, while giving the aspiring student further disclosure and insight. Its purpose is to intimate that the objective belongs among self-evident matters which do not need such indications for their acquisition. The point is that they attribute to the Necessary's existent reality and identity something incompatible with the attributes which they themselves hold must belong to Him. Any doctrine or judgment incompatible with His necessary concomitants will reveal its falsity to someone who examines it attentively. Hence the author calls this discussion an indication.
+
+They believe that the Necessary is a particular specific existent reality: a particular external being intrinsically different from all other external beings. Yet they also hold it to be the principle and cause of all the other beings and species, while asserting separation and the absence of any affinity. At the same time they place it under unrestricted external existence, which encompasses all the external things dependent on it, whatever account they give of existence—whether a conceptual consideration, as some hold, or a reality, as the others maintain.
+
+In short, they judge it to fall under existence, just as under the other comprehensive universals and general notions: being a reality, a cause, a determinate thing, and one. They also place it under many further universals, the attributes they hold necessarily established of it, such as being knowing, powerful, willing, and the rest. But to attribute principiality—which is itself a relation—and priority to something plainly conflicts with denying every affinity between it and any of its effects. Denying affinity likewise conflicts with holding it to share in external being, which is what its particular existent reality is said to be. Its inclusion under any universal or general notion similarly conflicts with denying affinity between it and all effects, and entails sharing something with the other external species included under that common notion. Anyone who has caught the scent of certainty about existence can see that such an account of the Necessary is far from clear intuition—indeed, from sound intellect and correct thought—because of its manifest contradiction and explicit impossibility.
+
+An objection may be raised that the commonality required in these cases concerns only extrinsic accruing predicates. On their view unrestricted being accrues to the necessary existent reality; principiality too is one of the privative relations and extrinsic concomitants arising when it is considered in relation to external things. The same applies to other comprehensive universals, such as quiddity and causality. Moreover, on their account existence is an intellectual consideration which accrues mentally to existent realities and particular existences, as are the other comprehensive attributes. Their necessary reality and the dependent existent realities can therefore share such considerations without contradicting their extramental separation.
+
+We reply that the preceding discussions, together with the experiential indications and rational demonstrations to follow, establish that existence cannot have instances with different realities qua existence, such that unrestricted existence would be predicated of them accidentally and in a graded manner. Anyone even slightly trained in the methods of discerning people with perfected spiritual taste and excellent acquired dispositions will also recognize the necessary judgment that external being, shared by the external beings through which entities come to be outside the mind, must itself be external being. Those beings, whether external or mental, must be the very reality and nature of that being. Their differences and multiplicity arise only through the particularizing relations and conceptually considered correlations. As repeatedly explained, what they understand by the word existence as a mere intellectual consideration has no standing in the vocabulary of realization. The author's concluding injunction to reflect points toward answering these two objections.
+
+### Textual and translation notes
+
+1. The characterization of the opponent is Ibn Turka’s. It is not an independently established account of every Avicennian or later Peripatetic position.
+2. Inniyya is rendered ‘existent reality’ rather than equated without qualification with either quiddity or existence. The displayed ابيّة at the opening appears corrupt; the English reads it contextually with the repeated انيّة below.
+3. The tension between ‘no need for indications’ and the present tanbīh is retained rather than silently replacing the printed التنبيهات with البراهين.
+4. The commentator explicitly uses عين طبيعتها in the closing argument. This can illuminate, but does not independently emend, the unstable ancestor-text wording discussed in the matn apparatus.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( يردف - خ ); ( المعلولة لها - خ ); ( و الانيّات الباقية - خ )
+
+---
+
+## SH-026 — Gathering and distinction: why unrestricted being is prior to its determinations
+
+**Source:** A, printed pp. 114–117
+
+https://ablibrary.net/book_content/b/17638/310?lang=ar
+
+### Commentary — Arabic
+
+أقول : بعد فراغه من إثبات المسألة على ما هو المطلوب و ردّ بعض المذاهب الموهمة للمستبصر الطالب بحيث يتفطّن لبطلانه بانّه مزالّ اقدامهم في تلك المسألة و ازاحة ما يوجب اقدامهم على تلك الخطيئة من الشبهات القويَّة و الشكوك الجليّة التي لا يتخلَّص منها الا العقول السليمة و الأذهان المستقيمة بعد تلطيف من السِّر و تدقيق من النظر مع ما يكون له اعانة من قبل الحدس المبين و حظّ من جهة الذوق و اليقين ، يريد ان يبيّن اصل الإجمال الحقيقي و الإطلاق الذاتي ، حتى يؤسَّس عليه كيفيَّة تفرُّع
+
+ التفاصيل الأسمائيَّة عنه تتميماً لما هو بصدده و وفاءً بما التزمه من بيان التوحيد على عرف التحقيق الذي لا بدَّ له من الجمع بين التفرقة و الجمع و التبرئة عن التنزيه و التشبيه كما هو مقتضى حقيقة التوحيد حسبما نبَّه عليه الصادق « عليه السلام » : « ان الجمع
+
+بلا تفرقة زندقة ، و التفرقة بدون الجمع تعطيل ، و الجمع بينهما توحيد » فقال ، ان من الاولى الأوجب ان يجعل الكون العيني ، الحقيقي العيني ، هو الكون المطلق المحيط بسائر التعيُّنات و بيان ذلك ، انّه لما تقرَّر فيما سبق من البيان ، ان الكون العيني هو القائم بنفسه المقوِّم لسائر ما يقارنه من الماهيّات المتعيَّنة و هي من حيث انّها كذلك انّما هي معان عقليَّة و طبايع مأخوذة مع اضافات و نسب اعتباريَّة لا وجود لها الا بالاضافة إلى الكون العيني ، فلا شك انّه اولى بان يجعل الكون المطلق الواجب من تلك التعيُّنات .
+لا يقال : لفظ الأولويَّة هاهنا لا يناسب المقصود ، فان مفهومها انما هو رجحان احد الطرفين على الآخر و المقصود غير هذا .
+لانّا نقول : اختيار لفظ الأولويَّة بعد إبطال ما ذهب إليه المخالف من جعل التعيُّنات و الماهيات ، حقايق عينيَّة دون ما تكوَّن به لما فيها من التهكُّم و التغيير الذي هو كالباعث للمخالف على الرجوع عما اعتقده بل كالقاطع عن باطنه تلك العقائد الراسخة على ما هو
+
+مقتضى صناعة الخطابة اولى من غيره من العبارات ، فيجب حينئذ ، ان يجعل المتعيَّنات من حيث هي متعيّنات ، معان عقليَّة و طبايع مأخوذة مع اضافات و نسب اعتباريَّة على عكس الذاهبين إلى الكون المطلق من الاعتبارات الواقعة في الدرجة الثانية من التعقل ، و ان الأمور الحقيقيّة الكائنة في نفسها انّما هي الماهيات المتعيَّنة ، و هذا في النظائر المحسوسة ، كمن زعم في المثال المذكور لقصور قوَّته الباصرة في الإدراك ، انّ الظاهر بنفسه عند الحس في الأعيان الخارجية انما هي الألوان المتخالفة ، و ان النور المطلق البيِّن بنفسه المبيِّن لغيره لا ظهور له في الخارج أصلًا الا في ضمن الألوان ، و هذا الحكم سببه انما هو تراكم عروق سبل لجهل المركَّب الناشيَّة من التقليدات الراسخة المانعة لها عن ادراك النور مجرداً عن المظاهر الكثيفة الظلمانيَّة و فالعاقل العارف لا ينكرهم فيما ادعوا من ذلك بل ينبغي ان يصدِّقهم فيما هم فيه إذ أخبارهم انّما هو عن محتد إدراكهم و محطّ شعاع أبصارهم ، و ذلك لضعفه لا يتجاوز عن الألوان .
+شعر
+إذا لم تكن للمرء عين صحيحة * فلا غرو ان يرتاب ، و الصبح مسفر
+و لمّا كان ذلك ايضاً مرتبة من مراتب ظهور الحق بحسب مشاعرهم و مجلى من مجالى كماله و منصَّات جماله لا ينكر ، فلذلك ترى المصنِّف و غيره من المحققين لا يحكمون ببطلان مذهبهم و غيره من المذاهب ، و يمكن ان يستشعر من قوله : اولى ، هذا المعنى .
+شعر
+كلُّ من في حماك ، يهواك لكن * انا وحدي ، لكلّ مَن في حماكا
+
+### Commentary — English
+
+I say: the author has established the question as intended and rejected positions liable to mislead the discerning student, exposing where their adherents stumble. He has removed the powerful doubts and evident difficulties that led them into error—difficulties escaped only by sound intellects and upright minds after refinement of the inward secret and precision of reflection, aided by clear intuition and a share of spiritual taste and certainty. He now wishes to explain genuine undifferentiated comprehensiveness and intrinsic unrestrictedness, so that the way in which the differentiated names arise from it may be established upon this foundation.
+
+This completes his purpose and fulfils his undertaking to explain divine unity according to the vocabulary of realization. Such an account must bring distinction and gathering together, and transcend both the exclusive assertion of incomparability and assimilation. That is what the reality of divine unity requires, as the saying attributed here to al-Ṣādiq, peace be upon him, indicates: ‘Gathering without distinction is heresy; distinction without gathering is divestment; joining the two is divine unity.’
+
+The author therefore says that it is more fitting and more necessary to identify real external being with unrestricted being which encompasses all determinations. The explanation is that external being, as established above, subsists through itself and sustains the determinate quiddities conjoined with it. Insofar as they are determinate, those quiddities are intellectual meanings and natures taken together with conceptually considered relations and correlations. They have no existence except in relation to external being. It is therefore undoubtedly more fitting to identify unrestricted necessary being with external being than with those determinations.
+
+It should not be objected that the language of ‘more fitting’ is inappropriate because it signifies merely the preference of one alternative over another, whereas that is not the intended conclusion. We reply that, after refuting the opponent's claim that determinations and quiddities are external realities rather than that through which they come to be, this expression is preferable to others for its irony and reproach. These can impel the opponent to abandon his conviction—indeed, sever those deeply rooted beliefs from his inward being—in accordance with the art of rhetoric. Determinate things, precisely as determinate, must therefore be regarded as intellectual meanings and natures taken with conceptually considered relations and correlations. This reverses the view that unrestricted being is merely a consideration occurring at the second level of intellection, while the intrinsically real things are determinate quiddities.
+
+In sensible experience this resembles someone whose weak sight leads him to suppose that the different colours alone manifest themselves to perception externally, and that unrestricted light, which is evident in itself and makes other things evident, has no external manifestation except within colours. Such a judgment arises from the accumulated obscuration of compound ignorance, produced by ingrained uncritical adherence, which prevents perception of light apart from dense, dark loci of manifestation. A discerning knower need not contradict what such people report, but should acknowledge the condition they are actually describing: their report concerns the limit of their apprehension and the point at which their visual ray comes to rest. Because of its weakness it does not go beyond colours.
+
+‘When a person has no sound eye,
+it is no wonder that he doubts, though morning shines.’
+
+This too is a level of the Real's manifestation according to their faculties of awareness, a locus of His perfection and a place of His beauty's disclosure, and so is not to be denied. Hence the author and other people of realization do not simply judge their position and other positions to be false. This meaning too may be sensed in his expression ‘more fitting’.
+
+‘All within Your sanctuary love You; yet
+I alone [am] for all within Your sanctuary.’
+
+### Textual and translation notes
+
+1. The two verses on printed p.117 are included. They were absent from the earlier span-only extraction, which displayed only the label شعر. The second is elliptical; the English preserves its unresolved predicate rather than inventing a doctrinal paraphrase.
+2. The maxim is attributed to al-Ṣādiq within this source. Its transmission and authenticity have not been independently established here. Jamʿ and tafriqa are gathering and distinction; taʿṭīl is translated provisionally as divestment.
+3. The author first rejects the opponent’s metaphysical account and then grants the relative validity of a limited perspective. Both movements are retained; neither an unqualified condemnation nor an unqualified endorsement of every doctrine is substituted.
+4. The displayed التغيير and the ophthalmic imagery near عروق سبل لجهل المركب are textually strained. ‘Reproach’ and ‘obscuration of compound ignorance’ render the context; the raw forms remain available in the source transcription.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( تفريع - خ ); ( و التنزيه - خ ل ); ( المتعيِّنات - خ ); ( المتعيِّنات - خ ل ); ( المتعيِّنات - خ ); ( تكوَّنت - خ )
+
+---
+
+## SH-027 — How the unqualified essence can be named without becoming qualified
+
+**Source:** A, printed pp. 118–121
+
+https://ablibrary.net/book_content/b/17638/314?lang=ar
+
+### Commentary — Arabic
+
+أقول : متى تقرَّر ان الكون الحقيقي العيني القائم بنفسه القيُّوم لغيره ، هو الكون المطلق ، و لا شكَّ انّه هو الواحد الحقيقي ، بمعنى ان ما عداه من الماهيات و الخصوصيات من حيث هي كذلك ، عدمات ظهر لمن طهَّر قلبه عن الأدناس الطبيعيَّة و أخلص نفسه و قواه عن العقائد التقليديَّة و الصور الخياليَّة و الوهميَّة ، ان الحق سبحانه هو الوجود المطلق الذي لا اختلاف فيه و لا تكثُّر ، فانّه انما يقتضي لذاته الواحدة الذاتيّة الحقيقية ، إذ هي اول اسم و اول عبارة يعبَّر بها عنه ، و ذلك لأن التكثُّر و الاختلاف انّما يعقل فيما يصحُّ ان يشعر فيه الاثنينيَّة و التعدُّد ، و حيث يختص بعضه به حكم دون الآخر . و اما الواحد الحقيقي المطلق الشامل للكثير الذي سواه نفى محض و عدم صرف ، كيف يصحُّ ان يكون ( - عرصة ) عرضة للكثرة و الاختلاف ، نعم الاختلاف و التكثُّر يتوهَّم في مراتب تنزُّلاته و مجالى ظهوراته بحسب شئونه الذاتيَّة و أحواله ، و ذلك حيث تصادم النسب الاسمائيَّة ، و اختلف
+
+ الإضافات الاعتباريَّة .
+و امّا حضرة الإطلاق الذاتي المعبَّر عنه عند القوم بغيب الهويَّة و اللاتعيُّن فلا مجال للاعتبارات فيه أصلًا ، حتى عن هذا الاعتبار ايضاً ، فلا يشوبه من اللواحق الاعتباريَّة شيء أصلًا بل هو محض الوجود البحت بحيث لا يمازجه غيره و لا يخالطه سواه فهو بهذا الاعتبار ، أي باعتبار إطلاقه الذاتي لا تركيب فيه و لا كثرة ، بل لا اسم له من الأسماء الحقيقيَّة و لا رسم إذا لاسم على اصطلاحهم هو الذات باعتبار معنى من المعاني ، عدميّة كانت أو وجوديَّة ، يسمّون ذلك المعنى بالصفة و النعت ، فلا اسم ، حيث لا صفة ، و لا صفة حيث لا اعتبار مع الذات ، إذ الذات بهذا الاعتبار هو المطلق من غير اعتبار شيء من التعيُّنات و وجوه التخصيصات فيكون مجرّداً عن ساير الأحكام و الأسماء ، الا ان هذا الاعتبار لمّا اعتبر حصل للذات باعتباره اسم ، لكنَّه ليس من الأسماء الحقيقيَّة ، إذ ليس حصوله باعتبار معنى مع الذات ، بل بعدم اعتبار المعاني ، و كون هذا معنى من المعاني لا يدفع هذا الأصل ، فانّه ليس من المعاني الحقيقيَّة ، إذ طبيعته انّما هي نفى اعتبار المعنويَّة و سلبها ، فيكون عروض المعنويَّة لها انّما هو بالفرض و الاعتبار ، فلهذا قيَّد الأسماء بالحقيقيَّة ، و علم من هذا انّه لا رسم لضرورة انّ الرسم انّما هو بالخواصِّ ، و هي صفات خاصَّة بالشيء ، و انتفاء العام يستلزم انتفاء خواصّه .
+و اما قوله : « و سلب ما عدا الإطلاق عنه » فهو جواب دخل مقدَّر ، و تقرير ذلك ان القاعدة القائلة بان اعتبار المعاني و الأحكام للذات موقوف على اعتبار مبدئها من صنوف النسب و وجوه التعيُّنات منقوضة بنفس هذا
+
+الحكم ، فان سلب ما عدا الإطلاق حكم من الأحكام مع انّه لا يقتضي شيئاً من ذلك و الا يلزم خلاف الفرض .
+فأجاب عنه بان هذا و ان كان حكماً الا انّه حكم سلبي فمبدؤه يكون تعيُّناً غير حقيقى و الكلام في التعين الحقيقي و الأسماء الحقيقيَّة فلا يصحُّ المناقضة به ، أي النقض الإجمالي و ان كان بحسب الأغلب الأكثر انّما يطلق على النقض التفصيلي الا ان الأظهر هاهنا هذا .
+فان قلت : التعيُّنات مطلقا على ما ذهبتم إليه لا يكون اموراً حقيقيَّة بل اعتباريَّة عدميَّة سواء كان مبدأ للاحكام الوجوديَّة أو السلبيَّة فلا وجه حينئذ للتخصيص .
+قلت : ان التعيُّنات كلّها و ان كانت اموراً اعتباريَّة الا انّه فرق بين ما يكون مبدأ للأسماء الحقيقيَّة منها و بين ما لا يصلح لذلك ، و ذلك لأن العقل إذا اعتبر مع الذات معنى آخر سواء كان وجوديّا أو عدميّا حصل للذات باعتبار ذلك المعنى اسم من الأسماء الحقيقيَّة بخلاف ما إذا اعتبرها مجردة عن سائر المعاني و الأحكام حتى عن نفس هذا الاعتبار ايضاً فانّه بهذا الاعتبار لا يكون لها تعيُّن و لا صورة مخصوصة يصلح ان يكون مبدأ دون الأول الا انّه لمّا تصوره النفس باعتبار كونه متصوراً فيها حصل باعتبار خصوصيات المحل تعيُّن بالعرض مكتسب منه و لو لم يلاحظه العقل لا يستدعيه نفسه ، فهذا هو التعين الغير الحقيقي الذي هو المبدء للاحكام السلبيَّة الذي نحن بصدده و المصحح لإطلاق لفظ اللاتعيُّن و الوجود المطلق و غيب الهويَّة هو هذا الاعتبار .
+لا يقال : فلا يبقى مع هذا الاعتبار حينئذ على إطلاقه الصرف ، فانَّ للعقل ان يجرّد عنه مع عروضه له ، إذ في وسع العقل ان يجرد الأمور عن
+
+الأوصاف المتصورة هي بها كما في مسألة المجهول المطلق و المعدوم المطلق و ساير المطلقات على ما سبق فتنبّه ، ثم تدبّر قولهم في مجمع الاضداد و حضرة تضايق الاضداد و كذا في المسألة الغامضة التي لا مجال للعقل الصرف فيها أصلًا مع تلطيف من اليقين و تلخيص للتوجه ، عسى ان يلوح لك الحق على مدرجته و قوله فتأمّل إشارة إلى مثل هذه الدقايق .
+
+### Commentary — English
+
+I say: once it is established that real external being, self-subsistent and sustaining others, is unrestricted being, it is unquestionably genuinely one. The other quiddities and particularities, considered precisely as such, are nonentities. Anyone who has purified his heart of natural impurities and freed his soul and faculties from inherited convictions and imaginative and estimative forms can then see that the Real, glorified is He, is unrestricted existence without difference or multiplicity. Genuine intrinsic unity is what He requires through Himself, and is the first name and first expression by which He is designated.
+
+Multiplicity and difference are intelligible only where duality and plurality can be conceived and where some part has a judgment not belonging to another. How could the genuinely one, unrestricted reality encompassing the many—everything outside which is sheer negation and nonbeing—be subject to difference and multiplicity? Difference and multiplicity may indeed be conceived in the levels of its descent and loci of its manifestation according to its intrinsic affairs and states, where the relations of the names encounter one another and the conceptual correlations differ.
+
+But in the presence of intrinsic unrestrictedness, which the people of this discipline call the hiddenness of identity and nondetermination, no considerations have any place—not even this consideration. No conceptually considered concomitant mingles with it. It is sheer, pure existence, unmixed with anything else. In this respect, namely intrinsic unrestrictedness, it has neither composition nor multiplicity; indeed, it has neither any real name nor a descriptive definition. In their terminology a name is the essence considered under some meaning, whether privative or existential; they call that meaning an attribute or qualification. Where there is no attribute there is no name, and where nothing is considered along with the essence there is no attribute. Under this consideration the essence is unrestricted, with no determinations or particularizing aspects taken into account, and is therefore stripped of all judgments and names.
+
+Nevertheless, when this very consideration is entertained, a name does arise for the essence through it. It is not, however, one of the real names: it arises not from considering a meaning together with the essence but from not considering meanings. The objection that this is itself a meaning does not overturn the principle. It is not one of the real meanings, since its nature is precisely to negate and remove the consideration of a meaning. Its possessing the status of a meaning thus arises only by supposition and consideration. Hence the author qualifies ‘names’ with ‘real’. It is also clear that no descriptive definition is available: such a definition proceeds through properties, which are attributes peculiar to a thing, and negating the general class excludes its particular members.
+
+The author's words, ‘Negating everything other than unrestrictedness of it,’ answer an implicit objection. The rule that attributing meanings and judgments to the essence requires considering their origins in relations and determinations appears to be refuted by this very judgment. Negating everything other than unrestrictedness is itself a judgment, yet it presupposes none of those features; otherwise the supposition would be contradicted.
+
+He answers that, although this is a judgment, it is negative, so its source is a determination that is not real in the relevant sense. The discussion concerns real determinations and real names; this is therefore not a valid counter-objection. ‘Counter-objection’ here means a general rebuttal, although the word is more commonly used for a detailed rebuttal of a particular premise. The former sense is more evident here.
+
+You may object that, on this account, all determinations are conceptually considered, privative matters rather than realities, whether they ground existential or negative judgments. There is therefore no reason for the distinction. I reply that, although all determinations are matters of consideration, there is a difference between those that can ground real names and those that cannot. When intellect considers another meaning along with the essence, whether existential or privative, a real name arises for the essence under that meaning. But when it considers the essence stripped of all meanings and judgments, even of this consideration itself, no determination or particular form arises capable of serving as such a ground.
+
+When the soul nevertheless conceives it, that conception acquires an incidental determination from the particular features of the receptacle in which it occurs. Without intellect's consideration, the reality itself would not require this determination. This is the non-real determination grounding the negative judgments now under discussion. It is this consideration that licenses the expressions nondetermination, unrestricted existence, and hiddenness of identity.
+
+It should not be objected that it therefore no longer remains purely unrestricted once this consideration is added. Intellect can abstract from the consideration even while it accrues, since intellect can abstract things from the very descriptions under which it conceives them—as with the wholly unknown, the wholly nonexistent, and other unrestricted concepts discussed earlier. Take heed. Then reflect on the expressions ‘gathering-place of opposites’ and ‘the presence where opposites press together’, and on the subtle question in which unaided intellect has no scope. Do so with refined certainty and a purified orientation, so that the Real may become apparent according to your degree. The author's ‘reflect’ points to subtleties of this kind.
+
+### Textual and translation notes
+
+1. Rasm is rendered descriptive definition, since the commentator explicitly explains it through distinctive properties. It is not merely a pictorial trace or inscription.
+2. The distinction between a real name and a designation arising through negation is central. The translation retains the successive objection and reply rather than suppressing the apparent self-reference problem.
+3. The source reads بالفرض with بالعرض reported as an alternative; the English follows ‘by supposition’. The final تضايق الأضداد also has تعانق الأطراف as an alternative; the displayed reading is translated, not silently replaced with ‘embracing opposites’.
+4. The final phrase من اليقين has the alternative من السرّ. The English follows the displayed ‘certainty’; the alternate would refer to refinement of the inward secret.
+5. No independent manuscript collation is claimed. Awkward Arabic forms and the reported variants remain preserved in the source layer.
+6. Reported electronic apparatus strings, not independent manuscript readings: ( قلبه - خ ); ( اولى - خ ); ( ادل - خ ); ( يتصوَّر - خ ); ( للتكثُّر - خ ل ); ( اختلفت - خ ل ); ( لا يشوبه - خ ); ( بالعرض - خ ); ( له ضرورة - خ ); ( صفة - خ ); ( فباعتبار - خ ); ( ان - خ ل ); ( تعانق الأطراف - خ ); ( من السرّ - خ ); ( له - خ ); ( قدر درجته - خ )
+
+---
+
+## SH-028 — The first determination, four primordial names, and the relation of knowledge to causality
+
+**Source:** A, printed pp. 121–130
+
+https://ablibrary.net/book_content/b/17638/317?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا شروع في بيان تفريع التفصيل الاسمائى على الإجمال الذاتي و كيفية انتشاء تلك الأسماء باجناسها و أنواعها و أصنافها و تعيين متعلّقات كل منها و مواطن اعتبارها فان لكل اسم مبدأ لا يظهر ذلك الا في موطن خاص من مواطن تنوعات الذات و مرتبة مخصوصة من مراتب تنزلاتها لا يطلق ذلك الاسم عليها الا بذلك الاعتبار و هذا معنى من معانى ما عليه ائمّة الشريعة رضى اللَّه عنهم انّ - أسماء الحق توقيفيّة و ذلك من امهات - أبواب - مسائل هذا الفنّ كما سبق - بيانه في المقدمة ، ثمَّ - انَّ الكلام في هذه الرسالة كما سبق غير مرّة و لمّا كان الكلام مع اهل النظر و الاستدلال و على نهجهم المسلوك في تقرير الحجج و البراهين ،
+
+وجب ان الا نعدل عن مصطلحاتهم المتعارفة بينهم و مخاطباتهم المتداولة لديهم تنزيلًا إلى مدارك افهامهم عسى اللَّه ان يخلّصهم من مضايق اوهامهم و لانَّ التنبيه على الكلمات المتداولة بين القوم و تنزيل كلام المصنف على مصطلحاتهم واجب في نظر التعليم تسهيلًا على الطالبين المسترشدين ، إذ بين المعاني الذوقيَّة الكشفيَّة و الألفاظ المعبَّر بها عنها في عرفهم مناسبة خفيَّة كثير دخل في إدراكها لا يطلع على تلك المناسبة الا بنور الولاية و مشكاة النبوة ، فحرى بنا ان نتعرّض في خلال هذه السطور لنزرٍ - لشطر - منها .
+إذا عرفت هذا فاعلم ان الذات باعتبار اللاتعيُّن المسمّاة بغيب الغيب ، تارة و الهويَّة المطلقة اخرى ، يمتنع ان يعتبر فيها امر يستلزم التعين و التقيد و يستدعى التكثُّر و التعدُّد ، فأول ما اعتبر فيها من المعاني الوصفيَّة هي الوحدة الحقيقيَّة التي لا يتصور اعتبار الكثرة - و المغايرة فيها بوجه من الوجوه حتى ان الكثرة - لا يغاير الوحدة بالنسبة إليها و كذلك الوحدة لا يغاير الذات . و تحقيق هذا الكلام ما سبق من انّ الوحدة يطلق باعتبارين :
+أحدهما و هو الوحدة الذاتيّة المطلقة التي لا يعتبر في مفهومها ما يشعر
+
+يتعدَّد الوجوه و الاثنينيَّة أصلًا حتى ان عدم اعتبار الكثرة لما فيه من الاشعار بمقابلتها للكثرة المستلزمة للاثنينيَّة ، غير معتبر في مفهومها .
+و الثاني الوحدة الإضافيَّة النسبيَّة التي هي عبارة عن كون الشيء بحيث لا ينقسم إلى الأمور المشاركة من حيث هو كذلك و هذا هو الذي يقابله الكثرة بالعرض أو بالذات ، و المعتبر هاهنا هو الوحدة بالمعنى الأول و الهويَّة المطلقة عبارة عن الواحد بها ، فتكون هو الوحدة بالمعنى الأول و الهويَّة المطلقة عبارة عن الواحد بها ، فتكون الذات بهذا الاعتبار ، لها الاحاطة العامة التي لا يشذُّ عنها - منها - شيء من المراتب حتى المحسوسات ، فتلزمها بهذا الاعتبار النسبة العلميَّة بحصول نفسها في نفسها .
+ثمَّ ان هاهنا نكتة تتضمّن فوائد لا بدَّ من الوقوف عليها ، و هي انَّ للوحدة المعتبرة هاهنا اعتبارين . أحدهما متعلّقة طرف بطون الذات
+
+و خفائها و هو اعتبار اسقاط ساير النسب و الإضافات عنها ، و يسمّى الذات به احداً .
+و ثانيهما متعلِّقة طرف ظهور الذّات و انبساطها و اعتبار إثبات النسب و الإضافات كلّها ، و يسمّى الذات به واحداً ، و بهذا الاعتبار يصير الذات منشأ الأسماء و الصفات ، و ذلك في الواحد العددى ظاهر ، فانّه إذا اعتبر من حيث انّه واحد من غير ان يعتبر المبدئيّة للاعداد فهو الواحد المطلق الذي ليس فيه تعدُّد النسب و الإضافات ، و إذا اعتبر من حيث انّه مبدأ للاعداد حينئذ يصير مبدأ للأسماء الغير المتناهية مثل نصفيَّة الاثنين و ثلثيّة الثلاثة و ربعيّة الأربعة و هكذا إلى غير النهاية ، إذ به يحصل له باعتبار كل مرتبة من المراتب العدديَّة نسبة و اسم خاصّ ليس فيه شيء من هذه النسب و الأسماء سوى محض الاعتبار .
+إذا عرفت هذا فنقول : لا شكَّ ان طرفى بطون الذات و ظهورها انّما يتمايزان بحسب المدارك و المشاهد و ظهورها لها باعتبار و خفاؤها عنها به آخر حتى يسمّى بالأول ظاهراً و بالآخر باطناً . و امّا بالقياس إلى الذات نفسها ، فلا ظهور على بطون و لا بطون على ظهور .
+
+فقد علم بذلك ، ان الوحدة بالنسبة إلى الذات لا تمايز بين اعتباريها أصلًا حتى لا يتميَّز مسمى الواحد فيها عن الأحد . تأمّل في هذه الدقيقة فان فيها اسراراً جليلة حقّقنا اللَّه و ايّاكم بالاهتداء إليها .
+[ في بيان كيفية تأثير المفاتيح الغيب ]
+ثمَّ ان الذات باعتبار اتّصافها بالوحدة الحقيقيَّة يقتضي تعيُّنا يسمّى باصطلاح القوم بالتعيُّن الأول تارة و بالحقيقة المحمديَّة اخرى .
+لا يقال : التعين انما يطلق على ما به الامتياز و لمّا كان في هذه الحضرة ليس للغير اثر و لا اعتبار ، ضرورة منافاته للوحدة المطلقة ، لا حاجة لها إلى الامتياز ، فكيف يتصوّر التعيُّن ؟
+لأنّا نقول : الامتياز تارة تكون بحسب التقابل و التضادّ و تارة بحسب الاحاطة و الشمول ، و المعتبر في تعيين - تعيّن - هذه الحضرة انَّما هو المعنى الثاني كما سبق تحقيق هذا . ثمَّ ان التعيّن يقتضي التجلّى لذاته فان التعيّن هاهنا على ما عرفت - هو - توجه الذات من كُنه غيب هويَّتها و عدم تناهيها إلى حضرة الاحاطة و التناهي ، و هو الظهور و التجلي المعبّر بالنسبة العلميَّة . فالذات بهذا التعين يقتضي ان يتجلى على نفسها لنفسها ظاهرة لها بما اندرجت فيها من الشئون و الأحوال و اعتباراتها ، واجدة إياها مظهرة لها ثم حاضرة عندها ، فحصلت للذات باعتبار نسبتها إلى الشئون المذكورة أسماء أربعة هي الأسماء الأول المسمّاة عندهم : بمفاتيح غيب الذات المضافة إلى حضرة الهويَّة في قوله تعالى : ( وَ عِنْدَهُ مَفاتِحُ الْغَيْبِ لا يَعْلَمُها إِلَّا هُوَ ) ، و هي العلم الذي هو الظهور و الوجود الذي هو الوجدان ، و النور الذي هو الاظهار ، و الشهود الذي هو الحضور .
+
+و بيان كيفيَّة اعتبارها على هذا الترتيب ، ظاهر عند اللبيب الفطن و المصنف أشار إلى هذه - الأسماء - الأربعة هاهنا على الترتيب ، بعبارة تليق بهذه الرسالة ، و إلى غيرها من الأسماء اللازمة لها المترتّبة و الغير المترتّبة ، ذلك الترتيب المسمّاة بالأسماء الذاتيَّة . فتأمّل .
+ثمَّ انّ هاهنا مقدمة اخرى لا بدّ من الوقوف عليها و هي ان الظهور
+
+المذكور لمّا كان مستلزماً للشعور بسائر الشئون و الأحوال و الاعتبارات للذات بمراتبها و أحوالها و أحكامها و لوازمها كلّها حتى المحسوسات على وجه كلي جملى ، فمتعلّق الشعور المذكور اما ان يكون الذات في بطونها بحيث يكون الكلّ ثابتاً مشاهداً كثبوت ساير المراتب العدديَّة في الواحد مثلًا فحينئذ يسمى هذا الشعور في عرفهم بالكمال الذاتي المستلزم للغني المطلق الذي هو عبارة عن ظهور الذات في بطونها على نفسها بالوجه المذكور بدون الاحتياج إلى التّطوُّر بالاطوار الغريبة و الأدوار السوائيَّة أصلًا ، و امّا ان يكون متعلّق الشعور المذكور ، نفس الشئون الذاتيَّة باظهار ذواتها لأنفسها أو باظهار بعضها للبعض في المراتب ، و حينئذ ، يسمى هذا الشعور بالكمال الأسمائى .
+إذا عرفت هذا ، فاعلم ، انّه لا مغايرة بالاعتبار الأول بين الذات و كلُّ واحد من الأسماء الأربعة ، كما انّه لا مغايرة بين كل واحد منها مع الآخر .
+و اما بالاعتبار الثاني ، فبينهما تمايز نسبى ، فلكل واحد من العلم و الوجود ، هاهنا اعتباران :
+أحدهما ، من حيث البطون ، و لا امتياز بهذا الاعتبار بينهما أصلًا ، و اما من حيث الظهور ، فالوجود متعلِّقه بهذا الاعتبار نفس الشئون المذكورة من جهة الظهور ، و اما العلم فمتعلَّقه ذلك ايضاً ، الا انّه من حيث انّها معلومات في عالم المعاني ، فبين ظاهرهما تمايز نسبى في هذه الحضرة الواحديَّة .
+
+لا يقال : عبارة المصنِّف هاهنا لا يطابق ما مهَّده قبل هذا بالبرهان من إثبات التوحيد الذاتي المطلق ، و رفع التعيُّن الخاص و نفى الاثنينيَّة مطلقاً ، و ذلك لأن القول بالحصول العلمي المشعر بوجود مغاير لم يكن ، و كذا الموجبيَّة المستدعية للعليّة ، القاضية بالتباين ، المستلزمة للتعين الخاصِّ الواجبى ، كما هو مذهب الخصم ، في امر لا يمكن ان يتصوَّر فيه سوى بروز عن كمون أو ظهور عن بطون ، انّما يؤذن بالاضطراب و عدم الرسوخ .
+لأنّا نقول : مرجع هذا النزاع إلى مجرد العبارة ، و ارتكاب المصنِّف هاهنا الألفاظ المذكورة و عدم تفسير المقاصد باصطلاحات القوم ، و ذلك لما التزمه في صدر الرسالة من إثبات المسألة على طريقة المشّاءين ، و سوق الكلام على أساليبهم و مصطلحاتهم ، و امّا بعد تحقيق معانى تلك الألفاظ و تبيين ما قصد منها هاهنا ، فلا يرد شيء من ذلك ، فإنه سيصرّح في هذا البحث بعدم المغايرة بين الذات العاقلة و الأعيان المعقولة ، و ان الحصول هاهنا ليس بالمعنى المتداول عند المشّاءين .
+على انّا نقول : ان القول بالحصول العلمي و الموجبيَّة حسبما حقَّقها المصنّف في كتابه المسمّى بالحكمة الرشيديّة المعمولة في تحقيق قواعد المشَّائيَّة ، لا يستدعى شيئاً مما ذكرتم كما لا يخالف البروز و الظهور فيه .
+و ذلك لأنّه قال في الهيات ذلك الكتاب : لا يتحقق الإدراك به مجرد الحصول للأمر المجرد فقط ، و لا بأى حصول اتفق من الأنواع المندرجة تحت المطلق ، كما سبق بيانه ، بل المعتبر في تحقُّقه هو حصول الشيء للأمر المجرد الذي يكون مؤثراً فيه ضرباً من التأثير .
+ثمَّ انّه لو كان مُوجِبا له لذاته ، أي لذلك الشيء المدرك ، من غير افتقاره في ذلك الإيجاب إلى غيره ، لم يحتج في إدراكه إلى اشتراط امر
+
+زائد على ذلك الإيجاب ، و الا أي ، و ان لم يكن موجباً ، وجب ان يكون هناك شرط آخر ، و هو اقترانه به ، اقتران العرض بموضوعه ، تأكيداً لتحصيل مطلق التأثير المعتبر فيه . و لا تناقض بينه و بين ما ذهبنا إليه من الإيجاب ، إذ الإيجاب انّما ، يجعل الأثر ، بحيث يصير مع الموجب كهو مع نفسه في الارتباط بينهما و القرب منه . و بيّن ان اعتبار الأضعف لا يوجب عدم اعتبار الأقوى . إلى هنا كلامه .
+و لا يخفى على الفطن المستيقظ ، ان ملخّص هذا الكلام ، هو ان الحقيقة الادراكيَّة ، أي الإدراك العقلي ، المنسوب إلى المجردات ، ليس مطلق الحصول ، بل الحصول الخاص الذي هو عبارة عن استحضار المؤثِّر - اثره المتَّصل به ، و يختلف ذلك حسب اختلاف المدركين في التأثير ، فكلما كان المؤثّر اقوى في التأثير و أقلُّ احتياجاً إلى الوسائط ، كان ذلك الاتصال اقوى ، و كلَّما كان أضعف و اكثر احتياجاً إلى الوسائط كان ذلك الاتِّصاف أضعف . فمنهم من بلغ في قوة التأثير مبلغ الإيجاب الذاتي الذي يُحصِّل الأثر بحيث يصير مع المؤثر كهو مع نفسه في الارتباط بدون الاحتياج إلى غيره من الوسائط و الآلات ، و هذا غاية القوة في التأثير ، لا يمكن ان يتصور لها مزيد ، فيكون النِّسبة الارتباطيّة و الرقيقة الاتحادية الحاصلة له مع المُدرك ايضاً لا يمكن ان يتصور لها مزيد في الوجود أصلًا .
+و منهم من بلغ في الضعف إلى حيث لا يقدر بدون ارادة و اختيار زايد عليه ، و مع ذلك يحتاج إلى وسائط كثيرة و أسباب شتّى ، و هذا نهاية الضعف في التأثير ، فكذلك النسبة الارتباطيَّة و الرقيقة الاتحاديَّة في غاية الضعف و البعد ، حتى ينتهى إلى المقارنة الفرضيَّة - العرضيَّة - .
+فعلم من هذا ، ان لفظى الحصول و الإيجاب ، مع عدم استدعائهما ما
+
+ذكر من التدافع و عدم التطابق ، يفيد ما يستفاد من لفظى البروز و الظهور بأبلغ وجه و أتم قصد ، مع دقايق لطيفة و تنبيهات شريفة لا يعرفها الا واحد بعد واحد من الأزكياء ، و هكذا - سبيل - ساير متداولات القدماء من الحكماء لا غبار عليه في افادة التحقيق و ايصال الحق إلى المسترشد الحقيق ، الا ان المتأخرين من المشّاءين لما دخلوا عليها و نزَّلواها على مدركاتهم النازلة المشوبة ، وقع الاختلاف و التشويش . إذ تلك الألفاظ انما أخذوها خلفاً عن سلف حتى ينتهى إلى عظماء الكشف و أساطين النبوَّة ، مثل هرمس المسمى بلسان الشريعة بإدريس « عليه السلام » ، و اغاثاذيمون المسمّى : « ب : شيث » عليه السلام ، و هما امامان المستندان لسلسلة القدماء في التعليم و التعلُّم المخصوصان بتدوين الحكمة و تأسيس بنائها ، و لا تغفل عن دقايق مرموزاتهم الشريفة - فكم خبايا في الزوايا الخفيّة - .
+
+### Commentary — English
+
+I say: this begins the explanation of how the differentiation of the names branches from essential undifferentiated comprehensiveness, how those names arise in their genera, species, and kinds, and what each concerns and where it is considered. Every name has a source which appears only in a particular domain of the essence's varieties and at a particular level of its descent. The name is applied to the essence only under that consideration. This is one meaning of the position of the authorities of the revealed law, may God be pleased with them, that the Real's names are determined by authoritative disclosure. It is among the fundamental questions of this discipline, as the prolegomenon explained.
+
+As has repeatedly been said, this treatise addresses reflective investigators and reasoners according to their established ways of presenting arguments and demonstrations. We must therefore not depart from their familiar technical terms and customary forms of address. We descend to the range of their understanding, in the hope that God may release them from the confinement of their estimations. At the same time, instruction requires us to draw attention to the terms used by the people of this discipline and to interpret the author's words through their terminology, making matters easier for students seeking guidance. A subtle affinity joins the experiential meanings disclosed through unveiling to the terms that express them in this vocabulary. That affinity greatly assists understanding, yet is discerned only through the light of sainthood and the niche of prophecy. We should therefore explain something of it in the course of these lines.
+
+Know that the essence considered under nondetermination, called now the unseen of the unseen and now absolute identity, cannot include any consideration entailing determination, restriction, multiplicity, or plurality. The first descriptive meaning considered of it is genuine unity, in which neither multiplicity nor otherness can be considered in any respect. Multiplicity itself does not differ from unity relative to it, just as unity does not differ from the essence. This is clarified by the earlier distinction between two senses of unity. The first is absolute intrinsic unity, whose concept includes nothing suggesting a multiplicity of aspects or duality. Even the non-consideration of multiplicity is not included, since it would suggest opposition to multiplicity and thereby entail duality. The second is relational unity: a thing's not being divided into participating items insofar as it is considered in that way. This is the unity opposed to multiplicity, whether accidentally or intrinsically.
+
+Here unity is understood in the first sense, and absolute identity denotes that which is one through it. Under this consideration the essence has universal comprehensiveness from which no level is excluded, even sensible things. Consequently, the relation of knowledge necessarily belongs to it through its being present to itself in itself.
+
+A subtle point containing important benefits must now be understood. Unity as considered here has two aspects. One concerns the essence's inwardness and hiddenness: all relations and correlations are set aside, and under this consideration the essence is called aḥad, uniquely one. The other concerns its manifestation and unfolding: all relations and correlations are affirmed, and under this consideration it is called wāḥid, one. Through the latter consideration the essence becomes the source of names and attributes.
+
+Numerical one illustrates this. Considered simply as one, without its principiality for numbers, it is unrestricted one, with no multiplicity of relations and correlations. Considered as the principle of numbers, however, it becomes the source of indefinitely many names: being half of two, a third of three, a quarter of four, and so on without end. In relation to each numerical level it acquires a special relation and name, although none of these relations or names is anything within it beyond that consideration.
+
+The essence's hiddenness and manifestation are distinguished only relative to faculties of apprehension and witnessing: it appears to them under one consideration and is hidden from them under another, being called Manifest through the former and Hidden through the latter. Relative to the essence itself, however, no manifestation stands over against hiddenness, and no hiddenness over against manifestation. Thus the two considerations of unity have no distinction relative to the essence; what is designated by wāḥid is not distinguished there from what is designated by aḥad. Reflect on this subtle point, which contains great mysteries. May God grant us and you realization through guidance toward them.
+
+The essence's being qualified by genuine unity requires a determination called, in this discipline, the first determination, and also the Muḥammadan Reality. It should not be objected that determination means that by which distinction occurs, while in this presence otherness has neither effect nor standing because it contradicts absolute unity. What need, then, is there for distinction, and how can determination be conceived? We reply that distinction sometimes arises through opposition and contrariety and sometimes through encompassing comprehensiveness. The determination of this presence is understood in the latter sense, as already established.
+
+Determination here requires self-disclosure to the essence itself. As you have learned, it is the essence's orientation from the innermost hiddenness and infinity of its identity toward the presence of encompassing and delimitation. This is the manifestation and self-disclosure expressed as the relation of knowledge. Through this determination the essence requires that it disclose itself to itself, appearing to itself with the affairs, states, and considerations enfolded within it, finding them, making them manifest, and present with them. In relation to those affairs, four names arise for the essence. They are the first names, called the keys of the unseen of the essence, ascribed to the presence of identity in the words, ‘With Him are the keys of the unseen; none knows them but He.’ They are knowledge, understood as manifestation; existence, here understood as finding; light, understood as making manifest; and witnessing, understood as presence.
+
+The way these names are considered in this order is apparent to the discerning reader. The author points to all four here in that order, using expressions suited to this treatise, and also to the other names necessarily accompanying them—some ordered in this sequence and some not—which are called names of the essence. Reflect.
+
+Another preliminary distinction must be understood. The manifestation just described entails awareness of all the essence's affairs, states, and considerations, with their levels, conditions, governing properties, and necessary concomitants, including sensible things, in a universal and comprehensive manner. The object of that awareness may be the essence in its hiddenness, with everything established and witnessed within it, as all numerical levels are established in one. In their terminology this awareness is called essential perfection. It entails absolute self-sufficiency: the essence manifests in its hiddenness to itself in the manner described, without needing to assume alien forms or pass through the cycles of otherness. Alternatively, the object may be the intrinsic affairs themselves, through the manifestation of their entities to themselves or of some to others within the levels. In that case this awareness is called the perfection of the names.
+
+Under the first consideration there is no otherness between the essence and any of the four names, or between one of those names and another. Under the second, there is a relational distinction. Knowledge and existence therefore each admit two considerations. Considered from the side of hiddenness, they are not distinguished at all. Considered from the side of manifestation, existence concerns the affairs just mentioned insofar as they manifest; knowledge concerns them too, but insofar as they are objects of knowledge in the world of meanings. Their manifest aspects are thus relationally distinguished in this presence of comprehensive unity.
+
+It should not be objected that the author's expressions contradict what he earlier demonstrated about unrestricted essential unity, the rejection of particular determination, and the denial of duality. To speak of cognitive presence seems to imply a different existent that previously was not; necessitation seems to require causality, which entails separation and a particular necessary determination, as the opponent holds. Applying these expressions where only emergence from latency or manifestation from hiddenness is conceivable would therefore suggest confusion and lack of firm understanding.
+
+We reply that this dispute concerns the expressions alone: the author adopts these terms rather than expressing the intended meanings in the technical vocabulary of the people of realization. He does so because at the beginning he undertook to establish the question by the Peripatetic method, following its procedures and terminology. Once the meanings of these terms and what is intended by them here are clarified, none of the alleged problems remains. He will explicitly affirm in this discussion that the knowing essence and the known entities are not different, and that presence here does not have the meaning commonly assumed by the Peripatetics.
+
+We further say that cognitive presence and necessitation, as the author explains them in his work entitled al-Ḥikma al-Rashīdiyya, devoted to establishing Peripatetic principles, imply none of what the opponent alleges and do not conflict with emergence and manifestation. In the metaphysical part of that work he says:
+
+‘Cognition is not constituted merely by presence to an immaterial thing, nor by any arbitrary kind of presence falling under the unrestricted term, as already explained. What is required is the presence of a thing to an immaterial being that exerts some kind of influence upon it. If that being intrinsically necessitates the thing cognized, without depending on another for this necessitation, its cognition requires no additional condition beyond that necessitation. Otherwise—if it does not necessitate it—another condition is needed: conjunction with it in the manner of an accident's conjunction with its subject, securing the influence required. This does not contradict our account of necessitation. Necessitation makes the effect related and close to its necessitating principle as the principle is related to itself. Requiring the weaker does not exclude the stronger.’ Here ends his statement.
+
+An alert reader will recognize its substance: the reality of cognition—intellectual cognition ascribed to immaterial beings—is not presence without qualification, but a particular presence consisting in an agent's having present its effect connected with it. This varies with the cognizing agents' efficacy. The stronger the agent's influence and the less it needs intermediaries, the stronger that connection; the weaker its influence and the more intermediaries it requires, the weaker the connection.
+
+Some agents attain the strength of intrinsic necessitation, producing an effect so that its connection with the agent is like the agent's connection with itself, without any intermediaries or instruments. This is the utmost efficacy, beyond which nothing more can be conceived. The relational connection and subtle unifying link with the cognized object likewise admit no increase. Others are so weak that they cannot act without an additional will and choice and, even then, need many intermediaries and diverse causes. This is the extremity of weakness in efficacy; the relational connection and subtle unifying link are correspondingly weak and remote, eventually reaching merely accidental conjunction [a contextual reading of the displayed alternatives].
+
+Thus, far from implying the alleged conflict and inconsistency, the terms presence and necessitation convey what emergence and manifestation convey in an especially complete and effective way, with further subtle points and noble indications discerned only by the rare acute reader. The other expressions used by the ancient sages are similar: they are unobjectionable as means of conveying realization and guiding a worthy seeker to the truth. Confusion and disagreement arose when later Peripatetics approached them and interpreted them according to their own lower, mixed apprehensions. Those expressions had been inherited generation after generation from the masters of unveiling and pillars of prophecy, such as Hermes, called Idrīs in the language of revelation, and Agathodaimon, here called Seth, peace be upon them. These are the two authorities to whom the chain of ancient instruction returns, distinguished by recording wisdom and establishing its foundations. Do not neglect the subtleties of their noble symbolic expressions: how many hidden treasures lie in concealed corners!
+
+### Textual and translation notes
+
+1. The complete long commentary unit is translated, including the nested quotation from the ancestor’s other philosophical work. That quotation is explicitly delimited; it is not an additional passage of the Qawāʿid matn.
+2. The Arabic repeats a clause about the first sense of unity and absolute identity. It is rendered once in English; the repetition remains in the retained Arabic transcription and is not represented as a recovered manuscript emendation.
+3. Aḥad and wāḥid are retained alongside English glosses because the author’s argument depends on their distinction and then its absence relative to the essence itself. The numerical-one comparison is an analogy, not identification of divine unity with arithmetic unity.
+4. The four names involve wordplay: wujūd as wijdān, existence as finding; ʿilm as ẓuhūr; nūr as iẓhār; and shuhūd as ḥuḍūr. Those shifts are preserved rather than reduced to a single generic ‘awareness’.
+5. The sequence ظاهرة لها ... واجدة إياها مظهرة لها ... حاضرة عندها has compressed pronouns. The English follows its progression while leaving the precise reflexive structure open to philological review.
+6. The book title is transcribed from the displayed الحكمة الرشيديّة. No independent identification or manuscript title collation is asserted.
+7. The final المقارنة الفرضية / العرضية is unstable. ‘Accidental conjunction’ follows the subject–accident comparison immediately above; this is an explicit contextual preference, not a manuscript finding.
+8. Agathodaimon is called Seth in this passage, whereas the previously translated preface reports a different prophetic identification. The discrepancy is preserved rather than harmonized. Both are the author’s historical reports, not authenticated identifications.
+9. Modern editorial remarks, including the long notes interrupting printed pages, are excluded from the medieval prose.
+10. Reported electronic apparatus strings, not independent manuscript readings: ( هو الشروع - خ ); ( ثمَّ انّ الكلام في هذه الرسالة كما سبق غير مرَّة لمّا كان - خ ل ); ( الا ان التنبيه - خ ); ( هذا - خ ); ( فلا ظهور عن . . . و لا بطون عن ظهوره - خ ); ( اندمجت - خ ل ); ( فمظهرة - خ ); ( الغيريَّة - خ ل ); ( اما من - خ ل ); ( تعبير - خ ); ( الايجادية - خ ); ( الايجاديَّة - خ ل ); ( الامامان - خ ل )
+
+---
+
+## SH-029 — Four modes of the essence's manifestation to itself
+
+**Source:** A, printed pp. 131–132
+
+https://ablibrary.net/book_content/b/17638/327?lang=ar
+
+### Commentary — Arabic
+
+أقول : لمَّا استلزمت الهويَّة المطلقة ، الظهور المذكور المسمى بالتجلى الأول ، المعبَّر عنه بالنسبة العلميَّة ، فلا بُدَّ و ان يتضمَّن ذلك الظهور بسائر الصفات التي تلزم الذات لكونها عين الذات باعتبار هذا التعيُّن و ان كانت صفة لازمة باعتبار تعيُّن آخر ، و يتضمن ايضاً شعور ما تستلزم تلك الصفات من الأحكام الخاصَّة لكل واحد منهما ، لما تقرر ان جميع المراتب حتى المحسوسات مشاهد في تلك الحضرة من حيث انّها عينها كما قال الشيخ :
+شعر
+انا أنت ، أنت نحن ، نحن هو * و الكلّ في هو هو ، فسل عمّن وصل 
+
+و هذا هو المسمى بالكمال الأسمائى ، فيكون التعيُّن المذكور متضمناً للشعور بالكمال الذاتي و الأسمائى ، الذي هو ظهور الذات على نفسها في تعيُّناتها في نفسها - الحاصلة ظ - بالفيض الأقدس - أي الأقدس عن ان يكون المستفيض غير المفيض و الافاضة ، و هذا هو المعبّر عنه بالاستجلاء ، و ذلك منحصر في الصور الأربع لا مزيد عليها ، فان ظهور الذات في مظاهرها المتعيِّنة على نفسها اما ان يكون بحسب الظاهر ، أو بحسب المظهر ، و الأول لا يتصور الا من حيث شأن كلي و مظهر جامع لجميع شئونها و اعتباراتها ، كالإنسان الكامل ، فان ظهور الذات الظاهرة بحسبها على نفسها ، انما يكون بكليتها واحديَّة جمعيَّتها ، و ذلك لا يمكن الا في مظهر له تمام الجامعيَّة و كمال القابليَّة ، حتى يقابل كل يقابله ، و هو الإنسان الكامل ، لا غير ، إذ ليس كمثله شيء . و حينئذ ، اما ان يكون ذلك الظهور من حيث جمعيَّة ذلك الشأن و كلّيتها ، كما في قوله تعالى : « وَ ما رَمَيْتَ إِذْ رَمَيْتَ » أو من حيث جزئيّاته المخالطة له ، كنداء الشجرة لموسى ، عليه السلام ، ب : « إِنِّي أَنَا اللَّهُ » .
+و الثاني ، و هو ان يكون ظهورها على نفسها بحسب المظاهر ، فلا يخلو من ان يكون ظهورها بحسب ذلك المظهر على نفسه بخصوصيَّة المميِّزة كجزئيّات العالم في حدِّ ذاتها بحسب مرتبتها ، فان كل فرد من افراد العالم ، له في حدّ ذاته ، ظهور على نفسه ، و هو مبدأ التسبيحة المشار إليها بقوله تعالى « وَ إِنْ مِنْ شَيْءٍ إِلَّا يُسَبِّحُ بِحَمْدِهِ » أو على آخر من الأفراد المقابلة له بوجود المناسبات ، كالنسب الواقعة بين افراد العالم من الموافقات و المنافرات . و يمكن استفادة هذه الأقسام كلُّها من قوله : « جمعاً و فرادى . . . » .
+
+### Commentary — English
+
+I say: since absolute identity necessarily entails the manifestation called the first self-disclosure, expressed as the relation of knowledge, that manifestation must encompass all attributes necessarily belonging to the essence. Under this determination they are identical with the essence, even though under another determination they are necessarily accompanying attributes. It also encompasses awareness of the governing properties necessarily belonging to each attribute. For every level, including sensible things, is witnessed in that presence insofar as it is identical with it. As the Shaykh says:
+
+‘I am you; you are we; we are He.
+All, within He, are He: ask one who has arrived.’
+
+This is what is called the perfection of the names. The determination in question therefore includes awareness of essential perfection and of the perfection of the names: the essence's manifestation to itself in its determinations within itself, arising through the most holy effusion. It is most holy in being beyond any difference between the recipient of the effusion, its source, and the effusion itself. This is what is expressed as istijlāʾ, self-beholding through disclosure. It is confined to four cases, with no further case possible.
+
+For the essence's manifestation to itself within its determinate loci of manifestation is considered either from the side of what is manifest or from the side of the locus. The first can occur only through a universal affair and a locus comprehending all the essence's affairs and considerations, such as the Perfect Human. Through such a locus the manifest essence appears to itself in its entirety and the oneness of its comprehensive gathering. This is possible only in a locus possessing complete comprehensiveness and perfect receptivity, so that each aspect corresponds to what confronts it. This is the Perfect Human alone, since nothing else is like him. Such manifestation may then be considered either through the comprehensive universality of that affair—as in ‘You did not throw when you threw’—or through the particulars included within it, as when the tree called to Moses, peace be upon him, ‘Indeed, I am God.’
+
+The second case is the essence's manifestation to itself from the side of the loci. It is either manifestation through a particular locus to that locus itself, with its distinguishing particularity—as with the particulars of the world considered in themselves according to their levels—or manifestation to another particular standing over against it through various affinities. Each individual in the world has, in itself, a manifestation to itself. This is the source of the glorification indicated in ‘There is nothing that does not glorify Him with praise.’ Manifestation to another appears in the relations of agreement and opposition among the world's individuals. All four cases can be understood from the author's words ‘collectively and individually’.
+
+### Textual and translation notes
+
+1. The verse on p.131 and its reported alternative are retained in the Arabic source. The displayed first hemistich is translated, rather than silently replaced by the smoother alternative.
+2. Istijlāʾ is given a contextual gloss, not simply equated with sensory sight. The four cases are two successive divisions: manifestation considered from the manifest reality or from the locus, with two subdivisions under each.
+3. The Quranic excerpts correspond to Q8:17, Q28:30, and Q17:44. Some printed footnote verse locators are inaccurate; the quoted wording, not an incorrect page note, controls the English.
+4. The phrase ‘nothing else is like him’ follows the local reference to the Perfect Human. It is not presented as an independent interpretation of the Quranic phrase it echoes.
+5. A marked modern explanatory footnote on p.132 is excluded. The medieval source itself supplies the examples of throwing and the speaking tree.
+6. Reported electronic apparatus strings, not independent manuscript readings: ( تستلزمه - خ ل ); ( انا أنت فيه و نحن أنت و أنت هو - خ ل ); ( الحاصل - خ ل ); [ عندهم - ظ ]; ( التعيَّنة -
+
+خ ل ); ( بحسبه - خ ل ); ( كليته - خ ); ( المحاطة - خ ); ( على الآخر - خ ); ( بوجوه - خ )
+
+---
+
+## SH-030 — Ordered divine knowledge without externally separated known objects
+
+**Source:** A, printed pp. 133–137
+
+https://ablibrary.net/book_content/b/17638/329?lang=ar
+
+### Commentary — Arabic
+
+أقول : لمّا بيَّن الحقيقة الواحدة بالوحدة الحقيقيَّة و لوَّح على كيفية انتشاء الكثرة الاعتبارية منها على النظام المحكم في الوجود ، يريد ان ينبَّه على مبلغ افهام المشاءين في هذه المسألة و منشأ اوهامهم فيها .
+و تقرير ذلك ، انَّ ادراك الحقيقة المذكورة لذاتها ، كما انه يتضمّن ادراك ساير الصفات على الوجه المذكور ، كذلك يوجب إدراكها على النّسق المحكم المنتظم في الوجود الخارجي إدراكا اجمالياً جمعياً لا تفصيلياً ، إذ هذه الحضرة ليس لتفاصيل الاحكام فيها مجال أصلًا ، كما عرفت غير مرَّة ، و ذلك ، لأنَّ ظهور الذات بكليتها واحدية جمعيتها التي هي من احدى الصُّور الأربع اللازمة شعورها ، لا يمكن تعلُّق الإدراك بها ، الا مع نسبة - تأليفية - يوجب تقدُّم بعض الجزئيَّات و تأخير البعض ، و الا لا يتصوَّر الجمعيَّة ، و الا احديَّتها .
+فهذا هو الموجب بالعلم بالنظام الوجودي ، لا ما ذهب إليه المشّاءون ، من ان العلم بالعلَّة ، يوجب العلم بالمعلول المباين لها بحسب الوجود ، فانّهم لما نفوا المشيَّة و الإرادة المرجِّحة للمختار ، اضطرُّوا ، إلى إثبات صفة للمبدإ ، تقتضي ذلك النظام المحكم ، يسمُّونها العناية ، و هي تمثُّل النظام في علم الباري ، الذي هو حضور المعلول الأول عنده ، بما اشتمل عليه من المعلولات المتَّسقة المنتظمة من الأزل إلى الأبد ، بناءً على انَّ العلم بالعلَّة يوجب العلم بالمعلول المباين ، و ذلك لابتنائه على الباطل يكون فاسداً ، ضرورة كونه متفرعاً على ان الماهيّات و الأعيان الثابتة من حيث انها مباينة للذات بحسب الوجود ، لها وجود لذاتها مجعولة كانت أو معلولة - على اختلاف الرأيين ، و قد عرفت مما سبق ، ان الأعيان بهذا الاعتبار ما شمَّت رائحة الوجود ، و العدم الصرف ، لا يمكن ان يكون مجعولًا و لا معلولًا .
+ثمَّ انّه يمكن ان يتوهَّم هاهنا ، ان هذا الكلام لا يطابق ما تقدَّم من انَّ - ادراك الواجب ذاته يستلزم ادراك سائر الصفات و الأعيان ، لكونها عينها ، فانَّه يقتضي وجود الأعيان ضرورة . فلو قيل : انّها غير موجودة ، يكون بين الكلامين تناف بحسب الظاهر ، فلذلك قال : اعتبار كون الماهيّات و الأعيان معقولة انّما هو اعتبار كونها غير مغايرة للذات العاقلة . و لا شكّ انّ هذا الاعتبار غير اعتبار كونها مجعولة أو معلولة مباينة لها بحسب الوجود ، فعند تغاير الاعتبارين ، لا تنافي بين الحكمين .
+و اما بيان ان معقولية الماهيّات ، انّما هو باعتبار كونها غير مغايرة للذات العاقلة ، فهو انَّها من حيث المغايرة لا وجود لها أصلًا ، لا خارجاً
+
+و لا عقلًا . اما خارجاً ، فلأنها من حيث هي مغايرة للذات مباينة لها بحسب الوجود في الخارج ، و كلُّ ما يكون مبايناً لها كذلك ، لا يمكن ان يكون موجوداً في الخارج ، لما سبق من ان الوجود حقيقته في نفسه ، لا تباين بين افراده ، فيكون المباين للوجود بحسبه في الخارج لا يكون موجوداً بالضرورة .
+و اما عقلًا ، فلأنَّ المعقولية بالمعنى الذي ذهب إليه محقِّق المشاءين ، و هو كون الشيء حاصلًا للعلَّة القابلة ، و هو الانطباع المفسَّر به الإدراك ، المسمى بالعلم الانفعالى عندهم ، أو بحصوله للعلَّة الفاعليَّة ، الموجبة ، المعبَّر عنه بالحضور المسمى بالعلم الفعلى ، منفية عن الماهيّات من الحيثيَّة المذكورة ، لأنها من الحيثيَّة المذكورة ، مباينة للذات العاقلة ، فتكون مباينة للوجود - مباينة العلَّة للمعلول قابلة أو فاعلة .
+و قد عرفت ان المباين للوجود بحسبه ، لا يمكن ان يكون له حصَّة من الوجود و الحصول ، لا في نفسه ، و لا في غيره و ايضاً ، المعقول من حيث انه معقول ، يجب ان لا يكون مغايراً للعاقل الا بضرب من الإضافة ، فلا يكون المباين لشيء بحسب الوجود ، معقولًا له بهذا الاعتبار ، كما سبق .
+و ممّا يؤيِّد هذا ما ذكره بعض المحقِّقين من اهل الذوق : انّ العلم بالشيء اىّ علم كان ، بالذَّوق الصحيح و الكشف الصريح ، عبارة عن استجلاء العالم ذلك المعلوم في نفسه بالقدر المشترك بين العالم و المعلوم ، الذي من جهته يتّحدان ، فلا يغايران - فلا يتغايران - و عبارة ايضاً ، عن استجلائه ايضاً من حيث الأمر المميِّز للمعلوم من العالم القاضي بان يسمّى أحدهما معلوماً و الآخر عالماً ، إذ لا تسمية 
+
+في الأحديَّة و لا تعدُّد .
+و لا بدَّ ايضاً في هذا القسم الثاني القاضي بالتميُّز من معنى يقتضي الاشتراك بين العلم و العالم و المعلوم و هو التميُّز ، و امر آخر لازم له لا يجوز إظهاره .
+و انَّما أوردت هذا الكلام في هذا المقام ، لبعد هذه المسألة عن مدارك اهل الاستدلال من العارين عن الذوق السليم ، فعسى ان يتأمَّلوا في مجارى عباراتهم الجلية ، فيطَّلعهم اللَّه على بعض مرموزاتهم الخفيَّة ، و ما ذلك على اللَّه بعزيز .
+و إذا تقرّر ان الماهيّات و الأعيان باعتبار مغايرتها للذات ، ليس لها حصَّة من الوجود أصلًا ، فلا يمكن اضافة الوجود إليها و اعتبارها معها بهذا الاعتبار ، فلو أضيف إليها اعتبر لها بوجه من الوجوه ، لا يكون ذلك المضاف الا الوجود الذاتي الحقيقي ، فلا يصحُّ حينئذ ان يقال : أنَّها مفتقرة إلى الذات العاقلة بحسب احد الوجودين الغير الفرضيَّين لأنَّ الوجود المضاف إلى الماهيَّة حينئذ ، انّما هو الوجود الذاتي الحقيقي الذي لا يمكن ان يفتقر موصوفه بحسبه إلى شيء ، فان الافتقار انّما يكون للموجود بالوجود الفرضي الذي قد ثبت انتفاؤه مطلقا .
+و ملخَّص هذا الكلام ، ان الماهيّات و الأعيان ، لو أخذت مع اعتبار المغايرة ، فهي معدومة ضرورة لا يصلح لأن يوصف بالمجعوليَّة و المعلوليَّة و غيرهما من الصفات أصلًا ، و لو أخذت مجرّدة عن هذا الاعتبار ، يمكن ان ينسب إليها الوجود ، لكن لا يصلح لأن يوصف
+
+بما يستلزم الافتقار و الاحتياج ، كالمجعوليَّة و المعلوليَّة ، لأنّ الوجود المضاف إليها حينئذ ، انّما هو الوجود الحقيقي الذي له الغناء المطلق .
+فتقرَّر ، انّ القول بالمجعوليَّة و المعلولية على التقديرين فاسد .
+
+### Commentary — English
+
+I say: having explained the reality that is one through genuine unity and intimated how conceptual multiplicity arises from it in an ordered existence, the author now wishes to indicate the limits of Peripatetic understanding of this question and the source of their mistaken conceptions.
+
+The reality's apprehension of itself includes the apprehension of all its attributes in the manner described. It also necessitates their apprehension according to the firm, ordered sequence of external existence, in an undifferentiated and comprehensive cognition, not a detailed one. No differentiation of governing properties has any scope in this presence, as repeatedly explained. For the essence's manifestation in its entirety and the oneness of its comprehensive gathering—one of the four cases necessarily included in its awareness—cannot be apprehended without an ordering relation giving some particulars precedence and placing others after them. Otherwise neither comprehensiveness nor its oneness could be conceived.
+
+This is what necessitates knowledge of the existential order, not the Peripatetic claim that knowledge of a cause necessitates knowledge of an effect separate from it in existence. Having denied volition and the will which determines a freely choosing agent, they were compelled to posit an attribute of the Principle that requires this ordered arrangement. They call it providence: the representation of the order within the Creator's knowledge, understood as the presence to Him of the first effect together with the ordered effects it encompasses from eternity to eternity. Their account rests upon the premise that knowing the cause necessitates knowing an effect separated from it.
+
+An account founded upon what is false must be unsound. It presupposes that quiddities and fixed entities, insofar as they are separate from the essence in existence, have existence through themselves, whether described as made or as caused, according to the two positions. Yet it has already been explained that, under this consideration, the entities have never caught the scent of existence. Sheer nonbeing cannot be made or caused.
+
+One might think that this contradicts the earlier assertion that the Necessary's apprehension of His essence entails apprehension of the other attributes and entities because they are identical with it. That assertion apparently requires the entities to exist, whereas the present assertion denies their existence. Hence the author's clarification: quiddities and entities are considered as intelligible precisely insofar as they are not different from the knowing essence. This differs from considering them made or caused things separate from it in existence. Since the considerations differ, the judgments are not incompatible.
+
+Why is their intelligibility considered only insofar as they are not different from the knowing essence? Because, insofar as they are different, they have no existence at all, either externally or intellectually. Not externally: under this consideration they would be separate from the essence in external existence. But nothing so separate can exist externally, since existence has been shown to be one reality in itself, with no separation among its instances. What is separate from existence qua existence therefore cannot exist externally.
+
+Nor intellectually: intelligibility in the sense maintained by the accomplished Peripatetic investigator is a thing's presence either to a receptive cause—the impression through which cognition is explained, called receptive knowledge—or to a necessitating efficient cause—the presence called active knowledge. Neither applies to quiddities under the consideration at issue. Insofar as they are different from the knowing essence, they would be separate from existence in the way a cause, receptive or efficient, is separate from its effect. But what is separate from existence qua existence cannot possess any share of existence or presence, either in itself or for another. Moreover, the intelligible, precisely as intelligible, must not differ from its knower except through a kind of relation. Something separate from another in existence cannot, under that consideration, be intelligible to it, as explained earlier.
+
+This is supported by the statement of a realized practitioner of spiritual taste: ‘Knowledge of something—whatever kind of knowledge—according to sound spiritual taste and clear unveiling is the knower's beholding that known object within himself through the common element by which knower and known are united and not different. It is also his beholding it through the factor distinguishing known from knower, on account of which one is called known and the other knower. In undifferentiated oneness there is neither such naming nor plurality. Even in this second case, which requires distinction, there must be a meaning shared by knowledge, knower, and known: namely distinction itself, together with another necessary concomitant which may not be disclosed.’
+
+I have quoted these words here because this question is so remote from the apprehension of reasoners lacking sound spiritual taste. Perhaps they will reflect upon the implications of these clear expressions and God will acquaint them with something of the hidden meanings indicated. That is no difficult matter for God.
+
+Once it is established that quiddities and entities, considered as different from the essence, have no share in existence, existence cannot be attributed to or considered with them under that consideration. If existence is nevertheless attributed to them in any respect, it can only be real intrinsic existence. It would then be incorrect to say that they depend on the knowing essence in respect of either of the two non-suppositional modes of existence [the displayed reading]. The existence attributed to the quiddity would be real intrinsic existence, in respect of which its subject cannot depend on anything. Dependence belongs only to something existent through suppositional existence [with ‘incidental existence’ reported as an alternative], whose independent standing has been denied.
+
+In sum, if quiddities and entities are taken with the consideration of otherness, they are necessarily nonexistent and cannot be qualified as made, caused, or by any other attribute. If taken without that consideration, existence can be attributed to them, but they cannot be qualified by what entails dependence and need, such as being made or caused. For the existence then attributed is real existence, which possesses absolute self-sufficiency. Thus the account of making and causation criticized here is unsound on either supposition.
+
+### Textual and translation notes
+
+1. The critique concerns an account in which known effects possess existence separate from the knowing essence. The translation retains that qualifier; it does not silently identify Ibn Turka’s conclusion with the rejection of every sense of causation.
+2. The Peripatetic account of providence is the commentator’s presentation of an opponent. No claim is made that this exhausts Avicenna’s or every Peripatetic’s account of will and knowledge.
+3. The source displays المعقولية with المعلولية suggested in brackets. The English follows intelligibility, which is developed through receptive and active knowledge in the surrounding sentences.
+4. The long attributed quotation about knowing has no named author in the medieval main paragraph. A modern footnote may offer contextual identification, but it has not been imported into the author’s text.
+5. The closing الفرضيين / العرضيين and الفرضي / العرضي are materially significant alternatives. The English follows the displayed supposition terminology and explicitly notes incidental existence as an alternative, rather than resolving the crux silently.
+6. The words describing a hidden necessary concomitant are translated as an authorial withholding of disclosure, not filled with a modern speculative explanation.
+7. Reported electronic apparatus strings, not independent manuscript readings: ( منبِّها - خ ); ( الذي هو - خ ل ); ( تأخُّر
+
+- خ ل ); ( المنسقة - خ ل - المنسبقة - خ ل ); ( بذاتها - خ ); [ حقيقة واحدة - ظ ]; [ المعلوليَّة - ظ ]; ( لغيره - خ ل ); ( لا نسبة - خ ); ( و لا تعداد - خ ل ); ( فحاوي - خ ); [ أو - ظ ]; ( العرضيِّين - خ ل ); [ العرضي - ظ ]; ( بالضرورة - خ ل )
+
+---
+
+## SH-031 — Self-intellection, relational opposition, and the coloured-glass analogy
+
+**Source:** A, printed pp. 138–141
+
+https://ablibrary.net/book_content/b/17638/334?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا إشارة إلى ما يمكن إيراده هاهنا و دفعه ، ذلك انَّه يلزم
+
+على ما ذهبتم إليه ، ان الماهيّات و الأعيان انّما تكون معقولة باعتبار كونها غير مغايرة للذات العاقلة ، و ذلك محال ، لأنَّ العاقلية تقابل المعقولية ، تقابل المضاف ، و ذلك لا يتصوّر الا بعد تحقُّقها في موضوعين مباينين بحسب الوجود ، فعند انتفاء المغايرة بين موضوعيهما ، لا تكون العاقليَّة و لا المعقوليَّة .
+و أجاب عن هذه الشبهة بجوابين : أحدهما ، جدلىُّ في صورة النقض ، و هو انه لو صحَّ ما ذكرتموه من المقدمات الدالة على تقابل العاقلية و المعقولية و وجوب التغاير بين موضوعيهما بحسب الوجود و الحقيقية ، لوجب ان لا يكون الواجب لذاته و لا شيء من الملائكة المجردة عاقلة لنفسها عندكم ، و الأمر ليس كذلك . و لما لم يندفع الشبهة بهذا الجواب بل ما زاد الا تعميماً لمواردها ، أشار إلى وجه تحقيقي به ينقلع مادة الشبهة عن أصلها ، و هو : انّ التغاير الواقع بين العاقلية و المعقولية ، و ان كان تغاير التقابل ، لكن مجرّد الاعتبار كاف في حصوله ، كما انَّه كاف في حصول نفس تلك الماهيّات الحقيقية التي هي المبادي لحصول التقابل و التغاير و عروضهما ، فان حصول تلك الماهيّات و وجودها انّما يتصوَّر هاهنا بمحض الاعتبار ، فما يكون وجوده متفرِّعاً عليها ، أَجدَر بان يكون كذلك .
+اما بيان ان الماهيات يكفى في حصولها مجرّد الاعتبار ، فهو انَّ
+
+الماهيّات من حيث هي مغايرة هي مغايرة للذات ، لا تكون الا نسباً و اضافات تعيُّنية اما عرفت ان الوحدة الحقيقيَّة المعبَّر عنها بالوجود المطلق الشامل الذي ما عداه ، عدم صرف و باطل محض ، يمتنع ان يكون هاهنا شيء آخر خارج عنها .
+مصراع :
+الا كل شيء ما خلا اللَّه باطل
+و الماهيّات من حيث هي مغايرة ، لا يكون لها تحقُّق أصلًا الا ان تلك الحقيقة لمّا اقتضت الظهور بحسب الجلاء و الاستجلاء ، اختلفت مراتب ظهوراتها في الجلاء و الخفاء بحسب إدراكنا لا بحسب الأمر نفسه ، فإذا نسبنا بعض ظهوراتها إلى بعض ، وجدنا بعضها اتمَّ جلاءاً لكثرة آثاره في عرصة الظهور و وضوحاً ، بحسب المدارك ، و بعضها انقص لقلّتها . فحصل لتلك الظهورات باعتبار نسبتنا بعضها إلى البعض ، تمايز نسبىٌّ بحسب إدراكنا فقط ، فعلم ان هذه الظهورات المتعدِّدة و تعيُّناتها ، انَّما هي النسب الادراكيَّة و الإضافات الاعتباريَّة . و اما تلك الحقيقة في نفسها فمجرَّدة عن هذه النسب و الإضافات ، كنور الشمس مثلًا ، فانّه إذا وقع شعاعها على أجسام صيقلة ، مختلفة الألوان ، كقِطَعٍ من الزُّجاج الملوّنة مثلًا ،
+
+لا بدَّ و ان يحصل لبعض اطراف ذلك الشعاع بالنسبة إلى بعض ، تمايز نسبىٌّ ، و تعدُّد اعتبارى بحسب إدراكنا ، فيحكم الوهم هاهنا ، ان النور هو المنصبغ نفسه ، و الواقع خلافه ، إذ لا لون للنُّور ، لكن للزجاج بدا ، شعاعة ، فترى فيه الوان .
+فظهر ، انّ حصول تلك الماهيّات ، انّما هو باعتبار تعيُّنات اعتبارية .
+فعلم ايضاً من هذا ، ان لا تمايز بينها بالفعل بحسب الخارج ، و ذلك لأن التمايز بالفعل في الخارج ، يستدعى تمايز موضوعاتها فيه و تعددها و تعدد الموضوع محال ، لكون موضوعها واحداً بتلك الوحدة الحقيقيَّة ، فلا يصحُّ ان يقال : ان شيئاً من الماهيات بتلك الحيثية ، أي من حيث انّها مغايرة لتلك الهويَّة ، موجود بشيء من الوجودين في هذا الموضوع ، أي في هذه المرتبة ، نعم ، انّها باعتبار كونها عين تلك الهويَّة في الخارج ، يكون حاصلة لها ، حصول نفسها لنفسها ، فاعتبار هذا الحصول النسبي و اضافتها إليه ، تكون موجودة ، و هذه الإضافة انَّما هي محض الاعتبار . تدبّر ما سمعت ، فانَّه غاية التوضيح في هذا المقام ، لعل اللَّه يوصلك إلى المرام .
+
+### Commentary — English
+
+I say: this indicates a possible objection and its answer. On your position, quiddities and entities are intelligible only insofar as they are not different from the knowing essence. But that is impossible: knowing and being known stand in the opposition of correlatives, which can be conceived only when the two relations are realized in subjects distinct in existence. Without otherness between their subjects, there can be neither knowing nor being known.
+
+The author answers in two ways. The first is a dialectical counter-instance. If the premises asserting the opposition of knowing and being known and the necessary existential and real difference between their subjects were sound, neither the Necessary through Himself nor any immaterial angel could know itself, even according to the opponent. But that is not their position. This answer, however, does not remove the difficulty; it merely extends the range of cases affected. The author therefore indicates a substantive explanation which uproots its source. Although the difference between knowing and being known is an oppositional difference, consideration alone suffices for it to arise. Consideration similarly suffices for the very real quiddities that ground opposition and difference, since their occurrence and existence at this level are conceivable through consideration alone. What derives its existence from them has an even stronger claim to the same account.
+
+Why does consideration suffice for the occurrence of these quiddities? Insofar as quiddities differ from the essence, they are nothing but determining relations and correlations. You have learned that genuine unity, expressed as all-encompassing unrestricted existence, outside which there is sheer nonbeing and nullity, makes another thing outside it impossible:
+
+‘Indeed, everything apart from God is null.’
+
+Quiddities insofar as they are different therefore have no realization at all. But that reality requires manifestation as disclosure and self-beholding through disclosure. The levels of its manifestations differ in clarity and hiddenness according to our apprehension, not according to the reality itself. When we compare one manifestation with another, we find some clearer and more complete to our faculties because their effects are more abundant in the domain of manifestation, and others less complete because their effects are fewer. Comparing them produces a relative distinction according to our apprehension alone. These multiple manifestations and their determinations are therefore cognitive relations and conceptually considered correlations. The reality itself remains free of them.
+
+Consider sunlight. When its ray falls upon polished bodies of different colours, such as pieces of coloured glass, some portions of the ray inevitably appear relatively distinct from others, with a multiplicity considered according to our apprehension. Estimation judges the light itself to have taken on the colours. The reality is otherwise: light has no colour of its own in the terms of the analogy; its radiance appears through the glass, and colours are seen in it. Thus those quiddities occur through conceptually considered determinations.
+
+It follows that there is no actual extramental distinction among them at this level. Such a distinction would require their subjects to be externally distinct and multiple, whereas their subject is one through genuine unity. None of the quiddities, insofar as it differs from that identity, can therefore be said to exist in either mode of existence in this subject—that is, at this level. Yet insofar as they are externally identical with that identity, they are present to it as it is present to itself. They are existent under the consideration of this relative presence and their relation to it; the relation is a matter of consideration alone. Reflect on what you have heard, for it is the fullest clarification at this point. Perhaps God will bring you to the goal.
+
+### Textual and translation notes
+
+1. The initial objection treats knowing and being known as correlatives requiring distinct subjects. The first reply is expressly labelled dialectical and inadequate by itself; the substantive reply is the distinction of considerations.
+2. The qualification ‘in this subject—that is, at this level’ is essential. The translation does not generalize the statement into an unqualified denial of every differentiation at every level.
+3. The half-line about everything apart from God is included. Modern footnote explanations surrounding the sunlight analogy are excluded.
+4. The optical example is translated as the medieval author’s analogy, not offered as contemporary physical optics. The damaged phrase near للزجاج بدا شعاعة is rendered contextually; its exact transcription is preserved.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( شتّى - خ ل ); ( فباعتبار - خ )
+
+---
+
+## SH-032 — The Breath of the All-Merciful and the unfolding of the names
+
+**Source:** A, printed pp. 141–143
+
+https://ablibrary.net/book_content/b/17638/337?lang=ar
+
+### Commentary — Arabic
+
+أقول : لمّا كان التعيُّن الأول الجامع بين الواحديَّة و الأحديَّة ، المعبّر
+
+عنه بالوحدة الذاتيَّة ، تارة ، و بالهويَّة المطلقة اخرى ، لغلبة احكام البطون و الوجود على احكام الظهور و الاظهار ، لا تمايز بين ما يعبَّر فيه من المعاني الأسمائيَّة و التعيُّنات ، إذ لا تغاير هنا أصلًا ، حتى ان الكثرة المعتبرة فيها هي عين الوحدة كما عرفت . فلا مجال فيه حينئذ ، ان تظهر تلك التعيُّنات على ما هو مقتضى الكمال الأسمائى ، بان تظهر تلك الهويَّة في التعيُّنات الأسمائيَّة بحسبها ، لأنَّ المراتب التي هي محال ظهورها و مجالى تفاصيلها ، مخفيَّة مندمجة هاهنا ، مستهلكة الحكم استهلاك اعيان الحروف و اندماجها في نفس المتنفِّس ما دام في مبدأ صدورها و باطن صدره و قبضة قلبه قبل بروزها في مراتب المخارج و ظهورها بتعيُّنات أحكامها المتكثرة ، فحينئذ ، اقتضت تلك الهويَّة الظهور و البروز ، لكن لا من حيث ذاتها ، بل من حيث اعتباراتها و شئونها ، على مقتضى أسئلتهم بألسنة الاستعدادات و القابليّات الاقدسيَّة ، فانبعث من ذلك التجلي و كنه بطونه ، ميل ارادى و حركة حُبيَّة و شوق عشقى بحسبه تجلى ، بتعيُّن آخر ، و بنوع اظهر ، على مثال نفس منبثّ يصلح لأن تحصل به تلك الصفات و الأعيان - متمايزة بالفعل - تمايز الحروف في النَفَس ، عند انبثاثه إلى المخارج . فيمكن تعقُّلها على سبيل التفصيل حسبما ذكر في مراتب الكمال الأسمائى ، و يسمى هذا التجلي باصطلاحهم ، النفس الرحمانى ، اما لأنَّه
+
+كالنَفَس الإنساني في كونه حقيقة بخاريَّة بسيطة الذات ، انّما تختلف جزئيّاتها بحسب انصباغها في مراتب المخارج ، فالنَفَس الرحمانى هو المادة الهيولانيَّة لصور العالم ، كمادة النفس ، لصور الحروف و الكلمات - الكمالات - و اما ، لأنَّه يحصل به تنفيس الكرب ، كما قال الشيخ « رضى اللَّه عنه » في فصوص الحكم : « العالم ظهر في النفس الرحمانى الذي نفّس اللَّه به ، عن الأسماء الإلهيَّة ما تجده من عدم ظهور آثارها بظهور آثارها ، فامتنّ على نفسه بما أوجده في نَفَسه ، فأول اثر كان للنفس ، انَّما كان في ذلك الجناب ، ثم لم يزل الأمر ينزَّل بتنفيس الغموم ، إلى آخر ما وجد .
+شعر :
+الكل في عين النفس * - كالضوء في ذات الغلس
+- و العلم بالبرهان في * - سلخ النهار لمن نعس
+- فيرى الذي قد قلته * - رؤيا ، يدلّ على النفس
+- فيريحه من كل غم * في تلاوته عبس
+- و لقد تجلى للذي * - قد جاء في طلب القبس
+- فرآه ناراً ، و هو نور * - في الملوك و في العسس
+- فإذا فهمت مقالتي * - فاعلم بانك مبتئس
+- لو كان يطلب غير ذا * - لرآه فيه و ما نكس »
+و انَّما أوردت هذا الكلام بتمامه في هذا المحل لاحتوائه على ما له مدخل تامٌّ فيما نحن بصدده في هذه الرسالة .
+فتأمل .
+
+### Commentary — English
+
+I say: in the first determination, which gathers comprehensive unity and undifferentiated oneness together and is called intrinsic unity or absolute identity, the governing properties of hiddenness and existence predominate over those of manifestation and making manifest. The meanings of the names and determinations considered there are consequently not distinguished. There is no otherness at all: even the multiplicity considered there is identical with unity, as you have learned.
+
+There is thus no scope there for those determinations to appear in the manner required by the perfection of the names, namely the appearance of that identity in the determinations of the names according to their particular character. The levels that serve as their loci of manifestation and as the settings of their differentiation remain hidden and enfolded, their governing properties absorbed. They resemble the letters absorbed and enfolded in a person's breath while it remains at its source, within the chest and the heart's grasp, before emerging through the levels of articulation and appearing with its many determinate properties.
+
+That identity accordingly requires manifestation and emergence—not insofar as it is the essence itself, but insofar as its considerations and affairs require it, in response to their petitions through the tongues of their most holy preparednesses and receptivities. From that disclosure and its innermost hiddenness there arises a volitional inclination, a movement of love, and a loving yearning toward disclosure through another determination and a more manifest mode. It is like an outspread breath through which those attributes and entities can become actually distinct, as letters are distinguished when breath spreads toward the points of articulation. They can then be conceived in detail, in accordance with the levels of the perfection of the names.
+
+This disclosure is called the Breath of the All-Merciful. One reason is its resemblance to human breath, a vaporous reality simple in itself whose particulars differ through the qualities assumed at the levels of articulation. The Breath of the All-Merciful is the underlying material for the world's forms, just as breath is the material for the forms of letters and words. Another reason is that through it distress is relieved. As the Shaykh, may God be pleased with him, says in the Bezels of Wisdom:
+
+‘The world appeared in the Breath of the All-Merciful, through which God relieved the divine names of the distress they experienced from the nonmanifestation of their effects, by manifesting their effects. He thus bestowed favour upon Himself through what He brought into being in His Breath. The first effect of the Breath was therefore in that presence. Thereafter the process continued its descent through the relief of griefs until the last thing brought into being.
+
+All is within the very Breath,
+like light within the twilight.
+Knowledge through demonstration [comes]
+as daylight is stripped away for one who dozes.
+He sees what I have said
+in a vision pointing to the Breath.
+It relieves him of every grief,
+as in his recitation of “He frowned”.
+He disclosed Himself to the one
+who came in search of a firebrand.
+He saw Him as fire, though He is light
+among kings and among night-watchmen.
+If you understand my saying,
+know that you are afflicted.
+Had he sought something other than this,
+he would have seen Him in it and not turned back.’
+
+I have quoted the whole of this passage here because it contains matters directly relevant to the present treatise. Reflect.
+
+### Textual and translation notes
+
+1. This is a separately introduced أقول after QT-032. Its preceding قال carries an intervening footnote marker; a simple search for قال immediately followed by a colon would miss the boundary and wrongly merge this section into SH-031.
+2. Nafas, breath, is distinguished from nafs, self. The two reasons for the expression—the analogy of articulation and the relief of distress—are both translated.
+3. The quotation from the Bezels of Wisdom includes all eight couplets displayed on the source page. Several are highly compressed. Brackets indicate a supplied connective; the difficult line about reciting ʿAbasa and the adjective مبتئس are not replaced with speculative explanatory verses.
+4. The source’s variants around ميل إرادي ... بحسبه تجلى are syntactically significant. The English follows the trajectory toward a second disclosure without claiming a settled manuscript reading.
+5. The concluding first-person explanation is Ibn Turka’s own, outside the quoted words of the Shaykh. Modern footnotes are excluded.
+6. Reported electronic apparatus strings, not independent manuscript readings: ( هاهنا - خ ); ( فانبعث - خ ل ); ( بحبِّه - خ تجلى - تجلّ - خ ل - نحو تجل - خ ل ); ( بأحكام - خ ل ); ( فالكل - خ ); ( هذه الرسالة - خ ل )
+
+---
+
+## SH-033 — Divine action, the worlds, and the five comprehensive levels
+
+**Source:** A, printed pp. 144–148
+
+https://ablibrary.net/book_content/b/17638/340?lang=ar
+
+### Commentary — Arabic
+
+أقول : بعد فراغه عن تبيين المرتبة الإلهيَّة و ما قبلها من المراتب المتعيَّنة بالتعيُّن الجلائى الذي هو مقتضى الكمال الذاتي الغالب فيه احكام اطلاق الذات و وجودها الحقيقي على احكام تعيُّنات الأسماء و ظهورها الاعتباري ، شرع يبيِّن المراتب المتعيَّنة بالتعيُّنات الاستجلائية التي هي مقتضى الكمال الأسمائى الغالب فيها احكام التعيُّنات ، و ظهورها الاعتباري على احكام اطلاق الذات و وجودها الحقيقي . فما كانت ظاهرة الاعتباري على احكام اطلاق الذات و وجودها الحقيقي . فما كانت ظاهرة في المراتب الأول ، بطنت في هذه المراتب ، و ما بطنت هناك هو الظاهر في هذه المراتب ، و كان من قال ، باطن الخلق ظاهر الحق ، و ظاهر الخلق باطن الحق ، انَّما مراده هذا ، و قبل هذه المراتب لا يسمى خلقاً و لا ايجاداً و لا غير ذلك من الأسماء المشعرة بالفاعلية المتميِّزة من المفعول ، و ذلك لأنَّ الإيجاد عند المحقِّقين عبارة عن اقتران القوابل الأقدسيَّة الثابتة في التعيُّن الأول ، الذي هو منبع التعيُّنات و القوابل ، به ظاهر الوجود الذي هو طرف ظاهريَّة النفس الرحمانى ، و لا شكّ ان الحاصل من اقتران المتغايرين يغايرهما مغايرة الولد للأبوين و النتيجة للمقدمتين ، و يستقل دونهما بوجود خاصّ صالحاً لأن تضاف إليه الأحكام التي انَّما تضاف إلى المستقلين ، كارتسام صور الموجودات و تنسب إليه الآثار
+
+المنسوبة إليهم - إليهما - ، فلهذا يطلقون عليه اسم العالم و على النسبة الواقعة بينه و بين مبدئه الإيجاد و الخلق .
+ثمَّ ان هاهنا مقدمة محتوية على فوائد كثيرة الجدوى ، لا بدَّ للمستبصرين من الوقوف عليها ، و هي ان نسبة الفعل إلى الحقِّ اما ان يكون لذاته بمعنى ان ذلك الفعل يلزمه بلا توسُّط شيء بين ذاته و بين المفعول غير نسبة معقولة بها يتميَّز عن الإطلاق الذاتي ، و يسمّى ذلك المعلول في هذه المرتبة حروفاً عاليات ، و حروفاً أصليات و مفاتح اول و تارة ، يعبّر عنها بمفاتيح الغيب و الأسماء الذاتيَّة و الشئون الأصليَّة ، كلُّ ذلك بحسب اعتبارات مترتّبة منزَّلة ، - تنزُّله - في التعيُّن الأول .
+و اما في التعيُّن الثاني الذي هو حضرة ارتسام المعلومات في عرصة العلم الذاتي فمن حيث الامتياز النسبي ، و هذه الحضرة هي التي يشير إليها أكابر المحققين و المتألِّهين من الحكماء بانَّ الأشياء مرتسمة في نفس الحق ، لكن فرق بين ذوق الحكيم و المحقق هاهنا ، و هو انَّ الارتسام عنده انما هو وصف للعلم باعتبار ، امتيازه النسبي عن الذات ، لا انَّه وصف للذات أو وصف للعلم باعتبار ، انّه عينها فتسمّى تلك الأشياء بهذا الاعتبار حروفاً معنويّة و كلمات معنويَّة و اعياناً ثابتة ، و تارة يعبَّر عنها بالحقائق الإلهيَّة و الأسماء الربوبيَّة و الحروف الوجوديّة ، و اما ان يكون بواسطة بأن يكون بين الفاعل الحق و بين ما يوجده آلة وجوديَّة ، أو صورة مظهريَّة يستدعيها مرتبة المفعول ،
+
+و يسمى حينئذ ايجاداً و قولًا ، فان هذه النسبة في الكلام الإلهي مكنّى عنها بالقول ، حيث قال : « إِنَّما قَوْلُنا لِشَيْءٍ إِذا أَرَدْناهُ . . . » و تلك الأشياء بهذا الاعتبار تسمّى كلمات وجوديَّة و ماهيّات و اعياناً ممكنة ، و لهذا يسمّى هذا العالم ، عالم الأمر ، لانَّ الأمر عبارة عن القول .
+ثم ان الموجودات التي في العوالم أقربها نسبة و ابسطها ذاتا انما هو العقل الأول ، إذ له ضرب واحد من التركيب لا غير ، و هو ان له ماهيَّة متّصفة بالوجود ، و هو أول مراتب الإمكان ، و هو من عالم الأرواح ، فاقرب العوالم نسبة إلى المرتبة الإلهيَّة انما هو عالم الأرواح ، فأول الموجودات المبدعة هو عالم الأرواح دون عالم المعاني ، لاستقلاله في الوجود و ظهوره بحسب تعيُّنه ، و ما يلزمه من افاضة الأحكام و صدور الآثار دون العالم المعاني .
+فان قلت : فتسميته عالماً ، يكون باىّ الاعتبار ؟
+قلنا : باعتبار احد الوجهين اللازمين للصفات من حيث انّها صفات ، و هو الذي به تغاير الذات ، و لمّا لم يكن لها بهذا الوجه وجود أصلًا ، ما عدُّوه من العوالم الموجودة ، إذ عالميَّته انّما هي بالاعتبار فقط .
+ثم عالم المثال لظهور المعاني فيه بصور الأشكال ، و ذلك معنى زائد حصل به ضرب آخر من التركيب ، ثمَّ عالم الأجسام لعروض هذا كلّه مع لحوقه التمكُّن و شغله للحيِّز ، و هذا انهى الغاية في التركيب ، و به تمَّ ظهور الوجود ، إذ لا مرتبة في الظهور اشدَّ من المحسوسات ، و ذلك لبلوغه في الكثرة الامكانيَّة ، اقصى النهاية ، صلح لأن يكون مظهراً للوحدة الوجوديَّة ، إذ ما جاوز حدُّه انعكس ضدُّه ، فعند ايجاد الجرم الأول ، و ذلك هو العرش العظيم و عرش الرحمن ، تمَّ ظهور تجلّى الوجودي و كمل ، إذ هو مقام
+
+الاستواء في الكلام الإلهي ، و هذا احد معانى الاستواء بحسب اللغة ، كما يقال :
+استوى الرجل أي انتهى نشوه و تمّ شبابه .
+فهذه ثلاثة عوالم و المرتبة الجلائيَّة المشتملة على التعيّنين المذكورين ، فيكون المراتب حينئذ أربعاً ، و خامسها هو الجامع للكلِّ ، و هو المرتبة الانسانيَّة ، و هذه المراتب ، اعنى المتعيّنة ، هي المسمَّاة بالمجالى عندهم و المنصّات و المطالع ، إذ مطلق المراتب عندهم ستَّه لدخول مرتبة غيب الهويَّة و اللاتعيُّن فيه ، لكنّ المعتبر هاهنا انّما هو المتعيَّن منها ، و للنفس الرحمانى ، السراية في هذه المراتب الخمس ، و الظهور بحسبها ، و امّهات مخارج الحروف الانسانيَّة خمسة ايضاً ، باطن القلب ، ثم الصدر ، ثم الحلق ، ثم الحنك ، ثم الأسنان ، و هي نظاير المراتب في النفس الرحمانى ، و قد روعي هذا الترتيب الايجادى في الكلام الإلهي و الكتاب المنزَّل السماوي ، فانَّ اول مراتبه حرف ، ثمَّ كلمة ، ثمَّ آية ، ثم سورة ، و الكتاب جامعها . و اما الكتب فهي ايضاً من حيث الأمهات أربعة ، التوراة ، و الإنجيل ، و الزَّبور ، و الفرقان ، و القرآن جامعها .
+و كذلك ساير الموجودات عقليَّة أو خارجيَّة كلّيَّة ، أو جزئيَّة فان الكلّيات العقليَّة مراتبها أربع ، سواء كان غير مرتّبة كالجنس و الفصل ، و الخاصَّة و العرض العام ، و النوع جامعها ، أو كانت مرتّبة - ايضاً - كالجنس العالي و المتوسط و السافل و المفرد ، و النوع جامعها . و كذا الجزئيّات الخارجيَّة ، فان الطبايع الموجودة فيها أربع ، و المزاج خامسها ، و لذلك ان وقع تركيب تلك الطبايع على مقتضى التركيب - مقتضى الترتيب الوجودي - يكون المزاج معتدلًا كاملًا في
+
+الامتزاج ، و الا كان ناقصاً غير تامّ الامتزاج ، فانَّ الأوليَّة في ذلك الترتيب ، انّما هي للحرارة ثم للرطوبة ، ثم للبرودة ، ثم لليبوسة ، و كلُّ ذلك انَّما هو لسراية الذات بحسب الأسماء الأربعة الأول . و هاهنا اسرار جليلة المعنى ، و نكت عزيزة الجدوى و ليس هذا الكتاب موضع تفصيلها لكن اومأنا إلى بعض منها على الإجمال ، تأمَّل فيها تطَّلع على بعض آخر انشاء اللَّه تعالى .
+ثم انّ لكل عالم من هذه العوالم تفاصيل بحسب جزئيّات مراتبه و نسب احكام بعضها إلى البعض ، كعالم الأرواح مثلًا ، فان لها مرتبة العقول المجرّدة و النفوس الفلكيَّة و الأرواح البشريَّة ، و لكل من هذه المراتب مراتب جزئيَّة ، و لها تفاصيل و احكام خاصَّة ، و كذلك في عالم المثال و عالم الأجسام ، لكنّ المتكفّل لبيان هذا كلُّه ، انّما هو الحكمة الطبيعيَّة و ما قبلها ، فلهذا أحال المصنف رحمه اللَّه الكلام فيها عليها .
+
+### Commentary — English
+
+I say: after explaining the divine level and the preceding levels determined through disclosure—required by essential perfection, in which the properties of the essence's unrestrictedness and real existence predominate over the determinations of the names and their considered manifestation—the author turns to the levels determined through self-beholding in disclosure. These are required by the perfection of the names, in which determinations and their considered manifestation predominate over the essence's unrestrictedness and real existence. What was manifest in the earlier levels becomes hidden here, and what was hidden there becomes manifest here. This is the intended sense of the saying, ‘The inward aspect of creation is the manifest aspect of the Real, and the outward aspect of creation is the hidden aspect of the Real.’
+
+Before these levels, the names creation, bringing into existence, and the other expressions suggesting an agent distinguished from its product are not used. For the people of realization, bringing into existence means the conjunction of the most holy receptivities fixed in the first determination—the source of determinations and receptivities—with the manifest aspect of existence, the outward side of the Breath of the All-Merciful. What results from the conjunction of two distinct terms differs from both, as a child differs from its parents and a conclusion from its premises. It possesses a particular existence in its own right, to which judgments appropriate to independently existing things can be attributed, such as the inscription of the forms of existents, and effects ascribed to them can belong to it. Hence they call it a world, and call the relation between it and its principle bringing into existence and creation.
+
+A preliminary distinction of considerable benefit must be understood. An act may be attributed to the Real through His essence: the act follows from Him with no intermediary between His essence and the product except an intelligible relation distinguishing it from essential unrestrictedness. At this level the product is called exalted letters, original letters, or first keys, and also keys of the unseen, names of the essence, and original affairs. These designations correspond to ordered considerations descending within the first determination.
+
+In the second determination, the presence in which known things are inscribed within the domain of essential knowledge, the distinction is relational. This is the presence meant by the great masters of realization and the divinized sages when they say that things are inscribed within the Real Himself. There is, however, a difference here between the taste of the sage and that of the person of realization. For the latter, inscription qualifies knowledge insofar as knowledge is relationally distinguished from the essence. It does not qualify the essence itself, nor knowledge insofar as it is identical with the essence. Under this consideration the things are called intelligible letters, intelligible words, and fixed entities; also divine realities, lordly names, and existential letters [the displayed reading].
+
+Alternatively, the act is mediated: between the Real as agent and what He brings into existence stands an existential instrument or a form serving as a locus of manifestation, required by the level of the product. This is called bringing into existence and saying. Divine speech alludes to this relation by saying, ‘Our saying to a thing, when We will it…’ Under this consideration the things are called existential words, quiddities, and possible entities. Hence this world is called the world of the Command, since command is an expression of saying.
+
+Among the beings within the worlds, the nearest in relation and simplest in essence is the First Intellect. It has only one kind of composition: a quiddity qualified by existence. This is the first level of possibility, and it belongs to the world of spirits. The world nearest in relation to the divine level is therefore the world of spirits. It, not the world of meanings, is the first of the originated worlds, since it possesses existence in its own right, appears according to its determination, and gives rise to the effusion of governing properties and the production of effects. The world of meanings does not do so.
+
+You may ask under what consideration the latter is called a world. We reply: under one of the two aspects necessarily belonging to attributes as attributes, namely that by which they differ from the essence. Since they have no existence under this aspect, it is not counted among the existing worlds. Its status as a world is a matter of consideration alone.
+
+Next is the imaginal world, in which meanings appear through the forms of figures. This additional meaning introduces another kind of composition. Then comes the world of bodies, to which all the foregoing accrues together with being spatially situated and occupying a location. This is the furthest extent of composition, and through it the manifestation of existence is completed: nothing is more intensely manifest than sensible things. Because it reaches the utmost possible multiplicity, it becomes suitable as a locus for existential unity, for what passes its limit reverses into its opposite. When the first body—the mighty Throne, the Throne of the All-Merciful—is brought into existence, existential self-disclosure reaches its completion. This is the station of istiwāʾ in divine speech. One of the linguistic meanings of istiwāʾ is completion, as when one says that a man has attained full stature, meaning that his growth has reached its end and his youth is complete.
+
+There are thus three worlds together with the level of disclosure embracing the two determinations already mentioned: four levels in all. The fifth, comprehending them all, is the human level. These determinate levels are called loci of disclosure, places of display, and horizons of rising. Levels without qualification number six, since they include the hiddenness of identity and nondetermination; here only the determinate levels are counted. The Breath of the All-Merciful pervades and manifests according to these five. The principal articulatory sources of human letters likewise number five in this account: the inner heart, chest, throat, palate, and teeth [with lips reported as an alternative]. They correspond to the levels within the Breath of the All-Merciful.
+
+This order of bringing into existence is also observed in divine speech and the heavenly revealed Book. Its first level is a letter, then a word, then a verse, then a sūra, and the Book comprehends them. The principal revealed books are likewise four: Torah, Gospel, Psalms, and Furqān; the Qurʾān comprehends them.
+
+The same applies to other intellectual or external beings, universal or particular. Intellectual universals have four levels whether considered without hierarchical order—genus, differentia, property, and common accident, with species comprehending them—or in order: highest, intermediate, lowest, and isolated genus, with species comprehending them. Likewise, external particulars contain four natures, with temperament as the fifth. If those natures combine according to the existential order, the temperament is balanced and completely blended; otherwise it is deficient and incompletely blended. Priority in that order belongs to heat, then moisture, then cold, then dryness. All this arises from the essence's pervasion through the four first names. There are important mysteries and subtle points of great value here, but this book is not the place for their detailed exposition. We have indicated a few in outline; reflect on them and, God willing, further ones will become apparent.
+
+Each of these worlds has detailed subdivisions according to its particular levels and the relations between their governing properties. The world of spirits, for example, contains the levels of immaterial intellects, celestial souls, and human spirits. Each contains particular levels with their own details and governing properties. The same is true of the imaginal world and the world of bodies. But the disciplines charged with explaining all this are natural philosophy and what precedes it. The author therefore refers their discussion to those disciplines.
+
+### Textual and translation notes
+
+1. An evident duplicated phrase at the opening of the electronic source is rendered once in English and retained in the Arabic transcription. This is not represented as a manuscript-supported deletion.
+2. The attribution of the act through the essence, the second determination in knowledge, and mediated bringing into existence are preserved as distinct considerations. The author’s account of the newly independent product is not silently equated with the earlier denial of externally separated quiddities.
+3. The displayed الحروف الوجودية has الوجوبية as a reported alternative. ‘Existential letters’ follows the base; ‘letters of necessity’ would be materially different.
+4. The list distinguishes Furqān from Qurʾān in its symbolic scheme. The translation retains that distinction rather than correcting the list to a conventional enumeration of scriptures.
+5. The physiological and cosmological examples belong to the medieval account. The list of articulatory sources and the hot/moist/cold/dry order are not presented as current anatomy, medicine, or physical science.
+6. The word جنس المفرد is rendered isolated genus in the traditional classification. No claim is made that all the proposed fivefold correspondences are independently demonstrated.
+7. Page 146, absent from the earlier span-only extraction, is restored from its prose paragraph element. Modern explanatory notes are excluded.
+8. Reported electronic apparatus strings, not independent manuscript readings: ( فيه - خ ل ); ( بوجوده الخاص - خ ); ( المستقل - خ ); ( المفعول - خ ); ( مفاتيح - خ ); ( مرتبة - خ ); ( كونه - خ ); ( تعيُّنها - خ ); ( الوجوبيَّة - خ ل ); [ و ماهيّاتا - ظ ]; ( انَّما - خ ); ( رشده - خ ); ( الشفتان - خ ); ( و خارجيَّة - خ ل ); ( و جزئيَّة - خ )
+
+---
+
+## SH-034 — Six objections: possibility, causation, manifestation, worlds, imagination, and perfection
+
+**Source:** A, printed pp. 150–154
+
+https://ablibrary.net/book_content/b/17638/346?lang=ar
+
+### Commentary — Arabic
+
+أقول : بعد تحقيق ما هو بصدده حسبما التزمه من البيان بأوثق البراهين و تزييف ما يمكن ان يشوّش ساير الطباع و الأذهان من مذاهب المخالفين و دفع ما يرد على ذلك من الشبه المانعة لظهور الحق كما هو على الطالبين ، يريد ان يتعرّض لدفع ما يرد على امّهات أصولهم و معاقد قواعدهم من الشكوك الكاشفة عن كُنه تحقيقاته و الأسئلة المستجلية لغاية تدقيقاته ، إذ به ينحلّ عقود القيود المتراكمة في العقايد ، و ينحسم مواد الحجب الحاجزة للبصائر عن ادراك الحقائق .
+و تقرير ذلك ان ما ذكرتموه في تحقيق هذه المسألة غير مستقيم من وجوه ستَّة :
+اما الأول ، فلأنَّ القول بالإمكان على ما قلتم باطل ، فان الإمكان سواء كان صفة وجوديَّة أو معنى نسبيّا ، لا بدَّ له من محل يقومه ، و ليس هاهنا شيء يصلح لذلك .
+اما الوجود ، فلكونه واجباً بالذات ، فلا يمكن اتّصافه بالإمكان ، و اما الماهيّات التي هي من النسب و الإضافات الناشئة من الصفات ، فلانَّها غير مجعولة و لا معلولة عندكم ، لأنها غير موجود بل غير قابلة للوجود ، و الأمر ينحصر فيهما ، فلا شيء يتّصف بالإمكان .
+لا يقال : انما يتمّ هذا لو كان الإمكان من الصّفات الوجودية الحقيقيَّة ، و اما على تقدير كونه اعتبارياً عدمياً ، لا يلزم ذلك .
+فانّا نقول : على تقدير تسليم اعتباريته ، لا بدَّ له من موضوع صادق عليه قابل للوجود ، فان المستحيلات يمتنع اتّصافها بالإمكان ، ضرورة امتناع قلب الحقائق ، و كان قوله : « بل غير قابلة » إشارة إلى دفع هذا السؤال .
+
+و اما الثاني ، فلان القول بالإيجاب و الاقتضاء ايضاً ظاهر البطلان ، فإنهما من المعاني النسبيَّة التي لا يتصور تحققها بها - الا بين الأمور المتغايرة ، فإذا كان ما هو الموجود ، ذاتاً كان أو صفة ، واحداً ، و ما سواه من المعاني الأسمائيَّة و الأعيان الثبوتية على ما تقرّر عندكم ، عدم محض ، فحينئذ لا يتصوَّر لهما معنى هاهنا ، إذ لا يمكن قيام المعاني النسبيَّة بموضوع واحد ، و هو ظاهر لا حاجة في بيانه إلى التطويل .
+و اما الثالث ، فلان القول بالظهور هاهنا ممّا لا يتصوَّر له معنى أصلًا ، لأنَّ المراد بالظهور اما ان يكون الوجود نفسه ، أو الأعيان التي هي مبادى نسبه و إضافاته ، و على التقدير الأول ، اما ان يكون هو الوجود المطلق أو المقيّد ، و ذلك القيد اما ان يكون قيداً مشخِّصاً متعيّناً خارجياً ، أو مخصِّصاً منُوعاً عقلياً ؟ و لا سبيل إلى شيء من ذلك اما الأول ، و هو ان يكون المراد به هو الوجود المطلق نفسه ، فانَّ اقتضائه الظهور لم يحتج إلى بيان - بطلان - زايد ، إذ الشيء لا يقتضي نفسه . و اما الثاني ، و هو ان يكون المراد به الوجود المقيَّد ، فان أريد به القيود المشخِّصة الواقعة في مرتبة الكون ، فمن البيِّن ، انّ شيئاً من جزئي المقيد - حينئذ - لا يقبل الجعل و التأثير ، كما أشير إليه من قبل في طى البرهان المذكور ، من انّ الوجود لا يقبل التأثير - التأثُّر - و كذا الأمور العدمية ، لأن العدم ايضاً غير قابل للتأثير ، فلا يتصوَّر فيهما معنى الظهور المسبوق بالخفاء المستدعى لذلك ، و هذا الكلام في المجموع من حيث هو مجموع ، فان ما يقوم بشيء لا يقبل الوجود ، فانّه لا يقبله ايضاً بالضرورة ، و ان أريد به القيود المخصِّصة الكلية اللاحقة للوجودات في العقل التي بها يصير الوجود عقلياً ، فان معروض هذه القيود
+
+يمتنع ان يقبل شيئاً من الوجودين ، لاستحالة اجتماع المتماثلين كاجتماع المتنافيين ، و أشار إلى إبطال هذا القسم بقوله : « و اما الوجود العقلي فانّه لا يقبل الوجود العيني و لا العقلي . . . » و كذا القيود المخصِّصة ، فانّك عرفت القول المحقق فيما عدا الوجودين من القيود المخصِّصة ، ان أمرها راجع إلى العدم ، و هو لا يقبل الوجود ، و هذا الكلام في المجموع المركب من القيد المخصص الكلى و المقيِّد ، للزوم تركُّب الشيء من الوجود و غيره ، و قد مر الكلام فيه غير مرَّة ، فلا حاجة إلى الاعادة .
+و اما ان أريد بالظهور المذكور ، اعتبار الأعيان التي هي عبارة عن إثبات الماهيّات و النسب و الإضافات من حيث هي مغايرة للوجود ، فقد عرفت ما فيه ، من عدم قابليتها للوجود و الظهور ، فلا حاجة إلى مزيد تقرير و توضيح .
+و اما الرابع ، فهو ان القول بالفرق بين ما ذكرتم من عالم المعاني و عالم الشهادة ، غير معقول ، و كذلك ساير العوالم على مقتضى قواعدكم ، و ذلك لأن الوجودات الخاصَّة في جميع العوالم واحدة لا اختلاف فيها عند التحقيق ، إذ لو وجد الاختلاف ، فمبدؤه اما نفس طبيعة الوجود الذي هو كالمحل و الموضوع بالنسبة إليها ، و اما الأعيان الثابتة التي هي الإضافات و النسب العارضة للوجود ، أو الهيئة الاجتماعيَّة الحاصلة بينهما ، إذ الأمر هاهنا منحصر في الأمور الثلاثة ، و لا سبيل إلى شيء منها .
+اما الأسماء و الصور النوعيَّة و الإضافات و النسب العقلية ، و بالجملة الأعيان الثابتة التي هي من عوارض الوجود ، فلانّها من حيث هي اعيان - ثابتة - أي بقطع النظر عن معنى الوجود ، معدومات محضة ، فلا يصلح لأن يكون مبدأ لشيء .
+و اما الوجود المطلق ، فلانَّه هو الوحدة الحقيقيّة ، كما تقرّر ، فكيف
+
+يكون مبدأ الاختلافات المتكثرة .
+و اما الهيئة الخارجيَّة ، فلان حكمها ايضاً حكم ساير العوارض في كونها عدما محضاً ، فلا اختلاف في شيء منها ، لا بحسب الموضوع و المحل الذي هو الواحد بالذات ، و لا بحسب المفهوم الاسمائى ، و لا بشيء من العوارض .
+و اما القول بالإجمال و التفصيل ، فمجرّد العبارة و محض اللفظ لا طائل نحته هاهنا ، الاشتراك العالمين بل ساير العوالم في الموضوع الذي يستلزم تلك الماهيّات و الصفات - و يُقوِّمها - و ليس في احدها شرط تحقق به دون الآخر ، و لا مانع ينفيه ، لما تقرر ، ان ما سوى الموضوع الواحد عدم صرف .
+و اما الخامس ، فهو ان القول بوجود عالم يسمّى عالم المثال ايضاً من الخيالات الفاسدة و العبارات التي لا طائل تحتها ، و كيف لا ، و قد ذهب إلى نفيه جمهور المشّاءين ، و احتجّوا على ذلك بحجج قويَّة و براهين قاطعة ، قد أثبتوها في كتبهم ، و لا شك ان ما ذهب إليه ، مثل هذا الجمُّ الغفير و أثبتوها بالبراهين القاطعة ، يمتنع ان يكون الواقع خلافه ، و الا ، ارتفع الأمان عن اليقينيات و افادة البراهين مطلقا .
+و اما السادس ، فهو ان القاعدة المقرَّرة عندكم القائلة ، بأن ما يكون أبعد من منبع الوجود و أقرب إلى طبيعة الإمكان الصرف و العدم ، فان ظهور الوجود فيه يكون اتمّ و اكمل ، بعيدة عن الحق جداً ، و الأول أجود ، ان يجعل الأمر على العكس ، إذ البديهة شاهدة بان القرب ، اىُّ نوع كان ، هو المقتضى لظهور اثر احد المتأثِّرين المتغايرين في الآخر ، و البعد هو المباين - المنافى - لذلك ، كما يتبيَّن فيما نحن بصدده ، فان ما يكون أبعد عن الفساد و التغيّر و الفناء ، مثل العقول و النفوس القريبة إلى المبدأ ، لا شكَّ
+
+ان احكام الوجود فيه اكثر و ظهور خاصّته فيه أتم و اكمل ممّا يتطرَّق إليه الكون و الفساد ، و لا يبقى على نهج مستمرّ ساعة ، كعالم الحس و ما يجاوره من عالم الصور ، لبعده عن المبدأ .
+
+### Commentary — English
+
+I say: having established his purpose through the firmest demonstrations, as he undertook to do, refuted opposing doctrines liable to unsettle minds, and answered doubts obstructing the truth's manifestation to students, the author now turns to objections against the fundamental principles and crucial foundations of this account. Such questions reveal the depth and precision of his investigations: through them the knots of accumulated restrictions within beliefs are loosened, and the veils preventing inward vision from apprehending realities are removed. The objection is that the account given of this question is unsound in six respects.
+
+First, on this account the assertion of possibility is invalid. Whether possibility is a positive attribute or a relational meaning, it must have a subject sustaining it, yet nothing available can serve that role. Existence cannot, because it is intrinsically necessary and so cannot be qualified by possibility. Quiddities, understood as relations and correlations arising from attributes, cannot either: on your account they are neither made nor caused, because they do not exist and indeed cannot receive existence. The alternatives are exhausted, so nothing is qualified by possibility.
+
+It should not be replied that this follows only if possibility is a positive real attribute, not if it is a privative conceptual consideration. Even granting the latter, possibility must have a subject to which it is truly predicated and which can receive existence. Impossible things cannot be qualified as possible, since that would reverse their realities. The author's words ‘indeed, incapable of receiving existence’ anticipate this reply.
+
+Second, necessitation and requirement are also plainly invalid. These are relational meanings which can be realized only between distinct things. If what exists, whether essence or attribute, is one, while everything else—the meanings of the names and the fixed entities—is sheer nonbeing, as you maintain, these relations have no conceivable meaning here. Relational meanings cannot subsist in one subject alone. This is evident without lengthy explanation.
+
+Third, manifestation here appears to have no conceivable meaning. What is intended must be either existence itself or the entities grounding its relations and correlations. In the former case it must be unrestricted or qualified existence. The qualification must then either be an extramental individuating determination or an intellectual specification producing a kind. None of these alternatives works. If manifestation means unrestricted existence itself, the absurdity of existence's requiring manifestation needs no further explanation: a thing does not require itself.
+
+If qualified existence is intended, and the qualifications are individuating determinations occurring in the cosmic realm, neither component of the qualified whole can receive making or causal influence. As already indicated in the demonstration, existence cannot be acted upon, nor can privative matters, since nonbeing too cannot receive influence. Manifestation preceded by hiddenness, which requires such influence, is therefore inconceivable in either. The same holds of the aggregate as aggregate: what depends on something incapable of receiving existence is itself incapable of receiving it.
+
+If the qualifications are instead universal intellectual specifications accruing to existences and making existence intellectual, their subject cannot receive either mode of existence. Two identical instances cannot be combined any more than incompatible ones can. The author's words ‘As for intellectual existence, it receives neither external nor intellectual existence’ reject this alternative. The specifying qualifications fare no better: apart from the two modes of existence, these qualifications have been shown to reduce to nonbeing, which cannot receive existence. The same applies to the aggregate of the universal specification and what it qualifies, since that would compose a thing out of existence and something else. This has repeatedly been discussed and need not be repeated.
+
+If manifestation means the entities understood as the affirmation of quiddities, relations, and correlations insofar as they differ from existence, their incapacity for existence and manifestation has already been explained. No further elaboration is needed.
+
+Fourth, on your principles there is no intelligible distinction between the world of meanings and the witnessed world, or between the other worlds. Particular existences throughout them are in truth one, without difference. Any difference would have to arise from the nature of existence, which serves as their receptacle and subject; from the fixed entities, which are relations and correlations accruing to existence; or from the collective configuration arising between the two. These are the only possibilities, and none is viable.
+
+The names, specific forms, intellectual relations and correlations—in short, fixed entities accruing to existence—are sheer nonentities insofar as they are fixed entities, abstracting from existence. They cannot therefore ground anything. Unrestricted existence is genuinely one, as established, so how can it ground multiple differences? The external configuration has the same status as the other accruing features: sheer nonbeing. There is thus no difference in subject or receptacle, which is intrinsically one, in the meaning of the names, or through any accruing feature.
+
+Speaking of undifferentiation and differentiation is therefore empty wording here. Both worlds—indeed, all worlds—share the subject that requires and sustains those quiddities and attributes. None has a condition of realization absent from another, nor an obstacle excluding it, since everything other than the one subject has been declared sheer nonbeing.
+
+Fifth, asserting a world called the imaginal world is likewise a corrupt imagining and an empty expression. Most Peripatetics deny it and have recorded powerful arguments and decisive demonstrations against it in their books. What so great a multitude has maintained and established by conclusive demonstrations cannot be contrary to reality. Otherwise confidence in certainties and in the probative force of demonstration would disappear altogether.
+
+Sixth, your established principle—that the further something is from the source of existence and the nearer it is to sheer possibility and nonbeing, the more complete and perfect existence's manifestation within it becomes—is very far from the truth. It would be preferable to reverse the account. Self-evidence shows that proximity of any kind allows the effect of one of two distinct interacting things to appear in the other, whereas remoteness opposes this. In the present case, things farthest from corruption, change, and cessation, such as intellects and souls near the Principle, unquestionably display more of existence's governing properties and manifest its distinctive character more completely. Things susceptible to generation and corruption, remaining on no steady course even for an hour, such as the sensible world and the neighbouring world of images, are remote from the Principle and display it less completely.
+
+### Textual and translation notes
+
+1. All six positions in this section are objections being formulated, not Ibn Turka’s final conclusions. In particular, the appeal to the numerical majority of Peripatetics and the denial of the imaginal world are the opponent’s arguments.
+2. The third objection preserves its nested alternatives and the distinction between unrestricted existence, qualified existence, and quiddities considered apart from existence. It has not been compressed into a generic rejection of manifestation.
+3. The source fluctuates between تأثير and تأثر and between related forms for being made. English distinguishes acting from receiving an effect where required by the local argument; the displayed forms and reported readings are retained separately.
+4. The final comparison concerns degrees of manifestness, not simply rank or intrinsic nobility. Its answer follows in SH-037.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( عن - خ ل ); ( فلأنَّ - خ ); ( الجعليَّة - خ ل ); ( و التأثُّر - خ ); ( للتأثُّر - خ ); ( هكذا - خ ); ( هكذا - خ ); ( لأن الموجودات - خ ); ( للاختلافات - خ ل )
+
+---
+
+## SH-035 — Possible determinations, accidental existence, and the recovery of making and causation
+
+**Source:** A, printed pp. 154–158
+
+https://ablibrary.net/book_content/b/17638/350?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا شروع في هدم تلك الإشكالات و دفع تلك الإيرادات ، مع تحقيق أصولهم و تأسيس قواعدهم ، بحيث لا يوهنها
+
+الشكوك ، و لا يزلزلها الشبه ، فاشار إلى جواب الشك الأول منها ، بانَّ موضوعات معنى الإمكان و متعلِّقاته ، من المجعوليَّة و المعلوليَّة و الحدوث و غيرها ، انّما هي التعيُّنات النسبيَّة ، كما سبق تحقيق هذا الكلام في المقدمة ، من ان الإمكان عبارة عن الوجود بنسبته إلى المعلومات و لا شكَّ ان تلك التعيُّنات عن ظاهر العلم باعتبار تمايزه عن الوجود بنسبة إلى المعلومات ، و لا شك ان تلك التعيُّنات التي هي المعلومات ، انَّما هي أحوال الوجود و صفاته التي لا يدرك الوجود الا بحسبها ، إذ الإدراك انّما وقع من الوجود على صفاته و أحواله اللاحقة له في مراتبه المستهلكة ، احكام إطلاقه و وحدته فيها ، و لا شك انها من حيث هي أحوال و اعراض و عوارض للوجود ، يستدعى المقارنة ، فكيف يقال : انّها غير قابلة للوجود مطلقا ؟ فإنها عند مقارنتها للوجود و مقارنة الوجود ايّاها ، ضروريَّة الوجود . نعم انها من حيث أنفسها بقطع النظر عن معروضها و مقارنتها له ، لا يستحق الوجود ، و لا العدم ايضاً ، بل انما يقتضي بهذا الاعتبار عدم الاستحقاق لشيء منهما ، و هذا هو مفهوم الإمكان . فالتعيُّنات النسبيَّة التي هي موضوعات بالطبع لهذا المفهوم ، لا نسلّم انّها غير قابلة للوجود ، فانَّ مقتضى طبائعها عدم استحقاقيَّة الوجود ، لا ، استحقاقيَّة العدم . و ذلك لأنّ تلك الأحوال عند مقارنة الوجود ايّاها و مقارنتها للوجود ، يصير موجودة بالضرورة ، فلو كان عدم الاستحقاقيَّة مطلقا ، مقتضى طبايعها ، للزم صيرورة الممتنع الذاتي موجوداً بضرورة الوصف ، و ذلك بَيِّن الاستحالة ، فظهر انّ عدم استحقاقيَّة الوجود و العدم ، هو مقتضى طبايع التعيُّنات ، و هذا معنى قوله : « انّ موضوعات الإمكان و متعلّقاته التعيُّنات » ، و علم ايضاً ، ان التعينات من حيث هي هي ، و ان كان مقتضى طبايعها عدم الاستحقاقية ،
+
+لكن من حيث انَّها أحوال للوجود و صفاته ، يقتضي بالطبع ان يكون الوجود في مرتبة من مراتبه موضوعاً لها ، فان من التعيُّنات ما يكون موضوعه الطبيعي ، الوجود الخارجي ، ضرورة كونه من الاحكام المختصَّة بهذه المرتبة ، و منها ما يكون موضوعه الطبيعي ، الوجود العقلي ، لاختصاصة بمرتبة العقل ، و منها ما يكون موضوعه بالطبع ، الوجود المطلق . فعلم انّ التعيُّنات بهذا الاعتبار ضروريَّة الوجود ، نعم انّها غير موجودة بوجود يكون نفسها أو مقوِّماً من مقوِّماتها ، فإذا قيل : « انَّها غير قابلة للوجود » انَّما يكون بهذا المعنى ، لا غير .
+قوله : و لو كانت الماهيَّة إلى هاهنا مقدمات لتمهيد الجواب ، و هذا شروع في دفع مقدمات السائل ، من ان الماهيّات عندكم غير مجعولة و لا معلولة ، لكونها غير موجودة ، بل غير قابلة للوجود ، فكيف يكون موضوعات للإمكان ؟
+فأجاب : بانّه لو كان الماهيّات من حيث هي هي ، غير مجعولة و لا معلولة بالمعنى الذي عرفته آنفاً ، فإنه لا يلزم ان يكون الماهيات المنضمُّ إليها الوجود الموجودة لمقارنة الوجود ايّاها ، غير مجعولة و لا معلولة ، و ذلك لأنه إذا صارت بمقارنة الوجود الخارج عن ذاتها موجودة ، فاحتاجت في موجوديتها ضرورة إلى ذلك المقارن الخارجي الذي هو غيرها بالضرورة ، و لا معنى للمعلوليَّة و الجعل سوى الاحتياج في الوجود إلى الأمر الخارجي .
+فلئن قيل : انَّكم قد ذهبتم إلى ان الوجود امر واحد حقيقى ، ما عداه عدم محض و انّ التكثر انّما هو امر عدمى لا تحقق له في نفسه ، فكيف يصح - حينئذ - اعترافكم بما يشعر بتعدد الوجود و ما يستلزمه .
+قلنا : مسلّم ان الوجود امر واحد حقيقى و هو الموجود بالذات ، و الواحد الذي ما عداه عدم محض ، لكن لذلك الواحد أحوال كما عرفت غير مرّة يظهر فيها بحسبها ، و لا يقع الإدراك ، اىُّ ادراك كان ، الا على تلك الأحوال بحسبها ، فان الواحد من حيث هو هو ، لا يعقل و لا يدرك ، فحينئذ ، لو أضيف الوجود إلى المُدرك من تلك الأحوال بحسب ما ظهر فيها من مشاهدة آثاره يكون ذلك الموجود موجوداً بالعرض لا بالذات ، إذ اضافة الوجود إليه انّما هو بحسب توهمه و اعتباره فقط ، إذ الموجود في نفسه لا نسبة فيه ، و النسب الوهميَّة اعتباريَّة لا يقدح في حقيقة الأشياء أصلًا ، فقولهم : التوحيد اسقاط الإضافات ، إشارة إلى هذا المعنى .
+و قوله : و لا يجب ان يكون كل موجود موجوداً بالذات ، إشارة إلى هذا السؤال و الجواب ، و يفهم من تقريره على الوجه المذكور ما يحتاج في إدراكه من عبارة المصنف إلى تأمّل ، فلا تغفل عنه .
+ثمَّ ان ما يضاف إلى الماهيات و ينسب إلى التعيُّنات و ما يحمل عليها من الوجود انّما هو معنى اعتبارى لا حصول له الا باعتبار المدارك إذ ليس له في الخارج عنها محاذ ، كما عرفت فيكون الموجوديَّة المدرك لها من الاعتبارات العقليَّة و لهذا تعرض الصفات السلبيَّة و العوارض العدميَّة .
+و من جعل من المتأخّرين نفس الوجود المطلق من الاعتبارات العقليَّة
+
+فلعلَّه لم يفرق بين الوجود المطلق و بين ما يكون موقع إدراكه من أحواله المستهلكة فيها احكام وحدته و إطلاقه بل التبس على نظره امر القسمين ، فجعل الحقيقة الحقّة بذاتها ، التي هي اصل سائر الحقائق امراً اعتبارياً - فاعرف ذلك - و هذا غير بعيد منهم ، فان من رام باهتداء بصيرته الحولاء ، ان يحوم حول مثل هذا الحمى ، كمن ركب متن عمياء ، فلا غرو ان يخبط خبط عشواء .
+
+### Commentary — English
+
+I say: this begins the dissolution of those difficulties and the answering of those objections, while establishing the principles and foundations so that doubts cannot weaken or shake them. The answer to the first is that the subjects of possibility and of its associated determinations—being made, caused, originated, and the like—are relative determinations. As explained in the prolegomenon, possibility is described in relation to objects of knowledge. The displayed wording speaks of existence in relation to the known, then of the manifest aspect of knowledge distinguished from existence by its relation to the known [the clause is textually disordered; see note].
+
+Those determinations which are known are the states and attributes of existence, according to which alone existence is apprehended. Whatever cognition reaches of existence is its attributes and states accruing at levels where the governing properties of its unrestrictedness and unity are absorbed. As states, accidents, and features accruing to existence, they require conjunction with it. How, then, can they be called wholly incapable of existence? When they are conjoined with existence and existence with them, they necessarily exist. Considered in themselves, apart from their subject and conjunction with it, they deserve neither existence nor nonbeing. Under that consideration they require only the absence of an intrinsic claim to either. This is the meaning of possibility.
+
+We therefore do not concede that the relative determinations naturally serving as subjects of possibility cannot receive existence. Their natures require no intrinsic entitlement to existence, not an intrinsic entitlement to nonbeing. When existence accompanies those states and they accompany it, they necessarily become existent. If their natures intrinsically required nonbeing without qualification [the reported alternative reading], something intrinsically impossible would become existent through the necessity of an attribute, which is plainly impossible. It is therefore the absence of an intrinsic claim to either existence or nonbeing that belongs to the natures of determinations. This is the meaning of ‘The subjects of possibility and what pertains to it are determinations.’
+
+Although determinations as such require this absence of intrinsic entitlement, as states and attributes of existence they naturally require existence at some level to serve as their subject. Some have external existence as their natural subject because they are judgments specific to that level. Others have intellectual existence as their natural subject because they belong specifically to the intellectual level. Still others naturally have unrestricted existence as their subject. Under this consideration the determinations necessarily exist. Yet they do not exist through an existence identical with them or constituting one of their components. When they are said to be incapable of existence, that is the sense intended and no other.
+
+Up to this point the author has prepared the answer. His words ‘Even if quiddities…’ begin to reject the questioner's premises: that quiddities are neither made nor caused because they neither exist nor can receive existence, and therefore cannot be subjects of possibility. The answer is that, even if quiddities considered simply as themselves are neither made nor caused in the sense just explained, it does not follow that quiddities to which existence is joined, and which exist through that conjunction, are neither made nor caused. Once they become existent through the conjunction of existence extrinsic to their own essence, they necessarily depend for their existence on that accompanying factor, which is distinct from them. Being caused or made means precisely dependence in existence on an extrinsic factor.
+
+An objection may be raised: you have maintained that existence is one reality, that everything besides it is sheer nonbeing, and that multiplicity is a privative matter with no realization in itself. How can you now admit anything suggesting multiple existences or what follows from such multiplicity? We reply that existence is indeed one reality, existent through itself, and that everything outside this one is sheer nonbeing. But the one has states, as repeatedly explained, in which it manifests according to their character. Every cognition reaches those states according to that character. The one simply as itself is neither conceived nor apprehended.
+
+If existence is attributed to an apprehended state on the basis of the effects witnessed there, that existent is existent incidentally, not through itself. The attribution depends only on the perceiver's estimation and consideration; what exists in itself contains no relation. Relations as considered by estimation do not alter the realities of things. The saying ‘Divine unity is the removal of attributions’ points to this meaning. The author's ‘Not every existent must exist through itself’ indicates this objection and answer. The explanation given makes apparent what requires reflection in the author's wording; do not overlook it.
+
+The existence attributed to quiddities, related to determinations, and predicated of them is thus a conceptually considered meaning, occurring only through the consideration of the cognitive faculties. As you have learned, it has no corresponding counterpart outside them. Their apprehended existentness is therefore an intellectual consideration and can also attach to negative attributes and privative features.
+
+Perhaps later thinkers who made unrestricted existence itself an intellectual consideration failed to distinguish it from the states in which they apprehend it, where the properties of unity and unrestrictedness are absorbed. Confusing the two, they treated the reality that is true through itself and grounds all other realities as a merely considered matter. Understand this. Such a mistake is unsurprising: someone who, guided by cross-eyed inward sight, attempts to approach this sanctuary resembles a rider mounted upon blindness, stumbling about at random.
+
+### Textual and translation notes
+
+1. The opening contains a visibly disordered/repeated construction around الوجود بنسبته إلى المعلومات and ظاهر العلم باعتبار تمايزه عن الوجود. The English reports both elements and marks the crux, rather than silently rewriting the passage to match a preferred doctrine.
+2. The argument distinguishes not intrinsically deserving existence from intrinsically deserving nonbeing. At فلو كان عدم الاستحقاقية the source reports استحقاقية العدم; the English explicitly uses the latter because the impossibility argument requires it. This is a reported textual preference, not a new manuscript finding.
+3. The reply restores making and causation for quiddities qualified by existence, while distinguishing them from quiddities taken in themselves. That change of consideration is central to the apparent tension with SH-030.
+4. ‘Accidentally/incidentally existent’ translates موجود بالعرض, while the reality existing through itself is موجود بالذات. This is not automatically identical with the categorical distinction between accident and substance.
+5. The final polemical images are the commentator’s, not the translator’s assessment of later philosophers.
+6. Reported electronic apparatus strings, not independent manuscript readings: ( حلِّ - خ ); ( عدم الاستحقاقية لشيء منها - خ ل ); ( استحقاقيَّة العدم - خ ); [ الماهيّات - ظ ]; ( الخارج - خ ); ( و يستلزمه
+
+- خ ل ); ( يضاف - خ ); ( فيه - خ ); ( هي - خ ل ); ( المدركة - خ ل )
+
+---
+
+## SH-035-B — Manifestation is determination, not existence produced from nothing
+
+**Source:** A, printed pp. 158–160
+
+https://ablibrary.net/book_content/b/17638/354?lang=ar
+
+### Additional ancestral quotation after QT-035
+
+« و القول بالظهور هاهنا انّما يعنى به صيرورة المطلق متعيّناً بشيء من التعيُّنات ، و قد عرفت ان متعلّقات الإمكان بالطبع هي التعيّنات » .
+
+Speaking of manifestation here means unrestricted reality's becoming determined through a determination. You have learned that what naturally bears possibility is the determinations.
+
+### Commentary — Arabic
+
+أقول : هذا إشارة إلى ما ينحلّ به الشكَّ الثاني و الثالث ، و ذلك انّ مرادهم ، بلفظ الظهور هنا ، ليس معنى الوجود ، بان يكون الشيء معدوماً فوجد ، و لا ان يكون مخفياً عن المشاعر الحسِّية ، فظهر ، بل المراد بقول الظهور هاهنا ان الهويَّة المطلقة ، لما يلزمها من الوحدة الحقيقيَّة الصرفة التي تأبى اعتبار النسب و الإضافات ، تنافي انتساب معنى الظهور و ما يجرى مجراه إليها ، لما عرفت من اقتضائه التكثُّر حتى لو فرض ان تكون معروضة لأحد المتقابلين ، و ذلك بعد ملاحظة نسبة التقابل ، فانّما ينسب إليه الخفاء ليس الا كما عبَّر عنه لسان الشريعة بقوله : « كنت كنزاً مخفياً » و ذلك لما في معناه من اعتبار عدم الظهور الذي هو عبارة عن عدم الكثرة ، و هذا انَّما يكون بعد تنزُّلها عن صرافة إطلاقها و اعتبار النسب فيها ، فانَّه لا اعتبار للنسبة أصلًا في تلك الحضرة كما عرفت غير مرَّة ، فحينئذ ، ظهورها انما يكون بتنزُّلها عن
+
+صرافة إطلاقها و وحدتها ، إلى الانتساب بالتقييدات و الانصباغ بكثرة تعيُّناتها ، فان الحقائق انّما تظهر ، بمقابلاتها ، و ذلك لأن الظهور عند التحقيق ، هو ان يتصوَّر الظاهر بصورة اثره ، فلا بدَّ هاهنا من متأثِّر قابل في مقابلته حتى يؤثر فيه و يتأثر منه ، فيظهر بصورته و يجعله مظهراً له ، و لو تأمَّل متأمّل ، يجد هذا الحكم مطرداً في جميع المراتب حتى في المحسوسات ، فان اشعَّة الشمس مثلًا ما لم يصل إلى جرم كثيف يصلح لأن يكون مقابلًا لها و متأثِّراً عنها ، لا يؤثّر فيه و لا يظهر بصورته من الألوان و الاضواء ، فان الأجسام اللطيفة الشفافة ليست قابلة للاضاءة و التنوير ، و كذلك في الطبايع ، فانّه ما لم يحصل بينها فعل و انفعال ، لم يتصوَّر ان يظهر الفاعل بصورة منفعلة حتى يحصل امر ثالث غير الفاعل و المنفعل ، فيكون ذلك نتيجة الامتزاج ، و الا يكون ، امتزاجاً عقيماً فاسد .
+ثمَّ ان التعيُّنات على ما عرفت ، لما كانت هي المتعلّقات بالطبع للإمكان ، فيكون معدومات بالذات ، و يصلح - حينئذ - ان يكون مقابلات للوجود المطلق حتى يتأثّر منه فيظهر بصورتها .
+فان قلت : كيف يكون التعيّنات معدومات بالذات ، فإنها انّما يكون كذلك لو كانت مقتضية للعدم ، و قد تقرّر انّها في ذاتها لا يقتضي الوجود و لا العدم .
+قلنا : عدم اقتضائها الوجود ، يكفى في كونها معدومات بالذات ، لأن تلك التعيُّنات إذا لم تكن علَّة مقتضية للوجود ، يكون معدومات بالنظر إلى ذواتها ، ضرورة ان عدم علَّة الوجود كاف في علّية العدم ، و ان كانت بالنظر إلى الخارج من ذواتها ، موجودات ، لكن إذا قطعنا النظر عن ذلك الخارج ، فانَّما يستحق العدم ، و هذا معنى قولنا : ان العدم ذاتى للممكن .
+
+و إذا تقرّر هذا ، ظهر اندفاع الشبهتين .
+و اما الثانية ، فلان الإيجاب و الاقتضاء على هذا التقدير انّما يكون بحسب هذه التعيُّنات الامكانية التي هي المظاهر و المجالى للحقيقة ، و ذلك ظاهر لا حاجة إلى بيان زايد .
+و اما الثالثة ، فلانّا نقول ، انّ ما نسب إليه الظهور ، هو تلك التعيُّنات .
+فان قلت : قوله : التعينات معدومة صرفة .
+قلنا : انّما يكون كذلك ، لو اعتبر التعيُّنات من حيث انّها هي تعيّنات فقط ، و اما إذا اعتبر من حيث انها أحوال للوجود مقارنة له و مظاهر يظهر بها ، فلا ، فان تلك التعيُّنات مأخوذة تارة من حيث انها كثرة حقيقيَّة ، و حينئذ ، يكون معدومات صرفة ، و معتبرة اخرى من حيث انّها معروضة للوحدة ، و بهذا الاعتبار موجودة ، و حينئذ . يصلح لأن ينسب إليها الظهور و غيره من المعاني الوجوديَّة المقتضية لأن يكون محال موجودة ، كالايجاب و الاقتضاء و غيرهما .
+
+### Commentary — English
+
+I say: this indicates how the second and third difficulties are resolved. Manifestation here does not mean that a thing was nonexistent and then existed, nor that it was hidden from the senses and then became perceptible. Rather, absolute identity entails pure genuine unity, which excludes the consideration of relations and correlations. It therefore does not admit the attribution of manifestation and similar meanings, since these entail multiplicity, as you have learned. Even supposing it to be the subject of one of two opposed terms, after considering their opposition, only hiddenness would be attributed to it. The language of the revealed law expresses this in ‘I was a hidden treasure’, because hiddenness involves the nonmanifestation that consists in the absence of multiplicity. Even this is considered only after descent from pure unrestrictedness and the consideration of relations, since no relation has any standing in that presence itself.
+
+Manifestation therefore consists in descent from pure unrestrictedness and unity into association with qualifications and the coloration of multiple determinations. Realities become manifest through what stands opposite them. For, in the precise account, manifestation is the manifest reality's assuming the form of its effect. There must therefore be a receptive term opposite it, capable of being affected, so that it acts upon that term, the term receives its influence, and the reality appears through its form, making it a locus of manifestation. Reflection shows this rule operating at every level, even sensible things. Unless the sun's rays reach a dense body capable of confronting and receiving them, they do not act upon it or appear through its form in colours and lights; subtle transparent bodies are not receptive to illumination in the sense intended by this analogy.
+
+The same applies to natural qualities. Without action and reception between them, the agent cannot appear in an affected form so that a third thing distinct from agent and recipient results from their intermixture. Otherwise the mixture is sterile and defective.
+
+Determinations, as you have learned, are what naturally bear possibility. They are therefore nonexistent considered through themselves and can stand opposite unrestricted existence, receive its influence, and allow it to appear through their forms. You may object that determinations could be intrinsically nonexistent only if they required nonbeing, whereas it has been established that in themselves they require neither existence nor nonbeing. We reply that their not requiring existence suffices for their being nonexistent through themselves. If the determinations do not provide a cause requiring existence, they are nonexistent when considered in themselves, since the absence of existence's cause suffices as a cause of nonbeing. They may exist through something extrinsic to their essences, but when that factor is left out of consideration, nonbeing alone belongs to them. This is what we mean when we say that nonbeing is intrinsic to the possible.
+
+The two objections are now answered. The second is answered because, on this account, necessitation and requirement operate in respect of these possible determinations, which are the reality's loci of manifestation and disclosure. This is evident without further explanation. The third is answered by saying that manifestation is attributed to those determinations.
+
+You may object, repeating the author's formulation of the difficulty, that the determinations are sheer nonentities. We reply that this is so only when they are considered merely as determinations. It is not so when they are considered as states of existence, conjoined with it and serving as loci through which it manifests. Determinations are considered at one time as genuine multiplicity, under which consideration they are sheer nonentities, and at another as the subject of unity, under which consideration they exist. They can then be qualified by manifestation and the other existential meanings requiring existent subjects, such as necessitation and requirement.
+
+### Textual and translation notes
+
+1. The source begins this separate explanation with an additional ancestor quotation at p.158. It is preserved separately as a bridge, linked to QT-035, rather than silently inserted into the commentator’s prose or used to renumber the existing 61-unit matn.
+2. The phrase ‘I was a hidden treasure’ is quoted by the commentator. This edition does not certify its status as an authenticated prophetic report.
+3. The answer distinguishes being nonexistent when considered without an extrinsic cause from having a nature that positively requires nonexistence. The apparent tension with the preceding definition of possibility is addressed explicitly, not suppressed.
+4. The optical and intermixture examples express the source’s historical physical assumptions; they are not presented as current scientific findings.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( من اعتبار عدم الظهور عن عدم الكثرة و هذا - خ ل ); ( حتى إلى - خ ); ( متعلّقة - خ )
+
+---
+
+## SH-036 — Distinguishing the worlds by analogy with substances and dependent properties
+
+**Source:** A, printed pp. 161–163
+
+https://ablibrary.net/book_content/b/17638/357?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا تمهيد مقدَّمة يعلم منها جواب الشكّ - الرابع ، و لمّا كان منشأ تلك الشُّبهة ، انّما هو قصور افهامهم عن ادراك ما بَعُد عن المحسوسات من المراتب ، لاعتياد أذهانهم بالمحسوسات و ما يجرى مجراها من المراتب القريبة إليها ، فلا بدَّ من المقدمات المنبِّهة و التمثيلات المعربة لهم تلك المراتب ، عسى ان يتجاوزوا عمّا وقعوا فيه ، من القصور و إذ كان هذا الموضع ممّا ليس للمقدمات البرهانيَّة فيه كثير دخل فانّه ، غاية ما يمكن ان يستفاد منها رفع امتناعه و امكان ثبوته ، اقتصر المصنّف هاهنا على صورة تمثيلية يفيد ذلك ، فان كان المتعلِّم من ذوى الفطانة و الذوق السليم يكفيه ، و الا ، فكثرة المقدَّمات و البراهين ايضاً ليس يغنيه ، و هي انَّ الطبيعة المطلقة التي يشتمل النوع العيني منها و العقلي ، لما اقتضت بمقتضى تلك الحركة الحُبيَّة الوجوديَّة ، الظهور العيني ، تعيّنت بالتعيّن العيني أي المشخصات الخارجيَّة و الأحوال اللاحقة للاعيان في الخارج كالاستقلال بالوجود و قبول فرض الأبعاد و ما يتبعهما ، فلزمتها الصفات اللازمة لتلك الأحوال ، عينيَّة ، كاقتضاء التحيُّز و التشكل و قبول الألوان و الأوضاع و غيرها ، فيحصل حينئذ ، من تلك الطبيعة باعتبار بعض صفاتها ، أي باعتبار ظهورها بحسب بعض أحوالها العينيَّة ، كالجوهر مثلًا ، انواع متعيّنة كاملة الذات ، أي مستقلة
+
+في الوجود غير تابعة لشيء فيه ، يسمّى عندهم بالحقائق المتبوعة . - و باعتبار بعض صفات أخر ، انواع أخر ، عينيَّة غير كاملة الذات ، أي غير مستقلة و باعتبار ظهورها بحسب بعض أحوالها الآخر ، انواع آخر عينيَّة غير كاملة الذات ، أي غير مستقلة في الوجود تابعة بشيء فيه يسمّى عندهم بالحقائق التابعة و الصّور الكاينة ، كأقسام الكم و الكيف .
+و لمّا كان الوجود العقلي من حيث كذلك داخلًا في هذا القسم ، ما تعرض له بالاستقلال ، فحصل للوجود العيني بهذا الاعتبار نوعان مرتّبان في الظهور ، متميِّز كل ما في الظهور الأعلى ، من الحقائق الجوهرية عن كل ما في الظهور الذي يليه و تحته من الصور العرضية .
+إذا عرفت هذا فاعلم ، انّه إذا أمكن ان يحصل للوجود المقيَّد العيني مرتبتان كليتان ، مرتبتان في التابعيَّة و المتبوعية متميز كل ما في المرتبة العليا منه ، عن كل ما في المرتبة السفلى ، فليكن حصول مثله للوجود المطلق الشامل له ، و لما يقابله أَجدر و احرى . فتأمّل هذه النكتة يظهر لك الفرق بين الصورتين ، أي مطلق الوجود بالقياس إلى الوجود المقيَّد العيني ، فيظهر لك الفرق بين العالمين ، فان عالم المعاني هو الوجود المجرَّد عن التعيُّنات الصوريَّة و المشخِّصات العينيَّة ، و ذلك ، لأن حصول الشيء في الكون المطلق ، انّما يكون بحسب الإطلاق ، أي مجرداً عن تعيُّناته العينيَّة و العقلية و المثاليَّة و ساير ما يتبعها من الصّور ، فما يكون في عالم المعاني من الموجودات ، يكون معرَّى عن تلك المشخّصات ، دون ما يكون في عالم الشهادة و المثال منها ، فانّه لا بدَّ و ان يكون محفوفاً بها . فظهر ان الفرق بين عالم المعاني و الشهادة كالفرق بين المطلق و المقيّد من غير فرق ، و ينبغي
+
+ان يفهم ان المطلق هاهنا هو الشامل للعينى و العقلي كما أشار إليه آنفاً في صدر المقدمة ، لا المطلق الحقيقي ، فإنه يمتنع حصول شيء فيه .
+ثمَّ ان هذا الكلام و ان كان في غاية الجهد في هذا المقام ، لكن انَّما يدل على وجود ذلك العالم اجمالًا لا دلالة له على حقيقته أصلًا فلهذا - أحال تحقيق القول فيه إلى الحكمة المنيعة .
+
+### Commentary — English
+
+I say: this prepares a preliminary point from which the answer to the fourth difficulty can be understood. The objection originates in minds accustomed to sensible things and nearby levels, whose understanding therefore fails to apprehend levels remote from sense. They need indicative premises and explanatory comparisons that bring those levels within reach, so that they may pass beyond the limitation at which they have stopped. Demonstrative premises have little role here: at most they can remove an alleged impossibility and show that the proposed reality may be established. The author therefore confines himself to an illustrative case that serves this purpose. It suffices for an intelligent student with sound spiritual taste; for someone lacking these, multiplying premises and demonstrations will not suffice either.
+
+The example is that the unrestricted nature, encompassing both the external and intellectual kinds, requires external manifestation through the existential movement of love already mentioned. It therefore becomes determined by an external determination: extramental individuating factors and states accruing to entities outside the mind, such as subsistence in existence, admitting the supposition of dimensions, and what follows from these. The attributes necessarily accompanying those states are likewise external: occupying space, assuming shape, receiving colours and positions, and the like.
+
+When that nature manifests according to some of its external states, such as substance, there result determinate kinds complete in themselves: independently existent, not dependent on something else for their existence. These are called the realities upon which others depend. Through other attributes, or manifestation according to other states, there result external kinds incomplete in themselves, dependent on something else in existence. They are called dependent realities and occurring forms, such as the divisions of quantity and quality.
+
+Intellectual existence, considered precisely as such, belongs to this latter division, so it is not separately discussed. External existence thus has two kinds ordered in manifestation. Every substantial reality in the higher level is distinguished from every accidental form in the level following and below it.
+
+Now, if qualified external existence can have two comprehensive levels ordered as dependent and independent, with everything in the higher distinguished from everything in the lower, it is still more fitting that unrestricted existence encompassing both it and what stands opposite it should admit a similar ordering. Reflect on this point and the difference between unrestricted existence and qualified external existence will become apparent, and with it the difference between the two worlds.
+
+The world of meanings is existence divested of formal determinations and extramental individuating conditions. A thing's occurrence in unrestricted being corresponds to unrestrictedness: it is stripped of its external, intellectual, and imaginal determinations and the forms following them. The beings of the world of meanings are therefore free of those individuating conditions, whereas those of the witnessed and imaginal worlds must be surrounded by them. The difference between the world of meanings and the witnessed world is thus precisely that between unrestricted and restricted. Here unrestricted must be understood as what encompasses the external and intellectual, as indicated at the beginning of this preliminary account, not the genuinely unrestricted itself, in which the occurrence of another thing is impossible.
+
+Although this explanation carries the inquiry as far as it can go here, it indicates only the existence of that world in outline. It does not disclose its reality. The author therefore refers the detailed investigation to the philosophical work designated here as the elevated wisdom [the wording is textually uncertain].
+
+### Textual and translation notes
+
+1. The source explicitly limits what this analogy establishes: an outline of the world’s existence, not knowledge of its reality. That qualification is retained rather than presenting the passage as an unrestricted demonstration of every cosmological detail.
+2. A sentence describing dependent external kinds is substantially duplicated in the electronic text. It is rendered once in English; both occurrences remain in the Arabic source layer.
+3. The closing clarification distinguishes unrestricted being encompassing the external and intellectual from genuinely unrestricted being. Removing that distinction would materially change the argument.
+4. The final work-description الحكمة المنيعة is transmitted with المتبعة and المتقنة as alternatives. No particular book title has been imposed without independent evidence.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( المقربة - خ ); ( وقفوا عنده - خ ل ); ( و إذا - خ ); ( من المقدمات - خ ); ( للوجود - خ ل ); ( بتلك - خ ل ); ( انواعاً - خ ); ( معيّنة - عينيَّة - خ ل ); ( و يحصل باعتبار - خ ل ); ( انواع متعيّنة ، معيَّنة - خ ); ( الطور - خ ); ( الطور - خ ); ( و ممّا - خ ); ( المتبعة - خ ل ، المتقنة - خ ل )
+
+---
+
+## SH-036-B — Establishing the imaginal world's existence without digressing into its full reality
+
+**Source:** A, printed pp. 163–164
+
+https://ablibrary.net/book_content/b/17638/359?lang=ar
+
+### Additional ancestral quotation after QT-036
+
+« و هكذا الكلام المبسوط في عالم المثال ، فقد أشبعنا القول فيه هناك ، و غرضنا في هذا المختصر تحقيق بحث آخر ، فيكون الشروع فيه من قبيل الفضول » .
+
+The same extended discussion applies to the imaginal world. We have treated it fully there. The purpose of this brief work is to establish another inquiry; embarking upon this subject here would therefore be superfluous.
+
+### Commentary — Arabic
+
+أقول : هذا إشارة إلى جواب الخامس من الأسئلة . و لمّا كان طريق دفع هذه الشبهة ما سلكه في دفع الشبهة الرابعة - بل تلك الصورة بعينها يصلح لأن يدفع بها هذه الشبهة ، فان نسبة عالم المثال إلى عالم الشهادة ايضاً كنسبة المطلق إلى المقيّد بعينه كما سبق بيانه في إثبات عالم المعاني - فذلك التمثيل يكفى في إثبات وجوده الذي هو محل الشبهة ، لكن بيان حقيقته و تحقيق الأمر في ذلك ، فمما هو خارج عن غرض هذه الرسالة ، فيكون الشروع فيه من قبيل الفضول . لأنّ دفع الشبهة يتمّ بدونه ، و لا يتعلَّق به ما انتظم لأجله جملة هذه الأبحاث أصلًا ، إذ غايتها انما هو إثبات التوحيد على ما ذهب إليه اهل الحق من الصّوفيَّة ، و قد فرغ عن بيان ذلك باتمّ وجه ، لكن عند تطبيق امَّهات أصولهم على قواعد اهل النظر ، يتوجَّه شكوك لا بدَّ ان يتعرَّض لبيان دفعها بالاستقلال .
+ثمَّ ، ان من ذلك بيان انّية عالم المثال و هليّته البسيطة ، و لمّا أمكن بيان ذلك بالصورة المثالية التي بيَّن بها انّية عالم المعاني ،
+
+اكتفى بذلك في دفعه . و اما بيان حقيقة شيء من العالمين ، فلمّا لم يتعلق به غرض هذه الرسالة و لا حل الشكوك ، فليس من الأبحاث المحتاج إليها في شيء ، فالتعرّض لها من الفضول .
+
+### Commentary — English
+
+I say: this points to the answer to the fifth question. The method is the same as in answering the fourth; indeed, the same example serves. The imaginal world's relation to the witnessed world is likewise precisely the relation of unrestricted to restricted, as was explained in establishing the world of meanings. That comparison suffices to establish its existence, which is what the objection disputes.
+
+Explaining its reality and investigating its full account lie outside the purpose of this treatise. Undertaking that discussion here would therefore be superfluous. The objection is removed without it, and the purpose for which these discussions are arranged does not depend on it. Their end is to establish divine unity as maintained by the Sufis who possess the truth. That has already been explained in the fullest manner. But comparing their fundamental principles with the rules of reflective investigators gives rise to doubts which must be answered separately.
+
+One of these concerns the imaginal world's existence—the simple question whether it is. Since this can be explained through the same illustrative case that establishes the world of meanings, the author is content to use it in answering the objection. Explaining the reality of either world serves neither the treatise's purpose nor the resolution of these doubts. It is therefore not a necessary part of this inquiry, and addressing it would be superfluous.
+
+### Textual and translation notes
+
+1. This separate أقول follows a short ancestor quotation at p.163. It is retained as an additional explanation linked to QT-036 rather than omitted because the earlier matn numbering has no separate ID for the bridge quotation.
+2. Inniyya and simple haliyya concern the question whether something is; they are distinguished from an account of its ḥaqīqa, what it is. The translation preserves this logical distinction.
+3. The opponent’s appeal to Peripatetic consensus in SH-034 is not reproduced as the commentator’s own conclusion. Here he treats an analogical argument as sufficient for the limited reply and explicitly defers the fuller discussion.
+4. Reported electronic apparatus strings, not independent manuscript readings: ( بتوجُّه - خ ); ( و لا بُدَّ - خ ); ( التمثيليَّة - خ )
+
+---
+
+## SH-037 — Why a lower level can display more comprehensive manifestation
+
+**Source:** A, printed pp. 164–167
+
+https://ablibrary.net/book_content/b/17638/360?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا تحقيق ينحلُّ به الشبهة الأخيرة ، و تقريره ان مرادهم بأكمليَّة المرتبة الأخيرة بحسب ظهور الوجود ، هو تنوُّع وجوه الظهور ، و تعدُّد آثاره ، إذ المرتبة عبارة عن اثر يكون صورة و مظهراً لمؤثرة ، فكلّما كان وجوه ظهور المؤثّر في ذلك الأثر اكثر ، و تنوُّعات قبول آثاره فيه اشمل ، كان اكمل بالضرورة ، و ذلك بيِّن ظاهر في المحسوسات . فان ما يكون مدركاً على سبيل الإجمال بحسب عوارضه الكلية و لواحقه العامّة - ككونه موجوداً و ذا حياة ، و معقولًا على سبيل التفصيل بحسب ماهيّته و حقيقته من حيث ذاتيّاته و مقوِّماته ككونه ذا حس و حركة و نطق . هذا كلّه من حيث حقيقته الكلية ، و اما من حيث تشخُّصه الجزئى و تعيُّنه الخارجي ، فيكون عند غيبته عن الحواس و بعدُه مخيَّلًا بحسب صورته الشخصيَّة ، ككونه ذا كمّ و كيف و وضع معيَّن ، و موهوماً بحسب المعاني الجزئيَّة المتعيَّن هو بها ، ككونه ذا نسب معيَّنة ، مثل انّه اب لشخص و ابن لآخر ،
+
+و محب و محبوب و غير ذلك ، و محسوساً بالحواسِّ الظاهرة عند حضوره و قربه ، لا شك انّ آثار الوجود و خواصّه فيه اكثر ممّا لا يكون مدركاً بجميع هذه الوجوه من المراتب ، و ذلك لاشتمال تعيّنه الواحد الذي هو الغاية القصوى للحركة الايجاديَّة على جميع تنوُّعات الظهور المتكثِّرة ، إذ الظهور باحديَّة جمع الجمع هو الغاية .
+ثم ان ساير الماديات من الجسمانيّات ، و ان كانت مشتملة على جميع الوجوه الظهوريَّة المدركة القابلة ، لكنّه ليس فيها شيء من الوجوه الاظهارية الادراكيَّة المتصرِّفة ، الا المرتبة الأخيرة منها ، و هي النشأة العنصريَّة الانسانيَّة ، فانّها ، كما انّ لها احاطة بحسب الظهور على جميع وجوه الظهور ، و مراتب الصُّور ، كذلك لها الاحاطة بحسب الاظهار على جميع مراتب الاظهار ايضاً ، فان الانيَّة المدركة المتصرّفة فيها مدركة بجميع هذه الإدراكات ، بخلاف ساير الانيّات المدركة المتصرِّفة التي في المراتب الباقية من العقول و النفوس ، فإنها ليس لها تنوعات وجوه الإدراك مثلها . فعلم من هذا ، انّ للمرتبة الانسانيَّة ، احديَّة جمع بحسب كل واحد من الطرفين ، اعنى طرفى الظهور و الاظهار ، إذ هو بالحقيقة مجمع بحرى القابل و الفاعل ، و لهذا يعبَّر عن حقيقته بقاب قوسين ، قوسى الوجوب و الإمكان ، و سيجيء لهذا البحث مزيد بسط انشاء اللَّه تعالى .
+لا يقال : انّ السؤال كان عام الورود بالنسبة إلى جميع المراتب المنزلة إذ نسبت إلى ما هو اعلى منها ، و الجواب حسبما قرَّره المصنّف مخصوص بالمرتبة الأخيرة ، فكيف يتطابقان .
+لأنّا نقول : و ان كان هذا الجواب بحسب صورته التمثيليَّة التي التزم المصنّف ابتناء بيانه عليها تقريباً للأذهان المتعلّمين ، له اختصاص بالمرتبة
+
+الأخيرة ظاهراً ، لكن لا يخفى على اللبيب وجه تعميمه بحسب ساير المراتب ، فان ساير المراتب المتنزلة ، إذا استقصيت بالنسبة إلى ما هو اعلى منها ، ترى اثر الظهور فيها اتمّ ، و وجوهه اكثر ، كالحيوان مثلًا بالنسبة إلى النبات ، و النبات بالنسبة إلى المعادن ، و المعادن بالنسبة إلى بسائطها ، و هكذا إلى آخره ، فان جميع ما هو انزل ، ترى وجوه ظهوره اشمل ، هذا هو الوجه الانّى الذي ذكره المصنف تقريباً للأذهان .
+و اما بيان لميّة ذلك ، فهو ان الظهور بحسب المدارك انَّما هو بحسب اختفاء الحقيقة و أحكامه الذاتيَّة الإطلاقيَّة و ظهور النسب الأسمائيَّة ، و ذلك انما هو حسب تراكم القيود الامكانيَّة ، و تعاكس وجوه الكيانيَّة فكل مرتبة يكون انزل بحسب رتبة الوجود ، لا بدَّ و ان تكون تلك القيود فيها اكثر ، إذ النازل مشتمل على ما اشتمل عليه العالي من تلك القيود - مع ما اختصّ به في تنزلاته ، و كل ما كان انزل ، لا بدَّ و ان يكون للخواصِّ و الأحكام اشمل ، و كلّما كان اشمل ، كان اكمل ، ضرورة ان الكمال هو الجامعيَّة التي يستتبع الخلافة الإلهيَّة ، كما ستطّلع عليه انشاء اللَّه تعالى .
+هذا معنى ما اتَّفق عليه كلمة القوم في هذا المقام ، ثم انّ المصنّف لمّا كان في صدد افحام الخصم على ما التزمه من الطريق فلا يستقيم له على قانون التوجيه أخذ المسلّمات في طى المقدمات ، فلهذا عدل عن عبارة
+
+القوم إلى تحقيق له يكون كالوجه الانّى لبيان المتنازع فيه ، بحيث تصير به المسألة كالمشاهدات لا يمكن لأحد من ذوى العقول السليمة ان يشكّ فيها و نبّه على ذلك بقوله : لعلّهم أرادوا .
+
+### Commentary — English
+
+I say: this investigation resolves the final difficulty. What they mean by the greater perfection of the last level in the manifestation of existence is the variety of the ways in which existence appears and the multiplicity of its effects. A level is an effect serving as the form and locus of manifestation of its cause. The more ways the cause appears in that effect, and the more comprehensively the effect receives its diverse operations, the more complete it necessarily is. This is evident in sensible examples.
+
+A thing may be apprehended in an undifferentiated way through its universal attributes and general concomitants, such as being existent and alive. It may also be intellectually apprehended in detail according to its quiddity and reality, through its essential and constitutive features, such as sensation, movement, and rational speech. These considerations concern its universal reality. Considered in its particular individuation and external determination, when absent from the senses and remote it may be imagined according to its individual form, with a determinate quantity, quality, and position. It may be apprehended by estimation through the particular meanings determining it, such as specific relations: being one person's father, another's son, a lover, a beloved, and so on. When present and near, it may be perceived through the external senses.
+
+The effects and properties of existence are unquestionably more numerous in something apprehensible through all these levels than in something not apprehensible through them all. Its one determination, the furthest goal of the movement that brings into existence, encompasses all these multiple varieties of manifestation. Manifestation through the oneness of the gathering of gathering is the goal.
+
+Other corporeal material things also encompass these receptive ways of being manifested and apprehended, but lack the corresponding active ways of making manifest, apprehending, and operating. The exception is their final level, the elemental human constitution. Just as it comprehends all ways and levels of appearing, it comprehends all levels of making manifest. The cognizing and operating existent reality within it apprehends through all these modes. The cognizing and operating realities at the other levels, intellects and souls, do not have the same variety of modes of apprehension.
+
+The human level therefore possesses a unity of comprehensive gathering from each side, manifestation and making manifest. It is in truth the meeting of the two seas, receptivity and agency. Hence its reality is expressed as the distance of two bows, the bows of necessity and possibility. This question will be explained more fully below, God willing.
+
+It should not be objected that the question applies to every descending level compared with the one above it, whereas the author's answer concerns only the final level, so that the two do not correspond. We reply that, although the illustrative form adopted to bring the argument within students' understanding apparently concerns the last level, a discerning reader can see how to generalize it. When each descending level is closely compared with what is above, the effect of manifestation proves more complete and its modes more numerous: animals compared with plants, plants with minerals, minerals with their simple constituents, and so forth. In each lower case the modes of manifestation are more comprehensive. This is the explanation from effects which the author provides to assist understanding.
+
+The explanation of why this occurs is that manifestation to cognitive faculties corresponds to the concealment of the reality and its intrinsic unrestricted properties, and to the appearance of the relations of the names. This proceeds through the accumulation of possible qualifications and the mutual reflection of cosmic aspects. Every level lower in existential rank must contain more such qualifications, because it includes those of the higher level together with what becomes proper to it in its descent. The lower it is, the more properties and governing characteristics it comprehends; and the more comprehensive it is, the more complete it is. Perfection consists in the comprehensiveness which entails divine vicegerency, as you will learn, God willing.
+
+This is the meaning on which the people of this discipline agree. But the author aims to silence the opponent by the method he has undertaken, so it would be improper argumentative procedure simply to place the school's accepted propositions among his premises. He therefore leaves their customary expressions for an account functioning as an inference from effects, making the disputed matter as accessible as direct observations, about which no sound mind can doubt. His words ‘Perhaps they intended’ indicate this choice.
+
+### Textual and translation notes
+
+1. The criterion is breadth of manifestation and reception, not an undifferentiated claim that every lower thing is nobler than every higher thing. The answer must be read against the sixth objection in SH-034.
+2. The author distinguishes ẓuhūr, appearing, from iẓhār, making manifest, and gives the human level both receptive and active comprehensiveness. These are kept separate in English.
+3. The source contrasts an innī explanation from effects with an explanation of limmiyya, why it occurs. The distinction is preserved, in continuity with the earlier Lumbard comparison policy.
+4. The phrase ‘two bows’ and the animal/plant/mineral examples belong to Ibn Turka’s symbolic and philosophical account; no modern biological or physical theory is supplied in their place.
+5. The final ‘Perhaps they intended’ is a methodological qualification concerning the author’s presentation to an opponent, not omitted as a dispensable particle.
+6. Reported electronic apparatus strings, not independent manuscript readings: ( تدركه - خ ل ); ( تفهيمه - خ ); ( الآتي - خ ); ( مرتبة - خ )
+
+---
+
+## SH-038 — Sensory discipline, the holy faculty, and the soul's perfection after death
+
+**Source:** A, printed pp. 167–172
+
+https://ablibrary.net/book_content/b/17638/363?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا دفع لما يمكن ان يخطر على خاطر المسترشدين هاهنا ، من انَّ تنوُّع الإدراكات لو كان مكمِّلًا و موجباً للكمال على ما ذهبتم إليه ، لوجب ان لا يكون مانعاً للاستكمال ، ضرورة امتناع صيرورة الموجب المعدِّ مانعاً ، و التالي ظاهر البطلان لما نشاهده من حال المكمِّلين و المنسلكين المتكلمين بالنسبة إلى الطالبين و السالكين ، من منعهم استعمال القوى الادراكية ، و أمرهم بحبس الحواسِّ الآلية عن التصرُّف في مدركاتها .
+و ايضاً يلزم ان يكون الموت تنقيصاً للنفوس حينئذ ، لأنّه موجب لعروِّها عن القوى الجسمانيَّة التي هي ، موجبات للكمال ، و لا شكَّ ان العرو عمّا يوجب الكمال ، نقص تام ، فاشار إلى دفع الأول منهما ، بانّا لا نسلّم منع الإدراكات الجزئيَّة للكمال ، بل الإنسان المستكمل انّما يكون كماله به تحصيل ملكات هذه الإدراكات في مراتبها و ما يشاهد من حال المرشدين بالنسبة إلى المسترشدين ، انّما هو لتحصيل هذه الملكة و تعويد قواهم
+
+ بها بحيث لا يكون الإدراكات الحسيَّة و ما يلزمها من القيود ، مانعة لهم عن ساير الضروب الباقية التي لا يحصل لهم بحسب الأكثر الا بعد التزام الكسب و اختيار طريق التعمُّل .
+ثم انّ هاهنا تحقيقاً يحتاج إلى مزيد بيان يحتوي على اسرار جليلة انَّما يدرك بعد تلطيف من السرِّ و تصفية للقلب ، و هو ، ان للإنسان وراء هذه الإدراكات الظاهرة و الباطنة المتعارفة ، نوعاً آخر من الإدراكات غير المعتاد ، نسبته إلى هذه الإدراكات ، نسبة الجنس إلى حصصه النوعيَّة ، فإنها صور تنوعاته ، و هو إدراكه ما يدرك بحقيقته المطلقة ، و سرُّه الخفي من حيث تجلِّيها المستجن فيه المتعيّن من اطلاق الحق الذاتي باستعداده الكلّى الذي به قَبِل حصَّته الخاصّة من مطلق الوجود ، و ذلك التعيُّن في الحقيقة ، هو الوصف اللازم لصورة معلوميَّة الشيء للحق ازلًا ، إذ هو
+
+المعيّن للنسبة العلميَّة المستتبعة لنسبة الإرادة التي انما يضاف إليها التوجه الايجادى من بين الممكنات ، طلباً لإيجاد المراد ، و هو الشيء المشار إليه بقوله تعالى : « إِنَّما قَوْلُنا لِشَيْءٍ إِذا أَرَدْناهُ أَنْ نَقُولَ لَهُ كُنْ فَيَكُونُ » .
+ثمَّ ، لما كان التوجُّه الايجادى الإلهي من الحق المطلق ، انما يتعيَّن و يتقيَّد ، باستعداد المتوجِّه إليه ، فيقال : انَّه مصاحب لكل موجود ، و بهذا الاعتبار يتصوَّر نسبة معيّة الحق للأشياء ، - و حيثيَّة قيّوميَّة إذ هو سبب وجود ذلك الموجود و المبقى له ، المسمّى بالمدد الوجودي فانّه من حيث ذلك التوجه و التجلي يصل إليه المدد من الحق بالوجود المبقى له ، و من حيث ذلك ايضاً يتشوّق إلى طلب الحق و معرفته و التقرّب إليه ، لولاه لم يصحّ و لم يثبت له مناسبة يقتضي الارتباط بين الممكن من حيث هو ممكن ، و بين الحق من حيث هو واجب .
+و إذا عرفت هذا فافهم ، ان ادراك الإنسان ما يدرك بقواه الباطنة الروحانية لا الجسمانيّات منها ، انَّما هو بالامداد الواصل إليه من علم الحقِّ الذاتي الذي لا يغايره من حيثيَّة هذا التجلي المشار إليه ، لكن من مقام الاسم
+
+الباطن الذي هو من صفات التعيُّن الجامع للتعينات على ما مرَّ ، و اما إدراكه ما يدرك بقواه الجسمانيّات ، فمن حيث الأمداد المذكور ، لكن من مرتبة الاسم الظاهر لا عن مرتبة الاسم الظاهر .
+و إذا تمهّد هذا فاعلم ، ان الإنسان إذا سلك مسلك اهل التحقيق من التجريد و التصفية و ساير ما أرشده إليه السالك الخبير ، و استهلك احكام كثرته الامكانيَّة في وحداته الكلّيَّة ، و استهلك تلك الوحدات في احدية عينه الثابتة التي هي صورة المعلوميَّة المذكورة حال توجُّهه الحقيقي من حيثية التجلي المذكور ، و طلبه الاتّصال بالحق من تلك الحيثيَّة - شهوداً و معرفة - ظهر حكم الاتحاد بين هذا التجلي المتعيَّن ، و بين الحق المطلق ، فاكتسب 
+
+القوى الظاهرة و الباطنة من الروحانيَّة و الجسمانيّة ، وصف التجلي المتعين ، و استهلك احكام كثرتها فيه آخراً ، كما استجَّن التجلي المذكور و الحجب بالملابس الامكانيَّة و أحكامها اولًا ، فيجدَّد حينئذ للإنسان به حكم هذا الاتحاد نوع آخر من الإدراك ليس من قبيل الإدراكات النفسانيَّة البطانية ، و لا الطبيعة الجسمانيَّة الظاهريَّة بل نسبته في شمول المعلومات و احاطة أحكامها إلى القوى النفسانية ،
+
+كنسبة شمول معلوماتها إلى القوى الجسمانيَّة ، و هذا هو الإدراك الحاصل بالكسب و الاختيار ، المسمى بالكشف تارة ، و بالقوَّة القدسيَّة اخرى ، فتلطّف بنفسك ، ثمَّ تدبَّر في هذا المقال ، عسى ان تفوز بما لم تكن تعلّم بالنظر و الاستدلال ، و تحصيل الصور و تصوير المثال .
+ثمَّ أشار إلى دفع الثاني ممّا يمكن ان يخطر بالبال ، بقوله : « و لا يكون الموت بالحقيقة تنقيصاً للنفس بل تكميلًا لها . فان النفوس الكاملة انَّما يتمكَّنون بعد الموت على جميع ما يتمكَّنون عليه قبله . . . » من الأفعال الكماليَّة ، و ذلك لأن قوتهم و تمكينهم ، انما هي بالملكات الكماليَّة التي نسبة القوى الجسمانيَّة ، المتلاشية عند هجوم صدمات الموت إليها نسبة الآلات المعدّة لتحصيل وجود شيء إليه . و لا شكّ ان بعد تمام وجود ذلك الشيء و كماله ، قد تكون تلك الآلات كالموانع لصدور ما هو المطلوب من ذلك الشيء فضلًا عن ان يكون مُعِداً ، فكذلك نسبة الآلات الجسمانيَّة عند حصول تلك الملكة الكماليَّة .
+و تحقيق هذا الكلام يحتاج إلى تبيين عالم البرزخ و ما للأرواح الكاملة فيه ، و ذلك موقوف على مقدمات لا يسعها هذا المجال .
+
+### Commentary — English
+
+I say: this answers something that may occur to seekers of guidance. If diversity of apprehension perfects a person and brings perfection, as you maintain, it cannot also obstruct perfection: a positive preparatory cause cannot become an impediment. Yet the consequent is plainly false, since spiritual guides direct students and travellers to restrain their cognitive faculties and prevent the instrumental senses from acting upon their objects.
+
+Moreover, death would then diminish souls, because it strips them of bodily faculties which are causes of perfection. Being deprived of what produces perfection is clearly a complete deficiency. The author answers the first objection by denying that particular apprehensions as such prevent perfection. The human being's perfection consists in acquiring stable capacities for these apprehensions at their appropriate levels. What guides do with students aims to acquire this capacity and train their faculties so that sensory perceptions and their accompanying restrictions no longer obstruct the other modes, which for most people arise only through deliberate acquisition and chosen effort.
+
+A deeper account is needed here, containing important mysteries apprehended only after refinement of the inward secret and purification of the heart. Beyond the familiar external and internal modes of apprehension, a human being has another, unfamiliar kind. Its relation to them is like that of a genus to its specific portions, which are forms of its diversification. This is a person's apprehending through his unrestricted reality and hidden secret, through the disclosure concealed within him and determined from the Real's intrinsic unrestrictedness by his comprehensive preparedness. Through that preparedness he receives his particular share of unrestricted existence.
+
+This determination is in truth the attribute necessarily accompanying the form in which the thing is eternally known to the Real. It specifies the relation of knowledge, which entails the relation of will. The existentially productive orientation is ascribed to will among the possibilities, seeking to bring the intended thing into existence. This is the thing referred to in the words, ‘Our saying to a thing, when We will it, is only to say to it: Be, and it is.’
+
+The divine orientation that brings into existence proceeds from the unrestricted Real but becomes determined and qualified through the preparedness of that toward which it is directed. It is therefore said to accompany every existent. Through this consideration we conceive the Real's being with things and His sustaining them: this orientation causes each thing's existence and preserves it. It is called existential replenishment. Through that orientation and disclosure, replenishment reaches the existent from the Real in the form of existence sustaining it. Through the same aspect it longs to seek the Real, know Him, and draw near to Him. Without it there would be no established affinity joining the possible as possible to the Real as necessary.
+
+A human being's apprehension through inward spiritual faculties, rather than bodily ones, occurs through the aid reaching him from the Real's essential knowledge, which is not different from Him in respect of that disclosure. This comes from the station of the name Hidden, one of the attributes of the determination comprehending the other determinations. Apprehension through bodily faculties also occurs through that aid, but from the level of the name Manifest. [The displayed text immediately adds ‘not from the level of the name Manifest’; this repetition or displaced negation leaves the sentence textually unsettled.]
+
+Now suppose that a human being follows the path of the people of realization through detachment, purification, and the other disciplines taught by an experienced traveller. The governing properties of his possible multiplicity are absorbed into his comprehensive unities, and those unities into the oneness of his fixed entity, the form of being known just described. In his true orientation through the disclosure mentioned, he seeks connection with the Real through witnessing and knowledge. The effect of union between this determinate disclosure and the unrestricted Real then becomes manifest.
+
+The external and internal faculties, both spiritual and bodily, acquire the character of that determinate disclosure. The governing properties of their multiplicity are finally absorbed into it, just as the disclosure was initially concealed within possible veils, garments, and their governing properties. By virtue of this union, another kind of apprehension arises for the human being. It belongs neither to inward psychic apprehensions nor to outward natural bodily apprehensions. In the breadth of what it knows and the scope of its governing properties, its relation to psychic faculties is like the relation of their scope of knowledge to bodily faculties.
+
+This is the apprehension acquired through effort and choice, called unveiling at one time and the holy faculty at another. Deal gently and subtly with your soul, and then reflect upon this account. Perhaps you will attain what you could not learn through reflection and inference or through acquiring forms and constructing images.
+
+The author then answers the second possible difficulty: ‘Death does not in truth diminish the soul but perfects it. Perfected souls after death can perform all the acts of perfection they could perform before it…’ Their power and capability derive from perfected acquired capacities. The bodily faculties that disintegrate under death's blows stand to those capacities as instruments preparing the existence of something stand to the thing prepared. Once that thing's existence is complete and perfected, the instruments may become impediments to its intended operations, rather than continuing to prepare them. Bodily instruments stand in the same relation once the perfected capacity has been acquired.
+
+A full account requires explaining the intermediate world and what perfected spirits possess within it. That depends upon premises for which the present discussion has no room.
+
+### Textual and translation notes
+
+1. The source’s juxtaposition لكن من مرتبة الاسم الظاهر ... لا عن مرتبة الاسم الظاهر is contradictory as displayed, with a related reported variant. The English marks the defect explicitly rather than silently changing one occurrence to الباطن or deleting the negative.
+2. The discussion concerns training and integration of cognitive faculties, not their simple annihilation. The opening objection and the author’s answer are kept distinct.
+3. Malaka is an acquired stable capacity, not merely possession of an organ. Its role is essential both to the account of integrated cognition and to the subsequent argument about death.
+4. The Quranic wording about saying ‘Be’ is translated from the quoted text; it corresponds to Q16:40. The source’s modern marginal reference is not adopted where it differs.
+5. The commentator’s claims about post-mortem perfection and the intermediate world are translated as theological-philosophical source claims. No independent experiential verification is asserted.
+6. Page 169 is restored from a prose paragraph missed by the earlier span-only extraction. The long later Arabic/Persian marginal discussions on these pages are excluded.
+7. Reported electronic apparatus strings, not independent manuscript readings: ( كمالًا - خ ); ( تقوية قواهم - خ ل ); ( طريق النقل - خ ل - العقل - خ ); ( يتعدَّد - خ ); ( و حقيقة قيّوميَّته - خ ل ); ( لكن لا عن مرتبة الاسم الظاهر - خ ل ); ( في الحجب و الملابس - خ ); ( الظاهرة - خ ل ); ( و تحصل بالصور و تصوير المثال - خ ); ( المناسبة لها - خ ); ( إلى تحقيق عالم - خ ); ( هذه المجالى - خ ل )
+
+---
+
+## SH-039 — Why the human constitution joins divine comprehensiveness and cosmic differentiation
+
+**Source:** A, printed pp. 173–177
+
+https://ablibrary.net/book_content/b/17638/369?lang=ar
+
+### Commentary — Arabic
+
+أقول : بعد فراغه عن تحقيق مسألة التوحيد ، دفع ما يرد على الأصول المبنيَّة المنبّهة عليها ، من القواعد العامة الشاملة و القوانين الكلّيَّة الكاملة ، يريد ان يشير إلى ما يتفرع عنها من المقاصد و امّهات المطالب ، بحيث ينساق إلى ما هو المقصد الأقصى في هذه الرسالة ، اعنى إثبات جامعيَّة الإنسان و كماله الذي لا يوازيه في ذلك احد من الموجودات ، و لا يدانيه شيء من الكاينات ، ثمَّ ان بيان ذلك و تحقيقه يحتاج إلى تمهيد مقدمة ، و هي انّ الوحدة الحقيقيَّة المضافة إلى هويّة الحق ، هي الوحدة المطلقة التي يستهلك فيها جميع المتقابلات من المتناقضات و المتضادات و غيرها ، لاشتمالها بالذات على جميع الموجودات ، سواء كان واحداً أو كثيراً إذ كما يشتمل على جميع اقسام الوحدة كذلك يشتمل على جميع اقسام الكثرة ، فهي الجامع بالذات بين ساير المتقابلات ، و باعتبار هذه الوحدة يقال : لا ضدَّ و لا ندَّ للحق ، و انّه واحد بلا عدد .
+أي لا بالوحدة التي يضادُّها الكثرة ، فإنه بذلك الاعتبار ، الكثير مضادّ له . و هو الأصل في العدد . فعلم من هذا ، ان نسبة الوحدة الإضافيَّة و الكثرة
+
+الإضافيَّة ، إلى الوحدة المطلقة على السويَّة ، من حيث شمولها لهما و احاطتها بهما ، الا ان الوحدة الإضافيَّة لما لم يكن يتميَّز منها الا باعتبار معنى عدمى دون الكثرة ، فان تمايزها انّما هو بانضمام قيود زائدة عليها ، فيكون لها تقدُّم بالذات على الكثرة . فكل تعيُّن يكون الغالب فيه احكام الوحدة ، يكون آثار الوجود و الإطلاق فيه اظهر ، و كل تعيُّن يكون احكام الكثرة هو الغالب فيه ، يكون تلك الأحكام مخفية فيه . و قد عرفت ممّا أشير إليه ، ان التعيُّن على قسمين ، ما يكون مبدأ خصوصيَّة الامتيازيَّة ، هو الشمول و الاحاطة بالنسبة إلى ما امتاز عنه من الأمور المتغايرة ، كتعيُّن الكل بالنسبة إلى اجزائه ، و العام بالنسبة إلى جزئياته - و ما يقابله - ، و ما بكون مبدأ خصوصيَّة الامتيازيَّة هو التضاد و التمانع ، كتعيُّن الشيء بالنسبة إلى ما يقابله ، و تعيُّن الأنواع و الجزئيّات المتقابلة بالنسبة إلى ما يقابلها هذا القبيل .
+و لا شك ان الغالب فيه حكم الوحدة على الكثرة من القسمين ، هو الأول ، فلذلك إذا استقريت و أمعنت النظر في المراتب المتعيَّنة و الموجودات المتميِّزة ، وجدت كل ما كان الغالب على تعيُّنه المعاني الوحدانيَّة الغير المتقابلة كعالم الأرواح و المثال ، يكون الظاهر فيها من آثار الوجود كالحياة و الإدراك و الحركات المتنوِّعة اكثر ، و كلُّ ما كان الغالب عليه المعاني المتكثِّرة و الاحكام المتقابلة ، يكون الآثار الوجودي و الحقائق الاصليَّة فيه كامنة مخفيَّة ، كما في عالم سورة معاداة الطبايع و ثوران تضاد العناصر ، فإنه انّما خفى فيه تلك الآثار من الحياة و تنوع الحركات ، لغلبة حكم التقابل في تعيُّناته ، لما فيه من ظهور التضاد الذي هو انهى احكام الكثرة الامكانية .
+و لهذا إذا انكسر ذلك التضاد ، يعود قابلًا لظهور تلك الآثار ، و كلَّما كان الانكسار اشدّ ، كان قبول المنكسر لظهور تلك الآثار اكثر ، كما في المعادن
+
+بالنسبة إلى النبات و كذلك النبات بالنسبة إلى الحيوان ، إلى ان يتمّ الانكسار ، و يحصل له قابليَّة ظهور الوحدة بكمالها ، حتى يصير قابلًا لأن يظهر فيه الحقيقة الانسانيَّة التي هي ظلُّ الوحدة الذاتيَّة التي منها المبدأ و إليها المصير . تأمّل في هذه النكتة البديعة - لتستفيد عنها - فانّها تتضمّن اسرار جمَّة جليلة .
+إذا عرفت هذا فنقول : ان تلك الهويَّة الواحدة بالوحدة المطلقة ، لما غلبت فيها احكام وحدتها الإطلاقيَّة الذاتيَّة على احكام الكثرة الاسمائيَّة و الحقائق الوجوديَّة ، بل استهلك و انمحى ظهور الكثرة بحسب ظهور القهر الأحدى الذاتي ، أي خفى احكام القيود المتقابلة في مقام الجمع المعنوي الذي هو التعين الجامع لجميع التعينات كما سبق ، ان التعيّن المطلق و خصوصيَّة هو جمع المتقابلات ، ثم ظهرت بالتجلى النفسي الوجودي في مظاهر متفرقة غير جامعة من مظاهر هذه العوالم العينيَّة و الحسبة ظهور النفس و انبثاثه في المخارج ، بمظاهر الحروف و الكلمات على سبيل التفصيل ، كتنوع الموجودات في المراتب ، و تعين كل منها بخصوصيَّة الخاصة به ، و ظهور الكل بتلك الخصوصيات ، كما سبق التنبيه عليه في تفصيل الكمال الأسمائى ، بانّ مقتضاه انما هو ظهور الكل بحسب جزئي من الجزئيات ، مقهوراً احكام وحدة ذلك الكل ، تحت احكام كثرة الجزئى الظاهر ، فحينئذ ، خفى هناك أمر الوحدة بحسب اقتضاء الذات التفريق العقلي و التفصيل العيني ، إظهاراً للكمالات الخاصَّة الجزئيّة المتعلِّقة بجزئيّاتها ، أراد ان يظهر ذاته الظاهرة ، على التفصيل بكليّتها واحديَّة جمعيتها في مظهر كامل يتضمّن ساير المظاهر الظاهرة هي بها تفصيلًا من الأسماء الإلهيَّة
+
+النورانيَّة و الحقائق الكونيَّة الظليَّة ، و يشتمل على جميع الحقائق السريَّة من الأسماء الذاتيَّة المعنويَّة و الجهرية من الأسماء الصفاتيَّة و الفعلية ، و يحتوي على جملة الرقائق البطنيَّة الإلهيَّة ، و الظهريَّة الخلقيَّة ، في مرتبة الجامعة الانسانيّة .
+و ملخّص هذا الكلام ، ان الوحدة الذاتيَّة ، و الهويَّة المطلقة ، لغلبة حكم الإطلاق فيها ، لا يمكن ان يكون للتفصيل الأسمائى فيها مجال أصلًا كما عرفت ، و كذلك المظاهر التفصيليَّة التي هي أجزاء - اجرام - العالم الكبير ايضاً لغلبة حكم القيود الكونيَّة و الكثرة الامكانيَّة فيها ، لا يمكن ان يكون للجمعيَّة الإلهيَّة التي هي صورة الوحدة الحقيقيَّة فيها ظهور ، فاقتضى الأمر الإلهي ان تكون صورة اعتداليه ليس للوحدة الذاتيَّة فيها غلبة ، و لا للكثرة الامكانيَّة عليها سلطنة ، حتى يصلح لأن يكون مظهراً للحق من حيث تفاصيله الأسمائيَّة ، واحديَّة جمعه الذاتيَّة ، بسعة قابليتها و عموم عدالتها ، و ذلك هو النشأة العنصريَّة الانسانيَّة ، إذ ليس في الإمكان أجمع من الإنسان ، لاحاطته بالمرتبة الإطلاقيَّة الإلهيَّة و القيدية العبديَّة ، كما صرّح به الشيخ « قدس سرّه » في رسالته المسمّاة بإنشاء الدوائر ، و لنورد عبارته الشريفة لعل المتأمّل فيها يفوز ببعض ما يحتويه من النكات اللطيفة ، و هو قوله : « قد تقرَّر عندنا ان للإنسان نسختين :
+ظاهرة و باطنة . فنسخته الظاهرة مضاهية للعالم بأسره ، و نسخته الباطنة ، مضاهية للحضرة الإلهيَّة ، فالإنسان هو الكل على الإطلاق الحقيقي ، إذ هو القابل لجميع الموجودات حديثها و قديمها و ما سواه من الموجودات لا يقبل ذلك ، فان كل جزء من أجزاء العالم لا يقبل الالوهيَّة ، و الاله لا يقبل العبوديَّة ، بل العالم كلّه عبد ، و الحق سبحانه وحده إله ، واحد ، صمد ، لا يجوز عليه الاتّصاف بما يناقضه من الأوصاف الحادثة الخلقيَّة العباديَّة ،
+
+و الإنسان ذو نسبتين كاملتين ، نسبة يدخل بها إلى الحضرة الإلهيَّة ، و نسبة يدخل بها إلى الحضرة الكونيَّة ، فيقال فيه ، عبد من حيث انَّه مكلّف و لم يكن ثم كان ، و يقال فيه ، ربّ من حيث انَّه خليفة و من حيث انّه احسن تقويم فكأنَّه برزخ بين العالمين و جامع للخلق و الحق ، و هو الخطُّ الفاصل بين الحضرة الإلهيَّة و الكونيَّة ، كالخطِّ الفاصل بين الظل و الشمس ، فهذه حقيقته فله المطلق في الحدوث و القدم ، فله الكمال المطلق في الحدوث و القدم ، و للحق ، المطلق الكمال في القدم و ليس له في الحدوث مدخل تعالى عن ذلك ، و العالم له الكمال المطلق في الحدوث ، و ليس له مدخل في القدم ، فصار الإنسان جامعاً ، للَّه الحمد على ذلك .
+فما أشرفها من حقيقة و ما أظهرها من وجود ، و ما اخسُّها و ما ادنسها ايضاً في الوجود ، إذ قد كان منها ، محمد « صلى اللَّه عليه و آله » و أبو جهل و فرعون و موسى « عليه السلام » ، فتحقّق احسن تقويم ، و اجعله مركز الطائعين و المقرِّبين و تحقُّق اسفل السافلين ، و اجعله مركز الكافرين و الجاحدين ، فسبحان من ليس كمثله شيء ، و هو السَّميع البصير » . هذا كلامه بعبارته الشريفة . تأمّل فيها بعد تنقية الباطن عن المواد التقليدية و الرسميَّة و تلطيف السرِّ باللطائف الذوقيَّة و الشوقية ، عسى اللَّه ان يوفَّقك للاطلاع على شيء من مقاصده .
+
+### Commentary — English
+
+I say: having established the question of divine unity and answered the objections to its foundations—the comprehensive principles and general rules already indicated—the author now wishes to explain the principal aims and questions that follow from them. The discussion thereby proceeds toward the ultimate purpose of this treatise: establishing the human being's comprehensiveness and perfection, in which no other existent equals him and no other being approaches him. Establishing this requires a preliminary explanation.
+
+The genuine unity attributed to the identity of the Real is absolute unity, in which all oppositions—contradictories, contraries, and the rest—are absorbed. It intrinsically encompasses everything that exists, whether one or many. Just as it encompasses every kind of unity, it encompasses every kind of multiplicity. It therefore intrinsically joins all opposites. In respect of this unity, the Real is said to have neither contrary nor peer, and to be one without number: not one by the unity opposed to multiplicity, since under that consideration the many stand opposite the one, which is the principle of number.
+
+Relational unity and relational multiplicity therefore stand equally in relation to absolute unity insofar as it encompasses them both. Nevertheless, relational unity differs from absolute unity only through a negative consideration, whereas multiplicity differs through the addition of further qualifications. Relational unity consequently has intrinsic priority over multiplicity. In any determination where the governing properties of unity predominate, the effects of existence and unrestrictedness are more manifest; where the properties of multiplicity predominate, those effects are concealed.
+
+As already indicated, determination is of two kinds. In one, the source of the distinguishing character is comprehensiveness and inclusion with respect to the distinct things encompassed: the determination of a whole relative to its parts, or of a general concept relative to its particulars. In the other, the source of the distinction is opposition and mutual exclusion, as with a thing relative to what stands opposite it. The determination of opposed species and particulars relative to their counterparts belongs to this second kind.
+
+Of the two, it is clearly the first in which unity predominates over multiplicity. Accordingly, if you carefully examine determinate levels and distinct existents, you find that, wherever nonoppositional unifying meanings predominate in their determination—as in the worlds of spirits and images—more effects of existence appear, such as life, apprehension, and diverse movements. Wherever multiple meanings and opposed governing properties predominate, the existential effects and fundamental realities remain latent. This is so in the realm of intense conflict among natures and the opposition of the elements. There, life and diversity of movement are concealed because opposition predominates in the determinations, with contrariety manifesting the furthest development of possible multiplicity.
+
+When this contrariety is broken, the thing again becomes receptive to the manifestation of those effects. The more fully the opposition is overcome, the more receptive it becomes: as in the progression from minerals to plants and from plants to animals, until the opposition is thoroughly overcome and a receptivity for the full manifestation of unity is obtained. It then becomes capable of manifesting the human reality, the shadow of essential unity, from which is the beginning and to which is the return. Reflect on this remarkable point: it contains many great mysteries.
+
+We may now explain the author's passage. In that identity which is one through absolute unity, the governing properties of unrestricted essential unity predominate over those of the multiplicity of names and existential realities. Indeed, multiplicity's manifestation is absorbed and effaced under the manifestation of the essential subjugation of oneness: the properties of opposed qualifications are concealed in the station of gathered meanings, the determination comprehending all determinations. As already explained, the distinguishing character of unrestricted determination is precisely to gather opposites.
+
+The identity then appears through the existential disclosure of the Breath in dispersed, noncomprehensive loci within the external worlds, just as breath spreads through its points of articulation as letters and words. Existents are differentiated in their levels, each determined by its own particular character, and the whole appears through those particularities. As explained in discussing the perfection of the names, this requires the whole to appear through a particular, the properties of the whole's unity being subdued beneath those of the manifest particular's multiplicity. Unity is consequently concealed through differentiation and external articulation, which display the particular perfections belonging to their particulars.
+
+The identity therefore wills to manifest its essence—which has appeared in detail—in its entirety and the oneness of its comprehensiveness, through a complete locus. This locus embraces all the luminous divine names and shadow-like cosmic realities through which the essence appears in detail; all the secret realities of the intrinsic names and the manifest realities of the attributive and active names; and all the subtle inward divine and outward creaturely relations, within the comprehensive human level.
+
+The substance of the account is this. Essential unity and absolute identity, because unrestrictedness predominates in them, allow no scope for differentiated names. Conversely, the detailed loci of manifestation which are the parts of the macrocosm, because cosmic qualifications and possible multiplicity predominate in them, cannot display the divine comprehensiveness that is the form of genuine unity. The divine affair therefore requires a balanced form in which essential unity does not predominate and possible multiplicity exercises no dominion. Through the breadth of its receptivity and the comprehensiveness of its balance, this form can manifest the Real both in the differentiation of His names and in the essential oneness of His gathering. It is the elemental human constitution. Nothing possible is more comprehensive than the human being, who encompasses the unrestricted divine level and the restricted level of servanthood.
+
+The Shaykh expressly states this in his treatise The Construction of Circles. We shall quote his words so that attentive readers may attain some of their subtle meanings:
+
+‘It is established among us that the human being has two copies, outward and inward. His outward copy corresponds to the whole cosmos, while his inward copy corresponds to the divine presence. The human being is therefore the whole in the genuinely unrestricted sense, being receptive to all existents, originated and eternal. No other existent possesses this receptivity. No individual part of the cosmos receives divinity, and the Divine does not receive servanthood. Rather, the whole cosmos is servant, while the Real alone is God, one and self-sufficient. He cannot be qualified by the originated, creaturely attributes of servanthood that oppose His divinity.
+
+‘The human being has two complete relationships: through one he enters the divine presence, through the other the cosmic presence. He is called servant insofar as obligations are laid upon him and he did not exist and then came to be; he is called lord insofar as he is vicegerent and is of the finest constitution. He is thus an isthmus between the two worlds, gathering creation and the Real together, and the dividing line between the divine and cosmic presences, like the line between shade and sunlight. This is his reality. He possesses comprehensive perfection with respect to origination and eternity. The Real possesses comprehensive perfection in eternity and has no participation in origination—exalted is He above that. The cosmos possesses comprehensive perfection in origination and has no participation in eternity. The human being is therefore comprehensive: praise belongs to God for this.
+
+‘How noble a reality, how manifest an existence! Yet how base and sullied it can also be in existence, for from it have come Muḥammad, Abū Jahl, Pharaoh, and Moses. Recognize the finest constitution and make it the station of the obedient and those brought near; recognize the lowest of the low and make it the station of unbelievers and deniers. Glorified is He: nothing is like Him, and He is the Hearing, the Seeing.’
+
+These are his own words. Reflect upon them after cleansing your inward being of merely inherited and conventional material, and refining your inward secret through the subtleties of spiritual taste and longing. Perhaps God will grant you an understanding of some of his purposes.
+
+### Textual and translation notes
+
+1. The extended quotation is explicitly attributed to Ibn Arabi’s Inshāʾ al-Dawāʾir; it is not a fresh passage of the ancestor’s Qawāʿid matn. Its boundaries and the commentator’s concluding instruction are preserved.
+2. The source itself expressly excludes origination from the Real and eternity from the cosmos. The human being’s twofold relationship must not be paraphrased as the simple identity of a created individual with the divine essence.
+3. The short duplicated wording around فله المطلق ... فله الكمال المطلق is represented once in English; the exact electronic Arabic remains retained. The alternative بين العالم والحق is recorded by the printed source but is not silently substituted for بين العالمين.
+4. The mineral–plant–animal progression is part of the author’s premodern account of temperament and receptivity, not a modern biological claim.
+5. Several minor displayed readings are unstable, notably والحسبة and parts of the sentences about the whole’s manifestation through particulars. The English follows their context without claiming an independently established manuscript emendation.
+6. Reported electronic apparatus strings, not independent manuscript readings: ( أو اكثر - خ ); ( الواحد - خ ); ( الكثير - خ ل ); ( تحت بطون القهر الأحدى - خ ل ); ( الفعلى - خ ); ( الظلمانيَّة - خ ); ( جمعيَّته - خ ); ( خليفته - خ ); ( التقويم - خ ); ( بين العالم و الحق و جامع الحق و الخلق - خ ); ( و جعله مركز الطالبين - خ )
+
+---
+
+## SH-039-B — Why primordial self-knowledge does not replace comprehensive manifested knowledge
+
+**Source:** A, printed pp. 178–180
+
+https://ablibrary.net/book_content/b/17638/374?lang=ar
+
+### Additional ancestral quotation after QT-039
+
+« فان تلك الهويَّة الواجبة لذاتها ، انما يدرك ذاتها في ذاتها
+
+لذاتها ، ادراكاً غير زائد إلى ذاتها ، و لا متميِّز عنها ، لا في التعقُّل ، و لا في الواقع ، و هكذا يدرك صفاتها و أسمائها ، كذلك نسباً ذاتيَّة غيبيَّة غير ظاهرة الآثار و لا متميِّزة الأعيان بعضها عن بعض .
+ثمَّ انّها لما ظهرت بحسب الإرادة المخصِّصة و الاستعدادات المختلفة و الوسائط المتعدِّدة ، مفصَّلة في المظاهر المتفرقة ، من مظاهر هذه العوالم المذكورة ، - و - لم يدرك ذاتها و حقيقتها من حيث هي جامع لجميع الكمالات العينيَّة و سائر الصفات و الأسماء الإلهيَّة ، فان ظهورها في كل مظهر و محل معيَّن ، انّما يكون بحسب ذلك المظهر لا غير .
+الا ترى ان ظهور الحق في العالم الروحاني ، ليس كظهوره في - العالم - الجسماني ، فانّه في الأول بسيط فعلى نورانى و في الثاني ظلمانى انفعالى تركيبى » .
+
+For that identity which is necessary through itself apprehends its essence in its essence for its essence, in an apprehension neither additional to nor distinct from its essence, whether in intellection or in reality. It likewise apprehends its attributes and names as intrinsic unseen relations whose effects are not manifest and whose entities are not distinguished from one another.
+
+Then, when it manifests in differentiated form within the dispersed loci of these worlds, according to particularizing will, differing preparednesses, and multiple intermediaries, it does not apprehend its essence and reality as comprehending all external perfections and all divine attributes and names. Its appearance in each particular locus is only according to that locus. Do you not see that the Real's manifestation in the spiritual world is unlike His manifestation in the bodily world? In the first it is simple, active, and luminous; in the second, dark, receptive, and composite.
+
+### Commentary — Arabic
+
+أقول : هذا تفصيل ما نبَّه عليه آنفاً على سبيل الإجمال ، من عدم قابلية مرتبة من المراتب - جلائيَّة كانت أو استجلائية - لأن يصير مظهراً تامّاً و مجلى جامعاً للهويَّة الواجبة الا النشأة العنصريَّة الانسانيَّة . و قوله : « فان تلك الهويَّة الواجبة » إشارة إلى دفع ما يمكن ان يورد هاهنا ، من ان يقال :
+لو كان الغرض من ايجاد الكون الجامع الإنساني ، ظهورها بجميع مراتبها على نفسها كما ذكرتم ، للزم تحصيل الحاصل ، لأنَّها مدركة لذاتها بجميع مراتبها حتى المحسوسات ، في التعيُّن الجامع للتعيُّنات كما سبق تقريره .
+فقال : تلك الهويَّة و ان كانت مدركة لذاتها في ذلك التعين بما اشتمل عليه من المراتب و التعيُّنات ، لكن من حيث انَّها نفس ذاتها حاصلًا ذلك الإدراك في ذاتها لذاتها ، أي لكمالها الذاتي على ما عرفت ، و ليس نفس ذلك
+
+الإدراك ايضاً امراً زائداً على ذاتها ، و لا متميِّزاً عنها لا عقلًا و لا وجوداً لما سبق بيانه ، ان لا مجال للتعدد أصلًا في هذه الحضرة ، حيث ان العلم فيها غير متميِّز من المعلوم و العالم ، إذ هذا التميُّز انما يحصل حيث بتمايز قوسا الوجوب و الإمكان ، و ذلك في مرتبة اخرى غير هذه المرتبة ، حيث بتمايز الوحدة من الكثرة كما مرَّ ، و هكذا سائر الصفات و الأسماء في هذه الحضرة انَّما يدرك حيث انَّها نسب ذاتيَّة غير ظاهرة الآثار و لا متميِّزة الأعيان بعضها عن بعض . ثم انها لما ظهرت تلك الهويَّة في النفس الرحمانى الذي هو محلُّ تفاصيل الأسماء و مظهر تعيُّنات الغير و السوي بحسب الإرادة المخصِّصة و الاستعدادات المختلفة حسب اختلاف شئونها الذاتيَّة الحاصلة بالفيض الأقدس و الوسائط المتعدِّدة بناءً على ما تقرَّر عندهم ، انَّ تلبُّس الهوية السارية ، و الحقيقة النازلة بالصور السافلة ، لا يمكن الا بعد تلبُّسها بالعالية منها ، ضرورة ان الأسماء توقيفيَّة ، إذ بحصول الأعلى ، يستعد لتحصيل الأنزل منها ، كتلبيس المادة بالصُّورة الحيوانيَّة مثلًا ، فإنها انما يمكن بعد تلبُّسها بالنباتية و حصول ذلك الاستعداد لها . فالمراد من الوسائط هاهنا هو حصول الاستعدادات المرتَّبة الواقعة في دائرة مراتب الوجود ، لا ما يشعر بالعلية كما يتوهم من ظاهر لفظة متمايزة ، مفصَّلة في المظاهر المتفرقة ، و مع هذا ما تمَّ به امر الظهور ، فان ظهورها في هذه الحضرة و ان كانت متمايزة الأعيان مصحّحة لإطلاق اسم الغير لظهور آثار الأسماء و أحكامها في تلك التعيُّنات المتفرِّقة من مظاهر هذه العوالم ، لكن لم يدرك ذاتها و حقيقتها فيها بأحدية جمعيَّتها من حيث هي جامعة لجميع الكمالات العينيَّة و ساير الصفات و الأسماء الإلهيَّة ، فان ظهورها في كل مظهر و مجلى معيَّن ، انَّما يكون
+
+بحسب ذلك المظهر لا غير . الا ترى ، ان ظهور الحق في العالم الروحاني ، ليس كظهوره في العالم الجسماني ، فانَّه في الأول بسيط فعلى نورانى ، و في الثاني تركيبى انفعالى ظلمانى ، و كذلك في غيره من العوالم و المراتب و جزئيّاتها ، فان ظهور كل منها انَّما هو بتعيُّناته الخاصَّة به و اظهار آثاره الخصيصة بذلك التعيُّن كما سبق تحقيقه في بحث الكمال الأسمائى .
+
+### Commentary — English
+
+I say: this explains in detail the point just indicated in outline: no level, whether one of disclosure or self-beholding in disclosure, can become a complete locus and comprehensive place of manifestation for the necessary identity except the elemental human constitution. The words ‘For that necessary identity…’ address a possible objection: if bringing the comprehensive human being into existence aims at the identity's appearing to itself in all its levels, this would merely acquire what has already been acquired. It already apprehends itself in all its levels, including sensible things, within the determination comprehending all determinations.
+
+The author replies that the identity does indeed apprehend itself within that determination, together with the levels and determinations it contains, but insofar as these are its very essence. That apprehension occurs in itself and for itself, that is, for its essential perfection. The apprehension itself is neither additional to its essence nor distinct from it, either conceptually or existentially. As explained, this presence allows no multiplicity: knowledge is not distinguished from known and knower. Such distinction occurs only where the two bows of necessity and possibility are differentiated, which is another level, where unity is distinguished from multiplicity. Likewise, its other attributes and names are apprehended here as intrinsic relations whose effects are not manifest and whose entities are not distinct from one another.
+
+The identity then manifests in the Breath of the All-Merciful, the domain where the names are differentiated and the determinations of otherness appear. This takes place according to particularizing will, preparednesses differing with the intrinsic affairs established through the most holy effusion, and multiple intermediaries. For they maintain that the pervading identity and descending reality cannot assume lower forms before assuming higher ones. The names have their appointed domains: attaining the higher prepares for attaining the lower. Thus matter cannot assume animal form, for example, before assuming vegetal form and acquiring the corresponding preparedness. ‘Intermediaries’ here means the ordered preparednesses within the circle of existential levels, not the causal separation that the expression might at first suggest.
+
+The identity thus appears in distinct, differentiated and dispersed loci, but manifestation is still not complete. Although the entities are now distinct and the designation other becomes applicable, because the effects and properties of the names appear in the separate determinations of these worlds, the identity has not apprehended its essence and reality there through the oneness of its comprehensiveness, as encompassing every external perfection and every divine attribute and name. Its appearance in any particular locus is only according to that locus. Its appearance in the spiritual world is not like its appearance in the bodily world: the former is simple, active, and luminous; the latter composite, receptive, and dark. The same is true of the other worlds, levels, and particulars. Each appears through its own determinations and displays the effects proper to them, as explained in discussing the perfection of the names.
+
+### Textual and translation notes
+
+1. A separate ancestor quotation and أقول occur between QT-039 and QT-040. The passage is retained as SH-039-B rather than omitted or silently merged into either author’s prose. Its preceding matn is translated separately in the bridge field.
+2. The objection concerns whether manifested self-knowledge adds anything to primordial comprehensive knowledge. The reply distinguishes the considerations, not an alleged transition of the divine essence from ignorance to knowledge.
+3. ‘Intermediaries’ is explicitly interpreted here as ordered preparednesses, rather than the causal separation suggested by a superficial reading. The vegetal/animal example is the historical author’s illustration.
+4. Reported electronic apparatus strings, not independent manuscript readings: ( ثبوتها - خ ل ); ( كتلبُّس - خ ل ); ( تمايزت - خ ); ( محل - خ )
+
+---
+
+## SH-040 — The human terminus and return of the existential movement
+
+**Source:** A, printed pp. 180–184
+
+https://ablibrary.net/book_content/b/17638/376?lang=ar
+
+### Commentary — Arabic
+
+أقول : لمّا بيَّن ، ان التجلي الأول الذي هو حضرة الجمع ، لا يصلح للمظهريَّة المذكورة ، و لا التجلي الثاني الذي هو محلُّ التفصيل فلا بُدَّ من الانبعاث نحو مظهر جامع للجمع و التفصيل ، فانبعث انبعاثاً إرادياً ، لأن مبدأ هذا الانبعاث هو التخصيص العلمي السّابق رتبة ، فيكون الانبعاث نحو المخصِّص إرادياً لا إيجابيّاً اضطراريَّاً ، كما هو مذهب
+
+المشّاءين ، و ذلك المخصِّص المنبعث إليه باعتبار بطونه ، هو المظهر الكلى أي الحقيقة الانسانيَّة التي هي البرزخ الجامع بين الوجوب و الإمكان ، الشامل لجميع الحقائق المنسوبة إليهما ، و باعتبار ظهوره هو الكون الجامع ، أي النشأة العنصريَّة الانسانيَّة التي هي آخر تنزلات الوجود ، فيكون حاصراً للأمر الإلهي ، لأنَّ كل سافل محيط بالعالي فيكون محيطاً بسائر الموجودات ، لأن الامر باصطلاحهم عبارة عن اظهار حكم الوحدة في عين الكثرة ، المعبَّر بالحركة الايجاديَّة تارة و النكاح الساري اخرى ، كما ان النسى عبارة عن اظهار حكم الكثرة و رجوعها إلى الوحدة .
+إذا عرفت هذا ، فاعلم : انَّ النسبة الإلهيَّة على ما هو مقتضى الوحدة الذاتيَّة ، استدعت ان تكون الحركة الايجاديَّة دوريَّة
+
+استرجاعيَّة ، كما سيجيء تحقيقه انشاء اللَّه تعالى . فالمدد الالهىِّ الذي يتعيَّن من مطلق الفيض الذاتي و البرزخيَّة المشار إليها يصل إلى العقل الأول المكنَّى عنه بالقلم ، ثم اللوح ، ثم العرش ، ثم الكرسي ، ثم باقى الأفلاك ، فلكا بعد فلك ، ثم يسرى في العناصر ، ثم المولِّدات ، و ينتهى إلى الإنسان منصبغاً بجميع خواصِّ ما مرَّ عليه من المراتب .
+ثم ان كان الإنسان المنتهى إليه ذلك المدد ، المنصبغ ممّن ترقى ، و سلك و اتحد بمراتب النفوس و العقول ، و تجاوز عنها ايضاً بالمناسبة الذاتية اللازمة لصورته الاعتداليَّة حتى اتَّحد ببرزخيَّة التي هي مرتبة الأصليَّة ،
+
+فان المدد الواصل إليه بعد انتهائه في الكثرة إلى اقصى درجاتها ، و لا شكّ انّ لهذه الكثرة لا بُدَّ من صورة احاطيَّة لا يشذُّ عنها شيء ، و هي احديتها التي بها يصل إلى تلك البرزخيَّة التي هي من جملة نعوتها الواحديَّة التالية للوحدة الحقيقيَّة ، فتمَّ الدائرة حينئذ بالانتهاء إلى المقام الذي منه تعيَّن الفيض الواصل إلى العقل . تدبر هذا السر العظيم ، إذ به تعرف كيفيَّة توجُّهه من مبدئه و انبعاثه إليه ، و هو المظهر الكلى باطناً ، و الكون الجامع الحاصر للأمر الإلهي ظاهراً ، و هو الإنسان الكامل ، إذ هو الجامع بين مظهريَّة الذات المطلقة و بين مظهرية الأسماء و الصفات و الأفعال ، لما في شأنه الكليَّة ، من الجمعيَّة و الاعتدال ، و لما في مظهريته أي قابليَّته التي هي الحقيقة البرزخيَّة الجامعة من السعة و الكمال ، و هو الجامع ايضاً بين الحقائق الوجوبية و الامكانية ، و نسب الأسماء الإلهيَّة و الصفات الخلقيَّة ، ضرورة انَّ حقيقة التي هي قاب قوسين الوجوب و الإمكان ، منشأ سائر النسب و الصفات و الحقائق ، وجوبيَّة كانت أو امكانيَّة ، حقيَّة كانت أو خلقيَّة ، فهو جامع بين مرتبتى الجمع و التفصيل ، كما مرَّ ، محيط بجميع ما في سلسلة الوجود من المراتب . و قوله : « ليظهر فيه بحسبه » متعلق بقوله : « انبعث » أي ذلك الانبعاث المذكور نحو هذا المظهر الكلى انّما هو ليظهر فيه بحسبه من احديَّة جمعيَّته .
+و ملخّصه ، انّه أراد ان يظهر على نفسه في شأن من شئونه الكليَّة الجامعة لجميع افراد شئونه بحسب ذلك الشأن ، فانّه لا يمكن ان يظهر
+
+بحسب جامعيَّته واحديَّة جمعيَّة الكماليَّة ، الا في شأن جامع كذلك ، شريف لا يمكن مثله ، إذ ليس كمثله شيء ، فيدرك فيه ذاته من تلك الحيثيَّة الجامعة التي ليس ورائها امكان أصلًا بتلك الجهة الكاملة الاحاطيَّة ، فهذا هو الغاية للحركة الايجاديَّة و السَّراية الحُبِّية ، المعبَّر عنها هاهنا بالانبعاث .
+
+### Commentary — English
+
+I say: the author has explained that neither the first disclosure, the presence of gathering, nor the second, the domain of differentiation, is suitable for the manifestation in question. There must therefore be an impulsion toward a locus joining gathering and differentiation. This impulsion is volitional, because its principle is a specifying act of knowledge prior in rank. The movement toward what is specified is consequently volitional, not an involuntary necessitation of the kind ascribed here to the Peripatetics.
+
+Considered inwardly, what is sought is the universal locus of manifestation: the human reality, the isthmus joining necessity and possibility and encompassing the realities belonging to both. Considered outwardly, it is comprehensive being: the elemental human constitution, the last descent of existence. It therefore comprehends the divine affair, since every lower level encompasses the higher, and so it encompasses all existents. In their terminology, command means making the governing property of unity manifest within multiplicity. This is expressed at one time as the existential movement and at another as the all-pervading conjunction. The contrasting expression in the source—printed as al-nasī, with its wording uncertain—means making multiplicity's governing property manifest and returning it to unity.
+
+Know, then, that the divine relation, in accordance with essential unity, requires the movement bringing things into existence to be circular and returning, as will be explained. The divine replenishment determined from unrestricted essential effusion through the isthmic reality just mentioned reaches the First Intellect, designated the Pen; then the Tablet, Throne, Footstool, and remaining spheres, one after another. It then pervades the elements and generated beings, finally reaching the human being, coloured by the distinctive properties of every level through which it has passed.
+
+Suppose that the human recipient of this replenishment ascends by spiritual wayfaring, unites with the levels of souls and intellects, and passes beyond them through the essential affinity necessarily accompanying his balanced form, until he unites with the isthmic reality which is his original level. The replenishment has reached the furthest degree of multiplicity in him. That multiplicity must possess an encompassing form from which nothing escapes: its oneness. Through this oneness he reaches the isthmic reality, among whose qualifications is the unitive character next to genuine unity. The circle is then completed by reaching the station from which the effusion arriving at the Intellect was first determined.
+
+Reflect on this great mystery. Through it you will understand the orientation from its principle and the movement toward it: inwardly the universal locus, outwardly the comprehensive being embracing the divine affair. This is the Perfect Human. He joins manifestation of the unrestricted essence to manifestation of the names, attributes, and acts, through the comprehensiveness and balance of his universal constitution and the breadth and perfection of his receptivity, the comprehensive isthmic reality.
+
+He also joins necessary and possible realities, the relations of the divine names and the attributes of creatures. The reality expressed as the distance of the two bows of necessity and possibility is the source of all relations, attributes, and realities, whether necessary or possible, belonging to the Real or to creation. He therefore joins gathering and differentiation and encompasses every level in the chain of existence. The words ‘so that He may manifest in him according to him’ depend on ‘He was impelled’: this impulsion toward the universal locus is for manifestation according to that locus's comprehensive oneness.
+
+In sum, He wills to manifest Himself to Himself in a universal affair encompassing all the particulars of His affairs, according to that affair. His comprehensiveness and perfected comprehensive oneness can appear only in such an encompassing, noble affair, whose like is not possible: nothing else is like it. In it He apprehends His essence under that comprehensive consideration beyond which no further possibility remains, through its perfect, encompassing aspect. This is the goal of the existential movement and the loving pervasion expressed here as impulsion.
+
+### Textual and translation notes
+
+1. The displayed النسى in the sentence contrasting divine command with a return to unity is uncertain; it may conceal another term. The English marks it instead of silently substituting a conjecture. النسبة / السنة is a separate reported alternative in the next sentence.
+2. The cosmological sequence belongs to the author’s metaphysics. The words union, descent, and return are retained in that framework rather than converted into a physical journey.
+3. The relative clause about the human recipient and the replenishment is syntactically compressed across pages 182–183. The English supplies sentence divisions but does not claim to recover omitted Arabic.
+4. The final ‘nothing else is like it’ refers locally to the comprehensive affair/locus under discussion. The translation does not turn it into an unqualified identity claim about any empirical human individual.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( لا ايجاباً - خ ); ( بالتالى - خ ); ( السنَّة - خ ); ( بالبرزخيَّة - خ ); ( إليه - خ ); ( الوحدانيَّة - خ ); ( نشأته - خ ); [ بين - ظ ]; ( قوسى - خ )
+
+---
+
+## SH-040-B — Objection: why are divine self-knowledge and the First Intellect insufficient?
+
+**Source:** A, printed pp. 184–185
+
+https://ablibrary.net/book_content/b/17638/380?lang=ar
+
+### Additional ancestral quotation after QT-040
+
+« فلئن قيل : ان الواجب لذاته ، انّما يعقل ذاته بحصول ذاته لذاته ، و يعقل معلوله الأول الذي يعقل الأشياء كلُّها بحصول صوره المفصلة فبه ، و بحصوله له . و بحضوره عنده ، لاقتضائه ايّاه ، و إيجابه له ، و افاضته عليه جميع ما يحصل فيه من تلك الصور المفصَّلة . ثمَّ انَّه انَّما يعقل الأشياء كلها ، علماً غيبياً اجمالياً على ما ذهبتم إليه ، و يعقلها ايضاً بحصول صورها المفصَّلة فيها في الخارج علماً تفصيلياً ، فهو بحقيقته الواحدة بالوحدة الحقيقيَّة ، بعقل الأشياء كلَّها ، و يدركها بالوجهين جمعياً . و اما الجزئيّات الماديَّة الحادثة فانَّما يدركها على وجه يليق به ، و بكماله الحقيقي أي على الوجه الكلى ، لا على الوجه الذي يلزم منه النقص و التغيُّر في ذاته » .
+
+An objection may be raised: the Necessary through Himself apprehends Himself through His own essence being present to Him. He apprehends His first effect, which apprehends all things through their differentiated forms occurring within it, through that effect's being present to Him, since He requires and necessitates it and bestows upon it all the differentiated forms occurring within it.
+
+Moreover, according to your position, He apprehends all things through unseen, undifferentiated knowledge. He also apprehends them through the occurrence of their differentiated forms externally, in detailed knowledge. By His genuinely one reality He therefore apprehends all things and knows them in both ways together. As for originated material particulars, He apprehends them in the manner appropriate to Himself and His real perfection: universally, not in a manner entailing deficiency and change in His essence.
+
+### Commentary — Arabic
+
+أقول : بعد فراغه عن تحقيق - ذلك - الأصل الكلى ، و بيان ان الإنسان هو الغاية للحركة الايجاديَّة على ما هو مقتضى طريقهم ، يشير إلى دفع ما يرد عليه ، و على طريقهم الموصل إليه بحسب القواعد الحكميَّة و القوانين الجدلية فيها ، ان الواجب لذاته بما له من الظهور على الوجه المذكور ، مستغن عن مظهر غير ذاته في ظهوره على نفسه . و على تقدير التسليم ، فالعقل الأول كاف في ذلك ، و ذلك لأنَّ الواجب لذاته انَّما يعقل ذاته بحصول ذاته لذاته كما سبق بيانه ، و يعقل ايضاً معلوله الأول الذي يعقل الأشياء كلَّها ،
+
+بحصول صورها المفصَّلة فيه ، كذلك بحصوله و بحضوره عنده ، لما عرفت ان الاقتضاء و الإيجاب انما يستدعيان حصول الموجب و حضوره عند الموجب ، بضرب من النسبة ، شديدة الارتباط ، و كان المعلول الأول هاهنا حاصلًا عند الواجب حاضراً عنده بما اشتمل عليه من الصور المفصَّلة فيه ، لاقتضائه ايّاه ، و إيجابه له ، و افاضته عليه جميع ما هو حاصل فيه من الصور .
+و ايضاً ، فان الواجب يعقل الأشياء كلها علماً غيبياً اجمالياً بحصول ذاته لذاته في التعيُّن الجامع على ما ذهبتم إليه ، و يعقلها ايضاً بحصول صورها المفصَّلة فيها في الخارج علماً تفصيلياً في النفس الرحمانى ، فالواجب بحقيقته الواحدة بالوحدة الحقيقيَّة يعقل الأشياء كلها و يدركها بالوجهين الإجمالي و التفصيلي ، فما جعلتم غاية للحركة الايجاديَّة و السريان الذاتي لا يصلح للغاية لحصولها بدون الحركة .
+فلئن قيل : الغاية للحركة الايجاديَّة انّما هو الإدراك التفصيلي للأشياء مطلقا ، كليّاتها و جزئيّاتها ، و الواجب بوحدته الحقيقيَّة انما يدرك الكليات منها على هذا الوجه دون الجزئيّات .
+قلنا : لا نُسَلِّم عدم ادراك الواجب الجزئيّات مطلقاً ، بل يدركها على وجه يليق بكماله الحقيقي ، أي على الوجه الكلى ، لا على الوجه الذي يلزم منه النقص و التغيُّر ، فانَّه يمتنع ان يتوجه الحق نحو هذا التوجه - الوجه - بالارادة الإلهيَّة ، و لا يلزم من عدم إدراكه على هذا الوجه عدم إدراكه مطلقا ، و إلى دفع هذا السؤال أشار بقوله :
+و امّا الجزئيّات . . .
+
+### Commentary — English
+
+I say: after establishing this universal principle and explaining that the human being is the goal of the movement bringing things into existence according to their method, the author turns to objections against both the claim and the route leading to it, formulated according to philosophical principles and dialectical rules. One objection is that the Necessary through Himself, possessing manifestation in the manner described, needs no locus other than Himself in order to manifest Himself to Himself. Even if another locus is conceded, the First Intellect suffices.
+
+The Necessary apprehends Himself through His own essence being present to Him, as explained. He likewise apprehends His first effect—which apprehends all things through their differentiated forms within it—through that effect's being present to Him. Necessitation entails the necessitated thing's presence to its necessitating principle through a closely binding relation. The first effect is accordingly present to the Necessary with all its differentiated forms, because He requires and necessitates it and bestows every form present in it.
+
+Moreover, on your own account, the Necessary knows all things through an unseen, undifferentiated knowledge by His essence's presence to itself in the comprehensive determination. He also knows them in detail through the occurrence of their differentiated forms externally in the Breath of the All-Merciful. By His genuinely one reality He therefore apprehends all things both comprehensively and in detail. What you have proposed as the goal of the existential movement and essential pervasion cannot be its goal, since it is attained without that movement.
+
+It may be replied that the goal is detailed apprehension of things without qualification, universals and particulars alike, whereas the Necessary through His genuine unity apprehends only universals in this way. We answer that His apprehension of particulars is not denied without qualification. He apprehends them in the manner appropriate to His real perfection: universally, not in a way entailing deficiency and change. It is impossible for the divine will to aim at the latter manner. Failure to apprehend particulars in that way does not entail failure to apprehend them altogether. The author's words ‘As for particulars…’ address this possible reply.
+
+### Textual and translation notes
+
+1. This is an objection being developed before the subsequent replies. It is not the commentator’s final rejection of the comprehensive human locus.
+2. A separate ancestor quotation and commentary occur before QT-041. Both are preserved without renumbering the existing matn corpus; the bridge translation remains separately labelled.
+3. The distinction is between denying knowledge of particulars altogether and denying a change-entailing mode of knowing them. ‘Universal manner’ is not translated as ignorance of individuals.
+4. Reported electronic apparatus strings, not independent manuscript readings: ( عينياً - خ ); ( بالوجه - خ ); ( الإرادة - خ ); ( إدراكها - خ )
+
+---
+
+## SH-041 — Seeing in a mirror: intellectual apprehension, sensible forms, and transcendence
+
+**Source:** A, printed pp. 186–189
+
+https://ablibrary.net/book_content/b/17638/382?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا إشارة إلى ما ذكره الشيخ محيي الدين « قدس سرُّه » في فصوص الحكم إيماءً ، بدفع الشبهة المذكورة ، و هو ، انَّ رؤية الشيء نفسه بنفسه بدون تميّز المظهر من المظاهر و استقلاله بظهور أحكامه الخاصة به ، ما هي مثل رؤيته نفسه في امر آخر يكون متميِّزاً في الوجود عيناً و حساً بظهور أحكامه ، كالمرآة فانّه يظهر له نفسه في صورة يعطيها المحل المنظور فيه ممّا لم يكن يظهر له غير وجود هذا المحل ، و ذلك لأنَّ القابل له تأثير في الظاهر فيه بإعطائه ايّاه صورته التي اظهر لها ، فإنها بخصوصياتها متفرِّعة على تأثير متولِّد منه ، كما أشار إليه بقوله :
+رئيس الموحِّدين حسين بن منصور الحلاج ، في قوله : « ولدت امّى أباها ان ذا ، من عجبات » ثم أورد عليه المصنف ، انه لو أريد بالرؤية فيه ، الإدراك المنسوب إلى البصيرة ، و هو الإدراك العقلي ، فالأمر الذي يصحُّ ان يكون مرآةً لرؤيته فيه ، هو العقل الأول ، لتميُّزه في الوجود و استقلاله ،
+
+ضرورة كونه من معلولاته ، و اختصاصه بالتعيُّن الامكانى ، و لو أريد بها الإدراك المنسوب إلى الباصرة و هو الإدراك الجزئى ، فمن البيِّن ان الواجب لذاته لا يكون جزئياً لما عرفت ان كل ما هو معروض للتشخُّص و التعيُّن اللذين بهما يصير الشيء جزئياً ، لا بُدَّ و ان يكون من الممكنات ، و كيف لا ، و انّ - فان - كل مرئى بالقوة الباصرة لا يخلو من ان يكون إدراكها له اما اولًا و بالذات ، أو ثانياً و بالعرض ، و كلُّ مرئى بالذات برؤية الباصرة ، لا بُدَّ و ان يكون عرضاً جسمانياًّ ، و ذلك لأن الرؤية الباصرة ، لا بُدَّ و ان يكون عرضاً جسمانياًّ ، و ذلك لأن الرؤية اما لخروج الأشعَّة أو بالانطباع ، و الأشعَّة انّما تنتهي إلى السُّطوح الملونة ، كما ان الانطباع لا يكون الا من شأنها ، و كلُّ ما هو مرئى بالعرض برؤية الباصرة ، فهو مادى ، جسماً طبيعياً كان ، أو جسمانياًّ . لكن هاهنا محلُّ بحث ، و هو ان كان المراد بقولكم : ان الإدراك المنسوب إلى الباصرة هو الإدراك الجزئىّ المتعلق بالأعراض الجسمانيَّة ، انّ ما حصل للعقل بتوسط هذه الآلة مطلقا ينحصر فيه ، فممنوع ، لما ثبت عندكم من وجود الكلى بعد الكثرة . و ان أردتم به ، انّ الإدراك المنسوب إلى هذه الآلة من حيث كونه صادراً منه اولًا كذلك ، فعلى تقدير تسليمه لا شك ان للعقل ان يجرِّد الصورة الموصلة إليه بواسطة الآلات أصلًا عن اللواحق الخارجيَّة ، فلا يصحُّ ان يقال ، ان العقل لا يدركها مطلقا ، سيّما عند مَن هو معترف بوجود الكلى الطبيعي الخارجي .
+و إذا تقرَّر هذا ، فلا يلزم ان يكون الواجب غير مدرك بوساطة الآلات أصلًا .
+
+فلئن قيل : انّ ما يكون متعلّقاً لهذا الإدراك من حيث هو كذلك ، يجب ان يكون محفوفاً بالعوارض الماديَّة الخارجيَّة ، و الواجب من حيث انَّه واجب يمتنع ان يكون كذلك فلا يصحُّ نسبة الرؤية إليه .
+قلنا : انَّ ما يعطيه المحل المنظور فيه ، لا بُدَّ و ان يكون من اللَّواحق الخارجيَّة للطبيعة الواجبيَّة ، حتى يصحُّ اسنادها إلى المحل ، فالتباسها بتلك الملابس المظهرة لها في المدارك من الغاية المطلوبة الباعثة للحركة الايجاديَّة ، فيجب ان يكون مشاهدة مدركة بهذه الحيثيَّة ، نعم يلزم ان لا يطلق عليه حينئذ اسم الواجب ، لأنَّ الأسماء توقيفيَّة عندهم كما سبق الإيماء إليه ، لكن لا يلزم من عدم اطلاق هذا الاسم عليه في مرتبة من المراتب ، ان لا يكون تلك الحقيقة مرئيَّة مطلقا .
+و الشيخ ما أطلق عليها هذا الأسم من هذه الحيثيَّة ، بل انَّما أطلق عليها اسم الحق لا مطلقا ، بل من حيث أسمائه الحسنى .
+و يؤيِّد ما قلنا ، قول بعض الأئمة : « لم اعبد ربّا لم اره » و كذلك قول الشيخ في مواضع متفرقة ، كقوله : « فلا تنظر العين الا إليه ، و لا يقع الحكم الا عليه » و قوله : فان قلت : محجوب ، فلست بكاذب ، و ان قلت :
+مرئيّاً فذاك الذي أدرى . و أمثاله ممّا لا يحصى في كلامهم . هذا كلّه إذا نسب الرؤية المذكورة إلى الحقيقة الحقَّة من حيث إطلاقها و ظاهريَّتها في مقام قرب النوافل ، و اما إذا نسب إليها لا من حيث تقيُّدها و مظهرها الخلقيَّة العبديَّة ، فسائر المدارك و المشاعر متساوية في عدم ادراك جماله ، و العقل كالحس قاصر عن الوصول إلى سرادق جلاله ، لعدم المناسبة
+
+بين الحادث و القديم ، حيث قال الشيخ في الفتح المكّى في هذا البحث :
+و ان أطلقت المناسبة يوماً عليه كما أطلقها الامام الأوحد أبو حامد الغزالي « رضى اللَّه عنه » في كتبه ، و غيره ، فبضرب من التكلُّف و بمرمى بعيد عن الحقائق ، و الا ، فأيُّ نسبة بين المحدث و القديم ، امّ كيف - يشبه - نسبته ، نسبة من لا يقبل المثل ، إلى مَن يقبل المثل ، هذا محال » .
+اعلم ان نسبة هذا الكلام من المصنّف هاهنا ، انّما وقع في معرض التشكيك من حيث انَّه في صدد توجيه المسألة و ايراد الشبهة ، لكن لمَّا لم يكن في تقرير الاجوبة ما يتعلق بهذا الكلام ، وجب التعرُّض لجوابه حتى يتوهم ، انَّه انما ذكر للتحقيق .
+
+### Commentary — English
+
+I say: this refers to what Shaykh Muḥyī al-Dīn says in the Bezels of Wisdom, intimating an answer to the preceding difficulty. A thing's seeing itself through itself, without a locus distinguished from what manifests in it and independently displaying its own properties, is not like its seeing itself in something else. The latter is externally and sensibly distinct through the manifestation of its properties, like a mirror: the thing sees itself in the form supplied by the locus in which it is viewed, which would not appear without that locus. The recipient influences what appears within it by supplying its own form; the form's particular character follows upon the recipient's reception of that influence. Al-Ḥallāj expresses this in the words, ‘My mother gave birth to her father: this is among the marvels.’
+
+The author objects that, if seeing here means the apprehension attributed to inward sight—that is, intellectual apprehension—the First Intellect can serve as the mirror. It is distinct in existence and independently established, since it is an effect and possesses its own possible determination. If seeing instead means apprehension by eyesight, a particular apprehension, the Necessary through Himself plainly cannot be particular. Anything subject to individuation and determination, through which it becomes particular, must be possible. Moreover, anything seen by the visual faculty is apprehended either primarily and intrinsically or secondarily and incidentally. What is seen intrinsically must be a bodily accident, since sight occurs either through the emission of rays or through an impression: rays terminate at coloured surfaces, and those surfaces are what can produce the impression. What is seen incidentally is material, whether a natural body or something bodily.
+
+But this argument admits discussion. If by saying that visual apprehension concerns bodily accidents you mean that whatever reaches intellect through this instrument is confined to them, this is denied: you yourselves establish the universal after the many. If you mean only that the instrument's primary act of apprehension is such, then, even granting this, intellect can abstract from the external concomitants of the form conveyed through the instruments. It is therefore incorrect to say that intellect cannot apprehend that form at all, especially for someone who admits the externally existing natural universal. It does not follow that the Necessary is altogether unapprehensible through the mediation of instruments.
+
+One may object that what is apprehended in this manner must be surrounded by material, external attributes, whereas the Necessary insofar as necessary cannot be so qualified; seeing therefore cannot be attributed to Him. We reply that what the viewed locus supplies must be among the external concomitants of the necessary nature, for otherwise it could not be ascribed to that locus. The nature's appearing clothed in these forms within faculties of apprehension is part of the intended goal motivating the existential movement. It must therefore be witnessed and apprehended under this consideration. Admittedly, the name Necessary should not then be applied, since, as indicated, the names have their appointed domains. But the nonapplication of this name at one level does not entail that the reality is altogether invisible.
+
+The Shaykh does not apply that name to it under this consideration. He calls it the Real, and not without qualification, but insofar as it bears the most beautiful names. This is supported by the saying attributed to one of the Imams, ‘I have not worshipped a lord whom I have not seen,’ and by the Shaykh's statements in various places: ‘The eye looks upon none but Him, and judgment falls upon none but Him’; and, ‘If you say hidden, you do not lie; if you say seen, that is what I know.’ Similar statements are innumerable in their writings.
+
+All this concerns the attribution of seeing to the true reality with regard to its unrestrictedness and manifestation at the station of proximity through supererogatory works. If, however, seeing is attributed to it without consideration of its restriction and its creaturely loci of servanthood, all faculties of apprehension and awareness are equally incapable of apprehending its beauty. Intellect, no less than sense, falls short of reaching the pavilion of its majesty, because the originated and the eternal have no affinity. Concerning this, the Shaykh says in the Meccan Opening: ‘If affinity is ever predicated of Him, as the unique Imam Abū Ḥāmid al-Ghazālī and others predicate it in their books, this involves a certain strain and an intention remote from the realities. Otherwise, what relation could there be between the originated and the eternal? How could the relation of what admits no likeness resemble that of what does admit likeness? This is impossible.’
+
+Know that the author's earlier argument occurs here in the course of raising difficulties and formulating objections. Since his subsequent replies do not address this particular argument, it was necessary to answer it here [lest it be mistaken for his settled position].
+
+### Textual and translation notes
+
+1. The objection about what eyesight can apprehend is followed by the commentator’s own qualification. The change of argumentative voice is preserved.
+2. The optical alternatives are the medieval source’s, not contemporary science. An evident repeated clause about visual apprehension on p.187 is rendered once in English and retained in the raw Arabic.
+3. The two statements about seeing at the end are translated with their qualifications intact. The first includes إطلاقها وظاهريتها; the second excludes the consideration of created loci. No theological harmonization replaces the wording.
+4. The final displayed حتى يتوهم appears to lack a negation. The bracketed English gives the contextual purpose; this is an explicitly marked interpretation, not a witnessed manuscript correction.
+5. The sayings attributed to al-Ḥallāj, an Imam, Ibn Arabi, and the report concerning al-Ghazālī are transmitted as the commentator’s quotations. Their independent historical authentication is not claimed.
+6. Reported electronic apparatus strings, not independent manuscript readings: ( بخصوصيّتها - خ ); ( تأثُّره متولدة - خ ); ( منها - خ ); ( اعترف - خ ); ( يدركه - خ ل ); ( الوصف - خ ); ( الأسئلة - خ )
+
+---
+
+## SH-042 — Does the comprehensive human mirror actually disclose every level?
+
+**Source:** A, printed pp. 190–193
+
+https://ablibrary.net/book_content/b/17638/386?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا ايراد على ما ذهب إليه السائل ، من انّ صلاحيَّة المرآتيَّة ، انَّما هي للعقل الأول ، و ان الكون الجامع ليس له صلاحيَّة ذلك أصلًا .
+و بيانه ، ان العقل الأول لاختصاصه بمرتبة واحدة من مراتب تلك الحقيقة ، لا يصلح لأن يكون مرآة لصورتها الجامعة لسائر صفاتها الكماليَّة من الجلالية و الجماليَّة و مراتبها الجلائيَّة و الاستجلائيَّة و انَّما يصلح لذلك ، ان لو كان له بحسب كلِّ مرتبة من تلك المراتب نسبة خاصة لا اختصاص له بمرتبة دون اخرى ، بل يكون لكل منها ، فيه حصَّة بها يصحُّ ان يكون مرآة لها بما فيها من الأفراد ، حتى يصح ان يكون مرآة للصورة الجامعة ، مظهرة ايَّاها بجميع ما هي عليه من غير تحريف و لا تغيير ، فحينئذ ، لا يصلح لتلك المرتبة الا الكون الجامع الذي لا اختصاص له بمرتبة دون اخرى ، بل ما من مرتبة الا و فيه منها جزء ، كما ستعرفه ، و لهذا يظهر به ساير الأسماء و الصفات و جميع التعيُّنات ، و هو في مظهريَّته لها موقياً ايَّاها عن التحريف و التغيير ، إذ ما من قابل من القوابل الامكانيَّة يقبل فيضان الصور الكونيَّة ، من المبدأ المقدس على نحو من القبول أو القوابل الوجوبية ، يظهر فيه الصور الأسمائية ، على ضرب من التعين الا و في الإنسان الكامل ، مثال ذلك على وجه اكمل
+
+لجامعيَّته الكمالات الجلائيَّة و الاستجلائيَّة ، و الظهوريَّة و الاظهاريَّة 
+
+على ما عرفت .
+و جواب - فجواب - ذلك ، انّ الكون الجامع انَّما يصلح لتلك المرآتية
+
+لو أدرك الناظر فيه بسائر الأسماء و الصفات في المراتب الموجودة فيه على ما هي عليه ، و ليس كذلك ، ضرورة ان الحقيقة السارية في كل المظاهر هاهنا التي هي الناظر في الحقيقة لوحدتها الحقيقيَّة ، غير مدركة بجميع المراتب الموجودة في كونها الجامع حين ينظر إليه ، و الا لزم ان يكون جميع الأفراد الانسانيَّة مدركاً لها على الوجه المذكور ، و ليس كذلك . بل انَّما يدرك الحقيقة صورتها هاهنا في بعض المراتب فقط ، كما هو المشاهد ، فيكون ادراك بعض الأسماء تعقُّلا غيبيَّاً لا غير ، و متى تحقق هذا ، فمن البيِّن ، انّ مرآتيَّة الكون الجامع ليست للصورة الجامعة ، لعدم إراءته جميع المراتب مطلقا .
+
+### Commentary — English
+
+I say: this objects to the questioner's claim that only the First Intellect is suited to be a mirror and that comprehensive being has no such suitability. The First Intellect is confined to one level of the reality. It therefore cannot mirror the form comprehending all its perfective attributes of majesty and beauty and all its levels of disclosure and self-beholding in disclosure. It could do so only if it had a specific relation to every level, without being confined to one rather than another. Each level would need a share within it, through which it could mirror that level with all its particulars. Only then could it mirror the comprehensive form, displaying everything belonging to it without distortion or alteration.
+
+Consequently, only comprehensive being is suitable for this rank. It is not confined to one level rather than another; there is no level of which it does not possess a part, as will be explained. All names, attributes, and determinations can therefore manifest through it, and in manifesting them it protects them from distortion and alteration. Whether a possible receptivity receives the effusion of cosmic forms from the holy Principle in a particular manner, or a necessary receptivity manifests the forms of the names through a particular determination, the Perfect Human contains a counterpart of it in a more complete manner. He comprehends the perfections of disclosure and self-beholding, of appearing and making manifest, as already explained.
+
+The reply to this claim is that comprehensive being could serve as such a mirror only if what looks within it apprehended all the names and attributes at the levels present within it as they are. But this is not the case. The reality pervading all manifestations, which in truth is the one looking because of its genuine unity, is not apprehended through all the levels present in its comprehensive being when it looks within it. Otherwise every human individual would apprehend it in the described way, which does not happen. As experience shows, the reality apprehends its form here only at some levels. Some of the names are therefore apprehended only intellectually and unseen. Comprehensive being cannot then be a mirror for the comprehensive form, because it does not display every level without qualification.
+
+### Textual and translation notes
+
+1. The section first formulates the defence of the human mirror and then a renewed objection. The final objection is not presented as the commentator’s definitive conclusion.
+2. The extremely short main-text continuations on pp.191–192 are retained and joined to their sentence; their surrounding long modern notes are excluded.
+3. The terms disclosure/self-beholding and appearing/making manifest remain distinct. The premise about every empirical human individual is part of the objector’s challenge to be answered later.
+4. Reported electronic apparatus strings, not independent manuscript readings: ( تعقلياً - خ )
+
+---
+
+## SH-043 — Could the whole cosmos, rather than one human, be the comprehensive mirror?
+
+**Source:** A, printed pp. 195–197
+
+https://ablibrary.net/book_content/b/17638/391?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا إشارة إلى إبطال القول بالمرآتيَّة و الظاهريَّة و المظهريَّة مطلقا ، و بيان ذلك : انّ صلاحيَّة مرآتية الإنسان الكامل بل مرآتيَّة شيء من الموجودات بخصوصه للحقيقة الحقَّة غير متصوَّرة بوجه من الوجوه ، فإنه لو أمكن ان يكون هاهنا شيء يصلح للمرآتيَّة ، كان العالم الكبير هو ذلك الشيء ، و هو ايضاً لا يصلح لها . و ذلك لأن حقيقة الحقَّ و صورته الحقيقيَّة لا يخلو من ان يكون هي نفس الحقيقة الانسانيَّة أو غيرها ، و الثاني منحصر في القسمين ، إذ لا يخلو من ان يكون هي حقيقة الوجود المطلق ، أو الوجود المقيَّد المتعيَّن بجميع التعيُّنات ، ضرورة ان المقيِّد
+
+بتعيُّن خاص من مطلق التعيُّنات مقابل للتعيُّنات ، قد أبطله الدلائل السالفة بالوجوه المبيَّنة - البيِّنة - المذكورة ، فلو كان الأول ، يعنى الحقيقة الحقَّة ، نفس حقيقة الإنسان ، فامتناعه ظاهر ، ضرورة انَّه لم يبق حينئذ فرق بين الظاهر و المظهر و المرآة و المرئي ، و ذلك بيِّن الاستحالة ، و لو كان الثاني ، هو ان تكون تلك الحقيقة هي حقيقة الوجود المطلق ، فلانه يلزم حينئذ ان يكون سائر افراد الموجودات ، لها صلاحيَّة المرآتيَّة ، فيكون غير الإنسان الكامل له هذه الصلاحيَّة سيَّما العقل المجرَّد الذي هو أقرب رتبة و اقدم صلاحيَّة و أدومها ، فلا اختصاص للإنسان بهذه الصلاحيَّة ، بل و لا شيء من الموجودات .
+و اما الثالث ، و هو ان يكون تلك الحقيقة هو الوجود المتعيَّن بجميع التعيُّنات و ساير الصفات و الإضافات ، فلانَّه حينئذ يلزم ان لا يصلح لمظهريَّتها الا مجموع العالم الكبير بجميع اجزائه ، فان له ايضاً صورة وحدانيَّة ، لأن مجموع أجزاء العالم الكبير الواحد بالموضوع و بالهيئة الصوريَّة الاجتماعيَّة ، مثل مجموع الإنسان المتألِّف من النفس المجرَّدة و القوة العاقلة و الحاسَّة و البدن المادي الإنساني . فلو صحَّ ان يقال : انّ هاهنا وحدة حقيقيَّة و صورة طبيعيَّة نوعيَّة ، لصحّ ان يقال : انّ هناك ايضاً أي في العالم الكبير وحدة حقيقيَّة و صورة طبيعية نوعيَّة هي المدبِّرة المتصرفة الموجدة لجميع اجزائه المدركة بها جميعا ، أي كليّاتها و جزئيّاتها على ما تقولون به ، فإنه خلاف مذهب السائل ، مع ان من جملة أجزاء العالم انواعاً غير متناهية وجد بعضها
+
+في الأزمنة الماضية ، ثم انقرض بالكليَّة كالحوادث و وجد بعضها في الأزمنة الحاضرة ، ثم انها تنقرض بالكليَّة في الأزمنة المستقبلة كالحوادث المقارنة لهذا الزمان ، و وجد البعض الباقي منها في الأزمنة الآتية ، مع انَّه لم يوجد في الأزمنة الماضية و الحاضرة ، لكنَّه انَّما يصير منقرضاً بعد زمان بالكليَّة كالأمور المقارنة للازمنة المستقبلة ، هذا ، مع ان جميع الكمالات الممكنة لنوع الإنسان لا يمكن حصولها لشخص واحد من الاشخاص الكاملين من ذلك النوع ، لأن افراد ذلك النوع مختلفون بحسب الاستعدادات الموجودة في الأزمنة الغير المحدودة ، فلو حصل لواحد منها جميع كمالات النوع يلزم ان يكون ذلك حاصراً لما لا يتناهى ، و ذلك محال . و إذا كان الأمر على هذا الوجه ، فلا يمكن ان يجعل فرد منهم من المظاهر التامَّة .
+فقوله : « فلا يمكن . . . » جواب الشرط المذكور ، أي لو صحَّ ان تكون الوحدة الحقيقيَّة مدركة و متصرفة في العالم الكبير المشتمل على الأجزاء الغير المتناهية المستدعى كل منها للكمالات الغير المتناهية ، لاستحال ان يجعل فرد من افراد تلك الأجزاء من المظاهر التامَّة الشاملة الكاملة بالنسبة إلى صورة تلك الحقيقة السارية في العالم الكبير بجميع اجزائه و كمالاته ، و كيف لا يستحيل ذلك ، و أنتم ذاهبون إلى انّ الكمالات المخصوصة لخاتم الأنبياء لا يمكن حصولها لنبي آخر ، و الكمال الذي لخاتم الأولياء ايضاً لا يمكن حصوله لولى آخر من الأولياء ، فكيف يمكن ان يكون واحد من افراد الإنسان الذي هو احد أجزاء العالم الكبير مشتملًا على جميع افراده و كمالاتها ، على تقدير ان لا يمكن حصول كمالات واحد من تلك الأجزاء لآخر .
+
+### Commentary — English
+
+I say: this seeks to invalidate the account of mirroring, manifestation, and a locus of manifestation altogether. The explanation is that the Perfect Human's suitability—or that of any particular existent—to mirror the true reality cannot be conceived in any way. If anything could serve as that mirror, it would be the macrocosm; yet that too is unsuitable.
+
+The true reality and its real form must either be the human reality itself or something different. The latter has only two possibilities: the reality of unrestricted existence, or existence restricted and determined by all determinations. Existence restricted to one particular determination standing opposite others has already been excluded by the preceding arguments.
+
+If the true reality is the human reality itself, the impossibility is evident: there would be no difference between what manifests and its locus, or between mirror and what is seen. If it is the reality of unrestricted existence, every other individual existent would also be suitable as its mirror. Something other than the Perfect Human would possess that suitability, especially the immaterial intellect, which is nearer in rank and earlier and more enduring in suitability. Neither the human being nor any other particular existent would possess it exclusively.
+
+If, third, the reality is existence determined by all determinations, attributes, and correlations, only the whole macrocosm with all its parts could manifest it. The macrocosm too has a unifying form. Its totality, one in subject and collective formal configuration, is comparable to the human totality composed of immaterial soul, intellectual and sensory—or intuitive—faculty, and material human body. If a genuine unity and natural specific form can be asserted here, they can likewise be asserted of the macrocosm: a natural specific form that governs, acts upon, and brings into being all its parts and apprehends them all, universals and particulars, according to your position. This is contrary to the questioner's doctrine [the displayed wording], yet the world's parts include indefinitely many kinds. Some existed in the past and vanished altogether; others exist in the present and will vanish; still others arise in future times without having existed in the past or present, and later vanish in turn.
+
+Moreover, no one perfected individual of the human kind can possess all the perfections possible for that kind. Its individuals differ according to preparednesses arising over unlimited times. Were one individual to possess all the kind's perfections, that individual would encompass what is without limit, which is impossible. On this account, no one individual can constitute a complete locus of manifestation.
+
+The words ‘It is therefore impossible…’ answer the preceding conditional. Even if genuine unity could apprehend and govern the macrocosm, with its unlimited parts each requiring unlimited perfections, one individual among those parts could not be a complete and comprehensive locus for the form of the reality pervading the whole macrocosm with all its parts and perfections. How could this be possible when you yourselves hold that the perfections peculiar to the Seal of the Prophets cannot belong to another prophet, and those of the Seal of the Friends cannot belong to another friend of God? If the perfections of one part cannot belong to another, how could one human individual—himself just one part of the macrocosm—contain all its individuals and their perfections?
+
+### Textual and translation notes
+
+1. The source begins this matn quotation without the opening guillemet found elsewhere. The separate أقول on p.195 must therefore be recognized independently; a parser demanding قال: « would incorrectly merge SH-043 into SH-042.
+2. The whole section develops an objection. Its suggestion that the cosmos has a substantial natural unity is not silently taken as the commentator’s settled ontology.
+3. الحاسة / الحادسة distinguishes sensory from intuitive faculty; both reported possibilities are acknowledged. The displayed خلاف مذهب has من مذهب as an alternative, which would reverse the remark about the questioner’s position.
+4. The argument appeals to unlimited succession of kinds and individuals and to distinct prophetic and saintly perfections. The translation does not replace that challenge with a merely numerical headcount.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( هناك - خ ); ( للتعيُّنات - خ ); ( أو الحادسة - خ ); ( فإنه من مذهب - خ ل ); ( المستدعية - خ ); ( للآخر - خ ل )
+
+---
+
+## SH-044 — Would the divine goal make the Necessary dependent on a possible being?
+
+**Source:** A, printed pp. 198–202
+
+https://ablibrary.net/book_content/b/17638/394?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذه تتمَّة الإيراد المبطل للمرآتيَّة و المظهريَّة مطلقاً ، و بيان ذلك انّه قد تبيَّن ، ان حقيقة الإنسان لا يصلح لتلك المظهريَّة ، فحينئذ لو جعل الصالح لها هو العالم الكبير بجملة اجزائه الكيانيَّة لزم المحال ايضاً ، لأنَّه لو صحَّ ان يجعل مرآة الحقيقة الحقَّة الواجبة العالم الكبير ، اعنى جميع أجزاء العالم الذي من جملته الإنسان و اشخاصه ، فحينئذ ادراك تلك الحقيقة ذاتها من حيث هي جامعة لجميع الكمالات الأسمائيَّة على النسق المذكور الذي هو عبارة عن ظهورها بسائر مراتب العالم حتى المحسوسات في نشأة جامعة لمرتبتى الظهور و الاظهار حائزة لمنقبتى الشعور و الاشعار اعنى النشأة الحقيقيَّة الانسانيَّة لو لم يكن من الكمالات الحقيقيَّة المؤثِّرة المرغوب فيها - المطلوب لذاتها ، لم يصلح ان يكون علَّة غائيَّة لإيجاد العوالم ، باعثة للحركة الحبيَّة الايجاديَّة
+
+على ما ذهبتم إليه ، و حينئذ يجب ان لا ينبعث نحوه الإرادة المخصِّصة و المحبة الذاتيَّة الإلهيَّة ، و لو وجب ان يكون من جملتها للزم ان يكون الواجب لذاته محتاجاً في شيء من كمالاته الحقيقيَّة إلى غيره الممكن بحسب ذاته الحادث من جهة نشأته متوقفاً كمالاته عليه ، فإذا كان مرآتيَّة العالم يستدعى الإدراك المذكور المستلزم لاحتياج الواجب و توقفه في كمالاته على غيره ، فلو صحَّ مرآتيَّته لزم ان لا يكون
+
+الواجب لذاته واجباً من جميع جهاته . فقوله : فلم يكن الواجب لذاته واجباً
+
+من جميع جهاته ، جواب الشرط المذكور . ثم أورد على هذا الكلام ، بان توقَّف تلك الحقيقة في كمالاتها على الكون الجامع ، أي النشأة الانسانيَّة ، لا يمكن ان يكون من حيث هي مغايرة لها ، فإنها بهذه الحيثيَّة معدومة مطلقا كما مرَّ غير مرَّة ، فلا يصلح لأن يكون موقوفاً عليها الكمالات الواجبة . فأجاب بأن توقفها على تلك النشأة انَّما هو من حيث اشتمالها على
+
+جميع القوابل و المظاهر المتكثِّرة حتى يصح ان يكون مظهراً لحقائق الأسماء و خصوصيّاتها ، و من حيث اشتمالها على النسبة الانضماميَّة التي لبعضها إلى بعض و ما يشبه تلك النسبة الانضماميَّة من انواع النسب - مثل التنافي و التقابل الموجب لتعاكس اشعَّة الاظهار و ظلال الظهور ، حتى يصلح لأن يكون مظهراً لتلك النسب الواقعة بين تلك القوابل ، فان خصوصيات القوابل انَّما يعرف بالنسب ، و لا شك ان الكون الجامع من هذه الحيثيَّة مغاير للواجب ، ضرورة من جهة الكثرة الامكانيَّة العدميَّة .
+
+### Commentary — English
+
+I say: this completes the objection invalidating mirroring and manifestation altogether. It has been argued that the human reality cannot serve as the locus in question. Suppose, then, that the suitable locus were the macrocosm with all its cosmic parts. An impossibility would still follow.
+
+If the macrocosm—the totality of the world's parts, including the human being and his individuals—could mirror the necessary true reality, then that reality's apprehension of itself as comprehending all the perfections of the names would occur in the order described. It would appear through every level of the world, including sensible things, in a constitution joining appearing and making manifest, apprehending and making apprehensible: the true human constitution. If this were not a real, preferred perfection sought for itself, it could not be the final cause for bringing the worlds into existence and the motive for the loving existential movement, as you maintain. Neither particularizing will nor essential divine love should then be directed toward it.
+
+If, on the other hand, it must be counted among such real perfections, the Necessary through Himself would need something other than Himself—possible in itself and originated in its constitution—for one of His real perfections, and would depend on it for that perfection. If the world's mirroring entails this apprehension, and that apprehension entails the Necessary's need and dependence on another, the success of that mirroring would mean that the Necessary through Himself is not necessary in every respect. The author's words ‘He would not be necessary in every respect’ are the consequent of the stated conditional.
+
+It is then objected that the reality's dependence for these perfections on comprehensive being—the human constitution—cannot be considered insofar as the constitution differs from the reality. Under that consideration the constitution is altogether nonexistent, as repeatedly explained, and cannot be that on which necessary perfections depend.
+
+The reply is that dependence concerns the constitution precisely insofar as it embraces all the multiple receptivities and loci of manifestation, making it suitable to display the realities and distinguishing characters of the names. It also concerns its inclusion of the relations of conjunction between those receptivities and other relations, such as incompatibility and opposition, which produce the mutual reflection of the rays of making manifest and the shadows of appearing. Through these it can manifest the relations obtaining among the receptivities, whose particular characters are known only through such relations. Under this consideration comprehensive being unquestionably differs from the Necessary: the difference arises from privative possible multiplicity.
+
+### Textual and translation notes
+
+1. This remains an objection to the proposed final causality of the human constitution. The later reply about possible relative attributes and intrinsic necessity must not be anticipated by silently weakening the objection.
+2. The source phrase الكمالات الحقيقية المؤثرة is taken in context as perfections preferred or desired for themselves, rather than assumed to mean efficient causal powers.
+3. Long modern notes span pp.199–201. Only the short continuous medieval main-text fragments are joined here; no modern explanation is imported to fill the apparent page gaps.
+4. Reported electronic apparatus strings, not independent manuscript readings: ( و الإلهيَّة - خ ); ( المطلوبة - خ ); ( لا يبعث - خ ); ( متوقعاً - خ ); ( فان - خ )
+
+---
+
+## SH-045 — Objection: does liberation from restrictions destroy human comprehensiveness?
+
+**Source:** A, printed pp. 203–206
+
+https://ablibrary.net/book_content/b/17638/399?lang=ar
+
+### Commentary — Arabic
+
+أقول : ما سبق من الإشكالات ، انَّما هي متعلِّقة بالقسم النظري من علومهم ، و هذه الإيرادات متعلقة بالقسم العملي منها من جملتها ، انَّهم قد اتَّفقوا على ان وصول الإنسان إلى الكمال الحقيقي أي بلوغها إلى مرتبة حقيقته الجامعة لسائر الأسماء و الحقائق كما عرفت لا يمكن الا بعد انحلال العقد الحاصلة له عند تطوُّره بالاطوار الاستيداعية و الاستقراريَّة ،
+
+و التخلُّص عن القيود الحاصلة في تلك المراتب مما اكتسب من كل واحد
+
+منها حين تلبّسه بها و تطوُّره بحسبها ، حتى يدخل في الانطلاق الأصلي و يحصل له الوصول إلى الإطلاق الذاتي الذي هو مقتضى تلك الحقيقة ، فيصل إلى الكمال الحقيقي الذي هو ادراك الحقائق على ما هي عليه ادراكاً حقيقيًّا عينياً ، فانَّه لا يحصل لأحد من السالكين هذه المرتبة عندهم ما لم يصلوا إلى مرتبة الإطلاق ، فان الإدراك الذي في كل مرتبة انَّما هو بحسبها مشوب باحكامها الخاصَّة بها . فالادراك
+
+الحقيقي و العلم اليقيني الذي هو الكمال عندهم لما ينكشف لهم عند الوصول إلى هذه المرتبة و سقوط ساير القوى الجسمانيَّة المدركة و المعيَّنة على الإدراك من الفاعليَّة و التأثُّر ، لئلّا يختلط المدركات الحقيقيَّة الكليَّة بأحكام تلك القوى من العوارض الخارجيَّة الحاجزة و اللواحق المادية المانعة عن ادراك الحقائق ، و يبقى على صرافتها الإطلاقيَّة ، حتى يتمكّن القوى القدسيَّة و العاقلة للتوجه بالكليَّة نحو القدس ، و انخراطها في سلك الملإ الأعلى من الأرواح المجرَّدة و العقول المقرَّبة ، به تحصيل وجوه المناسبات من دوام ملاحظته المبدأ الحق و الاستخلاص عن وجوه ما به التمايز ، كما ذكر . و لا يخفى انه حينئذ بمعزل في تلك الحالة عن استعمال القوى الجسمانية ، و إذا كان الأمر على هذا الوجه ، فلا اعتبار عندهم به مثل هذه الإدراكات من الحسِّية و الخياليَّة و الوهميَّة و الكفريَّة ، بل هذه الإدراكات كلَّها يكون عندهم مانعاً - مانعة - لحصول ما هو الكمال الحقيقي لديهم .
+و ايضاً ، اتفاقهم على ان الكمال الحقيقي لا يمكن تحصيله الا بقهر القوى الطبيعيَّة و تقوية القوى القدسيَّة و تبديل الأخلاق السيِّئة بالحسنة و ملازمة الأفعال الجميلة ، و يلزم منه ان يكون الإنسان الكامل هو المشارك للعقول المجرَّدة و الأرواح الكاملة في تمام الصفات ، فلا يمكن حينئذ ان يقال ، انه الكون الجامع ، إذ لا يوجد فيه على هذا التقدير ما هو مثل العفاريت و المردة ، و لا يماثل السباع و الوحوش و البهائم و الحشرات الموذية ما دام في هذه المرتبة . و من البيِّن ايضاً انّه لا يوجد فيه مطلقا في جميع مراتبه ما يماثل الأفلاك و الكواكب الغير القابلة للخرق و الالتيام المتحرِّكة على سبيل الاستمرار و الدوام ، مع عدم عروض الانقطاع ، لشهادة بديهة العقل بانّه ليس في الإنسان شيء كذلك .
+
+### Commentary — English
+
+I say: the preceding difficulties concern the theoretical part of their sciences; the present objections concern their practical part. One is that they agree that the human being's attainment of genuine perfection—reaching the level of his reality comprehending all names and realities—requires the dissolution of bonds acquired through his provisional and settled stages, and release from the restrictions acquired as he assumed each level and developed according to it. Only then does he enter original unrestrictedness and attain the essential absoluteness required by that reality. He thereby reaches genuine perfection: apprehending realities as they are through true and direct apprehension.
+
+According to them, no traveller attains this apprehension without reaching the level of unrestrictedness. Apprehension at any particular level is according to that level and mixed with its proper governing properties. The true apprehension and certain knowledge which they call perfection must therefore be what becomes unveiled upon reaching unrestrictedness, when the other bodily faculties that apprehend or assist apprehension cease their agency and reception. This prevents universal realities from being mixed with the faculties' limiting external attributes and material concomitants, which obstruct their apprehension. The realities remain in their unrestricted purity, enabling the holy and intellectual faculties to turn wholly toward holiness and enter the company of the higher immaterial spirits and proximate intellects. This occurs by acquiring affinities through continuous attention to the true Principle and release from the sources of difference.
+
+In that condition the person is plainly apart from employing bodily faculties. Sensory, imaginative, estimative, and discursive apprehensions therefore count for nothing on their account; indeed, they obstruct genuine perfection.
+
+They also agree that perfection can be acquired only by subduing natural faculties, strengthening the holy faculties, replacing bad character with good, and persevering in beautiful actions. It follows that the Perfect Human shares the complete attributes of immaterial intellects and perfected spirits. He cannot then be called comprehensive being, since on this supposition, while at this level, he contains nothing corresponding to rebellious spirits and demons, predators, wild animals, beasts, or harmful insects. Nor, at any level, does he contain anything resembling the celestial spheres and stars, which admit neither rupture nor reunion and move continually without interruption. Immediate intellectual judgment testifies that there is nothing of that kind in the human being.
+
+### Textual and translation notes
+
+1. This is a practical objection, not the final doctrine that bodily and intellectual faculties must be extinguished. Later sections explicitly answer it by distinguishing subordination from abolition.
+2. The source’s الكفرية in the list of faculties is contextually a corruption of الفكرية. ‘Discursive’ is an explicit contextual rendering, not an authenticated manuscript reading.
+3. The short authorial fragments on pp.204–205 are joined across intervening editorial notes. An untagged modern Persian note beginning هامش on p.205 is excluded.
+4. The astronomical claim about spheres unable to rupture or rejoin belongs to the historical objection and is not current physical science.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( هاهنا - خ ); ( تصوره - خ ); ( لا - خ ); ( حسياً - خ )
+
+---
+
+## SH-046 — Objection: an attainment beyond intellect would be inexpressible and unattainable
+
+**Source:** A, printed pp. 207–212
+
+https://ablibrary.net/book_content/b/17638/403?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذه شبهة اخرى دالَّة على امتناع حصول غايتهم المطلوبة و الوصول إلى غرضهم المرغوب فيه المسمّى بالكمال عندهم ، و ذلك لأنَّ الكمال الذي يقولون به كالأمر الممتنع ، لأنّ حصوله يستلزم امتناع إدراكه ، و كلَّما كان حصوله مستلزماً لامتناع إدراكه ، يكون ممتنع التحصيل ، فيكون الكمال المطلق عندهم ، امراً ممتنع التحصيل ، فيكون ممتنعاً . و بيان ذلك ، ان من الأصول المقرَّرة عندهم ، انّ الكمال الحقيقي المطلق لديهم لو وصل إليه السالك و أدركه ، لما امكنه ان يتصوَّر ذلك بالقوة العاقلة ، و يحاط بالصورة العقليَّة ، فانّ الآراء متفقة على ان للعقل طوراً خاصًّا في الإدراك ، لا يمكنه ان يتجاوز عنه كما هو حال ساير المشاعر ، فان لكلّ منها مرتبة مخصوصة في الإدراك ، و مدركات خاصَّة بها ، لا يتعلق ادراكاتهم الا بها في تلك المرتبة خاصة . فللعقل ايضاً مرتبة مخصوصة في إدراكه و مدركات خاصة لا يتجاوز إدراكه عنها ، فكما ان البصر مثلًا لا يقدر أن يتجاوز عن ادراك الكيفيّات المبصرة و يدرك الأصوات و النَّعم ، فكذلك العقل لا
+
+يمكنه ان يتجاوز عن ادراك الكليات المعقولة و يدرك الحقائق الكشفيَّة
+
+و المعاني الذوقيَّة ، فإذا امتنع ان يحاط الكمال المذكور بالصورة العقليَّة ،
+
+فامتنع ان يتعلَّق به شيء من القوى الجسمانيَّة المدركة و يختصُّ بحفظه و إحساسه و تخيُّله و محاكاته ، لأن القوة العقليَّة المجردة التي هي أقرب القوى إلى صرافة القدس و أبعدها عن اللواحق المادية و العوارض الخارجيَّة لا يدركها ، فهذه القوى الجسمانيَّة التي انَّما يدرك الأشياء محفوفة
+
+بالعوارض و اللواحق ، أحرى بذلك ، و هذا بيَّن لا يحتاج إلى بيان زائد .
+و إذا كان كذلك ، فامتنع ان يعبَّر عنه ايضاً بشيء من العبارات ، لأن الألفاظ انَّما وضعت بازاء المعاني المعقولة ، فما لم يعقل ، لم يكن مدلولًا للألفاظ ، لأن دلالة الألفاظ على المعاني انما يكون بعد تعبيرها بالألفاظ و التعبير مسبوق بتعقُّل المعاني و انطباعها في الحافظة ، ثم تخيلها في المتخيِّلة و محاكاتها لما يخال به من الألفاظ ، فاحساسها بالحسِّ المشترك و تعبيرها بذلك عنها ، فما لم يكن المعنى معقولًا و متخيّلًا ، لم يكن ان يدلَّ عليه بالألفاظ المحسوسة ، و الإشارات الوضعية ، فإذا تقرَّر هذا ، ظهر انَّه يمتنع ان يعبَّر عن تلك الغاية التي هي الكمال عندهم بشيء من العبارات ، فيكون من الممتنعات و المعدومات الصرفة - ضرورة ، لأنَّ كل ما ليس بممتنع و معدوم صرف ، فهو صالح لأن يعبِّر عنه ، فالعكس إلى قولنا ، كل ما امتنع ان يعبَّر عنه فهو ممتنع و معدوم صرف . و ايضاً ، فان تجرُّد القوة الناطقة القدسيَّة عن القيود الطبيعيَّة التي هي مبدأ الأخلاق الرديَّة و الأفعال الرذيلة على ما التزموه لكونه شرطاً للكمال عندهم لا يتحقق الا بالموت ، و لا يمكن تحققه بمجرَّد الاعراض عنها و عدم التفات النفس إليها و إلى مقتضياتها و افعالها و غايتها ، فان الملكات الطبيعيَّة لا يمكن ان يتخلَّف عن الشخص بمجرَّد التصورات و الأفعال المضادة لها .
+و ما قيل ، انّ - دوام ملاحظة المطلق يوجب رفع القيود ، ليس كذلك ، فان انحصار النظر في الأمر المطلق و دوام الملاحظة له لا يوجب رفعها و صيرورتها في حكم العدم ، فان الأمور الثابتة بالطبع اللازمة لخصوصيّات المراتب التابعة ايّاه وجوداً و تحقُّقاً ، لا يمكن ان يرتفع بمجرَّد امر اعتبارى
+
+تصورى من الملاحظة المراقبة و غيرهما ، على ان الروح الناطقة ، بالموت لا يتجرَّد عن كثير من القيود التي هي من لوازمها و كالأجزاء بالنسبة إليها ، فكيف بدونه .
+
+### Commentary — English
+
+I say: this is another difficulty alleged to show that their intended end—the perfection they seek—is impossible to attain. The perfection they describe appears impossible because attaining it would entail its being incapable of apprehension, and anything whose attainment entails that it cannot be apprehended cannot be acquired. Their absolute perfection would therefore be unattainable.
+
+The explanation is that, among their accepted principles, even if a traveller reached and apprehended true absolute perfection, he could not conceive it through intellect or encompass it in an intellectual form. Intellect is agreed to possess a particular range of apprehension beyond which it cannot pass, just like the other faculties. Each has a specific level and proper objects, to which alone its apprehension relates. As eyesight cannot go beyond visible qualities to apprehend sounds and melodies, intellect cannot go beyond intelligible universals to apprehend realities disclosed by unveiling and meanings received through spiritual taste.
+
+If the perfection in question cannot be encompassed in an intellectual form, none of the bodily cognitive faculties can relate to it through remembering, sensing, imagining, or representing it. The immaterial intellectual faculty, nearest to pure holiness and furthest from material concomitants, cannot apprehend it; still less can bodily faculties which apprehend only things surrounded by those concomitants. This is clear without further explanation.
+
+Nor, then, can it be expressed in words. Words are instituted for intelligible meanings; what has not been conceived cannot be signified by them. Verbal signification presupposes expression, and expression presupposes conception of meanings and their impression in memory, followed by their imagining, representation by words, and perception through the common sense. A meaning that cannot be conceived or imagined cannot be indicated through sensible words and conventionally instituted signs. The end they call perfection therefore cannot be expressed in any formulation, and must belong among impossibilities and sheer nonentities. For whatever is not impossible or sheer nonbeing can be expressed; by contraposition, whatever cannot be expressed is impossible and sheer nonbeing.
+
+Furthermore, the detachment of the holy rational faculty from the natural restrictions grounding bad character and base actions—the detachment they require for perfection—cannot occur except through death. Mere turning away from those restrictions, and the soul's refusal to attend to their requirements, operations, and ends, cannot produce it. Natural dispositions cannot depart from a person merely through representations or contrary actions.
+
+The claim that uninterrupted attention to the unrestricted removes restrictions is therefore false. Confining attention to the unrestricted does not remove them or reduce them to the status of nonbeing. Naturally established features necessarily belonging to particular levels and accompanying them in existence cannot be eliminated merely by conceptual acts such as attention and watchfulness. Indeed, even in death the rational spirit does not lose many restrictions that are necessary concomitants and virtually constituent parts of it. How, then, could it lose them without death?
+
+### Textual and translation notes
+
+1. The claim that everything inexpressible is impossible belongs to the objection. It is not endorsed by the translator or silently presented as the commentator’s final conclusion.
+2. The detailed theory of expression through intellect, memory, imagination, and common sense is preserved rather than summarized away.
+3. The source’s تعبيرها / بالألفاظ مسبوقا construction is strained. The English follows the explicit sequence of cognitive prerequisites without claiming a settled reconstruction of the Arabic syntax.
+4. A short untagged later note after هامش on p.208 is excluded. The fragmented authorial sentence running across pp.207–211 remains continuous in the translation.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( بالألفاظ مسبوقاً - خ ); ( بما يحاكى - خ ); ( ما - خ )
+
+---
+
+## SH-047 — Objection: are ascetic perceptions effects of a disordered temperament?
+
+**Source:** A, printed pp. 213–215
+
+https://ablibrary.net/book_content/b/17638/409?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذه إشارة إلى الشبهة التي أوردها في صدر الرسالة ، من انّ القطع بما يخالف العقل ضرورة ، ممّا يدل على استحكام سوء المزاج ، و بيان ذلك انَّ الكمالات العقلية الحاصلة لأهل الاستدلال المستندة إلى الحجج القويَّة و البراهين القاطعة الحاصلة للنفس الناطقة بواسطة الأفكار الصحيحة عند اعتدال مزاج البدن و اعتدال امزجة ساير الأعضاء الآليَّة من موضوعات القوى الادراكيَّة و ما يعاونها من القوى الحيوانيَّة و النفسانيَّة و الطبيعيَّة بدون تحريك شيء منها و ميلها عن كيفيَّتها الاعتداليَّة التي هي صورة الوحدة الحقيقيَّة و مظهر صورها و مصدر ساير الأوصاف الحقَّة و الآثار الصحيحة ، انَّما هي الكمال الحقيقي و الإدراك العيني . فلو صحَّ ان يقال ، انَّها من المناقص و الخيالات الفاسدة و الحجب المانعة للوصول إلى الكمالات الحقيقيَّة لصحَّ ان يقال ، انّ الإدراكات الحاصلة من تكرار بعض الألفاظ المعيَّنة بالأصوات القوية المحلِّلة للأرواح النفسانيَّة التي هي موضوعات العلوم و الإدراكات ، المدهشة للحواس البشريَّة ، المعاونة ايّاها في صدور آثارها الكمالية ، لا سيَّما عند التخلي عن الخلايق و السكون في المواضع المظلمة و تناول الأغذية
+
+الردية المولِّدة - المؤدية - للكيموسات الفاسدة في الأوقات المضرِّة و ملازمة الطريقة المسماة عندهم بمخالفة النفس المعلوم بطريق التجربة و القياس العقلي ، انَّ ارتكاب شيء من ذلك يزيد في القوَّة الخياليَّة و الوهميَّة بميل الصورة الاعتدالية الدماغيَّة عن وحدتها المزاجيَّة اللطيفيَّة الانسانيَّة ، إلى اليبوسة الكثيفة الحيوانيَّة . فمواظبة تلك الأمور و استدامتها ، لا شكَّ انها تقضى إلى غلبتها على الطبيعة جداً ، و استيلاء المرَّة السوداء على ساير القوى المدركة ، فيكون الإدراك الحاصل لهم حينئذ من جملة الإدراكات الحاصلة لأرباب الماليخولياء و الممرورين الذين يقطعون بتحقق ما لا ثبوت له في الأعيان ، لسوء ظنونهم و فساد افكارهم ، باختلال الصورة الاعتداليَّة التي هي آلات تلك القوى ، و لذلك يشاهدون صوراً و أصواتاً لا وجود لها أصلًا ، لانحراف أمزجتهم من الاعتدال و فساد بنيتهم بتطرّق الاختلال . و ذلك لأن ظهور علامات الأمراض عقيب ارتكاب أسبابها ممّا يفيد الجزم بوقوعها ضرورة .
+و اما الحالة المسمَّاة عندهم بمخالفة النفس ، فهي بالحقيقة ايلام للروح بارتكاب المكاره و ما يكون على خلاف ما تشتهيه و اتعاب للبدن بالجوع و السهر المفرطين المجفِّفين للدماغ و اجزائه التي هي من آلات القوى النفسانيَّة الفكريَّة المخرجين لأمزجة الأعضاء الاليَّة و الأرواح النفسانيَّة ، بل ، و البدن كلُّه الذي هو موضوع جميع تلك القوى عن الاعتدال و بارتكاب الآلام و المشقَّات و ترك الراحات بالاختيار و تعذيب النفس به تحصيل ملكة نفسانيَّة تكليفيَّة ، يفيد الحزن و البكاء و الخوف و الهم و البؤس و الذلَّة و قلَّة الحميَّة و الفقر و المسكنة و سقوط الهمَّة بارتكاب الأمور الخسيسة و الأوضاع الشنيعة و احتمال أذى الناس ، و غير ذلك ممّا
+
+يرتكبه الملاميَّة منهم . و هذه كلُّها مع انها من الأخلاق الخسيسة الواقعة في طرف التفريط من العدالة الحقيقيَّة الكمالية تنفى السُّرور و الفرح و اعتدال المزاج الموجب للذَّة البدنية و الروحانية الذي به قيام العلاقة الحيوانيَّة .
+فهذه الحالة لا شكَّ انها مسقطة للطبيعة ، مضعفة للقوَّة ، موجبة لانحراف الأمزجة الانسانيَّة عن الحالة الاعتدالية ، مفيدة لأمراض كثيرة ، بعضها ، بدنيَّة ، و بعضها نفسانيَّة كما سبق ، معدة لقرب الموت و زوال القوَّة بالضرورة . فالادراك المتفرّع على هذه الطريقة ، لا شكَّ من جملة الخيالات الفاسدة و الإدراكات الباطلة .
+
+### Commentary — English
+
+I say: this refers back to the objection raised at the beginning of the treatise: certainty about what necessarily contradicts intellect indicates an entrenched disorder of temperament. Intellectual perfections acquired through strong arguments and decisive demonstrations, attained by the rational soul through sound thinking when the body and its instrumental organs, cognitive faculties, and assisting animal, psychic, and natural faculties are balanced, are genuine perfection and true apprehension. No faculty has been driven away from the equilibrium which is the form and manifestation of genuine unity and the source of true attributes and sound effects.
+
+If such cognitions could be called deficiencies, corrupt imaginings, and veils barring genuine perfection, the same could be said of perceptions acquired by repeating particular expressions in powerful voices that dissipate the psychic spirits—the bearers of knowledge and cognition—and overwhelm the senses that assist them in their perfective operations. This seems especially plausible when such repetition is accompanied by withdrawal from others, remaining in dark places, consuming unsuitable foods that produce corrupted humours at harmful times, and pursuing what is called opposition to the soul. Experience and rational inference are claimed to show that such practices strengthen imagination and estimation by disturbing the brain's balanced constitution, turning its subtle human equilibrium toward coarse animal dryness. Continued practice would make those faculties dominate the constitution and allow black bile to overwhelm the other cognitive powers.
+
+The resulting apprehension would then belong with that of people afflicted by melancholy and humoral disorders, who assert the reality of what has no external existence because their suppositions and thoughts are defective and the balanced instruments of cognition are disordered. They perceive forms and sounds that do not exist at all, owing to the disturbance of their temperaments and constitution. The appearance of symptoms after undertaking their causes is alleged to establish the presence of disease with certainty.
+
+As for opposition to the soul, the objection describes it as tormenting the spirit by undertaking what it dislikes, and exhausting the body through excessive hunger and sleeplessness. These dry the brain and the parts serving as instruments of psychic and discursive powers, disturbing the temperaments of the organs and psychic spirits, and indeed of the whole body that bears these faculties. By deliberately undergoing pain and hardship, abandoning comfort, and tormenting the soul, one acquires a forced psychic disposition producing sorrow, tears, fear, anxiety, misery, humiliation, diminished spirit, poverty, destitution, and diminished aspiration. This arises through undertaking contemptible activities, degrading appearances, enduring others' harm, and similar practices associated here with people of blame.
+
+The objection treats all these as base qualities lying at the deficient extreme, away from perfected genuine balance. It also claims that they remove joy and the balanced temperament supporting bodily and spiritual pleasure, through which animal life is maintained. Such a condition must therefore weaken constitution and power, disturb human equilibrium, produce bodily and psychic illnesses, prepare the approach of death, and destroy strength. Perceptions arising from this method would consequently be corrupt imaginings and false apprehensions.
+
+### Textual and translation notes
+
+1. This entire section elaborates a hostile objection, answered explicitly in SH-056. It must not be extracted as Ibn Turka’s unconditional rejection of Sufi practice or as a modern medical diagnosis.
+2. Humours, psychic spirits, brain dryness, and black bile are historical physiological concepts. The translation is not advice to undertake deprivation or an assessment of present-day mental illness.
+3. المناقِص in the commentator’s reprise supports the sense ‘deficiencies’ but is not an independent manuscript witness for the unstable ancestor reading at QT-047.
+4. The source refers to the Malāmati tendency through الملامية; ‘people of blame’ preserves the local reference without identifying every historically associated practice with the polemical catalogue.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( عن الكيفيَّة الاعتدالية - خ ); ( و محل ظهورها - خ ); ( بثبوت ما لا تحقَّق له - خ ل ); ( و التفرس - خ ل )
+
+---
+
+## SH-048 — Four levels of manifestation and the human union of comprehensive and differentiated knowing
+
+**Source:** A, printed pp. 218–224
+
+https://ablibrary.net/book_content/b/17638/414?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا شروع في دفع تلك الشُّبه على الترتيب ، فبدأَ اولًا بجواب الشبهة ، القائلة بعدم صلاحيَّة الإنسان لأن يكون مظهراً كاملًا ،
+
+و ان استحقاقيَّة غيره من التعيُّنات العلمي و العقل الأول و العالم الكبير لتلك المظهريَّة اكثر ، و بيانه : ان المظهر الكامل ، عبارة عن الكون الجامع الحاصر لجميع المظاهر التي في ساير المراتب الموجودة فيه و هذا هو النشأة العنصرية الانسانيَّة لا غير فانّها آخر تنزُّلات المظاهر الواقعة في آخر تنزلات المراتب . و قد عرفت ان كل مظهر سافل شامل للعالي و كل مرتبة سافلة شاملة لعلياها بما فيها من المظاهر فيكون الإنسان العنصري هو الحائز لسائر المراتب و المظاهر ، فلا يصلح للمظهريَّة المذكورة الا هو لأن المظهر الكامل الذي هو عبارة عمّا يصلح لأن يكون مرآة جامعة لجميع الحضرات الإلهيَّة و العوالم الكيانيَّة ، يجب ان يكون له بحسب كل مرتبة من المراتب الكليَّة المذكورة انموزج خاص به يكون ذلك عنده كالنسخة
+
+الجامعة لسائر جزئيّات تلك المرتبة - الهيَّة كانت أو كونيَّة - إذ لكل فرد من افراد المظاهر الجزئيَّة مرتبة خاصَّة يظهر بخصوصيَّته الخاصَّة به فيها ، و لا يظهر في مرتبة اخرى ذلك الظهور ، فان الكمَّل و ان كان له ظهور في الكلّ ، لكن بحسبه و من حيثيَّة . و مع ذلك يكون له احديَّة جمع الجمع التي بها يصلح لمرآتيَّة الحضرة الواحديَّة بالوحدة الحقيقية ، و ذلك مختص بالنشأة العنصريَّة الانسانيَّة . فإنها لما كانت آخر تنزُّلات الوجود ، فقد
+
+حصل لها من كل مرتبة عند وصولها إليها في مرورها عليها انموزج ، و نسخة شاملة يظهر فيها جميع ما في تلك المرتبة ، صالحة لأن تكون مرآة لما فيها عندها ، فيكون نشأته هذه ، عبارة عن مجموع مشتمل على هذه النسخ - على جميع هذه النسخ - و الأنموذجات و المرايا مع احديَّة جمع الجمع .
+شعر
+من كل شيء كنهه - لبُّه - و لطيفه * مستودع ، في هذه المجموعة
+فإذا عرفت هذا ، علمت ان المرتبة الاولى ، أي التعيُّن الأول العلمي لا يصلح لتلك المظهريَّة و ان كانت جامعة لجميع المراتب فان ما يوجد فيها - منها - من المظاهر و المراتب ، غير متمايز بعضها عن بعض و لا متميِّز عنها ، ايضاً فيكون ذلك الظهور ، علماً غيبيَّاً اجمالياً لا تفصيلياً ، و كذلك المرتبة الثانية ، أي العقل الأول ، فانَّها و ان كان لها ايضاً جامعيَّة توحُّد صور الجميع متمايزة ، إذ علمه بالجميع ، علم غيبي تفصيلى ، لكن تلك الصُّور المتمايزة انَّما هي الصور التي بحسب مرتبة الخاصَّة فقط .
+و كذلك المرتبة الثالثة ، و هي هاهنا العالم الكبير ، فإنه و ان كان توجد فيها تلك المعاني وجوداً عينياً تفصيلياً ، و يدرك فيها الجميع ايضاً بعدَّة ضروب من نوع الإدراك ، لكن قد فاته احديَّة جمع الجمع .
+
+و اما المرتبة الرابعة التي هي النشأة العنصريَّة الانسانيَّة ، فيوجد فيها جميع ما في هذه المراتب ، لاشتمالها على جميع المراتب بما فيها من المظاهر ، مع معنى الأحديَّة الجمعيَّة الكماليَّة ، التي لا يتصوَّر عليها المزيد من جهة التمام و الكمال ، إذ بها تحصل للحضرات الإلهيَّة مع العوالم الكيانيَّة ، صورة وحدانيَّة جامعة لجميع المظاهر ، بحيث لا يشذُّ منها في الوجود شيء أصلًا . فظهر من هذا التحقيق ، ان الصورة الكاملة الأكمليَّة ، الظاهرة بحسب احديَّة جمع جميع هذه المظاهر ، لا يمكن ظهورها من حيث هي كذلك ، الا في المظهر التامِّ الإنساني .
+و ما قال السائل هاهنا ، من انَّه يلزم ان يكون ادراك بعض الصُّور و الأسماء تعقُّلًا عينياً تفصيلياً ، فلا يصلح ان يكون مرآة جامعة للجميع ، مردود ، فان للحقيقة السارية في الكل ، الظاهرة به لها في هذه النشأة الجامعة ، نوعان من الإدراك ، ادراك من حيث الحقيقة الظاهرة ذاتها و ما يلزمها ، أي ادراك ذاتها بذاتها ، و ما عداها من الأسماء الإلهيَّة الوجوبية و الحقائق الكونيَّة الامكانيَّة ، و ذلك بان يدرك سائر الشئون في شأن جامع من حيث ذاتها - ادراكاً اجمالياً - و هو الكون الجامع الإنساني المشتمل على سائر المراتب بحسب حقيقته الكاملة و دائرته المحيطة بالقوسين المذكورين حسبما عرفت غير مرَّة ، و ادراك آخر لذاتها لكن لا من حيث الحقيقة الظاهرة ، أي بذاتها ، بل من حيث المظاهر و بتعيُّناتها ادراكاً تفصيلياً عينياً كما عرفت تحقيقه في تفصيل معنى الكمال الإنساني ، لكن لهذا النوع من الإدراك افراد مختلفة الحقائق في كلِّ مرتبة ، إذا الحقيقة في كل مرتبة انَّما يدرك ذاتها من حيث تلك المرتبة بإدراك يناسب تلك المرتبة ، فان الإدراك الذي بالحقيقة من حيث المرتبة لا بُدَّ و ان يكون بها ، فلا بد من ادراك يكون مبدئه من تلك الحقيقة .
+
+الا ترى انَّها يدرك بذاتها من حيث بعض تعيُّناتها الامكانيَّة و الأسماء الإلهيَّة ، من الكلّيات ادراكاً عقليّا تفصيلياً فقط على حسب ما فيه من القوابل الكليَّة ، و يدركها ايضاً من الحيثيَّتين المذكورتين بتعيُّنات و أسماء أخر ، كما إذا احتفَّت ببعض اللواحق الجزئيَّة و العوارض المشخَّصة من الأمور المعنويَّة و المثاليَّة ، فيدركها ببعض تعيُّنات القوى و مظاهر المشاعر - ادراكاً وهميّا و تخيُّلياً - على حسب بعض ما فيه من القوابل الجزئيَّة ، و يدركها ايضاً بتعيُّنات و أسماء أخر ، كما إذا احتفَّت باللواحق الجزئيَّة الصوريَّة و العوارض المشخَّصة الخارجيَّة ، فيدركها بتعيُّنات القوى الحاسّة و المشاعر الظاهرة ، إدراكات حسِّية ، كل ذلك على حسب ما فيه من القوابل التي تتعلق بها تلك التعينات من القوى و المشاعر . و انَّما تعرض في الصورتين الأوليين للحيثيَّتين ، دون الأخيرة ، لأن المشاعر الظاهرة التي اختصَّت في هذه الصورة بالإدراك ، فتعلُّقها بالذات انَّما هي بالصورة الكونيَّة و العوارض الامكانيَّة .
+و اما الحقائق الأسمائيَّة و الجواهر الوجوبيَّة ، فلو تعلقت بهما ، لا تكون ذلك الا بالعرض و الواسطة ، لا بالذات . فمتعلق مدارك هذه الصورة لا يكون الا حيثيَّة - حقيقة - واحدة من حيثيَّتى الحقيقة ، و قوساً واحداً من قوسى الدائرة .
+و إذ أنت عرفت المقدمات ، تحقَّقت ، ان الحقيقة الحقَّة بحسب هذه النشأة العنصريَّة الانسانيَّة التي هي مجموعة من نسخ جميع المراتب تطلع على كل منها بمطالعة نسخها الخاصَّة بها ، فتدرك الكل حينئذ بالكل بحسب ما فيها من الكلّ ، ادراكاً تامّاً كاملًا ، فانَّها بأحديَّة جمع هذا المجموع تدرك احديَّة جمع الكل ، فيكون إدراكها جامعاً بين الجمع
+
+و التفصيل ، فلا يكون اتمّ منه . و قوله : فتأمّل ذلك ، إشارة إلى هذه النكتة .
+شعر
+كلُّ كلي بكل كلك مشغول * فكلُّ كلي إليك ، يهرب منكا
+
+### Commentary — English
+
+I say: this begins the replies to those objections in their order. First comes the answer to the claim that the human being cannot be a complete locus of manifestation and that another determination—the cognitive determination, the First Intellect, or the macrocosm—has a greater claim. A complete locus is comprehensive being, embracing every manifestation at all the levels present within it. This is the elemental human constitution alone, the last descent of the loci of manifestation within the last descent of the levels.
+
+You have learned that every lower locus includes the higher, and every lower level includes the higher level with its manifestations. The elemental human being therefore possesses all levels and manifestations. No other can serve as the complete mirror of every divine presence and cosmic world. Such a mirror must contain, for each comprehensive level, a model proper to it, functioning as a copy that includes every particular of that level, divine or cosmic. Each individual manifestation has a particular level in which it appears with its proper character; it does not appear in that way at another level. The perfected may appear in all levels, but according to each and under a particular aspect. Alongside all this, the complete locus must possess the oneness of the gathering of gathering, through which it can mirror the presence that is one through genuine unity. This belongs specifically to the elemental human constitution.
+
+Since it is the final descent of existence, as it reaches and passes through each level it acquires a model and comprehensive copy in which everything belonging to that level appears. This copy can serve within it as a mirror for the contents of that level. The human constitution is therefore a totality of all these copies, models, and mirrors, together with the oneness of the gathering of gathering:
+
+‘The essence—or core—and subtlety of everything
+is deposited within this collection.’
+
+The first level, the first cognitive determination, cannot provide this complete manifestation, although it comprehends all levels. The manifestations and levels present in it are neither distinct from one another nor distinct from it. Its manifestation is therefore unseen, undifferentiated knowledge, not detailed knowledge. The second level, the First Intellect, likewise possesses comprehensiveness and the distinct forms of everything, knowing them through unseen, differentiated knowledge. Yet these distinct forms are only forms according to its own particular level.
+
+The third level here is the macrocosm. Although the meanings possess differentiated external existence in it and are apprehended through several kinds of apprehension, it lacks the oneness of the gathering of gathering. The fourth, the elemental human constitution, possesses everything in the preceding levels, since it comprehends them all with their manifestations. It also possesses perfected comprehensive oneness, beyond which no greater completeness or perfection is conceivable. Through it the divine presences and cosmic worlds have one unified form encompassing every manifestation, leaving nothing in existence outside it. Thus the most complete perfected form appearing through the oneness of all these manifestations can appear as such only in the complete human locus.
+
+The questioner's claim that some forms and names would then be apprehended only through an intellectual, objective, differentiated cognition [the wording displayed in this commentary reprise], so that the human being could not mirror the whole, is rejected. The reality pervading all things and appearing through them has two kinds of apprehension in this comprehensive constitution. One is apprehension from the side of the manifest reality: it apprehends its essence through itself, together with what necessarily accompanies it—the necessary divine names and possible cosmic realities. It apprehends every affair within a comprehensive affair from the side of its essence, in undifferentiated cognition. This comprehensive affair is the human being, encompassing all levels through its perfected reality and through its circle embracing both bows.
+
+The other kind is again apprehension of itself, but not from the side of the manifest reality through itself. It apprehends through the loci and their determinations in differentiated, objective cognition. This kind has instances of differing realities at every level. At each level the reality apprehends itself from the side of that level through a mode appropriate to it. Such apprehension must take place through that level, so its principle must arise from the corresponding aspect.
+
+Thus, through certain possible determinations and divine names, the reality apprehends universals intellectually and in detail, according to its universal receptivities. Through other determinations and names it apprehends from the two sides just mentioned. When accompanied by particular concomitants and individuating attributes belonging to meanings and imaginal forms, it apprehends through determinations of faculties and loci of awareness in estimative and imaginative cognition, according to its particular receptivities. Through still other determinations and names, when accompanied by particular formal concomitants and external individuating attributes, it apprehends through sensory faculties and outward awareness in sensory cognition. All these follow the receptivities within it to which the determinations of the faculties relate.
+
+The author mentions the two aspects in the first two cases but not the last, because the outward senses, proper to the final case, relate intrinsically only to cosmic forms and possible attributes. If they relate to the realities of the names and necessary substances, they do so incidentally and through an intermediary, not intrinsically. Their objects therefore concern only one of the reality's two aspects and one of the circle's two bows.
+
+Once these premises are understood, it becomes clear that, through the elemental human constitution—a collection of copies of every level—the true reality surveys each level by examining its particular copy. It apprehends the whole through the whole, according to the whole contained within it, in complete and perfected apprehension. Through the comprehensive oneness of this collection it apprehends the comprehensive oneness of the whole. Its cognition therefore joins gathering and differentiation, and none is more complete. The words ‘Reflect upon this’ point to this subtlety.
+
+‘All of my whole is occupied with all of Your whole;
+so all of my whole flees from You to You.’
+
+### Textual and translation notes
+
+1. Both poems on pp.221 and 224 are included; the option كنهه / لبّه in the first is acknowledged. Their compressed language is not silently replaced with explanatory prose.
+2. The commentary reprise on p.222 reads تعقلا عينيا تفصيليا, whereas the corresponding objection in the matn is phrased in terms of unseen intellectual apprehension. The English marks the displayed wording rather than harmonizing it without evidence.
+3. An untagged modern Persian note following هامش on p.219 is excluded. The small main-text fragments across pages otherwise retain their continuity.
+4. The four levels used in this reply are the first cognitive determination, First Intellect, macrocosm, and human constitution. They should not be mechanically identified with every other four- or fivefold scheme in the book.
+5. The restriction of direct sensory apprehension to one aspect is explicit. The translation therefore does not claim that the eyes directly perceive all divine realities in the same way as bodily colours.
+6. Reported electronic apparatus strings, not independent manuscript readings: ( النسخة - خ ل ); ( توجد - خ ); ( عقليّا - خ ل ); ( الحقيقة - خ ); ( الحيثيَّة - خ ); ( اختفَّت ، حفَّت - خ ); ( تخييلًا - خ ); ( فمتعلَّقها - خ ); ( الصور - خ ); ( حقيقتى - خ ); ( به - خ ل )
+
+---
+
+## SH-049 — Active and receptive determinations: one reality, distinct relational aspects
+
+**Source:** A, printed pp. 225–228
+
+https://ablibrary.net/book_content/b/17638/421?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا جواب الشبهة الموردة في نفى المظهريَّة مطلقا ، و ذلك انما يتحقَّق بعد تمهيد مقدمة ، و هي ان الحقيقة المطلقة التي هي حقيقة الحقائق لظهورها بالتعيُّن الأول و اقتضائها الوحدة الذاتيَّة ، قد اندمجت فيها الكثرة ، فلا ظهور حينئذ للأسماء المشعرة بالكثرة من انواع المتقابلات ، كالظاهريَّة و المظهريَّة و الحقّيَّة و الخلقيَّة ، فلا تنسب إليها الصورة حينئذ ، و لا غيرها من الأسماء المتقابلات أصلًا .
+ثمّ إذا ظهرت في التعيُّن الثاني ، و تمايز العلم من الوجود ، و الظاهر من الباطن ، و انفصل قوس الوجوب عن قوس الإمكان ، حينئذ ظهرت المتقابلات من الأسماء ، و تمايزت الحقيَّة من الخلقيَّة و الظاهريَّة عن المظهريَّة ، فحينئذ يمكن ان يطلق عليها اسم الصورة .
+إذا تقرَّر هذا فنحن نقول نختار من صور الترديد التي بيَّنها السائل و بنى عليها الشبهة ان صورة الكل و حقيقته هو الوجود المتعيَّن بسائر التعيُّنات التي بها يكون مصدراً لجميع
+
+الأفعال و جملة الآثار الفعليَّة .
+لا يقال : فحينئذ ، لا يكون هذا الوجود متعيّناً بسائر التعيُّنات بل بالتعيُّنات الفعليَّة منها ، فيكون متعيّناً ببعض التعيُّنات ، و قد أبطلته البراهين السالفة ، كما سبقت الإشارة إليه ، و لا تكون الصورة ايضاً صورة للكلّ ، بل انَّما تكون صورة للبعض فقط .
+لانّا نقول : انَّ ساير التعيُّنات مندرجة في هذه الصورة ، فتكون صورة للكلّ حينئذ ، فان تعيُّن جميع الأفعال الكماليَّة و جملة الآثار الفعليَّة ، داخلة في تلك التعيُّنات المتعيِّنة لتلك الصورة ، حسبما
+
+أشار إليه المصنِّف ، لكن من حيث الفعل لا من حيث القبول . و تحقيق هذا الكلام ان سائر التعيُّنات اللاحقة للوجود من الفعليَّة و الانفعاليَّة متحدة بالذات و الحقيقة ، لكن متمايزة بالاعتبار فقط ، و ذلك ، لأن الأفعال الكماليَّة و الآثار الفعليَّة المذكورة التي يعتبر صدورها من المبدأ لا بُدَّ من حصول نسب هاهنا بينها و بين المبدأ ، فان اعتبر عروض تلك النسبة له و لحوقها ايّاه ، تسمّى بالتعيُّنات الفعليَّة و الوجود الملحوق لسائر التعيُّنات بهذا الاعتبار هو صورة الكلّ الظاهر ، و ان اعتبر عروضها للافعال و القوابل و لحوقها ايّاها ، فالوجود الملحق لسائر التعيُّنات بهذا الاعتبار ، و هو صورة المظهر القابل و الإنسان الكامل .
+فظهر من هذا ، ان الإنسان من حيث هو حاصر لجميع القوابل العلويَّة و السفليَّة من الروحانيَّة و المثاليَّة و الطبيعيَّة الجسمانيَّة بجملتها واحديّة جمعيتها على سبيل الجمع و التركيب الحقيقي الامتزاجى فهو بهذه الحيثيَّة انَّما يصلح ان يصير مظهراً لتلك الصورة بذلك الاعتبار و الحيثيَّة المذكورة بجملتها واحديَّة جمعيتها على سبيل الجمع و التركيب الحقيقي الامتزاجى .
+فلئن قيل : ان الوجود المتعيَّن بتلك التعيُّنات الانفعاليَّة حسبما قلتم ، لا يغاير حقيقته و صورته بالحقيقة ، و حينئذ ، يرتفع الفرق بين الظاهر و المظهر ، فلا يكون الظّاهر ظاهراً ، و لا المظهر مظهراً ، على انّ جعل الحقيقة المتعينة بالتعيُّنات الفعليَّة صورة الكلّ دون الحقيقة المتعيَّنة بالتعيُّنات الانفعاليَّة ، مع انَّه من التحكُّمات الباردة ، يستلزم خلاف ما ذهبتم إليه من جامعيَّة الحقيقة المطلقة لجميع التعيُّنات ، فانّ صورته حينئذ ليست الحقيقة الجامعة لسائر التعيُّنات ، بل هي الحقيقة المتعيَّنة ببعض التعيُّنات .
+
+قلنا : ان الحقيقة في حضرة التفصيل المأخوذة بالتحققات و الوجوه الوجوبية و الاعتبارات الشريفة التي بها يتحقق الحقية و المبدئيَّة ، غير الحقيقة المأخوذة بالوجوه الامكانيَّة التي بها يتحقق الخلقية و المعلوليَّة من الاعتبارات الخسيسة ، فعلم ان ذلك الجعل و التخصيص ليس من التحكُّمات الباردة .
+و اما ما قيل : من عدم جامعيَّة الصورة المذكورة و استلزامه خلاف ما ذهبوا إليه ، فليس كذلك ، فان ما ذهبوا إليه من الإطلاق و الجامعيَّة المذكورة انَّما هو في حضرة الجمع الذي هو حقيقة الحقائق ، و لا تفصيل هناك أصلًا ، فانّ حقيقة الحقائق لا تغاير حقيقة الخلقيَّة من جهة الحقيقة المطلقة الجامعة كما سبق آنفاً . فتلك الحقيقة ببعض الاعتبارات هي الباطنة ، و ببعض الاعتبارات هي الظاهرة . و ببعضها هي المظاهر ، و ببعضها هي المكامن ، و الكلّ واحد من جهة الحقيقة المطلقة و الذاتيَّة الغير المقيدة ، و ليست بواحدة من جهة الإضافات و النسب الاعتباريَّة التي حصلت لها في حضرة التفصيل كما مرَّ تحقيق بعض تلك التحقيقات و تفصيل أسمائها شرعاً و عرفاً في المقدَّمة فليتذكّر .
+
+### Commentary — English
+
+I say: this answers the objection denying manifestation altogether. A preliminary explanation is required. When the unrestricted reality—the reality of realities—appears through the first determination and requires essential unity, multiplicity is enfolded within it. Names suggesting multiplicity and opposition, such as manifest reality and locus of manifestation, divinity and creaturehood, do not then appear. Neither form nor any other opposed name is therefore attributed to it.
+
+When it appears in the second determination, however, knowledge is distinguished from existence, manifest from hidden, and the bow of necessity from that of possibility. Opposed names become manifest: divinity is distinguished from creaturehood, and manifest reality from locus. The designation form can then be applied.
+
+Of the alternatives proposed by the questioner, we therefore choose this: the whole's form and reality is existence determined by every determination through which it is the source of all acts and active effects. It should not be objected that this would make it determined only by active determinations, rather than by every determination, and so by only some—a position already refuted. Nor should it be said that this would be the form of only a part, not the whole. All other determinations are included in this form, so it is indeed the form of the whole. The determinations of all perfective acts and active effects are included among the determinations constituting this form, but from the side of agency, not reception.
+
+More precisely, all determinations attaching to existence, active and receptive, are one in essence and reality and differ only in consideration. When the acts and effects are considered as proceeding from the Principle, relations between them and the Principle must arise. Considered as attaching to the Principle, these are called active determinations. Existence bearing all determinations under this consideration is the manifest form of the whole. Considered as attaching to the acts and receptivities, they yield the form of the receptive locus and the Perfect Human.
+
+Thus the human being, insofar as he contains all higher and lower receptivities—spiritual, imaginal, natural, and bodily—in their entirety and comprehensive oneness through genuine combination and intermixture, is suitable to manifest that form under the corresponding consideration, likewise in its entirety and comprehensive oneness.
+
+It may be objected that existence determined by receptive determinations does not truly differ from its reality and form. The difference between manifest and locus would disappear, so neither could be what it is. Furthermore, choosing actively determined reality as the whole's form rather than receptively determined reality would be arbitrary and contradict the claim that unrestricted reality comprehends every determination. Its form would be determined by only some.
+
+We reply that, within the presence of differentiation, reality considered through necessary realizations and noble aspects establishing divinity and principiality differs from reality considered through possible aspects establishing creaturehood and being an effect. Assigning the names in this way is therefore not arbitrary.
+
+Nor does this contradict the claimed comprehensiveness. Unrestrictedness and comprehensiveness belong to the presence of gathering, the reality of realities, where there is no differentiation. As unrestricted comprehensive reality, the reality of realities does not differ from the reality of creation. Under some considerations it is hidden, under others manifest; under some it is loci of manifestation, under others places of concealment. All are one with respect to unrestricted essential reality, but not one with respect to the relations and correlations arising in the presence of differentiation. Some of these considerations and the corresponding names in revealed and technical usage were explained in the prolegomenon; recall that discussion.
+
+### Textual and translation notes
+
+1. The answer does not posit two independently subsisting realities. It differentiates the same determinations as related to the agent and as related to acts or recipients.
+2. The source’s repeated description of the human totality emphasizes its match to the comprehensive form; it is retained in English rather than dropped as a mere duplicate.
+3. The distinction between the presence of gathering and the presence of differentiation is necessary to the answer. The claims about identity and difference must not be detached from their specified respects.
+4. Reported electronic apparatus strings, not independent manuscript readings: ( المتقابلة - خ ); ( فنقول - خ ); ( و ابتنى عليها الشبه - خ ل ); ( أبطله - خ ); ( الكلية - خ ); ( ان اعتبر - خ ); ( فلا بد - خ ); ( الملحوق - خ ); ( و الامتزاج الحقيقي - خ ل ); ( النادرة - خ ل ); ( الحقائق الخلقيَّة - خ )
+
+---
+
+## SH-050 — Why the embodied human can be a natural unity while the cosmos is an aggregate
+
+**Source:** A, printed pp. 230–234
+
+https://ablibrary.net/book_content/b/17638/426?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذه إشارة إلى دفع الوجوه المذكورة في الشبهة الدالَّة على استحالة مظهرية فرد من افراد العالم الكبير و جزئي من جزئيّاته للوجود المتعيَّن بجميع التعيُّنات ، و على استحقاقيَّة العالم الكبير إياها بجميع اجزائه و ساير جزئيّاته دون ذلك الجزئى ، و إلى تحقيق الحق في ذلك ، فشرع يُبيِّن اولًا استحقاقيَّة الأول للمظهرية المذكورة ، و امتناع استحقاقيَّة الثاني لها ، بأنَّه قد بيِّن في العلوم الحقيقيَّة الأصليَّة ، انّ من الممكن ان يتألف من جزئيّات العناصر ، أبدان معتدلة ، فانَّها بواسطة تصغُّر اجزائها و امكان حصول التَّماس الكلى بينها المستلزم لتفاعل تلك الكيفيات المتضادة الموجب لرفع
+
+تعيُّناتها التقابليَّة الامكانيَّة المستدعية لخفاء للاحكام الوجوبية قد استعدَّت لتلك الوحدة الاعتداليَّة ، فان هذا النوع من التعين قد اختصَّ به الموجودات الكونيَّة ، و انتهى حكمه في العناصر كما سبقت الإشارة إليه . فإذا ارتفع هذه التعيُّنات بحصول الوحدة المزاجيَّة و التعينات الاحاطيَّة الوجوبية التي هي من خواصِّ الحقائق و الأسماء الإلهيَّة ، استعدَّت ان يظهر في جميع اجزائها بحسب مناسبتها للوحدة الحقيقيَّة ، ما كانت مختفية من الأحكام الوجوبيَّة ، بسبب تلك التعيُّنات الكونيَّة .
+فحينئذ ، تصير بها ذوات اعضاء يحمل قوى كثيرة يصدر عنها افعال متنوِّعة يحصل من امتزاج تلك الأفعال بالقوى و موضوعاتها و اختلاط بعضها للبعض ، أحوال اعتداليَّة يكون مظهراً للصور الحقيقيَّة و مبدأ للاحكام الوجوبيَّة ، فان تلك القوى انَّما ينبعث عن النفوس المجرَّدة التي نسبتها إلى تلك الأبدان المعتدلة نسبة الصورة إلى المادة ، و هذه النسبة انما حصلت لها بواسطة الرقيقة المزاجيَّة الوحدانيَّة التي بينها و بين الوحدة الحقيقيَّة ، فحينئذ يحصل من مجموع البدن و النفس المجردة وحدة حقيقيَّة و نوعيَّة طبيعيَّة .
+فان الوحدة الحقيقيَّة هي التي لها التعيُّن الاحاطى الجامع للاضداد ، كما هو حال ساير الأمزجة ، سيَّما الإنساني منها . فانَّه بكمال الامتزاج و ظهور الاعتدال الكمالي الذي هو صورة الوحدة الحقيقيَّة ، صار مركَّباً حقيقيًّا يمكن ان يصدر عنه افعال طبيعيَّة يمتنع صدورها عن مباد متكثِّرة ، كتنوُّع الحركات المختلطة نحو الجهات المتضادة في حالة واحدة ، مثل احالة الغذاء مُشابهاً للمغتذى ، و الإحساس بالمحسوسات المتنوِّعة و الحركات الفكرية و الشوقيَّة الموجبة للمعارف الإلهيَّة و الحقائق الكشفية ، و الكلّ في حالة واحدة . و لا شك ، ان المبادي المتكثِّرة يمتنع ان يكون مصدراً لهذه الأفعال ، من حيث هي متكثرة ، كما انّه من الممتنع ان يحصل من
+
+كليات تلك العناصر مركَّبات حقيقيَّة ، فإنه لا يمكن ان يقع فيها على كلّيتها تفاعل الكيفيّات المتضادة و خروجها عن التعيُّنات المتقابلة ، كما انّ من الممتنع ان يحصل من تلك الكيفيّات و من الأفلاك و الكواكب و المبادي الموجدة لها ، و من الجواهر المجرَّدة التي هي كالصورة النوعيَّة بالنسبة إلى تلك المبادي مركَّبات حقيقيَّة ، حتى يكون مثل الإنسان بالوحدة الحقيقيَّة . و ذلك لأن كليّات العناصر ليس لها وحدة مزاجية ، تكون رابطة
+
+لتلك المبادي و المجردات بالنسبة إليها ، فيمتنع ان يعرض لها بهذا الاعتبار وحدة حقيقيَّة . نعم يمكن ان يحصل وحدة اجتماعيَّة ، لكن لا يكفى ذلك في ان يكون مظهراً لتلك الحقيقة .
+فلئن قيل : انما يمتنع عروض تلك الوحدة لها لو لم تكن امزجة المعادن و النبات و الحيوان و كذلك الإنسان داخلًا في العالم الكبير بها يستعدُّ لأن يصير مظهراً لتلك الحقيقة ، و اما على تقدير ذلك فممنوع .
+قلنا : ان ما يصلح لتلك الامزجة لأن يصير به الممتزج مظهراً للوحدة الحقيقيَّة ، انَّما هو المزاج الاعتدالى الإنساني ، فحينئذ ان جعل العالم الكبير به صالحاً للمظهريَّة المذكورة ، فمسلَّم لكن ليس للعالم الكبير كثير دخل في المظهريَّة ، إذ الإنسان لاشتماله على تفاصيل ما فيه من جزئيّات المظاهر كما سيجيء بيانه مع ظهور الجمعيَّة الإلهيَّة واحديَّة جمع الجمع ، مستغن في تلك المظهرية عنه ، و ان جعلت بدونه صالحاً لها ، فلا يتمُّ له ذلك ، كما مرَّ .
+و ملخص هذا الكلام ، ان الحقائق الوجوبيَّة و الأسماء الإلهيَّة لغلبة سلطان الوحدة في صورة جمعيتها لا يمكن ان يكون للكثرة الامكانيَّة فيها مجال أصلًا ، و كذلك الحقائق الكونيَّة و الأسماء الامكانيَّة ، لغلبة احكام الكثرة الامكانية عليها لا يمكن ان يكون للوحدة الوجوبيَّة فيها مجال للظهور أصلًا ، فلا يكون للوحدة الحقيقة الجامعة بين الوحدة و الكثرة ظهور في شيء منهما ، إذ لا يصلح للمظهريَّة الا ما يكون جامعاً للطرفين محيطاً بالقوسين حتى يمكن ظهورها فيه باحديَّة جمع الجميع ، مثل الإنسان . تأمّل في هذا الكلام فانَّه اصل كبير يحتوي على معان جليلة .
+ثمَّ ، انَّ اكثر المقدمات المأخوذة فيها هاهنا في
+
+بيان المطلبين المذكورين ، لمّا كانت إقناعيَّة ، اعتذر المصنّف بان تحقيق البحث في هذين الموضعين و توجيه الحجج و تقرير البيِّنات ، لا يحتمله هذا المختصر ، إذ كل منهما يحتاج إلى اصول انَّما يبرهن بقواعد يفتقر بيانها إلى مجال وسيع .
+
+### Commentary — English
+
+I say: this answers the arguments claiming that no particular within the macrocosm can manifest existence determined by every determination, whereas the macrocosm as a whole can. The author first explains why the former is suitable and the latter is not. The fundamental sciences of reality establish that balanced bodies can be composed from particular portions of the elements. Through the minuteness of their parts and the possibility of thorough mutual contact, opposed qualities interact and their opposed, possible determinations—which conceal the properties of necessity—are removed. The elements thereby become prepared for balanced unity. This oppositional kind of determination characterizes cosmic beings and reaches its extreme in the elements.
+
+When these determinations are overcome through temperamental unity and the comprehensive determinations proper to divine realities and names, the body's parts become receptive, in proportion to their affinity with genuine unity, to the necessary properties previously concealed by cosmic determinations. They become organs bearing many faculties from which diverse actions proceed. The intermixture of these actions, faculties, and their subjects produces balanced states that manifest real forms and ground necessary properties. The faculties proceed from immaterial souls related to the balanced bodies as form to matter. That relationship arises through the subtle bond between temperamental unity and genuine unity. Body and immaterial soul together thus acquire genuine natural and specific unity.
+
+Genuine unity possesses the encompassing determination that joins opposites, as temperaments do, especially the human temperament. Through complete intermixture and perfected balance, the human being becomes a real composite capable of natural acts that cannot issue from many principles merely as many: diverse simultaneous movements in opposed directions, assimilation of food to the nourished being, perception of varied sensible objects, and movements of thought and longing yielding divine knowledge and unveiled realities—all at once. Multiple principles cannot, merely as multiple, be the source of these actions.
+
+Similarly, the elements taken in their totality cannot constitute genuine composites. They cannot as wholes undergo the interaction of contrary qualities and the removal of opposed determinations. Nor can these qualities, together with celestial spheres, stars, their productive principles, and immaterial substances related to those principles like specific forms, constitute a genuine composite comparable to the human being. The elements taken in their totality lack a temperamental unity that could link them to those principles and immaterial substances. Genuine unity cannot therefore belong to them under this consideration. They may possess an aggregative unity, but this does not suffice to manifest the reality in question.
+
+One may object that this would follow only if the temperaments of minerals, plants, animals, and the human being were not included in the macrocosm. Through them it could become prepared to manifest that reality. We reply that, among these temperaments, the one enabling a composite to manifest genuine unity is the balanced human temperament. If the macrocosm is rendered suitable through the human being, this is conceded. But the macrocosm contributes little to that manifestation: the human being includes the particulars of its manifestations while displaying divine comprehensiveness and the oneness of the gathering of gathering, and so needs no further assistance from the macrocosm for this role. If it is claimed to be suitable without the human being, the claim fails.
+
+In summary, divine names and necessary realities, because unity dominates their comprehensive form, leave no room for possible multiplicity. Conversely, cosmic realities and possible names, because possible multiplicity dominates them, leave no room for necessary unity to appear. Genuine unity joining unity and multiplicity therefore cannot appear in either alone. Only what joins the two sides and encompasses both bows, such as the human being, can manifest it through the oneness of their total gathering. Reflect: this is a major principle containing profound meanings.
+
+Most premises employed here to explain these two points are persuasive rather than demonstrated. The author therefore apologizes that establishing the two investigations, framing their arguments, and setting out their proofs exceeds this brief treatise. Each requires principles demonstrated through rules whose explanation needs a wider field.
+
+### Textual and translation notes
+
+1. The final admission that most premises here are persuasive is explicit in the commentary and retained. The account is not relabelled a completed demonstration merely because it invokes philosophical sciences.
+2. The distinction between genuine natural composition and aggregative unity is central. ‘Aggregation’ does not by itself imply that an organized whole has no relations or order.
+3. The source’s theory of elements, temperament, celestial spheres, and soul–body composition is translated as premodern philosophy, not current physical or medical science.
+4. The full prose on p.230 is retained around the very long modern editorial notes on neighbouring pages; those notes are excluded.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( بجميع اجزائها و سائر جزئيّاتها - خ ); ( المضادة - خ ); ( المتقابلة - خ ل ); [ المختلفة - ظ ]; ( ان جعلت - خ ل ); ( جمع الجمع - خ ل ); ( منها هاهنا - خ ل ); ( منها - خ )
+
+---
+
+## SH-051 — Species-wide perfection, individual variation, and the completing seal
+
+**Source:** A, printed pp. 234–237
+
+https://ablibrary.net/book_content/b/17638/430?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا جواب الشبهة القادحة في جامعيَّة الحقيقة النوعيَّة الانسانية ، بانَّها لا يشمل جميع الأنواع ، إذ ليس فيها ما يشبه الأنواع الخسيسة كالديدان و الحيّات و غير ذلك .
+و بيانه ، ان الأفعال الواقعة في عالم الخلق منها ما هي كمالية شريفة مقصودة
+
+بالذات ، لها مدخل في تكميل الغاية الحقيقيَّة التي هي غاية الغايات ، كالتغذية و الكميَّة و غير ذلك . و منها ، ما هي ناقصة خسيسة موجودة بالعرض و الاستطراد ، ليس لها دخل في تحصيل تلك الغاية ، كلدغ العقرب مثلًا و لسع الحيّات فالايواع ايضاً بحسب مصدريَّتها للقسمين المذكورين يكون على قسمين :
+منها ، شريفة داخلة في السلسلة المنتظمة من طرفى الخلق و الأمر ، المنتهية إلى الواسطة الحقيقيَّة التي هي الغاية المذكورة ، و منها ما يكون ناقصة خسيسة خارجة عن تلك السلسلة ، وجودها انَّما يكون بتبعيَّة تلك الأرواح المنتظمة فيها ، متفرّعة عليها .
+و إذا عرفت هذه المقدمة فنقول : انّ الأنواع الشريفة المذكورة التي يمكن ان يصدر عنها الأفعال الكماليَّة متناهية ، ضرورة انتهائها عند وصولها إلى الغاية المذكورة ، فلا يمتنع احاطة تلك الحقيقة الواحدة بها حينئذ ، و لا اعتبار بالأنواع الناقصة الخسيسة منها هاهنا ، فان جميع ما عن الخسيس من الأفعال الكماليَّة يصدر عن الشريف و يصدر عن الشريف من ذلك ما لا يصدر عن الخسيس ، على ان النوع الشريف الواحد بالوحدة الحقيقيَّة ، يمكن ان يتضمَّن سائر الأنواع الخسيسة ايضاً بالمعنى الذي أشير إليه و ذلك لانَّ ظهور الوحدة الحقيقية ، انَّما يكون بالعدالة المزاجيَّة الجامعة بين الوحدة الوجوبيَّة الذاتيَّة ، و بين الكثرة الامكانيَّة الأسمائيَّة .
+و إذا ظهرت الوحدة الحقيقيَّة الشاملة لسائر الوحدات و الكثرات كما مرَّ غير مرَّة ، فلا يمكن ان يكون حقيقة من الحقائق الا و تكون شاملة لها بحسب
+
+الحقيقة ، و ان كانت افرادها غير متناهية بحسب العدد ، فانَّه لا ينافي احاطة الوحدة الحقيقيَّة بذلك المعنى ، و إذا عرفت جامعيَّة الحقيقة النوعيَّة بالمعنى الذي ذكر ، فلا اعتبار حينئذ بالكمالات الجزئيَّة التي يختلف بحسب اختلاف الاستعدادات الجزئيَّة ، فلا يرد حينئذ النقض بالخاتمتين على جامعيَّة الحقيقة النوعيَّة ، فان التحقيق انَّما يقتضي ان الوحدات الجنسيَّة على اختلاف أنواعها كما اقتضت ، ان تنتهي إلى وحدة نوعيَّة جامعة للجميع ، كذلك يجب ان يكون تلك الوحدة النوعيَّة ايضاً مختلفة كمالاتها و جامعيتها المعنويَّة بحسب الحيطة إلى ان ينتهى إلى الوحدة الشخصيَّة الجامعة للكلِّ صورة و معنى ، التي هي التعيُّن العيني الحقِّي الذي ساير الحقائق انَّما يتحقق و يتكون به كما لا يخفى على الذكيّ العارف بأصول المباحث السالفة ، فان اصول قواعدهم السالفة يقتضي ان الكمالات الوجوديَّة الشريفة الانسانية دائمة الترقي حسب تجدُّد الأزمنة ، بحيث يجب ان يكون كل لاحق من الكمَّل يستوعب كمالات السابق منهم على خصوصياته الكماليَّة الخاصَّة ، حتى يتم نوع ذلك الكمال بوجود الخاتم « عليه من الصلوات أفضلها و من التحيّات أكملها » و ذلك لانّ اقتباس تلك الكمالات انَّما هو من مشكاة اكمليَّة و كل من كان أقرب نسبة إليه و اكثر مناسبة له ، كان استفاضته منه اكثر . و لا شكَّ ان المناسبة الزمانيَّة من أتم المناسبات ، إذ يستتبع تلك كثيراً من وجوه المناسبات ، فكل من كان أقرب زماناً إليه ، كان اكثر حظاً منه . و ممّا يؤيّد هذا ما نقل عن الحكماء المتألّهة من قدماء الفرس ، انَّهم اتفقوا على ان مراتب العقول على مذهبهم في التنازل تتضاعف اشراقاتها ، فكل ما تأخَّر في الرتبة ، كان حظُّه من إشراقات نور الأنوار و سبحات اشعَّة وجهه و إشراقات الوسائط من القواهر ، اكثر و اوفر . فكذا
+
+في الزمان ، و من جملة ما يحتوي عليه قول النبي « صلى اللَّه عليه و آله و سلم » « ان الزمان قد استدار كهيئة يوم خلق اللَّه تعالى السّماوات و الأرض » هذا المعنى ، و ان كان للحديث المذكور معان كثيرة عالية بحسب علو المشارب .
+و إذا تقرَّر هذا ، فيكون ذلك الشخص هو المتحقق بتلك الحقيقة النوعية بتمامها و كمالها ، و اما ما دونه من الأفراد فليس له تحقُّق بها هذا التحقُّق ، الكمالي ، لطريان العوائق في الطرق و المنازل الاستيداعية و الاستقرارية . و تفصيل الكلام في هذا المواضع و توجيه البحث فيه يحتاج إلى مقدمات كثيرة لا يليق بهذا المختصر .
+
+### Commentary — English
+
+I say: this answers the objection to the comprehensiveness of the human specific reality: it supposedly fails to include every kind, containing nothing like inferior kinds such as worms, snakes, and the like. Acts in the created world are of two sorts. Some are noble, perfective, and intended in themselves, contributing to the attainment of the genuine goal which is the end of ends, such as nourishment and growth [the indicated correction]. Others are deficient and base, existing incidentally and as accompaniments, without contributing to that goal, such as a scorpion's sting or a snake's bite.
+
+Kinds are correspondingly divided according to the actions they originate. Noble kinds belong within the ordered series extending between creation and command and ending in the genuine intermediary which is the goal just described. Inferior deficient kinds fall outside that series, their existence following upon and branching from the spirits ordered within it.
+
+The noble kinds capable of producing perfective acts are finite, since the series ends upon reaching that goal. Their inclusion within one reality is therefore not impossible. Inferior kinds need not be considered here, since every perfective action proceeding from an inferior kind also proceeds from a superior kind, whereas the superior performs actions the inferior cannot. Moreover, a noble kind possessing genuine unity can include the inferior kinds too, in the sense already indicated. Genuine unity appears through temperamental balance joining essential necessary unity to possible multiplicity of names.
+
+Once that genuine unity, which comprehends all unities and multiplicities, appears, no reality can lie beyond its essential comprehensiveness, even if its individuals are unlimited in number. Unlimited individuals do not contradict comprehensive unity in this sense. Given the comprehensiveness of the specific reality, particular perfections varying with particular preparednesses are not decisive. The objection drawn from the two seals therefore does not refute it.
+
+More precisely, just as generic unities of differing kinds require a comprehensive specific unity in which to terminate, that specific unity must possess varying degrees of perfection and intelligible comprehensiveness, until they terminate in a personal unity embracing all in form and meaning. This is the true external determination through which the other realities are realized and come to be, as an intelligent reader acquainted with the preceding principles will recognize.
+
+Those principles imply that noble human existential perfections continually ascend as times are renewed. Each succeeding perfected person must encompass the predecessor's perfections together with the particular perfections proper to himself, until that kind of perfection is completed in the seal. For the acquisition of these perfections is from the niche of supreme completeness. Whoever is more closely related to it and possesses greater affinity receives more from it. Temporal affinity is among the most complete affinities, because many other affinities follow it; whoever is temporally closer therefore receives a greater share.
+
+This is supported by what is reported of the ancient Persian divinized sages: they agreed that, as the ranks of intellects descend, their illuminations multiply. The later a rank, the greater its share of the illumination of the Light of Lights, the rays of His countenance, and the illuminations of the intermediate dominating lights. The same applies in time. This meaning is among those contained in the prophetic saying, ‘Time has come round to the condition it had on the day God created the heavens and the earth,’ although the report has many elevated meanings according to the heights of the paths from which it is understood.
+
+That individual is therefore the one who realizes the specific reality in its entirety and perfection. Lesser individuals do not realize it with the same completeness, because impediments arise on their provisional and settled paths and stages. Detailed investigation would require many premises unsuitable for this brief work.
+
+### Textual and translation notes
+
+1. The distinction is between specific comprehensiveness and the distribution of particular perfections. The commentator then adds his own account of completion in a personal unity; both stages are retained.
+2. The base الكمية has والتنمية suggested in the apparatus. ‘Growth’ is explicitly identified as the contextual correction rather than treated as a secure manuscript reading.
+3. The historical account of Persian sages and the interpretation of the report about time are the commentator’s reports and interpretations, not independently authenticated historical conclusions.
+4. The argument is teleological and belongs to the source’s classification of perfective actions. It is not a current biological taxonomy or a blanket ranking of empirical human beings.
+5. Reported electronic apparatus strings, not independent manuscript readings: [ تحصيل الغاية - ظ ]; [ و التنمية - ظ ]; ( فالانواع - خ ل ); ( جامعة - خ ); ( فكلّ - خ ); ( فليس التحقُّق بها هو التحقق الكمالي - خ ل )
+
+---
+
+## SH-052 — Relative dependence in manifestation and intrinsic divine self-sufficiency
+
+**Source:** A, printed pp. 237–243
+
+https://ablibrary.net/book_content/b/17638/433?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذه إشارة إلى دفع الشبهة القائلة بابطال المظهريَّة مطلقاً و بأن شيئاً من أجزاء العالم لو صحَّ ان يكون مظهراً ، للزم ان يكون الواجب محتاجاً إلى غيره ، فلا يكون واجباً لذاته .
+
+و بيان دفعه ، انَّه لا يمتنع ان يحتاج الحق في الاتصاف ببعض الصّفات
+
+و التعيُّنات إلى صفات و تعيُّنات اخر لاحقة به من ذاته ، انَّما الممتنع ان
+
+يحتاج الواجب في الاتِّصاف المذكور إلى ما ليس من ذاته من الصفات
+
+و التعيُّنات ، و اما إذا كان تلك الصفات المحتاجة إليها من ذاته ، فلا ينافي الواجبيَّة و لا يمتنع ذلك .
+فلئن قيل : انّ تلك التعيُّنات المحتاجة إليها من حيث هي موجودات خاصَّة امور ممكنة كما سبق بيانه ، فلا يجوز ان يتوقَّف الحق الواجب في الاتّصاف بصفة كماليَّة على تلك التعيُّنات ، و الا يلزم احتياج الواجب إلى الممكنات .
+قلنا : لا يستحيل ان يتوقَّف الحق في الاتّصاف ببعض الصفات الممكنة كالكمالات الأسمائيَّة مثلًا على صفات و تعيُّنات أخر ممكنة كظهوره بتلك الأسماء الهيَّة كانت أو كونيَّة حادثة أو قديمة ، نعم انَّما يستحيل لو
+
+احتاج في صفاته الواجبة هو بها ، كالكمال الذاتي مثلًا على صفات ممكنة ، و قد عرفت انَّه بهذا الاعتبار يلزمه الغناء المطلق . و اما الاحتياج فانَّما يطرأ عليه نظراً إلى كمالاته الأسمائية المشار إليها في عبارة المصنف هاهنا بالصفة الكمالية التي هي عبارة عن ظهوره في المظهر التام الكامل الكلى المطلق الشامل لجميع حقايق المراتب و جزئيّات المظاهر ، حادثها و قديمها ، و ذلك من الصّفات اللازمة له باعتبار حقيقته الكليَّة ، و من التعيُّنات الواجبة به باعتبار مظاهره الجزئيَّة ، فلا بُدَّ من احتياج الكامل بالكمال الكلّى إلى تلك التعيُّنات في الظهور ، كما ان تلك التعينات محتاجة إليه في الوجود و الوجوب ، إذ وجودها بالوجوب الذي هو بذلك الظاهر الكامل لا بغيره .
+فان قلت : كيف يطلق على هذا المظهر لفظ الإطلاق ، و لا قيد في الوجود
+
+الا و هو به مقيَّد .
+قلنا : الإطلاق الحقيقي هو الذي له احديَّة جميع القيود كلُّها ، على ما سبق بيانه في المقدمة ، فلتذكره ، لا الذي له الانتفاء عن ساير القيود .
+
+### Commentary — English
+
+I say: this answers the objection denying manifestation altogether on the ground that, if any part of the world could serve as a locus, the Necessary would need another and would therefore not be necessary through Himself. There is no impossibility in the Real's qualification by certain attributes and determinations requiring other attributes and determinations that belong to Him from Himself. What is impossible is that the Necessary should need, for such qualification, attributes or determinations not deriving from Himself. Where the attributes required are from Himself, the requirement is not incompatible with necessity.
+
+It may be objected that these required determinations, insofar as they are particular existents, are possible, as already established. The necessary Real cannot depend on them for a perfective attribute without the Necessary needing possible things. We reply that it is not impossible for the Real's qualification by certain possible attributes, such as perfections of the names, to depend on other possible attributes and determinations, such as His manifestation through the corresponding names, divine or cosmic, originated or eternal. What is impossible is dependence on possible attributes for the attributes through which He is necessary, such as essential perfection. As you know, this latter consideration entails absolute self-sufficiency.
+
+Need arises only with respect to the perfections of the names, called here the perfective attribute: manifestation in the complete, perfected, universal and unrestricted locus encompassing every reality of the levels and every particular manifestation, originated and eternal. This belongs among His necessary concomitant attributes considered through His universal reality and among determinations necessary through Him considered through His particular loci. What is complete through universal perfection therefore requires those determinations for manifestation, just as those determinations require Him for existence and necessity. Their existence is through the necessity bestowed by that complete manifest reality, not through another.
+
+You may ask how this locus can be called unrestricted when there is no qualification in existence by which it is not qualified. We reply that genuine unrestrictedness possesses the oneness of the gathering of all qualifications, as explained in the prolegomenon. It is not unrestrictedness defined simply as the absence of every qualification. Recall that distinction.
+
+### Textual and translation notes
+
+1. The answer distinguishes essential perfection, which entails absolute self-sufficiency, from perfections of the names as manifested under relations. It does not concede that the divine essence needs an independently existent external cause.
+2. The source’s printed pages 238–241 contain very short authorial continuations surrounded by later commentary. An untagged Arabic editorial note following هامش on p.240 is also excluded.
+3. The final definition of unrestrictedness as encompassing all qualifications, rather than merely lacking them, directly answers the terminological objection and is not an optional modern gloss.
+4. Reported electronic apparatus strings, not independent manuscript readings: ( كماله - خ ); ( مظهريَّته للجزئيَّة - خ ); ( الوجوب - خ ); ( جمع القيود - خ ل )
+
+---
+
+## SH-053 — Ordered faculties rather than abolished faculties: the human correspondences of the worlds
+
+**Source:** A, printed pp. 244–247
+
+https://ablibrary.net/book_content/b/17638/440?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا شروع في دفع ما أورد على القسم العملي من علومهم على الترتيب ، فبدأ يجيب عن الأول منها ، و هو القائل بان اتفاقهم على ان العلوم الحقيقيَّة و المعارف اليقينيَّة هو الذي يحصل للإنسان و ينكشف عليه عند الوصول إلى الإطلاق الذاتي بانحلال العقد الامكانيَّة و الانطلاق عن القيود الهيولائيَّة و الانخراط في سلك الملإ الأعلى من العقول المجرَّدة ، ينافي ما ذهبوا إليه من جامعيَّة الإنسان كما سبق تفصيله .
+و بيان ذلك ان المنافاة انَّما تلزم ان لو كان المراد بالإطلاق الذي هو الغاية في الوصول هاهنا هو الإطلاق الرسمى الاعتباري المقابل للتقييد ، و الأمر ليس كذلك ، بل الغاية هاهنا انما هو الإطلاق الذاتي الحقيقي الذي نسبة التقييد و عدمه إليه على السويَّة ، إذ ذلك هو الشامل لهما شمول المطلق لجزئيّاته المقيَّدة .
+و إذا تقرَّر معنى الإطلاق على هذا الوجه ، و ثبت انّ غاية الحركة الايجاديَّة هو ظهور الحق في المظهر التامِّ المطلق الشامل لجميع جزئيّات المظاهر ، فلا يلزم ان تكون الإدراكات الحسِّية و الوهميَّة و الفكريَّة غير معتبرة لو كان حصول الكمال الحقيقي بالوصول إلى مرتبة الإطلاق ، بل
+
+لا بُدَّ من اعتبارها حتى يتحقَّق الإطلاق و الجامعيَّة في الاظهار ، كما تحققت في الظهور . و ذلك لأن القوة القدسيَّة لو أخذت العلوم الحقيقية الكلية و المعارف اليقينيَّة عن مآخذها و معادنها عند تجرُّدها ، و استولت حينئذ على هذه القوى اعنى الجسمانيَّة المدركة للجزئيّات ، بحيث لا يستقل تلك القوى بنفسها في شيء من حركاتها و افعالها بدون استخدام تلك القوَّة القدسيَّة ايّاها و قهرها لتلك القوى على وجوب متابعتها و مبايعتها بالضرورة ، لا اعتبر في إطلاقها بالمعنى المذكور ساير انواع إدراكاتها من كليّاتها و جزئيّاتها ، صوراً كانت أو معانى ، غائبة أو حاضرة ، كما اعتبر تصرُّفاتها من التركيبات الواقعة في تلك المدركات و استحال حينئذ ان يكون شيء منها مانعاً لحصول ما هو الكمال الحقيقي عندهم ، بل لا بُدَّ و ان يكون كل منها على ما سبق من البيان سببا معيَّناً و علَّة معدَّة لحصول ما هو الكمال الحقيقي و لرسوخه و سهولة الترقي إلى اقصى مراتبه ، لما تقرّر ، من ان استخدامها لتلك القوى و كون استحصال الأثر مع المعاون ، اسهل من استحصاله بدونه فاعلم ذلك .
+و امّا نظاير العفاريت و المردة التي ذهب السائل إلى انتفائها في الإنسان الكامل ، فلا نسلِّم انَّها غير موجودة فيه ، نعم القوى التي هي نظائرها لمّا تسخَّرت و هذَّبت بالمجاهدات المعتبرة في طريق الاستكمال في الاشخاص الكاملة ، فقد صارت الأفعال المحمودة الصادرة عنها ملكيَّة ، فصارت ممنوعة عما يصحُّ ان يصدر عنها حسب اقتضاء طبايعها ، كما منعت عن مطاوعتها لبعض القوى الجسمانيَّة كالقوة الوهميَّة مثلًا من غير استخدام القوَّة القدسيَّة ايّاها .
+و ما نقل عن النبي صلى اللَّه عليه و آله : انّ شيطانه قد أسلم على يده ، إشارة إلى هذا المعنى ، و هكذا الكلام بعينه في الأنواع المماثلة للوحوش
+
+و السباع و البهائم و الحشرات الموذية . و اما الطبايع التي هي نظائر الأفلاك و الكواكب ، فان ما يكون مثالًا للشيء المعين لا يجب ان يكون متَّصفاً بجميع ما اتَّصف به ذلك الشيء بعينه من المشخصات ، إذ في المماثلة يكفى اتِّصافه بصفاته اللازمة للحقيقة المطلقة . و لئن سلّمنا ذلك ، لكن لا نسلَّم انَّه ليس هناك ما يتحرَّك على الدوام و الاستمرار ، فان الشرائين و شبهها كسائر العروق المحيطة بسائر أجزاء البدن محيطة بالبدن ، احاطة الأفلاك باجزاء العالم ، متحركة بعضها بالحركة الانقباضيَّة و الانبساطية ، و بعضها بنوع آخر من انواع الحركات ، و كالرئة ايضاً فانَّها متحرِّكة دائماً ، و ذلك باعتبار انَّه اصل الحركات الواقعة في البدن ، كلّها يشبه ان يكون مثالًا لحركة الفلك الأعظم الذي به يحصل انقباض الليل و انبساط النهار .
+و قد تعرض الشيخ « قدَّس سرَّه » لبيان التطبيق بقول شاف فلنورد عبارته الشريفة لاحتوائها على نكات لطيفة ، قال : « ان العوالم ، أربعة ، عالم الأعلى ، و هو عالم البقاء ، و عالم الاستحالة و هو عالم الفناء ، و عالم التعمير - التغيير - و هو عالم البقاء و الفناء ، و عالم النسبة ، و هذه العوالم في موطنين ، في العالم الأكبر و في الإنسان . فامّا العالم الأعلى « فالحقيقة المحمديَّة » و فلكها الحياة ، نظيرهما من الإنسان اللطيفة و الرُّوح القدسي و العرش ، و نظيره من الإنسان الجسم و الكرسي و نظيره النفس و البيت المعمور ، و نظيره القلب و الملائكة ، و نظيرها أرواح الإنسان و زحل و فلكه ، و نظيرهما القوة العلميَّة و النفس و المشترى و فلكه ، و نظيرهما القوَّة الذاكرة ، و مؤخّر الدماغ و الأحمر و فلكه ، و نظيرهما القوَّة العاقلة ، و اليافوخ و الشمس و فلكها ، و نظيرهما القوَّة الوهميَّة ، و الروح الحيواني و الزهرة و فلكها ، و نظيرهما القوة الخياليَّة ، و مؤخّر البطن الأول من الدماغ و الكاتب و فلكه ، و نظيرهما الحس المشترك و مقدم البطن الأول من الدماغ و القمر و فلكه ،
+
+و نظيرهما القوَّة الحسيَّة و الجوارح ، فهذه طبقات العالم الأعلى و نظائرها من الإنسان .
+و امّا عالم الاستحالة ، فمنهم الفلك الأثير و روحه الحرارة و اليبوسة ، و نظيره الصفراء و روحها القوَّة الهاضمة ، و منهم فلك الهواء ، و روحه الحرارة و الرطوبة ، نظيره الدم و روحه القوَّة الجاذبة ، و منهم فلك الماء و روحه البرودة و الرطوبة ، نظيرها البلغم و روحه القوَّة الدافعة ، و منهم فلك التراب و روحه البرودة و اليبوسة ، نظيرها السوداء و روحها - روحه - القوة الماسكة .
+و اما الأرض ، فسبع طباق ، ارض سوداء و ارض غبراء و ارض حمراء و ارض صفراء و ارض بيضاء و ارض زرقاء و ارض خضراء ، نظيرها هذه السبعة من الجلد و الشحم و اللحم و العروق و العصب و العضلات و العظام .
+و اما عالم التعمير ، فمنهم الروحانيُّون نظيرهم ، القوى التي في الإنسان ، و منهم عالم الأرواح نظيره ما يحسّ من الإنسان ، و منهم عالم النبات ، نظيره كل ما ينمو من الإنسان ، و منهم عالم الجماد ، نظيره ما لا يحسُّ من الإنسان .
+و اما عالم النسب ، فمنهم العرض ، نظيره الأسود و الأبيض ، و منهم الكيف نظيره الصحيح و السقيم ، و منهم ، الأين ، نظيره ، رأسى على عينى و عينى على كتفي ، و منهم ، الإضافة ، نظيرها ، هذا أبى و انا ابنه ، و منهم ، الوضع ، نظيره ، يمينى - نفسي - ، و منهم ، ان يفعل ، نظيره ، الأكل ، و منهم ، ان ينفعل ، نظيره ، الشبع ، و منهم ، اختلاف الصور في الايهاب ، كالفيل و الحمار و الأسد و الصرصر ، نظيره ، القوى الانسانيَّة التي يقبل ، الصور المعنويَّة من مذموم و محمود ، هذا فطن فهو فيل ، هذا بليد ، فهو حمار ، هذا شجاع ، فهو اسد ، جبّار ، فهو صرصر . فافهم و اللَّه يقول الحق و هو يهدى السبيل .
+
+### Commentary — English
+
+I say: this begins the ordered replies to the objections concerning their practical sciences. The first alleges that their account of genuine knowledge as disclosed only through essential unrestrictedness—by loosening possible bonds, escaping material restrictions, and joining the higher immaterial intellects—contradicts human comprehensiveness.
+
+The contradiction would follow only if the intended unrestrictedness were the conventional, conceptually considered kind opposed to restriction. It is not. The goal is genuine intrinsic unrestrictedness, to which restriction and its absence stand equally, since it comprehends both as the unrestricted comprehends its restricted particulars. Once this is established, and the goal of the existential movement is understood as the Real's appearance in the complete unrestricted locus embracing every particular manifestation, attaining genuine perfection at the level of unrestrictedness does not make sensory, estimative, and discursive apprehensions irrelevant. They must be included, so that unrestrictedness and comprehensiveness obtain in making manifest as well as in appearing.
+
+When the holy faculty draws universal truths and certain cognitions from their sources in its detachment, it gains mastery over the bodily faculties apprehending particulars. They no longer act independently in any movement or operation, but are employed by it and compelled to follow it. Unrestrictedness in the stated sense then includes all kinds of their apprehension: universal and particular, forms and meanings, absent and present, as well as their operations combining these objects. None can obstruct genuine perfection. Each becomes an assisting cause and a preparation for acquiring and consolidating that perfection and ascending more readily to its highest degrees. The holy faculty employs them; achieving an effect with assistance is easier than achieving it without assistance.
+
+Nor do we concede that counterparts of rebellious spirits and demons are absent from the Perfect Human. The corresponding faculties, once subdued and refined through the appropriate disciplines, produce praiseworthy acts of an angelic character. They are prevented from acting according to their independent natural impulses or following bodily powers such as estimation without the holy faculty employing them. The report that the Prophet's satan submitted through him points to this meaning. The same applies to counterparts of wild animals, predators, beasts, and harmful insects.
+
+As for the natures corresponding to the spheres and stars, a likeness need not possess every individuating property of its original. Resemblance requires only the attributes belonging to the unrestricted reality. Even if this is conceded, we deny that the human being contains nothing moving continually. Arteries and other vessels surround the parts of the body as spheres surround the world's parts. Some move by contraction and expansion, others by other motions. The lungs also move continuously; as the source here identified for bodily movements, they resemble the motion of the greatest sphere through which night contracts and day expands.
+
+The Shaykh has explained the correspondences adequately. We quote his words for their subtle meanings:
+
+‘The worlds are four: the higher world, the world of permanence; the world of transformation, the world of passing away; the world of inhabitation, the world of permanence and passing away; and the world of relations. They occur in two domains, the macrocosm and the human being.
+
+‘In the higher world are the Muḥammadan Reality and its sphere, life; their human counterparts are the subtle reality and the holy spirit. The Throne corresponds to the body; the Footstool to the soul; the Frequented House to the heart; the angels to the human spirits. Saturn and its sphere correspond to the faculty of knowledge and the soul; Jupiter and its sphere to memory and the rear of the brain; the Red Planet and its sphere to the intellectual faculty and the crown of the head; the sun and its sphere to estimation and the animal spirit; Venus and its sphere to imagination and the rear of the brain's first ventricle; the Scribe and its sphere to common sense and the front of the first ventricle; and the moon and its sphere to the sensory faculty and the limbs. These are the divisions of the higher world and their human counterparts.
+
+‘In the world of transformation are the sphere of ether, whose spirit is heat and dryness, corresponding to yellow bile, whose spirit is digestion; the sphere of air, whose spirit is heat and moisture, corresponding to blood and the attractive faculty; the sphere of water, whose spirit is cold and moisture, corresponding to phlegm and the expulsive faculty; and the sphere of earth, whose spirit is cold and dryness, corresponding to black bile and the retentive faculty. The earth has seven layers: black, dust-coloured, red, yellow, white, blue, and green. Their human counterparts are skin, fat, flesh, vessels, nerves, muscles, and bones.
+
+‘In the world of inhabitation are spiritual beings, corresponding to human powers; the world of spirits, corresponding to what senses in the human being; plants, corresponding to what grows in him; and minerals, corresponding to what does not sense in him.
+
+‘In the world of relations are accident, exemplified by black and white; quality, exemplified by healthy and ill; place, exemplified by my head above my neck and my neck above my shoulders [the reported alternative]; correlation, exemplified by this being my father and my being his son; position, exemplified here by my right [the wording is uncertain]; acting, exemplified by eating; and being acted upon, exemplified by satiation. There are also different forms in bodily coverings, such as elephant, donkey, lion, and ṣarṣar. These correspond to human faculties receiving praiseworthy and blameworthy forms: this one is discerning, so he is an elephant; this one dull, so a donkey; this one brave, so a lion; this one cowardly [the suggested reading], so a ṣarṣar. Understand: God speaks the truth and guides to the way.’
+
+### Textual and translation notes
+
+1. The long nested quotation and every class of correspondence are retained. These are premodern symbolic, anatomical, and humoral associations, not current medical or astronomical claims.
+2. The third world is printed التعمير with التغيير as an alternative. ‘Inhabitation’ renders the former provisionally. The scope and subdivisions should not be silently replaced by a more familiar cosmological scheme.
+3. The place example is printed with عين / عيني, while عنق / عنقي is reported; the English explicitly follows the latter. The position example يميني / نفسي is unsettled and is marked rather than expanded conjecturally.
+4. The last character term is printed جبار with جبان suggested; ‘cowardly’ follows the indicated correction. The insect designation ṣarṣar is retained without forcing a modern zoological identification.
+5. The prophetic report about the accompanying satan is reported and interpreted by the commentator. This edition makes no independent claim about its transmission beyond the quoted source.
+6. Reported electronic apparatus strings, not independent manuscript readings: ( ملكة - خ ); ( المختصة - خ ); ( العوالم - خ ); ( نظيرها - خ ); ( و روحه - خ ); ( عنقي - و عنقي - خ ل ); ( الإهاب ، الامّهات - خ ل ); ( النوعية - خ ); [ جبان - ظ ]
+
+---
+
+## SH-054 — Beyond discursive thought does not mean beyond every form of intellect
+
+**Source:** A, printed pp. 248–249
+
+https://ablibrary.net/book_content/b/17638/444?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا إشارة إلى دفع الشبهة القائلة بان المعارف الكشفيَّة التي يسمُّونها بالكمال من الأمور الممتنعة التي لا يمكن ان يدركها العقل كما سبق بيانه . و تقرير ذلك انّا لا نسلم ان العقل لا يدرك تلك المكاشفات و المدركات التي في الطُّور الأعلى الذي ، هو فوق العقل أصلًا ، نعم انَّ - من الأشياء الخفيَّة ما لا يصل إليه العقل بذاته ، بل انَّما يصل إليه و يدركه باستعانة قوَّة اخرى هي اشرف منه ، و استبانة نور اضواء هو أتم - منه ، مقتبساً من مشكاة الزجاجة الانسانيَّة التي فيها المصباح ، لكن بعد الوصول
+
+يدركه العقل مثل سائر مدركاته ، كما في المدركات الجزئيَّة ، فانَّه في استحصالها يحتاج إلى قوة اخرى ، لكنَّها انزل و اخسَّ منه ، و بعد الوصول يدركها مثل سائر مدركاته على السواء . و اما لأشياء الباقية ، فكلَّما يدرك و يوصل به إليها ، على انّا نقول : ان كل ما يدرك معنى كليًّا أو حقيقة كليَّة ، سواء كان ذلك بالنظر و البرهان ، أو بواسطة الكشف و الوجدان ، يصدق عليه حدُّ العقل و رسمه . نعم منشأ هذه التفرقة ، ان العقل بالمعنى الذي يتداول بين الناس و يقولون به و يعبِّرون عن العلوم المنسوبة إليه بالعلوم الرسميَّة ، سيَّما هذه الطائفة منهم ، انَّما يريدون به القوَّة الفكريَّة التي تأخذ العلوم من مباديها بتوسُّط استخراج الاوساط و تأليفها مع حدِّ المطلوب ، و لا شك انّ هذه من بعض قوى مطلق العقل و مراتبه .
+و إذا كان الأمر على هذا الوجه ، فلا يلزم من قولهم : ان طور المكاشفات و الكمالات الحقيقيَّة فوق العقل بالمعنى المتعارف ، ان يكون ذلك الطُّور مما يمتنع إدراكه للعقل مطلقا حتى يمتنع التعبير عنها ، فيلزم ان تكون معدومات صرفة ، على ان الحافظة و المتوهِّمة و المتخيِّلة التي هي آلات تعبير المعاني المدركة بالألفاظ المعيَّنة ، قد لا يطيع العقل الفكرى ، لضعفه و عدم تسلُّطه عليهم ، و ينقاد لتلك القوَّة ، أي العقل المطلق المنوَّر بنور الإطلاق الذاتي القوى بالقوَّة الأصليَّة الاحاطيَّة حتى يستخدمها في ارادتها ، فلهذا تجد من عبارات ارباب هذه القوَّة ما بلغ في فنون البلاغة حد الاعجاز ، بحيث لا يقدر من صرف الأعمار في تتبُّع قوانين الخطابة و استنباط قواعد الفصاحة ان يأتى بقريب منه .
+
+### Commentary — English
+
+I say: this answers the objection that the unveiled cognitions called perfection are impossible because intellect cannot apprehend them. We do not concede that intellect altogether fails to apprehend what is disclosed in the higher mode said to lie above it. Some hidden matters cannot be reached by intellect through itself, but can be reached with the help of a nobler power and illumination from a more complete light, kindled from the niche of the human glass containing the lamp. Once reached, however, intellect apprehends them as it does its other objects. It likewise needs another faculty to acquire particular objects—although that faculty is lower and less noble—and once they are acquired it apprehends them as it does its other objects. The remaining things apprehended through that higher faculty can also be reached intellectually.
+
+Indeed, whatever apprehends a universal meaning or reality, whether through investigation and demonstration or through unveiling and immediate experience, falls under the definition and description of intellect. The distinction arises because intellect in ordinary usage, especially among this group, means the discursive faculty associated with formally constituted sciences: the faculty that derives knowledge from principles by finding middle terms and combining them with the terms of the conclusion. This is only one of intellect's powers and levels.
+
+Their statement that unveiling and genuine perfection occur above intellect in this customary sense therefore does not entail that such a mode is unapprehensible by intellect without qualification, inexpressible, and hence sheer nonbeing. Memory, estimation, and imagination—the instruments through which apprehended meanings are expressed in particular words—may fail to obey the discursive intellect because it is weak and lacks mastery over them, while submitting to the higher power: unrestricted intellect illuminated by essential unrestrictedness and strengthened by original comprehensive power. It can then employ them for what it intends. Hence the expressions of those endowed with this power sometimes attain an inimitable degree of eloquence, beyond what people who spend their lives investigating rhetoric and articulating its rules can approach.
+
+### Textual and translation notes
+
+1. The distinction is between intellect in an inclusive sense and the discursive faculty that constructs demonstrations. The translation does not turn ‘above reason’ into a claim of sheer unintelligibility.
+2. The source’s sentence beginning وأما الأشياء الباقية is elliptical; its intended contrast is rendered from the immediate argument and preceding matn, without claiming a recovered full Arabic clause.
+3. The luminous niche, glass, and lamp imagery is preserved rather than translated away into a modern psychological model.
+4. Reported electronic apparatus strings, not independent manuscript readings: ( حدي المطلوب - خ )
+
+---
+
+## SH-055 — How watchfulness can change the operation of established dispositions
+
+**Source:** A, printed pp. 250–252
+
+https://ablibrary.net/book_content/b/17638/446?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذه إشارة إلى دفع الاستبعاد الذي استشكلوه في طريق استحصال الانطلاق عن العقود و الإطلاق عن القيود المستتبع للمكاشفات الحقيقيَّة ، بأن الملكات الراسخة و الأفعال الطبيعيَّة ، كيف يتخلَّف عن موضوعاتها بمجرَّد التصوُّرات و الاعتبارات العقليَّة المسمّاة بالمراقبة و الأفعال المضادة لها . و تقرير دفعه ، ان دوام المراقبة التي هي عبارة عن ملاحظة الحقيقيَّة المطلقة في تنوَّعات تعيُّناتها بحيث لا يغيب عن الواحد الظاهر بكثرة المظاهر ، ممّا يستجلب تلك الكمالات و يستحصل به ساير العلوم و المعارف . و بيان ذلك انَّما يتمّ بتمهيد مقدمة و هي ، انّ امداد الحق سبحانه و تعالى و تجليّاته متواصلة إلى العام في كل نَفَس ، بل الموجود عند التحقيق ليس الا تجلياً واحداً يظهر له بحسب مراتب القوابل ، و استعداداتها تعيُّنات هي المبدأ لهذه التعدُّدات الظاهرة ، و الا فالتجلّي الفايض على الممكنات من الحق ، احدىُّ الذات ، لكنَّه انَّما يظهر بحسب احكام القوابل ، فمهما غلب فيها من الصفات و الأحكام ، وجوبيَّة كانت ، أو امكانيَّة ، يكون ظهور ذلك التجلي فيها بحسبها منصبغاً بذلك الغالب من الأحكام النسبيَّة الاعتباريَّة محققاً بأحكامه و أوصافه الحقيقية
+
+التي أولها العلم ، ثمَّ ان الحقيقة القلبيَّة الانسانيَّة ، لسعة قابليتها و احاطة جامعيَّتها لتحزيب للبحرين ، الأسماء الإلهيَّة و الحقائق الكونيَّة ، و صلاحيَّتها للمرآتيَّة و المظهرية ، جعلت موردة للأحكام الجزئيَّة و الكلية فما برحت ظاهرة بأحكام ما خطر فيها ، كلَّية كانت أو جزئيَّة ، الهيَّة أو كونيَّة متجددة منقلبة في تلك الأحكام ، فإذا لم يخطر فيها شيء من الجزئيّات و لم يغلب عليها حكم صفة على التعيين و يظهر عن ساير العلايق بالكليَّة حتى عن التوجُّه إلى الحق به اعتقاد خاص ، أو الالتجاء إليه باسم جزئي ، فان ذلك التجلي حينئذ يظهر بحسب احديَّة الجمع الذاتي بأوصافه الحقيقيَّة التي أولها رتبة و أقواها نسبة إليه العلم .
+فعرفت من هذه المقدمات ، انّ دوام المراقبة و المواظبة عليها انسب وسيلة و أقرب طريقة لاستحصال العلوم و المعارف ، سيَّما إذا كانت مع ملازمة الآداب و الشروط المعتبرة عند ارباب هذه الصناعة من فطام النفس عن المألوفات و عدم الالتفات إلى الرسوم و العادات و ترك مقتضيات القوى الجسمانية الحيوانية من البهيمية الشهوانية و السبعية الغضبية المستعملة في جذب الملاذِّ الدنيويَّة و رفع المكاره البدنيَّة ، ثمَّ قهرها على المطاوعة و المتابعة للقوة القدسيَّة ، و ممانعة اقتضاء ما يقتضيه القيود المذكورة ، اما بحسب ذاتها أو بوجوب مطاوعتها للهوى و القوَّة الوهميَّة و المتخيِّلة البدنية ، إذ اسعاف المقتضيات القوى و القيود المذكورة انَّما يقهر القوَّة القدسيَّة على المتابعة و المدافعة عن توجُّهها
+
+بالكليَّة نحو البدن و تقيُّد انجذابها نحو المادَّة و الكدورات المظلمة اللازمة لها ، فان الأسباب الفاعليَّة لا يبعد ان تصير معزولة عن بعض ضروب الفاعليَّة التي مبدئها اللواحق الماديَّة و القيود الامكانيَّة ، مقهورة على ضرب آخر يقابل الضرب الأول بأسباب آخر قويَّة ، مثل ارتكاب المكاره و ساير ما يضادُّ تلك المقتضيات ، فان من المقرَّرات ، انّ معالجات الأمراض انَّما هي بأضدادها .
+
+### Commentary — English
+
+I say: this answers the alleged improbability of escaping bonds and restrictions so as to attain genuine unveiling. How, it was asked, could entrenched dispositions and natural acts fail to follow their subjects merely through representations, intellectual considerations called watchfulness, and opposing actions?
+
+Continual watchfulness consists in observing unrestricted reality through the varieties of its determinations, without losing sight of the one that appears through the many loci. It draws the perfections in question and brings knowledge and cognition. To explain this, a preliminary point is needed. The Real's replenishments and self-disclosures reach the world continuously at every breath. Strictly speaking, there is only one disclosure, which acquires determinations according to the recipients' levels and preparednesses. These determinations ground the apparent multiplicities. The effusion from the Real is one in its essence, but appears according to the governing properties of the recipients. Whatever attributes predominate in them, necessary or possible, colour its manifestation through those relational considerations, while its own real properties—first among them knowledge—are concealed [following the reported alternative].
+
+The human heart, because of the breadth of its receptivity and its comprehensiveness joining the two seas of divine names and cosmic realities, is suitable as mirror and locus. It therefore receives particular and universal governing properties, continually changing according to what passes within it, whether particular or universal, divine or cosmic. If no particular object enters it, no determinate attribute dominates it, and it is purified of attachments—even an orientation to the Real through a particular belief or resort to Him through a particular name—the disclosure then appears according to essential comprehensive oneness with its real properties. First in rank and closest in relation among these is knowledge.
+
+These premises show why continual watchfulness is a most fitting means and nearest route to knowledge, especially when joined to the manners and conditions recognized by the practitioners of this discipline: weaning the soul from habitual objects, disregarding conventions and habits, abandoning the demands of bodily animal powers—appetite and predatory anger—used to procure worldly pleasures and repel bodily discomforts, and bringing them into obedience to the holy faculty. It also involves resisting what the restrictions require, whether through their own natures or through their submission to appetite, estimation, and bodily imagination.
+
+Indulging those faculties and restrictions conversely subjects the holy faculty to their direction and draws it toward the body, matter, and its obscuring conditions. The source's exact sentence here is disordered, but its subsequent causal point is explicit: operative causes may be prevented from exercising activities arising from material concomitants and possible restrictions, and constrained to contrary activities by stronger causes, such as undertaking what opposes the former demands. For, as the established maxim states, disorders are treated through their contraries.
+
+### Textual and translation notes
+
+1. The source has محققا with مختفيا reported. The English expressly follows ‘concealed’, which agrees with the contrast between receptivity-coloured manifestation and the disclosure’s intrinsic properties.
+2. The phrase لتحزيب للبحرين and the later cluster about the holy faculty’s orientation to the body are textually strained. Their uncertainty is recorded rather than concealed by a confident reconstruction.
+3. The concluding therapeutic maxim belongs to the premodern text. It is not individualized medical or psychological advice, nor a recommendation of extreme deprivation.
+4. The explanation invokes contrary operative causes, not merely the assertion that imagining oneself unrestricted abolishes entrenched habits.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( مختفياً - خ ); ( ما ، مما يوجب ظاهرة - خ ل ); ( أقربها - خ ); ( الأدب - خ ); ( انبعاث المقتضيات - خ ل ); ( تفيد انجذابها - خ ل ); ( ان معالجة الأضداد ، انَّما هي بأضدادها - خ )
+
+---
+
+## SH-056 — Purification restores balance rather than deliberately producing disorder
+
+**Source:** A, printed pp. 255–257
+
+https://ablibrary.net/book_content/b/17638/451?lang=ar
+
+### Commentary — Arabic
+
+أقول : هذا جواب الشبهة الأخيرة ، و هي المشار إليها في صدر الرسالة ، من انّ ساير ما يتوسَّلون به في الطريقة الحقَّة على مذهبهم المسمَّاة بطريق التصفية من الأعمال و الأحوال ، انَّما هو أسباب استيلاء المرَّة السوداء على
+
+الأعضاء الشريفة الادراكيَّة و انحرافها عن صورها المزاجيَّة الاعتداليَّة ، فيريد ازاحة هذه الشبهة و إثبات ما ادعى هنا لك من الأمر فيما زعموه ، من اختلال امزجة الأعضاء الادراكيَّة و ارتكاب أسبابه على خلاف ما ظنُّوه ، بل على عكس ما تخيَّلوه ، فشرع يبيَّن تلك الأعمال و الأفعال على التفصيل ، انها ليست موجبه لانحراف الامزجة عن الصورة الاعتدالية الأصلية ، بل التزام تلك الأعمال انَّما هي لاسترداد تلك الأمزجة عن الانحرافات الحاصلة لها بواسطة تراكم الأهوية النفسانيَّة و تصادم الاقتضاءات و العادات الطبيعيَّة الهيولانيَّة إلى صورها الاعتداليَّة الأصليَّة ، بعبارة مبسوطة لا يحتاج إلى تطويل الكلام بتوضيحه ، لكن هاهنا مقدَّمة جليلة النفع لا بُدَّ من التعرُّض لها ، و هي ، ان الصورة حيثما اعتبرت ، الهيَّة كانت أو كونيَّة ، تقتضي ان تكون دوريَّة ، و ان المركز منها ، هو المظهر للحقيقة الحقَّة الموجودة بالذات اولًا ، و ان ساير النقط الباقية انَّما هي مظاهر النسب الأسمائيَّة و الأعيان الاعتباريَّة ، و لهذا لا يتمايز وجوداتها الا باعتبارها
+
+إلى مقابلاتها ، و نسبتها إلى أضدادها . و اما نقطة المركز ، فليس لها مقابل و لا ضدَّ و ندَّ ، بل هو الواحد الحقيقي الذي تعيَّن به ساير النقط و مقابلاتها . و ما سمعت من انّ مظهر الوحدة الحقيقيَّة هو الصورة الاعتداليَّة ، انَّما المراد به هذا المعنى .
+ثمَّ ، ان كل ما كان من تلك النقط أقرب إلى المركز ، كانت آثار الوحدة و الوجوب فيها اكثر و أحكامها يكون اشمل ، و كلَّما كان أبعد ، كانت آثار الكثرة و الإمكان فيها اكثر ، و أحكامها يكون اقلّ شمولًا و اقصر نسبة لوجود مقابله بآثاره الخاصَّة المقابلة لآثارها و أحكامها ، فحينئذ ، يكون الموجودات على ثلاثة اقسام ، منها - ما يكون متوسِّطاً في احكام الوحدة و الكثرة و هي الحقيقة النوعيَّة الانسانيَّة ، و منها - ما يكون مائلًا في ذلك إلى طرف الوحدة و البساطة ، و هي العقول و النفوس المجرَّدة ، و منها - ما يكون مائلًا في ذلك إلى طرف الكثرة ، كالحيوانات و النباتات و الجمادات .
+ثمَّ ، ان افراد تلك الحقيقة النوعيَّة ايضاً لسعة عرضها و احاطة جامعيَّتها على ثلاثة اقسام ، منها - ما يكون بجميع أحواله و أفعاله واقعاً في وسط العدالة ، و هو الخليفة الحقيقيَّة للحق و الإنسان الكامل .
+و منها ، ما يكون واقعاً اما في طرف الإفراط أو التفريط ، خارجاً عن الصورة الاعتداليَّة ، فبحسب ميله عن تلك الصورة محتاج إلى العلاج و الميل عمّا فيه من المرتبة الخارجة إلى الطرف المقابل لها من المراتب الخارجة ، حتى يحصل له المرتبة الاعتداليَّة الأصليَّة كما تقرَّر في امر العلاج ، انَّه انَّما يكون بالضد ، و قد بيَّن المصنِّف جميع ذلك في المتن مفصلًا مبسوطاً لا يحتاج إلى مزيد من التوضيح .
+
+### Commentary — English
+
+I say: this answers the last objection, already raised at the beginning of the treatise: that the actions and states employed in what they call the path of purification are causes of black bile's domination of the noble cognitive organs and their deviation from balanced temperament. The author wishes to remove this difficulty and establish that the situation is contrary to the objector's supposition—indeed, the reverse. He therefore explains the practices in detail. They are not intended to disturb the organs' original balance, but to restore it after deviations caused by accumulated appetites and conflicting natural, material habits and demands. His exposition is sufficiently full to need no prolonged explanation.
+
+There is, however, an important preliminary point. A form, whether divine or cosmic, requires a circular configuration in this account. Its centre manifests the true reality that exists primarily through itself; the remaining points manifest the relations of the names and conceptually considered entities. Their existence is distinguished only through relation to their opposites. The centre, by contrast, has neither opposite, contrary, nor peer. It is the genuinely one through which the other points and their oppositions are determined. This is the intended meaning of the claim that balanced form manifests genuine unity.
+
+The closer a point is to the centre, the more numerous the effects of unity and necessity and the more comprehensive their governing properties. The further it is, the greater the effects of multiplicity and possibility and the more limited its governing properties and relations, because it has an opposite possessing its own contrary effects. Existents consequently divide into three kinds. One occupies the mean between the governing properties of unity and multiplicity: the human specific reality. Another inclines toward unity and simplicity: immaterial intellects and souls. The third inclines toward multiplicity, as do animals, plants, and minerals.
+
+The individuals of the human reality, owing to the breadth of its range and comprehensiveness, likewise fall into three divisions. One remains at the mean of balance in all states and actions: the true vicegerent of the Real and the Perfect Human. Others lie on the side of excess or on that of deficiency, outside balanced form. According to their deviation they require treatment and a movement from the extreme they occupy toward its opposite, so that original balance may be restored. This accords with the established account of treatment through contraries. The author has explained all this at length in the matn; it needs no further elucidation.
+
+### Textual and translation notes
+
+1. The commentator refers readers to the matn’s explicit condemnation of excessive hunger, sleeplessness, and unsuitable nourishment; he does not replace its qualified account with a blanket endorsement of hardship.
+2. The circle and centre provide the author’s metaphysical analogy for balance. Their use is not presented as a contemporary physiological demonstration.
+3. Treatment by contraries and black-bile terminology are historical source concepts. Nothing here is individualized advice on nutrition, fasting, sleep deprivation, or mental-health treatment.
+4. Reported electronic apparatus strings, not independent manuscript readings: ( فلا ضدَّ و لا ندَّ - خ ل )
+
+---
+
+## SH-057 — The reflective investigators' qualified acceptance of the contemplative path
+
+**Source:** A, printed pp. 258–260
+
+https://ablibrary.net/book_content/b/17638/454?lang=ar
+
+### Commentary — Arabic
+
+أقول : لما فرغ عن جواب شبهة المتحذقين من اهل النظر و الاستدلال ، يريد ان يبيِّن ما هو الحق عند المحقِّقين منهم في هذا الأمر ، حتى يشرع بعد ذلك فيما هو الحقُّ عنده فيه ، فان المتبادر إلى الأوهام من مطلع الكتاب إلى هذا المقام ، انَّ ساير اهل النظر ينكرون طريق التصفية ، و انّ - تلك الشبهة الداهية انَّما كانت من عندهم ، و الأمر ليس كذلك ، فان المحققين ، من النظَّار المتقدِّمين منهم و المتأخّرين ، المشّاءين منهم ، و غير المشّاءين ، لا ينكرون امكان طريق التصوُّف و إفضائه إلى المقصد على النّدور ، لكنَّهم لما رأوا فيه من تزاحم الموانع و العوائق و تراكم الشروط و الأسباب ، استوعروه و استبعدوا اجتماع شروطه ، و زعموا انّ محو العلائق الذي هو أول منازل هذا الطريق و مبادى مشارعه إلى ذلك الحدّ المعتبر لديهم من قطع النسب و التعلُّقات الخارجيَّة ، ظاهرة كانت أو باطنة ، بحيث لا يخطر له خاطر يشغله عن ملاحظة امر واحد كالمتعذِّر ، و ان حصل في حالة واحدة لكن ثباته أبعد منه ، إذ ادنى وسوسة و خاطر يشوِّش القلب و يشغله عمَّا فيه ، لسرعة تقلُّبه ، و لهذا عبَّر عنه لسان الشريعة
+
+ الحقَّة بقوله ، صلى اللَّه عليه و آله : قلب المؤمن بين إصبعين من اصابع الرحمن ، إذ ليس في الجوارح أسرع تقلُّبا من الأصابع ، و ان سلّم السالك من هذا ، لكن بواسطة انحراف الأمزجة عن العدالة الأصلية ، يتصادم الاهويَّة المتخالفة ، لا شك انَّه محتاج إلى مواظبة المجاهدة و ارتكاب ما يخالف الطبيعة و يضادها على ما مرَّ بيانه آنفاً ، و حينئذ لا يبعد ان يفسد المزاج و يختلط العقل و يمرض البدن بسبب ارتكاب أسبابه المعدَّة له ، و ان سلّم من هذا ايضاً لكن متى لم يتقدَّم رياضة النفس و تهذيبها بحقائق العلوم الكليَّة و القوانين المميِّزة تشبَّت بالقلب خيالات فاسدة ، تطمئن النفس إليها مدة مديدة ، فكم من سالك يسلك بهذا الطريق ، ثمَّ بقي في خيال واحد ، مدَّة - عشرين سنة - و اكثر من ذلك كما روى عن الشيخ حسين بن منصور - قدس سرّه - انَّه سأل من حال بعض المتصوفين من اهل الطريق و مقامه ، فأجاب ، انّى منذ - ثلاثين سنة - اروض في مقام التوكُّل . فقال له الحسين : إذا أفنيت عمرك في تعمير الباطن ، فأين الفناء في التوحيد ؟ و قد صرَّح الشيخ ايضاً في الفتوحات المكيَّة ، ان ارتكاب المجاهدة ، انَّما ينتج المعارف بالنسبة إلى ارباب الهمم ، و امّا لغيرهم فإنما ينتج صفاء الوقت و رقَّة الحال .
+شعر
+خليلى قطَّاع الفيافي إلى الحمى * كثير ، و امّا الواصلون قليل
+و إذا كان الأمر على هذا الوجه ، فلو أتقن المرتاض المجاهد تلك القوانين العلميَّة المميّزة اولًا ، لا نفتح عليه وجه التباس ذلك الخيال في الحال و ما حطَّ فيه الرحال .
+ثمَّ إذا تقرَّر الأمر على هذا المنوال ، ظهر انّ الاشتغال بطريق النظر لاستحصال تلك المعارف و الحقائق أقرب و اسهل و اوثق ، فانَّ الاشتغال
+
+بذلك الطريق ، يحتاج إلى ان يكون مسبوقاً بطريق النظر ، حتى يكون موثوقاً به ، و إفضاؤه إلى المقصود ايضاً انما يتمّ به كما سبق بيانه دون طريق النظر ، فانَّه في ذلك كلّه مستغن عنه كما - على ما - تبيَّن آنفاً .
+
+### Commentary — English
+
+I say: having answered the objections of those who parade their cleverness in reflective inquiry, the author wishes to state what the accomplished investigators among them actually hold, before presenting his own view. From the beginning of the book to this point, one might suppose that all reflective investigators deny the path of purification and are responsible for the formidable objection just considered. This is not so. Accomplished investigators, ancient and later, Peripatetic and non-Peripatetic alike, do not deny that the Sufi path is possible or occasionally attains its goal.
+
+They nevertheless see numerous obstacles and a demanding combination of conditions and causes, and therefore regard it as arduous and think its conditions unlikely to coincide. Removing attachments, the first stage of the path, requires severing outward and inward relations so completely that no passing thought distracts from attention to a single matter. They regard this as almost impossible. Even if it occurs for a moment, sustaining it is more remote still, since the slightest suggestion or thought disturbs and occupies the rapidly changing heart. The language of revelation expresses this in the report that the believer's heart is between two fingers of the All-Merciful: among bodily members none changes position more readily than the fingers.
+
+Even if the traveller avoids this obstacle, a temperament departing from original balance is subject to conflicting appetites. He must persevere in disciplines and undertake what opposes nature, as explained. It is therefore possible that the temperament will be corrupted, intellect disturbed, and body made ill by undertaking the causes of those effects. Even if he escapes this, without prior training of the soul through true universal sciences and discriminating rules, false imaginings may attach to the heart and satisfy it for a long time. Many a traveller remains caught in one image for twenty years or more.
+
+It is reported that al-Ḥusayn ibn Manṣūr asked a practitioner about his state and station. The man replied that he had practised for thirty years in the station of reliance. Al-Ḥusayn said, ‘If you have spent your life cultivating the inward self, where is annihilation in divine unity?’ The Shaykh likewise states in the Meccan Openings that spiritual exertion yields knowledge for those endowed with concentrated aspiration; for others it yields only clarity of the moment and delicacy of state.
+
+‘My friends, many cross the wilderness toward the sanctuary,
+but few are those who arrive.’
+
+Had the practitioner first mastered the discriminating scientific rules, the error in that imagining would have become apparent immediately, and he would not have made it his resting place. On this account, pursuing reflective investigation to acquire these cognitions and realities appears nearer, easier, and more reliable. The other path must be preceded by reflective investigation to become trustworthy and attain its goal, whereas reflective investigation is said to need no such prior dependence upon it.
+
+### Textual and translation notes
+
+1. The final preference for reflective inquiry is the position being reported, not yet the author’s own assessment. SH-058 explicitly introduces his reply.
+2. The maxim about the heart, the al-Ḥallāj anecdote, and the report from the Meccan Openings are translated as quotations and reports in the medieval source; their independent transmission is not certified.
+3. The verse is included. The distinction between attaining knowledge and merely experiencing clarity of state is preserved.
+4. Reported electronic apparatus strings, not independent manuscript readings: [ المتحذلقين - ظ ]; ( الواهية - خ ); ( بلسان الشريعة - خ ل ); ( سلك - خ )
+
+---
+
+## SH-058 — Both paths require purification, attention, and a balanced constitution
+
+**Source:** A, printed pp. 260–262
+
+https://ablibrary.net/book_content/b/17638/456?lang=ar
+
+### Commentary — Arabic
+
+أقول : لمّا بيَّن ما استقرَّ عليه رأى اهل النظر من المحققين منهم ، و المتحدقين في حقَّية طريق النظر ، أراد ان يبيِّن ما هو الحق عنده ، فنبَّه بقوله : و اما نحن إلى آخر قوله يريد ان يبيِّن ما هو الحق عنده في هذا الأمر ، فقال : انّ كلّ شرط يعتبر في طريق التصوُّف ، فلا بُدَّ من اعتباره في طريق النظر ، و ذلك لأنَّ رفع العلايق المشوِّشة الذي هو من مبادى هذا الطريق و اوائل منازله ضرورى في طريق النظر ايضاً ، و الا ، فلا يمكن إفضاؤه إلى المطلوب ، فانّ ادراك الاوليات التي هي من اجلى المطالب عندهم ، لا يمكن بدون التوجُّه الذي انَّما يتحقق بالاعراض عمّا سوى المتوجِّه إليه و الإقبال عليه بالكليَّة ، و لا معنى
+
+لرفع العلايق ، سوى هذا ، فالوصول إلى العلوم الكسبيَّة و المعارف الخفيَّة اخرى بأن لا يمكن بدونه . فعلم انّ رفع العلايق ممّا لا بدَّ منه في كلا الطريقين ، و هكذا الكلام في النوم و السهو و ما يوجبهما من الجوع و الشبع ، فان الإفراط في شيء من ذلك يوجب كلال القوَّة الفكريَّة و ضعفها عن الحركة الانفعاليَّة المفضية إلى المطالب الكسبيَّة . و بالجملة فان اعتبار جميع ما به يعتدل المزاج ضرورى في الصورتين ، اعنى طريق الاستدلال و التصفية ، كما انَّ الاجتناب عن كل ما يخرجه عن الاعتدال ضرورى فيهما فعلم من هذا الكلام انّ الأمر فيما زعمه بعض المحقِّقين من انّ طريق التصفية مشروط في إيصاله إلى المطالب الحقَّة باستحصال طريق النظر ، و انّ طريق النظر هو مستقلّ في الإيصال بنفسه ، على عكس ما تخيَّلوه ، فان طريق النظر هو المشروط في الإيصال من الطريقين ، و انَّ طريق التصفية هو المحتاج إليه في الإيصال ، و هو الذي يمكن ان يكون مستقلًا في ذلك على ما لا يخفى ممّا سبق من البيان .
+و يعرف من هذا الكلام ايضاً ، انّه لا استبعاد في اجتماع شروطه بالنسبة إلى المؤيِّدين بالفطرة السليمة و الموفّقين على المناهج المستقيمة ، و اما بالنسبة إلى ساير الناس ، فممّا لم يذهب إليه احد « جلَّ جناب الحق ان يكون شريعة لكلّ وارد » .
+و اما الخواطر المشوِّشة فهي من جملة الموانع الواقعة في الطريقين ، فيكون مشترك الإلزام ، و ذلك لأنَّ الحقيقة القلبيَّة مجبولة حسب اقتضاء الحكمة البالغة الشاملة على سرعة التقلَّب كما سبق تحقيقه ، لكن تسكين المتخيِّلة المتحرِّكة بالحركات المضطربة المشوِّشة و إلجامها و منعها عن الانتقالات المشوّشة ، غير متعذّر عند ارباب الصناعة ، كاشتغالها بالاذكار القويمة المجهرة و الأصوات القويَّة و الأصول القويمة عند بعضهم ، و استماع نغمات المشوَّقة اللذيذة و التغزُّلات اللطيفة و التعشُّقات العفيفة كما هو المشاهد عند ارباب الذَّوق .
+و اعلم انّ هذا كلّه انّما يفيد قطع النسب الخارجيَّة بصوارم التجريد و التفريد و قلع موادها عن الباطن بعواصف التحقيق ، لا بمقاريض التقليد .
+فان قلت : فيكون اول مراحل هذا الطريق و مبدأ مسالكه ، انَّما هو تفريغ المحل اعنى القلب عمّا يشغله عن ذاته ، ثمَّ التأهّب لقبول التنوُّعات و الواردات الوجوديَّة ، و التعرّض للنفحات الجوديَّة ، و لا شك ان ذلك التفريغ المذكور ممّا لا يمكن اجتماعه مع الحركات الفكريَّة الشاغلة .
+قلت : انّ تحصيل الملكات الادراكيَّة النفسانيَّة اولًا ، لا ينافي تفريغ المحلّ و تخليته عن الإدراكات ثانياً ، نعم هنا انَّما يشكل على من ذهب ان طريق النظر هو المستقل في الإيصال ، أو انَّه ممّا لا بدَّ منه ، و ليس كذلك .
+فان ما ذهب إليه المصنّف هاهنا انّ طريق التصفية هو المستقل بنفسه ، و طريق النظر غايته ان لا يكون مانعاً أو يكون معدّاً ، اعداداً ما ، كما يعلم من كلامه في طىِّ مراسلته إلى بعض أساطين الكشف و عظماء المشاهدة جواباً عمّا صدر منه حيث قال : انّ اعداد المحل القدسي بالحركات الفكريَّة الشوقيَّة غير مانع بل نافع مفيد في ظهور ما استجنّ فيه من المعارف و الحكم عند استيلاء القوَّة القدسيَّة على القوى الجسمانيَّة و استدامة قهرها و غلبتها على قوتى الوهم و المتخيَّلة .
+
+### Commentary — English
+
+I say: after setting out the opinion of reflective investigators, both accomplished and ostentatiously clever, about the validity of their path, the author states his own judgment with ‘As for us…’. Every condition recognized in the Sufi path must also be observed in reflective inquiry. Removing distracting attachments, among the first stages of the former, is necessary in the latter too. Without it inquiry cannot attain its object. Even apprehending first principles, the clearest objects for these thinkers, requires attention. Attention occurs only through turning away from other things and directing oneself fully to the object. This is precisely what removing attachments means. Acquiring theoretical sciences and hidden cognitions all the more requires it.
+
+The same applies to sleep and wakefulness, hunger and satiety. Excess in any of these dulls and weakens the discursive faculty, preventing the movement between considerations by which acquired conclusions are reached. Everything maintaining a balanced constitution is necessary in both inference and purification, just as everything disturbing it must be avoided in both.
+
+The claim of some investigators—that purification depends on prior reflective inquiry to attain truths, while inquiry is independently sufficient—is therefore the reverse of the situation. Reflective inquiry is the conditioned path, while purification is what it needs to attain its object and is the path that may be independently sufficient. For those supported by sound innate disposition and directed along straight methods, bringing together its conditions is not implausible. No one has claimed this for people indiscriminately: ‘The presence of the Real is too exalted to be a watering-place for every arrival.’
+
+Distracting thoughts impede both paths, so the difficulty bears equally upon both. The heart's nature, under the order of encompassing wisdom, is disposed to rapid change. But practitioners do not regard it as impossible to quiet imagination's confused movements and restrain its distracting transitions. Some occupy it with firm recitations and forceful utterance; others with pleasurable, longing-inducing melodies, delicate love poetry, and chaste love, as people of spiritual taste observe.
+
+These measures work through cutting external ties with the swords of detachment and singleness, and uprooting their inward sources through the storms of realization—not through the scissors of imitation.
+
+You may object that the path's first stage is emptying the heart of what distracts it from itself, then preparing to receive existential disclosures and generous breaths. Such emptying seems incompatible with the busy movements of discursive thought. I reply that first acquiring stable psychic capacities for apprehension does not conflict with subsequently emptying the receptacle of particular cognitions. The difficulty would affect someone who holds that reflective inquiry is independently sufficient or absolutely indispensable. That is not the author's position here. He holds that purification is independently sufficient, while reflective inquiry at most does not obstruct it and may provide a kind of preparation.
+
+This is clear from his correspondence with a leading master of unveiling and witnessing, to whom he writes: ‘Preparing the holy receptacle through movements of discursive thought and longing is not an impediment. It is beneficial and fruitful for bringing into manifestation the cognitions and wisdom latent within it, when the holy faculty masters the bodily powers and maintains its ascendancy over estimation and imagination.’
+
+### Textual and translation notes
+
+1. The author’s stronger claim about purification’s possible independent sufficiency is retained, not flattened into a claim that the two paths are identical in every respect. It must also be read with the later concluding qualification concerning guidance and intellectual formation.
+2. The printed النوم والسهو is contextually related to the surrounding sleep/wakefulness pair; the English follows that discussion. الانفعالية has الانتقالية as a reported alternative, adopted here for the discursive movement.
+3. The list of recitation, melodies, poetry, and chaste love is attributed to different practitioners. It is translated as historical description, not prescribed as a universal method.
+4. The final quotation is from the ancestor’s correspondence as cited by the commentator; it is not a new continuous passage of the Qawāʿid matn.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( المتحذلقين - خ ); ( حقيقة - خ ); ( الحقيقيَّة - خ ل ); ( الانتقاليَّة - خ ل ); ( كاشتغالها بالإدراكات المجهودة
+
+( المجهورة - خ ); ( و الأصوات القويمة - خ ); ( عن الباطن - خ ); ( بغواصب - خ ); ( مراسلاته - خ )
+
+---
+
+## SH-059 — The senses prepare in both paths; the bestowal of knowledge belongs to the Principle
+
+**Source:** A, printed pp. 264–266
+
+https://ablibrary.net/book_content/b/17638/460?lang=ar
+
+### Commentary — Arabic
+
+أقول : بعد إثبات حقيَّة طريق التصفية و دفع شبهات اهل النظر عليه أراد ان يشير إلى ما أورده اصحاب التصفية على طريق اهل النظر و دفعه . و تقرير ذلك انّ علوم النظّار مأخذها الآلات الجسمانيَّة و القوى الحسِّية الهيولانيَّة التي هي مَثار الخطاء و منشأ الغلط ، دون علوم اصحاب المجاهدة و ارباب التصفية ، فانّ مأخذها هو المبدأ الفيَّاض الذي هو منبع الحق و معدن الصدق بالذات بدون توسُّط آلة جسمانيَّة و لا قوة هيولانية .
+
+و لا شكَّ ان ما يستفاض من المبدأ بهذا الوجه ، لا يمكن تطرُّق الخطاء إليه ، دون ما يستفاد منه بطريق النظر بتوسُّط الآلات و القوى .
+و جواب ذلك ، انَّ القوى و الحواس ، هي المعدّات الأول بطريق التصفية ، كما هي في طريق النظر ، و ان المبدأ الفيَّاض هو المفيض بالذات للمعارف و الحقائق مطلقاً ، لا اختصاص له بطريق دون آخره :
+اما بيان الأول في كون الحواسِّ معدَّة في طريق النظر ، فظاهر ، و كونها معدَّة في الطريق الآخر ، فلانَّها لو لم تكن معدَّة ، لما تعلَّقت النفس الناطقة ببدنه البتَّة ، لحصول ما هو الغاية للحركة الوجوديَّة بدونه ، و عدم توصُّل شيء من تلك القوى و الآلات في استحصال تلك الغاية . و لئن سلَّمنا ذلك ، لكن يلزم ان يكون الكمال الحقيقي هو الذي يحصل لها بعد انقطاع ذلك التعلق بالموت .
+فلئن قيل : لم لا يجوز ان يكتسب من ذلك التعلُّق ما يمنعها عن الوصول إليه ؟
+قلنا : فعلى هذا يجب حصول ذلك قبل تعلُّقها به ، و الا يلزم امتناع حصوله لها مطلقاً . لامتناع حصوله لها بعد التعلق المستتبع للموانع ، و حينئذ لم يتعلق به البتَّة ، لحصول الغاية الكمالية بدونه و ممانعته لها .
+و الحاصل ، انّ احد الأمرين لازم ، امَّا عدم استتباع التعلق المذكور لاكتساب الموانع ، أو عدم احتياج تعلُّق النفس إلى البدن في استحصال الغايات و استغنائها عنه بالذات .
+فلئن قيل : انَّما يلزم ذلك لو كان التعلُّق المذكور مستتبعاً لاكتساب الموانع فقط ، و ليس كذلك ، فانَّها كما يكتسب من ذلك التعلق ملكات مانعة للوصول في بعض المواد ، فلا يبعد ان يكتسب منه ملكات اخر
+
+تُعدُّ من جملة الأسباب و الشروط المطلقة في البعض الآخر .
+قلنا : فعلى هذا ، قد رجعتم إلى ما هو الحق و اعترفتم به بعد ما أنكرتموه ، و ذلك لأنّ المطلوب الأول ، ان استعمال القوى الجسمانيَّة الحسيَّة و الآلات الهيولانيَّة البدنيَّة ، من شأنه ان يكون مُعِداً للنفس في استحصال الغايات الكماليَّة إذا كان استعمالها على ما ينبغي فيما ينبغي ، فإذا كان استعمالها على خلاف ذلك ، فلا بُدَّ من استتباعه ملكات مانعة عن استعمالها على الوجه الأول ، فيكون مانعة لاستحصال الكمالات ضرورة .
+و امّا بيان الثاني ، فلما بيَّنا في الكتب الحكميَّة ، انَّ المبدأ هو المفيض لسائر المعارف و الحقائق بالذات ، فانّه الخزانة الحافظة لها ، و ان المقدمات المستنتجة منها انَّما هي معدّات للاستفاضات .
+لا يقال : فلا يكون حينئذ المبدأ الفيَّاض مفيضاً بالذات ، ضرورة توقُّف افاضته على استعداد المحل .
+لأنَّا نقول : ان احتياج القابل في استفاضته إلى الأسباب و الشروط المعدة لا ينافي استغناء الفاعل في افاضته عن تلك الأسباب و الشروط ، على انَّه قد اعتبر في طريق التصفية مثل هذه المعدّات كتخيلة المحل و تصفية الباطن و توجّهه إلى المبدأ و غير ذلك من الشروط و الأسباب المعتبرة عندهم على ما سبق بيانه .
+
+### Commentary — English
+
+I say: after establishing the validity of purification and answering the reflective investigators' objections, the author turns to an objection raised by practitioners of purification against reflective inquiry and answers it. The objection is that reflective knowledge comes from bodily instruments and material sensory powers, the sources of error and mistake, whereas the practitioners' knowledge comes directly from the effusive Principle, intrinsically the source of truth, without bodily instruments or material faculties. What is received from the Principle in this manner would be immune to error, unlike what is received through inquiry mediated by faculties and instruments.
+
+The answer is that the faculties and senses are the first preparatory conditions in purification just as in reflective inquiry, while the effusive Principle bestows cognitions and realities through itself without being restricted to one path.
+
+That the senses prepare in reflective inquiry is evident. They prepare in the other path too: otherwise the rational soul would never have become attached to its body, since the goal of the existential movement would already be available without the body, and none of its faculties or instruments would contribute to attaining that goal. Even if attachment were conceded, genuine perfection would then have to be attained when the attachment ends in death.
+
+It may be objected that the attachment can impart something preventing attainment. We reply that perfection would then have to have been available before attachment, or else its attainment would be impossible altogether, since after attachment the impediments prevent it. The soul should therefore never have become attached: its perfected goal would already be available without attachment, and attachment would obstruct it. In substance, one of two things must follow: either attachment does not entail the acquisition of impediments, or the soul has no need of the body for attaining its goals and is intrinsically independent of it.
+
+The objector may answer that this follows only if attachment yields impediments alone. Just as it can impart obstructive dispositions in some subjects, it may impart other dispositions functioning as causes and conditions in others. We reply that the objector has now returned to the truth and conceded what was denied. The first point to be established is precisely that bodily sensory faculties and material instruments can prepare the soul for perfected goals when employed appropriately for appropriate objects. When employed otherwise, they necessarily yield dispositions obstructing their proper use and consequently impede perfection.
+
+As for the second point, the philosophical works establish that the Principle intrinsically bestows all cognitions and realities, being the treasury preserving them. Premises from which conclusions are drawn are only preparations for receiving that bestowal.
+
+It should not be objected that the Principle would not then bestow through itself, since its bestowal depends on the recipient's preparedness. The recipient's need for preparatory causes and conditions in receiving does not contradict the agent's independence of them in bestowing. The path of purification itself requires analogous preparations: emptying the receptacle, purifying the inward being, directing it toward the Principle, and the other recognized conditions already described.
+
+### Textual and translation notes
+
+1. This translates the surviving descendant’s commentary, not the missing ancestor passage reported in the QT-059 matn apparatus. No reconstruction of that deferred loss is claimed.
+2. The distinction between preparatory causation, iʿdād, and bestowal, ifāḍa, is preserved throughout. The argument does not simply identify sensation itself with the efficient source of intelligible knowledge.
+3. The objection claiming direct reception must be error-free is stated and then answered; it is not adopted as an unconditional endorsement of every contemplative claim.
+4. Reported electronic apparatus strings, not independent manuscript readings: ( حقيقة - خ ); ( في طريق - خ ); ( للاستفاضة - خ )
+
+---
+
+## SH-060 — Two routes to knowledge, both requiring ordered character and faculties
+
+**Source:** A, printed pp. 267–269
+
+https://ablibrary.net/book_content/b/17638/463?lang=ar
+
+### Commentary — Arabic
+
+أقول : بعد إثبات حقيَّة طريقى التصفية و النظر على قوانين اهل لاستدال ، أراد ان يبيِّن أمرهما على مقتضى ما سلف من قواعد التحقيق فيكون اللَّواحق من الأبحاث ، منخرطة مع السوابق منها في سلك الانتظام و التطبيق ، و ذلك انَّه قد تقرَّر من القوانين السالفة ، ان ليست حقيقة من
+
+الحقائق الإلهية و لا مرتبة من المراتب الكيانيَّة الا و قد اشتملت عليها الحقيقة القلبيَّة و اللطيفة الانسانيَّة بالفعل ، اشتمال الكلِّ على اجزائه ، و الكلّى على جزئيّاته ، لكن تراكم الغواشي المظلمة الهيولائيَّة و تصادم الحجب و الموانع الجسمانيَّة قد انطمست آثارها و اختفت أنوارها ، فمسَّت الحاجة إلى انكشاف تلك الغواشي و ارتفاع تلك الموانع حتى يتمكَّن للخروج من مكامن الخفاء و الاستجنان إلى مجالى الظهور و العيان ، فيظهر بها ساير المعارف و الحقائق و يتميَّز بها جميع النسب و الرقايق .
+و لا يخفى عليك انّ ذلك يتصوَّر من وجهين ، فتارة تكون بالحركات اللطيفة الفكريَّة بعد تسليط القوَّة القدسيَّة الروحانيَّة على قوَّنى الوهمية و المتخيّلة و ساير القوى الجسمانيّة بحيث يترتّب عليها تهذيب الأخلاق و تزيين النفس بالهيئات المرضيَّة و الأخلاق الحسنة ، و تارة اخرى بتسكين المتخيِّلة و المتوهمة و إلجامهما و منعهما عن الحركات المضطربة المشوِّشة بعد تسخير القوى الجسمانيَّة بالتزكية و التصفية ، و كلا الطريقين حق عند المحقِّقين من اهل النظر ، و اصحاب المجاهدة .
+شعر
+خُذ ابَطن هرشى ، أو قفاها فإنه * كلا جانبي هرشى ، لهنَّ طريق
+و ذلك لأنَّ الموجب لطريان تلك الغواشي و الحجب انَّما هو تسلط
+
+القوى الجزئيَّة الجسمانيَّة التي هي كالعمَّال و الصّناع في مملكة الحقيقة الانسانيَّة على اللطيفة الاعتدالية القلبيَّة التي هي السلطان في الحقيقة ، و على أعوانها التي هي القوى الروحانيَّة العقليَّة .
+و لا يخفى انَّ تدبير تلك المملكة حينئذ منحصر في وجهين ، أحدهما - تقوية السلطان و تمشية أعوانه و تسليطهما على القوى الجسمانيَّة بحيث لا يتمكَّنون من العدول و التجاوز عمّا هم بصدده من الأعمال الجزئيَّة المعيَّنة لهم في ترتيب المملكة و استقامة أمورها ، فيكون الكلّ مقهورين تحت حكم السلطان و امره فظهر حينئذ آثاره و أحكامه التي هي المعارف و العلوم ، و الآخر عزل تلك القوى الجسمانيَّة و تسكينها و منعها عن الحركات المشوِّشة بعد تسخير أعوانها و تضعيفها بالتزكية و التصفية و حينئذ يتمكَّن السلطان من اظهار آثاره .
+فعلم من هذا ، انّ امر التصفية و التزكية التي هي عبارة عن كفِّ القوى الجسمانيَّة عن التعدِّى في المملكة الانسانيَّة ، و منعها عن الحركات المشوشة المضطربة لازم في الطريقين ، غاية ما في الباب ، انه لازم في الطريق الأول من التسليط ، و مقصود بالقصد الثاني ، و الا - لم يتحقق التسليط . و اما في الطريق الثاني ، فمقصود بالقصد الأول ، و يلزم منه التسليط . فمن اعتقد انَّه لا اعتبار بالتزكية و التصفية في طريق التعليم و النظر ركب متن الهوى و الهوس و يكون مآل حاله إلى الوبال و النكال على ما ذكر في المتن . نعوذ باللَّه من شرور أنفسنا و سيِّئات أعمالنا ، من يهدى اللَّه فهو المهتد و من يضلل فلن تجد له وليّا مرشداً . و عبارة الكتاب هاهنا ظاهرة غنيَّة عن التوضيح .
+
+### Commentary — English
+
+I say: having established the validity of purification and reflective inquiry under the rules of those who reason by inference, the author explains them in accordance with the previously established principles of realization. The later discussions thereby join the earlier in a coherent order. Those principles establish that no divine reality or cosmic level lies outside what the human heart and subtle reality already contain in actuality, as a whole contains its parts and a universal its particulars. Yet accumulated dark material coverings and bodily veils and impediments have obscured their effects and concealed their lights. These coverings must therefore be removed so that what is latent can emerge into manifestation and direct vision, making cognitions and realities apparent and distinguishing their relations and subtle connections.
+
+This can occur in two ways. One employs subtle discursive movements after the holy spiritual faculty has gained mastery over estimation, imagination, and the other bodily powers, producing refinement of character and adorning the soul with praiseworthy dispositions. The other quiets estimation and imagination, restraining their confused movements after subduing bodily powers through purification. Accomplished reflective investigators and practitioners of spiritual exertion acknowledge both paths as true.
+
+‘Take the inner slope of Harshā or its far side:
+either side provides a road for them.’
+
+The coverings and veils arise because particular bodily powers—like workers and artisans in the kingdom of human reality—have gained ascendancy over the balanced subtle heart, the true ruler, and its helpers, the spiritual intellectual faculties. There are two ways to govern the kingdom. One strengthens the ruler and supports his helpers, establishing their command over the bodily powers so that these cannot depart from the particular tasks assigned to them for the kingdom's order. All are subject to the ruler's command, allowing his effects and governing properties—knowledge and cognition—to appear.
+
+The other removes those bodily powers from their governing positions, stills them, and restrains their distracting movements after subduing and weakening their influence through purification. The ruler can then manifest his effects.
+
+Purification—the restraint of bodily powers from overstepping their bounds in the human kingdom and from confused, disturbing movements—is therefore necessary in both paths. In the first, it follows from establishing mastery and is intended secondarily; without it, mastery would not be achieved. In the second, it is intended primarily, and mastery follows from it. Someone who believes that purification has no place in instruction and reflective inquiry follows appetite and caprice, and the outcome is the harm described in the matn. We seek refuge in God from the evils of our souls and deeds. Whomever God guides is guided; for whomever He lets go astray, no protecting guide will be found. The book's wording here is clear and needs no further explanation.
+
+### Textual and translation notes
+
+1. The two routes differ in the order of intention: purification follows intellectual mastery in one and is directly intended in the other. This distinction is retained rather than replacing the argument with an unqualified statement that the methods are identical.
+2. The poem is translated as part of the source. It supplies an analogy of two legitimate approaches, not a proof that all individual practices are equally effective.
+3. The political analogy concerns the ordering of faculties. Removing them from command is not the same as abolishing their existence, a distinction established in SH-053.
+4. This section ends immediately before the final daqīqa and its previously translated commentary. No untranslated interval remains between it and that closing discussion in the assembled main-commentary sequence.
+5. Reported electronic apparatus strings, not independent manuscript readings: ( و إلجامها و منعها - خ ); ( و أصحابنا المجاهدين - خ ل ); ( تسليطها - خ ل ); ( فيظهره - خ ); ( أعيانها - خ )
 
 ---
 
 # III. Concluding discussion
-
-## UNTRANSLATED INTERVAL
-
-The commentary on QT-020–QT-060 remains untranslated; the continuous main translation currently ends at QT-019 (printed p.95). The closing discussion is presented after this explicit gap, not as the next consecutive passage.
 
 ## SH-061-C — Why the final subtle point concerns a criterion of knowledge
 
@@ -1888,13 +4084,11 @@ The commentary on QT-020–QT-060 remains untranslated; the continuous main tran
 
 https://ablibrary.net/book_content/b/17638/466?lang=ar
 
-**Linked matn:** QT-061
-
-### Arabic
+### Commentary — Arabic
 
 أقول: لمّا فرغ عن بيان مقاصد الرسالة والإبانة عن الطريق الموصل إليها ودفع الشبهات الواردة عليها، أراد أن يختمها بفائدة كثيرة الجدوى وبحث كثيراً ما يحتاج إليه السالكون للطريقة المثلى. ثم إنّ تحقيق أصوله وتبيين مأخذه يتوقّف على أبحاث طويلة لا يحتملها هذا المختصر، فلا بدّ من الاكتفاء في بيانه بلطيف تنبيه وخفيف إشارة إنّما يتفطّن لها الأزكياء العارفون بأصول الصنايع، فلهذا ترجمه بالدقيقة. وبيان ذلك أنّه كثيراً ما يختلج في الأذهان أنّ أصحاب النظر والتعليم الذين يستحصلون المعارف والحقائق بالحجج والبراهين عندهم علم آليّ يتوسّلون به في استحصال مطالبهم وبه يميّزون النظر الصحيح المفيد للحقّ عن الفاسد منه، وبذلك أيضاً يتمكّنون من معرفة الحقّ ووجه حقّيّته ومن معرفة الباطل وسبب بطلانه. وليس عند السالكين من أصحاب المجاهدات آلة شأنها ذلك. ولا يخفى أنّ المعارف إذا حصلت بذلك الوجه يكون أتمّ وأكمل ممّا لم يكن حصوله إلّا بطرق شتّى ووجوه كيف كانت، فيكون طريقهم أسدّ.
 
-### English
+### Commentary — English
 
 I say: having explained the treatise's objectives, the path leading to them, and the answers to the doubts raised against them, the author wished to conclude with a particularly useful point and an inquiry often needed by travellers of the best path. Establishing its foundations and explaining its basis would require discussions too lengthy for this brief work, so he must be content with a delicate indication and a slight allusion, perceptible only to discerning readers acquainted with the principles of the disciplines. Hence he entitled it a subtle point. Its explanation is this. The thought often occurs that reflective investigators and those engaged in formal instruction, who acquire cognitions and truths through arguments and demonstrations, possess an instrumental science. They employ it to attain what they seek and to distinguish sound reasoning that yields truth from defective reasoning. It also enables them to know what is true and why it is true, and what is false and why it is false. Travellers engaged in spiritual exertion do not possess an instrument of that kind. Knowledge acquired in the former manner would evidently be more complete and perfected than knowledge obtained through assorted, unspecified procedures; their path would therefore seem more secure.
 
@@ -1912,13 +4106,11 @@ I say: having explained the treatise's objectives, the path leading to them, and
 
 https://ablibrary.net/book_content/b/17638/467?lang=ar
 
-**Linked matn:** QT-061
-
-### Arabic
+### Commentary — Arabic
 
 فلئن قيل: إنّ علوم أصحاب المجاهدة من قبيل الوجدانيّات التي هي من الضروريّات، وكما لا يفتقر أصحاب النظر في حصول علومهم الضروريّة إلى صناعة آليّة مميّزة وقانون يتبيّن الطريق حصولها ومعرفة حقيقتها، فكذلك العلوم الحاصلة لهم بالذوق والوجدان. قلنا: إنّما يتمّ ذلك لو كان علومهم من قبيل الوجدانيّات المطلقة لسائر السالكين، وليس كذلك، فإنّ ما قد يجده بعض السالكين مناقضاً لما يجده البعض الآخر منهم، ولهذا قد ينكر البعض منهم البعض الآخر في إدراكاتهم الذوقيّة ومعارفهم الوجدانيّة الكشفيّة.
 
-### English
+### Commentary — English
 
 It may be objected that the knowledge of those who practise spiritual exertion belongs to immediate experiential cognitions, which are necessary. Just as reflective investigators need no discriminating instrumental discipline or rule to obtain and recognize their necessary cognitions, neither do practitioners need one for knowledge acquired through spiritual taste and immediate experience. We reply that this would follow only if their cognitions were unqualified experiential certainties shared by all travellers, which they are not. What one traveller finds may contradict what another finds. For this reason, practitioners sometimes reject one another's experiential apprehensions and the knowledge obtained through their immediate experiences and unveilings.
 
@@ -1935,13 +4127,11 @@ It may be objected that the knowledge of those who practise spiritual exertion b
 
 https://ablibrary.net/book_content/b/17638/467?lang=ar
 
-**Linked matn:** QT-061
-
-### Arabic
+### Commentary — Arabic
 
 فلئن قيل: المخالفة بين السالكين في معارفهم ومواجدهم إنّما نشأت من قوّة الاستعداد وضعفه، فإنّ الضعيف منهم إنّما يدرك معنى ويتصوّر أنّه النهاية في ذلك فيتوقّف عنده وما يتعدّاه ويعتقده عقداً لا يتطرّق إليه الانحلال، وأمّا القويّ لإحاطة إدراكه بما هو الغاية عند الضعيف وتجاوزه عن ذلك وبلوغه إلى ما هو أعلى وأتمّ منه، لا يرضى بتوقّفه لديه وينكر عقده عنده وعدم تجاوزه عنه، لا أنّه ينكر المعتقد، بل قصره عليه وحصره به. قلنا: على تقدير التسليم، لو كان عند الضعيف آلة مميّزة، لما وقع له ذلك وما توقّف هنالك، بل لاح له عند الاعتبار بميزانه المميّزة ما فيه من النقص، ما يميّز به بعض ما فيه من البعض، فما اطمأنّ به كلّ الاطمئنان وطلب ما هو أعلى وأتمّ.
 
-### English
+### Commentary — English
 
 An objection may be made that the differences between travellers in their knowledge and experiences arise only from differences in strength of preparedness. A less capable practitioner apprehends a meaning, supposes it to be the final attainment, stops there without going beyond it, and binds himself to it in an unshakeable conviction. A stronger practitioner encompasses in his apprehension what the weaker regards as the goal, goes beyond it, and reaches what is higher and more complete. He therefore objects to the other's stopping and fixing his conviction there—not to the content of the conviction itself, but to its restriction and confinement to that content. We reply that, even granting this account, the weaker practitioner would not have fallen into that error or stopped there had he possessed an instrument of discrimination. Testing the attainment with that measure would have disclosed its deficiency and enabled him to distinguish what it contained. He would not have rested in complete assurance but would have sought something higher and more perfect.
 
@@ -1958,13 +4148,11 @@ An objection may be made that the differences between travellers in their knowle
 
 https://ablibrary.net/book_content/b/17638/468?lang=ar
 
-**Linked matn:** QT-061
-
-### Arabic
+### Commentary — Arabic
 
 ومتى عرفت هذا فنقول: لا بدّ للسالكين من أصحاب المجاهدات السائرين في طريق الحقيقة بمساعي الجدّ والاجتهاد، أن يحصّلوا العلوم الفكريّة والمعارف اليقينيّة النظريّة بعد تصفية القلب عن شوائب النسب الخارجيّة بقطع العلائق المكدّرة وتحليته بمكارم الأخلاق ومحامدها، حتى يصيرى هذه العلوم النظريّة التي من جملتها الصناعة الآليّة المميّزة بالنسبة إلى المعارف الذوقيّة كالعلم الآليّ المنطقيّ بالنسبة إلى العلوم النظريّة الغير المنسّقة المنتظمة. وذلك لأنّ الملكة الحاصلة عقيب هذه النظريّات اليقينيّة لا بدّ وأن يكون مميّزة لليقينيّات عن غيرها، كالملكات الحاصلة عقيب استحضار الأبحر الشعريّة والنغم الموسيقيّة، فإنّ بها يتمكّن صاحبها من التميّز بين الموزون وغير الموزون ممّا يتحيّر فيه أصحاب النظر. فإذا استحصل السالك المجتهد تلك الملكة فلو تحيّر في أثناء الطلب والملوك وتوقّف في بعض المطالب التي لا يحصل له بالفكر، يتمكّن من استخراجه بتلك الملكة الفاضلة ومن توجيه حقّيّته للمسترشد الناقد. ولا يخفى أنّ هذا أتمّ في الكمال والتكميل وأكمل ممّا لم يكن له ذلك.
 
-### English
+### Commentary — English
 
 Once this is understood, we say that practitioners of spiritual exertion who travel the path of reality with earnest application must acquire discursive sciences and certain theoretical knowledge, after purifying their hearts of the taint of external attachments by severing what darkens them and adorning themselves with noble and praiseworthy character. These theoretical sciences, including the instrumental discipline of discrimination, will then stand in relation to experiential cognitions as the instrumental science of logic stands in relation to theoretical sciences requiring orderly arrangement. The stable capacity acquired through these certain theoretical studies must distinguish certainties from other cognitions. It is like the trained capacities acquired through mastery of poetic metres or musical modes: they enable a person to distinguish what is correctly measured from what is not, even where a person merely reasoning about it remains perplexed. If the diligent traveller acquires that capacity and then encounters perplexity in his seeking and travelling, reaching an impasse on a question not attained through discursive thought, this excellent capacity enables him to bring it to light and explain its truth to a discerning seeker of guidance. Such a condition is plainly more complete in both attaining perfection and perfecting others than one lacking this capacity.
 
@@ -1983,13 +4171,11 @@ Once this is understood, we say that practitioners of spiritual exertion who tra
 
 https://ablibrary.net/book_content/b/17638/470?lang=ar
 
-**Linked matn:** QT-061
-
-### Arabic
+### Commentary — Arabic
 
 هذا كلّه إذا لم يكن له شيخ مسلك يرشده، وإمام مكمّل يقتدى به، وبيده مقاليد أقفاله وأحواله. وأمّا إذا كان له ذلك، فلكل منزل ومقام بحسب كلّ وقت واستعداد، علوم وميزان يخصّه، ينبّه السالك بحسب تفرّسه مراقي استعداده على تلك العلوم بموازينها.
 
-### English
+### Commentary — English
 
 All of this applies when the seeker has no master of the path to direct him, no perfected guide to follow, who holds in his hands the keys to his closures and states. If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity. The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures.
 
@@ -2007,13 +4193,11 @@ All of this applies when the seeker has no master of the path to direct him, no 
 
 https://ablibrary.net/book_content/b/17638/470?lang=ar
 
-**Linked matn:** QT-061
-
-### Arabic
+### Commentary — Arabic
 
 لكن لتحقيق هذا الكلام وتبيين أحكامه أبحاث طويل الذيل، لا يناسبها أمثال هذه المختصرات، فلنكتف بهذا القدر في هذه التعليقات حامدين لله ربّ العالمين، ومصلّين على محمد وآله الطيّبين الطاهرين وصحبه أجمعين.
 
-### English
+### Commentary — English
 
 But a full examination of this matter and an exposition of the rules governing it would require lengthy investigations unsuitable for brief works such as this. Let us therefore be content with what has been said in these commentaries, praising God, Lord of the worlds, and invoking blessings upon Muḥammad, his good and pure family, and all his Companions.
 

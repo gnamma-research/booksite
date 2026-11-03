@@ -36,3 +36,7 @@ All English paragraphs are independently composed from the medieval Arabic. L is
 ## Main-commentary comparison — continuation release
 
 SH-001–006 are now compared with L pp.468–479. Arabic controls: burhan al-inn runs from effect to cause; SH-005 retains the negative in ليس مقصورا على اللفظ; SH-006 preserves the positive definition of possibility and the unless-clause about freedom from habitual assumptions. Defective Arabic is flagged, not silently replaced by English. SH-007–019 extend beyond Lumbard’s supplied selection and are translated directly from A.
+
+## Completion of the consulted commentary (4 November 2026)
+
+The 110-unit commentary now runs continuously through its conclusion. Later sections exceed Lumbard’s supplied selection and use the established terminology without implying that his English supplies their text. Source uncertainty and all departures remain distinguishable from manuscript readings.

@@ -1,31 +1,14 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import vm from 'node:vm';
-import assert from 'node:assert/strict';
-import {fileURLToPath} from 'node:url';
-const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const files=['data/commentary.js','data/commentary-introduction-1.js','data/commentary-introduction-2.js','data/commentary-introduction-3.js','data/commentary-introduction-4.js','data/commentary-conclusion.js','data/commentary-main-001-019.js','data/commentary-corpus.js'];
-const context=vm.createContext({window:{}});
-for(const file of files)new vm.Script(fs.readFileSync(path.join(root,file),'utf8'),{filename:file}).runInContext(context);
-const corpus=context.window.GNAMMA_TAMHID_CORPUS;
-assert.equal(corpus.units.length,65);assert.equal(corpus.coverage.mainUnits,19);
-const lines=['# Tamhīd al-Qawāʿid — Arabic–English commentary','', '**Ṣāʾin al-Dīn ʿAlī Ibn Turka**','', 'Working translation · 3 November 2026','', '**Scope:** 40 authorial introductory sections; 19 complete main explanations on QT-001–QT-019 (A pp.48–95); six concluding sections (A pp.270–274). Commentary QT-020–QT-060 remains untranslated. The ancestor’s 61-unit matn is separate.','', 'The introduction uses edition N; the main and closing commentary use edition A. Their page numbers must not be conflated. Lumbard’s selections are a checked comparator, not the English copy-text. The translation is based on medieval Arabic, not a reproduction of a modern translation. Independent manuscript collation and specialist review remain outstanding.','', '## Contents',''];
-for(const u of corpus.units)lines.push('- '+u.id+' — '+(u.section||u.title));
-lines.push('','---','');
-let currentPart='';
-for(const u of corpus.units){
- if(u.part!==currentPart){currentPart=u.part;lines.push('# '+({introduction:'I. Authorial introduction',main:'II. Main commentary: QT-001–QT-019',conclusion:'III. Concluding discussion'})[u.part],'');}
- if(u.id===corpus.gap.before)lines.push('## UNTRANSLATED INTERVAL', '',corpus.gap.description,'');
- lines.push('## '+u.id+' — '+(u.section||u.title),'', '**Source:** '+u.sourceLocator,'',u.sourceUrl,'');
- if(u.matnId)lines.push('**Linked matn:** '+u.matnId,'');
- if(u.lumbardComparator)lines.push('**Comparator:** Lumbard, pp. '+u.lumbardComparator.pages.join('–')+'; independent translation from Arabic.','');
- lines.push('### Arabic','',u.arabic,'','### English','',u.english,'');
- if(u.notes?.length)lines.push('### Textual and translation notes','',...u.notes.map((n,i)=>`${i+1}. ${n}`),'');
- if(u.sourceTextSha256)lines.push('Source-text SHA-256: `'+u.sourceTextSha256+'`','');
- lines.push('---','');
-}
-fs.writeFileSync(path.join(root,'data/parallel-commentary.md'),lines.join('\n'));
-fs.writeFileSync(path.join(root,'data/commentary-corpus.json'),JSON.stringify(corpus,null,2)+'\n');
-const totals={units:65,introduction:40,main:19,conclusion:6,englishWords:corpus.units.reduce((n,u)=>n+u.english.trim().split(/\s+/).length,0),newMainEnglishWords:corpus.units.filter(u=>u.part==='main').reduce((n,u)=>n+u.english.trim().split(/\s+/).length,0),completeWork:false};
-fs.writeFileSync(path.join(root,'qa/commentary-export-report.json'),JSON.stringify(totals,null,2)+'\n');
-console.log(JSON.stringify(totals,null,2));
+import fs from 'node:fs';import path from 'node:path';import vm from 'node:vm';import assert from 'node:assert/strict';import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');const context=vm.createContext({window:{}});
+const files=['commentary.js','commentary-introduction-1.js','commentary-introduction-2.js','commentary-introduction-3.js','commentary-introduction-4.js','commentary-conclusion.js','commentary-main-001-019.js','commentary-main-020-060.js','commentary-corpus.js'];
+for(const f of files)new vm.Script(fs.readFileSync(path.join(root,'data',f),'utf8'),{filename:f}).runInContext(context);
+const c=context.window.GNAMMA_TAMHID_CORPUS;assert.equal(c.units.length,110);assert.equal(c.coverage.mainUnits,64);assert.equal(c.gap.active,false);
+const head=['# Tamhīd al-Qawāʿid — complete available Arabic–English working translation','','**Ṣāʾin al-Dīn Ibn Turka**','','4 November 2026','','40 introductory units, 64 main commentary units (including four connecting explanations), and six concluding units. All authorial commentary in the consulted sources is translated. This is a source-based draft, not a manuscript-established critical edition. The lost ancestral material reported at QT-059 is not reconstructed.','','The introduction follows edition N; the main commentary follows edition A, pp.48–274. Joseph E. B. Lumbard is a checked comparator for his overlapping selections, not the English copy-text.','','## Contents','',...c.units.map(u=>'- '+u.id+' — '+u.section),'','---',''];
+const lines=[...head],english=[...head];let part='';
+for(const u of c.units){if(u.part!==part){part=u.part;const h='# '+({introduction:'I. Authorial introduction',main:'II. Continuous main commentary',conclusion:'III. Concluding discussion'})[part];lines.push(h,'');english.push(h,'');}
+const header=['## '+u.id+' — '+u.section,'','**Source:** '+u.sourceLocator,'',u.sourceUrl,''];lines.push(...header);english.push(...header);
+if(u.precedingMatn){lines.push('### '+u.precedingMatn.label,'',u.precedingMatn.arabic,'',u.precedingMatn.english,'');english.push('### '+u.precedingMatn.label,'',u.precedingMatn.english,'');}
+lines.push('### Commentary — Arabic','',u.arabic,'','### Commentary — English','',u.english,'');english.push(u.english,'');
+if(u.notes?.length){const n=['### Textual and translation notes','',...u.notes.map((s,i)=>(i+1)+'. '+s),''];lines.push(...n);english.push(...n);}lines.push('---','');english.push('---','');}
+fs.writeFileSync(path.join(root,'data/parallel-commentary.md'),lines.join('\n'));fs.writeFileSync(path.join(root,'data/commentary-english.md'),english.join('\n'));fs.writeFileSync(path.join(root,'data/commentary-corpus.json'),JSON.stringify(c,null,2)+'\n');
+const totals={units:c.units.length,introduction:40,main:64,conclusion:6,additionalAncestralBridges:4,englishWords:c.units.reduce((n,u)=>n+u.english.trim().split(/\s+/).length,0),bridgeEnglishWords:c.units.reduce((n,u)=>n+(u.precedingMatn?.english.trim().split(/\s+/).length||0),0),newlyIntegratedEnglishWords:c.units.filter(u=>u.part==='main'&&u.sequence>=20).reduce((n,u)=>n+u.english.trim().split(/\s+/).length,0),completeAvailableSourceTranslation:true,manuscriptCriticalEditionComplete:false};fs.writeFileSync(path.join(root,'qa/commentary-export-report.json'),JSON.stringify(totals,null,2)+'\n');console.log(JSON.stringify(totals,null,2));
