@@ -983,3 +983,48 @@ The work so far has **located essentially the whole printed corpus but has not t
 ### Continuation objective — do not return to superficial page summaries
 
 Priority after this stage: **full Arabic and close English of every original clause and each separately numbered small-type marginal note** in an uninterrupted source stretch, with precise authorial attribution, source-page joins, independently proofed readings and print/manuscript variants. The next sequential page after newly selected original text is **II:261**, beginning a section on reward as divine grace and punishment as justice; earlier II:235–260 also require a true full upper-and-margins pass. Preserve the separate al-Taftāzānī `Tahdhīb` workstream and keep the post-index II:321–335 imamate continuation flagged as source placement still requiring collation.
+
+
+---
+
+## 29. Stage 26 — rewards, obligation and moral motivation (3 November 2026)
+### Original source, accurately separated layers
+
+- **Source:** user-uploaded complete image-only two-volume `taqribmaram(2).pdf` (632 physical PDF pages). Original numbered volume II:261–263 = physical PDF pages **556–558**. Each of those original page images was rendered at high resolution; the prior afterlife discussion ends at the start of II:261 and a **genuine printed `فصل`** on reward and punishment begins partway down that page.
+- **Independent control witness:** the source-scanned **Cairo 1912 Taftāzānī `Tahdhīb` original printed pp.108–109**, confirmed against actual photographed printed page numerals, for the *embedded parenthetical matn only*. The earlier independent `Tahdhīb` translation stream was NOT edited or overwritten.
+- **New source original JS:** `continuous-II261-II263-reward-grace-justice.js`: **23** close Arabic–English source clause selections. These have original physical locators, stable `SAN26` IDs, `sourceLayer` separation between **matn, sharḥ and original section header**, and scope notes. Their precision does NOT mean the entire Arabic of those printed pages has been transcribed or independently proofed.
+- **Lower register:** 1 source-matched selected lower excerpt, `SAN26.G.II263.01`, distinguishing two replies to two different Muʿtazilī objections. Its specific historical writer is **UNASSIGNED**, not positively identified with Muḥammad Wasīm. The lower note's remaining original words and all other notes on these pages are still untranslated.
+- **Stage-critical bilingual dossier:** `editorial/2026-11-03_STAGE26_II261_II263_REWARD_JUSTICE_SOURCE_TRANSLATION.md`, which also reproduces a provisional connected original-Cairo base-text reading across pp.108–109 and explains the logic of promise versus threat, fittingness versus legal entitlement, and actual motivational efficacy versus a supposed rational obligation.
+
+### Argument map and translation distinctions
+
+1. `الثواب فضل من الله والعقاب عدل منه`: reward is divine generosity, punishment divine justice; no automatically binding creaturely claim-right against God follows from good deeds.
+2. `ومعنى وجوبهما أنه وعد أو أوعد ... على خلاف في الوعيد`: the text invokes divine fidelity to a **promise** and separately discusses whether a **threat of punishment** must be executed. Remission can be construed as mercy without simply falsifying the promise.
+3. `ملاءمة إضافتهما ...`: the **appropriateness** of associating reward/punishment with actions does not itself make the benefit something owed to the servant as compensation for obeying.
+4. `الطاعات وإن كثرت لا تفي بشكر بعض النعم`: obedience cannot adequately repay even some pre-existing gifts. The later test from conversion or apostasy targets the claim of irrevocable entitlement through a prior action.
+5. Two reported Muʿtazilī objections must remain distinct: (a) without certain reward or punishment there is insufficient motivation; (b) imposing uncompensated burdens would be unjust. Replies include: mere *possibility of omission* does not nullify exhortation; *actual occurrence* of benefit can suffice without a further rational obligation.
+6. The short, separately indexed **lower-register** II:263 dialectic itself criticizes collapsing these two replies. Its historical individual author remains unassigned.
+
+### Web reader and visible progress reporting
+
+- `index.html` now loads `continuous-II261-II263-reward-grace-justice.js`, links the stage source edition and links the complete **Stage 26 full handoff**.
+- An **accessible two-bar progress component** was installed on the reader: indexed **615/615** versus **independently critically certified 0/615**. Its caption explicitly distinguishes this from the **601/615** page-presence proxy (some English guides / excerpts, not source words translated). Stage 26 did not increase the prior 601/615 count because these pages already had English context.
+
+### Exact completion snapshot after Stage 26
+
+| Measure | State |
+|---|---|
+| Original numbered printed positions indexed | **615/615** — 100% indexed |
+| Original positions with any English contextual/selected content | **601/615** — 97.72% **page PRESENCE only** |
+| Original whole pages with complete sharḥ + all marginal notes, positive authorship, independent double proof and critical collation | **0/615** — 0% certified |
+| New directly source-read upper bilingual clause records, II:261–263 | **23**, selected, not complete pages |
+| New source-selected lower gloss excerpts, individual author UNASSIGNED | **1**, incomplete longer note |
+| Newly authenticated Wasīm gloss units | **0** |
+| Definitive Arabic-source total word completion percentage | **Unknown**, cannot responsibly infer from page presence |
+| New page-level independent critical certifications | **0** |
+
+### Handoff continuation
+
+Next **Stage 27** should cover original volume II:264 onward (physical PDF from **559**), beginning the authentic source `فصل لا خلاف في خلود من دخل الجنة`. It distinguishes perpetual residence of those admitted to Paradise, the everlasting punishment of unbelief, and **entry versus later departure** for sinful Muslims. Keep doctrinal positions as *reported school claims*, do not collapse a theological assertion about eternal abode into an assertion of when one enters it, and preserve all small-print `qawl` notes as separate, individually attributable or UNASSIGNED units. Produce a **new full cumulative handoff snapshot at the end of each stage** (not only a brief delta), and update master. Priority remains complete Arabic/English of every original clause, not accumulating pages with merely thematic summaries.
+
+**Historical and tool limitation:** The project has physically located most source pages but the overwhelming majority of original upper prose and lower marginal commentary remains untranslated and uncollated. A completed critical edition cannot honestly be claimed until those have been done, and a full Wasīm denominator does not yet exist.
