@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/tahdhib-machine-vowels.yml"
       - "tools/tahdhib/generate_machine_vowels.py"
+      - "tools/tahdhib/build_machine_vowelled_pdf.py"
       - "texts/al-taftazani/tahdhib-al-kalam/edition/data.js"
       - "texts/al-taftazani/tahdhib-al-mantiq/edition/data.js"
 permissions:
@@ -27,10 +28,35 @@ jobs:
       - name: Install offline pretrained Arabic vocalizer
         run: |
           python -m pip install --upgrade pip
-          python -m pip install text2tashkeel
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-hosny-amiri fonts-dejavu-core
+          python -m pip install 'weasyprint>=62,<70' 'pypdf>=5,<7' text2tashkeel
       - name: Generate separate source-aligned unreviewed vowel candidates
         run: |
           python tools/tahdhib/generate_machine_vowels.py
+      - name: Build source-hashed, explicit UNREVIEWED Arabic PDFs
+        run: |
+          python tools/tahdhib/build_machine_vowelled_pdf.py
+      - name: Confirm candidate PDF manifest and source hashes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          import hashlib,json
+          for path in Path('texts/al-taftazani').glob('*/edition/vocalization/edition_manifest.json'):
+              o=json.loads(path.read_text(encoding='utf-8'))
+              base=path.parent.parent
+              source=(base/'data.js').read_bytes()
+              machine=(base/'machine-vowels.js').read_bytes()
+              pdf=path.parent/o['pdf_file']
+              assert hashlib.sha256(source).hexdigest()==o['source_sha256']
+              assert hashlib.sha256(machine).hexdigest()==o['machine_vowels_sha256']
+              assert hashlib.sha256(pdf.read_bytes()).hexdigest()==o['pdf_sha256']
+              assert len(PdfReader(str(pdf)).pages)==o['pdf_pages']
+              assert o['unit_count'] in (1044,19)
+              assert 'UNREVIEWED' in o['status']
+              print('PASS full PDF and provenance',path,o['pdf_pages'])
+          PY
       - name: Check all source letters, exact counts and published provenance
         run: |
           python - <<'PY'
@@ -64,6 +90,8 @@ jobs:
           git add texts/al-taftazani/tahdhib-al-kalam/edition/machine-vowels-manifest.json
           git add texts/al-taftazani/tahdhib-al-mantiq/edition/machine-vowels.js
           git add texts/al-taftazani/tahdhib-al-mantiq/edition/machine-vowels-manifest.json
+          git add texts/al-taftazani/tahdhib-al-kalam/edition/vocalization/
+          git add texts/al-taftazani/tahdhib-al-mantiq/edition/vocalization/
           if ! git diff --cached --quiet; then
             git commit -m "Publish UNREVIEWED Tahdhib machine-vowel candidates and source-hash manifests"
             git pull --rebase origin master
