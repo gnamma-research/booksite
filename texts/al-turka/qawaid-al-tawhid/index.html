@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#fbf9f4">
-<meta name="description" content="Gnamma bilingual reader: Abū Ḥāmid Turka's Qawāʿid al-Tawḥīd (61 original passages), with a separate expanding translation of Ṣāʾin al-Dīn Ibn Turka's Tamhīd al-Qawāʿid commentary.">
-<title>Qawāʿid al-Tawḥīd · Gnamma Reading Edition</title>
+<meta name="description" content="Gnamma bilingual reader: Abū Ḥāmid Turka's Qawāʿid al-Tawḥīd, with a separate translation of Ṣāʾin al-Dīn Ibn Turka's Tamhīd introduction and closing commentary, compared with Joseph Lumbard.">
+<title>Qawāʿid al-Tawḥīd · Matn and Commentary · Gnamma</title>
 <link rel="icon" href="../../../assets/gnamma-mark.svg" type="image/svg+xml">
 <link rel="stylesheet" href="reader.css">
 </head>
@@ -31,10 +31,10 @@
 </header>
 <div id="controlbar" aria-label="Reading controls">
  <div class="seg lang" role="group" aria-label="Text languages"><button id="lang-ar" class="ar-glyph" type="button" aria-pressed="true" title="Show or hide Arabic">ع</button><button id="lang-en" type="button" aria-pressed="true" title="Show or hide English">EN</button></div>
- <div class="seg" role="group" aria-label="Reading text layer"><button type="button" data-layer="matn" aria-pressed="true">Matn</button><button type="button" data-layer="paired" aria-pressed="false">Together</button><button type="button" data-layer="sharh" aria-pressed="false">Sharḥ</button></div>
+ <div class="seg" role="group" aria-label="Reading text layer"><button type="button" data-layer="matn" aria-pressed="true">Matn</button><button type="button" data-layer="paired" aria-pressed="false">Together</button><button type="button" data-layer="sharh" aria-pressed="false" title="Open the complete translated commentary workspace">Sharḥ</button></div>
  <button id="focus-button" class="text-btn" type="button" aria-label="Cycle through four reading modes" title="Normal, Focus 1, Focus 2, Continuous"><svg><use href="#ic-focus"/></svg> <span id="focus-label">Normal</span></button>
  <button id="save-button" class="icon-btn" type="button" title="Save current passage" aria-label="Bookmark current passage"><svg><use href="#ic-bookmark"/></svg></button>
- <span class="reader-status" id="reading-status">61 matn units · 2 verified sharḥ excerpts</span>
+ <span class="reader-status" id="reading-status">61 matn units · 6 linked closing commentary sections</span>
 </div>
 <button id="focus-recover" class="icon-btn" aria-label="Change focus mode or return to toolbar" title="Restore toolbar / next focus mode"><svg><use href="#ic-focus"/></svg></button>
 <main id="main">
@@ -42,10 +42,10 @@
   <span class="eyebrow">GNAMMA RESEARCH · BILINGUAL SCHOLARLY READER</span>
   <h1>Qawāʿid al-Tawḥīd</h1>
   <div class="ar-title" lang="ar" dir="rtl">قواعد التوحيد</div>
-  <p class="lede">Abū Ḥāmid Turka’s original treatise and a separately attributed, growing translation of Ṣāʾin al-Dīn Ibn Turka’s <em>Tamhīd al-Qawāʿid</em>. Read the matn alone, open the commentary, or follow both together.</p>
-  <div class="edition-meta"><span><b>61</b> matn units</span><span><b>2</b> commentary excerpts translated</span><span>Āshtiyānī Arabic pp. 48–270 · sharḥ pp. 3–274</span></div>
-  <p class="help-copy">The matn is a source-critical working translation, not an independently manuscript-collated edition. The commentary translation has begun with source-checked excerpts from its closing page; earlier sections are reserved for future verified translation. The reported omission at QT-059 remains noted but does not interrupt reading.</p>
-  <div class="book-actions"><button class="action-btn primary" id="start-matn" type="button">Read the matn</button><button class="action-btn" id="start-sharh" type="button">Commentary translation</button><button class="action-btn" id="open-study" type="button">Study &amp; apparatus</button></div>
+  <p class="lede">Abū Ḥāmid Turka’s original treatise and a separately attributed translation of Ṣāʾin al-Dīn Ibn Turka’s <em>Tamhīd al-Qawāʿid</em>. The commentary now opens at its authorial introduction, with Joseph E. B. Lumbard’s selections used as a checked comparator.</p>
+  <div class="edition-meta"><span><b>61</b> matn units</span><span><b>40</b> introductory commentary units</span><span><b>6</b> concluding commentary units</span></div>
+  <p class="help-copy">The introduction and closing discussion are translated from the available Arabic; the intervening main commentary remains in progress. The commentary reader distinguishes the Nekounam and Āshtiyānī editions and their different pagination. QT-059’s reported omission remains noted and deferred.</p>
+  <div class="book-actions"><button class="action-btn primary" id="start-matn" type="button">Read the matn</button><button class="action-btn" id="start-sharh" type="button">Read the commentary from the beginning</button><button class="action-btn" id="open-study" type="button">Study &amp; apparatus</button><a class="action-btn" href="commentary.html">Commentary reader</a></div>
  </section>
  <section class="reader-stage" id="reading" aria-label="Reading edition">
   <div id="reading-list" aria-live="polite"><p>Opening the reader…</p></div>
@@ -61,9 +61,11 @@
  <div id="sheet-content"></div>
 </dialog>
 <div id="toast" role="status" aria-live="polite"></div>
-<footer class="site-footer">Gnamma Research · <a href="../../../">Library</a> · <a href="data/parallel-matn.md">Bilingual matn</a> · <a href="editorial/CRITICAL_APPARATUS.md">Critical apparatus</a> · <a href="editorial/EDITORIAL_STATUS.md">Editorial status</a> · <a href="editorial/COMMENTARY_TRANSLATION.md">Commentary translation status</a></footer>
-<noscript><p class="help-copy">JavaScript is required for the interactive reader. <a href="data/parallel-matn.md">Read the complete 61-unit bilingual matn in Markdown</a> or <a href="editorial/COMMENTARY_TRANSLATION.md">see the commentary translation</a>.</p></noscript>
+<footer class="site-footer">Gnamma Research · <a href="../../../">Library</a> · <a href="data/parallel-matn.md">Bilingual matn</a> · <a href="commentary.html">Commentary translation</a> · <a href="editorial/LUMBARD_COMMENTARY_STANDARD.md">Lumbard comparison</a> · <a href="editorial/CRITICAL_APPARATUS.md">Critical apparatus</a> · <a href="editorial/COMMENTARY_TRANSLATION.md">Translation status</a></footer>
+<noscript><p class="help-copy">JavaScript is required for the interactive reader. <a href="data/parallel-matn.md">Read the 61-unit bilingual matn in Markdown</a> or <a href="editorial/COMMENTARY_TRANSLATION.md">see the commentary translation status and source files</a>.</p></noscript>
 <script src="data/units.js"></script>
 <script src="data/commentary.js"></script>
+<script src="data/commentary-conclusion.js"></script>
+<script src="commentary-main-bridge.js"></script>
 <script src="reader.js"></script>
 </body></html>
