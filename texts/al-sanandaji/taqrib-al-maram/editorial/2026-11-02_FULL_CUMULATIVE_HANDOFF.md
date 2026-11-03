@@ -1117,3 +1117,76 @@ The NAMA `index.html` page loads the Stage 28 source module and links both its s
 **Stage 29:** original **II:275–280** (source PDF 570–575), beginning the original `فصل في التوبة` on repentance. First complete the Arabic and English of actual source clauses and any bounded marginal unit that can be accurately transcribed, then independently collate exact note authorship. Create **another complete cumulative Stage 29 handoff**, not merely a delta, and update the canonical full master. Do **not** re-do source indexing or infer that the earlier page-context guides represent word-complete translation.
 
 **Absolute scholarly limitation:** while original pages in both volumes have been located, most of Sanandajī's running prose and the enormous lower-register marginal corpus remains untranslated. No full source page meets the critical-certification gate; neither the source-word total nor the Wasīm-gloss unit denominator has yet been established. Presenting the project as a completed critical edition would therefore be incorrect.
+
+
+---
+
+## 32. Stage 29 — repentance and a source-critical Wasīm parallel translation workstream (3 November 2026)
+
+### A. Task and source provenance
+
+The user explicitly authorized proceeding with a **parallel Sanandajī and Wasīm edition**, with author-level note identification, separate progress tracking and full handoff after every stage. The existing upper Sanandajī and embedded al-Taftāzānī *matn* workstreams remain separate from Wasīm and any other anonymous small-print notes.
+
+**Actual primary witness:** the full user-uploaded 632-image `taqribmaram(2).pdf`. Original printed II:275–280 = physical PDF **570–575**. All six source images were rendered and closely inspected; the previous master had only *section-level* English page guides there. The original **title page (physical PDF 4)** states exactly: `مع حاشية المحاكمات للشيخ محمد وسيم الكردستاني وحواشي متفرقة لبعض الأفاضل` — “with Ḥāshiyat al-Muḥākamāt by Shaykh Muḥammad Wasīm al-Kurdistānī and miscellaneous marginal notes by other scholars.” This directly proves that the combined edition has **more than one source of marginal commentary**. The physical placement of a note below the rule is therefore insufficient to attribute it to Wasīm.
+
+### B. Source and translation operations completed for printed II:275–280
+
+**`continuous-II275-II280-tawba-source-selections.js`:** **24** original-image-checked short Arabic–English upper source records, each with exact printed page and physical source number. They distinguish the authentic source `فصل في التوبة`, parenthesized Taftāzānī definition and Sanandajī's surrounding explanation. The genuine chapter opens *partway through* II:275 following a continuing treatment of the previous intercession dispute.
+
+**`continuous-upper-II275-tawba-opening.js`:** **one 33-word continuous but bounded** upper-register source passage, with close English, containing the authentic repentance heading, Arabic linguistic definition and the theological definition as remorse `عن المعصية لكونها معصية`, contrasting regret from the act's wrongness with regret motivated solely by harm to wealth, body or reputation. The visible printed passage itself is MIXED: heading + embedded original matn + explanatory Sanandajī. The reader marks it **mixed-upper**, not exclusively Sanandajī. It is NOT a complete upper page, because II:275 contains earlier and later upper text and a much longer lower-register note.
+
+**`source-marginals-II275-II280-attribution-unassigned.js`:** **three new source-image selected lower-register fragments** from II:276, II:279 and II:280, aligned with their upper debates. Crucially, **all have individual author UNASSIGNED**:
+- `M29.II276.01`: the future resolve to refrain requires that the act occur to the mind and be within one's capacity. First-pass Arabic/English selected text only; original note continues.
+- `M29.II279.01`: short source text on denying a rational obligation upon God to accept repentance. Not a full note.
+- `M29.II280.01`: the ‘hour’ by which repentance must occur is an interval sufficient to repent, rather than a conventional clock hour. First-pass selected phrase only.
+
+**`editorial/2026-11-03_STAGE29_II275_II280_REPENTANCE_AND_WASIM_PARALLEL.md`:** bilingual source-first dossier incorporating all 24 upper excerpt records, the continuous 33-word opening, three lower excerpts, exact source page references and technical discussion of remorse, the formality of the wrong act, future hypothetical resolve, *tawba* being obligatory by transmission versus reason, divine acceptance, temporal immediacy and partial repentance. This is not an exhaustive full translation of six pages, or a fully collated Wasīm edition.
+
+### C. Author-specific marginal-source register and actual Wasīm count
+
+**`editorial/2026-11-03_WASIM_PARALLEL_NOTE_ATTRIBUTION_REGISTER.csv`:** a new source-file-verified registry of **17 selected lower-register EXCERPT records** then present in explicitly known NAMA modules; classification: **1 independently source-matched Wasīm selected excerpt** (`W.II.117.01`), and **16 lower excerpts whose individual author is UNASSIGNED**. This is **not** a corpus-wide census of all printed lower note units; one original gloss can run across several pages, and some existing marginal notes have not been individually enumerated at all. The formerly source-matched Wasīm II:117 excerpt remains only a selected first-pass translation, **not a complete independent critically certified note**.
+
+**`editorial/2026-11-03_STAGE29_II275_II280_LOWER_REGISTER_BLOCK_CENSUS.csv`:** a six-record page-block inventory for printed II:275–280, explicitly recording that **page blocks are not note units**, every printed lower block remains incompletely transcribed and individual attribution to Wasīm or others has not yet been positively established. No invented Wasīm denominator, percentage or exclusive authorship is claimed.
+
+**`wasim-apparatus.html`:** a new first-class parallel research and bilingual-reading page. It contains the securely source-matched Arabic and English Wasīm selection at II:117, a fully traceable table of sixteen author-unassigned selected fragments, active filter controls for attribution status, links back to the Sanandajī main reader and stage dossier, and an **indeterminate** marginal-note-census progress indicator (because the denominator is not known). It also reports **zero fully critically certified Wasīm notes**. It uses the original title wording as proof that marginalia have mixed authorship.
+
+### D. Main NAMA reader and user-specified progress interface
+
+`index.html` now loads all three new stage-specific JS sources, prominently links the Wasīm apparatus in top navigation and the Stage 29 panel, and retains its existing independently toggleable layers: upper sharḥ, parenthesized matn, positively attributed Wasīm text and author-unassigned margins.
+
+An **additional third, INDETERMINATE Wasīm census progress indicator** is now displayed beside the two prior progress indicators. This is **not** a fraction `1/?` visualized as a misleading percentage. It explicitly reports `1` source-matched Wasīm selected excerpt, `0` certified complete Wasīm notes and `16` additional author-unassigned excerpt records, while acknowledging that the vast denominator of all Wasīm notes remains unknown.
+
+`reader-layered.js` has a source-layer display patch for `mixed-upper`, so the 33-word II:275 continuous selection is labelled **MIXED printed upper · Tahdhīb lemma + Sanandajī** rather than miscredited exclusively to the commentator.
+
+### E. Source-critical argument structure newly secured
+
+1. `tawba` is linguistically a *return*, while its contested theological definition is remorse for a wrongful act **qua** wrongful act. Regret for damage to reputation, health or material wealth has a different formal object.
+2. The separate condition of a **resolve to avoid repetition** is debated. The source's answer concerns a counterfactual condition: *if* the act enters consciousness and is in the agent's power, the agent resolves to refrain. The lower margin states these two prerequisites explicitly.
+3. A rival reported Muʿtazilī definition asks whether the offender acknowledges wrongdoing and would reverse the act if able, rather than requiring sorrow as an immediately voluntary emotional state.
+4. An obligation upon the **servant to repent**, based on `توبوا إلى الله جميعا`, is not logically identical to a rational **obligation upon God to accept repentance**. The unassigned II:279 lower quotation belongs to this debate.
+5. Repenting of some sins and the exact interval of `fawr` are separate inquiries. The II:280 lower phrase clarifies that the ‘hour’ in a strict immediate-duty argument may be the time sufficient for repentance rather than sixty conventional minutes.
+6. Because the small type contains Wasīm's named *Ḥāshiyat al-Muḥākamāt* **AND** miscellaneous other authors' notes, all unassigned examples above remain source-visible and translated in the unattributed margin lane, not falsely promoted to authenticated Wasīm words.
+
+### F. Quantitative progress — THREE different, non-substitutable measures
+
+| Measure | After Stage 29 |
+|---|---|
+| Original numbered printed positions indexed in two volumes | **615/615 = 100% bibliographic indexing** |
+| Printed positions with *some* preliminary English source orientation or a selected translation | **601/615 = 97.72% PAGE PRESENCE only**, not the Arabic source-word translation percentage |
+| Full printed pages with complete upper + every lower note translated, author-level attribution, independent second proof and critical source collation | **0/615** = **0% complete certified pages** |
+| Stage 29 source images directly inspected | **6**, printed II:275–280 / PDF 570–575 |
+| New stage short Arabic–English upper selections | **24** |
+| One overlapping short connected upper source excerpt | **1**, 33 Arabic words; NOT a complete upper printed page |
+| New lower-register excerpts in parallel reading | **3**, individual author UNASSIGNED |
+| Source-matched Wasīm selected excerpts explicitly in identified corpus | **1** (existing II:117) |
+| Full independently critically certified Wasīm notes | **0** |
+| Unassigned selected marginal-excerpt records in the new working register | **16**, NOT a count of actual complete notes |
+| Wasīm full note denominator and Wasīm translation percentage | **Unknown**; bar intentionally INDETERMINATE |
+
+The true total volume of Arabic running and lower-register text untranslated remains very large, notwithstanding the near-full page-position mapping. No statement that Sanandajī or Wasīm's complete English translation has been finished is justified by this milestone.
+
+### G. Next stage and persistent handoff rule
+
+Proceed to original II:281–286 (physical PDF 576–581), especially the chapter on the reality of `īmān` around II:282, **in parallel with the attribution and full transcription of actual lower note units**. For any note, first mark the exact source start/end (which can cross printed leaves), record author-identification evidence and then transcribe/translate the **whole individual note**, preserving rebuttal particles. Where the writer cannot be established, retain **UNASSIGNED**, not presumptively Wasīm.
+
+At the END of the next stage, create `editorial/2026-11-03_STAGE30_FULL_HANDOFF.md` as a **complete cumulative snapshot**, preserve the independent Stage 26–29 standalone full handoffs, update canonical `2026-11-02_FULL_CUMULATIVE_HANDOFF.md`, and update the three progress measures only with facts supported by audited source records. Never count a page-level summary or marginal page block as a complete translated note or a newly verified Wasīm unit.
