@@ -25,7 +25,11 @@ const same=(a,b)=>a&&b&&a.page===b.page&&a.target===b.target;
 const save=()=>{try{localStorage.setItem(storageKey,JSON.stringify(state))}catch{}};
 function ref(p){
  const base=isLogic?'L'+String(p.page).padStart(2,'0'):'Cairo p. '+p.page;
- return base+(p.target?' · '+p.target.replace(/^u-/,'').replaceAll('-', '.'):'');
+ if(!p.target)return base;
+ const id=p.target.startsWith('u-KAL-')?
+    p.target.replace(/^u-KAL-(\d+)-(\d+)$/, 'KAL-$1.$2'):
+    p.target.replace(/^u-L-(\d+)$/, 'L.$1');
+ return base+' · '+id;
 }
 function addRecent(item){
  state.recent=[item,...state.recent.filter(x=>!same(x,item))].slice(0,60);
@@ -101,6 +105,9 @@ function attach(){
 document.addEventListener('gnamma-tahdhib-navigate',event=>{
  if(ignore)return;
  const data=event.detail||{};
+ const from=Number(data.fromPage);
+ if(allPages.has(from)&&state.current.page!==from)
+   state.current={page:from,target:null}; // account for intervening ordinary scroll
  const p={page:Number(data.toPage),target:typeof data.target==='string'?data.target:null};
  if(!good(p)||same(p,state.current))return;
  state.back.push(state.current);
