@@ -14,12 +14,12 @@ window.GNAMMA_QAWAID_MATN = {
       "pages": [
         48
       ],
-      "arabic": "الحمد لوليّه، والصلاة على نبيّه محمد وآله. وبعد، فإن تقرير مسألة التوحيد على النحو الذي ذهب إليه العارفون، وأشار إليه المحقّقون، من المسائل الغامضة التي لا يصل إليها أفكار علماء الناظرين المجادلين، ولا يدركها أذهان الفضلاء الباحثين من الناظرين.",
-      "english": "Praise is due to its rightful Patron (walī), and blessings upon His Prophet Muḥammad and his family. To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp.",
+      "arabic": "الحمد لله رب العالمين، والصلاة على نبيّه محمد وآله. وبعد، فإن تقرير مسألة التوحيد على النحو الذي ذهب إليه العارفون، وأشار إليه المحقّقون، من المسائل الغامضة التي لا يصل إليها أفكار علماء الناظرين المجادلين، ولا يدركها أذهان الفضلاء الباحثين من الناظرين.",
+      "english": "Praise belongs to God, Lord of the worlds, and blessings upon His Prophet Muḥammad and his family. To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp.",
       "notes": [
-        "The opening expression al-ḥamd li-waliyyihi is semantically compressed; 'its rightful Patron' is provisional. The commentator reads it as an allusion to the unique reality in which every perfection deserving praise is gathered (p. 48). Do not assume a different opening formula without inspecting manuscripts.",
+        "The reading edition adopts «الحمد لله رب العالمين» from the independently reported Fahares/FANKHĀ catalogue incipit, as the editor's conventional opening. This is an editorial choice, NOT a proven reading of all three separate manuscripts. Āshtiyānī's base prints «الحمد لوليّه» and al-Dharīʿa reports a similar incipit; preserve this in the critical apparatus, not silently erase it. The descendant interprets that phrase in the commentary.",
         "On p. 49 the commentator suggests that the 'disputatious speculative scholars' are the mutakallimūn, whereas the 'learned investigators' are the Peripatetic philosophers. These identifications are the commentator's, not definitions supplied by the matn.",
-        "New independent published catalogue evidence, NOT DIRECT MANUSCRIPT COLLATION: Fahares/FANKHĀ vol.25 p.480 reports the original's incipit «الحمدلله رب العالمین و الصلوة علی نبیه محمد و آله اجمعین فان تقریر مسئلة التوحید علی النحو الذى ذهب اليه العارفون», in Persian-orthographic Arabic. It differs substantially from A's «الحمد لوليّه» and includes «وآله أجمعين». Fahares repeats a common work-level incipit under all three manuscript records; this is NOT proof of separate readings in M1/M2/M3. Retain A until codex folios are inspected. See editorial/MANUSCRIPT_COLLATION_DOSSIER.md."
+        "Published catalogue evidence (not original-codex collation): Fahares/FANKHĀ 25:480 gives «الحمدلله رب العالمین و الصلوة علی نبیه محمد و آله اجمعین ...». The reading edition follows its conventional opening only; other opening words follow Āshtiyānī A. Fahares repeats a common work-level incipit for all three catalogue entries and is not proof of three independent codex readings. See MANUSCRIPT_COLLATION_DOSSIER.md."
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/244?lang=ar",
@@ -37,6 +37,14 @@ window.GNAMMA_QAWAID_MATN = {
           "grade": "C-catalogue-secondary-citation",
           "countedAsManuscriptCollation": false,
           "url": "https://www.fahares.net/w/51946"
+        },
+        "editorialReadingPolicy": {
+          "adoptedOpening": "الحمد لله رب العالمين، والصلاة على نبيّه محمد وآله.",
+          "reading": "catalogue-reported conventional normalization accepted for reader",
+          "baseVariant": "الحمد لوليّه",
+          "certainty": "editorially-adopted-not-stemmatically-established",
+          "extent": "opening doxology only",
+          "manuscriptCollation": false
         }
       }
     },
@@ -2124,6 +2132,7 @@ window.GNAMMA_QAWAID_MATN = {
     "status": "LACUNOSE PROVISIONAL READING TEXT; NOT A COMPLETE CRITICAL EDITION",
     "manuscriptDossier": "editorial/MANUSCRIPT_COLLATION_DOSSIER.md",
     "cataloguedManuscriptsVerified": 3,
-    "originalSeparatePrintedEditionIdentified": "Hādīzādeh, Nuṣūṣ wa-rasāʾil IV:37–72 (not examined)"
+    "originalSeparatePrintedEditionIdentified": "Hādīzādeh, Nuṣūṣ wa-rasāʾil IV:37–72 (not examined)",
+    "openingEditorialPolicy": "QT-001 reader begins الحمد لله رب العالمين by editorial choice; A الحمد لوليه is preserved in apparatus; not critically stemma-confirmed."
   }
 };
