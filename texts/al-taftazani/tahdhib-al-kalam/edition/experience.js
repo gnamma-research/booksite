@@ -161,7 +161,7 @@ function setMode(mode){
 }
 function isOriginalHeading(u){
  const s=String(u.ar||'').trim();
- return s.length<=100&&/^(?:الباب|الفصل|فصل|المقصد|مقصد)(?:\s|[.:،])/u.test(s);
+ return /^(?:الباب|الفصل|فصل|المقصد|مقصد)(?:\s|[.:،])/u.test(s);
 }
 function arabic(u){
  if(prefs.vocalization==='machine'&&machineAvailable){const proposed=machine.units?.[u.id];if(typeof proposed==='string'&&vowels.strip(proposed)===vowels.strip(u.ar))return proposed;}
@@ -235,7 +235,12 @@ function buildFlow(){
   const originalHeading=isOriginalHeading(u);
   const editorialHeading=isLogic&&!!u.title;
   if(!run || originalHeading || editorialHeading){fresh()}
-  if(originalHeading){headingPair(u,run.section,'source');if(lastPage!==u.page){run.para.en.append(pageMark(u.page,'en',lastPage===null));run.para.ar.append(pageMark(u.page,'ar',lastPage===null))}lastPage=u.page;run.count=0;continue}
+  if(originalHeading&&String(u.ar||'').trim().length<=100){headingPair(u,run.section,'source');if(lastPage!==u.page){run.para.en.append(pageMark(u.page,'en',lastPage===null));run.para.ar.append(pageMark(u.page,'ar',lastPage===null))}lastPage=u.page;run.count=0;continue}
+  if(originalHeading){
+   const marker=el('div','gn-original-section-kicker','Original section begins · فصل');
+   marker.title='An original section begins here; the complete source clause remains in the following prose.';
+   run.section.prepend(marker);
+  }
   if(editorialHeading){const tag=el('h3','gn-editorial-title',u.title);tag.dataset.headingOrigin='editorial';run.section.prepend(tag)}
   if(lastPage!==u.page){
    run.para.en.append(pageMark(u.page,'en',lastPage===null));
