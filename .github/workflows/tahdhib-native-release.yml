@@ -39,7 +39,7 @@ jobs:
           npx playwright install --with-deps chromium webkit
       - name: Generate native Daruri editions without changing the source corpus
         run: |
-          python tools/tahdhib/build_native_reader.py
+          python tools/tahdhib/native_finalize.py
           find texts/al-taftazani -path '*/native/*.js' -exec node --check '{}' ';'
           python - <<'PY'
           import pathlib,json,hashlib
