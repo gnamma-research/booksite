@@ -25,7 +25,7 @@ function btn(label,kind,fn){const b=el('button','gn-daruri-action');b.type='butt
  else b.append(icon(kind));
  b.append(el('span','gn-daruri-text',label));b.addEventListener('click',fn);return b}
 function click(selector){const b=$(selector);if(b)b.click()}
-function setMode(mode){ex.setMode(mode);sync()}
+function setMode(mode){ex.setMode(mode);if(mode==='study'&&api.getState().scope!=='page')click('[data-scope="page"]');sync()}
 function contents(){const panel=$('#contents');if(panel){panel.classList.add('shown');$('#open-contents')?.setAttribute('aria-expanded','true');$('#search')?.focus()}}
 function search(){contents()}
 function pdfs(){click('#export')}
@@ -77,6 +77,21 @@ function savedPanel(){open('Reading Desk · Saved',root=>{
  for(const u of items){const button=el('button','gn-daruri-saved-item');button.type='button';button.append(el('strong',null,u.id));
  const parts=[];if(marks.has(u.id))parts.push('Bookmark');if(notes[u.id]?.highlight)parts.push('Highlight');if(notes[u.id]?.body)parts.push('Note');
  button.append(el('small',null,parts.join(' · ')));button.append(el('span',null,(u.en||u.ar||'').slice(0,130)));button.addEventListener('click',()=>jump(u));list.append(button)}
+ const history=window.GnammaTahdhibTrail;
+ if(history){
+  const places=history.snapshot().recent||[];
+  const title=el('h3',null,'Recent reading locations');root.append(title);
+  const controls=el('div','gn-daruri-saved-actions');
+  controls.append(btn('Back','contents',()=>{close();history.back()}),btn('Forward','contents',()=>{close();history.forward()}));root.append(controls);
+  if(places.length){const recent=el('div','gn-daruri-saved-list');root.append(recent);
+   for(const p of places.slice(0,20)){
+    const b=el('button','gn-daruri-saved-item');b.type='button';
+    b.append(el('strong',null,isLogic?'L'+String(p.page).padStart(2,'0'):'Cairo p. '+p.page));
+    b.append(el('span',null,p.target||'Page beginning'));
+    b.addEventListener('click',()=>{close();setMode('flow');history.visit(p)});recent.append(b);
+   }
+  }else root.append(el('p','gn-daruri-empty','Recent locations will appear here after you jump between passages.'));
+ }
  const line=el('div','gn-daruri-saved-actions');line.append(btn('My notes','note',()=>{close();click('#gn-notebook-button')}));
  line.append(btn('Back','contents',()=>{close();contents()}));root.append(line);
 })}
@@ -105,6 +120,15 @@ function sync(){
 document.body.dataset.gnOrder=(()=>{try{return localStorage.getItem('gnamma-tahdhib-order')||'en-left'}catch{return'en-left'}})();
 document.body.dataset.gnPageStyle=(()=>{try{return localStorage.getItem('gnamma-tahdhib-page-style')||'quiet'}catch{return'quiet'}})();
 const toolbar=$('.toolbar');toolbar?.parentNode.insertBefore(bar,toolbar);
+for(const [selector,d] of [['#dock-prev','M15 4l-8 8 8 8'],['#dock-next','m9 4 8 8-8 8']]){
+ const b=$(selector);if(!b)continue;const s=document.createElementNS('http://www.w3.org/2000/svg','svg');
+ s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');
+ s.setAttribute('fill','none');s.setAttribute('stroke','currentColor');s.setAttribute('stroke-width','1.75');
+ s.setAttribute('stroke-linecap','round');s.setAttribute('stroke-linejoin','round');
+ const line=document.createElementNS('http://www.w3.org/2000/svg','path');line.setAttribute('d',d);s.append(line);
+ for(const node of [...b.childNodes])if(node.nodeType===3)node.remove();
+ b.prepend(s);
+}
 document.body.append(overlay);
 document.addEventListener('gnamma-tahdhib-view',sync);
 document.addEventListener('gnamma-tahdhib-render',sync);
