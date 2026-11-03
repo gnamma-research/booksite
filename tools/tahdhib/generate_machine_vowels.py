@@ -83,6 +83,18 @@ def produce(source_file,model):
     corpus=json.loads(raw[len(marker):].rstrip(';\n '))
     expected=1044 if 'kalam' in str(source_file) else 19
     assert len(corpus['units'])==expected
+    # Apply only locally documented human-readable grammar corrections to the
+    # UNREVIEWED prediction. Never touch original authorial source text.
+    rules_path=Path(__file__).with_name('vowel_review_rules.json')
+    corrected=json.loads(rules_path.read_text(encoding='utf-8'))
+    if corrected.get('schema')!='gnamma-tahdhib-local-machine-vowel-corrections-v1':
+        raise RuntimeError('Unexpected review rule source')
+    by_id={}
+    for rule in corrected['rules']:
+        by_id.setdefault(rule['unit_id'],[]).append(rule)
+    applied=0
+    matching={u['id'] for u in corpus['units']}
+    expected_corrections=sum(len(v) for k,v in by_id.items() if k in matching)
     mapping={}
     changed=with_any=skipped=0
     for num,u in enumerate(corpus['units'],1):
@@ -99,12 +111,21 @@ def produce(source_file,model):
                 raise RuntimeError(f'{source_file.name} unit {u["id"]}: model inference failure') from error
             segments.append(transfer_marks(part,prediction))
         candidate=transfer_marks(ar,''.join(segments))
+        for rule in by_id.get(u['id'],[]):
+            before,after=rule['before'],rule['after']
+            if candidate.count(before)!=1:
+                raise RuntimeError(f"Review rule no longer matches {u['id']}: {before!r}")
+            if strip(before)!=strip(after):
+                raise RuntimeError(f"Review rule changes original letters in {u['id']}")
+            candidate=candidate.replace(before,after,1)
+            applied+=1
         assert strip(candidate)==strip(ar),(source_file,u['id'])
         if candidate!=ar:changed+=1
         if any(c in MARKS for c in candidate):with_any+=1
         if candidate==ar:skipped+=1
         mapping[u['id']]=candidate
         if num%100==0:print(source_file.parent.parent.name,num,'/',expected,flush=True)
+    assert applied==expected_corrections,(applied,expected_corrections)
     result={
       'schema':'gnamma-tahdhib-unverified-machine-vowels-v1',
       'status':'AUTOMATIC UNREVIEWED DIACRITICS. NOT A SCHOLARLY OR MANUSCRIPT-CERTIFIED READING.',
@@ -114,6 +135,8 @@ def produce(source_file,model):
       'generator':'tools/tahdhib/generate_machine_vowels.py',
       'python_package_version':importlib.metadata.version('text2tashkeel'),
       'unit_count':expected,
+      'locally_reviewed_vowel_corrections':applied,
+      'vowel_corrections_sha256':hashlib.sha256(rules_path.read_bytes()).hexdigest(),
       'changed_units':changed,
       'units_with_any_diacritic':with_any,
       'unchanged_units':skipped,
