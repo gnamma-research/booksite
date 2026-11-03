@@ -26,7 +26,7 @@ All three are catalogued under the **ancestor's separate Qawāʿid al-Tawḥīd*
 
 ### Incipit: QT-001; Āshtiyānī p.48
 
-**A (digital Āshtiyānī base, working Gnamma text):**
+**A (digital Āshtiyānī source base; variant preserved in apparatus, not followed in reader's opening):**
 
 > الحمد لوليّه، والصلاة على نبيّه محمد وآله. وبعد، فإن تقرير مسألة التوحيد على النحو الذي ذهب إليه العارفون ...
 
@@ -43,7 +43,7 @@ All three are catalogued under the **ancestor's separate Qawāʿid al-Tawḥīd*
 
 **Additional external bibliographical confirmation of A-style incipit**: Āghā Buzurg al-Ṭihrānī, *al-Dharīʿa*, 17, entry 952, quotes **الحمد لوليه والصلاة على نبيه وآله**. [Digitized bibliography](https://download.almohsinlibrary.com/OBooks/OB1677.pdf). This establishes **two published reports of competing incipits**, not a manuscript stemma.
 
-**Editorial decision:** **Retain A's wording in the provisional reading text**; record the F catalogue incipit in the apparatus and flag QT-001 for immediate examination of M₁, M₂ and M₃ fol.1. Do not elect either on speculative grounds.
+**Editorial decision (reading edition):** Adopt **«الحمد لله رب العالمين»** as the conventional first phrase at the project's request; leave the remainder of the prologue under A's reading. Retain A's **«الحمد لوليّه»** and other catalogued differences in the critical apparatus. This is a transparent editorial choice, **not** an established stemmatic reading; no assumption about Basmala is warranted. The substantive task remains QT-059 and full independent collation, not the doxology.
 
 ### Explicit: QT-061; Āshtiyānī p.270
 
