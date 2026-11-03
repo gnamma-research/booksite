@@ -1,11 +1,23 @@
 name: Tahdhib actual reader and logic verification
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - ".github/workflows/tahdhib-reader-ci.yml"
+      - "tools/tahdhib/**"
+      - "texts/shared/tahdhib-daruri-shell.js"
+      - "texts/shared/tahdhib-daruri-shell.css"
+      - "texts/al-taftazani/tahdhib-al-kalam/**"
+      - "texts/al-taftazani/tahdhib-al-mantiq/**"
+      - "daruri/bookmark-ui.js"
   push:
     paths:
       - ".github/workflows/tahdhib-reader-ci.yml"
       - "tools/tahdhib/reader_qa.mjs"
       - "tools/tahdhib/experience_qa.mjs"
+      - "tools/tahdhib/daruri_shell_qa.mjs"
+      - "texts/shared/tahdhib-daruri-shell.js"
+      - "texts/shared/tahdhib-daruri-shell.css"
       - "texts/al-taftazani/tahdhib-al-kalam/edition/subject-index.js"
       - "tools/tahdhib/verify_logic_core.py"
       - "tools/tahdhib/verify_fourth_figure_scope.py"
@@ -141,16 +153,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Install headless Chromium test dependencies
+      - name: Install Chromium and WebKit regression dependencies
         run: |
           npm install --no-save --no-package-lock playwright@1.56.1
-          npx playwright install --with-deps chromium
+          npx playwright install --with-deps chromium webkit
       - name: Exercise both bilingual readers in desktop, portrait, and landscape
         run: |
           python3 -m http.server 8765 >/tmp/tahdhib-http.log 2>&1 &
           SERVER=$!
           trap 'kill "$SERVER" || true' EXIT
           sleep 2
+          node --check texts/shared/tahdhib-daruri-shell.js
+          node --check daruri/bookmark-ui.js
+          node --check tools/tahdhib/daruri_shell_qa.mjs
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/reader.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/experience.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/vowels.js
@@ -162,3 +177,4 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/machine-vowels.js
           node tools/tahdhib/reader_qa.mjs
           node tools/tahdhib/experience_qa.mjs
+          node tools/tahdhib/daruri_shell_qa.mjs
