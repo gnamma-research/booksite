@@ -32,16 +32,16 @@ jobs:
                       if article is None: raise ValueError('No articleBody: do not treat as an empty source page')
                       for element in article.select('[data-abl-content="remark"], nav'):
                           element.decompose()
-                      row['blocks']=[{'tag':element.name,'text':element.get_text(' ',strip=True)} for element in article.select('span.select-text, h1, h2, h3')]
+                      row['blocks']=[{'tag':element.name,'text':element.get_text(' ',strip=True)} for element in article.select('span.select-text, p.select-text, h1, h2, h3') if not (element.name=='span' and element.find_parent('p',class_='select-text'))]
                       row['text']='\n\n'.join(block['text'] for block in row['blocks'])
                       row['words']=len(row['text'].split())
+                      row['plain_paragraph_nodes']=len(article.select('p.select-text'))
               except Exception as error:
                   row['error']=str(error)
               (out/f'page-{p}.json').write_text(json.dumps(row,ensure_ascii=False,indent=2),encoding='utf-8')
-              print(json.dumps({k:row[k] for k in ['printed_page','status','words','error'] if k in row},ensure_ascii=False))
+              print(json.dumps({k:row[k] for k in ['printed_page','status','words','plain_paragraph_nodes','error'] if k in row},ensure_ascii=False))
               time.sleep(.8)
               return row
-          # Two polite workers, no retry storms, no credentials or non-public sources.
           with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
               pages=list(pool.map(retrieve,range(199,471)))
           pages.sort(key=lambda row:row['printed_page'])
