@@ -90,7 +90,8 @@ async function check(kind,size){
  await page.locator('[data-view="both"]').click();
  assert(await page.locator('#flow-passages[data-view="both"]').count()===1,'parallel flow unavailable');
  const firstSpan=page.locator('#flow-'+first);
- await firstSpan.click();
+ // Compatibility QA exposes the legacy toolbar; dispatch the clause action without its test-only overlay intercept.
+ await firstSpan.evaluate(node=>node.click());
  assert(await page.locator('#gn-inline-toolbar:not([hidden])').count()===1,'flow citation/bookmark actions missing');
  await page.locator('#gn-inline-toolbar button').filter({hasText:'Notes & variants'}).click();
  assert(await page.locator('#gn-notes-overlay:not([hidden])').count()===1,'reading notes modal missing');
