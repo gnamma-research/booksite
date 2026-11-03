@@ -8,7 +8,7 @@
 
 **The public manuscript catalogues have now been directly verified; the manuscript folios themselves have not been obtained or compared.** Hence no claim is made to have completed collation, to have read the missing page, or to have established a stemma. The present Gnamma edition remains a **61-unit bilingual, lacunose, provisional reading text**. The recorded substantial defect at QT-059 (base printed pp.262–264) remains unresolved.
 
-The significant new discovery is a **separately published edition of the ancestor's original matn**, not merely another printed commentary, edited by **Majīd Hādīzādeh**, *Nuṣūṣ wa-Rasāʾil min Turāth Iṣfahān al-ʿIlmī al-Khālid*, **vol. IV, pp. 37–72**. The exact page range is legible in the photographed journal page reproduced below; digital right-to-left extraction has rendered it confusingly as “72–73” in one result. **This volume's text is not available for direct comparison in the current working environment.**
+The significant new discovery is a **separately published edition of the ancestor's original matn**, not merely another printed commentary, edited by **Majīd Hādīzādeh**, *Nuṣūṣ wa-Rasāʾil min Turāth Iṣfahān al-ʿIlmī al-Khālid*, **vol. IV, pp. 37–72**. The exact page range is legible in the journal PDF page visually inspected (viewer page 124, journal p.521); digital right-to-left extraction has rendered it confusingly as “72–73” in one result. **This volume's text is not available for direct comparison in the current working environment.**
 
 ## I. Authorial manuscript witnesses — separately verified catalog records
 
