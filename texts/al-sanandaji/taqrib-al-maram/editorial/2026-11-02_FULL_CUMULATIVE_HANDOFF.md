@@ -1204,3 +1204,71 @@ At the END of the next stage, create `editorial/2026-11-03_STAGE30_FULL_HANDOFF.
 - The visible Wasīm note-census progress must remain **indeterminate** until note units have been individually counted and author-verified; the two prior source-page indexing/certification bars remain **615/615 indexed** and **0/615 full all-register pages critically certified**.
 
 **Next attribution priority:** find the cited Wasīm passage in an independent printed edition or another segment of this facsimile, verify the exact image and note boundaries, and only then reclassify its status as primary source-matched. Meanwhile translate the current original II:275–280 lower notes under individual author UNASSIGNED, not inferred Wasīm.
+
+
+---
+
+## 34. Stage 30 — The reality of faith, outward profession, works and Wasīm's parallel notes (3 November 2026)
+
+### Full source-work statement: NOT an entire six-page translation
+
+The user requested continued **Sanandajī + Wasīm in parallel**, with a new full cumulative handoff after each stage. Original combined source `taqribmaram(2).pdf` (632 physical image-only pages) was used; **printed volume II:281–286 = physical PDF pages 576–581**. All six original images were individually rendered and visually read at enlarged resolution (high-resolution separately cropped main and lower registers). The standalone unchanged-source facsimile `Taqrib_Stage30_II281-II286_Original_Facsimile.pdf` is six images, **not** an English translated edition. Source-page mapping and Arabic page number have been checked.
+
+**Critical original chapter-boundary correction:** II:281 and the majority of II:282 are the end of the dispute on **commanding right and forbidding wrong**, NOT the chapter on the reality of faith. The genuine original faith `فصل` begins at the **very end of II:282**, and the detailed faith argument follows II:283–286. `firstpass-II281-II314.js` has been corrected *only* for II:281–286. The earlier broad Stage18 context guide was imprecise.
+
+**Control witness:** Original *Taftāzānī Tahdhīb*, Cairo **1912**, directly photographed **printed pp.113–114**. The independent base text confirms selected parenthesized original `matn` lemmata concerning `الإيمان في اللغة التصديق`, `وفي الشرع تصديق النبي فيما علم مجيئه به بالضرورة`, `الأكثرون على أنه لا بد من الإقرار باللسان`, the earlier-scholars' assent/profession/works proposal, the part–whole objection, and the heart as the site of faith. The Cairo text is a *base-lemma witness*, not permission to introduce independent al-Taftāzānī source text into Sanandajī prose or to attribute lower printed notes to Wasīm. The separate `Tahdhīb` source project remains untouched.
+
+### New Stage30 original-source data and bilingual critical edition
+
+- **`continuous-II281-II286-iman-and-commanding-right.js`**: **40 source-image checked original-language and English selected units** across II:281–286; speaker/source layers explicitly tagged `heading`, `matn` or `sharh`. Each has a physical PDF source number, original printed page, English, original Arabic and note that the complete original source passage/page remains unfinished.
+- **`upper-source-connected-II283-II284-iman.js`**: **two additional comparatively long, partly overlapping Arabic-English first-pass original upper-register selections**, not new whole-page translations: (i) a connected explanation of assent to what is necessarily known to have been conveyed by the Prophet, including general versus detailed affirmation; (ii) the objection from a part of faith being omitted and its answer by distinguishing the foundation of saving faith from its complete form. The latter uses **visible ellipses** in Arabic to preserve intentionally omitted original words. Both are expressly **MIXED** original Taftāzānī lemmata + Sanandajī running explanation.
+- **`source-marginals-II281-II286-unassigned.js`**: **five** source-checked lower-register first-pass Arabic/English **selections**, at II:281, 283, 284, 285 and 286. Historical individual writers explicitly **UNASSIGNED** (the original title page advertises other miscellaneous marginal writers as well as Wasīm). These are NOT a translation of every marginal source unit. Key points: the extension of *maʿrūf* to obligatory and recommended acts; distinguishing faith as assent from faith as knowledge; the difference between inward reality and outward legal status; whether `taṣdīq` is an act of knowledge or of the heart; and the possibility of utterance without inward assent.
+- **`editorial/2026-11-03_STAGE30_II281_II286_IMAN_AND_MARGIN_SOURCE_TRANSLATION.md`**: full Stage30 source-oriented dossier containing all **40** small source quotations, **two** more substantial upper-source bilingual passages, **five** lower-source bilingual excerpts, original source numbers, thematic argument and source-critical edition cautions.
+- **`editorial/2026-11-03_STAGE30_SOURCE_CLAUSE_AND_ATTRIBUTION_AUDIT.csv`**: **47 distinct source-excerpt records** (40+2+5), with explicit original-language/English source registers, overlapping-excerpt warnings and **zero complete margin notes** (therefore none positively Wasīm).
+- **`editorial/2026-11-03_STAGE30_II281_II286_LOWER_REGISTER_CENSUS.csv`**: six printed page-block rows II:281–286, all **not enumerated into a full individual-note corpus**; a page block is not an independently counted Wasīm gloss unit.
+
+### Actual source argument — distinctions requiring permanent preservation
+
+1. **Original chapter position:** the command to right and prevention of wrong continues through II:281 and most of II:282; the new theological faith topic begins only at the foot of II:282. Lower notes above/below on II:282 can belong to either topic and must be separately joined before translation.
+2. **Lexical and technical faith:** `taṣdīq` as linguistic affirmation versus technical assent to what is **necessarily known to have been brought by the Prophet**. General assent to the religion as a whole and detailed assent upon consideration of an individual teaching are different epistemological criteria.
+3. **Different proposed constituents:** (a) inward assent alone, (b) assent plus outward profession `iqrār bi-l-lisān`, (c) assent, profession and `ʿamal bi-l-arkān`. Reported scholars and rival positions must be separately identified rather than conflated.
+4. **One metaphysical/logic problem:** if faith is a whole of constituents and *works* are a constituent, how can faith remain when works are omitted? The response distinguishes the `aṣl` and `asās` of faith from its complete/perfected saving manifestation, instead of simply denying that deeds have any significance.
+5. **A juridical versus theological distinction:** `ʿinda Allāh` and worldly application of legal judgments `ijrāʾ al-aḥkām` do not refer to the same forum. The presence or absence of audible profession has different implications under differing definitions and the lower notes question whether the statement itself implies inward assent.
+6. **Marginal cognition problem:** at original II:285 a lower note asks whether assent is a *cognitive act* or an act of the **heart** that accompanies a predominant understanding; at II:286 another note observes that spoken words can be pronounced **without** the inward assent they signify. **Author UNASSIGNED** pending actual note source evidence.
+7. **School claims:** the source reports the Muʿtazilī and Khārijite classification of the grave sinner. Those are positions as reported in a particular traditional Sunni scholastic source, not yet independently collated primary textual quotations from each named school.
+
+### Wasīm parallel register / source-attribution results, corrected from Stage29
+
+The **original combined-edition title page explicitly names** `Ḥāshiyat al-Muḥākamāt` by Muḥammad Wasīm and `حواشٍ متفرقة لبعض الأفاضل` (miscellaneous notes by others). Every lower note remains author-unassigned without further positive printed or independent witness identification.
+
+- `editorial/2026-11-03_WASIM_PARALLEL_NOTE_ATTRIBUTION_REGISTER.csv` now contains **22 selected lower-EXCERPT** rows: **1 externally attributed quotation** to Wasīm from a 2022 published secondary source, whose claimed original print II:117 was **NOT matched** when primary image physical PDF 412 and adjacent images were viewed; **21** other selected lower passages with historical authors **UNASSIGNED**. **Zero** lower passages directly matched in the user's original with positive individual Wasīm authorship, **zero** all-original-text / independently certified complete Wasīm notes. No denominator for total Wasīm gloss units exists.
+- `wasim-apparatus.html` (parallel desk) now shows the exact **22** rows, one `external` and 21 `unassigned`, with active status filter. It reports the unresolved II:117 primary source locus, and it uses an INDETERMINATE progress bar rather than a bogus 1/22 or 1/615 Wasīm percentage.
+- The source-locus error is documented in `editorial/2026-11-03_STAGE29_WASIM_II117_SOURCE_LOCUS_ERRATUM.md`, which supersedes overconfident Stage26/earlier references to a positively source-matched Wasīm passage at original II:117.
+
+### NAMA reader and UI status
+
+- `index.html` loads the **three Stage30 source JS modules**, links the Stage30 bilingual critical dossier and full cumulative handoff, and links to the separate Wasīm apparatus, without damaging prior bilingual controls.
+- `reader-layered.js` already labels `mixed-upper` content correctly as **mixed Taftāzānī lemma + Sanandajī** rather than falsely attributing an entire mixed paragraph to Sanandajī.
+- The three existing indicators remain clearly separated: **615/615 numbered original printed positions indexed**, **0/615 complete all-register independently critically certified pages**, and an **indeterminate Wasīm full-note census**. The **601/615** prior English-guide/page-presence proxy is not a text-translation percentage and is unchanged.
+
+### New progress snapshot after Stage 30
+
+| Progress dimension | Audited current value |
+|---|---|
+| Original numbered pages indexed | **615/615 (100%)** |
+| Printed positions with some preliminary English context/selection | **601/615** (97.72% PAGE-PRESENCE only) |
+| Entire printed pages with original upper + every lower note fully transcribed/translated/attributed and independently critically collated | **0/615 (0%)** |
+| Stage30 original pages visually inspected | **6**, II:281–286 / PDF 576–581 |
+| Stage30 short original-source Arabic-English units | **40** |
+| Additional connected upper selected texts | **2**, overlap shorter units |
+| New short original lower-register source excerpts | **5**, individually UNASSIGNED |
+| Working excerpt index for lower registers | **22 rows**: 1 secondary-attributed/exact source page unverified + 21 author-unassigned |
+| PRIMARY-source located individual Wasīm excerpts in supplied edition | **0** |
+| Complete independently critically certified Wasīm notes | **0**, denominator unknown |
+| Fraction of total Arabic words translated | **UNKNOWN** (not computable from page guides) |
+
+### Unfinished scholarly work and Stage31 handoff contract
+
+**Next sequential work:** printed II:287–292, continuing the issue of inward `taṣdīq`, verbal `iqrār`, legal rulings, *ʿamal*, faith and its contrary. The higher editorial need is full, uninterrupted Arabic/English source transcription and **individual lower-note segmentation** across both volumes, with source-witness boundaries and authorial classification. Preserve original rhetorical particles, scriptural quotations, analogies and school attributions; do not relabel 5 lower excerpts as 5 finished Wasīm notes.
+
+**At the end of Stage31**, publish another standalone `editorial/2026-11-03_STAGE31_FULL_HANDOFF.md` with the entire cumulative master contents and append the new stage to `editorial/2026-11-02_FULL_CUMULATIVE_HANDOFF.md`. Retain Stage26–Stage30 standalone handoffs; never overwrite historical snapshots. Only increase the certified-page counter when EVERY original upper and lower segment on that printed page is textually complete and independently critically verified.
