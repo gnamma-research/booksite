@@ -1,3 +1,4 @@
+import Init
 /-!
   Tahdhīb: independently checked core temporal proof certificates.
 
@@ -10,7 +11,6 @@
 
   This file uses only Lean 4's Init (no mathlib and no unchecked axioms).
 -/
-import Init
 
 namespace Tahdhib
 
