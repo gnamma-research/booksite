@@ -25,54 +25,6 @@
     "layers": {}
   },
   {
-    "id": "SAN28.II269.02",
-    "volume": "II",
-    "page": 269,
-    "pdf": 564,
-    "category": "selection",
-    "quality": "original-image-source-excerpt-firstpass",
-    "title": "The relation of sin and divine remission",
-    "arabic": "العفو",
-    "english": "Pardon.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed volume II:269, original source physical PDF 564, directly read 3 Nov 2026; cited embedded al-Taftāzānī lemmata cross-checkable against separate original Cairo 1912 Tahdhīb printed pp.110–111.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Only the words quoted are source-translated. They do not complete the running text or lower-register notes of this printed page; independent second proof is pending."
-      },
-      {
-        "type": "Source voice",
-        "text": "Sanandajī explanatory prose or source-reported scripture/polemic, not necessarily the commentator's unqualified position."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "SAN28.II269.03",
-    "volume": "II",
-    "page": 269,
-    "pdf": 564,
-    "category": "selection",
-    "quality": "original-image-source-excerpt-firstpass",
-    "title": "The counterargument from the balance of deeds",
-    "arabic": "أجر",
-    "english": "Recompense.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed volume II:269, original source physical PDF 564, directly read 3 Nov 2026; cited embedded al-Taftāzānī lemmata cross-checkable against separate original Cairo 1912 Tahdhīb printed pp.110–111.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Only the words quoted are source-translated. They do not complete the running text or lower-register notes of this printed page; independent second proof is pending."
-      },
-      {
-        "type": "Source voice",
-        "text": "Sanandajī explanatory prose or source-reported scripture/polemic, not necessarily the commentator's unqualified position."
-      }
-    ],
-    "layers": {}
-  },
-  {
     "id": "SAN28.II270.04",
     "volume": "II",
     "page": 270,
@@ -391,30 +343,6 @@
     }
   },
   {
-    "id": "SAN28.II271.15",
-    "volume": "II",
-    "page": 271,
-    "pdf": 566,
-    "category": "selection",
-    "quality": "original-image-source-excerpt-firstpass",
-    "title": "The issue of earlier versus later forms of pardon",
-    "arabic": "العفو",
-    "english": "Pardon or remission.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed volume II:271, original source physical PDF 566, directly read 3 Nov 2026; cited embedded al-Taftāzānī lemmata cross-checkable against separate original Cairo 1912 Tahdhīb printed pp.110–111.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Only the words quoted are source-translated. They do not complete the running text or lower-register notes of this printed page; independent second proof is pending."
-      },
-      {
-        "type": "Source voice",
-        "text": "Sanandajī explanatory prose or source-reported scripture/polemic, not necessarily the commentator's unqualified position."
-      }
-    ],
-    "layers": {}
-  },
-  {
     "id": "SAN28.II271.16",
     "volume": "II",
     "page": 271,
@@ -505,30 +433,6 @@
     }
   },
   {
-    "id": "SAN28.II272.19",
-    "volume": "II",
-    "page": 272,
-    "pdf": 567,
-    "category": "selection",
-    "quality": "original-image-source-excerpt-firstpass",
-    "title": "The stated risk of falsehood in divine threats",
-    "arabic": "الكذب",
-    "english": "Falsehood.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed volume II:272, original source physical PDF 567, directly read 3 Nov 2026; cited embedded al-Taftāzānī lemmata cross-checkable against separate original Cairo 1912 Tahdhīb printed pp.110–111.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Only the words quoted are source-translated. They do not complete the running text or lower-register notes of this printed page; independent second proof is pending."
-      },
-      {
-        "type": "Source voice",
-        "text": "Sanandajī explanatory prose or source-reported scripture/polemic, not necessarily the commentator's unqualified position."
-      }
-    ],
-    "layers": {}
-  },
-  {
     "id": "SAN28.II272.20",
     "volume": "II",
     "page": 272,
@@ -557,102 +461,6 @@
         "citation": "Original quoted base lemma, printed II:272; separate 1912 witness pp.110–111."
       }
     }
-  },
-  {
-    "id": "SAN28.II272.21",
-    "volume": "II",
-    "page": 272,
-    "pdf": 567,
-    "category": "selection",
-    "quality": "original-image-source-excerpt-firstpass",
-    "title": "The question of qualification and specification",
-    "arabic": "تخصيص",
-    "english": "Restriction or specification.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed volume II:272, original source physical PDF 567, directly read 3 Nov 2026; cited embedded al-Taftāzānī lemmata cross-checkable against separate original Cairo 1912 Tahdhīb printed pp.110–111.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Only the words quoted are source-translated. They do not complete the running text or lower-register notes of this printed page; independent second proof is pending."
-      },
-      {
-        "type": "Source voice",
-        "text": "Sanandajī explanatory prose or source-reported scripture/polemic, not necessarily the commentator's unqualified position."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "SAN28.II273.22",
-    "volume": "II",
-    "page": 273,
-    "pdf": 568,
-    "category": "selection",
-    "quality": "original-image-source-excerpt-firstpass",
-    "title": "The objection to broadening a universal threat",
-    "arabic": "عمومات الوعيد",
-    "english": "General expressions of threats of punishment.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed volume II:273, original source physical PDF 568, directly read 3 Nov 2026; cited embedded al-Taftāzānī lemmata cross-checkable against separate original Cairo 1912 Tahdhīb printed pp.110–111.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Only the words quoted are source-translated. They do not complete the running text or lower-register notes of this printed page; independent second proof is pending."
-      },
-      {
-        "type": "Source voice",
-        "text": "Sanandajī explanatory prose or source-reported scripture/polemic, not necessarily the commentator's unqualified position."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "SAN28.II273.23",
-    "volume": "II",
-    "page": 273,
-    "pdf": 568,
-    "category": "selection",
-    "quality": "original-image-source-excerpt-firstpass",
-    "title": "The possibility of pardon",
-    "arabic": "احتمال العفو",
-    "english": "The possibility of pardon.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed volume II:273, original source physical PDF 568, directly read 3 Nov 2026; cited embedded al-Taftāzānī lemmata cross-checkable against separate original Cairo 1912 Tahdhīb printed pp.110–111.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Only the words quoted are source-translated. They do not complete the running text or lower-register notes of this printed page; independent second proof is pending."
-      },
-      {
-        "type": "Source voice",
-        "text": "Sanandajī explanatory prose or source-reported scripture/polemic, not necessarily the commentator's unqualified position."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "SAN28.II273.24",
-    "volume": "II",
-    "page": 273,
-    "pdf": 568,
-    "category": "selection",
-    "quality": "original-image-source-excerpt-firstpass",
-    "title": "A related dispute over literal and figurative wording",
-    "arabic": "الحقيقة والمجاز",
-    "english": "Literal and figurative expression.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed volume II:273, original source physical PDF 568, directly read 3 Nov 2026; cited embedded al-Taftāzānī lemmata cross-checkable against separate original Cairo 1912 Tahdhīb printed pp.110–111.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Only the words quoted are source-translated. They do not complete the running text or lower-register notes of this printed page; independent second proof is pending."
-      },
-      {
-        "type": "Source voice",
-        "text": "Sanandajī explanatory prose or source-reported scripture/polemic, not necessarily the commentator's unqualified position."
-      }
-    ],
-    "layers": {}
   },
   {
     "id": "SAN28.II274.25",
@@ -797,54 +605,6 @@
       }
     ],
     "layers": {}
-  },
-  {
-    "id": "SAN28.II274.30",
-    "volume": "II",
-    "page": 274,
-    "pdf": 569,
-    "category": "selection",
-    "quality": "original-image-source-excerpt-firstpass",
-    "title": "The problem of who is entitled to receive intercession",
-    "arabic": "طلب المنافع",
-    "english": "Seeking benefits.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed volume II:274, original source physical PDF 569, directly read 3 Nov 2026; cited embedded al-Taftāzānī lemmata cross-checkable against separate original Cairo 1912 Tahdhīb printed pp.110–111.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Only the words quoted are source-translated. They do not complete the running text or lower-register notes of this printed page; independent second proof is pending."
-      },
-      {
-        "type": "Source voice",
-        "text": "Sanandajī explanatory prose or source-reported scripture/polemic, not necessarily the commentator's unqualified position."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "SAN28.II274.31",
-    "volume": "II",
-    "page": 274,
-    "pdf": 569,
-    "category": "selection",
-    "quality": "original-image-source-excerpt-firstpass",
-    "title": "The Qurʾānic restriction on intercession",
-    "arabic": "ولا تنفعها الشفاعة",
-    "english": "Intercession does not benefit it.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed volume II:274, original source physical PDF 569, directly read 3 Nov 2026; cited embedded al-Taftāzānī lemmata cross-checkable against separate original Cairo 1912 Tahdhīb printed pp.110–111.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Only the words quoted are source-translated. They do not complete the running text or lower-register notes of this printed page; independent second proof is pending."
-      },
-      {
-        "type": "Source voice",
-        "text": "Sanandajī explanatory prose or source-reported scripture/polemic, not necessarily the commentator's unqualified position."
-      }
-    ],
-    "layers": {}
   }
 ])if(!present.has(u.id))b.units.push(u);for(const x of [
   {
@@ -852,19 +612,19 @@
     "page": 270,
     "pdf": 565,
     "title": "Three different ways of construing pardon and its occurrence",
-    "arabic": "(قوله ويدل على الوقوع) أي وقوع العفو فالآية الأولى تدل على وقوعه بعد التوبة والثانية أعني ويغفر ما دون ذلك لمن يشاء مطلقا",
-    "english": "‘Concerning his words, “and it indicates that it occurs”’: that is, the occurrence of pardon. The first verse indicates its occurrence after repentance, while the second—namely, ‘He forgives what is less than that to whomsoever He wills’—does so without that qualification.",
+    "arabic": "قوله ويدل على الوقوع أي وقوع العفو فالآية الأولى تدل على وقوعه بعد التوبة والثانية أعني ويعفو عن السيئات على وقوعه مطلقا",
+    "english": "‘His words, “and this indicates that it occurs”’: meaning, that pardon occurs. The first verse shows that it occurs following repentance, while the second—‘and He pardons evil deeds’—is taken to show its occurrence without that additional restriction.",
     "citation": "Original printed II:270, physical PDF 565, lower-register note immediately under the upper/marginal divider; first-pass selected original words.",
-    "kind": "A selected beginning of a longer lower-register objection and reply; individual writer UNASSIGNED, not a certified complete Wasīm note."
+    "kind": "Selected SHORT upper part of a bounded printed lower gloss, author UNASSIGNED, not a full independently verified note."
   },
   {
     "id": "SAN28.G.II274.01",
     "page": 274,
     "pdf": 569,
     "title": "Intercession understood as a request for benefits, not only cancellation of penalties",
-    "arabic": "وقد استدل على العفو بالشفاعة بقوله تعالى فمنهم شفاعة الشافعين",
-    "english": "Pardon has also been argued for through intercession, invoking a scriptural expression concerning the intercession of the intercessors.",
+    "arabic": "وقد استدل على العفو بالشفاعة بقوله تعالى فما تنفعهم شفاعة الشافعين فإن عموم الآية يفيد أن الشفاعة تنفع ذنوب غير الكفار",
+    "english": "An argument for pardon has been drawn from intercession, through the verse ‘The intercession of the intercessors will not benefit them.’ The broader wording is understood to imply that intercession can benefit those whose sins are other than unbelief.",
     "citation": "Original printed II:274, physical PDF 569, first-pass selected lower-registry phrase requiring further text/audit.",
-    "kind": "Short selected original lower-register argument, individual author UNASSIGNED; full unit still pending."
+    "kind": "First-pass selected words from the actual longer lower commentary, individual historical author UNASSIGNED. The inference is debated in the remainder of the note, which is untranslated."
   }
 ]){const p=b.units.find(u=>u.id==='P2.'+x.page);if(!p)continue;p.layers=p.layers||{};p.layers.margins=p.layers.margins||[];if(!p.layers.margins.some(y=>y.id===x.id))p.layers.margins.push(x);}})();
