@@ -1028,3 +1028,47 @@ Priority after this stage: **full Arabic and close English of every original cla
 Next **Stage 27** should cover original volume II:264 onward (physical PDF from **559**), beginning the authentic source `فصل لا خلاف في خلود من دخل الجنة`. It distinguishes perpetual residence of those admitted to Paradise, the everlasting punishment of unbelief, and **entry versus later departure** for sinful Muslims. Keep doctrinal positions as *reported school claims*, do not collapse a theological assertion about eternal abode into an assertion of when one enters it, and preserve all small-print `qawl` notes as separate, individually attributable or UNASSIGNED units. Produce a **new full cumulative handoff snapshot at the end of each stage** (not only a brief delta), and update master. Priority remains complete Arabic/English of every original clause, not accumulating pages with merely thematic summaries.
 
 **Historical and tool limitation:** The project has physically located most source pages but the overwhelming majority of original upper prose and lower marginal commentary remains untranslated and uncollated. A completed critical edition cannot honestly be claimed until those have been done, and a full Wasīm denominator does not yet exist.
+
+
+---
+
+## 30. Stage 27 — Paradise, Hell, `khulūd`, pardon and ultimate entry (3 November 2026)
+
+### Source images, independent base and authorial layers
+
+- **Original witness:** user-uploaded scanned combined two-volume `taqribmaram(2).pdf`, printed volume II:264–268 = **physical PDF pages 559–563**, five original page images actually rendered and inspected.
+- **Independent printed *matn* witness:** original Cairo **1912 *Tahdhīb* printed pp.109–110**, a control for the base lemmata only. Embedded quoted al-Taftāzānī parentheticals, Sanandajī running explanation, scripture and later individual lower marginal notes remain distinct.
+- **New bilingual source JS:** `continuous-II264-II268-khulud-and-exit.js`, containing **30 short direct upper original Arabic–English units**, **1 continuous preliminary transcription and translation of the whole SHORT UPPER register of printed II:264** (overlaps the short units), and **2 separately situated, source-read extended lower excerpts** under individual writer **UNASSIGNED**. It never labels them Wasīm merely by lower typography.
+- **New complete stage bilingual dossier:** `editorial/2026-11-03_STAGE27_II264_II268_KHULUD_PARDON_SOURCE_TRANSLATION.md`. It preserves all source words, close English, theological/language apparatus and original page citations.
+- **Reader:** `index.html` now loads the JS, links the dossier and links `editorial/2026-11-03_STAGE27_FULL_HANDOFF.md`; its accessible **two progress bars remain 615/615 indexed and 0/615 fully critically certified**. The 601/615 page-orientation proxy remains unchanged.
+
+### Critical source observations
+
+1. At printed **II:264**, an authentic new `فصل` discusses permanent abode in Paradise and the Fire. The **complete short upper printed passage** (NOT the longer lower register) was provisionally transcribed and translated, carefully preserving that the children's status is described as `عند بعضهم` (“according to some”), a reported position rather than a universal editorial conclusion.
+2. The lower `SAN27.G.II264.01` explains the precise choice of `من دخل الجنة` (“one who has **entered** Paradise”) rather than simply `المؤمن`: a sinful believer might first pass through punishment before admittance. **Eternal residence once admitted** does not entail **immediate entry**.
+3. At **II:265–266**, keep the scholastic pronouns `فعندهم` (opposing reported position) versus `وعندنا`, and the possible alternatives `بل يعفى عنه` (may be pardoned) versus `أو يخرج من النار بعد حين` (or may eventually leave the Fire). None may be silently collapsed into another.
+4. The argument draws upon a reward due **by divine promise** in the commentator's formulation and **by reason** on a reported competing view; it continues the original II:261–263 promise-versus-desert discussion. The hypothetical perpetual suffering after a single drink of wine following a lifetime of obedience tests proportionality rather than supplying a fixed legal calculation.
+5. The lower `SAN27.G.II268.01` raises the explicit linguistic dispute whether `khulūd` is an unrestricted term for remaining while `taʾbīd` in `خالدين فيها أبداً` is a **restrictive** expression, not merely an **emphasis**. That is a source-reported hermeneutical possibility, not an automatically established interpretation of every scriptural instance.
+6. The text's examples of grave sins, intentional murder, revealed warnings and reported Muʿtazilī doctrines must retain their rhetorical level as scriptural quotation, objection or doxographic claim. Do not certify their attribution to individual historical authors without other independent texts.
+
+### Exact source and progress statistics
+
+| Measure | After Stage 27 |
+|---|---|
+| Combined numbered source-page positions bibliographically indexed | **615/615** |
+| Printed page positions with **some** English source orientation / short excerpt | **601/615** (97.72% **page-position presence only**, NOT fraction of text translated) |
+| Whole printed pages having all main + every marginal note translated, independently proofed, historically attributed and critically collated | **0/615** (0.0%) |
+| This stage's original source images directly reviewed | **5** (II:264–268) |
+| This stage's short direct upper Arabic–English source records | **30** |
+| This stage's continuous short UPPER printed passage (first-pass only, with many overlapping records) | **1** (II:264), **not a full printed page** |
+| This stage's selected lower-register fragments with author UNASSIGNED | **2** (II:264, II:268); both larger surrounding lower texts remain incomplete |
+| Newly positively identified Wasīm glosses | **0** |
+| True whole-corpus Arabic-word and Wasīm-note completion fractions | **Unknown**, source corpus/author units not yet fully enumerated |
+
+The previous Stage 26 full handoff remains an independently addressable complete snapshot; this **Stage 27 full handoff is another complete cumulative copy**, not merely a delta. Both historical snapshots and the current master have the exact latest original source and stage status at their respective dates.
+
+### Required next work (Stage 28)
+
+Directly inspect and translate printed original **II:269–274** (PDF **564–569**), beginning with the continuation of eschatological duration and progressing into the authentic original **`فصل` on divine forgiveness at II:270**. Preserve original page-crossing lemmas, distinguish the *aṣḥāb al-kabāʾir*, repentance, forgiveness and intercession, and separately identify each marginal `qawl`/objection. The next deliverables must include (a) actual source-language and English clauses, (b) individually attributed or **UNASSIGNED** marginal text, (c) honest source/critical progress and (d) a **full cumulative snapshot at the end of the stage**.
+
+**Overall limitation:** all 615 printed positions are mapped but most original Arabic words in both volumes—particularly the ḥāshiya layers—are still **not** transcribed or translated. A definitive complete edition must not be claimed from a high orientation/page-presence number, and a Wasīm-specific percentage cannot yet be computed.
