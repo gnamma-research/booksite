@@ -1,0 +1,16 @@
+{
+  "schema": "gnamma-tahdhib-machine-vowels-pdf-v1",
+  "status": "UNREVIEWED AUTOMATIC VOWELS — NOT A CRITICAL EDITION",
+  "source_sha256": "ca99f10c5773c18219ead99f7fee883c8c8042ba0749831b3c6bd13ded61f43b",
+  "machine_vowels_sha256": "ff7aeaf43ce8e9c1088cd4906d0d3b25e6ee9aae67235ee37c65e5757a91ab71",
+  "machine_vowels_model": "text2tashkeel/rawi-ensemble",
+  "unit_count": 19,
+  "vowelled_unit_count": 19,
+  "pdf_file": "tahdhib-logic-arabic-machine-unreviewed.pdf",
+  "pdf_sha256": "63bf531a5655d4a3d8a7ce239b75dceaaed0c5854997f25b6fcd9d8602ef6727",
+  "pdf_bytes": 87241,
+  "pdf_pages": 8,
+  "source_status": "NAMA working bilingual edition of Taftazani's Tahdhib al-Mantiq: 19 clause-aligned editorial divisions, Cairo 1330/1912 logic pp.3–14; ten documented comparisons with a different printed Tahdhib text (NOT collated manuscript variants). Stage97 has completed a source-typed 46-case register for the three exceptional fourth-figure modal moods (12 sixth, 22 seventh, 12 eighth), drawing from al-Katibi and later Ibn Mubarakshah's tables; bounded tempor",
+  "original_arabic_unmodified": true,
+  "original_six_canonical_pdfs_untouched": true
+}
