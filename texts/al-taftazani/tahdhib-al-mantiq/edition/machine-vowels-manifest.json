@@ -7,6 +7,8 @@
   "generator": "tools/tahdhib/generate_machine_vowels.py",
   "python_package_version": "0.1.0",
   "unit_count": 19,
+  "locally_reviewed_vowel_corrections": 6,
+  "vowel_corrections_sha256": "944749244d7df02f576dc5c5e2b0d86a3d54033cbe0f4755637ebac65055acdf",
   "changed_units": 19,
   "units_with_any_diacritic": 19,
   "unchanged_units": 0
