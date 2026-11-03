@@ -17,6 +17,9 @@ on:
       - "tools/tahdhib/verify_modal_distinctions_stage100.py"
       - "texts/al-taftazani/tahdhib-al-kalam/edition/**"
       - "texts/al-taftazani/tahdhib-al-mantiq/edition/**"
+concurrency:
+  group: tahdhib-reader-verification
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
