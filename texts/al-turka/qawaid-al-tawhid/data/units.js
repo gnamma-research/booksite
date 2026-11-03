@@ -18,7 +18,8 @@ window.GNAMMA_QAWAID_MATN = {
       "english": "Praise is due to its rightful Patron (walī), and blessings upon His Prophet Muḥammad and his family. To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp.",
       "notes": [
         "The opening expression al-ḥamd li-waliyyihi is semantically compressed; 'its rightful Patron' is provisional. The commentator reads it as an allusion to the unique reality in which every perfection deserving praise is gathered (p. 48). Do not assume a different opening formula without inspecting manuscripts.",
-        "On p. 49 the commentator suggests that the 'disputatious speculative scholars' are the mutakallimūn, whereas the 'learned investigators' are the Peripatetic philosophers. These identifications are the commentator's, not definitions supplied by the matn."
+        "On p. 49 the commentator suggests that the 'disputatious speculative scholars' are the mutakallimūn, whereas the 'learned investigators' are the Peripatetic philosophers. These identifications are the commentator's, not definitions supplied by the matn.",
+        "New independent published catalogue evidence, NOT DIRECT MANUSCRIPT COLLATION: Fahares/FANKHĀ vol.25 p.480 reports the original's incipit «الحمدلله رب العالمین و الصلوة علی نبیه محمد و آله اجمعین فان تقریر مسئلة التوحید علی النحو الذى ذهب اليه العارفون», in Persian-orthographic Arabic. It differs substantially from A's «الحمد لوليّه» and includes «وآله أجمعين». Fahares repeats a common work-level incipit under all three manuscript records; this is NOT proof of separate readings in M1/M2/M3. Retain A until codex folios are inspected. See editorial/MANUSCRIPT_COLLATION_DOSSIER.md."
       ],
       "variants": [],
       "url": "https://ablibrary.net/book_content/b/17638/244?lang=ar",
@@ -28,7 +29,15 @@ window.GNAMMA_QAWAID_MATN = {
         "photographedPrintedLeafChecked": false,
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
-        "knownLacuna": false
+        "knownLacuna": false,
+        "catalogueIncipitWitness": {
+          "witness": "Fahares/FANKHA 25:480, work record 51946; catalogue transcription, no manuscript image",
+          "text": "الحمدلله رب العالمین و الصلوة علی نبیه محمد و آله اجمعین فان تقریر مسئلة التوحید علی النحو الذى ذهب اليه العارفون",
+          "baseComparison": "A: الحمد لوليّه والصلاة على نبيّه محمد وآله. وبعد، فإن تقرير...",
+          "grade": "C-catalogue-secondary-citation",
+          "countedAsManuscriptCollation": false,
+          "url": "https://www.fahares.net/w/51946"
+        }
       }
     },
     {
@@ -2066,7 +2075,8 @@ window.GNAMMA_QAWAID_MATN = {
         "Central methodological result: vision alone does not settle conflicting claims. Logic and the habits cultivated by theoretical science furnish a discriminative criterion for experiential cognition; experience may then reach a question unresolved by discursive reasoning. This is a cooperation of methods, not either a denial of mystical perception or an unconditional declaration that all visionary claims are true.",
         "The clause 'غير المتسقة المنتظمة' is unstable: the source reports 'المنسقة' as a variant and the placement of 'المنتظمة' may reflect an erroneous or unclear syntax. English supplies the likely comparison with logic but flags uncertainty.",
         "Printed p.270 has تهذيب الأخلاق وترتيبها / وتزيينها; the ethical exercise is an integral prerequisite, not a decorative addition. The teacher exception is explicit; it cannot simply be erased to make the author a purely rationalist.",
-        "This establishes the END of the transmitted quoted treatise in this edition, not independent completeness of a manuscript critical text (cf. the loss reported in QT-059)."
+        "This establishes the END of the transmitted quoted treatise in this edition, not independent completeness of a manuscript critical text (cf. the loss reported in QT-059).",
+        "Fahares/FANKHĀ work-level catalogue explicit includes «وهذا آخر ما اردنا ان نورده فی هذه الرساله و الحمدلله رب العالمین» and adjacent terms, confirming the bibliographical work's ending matches the quoted ending on printed p.270. This is NOT evidence that the intervening original is complete nor individually independently read manuscript explicits. See editorial/MANUSCRIPT_COLLATION_DOSSIER.md."
       ],
       "variants": [
         {
@@ -2092,7 +2102,13 @@ window.GNAMMA_QAWAID_MATN = {
         "photographedPrintedLeafChecked": false,
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
-        "knownLacuna": false
+        "knownLacuna": false,
+        "catalogueExplicitWitness": {
+          "witness": "Fahares/FANKHA 25:480 work-level shared excerpt",
+          "grade": "C-catalogue-secondary-citation",
+          "countedAsManuscriptCollation": false,
+          "url": "https://www.fahares.net/w/51946"
+        }
       }
     }
   ],
@@ -2105,6 +2121,9 @@ window.GNAMMA_QAWAID_MATN = {
     "independentlyCollatedManuscripts": 0,
     "baseWitness": "Āshtiyānī 1982, electronic transcription",
     "apparatus": "editorial/CRITICAL_APPARATUS.md",
-    "status": "LACUNOSE PROVISIONAL READING TEXT; NOT A COMPLETE CRITICAL EDITION"
+    "status": "LACUNOSE PROVISIONAL READING TEXT; NOT A COMPLETE CRITICAL EDITION",
+    "manuscriptDossier": "editorial/MANUSCRIPT_COLLATION_DOSSIER.md",
+    "cataloguedManuscriptsVerified": 3,
+    "originalSeparatePrintedEditionIdentified": "Hādīzādeh, Nuṣūṣ wa-rasāʾil IV:37–72 (not examined)"
   }
 };
