@@ -1,0 +1,80 @@
+/* Identical Daruri-style Tahdhib chrome for both kalam and logic editions.
+   The original Daruri bookmark SVGs are imported from daruri/bookmark-ui.js. */
+/* Colour identities mirror the named Darūrī Visuals palettes. Dark appearance remains independently legible. */
+:root:not([data-theme="dark"]) body[data-gn-palette="almohad"]{--bg:#f3eee6;--paper:#fdfaf4;--accent:#82503d;--accent-ink:#82503d;--wash:#ede3d7;--tool:#fdfaf4}
+:root:not([data-theme="dark"]) body[data-gn-palette="cordoba"]{--bg:#f5f1e9;--paper:#fffdfa;--accent:#984d45;--accent-ink:#984d45;--wash:#f3e8e3;--tool:#fffdfa}
+:root:not([data-theme="dark"]) body[data-gn-palette="nasrid"]{--bg:#eef3f1;--paper:#fcfefa;--accent:#2e617b;--accent-ink:#2e617b;--wash:#e2ebed;--tool:#fcfefa}
+:root:not([data-theme="dark"]) body[data-gn-palette="zellij"]{--bg:#f0f3ed;--paper:#fdfef9;--accent:#2b6b59;--accent-ink:#2b6b59;--wash:#e5eee8;--tool:#fdfef9}
+:root:not([data-theme="dark"]) body[data-gn-palette="gnamma"]{--bg:#c0a08a;--paper:#f8f0e2;--accent:#35616b;--accent-ink:#35616b;--wash:#eee4d7;--tool:#f8f0e2}
+:root:not([data-theme="dark"]) body[data-gn-palette="gnamma-air"]{--bg:#bfa38a;--paper:#f4e5d4;--accent:#2e6570;--accent-ink:#2e6570;--wash:#ece0d0;--tool:#f4e5d4}
+#gn-daruri-toolbar{position:sticky;top:0;z-index:55;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px clamp(10px,2.2vw,22px);margin:12px 0 16px;background:var(--paper);border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 16px #0000000a;font:600 12px/1.35 system-ui;color:var(--ink)}
+.gn-daruri-tools{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.gn-daruri-tools-end{margin-left:auto}
+#gn-daruri-toolbar button,#gn-daruri-overlay button,#gn-daruri-overlay select{font:inherit;cursor:pointer}
+#gn-daruri-toolbar button:focus-visible,#gn-daruri-overlay :is(button,a,select,input):focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.gn-daruri-action{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:transparent;color:var(--ink);border:1px solid transparent;border-radius:7px;min-height:40px;padding:7px 9px;white-space:nowrap}
+.gn-daruri-action:hover{background:var(--wash);border-color:var(--border)}
+.gn-daruri-action[aria-pressed="true"]{background:var(--wash);border-color:var(--accent);color:var(--accent)}
+.gn-daruri-action>svg,.gn-daruri-action .gn-daruri-bookmark svg{width:19px;height:19px;flex:none}
+.gn-daruri-action .gn-daruri-bookmark{display:flex;align-items:center}
+.gn-daruri-vowel-letter{font:700 20px/1.2 'Amiri',serif}
+.gn-daruri-languages{display:flex;gap:2px;border:1px solid var(--border);padding:3px;background:var(--bg);border-radius:8px}
+.gn-daruri-languages button{min-height:34px;min-width:34px;border:0;background:transparent;color:var(--ink);padding:5px 8px;border-radius:5px;font-size:12px}
+.gn-daruri-languages button[aria-pressed="true"]{background:var(--accent);color:var(--paper)}
+/* The duplicate, older Tahdhib-specific toolbar remains available to its scripts,
+   but is removed from keyboard traversal and visual presentation by the shell. */
+.main > .toolbar{display:none!important}
+.gn-legacy-controls .main > .toolbar{display:flex!important}
+body[data-reading-style="flow"] .page-strip,body[data-reading-style="flow"] .end-nav{display:none!important}
+body[data-reading-style="immersive"] #gn-daruri-toolbar{position:sticky;top:0;margin:0 0 20px;border-top:0;border-radius:0 0 10px 10px}
+body[data-reading-style="immersive"] .main{padding-top:0}
+body[data-gn-order="ar-left"] .gn-flow-columns .gn-flow-ar,body[data-gn-order="ar-left"] .aligned .arabic{order:-1}
+body[data-gn-page-style="book"] #flow-passages{max-width:940px;padding:20px clamp(15px,4vw,42px);background:var(--paper);box-shadow:0 4px 32px #0000000b;border:1px solid var(--border)}
+body[data-gn-page-style="structured"] #flow-passages .gn-flow-section{padding-bottom:24px;border-bottom:1px solid var(--border)}
+body[data-gn-page-style="quiet"] #flow-passages .gn-flow-section{border:0}
+/* Dialogs must always paint above the new sticky reader toolbar, including in mobile landscape. */
+#gn-daruri-toolbar{z-index:20}
+#export-modal.modal-backdrop,#gn-notes-overlay,#gn-terms-overlay,#gn-subject-overlay{z-index:400!important}
+#gn-daruri-overlay[hidden]{display:none!important}
+#gn-daruri-overlay{position:fixed;inset:0;z-index:450;display:flex;align-items:center;justify-content:center;background:#17232691;backdrop-filter:blur(3px);padding:calc(12px + env(safe-area-inset-top)) 12px calc(12px + env(safe-area-inset-bottom))}
+.gn-daruri-sheet{width:min(660px,100%);max-height:90dvh;overflow:auto;overscroll-behavior:contain;background:var(--paper);color:var(--ink);border:1px solid var(--border);border-radius:13px;box-shadow:0 20px 60px #0004;font:14px/1.6 system-ui}
+.gn-daruri-sheet-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 19px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--paper);z-index:2}
+.gn-daruri-sheet-head h2{font:500 22px/1.3 Georgia,serif;margin:0;color:var(--ink)}
+.gn-daruri-sheet-body{padding:18px 22px 28px;display:grid;gap:15px}
+.gn-daruri-setting{display:flex;flex-direction:column;gap:5px}
+.gn-daruri-setting>label{font-weight:650;color:var(--ink)}
+.gn-daruri-setting>small{color:var(--muted)}
+.gn-daruri-setting select{width:100%;min-height:42px;padding:8px 10px;border:1px solid var(--border);border-radius:7px;background:var(--bg);color:var(--ink)}
+.gn-daruri-setting>input[type="checkbox"]{width:22px;height:22px;accent-color:var(--accent)}
+.gn-daruri-scale,.gn-daruri-saved-actions{display:flex;gap:6px;flex-wrap:wrap}
+.gn-daruri-scale .gn-daruri-action,.gn-daruri-saved-actions .gn-daruri-action{border-color:var(--border)}
+.gn-daruri-description,.gn-daruri-empty,.gn-daruri-caution{font:12px/1.7 system-ui;color:var(--muted);margin:0}
+.gn-daruri-caution{border-left:2px solid var(--accent);padding:9px 12px;background:var(--wash)}
+.gn-daruri-saved-list{display:grid;gap:6px}
+.gn-daruri-saved-item{width:100%;display:grid;grid-template-columns:100px 1fr;gap:2px 9px;text-align:left;padding:10px;border:1px solid var(--border);border-radius:7px;background:var(--bg);color:var(--ink)}
+.gn-daruri-saved-item strong{font-size:12px}
+.gn-daruri-saved-item small{color:var(--accent);font-size:11px}
+.gn-daruri-saved-item>span{grid-column:1/-1;font:13px/1.5 Georgia,serif}
+.gn-daruri-resource{display:block;border-bottom:1px solid var(--border);padding:10px 0;color:var(--accent)}
+.gn-daruri-sheet-body h3{font:600 16px/1.35 Georgia,serif;margin:10px 0 0}
+.gn-daruri-sheet-body p{margin:0}
+.clause-actions .icon-action svg,.page-list .gn-bm-ribbon{width:18px;height:18px;vertical-align:middle}
+.clause-actions .icon-action{display:inline-flex;align-items:center;justify-content:center}
+.page-list .bookmarked{display:flex;align-items:center;color:var(--accent)}
+.page-list .bookmarked svg{width:15px;height:15px}
+@media(max-width:900px){
+ #gn-daruri-toolbar{gap:4px}
+ #gn-daruri-toolbar .gn-daruri-text{display:none}
+ #gn-daruri-toolbar .gn-daruri-tools{gap:2px}
+ #gn-daruri-toolbar .gn-daruri-action{min-width:39px;min-height:42px;padding:6px}
+ #gn-daruri-toolbar .gn-daruri-languages button{padding:5px 6px}
+}
+@media(max-width:620px){
+ #gn-daruri-toolbar{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;max-width:100vw;margin-left:-8px;margin-right:-8px;position:sticky;top:0;padding:5px 8px;border-radius:0;gap:6px;-webkit-overflow-scrolling:touch}
+ #gn-daruri-toolbar .gn-daruri-tools{flex-wrap:nowrap;flex:none}
+ #gn-daruri-toolbar .gn-daruri-tools-end{margin-left:0}
+ .gn-daruri-sheet{max-height:calc(100dvh - 26px)}
+ .gn-daruri-sheet-body{padding:15px}
+ .gn-daruri-saved-item{grid-template-columns:1fr}
+}
+@media print{#gn-daruri-toolbar,#gn-daruri-overlay{display:none!important}.main>.toolbar{display:none!important}}

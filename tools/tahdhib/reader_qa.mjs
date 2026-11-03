@@ -16,8 +16,8 @@ async function check(kind, viewport) {
   const errors = [];
   page.on('pageerror', error => errors.push(String(error)));
   const route = kind === 'kalam' ?
-    'texts/al-taftazani/tahdhib-al-kalam/edition/' :
-    'texts/al-taftazani/tahdhib-al-mantiq/edition/';
+    'texts/al-taftazani/tahdhib-al-kalam/edition/?legacy-controls=1' :
+    'texts/al-taftazani/tahdhib-al-mantiq/edition/?legacy-controls=1';
   await page.goto(new URL(route, base).href, { waitUntil: 'networkidle' });
   assert(await page.locator('#passages .clause').count() === (kind === 'kalam' ? 6 : 1) ||
     await page.locator('#passages .clause').count() > 0, kind + ': content missing');

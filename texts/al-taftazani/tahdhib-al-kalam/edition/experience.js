@@ -279,7 +279,7 @@ function popupAt(u,node){
  const box=$('#gn-inline-toolbar');if(!box)return;
  box.replaceChildren();
  const name=el('span','gn-selected-ref',u.id);
- const bookmark=control('Bookmark '+u.id);bookmark.textContent=api.getBookmarked().includes(u.id)?'★ Saved':'☆ Bookmark';
+ const bookmark=control('Bookmark '+u.id);const saved=api.getBookmarked().includes(u.id);bookmark.innerHTML=(window.GnammaBookmarkUI?.icon({saved})||'')+'<span>'+(saved?'Saved':'Bookmark')+'</span>';
  bookmark.addEventListener('click',()=>{api.bookmark(u.id);hidePopup();buildFlow()});
  const highlight=control('Highlight this clause');highlight.textContent=notes[u.id]?.highlight?'◈ Highlighted':'◇ Highlight';
  highlight.addEventListener('click',()=>{const old=notes[u.id]||{},next={...old,highlight:!old.highlight};

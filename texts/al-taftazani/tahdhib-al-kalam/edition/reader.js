@@ -10,12 +10,13 @@ const norm=s=>(s||'').toLocaleLowerCase().normalize('NFKD').replace(/[\u064b-\u0
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
 const cap=n=>String(n).padStart(corpus.navigation_kind==='division'?2:3,'0');const isDivision=corpus.navigation_kind==='division';const locationLabel=isDivision?'Editorial division':'1912 printed page';const unitLabel=corpus.unit_type||'aligned clauses';
 const idFor=u=>'u-'+u.id.replace(/[^a-zA-Z0-9-]/g,'-');
+const bookmarkIcon=saved=>window.GnammaBookmarkUI?.icon({saved})|| (saved?'★':'☆');
 const sourceText=p=>isDivision?'Line-by-line and formal logical validation outstanding':pending.has(p)?'Textual questions remain on this page; second witness required':'Cairo 1912 single-print source check recorded';
 function applySettings(){document.documentElement.dataset.theme=state.theme;document.body.dataset.focus=state.focus;const fb=$('#focus');if(fb){const labels=['Normal','Focus · notes','Focus · text','Focus · continuous'];fb.innerHTML='◎ <span>'+labels[state.focus]+'</span>';fb.title=labels[state.focus];fb.setAttribute('aria-pressed',String(state.focus>0))}document.documentElement.style.setProperty('--reader-scale',String(state.font));const r=$('#passages');r.className='passages view-'+state.view;$$('[data-view]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.view===state.view)));$$('[data-scope]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.scope===state.scope)));$('#theme').title='Appearance: '+state.theme}
 function article(u){
  const a=el('article','clause');a.id=idFor(u);a.dataset.page=u.page;
  const head=el('div','clause-bar');const anchor=el('a','clause-anchor',u.id);anchor.href='#'+a.id;anchor.title='Permanent citation link';
- const actions=el('div','clause-actions');const star=el('button','icon-action',state.bookmarks.has(u.id)?'★':'☆');star.title='Bookmark clause';star.setAttribute('aria-label','Bookmark '+u.id);star.setAttribute('aria-pressed',String(state.bookmarks.has(u.id)));star.addEventListener('click',()=>{if(state.bookmarks.has(u.id))state.bookmarks.delete(u.id);else state.bookmarks.add(u.id);star.textContent=state.bookmarks.has(u.id)?'★':'☆';star.setAttribute('aria-pressed',String(state.bookmarks.has(u.id)));store();renderNav()});
+ const actions=el('div','clause-actions');const star=el('button','icon-action');star.innerHTML=bookmarkIcon(state.bookmarks.has(u.id));star.title='Bookmark clause';star.setAttribute('aria-label','Bookmark '+u.id);star.setAttribute('aria-pressed',String(state.bookmarks.has(u.id)));star.addEventListener('click',()=>{if(state.bookmarks.has(u.id))state.bookmarks.delete(u.id);else state.bookmarks.add(u.id);star.innerHTML=bookmarkIcon(state.bookmarks.has(u.id));star.setAttribute('aria-pressed',String(state.bookmarks.has(u.id)));store();renderNav()});
  const cite=el('button','icon-action','⧉');cite.title='Copy citation';cite.setAttribute('aria-label','Copy citation for '+u.id);cite.addEventListener('click',async()=>{const c='al-Taftāzānī, '+corpus.work+', '+(isDivision?'editorial division ':'Cairo 1330/1912, p. ')+u.page+', '+u.id+' (Gnamma working edition)';try{await navigator.clipboard.writeText(c);cite.textContent='✓';setTimeout(()=>cite.textContent='⧉',1200)}catch{prompt('Copy citation',c)}});
  actions.append(star,cite);head.append(anchor,actions);a.append(head);
  if(u.title){a.append(el('h3','division-title',u.title));if(u.source_location)a.append(el('p','division-source','Witness source pages: '+u.source_location))}
@@ -47,7 +48,7 @@ function renderNav(){
  const list=$('#page-list');list.replaceChildren();const frag=document.createDocumentFragment();
  for(let p=MIN;p<=MAX;p++){const b=el('button','page-item'+(p===state.page&&state.scope==='page'?' active':'')+(pending.has(p)?' pending':''));b.dataset.page=p;
  const n=el('span','page-number',cap(p));const ct=el('span','page-count',isDivision?'L'+cap(p):(byPage.get(p)||[]).length+' clauses');b.append(n,ct);
- if(pending.has(p)){b.append(el('span','page-alert','•'));b.title='Source question remains'}if((byPage.get(p)||[]).some(u=>state.bookmarks.has(u.id)))b.append(el('span','bookmarked','★'));
+ if(pending.has(p)){b.append(el('span','page-alert','•'));b.title='Source question remains'}if((byPage.get(p)||[]).some(u=>state.bookmarks.has(u.id))){const mark=el('span','bookmarked');mark.innerHTML=bookmarkIcon(true);b.append(mark)}
  b.addEventListener('click',()=>go(p));frag.append(b)}list.append(frag)
 }
 function go(p,target){const newPage=Math.max(MIN,Math.min(MAX,Number(p)||MIN));document.dispatchEvent(new CustomEvent('gnamma-tahdhib-navigate',{detail:{fromPage:state.page,toPage:newPage,target:target||null}}));state.page=newPage;store();const hash=target?'#'+target:'#page='+state.page;history.replaceState(null,'',hash);
@@ -62,7 +63,7 @@ function search(){
  for(const u of hits.slice(0,100)){const b=el('button','search-hit');const text=(norm(u.ar).includes(q)?u.ar:u.en).slice(0,90);b.append(el('strong',null,u.id),el('span',null,text));b.addEventListener('click',()=>go(u.page,idFor(u)));box.append(b)}
  if(hits.length>100)box.append(el('p','search-info','Showing first 100 matches. Narrow your query.'));
 }
-function toggleScope(scope){state.scope=scope;if(state.focus===3&&scope!=='continuous')state.focus=0;store();render()}
+function toggleScope(scope){state.scope=document.body.dataset.readingStyle&&document.body.dataset.readingStyle!=='study'?'continuous':scope;if(state.focus===3&&state.scope!=='continuous')state.focus=0;store();render()}
 function hashState(){const h=decodeURIComponent(location.hash.slice(1));if(/^page=\d+$/.test(h))return{page:Number(h.split('=')[1])};if(h.startsWith('u-')){const id=units.find(u=>idFor(u)===h);if(id)return{page:id.page,target:h}}return null}
 $$('[data-view]').forEach(b=>b.addEventListener('click',()=>{state.view=b.dataset.view;store();applySettings();document.dispatchEvent(new CustomEvent('gnamma-tahdhib-view',{detail:{view:state.view}}))}));
 $$('[data-scope]').forEach(b=>b.addEventListener('click',()=>toggleScope(b.dataset.scope)));
@@ -122,7 +123,7 @@ $$('[data-export]').forEach(b=>b.addEventListener('click',()=>{const v=b.dataset
  if(v==='print'){modal.hidden=true;state.scope='continuous';render();requestAnimationFrame(()=>requestAnimationFrame(()=>window.print()))}
  else modal.hidden=true
 }));
-window.addEventListener('afterprint',()=>{state.scope=preferences().scope||'page';render()});
+window.addEventListener('afterprint',()=>{state.scope=document.body.dataset.readingStyle&&document.body.dataset.readingStyle!=='study'?'continuous':(preferences().scope||'page');render()});
 window.GnammaTahdhibReader={getState:()=>({...state,bookmarks:[...state.bookmarks]}),go,render,units,isDivision,bookmark(id){if(state.bookmarks.has(id))state.bookmarks.delete(id);else state.bookmarks.add(id);store();renderNav();document.dispatchEvent(new CustomEvent('gnamma-tahdhib-bookmarks'));return state.bookmarks.has(id)},getBookmarked:()=>[...state.bookmarks]};
 const initial=hashState();if(initial){state.page=initial.page;lastFocus=initial.target||'page-'+initial.page}render();search();
 })();
