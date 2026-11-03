@@ -1,0 +1,78 @@
+/* Stage30: original lower-register source passages II281–286. The source title page identifies Wasim AND other gloss authors: none attributed without direct proof. */
+(()=>{'use strict';const b=window.GNAMMA_BOOK;if(!b||b.id!=='taqrib')return;for(const n of [
+  {
+    "id": "M30.II281.01",
+    "page": 281,
+    "title": "The extent of the recognized good and the reprehensible",
+    "arabic": "اعلم أن المعروف يعم الواجب والمندوب والمنكر يعم الحرام والمكروه",
+    "english": "Know that what is recognized as good comprises both the obligatory and the recommended, while what is reprehensible comprises the forbidden and the disliked.",
+    "status": "selected_source_span_not_full_note",
+    "citation": "Taqrīb original printed II:281 / physical PDF 576, lower register immediately after source divider; individually unidentified marginal writer.",
+    "pdf": 576,
+    "attribution_status": "UNASSIGNED",
+    "source_layer": "lower_printed_register",
+    "full_note_translated": false,
+    "independent_second_proof": false,
+    "kind": "selected_source_span_not_full_note"
+  },
+  {
+    "id": "M30.II283.01",
+    "page": 283,
+    "title": "Marginal analysis: four competing accounts of the faith predicate",
+    "arabic": "أقول قد تقرر فيما بينهم أن هنا طرقا أربعة الأول أن الإيمان اسم للتصديق أو المعرفة فقط",
+    "english": "I say: it has been established among the disputants that there are four approaches here. First, faith is a name for assent or knowledge alone.",
+    "status": "selected_opening_from_long_lower_note_not_full",
+    "citation": "Taqrīb printed II:283 / PDF 578, source lower register, near the lemmas on the definition of faith; author not positively identified.",
+    "pdf": 578,
+    "attribution_status": "UNASSIGNED",
+    "source_layer": "lower_printed_register",
+    "full_note_translated": false,
+    "independent_second_proof": false,
+    "kind": "selected_opening_from_long_lower_note_not_full"
+  },
+  {
+    "id": "M30.II284.01",
+    "page": 284,
+    "title": "Legal status versus faith before God",
+    "arabic": "فالشخص المذكور عندهم مؤمن بينه وبين الله ولكن لا يلزم إجراء الأحكام عليه",
+    "english": "According to them, the person under discussion is a believer as between himself and God, but the application of the outward legal rulings to him does not necessarily follow.",
+    "status": "selected_short_source_span_not_full",
+    "citation": "Taqrīb printed II:284 / PDF 579, lower commentary on internal assent and legal profession, attribution unassigned.",
+    "pdf": 579,
+    "attribution_status": "UNASSIGNED",
+    "source_layer": "lower_printed_register",
+    "full_note_translated": false,
+    "independent_second_proof": false,
+    "kind": "selected_short_source_span_not_full"
+  },
+  {
+    "id": "M30.II285.01",
+    "page": 285,
+    "title": "Is assent an act of knowledge or an act of the heart?",
+    "arabic": "لكن في كونه من فعل العلم حينئذ نظر بل الظاهر أنه فعل القلب إلا أنه لازم للإدراك الراجح",
+    "english": "Yet whether it should then be classed as an act of knowledge is open to question. Rather, it seems to be an act of the heart, albeit one inseparable from a preponderant cognition.",
+    "status": "selected_sentence_from_first_bounded_short_lower_section_not_full_second_proof",
+    "citation": "Taqrīb printed II:285 / PDF 580, first short lower note after horizontal source line, prior to the next horizontal division; individual writer unassigned.",
+    "pdf": 580,
+    "attribution_status": "UNASSIGNED",
+    "source_layer": "lower_printed_register",
+    "full_note_translated": false,
+    "independent_second_proof": false,
+    "kind": "selected_sentence_from_first_bounded_short_lower_section_not_full_second_proof"
+  },
+  {
+    "id": "M30.II286.01",
+    "page": 286,
+    "title": "Why outward utterance does not by itself guarantee inward assent",
+    "arabic": "إن مراده هو التلفظ بالكلام الدال على تصديق القلب يلزم أيضا أن يكون التلفظ بهذا الكلام ولو بدون التصديق",
+    "english": "If what is meant is uttering words that signify inward assent, it would also follow that those words could be uttered even without actual assent.",
+    "status": "source_selected_from_long_note_not_full",
+    "citation": "Taqrīb printed II:286 / PDF 581, lower register discussing iqrār and taṣdīq, original image directly inspected; writer unassigned.",
+    "pdf": 581,
+    "attribution_status": "UNASSIGNED",
+    "source_layer": "lower_printed_register",
+    "full_note_translated": false,
+    "independent_second_proof": false,
+    "kind": "source_selected_from_long_note_not_full"
+  }
+]){const parent=b.units.find(x=>x.id==='P2.'+n.page);if(!parent)continue;parent.layers=parent.layers||{};parent.layers.margins=parent.layers.margins||[];if(!parent.layers.margins.some(x=>x.id===n.id))parent.layers.margins.push(n);}})();
