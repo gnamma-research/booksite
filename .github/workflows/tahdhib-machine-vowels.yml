@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/tahdhib-machine-vowels.yml"
       - "tools/tahdhib/generate_machine_vowels.py"
+      - "tools/tahdhib/vowel_review_rules.json"
       - "tools/tahdhib/build_machine_vowelled_pdf.py"
       - "texts/al-taftazani/tahdhib-al-kalam/edition/data.js"
       - "texts/al-taftazani/tahdhib-al-mantiq/edition/data.js"
