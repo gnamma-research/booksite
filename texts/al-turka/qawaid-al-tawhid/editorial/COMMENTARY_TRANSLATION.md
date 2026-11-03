@@ -1,63 +1,74 @@
-# Tamhīd al-Qawāʿid — separate bilingual commentary translation
+# Tamhīd al-Qawāʿid — Arabic–English commentary translation
 
-**Ṣāʾin al-Dīn ʿAlī Ibn Turka (صائن الدين علي بن محمد تركة)**  
-Commentary (*sharḥ*) on the earlier **Qawāʿid al-Tawḥīd** of Abū Ḥāmid Turka.
+**Ṣāʾin al-Dīn ʿAlī Ibn Turka**, commenting on his ancestor Abū Ḥāmid Turka's *Qawāʿid al-Tawḥīd*.
 
-**Status — 3 November 2026:** Begun, **two source-checked excerpts translated** from **Āshtiyānī's printed p.274**, the end of the descendant's commentary. The initial Arabic pages of the sharḥ and subsequent intermediate sections are **not translated yet**. The work is not sequentially complete. The 61-lemmata ancestral matn remains a separate completed *working* translation, not part of the commentary translation.
+**Current release: 3 November 2026.** The translation target is the **whole medieval commentary**, not a selection. This release contains **46 translated bilingual sections: 40 introductory units and 6 concluding units**. The intervening main commentary is still untranslated. No whole-work percentage or complete-work claim is made.
 
-## Editorial architecture
+[Read the commentary from the beginning](../commentary.html) · [Return to the matn reader](../) · [Lumbard comparison standard](LUMBARD_COMMENTARY_STANDARD.md).
 
-- Ancestor's original: stable **QT-001–QT-061**, in [parallel-matn.md](../data/parallel-matn.md); keep **قال** quotations out of the descendant's translation.
-- Descendant's independent commentary: **SH-001…SH-061** (future passages) aligned by **matnId**. Multiple passages addressing one original lemma may use letter IDs **SH-061-A**, **SH-061-B**.
-- Commentary's independent opening/preface, preceding the first ancestral matn citation: **SH-INTRO-001** etc. These are **reserved, not currently filled**.
-- Source-state must be explicit for every passage: directly quoted Arabic page, printed-edition transcription, reconstructed conjecture, or unverified. Only source-attested texts qualify as translated commentary.
-- Āshtiyānī's Persian introduction, marginal glosses, later colophons, and commentary quotations from the grandfather's other books must not be silently presented as prose of Ṣāʾin al-Dīn.
-- The public reader offers **Matn / Together / Sharḥ**, with reserved locations for future commentary and no invented Arabic content. The Sharḥ section is currently represented only by the two excerpts below.
+## 1. Material completed
 
-## First translated commentary passages — printed p.274
+### Continuous authorial introduction: SH-INTRO-001–040
 
-**Primary reading:** [Tamhīd, printed p.274](https://ablibrary.net/book_content/b/17638/470?lang=ar). The web-indexed edition supplies the exact paragraph; punctuation, Arabic orthography and paragraph divisions have been lightly normalised. Both excerpts follow the grandfather's concluding *QT-061*. They form the **end** of the grandson's commentary, not the original's closing passage.
+The **entire authorial opening available in the consulted online Arabic edition** is translated, from its doxology through the sentence ending the prolegomenon. This includes the author's preface and the extended systematic discussion omitted from Lumbard's published opening selection.
 
-### SH-061-A · The perfected guide and the science appropriate to each station
+The source is **N**, the medieval Arabic text reproduced in Muḥammad Riḍā al-Nekounam's edition, Tehran: Ṣubḥ-i Fardā, 1393 SH. Its online printed markers run from **19 through 42**, followed by a final continuation without a further visible page-ending marker. The final sections preserve that locator instead of inventing a photographed page number. **These are not Āshtiyānī's page numbers.**
 
-**Arabic — descendant's sharḥ**
+[Primary Arabic source N](https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/).
 
-> هذا كلّه إذا لم يكن له شيخ مسلك يرشده، وإمام مكمّل يقتدى به، وبيده مقاليد أقفاله وأحواله. وأمّا إذا كان له ذلك، فلكل منزل ومقام بحسب كلّ وقت واستعداد، علوم وميزان يخصّه، ينبّه السالك بحسب تفرّسه مراقي استعداده على تلك العلوم بموازينها.
+| Units | Authorial discussion |
+|---|---|
+| 001–008 | Praise, prophetic inheritance, rational and experiential knowledge, the ancestor's treatise, and the purpose of this commentary |
+| 009–017 | The highest science; music and arithmetic as an example of subordination; unrestricted existence; Avicenna's subject of metaphysics; proper predicates and divine names |
+| 018–022 | Conceptual and assertoric principles, how they become known, tests of unveiling, scientific questions, and the limits of the formal-science analogy |
+| 023–031 | Two technical vocabularies; hypothetical, mental and extramental existence; nafs al-amr; truth; the higher intellect; an Ibn Arabi quotation; criticism of merely relational existentness |
+| 032–040 | Absolute and relational unity, genuine and relational plurality, conceptual abstraction, the Real and creation, divine names and fixed entities, necessity and possibility |
 
-**English translation**
+Modern editorial prefaces, inline explanatory glosses, and footnotes have been **excluded**, not silently translated as Ibn Turka's prose. His genuine nested quotations remain identified. Several defective readings are preserved with interpretative notes; this is not a manuscript-established diplomatic transcription.
 
-> All of this applies when the seeker has no master of the path to direct him, no perfected guide to follow, who holds in his hands the keys to his closures and states. If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity. The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures.
+### Continuous closing commentary: six sections, Āshtiyānī pp.270–274
 
-**Textual notes**
+The source is **A**, the digitized Āshtiyānī text. The final discussion beginning with **أقول** after the ancestor's closing matn is translated continuously across the consulted pages. These sections appear in source order, notwithstanding the historical lettering of the two original pilot IDs:
 
-1. The printed base has **أقفاله وأحواله**; it reports alternatives **إقباله وأحواله** and **أفعاله وأحواله**. The literal English is kept provisionally; “receptivity and states” may make better sense in context, but no independent witness comparison has been performed.
-2. The commentator replies to his grandfather's closing distinction about the role of reason and spiritual guidance: the perfected guide can adapt instruction to the aspirant's capacities, rather than relying on a single unchanging procedure.
-3. **This is not SH-INTRO-001.** It is the first textually verifiable translation completed for the commentary layer, taken from the final page while earlier source pages remain inaccessible.
-
-### SH-061-B · The commentator's conclusion
-
-**Arabic — descendant's sharḥ**
-
-> لكن لتحقيق هذا الكلام وتبيين أحكامه أبحاث طويل الذيل، لا يناسبها أمثال هذه المختصرات، فلنكتف بهذا القدر في هذه التعليقات حامدين لله ربّ العالمين، ومصلّين على محمد وآله الطيّبين الطاهرين وصحبه أجمعين.
-
-**English translation**
-
-> But a full examination of this matter and an exposition of the rules governing it would require lengthy investigations unsuitable for brief works such as this. Let us therefore be content with what has been said in these commentaries, praising God, Lord of the worlds, and invoking blessings upon Muḥammad, his good and pure family, and all his Companions.
-
-**Attribution warning:** The immediately following material headed **شرح (1)** at printed p.274 is in **Sayyid Jalāl al-Dīn Āshtiyānī's** first person, discussing his work of editing and collating the text and dated 1395 AH. It is *not* the grandson's commentary and is **excluded**. The Persian postscript is likewise separate.
-
-## Forward editorial translation queue
-
-| Order | Target | Relation | Current status |
+| Order | Unit | Printed pages | Discussion |
 |---|---|---|---|
-| 1 | Independent commentary introduction, printed pp.3–47 | Before QT-001 | **Reserved.** Needs directly recoverable Arabic before translation. |
-| 2 | Grandson's **أقول** after QT-001 | Explain opening doctrine of tawḥīd | **Reserved** |
-| 3 | Grandson's **أقول** after QT-002–006 | Objections, ḥads, shared meaning of existence, necessity | **Reserved** |
-| 4 | Thematic explanation after QT-007–028 | Necessity, distinctions, determination, unity | **Reserved** |
-| 5 | Thematic explanation after QT-029–046 | Knowledge, names, perfected human, mirror and cognition | **Reserved** |
-| 6 | Explanation after QT-047–060 | Spiritual discipline and intellectual preparation | **Reserved** |
-| 7 | QT-061 closing sharḥ | Guide, measure, and conclusion | **SH-061-A/B translated, pp.274** |
+| 1 | SH-061-C | 270–271 | Why the last subtle point asks about a criterion of knowledge |
+| 2 | SH-061-D | 271 | Immediate experience does not resolve disagreement among experiencers |
+| 3 | SH-061-E | 271–272 | Unequal capacities still leave a need for discriminating standards |
+| 4 | SH-061-F | 272–273 | Intellectual formation and acquired discrimination, illustrated by poetic metre and music |
+| 5 | SH-061-A | 274 | The perfected guide and the measure appropriate to each station |
+| 6 | SH-061-B | 274 | The commentator's own conclusion |
 
-**Translation quality rule:** Do not interpolate the commentary into the author's matn, do not mistake a contemporary editor for the medieval commentator, and do not pad untranslated stretches with summaries advertised as translated source.
+[Primary Arabic A, p.270](https://ablibrary.net/book_content/b/17638/466?lang=ar) · [271](https://ablibrary.net/book_content/b/17638/467?lang=ar) · [272](https://ablibrary.net/book_content/b/17638/468?lang=ar) · [273](https://ablibrary.net/book_content/b/17638/469?lang=ar) · [274](https://ablibrary.net/book_content/b/17638/470?lang=ar).
 
-[Open the three-layer reader](../) · [Structured commentary data](../data/commentary.js) · [Matn apparatus](CRITICAL_APPARATUS.md).
+The long modern Arabic/Persian footnotes and the later Āshtiyānī editorial colophon are excluded. The old pilot sections SH-061-A/B are preserved rather than needlessly renumbered.
+
+## 2. Joseph E. B. Lumbard as a checked standard
+
+Lumbard's “Establishing the Principles,” *An Anthology of Philosophy in Persia*, IV, pp.464–479, is used to check the opening terminology and interpretations where his selection overlaps. The first seven new introductory units contain precise comparator page references. His early matn/commentary selections remain relevant to the subsequent translation.
+
+[Published Lumbard selection](https://traditionalhikma.com/wp-content/uploads/2015/08/Annotated-translation-from-Tamhi%CC%84d-al-Qawa%CC%84%CA%BEid-of-Ibn-Turkah-al-Is%CC%A3faha%CC%84ni%CC%84-by-Joseph-Lumbard.pdf).
+
+The Arabic controls the translation. English wording is independently composed, not reproduced from the modern translation. Technical choices and significant departures are documented in [LUMBARD_COMMENTARY_STANDARD.md](LUMBARD_COMMENTARY_STANDARD.md). No reading in Lumbard's English is counted automatically as an Arabic witness.
+
+## 3. What remains untranslated
+
+The **main intervening commentary on QT-001–QT-060** has not yet been continuously translated. The standalone reader places a conspicuous gap between SH-INTRO-040 and the closing discussion. A translated beginning and ending must not be mistaken for a completed whole work.
+
+The predecessor's 61-unit *Qawāʿid* matn remains separate, not 61 additional translated sections of the grandson's commentary. QT-059's previously reported source omission remains noted and deferred; it has not been reconstructed from commentary or speculation.
+
+## 4. Reader and files
+
+The dedicated [commentary reader](../commentary.html) opens at the beginning, supports Arabic/English visibility, normal and continuous reading, source links, notes, bookmarks, search, and a browser-generated bilingual Markdown export. The main reader's **Together** view displays the six closing sections under QT-061; **Sharḥ** opens the full commentary workspace.
+
+Data files:
+- [Introduction 001–010](../data/commentary-introduction-1.js)
+- [Introduction 011–022](../data/commentary-introduction-2.js)
+- [Introduction 023–032](../data/commentary-introduction-3.js)
+- [Introduction 033–040](../data/commentary-introduction-4.js)
+- [Closing discussion C–F](../data/commentary-conclusion.js), with [preserved pilot A–B](../data/commentary.js)
+- [Integrated corpus and coverage metadata](../data/commentary-corpus.js)
+
+Deterministic corpus and simulated reader tests are in [qa/check-commentary.mjs](../qa/check-commentary.mjs). A test suite's presence is not evidence that its latest run passed; consult the actual workflow result. A real-device iPhone Safari visual acceptance test is not claimed.
+
+**Release distinction:** the consulted online authorial introduction and concluding discussion are translated; the complete *Tamhīd* is **not yet finished**.
