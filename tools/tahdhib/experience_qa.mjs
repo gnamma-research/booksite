@@ -3,8 +3,8 @@ const origin=process.env.TAHDHIB_QA_BASE||'http://127.0.0.1:8765/';
 const browser=await chromium.launch({headless:true});
 const assert=(value,message)=>{if(!value)throw Error(message)};
 const routes={
-  kalam:'texts/al-taftazani/tahdhib-al-kalam/edition/',
-  logic:'texts/al-taftazani/tahdhib-al-mantiq/edition/'
+  kalam:'texts/al-taftazani/tahdhib-al-kalam/edition/?legacy-controls=1',
+  logic:'texts/al-taftazani/tahdhib-al-mantiq/edition/?legacy-controls=1'
 };
 const failures=[];
 async function check(kind,size){
