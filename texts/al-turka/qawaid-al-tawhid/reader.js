@@ -85,7 +85,7 @@ function renderUnit(u,index,continuous){
  const related=byMatn.get(u.id)||[];
  const matnLayer=state.layer!=="sharh";
  const commentaryLayer=state.layer!=="matn";
- const heading='<div class="section-meta"><span>'+esc(u.id)+'</span><span>ORIGINAL MATN</span><a href="'+safeUrl(u.url)+'" target="_blank" rel="noopener noreferrer">Āshtiyānī p. '+esc(u.pages[0])+'</a>'+(related.length?'<span class="small-pill">'+related.length+' sharḥ excerpt'+(related.length===1?"":"s")+'</span>':"")+'</div>';
+ const heading='<div class="section-meta"><span>'+esc(u.id)+'</span><span>'+(matnLayer?'ORIGINAL MATN':'LINKED COMMENTARY')+'</span><a href="'+safeUrl(u.url)+'" target="_blank" rel="noopener noreferrer">Āshtiyānī p. '+esc(u.pages[0])+'</a>'+(related.length?'<span class="small-pill">'+related.length+' sharḥ excerpt'+(related.length===1?"":"s")+'</span>':"")+'</div>';
  const notes=matnLayer?notesMarkup([...(u.notes||[]),...(u.variants||[]).map(v=>v.lemma+" / "+v.other+": "+v.remark)],"Matn notes and readings"):"";
  const matnHtml=matnLayer?'<div class="matn-body"><h3>'+esc(u.title)+'</h3>'+textPair(u.arabic,u.english)+'</div>':"";
  const commHtml=commentaryLayer?(related.length?'<div class="commentary-list">'+related.map(renderCommentary).join("")+'</div>':
@@ -216,7 +216,6 @@ function exportPersonal(){
 }
 document.addEventListener("click",(e)=>{
  const b=e.target.closest("button");if(!b)return;
- if(b.dataset.jumP!==undefined)return; // deliberate no-op for unsupported mixed-case attrs
  if(b.hasAttribute("data-jump")){const i=Number(b.dataset.jump);if(Number.isFinite(i)&&i>=0){closeSheet();go(i);}return;}
  if(b.dataset.layer)chooseLayer(b.dataset.layer);
  if(b.hasAttribute("data-save"))toggleSave(b.dataset.save);
