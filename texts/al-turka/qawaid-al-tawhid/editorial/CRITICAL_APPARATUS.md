@@ -930,7 +930,7 @@ Every item below represents what the current working edition **records**. It is 
 
 ---
 
-### QT-059 — Sense and intellect are preparatory causes in both paths; the effusion of knowledge is from the First Principle [LACUNOSE]
+### QT-059 — Sense and intellect prepare knowledge in both paths (surviving text; source omission noted)
 
 - **Location:** Āshtiyānī pp. 262–263–264. **Quoted Arabic incipit:** وما قيل إنّ علوم النظّار مأخوذة من الحواسّ وعلوم أصحاب المجاهدة مأخوذة من المبدأ الفيّاض فليس ب…
 - **Source link:** https://ablibrary.net/book_content/b/17638/458?lang=ar. **Editorial classification:** provisional quotation from one digitized printed edition; no independent photographic or manuscript collation.
@@ -939,7 +939,7 @@ Every item below represents what the current working edition **records**. It is 
 1. **reported-lacuna** — lemma: `The quoted matn is incomplete in the printed transmission` ; alternative/observation: `More than one page reportedly omitted by copyists`.
    Editorial Persian n.1 on pp.262–263, not a conjectural fill or translated commentary. **Do not treat as a normal variant.** **Anchor note:** this is a descriptive or composite issue, not a literal continuous lemma.
 
-**Specific critical judgement:** MAJOR LACUNA. Āshtiyānī's editorial note reports an omission exceeding a page of the author's words in its exemplars around pp.262–264. No reconstruction is licensed, and the grandson's later explanatory paragraphs are not the grandfather's exact lost wording.
+**Specific critical judgement, 3 Nov 2026:** Retain the entire surviving QT-059 quotation and translation. Āshtiyānī's previously transcribed note reportedly identifies omitted ancestor text around pp.262–264; no replacement is recoverable in our working transcription. A fresh attempt to open the online text pages failed, so that report was not independently verified during this check. Mark the omission here **for reference only; reconstruction deferred**. Do not splice the grandson's explanatory words into the matn. This note does not prevent use of the extant bilingual reader.
 
 
 ---
