@@ -45,6 +45,17 @@ async function check(kind,size){
   const sb=await page.locator('#u-KAL-016-01 .arabic').textContent();
   assert(sa.includes('...')&&sb.includes('...'),'source-critical Study text lost its continuation markers');
  }
+ // Bilingual source-linked thematic index is editorial and independent of the authorial headings.
+ assert(await page.locator('.gn-subject-button').count()===1,'subject index button missing');
+ await page.locator('.gn-subject-button').click();
+ assert(await page.locator('#gn-subject-overlay:not([hidden]) .gn-subject-entry').count()>=10,'subject index topics missing');
+ await page.locator('#gn-subject-query').fill(kind==='kalam'?'Imamate':'syllogism');
+ assert(await page.locator('#gn-subject-overlay .gn-subject-entry').count()>0,'subject index filtering failed');
+ const firstTopic=page.locator('#gn-subject-overlay .gn-subject-entry').first();
+ await firstTopic.locator('summary').click();
+ assert(await firstTopic.locator('.gn-subject-locator').count()>0,'subject index must link to source units');
+ await page.locator('.gn-subject-close').click();
+ assert(await page.locator('#gn-subject-overlay[hidden]').count()===1,'subject index did not close');
  await page.locator('[data-view="ar"]').click();
  assert(await page.locator('#flow-passages[data-view="ar"]').count()===1,'flow Arabic-only display not active');
  const first=kind==='kalam'?'u-KAL-015-04':'u-L-01';
