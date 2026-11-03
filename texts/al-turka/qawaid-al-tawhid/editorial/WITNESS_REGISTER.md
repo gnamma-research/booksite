@@ -202,3 +202,13 @@ This section records **publication verification, not textual collation**. Number
 
 **Per-lemma analytical apparatus:** [CRITICAL_APPARATUS.md](CRITICAL_APPARATUS.md). All 69 provisional variant, conjecture and transmission problem records are tagged with their evidentiary type. The QT-059 substantial loss remains a **reported** loss pending manuscript verification. No stemma or restored missing text is claimed.
 
+
+## Independently verified original-matn manuscript identities and shared incipit (3 Nov 2026)
+
+The three *separate* Fahares catalogue entries (not just the derivative work summary) are: [M₁ alif-28](https://www.fahares.net/m/242468) with named scribe and copy date **851 AH** (17 lines, 10.5×18cm); [M₂ Astan Quds 812](https://www.fahares.net/m/242469) dated **1067 AH**, 18 folios/18 lines; [M₃ Astan Quds 822](https://www.fahares.net/m/242470) undated. The work summary [Fahares 51946](https://www.fahares.net/w/51946) explicitly lists all three.
+
+**Do not conflate catalogue text with photographed collation:** All three pages reproduce the *same work-level incipit* «الحمد لله رب العالمين...» and explicit «وهذا آخر ما أردنا...». They are not three separate paleographic readings. The incipit differs from the current Āshtiyānī textual base «الحمد لوليّه ...». That is an important **catalogue-transcribed variant candidate** in QT-001, **not yet a confirmed manuscript reading**, and cannot determine which original reading to choose.
+
+**Separate ancestor-matn printed comparator P₁** — Majīd Hādīzādeh, ed., *Qawāʿid al-Tawḥīd*, *Nuṣūṣ wa-Rasāʾil min Turāth Iṣfahān al-ʿIlmī al-Khālid*, IV:37–72. Confirmed against the page image of the bibliography [*al-Khizāna* 2/4 (2018), printed p.521 entry 301](https://bibliography.mk.iq/files/0080f66f58b21603.pdf). The **36 text pages not yet obtained**; no assertion that it repairs QT-059.
+
+All provenance and explicit text boundaries, a short incipit/excipit comparison, manuscript access route and request wording are now in [MANUSCRIPT_COLLATION_DOSSIER.md](MANUSCRIPT_COLLATION_DOSSIER.md). [COLLATION_REGISTER.json](COLLATION_REGISTER.json) contains **61 unresolved manuscript collation work items** instead of filled-in guessed witness readings.
