@@ -1,0 +1,17 @@
+/* Only Tahdhib content adaptation. Menu geometry, icons and controls are Daruri's. */
+.th-source-locator{font:600 11px/1.6 var(--sans);color:var(--accent);margin:0 0 14px}
+.th-contents-part{margin:14px 0;border-bottom:1px solid var(--border);padding:10px 0}
+.th-contents-part>summary{font:600 20px/1.5 var(--serif);cursor:pointer;margin-bottom:14px}
+.th-contents-part .jump-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.th-apparatus-access{font:500 11px/1.5 var(--sans);color:var(--accent);background:none;border:0;border-bottom:1px solid var(--border);padding:6px 0;margin-top:14px;cursor:pointer}
+.th-dictionary-status{font:500 12px/1.6 var(--sans);color:var(--muted)}
+#reader .passage-grid{scroll-margin-top:90px}
+body.focus-level-3 .gn-continuous-section{margin-bottom:24px;padding-bottom:20px;border-bottom:0}
+body.focus-level-3 .gn-continuous-section>.reader-heading{margin:0 0 16px}
+body.focus-level-3 .gn-continuous-section>.reader-heading .eyebrow{display:none}
+body.focus-level-3 .gn-continuous-part-heading{margin-top:18px!important;padding-top:10px!important}
+body.focus-level-3 .gn-continuous-section .passage-grid{margin-top:0}
+body.focus-level-3 #mainContent{padding-bottom:130px!important}
+@media(max-width:590px){.th-contents-part .jump-list{grid-template-columns:1fr}body.focus-level-3 .gn-continuous-part-heading{font-size:21px!important}}
+@media print{.th-apparatus-access{display:none}}
+#reader .gn-paragraph-locator{font:600 10px/1.5 var(--sans);color:var(--accent)}
