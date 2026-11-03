@@ -1272,3 +1272,76 @@ The **original combined-edition title page explicitly names** `Ḥāshiyat al-Mu
 **Next sequential work:** printed II:287–292, continuing the issue of inward `taṣdīq`, verbal `iqrār`, legal rulings, *ʿamal*, faith and its contrary. The higher editorial need is full, uninterrupted Arabic/English source transcription and **individual lower-note segmentation** across both volumes, with source-witness boundaries and authorial classification. Preserve original rhetorical particles, scriptural quotations, analogies and school attributions; do not relabel 5 lower excerpts as 5 finished Wasīm notes.
 
 **At the end of Stage31**, publish another standalone `editorial/2026-11-03_STAGE31_FULL_HANDOFF.md` with the entire cumulative master contents and append the new stage to `editorial/2026-11-02_FULL_CUMULATIVE_HANDOFF.md`. Retain Stage26–Stage30 standalone handoffs; never overwrite historical snapshots. Only increase the certified-page counter when EVERY original upper and lower segment on that printed page is textually complete and independently critically verified.
+
+
+---
+
+## 35. Stage 31 — a 100-page original-source workbench and direct translation II:287–292 (3 November 2026)
+
+### A. User request, what was achieved, and crucial limitation
+
+**User explicitly requested “translate at least 100 pages and collect some Wasīm text for translation.”** The original source is the user-provided image-only, 632-physical-page `taqribmaram(2).pdf`. A true all-register 100-page English translation would require every upper and lower printed original Arabic word, source distinction, full note-unit count and independent checking; that work has NOT been finished in this session. The deliverables below document precisely the actual progress, not a false claim to have translated 100 complete pages.
+
+**Verified 100-page original source packet:** `/mnt/data/Taqrib_II216-II315_100_Page_Primary_Source.pdf`, printed volume II:216–315 (100 exact original numbered source pages, physical original PDF pages 511–610). Created with PyMuPDF by selecting and preserving each original photographed source page. The resulting PDF contains **100 source-only scanned pages**, approximately 3.1 MB, with six sampled pages' pixels checked against the user's original. It is **not a translated PDF**.
+
+**New working anthology of *actual previously source-quoted bilingual passages*, not whole translated pages**:
+- `editorial/2026-11-03_100_PAGE_WORKING_ANTHOLOGY_PART_A_II216_II265.md`, 50 printed pages, **247 existing source-language/English excerpt occurrences** on **43/50 printed positions**, **seven pages with no direct bilingual source excerpt**. Editorial English page guides are segregated and labelled **NOT translation**. It does not claim every original paragraph is represented.
+- `editorial/2026-11-03_100_PAGE_WORKING_ANTHOLOGY_PART_B_II266_II315.md`, remaining 50 printed positions, **148 source-language/English excerpt occurrences** on **29/50 printed positions**, **21 pages with no direct bilingual source excerpt**. All remaining argument summaries are segregated and labelled guides, not source translations.
+- `editorial/2026-11-03_100_PAGE_TRANSLATION_COVERAGE_AUDIT.csv` / `.md`: full original **100-row** source-page crosswalk and status. Combined **72/100 pages with ≥1 directly translated excerpt**, **28/100 with no direct bilingual original quotation** (in the selected dataset), **395 excerpt occurrences** (which can include repeated or overlapping original phrases), approx. **2,921 occurrences of Arabic source words** across those excerpts, with overlap counted more than once. This is **NOT** the number of unique translated words and NOT an estimate of whole-source word coverage. **0/100 printed pages** are fully translated including all upper and all marginal notes, author-verified and critically certified. Count of previously translated excerpts is NOT a substitute for 100 full translations.
+
+### B. New direct original-source translation at Stage31, II:287–292
+
+Original printed II:287–292 = original source physical PDF images 582–587. All six original pages were actually rendered and inspected, with enlarged particular attention to II:287–291. The topic continues the relation of logical `taṣdīq`, knowledge, `idhʿān`, `qabūl`, and voluntary acceptance within religious `īmān`.
+
+- `continuous-II287-II292-faith-assent-choice.js`: **29** newly transcribed **short selected original Arabic passages** with close English from the actual upper printed source; attribution markers preserve embedded Taftāzānī parenthetical lemmata versus explanatory Sanandajī source and quoted scripture.
+- `source-marginals-II287_II292-author-unassigned.js` [correct path `source-marginals-II287-II292-author-unassigned.js`]: **four** new original lower-register Arabic and English partial selected passages, drawn from printed II:289–291, with ALL writers **UNASSIGNED**. Their argument draws a sharp distinction between two possible replies to the objector who says that faith must itself be an elective act if faith is commanded: (a) the commanded object can involve voluntary preliminary acts, although resulting faith may not be directly chosen; (b) strictly speaking what is commanded may be the **preliminaries/acquisition**, not faith itself. These are the original first-pass lower excerpt readings, not full notes and NOT securely Wasīm.
+- `editorial/2026-11-03_STAGE31_II287_II292_ACTUAL_TRANSLATIONS_AND_UNASSIGNED_MARGINS.md`: all 29 original source upper snippets and four source lower snippets, full original scan page locators, close English, and an explicit argument guide distinguishing recognizing a revealed truth from accepting it, the status of `taṣdīq` in logic, epistemic certainty obtained without choice, and the role of commanded acts in religion.
+- The original lower source at printed II:287 includes a **Persian-language explanation** within the Arabic marginal region; it was NOT conjecturally translated or credited to Wasīm. Persian and mixed-language passages require separate transcription and historically correct identification before critical publication.
+
+**Progress correction:** The project previous **615/615 indexed** and **0/615 entirely critically certified** figures stay **UNCHANGED**. The previous **601/615 English page-presence** figure also remains a mere guide/selection location metric and is NOT a percentage of the original Arabic actually translated.
+
+### C. Wasīm source-collection effort and new independent print leads
+
+**Original scanned title page** explicitly announces both `حاشية المحاكمات للشيخ محمد وسيم الكردستاني` and `حواشي متفرقة لبعض الأفاضل`. Hence one must not assign every lower printed sentence to Wasīm merely by typography.
+
+**New bibliographic lead (Turkish official catalogue):** at the Süleymaniye Library, Tırnovalı collection, the same 1318 AH printed 280+335-page work is analytically catalogued separately under `Takrîbu’l-Merâm` **01048-001 / record 338329** and `Hâşiyetü’l-Muhâkemât` by Muḥammad Wasīm **01048-002 / record 338330**. Catalogue URL: https://portal.yek.gov.tr/works/search/full/647600?search_form_type=ALL_FIELDS&search_key_type=2 . This is an **independently catalogued print witness/work**, not evidence of a separately isolated handwritten Wasīm text or a page-by-page authorship key. Dr. ʿAbd al-Wahhāb's 1901 Cairo volume-II catalogue also records Sanandajī alongside Wasīm and further other glosses, https://drabusulaimanlibrary.com/bib/15085 . A modern Tunisian library record describes another 2009 edition including further marginal texts attributed to al-Siyālkūtī and al-Ḥalabī, but no source-to-source collation was done.
+ 
+**New Wasīm source study:** `editorial/2026-11-03_WASIM_SOURCE_COLLECTION_NEW_CATALOGUE_LEADS_AND_II287_292_GLOSSES.md`: verified original title, official library/citation leads, the one externally attributed Wasīm quotation and its unresolved reported II:117 source location, four newly gathered and translated *UNASSIGNED* lower passages from II:289–291, and the separate Persian issue at II:287.
+
+**Author-specific registry:** `editorial/2026-11-03_WASIM_PARALLEL_NOTE_ATTRIBUTION_REGISTER.csv` now has **26 selected lower excerpt rows**, of which **1** is explicitly attributed to Wasīm by a secondary 2022 writer but was **NOT** located on the user's original scan at reported II:117; **25** are source-read lower fragments with individual writer **UNASSIGNED**. **ZERO** Wasīm note passages are directly identified from supplied original as specifically his, and **ZERO** complete Wasīm notes are critically certified. Total individual Wasīm note denominator is unknown. The `wasim-apparatus.html` page now exposes all 26 with attribution filters. Absolutely do not report “26 Wasīm notes translated” or “one verified Wasīm page”.
+
+### D. User-visible reader progress and source badges
+
+The NAMA `index.html` now loads two Stage31 source modules, links the Stage31 bilingual source dossier, the two-part 100-source-page partial anthology, the 100-row audit, the Wasīm source-collection report, and links this **full cumulative Stage31 handoff**. The previously installed reader shows separate bars for **615/615 indexed** and **0/615 all-register independent critical certification**, and the Wasīm note-unit bar remains **indeterminate**. Its Stage31 paragraph specifies **72/100 original pages with some directly translated source excerpt, zero completely translated original printed pages**; this is a separate, measured subcorpus statement, not a translation percentage.
+
+### E. Source-critical intellectual findings of Stage31
+
+1. **Recognition versus acceptance:** the *taṣdīq* argument invokes Qurʾānic cases of people recognizing a prophet's truth while persisting in refusal. Thus *ʿilm/maʿrifa* without `idhʿān` and `qabūl` is not automatically `īmān`.
+2. **Interpretation of earlier terms:** lexical use of *knowledge* or *recognition* by earlier authorities is understood, on the source's account, as *ʿilm taṣdīqī* or knowledge accompanied by assent rather than the bare presence of cognitive information.
+3. **Volitional difficulty:** mental certainty can arise without a deliberate choice; nevertheless an agent may choose acts **leading to it**, including inquiry, attention, organizing premises and acquisition. A lower note juxtaposes two responses that MUST remain distinct in translation: the commanded faith has voluntary preliminaries versus the command strictly targets its elective preliminaries.
+4. **Logical *taṣdīq* and religious faith:** the source compares formal assent in logic with faith requiring voluntary acceptance; reasoning from the cases of angels and prophets tests any universal assumption that the same kind of acquisition is necessary for all affirmation.
+5. **Other marginal languages:** the original source includes Persian within its lower textual stream; an adequate bilingual edition may need a Persian-to-English sublayer instead of treating every printed marginal line as Arabic Wasīm prose.
+
+### F. Strict completion state (no progress inflation)
+
+| Counter | This Stage31 checkpoint |
+|---|---|
+| All numbered printed positions indexed | **615/615** |
+| Page positions with at least some historical English orientation or short excerpt | **601/615** (position presence only) |
+| All-upper + all-margins fully transcribed/translated/attributed, independently twice proofed and source-collated | **0/615** |
+| New original 100-page source packet | **II:216–315**, 100 original pages physically verified |
+| 100-page subcorpus pages with any direct bilingual source quote | **72/100**, NOT whole page translation |
+| 100-page subcorpus pages without any such source quote | **28/100** |
+| 100-page subcorpus excerpt occurrences | **395**, substantial overlaps possible |
+| Approximate Arabic word occurrences across those source excerpts | **2,921**, with overlapping phrases counted again; no total original word denominator |
+| New Stage31 direct upper bilingual phrase records | **29**, II:287–292 |
+| New Stage31 lower source excerpts with author unassigned | **4**, II:289–291 |
+| Primary-source-matched positive Wasīm quote units | **0** |
+| Externally attributed Wasīm quotation, exact original source location unresolved | **1** |
+| Complete, independently critically certified Wasīm note units | **0**, total denominator unknown |
+
+### G. Next actual operation, not merely another index
+
+A genuine 100-page translation is still **UNFINISHED**. Highest priority is a continuous upper source transcription/English pass with all lower note-unit segmentation and translation, ideally original II:287–292 first (where four lower argument fragments are already read), then extending through II:293–315 and backward as necessary to reach 100 genuinely fully translated pages. Preserve source speaker, original page joins, wording and authorial/secondary provenance. A high page-presence statistic is not proof of a complete translation.
+
+**Full handoff rule:** Every new subsequent stage must create a standalone complete cumulative historical handoff, retaining earlier Stage26–31 standalone snapshots and updating `editorial/2026-11-02_FULL_CUMULATIVE_HANDOFF.md`. The critical certification counter increases only after all original upper and lower material of that page is completely translated, correctly attributed and independently verified. The quotation reported by a secondary source as Wasīm II:117 remains **NOT source-matched** pending independent collation.
