@@ -55,6 +55,14 @@ async function check(kind,size){
  const deaccent=x=>x.normalize('NFD').replace(/[\u064b-\u065f\u0670\u06d6-\u06ed]/g,'').normalize('NFC');
  assert(deaccent(assisted)===deaccent(source),'assist must not change source letters');
  assert(await page.locator('#gn-vowelling-status:not([hidden])').count()===1,'partial voice disclaimer missing');
+ const machineReady=await page.evaluate(()=>window.GnammaTahdhibExperience?.getPrefs().machineAvailable);
+ assert(machineReady,'Full machine vowel overlay unavailable despite successful source-hash generation');
+ await page.locator('[data-vowel-mode="machine"]').click();
+ const computer=await page.locator('#flow-'+first+'-ar').textContent();
+ assert(deaccent(computer)===deaccent(source),'Machine overlay changed canonical source letters');
+ assert(await page.locator('body[data-vocalization="machine"]').count()===1,'Machine reading mode not enabled');
+ await page.locator('[data-vowel-mode="assisted"]').click();
+
  await page.locator('details.gn-type-options summary').click();
  await page.locator('#gn-ar-font').selectOption('scheherazade');
  assert(await page.locator('html[data-arabic-font="scheherazade"]').count()===1,'Arabic font control failed');
@@ -82,6 +90,20 @@ async function check(kind,size){
  await page.locator('[data-reader-mode="study"]').click();
  assert(await page.locator('#passages:not([hidden]) .clause').count()===counts,'study apparatus disappeared');
  assert(await page.locator('#flow-passages[hidden]').count()===1,'flow surface not hidden in study');
+ assert(await page.evaluate(()=>!!window.GnammaTahdhibTrail),'Reading history controller missing');
+ const current=await page.evaluate(()=>window.GnammaTahdhibReader.getState().page);
+ await page.locator('#dock-next').click();
+ const nextPage=await page.evaluate(()=>window.GnammaTahdhibReader.getState().page);
+ assert(nextPage===current+1,'Dock navigation did not advance the reader');
+ const trail=await page.evaluate(()=>window.GnammaTahdhibTrail.snapshot());
+ assert(trail.back.length>0,'Back reading history was not recorded');
+ await page.locator('.gn-trail-controls button[aria-label="Back to previous reading location"]').click();
+ assert(await page.evaluate(()=>window.GnammaTahdhibReader.getState().page)===current,'Back reading history navigation failed');
+ await page.locator('#export').click();
+ await page.locator('.gn-machine-pdf').waitFor({state:'visible',timeout:15000});
+ assert((await page.locator('.gn-machine-pdf').getAttribute('href')).includes('vocalization/'),'Published machine-vowelled PDF link missing');
+ await page.locator('#export-close').click();
+
  const target=kind==='kalam'?'KAL-077.03':'L.17';
  const issue=await page.evaluate((id)=>window.GNAMMA_CRITICAL_CORPUS.open_issues.some(x=>x.ids.includes(id)),target);
  assert(issue,'textual uncertainty lost during feature migration');
