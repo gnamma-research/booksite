@@ -6,10 +6,10 @@
     "page": 281,
     "pdf": 576,
     "category": "page-draft",
-    "quality": "section-level-source-navigation-NOT-clause-translation",
-    "title": "Repentance and commanding right, forbidding wrong",
+    "quality": "source-photo-corrected-stage30-topic-guide-only",
+    "title": "Conditions of commanding right and forbidding wrong",
     "arabic": "",
-    "english": "A new chapter defines repentance as return, examines conditions for repentance, remorse, cessation and restitution, then transitions into the obligations of commanding right and forbidding wrong. The source contains a long lower-register argument.",
+    "english": "This original printed page still belongs to the prior discussion of commanding right and forbidding wrong. It elaborates types of prescribed good and reprehensible acts and the conditions of knowledge, a possible effect and the absence of overriding harm. Its lower register contains a separate long explanation. The faith section has NOT begun on this page.",
     "citation": "Original two-volume Taqrīb printed II:281, facsimile PDF image 576. Section context checked using original photos and/or printed table of contents.",
     "notes": [
       {
@@ -19,6 +19,10 @@
       {
         "type": "Source voices",
         "text": "Full upper Sanandajī prose, embedded Tahdhīb lemmata and every lower marginal note remain to be separately transcribed and critically translated."
+      },
+      {
+        "type": "Stage30 source correction",
+        "text": "Original high-resolution primary source reinspection 3 November 2026; keeps topic and physical page boundaries precise. This is a guide, not full original-text transcription."
       }
     ],
     "layers": {}
@@ -29,10 +33,10 @@
     "page": 282,
     "pdf": 577,
     "category": "page-draft",
-    "quality": "section-level-source-navigation-NOT-clause-translation",
-    "title": "Original definition of faith (īmān) as taṣdīq",
-    "arabic": "فصل في حقيقة الإيمان هو في عرف أهل اللغة التصديق",
-    "english": "**Original-source marker:** Original definition of faith (īmān) as taṣdīq. The authentic section opening defines īmān in language as assent. The ensuing detailed disputes distinguish inner assent, verbal profession, deeds and legal consequences, and investigate what counts as disbelief, belief's possible increase or decrease and the status of sinners.",
+    "quality": "source-photo-corrected-stage30-topic-guide-only",
+    "title": "The end of commanding right; original faith section begins near page foot",
+    "arabic": "فصل في حقيقة الإيمان",
+    "english": "Most of the upper page continues commanding right and forbidding wrong, including disputed legal and textual claims. Only near the END of the upper register does an original فصل begin on the reality of īmān as taṣdīq. The printed lower notes initially continue the prior topic. Thus lower material on this page must not automatically be attached to the faith chapter.",
     "citation": "Original two-volume Taqrīb printed II:282, facsimile PDF image 577. Section context checked using original photos and/or printed table of contents.",
     "notes": [
       {
@@ -42,6 +46,10 @@
       {
         "type": "Source voices",
         "text": "Full upper Sanandajī prose, embedded Tahdhīb lemmata and every lower marginal note remain to be separately transcribed and critically translated."
+      },
+      {
+        "type": "Stage30 source correction",
+        "text": "Original high-resolution primary source reinspection 3 November 2026; keeps topic and physical page boundaries precise. This is a guide, not full original-text transcription."
       }
     ],
     "layers": {}
@@ -52,10 +60,10 @@
     "page": 283,
     "pdf": 578,
     "category": "page-draft",
-    "quality": "section-level-source-navigation-NOT-clause-translation",
-    "title": "The reality of faith, assent, deeds and unbelief",
+    "quality": "source-photo-corrected-stage30-topic-guide-only",
+    "title": "Affirmation of what is necessarily known to be prophetic teaching; the role of verbal profession",
     "arabic": "",
-    "english": "The authentic section opening defines īmān in language as assent. The ensuing detailed disputes distinguish inner assent, verbal profession, deeds and legal consequences, and investigate what counts as disbelief, belief's possible increase or decrease and the status of sinners.",
+    "english": "The source defines technical faith as affirming the Prophet in matters necessarily known to be from his teaching; it distinguishes general assent from case-by-case details. It reports positions requiring verbal iqrār and distinguishes a person's status before God from worldly legal standing. It also introduces the formula of assent, profession and works.",
     "citation": "Original two-volume Taqrīb printed II:283, facsimile PDF image 578. Section context checked using original photos and/or printed table of contents.",
     "notes": [
       {
@@ -65,6 +73,10 @@
       {
         "type": "Source voices",
         "text": "Full upper Sanandajī prose, embedded Tahdhīb lemmata and every lower marginal note remain to be separately transcribed and critically translated."
+      },
+      {
+        "type": "Stage30 source correction",
+        "text": "Original high-resolution primary source reinspection 3 November 2026; keeps topic and physical page boundaries precise. This is a guide, not full original-text transcription."
       }
     ],
     "layers": {}
@@ -75,10 +87,10 @@
     "page": 284,
     "pdf": 579,
     "category": "page-draft",
-    "quality": "section-level-source-navigation-NOT-clause-translation",
-    "title": "The reality of faith, assent, deeds and unbelief",
+    "quality": "source-photo-corrected-stage30-topic-guide-only",
+    "title": "The component-parts objection and the foundation versus perfection of faith",
     "arabic": "",
-    "english": "The authentic section opening defines īmān in language as assent. The ensuing detailed disputes distinguish inner assent, verbal profession, deeds and legal consequences, and investigate what counts as disbelief, belief's possible increase or decrease and the status of sinners.",
+    "english": "The upper source reports contrasting school classifications of one who abandons deeds (Muʿtazilites and Khārijites), then poses the part/whole objection: if works are constitutive of faith, how can omission leave faith intact? It answers by distinguishing the foundation for salvation from the perfected form. The lower register examines iqrār as a possible legal rather than constitutive condition.",
     "citation": "Original two-volume Taqrīb printed II:284, facsimile PDF image 579. Section context checked using original photos and/or printed table of contents.",
     "notes": [
       {
@@ -88,6 +100,10 @@
       {
         "type": "Source voices",
         "text": "Full upper Sanandajī prose, embedded Tahdhīb lemmata and every lower marginal note remain to be separately transcribed and critically translated."
+      },
+      {
+        "type": "Stage30 source correction",
+        "text": "Original high-resolution primary source reinspection 3 November 2026; keeps topic and physical page boundaries precise. This is a guide, not full original-text transcription."
       }
     ],
     "layers": {}
@@ -98,10 +114,10 @@
     "page": 285,
     "pdf": 580,
     "category": "page-draft",
-    "quality": "section-level-source-navigation-NOT-clause-translation",
-    "title": "The reality of faith, assent, deeds and unbelief",
+    "quality": "source-photo-corrected-stage30-topic-guide-only",
+    "title": "Three investigations of faith: the heart, cognition and works",
     "arabic": "",
-    "english": "The authentic section opening defines īmān in language as assent. The ensuing detailed disputes distinguish inner assent, verbal profession, deeds and legal consequences, and investigate what counts as disbelief, belief's possible increase or decrease and the status of sinners.",
+    "english": "The upper source announces three inquiries: whether faith is an act of the heart rather than tongue, assent rather than bare knowledge, and whether deeds are constitutive. It adduces scripture about faith in hearts and prophetic statements on the heart. The lower commentary raises whether assent is an act of cognition or of the heart.",
     "citation": "Original two-volume Taqrīb printed II:285, facsimile PDF image 580. Section context checked using original photos and/or printed table of contents.",
     "notes": [
       {
@@ -111,6 +127,10 @@
       {
         "type": "Source voices",
         "text": "Full upper Sanandajī prose, embedded Tahdhīb lemmata and every lower marginal note remain to be separately transcribed and critically translated."
+      },
+      {
+        "type": "Stage30 source correction",
+        "text": "Original high-resolution primary source reinspection 3 November 2026; keeps topic and physical page boundaries precise. This is a guide, not full original-text transcription."
       }
     ],
     "layers": {}
@@ -121,10 +141,10 @@
     "page": 286,
     "pdf": 581,
     "category": "page-draft",
-    "quality": "section-level-source-navigation-NOT-clause-translation",
-    "title": "The reality of faith, assent, deeds and unbelief",
+    "quality": "source-photo-corrected-stage30-topic-guide-only",
+    "title": "Taṣdīq, iqrār, and the difference between outward words and inward assent",
     "arabic": "",
-    "english": "The authentic section opening defines īmān in language as assent. The ensuing detailed disputes distinguish inner assent, verbal profession, deeds and legal consequences, and investigate what counts as disbelief, belief's possible increase or decrease and the status of sinners.",
+    "english": "The source continues evidence that a verbal profession may secure worldly legal status without proving an inward act of assent. Its technical description of faith includes taṣdīq, idhʿān and qabūl, opposed to denial and rejection. Lower-text objections address whether verbal utterance signifies inward faith even when produced without genuine assent.",
     "citation": "Original two-volume Taqrīb printed II:286, facsimile PDF image 581. Section context checked using original photos and/or printed table of contents.",
     "notes": [
       {
@@ -134,6 +154,10 @@
       {
         "type": "Source voices",
         "text": "Full upper Sanandajī prose, embedded Tahdhīb lemmata and every lower marginal note remain to be separately transcribed and critically translated."
+      },
+      {
+        "type": "Stage30 source correction",
+        "text": "Original high-resolution primary source reinspection 3 November 2026; keeps topic and physical page boundaries precise. This is a guide, not full original-text transcription."
       }
     ],
     "layers": {}
