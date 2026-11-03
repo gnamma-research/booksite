@@ -180,3 +180,26 @@ body[data-reading-style="flow"] .page-strip .page-label{font-size:11px}
  .gn-experience-controls { gap: 4px; }
  .gn-experience-controls .segments button { min-height: 31px;padding:5px 8px; }
 }
+
+
+/* Browser-local Tahdhīb reading trail, aligned to the existing reading toolbar. */
+.gn-trail-controls{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-inline-start:auto}
+.gn-trail-controls>button:disabled{opacity:.35;cursor:default}
+.gn-trail-picker{position:relative}
+.gn-trail-picker>summary{min-height:36px;display:flex;align-items:center;border:1px solid var(--border);border-radius:7px;padding:6px 10px;background:var(--paper);color:var(--ink);font:600 12px/1.3 system-ui;cursor:pointer;list-style:none}
+.gn-trail-picker>summary::-webkit-details-marker{display:none}
+.gn-trail-picker>summary:after{content:'⌄';margin-inline-start:7px;color:var(--muted)}
+.gn-trail-picker[open]>summary{border-color:var(--accent)}
+.gn-trail-sheet{position:absolute;right:0;top:calc(100% + 6px);z-index:45;width:min(350px,calc(100vw - 20px));max-height:min(60vh,400px);display:flex;flex-direction:column;gap:10px;padding:14px;background:var(--paper);border:1px solid var(--border);border-radius:11px;box-shadow:0 12px 40px #0003;color:var(--ink)}
+.gn-trail-sheet>strong{font:650 13px/1.5 var(--gn-en-reader)}
+.gn-trail-list{min-height:0;overflow:auto;scrollbar-width:thin}
+.gn-trail-item{display:block;text-align:start;width:100%;padding:9px;border:0;border-bottom:1px solid var(--border);background:transparent;color:var(--ink);font:12px/1.5 system-ui;cursor:pointer}
+.gn-trail-item:hover,.gn-trail-item:focus-visible{background:var(--wash)}
+.gn-trail-clear{border:0;color:var(--accent);background:transparent;padding:8px;cursor:pointer;text-align:right;font:600 11px system-ui}
+.gn-trail-empty{font:12px/1.6 system-ui;color:var(--muted)}
+@media(max-width:720px){
+ .gn-trail-controls{margin-inline-start:0}
+ .gn-trail-controls>button{padding:6px 8px;font-size:11px}
+ .gn-trail-sheet{right:auto;left:0}
+}
+@media print{.gn-trail-controls{display:none!important}}
