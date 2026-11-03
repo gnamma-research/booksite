@@ -328,10 +328,10 @@
     "page": 235,
     "pdf": 530,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Conditions of prophecy and the prophets' protection",
+    "quality": "corrected-source-image-topic-firstpass",
+    "title": "Prophetic number, angelic protection and the Iblīs objection",
     "arabic": "",
-    "english": "A new section at II:234 treats prerequisites of prophethood, qualities of prophetic knowledge and judgement, prophetic protection from error and sin, miracles and extraordinary phenomena. Detailed subarguments require full continuous transcription.",
+    "english": "The conclusion to the prophetic-protection argument discusses reported numbers of prophets and messengers without treating a report's number as an exhaustive dogmatic inventory. It then turns to the protection of angels, scriptural expressions of angelic obedience and an objection drawn from Iblīs.",
     "citation": "Taqrīb al-Marām, printed II:235, original 632-image source PDF physical page 530; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -341,6 +341,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Correction at Stage23",
+        "text": "The older Stage17 map incorrectly grouped these five pages entirely under general prophetic conditions. Direct original-image reinspection establishes angels/prophets rank and saintly wonders as separate discussions. This record is still not a full page translation."
       }
     ],
     "layers": {}
@@ -351,10 +355,10 @@
     "page": 236,
     "pdf": 531,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Conditions of prophecy and the prophets' protection",
+    "quality": "corrected-source-image-topic-firstpass",
+    "title": "Iblīs and the angels: membership, obedience and rank",
     "arabic": "",
-    "english": "A new section at II:234 treats prerequisites of prophethood, qualities of prophetic knowledge and judgement, prophetic protection from error and sin, miracles and extraordinary phenomena. Detailed subarguments require full continuous transcription.",
+    "english": "The source asks whether the Iblīs story challenges the angels' immunity from disobedience, comparing the scriptural address to angels with the statement that Iblīs was from the jinn. It then turns to comparing the merits of prophets and angels, a dispute continued on the following pages.",
     "citation": "Taqrīb al-Marām, printed II:236, original 632-image source PDF physical page 531; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -364,6 +368,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Correction at Stage23",
+        "text": "The older Stage17 map incorrectly grouped these five pages entirely under general prophetic conditions. Direct original-image reinspection establishes angels/prophets rank and saintly wonders as separate discussions. This record is still not a full page translation."
       }
     ],
     "layers": {}
@@ -374,10 +382,10 @@
     "page": 237,
     "pdf": 532,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Conditions of prophecy and the prophets' protection",
+    "quality": "corrected-source-image-topic-firstpass",
+    "title": "Ranking angels, prophets and human beings",
     "arabic": "",
-    "english": "A new section at II:234 treats prerequisites of prophethood, qualities of prophetic knowledge and judgement, prophetic protection from error and sin, miracles and extraordinary phenomena. Detailed subarguments require full continuous transcription.",
+    "english": "The text reports rival positions on whether angels outrank human prophets and distinguishes the most excellent of angels, prophets and other human beings. It argues from human susceptibility to appetite and anger, the achievement of obedience amid impediments, the angels' prostration to Adam and the scriptural honour granted to Adam's descendants.",
     "citation": "Taqrīb al-Marām, printed II:237, original 632-image source PDF physical page 532; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -387,6 +395,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Correction at Stage23",
+        "text": "The older Stage17 map incorrectly grouped these five pages entirely under general prophetic conditions. Direct original-image reinspection establishes angels/prophets rank and saintly wonders as separate discussions. This record is still not a full page translation."
       }
     ],
     "layers": {}
@@ -397,10 +409,10 @@
     "page": 238,
     "pdf": 533,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Conditions of prophecy and the prophets' protection",
+    "quality": "corrected-source-image-topic-firstpass",
+    "title": "Further arguments over the relative rank of angels and humans",
     "arabic": "",
-    "english": "A new section at II:234 treats prerequisites of prophethood, qualities of prophetic knowledge and judgement, prophetic protection from error and sin, miracles and extraordinary phenomena. Detailed subarguments require full continuous transcription.",
+    "english": "The upper original continues the comparative discussion of obedient angels versus human beings, appealing to revelatory passages and to the value of knowing versus learning, while testing whether the prostration to Adam proves a general hierarchical ranking. Objections and replies are entangled with the upper printed text.",
     "citation": "Taqrīb al-Marām, printed II:238, original 632-image source PDF physical page 533; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -410,6 +422,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Correction at Stage23",
+        "text": "The older Stage17 map incorrectly grouped these five pages entirely under general prophetic conditions. Direct original-image reinspection establishes angels/prophets rank and saintly wonders as separate discussions. This record is still not a full page translation."
       }
     ],
     "layers": {}
@@ -420,10 +436,10 @@
     "page": 239,
     "pdf": 534,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Conditions of prophecy and the prophets' protection",
+    "quality": "corrected-source-image-topic-firstpass",
+    "title": "Saintly wonders (karāmāt) distinguished from prophetic miracles",
     "arabic": "",
-    "english": "A new section at II:234 treats prerequisites of prophethood, qualities of prophetic knowledge and judgement, prophetic protection from error and sin, miracles and extraordinary phenomena. Detailed subarguments require full continuous transcription.",
+    "english": "A selected lemma introduces saintly wonders and defines a walī by knowledge of God and perseverance in obedience. The source distinguishes extraordinary occurrences without a claim to prophecy from prophetic miracles whose proof entails a public claim, and discusses examples attributed to Mary and the early companions. The argument runs over the page into the section preceding resurrection.",
     "citation": "Taqrīb al-Marām, printed II:239, original 632-image source PDF physical page 534; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -433,6 +449,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Correction at Stage23",
+        "text": "The older Stage17 map incorrectly grouped these five pages entirely under general prophetic conditions. Direct original-image reinspection establishes angels/prophets rank and saintly wonders as separate discussions. This record is still not a full page translation."
       }
     ],
     "layers": {}
