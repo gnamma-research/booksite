@@ -32,7 +32,12 @@
       "edition_audit_url": "texts/al-turka/qawaid-al-tawhid/editorial/EDITORIAL_STATUS.md",
       "glossary_url": "texts/al-turka/qawaid-al-tawhid/editorial/TECHNICAL_GLOSSARY.md",
       "critical_apparatus_url": "texts/al-turka/qawaid-al-tawhid/editorial/CRITICAL_APPARATUS.md",
-      "source_critical_status": "provisional-lacunose-zero-manuscripts-collated"
+      "source_critical_status": "provisional-lacunose-zero-manuscripts-collated",
+      "manuscript_dossier_url": "texts/al-turka/qawaid-al-tawhid/editorial/MANUSCRIPT_COLLATION_DOSSIER.md",
+      "collation_register_url": "texts/al-turka/qawaid-al-tawhid/editorial/COLLATION_REGISTER.json",
+      "catalogued_original_manuscripts": 3,
+      "independently_inspected_manuscript_images": 0,
+      "separate_original_matn_publication": "Majid Hadizadeh edition, Nusus wa-Rasail IV:37-72 (not yet inspected)"
     },
     {
       "id": "ghazali-mustasfa",
