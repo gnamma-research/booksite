@@ -203,3 +203,8 @@ body[data-reading-style="flow"] .page-strip .page-label{font-size:11px}
  .gn-trail-sheet{right:auto;left:0}
 }
 @media print{.gn-trail-controls{display:none!important}}
+
+/* A long original "فصل:" clause starts a genuine section without making its
+   entire argumentative paragraph a heading or introducing a box. */
+.gn-original-section-kicker{font:650 10px/1.55 system-ui;letter-spacing:.055em;color:var(--accent);text-transform:uppercase;margin:21px 0 11px;padding-top:13px;border-top:1px solid var(--border)}
+body[data-reading-style="immersive"] .gn-original-section-kicker{opacity:.68;border-top-color:transparent;padding-top:6px}
