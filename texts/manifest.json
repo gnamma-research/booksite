@@ -20,13 +20,13 @@
         "metaphysics",
         "Avicennian–Akbarian encounter"
       ],
-      "status": "bilingual-reading-edition-61-lemmas-qt059-source-note",
+      "status": "bilingual-matn-reader-with-independent-sharh-translation-in-progress",
       "language": [
         "ar-selected",
         "en-selected"
       ],
       "url": "texts/al-turka/qawaid-al-tawhid/",
-      "note": "61 source-located Arabic–English quotations of the ancestor's Qawāʿid al-Tawḥīd from the currently available Āshtiyānī electronic transcription (printed pp.48–270), including the treatise's closing passage. QT-059 retains all its surviving text; an apparent omission reported in printed editorial notes is recorded but reconstruction is deferred and not a blocker for this reading edition. A source-critical apparatus distinguishes 69 recorded issues including conjectures. Commentary is kept separate; independent manuscript and print-image collation have not been carried out, so this is not a definitive manuscript-critical edition.",
+      "note": "Darūrī-family bilingual reader for the ancestral Qawāʿid: 61 Arabic–English matn units (Āshtiyānī pp.48–270), plus a separately attributed commentary layer for Ṣāʾin al-Dīn Ibn Turka's Tamhīd. Two source-checked sharḥ excerpts have been translated from printed p.274; the opening commentary and intervening units are reserved, not translated. Interface includes independent Arabic/English visibility, Matn/Together/Sharḥ, four focus levels including continuous reading, source notes, search, bookmark/notes storage, display settings, source references and bottom navigation. QT-059 reported omission remains noted and deferred. This is a working edition, not independently manuscript-collated.",
       "comparative_translation_notes_url": "texts/al-turka/qawaid-al-tawhid/editorial/LUMBARD_COMPARISON.md",
       "matn_units": 61,
       "edition_audit_url": "texts/al-turka/qawaid-al-tawhid/editorial/EDITORIAL_STATUS.md",
@@ -38,7 +38,11 @@
       "catalogued_original_manuscripts": 3,
       "independently_inspected_manuscript_images": 0,
       "separate_original_matn_publication": "Majid Hadizadeh edition, Nusus wa-Rasail IV:37-72 (not yet inspected)",
-      "qt059_disposition": "source-note-only-no-reconstruction-current-edition"
+      "qt059_disposition": "source-note-only-no-reconstruction-current-edition",
+      "reader_ui_parity": "daruri-family-layout-v1-compact-toolbar-focus0-3",
+      "sharh_translation_status": "2-verified-excerpts-printed-p274-opening-p3-untranslated",
+      "sharh_translation_url": "texts/al-turka/qawaid-al-tawhid/editorial/COMMENTARY_TRANSLATION.md",
+      "sharh_units": 2
     },
     {
       "id": "ghazali-mustasfa",
