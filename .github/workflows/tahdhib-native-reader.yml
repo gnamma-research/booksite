@@ -1,0 +1,112 @@
+name: Tahdhib native Daruri reader release
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/tahdhib-native-reader.yml'
+      - 'tools/tahdhib/build_native_reader.py'
+      - 'tools/tahdhib/native_reader_qa.py'
+      - 'texts/shared/tahdhib-native/**'
+      - 'texts/al-taftazani/tahdhib-al-kalam/edition/native/**'
+      - 'texts/al-taftazani/tahdhib-al-kalam/edition/index.html'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/native/**'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/index.html'
+  pull_request:
+    paths:
+      - '.github/workflows/tahdhib-native-reader.yml'
+      - 'tools/tahdhib/**'
+      - 'texts/shared/tahdhib-native/**'
+      - 'texts/al-taftazani/tahdhib-al-kalam/edition/**'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/**'
+permissions:
+  contents: write
+concurrency:
+  group: tahdhib-native-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  native-browser-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned build and browser dependencies
+        run: |
+          pip install beautifulsoup4==4.14.2 playwright==1.56.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Generate from the actual Daruri application and preserve original scholarly assets
+        run: |
+          python tools/tahdhib/build_native_reader.py
+          git diff --exit-code -- 'texts/al-taftazani/*/edition/data.js' 'texts/al-taftazani/*/edition/pdfs/**' 'daruri/**'
+          python - <<'PY'
+          import pathlib, subprocess
+          from bs4 import BeautifulSoup
+          for name in ['tahdhib-al-kalam','tahdhib-al-mantiq']:
+              root=pathlib.Path('texts/al-taftazani')/name/'edition'
+              doc=BeautifulSoup((root/'index.html').read_text(),'html.parser')
+              for i,script in enumerate(doc.find_all('script')):
+                  if script.get('src') or script.get('type')=='application/json': continue
+                  source=pathlib.Path('/tmp')/(name+str(i)+'.js')
+                  source.write_text(script.get_text())
+                  subprocess.run(['node','--check',str(source)],check=True)
+              for source in (root/'native').glob('*.js'):
+                  subprocess.run(['node','--check',str(source)],check=True)
+          PY
+      - name: Exercise both public readers in Chromium and WebKit
+        run: |
+          python -m http.server 8765 >/tmp/native-http.log 2>&1 &
+          SERVER=$!
+          trap 'kill "$SERVER" || true' EXIT
+          sleep 2
+          python tools/tahdhib/native_reader_qa.py
+      - name: Commit validated generated readers to the feature branch only
+        if: github.event_name == 'push' && github.ref == 'refs/heads/feature/tahdhib-native-finish-20261103'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add texts/shared/tahdhib-native/build-manifest.json
+          git add texts/al-taftazani/tahdhib-al-kalam/edition/index.html texts/al-taftazani/tahdhib-al-kalam/edition/previous-reader.html texts/al-taftazani/tahdhib-al-kalam/edition/native
+          git add texts/al-taftazani/tahdhib-al-mantiq/edition/index.html texts/al-taftazani/tahdhib-al-mantiq/edition/previous-reader.html texts/al-taftazani/tahdhib-al-mantiq/edition/native
+          git add tools/tahdhib/reader_qa.mjs tools/tahdhib/experience_qa.mjs tools/tahdhib/daruri_shell_qa.mjs
+          if ! git diff --cached --quiet; then
+            git commit -m 'Build validated native Tahdhib readers from Daruri without changing source corpora'
+            git push origin HEAD:feature/tahdhib-native-finish-20261103
+          fi
+      - name: Check published bytes and exercise the live website after master deployment
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        env:
+          TAHDHIB_QA_BASE: https://gnamma-research.github.io/booksite/
+          TAHDHIB_QA_OUT: qa/tahdhib-native-live
+        run: |
+          python - <<'PY'
+          import hashlib,json,time,urllib.request,pathlib
+          manifest=json.loads(pathlib.Path('texts/shared/tahdhib-native/build-manifest.json').read_text())
+          for kind,folder in [('kalam','tahdhib-al-kalam'),('logic','tahdhib-al-mantiq')]:
+              expected=manifest['books'][kind]['generated_index_sha256']
+              url='https://gnamma-research.github.io/booksite/texts/al-taftazani/'+folder+'/edition/?native='+expected[:12]
+              for attempt in range(36):
+                  try:
+                      data=urllib.request.urlopen(url,timeout=15).read()
+                      if hashlib.sha256(data).hexdigest()==expected: break
+                  except Exception as e: print(type(e).__name__,str(e))
+                  time.sleep(5)
+              else: raise RuntimeError('Live reader does not match validated artifact: '+kind)
+              print('LIVE SOURCE MATCH',kind,expected)
+          PY
+          python tools/tahdhib/native_reader_qa.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tahdhib-native-browser-evidence
+          path: |
+            qa/tahdhib-native/
+            qa/tahdhib-native-live/
+            texts/shared/tahdhib-native/build-manifest.json
+          retention-days: 7
