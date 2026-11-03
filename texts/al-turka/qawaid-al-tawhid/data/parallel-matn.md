@@ -17,19 +17,19 @@
 
 **Arabic — original matn**
 
-> الحمد لوليّه، والصلاة على نبيّه محمد وآله. وبعد، فإن تقرير مسألة التوحيد على النحو الذي ذهب إليه العارفون، وأشار إليه المحقّقون، من المسائل الغامضة التي لا يصل إليها أفكار علماء الناظرين المجادلين، ولا يدركها أذهان الفضلاء الباحثين من الناظرين.
+> الحمد لله رب العالمين، والصلاة على نبيّه محمد وآله. وبعد، فإن تقرير مسألة التوحيد على النحو الذي ذهب إليه العارفون، وأشار إليه المحقّقون، من المسائل الغامضة التي لا يصل إليها أفكار علماء الناظرين المجادلين، ولا يدركها أذهان الفضلاء الباحثين من الناظرين.
 
 **New English translation**
 
-> Praise is due to its rightful Patron (walī), and blessings upon His Prophet Muḥammad and his family. To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp.
+> Praise belongs to God, Lord of the worlds, and blessings upon His Prophet Muḥammad and his family. To proceed: setting forth the question of divine unity (tawḥīd) in the manner adopted by those who possess gnosis (ʿārifūn) and indicated by those who have attained realization (muḥaqqiqūn) is among the difficult questions that the thoughts of disputatious speculative scholars cannot reach, nor the minds of learned philosophical investigators grasp.
 
 **Textual and philosophical notes — later commentary distinguished**
 
-1. The opening expression al-ḥamd li-waliyyihi is semantically compressed; 'its rightful Patron' is provisional. The commentator reads it as an allusion to the unique reality in which every perfection deserving praise is gathered (p. 48). Do not assume a different opening formula without inspecting manuscripts.
+1. Editorially adopt the catalogue-reported conventional opening «الحمد لله رب العالمين» for the *reading text*, by the project's chosen house convention. Āshtiyānī A instead prints «الحمد لوليّه», a wording also reported in al-Dharīʿa, and the grandson gives it a metaphysical gloss. Preserve that reading in the apparatus; the choice of an accessible opening is not a completed manuscript collation.
 
 2. On p. 49 the commentator suggests that the 'disputatious speculative scholars' are the mutakallimūn, whereas the 'learned investigators' are the Peripatetic philosophers. These identifications are the commentator's, not definitions supplied by the matn.
 
-**Variant status:** no securely registered alternative in the current digital base. This is not a declaration of manuscript unanimity.
+**Opening policy:** reader adopts F's reported «الحمد لله رب العالمين» as an *editorial preference*. A reads «الحمد لوليّه». Other catalogued opening differences have not been adopted without source proof. Neither incipit is yet validated against independently photographed manuscript folios. Full variants: [critical apparatus](../editorial/CRITICAL_APPARATUS.md).
 
 ---
 
