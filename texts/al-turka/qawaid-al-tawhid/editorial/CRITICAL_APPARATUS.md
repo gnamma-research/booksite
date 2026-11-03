@@ -25,6 +25,19 @@ This apparatus is a critical *audit of a working edition*, not a claim that a cl
 
 The underlying electronic transcription frequently reports notes marked خ and ظ. Without checking the image of the printed apparatus, one cannot confidently assign خ to a named manuscript, treat ظ as a witnessed variant, or decide the editor's preferred reading. All sources remain *provisional*.
 
+## New catalogue incipit and separate original printed text (3 November 2026)
+
+The existing apparatus enumerates **69 transcription/variant/conjecture records** from the previous electronic-edition audit. A **new catalogue-transcribed comparison** must be held separately, rather than deceptively increasing the number of witnessed Arabic variants:
+
+- **QT-001, A base:** «الحمد لوليّه، والصلاة على نبيّه محمد وآله. وبعد، فإن تقرير مسألة التوحيد ...»
+- **F, published *FANKHĀ* shared work-level incipit:** «الحمدلله رب العالمین و الصلوة علی نبیه محمد و آله اجمعین فان تقریر مسئلة التوحید ...»; [catalogue](https://www.fahares.net/w/51946), manuscript catalogue entries [M₁](https://www.fahares.net/m/242468), [M₂](https://www.fahares.net/m/242469), [M₃](https://www.fahares.net/m/242470). **Source grade C, catalogue report, not direct photographs; F is a common incipit repeated in all entries, not three independent collations.**
+- Bibliographer Āghā Buzurg al-Ṭihrānī's *al-Dharīʿa*, XVII, entry 952 also quotes an A-type incipit «الحمد لوليه ...»; this is another secondary report, not a codex.
+- **QT-061:** F's shared explicit includes «وهذا آخر ما اردنا ان نورده فی هذه الرساله», consistent with A. The coincidence of final formula does not establish that intervening matn is intact.
+- **P₁ — new printed original-matn comparator:** *Qawāʿid al-Tawḥīd*, ed. **Majīd Hādīzādeh**, *Nuṣūṣ wa-Rasāʾil min Turāth Iṣfahān al-ʿIlmī al-Khālid*, IV:37–72, bibliographically confirmed against photographed [*al-Khizāna* p.521 no.301](https://bibliography.mk.iq/files/0080f66f58b21603.pdf). **Actual edited pages not accessed**. Do not attribute any proposed QT-059 restoration to P₁.
+- **QT-059 remains lacunose:** No original scanned copy has been obtained or read. A substantive defect cannot be emended by speculative doctrinal reconstruction.
+
+Detailed [manuscript recovery and bibliography dossier](MANUSCRIPT_COLLATION_DOSSIER.md); [61-unit structured collation register](COLLATION_REGISTER.json). **No change of Arabic base text is licensed yet.**
+
 ## 2. Source hierarchy and sigla
 
 | Siglum | Source | Actual use in this edition |
