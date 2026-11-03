@@ -1,5 +1,12 @@
 /* Identical Daruri-style Tahdhib chrome for both kalam and logic editions.
    The original Daruri bookmark SVGs are imported from daruri/bookmark-ui.js. */
+/* Colour identities mirror the named Darūrī Visuals palettes. Dark appearance remains independently legible. */
+:root:not([data-theme="dark"]) body[data-gn-palette="almohad"]{--bg:#f3eee6;--paper:#fdfaf4;--accent:#82503d;--accent-ink:#82503d;--wash:#ede3d7;--tool:#fdfaf4}
+:root:not([data-theme="dark"]) body[data-gn-palette="cordoba"]{--bg:#f5f1e9;--paper:#fffdfa;--accent:#984d45;--accent-ink:#984d45;--wash:#f3e8e3;--tool:#fffdfa}
+:root:not([data-theme="dark"]) body[data-gn-palette="nasrid"]{--bg:#eef3f1;--paper:#fcfefa;--accent:#2e617b;--accent-ink:#2e617b;--wash:#e2ebed;--tool:#fcfefa}
+:root:not([data-theme="dark"]) body[data-gn-palette="zellij"]{--bg:#f0f3ed;--paper:#fdfef9;--accent:#2b6b59;--accent-ink:#2b6b59;--wash:#e5eee8;--tool:#fdfef9}
+:root:not([data-theme="dark"]) body[data-gn-palette="gnamma"]{--bg:#c0a08a;--paper:#f8f0e2;--accent:#35616b;--accent-ink:#35616b;--wash:#eee4d7;--tool:#f8f0e2}
+:root:not([data-theme="dark"]) body[data-gn-palette="gnamma-air"]{--bg:#bfa38a;--paper:#f4e5d4;--accent:#2e6570;--accent-ink:#2e6570;--wash:#ece0d0;--tool:#f4e5d4}
 #gn-daruri-toolbar{position:sticky;top:0;z-index:55;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px clamp(10px,2.2vw,22px);margin:12px 0 16px;background:var(--paper);border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 16px #0000000a;font:600 12px/1.35 system-ui;color:var(--ink)}
 .gn-daruri-tools{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
 .gn-daruri-tools-end{margin-left:auto}
