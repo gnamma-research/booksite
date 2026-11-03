@@ -150,11 +150,15 @@ The reported multi-line/more-than-page loss at **QT-059, printed pp.262–264**,
 
 The **three independently catalogued copies of the original matn** are verified to their own Fahares pages: [Farhang va Honar alif-28, copied 851 AH](https://www.fahares.net/m/242468), [Āstān Quds 812, 1067 AH and 18 folios](https://www.fahares.net/m/242469), and [Āstān Quds 822, undated](https://www.fahares.net/m/242470). This verifies **catalogue identification only**, not visual readings or manuscript collation.
 
-The catalogue's **shared work-level incipit** reads «الحمد لله رب العالمين والصلاة على نبيه محمد وآله أجمعين» while the electronic Āshtiyānī original extract in QT-001 opens «الحمد لوليّه والصلاة على نبيّه محمد وآله». These are substantially different. This new evidence is documented *as catalogue report F*, and the working Arabic remains A unchanged. Do not attribute the same catalogue quotation to M₁, M₂ and M₃ as three independent readings. Both catalogue and Gnamma agree about the original **closing formula**, QT-061.
+The catalogue's **shared work-level incipit** reads «الحمد لله رب العالمين والصلاة على نبيه محمد وآله أجمعين» while the electronic Āshtiyānī original extract in QT-001 opens «الحمد لوليّه والصلاة على نبيّه محمد وآله». These are substantially different. This difference is preserved *as catalogue report F*, while the public QT-001 reading adopts «الحمد لله رب العالمين» editorially. A's competing wording remains in the apparatus; no critical manuscript judgement is claimed. Do not attribute the same catalogue quotation to M₁, M₂ and M₃ as three independent readings. Both catalogue and Gnamma agree about the original **closing formula**, QT-061.
 
 A **separate edition of the original matn**, edited by **Majīd Hādīzādeh**, is now bibliographically verified in *Nuṣūṣ wa-Rasāʾil min Turāth Iṣfahān al-ʿIlmī al-Khālid*, **vol. IV pp.37–72** (2018 journal *al-Khizāna*, p.521, no.301; journal PDF screenshot checked). **The 36 printed pages have not been acquired**, so their contents and the possibility that QT-059 is restored remain undetermined. The previously found online PDF set comprises only vols. I–III.
 
 Astan Quds's documented digital manuscript-request process is [digital.aqr.ir](https://digital.aqr.ir/), subject to library access rules. No submission or reply occurred in this task; both Persian and Arabic draft requests are saved in the dossier. **Zero original manuscript folios read; zero independent collated manuscript variants; QT-059 substantial omission remains open.**
+
+## Short editorial decision — opening convention (3 November 2026)
+
+Per the project's house style, QT-001 now begins **«الحمد لله رب العالمين»**, a conventional opening reported in the Fahares work-level catalogue. The Arabic source-copy wording **«الحمد لوليّه»** is not deleted from the historical apparatus. The decision affects only the *reader's opening formula*; it does not imply that a manuscript leaf has been inspected. No further editorial time should be spent on the opening until the more serious defects are resolved: **QT-059's missing text, witness collation, and the 61-lemma completeness/translation audit**.
 
 ## What this edition is NOT
 - NOT the entire original treatise.
