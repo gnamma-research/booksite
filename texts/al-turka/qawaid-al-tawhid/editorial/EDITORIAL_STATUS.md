@@ -144,6 +144,18 @@ The reported multi-line/more-than-page loss at **QT-059, printed pp.262–264**,
 
 **Critical edition verdict:** the presently published material is a **source-critical bilingual working edition with a full preliminary apparatus**, **not a definitive, exhaustively collated critical edition**. Reaching the original conclusion and listing manuscripts are not the same as establishing the original.
 
+## Stage 10: independent manuscript catalogue verification and separate matn witness (3 November 2026)
+
+**New [manuscript collation dossier](MANUSCRIPT_COLLATION_DOSSIER.md) and [machine-readable 61-locus register](COLLATION_REGISTER.json).**
+
+The **three independently catalogued copies of the original matn** are verified to their own Fahares pages: [Farhang va Honar alif-28, copied 851 AH](https://www.fahares.net/m/242468), [Āstān Quds 812, 1067 AH and 18 folios](https://www.fahares.net/m/242469), and [Āstān Quds 822, undated](https://www.fahares.net/m/242470). This verifies **catalogue identification only**, not visual readings or manuscript collation.
+
+The catalogue's **shared work-level incipit** reads «الحمد لله رب العالمين والصلاة على نبيه محمد وآله أجمعين» while the electronic Āshtiyānī original extract in QT-001 opens «الحمد لوليّه والصلاة على نبيّه محمد وآله». These are substantially different. This new evidence is documented *as catalogue report F*, and the working Arabic remains A unchanged. Do not attribute the same catalogue quotation to M₁, M₂ and M₃ as three independent readings. Both catalogue and Gnamma agree about the original **closing formula**, QT-061.
+
+A **separate edition of the original matn**, edited by **Majīd Hādīzādeh**, is now bibliographically verified in *Nuṣūṣ wa-Rasāʾil min Turāth Iṣfahān al-ʿIlmī al-Khālid*, **vol. IV pp.37–72** (2018 journal *al-Khizāna*, p.521, no.301; journal PDF screenshot checked). **The 36 printed pages have not been acquired**, so their contents and the possibility that QT-059 is restored remain undetermined. The previously found online PDF set comprises only vols. I–III.
+
+Astan Quds's documented digital manuscript-request process is [digital.aqr.ir](https://digital.aqr.ir/), subject to library access rules. No submission or reply occurred in this task; both Persian and Arabic draft requests are saved in the dossier. **Zero original manuscript folios read; zero independent collated manuscript variants; QT-059 substantial omission remains open.**
+
 ## What this edition is NOT
 - NOT the entire original treatise.
 - NOT a manuscript-collated, stemmatically established, fully critical edition.
