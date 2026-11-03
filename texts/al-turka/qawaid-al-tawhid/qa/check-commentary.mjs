@@ -18,13 +18,15 @@ for(let i=0;i<40;i++)assert.equal(corpus.units[i].id,'SH-INTRO-'+String(i+1).pad
 assert.deepEqual(Array.from(corpus.units.slice(40),u=>u.id),['SH-061-C','SH-061-D','SH-061-E','SH-061-F','SH-061-A','SH-061-B']);
 for(const u of corpus.units){assert.ok(u.arabic.trim().length>20,u.id);assert.ok(u.english.trim().length>20,u.id);assert.match(u.sourceUrl,/^https:\/\//);assert.ok(u.sourceEdition==='N'||u.sourceEdition==='A');}
 assert.equal(corpus.units.filter(u=>u.lumbardComparator).length,7);
-assert.equal(corpus.units[39].sourceLocator.includes('no following'),true);
+// The final online continuation has no separately verified printed page.
+// Test the actual locator contract rather than one incidental wording.
+for(const u of corpus.units.slice(37,40)){assert.match(u.sourceLocator,/42/);assert.ok(u.sourceLocator.includes('continuation'));assert.equal(u.sourceEdition,'N');}
 new vm.Script(read('data/units.js')).runInContext(context);
 assert.equal(context.window.GNAMMA_QAWAID_MATN.units.length,61);
 for(const f of ['reader.js','commentary-reader.js','commentary-main-bridge.js'])new vm.Script(read(f),{filename:f});
 for(const f of ['index.html','commentary.html'])for(const m of read(f).matchAll(/<script src="([^"]+)"/g))assert.ok(fs.existsSync(path.join(base,m[1])),f+': '+m[1]);
 
-// Small deterministic DOM harness: tests state and generated markup, not visual rendering.
+// Small deterministic DOM harness: state and generated markup, not visual rendering.
 const elements=new Map(),documentHandlers=new Map(),windowHandlers=new Map(),storage=new Map();
 class Element{
  constructor(id='',tag='DIV'){this.id=id;this.tagName=tag;this.dataset={};this.attributes={};this.handlers=new Map();this.style={setProperty(){}};this.textContent='';this.value='';this.open=false;this.disabled=false;this.checked=false;this._html='';}
