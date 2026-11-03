@@ -601,10 +601,10 @@
     "page": 246,
     "pdf": 541,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Corporeal and spiritual resurrection: competing accounts",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "The upper text distinguishes spiritual resurrection, on which the soul is conceived as immaterial, from the bodily return affirmed through the Qurʾān, Sunna and consensus. A substantial marginal discussion asks what follows if the same individual's body is not composed of precisely the same material at each occurrence.",
     "citation": "Taqrīb al-Marām, printed II:246, original 632-image source PDF physical page 541; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -614,6 +614,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -624,10 +628,10 @@
     "page": 247,
     "pdf": 542,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Is the very first body required? Soul, substance and body",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "The argument examines whether the resurrection requires restoration of the original body in all its material constituents, distinguishes accounts of a separate soul, and considers the extent to which identity rests on the soul, body or their union.",
     "citation": "Taqrīb al-Marām, printed II:247, original 632-image source PDF physical page 542; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -637,6 +641,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -647,10 +655,10 @@
     "page": 248,
     "pdf": 543,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Objections about original bodily constituents",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "The upper discussion treats original components and the possibility of their decay and incorporation into other bodies. The famous eater/eaten hypothetical begins at the foot of this page and continues onto II:249; do not move its words or argument to one leaf.",
     "citation": "Taqrīb al-Marām, printed II:248, original 632-image source PDF physical page 543; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -660,6 +668,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -670,10 +682,10 @@
     "page": 249,
     "pdf": 544,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Eater and eaten: the original constituent-parts objection",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "The source develops the cannibalism thought experiment: if one human consumes another, some bodily matter may be common to both, whereas both persons are to return. Proposed distinctions between original and acquired/surplus constituents must answer the numerical-identity objection.",
     "citation": "Taqrīb al-Marām, printed II:249, original 632-image source PDF physical page 544; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -683,6 +695,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -693,10 +709,10 @@
     "page": 250,
     "pdf": 545,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Reply from original parts and divine restoration",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "The rebuttal distinguishes essential/original bodily constituents from assimilated material and considers whether a body can return without the exact subsequent matter acquired through nourishment. A long lower response examines what makes a resurrected subject numerically the same person.",
     "citation": "Taqrīb al-Marām, printed II:250, original 632-image source PDF physical page 545; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -706,6 +722,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -716,10 +736,10 @@
     "page": 251,
     "pdf": 546,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Restoration of bodies after annihilation versus surviving constituents",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "This page revisits whether resurrection requires literal re-creation of annihilated material or reassembly of abiding original parts, and examines how verses about the first creation and later return bear on the distinction.",
     "citation": "Taqrīb al-Marām, printed II:251, original 632-image source PDF physical page 546; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -729,6 +749,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -739,10 +763,10 @@
     "page": 252,
     "pdf": 547,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "First and later occurrence, temporal index and possibility",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "The text and much longer lower note develop whether occurrence first and afterward can be predicated without altering the subject's intrinsic identity. It revisits origination, repetition and the metaphysical distinction between a first and a later existence.",
     "citation": "Taqrīb al-Marām, printed II:252, original 632-image source PDF physical page 547; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -752,6 +776,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -762,10 +790,10 @@
     "page": 253,
     "pdf": 548,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Nonexistence and the logic of a recreated body",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "The source continues arguments about whether re-creation of an annihilated body can be the return of the same individual and what follows for the agent's power, possibility and identity. Extended lower gloss remains untranslated.",
     "citation": "Taqrīb al-Marām, printed II:253, original 632-image source PDF physical page 548; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -775,6 +803,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -785,10 +817,10 @@
     "page": 254,
     "pdf": 549,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Paradise and Hell: current existence and the bodily return",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "The discussion moves toward the currently created or future status of Paradise and the Fire, Qurʾānic expressions of preparation and return after death, and how traditional eschatological accounts fit the ontological resurrection debate.",
     "citation": "Taqrīb al-Marām, printed II:254, original 632-image source PDF physical page 549; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -798,6 +830,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -808,10 +844,10 @@
     "page": 255,
     "pdf": 550,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Paradise and Hell: material, nourishment and continued existence",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "The source examines the difference between earthly element transformation and the post-resurrection world, whether nourishment entails the same processes as here, and the reports describing Paradise and Hell. Most of the page is lengthy upper-text disputation with small lower glosses.",
     "citation": "Taqrīb al-Marām, printed II:255, original 632-image source PDF physical page 550; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -821,6 +857,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -831,10 +871,10 @@
     "page": 256,
     "pdf": 551,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Original chapter: interrogation and punishment in the grave",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "A real original heading states agreement about questioning and torment in the grave. The argument distinguishes pre-resurrection punishment from the final judgement, adducing Pharaoh's people being exposed to Fire morning and evening and their subsequent more severe judgement.",
     "citation": "Taqrīb al-Marām, printed II:256, original 632-image source PDF physical page 551; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -844,6 +884,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -854,10 +898,10 @@
     "page": 257,
     "pdf": 552,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Grave punishment, life and awareness between death and resurrection",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "The source tests whether questioning and punishment require a mode of life or consciousness in the grave, and interprets Qurʾānic references to not tasting death again after the first death. The margin contains a long source-critical objection.",
     "citation": "Taqrīb al-Marām, printed II:257, original 632-image source PDF physical page 552; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -867,6 +911,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -877,10 +925,10 @@
     "page": 258,
     "pdf": 553,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "How many deaths and lives? Two-death scriptural passages",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "The upper text invokes 'You caused us to die twice and gave us life twice' and evaluates whether a separate period of life in the grave is required by the evidence, distinguishing interpretations of actual death from deprivation of life.",
     "citation": "Taqrīb al-Marām, printed II:258, original 632-image source PDF physical page 553; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -890,6 +938,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -900,10 +952,10 @@
     "page": 259,
     "pdf": 554,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Intermediate existence, barzakh and sensation",
     "arabic": "",
-    "english": "The chapter opening at II:240 introduces return after death; subsequent arguments concern restoring bodies, the survival or reassembly of bodily parts, identity through change, possible modes of recreation, scriptural reports, and the rational possibility of bodily resurrection.",
+    "english": "A long marginal analysis asks whether pain, perception and agency in the interval between bodily death and resurrection presuppose an ordinary bodily life. The upper text includes the discussion of torment after death and the possibility of perception.",
     "citation": "Taqrīb al-Marām, printed II:259, original 632-image source PDF physical page 554; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -913,6 +965,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
@@ -923,10 +979,10 @@
     "page": 260,
     "pdf": 555,
     "category": "page-draft",
-    "quality": "original-image-section-orientation-NOT-literal-page-translation",
-    "title": "Resurrection, bodily return and questions of identity",
+    "quality": "source-image-corrected-stage25-context-only",
+    "title": "Reckoning, balance, bridge and further revealed realities",
     "arabic": "",
-    "english": "The section progresses toward judgement and transmitted eschatological particulars.",
+    "english": "The discussion turns to other transmitted eschatological matters including reckoning, the balance and the passage across the bridge, alongside the resurrection and recompense claims. It is a source-position guide, not a translation of the lists and proofs.",
     "citation": "Taqrīb al-Marām, printed II:260, original 632-image source PDF physical page 555; page image surveyed and source-section located 2 November 2026.",
     "notes": [
       {
@@ -936,6 +992,10 @@
       {
         "type": "Source layers",
         "text": "Embedded Taftāzānī lemmata, Sanandajī's running prose, identified Wasīm, and unattributed small-print margins must remain separately attributed. No complete marginal text is represented by this guide."
+      },
+      {
+        "type": "Stage25 source correction",
+        "text": "The earlier Stage17 source map grouped these pages overbroadly as bodily-return reconstitution. Direct per-page images establish the more precise chapter progress, including original II:256 grave-punishment division; this remains a preliminary argument guide, NOT source-translated text."
       }
     ],
     "layers": {}
