@@ -155,7 +155,7 @@ function closeSheet(){
 function sheetMarkup(kind){
  switch(kind){
  case "contents":
- return '<p class="help-copy">Select any of the 61 source-located matn units. A dot denotes a translated commentary passage.</p><div class="sheet-list">'+units.map((u,i)=>'<button type="button" data-jump="'+i+'">'+esc(u.id)+' · '+esc(u.title)+(byMatn.has(u.id)?" · ● sharḥ":"")+'<small>Printed pp. '+esc(u.pages.join("–"))+'</small></button>').join("")+'</div>';
+ return '<p class="help-copy">Select any of the 61 source-located matn units. A dot denotes a translated commentary passage.</p><div class="book-actions"><button class="action-btn" type="button" data-command="home">Home</button><button class="action-btn" type="button" data-open-sheet="bookmarks">Bookmarks</button><button class="action-btn" type="button" data-open-sheet="notes">My notes</button><button class="action-btn" type="button" data-open-sheet="reference">Study &amp; sources</button><button class="action-btn" type="button" data-open-sheet="help">Help</button></div><div class="sheet-list">'+units.map((u,i)=>'<button type="button" data-jump="'+i+'">'+esc(u.id)+' · '+esc(u.title)+(byMatn.has(u.id)?" · ● sharḥ":"")+'<small>Printed pp. '+esc(u.pages.join("–"))+'</small></button>').join("")+'</div>';
  case "settings":
  return '<div class="sheet-row"><div><label for="setting-font">Text size</label><small>Arabic and English scale together</small></div><input id="setting-font" type="range" data-range="font" min=".82" max="1.45" step=".03" value="'+state.font+'"></div>'+
  '<div class="sheet-row"><div><label for="setting-leading">Line spacing</label><small>Continuous and section reading</small></div><input id="setting-leading" data-range="leading" type="range" min="1.55" max="2.15" step=".05" value="'+state.leading+'"></div>'+
@@ -229,6 +229,7 @@ document.addEventListener("click",(e)=>{
   if(persist())toast("Private note saved");
  }
  if(b.dataset.command==="export")exportPersonal();
+ if(b.dataset.command==="home"){closeSheet();state.focus=0;render();persist();window.scrollTo({top:0,behavior:"smooth"});}
 });
 $("menu-button").addEventListener("click",()=>openSheet("contents"));
 $("location-button").addEventListener("click",()=>openSheet("contents"));
