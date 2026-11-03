@@ -6,6 +6,7 @@ on:
       - ".github/workflows/tahdhib-reader-ci.yml"
       - "tools/tahdhib/reader_qa.mjs"
       - "tools/tahdhib/experience_qa.mjs"
+      - "texts/al-taftazani/tahdhib-al-kalam/edition/subject-index.js"
       - "tools/tahdhib/verify_logic_core.py"
       - "tools/tahdhib/verify_fourth_figure_scope.py"
       - "tools/tahdhib/verify_special_modal_temporal_shadow.py"
@@ -155,6 +156,8 @@ jobs:
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/vowels.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/glossary.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/glossary-ui.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/subject-index.js
+          node --check texts/al-taftazani/tahdhib-al-kalam/edition/reading-history.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/machine-vowels.js
           node --check texts/al-taftazani/tahdhib-al-mantiq/edition/machine-vowels.js
           node tools/tahdhib/reader_qa.mjs
