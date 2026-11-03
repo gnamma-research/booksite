@@ -1,7 +1,7 @@
 # Taqrīb al-Marām — Stage 23 critical translation dossier
 ## Printed volume II:235–245, original physical PDF pages 530–540
 
-**Basis:** Original user-uploaded raster volume, visually read and rendered at enlarged resolution. This is a new **source-language / close English selected-clause edition**, correcting the Stage 17 topic map. Pages II:235–239 are not merely a continuous treatment of prophetic ʿiṣma: they move from reports on prophets to angels, comparative rank of humans and angels, and the marvels of saints. II:240 begins the chapter on resurrection. This dossier contains **54 bounded source selections**, **one near-complete individually bounded short gloss** and **one additional lower-register fragment**, not eleven complete page translations.
+**Basis:** Original user-uploaded raster volume, visually read and rendered at enlarged resolution. This is a new **source-language / close English selected-clause edition**, correcting the Stage 17 topic map. Pages II:235–239 are not merely a continuous treatment of prophetic ʿiṣma: they move from reports on prophets to angels, comparative rank of humans and angels, and the marvels of saints. II:240 begins the chapter on resurrection. This dossier contains **54 bounded source selections**, **one near-complete individually bounded short gloss** and **three additional selected lower-register fragments**, not eleven complete page translations.
 
 **Cautions:** A parenthesized al-Taftāzānī lemma in Sanandajī's printed large text is not identical with a Sanandajī explanation. A lower note is not automatically by Muḥammad Wasīm. The source sometimes interweaves scriptural citations, reported positions and responses; their voices are distinguished where possible, and none is silently treated as established external fact. All snippets require a second independent diplomatic proof before a definitive edition.
 
@@ -317,7 +317,7 @@
 
 - **11 original printed pages:** II:235–245, physical PDF 530–540 re-rendered and checked.
 - **Direct short Arabic–English selections:** 54, after deliberately removing ambiguous earlier draft snippets. Some are only short technical phrases; none is counted as a full authorial paragraph when it is not one.
-- **Lower-register notes:** II:241 note beginning `(قوله من التجرد)` is bounded as a separate first-pass unit and remains historically unattributed; II:245 has only a short lower-register selected fragment. The remainder of lower text remains untranscribed.
+- **Lower-register notes:** II:241 note beginning `(قوله من التجرد)` is bounded as a separate first-pass unit and remains historically unattributed. Three other short, non-complete fragments at II:244 and II:245 concern universal cognition and temporal identity; the remainder of all lower text remains untranscribed.
 - **0 pages newly certified** as complete main text PLUS every marginal note, independently proofed and collated.
 - The page-presence proxy from earlier surveys is unchanged; this work advances **clause-level source text**, not the number of pages having any editorial English.
 - **Next in uninterrupted reading:** II:246–260, especially the spiritual-versus-bodily resurrection dispute and the objection involving one human being consuming another's bodily constituents. Do not overwrite the independently translated Taftāzānī `Tahdhīb` branch.
@@ -338,3 +338,24 @@
 **Technical distinction:** `al-ajzāʾ` (constituents), `al-mawādd` (underlying material), `al-ṣuwar` (forms), and `al-taʾlīfāt` (combinations) are not redundant terms. The cited interpretation permits a restoration that depends on material continuity and reconfiguration, without necessarily affirming the metaphysical possibility of restoring an annihilated individual as numerically the same after total nonexistence. The source context and the long lower note must decide whether this is the commentator's chosen answer or a position reported for examination. The source heading `al-Maqāṣid` requires further bibliographical and exact-quotation identification.
 
 **Editorial counting:** One **continuous** upper-registry source record has been added, but it overlaps several of the 54 selected short phrases and cannot be counted as an additional translated whole original page or as newly translated independent marginalia.
+
+
+### G. Further actual lower-register source passages (writer unidentified)
+
+**Printed II:244, original PDF 539, selected small type (not the complete note):**
+
+> ولا يكفيه العلم به بالوجه الكلي لأن إدراكه بالوجه الكلي لا ينحصر فيه
+
+“A merely universal knowledge of it is insufficient, because apprehension of it under a universal description does not uniquely identify that very individual.”
+
+This is an important **epistemological objection** to a purely modal account of return. A statement that a *possible kind* can exist again does not yet identify which *numerical individual* would be restored. The text thus distinguishes the ability to conceive a kind and the means of reidentifying the prior subject.
+
+**Printed II:245, original PDF 540, another selected lower fragment:**
+
+> والحاصل أن الفرق حاصل بأن المبدأ هو ما وقع في الدفعة الأولى
+
+“In sum, the distinction is that origination is what took place on the first occurrence.”
+
+This is one short phrase in a much longer source argument, not a complete marginal gloss. It frames the attempted reply that the first and later existence differ by their temporal order even if the same essence is in view.
+
+**Both fragments are author-UNASSIGNED**; no Wasīm attribution is inferred from lower-case print. Neither supplies the missing complete source arguments of the same pages, and independent second proof remains necessary.
