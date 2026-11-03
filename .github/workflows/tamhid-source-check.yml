@@ -9,34 +9,49 @@ permissions:
 jobs:
   source-check:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 12
     steps:
-      - name: Retrieve a small source sample
+      - name: Install HTML parser
+        run: python -m pip install --quiet beautifulsoup4
+      - name: Retrieve the continuous medieval main text
         shell: python
         run: |
-          import urllib.request, urllib.error, pathlib, json, time, re
+          import urllib.request, pathlib, json, time, re, hashlib, concurrent.futures
+          from bs4 import BeautifulSoup
           out=pathlib.Path('source-review'); out.mkdir()
-          results=[]
-          for p in [244,245,251,255,267,277,350,467]:
+          def retrieve(p):
               url=f'https://ablibrary.net/book_content/b/17638/{p}?lang=ar'
-              row={'index':p,'printed_page':p-196,'url':url}
+              row={'index':p,'printed_page':p-196,'url':url,'modern_footnotes_excluded':True}
               try:
-                  req=urllib.request.Request(url,headers={'User-Agent':'Gnamma scholarly source verification (public text; no authentication)'})
-                  with urllib.request.urlopen(req,timeout=15) as response:
+                  req=urllib.request.Request(url,headers={'User-Agent':'Gnamma scholarly source verification (public medieval text; no authentication)'})
+                  with urllib.request.urlopen(req,timeout=20) as response:
                       raw=response.read(1500000)
-                      row.update(status=response.status,bytes=len(raw),content_type=response.headers.get('Content-Type',''))
-                      text=raw.decode('utf-8',errors='replace')
-                      row['arabic_characters']=len(re.findall(r'[\u0600-\u06ff]',text))
-                      (out/f'page-{p}.html').write_text(text,encoding='utf-8')
+                      row.update(status=response.status,html_sha256=hashlib.sha256(raw).hexdigest())
+                      soup=BeautifulSoup(raw,'html.parser')
+                      article=soup.select_one('[itemprop="articleBody"]')
+                      if article is None: raise ValueError('No articleBody: do not treat as an empty source page')
+                      for element in article.select('[data-abl-content="remark"], nav'):
+                          element.decompose()
+                      row['blocks']=[{'tag':element.name,'text':element.get_text(' ',strip=True)} for element in article.select('span.select-text, h1, h2, h3')]
+                      row['text']='\n\n'.join(block['text'] for block in row['blocks'])
+                      row['words']=len(row['text'].split())
               except Exception as error:
                   row['error']=str(error)
-              results.append(row)
-              print(json.dumps(row,ensure_ascii=False))
-              time.sleep(1)
-          (out/'source-status.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')
+              (out/f'page-{p}.json').write_text(json.dumps(row,ensure_ascii=False,indent=2),encoding='utf-8')
+              print(json.dumps({k:row[k] for k in ['printed_page','status','words','error'] if k in row},ensure_ascii=False))
+              time.sleep(.8)
+              return row
+          # Two polite workers, no retry storms, no credentials or non-public sources.
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+              pages=list(pool.map(retrieve,range(199,471)))
+          pages.sort(key=lambda row:row['printed_page'])
+          report={'source':'Ahlulbayt Library electronic transcription, Ibn Turka Tamhid, Ashtiyani edition','scope':'printed Arabic pp.3–274; medieval main text only; modern footnotes excluded','page_count':len(pages),'failed_pages':[row['printed_page'] for row in pages if 'error' in row],'total_words':sum(row.get('words',0) for row in pages),'pages':pages}
+          (out/'main-text.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+          (out/'main-text.txt').write_text('\n\n'.join('===== PRINTED PAGE '+str(row['printed_page'])+' =====\n'+row.get('text','[SOURCE FETCH FAILED]') for row in pages),encoding='utf-8')
+          print(json.dumps({k:v for k,v in report.items() if k!='pages'},ensure_ascii=False))
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: tamhid-public-source-sample
+          name: tamhid-medieval-main-text
           path: source-review/
           retention-days: 1
