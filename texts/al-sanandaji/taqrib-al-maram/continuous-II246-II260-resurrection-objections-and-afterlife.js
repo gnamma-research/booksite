@@ -205,36 +205,6 @@
     "layers": {}
   },
   {
-    "id": "TQ25.248.009",
-    "volume": "II",
-    "page": 248,
-    "pdf": 543,
-    "category": "selection",
-    "quality": "source-image-direct-phrase-needs-second-proof",
-    "title": "The original constituents of a body",
-    "arabic": "الأجزاء الأصلية",
-    "english": "The original constituent parts.",
-    "sourceLayer": "matn",
-    "citation": "Taqrīb al-Marām printed II:248; original user-supplied facsimile physical PDF 543, source image inspected 3 November 2026.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Source phrase in its original printed context only, NOT a complete clause where punctuation or further original words have been omitted; full printed argument and lower-register notes remain untranslated."
-      },
-      {
-        "type": "Provenance",
-        "text": "First-pass selected parenthetical lemma; final typography and independent print collation required."
-      }
-    ],
-    "layers": {
-      "matn": {
-        "arabic": "الأجزاء الأصلية",
-        "english": "The original constituent parts.",
-        "citation": "Source-selected original lemma II:248."
-      }
-    }
-  },
-  {
     "id": "TQ25.248.010",
     "volume": "II",
     "page": 248,
@@ -290,8 +260,8 @@
     "category": "selection",
     "quality": "source-image-direct-phrase-needs-second-proof",
     "title": "The objection from another being's bodily components",
-    "arabic": "فإن أكل إنسان إنسانا",
-    "english": "If a human being eats another human being ...",
+    "arabic": "فإن أكل",
+    "english": "If [someone] consumes ... [continued at the beginning of II:249].",
     "sourceLayer": "matn",
     "citation": "Taqrīb al-Marām printed II:248; original user-supplied facsimile physical PDF 543, source image inspected 3 November 2026.",
     "notes": [
@@ -302,6 +272,10 @@
       {
         "type": "Provenance",
         "text": "First-pass selected parenthetical lemma; final typography and independent print collation required."
+      },
+      {
+        "type": "Cross-page join",
+        "text": "The argument begins with فإن أكل near the foot of printed II:248 and continues إنسان إنسانا at the top of II:249; do not silently move the complete clause onto one page."
       }
     ],
     "layers": {
@@ -451,30 +425,6 @@
     "layers": {}
   },
   {
-    "id": "TQ25.249.018",
-    "volume": "II",
-    "page": 249,
-    "pdf": 544,
-    "category": "selection",
-    "quality": "source-image-direct-phrase-needs-second-proof",
-    "title": "The determinate question of the resurrected individual",
-    "arabic": "المعاد",
-    "english": "The individual or body returned in resurrection.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed II:249; original user-supplied facsimile physical PDF 544, source image inspected 3 November 2026.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Source phrase in its original printed context only, NOT a complete clause where punctuation or further original words have been omitted; full printed argument and lower-register notes remain untranslated."
-      },
-      {
-        "type": "Provenance",
-        "text": "Original large-print contextual expression, which may include reported viewpoints and scriptural citations."
-      }
-    ],
-    "layers": {}
-  },
-  {
     "id": "TQ25.250.019",
     "volume": "II",
     "page": 250,
@@ -523,78 +473,6 @@
     "layers": {}
   },
   {
-    "id": "TQ25.250.021",
-    "volume": "II",
-    "page": 250,
-    "pdf": 545,
-    "category": "selection",
-    "quality": "source-image-direct-phrase-needs-second-proof",
-    "title": "Divine power and bodily restoration",
-    "arabic": "القدرة",
-    "english": "Power or ability [in the context of divine restoration].",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed II:250; original user-supplied facsimile physical PDF 545, source image inspected 3 November 2026.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Source phrase in its original printed context only, NOT a complete clause where punctuation or further original words have been omitted; full printed argument and lower-register notes remain untranslated."
-      },
-      {
-        "type": "Provenance",
-        "text": "Original large-print contextual expression, which may include reported viewpoints and scriptural citations."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ25.251.022",
-    "volume": "II",
-    "page": 251,
-    "pdf": 546,
-    "category": "selection",
-    "quality": "source-image-direct-phrase-needs-second-proof",
-    "title": "Disagreement about resurrection's required structure",
-    "arabic": "واختلفوا",
-    "english": "And they disagreed.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed II:251; original user-supplied facsimile physical PDF 546, source image inspected 3 November 2026.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Source phrase in its original printed context only, NOT a complete clause where punctuation or further original words have been omitted; full printed argument and lower-register notes remain untranslated."
-      },
-      {
-        "type": "Provenance",
-        "text": "Original large-print contextual expression, which may include reported viewpoints and scriptural citations."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ25.251.023",
-    "volume": "II",
-    "page": 251,
-    "pdf": 546,
-    "category": "selection",
-    "quality": "source-image-direct-phrase-needs-second-proof",
-    "title": "The debate over annihilation prior to return",
-    "arabic": "بعد الفناء",
-    "english": "After passing out of existence.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed II:251; original user-supplied facsimile physical PDF 546, source image inspected 3 November 2026.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Source phrase in its original printed context only, NOT a complete clause where punctuation or further original words have been omitted; full printed argument and lower-register notes remain untranslated."
-      },
-      {
-        "type": "Provenance",
-        "text": "Original large-print contextual expression, which may include reported viewpoints and scriptural citations."
-      }
-    ],
-    "layers": {}
-  },
-  {
     "id": "TQ25.251.024",
     "volume": "II",
     "page": 251,
@@ -606,84 +484,6 @@
     "english": "The original constituent parts which remain.",
     "sourceLayer": "sharh",
     "citation": "Taqrīb al-Marām printed II:251; original user-supplied facsimile physical PDF 546, source image inspected 3 November 2026.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Source phrase in its original printed context only, NOT a complete clause where punctuation or further original words have been omitted; full printed argument and lower-register notes remain untranslated."
-      },
-      {
-        "type": "Provenance",
-        "text": "Original large-print contextual expression, which may include reported viewpoints and scriptural citations."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ25.252.025",
-    "volume": "II",
-    "page": 252,
-    "pdf": 547,
-    "category": "selection",
-    "quality": "source-image-direct-phrase-needs-second-proof",
-    "title": "The problem of a first and a second occurrence",
-    "arabic": "الأول والآخر",
-    "english": "The first and the last.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed II:252; original user-supplied facsimile physical PDF 547, source image inspected 3 November 2026.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Source phrase in its original printed context only, NOT a complete clause where punctuation or further original words have been omitted; full printed argument and lower-register notes remain untranslated."
-      },
-      {
-        "type": "Provenance",
-        "text": "Original large-print contextual expression, which may include reported viewpoints and scriptural citations."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ25.253.026",
-    "volume": "II",
-    "page": 253,
-    "pdf": 548,
-    "category": "selection",
-    "quality": "source-image-direct-phrase-needs-second-proof",
-    "title": "What annihilation is supposed to concern",
-    "arabic": "والعدم",
-    "english": "And nonexistence.",
-    "sourceLayer": "matn",
-    "citation": "Taqrīb al-Marām printed II:253; original user-supplied facsimile physical PDF 548, source image inspected 3 November 2026.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Source phrase in its original printed context only, NOT a complete clause where punctuation or further original words have been omitted; full printed argument and lower-register notes remain untranslated."
-      },
-      {
-        "type": "Provenance",
-        "text": "First-pass selected parenthetical lemma; final typography and independent print collation required."
-      }
-    ],
-    "layers": {
-      "matn": {
-        "arabic": "والعدم",
-        "english": "And nonexistence.",
-        "citation": "Source-selected original lemma II:253."
-      }
-    }
-  },
-  {
-    "id": "TQ25.253.027",
-    "volume": "II",
-    "page": 253,
-    "pdf": 548,
-    "category": "selection",
-    "quality": "source-image-direct-phrase-needs-second-proof",
-    "title": "Renewed creation",
-    "arabic": "إعادة الخلق",
-    "english": "Restoration of creation.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed II:253; original user-supplied facsimile physical PDF 548, source image inspected 3 November 2026.",
     "notes": [
       {
         "type": "Extent",
@@ -784,30 +584,6 @@
     "title": "The current status of Paradise and Hell",
     "arabic": "الجنة والنار",
     "english": "Paradise and the Fire.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed II:255; original user-supplied facsimile physical PDF 550, source image inspected 3 November 2026.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Source phrase in its original printed context only, NOT a complete clause where punctuation or further original words have been omitted; full printed argument and lower-register notes remain untranslated."
-      },
-      {
-        "type": "Provenance",
-        "text": "Original large-print contextual expression, which may include reported viewpoints and scriptural citations."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ25.255.032",
-    "volume": "II",
-    "page": 255,
-    "pdf": 550,
-    "category": "selection",
-    "quality": "source-image-direct-phrase-needs-second-proof",
-    "title": "The condition of the body's constituents",
-    "arabic": "العناصر",
-    "english": "The constituent elements.",
     "sourceLayer": "sharh",
     "citation": "Taqrīb al-Marām printed II:255; original user-supplied facsimile physical PDF 550, source image inspected 3 November 2026.",
     "notes": [
@@ -1084,30 +860,6 @@
     "title": "The passage over the Fire",
     "arabic": "الصراط",
     "english": "The path or bridge.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed II:260; original user-supplied facsimile physical PDF 555, source image inspected 3 November 2026.",
-    "notes": [
-      {
-        "type": "Extent",
-        "text": "Source phrase in its original printed context only, NOT a complete clause where punctuation or further original words have been omitted; full printed argument and lower-register notes remain untranslated."
-      },
-      {
-        "type": "Provenance",
-        "text": "Original large-print contextual expression, which may include reported viewpoints and scriptural citations."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ25.260.044",
-    "volume": "II",
-    "page": 260,
-    "pdf": 555,
-    "category": "selection",
-    "quality": "source-image-direct-phrase-needs-second-proof",
-    "title": "Intercession",
-    "arabic": "الشفاعة",
-    "english": "Intercession.",
     "sourceLayer": "sharh",
     "citation": "Taqrīb al-Marām printed II:260; original user-supplied facsimile physical PDF 555, source image inspected 3 November 2026.",
     "notes": [
