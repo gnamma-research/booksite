@@ -164,8 +164,8 @@
     "category": "selection",
     "quality": "source-image-direct-selection-needs-second-proof",
     "title": "The Iblīs objection",
-    "arabic": "بعضه إبليس مع كونه من الملائكة",
-    "english": "Part of the objection concerns Iblīs and the claim that he was among the angels.",
+    "arabic": "قصة إبليس مع كونه من الملائكة",
+    "english": "The story of Iblīs, under the assumption that he was one of the angels.",
     "sourceLayer": "sharh",
     "citation": "Taqrīb al-Marām printed vol. II:236, original 632-image user-supplied source physical PDF page 531, directly rendered and read 3 November 2026.",
     "notes": [
@@ -289,30 +289,6 @@
     }
   },
   {
-    "id": "TQ23.236.012",
-    "volume": "II",
-    "page": 236,
-    "pdf": 531,
-    "category": "selection",
-    "quality": "source-image-direct-selection-needs-second-proof",
-    "title": "Angels and the prophetic vocation",
-    "arabic": "فالأنبياء عليهم السلام",
-    "english": "Thus the prophets, peace be upon them, ...",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed vol. II:236, original 632-image user-supplied source physical PDF page 531, directly rendered and read 3 November 2026.",
-    "notes": [
-      {
-        "type": "Source extent",
-        "text": "Precisely the selected Arabic words are translated; they are not the complete source page. Clauses around and between these snippets and all lower-register units have not been exhaustively transcribed."
-      },
-      {
-        "type": "Register",
-        "text": "Upper running explanatory or quoted scriptural words; where the scriptural quotation is inserted, the verse remains a citation rather than the commentator's own composition."
-      }
-    ],
-    "layers": {}
-  },
-  {
     "id": "TQ23.236.013",
     "volume": "II",
     "page": 236,
@@ -341,30 +317,6 @@
         "citation": "Selected parenthesized original lemma at II:236; first source reading."
       }
     }
-  },
-  {
-    "id": "TQ23.236.014",
-    "volume": "II",
-    "page": 236,
-    "pdf": 531,
-    "category": "selection",
-    "quality": "source-image-direct-selection-needs-second-proof",
-    "title": "The dissenting theological position",
-    "arabic": "خلافا للمعتزلة",
-    "english": "Contrary to the Muʿtazilites.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed vol. II:236, original 632-image user-supplied source physical PDF page 531, directly rendered and read 3 November 2026.",
-    "notes": [
-      {
-        "type": "Source extent",
-        "text": "Precisely the selected Arabic words are translated; they are not the complete source page. Clauses around and between these snippets and all lower-register units have not been exhaustively transcribed."
-      },
-      {
-        "type": "Register",
-        "text": "Upper running explanatory or quoted scriptural words; where the scriptural quotation is inserted, the verse remains a citation rather than the commentator's own composition."
-      }
-    ],
-    "layers": {}
   },
   {
     "id": "TQ23.237.015",
@@ -454,30 +406,6 @@
     "title": "The impediments to human worship",
     "arabic": "للبشر عوائق عن العبادات العلمية والعملية من الشهوة والغضب",
     "english": "Human beings face impediments to intellectual and practical worship, including appetite and anger.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed vol. II:237, original 632-image user-supplied source physical PDF page 532, directly rendered and read 3 November 2026.",
-    "notes": [
-      {
-        "type": "Source extent",
-        "text": "Precisely the selected Arabic words are translated; they are not the complete source page. Clauses around and between these snippets and all lower-register units have not been exhaustively transcribed."
-      },
-      {
-        "type": "Register",
-        "text": "Upper running explanatory or quoted scriptural words; where the scriptural quotation is inserted, the verse remains a citation rather than the commentator's own composition."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ23.237.019",
-    "volume": "II",
-    "page": 237,
-    "pdf": 532,
-    "category": "selection",
-    "quality": "source-image-direct-selection-needs-second-proof",
-    "title": "The contrast with the angels",
-    "arabic": "وليس من ذلك للملائكة شيء",
-    "english": "The angels encounter none of those [human] impediments.",
     "sourceLayer": "sharh",
     "citation": "Taqrīb al-Marām printed vol. II:237, original 632-image user-supplied source physical PDF page 532, directly rendered and read 3 November 2026.",
     "notes": [
@@ -625,54 +553,6 @@
     }
   },
   {
-    "id": "TQ23.238.025",
-    "volume": "II",
-    "page": 238,
-    "pdf": 533,
-    "category": "selection",
-    "quality": "source-image-direct-selection-needs-second-proof",
-    "title": "The comparison of knowing and learning",
-    "arabic": "والعلم أفضل من التعلم",
-    "english": "Knowledge is superior to the process of learning.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed vol. II:238, original 632-image user-supplied source physical PDF page 533, directly rendered and read 3 November 2026.",
-    "notes": [
-      {
-        "type": "Source extent",
-        "text": "Precisely the selected Arabic words are translated; they are not the complete source page. Clauses around and between these snippets and all lower-register units have not been exhaustively transcribed."
-      },
-      {
-        "type": "Register",
-        "text": "Upper running explanatory or quoted scriptural words; where the scriptural quotation is inserted, the verse remains a citation rather than the commentator's own composition."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ23.238.026",
-    "volume": "II",
-    "page": 238,
-    "pdf": 533,
-    "category": "selection",
-    "quality": "source-image-direct-selection-needs-second-proof",
-    "title": "Objection to ranking angels by prostration alone",
-    "arabic": "لا يستكشف عن هذا الأمر",
-    "english": "This does not by itself disclose the matter [of relative superiority].",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed vol. II:238, original 632-image user-supplied source physical PDF page 533, directly rendered and read 3 November 2026.",
-    "notes": [
-      {
-        "type": "Source extent",
-        "text": "Precisely the selected Arabic words are translated; they are not the complete source page. Clauses around and between these snippets and all lower-register units have not been exhaustively transcribed."
-      },
-      {
-        "type": "Register",
-        "text": "Upper running explanatory or quoted scriptural words; where the scriptural quotation is inserted, the verse remains a citation rather than the commentator's own composition."
-      }
-    ],
-    "layers": {}
-  },
-  {
     "id": "TQ23.238.027",
     "volume": "II",
     "page": 238,
@@ -706,7 +586,7 @@
     "title": "Saintly wonders as a separate topic",
     "arabic": "ومن كرامات الأولياء",
     "english": "And concerning the wonders of the saints.",
-    "sourceLayer": "heading",
+    "sourceLayer": "matn",
     "citation": "Taqrīb al-Marām printed vol. II:239, original 632-image user-supplied source physical PDF page 534, directly rendered and read 3 November 2026.",
     "notes": [
       {
@@ -715,10 +595,16 @@
       },
       {
         "type": "Register",
-        "text": "Original-source transition / heading."
+        "text": "Original parenthesized source lemma introducing saintly wonders; not a book-level printed chapter heading."
       }
     ],
-    "layers": {}
+    "layers": {
+      "matn": {
+        "arabic": "ومن كرامات الأولياء",
+        "english": "And concerning the wonders of the saints.",
+        "citation": "Taqrīb al-Marām printed vol. II:239, original 632-image user-supplied source physical PDF page 534, directly rendered and read 3 November 2026."
+      }
+    }
   },
   {
     "id": "TQ23.239.029",
@@ -793,60 +679,6 @@
     "layers": {}
   },
   {
-    "id": "TQ23.239.032",
-    "volume": "II",
-    "page": 239,
-    "pdf": 534,
-    "category": "selection",
-    "quality": "source-image-direct-selection-needs-second-proof",
-    "title": "Wonders not associated with a claim of prophethood",
-    "arabic": "غير مقارن لدعوى النبوة",
-    "english": "Not accompanied by a claim to prophethood.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed vol. II:239, original 632-image user-supplied source physical PDF page 534, directly rendered and read 3 November 2026.",
-    "notes": [
-      {
-        "type": "Source extent",
-        "text": "Precisely the selected Arabic words are translated; they are not the complete source page. Clauses around and between these snippets and all lower-register units have not been exhaustively transcribed."
-      },
-      {
-        "type": "Register",
-        "text": "Upper running explanatory or quoted scriptural words; where the scriptural quotation is inserted, the verse remains a citation rather than the commentator's own composition."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ23.239.033",
-    "volume": "II",
-    "page": 239,
-    "pdf": 534,
-    "category": "selection",
-    "quality": "source-image-direct-selection-needs-second-proof",
-    "title": "The logical division of marvels",
-    "arabic": "لا تستلزم دلالة المعجزة على النبوة",
-    "english": "It does not carry the same implication of prophethood as a miracle.",
-    "sourceLayer": "matn",
-    "citation": "Taqrīb al-Marām printed vol. II:239, original 632-image user-supplied source physical PDF page 534, directly rendered and read 3 November 2026.",
-    "notes": [
-      {
-        "type": "Source extent",
-        "text": "Precisely the selected Arabic words are translated; they are not the complete source page. Clauses around and between these snippets and all lower-register units have not been exhaustively transcribed."
-      },
-      {
-        "type": "Register",
-        "text": "Parenthesized embedded Taftāzānī lemma where directly recognizable; second typography-based verification pending."
-      }
-    ],
-    "layers": {
-      "matn": {
-        "arabic": "لا تستلزم دلالة المعجزة على النبوة",
-        "english": "It does not carry the same implication of prophethood as a miracle.",
-        "citation": "Selected parenthesized original lemma at II:239; first source reading."
-      }
-    }
-  },
-  {
     "id": "TQ23.239.034",
     "volume": "II",
     "page": 239,
@@ -858,30 +690,6 @@
     "english": "Whenever Zechariah entered the sanctuary to see her, he found provision with her.",
     "sourceLayer": "sharh",
     "citation": "Taqrīb al-Marām printed vol. II:239, original 632-image user-supplied source physical PDF page 534, directly rendered and read 3 November 2026.",
-    "notes": [
-      {
-        "type": "Source extent",
-        "text": "Precisely the selected Arabic words are translated; they are not the complete source page. Clauses around and between these snippets and all lower-register units have not been exhaustively transcribed."
-      },
-      {
-        "type": "Register",
-        "text": "Upper running explanatory or quoted scriptural words; where the scriptural quotation is inserted, the verse remains a citation rather than the commentator's own composition."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ23.240.035",
-    "volume": "II",
-    "page": 240,
-    "pdf": 535,
-    "category": "selection",
-    "quality": "source-image-direct-selection-needs-second-proof",
-    "title": "A saintly wonder and the mediation of a prophet",
-    "arabic": "كرامات الأولياء",
-    "english": "The saintly wonders of God's friends.",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed vol. II:240, original 632-image user-supplied source physical PDF page 535, directly rendered and read 3 November 2026.",
     "notes": [
       {
         "type": "Source extent",
@@ -1030,30 +838,6 @@
     "title": "Philosophers' spiritual interpretation",
     "arabic": "وأما المعاد الروحاني الذي يراه الفلاسفة",
     "english": "As for the spiritual return envisaged by the philosophers ...",
-    "sourceLayer": "sharh",
-    "citation": "Taqrīb al-Marām printed vol. II:240, original 632-image user-supplied source physical PDF page 535, directly rendered and read 3 November 2026.",
-    "notes": [
-      {
-        "type": "Source extent",
-        "text": "Precisely the selected Arabic words are translated; they are not the complete source page. Clauses around and between these snippets and all lower-register units have not been exhaustively transcribed."
-      },
-      {
-        "type": "Register",
-        "text": "Upper running explanatory or quoted scriptural words; where the scriptural quotation is inserted, the verse remains a citation rather than the commentator's own composition."
-      }
-    ],
-    "layers": {}
-  },
-  {
-    "id": "TQ23.240.042",
-    "volume": "II",
-    "page": 240,
-    "pdf": 535,
-    "category": "selection",
-    "quality": "source-image-direct-selection-needs-second-proof",
-    "title": "Evidence for bodily resurrection",
-    "arabic": "الشواهد",
-    "english": "The evidential attestations [adduced for bodily return].",
     "sourceLayer": "sharh",
     "citation": "Taqrīb al-Marām printed vol. II:240, original 632-image user-supplied source physical PDF page 535, directly rendered and read 3 November 2026.",
     "notes": [
