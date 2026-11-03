@@ -321,3 +321,20 @@
 - **0 pages newly certified** as complete main text PLUS every marginal note, independently proofed and collated.
 - The page-presence proxy from earlier surveys is unchanged; this work advances **clause-level source text**, not the number of pages having any editorial English.
 - **Next in uninterrupted reading:** II:246–260, especially the spiritual-versus-bodily resurrection dispute and the objection involving one human being consuming another's bodily constituents. Do not overwrite the independently translated Taftāzānī `Tahdhīb` branch.
+
+
+### F. A short CONTINUOUS upper-register source reading at II:242 (independent from the selected fragments)
+
+**Original printed II:242 / original PDF 537.** The entire short **upper** printed text between the page header and first horizontal dividing rule has now been transcribed in a distinct source unit `TQ24.II242.UPPER.01`. The significantly longer **lower marginal commentary on the same page is NOT translated**. An independent second reading of the 38 Arabic words and another primary witness are still pending, so this is **not** a completely critically certified original page.
+
+**Arabic, continuous first-pass printed upper text:**
+
+> المقاصد الأقرب أن تحمل الإعادة التي جعلت أهون على إعادة الأجزاء وما بقيت من المواد إلى ما كان عليه من الصور والتأليفات على ما يشير إليه قوله تعالى قل يحييها الذي أنشأها أول مرة لا على إعادة المعدوم
+
+**Close English:**
+
+“In the *Maqāṣid*, the more plausible interpretation is to take the restoration described as easier to mean the restoration of constituent parts and surviving material to their previous forms and combinations, as indicated by His saying, exalted is He, ‘Say: He who originated it the first time shall give it life,’ rather than the reinstatement of what has ceased to exist.”
+
+**Technical distinction:** `al-ajzāʾ` (constituents), `al-mawādd` (underlying material), `al-ṣuwar` (forms), and `al-taʾlīfāt` (combinations) are not redundant terms. The cited interpretation permits a restoration that depends on material continuity and reconfiguration, without necessarily affirming the metaphysical possibility of restoring an annihilated individual as numerically the same after total nonexistence. The source context and the long lower note must decide whether this is the commentator's chosen answer or a position reported for examination. The source heading `al-Maqāṣid` requires further bibliographical and exact-quotation identification.
+
+**Editorial counting:** One **continuous** upper-registry source record has been added, but it overlaps several of the 54 selected short phrases and cannot be counted as an additional translated whole original page or as newly translated independent marginalia.
