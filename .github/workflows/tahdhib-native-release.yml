@@ -1,0 +1,83 @@
+name: Tahdhib native Daruri reader release
+on:
+  workflow_dispatch:
+  push:
+    branches: [release/tahdhib-native-daruri-20261103]
+    paths:
+      - 'tools/tahdhib/native*'
+      - 'tools/tahdhib/build_native_reader.py'
+      - '.github/workflows/tahdhib-native-release.yml'
+  pull_request:
+    paths:
+      - 'tools/tahdhib/native*'
+      - 'tools/tahdhib/build_native_reader.py'
+      - '.github/workflows/tahdhib-native-release.yml'
+concurrency:
+  group: tahdhib-native-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  verify-native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned browser and build dependencies
+        run: |
+          python -m pip install beautifulsoup4==4.14.2
+          npm install --no-save --no-package-lock playwright@1.56.1 acorn@8.15.0
+          npx playwright install --with-deps chromium webkit
+      - name: Generate native Daruri editions without changing the source corpus
+        run: |
+          python tools/tahdhib/build_native_reader.py
+          find texts/al-taftazani -path '*/native/*.js' -exec node --check '{}' ';'
+          python - <<'PY'
+          import pathlib,json,hashlib
+          for name in ['kalam','mantiq']:
+              p=pathlib.Path('texts/al-taftazani/tahdhib-al-'+name+'/edition')
+              m=json.loads((p/'pdfs/edition_manifest.json').read_text())
+              assert hashlib.sha256((p/'data.js').read_bytes()).hexdigest()==m['source_sha256']
+              for f in m['files']:
+                  assert hashlib.sha256((p/f['href']).read_bytes()).hexdigest()==f['sha256']
+              print('PASS source hash and all three canonical PDF byte hashes',name)
+          PY
+      - name: Exercise actual native reader and retained source reader
+        run: |
+          python3 -m http.server 8765 >/tmp/tahdhib-native-http.log 2>&1 &
+          SERVER=$!
+          trap 'kill "$SERVER" || true' EXIT
+          sleep 2
+          node tools/tahdhib/native_qa.mjs
+          node tools/tahdhib/reader_qa.mjs
+          node tools/tahdhib/experience_qa.mjs
+          node tools/tahdhib/daruri_shell_qa.mjs
+      - name: Preserve observed browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tahdhib-native-browser-evidence
+          path: |
+            qa/tahdhib-native/
+            texts/al-taftazani/NATIVE_DARURI_BUILD_REPORT.json
+      - name: Commit tested generated readers on release branch
+        if: success() && github.event_name == 'push'
+        run: |
+          git config user.name 'gnamma-research'
+          git config user.email '13307564+gnamma-research@users.noreply.github.com'
+          git add texts/al-taftazani/tahdhib-al-kalam/edition/index.html texts/al-taftazani/tahdhib-al-kalam/edition/source-reader.html texts/al-taftazani/tahdhib-al-kalam/edition/native/
+          git add texts/al-taftazani/tahdhib-al-mantiq/edition/index.html texts/al-taftazani/tahdhib-al-mantiq/edition/source-reader.html texts/al-taftazani/tahdhib-al-mantiq/edition/native/
+          git add tools/tahdhib/daruri_shell_qa.mjs texts/al-taftazani/NATIVE_DARURI_BUILD_REPORT.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish verified native Daruri reader for both Tahdhib volumes; preserve source and PDF hashes'
+            git push origin HEAD:${{ github.ref_name }}
+          fi
