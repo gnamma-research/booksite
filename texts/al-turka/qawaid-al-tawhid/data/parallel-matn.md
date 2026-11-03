@@ -1,7 +1,7 @@
 # Qawāʿid al-Tawḥīd — ancestral matn
 ## Abū Ḥāmid Turka al-Iṣfahānī · Arabic–English critical working translation
 
-**Status: PARTIAL.** **61** source-located ancestral quotations from the grandson Ṣāʾin al-Dīn Ibn Turka's *Tamhīd al-Qawāʿid*, in the order in which the commentary quotes them; authorial closing formula on printed **p. 270**. This is **not a complete ancestral matn** and **not a manuscript-collated critical edition**.
+**Status: 61 available bilingual lemmata, QT-059 omission noted.** **61** source-located ancestral quotations from the grandson Ṣāʾin al-Dīn Ibn Turka's *Tamhīd al-Qawāʿid*, in the order in which the commentary quotes them; authorial closing formula on printed **p. 270**. This is **not a complete ancestral matn** and **not a manuscript-collated critical edition**.
 
 **Source:** Ibn Turka, *Tamhīd al-Qawāʿid*, ed. Sayyid Jalāl al-Dīn Āshtiyānī (Tehran, second printing 1360 SH/1982), accessed via published digital transcription of Arabic printed pp. **48–207**, with printed-page links below. Printed photographic leaf checks and independent manuscripts are pending. Quotations marked by the commentator's **قال** are translated as *matn*; his subsequent **أقول**, later Qajar marginal notes, modern Persian editorial discussion, and extracts quoted from the ancestor's *other books* are excluded. Editorial punctuation, headings and transliteration are provisional.
 
@@ -1583,7 +1583,7 @@ The final nine recovered original quotations extend the ancestral matn to its **
 ---
 
 
-### QT-059 · Sense and intellect are preparatory causes in both paths; the effusion of knowledge is from the First Principle [LACUNOSE]
+### QT-059 · Sense and intellect are preparatory causes in both paths; the effusion of knowledge is from the First Principle [surviving text; omission noted]
 
 **Printed Āshtiyānī pages:** 262–263–264 · [p.262](https://ablibrary.net/book_content/b/17638/458?lang=ar) · [p.263](https://ablibrary.net/book_content/b/17638/459?lang=ar) · [p.264](https://ablibrary.net/book_content/b/17638/460?lang=ar).
 
@@ -1597,7 +1597,7 @@ The final nine recovered original quotations extend the ancestral matn to its **
 
 **Textual and philosophical notes — the descendant's commentary kept separate**
 
-1. CRITICAL LACUNA: printed p.262 n.1 (continuing p.263) says the available copies share an abbreviated original quote, and a later scholar reported that scribes omitted more than a printed page. The exact lost clauses are not represented by the words reproduced here. This unit translates the SURVIVING quoted text only, not a reconstructed full ancestral argument.
+1. SOURCE NOTE (RECONSTRUCTION DEFERRED): The currently recorded Āshtiyānī online transcription supplies the surviving Arabic translated above. Its printed editorial note (pp.262–263) reportedly indicates that a portion of the ancestor's text was omitted in the available copies, perhaps more than a page. We retain all surviving words and do not supply unattested material. Direct access to online pages 458–460 failed during the 3 Nov 2026 recheck, so no additional missing text could be verified. This does not block reading the extant text.
 
 2. Starts قال on p.262 and runs across p.263, closing with 'وأما الثاني ...' on p.264 before (1) أقول. The grandson's lengthy later 'وأما بيان الثاني' at p.266 explains the missing argument but is NOT independently proven to be the grandfather's exact original and has been excluded.
 
