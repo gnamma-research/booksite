@@ -1,6 +1,12 @@
 # Qawāʿid al-Tawḥīd — Editorial status
 **Gnamma Research bilingual source-critical working edition · initiated 2 November, audited 3 November 2026**
 
+## Current editorial decision — QT-059 temporarily set aside (3 November 2026)
+
+**The bilingual reading edition may proceed without a reconstruction of QT-059.** The 61 authorial lemmata currently present in the online source transcription have Arabic and English. At QT-059 (Āshtiyānī pp.262–264), the existing transcription provides the surviving quoted text, while the printed editor's note reportedly describes a loss in the transmitted ancestor's wording. No replacement text is invented; the lacuna is documented **only** as a source note in QT-059 and the critical apparatus. The project does not need a PDF to keep publishing and using the extant translation.
+
+The source pages [262](https://ablibrary.net/book_content/b/17638/458?lang=ar), [263](https://ablibrary.net/book_content/b/17638/459?lang=ar), and [264](https://ablibrary.net/book_content/b/17638/460?lang=ar) were **not accessible on a fresh check on 3 November 2026**. Thus the loss remains *previously reported, not independently confirmed anew in this check*. Future recovery from another witness is optional and **deferred**; it should not delay the present bilingual reader. This is still **not** a diplomatically or stemmatically established critical edition, and the outstanding print-image/manuscript collation remains a separate scholarly upgrade.
+
 ## Scope, order of operations
 1. **Matn first:** reconstruct and translate the complete original *Qawāʿid al-Tawḥīd* of Abū Ḥāmid / Afḍal al-Dīn Muḥammad Turka al-Iṣfahānī, separately from the much longer commentary by his descendant Ṣāʾin al-Dīn ʿAlī ibn Turka.
 2. **Establish the matn:** trace the *qāla* quotation chain through the *Tamhīd*, check printed page photographs, obtain and compare independent manuscript copies of the ancestor's shorter text, register substantive and orthographic variants, and submit the translation for technical review.
