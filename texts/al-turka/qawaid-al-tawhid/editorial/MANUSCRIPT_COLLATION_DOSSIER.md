@@ -1,6 +1,8 @@
 # Qawāʿid al-Tawḥīd — manuscript collation and lacuna-recovery dossier
 
 **Gnamma Research — 3 November 2026 · Research dossier 1 · Evidence-limited**
+**Current scope decision (3 Nov 2026):** Recovery of QT-059 is **deferred**. The extant Arabic passage and English translation remain in the public reader; the omitted material is not supplied conjecturally. This dossier is archival background for future source collation and is **not a condition for using the 61-unit bilingual reading edition**. A fresh direct request for online source pages 458–460 was unsuccessful, so the previous transcription and omission report were not independently rechecked in this turn.
+
 
 **Authorial work:** Afḍal al-Dīn / Abū Ḥāmid Muḥammad Turka al-Iṣfahānī, *Qawāʿid al-Tawḥīd* (قواعد التوحيد). **Separate later work:** his descendant Ṣāʾin al-Dīn ʿAlī Ibn Turka's *Tamhīd al-Qawāʿid* commentary. Do **not** confuse with Nasafī's *al-Tamhīd li-Qawāʿid al-Tawḥīd*, or with juristic *Tamhīd* works.
 
