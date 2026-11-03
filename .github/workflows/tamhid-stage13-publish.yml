@@ -1,0 +1,66 @@
+name: Tamhid stage13 publish
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/tamhid-stage13-publish.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: tamhid-stage13-publication
+  cancel-in-progress: false
+jobs:
+  assemble-test-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /texts/al-turka/qawaid-al-tawhid/
+            /texts/manifest.json
+          sparse-checkout-cone-mode: false
+      - name: Obtain the exact source archive reviewed for this installment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api repos/gnamma-research/booksite/actions/artifacts/13273822459/zip > /tmp/tamhid-stage13-source.zip
+      - name: Correct a copied hash literal before validation
+        shell: python
+        run: |
+          from pathlib import Path
+          p=Path('texts/al-turka/qawaid-al-tawhid/qa/extend-main-stage13.py')
+          s=p.read_text(encoding='utf-8')
+          # The reviewed SH025 digest is 64 hex characters. A copy added two
+          # characters to this literal; this correction uses the fixed reviewed
+          # value, not a newly computed digest from the downloaded source.
+          bad='fcdb2cc9673abb9d7aca1296f0cff3ade99b7b922be71fb5e4cf6ddff8569d112a'
+          good='fcdb2cc9673abb9d7aca1296f0cff3ade99b922be71fb5e4cf6ddff8569d112a'
+          if bad in s:
+              assert s.count(bad)==1
+              p.write_text(s.replace(bad,good),encoding='utf-8')
+          else:
+              assert good in s
+      - name: Verify reviewed Arabic and assemble translation and reader changes
+        run: python texts/al-turka/qawaid-al-tawhid/qa/extend-main-stage13.py --source-zip /tmp/tamhid-stage13-source.zip
+      - name: Check corpus and reader interactions
+        run: node texts/al-turka/qawaid-al-tawhid/qa/check-commentary.mjs
+      - name: Export cumulative and installment texts
+        run: |
+          cp texts/al-turka/qawaid-al-tawhid/qa/export-stage13.mjs texts/al-turka/qawaid-al-tawhid/qa/export-commentary.mjs
+          node texts/al-turka/qawaid-al-tawhid/qa/export-commentary.mjs
+      - name: Publish only this book and its scoped catalogue update
+        run: |
+          git config user.name 'gnamma-research'
+          git config user.email '13307564+gnamma-research@users.noreply.github.com'
+          git add texts/al-turka/qawaid-al-tawhid texts/manifest.json
+          if git diff --cached --quiet; then echo 'No changes'; exit 0; fi
+          git commit -m 'Publish Tamhid commentary through QT038: 21 new explanations, 86 bilingual units, explicit source cruxes'
+          git push origin HEAD:master
+      - name: Preserve the reviewable edition and test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tamhid-stage13-review
+          path: texts/al-turka/qawaid-al-tawhid/
+          retention-days: 7
