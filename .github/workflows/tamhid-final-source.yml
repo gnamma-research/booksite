@@ -1,0 +1,54 @@
+name: Tamhid final source review
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/tamhid-final-source.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  retrieve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: texts/al-turka/qawaid-al-tawhid
+      - run: python -m pip install --quiet beautifulsoup4
+      - name: Retrieve the next original commentary pages
+        shell: python
+        run: |
+          import urllib.request,pathlib,json,time,hashlib,concurrent.futures
+          from bs4 import BeautifulSoup
+          out=pathlib.Path('source-final');out.mkdir()
+          def get(p):
+              url=f'https://ablibrary.net/book_content/b/17638/{p+196}?lang=ar'
+              row={'printed_page':p,'url':url}
+              try:
+                  req=urllib.request.Request(url,headers={'User-Agent':'Gnamma scholarly source verification; public medieval text'})
+                  with urllib.request.urlopen(req,timeout=25) as response:raw=response.read(1500000)
+                  soup=BeautifulSoup(raw,'html.parser');a=soup.select_one('[itemprop="articleBody"]')
+                  if a is None:raise ValueError('Missing articleBody; not an empty source page')
+                  row['html_sha256']=hashlib.sha256(raw).hexdigest()
+                  for nav in a.select('nav'):nav.decompose()
+                  (out/f'page-{p}-article.html').write_text(str(a),encoding='utf-8')
+                  row['remarks']=[e.get_text('\n',strip=True) for e in a.select('[data-abl-content="remark"]')]
+                  for e in a.select('[data-abl-content="remark"]'):e.decompose()
+                  row['text']=a.get_text('\n',strip=True)
+                  row['words']=len(row['text'].split())
+              except Exception as e:row['error']=str(e)
+              time.sleep(.6);return row
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:pages=list(pool.map(get,range(172,271)))
+          report={'edition':'A: Ashtiyani electronic transcription','scope':'printed pp.172–270; marked modern remarks separated; prose and verse retained','pages':pages,'failures':[p['printed_page'] for p in pages if 'error' in p]}
+          (out/'source-pages.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+          (out/'source-main.txt').write_text('\n\n'.join('===== '+str(p['printed_page'])+' =====\n'+p.get('text','[SOURCE ERROR]') for p in pages),encoding='utf-8')
+          print(json.dumps({'pages':len(pages),'failures':report['failures'],'words':sum(p.get('words',0) for p in pages)}))
+          if report['failures']:raise RuntimeError('Source retrieval incomplete')
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tamhid-final-source-and-reader
+          path: |
+            source-final/
+            texts/al-turka/qawaid-al-tawhid/
+          retention-days: 3
