@@ -1072,3 +1072,48 @@ The previous Stage 26 full handoff remains an independently addressable complete
 Directly inspect and translate printed original **II:269–274** (PDF **564–569**), beginning with the continuation of eschatological duration and progressing into the authentic original **`فصل` on divine forgiveness at II:270**. Preserve original page-crossing lemmas, distinguish the *aṣḥāb al-kabāʾir*, repentance, forgiveness and intercession, and separately identify each marginal `qawl`/objection. The next deliverables must include (a) actual source-language and English clauses, (b) individually attributed or **UNASSIGNED** marginal text, (c) honest source/critical progress and (d) a **full cumulative snapshot at the end of the stage**.
 
 **Overall limitation:** all 615 printed positions are mapped but most original Arabic words in both volumes—particularly the ḥāshiya layers—are still **not** transcribed or translated. A definitive complete edition must not be claimed from a high orientation/page-presence number, and a Wasīm-specific percentage cannot yet be computed.
+
+
+---
+
+## 31. Stage 28 — pardon, divine promise/threat and intercession (3 November 2026)
+
+### Actual source documents and newly created bilingual edition
+
+**Primary original:** the same user-supplied image-only combined two-volume `taqribmaram(2).pdf`, containing 632 physical PDF pages. Original **printed II:269–274 = physical PDF images 564–569**. All six original Arabic page images were rendered and inspected in detail. The material at II:269 continues the prior grave-sinner debate; the true source **`فصل`** on forgiveness starts within II:270, not at the beginning of II:269.
+
+**Independent base text:** Cairo **1912 original printed *Tahdhīb* pp.110–111**, again checked from the original photographic source, *not* an earlier bilingual working file. It supports selected original Taftāzānī parentheticals but is not evidence of Sanandajī's own explanatory sentences or marginal Wasīm authorship. The independent Tahdhīb matn project was not modified.
+
+**New reader resource:** `continuous-II269-II274-forgiveness-intercession.js` with **21 source-checked short bilingual upper source selections** and **two** separate source-matched lower-register fragments with individual writers explicitly **UNASSIGNED** (one at II:270, one at II:274). After source image zoom verification two prematurely conjectured lower quotations were corrected, and ten trivial or uncertain first-pass excerpts were omitted rather than falsely counted.
+
+**New scholarly edition:** `editorial/2026-11-03_STAGE28_II269_II274_PARDON_INTERCESSION_SOURCE_TRANSLATIONS.md` containing the original Arabic selection and close English for each record, careful level attribution, and a technical discussion of pardon, repentance, threat, general textual language and intercession. The entire upper and lower register of the six pages is NOT yet transcribed, so this is **not a complete translation of six printed pages**.
+
+### Essential critical reading points
+
+1. **Two distinct claims:** God being *permitted* to pardon (`jawāz al-ʿafw`) is not identical to the claim that pardon *occurs* (`wuqūʿ`). The separate small-print note at **II:270** draws this distinction and interprets an earlier verse as attesting forgiveness after repentance versus `ويعفو عن السيئات` as support for forgiveness without importing that same restriction.
+2. Original II:270 records a claim of general agreement that God pardons minor sins, and major sins after repentance; it separately states an exclusion for `kufr` in the specified theological setting. **The subsequent controversy** concerns pardon for major sins without repentance, different semantic scopes of `إن الله يغفر الذنوب جميعا` and `إن الله لا يغفر أن يشرك به`, and the temporal and personal restrictions of each scriptural generalization.
+3. **II:271–273** report a Muʿtazilite refusal to admit pardon of the unrepentant grave sinner and dispute whether an apparent universal threat could be restricted or remitted without a false divine statement. Do not turn a scholastic report of a school's doctrine into an independently witnessed statement by a named Muʿtazilī.
+4. **II:274** connects the possibility of pardon with intercession, quotes or reports evidence, and distinguishes remission of punishment, prevention of its onset, and improvement of rank. The lower **UNASSIGNED** note examines the wording `فما تنفعهم شفاعة الشافعين`, asking what negative implications for one class may mean about others. It is not a fully translated marginal note and cannot be credited positively to Wasīm.
+5. The actual source's **matn versus sharḥ** division and quoted scripture remain independent; the unresolved question of how many distinct marginal writers appear at II:269–274 is recorded, not guessed.
+
+### Individual stage completeness and cumulative progress
+
+| Item | Accurate state |
+|---|---|
+| Original numbered printed positions indexed | **615/615** — 100% source bibliography |
+| Positions with any English context or selected original excerpt | **601/615** — 97.72% *page presence only*, NOT complete translated Arabic |
+| Whole printed pages with all original main and every margin translated, individual writer authenticated and independent critical verification | **0/615** — 0% certified |
+| Original printed page images inspected closely in Stage 28 | **6**, II:269–274 |
+| Stage 28 directly source-verified short upper Arabic/English records | **21** |
+| Stage 28 selected lower-register snippets, writer unassigned | **2**, II:270 and II:274 |
+| New positively authenticated Wasīm gloss units | **0** |
+| True source-Arabic-word coverage percentage / denominator of all Wasīm notes | **Unknown** |
+| Count of individual cumulative **full handoff snapshots** newly saved across stages 26, 27, 28 | **3** separate complete snapshots (each includes all previous history) |
+
+The NAMA `index.html` page loads the Stage 28 source module and links both its scholarly dossier and this **standalone Stage 28 full cumulative handoff**. The reader's two progress bars remain anchored to separate, transparent denominators (**615/615 indexed**, **0/615 all-register critically certified**); the high 601/615 first-English-presence statistic is explicitly excluded from claiming translated-word completion. Stage 26 and Stage 27 standalone full handoff files remain intact and do not get overwritten.
+
+### Next stage and other remaining work
+
+**Stage 29:** original **II:275–280** (source PDF 570–575), beginning the original `فصل في التوبة` on repentance. First complete the Arabic and English of actual source clauses and any bounded marginal unit that can be accurately transcribed, then independently collate exact note authorship. Create **another complete cumulative Stage 29 handoff**, not merely a delta, and update the canonical full master. Do **not** re-do source indexing or infer that the earlier page-context guides represent word-complete translation.
+
+**Absolute scholarly limitation:** while original pages in both volumes have been located, most of Sanandajī's running prose and the enormous lower-register marginal corpus remains untranslated. No full source page meets the critical-certification gate; neither the source-word total nor the Wasīm-gloss unit denominator has yet been established. Presenting the project as a completed critical edition would therefore be incorrect.
