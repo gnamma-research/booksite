@@ -64,6 +64,7 @@ function visualsPanel(){open('Visuals',root=>{
  select(root,'Arabic font',[['amiri','Amiri'],['scheherazade','Scheherazade New'],['noto','Noto Naskh Arabic']],pref.arFont,v=>{const e=$('#gn-ar-font');if(e){e.value=v;e.dispatchEvent(new Event('change',{bubbles:true}))}});
  select(root,'English font',[['literary','Literary serif'],['sans','Source Sans 3'],['accessible','Lexend']],pref.enFont,v=>{const e=$('#gn-en-font');if(e){e.value=v;e.dispatchEvent(new Event('change',{bubbles:true}))}});
  select(root,'Appearance',[['light','Light'],['dark','Dark'],['sepia','Sepia']],state.theme,v=>{for(let i=0;i<3&&api.getState().theme!==v;i++)click('#theme')});
+ select(root,'Colours',[['almohad','Almohad plaster'],['cordoba','Córdoba arches'],['nasrid','Nasrid mineral'],['zellij','Zellij green'],['gnamma','Gnamma landscape'],['gnamma-air','Gnamma · open landscape']],document.body.dataset.gnPalette||'almohad',v=>{document.body.dataset.gnPalette=v;try{localStorage.setItem('gnamma-tahdhib-palette',v)}catch{}});
  select(root,'Page layout',[['en-left','English left · Arabic right'],['ar-left','Arabic left · English right']],document.body.dataset.gnOrder||'en-left',v=>{document.body.dataset.gnOrder=v;try{localStorage.setItem('gnamma-tahdhib-order',v)}catch{}});
  const row=setting(root,'Text size');const group=el('div','gn-daruri-scale');group.append(btn('Smaller text','visuals',()=>click('#smaller')),btn('Larger text','visuals',()=>click('#larger')));row.append(group);
  const refs=setting(root,'Source-page locators');const check=el('input');check.type='checkbox';check.checked=pref.pageRefs;check.setAttribute('aria-label','Show source-page locators');check.addEventListener('change',()=>{const e=$('#gn-page-references');if(e){e.checked=check.checked;e.dispatchEvent(new Event('change',{bubbles:true}))}});refs.append(check);
@@ -121,6 +122,7 @@ function sync(){
 }
 document.body.dataset.gnOrder=(()=>{try{return localStorage.getItem('gnamma-tahdhib-order')||'en-left'}catch{return'en-left'}})();
 document.body.dataset.gnPageStyle=(()=>{try{return localStorage.getItem('gnamma-tahdhib-page-style')||'quiet'}catch{return'quiet'}})();
+document.body.dataset.gnPalette=(()=>{try{return localStorage.getItem('gnamma-tahdhib-palette')||'almohad'}catch{return'almohad'}})();
 const toolbar=$('.toolbar');toolbar?.parentNode.insertBefore(bar,toolbar);
 for(const [selector,d] of [['#dock-prev','m15 5-7 7 7 7'],['#dock-next','m9 5 7 7-7 7']]){
  const b=$(selector);if(!b)continue;const s=document.createElementNS('http://www.w3.org/2000/svg','svg');
