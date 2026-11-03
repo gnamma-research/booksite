@@ -17,6 +17,7 @@
 /* The duplicate, older Tahdhib-specific toolbar remains available to its scripts,
    but is removed from keyboard traversal and visual presentation by the shell. */
 .main > .toolbar{display:none!important}
+.gn-legacy-controls .main > .toolbar{display:flex!important}
 body[data-reading-style="flow"] .page-strip,body[data-reading-style="flow"] .end-nav{display:none!important}
 body[data-reading-style="immersive"] #gn-daruri-toolbar{position:sticky;top:0;margin:0 0 20px;border-top:0;border-radius:0 0 10px 10px}
 body[data-reading-style="immersive"] .main{padding-top:0}
