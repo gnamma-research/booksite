@@ -38,6 +38,8 @@ The existing apparatus enumerates **69 transcription/variant/conjecture records*
 
 Detailed [manuscript recovery and bibliography dossier](MANUSCRIPT_COLLATION_DOSSIER.md); [61-unit structured collation register](COLLATION_REGISTER.json). **No change of Arabic base text is licensed yet.**
 
+**House-style decision for QT-001 (3 Nov 2026):** The bilingual **reader** now begins «الحمد لله رب العالمين» as the adopted conventional opening, following the catalogue report at the editor's direction; A's «الحمد لوليّه» is preserved verbatim here. This is an eclectic reading-text normalization, not a determination of a manuscript archetype. It does **not** change the existing 69 entries in the preliminary register, which count a separate base-text audit. All other catalogue differences remain unapplied until direct witness comparison.
+
 ## 2. Source hierarchy and sigla
 
 | Siglum | Source | Actual use in this edition |
