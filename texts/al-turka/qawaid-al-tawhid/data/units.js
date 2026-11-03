@@ -6,7 +6,7 @@
 */
 window.GNAMMA_QAWAID_MATN = {
   "edition": "Āshtiyānī 1982, digital page transcription",
-  "status": "61-bilingual-matn-lemmas-ending-at-p270-critical-audit-open-lacuna-QT059-no-manuscript-collation",
+  "status": "61-bilingual-lemmas-of-available-source-text-with-QT059-source-note-critical-collation-pending",
   "units": [
     {
       "id": "QT-001",
@@ -1994,7 +1994,7 @@ window.GNAMMA_QAWAID_MATN = {
       "arabic": "وما قيل إنّ علوم النظّار مأخوذة من الحواسّ وعلوم أصحاب المجاهدة مأخوذة من المبدأ الفيّاض فليس بشيء، فإنّ الحواسّ هي المعدّات الأُوَل في الطريقين، ومفيض المعارف والعلوم هو المبدأ الفيّاض بالذات. أمّا الأوّل فكونها معدّة في طريق النظر ظاهر، وكونها معدّة في الطريق الآخر فلأنّها لو لم تكن معدّة لما تعلّقت النفس الناطقة ببدنه البتّة، ثمّ إنّ الكمال الحقيقي لا بدّ وأن يحصل لها بعد انقطاع ذلك التعلّق بالموت. فلئن قيل: جاز أن يكتسب من ذلك التعلّق ما يمنعه عن الوصول إليه. قلنا: فعلى هذا يجب حصول ذلك الكمال قبل تعلّقها، وحينئذ لم تتعلّق به البتّة. فلئن قلتم: فكما يكتسب من ذلك التعلّق ملكات مانعة للوصول فلا يبعد أن يكتسب منه ملكات أُخَر تُعَدّ من جملة الأسباب والشروط المطلقة. قلنا: فعلى هذا قد رجعتم إلى ما هو الحقّ واعترفتم به بعد ما أنكرتموه. وأمّا الثاني فلما بيّنّاه في كتبنا المعمولة في صناعة الحكمة.",
       "english": "The assertion that the speculative philosophers derive their knowledge from the senses, whereas those who undertake spiritual exertion derive theirs from the effusive Principle, is mistaken. The senses provide the first preparatory conditions in both paths, while the principle that actually bestows cognitions and sciences is, through itself, the effusive Principle. As for the first claim: that the senses prepare one for rational investigation is obvious. But they are preparatory also for the other path: were they not, the rational soul would never have become attached to its body. True perfection, moreover, must become available to the soul when that bodily attachment is severed by death. If one objects that bodily association can impart dispositions that prevent attainment, we answer that, on that supposition, the perfection must have been attainable prior to association with the body; why, then, should the soul have become attached to it at all? If the opponent replies that, just as bodily association can impart obstructive habits, it may equally impart other habits that serve as preparatory causes and conditions, we answer: you have now returned to the truth and conceded what you previously denied. As for the second claim, its explanation has already been supplied in our works on philosophical science.",
       "notes": [
-        "CRITICAL LACUNA: printed p.262 n.1 (continuing p.263) says the available copies share an abbreviated original quote, and a later scholar reported that scribes omitted more than a printed page. The exact lost clauses are not represented by the words reproduced here. This unit translates the SURVIVING quoted text only, not a reconstructed full ancestral argument.",
+        "SOURCE NOTE — DEFERRED, NOT RECONSTRUCTED: The extant digital transcription of Āshtiyānī printed pp.262–264 supplies the surviving words translated here. Its earlier editorial apparatus reportedly notes omitted original material (possibly exceeding a printed page). No additional Arabic is recoverable from the transcription currently in the working file. Preserve this passage without inserting speculative words, and leave recovery for independent textual witnesses. A fresh attempted site access on 3 Nov 2026 was unsuccessful; no new missing text was directly verified.",
         "Starts قال on p.262 and runs across p.263, closing with 'وأما الثاني ...' on p.264 before (1) أقول. The grandson's lengthy later 'وأما بيان الثاني' at p.266 explains the missing argument but is NOT independently proven to be the grandfather's exact original and has been excluded.",
         "Material corruption near p.263: the 1st conditional's reading 'وحينئذ لم تعلّق به' is syntactically difficult; a stronger inference may be intended. It is not silently repaired.",
         "Technically: the senses are causes of iʿdād (preparation), NOT sources that efficiently bestow intelligible forms (ifāḍa). Both routes receive knowledge from the effusive Principle; this does not erase differences in their immediate psychological operations."
@@ -2017,7 +2017,9 @@ window.GNAMMA_QAWAID_MATN = {
         "authorialBoundaryIndependentCheck": false,
         "apparatusStatus": "provisional",
         "knownLacuna": true,
-        "notes": "Reported multi-line or page-length loss; surviving quotation only."
+        "notes": "Source-reported omission noted; extant quotation retained; reconstruction explicitly deferred. No new source material checked on 2026-11-03.",
+        "lacunaDisposition": "noted-and-deferred-no-invented-reconstruction",
+        "workingTranslationCompleteForAvailableLemma": true
       }
     },
     {
@@ -2133,6 +2135,9 @@ window.GNAMMA_QAWAID_MATN = {
     "manuscriptDossier": "editorial/MANUSCRIPT_COLLATION_DOSSIER.md",
     "cataloguedManuscriptsVerified": 3,
     "originalSeparatePrintedEditionIdentified": "Hādīzādeh, Nuṣūṣ wa-rasāʾil IV:37–72 (not examined)",
-    "openingEditorialPolicy": "QT-001 reader begins الحمد لله رب العالمين by editorial choice; A الحمد لوليه is preserved in apparatus; not critically stemma-confirmed."
+    "openingEditorialPolicy": "QT-001 reader begins الحمد لله رب العالمين by editorial choice; A الحمد لوليه is preserved in apparatus; not critically stemma-confirmed.",
+    "workingEditionState": "All 61 currently transcribed and translated authorial lemmata available to reader; QT-059 source-reported omission recorded and reconstruction deferred.",
+    "qt059Disposition": "Read surviving quotation normally; source note on missing material; exclude reconstruction from current scope.",
+    "onlineSiteRecheck": "3 Nov 2026: direct access to source indices 458–460 failed; no new passage verified."
   }
 };
