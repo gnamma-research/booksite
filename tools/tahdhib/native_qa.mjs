@@ -35,6 +35,11 @@ for(const [engine,driver] of [['chromium',chromium],['webkit',webkit]]){
    expect(await page.evaluate(()=>scrollY)>200,'Final passage not reachable by uninterrupted scroll');
    await page.evaluate(()=>window.TahdhibNative.goSection('1'));
    expect(await page.locator('#gn-daruri-toolbar').count()===0,'Separate imitation toolbar remains');
+   // Native Continuous intentionally hides Visuals; use the real mode picker,
+   // then exercise the same native Visuals control available in Reading.
+   await page.locator('#focusToolbar').click();
+   await page.locator('#gn-reading-mode-picker [data-gn-reader-mode="reading"]').click();
+   expect(await page.locator('#reader .passage-grid').count()>0,'Native Reading mode lost text');
    await page.locator('#settingsBtn').click();
    expect(await page.locator('#settingsOverlay').isVisible(),'Native Visuals did not open');
    for(const attr of ['data-page-style-choice','data-arabic-font-choice','data-english-font-choice'])expect(await page.locator('#settingsOverlay ['+attr+']').count()>=3,'Missing native visual choices '+attr);
@@ -70,9 +75,8 @@ for(const [engine,driver] of [['chromium',chromium],['webkit',webkit]]){
    expect((await page.evaluate(()=>window.TahdhibNative.desk.records())).some(r=>r.body==='Native Tahdhīb QA personal note.'),'Saved notes lost after navigation/reload');
    expect(await page.evaluate(kind=>localStorage.getItem('gnamma-tahdhib-private-notes-v1-'+kind),kind)===legacyBefore,'Legacy notes overwritten during migration');
    if(kind==='kalam')expect(data.notes.some(n=>n.kind==='crux'&&n.text.includes('KAL-077.03')),'Uncertain p.77 silently certified');
-   await page.evaluate(()=>window.GnammaReaderModes.setMode('reading'));
-   expect(await page.locator('#reader .passage-grid').count()>0,'Normal native reading broken');
-   await page.evaluate(()=>window.GnammaReaderModes.setMode('continuous'));
+   await page.locator('#focusToolbar').click();
+   await page.locator('#gn-reading-mode-picker [data-gn-reader-mode="continuous"]').click();
    expect(await page.locator('#reader .passage-grid').count()===count,'Mode transition lost complete text');
    const overflow=await page.evaluate(()=>({w:document.documentElement.clientWidth,s:document.documentElement.scrollWidth}));
    expect(overflow.s<=overflow.w+3,'Horizontal body overflow '+JSON.stringify(overflow));
