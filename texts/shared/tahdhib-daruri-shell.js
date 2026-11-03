@@ -39,7 +39,7 @@ for(const [v,label] of [['ar','ع'],['en','EN'],['both','ع/EN']]){const b=el('b
 second.append(languages);
 const vowel=btn('Arabic vowels','read',()=>{const p=ex.getPrefs(),next=p.vocalization==='original'?'assisted':'original';click('[data-vowel-mode="'+next+'"]');sync()});
 vowel.id='gn-daruri-vowels';vowel.querySelector('svg').replaceWith(el('span','gn-daruri-vowel-letter','حَ'));second.append(vowel);
-second.append(btn('Saved','saved',savedPanel),btn('Notes','note',()=>click('#gn-notebook-button')),btn('Visuals','visuals',visualsPanel),btn('Editions','pdf',pdfs),btn('Help','help',helpPanel));
+second.append(btn('Saved','saved',savedPanel),btn('Notes','note',()=>click('#gn-notebook-button')),btn('Dictionary','read',()=>window.GnammaTahdhibTerms?.open()),btn('Subject index','contents',()=>window.GnammaTahdhibSubjectIndex?.open()),btn('Visuals','visuals',visualsPanel),btn('Editions','pdf',pdfs),btn('Help','help',helpPanel));
 const overlay=el('div','gn-daruri-overlay');overlay.id='gn-daruri-overlay';overlay.hidden=true;
 const sheet=el('section','gn-daruri-sheet');sheet.setAttribute('role','dialog');sheet.setAttribute('aria-modal','true');sheet.setAttribute('aria-labelledby','gn-daruri-title');overlay.append(sheet);
 let lastFocus=null;
