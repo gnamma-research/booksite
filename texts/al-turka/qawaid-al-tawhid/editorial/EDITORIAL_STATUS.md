@@ -7,10 +7,20 @@
 
 The source pages [262](https://ablibrary.net/book_content/b/17638/458?lang=ar), [263](https://ablibrary.net/book_content/b/17638/459?lang=ar), and [264](https://ablibrary.net/book_content/b/17638/460?lang=ar) were **not accessible on a fresh check on 3 November 2026**. Thus the loss remains *previously reported, not independently confirmed anew in this check*. Future recovery from another witness is optional and **deferred**; it should not delay the present bilingual reader. This is still **not** a diplomatically or stemmatically established critical edition, and the outstanding print-image/manuscript collation remains a separate scholarly upgrade.
 
+## Stage 11 — Reader parity and separate commentary translation (3 November 2026)
+
+**Implemented in the live source tree:** Darūrī-family compact header and appearance settings; independent Arabic/English visibility (at least one language always active); source-graded **Matn / Together / Sharḥ** views; four focus levels including a flowing, all-sections continuous scroll without repeated cards; mobile bottom section dock; contents/search; browser-local bookmarks and personal notes with JSON export; passage permalinks, notes and edition links. Interface files: [reader.css](../reader.css), [reader.js](../reader.js), [index.html](../).
+
+**Independent sharḥ layer created:** [data/commentary.js](../data/commentary.js) with two Arabic–English commentary passages [SH-061-A/B](COMMENTARY_TRANSLATION.md), **directly linked to the printed Arabic on p.274** at the end of Ṣāʾin al-Dīn's Tamhīd. The first explains the perfected guide and the measure peculiar to each spiritual station; the second is the grandson's final sentence. This is *not* the earlier ancestor's conclusion at QT-061 or the separate editor Āshtiyānī's colophon following the commentary. The separate commentary's initial pp.3–47 and the remaining **أقول** passages are still **untranslated**, with spaces reserved under stable matn IDs. We have **begun**, not finished, the commentary translation.
+
+**Original matn preserved:** 61 units and their English translations continue to load from unchanged [data/units.js](../data/units.js). The earlier decision to adopt «الحمد لله رب العالمين» in the reader and defer QT-059 recovery remains as documented. Source notes and the critical apparatus retain open textual uncertainty.
+
+**QA limitation:** Source integrity, cross-layer ID references, data loads, code syntax and initial rendering were tested in a synthetic DOM harness; a real Safari/iOS visual acceptance test has **not** yet been performed. Reader parity is at the level of core interaction **patterns**, not a claim that the full Darūrī historical dictionary, five PDF editions, offline archive or all bespoke scholarly tools have been copied.
+
 ## Scope, order of operations
 1. **Matn first:** reconstruct and translate the complete original *Qawāʿid al-Tawḥīd* of Abū Ḥāmid / Afḍal al-Dīn Muḥammad Turka al-Iṣfahānī, separately from the much longer commentary by his descendant Ṣāʾin al-Dīn ʿAlī ibn Turka.
 2. **Establish the matn:** trace the *qāla* quotation chain through the *Tamhīd*, check printed page photographs, obtain and compare independent manuscript copies of the ancestor's shorter text, register substantive and orthographic variants, and submit the translation for technical review.
-3. **Then, and only then, separately edit/translate the sharḥ:** the descendant's *a-qūlu* explanations must occupy a different text/witness layer and must not enter the ancestor's English prose.
+3. **Translate the sharḥ in a separate layer:** now started with the independently checked closing passages p.274; continue the original introductory sections and all subsequent *a-qūlu* explanations only as their Arabic is verified. Never insert them into the ancestor's English prose.
 
 ## Current work completed
 - **61** source-located ancestor quotation lemmata, QT-001–QT-061, reproduced in normalized but source-located Arabic and independently translated into scholarly English (not manuscript-collated).
