@@ -1,0 +1,60 @@
+name: Tahdhib native published-site verification
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'texts/al-taftazani/tahdhib-al-kalam/edition/native/**'
+      - 'texts/al-taftazani/tahdhib-al-kalam/edition/index.html'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/native/**'
+      - 'texts/al-taftazani/tahdhib-al-mantiq/edition/index.html'
+      - 'tools/tahdhib/native_qa.mjs'
+      - '.github/workflows/tahdhib-native-live.yml'
+concurrency:
+  group: tahdhib-native-published-site
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  published-reader:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install public-site browser checks
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium webkit
+      - name: Verify deployed native assets match this commit
+        run: |
+          python - <<'PY'
+          import hashlib,pathlib,time,urllib.request
+          root='https://gnamma-research.github.io/booksite/'
+          paths=[f'texts/al-taftazani/tahdhib-al-{name}/edition/{file}' for name in ['kalam','mantiq'] for file in ['index.html','native/book-data.js','native/reader-core.js','native/book-adapter.js']]
+          expected={p:hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest() for p in paths}
+          for attempt in range(45):
+              mismatch=[]
+              for p in paths:
+                  try:
+                      request=urllib.request.Request(root+p+'?deployment='+str(attempt),headers={'Cache-Control':'no-cache'})
+                      with urllib.request.urlopen(request,timeout=25) as response: actual=hashlib.sha256(response.read()).hexdigest()
+                      if actual!=expected[p]: mismatch.append(p)
+                  except Exception: mismatch.append(p)
+              if not mismatch:
+                  print('PASS public deployed hashes for all eight native entry/core/data files');break
+              print('Deployment not yet matched:',', '.join(mismatch),flush=True);time.sleep(10)
+          else: raise SystemExit('Public site has not delivered this exact native reader revision')
+          PY
+      - name: Exercise both published books in Chromium and WebKit
+        env:
+          TAHDHIB_QA_BASE: https://gnamma-research.github.io/booksite/
+        run: node tools/tahdhib/native_qa.mjs
+      - name: Preserve public-site screenshots and test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tahdhib-native-live-evidence
+          path: qa/tahdhib-native/
