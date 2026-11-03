@@ -26,7 +26,7 @@
         "en-selected"
       ],
       "url": "texts/al-turka/qawaid-al-tawhid/",
-      "note": "Darūrī-family bilingual reader for the ancestral Qawāʿid: 61 Arabic–English matn units (Āshtiyānī pp.48–270), plus a separately attributed commentary layer for Ṣāʾin al-Dīn Ibn Turka's Tamhīd. Two source-checked sharḥ excerpts have been translated from printed p.274; the opening commentary and intervening units are reserved, not translated. Interface includes independent Arabic/English visibility, Matn/Together/Sharḥ, four focus levels including continuous reading, source notes, search, bookmark/notes storage, display settings, source references and bottom navigation. QT-059 reported omission remains noted and deferred. This is a working edition, not independently manuscript-collated.",
+      "note": "61 separate matn units; 65 commentary units: 40 authorial introductory sections, 19 continuous main explanations on QT001–019 at Ashtiyani pp.48–95, and six closing sections at pp.270–274. Lumbard is checked where his selection overlaps. QT020–060 commentary remains untranslated; QT059 source omission remains noted and deferred. No independent manuscript collation is claimed.",
       "comparative_translation_notes_url": "texts/al-turka/qawaid-al-tawhid/editorial/LUMBARD_COMPARISON.md",
       "matn_units": 61,
       "edition_audit_url": "texts/al-turka/qawaid-al-tawhid/editorial/EDITORIAL_STATUS.md",
@@ -40,9 +40,14 @@
       "separate_original_matn_publication": "Majid Hadizadeh edition, Nusus wa-Rasail IV:37-72 (not yet inspected)",
       "qt059_disposition": "source-note-only-no-reconstruction-current-edition",
       "reader_ui_parity": "daruri-family-layout-v1-compact-toolbar-focus0-3",
-      "sharh_translation_status": "2-verified-excerpts-printed-p274-opening-p3-untranslated",
+      "sharh_translation_status": "introduction-and-main-QT001-019-and-conclusion-translated; QT020-060-pending",
       "sharh_translation_url": "texts/al-turka/qawaid-al-tawhid/editorial/COMMENTARY_TRANSLATION.md",
-      "sharh_units": 2
+      "sharh_units": 65,
+      "sharh_introduction_units": 40,
+      "sharh_main_units": 19,
+      "sharh_conclusion_units": 6,
+      "sharh_reader_url": "texts/al-turka/qawaid-al-tawhid/commentary.html",
+      "lumbard_commentary_standard_url": "texts/al-turka/qawaid-al-tawhid/editorial/LUMBARD_COMMENTARY_STANDARD.md"
     },
     {
       "id": "ghazali-mustasfa",

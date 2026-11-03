@@ -89,7 +89,7 @@ function renderUnit(u,index,continuous){
  const notes=matnLayer?notesMarkup([...(u.notes||[]),...(u.variants||[]).map(v=>v.lemma+" / "+v.other+": "+v.remark)],"Matn notes and readings"):"";
  const matnHtml=matnLayer?'<div class="matn-body"><h3>'+esc(u.title)+'</h3>'+textPair(u.arabic,u.english)+'</div>':"";
  const commHtml=commentaryLayer?(related.length?'<div class="commentary-list">'+related.map(renderCommentary).join("")+'</div>':
-   (!continuous?'<div class="untranslated"><h3>Commentary reserved</h3><p>The commentary for '+esc(u.id)+' has not yet been source-checked and translated. Its place is reserved here; no reconstructed Arabic is displayed.</p><button class="text-btn" type="button" data-go-verified="yes">Open the first translated sharḥ passages (QT-061)</button></div>':"")):"";
+   (!continuous?'<div class="untranslated"><h3>Commentary reserved</h3><p>The commentary for '+esc(u.id)+' has not yet been source-checked and translated. Its place is reserved here; no reconstructed Arabic is displayed.</p><button class="text-btn" type="button" data-go-verified="yes">Open the translated commentary reader</button></div>':"")):"";
  const actions=!continuous?'<div class="inline-actions">'+
  '<button class="text-btn" type="button" data-save="'+esc(u.id)+'">'+(state.bookmarks.includes(u.id)?"Remove bookmark":"Save passage")+'</button>'+
  (state.layer==="matn"?'<button class="text-btn" type="button" data-open-commentary="'+esc(u.id)+'">Read linked commentary</button>':"")+
@@ -107,7 +107,7 @@ function render(){
    const stage='<header class="stage-header"><div><span class="stage-kicker">'+
        (state.layer==="sharh"?"COMMENTARY TRANSLATION":state.layer==="paired"?"MATN & COMMENTARY":"ORIGINAL TREATISE")+
        ' · '+esc(u.id)+'</span><h2>'+esc(u.title)+'</h2><span class="stage-source">Source pp. '+esc(u.pages.join("–"))+'</span></div></header>';
-   const note=(state.layer==="sharh"?'<p class="layer-note"><strong>Separate authorial layer.</strong> The grandson’s commentary has '+comments.length+' verified English excerpts, presently at printed p.274. Untranslated locations remain clearly unfilled.</p>':
+   const note=(state.layer==="sharh"?'<p class="layer-note"><strong>Separate authorial layer.</strong> The grandson’s commentary has '+comments.length+' verified English excerpts, at pp.48–95 and 270–274. Untranslated locations remain clearly unfilled.</p>':
        state.layer==="paired"?'<p class="layer-note">The ancestral <em>matn</em> and the descendant’s <em>sharḥ</em> are distinct voices. Commentary appears beneath its corresponding matn only when a verified passage has been translated.</p>':"");
    reading.innerHTML=stage+note+renderUnit(u,state.index,false);
  }
@@ -177,7 +177,7 @@ function sheetMarkup(kind){
  return '<div class="help-copy"><h3>Reading, study and source records</h3><p>The ancestor’s 61 lemmata and their English translations are available; the descendant’s commentary is a separate incremental translation.</p>'+
  '<div class="sheet-list">'+
  '<a href="data/parallel-matn.md">Full bilingual matn <small>Source-located QT-001–QT-061</small></a>'+
- '<a href="editorial/COMMENTARY_TRANSLATION.md">Commentary translation <small>Two verified excerpts at p.274, editorial policy and next sequence</small></a>'+
+ '<a href="editorial/COMMENTARY_TRANSLATION.md">Commentary translation <small>Introduction, main QT001–019, closing discussion, and remaining interval</small></a>'+
  '<a href="editorial/CRITICAL_APPARATUS.md">Critical apparatus <small>Reported readings, conjectures and editorial decisions</small></a>'+
  '<a href="editorial/EDITORIAL_STATUS.md">Editorial status <small>Evidence limits and original versus commentary</small></a>'+
  '<a href="editorial/TECHNICAL_GLOSSARY.md">Avicennian–Akbarian glossary <small>Existence, determination, ḥads, discursive thought</small></a>'+ 
@@ -186,7 +186,7 @@ function sheetMarkup(kind){
  '</div><p>QT-059 retains the surviving text, with a source omission noted. This does not block the working translation.</p></div>';
  case "about":
  return '<div class="help-copy"><h3>Two authors, two texts</h3><p><b>Matn:</b> Abū Ḥāmid Turka al-Iṣfahānī’s <em>Qawāʿid al-Tawḥīd</em>, reconstructed from the ancestor’s explicit quotations in the later <em>Tamhīd</em>.</p>'+
- '<p><b>Sharḥ:</b> Ṣāʾin al-Dīn ʿAlī Ibn Turka’s explanation, independently attributed and translated as a separate layer. The first source-checked excerpts are from the final Arabic page (p.274). The original’s closing formula is at p.270; Āshtiyānī’s separate editorial colophon is excluded from the commentator’s translation.</p><p>This is a working source-critical bilingual reader; full independent manuscript collation is not claimed.</p></div>';
+ '<p><b>Sharḥ:</b> Ṣāʾin al-Dīn ʿAlī Ibn Turka’s explanation, independently attributed and translated as a separate layer. The introduction and main commentary through QT-019 are translated, along with the closing discussion. The original’s closing formula is at p.270; Āshtiyānī’s separate editorial colophon is excluded from the commentator’s translation.</p><p>This is a working source-critical bilingual reader; full independent manuscript collation is not claimed.</p></div>';
  case "help":
  return '<div class="help-copy"><h3>Reading modes</h3><p><b>Matn</b> reads the ancestor, <b>Sharḥ</b> opens the grandson’s translation and its reserved locations, and <b>Together</b> places translated commentary beneath its associated lemma. All future commentary units use stable IDs.</p><p><b>Focus</b> cycles through progressively quieter displays, ending in a continuous scroll without cards. The bottom dock jumps between units. Search, bookmarks, and private notes are accessible from the top toolbar or contents.</p><p><b>Keyboard:</b> Left/Right arrows move to adjacent passages when not typing, and Escape dismisses open panels.</p></div>';
  default:
@@ -222,7 +222,7 @@ document.addEventListener("click",(e)=>{
  if(b.hasAttribute("data-save"))toggleSave(b.dataset.save);
  if(b.hasAttribute("data-open-commentary")){chooseLayer("paired");go(units.findIndex(u=>u.id===b.dataset.openCommentary));}
  if(b.hasAttribute("data-copy"))copyLink(b.dataset.copy);
- if(b.hasAttribute("data-go-verified")){chooseLayer("sharh");go(60);closeSheet();}
+ if(b.hasAttribute("data-go-verified")){window.location.assign("commentary.html");}
  if(b.dataset.openSheet)openSheet(b.dataset.openSheet);
  if(b.dataset.command==="save-note"){
   const text=$("my-note")?.value||"";if(text)state.personal[units[state.index].id]=text;else delete state.personal[units[state.index].id];

@@ -1,0 +1,245 @@
+{
+  "date": "2026-11-03",
+  "units": 19,
+  "printed_page_span": [
+    48,
+    95
+  ],
+  "reviewedSourceHashesMatched": 19,
+  "poem_p71_restored": true,
+  "prose_p92_restored": true,
+  "wholeCommentaryComplete": false,
+  "rows": [
+    {
+      "id": "SH-001",
+      "matnId": "QT-001",
+      "pages": [
+        48,
+        49
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 301,
+      "englishWords": 338
+    },
+    {
+      "id": "SH-002",
+      "matnId": "QT-002",
+      "pages": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 713,
+      "englishWords": 791
+    },
+    {
+      "id": "SH-003",
+      "matnId": "QT-003",
+      "pages": [
+        52,
+        53
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 319,
+      "englishWords": 324
+    },
+    {
+      "id": "SH-004",
+      "matnId": "QT-004",
+      "pages": [
+        54
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 176,
+      "englishWords": 213
+    },
+    {
+      "id": "SH-005",
+      "matnId": "QT-005",
+      "pages": [
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 1182,
+      "englishWords": 1147
+    },
+    {
+      "id": "SH-006",
+      "matnId": "QT-006",
+      "pages": [
+        60,
+        61,
+        62,
+        63
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 949,
+      "englishWords": 980
+    },
+    {
+      "id": "SH-007",
+      "matnId": "QT-007",
+      "pages": [
+        64,
+        65,
+        66
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 602,
+      "englishWords": 592
+    },
+    {
+      "id": "SH-008",
+      "matnId": "QT-008",
+      "pages": [
+        67,
+        68
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 262,
+      "englishWords": 285
+    },
+    {
+      "id": "SH-009",
+      "matnId": "QT-009",
+      "pages": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 835,
+      "englishWords": 866
+    },
+    {
+      "id": "SH-010",
+      "matnId": "QT-010",
+      "pages": [
+        71,
+        72
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 322,
+      "englishWords": 308
+    },
+    {
+      "id": "SH-011",
+      "matnId": "QT-011",
+      "pages": [
+        73,
+        74
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 419,
+      "englishWords": 415
+    },
+    {
+      "id": "SH-012",
+      "matnId": "QT-012",
+      "pages": [
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 795,
+      "englishWords": 783
+    },
+    {
+      "id": "SH-013",
+      "matnId": "QT-013",
+      "pages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 705,
+      "englishWords": 625
+    },
+    {
+      "id": "SH-014",
+      "matnId": "QT-014",
+      "pages": [
+        81,
+        82
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 341,
+      "englishWords": 359
+    },
+    {
+      "id": "SH-015",
+      "matnId": "QT-015",
+      "pages": [
+        83,
+        84,
+        85,
+        86,
+        87
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 882,
+      "englishWords": 844
+    },
+    {
+      "id": "SH-016",
+      "matnId": "QT-016",
+      "pages": [
+        87,
+        88,
+        89
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 585,
+      "englishWords": 542
+    },
+    {
+      "id": "SH-017",
+      "matnId": "QT-017",
+      "pages": [
+        90,
+        91,
+        92,
+        93
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 799,
+      "englishWords": 731
+    },
+    {
+      "id": "SH-018",
+      "matnId": "QT-018",
+      "pages": [
+        93,
+        94
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 187,
+      "englishWords": 197
+    },
+    {
+      "id": "SH-019",
+      "matnId": "QT-019",
+      "pages": [
+        94,
+        95
+      ],
+      "reviewedSourceHashMatches": true,
+      "arabicSourceWords": 178,
+      "englishWords": 196
+    }
+  ],
+  "arabicSourceWords": 10552,
+  "englishWords": 10536
+}

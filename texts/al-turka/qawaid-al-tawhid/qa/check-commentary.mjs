@@ -5,19 +5,23 @@ import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
 const base=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>fs.readFileSync(path.join(base,p),'utf8');
-const sourceFiles=['data/commentary.js','data/commentary-introduction-1.js','data/commentary-introduction-2.js','data/commentary-introduction-3.js','data/commentary-introduction-4.js','data/commentary-conclusion.js','data/commentary-corpus.js'];
+const sourceFiles=['data/commentary.js','data/commentary-introduction-1.js','data/commentary-introduction-2.js','data/commentary-introduction-3.js','data/commentary-introduction-4.js','data/commentary-conclusion.js','data/commentary-main-001-019.js','data/commentary-corpus.js'];
 const context=vm.createContext({window:{},console});
 for(const file of sourceFiles)new vm.Script(read(file),{filename:file}).runInContext(context);
 const corpus=context.window.GNAMMA_TAMHID_CORPUS;
-assert.equal(corpus.units.length,46);
+assert.equal(corpus.units.length,65);
 assert.equal(corpus.coverage.introductionUnits,40);
 assert.equal(corpus.coverage.conclusionUnits,6);
+assert.equal(corpus.coverage.mainUnits,19);
+for(let i=0;i<19;i++){assert.equal(corpus.units[40+i].id,'SH-'+String(i+1).padStart(3,'0'));assert.equal(corpus.units[40+i].matnId,'QT-'+String(i+1).padStart(3,'0'));}
+assert.ok(corpus.units[48].arabic.includes('عباراتنا'));
+assert.ok(corpus.units[56].arabic.includes('امارات التميز'));
 assert.equal(corpus.coverage.wholeCommentaryComplete,false);
-assert.equal(new Set(corpus.units.map(x=>x.id)).size,46);
+assert.equal(new Set(corpus.units.map(x=>x.id)).size,65);
 for(let i=0;i<40;i++)assert.equal(corpus.units[i].id,'SH-INTRO-'+String(i+1).padStart(3,'0'));
-assert.deepEqual(Array.from(corpus.units.slice(40),u=>u.id),['SH-061-C','SH-061-D','SH-061-E','SH-061-F','SH-061-A','SH-061-B']);
+assert.deepEqual(Array.from(corpus.units.slice(59),u=>u.id),['SH-061-C','SH-061-D','SH-061-E','SH-061-F','SH-061-A','SH-061-B']);
 for(const u of corpus.units){assert.ok(u.arabic.trim().length>20,u.id);assert.ok(u.english.trim().length>20,u.id);assert.match(u.sourceUrl,/^https:\/\//);assert.ok(u.sourceEdition==='N'||u.sourceEdition==='A');}
-assert.equal(corpus.units.filter(u=>u.lumbardComparator).length,7);
+assert.equal(corpus.units.filter(u=>u.lumbardComparator).length,13);
 // The final online continuation has no separately verified printed page.
 // Test the actual locator contract rather than one incidental wording.
 for(const u of corpus.units.slice(37,40)){assert.match(u.sourceLocator,/42/);assert.ok(u.sourceLocator.includes('continuation'));assert.equal(u.sourceEdition,'N');}
@@ -50,10 +54,10 @@ vm.createContext(sandbox);new vm.Script(read('commentary-reader.js')).runInConte
 const el=id=>elements.get(id);
 assert.ok(el('reading-list').innerHTML.includes('SH-INTRO-001'));
 assert.ok(el('reading-list').innerHTML.includes(corpus.units[0].english));
-assert.equal(el('total-count').textContent,46);
+assert.equal(el('total-count').textContent,65);
 el('continuous-reading').fire('click');
 assert.equal(document.body.dataset.focus,'3');
-assert.equal((el('reading-list').innerHTML.match(/<article /g)||[]).length,46);
+assert.equal((el('reading-list').innerHTML.match(/<article /g)||[]).length,65);
 assert.equal((el('reading-list').innerHTML.match(/class="corpus-gap"/g)||[]).length,1);
 el('lang-en').fire('click');assert.equal(document.body.dataset.language,'ar');
 el('lang-ar').fire('click');assert.equal(document.body.dataset.language,'ar');
@@ -64,9 +68,9 @@ el('menu-button').fire('click');assert.equal(el('sheet').open,true);assert.ok(el
 el('sheet-close').fire('click');assert.equal(el('sheet').open,false);
 el('search-button').fire('click');
 el('sheet-content').fire('input',{target:{id:'commentary-query',value:'nafs al-amr',dataset:{}}});assert.ok(el('commentary-results').innerHTML.includes('SH-INTRO-026'));
-const newButton=new Element('', 'BUTTON');newButton.dataset.jump='40';newButton.attributes['data-jump']='40';for(const f of documentHandlers.get('click')||[])f({target:newButton});
+const newButton=new Element('', 'BUTTON');newButton.dataset.jump='59';newButton.attributes['data-jump']='59';for(const f of documentHandlers.get('click')||[])f({target:newButton});
 assert.ok(el('reading-list').innerHTML.includes('SH-061-C'));assert.ok(el('reading-list').innerHTML.includes('Intervening commentary not yet translated'));
 
-const report={passed:true,checks:'source loading, sequence, unique IDs, edition labels, comparator coverage, script references, JS syntax, initial/continuous render, gap marker, language invariant, focus recovery, bookmark persistence, contents, search, jump',introUnits:40,concludingUnits:6,totalUnits:46,matnUnits:61,arabicTokens:corpus.units.reduce((n,u)=>n+u.arabic.trim().split(/\s+/).length,0),englishWords:corpus.units.reduce((n,u)=>n+u.english.trim().split(/\s+/).length,0),independentManuscriptsCollated:0,wholeCommentaryComplete:false,visualBrowserTested:false};
+const report={passed:true,checks:'source loading, sequence, unique IDs, edition labels, comparator coverage, script references, JS syntax, initial/continuous render, gap marker, language invariant, focus recovery, bookmark persistence, contents, search, jump',introUnits:40,mainUnits:19,concludingUnits:6,totalUnits:65,matnUnits:61,arabicTokens:corpus.units.reduce((n,u)=>n+u.arabic.trim().split(/\s+/).length,0),englishWords:corpus.units.reduce((n,u)=>n+u.english.trim().split(/\s+/).length,0),independentManuscriptsCollated:0,wholeCommentaryComplete:false,visualBrowserTested:false};
 fs.writeFileSync(path.join(base,'qa/commentary-test-report.json'),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));

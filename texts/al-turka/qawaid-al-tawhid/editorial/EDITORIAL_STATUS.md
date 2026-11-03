@@ -1,3 +1,7 @@
+## Current release — 65 commentary units (3 November 2026)
+
+The authorial introduction (40 units), main explanations QT001–019 (19 units, A pp.48–95), and concluding discussion (6 units) are translated. QT020–060 remains pending. [Current source and translation register](COMMENTARY_TRANSLATION.md). Earlier stages below are historical and do not describe current coverage.
+
 # Qawāʿid al-Tawḥīd — Editorial status
 **Gnamma Research bilingual source-critical working edition · initiated 2 November, audited 3 November 2026**
 

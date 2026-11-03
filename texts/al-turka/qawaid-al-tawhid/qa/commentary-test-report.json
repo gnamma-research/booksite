@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": "source loading, sequence, unique IDs, edition labels, comparator coverage, script references, JS syntax, initial/continuous render, gap marker, language invariant, focus recovery, bookmark persistence, contents, search, jump",
+  "introUnits": 40,
+  "mainUnits": 19,
+  "concludingUnits": 6,
+  "totalUnits": 65,
+  "matnUnits": 61,
+  "arabicTokens": 15750,
+  "englishWords": 18283,
+  "independentManuscriptsCollated": 0,
+  "wholeCommentaryComplete": false,
+  "visualBrowserTested": false
+}

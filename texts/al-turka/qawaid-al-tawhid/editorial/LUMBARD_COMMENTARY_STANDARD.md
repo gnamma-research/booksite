@@ -32,3 +32,7 @@ The present installment translates the continuous authorial opening into **40 bi
 All English paragraphs are independently composed from the medieval Arabic. L is acknowledged wherever its terminology or interpretation is used as a comparator. Extensive modern translation prose is not reproduced. A term adopted from L is not silently represented as a newly discovered Arabic variant. A source that supplies only a modern summary does not license invented Arabic or a claimed source translation.
 
 **Current result:** 40 introductory units plus 6 concluding commentary units. The intervening main commentary remains untranslated; this is not the completed whole work.
+
+## Main-commentary comparison — continuation release
+
+SH-001–006 are now compared with L pp.468–479. Arabic controls: burhan al-inn runs from effect to cause; SH-005 retains the negative in ليس مقصورا على اللفظ; SH-006 preserves the positive definition of possibility and the unless-clause about freedom from habitual assumptions. Defective Arabic is flagged, not silently replaced by English. SH-007–019 extend beyond Lumbard’s supplied selection and are translated directly from A.

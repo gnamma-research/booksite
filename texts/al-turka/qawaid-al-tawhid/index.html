@@ -34,7 +34,7 @@
  <div class="seg" role="group" aria-label="Reading text layer"><button type="button" data-layer="matn" aria-pressed="true">Matn</button><button type="button" data-layer="paired" aria-pressed="false">Together</button><button type="button" data-layer="sharh" aria-pressed="false" title="Open the complete translated commentary workspace">Sharḥ</button></div>
  <button id="focus-button" class="text-btn" type="button" aria-label="Cycle through four reading modes" title="Normal, Focus 1, Focus 2, Continuous"><svg><use href="#ic-focus"/></svg> <span id="focus-label">Normal</span></button>
  <button id="save-button" class="icon-btn" type="button" title="Save current passage" aria-label="Bookmark current passage"><svg><use href="#ic-bookmark"/></svg></button>
- <span class="reader-status" id="reading-status">61 matn units · 6 linked closing commentary sections</span>
+ <span class="reader-status" id="reading-status">61 matn units · 25 linked commentary sections</span>
 </div>
 <button id="focus-recover" class="icon-btn" aria-label="Change focus mode or return to toolbar" title="Restore toolbar / next focus mode"><svg><use href="#ic-focus"/></svg></button>
 <main id="main">
@@ -43,8 +43,8 @@
   <h1>Qawāʿid al-Tawḥīd</h1>
   <div class="ar-title" lang="ar" dir="rtl">قواعد التوحيد</div>
   <p class="lede">Abū Ḥāmid Turka’s original treatise and a separately attributed translation of Ṣāʾin al-Dīn Ibn Turka’s <em>Tamhīd al-Qawāʿid</em>. The commentary now opens at its authorial introduction, with Joseph E. B. Lumbard’s selections used as a checked comparator.</p>
-  <div class="edition-meta"><span><b>61</b> matn units</span><span><b>40</b> introductory commentary units</span><span><b>6</b> concluding commentary units</span></div>
-  <p class="help-copy">The introduction and closing discussion are translated from the available Arabic; the intervening main commentary remains in progress. The commentary reader distinguishes the Nekounam and Āshtiyānī editions and their different pagination. QT-059’s reported omission remains noted and deferred.</p>
+  <div class="edition-meta"><span><b>61</b> matn units</span><span><b>40</b> introductory commentary units</span><span><b>19</b> main commentary sections</span><span><b>6</b> concluding commentary units</span></div>
+  <p class="help-copy">The introduction, main commentary on QT-001–QT-019 (pp.48–95), and closing discussion are translated from the available Arabic. The commentary on QT-020–QT-060 remains in progress. The commentary reader distinguishes the Nekounam and Āshtiyānī editions and their different pagination. QT-059’s reported omission remains noted and deferred.</p>
   <div class="book-actions"><button class="action-btn primary" id="start-matn" type="button">Read the matn</button><button class="action-btn" id="start-sharh" type="button">Read the commentary from the beginning</button><button class="action-btn" id="open-study" type="button">Study &amp; apparatus</button><a class="action-btn" href="commentary.html">Commentary reader</a></div>
  </section>
  <section class="reader-stage" id="reading" aria-label="Reading edition">
@@ -66,6 +66,7 @@
 <script src="data/units.js"></script>
 <script src="data/commentary.js"></script>
 <script src="data/commentary-conclusion.js"></script>
+<script src="data/commentary-main-001-019.js"></script>
 <script src="commentary-main-bridge.js"></script>
 <script src="reader.js"></script>
 </body></html>
