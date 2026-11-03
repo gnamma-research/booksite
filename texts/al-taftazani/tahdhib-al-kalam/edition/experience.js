@@ -327,7 +327,10 @@ document.addEventListener('click',e=>{
 document.addEventListener('keydown',e=>{
  if(e.key==='Escape'){hidePopup();if(!$('#gn-notes-overlay').hidden)closeNotebook()}
 });
-window.addEventListener('scroll',hidePopup,{passive:true});
+/* A programmatic scrollIntoView after clicking a clause must NOT dismiss its
+   just-opened action menu. Only a deliberate user wheel/touch scroll does. */
+window.addEventListener('wheel',hidePopup,{passive:true});
+window.addEventListener('touchmove',hidePopup,{passive:true});
 document.addEventListener('gnamma-tahdhib-render',()=>{if(prefs.mode!=='study')buildFlow();apply();if(prefs.vocalization==='assisted'&&prefs.mode==='study')refreshArabic()});
 document.addEventListener('gnamma-tahdhib-view',()=>apply());
 document.addEventListener('gnamma-tahdhib-bookmarks',()=>{if(prefs.mode!=='study')buildFlow()});
