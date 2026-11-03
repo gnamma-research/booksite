@@ -7,16 +7,18 @@ const api=window.GnammaTahdhibReader,ex=window.GnammaTahdhibExperience,book=wind
 if(!api||!ex||!book)return;
 const isLogic=api.isDivision,$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const shapes={
- contents:'<path d="M4 5.5h16M4 12h16M4 18.5h16"/><path d="M8 4v3M8 10.5v3M8 17v3"/>',
- read:'<path d="M12 6C9 4 6 3.8 3 4.5V19c3-.7 6-.5 9 1.5 3-2 6-2.2 9-1.5V4.5C18 3.8 15 4 12 6ZM12 6v14.5"/>',
- study:'<path d="M4 5h16v15H4zM8 9h8M8 13h8M8 17h5"/>',
- immersive:'<path d="M8 3H4v5M16 3h4v5M4 16v5h4M20 16v5h-4"/>',
- note:'<path d="M4 3.5h16v17H4zM8 8h8M8 12h5M11 17l5-5 2 2-5 5-3 1z"/>',
- visuals:'<path d="M4 7h16M4 17h16M9 4v6M15 14v6"/>',
- pdf:'<path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4"/>',
- help:'<circle cx="12" cy="12" r="9"/><path d="M9.7 9a2.5 2.5 0 1 1 4 2c-1.5 1-1.7 1.7-1.7 3M12 17h.01"/>',
- search:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/>',
- close:'<path d="M5 5l14 14M19 5 5 19"/>'
+ contents:"<path d=\"M5 4v16M5 7h5M5 13h5M5 19h5M12 7h8M12 13h8M12 19h8\"/>",
+ read:"<path d=\"M12 5.5C8 3.5 5 4.2 3 5.5v13c2.5-1.3 6-1.6 9 .3 3-1.9 6.5-1.6 9-.3v-13c-2-1.3-5-2-9 0ZM12 5.5v13.3\"></path>",
+ study:"<path d=\"m2 8 10-5 10 5-10 5L2 8Z\"/><path d=\"M6 11v5c3.5 2.5 8.5 2.5 12 0v-5M22 8v8\"/>",
+ note:"<path d=\"M5 3h14v18H5zM9 8h7M9 12h7M9 16h4\"></path>",
+ visuals:"<path d=\"M4 7h16M4 17h16M9 4v6M15 14v6\"></path>",
+ pdf:"<path d=\"M6.5 4H19a1.5 1.5 0 0 1 1.5 1.5V20H8.5a2 2 0 0 1-2-2V4Z\"/><path d=\"M6.5 7H4.75A1.75 1.75 0 0 0 3 8.75V18a2 2 0 0 0 2 2h3.5M10 9h7M10 13h7M10 17h5\"/>",
+ help:"<circle cx=\"12\" cy=\"12\" r=\"9\"></circle><path d=\"M12 11v6M12 7h.01\"></path>",
+ search:"<circle cx=\"10.8\" cy=\"10.8\" r=\"6.3\"></circle><path d=\"m16 16 4.5 4.5\"></path>",
+ close:"<path d=\"m5 5 14 14M19 5 5 19\"></path>",
+ dictionary:"<path d=\"M6 3h14v18H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3ZM6 3v18M10 16l2.5-7 2.5 7M11 14h3\"/>",
+ index:"<circle cx=\"6\" cy=\"6\" r=\"2\"/><circle cx=\"18\" cy=\"7\" r=\"2\"/><circle cx=\"8\" cy=\"18\" r=\"2\"/><path d=\"M8 6.2h8M7 8l1 8M16.7 9l-7 7\"/>",
+ immersive:'<path d="M8 3H4v5M16 3h4v5M4 16v5h4M20 16v5h-4"/>'
 };
 function icon(kind){const s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');s.setAttribute('fill','none');s.setAttribute('stroke','currentColor');s.setAttribute('stroke-width','1.75');s.setAttribute('stroke-linecap','round');s.setAttribute('stroke-linejoin','round');s.innerHTML=shapes[kind]||shapes.help;return s}
 function el(tag,cls,value){const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=String(value);return n}
@@ -39,7 +41,7 @@ for(const [v,label] of [['ar','ع'],['en','EN'],['both','ع/EN']]){const b=el('b
 second.append(languages);
 const vowel=btn('Arabic vowels','read',()=>{const p=ex.getPrefs(),next=p.vocalization==='original'?'assisted':'original';click('[data-vowel-mode="'+next+'"]');sync()});
 vowel.id='gn-daruri-vowels';vowel.querySelector('svg').replaceWith(el('span','gn-daruri-vowel-letter','حَ'));second.append(vowel);
-second.append(btn('Saved','saved',savedPanel),btn('Notes','note',()=>click('#gn-notebook-button')),btn('Dictionary','read',()=>window.GnammaTahdhibTerms?.open()),btn('Subject index','contents',()=>window.GnammaTahdhibSubjectIndex?.open()),btn('Visuals','visuals',visualsPanel),btn('Editions','pdf',pdfs),btn('Help','help',helpPanel));
+second.append(btn('Saved','saved',savedPanel),btn('Notes','note',()=>click('#gn-notebook-button')),btn('Dictionary','dictionary',()=>window.GnammaTahdhibTerms?.open()),btn('Subject index','index',()=>window.GnammaTahdhibSubjectIndex?.open()),btn('Visuals','visuals',visualsPanel),btn('Editions','pdf',pdfs),btn('Help','help',helpPanel));
 const overlay=el('div','gn-daruri-overlay');overlay.id='gn-daruri-overlay';overlay.hidden=true;
 const sheet=el('section','gn-daruri-sheet');sheet.setAttribute('role','dialog');sheet.setAttribute('aria-modal','true');sheet.setAttribute('aria-labelledby','gn-daruri-title');overlay.append(sheet);
 let lastFocus=null;
@@ -120,7 +122,7 @@ function sync(){
 document.body.dataset.gnOrder=(()=>{try{return localStorage.getItem('gnamma-tahdhib-order')||'en-left'}catch{return'en-left'}})();
 document.body.dataset.gnPageStyle=(()=>{try{return localStorage.getItem('gnamma-tahdhib-page-style')||'quiet'}catch{return'quiet'}})();
 const toolbar=$('.toolbar');toolbar?.parentNode.insertBefore(bar,toolbar);
-for(const [selector,d] of [['#dock-prev','M15 4l-8 8 8 8'],['#dock-next','m9 4 8 8-8 8']]){
+for(const [selector,d] of [['#dock-prev','m15 5-7 7 7 7'],['#dock-next','m9 5 7 7-7 7']]){
  const b=$(selector);if(!b)continue;const s=document.createElementNS('http://www.w3.org/2000/svg','svg');
  s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');
  s.setAttribute('fill','none');s.setAttribute('stroke','currentColor');s.setAttribute('stroke-width','1.75');
