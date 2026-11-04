@@ -51,7 +51,7 @@ function setEnabled(v){
  mount();document.dispatchEvent(new CustomEvent('gnamma-tahdhib-yazdi',{detail:{enabled:state.enabled}}));return state.enabled
 }
 document.addEventListener('gnamma-tahdhib-flow-built',mountFlow);
-document.addEventListener('gnamma-tahdhib-render',()=>requestAnimationFrame(mount));
+document.addEventListener('gnamma-tahdhib-render',mount); // Render has already replaced source cards; mount now to avoid a WebKit frame race.
 document.addEventListener('gnamma-tahdhib-view',mount);
 mount();
 window.GnammaYazdiLayer=Object.freeze({enabled,setEnabled,mount,entryCount:data.entries.length,units:[...groups.keys()],complete:false});
