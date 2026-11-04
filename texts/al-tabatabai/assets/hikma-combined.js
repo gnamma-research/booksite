@@ -168,7 +168,7 @@
     if (!authorUnits && guides) coverage = `Reading guide · ${guides} editorial ${guides === 1 ? 'section' : 'sections'} · bilingual text not yet available`;
     else if (!state.units.length) coverage = 'The reading edition is being prepared';
     else coverage = `${originals} Arabic ${originals === 1 ? 'section' : 'sections'} · ${translated} of ${authorUnits} ${authorUnits === 1 ? 'section' : 'sections'} with English${state.units.some(unit => /draft|working|provisional|unreviewed/.test(unit.status.toLowerCase())) ? ' · working translation' : ''}`;
-    if (bookId === 'combined') coverage = 'Part I · Bidāya: 110 Arabic chapters, English translation under way · Part II · Nihāya: 130 chapters translated';
+    if (bookId === 'combined') coverage = 'I · al-Manṭiq: selected English · II · Bidāya: 110 Arabic chapters, English in progress · III · Nihāya: 130 translated chapters';
     $('coverage-text').textContent = coverage;
     if (!authorUnits && guides) {
       document.querySelector('.edition-badge').textContent = 'READING GUIDE';
@@ -195,7 +195,7 @@
       if (!stageNode) {
         stageNode = make('details', 'toc-stage'); stageNode.dataset.stage = group.stage;
         stageNode.open = !!state.query || state.savedOnly || openStages.has(group.stage) || (state.active && state.active.stage === group.stage) || /-0$/.test(group.stage);
-        const summary = make('summary'); summary.append(make('span', 'stage-roman', group.stage.endsWith('-0') ? '✦' : group.stage.replace(/^[BN]-/, '')), make('span', '', stageTitle(group.stage)));
+        const summary = make('summary'); summary.append(make('span', 'stage-roman', group.stage.endsWith('-0') ? '✦' : group.stage.replace(/^[MBN]-/, '')), make('span', '', stageTitle(group.stage)));
         const list = make('ul', 'toc-chapters'); stageNode.append(summary, list); $('toc').append(stageNode); byStage.set(group.stage, stageNode);
       }
       const item = make('li'); const anchor = make('a'); anchor.href = '#' + group.id; anchor.dataset.group = group.key;
@@ -234,7 +234,7 @@
         if (unit.stage !== lastStage) {
           const stage = state.stages.get(unit.stage) || {};
           const heading = make('header', 'stage-heading');
-          heading.append(make('span', 'stage-number', unit.stage.endsWith('-0') ? (unit.stage.startsWith('B') ? 'PART I' : 'PART II') : `STAGE ${unit.stage.replace(/^[BN]-/, '')}`), make('h2', '', stageTitle(unit.stage)));
+          heading.append(make('span', 'stage-number', unit.stage.endsWith('-0') ? (unit.stage.startsWith('M') ? 'PART I' : unit.stage.startsWith('B') ? 'PART II' : 'PART III') : `STAGE ${unit.stage.replace(/^[BN]-/, '')}`), make('h2', '', stageTitle(unit.stage)));
           if (stage.arabicTitle) { const arabic = make('p', 'stage-arabic', stage.arabicTitle); arabic.lang = 'ar'; arabic.dir = 'rtl'; heading.append(arabic); }
           fragment.append(heading); lastStage = unit.stage;
         }
@@ -510,7 +510,7 @@
     if (event.key === prefix + 'bookmarks') { const stored = readStorage(event.key, []); if (Array.isArray(stored)) state.bookmarks = new Set(stored); render(); }
     if (event.key === prefix + 'notes') { const stored = readStorage(event.key, {}); if (stored && typeof stored === 'object' && !Array.isArray(stored)) state.notes = stored; render(); }
   });
-  function combineBooks(bidaya, nihaya) {
+  function combineBooks(muzaffar, bidaya, nihaya) {
     const prep = (book, code, name) => {
       const stages = book.stages.map(stage => ({...stage, id: code + '-' + stage.id,
         title: name + ' · ' + (stage.id === '0' ? 'Introduction' : 'Stage ' + stage.id + ': ') + stage.title }));
@@ -518,26 +518,27 @@
         .map(unit => ({...unit, stage: code + '-' + unit.stage, part: code}));
       return {stages,units};
     };
+    const m=prep(muzaffar, 'M', 'al-Manṭiq');
     const b=prep(bidaya, 'B', 'Bidāyat al-Ḥikma');
     const n=prep(nihaya, 'N', 'Nihāyat al-Ḥikma');
-    return {id:'hikma-combined',title:'Bidāyat & Nihāyat al-Ḥikma',
-      arabicTitle:'بداية الحكمة · نهاية الحكمة',author:'Sayyid Muḥammad Ḥusayn al-Ṭabāṭabāʾī',
-      description:'Two books in one reader. Part I: Bidāya, with its full Arabic and an original English translation in progress. Part II: Nihāya, with the complete Arabic and the existing full English working translation.',
+    return {id:'hikma-combined',title:'Logic, Bidāyat & Nihāyat al-Ḥikma',
+      arabicTitle:'المنطق · بداية الحكمة · نهاية الحكمة',author:'Muḥammad Riḍā al-Muẓaffar · Muḥammad Ḥusayn al-Ṭabāṭabāʾī',
+      description:'Three books in one reader. Part I: al-Muẓaffar’s logic, with a linked public-domain Arabic scan and introductory English selections. Part II: Bidāya, full Arabic and English translation under way. Part III: Nihāya, complete Arabic and working English translation.',
       status:'working-translation-bidaya-incomplete-nihaya-complete',
-      stages:[...b.stages,...n.stages],units:[...b.units,...n.units],
-      sources:[...(bidaya.sources||[]),...(nihaya.sources||[])],
-      glossary:[...(nihaya.glossary||[]),...(bidaya.glossary||[])],
-      editorialStatus:{translationMethod:'The two books retain separate translation statuses. Nihāya is a complete working translation pending expert review; Bidāya has its entire original Arabic text, with newly translated opening chapters and the remaining chapters marked pending.',collation:'The user-uploaded 325-page Arabic–English PDF is the Bidāya transcription witness; original Arabic text requires further character-by-character proofreading.',pagination:'Bidāya page numbers follow the supplied bilingual PDF. Nihāya follows the previously recorded 1417 AH Qum edition.'}};
+      stages:[...m.stages,...b.stages,...n.stages],units:[...m.units,...b.units,...n.units],
+      sources:[...(muzaffar.sources||[]),...(bidaya.sources||[]),...(nihaya.sources||[])],
+      glossary:[...(muzaffar.glossary||[]),...(nihaya.glossary||[]),...(bidaya.glossary||[])],
+      editorialStatus:{translationMethod:'The three books retain separate translation statuses. Muẓaffar has selected translations only; the whole Arabic source is linked. Nihāya is a complete working translation pending expert review; Bidāya has its entire original Arabic text, with newly translated opening chapters and the remaining chapters marked pending.',collation:'The user-uploaded 325-page Arabic–English PDF is the Bidāya transcription witness; original Arabic text requires further character-by-character proofreading.',pagination:'Bidāya page numbers follow the supplied bilingual PDF. Nihāya follows the previously recorded 1417 AH Qum edition.'}};
   }
   async function loadBook() {
     $('begin-reading').disabled = true;
     try {
       if (bookId === 'combined') {
-        const paths=['./bidayat-al-hikma/data/book.json','./nihayat-al-hikma/data/book.json'];
+        const paths=['./muzaffar-al-mantiq/data/book.json','./bidayat-al-hikma/data/book.json','./nihayat-al-hikma/data/book.json'];
         const responses=await Promise.all(paths.map(path => fetch(path,{cache:'no-cache'})));
         if(responses.some(response => !response.ok))throw new Error('One of the editions is unavailable');
-        const [b,n]=await Promise.all(responses.map(response=>response.json()));
-        setData(combineBooks(b,n));
+        const [m,b,n]=await Promise.all(responses.map(response=>response.json()));
+        setData(combineBooks(m,b,n));
       } else {
         const response = await fetch('./data/book.json', { cache: 'no-cache' });
         if (!response.ok) throw new Error('Edition unavailable');
