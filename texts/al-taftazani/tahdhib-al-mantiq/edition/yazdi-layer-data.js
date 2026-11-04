@@ -1,4 +1,4 @@
-/* Source-checked translated selections from al-Yazdī; later marginal glosses excluded. */
+/* Selected bilingual translations from al-Yazdī's historical commentary; source witnesses and modern marginalia separate. */
 window.GNAMMA_YAZDI_LAYER={
   "schema": "gnamma-yazdi-translation-layer-v1",
   "work": "Tahdhīb al-Manṭiq",
@@ -7,7 +7,7 @@ window.GNAMMA_YAZDI_LAYER={
   "edition": "Qum, Muʾassasat al-Nashr al-Islāmī; searchable paginated text",
   "editionCatalog": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en",
   "sourceIndex": "https://ablibrary.net/book_content/b/12170/1",
-  "coverage": "Selected directly translated Arabic/English passages from printed pp. 14–19, 22–27 and 30–37, aligned to Taftāzānī logic divisions L.02–L.06. Commentary translation is incomplete; no passages were supplied from later marginal hands.",
+  "coverage": "Translated selections from printed pp. 14–19, 22–27, 30–37 and 46–50, aligned to Taftāzānī logic L.02–L.09. All excerpts are incomplete selected portions of the full al-Yazdī commentary; later editorial and marginal voices are not included.",
   "complete": false,
   "entries": [
     {
@@ -328,6 +328,276 @@ window.GNAMMA_YAZDI_LAYER={
       "arabic": "فالجنس لا بد أن يقع جوابا عن الماهية وعن بعض الحقائق المخالفة لها المشاركة إياها في ذلك الجنس ، فإن كان مع ذلك جوابا عن الماهية وعن كل واحدة من الماهيات المختلفة المشاركة لها في ذلك الجنس فالجنس قريب كالحيوان حيث يقع جوابا للسؤال عن الإنسان وعن كل ما يشاركه في الماهية الحيوانية وإن لم يقع جوابا عن الماهية وعن كل ما يشاركها في ذلك الجنس فبعيد كالجسم حيث يقع جوابا عن السؤال بالإنسان والحجر والفرس ولا يقع جوابا عن السؤال بالإنسان والشجر والفرس مثلا .",
       "english": "A genus supplies the common essential answer to 'What is it?' asked of things differing in species. A proximate genus gives the shared essential answer for the subject and all the nearest distinct kinds that share its genus—'animal' for human and other animals. A remote genus is more general and does not always provide the complete relevant common essence for every selection of kinds: 'body' may answer a question grouping humans, horses and stones, but it is not the nearest common essence when an alternative comparison brings in living plants. The distinction depends on the precise range of things being compared.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/37?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-46.01",
+      "unit": "L.07",
+      "page": 46,
+      "title": "A proprium is extrinsic to essence",
+      "arabic": "قوله « وهو الخارج » : أي : الكلي الخارج ، فإن المقسم معتبر في جميع مفهومات الأقسام .",
+      "english": "On ‘extrinsic’: he means an extrinsic universal. The class being divided must be understood in each of its subdivisions; here, the predicate ‘extrinsic’ qualifies the universal to distinguish a proprium from the essential predicables.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/46?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-46.02",
+      "unit": "L.07",
+      "page": 46,
+      "title": "A proprium need not belong actually to every individual",
+      "arabic": "واعلم : أن الخاصة تنقسم إلى خاصة شاملة لجميع أفراد ما هي خاصة له كالكاتب بالقوة للإنسان ، وإلى غير شاملة لجميع أفراده كالكاتب بالفعل له .",
+      "english": "Know that a proprium may extend to every individual of the kind to which it is proper, as the capacity to write is proper to human beings, or it may fail to extend to every individual, as actually writing does. One must distinguish possessing an aptitude from exercising it.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/46?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-46.03",
+      "unit": "L.07",
+      "page": 46,
+      "title": "A proprium can be relative to a species or genus",
+      "arabic": "قوله « حقيقة واحدة » : نوعية أو جنسية ، فالأول خاصة النوع كالضاحك والثاني خاصة الجنس كالماشي ، فالماشي خاصة للحيوان وعرض عام للإنسان فافهم .",
+      "english": "‘One nature’ may be a specific or a generic nature. The first yields a proprium of a species, such as the capacity to laugh in human beings; the second yields a proprium of a genus, as walking is assigned to animal. Accordingly, the same predicate may be proper to animal yet a common accident relative to the narrower species human.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/46?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-46.04",
+      "unit": "L.07",
+      "page": 46,
+      "title": "Common accident across multiple natures",
+      "arabic": "قوله « وعلى غيرها » : كالماشي يقال على حقيقة الإنسان وعلى غيرها من الحقائق الحيوانية .",
+      "english": "On ‘and to other natures’: ‘walking’ is predicated of the nature human and also of other animal natures. It is therefore not restricted to the specific nature human.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/46?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-47.01",
+      "unit": "L.07",
+      "page": 47,
+      "title": "Inseparable and separable accidents",
+      "arabic": "الذي هو عرضي لأفراده إما لازم وإما مفارق إذ لا يخلو إما أن يستحيل انفكاكه عن معروضه أو لا فالأول هو الأول والثاني هو الثاني .",
+      "english": "An accidental universal, relative to its instances, must be either an inseparable concomitant or a separable accident. Either separation from its subject is impossible, in which case it is a concomitant, or separation is possible, in which case it is separable. ‘Accidental’ here means not constitutive of the essence; it does not mean necessarily temporary.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-47.02",
+      "unit": "L.07",
+      "page": 47,
+      "title": "Three grounds of necessary concomitance",
+      "arabic": "فأقسام اللازم بهذا التقسيم ثلاثة : لازم الماهية كزوجية الأربعة ، ولازم الوجود الخارجي كإحراق النار ، ولازم الوجود الذهني ككون حقيقة الإنسان كلية وهذا القسم يسمى معقولا ثانيا .",
+      "english": "On this division there are three kinds of necessary concomitant: one following from quiddity, such as the evenness of four; one connected with external existence, such as fire’s burning; and one belonging to mental existence, such as the universality attributed to the nature human. This third kind is also termed a ‘second intelligible’.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-47.03",
+      "unit": "L.07",
+      "page": 47,
+      "title": "The narrower sense of evident concomitant",
+      "arabic": "والثاني أن اللازم إما بين أو غير بين والبين له معنيان أحدهما : اللازم الذي يلزم تصوره من تصور الملزوم كما يلزم تصور البصر من تصور العمى وهذا يقال له البين بالمعنى الأخص .",
+      "english": "A second division distinguishes evident from non-evident concomitants. ‘Evident’ has two meanings. In the narrower sense, conceiving the subject itself requires conceiving the concomitant, as conceiving blindness requires the concept of sight. This is evident concomitance in the strictest sense.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-47.04",
+      "unit": "L.07",
+      "page": 47,
+      "title": "The wider sense of evident concomitant",
+      "arabic": "والثاني من معنى البين هو اللازم الذي يلزم من تصوره مع تصور الملزوم والنسبة بينهما الجزم باللزوم كزوجية الأربعة .",
+      "english": "In the wider sense, it is not necessary that conceiving the subject alone call the concomitant to mind. Rather, once the subject, the concomitant, and their relation are conceived together, assent to the entailment follows necessarily—for example, assent that four is even.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-47.05",
+      "unit": "L.07",
+      "page": 47,
+      "title": "Durable, quickly passing and slowly passing accidents",
+      "arabic": "قوله « يدوم » : كحركة الفلك فإنها دائمة للفلك وإن لم يمتنع انفكاكها نظرا إلى ذاته . قوله « بسرعة » : كحمرة الخجل وصفرة الوجل . قوله « أو بطء » : كالشباب .",
+      "english": "An accident may endure without being essential or intrinsically inseparable. Al-Yazdī illustrates endurance with celestial motion in the traditional cosmology. A rapidly passing accident is the blush of embarrassment or the pallor of alarm; one that passes more slowly is youth. Duration must not be confused with intrinsic necessity.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/47?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-48.01",
+      "unit": "L.08",
+      "page": 48,
+      "title": "Logical universality as a second-order concept",
+      "arabic": "قوله « مفهوم الكلي » : أي ما يطلق عليه لفظ الكلي يعني « المفهوم الذي لا يمتنع فرض صدقه على كثيرين » يسمى كليا منطقيا لأن المنطقي يقصد من الكلي هذا المعنى .",
+      "english": "On ‘the concept of the universal’: it is what the word ‘universal’ signifies, namely a concept whose application to many is not intrinsically impossible. This is called a logical universal because it is precisely this account of universality that interests the logician.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/48?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-48.02",
+      "unit": "L.08",
+      "page": 48,
+      "title": "The subject to which universality belongs",
+      "arabic": "قوله « ومعروضه » : أي ما يصدق عليه هذا المفهوم كالإنسان والحيوان .",
+      "english": "On ‘that to which it belongs’: it means the thing of which the concept ‘universal’ can be predicated, such as human or animal. The nature is not identical in meaning with the attribute of being universal.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/48?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-49.01",
+      "unit": "L.08",
+      "page": 49,
+      "title": "Natural and intellectual universals",
+      "arabic": "يسمى كليا طبيعيا لوجوده في الطبائع يعني في الخارج على ما سيجيء والمجموع المركب من هذا العارض والمعروض كالإنسان الكلي والحيوان الكلي يسمى كليا عقليا إذ لا وجود له إلا في العقل .",
+      "english": "The underlying nature is called a ‘natural universal’, here associated with natures found externally. The combination of the attribute of universality and its subject—‘universal human’ or ‘universal animal’—is called an ‘intellectual universal’, since that combination as universal exists only in the intellect.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/49?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-49.02",
+      "unit": "L.08",
+      "page": 49,
+      "title": "The same three considerations apply to the five predicables",
+      "arabic": "قوله « وكذا الأنواع الخمسة » : يعني كما أن الكلي يكون منطقيا وطبيعيا وعقليا كذلك الأنواع الخمسة يعني الجنس والنوع والفصل والخاصة والعرض العام يجري في كل منها هذه الاعتبارات الثلاثة .",
+      "english": "On ‘the five kinds likewise’: just as one may speak of logical, natural, and intellectual universals, so one may distinguish these three considerations in each of the five predicables—genus, species, differentia, proprium, and common accident. The kind considered, the logical relation, and their intellectual combination must not be conflated.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/49?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-49.03",
+      "unit": "L.08",
+      "page": 49,
+      "title": "Example: species under three considerations",
+      "arabic": "مثلا مفهوم النوع أعني الكلي المقول على كثيرين متفقين بالحقيقة في جواب ما هو يسمى نوعا منطقيا ومعروضه كالإنسان والفرس نوعا طبيعيا ومجموع العارض والمعروض كالإنسان النوع نوعا عقليا .",
+      "english": "For example, the concept of species—a universal answering ‘What is it?’ for many things sharing one specific nature—is a logical species. What falls under that concept, such as human or horse, is a natural species. The combination ‘human-as-species’ is an intellectual species.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/49?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-49.04",
+      "unit": "L.08",
+      "page": 49,
+      "title": "The same distinction applies even to the particular",
+      "arabic": "بل الاعتبارات الثلاث تجري في الجزئي أيضا فإنا إذا قلنا « زيد جزئي » فمفهوم الجزئي أعني « ما يمنع فرض صدقه على كثيرين » يسمى جزئيا منطقيا ومعروضه أعني « زيدا » يسمى جزئيا طبيعيا ومجموع العارض والمعروض أعني « زيدا الجزئي » يسمى جزئيا عقليا .",
+      "english": "Indeed, these three considerations apply even to particulars. If we say ‘Zayd is a particular’, the concept of particularity—what cannot be supposed to apply to many—is a logical particular. Zayd himself is the underlying or natural particular, while ‘Zayd-as-particular’ is the combined, intellectual particular.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/49?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-49.05",
+      "unit": "L.08",
+      "page": 49,
+      "title": "Why logical and intellectual universals are not external objects",
+      "arabic": "لا ينبغي أن يشك في أن الكلي المنطقي غير موجود في الخارج فإن الكلية إنما تعرض للمفهومات في العقل ولذا كانت من المعقولات الثانية وكذا في أن الكلي العقلي غير موجود فيه فإن انتفاء الجزء يستلزم انتفاء الكل .",
+      "english": "There should be no doubt that the logical universal does not exist as such outside the mind: universality belongs to concepts in the intellect and is accordingly a second intelligible. The intellectual universal, comprising both the nature and universality, likewise does not exist as such externally, since a whole cannot exist there if one constituent is absent there.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/49?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-49.06",
+      "unit": "L.08",
+      "page": 49,
+      "title": "The precise controversy over natural universals",
+      "arabic": "وإنما النزاع في أن الطبيعي كالإنسان من حيث هو إنسان الذي يعرضه الكلية في العقل هل هو موجود في الخارج بوجود أفراده أم لا بل ليس الموجود فيه إلا الأفراد .",
+      "english": "The actual dispute concerns the natural universal, such as human considered simply as human, which receives the attribution of universality in the mind. Does this nature exist externally through the existence of its individuals, or are only those individuals external? That is the question, not whether abstract universality itself walks about in the world.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/49?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-49.07",
+      "unit": "L.08",
+      "page": 49,
+      "title": "The majority position and al-Taftāzānī’s qualification",
+      "arabic": "والأول مذهب جمهور الحكماء والثاني مذهب بعض المتأخرين ومنهم المصنف ولذا قال الحق هو الثاني وذلك لأنه لو وجد الكلي في الخارج في ضمن الأفراد لزم اتصاف الشيء الواحد بالصفات المتضادة ووجود الشيء الواحد في الأمكنة المتعددة .",
+      "english": "The first account, existence of the nature in its individuals, is attributed to most philosophers. The second, that only individuals exist externally in this sense, is attributed to certain later scholars including al-Taftāzānī. The objection is that one universal thing would otherwise have incompatible attributes or occupy different places simultaneously.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/49?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-50.01",
+      "unit": "L.09",
+      "page": 50,
+      "title": "The task of a defining expression",
+      "arabic": "وعرفه بأنه ما يحمل على الشيء أي المعرف ليفيد تصور هذا الشيء إما بكنهه أو بوجه يمتاز عن جميع ما عداه .",
+      "english": "He defines an account that makes a thing known as something predicable of the thing to be explained which provides a conception either of what the thing is in its essence or of a characteristic distinguishing it from everything else. This purpose governs the conditions of definition.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-50.02",
+      "unit": "L.09",
+      "page": 50,
+      "title": "Why a wider term cannot define a narrower kind",
+      "arabic": "ولهذا لم يجز أن يكون أعم لأن الأعم لا يفيد شيئا منهما كالحيوان في تعريف الإنسان فإن الحيوان ليس كنه الإنسان لأن الإنسان هو الحيوان مع الناطق .",
+      "english": "A definition must not be more general than what is defined. ‘Animal’ does not define ‘human’: the human essence is not merely animal but animal together with the rational differentia. Merely identifying the wider genus leaves the specific nature undetermined.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-50.03",
+      "unit": "L.09",
+      "page": 50,
+      "title": "The wider term fails to distinguish",
+      "arabic": "وأيضا لا يميز الإنسان عن جميع ما عداه لأن بعض الحيوان هو الفرس وكذا الحال في الأعم من وجه .",
+      "english": "Nor does the wider term distinguish the human being from every other thing: some animals are horses. The same defect affects a predicate that overlaps the proposed definiendum without including exactly its instances.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-50.04",
+      "unit": "L.09",
+      "page": 50,
+      "title": "Why a narrower expression is not a satisfactory definition",
+      "arabic": "لكن لما كان الأخص أقل وجودا في العقل وأخفى في نظره وشأن المعرف أن يكون أعرف من المعرف لم يجز أن يكون أخص أيضا .",
+      "english": "A narrower expression may incidentally bring a wider concept to mind. Yet it is less readily available to the intellect and generally more obscure, whereas what defines should be better known than what it defines. Hence definition by a strictly narrower predicate is excluded as well.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-50.05",
+      "unit": "L.09",
+      "page": 50,
+      "title": "Coextension means equal predicative range",
+      "arabic": "وقد علم من تعريف المعرف بما يحمل على الشيء أنه لا يجوز أن يكون المعرف مباينا للمعرف فتعين أن يكون مساويا له في الصدق .",
+      "english": "Because a defining account must be predicable of what is being defined, a wholly disjoint predicate cannot serve. The proper defining expression must therefore be coextensive with its definiendum: each is correctly predicable wherever the other is.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-50.06",
+      "unit": "L.09",
+      "page": 50,
+      "title": "Coextension is not enough: the definition must be clearer",
+      "arabic": "ثم ينبغي أن يكون المعرف أعرف من المعرف في نظر العقل لأنه معلوم موصل إلى تصور مجهول هو المعرف لا أخفى منه ولا مساويا له في الخفاء والظهور .",
+      "english": "A further condition is that the defining expression be better known to the intellect. It is supposed to take us from something already understood to a conception not yet attained; it cannot achieve this if it is more obscure, or no clearer, than the thing it purports to define.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-50.07",
+      "unit": "L.09",
+      "page": 50,
+      "title": "Essential definition versus description",
+      "arabic": "قوله « بالفصل القريب حد » : التعريف لا بد أن يشتمل على أمر يخص المعرف ويساويه بناء على ما سبق من اشتراط المساواة فهذا الأمر إن كان ذاتيا كان فصلا قريبا وإن كان عرضيا كان خاصة لا محالة .",
+      "english": "On ‘by the proximate differentia it is a definition’: the account must include a feature proper to and coextensive with what is defined. If that feature is essential, it is the proximate differentia; if extrinsic to the essence, it is a proprium. The distinction determines whether the account is an essential definition or a descriptive account.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-50.08",
+      "unit": "L.09",
+      "page": 50,
+      "title": "Complete essential definitions and descriptions",
+      "arabic": "فعلى الأول المعرف يسمى حدا وعلى الثاني يسمى رسما ثم كل منهما إن اشتمل على الجنس القريب يسمى حدا تاما ورسما تاما .",
+      "english": "In the first case the account is called a ḥadd, an essential definition; in the second it is a rasm, a description through a proprium. Either is ‘complete’ (tāmm) when it also includes the proximate genus: essential definition then combines genus and differentia, whereas complete description combines genus and proprium.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-50.09",
+      "unit": "L.09",
+      "page": 50,
+      "title": "Incomplete definitions",
+      "arabic": "وإن لم يشتمل على الجنس القريب سواء اشتمل على الجنس البعيد أو كان هناك فصل قريب وحده أو خاصة وحدها يسمى حدا ناقصا ورسما ناقصا .",
+      "english": "Without the proximate genus, an essential definition or description is ‘incomplete’ (nāqiṣ): the account might use a remote genus, or merely the proximate differentia, or merely a proprium. ‘Incomplete’ marks the account’s structure rather than declaring that it cannot be useful to a learner.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
       "attribution": "Yazdī main commentary; later printed footnotes excluded"
     }
   ]
