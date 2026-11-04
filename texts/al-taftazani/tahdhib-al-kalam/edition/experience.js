@@ -260,6 +260,7 @@ function buildFlow(){
   // The type rhythm follows original punctuation, not synthetic ellipses.
  }
  root.replaceChildren(frag);root.dataset.view=view.view;
+ document.dispatchEvent(new CustomEvent('gnamma-tahdhib-flow-built',{detail:{view:view.view,mode:prefs.mode}}));
 }
 function refreshArabic(){
  // Reconstruct only if needed; source unit IDs and all nonvocalized text remain stable.

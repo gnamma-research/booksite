@@ -1,3 +1,7 @@
+/* Ordinary book reading should foreground the argument, not production notes.
+   Source-critical qualifications remain available in Study and optional Help. */
+body[data-reading-style="flow"] .main > .source-note,
+body[data-reading-style="flow"] .main > .foot{display:none!important}
 /* Identical Daruri-style Tahdhib chrome for both kalam and logic editions.
    The original Daruri bookmark SVGs are imported from daruri/bookmark-ui.js. */
 /* Colour identities mirror the named Darūrī Visuals palettes. Dark appearance remains independently legible. */

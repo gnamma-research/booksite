@@ -169,7 +169,7 @@
         "ar-1912-facsimile",
         "en-page-aligned-preliminary"
       ],
-      "url": "texts/al-taftazani/tahdhib-al-kalam/",
+      "url": "texts/al-taftazani/tahdhib-al-kalam/edition/",
       "related_commentary_id": "sanandaji-taqrib-maram",
       "note": "All 113 original Cairo 1912 kalam pages have page-linked English draft; selected passages are expanded or clause-verified, but 38 of the older 83 thematic units retain gap=true and other portions are not yet fully literal. Not a definitive edition.",
       "full_reader_url": "texts/al-taftazani/tahdhib-al-kalam/complete/",
@@ -238,9 +238,9 @@
         "ar",
         "en"
       ],
-      "url": "texts/al-taftazani/tahdhib-al-mantiq/",
+      "url": "texts/al-taftazani/tahdhib-al-mantiq/edition/",
       "related_kalam_id": "taftazani-tahdhib-kalam",
-      "note": "19 bilingual divisions of the Cairo 1912 logic matn restored in source order, including repaired L.11 modalities and removal of an unwitnessed commentary addition in L.16. Explanatory notes and the النظريات/فطريات variant recorded; independent manuscript collation not complete.",
+      "note": "19 bilingual divisions of the Cairo 1912 logic matn restored in source order, including repaired L.11 modalities and removal of an unwitnessed commentary addition in L.16. Explanatory notes and the النظريات/فطريات variant recorded; independent manuscript collation not complete. Optional al-Yazdī source translation layer: 32 selected passages aligned to L.02–L.06; other divisions pending translation.",
       "critical_reading": "texts/al-taftazani/tahdhib-al-mantiq/2026-10-31_parallel_reading.md",
       "enhanced_reader_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/",
       "enhanced_reader_status": "Stage78: 19/19 complete bilingual logic divisions mapped to Cairo 1912 printed pp3–14; seven compared printed readings recorded; L13 and L16 Cairo text corrected, Stage77 L16 misattribution explicitly retracted. All modal-inference and manuscript proofing remains open.",

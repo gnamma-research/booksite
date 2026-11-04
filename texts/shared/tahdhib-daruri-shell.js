@@ -20,6 +20,8 @@ const shapes={
  index:"<circle cx=\"6\" cy=\"6\" r=\"2\"/><circle cx=\"18\" cy=\"7\" r=\"2\"/><circle cx=\"8\" cy=\"18\" r=\"2\"/><path d=\"M8 6.2h8M7 8l1 8M16.7 9l-7 7\"/>",
  immersive:'<path d="M8 3H4v5M16 3h4v5M4 16v5h4M20 16v5h-4"/>'
 };
+shapes.layers=shapes.read; // The same open-book glyph used for Daruri's reading apparatus
+shapes.books='<path d="M5 3h11l3 3v15H5V3ZM16 3v4h3M8 10h7M8 13h5M8 17h4"/><path d="m15 16 4-4 2 2-4 4-3 1z"/>';
 function icon(kind){const s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('viewBox','0 0 24 24');s.setAttribute('aria-hidden','true');s.setAttribute('fill','none');s.setAttribute('stroke','currentColor');s.setAttribute('stroke-width','1.75');s.setAttribute('stroke-linecap','round');s.setAttribute('stroke-linejoin','round');s.innerHTML=shapes[kind]||shapes.help;return s}
 function el(tag,cls,value){const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=String(value);return n}
 function btn(label,kind,fn){const b=el('button','gn-daruri-action');b.type='button';b.title=label;b.setAttribute('aria-label',label);
@@ -34,14 +36,14 @@ function pdfs(){click('#export')}
 const bar=el('nav','gn-daruri-toolbar');bar.id='gn-daruri-toolbar';bar.setAttribute('aria-label','Reading toolbar');
 const first=el('div','gn-daruri-tools'),second=el('div','gn-daruri-tools gn-daruri-tools-end');
 bar.append(first,second);
-first.append(btn('Contents','contents',contents),btn('Read','read',()=>setMode('flow')),btn('Study','study',()=>setMode('study')),btn('Immersive','immersive',()=>setMode('immersive')));
+first.append(btn('Books','books',booksPanel),btn('Contents','contents',contents),btn('Read','read',()=>setMode('flow')),btn('Study','study',()=>setMode('study')),btn('Immersive','immersive',()=>setMode('immersive')));
 second.append(btn('Search','search',search));
 const languages=el('div','gn-daruri-languages');languages.setAttribute('role','group');languages.setAttribute('aria-label','Reading language');
 for(const [v,label] of [['ar','ع'],['en','EN'],['both','ع/EN']]){const b=el('button',null,label);b.type='button';b.dataset.gnLang=v;b.title=v==='ar'?'Arabic only':v==='en'?'English only':'Arabic and English';b.setAttribute('aria-label',b.title);b.addEventListener('click',()=>{const x=$('[data-view="'+v+'"]');x?.click();sync()});languages.append(b)}
 second.append(languages);
 const vowel=btn('Arabic vowels','read',()=>{const p=ex.getPrefs(),next=p.vocalization==='original'?'assisted':'original';click('[data-vowel-mode="'+next+'"]');sync()});
 vowel.id='gn-daruri-vowels';vowel.querySelector('svg').replaceWith(el('span','gn-daruri-vowel-letter','حَ'));second.append(vowel);
-second.append(btn('Saved','saved',savedPanel),btn('Notes','note',()=>click('#gn-notebook-button')),btn('Dictionary','dictionary',()=>window.GnammaTahdhibTerms?.open()),btn('Subject index','index',()=>window.GnammaTahdhibSubjectIndex?.open()),btn('Visuals','visuals',visualsPanel),btn('Editions','pdf',pdfs),btn('Help','help',helpPanel));
+second.append(btn('Saved','saved',savedPanel),btn('Layers','layers',layersPanel),btn('Notes','note',()=>click('#gn-notebook-button')),btn('Dictionary','dictionary',()=>window.GnammaTahdhibTerms?.open()),btn('Subject index','index',()=>window.GnammaTahdhibSubjectIndex?.open()),btn('Visuals','visuals',visualsPanel),btn('Editions','pdf',pdfs),btn('Help','help',helpPanel));
 const overlay=el('div','gn-daruri-overlay');overlay.id='gn-daruri-overlay';overlay.hidden=true;
 const sheet=el('section','gn-daruri-sheet');sheet.setAttribute('role','dialog');sheet.setAttribute('aria-modal','true');sheet.setAttribute('aria-labelledby','gn-daruri-title');overlay.append(sheet);
 let lastFocus=null;
@@ -56,6 +58,35 @@ function select(root,label,choices,current,fn){const wrap=setting(root,label),s=
  for(const [v,title] of choices){const o=el('option',null,title);o.value=v;s.append(o)}
  s.value=current;s.addEventListener('change',()=>fn(s.value));wrap.append(s);return s}
 function resource(root,label,href){const a=el('a','gn-daruri-resource',label);a.href=href;root.append(a)}
+function booksPanel(){open('Gnamma books',root=>{
+ root.append(el('p','gn-daruri-description','Choose a book; your reading position and saved notes remain in each book.'));
+ resource(root,'Uṣūl al-fiqh · al-Ḍarūrī','../../../../daruri/');
+ resource(root,'Logic · Tahdhīb al-Manṭiq','../../tahdhib-al-mantiq/edition/');
+ resource(root,'Kalām · Tahdhīb al-Kalām','../../tahdhib-al-kalam/edition/');
+ resource(root,'All books','../../../../texts/');
+})}
+function layersPanel(){open('Reading apparatus & commentary',root=>{
+ if(isLogic){
+  const layer=window.GnammaYazdiLayer;
+  const label=el('label','gn-yazdi-switch');
+  const check=el('input');check.type='checkbox';check.setAttribute('aria-label','Show translated commentary by Mullā al-Yazdī');
+  check.checked=layer?.enabled()||false;
+  check.addEventListener('change',()=>{
+   layer?.setEnabled(check.checked);
+   const action=root.querySelector('[data-yazdi-jump]');if(action)action.disabled=!check.checked;
+  });
+  const copy=el('span');copy.append(el('strong',null,'Mullā ʿAbd Allāh al-Yazdī'));
+  copy.append(el('small',null,'Show the available bilingual commentary passages alongside the logic text'));
+  label.append(check,copy);root.append(label);
+  root.append(el('p','gn-yazdi-note','The available translations cover L.02–L.06. Untranslated divisions remain plain text with no placeholder commentary.'));
+  const to=btn('Go to first translated passage','contents',()=>{close();setMode('flow');api.go(2,'u-L-02')});
+  to.dataset.yazdiJump='';to.disabled=!check.checked;root.append(to);
+ } else {
+  root.append(el('p','gn-daruri-description','The separate Sanandajī commentary remains a companion book.'));
+  resource(root,'Read Taqrīb al-Marām','../../../al-sanandaji/taqrib-al-maram/');
+ }
+ root.append(el('p','gn-daruri-note','These layers are separate from al-Taftāzānī’s text and your personal Reading Desk notes.'));
+})}
 function visualsPanel(){open('Visuals',root=>{
  const pref=ex.getPrefs(),state=api.getState();
  select(root,'Reading mode',[['flow','Continuous reading'],['immersive','Immersive reading'],['study','Study · annotated passages']],pref.mode,setMode);
@@ -119,6 +150,7 @@ function sync(){
  });
  const v=api.getState().view;$$('[data-gn-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.gnLang===v)));
  vowel.setAttribute('aria-pressed',String(ex.getPrefs().vocalization!=='original'));
+ const layers=bar.querySelector('[aria-label="Layers"]');if(layers)layers.setAttribute('aria-pressed',String(Boolean(window.GnammaYazdiLayer?.enabled())));
 }
 document.body.dataset.gnOrder=(()=>{try{return localStorage.getItem('gnamma-tahdhib-order')||'en-left'}catch{return'en-left'}})();
 document.body.dataset.gnPageStyle=(()=>{try{return localStorage.getItem('gnamma-tahdhib-page-style')||'quiet'}catch{return'quiet'}})();
@@ -136,6 +168,7 @@ for(const [selector,d] of [['#dock-prev','m15 5-7 7 7 7'],['#dock-next','m9 5 7 
 document.body.append(overlay);
 document.addEventListener('gnamma-tahdhib-view',sync);
 document.addEventListener('gnamma-tahdhib-render',sync);
+document.addEventListener('gnamma-tahdhib-yazdi',sync);
 sync();
 window.GnammaTahdhibDaruriShell={close,openVisuals:visualsPanel,openSaved:savedPanel,version:1};
 })();

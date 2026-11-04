@@ -16,6 +16,7 @@ on:
       - "tools/tahdhib/reader_qa.mjs"
       - "tools/tahdhib/experience_qa.mjs"
       - "tools/tahdhib/daruri_shell_qa.mjs"
+      - "tools/tahdhib/yazdi_layer_qa.mjs"
       - "texts/shared/tahdhib-daruri-shell.js"
       - "texts/shared/tahdhib-daruri-shell.css"
       - "texts/al-taftazani/tahdhib-al-kalam/edition/subject-index.js"
@@ -31,7 +32,7 @@ on:
       - "texts/al-taftazani/tahdhib-al-kalam/edition/**"
       - "texts/al-taftazani/tahdhib-al-mantiq/edition/**"
 concurrency:
-  group: tahdhib-reader-verification
+  group: tahdhib-reader-verification-${{ github.ref }}
   cancel-in-progress: true
 permissions:
   contents: read
@@ -166,6 +167,9 @@ jobs:
           node --check texts/shared/tahdhib-daruri-shell.js
           node --check daruri/bookmark-ui.js
           node --check tools/tahdhib/daruri_shell_qa.mjs
+          node --check tools/tahdhib/yazdi_layer_qa.mjs
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer-data.js
+          node --check texts/al-taftazani/tahdhib-al-mantiq/edition/yazdi-layer.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/reader.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/experience.js
           node --check texts/al-taftazani/tahdhib-al-kalam/edition/vowels.js
@@ -178,3 +182,4 @@ jobs:
           node tools/tahdhib/reader_qa.mjs
           node tools/tahdhib/experience_qa.mjs
           node tools/tahdhib/daruri_shell_qa.mjs
+          node tools/tahdhib/yazdi_layer_qa.mjs
