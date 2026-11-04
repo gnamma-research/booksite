@@ -1,4 +1,4 @@
-/* Selected bilingual translations from al-Yazdī's historical commentary; source witnesses and modern marginalia separate. */
+/* Bilingual selections from al-Yazdī's commentary; not the modern marginalia. */
 window.GNAMMA_YAZDI_LAYER={
   "schema": "gnamma-yazdi-translation-layer-v1",
   "work": "Tahdhīb al-Manṭiq",
@@ -7,7 +7,7 @@ window.GNAMMA_YAZDI_LAYER={
   "edition": "Qum, Muʾassasat al-Nashr al-Islāmī; searchable paginated text",
   "editionCatalog": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en",
   "sourceIndex": "https://ablibrary.net/book_content/b/12170/1",
-  "coverage": "Translated selections from printed pp. 14–19, 22–27, 30–37 and 46–50, aligned to Taftāzānī logic L.02–L.09. All excerpts are incomplete selected portions of the full al-Yazdī commentary; later editorial and marginal voices are not included.",
+  "coverage": "Translated selections from pp. 14–19, 22–27, 30–37, 46–50 and 59–60, mapped to logic L.02–L.09 and L.11. No commentary is shown for units lacking translated passages, including L.10 and L.12–L.19. This is a selected translation, not a complete translation of al-Yazdī's commentary.",
   "complete": false,
   "entries": [
     {
@@ -598,6 +598,126 @@ window.GNAMMA_YAZDI_LAYER={
       "arabic": "وإن لم يشتمل على الجنس القريب سواء اشتمل على الجنس البعيد أو كان هناك فصل قريب وحده أو خاصة وحدها يسمى حدا ناقصا ورسما ناقصا .",
       "english": "Without the proximate genus, an essential definition or description is ‘incomplete’ (nāqiṣ): the account might use a remote genus, or merely the proximate differentia, or merely a proprium. ‘Incomplete’ marks the account’s structure rather than declaring that it cannot be useful to a learner.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/50?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-59.01",
+      "unit": "L.11",
+      "page": 59,
+      "title": "Infinitation belongs inside a term",
+      "arabic": "قوله « معدولة » : لأن حرف السلب موضوع لسلب النسبة فإذا استعمل لا في هذا المعنى كان معدولا عن معناه الأصلي فسميت القضية التي هذا الحرف جزء من جزئها معدولة .",
+      "english": "On ‘infinitated’: the negative particle is ordinarily employed to deny the predicative relation. If it is used instead as a component of one of the proposition’s terms, it has been diverted from that original function. Hence the resulting proposition is called infinitated (maʿdūla).",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-59.02",
+      "unit": "L.11",
+      "page": 59,
+      "title": "The non-infinitated alternative",
+      "arabic": "والقضية التي لا يكون حرف السلب جزءا من طرفيها تسمى محصلة .",
+      "english": "A proposition in which the negative particle forms no part of either term is called non-infinitated (muḥaṣṣala). This is distinct from asking whether the whole assertion is affirmative or negative.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-59.03",
+      "unit": "L.11",
+      "page": 59,
+      "title": "Matter of the proposition is its actual modal character",
+      "arabic": "قوله « بكيفية النسبة » : أي نسبة المحمول إلى الموضوع سواء كانت إيجابية أو سلبية تكون لا محالة مكيفة في نفس الأمر والواقع بكيفية مثل الضرورة أو الدوام أو الامتناع أو غير ذلك فتلك الكيفية الواقعة في نفس الأمر تسمى مادة القضية .",
+      "english": "On ‘the quality of the relation’: the relation of predicate to subject, whether affirmed or denied, necessarily has some character in reality—for example, necessity, permanence, impossibility, or another modal condition. That actual character of the predicative relation is called the matter (mādda) of the proposition.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-59.04",
+      "unit": "L.11",
+      "page": 59,
+      "title": "Expressing modality is different from possessing it",
+      "arabic": "ثم قد يصرح في القضية بأن تلك النسبة مكيفة في نفس الأمر بكيفية كذا فالقضية حينئذ تسمى موجهة وقد لا يصرح بذلك فتسمى القضية مطلقة .",
+      "english": "A proposition may explicitly state which modal character belongs to its predicative relation; in that case it is a modal proposition (muwajjaha). If the character is not stated, it is an unqualified proposition (muṭlaqa). Lack of an expressed modal qualifier does not mean that the relation lacks a character in reality.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-59.05",
+      "unit": "L.11",
+      "page": 59,
+      "title": "The modality (jiha) is what indicates the claimed condition",
+      "arabic": "واللفظ الدال عليها في القضية الملفوظة والصورة العقلية الدالة عليها في القضية المعقولة يسمى جهة القضية .",
+      "english": "The word indicating the modal character in a spoken or written proposition—and the corresponding intelligible representation in a mentally grasped proposition—is called its modality (jiha). Thus the expressed modality must be distinguished from the underlying matter.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-59.06",
+      "unit": "L.11",
+      "page": 59,
+      "title": "Truth requires conformity between expressed modality and matter",
+      "arabic": "فإن طابقت الجهة المادة صدقت القضية كقولنا كل إنسان حيوان بالضرورة وإلا كذبت كقولنا كل إنسان حجر بالضرورة .",
+      "english": "If the asserted modality accords with the actual modal matter, the proposition is true, as in ‘Every human is necessarily an animal.’ If it does not, it is false, as in ‘Every human is necessarily a stone.’ This condition concerns the proposition as modally qualified, not merely the surface presence of a modal word.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/59?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.01",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Description-conditioned necessity",
+      "arabic": "الثاني : أنها ضرورية ما دام الوصف العنواني ثابتا لذات الموضوع نحو كل كاتب متحرك الأصابع بالضرورة ما دام كاتبا فتسمى حينئذ مشروطة عامة لاشتراط الضرورة بالوصف العنواني .",
+      "english": "Second, the predication may be necessary only while the subject bears the descriptive title under which it is considered—for instance, ‘Every writer necessarily moves the fingers while writing.’ The resulting proposition is generally conditioned (mashrūṭa ʿāmma) because its necessity depends on that title, not on the entire duration of the subject’s existence.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.02",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Necessity at a specified time",
+      "arabic": "الثالث : أنها ضرورية في وقت معين نحو كل قمر منخسف بالضرورة وقت حيلولة الأرض بينه وبين الشمس فتسمى حينئذ وقتية مطلقة لتقييد الضرورة بالوقت وعدم تقييد القضية باللادوام .",
+      "english": "Third, the relation may be necessary at a specified time, as with a lunar eclipse at the time the Earth intervenes between Moon and Sun. This is an absolutely temporal proposition (waqtiyya muṭlaqa): its necessity is restricted to a determinate time, without a further assertion of nonpermanence.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.03",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Necessity at an unspecified time",
+      "arabic": "الرابع : أنها ضرورية في وقت من الأوقات كقولنا كل إنسان متنفس بالضرورة وقتا ما فتسمى حينئذ منتشرة مطلقة لكون وقت الضرورة فيها منتشرا أي غير معين .",
+      "english": "Fourth, one may judge a relation necessary at some time without identifying when. ‘Every human necessarily breathes at some time’ illustrates the kind of claim intended. It is termed absolutely diffuse (muntashira muṭlaqa), because the time of necessity is left unspecified.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.04",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Permanence does not mean necessity",
+      "arabic": "قوله « فدائمة مطلقة » : والفرق بين الضرورة والدوام أن الضرورة هي استحالة انفكاك شيء عن شيء والدوام عدم انفكاكه عنه وإن لم يكن مستحيلا كدوام الحركة للفلك .",
+      "english": "On ‘absolutely permanent’: the difference is that necessity makes separation impossible, whereas permanence means that separation does not occur, even though it might be possible. The commentary gives the traditional example of perpetual celestial motion; the logical distinction does not depend on accepting that cosmology.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.05",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Duration relative to substance or descriptive condition",
+      "arabic": "ثم الدوام أعني عدم انفكاك النسبة الإيجابية أو السلبية عن الموضوع إما ذاتي أو وصفي فإن كان الحكم في الموجهة بالدوام الذاتي أي بعدم انفكاك النسبة عن الموضوع ما دام ذات الموضوع موجودة سميت القضية دائمة .",
+      "english": "Permanence, that is, continued inseparability of an affirmative or negative predicative relation from its subject, may be tied either to the subject itself or to a description. When judged to last throughout the existence of the subject, the proposition is called permanent (dāʾima).",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-60.06",
+      "unit": "L.11",
+      "page": 60,
+      "title": "Customary permanence while the title applies",
+      "arabic": "وإن كان الحكم بالدوام الوصفي أي بعدم انفكاك النسبة عن ذات الموضوع ما دام الوصف العنواني ثابتا لتلك الذات سميت عرفية لأن أهل العرف يفهمون هذا المعنى من القضية السالبة بل من الموجبة أيضا عند الإطلاق .",
+      "english": "If permanence is tied to a descriptive attribute—so that the predicate remains attached only while the subject falls under a given title—the proposition is called customary (ʿurfiyya). Ordinary usage understands many positive and negative predications this way: the claim concerns the subject while it bears the named description.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/60?lang=ar",
       "attribution": "Yazdī main commentary; later printed footnotes excluded"
     }
   ]
