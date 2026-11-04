@@ -24,20 +24,20 @@ async function test(engine,browser,kind,viewport){
   await page.locator('#gn-daruri-toolbar button[aria-label="Layers"]').click();
   if(kind==='logic'){
    assert(await page.evaluate(()=>!!window.GnammaYazdiLayer),'Yazdi translator layer missing');
-   assert(await page.evaluate(()=>window.GnammaYazdiLayer.entryCount)===22,'Source-checked translation count mismatch');
+   assert(await page.evaluate(()=>window.GnammaYazdiLayer.entryCount)===32,'Source-checked translation count mismatch');
    const checkbox=page.locator('#gn-daruri-overlay input[aria-label="Show translated commentary by Mullā al-Yazdī"]');
    assert(await checkbox.count()===1,'Translation layer checkbox missing');
    assert(!(await checkbox.isChecked()),'Unrequested commentary enabled by default');
    await checkbox.check();
    assert(await page.locator('body[data-yazdi="on"]').count()===1,'Commentary toggle does not activate display');
    await page.locator('#gn-daruri-overlay button[aria-label="Close"]').click();
-   assert(await page.locator('#flow-passages .gn-yazdi-layer').count()===2,'Selected divisions missing');
-   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===22,'Translated passages missing');
-   assert(await page.locator('#flow-passages .gn-yazdi-ar').first.textContent()!=='','Arabic original missing');
-   assert((await page.locator('#flow-passages .gn-yazdi-en').first.textContent()).includes('three matters'),'English translation missing');
-   assert(await page.locator('#flow-passages .gn-yazdi-layer[data-yazdi-unit="L.04"]').count()===0,'Invented text for untranslated division');
+   assert(await page.locator('#flow-passages .gn-yazdi-layer').count()===5,'Selected divisions missing');
+   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===32,'Translated passages missing');
+   assert(await page.locator('#flow-passages .gn-yazdi-ar').first().textContent()!=='','Arabic original missing');
+   assert((await page.locator('#flow-passages .gn-yazdi-en').first().textContent()).includes('three matters'),'English translation missing');
+   assert(await page.locator('#flow-passages .gn-yazdi-layer[data-yazdi-unit="L.07"]').count()===0,'Invented text for untranslated division');
    const links=await page.locator('#flow-passages .gn-yazdi-source').evaluateAll(xs=>xs.map(a=>a.href));
-   assert(links.length===22&&links.every(x=>x.includes('/book_content/b/12170/')),'Source pagination disconnected');
+   assert(links.length===32&&links.every(x=>x.includes('/book_content/b/12170/')),'Source pagination disconnected');
    await page.locator('#gn-daruri-toolbar [data-gn-lang="ar"]').click();
    const hidden=await page.evaluate(()=>getComputedStyle(document.querySelector('#flow-passages .gn-yazdi-en')).display);
    assert(hidden==='none','Arabic-only mode leaks English commentary');
@@ -46,10 +46,10 @@ async function test(engine,browser,kind,viewport){
    await page.evaluate(()=>window.GnammaTahdhibReader.go(2));
    assert(await page.locator('#passages:not([hidden]) .gn-yazdi-layer[data-yazdi-unit="L.02"]').count()===1,'Study commentary not aligned');
    await page.locator('#gn-daruri-toolbar button[aria-label="Read"]').click();
-   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===22,'Continuous reading lost commentary');
+   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===32,'Continuous reading lost commentary');
    await page.reload({waitUntil:'networkidle'});
    assert(await page.locator('body[data-yazdi="on"]').count()===1,'User-selected layer was not preserved');
-   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===22,'Commentary source not restored on refresh');
+   assert(await page.locator('#flow-passages .gn-yazdi-excerpt').count()===32,'Commentary source not restored on refresh');
   }else{
    assert(await page.locator('#gn-daruri-overlay a').filter({hasText:'Read Taqrīb al-Marām'}).count()===1,'Kalām companion commentary missing');
    assert(await page.locator('#gn-daruri-overlay input[aria-label="Show translated commentary by Mullā al-Yazdī"]').count()===0,'Yazdi incorrectly offered for Kalām');
