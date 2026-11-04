@@ -16,6 +16,9 @@ Catalogue data: `manifest.json`. Shared parallel-text reader: `shared/tahdhib-re
 ## Ṭabāṭabāʾī’s philosophy textbooks
 
 - `al-tabatabai/nihayat-al-hikma/`: complete authorial Arabic sequence and fresh English working translation; 130 numbered chapters plus six introductions, 136 reading units. Selected print checks; not a manuscript-critical edition.
-- `al-tabatabai/bidayat-al-hikma/`: original reading guide and structural comparison; full new translation awaits a supplied or clearly reusable Arabic source. Qarāʾī’s published English edition is linked, not reproduced.
+- `al-tabatabai/bidayat-al-hikma/`: original Arabic text covering all 110 numbered chapters, with new English translation of the introduction and first four chapters; the remaining translation is pending. Uploaded 325-page bilingual source; its published English is not reproduced.
 - `al-tabatabai/study-guide.html`: stage correspondence, English bibliography, and the Iranian philosophy / theoretical ʿirfān study sequences.
 - `al-tabatabai/editorial-status.html`: exact scope, source method, recorded readings, and review limits.
+
+- `al-tabatabai/`: integrated one-link reading room for both books; Part I `Bidāya` and Part II `Nihāya`, keeping their distinct chapter navigation and editorial statuses.
+- `al-tabatabai/logic-guide.html`: seminary logic curricula, al-Muẓaffar’s logical definitions, Avicennian roots, and selected further translation targets.

@@ -277,16 +277,18 @@
         "Islamic philosophy",
         "metaphysics"
       ],
-      "status": "editorial-reading-guide-arabic-source-needed",
+      "status": "complete-arabic-working-english-translation-partial",
       "language": [
-        "en-editorial-guide",
-        "ar-editorial-guide"
+        "ar",
+        "en-working-partial"
       ],
       "url": "texts/al-tabatabai/bidayat-al-hikma/",
       "numbered_chapters_in_original": 110,
-      "translated_authorial_chapters": 0,
-      "note": "Original reading guide and twelve-stage correspondence with Nihāya. Qarāʾī’s published ICAS English translation is linked, not reproduced. Full new translation awaits a supplied or clearly reusable Arabic source.",
-      "study_guide_url": "texts/al-tabatabai/study-guide.html"
+      "translated_authorial_chapters": 4,
+      "note": "All 110 original Arabic chapters from the user-supplied Arabic–English edition. New working English translation: introduction plus first four chapters. Modern published English is not reproduced. Source normalization requires further proofing.",
+      "study_guide_url": "texts/al-tabatabai/study-guide.html",
+      "arabic_authorial_chapters": 110,
+      "integrated_reader_url": "texts/al-tabatabai/"
     },
     {
       "id": "tabatabai-nihayat-hikma",
@@ -313,7 +315,27 @@
       "translation_complete_in_authorial_corpus": true,
       "study_guide_url": "texts/al-tabatabai/study-guide.html",
       "english_text_url": "texts/al-tabatabai/nihayat-al-hikma/data/nihayat-al-hikma-english.txt",
-      "editorial_status_url": "texts/al-tabatabai/editorial-status.html"
+      "editorial_status_url": "texts/al-tabatabai/editorial-status.html",
+      "integrated_reader_url": "texts/al-tabatabai/"
+    },
+    {
+      "id": "tabatabai-hikma-pair",
+      "title": "Bidāyat & Nihāyat al-Ḥikma · Combined Reader",
+      "arabic": "بداية الحكمة · نهاية الحكمة",
+      "author": "Sayyid Muḥammad Ḥusayn al-Ṭabāṭabāʾī",
+      "author_slug": "al-tabatabai",
+      "work_slug": "",
+      "area": [
+        "Islamic philosophy",
+        "metaphysics"
+      ],
+      "status": "both-arabic-complete-bidaya-english-partial-nihaya-english-complete-working",
+      "language": [
+        "ar",
+        "en-partial"
+      ],
+      "url": "texts/al-tabatabai/",
+      "note": "A unified reading room preserving separate books and section numbering; stage navigation, Arabic/English controls, source notes, glossary, and local bookmarks."
     }
   ],
   "research": [
@@ -414,6 +436,7 @@
       {
         "name": "Islamic philosophy",
         "ids": [
+          "tabatabai-hikma-pair",
           "tabatabai-bidayat-hikma",
           "tabatabai-nihayat-hikma"
         ]
