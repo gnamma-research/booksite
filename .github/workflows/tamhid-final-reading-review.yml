@@ -1,0 +1,40 @@
+name: Tamhid final reading review
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/tamhid-final-reading-review.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: tamhid-final-reading-review
+  cancel-in-progress: false
+jobs:
+  review-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: texts/al-turka/qawaid-al-tawhid
+      - name: Verify translation coverage, source identity and reading controls
+        run: python texts/al-turka/qawaid-al-tawhid/qa/finalize-reading-edition.py
+      - name: Commit only the checked edition
+        run: |
+          git config user.name 'gnamma-research'
+          git config user.email '13307564+gnamma-research@users.noreply.github.com'
+          git add texts/al-turka/qawaid-al-tawhid/data/commentary.js texts/al-turka/qawaid-al-tawhid/data/commentary-corpus.json texts/al-turka/qawaid-al-tawhid/data/parallel-commentary.md texts/al-turka/qawaid-al-tawhid/data/commentary-english.md texts/al-turka/qawaid-al-tawhid/reader.js texts/al-turka/qawaid-al-tawhid/commentary-main-bridge.js texts/al-turka/qawaid-al-tawhid/qa/commentary-test-report.json texts/al-turka/qawaid-al-tawhid/qa/commentary-export-report.json texts/al-turka/qawaid-al-tawhid/qa/final-reading-audit.json texts/al-turka/qawaid-al-tawhid/editorial/FINAL_READING_EDITION_CHECK.md texts/al-turka/qawaid-al-tawhid/downloads/Tamhid_Complete_Commentary_Reading_Edition.html
+          if git diff --cached --quiet; then echo 'Already current'; else git commit -m 'Finalize 110-unit Tamhid reading edition and remove obsolete incomplete-status metadata'; git push origin HEAD:master; fi
+      - name: Retain reviewed deliverables
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tamhid-final-reading-edition
+          path: |
+            texts/al-turka/qawaid-al-tawhid/data/parallel-commentary.md
+            texts/al-turka/qawaid-al-tawhid/data/commentary-english.md
+            texts/al-turka/qawaid-al-tawhid/downloads/
+            texts/al-turka/qawaid-al-tawhid/qa/final-reading-audit.json
+            texts/al-turka/qawaid-al-tawhid/editorial/FINAL_READING_EDITION_CHECK.md
+            texts/al-turka/qawaid-al-tawhid/editorial/COMPARISON_NEW_CHAT.md
+          retention-days: 7
