@@ -1,0 +1,31 @@
+/* Mulla al-Yazdi: opt-in reading layer, never part of Taftazani's matn. */
+body:not([data-yazdi="on"]) .gn-yazdi-layer{display:none!important}
+.gn-yazdi-layer{padding:18px 4px 23px;margin:16px auto 34px;max-width:1080px;border-top:2px solid var(--accent);border-bottom:1px solid var(--border);scroll-margin-top:108px;color:var(--ink)}
+.gn-yazdi-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin:0 0 19px}
+.gn-yazdi-head h3{font:550 calc(18px * var(--reader-scale))/1.4 Georgia,serif;margin:0}
+.gn-yazdi-head small,.gn-yazdi-locator{font:11px/1.5 system-ui;color:var(--muted)}
+.gn-yazdi-excerpt{margin:0 0 19px;padding:0 0 13px;border-bottom:1px solid var(--border)}
+.gn-yazdi-excerpt:last-child{border:0;margin-bottom:0}
+.gn-yazdi-locator{margin-bottom:8px}
+.gn-yazdi-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,56px)}
+.gn-yazdi-en{font:calc(16px * var(--reader-scale))/1.75 var(--gn-en-reader,Georgia,serif);margin:0;overflow-wrap:anywhere}
+.gn-yazdi-ar{font:calc(23px * var(--reader-scale))/1.95 var(--gn-ar-reader,'Amiri',serif);text-align:right;margin:0;min-width:0;overflow-wrap:break-word}
+.gn-yazdi-source{display:inline-block;margin-top:7px;font:11px/1.4 system-ui;color:var(--accent-ink);text-decoration:none}
+.gn-yazdi-source:hover,.gn-yazdi-source:focus-visible{text-decoration:underline}
+#flow-passages[data-view="ar"] .gn-yazdi-pair,#flow-passages[data-view="en"] .gn-yazdi-pair,
+#passages.view-ar .gn-yazdi-pair,#passages.view-en .gn-yazdi-pair{display:block}
+#flow-passages[data-view="ar"] .gn-yazdi-en,#passages.view-ar .gn-yazdi-en{display:none}
+#flow-passages[data-view="en"] .gn-yazdi-ar,#passages.view-en .gn-yazdi-ar{display:none}
+#flow-passages[data-view="ar"] .gn-yazdi-ar,#flow-passages[data-view="en"] .gn-yazdi-en{max-width:70ch;margin:auto}
+.gn-yazdi-switch{display:flex;align-items:center;gap:12px;padding:11px 12px;border:1px solid var(--border);border-radius:8px;background:var(--bg);cursor:pointer;font:13px/1.5 system-ui}
+.gn-yazdi-switch input{accent-color:var(--accent);width:19px;height:19px;flex:none}
+.gn-yazdi-switch strong{display:block;font-weight:650}
+.gn-yazdi-switch small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+.gn-yazdi-note{font:12px/1.6 system-ui;color:var(--muted);margin:3px 0 0}
+@media(max-width:760px){
+ .gn-yazdi-layer{margin:13px 0 26px;padding:14px 0 18px}
+ .gn-yazdi-pair{grid-template-columns:1fr;gap:10px}
+ .gn-yazdi-ar{order:-1;font-size:calc(22px * var(--reader-scale))}
+ .gn-yazdi-en{font-size:calc(16px * var(--reader-scale))}
+}
+@media print{.gn-yazdi-layer{display:none!important}}
