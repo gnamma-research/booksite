@@ -17,7 +17,11 @@
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh English translation from the Arabic; published Qarāʾī English is reference only and is not reproduced.",
-    "collation": "Chapter boundaries and titles located against the supplied edition, Arabic text normalized from source pages; character-level proofing pending."
+    "collation": "Chapter boundaries and titles located against the supplied edition, Arabic text normalized from source pages; character-level proofing pending.",
+    "lectureNoteAttribution": "Student notes recorded by Aanand Krishnan based on lectures by Shaykh Mohammad Ali Shomali; not a verified transcript.",
+    "lectureNoteMappedChapters": 109,
+    "lectureNoteEditorialSynthesis": 21,
+    "lectureNoteApparatus": "../lecture-apparatus.html"
   },
   "sources": [
     {
@@ -42,6 +46,11 @@
       "id": "shomali-notes",
       "title": "Shomali lecture notes, transcribed by Aanand Krishnan (uploaded PDF)",
       "description": "Separate 268-page explanatory comparator, not an additional authorial Arabic witness."
+    },
+    {
+      "id": "shomali-krishnan",
+      "title": "Aanand Krishnan, notes based on lectures by Shaykh Mohammad Ali Shomali, Bidāyat al-Ḥikma",
+      "description": "User-supplied 268-page PDF. Full chapter-level source locators and a selection of independently drafted explanatory notes; notes are not reproduced wholesale. PDF is not distributed on this public site."
     }
   ],
   "stages": [
@@ -206,7 +215,16 @@
         "page": 14,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 9 (PDF p. 10); chapter 1.1. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "A self-evident concept (badīhī) does not need to be inferred from a prior definition. The notes distinguish our clear conception of existence from the philosophical difficulty of explaining the reality of existence. (Krishnan, printed p. 9; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-I-02",
@@ -222,7 +240,16 @@
         "page": 16,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 10 (PDF p. 11); chapter 1.2. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The notes distinguish a shared meaning (ishtirāk maʿnawī) from accidental homonymy (ishtirāk lafẓī): saying God and a human exist need not make their modes of existence identical. (Krishnan, printed p. 10; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-I-03",
@@ -238,7 +265,16 @@
         "page": 18,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 12 (PDF p. 13); chapter 1.3. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The notes distinguish the concept of a quiddity from an existential assertion. The ability to deny that a quiddity is instantiated helps show that existence is not a constituent of its essential definition. (Krishnan, printed p. 12; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-I-04",
@@ -254,7 +290,16 @@
         "page": 20,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 13 (PDF p. 14); chapter 1.4. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The lecture explains the primacy of existence (aṣālat al-wujūd) through concrete effects, unity of predication, and external versus mental existence. Use the author’s own four arguments as controlling evidence. (Krishnan, printed p. 13; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-I-05",
@@ -270,7 +315,16 @@
         "page": 24,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 18 (PDF p. 19); chapter 1.5. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The light comparison teaches graded existence (tashkīk); the lecture’s illustration is pedagogical, not a demonstration that creatures are numerically identical with God. (Krishnan, printed p. 18; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-I-06",
@@ -286,7 +340,16 @@
         "page": 28,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 23 (PDF p. 24); chapter 1.6. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "Especially helpful: the notes distinguish simple existential predication (halliyya basīṭa) from attributing an additional quality (halliyya murakkaba). The rule that establishing a property requires a subject does not generate a regress for ‘X exists’. (Krishnan, printed p. 23; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-I-07",
@@ -302,7 +365,12 @@
         "page": 31,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 26 (PDF p. 27); chapter 1.7. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-I-08",
@@ -318,7 +386,16 @@
         "page": 34,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 28 (PDF p. 29); chapter 1.8. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The note’s treatment of nafs al-amr clarifies that objective truth need not be reduced to a separate physical instance. Keep this distinct from a mental representation arbitrarily invented by the knower. (Krishnan, printed p. 28; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-I-09",
@@ -334,7 +411,16 @@
         "page": 36,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 30 (PDF p. 31); chapter 1.9. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The notes introduce the Muʿtazilī discussions of thingness, nonexistents, and aḥwāl. Their polemical simplification should not be substituted for a historically sourced comparison of Muʿtazilī positions. (Krishnan, printed p. 30; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-I-10",
@@ -350,7 +436,12 @@
         "page": 38,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 32 (PDF p. 33); chapter 1.10. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-I-11",
@@ -366,7 +457,12 @@
         "page": 40,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 33 (PDF p. 34); chapter 1.11. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-I-12",
@@ -382,7 +478,12 @@
         "page": 42,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 34 (PDF p. 35); chapter 1.12. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-GUIDE-II",
@@ -419,7 +520,16 @@
         "page": 46,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture notes, chapter 2 on mental existence, printed pp. 36–49 (PDF pp. 37–50); the contents do not separately enumerate chapter 2.1."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The long discussion of mental existence examines the objection that a known substance would have to be an accident in the soul. The Sadrāian response distinguishes primary predication from common predication; the example of a conceived apple is useful but not itself the proof."
+        }
+      ]
     },
     {
       "id": "B-GUIDE-III",
@@ -456,7 +566,12 @@
         "page": 63,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 50 (PDF p. 51); chapter 3.1. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-III-02",
@@ -472,7 +587,16 @@
         "page": 65,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 51 (PDF p. 52); chapter 3.2. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "A caused existence may be considered independently as an intelligible existent but is dependent qua effect. This should not be conflated with the ten-category relation (iḍāfa). (Krishnan, printed p. 51; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-III-03",
@@ -488,7 +612,12 @@
         "page": 67,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 51 (PDF p. 52); chapter 3.3. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-GUIDE-IV",
@@ -525,7 +654,12 @@
         "page": 70,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 54 (PDF p. 55); chapter 4.1. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-IV-02",
@@ -541,7 +675,12 @@
         "page": 72,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 54 (PDF p. 55); chapter 4.2. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-IV-03",
@@ -557,7 +696,12 @@
         "page": 74,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 57 (PDF p. 58); chapter 4.3. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-IV-04",
@@ -573,7 +717,12 @@
         "page": 76,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 59 (PDF p. 60); chapter 4.4. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-IV-05",
@@ -589,7 +738,12 @@
         "page": 78,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 59 (PDF p. 60); chapter 4.5. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-IV-06",
@@ -605,7 +759,16 @@
         "page": 80,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 60 (PDF p. 61); chapter 4.6. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "Check the lecture’s distinction between imkān ʿāmm and imkān khāṣṣ. The Necessary Existent can be called ‘possible’ in the broad sense of ‘not impossible’, but is not contingent (imkān khāṣṣ) in itself; one sentence in the notes appears to reverse these. (Krishnan, printed p. 60; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-IV-07",
@@ -621,7 +784,12 @@
         "page": 84,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 62 (PDF p. 63); chapter 4.7. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-IV-08",
@@ -637,7 +805,16 @@
         "page": 86,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 64 (PDF p. 65); chapter 4.8. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The notes clarify why contingency, not temporal origination, is taken as the ground of a contingent being’s continuing need for a cause. (Krishnan, printed p. 64; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-IV-09",
@@ -653,7 +830,16 @@
         "page": 90,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 66 (PDF p. 67); chapter 4.9. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The builder example is helpful if the builder is recognised as a preparatory cause rather than the ultimate existential cause. The effect’s poverty (faqr) is continual dependence, not merely an initial need. (Krishnan, printed p. 66; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-GUIDE-V",
@@ -690,7 +876,12 @@
         "page": 94,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 70 (PDF p. 71); chapter 5.1. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-V-02",
@@ -706,7 +897,16 @@
         "page": 96,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 71 (PDF p. 72); chapter 5.2. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The water examples can clarify bi-sharṭ shayʾ, bi-sharṭ lā, and lā bi-sharṭ, but carefully distinguish the dividing notion (lā bi-sharṭ maqsamī) from an individual member (lā bi-sharṭ qismī). (Krishnan, printed p. 71; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-V-03",
@@ -722,7 +922,12 @@
         "page": 98,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 75 (PDF p. 76); chapter 5.3. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-V-04",
@@ -738,7 +943,12 @@
         "page": 100,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 76 (PDF p. 77); chapter 5.4. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-V-05",
@@ -754,7 +964,12 @@
         "page": 104,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 81 (PDF p. 82); chapter 5.5. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-V-06",
@@ -770,7 +985,12 @@
         "page": 106,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 83 (PDF p. 84); chapter 5.6. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-V-07",
@@ -786,7 +1006,12 @@
         "page": 108,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 85 (PDF p. 86); chapter 5.7. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-V-08",
@@ -802,7 +1027,12 @@
         "page": 110,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 85 (PDF p. 86); chapter 5.8. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-GUIDE-VI",
@@ -839,7 +1069,12 @@
         "page": 114,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 89 (PDF p. 90); chapter 6.1. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VI-02",
@@ -855,7 +1090,16 @@
         "page": 116,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 91 (PDF p. 92); chapter 6.2. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "Keep the canonical five types of substance distinct: matter, form, body, soul, and intellect. The student notes contain a slip treating genus and differentia as two members of this set. (Krishnan, printed p. 91; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-VI-03",
@@ -871,7 +1115,12 @@
         "page": 118,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 92 (PDF p. 93); chapter 6.3. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VI-04",
@@ -887,7 +1136,16 @@
         "page": 122,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 95 (PDF p. 96); chapter 6.4. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "Distinguish corporeal form from a specific substantial form and prime matter from an already determinate physical substratum. (Krishnan, printed p. 95; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-VI-05",
@@ -903,7 +1161,12 @@
         "page": 124,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 96 (PDF p. 97); chapter 6.5. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VI-06",
@@ -919,7 +1182,12 @@
         "page": 126,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 96 (PDF p. 97); chapter 6.6. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VI-07",
@@ -935,7 +1203,12 @@
         "page": 128,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 97 (PDF p. 98); chapter 6.7. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VI-08",
@@ -951,7 +1224,12 @@
         "page": 132,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 99 (PDF p. 100); chapter 6.8. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VI-09",
@@ -967,7 +1245,12 @@
         "page": 134,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 101 (PDF p. 102); chapter 6.9. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VI-10",
@@ -983,7 +1266,12 @@
         "page": 138,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 103 (PDF p. 104); chapter 6.10. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VI-11",
@@ -999,7 +1287,12 @@
         "page": 140,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 104 (PDF p. 105); chapter 6.11. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-GUIDE-VII",
@@ -1036,7 +1329,12 @@
         "page": 145,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 108 (PDF p. 109); chapter 7.1. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VII-02",
@@ -1052,7 +1350,12 @@
         "page": 147,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 109 (PDF p. 110); chapter 7.2. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VII-03",
@@ -1068,7 +1371,12 @@
         "page": 149,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 111 (PDF p. 112); chapter 7.3. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VII-04",
@@ -1084,7 +1392,12 @@
         "page": 151,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 113 (PDF p. 114); chapter 7.4. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VII-05",
@@ -1100,7 +1413,12 @@
         "page": 153,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 115 (PDF p. 116); chapter 7.5. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VII-06",
@@ -1116,7 +1434,12 @@
         "page": 155,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 116 (PDF p. 117); chapter 7.6. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VII-07",
@@ -1132,7 +1455,12 @@
         "page": 159,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 122 (PDF p. 123); chapter 7.7. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VII-08",
@@ -1148,7 +1476,12 @@
         "page": 161,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 123 (PDF p. 124); chapter 7.8. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VII-09",
@@ -1164,7 +1497,12 @@
         "page": 163,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 125 (PDF p. 126); chapter 7.9. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VII-10",
@@ -1180,7 +1518,12 @@
         "page": 167,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 128 (PDF p. 129); chapter 7.10. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VII-11",
@@ -1196,7 +1539,12 @@
         "page": 169,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 131 (PDF p. 132); chapter 7.11. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-GUIDE-VIII",
@@ -1233,7 +1581,12 @@
         "page": 172,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 134 (PDF p. 135); chapter 8.1. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VIII-02",
@@ -1249,7 +1602,12 @@
         "page": 175,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 136 (PDF p. 137); chapter 8.2. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VIII-03",
@@ -1265,7 +1623,16 @@
         "page": 177,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 139 (PDF p. 140); chapter 8.3. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The contrast of primary essential predication and common predication clarifies why a concept can be classified one way qua definition and another way qua an existing mental act. (Krishnan, printed p. 139; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-VIII-04",
@@ -1281,7 +1648,12 @@
         "page": 179,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 141 (PDF p. 142); chapter 8.4. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VIII-05",
@@ -1297,7 +1669,12 @@
         "page": 181,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 143 (PDF p. 144); chapter 8.5. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VIII-06",
@@ -1313,7 +1690,12 @@
         "page": 183,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 144 (PDF p. 145); chapter 8.6. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VIII-07",
@@ -1329,7 +1711,12 @@
         "page": 185,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 145 (PDF p. 146); chapter 8.7. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VIII-08",
@@ -1345,7 +1732,12 @@
         "page": 187,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 146 (PDF p. 147); chapter 8.8. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VIII-09",
@@ -1361,7 +1753,12 @@
         "page": 189,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 147 (PDF p. 148); chapter 8.9. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-VIII-10",
@@ -1377,7 +1774,12 @@
         "page": 191,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 148 (PDF p. 149); chapter 8.10. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-GUIDE-IX",
@@ -1414,7 +1816,12 @@
         "page": 194,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 151 (PDF p. 152); chapter 9.1. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-IX-02",
@@ -1430,7 +1837,12 @@
         "page": 198,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 153 (PDF p. 154); chapter 9.2. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-IX-03",
@@ -1446,7 +1858,12 @@
         "page": 200,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 154 (PDF p. 155); chapter 9.3. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-GUIDE-X",
@@ -1483,7 +1900,12 @@
         "page": 205,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 159 (PDF p. 160); chapter 10.1. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-02",
@@ -1499,7 +1921,12 @@
         "page": 209,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 164 (PDF p. 165); chapter 10.2. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-03",
@@ -1515,7 +1942,12 @@
         "page": 211,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 164 (PDF p. 165); chapter 10.3. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-04",
@@ -1531,7 +1963,12 @@
         "page": 213,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 166 (PDF p. 167); chapter 10.4. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-05",
@@ -1547,7 +1984,12 @@
         "page": 215,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 167 (PDF p. 168); chapter 10.5. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-06",
@@ -1563,7 +2005,12 @@
         "page": 217,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 169 (PDF p. 170); chapter 10.6. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-07",
@@ -1579,7 +2026,12 @@
         "page": 219,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 170 (PDF p. 171); chapter 10.7. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-08",
@@ -1595,7 +2047,12 @@
         "page": 221,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "source note",
+          "text": "The supplied lecture-note contents do not list 10.8 separately; no independent lecture citation is asserted for this chapter."
+        }
+      ]
     },
     {
       "id": "B-X-09",
@@ -1611,7 +2068,12 @@
         "page": 223,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 173 (PDF p. 174); chapter 10.9. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-10",
@@ -1627,7 +2089,12 @@
         "page": 225,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 174 (PDF p. 175); chapter 10.10. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-11",
@@ -1643,7 +2110,16 @@
         "page": 229,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 177 (PDF p. 178); chapter 10.11. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The teaching notes give arguments and objections concerning substantial motion; use them after distinguishing motion in accidents from motion of substantial existence itself. (Krishnan, printed p. 177; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-X-12",
@@ -1659,7 +2135,12 @@
         "page": 233,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 181 (PDF p. 182); chapter 10.12. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-13",
@@ -1675,7 +2156,12 @@
         "page": 235,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 184 (PDF p. 185); chapter 10.13. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-14",
@@ -1691,7 +2177,12 @@
         "page": 239,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 187 (PDF p. 188); chapter 10.14. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-15",
@@ -1707,7 +2198,12 @@
         "page": 241,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 188 (PDF p. 189); chapter 10.15. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-X-16",
@@ -1723,7 +2219,12 @@
         "page": 243,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 188 (PDF p. 189); chapter 10.16. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-GUIDE-XI",
@@ -1760,7 +2261,16 @@
         "page": 248,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 194 (PDF p. 195); chapter 11.1. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "Knowledge by presence (ʿilm ḥuḍūrī) is contrasted with acquired/representational knowledge (ʿilm ḥuṣūlī). ‘Acquired’ does not merely mean learnt in a classroom. (Krishnan, printed p. 194; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-XI-02",
@@ -1776,7 +2286,12 @@
         "page": 252,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 201 (PDF p. 202); chapter 11.2. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XI-03",
@@ -1792,7 +2307,12 @@
         "page": 256,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 206 (PDF p. 207); chapter 11.3. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XI-04",
@@ -1808,7 +2328,12 @@
         "page": 258,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 207 (PDF p. 208); chapter 11.4. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XI-05",
@@ -1824,7 +2349,12 @@
         "page": 260,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 208 (PDF p. 209); chapter 11.5. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XI-06",
@@ -1840,7 +2370,12 @@
         "page": 262,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 209 (PDF p. 210); chapter 11.6. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XI-07",
@@ -1856,7 +2391,12 @@
         "page": 264,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 212 (PDF p. 213); chapter 11.7. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XI-08",
@@ -1872,7 +2412,12 @@
         "page": 268,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 214 (PDF p. 215); chapter 11.8. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XI-09",
@@ -1888,7 +2433,16 @@
         "page": 274,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 217 (PDF p. 218); chapter 11.9. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The treatment of iʿtibārī is especially important: intellectual consideration, derivative ontological standing, and practical conventions should not all be translated as ‘imaginary’. (Krishnan, printed p. 217; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-XI-10",
@@ -1904,7 +2458,12 @@
         "page": 276,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 220 (PDF p. 221); chapter 11.10. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XI-11",
@@ -1920,7 +2479,12 @@
         "page": 278,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 221 (PDF p. 222); chapter 11.11. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XI-12",
@@ -1936,7 +2500,12 @@
         "page": 280,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 222 (PDF p. 223); chapter 11.12. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-GUIDE-XII",
@@ -1973,7 +2542,16 @@
         "page": 283,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 224 (PDF p. 225); chapter 12.1. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "editorial synthesis of lecture notes",
+          "text": "The final theological discussion should be read as depending on the earlier treatments of contingency, necessity and causation; do not present it as independent of the metaphysical demonstrations. (Krishnan, printed p. 224; attribution to the lecturer as mediated by the note-taker.)"
+        }
+      ]
     },
     {
       "id": "B-XII-02",
@@ -1989,7 +2567,12 @@
         "page": 285,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 225 (PDF p. 226); chapter 12.2. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-03",
@@ -2005,7 +2588,12 @@
         "page": 287,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 228 (PDF p. 229); chapter 12.3. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-04",
@@ -2021,7 +2609,12 @@
         "page": 291,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 230 (PDF p. 231); chapter 12.4. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-05",
@@ -2037,7 +2630,12 @@
         "page": 297,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 236 (PDF p. 237); chapter 12.5. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-06",
@@ -2053,7 +2651,12 @@
         "page": 303,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 243 (PDF p. 244); chapter 12.6. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-07",
@@ -2069,7 +2672,12 @@
         "page": 307,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 246 (PDF p. 247); chapter 12.7. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-08",
@@ -2085,7 +2693,12 @@
         "page": 309,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 249 (PDF p. 250); chapter 12.8. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-09",
@@ -2101,7 +2714,12 @@
         "page": 311,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 252 (PDF p. 253); chapter 12.9. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-10",
@@ -2117,7 +2735,12 @@
         "page": 314,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 253 (PDF p. 254); chapter 12.10. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-11",
@@ -2133,7 +2756,12 @@
         "page": 316,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 256 (PDF p. 257); chapter 12.11. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-12",
@@ -2149,7 +2777,12 @@
         "page": 318,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 258 (PDF p. 259); chapter 12.12. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-13",
@@ -2165,7 +2798,12 @@
         "page": 322,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 261 (PDF p. 262); chapter 12.13. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     },
     {
       "id": "B-XII-14",
@@ -2181,7 +2819,12 @@
         "page": 324,
         "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
       },
-      "notes": []
+      "notes": [
+        {
+          "type": "lecture note · source",
+          "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 263 (PDF p. 264); chapter 12.14. This is a student’s record, not a verified verbatim transcript."
+        }
+      ]
     }
   ],
   "glossary": [
