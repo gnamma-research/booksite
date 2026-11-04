@@ -4177,12 +4177,12 @@ https://ablibrary.net/book_content/b/17638/470?lang=ar
 
 ### Commentary — English
 
-All of this applies when the seeker has no master of the path to direct him, no perfected guide to follow, who holds in his hands the keys to his closures and states. If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity. The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures.
+All of this applies when the seeker has no master of the path to direct him, no perfected guide to follow, who holds in his hands the keys to his locks and states. If, however, he does have such a guide, then every stage and station has sciences and a measure proper to it, according to the time and the seeker's capacity. The guide, discerning the successive degrees of that capacity, draws the traveller's attention to those sciences and their appropriate measures.
 
 ### Textual and translation notes
 
 1. This is the descendant's commentary continuing after QT-061, not the grandfather's matn. Arabic sourced to printed p.274 in the online transcription.
-2. Printed alternatives: أقفاله وأحواله / إقباله وأحواله / أفعاله وأحواله. ‘Closures and states’ is a literal rendering of the displayed base, but the alternatives may be preferable; no choice can be made from this one text alone.
+2. Printed alternatives: أقفاله وأحواله / إقباله وأحواله / أفعاله وأحواله. “Locks and states” preserves the displayed metaphor of keys and locks; it does not decide between the reported alternatives. No independent manuscript has been collated.
 3. The guide's discernment (تفرّس) is presented as enabling guidance appropriate to each station, time, and capacity; it does not eliminate the matn's concern with tests of knowledge.
 
 ---
