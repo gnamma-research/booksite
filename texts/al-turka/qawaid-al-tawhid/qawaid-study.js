@@ -184,6 +184,7 @@ function termPanel(id){
  const t=termMap.get(id);if(!t)return;
  const loc=occurrences.get(id)||[];
  show(t.en,'<div class="gn-prose"><div class="gn-headword" lang="ar" dir="rtl">'+esc(t.ar)+'</div><small>'+esc(t.category)+'</small><p>'+esc(t.definition)+'</p>'+(t.aliases.length?'<p><strong>Also:</strong> '+esc(t.aliases.join(' · '))+'</p>':'')+'</div><h3 class="gn-subheading">Where it occurs</h3><div class="gn-locations">'+(loc.length?loc.map(x=>'<a href="'+unitURL(x.id)+'" data-study-goto="'+esc(x.id)+'">'+esc(x.id)+' · '+esc(x.title)+'</a>').join(''):'<p>No matched passage in the current reader; search the original Arabic for variants.</p>')+'</div><div class="gn-menu-footer"><button data-open-study="dictionary">Dictionary</button><button data-open-study="subjects">Subject index</button></div>');
+ window.GnammaQawaidHistorical?.attach?.(id);
 }
 function referencePanel(q=''){
  show('Sources & quotations','<p class="gn-help">A directly quoted excerpt is shown in full as transmitted in the commentary. References that are paraphrases or thematic parallels are labeled accordingly.</p><div class="gn-source-list">'+references.filter(r=>!q||norm(r.title+' '+r.source).includes(norm(q))).map(r=>'<button class="gn-source-row" data-open-source="'+esc(r.id)+'"><b>'+esc(r.title)+'</b><small>'+esc(r.source)+' · '+esc(r.status.replaceAll('-',' '))+'</small></button>').join('')+'</div>');
