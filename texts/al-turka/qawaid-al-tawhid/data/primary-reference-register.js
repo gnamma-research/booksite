@@ -71,15 +71,15 @@ window.GNAMMA_QAWAID_REFERENCES = {
     {
       "id": "q-28-30",
       "type": "quran",
-      "title": "Qurʾān 28:30 (quoted clause)",
+      "title": "Qurʾān 28:30 (full verse)",
       "source": "Qurʾān",
       "sourceUrl": "https://quran.com/28/30",
-      "arabic": "إِنِّي أَنَا اللَّهُ رَبُّ الْعَالَمِينَ",
+      "arabic": "فَلَمَّا أَتَاهَا نُودِيَ مِنْ شَاطِئِ الْوَادِ الْأَيْمَنِ فِي الْبُقْعَةِ الْمُبَارَكَةِ مِنَ الشَّجَرَةِ أَنْ يَا مُوسَىٰ إِنِّي أَنَا اللَّهُ رَبُّ الْعَالَمِينَ",
       "english": "Indeed, I am God, Lord of all worlds.",
       "units": [
         "SH-029"
       ],
-      "status": "quoted-clause"
+      "status": "full-verse"
     },
     {
       "id": "tusi-isharat",
