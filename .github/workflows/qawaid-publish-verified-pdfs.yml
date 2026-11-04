@@ -1,0 +1,44 @@
+name: Publish verified Qawaid PDFs
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/qawaid-publish-verified-pdfs.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+      - name: Download already verified five-edition artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/gnamma-research/booksite/actions/artifacts/13295306715/zip > /tmp/qawaid-pdfs.zip
+          unzip -q -o /tmp/qawaid-pdfs.zip -d texts/al-turka/qawaid-al-tawhid/pdf/
+      - name: Verify the actual published PDF manifest
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          p=pathlib.Path('texts/al-turka/qawaid-al-tawhid/pdf')
+          x=json.loads((p/'manifest.json').read_text())
+          assert len(x['files'])==5
+          for f in x['files']:
+              v=p/f['filename']
+              assert v.exists() and v.stat().st_size>30000
+              assert hashlib.sha256(v.read_bytes()).hexdigest()==f['sha256']
+              print(f['title'],f['pages'],'pages')
+          PY
+      - name: Push only verified edition files
+        run: |
+          git config user.name 'gnamma-research'
+          git config user.email '13307564+gnamma-research@users.noreply.github.com'
+          git add texts/al-turka/qawaid-al-tawhid/pdf/*.pdf texts/al-turka/qawaid-al-tawhid/pdf/manifest.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Publish five verified bilingual Arabic and English Qawaid PDFs'
+          git pull --rebase origin master
+          git push origin HEAD:master
