@@ -20,8 +20,8 @@ texts:[
  ]},
  {heading:"Tafsīr",items:[{name:"al-Baḥr al-Madīd",href:"texts/ibn-ajiba/al-bahr-al-madid/"}]},
  {heading:"ʿIrfān and metaphysics",items:[{name:"Qawāʿid al-Tawḥīd · Matn translation begun",href:"texts/al-turka/qawaid-al-tawhid/"}]},
- {heading:"Logic",items:[{name:"Tahdhīb al-Manṭiq",href:"texts/al-taftazani/tahdhib-al-mantiq/"}]},
- {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"},{name:"Tahdhīb al-Kalām · Working translation",href:"texts/al-taftazani/tahdhib-al-kalam/"},{name:"Taqrīb al-Marām · Commentary",href:"texts/al-sanandaji/taqrib-al-maram/"}]}
+ {heading:"Logic",items:[{name:"Tahdhīb al-Manṭiq",href:"texts/al-taftazani/tahdhib-al-mantiq/edition/"}]},
+ {heading:"Kalām",items:[{name:"Sharḥ al-Mawāqif",href:"texts/al-jurjani/sharh-al-mawaqif/"},{name:"Tahdhīb al-Kalām",href:"texts/al-taftazani/tahdhib-al-kalam/edition/"},{name:"Taqrīb al-Marām · Commentary",href:"texts/al-sanandaji/taqrib-al-maram/"}]}
 ],
 essays:[{items:[
  {name:"Being in Order · Substance, Relation, and Poinsot’s Modes",href:"essays/being-in-order/"},
