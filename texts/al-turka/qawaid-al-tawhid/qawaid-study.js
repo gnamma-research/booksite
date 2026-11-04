@@ -154,7 +154,8 @@ function apparatusMenu(){
  const options=[['off','Off','Hide study links, notes and reference markers'],['minimal','Compact','Show linked terms and quotations, hide longer notes'],['full','Expanded','Allow all source and explanation notes']];
  return '<fieldset class="gn-apparatus-options"><legend>Apparatus</legend>'+options.map(([id,label,desc])=>'<label class="gn-setting-option"><input type="radio" name="gn-apparatus" value="'+id+'" '+(apparatus===id?'checked':'')+'><span><b>'+label+'</b><small>'+desc+'</small></span></label>').join('')+'</fieldset>';
 }
-function setApparatus(val){apparatus=val;document.body.dataset.apparatus=val;localStoragePut('gnamma:qawaid:apparatus-v1',val);if(val==='full')document.body.dataset.showNotes='true';else document.body.dataset.showNotes='false';}
+function setApparatus(val){apparatus=val;document.body.dataset.apparatus=val;localStoragePut('gnamma:qawaid:apparatus-v1',val);window.GnammaQawaidReader?.setEditorialNotes?.(val==='full');
+ document.body.dataset.showNotes=String(val==='full');}
 function settingsPanel(){
  show('Reading options','<p class="gn-help">Control the two independently attributed texts with the Matn and Sharḥ switches in the toolbar. Their settings are retained while you navigate.</p>'+apparatusMenu()+'<div class="gn-menu-footer"><button data-open-study="appearance">Appearance and typography</button><button data-open-study="pdf">PDF editions</button></div>');
 }
@@ -213,11 +214,11 @@ function inputDelegated(e){
  const q=norm(e.target.value);
  $('#gn-search-results').innerHTML='<div class="gn-source-list">'+[...terms.filter(t=>norm(t.ar+' '+t.en).includes(q)).slice(0,20).map(t=>'<button data-open-term="'+esc(t.id)+'">'+esc(t.ar)+' · '+esc(t.en)+'</button>'),...references.filter(r=>norm(r.title+' '+r.source).includes(q)).slice(0,20).map(r=>'<button data-open-source="'+esc(r.id)+'">'+esc(r.title)+'</button>')].join('')+'</div>';
  }
- if(e.target.id==='gn-font-size'){document.documentElement.style.setProperty('--scale',e.target.value);localStoragePut('gnamma:qawaid:font',e.target.value);}
+ if(e.target.id==='gn-font-size'){window.GnammaQawaidReader?.setFont?.(e.target.value);document.documentElement.style.setProperty('--scale',e.target.value);}
 }
 function changeDelegated(e){
  if(e.target.name==='gn-apparatus')setApparatus(e.target.value);
- if(e.target.name==='gn-theme'){document.documentElement.dataset.theme=e.target.value;const b=document.querySelector('#theme-button');if(b)b.title=e.target.value;localStoragePut('gnamma:qawaid:theme',e.target.value)}
+ if(e.target.name==='gn-theme'){window.GnammaQawaidReader?.setTheme?.(e.target.value);document.documentElement.dataset.theme=e.target.value;}
 }
 function scheduleAnnotations(){if(inlineQueued)return;inlineQueued=true;requestAnimationFrame(()=>{inlineQueued=false;annotateReading()})}
 function annotateReading(){
