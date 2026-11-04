@@ -1,0 +1,32 @@
+name: Qawaid scholarly UI QA
+on:
+  push:
+    branches: [master]
+    paths: ['.github/workflows/qawaid-study-ui-qa.yml','texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid
+            assets
+      - name: Browser
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+      - name: Test study desk and source cards
+        run: python texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawaid-scholarly-ui-review
+          path: |
+            texts/al-turka/qawaid-al-tawhid/qa/study-ui-report.json
+            texts/al-turka/qawaid-al-tawhid/qa/study-ui-error.png
+          retention-days: 7
