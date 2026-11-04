@@ -47,21 +47,47 @@ def gloss(complete=False):
     return ''.join(out)+'</section>'
 
 def subject():
-    groups=sorted(set(t['category'] for t in TERMS))
-    out=['<section class="appendix"><h1>Subject index</h1><p class="muted">Select a topic in the online edition to inspect every linked occurrence.</p>']
-    for group in groups:
-        out.append('<h2>'+K(group)+'</h2><p>'+', '.join(K(t['en']) for t in TERMS if t['category']==group)+'</p>')
+    import unicodedata
+    def normalize(text):
+        text=unicodedata.normalize('NFD',str(text or '')).lower()
+        return ''.join(ch for ch in text if not unicodedata.combining(ch)).replace('ٱ','ا').replace('أ','ا').replace('إ','ا')
+    original=[*MATN,*CORPUS]
+    out=['<section class="appendix"><h1>Subject index</h1><p class="muted">Passage identifiers are live links in this PDF. Select a linked passage to inspect the full original and commentary.</p>']
+    for group in sorted(set(t['category'] for t in TERMS)):
+        out.append('<h2>'+K(group)+'</h2>')
+        for t in TERMS:
+            if t['category']!=group:continue
+            ar=normalize(t['ar'])
+            en=t['en'].split('/')[0].lower().strip()
+            aliases=[normalize(a) for a in t['aliases'] if len(a)>5]
+            hits=[]
+            for u in original:
+                text=normalize(u.get('arabic','')+' '+u.get('english',''))
+                if (ar in text or (len(en)>=6 and en in text) or any(a in text for a in aliases)):
+                    hits.append(u['id'])
+                    if len(hits)>=7:break
+            anchors=' · '.join('<a href="#'+K(uid)+'">'+K(uid)+'</a>' for uid in hits)
+            out.append('<div class="index-entry"><strong>'+K(t['en'])+'</strong> <span class="ar-inline" lang="ar">'+K(t['ar'])+'</span><p>'+anchors+'</p></div>')
     return ''.join(out)+'</section>'
 
 def source_appendix():
     out=['<section class="appendix"><h1>Cited sources</h1>']
+    texts={x['id']:x for x in [*MATN,*CORPUS]}
     for r in REFS:
         out.append('<div class="reference-entry"><h2>'+K(r['title'])+'</h2><p>'+K(r['source'])+'</p>')
-        if r.get('arabic'):out.append('<blockquote class="ar-text" dir="rtl" lang="ar">'+K(r['arabic'])+'</blockquote>')
+        quote=r.get('arabic') or ''
+        if not quote and r.get('quoteFrom'):
+            u=texts.get(r['quoteFrom'])
+            if u:
+                candidates=[x.strip() for x in re.findall(r'«([^»]{28,12000})»',u['arabic'])]
+                ix=int(r.get('quoteIndex',0))
+                quote=candidates[ix] if ix<len(candidates) else next((x for x in candidates if len(x)>100),'')
+        if quote:out.append('<blockquote class="ar-text" dir="rtl" lang="ar">'+K(quote)+'</blockquote>')
         if r.get('english'):out.append('<p>'+K(r['english'])+'</p>')
         if r.get('note'):out.append('<p>'+K(r['note'])+'</p>')
         out.append('<p class="muted">'+K(r['status'].replace('-',' '))+' · '+K(r.get('sourceUrl',''))+'</p></div>')
     return ''.join(out)+'</section>'
+
 def notes(u,mode):
     if mode=='none':return ''
     ns=u.get('notes') or []
@@ -109,7 +135,7 @@ p{margin:0 0 3.3mm}
 .text-notes li{margin:1mm 0}.text-notes ol{padding-left:6mm;margin:2mm 0}
 .appendix{break-before:page}.appendix h2{font-size:13pt;border-bottom:.5pt solid #d4dbd8;padding-bottom:2mm}
 .glossary-entry{break-inside:avoid;margin:4mm 0}
-.glossary-entry strong{font:700 10pt "DejaVu Sans";color:#285462}
+.index-entry{margin:3mm 0;break-inside:avoid}.index-entry p{font-size:8pt;margin:1mm 0 3mm}.index-entry a{color:#315568;text-decoration:none}.glossary-entry strong{font:700 10pt "DejaVu Sans";color:#285462}
 .ar-inline{font-family:"Noto Naskh Arabic","DejaVu Sans";font-size:14pt;margin-left:3mm}
 .glossary-entry p{font-size:9.3pt;margin:1mm 0}
 .reference-entry{break-inside:avoid;border-bottom:.5pt solid #ddd;margin-bottom:4mm}
