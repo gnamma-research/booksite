@@ -159,7 +159,7 @@
       ['daruri/icon-512.png', 'icon-512.png'],
       ['daruri/dictionary.html', 'dictionary.html'],
       ['daruri/dictionary-r3-20261020.js', 'dictionary-r3-20261020.js?v=daruri14-sinaa-full-dictionary-20261025'],
-      ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=daruri14-sinaa-full-dictionary-20261025'],
+      ['daruri/edition-r3-20261020.js', 'edition-r3-20261020.js?v=20261105-scholarly-review1'],
       ['daruri/gnamma-search.js', 'gnamma-search.js?v=20261025-sigha-forms1'],
       ['daruri/gnamma-morphology.js', 'gnamma-morphology.js?v=20261025-sigha-forms1'],
       ['daruri/gnamma-word-context.js', 'gnamma-word-context.js?v=20261025-sigha-forms2'],

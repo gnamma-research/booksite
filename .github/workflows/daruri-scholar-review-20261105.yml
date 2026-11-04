@@ -1,0 +1,42 @@
+name: Daruri scholarly-review source and reader parity
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'daruri/edition-r3-20261020.js'
+      - 'daruri/index.html'
+      - 'daruri/sw.js'
+      - 'daruri/download-bundle.js'
+      - 'daruri/qa/verify-scholar-review-20261105.cjs'
+      - '.github/workflows/daruri-scholar-review-20261105.yml'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'daruri/edition-r3-20261020.js'
+      - 'daruri/index.html'
+      - 'daruri/sw.js'
+      - 'daruri/download-bundle.js'
+      - 'daruri/qa/verify-scholar-review-20261105.cjs'
+      - '.github/workflows/daruri-scholar-review-20261105.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-logic-and-fallback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Parse revised edition, verify three scholarly decisions and offline consistency
+        run: |
+          node --check daruri/edition-r3-20261020.js
+          node --check daruri/sw.js
+          node --check daruri/download-bundle.js
+          node --check daruri/qa/verify-scholar-review-20261105.cjs
+          node daruri/qa/verify-scholar-review-20261105.cjs
