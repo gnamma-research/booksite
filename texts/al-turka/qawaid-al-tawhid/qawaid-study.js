@@ -65,6 +65,11 @@ function studyIcon(type){
  };
  return '<svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">'+(icons[type]||icons.reading)+'</svg>';
 }
+function applyFontPrefs(){
+ const ar=localStorageGet('gnamma:qawaid:gn-arabic-font','naskh');const en=localStorageGet('gnamma:qawaid:gn-english-font','serif');
+ document.documentElement.style.setProperty('--font-ar',ar==='amiri'?"Amiri,'Noto Naskh Arabic',serif":ar==='traditional'?"'Traditional Arabic',Amiri,serif":"'Noto Naskh Arabic',Amiri,serif");
+ document.documentElement.style.setProperty('--font-en',en==='sans'?"'Source Sans 3',system-ui,sans-serif":"Georgia,'Iowan Old Style',serif");
+}
 function setup(){
  const header=document.querySelector('#topbar .right');
  if(header && !$('#new-about-button')){
@@ -94,6 +99,7 @@ function setup(){
  const search=$('#search-button');if(search)search.addEventListener('click',e=>{e.preventDefault();e.stopImmediatePropagation();openPanel('search')},true);
  const shelf=$('#sheet');if(shelf){shelf.addEventListener('close',()=>{if(panelOpen())panelClose()},true)}
  const pstyle=document.createElement('style');pstyle.textContent='body[data-apparatus="off"] .source-notes,body[data-apparatus="off"] .gn-term-ribbon,body[data-apparatus="off"] .gn-citation-ribbon{display:none!important}body[data-apparatus="off"] .gn-term-inline{color:inherit!important;border:0!important;text-decoration:none!important;background:transparent!important}body[data-apparatus="minimal"] .source-notes{display:none!important}';document.head.append(pstyle);
+ applyFontPrefs();
  setApparatus(apparatus);
  buildOccurrences();
  fetch('data/commentary-corpus.json').then(r=>r.ok?r.json():null).then(x=>{if(!x?.units?.length)return;corpus=x;for(const u of corpus.units)if(!byId.has(u.id))byId.set(u.id,u);buildOccurrences();}).catch(()=>{});
@@ -160,7 +166,7 @@ function settingsPanel(){
  show('Reading options','<p class="gn-help">Control the two independently attributed texts with the Matn and Sharḥ switches in the toolbar. Their settings are retained while you navigate.</p>'+apparatusMenu()+'<div class="gn-menu-footer"><button data-open-study="appearance">Appearance and typography</button><button data-open-study="pdf">PDF editions</button></div>');
 }
 function appearancePanel(){
- show('Appearance','<fieldset class="gn-apparatus-options"><legend>Theme</legend>'+[['parchment','Paper'],['horizon','Horizon'],['night','Night']].map(([v,l])=>'<label class="gn-setting-option"><input type="radio" name="gn-theme" value="'+v+'" '+(document.documentElement.dataset.theme===v?'checked':'')+'><span><b>'+l+'</b></span></label>').join('')+'</fieldset><p class="gn-help">Text appearance applies to both layers and preserves your reading place.</p><div class="gn-size-row"><label>Text size <input id="gn-font-size" type="range" min=".82" max="1.45" step=".03" value="'+(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--scale'))||1)+'"></label></div><div class="gn-menu-footer"><button data-open-study="settings">Reading options</button></div>');
+ show('Appearance','<fieldset class="gn-apparatus-options"><legend>Theme</legend>'+[['parchment','Paper'],['horizon','Horizon'],['night','Night']].map(([v,l])=>'<label class="gn-setting-option"><input type="radio" name="gn-theme" value="'+v+'" '+(document.documentElement.dataset.theme===v?'checked':'')+'><span><b>'+l+'</b></span></label>').join('')+'</fieldset><p class="gn-help">Text appearance applies to both layers and preserves your reading place.</p><div class="gn-size-row"><label>Text size <input id="gn-font-size" type="range" min=".82" max="1.45" step=".03" value="'+(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--scale'))||1)+'"></label></div><div class="gn-size-row"><label>Line spacing <input id="gn-line-spacing" type="range" min="1.55" max="2.15" step=".05" value="'+(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--leading'))||1.8)+'"></label></div><div class="gn-size-row"><label>Reading width <input id="gn-reading-width" type="range" min="560" max="1300" step="40" value="'+(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--reading-width'))||960)+'"></label></div><fieldset class="gn-apparatus-options"><legend>Typefaces</legend><label class="gn-setting-option">Arabic <select id="gn-arabic-font"><option value="naskh">Naskh</option><option value="amiri">Amiri</option><option value="traditional">Traditional Arabic</option></select></label><label class="gn-setting-option">English <select id="gn-english-font"><option value="serif">Classic serif</option><option value="sans">Modern sans</option></select></label></fieldset><div class="gn-menu-footer"><button data-open-study="settings">Reading options</button></div>');
 }
 function aboutPanel(){
  show('About the texts','<div class="gn-prose"><h3>قواعد التوحيد · Qawāʿid al-Tawḥīd</h3><p>The original treatise, by Abū Ḥāmid Muḥammad Turka al-Iṣfahānī, studies the unity of existence, divine knowledge, determinations, the names, and the relation between rational demonstration and spiritual realization.</p><h3>التمهيد في شرح قواعد التوحيد</h3><p>Ṣāʾin al-Dīn ʿAlī Ibn Turka (flourished in the first half of the fifteenth century) wrote the commentary in the learned Isfahani tradition. He explains the treatise through philosophy, logic and the vocabulary of Akbarian metaphysics.</p><p>The two works are displayed as distinct texts: the ancestor’s <em>matn</em> and the descendant’s <em>sharḥ</em>. Use the switches to read them separately or together.</p><p><a href="commentary.html#SH-INTRO-001">Read the commentator’s independent introduction</a></p></div>');
@@ -168,7 +174,7 @@ function aboutPanel(){
 function dictionaryPanel(q=''){
  const hits=terms.filter(x=>!q||norm(x.en+' '+x.ar+' '+x.aliases.join(' ')).includes(norm(q)));
  const groups=[...new Set(hits.map(x=>x.category))];
- show('Technical dictionary','<input class="gn-study-search" id="gn-dictionary-filter" value="'+esc(q)+'" type="search" placeholder="Search Arabic, English, transliteration…"><p class="gn-help">'+hits.length+' entries · select a term to see its meaning and textual locations.</p>'+groups.map(g=>'<section class="gn-term-group"><h3>'+esc(g)+'</h3><div class="gn-term-grid">'+hits.filter(t=>t.category===g).map(t=>'<button data-open-term="'+esc(t.id)+'"><span lang="ar">'+esc(t.ar)+'</span><b>'+esc(t.en)+'</b></button>').join('')+'</div></section>').join(''));
+ show('Technical dictionary','<input class="gn-study-search" id="gn-dictionary-filter" value="'+esc(q)+'" type="search" placeholder="Search Arabic, English, transliteration…"><p class="gn-help" id="gn-dictionary-count">'+hits.length+' entries · select a term to see its meaning and textual locations.</p>'+groups.map(g=>'<section class="gn-term-group"><h3>'+esc(g)+'</h3><div class="gn-term-grid">'+hits.filter(t=>t.category===g).map(t=>'<button data-open-term="'+esc(t.id)+'"><span lang="ar">'+esc(t.ar)+'</span><b>'+esc(t.en)+'</b></button>').join('')+'</div></section>').join(''));
 }
 function subjectsPanel(){
  const groups=[...new Set(terms.map(x=>x.category))];
@@ -209,16 +215,25 @@ function clickDelegated(e){
   window.location.hash=targetId;document.getElementById(targetId)?.scrollIntoView({block:'start'});return}
 }
 function inputDelegated(e){
- if(e.target.id==='gn-dictionary-filter')dictionaryPanel(e.target.value);
+ if(e.target.id==='gn-dictionary-filter'){
+ const q=norm(e.target.value);let shown=0;
+ for(const group of document.querySelectorAll('.gn-term-group')){let any=false;for(const b of group.querySelectorAll('button')){const id=b.dataset.openTerm,t=termMap.get(id);const match=!q||norm(t.ar+' '+t.en+' '+t.aliases.join(' ')).includes(q);b.hidden=!match;if(match){shown++;any=true;}}group.hidden=!any;}
+ const n=document.querySelector('#gn-dictionary-count');if(n)n.textContent=shown+' matched dictionary entries';
+ }
  if(e.target.id==='gn-source-query'){
  const q=norm(e.target.value);
  $('#gn-search-results').innerHTML='<div class="gn-source-list">'+[...terms.filter(t=>norm(t.ar+' '+t.en).includes(q)).slice(0,20).map(t=>'<button data-open-term="'+esc(t.id)+'">'+esc(t.ar)+' · '+esc(t.en)+'</button>'),...references.filter(r=>norm(r.title+' '+r.source).includes(q)).slice(0,20).map(r=>'<button data-open-source="'+esc(r.id)+'">'+esc(r.title)+'</button>')].join('')+'</div>';
  }
  if(e.target.id==='gn-font-size'){window.GnammaQawaidReader?.setFont?.(e.target.value);document.documentElement.style.setProperty('--scale',e.target.value);}
+ if(e.target.id==='gn-line-spacing')window.GnammaQawaidReader?.setLeading?.(e.target.value);
+ if(e.target.id==='gn-reading-width')window.GnammaQawaidReader?.setWidth?.(e.target.value);
 }
 function changeDelegated(e){
  if(e.target.name==='gn-apparatus')setApparatus(e.target.value);
  if(e.target.name==='gn-theme'){window.GnammaQawaidReader?.setTheme?.(e.target.value);document.documentElement.dataset.theme=e.target.value;}
+ if(e.target.id==='gn-arabic-font'||e.target.id==='gn-english-font'){
+  localStoragePut('gnamma:qawaid:'+e.target.id,e.target.value);applyFontPrefs();
+ }
 }
 function scheduleAnnotations(){if(inlineQueued)return;inlineQueued=true;requestAnimationFrame(()=>{inlineQueued=false;annotateReading()})}
 function annotateReading(){
