@@ -1,0 +1,42 @@
+name: Qawaid two-layer reader
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/qawaid-two-layer-reader.yml'
+      - 'texts/al-turka/qawaid-al-tawhid/layered-reader.js'
+      - 'texts/al-turka/qawaid-al-tawhid/layered-reader.css'
+      - 'texts/al-turka/qawaid-al-tawhid/qa/check-layered-reader.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: qawaid-two-layer-reader
+  cancel-in-progress: true
+jobs:
+  browser-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            texts/al-turka/qawaid-al-tawhid
+            assets
+      - name: Install browser test tools
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+      - name: Check existing commentary corpus
+        run: node texts/al-turka/qawaid-al-tawhid/qa/check-commentary.mjs
+      - name: Test actual browser interactions and responsive layout
+        run: python texts/al-turka/qawaid-al-tawhid/qa/check-layered-reader.py
+      - name: Preserve report and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qawaid-two-layer-browser-review
+          path: |
+            texts/al-turka/qawaid-al-tawhid/qa/layered-browser-results/
+            texts/al-turka/qawaid-al-tawhid/qa/commentary-test-report.json
+          retention-days: 7
