@@ -128,17 +128,17 @@ window.GNAMMA_QAWAID_REFERENCES = {
     },
     {
       "id": "avicenna-shifa",
-      "type": "cross-reference",
+      "type": "primary-quotation",
       "title": "Ibn Sīnā, al-Shifāʾ, Ilāhiyyāt I.2",
-      "source": "The Healing, Metaphysics",
-      "sourceUrl": "https://ayatollahnekounam.com/2018/07/16/التمهید-فی-شرح-قواعد-التوحید-الطلیعه-و/",
+      "source": "The Healing, Metaphysics I.2, on the subject of first philosophy",
+      "sourceUrl": "https://ablibrary.net/book_content/b/14534/55?lang=ar",
       "units": [
         "SH-INTRO-011"
       ],
-      "status": "indirect-paraphrase",
-      "arabic": "الموجود بما هو موجود أمر مشترك بين المقولات وأنه يجب أن يجعل الموضوع لهذه الصناعة",
-      "english": "Ibn Turka reports Ibn Sīnā’s position that existent as existent is shared across the categories and should serve as the subject of metaphysics.",
-      "note": "The Arabic is Ibn Turka’s report of the position, not presented as a verbatim full passage of al-Shifāʾ. The full primary source must be independently checked."
+      "status": "verified-direct-sentence",
+      "arabic": "فالموضوع الأول لهذا العلم هو الموجود بما هو موجود، ومطالبة الأمور التي تلحقه بما هو موجود من غير شرط.",
+      "english": "The first subject of this science is existent insofar as it is existent; its questions concern what belongs to it as existent, without further qualification.",
+      "note": "This is one complete sentence directly verified in a digital edition of Ibn Sīnā’s Ilāhiyyāt I.2. It is not the entire chapter. Ibn Turka’s presentation in SH-INTRO-011 is his own characterization of the Avicennian position, not a verbatim citation of this sentence."
     },
     {
       "id": "tusid-tajrid",
