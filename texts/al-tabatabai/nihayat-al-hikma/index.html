@@ -37,8 +37,7 @@
       <div class="sidebar-tabs" role="group" aria-label="Contents filter"><button id="all-tab" type="button" aria-pressed="true">Contents</button><button id="saved-tab" type="button" aria-pressed="false">Saved <span id="saved-count">0</span></button></div>
       <p class="search-summary" id="search-summary" aria-live="polite"></p>
       <nav id="toc" class="table-of-contents" aria-label="Stages and chapters"><p class="sidebar-loading">Preparing the contents…</p></nav>
-      <div class="sidebar-bottom"><a href="../">Both books in one reader</a><p style="font-size:11px;margin:12px 0 0"><a href="../bidayat-al-hikma/">Bidāyat al-Ḥikma · Arabic and working English <span aria-hidden="true">↗</span></a></p><p>Your bookmarks and notes stay in this browser.</p></div>
-    </aside>
+      </aside>
     <main class="reader-main" id="reader-main">
       <section class="title-page" id="title-page" aria-labelledby="cover-title">
         <div class="cover-topline"><span class="eyebrow">ISLAMIC PHILOSOPHY</span><span class="edition-badge">ARABIC · ENGLISH</span></div>
@@ -47,9 +46,9 @@
         <h1 id="cover-title">Nihāyat al-Ḥikma</h1>
         <p class="cover-author" id="cover-author">ʿAllāmah Muḥammad Ḥusayn al-Ṭabāṭabāʾī</p>
         <div class="cover-rule" aria-hidden="true"></div>
-        <p class="cover-description" id="cover-description">An Arabic–English reading edition of al-Ṭabāṭabāʾī’s advanced treatment of philosophical wisdom.</p>
+        <p class="cover-description" id="cover-description"></p>
         <div class="coverage" id="coverage" aria-live="polite"><span class="status-dot" aria-hidden="true"></span><span id="coverage-text">Loading the edition…</span></div>
-        <div class="cover-actions"><button class="primary-button" id="begin-reading" type="button" disabled>Begin reading <span aria-hidden="true">↓</span></button><button class="quiet-link" id="edition-open" type="button">About this edition</button></div>
+        <div class="cover-actions"><button class="primary-button" id="begin-reading" type="button" disabled>Begin reading <span aria-hidden="true">↓</span></button><button class="quiet-link" id="edition-open" type="button" hidden></button></div>
       </section>
       <div class="reading-toolbar" id="reading-toolbar" aria-label="Reading preferences">
         <div class="segmented-control language-control" role="group" aria-label="Reading language"><button type="button" data-language="bilingual" aria-pressed="true">Parallel</button><button type="button" data-language="arabic" aria-pressed="false" lang="ar">العربية</button><button type="button" data-language="english" aria-pressed="false">English</button></div>
@@ -59,13 +58,13 @@
       <div class="filter-notice" id="filter-notice" hidden><p id="filter-message"></p><button class="quiet-link" id="clear-filters" type="button">Show the whole book</button></div>
       <div class="reading-content" id="reading-content" tabindex="-1"><div class="loading-state" role="status"><span class="loading-mark" aria-hidden="true">✦</span><h2>Opening the book</h2><p>The Arabic text and English translation will appear here.</p></div></div>
       <nav class="chapter-navigation" id="chapter-navigation" aria-label="Chapter navigation" hidden><button id="previous-chapter" type="button"><span class="nav-direction">← Previous chapter</span><span class="nav-title" id="previous-title"></span></button><button id="next-chapter" type="button"><span class="nav-direction">Next chapter →</span><span class="nav-title" id="next-title"></span></button></nav>
-      <footer class="reader-footer"><a href="../../../" class="footer-brand">gnamma</a><p>Read slowly. Return often.</p><a href="../study-guide.html">Study guide</a><a href="../../../docs/source-and-licenses.html">Sources &amp; licences</a><a href="#title-page">Back to the title ↑</a></footer>
+      <footer class="reader-footer"><a href="../../../" class="footer-brand">gnamma</a><a href="#title-page">↑</a></footer>
     </main>
   </div>
   <div class="toast" id="reader-toast" role="status" aria-live="polite" hidden></div>
   <dialog class="reader-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-title"><div class="dialog-header"><div><span class="eyebrow">TERMS &amp; CONCEPTS</span><h2 id="glossary-title">A philosophical glossary</h2></div><button class="icon-button" type="button" data-close-dialog aria-label="Close glossary">×</button></div><p class="dialog-intro">Arabic terms and their English renderings in this edition.</p><label class="dialog-search"><span class="sr-only">Search glossary</span><input id="glossary-search" type="search" placeholder="Find a term in Arabic or English" dir="auto" autocomplete="off"></label><div id="glossary-list" class="glossary-list"></div></dialog>
-  <dialog class="reader-dialog sources-dialog" id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><div><span class="eyebrow">THE EDITION</span><h2 id="sources-title">Sources &amp; reading notes</h2></div><button class="icon-button" type="button" data-close-dialog aria-label="Close sources">×</button></div><div id="sources-content" class="sources-content"></div></dialog>
+  <dialog class="reader-dialog sources-dialog" id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><div><span class="eyebrow">THE EDITION</span><h2 id="sources-title">Footnotes</h2></div><button class="icon-button" type="button" data-close-dialog aria-label="Close sources">×</button></div><div id="sources-content" class="sources-content"></div></dialog>
   <dialog class="reader-dialog note-dialog" id="note-dialog" aria-labelledby="note-title"><form id="note-form"><div class="dialog-header"><div><span class="eyebrow">YOUR READING NOTES</span><h2 id="note-title">A note on this passage</h2></div><button class="icon-button" type="button" data-close-dialog aria-label="Close note">×</button></div><p id="note-passage" class="note-passage"></p><label for="note-text" class="sr-only">Personal note</label><textarea id="note-text" rows="8" maxlength="20000" placeholder="Questions, connections, or a thought to return to…"></textarea><p class="note-privacy">Stored only in this browser. Your note is not added to the published text.</p><div class="note-actions"><button id="delete-note" class="text-button" type="button">Delete note</button><button class="primary-button" type="submit">Save note</button></div></form></dialog>
-  <noscript><div class="noscript-message">This interactive reader needs JavaScript. You can also <a href="data/nihayat-al-hikma-english.txt">download the English working translation</a> or read the <a href="../study-guide.html">comparison and syllabus guide</a> without JavaScript.</div></noscript>
+  <noscript><div class="noscript-message">JavaScript is required for the interactive bilingual reader.</div></noscript>
 </body>
 </html>

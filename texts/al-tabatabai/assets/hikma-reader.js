@@ -256,55 +256,85 @@
   function renderPassage(unit) {
     const article = make('article', 'passage'); article.id = unit.domId; article.dataset.unit = unit.id;
     const top = make('div', 'passage-topline');
-    const unitIndex = unit.group.units.indexOf(unit) + 1;
-    top.append(make('span', 'passage-label', unit.group.units.length > 1 ? `§ ${unitIndex}` : isGuide(unit) ? 'EDITORIAL GUIDE' : 'ARABIC · ENGLISH'));
     const controls = make('div', 'passage-controls');
     const bookmark = make('button'); bookmark.type = 'button'; bookmark.dataset.bookmark = unit.id; bookmark.setAttribute('aria-pressed', String(state.bookmarks.has(unit.id))); bookmark.setAttribute('aria-label', state.bookmarks.has(unit.id) ? 'Remove bookmark' : 'Bookmark this passage'); bookmark.title = bookmark.getAttribute('aria-label'); bookmark.append(icon('bookmark')); bookmark.addEventListener('click', () => toggleBookmark(unit));
-    const note = make('button', state.notes[unit.id] ? 'has-note' : ''); note.type = 'button'; note.dataset.note = unit.id; note.setAttribute('aria-label', state.notes[unit.id] ? 'Edit your note' : 'Add a personal note'); note.title = note.getAttribute('aria-label'); note.append(icon('note')); note.addEventListener('click', () => openNote(unit, note));
+    const personal = make('button', state.notes[unit.id] ? 'has-note' : ''); personal.type = 'button'; personal.dataset.note = unit.id; personal.setAttribute('aria-label', state.notes[unit.id] ? 'Edit your note' : 'Add a personal note'); personal.title = personal.getAttribute('aria-label'); personal.append(icon('note')); personal.addEventListener('click', () => openNote(unit, personal));
     const permalink = make('a'); permalink.href = '#' + unit.domId; permalink.setAttribute('aria-label', 'Link to this passage'); permalink.title = 'Link to this passage'; permalink.append(icon('link')); permalink.addEventListener('click', event => { event.preventDefault(); navigate({ group: unit.group, unit }, true); });
-    controls.append(bookmark, note, permalink); top.append(controls); article.append(top);
+    controls.append(bookmark, personal, permalink); top.append(controls); article.append(top);
+
+    const entries = [];
+    for (const raw of unit.notes) {
+      const n = typeof raw === 'string' ? { text: raw } : raw;
+      if (!n || !text(n.text).trim()) continue;
+      const t = text(n.type).toLowerCase(), v = text(n.text);
+      if (/lecture note · source|source note|editorial guide|translation status|source locator|coverage|to be translated/.test(t)) continue;
+      if (/^Lecture-note locator:|Source locator supplied;|translation not yet available|full translation remains/i.test(v)) continue;
+      entries.push({ text:v, url:n.url || '' });
+    }
+    if (unit.source && typeof unit.source === 'object') {
+      const source = unit.source;
+      const label = [text(source.edition || 'Arabic source'), source.page != null && source.page !== '' ? 'p. ' + text(source.page) : ''].filter(Boolean).join(' · ');
+      if (label || source.url) entries.push({text:label || 'Arabic source',url:source.url || ''});
+    }
+
     const columns = make('div', 'parallel-text');
+    const arabicOnly = !unit.english.trim() && !!unit.arabic.trim();
+    if (arabicOnly) columns.classList.add('is-arabic-only');
+    let lastParagraph = null;
     for (const language of ['english', 'arabic']) {
-      const panel = make('div', `text-panel ${language}-panel`); panel.lang = language === 'arabic' ? 'ar' : 'en'; panel.dir = language === 'arabic' ? 'rtl' : 'ltr';
-      panel.append(make('div', 'column-label', language === 'arabic' ? (isGuide(unit) ? 'العربية · دليل القراءة' : 'النص العربي') : (isGuide(unit) ? 'Editorial reading guide' : 'English translation')));
+      if (!text(unit[language]).trim()) continue;
+      const panel = make('div', 'text-panel ' + language + '-panel');
+      panel.lang = language === 'arabic' ? 'ar' : 'en';
+      panel.dir = language === 'arabic' ? 'rtl' : 'ltr';
       const subtitle = language === 'arabic' ? unit.arabicTitle : unit.title;
       if (unit.group.units.length > 1 && subtitle && subtitle !== (language === 'arabic' ? unit.group.arabicTitle : unit.group.title)) panel.append(make('h4', 'unit-subheading', subtitle));
-      const body = make('div', 'text-body'); const value = unit[language].trim();
-      if (value) for (const paragraph of value.split(/\n\s*\n/)) body.append(make('p', '', paragraph));
-      else { const missing = make('p', 'missing-text', language === 'arabic' ? (isGuide(unit) ? 'هذا القسم دليلٌ تحريريّ، وليس نصًّا من الكتاب.' : 'النص العربي غير متاح في هذا القسم بعد.') : 'The English translation of this section is not yet available.'); body.append(missing); }
+      const body = make('div', 'text-body');
+      for (const paragraph of unit[language].trim().split(/\n\s*\n/)) {
+        const p = make('p');
+        for (const part of paragraph.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g)) {
+          if (part.startsWith('**') && part.endsWith('**')) p.append(make('strong', '', part.slice(2, -2)));
+          else if (part.startsWith('*') && part.endsWith('*')) p.append(make('em', '', part.slice(1, -1)));
+          else p.append(document.createTextNode(part));
+        }
+        body.append(p); lastParagraph = language === 'english' ? (lastParagraph || p) : p;
+      }
       panel.append(body); columns.append(panel);
     }
     article.append(columns);
-    const bottom = make('div', 'passage-bottom'); const citation = make('div', 'source-citation');
-    if (unit.source && typeof unit.source === 'object') {
-      const source = unit.source;
-      const label = [text(source.edition || 'Arabic source'), source.page != null && source.page !== '' ? `p. ${text(source.page)}` : ''].filter(Boolean).join(' · ');
-      citation.append(source.url ? link(label, source.url) : make('span', '', label));
-    }
-    bottom.append(citation, make('span', 'passage-status', statusLabel(unit))); article.append(bottom);
-    if (unit.notes.length) {
-      const notes = make('aside', 'editorial-notes'); notes.setAttribute('aria-label', 'Editorial notes');
-      for (const raw of unit.notes) {
-        const note = typeof raw === 'string' ? { text: raw } : raw;
-        if (!note || !note.text) continue;
-        const paragraph = make('p', 'editorial-note');
-        if (note.type) paragraph.append(make('span', 'note-type', text(note.type).replace(/[-_]/g, ' ') + '. '));
-        addLinkedText(paragraph, note.text);
-        if (note.url) paragraph.append(document.createTextNode(' '), link('Consult source ↗', note.url));
-        notes.append(paragraph);
+
+    if (entries.length) {
+      const footnotes = make('details', 'footnote-details');
+      const summary = make('summary', 'footnote-summary', entries.length === 1 ? '1 footnote' : entries.length + ' footnotes');
+      const items = make('ol', 'footnote-list');
+      entries.forEach((entry, i) => {
+        const li = make('li', 'footnote'); li.id = unit.domId + '-footnote-' + (i + 1);
+        addLinkedText(li, entry.text);
+        if (entry.url) li.append(document.createTextNode(' '), link('Source', entry.url));
+        items.append(li);
+      });
+      footnotes.append(summary, items); article.append(footnotes);
+      const preferred = article.querySelector('.english-panel .text-body p:last-child') || article.querySelector('.arabic-panel .text-body p:last-child');
+      if (preferred) {
+        const sup = make('sup', 'footnote-references');
+        for (let i = 0; i < entries.length; i++) {
+          const a = make('a', 'footnote-reference', String(i + 1));
+          a.href = '#' + unit.domId + '-footnote-' + (i + 1);
+          a.setAttribute('aria-label', 'Footnote ' + (i + 1));
+          a.addEventListener('click', event => {
+            event.preventDefault(); footnotes.open = true;
+            requestAnimationFrame(() => document.getElementById(unit.domId + '-footnote-' + (i + 1))?.scrollIntoView({block:'nearest'}));
+          });
+          sup.append(a);
+        }
+        preferred.append(document.createTextNode(' '), sup);
       }
-      article.append(notes);
     }
     appendPersonalNote(article, unit);
     return article;
   }
   function appendPersonalNote(article, unit) {
+    // Personal notes are accessible through the note icon, never rendered in the reading text.
     article.querySelector('.personal-note-preview')?.remove();
-    if (!state.notes[unit.id]) return;
-    const preview = make('aside', 'personal-note-preview'); preview.setAttribute('aria-label', 'Your personal note');
-    const content = text(state.notes[unit.id]);
-    const button = make('button', 'quiet-link', 'Edit'); button.type = 'button'; button.addEventListener('click', () => openNote(unit, button));
-    preview.append(icon('note'), make('p', '', content.length > 230 ? content.slice(0, 230) + '…' : content), button); article.append(preview);
   }
   function toggleBookmark(unit) {
     const added = !state.bookmarks.has(unit.id);
