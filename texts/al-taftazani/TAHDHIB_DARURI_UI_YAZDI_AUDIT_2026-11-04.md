@@ -20,7 +20,7 @@ This audit describes actual code and observable feature contracts, not a claim t
 | Reading Desk and saved items | **Partial:** clause bookmarks, highlights, notes, Saved list, recent locations and navigation history | No Darūrī-equivalent unified per-word highlight geometry, recoverable Bin, full cross-book backup/transfer or PDF annotation compositor |
 | Dictionary | **Partial:** independent source-linked glossary and subject index | Darūrī’s historical dictionary breadth, morphology, context popups and Arabic word selection are not all ported |
 | Search | **Partial:** bilingual and diacritic-insensitive literal search | Darūrī proximity, morphology and indexed subject search are not equal |
-| Reader apparatus/layers | **Matched interface contract:** Layers menu in both volumes; al-Yazdī appears only in logic, off by default, user enabled and persisted | **Translation incomplete:** checked selections on L.02–L.06 are available; other divisions deliberately show no faux text |
+| Reader apparatus/layers | **Matched interface contract:** Layers menu in both volumes; al-Yazdī appears only in logic, off by default, user enabled and persisted | **Translation incomplete:** checked selections on L.02–L.09 are available; other divisions deliberately show no faux text |
 | Source attribution for commentary | **Matched principle:** separate bilingual Arabic/English layer, cited original page, no other authors’ lower-register glosses silently ascribed to Yazdī | Edition-wide lemma-by-lemma collation of the c.400-page commentary not yet done |
 | Regular reading footnotes | **Cleaned:** no general list of hyperlinks to other commentators in the main logic sidebar; al-Yazdī only in optional layer | Original Study mode retains necessary textual apparatus |
 | Kalām commentary navigation | **Functional:** Taqrīb al-Marām as a separate existing book from the Layers menu | A fully aligned, translated Sanandajī inline layer is a distinct research project |
@@ -33,7 +33,7 @@ This audit describes actual code and observable feature contracts, not a claim t
 
 Primary selected source: ʿAbd Allāh ibn al-Ḥusayn al-Yazdī, `al-Ḥāshiya ʿalā Tahdhīb al-Manṭiq`, Qum edition, searchable text at `https://ablibrary.net/book_content/b/12170/`; independent bibliographic record and digitized PDF at `https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en`.
 
-**Initial verified selection:** 32 Arabic/English passages sourced from printed pp. 14–19, 22–27 and 30–37, assigned only to L.02–L.06. Main `شرح` text has been separated from `هامش` footnotes, including other writers and quotations from `al-Taqrīb`. In some places the translation deliberately selects coherent sentences rather than every line of the printed page. The layer is therefore **a source-checked partial translation**, not a complete commentary translation, and it must never be identified otherwise.
+**Initial verified selection:** 59 Arabic/English passages sourced from printed pp. 14–19, 22–27, 30–37 and 46–50, assigned only to L.02–L.09. Main `شرح` text has been separated from `هامش` footnotes, including other writers and quotations from `al-Taqrīb`. In some places the translation deliberately selects coherent sentences rather than every line of the printed page. The layer is therefore **a source-checked partial translation**, not a complete commentary translation, and it must never be identified otherwise.
 
 ## Source and presentation controls
 
@@ -48,7 +48,7 @@ Primary selected source: ʿAbd Allāh ibn al-Ḥusayn al-Yazdī, `al-Ḥāshiya 
 
 1. Both public readers retain the full 19 / 1,044 unit counts; all original corpus SHA hashes unchanged.
 2. Toggle al-Yazdī on, off, and on again; verify persistence after reload.
-3. Exactly 32 translated passages appear on logic L.02–L.06; no translated commentary cards appear on uncompleted divisions or the kalām reader.
+3. Exactly 59 translated passages appear on logic L.02–L.09; no translated commentary cards appear on uncompleted divisions or the kalām reader.
 4. In Arabic-only and English-only modes, the corresponding language controls also apply to the commentary.
 5. Study/Read/Immersive, small-screen scrolling, keyboard focus and modal dismissal work with the selected layer.
 6. Book links in the site catalogue, Gnamma bottom menu and reader Books sheet all point to canonical /edition/ pages.
