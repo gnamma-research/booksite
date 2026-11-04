@@ -145,7 +145,7 @@ window.GNAMMA_QAWAID_REFERENCES = {
       "type": "cross-reference",
       "title": "Naṣīr al-Dīn al-Ṭūsī, Tajrīd al-Iʿtiqād",
       "source": "Tajrīd and commentary tradition",
-      "sourceUrl": "https://github.com/gnamma-research/booksite",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/research/tajrid/",
       "units": [
         "SH-007",
         "SH-038",
