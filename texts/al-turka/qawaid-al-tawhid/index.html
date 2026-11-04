@@ -4,12 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#fbf9f4">
-<meta name="description" content="Gnamma bilingual reader: Abū Ḥāmid Turka's Qawāʿid al-Tawḥīd, with a separate translation of Ṣāʾin al-Dīn Ibn Turka's Tamhīd introduction and closing commentary, compared with Joseph Lumbard.">
+<meta name="description" content="Gnamma bilingual reader: Abū Ḥāmid Turka's Qawāʿid al-Tawḥīd and Ṣāʾin al-Dīn Ibn Turka's Tamhīd commentary, in two independently switchable text layers.">
 <title>Qawāʿid al-Tawḥīd · Matn and Commentary · Gnamma</title>
 <link rel="icon" href="../../../assets/gnamma-mark.svg" type="image/svg+xml">
 <link rel="stylesheet" href="reader.css">
+<link rel="stylesheet" href="layered-reader.css">
 </head>
-<body data-mode="matn" data-focus="0" data-language="both" data-show-notes="false" data-background="native">
+<body data-mode="paired" data-focus="0" data-language="both" data-show-notes="false" data-background="native">
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
 <symbol id="ic-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
 <symbol id="ic-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></symbol>
@@ -31,10 +32,13 @@
 </header>
 <div id="controlbar" aria-label="Reading controls">
  <div class="seg lang" role="group" aria-label="Text languages"><button id="lang-ar" class="ar-glyph" type="button" aria-pressed="true" title="Show or hide Arabic">ع</button><button id="lang-en" type="button" aria-pressed="true" title="Show or hide English">EN</button></div>
- <div class="seg" role="group" aria-label="Reading text layer"><button type="button" data-layer="matn" aria-pressed="true">Matn</button><button type="button" data-layer="paired" aria-pressed="false">Together</button><button type="button" data-layer="sharh" aria-pressed="false" title="Open the complete translated commentary workspace">Sharḥ</button></div>
+ <div class="layer-switches" role="group" aria-label="Text layers">
+  <button id="layer-matn" class="layer-switch" type="button" role="switch" aria-checked="true" data-layer-switch="matn" aria-label="Show matn"><span class="switch-track" aria-hidden="true"></span>Matn <span class="switch-word" aria-hidden="true">On</span></button>
+  <button id="layer-sharh" class="layer-switch" type="button" role="switch" aria-checked="true" data-layer-switch="sharh" aria-label="Show sharh commentary"><span class="switch-track" aria-hidden="true"></span>Sharḥ <span class="switch-word" aria-hidden="true">On</span></button>
+ </div>
  <button id="focus-button" class="text-btn" type="button" aria-label="Cycle through four reading modes" title="Normal, Focus 1, Focus 2, Continuous"><svg><use href="#ic-focus"/></svg> <span id="focus-label">Normal</span></button>
  <button id="save-button" class="icon-btn" type="button" title="Save current passage" aria-label="Bookmark current passage"><svg><use href="#ic-bookmark"/></svg></button>
- <span class="reader-status" id="reading-status">61 matn units · 70 linked commentary sections</span>
+ <span class="reader-status" id="reading-status">Matn + sharḥ · 61 passages</span>
 </div>
 <button id="focus-recover" class="icon-btn" aria-label="Change focus mode or return to toolbar" title="Restore toolbar / next focus mode"><svg><use href="#ic-focus"/></svg></button>
 <main id="main">
@@ -42,18 +46,22 @@
   <span class="eyebrow">GNAMMA RESEARCH · BILINGUAL SCHOLARLY READER</span>
   <h1>Qawāʿid al-Tawḥīd</h1>
   <div class="ar-title" lang="ar" dir="rtl">قواعد التوحيد</div>
-  <p class="lede">Abū Ḥāmid Turka’s original treatise and a separately attributed translation of Ṣāʾin al-Dīn Ibn Turka’s <em>Tamhīd al-Qawāʿid</em>. The commentary now opens at its authorial introduction, with Joseph E. B. Lumbard’s selections used as a checked comparator.</p>
+  <p class="lede">Abū Ḥāmid Turka’s original treatise and a separately attributed translation of Ṣāʾin al-Dīn Ibn Turka’s <em>Tamhīd al-Qawāʿid</em>. Read the original matn and its linked commentary together. Switch either layer on or off without leaving your place; Arabic and English remain independently selectable.</p>
   <div class="edition-meta"><span><b>61</b> matn units</span><span><b>40</b> introductory commentary units</span><span><b>64</b> main commentary sections</span><span><b>6</b> concluding commentary units</span></div>
   <p class="help-copy">The authorial introduction, all main commentary through QT-060, and the closing discussion are now translated from the consulted Arabic sources: 110 bilingual commentary units, including four short connecting sections. This is a complete source-based working translation, not a manuscript-established critical edition. The commentary reader distinguishes the Nekounam and Āshtiyānī editions and their different pagination. QT-059’s reported omission remains noted and deferred.</p>
-  <div class="book-actions"><button class="action-btn primary" id="start-matn" type="button">Read the matn</button><button class="action-btn" id="start-sharh" type="button">Read the commentary from the beginning</button><button class="action-btn" id="open-study" type="button">Study &amp; apparatus</button><a class="action-btn" href="commentary.html">Commentary reader</a></div>
+  <div class="book-actions"><button class="action-btn primary" id="start-matn" type="button">Read the matn</button><button class="action-btn" id="start-sharh" type="button">Read matn + sharḥ</button><button class="action-btn" id="open-study" type="button">Study &amp; apparatus</button><a class="action-btn" href="commentary.html#SH-INTRO-001">Sharḥ introduction</a></div>
  </section>
  <section class="reader-stage" id="reading" aria-label="Reading edition">
-  <div id="reading-list" aria-live="polite"><p>Opening the reader…</p></div>
+  <div id="reading-list"><p>Opening the reader…</p></div>
  </section>
 </main>
 <nav id="reading-dock" aria-label="Passage navigation">
  <button class="dock-btn" id="prev" type="button" title="Previous unit" aria-label="Previous unit"><svg><use href="#ic-left"/></svg> <span id="prev-num">—</span></button>
- <button class="dock-center" id="location-button" type="button" aria-label="Choose passage from contents"><strong id="location-title">Qawāʿid al-Tawḥīd</strong><small id="location-source">Select a passage</small></button>
+ <div class="dock-middle"><button class="dock-center" id="location-button" type="button" aria-label="Choose passage from contents"><strong id="location-title">Qawāʿid al-Tawḥīd</strong><small id="location-source">Select a passage</small></button>
+ <div class="layer-switches dock-layer-controls" role="group" aria-label="Text layers">
+  <button id="dock-layer-matn" class="layer-switch" type="button" role="switch" aria-checked="true" data-layer-switch="matn" aria-label="Show matn"><span class="switch-track" aria-hidden="true"></span>Matn <span class="switch-word" aria-hidden="true">On</span></button>
+  <button id="dock-layer-sharh" class="layer-switch" type="button" role="switch" aria-checked="true" data-layer-switch="sharh" aria-label="Show sharh commentary"><span class="switch-track" aria-hidden="true"></span>Sharḥ <span class="switch-word" aria-hidden="true">On</span></button>
+ </div></div>
  <button class="dock-btn" id="next" type="button" title="Next unit" aria-label="Next unit"><span id="next-num">—</span> <svg><use href="#ic-right"/></svg></button>
 </nav>
 <dialog id="sheet" aria-labelledby="sheet-title">
@@ -68,6 +76,5 @@
 <script src="data/commentary-conclusion.js"></script>
 <script src="data/commentary-main-001-019.js"></script>
 <script src="data/commentary-main-020-060.js"></script>
-<script src="commentary-main-bridge.js"></script>
-<script src="reader.js"></script>
+<script src="layered-reader.js"></script>
 </body></html>
