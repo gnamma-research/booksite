@@ -65,6 +65,7 @@ with sync_playwright() as p:
   page.locator('[data-open-source="q-24-40"]').first.click()
   ck('Quran 24:40 complete verse in card','وَمَنْ لَمْ يَجْعَلِ' in page.locator('.gn-source-ar').inner_text())
   page.locator('[data-open-study="pdf"]').click()
+  page.wait_for_function("() => {const t=document.querySelector('#gn-study-content')?.textContent||'';return t.includes('Bilingual Reading')||t.includes('not yet available')}",timeout=15000)
   pdftext=page.locator('#gn-study-content').inner_text()
   ck('PDF menu backed by actual files or honest absence', 'Bilingual Reading' in pdftext or 'not yet available' in pdftext)
   page.locator('#gn-study-dialog [data-study-close]').first.click()
