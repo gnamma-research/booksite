@@ -3,14 +3,14 @@
   "title": "Bidāyat al-Ḥikma",
   "arabicTitle": "بداية الحكمة",
   "author": "Sayyid Muḥammad Ḥusayn al-Ṭabāṭabāʾī",
-  "description": "An integrated primary-text reader for all 110 Arabic chapters, with an original English working translation beginning at the author's introduction and opening chapters. The uploaded published English translation and separate lecture notes are comparison sources, not reproduced.",
-  "status": "arabic-complete-working-english-translation-in-progress",
+  "description": "Bidāyat al-Ḥikma",
+  "status": "working-translation",
   "editorialStatus": {
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
     "translatedAuthorialUnits": 0,
-    "guideUnits": 13,
+    "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
     "englishTranslatedChapters": 4,
@@ -21,7 +21,9 @@
     "lectureNoteAttribution": "Student notes recorded by Aanand Krishnan based on lectures by Shaykh Mohammad Ali Shomali; not a verified transcript.",
     "lectureNoteMappedChapters": 109,
     "lectureNoteEditorialSynthesis": 21,
-    "lectureNoteApparatus": "../lecture-apparatus.html"
+    "lectureNoteApparatus": "../lecture-apparatus.html",
+    "visibleEditorialGuides": 0,
+    "readingPresentation": "Primary Arabic and new English only. Explanatory material appears as footnotes, not as guide chapters."
   },
   "sources": [
     {
@@ -57,8 +59,8 @@
     {
       "id": "0",
       "number": 0,
-      "title": "About This Reading Guide",
-      "arabicTitle": "عن دليل القراءة"
+      "title": "Introduction",
+      "arabicTitle": "مقدمة"
     },
     {
       "id": "I",
@@ -135,31 +137,6 @@
   ],
   "units": [
     {
-      "id": "B-GUIDE",
-      "stage": "0",
-      "chapter": 0,
-      "title": "Bidāya, Nihāya, and the Existing English Translation",
-      "arabicTitle": "بداية الحكمة ومكانها في الدراسة",
-      "arabic": "هذا دليل قراءة تحريري، وليس ترجمة لمتن بداية الحكمة. يوضح ترتيب مباحث الكتاب وعلاقته بنهاية الحكمة، ويحيل إلى الترجمة الإنجليزية المنشورة. لم يُدرج المتن العربي أو ترجمة كاملة له في هذه الصفحة بعد.",
-      "english": "Bidāyat al-Ḥikma is the earlier systematic course in Ṭabāṭabāʾī’s two-book sequence. Nihāyat al-Ḥikma returns to the same broad architecture at a more demanding level. Both have twelve stages, but their order and internal chapter divisions differ. Bidāya has 110 numbered chapters; Nihāya has 130.\n\nA published English translation of Bidāya is available: The Elements of Islamic Metaphysics, translated by Sayyid ʿAlī Qulī Qarāʾī, ICAS Press. The publisher lists a fully revised second edition with terminology notes and a glossary. Its wording is not reproduced in this reader.\n\nThe sections below are original editorial reading prompts, not a substitute translation of the book. A full new translation is awaiting a supplied Arabic source or a clearly reusable Arabic witness. The linked Nihāya edition provides its own separately identified working translation.\n\nFor comparison, match each topic across the books rather than advancing through identical stage or chapter numbers. The study guide also explains the usual progression into Mullā Ṣadrā’s Asfār and the separate theoretical ʿirfān sequence.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Arabic contents and structure",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "bibliography",
-          "text": "Published English: The Elements of Islamic Metaphysics, trans. ʿAlī Qulī Qarāʾī, ICAS Press.",
-          "url": "https://islamic-college.ac.uk/shop/the-elements-of-islamic-metaphysics-bidayat-al-hikmah/"
-        },
-        {
-          "type": "editorial",
-          "text": "The guide’s stage correspondence is structural. It does not assert that arguments or individual chapters are identical."
-        }
-      ]
-    },
-    {
       "id": "B-INTRO",
       "stage": "0",
       "chapter": "intro",
@@ -177,27 +154,6 @@
         {
           "type": "editorial",
           "text": "Independently rendered from the Arabic; the uploaded published English version is a comparison source, not copied into this edition."
-        }
-      ]
-    },
-    {
-      "id": "B-GUIDE-I",
-      "stage": "I",
-      "chapter": 0,
-      "title": "Existence: General Questions — Reading Prompts",
-      "arabicTitle": "كليات مباحث الوجود",
-      "arabic": "دليل تحريري للمرحلة I: عدد فصولها 12. يقابل هذا الموضوع إجمالًا المرحلة I من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "Begin by distinguishing a concept from the reality to which it applies, and existence from what a thing is. Keep the primacy of existence and its gradation separate: the first asks what is concrete; the second asks how one reality admits different degrees. These are related theses with different argumentative tasks.\n\nStructural reference: Bidāya stage I, 12 numbered chapters; corresponding topic in Nihāya stage I.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage I in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-I-1"
         }
       ]
     },
@@ -486,27 +442,6 @@
       ]
     },
     {
-      "id": "B-GUIDE-II",
-      "stage": "II",
-      "chapter": 0,
-      "title": "Mental and External Existence — Reading Prompts",
-      "arabicTitle": "الوجود الخارجي والذهني",
-      "arabic": "دليل تحريري للمرحلة II: عدد فصولها 1. يقابل هذا الموضوع إجمالًا المرحلة III من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "Ask how something can be present to knowledge without producing its ordinary external effects. The distinction between modes of existence is crucial: thinking about fire does not make the mind physically hot. When comparing the two books, match this stage with Nihāya III rather than with the same Roman numeral.\n\nStructural reference: Bidāya stage II, 1 numbered chapter; corresponding topic in Nihāya stage III.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage III in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-III-1"
-        }
-      ]
-    },
-    {
       "id": "B-II-01",
       "stage": "II",
       "chapter": 1,
@@ -528,27 +463,6 @@
         {
           "type": "editorial synthesis of lecture notes",
           "text": "The long discussion of mental existence examines the objection that a known substance would have to be an accident in the soul. The Sadrāian response distinguishes primary predication from common predication; the example of a conceived apple is useful but not itself the proof."
-        }
-      ]
-    },
-    {
-      "id": "B-GUIDE-III",
-      "stage": "III",
-      "chapter": 0,
-      "title": "Existence in Itself and in Another — Reading Prompts",
-      "arabicTitle": "الوجود في نفسه وفي غيره",
-      "arabic": "دليل تحريري للمرحلة III: عدد فصولها 3. يقابل هذا الموضوع إجمالًا المرحلة II من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "Keep “in itself,” “for itself,” and “through itself” distinct. They answer different questions about conceptual independence, qualification of a subject, and dependence upon a cause. An English translation that replaces all three with “independent” makes the arguments harder to follow. The corresponding discussion is Nihāya II.\n\nStructural reference: Bidāya stage III, 3 numbered chapters; corresponding topic in Nihāya stage II.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage II in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-II-1"
         }
       ]
     },
@@ -616,27 +530,6 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 51 (PDF p. 52); chapter 3.3. This is a student’s record, not a verified verbatim transcript."
-        }
-      ]
-    },
-    {
-      "id": "B-GUIDE-IV",
-      "stage": "IV",
-      "chapter": 0,
-      "title": "Necessity, Possibility, and Impossibility — Reading Prompts",
-      "arabicTitle": "المواد الثلاث",
-      "arabic": "دليل تحريري للمرحلة IV: عدد فصولها 9. يقابل هذا الموضوع إجمالًا المرحلة IV من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "Read the modal vocabulary together with the theory of causation. A thing can be contingent in itself while necessary through a complete cause. Reconstruct each claim by specifying whether the necessity or possibility belongs intrinsically, through another, or by comparison. Do not treat “possible” as merely “not yet actual.”\n\nStructural reference: Bidāya stage IV, 9 numbered chapters; corresponding topic in Nihāya stage IV.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage IV in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-IV-1"
         }
       ]
     },
@@ -842,27 +735,6 @@
       ]
     },
     {
-      "id": "B-GUIDE-V",
-      "stage": "V",
-      "chapter": 0,
-      "title": "Quiddity and Its Properties — Reading Prompts",
-      "arabicTitle": "الماهية وأحكامها",
-      "arabic": "دليل تحريري للمرحلة V: عدد فصولها 8. يقابل هذا الموضوع إجمالًا المرحلة V من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "The guiding question is what a thing is, considered apart from an additional assertion that it exists. Track genus, differentia, species, universality, and individuation. Ask which distinctions concern concepts and which are supposed to mark concrete divisions. This prevents a logical analysis of a definition from becoming an unsupported claim about separate things.\n\nStructural reference: Bidāya stage V, 8 numbered chapters; corresponding topic in Nihāya stage V.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage V in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-V-1"
-        }
-      ]
-    },
-    {
       "id": "B-V-01",
       "stage": "V",
       "chapter": 1,
@@ -1031,27 +903,6 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 85 (PDF p. 86); chapter 5.8. This is a student’s record, not a verified verbatim transcript."
-        }
-      ]
-    },
-    {
-      "id": "B-GUIDE-VI",
-      "stage": "VI",
-      "chapter": 0,
-      "title": "The Ten Categories — Reading Prompts",
-      "arabicTitle": "المقولات العشر",
-      "arabic": "دليل تحريري للمرحلة VI: عدد فصولها 11. يقابل هذا الموضوع إجمالًا المرحلة VI من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "Use a clear account of substance and accident before moving into the traditional category scheme. Distinguish prime matter from ordinary physical material and form from outward shape. Nihāya devotes more numbered chapters to this stage, but chapter totals alone do not measure the depth or independence of individual arguments.\n\nStructural reference: Bidāya stage VI, 11 numbered chapters; corresponding topic in Nihāya stage VI.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage VI in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-VI-1"
         }
       ]
     },
@@ -1295,27 +1146,6 @@
       ]
     },
     {
-      "id": "B-GUIDE-VII",
-      "stage": "VII",
-      "chapter": 0,
-      "title": "Cause and Effect — Reading Prompts",
-      "arabicTitle": "العلة والمعلول",
-      "arabic": "دليل تحريري للمرحلة VII: عدد فصولها 11. يقابل هذا الموضوع إجمالًا المرحلة VIII من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "Distinguish a complete cause from one contributing condition, and causal dependence from temporal precedence. When reading objections to regress, determine what kind of ordered dependence is at issue. A series of earlier events and a hierarchy of presently dependent causes should not be assumed to be the same kind of series.\n\nStructural reference: Bidāya stage VII, 11 numbered chapters; corresponding topic in Nihāya stage VIII.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage VIII in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-VIII-1"
-        }
-      ]
-    },
-    {
       "id": "B-VII-01",
       "stage": "VII",
       "chapter": 1,
@@ -1547,27 +1377,6 @@
       ]
     },
     {
-      "id": "B-GUIDE-VIII",
-      "stage": "VIII",
-      "chapter": 0,
-      "title": "Unity and Multiplicity — Reading Prompts",
-      "arabicTitle": "الواحد والكثير",
-      "arabic": "دليل تحريري للمرحلة VIII: عدد فصولها 10. يقابل هذا الموضوع إجمالًا المرحلة VII من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "Follow the different senses of unity, identity, predication, and opposition. Primary predication and common predication can yield different judgments without contradiction because they consider different relations. Compare each apparently incompatible statement only after specifying the relevant sense of identity and the respects in which the predication is made.\n\nStructural reference: Bidāya stage VIII, 10 numbered chapters; corresponding topic in Nihāya stage VII.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage VII in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-VII-1"
-        }
-      ]
-    },
-    {
       "id": "B-VIII-01",
       "stage": "VIII",
       "chapter": 1,
@@ -1782,27 +1591,6 @@
       ]
     },
     {
-      "id": "B-GUIDE-IX",
-      "stage": "IX",
-      "chapter": 0,
-      "title": "Priority, Posteriority, Beginninglessness, and Origination — Reading Prompts",
-      "arabicTitle": "السبق واللحوق والقدم والحدوث",
-      "arabic": "دليل تحريري للمرحلة IX: عدد فصولها 3. يقابل هذا الموضوع إجمالًا المرحلة X من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "Do not assume that every “before” is temporal. The classification separates several kinds of priority; correspondingly, origination can concern dependence rather than a first date. For comparison, turn to Nihāya X, which has eight numbered chapters in this area. Keep its technical uses of dahr and sarmad distinct from ordinary elapsed time.\n\nStructural reference: Bidāya stage IX, 3 numbered chapters; corresponding topic in Nihāya stage X.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage X in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-X-1"
-        }
-      ]
-    },
-    {
       "id": "B-IX-01",
       "stage": "IX",
       "chapter": 1,
@@ -1862,27 +1650,6 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 154 (PDF p. 155); chapter 9.3. This is a student’s record, not a verified verbatim transcript."
-        }
-      ]
-    },
-    {
-      "id": "B-GUIDE-X",
-      "stage": "X",
-      "chapter": 0,
-      "title": "Potentiality and Actuality — Reading Prompts",
-      "arabicTitle": "القوة والفعل",
-      "arabic": "دليل تحريري للمرحلة X: عدد فصولها 16. يقابل هذا الموضوع إجمالًا المرحلة IX من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "Track what changes, the respect in which it changes, and what accounts for continuity. In substantial motion, the identity of the subject is a philosophical problem requiring argument. Distinguish motion considered as traversal from the moving thing’s intermediate state between endpoints. The corresponding stage in Nihāya is IX.\n\nStructural reference: Bidāya stage X, 16 numbered chapters; corresponding topic in Nihāya stage IX.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage IX in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-IX-1"
         }
       ]
     },
@@ -2227,27 +1994,6 @@
       ]
     },
     {
-      "id": "B-GUIDE-XI",
-      "stage": "XI",
-      "chapter": 0,
-      "title": "Knowledge, the Knower, and the Known — Reading Prompts",
-      "arabicTitle": "العلم والعالم والمعلوم",
-      "arabic": "دليل تحريري للمرحلة XI: عدد فصولها 12. يقابل هذا الموضوع إجمالًا المرحلة XI من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "Keep knowledge by presence distinct from acquired knowledge, and conception distinct from assent. “Acquired” names a mode of knowing through a form; it does not always mean knowledge obtained by deliberate study. When comparing the books, follow the arguments and subdivisions, since identical stage numbers do not guarantee identical chapter numbers.\n\nStructural reference: Bidāya stage XI, 12 numbered chapters; corresponding topic in Nihāya stage XI.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage XI in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-XI-1"
-        }
-      ]
-    },
-    {
       "id": "B-XI-01",
       "stage": "XI",
       "chapter": 1,
@@ -2504,27 +2250,6 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 222 (PDF p. 223); chapter 11.12. This is a student’s record, not a verified verbatim transcript."
-        }
-      ]
-    },
-    {
-      "id": "B-GUIDE-XII",
-      "stage": "XII",
-      "chapter": 0,
-      "title": "The Necessary Existent — Reading Prompts",
-      "arabicTitle": "ما يتعلق بالواجب تعالى",
-      "arabic": "دليل تحريري للمرحلة XII: عدد فصولها 14. يقابل هذا الموضوع إجمالًا المرحلة XII من نهاية الحكمة. هذه إرشادات للقراءة والمقارنة، وليست نص المؤلف أو ترجمةً له.",
-      "english": "Read the final theological discussion as dependent on the preceding metaphysics. Distinguish proving necessary existence from determining unity, attributes, and action. A critical reading should identify the earlier premises each conclusion needs and the objections it answers. Nihāya’s corresponding stage has twenty-four numbered chapters and requires a separate argument-by-argument comparison.\n\nStructural reference: Bidāya stage XII, 14 numbered chapters; corresponding topic in Nihāya stage XII.",
-      "status": "editorial-guide",
-      "source": {
-        "edition": "Bidāya · contents reference",
-        "url": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
-      },
-      "notes": [
-        {
-          "type": "comparison",
-          "text": "Consult Nihāya stage XII in the companion reader.",
-          "url": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#chapter-XII-1"
         }
       ]
     },
