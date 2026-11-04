@@ -4,7 +4,8 @@
 (function(){
 'use strict';
 const terms=window.GNAMMA_QAWAID_TERMS?.terms||[],references=window.GNAMMA_QAWAID_REFERENCES?.items||[];
-const matn=window.GNAMMA_QAWAID_MATN?.units||[],sharh=[...(window.GNAMMA_TAMHID_SHARH?.units||[])];
+const matn=window.GNAMMA_QAWAID_MATN?.units||[];
+const sharh=[...new Map([...(window.GNAMMA_TAMHID_SHARH?.units||[]),...(window.GNAMMA_TAMHID_MAIN||[]),...(window.GNAMMA_TAMHID_CONCLUSION||[])].map(u=>[u.id,u])).values()];
 const byId=new Map([...matn,...sharh].map(u=>[u.id,u]));
 const $=s=>document.querySelector(s),$$=(s,p=document)=>[...p.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -31,6 +32,7 @@ function unitURL(id){
 }
 function buildOccurrences(){
  const all=[...matn,...sharh,...(corpus?.units||[])];
+ occurrences=new Map();
  for(const t of terms){
   const phrases=[t.ar,...t.aliases.filter(a=>/[\u0600-\u06ff]/.test(a)),t.en.split('/')[0].trim(),...t.aliases.filter(a=>/^[A-Za-z]/.test(a)&&a.length>5)].map(norm).filter(x=>x.length>=4);
   const found=[],seen=new Set();
@@ -94,6 +96,7 @@ function setup(){
  const pstyle=document.createElement('style');pstyle.textContent='body[data-apparatus="off"] .source-notes,body[data-apparatus="off"] .gn-term-ribbon,body[data-apparatus="off"] .gn-citation-ribbon{display:none!important}body[data-apparatus="off"] .gn-term-inline{color:inherit!important;border:0!important;text-decoration:none!important;background:transparent!important}body[data-apparatus="minimal"] .source-notes{display:none!important}';document.head.append(pstyle);
  setApparatus(apparatus);
  buildOccurrences();
+ fetch('data/commentary-corpus.json').then(r=>r.ok?r.json():null).then(x=>{if(!x?.units?.length)return;corpus=x;for(const u of corpus.units)if(!byId.has(u.id))byId.set(u.id,u);buildOccurrences();}).catch(()=>{});
  document.addEventListener('click',clickDelegated);
  document.addEventListener('input',inputDelegated);
  document.addEventListener('change',changeDelegated);
