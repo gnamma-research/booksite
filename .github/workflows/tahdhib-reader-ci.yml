@@ -32,7 +32,7 @@ on:
       - "texts/al-taftazani/tahdhib-al-kalam/edition/**"
       - "texts/al-taftazani/tahdhib-al-mantiq/edition/**"
 concurrency:
-  group: tahdhib-reader-verification
+  group: tahdhib-reader-verification-${{ github.ref }}
   cancel-in-progress: true
 permissions:
   contents: read
