@@ -1,0 +1,61 @@
+name: Qawaid PDF editions
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'texts/al-turka/qawaid-al-tawhid/pdf/build_editions.py'
+      - '.github/workflows/qawaid-pdf-editions.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: qawaid-pdf-editions
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Install Arabic shaping and PDF tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core libpango-1.0-0 libpangocairo-1.0-0
+          python -m pip install --quiet weasyprint pypdf
+      - name: Generate five actual editions
+        run: python texts/al-turka/qawaid-al-tawhid/pdf/build_editions.py
+      - name: Validate each PDF and actual manifest inventory
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          import json,hashlib
+          p=Path('texts/al-turka/qawaid-al-tawhid/pdf')
+          m=json.loads((p/'manifest.json').read_text())
+          assert len(m['files'])==5
+          for row in m['files']:
+            f=p/row['filename']
+            assert f.is_file() and f.stat().st_size>30000
+            assert len(PdfReader(str(f)).pages)==row['pages']
+            assert hashlib.sha256(f.read_bytes()).hexdigest()==row['sha256']
+            assert PdfReader(str(f)).pages[1].extract_text() is not None
+          print('Five PDF profiles and checksums verified')
+          PY
+      - name: Commit generated editions
+        run: |
+          git config user.name 'gnamma-research'
+          git config user.email '13307564+gnamma-research@users.noreply.github.com'
+          git add texts/al-turka/qawaid-al-tawhid/pdf/*.pdf texts/al-turka/qawaid-al-tawhid/pdf/manifest.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Publish five searchable A4 Qawaid editions with actual source-matched profile manifest'
+          git push origin HEAD:master
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qawaid-five-pdf-editions
+          path: |
+            texts/al-turka/qawaid-al-tawhid/pdf/manifest.json
+            texts/al-turka/qawaid-al-tawhid/pdf/*.pdf
+          retention-days: 7
