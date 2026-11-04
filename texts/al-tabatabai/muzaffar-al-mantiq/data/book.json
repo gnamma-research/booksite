@@ -3,12 +3,24 @@
   "title": "al-Manṭiq",
   "arabicTitle": "المنطق",
   "author": "Shaykh Muḥammad Riḍā al-Muẓaffar (d. 1964)",
-  "description": "First stage of the linked philosophy reading sequence. An original Arabic primary-source scan is available via Princeton/Arabic Collections Online. This reader contains an editorial study map and short source-checked translation excerpts; a complete new English translation is not yet present.",
+  "description": "Logic before Bidāya and Nihāya: an original Arabic-source study guide, selected short translations, and a 75-page English comparison witness by Shaykh ʿAbdul-Ḥakīm Carney. The uploaded English PDF is partial and is cited, not republished.",
   "status": "original-guide-selected-primary-excerpts",
   "editorialStatus": {
     "translationComplete": false,
     "primaryTextCompleteness": "The original Arabic work is available via the linked institutional public-domain scan, not completely reproduced in this HTML reader.",
-    "translationMethod": "Original editorial summaries and short independent English renderings; full translation still to be completed."
+    "translationMethod": "Original editorial summaries and short independent English renderings; full translation still to be completed.",
+    "existingEnglishComparator": "Shaykh ʿAbdul-Ḥakīm Carney, Mantiq al-Muẓaffar: Logic, user-supplied 75-page PDF (no publisher/year recorded in supplied cover).",
+    "existingEnglishExtent": "Pages 2–74: Introduction and theory of knowledge; signification and expressions; universals, five predicables and predication; syllogism, induction and analogy. Definition chapter, systematic propositions and modal logic, and later five-arts/demonstration treatment are not present as separately translated sections in this PDF.",
+    "existingEnglishNotRepublished": "The uploaded modern English translation is cited as an independent reference, not reproduced or publicly redistributed in the reader. A public full-text release would require republication permission.",
+    "pdfChapterMap": {
+      "introduction": "PDF pp. 2–9",
+      "signification": "PDF pp. 10–23",
+      "universals": "PDF pp. 24–30",
+      "fiveUniversalsAndPredication": "PDF pp. 31–37",
+      "inference": "PDF pp. 38–71",
+      "inductionAndAnalogy": "PDF pp. 71–74"
+    },
+    "technicalTermCheck": "Carney renders mushakkak as 'ambiguously applicable universal' at p.25; distinguish gradation from homonymy, and compare against Arabic."
   },
   "sources": [
     {
@@ -28,6 +40,14 @@
       "title": "al-Manṭiq, Rafed digital edition",
       "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook",
       "description": "Text witness for short primary excerpts."
+    },
+    {
+      "id": "carney-english",
+      "title": "Muḥammad Riḍā al-Muẓaffar, Mantiq al-Muẓaffar: Logic",
+      "translator": "Shaykh ʿAbdul-Ḥakīm Carney",
+      "description": "User-uploaded English PDF, 75 pages. English comparison witness, not a complete translation of the original Arabic work. Original PDF not hosted or redistributed by Gnamma; quotations kept short and independently checked.",
+      "availability": "user-uploaded; private source in ChatGPT conversation",
+      "status": "partially covers the Arabic textbook"
     }
   ],
   "stages": [
@@ -86,6 +106,10 @@
         {
           "type": "source",
           "text": "Original Arabic 1968 Najaf edition: Princeton / NYU ACO public-domain scan. A complete new English translation has not yet been written."
+        },
+        {
+          "type": "English translation witness — scope",
+          "text": "Carney’s uploaded English PDF is 75 pages, covering introductions, expressions, universals, the five universals, predication, syllogistic figures, induction, and analogy. It does not itself give a continuous English rendering of all of Muẓaffar’s al-Manṭiq. Gnamma does not reproduce the modern translation publicly."
         }
       ]
     },
@@ -106,6 +130,10 @@
         {
           "type": "cross-reference",
           "text": "Read Bidāya I.1: what it means for the concept of existence to be self-evident."
+        },
+        {
+          "type": "Carney reference — pp. 2–9",
+          "text": "Carney, PDF pp. 3–8: conception and assent; necessary/axiomatic versus reflective knowledge. On PDF p. 7, the conceptions of existence and nonexistence are offered as examples of the axiomatic. Compare Bidāya I.1."
         }
       ]
     },
@@ -121,7 +149,33 @@
       "source": {
         "edition": "al-Manṭiq · digital text",
         "url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82/v/1"
-      }
+      },
+      "notes": [
+        {
+          "type": "Carney reference — pp. 10–23",
+          "text": "Carney, PDF pp. 10–12: four ‘modes of existence’ in the context of signification — external and mental existence are called real; vocal and written ‘existence’ are representative/conventional. The term ‘existence’ here is deliberately extended in a semiotic sense, not an assertion that each word is a separate substance."
+        }
+      ]
+    },
+    {
+      "id": "M-II-EXISTENCE",
+      "stage": "II",
+      "chapter": 2,
+      "title": "Four uses of ‘existence’: external, mental, vocal, written",
+      "arabicTitle": "أنحاء الوجود في مبحث الألفاظ",
+      "arabic": "الوجود الخارجي، الوجود الذهني، الوجود اللفظي، الوجود الكتبي",
+      "english": "Editorial explanation (not an authorial translation): In the discussion of signs, Muẓaffar distinguishes external existence and mental existence, both described as real, from vocal and written existence, which are forms of representing or making a meaning present. A name's existing as speech does not entail its referent exists externally. This prepares a careful reading of Bidāya’s discussion of mental existence and Nihāya’s treatment of modes and limits of existence; the latter is a metaphysical claim and is not equivalent to the semiotic classification.",
+      "status": "editorial-guide",
+      "notes": [
+        {
+          "type": "English translation witness",
+          "text": "Shaykh ʿAbdul-Ḥakīm Carney, user-supplied Mantiq al-Muẓaffar: Logic, PDF pp. 10–12. Original English prose has not been reproduced here."
+        },
+        {
+          "type": "Cross-references",
+          "text": "Bidāya II.1, Nihāya III.1 (mental and external existence); Nihāya I.2 (quiddities as modes/limits of existence). The four-way semiotic classification should not be conflated with graded ontological existence."
+        }
+      ]
     },
     {
       "id": "M-III",
@@ -135,7 +189,13 @@
       "source": {
         "edition": "al-Manṭiq · contents p. 86 onwards",
         "url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82/v/1"
-      }
+      },
+      "notes": [
+        {
+          "type": "Carney reference — pp. 24–37",
+          "text": "Carney, PDF p. 25 distinguishes mutawāṭiʾ (uniformly predicable) from mushakkak (graded in applicability), using existence as an example; pp. 31–33 give genus, differentia, and species; pp. 34–36 discuss primary and common predication."
+        }
+      ]
     },
     {
       "id": "M-IV",
@@ -154,6 +214,10 @@
         {
           "type": "compare",
           "text": "Read Bidāya I.1 and Nihāya I.2. Note that ḥadd in ḥudūd al-wujūd means delimitation, not automatically genus–differentia definition."
+        },
+        {
+          "type": "Carney — lacuna in supplied PDF",
+          "text": "Although Carney mentions complete definition at PDF pp. 31 and 34 and refers to a prior treatment at p. 67, there is no separately translated systematic chapter on the four kinds of ḥadd/rasm or the mā/hal/limā questions in the supplied 75 pages. The Arabic original remains the controlling source. Do not cite this upload as evidence that those chapters have been translated here."
         }
       ]
     },
@@ -169,7 +233,13 @@
       "source": {
         "edition": "al-Manṭiq · digital contents pp. 97–100, 169–179",
         "url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82/v/1"
-      }
+      },
+      "notes": [
+        {
+          "type": "Carney — partial coverage",
+          "text": "Primary and common predication are treated at PDF pp. 26, 34–36. A systematic translation of the later modal-proposition sections is not present in this PDF; use the complete Arabic source instead."
+        }
+      ]
     },
     {
       "id": "M-VI",
@@ -183,7 +253,13 @@
       "source": {
         "edition": "al-Manṭiq · digital contents pp. 232–317",
         "url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82/v/1"
-      }
+      },
+      "notes": [
+        {
+          "type": "Carney reference — pp. 38–71",
+          "text": "PDF pp. 38–71 contain the syllogism, figures, disjunctive and hypothetical reasoning, indirect demonstration, equation syllogism, and other inference forms. This is the best-covered advanced topic in the user-supplied translation."
+        }
+      ]
     },
     {
       "id": "M-VII",
@@ -202,6 +278,10 @@
         {
           "type": "further reading",
           "text": "Advanced comparison: Ibn Sīnā, al-Shifāʾ, al-Burhān; see the logic dossier."
+        },
+        {
+          "type": "Carney — partial coverage",
+          "text": "PDF pp. 71–74 treat induction and analogy, including causally informed induction. They do not include the later systematic chapters on the five logical arts and burhān al-limmī/burhān al-innī. Treat the existing reader section as a roadmap, not a translation from these pages."
         }
       ]
     }
