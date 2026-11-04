@@ -234,7 +234,7 @@
         if (unit.stage !== lastStage) {
           const stage = state.stages.get(unit.stage) || {};
           const heading = make('header', 'stage-heading');
-          heading.append(make('span', 'stage-number', unit.stage.endsWith('-0') ? (unit.stage.startsWith('M') ? 'PART I' : unit.stage.startsWith('B') ? 'PART II' : 'PART III') : `STAGE ${unit.stage.replace(/^[BN]-/, '')}`), make('h2', '', stageTitle(unit.stage)));
+          heading.append(make('span', 'stage-number', unit.stage.endsWith('-0') ? (unit.stage.startsWith('M') ? 'PART I' : unit.stage.startsWith('B') ? 'PART II' : 'PART III') : `STAGE ${unit.stage.replace(/^[MBN]-/, '')}`), make('h2', '', stageTitle(unit.stage)));
           if (stage.arabicTitle) { const arabic = make('p', 'stage-arabic', stage.arabicTitle); arabic.lang = 'ar'; arabic.dir = 'rtl'; heading.append(arabic); }
           fragment.append(heading); lastStage = unit.stage;
         }
