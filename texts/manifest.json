@@ -1,7 +1,7 @@
 {
   "schema": "gnamma-library-manifest-v1",
   "project": "Gnamma Research",
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "collections": [
     "texts",
     "essays",
@@ -265,6 +265,55 @@
       "edition_audit_url": "texts/al-taftazani/tahdhib-al-mantiq/edition/STAGE78_CAIRO_LOGIC_COLLATION.md",
       "printed_witness_comparisons": 7,
       "cairo_original_logic_page_span": "3–14"
+    },
+    {
+      "id": "tabatabai-bidayat-hikma",
+      "title": "Bidāyat al-Ḥikma",
+      "arabic": "بداية الحكمة",
+      "author": "Sayyid Muḥammad Ḥusayn al-Ṭabāṭabāʾī",
+      "author_slug": "al-tabatabai",
+      "work_slug": "bidayat-al-hikma",
+      "area": [
+        "Islamic philosophy",
+        "metaphysics"
+      ],
+      "status": "editorial-reading-guide-arabic-source-needed",
+      "language": [
+        "en-editorial-guide",
+        "ar-editorial-guide"
+      ],
+      "url": "texts/al-tabatabai/bidayat-al-hikma/",
+      "numbered_chapters_in_original": 110,
+      "translated_authorial_chapters": 0,
+      "note": "Original reading guide and twelve-stage correspondence with Nihāya. Qarāʾī’s published ICAS English translation is linked, not reproduced. Full new translation awaits a supplied or clearly reusable Arabic source.",
+      "study_guide_url": "texts/al-tabatabai/study-guide.html"
+    },
+    {
+      "id": "tabatabai-nihayat-hikma",
+      "title": "Nihāyat al-Ḥikma",
+      "arabic": "نهاية الحكمة",
+      "author": "Sayyid Muḥammad Ḥusayn al-Ṭabāṭabāʾī",
+      "author_slug": "al-tabatabai",
+      "work_slug": "nihayat-al-hikma",
+      "area": [
+        "Islamic philosophy",
+        "metaphysics"
+      ],
+      "status": "complete-authorial-corpus-working-translation",
+      "language": [
+        "ar",
+        "en-working-translation"
+      ],
+      "url": "texts/al-tabatabai/nihayat-al-hikma/",
+      "stages": 12,
+      "numbered_chapters": 130,
+      "reading_units": 136,
+      "translated_reading_units": 136,
+      "note": "Fresh AI-assisted English working translation in 136/136 reading sections, covering 130 numbered chapters plus introductions when complete. Arabic authorial corpus and page locators from the Qum 1417 transcription; Qum 1404 NYU/Princeton scan identified as public domain. Selected print checks only; exhaustive collation and independent specialist review remain open. Later editorial additions excluded.",
+      "translation_complete_in_authorial_corpus": true,
+      "study_guide_url": "texts/al-tabatabai/study-guide.html",
+      "english_text_url": "texts/al-tabatabai/nihayat-al-hikma/data/nihayat-al-hikma-english.txt",
+      "editorial_status_url": "texts/al-tabatabai/editorial-status.html"
     }
   ],
   "research": [
@@ -360,6 +409,13 @@
         "name": "Logic",
         "ids": [
           "taftazani-tahdhib-logic"
+        ]
+      },
+      {
+        "name": "Islamic philosophy",
+        "ids": [
+          "tabatabai-bidayat-hikma",
+          "tabatabai-nihayat-hikma"
         ]
       }
     ],

@@ -12,3 +12,10 @@ Stable path: `texts/{author_slug}/{work_slug}/`.
 Other named readers and previews retain their own editorial statuses. Neither Tahdhīb nor Taqrīb may be described as complete until their continuous source/translation audits pass.
 
 Catalogue data: `manifest.json`. Shared parallel-text reader: `shared/tahdhib-reader.js` and `.css`.
+
+## Ṭabāṭabāʾī’s philosophy textbooks
+
+- `al-tabatabai/nihayat-al-hikma/`: complete authorial Arabic sequence and fresh English working translation; 130 numbered chapters plus six introductions, 136 reading units. Selected print checks; not a manuscript-critical edition.
+- `al-tabatabai/bidayat-al-hikma/`: original reading guide and structural comparison; full new translation awaits a supplied or clearly reusable Arabic source. Qarāʾī’s published English edition is linked, not reproduced.
+- `al-tabatabai/study-guide.html`: stage correspondence, English bibliography, and the Iranian philosophy / theoretical ʿirfān study sequences.
+- `al-tabatabai/editorial-status.html`: exact scope, source method, recorded readings, and review limits.
