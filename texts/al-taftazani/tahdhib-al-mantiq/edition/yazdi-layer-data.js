@@ -1,4 +1,4 @@
-/* Verified selected passages from al-Yazdī; later marginal glosses explicitly excluded. */
+/* Source-checked translated selections from al-Yazdī; later marginal glosses excluded. */
 window.GNAMMA_YAZDI_LAYER={
   "schema": "gnamma-yazdi-translation-layer-v1",
   "work": "Tahdhīb al-Manṭiq",
@@ -7,7 +7,7 @@ window.GNAMMA_YAZDI_LAYER={
   "edition": "Qum, Muʾassasat al-Nashr al-Islāmī; searchable paginated text",
   "editionCatalog": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000566/display?lang=en",
   "sourceIndex": "https://ablibrary.net/book_content/b/12170/1",
-  "coverage": "Selected directly translated passages from printed pages 14–27, chiefly the introduction and signification chapters. These are selections, not a complete translation of the commentary.",
+  "coverage": "Selected directly translated Arabic/English passages from printed pp. 14–19, 22–27 and 30–37, aligned to Taftāzānī logic divisions L.02–L.06. Commentary translation is incomplete; no passages were supplied from later marginal hands.",
   "complete": false,
   "entries": [
     {
@@ -228,6 +228,106 @@ window.GNAMMA_YAZDI_LAYER={
       "arabic": "وهاهنا كلام وهو أن المراد بالمعنى في هذا التقسيم إما الموضوع له تحقيقا أو ما استعمل فيه اللفظ سواء كان وضع اللفظ له تحقيقا أو تأويلا، فعلى الأول لا يصح عد الحقيقة والمجاز من أقسام متكثر المعنى، وعلى الثاني يدخل نحو أسماء الإشارة على مذهب المصنف في متكثر المعنى ويخرج عن متحد المعنى.",
       "english": "There is a difficulty here. In this classification, 'meaning' may mean either the meaning originally assigned to the expression or the meaning actually intended in use, whether assigned strictly or interpreted figuratively. On the first account, literal and figurative uses should not be counted as separate assigned meanings. On the second, demonstratives would, according to the author's view, fall among expressions with multiple meanings rather than those with a single meaning.",
       "sourceUrl": "https://ablibrary.net/book_content/b/12170/27?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-30.01",
+      "unit": "L.04",
+      "page": 30,
+      "title": "Concept, meaning, and signified",
+      "arabic": "قوله « المفهوم » : أي : ما حصل عند العقل . اعلم : أن ما استفيد من اللفظ باعتبار أنه فهم منه يسمى مفهوما وباعتبار أنه قصد منه يسمى معنى وباعتبار أن اللفظ دال عليه يسمى مدلولا .",
+      "english": "On 'concept': it is what is attained by the intellect. What is obtained from an expression is called a concept (mafhūm) insofar as it is understood from it, a meaning (maʿnā) insofar as it is intended by it, and a signified (madlūl) insofar as the expression indicates it. These are three ways of considering the same intelligible content.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/30?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-31.01",
+      "unit": "L.04",
+      "page": 31,
+      "title": "A merely supposable application is not enough",
+      "arabic": "قوله « فرض صدقه على كثيرين » : الفرض هاهنا بمعنى تجويز العقل لا التقدير . فإنه لا يستحيل تقدير صدق الجزئي على كثيرين .",
+      "english": "On 'supposing its application to many': here 'supposition' means that the intellect judges such an application possible, not merely that someone imagines or posits it. One can imagine applying a genuinely particular concept to many things, but imagining that does not make the concept universal.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/31?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-31.02",
+      "unit": "L.04",
+      "page": 31,
+      "title": "The various ways a universal may have instances",
+      "arabic": "قوله « امتنعت أفراده » : كشريك الباري عز اسمه . قوله « أو أمكنت » : أي : لم يمتنع أفراده في الخارج فيشمل الواجب والممكن الخاص كليهما . قوله « ولم توجد » : كالعنقاء . قوله « مع إمكان الغير » : كالشمس . قوله « أو امتناعه » : كمفهوم واجب الوجود . قوله « مع التناهي » : كالكواكب السبع السيارة . قوله « أو عدمه » : كمعلومات الباري عز اسمه وكالنفس الناطقة على مذهب الحكماء .",
+      "english": "The division concerns whether the possible instances of a universal actually exist. Al-Yazdī illustrates an impossible instance by a supposed partner of God, an as-yet-uninstantiated possibility by the phoenix, a unique existing instance with others possible by the sun, and a unique instance excluding any other by the Necessary Existent. Many instances may be finite, as with the seven moving heavenly bodies of traditional astronomy, or without an assumed finite limit, as with the objects of divine knowledge. These examples illustrate the logical classification, not a modern astronomical claim.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/31?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-32.01",
+      "unit": "L.05",
+      "page": 32,
+      "title": "The four exhaustive relations between universals",
+      "arabic": "لا بد من أن يتحقق بينهما إحدى النسب الأربع : التباين الكلي والتساوي والعموم المطلق والعموم من وجه وذلك ، لأنهما إما أن لا يصدق شيء منهما على شيء من أفراد الآخر أو يصدق فعلى الأول فهما متباينان كالإنسان والحجر وعلى الثاني فإما أن لا يكون بينهما صدق كلي من جانب أصلا أو يكون فعلى الأول فهما أعم وأخص من وجه كالحيوان والأبيض وعلى الثاني فإما أن يكون الصدق الكلي من الجانبين أو من جانب واحد فعلى الأول فهما متساويان كالإنسان والناطق وعلى الثاني فهما أعم وأخص مطلقا كالحيوان والإنسان .",
+      "english": "There are only four relations between two universals: complete exclusion, coextension, absolute generality and specificity, or partial overlap. If neither concept applies to any instance of the other, they are disjoint, like human and stone. If they overlap but neither includes all instances of the other, they are relatively general and specific, like animal and white. If each applies to all instances of the other, they are coextensive, like human and rational. Otherwise one applies to everything covered by the other, but not conversely: animal is more general than human.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/32?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-32.02",
+      "unit": "L.05",
+      "page": 32,
+      "title": "How to test the four relations propositionally",
+      "arabic": "فمرجع التساوي إلى موجبتين كليتين نحو كل إنسان ناطق وكل ناطق إنسان ومرجع التباين إلى سالبتين كليتين نحو لا شيء من الإنسان بحجر ولا شيء من الحجر بإنسان . ومرجع العموم والخصوص مطلقا إلى موجبة كلية موضوعها الأخص ومحمولها الأعم وسالبة جزئية موضوعها الأعم ومحمولها الأخص نحو كل إنسان حيوان وبعض الحيوان ليس بإنسان . ومرجع العموم من وجه إلى موجبة جزئية وسالبتين جزئيتين نحو بعض الحيوان أبيض وبعضه ليس بأبيض وبعض الأبيض ليس بحيوان .",
+      "english": "These relations can be recognised from proposition types. Coextension yields two universal affirmatives: every human is rational, and every rational being is human. Exclusion yields universal negatives in both directions. Absolute inclusion combines a universal affirmative from the narrower concept to the wider and a particular negative in the reverse direction. Partial overlap requires a particular affirmative showing an instance in common and two particular negatives showing each concept also applies outside the other.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/32?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-33.01",
+      "unit": "L.05",
+      "page": 33,
+      "title": "Contradictories invert absolute inclusion",
+      "arabic": "قوله « ونقيضاهما بالعكس » : أي : نقيضا الأعم والأخص مطلقا أعم وأخص مطلقا لكن بعكس العينين فنقيض الأعم أخص ونقيض الأخص أعم بمعنى : أن كلما صدق عليه نقيض الأعم صدق عليه نقيض الأخص وليس كلما صدق عليه نقيض الأخص صدق عليه نقيض الأعم .",
+      "english": "On 'their contradictories in reverse': negating two terms standing in absolute inclusion reverses their direction of generality. Whatever is not an animal is certainly not a human, but something that is not human may nevertheless be an animal. Thus the contradictory of the wider term is narrower than the contradictory of the narrower term.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/33?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-34.01",
+      "unit": "L.05",
+      "page": 34,
+      "title": "What partial exclusion among contradictories permits",
+      "arabic": "ثم إن الأمرين اللذين بينهما عموم من وجه فقد يكون بين نقيضيهما أيضا عموم من وجه كالحيوان والأبيض فإن بين نقيضيهما وهما اللاحيوان واللاأبيض أيضا عموما من وجه وقد يكون بين نقيضيهما تباين كلي كالحيوان واللاإنسان فإن بينهما عموما من وجه وبين نقيضيهما وهما اللاحيوان والإنسان مباينة كلية فلهذا قالوا : إن بين نقيضي الأعم والأخص من وجه تباينا جزئيا لا العموم والخصوص من وجه فقط ولا التباين الكلي فقط .",
+      "english": "When two universals overlap partially, the relation between their contradictories is not fixed more narrowly than partial exclusion. For example, animal and white overlap partially, and their respective negations may also overlap partially. But animal and nonhuman likewise overlap partially, while their negations—nonanimal and human—are wholly disjoint. That is why the rule is stated in the weaker but reliable form 'partial exclusion' rather than always predicting partial overlap.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/34?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-35.01",
+      "unit": "L.05",
+      "page": 35,
+      "title": "Real versus relative particularity",
+      "arabic": "قوله « وقد يقال » : يعني : أن لفظ الجزئي كما يطلق على المفهوم الذي يمتنع أن يجوز صدقه على كثيرين كذلك يطلق على الأخص من شيء وعلى الأول يقيد بقيد الحقيقي وعلى الثاني بالإضافي ، أو الجزئي بالمعنى الثاني أعم منه بالمعنى الأول إذ كل جزئي حقيقي فهو يندرج تحت مفهوم كلي عام وأقله المفهوم والشيء والأمر ولا عكس إذ الجزئي الإضافي قد يكون كليا كالإنسان بالنسبة إلى الحيوان .",
+      "english": "The word 'particular' has two uses. A real particular (juzʾī ḥaqīqī) is a concept that cannot apply to many. A relative particular (juzʾī iḍāfī) is merely narrower than some other concept. The second use is broader: 'human' is a relative particular when compared with 'animal', although 'human' is itself a universal. These senses must not be confused.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/35?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-36.01",
+      "unit": "L.06",
+      "page": 36,
+      "title": "Why there are exactly five predicables",
+      "arabic": "ثم الكلي إذا نسب إلى أفراده المحققة في نفس الأمر فإما أن يكون عين حقيقة تلك الأفراد وهو النوع أو جزء حقيقتها فإن كان تمام المشترك بين شيء منها وبين بعض آخر فهو الجنس وإلا فهو الفصل ويقال لهذه الثلاثة ذاتيات أو خارجا عنها ويقال له العرض فإما أن يختص بأفراد حقيقة واحدة أو لا يختص فالأول هو الخاصة والثاني هو العرض العام . فهذا دليل انحصار الكليات في الخمس .",
+      "english": "The five predicables arise by an exhaustive division. A universal considered in relation to its real instances either states their entire essence (species), constitutes part of that essence, or lies outside it. An essential constituent shared with things of different species is a genus; a constituent differentiating the relevant kind is a differentia. These three are essential predicables. An extrinsic predicate is either proper to one kind (proprium) or common across different kinds (general accident). Thus species, genus, differentia, proprium and general accident exhaust these alternatives.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/36?lang=ar",
+      "attribution": "Yazdī main commentary; later printed footnotes excluded"
+    },
+    {
+      "id": "YZ-37.01",
+      "unit": "L.06",
+      "page": 37,
+      "title": "Near and remote genus in a 'What is it?' inquiry",
+      "arabic": "فالجنس لا بد أن يقع جوابا عن الماهية وعن بعض الحقائق المخالفة لها المشاركة إياها في ذلك الجنس ، فإن كان مع ذلك جوابا عن الماهية وعن كل واحدة من الماهيات المختلفة المشاركة لها في ذلك الجنس فالجنس قريب كالحيوان حيث يقع جوابا للسؤال عن الإنسان وعن كل ما يشاركه في الماهية الحيوانية وإن لم يقع جوابا عن الماهية وعن كل ما يشاركها في ذلك الجنس فبعيد كالجسم حيث يقع جوابا عن السؤال بالإنسان والحجر والفرس ولا يقع جوابا عن السؤال بالإنسان والشجر والفرس مثلا .",
+      "english": "A genus supplies the common essential answer to 'What is it?' asked of things differing in species. A proximate genus gives the shared essential answer for the subject and all the nearest distinct kinds that share its genus—'animal' for human and other animals. A remote genus is more general and does not always provide the complete relevant common essence for every selection of kinds: 'body' may answer a question grouping humans, horses and stones, but it is not the nearest common essence when an alternative comparison brings in living plants. The distinction depends on the precise range of things being compared.",
+      "sourceUrl": "https://ablibrary.net/book_content/b/12170/37?lang=ar",
       "attribution": "Yazdī main commentary; later printed footnotes excluded"
     }
   ]
