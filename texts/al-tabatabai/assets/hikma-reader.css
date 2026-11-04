@@ -21,3 +21,22 @@
 /* Three-stage logic-to-metaphysics reading sequence. */
 .hikma-part-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:600px){.hikma-part-tabs{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.hikma-part-tabs button{padding:9px 6px;min-width:0}.hikma-part-tabs button strong{font-size:11px;line-height:1.35}.hikma-part-tabs button [lang=ar]{font-size:16px}.hikma-part-tabs .part-number{font-size:8px}}
+
+/* The reader is text-first. Source material is accessible only as unobtrusive footnotes. */
+.cover-description,.coverage,.edition-badge,.column-label,.passage-bottom,.passage-label,
+#sources-open,#edition-open,.editorial-notes,.personal-note-preview{display:none!important}
+.parallel-text.is-arabic-only{display:block}
+.parallel-text.is-arabic-only .arabic-panel{width:100%;max-width:100%}
+html[data-language="english"] .parallel-text.is-arabic-only .arabic-panel{display:block!important}
+.footnote-details{border-top:1px solid var(--line);margin:16px 0 0;padding:8px 0 3px;color:var(--muted);font:11px/1.7 Arial,Helvetica,sans-serif}
+.footnote-summary{cursor:pointer;display:inline-block;color:var(--accent);font:11px/1.5 Arial,Helvetica,sans-serif;list-style:none}
+.footnote-summary::-webkit-details-marker{display:none}
+.footnote-summary:before{content:"✦";font-size:9px;margin-right:7px}
+.footnote-details[open] .footnote-summary{margin-bottom:10px}
+.footnote-list{margin:4px 0 0 23px;padding:0;max-width:750px}
+.footnote{padding:0 0 8px 2px;overflow-wrap:anywhere}
+.footnote a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+.footnote-references{display:inline-flex;gap:3px;direction:ltr;white-space:nowrap;vertical-align:super;margin-left:5px;font:9px Arial,sans-serif}
+.footnote-reference{color:var(--accent);text-decoration:none}
+.footnote-reference:hover,.footnote-reference:focus-visible{text-decoration:underline}
+@media(max-width:650px){.footnote-details{font-size:11px}.footnote-summary{font-size:11px}}
