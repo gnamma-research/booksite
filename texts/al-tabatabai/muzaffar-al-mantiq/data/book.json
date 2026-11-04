@@ -1,0 +1,241 @@
+{
+  "id": "muzaffar-al-mantiq",
+  "title": "al-Manṭiq",
+  "arabicTitle": "المنطق",
+  "author": "Shaykh Muḥammad Riḍā al-Muẓaffar (d. 1964)",
+  "description": "First stage of the linked philosophy reading sequence. An original Arabic primary-source scan is available via Princeton/Arabic Collections Online. This reader contains an editorial study map and short source-checked translation excerpts; a complete new English translation is not yet present.",
+  "status": "original-guide-selected-primary-excerpts",
+  "editorialStatus": {
+    "translationComplete": false,
+    "primaryTextCompleteness": "The original Arabic work is available via the linked institutional public-domain scan, not completely reproduced in this HTML reader.",
+    "translationMethod": "Original editorial summaries and short independent English renderings; full translation still to be completed."
+  },
+  "sources": [
+    {
+      "id": "aco-muzaffar",
+      "title": "al-Manṭiq — Muẓaffar, Najaf 1968, Princeton / NYU Arabic Collections Online",
+      "url": "https://sites.dlib.nyu.edu/viewer/books/princeton_aco000780/display?lang=ar",
+      "description": "Institutional scan with low-resolution PDF download, identified as public domain by NYU."
+    },
+    {
+      "id": "najaf",
+      "title": "Full Arabic digital text, Najaf Desert Library",
+      "url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82/v/1",
+      "description": "Read the entire Arabic text. Pagination of this digital edition differs from the 1968 scan."
+    },
+    {
+      "id": "rafed",
+      "title": "al-Manṭiq, Rafed digital edition",
+      "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook",
+      "description": "Text witness for short primary excerpts."
+    }
+  ],
+  "stages": [
+    {
+      "id": "0",
+      "title": "Begin here",
+      "arabicTitle": "مقدمة القراءة"
+    },
+    {
+      "id": "I",
+      "title": "Knowledge and conceptions",
+      "arabicTitle": "العلم والتصور"
+    },
+    {
+      "id": "II",
+      "title": "Words and significations",
+      "arabicTitle": "مباحث الألفاظ"
+    },
+    {
+      "id": "III",
+      "title": "Universals and the five predicables",
+      "arabicTitle": "الكلي والكليات الخمس"
+    },
+    {
+      "id": "IV",
+      "title": "Definition and explanation",
+      "arabicTitle": "المعرّف"
+    },
+    {
+      "id": "V",
+      "title": "Propositions, modalities, and judgments",
+      "arabicTitle": "القضايا"
+    },
+    {
+      "id": "VI",
+      "title": "Inference and syllogisms",
+      "arabicTitle": "الاستدلال"
+    },
+    {
+      "id": "VII",
+      "title": "Demonstration and the five arts",
+      "arabicTitle": "الصناعات الخمس"
+    }
+  ],
+  "units": [
+    {
+      "id": "M-GUIDE",
+      "stage": "0",
+      "chapter": 0,
+      "title": "How this book prepares you for Bidāya and Nihāya",
+      "arabicTitle": "المنطق قبل الحكمة",
+      "arabic": "هذا دليل تحريري لقراءة كتاب المنطق، وليس ترجمة كاملة للنص. يُرجع إلى الأصل العربي في الروابط المذكورة، ويفصل بين نص المؤلف والتعليق.",
+      "english": "Muẓaffar’s al-Manṭiq is the natural preparation for Ṭabāṭabāʾī’s two metaphysics books. First learn conception and assent; then the five predicables and definition; then predication, modal propositions, syllogism, and demonstration. In the shared reader, choose Book 1 to study logic, Book 2 for Bidāya, and Book 3 for Nihāya. The institutional Arabic scan contains the full original; the English units here are original editorial reading guides and selected short translations, not yet a complete translation.",
+      "status": "editorial-guide",
+      "notes": [
+        {
+          "type": "source",
+          "text": "Original Arabic 1968 Najaf edition: Princeton / NYU ACO public-domain scan. A complete new English translation has not yet been written."
+        }
+      ]
+    },
+    {
+      "id": "M-I",
+      "stage": "I",
+      "chapter": 1,
+      "title": "Conception, assent, and self-evident knowledge",
+      "arabicTitle": "التصور والتصديق والضروري",
+      "arabic": "العلم ضروري ونظري",
+      "english": "Knowledge is divided into what is immediate or self-evident and what is reached through inquiry. This is an original translation of the heading, not the entire chapter. Distinguish conceiving a subject from assenting to a proposition: definition primarily addresses an unknown conception, while inference establishes an unknown judgment.",
+      "status": "selected-short-excerpt-and-editorial-guide",
+      "source": {
+        "edition": "al-Manṭiq · original Arabic digital text",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&type=c_fbook"
+      },
+      "notes": [
+        {
+          "type": "cross-reference",
+          "text": "Read Bidāya I.1: what it means for the concept of existence to be self-evident."
+        }
+      ]
+    },
+    {
+      "id": "M-II",
+      "stage": "II",
+      "chapter": 1,
+      "title": "Meaning, signs, and expressions",
+      "arabicTitle": "الألفاظ والدلالة",
+      "arabic": "الدلالة اللفظية",
+      "english": "Verbal signification. The corresponding chapter distinguishes how a linguistic expression signifies its meaning, its part, or a necessary concomitant. These matters are logically preparatory: they do not establish the existential reality of the thing signified.",
+      "status": "selected-short-excerpt-and-editorial-guide",
+      "source": {
+        "edition": "al-Manṭiq · digital text",
+        "url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82/v/1"
+      }
+    },
+    {
+      "id": "M-III",
+      "stage": "III",
+      "chapter": 1,
+      "title": "Genus, differentia, species, and predication",
+      "arabicTitle": "الكليات الخمس",
+      "arabic": "النوع، الجنس، الفصل، الخاصة، العرض العام",
+      "english": "Species, genus, differentia, proper attribute, and common accident: these five logical predicables are the building blocks for the theory of definition. In metaphysics, Ṭabāṭabāʾī denies that existence itself is a genus or differentia. This selection is a terminological guide, not a translation of Muẓaffar’s complete argument.",
+      "status": "editorial-guide",
+      "source": {
+        "edition": "al-Manṭiq · contents p. 86 onwards",
+        "url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82/v/1"
+      }
+    },
+    {
+      "id": "M-IV",
+      "stage": "IV",
+      "chapter": 1,
+      "title": "What can be defined? Four forms of definition",
+      "arabicTitle": "الحد التام والناقص والرسم التام والناقص",
+      "arabic": "الحد التام، الحد الناقص، الرسم التام، الرسم الناقص",
+      "english": "Complete essential definition; incomplete essential definition; complete descriptive definition; incomplete descriptive definition. An essential definition draws on what belongs to the quiddity, whereas a description can distinguish a subject through its attributes. The concept of existence cannot be subjected to a genus–differentia definition. This is an original explanatory guide to the Arabic headings, not the complete translation.",
+      "status": "editorial-guide",
+      "source": {
+        "edition": "al-Manṭiq · pp. 115–123 in digital edition",
+        "url": "https://books.rafed.net/view/1728/page/119"
+      },
+      "notes": [
+        {
+          "type": "compare",
+          "text": "Read Bidāya I.1 and Nihāya I.2. Note that ḥadd in ḥudūd al-wujūd means delimitation, not automatically genus–differentia definition."
+        }
+      ]
+    },
+    {
+      "id": "M-V",
+      "stage": "V",
+      "chapter": 1,
+      "title": "Predication and necessity, possibility, impossibility",
+      "arabicTitle": "الحمل والجهات",
+      "arabic": "الحمل الذاتي والشائع، الوجوب والإمكان والامتناع",
+      "english": "Primary versus common predication must be kept distinct, especially when classifying a concept as what it means or considering its instance. Necessity, possibility, and impossibility also become modal determinations of propositions. This unit is a roadmap, not a complete translation.",
+      "status": "editorial-guide",
+      "source": {
+        "edition": "al-Manṭiq · digital contents pp. 97–100, 169–179",
+        "url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82/v/1"
+      }
+    },
+    {
+      "id": "M-VI",
+      "stage": "VI",
+      "chapter": 1,
+      "title": "Syllogistic inference",
+      "arabicTitle": "القياس والاستدلال",
+      "arabic": "القياس الاقتراني والقياس الاستثنائي",
+      "english": "The categorical and hypothetical forms of inference show how a conclusion is warranted from prior propositions. This remains distinct from explaining what a term means and from the demonstration that a subject exists.",
+      "status": "editorial-guide",
+      "source": {
+        "edition": "al-Manṭiq · digital contents pp. 232–317",
+        "url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82/v/1"
+      }
+    },
+    {
+      "id": "M-VII",
+      "stage": "VII",
+      "chapter": 1,
+      "title": "Demonstration and essential predication",
+      "arabicTitle": "البرهان والذاتي",
+      "arabic": "البرهان اللمي والإني",
+      "english": "Demonstration through the reason why and demonstration from a sign or effect are crucial to the later philosophical theory of science. Muẓaffar also distinguishes ‘essential’ in demonstrative science from the five-predicables sense. These are reading pointers, not the full authorial text.",
+      "status": "editorial-guide",
+      "source": {
+        "edition": "al-Manṭiq · digital contents pp. 360–379",
+        "url": "https://najafdesertlibrary.com/book/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82/v/1"
+      },
+      "notes": [
+        {
+          "type": "further reading",
+          "text": "Advanced comparison: Ibn Sīnā, al-Shifāʾ, al-Burhān; see the logic dossier."
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "taṣawwur",
+      "arabic": "تصوّر",
+      "english": "Conception",
+      "definition": "An intelligible content considered without necessarily assenting to a judgment."
+    },
+    {
+      "term": "taṣdīq",
+      "arabic": "تصديق",
+      "english": "Assent",
+      "definition": "Cognition involving judgment that a proposition is true."
+    },
+    {
+      "term": "ḥadd",
+      "arabic": "حدّ",
+      "english": "Essential definition",
+      "definition": "A specification of essential constituents; not to be confused with delimitation (ḥadd) in ontology."
+    },
+    {
+      "term": "rasm",
+      "arabic": "رسم",
+      "english": "Descriptive definition",
+      "definition": "Description using nonessential but distinctive attributes."
+    },
+    {
+      "term": "burhān",
+      "arabic": "برهان",
+      "english": "Demonstration",
+      "definition": "A rigorous inference yielding scientific certainty on the basis of appropriate premises."
+    }
+  ]
+}
