@@ -31,7 +31,7 @@ html[data-language="english"] .parallel-text.is-arabic-only .arabic-panel{displa
 .footnote-details{border-top:1px solid var(--line);margin:16px 0 0;padding:8px 0 3px;color:var(--muted);font:11px/1.7 Arial,Helvetica,sans-serif}
 .footnote-summary{cursor:pointer;display:inline-block;color:var(--accent);font:11px/1.5 Arial,Helvetica,sans-serif;list-style:none}
 .footnote-summary::-webkit-details-marker{display:none}
-.footnote-summary:before{content:"✦";font-size:9px;margin-right:7px}
+.footnote-summary:before{content:none}
 .footnote-details[open] .footnote-summary{margin-bottom:10px}
 .footnote-list{margin:4px 0 0 23px;padding:0;max-width:750px}
 .footnote{padding:0 0 8px 2px;overflow-wrap:anywhere}
