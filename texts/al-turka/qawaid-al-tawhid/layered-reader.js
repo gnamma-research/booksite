@@ -138,6 +138,8 @@ window.addEventListener('resize',sync);
 window.GnammaQawaidReader=Object.freeze({
  setTheme(theme){if(!['parchment','horizon','night'].includes(theme))return;state.theme=theme;sync();persist();},
  setFont(value){state.font=clamp(value,.82,1.45,state.font);sync();persist();},
+ setLeading(value){state.leading=clamp(value,1.55,2.15,state.leading);sync();persist();},
+ setWidth(value){state.width=clamp(value,560,1300,state.width);sync();persist();},
  setEditorialNotes(visible){state.notes=Boolean(visible);sync();persist();},
  activePassage(){return units[state.index].id;},
  activeLayer(){return state.layer;}
