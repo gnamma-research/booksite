@@ -2,7 +2,7 @@ name: Qawaid scholarly UI QA
 on:
   push:
     branches: [master]
-    paths: ['.github/workflows/qawaid-study-ui-qa.yml','texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py','texts/al-turka/qawaid-al-tawhid/qawaid-study.js','texts/al-turka/qawaid-al-tawhid/qawaid-study.css', 'texts/al-turka/qawaid-al-tawhid/data/primary-reference-register.js', 'texts/al-turka/qawaid-al-tawhid/data/linked-lexicon.js', 'texts/al-turka/qawaid-al-tawhid/qawaid-historical-lexicon.js']
+    paths: ['.github/workflows/qawaid-study-ui-qa.yml','texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py','texts/al-turka/qawaid-al-tawhid/qawaid-study.js','texts/al-turka/qawaid-al-tawhid/qawaid-study.css', 'texts/al-turka/qawaid-al-tawhid/data/primary-reference-register.js', 'texts/al-turka/qawaid-al-tawhid/data/linked-lexicon.js', 'texts/al-turka/qawaid-al-tawhid/qawaid-historical-lexicon.js', 'texts/al-turka/qawaid-al-tawhid/qawaid-inline-references.js']
   workflow_dispatch:
 permissions:
   contents: read
