@@ -168,7 +168,14 @@
     if (!authorUnits && guides) coverage = `Reading guide · ${guides} editorial ${guides === 1 ? 'section' : 'sections'} · bilingual text not yet available`;
     else if (!state.units.length) coverage = 'The reading edition is being prepared';
     else coverage = `${originals} Arabic ${originals === 1 ? 'section' : 'sections'} · ${translated} of ${authorUnits} ${authorUnits === 1 ? 'section' : 'sections'} with English${state.units.some(unit => /draft|working|provisional|unreviewed/.test(unit.status.toLowerCase())) ? ' · working translation' : ''}`;
-    if (bookId === 'combined') coverage = 'I · al-Manṭiq: selected English · II · Bidāya: 110 Arabic chapters, English in progress · III · Nihāya: 130 translated chapters';
+    if (bookId === 'combined') {
+      const byPart = part => state.units.filter(unit => unit.part === part && !isGuide(unit));
+      const entry = (part, label) => {
+        const units = byPart(part), translated = units.filter(hasEnglish).length;
+        return label + ': ' + translated + '/' + units.length + ' reading passages in working English';
+      };
+      coverage = [entry('M', 'I · al-Manṭiq selections'), entry('B', 'II · Bidāya'), entry('N', 'III · Nihāya')].join(' · ');
+    }
     $('coverage-text').textContent = coverage;
     if (!authorUnits && guides) {
       document.querySelector('.edition-badge').textContent = 'READING GUIDE';
@@ -568,12 +575,12 @@
     const n=prep(nihaya, 'N', 'Nihāyat al-Ḥikma');
     return {id:'hikma-combined',title:'Logic, Bidāyat & Nihāyat al-Ḥikma',
       arabicTitle:'المنطق · بداية الحكمة · نهاية الحكمة',author:'Muḥammad Riḍā al-Muẓaffar · Muḥammad Ḥusayn al-Ṭabāṭabāʾī',
-      description:'Three books in one reader. Part I: al-Muẓaffar’s logic, with a linked public-domain Arabic scan and introductory English selections. Part II: Bidāya, full Arabic and English translation under way. Part III: Nihāya, complete Arabic and working English translation.',
-      status:'working-translation-bidaya-incomplete-nihaya-complete',
+      description:'Three books in one reader. Part I: selected passages from al-Muẓaffar’s logic, with the full Arabic source linked. Part II: complete authorial Arabic and full original working English of Bidāyat al-Ḥikma. Part III: complete authorial Arabic and full working English of Nihāyat al-Ḥikma. All English awaits independent expert review.',
+      status:'complete-working-translation-bidaya-and-nihaya-muzaffar-selections',
       stages:[...m.stages,...b.stages,...n.stages],units:[...m.units,...b.units,...n.units],
       sources:[...(muzaffar.sources||[]),...(bidaya.sources||[]),...(nihaya.sources||[])],
       glossary:[...(muzaffar.glossary||[]).map(entry => ({...entry,bookLabel:'al-Manṭiq'})),...(bidaya.glossary||[]).map(entry => ({...entry,bookLabel:'Bidāya'})),...(nihaya.glossary||[]).map(entry => ({...entry,bookLabel:'Nihāya'}))],
-      editorialStatus:{translationMethod:'The three books retain separate translation statuses. Muẓaffar has selected translations only; the whole Arabic source is linked. Nihāya is a complete working translation pending expert review; Bidāya has its entire original Arabic text, with newly translated opening chapters and the remaining chapters marked pending.',collation:'The user-uploaded 325-page Arabic–English PDF is the Bidāya transcription witness; original Arabic text requires further character-by-character proofreading.',pagination:'Bidāya page numbers follow the supplied bilingual PDF. Nihāya follows the previously recorded 1417 AH Qum edition.'}};
+      editorialStatus:{translationMethod:'Separate statuses are retained. Muẓaffar contains introductory and definition selections, not its entire Arabic or English text. Bidāya and Nihāya both have complete authorial Arabic and full working English reading coverage; textual collation, comparison with manuscript witnesses and independent specialist review are outstanding.',collation:'The user-uploaded 325-page Arabic–English PDF is the Bidāya transcription witness; original Arabic text requires further character-by-character proofreading.',pagination:'Bidāya page numbers follow the supplied bilingual PDF. Nihāya follows the previously recorded 1417 AH Qum edition.'}};
   }
   async function loadBook() {
     $('begin-reading').disabled = true;
