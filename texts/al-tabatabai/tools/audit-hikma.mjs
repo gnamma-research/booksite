@@ -50,11 +50,28 @@ for(const [name,file] of books){
     if(entry.passageId)check(ids.has(entry.passageId),name+': broken dictionary target '+entry.passageId);
   }
   if(name==='Bidāya'){
-    check(units.filter(u=>/^B-(I|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII)-\d\d$/.test(u.id)).length===110,'Bidāya must preserve 110 authorial chapters');
+    const numbered=units.filter(u=>/^B-(?:I|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII)-\d{2}$/.test(u.id));
+    check(units.length===111,'Bidāya must contain 111 authorial reading units');
+    check(numbered.length===110,'Bidāya must retain 110 numbered chapters');
+    check(translated===111,'Bidāya must have working English in all authorial units');
+    check(data.editorialStatus?.translationComplete===true,'Bidāya working translation completion metadata must be true');
+    check(data.editorialStatus?.englishTranslatedChapters===110,'Bidāya translated chapters must total 110');
+    check(data.editorialStatus?.englishTranslatedIntroductions===1,'Bidāya translated introduction must total one');
+    check(stages.filter(x=>String(x.id)!=='0').length===12,'Bidāya must contain twelve numbered stages');
     for(const u of units){
       if(/[RT5]/.test(u.arabic||''))failures.push('Bidāya: imported OCR placeholder in '+u.id);
-      if(/CHAPTER\s+[A-Z]+:/.test(u.arabic||''))failures.push('Bidāya: injected lecture note in '+u.id);
+      if(/CHAPTER\s+[A-Z]+:/.test(u.arabic||''))failures.push('Bidāya: injected source heading in '+u.id);
+      if(u.arabic?.trim()&&u.english?.trim()&&u.english.length/u.arabic.length<0.55)
+        warnings.push('Bidāya: unusually short translation requires review in '+u.id);
     }
+  }
+  if(name==='Nihāya'){
+    check(units.length===136,'Nihāya should preserve 136 authorial reading units');
+    check(translated===136,'Nihāya should have working English in all 136 units');
+  }
+  if(name==='Muẓaffar'){
+    check(data.editorialStatus?.translationComplete!==true,'Muẓaffar selections must not be called a complete edition');
+    check(units.some(u=>u.id==='M-P-01'),'Muẓaffar introduction must precede its Book III selections');
   }
   warn(arabic>0,name+': Arabic source missing');
   warn(translated===units.length,name+': English is incomplete ('+translated+'/'+units.length+')');
