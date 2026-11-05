@@ -7,8 +7,8 @@
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
-    "translatedSection": "Introduction to logic (in progress), and selected portions of Book III on definition; these remain separate authorial sections",
-    "translatedPassages": 18,
+    "translatedSection": "Authorial introduction (11 passages covering pp. 8–25) and Book III selections (14 passages).",
+    "translatedPassages": 25,
     "sourceBasis": "Original Arabic from Muẓaffar's al-Manṭiq, early printed witness cross-checked against the Dār al-Taʿāruf text hosted by Rafed.",
     "englishComparator": "Carney's 75-page English PDF supplied by the user ends without the complete Book III section on definitions. English here is independently translated from Arabic.",
     "editionNotice": "A fresh working translation; Arabic selection is not a claim that the entire al-Manṭiq has been translated."
@@ -145,6 +145,161 @@
         "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Arabic text, Dār al-Taʿāruf (1402 AH)",
         "page": "12–13",
         "url": "https://lib.rafed.net/view.php?b_id=1604&page=13&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-05",
+      "chapter": 5,
+      "title": "Conception and assent",
+      "arabicTitle": "التصور والتصديق",
+      "arabic": "إذا رسمت مثلّثاً تحدث في ذهنك صورة له، هي علمك بهذا المثلث، ويسمى هذا العلم (بالتصور). وهو تصور مجرد لا يستتبع جزما واعتقادا. وإذا تنبهت إلى زوايا المثلث تحدث لها أيضا صورة في ذهنك. وهي أيضاً من (التصور المجرد). وإذا رسمت خطا أفقيا وفوقه خطا عموديا مقاطعا له تحدث زاويتان قائمتان، فتنتقش صورة الخطين والزاويتين في ذهنك. وهي من (التصور المجرد) أيضاً.\n\nوإذا أردت أن تقارن بين القائمتين ومجموع زوايا المثلث، فتسأل في نفسك هل هما متساويان؟ وتشك في تساويهما، تحدث عندك صورة لنسبة التساوي بينهما وهي من (التصور المجرد) أيضا.\n\nفإذا برهنت على تساويهما تحصل لك حالة جديدة مغايرة للحالات السابقة. وهي إدراكك لمطابقة النسبة للواقع المستلزم لحكم النفس وإذعانها وتصديقها بالمطابقة. وهذه الحالة أي (صورة المطابقة للواقع التي تعقلتها وأدركتها) هي التي تسمى (بالتصديق)، لأنها إدراك يستلزم تصديق النفس وإذعانها، تسمية للشيء باسم لازمه الذي لا ينفك عنه.\n\nإذن، إدراك زوايا المثلث، وإدراك الزاويتين القائمتين، وإدراك نسبة التساوي بينهما كلها (تصورات مجردة) لا يتبعها حكم وتصديق. أما إدراك أن هذا التساوي صحيح واقع مطابق للحقيقة في نفس الأمر فهو (تصديق).\n\nوكذلك إذا أدركت أن النسبة في الخبر غير مطابقة للواقع، فهذا الإدراك (تصديق).\n\nتنبيه: إذا لاحظت ما مضى يظهر لك أن التصور والإدراك والعلم كلها ألفاظ لمعنى واحد، وهو: حضور صور الأشياء عند العقل. فالتصديق أيضاً تصور ولكنه تصور يستتبع الحكم وقناعة النفس وتصديقها. وإنما لأجل التمييز بين التصور المجرد أي غير المستتبع للحكم، وبين التصور المستتبع له، سمي الأول (تصورا) لأنه تصور محض ساذج مجرد، وسمي الثاني (تصديقاً) لأنه يستتبع الحكم والتصديق.\n\nأما إذا قيل: (التصور المطلق) فإنما يراد به ما يساوق العلم والإدراك فيعم كلا التصورين: التصور المجرد، والتصور المستتبع للحكم (التصديق).",
+      "english": "Draw a triangle: its form comes to be present in the mind. This cognition is called *conception* (taṣawwur), considered here simply as an apprehension without affirmation or judgment. The same is true when you attend to its angles, or picture a horizontal line intersected by a perpendicular and thereby picture two right angles.\n\nNow compare those two right angles with the sum of the triangle's angles. At first you may ask whether they are equal and remain uncertain. Even apprehending the *relation of equality* between them at this point is still mere conception.\n\nOnce you demonstrate their equality, however, a further cognitive state arises: you apprehend that the relation accords with reality, and this apprehension entails the soul's judgment and assent. This is called *assent* (taṣdīq), the cognition being named by its inseparable concomitant, the act of affirming that the relation obtains.\n\nThus the triangle's angles, the two right angles, and their proposed equality can all be conceived without judging. Assent occurs when the mind apprehends the relation as actually corresponding to reality. Recognising a proposition as *not* corresponding to reality is also a kind of assent—namely, a negative judgment.\n\nNotice the qualification. In the broadest usage, conception, apprehension, and knowledge can all refer to the presence of a form to the intellect. Assent itself presupposes such an apprehension; but in the restricted contrast here, *conception* denotes apprehension without judgment, and *assent* denotes apprehension that entails judgment. Consequently, “conception” in the unrestricted sense may comprehend both.",
+      "notes": [
+        {
+          "type": "Authorial context",
+          "text": "Muẓaffar's accompanying note relates this account of taṣdīq to Avicenna's discussion in the Ishārāt and to Ṣadr al-Dīn al-Shīrāzī's independent treatise on conception and assent. He does not simply identify taṣdīq with an extra pictorial representation."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "13–15",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=14&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-06",
+      "chapter": 6,
+      "title": "What can be conceived, and what can be assented to?",
+      "arabicTitle": "بماذا يتعلق التصديق والتصور؟",
+      "arabic": "ليس للتصديق إلا مورد واحد يتعلق به، وهو النسبة في الجملة الخبرية عند الحكم والإذعان بمطابقتها للواقع أو عدم مطابقتها. وأما التصور فيتعلق بأحد أربعة أمور:\n\n١ ـ (المفرد) من اسم، وفعل «كلمة»، وحرف «أداة».\n\n٢ ـ (النسبة في الخبر) عند الشك فيها أو توهمها، حيث لا تصديق، كتصورنا لنسبة السكنى إلى المريخ ـ مثلا ـ عندما يقال: «المريخ مسكون».\n\n٣ ـ (النسبة في الإنشاء) من أمر ونهي وتمن واستفهام إلى آخر الأمور الإنشائية التي لا واقع لها وراء الكلام، فلا مطابقة فيها للواقع خارج الكلام، فلا تصديق ولا إذعان.\n\n٤ ـ (المركب الناقص)، كالمضاف والمضاف إليه، والشبيه بالمضاف، والموصول وصلته، والصفة والموصوف، وكل واحد من طرفي الجملة الشرطية، إلى آخر المركبات الناقصة التي لا يستتبع تصورها تصديقاً وإذعاناً.\n\nففي قوله تعالى: «وَإِنْ تَعُدُّوا نِعْمَةَ اللَّهِ لاَ تُحْصُوهَا»، الشرط (تعدوا نعمة الله) معلوم تصوري والجزاء (لا تحصوها) معلوم تصوري أيضاً. وإنما كانا معلومين تصوريين لأنهما وقعا كذلك شرطاً وجزاءً في الجملة الشرطية، وإلا ففي أنفسهما لولاها كل منهما معلوم تصديقي. وقوله (نعمة الله) معلوم تصوري مضاف. ومجموع الجملة معلوم تصديقي.",
+      "english": "Assent has only one immediate object: the relation expressed in an assertoric sentence, insofar as the mind judges that relation to correspond—or not correspond—to reality.\n\nConception, by contrast, can concern four things. First, a single expression: a noun, verb, or particle. Second, the relation asserted in a statement when we are uncertain of it or merely entertain it, as when we consider the possibility that Mars is inhabited without affirming it. Third, the relation expressed by an injunction, prohibition, wish, question, or other non-assertoric utterance; as such, these are not descriptions to be affirmed or denied as corresponding to reality. Fourth, an incomplete expression, such as a genitive phrase, a noun and its adjective, a relative clause, or one member of a conditional construction.\n\nTake the Qurʾānic conditional, “If you count God's blessings, you cannot enumerate them.” Each of its components is apprehended as a component of the conditional, rather than as a separately asserted proposition. Likewise, “God's blessings” is an incomplete genitive expression. The conditional statement taken as a whole, however, is something to which assent may be given.\n\nThe logical distinction here concerns the *role in which* an expression is apprehended, not merely whether it contains words capable of forming a statement outside that construction.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "Muẓaffar uses ‘maʿlūm taṣawwurī’ for a known content apprehended without assent. The conditional's antecedent and consequent do not become independently asserted merely by occurring within a larger proposition."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "15–16",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=16&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-07",
+      "chapter": 7,
+      "title": "Certainty, opinion, doubt, and counter-opinion",
+      "arabicTitle": "أقسام التصديق",
+      "arabic": "ينقسم التصديق إلى قسمين: يقين وظن، لأن التصديق هو ترجيح أحد طرفي الخبر وهما الوقوع واللاوقوع سواء كان الطرف الآخر محتملاً أو لا. فإن كان هذا الترجيح مع نفي احتمال الطرف الآخر بتاً فهو (اليقين)، وإن كان مع وجود الاحتمال ضعيفاً فهو (الظن).\n\nوتوضيح ذلك: إنك إذا عرضت على نفسك خبراً من الأخبار فأنت لا تخلو عن إحدى حالات أربع: إما أنك لا تجوز إلا طرفاً واحداً منه إما وقوع الخبر أو عدم وقوعه، وإما أن تجوز الطرفين وتحتملهما معاً. والأول هو اليقين. والثاني وهو تجويز الطرفين له ثلاث صور، لأنه لا يخلو إما أن يتساوى الطرفان في الاحتمال أو يترجح أحدهما على الآخر: فإن تساوى الطرفان فهو المسمى (بالشك)، وإن ترجح أحدهما فإن كان الراجح مضمون الخبر ووقوعه فهو (الظن) الذي هو من أقسام التصديق. وإن كان الراجح الطرف الآخر فهو (الوهم) الذي هو من أقسام الجهل وهو عكس الظن. فتكون الحالات أربعاً، ولا خامسة لها:\n\n١ ـ (اليقين) وهو أن تصدق بمضمون الخبر ولا تحتمل كذبه أو تصدق بعدمه ولا تحتمل صدقه، أي أنك تصدق به على نحو الجزم وهو أعلى قسمي التصديق.\n\n٢ ـ (الظن) وهو أن ترجح مضمون الخبر أو عدمه مع تجويز الطرف الآخر، وهو أدنى قسمي التصديق.\n\n٣ ـ (الوهم) وهو أن تحتمل مضمون الخبر أو عدمه مع ترجيح الطرف الآخر.\n\n٤ ـ (الشك) وهو أن يتساوى احتمال الوقوع واحتمال العدم.\n\nتنبيه: يعرف مما تقدم أمران: (الأول) أن الوهم والشك ليسا من أقسام التصديق بل هما من أقسام الجهل، و(الثاني) أن الظن والوهم دائماً يتعاكسان: فإنك إذا توهمت مضمون الخبر فأنت تظن بعدمه، وإذا كنت تتوهم عدمه فإنك تظن بمضمونه، فيكون الظن لأحد الطرفين توهماً للطرف الآخر.",
+      "english": "Assent is divided into *certainty* (yaqīn) and *probable opinion* (ẓann). It consists in preferring one of the two sides of a report—its obtaining or not obtaining. If the mind excludes the alternative altogether, this is certainty; if the alternative remains possible, though less likely, it is opinion.\n\nConsider any report. Either you admit only one possibility, or you regard both alternatives as possible. The first condition is certainty. The second admits three possibilities: the alternatives may be equally balanced, in which case the state is *doubt* (shakk); the content of the report may be preferred, yielding probable opinion (ẓann); or the opposite alternative may be preferred, in which case the report's content is only a weaker apprehension (wahm).\n\nThere are thus four states, not five. (1) **Certainty:** you affirm the report and rule out its falsity, or deny it and rule out its truth. (2) **Opinion:** you favor one side while admitting the other as possible. (3) **Counter-opinion:** you entertain one side while favoring its opposite. (4) **Doubt:** you judge the alternatives equally possible.\n\nTwo consequences follow. In the classificatory sense used here, doubt and the weaker opinion are not themselves assent; and probable opinion about one side is always the weaker opinion concerning the opposing side. The corresponding terms are relational to whichever side of the proposition is being considered.",
+      "notes": [
+        {
+          "type": "Terminology",
+          "text": "Wahm here denotes the weaker side of a propositional assessment; it is not simply the psychological faculty of estimation described earlier. The identical word is used in two technical contexts."
+        },
+        {
+          "type": "Authorial note",
+          "text": "The printed apparatus distinguishes a narrower sense of yaqīn: firm, factually correct assent that is not merely accepted by imitation. The chapter's initial division uses the broader sense of firm conviction."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "16–17",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=17&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-08",
+      "chapter": 8,
+      "title": "Simple and compound ignorance",
+      "arabicTitle": "الجهل وأقسامه",
+      "arabic": "ليس الجهل إلا عدم العلم ممن له الاستعداد للعلم والتمكن منه، فالجمادات والعجماوات لا نسميها جاهلة ولا عالمة، مثل العمى، فإنه عدم البصر فيمن شأنه أن يبصر، فلا يسمى الحجر أعمى. وسيأتي أن مثل هذا يسمى (عدم ملكة) ومقابله وهو العلم أو البصر يسمى (ملكة)، فيقال أن العلم والجهل متقابلان تقابل الملكة وعدمها.\n\nوالجهل على قسمين كما أن العلم على قسمين لأنه يقابل العلم فيبادله في موارده فتارةً يبادل التصور أي يكون في مورده وأخرى يبادل التصديق أي يكون في مورده، فيصح بالمناسبة أن نسمي الأول (الجهل التصوري) والثاني (الجهل التصديقي).\n\nثم أنهم يقولون أن الجهل ينقسم إلى قسمين: بسيط ومركب. وفي الحقيقة أن الجهل التصديقي خاصة هو الذي ينقسم إليهما، أما الجهل التصوري فلا يكون إلا بسيطاً كما سيتضح.\n\n١ ـ (الجهل البسيط) أن يجهل الإنسان شيئاً وهو ملتفت إلى جهله فيعلم أنه لا يعلم، كجهلنا بوجود السكان في المريخ، فإنا نجهل ذلك ونعلم بجهلنا فليس لنا إلا جهل واحد.\n\n٢ ـ (الجهل المركب) أن يجهل شيئا وهو غير ملتفت إلى أنه جاهل به بل يعتقد أنه من أهل العلم به، فلا يعلم أنه لا يعلم. ويسمون هذا مركبا لأنه يتركب من جهلين: الجهل بالواقع والجهل بهذا الجهل. ويختص هذا في مورد التصديق لأنه لا يكون إلا مع الاعتقاد.\n\nليس الجهل المركب من العلم. يزعم بعضهم دخول الجهل المركب في العلم فيجعله من أقسامه، نظراً إلى أنه يتضمن الاعتقاد والجزم وإن خالف الواقع. ولكنا إذا دققنا تعريف العلم نعرف ابتعاد هذا الزعم عن الصواب؛ لأن معنى (حضور صورة الشيء عند العقل) أن تحضر صورة نفس ذلك الشيء، أما إذا حضرت صورة غيره بزعم أنها صورته فلم تحضر الشيء بل صورة شيء آخر زاعماً أنها هي.\n\nوفي الحقيقة أن الجهل المركب يتخيل صاحبه أنه من العلم، ولكنه ليس بعلم. والاعتقاد لا يغير الحقائق، فالشبح من بعيد الذي يعتقده الناظر إنساناً وهو ليس بإنسان لا يصيره الاعتقاد إنساناً على الحقيقة.",
+      "english": "Ignorance is the absence of knowledge in a subject capable of knowing. We do not call a stone blind, because blindness is the lack of sight in something naturally fitted to see. Similarly, knowledge and ignorance are opposites in the manner of a possession and its privation.\n\nSince knowledge is distinguished into conception and assent, one may speak correspondingly of ignorance affecting conception and ignorance affecting assent. The further distinction between *simple* and *compound* ignorance, however, strictly concerns the latter: ignorance in conception can only be simple.\n\nSimple ignorance is not knowing something while recognising that one does not know it. Compound ignorance occurs when a person does not know something yet believes that he does know it. It comprises two deficiencies: ignorance of the thing and ignorance of that ignorance. Because it includes a mistaken conviction, it belongs to the sphere of assent.\n\nCompound ignorance, Muẓaffar argues, should not be counted as genuine knowledge merely because it includes a firm belief. On his definition, knowledge presents the form of the very thing known. Mistaking a different form for it does not make that form the thing itself. A distant silhouette taken for a human being does not become a human being through the observer's conviction.\n\nThe point is about the truth-condition implicit in this account of knowledge, not an assertion that everyone who holds a mistaken belief knows nothing whatever.",
+      "notes": [
+        {
+          "type": "Context",
+          "text": "This passage is useful for distinguishing doxastic firmness from knowledge: a firmly held false conviction remains compound ignorance rather than certainty in the narrower epistemic sense."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "17–18",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=18&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-09",
+      "chapter": 9,
+      "title": "Immediate and acquired knowledge",
+      "arabicTitle": "العلم ضروري ونظري — توضيح في الضروري",
+      "arabic": "ينقسم العلم بكلا قسميه التصور والتصديق إلى قسمين:\n\n١ ـ (الضروري) ويسمى أيضاً (البديهي) وهو ما لا يحتاج في حصوله إلى كسب ونظر وفكر، فيحصل بالاضطرار وبالبداهة التي هي المفاجأة والارتجال من دون توقف، كتصورنا لمفهوم الوجود والعدم ومفهوم الشيء وكتصديقنا بأن الكل أعظم من الجزء وبأن النقيضين لا يجتمعان وبأن الشمس طالعة وأن الواحد نصف الاثنين وهكذا.\n\n٢ ـ (النظري) وهو ما يحتاج حصوله إلى كسب ونظر وفكر، كتصورنا لحقيقة الروح والكهرباء، وكتصديقنا بأن الأرض ساكنة أو متحركة حول نفسها وحول الشمس ويسمى أيضاً (الكسبي).\n\n(توضيح القسمين): أن بعض الأمور يحصل العلم بها من دون إنعام نظر وفكر فيكفي في حصوله أن تتوجه النفس إلى الشيء بأحد أسباب التوجه الآتية من دون توسط عملية فكرية، وهذا هو الذي يسمى (بالضروري أو البديهي) سواء كان تصوراً أم تصديقاً.\n\nوبعضها لا يصل الإنسان إلى العلم بها بسهولة، بل لابد من إنعام النظر وإجراء عمليات عقلية ومعادلات فكرية كالمعادلات الجبرية، فيتوصل بالمعلومات عنده إلى العلم بهذه الأمور (المجهولات)، ولا يستطيع أن يتصل بالعلم بها رأساً من دون توسيط هذه المعلومات وتنظيمها على وجه صحيح.\n\nتوضيح في الضروري: إن الشيء قد يكون بديهياً ولكن يجهله الإنسان، لفقد سبب توجه النفس، فلا يجب أن يكون الإنسان عالماً بجميع البديهيات، ولا يضر ذلك ببداهة البديهي. ويمكن حصر أسباب التوجه في الأمور التالية:\n\n١ ـ (الانتباه) وهذا السبب مطّرد في جميع البديهيات، فالغافل قد يخفى عليه أوضح الواضحات.\n٢ ـ (سلامة الذهن) فإن من كان سقيم الذهن قد يشك في أظهر الأمور أو لا يفهمه.\n٣ ـ (سلامة الحواس) وهذا خاص بالبديهيات المتوقفة على الحواس الخمس.\n٤ ـ (فقدان الشبهة) فقد يؤلف الذهن دليلاً فاسداً يناقض بديهة ويغفل عما فيه من المغالطة.\n٥ ـ (عملية غير عقلية) لكثير من البديهيات، كالاستماع إلى كثيرين يمتنع تواطؤهم على الكذب في المتواترات، وكالتجربة في التجربيات.",
+      "english": "Both conception and assent are divided into two kinds. The first is *immediate* or self-evident (*ḍarūrī*, *badīhī*): it does not require a further process of inquiry or discursive thought. Examples include apprehending the concepts of being and non-being and assenting that the whole is greater than its part or that contradictories cannot both obtain.\n\nThe second is *discursive* or acquired (*naẓarī*, *kasbī*): it requires a process of thought. A conclusion about the movement of the earth, or a conceptual account of an unfamiliar phenomenon, may need prior knowledge to be arranged and used in an inquiry.\n\nFor immediate cognition it is sufficient that the mind attend to the relevant object without an intervening inferential process. For discursive cognition the mind must perform intellectual operations, much as one manipulates the terms of an algebraic problem, moving from what is already known to the initially unknown.\n\nSelf-evident, however, does not mean that every person actually knows every self-evident thing. The disposition of the subject and the conditions of attention matter. Muẓaffar distinguishes five conditions or occasions for the soul's attending to such knowledge: (1) attention rather than distraction, (2) a sound cognitive faculty, (3) functional senses when sense perception is involved, (4) freedom from a misleading sophism, and (5) some non-inferential operation appropriate to the kind of knowledge, such as receiving convergent testimony or undertaking an experiment.\n\nThe classification therefore concerns whether the knowledge depends on an *inferential act of thought*, not simply whether attaining it took time or effort.",
+      "notes": [
+        {
+          "type": "Translator's note",
+          "text": "Do not translate ḍarūrī in this context as ‘necessary’ in the metaphysical modal sense. The distinction is between epistemic immediacy and discursive acquisition."
+        },
+        {
+          "type": "Translator's note",
+          "text": "Muẓaffar's fourth condition is especially significant for kalām: a specious argument may obscure an otherwise evident principle, such as the impossibility of simultaneous affirmation and denial. He describes this as a sophism in opposition to an evident truth."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "18–20",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=19&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-10",
+      "chapter": 10,
+      "title": "Thought as the intellect's movement between known and unknown",
+      "arabicTitle": "تعريف النظر أو الفكر",
+      "arabic": "نعرف مما سبق أن النظر ـ أو الفكر ـ المقصود منه «إجراء عملية عقلية في المعلومات الحاضرة لأجل الوصول إلى المطلوب» والمطلوب هو العلم بالمجهول الغائب. وبتعبير آخر أدق أن الفكر هو: «حركة العقل بين المعلوم والمجهول».\n\nوتحليل ذلك: أن الإنسان إذا واجه بعقله المشكل (المجهول) وعرف أنه من أي أنواع المجهولات هو، فزع عقله إلى المعلومات الحاضرة عنده المناسبة لنوع المشكل، وعندئذ يبحث فيها ويتردد بينها بتوجيه النظر إليها، ويسعى إلى تنظيمها في الذهن حتى يؤلف المعلومات التي تصلح لحل المشكل، فإذا استطاع ذلك ووجد ما يؤلفه لتحصيل غرضه تحرك عقله حينئذ منها إلى المطلوب، أعني معرفة المجهول وحل المشكل.\n\nفتمر على العقل ـ إذن ـ بهذا التحليل خمسة أدوار:\n١ ـ مواجهة المشكل (المجهول).\n٢ ـ معرفة نوع المشكل، فقد يواجه المشكل ولا يعرف نوعه.\n٣ ـ حركة العقل من المشكل إلى المعلومات المخزونة عنده.\n٤ ـ حركة العقل ـ ثانياً ـ بين المعلومات، للفحص عنها وتأليف ما يناسب المشكل ويصلح لحله.\n٥ ـ حركة العقل ـ ثالثاً ـ من المعلوم الذي استطاع تأليفه مما عنده إلى المطلوب.\n\nوهذه الأدوار الثلاثة الأخيرة أو الحركات الثلاث هي الفكر أو النظر، وهذا معنى حركة العقل بين المعلوم والمجهول. وهذه الأدوار الخمسة قد تمر على الإنسان في تفكيره وهو لا يشعر بها، فإن الفكر يجتازها غالباً بأسرع من لمح البصر.\n\nنعم من له قوة الحدس يستغني عن الحركتين الأوليين، وإنما ينتقل رأساً بحركة واحدة من المعلومات إلى المجهول. وهذا معنى (الحدس)، فلذلك يكون صاحب الحدس القوي أسرع تلقياً للمعارف والعلوم، بل هو من نوع الإلهام وأول درجاته.\n\nولأجل هذا قالوا: إن قضية واحدة قد تكون بديهية عند شخص نظرية عند شخص آخر. وليس ذلك إلا لأن الأول عنده من قوة الحدس ما يستغني به عن النظر والكسب، دون الشخص الثاني فإنه يحتاج إلى هذه الحركات لتحصل العلوم بعد معرفة نوع المشكل.",
+      "english": "By inquiry (*naẓar*) or thinking (*fikr*), Muẓaffar means the performance of an intellectual operation upon what is already present to the mind for the sake of attaining the object sought—knowledge of something previously unknown. More precisely, thought is “the movement of the intellect between the known and the unknown.”\n\nWhen faced with a problem, one first identifies what kind of unknown it is, then turns to the stock of knowledge relevant to that kind of problem. The intellect searches and compares these contents, arranging them until it finds a combination capable of resolving the difficulty. It then moves from this ordered knowledge to the desired conclusion.\n\nThe process may be analysed into five moments: (1) encountering the problem; (2) identifying its type; (3) moving from the problem to stored knowledge; (4) examining and combining that knowledge appropriately; and (5) moving from the assembled premises to the answer. The last three movements, strictly speaking, constitute discursive thought.\n\nThese stages often occur so swiftly that we are not consciously aware of them. In someone gifted with strong *ḥads* (intuitive insight), the first two discursive movements can be bypassed: the relevant knowledge yields the conclusion in a single immediate movement. This helps explain why a proposition may be self-evident for one mind but require discursive inquiry for another.\n\nHere ‘movement’ names the ordered activity of cognition; it should not be confused with physical locomotion.",
+      "notes": [
+        {
+          "type": "Terminology",
+          "text": "Ḥads in this passage signifies an immediate intellectual grasp that dispenses with some intermediate search. It should not be assimilated without qualification to the separate notion of mystical witnessing."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "20–22",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=21&type=c_fbook"
+      }
+    },
+    {
+      "id": "M-P-11",
+      "chapter": 11,
+      "title": "The six principal divisions of logic",
+      "arabicTitle": "أبحاث المنطق",
+      "arabic": "علم المنطق إنما يحتاج إليه لتحصيل العلوم النظرية، لأنه هو مجموعة قوانين الفكر والبحث. أما الضروريات فهي حاصلة بنفسها، بل هي رأس المال الأصلي لكاسب العلوم يكتسب به ليربح المعلومات النظرية المفقودة عنده. فإذا اكتسب مقداراً من النظريات زاد رأس ماله بزيادة معلوماته، فيستطيع أن يكتسب معلومات أكثر.\n\nوعلم المنطق يبحث عن كيفية تأليف المعلومات المخزونة عنده، ليتوصل بها إلى الربح بتحصيل المجهولات وإضافتها إلى ما عنده من معلومات: فيبحث تارة عن المعلوم التصوري ويسمى (المعرِّف)، للتوصل به إلى العلم بالمجهول التصوري، ويبحث أخرى عن المعلوم التصديقي ويسمى (الحجة) ليتوصل به إلى العلم بالمجهول التصديقي.\n\nوالبحث عن الحجة بنحوين: تارة من ناحية هيئة تأليفها، وأخرى من ناحية مادة قضاياها، وهو بحث الصناعات الخمس. ولكل من البحث عن المعرف والحجة مقدمات. فأبحاث المنطق نضعها في ستة أبواب:\n\nالباب الأول ـ في مباحث الألفاظ.\nالباب الثاني ـ في مباحث الكلي.\nالباب الثالث ـ في المعرِّف وتلحق به القسمة.\nالباب الرابع ـ في القضايا وأحكامها.\nالباب الخامس ـ في الحجة وهيئة تأليفها.\nالباب السادس ـ في الصناعات الخمس.",
+      "english": "Logic is needed above all to acquire discursive knowledge, because it provides the rules governing inquiry and thought. Immediate truths are available without discursive proof and serve as the initial capital from which further knowledge is obtained. As knowledge increases, the stock of what is already known grows, and further investigation becomes possible.\n\nLogic therefore studies how to combine available cognitions so as to gain cognitions not yet possessed. When the unknown is conceptual, the route is through a *defining account* (muʿarrif); when the unknown is a judgment, the route is through an *argument* (ḥujja). The investigation of arguments may concern either the form of their composition or the character of their premises—the latter treated under the five argumentative arts.\n\nThe book is accordingly arranged into six parts: (1) expressions and signification; (2) universals; (3) definition and division; (4) propositions and their properties; (5) arguments and their formal composition; and (6) the five arts.\n\nThe architecture matters: the first three parts concern how to attain a previously unknown conception; the later parts explain how to attain or evaluate previously unknown judgments.",
+      "notes": [
+        {
+          "type": "Source note",
+          "text": "The six-book plan establishes that the present web edition's existing section on definition is Book III, not the whole of Muẓaffar's al-Manṭiq."
+        }
+      ],
+      "stage": "0",
+      "status": "working-translation",
+      "source": {
+        "edition": "Muḥammad Riḍā al-Muẓaffar, al-Manṭiq, Dār al-Taʿāruf Arabic witness",
+        "page": "23–25",
+        "url": "https://lib.rafed.net/view.php?b_id=1604&page=24&type=c_fbook"
       }
     },
     {
