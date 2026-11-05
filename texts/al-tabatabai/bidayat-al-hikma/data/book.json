@@ -9,11 +9,11 @@
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
-    "translatedAuthorialUnits": 17,
+    "translatedAuthorialUnits": 22,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 16,
+    "englishTranslatedChapters": 21,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh working English from the Arabic, preserving authorial objections and answers, with editorial notes as apparatus; no publisher English reproduced.",
@@ -29,7 +29,7 @@
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 16,
+    "translatedChapters": 21,
     "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
   },
   "sources": [
@@ -632,8 +632,8 @@
       "title": "Definition and exhaustiveness of the three modalities",
       "arabicTitle": "الفصل الأول في تعريف المواد الثلاث وانحصارها فيها",
       "arabic": "كل مفهوم إذا قيس إلى الوجود ,فإما أن يجب له فهو الواجب; أو يمتنع ,و هو الممتنع; أو لا يجب له و لا يمتنع ,و هو الممكن; فإنه إما أن يكون الوجود له ضروريا ,و هو الأول; أو يكون العدم له ضروريا ,و هو الثاني; و إما أن لا يكون شيء منهما له ضروريا ,و هو الثالث. و أما احتمال كون الوجود و العدم كليهما ضروريين ,فمرتفع بأدنى التفات. و هي بينة المعاني ,لكونها من المعاني العامة التي لا يخلو عن أحدها مفهوم من المفاهيم; و لذا كانت لا تعرف إلا بتعريفات دورية; كتعريف الواجب ب ”ما يلزم من فرض عدمه محال“ ثم تعريف المحال و هو الممتنع ب ”ما يجب أن لا يكون“ أو ”ما ليس بممكن و لا واجب“ و تعريف الممكن ب ”ما لا يمتنع وجوده و عدمه”.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Whenever a concept is considered in relation to existence, one of three alternatives must hold. Existence is necessary for it, and it is therefore *necessary*; or existence is impossible for it, and it is *impossible*; or neither its existence nor its non-existence is necessary, and it is *possible* or *contingent*.\n\nIn other words, either existence is necessary, non-existence is necessary, or neither alternative is necessary. That existence and non-existence could both be necessary is ruled out by the slightest reflection.\n\nThese three modalities are evident in their meanings. They are among the most general concepts, and no concept fails to fall under one of them. Attempts to define them strictly are therefore circular. One may explain the necessary as that whose supposed non-existence entails impossibility, the impossible as that which must not exist or is neither possible nor necessary, and the possible as that whose existence and non-existence are not impossible. Such descriptions elucidate the meanings; they do not define them by something more fundamental.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 70,
@@ -643,6 +643,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 54 (PDF p. 55); chapter 4.1. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminology",
+          "text": "The Arabic al-mawādd al-thalāth denotes the three modal determinations (necessity, impossibility, and possibility), not the material constituents of a physical thing."
         }
       ]
     },
@@ -653,8 +657,8 @@
       "title": "Modalities in themselves, through another, and relative to another",
       "arabicTitle": "الفصل الثاني انقسام كل من المواد إلى ما بالذات وما بالغير وما بالقياس",
       "arabic": "كل واحدة من المواد ثلاثة أقسام :ما بالذات ,و ما بالغير ,و ما بالقياس إلى الغير; إلا الإمكان ,فلا إمكان بالغير و المراد بما بالذات :أن يكون وضع الذات كافيا في تحققه ,و إن قطع النظر عن كل ما سواه; و بما بالغير; ما يتعلق بالغير; و بما بالقياس إلى الغير :أنه إذا قيس إلى الغير كان من الواجب أن يتصف به. فالوجوب بالذات كما في الواجب الوجود ,تعالى ,فإن ذاته بذاته يكفي في ضرورة الوجود له من غير حاجة إلى شيء غيره. و الوجوب بالغير كما في الممكن الموجود الواجب وجوده بعلته . و الوجوب بالقياس إلى الغير كما في وجود أحد المتضائفين إذا قيس إلى وجود الآخر, فإن وجود العلو إذا قيس إليه وجود السفل يأبى إلا أن يكون للسفل وجود ,فلوجود السفل وجوب بالقياس إلى وجود العلو ,وراء وجوبه بعلته. و الامتناع بالذات ,كما في المحالات الذاتية ,كشريك الباري ,و اجتماع النقيضين; و الامتناع بالغير ,كما في وجود المعلول الممتنع لعدم علته ,و عدمه الممتنع لوجود علته ,و الامتناع بالقياس إلى الغير ,كما في وجود أحد المتضائفين إذا قيس إلى عدم الآخر ,و في عدمه إذا قيس إلى وجود الآخر. و الإمكان بالذات ,كما في الماهيات الإمكانية ,فإنها في ذاتها لا تقتضي ضرورة الوجود و لا ضرورة العدم; و الإمكان بالقياس إلى الغير ,كما في الواجبين بالذات المفروضين, ففرض وجود أحدهما لا يأبى وجود الآخر و لا عدمه ,إذ ليس بينهما علية و معلولية و لا هما معلولا علة ثالثة. و أما الإمكان بالغير فمستحيل ,لأنا إذا فرضنا ممكنا بالغير ,فهو في ذاته إما واجب بالذات ,أو ممتنع بالذات ,أو ممكن بالذات ,إذ المواد منحصرة في الثلاث ,و الأولان يوجبان الانقلاب ,و الثالث يوجب كون اعتبار الإمكان بالغير لغوا.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Each of the three modalities is further distinguished as intrinsic, through another, or relative to another—except that *possibility through another* is not admitted. Intrinsic modality belongs to a thing from the very supposition of what it is, apart from anything else. Modality through another depends upon something different from the thing, while modality relative to another appears when the thing is compared with that other.\n\n**Necessity in itself** is exemplified by the Necessary Existent, exalted is He: His very reality suffices for the necessity of His existence without need of anything besides Himself. **Necessity through another** belongs to an existing contingent thing whose existence is necessitated by its cause. **Necessity relative to another** is found in correlatives: the existence of something above entails something below, so that what is below is necessary relative to what is above, beyond its necessity through its cause.\n\n**Impossibility in itself** belongs to intrinsic impossibilities, such as a partner of the Creator and the conjunction of contradictories. **Impossibility through another** is illustrated by an effect's existence when its complete cause is absent, or its non-existence when its complete cause is present. **Impossibility relative to another** occurs when one of two correlatives is posited as existent while the other is posited as non-existent.\n\n**Possibility in itself** belongs to contingent quiddities, which of themselves require neither existence nor absence. **Possibility relative to another** is illustrated by the supposition of two beings necessary in themselves, neither of which is cause or effect of the other, nor both effects of a third cause. On this hypothesis the existence of one would neither entail nor exclude the other's existence. This is an illustration of modal relation within a supposition, not the author's assertion that there actually are two Necessary Existents.\n\n**Possibility through another** is impossible. A supposed thing rendered possible by another must already be, in its own nature, necessary, impossible, or possible; the modal division is exhaustive. If it is intrinsically necessary or impossible, converting it into possible would overturn that intrinsic modality, a contradiction. If it is intrinsically possible, attributing its possibility to another is redundant. Thus no new form of possibility is introduced by another.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 72,
@@ -664,6 +668,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 54 (PDF p. 55); chapter 4.2. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "Modal necessity and impossibility ‘relative to another’ are distinguished from being caused ‘through another’. The hypothetical two necessary beings illustrate the logical classification, not a second divine existence."
         }
       ]
     },
@@ -674,8 +682,8 @@
       "title": "The Necessary Existent: its quiddity is its existence",
       "arabicTitle": "الفصل الثالث واجب الوجود ماهيته إنيته",
       "arabic": "واجب الوجود ماهيته إنيته بمعنى أن لا ماهية له وراء وجوده الخاص به; و ذلك أنه لو كانت له ماهية و ذات وراء وجوده الخاص به ,لكان وجوده زائدا على ذاته عرضيا له ,و كل عرضي معلل بالضرورة ,فوجوده معلل. و علته إما ماهيته أو غيرها ,فإن كانت علته ماهيته -و العلة متقدمة على معلولها بالوجود بالضرورة -كانت الماهية متقدمة عليه بالوجود; و تقدمها عليه إما بهذا الوجود ,و لازمه تقدم الشيء على نفسه و هو محال; و إما بوجود آخر ,و ننقل الكلام إليه و يتسلسل; و إن كانت علته غير ماهيته ,فيكون معلولا لغيره و ذلك ينافي وجوب الوجود بالذات .و قد تبين بذلك :أن الوجوب بذاته وصف منتزع من حاق وجود الواجب, كاشف عن كون وجوده بحتا في غاية الشدة غير مشتمل على جهة عدمية ,إذ لو اشتمل على شيء من الأعدام ,حرم الكمال الوجودي الذي في مقابله; فكانت ذاته مقيدة بعدمه, فلم يكن واجبا بالذات صرفا له كل كمال.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "In the Necessary Existent, quiddity is identical with existence. This means that He has no quiddity or essence over and above His particular existence.\n\nIf He had an essence distinct from His existence, existence would be additional to that essence and predicated of it as something beyond what it is. Whatever is thus additional requires a cause, so His existence would be caused.\n\nThe cause would have to be either the essence itself or another. If it were the essence itself, the essence would have to precede the existence it caused, for a cause is prior to its effect in the order of being. Either it precedes by that very existence, in which case the existence precedes itself—impossible—or by another existence, whereupon the same question recurs without end. If something other than the essence were the cause, the Necessary Existent would be an effect of another, contrary to intrinsic necessity.\n\nNecessity in itself is therefore a description abstracted from the very reality of the Necessary Existent. It reveals His existence to be pure, at the utmost intensity, without any privative aspect. If it contained a privation, the opposed existential perfection would be absent from it, so the essence would be limited by that absence. Such a restricted reality could not be the absolutely necessary, pure existence possessing every perfection.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 74,
@@ -685,6 +693,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 57 (PDF p. 58); chapter 4.3. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminological note",
+          "text": "The phrase ‘His quiddity is His existence’ is explained by the author as denying a quiddity *over and above* the actuality of the Necessary Existent. It is not a claim that the Necessary is one ordinary species whose definition happens to include existence."
         }
       ]
     },
@@ -695,8 +707,8 @@
       "title": "The Necessary Existent is necessary in every respect",
       "arabicTitle": "الفصل الرابع واجب الوجود بالذات واجب الوجود من جميع الجهات",
       "arabic": "إذ لو كان غير واجب بالنسبة إلى شيء من الكمالات التي تمكن له بالإمكان العام, كان ذا جهة إمكانية بالنسبة إليه ,فكان خاليا في ذاته عنه متساوية نسبته إلى وجوده و عدمه ,و معناه تقيد ذاته بجهة عدمية و قد عرفت في الفصل السابق استحالته.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The Necessary Existent is necessary in every respect. Suppose there were a perfection which could belong to Him in the broad sense of possibility but did not belong to Him necessarily. He would then have an aspect of possibility in relation to that perfection, lacking it in His own reality and standing equally open to its possession or absence.\n\nThat would make His essence restricted by a privation. The previous chapter showed this to be impossible for pure necessary existence. Therefore the Necessary Existent contains no unrealised capacity awaiting further actualisation, and cannot be deficient in any existential perfection.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 76,
@@ -706,6 +718,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 59 (PDF p. 60); chapter 4.4. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "‘Necessary in every respect’ excludes an unactualised possible perfection in the Necessary Existent; it does not mean that predicates are applied without regard to their proper meanings or qualifications."
         }
       ]
     },
@@ -716,8 +732,8 @@
       "title": "A thing exists only once its existence is necessary",
       "arabicTitle": "الفصل الخامس في أن الشيء ما لم يجب لم يوجد وبطلان القول بالأولوية",
       "arabic": "لا ريب أن الممكن ,الذي يتساوى نسبته إلى الوجود و العدم عقلا ,يتوقف وجوده على شيء يسمى علة و عدمه على عدمها. و هل يتوقف وجود الممكن على أن يوجب العلة وجوده ,و هو الوجوب بالغير؟ أو أنه يوجد بالخروج عن حد الاستواء ,و إن لم يصل إلى حد الوجوب؟ و كذا القول في جانب العدم ,و هو المسمى بالأولوية; و قد قسموها إلى الأولوية الذاتية و هي التي يقتضيها ذات الممكن و ماهيته ,و غير الذاتية و هي خلافها ,و قسموا كلا منهما إلى ”كافية“ في تحقق الممكن و ”غير كافية”. و الأولوية بأقسامها باطلة: أما الأولوية الذاتية فلأن الماهية قبل الوجود باطلة الذات لا شيئية لها حتى تقتضي أولوية الوجود كافية أو غير كافية; و بعبارة أخرى :الماهية من حيث هي ليست إلا هي ,لا موجودة و لا معدومة و لا أي شيء آخر. و أما الأولوية الغيرية ,و هي التي تأتي من ناحية العلة ,فلأنها لما لم تصل إلى حد الوجوب لا يخرج بها الممكن من حد الاستواء ,و لا يتعين بها له الوجود أو العدم ,و لا ينقطع بها السؤال :إنه لم وقع هذا دون ذاك؟; و هو الدليل على أنه لم تتم بعد للعلة عليتها. فتحصل :أن الترجيح إنما هو بإيجاب العلة وجود المعلول ,بحيث يتعين له الوجود و يستحيل عليه العدم ,أو إيجابها عدمه; فالشيء -أعني الممكن -ما لم يجب لم يوجد. خاتمة ما تقدم من الوجوب هو الذي يأتي الممكن من ناحية علته; و له وجوب آخر يلحقه بعد تحقق الوجود أو العدم ,و هو المسمى بالضرورة بشرط المحمول; فالممكن الموجود محفوف بالضرورتين :السابقة و اللاحقة.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "A contingent thing, considered in itself, is equally related to existence and non-existence. Its existence therefore depends on something called a cause, and its non-existence upon the absence of the cause. Must the cause make the effect's existence *necessary*—the necessity which comes through another—or is it sufficient that one alternative merely acquire a greater preponderance even without attaining necessity? The same question can be asked of non-existence.\n\nThis rival doctrine is called *preponderance* (awlawiyya). Its advocates distinguish preponderance arising intrinsically from the quiddity from preponderance coming through another, and divide each into what suffices and what does not suffice to bring about the contingent thing.\n\nAll of these forms are invalid. **Intrinsic preponderance** fails because a quiddity considered prior to existence has no actuality or thingness by which it could itself confer a priority upon existence. Quiddity as such is simply itself, neither existent nor non-existent in its definition.\n\n**Preponderance through another** fails insofar as it does not reach necessity. If the cause merely inclines the outcome without determining it, the contingent thing has not departed definitively from its equality between existence and non-existence. The question ‘Why did this occur rather than that?’ still remains, showing that the alleged cause is not yet complete.\n\nThe effect is therefore determined only when the complete cause necessitates its existence and excludes its non-existence, or vice versa. The thing—meaning the contingent thing—does not exist until its existence has been rendered necessary.\n\nThis is the necessity received from the cause. A second necessity follows once existence or non-existence has actually been assumed as a predicate: *necessity on condition of the predicate* (al-ḍarūra bi-sharṭ al-maḥmūl). A contingent existent is thus surrounded by a prior necessity in the explanatory order, arising from its complete causal determination, and a subsequent conditioned necessity, according to which what is posited as existent must, in that very respect, exist.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 78,
@@ -727,6 +743,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 59 (PDF p. 60); chapter 4.5. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The maxim ‘a thing does not exist until it is necessary’ is about the effect's causal determination (wujūb bi-l-ghayr), not about contingency turning into intrinsic necessity (wujūb bi-l-dhāt)."
         }
       ]
     },
