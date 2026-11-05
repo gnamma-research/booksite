@@ -165,6 +165,9 @@ def main():
     assert "In the latter case" not in s23 and "least" in s23, "§23 scope is still defective"
     assert "is the error of supposing" not in s26 and ("permissib" in s26.lower()), "§26 argument inverted"
     assert "not expressly stated" not in s64 and "not explicitly stated" not in s64, "§64 negation not corrected"
+    # Reader navigation and PDF updater independently verify these two counts.
+    book["stats"]["notes"]=len(book["notes"])
+    book["stats"]["noteCount"]=len(book["notes"])
     # Serialize the final verified book with all targeted repairs, preserving the JS wrapper.
     import re as _re
     _pat=r'textContent\s*=\s*("(?:[^"\\]|\\.)*")\s*;'
