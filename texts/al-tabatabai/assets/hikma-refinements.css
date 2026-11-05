@@ -1,0 +1,108 @@
+/* Reader refinements: three-book navigation, mobile legibility and PDF printing. */
+:root{--reading-width:1180px}
+.reader-main{overflow-wrap:anywhere}
+.reading-content{max-width:var(--reading-width);margin-inline:auto}
+.hikma-part-tabs{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:var(--reading-width);margin-inline:auto}
+.hikma-part-tabs button{min-width:0;min-height:82px;padding:12px 14px}
+.hikma-part-tabs button strong{font-size:14px;line-height:1.35}
+.hikma-part-tabs button[aria-current="true"]{background:var(--accent-soft);border-color:var(--accent)}
+.hikma-part-tabs button[aria-current="true"] .part-number{color:var(--accent);font-weight:700}
+#pdf-print,#lookup-selection{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:44px;min-height:44px}
+#pdf-print svg,#lookup-selection svg{flex:none}
+.header-actions{gap:8px}
+.header-actions .icon-button,.menu-button,.sidebar-close{min-width:44px;min-height:44px}
+.passage-controls button,.passage-controls a,.chapter-permalink{min-width:42px;min-height:42px;display:inline-flex;align-items:center;justify-content:center}
+.parallel-text,.text-panel,.text-body,.chapter-heading-text,.chapter-heading,.chapter-section{min-width:0}
+.text-body p,.chapter-heading h3,.toc-chapter-title{overflow-wrap:break-word}
+.text-panel[lang="ar"],.stage-arabic,.chapter-title-arabic,.sidebar-arabic,.glossary-entry [lang="ar"]{direction:rtl;unicode-bidi:isolate}
+.text-panel[lang="ar"] .text-body p{word-break:normal;overflow-wrap:break-word;line-break:auto}
+.glossary-entry{scroll-margin-top:20px}
+.reader-dialog{max-width:calc(100vw - 24px)}
+.reader-dialog .dialog-header button{min-width:44px;min-height:44px}
+.glossary-entry .dictionary-jump{margin:7px 0 0;padding:5px 0;border:0;background:transparent;color:var(--accent);font:11px/1.5 Arial,Helvetica,sans-serif;text-align:left;text-decoration:underline;text-underline-offset:3px}
+.glossary-entry .dictionary-jump:hover{color:var(--earth)}
+.footnote-reference{font-variant-numeric:tabular-nums}
+.footnote-details .footnote-list{padding-left:8px}
+.footnote{line-height:1.8;overflow-wrap:anywhere}
+.footnote:target{background:var(--accent-soft)}
+body[data-book="combined"] .reading-context{white-space:normal}
+@media(max-width:900px){
+  .reader-main{padding-inline:24px}
+  .reader-dialog{padding:22px 20px}
+  .site-header .header-actions{gap:2px}
+  .hikma-part-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+  .hikma-part-tabs button{min-height:76px;padding:10px}
+  .hikma-part-tabs button strong{font-size:12px}
+  .hikma-part-tabs button [lang=ar]{font-size:18px}
+  .contents-panel{overscroll-behavior:contain}
+}
+@media(max-width:690px){
+  .site-header{padding-inline:10px;gap:5px}
+  .header-start,.header-actions{gap:2px}
+  .header-actions .text-button span{display:none}
+  #pdf-print,#lookup-selection{padding:4px 6px}
+  .reader-main{padding-inline:17px}
+  .reading-toolbar{gap:7px}
+  .hikma-part-tabs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;padding-bottom:7px;scrollbar-width:thin}
+  .hikma-part-tabs button{flex:0 0 min(44vw,178px);scroll-snap-align:start;min-height:82px}
+  .parallel-text{display:flex;flex-direction:column;gap:18px}
+  :root[data-order="arabic-first"] .parallel-text .arabic-panel{order:0!important;padding:0!important;border:0!important}
+  :root[data-order="arabic-first"] .parallel-text .english-panel{order:1!important;padding:15px 0 0!important;border-top:1px solid var(--line)!important}
+  :root[data-order="english-first"] .parallel-text .english-panel{order:0!important;padding:0!important;border:0!important}
+  :root[data-order="english-first"] .parallel-text .arabic-panel{order:1!important;padding:15px 0 0!important;border-top:1px solid var(--line)!important}
+  :root[data-language="arabic"] .parallel-text .english-panel,
+  :root[data-language="english"] .parallel-text .arabic-panel:not(.is-arabic-only){display:none!important}
+  .parallel-text.is-arabic-only .arabic-panel{border:0!important;padding:0!important}
+  .text-body{line-height:1.8}
+  .arabic-panel .text-body{line-height:2.05;text-align:start}
+  .chapter-heading{gap:6px}
+  .chapter-heading h3{font-size:23px}
+  .footnote-details{font-size:12px}
+}
+@media(max-width:380px){
+  .brand{font-size:24px}
+  .site-header .header-actions{gap:0}
+  .header-actions .icon-button,#pdf-print,#lookup-selection{min-width:40px;width:40px}
+  .reader-main{padding-inline:13px}
+  .hikma-part-tabs button{flex-basis:52vw}
+}
+/* Print-to-PDF: the body text and numbered notes, never the reading controls. */
+@page{size:A4;margin:16mm 15mm 18mm}
+@media print{
+  :root{color-scheme:light!important;--paper:#fff;--paper-raised:#fff;--ink:#161616;--muted:#444;--line:#bbb;--accent:#222;--reading-size:12pt}
+  html,body{margin:0!important;padding:0!important;background:#fff!important;color:#161616!important;overflow:visible!important}
+  .site-header,.contents-panel,.sidebar-backdrop,.reading-toolbar,.reading-context,
+  .hikma-part-tabs,.passage-topline,.passage-controls,.reader-footer,
+  .chapter-navigation,.cover-actions,.filter-notice,.toast,.reader-dialog,
+  .skip-link,.search-box,.personal-note-preview{display:none!important}
+  .reader-shell{display:block!important;max-width:none!important}
+  .reader-main,.reading-content{width:100%!important;max-width:none!important;padding:0!important;margin:0!important;overflow:visible!important}
+  .title-page{display:block!important;break-after:page;page-break-after:always;text-align:center;padding-top:50mm!important}
+  .cover-description,.coverage,.edition-badge{display:none!important}
+  .cover-arabic{font-size:30pt;line-height:1.75}
+  .title-page h1{font-size:26pt}
+  .stage-heading{break-before:page;break-after:avoid-page;margin:0 0 7mm;padding:5mm 0 3mm;border-bottom:1px solid #aaa}
+  .stage-heading:first-child{break-before:auto}
+  .chapter-section{margin:0 0 9mm;padding:0}
+  .chapter-heading{break-after:avoid-page;page-break-after:avoid}
+  .chapter-heading h3{font-size:15pt;line-height:1.4}
+  .chapter-title-arabic{font-size:19pt}
+  .passage{padding:0 0 8mm!important;margin:0!important;break-inside:auto;page-break-inside:auto}
+  .parallel-text{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:7mm!important}
+  .text-panel,.arabic-panel,.english-panel,
+  :root[data-order="arabic-first"] .arabic-panel,
+  :root[data-order="arabic-first"] .english-panel{padding:0!important;border:0!important;min-width:0}
+  :root[data-order="arabic-first"] .arabic-panel{order:-1}
+  .parallel-text.is-arabic-only{display:block!important}
+  .text-body{font-size:11pt!important;line-height:1.62!important;text-wrap:initial}
+  .arabic-panel .text-body{font-size:14pt!important;line-height:1.9!important;text-align:start!important}
+  .text-body p{orphans:3;widows:3;margin-bottom:.8em}
+  .footnote-details{display:block!important;break-inside:auto;border-top:1px solid #bbb;margin:2mm 0 0;font:8.5pt/1.5 Georgia,serif;color:#333}
+  .footnote-summary{display:none!important}
+  .footnote-list{display:block!important;max-width:none!important;margin:2mm 0 0;padding-left:5mm}
+  .footnote{break-inside:avoid-page}
+  .footnote a:after{content:none!important}
+  a[href] {color:inherit!important;text-decoration:none!important}
+  .chapter-permalink,.footnote-reference{color:#333!important}
+  .loading-state,.empty-state{display:none!important}
+}
