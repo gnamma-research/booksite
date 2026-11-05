@@ -36,6 +36,7 @@
   }
 
   let selectedText='';
+  let keepNextGlossarySearch=false;
   function lookupTerm(value) {
     return (value||'').trim().replace(/[\u200c-\u200f\u202a-\u202e]/g,'')
       .replace(/^[\s.,;:()[\]{}«»"“”'‘’!?؟]+|[\s.,;:()[\]{}«»"“”'‘’!?؟]+$/g,'')
@@ -60,12 +61,13 @@
     if (/^ال[\u0621-\u064a]{3,}$/.test(term))term=term.slice(2);
     if(term){search.value=term;search.dispatchEvent(new Event('input',{bubbles:true}));}
     else if(search.value){search.value='';search.dispatchEvent(new Event('input',{bubbles:true}));}
-    open.click();search.focus();
+    keepNextGlossarySearch=true;open.click();search.focus();
     selectedText='';
   });
   /* The existing Glossary action remains the plain, unfiltered lookup. */
   const mainGlossary=$('glossary-open');
   if(mainGlossary)mainGlossary.addEventListener('click',()=>{
+    if(keepNextGlossarySearch){keepNextGlossarySearch=false;return;}
     const search=$('glossary-search');
     if(search&&search.value){search.value='';search.dispatchEvent(new Event('input',{bubbles:true}));}
   });
