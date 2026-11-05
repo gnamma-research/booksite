@@ -41,7 +41,6 @@ function buildOccurrences(){
    const a=norm(u.arabic),e=norm(u.english);
    if(phrases.some(p=>a.includes(p)||e.includes(p))){
     found.push({id:u.id,title:u.section||u.title||u.id,source:u.sourceLocator||'Qawāʿid matn'});
-    if(found.length>=30)break;
    }
   }
   occurrences.set(t.id,found);
@@ -180,10 +179,11 @@ function subjectsPanel(){
  const groups=[...new Set(terms.map(x=>x.category))];
  show('Subject index','<p class="gn-help">Select a subject to inspect its terms and locations in the matn and sharḥ.</p>'+groups.map(g=>'<details class="gn-subject-group" open><summary>'+esc(g)+' <small>'+terms.filter(t=>t.category===g).length+' entries</small></summary>'+terms.filter(t=>t.category===g).map(t=>'<button data-open-term="'+esc(t.id)+'"><span>'+esc(t.en)+'</span><small>'+esc(t.ar)+' · '+(occurrences.get(t.id)||[]).length+' locations</small></button>').join('')+'</details>').join(''));
 }
-function termPanel(id){
+function termPanel(id, expanded=false){
  const t=termMap.get(id);if(!t)return;
- const loc=occurrences.get(id)||[];
- show(t.en,'<div class="gn-prose"><div class="gn-headword" lang="ar" dir="rtl">'+esc(t.ar)+'</div><small>'+esc(t.category)+'</small><p>'+esc(t.definition)+'</p>'+(t.aliases.length?'<p><strong>Also:</strong> '+esc(t.aliases.join(' · '))+'</p>':'')+'</div><h3 class="gn-subheading">Where it occurs</h3><div class="gn-locations">'+(loc.length?loc.map(x=>'<a href="'+unitURL(x.id)+'" data-study-goto="'+esc(x.id)+'">'+esc(x.id)+' · '+esc(x.title)+'</a>').join(''):'<p>No matched passage in the current reader; search the original Arabic for variants.</p>')+'</div><div class="gn-menu-footer"><button data-open-study="dictionary">Dictionary</button><button data-open-study="subjects">Subject index</button></div>');
+ const loc=occurrences.get(id)||[],shown=expanded?loc:loc.slice(0,18);
+ const sourceKind=x=>x.id.startsWith('SH-INTRO')?'Tamhīd introduction':x.id.startsWith('SH-')?'Tamhīd sharḥ':'Qawāʿid matn';
+ show(t.en,'<div class="gn-prose"><div class="gn-headword" lang="ar" dir="rtl">'+esc(t.ar)+'</div><small>'+esc(t.category)+'</small><p>'+esc(t.definition)+'</p>'+(t.aliases.length?'<p><strong>Also:</strong> '+esc(t.aliases.join(' · '))+'</p>':'')+'</div><h3 class="gn-subheading">Textual locations <small>('+loc.length+')</small></h3><div class="gn-locations">'+(loc.length?shown.map(x=>'<a href="'+unitURL(x.id)+'" data-study-goto="'+esc(x.id)+'"><b>'+esc(x.id)+'</b> · '+esc(x.title)+' <small>'+esc(sourceKind(x))+'</small></a>').join(''):'<p>No direct lexical match in the current reader. Browse the subject index for related topics.</p>')+'</div>'+(loc.length>18&&!expanded?'<button class="gn-more-locations" data-expand-term="'+esc(id)+'">Show all '+loc.length+' matched passages</button>':'')+'<div class="gn-menu-footer"><button data-open-study="dictionary">Dictionary</button><button data-open-study="subjects">Subject index</button></div>');
  window.GnammaQawaidHistorical?.attach?.(id);
 }
 function referencePanel(q=''){
@@ -206,9 +206,10 @@ async function pdfPanel(){
  }catch{const x=$('#gn-study-content');if(x)x.innerHTML='<p class="gn-help">PDF editions are not yet available from the published site. You can read the complete Arabic and English in this browser.</p>';}
 }
 function clickDelegated(e){
- const el=e.target.closest('[data-study-close],[data-open-study],[data-open-term],[data-open-source],[data-study-goto]');if(!el)return;
+ const el=e.target.closest('[data-study-close],[data-open-study],[data-open-term],[data-expand-term],[data-open-source],[data-study-goto]');if(!el)return;
  if(el.hasAttribute('data-study-close')){panelClose();return}
  if(el.dataset.openStudy){openPanel(el.dataset.openStudy);return}
+ if(el.dataset.expandTerm){termPanel(el.dataset.expandTerm,true);return}
  if(el.dataset.openTerm){openPanel('term',el.dataset.openTerm);return}
  if(el.dataset.openSource){openPanel('source',el.dataset.openSource);return}
  if(el.dataset.studyGoto){const id=el.dataset.studyGoto;panelClose();if(id.startsWith('SH-INTRO')){window.location.href='commentary.html#'+id;return}const targetId=id.startsWith('SH-')?id:id;
