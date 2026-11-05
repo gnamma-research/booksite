@@ -25,19 +25,19 @@ This is a maintainer audit, not reader-facing material. Editorial-process notes 
 
 | Book | Arabic units | English units | Local dictionary records |
 | --- | ---: | ---: | ---: |
-| al-Manṭiq (Muẓaffar, selected source) | 14 | 14 | 33 |
-| Bidāyat al-Ḥikma | 111 (intro + 110 chapters) | 5 | 89 |
+| al-Manṭiq (Muẓaffar, selections from introduction and Book III) | 25 | 25 | 33 |
+| Bidāyat al-Ḥikma | 111 (intro + 110 chapters) | 13 (intro + complete Stage I) | 89 |
 | Nihāyat al-Ḥikma | 136 in existing JSON | working rendering of 130 numbered chapters | Existing glossary, not recounted in this audit |
 
-**Scope warning:** The Muẓaffar edition is presently a selection, not a full translation; the vast majority of Bidāya English units remain unwritten. Existing Nihāya English and the entire Arabic corpus still need a passage-by-passage scholarly review.
+**Scope warning:** The Muẓaffar edition contains 11 opening passages (pp. 8–25 of the Arabic source) and 14 selected Book III passages; it is not a full edition. Bidāya now has a working translation of the introduction and the complete first stage (12 chapters), but the remaining 98 chapters are not yet translated. Nihāya's 136 reading sections have working English but still require passage-by-passage scholarly checking.
 
 ## Important work still open
 
 1. Collate every Arabic page against a reliable, clearly identified printed edition; resolve remaining spelling, segmentation, authorial/secondary footnote issues and transmission differences. Absence of OCR placeholders is not proof of correctness.
 2. Translate and critically annotate Muẓaffar's entire intended section and the remaining Bidāya chapters. Do not silently treat lecture notes as the original text, and distinguish original authorial glosses from commentary.
 3. Complete paragraph-to-paragraph source/translation alignment and verified contextual footnote anchors. Current reading panels align at passage/chapter level.
-4. Produce independently downloadable/typeset PDF volumes if required; the website currently offers browser printing with three A4 styles.
-5. Run a true browser/device regression pass, including Safari on iOS, Arabic font fallback, bookmarks, screen readers, back/forward and print output. Source-code syntax and data integrity checks were done, but the deployed GitHub Pages URL could not be opened in the available browser environment.
+4. Reproduce and visually verify the nine independently typeset A4 PDFs through the new `tools/build-pdfs.cjs` builder and GitHub Action. **The builder and workflow are committed, but no released PDF is claimed until its checks and publication have succeeded.**
+5. Run the new Chromium and WebKit regression suite (`tools/qa-browser.cjs`) and inspect its screenshots and print sample. These workflows are committed but their queued/pending state does **not** constitute a test pass. Physical iOS Safari and screen reader checks remain separate.
 6. Audit content rights and attribute all references to the exact edition/page before describing any layer as a scholarly critical edition.
 
 To rerun the local technical test from the repository root:
@@ -47,3 +47,8 @@ node texts/al-tabatabai/tools/audit-hikma.mjs
 ```
 
 Do not put this audit into the reading UI.
+## Translation continuation, 5 November 2026
+
+- Muẓaffar: ten conceptual topics plus the formal six-part book outline now precede the earlier definition selections; **25** Arabic–English passages in the local selection, not the complete 455-page book.
+- Bidāya: fresh English for I.5–I.12, including gradation, the subsidiary rule for existential predication, nafs al-amr, shayʾiyya/thubūt, non-being, primary/common predication, and numerical restoration. All twelve Stage I chapters now have English.
+- Browser regression and source-driven PDF release workflows added at `.github/workflows/hikma-reader-qa.yml` and `.github/workflows/hikma-a4-pdf-release.yml`; the PDF catalog only exposes files from a published manifest.
