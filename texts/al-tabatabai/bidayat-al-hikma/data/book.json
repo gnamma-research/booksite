@@ -9,11 +9,11 @@
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
-    "translatedAuthorialUnits": 26,
+    "translatedAuthorialUnits": 34,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 25,
+    "englishTranslatedChapters": 33,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh working English from the Arabic, preserving authorial objections and answers, with editorial notes as apparatus; no publisher English reproduced.",
@@ -29,7 +29,7 @@
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 25,
+    "translatedChapters": 33,
     "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
   },
   "sources": [
@@ -877,8 +877,8 @@
       "title": "Quiddity as such is only itself",
       "arabicTitle": "الفصل الأول الماهية من حيث هي ليست إلا هي",
       "arabic": "الماهية و هي ما يقال في جواب ما هو لما كانت تقبل الاتصاف بأنها موجودة أو معدومة أو واحدة أو كثيرة أو كلية أو فرد و كذا سائر الصفات المتقابلة كانت في حد ذاتها مسلوبة عنها الصفات المتقابلة. فالماهية من حيث هي ليست إلا هي لا موجودة و لا لا موجودة و لا شيئا آخر و هذا معنى قولهم إن النقيضين يرتفعان عن مرتبة الماهية يريدون به أن شيئا من النقيضين غير مأخوذ في الماهية و إن كانت في الواقع غير خالية عن أحدهما بالضرورة. فماهية الإنسان و هي الحيوان الناطق مثلا و إن كانت إما موجودة و إما معدومة لا يجتمعان و لا يرتفعان لكن شيئا من الوجود و العدم غير مأخوذ فيها فللإنسان معنى و لكل من الوجود و العدم معنى آخر و كذا الصفات العارضة حتى عوارض الماهية فلماهية الإنسان مثلا معنى و للإمكان العارض لها معنى آخر و للأربعة مثلا معنى و للزوجية العارضة لها معنى آخر. و محصل القول إن الماهية يحمل عليها بالحمل الأولى نفسها و يسلب عنها بحسب هذا الحمل ما وراء ذلك.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Quiddity (*māhiyya*) is what is given in answer to “What is it?” A quiddity can be qualified as existent or non-existent, one or many, universal or individual, and by other pairs of opposing attributes. Precisely in what it is, therefore, it includes neither member of these oppositions.\n\nQuiddity as such is nothing but itself: it is neither existent nor non-existent, nor anything else added to its defining account. This is the meaning of the philosophers' statement that contradictories are both excluded from the *rank of quiddity*. They mean that neither opposite is included in what constitutes the quiddity, not that a thing in reality can be without both members of a contradictory pair.\n\nFor example, the quiddity of human being is rational animal. In reality a human being must either exist or not exist—the alternatives can neither be combined nor both absent. But neither existence nor non-existence is part of the meaning *rational animal*. Each possesses a meaning different from that quiddity.\n\nThe same applies even to the necessary concomitants of quiddity. The meaning of ‘four’ differs from the meaning of evenness, though evenness accompanies four necessarily. Likewise, the meaning of a human quiddity differs from possibility, though possibility is attributed to it.\n\nIn short, quiddity is predicated of itself by *primary essential predication*, and under that same mode of predication everything other than its own defining content is excluded from it.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 94,
@@ -888,6 +888,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 70 (PDF p. 71); chapter 5.1. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "‘The two contradictories are removed from the rank of quiddity’ concerns what is included in its essential definition. It does not assert an ontological third state between being and non-being."
         }
       ]
     },
@@ -898,8 +902,8 @@
       "title": "Ways of considering quiddity",
       "arabicTitle": "الفصل الثاني في اعتبارات الماهية وما يلحق بها من المسائل",
       "arabic": "للماهية بالإضافة إلى ما عداها مما يتصور لحوقه بها ثلاث اعتبارات إما أن تعتبر بشرط شيء أو بشرط لا أو لا بشرطي شيء و القسمة حاصرة أما الأول فإن تؤخذ بما هي مقارنة لما يلحق بها من الخصوصيات فتصدق على المجموع كالإنسان المأخوذ مع خصوصيات زيد فيصدق عليه. و أما الثاني فإن يشترط معها أن لا يكون معها غيرها و هذا يتصور على قسمين أحدهما أن يقصر النظر في ذاتها و أنها ليست إلا هي و هو المراد من كون الماهية بشرط لا في مباحث الماهية كما تقدم و ثانيهما أن تؤخذ الماهية وحدها بحيث لو قارنها أي مفهوم مفروض كان زائدا عليها غير داخل فيها فتكون إذا قارنها جزء من المجموع مادة له غير محمولة عليه. و أما الثالث فأن لا يشترط معها شيء بل تؤخذ مطلقة مع تجويز أن يقارنها شيء أو لا يقارنها. فالقسم الأول هو الماهية بشرط شيء و تسمى المخلوطة و القسم الثاني هو الماهية بشرط لا و تسمى المجردة و القسم الثالث هو الماهية لا بشرط و تسمى المطلقة. و الماهية التي هي المقسم للأقسام الثلاثة هي الكلي الطبيعي و هي التي تعرضها الكلية في الذهن فتقبل الانطباق على كثيرين و هي موجودة في الخارج لوجود قسمين من أقسامها أعني المخلوطة و المطلقة فيه و المقسم محفوظ في أقسامه موجود بوجودها. و الموجود منها في كل فرد غير الموجود منها في فرد آخر بالعدد و لو كان واحدا موجودا بوحدته في جميع الأفراد لكان الواحد كثيرا بعينه و هو محال و كان الواحد بالعدد متصفا بصفات متقابلة و هو محال.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "A quiddity can be considered in three ways with respect to what may be added to it. It may be taken *with the condition of something* (bi-sharṭ shayʾ), *with the condition of nothing else* (bi-sharṭ lā), or *without such a condition* (lā bi-sharṭ). These alternatives exhaust the possibilities of consideration.\n\nIn the first case the quiddity is taken together with some particular determination. Humanity, considered together with Zayd's individual characteristics, for example, is predicable of that compound as so determined.\n\nIn the second case something else is excluded from the consideration. This itself has two senses. One may restrict attention to the quiddity as it is in itself and consider it nothing beyond itself; this is the ‘condition of no addition’ employed in the analysis of quiddity already discussed. Alternatively, one may take the quiddity by itself so that any concept accompanying it is treated as an additional constituent outside its account. If it is conjoined with such a concept, the quiddity then becomes a *part* or material principle of the composite and is not predicated of the whole as the whole.\n\nIn the third case no condition is imposed. The quiddity is considered absolutely, while allowing either the presence or the absence of an additional determination.\n\nThe first is called *mixed* quiddity (al-māhiyya al-makhlūṭa), the second *abstracted* quiddity (al-māhiyya al-mujarrada), and the third *unconditioned* or *absolute* quiddity (al-māhiyya al-muṭlaqa).\n\nThe quiddity divided according to these three considerations is the *natural universal* (al-kullī al-ṭabīʿī). Universality is attributed to it by the mind, allowing it to be applied to many instances. It exists externally insofar as some of its determinate and unconditioned instances exist externally: what is divided is preserved in its divisions and exists through their existence.\n\nHowever, the natural universal existing in one individual is not numerically the same existent as the natural universal existing in another. If one numerically identical existent were simultaneously present, as such, in all individuals, the numerically one would be numerically many, an impossibility. It would also have mutually opposing determinations simultaneously. Thus the shared nature does not exist as a single numerically identical individual distributed among all its instances.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 96,
@@ -913,6 +917,14 @@
         {
           "type": "editorial synthesis of lecture notes",
           "text": "The water examples can clarify bi-sharṭ shayʾ, bi-sharṭ lā, and lā bi-sharṭ, but carefully distinguish the dividing notion (lā bi-sharṭ maqsamī) from an individual member (lā bi-sharṭ qismī). (Krishnan, printed p. 71; attribution to the lecturer as mediated by the note-taker.)"
+        },
+        {
+          "type": "Terminology",
+          "text": "The various senses of bi-sharṭ lā, especially the contrast between considering an essence in isolation and treating it as a non-predicable constituent of a composite, must be distinguished."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The natural universal has extramental existence *in* individuals, but this does not make it one numerically identical entity existing in every individual."
         }
       ]
     },
@@ -923,8 +935,8 @@
       "title": "Essential and accidental predicates",
       "arabicTitle": "الفصل الثالث في معنى الذاتي والعرضي",
       "arabic": "المعاني المعتبرة في الماهيات المأخوذة في حدودها و هي التي ترتفع الماهية بارتفاعها تسمى الذاتيات و ما وراء ذلك عرضيات محمولة فإن توقف انتزاعها و حملها على انضمام سميت محمولات بالضميمة كانتزاع الحار و حملها على الجسم من انضمام الحرارة إليه و إلا فالخارج المحمول كالعالي و السافل. و الذاتي يميز من غيره بوجوه من خواصه: منها أن الذاتيات بينة لا تحتاج في ثبوتها لذي الذاتي إلى وسط و منها أنها غنية عن السبب بمعنى أنها لا تحتاج إلى سبب وراء سبب ذي الذاتي فعله وجود الماهية بعينها علة أجزائها الذاتية. و منها أن الأجزاء الذاتية متقدمة على ذي الذاتي. و الإشكال في تقدم الأجزاء على الكل بأن الأجزاء هي الكل بعينه فكيف تتقدم على نفسها مندفع بأن الاعتبار مختلف فالأجزاء بالأسر متقدمة على الأجزاء بوصف الاجتماع و الكلية على أنها إنما سميت أجزاء لكون الواحد منها جزءا من الحد و إلا فالواحد منها عين الكل أعني ذي الذاتي.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The intelligible meanings included in a quiddity's definition, such that removal of any one would remove that quiddity, are called its *essential constituents* (dhātiyyāt). Predicates outside this defining account are *accidental* (ʿaraḍiyyāt).\n\nAccidental predicates are further distinguished. If abstracting and attributing them requires the addition of an actual determination to the subject, they are *predicates by an added constituent* (maḥmūlāt bi-l-ḍamīma): for example, ‘hot’ is predicated of a body because heat is present in it. Where no such externally added constituent is required, one speaks of a *predicate abstracted externally* (al-khārij al-maḥmūl), as with ‘higher’ and ‘lower’.\n\nAn essential constituent can be recognised by certain marks. First, the essential belongs to its subject immediately, without a middle term that makes it belong. Second, it requires no separate cause beyond the cause of the thing whose essential constituent it is: what brings the complete quiddity into actuality thereby brings its essential constituents into actuality. Third, essential constituents are prior to that of which they are constituents.\n\nAn objection to the last point notes that the constituents are the whole itself; how can they precede themselves? The reply is that the respects differ. The constituents taken collectively as constituents are prior to the constituents insofar as they are united into a whole. Moreover, each is called a constituent chiefly because it is one component of the *definition*. Apart from such intellectual decomposition, an essential constituent is identical in reality with the complete thing, though conceptually distinguished in the defining account.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 98,
@@ -934,6 +946,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 75 (PDF p. 76); chapter 5.3. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "Dhātī means an essential constituent of the defining account, not merely a predicate that invariably accompanies a subject. The passage later treats the relation between such constituents and the complete individual as a distinction of consideration."
         }
       ]
     },
@@ -944,8 +960,8 @@
       "title": "Genus, differentia, and species",
       "arabicTitle": "الفصل الرابع في الجنس والفصل والنوع وبعض ما يلحق بذلك",
       "arabic": "الماهية التامة التي لها آثار خاصة حقيقية من حيث تمامها تسمى نوعا كالإنسان و الفرس. ثم إنا نجد بعض المعاني الذاتية التي في الأنواع يشترك فيه أكثر من نوع واحد كالحيوان المشترك بين الإنسان و الفرس و غيرهما كما أن فيها ما يختص بنوع كالناطق المختص بالإنسان و يسمى المشترك فيه جنسا و المختص فصلا و ينقسم الجنس و الفصل إلى قريب و بعيد و أيضا ينقسم الجنس و النوع إلى عال و متوسط و سافل و قد فصل ذلك في المنطق ثم إنا إذا أخذنا ماهية الحيوان مثلا و هي مشترك فيها أكثر من نوع و عقلناها :بأنها جسم نام حساس متحرك بالإرادة جاز أن نعقلها وحدها بحيث يكون كل ما يقارنها من المفاهيم زائدا عليها خارجا من ذاتها و تكون هي مباينة للمجموع غير محمولة عليه كما أنها غير محمولة على المقارن الزائد كانت الماهية المفروضة مادة بالنسبة إلى ما يقارنها و علة مادية للمجموع و جاز أن نعقلها مقيسة إلى عدة من الأنواع كان نعقل ماهية الحيوان بأنها الحيوان الذي هو إما إنسان و إما فرس و إما بقر و إما غنم فتكون ماهية ناقصة غير محصلة حتى ينضم إليها فصل أحد تلك الأنواع فيحصلها نوعا تاما فتكون هي ذلك النوع بعينه و تسمى الماهية المأخوذة بهذا الاعتبار جنسا و الذي يحصله فصلا. و الاعتباران في الجزء المشترك جاريان بعينهما في الجزء المختص و يسمى بالاعتبار الأول صورة و يكون جزءا لا يحمل على الكل و لا على الجزء الآخر و بالاعتبار الثاني فصلا يحصل الجنس و يتمم النوع و يحمل عليه حملا أوليا. و يظهر مما تقدم أولا أن الجنس هو النوع مبهما و أن الفصل هو النوع محصلا و النوع هو الماهية التامة من غير نظر إلى إبهام أو تحصيل. و ثانيا أن كلا من الجنس و الفصل محمول على النوع حملا أوليا و أما النسبة بينهما أنفسهما فالجنس عرض عام بالنسبة إلى الفصل و الفصل خاصة بالنسبة إليه. و ثالثا أن من الممتنع أن يتحقق جنسان في مرتبة واحدة و كذا فصلان في مرتبة واحدة لنوع لاستلزام ذلك كون نوع واحد نوعين. و رابعا أن الجنس و المادة متحدان ذاتا مختلفان اعتبارا فالمادة إذا أخذت لا بشرط كانت جنسا كما أن الجنس إذا أخذ بشرط لا كان مادة و كذا الصورة فصل إذا أخذت لا بشرط كما أن الفصل صورة إذا أخذ بشرط لا.\n\nو اعلم أن المادة في الجواهر المادية موجودة في الخارج على ما سيأتي و أما الأعراض فهي بسيطة غير مركبة في الخارج ما به الاشتراك فيها عين ما به الامتياز و إنما العقل يجد فيها مشتركات و مختصات فيعتبرها أجناسا و فصولا ثم يعتبرها بشرط لا فتصير مواد و صورا عقلية.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "A complete quiddity which, in virtue of its completeness, has its own proper real effects is called a *species* (nawʿ), as with the human being or the horse.\n\nSome essential meanings occur in several species, while others are particular to one. Animality, for example, is common to humans, horses, and other species. Rationality is specific to human being. The common essential constituent is called *genus* (jins), and the specific determining constituent *differentia* (faṣl). Genus and differentia are divided into proximate and remote, and genera and species can be arranged as highest, intermediate, or lowest. Logic examines these classifications in detail.\n\nConsider the quiddity ‘animal’, understood as a growing, sensing body capable of voluntary motion. We may take animality by itself in such a way that whatever is joined to it is excluded from its own account. It would then be other than the resulting whole, and neither be predicated of the whole nor of the added constituent. Under this consideration it serves as *matter*, a material principle and material cause relative to the composite.\n\nAlternatively, we may consider animality in relation to several species: human being, horse, cow, sheep, and so on. Animality is then an incomplete and indeterminate essence, made into a determinate species only by the addition of the appropriate differentia. Under this consideration it is *genus*, and what completes it is *differentia*.\n\nThe same two considerations apply to the specific determining constituent. Taken as a constituent excluded from predication of the whole, it is *form* (ṣūra). Taken as determining and completing the genus into a species, it is *differentia*, and is predicated of the species by primary essential predication.\n\nSeveral conclusions follow. First, genus is the species considered in its indeterminacy, differentia is the species in its determination, and species is the complete quiddity without isolating either aspect.\n\nSecond, genus and differentia are each predicable of the species by primary predication. But genus, relative to differentia considered independently, is a common accidental predicate, while differentia relative to genus is a distinctive property. They do not constitute one another's definitions in the same way they constitute the species.\n\nThird, a single species cannot possess two distinct genera at the same level or two distinct differentiae at the same level, for this would make one complete specific nature into two species.\n\nFourth, matter and genus are identical in their underlying content but differ in consideration: matter considered without a condition excluding predicability becomes genus, while genus considered as a non-predicable constituent becomes matter. Likewise, form becomes differentia under the former consideration, and differentia becomes form under the latter.\n\nMatter in material substances exists externally, as will be discussed. Accidents, by contrast, are simple externally: the aspect common to them and the aspect by which they differ are not distinct material constituents. The intellect can nevertheless distinguish common and proper aspects in accidents, consider them as genera and differentiae, and then regard those aspects as logically separated ‘matter’ and ‘form’ by the relevant exclusionary consideration.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 100,
@@ -955,6 +971,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 76 (PDF p. 77); chapter 5.4. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminology",
+          "text": "The distinction between genus/differentia and matter/form depends here on lā bi-sharṭ versus bi-sharṭ lā as conditions of predicability. The author does not claim that the material principle as material is itself predicated as an essential universal."
         }
       ]
     },
@@ -965,8 +985,8 @@
       "title": "Properties of the differentia",
       "arabicTitle": "الفصل الخامس في بعض أحكام الفصل",
       "arabic": "ينقسم الفصل نوع انقسام إلى المنطقي و الاشتقاقي فالفصل المنطقي هو أخص اللوازم التي تعرض النوع و أعرفها و هو إنما يؤخذ و يوضع في الحدود مكان الفصول الحقيقية لصعوبة الحصول غالبا على الفصل الحقيقي الذي يقوم النوع كالناطق للإنسان و الصاهل للفرس فإن المراد بالنطق مثلا إما النطق بمعنى التكلم و هو من الكيفيات المسموعة و إما النطق بمعنى إدراك الكليات و هو عندهم من الكيفيات النفسانية و الكيفية كيفما كانت من الأعراض و العرض لا يقوم الجوهر و كذا الصهيل و لذا ربما كان أخص اللوازم أكثر من واحد فتوضع جميعا موضع الفصل الحقيقي كما يؤخذ الحساس و المتحرك بالإرادة جميعا فصلا للحيوان و لو كان فصلا حقيقيا لم يكن إلا واحدا كما تقدم. و الفصل الاشتقاقي مبدأ الفصل المنطقي و هو الفصل الحقيقي المقوم للنوع ككون الإنسان ذا نفس ناطقة في الإنسان و كون الفرس ذا نفس صاهلة في الفرس. ثم إن حقيقة النوع هي فصله الأخير و ذلك لأن الفصل المقوم هو محصل نوعه فما أخذ في أجناسه و فصوله الآخر على نحو الإبهام مأخوذ فيه على وجه التحصل. و يتفرع عليه أن هذية النوع به فنوعية النوع محفوظة به و لو تبدل بعض أجناسه و كذا لو تجردت صورته التي هي الفصل بشرط لا عن المادة التي هي الجنس بشرط لا بقي النوع على حقيقة نوعيته كما لو تجردت النفس الناطقة عن البدن. ثم إن الفصل غير مندرج تحت جنسه بمعنى أن الجنس غير مأخوذ في حده و إلا احتاج إلى فصل يقومه و ننقل الكلام إليه و يتسلسل بترتب فصول غير متناهية.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The differentia is distinguished into a *logical* differentia and an *originating* or *derivative-source* differentia.\n\nThe logical differentia is the most distinctive and best-known concomitant belonging to a species. It is placed in definitions in the position of the real differentia because discovering the true constituent which makes a species what it is is often difficult.\n\nThus ‘rational’ is used as the differentia of the human being and ‘neighing’ as that of a horse. But ‘speech’ in the sense of utterance is a sensible quality, and speech in the sense of apprehending universals is, according to the account at issue, a psychical quality. A quality, however, is an accident, and an accident does not constitute the substantial essence of a thing. The same reasoning applies to neighing.\n\nThere may consequently be more than one distinctive concomitant available as a logical differentia: for animality we sometimes employ both sensation and voluntary motion. If these were each the true constitutive differentia of one species, there could not be more than one at the same level, as shown above.\n\nThe *originating differentia* is the underlying principle from which the logical differentia follows—the true differentia constituting the species. In the human being this is the possession of a rational soul, and in the horse the possession of a soul of the sort from which neighing follows.\n\nThe truth of a species, moreover, is determined by its final differentia. The constitutive differentia makes the species determinate; what was included in its preceding genera and subordinate differentiae indeterminately is included in the final differentia in a determinate way.\n\nConsequently, the specific identity of the species is preserved through its final differentia even if some of its higher generic conditions change. If the form corresponding to the differentia becomes separate from the matter corresponding to its genus, the specific nature continues insofar as that form remains. The author illustrates this with the rational soul's separation from the body.\n\nFinally, differentia does not fall under its own genus in the sense that the genus enters the differentia's definition. Were the genus part of the differentia's essence, the latter would need another differentia to determine it, and so on without end, generating an infinite regress of constitutive differentiae.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 104,
@@ -976,6 +996,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 81 (PDF p. 82); chapter 5.5. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The logical differentia can be a distinctive proprium used *in place of* the unknown constitutive differentia. Muẓaffar's logic calls attention to precisely this limitation of formal definition."
+        },
+        {
+          "type": "Interpretive note",
+          "text": "The example of the rational soul's subsistence apart from the body belongs to the author's account of a species' final differentia; it should not silently be assimilated to every Aristotelian or Thomistic account of form and subsistence."
         }
       ]
     },
@@ -986,8 +1014,8 @@
       "title": "Species and its properties",
       "arabicTitle": "الفصل السادس في النوع وبعض أحكامه",
       "arabic": "الماهية النوعية توجد أجزاؤها في الخارج بوجود واحد لأن الحمل بين كل منها و بين النوع أولي و النوع موجود بوجود واحد و أما في الذهن فهي متغايرة بالإبهام و التحصل و لذلك كان كل من الجنس و الفصل عرضيا للآخر زائدا عليه كما تقدم. و من هنا ما ذكروا أنه لا بد في المركبات الحقيقية أي الأنواع المادية المؤلفة من مادة و صورة أن يكون بين أجزائها فقر و حاجة من بعضها إلى بعض حتى ترتبط و تتحد حقيقة واحدة و قد عدوا المسألة ضرورية لا تفتقر إلى برهان. و يمتاز المركب الحقيقي من غيره بالوحدة الحقيقية و ذلك بأن يحصل من تألف الجزئين مثلا أمر ثالث غير كل واحد منهما له آثار خاصة غير آثارهما الخاصة كالأمور المعدنية التي لها آثار خاصة غير آثار عناصرها لا كالعسكر المركب من أفراد و البيت المؤلف من اللبن و الجص و غيرهما. و من هنا أيضا يترجح القول بأن التركيب بين المادة و الصورة اتحادي لا انضمامي كما سيأتي. ثم إن من الماهيات النوعية ما هي كثيرة الأفراد كالأنواع التي لها تعلق ما بالمادة مثل الإنسان و منها ما هو منحصر في فرد كالأنواع المجردة تجردا تاما من العقول و ذلك لأن كثرة أفراد النوع إما أن تكون تمام ماهية النوع أو بعضها أو لازمة لها و على جميع هذه التقادير لا يتحقق لها فرد لوجوب الكثرة في كل ما صدقت عليه و لا كثرة إلا مع الآحاد هذا خلف و إما أن تكون لعرض مفارق يتحقق بانضمامه و عدم انضمامه الكثرة و من الواجب حينئذ أن يكون في النوع إمكان العروض و الانضمام و لا يتحقق ذلك إلا بمادة كما سيأتي فكل نوع كثير الأفراد فهو مادي و ينعكس إلى أن ما لا مادة له و هو النوع المجرد ليس بكثير الأفراد و هو المطلوب.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The essential constituents of a specific quiddity have one existence outside the mind, because each is predicated of the species by primary essential predication, while the species itself exists as one actuality. In the mind, however, genus and differentia differ through indeterminacy and determination. Each, when considered independently of the other, is therefore an accidental predicate relative to the other, as explained above.\n\nIt follows that a true composite—a material species constituted by matter and form—requires a dependence or need between its constituent principles, allowing them to unite as one reality. Philosophers count this interdependence as evident rather than as something requiring a separate demonstration.\n\nA genuine composite is distinguished from a mere aggregate by its true unity. When two constituents are combined, a third actuality results that differs from either constituent taken alone and has properties not reducible to their individual properties. A mineral substance, for example, has properties other than those of the elements composing it. This contrasts with an army, which is a plurality of soldiers, or a building, an arrangement of bricks, plaster, and other components. The author therefore favours the thesis that the composition of matter and form is a unity of actualisation, not merely the juxtaposition of two completed things.\n\nSome species have many individual members, as is the case with species that have a relation to matter, such as human beings. Other species, wholly immaterial intellectual substances, have only one individual of their specific nature.\n\nFor plurality of individuals cannot be the whole of a species' essence, a part of its essence, or an inseparable concomitant of it. Under any of those alternatives, no single individual would instantiate the species: wherever the species occurred, plurality would be required, whereas plurality presupposes individuals.\n\nPlurality must instead arise from a separable condition whose presence or absence allows individuals of the same specific quiddity to be multiplied. Such receptivity to additional individuating conditions requires matter. Therefore any species with numerous individuals is material; conversely, a species wholly without matter cannot have a plurality of individuals.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 106,
@@ -997,6 +1025,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 83 (PDF p. 84); chapter 5.6. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The contrast between a real composite and an army or a building concerns substantial unity versus aggregation. It is not a denial that aggregates have genuine relations or coordinated activities."
+        },
+        {
+          "type": "Interpretive note",
+          "text": "The conclusion that an immaterial species admits a single individual follows the author's assumptions about the role of matter in numerical multiplication; the premises and their wider philosophical reception remain open to analysis."
         }
       ]
     },
@@ -1007,8 +1043,8 @@
       "title": "Universals, particulars, and their existence",
       "arabicTitle": "الفصل السابع في الكلي والجزئي ونحو وجودهما",
       "arabic": "ربما ظن أن الكلية و الجزئية إنما هما في نحو الإدراك فالإدراك الحسي لقوته يدرك الشيء بنحو يمتاز من غيره مطلقا و الإدراك العقلي لضعفه يدركه بنحو لا يمتاز مطلقا و يقبل الانطباق على أكثر من واحد كالشبح المرئي من بعيد المحتمل أن يكون هو زيدا أو عمرا أو خشبة منصوبة أو غير ذلك و هو أحدها قطعا و كالدرهم الممسوح القابل الانطباق على دراهم مختلفة. و يدفعه أن لازمه أن لا يصدق المفاهيم الكلية كالإنسان مثلا على أزيد من واحد من أفرادها حقيقة و أن يكذب القوانين الكلية المنطبقة على مواردها اللا متناهية إلا في واحد منها كقولنا الأربعة زوج و كل ممكن فلوجوده علة و صريح الوجدان يبطله فالحق أن الكلية و الجزئية نحوان من وجود الماهيات.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "One might suppose that universality and particularity belong merely to the manner of cognition. On this hypothesis, sense perception, being stronger, grasps its object as distinct from every other thing, whereas intellectual cognition, being weaker, apprehends something without full distinction and thus capable of being applied to several objects.\n\nA distant shape, for example, might turn out to be Zayd, ʿAmr, an upright piece of wood, or something else; in fact it is only one of these. An effaced coin may likewise be taken for several different coins. The indeterminacy of our perception does not mean that the thing perceived is actually universal.\n\nBut if universality were only this weakness of discrimination, a universal concept such as ‘human’ could not truly be predicated of more than one of its individual instances. Likewise, universal laws applying to indefinitely many cases, such as ‘four is even’ or ‘every contingent existent has a cause of its existence’, would be true of at most one case and false of the others. Direct intellectual awareness rejects this result.\n\nThe correct view, therefore, is that universality and particularity correspond to distinct modes in which quiddities exist, not merely degrees of clarity or indistinctness in a perceiver's psychological state.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 108,
@@ -1018,6 +1054,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 85 (PDF p. 86); chapter 5.7. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "A universal concept is not merely an indistinct image. Its capacity for genuine predication of many is central to the author's realist account of universality."
         }
       ]
     },
@@ -1028,8 +1068,8 @@
       "title": "Distinction and individuation of quiddities",
       "arabicTitle": "الفصل الثامن في تميز الماهيات وتشخصها",
       "arabic": "تميز ماهية من ماهية أخرى بينونتها منها و مغايرتها لها بحيث لا تتصادقان كتميز الإنسان من الفرس باشتماله على الناطق و التشخص كون الماهية بحيث يمتنع صدقها على كثيرين كتشخص الإنسان الذي هو زيد. و من هنا يظهر أولا أن التميز وصف إضافي للماهية بخلاف التشخص فإنه نفسي غير إضافي. و ثانيا أن التميز لا ينافي الكلية فإن انضمام كلي إلى كلي لا يوجب الجزئية و لا ينتهي إليها و إن تكرر بخلاف التشخص. ثم إن التميز بين ماهيتين إما بتمام ذاتيهما كالأجناس العالية البسيطة إذ لو كان بين جنسين عاليين مشترك ذاتي كان جنسا لهما واقعا فوقهما و قد فرضا جنسين عاليين هذا خلف. و إما ببعض الذات و هذا فيما كان بينهما جنس مشترك فتتمايزان بفصلين كالإنسان و الفرس. و إما بالخارج من الذات و هذا فيما إذا اشتركتا في الماهية النوعية فتتمايزان بالأعراض المفارقة كالإنسان الطويل المتميز بطوله من الإنسان القصير. و هاهنا قسم رابع أثبته من جوز التشكيك في الماهية و هو اختلاف نوع واحد بالشدة و الضعف و التقدم و التأخر و غيرها في عين رجوعها إلى ما به الاشتراك و الحق أن لا تشكيك إلا في حقيقة الوجود و فيها يجري هذا القسم من الاختلاف و التمايز. و أما التشخص فهو في الأنواع المجردة من لوازم نوعيتها لما عرفت أن النوع المجرد منحصر في فرد و هذا مرادهم بقولهم إنها مكتفية بالفاعل توجد بمجرد إمكانها الذاتي و في الأنواع المادية كالعنصريات بالأعراض اللاحقة و عمدتها الأين و متى و الوضع و هي تشخص النوع بلحوقها به في عرض عريض بين مبدإ تكونه إلى منتهاه كالفرد من الإنسان الواقع بين حجم كذا و حجم كذا و مبدأ زماني كذا إلى مبدإ زماني كذا و على هذا القياس هذا هو المشهور عندهم. و الحق كما ذهب إليه المعلم الثاني و تبعه صدر المتألهين أن التشخص بالوجود لأن انضمام الكلي إلى الكلي لا يفيد الجزئية فما سموها أعراضا مشخصة هي من لوازم التشخص و أماراته.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "To distinguish one quiddity from another is to mark their difference so that they are not predicable of one another. Human being is distinguished from horse, for example, by the possession of rationality. *Individuation* (tashakhkhuṣ), by contrast, is the determination of a quiddity in such a way that it cannot be predicated of many, as with the individual human being Zayd.\n\nTwo consequences follow. First, distinction is a relative description of a quiddity, whereas individuation concerns the thing itself and is not intrinsically a comparative relation. Second, distinction is compatible with universality: adding one universal concept to another still does not produce particularity, no matter how often the operation is repeated. Individuation is different.\n\nDistinction between quiddities can arise in three ways. It can be by their entire essential content, as with the highest genera, which possess no superior genus common to both; otherwise they would not be highest genera. It can be by part of the essence, as when two species share a genus but differ in their specific differentiae, like human and horse. Or it can be by something external to the specific essence, as when individuals or qualified cases belonging to one species are distinguished by separable accidents, as a tall human differs from a short one.\n\nA fourth proposed kind allows a single quiddity to be distinguished by intensity and weakness, priority and posteriority, with the aspect of distinction returning to the aspect of agreement. This is the doctrine of *gradation in quiddity*. The author denies it, arguing that true gradation belongs only to the reality of existence and that this fourth kind of distinction must be understood there instead.\n\nAs for individuation, wholly immaterial species have only one individual, as already shown, and individuation therefore accompanies their specific nature. This is what is meant when philosophers say that such substances require no receptivity beyond the agent: they are actualised by an agent in consequence of intrinsic possibility alone.\n\nIn material species, however, the common view identifies individuating accidents, especially place, time, and position, as the determining factors. A human individual would, on that account, be specified by a range of bodily magnitude, temporal beginning and ending, and other particular conditions accompanying the individual's development.\n\nThe author follows al-Fārābī and Ṣadr al-Mutaʾallihīn in rejecting these accidents as what fundamentally individuates. Adding one universal predicate to another, however many times, does not yield numerical individuality. Individuation is therefore *through existence itself*. The so-called individuating accidents are instead consequences and marks of an already individuated existence.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 110,
@@ -1039,6 +1079,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 85 (PDF p. 86); chapter 5.8. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The argument distinguishes logical distinction by properties from numerical individuation. In the author's account, individuation is through existential actuality, not through a complete list of qualitative predicates."
+        },
+        {
+          "type": "Comparative note",
+          "text": "The critique of individuation by accidental features is important for relating Sadrāian individuation to Aquinas's principle of designated matter, which must not simply be identified with a list of generic accidents."
         }
       ]
     },
