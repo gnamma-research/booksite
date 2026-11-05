@@ -2568,172 +2568,19 @@
   ],
   "glossary": [
     {
-      "term": "wujūd",
-      "arabic": "وجود",
-      "english": "Existence",
-      "definition": "The act or reality of being. Distinguish the concept of existence from the extra-mental reality to which it applies.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-01"
+      "term": "ʿilm ḥuṣūlī",
+      "arabic": "علم حصولي",
+      "english": "Acquired knowledge",
+      "definition": "Knowledge through the presence of a form representing what is known. “Acquired” here names a mode of knowledge, not necessarily the result of deliberate learning.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-01"
     },
     {
-      "term": "mawjūd",
-      "arabic": "موجود",
-      "english": "Existent; being",
-      "definition": "That which exists. “Being” can name an existent, so the translation usually reserves “existence” for wujūd.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-INTRO"
-    },
-    {
-      "term": "māhiyya",
-      "arabic": "ماهية",
-      "english": "Quiddity",
-      "definition": "What a thing is, considered as the answer to “What is it?” Its conceptual distinction from existence is central to the work.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-V-01"
-    },
-    {
-      "term": "aṣālat al-wujūd",
-      "arabic": "أصالة الوجود",
-      "english": "Primacy of existence",
-      "definition": "The thesis that existence is primary in concrete realization, while quiddities are abstracted from it. This is an ontological thesis, not a claim that ordinary things are imaginary.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-02"
-    },
-    {
-      "term": "iʿtibārī",
-      "arabic": "اعتباري",
-      "english": "Intellectually considered; derivative; conventional",
-      "definition": "A context-sensitive term. A quiddity’s derivative status, an abstract philosophical concept, and a practical convention should not automatically receive the same English rendering.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-10"
-    },
-    {
-      "term": "tashkīk",
-      "arabic": "تشكيك",
-      "english": "Gradation",
-      "definition": "Unity of a reality across different degrees, where the basis of difference returns to the basis of agreement. Distinguish this from mere ambiguity of a word.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-03"
-    },
-    {
-      "term": "mafhūm / miṣdāq",
-      "arabic": "مفهوم / مصداق",
-      "english": "Concept / instance",
-      "definition": "The intelligible meaning and what it applies to. Distinct concepts need not entail distinct externally existing things.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-01"
-    },
-    {
-      "term": "nafs al-amr",
-      "arabic": "نفس الأمر",
-      "english": "The fact of the matter",
-      "definition": "The domain in relation to which a judgment is true; it should not automatically be reduced to a separate physical object.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-02"
-    },
-    {
-      "term": "al-wujūd al-rābiṭ",
-      "arabic": "الوجود الرابط",
-      "english": "Linking existence",
-      "definition": "Existence whose reality is dependent rather than independently established. Attend to the distinction between a proposition’s copular relation and an effect’s dependence upon its cause.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-II-01"
-    },
-    {
-      "term": "fī nafsihi / li-nafsihi / bi-nafsihi",
-      "arabic": "في نفسه / لنفسه / بنفسه",
-      "english": "In itself / for itself / through itself",
-      "definition": "Three distinct relations. The translation retains their differences rather than flattening all of them into “independent.”",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-II-03"
-    },
-    {
-      "term": "wujūd dhihnī",
-      "arabic": "وجود ذهني",
-      "english": "Mental existence",
-      "definition": "The mode in which something is present as known without necessarily producing the external effects associated with its extra-mental existence.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-III-01"
-    },
-    {
-      "term": "wujūb / imkān / imtināʿ",
-      "arabic": "وجوب / إمكان / امتناع",
-      "english": "Necessity / possibility or contingency / impossibility",
-      "definition": "The basic modalities. Imkān is “contingency” when contrasted with intrinsic necessity, but “possibility” is preferable in many other modal contexts.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IV-01"
-    },
-    {
-      "term": "bi-l-dhāt / bi-l-ghayr",
-      "arabic": "بالذات / بالغير",
-      "english": "Intrinsically / through another",
-      "definition": "Intrinsic status must be distinguished from status derived from another. A contingent thing can become necessary through its complete cause without becoming intrinsically necessary.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IV-02"
-    },
-    {
-      "term": "jawhar / ʿaraḍ",
-      "arabic": "جوهر / عرض",
-      "english": "Substance / accident",
-      "definition": "A substance is not in a subject independent of it; an accident exists in such a subject. This distinction does not make accidents unreal.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VI-02"
-    },
-    {
-      "term": "mādda / ṣūra",
-      "arabic": "مادة / صورة",
-      "english": "Matter / form",
-      "definition": "Matter is the receptive principle and form the actuality through which it is determined. Prime matter is not simply a small physical particle.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VI-05"
-    },
-    {
-      "term": "al-ḥaml al-awwalī",
-      "arabic": "الحمل الأولي",
-      "english": "Primary predication",
-      "definition": "Predication considered through identity of meaning or quiddity. Distinguish it from a predication concerning concrete instances.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VII-03"
-    },
-    {
-      "term": "al-ḥaml al-shāʾiʿ",
-      "arabic": "الحمل الشائع",
-      "english": "Common predication",
-      "definition": "Predication grounded in unity of instance despite conceptual difference. The literal rendering “industrial predication” is avoided.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VII-03"
-    },
-    {
-      "term": "ʿilla / maʿlūl",
-      "arabic": "علة / معلول",
-      "english": "Cause / effect",
-      "definition": "The explanatory dependence of an effect upon a cause need not imply that the cause precedes it in time.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VIII-01"
-    },
-    {
-      "term": "al-ʿilla al-tāmma",
-      "arabic": "العلة التامة",
-      "english": "Complete cause",
-      "definition": "The total causal condition upon whose realization the effect necessarily follows. An incomplete cause alone does not suffice for the effect.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VIII-03"
-    },
-    {
-      "term": "jaʿl basīṭ",
-      "arabic": "جعل بسيط",
-      "english": "Simple production",
-      "definition": "Bringing something into existence, distinguished from making an already posited thing possess an additional determination.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-08"
-    },
-    {
-      "term": "quwwa / fiʿl",
-      "arabic": "قوة / فعل",
-      "english": "Potentiality / actuality",
-      "definition": "A receptive possibility and its realization. Quwwa also means an active power; fiʿl also means an act. The contrast determines the translation.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-PRE"
-    },
-    {
-      "term": "al-ḥaraka al-jawhariyya",
-      "arabic": "الحركة الجوهرية",
-      "english": "Substantial motion",
-      "definition": "Change in the existence of material substance itself, rather than only in its accidental states. Its subject and continuity require separate argument.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-08"
-    },
-    {
-      "term": "al-ḥaraka al-tawassuṭiyya / al-qaṭʿiyya",
-      "arabic": "الحركة التوسطية / القطعية",
-      "english": "Intermediate / traversal motion",
-      "definition": "Two considerations of motion: the moving thing’s state between endpoints, and its successive passage through the course.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-04"
-    },
-    {
-      "term": "zamān / dahr / sarmad",
-      "arabic": "زمان / دهر / سرمد",
-      "english": "Time / dahr / sarmad",
-      "definition": "Time measures motion. Dahr and sarmad name technical atemporal relations of coexistence. Rendering all three with ordinary temporal language obscures the argument.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-11"
+      "term": "ʿaql bi-l-fiʿl",
+      "arabic": "عقل بالفعل",
+      "english": "Actual intellect",
+      "definition": "The intellect in actuality as possessing intelligible contents, distinguished from initial receptivity or mere potentiality.",
+      "passageId": "B-XI-05",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
     },
     {
       "term": "qidam / ḥudūth",
@@ -2743,18 +2590,48 @@
       "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-X-04"
     },
     {
-      "term": "ʿilm ḥuḍūrī",
-      "arabic": "علم حضوري",
-      "english": "Knowledge by presence",
-      "definition": "Knowledge in which the known itself is present to the knower, rather than known through a separately mediating acquired form.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-11"
+      "term": "dawr",
+      "arabic": "دور",
+      "english": "Causal circularity",
+      "definition": "Dependence of a cause upon its own effect through a reciprocal causal sequence, not merely reciprocal logical implication.",
+      "passageId": "B-VII-05",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
     },
     {
-      "term": "ʿilm ḥuṣūlī",
-      "arabic": "علم حصولي",
-      "english": "Acquired knowledge",
-      "definition": "Knowledge through the presence of a form representing what is known. “Acquired” here names a mode of knowledge, not necessarily the result of deliberate learning.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-01"
+      "term": "sabaq bi-l-ʿilliyya",
+      "arabic": "سبق بالعلية",
+      "english": "Causal priority",
+      "definition": "Priority of a cause in the order of dependence, even when cause and effect are contemporaneous in time.",
+      "passageId": "B-IX-01",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "ʿilla / maʿlūl",
+      "arabic": "علة / معلول",
+      "english": "Cause / effect",
+      "definition": "The explanatory dependence of an effect upon a cause need not imply that the cause precedes it in time.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VIII-01"
+    },
+    {
+      "term": "al-ḥaml al-shāʾiʿ",
+      "arabic": "الحمل الشائع",
+      "english": "Common predication",
+      "definition": "Predication grounded in unity of instance despite conceptual difference. The literal rendering “industrial predication” is avoided.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VII-03"
+    },
+    {
+      "term": "al-ʿilla al-tāmma",
+      "arabic": "العلة التامة",
+      "english": "Complete cause",
+      "definition": "The total causal condition upon whose realization the effect necessarily follows. An incomplete cause alone does not suffice for the effect.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VIII-03"
+    },
+    {
+      "term": "mafhūm / miṣdāq",
+      "arabic": "مفهوم / مصداق",
+      "english": "Concept / instance",
+      "definition": "The intelligible meaning and what it applies to. Distinct concepts need not entail distinct externally existing things.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-01"
     },
     {
       "term": "taṣawwur / taṣdīq",
@@ -2764,6 +2641,218 @@
       "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-08"
     },
     {
+      "term": "bi-sharṭ lā",
+      "arabic": "بشرط لا",
+      "english": "Conditioned by exclusion",
+      "definition": "Quiddity considered excluding an accompanying determination; central to certain discussions of genus, differentia, and form.",
+      "passageId": "B-V-02",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "bi-sharṭ shayʾ",
+      "arabic": "بشرط شيء",
+      "english": "Conditioned by something",
+      "definition": "Quiddity considered together with a positive determination, such as humanity with the features of an individual.",
+      "passageId": "B-V-02",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "tanāquḍ",
+      "arabic": "تناقض",
+      "english": "Contradiction",
+      "definition": "The opposition of a proposition and its negation under the same respect, without an intermediate truth value in the classical account.",
+      "passageId": "B-VIII-09",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "taḍādd",
+      "arabic": "تضاد",
+      "english": "Contrariety",
+      "definition": "Opposition between contrary positive characteristics within one field; unlike contradiction, contraries may admit an intermediate.",
+      "passageId": "B-VIII-07",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "ṣūra jismiyya",
+      "arabic": "صورة جسمية",
+      "english": "Corporeal form",
+      "definition": "The substantial form by which a material composite has three-dimensional extension in the author's analysis.",
+      "passageId": "B-VI-04",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "taḍāyuf",
+      "arabic": "تضايف",
+      "english": "Correlation",
+      "definition": "Opposition between correlative terms such as parent/child or above/below, where the meaning of each includes reference to the other.",
+      "passageId": "B-VIII-06",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "taʿayyun",
+      "arabic": "تعين",
+      "english": "Determination",
+      "definition": "Specification or determination of an existent. In discussions of existence, determination by degree must be distinguished from determination by a quiddity.",
+      "passageId": "B-I-06",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "faṣl",
+      "arabic": "فصل",
+      "english": "Differentia",
+      "definition": "The essential determination distinguishing a species within a genus; distinguish this from a proprium that merely accompanies it.",
+      "passageId": "B-V-04",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "imkān istiʿdādī",
+      "arabic": "إمكان استعدادي",
+      "english": "Dispositional possibility",
+      "definition": "A real, degree-bearing preparedness in material things for a further actuality; distinguish from logical or essential contingency.",
+      "passageId": "B-IV-06",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "tamāyuz",
+      "arabic": "تمايز",
+      "english": "Distinction",
+      "definition": "The determination of one item as other than another; what grounds the distinction depends on whether the discussion concerns concepts, quiddities, or concrete existents.",
+      "passageId": "B-I-05",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "ʿilla fāʿiliyya",
+      "arabic": "علة فاعلية",
+      "english": "Efficient cause",
+      "definition": "That which brings an effect into existence, with distinctions between complete and incomplete or preparatory forms of agency.",
+      "passageId": "B-VII-06",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "thubūt",
+      "arabic": "ثبوت",
+      "english": "Establishment; subsistence",
+      "definition": "A context-sensitive term for a thing's being established or obtaining. It must not automatically be identified with external existence in debates about non-existent things.",
+      "passageId": "B-I-09",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "wujūd",
+      "arabic": "وجود",
+      "english": "Existence",
+      "definition": "The act or reality of being. Distinguish the concept of existence from the extra-mental reality to which it applies.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-01"
+    },
+    {
+      "term": "wujūd li-ghayrihi",
+      "arabic": "وجود لغيره",
+      "english": "Existence for another",
+      "definition": "An existent whose being, while actualising its own nature, also removes a privation from another, such as an accidental quality informing a subject.",
+      "passageId": "B-III-03",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "wujūd li-nafsihi",
+      "arabic": "وجود لنفسه",
+      "english": "Existence for itself",
+      "definition": "Existence that actualises its own essence without thereby constituting the accidental perfection of a different subject; not identical to necessary existence.",
+      "passageId": "B-III-03",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "mawjūd",
+      "arabic": "موجود",
+      "english": "Existent; being",
+      "definition": "That which exists. “Being” can name an existent, so the translation usually reserves “existence” for wujūd.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-INTRO"
+    },
+    {
+      "term": "wujūd khārijī",
+      "arabic": "وجود خارجي",
+      "english": "External existence",
+      "definition": "Existence outside the mind, where a thing's characteristic external effects obtain, contrasted with the existence of its intelligible form in cognition.",
+      "passageId": "B-II-01",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "ʿilla ghāʾiyya",
+      "arabic": "علة غائية",
+      "english": "Final cause",
+      "definition": "The end for whose sake an operation is undertaken or made intelligible; not restricted to conscious intention in the author's account.",
+      "passageId": "B-VII-07",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "al-ʿaql al-awwal",
+      "arabic": "العقل الأول",
+      "english": "First intellect",
+      "definition": "The first separate intellectual effect in the emanative hierarchy of the author's philosophical account; not to be identified uncritically with the Necessary Existent.",
+      "passageId": "B-XII-11",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "ʿilla ṣūriyya",
+      "arabic": "علة صورية",
+      "english": "Formal cause",
+      "definition": "The determining substantial principle through which a material thing is the kind of thing that it is.",
+      "passageId": "B-VII-10",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "jins",
+      "arabic": "جنس",
+      "english": "Genus",
+      "definition": "An essential universal shared by different species. A genus alone does not constitute a full essential definition.",
+      "passageId": "B-V-04",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "tashkīk",
+      "arabic": "تشكيك",
+      "english": "Gradation",
+      "definition": "Unity of a reality across different degrees, where the basis of difference returns to the basis of agreement. Distinguish this from mere ambiguity of a word.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-03"
+    },
+    {
+      "term": "ʿālam al-mithāl",
+      "arabic": "عالم المثال",
+      "english": "Imaginal realm",
+      "definition": "An ontological level of imaginal forms described as distinct both from gross matter and from purely intellectual existence.",
+      "passageId": "B-XII-13",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "fī nafsihi / li-nafsihi / bi-nafsihi",
+      "arabic": "في نفسه / لنفسه / بنفسه",
+      "english": "In itself / for itself / through itself",
+      "definition": "Three distinct relations. The translation retains their differences rather than flattening all of them into “independent.”",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-II-03"
+    },
+    {
+      "term": "wujūd mustaqill",
+      "arabic": "وجود مستقل",
+      "english": "Independent existence",
+      "definition": "Existence intelligible as a subject of predication on its own, in contrast to a linking existence; independence of signification is not unrestricted causal independence.",
+      "passageId": "B-III-02",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "tashakhkhuṣ",
+      "arabic": "تشخص",
+      "english": "Individuation",
+      "definition": "The actuality whereby something is this individual rather than another. Tabāṭabāʾī connects individuation ultimately with existence, not a mere aggregation of universal predicates.",
+      "passageId": "B-V-08",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "tasalsul",
+      "arabic": "تسلسل",
+      "english": "Infinite regress",
+      "definition": "An unending sequence; its impossibility in the relevant demonstration concerns an existentially ordered chain of causes, not every infinite series.",
+      "passageId": "B-VII-05",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
       "term": "ʿaql / ʿāqil / maʿqūl",
       "arabic": "عقل / عاقل / معقول",
       "english": "Intellect / knower / intelligible",
@@ -2771,11 +2860,394 @@
       "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-02"
     },
     {
+      "term": "iʿtibārī",
+      "arabic": "اعتباري",
+      "english": "Intellectually considered; derivative; conventional",
+      "definition": "A context-sensitive term. A quiddity’s derivative status, an abstract philosophical concept, and a practical convention should not automatically receive the same English rendering.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-10"
+    },
+    {
+      "term": "maʿqūl",
+      "arabic": "معقول",
+      "english": "Intelligible",
+      "definition": "What is grasped by intellect under an intelligible form; in intellectual self-presence, knower and intelligible are discussed as united.",
+      "passageId": "B-XI-04",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "al-ḥaraka al-tawassuṭiyya / al-qaṭʿiyya",
+      "arabic": "الحركة التوسطية / القطعية",
+      "english": "Intermediate / traversal motion",
+      "definition": "Two considerations of motion: the moving thing’s state between endpoints, and its successive passage through the course.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-04"
+    },
+    {
+      "term": "imkān bi-l-dhāt",
+      "arabic": "إمكان بالذات",
+      "english": "Intrinsic contingency",
+      "definition": "A quiddity, considered in itself, does not require either its existence or its non-existence; this is not the same as physical dispositional potential.",
+      "passageId": "B-IV-07",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "bi-l-dhāt / bi-l-ghayr",
+      "arabic": "بالذات / بالغير",
+      "english": "Intrinsically / through another",
+      "definition": "Intrinsic status must be distinguished from status derived from another. A contingent thing can become necessary through its complete cause without becoming intrinsically necessary.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IV-02"
+    },
+    {
+      "term": "ʿilm ḥuḍūrī",
+      "arabic": "علم حضوري",
+      "english": "Knowledge by presence",
+      "definition": "Knowledge in which the known itself is present to the knower, rather than known through a separately mediating acquired form.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-11"
+    },
+    {
+      "term": "al-wujūd al-rābiṭ",
+      "arabic": "الوجود الرابط",
+      "english": "Linking existence",
+      "definition": "Existence whose reality is dependent rather than independently established. Attend to the distinction between a proposition’s copular relation and an effect’s dependence upon its cause.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-II-01"
+    },
+    {
+      "term": "ʿilla māddiyya",
+      "arabic": "علة مادية",
+      "english": "Material cause",
+      "definition": "The receptive material principle of a composite substance; not identical with the agent that imparts actuality.",
+      "passageId": "B-VII-10",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "ʿaql hayūlānī",
+      "arabic": "عقل هيولاني",
+      "english": "Material intellect",
+      "definition": "The potential receptive capacity for intelligibles in the traditional analysis, called 'material' by analogy rather than because it is a physical material form.",
+      "passageId": "B-XI-05",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "mādda / ṣūra",
+      "arabic": "مادة / صورة",
+      "english": "Matter / form",
+      "definition": "Matter is the receptive principle and form the actuality through which it is determined. Prime matter is not simply a small physical particle.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VI-05"
+    },
+    {
+      "term": "wujūd dhihnī",
+      "arabic": "وجود ذهني",
+      "english": "Mental existence",
+      "definition": "The mode in which something is present as known without necessarily producing the external effects associated with its extra-mental existence.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-III-01"
+    },
+    {
+      "term": "al-kullī al-ṭabīʿī",
+      "arabic": "الكلي الطبيعي",
+      "english": "Natural universal",
+      "definition": "The nature considered as a common essence without the mind's extra consideration of its universality as a logical predicate.",
+      "passageId": "B-V-07",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "wujūb / imkān / imtināʿ",
+      "arabic": "وجوب / إمكان / امتناع",
+      "english": "Necessity / possibility or contingency / impossibility",
+      "definition": "The basic modalities. Imkān is “contingency” when contrasted with intrinsic necessity, but “possibility” is preferable in many other modal contexts.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IV-01"
+    },
+    {
+      "term": "wujūb al-wujūd",
+      "arabic": "وجوب الوجود",
+      "english": "Necessity of existence",
+      "definition": "Existence considered necessary rather than merely possible. The author sharply distinguishes necessity through another from intrinsic necessity.",
+      "passageId": "B-IV-05",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "wujūb bi-l-ghayr",
+      "arabic": "وجوب بالغير",
+      "english": "Necessity through another",
+      "definition": "Necessity following upon a sufficient cause, as distinct from necessary existence through the thing's own reality.",
+      "passageId": "B-IV-02",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "al-waḥda al-ʿadadiyya",
+      "arabic": "الوحدة العددية",
+      "english": "Numerical unity",
+      "definition": "Being one countable individual among others, contrasted with the true unity ascribed to the Necessary Existent.",
+      "passageId": "B-VIII-02",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "imkān wuqūʿī",
+      "arabic": "إمكان وقوعى",
+      "english": "Possibility of occurrence",
+      "definition": "The absence of an impossibility entailed by positing an occurrence; broader in scope than a material subject's disposition.",
+      "passageId": "B-IV-06",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "qūwa",
+      "arabic": "قوة",
+      "english": "Potency",
+      "definition": "A real capacity for an actuality, especially in the analysis of temporal coming-to-be; distinguish from merely conceivable possibility.",
+      "passageId": "B-X-01",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "quwwa / fiʿl",
+      "arabic": "قوة / فعل",
+      "english": "Potentiality / actuality",
+      "definition": "A receptive possibility and its realization. Quwwa also means an active power; fiʿl also means an act. The contrast determines the translation.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-PRE"
+    },
+    {
+      "term": "aṣālat al-wujūd",
+      "arabic": "أصالة الوجود",
+      "english": "Primacy of existence",
+      "definition": "The thesis that existence is primary in concrete realization, while quiddities are abstracted from it. This is an ontological thesis, not a claim that ordinary things are imaginary.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-02"
+    },
+    {
+      "term": "aṣālat al-māhiyya",
+      "arabic": "أصالة الماهية",
+      "english": "Primacy of quiddity",
+      "definition": "The position opposed to the primacy of existence: quiddity, rather than existence, is taken as fundamental in external reality. It must not be confused with the trivial claim that things have quiddities.",
+      "passageId": "B-I-04",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "al-ḥaml al-awwalī al-dhātī",
+      "arabic": "الحمل الأولي الذاتي",
+      "english": "Primary essential predication",
+      "definition": "Predication in terms of conceptual identity between subject and predicate, as in saying 'human is rational animal'; contrast ordinary predication of existence or properties.",
+      "passageId": "B-II-01",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "al-ḥaml al-awwalī",
+      "arabic": "الحمل الأولي",
+      "english": "Primary predication",
+      "definition": "Predication considered through identity of meaning or quiddity. Distinguish it from a predication concerning concrete instances.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VII-03"
+    },
+    {
+      "term": "hayūlā",
+      "arabic": "هيولى",
+      "english": "Prime matter",
+      "definition": "The purely potential, indeterminate principle in material substance, not a free-standing physical stuff with its own actuality.",
+      "passageId": "B-VI-04",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "ʿadam wa-malaka",
+      "arabic": "عدم وملكة",
+      "english": "Privation and possession",
+      "definition": "Opposition of a capacity or characteristic and its absence in something naturally apt for it; not the same as unrestricted negation.",
+      "passageId": "B-VIII-08",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "kayf",
+      "arabic": "كيف",
+      "english": "Quality",
+      "definition": "An accidental category, including dispositions and qualities; not all uses of the ordinary word 'how' denote the technical category.",
+      "passageId": "B-VI-10",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "kamّ",
+      "arabic": "كم",
+      "english": "Quantity",
+      "definition": "A category concerned with divisible magnitude or number, not to be confused with the relational category of place or position.",
+      "passageId": "B-VI-09",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "māhiyya",
+      "arabic": "ماهية",
+      "english": "Quiddity",
+      "definition": "What a thing is, considered as the answer to “What is it?” Its conceptual distinction from existence is central to the work.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-V-01"
+    },
+    {
+      "term": "iḍāfa",
+      "arabic": "إضافة",
+      "english": "Relation",
+      "definition": "The accidental category ordered toward another. Distinguish it from the existential dependency that constitutes the effect as related to its cause.",
+      "passageId": "B-VI-11",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "wujūb bi-l-qiyās",
+      "arabic": "وجوب بالقياس",
+      "english": "Relative necessity",
+      "definition": "Necessity considered in relation to another existent, particularly where correlatives imply one another, not a separate sufficient cause.",
+      "passageId": "B-IV-02",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "sukūn",
+      "arabic": "سكون",
+      "english": "Rest",
+      "definition": "The absence of motion in a subject capable of moving, rather than absolute immutability without regard to motion.",
+      "passageId": "B-X-15",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "iʿādat al-maʿdūm",
+      "arabic": "إعادة المعدوم",
+      "english": "Restoration of a non-existent",
+      "definition": "The disputed possibility that numerically the same thing, after wholly ceasing to exist, could return. This is different from survival or transformation.",
+      "passageId": "B-I-12",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "ʿaql mufāriq",
+      "arabic": "عقل مفارق",
+      "english": "Separate intellect",
+      "definition": "An intellectual substance independent of matter both in its essence and in its acts, in contrast to a soul related to a body.",
+      "passageId": "B-VI-08",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "jaʿl basīṭ",
+      "arabic": "جعل بسيط",
+      "english": "Simple production",
+      "definition": "Bringing something into existence, distinguished from making an already posited thing possess an additional determination.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-08"
+    },
+    {
+      "term": "nafs",
+      "arabic": "نفس",
+      "english": "Soul",
+      "definition": "An immaterial principle in its essence but connected with the body in its operation; its precise status differs from a wholly separate intellect.",
+      "passageId": "B-VI-08",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "nawʿ",
+      "arabic": "نوع",
+      "english": "Species",
+      "definition": "A complete specific nature resulting from the appropriate essential determination of a genus.",
+      "passageId": "B-V-04",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "ṣūra nawʿiyya",
+      "arabic": "صورة نوعية",
+      "english": "Specific substantial form",
+      "definition": "The form through which matter constitutes a substance of a determinate species rather than merely a corporeal subject in general.",
+      "passageId": "B-VI-05",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "jawhar / ʿaraḍ",
+      "arabic": "جوهر / عرض",
+      "english": "Substance / accident",
+      "definition": "A substance is not in a subject independent of it; an accident exists in such a subject. This distinction does not make accidents unreal.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VI-02"
+    },
+    {
+      "term": "al-ḥaraka al-jawhariyya",
+      "arabic": "الحركة الجوهرية",
+      "english": "Substantial motion",
+      "definition": "Change in the existence of material substance itself, rather than only in its accidental states. Its subject and continuity require separate argument.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-08"
+    },
+    {
+      "term": "ḥaraka jawhariyya",
+      "arabic": "حركة جوهرية",
+      "english": "Substantial motion",
+      "definition": "Change in substantial existence itself, not merely in its quantity, quality, or spatial location; central to the Sadrāian framework.",
+      "passageId": "B-X-12",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "nafs al-amr",
+      "arabic": "نفس الأمر",
+      "english": "The fact of the matter",
+      "definition": "The domain in relation to which a judgment is true; it should not automatically be reduced to a separate physical object.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-02"
+    },
+    {
       "term": "wājib al-wujūd",
       "arabic": "واجب الوجود",
       "english": "The Necessary Existent",
       "definition": "That whose existence is intrinsically necessary. The final stage argues about its existence, unity, attributes, and acts.",
       "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XII-01"
+    },
+    {
+      "term": "ʿurūḍ al-wujūd",
+      "arabic": "عروض الوجود",
+      "english": "The predication of existence",
+      "definition": "Saying that existence is 'added' to quiddity describes the conceptual distinction in predication; it does not by itself imply that existence is a further physical accident.",
+      "passageId": "B-I-03",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "ḥaqīqat al-wujūd",
+      "arabic": "حقيقة الوجود",
+      "english": "The reality of existence",
+      "definition": "Existence considered as a reality, not merely the common concept signified by the word 'existence'. The distinction is indispensable for interpreting gradation.",
+      "passageId": "B-I-05",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "qāʿidat al-wāḥid",
+      "arabic": "قاعدة الواحد",
+      "english": "The rule of the one",
+      "definition": "The disputed philosophical principle that from the one, insofar as it is simply one, only one proceeds directly; its precise scope is argued over.",
+      "passageId": "B-VII-04",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "shayʾiyya",
+      "arabic": "شيئية",
+      "english": "Thingness",
+      "definition": "The status of being a thing; the author argues that genuine thingness is coextensive with existence, rejecting a positive intermediate status for non-existents.",
+      "passageId": "B-I-09",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "zamān",
+      "arabic": "زمان",
+      "english": "Time",
+      "definition": "The measure of motion in the author's analysis, linked to the successive renewal and division of material existence.",
+      "passageId": "B-X-13",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "zamān / dahr / sarmad",
+      "arabic": "زمان / دهر / سرمد",
+      "english": "Time / dahr / sarmad",
+      "definition": "Time measures motion. Dahr and sarmad name technical atemporal relations of coexistence. Rendering all three with ordinary temporal language obscures the argument.",
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-11"
+    },
+    {
+      "term": "waḥda ḥaqqa",
+      "arabic": "وحدة حقة",
+      "english": "True unity",
+      "definition": "The unity ascribed to pure necessary existence: not numerical oneness that admits another member of the same order.",
+      "passageId": "B-XII-02",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "ishtirāk maʿnawī",
+      "arabic": "اشتراك معنوي",
+      "english": "Univocal predication",
+      "definition": "A single concept predicated with one meaning of many things. This concerns the common meaning of 'existence', without asserting that existents share the same degree of being.",
+      "passageId": "B-I-02",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
+    },
+    {
+      "term": "lā bi-sharṭ",
+      "arabic": "لا بشرط",
+      "english": "Without condition",
+      "definition": "A way of considering quiddity without stipulating either the presence or the absence of a further determination; variants of this consideration must be distinguished.",
+      "passageId": "B-V-02",
+      "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
     }
   ]
 }
