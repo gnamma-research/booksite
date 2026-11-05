@@ -40,8 +40,8 @@
   const p = initialPreferences && typeof initialPreferences === 'object' ? initialPreferences : {};
   state.preferences = {
     language: ['bilingual', 'arabic', 'english'].includes(p.language) ? p.language : 'bilingual',
-    order: p.order === 'arabic-first' ? p.order : 'english-first',
-    view: ['focus', 'continuous'].includes(p.view) ? p.view : 'focus',
+    order: ['arabic-first', 'english-first'].includes(p.order) ? p.order : 'arabic-first',
+    view: ['focus', 'continuous'].includes(p.view) ? p.view : 'continuous',
     size: Number.isFinite(p.size) ? Math.max(16, Math.min(26, p.size)) : 19,
     theme: ['dark', 'light'].includes(p.theme) ? p.theme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
   };
@@ -162,7 +162,7 @@
     for (const id of ['cover-arabic', 'sidebar-arabic']) if (book.arabicTitle) $(id).textContent = book.arabicTitle;
     if (author) $('cover-author').textContent = text(author);
     if (book.description) $('cover-description').textContent = text(book.description);
-    document.title = `${text(book.title)} — al-Ṭabāṭabāʾī · gnamma`;
+    document.title = `${text(book.title)} — Gnamma Research`;
     const authorUnits = state.units.length - guides;
     let coverage;
     if (!authorUnits && guides) coverage = `Reading guide · ${guides} editorial ${guides === 1 ? 'section' : 'sections'} · bilingual text not yet available`;
@@ -195,7 +195,7 @@
       if (!stageNode) {
         stageNode = make('details', 'toc-stage'); stageNode.dataset.stage = group.stage;
         stageNode.open = !!state.query || state.savedOnly || openStages.has(group.stage) || (state.active && state.active.stage === group.stage) || /-0$/.test(group.stage);
-        const summary = make('summary'); summary.append(make('span', 'stage-roman', group.stage.endsWith('-0') ? '✦' : group.stage.replace(/^[MBN]-/, '')), make('span', '', stageTitle(group.stage)));
+        const summary = make('summary'); summary.append(make('span', 'stage-roman', group.stage.endsWith('-0') ? '·' : group.stage.replace(/^[MBN]-/, '')), make('span', '', stageTitle(group.stage)));
         const list = make('ul', 'toc-chapters'); stageNode.append(summary, list); $('toc').append(stageNode); byStage.set(group.stage, stageNode);
       }
       const item = make('li'); const anchor = make('a'); anchor.href = '#' + group.id; anchor.dataset.group = group.key;
@@ -222,11 +222,11 @@
     $('title-page').hidden = !!state.query || state.savedOnly;
     $('filter-notice').hidden = !state.query && !state.savedOnly;
     $('filter-message').textContent = state.query ? `Search results for “${state.query}”${state.savedOnly ? ' in your saved passages' : ''}.` : 'Your saved passages.';
-    const shown = state.preferences.view === 'focus' ? matched.filter(unit => unit.group === state.active) : matched;
+    const shown = state.preferences.view === 'focus' && !state.query && !state.savedOnly ? matched.filter(unit => unit.group === state.active) : matched;
     const content = $('reading-content'); content.replaceChildren();
     if (!shown.length) {
       const empty = make('div', 'empty-state');
-      empty.append(make('span', 'loading-mark', '✦'), make('h2', '', state.savedOnly ? 'A place for passages to return to' : state.query ? 'No passages found' : 'The text is being prepared'), make('p', '', state.savedOnly ? 'Use the bookmark beside any passage to keep it in your saved collection.' : state.query ? 'Try a shorter phrase, an Arabic term without vowel marks, or its English equivalent.' : 'Consult the sources and study guide while the reading text is prepared.'));
+      empty.append(make('span', 'loading-mark', ''), make('h2', '', state.savedOnly ? 'A place for passages to return to' : state.query ? 'No passages found' : 'The text is being prepared'), make('p', '', state.savedOnly ? 'Use the bookmark beside any passage to keep it in your saved collection.' : state.query ? 'Try a shorter phrase, an Arabic term without vowel marks, or its English equivalent.' : 'Consult the sources and study guide while the reading text is prepared.'));
       content.append(empty);
     } else {
       const fragment = document.createDocumentFragment(); let lastStage = null; let section = null; let lastGroup = null;
@@ -369,7 +369,7 @@
   }
   function renderNavigation(groups) {
     const nav = $('chapter-navigation');
-    nav.hidden = state.preferences.view !== 'focus' || groups.length < 2;
+    nav.hidden = state.preferences.view !== 'focus' || !!state.query || state.savedOnly || groups.length < 2;
     if (nav.hidden) return;
     const index = groups.indexOf(state.active); const previous = groups[index - 1]; const next = groups[index + 1];
     $('previous-chapter').disabled = !previous; $('next-chapter').disabled = !next;
@@ -432,7 +432,7 @@
     const book = state.book; const node = $('sources-content'); node.replaceChildren();
     node.append(make('p', 'dialog-intro', book.description || 'Read the Arabic text alongside the English rendering and consult the cited sources for each passage.'));
     const statistics = make('div', 'edition-statistics');
-    const data = [[bookId === 'combined' ? 2 : state.stages.size - (state.stages.has('0') ? 1 : 0), bookId === 'combined' ? 'books' : 'stages'], [state.units.filter(unit => unit.arabic.trim() && !isGuide(unit)).length, 'Arabic sections'], [state.units.filter(hasEnglish).length, 'English translations']];
+    const data = [[bookId === 'combined' ? 3 : state.stages.size - (state.stages.has('0') ? 1 : 0), bookId === 'combined' ? 'books' : 'stages'], [state.units.filter(unit => unit.arabic.trim() && !isGuide(unit)).length, 'Arabic sections'], [state.units.filter(hasEnglish).length, 'English translations']];
     for (const [value, label] of data) { const stat = make('div'); stat.append(make('span', 'stat-value', value), make('span', 'stat-label', label)); statistics.append(stat); }
     node.append(statistics, make('h3', '', 'Reading this edition'));
     const guideCount = state.units.filter(isGuide).length;
@@ -535,6 +535,7 @@
   document.querySelectorAll('a[href="#title-page"]').forEach(anchor => anchor.addEventListener('click', event => {
     event.preventDefault(); state.query = ''; state.savedOnly = false; $('book-search').value = ''; render(); closeSidebar(false); history.pushState(null, '', '#title-page'); $('title-page').scrollIntoView({ behavior: 'instant' });
   }));
+  window.addEventListener('popstate', () => { if (location.hash === '#title-page') { state.query=''; state.savedOnly=false; $('book-search').value=''; render(); $('title-page').scrollIntoView(); } else { const target=resolveHash(); if(target) navigate(target,false); } });
   window.addEventListener('hashchange', () => { if (location.hash === '#title-page') { state.query = ''; state.savedOnly = false; $('book-search').value = ''; render(); $('title-page').scrollIntoView(); } else navigate(resolveHash(), false); });
   window.addEventListener('storage', event => {
     if (event.key === prefix + 'bookmarks') { const stored = readStorage(event.key, []); if (Array.isArray(stored)) state.bookmarks = new Set(stored); render(); }
@@ -576,7 +577,7 @@
       }
     } catch (error) {
       const box = make('div', 'loading-state error-state');
-      box.append(make('span', 'loading-mark', '✦'), make('h2', '', 'The reading text is unavailable'), make('p', '', 'The edition could not be opened. Please try again in a moment.'));
+      box.append(make('span', 'loading-mark', ''), make('h2', '', 'The reading text is unavailable'), make('p', '', 'The edition could not be opened. Please try again in a moment.'));
       const retry = make('button', 'primary-button', 'Try again'); retry.type = 'button'; retry.addEventListener('click', loadBook); box.append(retry);
       $('reading-content').replaceChildren(box);
       $('toc').replaceChildren(make('p', 'toc-empty', 'The contents will appear when the edition opens.'));
@@ -588,7 +589,7 @@
   document.querySelectorAll('[data-part-jump]').forEach(button => button.addEventListener('click', () => {
     const id=button.dataset.partJump;
     const target=state.byHash.get(id);
-    if (target) { state.preferences.view='focus'; applyPreferences(true); navigate(target,true); }
+    if (target) { navigate(target,true); }
   }));
   loadBook();
 })();
