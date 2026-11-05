@@ -2572,7 +2572,8 @@
       "arabic": "علم حصولي",
       "english": "Acquired knowledge",
       "definition": "Knowledge through the presence of a form representing what is known. “Acquired” here names a mode of knowledge, not necessarily the result of deliberate learning.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-01"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-01",
+      "passageId": "B-XI-01"
     },
     {
       "term": "ʿaql bi-l-fiʿl",
@@ -2587,7 +2588,8 @@
       "arabic": "قدم / حدوث",
       "english": "Beginninglessness / origination",
       "definition": "Whether existence is or is not preceded by nonexistence. The relevant kind of precedence must be specified; intrinsic origination is not simply a date in the past.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-X-04"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-X-04",
+      "passageId": "B-IX-03"
     },
     {
       "term": "dawr",
@@ -2610,35 +2612,40 @@
       "arabic": "علة / معلول",
       "english": "Cause / effect",
       "definition": "The explanatory dependence of an effect upon a cause need not imply that the cause precedes it in time.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VIII-01"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VIII-01",
+      "passageId": "B-VII-01"
     },
     {
       "term": "al-ḥaml al-shāʾiʿ",
       "arabic": "الحمل الشائع",
       "english": "Common predication",
       "definition": "Predication grounded in unity of instance despite conceptual difference. The literal rendering “industrial predication” is avoided.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VII-03"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VII-03",
+      "passageId": "B-VIII-04"
     },
     {
       "term": "al-ʿilla al-tāmma",
       "arabic": "العلة التامة",
       "english": "Complete cause",
       "definition": "The total causal condition upon whose realization the effect necessarily follows. An incomplete cause alone does not suffice for the effect.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VIII-03"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VIII-03",
+      "passageId": "B-VII-03"
     },
     {
       "term": "mafhūm / miṣdāq",
       "arabic": "مفهوم / مصداق",
       "english": "Concept / instance",
       "definition": "The intelligible meaning and what it applies to. Distinct concepts need not entail distinct externally existing things.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-01"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-01",
+      "passageId": "B-I-02"
     },
     {
       "term": "taṣawwur / taṣdīq",
       "arabic": "تصور / تصديق",
       "english": "Conception / assent",
       "definition": "Apprehending a meaning and assenting to a judgment. These should be kept distinct when reading the account of acquired knowledge.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-08"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-08",
+      "passageId": "B-XI-07"
     },
     {
       "term": "bi-sharṭ lā",
@@ -2741,7 +2748,8 @@
       "arabic": "وجود",
       "english": "Existence",
       "definition": "The act or reality of being. Distinguish the concept of existence from the extra-mental reality to which it applies.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-01"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-01",
+      "passageId": "B-I-01"
     },
     {
       "term": "wujūd li-ghayrihi",
@@ -2764,7 +2772,8 @@
       "arabic": "موجود",
       "english": "Existent; being",
       "definition": "That which exists. “Being” can name an existent, so the translation usually reserves “existence” for wujūd.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-INTRO"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-INTRO",
+      "passageId": "B-I-01"
     },
     {
       "term": "wujūd khārijī",
@@ -2811,7 +2820,8 @@
       "arabic": "تشكيك",
       "english": "Gradation",
       "definition": "Unity of a reality across different degrees, where the basis of difference returns to the basis of agreement. Distinguish this from mere ambiguity of a word.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-03"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-03",
+      "passageId": "B-I-05"
     },
     {
       "term": "ʿālam al-mithāl",
@@ -2826,7 +2836,8 @@
       "arabic": "في نفسه / لنفسه / بنفسه",
       "english": "In itself / for itself / through itself",
       "definition": "Three distinct relations. The translation retains their differences rather than flattening all of them into “independent.”",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-II-03"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-II-03",
+      "passageId": "B-III-03"
     },
     {
       "term": "wujūd mustaqill",
@@ -2857,14 +2868,16 @@
       "arabic": "عقل / عاقل / معقول",
       "english": "Intellect / knower / intelligible",
       "definition": "The act or principle of intellection, the one knowing, and what is intelligibly known. “Knower” is used where the broader English sense fits the argument.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-02"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-02",
+      "passageId": "B-XI-04"
     },
     {
       "term": "iʿtibārī",
       "arabic": "اعتباري",
       "english": "Intellectually considered; derivative; conventional",
       "definition": "A context-sensitive term. A quiddity’s derivative status, an abstract philosophical concept, and a practical convention should not automatically receive the same English rendering.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-10"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-10",
+      "passageId": "B-I-04"
     },
     {
       "term": "maʿqūl",
@@ -2879,7 +2892,8 @@
       "arabic": "الحركة التوسطية / القطعية",
       "english": "Intermediate / traversal motion",
       "definition": "Two considerations of motion: the moving thing’s state between endpoints, and its successive passage through the course.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-04"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-04",
+      "passageId": "B-X-04"
     },
     {
       "term": "imkān bi-l-dhāt",
@@ -2894,21 +2908,24 @@
       "arabic": "بالذات / بالغير",
       "english": "Intrinsically / through another",
       "definition": "Intrinsic status must be distinguished from status derived from another. A contingent thing can become necessary through its complete cause without becoming intrinsically necessary.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IV-02"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IV-02",
+      "passageId": "B-IV-02"
     },
     {
       "term": "ʿilm ḥuḍūrī",
       "arabic": "علم حضوري",
       "english": "Knowledge by presence",
       "definition": "Knowledge in which the known itself is present to the knower, rather than known through a separately mediating acquired form.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-11"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XI-11",
+      "passageId": "B-XI-12"
     },
     {
       "term": "al-wujūd al-rābiṭ",
       "arabic": "الوجود الرابط",
       "english": "Linking existence",
       "definition": "Existence whose reality is dependent rather than independently established. Attend to the distinction between a proposition’s copular relation and an effect’s dependence upon its cause.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-II-01"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-II-01",
+      "passageId": "B-III-01"
     },
     {
       "term": "ʿilla māddiyya",
@@ -2931,14 +2948,16 @@
       "arabic": "مادة / صورة",
       "english": "Matter / form",
       "definition": "Matter is the receptive principle and form the actuality through which it is determined. Prime matter is not simply a small physical particle.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VI-05"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VI-05",
+      "passageId": "B-VI-04"
     },
     {
       "term": "wujūd dhihnī",
       "arabic": "وجود ذهني",
       "english": "Mental existence",
       "definition": "The mode in which something is present as known without necessarily producing the external effects associated with its extra-mental existence.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-III-01"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-III-01",
+      "passageId": "B-II-01"
     },
     {
       "term": "al-kullī al-ṭabīʿī",
@@ -2953,7 +2972,8 @@
       "arabic": "وجوب / إمكان / امتناع",
       "english": "Necessity / possibility or contingency / impossibility",
       "definition": "The basic modalities. Imkān is “contingency” when contrasted with intrinsic necessity, but “possibility” is preferable in many other modal contexts.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IV-01"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IV-01",
+      "passageId": "B-IV-01"
     },
     {
       "term": "wujūb al-wujūd",
@@ -2981,14 +3001,14 @@
     },
     {
       "term": "imkān wuqūʿī",
-      "arabic": "إمكان وقوعى",
+      "arabic": "إمكان وقوعي",
       "english": "Possibility of occurrence",
       "definition": "The absence of an impossibility entailed by positing an occurrence; broader in scope than a material subject's disposition.",
       "passageId": "B-IV-06",
       "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
     },
     {
-      "term": "qūwa",
+      "term": "quwwa",
       "arabic": "قوة",
       "english": "Potency",
       "definition": "A real capacity for an actuality, especially in the analysis of temporal coming-to-be; distinguish from merely conceivable possibility.",
@@ -3000,14 +3020,16 @@
       "arabic": "قوة / فعل",
       "english": "Potentiality / actuality",
       "definition": "A receptive possibility and its realization. Quwwa also means an active power; fiʿl also means an act. The contrast determines the translation.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-PRE"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-PRE",
+      "passageId": "B-X-01"
     },
     {
       "term": "aṣālat al-wujūd",
       "arabic": "أصالة الوجود",
       "english": "Primacy of existence",
       "definition": "The thesis that existence is primary in concrete realization, while quiddities are abstracted from it. This is an ontological thesis, not a claim that ordinary things are imaginary.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-02"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-02",
+      "passageId": "B-I-04"
     },
     {
       "term": "aṣālat al-māhiyya",
@@ -3030,7 +3052,8 @@
       "arabic": "الحمل الأولي",
       "english": "Primary predication",
       "definition": "Predication considered through identity of meaning or quiddity. Distinguish it from a predication concerning concrete instances.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VII-03"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VII-03",
+      "passageId": "B-II-01"
     },
     {
       "term": "hayūlā",
@@ -3057,7 +3080,7 @@
       "sourceUrl": "https://lib.rafed.net/m/?b_id=1571&type=c_fbook"
     },
     {
-      "term": "kamّ",
+      "term": "kamm",
       "arabic": "كم",
       "english": "Quantity",
       "definition": "A category concerned with divisible magnitude or number, not to be confused with the relational category of place or position.",
@@ -3069,7 +3092,8 @@
       "arabic": "ماهية",
       "english": "Quiddity",
       "definition": "What a thing is, considered as the answer to “What is it?” Its conceptual distinction from existence is central to the work.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-V-01"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-V-01",
+      "passageId": "B-V-01"
     },
     {
       "term": "iḍāfa",
@@ -3116,7 +3140,8 @@
       "arabic": "جعل بسيط",
       "english": "Simple production",
       "definition": "Bringing something into existence, distinguished from making an already posited thing possess an additional determination.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-08"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-08",
+      "passageId": "B-VII-01"
     },
     {
       "term": "nafs",
@@ -3147,14 +3172,16 @@
       "arabic": "جوهر / عرض",
       "english": "Substance / accident",
       "definition": "A substance is not in a subject independent of it; an accident exists in such a subject. This distinction does not make accidents unreal.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VI-02"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-VI-02",
+      "passageId": "B-VI-01"
     },
     {
       "term": "al-ḥaraka al-jawhariyya",
       "arabic": "الحركة الجوهرية",
       "english": "Substantial motion",
       "definition": "Change in the existence of material substance itself, rather than only in its accidental states. Its subject and continuity require separate argument.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-08"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-08",
+      "passageId": "B-X-12"
     },
     {
       "term": "ḥaraka jawhariyya",
@@ -3169,14 +3196,16 @@
       "arabic": "نفس الأمر",
       "english": "The fact of the matter",
       "definition": "The domain in relation to which a judgment is true; it should not automatically be reduced to a separate physical object.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-02"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-I-02",
+      "passageId": "B-I-08"
     },
     {
       "term": "wājib al-wujūd",
       "arabic": "واجب الوجود",
       "english": "The Necessary Existent",
       "definition": "That whose existence is intrinsically necessary. The final stage argues about its existence, unity, attributes, and acts.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XII-01"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-XII-01",
+      "passageId": "B-IV-03"
     },
     {
       "term": "ʿurūḍ al-wujūd",
@@ -3223,7 +3252,8 @@
       "arabic": "زمان / دهر / سرمد",
       "english": "Time / dahr / sarmad",
       "definition": "Time measures motion. Dahr and sarmad name technical atemporal relations of coexistence. Rendering all three with ordinary temporal language obscures the argument.",
-      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-11"
+      "sourceUrl": "https://gnamma-research.github.io/booksite/texts/al-tabatabai/nihayat-al-hikma/#passage-N-IX-11",
+      "passageId": "B-IX-03"
     },
     {
       "term": "waḥda ḥaqqa",
