@@ -17,6 +17,12 @@
 .text-panel[lang="ar"],.stage-arabic,.chapter-title-arabic,.sidebar-arabic,.glossary-entry [lang="ar"]{direction:rtl;unicode-bidi:isolate}
 .text-panel[lang="ar"] .text-body p{word-break:normal;overflow-wrap:break-word;line-break:auto}
 .glossary-entry{scroll-margin-top:20px}
+.glossary-book-label{margin:5px 0;color:var(--earth);font:10px/1.5 Arial,Helvetica,sans-serif;letter-spacing:.3px}
+.eyebrow,.chapter-label,.stage-number,.toc-chapter-number{font-size:max(10px, .65rem)}
+.toc-chapters a,.sidebar-tabs button{font-size:12px}
+.search-box input,.dialog-search input{font-size:16px}
+.footnote{unicode-bidi:plaintext}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
 .reader-dialog{max-width:calc(100vw - 24px)}
 .reader-dialog .dialog-header button{min-width:44px;min-height:44px}
 .glossary-entry .dictionary-jump{margin:7px 0 0;padding:5px 0;border:0;background:transparent;color:var(--accent);font:11px/1.5 Arial,Helvetica,sans-serif;text-align:left;text-decoration:underline;text-underline-offset:3px}
