@@ -89,7 +89,7 @@ def apply_edits(book):
     return counts
 
 def patch_js(data):
-    pat=r'textContent\\s*=\\s*("(?:[^"\\\\]|\\\\.)*")\\s*;'
+    pat=r'textContent\s*=\s*("(?:[^"\\]|\\.)*")\s*;'
     match=re.search(pat,data,re.S)
     if not match:
         raise RuntimeError("Canonical reader JSON payload not identified")
@@ -104,7 +104,7 @@ def patch_index(data):
     # The published HTML contains its own static fallback. We do not replace
     # that entire 3.5MB page or remove newer user-interface work.
     found=0
-    m=re.search(r'(<script[^>]+id=["\\\']editionData["\\\'][^>]*>)([\\s\\S]*?)(</script>)',data,re.I)
+    m=re.search(r"(<script[^>]+id=['\"]editionData['\"][^>]*>)([\s\S]*?)(</script>)",data,re.I)
     if m:
         try:
             book=json.loads(m.group(2))
@@ -118,7 +118,7 @@ def patch_index(data):
     updated=0
     for e in DELTA["edits"]:
         if e["field"]!="en":continue
-        tag=re.search(r'(<section[^>]+data-native-section=["\\\']'+str(e["section"])+r'["\\\'][^>]*>)([\\s\\S]*?)(</section>)',data,re.I)
+        tag=re.search(r"(<section[^>]+data-native-section=['\"]"+str(e["section"])+r"['\"][^>]*>)([\s\S]*?)(</section>)",data,re.I)
         if not tag:continue
         sec=tag.group(2)
         if e["from"] in sec and sec.count(e["from"])==1:
@@ -145,7 +145,7 @@ def main():
             if id=="26" and "permissib" in body:continue
             raise AssertionError(f"Expected substantive correction missing in section {id}: {fragment}")
     result={"date":"2026-11-05","source":"Bou Akl's reported manuscript apparatus, not direct facsimile","count":stats,"html":htmlstats,"sections":len(book["sections"]),"notes":len(book["notes"]),"issues":len(ISSUES)}
-    REPORT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    REPORT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(result,ensure_ascii=False,indent=2))
     if stats["conflicts"]:
         # Fail closed: keep changes in the workflow checkout; don't publish
