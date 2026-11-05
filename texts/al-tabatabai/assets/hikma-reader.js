@@ -235,6 +235,7 @@
           const heading = make('header', 'stage-heading');
           heading.append(make('span', 'stage-number', unit.stage === '0' ? 'BEFORE READING' : `STAGE ${unit.stage}`), make('h2', '', stageTitle(unit.stage)));
           if (stage.arabicTitle) { const arabic = make('p', 'stage-arabic', stage.arabicTitle); arabic.lang = 'ar'; arabic.dir = 'rtl'; heading.append(arabic); }
+          if (stage.introductionArabic) { const intro = make('p', 'stage-introduction', stage.introductionArabic); intro.lang = 'ar'; intro.dir = 'rtl'; heading.append(intro); }
           fragment.append(heading); lastStage = unit.stage;
         }
         if (unit.group !== lastGroup) {
