@@ -9,11 +9,11 @@
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
-    "translatedAuthorialUnits": 61,
+    "translatedAuthorialUnits": 69,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 60,
+    "englishTranslatedChapters": 68,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh working English from the Arabic, preserving authorial objections and answers, with editorial notes as apparatus; no publisher English reproduced.",
@@ -29,7 +29,7 @@
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 60,
+    "translatedChapters": 68,
     "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
   },
   "sources": [
@@ -1804,8 +1804,8 @@
       "title": "Correlative opposition",
       "arabicTitle": "الفصل السادس في تقابل التضايف",
       "arabic": "من أحكام التضايف أن المتضايفين متكافئان وجودا و عدما و قوة و فعلا فإذا كان أحدهما موجودا كان الآخر موجودا بالضرورة و إذا كان أحدهما معدوما كان الآخر معدوما بالضرورة و إذا كان أحدهما بالفعل أو بالقوة كان الآخر كذلك بالضرورة و لازم ذلك أنهما معان لا يتقدم أحدهما على الآخر لا ذهنا و لا خارجا.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Correlative terms are coequal in existence and non-existence, in potency and act.\n\nIf one correlative exists, the other necessarily exists; if one is absent as a correlative, the other is absent. Likewise, if one exists in actuality or in potency, the other is actual or potential in the corresponding respect.\n\nIt follows that the two correlatives, considered precisely as correlatives, are simultaneous: neither precedes the other in the mind or outside it. One cannot be father *as father* without another being child *as child*.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 183,
@@ -1815,6 +1815,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 144 (PDF p. 145); chapter 8.6. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The co-implication concerns the correlatives under their relational descriptions, not two underlying substances in every respect. A person may preexist becoming a father, but fatherhood and sonship arise together in the relevant order."
         }
       ]
     },
@@ -1825,8 +1829,8 @@
       "title": "Contrariety",
       "arabicTitle": "الفصل السابع في تقابل التضاد",
       "arabic": "التضاد على ما تحصل من التقسيم السابق كون أمرين وجوديين غير متضائفين متغايرين بالذات أي غير مجتمعين بالذات. و من أحكامه أن لا تضاد بين الأجناس العالية من المقولات العشر فإن الأكثر من واحد منها تجتمع في محل واحد كالكم و الكيف و غيرهما في الأجسام و كذا أنواع كل منها مع أنواع غيره و كذا بعض الأجناس المندرجة تحت الواحد منها مع بعض آخر كاللون مع الطعم مثلا فالتضاد بالاستقراء إنما يتحقق بين نوعين أخيرين مندرجين تحت جنس قريب كالسواد و البياض المندرجين تحت اللون كذا قرروا. و من أحكامه أنه يجب أن يكون هناك موضوع يتواردان عليه إذ لو لا موضوع شخصي مشترك لم يمتنع تحققهما في الوجود كوجود السواد في جسم و البياض في آخر. و لازم ذلك أن لا تضاد بين الجواهر إذ لا موضوع لها توجد فيه فالتضاد إنما يتحقق في الأعراض و قد بدل بعضهم الموضوع بالمحل حتى يشمل مادة الجواهر و على هذا يتحقق التضاد بين الصور الجوهرية الحالة في المادة. و من أحكامه أن يكون بينهما غاية الخلاف فلو كان هناك أمور وجودية متغايرة بعضها أقرب إلى بعضها من بعض فالمتضادان هما الطرفان اللذان بينهما غاية البعد و الخلاف كالسواد و البياض الواقع بينهما ألوان أخرى متوسطة بعضها أقرب إلى أحد الطرفين من بعض كالصفرة التي هي أقرب إلى البياض من الحمرة مثلا. و مما تقدم يظهر معنى تعريفهم المتضادين بأنهما أمران وجوديان متواردان على موضوع واحد داخلان تحت جنس قريب بينهما غاية الخلاف.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Contrariety, according to the preceding division, obtains between two positive realities which are not correlatives and which differ essentially so that they cannot exist together in the same subject in the relevant respect.\n\nAmong its properties is that there is no contrariety between the highest genera of the ten categories. More than one category may be instantiated in a single subject, as quantity and quality are present in bodies. Nor is there contrariety between their respective species simply by being in distinct categories, or between certain subordinate genera within one category, such as colour and taste.\n\nRather, according to the traditional inductive analysis, contrariety is between ultimate species falling under a proximate genus, as black and white under colour.\n\nContraries also require a subject capable of receiving them successively. Without a common individual subject there is no reason they could not both exist, as when one body is black and another white. Consequently, substances themselves are not contraries, since they do not inhere in a further subject in the requisite way. Contrariety properly belongs to accidents.\n\nSome philosophers substitute the broader notion of *receptive locus* (maḥall) for subject, allowing matter to serve as the locus of substantial forms and thereby admitting contrariety between forms of substance.\n\nFinally, contraries must be at the extreme of difference within the relevant genus. If positive qualities differ by degrees of nearness to one another, the contrary pair occupy the extreme ends. Black and white are taken as examples, with intermediate colours, such as yellow being closer to white than red under the comparison intended.\n\nThus contraries are two positive, mutually exclusive realities capable of occurring in one subject, included under a proximate genus, and maximally opposed within it.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 185,
@@ -1836,6 +1840,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 145 (PDF p. 146); chapter 8.7. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminology",
+          "text": "The difference between a subject independently subsisting for accidents and matter as the receptive locus of substantial forms controls whether ‘substantial contrariety’ is admitted."
         }
       ]
     },
@@ -1846,8 +1854,8 @@
       "title": "Privation and possession",
       "arabicTitle": "الفصل الثامن في تقابل العدم والملكة",
       "arabic": "و يسمى أيضا تقابل العدم و القنية و هما أمر وجودي لموضوع من شأنه أن يتصف به و عدم ذلك الأمر الوجودي في ذلك الموضوع كالبصر و العمى الذي هو فقد البصر للموضوع الذي من شأنه أن يكون ذا بصر. فإن أخذ موضوع الملكة هو الطبيعة الشخصية أو النوعية أو الجنسية التي من شأنها أن تتصف بالملكة في الجملة من غير تقييد بوقت خاص سميا ملكه و عدما حقيقيين فعدم البصر في العقرب عمى و عدم ملكة لكون جنسه و هو الحيوان موضوعا قابلا للبصر و إن كان نوعه غير قابل له كما قيل و كذا مرودة الإنسان قبل أوان التحائه من عدم الملكة و إن كان صنفه غير قابل للالتحاء قبل أوان البلوغ. و إن أخذ الموضوع هو الطبيعة الشخصية و قيد بوقت الاتصاف سميا عدما و ملكة مشهوريين و عليه فقد الأكمه و هو الممسوح العين للبصر و كذا المرودة ليسا من العدم و الملكة في شيء.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "This is also called the opposition of *privation and possession* or *deprivation and capacity*. It consists in a positive condition belonging to a subject naturally fitted to receive it and the absence of that condition in that subject. Sight and blindness are the ordinary example: blindness is the loss of sight in something whose nature admits sight.\n\nIf the subject of the positive condition is taken as an individual, species, or genus that is in some respect naturally capable of the condition, without specifying a time, we speak of *real* possession and privation. Thus the absence of sight in a scorpion could, on a classification placing it within a sight-capable animal genus, be termed privation even though the particular species is not supposed to be sighted. Likewise, the absence of a beard in a human before the age at which a beard can grow would still count as privation under this broad consideration.\n\nIf instead the subject is taken in its own individual nature and at the time when it is naturally fitted to possess the feature, the contrast is called *customary* possession and privation. Under this narrower usage, congenital absence of sight in a subject never fitted to see, or absence of a beard before maturity, is not considered privation in the same technical sense.\n\nThe distinction thus turns on the breadth of the natural subject and whether the appropriate time for possession is part of the definition.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 187,
@@ -1857,6 +1865,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 146 (PDF p. 147); chapter 8.8. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The older biological examples describe a philosophical classification of privation, not a medical classification of disability."
         }
       ]
     },
@@ -1867,8 +1879,8 @@
       "title": "Contradiction",
       "arabicTitle": "الفصل التاسع في تقابل التناقض",
       "arabic": "و هو تقابل الإيجاب و السلب بأن يرد السلب على نفس ما ورد عليه الإيجاب فهو بحسب الأصل في القضايا و قد يحول مضمون القضية إلى المفرد فيقال التناقض بين وجود الشيء و عدمه كما قد يقال نقيض كل شيء رفعه. و حكم النقيضين أعني الإيجاب و السلب أنهما لا يجتمعان معا و لا يرتفعان معا على سبيل القضية المنفصلة الحقيقية و هي من البديهيات الأولية التي عليها يتوقف صدق كل قضية مفروضة ضرورية كانت أو نظرية إذ لا يتعلق العلم بقضية إلا بعد العلم بامتناع نقيضها فقولنا الأربعة زوج إنما يتم تصديقه إذا علم كذب قولنا ليست الأربعة زوجا و لذا سميت قضية امتناع اجتماع النقيضين و ارتفاعهما أولى الأوائل. و من أحكام التناقض أنه لا يخرج عن حكم النقيضين شيء البتة فكل شيء مفروض إما أن يصدق عليه زيد أو اللا زيد و كل شيء مفروض إما أن يصدق عليه البياض أو اللا بياض و هكذا. و أما ما تقدم في مرحلة الماهية أن النقيضين مرتفعان عن مرتبة الذات كقولنا الإنسان من حيث إنه إنسان ليس بموجود و لا لا موجود فقد عرفت أن ذلك ليس بحسب الحقيقة من ارتفاع النقيضين في شيء بل مآله إلى خروج النيقضين معا عن مرتبة ذات الشيء فليس يحد الإنسان بأنه حيوان ناطق موجود و لا يحد بأنه حيوان ناطق معدوم. و من أحكامه أن تحققه في القضايا مشروط بثمان وحدات معروفة مذكورة في كتب المنطق و زاد عليها صدر المتألهين ره وحدة الحمل بأن يكون الحمل فيهما جميعا حملا أوليا أو فيهما معا حملا شايعا من غير اختلاف فلا تناقض بين قولنا الجزئي جزئي أي مفهوما و قولنا ليس الجزئي بجزئي أي مصداقا.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Contradiction is the opposition between affirmation and negation when the negation applies to precisely what the affirmation asserts. In its primary setting contradiction concerns propositions. Their content can also be expressed through terms, as when we speak of the opposition between a thing's existence and its non-existence or say that the contradictory of anything is its removal.\n\nContradictories neither coexist nor are both absent. This is a genuine exclusive alternative and one of the first principles of thought. Every proposition, whether immediately evident or demonstrated, depends on it: a judgment cannot be known as true without the exclusion of its contradictory. We can assent that four is even only by rejecting ‘four is not even’. Hence the principle that contradictories cannot both be true or both false is called the *first of the first principles*.\n\nNothing is exempt from the law. Anything considered is either Zayd or not-Zayd under the same respect, white or not-white, and so on.\n\nThe earlier statement that contradictories are ‘removed from the rank of quiddity’ is not an exception. To say that human quiddity as human includes neither existence nor non-existence means neither term enters the essential *definition*. It does not mean a concrete human could be neither existent nor non-existent. The definition is not ‘existing rational animal’ nor ‘non-existing rational animal’.\n\nFor genuine contradiction between propositions logicians require the standard eight unities of subject, predicate, time, place, condition, relation, whole and part, and actual/potential respect, as elaborated in logic. Ṣadr al-Mutaʾallihīn adds unity of the *mode of predication*: both judgments must be taken under primary predication or both under common predication. There is no contradiction between ‘The particular is particular’ in primary predication, referring to the concept, and ‘The particular is not particular’ under common predication, considering the concept as a universal mental meaning.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 189,
@@ -1878,6 +1890,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 147 (PDF p. 148); chapter 8.9. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Critical note",
+          "text": "The list of classical ‘eight unities’ is supplied here for intelligibility; different logic manuals formulate or enumerate the conditions differently. The author's explicit point is Ṣadrā's additional unity of predication."
         }
       ]
     },
@@ -1888,8 +1904,8 @@
       "title": "The opposition of one and many",
       "arabicTitle": "الفصل العاشر في تقابل الواحد والكثير",
       "arabic": "اختلفوا في تقابل الواحد و الكثير هل هو تقابل بالذات أو لا و على الأول ذهب بعضهم إلى أنهما متضائفان و بعضهم إلى أنهما متضادان و بعضهم إلى أن تقابلهما نوع خامس غير الأنواع الأربعة المذكورة. و الحق أن ما بين الواحد و الكثير من الاختلاف ليس من التقابل المصطلح في شيء لأن اختلاف الموجود المطلق بانقسامه إلى الواحد و الكثير اختلاف تشكيكي يرجع فيه ما به الاختلاف إلى ما به الاتفاق نظير انقسامه إلى الوجود الخارجي و الذهني و انقسامه إلى ما بالفعل و ما بالقوة و الاختلاف و المغايرة التي في كل من أقسام التقابل الأربع يمتنع أن يرجع إلى ما به الاتحاد فلا تقابل بين الواحد و الكثير بشيء من أقسام التقابل الأربعة. تتمة التقابل بين الإيجاب و السلب ليس تقابلا حقيقيا خارجيا بل عقلي بنوع من الاعتبار لأن التقابل نسبة خاصة بين المتقابلين و النسب وجودات رابطة قائمة بطرفين موجودين محققين واحد الطرفين في التناقض هو السلب الذي هو عدم و بطلان لكن العقل يعتبر السلب طرفا للإيجاب فيرى عدم جواز اجتماعهما لذاتيهما. و أما تقابل العدم و الملكة فللعدم فيه حظ من التحقق لكونه عدم صفة من شأن الموضوع أن يتصف بها فينتزع عدمها منه و هذا المقدار من الوجود الانتزاعي كاف في تحقق النسبة.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Philosophers have disputed whether the one and the many are opposed intrinsically. Some call them correlatives, others contraries, and others posit a fifth kind of opposition beyond the four recognised classes.\n\nThe correct view, the author argues, is that their difference does not belong to technical opposition at all. The division of existence into one and many is a graded or differentiated division in which the point of difference ultimately returns to the point of agreement. It resembles existence being divided into mental and external existence, or into actual and potential. The intrinsic difference of the terms in the four kinds of technical opposition cannot collapse into their shared ground in this manner. Thus the one and the many are not opposites in any of the four senses.\n\nOne must also qualify the status of opposition between affirmation and negation. This is not a real extramental relation but a relation constituted through intellectual consideration. Opposition is a particular relation between two relata, and a real linking relation requires two actual terms. In contradiction, however, one term is a negation, which is absence or nullity. The intellect treats negation as the opposing term of affirmation and apprehends that they cannot coexist in the same respect.\n\nThe opposition of privation and possession is different. Privation has a derivative ground in reality, since it is the absence of some perfection in a subject naturally capable of that perfection. The relevant absence is abstracted from the subject, and that degree of derivative or considered establishment suffices for the relational distinction in this case.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 191,
@@ -1899,6 +1915,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 148 (PDF p. 149); chapter 8.10. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Philosophical note",
+          "text": "The contrast between real relations and intellectually considered opposition is crucial: the law of contradiction is not weakened by denying that a negation is a positive external entity."
         }
       ]
     },
@@ -1909,8 +1929,8 @@
       "title": "Priority, posteriority, and simultaneity",
       "arabicTitle": "الفصل الأول في معنى السبق واللحوق وأقسامهما والمعية",
       "arabic": "إن من عوارض الموجود بما هو موجود السبق و اللحوق و ذلك أنه ربما كان لشيئين بما هما موجودان نسبة مشتركة إلى مبدإ وجودي لكن لأحدهما منها ما ليس للآخر كنسبة الاثنين و الثلاثة إلى الواحد لكن الاثنين أقرب إليه فيسمى سابقا و متقدما و تسمى الثلاثة لاحقة و متأخرة و ربما كانت النسبة المشتركة من غير تفاوت بين المنتسبين فتسمى حالهما بالنسبة إليه معية و هما معان. و قد عدوا للسبق و اللحوق أقساما عثروا عليها بالاستقراء. منها السبق الزماني و هو السبق الذي لا يجامع فيه السابق اللاحق كتقدم أجزاء الزمان بعضها على بعض كالأمس على اليوم و تقدم الحوادث الواقعة في الزمان السابق على الواقعة في الزمان اللاحق و يقابله اللحوق الزماني. و منها السبق بالطبع و هو تقدم العلة الناقصة على المعلول كتقدم الاثنين على الثلاثة. و منها السبق بالعلية و هو تقدم العلة التامة على المعلول. و منها السبق بالماهية و يسمى أيضا التقدم بالتجوهر و هو تقدم علل القوام على معلولها كتقدم أجزاء الماهية النوعية على النوع و عد منه تقدم الماهية على لوازمها كتقدم الأربعة على الزوجية و يقابله اللحوق و التأخر بالماهية و التجوهر. و تسمى هذه الأقسام الثلاثة أعني ما بالطبع و ما بالعلية و ما بالتجوهر سبقا و لحوقا بالذات. و منها السبق بالحقيقة و هو أن يتلبس السابق بمعنى من المعاني بالذات و يتلبس به اللاحق بالعرض كتلبس الماء بالجريان حقيقة و بالذات و تلبس الميزاب به بالعرض و يقابله اللحوق بذاك المعنى و هذا القسم مما زاده صدر المتألهين. و منها السبق و التقدم بالدهر و هو تقدم العلة الموجبة على معلولها لكن لا من حيث إيجابها لوجود المعلول و إفاضتها له كما في التقدم بالعلية بل من حيث انفكاك وجودها و انفصاله عن وجود المعلول و تقرر عدم المعلول في مرتبة وجودها كتقدم نشأة التجرد العقلي على نشأة المادة و يقابله اللحوق و التأخر الدهري. و هذا القسم قد زاده السيد الداماد ره بناء على ما صوره من الحدوث و القدم الدهريين و سيجيء بيانه. و منها السبق و التقدم بالرتبة أعم من أن يكون الترتيب بحسب الطبع أو بحسب الوضع و الاعتبار فالأول كالأجناس و الأنواع المترتبة فإنك إن ابتدأت آخذا من جنس الأجناس\n\nكان سابقا متقدما على ما دونه ثم الذي يليه و هكذا حتى ينتهي إلى النوع الأخير و إن ابتدأت آخذا من النوع الأخير كان الأمر في التقدم و التأخر بالعكس. و الثاني كالإمام و المأموم فإنك إن اعتبرت المبدأ هو المحراب كان الإمام هو السابق على من يليه من المأمومين ثم من يليه على من يليه و إن اعتبرت المبدأ هو الباب كان أمر السبق و اللحوق بالعكس. و يقابل السبق و التقدم بالرتبة اللحوق و التأخر بالرتبة. و منها السبق بالشرف و هو السبق في الصفات الكمالية كتقدم العالم على الجاهل و الشجاع على الجبان.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Priority and posteriority belong to the attributes of the existent considered as existent. Two things may share a relation to one existential principle, while one possesses a feature of that relation not possessed by the other. Thus two and three both relate to one, but two is nearer to one and is said to precede three; three follows two. If the shared relation involves no inequality, the two are said to be simultaneous relative to that principle.\n\nThe philosophers have distinguished kinds of priority and posteriority through induction.\n\n**Temporal priority** occurs when the prior and posterior cannot coexist in time: yesterday precedes today, and events in an earlier interval precede those in a later one.\n\n**Priority by nature** is the priority of an incomplete cause to its effect, as two is prior to three in the illustrative analysis. **Causal priority** is the priority of a complete cause to its effect.\n\n**Essential or constitutive priority** is the priority of a thing's essential principles to the whole constituted from them, such as the defining constituents of a species to that species. Also included is the priority of quiddity to its necessary concomitants, as four is prior to evenness. These three kinds—natural, causal, and constitutive—are grouped as priorities *in themselves* rather than merely by convention.\n\n**Priority in truth** applies where the earlier thing possesses some predicate primarily while the later receives it by derivative attribution. Water literally flows, while the spout carrying it is called ‘flowing’ only by attribution. This kind is associated with Ṣadr al-Mutaʾallihīn.\n\n**Dahrī priority**, or priority in the order of *dahr*, is the priority of a determining cause to its effect, not simply insofar as it bestows the effect's existence, as in causal priority, but insofar as the cause's order of existence is separated from the effect's order and the effect's absence is established at the superior rank. The separate intellectual realm is said to precede the material realm in this way. This classification is associated with Mīr Dāmād and his account of dahrī origination and beginninglessness.\n\n**Priority by rank** depends on an ordered series, which may be natural or specified by an assigned standpoint. In a hierarchy of genus and species, one who starts from the highest genus calls each more general term prior to the lower, while starting from the lowest species reverses the description. In a row of worshippers, counting from the miḥrāb makes the imām prior, whereas counting from the entrance reverses the rank.\n\n**Priority by excellence** concerns the possession of a perfection to a higher degree, as the learned person is prior to the ignorant and the courageous to the cowardly.\n\nEach kind has a corresponding posterior term, and simultaneity names the absence of priority or posteriority under the relevant relation.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 194,
@@ -1920,6 +1940,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 151 (PDF p. 152); chapter 9.1. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "Priority (sabaq) is used across distinct orders: temporal, causal, essential, truth of attribution, dahr, rank, and perfection. Dahrī priority is not a disguised claim that separate intellects are physically earlier in clock time."
         }
       ]
     },
@@ -1930,8 +1954,8 @@
       "title": "The basis of priority",
       "arabicTitle": "الفصل الثاني في ملاك السبق في أقسامه",
       "arabic": "و هو الأمر المشترك فيه بين المتقدم و المتأخر الذي فيه التقدم. ملاك السبق في السبق الزماني هو النسبة إلى الزمان سواء في ذلك نفس الزمان و الأمر الزماني و في السبق بالطبع هو النسبة إلى الوجود و في السبق بالعلية هو الوجوب و في السبق بالماهية و التجوهر هو تقرر الماهية و في السبق بالحقيقة هو مطلق التحقق الأعم من الحقيقي و المجازي و في السبق الدهري هو الكون بمتن الواقع و في السبق بالرتبة النسبة إلى مبدإ محدود كالمحراب أو الباب في الرتبة الحسية و كالجنس العالي أو النوع الأخير في الرتبة العقلية و في السبق بالشرف هو الفضل و المزية.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The *basis of priority* (malāk al-sabaq) is the common feature shared by the prior and posterior terms in respect of which the priority is established.\n\nIn temporal priority it is relation to time, whether the terms are temporal events or parts of time itself. In priority by nature it is relation to existence; in causal priority it is necessity; in constitutive priority it is the established essence or quiddity.\n\nIn priority by truth it is obtaining or being actual in the broad sense that admits both primary and derivative attribution. In dahrī priority it is being established in the very order of reality.\n\nIn priority by rank it is a relation to a selected starting point, such as the miḥrāb or doorway in a spatial order, or the highest genus or final species in an intellectual hierarchy. In priority by excellence it is the superiority or perfection under consideration.\n\nThe kinds are therefore not distinguished by calling one simply ‘earlier’: each presupposes its own shared measure or explanatory order.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 198,
@@ -1941,6 +1965,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 153 (PDF p. 154); chapter 9.2. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "This short chapter prevents equivocating between the several senses of ‘before’, particularly when comparing temporal priority with causal and essential priority."
         }
       ]
     },
@@ -1951,8 +1979,8 @@
       "title": "Beginninglessness and origination",
       "arabicTitle": "الفصل الثالث في القدم والحدوث وأقسامهما",
       "arabic": "كانت العامة تطلق اللفظتين القديم و الحادث على أمرين يشتركان في الانطباق على زمان واحد إذا كان زمان وجود أحدهما أكثر من زمان وجود الآخر فكان الأكثر زمانا هو القديم و الأقل زمانا هو الحادث و الحديث و هما وصفان إضافيان أي إن الشيء الواحد يكون حادثا بالنسبة إلى شيء و قديما بالنسبة إلى آخر فكان المحصل من مفهوم الحدوث هو مسبوقية الشيء بالعدم في زمان و من مفهوم القدم عدم كونه مسبوقا بذلك. ثم عمموا مفهومي اللفظين بأخذ العدم مطلقا يعم العدم المقابل و هو العدم الزماني الذي لا يجامع الوجود و العدم المجامع الذي هو عدم الشيء في حد ذاته المجامع لوجوده بعد استناده إلى العلة. فكان مفهوم الحدوث مسبوقية الوجود بالعدم و مفهوم القدم عدم مسبوقيته بالعدم و المعنيان من الأعراض الذاتية لمطلق الوجود فإن الموجود بما هو موجود إما مسبوق بالعدم و إما ليس بمسبوق به و عند ذلك صح البحث عنهما في الفلسفة. فمن الحدوث الحدوث الزماني و هو مسبوقية وجود الشيء بالعدم الزماني كمسبوقية اليوم بالعدم في أمس و مسبوقية حوادث اليوم بالعدم في أمس و يقابله القدم الزماني و هو عدم مسبوقية الشيء بالعدم الزماني كمطلق الزمان الذي لا يتقدمه زمان و لا زماني و إلا ثبت الزمان من حيث انتفى هذا خلف. و من الحدوث الحدوث الذاتي و هو مسبوقية وجود الشيء بالعدم في ذاته كجميع الموجودات الممكنة التي لها الوجود بعلة خارجة من ذاتها و ليس لها في ماهيتها و حد ذاتها إلا العدم. فإن قلت الماهية ليس لها في حد ذاتها إلا الإمكان و لازمه تساوي نسبتها إلى الوجود و العدم و خلو الذات عن الوجود و العدم جميعا دون التلبس بالعدم كما قيل. قلت الماهية و إن كانت في ذاتها خالية عن الوجود و العدم مفتقرة في تلبسها بأحدهما إلى مرجح لكن عدم مرجح الوجود و علته كاف في كونها معدومة و بعبارة أخرى خلوها في حد ذاتها عن الوجود و العدم و سلبهما عنها إنما هو بحسب الحمل الأولى و هو لا ينافي اتصافها بالعدم حينئذ بحسب الحمل الشائع. و يقابل الحدوث بهذا المعنى القدم الذاتي و هو عدم مسبوقية الشيء بالعدم في حد ذاته و إنما يكون فيما كانت الذات عين حقيقة الوجود الطارد للعدم بذاته و هو الوجود الواجبي الذي ماهيته إنيته.\n\nو من الحدوث الحدوث الدهري الذي ذكره السيد المحقق الداماد ره و هو مسبوقية وجود مرتبة من مراتب الوجود بعدمه المتقرر في مرتبة هي فوقها في السلسلة الطولية و هو عدم غير مجامع لكنه غير زماني كمسبوقية عالم المادة بعدمه المتقرر في عالم المثال و يقابله القدم الدهري و هو ظاهر.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "In ordinary usage, ‘ancient’ or ‘old’ (*qadīm*) and ‘new’ or ‘originated’ (*ḥādith*) were originally applied to two things sharing a period of reference, when the first had existed longer than the second. These are relative descriptions: something may be old in comparison with one thing and new in comparison with another. Origination thus initially meant being preceded by non-being in time, and beginninglessness the absence of such precedence.\n\nPhilosophers extended the concepts by taking non-being more generally. Non-being includes the *opposed absence* which cannot coexist with the thing's existence, such as its previous temporal non-existence, and *coexistent privation*, meaning the thing's non-existence in itself considered apart from the cause even while it exists through that cause.\n\nOrigination now means existence preceded by non-being, and beginninglessness the absence of such precedence. These are attributes of being as such, for an existent is either preceded by non-being or not preceded by it.\n\n**Temporal origination** is existence after temporal non-existence, as today's existence is preceded by its absence yesterday. The opposite is **temporal beginninglessness**, the absence of preceding temporal non-being. Time itself is given as an example, since if a prior time preceded time as a whole, time would have to obtain precisely where it was supposed absent, a contradiction.\n\n**Essential origination** is existence preceded by non-being in the thing's own essence, as with every contingent existent whose actuality arises from an external cause. Its quiddity, considered by itself, supplies no existence.\n\nAn objection says that quiddity as such contains only possibility, a balance between existence and absence; it is not inherently qualified with non-existence. The response distinguishes modes of predication. Quiddity in its essential definition indeed includes neither existence nor non-existence, and this exclusion is by *primary predication*. But in the absence of any cause giving it being, it is absent under *common predication*. There is no contradiction in these two assertions.\n\nThe opposite, **essential beginninglessness**, belongs to that which is not preceded by non-being in its own essence: the reality identical with existence itself, which expels absence by its own actuality. This is the Necessary Existent whose quiddity is His very existence.\n\n**Dahrī origination**, introduced by Mīr Dāmād, is the existence of one ontological rank preceded by its non-being established in a higher rank of the vertical order. This absence is not concurrent with the effect, yet neither is it a temporal absence. The material world, for example, is said to be preceded by its absence in the imaginal world. The corresponding *dahrī beginninglessness* is the absence of that kind of priority of non-being.\n\nThe ontological and temporal accounts of precedence must be distinguished; they are not interchangeable claims about the age of the physical universe.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 200,
@@ -1962,6 +1990,14 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 154 (PDF p. 155); chapter 9.3. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The distinction between essence and existence is indispensable to understanding essential origination: it does not mean that every contingent thing was once absent in chronological time."
+        },
+        {
+          "type": "Historical note",
+          "text": "The interpretation of dahrī origination is Mīr Dāmād's distinctive philosophical proposal, reported here by Tabāṭabāʾī, not a universally accepted temporal cosmology."
         }
       ]
     },
