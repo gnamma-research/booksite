@@ -9,11 +9,11 @@
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
-    "translatedAuthorialUnits": 45,
+    "translatedAuthorialUnits": 50,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 44,
+    "englishTranslatedChapters": 49,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh working English from the Arabic, preserving authorial objections and answers, with editorial notes as apparatus; no publisher English reproduced.",
@@ -29,7 +29,7 @@
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 44,
+    "translatedChapters": 49,
     "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
   },
   "sources": [
@@ -1392,8 +1392,8 @@
       "title": "Causality belongs to existence",
       "arabicTitle": "الفصل الأول في إثبات العلية والمعلولية وأنهما في الوجود",
       "arabic": "قد تقدم أن الماهية في ذاتها ممكنة تستوي نسبتها إلى الوجود و العدم و أنها في رجحان أحد الجانبين محتاجة إلى غيرها و عرفت أن القول بحاجتها في رجحان عدمها إلى غيرها نوع تجوز و إنما الحاجة في الوجود فلوجودها توقف على غيرها. و هذا التوقف لا محالة على وجود الغير فإن المعدوم من حيث هو معدوم لا شيئية له فهذا الموجود المتوقف عليه في الجملة هو الذي نسميه علة و الماهية المتوقفة عليه في وجودها معلولتها. ثم إن المجعول للعلة و الأثر الذي تضعه في المعلول إما أن يكون هو وجوده أو ماهيته أو صيرورة ماهيته موجودة لكن يستحيل أن يكون المجعول هو الماهية لما تقدم أنها اعتبارية و الذي للمعلول من علته أمر أصيل على أن الذي تستقر فيه حاجة الماهية المعلولة و يرتبط بالعلة هو وجودها لا ذاتها. و يستحيل أن يكون المجعول هو الصيرورة لأنها معنى نسبي قائم بطرفيه و من المحال أن يقوم أمر أصيل خارجي بطرفين اعتباريين غير أصيلين فالمجعول من المعلول و الأثر الذي تفيده العلة هو وجوده لا ماهيته و لا صيرورة ماهيته موجودة و هو المطلوب.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "We have already shown that a quiddity, taken in itself, is possible, with an equal relation to existence and non-existence. For one side to obtain rather than the other it requires something beyond itself. Strictly speaking, describing the quiddity as requiring another in order to remain non-existent is figurative: the real need concerns its existence, which depends on another.\n\nThis dependence must be upon an *existent* other, since the non-existent as non-existent has no thingness. The existent upon which the effect thus depends is called a *cause* (ʿilla), and the dependent thing in its existence an *effect* (maʿlūl).\n\nBut what exactly does the cause produce? Is it the effect's existence, its quiddity, or the ‘becoming existent’ of that quiddity?\n\nThe product cannot be the quiddity. Quiddity, as already established, has a derivative or intellectually considered status, whereas what an effect receives from its cause must be actual and original. Moreover, the quiddity's dependence upon its cause belongs ultimately to its *existence*, not to its defining essence taken apart from existence.\n\nNor can the product be the quiddity's *becoming existent*. Such ‘becoming’ is a relational meaning involving both the quiddity and existence as terms. Something possessing original extramental actuality cannot be constituted merely by a relation between two considered items, neither of which is independently original in the proposed sense.\n\nThe effect produced by the cause is therefore the effect's *existence itself*, not its quiddity or the relation of its quiddity to existence.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 145,
@@ -1403,6 +1403,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 108 (PDF p. 109); chapter 7.1. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The contrast between jaʿl al-wujūd and jaʿl al-māhiyya is foundational for this Sadrāian theory of causation. ‘Becoming existent’ is rejected as a separately produced relational item."
         }
       ]
     },
@@ -1413,8 +1417,8 @@
       "title": "The divisions of causes",
       "arabicTitle": "الفصل الثاني في انقسامات العلة",
       "arabic": "تنقسم العلة إلى تامة و ناقصة فإنها إما أن تشتمل على جميع ما يتوقف عليه وجود المعلول بحيث لا يبقى للمعلول معها إلا أن يوجد و هي العلة التامة و إما أن تشتمل على البعض دون الجميع و هي العلة الناقصة و تفترقان من حيث إن العلة التامة يلزم من وجودها وجود المعلول و من عدمها عدمه و العلة الناقصة لا يلزم من وجودها وجود المعلول و لكن يلزم من عدمها عدمه. و تنقسم أيضا إلى الواحدة و الكثيرة و تنقسم أيضا إلى البسيطة و هي ما لا جزء لها و المركبة و هي بخلافها و البسيطة إما بسيطة بحسب الخارج كالعقل المجرد و الأعراض و أما بحسب العقل و هي ما لا تركيب فيه خارجا من مادة و صورة و لا عقلا من جنس و فصل و أبسط البسائط ما لم يتركب من وجود و ماهية و هو الواجب عز اسمه. و تنقسم أيضا إلى قريبة و بعيدة و القريبة ما لا واسطة بينها و بين معلولها و البعيدة بخلافها كعلة العلة. و تنقسم العلة إلى داخلية و خارجية و العلل الداخلية و تسمى أيضا علل القوام هي المادة و الصورة المقومتان للمعلول و العلل الخارجية و تسمى أيضا علل الوجود و هي الفاعل و الغاية و ربما سمي الفاعل ما به الوجود و الغاية ما لأجله الوجود. و تنقسم العلة إلى العلل الحقيقية و المعدات و في تسمية المعدات عللا تجوز فليست عللا حقيقية و إنما هي مقربات تقرب المادة إلى إفاضة الفاعل كورود المتحرك في كل حد من حدود المسافة فإنه يقربه إلى الورود في حد يتلوه و كانصرام القطعات الزمانية فإنه يقرب موضوع الحادث إلى فعلية الوجود.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Causes admit several divisions.\n\nA cause may be **complete** or **incomplete**. The complete cause comprises everything upon which the effect's existence depends, so that, with it given, the effect cannot but exist. An incomplete cause contains some but not all of what is required. The presence of the complete cause entails the presence of its effect, while its absence entails the effect's absence. The presence of an incomplete cause does not suffice for the effect, but the absence of a necessary constituent of the causal conditions excludes it.\n\nCauses are also divided into **one** and **many**, and into **simple** and **composite**. A simple cause has no parts, whereas a composite cause does. Simplicity may be considered externally, as with certain separate intellects or accidents, or more comprehensively in the absence of external matter-form composition and intellectual genus-differentia composition. The simplest of all is that which has no composition even of existence and quiddity: the Necessary Existent, exalted is He.\n\nCauses are **proximate** or **remote**. The proximate cause has no intermediate cause between it and its effect; the remote cause acts through another cause, as a cause of a cause.\n\nCauses are further divided into **intrinsic** and **extrinsic** causes. The intrinsic causes, also called causes of constitution, are the matter and form constituting a composite effect. The extrinsic causes, also called causes of existence, are the efficient agent and the end or final cause. The agent is described as that *through which* the thing exists, and the final cause as that *for the sake of which* it exists.\n\nFinally, one distinguishes **true causes** from **preparatory conditions**. Calling preparatory conditions ‘causes’ is somewhat figurative. They do not by themselves confer the effect's existence but bring matter closer to the point of receiving actuality from an efficient agent. A moving thing reaching each limit of its path is thereby disposed to reach the next; similarly, the passing of segments of time brings the subject of a future event closer to its actual occurrence.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 147,
@@ -1424,6 +1428,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 109 (PDF p. 110); chapter 7.2. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminology",
+          "text": "Muʿiddāt (preparatory conditions) are not efficient causes in the complete existential sense. The complete/incomplete distinction concerns the full sufficient causal complex and the necessary causal constituents."
         }
       ]
     },
@@ -1434,8 +1442,8 @@
       "title": "Necessary concomitance of complete cause and effect",
       "arabicTitle": "الفصل الثالث في وجوب المعلول عند وجود العلة التامة ووجوب وجود العلة عند وجود المعلول",
       "arabic": "وجود المعلول إذا كانت العلة التامة موجودة وجب وجود معلولها و إلا جاز عدمه مع وجودها و لازمه تحقق عدمه المعلول لعدم العلة من دون علة. و إذا كان المعلول موجودا وجب وجود علته و إلا جاز عدمها مع وجود المعلول و قد تقدم أن العلة سواء كانت تامة أو ناقصة يلزم من عدمها عدم المعلول. و من هنا يظهر أن المعلول لا ينفك وجوده عن وجود علته كما أن العلة التامة لا تنفك عن معلولها. فلو كان المعلول زمانيا موجودا في زمان بعينه كانت علته موجودة واجبة في ذلك الزمان بعينه لأن توقف وجوده على العلة في ذلك الزمان فترجيح العلة لوجوده و إفاضتها له في ذلك الزمان و لو كانت العلة موجودة في زمان آخر معدومة في زمان وجود المعلول و الإفاضة قائمة بوجودها كانت مفيضة للمعلول و هي معدومة هذا محال. برهان آخر حاجة الماهية المعلولة إلى العلة ليست إلا حاجة وجودها إلى العلة و ليست الحاجة خارجة من وجودها بمعنى أن يكون هناك وجود و حاجة بل هي مستقرة في حد ذات وجودها فوجودها عين الحاجة و الارتباط فهو وجود رابط بالنسبة إلى علته لا استقلال له دونها و هي مقومة له و ما كان هذا شأنه استحال أن يوجد إلا متقوما بعلته معتمدا عليها فعند وجود المعلول يجب وجود علته و هو المطلوب.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Whenever a complete cause exists, its effect must exist. Otherwise the effect could be absent despite the presence of everything required for it; its absence would then be unexplained. Likewise, if an effect actually exists, its cause must exist, since the absence of any necessary cause—complete or incomplete—would exclude the effect.\n\nIt follows that an effect cannot be separated in existence from its cause, nor can a complete cause, insofar as it is complete, be separated from its effect.\n\nIf an effect is temporal and exists at a definite time, its cause must also be present and actual at that time. The effect depends upon its cause at that very time, and it is then that the cause determines and bestows its existence. If the cause existed at a different time but not while the effect existed, the cause would be giving existence to the effect while itself non-existent, which is impossible.\n\nThere is another proof. The dependence of an effect's quiddity on its cause is nothing other than the dependence of its *existence*. That dependence is not an additional item alongside the effect's actual existence, as though there were first an independent existence and then a relation of need. Rather, need belongs to the very reality of the effect's existence. Its existence is itself dependence and connection; relative to its cause it is a *linking existence* without self-subsistence.\n\nAn existence whose very identity is dependent cannot occur except as constituted by, and relying upon, its cause. Thus whenever the effect exists, its cause necessarily exists.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 149,
@@ -1445,6 +1453,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 111 (PDF p. 112); chapter 7.3. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Philosophical note",
+          "text": "The second argument states a stronger thesis than mere temporal co-occurrence: the effect is not an independently constituted object that later acquires a relation of dependence; its existence is characterised as dependence itself."
         }
       ]
     },
@@ -1455,8 +1467,8 @@
       "title": "The rule of the one",
       "arabicTitle": "الفصل الرابع قاعدة الواحد",
       "arabic": "الواحد لا يصدر عنه إلا الواحد و ذلك أن من الواجب أن يكون بين العلة و معلولها سنخية ذاتية ليست بين الواحد منهما و غير الآخر و إلا جاز كون كل شيء علة لكل شيء و كل شيء معلولا لكل شيء ففي العلة جهة مسانخة لمعلولها هي المخصصة لصدوره عنها فلو صدرت عن العلة الواحدة و هي التي ليست لها في ذاتها إلا جهة واحدة معاليل كثيرة بما هي كثيرة متباينة غير راجعة إلى جهة واحدة بوجه من الوجوه لزمه تقرر جهات كثيرة في ذاتها و هي ذات جهة واحدة و هذا محال. و يتبين بذلك أن ما يصدر عنه الكثير من حيث هو كثير فإن في ذاته جهة كثرة و يتبين أيضا أن العلل الكثيرة لا تتوارد على معلول واحد.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "From the one, insofar as it is one, only one proceeds. The ground of this principle is that cause and effect must possess some intrinsic proportionality (*sankhiyya*) that is not found between that particular cause and arbitrary other effects. Without such proportionality, anything could cause anything and anything could be the effect of anything.\n\nThere must therefore be in the cause an aspect proportionate to its effect, through which that particular effect proceeds from it.\n\nSuppose a cause were simply one, having only one aspect in its reality, yet produced several effects *precisely as many*, distinct from one another without any return to a unifying aspect. Their divergent effects would require correspondingly divergent aspects in the cause. The one-aspected cause would then be many-aspected, a contradiction.\n\nConsequently, what produces multiplicity precisely as multiplicity must itself possess some principle of multiplicity. The author also concludes that a plurality of independent causes cannot converge upon one numerically identical effect in the sense excluded by this causal principle.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 151,
@@ -1466,6 +1478,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 113 (PDF p. 114); chapter 7.4. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The rule of the one (*al-wāḥid lā yaṣduru ʿanhu illā al-wāḥid*) is qualified by ‘insofar as it is one’ and ‘effects insofar as many’. Its scope is debated in later metaphysics and should not be generalised into a denial of every kind of causal cooperation."
         }
       ]
     },
@@ -1476,8 +1492,8 @@
       "title": "Against causal circularity and infinite regress",
       "arabicTitle": "الفصل الخامس في استحالة الدور والتسلسل في العلل",
       "arabic": "أما استحالة الدور و هو توقف وجود الشيء على ما يتوقف عليه وجوده إما بلا واسطة و هو الدور المصرح و إما بواسطة أو أكثر و هو الدور المضمر فلأنه يستلزم توقف وجود الشيء على نفسه و لازمه تقدم الشيء على نفسه بالوجود لتقدم وجود العلة على وجود المعلول بالضرورة. و أما استحالة التسلسل و هو ترتب العلل لا إلى نهاية فمن أسد البراهين عليها ما أقامه الشيخ في إلهيات الشفاء و محصله أنا إذا فرضنا معلولا و علته و علة علته و أخذنا هذه الجملة وجدنا كلا من الثلاثة ذا حكم ضروري يختص به فالمعلول المفروض معلول فقط و علته علة لما بعدها معلولة لما قبلها و علة العلة علة فقط غير معلولة فكان ما هو معلول فقط طرفا و ما هو علة فقط طرفا آخر و كان ما هو علة و معلول معا وسطا بين طرفين ثم إذا فرضنا الجملة أربعة مترتبة كان للطرفين ما تقدم من حكم الطرفين و كان الاثنان الواقعان بين الطرفين مشتركين في حكم الوسط و هو أن لهما العلية و المعلولية معا بالتوسط بين طرفين ثم كلما زدنا في عدد الجملة إلى ما لا نهاية له كان الأمر جاريا على مجرى واحد و كان مجموع ما بين الطرفين و هي العدة التي كل واحد من آحادها علة و معلول معا وسطا له حكمه. فلو فرضنا سلسلة من العلل مترتبة إلى غير النهاية كان ما وراء المعلول الأخير من الجملة غير المتناهية وسطا لا طرف له و هو محال. و هذا البرهان يجري في كل سلسلة مترتبة من العلل التي لا تفارق وجودها وجود المعلول سواء كانت تامة أو ناقصة دون العلل المعدة. و يدل على وجوب تناهي العلل التامة خاصة ما تقدم أن وجود المعلول وجود رابط بالنسبة إلى علته فإنه لو ترتبت العلية و المعلولية في سلسلة غير متناهية من غير أن تنتهي إلى علة غير معلولة كانت وجودات رابطة متحققة من غير وجود نفسي مستقل تقوم به و هو محال. و لهم على استحالة التسلسل حجج أخرى مذكورة في المطولات.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "A causal circle (*dawr*) is impossible. It occurs when the existence of something depends on what itself depends upon that thing, whether directly, an *explicit circle*, or through one or more intermediaries, a *concealed circle*. In either case the thing's existence ultimately depends upon itself. Since a cause is prior to its effect in the order of being, the thing would have to precede itself, which is impossible.\n\nAn infinite regress of essentially ordered causes (*tasalsul*) is also impossible. One of the strongest demonstrations, given by Avicenna in the *Metaphysics of the Healing*, can be summarised as follows.\n\nSuppose an effect, its cause, and the cause of that cause. In this ordered set of three each member has a characteristic role. The last effect is effect only; its immediate cause is both effect relative to what precedes it and cause relative to what follows; the first cause in the selected set is cause only. The pure effect forms one extreme, the pure cause the other, and the cause-and-effect member is the middle.\n\nIf a fourth member is added to the ordered chain, the two extremes retain their roles while there are now two middle members, both causes and effects. The same reasoning holds for any larger number: everything between the two extremes belongs to the middle and has the character of being both cause and effect.\n\nIf an essentially ordered series of causes were infinite in the direction of causes, everything beyond the last effect would be a ‘middle’ with no first extreme to ground it. A middle without an extreme is impossible.\n\nThe argument applies to any essentially ordered chain of causes whose existence is not separated from the effect, whether the causes are complete or incomplete. It does not apply indiscriminately to preparatory conditions arranged in a temporal succession.\n\nA further argument particularly concerns complete causes. As established, the effect's existence is linking existence, intrinsically dependent upon its cause. If every cause were itself an effect in an infinite regress with no uncaused cause, there would be only dependent existences without an independent actuality in which they could be grounded. This is impossible. Other demonstrations against infinite causal regress are discussed in more extensive works.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 153,
@@ -1487,6 +1503,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 115 (PDF p. 116); chapter 7.5. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The regress in question is an essentially ordered series of concurrent existential dependence, not every temporally ordered succession. The middle/extreme argument and the argument from the dependent character of effects are distinct demonstrations."
         }
       ]
     },
