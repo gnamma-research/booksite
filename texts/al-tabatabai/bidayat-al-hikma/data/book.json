@@ -9,11 +9,11 @@
     "prepared": "2026-11-04",
     "numberedChaptersInOriginal": 110,
     "translationComplete": false,
-    "translatedAuthorialUnits": 56,
+    "translatedAuthorialUnits": 61,
     "guideUnits": 0,
     "method": "Original editorial guidance; no full authorial Arabic text or published English translation reproduced.",
     "arabicAuthorialChapters": 110,
-    "englishTranslatedChapters": 55,
+    "englishTranslatedChapters": 60,
     "englishTranslatedIntroductions": 1,
     "arabicSource": "Uploaded Arabic–English edition, Arabic pages manually and electronically normalized; proofreading and independent witness collation required.",
     "translationMethod": "Fresh working English from the Arabic, preserving authorial objections and answers, with editorial notes as apparatus; no publisher English reproduced.",
@@ -29,7 +29,7 @@
     "ocrGlyphRepair": "Verified recurring source-import glyph substitutions R→لمج, T→ته, 5→نه against independent Arabic witness; the one occurrence of '(5)' as a printed note marker was excluded and repaired by witness. Other OCR errors still require collation.",
     "ocrWitness": "https://lib.rafed.net/view.php?b_id=1571&type=c_fbook",
     "ocrDashRepair": "Reconstructed 108 recurring Arabic 'به' ligature losses (including بها، بهذا، بهما، إبهام) against the independent Rafed Arabic witness; punctuation dashes preserved. Other errors require edition collation.",
-    "translatedChapters": 55,
+    "translatedChapters": 60,
     "translatedSection": "Author's introduction and all 12 numbered chapters of Stage I; remaining stages Arabic-only pending fresh translation."
   },
   "sources": [
@@ -1675,8 +1675,8 @@
       "title": "Unity and multiplicity",
       "arabicTitle": "الفصل الأول في معنى الواحد والكثير",
       "arabic": "الحق أن مفهومي الوحدة و الكثرة من المفاهيم العامة التي تنتقش في النفس انتقاشا أوليا كمفهوم الوجود و مفهوم الإمكان و نظائرهما و لذا كان تعريفهما بأن الواحد ما لا ينقسم من حيث إنه لا ينقسم و الكثير ما ينقسم من حيث إنه ينقسم تعريفا لفظيا و لو كانا تعريفين حقيقيين لم يخلوا من فساد لتوقف تصور مفهوم الواحد على تصور مفهوم ما ينقسم و هو مفهوم الكثير و توقف تصور مفهوم الكثير على تصور مفهوم المنقسم الذي هو عينه و بالجملة الوحدة هي حيثية عدم الانقسام و الكثرة حيثية الانقسام. تنبيه الوحدة تساوق الوجود مصداقا كما أنها تباينه مفهوما فكل موجود فهو من حيث إنه موجود واحد كما أن كل واحد فهو من حيث إنه واحد موجود فإن قلت انقسام الموجود المطلق إلى الواحد و الكثير يوجب كون الكثير موجودا كالواحد لأنه من أقسام الموجود و يوجب أيضا كون الكثير غير الواحد مباينا له لأنهما قسيمان و القسيمان متباينان بالضرورة فبعض الموجود و هو الكثير من حيث هو كثير ليس بواحد و هو يناقض القول بأن كل موجود فهو واحد. قلت للواحد اعتباران اعتباره في نفسه من دون قياس الكثير إليه فيشمل الكثير فإن الكثير من حيث هو موجود فهو واحد له وجود واحد و لذا يعرض له العدد فيقال مثلا عشرة واحدة و عشرات و كثرة واحدة و كثرات و اعتباره من حيث يقابل الكثير فيباينه. توضيح ذلك أنا كما نأخذ الوجود تارة من حيث نفسه و وقوعه قبال مطلق العدم فيصير عين الخارجية و حيثية ترتب الآثار و نأخذه تارة أخرى فنجده في حال تترتب عليه آثاره و في حال أخرى لا تترتب عليه تلك الآثار و إن ترتبت عليه آثار أخرى فنعد وجوده المقيس وجودا ذهنيا لا تترتب عليه الآثار و وجوده المقيس عليه وجودا خارجيا تترتب عليه الآثار و لا ينافي ذلك قولنا إن الوجود يساوق العينية و الخارجية و إنه عين ترتب الآثار. كذلك ربما نأخذ مفهوم الواحد بإطلاقه من غير قياس فنجده يساوق الوجود مصداقا فكل ما هو موجود فهو من حيث وجوده واحد و نجده تارة أخرى و هو متصف بالوحدة في حال و غير متصف بها في حال أخرى كالإنسان الواحد بالعدد و الإنسان الكثير بالعدد المقيس إلى الواحد بالعدد فنعد المقيس كثيرا مقابلا للواحد الذي هو قسيمه و لا ينافي ذلك قولنا الواحد يساوق الموجود المطلق و المراد به الواحد بمعناه الأعم المطلق من غير قياس.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Unity and multiplicity are among the most general concepts impressed upon the mind immediately, like existence and possibility. Their ‘definitions’—the one is what is indivisible insofar as it is indivisible, and the many what is divisible insofar as it is divisible—are accordingly only verbal explanations. Were they strict real definitions, they would be defective: the definition of unity would depend upon division and therefore upon multiplicity, while the definition of multiplicity would merely repeat division itself. In summary, unity is the aspect of non-division and multiplicity that of division.\n\nUnity is coextensive with existence in its instances, although the two concepts differ in meaning. Every existent is one insofar as it exists, and every one is existent insofar as it is one.\n\nAn objection arises. Existence is divided into unity and multiplicity; multiplicity is therefore an existent as well as unity. Yet because unity and multiplicity are opposed divisions, the many, precisely as many, must be other than one. How then can every existent be one?\n\nThe answer is that ‘one’ has two considerations. Taken absolutely, without contrast to multiplicity, it includes the many: a plurality, insofar as it exists as this plurality, possesses a certain unity. Hence we may speak of ‘one ten’, ‘several tens’, ‘one plurality’, or ‘several pluralities’. But the one considered *as contrasted with* the many excludes the many.\n\nThe distinction is comparable to the different considerations of existence. Existence considered absolutely, opposed to non-being, is actual reality and the source of effects. Yet when we compare the mode in which a thing's characteristic effects obtain with the mode in which its intelligible meaning is merely present, we distinguish external from mental existence. This does not refute existence's general coextensiveness with actuality.\n\nLikewise, unity considered absolutely is coextensive with existence; considered in contrast to numerical multiplicity, it characterises a numerically single person and differs from several persons. The first, broader sense of unity is what is meant when we say that every existent, precisely as existent, is one.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 172,
@@ -1686,6 +1686,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 134 (PDF p. 135); chapter 8.1. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminological note",
+          "text": "The ‘one’ coextensive with existence is the broad unity of an existent as such, not exclusively numerical oneness. Unity as opposed to numerical multiplicity is a restricted consideration."
         }
       ]
     },
@@ -1696,8 +1700,8 @@
       "title": "Kinds of unity",
       "arabicTitle": "الفصل الثاني في أقسام الواحد",
       "arabic": "الواحد إما حقيقي و إما غير حقيقي و الحقيقي ما اتصف بالوحدة بنفسه من غير واسطة في العروض كالإنسان الواحد و غير الحقيقي بخلافه كالإنسان و الفرس المتحدين في الحيوانية. و الواحد الحقيقي إما ذات متصفة بالوحدة و إما ذات هي نفس الوحدة الثاني هي الوحدة الحقة كوحدة الصرف من كل شيء و إذا كانت عين الذات فالواحد و الوحدة فيه شيء واحد و الأول هو الواحد غير الحق كالإنسان الواحد. و الواحد بالوحدة غير الحقة إما واحد بالخصوص و إما واحد بالعموم و الأول هو الواحد بالعدد و هو الذي يفعل بتكرره العدد و الثاني كالنوع الواحد و الجنس الواحد. و الواحد بالخصوص إما أن لا ينقسم من حيث الطبيعة المعروضة للوحدة أيضا كما لا ينقسم من حيث وصف وحدته و إما أن ينقسم و الأول إما نفس مفهوم الوحدة و عدم الانقسام و إما غيره و غيره إما وضعي كالنقطة الواحدة و إما غير وضعي كالمفارق و هو إما متعلق بالمادة بوجه كالنفس و إما غير متعلق كالعقل و الثاني و هو الذي يقبل الانقسام بحسب طبيعته المعروضة إما أن يقبله بالذات كالمقدار الواحد و إما أن يقبله بالعرض كالجسم الطبيعي الواحد من جهة مقداره. و الواحد بالعموم إما واحد بالعموم المفهومي و إما واحد بالعموم بمعنى السعة الوجودية و الأول إما واحد نوعي كوحدة الإنسان و إما واحد جنسي كوحدة الحيوان و إما واحد عرضي كوحدة الماشي و الضاحك و الواحد بالعموم بمعنى السعة الوجودية كالوجود المنبسط. و الواحد غير الحقيقي ما اتصف بالوحدة بعرض غيره بأن يتحد نوع اتحاد مع واحد حقيقي كزيد و عمرو فإنهما واحد في الإنسان و الإنسان و الفرس فإنهما واحد في الحيوان و تختلف أسماء الواحد غير الحقيقي باختلاف جهة الوحدة بالعرض فالوحدة في معنى النوع تسمى تماثلا و في معنى الجنس تجانسا و في الكيف تشابها و في الكم تساويا و في الوضع توازيا و في النسبة تناسبا و وجود كل من الأقسام المذكورة ظاهر كذا قرروا.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "The one is either *truly one* or one in a non-primary sense. True unity belongs to the thing itself, without the unity's being attributed to it through something else, as with an individual human being. Non-primary unity occurs when distinct things are called one through a common property, as human and horse are one in animality.\n\nA truly one being is either an essence qualified by unity, or an essence identical with unity itself. The latter is *true unity* in the strictest sense, as with a pure reality wholly free of admixture. In it, the one and unity are identical. The former, such as an ordinary single person, is a qualified unity and not true unity in that strict sense.\n\nA being possessing non-absolute unity may be one **in particular**, or one **in general**. Unity in particular is numerical unity, whose repetition gives rise to number. Unity in general belongs, for example, to one species or genus.\n\nThe numerically one can be further distinguished. Its subject either admits no division by its own nature, as well as being one, or admits division. Among indivisibles we may consider the very notion of unity or something different: a point with position, or an immaterial existent without position. The immaterial may be connected with matter in some way, like soul, or wholly separate, like intellect.\n\nA numerically one thing which admits division in its own nature may be divisible *through itself*, like a single magnitude, or through something associated with it, like a natural body divisible through its quantitative extension.\n\nUnity in general may be conceptual, or may signify breadth and extension of actual existence. Conceptual generality includes the unity of a species such as human, the unity of a genus such as animal, and unity through a common accidental characteristic such as walking or laughing. Unity through existential breadth is exemplified by *expanded existence* (al-wujūd al-munbasiṭ).\n\nNon-primary unity belongs to things which possess a kind of unity through another genuinely one item. Zayd and ʿAmr are one in humanity; human and horse are one in animality. The names given to such unity differ with the ground of agreement: agreement in species is *specific similarity*, in genus *generic similarity*, in quality *resemblance*, in quantity *equality*, in position *parallelism*, and in relation *proportion*. The philosophers regard instances of these divisions as evident.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 175,
@@ -1707,6 +1711,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 136 (PDF p. 137); chapter 8.2. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The chapter contains a classificatory tree. ‘True unity’ in the strict sense is not identical to simply being one numerical individual, and ‘unity through breadth of existence’ is not ordinary logical universality."
         }
       ]
     },
@@ -1717,8 +1725,8 @@
       "title": "Identity and predication",
       "arabicTitle": "الفصل الثالث الهوهوية وهو الحمل",
       "arabic": "من عوارض الوحدة الهوهوية كما أن من عوارض الكثرة الغيرية ثم الهوهوية هي الاتحاد في جهة ما مع الاختلاف من جهة ما و هذا هو الحمل و لازمه صحة الحمل في كل مختلفين بينهما اتحاد ما لكن التعارف خص إطلاق الحمل على موردين من الاتحاد بعد الاختلاف. أحدهما أن يتحد الموضوع و المحمول مفهوما و ماهية و يختلفا بنوع من الاعتبار كالاختلاف بالإجمال و التفصيل في قولنا الإنسان حيوان ناطق فإن الحد عين المحدود مفهوما و إنما يختلفان بالإجمال و التفصيل و كالاختلاف بفرض انسلاب الشيء عن نفسه فتغاير نفسه نفسه ثم يحمل على نفسه لدفع توهم المغايرة فيقال الإنسان إنسان و يسمى هذا الحمل بالحمل الذاتي الأولي. و ثانيهما أن يختلف أمران مفهوما و يتحدا وجودا كقولنا الإنسان ضاحك و زيد قائم و يسمى هذا الحمل بالحمل الشائع الصناعي.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Identity or *being-the-same* (huwahuwiyya) belongs to the properties of unity, as otherness belongs to multiplicity. Identity consists in union under some consideration accompanied by difference under another. This is the basis of predication.\n\nIn principle any two things which differ in some way but share some unity could be related by predication. Customary logical terminology, however, chiefly applies ‘predication’ to two cases.\n\nFirst, subject and predicate may be identical in concept and quiddity but differ in the way they are considered. For instance, in ‘A human is a rational animal’, the definition and the defined are conceptually identical, but one expresses the content in summary and the other in detail. Similarly, in ‘A human is human’, the thing is hypothetically considered as distinct from itself in order to deny that supposed difference by affirming identity. This is *primary essential predication* (al-ḥaml al-dhātī al-awwalī).\n\nSecond, subject and predicate may differ conceptually while coinciding in their concrete instance, as in ‘A human is capable of laughter’ or ‘Zayd is standing’. This is *common predication* (al-ḥaml al-shāʾiʿ al-ṣināʿī).",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 177,
@@ -1732,6 +1740,10 @@
         {
           "type": "editorial synthesis of lecture notes",
           "text": "The contrast of primary essential predication and common predication clarifies why a concept can be classified one way qua definition and another way qua an existing mental act. (Krishnan, printed p. 139; attribution to the lecturer as mediated by the note-taker.)"
+        },
+        {
+          "type": "Terminology",
+          "text": "Primary predication concerns identity of conceptual content under different considerations; common predication concerns coincidence in an instance despite difference of conceptual meaning."
         }
       ]
     },
@@ -1742,8 +1754,8 @@
       "title": "Kinds of common predication",
       "arabicTitle": "الفصل الرابع تقسيمات للحمل الشائع",
       "arabic": "و ينقسم الحمل الشائع إلى حمل هو هو و هو أن يحمل المحمول على الموضوع بلا اعتبار أمر زائد نحو الإنسان ضاحك و يسمى أيضا حمل المواطاة و حمل ذي هو و هو أن يتوقف اتحاد المحمول مع الموضوع على اعتبار زائد كتقدير ذي أو الاشتقاق كزيد عدل أي ذو عدل أو عادل. و ينقسم أيضا إلى بتي و غير بتي و البتي ما كانت لموضوعه أفراد محققة يصدق عليها عنوانه كالإنسان ضاحك و الكاتب متحرك الأصابع و غير البتي ما كانت لموضوعه أفراد مقدرة غير محققة كقولنا كل معدوم مطلق فإنه لا يخبر عنه و كل اجتماع النقيضين محال. و ينقسم أيضا إلى بسيط و مركب و يسميان الهلية البسيطة و الهلية المركبة و الهلية البسيطة ما كان المحمول فيها وجود الموضوع كقولنا الإنسان موجود و المركبة ما كان المحمول فيها أثرا من آثار وجوده كقولنا الإنسان ضاحك. و بذلك يندفع ما استشكل على قاعدة الفرعية و هي أن ثبوت شيء لشيء فرع ثبوت المثبت له بأن ثبوت الوجود للإنسان مثلا في قولنا الإنسان موجود فرع ثبوت الإنسان قبله فله وجود قبل ثبوت الوجود له و تجري فيه قاعدة الفرعية و هلم جرا فيتسلسل. وجه الاندفاع أن قاعدة الفرعية إنما تجري في ثبوت شيء لشيء و مفاد الهلية البسيطة ثبوت الشيء لا ثبوت شيء لشيء فلا تجري فيها القاعدة.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Common predication admits several divisions.\n\nFirst, there is **direct identity-predication**, in which the predicate is attributed to the subject without positing an additional term, as in ‘A human is capable of laughter’. This is also called predication by agreement or *muwāṭāʾa*. Its counterpart is **predication through possession**, where the unity of predicate and subject requires an additional consideration, such as ‘possessing’ or a derived adjective: ‘Zayd is justice’ is taken to mean ‘Zayd possesses justice’ or ‘Zayd is just’.\n\nSecond, it may be **definite**, where the subject has actual instances to which the description applies, as in ‘A human is capable of laughter’ or ‘A writer moves the fingers’; or **non-definite**, where the subject has only supposed rather than actual instances, as in ‘Every absolutely non-existent thing is such that nothing can be predicated of it’ or ‘Every conjunction of contradictories is impossible’.\n\nThird, it may be **simple** or **composite**. The former is the simple existential proposition (*al-haliyya al-basīṭa*), whose predicate is the existence of the subject, as in ‘The human exists’. The latter is the composite existential proposition (*al-haliyya al-murakkaba*), whose predicate is some feature or effect of the subject's existence, as in ‘The human is capable of laughter’.\n\nThis distinction resolves the difficulty raised against the rule that the establishment of something for a subject presupposes the subject's establishment. If we apply that rule to ‘The human exists’, it might seem that the human must already exist before existence can be predicated, requiring a further prior existence without end.\n\nBut the rule governs the establishment of **something for something**. The simple existential proposition expresses the establishment **of the thing itself**, not a further determination added to an already actual subject. The rule therefore does not apply, and the regress does not arise.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 179,
@@ -1753,6 +1765,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 141 (PDF p. 142); chapter 8.4. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Translator's note",
+          "text": "The same simple/composite distinction appeared earlier in the discussion of predicating existence of quiddity. The two contexts should be read together rather than treating existence as an accidental extra predicate."
         }
       ]
     },
@@ -1763,8 +1779,8 @@
       "title": "Otherness and opposition",
       "arabicTitle": "الفصل الخامس في الغيرية والتقابل",
       "arabic": "قد تقدم أن من عوارض الكثرة الغيرية و هي تنقسم إلى غيرية ذاتية و غير ذاتية و الغيرية الذاتية هي كون المغايرة بين الشيء و غيره لذاته كالمغايرة بين الوجود و العدم و تسمى تقابلا و الغيرية غير الذاتية هي كون المغايرة لأسباب أخر غير ذات الشيء كافتراق الحلاوة و السواد في السكر و الفحم و تسمى خلافا. و ينقسم التقابل و هو الغيرية الذاتية و قد عرفوه بامتناع اجتماع شيئين في محل واحد من جهة واحدة في زمان واحد إلى أربعة أقسام فإن المتقابلين إما أن يكونا وجوديين أو لا و على الأول إما أن يكون كل منهما معقولا بالقياس إلى الآخر كالعلو و السفل فهما متضائفان و التقابل تقابل التضايف أو لا يكونا كذلك كالسواد و البياض فهما متضادان و التقابل تقابل التضاد و على الثاني يكون أحدهما وجوديا و الآخر عدميا إذ لا تقابل بين عدميين و حينئذ إما أن يكون هناك موضوع قابل لكل منهما كالعمى و البصر و يسمى تقابلهما تقابل العدم و الملكة و إما أن لا يكون كذلك كالنفي و الإثبات و يسميان متناقضين و تقابلهما تقابل التناقض كذا قرروا. و من أحكام مطلق التقابل أنه يتحقق بين طرفين لأنه نوع نسبة بين المتقابلين و النسبة تتحق بين طرفين.",
-      "english": "",
-      "status": "arabic-source-english-pending",
+      "english": "Otherness (*ghayriyya*) is a property of multiplicity. It is either intrinsic or non-intrinsic.\n\n**Intrinsic otherness** is difference between two things by reason of what they themselves are, as with existence and non-existence. This is called *opposition* (taqābul). **Non-intrinsic otherness** arises through other circumstances, as when sweetness and blackness are separated in sugar and charcoal respectively. This is called mere *difference* (khilāf).\n\nOpposition is commonly defined as the impossibility of two opposed things occurring together in one subject, in one respect, at one time. It is divided into four classes.\n\nIf both opposites are positive existents, either each is understood only in relation to the other, as above and below; these are **correlatives**, and their opposition is *correlative opposition*. Or they do not essentially refer to one another, as black and white; these are **contraries**, and their opposition is *contrariety*.\n\nIf one opposite is positive and the other privative—there can be no opposition between two sheer non-entities—then either there is a subject naturally capable of the positive condition, as with sight and blindness; this is the opposition of **possession and privation**. Or there is no such specification of a naturally receptive subject, as with affirmation and negation; these are **contradictories**, and their opposition is *contradiction*.\n\nEvery opposition involves two terms, for opposition is a special kind of relation, and a relation must have relata.",
+      "status": "working-translation",
       "source": {
         "edition": "Bidayat al-Hikma, supplied bilingual PDF (Arabic original)",
         "page": 181,
@@ -1774,6 +1790,10 @@
         {
           "type": "lecture note · source",
           "text": "Lecture-note locator: Aanand Krishnan, notes based on Shaykh Mohammad Ali Shomali’s lectures on Bidāyat al-Ḥikma, printed p. 143 (PDF p. 144); chapter 8.5. This is a student’s record, not a verified verbatim transcript."
+        },
+        {
+          "type": "Terminological note",
+          "text": "Intrinsic otherness here names the formal distinction grounding an opposition, not an additional external accident. The four kinds are relational, contrary, privative, and contradictory opposition."
         }
       ]
     },
