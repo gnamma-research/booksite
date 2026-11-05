@@ -3,7 +3,7 @@
   "title": "al-Manṭiq",
   "arabicTitle": "المنطق",
   "author": "Muḥammad Riḍā al-Muẓaffar",
-  "description": "A bilingual reading edition of al-Manṭiq.",
+  "description": "Selections from Muḥammad Riḍā al-Muẓaffar's Arabic logic, with a fresh working English rendering and numbered source notes.",
   "status": "working-translation",
   "editorialStatus": {
     "translationComplete": false,
@@ -325,10 +325,10 @@
   ],
   "glossary": [
     {
-      "term": "taṣawwur",
-      "arabic": "تصوّر",
-      "english": "Conception",
-      "definition": "An intelligible content considered without necessarily assenting to a judgment."
+      "term": "ʿaraḍī",
+      "arabic": "عرضي",
+      "english": "Accidental predicate",
+      "definition": "A predicate outside a thing's constitutive essence, whether or not it happens to be inseparable from that thing."
     },
     {
       "term": "taṣdīq",
@@ -337,40 +337,40 @@
       "definition": "Cognition involving judgment that a proposition is true."
     },
     {
-      "term": "ḥadd",
-      "arabic": "حدّ",
-      "english": "Essential definition",
-      "definition": "A specification of essential constituents; not to be confused with delimitation (ḥadd) in ontology."
+      "term": "ʿillat al-wujūd",
+      "arabic": "علة الوجود",
+      "english": "Cause of being",
+      "definition": "What explains the thing's existence, distinguished from what merely explains our assent to a proposition about it."
     },
     {
-      "term": "rasm",
-      "arabic": "رسم",
-      "english": "Descriptive definition",
-      "definition": "Description using nonessential but distinctive attributes."
+      "term": "dawr",
+      "arabic": "دور",
+      "english": "Circularity",
+      "definition": "A defect in explanation or definition in which knowing the proposed definition already requires knowing what it purports to define."
     },
     {
-      "term": "burhān",
-      "arabic": "برهان",
-      "english": "Demonstration",
-      "definition": "A rigorous inference yielding scientific certainty on the basis of appropriate premises."
+      "term": "ṭard wa-ʿaks",
+      "arabic": "طرد وعكس",
+      "english": "Coextensiveness",
+      "definition": "The requirement that a defining expression apply to every instance of what is defined and to no other instance; necessary for adequacy, not sufficient for essentiality."
     },
     {
-      "term": "mā shāriḥa",
-      "arabic": "ما الشارحة",
-      "english": "Explanatory what?",
-      "definition": "The question concerning the quiddity before the thing's existence has been established."
+      "term": "ʿaraḍ ʿāmm",
+      "arabic": "عرض عام",
+      "english": "Common accident",
+      "definition": "A nonessential predicate shared by more than one species; it does not by itself provide a distinctive account."
     },
     {
-      "term": "mā ḥaqīqiyya",
-      "arabic": "ما الحقيقية",
-      "english": "Real what?",
-      "definition": "The same question of quiddity when existence is already established."
+      "term": "rasm tāmm",
+      "arabic": "رسم تام",
+      "english": "Complete descriptive definition",
+      "definition": "A descriptive account combining the proximate genus with a proprium; the proprium does not become part of the essence."
     },
     {
-      "term": "hal basīṭa",
-      "arabic": "هل البسيطة",
-      "english": "Simple existential question",
-      "definition": "Asks whether the subject exists."
+      "term": "ḥadd tāmm",
+      "arabic": "حد تام",
+      "english": "Complete essential definition",
+      "definition": "A definition that gives both proximate genus and proximate differentia."
     },
     {
       "term": "hal murakkaba",
@@ -379,16 +379,148 @@
       "definition": "Asks whether a predicate belongs to a subject whose existence is presupposed."
     },
     {
-      "term": "jins qarīb",
-      "arabic": "الجنس القريب",
-      "english": "Proximate genus",
-      "definition": "The nearest genus included in the subject's essential account."
+      "term": "taṣawwur",
+      "arabic": "تصوّر",
+      "english": "Conception",
+      "definition": "An intelligible content considered without necessarily assenting to a judgment."
+    },
+    {
+      "term": "burhān",
+      "arabic": "برهان",
+      "english": "Demonstration",
+      "definition": "A rigorous inference yielding scientific certainty on the basis of appropriate premises."
+    },
+    {
+      "term": "burhān innī",
+      "arabic": "برهان إنّي",
+      "english": "Demonstration through an effect or sign",
+      "definition": "Reasoning from what is known to the fact concluded without thereby providing the relevant causal explanation of why it is so."
+    },
+    {
+      "term": "burhān limmī",
+      "arabic": "برهان لمّي",
+      "english": "Demonstration through the cause",
+      "definition": "Reasoning that explains the conclusion through a cause appropriate to the fact demonstrated; compare demonstration from a sign or effect."
+    },
+    {
+      "term": "rasm",
+      "arabic": "رسم",
+      "english": "Descriptive definition",
+      "definition": "Description using nonessential but distinctive attributes."
+    },
+    {
+      "term": "faṣl",
+      "arabic": "فصل",
+      "english": "Differentia",
+      "definition": "The essential constituent by which a species is distinguished within a genus; it is not merely any observable distinctive feature."
+    },
+    {
+      "term": "ḥadd",
+      "arabic": "حدّ",
+      "english": "Essential definition",
+      "definition": "A specification of essential constituents; not to be confused with delimitation (ḥadd) in ontology."
+    },
+    {
+      "term": "dhātī",
+      "arabic": "ذاتي",
+      "english": "Essential predicate",
+      "definition": "What enters the essence or its constitutive account in the relevant logical division; not simply something permanently accompanying a subject."
+    },
+    {
+      "term": "sharḥ al-ism",
+      "arabic": "شرح الاسم",
+      "english": "Explanation of the name",
+      "definition": "An account of what a name signifies, prior to determining whether the named thing exists; an account may later function as a real definition."
+    },
+    {
+      "term": "mā shāriḥa wa-ḥaqīqiyya",
+      "arabic": "ما الشارحة والحقيقية",
+      "english": "Explanatory and real 'what'",
+      "definition": "The same formal account may answer 'what?' before existence is established (explanatory) and after it is established (real); the epistemic setting differs."
+    },
+    {
+      "term": "mā shāriḥa",
+      "arabic": "ما الشارحة",
+      "english": "Explanatory what?",
+      "definition": "The question concerning the quiddity before the thing's existence has been established."
+    },
+    {
+      "term": "jins",
+      "arabic": "جنس",
+      "english": "Genus",
+      "definition": "An essential universal predicable of species differing specifically, supplying the common element in an essential account."
+    },
+    {
+      "term": "ʿillat al-taṣdīq",
+      "arabic": "علة التصديق",
+      "english": "Ground of assent",
+      "definition": "What justifies the intellect's assent to a claim, which need not be identical with the cause of the thing's existence."
+    },
+    {
+      "term": "rasm nāqiṣ",
+      "arabic": "رسم ناقص",
+      "english": "Incomplete descriptive definition",
+      "definition": "A description using a proprium without the proximate genus, or pairing it with a more remote genus."
+    },
+    {
+      "term": "ḥadd nāqiṣ",
+      "arabic": "حد ناقص",
+      "english": "Incomplete essential definition",
+      "definition": "An essential account giving less than both proximate genus and proximate differentia, normally by a differentia alone or with a remote genus."
+    },
+    {
+      "term": "khāṣṣa",
+      "arabic": "خاصة",
+      "english": "Proprium",
+      "definition": "An attribute distinctive of a species without entering its essential definition, as opposed to the constitutive differentia."
     },
     {
       "term": "faṣl qarīb",
       "arabic": "الفصل القريب",
       "english": "Proximate differentia",
       "definition": "The immediate essential distinction by which the species is specified."
+    },
+    {
+      "term": "jins qarīb",
+      "arabic": "الجنس القريب",
+      "english": "Proximate genus",
+      "definition": "The nearest genus included in the subject's essential account."
+    },
+    {
+      "term": "māhiyya",
+      "arabic": "ماهية",
+      "english": "Quiddity",
+      "definition": "What a thing is, considered as the answer to the question 'What is it?' This need not itself establish its external existence."
+    },
+    {
+      "term": "mā ḥaqīqiyya",
+      "arabic": "ما الحقيقية",
+      "english": "Real what?",
+      "definition": "The same question of quiddity when existence is already established."
+    },
+    {
+      "term": "jins baʿīd",
+      "arabic": "جنس بعيد",
+      "english": "Remote genus",
+      "definition": "A genus above the proximate genus in a classificatory hierarchy; by itself it leaves more of the specific nature unspecified."
+    },
+    {
+      "term": "hal basīṭa",
+      "arabic": "هل بسيطة",
+      "english": "Simple 'whether'",
+      "definition": "The interrogative asking whether a thing exists at all, rather than whether it possesses some further attribute."
+    },
+    {
+      "term": "hal basīṭa",
+      "arabic": "هل البسيطة",
+      "english": "Simple existential question",
+      "definition": "Asks whether the subject exists."
+    },
+    {
+      "term": "taʿrīf lafẓī",
+      "arabic": "تعريف لفظي",
+      "english": "Verbal definition",
+      "definition": "An explanation of a word through another expression whose customary signification is already understood; it does not yet explain the essence of the thing."
     }
   ]
 }
