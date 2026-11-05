@@ -2,7 +2,7 @@ name: Qawaid scholarly UI QA
 on:
   push:
     branches: [master]
-    paths: ['.github/workflows/qawaid-study-ui-qa.yml','texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py','texts/al-turka/qawaid-al-tawhid/qawaid-study.js','texts/al-turka/qawaid-al-tawhid/qawaid-study.css']
+    paths: ['.github/workflows/qawaid-study-ui-qa.yml','texts/al-turka/qawaid-al-tawhid/qa/check-study-ui.py','texts/al-turka/qawaid-al-tawhid/qawaid-study.js','texts/al-turka/qawaid-al-tawhid/qawaid-study.css', 'texts/al-turka/qawaid-al-tawhid/data/primary-reference-register.js', 'texts/al-turka/qawaid-al-tawhid/data/linked-lexicon.js', 'texts/al-turka/qawaid-al-tawhid/qawaid-historical-lexicon.js']
   workflow_dispatch:
 permissions:
   contents: read
@@ -16,6 +16,7 @@ jobs:
           sparse-checkout: |
             texts/al-turka/qawaid-al-tawhid
             assets
+            daruri/full-dictionary-data.js
       - name: Browser
         run: |
           python -m pip install --quiet playwright
