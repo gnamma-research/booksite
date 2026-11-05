@@ -1,0 +1,108 @@
+name: Hikma - verify and publish nine A4 PDFs
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'texts/al-tabatabai/*/data/book.json'
+      - 'texts/al-tabatabai/assets/hikma-pdf.css'
+      - 'texts/al-tabatabai/tools/build-pdfs.cjs'
+      - '.github/workflows/hikma-a4-pdf-release.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hikma-nine-pdf-editions
+  cancel-in-progress: true
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JSON source integrity
+        run: node texts/al-tabatabai/tools/audit-hikma.mjs
+      - name: Install PDF dependencies
+        run: |
+          npm install --no-save --package-lock=false playwright@1.58.0
+          npx playwright install --with-deps chromium
+          python3 -m pip install -q pypdf==5.9.0
+      - name: Build nine selectable-text A4 PDF editions
+        run: HIKMA_PDF_MODES=reading,study,reference node texts/al-tabatabai/tools/build-pdfs.cjs
+      - name: Verify PDF manifest, searchability, edition size and source checksums
+        run: |
+          python3 - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          from pypdf import PdfReader
+          root=Path('texts/al-tabatabai')
+          entries=json.loads((root/'editions/manifest.json').read_text())['files']
+          assert len(entries)==9, f"Expected nine editions; got {len(entries)}"
+          for row in entries:
+              pdf=root/'editions'/row['filename']
+              assert pdf.is_file() and pdf.stat().st_size==row['bytes']
+              assert hashlib.sha256(pdf.read_bytes()).hexdigest()==row['sha256']
+              source=root/row['filename'].split('-'+row['mode']+'-A4.pdf')[0]/'data/book.json'
+              assert source.is_file()
+              assert hashlib.sha256(source.read_bytes()).hexdigest()==row['source_sha256']
+              reader=PdfReader(str(pdf))
+              assert len(reader.pages)>=3, (row['filename'],len(reader.pages))
+              sample=' '.join((reader.pages[i].extract_text() or '') for i in range(min(5,len(reader.pages))))
+              assert len(sample.strip())>100, f"Unsearchable or blank PDF {row['filename']}"
+              print(row['filename'],len(reader.pages),'A4 pages',row['bytes'],'bytes')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hikma-nine-a4-pdf-editions
+          path: texts/al-tabatabai/editions/
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Publish only verified PDF files on current master
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          SAVE="$RUNNER_TEMP/hikma-pdf-release"
+          mkdir -p "$SAVE"
+          cp texts/al-tabatabai/editions/*.pdf "$SAVE/"
+          cp texts/al-tabatabai/editions/manifest.json "$SAVE/"
+          BUILT_SHA="$GITHUB_SHA"
+          for n in 1 2 3 4 5; do
+            git fetch --quiet origin master
+            CURRENT="$(git rev-parse origin/master)"
+            if [ "$CURRENT" != "$BUILT_SHA" ] &&
+               ! git diff --quiet "$BUILT_SHA" "$CURRENT" -- \
+                  texts/al-tabatabai/muzaffar-al-mantiq/data/book.json \
+                  texts/al-tabatabai/bidayat-al-hikma/data/book.json \
+                  texts/al-tabatabai/nihayat-al-hikma/data/book.json \
+                  texts/al-tabatabai/tools/build-pdfs.cjs \
+                  texts/al-tabatabai/assets/hikma-pdf.css; then
+              echo 'A newer source edition arrived after this build. Refusing to publish stale PDFs.'
+              exit 1
+            fi
+            git reset --hard "$CURRENT"
+            mkdir -p texts/al-tabatabai/editions
+            cp "$SAVE"/*.pdf "$SAVE"/manifest.json texts/al-tabatabai/editions/
+            git add -A texts/al-tabatabai/editions/
+            if git diff --cached --quiet; then
+              echo 'PDF catalog already current.'
+              exit 0
+            fi
+            git commit -m 'Publish nine verified source-matched Hikma A4 PDFs'
+            if git push origin HEAD:master; then
+              echo 'Nine searchable PDFs and SHA256 catalog published.'
+              exit 0
+            fi
+            echo "Concurrent unrelated commit: rebasing only generated PDFs, attempt $n"
+          done
+          echo 'No safe publication; artifacts remain retained for inspection.'
+          exit 1
