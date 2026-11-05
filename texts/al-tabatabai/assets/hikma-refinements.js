@@ -36,7 +36,6 @@
   }
 
   let selectedText='';
-  let keepNextGlossarySearch=false;
   function lookupTerm(value) {
     return (value||'').trim().replace(/[\u200c-\u200f\u202a-\u202e]/g,'')
       .replace(/^[\s.,;:()[\]{}«»"“”'‘’!?؟]+|[\s.,;:()[\]{}«»"“”'‘’!?؟]+$/g,'')
@@ -48,28 +47,16 @@
     const node=selection.anchorNode && selection.anchorNode.parentElement;
     if(node && node.closest && node.closest('.reading-content'))selectedText=lookupTerm(selection.toString());
   });
-  const lookup=createHeaderButton('lookup-selection','Dictionary',[
-    'M4 4h6a3 3 0 0 1 3 3v13a4 4 0 0 0-4-3H4z',
-    'M13 7a3 3 0 0 1 3-3h4v13h-3a4 4 0 0 0-4 3',
-    'M7 8h3M7 11h3'
-  ]);
-  if(lookup) lookup.addEventListener('click',()=>{
+  /* The single Glossary button also looks up text selected in the reader. */
+  const glossaryButton=$('glossary-open');
+  if(glossaryButton)glossaryButton.addEventListener('click',()=>{
     const search=$('glossary-search');
-    const open=$('glossary-open');
-    if(!search||!open)return;
+    if(!search)return;
     let term=lookupTerm(selectedText || (window.getSelection()?window.getSelection().toString():''));
-    if (/^ال[\u0621-\u064a]{3,}$/.test(term))term=term.slice(2);
-    if(term){search.value=term;search.dispatchEvent(new Event('input',{bubbles:true}));}
-    else if(search.value){search.value='';search.dispatchEvent(new Event('input',{bubbles:true}));}
-    keepNextGlossarySearch=true;open.click();search.focus();
+    if(/^ال[\u0621-\u064a]{3,}$/.test(term))term=term.slice(2);
+    search.value=term;
+    search.dispatchEvent(new Event('input',{bubbles:true}));
     selectedText='';
-  });
-  /* The existing Glossary action remains the plain, unfiltered lookup. */
-  const mainGlossary=$('glossary-open');
-  if(mainGlossary)mainGlossary.addEventListener('click',()=>{
-    if(keepNextGlossarySearch){keepNextGlossarySearch=false;return;}
-    const search=$('glossary-search');
-    if(search&&search.value){search.value='';search.dispatchEvent(new Event('input',{bubbles:true}));}
   });
 
   let printState=null;
